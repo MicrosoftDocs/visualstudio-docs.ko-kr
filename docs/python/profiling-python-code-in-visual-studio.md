@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531783"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810668"
 ---
 # <a name="profile-python-code"></a>Python 코드 프로파일링
 
@@ -40,4 +40,4 @@ IronPython이 CPython 기반 인터프리터가 아니기 때문에 위의 프�
 
 대신, *ipy.exe*를 직접 대상 애플리케이션으로 시작하여 Visual Studio .NET 프로파일러를 사용하고 시작 스크립트를 실행하기 위해 적절한 인수를 사용합니다. 명령줄에 `-X:Debug`를 포함하면 모든 Python 코드를 디버그하고 프로파일링할 수 있습니다. 이 인수는 IronPython 런타임 및 사용자 코드 둘 다에서 소요된 시간을 포함하는 성능 보고서를 생성합니다. 코드는 변환된 이름을 사용하여 식별됩니다.
 
-또는 IronPython에 고유한 기본 제공 프로파일링의 일부가 포함되지만 현재 이를 위한 시각화 도우미가 마땅하지 않습니다. 제공되는 기능은 [IronPython 프로파일러](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/)(MSDN 블로그)를 참조하세요.
+또는 IronPython에 고유한 기본 제공 프로파일링의 일부가 포함되지만 현재 이를 위한 시각화 도우미가 마땅하지 않습니다. 제공되는 기능은 [IronPython 프로파일러](/archive/blogs/curth/an-ironpython-profiler)(MSDN 블로그)를 참조하세요.

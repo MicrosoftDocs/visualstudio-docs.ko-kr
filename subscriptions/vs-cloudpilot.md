@@ -7,12 +7,12 @@ ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에서 제공하는 CloudPilot 혜택 알아보기
-ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80274039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005926"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CloudPilot 혜택
 간단한 몇 단계로 앱을 Microsoft Azure로 이동할 수 있습니다. 성공적으로 마이그레이션하기 위해 필요한 코드 변경 내용을 몇 분 내에 코드 줄까지 식별합니다. 컨테이너, VM, App Services, SQL Azure 및/또는 SQL MI. 그런 다음, ASR, DMA 및 DMS를 활용하는 마법사로 앱을 Azure로 마이그레이션합니다.
@@ -85,10 +85,10 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

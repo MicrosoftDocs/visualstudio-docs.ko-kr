@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533642"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022219"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 
@@ -35,7 +35,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 - [분석](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [편집](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [프로젝트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [아키텍처](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)

@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Azure DevOps 및 Azure를 사용하기 위해 Visual Studio 구독에 대한 대체 ID를 추가하는 방법
-ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800777"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005716"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 구독자용 ID
 Visual Studio 구독을 활성화하면 Visual Studio 구독을 사용하여 활성화하는 동안 사용했던 ID(또는 로그인)을 연결합니다. 이러한 방식으로 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs), Azure DevOps 및 Azure에서 사용자를 인식할 수 있습니다.
@@ -58,10 +58,10 @@ A: 기본 또는 대체 ID를 사용하여 로그인할 때 Azure DevOps는 사�
 그래도 Azure DevOps에서 여전히 사용자의 구독을 인식하지 못하는 경우 [Azure DevOps 고객 지원팀](https://azure.microsoft.com/support/devops/)에 문의하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계 
 Azure, Azure DevOps 또는 Visual Studio IDE 사용에 대한 자세한 내용은 다음 리소스를 참조하세요.

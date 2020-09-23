@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005344"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -111,12 +111,12 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 계정을 만들면 학습을 시작할 준비가 된 것입니다.  [https://www.pluralsight.com](https://www.pluralsight.com)을 방문하여 페이지 오른쪽 위 모서리에 있는 **로그인**을 탭하여 새 코스를 시작하거나 이미 진행 중인 코스로 돌아갑니다.
 
-[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 
+[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요.

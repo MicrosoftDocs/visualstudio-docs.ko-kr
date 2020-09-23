@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87913312"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809913"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -124,7 +124,7 @@ Visual Studio는 글로벌 환경, 가상 환경 및 Conda 환경을 사용할 �
 
 Visual Studio는 프로젝트에 대한 가상 환경을 만드는 작업을 직접 지원합니다. 예를 들어 *requirements.txt*가 포함된 프로젝트를 열거나 해당 파일이 포함된 템플릿에서 프로젝트를 만드는 경우 Visual Studio에서는 사용자에게 가상 환경을 자동으로 만들고 해당 종속성을 설치하게 합니다.
 
-열린 프로젝트 내에서 언제든 새 가상 환경을 만들 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 확장하고 **Python 환경** 노드를 마우스 오른쪽 단추로 클릭하고 “가상 환경 추가”를 선택합니다. 자세한 내용은 [가상 환경 만들기](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1)를 참조하세요.
+열린 프로젝트 내에서 언제든 새 가상 환경을 만들 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 확장하고 **Python 환경** 노드를 마우스 오른쪽 단추로 클릭하고 “가상 환경 추가”를 선택합니다. 자세한 내용은 [가상 환경 만들기](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1)를 참조하세요.
 
 Visual Studio에서는 쉽게 다른 컴퓨터에서 환경을 다시 만들 수 있도록 가상 환경에서 *requirements.txt* 파일을 생성하는 명령을 제공합니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
 

@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독을 관리하는 방법을 알아봅니다.
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561392"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006087"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>MPSA(Microsoft 제품 및 서비스 계약)에서 Visual Studio 구독
 MPSA 프로그램을 통해 Visual Studio 구독을 구매한 경우 Visual Studio 구독 관리자가 되어 구독을 다른 사용자에게 할당하기 전에 기억해야 할 몇 가지가 있습니다. 이미 관리자로 설정되어 있으면 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com/)로 직접 이동할 수 있습니다.
@@ -63,10 +63,10 @@ MPSA 고객은 VLSC(볼륨 라이선스 서비스 센터)와 유사한 기능을
 > 도메인 인수 과정을 완료한 후 사용자는 사전 테넌트 연결(관리되는)에 대한 섹션에서 다섯 단계의 모든 조건을 준수해야 합니다. 이러한 조건이 충족되면 추가 Visual Studio 구독 관리자를 프로비전하기 위해 MPSA 고객 지원 팀에 문의해야 합니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독 관리에 대해 자세히 알아보세요.

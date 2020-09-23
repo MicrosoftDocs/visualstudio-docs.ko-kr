@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Power BI Pro 구독에 대해 알아봅니다.
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801687"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005028"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Power BI Pro
 
@@ -114,11 +114,11 @@ A:  아니요.  Power BI Pro 혜택은 정부 테넌트에는 추가할 수 없�
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - Power BI Pro 혜택을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하세요.
-- [Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 
+- [Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요.

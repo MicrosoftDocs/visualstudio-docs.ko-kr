@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005690"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
@@ -36,10 +36,10 @@ ms.locfileid: "89561418"
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 아직 활성화하지 않은 경우 이 혜택을 활성화하여 Visual Studio 구독을 최대한 활용하는 것이 좋습니다.
@@ -48,4 +48,3 @@ ms.locfileid: "89561418"
 - [Azure DevOps](vs-azure-devops.md)
 
 이 혜택과 자세한 내용은 https://my.visualstudio.com/benefits 에서 확인할 수 있습니다.
-

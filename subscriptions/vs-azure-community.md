@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 지원 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238623"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006243"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Azure 커뮤니티 지원 포함
 Azure 커뮤니티를 통해 선택 지원 포럼 내에서 Azure 팀의 직접적인 도움을 받습니다.  Azure 커뮤니티 혜택은 Azure 관련 항목에 초점을 맞춘 포럼 컬렉션에 대한 액세스 권한을 제공합니다.
@@ -92,10 +92,10 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 많은 Visual Studio 구독에서 Azure DevTest 개별 크레딧을 제공하는 것을 알고 있나요?  [활성화](vs-azure.md)하는 방법을 알아보세요.

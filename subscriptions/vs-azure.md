@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247324"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003848"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -48,21 +48,21 @@ Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스�
 > [!IMPORTANT]
 > 현재 Azure 구독이 사용할 수 없게 되거나 데이터에 액세스할 수 없게 되기 전에 리소스를 다른 Azure 구독으로 이전해야 합니다.  
 
-Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
+Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
 
 - **Visual Studio 구독을 직접 구매하는 경우** Microsoft Store를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
-- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
+- **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](./contact-my-admin.md)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
+- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](./manage-vs-subscriptions.md#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
 
 아래 자격 표를 사용하여 각 구독 유형에 포함된 크레딧 수를 확인합니다.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Azure 구독을 종량제로 변환
 
-더 이상 Visual Studio 구독 또는 크레딧이 필요하지 않지만 Azure 리소스를 계속 사용하려는 경우 다른 Azure 구독으로 [리소스를 이전](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)하거나 [지출 한도를 제거](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)하여 Azure 구독을 종량제 가격 책정으로 전환합니다. 
+더 이상 Visual Studio 구독 또는 크레딧이 필요하지 않지만 Azure 리소스를 계속 사용하려는 경우 다른 Azure 구독으로 [리소스를 이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)하거나 [지출 한도를 제거](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)하여 Azure 구독을 종량제 가격 책정으로 전환합니다. 
 
 이러한 작업 중 하나를 수행하지 않는 경우 전자 메일 알림을 받고 30일이 지나면 Azure 구독이 사용할 수 없게 되고 삭제됩니다.  
 
@@ -117,10 +117,10 @@ A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.

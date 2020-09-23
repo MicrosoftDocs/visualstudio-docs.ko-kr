@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 알아보기
-ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805615"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005240"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 연결된 ID를 사용하는 방법
 사용자가 회사 또는 학교를 통해 Visual Studio 구독을 받고 Microsoft 계정(MSA)을 사용하여 로그인하는 경우, 구독 관리자는 조직의 Azure Active Directory(Azure AD)에서 사용자의 ID에 MSA를 연결할 수 있습니다.  이렇게 하면 구독에 포함된 일부 혜택에 액세스하는 방법이 변경됩니다. 
@@ -43,10 +43,10 @@ A:  관리자에게 연락하는 방법에 대한 자세한 내용은 [구독 �
 A:  연결된 ID를 구현하는 것은 간단합니다.  자세한 내용은 [이 문서](personal-email-sign-ins.md)를 참조하세요. 
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-관리자가 Azure AD 및 MSA 계정을 연결한 후 [구독 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 성공적으로 로그인할 수 있는지 확인하고 Azure DevOps, Visual Studio 및 Azure DevTest 개별 크레딧과 같은 혜택에 액세스할 수 있는지 확인하는 것이 좋습니다. 
+관리자가 Azure AD 및 MSA 계정을 연결한 후 [구독 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 성공적으로 로그인할 수 있는지 확인하고 Azure DevOps, Visual Studio 및 Azure DevTest 개별 크레딧과 같은 혜택에 액세스할 수 있는지 확인하는 것이 좋습니다.

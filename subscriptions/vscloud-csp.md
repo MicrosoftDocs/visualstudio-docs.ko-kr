@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관리 방법에 대한 클라우드 솔루션 공급자에 대한 정보입니다.
-ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273870"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006230"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 [CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.
@@ -107,10 +107,10 @@ A:  아니요, Visual Studio 구독에 대한 가격은 균일합니다. 새 구
 A: 현재는 없습니다. 고객은 [Azure 개발/테스트 가격 책정](https://azure.microsoft.com/pricing/dev-test/)을 이용할 수 있지만 특히 CSP에 대해서는 아무 것도 없습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-일반적인 청구 질문에 대한 답은 [클라우드 청구 FAQ](vscloud-billing-faq.md)를 참조하세요.  
+일반적인 청구 질문에 대한 답은 [클라우드 청구 FAQ](vscloud-billing-faq.md)를 참조하세요.

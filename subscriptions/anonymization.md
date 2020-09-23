@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: 구독에 대한 액세스 권한이 중단된 경우 구독자 데이터가 익명화되는 방법을 알아봅니다.
-ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006191"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 구독자 정보의 익명화
 구독 만료 또는 구독자 로그인 계정 삭제와 같은 구독자의 구독 사용을 차단하는 이벤트가 발생하면, 이름 및 로그인 계정과 같은 사용자의 개인 정보는 기본적으로 사용할 수 없도록 하기 위해 암호화됩니다.  이는 구독자의 개인 정보를 보호하기 위해 수행됩니다.
@@ -43,12 +43,10 @@ A:  문제를 방지하는 방법에는 두 가지가 있습니다.
 - 테넌트를 통해 AAD 및 MSA ID를 연결합니다. 
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-[MSA 및 AAD ID를 연결](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)하여 익명화를 방지하는 방법을 알아봅니다.
-
-
+[MSA 및 AAD ID를 연결](/azure/active-directory/b2b/add-users-administrator)하여 익명화를 방지하는 방법을 알아봅니다.

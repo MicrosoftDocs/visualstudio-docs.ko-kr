@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에서 제공하는 CAST Highlight 혜택 알아보기
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906064"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005952"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CAST Highlight 혜택
 개발자는 클라우드로 마이그레이션할 때 소프트웨어에 대한 인사이트가 필요합니다. CAST Highlight를 사용하면 Visual Studio 구독자는 애플리케이션 소스 코드를 신속하게 검사하여 Azure로 마이그레이션할 애플리케이션의 클라우드 준비 상태를 식별하고, 마이그레이션 도중 및 이후에 앱 진행률을 모니터링할 수 있습니다.
@@ -102,10 +102,10 @@ ms.locfileid: "85906064"
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 엔터프라이즈용 Microsoft 365 앱 알아보기 및 설치
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561254"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006126"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 구독의 엔터프라이즈용 Microsoft 365 앱
 엔터프라이즈용 Microsoft 365 앱(이전 Office 365 Pro Plus)은 선택된 Visual Studio 구독에서 사용할 수 있습니다. 
@@ -78,13 +78,13 @@ ms.locfileid: "89561254"
 - Visual Studio IDE, Azure DevOps 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest 개별 크레딧](vs-azure.md) Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.
+- [Azure DevTest 개별 크레딧](vs-azure.md) Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](./vs-m365.md)을 활성화하는 것이 좋습니다.

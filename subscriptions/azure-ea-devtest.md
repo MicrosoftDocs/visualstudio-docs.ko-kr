@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: 기업계약을 체결한 고객에게 제공되는 Azure DevTest 특가를 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903140"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005742"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 기업계약 DevTest 제안
 
@@ -42,10 +42,10 @@ ms.locfileid: "85903140"
 0. **구매**를 클릭합니다.  (이 제안을 선택하더라도 실제로는 아무것도 구매하지 않습니다.)
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독 관리에 대해 자세히 알아보세요.
@@ -54,6 +54,3 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [구독 편집](edit-license.md)
 - [구독 삭제](delete-license.md)
 - [최대 사용량 확인](maximum-usage.md)
-
-
-

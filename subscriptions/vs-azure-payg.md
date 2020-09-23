@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Azure 종량제(Pay-As-You-Go) 계정을 설정하는 방법을 알아봅니다.
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902890"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005075"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 종량제 구독
 클라우드에서 팀과 공동으로 작업해 보세요.  여러 개발 및 테스트 종량제(PAYG, Pay-As-You-Go) 구독을 만들면 다른 구독자와 협업을 가능하게 하는 한편 팀과 환경 간의 격리를 제공합니다.  Azure에서 구독 소프트웨어의 개발/테스트 및 클라우드 사용권에 대한 시간당 요금이 독점적으로 할인됩니다.
@@ -45,13 +45,12 @@ A: Azure 구독을 변경하려면
 4. 이제 구독을 관리 또는 취소하거나, 이름을 바꾸거나, 디렉터리를 변경하거나, 청구 소유권을 이전할 수 있습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 많은 구독에 Azure DevOps, Azure DevTest 개별 크레딧과 같은 추가 Azure 관련 혜택이 포함됩니다.  이러한 혜택에 대한 자세한 내용은 다음을 참조하세요.
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest 개별 크레딧](vs-azure.md)
-

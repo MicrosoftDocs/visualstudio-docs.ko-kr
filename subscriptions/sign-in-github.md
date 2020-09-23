@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233225"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005266"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub 계정으로 Visual Studio 구독 로그인 
 
@@ -65,10 +65,10 @@ A:  account.microsoft.com의 [보안 탭](https://account.microsoft.com/security
 A:  GitHub 계정에 Azure Active Directory 이메일 주소가 있다면 Azure에 액세스하고 GitHub 코드를 사용하여 CI 파이프라인을 실행할 수 있는 Microsoft ID가 이미 있는 것입니다. 해당 계정을 사용하면 Azure 리소스 및 빌드 파이프라인이 조직 경계 내에 확실히 유지됩니다. 그러나 개인 작업을 수행하는 경우 GitHub 계정에 개인 이메일 주소를 지정하여 언제나 해당 계정에 액세스할 수 있도록 하는 것이 좋습니다. 이렇게 수행한 후 다시 로그인을 시도하고 회사 또는 학교 게정에 로그인하라는 메시지가 나타날 때 **다른 이메일 주소 사용**을 선택하세요. 그러면 해당 개인 이메일 주소를 사용하여 새 Microsoft 계정을 만들 수 있습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.  
+구독 포털에 성공적으로 로그인한 후에는 https://my.visualstudio.com/benefits 에서 혜택 페이지를 방문하여 사용자가 이용할 수 있는 유용한 도구, 서비스 및 제안을 살펴보는 것이 좋습니다.

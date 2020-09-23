@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387176"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005913"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -77,10 +77,10 @@ A:  CODE Magazine은 이행, 제품 선택, 디지털 액세스 프로세스를 
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독에 포함된 기타 유용한 혜택을 확인합니다. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)로 이동합니다.

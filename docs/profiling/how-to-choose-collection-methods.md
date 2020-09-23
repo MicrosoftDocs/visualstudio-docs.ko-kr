@@ -1,5 +1,5 @@
 ---
-title: 방법 - 수집 방법 선택 | Microsoft Docs
+title: 수집 방법 선택 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329266"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851309"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 

@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Parasoft Virtualize/SOA Test Professional 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904393"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006269"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -95,10 +95,10 @@ ms.locfileid: "85904393"
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 
+[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요.

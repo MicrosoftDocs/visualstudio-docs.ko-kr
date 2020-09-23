@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: 구독 관리자의 책임에 대해 알아봅니다.
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006139"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>관리자 책임의 개요
 관리자는 조직에 대한 구독을 관리할 수 있습니다.  또한 관리자 역할에는 사용 약관에 따라 구독이 관리되도록 해야 할 책임이 있습니다. 이 문서에서는 관리자 역할의 책임, 혜택 및 제한 사항에 대해 간략하게 설명합니다.
@@ -37,10 +37,10 @@ Visual Studio 구독을 사용하면 개발자가 다른 소프트웨어를 디�
 | 최종 사용자에 대한 예외                  | 소프트웨어 개발 프로젝트의 마지막에, 최종 사용자는 일반적으로 애플리케이션을 검토하고 릴리스에 필요한 조건을 충족하는지 여부를 결정합니다. 이 프로세스를 UAT(사용자 승인 테스트)라고 합니다. 비즈니스 스폰서 또는 제품 관리자와 같은 팀 멤버는 최종 사용자에 대한 프록시와 같은 역할을 할 수 있습니다. 소프트웨어 사용이 다른 방법으로 모든 Visual Studio 사용 조건을 준수하는 경우, Visual Studio 구독이 없는 최종 사용자가 UAT용 소프트웨어에 액세스할 수도 있습니다. 기본 역할이 소프트웨어를 디자인하거나 개발하거나 테스트하는 사람이 “최종 사용자”로서 자격이 있는 경우는 거의 없습니다. |
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 관리자의 책임에 대해 자세히 알아봅니다.

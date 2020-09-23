@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004969"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기
 이 문서에서는 https://my.visualstudio.com/productkeys 에서 제품 키를 찾고 요청하며 내보내는 방법을 설명합니다.  일반 정품 및 볼륨 라이선스 버전의 키, 일일 제품 키 요청 제한, 키를 사용한 제품 정품 인증 방법에 대한 자세한 내용은 [제품 키 개요](product-keys.md)를 참조하세요.
@@ -67,10 +67,10 @@ ms.locfileid: "88250736"
 키를 내보내려면 제품 키 페이지의 오른쪽 끝에 있는 **모든 키 내보내기** 링크를 선택하면 됩니다.  KeysExport.xml이라는 제목의 .xml 파일이 만들어지고, 파일을 열거나 저장할 수 있는 옵션이 표시됩니다.  .xml 파일을 처리할 수 있는 애플리케이션으로 파일을 열어야 합니다.  예를 들어 Excel에서 파일을 읽기 전용 통합 문서로 열 수 있습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 소프트웨어를 다운로드하고 키를 사용할 준비가 되면 https://my.visualstudio.com/downloads 로 이동하세요.  소프트웨어 다운로드에 대한 자세한 내용은 [다운로드 개요](download-software.md)를 참조하세요.

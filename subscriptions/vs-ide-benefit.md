@@ -7,12 +7,12 @@ ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio IDE를 다운로드하고 설치하는 방법을 알아봅니다.
-ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006308"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 혜택
 
@@ -83,10 +83,10 @@ IDE를 다운로드하려면
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio를 설치한 이후에 다음과 같은 중요한 혜택을 활성화하시기 바랍니다.

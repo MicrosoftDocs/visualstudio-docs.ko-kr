@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 구독 관리
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248429"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005900"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -114,10 +114,10 @@ A: Microsoft가 고객 데이터를 유지하는 기간은 구매 채널에 따�
 > - 활성 구독이 있는 경우 모든 개인 데이터가 완전히 제거되지는 않습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 조직용 구독을 관리하십니까?  Visual Studio 구독 관리에 대해 자세히 알아보세요.

@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 로그인할 때 발생할 수 있는 문제에 대해 알아보기
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801882"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005279"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio 구독에 로그인할 때의 문제
 Visual Studio 구독을 사용하려면 먼저 로그인해야 합니다.  구독에 따라 Microsoft 계정(MSA) 또는 AAD(Azure Active Directory) ID로 설정했을 수 있습니다.  이 문서에서는 구독에 로그인하는 동안 발생할 수 있는 몇 가지 문제에 대해 설명합니다.
@@ -64,10 +64,10 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
 구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 Microsoft 계정(MSA)을 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 이 작업 수행과 관련된 정책 또는 문제에 대해 관리자와 이야기를 나눕니다. 
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - AAD 내에서 [MSA 및 AAD 계정을 연결](/azure/active-directory/b2b/add-users-administrator)하는 방법을 알아봅니다.

@@ -1,17 +1,17 @@
 ---
-ms.date: 03/19/2019
+ms.date: 09/22/2020
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79081961"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91025047"
 ---
 Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -39,7 +39,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 ::: moniker-end
 
-- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [팀 탐색기](/azure/devops/user-guide/work-team-explorer)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
 ## <a name="editions"></a>버전
 

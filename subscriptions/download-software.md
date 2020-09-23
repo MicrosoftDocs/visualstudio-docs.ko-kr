@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 Microsoft 소프트웨어 타이틀을 찾고 다운로드하는 방법을 알아봅니다.
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801830"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005602"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio 구독의 소프트웨어 타이틀 다운로드
 어떤 Visual Studio 구독을 보유하느냐에 따라 매우 다양한 Microsoft 소프트웨어 타이틀을 사용할 수 있습니다.  이 문서에서는 구독을 최대한 활용하는 데 필요한 소프트웨어를 찾고 다운로드하는 방법을 개괄적으로 소개합니다. 
@@ -53,10 +53,10 @@ ms.locfileid: "88801830"
 > ![Visual Studio 2019 제품 키 요청](_img/subscriber-downloads/vs2019-claim-keys.png "남은 키를 요청하려면 키 클레임을 선택합니다.")
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 제품 키 찾기, 요청하기, 내보내기에 대한 자세한 내용은 제품 키 설명서를 참조하세요.

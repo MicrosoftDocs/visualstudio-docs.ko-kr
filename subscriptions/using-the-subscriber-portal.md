@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Visual Studio 구독 포털에서 사용할 수 있는 이점의 전체 범위에 대해 알아보기
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902880"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005201"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>구독자 포털 사용 - my.visualstudio.com
 
 Visual Studio 구독 포털인 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)은 Visual Studio 구독을 통해 제공되는 전체 혜택을 활용할 수 있는 일체형 리소스입니다.
 
-포털을 사용하려면 구독에 연결된 ID로 로그인해야 합니다.  이 ID는 Microsoft 계정(MSA) 또는 회사 또는 학교와 같은 조직에서 제공하는 전자 메일 주소일 수 있습니다.  [로그인](signing-in.md)에 대해 알아봅니다.
+포털을 사용하려면 구독에 연결된 ID로 로그인해야 합니다.  이 ID는 Microsoft 계정(MSA) 또는 회사 또는 학교와 같은 조직에서 제공하는 전자 메일 주소일 수 있습니다.  [로그인](./index.yml)에 대해 알아봅니다.
 
 포털은 6개 페이지로 구성됩니다.  각 페이지에서는 구독에 포함된 여러 제품 또는 서비스에 액세스할 수 있습니다.  6개의 페이지는 혜택, 다운로드, 제품 키, 구독, 지원 및 Marketplace입니다.
 
@@ -54,10 +54,10 @@ Azure와 관련하여 궁금한 점이 있으세요?  포럼을 통해 Azure 커
 Visual Studio 클라우드 구독을 갱신해야 하세요?  Visual Studio 제품군에 대한 최신 확장을 다운로드하고 싶으세요?  Marketplace를 통해 사용자는 Azure DevOps, Azure DevOps Server 및 Visual Studio Code를 더욱 효과적으로 만드는 확장, 도구 및 서비스를 찾을 수 있습니다. 게시자가 되고 Marketplace에 자체 확장을 게시할 수도 있습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 포털에 로그인하고 혜택을 확인하세요.  [Microsoft 계정](sign-in-msa.md)(MSA), [회사 또는 학교 계정](sign-in-work.md), 그리고 [GitHub 계정](sign-in-github.md)으로 포털에 로그인하는 방법에 대해 자세히 알아보실 수도 있습니다. 
+[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 포털에 로그인하고 혜택을 확인하세요.  [Microsoft 계정](sign-in-msa.md)(MSA), [회사 또는 학교 계정](sign-in-work.md), 그리고 [GitHub 계정](sign-in-github.md)으로 포털에 로그인하는 방법에 대해 자세히 알아보실 수도 있습니다.

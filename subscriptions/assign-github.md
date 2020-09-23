@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249843"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006178"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
@@ -75,10 +75,10 @@ GitHub 도움말은 질문에 답하고 조직의 GitHub Enterprise 서버 구�
 
 ## <a name="see-also"></a>참조
 
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 

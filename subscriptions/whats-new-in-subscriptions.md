@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005292"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 구독의 새로운 기능
 
@@ -33,7 +33,7 @@ ms.locfileid: "81649694"
 MSA(Microsoft 계정)를 사용하는 구독자를 Azure AD(Azure Active Directory )에 쉽게 매칭하여 두 ID를 빠르게 연결할 수 있습니다.  Azure AD ID를 사용하면 보안이 강화되고 구독 관리가 쉬워집니다.  자세한 내용은 [개인 로그인 문서](personal-email-sign-ins.md)를 확인하세요. 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Azure Active Directory 그룹을 사용하여 구독자 추가
-Azure AD(Azure Active Directory)를 사용하는 조직에서는 이제 Azure AD 그룹을 사용하여 구독을 관리할 수 있습니다.  구독을 그룹에 할당하면 동일한 유형의 구독을 여러 사용자에게 빠르게 제공할 수 있습니다.  Azure AD 그룹에 추가된 신규 사용자에게는 구독이 자동으로 할당됩니다.  Azure AD 그룹에서 사용자가 제거되면 사용자의 구독도 제거됩니다.  조직에서는 이 기능을 통해 구독 관리를 자동화하여 관리자의 시간과 노력을 절약할 수 있습니다.  자세한 내용은 Microsoft 설명서의 [여러 사용자 추가](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) 문서를 확인하세요. 
+Azure AD(Azure Active Directory)를 사용하는 조직에서는 이제 Azure AD 그룹을 사용하여 구독을 관리할 수 있습니다.  구독을 그룹에 할당하면 동일한 유형의 구독을 여러 사용자에게 빠르게 제공할 수 있습니다.  Azure AD 그룹에 추가된 신규 사용자에게는 구독이 자동으로 할당됩니다.  Azure AD 그룹에서 사용자가 제거되면 사용자의 구독도 제거됩니다.  조직에서는 이 기능을 통해 구독 관리를 자동화하여 관리자의 시간과 노력을 절약할 수 있습니다.  자세한 내용은 Microsoft 설명서의 [여러 사용자 추가](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) 문서를 확인하세요. 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Microsoft 파트너인 CAST Highlight가 제공하는 혜택의 확장을 발표하게 되어 기쁘게 생각합니다. 

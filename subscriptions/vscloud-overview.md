@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641561"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005318"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -127,10 +127,10 @@ A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio �
 - [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 클라우드 구독 구입

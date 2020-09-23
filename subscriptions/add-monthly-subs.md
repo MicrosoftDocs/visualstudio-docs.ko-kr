@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: 구독 관리 포털에 새로 구매한 월간 Visual Studio 구독을 추가하는 방법을 알아봅니다.
-ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561405"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005101"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>구독 관리 포털에 새 월간 Visual Studio 구독 추가
 Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경우 사용자에게 구독을 할당하려면 해당 구독을 구독 관리 포털에 추가해야 할 수 있습니다.  
@@ -48,7 +48,7 @@ Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경
 - [특정 사용자에게 특정 구독을 할당](assign-guid.md)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)

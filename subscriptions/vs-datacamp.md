@@ -7,12 +7,12 @@ ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561496"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006334"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -84,10 +84,10 @@ ms.locfileid: "89561496"
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 구독에서 더 전문적인 개발 기회를 확인하세요.

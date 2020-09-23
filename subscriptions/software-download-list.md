@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 소프트웨어 다운로드 목록을 찾습니다.
-ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004013"
 ---
 # <a name="what-software-is-available-for-download"></a>어떤 소프트웨어를 다운로드할 수 있나요?
 
@@ -31,10 +31,10 @@ ms.locfileid: "88250698"
 또한 각 구독 유형에 대해 [사용 가능한 소프트웨어 타이틀](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)의 광범위한 목록이 들어 있는 Excel 스프레드시트를 다운로드할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 [소프트웨어 다운로드](download-software.md) 또는 [제품 키](product-keys.md) 획득 및 관리 방법에 대해 알아보실 수 있습니다.

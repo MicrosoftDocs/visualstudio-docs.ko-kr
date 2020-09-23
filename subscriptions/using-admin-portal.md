@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426878"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005227"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
 
@@ -60,10 +60,10 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 관리자의 책임에 대해 자세히 알아봅니다.
@@ -72,4 +72,3 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 - [대규모 팀 및 외부 계약업체 관리](manage-teams.md)
 - [사용자 할당 추적 및 주문 처리](assignments-orders.md)
 - [최대 사용량](maximum-usage.md)으로 구매 커밋 추적
-

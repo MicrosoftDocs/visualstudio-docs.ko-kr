@@ -7,12 +7,12 @@ ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Concierge Chat 혜택을 알아봅니다.
-ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906051"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006321"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Concierge Chat
 Concierge Chat 서비스는 Visual Studio 구독 혜택 사용에 도움이 될 뿐 아니라 제품 정보 및 기술 문서를 찾는 데도 도움이 됩니다.
@@ -62,10 +62,10 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를 참조하세요.

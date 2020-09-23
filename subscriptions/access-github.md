@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 새로운 Visual Studio + GitHub 제품에 대해 알아봅니다.
-ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248186"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006100"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 소개  
 
@@ -79,13 +79,10 @@ A:  GitHub Enterprise 구독과 함께 전체 Visual Studio 구독을 받게 됩
 - GitHub Enterprise에 대한 [기술 지원](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)을 받으세요.   
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 GitHub를 처음 사용하는 경우 [GitHub Learning 랩](https://lab.github.com/)을 체크 아웃하세요. 그러면 재미있고 실용적인 일련의 프로젝트를 통해 유용한 피드백을 공유할 수 있습니다.
-
-
-

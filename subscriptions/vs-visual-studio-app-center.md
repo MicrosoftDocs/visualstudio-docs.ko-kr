@@ -7,12 +7,12 @@ ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 27d2e060cf3f4ab1aad8b81c39a5cef52ac0e770
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906040"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005729"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -75,10 +75,10 @@ A:  App Center에는 일부 이전 브라우저에서 제공하지 않을 수 �
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.

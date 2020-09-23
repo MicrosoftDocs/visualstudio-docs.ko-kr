@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234642"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006217"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 로그인에 사용되는 계정 유형에 따라 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 사용 가능한 구독이 제대로 표시되지 않을 수 있습니다. 한 가지 원인은 구독이 할당된 로그인 ID 대신 “별칭” 또는 “이름”을 사용하기 때문일 수 있습니다. 이것을 “별칭 지정”이라고 합니다.
@@ -86,16 +86,16 @@ Visual Studio 플랫폼은 기본 별칭의 우선 순위를 지정하여 구독
 
 0. 단일 사용자를 변경하는 경우 테이블에서 해당 사용자를 선택하고 마우스 오른쪽 단추를 클릭하여 편집합니다. 그러면 로그인 전자 메일 주소를 수정할 수 있는 패널이 열립니다. 로그인 전자 메일 주소 필드에서 필요한 업데이트를 수행합니다. 저장을 클릭하면 변경 내용이 적용됩니다.  
 
-0. 대규모 사용자에게 해당 변경을 수행해야 하는 경우 일괄 편집 기능을 사용하면 됩니다. 자세한 내용은 [일괄 편집을 사용하여 여러 구독자 편집](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) 문서를 참조하세요.
+0. 대규모 사용자에게 해당 변경을 수행해야 하는 경우 일괄 편집 기능을 사용하면 됩니다. 자세한 내용은 [일괄 편집을 사용하여 여러 구독자 편집](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) 문서를 참조하세요.
 
 > [!NOTE]
 > 개별 및 일괄 변경 모두 구독자는 로그인 전자 메일 주소가 변경되었으며 업데이트된 전자 메일 주소를 사용하여 로그인해야 한다는 지침이 포함된 전자 메일을 받게 됩니다. 구독자가 이전에 다른 로그인 주소에서 혜택을 활성화한 경우에는 다른 로그인 주소를 계속 사용하여 액세스해야 합니다.  
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>다음 단계
@@ -104,5 +104,3 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [여러 구독 할당](assign-license-bulk.md)
 - [구독 편집](edit-license.md)
 - [최대 사용량 확인](maximum-usage.md)
-
-

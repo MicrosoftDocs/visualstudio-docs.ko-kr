@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: 8aab10f3268fa9d9a822487c80efa4318cd9d3a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005835"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -78,10 +78,10 @@ MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용
 
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 

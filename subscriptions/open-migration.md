@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: 파트너가 고객의 Visual Studio 구독을 관리하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426553"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006061"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>고객을 대신하여 구독을 관리하는 파트너
 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구독을 관리하기 위해 파트너가 따라야 할 몇 가지 단계가 있습니다. 
@@ -65,10 +65,10 @@ Visual Studio [구독 관리 포털](https://manage.visualstudio.com)에서 구�
 - [볼륨 라이선스 조건](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 구독을 관리하려면 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)을 방문합니다.

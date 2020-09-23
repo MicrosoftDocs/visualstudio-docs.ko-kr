@@ -7,12 +7,12 @@ ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 볼륨 라이선스 계약의 관리자가 Visual Studio 구독 관리 포털에 액세스하는 방법 알아보기
-ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a3846eb9d45c05440559e3ab2cae901d1521245
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233138"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005214"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>볼륨 라이선스 계약의 관리자로 관리 포털에 액세스
 
@@ -29,12 +29,12 @@ ms.locfileid: "80233138"
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - [구독을 할당](assign-license.md)하는 방법 알아보기
 - [구독 혜택](https://visualstudio.microsoft.com/vs/benefits/)의 전체 범위에 대한 자세한 정보
-- [계약 기본 설정 지정](admin-prefs.md) 
+- [계약 기본 설정 지정](admin-prefs.md)

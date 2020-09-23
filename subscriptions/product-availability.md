@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 위한 소프트웨어 다운로드 내의 제품 가용성 알아보기
-ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561483"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005861"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
@@ -39,10 +39,10 @@ ms.locfileid: "89561483"
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 일부 소프트웨어 다운로드에는 이를 설치 및 정품 인증할 제품 키가 필요할 수 있습니다.  제품 키 가져오기 및 관리 방법에 대한 자세한 내용은 [제품 키](product-keys.md) 문서를 참조하세요. 

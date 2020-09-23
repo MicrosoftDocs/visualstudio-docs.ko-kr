@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: 월간 구독에 대한 관리자 설정
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006113"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
 
@@ -60,10 +60,10 @@ Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Az
 Visual Studio 월간 구독에 대한 자세한 내용은 구독 구입에서 [개요](vscloud-overview.md)를 참조하세요. Visual Studio 월간 구독을 구매하려면 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)에서 Visual Studio Marketplace를 방문하세요.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독 관리에 대해 자세히 알아보세요.
@@ -71,6 +71,3 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [여러 구독 할당](assign-license-bulk.md)
 - [구독 편집](edit-license.md)
 - [최대 사용량 확인](maximum-usage.md)
-
-
-
