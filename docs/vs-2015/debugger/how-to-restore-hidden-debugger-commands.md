@@ -1,5 +1,5 @@
 ---
-title: '방법: 숨겨진된 디버거 명령 복원 | Microsoft Docs'
+title: '방법: 숨겨진 디버거 명령 복원 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442071"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147231"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>방법: 숨겨진 디버거 명령 복원
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio를 설치할 때 주 프로그래밍 언어의 기본 IDE 설정 �
   
 3. **메뉴 모음:** 드롭다운 목록에서 복원된 명령을 포함할 **디버그** 메뉴를 선택합니다.  
   
-4. 클릭 된 **명령을 추가 하는 중...** 클릭합니다.  
+4. **추가 명령을** 클릭 합니다. 클릭합니다.  
   
 5. **명령 추가** 상자에서 추가할 명령을 선택하고 **확인**을 클릭합니다.  
   
