@@ -46,8 +46,6 @@
           href: container-launch-settings.md
 - name: Kubernetes를 사용하여 개발
   items:
-    - name: Visual Studio의 Kubernetes
-      href: tutorial-kubernetes-tools.md
     - name: Bridge to Kubernetes
       href: bridge-to-kubernetes.md
     - name: Bridge to Kubernetes 작동 방식

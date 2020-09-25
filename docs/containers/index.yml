@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: ed8b37ece1f5941d70363a19f48dccb1938ce440
-  ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+  ms.openlocfilehash: 7dd543b176ac5c95bf084658583bf34db1294c82
+  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/21/2020
-  ms.locfileid: "90845510"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "91211065"
 landingContent:
 - title: 컨테이너 도구
   linkLists:
@@ -31,8 +31,6 @@ landingContent:
       url: container-tools.md
     - text: 컨테이너에서 빌드 도구 실행
       url: ../install/build-tools-container.md
-    - text: Visual Studio Tools for Kubernetes
-      url: tutorial-kubernetes-tools.md
 - title: 컨테이너화된 앱 개발
   linkLists:
   - linkListType: tutorial
@@ -77,10 +75,6 @@ landingContent:
       url: container-tools-configure.md
 - title: Kubernetes 개발
   linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Visual Studio Tools for Kubernetes
-      url: tutorial-kubernetes-tools.md
   - linkListType: quickstart
     links:
     - text: Visual Studio에서 Bridge to Kubernetes 사용
