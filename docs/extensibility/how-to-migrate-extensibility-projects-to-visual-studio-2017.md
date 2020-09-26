@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038558"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352285"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션
 
@@ -181,7 +181,7 @@ WPF | 관리되는 데스크톱 워크로드 핵심 | Microsoft.VisualStudio.Com
 
 ## <a name="find-component-ids"></a>구성 요소 Id 찾기
 
-Visual Studio 제품을 기준으로 정렬 된 구성 요소 목록은 [Visual studio 2017 워크 로드 및 구성 요소 id](../install/workload-and-component-ids.md?view=vs-2019)에 있습니다. 매니페스트에서 필수 구성 요소 Id에 이러한 구성 요소 Id를 사용 합니다.
+Visual Studio 제품을 기준으로 정렬 된 구성 요소 목록은 [Visual studio 2017 워크 로드 및 구성 요소 id](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true)에 있습니다. 매니페스트에서 필수 구성 요소 Id에 이러한 구성 요소 Id를 사용 합니다.
 
 특정 이진 파일을 포함 하는 구성 요소가 확실 하지 않으면 [구성 요소 > 이진 매핑 스프레드시트](https://aka.ms/vs2017componentid-binaries)를 다운로드 합니다.
 
