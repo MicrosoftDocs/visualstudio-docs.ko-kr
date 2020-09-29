@@ -1,5 +1,5 @@
 ---
-title: 오류 - 프로세스 ID를 검사할 수 있는 권한이 없음 | Microsoft Docs
+title: 프로세스 ID를 검사할 수 있는 권한이 없음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 90cd775f18dd505d2f734a8d337daadfd9f0dd7b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706531"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851504"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>오류: 프로세스의 ID를 검사할 수 있는 권한이 없습니다.
 프로세스의 ID를 검사할 수 있는 권한이 없습니다. 시스템의 구성에 문제가 있는 것 같습니다.

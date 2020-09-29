@@ -1,5 +1,5 @@
 ---
-title: 오류 - 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없습니다 | Microsoft Docs
+title: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버그할 수 없음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 569d3d0baf98f5c13d0ccb182df6e51160db93d6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706635"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852773"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없습니다.
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.
