@@ -1,5 +1,6 @@
 ---
-title: 프로파일러 명령줄을 사용하여.NET Framework 메모리 데이터 가져오기
+title: 프로파일러 명령줄 - .NET 메모리 데이터 가져오기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62a55c36cd634b9451ad3796e5866d1e3a89b6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331724"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810746"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 메모리 데이터 수집
 

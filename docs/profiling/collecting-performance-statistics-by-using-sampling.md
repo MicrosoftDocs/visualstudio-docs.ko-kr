@@ -1,5 +1,6 @@
 ---
-title: 샘플링을 사용하여 성능 통계 수집 | Microsoft 문서
+title: 샘플링을 사용하여 성능 통계 수집
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: adf26a8a1bae495481106506208232ebb383d2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9729bf46b58a9591df7b6470acde0c54ef23f531
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331666"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810733"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 

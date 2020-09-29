@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285051"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739904"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio에서 npm 패키지 관리
 
@@ -42,7 +42,7 @@ Node.js 프로젝트의 경우 아래와 같은 작업을 수행할 수 있습�
 
 ### <a name="prerequisites"></a>사전 요구 사항
 
-프로젝트에 npm 지원을 추가하려면 **Node.js development** 워크로드 및 Node.js 런타임이 설치되어 있어야 합니다. 자세한 단계는[Node.js 프로젝트 만들기](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json)를 참조하세요.
+프로젝트에 npm 지원을 추가하려면 **Node.js development** 워크로드 및 Node.js 런타임이 설치되어 있어야 합니다. 자세한 단계는[Node.js 프로젝트 만들기](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)를 참조하세요.
 
 > [!NOTE]
 > 기존 Node.js 프로젝트의 경우 **기존 Node.js 코드에서** 솔루션 템플릿이나 [폴더 열기(Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) 프로젝트 형식을 사용하여 프로젝트에서 npm을 사용하도록 설정합니다.
@@ -86,12 +86,12 @@ npm 패키지는 솔루션 탐색기에 표시됩니다. **npm** 노드 아래�
 
 * **새 npm 패키지 설치** 새 패키지를 설치하는 UI를 엽니다.
 * **npm 패키지 설치** npm 설치 명령을 실행하여 *package.json*에 나열된 모든 패키지를 설치합니다. (`npm install`을 실행합니다.)
-* **npm 패키지를 업데이트** *package.json*에 지정된 semver 범위에 따라 패키지를 최신 버전으로 업데이트합니다. (`npm update --save`를 실행합니다.) Semver 범위는 일반적으로 “~” 또는 “^”을 사용하여 지정됩니다. 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
+* **npm 패키지 업데이트** *package.json*에 지정된 SemVer(유의적 버전) 범위에 따라 패키지를 최신 버전으로 업데이트합니다. (`npm update --save`를 실행합니다.) Semver 범위는 일반적으로 “~” 또는 “^”을 사용하여 지정됩니다. 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
 패키지 노드를 마우스 오른쪽 단추로 클릭하여 다음 작업 중 하나를 수행합니다.
 
 * **npm 패키지 설치** npm 설치 명령을 실행하여 *package.json*에 나열된 패키지 버전을 설치합니다. (`npm install`을 실행합니다.)
-* **npm 패키지 업데이트** *package.json*에 지정된 semver 범위에 따라 패키지를 최신 버전으로 업데이트합니다. (`npm update --save`를 실행합니다.) Semver 범위는 일반적으로 “~” 또는 “^”을 사용하여 지정됩니다.
+* **npm 패키지 업데이트** *package.json*에 지정된 SemVer 범위에 따라 패키지를 최신 버전으로 업데이트합니다. (`npm update --save`를 실행합니다.) Semver 범위는 일반적으로 “~” 또는 “^”을 사용하여 지정됩니다.
 * **npm 패키지 제거** 설치된 패키지를 제거하고 *package.json*에서 제거합니다.(`npm uninstall --save`를 실행합니다.)
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -126,7 +126,7 @@ ASP.NET Core 프로젝트와 같은 프로젝트의 경우 프로젝트에서 np
 * [package.json을 사용하여 패키지 설치](#npmInstallPackage)
 
 >[!NOTE]
-> ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
+> ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> 프로젝트에 npm 지원 추가(ASP.NET Core)
 
@@ -164,7 +164,7 @@ npm이 포함된 패키지의 경우 `package.json`을 사용하여 npm 패키�
 
 *package.json*의 IntelliSense가 npm 패키지의 특정 버전을 선택할 수 있도록 지원합니다.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="npm 패키지 버전 선택" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="솔루션 탐색기에서 새 npm 패키지 설치" border="true":::
 
 파일을 저장하면 Visual Studio가 솔루션 탐색기의 **Dependencies / npm** 노드 아래에 패키지를 추가합니다. 이 노드가 표시되지 않는다면 **package.json**을 마우스 오른쪽 단추로 클릭하고 **패키지 복원**을 선택합니다.
 
@@ -181,4 +181,3 @@ npm이 포함된 패키지의 경우 `package.json`을 사용하여 npm 패키�
 * 일부 시나리오에서는 [여기](https://github.com/aspnet/Tooling/issues/479)에 설명된 알려진 문제로 인해 솔루션 탐색기가 설치된 npm 패키지에 대한 올바른 상태를 표시하지 않을 수도 있습니다. 예를 들어 패키지가 설치되었지만 설치되지 않은 것으로 보일 수 있습니다. 대부분의 경우에는 *package.json*을 삭제하고 Visual Studio를 다시 시작한 다음 이 문서의 앞부분에서 설명한 것처럼 *package.json* 파일을 다시 추가하여 솔루션 탐색기를 업데이트할 수 있습니다. 또는 패키지를 설치할 때 npm 출력 창을 사용하여 설치 상태를 확인할 수 있습니다.
 
 * 앱 또는 변환 컴파일 TypeScript 코드를 빌드할 때 오류가 발생하는 경우 잠재적인 오류 원인으로 npm 패키지 비호환성을 확인합니다. 오류를 식별하려면 이 문서의 앞부분에서 설명한 대로 패키지를 설치할 때 npm 출력 창을 확인합니다. 예를 들어 npm 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
-

@@ -1,6 +1,6 @@
 ---
-title: 함수를 여러 번 호출할 때 실패한 호출 찾기 | Microsoft Docs
-ms.custom: seodec18
+title: 함수를 여러 번 호출할 때 호출 실패 찾기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599991"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810486"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>함수를 수백 번 호출하는 경우 어떤 호출이 실패했는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명

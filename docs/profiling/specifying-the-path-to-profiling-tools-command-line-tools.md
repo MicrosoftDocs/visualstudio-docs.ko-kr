@@ -1,5 +1,6 @@
 ---
-title: 프로파일링 도구 명령줄 도구의 경로 지정 | Microsoft Docs
+title: 프로파일링 명령줄 도구의 경로 지정
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fb445e23b5d507bafb7fece40bf606bbfb76c370
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75406309"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809187"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>프로파일링 도구 명령줄 도구의 경로 지정
 

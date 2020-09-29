@@ -1,5 +1,6 @@
 ---
-title: 예외 검사 - Visual Studio | Microsoft Docs
+title: 예외 검사
+titleSuffix: ''
 ms.date: 1/18/2020
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9d0084abff760ff227b20137cd55d905b57e1a18
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852500"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>예외 도우미를 사용하여 예외 검사 
 

@@ -1,18 +1,18 @@
 ---
 title: 제품 키 사용 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 얻고 관리하는 방법을 알아봅니다.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183927"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005848"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 사용
 
@@ -52,12 +52,12 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 일부 제품은 한 번에 다운로드할 수 있도록 여러 버전이 번들로 구성되어 있습니다. 이러한 경우 입력하는 제품 키에 따라 설치되는 제품 버전이 결정됩니다.
 일부 키는 "정적" 키와 같이 자동으로 제공되며, 정품 인증이 필요하지 않으므로 필요한 만큼 여러 번 사용할 수 있습니다. 다른 키는 제품에 대한 **키 가져오기** 링크를 선택하여 요청해야 합니다.
 > [!div class="mx-imgBorder"]
-> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png)
+> ![다운로드 페이지에서 키 가져오기](_img/product-keys/download-get-key.png "키 가져오기를 클릭하여 다운로드하는 제품의 키를 요청합니다.")
 
 또한 모든 키는 [제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) 페이지에서 전체적으로 사용할 수도 있습니다. 이 페이지에서는 특정 제품의 전체 사용자에게 효과적인 정적 키를 찾고 사용자만이 이용하도록 마련된 사용자 지정 키를 가져오며 키 요청 제한 상태를 확인하고 보유 중인 제품 키 모두를 찾아보실 수 있습니다. 
 
 > [!div class="mx-imgBorder"]
-> ![제품 키 페이지](_img/product-keys/product-keys-page.png)
+> ![제품 키 페이지](_img/product-keys/product-keys-page.png "제품 키 페이지는 특정 구독의 전체 제품 키 정보를 제공합니다.")
 
 제품에 따라 다양한 키 유형을 사용할 수 있습니다.
 
@@ -80,10 +80,10 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 제품에 대한 다운로드 페이지에서 키를 요청하거나 [제품 키](https://my.visualstudio.com/productkeys) 페이지에서 필요한 키를 검색할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 키를 요청하려면 https://my.visualstudio.com/productkeys 를 방문하세요.  

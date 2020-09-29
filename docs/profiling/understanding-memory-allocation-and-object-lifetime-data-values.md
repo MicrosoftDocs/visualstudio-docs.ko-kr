@@ -1,5 +1,6 @@
 ---
-title: 메모리 할당 및 개체 수명 데이터 값 이해
+title: 메모리 할당 및 개체 수명 데이터 값
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eec0c4bc5fc27e07bc04a8445ca14ce538ac376
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4b3f7f6785b1a1693e0b041e64a0d507281926d3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780002"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809939"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>메모리 할당 및 개체 수명 데이터 값 이해
 

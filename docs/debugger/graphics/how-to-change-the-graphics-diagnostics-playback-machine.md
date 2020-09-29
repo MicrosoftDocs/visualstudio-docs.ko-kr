@@ -1,5 +1,6 @@
 ---
-title: '방법: 그래픽 진단 재생 머신 변경 | Microsoft Docs'
+title: 그래픽 진단 재생 머신 변경
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769379"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810694"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>방법: 그래픽 진단 재생 머신 변경
 로컬 머신을 사용하거나 원격 머신 또는 디바이스를 사용하여 그래픽 정보를 재생할 수 있습니다.

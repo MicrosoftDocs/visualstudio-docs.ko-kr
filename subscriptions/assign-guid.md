@@ -1,21 +1,23 @@
 ---
 title: Visual Studio 구독자에게 특정 GUID 할당 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 관리자가 구독자에 대해 특정 구독 GUID를 지정할 수 있는 방법 알아보기
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235188"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022485"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 특정 구독 할당
 
 관리자는 이제 Visual Studio 구독 관리 포털을 사용하여 개별 구독자에게 특정 구독을 할당할 수 있습니다.  이 기능은 조직에 단기적으로 구독에 액세스해야 하는 임시 직원 또는 공급업체가 있는 경우에 유용할 수 있습니다.  관리자는 이미 부분적으로 사용된 구독은 할당하고 새로운 구독은 장기적인 사용을 위해 남겨 둘 수 있습니다.  
+
+특정 구독 GUID를 사용자에게 할당하는 방법을 알아보려면 비디오를 시청하거나 계속 읽어 보세요. 
 
 <br>
 
@@ -57,7 +59,7 @@ ms.locfileid: "87235188"
 > - GUID가 내보낸 목록에 있는 다른 사용자에게 아직 할당되지 않았습니다. 
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q: 개별 사용자에게 현재 할당된 구독을 변경하려면 어떻게 하나요?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q: 개별 사용자에게 현재 할당된 구독을 변경하려면 어떻게 하나요?
 A: 사용자에게 할당된 GUID를 변경하려면 먼저 사용자에 대한 구독을 삭제해야 합니다.  자세한 내용은 [구독 삭제](delete-license.md) 문서를 참조하세요.  사용자에 대한 구독을 삭제한 후에는 위에서 설명하는 프로세스를 사용해 목록을 내보내고 새 구독 정보를 업로드합니다.  
 
 ## <a name="see-also"></a>참조

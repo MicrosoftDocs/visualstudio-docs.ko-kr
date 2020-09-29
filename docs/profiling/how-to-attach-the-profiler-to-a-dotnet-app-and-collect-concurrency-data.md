@@ -1,6 +1,6 @@
 ---
-title: .NET 앱에 프로파일러를 연결하여 동시성 데이터 수집 | Microsoft Docs
-ms.custom: seodec18
+title: .NET에 프로파일러를 연결하여 동시성 데이터 수집
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ae5059b5315d37f6b471c31026e6fe6609e8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e071df829d01d638fb268f4f52df2ce731f75c1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330154"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808040"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET Framework 독립 실행형 애플리케이션에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 실행 중인 .NET Framework 독립 실행형(클라이언트) 애플리케이션에 연결하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.

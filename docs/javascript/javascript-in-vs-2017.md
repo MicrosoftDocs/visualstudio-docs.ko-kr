@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649625"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739891"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -35,7 +35,7 @@ Visual Studio에서는 이제 ECMAScript 2015/2016 등의 ECMAScript 언어 업�
 JavaScript는 여전히 프로그래밍 언어로 발전을 거듭하고 있으며 [TC39](https://www.ecma-international.org/memento/tc39-m.htm)는 업데이트를 담당하는 위원회입니다.
 ECMAScript 2015는 새롭고 유용한 구문과 기능을 제공하는 JavaScript 언어의 업데이트입니다. ES6 기능을 자세히 살펴보려면 [이](http://es6-features.org/#Constants) 참조 사이트를 확인하세요.
 
-Visual Studio에서는 ECMAScript 2015 지원 외에도 ECMAScript 2016을 지원하며, ECMAScript의 이후 버전이 릴리스되면 해당 버전도 지원합니다. TC39와 ECMAScript의 최신 변경 사항을 계속 받으려면 [github](https://github.com/tc39)이 작업을 따르세요.
+Visual Studio에서는 ECMAScript 2015 지원 외에도 ECMAScript 2016을 지원하며, ECMAScript의 이후 버전이 릴리스되면 해당 버전도 지원합니다. TC39와 ECMAScript의 최신 변경 내용을 계속 받으려면 [GitHub](https://github.com/tc39)의 작업을 따르세요.
 
 ### <a name="transpile-javascript"></a>JavaScript 트랜스파일
 
@@ -116,7 +116,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>더 우수한 IntelliSense
 
-[!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript IntelliSense는 이제 매개 변수 및 멤버 목록에 대한 훨씬 더 많은 정보를 표시합니다. 이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다. [여기](/visualstudio/ide/javascript-intellisense/)에서 새 IntelliSense 환경과 작동 방식에 대해 자세히 알아볼 수 있습니다.
+[!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]의 JavaScript IntelliSense는 이제 매개 변수 및 멤버 목록에 대한 훨씬 더 많은 정보를 표시합니다. 이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다. [여기](../ide/javascript-intellisense.md)에서 새 IntelliSense 환경과 작동 방식에 대해 자세히 알아볼 수 있습니다.
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 구문 지원
 
@@ -241,7 +241,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 이전에는 언제든 IntelliSense 범위에 있는 파일을 이해하기가 매우 복잡했습니다. 어떤 경우 모든 파일을 범위에 두는 것이 바람직하고, 다른 경우에는 바람직하지 않으므로, 수동 참조 관리를 포함하는 복잡한 구성이 생성됩니다. 앞으로는 더 이상 참조 관리에 대해 고려할 필요가 없으므로 슬래시 3개로 이루어진 참조 주석이나 `_references.js` 파일이 필요하지 않습니다.
 
-IntelliSense 작동 방식에 대한 자세한 내용은 [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) 페이지를 참조하세요.
+IntelliSense 작동 방식에 대한 자세한 내용은 [JavaScript IntelliSense](../ide/javascript-intellisense.md) 페이지를 참조하세요.
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +250,7 @@ VSDoc는 이제 더 쉽게 작성할 수 있고 JavaScript의 표준으로 승�
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 확장
 
-이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](https://msdn.microsoft.com/library/hh874692.aspx)을 작성할 수 있었습니다.
+이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](../vs-2015/ide/extending-javascript-intellisense.md)을 작성할 수 있었습니다.
 이러한 확장은 작성하기가 매우 어렵고 설치하여 참조하는 작업음 번거로우므로, 새 언어 서비스에서는 앞으로 이러한 파일을 지원하지 않습니다.
 쉬운 대안으로서 TypeScript 정의 파일을 작성하여 이전 `.intellisense.js` 확장과 동일한 IntelliSense 이점을 제공할 수 있습니다.
 선언(`.d.ts`) 파일 작성에 대한 자세한 내용은 [여기](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)에서 알아볼 수 있습니다.

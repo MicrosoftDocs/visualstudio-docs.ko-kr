@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801063"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005371"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -214,17 +214,17 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 
 다음은 현재 진행 중인 몇 가지 새로운 기능입니다.
 
-- **Visual Studio 2019의 Visual Studio Codespaces 지원(미리 보기)**
+- **Visual Studio 2019의 GitHub Codespaces 지원(미리 보기)**
 
-  그 어느 때보다 개발자들이 직장 및 자택에서 여러 프로젝트를 번갈아 실행하고 있습니다. 새 기능, 버그 수정, PR 리뷰, 프로토타입은 모두 시간을 다투고 지속적인 컨텍스트 전환이 필요합니다. [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)가 도움이 될 수 있습니다. 각 프로젝트마다 전용 사용자 지정 환경을 전적으로 클라우드에서 개발하고 생성하는 데 몇 초밖에 걸리지 않습니다. Visual Studio 2019를 사용하여 코드 공간에 연결하고 로컬처럼 작업할 수 있습니다.
+  그 어느 때보다 개발자들이 직장 및 자택에서 여러 프로젝트를 번갈아 실행하고 있습니다. 새 기능, 버그 수정, PR 리뷰, 프로토타입은 모두 시간을 다투고 지속적인 컨텍스트 전환이 필요합니다. [GitHub Codespaces](https://github.com/features/codespaces)가 도움이 될 수 있습니다. 각 프로젝트마다 전용 사용자 지정 환경을 전적으로 클라우드에서 개발하고 생성하는 데 몇 초밖에 걸리지 않습니다. Visual Studio 2019를 사용하여 코드 공간에 연결하고 로컬처럼 작업할 수 있습니다.
 
-  자세한 내용은 [Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) 페이지를 참조하세요.
+  자세한 내용은 [GitHub Codespaces란?](codespaces/codespaces-overview.md) 페이지를 참조하세요.
 
 - **Visual Studio 2019의 향상된 Git 환경(미리 보기)**
 
    Microsoft에서는 GitHub, Azure Repos 및 기타 원격 호스팅 서비스에서 코드를 사용할 때 생산성을 향상하도록 지속적으로 Git 환경을 개선하고 있습니다. 한 번의 동작(또는 클릭)으로 Visual Studio 2019 내에서 초기화하고 푸시할 수 있습니다. 새 분기를 만들고, 현재 분기를 관리하고, 병합 충돌을 해결할 수도 있습니다.
 
-   자세한 내용은 [Visual Studio의 Git 환경에 대한 흥미로운 새 업데이트](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) 블로그 게시물을 참조하세요.
+   자세한 내용은 [Visual Studio의 새 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
 
 미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 페이지를 참조하세요.
 

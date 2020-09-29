@@ -1,5 +1,6 @@
 ---
-title: Microsoft Word를 사용하여 부하 테스트 성능 보고서 만들기
+title: MS Word를 사용하여 부하 테스트 성능 보고서 만들기
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8100ec72beea715a97402f304cfe9dbe6dc54dad
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287599"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810248"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
 

@@ -1,5 +1,6 @@
 ---
-title: VSPerfCmd - 네이티브 서비스에 프로파일러를 연결하여 앱 통계 가져오기
+title: 네이티브 서비스에 프로파일러를 연결하여 앱 통계 가져오기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
@@ -9,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f45d08a82bdc3f6807f9a4d5a0cb31dc157e4c9c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328652"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808017"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 서비스에 프로파일러를 연결하여 애플리케이션 통계 수집
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>방법: 명령줄(VSPerfCmd)을 통해 네이티브 서비스에 프로파일러를 연결하여 애플리케이션 통계 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 서비스에 연결하고 샘플링 방법을 통해 성능 통계를 수집하는 방법에 대해 설명합니다.
 
 > [!NOTE]

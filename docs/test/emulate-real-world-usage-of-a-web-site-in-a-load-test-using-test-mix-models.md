@@ -1,5 +1,6 @@
 ---
-title: 부하 테스트에 대한 웹 사이트의 실제 사용법 에뮬레이트
+title: 부하 테스트를 위해 웹 사이트의 실제 사용량 에뮬레이트
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f4dbbc5ec2ead98f9b20cb137f9e15237c13cf80
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589606"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810313"
 ---
 # <a name="test-mix-models-overview"></a>테스트 조합 모델 개요
 

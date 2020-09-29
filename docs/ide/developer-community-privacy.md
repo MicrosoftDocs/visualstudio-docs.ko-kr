@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284804"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739969"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -68,6 +68,8 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 - 서비스 허브 로그 및 MEF 오류 로그(있는 경우)
 
 - Python 로그(있는 경우)
+
+- Razor LSP 편집기 로그(있는 경우)
 
 - Windows Forms 로그(있는 경우)
 

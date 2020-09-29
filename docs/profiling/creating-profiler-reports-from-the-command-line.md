@@ -1,5 +1,6 @@
 ---
-title: 명령줄에서 프로파일러 보고서 만들기 | Microsoft Docs
+title: 프로파일링 명령줄 - 보고서 만들기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 475c8da2d10dea4953486fc9c564c5bde7fb0887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329077"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808827"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>명령줄에서 프로파일러 보고서 만들기
 **VSPerfReport** 명령줄 도구를 통해 프로파일링 데이터(.*vsp*) 파일에서 .*xml* 또는 쉼표로 구분된 값(.*csv*) 보고서를 만들 수 있습니다. VSPerfReport 보고서 유형은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 대한 인터페이스의 테이블 기반 뷰와 일치합니다. 코드만 표시하고 프로파일링 데이터 파일의 세그먼트만 표시하도록 보고서를 필터링할 수 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.

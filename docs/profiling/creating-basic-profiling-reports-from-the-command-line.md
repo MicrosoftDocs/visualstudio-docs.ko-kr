@@ -1,5 +1,6 @@
 ---
-title: 명령줄에서 기본 프로파일링 보고서 만들기 | Microsoft Docs
+title: 프로파일링 명령줄 - 기본 보고서 만들기
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bca944b67b19fdbb4138c479acf5693994d1c717
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329054"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808853"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
 이 문서에서는 .*vsp* 또는 .*vsps* 프로파일링 데이터 파일에서 쉼표로 구분된 값(.*csv*) 보고서를 생성하는 기본 VSPerfReport 명령을 설명합니다. 모든 보고서 옵션에 대한 설명은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.

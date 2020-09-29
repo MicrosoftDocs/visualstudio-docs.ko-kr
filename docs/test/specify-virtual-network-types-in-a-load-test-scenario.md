@@ -1,5 +1,6 @@
 ---
-title: 부하 테스트 시나리오의 Virtual Network 형식 지정
+title: 가상 네트워크 형식 지정(부하 테스트)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1d87e9681650cd22cc713788b42360ba3460bdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b505ae281042264d909b72ff0f7911381a2d8ad8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286598"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809874"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 가상 네트워크 형식 지정
 

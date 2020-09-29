@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 관리 포털에서 언어, 연락처, 구독 수준 등에 대한 기본 설정을 지정하는 방법 알아보기
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426803"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022615"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>관리 포털에서 계약 기본 설정 지정
 슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 관리자가 구독자를 추가할 때 구독 세부 정보를 자동으로 채우며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
@@ -47,7 +47,7 @@ ms.locfileid: "89426803"
 > 여기에 나열한 전자 메일 주소는 구독자에게 제공되지 않습니다.  구독자가 구독자 포털에서 **내 관리자에게 문의** 요청을 제출하면 해당 메시지는 구독자에게 공개하지 않고 별칭으로 전달됩니다. 
 
 ### <a name="default-subscription-level"></a>기본 구독 수준
-이 설정을 사용하여 구독이 사용자에게 할당될 때 기본적으로 선택되는 계약에 포함된 구독 수준을 결정할 수 있습니다.  관리자는 이 설정을 계약의 구독 수준으로 변경할 수 있습니다. 이렇게 하면 가장 일반적인 선택을 반복할 필요가 없습니다. 
+이 설정을 사용하여 구독이 사용자에게 할당될 때 기본적으로 선택되는 계약에 포함된 구독 수준을 결정할 수 있습니다.  관리자는 해당 설정을 계약의 구독 수준으로 변경할 수 있습니다. 이렇게 하면 가장 일반적인 선택을 반복할 필요가 없습니다. 
 
 ### <a name="default-communication-preferences"></a>기본 통신 기본 설정
 기본 통신 언어 및 로캘을 설정하면 구독을 할당하는 절차를 간소화할 수 있습니다.  예를 들어 개발 팀이 관리 팀과 다른 국가에 있는 경우 구독자 위치에 가장 적합한 기본 설정을 지정할 수 있습니다. 개별 구독자의 모든 관리자가 이 설정을 변경할 수 있습니다. 
@@ -76,10 +76,10 @@ A:  **연락처 전자 메일 주소** 기본 설정에 특정 전자 메일 주
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독 관리에 대해 자세히 알아보세요.

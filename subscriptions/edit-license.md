@@ -1,18 +1,18 @@
 ---
 title: 관리자 포털에서 구독 편집 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 관리자가 구독 할당을 편집하는 방법을 알아봅니다.
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453735"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022553"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio 구독 할당 편집
 구독 관리자는 조직 내에서 개인에게 할당된 구독을 변경할 수 있습니다.  이 문서에서는 관리자가 변경할 수 있는 유형에 대해 설명하고 필요한 단계를 제공합니다.
@@ -34,6 +34,7 @@ ms.locfileid: "87453735"
 
 대량 편집 프로세스를 사용하여 여러 구독자를 한 번에 수정할 수 있습니다. 이 기능은 주로 회사 이메일 주소 변경을 수행하는 조직에서 사용되거나 조직에서 다운로드에 대한 액세스를 제한하도록 결정한 경우에 사용됩니다.
 
+대량 편집을 사용하여 여러 구독자를 편집하는 방법을 알아보려면 이 비디오를 시청하거나 계속 읽어 보세요. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
@@ -56,10 +57,10 @@ ms.locfileid: "87453735"
 5. 파일이 업로드되면 성공했음을 알려주는 알림이 표시됩니다. 이 시점에서 편집한 내용이 구독자 정보에 반영됩니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 특정 구독 ID를 할당해야 하나요? 구독 ID 할당을 체크 아웃합니다. 

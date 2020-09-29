@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911402"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851101"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대해 자주 묻는 질문
 
@@ -103,7 +103,7 @@ AKS:
 
 2. 인증서 및 Azure KeyVault 제거
 
-   가상 머신 또는 가상 머신 확장 집합의 원격 디버거 확장을 설치하는 경우 Azure 가상 머신/가상 머신 확장 집합 리소스를 사용하여 VS 클라이언트를 인증하기 위해 클라이언트 인증서와 서버 인증서가 둘 다 생성됩니다.
+   가상 머신 또는 가상 머신 확장 집합의 원격 디버거 확장을 설치하는 경우 Azure 가상 머신/가상 머신 확장 집합 리소스를 사용하여 Visual Studio 클라이언트를 인증하기 위해 클라이언트 인증서와 서버 인증서가 둘 다 생성됩니다.
 
    - 클라이언트 인증서
 
@@ -124,7 +124,7 @@ AKS:
       ```
 
    - 서버 인증서
-      - 해당 서버 인증서 지문은 Azure KeyVault에 비밀로 배포됩니다. VS는 가상 머신 또는 가상 머신 확장 집합 리소스에 해당하는 지역에서 접두사 MSVSAZ*를 사용하여 KeyVault를 찾거나 만들려고 시도합니다. 따라서 해당 지역에 배포된 모든 가상 머신 또는 가상 머신 확장 집합 리소스는 동일한 KeyVault를 공유합니다.
+      - 해당 서버 인증서 지문은 Azure KeyVault에 비밀로 배포됩니다. Visual Studio는 가상 머신 또는 가상 머신 확장 집합 리소스에 해당하는 지역에서 접두사 MSVSAZ*를 사용하여 KeyVault를 찾거나 만들려고 시도합니다. 따라서 해당 지역에 배포된 모든 가상 머신 또는 가상 머신 확장 집합 리소스는 동일한 KeyVault를 공유합니다.
       - 서버 인증서 지문 비밀을 삭제하려면 Azure Portal로 이동하고 리소스를 호스트하는 동일한 지역에서 MSVSAZ* KeyVault를 찾습니다. `remotedebugcert<<ResourceName>>` 레이블이 지정된 비밀을 삭제합니다.
       - 또한 PowerShell을 통해 리소스에서 서버 비밀을 삭제해야 합니다.
 

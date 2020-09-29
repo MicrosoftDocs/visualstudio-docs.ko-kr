@@ -1,5 +1,6 @@
 ---
-title: '방법: 부하 테스트 실행 설정에 대한 샘플링 주기 지정'
+title: 부하 테스트 실행 설정의 샘플 속도 지정
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +9,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 522ddebaf17a6e1c447c15732e8a60a9c4e7f5da
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287391"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810590"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 속도 지정
 

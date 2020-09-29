@@ -1,5 +1,6 @@
 ---
-title: 부하 테스트에 대한 단계 부하 패턴의 단계 진입 시간
+title: 부하 테스트의 단계 진입 시간
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +9,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ec0866407ef22e2f6c12e21207f8616b9a9477
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287326"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810577"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>방법: 단계 부하 패턴에 대한 단계 진입 시간 속성 지정
 

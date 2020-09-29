@@ -1,5 +1,6 @@
 ---
-title: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
+title: 웹 성능 테스트를 위한 HTTP 본문 편집기 만들기
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +9,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7539f9055fb64cdbfa77ebe5beee7173b8967afb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288145"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810287"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 

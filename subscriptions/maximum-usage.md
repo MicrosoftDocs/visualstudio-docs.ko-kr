@@ -1,38 +1,41 @@
 ---
 title: 관리 포털에서 최대 사용량 기능 사용
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 04/07/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 관리 포털에서 할당된 최대 구독 수를 보는 방법 알아보기
-ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808355"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022175"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>최대 사용량 기능을 사용하여 할당된 구독 수 추적
 Visual Studio 구독 관리 포털의 새로운 기능을 사용하면 구매 및 할당된 구독 수를 추적하고, 지난 1년 내 및 규약 기간 동안 할당된 각 수준의 최대 구독 수를 식별할 수 있습니다. 
 
 ## <a name="maximum-usage-overview"></a>최대 사용량 개요
+최대 사용량 기능을 사용하는 방법을 알아보려면 비디오를 시청하거나 계속 읽어 보세요. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>최대 사용량 보기
 모든 규약 및 구독 수준에 할당된 최대 구독 수를 보려면 다음을 수행합니다.
 1. 포털의 왼쪽 맨 위에 있는 드롭다운 목록에서 보려는 규약을 선택합니다. (하나의 규약만 있는 경우 이미 선택됩니다.)
 2. 구독자 표의 왼쪽 맨 위에서 세 번째 아이콘인 **최대 사용량** 아이콘을 클릭합니다.  
+
     > [!div class="mx-imgBorder"]
-    > ![최대 사용량 메뉴](_img/maximum-usage/maximum-usage-menu.png)
+    > ![최대 사용량 플라이아웃](_img/maximum-usage/maximum-usage-menu.png "최대 사용량 단추를 클릭하여 할당한 각 구독 유형의 최대 수를 확인합니다.")
+
 3. “12개월 최대 사용량”이 나타나고 각 수준에 대해 지난 1년 이내에 할당한 최대 구독 수와 해당 최고점에 도달한 월이 함께 표시됩니다.    
 
 ## <a name="view-your-assignment-history"></a>할당 기록 보기
 각 구독 수준에 대한 최대 할당을 보는 것 외에도 **전체 보고서를 내보내기** 단추를 클릭하여 구매 및 할당을 포함한 규약 관련 활동에 대한 실행 계정을 볼 수 있습니다.  (단추를 보려면 아래로 스크롤해야 할 수도 있습니다.)  
 
 > [!div class="mx-imgBorder"]
-> ![최대 사용량 전체 보고서](_img/maximum-usage/maximum-usage-full-report.png)
+> ![최대 사용량 전체 보고서](_img/maximum-usage/maximum-usage-full-report.png "전체 보고서에는 모든 구독 구매 및 할당의 레코드가 포함됩니다.")
 
 각 구독 수준에 대해 보고서에는 새로운 최대 할당 수준에 도달한 날짜와 해당 날짜에 구입한 구독 수가 표시되므로 전체 구분이 있는 날짜를 쉽게 볼 수 있습니다.  
 
@@ -46,12 +49,11 @@ A:  개요의 정보는 각 구독 수준에 대한 ‘현재’ 할당 및 사�
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 구독 할당 또는 관리 포털의 다른 측면에 대해 질문이 있는 경우 https://visualstudio.microsoft.com/subscriptions/support/ 에 문의하여 지원을 받으세요. 
 - 구입한 추가 구독을 할당하는 경우([초과 할당](handle-overclaimed-license.md))에 대해 자세히 알아보세요.
-

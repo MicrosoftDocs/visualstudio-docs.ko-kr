@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Emulator for Android의 시스템 요구 사항 | Microsoft Docs
-ms.custom: ''
+title: Android용 VS 에뮬레이터에 대한 시스템 요구 사항
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77272048"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808261"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 

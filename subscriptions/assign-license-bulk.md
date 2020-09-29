@@ -1,23 +1,23 @@
 ---
 title: 사용자 그룹에 Visual Studio 구독에 대한 라이선스 할당 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249618"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022441"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
 
-대규모 사용자 그룹을 추가하려면 일괄 추가 기능을 사용하면 됩니다. 조직에서 Microsoft Azure Active Directory(Azure AD)를 사용하는 경우에는 Azure AD 그룹을 사용할 수 있습니다. 이 문서에서는 두 옵션의 프로세스를 모두 설명합니다. 
+대규모 사용자 그룹을 추가하려면 일괄 추가 기능을 사용하면 됩니다. 조직에서 Microsoft Azure Active Directory(Azure AD)를 사용하는 경우에는 Azure AD 그룹을 사용할 수 있습니다. 이 문서에서는 두 옵션의 프로세스를 모두 설명합니다.  대량 추가 기능에 관해 자세히 알아보려면 이 비디오를 시청하거나 계속 읽어 보세요. 
 
 <br>
 
@@ -64,7 +64,8 @@ ms.locfileid: "88249618"
 
    오류가 발생하는 경우 다음 단계를 수행합니다.
    1. 만든 Excel 파일을 열고 문제를 해결한 후 파일을 저장합니다.
-   0. 관리 포털로 돌아가서 **추가**를 선택합니다.
+   0. 관리 포털로 돌아가서 오류 메시지를 해제합니다.
+   0. **추가**를 선택합니다.
    0. **대량 추가**를 선택합니다.
    0. Excel 파일을 이미 저장했으므로 템플릿을 다운로드할 필요가 없습니다.  **찾아보기**를 선택하고 방금 저장한 파일을 찾은 다음 **열기**를 선택합니다.
    0. **확인**을 선택합니다.
@@ -89,6 +90,7 @@ ms.locfileid: "88249618"
 > - 그룹의 모든 멤버에게는 Azure AD 계정에 연결된 전자 메일 주소가 있어야 합니다.
 > - Azure AD 그룹을 사용하여 추가한 구독에서는 알림에 별도의 전자 메일 주소를 사용할 수 없습니다.  
 
+Azure Active Directory 그룹 기능을 사용하여 구독자를 추가하는 방법을 자세히 알아보려면 이 비디오를 시청하거나 계속 읽어 보세요. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
@@ -129,11 +131,11 @@ A: 아니요. 개별 구독자의 정보를 수정하려면 Azure AD 보안 그�
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q: Azure AD 보안 그룹에 구독자를 추가했지만 구독 관리 포털에는 추가되었다고 표시되지 않고 구독도 없습니다. 이유는 무엇입니까?  
 A: 조직이 Azure AD를 구성한 방식에 따라 사용자가 추가되기까지 최대 24시간 지연될 수 있습니다. 24시간 넘게 지연되면 [고객 지원팀에 문의](https://visualstudio.microsoft.com/support/support-overview-vs)하세요.  
 
-## <a name="see-also"></a>참고 항목
-- [Visual Studio 설명서](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/)
-- [Azure 설명서](https://docs.microsoft.com/azure/)
-- [Microsoft 365 설명서](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>참조
+- [Visual Studio 설명서](/visualstudio/)
+- [Azure DevOps 설명서](/azure/devops/)
+- [Azure 설명서](/azure/)
+- [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
 - 구독자를 한두 명 정도만 추가하시겠습니까?  [단일 사용자 추가](assign-license.md) 체크 아웃

@@ -1,6 +1,6 @@
 ---
 title: .NET 서비스에 프로파일러를 연결하여 메모리 데이터 수집
-ms.custom: seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
@@ -10,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6552ca62be6de2e99b4e650daaa117e4025746cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328685"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811073"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET 서비스에 프로파일러를 연결하여 메모리 데이터 수집
+# <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>방법: 명령줄을 사용하여 .NET Framework 서비스에 프로파일러를 연결함으로써 메모리 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 .NET Framework 서비스에 연결하고 메모리 데이터를 수집하는 방법에 대해 설명합니다. 메모리 할당의 수와 크기에 대한 데이터를 수집할 수 있으며, 메모리 개체의 수명에 대한 데이터도 수집할 수 있습니다.
 
 > [!NOTE]

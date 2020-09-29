@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038415"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739878"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -146,7 +146,7 @@ Fakes는 두 가지 버전이 있습니다.
 
     ```
 
-    여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름은 인터페이스의 이름에서 파생되며 "`Fakes.Stub`"가 접두사가 되고 매개 변수 형식 이름이 추가됩니다.
+    여기에서 특별한 부분은 `StubIStockFeed` 클래스입니다. Microsoft Fakes는 참조된 어셈블리의 모든 인터페이스에 대해 스텁 클래스를 생성합니다. 스텁 클래스의 이름은 인터페이스의 이름에서 파생되며 “`Fakes.Stub`”이 접두사가 되고 매개 변수 형식 이름이 추가됩니다.
 
     스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다. 자세한 내용은 [스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)를 참조하세요.
 
