@@ -1,5 +1,6 @@
 ---
 title: '방법: 특정 목록 인스턴스에 대 한 이벤트 수신기 만들기 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016965"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585838"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>방법: 특정 목록 인스턴스에 대 한 이벤트 수신기 만들기
   목록 인스턴스 이벤트 수신기는 목록 정의의 모든 인스턴스에서 발생 하는 이벤트에 응답 합니다. 이벤트 수신기 템플릿에서 특정 목록 인스턴스를 대상으로 지정할 수는 없지만 목록 정의로 범위가 지정 된 이벤트 수신기를 수정 하 여 특정 목록 인스턴스의 이벤트에 응답할 수 있습니다.
@@ -85,6 +86,6 @@ ms.locfileid: "86016965"
 
      수신기가 사용자 지정 알림 목록 인스턴스인 **Testannouncements**이벤트에만 응답 하도록 구성 되어 있으므로 이벤트 수신기는 새 알림에서 트리거되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
