@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a78253094131b5998243ee3c826c4585ddff13
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 06e1ba7c10912f23fedc09892e03e2105ff2bab4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012180"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583608"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 
-텍스트 뷰는 사용자가 텍스트 버퍼의 유니코드 텍스트를 보고 편집할 수 있도록 하는 창입니다. 기본적으로 뷰는 대부분의 사용자가 편집기로 참조 하는 것입니다. 뷰는 다양 한 텍스트 계층 (자동 줄 바꿈, 개요 텍스트 등)에 의해 버퍼에서 분리 되기 때문에 버퍼의 텍스트를 정확 하 게 표현 하는 것이 보장 되지 않습니다. 텍스트 보기에 대 한 자세한 내용은 [레거시 API를 사용 하 여 theText View에 액세스](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015)를 참조 하세요.
+텍스트 뷰는 사용자가 텍스트 버퍼의 유니코드 텍스트를 보고 편집할 수 있도록 하는 창입니다. 기본적으로 뷰는 대부분의 사용자가 편집기로 참조 하는 것입니다. 뷰는 다양 한 텍스트 계층 (자동 줄 바꿈, 개요 텍스트 등)에 의해 버퍼에서 분리 되기 때문에 버퍼의 텍스트를 정확 하 게 표현 하는 것이 보장 되지 않습니다. 텍스트 보기에 대 한 자세한 내용은 [레거시 API를 사용 하 여 theText View에 액세스](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true)를 참조 하세요.
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .
 

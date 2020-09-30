@@ -1,5 +1,6 @@
 ---
 title: Office 솔루션에 대 한 구성 정보 설정
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545810"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581041"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>방법: Office 솔루션에 대 한 구성 정보 설정
   구성 파일을 사용 하 여 Office 솔루션과 관련 된 설정을 구성할 수 있습니다. 어셈블리 바인딩 정책, 원격 개체, 디버그 및 추적 설정과 같은 설정을 지정할 수 있습니다.
@@ -43,7 +44,7 @@ ms.locfileid: "85545810"
 
    Office 프로젝트에서 구성 파일을 사용 하는 경우 특별 한 고려 사항은 없습니다.
 
-## <a name="see-also"></a>추가 정보
-- [.NET Framework의 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)
+## <a name="see-also"></a>참고 항목
+- [.NET Framework에 대 한 구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
