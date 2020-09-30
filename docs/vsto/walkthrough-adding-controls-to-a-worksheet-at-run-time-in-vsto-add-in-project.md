@@ -1,5 +1,6 @@
 ---
 title: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253903"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584349"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
   Excel VSTO 추가 기능을 사용하여 열려 있는 워크시트에 컨트롤을 추가할 수 있습니다. 이 연습에서는 리본 메뉴를 사용하여 사용자가 <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> 및 <xref:Microsoft.Office.Tools.Excel.ListObject>를 워크시트에 추가할 수 있도록 하는 방법을 보여 줍니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
@@ -186,7 +187,7 @@ ms.locfileid: "71253903"
 
 - 워크시트에 컨트롤을 저장 하는 방법에 대 한 자세한 내용은 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Excel VSTO 추가 기능 동적 컨트롤 샘플을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Excel 솔루션](../vsto/excel-solutions.md)
 - [Office 문서의 Windows forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)

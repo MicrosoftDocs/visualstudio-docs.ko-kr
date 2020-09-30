@@ -1,5 +1,6 @@
 ---
 title: 'Excel: 문서 수준 사용자 지정 프로그래밍 시작'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66402153"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585682"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel 용 문서 수준 사용자 지정 프로그래밍 시작
   Visual Studio를 사용 하 여 Excel Microsoft Office에 대 한 문서 수준 사용자 지정을 만들기 시작한 경우 알아야 할 사항은 다음과 같습니다.
@@ -63,7 +64,7 @@ ms.locfileid: "66402153"
 
  Excel 프로젝트의 일반적인 작업 중 일부를 안내 하는 항목의 목록은 [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [Excel 솔루션](../vsto/excel-solutions.md)

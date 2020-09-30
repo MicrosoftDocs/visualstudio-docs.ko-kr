@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서에서 모든 메모 제거'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2b0e2be92ca5d4b548b297d01f8ec31b779510
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519888"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584822"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>방법: 프로그래밍 방식으로 문서에서 모든 메모 제거
   `DeleteAllComments` 메서드를 사용하여 Microsoft Office Word 문서에서 모든 메모를 제거합니다.
@@ -41,6 +42,6 @@ ms.locfileid: "85519888"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서의 텍스트에 메모 추가](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)
 - [문서 호스트 항목](../vsto/document-host-item.md)

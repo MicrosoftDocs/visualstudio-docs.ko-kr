@@ -1,5 +1,6 @@
 ---
 title: '연습: 문서 수준 프로젝트의 단순 데이터 바인딩'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981064"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584926"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 단순 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트의 데이터 바인딩에 대 한 기본 사항을 보여 줍니다. SQL Server 데이터베이스의 단일 데이터 필드는 Microsoft Office Excel에서 명명 된 범위에 바인딩됩니다. 또한이 연습에서는 테이블의 모든 레코드를 스크롤할 수 있도록 하는 컨트롤을 추가 하는 방법을 보여 줍니다.
@@ -79,7 +80,7 @@ ms.locfileid: "62981064"
 
 8. **Customers** 테이블 옆의 확인란을 선택 합니다.
 
-9. **마침**을 클릭합니다.
+9. **Finish**를 클릭합니다.
 
    마법사가 **데이터 소스** 창에 **Customers** 테이블을 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
@@ -191,7 +192,7 @@ ms.locfileid: "62981064"
 
 - 컨트롤을 사용 <xref:System.Windows.Forms.BindingNavigator> 하 여 레코드를 스크롤합니다. 자세한 내용은 [방법: Windows Forms BindingNavigator 컨트롤을 사용 하 여 데이터 탐색](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

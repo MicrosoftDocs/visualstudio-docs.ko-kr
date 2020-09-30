@@ -1,5 +1,6 @@
 ---
 title: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드 실행
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bd60c9d7b30d4620630d1f6752bd4c7e8bf1182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016059"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585760"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>방법: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드 실행
   SharePoint 프로젝트가 배포 되거나 취소 될 때 추가 작업을 수행 하려는 경우에는 Visual Studio에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.
@@ -53,6 +54,6 @@ ms.locfileid: "86016059"
 ## <a name="deploy-the-extension"></a>확장 배포
  확장을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [방법: 배포 단계가 실행 될 때 코드 실행](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

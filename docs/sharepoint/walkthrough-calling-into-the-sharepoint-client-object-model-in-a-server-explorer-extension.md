@@ -1,5 +1,6 @@
 ---
 title: '서버 탐색기: SharePoint 연결 노드 확장'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740099"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585578"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출
   이 연습에서는 **서버 탐색기**의 **sharepoint 연결** 노드에 대 한 확장에서 sharepoint 클라이언트 개체 모델을 호출 하는 방법을 보여 줍니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 [sharepoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.
@@ -279,7 +280,7 @@ ms.locfileid: "90740099"
 
 5. Visual Studio의 두 인스턴스를 모두 닫습니다 (이 경우에는 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

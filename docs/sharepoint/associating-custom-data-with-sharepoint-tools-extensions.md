@@ -1,5 +1,6 @@
 ---
 title: SharePoint 도구 확장과 사용자 지정 데이터 연결 | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f8aaf9303f3ee9a4008094b4e98c99d635e9f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987971"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584692"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint 도구 확장과 사용자 지정 데이터 연결
   SharePoint 도구 확장의 특정 개체에 사용자 지정 데이터를 추가할 수 있습니다. 확장의 다른 코드에서 나중에 액세스 하려는 경우 확장의 한 부분에 데이터가 있는 경우 유용 합니다. 데이터를 저장 하 고 액세스 하는 사용자 지정 방법을 구현 하는 대신 데이터를 확장의 개체와 연결한 다음 나중에 동일한 개체에서 데이터를 검색할 수 있습니다.
@@ -79,7 +80,7 @@ ms.locfileid: "62987971"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 도구 확장의 프로그래밍 개념 및 기능](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [연습: 웹 파트를 표시 하도록 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

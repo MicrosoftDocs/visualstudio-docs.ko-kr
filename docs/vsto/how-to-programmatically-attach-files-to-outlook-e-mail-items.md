@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546135"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585329"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부
   이 예제에서는 새 메일 항목에 파일을 첨부 하 고 Armando에 전달 합니다. 이 예제에서는 Ar마나트 이라는 사용자가 받는 사람으로 존재 한다고 가정 합니다.

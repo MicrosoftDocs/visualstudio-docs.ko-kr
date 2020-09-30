@@ -1,5 +1,6 @@
 ---
-title: .NET Framework 4, 4.5로 마이그레이션된 프로젝트에서 Outlook 양식 영역 업데이트
+title: .NET Framework 4.5으로 마이그레이션될 때 Outlook 양식 영역 업데이트
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836053"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584401"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Outlook 프로젝트에서 양식 영역 업데이트
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>.NET Framework 4.5으로 마이그레이션될 때 Outlook 양식 영역 업데이트
+
   양식 영역이 있는 Outlook VSTO 추가 기능 프로젝트의 대상 프레임워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 버전으로 변경된 경우 생성된 양식 영역 코드 및 런타임에 특정 양식 영역 클래스를 인스턴스화하는 코드를 일부 변경해야 합니다.
 
 ## <a name="update-the-generated-form-region-code"></a>생성 된 양식 영역 코드 업데이트
@@ -190,12 +192,12 @@ ms.locfileid: "66836053"
 
  다음 표에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 형식을 인스턴스화하는 데 사용할 메서드 및 양식 영역 형식을 보여 줍니다.
 
-|형식|사용할 팩터리 메서드|
+|Type|사용할 팩터리 메서드|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)

@@ -1,5 +1,6 @@
 ---
 title: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016106"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585473"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿과 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목의 새 인스턴스를 프로젝트에 추가 하는 경우 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -36,7 +37,7 @@ ms.locfileid: "86016106"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행 하려면 먼저 [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)완료 하 여 CustomActionProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -213,7 +214,7 @@ ms.locfileid: "86016106"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>항목 템플릿의 *Elements.xml* 파일에 대체 가능 매개 변수 추가
  ItemTemplate 프로젝트의 *Elements.xml* 파일에 여러 대체 가능 매개 변수를 추가 합니다. 이러한 매개 변수는 앞에서 `PopulateReplacementDictionary` 정의한 클래스의 메서드에서 초기화 됩니다 `CustomActionWizard` . 사용자가 프로젝트에 사용자 지정 작업 프로젝트 항목을 추가 하는 경우 Visual Studio는 새 프로젝트 항목의 *Elements.xml* 파일에서 이러한 매개 변수를 마법사에서 지정한 값으로 자동으로 바꿉니다.
 
- 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 대체 가능한 매개 변수를 정의 하는 것 외에도 SharePoint 프로젝트 시스템에서 정의 하 고 초기화 하는 기본 제공 매개 변수를 사용할 수 있습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조 하세요.
+ 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 대체 가능한 매개 변수를 정의 하는 것 외에도 SharePoint 프로젝트 시스템에서 정의 하 고 초기화 하는 기본 제공 매개 변수를 사용할 수 있습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>*Elements.xml* 파일에 대체 가능 매개 변수를 추가 하려면
 
@@ -341,7 +342,7 @@ ms.locfileid: "86016106"
 
 4. Visual Studio의 두 인스턴스 (CustomActionProjectItem 솔루션이 열리는 실험적 인스턴스 및 Visual Studio의 인스턴스)를 닫습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

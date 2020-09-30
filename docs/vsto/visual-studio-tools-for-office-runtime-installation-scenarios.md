@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Office 런타임 설치 시나리오
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810930"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584375"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office 런타임 설치 시나리오
   다음 세 가지 방법으로 Visual Studio 2010 Tools for Office runtime을 설치할 수 있습니다.
@@ -38,8 +39,8 @@ ms.locfileid: "90810930"
 |런타임 설치 시나리오|Office 솔루션 로더|.NET Framework 3.5용 Office 확장|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]용 Office 확장명|[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]용 Office 확장명|
 |-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|
 |[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 이상과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예|예|
-|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 사용|예|예, .NET Framework 3.5가 이미 설치된 경우|아니요|아니요|
-|Office 2010 서비스 팩 1(SP1) 이상과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]가 이미 설치된 경우|아니요|
+|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 사용|예|예, .NET Framework 3.5가 이미 설치된 경우|예|예|
+|Office 2010 서비스 팩 1(SP1) 이상과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]가 이미 설치된 경우|예|
 |재배포 가능한 런타임과 함께|예|예, .NET Framework 3.5가 이미 설치된 경우|예, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]가 이미 설치된 경우|예, [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]가 이미 설치된 경우|
 
 ### <a name="install-the-runtime-with-visual-studio-or-the-microsoft-office-developer-tools-for-visual-studio"></a>Visual Studio 또는 Visual Studio용 Microsoft Office 개발자 도구를 사용 하 여 런타임 설치
@@ -66,6 +67,6 @@ ms.locfileid: "90810930"
 
  ClickOnce 솔루션에 필수 구성 요소를 포함 하는 방법에 대 한 자세한 내용은 [방법: 최종 사용자 컴퓨터에 Office 솔루션 실행을 위한 필수 구성 요소 설치](/previous-versions/bb608608(v=vs.110))를 참조 하세요. 재배포 가능 패키지에서 런타임을 수동으로 설치 하는 방법에 대 한 자세한 내용은 [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio Tools for Office 런타임의 어셈블리](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

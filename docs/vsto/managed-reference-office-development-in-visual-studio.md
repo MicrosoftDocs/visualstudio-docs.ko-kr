@@ -1,5 +1,6 @@
 ---
 title: 관리 되는 참조 (Visual Studio에서 Office 개발)
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519862"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583751"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>관리 되는 참조 (Visual Studio에서 Office 개발)
   이 섹션에는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](includes/net-v45-md.md)]대상의 Office 프로젝트에서 사용되는 네임스페이스 및 형식에 대한 API 참조 설명서가 포함되어 있습니다. .NET Framework 3.5를 대상으로 하는 Office 프로젝트에서 사용 되는 네임 스페이스 및 형식에 대 한 API 참조 설명서는 Visual Studio 설명서의 [관리 되는 참조 (Visual studio에서 Office 개발)](managed-reference-office-development-in-visual-studio.md)에서 다음 참조 섹션을 참조 하세요.
@@ -70,7 +71,7 @@ ms.locfileid: "85519862"
 
  Office 프로젝트를 빌드하는 데 사용되는 MSBuild 작업 클래스가 포함됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office 개발 샘플 및 연습](office-development-samples-and-walkthroughs.md)

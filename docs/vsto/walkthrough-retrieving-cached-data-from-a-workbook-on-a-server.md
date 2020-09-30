@@ -1,5 +1,6 @@
 ---
 title: '연습: 서버의 통합 문서에서 캐시 된 데이터 검색'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985416"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584952"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>연습: 서버의 통합 문서에서 캐시 된 데이터 검색
   이 연습에서는 클래스를 사용 하 여 Excel을 시작 하지 않고 Microsoft Office Excel 통합 문서에 캐시 되는 데이터 집합에서 데이터를 검색 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .
@@ -106,7 +107,7 @@ ms.locfileid: "72985416"
 
 7. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장 하 고 **Product (saleslt)** 를 선택 합니다.
 
-8. **마침**을 클릭합니다.
+8. **Finish**를 클릭합니다.
 
     *Adventureworksltdataset.xsd 파일이* 파일이 **AdventureWorksDataSet** 프로젝트에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
 
@@ -293,7 +294,7 @@ ms.locfileid: "72985416"
 
 - Excel을 시작 하지 않고 캐시 된 데이터 집합의 데이터 변경 자세한 내용은 [연습: 서버의 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [연습: 서버의 통합 문서에 데이터 삽입](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [연습: 서버의 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

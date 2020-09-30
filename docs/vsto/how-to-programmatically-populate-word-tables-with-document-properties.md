@@ -1,5 +1,6 @@
 ---
 title: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537815"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585486"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기
   다음 예제에서는 문서의 맨 위에 Microsoft Office Word 표를 만들고 호스트 문서의 속성으로 채웁니다.
@@ -93,7 +94,7 @@ ms.locfileid: "85537815"
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 Word 표 만들기](../vsto/how-to-programmatically-create-word-tables.md)
 - [방법: 프로그래밍 방식으로 Word 표의 셀에 텍스트 및 서식 추가](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)

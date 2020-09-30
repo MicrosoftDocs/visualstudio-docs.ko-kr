@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011920"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583673"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록에서는 이러한 작업에 대 한 지침을 제공 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "90011920"
 
     - 프로젝트 팩터리-새 프로젝트 만들기 및 기존 프로젝트 열기를 관리 합니다. 자세한 내용은 [프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)를 참조 하세요.
 
-    - 프로젝트 계층 구조 및 명령 처리. 자세한 내용은 [HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](/previous-versions/bb166212(v=vs.100)), 프로젝트 [모델 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md)및 [menucommands와 OleMenuCommands 비교](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)를 참조 하세요.
+    - 프로젝트 계층 구조 및 명령 처리. 자세한 내용은 [HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](/previous-versions/bb166212(v=vs.100)), 프로젝트 [모델 요소](../../extensibility/internals/elements-of-a-project-model.md), [프로젝트 모델 핵심 구성 요소](../../extensibility/internals/project-model-core-components.md)및 [menucommands와 OleMenuCommands 비교](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)를 참조 하세요.
 
     - 프로젝트 항목 관리 ( **새 프로젝트** 대화 상자에 프로젝트 추가 포함) 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md) 및 [프로젝트 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)을 참조 하세요.
 

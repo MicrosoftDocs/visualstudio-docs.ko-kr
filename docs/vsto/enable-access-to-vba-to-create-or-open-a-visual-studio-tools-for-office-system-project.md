@@ -1,7 +1,7 @@
 ---
 title: VSTO 시스템 프로젝트를 만들거나 열기 위한 VBA 액세스
+titleSuffix: ''
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551551"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584861"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>VBA에 대 한 액세스를 사용 하 여 Microsoft Office 시스템 프로젝트에 대 한 Visual Studio Tools 만들기 또는 열기
 
@@ -109,7 +109,7 @@ Microsoft Office에서 Visual Basic for Applications (VBA) 프로젝트 시스�
 
 7. **Visual Basic for Applications**옆에 있는 드롭다운 메뉴를 열고 **내 컴퓨터에서 실행**을 클릭 합니다.
 
-8. **계속**을 클릭합니다.
+8. **Continue(계속)** 를 클릭합니다.
 
 9. **닫기**를 클릭합니다.
 
@@ -125,5 +125,5 @@ Microsoft Office에서 Visual Basic for Applications (VBA) 프로젝트 시스�
 
 5. **Office 설치에서 오류 검색 및 복구**를 선택한 다음 **설치**를 클릭 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

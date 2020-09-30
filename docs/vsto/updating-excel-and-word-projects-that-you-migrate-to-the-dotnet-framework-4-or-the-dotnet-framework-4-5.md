@@ -1,5 +1,6 @@
 ---
-title: .NET Framework 4/4.5로 마이그레이션된 Excel 또는 Word 프로젝트 업데이트
+title: .NET Framework 4.5로 마이그레이션된 Excel 또는 Word 프로젝트를 업데이트 합니다.
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253712"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584414"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트를 업데이트 합니다.
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>.NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트를 업데이트 합니다.
   다음 기능 중 하나를 사용하는 Excel 또는 Word 프로젝트가 있는 경우 대상 프레임워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경되면 코드를 수정해야 합니다.
 
 - [GetVstoObject 및 HasVstoObject 메서드](#GetVstoObject)
@@ -229,7 +230,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 이러한 컬렉션 형식은 이제 <xref:System.Collections.CollectionBase>에서 파생되지 않는 인터페이스입니다. <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>및 <xref:System.Collections.CollectionBase.InnerList%2A>와 같은 일부 멤버는 이러한 컬렉션 형식에서 더 이상 사용할 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [콘텐츠 컨트롤](../vsto/content-controls.md)
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

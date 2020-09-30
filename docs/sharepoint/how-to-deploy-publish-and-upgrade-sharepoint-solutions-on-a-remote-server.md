@@ -1,5 +1,6 @@
 ---
 title: SharePoint 솔루션을 원격으로 배포, 게시, & 업그레이드
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016807"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585786"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드
   로컬 시스템에 SharePoint 솔루션을 배포 하는 것 외에도 샌드박스가 적용 된 SharePoint 솔루션을 원격 사이트 또는 로컬 SharePoint 사이트에 게시할 수 있습니다. 원격 게시 프로세스는 .wsp 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 솔루션을 활성화할 수 있도록 합니다 *.* 변경한 후 원격 SharePoint 솔루션 설치를 업그레이드할 수도 있습니다.
@@ -74,7 +75,7 @@ ms.locfileid: "86016807"
 
      이전 버전의 솔루션이 비활성화 되 고 새 버전의 솔루션이 이전 솔루션에서 유지 관리 되는 데이터로 업그레이드 되며 새 솔루션이 SharePoint에서 활성화 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)
 - [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

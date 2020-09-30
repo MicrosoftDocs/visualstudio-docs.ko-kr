@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 숨겨진 모드에서 Word 대화 상자 사용'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 923fc7ddec0350f254968fe17494ecbe27f76b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537581"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583764"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>방법: 프로그래밍 방식으로 숨겨진 모드에서 Word 대화 상자 사용
   사용자에 게 표시 하지 않고 Microsoft Office Word에서 기본 제공 대화 상자를 호출 하 여 하나의 메서드 호출로 복잡 한 작업을 수행할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> <xref:Microsoft.Office.Interop.Word.Dialog> 메서드를 호출 하지 않고 개체의 메서드를 사용 하 여이 작업을 수행할 수 있습니다 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> .
@@ -38,7 +39,7 @@ ms.locfileid: "85537581"
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [Office 솔루션의 런타임에 바인딩](../vsto/late-binding-in-office-solutions.md)

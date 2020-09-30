@@ -1,5 +1,6 @@
 ---
 title: SharePoint 솔루션 패키지 배포, 게시 및 업그레이드 &
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8e55b01173e749395f60d189366a08907bdaccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444972"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583881"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint 솔루션 패키지 배포, 게시 및 업그레이드
   Visual Studio에서 SharePoint 솔루션을 개발한 후에는 해당 패키지 (.wsp) 파일을 로컬 SharePoint 서버에 배포 하거나 원격 또는 로컬 SharePoint 서버에 게시할 수 있습니다. 파일을 배포 하는 경우 패키지 파일 (.wsp)을 배포 하는 방법을 사용자 지정할 수 있습니다.
@@ -44,12 +45,12 @@ ms.locfileid: "81444972"
 ## <a name="customize-the-deployment-process"></a>배포 프로세스 사용자 지정
  다음 표에서는 SharePoint 솔루션을 디버그 하 고 배포할 때 사용할 수 있는 두 가지 배포 구성을 보여 줍니다.
 
-|배포 구성|설명|
+|배포 구성|Description|
 |------------------------------|-----------------|
 |기본값|기본 배포 구성입니다. 다음 배포 단계가 수행 됩니다.<br /><br /> 1. 배포 전 명령을 실행 합니다.<br />2. IIS 응용 프로그램 풀을 재생 합니다.<br />3. 솔루션을 취소 합니다.<br />4. 솔루션을 추가 합니다.<br />5. 기능을 활성화 합니다.<br />6. 배포 후 명령을 실행 합니다.<br /><br /> 패키지를 제거 하면 다음과 같은 취소 단계가 수행 됩니다.<br /><br /> 1. IIS 응용 프로그램 풀을 재활용 합니다.<br />2. 솔루션을 취소 합니다.|
 |정품 인증 안 함|이 배포 구성은 기본 구성과 동일한 단계를 실행 하지만 활성화 단계를 건너뜁니다.|
 
- 배포 구성을 직접 만들어 단일 단계를 완료 하거나 배포 프로세스의 단계 순서를 변경할 수 있습니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)을 참조 하세요.
+ 배포 구성을 직접 만들어 단일 단계를 완료 하거나 배포 프로세스의 단계 순서를 변경할 수 있습니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)을 참조하세요.
 
  배포 전후에 실행 되는 명령을 추가할 수도 있습니다. 자세한 내용은 [방법: SharePoint 배포 명령 설정](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조 하세요.
 
@@ -63,5 +64,5 @@ ms.locfileid: "81444972"
 ### <a name="upgrade-published-packages"></a>게시 된 패키지 업그레이드
  Visual Studio가 게시 된 후에 Visual Studio에서 SharePoint 프로젝트를 변경 하는 경우 게시 된 패키지를 업그레이드 하 여 변경 내용을 포함 해야 합니다. 성공적으로 업그레이드 하려면 패키지의 이름이 고유 해야 합니다. SharePoint 사이트에서 이름이 같은 패키지가 있으면 (기존 응용 프로그램을 업데이트할 때 발생할 수 있음) 오류가 발생 하면 파일 이름 충돌이 발생 하 여 패키지의 이름을 바꿀 수 있습니다. 다시 게시 한 후 새 패키지가 SharePoint 사이트에 표시 되 고 업그레이드할 수 있습니다. 업그레이드 된 패키지는 이전 패키지의 데이터를 사용 하 여 솔루션을 업데이트 한 다음 SharePoint에서 솔루션을 활성화 합니다. 자세한 내용은 [방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
-- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>참고 항목
+- [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

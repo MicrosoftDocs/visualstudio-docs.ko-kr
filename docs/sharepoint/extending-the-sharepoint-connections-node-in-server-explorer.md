@@ -1,5 +1,6 @@
 ---
 title: 서버 탐색기에서 SharePoint 연결 노드 확장 Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967359"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584609"
 ---
-# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>서버 탐색기에서 SharePoint 연결 노드 확장
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>서버 탐색기의 SharePoint 연결 노드 확장
   Visual Studio에서는 **서버 탐색기** 창의 **SharePoint 연결** 노드를 사용 하 여 개발 컴퓨터의 로컬 SharePoint 사이트에 연결할 수 있습니다. 이 노드에는 로컬 SharePoint 사이트의 여러 구성 요소가 계층적 트리 보기로 표시 됩니다. 예를 들어 로컬 사이트의 목록, 문서 라이브러리 및 콘텐츠 형식을 볼 수 있습니다. **서버 탐색기** 를 사용 하 여 로컬 SharePoint 사이트에 연결 하는 방법에 대 한 자세한 내용은 [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)를 참조 하세요.
 
  기존 노드에 대 한 확장을 만들거나 사용자 지정 노드 유형을 만들어 노드 계층 구조에 추가 하 여 **SharePoint 연결** 노드를 확장할 수 있습니다.
@@ -66,11 +67,11 @@ ms.locfileid: "62967359"
 
  속성 사용에 대 한 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 - [방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)
 - [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
-- [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
-- [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [서버 탐색기를 사용하여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [Visual Studio의 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

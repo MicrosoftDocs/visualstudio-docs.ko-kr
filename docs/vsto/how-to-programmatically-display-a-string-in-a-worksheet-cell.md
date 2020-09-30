@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 셀에 문자열 표시'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545927"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585225"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>방법: 프로그래밍 방식으로 워크시트 셀에 문자열 표시
   이 예제에서는 프로그래밍 방식으로 셀에 텍스트를 표시 하는 방법을 보여 줍니다. 셀에 텍스트를 표시 하려면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 나 네이티브 Excel 범위 개체를 사용 합니다.
@@ -45,7 +46,7 @@ ms.locfileid: "85545927"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: Windows form을 사용 하 여 데이터 수집](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

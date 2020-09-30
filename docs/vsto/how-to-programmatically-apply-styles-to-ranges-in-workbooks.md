@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6f115468bccc2d805b019b9a0ef15cea3605f36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8b511d195a40f42bf0b1224dd828b6c6d2b9671
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546161"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585355"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용
   통합 문서의 영역에 명명된 스타일을 적용할 수 있습니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.
@@ -66,7 +67,7 @@ ms.locfileid: "85546161"
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
      [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [범위 작업](../vsto/working-with-ranges.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

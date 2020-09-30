@@ -1,5 +1,6 @@
 ---
 title: '연습: 작업 창에서 문서에 텍스트 삽입'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843342"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584965"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업 창에서 문서에 텍스트 삽입
   이 연습에서는 Microsoft Office Word 문서에서 작업 창을 만드는 방법을 보여 줍니다. 작업 창에는 입력을 수집한 다음 텍스트를 문서에 보내는 두 개의 컨트롤이 포함 되어 있습니다.
@@ -61,7 +62,7 @@ ms.locfileid: "90843342"
 
     **3 월 21 일, 2008**
 
-    **Name**
+    **이름**
 
     **주소**
 

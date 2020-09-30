@@ -1,5 +1,6 @@
 ---
 title: 확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841414"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583842"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.

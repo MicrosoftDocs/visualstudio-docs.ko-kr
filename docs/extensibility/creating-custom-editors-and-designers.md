@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012271"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584731"
 ---
 # <a name="create-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 
@@ -59,7 +59,7 @@ Visual Studio 핵심 편집기에 대 한 자세한 내용은 [편집기 및 언
 
 - 편집기에서 ActiveX 컨트롤을 호스트 해야 하나요?
 
-   편집기에서 ActiveX 컨트롤을 호스트 하는 경우 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015)에 설명 된 대로 내부 활성화 편집기를 구현 합니다. ActiveX 컨트롤을 호스팅하지 않는 경우 간단한 포함 편집기를 사용 하거나 기본 편집기를 사용자 지정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다.
+   편집기에서 ActiveX 컨트롤을 호스트 하는 경우 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)에 설명 된 대로 내부 활성화 편집기를 구현 합니다. ActiveX 컨트롤을 호스팅하지 않는 경우 간단한 포함 편집기를 사용 하거나 기본 편집기를 사용자 지정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다.
 
 - 편집기에서 여러 뷰를 지원 하나요? 편집기의 뷰가 기본 편집기와 동시에 표시 되도록 하려면 여러 뷰를 지원 해야 합니다.
 
@@ -93,7 +93,7 @@ Visual Studio 핵심 편집기에 대 한 자세한 내용은 [편집기 및 언
 
 ## <a name="related-sections"></a>관련 단원
 
-[편집기의 레거시 인터페이스](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[편집기의 레거시 인터페이스](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 레거시 API를 통해 핵심 편집기에 액세스 하는 방법을 설명 합니다.
 
 [레거시 언어 서비스 개발](../extensibility/internals/developing-a-legacy-language-service.md)\

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2520eb4d1fe9480f1421016883d65c9bde9b422
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012323"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584557"
 ---
 # <a name="extend-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 언어 서비스 기능 (예: IntelliSense)을 사용자의 편집기에 추가 하 고 Visual Studio 코드 편집기의 기능을 대부분 확장할 수 있습니다.  확장할 수 있는 항목의 전체 목록은 [언어 서비스 및 편집기 확장 요소](../extensibility/language-service-and-editor-extension-points.md)를 참조 하세요.
@@ -36,7 +36,7 @@ ms.locfileid: "90012323"
 |[언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)|편집기의 확장 요소를 나열 합니다. 확장 지점은 확장할 수 있는 편집기 기능을 나타냅니다.|
 |[연습: 뷰 장식, 명령 및 설정 만들기 (열 안내선)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|특정 표시 너비로 코드를 유지 하는 데 도움이 되는 열 안내선을 그리는 뷰 장식을 빌드하는 방법을 설명 합니다.  또한 명령 창에서 호출할 수 있는 명령 선언 및 구현 뿐만 아니라 읽기 및 쓰기 설정을 보여 줍니다.|
 |[편집기 가져오기](../extensibility/editor-imports.md)|확장에서 가져올 수 있는 서비스를 나열 합니다.|
-|[편집기에 레거시 코드 조정](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015)|레거시 코드 (Visual Studio 2010 이전)를 조정 하 여 편집기를 확장 하는 다양 한 방법을 설명 합니다.|
+|[편집기에 레거시 코드 조정](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|레거시 코드 (Visual Studio 2010 이전)를 조정 하 여 편집기를 확장 하는 다양 한 방법을 설명 합니다.|
 |[레거시 언어 서비스 마이그레이션](../extensibility/internals/migrating-a-legacy-language-service.md)|VSPackage 기반 언어 서비스를 마이그레이션하는 방법에 대해 설명 합니다.|
 |[연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|콘텐츠 형식을 파일 이름 확장명에 연결 하는 방법을 보여 줍니다.|
 |[연습: 여백 문자 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)|여백에 아이콘을 추가 하는 방법을 보여 줍니다.|

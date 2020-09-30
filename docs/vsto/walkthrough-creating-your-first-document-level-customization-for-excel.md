@@ -1,5 +1,6 @@
 ---
 title: Excel 용 첫 문서 수준 사용자 지정 만들기
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566974"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585004"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>연습: Excel 용 첫 문서 수준 사용자 지정 만들기
 
@@ -49,7 +50,7 @@ ms.locfileid: "74566974"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Visual Studio에서 새 Excel 통합 문서 프로젝트를 만들려면
 
@@ -182,7 +183,7 @@ ms.locfileid: "74566974"
 
 - Excel 용 문서 수준 사용자 지정 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel 솔루션](../vsto/excel-solutions.md)

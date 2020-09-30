@@ -1,5 +1,6 @@
 ---
 title: 여러 버전의 Microsoft Office에서 솔루션 실행
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15d0a3611f314abe4b571f2235346dde55d6e358
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59fce25bd3e167275eb8b19fac828f202c463dda
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985596"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583907"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>여러 버전의 Microsoft Office에서 솔루션 실행
 
@@ -55,7 +56,7 @@ ms.locfileid: "72985596"
 
  3. Visual Studio 2005 Tools for Office Second Edition Runtime이 필요한 Office 솔루션은 64비트 버전의 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]과 호환되지 않습니다. 64비트 버전의 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서 이러한 솔루션을 실행하려면 2007 Microsoft Office system을 대상으로 하는 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 또는 Visual Studio 2008 프로젝트로 프로젝트를 업그레이드해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)

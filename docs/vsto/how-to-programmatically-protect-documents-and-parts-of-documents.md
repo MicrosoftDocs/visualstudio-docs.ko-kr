@@ -1,5 +1,6 @@
 ---
 title: 프로그래밍 방식으로 문서와 문서 부분 보호
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4654a2c218470e0d5e2a1ddd54a88de5c4546f7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beab8c2e1b18d56dc7b71688e0ff2ec5b74ac596
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537841"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584848"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>방법: 프로그래밍 방식으로 문서 및 문서 부분 보호
   Microsoft Office Word 문서에 보호를 추가하여 사용자의 문서 편집을 방지할 수 있습니다.
@@ -68,7 +69,7 @@ ms.locfileid: "85537841"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [문서 수준 솔루션의 문서 보호](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 문서에 대 한 암호 보호](../vsto/password-protection-on-office-documents.md)
 - [방법: 제한 된 권한으로 문서 뒤에 코드를 실행할 수 있도록 허용](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

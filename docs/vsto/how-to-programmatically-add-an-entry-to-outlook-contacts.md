@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4d692833f7dba49a539bbaafec2156f7426170b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6ec332e257533d810d61282c348cc71ca317b22
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520108"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583816"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가
   이 예에서는 새 연락처를 만들고 새 연락처에 데이터를 입력 합니다.

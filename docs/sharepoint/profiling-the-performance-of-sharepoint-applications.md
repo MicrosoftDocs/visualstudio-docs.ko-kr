@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2037842e57b6152990144d9ea652936e65517e13
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 87312b5db9357462c822f876220cc239b79106aa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739956"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585721"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint 응용 프로그램의 성능 프로 파일링
 
@@ -55,18 +55,18 @@ Visual Studio에서 부하 테스트 및 웹 성능 테스트를 만들어 응�
 
 ## <a name="test-user-interfaces"></a>사용자 인터페이스 테스트
 
-코딩 된 UI 테스트는 UI (사용자 인터페이스)를 통해 SharePoint 응용 프로그램을 자동으로 구동 합니다. 이러한 테스트는 단추 및 메뉴와 같은 UI 컨트롤을 포함 하 여 제대로 작동 하는지 확인 합니다. 이러한 종류의 테스트는 웹 페이지에서와 같이 UI에서 유효성 검사 또는 기타 논리를 수행 하는 경우에 특히 유용 합니다. 또한 코딩 된 UI 테스트를 사용 하 여 수동 테스트를 자동화할 수 있습니다. 다른 유형의 응용 프로그램에 대 한 테스트를 만들 때와 동일한 방식으로 SharePoint 응용 프로그램에 대 한 코딩 된 UI 테스트를 만듭니다. 자세한 내용은 [코딩 된 UI 테스트를 사용 하 여 SharePoint 2010 응용 프로그램 테스트](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)를 참조 하세요.
+코딩 된 UI 테스트는 UI (사용자 인터페이스)를 통해 SharePoint 응용 프로그램을 자동으로 구동 합니다. 이러한 테스트는 단추 및 메뉴와 같은 UI 컨트롤을 포함 하 여 제대로 작동 하는지 확인 합니다. 이러한 종류의 테스트는 웹 페이지에서와 같이 UI에서 유효성 검사 또는 기타 논리를 수행 하는 경우에 특히 유용 합니다. 또한 코딩 된 UI 테스트를 사용 하 여 수동 테스트를 자동화할 수 있습니다. 다른 유형의 응용 프로그램에 대 한 테스트를 만들 때와 동일한 방식으로 SharePoint 응용 프로그램에 대 한 코딩 된 UI 테스트를 만듭니다. 자세한 내용은 [코딩 된 UI 테스트를 사용 하 여 SharePoint 2010 응용 프로그램 테스트](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)를 참조 하세요.
 
 ## <a name="related-topics"></a>관련 항목
 
 |제목|Description|
 |-----------|-----------------|
 |[연습: SharePoint 응용 프로그램 프로 파일링](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|SharePoint 응용 프로그램에서 샘플링 프로필 분석을 수행 하는 방법을 보여 줍니다.|
-|[릴리스 전에 앱 성능 테스트](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|SharePoint 응용 프로그램을 스트레스 테스트 하는 데 도움이 되는 부하 테스트를 만드는 방법을 설명 합니다.|
+|[릴리스 전에 앱 성능 테스트](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|SharePoint 응용 프로그램을 스트레스 테스트 하는 데 도움이 되는 부하 테스트를 만드는 방법을 설명 합니다.|
 |[코드 단위 테스트](../test/unit-test-your-code.md)|단위 테스트를 사용 하 여 코드에서 논리 오류를 찾는 방법을 설명 합니다.|
-|[코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)|SharePoint 응용 프로그램의 사용자 인터페이스를 테스트 하는 방법을 설명 합니다.|
+|[코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)|SharePoint 응용 프로그램의 사용자 인터페이스를 테스트 하는 방법을 설명 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [코드 품질 향상](../test/improve-code-quality.md)

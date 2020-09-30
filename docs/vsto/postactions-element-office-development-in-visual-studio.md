@@ -1,5 +1,6 @@
 ---
-title: '&lt;postActions &gt; 요소 (Visual Studio에서 Office 개발)'
+title: '&lt;postActions &gt; 요소 (Office 개발)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544419"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583712"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions &gt; 요소 (Visual Studio에서 Office 개발)
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions &gt; 요소 (Office 개발)
   `postActions` 네임스페이스의 `vstav3` 요소에는 배포 후 작업을 설명하는 모든 `postAction` 요소가 포함되며 Office 솔루션 설치 후 실행됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <postActions>
@@ -49,7 +50,7 @@ ms.locfileid: "85544419"
 
 ## <a name="post-deployment-action-example"></a>배포 후 작업 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `postActions` 을 사용하여 배포된 Office 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

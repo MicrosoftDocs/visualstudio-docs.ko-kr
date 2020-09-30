@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537620"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585656"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용
   Microsoft Office Word를 사용할 때 사용자 입력에 대 한 대화 상자를 표시 해야 하는 경우가 있습니다. 직접 만들 수도 있지만 개체의 컬렉션에 노출 되는 Word에서 기본 제공 대화 상자를 사용 하는 방법을 사용할 수도 있습니다 <xref:Microsoft.Office.Interop.Word.Dialogs> <xref:Microsoft.Office.Interop.Word.Application> . 이를 통해 열거형으로 표시 되는 기본 제공 대화 상자를 200 이상 액세스할 수 있습니다.
@@ -45,7 +46,7 @@ ms.locfileid: "85537620"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 숨겨진 모드에서 Word 대화 상자 사용](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

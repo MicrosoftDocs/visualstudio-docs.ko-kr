@@ -1,5 +1,6 @@
 ---
 title: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016398"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585460"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿에 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 새 프로젝트를 만들 때이 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -40,7 +41,7 @@ ms.locfileid: "86016398"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행 하려면 먼저 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)완료 하 여 SiteColumnProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -58,7 +59,7 @@ ms.locfileid: "86016398"
 ## <a name="understand-the-wizard-components"></a>마법사 구성 요소 이해
  이 연습에서 설명 하는 마법사에는 몇 가지 구성 요소가 포함 되어 있습니다. 다음 표에서는 이러한 구성 요소에 대해 설명 합니다.
 
-|구성 요소|설명|
+|구성 요소|Description|
 |---------------|-----------------|
 |마법사 구현|인터페이스를 구현 하는 라는 클래스입니다 `SiteColumnProjectWizard` <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> . 이 인터페이스는 마법사가 시작 되 고 완료 될 때 그리고 마법사가 실행 되는 동안 특정 시간에 Visual Studio에서 호출 하는 메서드를 정의 합니다.|
 |마법사 UI|이는 이라는 WPF 기반 창입니다 `WizardWindow` . 이 창에는 및 라는 두 개의 사용자 컨트롤이 포함 됩니다 `Page1` `Page2` . 이러한 사용자 정의 컨트롤은 마법사의 두 페이지를 나타냅니다.<br /><br /> 이 연습에서 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 마법사 구현의 메서드는 마법사 UI를 표시 합니다.|
@@ -410,7 +411,7 @@ ms.locfileid: "86016398"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>프로젝트 템플릿에서 Elements.xml 파일에 대체 가능 매개 변수 추가
  SiteColumnProjectTemplate 프로젝트의 *Elements.xml* 파일에 여러 대체 가능 매개 변수를 추가 합니다. 이러한 매개 변수는 앞에서 `RunStarted` 정의한 클래스의 메서드에서 초기화 됩니다 `SiteColumnProjectWizard` . 사용자가 사이트 열 프로젝트를 만들 때 Visual Studio는 새 프로젝트의 *Elements.xml* 파일에서 이러한 매개 변수를 마법사에서 지정한 값으로 자동으로 바꿉니다.
 
- 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 사용자 고유의 대체 가능 매개 변수를 정의 하는 것 외에도 SharePoint 프로젝트 시스템에서 정의 하 고 초기화 하는 기본 제공 매개 변수를 사용할 수 있습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조 하세요.
+ 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 사용자 고유의 대체 가능 매개 변수를 정의 하는 것 외에도 SharePoint 프로젝트 시스템에서 정의 하 고 초기화 하는 기본 제공 매개 변수를 사용할 수 있습니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Elements.xml 파일에 대체 가능 매개 변수를 추가 하려면
 
@@ -538,7 +539,7 @@ ms.locfileid: "86016398"
 
      확장을 배포 하는 방법에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

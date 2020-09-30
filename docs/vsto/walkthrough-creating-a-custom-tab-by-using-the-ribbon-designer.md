@@ -1,5 +1,6 @@
 ---
 title: '연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255521"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585017"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기
   리본 디자이너를 사용하여 사용자 지정 탭을 만들고 이 탭에 컨트롤을 추가 및 배치할 수 있습니다.
@@ -158,7 +159,7 @@ ms.locfileid: "71255521"
 
 - 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

@@ -1,5 +1,6 @@
 ---
 title: '연습: Excel 작업 창의 컨트롤에 데이터 바인딩'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253891"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585056"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>연습: Excel 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Microsoft Office Excel의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
@@ -53,7 +54,7 @@ ms.locfileid: "71253891"
 
 - SQL Server 데이터베이스에서 읽고 쓸 수 있는 권한입니다.
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  첫 번째 단계에서 Excel 통합 문서 프로젝트를 만듭니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
@@ -84,7 +85,7 @@ ms.locfileid: "71253891"
 
 9. **Products** 테이블을 확장 하 고 **ProductName**, **공급자**, **QuantityPerUnit**및 **UnitPrice**를 선택 합니다.
 
-10. **마침**을 클릭합니다.
+10. **Finish**를 클릭합니다.
 
     마법사에서 **Suppliers** 테이블 및 **Products** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
@@ -183,7 +184,7 @@ ms.locfileid: "71253891"
 
 - 프로젝트를 배포 합니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

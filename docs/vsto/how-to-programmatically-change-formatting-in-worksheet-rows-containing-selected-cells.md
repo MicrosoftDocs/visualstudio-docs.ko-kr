@@ -1,5 +1,6 @@
 ---
 title: 코드를 통해 선택한 셀을 포함 하는 행의 형식 변경
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31fe16436b09696b79bf760db7b346d1092c0439
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541559"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585303"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>방법: 프로그래밍 방식으로 선택한 셀이 포함 된 워크시트 행의 서식 변경
   선택한 셀이 포함 된 전체 행의 글꼴을 변경 하 여 텍스트가 굵게 표시 되도록 할 수 있습니다.

@@ -1,5 +1,6 @@
 ---
-title: Windows Installer를 사용 하 여 Visual Studio Tools for Office 솔루션 배포
+title: Windows Installer를 사용 하 여 VSTO 솔루션 배포
+titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444908"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585695"
 ---
-# <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Windows Installer를 사용 하 여 Visual Studio Tools for Office 솔루션 배포
+# <a name="deploying-a-vsto-solution-using-windows-installer"></a>Windows Installer를 사용 하 여 VSTO 솔루션 배포
 
 ## <a name="summary"></a>요약
 
@@ -346,7 +347,7 @@ MSI 패키지를 사용 하 여 추가 기능 또는 솔루션을 설치 하는 
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |Smart Tag(스마트 태그)|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office 공유|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
-|프로젝트|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
+|Project|{957A4EC0-E67B-4E86-A383-6AF7270B216A}|{1C50E422-24FA-44A9-A120-E88280C8C341}|{706D7F44-8231-489D-9B25-3025ADE9F114}|{107BCD9A-F1DC-4004-A444-33706FC10058}|{107BCD9A-F1DC-4004-A444-33706FC10058}|
 
   ![최종 시작 조건의 스크린샷](media/setup-project-figure-11.jpg)
 
@@ -558,7 +559,7 @@ Visual Studio 솔루션에 사용자 지정 작업 프로젝트를 추가 하려
 10. **사용자 지정 작업 (Excel 통합 문서 설정)** 편집기에서 **내 문서에 문서 복사 및 사용자 지정 연결** 을 마우스 오른쪽 단추로 클릭 하 고 **속성 창**을 클릭 합니다.
 11. **CustomActionData** **속성** 창에서 사용자 지정 DLL의 위치, 배포 매니페스트 및 Microsoft Office 문서의 위치를 입력 합니다. 또한 솔루션 Id가 필요 합니다.
 12. 설치 오류를 파일에 기록 하려면 로그 파일 매개 변수를 포함 합니다.
-s
+초
     ``` text
     /assemblyLocation="[INSTALLDIR]ExcelWorkbookProject.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbookProject.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbookProject.xlsx" /solutionID="Your Solution ID" /LogFile="[TARGETDIR]Setup.log"
     ```
@@ -588,7 +589,7 @@ s
 
 [Windows 레지스트리에 양식 영역 지정](/office/vba/outlook/concepts/creating-form-regions/specifying-form-regions-in-the-windows-registry)
 
-[문서에 신뢰 부여](granting-trust-to-documents.md)
+[Granting Trust to Documents](granting-trust-to-documents.md)
 
 ## <a name="about-the-authors"></a>저자 정보
 

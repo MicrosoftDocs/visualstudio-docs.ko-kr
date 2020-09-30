@@ -1,5 +1,6 @@
 ---
 title: '연습: 문서 수준 프로젝트의 복합 데이터 바인딩'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692349"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584323"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 복합 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트에서 복합 데이터 바인딩의 기본 사항을 보여 줍니다. Microsoft Office Excel 워크시트의 여러 셀을 Northwind SQL Server 데이터베이스의 필드에 바인딩할 수 있습니다.
@@ -80,7 +81,7 @@ ms.locfileid: "67692349"
 
 8. **Employees** 테이블 옆의 확인란을 선택 합니다.
 
-9. **마침**을 클릭합니다.
+9. **Finish**를 클릭합니다.
 
    이 마법사는 **Employees** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
@@ -223,7 +224,7 @@ ms.locfileid: "67692349"
 
 - 필드와 테이블 간에 마스터/세부 관계를 만듭니다. 자세한 내용은 [연습: 캐시 된 데이터 집합을 사용 하 여 마스터 세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [연습: 문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

@@ -1,5 +1,6 @@
 ---
 title: SharePoint 도구 확장의 프로그래밍 모델 개요
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985138"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585734"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 도구 확장의 프로그래밍 모델 개요
   Visual Studio에서 SharePoint 도구의 확장을 만드는 경우 SharePoint 도구에서 노출하는 확장성 인터페이스를 하나 이상 구현하여 시작합니다. 대부분의 경우 SharePoint 도구에서 제공하는 다른 형식을 사용하여 확장에서 기능도 구현합니다. 일부 시나리오에서는 Visual Studio 및 SharePoint에서 제공하는 다른 개체 모델의 형식을 사용할 수도 있습니다. 이러한 각 개체 모델의 용도를 이해하고 이러한 개체 모델을 서로 사용하여 SharePoint 도구의 확장을 만드는 방법을 알아야 합니다.
@@ -29,7 +30,7 @@ ms.locfileid: "72985138"
 
  SharePoint 도구를 확장하려면 Visual Studio에서 노출하는 확장성 인터페이스를 하나 이상 구현합니다. 또한 <xref:System.ComponentModel.Composition.ExportAttribute>와 필요에 따라 추가 SharePoint 도구 관련 특성을 인터페이스 구현에 적용해야 합니다. 다음 표에는 SharePoint 도구를 확장하기 위해 구현할 수 있는 인터페이스가 나와 있습니다.
 
-|인터페이스|설명|
+|인터페이스|Description|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|새 형식의 SharePoint 프로젝트 항목을 정의하려면 이 인터페이스를 구현합니다. 예제는 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)를 참조 하세요.|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Visual Studio에 이미 설치되어 있는 SharePoint 프로젝트 항목의 형식을 확장하려면 이 인터페이스를 구현합니다. 예제는 [방법: SharePoint 프로젝트 항목 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)를 참조 하세요.|
@@ -61,12 +62,12 @@ ms.locfileid: "72985138"
 
 |네임스페이스|Description|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint>|SharePoint 프로젝트 시스템을 확장하고 자동화하는 데 사용하는 형식을 포함합니다. 예를 들어 기본 제공 SharePoint 프로젝트 및 프로젝트 항목을 확장하거나, 고유한 프로젝트 항목을 만들 수 있습니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조 하세요.|
+|<xref:Microsoft.VisualStudio.SharePoint>|SharePoint 프로젝트 시스템을 확장하고 자동화하는 데 사용하는 형식을 포함합니다. 예를 들어 기본 제공 SharePoint 프로젝트 및 프로젝트 항목을 확장하거나, 고유한 프로젝트 항목을 만들 수 있습니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조하세요.|
 |<xref:Microsoft.VisualStudio.SharePoint.Deployment>|사용자 고유의 배포 단계 및 배포 구성을 만드는 등 SharePoint 프로젝트에 대한 배포 프로세스를 확장하는 데 사용하는 형식을 포함합니다. 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|**서버 탐색기** 창의 **SharePoint 연결** 노드 아래에서 노드를 확장 하거나 새 형식의 노드를 정의 하는 데 사용 하는 형식을 포함 합니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조 하세요.|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer>|**서버 탐색기** 창의 **SharePoint 연결** 노드 아래에서 노드를 확장 하거나 새 형식의 노드를 정의 하는 데 사용 하는 형식을 포함 합니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.|
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|SharePoint 프로젝트의 기능 정의에 액세스하는 데 사용되는 형식을 포함합니다.|
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|SharePoint 솔루션의 패키지 정의에 액세스하는 데 사용되는 형식을 포함합니다.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|SharePoint 프로젝트의 기능 및 패키지 유효성 검사 동작을 사용자 지정하는 데 사용되는 형식을 포함합니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조 하세요.|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|SharePoint 프로젝트의 기능 및 패키지 유효성 검사 동작을 사용자 지정하는 데 사용되는 형식을 포함합니다. 자세한 내용은 [방법: SharePoint 솔루션에 대한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조하세요.|
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -78,7 +79,7 @@ ms.locfileid: "72985138"
 
 |네임스페이스|Description|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|목록, 필드 또는 콘텐츠 형식을 나타내는 노드와 같이 SharePoint 사이트의 개별 구성 요소를 나타내는 기본 제공 **서버 탐색기** 노드에 대 한 정보를 가져오는 데 사용할 수 있는 형식을 포함 합니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조 하세요.|
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|목록, 필드 또는 콘텐츠 형식을 나타내는 노드와 같이 SharePoint 사이트의 개별 구성 요소를 나타내는 기본 제공 **서버 탐색기** 노드에 대 한 정보를 가져오는 데 사용할 수 있는 형식을 포함 합니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.|
 
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio 자동화 개체 모델
  Visual Studio 자동화 개체 모델은 Visual Studio 프로젝트와 IDE를 자동화하는 데 사용할 수 있는 API를 제공합니다. Visual Studio 개체 모델을 사용하면 SharePoint 프로젝트에 한정되지 않는 프로젝트 관련 작업을 수행하거나 Visual Studio에서 기타 일반적인 자동화 작업을 수행할 수 있습니다. 이 개체 모델은 일반적으로 Visual Studio 추가 기능 및 매크로에 많이 사용하지만 Sharepoint 도구 확장에 사용할 수도 있습니다.
@@ -101,12 +102,12 @@ ms.locfileid: "72985138"
 
  SharePoint 도구 확장에서 두 개체 모델의 API를 모두 사용할 수 있지만 SharePoint 도구 확장의 컨텍스트에서 각 개체 모델에 장단점이 있습니다. 자세한 내용은 [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.
 
-|개체 모델|설명|
+|개체 모델|Description|
 |------------------|-----------------|
 |서버 개체 모델|서버 개체 모델을 사용하면 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에 표시되는 모든 기능을 프로그래밍 방식으로 액세스할 수 있습니다. 이 개체 모델은 SharePoint 서버에서 실행되는 SharePoint 솔루션에 사용됩니다. 이 개체 모델의 대부분은 *Microsoft.SharePoint.dll* 어셈블리에서 정의 됩니다. 서버 개체 모델에 대 한 자세한 내용은 [SharePoint Foundation Server 쪽 개체 모델 사용](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))을 참조 하세요.|
 |클라이언트 개체 모델|클라이언트 개체 모델은 원격 클라이언트나 서버의 SharePoint 데이터와 상호 작용하는 데 사용할 수 있는 서버 개체 모델의 하위 집합입니다. 이 모델은 일반적인 작업을 수행하기 위해 실행해야 하는 왕복 수를 최소화하도록 디자인되었습니다. 클라이언트 개체 모델의 대부분은 *Microsoft.SharePoint.Client.dll* 및 *Microsoft.SharePoint.Client.Runtime.dll* 어셈블리에서 정의 됩니다. 클라이언트 개체 모델에 대 한 자세한 내용은 [관리 되는 클라이언트 개체 모델](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))을 참조 하세요.|
 
 ## <a name="see-also"></a>참고 항목
-- [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio의 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)

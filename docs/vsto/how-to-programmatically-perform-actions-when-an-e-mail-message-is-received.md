@@ -1,5 +1,6 @@
 ---
 title: 전자 메일 메시지를 수신 하는 경우 프로그래밍 방식으로 작업 수행
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75278a52fb989e5142e5981dab604bf3da49bd99
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706080e9c7191383d91e63b56b2113cf82d4b35f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537867"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585134"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>방법: 프로그래밍 방식으로 전자 메일 메시지를 받을 때 작업 수행
   이 예제에서는 사용자가 전자 메일 메시지를 받을 때 사용자 지정 작업을 수행 합니다.

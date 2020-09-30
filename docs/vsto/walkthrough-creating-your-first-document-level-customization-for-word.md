@@ -1,5 +1,6 @@
 ---
 title: Word 용 첫 문서 수준 사용자 지정 만들기
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74567014"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584991"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>연습: Word 용 첫 문서 수준 사용자 지정 만들기
 
@@ -49,7 +50,7 @@ ms.locfileid: "74567014"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Visual Studio에서 새 Word 문서 프로젝트를 만들려면
 
@@ -170,7 +171,7 @@ ms.locfileid: "74567014"
 
 - Word 용 문서 수준 사용자 지정 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word 솔루션](../vsto/word-solutions.md)

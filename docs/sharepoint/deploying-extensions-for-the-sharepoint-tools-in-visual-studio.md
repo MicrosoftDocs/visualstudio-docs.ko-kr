@@ -1,5 +1,6 @@
 ---
 title: Visual Studio에서 SharePoint 도구에 대 한 확장 배포 | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740146"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584705"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에 SharePoint 도구 확장 배포
 
@@ -264,7 +265,7 @@ SharePoint 도구 확장에 대 한 VSIX 패키지를 수동으로 만들려면 
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
 - [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

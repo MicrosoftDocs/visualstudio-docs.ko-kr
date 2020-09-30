@@ -1,5 +1,6 @@
 ---
 title: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기 | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984512"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585108"
 ---
-# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기
   Visual Studio는 *목록* 및 *콘텐츠 형식을*비롯 하 여 다양 한 기본 SharePoint 항목에 대 한 프로젝트 항목 템플릿을 제공 합니다. 둘 다 사이트 열 (또는 *필드*)을 통합할 수 있습니다. 콘텐츠 형식 및 목록에 대한 새로운 디자이너를 사용하면 이러한 항목을 이전보다 쉽게 만들 수 있습니다.
 
 ## <a name="site-columns"></a>사이트 열
@@ -44,9 +45,9 @@ ms.locfileid: "72984512"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
-|[연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|사용자 지정 콘텐츠 형식에서 사용되는 사이트 열을 만드는 방법을 보여 줍니다. 이 경우 콘텐츠 형식이 사용자 지정 목록에서 사용됩니다.|
+|[연습: SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|사용자 지정 콘텐츠 형식에서 사용되는 사이트 열을 만드는 방법을 보여 줍니다. 이 경우 콘텐츠 형식이 사용자 지정 목록에서 사용됩니다.|
 
 ## <a name="see-also"></a>참고 항목
 - [SharePoint 2010에서 개발 시작](/sharepoint/dev/)

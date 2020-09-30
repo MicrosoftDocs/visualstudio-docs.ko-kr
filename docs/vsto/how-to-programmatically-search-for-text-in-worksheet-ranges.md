@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547032"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584757"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>개체의 메서드를 <xref:Microsoft.Office.Interop.Excel.Range> 사용 하 여 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트는 또는와 같은 워크시트 셀에 나타날 수 있는 오류 문자열 일 수도 있습니다 `#NULL!` `#VALUE!` . 오류 문자열에 대 한 자세한 내용은 [셀 오류 값](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)을 참조 하세요.

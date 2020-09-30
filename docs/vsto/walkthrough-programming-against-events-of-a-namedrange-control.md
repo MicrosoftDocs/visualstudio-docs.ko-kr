@@ -1,5 +1,6 @@
 ---
 title: '연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842130"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584939"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍
   이 연습에서는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio에서 Office 개발 도구를 사용 하 여 Microsoft Office Excel 워크시트 및 프로그램에 컨트롤을 추가 하는 방법을 보여 줍니다.

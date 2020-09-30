@@ -1,5 +1,6 @@
 ---
 title: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985450"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584284"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
   이 연습에서는 각 전자 메일 메시지를 만들거나 열 때 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법을 보여 줍니다. 사용자는 각 메일 메시지의 리본에 있는 단추를 사용하여 사용자 지정 작업창을 표시하거나 숨길 수 있습니다.
@@ -57,7 +58,7 @@ ms.locfileid: "72985450"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 또는 Microsoft Outlook 2010
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  사용자 지정 작업창은 VSTO 추가 기능에서 구현 됩니다. Outlook 용 VSTO 추가 기능 프로젝트를 만드는 것부터 시작 합니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
@@ -266,7 +267,7 @@ ms.locfileid: "72985450"
 
 - Excel에서 사용자 지정 작업창을 숨기거나 표시하는 데 사용할 수 있는 리본 단추를 만듭니다. 자세한 내용은 [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

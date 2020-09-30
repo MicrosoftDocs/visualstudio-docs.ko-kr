@@ -1,5 +1,6 @@
 ---
 title: 로컬 SharePoint 사이트에 SharePoint 솔루션 게시 & 배포
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016812"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585799"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>방법: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
   개발 컴퓨터의 로컬 SharePoint 서버에 SharePoint 솔루션을 배포 하거나 게시할 수 있습니다. 배포 프로세스는 *.wsp* 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 기능을 활성화 합니다. 게시 프로세스는 *.wsp* 파일만 SharePoint 서버에 복사 하 고 설치 합니다. SharePoint에서 사용 하도록 설정 하려면 수동으로 활성화 해야 합니다.
@@ -41,7 +42,7 @@ ms.locfileid: "86016812"
 
      게시 진행률이 Visual Studio **출력** 창에 표시 됩니다. 프로세스가 완료 되 면 솔루션 (*.wsp*) 파일이 로컬 SharePoint 서버에 설치 됩니다. 그러나 SharePoint에서 사용 하려면 아직 활성화 되어 있어야 합니다. 솔루션 파일이 이미 있으면 오류가 발생 하 고 기존 파일을 덮어쓸지 여부를 묻는 메시지가 표시 됩니다. 패키지 업그레이드에 대 한 자세한 내용은 [방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)에서 원격 패키지 업그레이드 섹션을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)
 - [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

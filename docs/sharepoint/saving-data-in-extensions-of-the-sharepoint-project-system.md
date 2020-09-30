@@ -1,5 +1,6 @@
 ---
 title: SharePoint 프로젝트 시스템의 확장에 데이터 저장 | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827247"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583868"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint 프로젝트 시스템의 확장에 데이터 저장
   SharePoint 프로젝트 시스템을 확장 하는 경우 SharePoint 프로젝트를 닫은 후에도 유지 되는 문자열 데이터를 저장할 수 있습니다. 일반적으로 데이터는 특정 프로젝트 항목 또는 프로젝트 자체와 연결 됩니다.
@@ -53,7 +54,7 @@ ms.locfileid: "62827247"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
 - [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

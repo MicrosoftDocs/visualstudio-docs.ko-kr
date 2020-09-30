@@ -1,5 +1,6 @@
 ---
 title: '패키징 탐색기: 패키지에 항목 & 기능을 추가 & 제거 합니다.'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014560"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585591"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>방법: 패키징 탐색기를 사용 하 여 패키지에 기능과 항목 추가 및 제거
   SharePoint 항목 및 기능을 배포 하도록 패키지를 구성 하려면 패키징 탐색기를 사용할 수 있습니다. .Wsp 파일 내에서 SharePoint 프로젝트 항목 및 기능을 조정할 수 있습니다.
@@ -62,5 +63,5 @@ ms.locfileid: "86014560"
 
 2. 기능 또는 패키지에 대 한 바로 가기 메뉴를 열고 **유효성 검사**를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>참고 항목
+- [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

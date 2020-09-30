@@ -1,5 +1,6 @@
 ---
 title: '연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985400"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584913"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 단순 데이터 바인딩
 
@@ -85,7 +86,7 @@ VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨�
 
 6. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Customer(SalesLT)** 를 선택합니다.
 
-7. **마침**을 클릭합니다.
+7. **Finish**를 클릭합니다.
 
     *Adventureworksltdataset.xsd 파일이* 파일이 **솔루션 탐색기**에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
 
@@ -150,7 +151,7 @@ Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 세트
 
 2. **다음** 및 **이전** 단추를 클릭하여 데이터베이스 레코드를 스크롤합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
@@ -164,7 +165,7 @@ Word를 열면 콘텐츠 컨트롤에 `AdventureWorksLTDataSet` 데이터 세트
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)

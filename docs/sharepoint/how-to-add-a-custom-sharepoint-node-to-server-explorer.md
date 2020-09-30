@@ -1,5 +1,6 @@
 ---
 title: '방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017048"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584887"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가
-  **서버 탐색기**의 **SharePoint 연결** 노드 아래에서 사용자 지정 노드를 추가할 수 있습니다. 이는 기본적으로 **서버 탐색기** 에 표시 되지 않는 추가 SharePoint 구성 요소를 표시 하려는 경우에 유용 합니다. 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조 하세요.
+  **서버 탐색기**의 **SharePoint 연결** 노드 아래에서 사용자 지정 노드를 추가할 수 있습니다. 이는 기본적으로 **서버 탐색기** 에 표시 되지 않는 추가 SharePoint 구성 요소를 표시 하려는 경우에 유용 합니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.
 
  사용자 지정 노드를 추가 하려면 먼저 새 노드를 정의 하는 클래스를 만듭니다. 그런 다음 노드를 기존 노드의 자식으로 추가 하는 확장을 만듭니다.
 
@@ -95,7 +96,7 @@ ms.locfileid: "86017048"
 ## <a name="deploy-the-extension"></a>확장 배포
  **서버 탐색기** 확장을 배포 하려면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
-- [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+## <a name="see-also"></a>참고 항목
+- [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

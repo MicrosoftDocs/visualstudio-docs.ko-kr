@@ -1,5 +1,6 @@
 ---
 title: 관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1616d24ae9b2c072df4e5708eb98e86611a83d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f48e7771b3e62c0c58fbc59bd9f9b534069d71
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540987"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584427"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
 

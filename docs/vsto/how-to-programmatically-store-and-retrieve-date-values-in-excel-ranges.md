@@ -1,5 +1,6 @@
 ---
 title: 프로그래밍 방식으로 Excel 범위에서 날짜 값을 저장 & 검색
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4cea02af59b6b6a8457d964bdce802e1e2b2b84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2bd76d37a9c9b6e51de7bbe01b54d1be6c93128
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546967"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583777"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>방법: 프로그래밍 방식으로 Excel 범위에서 날짜 값 저장 및 검색
   <xref:Microsoft.Office.Tools.Excel.NamedRange>컨트롤 또는 네이티브 Excel 범위 개체에서 값을 저장 하 고 검색할 수 있습니다.
@@ -80,7 +81,7 @@ ms.locfileid: "85546967"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [범위 작업](../vsto/working-with-ranges.md)
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

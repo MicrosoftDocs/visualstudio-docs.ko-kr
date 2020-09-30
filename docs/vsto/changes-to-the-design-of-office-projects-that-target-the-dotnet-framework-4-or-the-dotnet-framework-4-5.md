@@ -1,5 +1,6 @@
 ---
 title: .NET Framework를 대상으로 하는 Office 프로젝트의 변경 내용 디자인
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 334344a2ffec5e084cb2e199a128b4583266af9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810512"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583829"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 Office 프로젝트의 디자인 변경
   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]부터 Visual Studio에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트의 디자인에 몇 가지 변경 사항이 도입되었습니다. 이전 버전의 Visual Studio에서 Office 프로젝트를 사용하는 데 익숙한 경우 .NET Framework 4.0 이상의 버전을 대상으로 하는 Office 프로젝트를 개발하기 전에 이러한 변경 사항을 알고 있어야 합니다. 기본적으로 Visual Studio 2013 이상을 사용하여 만드는 모든 프로젝트는 .NET Framework 4.0 이상을 대상으로 합니다.
@@ -56,7 +57,7 @@ ms.locfileid: "90810512"
 |`OLEObject` 및 `OLEControl` 클래스의 이름이 변경되었습니다.|이러한 클래스의 인스턴스를 사용하는 모든 코드를 수정하여 <xref:Microsoft.Office.Tools.Excel.ControlSite> 또는 <xref:Microsoft.Office.Tools.Word.ControlSite> 개체를 대신 사용해야 합니다. 자세한 내용은 [.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트 업데이트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)를 참조 하세요.|
 |, N, 및과 같은 호스트 항목 클래스는 `ThisWorkbook` `Sheet` *n* `ThisDocument` `ThisAddIn` `Dispose` 재정의할 수 있는 메서드를 더 이상 제공 하지 않습니다.|`Dispose` 메서드 재정의의 모든 코드를 `ThisAddIn_Shutdown`과 같은 호스트 항목 클래스의 `Shutdown` 이벤트 처리기로 이동하고 호스트 항목 클래스에서 `Dispose` 메서드 재정의를 제거해야 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Office 개발의 새로운 기능](/previous-versions/86bkz018(v=vs.110))
 - [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)

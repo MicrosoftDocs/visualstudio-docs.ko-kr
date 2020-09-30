@@ -1,5 +1,6 @@
 ---
 title: Office 문서에서 Windows Forms 컨트롤의 제한 사항
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81a7da585f49b2a2d1f7df4df11d0c78b7a35d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251923"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583738"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 문서에서 Windows Forms 컨트롤의 제한 사항
 
@@ -70,7 +71,7 @@ Word 문서나 Microsoft Office Excel 워크시트 Microsoft Office에 추가 �
 
 Windows Forms 컨트롤은 일반적으로 Windows Form에서와 같은 방식으로 Office 문서에서 동일 하지만 몇 가지 차이점이 있습니다. 다음 표에서는 Office 문서에서 Windows Forms 컨트롤에 대해 존재 하는 차이점에 대해 설명 합니다.
 
-|기능|차|
+|기능|차이|
 |-------------------|----------------|
 |컨트롤 탭 순서|Excel 워크시트 또는 Word 문서에 배치 된 컨트롤을 통해서는 tab 키를 사용할 수 없습니다.|
 |컨트롤 그룹화|컨트롤을 사용 <xref:System.Windows.Forms.GroupBox> 하 여 Office 문서에 다른 컨트롤을 포함할 수 없습니다. 문서에 여러 개의 라디오 단추를 직접 추가 하는 경우 라디오 단추는 함께 사용할 수 없습니다. 라디오 단추를 함께 사용할 수 없도록 하는 코드를 작성할 수 있습니다. 그러나 기본 방법은 사용자 정의 컨트롤에 라디오 단추를 추가한 다음 사용자 정의 컨트롤을 문서에 추가 하는 것입니다. 자세한 내용은 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Word 컨트롤 샘플 또는 Excel 컨트롤 샘플을 참조 하세요.|
@@ -182,7 +183,7 @@ Windows Forms 컨트롤은 일반적으로 Windows Form에서와 같은 방식�
 
 ActiveX 컨트롤을 포함 하는 기존 Word 문서 또는 Excel 통합 문서를 사용 하는 문서 수준 Office 프로젝트를 만드는 경우에는 ActiveX 컨트롤의 기능이 손실 되지 않습니다. 그러나 Visual Studio 내에서 문서에 새 ActiveX 컨트롤을 추가 하는 것은 지원 되지 않습니다. 예를 들어 Word 문서에 Visual Basic for Applications (VBA) 매크로를 실행 하는 **컨트롤** 도구 상자의 단추가 있는 경우 Office 프로젝트에서 문서가 사용 된 후에도 매크로가 계속 실행 됩니다. 그러나 ActiveX 컨트롤과 VBA 매크로를 제거 하 고 Windows Forms 컨트롤 및 관리 코드로 바꾸는 것이 좋습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)

@@ -1,5 +1,6 @@
 ---
 title: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20d91aff6b09e659375494c387eea94ef05cc682
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa4686acb6a806fd97a78064214c6805a4b354e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547435"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585199"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
   단락을 기반으로 <xref:Microsoft.Office.Interop.Word.Range> 개체를 만들 때마다 단락 표시 등 인쇄할 수 없는 모든 문자가 범위에 포함됩니다. 원본 단락의 텍스트를 대상 단락에 삽입할 수 있습니다. 대상 단락을 개별 단락으로 분할하지 않으려면 먼저 원본 단락에서 단락 표시를 제거해야 합니다. 또한 단락 서식 설정 정보는 단락 표시에 저장되므로 범위를 기존 단락에 삽입할 때 서식 정보를 포함하지 않을 수 있습니다.
@@ -115,7 +116,7 @@ ms.locfileid: "85547435"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입](../vsto/how-to-programmatically-insert-text-into-word-documents.md)

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 608396c79816606b855d49776390b0b1bf9044d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 5d8b5ff72ff72d53556d14ce2c4b6f309aa0836a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012466"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584596"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>사용자 지정 편집기의 문서 데이터 및 문서 보기
 사용자 지정 편집기는 문서 데이터 개체와 문서 뷰 개체의 두 부분으로 구성 됩니다. 이름에서 알 수 있듯이 document data 개체는 표시 될 텍스트 데이터를 나타냅니다. 마찬가지로 문서 보기 개체 (또는 "보기")는 문서 데이터 개체를 표시할 하나 이상의 창을 나타냅니다.
@@ -34,7 +34,7 @@ ms.locfileid: "90012466"
 
  IDE는 실행 중인 문서 테이블의 각 항목에 대해 ItemID (항목 식별자)를 일치 시켜 문서를 포함 하는 솔루션이 닫혀 있는 경우와 같은 이벤트에 대 한 뷰에 알림을 보냅니다. 이에 대 한 자세한 내용은 [문서 테이블 실행](../extensibility/internals/running-document-table.md)을 참조 하세요.
 
- 사용자 지정 편집기에 대 한 보기를 만드는 두 가지 옵션이 있습니다. 하나는 ActiveX 컨트롤이 나 문서 데이터 개체를 사용 하 여 창에서 뷰를 호스트 하는 내부 활성화 모델입니다. 두 번째는 뷰가에서 호스팅되고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 창 명령을 처리 하도록 구현 되는 단순화 된 포함 모델입니다. 내부 활성화 모델에 대 한 자세한 내용은 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015)를 참조 하십시오. 단순화 된 포함 모델에 대 한 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md)을 참조 하세요.
+ 사용자 지정 편집기에 대 한 보기를 만드는 두 가지 옵션이 있습니다. 하나는 ActiveX 컨트롤이 나 문서 데이터 개체를 사용 하 여 창에서 뷰를 호스트 하는 내부 활성화 모델입니다. 두 번째는 뷰가에서 호스팅되고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 창 명령을 처리 하도록 구현 되는 단순화 된 포함 모델입니다. 내부 활성화 모델에 대 한 자세한 내용은 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)를 참조 하십시오. 단순화 된 포함 모델에 대 한 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

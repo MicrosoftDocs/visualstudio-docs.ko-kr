@@ -1,5 +1,6 @@
 ---
 title: '방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016516"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584622"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가
-  Visual Studio를 사용 하 여 모델 파일 (*. bdcm*)을 SharePoint 팜 프로젝트에 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 사용자 지정 하 고 패키지 하 고 재배포할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요.
+  Visual Studio를 사용 하 여 모델 파일 (*. bdcm*)을 SharePoint 팜 프로젝트에 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 사용자 지정 하 고 패키지 하 고 재배포할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조하세요.
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>SharePoint 프로젝트에 BDC 모델 파일을 추가 하려면
 
@@ -45,9 +46,9 @@ ms.locfileid: "86016516"
 
      **비즈니스 데이터 연결 모델** 항목이 프로젝트에 추가 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md)
-- [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [방법: 리소스 파일을 사용하여 지역화된 이름, 속성, 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [방법: BDC 기능에 사용자 지정 어셈블리 포함](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)

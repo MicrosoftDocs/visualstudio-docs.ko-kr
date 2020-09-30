@@ -1,5 +1,6 @@
 ---
 title: '방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0830cec748d68f010397c42334a5ed83365ee6b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016483"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584115"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기
   모든 SharePoint 프로젝트에 **시각적 웹 파트** 항목을 추가 하 여 웹 파트를 만들 수 있습니다. 그러면 웹 파트에 컨트롤과 코드를 추가할 수 있는 visual Studio의 Visual Web Developer designer가 열립니다. 비주얼 웹 파트는 웹 파트와 동일한 방식으로 작동 합니다. 유일한 차이점은 Visual web Developer 디자이너에서 비주얼 웹 파트를 디자인 하는 것입니다.
@@ -50,8 +51,8 @@ ms.locfileid: "86016483"
 
      **솔루션 탐색기**웹 파트가 표시 됩니다. Visual Web Developer designer에서 웹 파트를 디자인 한 후에는 지정한 사이트에서 웹 파트를 테스트 합니다.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
+## <a name="see-also"></a>참고 항목
+- [SharePoint용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)
-- [연습: SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
-- [연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+- [연습: SharePoint용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+- [연습: 디자이너를 사용하여 SharePoint용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

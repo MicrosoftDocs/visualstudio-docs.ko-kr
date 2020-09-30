@@ -1,5 +1,6 @@
 ---
 title: '연습: PowerPoint 용 첫 VSTO 추가 기능 만들기'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871957"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584310"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint 용 첫 VSTO 추가 기능 만들기
   이 연습에서는 Microsoft Office PowerPoint 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -46,7 +47,7 @@ ms.locfileid: "68871957"
 
 - PowerPoint
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
@@ -129,7 +130,7 @@ ms.locfileid: "68871957"
 
 - PowerPoint용 VSTO 추가 기능 배포. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)

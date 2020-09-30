@@ -1,5 +1,6 @@
 ---
 title: SharePoint 응용 프로그램 페이지 또는 웹 파트에 대 한 사용자 정의 컨트롤 만들기
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fbf1b646ae9e7fb697fcab93adfb8661a4372c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c8a99562d937d7b10c3539888c2dd62eb1d1da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016969"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584102"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>방법: SharePoint 응용 프로그램 페이지 또는 웹 파트에 대 한 사용자 정의 컨트롤 만들기
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>방법: SharePoint 애플리케이션 페이지 또는 웹 파트용 사용자 정의 컨트롤 만들기
   SharePoint 솔루션에 대한 사용자 지정 기능을 제공하는 사용자 지정 사용자 정의 컨트롤을 만들 수 있으며, 프로젝트 내에서 해당 기능을 다시 사용할 수 있습니다. 웹 파트 또는 애플리케이션 페이지에 사용자 정의 컨트롤을 포함하고, 다른 ASP.NET 컨트롤과 SharePoint 컨트롤을 추가하고, 컨트롤에 대한 속성과 메서드를 정의할 수 있습니다. 사용자 정의 컨트롤에 대 한 자세한 내용은 [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) 및 [SharePoint에서 사용자 정의 컨트롤 및 서버 컨트롤](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)만들기를 참조 하세요.
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>SharePoint에 대 한 사용자 정의 컨트롤을 만들려면
@@ -52,7 +53,7 @@ ms.locfileid: "86016969"
 
      이 파일은 사용자 정의 컨트롤 파일 아래 **솔루션 탐색기** 에 표시 되며 프로젝트의 언어에 따라 *.cs* 또는 *.vb* 확장명이 있습니다.
 
-## <a name="see-also"></a>추가 정보
-- [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
-- [SharePoint에 대 한 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
+## <a name="see-also"></a>참고 항목
+- [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [SharePoint용 애플리케이션 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [SharePoint용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)

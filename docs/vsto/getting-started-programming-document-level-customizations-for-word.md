@@ -1,5 +1,6 @@
 ---
 title: Word 용 문서 수준 사용자 지정 프로그래밍 시작
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62971799"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585669"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 용 문서 수준 사용자 지정 프로그래밍 시작
   Visual Studio를 사용 하 여 Microsoft Office Word에 대 한 문서 수준 사용자 지정을 만들기 시작 하는 경우 알아야 할 사항은 다음과 같습니다.
@@ -63,7 +64,7 @@ ms.locfileid: "62971799"
 
  Word 프로젝트의 일반적인 작업 중 일부를 안내 하는 항목의 목록은 [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [Word 솔루션](../vsto/word-solutions.md)

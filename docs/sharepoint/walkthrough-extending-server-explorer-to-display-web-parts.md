@@ -1,5 +1,6 @@
 ---
 title: '연습: 웹 파트를 표시 하는 서버 탐색기 확장 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739995"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583855"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 서버 탐색기 확장 하 여 웹 파트 표시
   Visual Studio에서는 **서버 탐색기** 의 **sharepoint 연결** 노드를 사용 하 여 sharepoint 사이트의 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 는 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 연결 된 각 SharePoint 사이트에 웹 파트 갤러리를 표시 하도록 **서버 탐색기** 를 확장 합니다.
@@ -369,7 +370,7 @@ ms.locfileid: "90739995"
 
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (이 경우에는 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [아이콘에 대 한 이미지 편집기](/cpp/windows/image-editor-for-icons)

@@ -1,5 +1,6 @@
 ---
 title: '연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981051"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584297"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트
   이 연습에서는 Microsoft Office Word의 문서 수준 사용자 지정에서 라디오 단추를 사용하여 문서에서 차트 스타일 선택 옵션을 사용자에게 제공하는 방법을 보여줍니다.
@@ -44,7 +45,7 @@ ms.locfileid: "62981051"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 또는 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  첫 번째 단계에서는 Word 문서 프로젝트를 만듭니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
@@ -212,7 +213,7 @@ ms.locfileid: "62981051"
 
 - 콤보 상자에서 스타일을 선택하여 서식을 변경합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
 - [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

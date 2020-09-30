@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 검색 후 선택 영역 복원'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30daa81c33070db3f9418b45b84b4acc6e243dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547097"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584783"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>방법: 프로그래밍 방식으로 검색 후 선택 영역 복원
   문서에서 텍스트를 찾아 바꾸는 경우 검색이 완료 된 후 사용자의 원래 선택 영역을 복원 하는 것이 좋습니다.

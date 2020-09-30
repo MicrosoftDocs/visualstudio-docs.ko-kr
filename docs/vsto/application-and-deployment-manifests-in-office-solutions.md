@@ -1,5 +1,6 @@
 ---
 title: Office 솔루션의 응용 프로그램 및 배포 매니페스트
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62942904"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584440"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office 솔루션의 응용 프로그램 및 배포 매니페스트
   애플리케이션 매니페스트는 Office 솔루션에서 어셈블리를 찾고 업데이트하는 데 사용되는 정보를 제공하는 XML 파일입니다. 애플리케이션 매니페스트는 배포 매니페스트와 함께 사용할 수 있습니다. 배포 매니페스트는 서버에 저장된 XML 파일로, 최신 버전의 애플리케이션 매니페스트 및 어셈블리를 찾는 데 필요한 정보를 제공합니다.
@@ -39,7 +40,7 @@ ms.locfileid: "62942904"
 
  매니페스트가 Office 솔루션과 작동 하는 방식에 대 한 자세한 내용은 [office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

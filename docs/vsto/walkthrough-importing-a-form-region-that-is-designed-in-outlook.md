@@ -1,5 +1,6 @@
 ---
 title: '연습: Outlook에서 디자인 한 양식 영역 가져오기'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985447"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584978"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>연습: Outlook에서 디자인 한 양식 영역 가져오기
   이 연습에서는 **새 양식 영역** 마법사를 사용하여 Microsoft Office Outlook에서 양식 영역을 디자인한 다음 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져오는 방법을 보여 줍니다. Outlook에서 양식 영역을 디자인하면 Outlook 데이터에 바인딩되는 양식 영역에 네이티브 Outlook 컨트롤을 추가할 수 있습니다. 양식 영역을 가져온 후에 각 컨트롤의 이벤트를 처리할 수 있습니다.
@@ -250,7 +251,7 @@ ms.locfileid: "72985447"
 
 - Outlook에 사용자 지정 작업창을 추가 하는 방법에 대 한 자세한 내용은 [사용자 지정 작업](../vsto/custom-task-panes.md)창을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)

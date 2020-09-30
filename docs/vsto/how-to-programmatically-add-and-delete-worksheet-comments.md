@@ -1,5 +1,6 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 메모 추가 및 삭제'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc02a659c50a5b207f2f53d0a8781b0d23419301
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520083"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583803"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>방법: 프로그래밍 방식으로 워크시트 메모 추가 및 삭제
   프로그래밍 방식으로 Microsoft Office Excel 워크시트에서 메모를 추가하거나 삭제할 수 있습니다. 메모는 다중 셀 범위가 아닌 단일 셀에만 추가할 수 있습니다.
@@ -60,7 +61,7 @@ ms.locfileid: "85520083"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 메모 표시](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

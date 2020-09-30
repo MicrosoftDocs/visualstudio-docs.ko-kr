@@ -1,5 +1,6 @@
 ---
 title: '연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985490"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585043"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Excel 워크시트에 컨트롤을 추가하고 런타임에 컨트롤을 데이터에 바인딩하는 방법을 보여 줍니다.
@@ -77,7 +78,7 @@ ms.locfileid: "72985490"
 
 6. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Address(SalesLT)** 를 선택합니다.
 
-7. **마침**을 클릭합니다.
+7. **Finish**를 클릭합니다.
 
     *Adventureworksltdataset.xsd 파일이* 파일이 **솔루션 탐색기**에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
 
@@ -128,7 +129,7 @@ ms.locfileid: "72985490"
 
      <xref:Microsoft.Office.Tools.Excel.ListObject> 라는 `addressListObject` 컨트롤이 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `addressBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject>가 <xref:System.Windows.Forms.BindingSource>에 바인딩되고 데이터 세트 개체에 바인딩됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
@@ -142,6 +143,6 @@ ms.locfileid: "72985490"
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource 구성 요소 개요](/dotnet/framework/winforms/controls/bindingsource-component-overview)

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012102"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584271"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -44,7 +44,7 @@ Visual Studio의 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 �
 
 UI 요소에 가장 적합 한 방법을 선택 합니다.
 
-| UI | 메서드 | 무엇인가요? |
+| UI | 방법 | 무엇인가요? |
 | --- | --- | --- |
 | 포함 되거나 독립 실행형 대화 상자가 있습니다. | **시스템 색** | 운영 체제에서 일반적인 대화 상자 컨트롤과 같은 UI 요소의 색과 모양을 정의할 수 있도록 하는 시스템 이름입니다. |
 | 전반적인 VS 환경과 일치 시키고 공유 토큰의 범주 및 의미 체계와 일치 하는 UI 요소를 포함 하는 사용자 지정 UI가 있습니다. | **공통 공유 색** | 특정 UI 요소에 대해 미리 정의 된 기존 색 토큰 이름 |
@@ -307,7 +307,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 대부분의 일반적인 UI 요소에는 고대비 색이 이미 정의 되어 있습니다. 사용자 고유의 시스템 색 이름을 선택할 때 이러한 사용 패턴을 참조 하 여 UI 요소가 유사한 구성 요소와 일치 하도록 할 수 있습니다.
 
-| 시스템 색 | 사용량 |
+| 시스템 색 | 사용 |
 | --- | --- |
 | ActiveCaption | -활성 IDE 및 rafted 창의 단추 문자 모양 가리키기 및 누르기<br />-IDE 및 rafted 창의 제목 표시줄 배경<br />-기본 상태 표시줄 배경 |
 | ActiveCaptionText | -제목 표시줄 전경 (텍스트 및 문자 모양)의 활성 IDE 및 rafted 창<br />-마우스로 가리키면 활성 창 단추의 배경색과 테두리 |
@@ -340,7 +340,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 표시 항목을 통해 글꼴 및 색을 제어할 수 있습니다. 이 메커니즘을 사용 하는 경우 Vspackage는 [Ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 인터페이스 및 관련 된 인터페이스를 구현 해야 합니다.
 
-원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015)를 참조 하세요.
+원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true)를 참조 하세요.
 
 사용자 지정 범주 또는 표시 항목을 구현 하려면 VSPackage가 다음을 수행 해야 합니다.
 
@@ -358,7 +358,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| Name | 유형 | 데이터 | Description |
+| Name | Type | 데이터 | Description |
 | --- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -371,7 +371,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| Name | 유형 | 데이터 | Description |
+| Name | Type | 데이터 | Description |
 |--- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -423,7 +423,7 @@ VSPackage에 표시 되는 텍스트의 색 지정을 제대로 지원 하려면
 
   **OR**
 
-- **변경 내용에 대 한 IDE를 폴링합니다**. 시스템 구현 [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해이 작업을 수행할 수 있습니다. 주로 지 속성 지원을 위해 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 표시 항목의 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서 [저장 된 글꼴 및 색 설정 액세스](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015)를 참조 하세요.
+- **변경 내용에 대 한 IDE를 폴링합니다**. 시스템 구현 [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해이 작업을 수행할 수 있습니다. 주로 지 속성 지원을 위해 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 표시 항목의 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서 [저장 된 글꼴 및 색 설정 액세스](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true)를 참조 하세요.
 
 > [!NOTE]
 > 폴링 결과가 올바른지 확인 하려면 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 사용 하 여 [Ivsivandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스의 검색 메서드를 호출 하기 전에 캐시 플러시 및 업데이트가 필요한 지 확인 합니다.
