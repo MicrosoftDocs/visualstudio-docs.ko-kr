@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591504"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211263"
 ---
 # <a name="options-dialog-box-visual-studio"></a>옵션 대화 상자(Visual Studio)
 
@@ -33,15 +33,11 @@ ms.locfileid: "75591504"
 IDE 기능이 메모리에 로드될 때까지 해당 기능에 대한 옵션이 탐색 창에 나타나지 않습니다. 따라서 마지막 세션을 종료했을 때 표시된 것과 동일한 옵션이 새 세션을 시작할 때 표시되지 않을 수 있습니다. 프로젝트를 만들거나 특정 애플리케이션을 사용하는 명령을 실행하면 관련 옵션에 대한 노드가 [옵션] 대화 상자에 추가됩니다. 이러한 추가된 옵션은 IDE 기능이 메모리에 남아 있는 한 계속 사용할 수 있습니다.
 
 > [!NOTE]
-> 일부 설정 컬렉션은 [옵션] 대화 상자의 탐색 창에 나타나는 페이지의 범위를 지정합니다. **모든 설정 표시**를 선택하여 모든 가능한 페이지를 볼 수 있습니다.
+> 일부 설정 컬렉션은 [옵션] 대화 상자의 탐색 창에 나타나는 페이지의 범위를 지정합니다.
 
 ## <a name="how-options-are-applied"></a>옵션 적용 방법
 
 **옵션** 대화 상자에서 [확인]을 클릭하면 모든 페이지의 모든 설정이 저장됩니다. 모든 페이지에서 [취소]를 클릭하면 다른 **옵션** 페이지에서 방금 변경한 내용을 포함하여 모든 변경 요청이 취소됩니다. [옵션 대화 상자, 환경, 글꼴 및 색](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)에서 변경한 내용과 같은 옵션 설정에 대한 일부 변경 내용은 Visual Studio를 닫았다 다시 열어야 적용됩니다.
-
-### <a name="show-all-settings"></a>모든 설정 표시
-
-**모든 설정 표시**를 선택하거나 선택 취소하면 **확인**을 클릭하지 않았더라도 **옵션** 대화 상자에서 적용한 모든 변경 내용이 적용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

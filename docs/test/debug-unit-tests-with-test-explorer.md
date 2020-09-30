@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86393546"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211289"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 디버그 및 분석
 
@@ -38,11 +38,11 @@ ms.locfileid: "86393546"
 ## <a name="diagnose-test-method-performance-issues"></a>테스트 메서드 성능 문제 진단
 
 ::: moniker range="vs-2017"
-테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **선택한 테스트 프로파일링**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)를 참조하세요.
+테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **선택한 테스트 프로파일링**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)를 참조하세요.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **프로필**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017)를 참조하세요.
+테스트 메서드에 너무 많은 시간이 소요되는 이유를 진단하려면 테스트 탐색기에서 메서드를 선택하고 오른쪽 클릭 메뉴에서 **프로필**을 선택합니다. [계측 프로파일링 보고서](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true)를 참조하세요.
 ::: moniker-end
 
 > [!NOTE]

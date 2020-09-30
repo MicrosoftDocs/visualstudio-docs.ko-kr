@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731493"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211341"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
 
@@ -59,6 +59,6 @@ HTML 및 JavaScript를 사용하는 UWP 앱을 디버그하기 위한 Visual Stu
 |선택한 CSS 값 1씩 감소|아래쪽 화살표|
 
 ## <a name="see-also"></a>참조
-- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
-- [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
+- [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)
+- [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)

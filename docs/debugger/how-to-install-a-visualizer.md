@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851413"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211367"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "90851413"
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Visual Studio 2019용 시각화 도우미를 설치하려면
-  
+
 1. 빌드한 시각화 도우미가 들어 있는 DLL을 찾습니다.
 
    일반적으로 디버거 쪽 DLL과 디버기 쪽 DLL 모두가 대상 플랫폼으로 **모든 CPU**를 지정하는 것이 가장 좋습니다. 디버거 쪽 DLL은 **모든 CPU** 또는 **32비트**여야 합니다. 디버기 쪽 DLL의 대상 플랫폼은 디버기 프로세스와 일치해야 합니다.
@@ -42,7 +42,7 @@ ms.locfileid: "90851413"
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. 다음 위치 중 하나에 [디버기 쪽](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) DLL을 복사합니다.
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework*
@@ -61,7 +61,7 @@ ms.locfileid: "90851413"
 4. 디버깅 세션을 다시 시작합니다.
 
 > [!NOTE]
-> Visual Studio 2017 이전에서는 절차가 다릅니다. 이 문서의 [이전 버전](how-to-install-a-visualizer.md?view=vs-2017)을 참조하세요.
+> Visual Studio 2017 이전에서는 절차가 다릅니다. 이 문서의 [이전 버전](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true)을 참조하세요.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

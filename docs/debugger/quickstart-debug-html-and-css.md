@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600190"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211091"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio의 UWP 앱에서 HTML 및 CSS 디버그
 
@@ -237,7 +237,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 
 - **요소 선택** 단추(Ctrl+B) 사용
 
-- `select` 명령([JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017) 중 하나) 사용
+- `select` 명령([JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 중 하나) 사용
 
   DOM 탐색기 창을 사용하여 요소를 선택하고 요소에 마우스 포인터를 놓으면 해당 요소가 실행 중인 응용 프로그램에서 강조 표시됩니다. DOM 탐색기에서 요소를 클릭하여 선택해야 합니다. 또는 화살표 키를 사용하여 요소를 강조 표시하고 선택할 수 있습니다. **요소 선택** 단추를 사용하여 DOM 탐색기에서 요소를 선택할 수도 있습니다. 다음 일러스트레이션에서는 **요소 선택** 단추를 보여 줍니다.
 
@@ -259,7 +259,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 - [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)
-- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
+- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [기술 지원 및 접근성](/previous-versions/tzbxw1af(v=vs.120))

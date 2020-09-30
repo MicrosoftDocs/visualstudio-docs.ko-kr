@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350643"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211117"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP 앱에서 WebView 컨트롤 디버그
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350643"
 
 - `WebView` 인스턴스의 경우 [DOM 탐색기](../debugger/quickstart-debug-html-and-css.md)를 열어 DOM 요소를 조사하고, CSS 스타일 문제를 검토한 다음, 스타일에 동적으로 렌더링된 변경 내용을 테스트합니다.
 
-- [JavaScript Console](../debugger/javascript-console-commands.md?view=vs-2017) 창에서 `WebView` 인스턴스에 대상으로 표시되는 `iFrame` 또는 웹 페이지를 선택한 다음, 콘솔 명령을 사용하여 웹 페이지와 상호 작용합니다. JavaScript 콘솔은 현재 스크립트 실행 컨텍스트에 대한 액세스 권한을 제공합니다.
+- [JavaScript Console](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 창에서 `WebView` 인스턴스에 대상으로 표시되는 `iFrame` 또는 웹 페이지를 선택한 다음, 콘솔 명령을 사용하여 웹 페이지와 상호 작용합니다. JavaScript 콘솔은 현재 스크립트 실행 컨텍스트에 대한 액세스 권한을 제공합니다.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>디버거 연결(C#, Visual Basic, C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350643"
     > [!NOTE]
     > 콘솔을 사용하면 한 번에 단일 `WebView`, `iFrame`, 공유 계약 또는 웹 작업자와 상호 작용할 수 있습니다. 각 요소에는 웹 플랫폼 호스트(WWAHost.exe)의 개별 인스턴스가 필요합니다. 한 번에 한 호스트와 상호 작용할 수 있습니다.
 
-6. [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 및 [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)에 설명된 대로 앱에서 변수를 보고 수정하거나 콘솔 명령을 사용합니다.
+6. [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 및 [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)에 설명된 대로 앱에서 변수를 보고 수정하거나 콘솔 명령을 사용합니다.
 
 ## <a name="see-also"></a>참조
 

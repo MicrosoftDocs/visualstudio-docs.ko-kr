@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348108"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211078"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용하여 JavaScript 디버그
 
-JavaScript 콘솔 창에서 JavaScript를 사용하여 빌드된 UWP 앱을 조작하고 디버그할 수 있습니다. 이러한 기능은 UWP 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 지원됩니다. 콘솔 명령 참조는 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)을 참조하세요.
+JavaScript 콘솔 창에서 JavaScript를 사용하여 빌드된 UWP 앱을 조작하고 디버그할 수 있습니다. 이러한 기능은 UWP 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 지원됩니다. 콘솔 명령 참조는 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)을 참조하세요.
 
 JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.
 
@@ -39,7 +39,7 @@ JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.
 
 - DOM(Document Object Model) 및 Windows 런타임 오류 외에도 JavaScript 오류 및 예외를 봅니다.
 
-- 화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) 을 참조하세요.
+- 화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 을 참조하세요.
 
 > [!TIP]
 > JavaScript 콘솔 창이 닫힌 경우 **디버그**> **창** > **JavaScript 콘솔** 을 사용하여 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 표시됩니다.
@@ -251,9 +251,9 @@ JavaScript 콘솔 창을 사용하면 한번에 웹 플랫폼 호스트 (WWAHost
 
 ## <a name="see-also"></a>참조
 - [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
-- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)

@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315137"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211130"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio의 Python 옵션
 
@@ -51,7 +51,7 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 | **환경 만들기에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다.  이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 또는 *environment.yml* 파일이 포함된 프로젝트를 열면 Visual Studio는 기본 전역 환경을 사용하지 않고 가상 환경 또는 Conda 환경을 만들기 위한 각각의 제안이 포함되어 있는 알림 표시줄을 보여 줍니다. |
 | **패키지 설치에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다.  이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 파일이 포함된 프로젝트를 열면(기본 전역 환경을 사용하지 않음), Visual Studio가 해당 요구 사항을 현재 환경에 설치된 패키지와 비교합니다. 패키지가 누락된 경우에는 Visual Studio에서 해당 종속성을 설치하라는 메시지를 표시합니다. |
 | **항상 관리자로 패키지 관리자 실행** | 끄기 | 항상 모든 환경에서 `pip install` 및 유사한 패키지 관리자 작업 권한을 상승합니다. 패키지를 설치할 때 환경이 *c:\Program Files*와 같은 파일 시스템의 보호된 영역에 있을 경우 Visual Studio에서 관리자 권한을 확인하는 메시지를 표시합니다. 해당 메시지에서 하나의 환경에 대해서만 항상 설치 명령 권한을 상승하도록 선택할 수 있습니다. [패키지 탭](python-environments-window-tab-reference.md#packages-tab)을 참조하세요. |
-| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다.  데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [IntelliSense 탭](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab)을 참조하세요. |
+| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다.  데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [IntelliSense 탭](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab)을 참조하세요. |
 | **시스템 전체 PYTHONPATH 변수 무시** | 켜기 | Visual Studio에서 환경 및 프로젝트에 검색 경로를 지정하는 보다 직접적인 수단을 제공하기 때문에 PYTHONPATH는 기본적으로 무시됩니다. 자세한 내용은 [검색 경로](search-paths.md)를 참조하세요. |
 | **연결된 파일을 추가할 때 검색 경로 업데이트** | 켜기 | 설정된 경우 [연결된 파일](managing-python-projects-in-visual-studio.md#linked-files)을 프로젝트에 추가하면 IntelliSense가 연결된 파일의 폴더 내용을 완성 데이터베이스에 포함할 수 있도록 [검색 경로](search-paths.md)가 업데이트됩니다. 이러한 내용을 완성 데이터베이스에서 제외하려면 이 옵션의 선택을 취소합니다. |
 | **가져온 모듈을 찾을 수 없으면 경고 표시** | 켜기 | 가져온 모듈을 현재 사용할 수 없지만 달리 코드 작업에 영향을 주지 않음을 알고 있는 경우 경고를 무시하려면 이 옵션의 선택을 취소합니다. |

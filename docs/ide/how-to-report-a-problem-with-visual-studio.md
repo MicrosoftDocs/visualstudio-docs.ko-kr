@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810876"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211177"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -51,11 +51,11 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
     브라우저에서 곧바로 스크린샷을 잘라 중요하거나 관련 없는 부분을 제거할 수도 있습니다.
 
-4. Visual Studio 엔지니어링 팀이 문제를 해결하는 데 도움을 주는 최상의 방법 중 하나는 팀이 살펴볼 수 있도록 추적 및 힙 덤프 파일을 제공하는 것입니다. 버그를 야기한 단계를 기록하면 쉽게 도울 수 있습니다. 
+4. Visual Studio 엔지니어링 팀이 문제를 해결하는 데 도움을 주는 최상의 방법 중 하나는 팀이 살펴볼 수 있도록 추적 및 힙 덤프 파일을 제공하는 것입니다. 버그를 야기한 단계를 기록하면 쉽게 도울 수 있습니다.
 
     ![작업 기록](../ide/media/feedback-recording.png) ‘Microsoft 엔지니어만 기록을 볼 수 있음’
 
-5. 첨부된 파일을 검토하고 문제를 진단하는 데 도움이 된다고 판단되는 경우 추가 파일을 업로드합니다.   
+5. 첨부된 파일을 검토하고 문제를 진단하는 데 도움이 된다고 판단되는 경우 추가 파일을 업로드합니다.
 
     ![첨부된 파일](../ide/media/feedback-attachments.png) ‘Microsoft 엔지니어만 첨부 파일을 볼 수 있음’
 

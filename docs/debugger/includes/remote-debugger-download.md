@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86bc2a1b73b492dc5f8d9977f05c3b2ba0dde6dc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324546"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91377297"
 ---
 디버그하려는 원격 디바이스 또는 서버에서(Visual Studio 머신 아님) 다음 표에 나온 링크를 통해 올바른 버전의 원격 도구를 다운로드하여 설치하세요.
 
@@ -36,7 +36,7 @@ ms.locfileid: "89324546"
 
 |버전|링크|참고|
 |-|-|-|
-|Visual Studio 2017|[원격 도구](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|모든 Visual Studio 2017 버전과 호환됩니다. 디바이스 운영 체제(x86, x64 또는 ARM64)와 일치하는 버전을 다운로드합니다. Windows Server에서 원격 도구 다운로드에 대한 도움말은 [Unblock the file download](../../debugger/remote-debugging-unblock-file-download.md)(파일 다운로드 차단 해제)를 참조하세요. 최신 버전의 원격 도구의 경우 [Visual Studio 2019 문서](../../debugger/remote-debugging.md?view=vs-2019)를 엽니다.|
+|Visual Studio 2017|[원격 도구](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|모든 Visual Studio 2017 버전과 호환됩니다. 디바이스 운영 체제(x86, x64 또는 ARM64)와 일치하는 버전을 다운로드합니다. Windows Server에서 원격 도구 다운로드에 대한 도움말은 [Unblock the file download](../../debugger/remote-debugging-unblock-file-download.md)(파일 다운로드 차단 해제)를 참조하세요. 최신 버전의 원격 도구의 경우 [Visual Studio 2019 문서](../../debugger/remote-debugging.md?view=vs-2019&preserve-view=true)를 엽니다.|
 |Visual Studio 2015|[원격 도구](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015용 원격 도구는 My.VisualStudio.com에서 사용할 수 있습니다. 메시지가 표시되면 무료 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 프로그램에 가입하거나 Visual Studio 구독 ID로 로그인하세요. Windows Server에서 원격 도구 다운로드에 대한 도움말은 [Unblock the file download](../../debugger/remote-debugging-unblock-file-download.md)(파일 다운로드 차단 해제)를 참조하세요.|
 |Visual Studio 2013|[원격 도구](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Visual Studio 2013 설명서의 다운로드 페이지|
 |Visual Studio 2012|[원격 도구](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Visual Studio 2012 설명서의 다운로드 페이지|
