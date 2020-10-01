@@ -524,15 +524,7 @@
             - name: C++ EditorConfig 서식 지정 규칙
               href: ide/cpp-editorconfig-properties.md
             - name: .NET 코딩 규칙
-              items:
-                - name: 개요
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: 언어 규칙
-                  href: ide/editorconfig-language-conventions.md
-                - name: 서식 지정 규칙
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: 명명 규칙
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: 스크롤 막대 사용자 지정
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: 코드에 책갈피 설정
@@ -972,7 +964,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참고
+- name: 참조
   items:
     - name: 바로 가기 키
       items:

@@ -185,7 +185,7 @@
         - name: 변경 로그
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
     - name: Xamarin을 사용한 모바일 앱
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: 액세스 가능성
   items:
     - name: 개요

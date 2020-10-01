@@ -16,8 +16,6 @@
               href: vscloud-billing-faq.md
             - name: CSP 구입
               href: vscloud-csp.md
-        - name: GitHub Enterprise가 포함된 Visual Studio
-          href: access-github.md
         - name: Microsoft 파트너 네트워크
           items:
             - name: 파트너를 위한 구독
@@ -64,6 +62,8 @@
               href: vs-cast.md
             - name: CloudPilot
               href: vs-cloudpilot.md
+            - name: GitHub Enterprise
+              href: access-github.md
             - name: 엔터프라이즈용 Microsoft 365 앱
               href: microsoft-365-apps-for-enterprise.md
             - name: Microsoft 365 개발자
