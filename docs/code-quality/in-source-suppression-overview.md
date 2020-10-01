@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091440"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604638"
 ---
 # <a name="suppress-code-analysis-violations"></a>코드 분석 위반 표시 안 함
 
@@ -183,19 +183,14 @@ public class Animal
 
 관리 코드 컴파일러와 일부 타사 도구는 코드를 신속 하 게 개발 하는 코드를 생성 합니다. 소스 파일에 표시 되는 컴파일러 생성 코드는 일반적으로 특성으로 표시 됩니다 `GeneratedCodeAttribute` .
 
-소스 코드 분석의 경우 프로젝트 또는 솔루션의 루트에 있는 [editorconfig](../code-quality/configure-fxcop-analyzers.md) 파일을 사용 하 여 생성 된 코드에서 메시지를 표시 하지 않을 수 있습니다. 생성 된 코드와 일치 하는 파일 패턴을 사용 합니다. 예를 들어 **. designer.cs* 파일에서 CS1591 경고를 제외 하려면 구성 파일에서이 경고를 사용 합니다.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+소스 코드 분석의 경우 파일에서 생성 된 코드의 메시지를 표시 하지 않을 수 있습니다 `.editorconfig` . 자세한 내용은 [생성 된 코드 제외](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code)를 참조 하세요.
 
 레거시 코드 분석의 경우 생성 된 코드에 대 한 코드 분석 경고 및 오류를 표시 하지 않을 지 여부를 선택할 수 있습니다. 이러한 경고 및 오류를 표시 하지 않는 방법에 대 한 자세한 내용은 [방법: 생성 된 코드에 대 한 경고 표시 안 함](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)을 참조 하세요.
 
 > [!NOTE]
 > 코드 분석 `GeneratedCodeAttribute` 은 전체 어셈블리나 단일 매개 변수에 적용 되는 경우를 무시 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

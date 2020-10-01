@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037252"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604595"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 FAQ
 
@@ -34,7 +34,7 @@ ms.locfileid: "90037252"
 
 그러나 EditorConfig 파일은 규칙을 구성 하는 또 다른 방법을 제공 합니다.
 
-- .NET 코드 품질 분석기의 경우 EditorConfig 파일을 사용 하 여 [분석할 코드 형식을 정의할](fxcop-analyzer-options.md)수 있습니다.
+- .NET 코드 품질 분석기의 경우 EditorConfig 파일을 사용 하 여 [분석할 코드 형식을 정의할](/dotnet/fundamentals/code-analysis/code-quality-rule-options)수 있습니다.
 - Visual Studio에 기본 제공 되는 .NET 코드 스타일 분석기의 경우 EditorConfig 파일을 사용 하 여 코드 베이스에 대해 [기본 설정 된 코드 스타일을 정의할](../ide/editorconfig-code-style-settings-reference.md) 수 있습니다.
 
 규칙 집합 및 EditorConfig 파일 외에도 일부 분석기는 c # 및 VB 컴파일러에 대 한 [추가 파일로](../ide/build-actions.md#build-action-values) 표시 된 텍스트 파일을 사용 하 여 구성 됩니다.
