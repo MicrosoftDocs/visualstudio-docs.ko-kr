@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037532"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352318"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>데이터베이스 도구를 사용하여 데이터베이스 성능 분석
 
@@ -50,7 +50,7 @@ ms.locfileid: "90037532"
 
 ![소스 파일로 이동 선택됨](./media/db-gotosource.png "소스 파일로 이동 선택됨")
 
-그래프에서 시간 범위를 선택하는 경우 쿼리 테이블에는 해당 시간 범위 동안 발생한 쿼리만 표시됩니다. 이 동작은 [CPU 사용량 도구](./cpu-usage.md?view=vs-2019)도 함께 실행하는 경우 특히 유용합니다.
+그래프에서 시간 범위를 선택하는 경우 쿼리 테이블에는 해당 시간 범위 동안 발생한 쿼리만 표시됩니다. 이 동작은 [CPU 사용량 도구](./cpu-usage.md?view=vs-2019&preserve-view=true)도 함께 실행하는 경우 특히 유용합니다.
 
 ## <a name="see-also"></a>참조
 

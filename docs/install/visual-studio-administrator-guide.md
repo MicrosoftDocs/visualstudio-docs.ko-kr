@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425409"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352272"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -40,7 +40,7 @@ ms.locfileid: "87425409"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 **** Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ****** Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
@@ -52,9 +52,9 @@ ms.locfileid: "87425409"
 
   인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
 
-* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019)를 결정합니다.
+* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019&preserve-view=true)를 결정합니다.
 
-* [응답 파일](automated-installation-with-response-file.md?view=vs-2019)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
+* [응답 파일](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
 
 * 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "87425409"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 **** 이전 버전의 Visual Studio 지원 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ****** 이전 버전의 Visual Studio 지원 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
@@ -78,9 +78,9 @@ ms.locfileid: "87425409"
 
   인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
 
-* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2017)를 결정합니다.
+* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2017&preserve-view=true)를 결정합니다.
 
-* [응답 파일](automated-installation-with-response-file.md?view=vs-2017)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
+* [응답 파일](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
 
 * 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
 
@@ -90,22 +90,22 @@ ms.locfileid: "87425409"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>1단계 - Visual Studio 제품 파일 다운로드
 
-* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2019)합니다.
+* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2019&preserve-view=true)합니다.
 
-* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>2단계 - 설치 스크립트를 빌드
 
-* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
+* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
 
   >[!NOTE]
-  > [응답 파일](automated-installation-with-response-file.md?view=vs-2019)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
+  > [응답 파일](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
 
-* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019)합니다.
+* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019&preserve-view=true)합니다.
 
-* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2019)합니다.
+* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2019&preserve-view=true)합니다.
 
-* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2019) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
+* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2019&preserve-view=true) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
 
 * (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
 
@@ -115,13 +115,13 @@ ms.locfileid: "87425409"
 
 ## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
 
-* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2019)합니다.
+* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true)합니다.
 
-  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 명령줄 매개 변수를 사용하면 됩니다.
+  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 명령줄 매개 변수를 사용하면 됩니다.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
 
-클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2019)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
 
 ## <a name="advanced-configuration"></a>고급 구성
 
@@ -129,7 +129,7 @@ ms.locfileid: "87425409"
 
 **“PutCustomTypeInBingSearch” DWORD 0**
 
-레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
+레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\16.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
 
 ::: moniker-end
 
@@ -137,22 +137,22 @@ ms.locfileid: "87425409"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>1단계 - Visual Studio 제품 파일 다운로드
 
-* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2017)합니다.
+* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2017&preserve-view=true)합니다.
 
-* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>2단계 - 설치 스크립트를 빌드
 
-* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
+* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
 
   >[!NOTE]
-  > [응답 파일](automated-installation-with-response-file.md?view=vs-2017)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
+  > [응답 파일](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
 
-* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017)합니다.
+* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017&preserve-view=true)합니다.
 
-* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2017)합니다.
+* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2017&preserve-view=true)합니다.
 
-* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2017) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
+* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
 
 * (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
 
@@ -162,13 +162,13 @@ ms.locfileid: "87425409"
 
 ## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
 
-* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2017)합니다.
+* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true)합니다.
 
-  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 명령줄 매개 변수를 사용하면 됩니다.
+  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 명령줄 매개 변수를 사용하면 됩니다.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
 
-클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2017)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
 
 ## <a name="advanced-configuration"></a>고급 구성
 
@@ -176,7 +176,7 @@ ms.locfileid: "87425409"
 
 **“PutCustomTypeInBingSearch” DWORD 0**
 
-레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
+레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
 
 ::: moniker-end
 
