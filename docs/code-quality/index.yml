@@ -10,13 +10,43 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
+  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "89599603"
+  ms.lasthandoff: 09/30/2020
+  ms.locfileid: "91604609"
 landingContent:
+- title: .NET 코드 분석
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET 코드 분석
+      url: roslyn-analyzers-overview.md
+    - text: .NET 코드 품질 분석
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: .NET 코드 스타일 분석
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
+  - linkListType: concept
+    links:
+    - text: FAQ
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: 코드 분석 구성
+      url: use-roslyn-analyzers.md
+  - linkListType: reference
+    links:
+    - text: .NET 코드 품질 규칙
+      url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
+    - text: .NET 코드 스타일 규칙
+      url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
+- title: 코드 복잡성 측정
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: 코드 메트릭
+      url: code-metrics-values.md
 - title: C 및 C++ 코드 분석
   linkLists:
   - linkListType: overview
@@ -27,35 +57,3 @@ landingContent:
     links:
     - text: C++ 코드 분석 경고
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
-- title: .NET 코드 품질 분석
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 소스 분석
-      url: roslyn-analyzers-overview.md
-    - text: 레거시 분석
-      url: static-code-analysis-for-managed-code-overview.md
-  - linkListType: concept
-    links:
-    - text: FAQ
-      url: analyzers-faq.md
-  - linkListType: how-to-guide
-    links:
-    - text: 코드 품질 분석 구성
-      url: install-fxcop-analyzers.md
-  - linkListType: reference
-    links:
-    - text: .NET 코드 품질 규칙
-      url: code-analysis-for-managed-code-warnings.md
-- title: .NET 코드 스타일 분석
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 코드 스타일 분석 구성
-      url: ../ide/create-portable-custom-editor-options.md
-- title: 코드 복잡성 측정
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: 코드 메트릭
-      url: code-metrics-values.md
