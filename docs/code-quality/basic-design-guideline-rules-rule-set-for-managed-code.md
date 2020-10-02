@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf30e3294c1a96e64efd47ffd14f03328ebec62c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75573186"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659129"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>관리 코드에 대한 기본 디자인 지침 규칙 규칙 집합
 
@@ -25,93 +25,93 @@ Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드�
 
 |규칙|설명|
 |----------|-----------------|
-|[CA1000](../code-quality/ca1000.md)|정적 멤버를 제네릭 형식으로 선언하지 마세요.|
-|[CA1001](../code-quality/ca1001.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
-|[CA1002](../code-quality/ca1002.md)|제네릭 목록을 노출하지 마세요.|
-|[CA1003](../code-quality/ca1003.md)|제네릭 이벤트 처리기 인스턴스를 사용하세요.|
+|[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000)|정적 멤버를 제네릭 형식으로 선언하지 마세요.|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
+|[CA1002](/dotnet/fundamentals/code-analysis/quality-rules/ca1002)|제네릭 목록을 노출하지 마세요.|
+|[CA1003](/dotnet/fundamentals/code-analysis/quality-rules/ca1003)|제네릭 이벤트 처리기 인스턴스를 사용하세요.|
 |[CA1004](../code-quality/ca1004.md)|제네릭 메서드는 형식 매개 변수를 제공해야 합니다.|
-|[CA1005](../code-quality/ca1005.md)|제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.|
+|[CA1005](/dotnet/fundamentals/code-analysis/quality-rules/ca1005)|제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.|
 |[CA1006](../code-quality/ca1006.md)|멤버 시그니처에 제네릭 형식을 중첩하지 마세요.|
 |[CA1007](../code-quality/ca1007.md)|적합한 제네릭을 사용하세요.|
-|[CA1008](../code-quality/ca1008.md)|열거형에는 0 값이 있어야 합니다.|
+|[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008)|열거형에는 0 값이 있어야 합니다.|
 |[CA1009](../code-quality/ca1009.md)|이벤트 처리기를 제대로 선언하십시오.|
-|[CA1010](../code-quality/ca1010.md)|컬렉션은 제네릭 인터페이스를 구현해야 합니다.|
+|[CA1010](/dotnet/fundamentals/code-analysis/quality-rules/ca1010)|컬렉션은 제네릭 인터페이스를 구현해야 합니다.|
 |[CA1011](../code-quality/ca1011.md)|기본 형식을 매개 변수로 전달해 보세요.|
-|[CA1012](../code-quality/ca1012.md)|추상 형식에는 생성자를 사용하면 안 됩니다.|
+|[CA1012](/dotnet/fundamentals/code-analysis/quality-rules/ca1012)|추상 형식에는 생성자를 사용하면 안 됩니다.|
 |[CA1013](../code-quality/ca1013.md)|더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.|
-|[CA1014](../code-quality/ca1014.md)|CLSCompliantAttribute로 어셈블리를 표시하세요.|
-|[CA1016](../code-quality/ca1016.md)|AssemblyVersionAttribute로 어셈블리 표시|
-|[CA1017](../code-quality/ca1017.md)|ComVisibleAttribute로 어셈블리를 표시하세요.|
-|[CA1018](../code-quality/ca1018.md)|AttributeUsageAttribute로 특성을 표시하세요.|
-|[CA1019](../code-quality/ca1019.md)|특성 인수의 접근자를 정의하세요.|
+|[CA1014](/dotnet/fundamentals/code-analysis/quality-rules/ca1014)|CLSCompliantAttribute로 어셈블리를 표시하세요.|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|AssemblyVersionAttribute로 어셈블리 표시|
+|[CA1017](/dotnet/fundamentals/code-analysis/quality-rules/ca1017)|ComVisibleAttribute로 어셈블리를 표시하세요.|
+|[CA1018](/dotnet/fundamentals/code-analysis/quality-rules/ca1018)|AttributeUsageAttribute로 특성을 표시하세요.|
+|[CA1019](/dotnet/fundamentals/code-analysis/quality-rules/ca1019)|특성 인수의 접근자를 정의하세요.|
 |[CA1023](../code-quality/ca1023.md)|다차원 인덱서를 사용하지 마세요.|
-|[CA1024](../code-quality/ca1024.md)|적합한 속성을 사용하세요.|
+|[CA1024](/dotnet/fundamentals/code-analysis/quality-rules/ca1024)|적합한 속성을 사용하세요.|
 |[CA1025](../code-quality/ca1025.md)|반복 인수를 매개 변수 배열로 바꾸세요.|
 |[CA1026](../code-quality/ca1026.md)|기본 매개 변수를 사용하면 안 됩니다.|
-|[CA1027](../code-quality/ca1027.md)|열거형을 FlagsAttribute로 표시하세요.|
-|[CA1028](../code-quality/ca1028.md)|열거형 스토리지는 Int32여야 합니다.|
-|[CA1030](../code-quality/ca1030.md)|적절한 경우 이벤트를 사용하세요.|
-|[CA1031](../code-quality/ca1031.md)|일반적인 예외 형식을 catch하지 마세요.|
-|[CA1032](../code-quality/ca1032.md)|표준 예외 생성자를 구현하세요.|
-|[CA1033](../code-quality/ca1033.md)|인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.|
-|[CA1034](../code-quality/ca1034.md)|중첩 형식은 노출되면 안 됩니다.|
+|[CA1027](/dotnet/fundamentals/code-analysis/quality-rules/ca1027)|열거형을 FlagsAttribute로 표시하세요.|
+|[CA1028](/dotnet/fundamentals/code-analysis/quality-rules/ca1028)|열거형 스토리지는 Int32여야 합니다.|
+|[CA1030](/dotnet/fundamentals/code-analysis/quality-rules/ca1030)|적절한 경우 이벤트를 사용하세요.|
+|[CA1031](/dotnet/fundamentals/code-analysis/quality-rules/ca1031)|일반적인 예외 형식을 catch하지 마세요.|
+|[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)|표준 예외 생성자를 구현하세요.|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.|
+|[CA1034](/dotnet/fundamentals/code-analysis/quality-rules/ca1034)|중첩 형식은 노출되면 안 됩니다.|
 |[CA1035](../code-quality/ca1035.md)|ICollection 구현에 강력한 형식의 멤버가 있습니다.|
-|[CA1036](../code-quality/ca1036.md)|비교 가능한 형식에 메서드를 재정의하세요.|
+|[CA1036](/dotnet/fundamentals/code-analysis/quality-rules/ca1036)|비교 가능한 형식에 메서드를 재정의하세요.|
 |[CA1038](../code-quality/ca1038.md)|열거자는 강력한 형식이어야 합니다.|
 |[CA1039](../code-quality/ca1039.md)|목록은 강력한 형식이어야 합니다.|
-|[CA1041](../code-quality/ca1041.md)|ObsoleteAttribute 메시지를 제공하세요.|
-|[CA1043](../code-quality/ca1043.md)|인덱서에 정수 또는 문자열 인수를 사용하세요.|
-|[CA1044](../code-quality/ca1044.md)|속성은 쓰기 전용이면 안 됩니다.|
-|[CA1046](../code-quality/ca1046.md)|참조 형식에 같음 연산자를 오버로드하지 마세요.|
-|[CA1047](../code-quality/ca1047.md)|protected 멤버를 sealed 형식으로 선언하지 마세요.|
+|[CA1041](/dotnet/fundamentals/code-analysis/quality-rules/ca1041)|ObsoleteAttribute 메시지를 제공하세요.|
+|[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043)|인덱서에 정수 또는 문자열 인수를 사용하세요.|
+|[CA1044](/dotnet/fundamentals/code-analysis/quality-rules/ca1044)|속성은 쓰기 전용이면 안 됩니다.|
+|[CA1046](/dotnet/fundamentals/code-analysis/quality-rules/ca1046)|참조 형식에 같음 연산자를 오버로드하지 마세요.|
+|[CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047)|protected 멤버를 sealed 형식으로 선언하지 마세요.|
 |[CA1048](../code-quality/ca1048.md)|가상 멤버를 sealed 형식으로 선언하지 마세요.|
 |[CA1049](../code-quality/ca1049.md)|네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.|
-|[CA1050](../code-quality/ca1050.md)|네임스페이스에 형식을 선언하세요.|
-|[CA1051](../code-quality/ca1051.md)|표시되는 인스턴스 필드를 선언하지 마세요.|
-|[CA1052](../code-quality/ca1052.md)|정적 소유자 형식은 sealed여야 합니다.|
-|[CA1053](../code-quality/ca1053.md)|정적 소유자 형식에는 생성자를 사용하면 안 됩니다.|
-|[CA1054](../code-quality/ca1054.md)|URI 매개 변수는 문자열이면 안 됩니다.|
-|[CA1055](../code-quality/ca1055.md)|URI 반환 값은 문자열이면 안 됩니다.|
-|[CA1056](../code-quality/ca1056.md)|URI 속성은 문자열이면 안 됩니다.|
+|[CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050)|네임스페이스에 형식을 선언하세요.|
+|[CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051)|표시되는 인스턴스 필드를 선언하지 마세요.|
+|[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052)|정적 소유자 형식은 sealed여야 합니다.|
+|[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053)|정적 소유자 형식에는 생성자를 사용하면 안 됩니다.|
+|[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054)|URI 매개 변수는 문자열이면 안 됩니다.|
+|[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055)|URI 반환 값은 문자열이면 안 됩니다.|
+|[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056)|URI 속성은 문자열이면 안 됩니다.|
 |[CA1057](../code-quality/ca1057.md)|문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.|
-|[CA1058](../code-quality/ca1058.md)|형식은 특정 기본 형식을 확장하면 안 됩니다.|
+|[CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058)|형식은 특정 기본 형식을 확장하면 안 됩니다.|
 |[CA1059](../code-quality/ca1059.md)|멤버는 구체적인 특정 형식을 노출하면 안 됩니다.|
-|[CA1060](../code-quality/ca1060.md)|P/Invoke를 NativeMethods 클래스로 이동|
-|[CA1061](../code-quality/ca1061.md)|기본 클래스 메서드를 숨기지 마십시오.|
-|[CA1063](../code-quality/ca1063.md)|IDisposable을 올바르게 구현하십시오.|
-|[CA1064](../code-quality/ca1064.md)|예외는 public이어야 합니다.|
-|[CA1065](../code-quality/ca1065.md)|예기치 않은 위치에서 예외를 발생시키지 마십시오.|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|P/Invoke를 NativeMethods 클래스로 이동|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|기본 클래스 메서드를 숨기지 마십시오.|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|IDisposable을 올바르게 구현하십시오.|
+|[CA1064](/dotnet/fundamentals/code-analysis/quality-rules/ca1064)|예외는 public이어야 합니다.|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|예기치 않은 위치에서 예외를 발생시키지 마십시오.|
 |[CA1301](../code-quality/ca1301.md)|중복 액셀러레이터 키를 사용하지 마십시오.|
 |[CA1400](../code-quality/ca1400.md)|P/Invoke 진입점이 있어야 합니다.|
-|[CA1401](../code-quality/ca1401.md)|P/Invoke는 노출되지 않아야 합니다.|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|P/Invoke는 노출되지 않아야 합니다.|
 |[CA1403](../code-quality/ca1403.md)|자동 레이아웃 형식은 COM 노출이면 안 됩니다.|
 |[CA1404](../code-quality/ca1404.md)|P/Invoke 다음에 바로 GetLastError를 호출하십시오.|
 |[CA1405](../code-quality/ca1405.md)|COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.|
 |[CA1410](../code-quality/ca1410.md)|COM 등록 메서드는 일치해야 합니다.|
 |[CA1415](../code-quality/ca1415.md)|P/Invoke를 올바르게 선언하십시오.|
 |[CA1500](../code-quality/ca1500.md)|변수 이름은 필드 이름과 달라야 합니다.|
-|[CA1502](../code-quality/ca1502.md)|지나치게 복잡하게 만들지 마세요.|
-|[CA1708](../code-quality/ca1708.md)|식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.|
-|[CA1716](../code-quality/ca1716.md)|식별자는 키워드와 달라야 합니다.|
-|[CA1801](../code-quality/ca1801.md)|사용되지 않은 매개 변수를 검토하세요.|
+|[CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)|지나치게 복잡하게 만들지 마세요.|
+|[CA1708](/dotnet/fundamentals/code-analysis/quality-rules/ca1708)|식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.|
+|[CA1716](/dotnet/fundamentals/code-analysis/quality-rules/ca1716)|식별자는 키워드와 달라야 합니다.|
+|[CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801)|사용되지 않은 매개 변수를 검토하세요.|
 |[CA1804](../code-quality/ca1804.md)|사용되지 않는 로컬 항목을 제거하세요.|
 |[CA1809](../code-quality/ca1809.md)|불필요한 로컬 항목을 사용하지 마세요.|
-|[CA1810](../code-quality/ca1810.md)|참조 형식 정적 필드를 인라인으로 초기화하세요.|
+|[CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810)|참조 형식 정적 필드를 인라인으로 초기화하세요.|
 |[CA1811](../code-quality/ca1811.md)|호출되지 않는 전용 코드를 사용하지 마세요.|
-|[CA1812](../code-quality/ca1812.md)|인스턴스화되지 않은 내부 클래스를 사용하지 마세요.|
-|[CA1813](../code-quality/ca1813.md)|봉인되지 않은 특성을 사용하지 마세요.|
-|[CA1814](../code-quality/ca1814.md)|다차원 배열보다 가변 배열을 사용하세요.|
-|[CA1815](../code-quality/ca1815.md)|값 형식에서 Equals 또는 같음 연산자를 재정의하세요.|
-|[CA1819](../code-quality/ca1819.md)|속성은 배열을 반환해서는 안 됩니다.|
-|[CA1820](../code-quality/ca1820.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
-|[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
-|[CA1822](../code-quality/ca1822.md)|멤버를 static으로 표시하세요.|
-|[CA1823](../code-quality/ca1823.md)|사용되지 않는 전용 필드를 사용하지 마세요.|
+|[CA1812](/dotnet/fundamentals/code-analysis/quality-rules/ca1812)|인스턴스화되지 않은 내부 클래스를 사용하지 마세요.|
+|[CA1813](/dotnet/fundamentals/code-analysis/quality-rules/ca1813)|봉인되지 않은 특성을 사용하지 마세요.|
+|[CA1814](/dotnet/fundamentals/code-analysis/quality-rules/ca1814)|다차원 배열보다 가변 배열을 사용하세요.|
+|[CA1815](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)|값 형식에서 Equals 또는 같음 연산자를 재정의하세요.|
+|[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819)|속성은 배열을 반환해서는 안 됩니다.|
+|[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|빈 종료자를 제거하십시오.|
+|[CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822)|멤버를 static으로 표시하세요.|
+|[CA1823](/dotnet/fundamentals/code-analysis/quality-rules/ca1823)|사용되지 않는 전용 필드를 사용하지 마세요.|
 |[CA1900](../code-quality/ca1900.md)|값 형식 필드는 이식 가능해야 합니다.|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 선언은 이식 가능해야 합니다.|
-|[CA2002](../code-quality/ca2002.md)|약한 ID를 가진 개체를 잠그지 마십시오.|
-|[CA2100](../code-quality/ca2100.md)|보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.|
-|[CA2101](../code-quality/ca2101.md)|P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|약한 ID를 가진 개체를 잠그지 마십시오.|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.|
 |[CA2108](../code-quality/ca2108.md)|값 형식에서 선언적 보안을 검토하십시오.|
 |[CA2111](../code-quality/ca2111.md)|포인터는 노출되면 안 됩니다.|
 |[CA2112](../code-quality/ca2112.md)|보안 형식은 필드를 노출하면 안 됩니다.|
@@ -133,37 +133,37 @@ Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드�
 |[CA2146](../code-quality/ca2146.md)|형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.|
 |[CA2147](../code-quality/ca2147.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|
 |[CA2149](../code-quality/ca2149.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|
-|[CA2200](../code-quality/ca2200.md)|스택 정보를 유지하도록 다시 throw하십시오.|
-|[CA2201](../code-quality/ca2201.md)|예약된 예외 형식을 발생시키지 마세요.|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|스택 정보를 유지하도록 다시 throw하십시오.|
+|[CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201)|예약된 예외 형식을 발생시키지 마세요.|
 |[CA2202](../code-quality/ca2202.md)|개체를 여러 번 삭제하지 마십시오.|
 |[CA2205](../code-quality/ca2205.md)|Win32 API의 동일한 관리형 기능을 사용하세요.|
-|[CA2207](../code-quality/ca2207.md)|값 형식 정적 필드 인라인을 초기화하십시오.|
-|[CA2208](../code-quality/ca2208.md)|인수 예외를 올바르게 인스턴스화하세요.|
-|[CA2211](../code-quality/ca2211.md)|비상수 필드는 노출되면 안 됩니다.|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|값 형식 정적 필드 인라인을 초기화하십시오.|
+|[CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208)|인수 예외를 올바르게 인스턴스화하세요.|
+|[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211)|비상수 필드는 노출되면 안 됩니다.|
 |[CA2212](../code-quality/ca2212.md)|서비스 구성 요소를 WebMethod를 사용하여 표시하지 마십시오.|
-|[CA2213](../code-quality/ca2213.md)|삭제 가능한 필드는 삭제해야 합니다.|
-|[CA2214](../code-quality/ca2214.md)|재정의 가능한 메서드를 생성자에서 호출하지 마십시오.|
-|[CA2216](../code-quality/ca2216.md)|삭제 가능한 형식은 종료자를 선언해야 합니다.|
-|[CA2217](../code-quality/ca2217.md)|열거형을 FlagsAttribute로 표시하지 마세요.|
-|[CA2219](../code-quality/ca2219.md)|exception 절에서 예외를 발생시키지 마세요.|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|삭제 가능한 필드는 삭제해야 합니다.|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|재정의 가능한 메서드를 생성자에서 호출하지 마십시오.|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|삭제 가능한 형식은 종료자를 선언해야 합니다.|
+|[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217)|열거형을 FlagsAttribute로 표시하지 마세요.|
+|[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219)|exception 절에서 예외를 발생시키지 마세요.|
 |[CA2220](../code-quality/ca2220.md)|종료자는 기본 클래스 종료자를 호출해야 합니다.|
 |[CA2221](../code-quality/ca2221.md)|종료자는 protected여야 합니다.|
 |[CA2222](../code-quality/ca2222.md)|상속된 멤버 노출 수준을 낮추지 마세요.|
 |[CA2223](../code-quality/ca2223.md)|멤버는 반환 형식 이외의 것도 달라야 합니다.|
 |[CA2224](../code-quality/ca2224.md)|같음 연산자를 오버로드할 때 Equals를 재정의하세요.|
-|[CA2225](../code-quality/ca2225.md)|연산자 오버로드에는 명명된 대체 항목이 있습니다.|
-|[CA2226](../code-quality/ca2226.md)|연산자에는 대칭 오버로드가 있어야 합니다.|
-|[CA2227](../code-quality/ca2227.md)|컬렉션 속성은 읽기 전용이어야 합니다.|
-|[CA2229](../code-quality/ca2229.md)|serialization 생성자를 구현하십시오.|
+|[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225)|연산자 오버로드에는 명명된 대체 항목이 있습니다.|
+|[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226)|연산자에는 대칭 오버로드가 있어야 합니다.|
+|[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227)|컬렉션 속성은 읽기 전용이어야 합니다.|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|serialization 생성자를 구현하십시오.|
 |[CA2230](../code-quality/ca2230.md)|가변 인수로 params를 사용하세요.|
-|[CA2231](../code-quality/ca2231.md)|ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.|
 |[CA2232](../code-quality/ca2232.md)|Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.|
-|[CA2234](../code-quality/ca2234.md)|문자열 대신 System.Uri 개체를 전달하세요.|
-|[CA2235](../code-quality/ca2235.md)|모두 serialize할 수 없는 필드로 표시하십시오.|
+|[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234)|문자열 대신 System.Uri 개체를 전달하세요.|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|모두 serialize할 수 없는 필드로 표시하십시오.|
 |[CA2236](../code-quality/ca2236.md)|ISerializable 형식에서 기본 클래스 메서드를 호출하십시오.|
-|[CA2237](../code-quality/ca2237.md)|SerializableAttribute로 ISerializable 형식 표시|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|SerializableAttribute로 ISerializable 형식 표시|
 |[CA2238](../code-quality/ca2238.md)|serialization 메서드를 올바르게 구현하십시오.|
 |[CA2239](../code-quality/ca2239.md)|선택적 필드에 deserialization 메서드를 제공하세요.|
 |[CA2240](../code-quality/ca2240.md)|ISerializable을 올바르게 구현하십시오.|
-|[CA2241](../code-quality/ca2241.md)|서식 지정 메서드에 올바른 인수를 제공하십시오.|
-|[CA2242](../code-quality/ca2242.md)|NaN에 대해 정확하게 테스트하십시오.|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|서식 지정 메서드에 올바른 인수를 제공하십시오.|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|NaN에 대해 정확하게 테스트하십시오.|

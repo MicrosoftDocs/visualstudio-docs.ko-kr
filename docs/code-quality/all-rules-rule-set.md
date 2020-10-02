@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d791ec2d75ff070672714626698e162a6c57f355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c8004c57b949c7df9d7250567222dbc1352b2d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506373"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659155"
 ---
 # <a name="all-rules-rule-set"></a>모든 규칙 규칙 집합
 
@@ -20,4 +20,4 @@ ms.locfileid: "77506373"
 
 - [C/c + + 경고에 대 한 코드 분석](/cpp/code-quality/code-analysis-for-c-cpp-warnings)
 
-- [관리 코드 경고에 대 한 코드 분석](../code-quality/code-analysis-for-managed-code-warnings.md)
+- [관리 코드 경고에 대 한 코드 분석](/dotnet/fundamentals/code-analysis/quality-rules/index)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604595"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659168"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "91604595"
 
 **Q**: 코드 스타일을 확인 하려면 코드 분석 또는 editorconfig를 사용 해야 하나요?
 
-**A**: 코드 분석 및 editorconfig 파일은 직접 작동 합니다. [EditorConfig 파일](../ide/editorconfig-code-style-settings-reference.md) 또는 [텍스트 편집기 옵션](../ide/code-styles-and-code-cleanup.md) 페이지에서 코드 스타일을 정의 하는 경우 실제로는 Visual Studio에 기본 제공 되는 코드 분석기를 구성 하는 것입니다. EditorConfig 파일은 분석기 규칙을 사용 하거나 사용 하지 않도록 설정 하 고 NuGet 분석기 패키지를 구성 하는 데 사용할 수 있습니다.
+**A**: 코드 분석 및 editorconfig 파일은 직접 작동 합니다. [EditorConfig 파일](/dotnet/fundamentals/code-analysis/code-style-rule-options) 또는 [텍스트 편집기 옵션](../ide/code-styles-and-code-cleanup.md) 페이지에서 코드 스타일을 정의 하는 경우 실제로는 Visual Studio에 기본 제공 되는 코드 분석기를 구성 하는 것입니다. EditorConfig 파일은 분석기 규칙을 사용 하거나 사용 하지 않도록 설정 하 고 NuGet 분석기 패키지를 구성 하는 데 사용할 수 있습니다.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig와 규칙 집합 비교
 
@@ -35,7 +35,7 @@ ms.locfileid: "91604595"
 그러나 EditorConfig 파일은 규칙을 구성 하는 또 다른 방법을 제공 합니다.
 
 - .NET 코드 품질 분석기의 경우 EditorConfig 파일을 사용 하 여 [분석할 코드 형식을 정의할](/dotnet/fundamentals/code-analysis/code-quality-rule-options)수 있습니다.
-- Visual Studio에 기본 제공 되는 .NET 코드 스타일 분석기의 경우 EditorConfig 파일을 사용 하 여 코드 베이스에 대해 [기본 설정 된 코드 스타일을 정의할](../ide/editorconfig-code-style-settings-reference.md) 수 있습니다.
+- Visual Studio에 기본 제공 되는 .NET 코드 스타일 분석기의 경우 EditorConfig 파일을 사용 하 여 코드 베이스에 대해 [기본 설정 된 코드 스타일을 정의할](/dotnet/fundamentals/code-analysis/code-style-rule-options) 수 있습니다.
 
 규칙 집합 및 EditorConfig 파일 외에도 일부 분석기는 c # 및 VB 컴파일러에 대 한 [추가 파일로](../ide/build-actions.md#build-action-values) 표시 된 텍스트 파일을 사용 하 여 구성 됩니다.
 
@@ -94,7 +94,7 @@ ms.locfileid: "91604595"
 
 **A**: 보다 안정적인 공유 속성 그룹을 위해 솔루션 수준의 코드 분석 속성 페이지가 제거 되었습니다. 프로젝트 수준에서 코드 분석을 관리 하기 위해 코드 분석 속성 페이지를 계속 사용할 수 있습니다. 관리 되는 프로젝트의 경우 규칙 구성을 위해 규칙 집합에서 EditorConfig로 마이그레이션하는 것이 좋습니다.  솔루션 또는 리포지토리의 여러/모든 프로젝트에서 규칙 집합을 공유 하는 경우 공유 된 props/targets 파일 또는 디렉터리 CodeAnalysisRuleSet 파일에 속성 그룹을 정의 하는 것이 좋습니다. 모든 프로젝트에서 가져오는 이와 같은 일반적인 props 또는 대상이 없는 경우 디렉터리 [또는 하위 디렉터리에 정의 된 모든 프로젝트 파일에서 자동으로 가져오는 최상위 솔루션 디렉터리에 해당 속성 그룹을 추가 하는 것이 좋습니다 .이 디렉터리는 디렉터리 또는 하위 디렉터리에 정의 된 모든 프로젝트 파일에서 자동으로 가져옵니다](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [분석기 개요](roslyn-analyzers-overview.md)
-- [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig에 대한 .NET 코딩 규칙 설정](/dotnet/fundamentals/code-analysis/code-style-rule-options)

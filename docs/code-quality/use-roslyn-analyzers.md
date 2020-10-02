@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560751"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659220"
 ---
 # <a name="overview"></a>개요
 
@@ -38,18 +38,18 @@ Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severit
 
 다음 표에서는 다양 한 심각도 옵션을 보여 줍니다.
 
-| 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
+| 심각도(솔루션 탐색기) | 심각도(EditorConfig 파일) | 빌드 시간 동작 | 편집기 동작 |
 |-|-|-|
-| Error | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
-| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
-| 정보 | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
-| 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
-| None | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
-| 기본값 | `default` | 규칙의 기본 심각도에 해당 합니다. 규칙의 기본값을 확인 하려면 속성 창를 확인 합니다. | 규칙의 기본 심각도에 해당 합니다. |
+| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 오류로 표시되고 빌드가 실패합니다.| 위반 코드는 빨간색 물결선이 밑줄로 표시되고 스크롤 막대에 작은 빨간색 상자가 표시됩니다. |
+| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 경고로 표시되지만 빌드가 실패하지는 않습니다. | 위반 코드는 녹색 물결선이 밑줄로 표시되고 스크롤 막대에 작은 녹색 상자가 표시됩니다. |
+| 정보 | `suggestion` | 위반은 오류 목록에만 메시지로 표시되고 명령줄 빌드 출력에는 표시되지 않습니다. | 위반 코드는 회색 물결선이 밑줄로 표시되고 스크롤 막대에 작은 회색 상자가 표시됩니다. |
+| 숨김 | `silent` | 사용자에게 표시되지 않습니다. | 사용자에게 표시되지 않습니다. 그러나 진단은 IDE 진단 엔진에 보고됩니다. |
+| None | `none` | 전혀 표시되지 않습니다. | 전혀 표시되지 않습니다. |
+| 기본값 | `default` | 규칙의 기본 심각도에 해당합니다. 규칙 기본값을 확인하려면 속성 창을 확인합니다. | 규칙의 기본 심각도에 해당합니다. |
 
 분석기에서 규칙 위반을 발견하면 코드 편집기(위반 코드 아래에 *오류 표시선*이 표시됨) 및 오류 목록 창에 규칙 위반이 보고됩니다.
 
-오류 목록에 보고 된 분석기 위반이 규칙의 [심각도 수준 설정과](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) 일치 합니다. 분석기 위반은 위반 하는 코드 아래에 물결선로 코드 편집기에 표시 됩니다. 다음 이미지는 &mdash; 오류 (빨간색 물결선), 경고 (녹색 물결선) 및 제안 1 개 (회색 점 3 개)의 세 가지 위반을 보여 줍니다.
+오류 목록에 보고된 분석기 위반은 규칙의 [심각도 수준 설정](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)과 일치합니다. 분석기 위반은 코드 편집기에도 표시되며, 위반 코드 아래에 물결선이 나타납니다. 다음 이미지에는 오류 1개(빨간색 물결선), 경고 1개(녹색 물결선), 제안 1개(회색 점 3개) 등 세 가지 위반이 표시되어 있습니다.
 
 ![Visual Studio 코드 편집기의 오류 표시선](media/diagnostics-severity-colors.png)
 
@@ -57,7 +57,7 @@ Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severit
 
 ![오류 목록에서 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
 
-많은 분석기 규칙 또는 *진단*에는 규칙 위반을 해결 하기 위해 적용할 수 있는 하나 이상의 관련 된 *코드 수정* 이 있습니다. 코드 수정은 다른 형식의 [빠른 작업](../ide/quick-actions.md)과 함께 전구 아이콘 메뉴에 표시됩니다. 이러한 코드 수정에 대한 정보는 [일반적인 빠른 작업](../ide/quick-actions.md)을 참조하세요.
+여러 분석기 규칙 또는 진단에는 규칙 위반을 해결하는 데 적용할 수 있는 하나 이상의 연결된 코드 수정이 있습니다. 코드 수정은 다른 형식의 [빠른 작업](../ide/quick-actions.md)과 함께 전구 아이콘 메뉴에 표시됩니다. 이러한 코드 수정에 대한 정보는 [일반적인 빠른 작업](../ide/quick-actions.md)을 참조하세요.
 
 ![분석기 위반 및 빠른 작업 코드 수정](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -102,7 +102,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 - ID 별로 개별 규칙의 심각도 항목은 범주에 대 한 심각도 항목 보다 우선 합니다.
 - 범주에 대 한 심각도 항목은 모든 분석기 규칙에 대 한 심각도 항목 보다 우선적으로 적용 됩니다.
 
-[CA1822](./ca1822.md) 에 "Performance" 범주가 있는 다음과 같은 editorconfig 예제를 생각해 보세요.
+[CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 에 "Performance" 범주가 있는 다음과 같은 editorconfig 예제를 생각해 보세요.
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 
 1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
 
-2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 c # 파일의 [CA1822](ca1822.md) 에 대 한 심각도를 설정 하기 위해 `error` 항목은 다음과 같습니다.
+2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 c # 파일의 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 에 대 한 심각도를 설정 하기 위해 `error` 항목은 다음과 같습니다.
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
    ```
 
 > [!NOTE]
-> IDE 코드 스타일 분석기의 경우 다른 구문 (예:)을 사용 하 여 EditorConfig 파일에서 구성할 수도 있습니다 `dotnet_style_qualification_for_field = false:suggestion` . 그러나 구문을 사용 하 여 심각도를 설정 하는 경우에는 `dotnet_diagnostic` 우선 순위가 우선적으로 적용 됩니다. 자세한 내용은 [EditorConfig에 대 한 언어 규칙](../ide/editorconfig-language-conventions.md)을 참조 하세요.
+> IDE 코드 스타일 분석기의 경우 다른 구문 (예:)을 사용 하 여 EditorConfig 파일에서 구성할 수도 있습니다 `dotnet_style_qualification_for_field = false:suggestion` . 그러나 구문을 사용 하 여 심각도를 설정 하는 경우에는 `dotnet_diagnostic` 우선 순위가 우선적으로 적용 됩니다. 자세한 내용은 [EditorConfig에 대 한 언어 규칙](/dotnet/fundamentals/code-analysis/style-rules/language-rules)을 참조 하세요.
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>전구 메뉴에서 규칙 심각도 설정
 
@@ -409,7 +409,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

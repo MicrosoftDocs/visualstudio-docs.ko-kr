@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810209"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658479"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>레거시 분석 (FxCop)에서 원본 분석 (FxCop 분석기)으로 마이그레이션
 
@@ -36,6 +36,6 @@ ms.locfileid: "90810209"
 
 FxCop 분석기를 구성 하는 방법에 대 한 자세한 내용은 다음을 확인 하세요.
 
-- FxCop 분석기를 구성 하려면 [fxcop 분석기 구성](../code-quality/configure-fxcop-analyzers.md)을 참조 하세요.
+- FxCop 분석기를 구성 하려면 [fxcop 분석기 구성](/dotnet/fundamentals/code-analysis/code-quality-rule-options)을 참조 하세요.
 
-- EditorConfig 또는 규칙 집합 파일을 사용 하 여 미리 정의 된 규칙을 사용 하 여 분석기를 구성 하는 방법에 대해 알아보려면 [규칙 범주 사용](../code-quality/analyzer-rule-sets.md)을 참조 하세요.
+- EditorConfig 또는 규칙 집합 파일을 사용 하 여 미리 정의 된 규칙을 사용 하 여 분석기를 구성 하는 방법에 대해 알아보려면 [규칙 범주 사용](/dotnet/fundamentals/code-analysis/code-quality-rule-options)을 참조 하세요.

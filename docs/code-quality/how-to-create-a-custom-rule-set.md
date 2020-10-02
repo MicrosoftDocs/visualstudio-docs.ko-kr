@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893270"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658557"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합 사용자 지정
 
@@ -51,7 +51,7 @@ ms.locfileid: "88893270"
 4. **열기** 를 선택 하 여 규칙 집합 편집기에서 규칙을 표시 합니다.
 
 > [!NOTE]
-> .NET Core 또는 .NET Standard 프로젝트인 경우 **코드 분석** 속성 탭이 없기 때문에 프로세스는 약간 다릅니다. 단계에 따라 [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](analyzer-rule-sets.md)합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기**에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
+> .NET Core 또는 .NET Standard 프로젝트인 경우 **코드 분석** 속성 탭이 없기 때문에 프로세스는 약간 다릅니다. 단계에 따라 [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](/dotnet/fundamentals/code-analysis/code-quality-rule-options)합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기**에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
 
 ## <a name="create-a-new-rule-set"></a>새 규칙 집합 만들기
 
@@ -145,7 +145,7 @@ ms.locfileid: "88893270"
 > [!div class="nextstepaction"]
 > [규칙 집합 편집기에서 규칙 수정](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [방법: 관리 코드 프로젝트에 대한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

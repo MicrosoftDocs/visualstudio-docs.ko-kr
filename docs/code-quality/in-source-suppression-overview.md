@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604638"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658518"
 ---
 # <a name="suppress-code-analysis-violations"></a>코드 분석 위반 표시 안 함
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 특성의 속성은 다음과 같습니다.
 
-- **범주** -규칙이 정의 된 범주입니다. 코드 분석 규칙 범주에 대 한 자세한 내용은 [관리 코드 경고](../code-quality/code-analysis-for-managed-code-warnings.md)를 참조 하세요.
+- **범주** -규칙이 정의 된 범주입니다. 코드 분석 규칙 범주에 대 한 자세한 내용은 [관리 코드 경고](/dotnet/fundamentals/code-analysis/quality-rules/index)를 참조 하세요.
 
 - **CheckId** -규칙의 식별자입니다. 지원에는 규칙 식별자에 대 한 짧은 이름과 긴 이름이 모두 포함 됩니다. 약식 이름은 CAXXXX입니다. 긴 이름은 CAXXXX: FriendlyTypeName입니다.
 
@@ -190,7 +190,7 @@ public class Animal
 > [!NOTE]
 > 코드 분석 `GeneratedCodeAttribute` 은 전체 어셈블리나 단일 매개 변수에 적용 되는 경우를 무시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

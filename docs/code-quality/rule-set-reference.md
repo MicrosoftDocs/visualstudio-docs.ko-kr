@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587240"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658427"
 ---
 # <a name="code-analysis-rule-set-reference"></a>코드 분석 규칙 집합 참조
 
 Visual Studio에서 관리 코드 프로젝트에 대 한 레거시 분석을 구성 하는 경우 기본 제공 *규칙 집합*목록에서 선택할 수 있습니다. 일부 규칙은 기본 제공 규칙 집합 중 하나 이상에 포함 되어 있습니다. 예를 들어 기본 수정 규칙 규칙 집합에는 관리 권장 규칙 규칙 집합에 있는 규칙이 포함 되어 있습니다.
 
 > [!NOTE]
-> 이 섹션의 규칙 집합은 레거시 분석과 관련이 있습니다. 코드 분석기 패키지에 사용할 수 있는 규칙 집합에 대 한 자세한 내용은 [코드 분석기와 함께 규칙 집합 사용](analyzer-rule-sets.md)을 참조 하세요.
+> 이 섹션의 규칙 집합은 레거시 분석과 관련이 있습니다. 코드 분석기 패키지에 사용할 수 있는 규칙 집합에 대 한 자세한 내용은 [코드 분석기와 함께 규칙 집합 사용](/dotnet/fundamentals/code-analysis/code-quality-rule-options)을 참조 하세요.
 
 이러한 기본 제공 규칙 집합 중 하나를 사용 하거나 프로젝트 요구 사항에 맞게 [규칙 집합을 사용자 지정할](../code-quality/how-to-create-a-custom-rule-set.md) 수 있습니다. 사용자 지정 규칙 집합에 동일한 규칙이 포함 된 여러 규칙 집합을 포함 하는 경우 해당 규칙은 사용자 지정 규칙 집합에 한 번만 표시 됩니다.
 

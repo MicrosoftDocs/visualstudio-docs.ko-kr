@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b464172d541277de5fbac6d8ab035578b6154
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587357"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658505"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 최소 규칙 규칙 집합
 
@@ -21,7 +21,7 @@ ms.locfileid: "75587357"
 
 |규칙|설명|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
-|[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
-|[CA2213](../code-quality/ca2213.md)|삭제 가능한 필드는 삭제해야 합니다.|
-|[CA2231](../code-quality/ca2231.md)|오버 로드 연산자는 재정의할 때 동일 합니다. `ValueType.Equals`|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|빈 종료자를 제거하십시오.|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|삭제 가능한 필드는 삭제해야 합니다.|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|오버 로드 연산자는 재정의할 때 동일 합니다. `ValueType.Equals`|

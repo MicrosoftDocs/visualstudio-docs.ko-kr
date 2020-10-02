@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600227"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658531"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -32,10 +32,10 @@ ms.locfileid: "89600227"
 
 .NET 코드 품질 분석기에는 다음과 같은 여러 코드 메트릭 [분석기](roslyn-analyzers-overview.md) 규칙이 포함 되어 있습니다.
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 이러한 규칙은 기본적으로 사용 하지 않도록 설정 되어 있지만 [**솔루션 탐색기**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 또는 [규칙 집합](using-rule-sets-to-group-code-analysis-rules.md) 파일에서 사용 하도록 설정할 수 있습니다. 예를 들어 규칙 CA1502을 경고로 사용 하도록 설정 하려면. 규칙 집합 파일에 다음 항목이 포함 됩니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "89600227"
    CA1502: 10
    ```
 
-   이 예제에서 rule [CA1502](ca1502.md) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
+   이 예제에서 rule [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
 3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면 다음과 같습니다.
 
@@ -336,7 +336,7 @@ Visual Studio 2019 버전 16.4 및 메트릭 (2.9.5)에서 시작 `SourceLines` 
 
 및와 같은 기타 `CyclomaticComplexity` 메트릭은 `MaintainabilityIndex` 이전 버전의 *Metrics.exe*와 같은 수식을 사용 하지만 새 도구는 `IOperations` IL (중간 언어) 명령 대신 (논리적 원본 명령)의 수를 계산 합니다. Visual Studio IDE와 이전 버전의 *Metrics.exe*에 의해 생성 되는 숫자는 약간 다릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 메트릭 결과 창 사용](../code-quality/working-with-code-metrics-data.md)
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893309"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659181"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -23,10 +23,10 @@ ms.locfileid: "88893309"
 
 다음 표에서는 심각도 옵션을 보여 줍니다.
 
-|작업 (심각도)|설명|
+|작업 (심각도)|Description|
 |-|-|
 |경고|**오류 목록** 및 빌드 시에 경고를 생성 합니다.|
-|오류|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
+|Error|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
 |정보|**오류 목록**에서 메시지를 생성 합니다.|
 |숨김|위반은 사용자에 게 표시 되지 않습니다. 그러나 IDE에 위반에 대 한 알림이 표시 됩니다.|
 |없음|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
@@ -48,7 +48,7 @@ ms.locfileid: "88893309"
 
 다음 표에서는 규칙 집합 편집기의 도구 모음에 있는 컨트롤에 대해 설명 합니다.
 
-|Toolbar 컨트롤|설명|
+|Toolbar 컨트롤|Description|
 |---------------------|-----------------|
 |**모두 확장**|모든 그룹의 규칙을 표시 합니다.|
 |**모두 축소**|모든 그룹의 규칙을 숨깁니다.|
@@ -70,11 +70,11 @@ ms.locfileid: "88893309"
 |필드|Description|
 |-----------|-----------------|
 |**ID**|규칙의 식별자입니다.|
-|**범주**|규칙 집합의 멤버 자격 외에도 코드 분석 규칙은 범주별로 그룹화 됩니다. 자세한 내용은 [코드 분석 경고](../code-quality/code-analysis-for-managed-code-warnings.md)를 참조 하세요.|
+|**범주**|규칙 집합의 멤버 자격 외에도 코드 분석 규칙은 범주별로 그룹화 됩니다. 자세한 내용은 [코드 분석 경고](/dotnet/fundamentals/code-analysis/quality-rules/index)를 참조 하세요.|
 |**이름**|규칙의 제목입니다.|
 |**Namespace**|규칙의 네임 스페이스입니다.|
 |**대상 유형**|기본, 관리 또는 데이터베이스 코드에 대 한 규칙 인지 여부를 나타냅니다.|
-|**작업**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
+|**동작**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
 |**원본 규칙 집합**|규칙을 포함 하는 규칙 집합입니다.|
 
 ## <a name="sort-and-filter-rule-sets"></a>규칙 집합 정렬 및 필터링
@@ -85,6 +85,6 @@ ms.locfileid: "88893309"
 
 - 필드 값을 기준으로 규칙 집합을 필터링 하려면 필터링 할 필드의 열 머리글에서 필터 단추를 선택 합니다. 표시 하려는 값의 확인란을 선택 하 고 숨기려는 값의 확인란을 선택 취소 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [사용자 지정 규칙 집합 만들기](../code-quality/how-to-create-a-custom-rule-set.md)
