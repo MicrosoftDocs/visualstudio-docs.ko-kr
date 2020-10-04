@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114992"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135133"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -92,11 +92,27 @@ ms.locfileid: "76114992"
 
 ::: moniker-end
 
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>오류: 문제를 보고하려고 할 때 “Visual Studio에서 연결 끊김”
+
+이 오류는 일반적으로 사용자가 프록시 서버를 통해 인터넷에 연결하고 프록시 서버가 Visual Studio에서 일부 네트워크 리소스에 대한 호출을 차단할 때 발생합니다.
+
+### <a name="to-fix-this-proxy-error"></a>이 프록시 오류를 해결하려면
+
+1. **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** 또는 **%ProgramFiles%\Microsoft Visual Studio\Installer**에서 **feedback.exe.config**(feedback.exe 구성 파일)를 찾습니다.
+
+2. 구성 파일에서 다음 코드가 있는지 확인합니다. 코드가 없으면 마지막 `</configuration>` 줄 앞에 코드를 추가합니다.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
+
 ## <a name="error-the-underlying-connection-was-closed"></a>오류: “기본 연결이 닫혔습니다.”
 
 방화벽이 있는 개인 네트워크에서 Visual Studio를 사용하는 경우 Visual Studio가 일부 네트워크 리소스에 연결하지 못할 수 있습니다. 이러한 리소스에는 로그인 및 라이선스용 Azure DevOps Services, NuGet 및 Azure 서비스가 포함될 수 있습니다. Visual Studio가 이러한 리소스 중 하나에 연결하지 못할 경우 다음과 같은 오류 메시지가 표시될 수 있습니다.
 
-  **기본 연결이 닫혔습니다. 전송 시 예기치 않은 오류가 발생했습니다.**
+  **기본 연결이 닫혔습니다. 전송 중에 예상치 못한 오류가 발생했습니다.**
 
 Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네트워크 리소스에 연결합니다. Visual Studio에서 TLS 1.2를 사용하는 경우 일부 개인 네트워크의 보안 어플라이언스는 특정 서버 연결을 차단합니다.
 
@@ -148,7 +164,7 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 * [방화벽 또는 프록시 서버 뒤에 Visual Studio 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

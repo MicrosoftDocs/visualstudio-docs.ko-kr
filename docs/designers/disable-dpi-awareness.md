@@ -1,17 +1,17 @@
 ---
 title: Visual Studio에서 DPI 인식 사용 안 함
 description: HDPI 모니터에 대한 Windows Forms 디자이너의 제한 사항 및 Visual Studio를 DPI를 인식하지 않는 프로세스로 실행하는 방법에 대해 설명합니다.
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
+ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249965"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91493311"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 DPI 인식 사용 안 함
 
@@ -43,6 +43,9 @@ HDPI 모니터의 Visual Studio에서 **Windows Forms 디자이너**의 양식�
 - [Visual Studio를 DPI를 인식하지 않는 프로세스로 다시 시작](#restart-visual-studio-as-a-dpi-unaware-process)
 - [레지스트리 항목 추가](#add-a-registry-entry)
 - [화면 표시 배율 설정을 100%로 설정](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> 명령줄에서 설정을 관리하려는 경우 [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)에서 `/noscale`을 명령줄 매개 변수로 사용하여 100% 확장 모드로 실행합니다.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Visual Studio를 DPI를 인식하지 않는 프로세스로 다시 시작
 

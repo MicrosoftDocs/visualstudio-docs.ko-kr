@@ -4,18 +4,19 @@ description: Visual Studio에서 성능 문제 제출에 대한 추가 정보 �
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
+manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810863"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211190"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 
-“[문제 보고](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)” 도구는 Visual Studio 사용자가 다양한 문제를 보고하는 데 널리 사용됩니다. Visual Studio 팀은 사용자 피드백에서 크래시 및 속도 저하 추세를 파악하고 광범위한 사용자에게 영향을 주는 문제를 해결합니다. 특정 피드백 티켓의 실행 가능성이 높을수록 제품 팀에서 진단하고 빠르게 해결할 가능성이 높습니다. 이 문서에서는 크래시 또는 속도 저하 문제를 보고하면서 모범 사례를 설명하여 모범 사례가 더 많이 실행될 수 있도록 합니다.
+“[문제 보고](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)” 도구는 Visual Studio 사용자가 다양한 문제를 보고하는 데 널리 사용됩니다. Visual Studio 팀은 사용자 피드백에서 크래시 및 속도 저하 추세를 파악하고 광범위한 사용자에게 영향을 주는 문제를 해결합니다. 특정 피드백 티켓의 실행 가능성이 높을수록 제품 팀에서 진단하고 빠르게 해결할 가능성이 높습니다. 이 문서에서는 크래시 또는 속도 저하 문제를 보고하면서 모범 사례를 설명하여 모범 사례가 더 많이 실행될 수 있도록 합니다.
 
 ## <a name="general-best-practices"></a>일반적인 유용한 정보
 
@@ -92,7 +93,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 > [!NOTE]
 > 작업 관리자를 사용하여 캡처한 덤프는 잘못된 비트가 될 가능성이 높기 때문에 사용 가능성이 줄어듭니다. 위에서 설명한 프로시저는 힙 덤프를 캡처하는 데 선호되는 방법입니다. 작업 관리자를 사용하려면 현재 실행 중인 작업을 닫고 32비트 작업 관리자(%windir%\\syswow64\\taskmgr.exe)를 시작하고 거기에서 힙 덤프를 수집합니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 이 메서드에 의해 생성되는 각 덤프 파일의 크기는 최대 4GB입니다. DumpFolder를 드라이브 공간이 충분한 위치로 설정하거나 DumpCount를 적절하게 조정합니다.
 
 Visual Studio에서 크래시가 발생할 때마다 구성된 위치에 덤프 파일 **devenv.exe.[number].dmp**가 만들어집니다.
@@ -105,7 +106,7 @@ Visual Studio에서 크래시가 발생할 때마다 구성된 위치에 덤프 
 
 3. “[문제를 신고하는 방법](./how-to-report-a-problem-with-visual-studio.md)”의 단계를 수행하고 힙 덤프를 새 피드백 항목에 첨부합니다.
 
-> [!NOTE] 
+> [!NOTE]
 > **가장 중요한 피드백:** 이 경우 가장 중요한 피드백은 크래시 발생 시 캡처된 힙 덤프입니다.
 
 ## <a name="unresponsiveness"></a>무응답
@@ -118,18 +119,18 @@ VS가 오랫동안 응답하지 않게 됩니다.
 **알 수 없는 무응답**
 
 무응답이 예측할 수 없는 방식으로 나타나는 경우, 다음번에 Visual Studio의 새 인스턴스를 시작하고 해당 인스턴스에서 문제를 보고합니다.
-[“레코드” 화면](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)에서 응답하지 않는 Visual Studio 세션을 선택해야 합니다.
+“레코드” 화면에서 응답하지 않는 Visual Studio 세션을 선택해야 합니다. (문제를 재현하기 위해 수행할 수 있는 작업을 기록하는 방법에 대한 자세한 내용은 [문제를 보고하는 방법](./how-to-report-a-problem-with-visual-studio.md) 페이지의 8단계를 참조하세요.)
 
 응답하지 않는 Visual Studio 인스턴스가 관리자 모드에서 시작된 경우, 두 번째 인스턴스도 관리자 모드에서 시작되어야 합니다.
 
->[!NOTE] 
+>[!NOTE]
 > **가장 중요한 피드백:** 이 경우 가장 중요한 피드백은 무응답 발생 시 캡처된 힙 덤프입니다.
 
 ## <a name="slowness-and-high-cpu-issues"></a>속도 저하 및 높은 CPU 문제
 
 느린 작업 또는 높은 CPU 이벤트가 진행되는 동안 캡처한 성능 추적으로 속도 저하 또는 높은 CPU 사용량 문제를 해결할 수 있습니다.
 
->[!NOTE] 
+>[!NOTE]
 > 가능하면 각 시나리오를 별도의 특정 피드백 보고서에 구분합니다.
 예를 들어 입력과 탐색이 모두 느려지는 경우 문제마다 아래 단계를 한 번씩 수행합니다. 이를 통해 제품 팀은 특정 문제의 원인을 구분할 수 있습니다.
 
@@ -165,9 +166,9 @@ VS가 오랫동안 응답하지 않게 됩니다.
 
 성능 추적을 기록하는 동안 보고하는 느린 작업 또는 높은 CPU가 종료되면 즉시 기록을 중지합니다. 너무 많은 정보가 수집되면 가장 오래된 정보를 덮어쓰게 됩니다. 흥미로운 작업 후 바로(몇 초 내에) 추적을 중지하지 않으면 유용한 추적 데이터를 덮어쓰게 됩니다.
 
-Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을 바로 첨부하지 마세요. 추가 정보 요청/제공은 Visual Studio의 기본 제공 문제 보고 도구에서 지원되는 워크플로입니다. 이전 피드백 항목을 해결하기 위해 성능 추적이 필요한 경우 피드백 항목의 상태를 “추가 정보 필요”로 설정하여 새 문제를 보고하는 것과 같은 방식으로 응답할 수 있습니다. 자세한 지침은 문제 보고 도구 문서의 [“추가 정보 필요” 섹션](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info)을 참조하세요.
+Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을 바로 첨부하지 마세요. 추가 정보 요청/제공은 Visual Studio의 기본 제공 문제 보고 도구에서 지원되는 워크플로입니다. 이전 피드백 항목을 해결하기 위해 성능 추적이 필요한 경우 피드백 항목의 상태를 “추가 정보 필요”로 설정하여 새 문제를 보고하는 것과 같은 방식으로 응답할 수 있습니다. 자세한 지침은 문제 보고 도구 문서의 [“추가 정보 필요” 섹션](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)을 참조하세요.
 
-> [!NOTE] 
+> [!NOTE]
 > **가장 중요한 피드백:** 거의 모든 속도 저하/높은 CPU 문제의 경우, 가장 중요한 피드백은 해당 시간 동안 동작을 캡처하는 성능 추적(\*.etl.zip)과 함께 수행하려고 했던 작업에 대한 개략적인 설명입니다.
 
 **고급 성능 추적**
@@ -177,7 +178,8 @@ Developer Community 웹 사이트의 기존 피드백 항목에 성능 추적을
 ## <a name="out-of-process-issues"></a>Out-Of-Process 문제
 
 > [!NOTE]
-> Visual Studio 2019 버전 16.3부터 out-of-process 로그가 문제 보고 도구를 사용하여 제출되는 피드백에 자동으로 첨부됩니다. 그러나 문제를 직접 재현할 수 있는 경우 아래 단계에 따라 문제를 진단하는 데 도움이 되는 추가 정보를 제공할 수 있습니다.
+> Visual Studio 2019 버전 16.3부터 out-of-process 로그가 문제 보고 도구를 사용하여 제출되는 피드백에 자동으로 첨부됩니다.
+그러나 문제를 직접 재현할 수 있는 경우 아래 단계에 따라 문제를 진단하는 데 도움이 되는 추가 정보를 제공할 수 있습니다.
 
 Visual Studio와 병렬로 실행되며 기본 Visual Studio 프로세스 외부에서 다양한 기능을 제공 하는 여러 위성 프로세스가 있습니다. 이러한 위성 프로세스 중 하나에서 오류가 발생하는 경우 일반적으로 Visual Studio 쪽에서 'StreamJsonRpc.RemoteInvocationException' 또는 'StreamJsonRpc.ConnectionLostException'로 표시됩니다.
 

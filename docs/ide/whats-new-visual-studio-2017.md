@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809520"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352179"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -104,7 +104,7 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 로밍 중인 확장 관리자는 설치하는 모든 확장을 추적하지만 로밍 목록에 추가할 확장을 선택할 수 있습니다.
 
-![Visual Studio 2017 - 확장 및 업데이트 대화 상자](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 - 로밍 확장 관리자](media/vs2017ide-RoamingExtensionManager.png)
 
 로밍 중인 확장 관리자를 사용하는 경우 3개의 아이콘 형식이 목록에 표시됩니다.
 
@@ -222,7 +222,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 **디버그** 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 기록 디버깅이 자동으로 활성화됩니다.
 
-![Visual Studio의 새 예외 도우미 대화 상자](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 이동 및 앞으로 이동 단추")
+![Visual Studio의 IntelliTrace 단계 뒤로 실행 예제](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 이동 및 앞으로 이동 단추")
 
 자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅샷 보기](../debugger/view-historical-application-state.md) 페이지를 참조하세요.
 

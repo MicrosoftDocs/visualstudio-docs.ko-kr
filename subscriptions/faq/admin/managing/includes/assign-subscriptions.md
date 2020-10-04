@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.date: 09/30/2020
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200423"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91641532"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Visual Studio 구독을 할당하려면 어떻게 해야 하나요?
 
@@ -39,4 +39,12 @@ ms.locfileid: "84200423"
 4. [manage.visualstudio.com](https://manage.visualstudio.com)으로 돌아가서 대량 추가를 선택한 다음, 저장된 Excel 템플릿 복사본을 업로드합니다.
 5. 업로드가 성공적으로 완료되면 확인 페이지가 표시되고, 구독자 목록이 새 구독자로 채워집니다. 구독자는 전자 메일을 받게 되고, 해당 Visual Studio 구독을 즉시 사용할 수 있습니다(구독자 쪽에서 활성화할 필요가 없음).
 
-빠르고 쉽게 구독을 할당하는 방법에 대한 자세한 내용은 [Visual Studio 구독 관리자 포털에서 구독 할당](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#individual-assignments)을 참조하세요.
+Visual Studio 구독 관리자 포털에서 구독 할당에 대한 [자세한 내용을 읽고](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) 구독을 빠르고 쉽게 할당하는 방법을 알아봅니다.  GitHub Enterprise 구독이 포함된 Visual Studio를 관리하는 방법에 대해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/assign-github). 
+
+## <a name="what-is-the-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스는 무엇인가요? 
+
+GitHub Enterprise는 Visual Studio 구독과 별도로 설정 및 관리됩니다. GitHub Enterprise 구매가 포함된 Visual Studio에 따라 GitHub Enterprise 계정 설정 프로세스는 manage.visualstudio.com에서 계약을 설정하는 것과 병렬(그러나 별도로)로 시작됩니다. 이 GitHub Enterprise 계정을 설정하는 데 다소 시간이 걸릴 수 있습니다.  
+
+회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise 구독이 있는 Visual Studio가 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 이메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 해당 조직에 대한 초대를 받을 수 있습니다. 
+
+GitHub Enterprise 구독이 포함된 Visual Studio를 관리하는 방법에 대해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/assign-github). GitHub Enterprise 설정 프로세스에 대한 자세한 내용은 [구독자 설명서](https://docs.microsoft.com/visualstudio/subscriptions/access-github)를 참조하세요. 
