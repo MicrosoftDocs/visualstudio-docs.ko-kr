@@ -70,7 +70,7 @@ ms.locfileid: "90851426"
 
 - 그렇지 않다면 애플리케이션 풀을 다시 시작하고 IIS를 초기화합니다. 자세한 내용은 [IIS 구성 확인](#vxtbshttpservererrorsthingstocheck)을 참조하세요.
 
-## <a name="the-web-server-did-not-respond-in-a-timely-manner"></a><a name="webservertimeout">웹 서버가 적시에 응답하지 않습니다.</a>
+## <a name="the-web-server-did-not-respond-in-a-timely-manner"></a><a name="webservertimeout"></a>웹 서버가 적시에 응답하지 않습니다.
 
 - IIS를 초기화하고 디버깅을 다시 시도합니다. IIS 프로세스에 여러 디버거 인스턴스가 연결되었을 수 있습니다. 초기화하면 디버거 인스턴스가 종료됩니다. 자세한 내용은 [IIS 구성 확인](#vxtbshttpservererrorsthingstocheck)을 참조하세요.
 

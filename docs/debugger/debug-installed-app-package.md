@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350734"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio에서 설치된 UWP 앱 패키지 디버그
@@ -54,7 +54,7 @@ UWP 앱을 디버그하는 방법에 대한 자세한 내용은 [설치된 앱 �
 > [!NOTE]
 > Visual Studio에서 **디버그** > **프로세스에 연결**을 선택하여 실행 중인 UWP 또는 다른 앱 프로세스에 연결할 수도 있습니다. 원래 Visual Studio 프로젝트는 실행 중인 프로세스에 연결할 필요가 없지만, 앱의 기호를 로드하는 방법은 원래 코드가 없는 프로세스를 디버그할 때 상당히 유용합니다. [디버거에서 기호 파일 및 원본 파일 지정](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
 
-## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote">원격 컴퓨터 또는 디바이스에서 설치된 UWP 앱 디버그</a>
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> 원격 컴퓨터 또는 디바이스에서 설치된 UWP 앱 디버그
 
 Visual Studio는 Windows 10 디바이스 또는 원격 사후 작성자 업데이트 Windows 10 컴퓨터에서 설치된 UWP 앱을 처음 디버그할 때 대상 디바이스에 원격 디버깅 도구를 설치합니다.
 
