@@ -2,6 +2,8 @@
   href: visual-studio-graphics-diagnostics.md
 - name: Visual Studio 그래픽 진단 개요
   href: overview-of-visual-studio-graphics-diagnostics.md
+- name: Visual Studio의 DirectX12 지원
+  href: visual-studio-graphics-diagnostics-directx-12.md
 - name: Visual Studio 그래픽 진단 시작
   href: getting-started-with-visual-studio-graphics-diagnostics.md
 - name: 그래픽 정보 캡처

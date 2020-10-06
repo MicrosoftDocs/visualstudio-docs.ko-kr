@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/10/2019
-  ms.openlocfilehash: c515710fcaf45b726a80c9986d8785f8458ca59a
-  ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+  ms.openlocfilehash: 25f0b8538b17b3826a66febf34ccafe38a7996f5
+  ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/17/2020
-  ms.locfileid: "90713531"
+  ms.lasthandoff: 10/02/2020
+  ms.locfileid: "91659266"
 landingContent:
 - title: XAML에 대한 자세한 정보
   linkLists:
@@ -31,6 +31,8 @@ landingContent:
       url: designing-xaml-in-visual-studio.md
     - text: XAML 디자이너 정보
       url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+    - text: XAML 디자인 타임 데이터
+      url: xaml-designtime-data.md
 - title: XAML 디버그
   linkLists:
   - linkListType: overview
