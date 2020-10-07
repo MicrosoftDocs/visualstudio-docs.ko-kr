@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128406"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584024"
 ---
 # <a name="understanding-build-configurations"></a>빌드 구성 이해
 
 개발 프로세스 중에 빌드 종류에 따라 사용할 솔루션 및 프로젝트 속성의 다양한 구성을 저장할 수 있습니다. Mac용 Visual Studio에서 템플릿을 사용하여 만든 프로젝트에는 일반적으로 앱 디버깅과 앱 배포를 각각 지원하는 디버그 및 릴리스 구성이 포함되어 있습니다. 
 
-사용자 지정 구성을 만들려는 경우 [빌드 구성 만들기 및 편집](/visualstudio/mac/create-and-edit-configurations)을 참조하세요.
+사용자 지정 구성을 만들려는 경우 [빌드 구성 만들기 및 편집](./create-and-edit-configurations.md)을 참조하세요.
 
 >[!NOTE]
 >이 토픽은 Mac용 Visual Studio에 적용됩니다. Windows용 Visual Studio의 경우 [빌드 구성 이해](/visualstudio/ide/understanding-build-configurations)를 참조하세요.

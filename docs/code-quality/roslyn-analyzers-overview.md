@@ -12,22 +12,22 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560738"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658440"
 ---
 # <a name="overview-of-source-code-analysis"></a>소스 코드 분석 개요
 
-.NET Compiler Platform(Roslyn) 분석기는 C# 또는 Visual Basic 코드에서 스타일, 품질, 유지 관리, 디자인 및 기타 문제를 검사합니다. 이 검사 또는 분석은 모든 열려 있는 파일에서 디자인 타임에 수행됩니다. 
+.NET Compiler Platform(Roslyn) 분석기는 C# 또는 Visual Basic 코드에서 스타일, 품질, 유지 관리, 디자인 및 기타 문제를 검사합니다. 이 검사 또는 분석은 모든 열려 있는 파일에서 디자인 타임에 수행됩니다.
 
 분석기는 다음 그룹으로 나눌 수 있습니다.
 
-- [코드 스타일](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) 분석기는 Visual Studio에 기본 제공됩니다. 이러한 분석기에 대한 진단 ID 또는 코드는 IDExxxx 형식(예: IDE0067)입니다. 기본 설정은 [텍스트 편집기 옵션 페이지](../ide/code-styles-and-code-cleanup.md) 또는 [EditorConfig 파일](../ide/editorconfig-code-style-settings-reference.md)에서 구성할 수 있습니다. .NET 5.0부터 코드 스타일 분석기는 .NET SDK에 포함되며 빌드 경고 또는 오류로 엄격하게 적용될 수 있습니다. 자세한 내용은 [여기](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)를 참조하세요.
+- [코드 스타일](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) 분석기는 Visual Studio에 기본 제공됩니다. 이러한 분석기에 대한 진단 ID 또는 코드는 IDExxxx 형식(예: IDE0067)입니다. 기본 설정은 [텍스트 편집기 옵션 페이지](../ide/code-styles-and-code-cleanup.md) 또는 [EditorConfig 파일](/dotnet/fundamentals/code-analysis/code-style-rule-options)에서 구성할 수 있습니다. .NET 5.0부터 코드 스타일 분석기는 .NET SDK에 포함되며 빌드 경고 또는 오류로 엄격하게 적용될 수 있습니다. 자세한 내용은 [여기](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)를 참조하세요.
 
-- [코드 품질](code-analysis-warnings-for-managed-code-by-checkid.md) 분석기는 이제 .NET 5 SDK에 포함되고 기본적으로 사용하도록 설정되어 있습니다. 이러한 분석기에 대한 진단 ID 또는 코드는 CAxxxx 형식(예: CA1822)입니다. 자세한 내용은 [.NET 코드 품질 분석 개요](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)를 참조하세요.
+- [코드 품질](/dotnet/fundamentals/code-analysis/quality-rules/index) 분석기는 이제 .NET 5 SDK에 포함되고 기본적으로 사용하도록 설정되어 있습니다. 이러한 분석기에 대한 진단 ID 또는 코드는 CAxxxx 형식(예: CA1822)입니다. 자세한 내용은 [.NET 코드 품질 분석 개요](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)를 참조하세요.
 
 - 타사 분석기는 NuGet 패키지 또는 Visual Studio 확장으로 설치할 수 있습니다. [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)와 같은 타사 분석기.
 
@@ -58,7 +58,7 @@ ms.locfileid: "90560738"
 
 ## <a name="configure-analyzer-severity-levels"></a>분석기 심각도 수준 구성
 
-[EditorConfig 파일](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) 또는 [전구 메뉴](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)에서 분석기 규칙의 심각도, 즉 진단을 구성할 수 있습니다. 
+[EditorConfig 파일](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) 또는 [전구 메뉴](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)에서 분석기 규칙의 심각도, 즉 진단을 구성할 수 있습니다.
 
 코드를 빌드 시 검사하고 입력하는 동안 실시간으로 검사하도록 분석기를 구성할 수도 있습니다. 현재 문서에 대해서만 모든 열린 문서 또는 전체 솔루션에 대해 실행되는 라이브 코드 분석의 범위를 구성할 수 있습니다. [방법: 라이브 코드 분석의 범위를 구성합니다](./configure-live-code-analysis-scope-managed-code.md).
 

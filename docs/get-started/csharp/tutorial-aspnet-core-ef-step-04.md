@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580043"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780937"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>4단계: ASP.NET Core 앱에서 웹 API 표시
 
@@ -208,7 +208,7 @@ services.AddSwaggerGen(c =>
 // Enable middleware to serve generated Swagger as a JSON endpoint.
 app.UseSwagger();
 
-// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
 // specifying the Swagger JSON endpoint.
 app.UseSwaggerUI(c =>
 {
@@ -216,7 +216,7 @@ app.UseSwaggerUI(c =>
 });
 ```
 
-이제 앱을 빌드하고 실행할 수 있습니다. 브라우저의 주소 표시줄에서 `/swagger`로 이동합니다. 앱의 API 엔드포인트 및 모델 목록이 표시됩니다. 
+이제 앱을 빌드하고 실행할 수 있습니다. 브라우저의 주소 표시줄에서 `/swagger`로 이동합니다. 앱의 API 엔드포인트 및 모델 목록이 표시됩니다.
 
 ![Visual Studio 2019 브라우저의 Swagger 페이지](media/vs-2019/vs2019-swagger-browser.png)
 
@@ -230,5 +230,5 @@ Games 아래에서 엔드포인트를 클릭한 다음, `Try it out` 및 `Execut
 
 ## <a name="see-also"></a>참조
 
-- [Swashbuckle 및 ASP.NET Core 시작](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Swagger/OpenAPI를 사용한 ASP.NET Core 웹 API 도움말 페이지](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Swashbuckle 및 ASP.NET Core 시작](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio&preserve-view=true)
+- [Swagger/OpenAPI를 사용한 ASP.NET Core 웹 API 도움말 페이지](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2&preserve-view=true)

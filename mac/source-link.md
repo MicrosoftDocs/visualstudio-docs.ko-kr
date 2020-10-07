@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75439087"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583920"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>소스 링크를 사용하여 NuGet 패키지로 디버깅
 
@@ -38,4 +38,4 @@ Mac용 Visual Studio에서 소스 링크를 사용하도록 설정하려면 **Vi
 ## <a name="see-also"></a>참조
 
 - [소스 링크 GitHub 리포지토리](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- [.NET 설명서](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) - 소스 링크 및 패키지에 소스 링크 지원을 추가하는 방법에 대한 자세한 내용
+- [.NET 설명서](/dotnet/standard/library-guidance/sourcelink) - 소스 링크 및 패키지에 소스 링크 지원을 추가하는 방법에 대한 자세한 내용

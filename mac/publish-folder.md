@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950485"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583946"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 폴더에 게시
 
@@ -23,7 +23,7 @@ ms.locfileid: "85950485"
 ## <a name="prerequisites"></a>사전 요구 사항
 
 - .NET Core가 사용하도록 설정된 상태로 설치된 [Mac용 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019).
-- .NET Core 콘솔 또는 ASP.NET Core 프로젝트. 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- .NET Core 콘솔 또는 ASP.NET Core 프로젝트. 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](./create-new-projects.md?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>폴더에 게시
 

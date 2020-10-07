@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453695"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781051"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기
 
-Visual Studio 개발 ASP.NET Core 및 TypeScript에 대한 이 자습서에서는 간단한 웹 애플리케이션을 만들고 일부 TypeScript 코드를 추가한 다음 앱을 실행합니다. 
+Visual Studio 개발 ASP.NET Core 및 TypeScript에 대한 이 자습서에서는 간단한 웹 애플리케이션을 만들고 일부 TypeScript 코드를 추가한 다음 앱을 실행합니다.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 1. [npm 패키지 관리](../javascript/npm-package-management.md#aspnet-core-projects)의 지침에 따라 프로젝트에 `package.json` 파일을 추가합니다. 이렇게 하면 프로젝트에 npm 지원이 추가됩니다.
 
    >[!NOTE]
-   > ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
+   > ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
 
 1. 이 예제에서는 프로젝트에 jQuery에 대한 TypeScript 정의 파일을 추가합니다. *package.json* 파일에 다음을 포함합니다.
 

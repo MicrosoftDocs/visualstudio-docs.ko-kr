@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509941"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658414"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 개발자용 Visual Studio 생산성 가이드
 
@@ -101,7 +101,7 @@ EditorConfig 파일을 사용하여 코딩 규칙을 체계화하고 소스와 �
 
    ![편집기에서 코드 스타일 규칙의 심각도 수준을 직접 구성](../ide/media/configure-severity-level.png)
 
-[.NET 코딩 규칙 옵션](editorconfig-code-style-settings-reference.md) 문서를 확인합니다. 이 문서에는 전체 EditorConfig 파일 예제도 포함되어 있습니다.
+[.NET 코딩 규칙 옵션](/dotnet/fundamentals/code-analysis/code-style-rule-options) 문서를 확인합니다. 이 문서에는 전체 EditorConfig 파일 예제도 포함되어 있습니다.
 
 ::: moniker range=">=vs-2019"
 

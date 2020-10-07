@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426904"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583959"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -62,7 +62,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
    |**.NET Core 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
    |**ASP.NET Core 웹 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
    |**Azure 기능**|         |**.NET Core** 플랫폼을 선택합니다.|         |
-   |**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.|
+   |**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](./setup-vsmac-tools-unity.md)를 참조하세요.|
 
 7. 원하는 항목을 선택한 후 **설치** 단추를 누릅니다.
 8. 설치 관리자는 Mac용 Visual Studio 및 사용자가 선택한 워크로드를 다운로드하고 설치하는 동안 진행률을 표시합니다. 설치에 필요한 권한을 부여하려면 암호를 입력하라는 메시지가 표시됩니다.
@@ -75,7 +75,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 
     [![사용할 바로 가기 키 선택](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-회사 환경에 설치하는 동안 네트워크 문제가 있는 경우 [방화벽 또는 프록시 뒤에 설치](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) 지침을 검토하세요.
+회사 환경에 설치하는 동안 네트워크 문제가 있는 경우 [방화벽 또는 프록시 뒤에 설치](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) 지침을 검토하세요.
 
 [릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes)의 변경 내용에 대해 자세히 알아보세요.
 
@@ -88,7 +88,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 
 다음 위치에 액세스할 수 있도록 네트워크를 구성합니다.
 
-- [Visual Studio 엔드포인트](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Visual Studio 엔드포인트](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>다음 단계
 

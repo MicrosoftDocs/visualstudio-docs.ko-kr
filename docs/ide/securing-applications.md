@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595451"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781018"
 ---
 # <a name="secure-applications"></a>보안 애플리케이션
 
@@ -43,6 +43,6 @@ ms.locfileid: "75595451"
 - [.NET의 보안](/dotnet/standard/security/index)
 - [Azure 보안](/azure/security/)
 - [Windows 10 Mobile 보안 가이드](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova 플랫폼 보안 기능](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [ASP.NET Core 보안](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Apache Cordova 플랫폼 보안 기능](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [ASP.NET Core 보안](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows Forms 보안](/dotnet/framework/winforms/windows-forms-security)

@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038675"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583998"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -84,7 +84,7 @@ services:
    ```
    
     > [!NOTE]
-    > 프로덕션 코드의 경우 모든 요청 이후 `HttpClient`를 삭제하면 안 됩니다. 모범 사례는 [HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)을 참조하세요.
+    > 프로덕션 코드의 경우 모든 요청 이후 `HttpClient`를 삭제하면 안 됩니다. 모범 사례는 [HttpClientFactory를 사용하여 복원력 있는 HTTP 요청 구현](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)을 참조하세요.
 
 1. *Index.cshtml* 파일에 `ViewData["Message"]`를 표시할 줄을 추가하여 파일이 다음 코드와 같이 표시되도록 합니다.
 
@@ -102,7 +102,7 @@ services:
       </div>
       ```
   
-1. 프런트 엔드 및 웹 API 프로젝트 모두에서, 이 샘플 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하므로 *Startup.cs*의 `Configure` 메서드에서 [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection)에 대한 호출을 주석으로 처리합니다.
+1. 프런트 엔드 및 웹 API 프로젝트 모두에서, 이 샘플 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하므로 *Startup.cs*의 `Configure` 메서드에서 [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection)에 대한 호출을 주석으로 처리합니다.
 
       ```csharp
                   //app.UseHttpsRedirection();

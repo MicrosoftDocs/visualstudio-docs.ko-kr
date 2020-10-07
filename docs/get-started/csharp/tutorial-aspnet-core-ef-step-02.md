@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580078"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780991"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>2단계: 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -100,7 +100,7 @@ public void OnGet()
 
 `Time`에 값을 할당하는 `OnGet` 메서드에 중단점을 추가하고 이번에 애플리케이션 디버깅을 시작합니다.
 
-실행이 줄에서 중지되고 `DateTime.Today`에 날짜가 포함되지만 시간 데이터가 포함되어 있지 않기 때문에 시간은 항상 자정입니다. 
+실행이 줄에서 중지되고 `DateTime.Today`에 날짜가 포함되지만 시간 데이터가 포함되어 있지 않기 때문에 시간은 항상 자정입니다.
 
 ![브라우저의 Visual Studio 2019 ASP.NET Core 프로젝트](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>참조
 
-- [자습서: ASP.NET Core를 사용하여 Razor Pages 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [자습서: ASP.NET Core를 사용하여 Razor Pages 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

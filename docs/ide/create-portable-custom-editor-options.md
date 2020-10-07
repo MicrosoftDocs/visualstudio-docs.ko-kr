@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402259"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659253"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -68,7 +68,7 @@ Visual Studio의 편집기는 다음과 같은 [EditorConfig 속성](https://edi
 - insert\_final_newline
 - 루트
 
-EditorConfig 편집기 설정은 XML을 제외하고 Visual Studio가 지원하는 모든 언어에서 지원됩니다. 또한 EditorConfig는 C# 및 Visual Basic에 대해 [언어](../ide/editorconfig-language-conventions.md), [서식 지정](../ide/editorconfig-formatting-conventions.md), [명명](../ide/editorconfig-naming-conventions.md) 규칙을 비롯한 [코드 스타일](../ide/editorconfig-code-style-settings-reference.md) 규칙을 지원합니다.
+EditorConfig 편집기 설정은 XML을 제외하고 Visual Studio가 지원하는 모든 언어에서 지원됩니다. 또한 EditorConfig는 C# 및 Visual Basic에 대해 [언어](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [서식 지정](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules), [명명](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) 규칙을 비롯한 [코드 스타일](/dotnet/fundamentals/code-analysis/code-style-rule-options) 규칙을 지원합니다.
 
 ## <a name="add-and-remove-editorconfig-files"></a>EditorConfig 파일 추가 및 제거
 
@@ -90,7 +90,7 @@ EditorConfig 편집기 설정은 XML을 제외하고 Visual Studio가 지원하�
 
    ![Visual Studio의 EditorConfig 파일 항목 템플릿](media/editorconfig-item-templates.png)
 
-1. **editorconfig 파일(기본값)** 템플릿을 선택하여 들여쓰기 스타일 및 크기에 대한 두 가지 핵심 EditorConfig 옵션으로 미리 채워져 있는 EditorConfig 파일을 추가합니다. 또는 **editorconfig 파일(.NET)** 템플릿을 선택하여 기본 [.NET 코드 스타일, 서식 및 명명 규칙](../ide/editorconfig-code-style-settings-reference.md)으로 미리 채워져 있는 EditorConfig 파일을 추가합니다.
+1. **editorconfig 파일(기본값)** 템플릿을 선택하여 들여쓰기 스타일 및 크기에 대한 두 가지 핵심 EditorConfig 옵션으로 미리 채워져 있는 EditorConfig 파일을 추가합니다. 또는 **editorconfig 파일(.NET)** 템플릿을 선택하여 기본 [.NET 코드 스타일, 서식 및 명명 규칙](/dotnet/fundamentals/code-analysis/code-style-rule-options)으로 미리 채워져 있는 EditorConfig 파일을 추가합니다.
 
    *.editorconfig* 파일이 솔루션 탐색기에 표시되고 편집기에서 열립니다.
 
@@ -180,7 +180,7 @@ dir .editorconfig /s
 
 ## <a name="see-also"></a>참조
 
-- [.NET 코드 스타일 규칙](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET 코드 스타일 규칙](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [언어 서비스를 위한 EditorConfig 지원](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [코드 편집기의 기능](writing-code-in-the-code-and-text-editor.md)

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248694"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780945"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>5단계: Azure에 ASP.NET Core 앱 배포
 
@@ -111,4 +111,4 @@ Azure를 사용하여 앱을 호스트하는 또 다른 이점은 보안 및 규
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio를 사용하여 Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)
+- [Visual Studio를 사용하여 Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2&preserve-view=true)

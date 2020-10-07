@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580055"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780979"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
@@ -139,7 +139,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 ### <a name="about-your-solution"></a>솔루션 정보
 
-이 솔루션은 **Razor 페이지** 디자인 패턴을 따릅니다. 이는 Razor 페이지 자체 내에 모델 및 컨트롤러 코드를 포함하도록 간소화된 [MVC(Model-View-Controller)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) 디자인 패턴과 다릅니다.
+이 솔루션은 **Razor 페이지** 디자인 패턴을 따릅니다. 이는 Razor 페이지 자체 내에 모델 및 컨트롤러 코드를 포함하도록 간소화된 [MVC(Model-View-Controller)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) 디자인 패턴과 다릅니다.
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>솔루션 둘러보기
@@ -366,7 +366,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 축하합니다. 이 자습서를 마쳤습니다. C#, ASP.NET Core 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. C# 및 ASP.NET을 사용하여 웹앱 또는 웹 사이트를 만드는 방법에 대한 자세한 내용은 다음 자습서를 계속 진행합니다.
 
 > [!div class="nextstepaction"]
-> [ASP.NET Core를 사용하여 Razor 페이지 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)를 참조하세요.
+> [ASP.NET Core를 사용하여 Razor 페이지 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)를 참조하세요.
 
 ## <a name="see-also"></a>참조
 

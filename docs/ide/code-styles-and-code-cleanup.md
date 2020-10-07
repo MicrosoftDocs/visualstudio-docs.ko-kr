@@ -2,20 +2,20 @@
 title: 코드 스타일 옵션 및 코드 정리
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682684"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658388"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 
@@ -26,7 +26,7 @@ ms.locfileid: "90682684"
 
 ## <a name="code-styles-in-editorconfig-files"></a>EditorConfig의 코드 스타일
 
-[EditorConfig](create-portable-custom-editor-options.md) 파일을 프로젝트에 추가하여 .NET에 대한 [코드 스타일 설정](../ide/editorconfig-code-style-settings-reference.md)을 지정할 수 있습니다. EditorConfig 파일은 Visual Studio 개인 설정 계정이 아니라 코드베이스와 연결되어 있습니다. EditorConfig 파일의 설정은 **옵션** 대화 상자에 지정된 코드 스타일보다 우선합니다. 모든 기여자의 코딩 스타일을 리포지토리 또는 프로젝트에 적용하려면 EditorConfig 파일을 사용합니다.
+[EditorConfig](create-portable-custom-editor-options.md) 파일을 프로젝트에 추가하여 .NET에 대한 [코드 스타일 설정](/dotnet/fundamentals/code-analysis/code-style-rule-options)을 지정할 수 있습니다. EditorConfig 파일은 Visual Studio 개인 설정 계정이 아니라 코드베이스와 연결되어 있습니다. EditorConfig 파일의 설정은 **옵션** 대화 상자에 지정된 코드 스타일보다 우선합니다. 모든 기여자의 코딩 스타일을 리포지토리 또는 프로젝트에 적용하려면 EditorConfig 파일을 사용합니다.
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ C# 코드 파일의 경우 Visual Studio 2019에는 편집기 하단에 **코드
 ## <a name="see-also"></a>참고 항목
 
 - [빠른 작업](../ide/quick-actions.md)
-- [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig에 대한 .NET 코딩 규칙 설정](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [편집기 동작(Mac용 Visual Studio)](/visualstudio/mac/editor-behavior)
