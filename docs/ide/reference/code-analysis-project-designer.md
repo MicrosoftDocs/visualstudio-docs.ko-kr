@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113780"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659357"
 ---
 # <a name="code-analysis-project-designer"></a>프로젝트 디자이너, 코드 분석
 
@@ -64,6 +64,6 @@ ms.locfileid: "76113780"
 
 ## <a name="see-also"></a>참고 항목
 
-- [관리 코드 경고에 대한 코드 분석](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [관리 코드 경고에 대한 코드 분석](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [관리 코드에 대한 코드 분석 개요](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [연습: 관리 코드의 코드 오류 분석](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

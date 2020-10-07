@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ba62555f786b2280de9a07c435a3e32d5cc3e7d9
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520824"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659292"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals() 재정의
 
@@ -40,4 +40,4 @@ ms.locfileid: "85520824"
  Equals 및 같음 연산자를 재정의하는 방법에 대한 자세한 내용은 [Equals 및 같음 연산자(==) 구현 지침](/dotnet/standard/design-guidelines/equality-operators)을 참조하세요.
 
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
- Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](../code-quality/ca1815.md)를 참조하세요.
+ Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)를 참조하세요.
