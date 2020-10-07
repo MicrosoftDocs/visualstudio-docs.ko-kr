@@ -5,13 +5,13 @@
   expanded: true
   items:
     - name: Azure에 ASP.NET Core 앱 배포
-      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
+      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1&preserve-view=true
     - name: Azure에 .NET TODO 목록 웹앱 배포
-      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
+      href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet&preserve-view=true
     - name: ASP.NET Core와 함께 Visual Studio 및 Git을 사용하여 Azure에 지속적인 배포
-      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
+      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1&preserve-view=true
     - name: Azure Pipelines를 사용하여 Azure에 지속적인 배포
-      href: /azure/devops/pipelines/get-started-yaml?view=vsts
+      href: /azure/devops/pipelines/get-started-yaml?view=vsts&preserve-view=true
     - name: Azure VM에 ASP.NET 웹앱 배포
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Azure 서비스에 연결

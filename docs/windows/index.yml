@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 3b2bab0fd939f35622d040c7f986bcdddf68c408
-  ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+  ms.openlocfilehash: 83987c04a5c0545ef2b30d4bc60ad2ce1b2bd3d8
+  ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/01/2020
-  ms.locfileid: "91621765"
+  ms.lasthandoff: 10/07/2020
+  ms.locfileid: "91780923"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -151,7 +151,7 @@ additionalContent:
       - text: C++를 사용한 모바일 개발
         url: /visualstudio/cross-platform/
       - text: JavaScript를 사용한 모바일 개발
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017&preserve-view=true
         note: (Visual Studio 2017 및 2015만 해당)
     - title: 게임
       links:
