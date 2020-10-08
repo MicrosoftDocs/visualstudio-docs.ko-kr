@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985709"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830753"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
 
@@ -100,15 +100,15 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 |-------------------------------------|-----------------------------------|
 |Microsoft Access 14.0 개체 라이브러리<br /><br /> Microsoft Access 15.0 개체 라이브러리|Microsoft.Office.Interop.Access.dll|
 |Microsoft Office 14.0 Access 데이터베이스 엔진 개체 라이브러리<br /><br /> Microsoft Office 15.0 Access 데이터베이스 엔진 개체 라이브러리|Microsoft.Office.Interop.Access.Dao.dll|
-|Microsoft Excel 14.0 개체 라이브러리<br /><br /> Microsoft Excel 15.0 개체 라이브러리|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Microsoft Excel 14.0 개체 라이브러리<br /><br /> Microsoft Excel 15.0 개체 라이브러리|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Microsoft Graph 14.0 개체 라이브러리(PowerPoint, Access 및 Word에서 그래프에 사용됨)<br /><br /> Microsoft Graph 15.0 개체 라이브러리|Microsoft.Office.Interop.Graph.dll|
-|Microsoft InfoPath 2.0 형식 라이브러리(InfoPath 2007에만 해당함)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Microsoft InfoPath 2.0 형식 라이브러리(InfoPath 2007에만 해당함)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Microsoft InfoPath XML Interop 어셈블리(InfoPath 2007에만 해당함)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Microsoft Office 14.0 개체 라이브러리(Office 공유 기능)<br /><br /> Microsoft Office 15.0 개체 라이브러리(Office 공유 기능)|office.dll|
 |Microsoft Office Outlook 뷰 컨트롤(웹 페이지와 애플리케이션에서 받은 편지함에 액세스하는 데 사용할 수 있음)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Microsoft Outlook 14.0 개체 라이브러리<br /><br /> Microsoft Outlook 15.0 개체 라이브러리|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Microsoft Outlook 14.0 개체 라이브러리<br /><br /> Microsoft Outlook 15.0 개체 라이브러리|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Microsoft PowerPoint 14.0 개체 라이브러리<br /><br /> Microsoft PowerPoint 15.0 개체 라이브러리|Microsoft.Office.Interop.PowerPoint.dll|
-|Microsoft Project 14.0 개체 라이브러리<br /><br /> Microsoft Project 15.0 개체 라이브러리|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Microsoft Project 14.0 개체 라이브러리<br /><br /> Microsoft Project 15.0 개체 라이브러리|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Microsoft Publisher 14.0 개체 라이브러리<br /><br /> Microsoft Publisher 15.0 개체 라이브러리|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePoint Designer 14.0 웹 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePoint Designer 14.0 페이지 개체 참조 라이브러리|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 |Microsoft Visio 14.0 형식 라이브러리<br /><br /> Microsoft Visio 15.0 형식 라이브러리|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0 웹으로 저장 형식 라이브러리<br /><br /> Microsoft Visio 15.0 웹으로 저장 형식 라이브러리|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0 드로잉 컨트롤 형식 라이브러리<br /><br /> Microsoft Visio 15.0 드로잉 컨트롤 형식 라이브러리|Microsoft.Office.Interop.VisOcx.dll|
-|Microsoft Word 14.0 개체 라이브러리<br /><br /> Microsoft Word 15.0 개체 라이브러리|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Microsoft Word 14.0 개체 라이브러리<br /><br /> Microsoft Word 15.0 개체 라이브러리|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>바인딩 리디렉션 어셈블리
@@ -127,7 +127,7 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 
 자세한 내용은 [방법: 자동 바인딩 리디렉션 사용 및 사용 안 함](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)
