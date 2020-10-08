@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: 15b531b3c74a5ad0f18841619a0d80ea44ca913e
-  ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
+  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/21/2020
-  ms.locfileid: "86869583"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "91830691"
 landingContent:
 - title: 테스트 도구 정보
   linkLists:
@@ -58,8 +58,8 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 예비 및 수동 테스트(Azure Test Plans)
-      url: /azure/devops/test/overview?view=azure-devops
+      url: /azure/devops/test/overview?view=azure-devops&preserve-view=true
     - text: 부하 테스트(Azure Test Plans)
-      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: 지속적인 테스트(Azure Pipelines)
-      url: /azure/devops/pipelines/?view=azure-devops
+      url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true

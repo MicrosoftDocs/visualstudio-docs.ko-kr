@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250798"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780968"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>3단계: Entity Framework를 사용하여 데이터 작업
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 또한 `AppDbContext` 연결 문자열이 프로젝트의 *appsettings.json* 파일에 추가된 것을 알 수 있습니다.
 
-아직 만들어진 데이터베이스가 없으므로 지금 앱을 실행하면 실패할 수 있습니다. [Program.cs에 일부 코드를 추가](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main)하여 필요한 경우 자동으로 데이터베이스를 만들도록 앱을 구성할 수 있습니다.
+아직 만들어진 데이터베이스가 없으므로 지금 앱을 실행하면 실패할 수 있습니다. [Program.cs에 일부 코드를 추가](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main)하여 필요한 경우 자동으로 데이터베이스를 만들도록 앱을 구성할 수 있습니다.
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ EF Core 및 Visual Studio 2019를 사용하여 ASP.NET Core 앱에서 데이터 
 
 ## <a name="see-also"></a>참조
 
-- [ASP.NET Core에서 Entity Framework Core를 사용한 Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor Pages 및 EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [ASP.NET Core에서 Entity Framework Core를 사용한 Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core Razor Pages 및 EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

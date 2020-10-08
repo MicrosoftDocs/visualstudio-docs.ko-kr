@@ -1,5 +1,6 @@
 ---
 title: 그래픽 진단 개요 | Microsoft Docs
+description: Visual Studio 그래픽 진단 개요
 ms.custom: seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187921"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671408"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 개요
 Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중인 앱 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
@@ -27,6 +28,10 @@ Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제�
  그래픽 진단은 Direct3D 10 이상을 사용하는 앱을 지원하고, Direct2D를 사용하는 앱에 대해 제한된 지원을 제공합니다. 이전 버전의 Direct3D, DirectDraw 또는 다른 그래픽 API를 사용하는 응용 프로그램은 지원하지 않습니다.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 및 Direct3D 12
+> [!NOTE]
+> Visual Studio는 DirectX 12 게임용으로 Windows의 PIX를 권장합니다. [Windows의 PIX](https://aka.ms/PIXonWindows)는 DirectX 12를 완전히 지원하는 성능 조정 및 디버깅 도구입니다. [자세한 정보를 확인](visual-studio-graphics-diagnostics-directx-12.md)하거나 [여기서 다운로드](https://aka.ms/downloadPIX)하세요.
+
+
  Windows 10에서는 Direct3D 10 및 Direct3D 11과 상당히 다른 *Direct3D 12*가 도입되었습니다. 이러한 차이는 DirectX를 최신 그래픽 하드웨어에 맞게 다시 조정하고 모든 잠재력을 발휘할 수 있게 하지만 대규모 API 변경으로 인해 리소스 수명 및 경합을 관리하는 프로그래머의 책임도 커졌습니다. 차이는 있지만 Direct3D 12를 사용한 그래픽 진단은 Direct3D 11.2를 사용한 그래픽 진단과 기능 패리티를 유지합니다.
 
  Windows 10에서는 이전 버전의 Direct3D와 이러한 버전을 사용하는 게임 및 애플리케이션에 대한 지원도 유지됩니다. Visual Studio의 그래픽 진단은 Windows 10에서 Direct3D 10과 Direct3D 11을 계속 지원합니다.

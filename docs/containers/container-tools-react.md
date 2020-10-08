@@ -3,17 +3,17 @@ title: ASP.NET Core 및 React.js를 포함한 Visual Studio 컨테이너 도구
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 author: ghogen
-description: Visual Studio 컨테이너 도구 및 Windows용 Docker를 사용하는 방법 알아보기
+description: Visual Studio 컨테이너 도구 및 Docker를 사용하여 컨테이너화된 React SPA 앱을 만드는 방법을 알아봅니다.
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 45dc1f16f1655c5c738804a1c4e0093dd9c8b1f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036329"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91750760"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -31,7 +31,7 @@ Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이�
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* .NET Core 2.2를 사용하여 개발하기 위한 [.NET Core 2.2 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* .NET Core 3.1을 사용하여 개발하기 위한 [.NET Core 3.1 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 * [Node.JS](https://nodejs.org/en/download/)
 * Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
@@ -47,11 +47,11 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 1. **ASP.NET Core 웹 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다.
 1. **React.js**를 선택합니다. **Docker 지원 사용**을 선택할 수 없지만 프로젝트를 만든 후 해당 지원을 추가할 수 있으니 걱정하지 마세요.
 
-   ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs2017/new-react-project.png)
+   ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs-2017/new-react-project.png)
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가**> **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
 
-   ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker 지원 추가](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. 컨테이너 형식을 선택하고 **확인**을 클릭합니다.
 ::: moniker-end
@@ -59,11 +59,11 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 1. **ASP.NET Core 웹 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다.
 1. **React.js**를 선택하고 **만들기**를 클릭합니다. **Docker 지원 사용**을 선택할 수 없지만 나중에 해당 지원을 추가할 수 있으니 걱정하지 마세요.
 
-   ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs2019/new-react-project.png)
+   ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs-2019/new-react-project.png)
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가**> **Docker 지원**을 선택하여 프로젝트에 Dockerfile을 추가합니다.
 
-   ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Docker 지원 추가](media/container-tools-react/vs-2017/add-docker-support.png)
 
 1. 컨테이너 형식을 선택합니다.
 ::: moniker-end
@@ -84,30 +84,32 @@ RUN apt-get install -y nodejs
 이제 *Dockerfile*이 다음과 같이 표시됩니다.
 
 ```Dockerfile
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
-EXPOSE 80 
+EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
-COPY ["WebApplication37/WebApplication37.csproj", "WebApplication37/"]
-RUN dotnet restore "WebApplication37/WebApplication37.csproj"
+COPY ["WebApplication-ReactSPA/WebApplication-ReactSPA.csproj", "WebApplication-ReactSPA/"]
+RUN dotnet restore "WebApplication-ReactSPA/WebApplication-ReactSPA.csproj"
 COPY . .
-WORKDIR "/src/WebApplication37"
-RUN dotnet build "WebApplication37.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication-ReactSPA"
+RUN dotnet build "WebApplication-ReactSPA.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebApplication37.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication-ReactSPA.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
 위의 *Dockerfile*은 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 이미지를 기반으로 하며, 프로젝트를 빌드하고 컨테이너에 추가하여 기본 이미지를 수정하는 방법을 포함하고 있습니다.
@@ -155,13 +157,13 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
@@ -190,10 +192,10 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 브라우저에 앱의 홈페이지가 표시됩니다.
 
 ::: moniker range="vs-2017"
-   ![실행 중인 앱의 스크린샷](media/container-tools-react/vs2017/running-app.png)
+   ![실행 중인 앱의 스크린샷](media/container-tools-react/vs-2017/running-app.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-   ![실행 중인 앱의 스크린샷](media/container-tools-react/vs2019/running-app.png)
+   ![실행 중인 앱의 스크린샷](media/container-tools-react/vs-2019/running-app.png)
 ::: moniker-end
 
 *카운터* 페이지로 이동한 후 **증분** 단추를 클릭하여 카운터의 클라이언트 쪽 코드를 테스트합니다.
@@ -222,9 +224,11 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
 앱의 개발 및 디버그 주기가 완료되면 앱의 프로덕션 이미지를 만들 수 있습니다.
 
+:::moniker range="vs-2017"
+
 1. 구성 드롭다운을 **릴리스**로 변경하고 앱을 빌드합니다.
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
-1. 게시 대상 대화 상자에서 **컨테이너 레지스트리** 탭을 선택합니다.
+1. Publish target(게시 대상) 대화 상자에서 **컨테이너 레지스트리**를 선택합니다.
 1. **새 Azure Container Registry 만들기**를 선택하고 **게시**를 클릭합니다.
 1. **새 Azure Container Registry 만들기**에 원하는 값을 채웁니다.
 
@@ -236,11 +240,48 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
     | **[SKU](/azure/container-registry/container-registry-skus)** | 표준 | 컨테이너 레지스트리의 서비스 계층  |
     | **레지스트리 위치** | 가까운 위치 | 사용자 또는 컨테이너 레지스트리를 사용할 기타 서비스에 가까운 [지역](https://azure.microsoft.com/regions/)의 위치를 선택합니다. |
 
-    ![Visual Studio의 Azure Container Registry 만들기 대화 상자][0]
+    ![Visual Studio의 Azure Container Registry 만들기 대화 상자](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png)
 
-1. **만들기**를 클릭합니다.
+1. **만들기**를 선택합니다.
 
    ![성공적인 게시를 보여 주는 스크린샷](media/container-tools/publish-succeeded.png)
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+1. 구성 드롭다운을 **릴리스**로 변경하고 앱을 빌드합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+1. Publish target(게시 대상) 대화 상자에서 **Docker 컨테이너 레지스트리**를 선택합니다.
+
+   ![Docker 컨테이너 레지스트리 선택](media/container-tools-react/vs-2019/publish-dialog1.png)
+
+1. 다음으로, **Azure Container Registry**를 선택합니다.
+
+   ![Azure Container Registry 선택](media/container-tools-react/vs-2019/publish-dialog-acr.png)
+
+1. **새 Azure Container Registry 만들기**를 선택합니다.
+1. **새 Azure Container Registry 만들기** 화면에 원하는 값을 채웁니다.
+
+    | 설정      | 제안 값  | 설명                                |
+    | ------------ |  ------- | -------------------------------------------------- |
+    | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
+    | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |
+    | **[리소스 그룹](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  컨테이너 레지스트리를 만들 리소스 그룹의 이름입니다. **새로 만들기**를 선택하여 새 리소스 그룹을 만듭니다.|
+    | **[SKU](/azure/container-registry/container-registry-skus)** | 표준 | 컨테이너 레지스트리의 서비스 계층  |
+    | **레지스트리 위치** | 가까운 위치 | 사용자 또는 컨테이너 레지스트리를 사용할 기타 서비스에 가까운 [지역](https://azure.microsoft.com/regions/)의 위치를 선택합니다. |
+
+    ![Visual Studio의 Azure Container Registry 만들기 대화 상자](media/container-tools-react/vs-2019/azure-container-registry-details.png)
+
+1. **만들기**를 선택한 다음 **마침**을 선택합니다.
+
+   ![새 ACR 선택 또는 만들기](media/container-tools-react/vs-2019/publish-dialog2.png)
+
+   게시 프로세스가 종료되면 게시 설정을 검토하고 필요한 경우 편집하거나 **게시** 단추를 사용하여 이미지를 다시 게시할 수 있습니다.
+
+   ![성공적인 게시를 보여 주는 스크린샷](media/container-tools-react/vs-2019/publish-finished.png)
+
+   **게시** 대화 상자를 사용하여 다시 시작하려면 이 페이지에서 **삭제** 링크를 사용하여 게시 프로필을 삭제한 다음 **게시**를 다시 선택합니다.
+:::moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -252,9 +293,3 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 * [Docker 관련 Visual Studio 개발 문제 해결](troubleshooting-docker-errors.md)
 * [Visual Studio 컨테이너 도구 GitHub 리포지토리](https://github.com/Microsoft/DockerTools)
 
-::: moniker range="vs-2017"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png
-::: moniker-end
-::: moniker range=">=vs-2019"
-[0]:media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png
-::: moniker-end

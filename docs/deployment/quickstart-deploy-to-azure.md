@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d17675f5babcdade8e6f96982f175553482920a9
+ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036420"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91636831"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 

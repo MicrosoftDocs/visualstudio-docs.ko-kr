@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862490"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749507"
 ---
 # <a name="supported-visual-studio-features-preview"></a>지원되는 Visual Studio 기능(미리 보기)
 
@@ -42,15 +42,15 @@ IntelliSense, 코드 탐색, 진단 및 제안과 같은 스마트 언어 기능
 * 구문 강조
 * 요약 정보*
 * HTML, CSS, Razor 편집기* - 부분적으로 지원됩니다.
-* JavaScript 편집기* - 부분적으로 지원됩니다.
+* JavaScript 및 TypeScript 편집기* - 부분적으로 지원됩니다.
 
 아직 사용할 수 없음:
 
 * IntelliSense* - 자동 완성/멤버 목록 필터 중 일부를 사용할 수 없습니다. 조사식 창에서 가져오지 않은 형식 및 IntelliSense의 완성은 아직 사용할 수 없습니다.
-* 코드 탐색* - 대부분의 명령은 지원되지만, 구체적으로 경로 지정을 사용하는 파일에서 찾기 및 기본으로 이동은 아직 지원되지 않습니다.
+* 코드 탐색* - 대부분의 명령이 지원됩니다. 기본으로 이동 및 경로 사양이 있는 파일에서 찾기는 아직 지원되지 않습니다.
 * 요약 정보* - 요약 정보에서 색 지정은 지원되지 않습니다.
 * HTML, CSS, Razor 편집기* - 진단, IntelliSense 완성, 요약 정보, 스마트 들여쓰기. 현재 의미 체계 색 지정, 탐색 명령 등은 지원되지 않습니다.
-* JavaScript 편집기* - 스크립트 블록(예: HTML 및 CSHTML 파일의 JavaScript 콘텐츠) 및 의미 체계 강조 표시는 아직 지원되지 않습니다. 전구 기능 및 린팅의 알려진 문제입니다.
+* JavaScript 및 TypeScript 편집기* - 스크립트 블록(예: HTML 및 CSHTML 파일의 JavaScript 콘텐츠) 및 의미 체계 강조 표시는 아직 지원되지 않습니다. 전구 기능 및 린팅의 알려진 문제입니다.
 * CMake 대상 뷰
 * CMake 프로젝트 설정 편집기
 * Ctrl+F7(파일 컴파일)
@@ -65,14 +65,14 @@ IntelliSense, 코드 탐색, 진단 및 제안과 같은 스마트 언어 기능
 * 프로젝트 및 항목 템플릿
 * .NET Core 및 ASP.NET Core 프로젝트
 * C++ 콘솔 앱 - CMake 및 vcxproj가 지원됩니다.
-* Linux를 대상으로 하는 C++ 앱 - GUI 이외 항목에서 대부분 지원됩니다. WSL, 플랫폼별 IntelliSense 및 빌드를 설치하고 프로비저닝하는 기능
+* Linux를 대상으로 하는 C++ 앱 - GUI 이외 항목에서 대부분 지원됩니다. WSL, 플랫폼별 IntelliSense 및 빌드를 설치하고 프로비저닝할 수 있습니다.
 * 프로젝트 파일 편집 - 대부분 지원됩니다. 일부 완성, 구문 강조 및 고급 편집 기능이 없습니다.
 * GitHub 계정 - Codespaces를 만들고 연결하며 GitHub의 계정에 제공되는 리소스에 액세스하는 데 사용할 수 있습니다.
 * Azure CLI - 로그인한 Visual Studio ID 또는 키 집합 계정을 공유하지 않습니다. 브라우저 기반 로그인은 지원되지 않지만 `az login --use-device-code`를 사용하여 통합 터미널 내에서 인증할 수 있습니다.
 
 아직 사용할 수 없음:
 
-* UI 디자이너 - WinForms 및 WPF 디자이너
+* UI 디자이너 - WinForms, WPF 및 리소스 디자이너
 * Visual Basic 및 F# 프로젝트
 * .NET Framework 대상 프로젝트
 * Docker Compose 프로젝트

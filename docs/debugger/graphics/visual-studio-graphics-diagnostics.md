@@ -1,5 +1,6 @@
 ---
 title: 그래픽 진단 | Microsoft Docs
+description: Visual Studio 그래픽 진단을 소개합니다.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,15 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187740"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671381"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
-Visual Studio ‘그래픽 진단’은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 세트입니다. Windows PC에서 로컬로 실행 중이거나 Windows 디바이스 에뮬레이터 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
+>[!NOTE]
+> Visual Studio는 DirectX 12 게임용으로 Windows의 PIX를 권장합니다. [Windows의 PIX](https://aka.ms/PIXonWindows)는 DirectX 12를 완전히 지원하는 성능 조정 및 디버깅 도구입니다. [자세한 정보를 확인](visual-studio-graphics-diagnostics-directx-12.md)하거나 [여기서 다운로드](https://aka.ms/downloadPIX)하세요.
+
+Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중이거나 Windows 디바이스 에뮬레이터 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
 
  그래픽 진단 워크플로에서는 동작을 즉시 분석, 공유 또는 나중에 저장할 수 있도록 먼저 앱이 Direct3D를 사용하는 방법(라이브, 실행 시)에 대한 기록을 캡처합니다. 캡처 세션은 Visual Studio에서 수동으로 또는 캡처 명령줄 도구 **dxcap.exe**를 사용하여 시작 및 제어할 수 있습니다. 그래픽 진단 캡처 API를 사용하여 프로그래밍 방식으로 캡처 세션을 시작 및 제어할 수도 있습니다.
 
@@ -68,3 +72,4 @@ Visual Studio ‘그래픽 진단’은 Direct3D 앱의 렌더링 및 성능 문
 | - | - |
 | [디버거 기능 둘러보기](../debugger-feature-tour.md) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 디버깅 기능에 대해 소개합니다. |
 | [DirectX 그래픽 및 게임](/windows/win32/directx) | DirectX 그래픽 기술에 대해 설명하는 문서를 제공합니다. |
+| [Visual Studio의 DirectX 12 지원](visual-studio-graphics-diagnostics-directx-12.md) | Visual Studio의 DirectX 12 지원 알아보기 |
