@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a67a55ee5c25dc002d107815fb136420641159d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825927"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838464"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-데이터 기호 변수 분류를 검색합니다.  
+데이터 기호의 변수 분류를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,13 +35,13 @@ HRESULT get_dataKind ( 
   
 #### <a name="parameters"></a>매개 변수  
  `pRetVal`  
- [out] 값을 반환 합니다 [DataKind 열거형](../../debugger/debug-interface-access/datakind.md) 예를 들어 전역, 정적 또는 상수를 같은 데이터의 종류를 지정 하는 열거형입니다.  
+ 제한이 예를 들어 전역, 정적 또는 상수와 같은 데이터 종류를 지정 하는 [Datakind 열거형](../../debugger/debug-interface-access/datakind.md) 열거형에서 값을 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
+ 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 또는 오류 코드가 반환 됩니다.  
   
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.  
+> 반환 값은 `S_FALSE` 기호에 대해 속성을 사용할 수 없음을 의미 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
   

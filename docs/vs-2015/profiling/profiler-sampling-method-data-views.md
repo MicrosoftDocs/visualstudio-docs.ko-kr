@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a0a5664b4c22aa8a31ab4f0f620c14b4aeadc50
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442521"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838474"
 ---
 # <a name="profiler-sampling-method-data-views"></a>프로파일러 샘플링 방법 데이터 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442521"
  [모듈 뷰](../profiling/modules-view-sampling-data.md)  
  프로파일링 데이터를 모듈별로 구성하고 함수, 소스 코드 줄, 샘플이 수집될 때 실행되고 있던 명령을 나열합니다.  
   
- [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)  
+ [호출자/호출 수신자 뷰-샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)  
  선택한 함수와 해당 함수를 호출한 함수 및 선택한 함수가 호출한 함수에 대한 프로파일링 데이터를 표시합니다.  
   
  [함수 뷰](../profiling/functions-view-sampling-data.md)  
