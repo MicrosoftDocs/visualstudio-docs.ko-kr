@@ -14,12 +14,12 @@ ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff61894ce808cd33876e876c596e791a3347ab72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e63ee2970c90ffcfff5c02a384d3346b3ea6229
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817595"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862635"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator 개체가 필요합니다.
 이 아닌 형식의 개체에 대해 Enumerator. prototype. **atEnd, enumerator** . Prototype. MoveFirst 또는 **enumerator** 메서드를 호출 하려고 `Enumerator` 했습니다. 이 호출 형식의 개체는 형식 이어야 합니다 `Enumerator` . 다음은이 규칙을 위반 하는 코드의 예입니다.  
@@ -38,5 +38,5 @@ o.f();
     if(x instanceof Enumerator)  
     ```  
   
-## <a name="see-also"></a>추가 정보  
- [Enumerator 개체](../../javascript/reference/enumerator-object-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [Enumerator 개체](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Enumerator)

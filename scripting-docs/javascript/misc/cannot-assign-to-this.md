@@ -14,12 +14,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817322"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862775"
 ---
 # <a name="cannot-assign-to-this"></a>'this'에 할당할 수 없습니다.
 **이**에 값을 할당 하려고 했습니다. **this** [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 다음 중 하나를 참조 하는 키워드입니다.
@@ -39,7 +39,7 @@ ms.locfileid: "85817322"
   > [!NOTE]
   > 사용자가 **만든 변수의 이름을**지정할 수 없습니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 예약어입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [this 문](../../javascript/reference/this-statement-javascript.md)
-- [스크립트 문제 해결](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+- [this 문](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
+- [스크립트 문제 해결](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817673"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862652"
 ---
 # <a name="boolean-expected"></a>부울이 필요합니다.
 가 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우를 `Boolean` 말합니다. 이 호출 형식의 개체는 형식 이어야 합니다 `Boolean` . 예를 들면 다음과 같습니다.
@@ -34,9 +34,9 @@ o.f();
 
 - **부울** 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [Boolean 개체](../../javascript/reference/boolean-object-javascript.md)
-- [데이터 형식](../../javascript/data-types-javascript.md)
-- [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)
-- [데이터 복사, 전달 및 비교](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Boolean 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [데이터 형식](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [프로그램 흐름 제어](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [데이터 복사, 전달 및 비교](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

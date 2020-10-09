@@ -14,12 +14,12 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 969f2bcb578d74ac02a7bdaa6984de5948e49e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28531c1ac1dc73ca2bf309d412b08d23dd17bfb8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817608"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862650"
 ---
 # <a name="date-object-expected"></a>Date 개체가 필요합니다.
 이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 했습니다 .이 예제에서는 `Date` 이 호출 형식의 개체는 형식 이어야 합니다 `Date` . 예를 들면 다음과 같습니다.  
@@ -34,7 +34,7 @@ o.f();
   
 - 형식의 개체에 대해 **valueOf** 메서드를 호출 **하기만 하면 됩니다.** `Date`  
   
-## <a name="see-also"></a>추가 정보  
- [날짜 개체](../../javascript/reference/date-object-javascript.md)   
- [getDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
- [내장 개체](../../javascript/intrinsic-objects-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [날짜 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date)   
+ [getDate 메서드 (Date)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getdate)   
+ [내장 개체](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

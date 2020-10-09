@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6a77675a1cb618210d9c44104cf6397dda03c11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816828"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862572"
 ---
 # <a name="invalid-replacer-argument"></a>치환 인수가 잘못되었습니다.
 `JSON.stringify`잘못 된 인수를 사용 하 여를 호출 하려고 한 경우 `replacer`인수는 함수 또는 배열 이어야 합니다.  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>추가 정보  
- [JSON 개체](../../javascript/reference/json-object-javascript.md)   
- [JSON 함수](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)
+## <a name="see-also"></a>참고 항목  
+ [JSON 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON 함수](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript 런타임 오류](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

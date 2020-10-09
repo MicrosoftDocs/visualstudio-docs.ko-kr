@@ -14,12 +14,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09ab257e6c473e2747a24559200e7b1f432d5687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815281"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862694"
 ---
 # <a name="vbarray-expected"></a>VBArray가 필요합니다.
 Visual Basic safeArray가 아닌 개체를 제공 했습니다.  
@@ -34,6 +34,6 @@ new VBArray(safeArray);
   
 - **Vbarray 생성자에** **vbarray** 개체만 전달 하는지 확인 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)   
- [배열 사용](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [VBArray 개체](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/VBArray)   
+ [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)
