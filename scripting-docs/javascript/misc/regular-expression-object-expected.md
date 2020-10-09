@@ -14,12 +14,12 @@ ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f5816c0bf3ad7c8dbf7d394952c631923d89cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 370e5a8028bae0e60c265ba65dca12668e4b8d8c
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814631"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862063"
 ---
 # <a name="regular-expression-object-expected"></a>정규식 개체가 필요합니다.
 가 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우를 시도 `RegExp` 합니다. 이 호출 형식의 개체는 형식 이어야 합니다 `RegExp` .  
@@ -28,6 +28,6 @@ ms.locfileid: "85814631"
   
 - 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.** `RegExp`  
   
-## <a name="see-also"></a>추가 정보  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
- [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [정규식 구문 (JavaScript)](/previous-versions/1400241x(v=vs.100))

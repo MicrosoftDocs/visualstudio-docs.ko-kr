@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91e32971013d2dfcf0ee2dc901d84681522c7e89
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816126"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861658"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>조건부 컴파일이 해제되었습니다.
 먼저 조건부 컴파일을 설정 하지 않고 조건부 컴파일 변수를 사용 하려고 했습니다. 조건부 컴파일을 켜면 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 컴파일러가 @로 시작 하는 식별자를 조건부 컴파일 변수로 해석 합니다. 이렇게 하려면 다음과 같이 문을 사용 하 여 조건부 코드를 시작 합니다.  
@@ -36,9 +36,9 @@ ms.locfileid: "85816126"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>추가 정보  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
- [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on 선언문](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if 선언문](../../javascript/reference/at-if-statement-javascript.md)   
- [@set 선언문](../../javascript/reference/at-set-statement-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [조건부 컴파일 변수](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))   
+ [@cc_on 선언문](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-cc-on)   
+ [@if 선언문](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-if)   
+ [@set 선언문](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)

@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815333"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861849"
 ---
 # <a name="unexpected-quantifier-javascript"></a>예기치 않은 수량자입니다.(JavaScript)
 정규식 검색 패턴을 작성할 때 잘못 된 반복 요인이 있는 pattern 요소를 만들었습니다. 예를 들어 패턴  
@@ -47,6 +47,6 @@ ms.locfileid: "85815333"
   
 - 검색 패턴 요소에 올바른 반복 요소만 포함 되어 있는지 확인 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
- [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [정규식 구문 (JavaScript)](/previous-versions/1400241x(v=vs.100))

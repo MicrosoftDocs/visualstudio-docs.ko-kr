@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816737"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862051"
 ---
 # <a name="return-statement-outside-of-function"></a>함수 외부에 'return' 문이 있습니다.
 `return`코드의 전역 범위에서 문을 사용 했습니다. `return`문은 함수 본문 내에만 표시 되어야 합니다.  
@@ -41,7 +41,7 @@ return [ expression ];
   
 - `return`코드의 주 본문 (전역 범위)에서 문을 제거 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [return 문](../../javascript/reference/return-statement-javascript.md)   
- [Function 개체](../../javascript/reference/function-object-javascript.md)   
- [caller 속성(Function)](../../javascript/reference/caller-property-function-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [return 문](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return)   
+ [Function 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [caller 속성(Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller)

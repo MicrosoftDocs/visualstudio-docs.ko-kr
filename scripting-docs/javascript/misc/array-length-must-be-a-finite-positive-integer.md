@@ -14,12 +14,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817088"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862209"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>배열 길이는 유한 양의 정수여야 합니다.
 정수가 아닌 인수를 사용 하 여 **배열** 생성자를 호출 하 고 있습니다. 정수는 0과 양의 정수 집합으로 구성 됩니다.  
@@ -41,5 +41,5 @@ ms.locfileid: "85817088"
   
      최대 정수 값 (약 40억)이 아닌 배열의 크기에 대 한 상한이 없습니다.  
   
-## <a name="see-also"></a>추가 정보  
- [배열 사용](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

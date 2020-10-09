@@ -14,12 +14,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4afa6e3a9dc26b40ddbc8fbd2dbcedb92a74c3
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815736"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861449"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>개체에서 이 속성 또는 메서드를 지원하지 않음
 이 개체에 대해 없는 속성이나 메서드를 지정했습니다. 모든 개체에서 모든 속성과 메서드를 지원하는 것은 아닙니다.  
@@ -32,6 +32,6 @@ ms.locfileid: "85815736"
   
 - 자세한 내용은 개체 설명서를 참조하세요.  
   
-## <a name="see-also"></a>추가 정보  
- [Object 개체](../../javascript/reference/object-object-javascript.md)   
- [JavaScript 개체](../../javascript/reference/javascript-objects.md)
+## <a name="see-also"></a>참고 항목  
+ [Object 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [JavaScript 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)

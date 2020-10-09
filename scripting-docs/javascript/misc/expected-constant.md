@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816646"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861969"
 ---
 # <a name="expected-constant"></a>상수가 필요합니다.
 조건부 컴파일 테스트 문에서 (비 조건부 컴파일) 변수를 사용 하려고 했습니다. 조건부 컴파일 테스트 문은 상수로 계산 되어야 합니다.  
@@ -30,6 +30,6 @@ ms.locfileid: "85816646"
   
 - 변수를 조건부 컴파일 변수로 바꿉니다.  
   
-## <a name="see-also"></a>추가 정보  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
- [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [조건부 컴파일 변수](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

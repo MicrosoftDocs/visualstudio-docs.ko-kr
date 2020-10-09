@@ -14,12 +14,12 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64f03c48b2db8b91d368e5de6e8d24a2330ccf1b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817569"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861506"
 ---
 # <a name="expected-"></a>']'가 필요합니다.
 배열 요소에 대 한 참조를 만들었지만 오른쪽 대괄호가 포함 되지 않았습니다. 배열 요소를 참조 하는 모든 식에는 여는 대괄호와 닫는 대괄호를 모두 포함 해야 합니다.  
@@ -28,6 +28,6 @@ ms.locfileid: "85817569"
   
 - 배열 요소를 참조 하는 식에 오른쪽 괄호를 추가 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [배열 사용](../../javascript/advanced/using-arrays-javascript.md)   
- [Array 개체](../../javascript/reference/array-object-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Array 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)

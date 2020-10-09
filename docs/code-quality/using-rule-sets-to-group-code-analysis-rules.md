@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659207"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860429"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>규칙 집합을 사용 하 여 코드 분석 규칙 그룹화
 
@@ -67,6 +67,6 @@ Visual Studio에서 코드 분석을 구성 하는 경우 기본 제공 *규칙 
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

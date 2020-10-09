@@ -14,12 +14,12 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b70f42775d627e7e3683aa2cbc771f091b58e761
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816529"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861920"
 ---
 # <a name="expected-identifier-javascript"></a>식별자가 필요합니다.(JavaScript)
 필요한 컨텍스트에서 식별자 이외의 항목을 사용 했습니다. 식별자는 다음과 같을 수 있습니다.  
@@ -36,5 +36,5 @@ ms.locfileid: "85816529"
   
 - 식별자가 등호 왼쪽에 표시 되도록 식을 변경 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [배열 사용](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

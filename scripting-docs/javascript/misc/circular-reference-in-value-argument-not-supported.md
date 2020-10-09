@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817621"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862320"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>값 인수에 순환 참조를 사용하는 것은 지원되지 않습니다.
 잘못 된 값을 사용 하 여를 호출 하려고 한 경우 `JSON.stringify` `value`인수, 배열 또는 개체는 순환 참조를 포함 합니다.  
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>추가 정보  
- [JSON 개체](../../javascript/reference/json-object-javascript.md)   
- [JSON 함수](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)
+## <a name="see-also"></a>참고 항목  
+ [JSON 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON 함수](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript 런타임 오류](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

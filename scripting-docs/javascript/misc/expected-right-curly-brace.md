@@ -14,12 +14,12 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55f91202184561aff5d0865b326415b3910b99b6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817075"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862119"
 ---
 # <a name="expected-"></a>'}'가 필요합니다.
 함수 본문, 루프, 코드 블록 또는 개체 이니셜라이저의 끝을 표시 하는 오른쪽 중괄호가 포함 되어 있지 않습니다. 이 오류의 예로는 루프 본문을 왼쪽 중괄호로 표시 하는 **for** loop가 있습니다.  
@@ -28,6 +28,6 @@ ms.locfileid: "85817075"
   
 - 함수, 루프, 블록 또는 개체 이니셜라이저의 끝을 표시 하는 오른쪽 중괄호를 추가 합니다.  
   
-## <a name="see-also"></a>추가 정보  
- [Function 개체](../../javascript/reference/function-object-javascript.md)   
- [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)
+## <a name="see-also"></a>참고 항목  
+ [Function 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [프로그램 흐름 제어](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

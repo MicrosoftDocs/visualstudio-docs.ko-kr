@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254388"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862357"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 애플리케이션에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.
@@ -122,7 +122,7 @@ ms.locfileid: "71254388"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>작업 창에서 사용 하는 리소스 정리
  사용자 지정 작업창을 만든 후 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체는 VSTO 추가 기능이 실행되는 한 메모리에 유지됩니다. 사용자가 작업창의 모퉁이에 있는 **닫기** 단추 (X)를 클릭 한 후에도 개체가 메모리에 유지 됩니다.
 
- VSTO 추가 기능이 계속 실행되는 동안 작업창에서 사용하는 리소스를 정리하려면 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 또는 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 메서드를 사용합니다. 이러한 메서드는 `CustomTaskPanes` 컬렉션에서 지정된 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체를 제거하고 개체의 <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> 메서드를 호출합니다.
+ VSTO 추가 기능이 계속 실행되는 동안 작업창에서 사용하는 리소스를 정리하려면 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 또는 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 메서드를 사용합니다. 이러한 메서드는 `CustomTaskPanes` 컬렉션에서 지정된 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체를 제거하고 개체의 `Dispose` 메서드를 호출합니다.
 
  VSTO 추가 기능이 언로드되면 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에서 사용자 지정 작업창이 사용하는 리소스를 자동으로 정리합니다. <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 프로젝트의 이벤트 처리기에서 또는 메서드를 호출 하지 마십시오 `ThisAddIn_Shutdown` . `ThisAddIn_Shutdown`이 호출되기 전에 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에서 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체가 사용하는 리소스를 정리하기 때문에 이러한 메서드에서 <xref:System.ObjectDisposedException>이 발생합니다. 에 대 한 자세한 내용은 `ThisAddIn_Shutdown` [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
@@ -203,17 +203,17 @@ ms.locfileid: "71254388"
 ### <a name="powerpoint-events"></a>PowerPoint 이벤트
  PowerPoint에서 문서 창의 상태를 모니터링하기 위해 다음 이벤트를 처리할 수 있습니다.
 
-- [Microsoft. EApplication_Event. n e t. n e w 프레젠테이션](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [AfterPresentationOpen를 EApplication_Event 합니다.](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. EApplication_Event 프레젠테이션을 표시 합니다.](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. 새 프레젠테이션](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [PresentationOpen를 EApplication_Event 합니다.](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft EApplication_Event를 활성화 합니다.](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft EApplication_Event를 비활성화 합니다.](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>참고 항목
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
