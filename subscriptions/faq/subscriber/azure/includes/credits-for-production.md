@@ -8,12 +8,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_4
-ms.openlocfilehash: 54e5754d84b402b75ed9a64185e0f815529d9117
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3c8bb23e5a37aeef0580fa478495ccbe1ad63cc1
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386082"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91829111"
 ---
 ## <a name="can-i-use-my-monthly-azure-credits-to-run-production-applications"></a>월간 Azure 크레딧을 사용하여 프로덕션 애플리케이션을 실행할 수 있나요?
 
