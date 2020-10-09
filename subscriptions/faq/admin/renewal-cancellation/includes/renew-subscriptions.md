@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386142"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838439"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>내 구독을 갱신하려면 어떻게 해야 하나요?
 
@@ -22,6 +22,6 @@ ms.locfileid: "81386142"
 
 클라우드 구독: 클라우드 구독을 사용하는 경우에는 갱신할 필요가 없습니다. 취소할 때까지 자동으로 갱신됩니다.
 
-[클라우드 구독 구입](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)에 대해 자세히 알아보세요.
+[클라우드 구독 구입](../../../../vscloud-overview.md)에 대해 자세히 알아보세요.
 
 볼륨 라이선스: 볼륨 라이선스를 통해 구매한 구독을 갱신하려면 재판매인에게 문의하세요. 해당 지역의 [재판매인을 확인](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)합니다.

@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509746"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860535"
 landingContent:
 - title: Azure App Service에 배포
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Visual Studio의 컨테이너 도구
       url: ../containers/overview.md
     - text: Kubernetes 도구
-      url: ../containers/tutorial-kubernetes-tools.md
+      url: ../containers/bridge-to-kubernetes.md
 - title: Azure 서비스 디버그 및 성능 분석
   linkLists:
   - linkListType: tutorial
@@ -99,7 +99,7 @@ landingContent:
       url: vs-azure-tools-publishing-a-cloud-service.md
     - text: Azure에서 실행 중인 클라우드 서비스 및 가상 머신 모니터링 및 진단
       url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-- title: 클라우드 탐색기
+- title: Cloud Explorer
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -107,7 +107,7 @@ landingContent:
       url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - text: Visual Studio에서 Virtual Machines에 액세스
       url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-- title: 기타 리소스
+- title: 관련 자료
   linkLists:
   - linkListType: how-to-guide
     links:

@@ -16,11 +16,11 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+          - href: /samples/xamarin/xamarin-forms-samples/todo/
             html: 이 샘플은 로컬 SQLite 데이터베이스에서 데이터가 저장되고 액세스되는 Todo 목록 애플리케이션을 보여주며 Xamarin.Forms를 사용하여 빌드됩니다.
             image:
               src: ../media/samples/todo.png
-              href: 'https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/todo/'
+              href: /samples/xamarin/xamarin-forms-samples/todo/
             title: Todo
           - href: 'https://github.com/xamarinhq/app-myshoppe'
             html: '영업 사원이 판매 실적을 추적하고, 잠재 고객을 관리하고, 해당 연락처를 보고, 주문을 관리하고, 제품 카탈로그를 찾을 수 있도록 하는 데모 앱입니다.'
@@ -40,23 +40,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+          - href: /samples/xamarin/monodroid-samples/android50-googleio2014master/
             html: 이 샘플은 Android Lollipop에 도입된 새로운 재질 디자인 API를 보여줍니다.
             image:
               src: ../media/samples/material-design.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/android50-googleio2014master/'
+              href: /samples/xamarin/monodroid-samples/android50-googleio2014master/
             title: 재질 디자인
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+          - href: /samples/xamarin/monodroid-samples/googleplayservices/
             html: 이 솔루션에서는 Xamarin Google Play 서비스 NuGet을 사용하여 몇 가지 지도 API 사용법을 보여줍니다.
             image:
               src: ../media/samples/gps.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/googleplayservices/'
+              href: /samples/xamarin/monodroid-samples/googleplayservices/
             title: Google Play 서비스
-          - href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+          - href: /samples/xamarin/monodroid-samples/userinterface-flashcardpager/
             html: 이 샘플에서는 ViewPager 및 PagerTabStrip을 함께 사용하여 플래시 카드에 일련의 수학 문제를 표시하는 앱을 구현하는 방법을 보여줍니다.
             image:
               src: ../media/samples/flash.png
-              href: 'https://docs.microsoft.com/samples/xamarin/monodroid-samples/userinterface-flashcardpager/'
+              href: /samples/xamarin/monodroid-samples/userinterface-flashcardpager/
             title: 플래시 카드 페이저
   - title: Xamarin.iOS
     items:
@@ -64,23 +64,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+          - href: /samples/xamarin/ios-samples/ios11-arkitplacingobjects/
             html: 감지된 표면에 개체를 배치하는 ARKit 확대된 현실 데모입니다.
             image:
               src: ../media/samples/arkit.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-arkitplacingobjects/'
+              href: /samples/xamarin/ios-samples/ios11-arkitplacingobjects/
             title: ARKit(iOS 11)
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+          - href: /samples/xamarin/ios-samples/ios11-mapkitsample/
             html: 'MapKit의 새로운 iOS 11 기능: 확대/축소 수준에 따라 표식을 그룹화하고 분할합니다.'
             image:
               src: ../media/samples/mapkit.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-mapkitsample/'
+              href: /samples/xamarin/ios-samples/ios11-mapkitsample/
             title: MapKit(iOS 11)
-          - href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+          - href: /samples/xamarin/ios-samples/ios11-coremlazuremodel/
             html: Azure의 Custom Vision Service에서 학습한 모델을 사용하는 iOS 11 비전 프레임워크 및 CoreML입니다.
             image:
               src: ../media/samples/coremlazure.png
-              href: 'https://docs.microsoft.com/samples/xamarin/ios-samples/ios11-coremlazuremodel/'
+              href: /samples/xamarin/ios-samples/ios11-coremlazuremodel/
             title: CoreML 및 Azure(iOS 11)
   - title: Xamarin.Mac
     items:
@@ -88,23 +88,23 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+          - href: /samples/xamarin/mac-samples/hello-mac/
             html: Mac 개발을 시작할 Hello World 앱입니다.
             image:
               src: ../media/samples/hellomac.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/hello-mac/'
+              href: /samples/xamarin/mac-samples/hello-mac/
             title: 'Hello, Mac'
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+          - href: /samples/xamarin/mac-samples/maccontrols/
             html: Mac 앱용 UI 컨트롤의 예제입니다.
             image:
               src: ../media/samples/controls.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/maccontrols/'
+              href: /samples/xamarin/mac-samples/maccontrols/
             title: MacControls
-          - href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+          - href: /samples/xamarin/mac-samples/macimages/
             html: Mac 앱용 UI 컨트롤의 예제입니다.
             image:
               src: ../media/samples/images.png
-              href: 'https://docs.microsoft.com/samples/xamarin/mac-samples/macimages/'
+              href: /samples/xamarin/mac-samples/macimages/
             title: MacImages
   - title: 모든 샘플
     items:
@@ -112,21 +112,21 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+          - href: /samples/browse/?products=xamarin
             html: Xamarin 샘플 앱 및 코드 데모의 전체 집합입니다.
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
+              href: /samples/browse/?products=xamarin
             title: 모든 Xamarin 샘플
-          - href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+          - href: /samples/browse/?products=aspnet-core
             html: ASP.NET Core 샘플 앱 및 코드 데모의 전체 집합입니다.
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
+              href: /samples/browse/?products=aspnet-core
             title: 모든 ASP.NET Core 샘플
-          - href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+          - href: /samples/browse/?products=dotnet-core
             html: .NET Core 샘플 앱 및 코드 데모의 전체 집합입니다. 이러한 샘플 중 일부는 Windows 관련 요구 사항이 있으므로 Mac용 Visual Studio에서 실행되지 않습니다.
             image:
               src: ../media/samples/sample-download.svg
-              href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
+              href: /samples/browse/?products=dotnet-core
             title: 모든 .NET Core 샘플

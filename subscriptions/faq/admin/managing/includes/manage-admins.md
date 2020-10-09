@@ -8,12 +8,12 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 496c8ecc16c67997de3999a48850afdcc7c1f58b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200528"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838226"
 ---
 ## <a name="how-do-i-manage-administrators"></a>관리자를 관리하려면 어떻게 해야 하나요?
 
@@ -39,4 +39,4 @@ ms.locfileid: "84200528"
 8. 창의 맨 위에 있는 역할 드롭다운을 클릭하고 아래로 스크롤하여 사용자 액세스 관리자를 선택합니다.
 9. 저장을 클릭합니다.
 
-클라우드 구독 관리에 대해 [자세히 알아보세요](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin).
+클라우드 구독 관리에 대해 [자세히 알아보세요](../../../../cloud-admin.md).

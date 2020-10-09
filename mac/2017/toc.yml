@@ -1,150 +1,150 @@
 - name: Mac용 Visual Studio
-  href: /visualstudio/mac/
+  href: ./index.yml
 - name: IDE 둘러보기
   href: ide-tour.md
 - name: 설치
   href: installation.md
   items:
     - name: 방화벽 또는 프록시에서 설치 및 사용
-      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+      href: ./install-behind-a-firewall-or-proxy-server.md
     - name: 미리 보기 릴리스 설치
-      href: /visualstudio/mac/install-preview
+      href: ./install-preview.md
     - name: 업데이트
-      href: /visualstudio/mac/update
+      href: ./update.md
     - name: Mac용 Visual Studio 2019에 대한 업데이트
-      href: /visualstudio/mac/update-vsmac-8.0
+      href: ./update-vsmac-8.0.md
     - name: 제거
-      href: /visualstudio/mac/uninstall
+      href: ./uninstall.md
 - name: 사용자 계정
-  href: /visualstudio/mac/user-accounts
+  href: ./user-accounts.md
   items:
     - name: 로그인
-      href: /visualstudio/mac/signing-in
+      href: ./signing-in.md
     - name: 구독 사용
-      href: /visualstudio/mac/enable-subscription
+      href: ./enable-subscription.md
 - name: IDE 사용자 지정
-  href: /visualstudio/mac/customizing-the-ide
+  href: ./customizing-the-ide.md
   items:
     - name: Mac용 Visual Studio 확장
-      href: /visualstudio/mac/extending-visual-studio-mac
+      href: ./extending-visual-studio-mac.md
 - name: 프로젝트 및 솔루션
-  href: /visualstudio/mac/projects-and-solutions
+  href: ./projects-and-solutions.md
   items:
     - name: 새 프로젝트 만들기
-      href: /visualstudio/mac/create-new-projects
+      href: ./create-new-projects.md
     - name: 프로젝트 항목 추가 및 제거
-      href: /visualstudio/mac/add-and-remove-project-items
+      href: ./add-and-remove-project-items.md
     - name: 솔루션 및 프로젝트 속성 관리
-      href: /visualstudio/mac/managing-solutions-and-project-properties
+      href: ./managing-solutions-and-project-properties.md
     - name: 프로젝트의 참조 관리
-      href: /visualstudio/mac/managing-references-in-a-project
+      href: ./managing-references-in-a-project.md
       items:
         - name: 연습 - 프로젝트에 NuGet 패키지 포함하기
-          href: /visualstudio/mac/nuget-walkthrough
+          href: ./nuget-walkthrough.md
     - name: 앱 리소스 관리
-      href: /visualstudio/mac/managing-app-resources
+      href: ./managing-app-resources.md
     - name: '방법: 여러 솔루션 또는 인스턴스 열기'
-      href: /visualstudio/mac/open-multiple-solutions
+      href: ./open-multiple-solutions.md
 - name: 소스 편집기
-  href: /visualstudio/mac/source-editor
+  href: ./source-editor.md
   items:
     - name: 리팩터링
-      href: /visualstudio/mac/refactoring
+      href: ./refactoring.md
     - name: 주석
-      href: /visualstudio/mac/comments
+      href: ./comments.md
     - name: 편집기 동작
-      href: /visualstudio/mac/editor-behavior
+      href: ./editor-behavior.md
     - name: 작업 주석
-      href: /visualstudio/mac/task-comments
+      href: ./task-comments.md
     - name: 코드 조각
-      href: /visualstudio/mac/snippets
+      href: ./snippets.md
     - name: 블록 선택
-      href: /visualstudio/mac/block-selection
+      href: ./block-selection.md
     - name: 편집기 테마
-      href: /visualstudio/mac/editor-themes
+      href: ./editor-themes.md
     - name: EditorConfig
-      href: /visualstudio/mac/editorconfig
+      href: ./editorconfig.md
     - name: 일반적인 바로 가기 키
-      href: /visualstudio/mac/keyboard-shortcuts
+      href: ./keyboard-shortcuts.md
 - name: 디버깅
-  href: /visualstudio/mac/debugging
+  href: ./debugging.md
   items:
     - name: 데이터 시각화
-      href: /visualstudio/mac/data-visualizations
+      href: ./data-visualizations.md
 - name: 컴파일 및 빌드
-  href: /visualstudio/mac/compiling-and-building
+  href: ./compiling-and-building.md
   items:
     - name: 프로젝트와 솔루션 빌드 및 정리
-      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+      href: ./building-and-cleaning-projects-and-solutions.md
     - name: 빌드 작업
-      href: /visualstudio/mac/build-actions
+      href: ./build-actions.md
     - name: 빌드 시스템 사용자 지정
-      href: /visualstudio/mac/customizing-build-system
+      href: ./customizing-build-system.md
     - name: 구성
-      href: /visualstudio/mac/configurations
+      href: ./configurations.md
       items:
         - name: 구성 만들기 및 편집
-          href: /visualstudio/mac/create-and-edit-configurations
+          href: ./create-and-edit-configurations.md
 - name: 버전 제어
-  href: /visualstudio/mac/version-control
+  href: ./version-control.md
   items:
     - name: TF 버전 제어
-      href: /visualstudio/mac/tf-version-control
+      href: ./tf-version-control.md
     - name: Git 리포지토리 설정
-      href: /visualstudio/mac/set-up-git-repository
+      href: ./set-up-git-repository.md
     - name: Git 작업
-      href: /visualstudio/mac/working-with-git
+      href: ./working-with-git.md
     - name: Subversion 리포지토리 설정
-      href: /visualstudio/mac/set-up-subversion-repository
+      href: ./set-up-subversion-repository.md
     - name: Subversion 작업
-      href: /visualstudio/mac/working-with-subversion
+      href: ./working-with-subversion.md
 - name: 웹앱 배포
-  href: /visualstudio/mac/web-app-deployment
+  href: ./web-app-deployment.md
   items:
     - name: Azure App Service에 게시
-      href: /visualstudio/mac/publish-app-svc
+      href: ./publish-app-svc.md
     - name: 폴더에 게시
-      href: /visualstudio/mac/publish-folder
+      href: ./publish-folder.md
 - name: 작업
-  href: /visualstudio/mac/workloads
+  href: ./workloads.md
   items:
     - name: ASP.NET Core
-      href: /visualstudio/mac/asp-net-core
+      href: ./asp-net-core.md
       items:
         - name: Razor
-          href: /visualstudio/mac/razor
+          href: ./razor.md
         - name: Javascript
-          href: /visualstudio/mac/javascript
+          href: ./javascript.md
     - name: Azure
-      href: /visualstudio/mac/azure-workload
+      href: ./azure-workload.md
       items:
         - name: Azure Functions 소개
-          href: /visualstudio/mac/azure-functions
+          href: ./azure-functions.md
         - name: '자습서: Azure Functions'
-          href: /visualstudio/mac/azure-functions-lab
+          href: ./azure-functions-lab.md
         - name: 연결된 서비스
-          href: /visualstudio/mac/connected-services
+          href: ./connected-services.md
     - name: Unity 게임 개발
-      href: /visualstudio/mac/unity-tools
+      href: ./unity-tools.md
       items:
         - name: 설정
-          href: /visualstudio/mac/setup-vsmac-tools-unity
+          href: ./setup-vsmac-tools-unity.md
         - name: Unity 도구 사용
-          href: /visualstudio/mac/using-vsmac-tools-unity
+          href: ./using-vsmac-tools-unity.md
         - name: Unity에서 .NET 4.x 사용
           href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
         - name: 변경 로그
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
     - name: Xamarin을 사용한 모바일 앱
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: 액세스 가능성
-  href: /visualstudio/mac/accessibility
+  href: ./accessibility.md
 - name: 문제 해결
-  href: /visualstudio/mac/troubleshooting
+  href: ./troubleshooting.md
   items:
     - name: Visual Studio 사용자 환경 개선 프로그램
-      href: /visualstudio/mac/visual-studio-experience-improvement-program
+      href: ./visual-studio-experience-improvement-program.md
     - name: 문제 보고
-      href: /visualstudio/mac/report-a-problem
+      href: ./report-a-problem.md
     - name: '문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.'
       href: updater-troubleshooting.md

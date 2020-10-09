@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91644067"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838326"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>내 혜택을 사용하려면 어떻게 해야 하나요?
 
@@ -20,7 +20,7 @@ ms.locfileid: "91644067"
 
 구독자 포털에서 사용할 수 있는 각 혜택과 함께 혜택을 활성화하는 단계, 혜택을 포함하는 구독 등의 정보가 포함된 문서를 제공합니다.
 
-[자세한 정보](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions)는 설명서를 확인하세요. 왼쪽 탐색 창에서 ‘구독’을 클릭하고 ‘혜택’을 선택하면 됩니다.
+[자세한 정보](../../../../whats-new-in-subscriptions.md)는 설명서를 확인하세요. 왼쪽 탐색 창에서 ‘구독’을 클릭하고 ‘혜택’을 선택하면 됩니다.
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스가 포함된 Visual Studio란? 
 
@@ -36,4 +36,4 @@ GitHub 조직 관리자로부터 초대를 받으면 GitHub에서 이메일을 �
 
 GitHub 조직 초대를 수락하면 <https://my.visualstudio.com/benefits>의 혜택 타일 모양이 "보류 중"에서 "활성화됨"으로 변경되며, 이제 GitHub Enterprise 사용을 시작할 수 있습니다. 
 
-GitHub Enterprise 설정 프로세스에 대해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md). 
+GitHub Enterprise 설정 프로세스에 대해 [자세히 알아봅니다](../../../../access-github.md). 
