@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587084"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927980"
 ---
 # <a name="use-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
 
@@ -82,9 +82,9 @@ ms.locfileid: "75587084"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>코드 메트릭 결과를 기준으로 작업 항목 만들기
 
-**코드 메트릭 결과** 창에서 결과를 기반으로 하는 [Azure Boards](/azure/devops/boards/index?view=vsts) 작업 항목을 만들 수 있습니다. 작업 항목을 만들 때 Visual Studio는 자동으로 **제목** 필드에 제목을 입력 하 고 **기록** 탭에 코드 메트릭 데이터를 입력 합니다.
+**코드 메트릭 결과** 창에서 결과를 기반으로 하는 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) 작업 항목을 만들 수 있습니다. 작업 항목을 만들 때 Visual Studio는 자동으로 **제목** 필드에 제목을 입력 하 고 **기록** 탭에 코드 메트릭 데이터를 입력 합니다.
 
-작업 항목을 Azure Boards 하는 방법에 대 한 자세한 내용은 [작업 항목](/azure/devops/boards/work-items/index?view=vsts)을 참조 하세요.
+작업 항목을 Azure Boards 하는 방법에 대 한 자세한 내용은 [작업 항목](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)을 참조 하세요.
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>결과를 기준으로 작업 항목을 만들려면
 
@@ -106,7 +106,7 @@ ms.locfileid: "75587084"
 
 4. **파일** 메뉴에서 **모두 저장** 을 클릭 하 여 작업 항목을 저장 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
 - [방법: 코드 메트릭 데이터 생성](../code-quality/how-to-generate-code-metrics-data.md)

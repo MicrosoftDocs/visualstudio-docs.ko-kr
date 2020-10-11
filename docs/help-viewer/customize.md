@@ -1,5 +1,6 @@
 ---
 title: 도움말 뷰어 사용자 지정
+description: 도움말 뷰어를 사용자 지정 하는 방법을 이해 합니다. 레이아웃, 글꼴 크기, 최대 결과 수 및 영어 콘텐츠를 포함할지 여부를 구성 합니다.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284974"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879036"
 ---
 # <a name="customize-the-help-viewer"></a>도움말 뷰어 사용자 지정
 글꼴 크기, 최대 결과 수 및 영어 콘텐츠 포함 여부 등의 다른 옵션은 물론, 도움말 뷰어 창의 레이아웃을 사용자 지정할 수 있습니다.
@@ -45,6 +46,6 @@ ms.locfileid: "85284974"
 |**즐겨찾기** 창에 나타나는 최대 기록 항목 수를 변경합니다.|**저장되는 최대 기록 항목** 목록에서 값을 선택합니다.|
 |영어 이외의 제품 버전에 대한 콘텐츠를 볼 때 영어 콘텐츠를 포함 또는 제외합니다.|**모든 탐색 탭과 F1 요청에 영어 콘텐츠 포함** 확인란을 선택하거나 선택 취소합니다. **주의:** 또한, 이 기능은 **콘텐츠 관리** 탭에서 영어 콘텐츠를 다운로드할 수 있는지 여부를 제어하기도 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

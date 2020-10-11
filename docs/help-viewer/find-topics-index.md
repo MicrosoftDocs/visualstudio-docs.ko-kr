@@ -1,5 +1,6 @@
 ---
 title: 도움말 뷰어 인덱스 사용
+description: 설치 된 콘텐츠의 항목과 연결 된 키워드 목록을 포함 하는 Microsoft 도움말 뷰어 인덱스를 사용 하 여 항목을 찾습니다.
 ms.date: 11/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284960"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879023"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>도움말 뷰어 인덱스를 사용하여 항목 찾기
 
@@ -77,7 +78,7 @@ ms.locfileid: "85284960"
 
     예를 들어 “빌드”라는 용어를 입력한 경우 대신 “만들기”를 입력해 보세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [방법: TOC에서 항목 찾기](../help-viewer/find-topics-toc.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

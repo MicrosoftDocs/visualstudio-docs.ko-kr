@@ -1,5 +1,6 @@
 ---
 title: 검색 식의 논리 연산자 (도움말 뷰어)
+description: 논리 연산자 및 고급 검색 연산자를 사용 하 여 Microsoft 도움말 뷰어 검색 식을 구체화 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038636"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878932"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>검색 식의 논리 및 고급 연산자
 
@@ -67,7 +68,7 @@ ms.locfileid: "90038636"
 > [!NOTE]
 > `code:` 연산자는 일반적으로 코드로 표시되는 콘텐츠와는 반대로, 프로그래밍 언어 레이블로 표시되는 콘텐츠만 찾습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 항목 검색](../help-viewer/find-topics.md)
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

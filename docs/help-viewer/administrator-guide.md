@@ -1,5 +1,6 @@
 ---
 title: 도움말 뷰어 관리자 가이드
+description: Microsoft 도움말 뷰어 관리자 가이드를 참조 하세요. 인터넷에서 로컬 도움말 콘텐츠를 배포 하거나 클라이언트 컴퓨터에 사전 설치 된 로컬 도움말 콘텐츠를 배포 합니다.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825120"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878893"
 ---
 # <a name="help-viewer-administrator-guide"></a>도움말 뷰어 관리자 가이드
 
@@ -53,7 +54,7 @@ ms.locfileid: "67825120"
 
 - 도움말에 대한 기본 원본은 여전히 온라인입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예제에서는 클라이언트 컴퓨터에 Visual Studio에 대한 영어 콘텐츠를 설치합니다.
 
@@ -124,7 +125,7 @@ ms.locfileid: "67825120"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     예: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>콘텐츠 배포
 
@@ -142,7 +143,7 @@ ms.locfileid: "67825120"
 
 3. 도움말 콘텐츠를 설치 하려는 로컬 컴퓨터에서 *.bat* 파일을 실행 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [도움말 콘텐츠 관리자에 대 한 명령줄 인수](../help-viewer/command-line-arguments.md)
 - [도움말 콘텐츠 관리자 재정의](../help-viewer/behavior-overrides.md)

@@ -16,9 +16,9 @@
             - name: 코드 품질
               items:
                 - name: 코드 품질 옵션
-                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
                 - name: 코드 품질에 EditorConfig 파일 사용
-                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: 코드 스타일
               items:
                 - name: 코드 스타일 기본 설정
@@ -27,7 +27,7 @@
                   displayName: Configure code style analyzers
                   href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
                 - name: 규칙 옵션
-                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: 라이브 코드 분석 구성
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 수동으로 코드 분석 실행

@@ -1,5 +1,6 @@
 ---
 title: 로컬 도움말 설명서 설치
+description: Microsoft 도움말 뷰어를 사용 하 여 로컬 도움말 설명서를 설치 하 고 관리 합니다. 컴퓨터에 설치 된 도움말 콘텐츠를 추가, 제거, 업데이트 및 이동 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284908"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879101"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 
@@ -129,6 +130,6 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 3. 콘텐츠가 이동되면 **닫기** 단추를 선택합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

@@ -1,5 +1,6 @@
 ---
 title: 오프라인 도움말 설치
+description: 오프 라인 도움말을 읽으려면 Microsoft 도움말 뷰어를 설치 하는 방법을 참조 하세요. Visual Studio 및 SQL Server와 같은 여러 제품은 도움말 뷰어를 사용 하 여 도움말 콘텐츠를 제공 합니다.
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0161cafe9f9c09f11774da7d6e3e449a9ac4d068
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284947"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878984"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft 도움말 뷰어 설치
 
@@ -43,7 +44,7 @@ Microsoft 도움말 뷰어를 쉽게 설치하는 다른 방법은 검색 상자
 
    ![설치 단추](media/installation/install.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)
 - [SQL Server에 대 한 도움말 뷰어 및 오프 라인 콘텐츠](/sql/sql-server/sql-server-help-installation)

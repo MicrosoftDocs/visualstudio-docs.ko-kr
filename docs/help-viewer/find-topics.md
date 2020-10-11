@@ -1,5 +1,6 @@
 ---
 title: 항목 검색(도움말 뷰어)
+description: Microsoft 도움말 뷰어에서 항목을 검색 하는 방법에 대해 알아봅니다. 와일드 카드 식, 논리 연산자 및 고급 검색 연산자를 사용 하 여 검색을 사용자 지정 합니다.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284921"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878997"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
 
@@ -76,7 +77,7 @@ ms.locfileid: "85284921"
 
 자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [논리 및 고급 운영자](../help-viewer/logical-operators-search-expressions.md)
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)

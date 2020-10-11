@@ -1,5 +1,6 @@
 ---
 title: 오프라인 도움말 설명서
+description: Microsoft 도움말 뷰어를 사용 하 여 Visual Studio 및 .NET과 같은 다양 한 제품 및 기술에 대 한 오프 라인 도움말 설명서를 설치 하 고 볼 수 있습니다.
 ms.date: 11/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824873"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878971"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft 도움말 뷰어
 
@@ -91,7 +92,7 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 
 - 오른쪽의 작은 삼각형은 항목 탭 및 **콘텐츠 관리** 탭을 비롯 한 탭의 목록을 엽니다. 탭 이름을 선택 하 여 활성 탭으로 지정할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Microsoft 도움말 뷰어 설치](../help-viewer/installation.md)
 - [도움말 뷰어 관리자 가이드](../help-viewer/administrator-guide.md)

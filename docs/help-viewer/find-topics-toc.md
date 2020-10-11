@@ -1,5 +1,6 @@
 ---
 title: 도움말 뷰어 목차 사용
+description: Microsoft 도움말 뷰어를 사용 하 여 목차 (TOC)에서 항목을 찾을 수 있습니다. TOC는 설치 된 책의 모든 항목을 포함 하는 확장 가능한 목록입니다.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284934"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879010"
 ---
 # 방법: 목차에서 항목 찾기
 
@@ -50,7 +51,7 @@ ms.locfileid: "85284934"
 
      **콘텐츠** 탭이 열리고 목차에서 항목의 위치가 표시됩니다.
 
-## 추가 정보
+## 참조
 
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)
