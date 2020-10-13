@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509837"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959824"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio에서 데이터 작업
 
@@ -113,7 +113,7 @@ ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 
 
 ## <a name="native-c"></a>네이티브 C++
 
-SQL Server에 연결 하는 c + + 응용 프로그램은 대부분의 경우 [SQL Server 용 Microsoft® ODBC 드라이버 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 를 사용 해야 합니다. 서버가 연결 된 경우 OLE DB 필요 하며 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)를 사용 합니다. [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) 또는 OLE DB 드라이버를 직접 사용 하 여 다른 데이터베이스에 액세스할 수 있습니다. ODBC는 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템은 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB은 계속 지원 되지만 새 응용 프로그램에는 권장 되지 않는 레거시 COM 데이터 액세스 기술입니다. 자세한 내용은 [Visual C++에서 데이터 액세스](/cpp/data/data-access-in-cpp)를 참조 하세요.
+SQL Server에 연결 하는 c + + 응용 프로그램은 대부분의 경우 [SQL Server 용 Microsoft® ODBC 드라이버 13.1](https://www.microsoft.com/download/details.aspx?id=53339) 를 사용 해야 합니다. 서버가 연결 된 경우 OLE DB 필요 하며 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)를 사용 합니다. [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 또는 OLE DB 드라이버를 직접 사용 하 여 다른 데이터베이스에 액세스할 수 있습니다. ODBC는 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템은 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다. OLE DB은 계속 지원 되지만 새 응용 프로그램에는 권장 되지 않는 레거시 COM 데이터 액세스 기술입니다. 자세한 내용은 [Visual C++의 데이터 액세스](/cpp/data/data-access-in-cpp)를 참조하세요.
 
 REST 서비스를 사용 하는 c + + 프로그램은 [c + + REST SDK](https://github.com/Microsoft/cpprestsdk)를 사용할 수 있습니다.
 

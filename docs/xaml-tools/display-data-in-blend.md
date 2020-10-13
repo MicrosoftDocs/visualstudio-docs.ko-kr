@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2c71ca21e0d346561435c9cbe079d17dac1d0b5
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329085"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959850"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 데이터 표시
 
@@ -35,7 +35,7 @@ ms.locfileid: "85329085"
 
 ![애플리케이션 메뉴 항목 실행 시 사용](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
-**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [처음부터 예제 데이터 만들기](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+**짧은 비디오 보기:** ![재생 아이콘](../designers/media/bldadminconsoleinitialconfigicon.PNG) [처음부터 예제 데이터 만들기](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2&preserve-view=true).
 
 ## <a name="generate-sample-data-from-a-class"></a>클래스에서 예제 데이터 생성
 
