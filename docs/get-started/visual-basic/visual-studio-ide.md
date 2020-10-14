@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312004"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928045"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE 시작 | Visual Basic
 
@@ -36,13 +36,13 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 이 이미지는 열려 있는 프로젝트와 사용할 가능성이 있는 몇 가지 주요 도구 창과 함께 Visual Studio를 보여줍니다.
 
-- ‘솔루션 탐색기’(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
+- [솔루션 탐색기](../../ide/solutions-and-projects-in-visual-studio.md) (오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
-- ‘편집기 창’(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
+- [편집기 창](../../ide/writing-code-in-the-code-and-text-editor.md) (가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
 
 - [출력 창](../../ide/reference/output-window.md)(가운데 아래) - 디버깅 및 오류 메시지, 컴파일러 경고, 게시 상태 메시지 등의 Visual Studio 알림이 표시됩니다. 각 메시지 소스에는 고유한 탭이 있습니다.
 
-- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
 ## <a name="editions"></a>버전
 
