@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74538569"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928084"
 ---
 # <a name="team-explorer-reference"></a>팀 탐색기 참조
 
@@ -26,7 +26,7 @@ ms.locfileid: "74538569"
 - [웹 포털](/azure/devops/project/navigation/index)
 - [작업 보드](/azure/devops/boards/sprints/task-board)
 
-**홈** 페이지는 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) 또는 [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview) 리포지토리에 연결되어 있는지 여부에 따라 기능이 다릅니다.
+**홈** 페이지는 [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) 또는 [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview) 리포지토리에 연결되어 있는지 여부에 따라 기능이 다릅니다.
 
 > [!TIP]
 > 두 버전 제어 시스템을 비교하려면 [프로젝트에 대한 올바른 버전 제어 선택(Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc)을 참조하세요.

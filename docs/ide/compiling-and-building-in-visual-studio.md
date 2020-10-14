@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809035"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928543"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 
@@ -32,7 +32,7 @@ Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법
 | MSBuild 명령줄| - Visual Studio를 설치하지 않고도 프로젝트를 빌드할 수 있습니다.<br />- 모든 프로젝트 형식에 대해 다중 프로세서 빌드를 실행할 수 있습니다.<br />-   빌드 시스템의 영역 대부분을 사용자 지정할 수 있습니다.|
 | Azure Pipelines | - 지속적인 통합/지속적인 업데이트 파이프라인의 일부로 빌드 프로세스를 자동화할 수 있습니다.<br />- 모든 빌드에서 자동화된 테스트를 적용할 수 있습니다.<br />- 빌드 프로세스에 사실상 제한 없는 클라우드 기반 리소스를 사용할 수 있습니다.<br />- 빌드 워크플로를 수정하고 빌드 작업을 만들어 사용자 지정 수준이 높은 작업을 수행할 수 있습니다.|
 
-이 섹션의 문서에는 IDE 기반 빌드 프로세스에 대한 자세한 내용이 나와 있습니다. 다른 방법에 대한 자세한 내용은 [MSBuild](../msbuild/msbuild.md) 및 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 각각 참조하세요.
+이 섹션의 문서에는 IDE 기반 빌드 프로세스에 대한 자세한 내용이 나와 있습니다. 다른 방법에 대한 자세한 내용은 [MSBuild](../msbuild/msbuild.md) 및 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)를 각각 참조하세요.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 컴파일 및 빌드](/visualstudio/mac/compiling-and-building)를 참조하세요.

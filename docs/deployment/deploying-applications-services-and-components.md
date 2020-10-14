@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641666"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830767"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
@@ -50,7 +50,7 @@ ms.locfileid: "89641666"
 
 - **ASP.NET**, **ASP.NET Core**, **Python** 및 **Node.js.** : 다음 방법 중 하나를 사용하여 Azure App Service 또는 Azure App Service Linux(컨테이너 사용)에 게시합니다.
 
-  - 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)과 함께 사용합니다.
+  - 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true)과 함께 사용합니다.
 
   - 일회성(또는 수동) 배포 앱의 경우 Visual Studio의 **게시** 도구를 사용합니다.
 
@@ -107,7 +107,7 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 
 - [WiX Toolset Visual Studio 2017 확장](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)을 사용하여 MSI 기반 설치 관리자 패키지를 만들 수 있습니다. 이는 명령줄 도구 세트입니다.
 
-- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음). 
+- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음).
 
   > [!NOTE]
   > InstallShield Limited Edition은 더 이상 Visual Studio에 포함되지 않으며 Visual Studio 2017 및 이후 버전에서 지원되지 않습니다. 추후 가용성은 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)에서 확인하세요.
@@ -122,7 +122,7 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 
 ## <a name="continuous-deployment"></a>연속 배포
 
-Azure Pipelines를 사용하여 앱의 연속 배포를 사용하도록 설정할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 및 [Azure에 배포](/azure/devops/deploy-azure/index?view=vsts)를 참조하세요.
+Azure Pipelines를 사용하여 앱의 연속 배포를 사용하도록 설정할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 및 [Azure에 배포](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true)를 참조하세요.
 
 ## <a name="deploy-a-sql-database"></a>SQL 데이터베이스 배포
 

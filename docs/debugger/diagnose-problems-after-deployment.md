@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599563"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928058"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace(C#, Visual Basic)를 사용하여 배포 후의 문제 진단
 
@@ -49,7 +49,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  빌드 파이프라인을 설정하여 소스, 빌드 및 기호의 위치를 빌드 매니페스트(BuildInfo.config 파일)에 추가합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.
 
-1. [빌드 파이프라인을 편집하거나 새 빌드 파이프라인을 만듭니다.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [빌드 파이프라인을 편집하거나 새 빌드 파이프라인을 만듭니다.](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![TFS 2013의 빌드 파이프라인 보기](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
      ![빌드 파이프라인 TFS 2013에서 기호 경로 설정](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     기호에 대한 자세한 내용은 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)를 참조하세요.
+     기호에 대한 자세한 내용은 [기호 데이터 게시](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true)를 참조하세요.
 
 4. 이 MSBuild 인수를 추가하여 TFS 및 기호 위치를 빌드 매니페스트 파일에 포함합니다.
 
@@ -319,7 +319,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
    빌드 시스템( `"TeamBuild"` 또는 `"MSBuild"`) 및 다음의 필수 속성에 대한 정보입니다.
 
-  - **BuildLabel**(TeamBuild): 빌드 이름 및 번호. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대한 자세한 내용은 [빌드 번호를 사용하여 완료된 빌드에 의미 있는 이름 지정](/azure/devops/pipelines/build/options?view=vsts)을 참조하세요.
+  - **BuildLabel**(TeamBuild): 빌드 이름 및 번호. 이 레이블은 배포 이벤트의 이름으로도 사용됩니다. 빌드 번호에 대한 자세한 내용은 [빌드 번호를 사용하여 완료된 빌드에 의미 있는 이름 지정](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true)을 참조하세요.
 
   - **SymbolPath**(권장): 세미콜론으로 구분한 기호(PDB 파일) 위치 URI 목록. 이러한 URI는 URL 또는 UNC일 수 있습니다. 이 정보를 통해 Visual Studio에서는 사용자가 디버깅을 손쉽게 할 수 있도록 일치하는 기호를 쉽게 찾을 수 있습니다.
 
@@ -379,7 +379,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
      ![소스 제어에서 열기 &#45; 마이그레이션됨](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> Q: 작업 영역이란 무엇인가요?
- **A:** [작업 영역은 소스 사본을 저장](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) 하므로 작업을 체크 인하기 전에 개별적으로 개발하고 테스트할 수 있습니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.
+ **A:** [작업 영역은 소스 사본을 저장](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true) 하므로 작업을 체크 인하기 전에 개별적으로 개발하고 테스트할 수 있습니다. 발견된 솔루션 또는 프로젝트에 특별히 매핑된 작업 영역이 아직 없는 경우 Visual Studio는 사용 가능한 작업 영역을 선택하거나 기본 작업 영역 이름으로 사용자 컴퓨터 이름을 사용하는 새 작업 영역을 만들 것인지 묻는 메시지를 표시합니다.
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> Q: 신뢰할 수 없는 기호에 대한 메시지를 받는 이유는 무엇인가요?
  ![신뢰할 수 없는 기호 경로로 디버그하나요?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

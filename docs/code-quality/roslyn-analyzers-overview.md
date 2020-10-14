@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658440"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860497"
 ---
 # <a name="overview-of-source-code-analysis"></a>소스 코드 분석 개요
 
@@ -77,7 +77,7 @@ Visual Studio 확장으로 분석기를 설치하는 경우 모든 Visual Studio
 
 명령줄을 통해 또는 CI(지속적인 통합)의 일부로 빌드 시 규칙을 적용하려면 다음 옵션 중 하나를 선택할 수 있습니다.
 
-- .NET SDK에 기본적으로 분석기를 포함하는 .NET 5.0 프로젝트를 만듭니다. .NET 5.0 이상을 대상으로 하는 프로젝트의 경우 기본적으로 코드 분석을 사용하도록 설정되어 있습니다. [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 속성을 true로 설정하여 이전 버전의 .NET을 대상으로 하는 프로젝트에서 코드 분석을 사용하도록 설정할 수 있습니다.
+- .NET SDK에 기본적으로 분석기를 포함하는 .NET 5.0 프로젝트를 만듭니다. .NET 5.0 이상을 대상으로 하는 프로젝트의 경우 기본적으로 코드 분석을 사용하도록 설정되어 있습니다. [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 속성을 true로 설정하여 이전 버전의 .NET을 대상으로 하는 프로젝트에서 코드 분석을 사용하도록 설정할 수 있습니다.
 
 - 분석기를 NuGet 패키지로 설치합니다. 분석기 경고 및 오류는 분석기를 확장으로 설치하는 경우 빌드 보고서에 나타나지 않습니다.
 

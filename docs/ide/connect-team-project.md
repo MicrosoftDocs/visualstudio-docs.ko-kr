@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181055"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829910"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -45,4 +45,4 @@ ms.locfileid: "86181055"
 - [자습서: 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo.md)
 - [팀 탐색기 참조](reference/team-explorer-reference.md)
 - [프로젝트(Azure DevOps)에 연결](/azure/devops/organizations/projects/connect-to-projects)
-- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)(프로젝트 연결 문제 해결)
+- [Troubleshoot connecting to a project](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)(프로젝트 연결 문제 해결)

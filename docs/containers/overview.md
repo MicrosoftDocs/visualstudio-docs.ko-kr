@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916559"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829874"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio의 컨테이너 도구
 
@@ -29,7 +29,7 @@ Visual Studio에 컨테이너 개발용으로 포함된 도구는 쉽게 사용�
 
 Docker 지원은 ASP.NET 프로젝트, ASP.NET Core, .NET Core 및 .NET Framework 콘솔 프로젝트에서 사용할 수 있습니다.
 
-Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.  
+Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.
 
 Visual Studio 2017을 사용하면 Docker Compose 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.  [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)를 설치하는 경우 Kubernetes를 사용할 수도 있습니다.
 
@@ -51,7 +51,7 @@ Visual Studio 2017을 사용하면 Docker Compose 및 Service Fabric을 컨테�
 
 Docker 지원은 ASP.NET 프로젝트, ASP.NET Core, .NET Core 및 .NET Framework 콘솔 프로젝트에서 사용할 수 있습니다.
 
-Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.  
+Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.
 
 Visual Studio 2019를 사용하면 Docker Compose, Kubernetes 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.
 
@@ -140,11 +140,11 @@ Azure Service Fabric에 대한 자세한 내용은 [Service Fabric](/azure/servi
 
 ## <a name="continuous-delivery-and-continuous-integration-cicd"></a>지속적인 업데이트 및 연속 통합(CI/CD)
 
-Visual Studio는 Azure Pipelines와 원활하게 통합되어 서비스 코드 및 구성의 변경 사항에 대해 자동화된 연속 통합 및 지속적인 업데이트를 제공합니다. 시작하려면 [첫 번째 파이프라인 만들기](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)를 참조하세요.
+Visual Studio는 Azure Pipelines와 원활하게 통합되어 서비스 코드 및 구성의 변경 사항에 대해 자동화된 연속 통합 및 지속적인 업데이트를 제공합니다. 시작하려면 [첫 번째 파이프라인 만들기](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2&preserve-view=true)를 참조하세요.
 
 Service Fabric에 대해서는 [자습서: Deploy your ASP.NET Core app to Azure Service Fabric by using Azure DevOps Projects](/azure/devops-project/azure-devops-project-service-fabric)(Azure DevOps Projects를 사용하여 Azure Service Fabric에 ASP.NET Core 앱 배포)를 참조하세요.
 
-Kubernetes에 대해서는 [Deploy a Docker container app to Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops)(Azure Kubernetes Service에 Docker 컨테이너 앱 배포)를 참조하세요.
+Kubernetes에 대해서는 [Deploy a Docker container app to Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&preserve-view=true)(Azure Kubernetes Service에 Docker 컨테이너 앱 배포)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

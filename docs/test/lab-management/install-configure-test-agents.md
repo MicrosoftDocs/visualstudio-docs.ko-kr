@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286898"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928608"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -83,7 +83,7 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 | Agents for Visual Studio 2013에서 지원되는 시나리오 | TFS 및 Azure Test Plans의 대체 방법 |
 | - | - |
-| Visual Studio의 빌드-배포-테스트 워크플로 | 사용자는 TFS의 빌드, 배포 및 테스트 시나리오에 [빌드 파이프라인](/azure/devops/pipelines/index?view=vsts)(XAML 빌드가 아님)을 사용할 수 있습니다. |
+| Visual Studio의 빌드-배포-테스트 워크플로 | 사용자는 TFS의 빌드, 배포 및 테스트 시나리오에 [빌드 파이프라인](/azure/devops/pipelines/index?view=vsts&preserve-view=true)(XAML 빌드가 아님)을 사용할 수 있습니다. |
 | 온-프레미스 원격 컴퓨터를 사용한 부하 테스트(성능 테스트) | Test Controller 및 Test Agents 2013 업데이트 5를 사용하여 온-프레미스로 부하 테스트를 실행할 수 있습니다. |
 | 랩 환경을 사용하여 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 자동화된 테스트 원격 실행 | 지금은 이 시나리오에 대한 대체 방법이 없습니다. 빌드 및 릴리스 정의(XAML 빌드가 아님)에서 기능 테스트 실행 작업을 사용하여 테스트를 원격으로 실행하는 것이 좋습니다. |
 | Visual Studio에서 원격 테스트를 실행하는 개발자 | 더 이상 지원되지 않습니다. |

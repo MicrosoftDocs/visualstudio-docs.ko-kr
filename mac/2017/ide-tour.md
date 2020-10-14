@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a187796f4f867d397662224509f8a5f72d1cc74
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984977"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862492"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Mac용 Visual Studio 2017 둘러보기
 
@@ -68,7 +68,7 @@ Solution Pad는 솔루션의 프로젝트를 구성합니다.
 
 여기서 소스 코드, 리소스, 사용자 인터페이스, 종속성에 대한 파일이 플랫폼별 프로젝트에 구성됩니다.
 
-Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions) 문서를 참조하세요.
+Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](./projects-and-solutions.md) 문서를 참조하세요.
 
 ## <a name="assembly-references"></a>어셈블리 참조
 
@@ -80,7 +80,7 @@ Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 �
 
 ![참조 편집 대화 상자](media/ide-tour-image20.png)
 
-Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](/visualstudio/mac/managing-references-in-a-project) 문서를 참조하세요.
+Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](./managing-references-in-a-project.md) 문서를 참조하세요.
 
 ## <a name="dependencies--packages"></a>종속성/패키지
 
@@ -92,19 +92,19 @@ NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Visua
 
 ![NuGet 패키지 추가](media/ide-tour-image21.png)
 
-애플리케이션에서 NuGet 패키지를 사용하는 방법에 대한 자세한 내용은 [사용자 프로젝트에 NuGet 프로젝트 포함](/visualstudio/mac/nuget-walkthrough) 문서를 참조하세요.
+애플리케이션에서 NuGet 패키지를 사용하는 방법에 대한 자세한 내용은 [사용자 프로젝트에 NuGet 프로젝트 포함](./nuget-walkthrough.md) 문서를 참조하세요.
 
 ## <a name="refactoring"></a>리팩터링
 
-Mac용 Visual Studio에서는 코드를 리팩터링하는 두 가지 유용한 방법인 컨텍스트 작업과 소스 분석 기능을 제공합니다. 자세한 내용은 [리팩터링](/visualstudio/mac/refactoring) 문서를 참조하세요.
+Mac용 Visual Studio에서는 코드를 리팩터링하는 두 가지 유용한 방법인 컨텍스트 작업과 소스 분석 기능을 제공합니다. 자세한 내용은 [리팩터링](./refactoring.md) 문서를 참조하세요.
 
 ## <a name="debugging"></a>디버깅
 
-Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 애플리케이션에 대한 디버깅을 지원합니다. Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, IDE에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다. 디버깅에 대한 자세한 내용은 [디버깅](/visualstudio/mac/debugging) 문서를 참조하세요.
+Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 애플리케이션에 대한 디버깅을 지원합니다. Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, IDE에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다. 디버깅에 대한 자세한 내용은 [디버깅](./debugging.md) 문서를 참조하세요.
 
 디버거에는 문자열, 색, URL, 크기, 좌표, 베지어 곡선 등의 특수 형식에 대한 풍부한 시각화 도우미가 포함되어 있습니다.
 
-디버거의 데이터 시각화에 대한 자세한 내용은 [데이터 시각화](/visualstudio/mac/data-visualizations) 문서를 참조하세요.
+디버거의 데이터 시각화에 대한 자세한 내용은 [데이터 시각화](./data-visualizations.md) 문서를 참조하세요.
 
 ## <a name="version-control"></a>버전 제어
 
@@ -116,7 +116,7 @@ Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩�
 
 ![Solution Pad의 커밋되지 않은 파일](media/ide-tour-image23.png)
 
-Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](/visualstudio/mac/version-control) 문서를 참조하세요.
+Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](./version-control.md) 문서를 참조하세요.
 
 ## <a name="related-video"></a>관련 동영상
 

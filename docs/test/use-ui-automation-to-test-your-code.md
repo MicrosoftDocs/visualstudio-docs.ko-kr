@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035744"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928097"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>코딩된 UI 테스트를 사용하여 코드 테스트
 
@@ -444,7 +444,7 @@ myWinCheckBox.Checked = true;
 
 - [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)
 
-- [빌드 프로세스에서 테스트 실행](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [빌드 프로세스에서 테스트 실행](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정](/previous-versions/ee291332(v=vs.140))
 
@@ -458,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="see-also"></a>참조
 
-- [수동 테스트 기록 및 재생](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [수동 테스트 기록 및 재생](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

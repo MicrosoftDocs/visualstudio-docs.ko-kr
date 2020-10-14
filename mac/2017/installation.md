@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950620"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862432"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac용 Visual Studio 2017 설치
 
@@ -68,7 +68,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
       - 완벽한 플랫폼 간 Xamarin 앱 - **Android**, **iOS** 및 **macOS** 플랫폼을 선택합니다.
    * **.NET Core 애플리케이션** - **.NET Core** 플랫폼을 선택합니다.
    * **ASP.NET Core 웹 애플리케이션** - **.NET Core** 플랫폼을 선택합니다.
-   * **플랫폼 간 Unity 게임 개발** - Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다. Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.
+   * **플랫폼 간 Unity 게임 개발** - Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다. Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](./setup-vsmac-tools-unity.md)를 참조하세요.
 
    이 설치 화면에는 각 개별 구성 요소의 버전 및 크기가 표시됩니다. 각 구성 요소를 클릭하여 해당 구성 요소에 대한 종속성 목록을 표시하거나(Android), 다운로드한 추가 패키지를 확인하거나(.NET Core), 필요한 추가 애플리케이션을 볼 수 있습니다(iOS 및 macOS).
 
@@ -120,7 +120,7 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 앱, ASP.NET Core 웹앱, Unity 게임 개발
 
-다른 워크로드의 경우 [워크로드](/visualstudio/mac/workloads) 페이지를 참조하세요.
+다른 워크로드의 경우 [워크로드](./workloads.md) 페이지를 참조하세요.
 
 ## <a name="related-video"></a>관련 동영상
 

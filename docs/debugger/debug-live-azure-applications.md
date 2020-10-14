@@ -1,5 +1,6 @@
 ---
 title: 라이브 ASP.NET Azure 앱 디버그
+titleSuffix: Visual Studio Enterprise
 description: 스냅샷 디버거로 snappoint를 설정하고 스냅샷을 보는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 03/16/2018
@@ -12,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350669"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879088"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 라이브 ASP.NET Azure 앱 디버그
 

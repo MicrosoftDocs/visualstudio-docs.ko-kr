@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585602"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959777"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -272,7 +272,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Azure Pipelines에서 코드 검사 분석
 
-코드를 체크 인하면 테스트가 다른 팀원의 테스트와 함께 빌드 서버에서 실행됩니다. Azure Pipelines에서 코드 검사를 분석하여 전체 프로젝트에 대한 최신 검사 정보를 전체적으로 파악하는 데 유용합니다. 또한 일반적으로 개발 머신에서 실행하지 않는 자동화된 시스템 테스트와 기타 코딩된 테스트도 포함됩니다. 자세한 내용은 [빌드를 사용하여 단위 테스트 실행](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)을 참조하세요.
+코드를 체크 인하면 테스트가 다른 팀원의 테스트와 함께 빌드 서버에서 실행됩니다. Azure Pipelines에서 코드 검사를 분석하여 전체 프로젝트에 대한 최신 검사 정보를 전체적으로 파악하는 데 유용합니다. 또한 일반적으로 개발 머신에서 실행하지 않는 자동화된 시스템 테스트와 기타 코딩된 테스트도 포함됩니다. 자세한 내용은 [빌드를 사용하여 단위 테스트 실행](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)을 참조하세요.
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>명령줄에서 코드 검사 분석
 

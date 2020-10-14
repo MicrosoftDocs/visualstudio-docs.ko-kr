@@ -7,17 +7,17 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950585"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860553"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation 버전 제어에 연결
 
 > [!NOTE]
-> macOS의 가장 적합한 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 Git을 사용하는 것이 좋습니다. Git은 Mac용 Visual Studio에서 지원되고 TFS(Team Foundation Server)/Azure DevOps에서 호스트되는 리포지토리의 기본 옵션입니다. TFS/Azure DevOps와 함께 Git을 사용하는 방법을 자세히 알아보려면 [Git 리포지토리 설정](/visualstudio/mac/set-up-git-repository)을 참조하세요.
+> macOS의 가장 적합한 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 Git을 사용하는 것이 좋습니다. Git은 Mac용 Visual Studio에서 지원되고 TFS(Team Foundation Server)/Azure DevOps에서 호스트되는 리포지토리의 기본 옵션입니다. TFS/Azure DevOps와 함께 Git을 사용하는 방법을 자세히 알아보려면 [Git 리포지토리 설정](./set-up-git-repository.md)을 참조하세요.
 >
 > 이전에 Mac용 Visual Studio의 TFVC 확장 미리 보기 릴리스를 사용했다면 Mac용 Visual Studio 2019로 업그레이드할 때는 더 이상 지원되지 않습니다.
 
@@ -111,7 +111,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 ## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Team Foundation 버전 제어 확장을 사용하여 TFVC에 연결
 
 > [!NOTE]
-> macOS의 가장 적합한 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 Git을 사용하는 것이 좋습니다. Git은 Mac용 Visual Studio에서 지원되고 TFS(Team Foundation Server)/Azure DevOps에서 호스트되는 리포지토리의 기본 옵션입니다. TFS/Azure DevOps와 함께 Git을 사용하는 방법을 자세히 알아보려면 [Git 리포지토리 설정](/visualstudio/mac/set-up-git-repository)을 참조하세요.
+> macOS의 가장 적합한 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 Git을 사용하는 것이 좋습니다. Git은 Mac용 Visual Studio에서 지원되고 TFS(Team Foundation Server)/Azure DevOps에서 호스트되는 리포지토리의 기본 옵션입니다. TFS/Azure DevOps와 함께 Git을 사용하는 방법을 자세히 알아보려면 [Git 리포지토리 설정](./set-up-git-repository.md)을 참조하세요.
 >
 > 이전에 Mac용 Visual Studio의 TFVC 확장 미리 보기 릴리스를 사용했다면 Mac용 Visual Studio 2019로 업그레이드할 때는 더 이상 지원되지 않습니다.
 

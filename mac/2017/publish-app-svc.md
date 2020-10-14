@@ -12,12 +12,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 42f455c824697e0909c990932611bb440a23a2af
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: daebef8fdaa2d22fd5eef7171113354136d29e0f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950441"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861111"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 
@@ -27,7 +27,7 @@ ms.locfileid: "85950441"
 
 - ASP.NET Core가 사용하도록 설정된 상태로 설치된 [Mac용 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017).
 - Azure 구독. 아직 구독하지 않은 경우 [무료로 등록합니다](https://azure.microsoft.com/free/dotnet/). 이는 30일 동안 $200의 크레딧 및 12개월의 인기 있는 무료 서비스를 포함합니다.
-- ASP.NET Core 프로젝트 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- ASP.NET Core 프로젝트 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](./create-new-projects.md?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 

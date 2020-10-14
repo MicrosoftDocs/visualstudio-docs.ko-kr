@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249219"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959863"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
@@ -182,16 +182,16 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 3. **찾기...** 를 선택하여 **Docker 컨테이너 선택** 대화 상자를 통해 **연결 대상**을 설정합니다.
 
     Docker 컨테이너 프로세스는 로컬 또는 원격으로 디버그할 수 있습니다.
-    
+
     **Docker 컨테이너 프로세스를 로컬로 디버그하려면**
     1. **Docker CLI 호스트**를 **로컬 컴퓨터**로 설정합니다.
     1. 목록에서 연결할 실행 중인 컨테이너를 선택하고 **확인**을 누릅니다.
-    
+
     ![Docker 컨테이너 메뉴 선택](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
+
     **B. Docker 컨테이너 프로세스를 원격으로 디버그하려면**
-    
-    > [!NOTE] 
+
+    > [!NOTE]
     > Docker 컨테이너에서 실행 중인 프로세스에 원격으로 연결하는 옵션에는 두 가지가 있습니다. SSH를 사용하는 첫 번째 옵션은 로컬 컴퓨터에 Docker 도구를 설치하지 않은 경우에 적합합니다.  Docker 도구를 로컬로 설치했고 원격 요청을 허용하도록 구성된 Docker 디먼이 있는 경우 Docker 디먼을 사용하는 두 번째 옵션을 이용해 보세요.
 
     1. ***SSH를 통해 원격 컴퓨터에 연결하려면***
@@ -205,7 +205,7 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 Visual Studio에서 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")    
+    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Windows Docker 컨테이너에서 실행되는 프로세스에 연결
 
@@ -225,14 +225,14 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 
     > [!IMPORTANT]
     > 대상 프로세스는 실행 중인 Docker Windows 컨테이너와 프로세서 아키텍처가 동일해야 합니다.
-    
+
    현재는 SSH를 통해 원격 컨테이너를 대상으로 설정할 수 없고 Docker 디먼을 사용해야만 합니다.
-    
+
     ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
-    1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다. 
+    1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
 
     1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 확인을 선택합니다.
-    
+
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
     ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete-windows.png "완료된 Windows Docker 연결 메뉴")
@@ -263,7 +263,7 @@ UWP(유니버설 Windows 플랫폼) 앱과 같은 일부 앱 유형에서는 프
 |시나리오|디버그 방법|프로세스 이름|참고 사항 및 링크|
 |-|-|-|-|
 |IIS 서버의 ASP.NET 4 또는 4.5 원격 디버그|원격 도구 및 **프로세스에 연결** 사용|*w3wp.exe*|[원격 IIS 컴퓨터의 ASP.NET 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)를 참조하세요.|
-|IIS 서버의 ASP.NET Core 원격 디버그|원격 도구 및 **프로세스에 연결** 사용|*w3wp.exe* 또는 *dotnet.exe*|.NET Core 3부터 *w3wp.exe* 프로세스가 기본 [앱 내 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)에 사용됩니다. 앱 배포의 경우 [IIS에 게시](/aspnet/core/host-and-deploy/iis/)를 참조하세요. 자세한 내용은 [원격 IIS 컴퓨터의 ASP.NET Core 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)를 참조하세요.|
+|IIS 서버의 ASP.NET Core 원격 디버그|원격 도구 및 **프로세스에 연결** 사용|*w3wp.exe* 또는 *dotnet.exe*|.NET Core 3부터 *w3wp.exe* 프로세스가 기본 [앱 내 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)에 사용됩니다. 앱 배포의 경우 [IIS에 게시](/aspnet/core/host-and-deploy/iis/)를 참조하세요. 자세한 내용은 [원격 IIS 컴퓨터의 ASP.NET Core 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)를 참조하세요.|
 |지원되는 앱 형식에 대해 로컬 IIS 서버의 클라이언트 쪽 스크립트 디버그 |**프로세스에 연결** 사용|*chrome.exe*, *MicrosoftEdgeCP.exe* 또는 *iexplore.exe*|스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome의 경우 디버그 모드에서 Chrome을 실행하고(명령줄에 `chrome.exe --remote-debugging-port=9222` 입력) **연결 대상** 필드에서 **JavaScript(Chrome)** 를 선택합니다.|
 |로컬 컴퓨터에서 C#, Visual Basic 또는 C++ 앱을 디버그|표준 디버깅(**F5**) 또는 **프로세스에 연결** 을 사용|*\<appname>.exe*|대부분의 시나리오에서는 **프로세스에 연결**이 아니라 표준 디버깅을 사용합니다.|
 |Windows 데스크톱 앱 원격 디버그|원격 도구|N/A| [C# 또는 Visual Basic 앱 원격 디버그](../debugger/remote-debugging-csharp.md) 또는 [C++ 앱 원격 디버그](../debugger/remote-debugging-cpp.md)을 참조하세요.|

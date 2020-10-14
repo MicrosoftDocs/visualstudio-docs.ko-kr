@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 4fe8f7e99f950bbc7a393712d0831f5a4a229481
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: a1855b272a774f7c4bd36866555f463525075e2d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950073"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862011"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 폴더에 웹앱 게시
 
@@ -23,7 +23,7 @@ ms.locfileid: "85950073"
 ## <a name="prerequisites"></a>사전 요구 사항
 
 - ASP.NET Core가 사용하도록 설정된 상태로 설치된 [Mac용 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017).
-- ASP.NET Core 프로젝트 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- ASP.NET Core 프로젝트 아직 프로젝트가 없는 경우 [새 프로젝트를 만들 수 있습니다](./create-new-projects.md?view=vsmac-2017).
 
 ## <a name="publish-to-folder"></a>폴더에 게시
 

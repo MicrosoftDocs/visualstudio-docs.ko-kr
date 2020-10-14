@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038441"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928673"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
 *.runsettings* 파일을 사용하여 Visual Studio의 단위 테스트를 구성할 수 있습니다. 예를 들어, 테스트가 실행되는 .NET 버전, 테스트 결과 디렉터리 또는 테스트 실행 중에 수집되는 데이터를 변경할 수 있습니다. *.runsettings* 파일은 [코드 검사 분석](../test/customizing-code-coverage-analysis.md)을 사용자 지정하는 데 자주 사용됩니다.
 
-실행 설정 파일을 사용하면 Azure Test Plans 또는 TFS(Team Foundation Server)를 통해 [명령줄](vstest-console-options.md), IDE 또는 [빌드 워크플로](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)에서 실행되는 테스트를 구성할 수 있습니다.
+실행 설정 파일을 사용하면 Azure Test Plans 또는 TFS(Team Foundation Server)를 통해 [명령줄](vstest-console-options.md), IDE 또는 [빌드 워크플로](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)에서 실행되는 테스트를 구성할 수 있습니다.
 
 실행 설정 파일은 선택 사항입니다. 특별한 구성이 필요하지 않으면 *.runsettings* 파일이 필요하지 않습니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "90038441"
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [명령줄](#specify-a-run-settings-file-from-the-command-line)
-   - Azure Test Plans 또는 TFS(Team Foundation Server)를 사용하여 [워크플로를 빌드](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)합니다.
+   - Azure Test Plans 또는 TFS(Team Foundation Server)를 사용하여 [워크플로를 빌드](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)합니다.
 
 4. 사용자 지정 실행 설정을 사용하는 단위 테스트를 실행합니다.
 
@@ -83,20 +83,20 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 실행 설정 파일을 자동 검색하려면 솔루션 루트에 저장합니다.
 
 실행 설정 파일의 자동 검색을 사용하도록 설정하면 이 파일의 설정이 모든 테스트 실행에 적용됩니다. 다음 두 가지 방법을 사용하여 runsettings 파일 자동 검색을 켤 수 있습니다.
-  
+
 - **도구** > **옵션** > **테스트** > **runsettings 파일 자동 검색** 선택
 
    ![Visual Studio 2019의 runsettings 파일 자동 검색 옵션](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - **테스트** > **실행 설정 구성** > **runsettings 파일 자동 검색** 선택
-    
+
    ![Visual Studio 2019의 runsettings 파일 자동 검색 메뉴](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>실행 설정 파일 수동 선택
 
 IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 runsettings 파일 선택**을 선택한 후 *.runsettings* 파일을 선택합니다.
 
-   - 이 파일은 솔루션 루트에 있는 *.runsettings* 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.  
+   - 이 파일은 솔루션 루트에 있는 *.runsettings* 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.
    - 이 파일 선택은 로컬에서만 지속됩니다.
 
 ![Visual Studio 2019의 솔루션 전체의 runsettings 파일 선택 메뉴](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 ru
 
 - 프로젝트 수준 실행 설정은 현재 C#, VB, C++ 및 F# 프로젝트에서 지원됩니다.
 - 프로젝트에 지정된 파일이 솔루션에 지정된 다른 실행 설정 파일을 재정의합니다.
-- [이 MSBuild 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 사용하여 runsettings 파일 경로를 지정할 수 있습니다. 
+- [이 MSBuild 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 사용하여 runsettings 파일 경로를 지정할 수 있습니다.
 
 프로젝트에 대한 *.runsettings* 파일을 지정하는 예제:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||TestAdapters가 있는 디렉터리에 대한 하나 이상의 경로|
 |**TestSessionTimeout**||사용자가 지정된 시간 제한을 초과하는 테스트 세션을 종료할 수 있도록 합니다. 시간 제한을 설정하면 리소스가 효율적으로 사용되고 테스트 세션이 설정된 시간으로 제한됩니다. 이 설정은 **Visual Studio 2017 버전 15.5** 이상에서 사용할 수 있습니다.|
-|**DotnetHostPath**||testhost를 실행하는 데 사용되는 dotnet 호스트의 사용자 지정 경로를 지정합니다. dotnet/runtime 리포지토리를 빌드하는 경우와 같이 사용자 자체 dotnet을 빌드할 때 유용합니다. 이 옵션을 지정하면 testhost.exe 찾기를 건너뛰고 항상 testhost.dll을 사용합니다. 
+|**DotnetHostPath**||testhost를 실행하는 데 사용되는 dotnet 호스트의 사용자 지정 경로를 지정합니다. dotnet/runtime 리포지토리를 빌드하는 경우와 같이 사용자 자체 dotnet을 빌드할 때 유용합니다. 이 옵션을 지정하면 testhost.exe 찾기를 건너뛰고 항상 testhost.dll을 사용합니다.
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 요소(진단 데이터 어댑터)
 
@@ -231,7 +231,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 
 ### <a name="blame-data-collector"></a>원인 데이터 수집기
 
-이 옵션을 사용하여 테스트 호스트 크래시가 발생하는 문제가 있는 테스트를 격리할 수 있습니다. 수집기를 실행하면 크래시가 발생하기 전에 테스트 실행 순서를 캡처하는 *TestResults*의 출력 파일(*Sequence.xml*)이 만들어집니다. 
+이 옵션을 사용하여 테스트 호스트 크래시가 발생하는 문제가 있는 테스트를 격리할 수 있습니다. 수집기를 실행하면 크래시가 발생하기 전에 테스트 실행 순서를 캡처하는 *TestResults*의 출력 파일(*Sequence.xml*)이 만들어집니다.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ public void HomePageTest()
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -392,10 +392,10 @@ public void HomePageTest()
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -462,4 +462,4 @@ public void HomePageTest()
 
 - [테스트 실행 구성](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 테스트 작업(Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 테스트 작업(Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

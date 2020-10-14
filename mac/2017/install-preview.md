@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: 6640a03523994b845d90f45ff6323126f462068a
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: aecc309cfd9bf4af59e10cda8b33e43bb5e75d7c
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950641"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862481"
 ---
 # <a name="install-a-preview-release"></a>미리 보기 릴리스 설치
 
 > [!NOTE]
-> 이제 Mac용 Visual Studio 2019 미리 보기를 테스트 및 [설치에 사용할 수 있습니다](/visualstudio/mac/installation/?view=vsmac-2019).
+> 이제 Mac용 Visual Studio 2019 미리 보기를 테스트 및 [설치에 사용할 수 있습니다](./installation.md?view=vsmac-2019).
 
 ## <a name="install-an-update-for-visual-studio-for-mac"></a>Mac용 Visual Studio 업데이트 설치
 

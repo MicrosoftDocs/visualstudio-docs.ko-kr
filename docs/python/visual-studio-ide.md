@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801648"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928686"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 
@@ -38,7 +38,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 테스�
 - [출력 창](../ide/reference/output-window.md)(가운데 아래)은 Visual Studio가 디버깅 및 오류 메시지, 경고, 게시 상태 메시지 등과 같은 알림을 보내는 곳입니다. 각 메시지 원본에 해당하는 탭이 있습니다.
   - [Python 대화형 REPL 창](python-interactive-repl-in-visual-studio.md)이 출력 창과 동일한 영역에 나타납니다.
 
-- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [팀 탐색기](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
 
 ## <a name="editions"></a>버전
 

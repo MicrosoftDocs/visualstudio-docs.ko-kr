@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 34fd56b37113467b7cbb2dfb8ac6fdba01b79cc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543756"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830682"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service에서 Python 환경을 설정하는 방법(Windows)
 
@@ -211,4 +211,4 @@ Azure Portal을 통해 Kudu 콘솔을 사용하는 대신 `https://yoursite.scm.
 
 명령 및 인증에 대한 자세한 내용은 [Kudu 설명서](https://github.com/projectkudu/kudu/wiki/REST-API)를 참조하세요.
 
-`az webapp deployment list-publishing-profiles` 명령을 사용하여 Azure CLI를 통해 자격 증명을 볼 수 있습니다([az webapp 배포](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles) 참조). Kudu 명령을 게시하는 도우미 라이브러리도 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42)에서 사용할 수 있습니다.
+`az webapp deployment list-publishing-profiles` 명령을 사용하여 Azure CLI를 통해 자격 증명을 볼 수 있습니다([az webapp 배포](/cli/azure/webapp/deployment?view=azure-cli-latest&preserve-view=true#az-webapp-deployment-list-publishing-profiles) 참조). Kudu 명령을 게시하는 도우미 라이브러리도 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42)에서 사용할 수 있습니다.

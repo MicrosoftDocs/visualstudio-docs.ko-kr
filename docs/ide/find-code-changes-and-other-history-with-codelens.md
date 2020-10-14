@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588657"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928504"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -217,7 +217,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 1. 연결된 [단위 테스트 코드](../test/unit-test-your-code.md)가 있는 애플리케이션 코드로 이동합니다.
 
-2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 애플리케이션을 빌드합니다. 
+2. 아직 수행하지 않은 경우 CodeLens 테스트 지표를 로드하도록 애플리케이션을 빌드합니다.
 
 3. **Alt**+**3**을 눌러 코드에 대한 테스트를 검토합니다.
 
@@ -268,7 +268,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 - 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/azure/devops/server/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
 
-- DevOps 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/azure/devops/organizations/security/view-permissions?view=vsts)이 있는지 확인합니다.
+- DevOps 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true)이 있는지 확인합니다.
 
 - 단위 테스트 지표는 애플리케이션 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 애플리케이션 코드에 단위 테스트가 있지만 테스트 표시기가 나타나지 않는 경우 솔루션 빌드를 시도해 보세요(**Ctrl**+**Shift**+**B**).
 

@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288080"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928621"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -245,7 +245,7 @@ Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 
     >
     > 설치 디렉터리에 따라 다음 경로에는 추가 구성 파일의 다른 예제가 있습니다. *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
+     테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)을 참조하세요.
 
      구성 파일 설치에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/quickstart-create-a-load-test-project.md)를 참조하세요.
 
@@ -253,7 +253,7 @@ Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 
 
 13. 사용자 지정 편집기 설치에 대한 자세한 내용은 [방법: 사용자 지정 진단 데이터 어댑터 설치](../test/quickstart-create-a-load-test-project.md)를 참조하세요.
 
-14. 테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)을 참조하세요.
+14. 테스트를 실행할 때 환경을 사용하도록 테스트 설정을 구성하는 방법에 대한 자세한 내용은 [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)을 참조하세요.
 
 15. 진단 데이터 어댑터를 선택하려면 먼저 기존 테스트 설정을 선택하거나 Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 새 항목을 만들어야 합니다. 어댑터는 클래스에 할당된 이름으로 테스트 설정의 **데이터 및 진단** 탭에 표시됩니다.
 
@@ -273,6 +273,6 @@ Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
-- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [방법: 진단 데이터 어댑터 데이터용 사용자 지정 편집기 만들기](../test/quickstart-create-a-load-test-project.md)
