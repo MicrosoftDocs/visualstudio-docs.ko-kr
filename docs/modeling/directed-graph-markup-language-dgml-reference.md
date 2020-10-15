@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bef53e9288f04c9ed7fce6ff7e5ddd69020798f
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596638"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099286"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>DGML(Directed Graph Markup Language) 참조
 
@@ -21,7 +21,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 일부 버전의 Visual Studio에서는 DGML 기능의 하위 집합만 지원 합니다. [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
 > [!NOTE]
-> .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](/dotnet/api/system.windows.media.colors?view=netframework-4.8)를 참조 하세요.
+> .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](/dotnet/api/system.windows.media.colors?view=netframework-4.8&preserve-view=true)를 참조 하세요.
 
 ## <a name="dgml-syntax"></a><a name="DGML"></a> DGML 구문
 
@@ -43,7 +43,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    `NeighborhoodDistance` -맵이 트리 레이아웃 또는 빠른 클러스터 레이아웃으로 설정 되 면 선택한 노드에서 지정 된 링크 수 (1-7) 만큼 떨어진 노드만 표시 합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +70,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   > [!NOTE]
   > `<Link/>` 요소에서 정의되지 않은 노드를 참조하는 경우 맵에서 `<Node/>` 요소를 자동으로 만듭니다.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +108,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    `Reference` - 이 특성을 문서 또는 URL에 대한 링크로 설정합니다. [코드 요소 및 링크에 문서 또는 Url 링크를](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)참조 하세요.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -133,7 +133,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 노드 간의 링크를 정의하는 `<Link>` 요소 목록이 포함됩니다. 자세한 내용은 `<Link/>` 요소를 참조하십시오.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -167,7 +167,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    `Property` -속성 값이 동일한 요소를 식별 하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -191,7 +191,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 `<Category/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -220,7 +220,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    또한 범주는 노드 및 링크가 맵에 표시되는 모양을 제어하는 몇 가지 기본적인 템플릿 동작을 제공합니다. [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -248,7 +248,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 `<Property/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
 
-   예:
+   예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -273,7 +273,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
     [코드 요소 및 링크에 범주 할당을](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)참조 하세요.
 
-    예:
+    예제:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

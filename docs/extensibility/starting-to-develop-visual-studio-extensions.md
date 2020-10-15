@@ -11,19 +11,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286195"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099390"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
 
 이전에 Visual Studio 확장을 작성 한 적이 없는 경우 몇 가지 질문이 있을 수 있습니다. 여기에는 가장 일반적인 몇 가지 항목이 나열 되어 있습니다. 원하는 정보가 표시 되지 않으면 사용자 의견 단추를 사용 하 여 (**이 페이지가 도움이 되나요?** 화면 오른쪽 위에 표시 됨) 원하는 항목을 요청 합니다.
 
 > [!NOTE]
-> 이 문서는 Windows의 Visual Studio에 적용 됩니다. Mac용 Visual Studio [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)을 참조 하세요. Visual Studio Code [Visual Studio Code 확장 API](https://code.visualstudio.com/api)를 참조 하세요.
+> 이 문서는 Windows용 Visual Studio에 적용됩니다. Mac용 Visual Studio [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)을 참조 하세요. Visual Studio Code [Visual Studio Code 확장 API](https://code.visualstudio.com/api)를 참조 하세요.
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio 확장을 개발 하는 데 필요한 소프트웨어는 무엇 인가요?
 
@@ -91,9 +91,9 @@ Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio S
 ## <a name="how-can-i-distribute-my-extension"></a>내 확장을 배포 하려면 어떻게 해야 하나요?
  다른 컴퓨터에 확장을 설치 하거나 친구에 게 .vsix 파일로 보낼 수 있습니다 .이 파일을 두 번 클릭 하 여 설치 합니다. VSIX 패키지에 대 한 자세한 내용은 [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공에서 확인할 수 있습니다.
 
- 또한 Visual Studio Marketplace에 확장을 게시 하면 많은 수의 Visual Studio 고객이 볼 수 있습니다. Marketplace에 대 한 확장을 패키징하는 예제는 [연습: Visual Studio 확장 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요. Marketplace에 게시 하기 위해 수행 해야 하는 작업에 대 한 자세한 내용은 [Visual Studio 용 제품 및 확장](/azure/devops/extend/overview?view=vsts)을 참조 하세요.
+ 또한 Visual Studio Marketplace에 확장을 게시 하면 많은 수의 Visual Studio 고객이 볼 수 있습니다. Marketplace에 대 한 확장을 패키징하는 예제는 [연습: Visual Studio 확장 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요. Marketplace에 게시 하기 위해 수행 해야 하는 작업에 대 한 자세한 내용은 [Visual Studio 용 제품 및 확장](/azure/devops/extend/overview?view=vsts&preserve-view=true)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)
 - [Visual Studio Code 확장](https://code.visualstudio.com/api)

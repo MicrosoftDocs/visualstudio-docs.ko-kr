@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699652"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099377"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 지원
 Visual Studio IDE (통합 개발 환경)를 확장 하는 방법에 대 한 질문이 있는 고객에 게 몇 가지 지원 옵션을 사용할 수 있습니다.
@@ -30,7 +30,7 @@ Visual Studio IDE (통합 개발 환경)를 확장 하는 방법에 대 한 질�
  Visual studio 개발 팀 및 Visual Studio를 확장 하는 다른 개발자의 멤버는 종종 microsoft. 이 뉴스 그룹은 관리 되는 뉴스 그룹입니다. MSDN 유니버설 구독자 인 경우 Microsoft가 응답할 수 있도록 스팸이 아닌 별칭을 등록 해야 합니다.
 
 ### <a name="msdn-forums"></a>MSDN 포럼
- [MSDN 포럼](https://social.msdn.microsoft.com/Forums/en-US/home) 은 피어 및 전문가와 채팅 하는 또 다른 방법을 제공 합니다. 포럼의 그래픽 UI (사용자 인터페이스)는 뉴스 그룹 보다 더 쉽게 사용할 수 있도록 설계 되었습니다. [Visual Studio 확장성 포럼](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) 은 확장성 질문에 대 한 답변을 검색 하기 시작 하는 데 적합 한 장소입니다. 다른 사람이 이미 동일한 질문을 했을 수 있으므로 질문을 하기 전에 항상 검색 하세요.
+ [MSDN 포럼](https://social.msdn.microsoft.com/Forums/en-US/home) 은 피어 및 전문가와 채팅 하는 또 다른 방법을 제공 합니다. 포럼의 그래픽 UI (사용자 인터페이스)는 뉴스 그룹 보다 더 쉽게 사용할 수 있도록 설계 되었습니다. [Visual Studio 확장성 포럼](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) 은 확장성 질문에 대 한 답변을 검색 하기 시작 하는 데 적합 한 장소입니다. 다른 사람이 이미 동일한 질문을 했을 수 있으므로 질문을 하기 전에 항상 검색 하세요.
 
 ### <a name="visual-studio-gallery"></a>Visual Studio 갤러리
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 확장 및 샘플 코드에 대 한 장소입니다. Visual Studio를 사용 하 여 생산성과 사용자 환경을 개선 하는 도구, Vspackage 및 MEF (Managed Extensibility Framework)를 사용 하는 방법을 보여 주는 샘플 응용 프로그램 및 다른 종류의 샘플을 찾을 수 있습니다.
