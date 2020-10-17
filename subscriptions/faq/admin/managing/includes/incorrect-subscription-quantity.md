@@ -1,18 +1,18 @@
 ---
 title: 내 계약의 Visual Studio 구독 수가 포털에 올바르게 표시되지 않는 이유는 무엇인가요?
 description: 계약의 구독 수가 올바르게 표시되지 않는 경우 포털에서 잘못된 계약을 선택했을 수 있습...
-ms.faqid: group1_6
+ms.faqid: group1_7
 ms.topic: include
 ms.assetid: d97a767b-148d-488d-a860-778f406d8207
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 133185527db3c6894a64eba0874e7ea0e1b2a95c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 06713ee3b98997d248bd62513130d8a1db5c016d
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86401684"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157837"
 ---
 ## <a name="why-is-the-portal-not-showing-the-correct-number-of-visual-studio-subscriptions-for-my-agreement"></a>내 계약의 Visual Studio 구독 수가 포털에 올바르게 표시되지 않는 이유는 무엇인가요?
 

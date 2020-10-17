@@ -1,18 +1,18 @@
 ---
 title: 로그인 전자 메일 주소와 알림 전자 메일 주소 간의 차이점은 무엇인가요?
 description: 구독이 할당된 개인은 Visual Studio 팀으로부터 정기 통신을 받게 됩니다. 여기에는...
-ms.faqid: group1_4
+ms.faqid: group1_5
 ms.topic: include
 ms.assetid: 3b7b2932-3274-4275-9d80-b28406bcefc4
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 9231a46a0cc4266406c2690426f5921786d47461
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: dd2c7de8ad2c96c148857b2c11960fba190a5939
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386162"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157916"
 ---
 ## <a name="what-is-the-difference-between-a-sign-in-email-address-and-a-notification-email-address"></a>로그인 전자 메일 주소와 알림 전자 메일 주소 간의 차이점은 무엇인가요?
 
