@@ -1,5 +1,6 @@
 ---
 title: '연습: 런타임에 리본 메뉴의 컨트롤 업데이트'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255342"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298058"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>연습: 런타임에 리본 메뉴의 컨트롤 업데이트
 
@@ -157,7 +158,7 @@ ms.locfileid: "71255342"
 
     4. **제품**
 
-9. **마침**을 클릭합니다.
+9. **Finish**를 클릭합니다.
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>런타임에 사용자 지정 그룹의 컨트롤 업데이트
 
@@ -295,7 +296,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 
 - Outlook에 사용자 지정 작업창을 추가합니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)

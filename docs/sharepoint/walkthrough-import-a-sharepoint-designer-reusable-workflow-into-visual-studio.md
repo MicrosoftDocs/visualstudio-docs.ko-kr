@@ -1,5 +1,6 @@
 ---
-title: '연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기 | Microsoft Docs'
+title: '연습: SharePoint Designer의 다시 사용 가능한 워크플로 가져오기 | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015696"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298027"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>연습: SharePoint Designer의 다시 사용 가능한 워크플로 가져오기
+
   이 연습에서는 SharePoint Designer 2010에서 만든 재사용 가능한 워크플로를 sharepoint workflow 프로젝트로 가져오는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
  SharePoint 디자이너에서 만든 워크플로 또는 *선언적 워크플로*는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 코드 대신 문으로 구성 됩니다. SharePoint Designer 2010은 *재사용 가능한 워크플로*를 소개 하며,이 워크플로는 sharepoint 사이트의 여러 목록에서 사용할 수 있는 이식 가능한 선언적 워크플로입니다.
@@ -260,7 +262,7 @@ ms.locfileid: "86015696"
 
      워크플로에서는 작업의 **할당 대상** 열에 이름이 표시 되 고 **공지** 목록에 알림이 표시 되는 것을 볼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
-- [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -1,5 +1,6 @@
 ---
 title: 제한 된 권한으로 문서 뒤에 코드를 실행할 수 있도록 허용
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547513"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298484"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>방법: 제한 된 권한으로 문서 뒤에 코드를 실행할 수 있도록 허용
   Microsoft Office의 IRM (정보 Rights Management) 기능을 사용 하 여 문서나 통합 문서에 대 한 사용 권한을 제한할 수 있습니다. 기본적으로 제한 된 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서를 실행 하는 코드는 실행할 수 없습니다. 관리 코드 확장에서 개체 모델에 액세스할 수 있고 솔루션이 작동 하도록 기본값을 변경할 수 있습니다.
@@ -46,7 +47,7 @@ ms.locfileid: "85547513"
 
    Word 또는 Excel에서 개체 모델에 대 한 프로그래밍 방식 액세스를 허용 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [정보 권한 관리 및 관리 코드 확장 개요](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [문서 수준 솔루션의 문서 보호](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 문서에 대 한 암호 보호](../vsto/password-protection-on-office-documents.md)

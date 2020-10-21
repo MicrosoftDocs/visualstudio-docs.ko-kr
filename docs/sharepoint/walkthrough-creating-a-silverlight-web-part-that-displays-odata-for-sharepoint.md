@@ -1,5 +1,6 @@
 ---
 title: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017171"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298497"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010는 OData를 통해 목록 데이터를 노출 합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData .svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스팅하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램은 ListData .svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint FOUNDATION REST 인터페이스](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 및 [Open Data Protocol](https://www.odata.org/)을 참조 하세요.
@@ -68,7 +69,7 @@ ms.locfileid: "86017171"
 
 #### <a name="to-customize-the-silverlight-application"></a>Silverlight 응용 프로그램을 사용자 지정 하려면
 
-1. Silverlight 응용 프로그램에서 System.object에 대 한 어셈블리 참조를 추가 합니다. 자세한 내용은 [방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조 하세요.
+1. Silverlight 응용 프로그램에서 System.object에 대 한 어셈블리 참조를 추가 합니다. 자세한 내용은 [방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](/previous-versions/wkze6zky(v=vs.140))를 참조 하세요.
 
 2. **솔루션 탐색기**에서 **참조**에 대 한 바로 가기 메뉴를 열고 **서비스 참조 추가**를 선택 합니다.
 
@@ -230,6 +231,6 @@ ms.locfileid: "86017171"
     > [!NOTE]
     > 도메인 간에 Silverlight의 데이터에 액세스 하는 경우 Silverlight는 웹 응용 프로그램을 악용 하는 데 사용할 수 있는 보안 취약성을 방지 합니다. Silverlight에서 원격 데이터에 액세스할 때 문제가 발생 하면 [도메인 경계에서 서비스를 사용할 수 있도록 설정](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
+## <a name="see-also"></a>참조
+- [SharePoint용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [SharePoint 솔루션 패키지 배포, 게시 및 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115046"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298101"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
@@ -136,9 +136,9 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
-- [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Agile 개발에서 모델 사용](/previous-versions/ff398061(v=vs.140))
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)
 - [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)

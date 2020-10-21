@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416551"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298519"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO 추가 기능의 성능 향상
   Office 애플리케이션용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
@@ -113,8 +113,8 @@ ms.locfileid: "79416551"
 > [!NOTE]
 > Office 개체 모델을 호출하는 모든 코드는 주 스레드에서 실행되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-- [요청 시 VSTO 추가 기능 로드](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Office 추가 기능에서 CLR 지연 로드](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [요청 시 VSTO 추가 기능 로드](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Office 추가 기능에서 CLR 지연 로드](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기](create-vsto-add-ins-for-office-by-using-visual-studio.md)

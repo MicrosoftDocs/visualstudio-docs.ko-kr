@@ -1,5 +1,6 @@
 ---
 title: 관리 코드 확장 & 정보 권한 관리
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68872058"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298067"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>정보 권한 관리 및 관리 코드 확장 개요
   Word 및 Microsoft Office Excel Microsoft Office는 권한이 없는 사용자가 중요 한 정보를 보거나 변경할 수 없도록 하는 기능인 IRM (정보 Rights Management)을 제공 합니다. 정보 Rights Management 작동 방법에 대 한 자세한 내용은 특정 Office 응용 프로그램의 도움말을 참조 하세요.
@@ -39,7 +40,7 @@ ms.locfileid: "68872058"
 
  문제를 해결 하려면 문서 또는 통합 문서에 대 한 모든 권한을 가진 사용자가 개체 모델에 대 한 프로그래밍 방식 액세스를 허용 하도록 기본 권한 설정을 변경 해야 합니다. 자세한 내용은 [방법: 제한 된 권한으로 문서 뒤에 코드를 실행 하도록 허용](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [문서 수준 솔루션의 문서 보호](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 문서에 대 한 암호 보호](../vsto/password-protection-on-office-documents.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

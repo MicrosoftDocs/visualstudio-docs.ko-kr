@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661892"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298384"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
-  디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 다음과 같은 문제나 경고가 발생할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버그](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)를 참조 하세요.
+  디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 다음과 같은 문제나 경고가 발생할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버그](/previous-versions/bb386166(v=vs.100))를 참조 하세요.
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>샌드 박싱된 비주얼 웹 파트의 토큰 제한 사항
  샌드박스 솔루션의 비주얼 웹 파트는 SharePoint 런타임이 지원하는 $SPUrl과 같은 표준 토큰을 처리할 수 없습니다. 이에 따라 URL은 확인되지 않으며, 다음 예제와 같이 스크립트 요소에서 URL을 직접 참조하는 경우 비주얼 웹 파트 디자이너의 디자인 뷰에서 내용을 미리 볼 수 없습니다.
@@ -277,7 +277,7 @@ ms.locfileid: "73661892"
 ### <a name="resolution"></a>해결 방법
  이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 애플리케이션의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열고 **응용 프로그램 관리** 링크를 선택한 다음 **웹 응용 프로그램**에서 **대체 액세스 매핑 구성** 링크를 선택 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역 만들기](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

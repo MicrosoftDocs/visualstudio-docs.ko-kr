@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951175"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298456"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
@@ -50,10 +50,10 @@ ms.locfileid: "62951175"
 
   솔루션 *id* 는에서 솔루션을 식별 하는 데 사용 하는 GUID입니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . 프로젝트를 빌드할 때 *솔루션 id* 가 자동으로 생성 됩니다. **Vstolocal** 용어는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 어셈블리를 문서와 동일한 폴더에서 로드 해야 함을에 나타냅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)
 - [Office 솔루션의 응용 프로그램 및 배포 매니페스트](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](/previous-versions/bb386095(v=vs.110))
 - [방법: 사용자 지정 문서 속성 만들기 및 수정](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,6 @@
 ---
 title: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,14 +20,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015272"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298372"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기
   다음 절차에서는 사용자 지정 SharePoint 사이트 열 또는 *필드*를 만드는 방법 및 사이트 열을 사용 하는 내용 유형을 보여 줍니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법도 보여 줍니다.
 
  이 연습에는 다음 작업이 포함됩니다.
@@ -238,8 +239,8 @@ ms.locfileid: "86015272"
 
      새 레코드가 목록에 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
+## <a name="see-also"></a>참조
+- [SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [방법: 사용자 지정 필드 형식 만들기](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [콘텐츠 형식](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))

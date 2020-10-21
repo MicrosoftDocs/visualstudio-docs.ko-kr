@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841734"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297933"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>연습: Visual c # 프로젝트에서 VBA의 코드 호출
   이 연습에서는 통합 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `Sheet1` 호스트 항목 클래스에 메서드 추가, 통합 문서의 VBA 코드에 메서드 노출, 통합 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.
@@ -66,7 +66,7 @@ ms.locfileid: "90841734"
 
 1. Excel을 시작합니다.
 
-2. 활성 문서를 **Excel 매크로 사용 통합 문서 ( \* .xlsm)** 와 함께 통합 문서 이름 **vba**로 저장 합니다. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.
+2. 활성 문서를 **Excel Macro-Enabled 통합 문서 ( \* .xlsm)** 와 함께 통합 문서 이름 **vba**로 저장 합니다. 통합 문서를 바탕 화면과 같은 편리한 위치에 저장합니다.
 
 3. 리본에서 **개발자** 탭을 클릭합니다.
 
@@ -113,7 +113,7 @@ ms.locfileid: "90841734"
 
 8. **기존 문서 복사**를 선택하고 **기존 문서의 전체 경로** 상자에서 이전에 만든 **WorkbookWithVBA** 통합 문서의 위치를 지정합니다. 사용자 고유의 매크로 사용 통합 문서를 사용하는 경우 대신 이 통합 문서의 위치를 지정합니다.
 
-9. **마침**을 클릭합니다.
+9. **Finish**를 클릭합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 의 디자이너에 **WorkbookWithVBA** 통합 문서가 열리고 **CallingCodeFromVBA** 프로젝트가 **솔루션 탐색기**에 추가됩니다.
 
@@ -161,7 +161,7 @@ ms.locfileid: "90841734"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. `Sheet1` 클래스에 다음 메서드를 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 메서드를 재정의하여 `Sheet1` 클래스의 현재 인스턴스를 반환합니다.
+3. `Sheet1` 클래스에 다음 메서드를 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> 메서드를 재정의하여 `Sheet1` 클래스의 현재 인스턴스를 반환합니다.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -246,7 +246,7 @@ ms.locfileid: "90841734"
 
 - VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

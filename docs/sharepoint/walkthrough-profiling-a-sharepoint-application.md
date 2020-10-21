@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017102"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298625"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>연습: SharePoint 응용 프로그램 프로 파일링
   이 연습에서는 Visual Studio에서 프로파일링 도구를 사용하여 SharePoint 애플리케이션의 성능을 최적화하는 방법을 보여 줍니다. 예제 애플리케이션은 기능 이벤트 수신기의 성능을 저하시키는 유휴 루프가 포함된 SharePoint 기능 이벤트 수신기입니다. Visual Studio profiler를 사용 하면 프로젝트의 가장 비용이 많이 드는 (가장 느리게 수행 되는) 부분을 찾아서 제거할 수 있습니다 (실행 *부하 과다 경로*라고도 함).
@@ -272,7 +272,7 @@ ms.locfileid: "86017102"
 
      유휴 루프 호출이 제거되었으므로 기능이 훨씬 빠르게 활성화됩니다. 샘플 프로파일링 보고서는 이를 반영합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [성능 세션 개요](../profiling/performance-session-overview.md)
 - [초보자를 위한 성능 프로 파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)
-- [Visual Studio 프로파일러를 사용한 애플리케이션 병목 지점 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Visual Studio 프로파일러를 사용한 애플리케이션 병목 지점 찾기](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

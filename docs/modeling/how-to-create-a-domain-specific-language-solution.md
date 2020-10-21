@@ -13,17 +13,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541793"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298660"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용 하 여 만듭니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 이 절차를 시작 하기 전에 다음 구성 요소를 설치 합니다.
 
@@ -33,7 +33,7 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>도메인별 언어 솔루션 만들기
+## <a name="creating-a-domain-specific-language-solution"></a>Domain-Specific 언어 솔루션 만들기
 
 1. 새 **도메인 특정 언어 디자이너** 프로젝트를 만들어 DSL 마법사를 시작 합니다.
 
@@ -48,9 +48,9 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
 2. DSL 템플릿을 선택 합니다.
 
-    **도메인 특정 언어 옵션 선택** 페이지에서 **최소 언어**와 같은 솔루션 템플릿 중 하나를 선택 합니다. 만들려는 DSL과 비슷한 템플릿을 선택 합니다.
+    **Domain-Specific 언어 옵션 선택** 페이지에서 **최소 언어**와 같은 솔루션 템플릿 중 하나를 선택 합니다. 만들려는 DSL과 비슷한 템플릿을 선택 합니다.
 
-    솔루션 템플릿에 대 한 자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)을 참조 하세요.
+    솔루션 템플릿에 대 한 자세한 내용은 [Domain-Specific 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)을 참조 하세요.
 
 3. **파일 확장명** 페이지에 파일 이름 확장명을 입력 합니다. 컴퓨터에서 고유 해야 하며 DSL을 설치 하려는 모든 컴퓨터에서 고유 해야 합니다. **이 확장을 사용 하는 응용 프로그램 또는 Visual Studio 편집기가 없다는**메시지가 표시 됩니다.
 
@@ -70,7 +70,7 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
 ### <a name="solution-settings-page"></a>솔루션 설정 페이지
  **도메인 특정 언어의 기반으로 사용할 템플릿을 선택 하십시오.**
-만들려는 DSL과 비슷한 템플릿을 선택 합니다. 다른 템플릿은 편리한 시작점을 제공 합니다. 솔루션 템플릿을 선택 하면 마법사에서 설명이 표시 됩니다. 솔루션 템플릿에 대 한 자세한 내용은 [도메인별 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)을 참조 하세요.
+만들려는 DSL과 비슷한 템플릿을 선택 합니다. 다른 템플릿은 편리한 시작점을 제공 합니다. 솔루션 템플릿을 선택 하면 마법사에서 설명이 표시 됩니다. 솔루션 템플릿에 대 한 자세한 내용은 [Domain-Specific 언어 솔루션 템플릿 선택](../modeling/choosing-a-domain-specific-language-solution-template.md)을 참조 하세요.
 
  **도메인 특정 언어의 이름을 선택 하십시오.**
 기본값은 솔루션 이름입니다. 이 값에서 코드가 생성 됩니다. 이 클래스는 c # 클래스 이름으로 유효 해야 합니다.
@@ -114,9 +114,9 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
  **기존 강력한 이름 키 사용** DSL을 다른 어셈블리와 통합 하려는 경우이 옵션을 사용 합니다.
 
- 강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](/dotnet/standard/assembly/create-use-strong-named)을 참조 하세요.
+ 강력한 이름 지정에 대 한 자세한 내용은 [Strong-Named 어셈블리 만들기 및 사용](/dotnet/standard/assembly/create-use-strong-named)을 참조 하세요.
 
 ## <a name="see-also"></a>참조
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
-- [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

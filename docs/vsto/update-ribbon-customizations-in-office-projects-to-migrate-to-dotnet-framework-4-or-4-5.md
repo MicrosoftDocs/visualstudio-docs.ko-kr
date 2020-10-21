@@ -1,5 +1,6 @@
 ---
-title: .NET Framework 4, 4.5로 마이그레이션된 Office 프로젝트에서 리본 사용자 지정 업데이트
+title: .NET Framework 4.5로 마이그레이션된 리본 사용자 지정 업데이트
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254356"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298609"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Office 프로젝트에서 리본 메뉴 사용자 지정 업데이트
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>.NET Framework 4.5로 마이그레이션된 리본 사용자 지정 업데이트
+
   프로젝트에 **리본 (비주얼 디자이너)** 프로젝트 항목을 사용 하 여 만든 리본 사용자 지정이 포함 되어 있는 경우 대상 프레임 워크가 이상 버전으로 변경 된 경우 프로젝트 코드를 다음과 같이 변경 해야 합니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
 - 생성된 리본 코드를 수정합니다.
@@ -123,7 +125,7 @@ ms.locfileid: "71254356"
 \<CodeContentPlaceHolder>10 </CodeContentPlaceHolder> 
  \<CodeContentPlaceHolder> 11 </CodeContentPlaceHolder> 다음 표에서는 프로그래밍 방식으로 만들 수 있는 컨트롤과 이상을 대상으로 하는 프로젝트에서 컨트롤을 만드는 데 사용할 수 있는 메서드를 보여 줍니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
-|컨트롤|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 프로젝트에서 사용할 RibbonFactory 메서드|
+|제어|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상 프로젝트에서 사용할 RibbonFactory 메서드|
 |-------------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|
@@ -183,6 +185,6 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

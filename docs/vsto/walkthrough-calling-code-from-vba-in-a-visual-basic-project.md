@@ -1,5 +1,6 @@
 ---
 title: '연습: Visual Basic 프로젝트에서 VBA의 코드 호출'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842199"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298267"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>연습: Visual Basic 프로젝트에서 VBA의 코드 호출
   이 연습에서는 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Word에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `ThisDocument` 호스트 항목 클래스에 메서드 추가, VBA 코드에 메서드 노출, 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.
@@ -111,7 +112,7 @@ ms.locfileid: "90842199"
 
 8. **기존 문서 복사**를 선택하고 **기존 문서의 전체 경로** 상자에서 이전에 만든 **DocumentWithVBA** 문서의 위치를 지정합니다. 사용자 고유의 매크로 사용 문서를 사용하는 경우 대신 이 문서의 위치를 지정합니다.
 
-9. **마침**을 클릭합니다.
+9. **Finish**를 클릭합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 의 디자이너에 **DocumentWithVBA** 문서가 열리고 **CallingCodeFromVBA** 프로젝트가 **솔루션 탐색기**에 추가됩니다.
 
@@ -215,7 +216,7 @@ ms.locfileid: "90842199"
 
 - VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
