@@ -1,5 +1,6 @@
 ---
-title: '시나리오: 시각화 및 모델링을 사용하여 디자인 변경'
+title: 시각화 및 모델링을 사용하여 디자인 변경
+description: Visual Studio의 시각화 및 모델링 도구에 대한 개요입니다.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238896"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298598"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -214,9 +216,9 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 다음을 참조하세요.
 
-- [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [차트, 대시보드 및 위젯(Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [차트, 대시보드 및 위젯(Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Project를 사용하여 백로그 및 작업 만들기](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Dinner Now의 자동화된 대규모 테스트 컬렉션은 지금도 거의 모
 
 다음을 참조하세요.
 
-- [애플리케이션 테스트](/azure/devops/test/overview?view=vsts)
+- [애플리케이션 테스트](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
-- [사용자 버전 제어](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [사용자 버전 제어](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>시각화 및 모델링을 사용하여 시스템 업데이트
 
@@ -484,5 +486,5 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - [코드 시각화](../modeling/visualize-code.md)
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
-- [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Agile 개발에서 모델 사용](/previous-versions/ff398061(v=vs.140))
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)

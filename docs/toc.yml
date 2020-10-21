@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: IDE에서 이동
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Visual Studio 검색 사용
+      href: ide/visual-studio-search.md
     - name: 솔루션 및 프로젝트
       items:
         - name: 솔루션 및 프로젝트 작업
@@ -964,7 +966,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참조
+- name: 참고
   items:
     - name: 바로 가기 키
       items:
