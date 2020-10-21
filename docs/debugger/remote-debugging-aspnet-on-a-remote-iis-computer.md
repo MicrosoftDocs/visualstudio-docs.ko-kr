@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173890"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298765"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Visual Studio의 원격 IIS 컴퓨터에서 ASP.NET Core를 원격으로 디버그
 
@@ -53,7 +53,7 @@ IIS에 배포된 ASP.NET Core 애플리케이션을 디버그하려면 앱을 �
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Visual Studio 컴퓨터에서 ASP.NET Core 애플리케이션 만들기
 
-1. 새 ASP.NET Core 웹 애플리케이션을 만듭니다. 
+1. 새 ASP.NET Core 웹 애플리케이션을 만듭니다.
 
     ::: moniker range=">=vs-2019"
     Visual Studio 2019에서 **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp**으로 지정한 다음, **만들기**를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기**를 선택합니다.
@@ -209,7 +209,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 
 6. 앱을 신속하게 찾으려면 프로세스 이름의 첫 글자를 입력합니다.
 
-    * IIS에서 [In-Process 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)을 사용하는 경우 올바른 **w3wp.exe** 프로세스를 선택합니다. .NET Core 3부터는 이것이 기본값입니다.
+    * IIS에서 [In-Process 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)을 사용하는 경우 올바른 **w3wp.exe** 프로세스를 선택합니다. .NET Core 3부터는 이것이 기본값입니다.
 
     * 그렇지 않으면 **dotnet.exe** 프로세스를 선택합니다. (이것은 Out-of-process 호스팅 모델입니다.)
 

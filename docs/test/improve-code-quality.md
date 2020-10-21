@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256233"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928071"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -94,7 +94,7 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 
 ## <a name="related-scenarios"></a>관련 시나리오
 
-* [예비 및 수동 테스트(Azure Test Plans)](/azure/devops/test/index?view=vsts)
-* [부하 테스트(Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
-* [지속적인 테스트(Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+* [예비 및 수동 테스트(Azure Test Plans)](/azure/devops/test/index?view=vsts&preserve-view=true)
+* [부하 테스트(Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)
+* [지속적인 테스트(Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 * [코드 분석 도구](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70154890"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099364"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
@@ -356,4 +356,4 @@ def results(key):
 
 - PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](/azure/python/)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
 
-- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps Projects를 사용하여 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts) 및 일반 [Azure DevOps 설명서](/azure/devops/?view=vsts)를 참조하세요.
+- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps Projects를 사용하여 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) 및 일반 [Azure DevOps 설명서](/azure/devops/?view=vsts&preserve-view=true)를 참조하세요.

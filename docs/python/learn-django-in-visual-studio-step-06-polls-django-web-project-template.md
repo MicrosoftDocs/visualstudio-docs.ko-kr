@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1f81c665bc742daf7e2b0e34a849aad566362a28
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75755581"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099338"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -376,4 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](/azure/python/)를 사용하여 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
 
-- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts)도 참조하세요.
+- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts&preserve-view=true)도 참조하세요.

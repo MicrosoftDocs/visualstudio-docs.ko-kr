@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536788"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298744"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 2017에서 Azure 및 IIS의 ASP.NET Core 원격 디버그
 
@@ -255,7 +255,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 
 6. 앱을 신속하게 찾으려면 프로세스 이름의 첫 글자를 입력합니다.
 
-    * IIS에서 [In-Process 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)을 사용하는 경우 올바른 **w3wp.exe** 프로세스를 선택합니다. .NET Core 3부터는 이것이 기본값입니다.
+    * IIS에서 [In-Process 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)을 사용하는 경우 올바른 **w3wp.exe** 프로세스를 선택합니다. .NET Core 3부터는 이것이 기본값입니다.
 
     * 그렇지 않으면 **dotnet.exe** 프로세스를 선택합니다. (이것은 Out-of-process 호스팅 모델입니다.)
 

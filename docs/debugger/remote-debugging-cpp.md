@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301088"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298730"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio에서 C++ 프로젝트 원격 디버깅
 다른 컴퓨터에서 Visual Studio 애플리케이션을 디버그하려면 앱을 배포할 컴퓨터에 원격 도구를 설치 및 실행하고 Visual Studio에서 원격 컴퓨터에 연결하도록 프로젝트를 구성한 후 앱을 배포하고 실행합니다.

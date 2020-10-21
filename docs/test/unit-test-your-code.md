@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565996"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099312"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 
@@ -47,8 +47,8 @@ ms.locfileid: "75565996"
 |**단위 테스트 C++**|- [C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)|
 |**단위 테스트 격리**|- [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**코드 검사를 사용하여 테스트된 프로젝트의 코드의 비율 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아봅니다.|- [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다.|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**품질 게이트 설정:** 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 하는 품질 게이트를 만드는 방법에 대해 알아봅니다.|- [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다.|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**품질 게이트 설정:** 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 하는 품질 게이트를 만드는 방법에 대해 알아봅니다.|- [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**테스트 옵션 설정:** 테스트 결과가 저장되는 위치와 같이 테스트 옵션을 구성하는 방법에 대해 알아봅니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 참조 설명서

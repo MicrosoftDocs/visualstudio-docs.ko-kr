@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037226"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928110"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -45,7 +45,7 @@ ms.locfileid: "90037226"
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Azure Pipelines 또는 Team Foundation Server의 빌드 및 릴리스와 함께 클라우드 사용
 
-TFS(Team Foundation Server) 및 Azure Test Plans의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts) 기능을 사용하여 자동화된 테스트 및 빌드-배포-테스트 자동화를 수행할 수 있습니다. 몇 가지 이점은 다음과 같습니다.
+TFS(Team Foundation Server) 및 Azure Test Plans의 [빌드 및 릴리스](/azure/devops/pipelines/index?view=vsts&preserve-view=true) 기능을 사용하여 자동화된 테스트 및 빌드-배포-테스트 자동화를 수행할 수 있습니다. 몇 가지 이점은 다음과 같습니다.
 
 * 빌드 컨트롤러 또는 테스트 컨트롤러가 필요하지 않습니다.
 * 테스트 에이전트는 빌드 또는 릴리스에 포함된 작업을 통해 설치됩니다.
@@ -94,7 +94,7 @@ Visual Studio Lab Management를 사용하여 만들 수 있는 랩 환경에는 
 > [!NOTE]
 > Lab Management는 SCVMM 2016을 지원하지 않습니다.
 
-SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts)를 참조하세요.
+SCVMM에 대한 자세한 내용은 [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true)를 참조하세요.
 
 표준 환경과 SCVMM 환경에서는 여러 가지 동일한 기능이 지원됩니다. 하지만 고려해야 할 몇 가지 중요한 차이점이 있습니다. 다음 테이블에서는 표준 환경과 SCVMM 환경에서 지원되는 기능을 비교할 수 있습니다.
 

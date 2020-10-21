@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352305"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099442"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -141,7 +141,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 | LightSwitch | LightSwitch는 Visual Studio 2019 또는 Visual Studio 2017에서 더 이상 지원되지 않습니다. Visual Studio 2012 이전 버전에서 만들고 Visual Studio 2013 또는 Visual Studio 2015에서 연 프로젝트는 업그레이드되며 이후에는 Visual Studio 2013 또는 Visual Studio 2015에서만 열 수 있습니다. |
 | 부하 테스트 | Visual Studio 2019에서는 웹 성능 및 부하 테스트 기능이 더 이상 사용되지 않습니다. <br/><br/>Visual Studio 2019는 부하 테스트에 대한 마지막 릴리스가 될 것입니다. Apache JMeter, Akamai CloudTest, Blazemeter와 같은 대체 부하 테스트 도구를 사용합니다.  |
 | Visual Studio용 Microsoft Azure 도구 | 이러한 형식의 프로젝트를 열려면 먼저 [Azure SDK for.NET](https://azure.microsoft.com/downloads/)을 설치한 다음 프로젝트를 엽니다. 필요한 경우 프로젝트가 업데이트됩니다. |
-| Microsoft Test Manager | Microsoft Test Manager 및 Feedback Client는 Visual Studio 2019부터 더 이상 Visual Studio에서 제공되지 않습니다. <br/><br/>수동 및 예비 테스트 요구 사항에 대해 Azure 테스트 계획(Azure DevOps의 일부)을 활용합니다. 자세한 내용은 Azure DevOps 설명서의 [Guidance on Microsoft Test Manager usage](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops)(Microsoft Test Manager 사용 참고 자료) 페이지를 참조하세요. |
+| Microsoft Test Manager | Microsoft Test Manager 및 Feedback Client는 Visual Studio 2019부터 더 이상 Visual Studio에서 제공되지 않습니다. <br/><br/>수동 및 예비 테스트 요구 사항에 대해 Azure 테스트 계획(Azure DevOps의 일부)을 활용합니다. 자세한 내용은 Azure DevOps 설명서의 [Guidance on Microsoft Test Manager usage](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops&preserve-view=true)(Microsoft Test Manager 사용 참고 자료) 페이지를 참조하세요. |
 | 모델-뷰-컨트롤러 프레임워크(ASP.NET MVC) | MVC 버전 및 Visual Studio 지원:<ul><li>Visual Studio 2010 SP1은 MVC 2 및 MVC 3을 지원합니다. MVC 4 지원은 [Visual Studio 2010 SP1용 ASP.NET 4 MVC 4 다운로드](https://www.microsoft.com/download/details.aspx?id=30683)를 통해 추가됩니다.</li><li>Visual Studio 2012에서는 MVC 3 및 MVC 4만 지원합니다.</li><li>Visual Studio 2013에서는 MVC 4 및 MVC 5만 지원합니다.</li><li>Visual Studio 2019, Visual Studio 2017 및 Visual Studio 2015는 MVC 4(기존 프로젝트는 열 수 있지만 새 프로젝트는 만들 수 없음) 및 MVC 5를 지원합니다.</li></ul><br/>MVC 버전 업그레이드:<ul><li>MVC 2에서 MVC 3로 자동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 애플리케이션 업그레이더](https://archive.codeplex.com/?p=aspnet)를 참조하세요.</li><li>MVC 2에서 MVC 3로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 도구 업데이트로 ASP.NET MVC 2 프로젝트 업그레이드](https://archive.codeplex.com/?p=aspnet)를 참조하세요.</li><li>MVC 3에서 MVC 4로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 프로젝트를 ASP.NET MVC 4로 업그레이드](/aspnet/whitepapers/mvc4-release-notes)를 참조하세요. 프로젝트 대상이 .NET Framework 3.5 SP1일 경우 대상을 변경하여 .NET Framework 4를 사용해야 합니다.</li><li>MVC 4에서 MVC 5로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 4 및 Web API 프로젝트를 ASP.NET MVC 5 및 Web API 2로 업그레이드하는 방법](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2)을 참조하세요.</li></ul> |
 | 모델링 | Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하면 Visual Studio 2015, Visual Studio 2013 또는 Visual Studio 2012에서 프로젝트를 열 수 있습니다.<br/><br/>Visual Studio 2015 이후 모델링 프로젝트의 형식은 변경되지 않았으며, 이러한 버전에서 프로젝트를 열고 수정할 수 있습니다. 하지만 Visual Studio 2017 및 Visual Studio 2019의 동작에 차이가 있습니다.<ul><li>모델링 프로젝트를 메뉴 및 템플릿에서 “종속성 유효성 검사” 프로젝트라고 합니다.</li><li>UML 다이어그램은 Visual Studio 2017 및 Visual Studio 2019에서 더 이상 지원되지 않습니다. UML 파일은 솔루션 탐색기에 이전처럼 나열되지만 XML 파일로 열립니다. UML 다이어그램을 보거나, 만들거나, 편집하려면 Visual Studio 2015를 사용하세요.</li><li>Visual Studio 2019에서는 모델링 프로젝트를 빌드할 때 더 이상 아키텍처 종속성 유효성 검사가 수행되지 않습니다. 대신 각 코드 프로젝트를 빌드할 때 유효성 검사가 수행됩니다. 이 변경은 모델링 프로젝트에 영향을 주지 않지만 유효성을 검사할 코드 프로젝트를 변경해야 합니다. Visual Studio 2019에서는 필요한 경우 코드 프로젝트를 자동으로 변경할 수 있습니다.</li></ul> |
 | MSI 설정(vdproj) | InstallShield 프로젝트를 참조하세요. |

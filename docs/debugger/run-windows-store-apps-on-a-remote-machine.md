@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348121"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "92298705"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Visual Studio에서 원격 컴퓨터의 UWP 앱 디버그
 
@@ -108,5 +108,5 @@ Visual Studio에서 원격 컴퓨터의 애플리케이션을 디버깅하려면
 
 ## <a name="see-also"></a>참조
 - [고급 원격 배포 옵션](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
-- [Visual Studio로 UWP 앱 테스트](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)
+- [Visual Studio로 UWP 앱 테스트](../test/unit-test-your-code.md)
 - [Visual Studio에서 UWP 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)

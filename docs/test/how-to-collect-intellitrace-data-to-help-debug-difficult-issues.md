@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9da0000397042355387d21501c64c29806ddeaaa
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288262"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928517"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집
 
@@ -126,7 +126,7 @@ IntelliTrace 파일에 수집된 데이터를 활용하면 코드의 오류를 �
 
 ## <a name="see-also"></a>참조
 
-- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [테스트하는 동안 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [수동 테스트에서 진단 데이터 수집(Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
 - [IntelliTrace 데이터 수집](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

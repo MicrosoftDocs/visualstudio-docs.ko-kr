@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800764"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099429"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio의 기능
 
@@ -124,7 +124,7 @@ TFS(Team Foundation Server)는 Visual Studio용 애플리케이션 수명 주기
 
 ![Visual Studio 팀 탐색기](../ide/media/vs2017_teamexplorer_devops.png)
 
-팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화할 수도 있습니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
+팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화할 수도 있습니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)를 참조하세요.
 
 ## <a name="extend-visual-studio"></a>Visual Studio 확장
 

@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149179"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298702"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331206ee59c7cd05dd4871c422bd6b1a7ff85419
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037701"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136695"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
 
@@ -239,13 +239,13 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)$(AssemblyName).exe" />`
 >
 > 가 아래보다 좋습니다.
 >
 > `<OutputPath>Bin</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>빌드 속성 테스트
 

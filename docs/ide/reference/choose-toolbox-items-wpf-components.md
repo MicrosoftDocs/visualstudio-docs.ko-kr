@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570559"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099351"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>도구 상자 항목 선택, WPF 구성 요소
 
@@ -41,7 +41,7 @@ ms.locfileid: "75570559"
 
 **네임스페이스**
 
-구성 요소 구조를 정의하는 [.NET API](/dotnet/api/?view=netframework-4.7) 네임스페이스의 계층 구조를 표시합니다. 컴퓨터에 설치된 각 .NET 네임스페이스 내에서 사용 가능한 구성 요소를 나열하려면 이 열을 기준으로 정렬합니다.
+구성 요소 구조를 정의하는 [.NET API](/dotnet/api/?view=netframework-4.7&preserve-view=true) 네임스페이스의 계층 구조를 표시합니다. 컴퓨터에 설치된 각 .NET 네임스페이스 내에서 사용 가능한 구성 요소를 나열하려면 이 열을 기준으로 정렬합니다.
 
 **어셈블리 이름**
 
