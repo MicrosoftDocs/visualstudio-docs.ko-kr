@@ -8,22 +8,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184408"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467650"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio의 상호 작용 패턴
 ## <a name="overview"></a>개요
  일반적으로 디자인 패턴은 비슷한 제약 조건 집합의 문제를 해결 하기 위해 특정 상황에서 적용할 수 있는 디자인의 핵심입니다. 기능 및 시스템 디자이너는 이러한 디자인 패턴을 시작 점으로 사용 하 여 특정 상황에 맞게 조정할 수 있습니다.
 
- Visual Studio에는 새로운 기능을 빌드할 때 고려해 야 하는 일반적인 상호 작용 패턴의 라이브러리가 있습니다. 디자인 패턴에는 두 가지 핵심 컨텍스트 (devenv)와 visual studio Codespaces (이전의 Visual Studio Online)가 있습니다. 일부 디자인 문제에는 모든 상황에서 잘 작동 하는 다양 한 패턴이 있습니다. 그러나 대부분의 경우 솔루션은 브라우저에 표시 되 고 클라이언트 응용 프로그램에서 호스트 되는 UI에 대해 다를 수 있습니다.
+ Visual Studio에는 새로운 기능을 빌드할 때 고려해 야 하는 일반적인 상호 작용 패턴의 라이브러리가 있습니다. 디자인 패턴에는 두 가지 핵심 컨텍스트 (devenv)와 GitHub Codespaces (이전 Visual Studio Online)가 있습니다. 일부 디자인 문제에는 모든 상황에서 잘 작동 하는 다양 한 패턴이 있습니다. 그러나 대부분의 경우 솔루션은 브라우저에 표시 되 고 클라이언트 응용 프로그램에서 호스트 되는 UI에 대해 다를 수 있습니다.
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio 클라이언트 패턴 형식
 
-|패턴 유형|설명|예제|
+|패턴 유형|Description|예|
 |------------------|-----------------|--------------|
 |**응용 프로그램 수준 패턴**|응용 프로그램에 공통적으로 적용 되는 응용 프로그램 컨텍스트를 결정 또는 표시 하 고 그 안에 복합 및 컨트롤 패턴을 포함 하는 상위 수준 패턴|-도구 창<br />-문서 창|
 |**복합 패턴**|응용 프로그램 패턴 전체에 걸쳐 있을 수 있는 일반적인 패턴 또는 개별 구성의 여러 컨트롤로 구성 된 인식 된 패턴|-전환 보기<br />-목록 작성기<br />-데이터 표시<br />-알림<br />-유효성 검사<br />-선택 모델|

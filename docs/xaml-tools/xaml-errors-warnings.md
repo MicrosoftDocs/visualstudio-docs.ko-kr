@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817270"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467559"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 
@@ -23,11 +23,14 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 
 내부적으로 여러 도구는 병렬로 XAML을 분석합니다. XAML 오류는 오류를 검색하는 도구에 따라 다음 세 가지 형식 중 하나로 분류됩니다.
 
-|**검색된 오류 기준**|**오류 코드 형식**|
-| - |-----------------|
-|XAML 언어 서비스(XAML 편집기)|XLSxxxx|
-|XAML 디자이너|XDGxxxx|
-|XAML 편집하며 계속하기|XECxxxx|
+|**검색된 오류 기준**|**오류 코드 형식**|**Visual Studio 버전**|
+| - |-----------------| - |
+|XAML 언어 서비스(XAML 편집기)|XLSxxxx| 모든 버전 |
+|XAML 디자이너|XDGxxxx| 모든 버전 | 
+|XAML 편집하며 계속하기|XECxxxx| Visual Studio 2019 버전 16.1 이전 |
+|XAML 핫 다시 로드 | XHRxxxx | Visual Studio 2019 버전 16.2 이상 |
+
+Xaml 편집 &의 브랜드에 대 한 자세한 내용은 xaml 핫 다시 로드로 계속 하려면 [릴리스 정보](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) 를 참조 하세요.
 
 > [!Note]
 > 일부 오류 또는 경고에는 해당 코드가 포함됩니다. 이러한 오류는 일반적으로 XAML 디자이너 오류입니다.
