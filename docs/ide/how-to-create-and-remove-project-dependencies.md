@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로젝트 종속성 만들기 및 제거'
+description: Visual Studio를 사용하여 다른 프로젝트의 코드에 대한 프로젝트 종속성을 만들고 제거할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b2a99e297b4ce7291c0dd94947155794cf8c3d4
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284466"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137027"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
 
@@ -31,9 +33,9 @@ ms.locfileid: "85284466"
 
 ## <a name="to-assign-dependencies-to-projects"></a>프로젝트에 종속성을 할당하려면
 
-1. **솔루션 탐색기**에서 프로젝트를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.
+2. **프로젝트** 메뉴에서 **프로젝트 종속성** 을 선택합니다.
 
     **프로젝트 종속성** 대화 상자가 열립니다.
 
@@ -48,9 +50,9 @@ ms.locfileid: "85284466"
 
 ## <a name="to-remove-dependencies-from-projects"></a>프로젝트에서 종속성을 제거하려면
 
-1. **솔루션 탐색기**에서 프로젝트를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.
+2. **프로젝트** 메뉴에서 **프로젝트 종속성** 을 선택합니다.
 
      **프로젝트 종속성** 대화 상자가 열립니다.
 

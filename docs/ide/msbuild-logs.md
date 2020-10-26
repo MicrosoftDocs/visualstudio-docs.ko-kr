@@ -1,5 +1,7 @@
 ---
 title: MSBuild의 문제 해결 및 로그 만들기
+description: Visual Studio 프로젝트에서 빌드 문제를 진단하고 필요한 경우 조사를 위해 Microsoft로 보낼 로그를 만들 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235071"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136578"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild의 문제 해결 및 로그 만들기
 
@@ -89,7 +91,7 @@ MSBuild가 프로젝트 또는 프로젝트 항목을 불필요하게 다시 빌
   Debug\Project1.tlog\CL.write.1.tlog
 ```
 
-Visual Studio IDE(출력 창의 자세한 정도가 지정된)에서 빌드하는 경우 **출력 창**은 각 프로젝트가 최신 상태가 아닌 이유를 표시합니다.
+Visual Studio IDE(출력 창의 자세한 정도가 지정된)에서 빌드하는 경우 **출력 창** 은 각 프로젝트가 최신 상태가 아닌 이유를 표시합니다.
 
 ```output
 1>------ Up-To-Date check: Project: Project1, Configuration: Debug Win32 ------
@@ -116,8 +118,8 @@ Msbuild.binlog 파일이 MSBuild를 실행한 디렉터리에 만들어집니다
 
 ## <a name="create-a-detailed-log"></a>자세한 로그를 만들기
 
-1. Visual Studio 주 메뉴에서 **도구** > **옵션** > **프로젝트 및 솔루션** >**빌드 및 실행**으로 이동합니다.
-1. 두 콤보 상자 모두에서 **Msbuild 프로젝트 빌드 자세한 정도**를 **자세히**로 설정합니다. 첫 번째 컨트롤은 **출력 창**의 세부 정보 표시를 빌드하고 두 번째 컨트롤은 빌드 중에 각 프로젝트의 중간 디렉터리에서 만들어진 \<projectname\>.log 파일의 세부 정보 표시를 빌드합니다.
+1. Visual Studio 주 메뉴에서 **도구** > **옵션** > **프로젝트 및 솔루션** >**빌드 및 실행** 으로 이동합니다.
+1. 두 콤보 상자 모두에서 **Msbuild 프로젝트 빌드 자세한 정도** 를 **자세히** 로 설정합니다. 첫 번째 컨트롤은 **출력 창** 의 세부 정보 표시를 빌드하고 두 번째 컨트롤은 빌드 중에 각 프로젝트의 중간 디렉터리에서 만들어진 \<projectname\>.log 파일의 세부 정보 표시를 빌드합니다.
 2. Visual Studio 개발자 명령 프롬프트에서 실제 경로 및 구성 값을 대체하는 이러한 명령 중 하나를 입력합니다.
 
     ```cmd

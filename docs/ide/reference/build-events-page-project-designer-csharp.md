@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 빌드 이벤트 페이지(C#)
+description: 빌드 구성 지침을 지정하는 방법을 알아봅니다. 또한 빌드 후 이벤트를 실행할 조건을 지정할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,20 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419057"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136851"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
 
-**프로젝트 디자이너**의 **빌드 이벤트** 페이지를 사용하여 빌드 구성 지침을 지정합니다. 또한 빌드 후 이벤트를 실행할 조건을 지정할 수 있습니다. 자세한 내용은 [방법: 빌드 이벤트 지정(C#)](../../ide/how-to-specify-build-events-csharp.md) 및 [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)을 참조하세요.
+**프로젝트 디자이너** 의 **빌드 이벤트** 페이지를 사용하여 빌드 구성 지침을 지정합니다. 또한 빌드 후 이벤트를 실행할 조건을 지정할 수 있습니다. 자세한 내용은 [방법: 빌드 이벤트 지정(C#)](../../ide/how-to-specify-build-events-csharp.md) 및 [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)을 참조하세요.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-**구성**
+**Configuration**
 
 이 컨트롤은 이 페이지에서 편집할 수 없습니다. 이 컨트롤에 대한 설명은 [프로젝트 디자이너, 빌드 페이지(C#)](../../ide/reference/build-page-project-designer-csharp.md)를 참조하세요.
 
@@ -39,17 +41,17 @@ ms.locfileid: "85419057"
 
 **빌드 전 이벤트 명령줄**
 
-빌드를 시작하기 전에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 전 편집**을 클릭하여 [빌드 전 이벤트/빌드 후 이벤트 명령줄](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) 대화 상자를 표시합니다.
+빌드를 시작하기 전에 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 전 편집** 을 클릭하여 [빌드 전 이벤트/빌드 후 이벤트 명령줄](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) 대화 상자를 표시합니다.
 
 > [!NOTE]
 > 프로젝트가 최신 상태이고 빌드가 트리거되지 않으면 빌드 전 이벤트가 실행되지 않습니다.
 
 **빌드 후 이벤트 명령줄**
 
-빌드가 끝난 후 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 후 편집**을 클릭하여 **빌드 전 이벤트/빌드 후 이벤트 명령줄** 대화 상자를 표시합니다.
+빌드가 끝난 후 실행할 명령을 지정합니다. 긴 명령을 입력하려면 **빌드 후 편집** 을 클릭하여 **빌드 전 이벤트/빌드 후 이벤트 명령줄** 대화 상자를 표시합니다.
 
 > [!NOTE]
-> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
+> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
 
 **빌드 후 이벤트 실행**
 
@@ -96,7 +98,7 @@ ms.locfileid: "85419057"
 > [!NOTE]
 > SDK 스타일 프로젝트를 지원하기 위해 프로젝트 파일을 변경했습니다. 이전 형식에서 SDK 스타일 형식으로 프로젝트 파일을 수동으로 마이그레이션하는 경우, 앞의 코드에 나온 것처럼 `PreBuildEvent` 및 `PostBuildEvent` 속성을 삭제하고 `PreBuild` 및 `PostBuild` 대상으로 바꿔야 합니다. 프로젝트가 SDK 스타일 프로젝트인지 확인하는 방법을 알아보려면 [프로젝트 형식 확인](/nuget/resources/check-project-format)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [방법: 빌드 이벤트 지정(C#)](../../ide/how-to-specify-build-events-csharp.md)

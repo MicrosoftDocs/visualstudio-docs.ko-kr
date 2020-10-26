@@ -1,5 +1,7 @@
 ---
 title: '방법: 공통 출력 디렉터리로 빌드'
+description: 프로젝트의 빌드 출력 경로를 변경하여 모든 출력이 동일한 폴더에 배치되도록 할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284778"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136968"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>방법: 공통 출력 디렉터리로 빌드
 
@@ -28,9 +30,9 @@ ms.locfileid: "85284778"
 
 1. 솔루션에서 한 프로젝트를 클릭합니다.
 
-2. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **속성** 을 클릭합니다.
 
-3. 프로젝트의 유형에 따라 **컴파일** 탭 또는 **빌드** 탭을 클릭하고 **출력 경로**를 솔루션에 있는 모든 프로젝트에 사용할 폴더로 설정합니다.
+3. 프로젝트의 유형에 따라 **컴파일** 탭 또는 **빌드** 탭을 클릭하고 **출력 경로** 를 솔루션에 있는 모든 프로젝트에 사용할 폴더로 설정합니다.
 
 4. 솔루션의 모든 프로젝트에 대해 1-3단계를 반복합니다.
 

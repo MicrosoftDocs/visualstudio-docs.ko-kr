@@ -1,5 +1,7 @@
 ---
 title: JavaScript IntelliSense
+description: Visual Studio에서 더 다양한 기능의 IntelliSense, 최신 JavaScript 기능 지원, 향상된 생산성 기능을 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/28/2017
 ms.topic: conceptual
 ms.technology: vs-javascript
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593722"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947832"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -121,7 +123,7 @@ function Foo(param1) {
 <a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>TypeScript 선언 파일 기반 IntelliSense
 
-JavaScript 및 TypeScript는 이제 같은 언어 서비스에 기반을 두므로 더 다양한 방법으로 조작할 수 있습니다. 예를 들어 JavaScript IntelliSense는 *.d.ts* 파일에 선언된 값에 대해 제공될 수 있고([TypeScript 설명서](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) 참조), TypeScript에 선언된 인터페이스 및 클래스 등의 형식은 JsDoc 주석에서 형식으로 사용할 수 있습니다.
+JavaScript 및 TypeScript는 이제 같은 언어 서비스에 기반을 두므로 더 다양한 방법으로 조작할 수 있습니다. 예를 들어 JavaScript IntelliSense는 *.d.ts* 파일에 선언된 값에 대해 제공될 수 있고( [TypeScript 설명서](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) 참조), TypeScript에 선언된 인터페이스 및 클래스 등의 형식은 JsDoc 주석에서 형식으로 사용할 수 있습니다.
 
 다음 내용은 `JsDoc` 태그를 사용하는 같은 프로젝트에서 인터페이스를 통해 이 형식 정보를 JavaScript 파일에 제공하는 TypeScript 정의 파일의 간단한 예제입니다.
 
@@ -132,12 +134,12 @@ JavaScript 및 TypeScript는 이제 같은 언어 서비스에 기반을 두므�
 
 TypeScript 환경에서 가장 인기 있는 JavaScript 라이브러리에는 *.d.ts* 파일을 통해 설명되는 API가 있고 해당 정의의 가장 일반적인 리포지토리는 [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)에 있습니다.
 
-기본적으로 Salsa 언어 서비스는 어떤 JavaScript 라이브러리가 사용 중인지 검색하고, 더 다양한 IntelliSense를 제공하기 위해 라이브러리를 설명하는 해당 *.d.ts* 파일을 자동으로 다운로드하여 참조합니다. 파일은 *%LOCALAPPDATA%\Microsoft\TypeScript*의 사용자 폴더 아래에 있는 캐시에 다운로드됩니다.
+기본적으로 Salsa 언어 서비스는 어떤 JavaScript 라이브러리가 사용 중인지 검색하고, 더 다양한 IntelliSense를 제공하기 위해 라이브러리를 설명하는 해당 *.d.ts* 파일을 자동으로 다운로드하여 참조합니다. 파일은 *%LOCALAPPDATA%\Microsoft\TypeScript* 의 사용자 폴더 아래에 있는 캐시에 다운로드됩니다.
 
 > [!NOTE]
 > *tsconfig.json* 구성 파일을 사용할 경우 이 기능은 기본적으로 **사용되지 않지만** 아래 추가로 설명된 대로 사용되도록 설정할 수 있습니다.
 
-현재 자동 검색은 npm에서 다운로드된 종속성(*package.json* 파일 읽기 수행), Bower(*bower.json* 파일 읽기 수행) 및 대략 상위 400개의 가장 인기 있는 JavaScript 라이브러리 목록과 일치하는 프로젝트의 느슨한 파일에 적용됩니다. 예를 들어 프로젝트에 *jquery-1.10.min.js*가 있는 경우 더 나은 편집 환경을 제공하기 위해 *jquery.d.ts* 파일이 페치 및 다운로드됩니다. 이 *.d.ts* 파일은 프로젝트에 영향을 미치지 않습니다.
+현재 자동 검색은 npm에서 다운로드된 종속성( *package.json* 파일 읽기 수행), Bower( *bower.json* 파일 읽기 수행) 및 대략 상위 400개의 가장 인기 있는 JavaScript 라이브러리 목록과 일치하는 프로젝트의 느슨한 파일에 적용됩니다. 예를 들어 프로젝트에 *jquery-1.10.min.js* 가 있는 경우 더 나은 편집 환경을 제공하기 위해 *jquery.d.ts* 파일이 페치 및 다운로드됩니다. 이 *.d.ts* 파일은 프로젝트에 영향을 미치지 않습니다.
 
 자동 획득을 사용하지 않으려면 다음 설명대로 구성 파일을 추가하여 기능을 사용하지 않도록 설정합니다. 사용할 정의 파일을 직접 프로젝트 내에 수동으로 배치할 수 있습니다.
 

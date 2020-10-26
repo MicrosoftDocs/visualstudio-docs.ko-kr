@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740034"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927902"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript 코드 컴파일(Node.js)
 
@@ -33,17 +33,17 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
 1. 프로젝트에 아직 포함되지 않은 경우 [TypeScript npm 패키지](https://www.npmjs.com/package/typescript)를 설치합니다.
 
-   솔루션 탐색기(오른쪽 창)의 프로젝트 루트에서 *package.json*을 엽니다. 나열된 패키지는 솔루션 탐색기의 npm 노드 아래에 있는 패키지에 해당합니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
+   솔루션 탐색기(오른쪽 창)의 프로젝트 루트에서 *package.json* 을 엽니다. 나열된 패키지는 솔루션 탐색기의 npm 노드 아래에 있는 패키지에 해당합니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
 
-   Node.js 프로젝트의 경우 명령줄 또는 IDE를 사용하여 TypeScript npm 패키지를 설치할 수 있습니다. IDE를 사용하여 설치하려면 솔루션 탐색기에서 npm 노드를 마우스 오른쪽 단추로 클릭하여 **새 npm 패키지 설치**를 선택하고 **TypeScript**를 검색한 다음 패키지를 설치합니다.
+   Node.js 프로젝트의 경우 명령줄 또는 IDE를 사용하여 TypeScript npm 패키지를 설치할 수 있습니다. IDE를 사용하여 설치하려면 솔루션 탐색기에서 npm 노드를 마우스 오른쪽 단추로 클릭하여 **새 npm 패키지 설치** 를 선택하고 **TypeScript** 를 검색한 다음 패키지를 설치합니다.
 
    패키지 설치 진행률을 확인하려면 **출력** 창의 **npm** 옵션을 선택합니다. 설치된 패키지는 솔루션 탐색기의 **npm** 노드 아래에 표시됩니다.
 
-1. 프로젝트에 아직 포함되지 않은 경우 프로젝트 루트에 *.tsconfig* 파일을 추가합니다. 파일을 추가하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 선택합니다. **TypeScript JSON 구성 파일**을 선택하고 **추가**를 클릭합니다.
+1. 프로젝트에 아직 포함되지 않은 경우 프로젝트 루트에 *.tsconfig* 파일을 추가합니다. 파일을 추가하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목** 을 선택합니다. **TypeScript JSON 구성 파일** 을 선택하고 **추가** 를 클릭합니다.
 
    Visual Studio가 프로젝트 루트에 *tsconfig.json* 파일을 추가합니다. 이 파일을 사용하여 TypeScript 컴파일러에 대한 [옵션을 구성](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)할 수 있습니다.
 
-1. *tsconfig.json*을 열고 업데이트해 원하는 컴파일러 옵션을 설정합니다.
+1. *tsconfig.json* 을 열고 업데이트해 원하는 컴파일러 옵션을 설정합니다.
 
    다음은 간단한 *tsconfig.json* 파일 예제입니다.
 
@@ -72,14 +72,14 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
 ## <a name="build-the-application"></a>애플리케이션 빌드
 
-1. TypeScript( *.ts*) 또는 TypeScript JSX( *.tsx*) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
+1. TypeScript( *.ts* ) 또는 TypeScript JSX( *.tsx* ) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. *package.json*에서 다음 스크립트를 사용하여 Visual Studio 빌드 및 정리 명령에 대한 지원을 추가합니다.
+1. *package.json* 에서 다음 스크립트를 사용하여 Visual Studio 빌드 및 정리 명령에 대한 지원을 추가합니다.
 
    ```json
    "scripts": {
@@ -100,12 +100,12 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
    TypeScript에서 Vue를 사용하는 예제는 [Vue.js 애플리케이션 만들기](/javascript/create-application-with-vuejs)를 참조하세요.
 
-1. 시작 페이지, Node.js 런타임 경로, 애플리케이션 포트, 런타임 인수 같은 옵션을 구성해야 하는 경우 솔루션 탐색기의 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+1. 시작 페이지, Node.js 런타임 경로, 애플리케이션 포트, 런타임 인수 같은 옵션을 구성해야 하는 경우 솔루션 탐색기의 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.
 
    >[!NOTE]
-   > 타사 도구를 구성하면 Node.js 프로젝트는 **도구** > **옵션** > **프로젝트 및 솔루션** > **웹 패키지 관리** > **외부 웹 도구**에 구성된 경로를 사용하지 않습니다. 이러한 설정은 다른 프로젝트 형식에 사용됩니다.
+   > 타사 도구를 구성하면 Node.js 프로젝트는 **도구** > **옵션** > **프로젝트 및 솔루션** > **웹 패키지 관리** > **외부 웹 도구** 에 구성된 경로를 사용하지 않습니다. 이러한 설정은 다른 프로젝트 형식에 사용됩니다.
 
-1. **빌드 > 솔루션 빌드**를 선택합니다.
+1. **빌드 > 솔루션 빌드** 를 선택합니다.
 
    앱은 실행할 때 자동으로 빌드되지만, 빌드 프로세스 도중 발생하는 작업을 살펴보겠습니다.
 
@@ -113,9 +113,13 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
    소스 맵 파일은 [디버깅](../javascript/debug-nodejs.md)에 필요합니다.
 
+### <a name="run-the-application"></a>애플리케이션 실행
+
+앱을 컴파일한 후 실행하는 방법에 대한 지침은 [첫 번째 Node.js 앱 만들기](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)를 참조하세요.
+
 ## <a name="automate-build-tasks"></a>빌드 작업 자동화
 
 Visual Studio에서 작업 실행기 탐색기를 사용하여 npm 및 webpack 같은 타사 도구에 대한 작업을 자동화할 수 있습니다.
 
-- [npm 작업 실행기](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner) - *package.json*에 정의된 npm 스크립트에 대한 지원을 추가합니다. Yarn을 지원합니다.
+- [npm 작업 실행기](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner) - *package.json* 에 정의된 npm 스크립트에 대한 지원을 추가합니다. Yarn을 지원합니다.
 - [webpack 작업 실행기](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner) - webpack에 대한 지원을 추가합니다.

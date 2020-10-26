@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76826473"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136838"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>방법: MSBuild 프로젝트 SDK 사용
 
@@ -66,9 +66,6 @@ MSBuild 15.0은 속성 및 대상을 가져오는 데 필요한 소프트웨어 
     </Project>
     ```
 
-    > [!NOTE]
-    > 이는 현재 Mac용 Visual Studio에서 프로젝트 SDK를 참조하는 유일한 지원 방법입니다.
-
 - 최상위 수준 `<Sdk/>` 요소를 사용합니다.
 
     ```xml
@@ -107,7 +104,7 @@ MSBuild 15.0은 속성 및 대상을 가져오는 데 필요한 소프트웨어 
 
    이 확인자는 선택적 버전을 지정한 경우에만 활성화됩니다. 모든 사용자 지정 프로젝트 SDK에 사용할 수 있습니다.
    
-- [.NET CLI](/dotnet/core/tools/)와 함께 설치되는 SDK를 확인하는 .NET CLI 확인자입니다.
+- [.NET SDK](/dotnet/core/sdk/)와 함께 설치되는 MSBuild SDK를 확인하는 .NET SDK 확인자입니다.
 
    이 확인자는 제품의 일부인 `Microsoft.NET.Sdk` 및 `Microsoft.NET.Sdk.Web`과 같은 프로젝트 SDK를 찾습니다.
    
@@ -126,7 +123,7 @@ NuGet 기반 SDK 확인자는 개별 프로젝트 각각이 아닌 한 곳에서
 
 빌드 중에는 각 프로젝트 SDK 버전을 하나만 사용할 수 있습니다. 동일한 프로젝트 SDK의 서로 다른 두 버전을 참조하면 MSBuild에서 경고가 발생합니다. *global.json* 파일에 버전이 지정된 경우 프로젝트에서 버전을 지정하지 **않는** 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [빌드 사용자 지정](../msbuild/customize-your-build.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드 로그 파일 보기, 저장 및 구성 | Microsoft Docs'
+description: 빌드 로그 파일을 보고, 저장하고, 구성할 수 있는 방법을 알아봅니다. 이러한 파일은 빌드 실패 문제 해결과 같은 작업에 유용한 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283907"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136604"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 
@@ -22,7 +24,7 @@ Visual Studio IDE에서 프로젝트를 빌드한 후에 **출력** 창에서 �
 
 - C++ 프로젝트의 경우 프로젝트를 빌드할 때 생성되고 저장되는 로그 파일에서도 동일한 정보를 볼 수 있습니다. 
 
-- 관리 코드 프로젝트의 경우 빌드 출력 창 안을 클릭하고 **Ctrl**+**S**를 누를 수 있습니다. Visual Studio에서 **출력** 창의 정보를 로그 파일로 저장할 위치를 묻는 메시지가 표시됩니다.
+- 관리 코드 프로젝트의 경우 빌드 출력 창 안을 클릭하고 **Ctrl**+**S** 를 누를 수 있습니다. Visual Studio에서 **출력** 창의 정보를 로그 파일로 저장할 위치를 묻는 메시지가 표시됩니다.
 
 또한 IDE를 사용하여 각 빌드에 대해 보려는 어떤 종류의 정보를 지정할 수 있습니다.
 
@@ -30,15 +32,15 @@ MSBuild를 사용하여 종류를 불문하고 프로젝트를 빌드하는 경�
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ 프로젝트에 대한 빌드 로그 파일을 보려면
 
-1. **Windows 탐색기** 또는 **파일 탐색기**에서 다음 파일을 엽니다(프로젝트 루트 폴더에 상대적인 경로). *릴리스*\\<ProjectName>\>.Log* 또는 *Debug\\<프로젝트 이름\>.log*
+1. **Windows 탐색기** 또는 **파일 탐색기** 에서 다음 파일을 엽니다(프로젝트 루트 폴더에 상대적인 경로). *릴리스*\\<ProjectName>\>.Log* 또는 *Debug\\<프로젝트 이름\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>관리 코드 프로젝트에 빌드 로그 파일을 만들려면
 
-1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
 2. **출력** 창에서 텍스트의 아무 곳이나 클릭합니다.
 
-3. **Ctrl**+**S**를 누릅니다.
+3. **Ctrl**+**S** 를 누릅니다.
 
    Visual Studio에서 빌드 출력을 저장할 위치를 묻는 메시지가 표시됩니다.
 
@@ -46,7 +48,7 @@ MSBuild를 사용하여 종류를 불문하고 프로젝트를 빌드하는 경�
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>빌드 로그에 포함되는 정보의 양을 변경하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
 2. **프로젝트 및 솔루션** 페이지에서 **빌드 및 실행** 페이지를 선택합니다.
 

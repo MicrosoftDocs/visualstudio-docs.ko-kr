@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810121"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116152"
 ---
 # <a name="developer-community-guidelines"></a>Developer Community 지침
 
@@ -59,11 +59,13 @@ Visual Studio Developer Community에서 이슈를 검색하여 이슈가 이미 
 
 문제를 보고한 후 상태는 제출의 해당 수명 주기를 나타냅니다. Visual Studio 제품 팀은 피드백을 검토할 때 해당 피드백을 적절한 상태로 설정합니다. [문제 상태 및 FAQ](./report-a-problem.md)를 참조하여 신고한 문제의 처리 상황을 추적합니다.
 
+### <a name="prioritizing-which-issues-to-fix"></a>수정할 문제 우선 순위 지정
+
+신고된 모든 문제를 해결할 수는 없습니다. 일부는 수정하는 데 너무 비용이 많이 들고, 일부는 다른 기능 영역을 회귀할 수도 있고, 일부는 영향이 너무 적을 수 있습니다. 시간을 내서 Microsoft에게 문제 신고서를 전송하셨다면 이런 상황이 실망스러울 수도 있음을 알고 있습니다. 이 프로젝트 또는 Microsoft가 기여한 다른 프로젝트에서 똑같이 겪었던 일이므로 문제가 종결되었고 제공된 이유가 만족스럽지 않은 경우 사용 사례를 명확히 한 후 또 하나의 패스를 위해 문제를 다시 활성화하도록 요청할 수 있습니다. 이때 추가 정보를 요청할 수도 있습니다.
+
+### <a name="missing-important-information"></a>누락된 중요 정보
+
 이슈에 중요한 정보가 누락된 경우 ‘추가 정보 필요’ 상태가 할당됩니다. Microsoft는 필요한 특정 정보를 포함하여 이슈에 댓글을 추가하며 사용자는 전자 메일 알림을 받게 됩니다. 사용자가 7일 이내에 정보를 제공하지 않으면 미리 알림이 전송됩니다. 그 후에는 14일 동안 활동이 없을 경우 티켓을 닫습니다.
-
-### <a name="wont-fix-bugs"></a>버그 수정 안 함
-
-Microsoft는 비용과 혜택 간에 불균형이 발생하면 일부 버그를 닫습니다. 예를 들어 수정이 너무 복잡하여 많은 사용자가 재발을 경험할 위험이 있는 경우에는 수정이 적절하지 않을 수 있습니다. 이와 같은 버그를 닫을 때 해당 이유에 관한 설명이 제공됩니다.
 
 ### <a name="other-product"></a>기타 제품
 

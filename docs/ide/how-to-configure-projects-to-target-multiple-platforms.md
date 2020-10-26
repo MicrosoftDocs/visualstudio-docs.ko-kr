@@ -1,5 +1,6 @@
 ---
 title: 여러 플랫폼을 대상으로 한 프로젝트 구성
+description: Visual Studio에서 솔루션에서 다양한 CPU 아키텍처 또는 플랫폼을 한 번에 대상으로 지정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643e7f413a68d820780db80c87818dd0b8b9c03
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036511"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136708"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
 
@@ -28,19 +29,19 @@ Visual Studio에서는 솔루션에서 다양한 CPU 아키텍처 또는 플랫�
 
 **Configuration Manager** 대화 상자를 사용하면 솔루션 수준 및 프로젝트 수준 구성 및 플랫폼을 만들고 설정할 수 있습니다. 솔루션 수준 구성과 대상의 각 조합에는 이와 관련된 고유한 속성 집합이 포함될 수 있으므로 예를 들어 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] 플랫폼을 대상으로 하는 릴리스 구성, x86 플랫폼을 대상으로 하는 릴리스 구성, x86 플랫폼을 대상으로 하는 디버그 구성 간에 쉽게 전환할 수 있습니다.
 
-1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.
+1. **빌드** 메뉴에서 **Configuration Manager** 를 클릭합니다.
 
-2. **활성 솔루션 플랫폼 상자**에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<New>** 를 선택하여 새 플랫폼을 만듭니다. Visual Studio는 애플리케이션을 컴파일하여 **구성 관리자** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 지정합니다.
+2. **활성 솔루션 플랫폼 상자** 에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<New>** 를 선택하여 새 플랫폼을 만듭니다. Visual Studio는 애플리케이션을 컴파일하여 **구성 관리자** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 지정합니다.
 
 ## <a name="remove-a-platform"></a>플랫폼 제거
 
 플랫폼에 대한 요구가 없다고 생각되면 **Configuration Manager** 대화 상자를 사용하여 제거할 수 있습니다. 그러면 구성 및 대상 조합에 대해 구성한 모든 솔루션 및 프로젝트 설정이 제거됩니다.
 
-1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.
+1. **빌드** 메뉴에서 **Configuration Manager** 를 클릭합니다.
 
-2. **활성 솔루션 플랫폼 상자**에서 **\<Edit>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.
+2. **활성 솔루션 플랫폼 상자** 에서 **\<Edit>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.
 
-3. 제거하려는 플랫폼을 클릭하고 **제거**를 클릭합니다.
+3. 제거하려는 플랫폼을 클릭하고 **제거** 를 클릭합니다.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>한 솔루션으로 여러 플랫폼 대상 지정
 
@@ -48,7 +49,7 @@ Visual Studio에서는 솔루션에서 다양한 CPU 아키텍처 또는 플랫�
 
 ### <a name="to-target-multiple-platforms"></a>여러 플랫폼을 대상으로 지정하려면
 
-1. **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
+1. **Configuration Manager** 를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
 
 2. **활성 솔루션 플랫폼** 목록에서 대상으로 지정할 플랫폼을 선택합니다.
 
@@ -56,7 +57,7 @@ Visual Studio에서는 솔루션에서 다양한 CPU 아키텍처 또는 플랫�
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>한 번에 여러 솔루션 구성을 빌드하려면
 
-1. **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
+1. **Configuration Manager** 를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.
 
 2. **일괄 빌드** 창을 사용하여 한 번에 여러 솔루션 구성을 빌드합니다.
 

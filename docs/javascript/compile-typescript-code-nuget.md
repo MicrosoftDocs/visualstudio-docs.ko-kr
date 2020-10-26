@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454622"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927928"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>TypeScript 코드 컴파일(ASP.NET Core)
 
@@ -31,7 +31,7 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
 
 1. Visual Studio에서 ASP.NET Core 프로젝트를 엽니다.
 
-1. 솔루션 탐색기(오른쪽 창)에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. **찾아보기** 탭에서 **Microsoft.TypeScript.MSBuild**를 검색한 다음 오른쪽에 있는 **설치**를 클릭하여 패키지를 설치합니다.
+1. 솔루션 탐색기(오른쪽 창)에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다. **찾아보기** 탭에서 **Microsoft.TypeScript.MSBuild** 를 검색한 다음 오른쪽에 있는 **설치** 를 클릭하여 패키지를 설치합니다.
 
    ![NuGet 패키지 추가](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -44,11 +44,11 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
    </PackageReference>
    ```
 
-1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 선택합니다. **TypeScript JSON 구성 파일**을 선택하고 **추가**를 클릭합니다.
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목** 을 선택합니다. **TypeScript JSON 구성 파일** 을 선택하고 **추가** 를 클릭합니다.
 
    Visual Studio가 프로젝트 루트에 *tsconfig.json* 파일을 추가합니다. 이 파일을 사용하여 TypeScript 컴파일러에 대한 [옵션을 구성](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)할 수 있습니다.
 
-1. *tsconfig.json*을 열고 업데이트해 원하는 컴파일러 옵션을 설정합니다.
+1. *tsconfig.json* 을 열고 업데이트해 원하는 컴파일러 옵션을 설정합니다.
 
    다음은 간단한 *tsconfig.json* 파일 예제입니다.
 
@@ -77,7 +77,7 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
 
 ### <a name="build-the-application"></a>애플리케이션 빌드
 
-1. TypeScript( *.ts*) 또는 TypeScript JSX( *.tsx*) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
+1. TypeScript( *.ts* ) 또는 TypeScript JSX( *.tsx* ) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
 
    ```typescript
    let message: string = 'Hello World';
@@ -86,7 +86,7 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
 
 1. 이전의 비 SDK 스타일 프로젝트를 사용하는 경우 빌드하기 전에 [기본 가져오기 제거](#remove-default-imports)의 지침을 따르세요.
 
-1. **빌드 > 솔루션 빌드**를 선택합니다.
+1. **빌드 > 솔루션 빌드** 를 선택합니다.
 
    앱은 실행할 때 자동으로 빌드되지만, 빌드 프로세스 도중 발생하는 작업을 살펴보겠습니다.
 
@@ -106,7 +106,11 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
 
 Task Runner에서 gulp를 사용하여 앱을 빌드하는 예제는 [ASP.NET Core 및 TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)를 참조하세요.
 
-Visual Studio에서 예상한 버전이 아닌 Node.js 또는 타사 도구를 사용하는 문제가 발생하는 경우 Visual Studio가 사용할 경로를 설정해야 할 수 있습니다. **도구** > **옵션**을 선택합니다. **프로젝트 및 솔루션**에서 **웹 패키지 관리** > **외부 웹 도구**를 선택합니다.
+Visual Studio에서 예상한 버전이 아닌 Node.js 또는 타사 도구를 사용하는 문제가 발생하는 경우 Visual Studio가 사용할 경로를 설정해야 할 수 있습니다. **도구** > **옵션** 을 선택합니다. **프로젝트 및 솔루션** 에서 **웹 패키지 관리** > **외부 웹 도구** 를 선택합니다.
+
+### <a name="run-the-application"></a>애플리케이션 실행
+
+앱을 컴파일한 후 실행하는 방법에 대한 지침은 [첫 번째 Node.js 앱 만들기](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)를 참조하세요.
 
 ### <a name="nuget-package-structure-details"></a>NuGet 패키지 구조 세부 정보
 
@@ -119,15 +123,15 @@ Visual Studio에서 예상한 버전이 아닌 Node.js 또는 타사 도구를 �
 
     1. *Microsoft.TypeScript.MSBuild.targets*
 
-        이 파일은 *tools* 폴더에서 *Microsoft.TypeScript.targets*를 가져오기 전에 *TypeScript.Tasks.dll* 경로와 같은 런타임 플랫폼을 지정하는 변수를 설정합니다.
+        이 파일은 *tools* 폴더에서 *Microsoft.TypeScript.targets* 를 가져오기 전에 *TypeScript.Tasks.dll* 경로와 같은 런타임 플랫폼을 지정하는 변수를 설정합니다.
 
     2. *Microsoft.TypeScript.MSBuild.props*
 
-        이 파일은 *tools* 폴더에서 *Microsoft.TypeScript.Default.props*를 가져오며, NuGet을 통해 빌드를 시작했음을 나타내는 속성을 설정합니다.
+        이 파일은 *tools* 폴더에서 *Microsoft.TypeScript.Default.props* 를 가져오며, NuGet을 통해 빌드를 시작했음을 나타내는 속성을 설정합니다.
 
 - *tools* 폴더
 
-    2\.3보다 이전 버전의 패키지에는 tsc 폴더만 포함되어 있습니다. *Microsoft.TypeScript.targets* 및 *TypeScript.Tasks.dll*은 루트 수준에 있습니다.
+    2\.3보다 이전 버전의 패키지에는 tsc 폴더만 포함되어 있습니다. *Microsoft.TypeScript.targets* 및 *TypeScript.Tasks.dll* 은 루트 수준에 있습니다.
 
     패키지 버전 2.3 이상에서는 루트 수준에 `Microsoft.TypeScript.targets` 및 `Microsoft.TypeScript.Default.props`가 포함되어 있습니다. 이러한 파일에 대한 자세한 내용은 [MSBuild 구성](https://www.typescriptlang.org/docs/handbook/compiler-options-in-msbuild.html)을 참조하세요.
 
@@ -147,7 +151,7 @@ Visual Studio에서 예상한 버전이 아닌 Node.js 또는 타사 도구를 �
         이 폴더에는 노드 스크립트로 실행하는 데 필요한 `tsc.js`, `tsserver.js` 및 모든 종속성 파일이 포함되어 있습니다.
 
         > [!NOTE]
-        > Visual Studio가 설치된 경우 번들로 포함된 *node.exe*가 자동으로 선택됩니다. 설치하지 않은 경우 컴퓨터에 Node.js를 설치해야 합니다.
+        > Visual Studio가 설치된 경우 번들로 포함된 *node.exe* 가 자동으로 선택됩니다. 설치하지 않은 경우 컴퓨터에 Node.js를 설치해야 합니다.
 
         3\.1보다 이전 버전에서는 컴파일을 실행하기 위한 `tsc.exe` 실행 파일이 포함되어 있습니다. 버전 3.1에서는 `node.exe`를 사용하기 위해 해당 파일은 제거되었습니다.
 
@@ -157,7 +161,7 @@ Visual Studio에서 예상한 버전이 아닌 Node.js 또는 타사 도구를 �
 
 프로젝트에서 MSBuild 지원을 위해 NuGet 패키지를 사용하는 경우 프로젝트 파일이 `Microsoft.TypeScript.Default.props` 또는 `Microsoft.TypeScript.targets`를 가져와야 합니다. 파일은 NuGet 패키지가 가져오기 때문에 개별적으로 포함할 경우 의도하지 않은 동작이 발생할 수 있습니다.
 
-1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다.
+1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드** 를 선택합니다.
 
 1. 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **편집\<*project file name*\>** 을 선택합니다.
 

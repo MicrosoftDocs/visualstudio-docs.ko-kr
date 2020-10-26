@@ -6,14 +6,14 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91025047"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210755"
 ---
-Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
+Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
 ::: moniker range="vs-2017"
 
@@ -29,7 +29,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 빌드�
 
 이 이미지는 프로젝트와 사용할 만한 몇 가지 주요 도구 창이 열려 있는 Visual Studio를 보여줍니다.
 
-- [솔루션 탐색기](../../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](../tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
+- [솔루션 탐색기](../../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기** 에서 파일을 [솔루션 및 프로젝트](../tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
 - [편집기 창](../../ide/writing-code-in-the-code-and-text-editor.md)(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
 
@@ -73,7 +73,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 - 코드 정리
 
-   단추를 클릭하여 코드 형식을 지정하고 [코드 스타일 설정](../../ide/reference/options-text-editor-csharp-formatting.md), [.editorconfig 규칙](../../ide/create-portable-custom-editor-options.md) 및 [Roslyn 분석기](../../code-quality/roslyn-analyzers-overview.md)에서 제안하는 코드 수정 사항을 적용합니다. **코드 정리**는 코드 검토로 이동하기 전에 코드의 문제를 해결하는 데 도움이 됩니다. (현재 C# 코드에만 사용할 수 있습니다.)
+   단추를 클릭하여 코드 형식을 지정하고 [코드 스타일 설정](../../ide/reference/options-text-editor-csharp-formatting.md), [.editorconfig 규칙](../../ide/create-portable-custom-editor-options.md) 및 [Roslyn 분석기](../../code-quality/roslyn-analyzers-overview.md)에서 제안하는 코드 수정 사항을 적용합니다. **코드 정리** 는 코드 검토로 이동하기 전에 코드의 문제를 해결하는 데 도움이 됩니다. (현재 C# 코드에만 사용할 수 있습니다.)
 
    ![Visual Studio의 코드 정리 단추](../media/vs-2019/code-cleanup.png)
 
@@ -91,12 +91,9 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
    ![Visual Studio 멤버 목록](../media/intellisense-list-members.png)
 
-- 검색 상자
+- [Visual Studio 검색](../../ide/visual-studio-search.md)
 
-   Visual Studio는 메뉴, 옵션 및 속성이 매우 다양하여 때때로 버거울 수도 있습니다. 검색 상자는 Visual Studio에서 필요한 항목을 빠르게 찾을 수 있는 좋은 방법입니다. 찾으려는 이름을 입력하기만 하면 Visual Studio는 원하는 곳으로 정확하게 안내하는 결과를 나열합니다. 예를 들어 다른 프로그래밍 언어를 위한 지원을 추가하도록 Visual Studio에 기능을 추가하는 경우 검색 상자를 사용하면 워크로드 또는 개별 구성 요소를 설치하도록 Visual Studio 설치 관리자가 열립니다.
-
-   > [!TIP]
-   > 검색 상자에 대한 바로 가기는 **Ctrl**+**Q**를 누릅니다.
+   Visual Studio는 메뉴, 옵션 및 속성이 매우 다양하여 때때로 버거울 수도 있습니다. Visual Studio 검색( **Ctrl**+**Q** )은 IDE 기능과 코드를 한곳에서 신속하게 찾을 수 있는 좋은 방법입니다.
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
    ::: moniker range="vs-2019"
 
    ![Visual Studio 2019의 검색 상자](../media/vs-2019/quick-launch-nuget.png)
+
+    자세한 내용 및 생산성 팁은 [How to use Visual Studio search](../../ide/visual-studio-search.md)(Visual Studio 검색을 사용하는 방법)를 참조하세요.
 
    ::: moniker-end
 
@@ -138,7 +137,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
    **정의 보기** 창은 실제로 개별 파일을 열지 않고 메서드 또는 형식의 정의 보여 줍니다.
 
-   ![정의 보기](../media/peek-definition.png)
+   ![정의 피킹(Peeking)](../media/peek-definition.png)
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
 
@@ -146,13 +145,13 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 ::: moniker range="vs-2017"
 
-시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
+시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드* 를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드*를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
+시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드* 를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
 
 ::: moniker-end
 
@@ -168,32 +167,32 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 1. Visual Studio를 엽니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
    ![메뉴 모음의 파일 > 새 프로젝트](../media/file-new-project-menu.png)
 
-   **새 프로젝트** 대화 상자에는 여러 프로젝트 *템플릿*이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
+   **새 프로젝트** 대화 상자에는 여러 프로젝트 *템플릿* 이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
 
-1. **Visual C#** 에서 **.NET Core** 템플릿 범주를 선택하고 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 **HelloWorld**를 입력한 다음, **확인** 단추를 선택합니다.
+1. **Visual C#** 에서 **.NET Core** 템플릿 범주를 선택하고 **콘솔 앱(.NET Core)** 템플릿을 선택합니다. **이름** 텍스트 상자에 **HelloWorld** 를 입력한 다음, **확인** 단추를 선택합니다.
 
    ![.NET Core 앱 템플릿](../media/overview-new-project-dialog.png)
 
    > [!NOTE]
-   > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+   > **.NET Core** 범주가 표시되지 않으면 **.NET Core 플랫폼 간 개발** 워크로드를 설치해야 합니다. 이를 수행하려면 **새 프로젝트** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 열리면 아래로 스크롤하여 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
-   Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
    ![Visual Studio IDE](../media/overview-ide-console-app.png)
 
-   애플리케이션의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기**라는 창의 오른쪽에 나열됩니다.
+   애플리케이션의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기** 라는 창의 오른쪽에 나열됩니다.
 
    ![빨간색 상자가 있는 Visual Studio IDE](../media/overview-ide-console-app-red-boxes.png)
 
    다른 메뉴와 도구 창을 사용할 수 있지만 지금은 넘어가겠습니다.
 
-1. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작**을 선택하면 됩니다. **Ctrl**+**F5**를 누를 수도 있습니다.
+1. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작** 을 선택하면 됩니다. **Ctrl**+**F5** 를 누를 수도 있습니다.
 
    ![디버그 > 디버깅하지 않고 시작 메뉴](../media/overview-start-without-debugging.png)
 
@@ -218,7 +217,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **디버그** > **디버깅 없이 시작**을 선택하거나 **Ctrl**+**F5**를 눌러 앱을 다시 실행합니다.
+1. **디버그** > **디버깅하지 않고 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
 
    Visual Studio에서 앱을 다시 빌드하고, 콘솔 창이 열리며 사용자 이름을 묻는 메시지가 표시됩니다.
 
@@ -236,33 +235,33 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    리포지토리 복제, 최근 프로젝트 열기 또는 새 프로젝트 만들기에 대한 다양한 옵션이 포함되어 있는 시작 창이 표시됩니다.
 
-1. **새 프로젝트 만들기**를 선택합니다.
+1. **새 프로젝트 만들기** 를 선택합니다.
 
    ![Visual Studio 시작 창에서 새 프로젝트 만들기](../media/vs-2019/start-window-create-new-project.png)
 
-   **새 프로젝트 만들기** 창이 열리고 여러 프로젝트 *템플릿*이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
+   **새 프로젝트 만들기** 창이 열리고 여러 프로젝트 *템플릿* 이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
 
-1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console**을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. **언어** 드롭다운 목록에서 **C#** 를 선택하여 추가로 템플릿 결과를 필터링할 수 있습니다. **콘솔 앱(.NET Core)** 템플릿을 선택하고 **다음**을 선택합니다.
+1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console** 을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. **언어** 드롭다운 목록에서 **C#** 를 선택하여 추가로 템플릿 결과를 필터링할 수 있습니다. **콘솔 앱(.NET Core)** 템플릿을 선택하고 **다음** 을 선택합니다.
 
     ![Visual Studio에서 새 프로젝트 만들기](../media/vs-2019/create-new-project.png)
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld**를 입력하고, 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경한 다음, **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고, 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경한 다음, **만들기** 를 선택합니다.
 
    ![Visual Studio에서 새 프로젝트 구성](../media/vs-2019/configure-new-project.png)
 
-   Visual Studio가 프로젝트를 생성합니다. <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 사용해서 콘솔(프로그램 출력) 창에 "Hello World!" 리터럴 문자열을 출력하는 간단한 "Hello World" 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
    ![Visual Studio IDE](../media/vs-2019/overview-ide-console-app.png)
 
-   애플리케이션의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기**라는 창의 오른쪽에 나열됩니다.
+   애플리케이션의 C# 코드는 대부분의 공간을 차지하는 편집기 창에 표시됩니다. 텍스트는 지정된 색으로 자동으로 표시되어 다른 부분(예: 키워드 또는 형식)을 나타냅니다. 또한 코드에서 작은 세로 파선은 서로 일치하는 중괄호를 나타내며, 줄 번호는 나중에 코드를 찾는 데 도움이 됩니다. 작은 상자 안에 있는 빼기 기호를 선택하여 코드 블록을 축소하거나 확장할 수 있습니다. 이 코드 개요 기능을 사용하면 필요 없는 코드를 숨길 수 있으므로 화면 상의 혼란을 최소화할 수 있습니다. 프로젝트 파일은 **솔루션 탐색기** 라는 창의 오른쪽에 나열됩니다.
 
    ![빨간색 상자가 있는 Visual Studio IDE](../media/vs-2019/overview-ide-console-app-red-boxes.png)
 
    다른 메뉴와 도구 창을 사용할 수 있지만 지금은 넘어가겠습니다.
 
-1. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작**을 선택하면 됩니다. **Ctrl**+**F5**를 누를 수도 있습니다.
+1. 이제 앱을 시작합니다. 메뉴 모음의 **디버그** 메뉴에서 **디버깅하지 않고 시작** 을 선택하면 됩니다. **Ctrl**+**F5** 를 누를 수도 있습니다.
 
    ![디버그 > 디버깅하지 않고 시작 메뉴](../media/overview-start-without-debugging.png)
 
@@ -287,7 +286,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **디버그** > **디버깅 없이 시작**을 선택하거나 **Ctrl**+**F5**를 눌러 앱을 다시 실행합니다.
+1. **디버그** > **디버깅하지 않고 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
 
    Visual Studio에서 앱을 다시 빌드하고, 콘솔 창이 열리며 사용자 이름을 묻는 메시지가 표시됩니다.
 
@@ -307,13 +306,13 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 1. `name` 변수를 두 번 클릭하여 선택합니다.
 
-2. 변수의 새 이름 **username**을 입력합니다.
+2. 변수의 새 이름 **username** 을 입력합니다.
 
    변수 주위에 회색 상자가 나타나고 여백에 전구가 나타납니다.
 
 ::: moniker range="vs-2017"
 
-3. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](../../ide/quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기**를 선택합니다.
+3. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](../../ide/quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기** 를 선택합니다.
 
    ![Visual Studio에서 작업 이름 바꾸기](../media/rename-quick-action.png)
 
@@ -325,7 +324,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 ::: moniker range=">=vs-2019"
 
-3. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](../../ide/quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기**를 선택합니다.
+3. 전구 아이콘을 선택하여 사용 가능한 [빠른 작업](../../ide/quick-actions.md)을 표시합니다. **'name'의 이름을 'username'으로 바꾸기** 를 선택합니다.
 
    ![Visual Studio에서 작업 이름 바꾸기](../media/vs-2019/rename-quick-action.png)
 
@@ -339,7 +338,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    ![Visual Studio의 IntelliSense 목록 멤버](../media/intellisense-list-members.png)
 
-5. 클래스의 속성인 **Now**라는 멤버를 두 번 클릭하거나 **Tab** 키를 눌러 선택합니다. 끝에 세미콜론을 추가하여 코드 줄을 완성합니다.
+5. 클래스의 속성인 **Now** 라는 멤버를 두 번 클릭하거나 **Tab** 키를 눌러 선택합니다. 끝에 세미콜론을 추가하여 코드 줄을 완성합니다.
 
 6. 그 아래에 다음 코드 줄을 입력하거나 붙여넣습니다.
 
@@ -361,7 +360,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    ![Visual Studio의 인라인 임시 변수 리팩터링](../media/inline-temporary-variable-refactoring.png)
 
-9. **인라인 임시 변수**를 클릭하여 코드를 리팩터링합니다.
+9. **인라인 임시 변수** 를 클릭하여 코드를 리팩터링합니다.
 
 ::: moniker range="vs-2017"
 
@@ -381,7 +380,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 ## <a name="debug-code"></a>코드 디버그
 
-코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점*을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
+코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점* 을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
 중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
 
@@ -391,13 +390,13 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    ![Visual Studio 코드 줄의 중단점](../media/breakpoint.png)
 
-1. **디버그** > **디버깅 시작**을 선택하거나 **F5** 키를 눌러 디버깅을 시작합니다.
+1. **디버그** > **디버깅 시작** 을 선택하거나 **F5** 키를 눌러 디버깅을 시작합니다.
 
 1. 콘솔 창이 나타나고 사용자 이름을 묻는 메시지가 표시되면 입력하고 **Enter** 키를 누릅니다.
 
    Visual Studio 코드 편집기로 포커스가 돌아오고 중단점이 있는 코드 줄이 노란색으로 강조 표시됩니다. 이는 프로그램이 실행할 다음 코드 줄을 의미합니다.
 
-1. 마우스를 `username` 변수 위로 가져가면 해당 값을 볼 수 있습니다. 또는 `username`을 마우스 오른쪽 단추로 클릭하고 **조사식 추가**를 선택하여 변수를 **조사식** 창에 추가할 수 있습니다. 이 창에서 해당 값을 볼 수도 있습니다.
+1. 마우스를 `username` 변수 위로 가져가면 해당 값을 볼 수 있습니다. 또는 `username`을 마우스 오른쪽 단추로 클릭하고 **조사식 추가** 를 선택하여 변수를 **조사식** 창에 추가할 수 있습니다. 이 창에서 해당 값을 볼 수도 있습니다.
 
    ![Visual Studio에서 디버깅하는 동안 변수 값](../media/debugging-variable-value.png)
 
@@ -409,13 +408,13 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 기본 색 테마 변경을 비롯하여 Visual Studio 사용자 인터페이스를 꾸밀 수 있습니다. **어둡게** 테마로 변경하려면:
 
-1. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 선택하여 **옵션** 대화 상자를 엽니다.
 
 ::: moniker range="vs-2017"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게** 로 변경한 다음 **확인** 을 선택합니다.
 
-   전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
+   전체 IDE의 색 테마가 **어둡게** 로 변경됩니다.
 
    ![어두운 테마의 Visual Studio](../media/dark-theme.png)
 
@@ -423,9 +422,9 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [디버거 기능 둘�
 
 ::: moniker range=">=vs-2019"
 
-2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경한 다음 **확인**을 선택합니다.
+2. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게** 로 변경한 다음 **확인** 을 선택합니다.
 
-   전체 IDE의 색 테마가 **어둡게**로 변경됩니다.
+   전체 IDE의 색 테마가 **어둡게** 로 변경됩니다.
 
    ![어두운 테마의 Visual Studio](../media/vs-2019/dark-theme.png)
 

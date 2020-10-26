@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 03/17/2020
+ms.date: 09/29/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006178"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584128"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
@@ -20,9 +20,9 @@ Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독
 조직에서 GitHub Enterprise가 포함된 Visual Studio Subscriptions를 구입하면 두 부분으로 프로비저닝되고 관리됩니다.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Visual Studio 구독 관리
-조직에서 GitHub Enterprise가 포함된 Visual Studio 구독을 구입하면 구독의 Visual Studio 부분이 즉시 프로비저닝되고 Visual Studio [구독 관리](https://manage.visualstudio.com) 포털에서 할당 및 관리에 구독을 사용할 수 있습니다. 
+조직에서 GitHub Enterprise가 포함된 Visual Studio 구독을 구입하면 구독의 Visual Studio 부분이 즉시 프로비저닝되고 Visual Studio [구독 관리](https://manage.visualstudio.com) 포털에서 할당 및 관리에 구독을 사용할 수 있습니다. GitHub 구독과 함께 Visual Studio를 할당하면 구독자는 <https://my.visualstudio.com/subscriptions>에서 Visual Studio 구독에 액세스할 수 있음을 알리는 전자 메일을 받게 됩니다.
 
-구독 관리에 대한 자세한 내용은 다음 항목을 참조하세요.
+Visual Studio 구독 관리에 대한 자세한 내용은 다음 항목을 참조하세요.
 - [관리 포털 사용](using-admin-portal.md)
 - [구독 할당](assign-license.md)
 - [구독 편집](edit-license.md)
@@ -30,9 +30,14 @@ Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독
 - [초과 할당](handle-overclaimed-license.md)
 
 > [!Important]
-> GitHub Enterprise가 포함된 Visual Studio Subscriptions가 Visual Studio 구독 관리자에 의해 할당되고 해당 구독의 구매가 없는 경우 조직 내의 GitHub Enterprise 관리자에게 해당 항목이 표시되지 않습니다. GitHub Enterprise 구독을 표시하려면 구독을 처음 할당할 때 **하나 이상의** GitHub Enterprise가 포함된 Visual Studio Professional 또는 GitHub Enterprise 구독이 포함된 Visual Studio Enterprise를 구매해야 합니다.  
->
-> 할당된 GitHub 구독마다 Visual Studio 구독 관리 포털에 GitHub 구독이 할당된 해당 Visual Studio가 있고 이 구독의 라이선스 요구 사항을 준수하는지 확인하는 것은 고객의 책임입니다.
+> GitHub Enterprise가 포함된 Visual Studio 구독을 구입하지 않고 Visual Studio 구독 관리자가 할당하는 경우 GitHub Enterprise 계정을 만들고자 한다는 알림이 GitHub에 전송되지 않습니다.  구독이 할당되려면 먼저 GitHub Enterprise가 포함된 Visual Studio 구독을 **하나 이상 구입** 해야 합니다.
+
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스가 포함된 Visual Studio란?
+GitHub Enterprise는 Visual Studio 구독과 별도로 설정 및 관리됩니다. GitHub Enterprise가 포함된 Visual Studio 구매 이후 GitHub Enterprise 계정 설정 프로세스는 [manage.visualstudio.com](https://manage.visualstudio.com)에서 계약을 설정하는 것과 병렬로(그러나 별도로) 시작됩니다. 이 GitHub Enterprise 계정을 설정하는 데 다소 시간이 걸릴 수 있습니다. 
+
+회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise 구독이 있는 Visual Studio가 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 이메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 해당 조직에 대한 초대를 받을 수 있습니다.
+
+GitHub Enterprise 설정에 대한 자세한 내용은 [구독자 설명서](access-github.md)를 참조하세요.   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>GitHub Enterprise 구독 관리
 GitHub Enterprise 구독을 구매할 때 GitHub에 액세스하고 관리자를 식별하는 조직을 만들고 구성할 수 있도록 고객과 GitHub 파트너 관계를 맺습니다.  그런 다음, 이러한 관리자는 관리자로 설정되었다는 알림을 받습니다.  
@@ -41,37 +46,14 @@ GitHub Enterprise 구독을 구매할 때 GitHub에 액세스하고 관리자를
 
 GitHub는 클라우드 기반 GitHub.com 또는 온-프레미스 GitHub Enterprise 서버로 사용할 수 있습니다.  두 버전을 관리하는 프로세스가 다릅니다.  GitHub는 GitHub Enterprise 구독을 관리하는 데 도움이 되는 다양한 도움말 항목과 관리자 가이드를 제공합니다.  아래 선택한 항목의 링크를 제공했습니다.  
 
-### <a name="githubcom"></a>GitHub.com 
-GitHub.com 관리에 대한 자세한 내용은 [GitHub 도움말](https://help.github.com/en)에서 다음 항목을 체크 아웃하세요.
-+ [도움말 항목의 전체 목록](https://help.github.com/en)
-+ [조직의 멤버 자격 관리](https://help.github.com/en/articles/managing-membership-in-your-organization)
-+ [조직에 조인하도록 사용자 초대](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-  - [팀/조직에서 사용자 제거](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-  - [조직의 이전 멤버 복원](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-+ [역할을 사용하여 액세스 관리](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-+ [사용자를 팀으로 구성](https://help.github.com/en/articles/organizing-members-into-teams)
-+ [조직의 리포지토리에 대한 액세스 관리](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
-
-### <a name="github-enterprise-server"></a>GitHub Enterprise 서버
-GitHub 도움말은 질문에 답하고 조직의 GitHub Enterprise 서버 구현 관리에 대한 팁을 제공하는 다양한 관리자 가이드를 제공합니다.
-
-+ [모든 관리자 가이드 보기](https://help.github.com/en/enterprise/2.16/admin)
-+ [사용자 관리](https://help.github.com/en/enterprise/2.16/admin/user-management)
-  - [조직 및 팀](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-    - [조직 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-    - [팀 만들기](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-    - [팀에 사용자 추가](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-    - [팀 및 조직에서 사용자 제거](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-  - [사용자 보안](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-+ [GitHub Enterprise 서버 설치 및 구성](https://help.github.com/en/enterprise/2.16/admin/installation)
-
 ## <a name="support-resources"></a>지원 리소스
 
-- [GitHub 도움말](https://help.github.com/en)에서 다양한 GitHub 항목에 대한 질문의 답을 찾을 수 있습니다.
+- [GitHub 문서](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)에서 GitHub 할당에 대해 자세히 알아보기
+- [GitHub 도움말](https://help.github.com/en)에서 다양한 GitHub 항목에 대한 질문의 답을 찾습니다.
 - [GitHub 커뮤니티 포럼](https://github.community/)에서 다른 GitHub 사용자의 도움을 받으세요.
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
-- GitHub Enterprise에 대한 [기술 지원](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)을 받으세요.   
+- GitHub Enterprise에 대한 [기술 지원](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)을 받으세요.   
 
 ## <a name="see-also"></a>참조
 

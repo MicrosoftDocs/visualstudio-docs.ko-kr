@@ -1,5 +1,6 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
+description: Visual Studio Tools for Unity, Windows의 변경 로그를 확인합니다. 버전 1.0.0.0부터 4.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471521"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039440"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
@@ -199,7 +200,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 11월 6일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -223,7 +224,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 10월 15일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -245,7 +246,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 16일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -270,7 +271,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -320,7 +321,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -362,7 +363,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -418,7 +419,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 2월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -484,7 +485,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 12월 10일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -568,7 +569,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
 
@@ -606,7 +607,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 8월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -626,7 +627,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - (3.9.0.0에서 백포팅) Unity에서 수정된 Unity 성능 버그에 대한 해결 방법이 롤백되었습니다.
 
@@ -636,7 +637,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - Unity 성능 버그에 대한 일시적인 해결 방법: 프로젝트를 생성할 때 MonoIslands를 캐시합니다.
 
@@ -676,7 +677,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - 새 Unity 런타임에서 사용하는 경우 더 이상 이식 가능한 pdb를 mdb로 변환하지 않습니다.
 
@@ -686,7 +687,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - 실험용 빌드를 사용할 경우 종속성 문제가 해결되었습니다.
 
@@ -766,7 +767,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - Unity 대상 프레임워크 검색이 수정 되었습니다.
 
@@ -778,7 +779,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 2월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -826,7 +827,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - 플레이어 프로젝트에 대한 프로젝트 guid 계산이 수정되었습니다.
 
@@ -852,7 +853,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 12월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -920,7 +921,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **프로젝트 생성:**
+- **Project Generation:**
 
   - Unity 5.5 및 이전 버전에서 Visual Studio 솔루션 생성을 수정합니다.
 
@@ -958,9 +959,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 5월 10일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - MEF 캐시 정리 지원이 추가되었습니다.
 
@@ -976,7 +977,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 4월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -1151,7 +1152,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2016년 2월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **마법사:**
 
@@ -1189,7 +1190,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - [Tabs Studio](https://tabsstudio.com/) Visual Studio 확장과의 비호환성 문제가 해결되었습니다.
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - HKLM 레지스트리 항목을 만들어 VSTU의 시스템 전체 설치(모든 사용자에 대한 설치)를 지원합니다.
 
@@ -1668,7 +1669,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - 공유 폴더를 Unity로 구성해야 하는 필요성을 제거하여 원격 디버깅을 간소화합니다. 이제 Windows에서 Unity 프로젝트에 액세스하기만 하면 됩니다.
 
-- 사용자 지정 Unity 프로필을 표준 .net 대상 프로필로 설치합니다. ReSharper가 나타낼 수 있는 모든 가양성을 수정합니다.
+- 사용자 지정 Unity 프로필을 표준 .NET 대상 프로필로 설치합니다. ReSharper가 나타낼 수 있는 모든 가양성을 수정합니다.
 
 - 디버거에서 제대로 등록하지 않은 스레드를 중단하지 않도록 Unity 스크립팅 엔진 버그를 해결합니다.
 
@@ -1678,7 +1679,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- 사용자 지정 .net 프로필을 수정했습니다.
+- 사용자 지정 .NET 프로필을 수정했습니다.
 
 - 테마 설정 통합을 수정했습니다. VS 2012 어두운 테마와 관련된 문제를 수정합니다.
 
@@ -1751,7 +1752,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - UnityScript 및 Boo 식을 계산할 때 발생할 수 있는 예외 문제를 수정했습니다.
 
-- 프로젝트 파일의 업데이트를 트리거하지 않는 Unity에서 .net API 수준을 변경하는 재발 문제를 수정했습니다.
+- 프로젝트 파일의 업데이트를 트리거하지 않는 Unity에서 .NET API 레벨을 변경하는 재발 문제를 수정했습니다.
 
 - 사용자 코드가 로그 콜백 처리기에 관여할 수 없는 API 결함을 수정했습니다.
 
@@ -1776,7 +1777,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - Visual Studio 2012에서 Unity 프로젝트 탐색기의 백그라운드에 있는 재발 문제를 수정했습니다.
 
-- 전체 .net 프로필의 사용자에 대한 프로젝트 생성 문제를 수정했습니다.
+- 전체 .NET 프로필의 사용자에 대한 프로젝트 생성 문제를 수정했습니다.
 
 - 웹 대상의 사용자에 대한 프로젝트 생성 문제를 수정했습니다.
 

@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android 문제 해결 | Microsoft Docs
-ms.custom: ''
+description: Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386305"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878919"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.
@@ -181,7 +182,7 @@ ms.locfileid: "86386305"
 
   6. Windows 8 Professional 이상을 실행하고 있는지 확인합니다(Windows Server 2008은 지원되지 않음). Windows Server 2012는 지원되지만 데스크톱 경험 기능을 사용하도록 설정해야 합니다.
 
-     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고(**시작 키+R**+**R**을 입력한 다음, `eventvwr` 입력) **Windows 로그**, **시스템**을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor**로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.
+     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고( **시작 키+R**+**R** 을 입력한 다음, `eventvwr` 입력) **Windows 로그** , **시스템** 을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor** 로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.
 
      프로세서가 최소 요구 사항을 충족하지만 하이퍼바이저에 계속 오류가 발생하는 경우 컴퓨터에 사용할 수 있는 BIOS 업그레이드가 있는지 확인하세요. 업그레이드가 있고 적용하기로 선택한 경우 BIOS를 업그레이드할 때 제조업체에서 제공한 모든 사전 예방 조치를 준수합니다(예를 들어 전력 손실로 인해 BIOS 펌웨어 업그레이드가 중단될 경우 BIOS가 영구히 손상될 수 있으므로 주의할 것).
 
@@ -195,7 +196,7 @@ ms.locfileid: "86386305"
 
    다음 제품은 Windows 8 규정 준수를 위해 업그레이드가 필요할 수 있습니다. VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, Cisco VPN 클라이언트 일부 버전 및 기타 가상화 시스템. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
 
-   *해결 방법*으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 애플리케이션을 사용하지 않도록 설정할 수 있습니다. 이러한 애플리케이션에는 다음이 포함될 수 있습니다.
+   *해결 방법* 으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 애플리케이션을 사용하지 않도록 설정할 수 있습니다. 이러한 애플리케이션에는 다음이 포함될 수 있습니다.
 
   - 바이러스 백신 애플리케이션(네트워크 스택에 연결)
 
@@ -241,7 +242,7 @@ ms.locfileid: "86386305"
 
      타사 제품을 제거한 후 Windows Phone 에뮬레이터 내부 스위치를 복원해야 할 수 있습니다. 수행할 작업
 
-  - Hyper-V를 열고 가상 스위치 관리자로 이동합니다. "Windows Phone 에뮬레이터 내부 스위치"라는 가상 스위치를 만들고 해당 연결 형식을 **내부 네트워크**로 설정합니다.
+  - Hyper-V를 열고 가상 스위치 관리자로 이동합니다. "Windows Phone 에뮬레이터 내부 스위치"라는 가상 스위치를 만들고 해당 연결 형식을 **내부 네트워크** 로 설정합니다.
 
      ![가상 스위치 관리자](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -261,9 +262,9 @@ ms.locfileid: "86386305"
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.
  에뮬레이터를 실행하고 있지만 ADB(Android 디버그 브리지)에 연결된 것으로 나타나지 않거나 ADB를 사용하는 Android 도구(예: Android Studio 또는 Eclipse)에 나타나지 않는 경우 에뮬레이터가 ADB를 찾는 위치를 조정해야 할 수 있습니다. 에뮬레이터는 레지스트리 키를 사용하여 Android SDK의 기본 위치를 식별하고 해당 디렉터리에서 \platform-tools\adb.exe 파일을 찾습니다. 에뮬레이터에서 사용하는 Android SDK 경로를 수정하려면
 
-- 시작 단추 상황에 맞는 메뉴에서 **실행** 을 선택하고 대화 상자에 `regedit` 를 입력한 다음 **확인**을 선택하여 레지스트리 편집기를 엽니다.
+- 시작 단추 상황에 맞는 메뉴에서 **실행** 을 선택하고 대화 상자에 `regedit` 를 입력한 다음 **확인** 을 선택하여 레지스트리 편집기를 엽니다.
 
-- 왼쪽의 폴더 트리에서 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools*로 이동합니다.
+- 왼쪽의 폴더 트리에서 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* 로 이동합니다.
 
 - Android SDK의 경로와 일치하도록 **Path** 레지스트리 변수를 수정합니다.
 
@@ -285,13 +286,13 @@ ms.locfileid: "86386305"
 
 1. Hyper-V 관리자를 열고 사용 중인 에뮬레이터 프로필용 VM을 선택합니다.
 
-2. 오른쪽 아래에 있는 **저장된 상태 삭제**를 선택합니다.
+2. 오른쪽 아래에 있는 **저장된 상태 삭제** 를 선택합니다.
 
 3. **설정...** 을 선택합니다.
 
-4. 프로세서 노드를 확장하고 **호환성**을 선택합니다.
+4. 프로세서 노드를 확장하고 **호환성** 을 선택합니다.
 
-5. **다른 프로세서 버전을 사용하는 물리적 컴퓨터로 마이그레이션**을 사용하도록 설정합니다.
+5. **다른 프로세서 버전을 사용하는 물리적 컴퓨터로 마이그레이션** 을 사용하도록 설정합니다.
 
 6. **작업** 아래에서 서비스를 다시 시작한 후에 다시 시도합니다.
 
@@ -302,7 +303,7 @@ ms.locfileid: "86386305"
  사용자가 화면에 파일을 끌어다 놓으면 에뮬레이터는 ADB.exe를 사용하여 화면에 파일을 전송합니다. 파일을 끌어다 놓으려 할 때 오류가 발생하면 에뮬레이터가 ADB.exe에 연결되지 않은 것일 수 있습니다. 해결하려면 [Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.](#ADB)에서 확인할 수 있습니다.
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> 스크린샷의 해상도가 올바르지 않음
- **추가 도구** 창에서 스크린샷 탭을 사용하여 스크린샷을 찍었으나 결과 이미지 크기가 예상과 다른 경우 **캡처**를 선택하기 전에 화면의 확대/축소 수준을 조정해야 할 수 있습니다. 에뮬레이터는 호스트 PC 모니터의 화면 해상도로 스크린샷을 찍습니다.
+ **추가 도구** 창에서 스크린샷 탭을 사용하여 스크린샷을 찍었으나 결과 이미지 크기가 예상과 다른 경우 **캡처** 를 선택하기 전에 화면의 확대/축소 수준을 조정해야 할 수 있습니다. 에뮬레이터는 호스트 PC 모니터의 화면 해상도로 스크린샷을 찍습니다.
 
 ## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> 에뮬레이터가 OpenGL 콘텐츠를 렌더링하지 못함
  에뮬레이터는 호스트 컴퓨터의 GPU를 사용하여 OpenGL 콘텐츠를 렌더링하고 ANGLE 프로젝트를 사용하여 DirectX와의 사이에서 이러한 호출을 변환합니다. 애플리케이션이 디바이스에서는 올바르게 렌더링하지만 에뮬레이터에서는 그렇지 못할 경우 디바이스가 잘못된 OpenGL 호출을 완화시키는 것일 수 있습니다(예: 일치하지 않는 셰이더 변수 사용).

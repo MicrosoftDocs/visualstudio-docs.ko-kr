@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291013"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136864"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild가 프로젝트를 빌드하는 방식
 
@@ -24,7 +24,7 @@ MSBuild는 실제로 어떻게 작동하나요? 이 문서에서는 Visual Studi
 
 ## <a name="startup"></a>Startup 클래스
 
-MSBuild는 Visual Studio에서 *Microsoft.Build.dll*의 MSBuild 개체 모델을 통해 호출하거나 명령줄에서 직접 또는 CI 시스템에서와 같이 스크립트를 통해 실행 파일을 호출하여 호출할 수 있습니다. 두 경우 모두 빌드 프로세스에 영향을 주는 입력에는 프로젝트 파일(또는 Visual Studio 내부 프로젝트 개체), 솔루션 파일, 환경 변수, 명령줄 스위치 또는 동등 개체 모델이 포함됩니다. 시작 단계에서 명령줄 옵션 또는 동등 개체 모델은 로거 구성 등의 MSBuild 설정을 구성하는 데 사용됩니다. 명령줄에서 `-property` 또는 `-p` 스위치를 사용하여 설정된 속성은 프로젝트 파일에 설정된 모든 값을 재정의하는 전역 속성으로 설정되며 나중에 프로젝트 파일을 읽는 경우에도 마찬가지입니다.
+MSBuild는 Visual Studio에서 *Microsoft.Build.dll* 의 MSBuild 개체 모델을 통해 호출하거나 명령줄에서 직접 또는 CI 시스템에서와 같이 스크립트를 통해 실행 파일을 호출하여 호출할 수 있습니다. 두 경우 모두 빌드 프로세스에 영향을 주는 입력에는 프로젝트 파일(또는 Visual Studio 내부 프로젝트 개체), 솔루션 파일, 환경 변수, 명령줄 스위치 또는 동등 개체 모델이 포함됩니다. 시작 단계에서 명령줄 옵션 또는 동등 개체 모델은 로거 구성 등의 MSBuild 설정을 구성하는 데 사용됩니다. 명령줄에서 `-property` 또는 `-p` 스위치를 사용하여 설정된 속성은 프로젝트 파일에 설정된 모든 값을 재정의하는 전역 속성으로 설정되며 나중에 프로젝트 파일을 읽는 경우에도 마찬가지입니다.
 
 다음 섹션에서는 솔루션 파일 또는 프로젝트 파일 등의 입력 파일에 대해 설명합니다.
 
@@ -38,7 +38,7 @@ MSBuild 인스턴스는 한 프로젝트 또는 솔루션의 일부로서 여러
 
 Visual Studio에서 프로젝트가 빌드되는 경우, MSBuild를 직접 호출하는 경우(MSBuild 실행 파일을 통해) 또는 MSBuild 개체 모델을 사용하여 빌드를 시작하는 경우 사이에는 몇 가지 중요한 차이점이 있습니다. Visual Studio는 Visual Studio 빌드에 대한 프로젝트 빌드 순서를 관리합니다. 개별 프로젝트 수준 에서만 MSBuild를 호출하고, 이 경우 MSBuild의 기능에 큰 영향을 주는 두 가지 부울 속성(`BuildingInsideVisualStudio`, `BuildProjectReferences`)을 설정합니다. 각 프로젝트 내에서 MSBuild를 통해 호출되는 경우와 동일하게 실행이 발생하지만 참조된 프로젝트에서 차이가 발생합니다. MSBuild에서는 참조된 프로젝트가 필요한 경우 빌드가 실제로 발생합니다. 즉, 작업 및 도구를 실행하고 출력을 생성합니다. Visual Studio 빌드가 참조된 프로젝트를 찾으면 MSBuild는 참조된 프로젝트의 예상 출력만 반환합니다. 이를 통해 Visual Studio가 다른 프로젝트의 빌드를 제어할 수 있습니다. Visual Studio는 빌드 순서를 결정하고 필요에 따라 개별적으로 MSBuild를 호출하며, 이 모두를 Visual Studio가 완벽하게 제어합니다.
 
-솔루션 파일을 사용하여 MSBuild를 호출하는 경우 또 다른 차이점이 있습니다. MSBuild가 솔루션 파일을 구문 분석하고, 표준 XML 입력 파일을 만들고, 평가하고, 프로젝트로 실행합니다. 솔루션 빌드는 모든 프로젝트보다 먼저 실행됩니다. Visual Studio에서 빌드할 때는 이러한 상황이 발생하지 않습니다. MSBuild는 솔루션 파일을 인식하지 못합니다. 결과적으로 솔루션 빌드 사용자 지정(*before.SolutionName.sln.targets* 및 *after.SolutionName.sln.targets* 사용)은 Visual Studio 빌드가 아닌 MSbuild.exe 또는 개체 모델 기반에만 적용됩니다.
+솔루션 파일을 사용하여 MSBuild를 호출하는 경우 또 다른 차이점이 있습니다. MSBuild가 솔루션 파일을 구문 분석하고, 표준 XML 입력 파일을 만들고, 평가하고, 프로젝트로 실행합니다. 솔루션 빌드는 모든 프로젝트보다 먼저 실행됩니다. Visual Studio에서 빌드할 때는 이러한 상황이 발생하지 않습니다. MSBuild는 솔루션 파일을 인식하지 못합니다. 결과적으로 솔루션 빌드 사용자 지정( *before.SolutionName.sln.targets* 및 *after.SolutionName.sln.targets* 사용)은 Visual Studio 빌드가 아닌 MSbuild.exe 또는 개체 모델 기반에만 적용됩니다.
 
 ### <a name="project-sdks"></a>프로젝트 SDK
 
@@ -50,7 +50,7 @@ MSBuild 프로젝트 파일에 대한 SDK 기능은 비교적 새로운 기능�
 
 이 섹션에서는 이러한 입력 파일을 처리하고 구문 분석하여 빌드할 항목을 결정하는 메모리 내 개체를 생성하는 방법을 설명합니다.
 
-평가 단계의 목적은 입력 XML 파일 및 로컬 환경을 기반으로 메모리에 개체 구조를 만드는 것입니다. 평가 단계는 프로젝트 XML 파일 또는 가져온 XML 파일(기본적으로 속성을 설정하거나 빌드 대상을 정의하는지 여부에 따라 *.props* 또는 *.targets* 파일로 명명됨)과 같은 입력 파일을 처리하는 5개 패스로 구성됩니다. 각 패스는 나중에 프로젝트를 빌드하기 위해 실행 단계에서 사용되는 메모리 내 개체의 일부를 빌드하고, 평가 단계 중에는 실제 빌드 작업이 수행되지 않습니다. 각 패스 내에서 요소는 표시된 순서대로 처리됩니다.
+평가 단계의 목적은 입력 XML 파일 및 로컬 환경을 기반으로 메모리에 개체 구조를 만드는 것입니다. 평가 단계는 프로젝트 XML 파일 또는 가져온 XML 파일(기본적으로 속성을 설정하거나 빌드 대상을 정의하는지 여부에 따라 *.props* 또는 *.targets* 파일로 명명됨)과 같은 입력 파일을 처리하는 6개 패스로 구성됩니다. 각 패스는 나중에 프로젝트를 빌드하기 위해 실행 단계에서 사용되는 메모리 내 개체의 일부를 빌드하고, 평가 단계 중에는 실제 빌드 작업이 수행되지 않습니다. 각 패스 내에서 요소는 표시된 순서대로 처리됩니다.
 
 평가 단계의 패스는 다음과 같습니다.
 
@@ -131,13 +131,13 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
 
 ## <a name="standard-imports"></a>표준 가져오기
 
-*Microsoft.Common.props* 및 *Microsoft.Common.targets*는 모두 .NET 프로젝트 파일이 가져오며(SDK 스타일 프로젝트에서 명시적으로 또는 암시적으로) Visual Studio 설치의 *MSBuild\Current\bin* 폴더에 있습니다. C++ 프로젝트에는 자체 가져오기 계층 구조가 있습니다. [C++ 프로젝트용 MSBuild 내부 항목](/cpp/build/reference/msbuild-visual-cpp-overview)을 참조하세요.
+*Microsoft.Common.props* 및 *Microsoft.Common.targets* 는 모두 .NET 프로젝트 파일이 가져오며(SDK 스타일 프로젝트에서 명시적으로 또는 암시적으로) Visual Studio 설치의 *MSBuild\Current\bin* 폴더에 있습니다. C++ 프로젝트에는 자체 가져오기 계층 구조가 있습니다. [C++ 프로젝트용 MSBuild 내부 항목](/cpp/build/reference/msbuild-visual-cpp-overview)을 참조하세요.
 
 *Microsoft.Common.props* 파일은 사용자가 재정의할 수 있는 기본값을 설정합니다. 이 파일은 프로젝트 파일의 시작 부분에서 (명시적으로 또는 암시적으로) 가져옵니다. 이렇게 하면 프로젝트의 설정이 기본값 이후에 나타나므로 재정의됩니다.
 
 *Microsoft.Common.targets* 파일 및 이 파일이 가져오는 대상 파일은 .NET 프로젝트의 표준 빌드 프로세스를 정의합니다. 또한 빌드를 사용자 지정하는 데 사용할 수 있는 확장 지점도 제공합니다.
 
-구현에서 *Microsoft.Common.targets*는 *Microsoft.Common.CurrentVersion.targets*를 가져오는 씬 래퍼입니다. 이 파일은 표준 속성에 대한 설정을 포함하며, 빌드 프로세스를 정의하는 실제 대상을 정의합니다. `Build` 대상은 여기에서 정의되지만 실제로는 비어 있습니다. 그러나 `Build` 대상은 실제 빌드 단계를 구성하는 개별 대상을 지정하는 `DependsOn` 특성(`BeforeBuild`, `CoreBuild` 및 `AfterBuild`)을 포함합니다. `Build` 대상은 다음과 같이 정의됩니다.
+구현에서 *Microsoft.Common.targets* 는 *Microsoft.Common.CurrentVersion.targets* 를 가져오는 씬 래퍼입니다. 이 파일은 표준 속성에 대한 설정을 포함하며, 빌드 프로세스를 정의하는 실제 대상을 정의합니다. `Build` 대상은 여기에서 정의되지만 실제로는 비어 있습니다. 그러나 `Build` 대상은 실제 빌드 단계를 구성하는 개별 대상을 지정하는 `DependsOn` 특성(`BeforeBuild`, `CoreBuild` 및 `AfterBuild`)을 포함합니다. `Build` 대상은 다음과 같이 정의됩니다.
 
 ```xml
   <PropertyGroup>
@@ -215,7 +215,7 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
 | IncrementalClean | 이전 빌드에서 생성되었지만 현재 빌드에서 생성되지 않은 파일을 제거합니다. 이 작업은 증분 빌드에서 `Clean` 작업을 수행하는 데 필요합니다. |
 | PostBuildEvent | 빌드 후 실행할 작업을 정의하는 프로젝트의 확장 지점입니다. |
 
-위의 표에 나와 있는 대상은 대부분 *Microsoft.CSharp.targets*와 같은 언어별 가져오기에 있습니다. 이 파일은 C# .NET 프로젝트에 고유한 표준 빌드 프로세스의 단계를 정의합니다. 예를 들어 실제로 C# 컴파일러를 호출하는 `Compile` 대상이 포함되어 있습니다.
+위의 표에 나와 있는 대상은 대부분 *Microsoft.CSharp.targets* 와 같은 언어별 가져오기에 있습니다. 이 파일은 C# .NET 프로젝트에 고유한 표준 빌드 프로세스의 단계를 정의합니다. 예를 들어 실제로 C# 컴파일러를 호출하는 `Compile` 대상이 포함되어 있습니다.
 
 ## <a name="user-configurable-imports"></a>사용자 구성 가능 가져오기
 
@@ -226,11 +226,11 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
 
 이러한 파일은 해당 하위 폴더의 모든 프로젝트에 대한 표준 가져오기에서 읽습니다. 이는 일반적으로 솔루션의 모든 프로젝트를 제어하는 설정에 대한 솔루션 수준이지만 드라이브의 루트까지 파일 시스템에서 더 높은 수준일 수도 있습니다.
 
-*Directory.Build.props* 파일은 *Microsoft.Common.props*가 가져오므로 여기에 정의된 속성은 프로젝트 파일에서 사용할 수 있습니다. 이들 속성을 프로젝트 파일에서 재정의하여 프로젝트 단위로 값을 사용자 지정할 수 있습니다. *Directory.Build.targets* 파일은 프로젝트 파일 이후에 읽습니다. 일반적으로 대상이 포함되지만 여기에서 개별 프로젝트가 다시 정의하지 않게 하려는 속성을 정의할 수도 있습니다.
+*Directory.Build.props* 파일은 *Microsoft.Common.props* 가 가져오므로 여기에 정의된 속성은 프로젝트 파일에서 사용할 수 있습니다. 이들 속성을 프로젝트 파일에서 재정의하여 프로젝트 단위로 값을 사용자 지정할 수 있습니다. *Directory.Build.targets* 파일은 프로젝트 파일 이후에 읽습니다. 일반적으로 대상이 포함되지만 여기에서 개별 프로젝트가 다시 정의하지 않게 하려는 속성을 정의할 수도 있습니다.
 
 ## <a name="customizations-in-a-project-file"></a>프로젝트 파일의 사용자 지정
 
-Visual Studio는 **솔루션 탐색기**, **속성** 창 또는 **프로젝트 속성**에서 변경하는 경우 프로젝트 파일을 업데이트하지만, 프로젝트 파일을 직접 편집하여 변경할 수도 있습니다.
+Visual Studio는 **솔루션 탐색기** , **속성** 창 또는 **프로젝트 속성** 에서 변경하는 경우 프로젝트 파일을 업데이트하지만, 프로젝트 파일을 직접 편집하여 변경할 수도 있습니다.
 
 많은 빌드 동작은 프로젝트 파일에서 프로젝트에 대한 로컬 설정에 대해 MSBuild 속성을 설정하거나 이전 섹션에서 설명한 대로 *Directory.Build.props* 파일을 만들어 프로젝트 및 솔루션의 전체 폴더에 대해 전역적으로 MSBuild 속성을 설정하여 구성할 수 있습니다. 명령줄 또는 스크립트에 대한 임시 빌드의 경우 명령줄에서 `/p` 옵션을 사용하여 MSBuild의 특정 호출에 대한 속성을 설정할 수도 있습니다. 설정할 수 있는 속성에 대한 자세한 내용은 [일반적인 MSBuild 프로젝트 속성](common-msbuild-project-properties.md)을 참조하세요.
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio에서 플랫폼 간 모바일 개발 | Microsoft 문서
+description: 이 문서에서는 Visual Studio를 사용하여 Android, iOS 및 Windows 디바이스용 앱을 빌드하는 방법을 알아봅니다.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
@@ -11,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037265"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959837"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -45,7 +46,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  C# 또는 F#(Visual Basic은 현재 지원되지 않음)을 사용하여 Android, iOS 및 Windows용 네이티브 앱을 빌드할 수 있습니다.  시작하려면 Visual Studio를 설치하고, 설치 관리자에서 **.NET을 사용한 모바일 개발** 옵션을 선택합니다.
 
- 이미 Visual Studio를 설치한 경우, **Visual Studio 설치 관리자**를 다시 실행하고, Xamarin에 대해 위와 동일한 **.NET을 사용한 모바일 개발** 옵션을 선택합니다.
+ 이미 Visual Studio를 설치한 경우, **Visual Studio 설치 관리자** 를 다시 실행하고, Xamarin에 대해 위와 동일한 **.NET을 사용한 모바일 개발** 옵션을 선택합니다.
 
  완료하면 **새 프로젝트** 대화 상자에 프로젝트 템플릿이 표시됩니다. Xamarin 템플릿을 가장 쉽게 찾는 방법은 "Xamarin"을 검색하는 것입니다.
 
@@ -151,7 +152,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 ## <a name="build-a-cross-platform-game-for-android-ios-and-windows-by-using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity를 사용하여 Android, iOS 및 Windows용 플랫폼 간 게임 빌드
 
- Visual Studio Tools for Unity는 Visual Studio의 강력한 코드 편집, 생산성 및 디버깅 도구를 *Unity*와 통합하는 Visual Studio의 무료 확장입니다. Unity는 Windows, iOS, Android 및 웹을 비롯한 기타 플랫폼을 대상으로 하는 몰입형 앱을 빌드하는 데 널리 사용되는 플랫폼 간 게임/그래픽 엔진이자 개발 환경입니다.
+ Visual Studio Tools for Unity는 Visual Studio의 강력한 코드 편집, 생산성 및 디버깅 도구를 *Unity* 와 통합하는 Visual Studio의 무료 확장입니다. Unity는 Windows, iOS, Android 및 웹을 비롯한 기타 플랫폼을 대상으로 하는 몰입형 앱을 빌드하는 데 널리 사용되는 플랫폼 간 게임/그래픽 엔진이자 개발 환경입니다.
 
  ![VSTU 개발 환경](../cross-platform/media/vstu_overview.png "Visual Studio Tools for Unity 개요")
 
@@ -163,7 +164,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Visual Studio Tools for Unity에 대해 자세히 알아보기](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 사용 시작](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 2.0 Preview에서 향상된 최신 기능에 대해 알아보기](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 블로그)|
-|[Visual Studio Tools for Unity 2.0 Preview에 대한 동영상 소개 보기](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (동영상)|
+|[Visual Studio Tools for Unity 2.0 Preview에 대한 동영상 소개 보기](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (동영상)|
 |[Unity에 대해 알아보기](https://unity.com/) (Unity 웹 사이트)|
 
 ## <a name="see-also"></a>참조

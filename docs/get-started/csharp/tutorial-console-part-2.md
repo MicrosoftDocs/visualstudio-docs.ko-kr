@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507958"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197480"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>자습서: 간단한 C# 콘솔 앱 확장
 
@@ -32,21 +32,21 @@ ms.locfileid: "88507958"
 
 실제 코드에는 솔루션에서 함께 작업하는 많은 프로젝트가 포함되어 있습니다. 이제 Calculator 앱에 다른 프로젝트를 추가해 보겠습니다. 이 프로젝트는 Calculator 함수 일부를 제공하는 클래스 라이브러리입니다.
 
-1. Visual Studio에서 최상위 메뉴 명령 **File** > **Add** > **New Project** 사용하여 새 프로젝트를 추가할 수 있습니다. 하지만 기존 프로젝트 이름(“프로젝트 노드”라고 함)을 마우스 오른쪽 단추로 클릭하고 프로젝트의 바로 가기 메뉴(상황에 맞는 메뉴)를 열 수도 있습니다. 이 바로 가기 메뉴에는 프로젝트에 기능을 추가하는 여러 방법이 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
+1. Visual Studio에서 최상위 메뉴 명령 **File** > **Add** > **New Project** 사용하여 새 프로젝트를 추가할 수 있습니다. 하지만 기존 프로젝트 이름(“프로젝트 노드”라고 함)을 마우스 오른쪽 단추로 클릭하고 프로젝트의 바로 가기 메뉴(상황에 맞는 메뉴)를 열 수도 있습니다. 이 바로 가기 메뉴에는 프로젝트에 기능을 추가하는 여러 방법이 있습니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
 
 1. C# 프로젝트 템플릿 **클래스 라이브러리(.NET Standard)** 를 선택합니다.
 
    ![클래스 라이브러리 프로젝트 템플릿 선택 스크린샷](media/vs-2019/calculator2-add-project-dark.png)
 
-1. 프로젝트 이름 **CalculatorLibrary**를 입력하고 **만들기**를 선택합니다. Visual Studio에서 새 프로젝트를 만들어 솔루션에 추가합니다.
+1. 프로젝트 이름 **CalculatorLibrary** 를 입력하고 **만들기** 를 선택합니다. Visual Studio에서 새 프로젝트를 만들어 솔루션에 추가합니다.
 
    ![CalculatorLibrary 클래스 라이브러리 프로젝트가 추가된 솔루션 탐색기의 스크린샷](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. *Class1.cs*를 사용하는 대신 파일 이름을 **CalculatorLibrary.cs**로 바꿉니다. **솔루션 탐색기**에서 이 이름을 클릭하여 이름을 바꾸거나, 이름을 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하거나, **F2** 키를 누르면 됩니다.
+1. *Class1.cs* 를 사용하는 대신 파일 이름을 **CalculatorLibrary.cs** 로 바꿉니다. **솔루션 탐색기** 에서 이 이름을 클릭하여 이름을 바꾸거나, 이름을 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기** 를 선택하거나, **F2** 키를 누르면 됩니다.
 
    파일에서 `Class1` 참조의 이름을 바꿀지 묻는 메시지가 나타날 수도 있습니다. 이후 단계에서 코드를 바꿀 예정이므로 여기서 어떤 선택을 해도 괜찮습니다.
 
-1. 첫 번째 프로젝트가 새 클래스 라이브러리에서 제공된 API를 사용할 수 있도록 이제 프로젝트 참조를 추가해야 합니다.  첫 번째 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 참조 추가**를 선택합니다.
+1. 첫 번째 프로젝트가 새 클래스 라이브러리에서 제공된 API를 사용할 수 있도록 이제 프로젝트 참조를 추가해야 합니다.  첫 번째 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 참조 추가** 를 선택합니다.
 
    ![프로젝트 참조 추가 메뉴 항목의 스크린샷](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -54,11 +54,11 @@ ms.locfileid: "88507958"
 
    ![참조 관리자 대화 상자의 스크린샷](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. **참조 관리자** 대화 상자에서 **CalculatorLibrary** 프로젝트의 확인란을 선택하고 **확인**을 선택합니다.  프로젝트 참조는 **솔루션 탐색기**의 **프로젝트** 노드 아래에 나타납니다.
+1. **참조 관리자** 대화 상자에서 **CalculatorLibrary** 프로젝트의 확인란을 선택하고 **확인** 을 선택합니다.  프로젝트 참조는 **솔루션 탐색기** 의 **프로젝트** 노드 아래에 나타납니다.
 
    ![프로젝트 참조가 있는 솔루션 탐색기의 스크린샷](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. *Program.cs*에서 `Calculator` 클래스와 모든 해당 코드를 선택하고 **CTRL+X**를 눌러 Program.cs에서 자릅니다. 그리고 **CalculatorLibrary**(*CalculatorLibrary.cs*)에서 코드를 `CalculatorLibrary` 네임스페이스에 붙여넣습니다. 그런 다음, Calculator 클래스 `public`이 코드를 라이브러리 외부에 노출하도록 합니다. 이제 *CalculatorLibrary.cs*의 코드는 다음 코드와 유사합니다.
+1. *Program.cs* 에서 `Calculator` 클래스와 모든 해당 코드를 선택하고 **CTRL+X** 를 눌러 Program.cs에서 자릅니다. 그리고 **CalculatorLibrary** ( *CalculatorLibrary.cs* )에서 코드를 `CalculatorLibrary` 네임스페이스에 붙여넣습니다. 그런 다음, Calculator 클래스 `public`이 코드를 라이브러리 외부에 노출하도록 합니다. 이제 *CalculatorLibrary.cs* 의 코드는 다음 코드와 유사합니다.
 
    ```csharp
    using System;
@@ -120,9 +120,10 @@ ms.locfileid: "88507958"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>.NET 라이브러리 참조: 로그에 쓰기
 
-1. 이제 모든 작업의 로그를 추가하고 텍스트 파일에 쓰려 한다고 가정하겠습니다. .NET `Trace` 클래스는 다음과 같은 기능을 제공합니다. (기본 인쇄 디버깅 기술에도 유용합니다.)  Trace 클래스는 System.Diagnostics에 있으므로, using 지시문을 추가하여 시작합니다.
+1. 이제 모든 작업의 로그를 추가하고 텍스트 파일에 쓰려 한다고 가정하겠습니다. .NET `Trace` 클래스는 다음과 같은 기능을 제공합니다. (기본 인쇄 디버깅 기술에도 유용합니다.)  Trace 클래스는 System.Diagnostics에 있습니다. using 지시문을 추가하여 시작하려면 `StreamWriter` 같은 System.IO 클래스가 필요합니다.
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -192,7 +193,7 @@ ms.locfileid: "88507958"
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. 프로그램을 다시 실행하고 완료되면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **파일 탐색기의 폴더 열기**를 선택한 다음 파일 탐색기에서 출력 폴더로 이동합니다. 이 폴더는 *bin/Debug/netcoreapp3.1*일 수도 있습니다. *calculator.log* 파일을 엽니다.
+1. 프로그램을 다시 실행하고 완료되면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **파일 탐색기의 폴더 열기** 를 선택한 다음 파일 탐색기에서 출력 폴더로 이동합니다. 이 폴더는 *bin/Debug/netcoreapp3.1* 일 수도 있습니다. *calculator.log* 파일을 엽니다.
 
     ```output
     Starting Calculator Log
@@ -203,7 +204,7 @@ ms.locfileid: "88507958"
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>NuGet 패키지 추가: JSON 파일에 쓰기
 
-1. 이제 개체 데이터를 저장하는 데 많이 사용되는 이식 가능한 형식인 JSON 형식으로 작업을 출력하려 한다고 가정하겠습니다. 이 기능을 구현하려면 NuGet 패키지인 Newtonsoft.Json을 참조해야 합니다. NuGet 패키지는 .NET 클래스 라이브러리를 배포하는 주요 수단입니다. **솔루션 탐색기**에서 CalculatorLibrary 프로젝트에 대한 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다.
+1. 이제 개체 데이터를 저장하는 데 많이 사용되는 이식 가능한 형식인 JSON 형식으로 작업을 출력하려 한다고 가정하겠습니다. 이 기능을 구현하려면 NuGet 패키지인 Newtonsoft.Json을 참조해야 합니다. NuGet 패키지는 .NET 클래스 라이브러리를 배포하는 주요 수단입니다. **솔루션 탐색기** 에서 CalculatorLibrary 프로젝트에 대한 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다.
 
    ![바로 가기 메뉴의 NuGet 패키지 관리 스크린샷](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -211,13 +212,13 @@ ms.locfileid: "88507958"
 
    ![NuGet 패키지 관리자 스크린샷](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Newtonsoft.Json 패키지를 검색하고 **설치**를 선택합니다.
+1. Newtonsoft.Json 패키지를 검색하고 **설치** 를 선택합니다.
 
    ![Newtonsoft NuGet 패키지 정보의 스크린샷](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   패키지가 다운로드되어 프로젝트에 추가되고 **솔루션 탐색기**의 참조 노드에 새 항목이 표시됩니다.
+   패키지가 다운로드되어 프로젝트에 추가되고 **솔루션 탐색기** 의 참조 노드에 새 항목이 표시됩니다.
 
-1. *CalculatorLibrary.cs*의 시작 부분에 Newtonsoft.Json 패키지에 대한 using 지시문을 추가합니다.
+1. *CalculatorLibrary.cs* 의 시작 부분에 System.IO 및 Newtonsoft.Json 패키지에 대한 using 지시문을 추가합니다.
 
    ```csharp
    using Newtonsoft.Json;
@@ -298,7 +299,7 @@ ms.locfileid: "88507958"
     }
    ```
 
-1. 그리고 *Program.cs*에서 끝에 완료 호출을 추가합니다.
+1. 그리고 *Program.cs* 에서 끝에 완료 호출을 추가합니다.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -307,7 +308,7 @@ ms.locfileid: "88507958"
         }
    ```
 
-1. 앱을 빌드하고 실행한 후 완료되면 몇 가지 작업을 입력한 후 ‘n’ 명령을 사용하여 앱을 제대로 닫습니다.  이제 consolelog.json 파일을 열면 다음과 같은 내용이 표시됩니다.
+1. 앱을 빌드하고 실행한 후 완료되면 몇 가지 작업을 입력한 후 ‘n’ 명령을 사용하여 앱을 제대로 닫습니다.  이제 calculatorlog.json 파일을 열면 다음과 같은 내용이 표시됩니다.
 
    ```json
    {

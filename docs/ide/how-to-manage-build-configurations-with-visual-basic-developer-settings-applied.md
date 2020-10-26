@@ -1,5 +1,6 @@
 ---
 title: Visual Basic 개발자 설정으로 빌드 구성 관리
+description: Visual Basic 개발자 설정이 적용될 때 숨겨진 고급 빌드 구성 옵션에 대한 자세한 내용과 이러한 빌드 설정을 수동으로 사용 설정하는 방법을 알아봅니다.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135120"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136721"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>방법: Visual Basic 개발자 설정을 적용하여 빌드 구성 관리
 
@@ -31,15 +32,15 @@ ms.locfileid: "91135120"
 
 기본적으로 Visual Basic 개발자 설정은 [프로젝트 디자이너](../ide/reference/application-page-project-designer-visual-basic.md)의 **구성** 및 **플랫폼** 목록과 **구성 관리자** 대화 상자를 여는 옵션을 숨깁니다.
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **프로젝트 및 솔루션**을 확장하고 **일반**을 클릭합니다.
+2. **프로젝트 및 솔루션** 을 확장하고 **일반** 을 클릭합니다.
 
-3. **고급 빌드 구성 표시**를 클릭합니다.
+3. **고급 빌드 구성 표시** 를 클릭합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
-     이제 **빌드** 메뉴에서 **구성 관리자**를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너**에 표시됩니다.
+     이제 **빌드** 메뉴에서 **구성 관리자** 를 사용할 수 있고 **구성** 및 **플랫폼** 목록이 **프로젝트 디자이너** 에 표시됩니다.
 
 ## <a name="see-also"></a>참조
 

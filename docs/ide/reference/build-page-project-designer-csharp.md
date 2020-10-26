@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 빌드 페이지(C#)
+description: Visual Studio에서 프로젝트 디자이너의 빌드 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419226"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136877"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
-**프로젝트 디자이너**의 **빌드** 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정합니다. 이 페이지는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.
+**프로젝트 디자이너** 의 **빌드** 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정합니다. 이 페이지는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.
 
-**빌드** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그다음에 메뉴에서 **보기**, **속성 페이지**를 선택합니다. 프로젝트 디자이너가 나타나면 **빌드** 탭을 선택합니다.
+**빌드** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드( **솔루션** 노드 아님)를 선택합니다. 그다음에 메뉴에서 **보기** , **속성 페이지** 를 선택합니다. 프로젝트 디자이너가 나타나면 **빌드** 탭을 선택합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,13 +38,13 @@ ms.locfileid: "85419226"
 > [!NOTE]
 > 단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. 따라서 이러한 옵션이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
-**Configuration**
+**구성**
 
-표시하거나 수정할 구성 설정을 지정합니다. **활성(디버그)** (기본값), **디버그**, **릴리스** 또는 **모든 구성** 중에서 설정을 선택할 수 있습니다.
+표시하거나 수정할 구성 설정을 지정합니다. **활성(디버그)** (기본값), **디버그** , **릴리스** 또는 **모든 구성** 중에서 설정을 선택할 수 있습니다.
 
 **플랫폼**
 
-표시하거나 수정할 플랫폼 설정을 지정합니다. 기본 설정은 **활성(모든 CPU)** 입니다. **구성 관리자**를 사용하여 활성 플랫폼을 변경할 수 있습니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
+표시하거나 수정할 플랫폼 설정을 지정합니다. 기본 설정은 **활성(모든 CPU)** 입니다. **구성 관리자** 를 사용하여 활성 플랫폼을 변경할 수 있습니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
 
 ## <a name="general"></a>일반
 
@@ -62,7 +64,7 @@ ms.locfileid: "85419226"
 
 **플랫폼 대상**
 
-출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86**을 선택하고, 64비트 Intel 호환 프로세서의 경우 **x64**를 선택하고, ARM 프로세서의 경우 **ARM**을 선택하고, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU**를 선택합니다. **임의 CPU**는 프로젝트의 기본값입니다. 하드웨어의 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
+출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86** 을 선택하고, 64비트 Intel 호환 프로세서의 경우 **x64** 를 선택하고, ARM 프로세서의 경우 **ARM** 을 선택하고, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU** 를 선택합니다. **임의 CPU** 는 프로젝트의 기본값입니다. 하드웨어의 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
 
 자세한 내용은 [/platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)을 참조하세요.
 
@@ -80,11 +82,11 @@ ms.locfileid: "85419226"
 
 이 확인란은 다음 조건을 충족하는 경우에만 사용할 수 있습니다.
 
-- **빌드 페이지**에서 **플랫폼 대상** 목록이 **임의 CPU**로 설정되어 있습니다.
+- **빌드 페이지** 에서 **플랫폼 대상** 목록이 **임의 CPU** 로 설정되어 있습니다.
 
-- **애플리케이션 페이지**에서 **출력 형식** 목록의 프로젝트가 애플리케이션으로 지정됩니다.
+- **애플리케이션 페이지** 에서 **출력 형식** 목록의 프로젝트가 애플리케이션으로 지정됩니다.
 
-- **애플리케이션 페이지**에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.
+- **애플리케이션 페이지** 에서 **대상 프레임워크** 목록이 .NET Framework 4.5로 지정됩니다.
 
 **안전하지 않은 코드 허용**
 
@@ -127,7 +129,7 @@ ms.locfileid: "85419226"
 
 프로젝트 구성에 사용할 출력 파일의 위치를 지정합니다. 이 상자에 빌드 출력의 경로를 입력하거나 **찾아보기** 단추를 선택하여 경로를 지정합니다. 경로는 상대 경로입니다. 절대 경로를 입력하면 상대 경로로 저장됩니다. 기본 경로는 bin\Debug 또는 bin\Release\\입니다.
 
-단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. **디버그** 메뉴(F5)의 **빌드** 명령은 지정한 **출력 경로**에 관계없이 빌드를 디버그 위치에 삽입합니다. 그러나 **빌드** 메뉴의 **빌드** 명령은 경로를 지정한 위치에 삽입합니다. 자세한 내용은 [빌드 구성 이해](../../ide/understanding-build-configurations.md)를 참조하세요.
+단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. **디버그** 메뉴(F5)의 **빌드** 명령은 지정한 **출력 경로** 에 관계없이 빌드를 디버그 위치에 삽입합니다. 그러나 **빌드** 메뉴의 **빌드** 명령은 경로를 지정한 위치에 삽입합니다. 자세한 내용은 [빌드 구성 이해](../../ide/understanding-build-configurations.md)를 참조하세요.
 
 **XML 문서 파일**
 
@@ -135,17 +137,17 @@ ms.locfileid: "85419226"
 
 **COM interop 등록**
 
-관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 **프로젝트 디자이너**의 [애플리케이션 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리**로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
+관리되는 애플리케이션이 COM 개체가 관리되는 애플리케이션과 상호 작용할 수 있도록 하는 COM 개체(COM 호출 가능 래퍼)를 표시하도록 지정합니다. **COM interop 등록** 속성을 사용할 수 있으려면 이 애플리케이션에 대한 **프로젝트 디자이너** 의 [애플리케이션 페이지](../../ide/reference/application-page-project-designer-visual-basic.md)에서 **출력 형식** 속성을 **클래스 라이브러리** 로 설정해야 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 애플리케이션에 포함하고 COM 개체로 표시할 수 있는 클래스 예제는 [COM 클래스 예제](/dotnet/csharp/programming-guide/interop/example-com-class)를 참조하세요.
 
 **serialization 어셈블리 생성**
 
-XML serialization 어셈블리를 만드는 데 XML 직렬 변환기 생성기 도구(Sgen.exe)를 사용할지 여부를 지정합니다. 코드에서 형식을 직렬화하는 데 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용한 경우 serialization 어셈블리가 해당 클래스의 시작 성능을 향상할 수 있습니다. 기본적으로 이 옵션은 **자동**으로 설정됩니다. 이 설정은 코드에서 형식을 XML로 인코딩하는 데 <xref:System.Xml.Serialization.XmlSerializer>를 사용한 경우에만 serialization 어셈블리가 생성되도록 지정합니다. **끄기**는 코드에서 <xref:System.Xml.Serialization.XmlSerializer>를 사용하는지와 관계없이 serialization 어셈블리가 생성되지 않도록 지정합니다. **켜기**는 serialization 어셈블리가 항상 생성되도록 지정합니다. Serialization 어셈블리의 이름은 `TypeName`.XmlSerializers.dll로 지정됩니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.
+XML serialization 어셈블리를 만드는 데 XML 직렬 변환기 생성기 도구(Sgen.exe)를 사용할지 여부를 지정합니다. 코드에서 형식을 직렬화하는 데 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용한 경우 serialization 어셈블리가 해당 클래스의 시작 성능을 향상할 수 있습니다. 기본적으로 이 옵션은 **자동** 으로 설정됩니다. 이 설정은 코드에서 형식을 XML로 인코딩하는 데 <xref:System.Xml.Serialization.XmlSerializer>를 사용한 경우에만 serialization 어셈블리가 생성되도록 지정합니다. **끄기** 는 코드에서 <xref:System.Xml.Serialization.XmlSerializer>를 사용하는지와 관계없이 serialization 어셈블리가 생성되지 않도록 지정합니다. **켜기** 는 serialization 어셈블리가 항상 생성되도록 지정합니다. Serialization 어셈블리의 이름은 `TypeName`.XmlSerializers.dll로 지정됩니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.
 
 **고급**
 
 [고급 빌드 설정 대화 상자(C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) 대화 상자를 표시하려면 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)

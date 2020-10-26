@@ -1,5 +1,7 @@
 ---
 title: 컴파일 빌드
+description: Visual Studio IDE 빌드 메서드, MSBuild 명령줄 도구 빌드 메서드 또는 Azure Pipelines 빌드 메서드를 사용하여 애플리케이션을 빌드할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928543"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136591"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 
@@ -35,7 +37,7 @@ Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법
 이 섹션의 문서에는 IDE 기반 빌드 프로세스에 대한 자세한 내용이 나와 있습니다. 다른 방법에 대한 자세한 내용은 [MSBuild](../msbuild/msbuild.md) 및 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)를 각각 참조하세요.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 컴파일 및 빌드](/visualstudio/mac/compiling-and-building)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 컴파일 및 빌드](/visualstudio/mac/compiling-and-building)를 참조하세요.
 
 ## <a name="overview-of-building-from-the-ide"></a>IDE에서 빌드하는 방법에 대한 개요
 

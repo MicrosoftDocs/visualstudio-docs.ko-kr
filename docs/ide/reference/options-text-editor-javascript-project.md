@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, JavaScript, 프로젝트
+description: 옵션 대화 상자의 프로젝트 페이지를 사용하여 코드 편집기에서 JavaScript 및 TypeScript 프로젝트 옵션을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285363"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947702"
 ---
 # <a name="options-text-editor-javascript-project"></a>옵션, 텍스트 편집기, JavaScript, 프로젝트
 
-**옵션** 대화 상자의 **프로젝트** 페이지를 사용하여 코드 편집기에서 JavaScript 및 TypeScript 프로젝트 옵션을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **JavaScript/TypeScript** > **프로젝트**를 확장합니다.
+**옵션** 대화 상자의 **프로젝트** 페이지를 사용하여 코드 편집기에서 JavaScript 및 TypeScript 프로젝트 옵션을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **JavaScript/TypeScript** > **프로젝트** 를 확장합니다.
 
 ## <a name="project-analysis-options"></a>프로젝트 분석 옵션
 
@@ -40,7 +42,7 @@ ms.locfileid: "85285363"
 
 ## <a name="compile-on-save"></a>저장 시 컴파일
 
-이 옵션은 프로젝트의 일부가 아닌 TypeScript 파일이 자동으로 컴파일되는지 여부를 결정합니다. Visual Studio는 *C:\Program Files (x86)\Microsoft SDKs\TypeScript*에 설치된 TypeScript의 최신 버전을 사용하여 컴파일합니다.
+이 옵션은 프로젝트의 일부가 아닌 TypeScript 파일이 자동으로 컴파일되는지 여부를 결정합니다. Visual Studio는 *C:\Program Files (x86)\Microsoft SDKs\TypeScript* 에 설치된 TypeScript의 최신 버전을 사용하여 컴파일합니다.
 
 확인란을 선택한 후 사용할 코드 생성 유형을 선택합니다.
 
@@ -54,7 +56,7 @@ ms.locfileid: "85285363"
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>프로젝트에 포함되지 않는 파일에 대한 ECMAScript 버전
 
-이 옵션을 사용하여 프로젝트의 일부가 아닌 파일의 ECMAScript 버전을 선택할 수 있습니다. **ECMAScript 3**, **ECMAScript 5** 또는 **ECMAScript 6** 중에서 선택할 수 있습니다.
+이 옵션을 사용하여 프로젝트의 일부가 아닌 파일의 ECMAScript 버전을 선택할 수 있습니다. **ECMAScript 3** , **ECMAScript 5** 또는 **ECMAScript 6** 중에서 선택할 수 있습니다.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>프로젝트에 포함되지 않는 TSX 파일에 대한 JSX 내보내기
 

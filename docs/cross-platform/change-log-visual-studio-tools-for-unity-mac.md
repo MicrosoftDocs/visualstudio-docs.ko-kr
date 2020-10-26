@@ -1,5 +1,6 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
+description: Visual Studio Tools for Unity, Mac의 변경 로그를 확인합니다. 버전 1.0.0.0부터 2.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
 ms.date: 5/19/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: 50462d4464bd55376e1aceda3f4f5e8e3cbe1f87
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471534"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039900"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
@@ -217,7 +218,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 11월 6일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -241,7 +242,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 10월 15일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -253,7 +254,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 23일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -264,7 +265,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 16일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -289,7 +290,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
@@ -373,7 +374,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 27일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -393,7 +394,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 6월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -405,7 +406,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 5월 30일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -415,7 +416,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 4월 2일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -445,7 +446,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 26일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -471,7 +472,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -536,7 +537,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="2000"></a>2.0.0.0
  릴리스 날짜: 2018년 12월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -562,7 +563,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 11월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -620,7 +621,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 4월 18일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -632,7 +633,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -642,7 +643,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
@@ -652,7 +653,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -692,7 +693,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 12월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -762,7 +763,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 8월 8일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -776,7 +777,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2017년 7월 20일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 

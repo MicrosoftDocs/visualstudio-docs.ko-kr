@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829880"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116105"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -49,7 +49,7 @@ Bridge to Kubernetes는 클러스터에 대한 연결을 설정할 때 다음 �
 또한 Bridge to Kubernetes를 사용하면 `KubernetesLocalProcessConfig.yaml` 파일을 통해 개발 컴퓨터에서 클러스터의 Pod에 사용 가능한 환경 변수 및 탑재된 파일을 복제할 수 있습니다. 이 파일을 사용하여 새 환경 변수 및 볼륨 탑재를 만들 수도 있습니다.
 
 > [!NOTE]
-> 클러스터에 연결하는 시간(및 추가로 15분) 동안 Bridge to Kubernetes는 로컬 컴퓨터에 대한 관리자 권한이 있는 *EndpointManager*라는 프로세스를 실행합니다.
+> 클러스터에 연결하는 시간(및 추가로 15분) 동안 Bridge to Kubernetes는 로컬 컴퓨터에 대한 관리자 권한이 있는 *EndpointManager* 라는 프로세스를 실행합니다.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml을 사용하는 추가 구성
 
@@ -72,7 +72,7 @@ Bridge to Kubernetes는 클러스터에 대한 연결을 설정할 때 다음 �
 Bridge to Kubernetes가 Kubernetes 클러스터에서 Azure Dev Spaces가 사용되는 것을 검색하는 경우 Bridge to Kubernetes를 사용하려면 Azure Dev Spaces를 사용하지 않도록 설정하라는 메시지가 표시됩니다.
 
 라우팅 관리자는 시작될 때 다음을 수행합니다.
-* 하위 도메인에 대해 *GENERATED_NAME*을 사용하여 네임스페이스의 모든 수신 내용을 복제합니다.
+* 하위 도메인에 대해 *GENERATED_NAME* 을 사용하여 네임스페이스의 모든 수신 내용을 복제합니다.
 * *GENERATED_NAME* 하위 도메인을 사용하여 복제된 수신 내용과 관련된 각 서비스에 대한 envoy pod를 만듭니다.
 * 격리 상태로 작업 중인 서비스에 대한 추가 envoy pod를 만듭니다. 이렇게 하면 해당 하위 도메인이 포함된 요청이 개발 컴퓨터로 라우팅됩니다.
 * 각 envoy pod가 하위 도메인을 포함하여 서비스 라우팅을 처리하도록 라우팅 규칙을 구성합니다.
@@ -90,7 +90,7 @@ Bridge to Kubernetes가 Kubernetes 클러스터에서 Azure Dev Spaces가 사용
 *GENERATED_NAME* 하위 도메인이 포함되지 않은 요청이 클러스터에서 수신되면 헤더가 요청에 추가되지 않습니다. envoy pod는 클러스터에서 해당 서비스에 대한 요청을 라우팅하는 작업을 처리합니다. 요청이 바꿀 예정인 서비스로 라우팅되는 경우 이 요청은 원격 에이전트가 아닌 원래 서비스로 라우팅됩니다.
 
 > [!IMPORTANT]
-> 클러스터의 각 서비스는 추가 요청을 수행할 때 *kubernetes-route-as=GENERATED_NAME* 헤더를 전달해야 합니다. 예를 들어 *serviceA*가 요청을 수신하면 응답을 반환하기 전에 *serviceB*를 요청합니다. 이 예제의 경우 *serviceA*는 *serviceB* 요청에서 *kubernetes-route-as=GENERATED_NAME* 헤더를 전달해야 합니다. [ASP.NET][asp-net-header]과 같은 일부 언어에는 헤더 전파를 처리하는 메서드가 있을 수도 있습니다.
+> 클러스터의 각 서비스는 추가 요청을 수행할 때 *kubernetes-route-as=GENERATED_NAME* 헤더를 전달해야 합니다. 예를 들어 *serviceA* 가 요청을 수신하면 응답을 반환하기 전에 *serviceB* 를 요청합니다. 이 예제의 경우 *serviceA* 는 *serviceB* 요청에서 *kubernetes-route-as=GENERATED_NAME* 헤더를 전달해야 합니다. [ASP.NET][asp-net-header]과 같은 일부 언어에는 헤더 전파를 처리하는 메서드가 있을 수도 있습니다.
 
 클러스터와 연결을 끊으면 기본적으로 Bridge to Kubernetes가 모든 envoy pod 및 중복 서비스를 제거합니다.
 
@@ -112,6 +112,8 @@ Bridge to Kubernetes에는 다음과 같은 제한 사항이 있습니다.
 
 * 단일 Pod의 지원을 받는 서비스에만 연결할 수 있습니다. 복제본이 있는 서비스와 같이 여러 개의 Pod가 있는 서비스에는 연결할 수 없습니다.
 * Bridge to Kubernetes가 성공적으로 연결하려면 Pod에 단일 컨테이너만 실행되고 있어야 합니다. Bridge to Kubernetes는 서비스 메시를 통해 삽입된 사이드카 컨테이너와 같은 추가 컨테이너를 포함하는 Pod가 있는 서비스에 연결할 수 없습니다.
+* 현재 Bridge to Kubernetes Pod는 Linux 컨테이너여야 합니다. Windows 컨테이너는 지원되지 않습니다.
+* 격리는 HTTPS와 함께 사용할 수 없습니다.
 * 개발 컴퓨터에서 Bridge to Kubernetes를 실행하려면 hosts 파일을 편집하기 위해 관리자 권한이 필요합니다.
 * Bridge to Kubernetes는 Azure Dev Spaces가 사용하도록 설정된 클러스터에서는 사용할 수 없습니다.
 

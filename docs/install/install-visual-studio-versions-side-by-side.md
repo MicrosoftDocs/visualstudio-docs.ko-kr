@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 버전 side-by-side 설치
+description: 이미 이전 버전 또는 최신 버전의 Visual Studio가 설치된 컴퓨터에 Visual Studio를 설치하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211315"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928634"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 side-by-side 설치
 
@@ -51,7 +53,7 @@ ms.locfileid: "91211315"
 하나의 Visual Studio 부 버전에서 다음 부 버전으로 업그레이드하는 경우 Visual Studio 설치 관리자는 기본적으로 현재 설치를 해당 채널의 다음 버전으로 업데이트합니다. 예를 들어 16.6.4 미리 보기를 설치할 때 설치 관리자는 현재 설치된 16.6.3 미리 보기를 바꾸려고 시도합니다. 두 버전이 모두 16.6 미리 보기 채널에 속하기 때문입니다. 이렇게 대체하면 이전 버전의 Visual Studio가 머신의 공간을 차지하지 않습니다. 일부 특정한 경우에는 부 버전을 함께 설치하는 것이 유용할 수도 있습니다. 이 예에서는 16.6.3과 16.6.4를 모두 동일한 머신에 설치하는 것을 의미합니다.
 
 1. 기존 버전의 Visual Studio와 함께 설치하려는 부 버전용 [Visual Studio 부트스트래퍼 파일](/visualstudio/releases/2019/history#installing-an-earlier-release)을 다운로드합니다.
-2. 관리자 모드로 명령 프롬프트를 엽니다. 그러려면 Windows 시작 메뉴를 열고 “cmd”를 입력한 다음 명령 프롬프트 검색 결과를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 선택합니다. 명령 프롬프트에서 Visual Studio 부트스트래퍼 파일이 있는 폴더로 디렉터리를 변경합니다.
+2. 관리자 모드로 명령 프롬프트를 엽니다. 그러려면 Windows 시작 메뉴를 열고 “cmd”를 입력한 다음 명령 프롬프트 검색 결과를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 선택합니다. 명령 프롬프트에서 Visual Studio 부트스트래퍼 파일이 있는 폴더로 디렉터리를 변경합니다.
 3. 다음 명령을 실행하여 설치 위치에 대한 새 폴더 경로를 지정하고 .exe 파일 이름을 설치하는 Visual Studio 버전의 해당 부트스트래퍼 이름으로 바꿉니다. .exe 파일 이름은 다음 파일 중 하나와 일치하거나 유사해야 합니다.
    * vs_community.exe(Visual Studio Community의 경우)
    * vs_professional.exe(Visual Studio Professional의 경우)
@@ -65,7 +67,7 @@ ms.locfileid: "91211315"
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 버전 및 side-by-side 설치
 
-Visual Basic, Visual C# 및 Visual F# 프로젝트는 **프로젝트 디자이너**의 **대상 프레임워크** 옵션을 사용하여 프로젝트에 사용할 .NET Framework 버전을 지정합니다. C++ 프로젝트의 경우 .vcxproj 파일을 수정하여 수동으로 대상 프레임워크를 변경할 수 있습니다. 자세한 내용은 [.NET Framework의 버전 호환성](/dotnet/framework/migration-guide/version-compatibility) 페이지를 참조하세요.
+Visual Basic, Visual C# 및 Visual F# 프로젝트는 **프로젝트 디자이너** 의 **대상 프레임워크** 옵션을 사용하여 프로젝트에 사용할 .NET Framework 버전을 지정합니다. C++ 프로젝트의 경우 .vcxproj 파일을 수정하여 수동으로 대상 프레임워크를 변경할 수 있습니다. 자세한 내용은 [.NET Framework의 버전 호환성](/dotnet/framework/migration-guide/version-compatibility) 페이지를 참조하세요.
 
 프로젝트를 만들 때 **새 프로젝트** 대화 상자의 **.NET Framework** 목록에서 프로젝트 대상으로 사용할 .NET Framework 버전을 지정할 수 있습니다.
 

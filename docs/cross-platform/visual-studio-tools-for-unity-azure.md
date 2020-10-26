@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 및 Azure로 프로그래밍 | Microsoft Docs
+description: Visual Studio Tools for Unity와 Azure를 사용하여 프로그래밍합니다. Azure는 클라우드에서 원격 분석 및 기타 게임 데이터 저장에 스케일링 가능한 솔루션을 제공합니다.
 ms.custom: ''
 ms.date: 12/18/2017
 ms.reviewer: crdun
@@ -12,12 +13,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5be430b4a59dd4aa36945555f6553f321b9d50c0
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75916821"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039822"
 ---
 # <a name="program-with-unity-and-azure"></a>Unity 및 Azure로 프로그램
 

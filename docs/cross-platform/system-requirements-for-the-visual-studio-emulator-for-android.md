@@ -1,5 +1,6 @@
 ---
 title: Android용 VS 에뮬레이터에 대한 시스템 요구 사항
+description: Android가 Hyper-V에서 가상 머신으로 실행할 Visual Studio 에뮬레이터의 시스템 요구 사항을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 726a02c852c4b41dacc2cab73ab4000ebda53a8a
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808261"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878945"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터에 대한 시스템 요구 사항
 
@@ -54,7 +55,7 @@ Hyper-V 요구 사항
 
   - 하드웨어 지원 가상화
 
-  - SLAT(두 번째 수준 주소 변환)
+  - SLAT(Second Level Address Translation)
 
   - 하드웨어 기반 DEP(데이터 실행 방지)
 
@@ -99,7 +100,7 @@ BIOS의 Hyper-V 요구 사항
 
 - 하드웨어 지원 가상화
 
-- SLAT(두 번째 수준 주소 변환)
+- SLAT(Second Level Address Translation)
 
 - 하드웨어 기반 DEP(데이터 실행 방지)
 

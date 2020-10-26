@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 빌드 이벤트 지정
+description: Visual Studio에서 빌드가 시작되기 전이나 완료된 후에 명령을 자동으로 실행할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115338"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136786"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio에서 사용자 지정 빌드 이벤트 지정
 

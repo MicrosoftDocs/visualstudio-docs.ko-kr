@@ -1,5 +1,7 @@
 ---
 title: 고급 컴파일러 설정 대화 상자(Visual Basic)
+description: 고급 컴파일러 설정 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,26 +15,26 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419109"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137040"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>고급 컴파일러 설정 대화 상자(Visual Basic)
 
-**프로젝트 디자이너**의 **고급 컴파일러 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다.
+**프로젝트 디자이너** 의 **고급 컴파일러 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 Visual Basic 프로젝트에만 적용됩니다.
 
 ## <a name="to-access-this-dialog-box"></a>이 대화 상자에 액세스하려면
 
-1. **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드( **솔루션** 노드 아님)를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **컴파일** 탭을 클릭합니다.
+2. **프로젝트** 메뉴에서 **속성** 을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **컴파일** 탭을 클릭합니다.
 
-3. [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼**을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+3. [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼** 을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
-4. **고급 컴파일 옵션**을 클릭합니다.
+4. **고급 컴파일 옵션** 을 클릭합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -56,7 +58,7 @@ ms.locfileid: "85419109"
 
  **디버그 정보 생성**
 
-목록에서 **없음**, **전체** 또는 **PDB 전용**을 선택합니다. **없음**은 디버깅 정보가 생성되지 않도록 지정합니다. **전체**는 전체 디버깅 정보가 생성되도록 지정하고, **PDB 전용**은 PDB 디버깅 정보가 생성되도록 지정합니다. 이 옵션의 기본값은 **전체**입니다.
+목록에서 **없음** , **전체** 또는 **PDB 전용** 을 선택합니다. **없음** 은 디버깅 정보가 생성되지 않도록 지정합니다. **전체** 는 전체 디버깅 정보가 생성되도록 지정하고, **PDB 전용** 은 PDB 디버깅 정보가 생성되도록 지정합니다. 이 옵션의 기본값은 **전체** 입니다.
 
 ## <a name="compilation-constants"></a>컴파일 상수
 
@@ -72,14 +74,14 @@ ms.locfileid: "85419109"
 
  **사용자 지정 상수**
 
-이 텍스트 상자에 애플리케이션의 사용자 지정 상수를 입력합니다. 다음 양식을 사용하여 항목을 쉼표로 구분해야 합니다. **Name1="Value1",Name2="Value2",Name3="Value3"** .
+이 텍스트 상자에 애플리케이션의 사용자 지정 상수를 입력합니다. **Name1="Value1",Name2="Value2",Name3="Value3"** 양식을 사용하여 항목을 쉼표로 구분해야 합니다.
 
 ## <a name="other-settings"></a>기타 설정
 
 **Serialization 어셈블리 생성**
 
-이 설정은 컴파일러가 XML serialization 어셈블리를 만드는지를 지정합니다. 코드에서 형식을 직렬화하는 데 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용한 경우 serialization 어셈블리가 해당 클래스의 시작 성능을 향상할 수 있습니다. 이 옵션의 기본값은 **자동**입니다. **자동**은 코드에서 형식을 XML로 인코딩하는 데 <xref:System.Xml.Serialization.XmlSerializer>를 사용한 경우에만 serialization 어셈블리가 생성되도록 지정합니다. **끄기**는 코드에서 <xref:System.Xml.Serialization.XmlSerializer>를 사용하는지와 관계없이 serialization 어셈블리가 생성되지 않도록 지정합니다. **켜기**는 serialization 어셈블리가 항상 생성되도록 지정합니다. Serialization 어셈블리의 이름은 `TypeName`.XmlSerializers.dll로 지정됩니다.
+이 설정은 컴파일러가 XML serialization 어셈블리를 만드는지를 지정합니다. 코드에서 형식을 직렬화하는 데 <xref:System.Xml.Serialization.XmlSerializer> 클래스를 사용한 경우 serialization 어셈블리가 해당 클래스의 시작 성능을 향상할 수 있습니다. 이 옵션의 기본값은 **자동** 입니다. **자동** 은 코드에서 형식을 XML로 인코딩하는 데 <xref:System.Xml.Serialization.XmlSerializer>를 사용한 경우에만 serialization 어셈블리가 생성되도록 지정합니다. **끄기** 는 코드에서 <xref:System.Xml.Serialization.XmlSerializer>를 사용하는지와 관계없이 serialization 어셈블리가 생성되지 않도록 지정합니다. **켜기** 는 serialization 어셈블리가 항상 생성되도록 지정합니다. Serialization 어셈블리의 이름은 `TypeName`.XmlSerializers.dll로 지정됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

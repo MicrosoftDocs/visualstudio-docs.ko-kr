@@ -1,5 +1,6 @@
 ---
 title: ALM(Application Lifecycle Management) 및 Unity 앱 | Microsoft 문서
+description: ALM(애플리케이션 수명 주기 관리) 및 Unity 앱을 이해합니다. Agile 도구, 모델, 코드, 빌드, 테스트를 검토하고 코드 품질을 향상합니다.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509044"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039926"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -26,7 +27,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 ## <a name="agile-tools"></a>Agile 도구
 
-참조 링크: [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)(Azure Boards 또는 TFS 사용, Team Explorer Everywhere 포함)
+참조 링크: [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)(Azure Boards 또는 TFS 사용, Team Explorer Everywhere 포함)
 
 일반 설명: 모든 계획 및 추적 기능은 프로젝트 형식 및 코딩 언어와 독립적입니다.
 
@@ -36,7 +37,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 |작업 추적|yes||
 |단체 방 협업|yes||
 |Kanban 보드|yes||
-|보고 및 진행률 시각화|yes||
+|보고 및 진행률 시각화|예||
 
 ## <a name="modeling"></a>모델링
 
@@ -59,11 +60,11 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 또는 Azure Repos 사용|yes|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
-|[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|yes|표 뒤에 나오는 설명을 참조하세요.|
+|[TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 또는 Azure Repos 사용|예|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
+|[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|예|표 뒤에 나오는 설명을 참조하세요.|
 |[코드 품질 향상](../test/improve-code-quality.md)|yes||
 |[코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)|yes||
-|[코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|yes||
+|[코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
 
 Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
@@ -75,26 +76,26 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 ## <a name="build"></a>빌드
 
-참조 링크: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+참조 링크: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
 |온-프레미스 TFS(Team Foundation Server)|가능|Unity 프로젝트는 Visual Studio 빌드 시스템이 아니라 Unity 환경을 통해 빌드됩니다(Visual Studio Tools for Unity 내에서 빌드하면 스크립트가 컴파일되지만 실행 파일은 생성되지 않음). [명령줄에서 Unity 프로젝트를 빌드](https://docs.unity3d.com/Manual/CommandLineArguments.html)(Unity 설명서)할 수 있으므로 Unity 자체가 해당 컴퓨터에 설치되어 있는 경우 적절한 Unity 명령을 실행하도록 TFS 서버의 MSBuild 프로세스를 구성할 수 있습니다.<br /><br /> 또한 Unity는 Git 또는 SVN 리포지토리를 모니터링하고 정기적 빌드를 실행하는 [Unity 클라우드 빌드](https://build.cloud.unity3d.com/landing/)를 제공합니다. 현재는 TFVC 또는 Azure DevOps Services에서 작동하지 않습니다.|
-|Azure DevOps Services에 연결된 온-프레미스 빌드 서버|가능|위와 동일한 조건에서 Azure DevOps Services를 통해 트리거된 빌드가 온-프레미스 TFS 컴퓨터를 사용하도록 추가로 지정할 수 있습니다. 지침은 [에이전트 빌드 및 릴리스](/azure/devops/pipelines/agents/agents?view=vsts)를 참조하세요.|
-|Azure DevOps Services의 호스트된 컨트롤러 서비스|예|Unity 빌드는 현재 지원되지 않습니다.|
-|사전 및 사후 스크립트로 정의 작성|yes|사전 및 사후 빌드 스크립트에 대해 Unity 명령줄을 사용하여 빌드를 실행하는 사용자 지정 빌드 정의를 구성할 수도 있습니다.|
-|제어된 체크 인을 포함하는 연속 통합|yes|Git는 체크 인이 아니라 끌어오기 요청 모델로 작동하므로 TFVC에 대한 제어된 체크 인에만 해당|
+|Azure DevOps Services에 연결된 온-프레미스 빌드 서버|가능|위와 동일한 조건에서 Azure DevOps Services를 통해 트리거된 빌드가 온-프레미스 TFS 컴퓨터를 사용하도록 추가로 지정할 수 있습니다. 지침은 [에이전트 빌드 및 릴리스](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true)를 참조하세요.|
+|Azure DevOps Services의 호스트된 컨트롤러 서비스|아니요|Unity 빌드는 현재 지원되지 않습니다.|
+|사전 및 사후 스크립트로 정의 작성|예|사전 및 사후 빌드 스크립트에 대해 Unity 명령줄을 사용하여 빌드를 실행하는 사용자 지정 빌드 정의를 구성할 수도 있습니다.|
+|제어된 체크 인을 포함하는 연속 통합|예|Git는 체크 인이 아니라 끌어오기 요청 모델로 작동하므로 TFVC에 대한 제어된 체크 인에만 해당|
 
 ## <a name="test"></a>테스트
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
 |테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|yes||
-|수동 테스트|yes||
+|수동 테스트|예||
 |테스트 관리자(테스트 기록 및 재생)|Windows 디바이스 및 Android 에뮬레이터에만 해당||
 |코드 검사|해당 없음|Visual Studio가 아니라 Unity 내에서 단위 테스트가 발생하는 경우에는 해당하지 않습니다. 아래를 참조하세요.|
 |[코드 단위 테스트](../test/unit-test-your-code.md)|Visual Studio가 아니라 Unity 내에서 발생|Unity는 [Unity 테스트 도구](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)(Unity Asset Store)의 일부로 자체 단위 테스트 프레임워크를 제공합니다. 단위 테스트 결과는 Unity 내에서 보고되고 Visual Studio 내에 표시되지 않습니다.|
-|[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|예|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|
+|[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|아니요|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|
 
 ## <a name="improve-code-quality"></a>코드 품질 향상
 
@@ -102,21 +103,21 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[코드 복제본 검색을 사용하여 중복 코드 찾기](/previous-versions/hh205279(v=vs.140))|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|yes|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[성능 도구](../profiling/performance-explorer.md)|예|[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
-|[.NET Framework 메모리 문제 분석](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|예|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
+|[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[코드 복제본 검색을 사용하여 중복 코드 찾기](/previous-versions/hh205279(v=vs.140))|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[성능 도구](../profiling/performance-explorer.md)|아니요|[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
+|[.NET Framework 메모리 문제 분석](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 
 ## <a name="release-management"></a>릴리스 관리
 
-참조 링크: [Azure Pipelines 및 TFS에서 빌드 및 릴리스](/azure/devops/pipelines/overview?view=vsts)
+참조 링크: [Azure Pipelines 및 TFS에서 빌드 및 릴리스](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
 |릴리스 프로세스 관리|yes||
-|스크립트를 통한 테스트용 로드를 위해 서버에 배포|yes||
-|앱 스토어에 업로드|부분|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다. [Azure DevOps Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|
+|스크립트를 통한 테스트용 로드를 위해 서버에 배포|예||
+|앱 스토어에 업로드|Partial|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다. [Azure DevOps Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|
 
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp으로 모니터링
 
@@ -124,4 +125,4 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|충돌 분석, 원격 분석 및 베타 분포|yes|HockeyApp은 주로 베타 분포를 처리하고 충돌 보고서를 얻는 데 유용합니다.<br /><br /> C# 스크립트에서의 원격 분석에서는 Unity가 사용하는 .NET 버전에서 실행되기만 하면 모든 분석 프레임워크를 사용할 수 있습니다. 그러나 게임 스크립트 내에서만 분석할 수 있고 Unity 엔진 내에서 보다 자세히 분석할 수는 없습니다. 현재 Application Insights에 대한 플러그 인은 없지만, [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) 및 [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) 등 기타 분석 솔루션에 대한 플러그 인은 사용 가능합니다. 물론 Unity 프로젝트의 특성을 이해하는 Unity 분석 등의 서비스가 일반 프레임워크보다 훨씬 더 의미 있는 분석을 제공합니다.|
+|충돌 분석, 원격 분석 및 베타 분포|예|HockeyApp은 주로 베타 분포를 처리하고 충돌 보고서를 얻는 데 유용합니다.<br /><br /> C# 스크립트에서의 원격 분석에서는 Unity가 사용하는 .NET 버전에서 실행되기만 하면 모든 분석 프레임워크를 사용할 수 있습니다. 그러나 게임 스크립트 내에서만 분석할 수 있고 Unity 엔진 내에서 보다 자세히 분석할 수는 없습니다. 현재 Application Insights에 대한 플러그 인은 없지만, [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) 및 [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity) 등 기타 분석 솔루션에 대한 플러그 인은 사용 가능합니다. 물론 Unity 프로젝트의 특성을 이해하는 Unity 분석 등의 서비스가 일반 프레임워크보다 훨씬 더 의미 있는 분석을 제공합니다.|

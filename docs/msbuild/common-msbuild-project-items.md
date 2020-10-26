@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425396"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136916"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 
@@ -81,9 +81,15 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |항목 메타데이터 이름|설명|
 |---------------|-----------------|
 |이름|선택적 문자열입니다. 참조의 표시 이름입니다.|
+|GlobalPropertiesToRemove|선택적 `string[]`입니다. 예를 들어 `RuntimeIdentifier;PackOnBuild`와 같이 참조된 프로젝트를 빌드할 때 제거할 속성의 이름입니다. 기본적으로 비어 있습니다.|
 |프로젝트|선택적 문자열입니다. 참조의 GUID로, {12345678-1234-1234-1234-1234567891234} 형식을 갖습니다.|
-|패키지|선택적 문자열입니다. 참조되는 프로젝트 파일의 경로입니다.|
+|OutputItemType|선택적 문자열입니다. 대상 출력을 내보낼 항목 종류입니다. 기본값은 없습니다. 참조 메타데이터를 “true”(기본값)로 설정하면 대상 출력이 컴파일러에 대한 참조가 됩니다.|
 |ReferenceOutputAssembly|선택적 부울입니다. `false`로 설정하면 참조된 프로젝트의 출력이 이 프로젝트의 [참조](#reference)로 포함되지 않지만, 이 프로젝트 앞에 다른 프로젝트가 빌드되도록 합니다. 기본값은 `true`입니다.|
+|SetConfiguration|선택적 문자열입니다. 참조된 프로젝트의 전역 속성 `Configuration`(예: `Configuration=Release`)을 설정합니다.|
+|SetPlatform|선택적 문자열입니다. 참조된 프로젝트의 전역 속성 `Platform`(예: `Platform=AnyCPU`)을 설정합니다.|
+|SetTargetFramework|선택적 문자열입니다. 참조된 프로젝트의 전역 속성 `TargetFramework`(예: `TargetFramework=netstandard2.0`)를 설정합니다.|
+|SkipGetTargetFrameworkProperties|선택적 부울입니다. `true`인 경우, 가장 호환성이 높은 `TargetFramework` 값에 대한 협상 없이 참조된 프로젝트를 빌드합니다. 기본값은 `false`입니다.|
+|대상|선택적 `string[]`입니다. 참조된 프로젝트에서 빌드해야 하는 대상의 목록으로, 세미콜론으로 구분됩니다. 기본값은 비어 있음으로 기본 설정되어 기본 대상을 나타내는 `$(ProjectReferenceBuildTargets)` 값입니다.|
 
 ### <a name="compile"></a>Compile
 
@@ -94,7 +100,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | DependentUpon | 선택적 문자열입니다. 올바르게 컴파일하기 위해 이 파일이 의존하는 파일을 지정합니다. |
 | AutoGen | 선택적 부울입니다. Visual Studio IDE(통합 개발 환경)에서 프로젝트를 위해 해당 파일이 생성되었는지 여부를 나타냅니다. |
 | 링크 | 선택적 문자열입니다. 파일이 물리적으로 프로젝트 파일의 영향 범위 밖에 있을 때 표시할 표기 경로입니다. |
-| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기**에 파일을 표시할지 여부를 나타냅니다. |
+| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
@@ -108,7 +114,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | LastGenOutput | 필수 문자열입니다. 이 항목에서 실행된 모든 파일 생성기가 만든 파일의 이름입니다. |
 | CustomToolNamespace | 필수 문자열입니다. 이 항목에서 실행되는 모든 파일 생성기가 코드를 만들어야 하는 네임스페이스입니다. |
 | 링크 | 선택적 문자열입니다. 파일이 물리적으로 프로젝트의 영향 범위 밖에 있을 때 이 표기 경로가 표시됩니다. |
-| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기**에 파일을 표시할지 여부를 나타냅니다. |
+| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 | LogicalName | 필수 문자열입니다. 포함된 리소스의 논리적 이름입니다. |
 
@@ -125,7 +131,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | 링크 | 선택적 문자열입니다. 파일이 물리적으로 프로젝트의 영향 범위 밖에 있을 때 표시될 표기 경로입니다. |
 | PublishState | 필수 문자열입니다. 콘텐츠의 게시 상태로 다음 중 하나입니다.<br /><br /> -   기본값<br />-   포함됨<br />-   제외됨<br />-   DataFile<br />-   필수 조건 |
 | IsAssembly | 선택적 부울입니다. 파일이 어셈블리인지 여부를 지정합니다. |
-| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기**에 파일을 표시할지 여부를 나타냅니다. |
+| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
 ### <a name="none"></a>없음
@@ -139,7 +145,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | LastGenOutput | 필수 문자열입니다. 이 항목에서 실행된 모든 파일 생성기가 만든 파일의 이름입니다. |
 | CustomToolNamespace | 필수 문자열입니다. 이 항목에서 실행되는 모든 파일 생성기가 코드를 만들어야 하는 네임스페이스입니다. |
 | 링크 | 선택적 문자열입니다. 파일이 물리적으로 프로젝트의 영향 범위 밖에 있을 때 표시될 표기 경로입니다. |
-| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기**에 파일을 표시할지 여부를 나타냅니다. |
+| 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata

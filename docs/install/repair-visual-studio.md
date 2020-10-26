@@ -2,7 +2,7 @@
 title: Visual Studio 복구
 titleSuffix: ''
 description: Visual Studio 2017의 설치를 복구하는 방법 알아보기
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007115"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio 복구
 
@@ -37,16 +37,16 @@ ms.locfileid: "85418966"
 ## <a name="how-to-repair"></a>복구 방법
 ::: moniker range="vs-2017"
 
-1. 컴퓨터에서 **Visual Studio 설치 관리자**를 찾습니다.
+1. 컴퓨터에서 **Visual Studio 설치 관리자** 를 찾습니다.
 
-     예를 들어 Windows 10 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
+     예를 들어 Windows 10 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작** 을 선택한 다음, **V** 문자로 스크롤하면 **Visual Studio 설치 관리자** 로 나열됩니다.
 
    > [!NOTE]
-   > 일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.
+   > 일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자** 로 문자 **“M”** 아래에 나열될 수 있습니다.
    >
    > 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. 설치 관리자를 열고 **자세히**를 선택한 후 **복구**를 선택합니다.
+1. 설치 관리자를 열고 **자세히** 를 선택한 후 **복구** 를 선택합니다.
 
     ![Visual Studio 설치 관리자에서 Visual Studio 복구](media/repair-visual-studio.png "Visual Studio 설치 관리자에서 Visual Studio 복구")
 
@@ -55,17 +55,17 @@ ms.locfileid: "85418966"
    >
 
    > [!TIP]
-   > **복구** 옵션은 Visual Studio의 설치된 인스턴스에만 나타납니다. **복구** 옵션이 표시되지 않으면 Visual Studio 설치 관리자에 “설치됨”이 아닌 “사용 가능”으로 나열된 버전에서 **자세히**를 선택한 것일 수 있습니다.
+   > **복구** 옵션은 Visual Studio의 설치된 인스턴스에만 나타납니다. **복구** 옵션이 표시되지 않으면 Visual Studio 설치 관리자에 “설치됨”이 아닌 “사용 가능”으로 나열된 버전에서 **자세히** 를 선택한 것일 수 있습니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. 컴퓨터에서 **Visual Studio 설치 관리자**를 찾습니다.
+1. 컴퓨터에서 **Visual Studio 설치 관리자** 를 찾습니다.
 
-     예를 들어 Windows 10을 실행하는 컴퓨터에서 **시작**을 선택한 다음, **Visual Studio 설치 관리자**로 나열되는 **V** 문자로 스크롤합니다.
+     Windows 시작 메뉴에서 “설치 관리자”를 검색할 수 있습니다.
 
-     ![Visual Studio 설치 관리자 열기](media/vs-2019/vs-installer-windows-start.png "Visual Studio 설치 관리자 열기")
+     ![Visual Studio 설치 관리자](media/vs-2019/visual-studio-installer.png "Visual Studio 설치 관리자 검색")
 
      > [!NOTE]
      > 다음 위치에서 Visual Studio 설치 관리자를 찾을 수도 있습니다.
@@ -74,7 +74,7 @@ ms.locfileid: "85418966"
 
     계속하기 전에 설치 관리자를 업데이트해야 할 수 있습니다. 그렇다면 지시를 따르세요.
 
-1. 설치 관리자에서 설치한 Visual Studio의 버전을 찾습니다. 그런 다음, **자세히**를 선택하고 **복구**를 선택합니다.
+1. 설치 관리자에서 설치한 Visual Studio의 버전을 찾습니다. 그런 다음, **자세히** 를 선택하고 **복구** 를 선택합니다.
 
      ![Visual Studio 2019 복구](media/vs-2019/vs-installer-repair.png "Visual Studio 2019 복구")
 
@@ -83,7 +83,7 @@ ms.locfileid: "85418966"
    >
 
    > [!TIP]
-   > **복구** 옵션은 Visual Studio의 설치된 인스턴스에만 나타납니다. **복구** 옵션이 표시되지 않으면 Visual Studio 설치 관리자에 “설치됨”이 아닌 “사용 가능”으로 나열된 버전에서 **자세히**를 선택한 것일 수 있습니다.
+   > **복구** 옵션은 Visual Studio의 설치된 인스턴스에만 나타납니다. **복구** 옵션이 표시되지 않으면 Visual Studio 설치 관리자에 “설치됨”이 아닌 “사용 가능”으로 나열된 버전에서 **자세히** 를 선택한 것일 수 있습니다.
 
 ::: moniker-end
 

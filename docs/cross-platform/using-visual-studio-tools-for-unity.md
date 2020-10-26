@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 사용 | Microsoft Docs
+description: Visual Studio Tools for Unity의 통합 및 생산성 기능을 사용하는 방법을 알아봅니다. 또한 Unity 개발에 Visual Studio 디버거를 사용합니다.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d6bf19060d029ee20b4c5c06d594e3b16cb391a3
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508966"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039861"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 
@@ -25,7 +26,7 @@ ms.locfileid: "89508966"
 
 Visual Studio가 [Unity의 외부 스크립트 편집기로 설정](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio)되면 Unity 편집기에서 스크립트를 열 때 Visual Studio가 자동으로 시작되거나 전환되고, 선택한 스크립트가 열립니다. Unity 프로젝트에서 스크립트를 두 번 클릭하면 됩니다.
 
-또는 Unity의 **Assets**(자산) 메뉴에서 **Open C# Project**(C# 프로젝트 열기)를 선택하여 소스 편집기에 열린 스크립트가 없는 상태로 Visual Studio를 열 수 있습니다.
+또는 Unity의 **Assets** (자산) 메뉴에서 **Open C# Project** (C# 프로젝트 열기)를 선택하여 소스 편집기에 열린 스크립트가 없는 상태로 Visual Studio를 열 수 있습니다.
 
 ![C# 프로젝트 열기](media/vstu_open-csharp-project.png)
 
@@ -33,7 +34,7 @@ Visual Studio가 [Unity의 외부 스크립트 편집기로 설정](getting-star
 
 Visual Studio에서 신속하게 Unity 스크립팅 설명서에 액세스할 수 있습니다. Visual Studio Tools for Unity에서 로컬에 있는 API 설명서를 찾지 못하는 경우 온라인으로 찾기를 시도합니다.
 
-- Visual Studio에서 알아보려는 Unity API를 강조 표시하거나 그 위로 커서를 가져간 다음, **Ctrl**+**Alt**+**M**, **Ctrl**+**H**를 누릅니다.
+- Visual Studio에서 알아보려는 Unity API를 강조 표시하거나 그 위로 커서를 가져간 다음, **Ctrl**+**Alt**+**M** , **Ctrl**+**H** 를 누릅니다.
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API 메시지에 대한 IntelliSense
 
@@ -43,7 +44,7 @@ Intellisense 코드 완성을 사용하면 MonoBehaviour 스크립트에서 Unit
 
 2. `OnTriggerEnter`와 같은 Unity 메시지 이름을 입력합니다.
 
-3. 글자 “**ontri**”를 입력하면 IntelliSense 제안 목록이 나타납니다.
+3. 글자 “ **ontri** ”를 입력하면 IntelliSense 제안 목록이 나타납니다.
 
    ![IntelliSense 사용](media/vstu_intellisense1.png)
 
@@ -71,7 +72,7 @@ MonoBehavior 마법사를 사용하여 모든 Unity API 메서드의 목록을 �
 
 MonoBehavior 마법사를 사용하여 빈 MonoBehavior 메서드 정의를 만들려면:
 
-1. Visual Studio에서 메서드를 삽입할 위치에 커서를 놓은 다음, **Ctrl**+**Shift**+**M**을 눌러 MonoBehavior 마법사를 시작합니다.
+1. Visual Studio에서 메서드를 삽입할 위치에 커서를 놓은 다음, **Ctrl**+**Shift**+**M** 을 눌러 MonoBehavior 마법사를 시작합니다.
 
 2. **스크립트 메서드 만들기** 창에서 추가하려는 각 메서드 이름 옆의 확인란을 선택합니다.
 
@@ -91,7 +92,7 @@ MonoBehavior 마법사를 사용하여 빈 MonoBehavior 메서드 정의를 만�
 
 Unity 프로젝트 탐색기는 모든 Unity 프로젝트 파일과 디렉터리를 Unity 편집기와 동일한 방법으로 표시합니다. 이는 Unity 스크립트를 Visual Studio에서 생성된 프로젝트 또는 솔루션으로 구성하는 일반적인 Visual Studio 솔루션 탐색기를 사용하여 Unity 스크립트를 탐색하는 것과 다릅니다.
 
-- 주 Visual Studio 메뉴에서 **보기 > Unity 프로젝트 탐색기**를 선택합니다. 바로 가기 키: **Alt**+**Shift**+**E**
+- 주 Visual Studio 메뉴에서 **보기 > Unity 프로젝트 탐색기** 를 선택합니다. 바로 가기 키: **Alt**+**Shift**+**E**
 
    ![Unity 프로젝트 탐색기 창을 봅니다.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +108,7 @@ Visual Studio Tools for Unity를 통해 Visual Studio의 강력한 디버거를 
 
    ![Visual Studio에서 [재생] 클릭](media/vstu_play-button.png)
 
-2. Unity로 전환하고 **Play**(플레이) 단추를 클릭하여 편집기에서 게임을 실행합니다.
+2. Unity로 전환하고 **Play** (플레이) 단추를 클릭하여 편집기에서 게임을 실행합니다.
 
    ![Unity에서 Play([플레이]) 클릭](media/vstu_unity-play-button.png)
 
@@ -115,7 +116,7 @@ Visual Studio Tools for Unity를 통해 Visual Studio의 강력한 디버거를 
 
 #### <a name="stop-debugging"></a>디버깅 중지
 
-- Visual Studio에서 **중지** 단추를 클릭하거나, 바로 가기 키 **Shift+F5**를 사용합니다.
+- Visual Studio에서 **중지** 단추를 클릭하거나, 바로 가기 키 **Shift+F5** 를 사용합니다.
 
   ![Visual Studio에서 [중지] 클릭](media/vstu_stop-debugger.png)
 
@@ -125,15 +126,15 @@ Visual Studio의 디버깅에 대한 자세한 내용은 [Visual Studio 디버�
 
 더욱 편리하게 사용하려면 **Unity에 연결** 단추를 **Unity에 연결 및 재생** 모드로 변경합니다.
 
-1. **Unity에 연결** 단추 옆에 있는 작은 **아래쪽 화살표**를 클릭합니다.
+1. **Unity에 연결** 단추 옆에 있는 작은 **아래쪽 화살표** 를 클릭합니다.
 
-1. 드롭다운 메뉴에서 **Unity에 연결 및 재생**을 선택합니다.
+1. 드롭다운 메뉴에서 **Unity에 연결 및 재생** 을 선택합니다.
 
     ![연결 및 재생](media/vstu_attach-and-play.png)
 
 [재생] 단추에는 **Unity에 연결 및 재생** 레이블이 지정됩니다. 이 단추를 클릭하거나 바로 가기 키 **F5** 키를 사용하면 Visual Studio 디버거를 연결할 뿐 아니라 자동으로 Unity 편집기로 전환되고 편집기에서 게임이 실행됩니다.
 
-Visual Studio에서 **중지** 단추를 클릭하거나 바로 가기 키 **Shift**+**F5**를 사용하면 자동으로 Unity 편집기에서 게임이 중지됩니다.
+Visual Studio에서 **중지** 단추를 클릭하거나 바로 가기 키 **Shift**+**F5** 를 사용하면 자동으로 Unity 편집기에서 게임이 중지됩니다.
 
 ### <a name="debug-unity-player-builds"></a>Unity 플레이어 빌드 디버그
 
@@ -141,7 +142,7 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
 #### <a name="enable-script-debugging-in-a-unity-player"></a>Unity 플레이어에서 스크립트 디버깅 사용
 
-1. Unity에서 **파일 > 빌드 설정**을 선택하여 빌드 설정을 엽니다.
+1. Unity에서 **파일 > 빌드 설정** 을 선택하여 빌드 설정을 엽니다.
 
 2. [빌드 설정] 창에서 **개발 빌드** 및 **스크립트 디버깅** 확인란을 선택합니다.
 
@@ -149,7 +150,7 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
 #### <a name="select-a-unity-instance-to-attach-the-debugger-to"></a>디버거를 연결할 Unity 인스턴스 선택
 
-- Visual Studio의 주 메뉴에서 **디버그 > Unity 디버거 연결**을 선택합니다.
+- Visual Studio의 주 메뉴에서 **디버그 > Unity 디버거 연결** 을 선택합니다.
 
    ![Unity 디버거를 연결합니다.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
@@ -163,7 +164,7 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
    **컴퓨터** 이 Unity가 실행되고 있는 컴퓨터 또는 디바이스의 이름입니다.
 
-   이 Unity의 인스턴스가 Unity 편집기의 일부로 실행되면 **형식** **편집기**이고, 이 Unity의 인스턴스가 독립 실행형 플레이어이면 **플레이어**입니다.
+   이 Unity의 인스턴스가 Unity 편집기의 일부로 실행되면 **형식** **편집기** 이고, 이 Unity의 인스턴스가 독립 실행형 플레이어이면 **플레이어** 입니다.
 
    **포트** 이 Unity의 인스턴스에서 통신하는 데 사용하는 UDP 소켓의 포트 번호입니다.
 

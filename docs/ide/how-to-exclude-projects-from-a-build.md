@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드에서 프로젝트 제외'
+description: Visual Studio를 사용하여 포함된 일부 프로젝트를 빌드하지 않고도 솔루션을 빌드할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284323"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136903"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 
@@ -30,7 +32,7 @@ ms.locfileid: "85284323"
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>활성 솔루션 구성에서 프로젝트를 일시적으로 제거하려면
 
-1. 메뉴 모음에서 **빌드** > **구성 관리자**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **구성 관리자** 를 선택합니다.
 
 2. **프로젝트 컨텍스트** 테이블에서 빌드에서 제외할 프로젝트를 찾습니다.
 
@@ -40,19 +42,19 @@ ms.locfileid: "85284323"
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>프로젝트가 제외된 솔루션 구성을 만들려면
 
-1. 메뉴 모음에서 **빌드** > **구성 관리자**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **구성 관리자** 를 선택합니다.
 
 2. **활성 솔루션 구성** 목록에서 **\<New>** 를 선택합니다.
 
 3. **이름** 상자에 솔루션 구성의 이름을 입력합니다.
 
-4. **다음에서 설정 복사** 목록에서 새 구성의 기반으로 사용할 솔루션 구성(예: **디버그**)을 선택한 다음 **확인** 단추를 선택합니다.
+4. **다음에서 설정 복사** 목록에서 새 구성의 기반으로 사용할 솔루션 구성(예: **디버그** )을 선택한 다음 **확인** 단추를 선택합니다.
 
 5. **구성 관리자** 대화 상자에서 제외할 프로젝트에 대한 **빌드** 열의 확인란을 선택 취소하고 **닫기** 단추를 선택합니다.
 
 6. **표준** 도구 모음에서 새 솔루션 구성이 **솔루션 구성** 상자의 활성 구성인지 확인합니다.
 
-7. 메뉴 모음에서 **빌드** > **솔루션 다시 빌드**를 선택합니다.
+7. 메뉴 모음에서 **빌드** > **솔루션 다시 빌드** 를 선택합니다.
 
 ## <a name="skipped-projects"></a>건너뛴 프로젝트
 
@@ -65,7 +67,7 @@ ms.locfileid: "85284323"
 2>Project not selected to build for this solution configuration
 ```
 
-프로젝트를 건너뛴 이유를 확인하려면 활성 구성(이전 예시의 `Debug x86`)을 확인하고 **빌드** > **구성 관리자**를 선택합니다. 이 문서에서 설명한 대로 각 구성에 대해 건너뛰는 프로젝트를 보거나 변경할 수 있습니다.
+프로젝트를 건너뛴 이유를 확인하려면 활성 구성(이전 예시의 `Debug x86`)을 확인하고 **빌드** > **구성 관리자** 를 선택합니다. 이 문서에서 설명한 대로 각 구성에 대해 건너뛰는 프로젝트를 보거나 변경할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

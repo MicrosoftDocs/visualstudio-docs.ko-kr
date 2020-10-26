@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659474"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298475"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![ListView가 있는 디자인 타임 데이터의 실제 모델](media\xaml-design-time-listview-models.png "ListView가 있는 디자인 타임 데이터의 실제 모델")](media\xaml-design-time-listview-models.png#lightbox)
 
 이 경우 이점은 디자인 타임 정적 버전의 모델에 컨트롤을 바인딩할 수 있다는 점입니다.
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>사용자 지정 형식 및 속성으로 디자인 타임 데이터 사용
+
+기본적으로 이 기능은 플랫폼 컨트롤 및 속성에서만 작동합니다. 이 섹션에서는 고유한 사용자 지정 컨트롤을 디자인 타임 컨트롤로 사용하도록 설정하는 데 필요한 단계를 설명합니다. Visual Studio 2019 미리 보기 버전 [16.8](/visualstudio/releases/2019/preview-notes) 이상을 사용 중인 고객에게 제공되는 새로운 기능입니다. 사용하도록 설정하는 데는 세 가지 요구 사항이 있습니다.
+
+- 사용자 지정 xmlns 네임스페이스 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- 네임스페이스의 디자인 타임 버전입니다. 간단히 끝에 /design을 추가하여 수행할 수 있습니다.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- mc:Ignorable에 디자인 타임 접두사 추가
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+이러한 모든 단계를 수행한 후 `myDesignTimeControls` 접두사를 사용하여 디자인 타임 컨트롤을 만들 수 있습니다.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>사용자 지정 xmlns 네임스페이스 만들기
+
+WPF .NET Core에서 사용자 지정 xmlns 네임스페이스를 만들려면 사용자 지정 XML 네임스페이스를 컨트롤이 있는 CLR 네임스페이스에 매핑해야 합니다. `AssemblyInfo.cs` 파일에 `XmlnsDefinition` 어셈블리 수준 특성을 추가하면 됩니다. 파일은 프로젝트의 루트 계층 구조에 있습니다.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>문제 해결
 

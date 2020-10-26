@@ -1,6 +1,5 @@
 ---
-title: CPU 사용량 분석 | Microsoft Docs
-ms.custom: seodec18
+title: 성능 프로파일러의 CPU 사용량 분석
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,41 +8,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543392"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007101"
 ---
-# <a name="analyze-cpu-usage"></a>CPU 사용량 분석
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 CPU 사용량 분석
 
 앱의 성능 문제를 조사하기 위한 좋은 방법은 CPU 사용량을 이해하는 것입니다. **CPU 사용량** 성능 도구는 C++, C#/Visual Basic 및 JavaScript 앱에서 코드 실행에 소요된 CPU 시간 및 백분율을 보여줍니다.
 
-**CPU 사용량** 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
+CPU 사용량 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Microsoft Store 앱에서 실행하거나 실행 중인 앱 또는 프로세스에 연결할 수 있습니다. 디버깅을 사용하거나 사용하지 않고 CPU 사용량 도구를 실행할 수 있습니다. 자세한 내용은 [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)을 참조하세요.
 
-디버깅을 사용하거나 사용하지 않고 **CPU 사용량** 도구를 실행할 수 있습니다. 디버거에서 CPU 프로파일링을 설정하거나 해제할 수 있으며 CPU 사용량에 대한 함수별 분석을 볼 수 있습니다. 실행이 일시 중지된 경우 CPU 사용량 결과를 볼 수 있습니다(예: 중단점에서).
+다음 지침은 Visual Studio 성능 프로파일러를 사용하여 디버거 없이 CPU 사용량 도구를 사용하는 방법을 보여줍니다. 이 예제에서는 로컬 머신에서 릴리스 빌드를 사용합니다. 릴리스 빌드는 실제 앱 성능을 가장 잘 보여줍니다. 디버그 빌드(디버거가 연결됨)를 사용하여 CPU 사용량을 분석하려면 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
 
-다음 지침은 Visual Studio **성능 프로파일러**를 사용하여 디버거 없이 **CPU 사용량** 도구를 사용하는 방법을 보여줍니다. 이 예제에서는 로컬 머신에서 릴리스 빌드를 사용합니다. 릴리스 빌드는 실제 앱 성능을 가장 잘 보여줍니다. 디버그 빌드를 사용하여 CPU 사용량을 분석하려면 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
-
-일반적으로 로컬 머신은 설치된 앱 실행을 가장 잘 복제합니다. Windows Phone 앱의 경우 디바이스에서 직접 데이터를 수집하면 가장 정확한 데이터가 제공됩니다. 원격 디바이스에서 데이터를 수집하려면 원격 데스크톱 연결을 통하지 않고 디바이스에서 직접 앱을 실행합니다.
+일반적으로 로컬 머신은 설치된 앱 실행을 가장 잘 복제합니다. 원격 디바이스에서 데이터를 수집하려면 원격 데스크톱 연결을 통하지 않고 디바이스에서 직접 앱을 실행합니다.
 
 >[!NOTE]
 >[성능 프로파일러](../profiling/profiling-feature-tour.md)를 사용하려면 Windows 7 이상이 필요합니다.
 
 ## <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집
 
-1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스**로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
+1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스** 로 설정하고 **로컬 Windows 디버거** (또는 **로컬 머신** )를 배포 대상으로 선택합니다.
 
     ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 컴퓨터 선택")
 
-1. **디버그** > **성능 프로파일러**를 선택합니다.
+1. **디버그** > **성능 프로파일러** 를 선택합니다.
 
-1. **사용 가능한 도구**에서 **CPU 사용량**을 선택한 다음, **시작**을 선택합니다.
+1. **사용 가능한 도구** 에서 **CPU 사용량** 을 선택한 다음, **시작** 을 선택합니다.
 
     ![CPU 사용량 선택](../profiling/media/cpuuse_lib_choosecpuusage.png "CPU 사용량 선택")
 
-4. 앱이 시작되면 진단 세션이 시작되고 CPU 사용량 데이터가 표시됩니다. 데이터 수집이 완료되면 **컬렉션 중지**를 선택합니다.
+4. 앱이 시작되면 진단 세션이 시작되고 CPU 사용량 데이터가 표시됩니다. 데이터 수집이 완료되면 **컬렉션 중지** 를 선택합니다.
 
    ![CPU 사용량 데이터 수집 중지](../profiling/media/cpu_use_wt_stopcollection.png "CPU 사용량 데이터 수집 중지")
 
@@ -53,7 +50,7 @@ ms.locfileid: "85543392"
 
 ## <a name="analyze-the-cpu-usage-report"></a>CPU 사용량 보고서 분석
 
-진단 보고서는 **총 CPU**를 기준으로 가장 높은 CPU에서 가장 낮은 CPU로 정렬됩니다. 열 머리글을 선택하여 정렬 순서 또는 정렬 열을 변경합니다. **필터** 드롭다운을 사용하여 표시할 스레드를 선택하거나 선택 취소하고, **검색** 상자를 사용하여 특정 스레드 또는 노드를 검색합니다.
+진단 보고서는 **총 CPU** 를 기준으로 가장 높은 CPU에서 가장 낮은 CPU로 정렬됩니다. 열 머리글을 선택하여 정렬 순서 또는 정렬 열을 변경합니다. **필터** 드롭다운을 사용하여 표시할 스레드를 선택하거나 선택 취소하고, **검색** 상자를 사용하여 특정 스레드 또는 노드를 검색합니다.
 
 ::: moniker range=">=vs-2019"
 Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부하 과다 경로 표시** 단추를 클릭하여 호출 트리 뷰에서 CPU 사용률이 가장 높은 함수 호출을 볼 수 있습니다.
@@ -69,7 +66,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 
 ### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리
 
-호출 트리를 보려면 보고서에서 부모 노드를 선택합니다. **CPU 사용량** 페이지가 **호출자/호출 수신자** 보기에 열립니다. **현재 보기** 드롭다운 목록에서 **호출 트리**를 선택합니다.
+호출 트리를 보려면 보고서에서 부모 노드를 선택합니다. **CPU 사용량** 페이지가 **호출자/호출 수신자** 보기에 열립니다. **현재 보기** 드롭다운 목록에서 **호출 트리** 를 선택합니다.
 
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> 호출 트리 구조
 
@@ -89,9 +86,9 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 
 #### <a name="external-code"></a><a name="BKMK_External_Code"></a> 외부 코드
 
-코드로 실행되는 시스템과 프레임워크 함수를 *외부 코드*라고 합니다. 외부 코드 함수는 앱 시작 및 중지, UI 그리기, 스레딩 제어, 기타 낮은 수준 서비스를 앱에 제공합니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.
+코드로 실행되는 시스템과 프레임워크 함수를 *외부 코드* 라고 합니다. 외부 코드 함수는 앱 시작 및 중지, UI 그리기, 스레딩 제어, 기타 낮은 수준 서비스를 앱에 제공합니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.
 
-외부 코드의 호출 경로를 보려면 기본 진단 보고서 페이지(오른쪽 창)의 **필터** 드롭다운에서 **외부 코드 표시**를 선택한 다음, **적용**을 선택합니다. **CPU 사용량** 페이지의 **호출 트리** 보기와 외부 코드 호출을 확장합니다. (**필터** 드롭다운은 자세한 보기가 아닌 기본 진단 페이지에서 사용할 수 있습니다.)
+외부 코드의 호출 경로를 보려면 기본 진단 보고서 페이지(오른쪽 창)의 **필터** 드롭다운에서 **외부 코드 표시** 를 선택한 다음, **적용** 을 선택합니다. **CPU 사용량** 페이지의 **호출 트리** 보기와 외부 코드 호출을 확장합니다. ( **필터** 드롭다운은 자세한 보기가 아닌 기본 진단 페이지에서 사용할 수 있습니다.)
 
 ![외부 코드 표시](../profiling/media/cpu_use_wt_filterview.png "외부 코드 표시")
 

@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, JavaScript, 서식
+description: 옵션 대화 상자의 서식 페이지를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -16,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605991"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947741"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript \> 서식
 
-**옵션** 대화 상자의 **서식** 페이지를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **JavaScript/TypeScript** > **서식**을 확장합니다.
+**옵션** 대화 상자의 **서식** 페이지를 사용하여 코드 편집기의 서식 코드에 대한 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **JavaScript/TypeScript** > **서식** 을 확장합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

@@ -1,5 +1,6 @@
 ---
 title: VSTU에서 만든 프로젝트 파일 사용자 지정 | Microsoft Docs
+description: VSTU(Visual Studio Tools for Unity)에서 생성한 프로젝트 파일을 사용자 지정하는 방법을 알아봅니다. C# 코드 예제를 검토합니다.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2e4abb707f07e0a781460e5efe6996325e5ca00
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62819531"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039427"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU에서 만든 프로젝트 파일 사용자 지정
 Visual Studio Tools for Unity는 프로젝트 파일을 생성하는 동안 Unity 스타일의 콜백을 제공합니다. `VisualStudioIntegration.ProjectFileGeneration` 이벤트로 등록하여 다시 생성될 때마다 프로젝트 파일을 수정합니다.

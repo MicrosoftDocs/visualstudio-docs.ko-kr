@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드 이벤트 지정(C#)'
+description: 빌드 이벤트를 사용하여 빌드 시작 전 또는 빌드 완료 후 실행되는 명령을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,24 +17,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283998"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136942"
 ---
 # <a name="how-to-specify-build-events-c"></a>방법: 빌드 이벤트 지정(C#)
 
 빌드 이벤트를 사용하여 빌드 시작 전 또는 빌드 완료 후 실행되는 명령을 지정합니다. 빌드 이벤트는 빌드가 빌드 프로세스의 해당 지점에 성공적으로 도달하는 경우에만 실행됩니다.
 
-프로젝트가 빌드될 때 빌드 전 이벤트는 *PreBuildEvent.bat*라는 파일에 추가되고 빌드 후 이벤트는 *PostBuildEvent.bat*라는 파일에 추가됩니다. 오류 확인을 보장하려면 자체적인 오류 확인 명령을 빌드 단계에 추가합니다.
+프로젝트가 빌드될 때 빌드 전 이벤트는 *PreBuildEvent.bat* 라는 파일에 추가되고 빌드 후 이벤트는 *PostBuildEvent.bat* 라는 파일에 추가됩니다. 오류 확인을 보장하려면 자체적인 오류 확인 명령을 빌드 단계에 추가합니다.
 
 ## <a name="specify-a-build-event"></a>빌드 이벤트 지정
 
-1. **솔루션 탐색기**에서 빌드 이벤트를 지정할 프로젝트를 선택합니다.
+1. **솔루션 탐색기** 에서 빌드 이벤트를 지정할 프로젝트를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **속성** 을 클릭합니다.
 
 3. **빌드 이벤트** 탭을 선택합니다.
 
@@ -44,7 +46,7 @@ ms.locfileid: "85283998"
 5. **빌드 후 이벤트 명령줄** 상자에서 빌드 이벤트의 구문을 지정합니다.
 
    > [!NOTE]
-   > *.bat* 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`입니다.
+   > *.bat* 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
 
 6. **빌드 후 이벤트 실행** 상자에서 빌드 후 이벤트를 실행할 조건을 지정합니다.
 
@@ -70,9 +72,9 @@ ms.locfileid: "85283998"
 
 ### <a name="create-an-exe-command-to-change-the-application-manifest"></a>.exe 명령을 만들어 애플리케이션 매니페스트 변경
 
-1. 명령에 대한 새 **콘솔 앱** 프로젝트를 만듭니다. 프로젝트 이름을 **ChangeOSVersionCS**로 지정합니다.
+1. 명령에 대한 새 **콘솔 앱** 프로젝트를 만듭니다. 프로젝트 이름을 **ChangeOSVersionCS** 로 지정합니다.
 
-2. *Program.cs*에서 파일 맨 위의 다른 `using` 지시문에 다음 줄을 추가합니다.
+2. *Program.cs* 에서 파일 맨 위의 다른 `using` 지시문에 다음 줄을 추가합니다.
 
    ```csharp
    using System.Xml;
@@ -130,25 +132,25 @@ ms.locfileid: "85283998"
    }
    ```
 
-   이 명령은 두 개의 인수인 애플리케이션 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish*) 및 새 운영 체제 버전을 사용합니다.
+   이 명령은 두 개의 인수인 애플리케이션 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish* ) 및 새 운영 체제 버전을 사용합니다.
 
 4. 프로젝트를 빌드합니다.
 
-5. *.exe* 파일을 *C:\TEMP\ChangeOSVersionVB.exe*와 같은 디렉터리에 복사합니다.
+5. *.exe* 파일을 *C:\TEMP\ChangeOSVersionVB.exe* 와 같은 디렉터리에 복사합니다.
 
 다음으로 빌드 후 이벤트에서 이 명령을 호출하여 애플리케이션 매니페스트를 수정합니다.
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>빌드 후 이벤트를 호출하여 애플리케이션 매니페스트 수정
 
-1. 새 **Windows Forms 앱** 프로젝트를 만들고 이름을 **CSWinApp**으로 지정합니다.
+1. 새 **Windows Forms 앱** 프로젝트를 만들고 이름을 **CSWinApp** 으로 지정합니다.
 
-2. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 선택합니다.
+2. **솔루션 탐색기** 에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성** 을 선택합니다.
 
-3. **프로젝트 디자이너**에서 **게시** 페이지를 찾고 **게시 위치**를 *C:\TEMP*로 설정합니다.
+3. **프로젝트 디자이너** 에서 **게시** 페이지를 찾고 **게시 위치** 를 *C:\TEMP* 로 설정합니다.
 
-4. **지금 게시**를 클릭하여 프로젝트를 게시합니다.
+4. **지금 게시** 를 클릭하여 프로젝트를 게시합니다.
 
-   매니페스트 파일이 빌드되고 *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*에 저장됩니다. 매니페스트를 보려면 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램**을 클릭하고, **목록에서 프로그램 선택**을 선택하고 나서, **메모장**을 클릭합니다.
+   매니페스트 파일이 빌드되고 *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* 에 저장됩니다. 매니페스트를 보려면 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램** 을 클릭하고, **목록에서 프로그램 선택** 을 선택하고 나서, **메모장** 을 클릭합니다.
 
    파일에서 `<osVersionInfo>` 요소를 검색합니다. 예를 들어 버전은 다음과 같습니다.
 
@@ -156,7 +158,7 @@ ms.locfileid: "85283998"
    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
    ```
 
-5. **프로젝트 디자이너**로 돌아가서 **빌드 이벤트** 탭을 클릭한 다음, **빌드 후 편집**을 클릭합니다.
+5. **프로젝트 디자이너** 로 돌아가서 **빌드 이벤트** 탭을 클릭한 다음, **빌드 후 편집** 을 클릭합니다.
 
 6. **빌드 후 이벤트 명령줄** 상자에서 다음 명령을 입력합니다.
 

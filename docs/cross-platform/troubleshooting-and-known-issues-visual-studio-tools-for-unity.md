@@ -1,5 +1,6 @@
 ---
 title: 문제 해결 및 알려진 문제(VS Tools for Unity)
+description: Visual Studio Tools for Unity에서 문제 해결을 확인합니다. 알려진 문제에 대한 설명을 확인하고 해당 문제의 해결 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: d096a431b7a345d2218c46969dc1a1a21af1f45a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235084"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039835"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 
@@ -25,7 +26,7 @@ ms.locfileid: "87235084"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>편집기 연결이 사용하도록 설정되어 있는지 확인
 
-Unity 메뉴에서 **편집 > 기본 설정**을 선택한 다음, **외부 도구** 탭을 선택합니다. **편집기 연결** 확인 상자가 사용하도록 설정되어 있는지 확인합니다. 자세한 내용은 [Unity 기본 설정 설명서](https://docs.unity3d.com/Manual/Preferences.html)를 참조하세요.
+Unity 메뉴에서 **편집 > 기본 설정** 을 선택한 다음, **외부 도구** 탭을 선택합니다. **편집기 연결** 확인 상자가 사용하도록 설정되어 있는지 확인합니다. 자세한 내용은 [Unity 기본 설정 설명서](https://docs.unity3d.com/Manual/Preferences.html)를 참조하세요.
 
 ### <a name="unable-to-attach"></a>연결할 수 없음
 
@@ -128,11 +129,11 @@ Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
 
 1. 새 Visual Studio 인스턴스를 엽니다.
 
-1. 프로세스에 연결 대화 상자를 엽니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **프로세스에 연결**을 선택합니다.
+1. 프로세스에 연결 대화 상자를 엽니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그** , **프로세스에 연결** 을 선택합니다.
 
 1. Visual Studio의 중지된 인스턴스에 디버거를 연결합니다. **프로세스에 연결** 대화 상자에서 **사용 가능한 프로세스** 테이블로부터 Visual Studio의 중지된 인스턴스를 선택한 다음 **연결** 단추를 선택합니다.
 
-1. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **모두 중단**을 차례로 선택하거나 **Ctrl+Alt+Break**를 누르기만 하면 됩니다.
+1. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그** , **모두 중단** 을 차례로 선택하거나 **Ctrl+Alt+Break** 를 누르기만 하면 됩니다.
 
 1. 스레드 덤프를 만듭니다. [명령] 창에서 다음 명령을 입력하고 **Enter** 키를 누릅니다.
 
@@ -140,7 +141,7 @@ Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    **명령** 창이 먼저 표시되도록 해야 할 수 있습니다. Visual Studio의 주 메뉴에서 **보기**, **다른 창**, **명령 창**을 선택합니다.
+    **명령** 창이 먼저 표시되도록 해야 할 수 있습니다. Visual Studio의 주 메뉴에서 **보기** , **다른 창** , **명령 창** 을 선택합니다.
 
 *Mac:*
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
+description: Unity를 사용한 플랫폼 간 게임 및 앱 개발을 지원하는 무료 Visual Studio 확장 기능인 Visual Studio Tools for Unity의 개요를 확인합니다.
 ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 967e0bfbaec19d3afa558957008ea14a5c37f359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb4e5a18bb90bfcb9a57ae85efc947a7f4962f8a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814956"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039809"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 

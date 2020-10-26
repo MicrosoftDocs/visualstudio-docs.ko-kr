@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 시작 | Microsoft 문서
+description: Visual Studio Tools for Unity를 시작합니다. Visual Studio를 설치하고 Visual Studio에서 사용하도록 Unity를 구성하고, 이전 버전에 대한 지원을 알아봅니다.
 ms.custom: ''
 ms.date: 05/11/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223458a448a4b32c3e9480f7189d5dc636ce8375
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250098"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039453"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 
@@ -53,7 +54,7 @@ Visual Studio가 이미 설치되어 있거나 수동으로 설치하려는 경�
 
 1. [Visual Studio 설치 관리자를 다운로드](../install/install-visual-studio.md)하거나 이미 설치된 경우에는 설치 관리자를 엽니다.
 
-1. 원하는 Visual Studio 버전에 대해 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
+1. 원하는 Visual Studio 버전에 대해 **수정** (이미 설치된 경우) 또는 **설치** (새 설치의 경우)를 클릭합니다.
 
 1. **워크로드** 탭에서 **모바일 및 게임** 섹션으로 스크롤하고 **Unity를 사용한 게임 개발** 워크로드를 선택합니다.
 
@@ -64,7 +65,7 @@ Visual Studio가 이미 설치되어 있거나 수동으로 설치하려는 경�
    ![Unity 워크로드](media/vs-2019/vstu-unity-workload.png)
    :::moniker-end
 
-1. 설치 관리자 창의 오른쪽 아래 모서리에 있는 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
+1. 설치 관리자 창의 오른쪽 아래 모서리에 있는 **수정** (이미 설치된 경우) 또는 **설치** (새 설치의 경우)를 클릭합니다.
 
 #### <a name="check-for-updates-to-visual-studio"></a>Visual Studio 업데이트 확인
 
@@ -76,7 +77,7 @@ Visual Studio가 이미 설치되어 있거나 수동으로 설치하려는 경�
 
 Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집기여야 합니다. 이를 확인하거나 외부 스크립트 편집기를 특정 Visual Studio 버전으로 변경할 수 있습니다.
 
-1. **편집** 메뉴에서 **기본 설정**을 선택합니다.
+1. **편집** 메뉴에서 **기본 설정** 을 선택합니다.
 
    :::moniker range="vs-2017"
    ![기본 설정 선택](media/vs-2017/vstu-unity-preferences.png)
@@ -96,7 +97,7 @@ Unity 2018.1부터 Visual Studio는 Unity의 기본 외부 스크립트 편집�
    ![Visual Studio 선택](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-4. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe**를 선택합니다. 그런 다음, **열기**를 클릭합니다.
+4. **찾아보기...** 를 선택한 경우 Visual Studio 설치 디렉터리 내부의 **Common7/IDE** 디렉터리로 이동하고 **devenv.exe** 를 선택합니다. 그런 다음, **열기** 를 클릭합니다.
 
    :::moniker range="vs-2017"
    ![열기 선택](media/vs-2017/vstu-browse-for-application.png)
@@ -118,7 +119,7 @@ Visual Studio Marketplace에서 Visual Studio Tools for Unity를 다운로드하
    [Visual Studio 2015 Tools for Unity 다운로드](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
-> Visual Studio Tools for Unity에는 Unity 5.2 이상과 함께 Visual Studio Community, Professional, Premium 또는 Enterprise와 같이 확장을 지원하는 Visual Studio 버전이 필요합니다. Visual Studio Tools for Unity가 사용 중인 Unity 설치에서 사용 가능한지 확인하려면 **도움말** 메뉴에서 **Unity 정보**를 선택하고 대화 상자의 왼쪽 아래에 “Microsoft Visual Studio Tools for Unity enabled”(Microsoft Visual Studio Tools for Unity 사용 가능) 텍스트가 있는지 확인하세요.
+> Visual Studio Tools for Unity에는 Unity 5.2 이상과 함께 Visual Studio Community, Professional, Premium 또는 Enterprise와 같이 확장을 지원하는 Visual Studio 버전이 필요합니다. Visual Studio Tools for Unity가 사용 중인 Unity 설치에서 사용 가능한지 확인하려면 **도움말** 메뉴에서 **Unity 정보** 를 선택하고 대화 상자의 왼쪽 아래에 “Microsoft Visual Studio Tools for Unity enabled”(Microsoft Visual Studio Tools for Unity 사용 가능) 텍스트가 있는지 확인하세요.
 > ![Unity 정보](media/vs-2019/vstu-about-unity.png)
 
 ## <a name="next-steps"></a>다음 단계

@@ -1,5 +1,6 @@
 ---
 title: 여러 컴퓨터 빌드 환경 만들기
+description: 호스트 컴퓨터에 Visual Studio를 설치한 다음 다양한 파일 및 설정을 다른 컴퓨터에 복사하여 조직 내에서 빌드 환경을 만듭니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038428"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136955"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
 
@@ -55,16 +56,16 @@ ms.locfileid: "90038428"
 
 1. 호스트 컴퓨터에 Visual Studio를 설치합니다.
 
-2. 빌드 컴퓨터에 .NET Framework 4.5 이상을 설치합니다. 설치되어 있는지 확인하려면 레지스트리 하위 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full**의 **버전** 항목 값이 **4.5** 이상인지 확인합니다.
+2. 빌드 컴퓨터에 .NET Framework 4.5 이상을 설치합니다. 설치되어 있는지 확인하려면 레지스트리 하위 키 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** 의 **버전** 항목 값이 **4.5** 이상인지 확인합니다.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사
 
 이 단원에서는 특정 파일, 컴파일러, 빌드 도구, MSBuild 자산 및 레지스트리 설정을 호스트 컴퓨터에서 빌드 컴퓨터로 복사하는 방법에 대해 설명합니다. 다음 단계에서는 Visual Studio가 호스트 컴퓨터의 기본 위치에 설치되어 있다고 가정합니다. 다른 위치에 설치한 경우 단계를 적절하게 조정하십시오.
 
-- x86 컴퓨터에서 기본 위치는 *C:\Program Files\Microsoft Visual Studio*입니다.
-- x64 컴퓨터에서 기본 위치는 *C:\Program Files (x86)\Microsoft Visual Studio*입니다.
+- x86 컴퓨터에서 기본 위치는 *C:\Program Files\Microsoft Visual Studio* 입니다.
+- x64 컴퓨터에서 기본 위치는 *C:\Program Files (x86)\Microsoft Visual Studio* 입니다.
 
-*Program Files* 폴더의 이름은 설치된 운영 체제에 따라 달라집니다. x86 컴퓨터에서는 이름이 *Program Files*이고, x64 컴퓨터에서는 이름이 *Program Files (x86)* 입니다. 시스템 아키텍처에 관계없이 이 연습에서는 *Program Files* 폴더를 *%ProgramFiles%* 로 나타냅니다.
+*Program Files* 폴더의 이름은 설치된 운영 체제에 따라 달라집니다. x86 컴퓨터에서는 이름이 *Program Files* 이고, x64 컴퓨터에서는 이름이 *Program Files (x86)* 입니다. 시스템 아키텍처에 관계없이 이 연습에서는 *Program Files* 폴더를 *%ProgramFiles%* 로 나타냅니다.
 
 > [!NOTE]
 > 빌드 컴퓨터에서는 모든 관련 파일이 동일한 드라이브에 있어야 합니다. 하지만 해당 드라이브의 드라이브 문자는 호스트 컴퓨터에서 Visual Studio가 설치된 드라이브의 드라이브 문자와 다를 수 있습니다. 어떤 경우이든 이 문서의 뒷부분에 설명된 것처럼 레지스트리 항목을 만들 때는 파일의 위치를 감안해야 합니다.
@@ -193,7 +194,7 @@ ms.locfileid: "90038428"
 
 MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어야 합니다.
 
-1. 레지스트리 항목의 부모 폴더를 식별합니다. 모든 레지스트리 항목이 동일한 부모 키 아래에 생성됩니다. x86 컴퓨터에서는 부모 키가 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**입니다. x64 컴퓨터에서는 부모 키가 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**입니다. 시스템 아키텍처에 관계없이 이 연습에서는 부모 키를 %RegistryRoot%로 나타냅니다.
+1. 레지스트리 항목의 부모 폴더를 식별합니다. 모든 레지스트리 항목이 동일한 부모 키 아래에 생성됩니다. x86 컴퓨터에서는 부모 키가 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft** 입니다. x64 컴퓨터에서는 부모 키가 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft** 입니다. 시스템 아키텍처에 관계없이 이 연습에서는 부모 키를 %RegistryRoot%로 나타냅니다.
 
     > [!NOTE]
     > 호스트 컴퓨터의 아키텍처가 빌드 컴퓨터의 아키텍처와 다를 경우 각 컴퓨터에서 적절한 부모 키를 사용해야 합니다. 이는 내보내기 프로세스를 자동화하는 경우 특히 중요합니다.
@@ -252,13 +253,13 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>빌드 컴퓨터에서 환경 변수 설정
 
-빌드 컴퓨터에서 MSBuild를 사용하려면 PATH 환경 변수를 설정해야 합니다. *vcvarsall.bat*를 사용하여 변수를 설정하거나 수동으로 변수를 구성할 수 있습니다.
+빌드 컴퓨터에서 MSBuild를 사용하려면 PATH 환경 변수를 설정해야 합니다. *vcvarsall.bat* 를 사용하여 변수를 설정하거나 수동으로 변수를 구성할 수 있습니다.
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat를 사용하여 환경 변수 설정
 
-빌드 컴퓨터에서 **명령 프롬프트** 창을 열고 *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat*를 실행합니다. 명령줄 인수를 사용하여 사용할 도구 집합을 지정할 수 있습니다(x86, 네이티브 x64 또는 x64 크로스 컴파일러). 명령줄 인수를 지정하지 않으면 x86 도구 집합이 사용됩니다.
+빌드 컴퓨터에서 **명령 프롬프트** 창을 열고 *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* 를 실행합니다. 명령줄 인수를 사용하여 사용할 도구 집합을 지정할 수 있습니다(x86, 네이티브 x64 또는 x64 크로스 컴파일러). 명령줄 인수를 지정하지 않으면 x86 도구 집합이 사용됩니다.
 
-다음 표에서는 *vcvarsall.bat*에 대해 지원되는 인수를 설명합니다.
+다음 표에서는 *vcvarsall.bat* 에 대해 지원되는 인수를 설명합니다.
 
 |Vcvarsall.bat 인수|컴파일러|빌드 컴퓨터 아키텍처|출력 아키텍처 빌드|
 | - |--------------| - | - |
@@ -266,7 +267,7 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 |x86_amd64|x64 크로스|x86, x64|X64|
 |amd64|x64 네이티브|X64|X64|
 
-*vcvarsall.bat*이 실행되면, 즉 오류 메시지가 표시되지 않으면 다음 단계를 건너뛰고 이 문서의 [빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](#install-msbuild-to-gac) 섹션에서 계속할 수 있습니다.
+*vcvarsall.bat* 이 실행되면, 즉 오류 메시지가 표시되지 않으면 다음 단계를 건너뛰고 이 문서의 [빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](#install-msbuild-to-gac) 섹션에서 계속할 수 있습니다.
 
 ### <a name="manually-set-environment-variables"></a>환경 변수를 수동으로 설정
 
@@ -300,7 +301,7 @@ MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. GAC에 어셈블리를 설치하려면 빌드 컴퓨터에서 *gacutil.exe*를 찾습니다. 일반적으로 이는 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\에 있습니다. 이 폴더를 찾을 수 없으면 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 있는 단계를 반복합니다.
+2. GAC에 어셈블리를 설치하려면 빌드 컴퓨터에서 *gacutil.exe* 를 찾습니다. 일반적으로 이는 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\에 있습니다. 이 폴더를 찾을 수 없으면 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 있는 단계를 반복합니다.
 
      관리 권한이 있는 **명령 프롬프트** 창을 열고 각 파일에 대해 다음 명령을 실행합니다.
 
@@ -313,7 +314,7 @@ MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리
 
 Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌드하거나 명령줄에서 빌드할 수 있습니다. Azure Pipelines를 사용하여 프로젝트를 빌드하면 시스템 아키텍처에 해당하는 MSBuild 실행 파일이 호출됩니다. 명령줄에서는 32비트 MSBuild 또는 64비트 MSBuild를 사용할 수 있으며, PATH 환경 변수를 설정하거나 아키텍처별 MSBuild 실행 파일을 직접 호출하여 MSBuild의 아키텍처를 선택할 수 있습니다.
 
-명령 프롬프트에서 *msbuild.exe*를 사용하려면 다음 명령을 실행합니다. 여기서 *solution.sln*은 솔루션 이름에 대한 자리 표시자입니다.
+명령 프롬프트에서 *msbuild.exe* 를 사용하려면 다음 명령을 실행합니다. 여기서 *solution.sln* 은 솔루션 이름에 대한 자리 표시자입니다.
 
 **msbuild** *solution.sln*
 
@@ -324,7 +325,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 다양한 컴퓨터에 배포할 수 있고 파일을 “GAC”화하거나 레지스트리 설정을 수정할 필요가 없는 빌드 환경을 만들 수 있습니다. 다음 단계는 이 작업을 수행하는 한 방법일 뿐입니다. 빌드 환경의 고유한 특성에 맞게 이러한 단계를 조정하십시오.
 
 > [!NOTE]
-> 빌드하는 동안 *tracker.exe*가 오류를 throw하지 않도록 증분 빌드가 사용되지 않도록 설정해야 합니다. 증분 빌드가 사용되지 않도록 설정하려면 다음 빌드 매개 변수를 설정하십시오.
+> 빌드하는 동안 *tracker.exe* 가 오류를 throw하지 않도록 증분 빌드가 사용되지 않도록 설정해야 합니다. 증분 빌드가 사용되지 않도록 설정하려면 다음 빌드 매개 변수를 설정하십시오.
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
@@ -332,7 +333,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
      이러한 단계에서는 디렉터리를 %Depot%으로 나타냅니다.
 
-2. 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 설명된 대로 디렉터리 및 파일을 복사하되 해당 항목을 방금 만든 *%Depot%* 디렉터리에 붙여넣습니다. 예를 들어 *%ProgramFiles%\Windows Kits\8.0\bin*에서 *%Depot%\Windows Kits\8.0\bin*으로 복사합니다.
+2. 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 설명된 대로 디렉터리 및 파일을 복사하되 해당 항목을 방금 만든 *%Depot%* 디렉터리에 붙여넣습니다. 예를 들어 *%ProgramFiles%\Windows Kits\8.0\bin* 에서 *%Depot%\Windows Kits\8.0\bin* 으로 복사합니다.
 
 3. *%Depot%* 에 파일을 붙여넣었으면 다음 변경 내용을 적용합니다.
 
@@ -354,7 +355,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. *.props* 파일(예: *Partner.AutoImports.props*)을 만들어 프로젝트가 포함된 폴더의 루트에 넣습니다. 이 파일은 다양한 리소스를 찾기 위해 MSBuild에 사용되는 변수를 설정하는 데 사용됩니다. 이 파일로 변수를 설정하지 않으면 레지스트리 값을 사용하는 다른 *.props* 파일 및 *.targets* 파일로 변수가 설정됩니다. 레지스트리 값을 설정하지 않을 것이기 때문에 이러한 변수가 비게 되고 빌드가 실패합니다. 대신 *Partner.AutoImports.props*에 다음을 추가합니다.
+4. *.props* 파일(예: *Partner.AutoImports.props* )을 만들어 프로젝트가 포함된 폴더의 루트에 넣습니다. 이 파일은 다양한 리소스를 찾기 위해 MSBuild에 사용되는 변수를 설정하는 데 사용됩니다. 이 파일로 변수를 설정하지 않으면 레지스트리 값을 사용하는 다른 *.props* 파일 및 *.targets* 파일로 변수가 설정됩니다. 레지스트리 값을 설정하지 않을 것이기 때문에 이러한 변수가 비게 되고 빌드가 실패합니다. 대신 *Partner.AutoImports.props* 에 다음을 추가합니다.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -387,7 +388,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
 6. 명령줄 환경을 다음과 같이 변경합니다.
 
-    - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
+    - Depot= *1단계에서 만든 Depot 디렉터리의 위치* 설정
 
     - Set path=%path%;’컴퓨터에서 MSBuild의 위치’;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\ 
 
@@ -399,9 +400,9 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
 6. 명령줄 환경을 다음과 같이 변경합니다.
 
-    - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
+    - Depot= *1단계에서 만든 Depot 디렉터리의 위치* 설정
 
-    - Set path=%path%;*컴퓨터에서 MSBuild의 위치*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+    - Set path=%path%; *컴퓨터에서 MSBuild의 위치* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
        네이티브 64비트 빌드의 경우 MSBuild의 64비트 버전을 가리킵니다.
 

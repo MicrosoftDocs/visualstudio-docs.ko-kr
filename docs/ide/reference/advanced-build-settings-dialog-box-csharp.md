@@ -1,5 +1,7 @@
 ---
 title: 고급 빌드 설정 대화 상자(C#)
+description: Visual Studio를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418849"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136747"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
-**프로젝트 디자이너**의 **고급 빌드 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 C# 프로젝트에만 적용됩니다.
+**프로젝트 디자이너** 의 **고급 빌드 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 C# 프로젝트에만 적용됩니다.
 
 ## <a name="general"></a>일반
 
@@ -46,7 +48,7 @@ ms.locfileid: "85418849"
 
 **내부 컴파일러 오류 보고**
 
-Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send**로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue**로 설정되면 오류 보고서가 대기합니다. **none**으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
+Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt** (기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send** 로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue** 로 설정되면 오류 보고서가 대기합니다. **none** 으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
 
 **산술 연산 오버플로/언더플로 확인**
 
@@ -88,13 +90,13 @@ mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페�
 
 **파일 맞춤**
 
-출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192**입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
+출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512** , **1024** , **2048** , **4096** 및 **8192** 입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
 
 **라이브러리 기준 주소**
 
 DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 .NET Framework 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [/baseaddress(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)
 - [빌드 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-page-project-designer-csharp.md)

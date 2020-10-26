@@ -1,5 +1,7 @@
 ---
 title: JavaScript
+description: Visual Studio IDE에서 JavaScript 코드를 작성할 때 대부분 또는 모든 표준 편집 지원(코드 조각, IntelliSense 등)을 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -12,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739891"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947780"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 

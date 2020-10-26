@@ -1,5 +1,6 @@
 ---
 title: Unity에서 .NET 4.x 사용
+description: Unity에서 .NET 4.x를 사용하는 방법을 이해합니다. .NET 4.x 스크립팅 런타임을 사용하도록 설정합니다. .NET 호환성을 활용합니다. 새 구문 및 언어 기능을 검토합니다.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508979"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039848"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
@@ -21,7 +22,7 @@ Unity 스크립팅을 기반으로 하는 기술인 C# 및 .NET는 Microsoft가 
 
 Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그레이드된 실험적 버전을 도입했습니다. Unity 2018.1에서는 .NET 4.x 해당 런타임이 더 이상 실험적인 것으로 간주되지 않지만, 이전 .NET 3.5 해당 런타임은 이제 레거시 버전으로 간주됩니다. 또한 Unity 2018.3의 릴리스부터 Unity는 업그레이드된 스크립팅 런타임을 기본 선택으로 설정하고 C# 7로 업데이트할 계획입니다. 이 로드맵에 대한 자세한 정보와 최신 업데이트는 Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)을 읽거나 [실험적 스크립팅 미리 보기 포럼](https://forum.unity.com/forums/experimental-scripting-previews.107/)을 방문하세요. 그 동안 .NET 4.x 스크립팅 런타임에서 현재 사용할 수 있는 새 기능에 대해 자세히 알아보려면 아래 섹션을 확인하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>전제 조건
 
 * [Unity 2017.1 이상](https://unity3d.com/)(2018.2 권장)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -30,19 +31,19 @@ Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그
 
 .NET 4.x 스크립팅 런타임을 사용하려면 다음 단계를 수행합니다.
 
-1. **편집 > 프로젝트 설정 > 플레이어**를 선택하여 Unity Inspector에서 PlayerSettings를 엽니다.
+1. **편집 > 프로젝트 설정 > 플레이어** 를 선택하여 Unity Inspector에서 PlayerSettings를 엽니다.
 
-1. **구성** 제목에서 **스크립팅 런타임 버전** 드롭다운을 클릭하고 **.NET 4.x 동등**을 선택합니다. Unity를 다시 시작하라는 메시지가 표시됩니다.
+1. **구성** 제목에서 **스크립팅 런타임 버전** 드롭다운을 클릭하고 **.NET 4.x 동등** 을 선택합니다. Unity를 다시 시작하라는 메시지가 표시됩니다.
 
 ![.NET 4.x 해당 선택](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x 및 NET Standard 2.0 프로필 중에서 선택
 
-.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings(**편집 > 프로젝트 설정 > 플레이어**)의 드롭다운 메뉴를 사용하여 **Api 호환성 수준**을 지정할 수 있습니다. 옵션에는
+.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings( **편집 > 프로젝트 설정 > 플레이어** )의 드롭다운 메뉴를 사용하여 **Api 호환성 수준** 을 지정할 수 있습니다. 두 가지 옵션 중이 있습니다.
 
-* **.NET Standard 2.0**. 이 프로필은 .NET Foundation에서 게시한 [.NET Standard 2.0 프로필](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)과 일치합니다. Unity는 새 프로젝트에 .NET Standard 2.0을 권장합니다. 크기가 제한된 플랫폼에 적합한 .NET 4.x보다 작습니다. 또한 Unity는 Unity가 지원하는 모든 플랫폼에서 이 프로필을 지원하기 위해 커밋되었습니다.
+* **.NET Standard 2.0** . 이 프로필은 .NET Foundation에서 게시한 [.NET Standard 2.0 프로필](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)과 일치합니다. Unity는 새 프로젝트에 .NET Standard 2.0을 권장합니다. 크기가 제한된 플랫폼에 적합한 .NET 4.x보다 작습니다. 또한 Unity는 Unity가 지원하는 모든 플랫폼에서 이 프로필을 지원하기 위해 커밋되었습니다.
 
-* **.NET 4.x**. 이 프로필은 최신.NET 4 API에 대한 액세스를 제공합니다. 또한 .NET Framework 클래스 라이브러리에 사용할 수 있는 모든 코드를 포함하며 .NET Standard 2.0 프로필도 지원합니다. 프로젝트에 .NET Standard 2.0 프로필에 포함되지 않은 API의 일부가 필요한 경우 .NET 4.x 프로필을 사용합니다. 그러나 이 API의 일부는 Unity의 일부 플랫폼에서 지원되지 않을 수 있습니다.
+* **.NET 4.x** . 이 프로필은 최신.NET 4 API에 대한 액세스를 제공합니다. 또한 .NET Framework 클래스 라이브러리에 사용할 수 있는 모든 코드를 포함하며 .NET Standard 2.0 프로필도 지원합니다. 프로젝트에 .NET Standard 2.0 프로필에 포함되지 않은 API의 일부가 필요한 경우 .NET 4.x 프로필을 사용합니다. 그러나 이 API의 일부는 Unity의 일부 플랫폼에서 지원되지 않을 수 있습니다.
 
 Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)에서 이러한 옵션에 대해 자세히 읽을 수 있습니다.
 
@@ -56,9 +57,9 @@ Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/03/28/updated-scri
 
 ![어셈블리 참조 추가 누락](media/vstu_missing-reference.png)
 
-Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일을 다시 생성합니다. 따라서 프로젝트를 다시 열면 어셈블리 참조가 손실되므로 Visual Studio에서 직접 어셈블리 참조를 추가할 수 없습니다. 대신 **mcs.rsp**라는 특수 텍스트 파일을 사용해야 합니다.
+Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일을 다시 생성합니다. 따라서 프로젝트를 다시 열면 어셈블리 참조가 손실되므로 Visual Studio에서 직접 어셈블리 참조를 추가할 수 없습니다. 대신 **mcs.rsp** 라는 특수 텍스트 파일을 사용해야 합니다.
 
-1. Unity 프로젝트의 루트 **자산** 디렉터리에 **mcs.rsp**라는 새 텍스트 파일을 만듭니다.
+1. Unity 프로젝트의 루트 **자산** 디렉터리에 **mcs.rsp** 라는 새 텍스트 파일을 만듭니다.
 
 1. 빈 텍스트 파일의 첫 번째 줄에 `-r:System.Net.Http.dll`을 입력한 다음, 파일을 저장합니다. "System.Net.Http.dll"을 누락되었을 수 있는 참조가 포함된 어셈블리로 바꿀 수 있습니다.
 
@@ -78,15 +79,15 @@ Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일�
 
     ![다운로드 단추](media/vstu_nuget-download.png)
 
-1. 다운로드한 파일을 찾아서 확장자를 **.nupkg**에서 **.zip**으로 변경합니다.
+1. 다운로드한 파일을 찾아서 확장자를 **.nupkg** 에서 **.zip** 으로 변경합니다.
 
 1. zip 파일 내에서 **lib/netstandard2.0** 디렉터리로 이동하여 **Newtonsoft.Json.dll** 파일을 복사합니다.
 
-1. Unity 프로젝트의 루트 **Assets** 폴더에서 **Plugins**라는 새 폴더를 만듭니다. 플러그 인은 Unity의 특수 폴더 이름입니다. 자세한 내용은 [Unity 설명서](https://docs.unity3d.com/Manual/Plugins.html)를 참조하세요.
+1. Unity 프로젝트의 루트 **Assets** 폴더에서 **Plugins** 라는 새 폴더를 만듭니다. 플러그 인은 Unity의 특수 폴더 이름입니다. 자세한 내용은 [Unity 설명서](https://docs.unity3d.com/Manual/Plugins.html)를 참조하세요.
 
 1. **Newtonsoft.Json.dll** 파일을 Unity 프로젝트의 **플러그 인** 디렉터리에 붙여 넣습니다.
 
-1. Unity 프로젝트의 **자산** 디렉터리에 **link.xml**이라는 파일을 만들고 다음 XML을 추가합니다.  이렇게 하면 IL2CPP 플랫폼으로 내보낼 때 Unity의 바이트코드 제거 프로세스가 필요한 데이터를 제거하지 않습니다.  이 단계는 이 라이브러리에 한정되지만, 비슷한 방식으로 리플렉션을 사용하는 다른 라이브러리에서는 문제가 발생할 수 있습니다.  자세한 내용은 이 항목의 [Unity 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
+1. Unity 프로젝트의 **자산** 디렉터리에 **link.xml** 이라는 파일을 만들고 다음 XML을 추가합니다.  이렇게 하면 IL2CPP 플랫폼으로 내보낼 때 Unity의 바이트코드 제거 프로세스가 필요한 데이터를 제거하지 않습니다.  이 단계는 이 라이브러리에 한정되지만, 비슷한 방식으로 리플렉션을 사용하는 다른 라이브러리에서는 문제가 발생할 수 있습니다.  자세한 내용은 이 항목의 [Unity 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
 
     ```xml
     <linker>
