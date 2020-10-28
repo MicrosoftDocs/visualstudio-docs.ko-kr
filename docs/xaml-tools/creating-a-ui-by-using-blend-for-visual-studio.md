@@ -1,6 +1,8 @@
 ---
 title: Blend for Visual Studio 기능 둘러보기
 titleSuffix: ''
+description: XAML 기반 Windows 및 웹 애플리케이션을 디자인하기 위한 구성 요소인 Blend for Visual Studio의 작업 영역 UI 및 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: overview
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332091"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796344"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 개요
 
 Blend for Visual Studio를 사용하면 XAML 기반 Windows 및 웹 애플리케이션을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다. Blend 및 Visual Studio 비교를 보려면 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../xaml-tools/designing-xaml-in-visual-studio.md)을 참조하세요.
 
-Blend for Visual Studio는 Visual Studio의 구성 요소입니다. Blend를 설치하려면 **Visual Studio 설치 관리자**에서 **유니버설 Windows 플랫폼 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택합니다. 이러한 워크로드에는 둘 다 Blend for Visual Studio 구성 요소가 포함됩니다.
+Blend for Visual Studio는 Visual Studio의 구성 요소입니다. Blend를 설치하려면 **Visual Studio 설치 관리자** 에서 **유니버설 Windows 플랫폼 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택합니다. 이러한 워크로드에는 둘 다 Blend for Visual Studio 구성 요소가 포함됩니다.
 
 ![UWP 워크로드 구성 요소](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![.NET 데스크톱 개발 워크로드 구성 요소](media/installer-dotnet-desktop.png)
 
@@ -62,7 +64,7 @@ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이�
 
 ## <a name="assets-window"></a>자산 창
 
-**자산** 창에는 사용 가능한 모든 컨트롤이 포함되어 있으며 Visual Studio의 **도구 상자**와 유사합니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 창의 아트보드에 추가할 수 있습니다. **자산** 창을 열려면 **보기** > **자산 창**을 선택하거나 **Ctrl**+**Alt**+**X**를 누릅니다.
+**자산** 창에는 사용 가능한 모든 컨트롤이 포함되어 있으며 Visual Studio의 **도구 상자** 와 유사합니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 창의 아트보드에 추가할 수 있습니다. **자산** 창을 열려면 **보기** > **자산 창** 을 선택하거나 **Ctrl**+**Alt**+**X** 를 누릅니다.
 
 ![Blend for Visual Studio의 자산 창](media/blend-assets-window.png)
 
@@ -71,7 +73,7 @@ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이�
 
 ## <a name="objects-and-timeline-window"></a>개체 및 타임라인 창
 
-이 창에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다. **개체 및 타임라인** 창을 열려면 **보기** > **문서 개요**를 선택합니다. Visual Studio의 [문서 개요 창](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window)에 제공된 기능 외에도 Blend for Visual Studio의 개체 및 타임라인 창의 오른쪽에는 타임라인 컴퍼지션 영역이 있습니다. 애니메이션을 만들고 편집할 때 타임라인을 사용합니다.
+이 창에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다. **개체 및 타임라인** 창을 열려면 **보기** > **문서 개요** 를 선택합니다. Visual Studio의 [문서 개요 창](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window)에 제공된 기능 외에도 Blend for Visual Studio의 개체 및 타임라인 창의 오른쪽에는 타임라인 컴퍼지션 영역이 있습니다. 애니메이션을 만들고 편집할 때 타임라인을 사용합니다.
 
 ![애니메이션 모드의 개체 및 타임라인 창](media/storyboard-timeline.png)
 
@@ -79,7 +81,7 @@ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이�
 
 사용 가능한 기능에 대한 자세한 내용을 보려면 창의 각 단추를 마우스로 가리킵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [개체에 애니메이션 적용](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [도형 및 패스 그리기](../xaml-tools/draw-shapes-and-paths.md)
