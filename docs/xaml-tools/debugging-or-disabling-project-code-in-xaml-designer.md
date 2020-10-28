@@ -1,17 +1,19 @@
 ---
 title: XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
+description: Visual Studio의 다른 인스턴스에서 실행 중인 프로젝트 코드를 디버그 하는 방법을 비롯 하 여 XAML 디자이너에서 프로젝트 코드를 디버그 하거나 사용 하지 않도록 설정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331059"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796747"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML 디자이너에서 프로젝트 코드 디버그 또는 사용하지 않도록 설정
 
@@ -53,15 +55,15 @@ ms.locfileid: "85331059"
 
 5. 프로젝트 코드에서 중단점을 설정합니다.
 
-6. Visual Studio의 새 인스턴스 메뉴 모음에서 **디버그**  >  **프로세스에 연결**을 선택 합니다.
+6. Visual Studio의 새 인스턴스 메뉴 모음에서 **디버그**  >  **프로세스에 연결** 을 선택 합니다.
 
-7. **프로세스에 연결** 대화 상자의 **사용 가능한 프로세스** 목록에서 **XDesProc.exe**를 선택한 다음 **연결** 단추를 선택합니다.
+7. **프로세스에 연결** 대화 상자의 **사용 가능한 프로세스** 목록에서 **XDesProc.exe** 를 선택한 다음 **연결** 단추를 선택합니다.
 
      ![XAML 디자이너 프로세스](media/xaml_attach.png)
 
      이는 Visual Studio의 첫 번째 인스턴스의 XAML 디자이너에 대한 프로세스입니다.
 
-8. Visual Studio의 첫 번째 인스턴스 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 합니다.
+8. Visual Studio의 첫 번째 인스턴스 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 합니다.
 
      이제 디자이너에서 실행 중인 코드를 한 단계씩 실행할 수 있습니다.
 
@@ -69,7 +71,7 @@ ms.locfileid: "85331059"
 
 - 처리되지 않은 예외 대화 상자에서 **프로젝트 코드 실행을 사용하지 않도록 설정하고 디자이너를 다시 로드하려면 여기를 클릭** 링크를 선택합니다.
 
-- 또는 **XAML 디자이너**의 도구 모음에서 **프로젝트 코드 사용 안 함** 단추를 선택 합니다.
+- 또는 **XAML 디자이너** 의 도구 모음에서 **프로젝트 코드 사용 안 함** 단추를 선택 합니다.
 
      ![프로젝트 코드 사용 안 함 단추](media/xaml_disablecode.png)
 
@@ -86,7 +88,7 @@ ms.locfileid: "85331059"
 ## <a name="control-display-options"></a>컨트롤 표시 옵션
 
 > [!NOTE]
-> **컨트롤 표시 옵션**은 Windows 10 Fall Creators Update(빌드 16299) 이상을 대상으로 하는 유니버설 Windows 플랫폼 애플리케이션에만 사용할 수 있습니다. **컨트롤 표시 옵션** 기능은 Visual Studio 2017 버전 15.9 이상에서 사용할 수 있습니다.
+> **컨트롤 표시 옵션** 은 Windows 10 Fall Creators Update(빌드 16299) 이상을 대상으로 하는 유니버설 Windows 플랫폼 애플리케이션에만 사용할 수 있습니다. **컨트롤 표시 옵션** 기능은 Visual Studio 2017 버전 15.9 이상에서 사용할 수 있습니다.
 
 XAML 디자이너에서 Windows SDK의 플랫폼 컨트롤만 표시하도록 컨트롤 표시 옵션을 변경할 수 있습니다. 이로 인해 XAML 디자이너의 안정성이 향상될 수 있습니다.
 
@@ -94,8 +96,8 @@ XAML 디자이너에서 Windows SDK의 플랫폼 컨트롤만 표시하도록 �
 
 ![컨트롤 표시 옵션](media/control_display_options.png)
 
-**플랫폼 컨트롤만 표시**를 선택하면 SDK, 고객 사용자 정의 컨트롤 등에서 제공되는 모든 사용자 지정 컨트롤이 완벽하게 렌더링되지 않습니다. 대신, 대체 컨트롤로 바뀌어 컨트롤의 크기와 위치를 보여 줍니다.
+**플랫폼 컨트롤만 표시** 를 선택하면 SDK, 고객 사용자 정의 컨트롤 등에서 제공되는 모든 사용자 지정 컨트롤이 완벽하게 렌더링되지 않습니다. 대신, 대체 컨트롤로 바뀌어 컨트롤의 크기와 위치를 보여 줍니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](designing-xaml-in-visual-studio.md)

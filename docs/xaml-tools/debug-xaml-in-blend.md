@@ -1,5 +1,7 @@
 ---
 title: Blend에서 XAML 디버그 | Microsoft Docs
+description: Blend for Visual Studio의 도구를 사용 하 여 앱에서 XAML 오류를 검색, 디버그 및 해결 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5d40878e40641b9a54a411af122f6207a02a7a1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331043"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796721"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend에서 XAML 디버그
 
-Blend for Visual Studio의 도구를 사용 하 여 앱에서 XAML을 디버그할 수 있습니다. 프로젝트를 빌드할 때 모든 오류는 **결과** 패널에 표시됩니다. 오류를 두 번 클릭하여 오류와 관련된 태그를 찾습니다. 작업할 공간이 더 필요한 경우 **F12**키를 눌러 **결과** 패널을 숨길 수 있습니다.
+Blend for Visual Studio의 도구를 사용 하 여 앱에서 XAML을 디버그할 수 있습니다. 프로젝트를 빌드할 때 모든 오류는 **결과** 패널에 표시됩니다. 오류를 두 번 클릭하여 오류와 관련된 태그를 찾습니다. 작업할 공간이 더 필요한 경우 **F12** 키를 눌러 **결과** 패널을 숨길 수 있습니다.
 
 ## <a name="syntax-errors"></a>구문 오류
 
@@ -46,11 +48,11 @@ Blend에서 간단한 코드 숨겨진 구문 오류, 컴파일 오류 및 런�
 
 #### <a name="to-create-a-project"></a>프로젝트를 만들려면
 
-1. Blend에서 **파일** 메뉴를 열고 **새 프로젝트**를 클릭 합니다.
+1. Blend에서 **파일** 메뉴를 열고 **새 프로젝트** 를 클릭 합니다.
 
     **새 프로젝트** 대화 상자의 왼쪽에 프로젝트 형식 목록이 표시됩니다. 프로젝트 형식을 클릭하면 해당 프로젝트와 연결된 프로젝트 템플릿이 오른쪽에 표시됩니다.
 
-2. 프로젝트 형식 목록에서 **Windows 유니버설**을 클릭 합니다.
+2. 프로젝트 형식 목록에서 **Windows 유니버설** 을 클릭 합니다.
 
 3. 프로젝트 템플릿 목록에서 **비어 있는 앱 (유니버설 Windows)** 을 클릭 합니다.
 
@@ -58,9 +60,9 @@ Blend에서 간단한 코드 숨겨진 구문 오류, 컴파일 오류 및 런�
 
 5. **위치** 텍스트 상자에서 프로젝트 위치를 확인합니다.
 
-6. **언어** 목록에서 **Visual C#** 을 클릭한 다음, **확인**을 클릭하여 프로젝트를 만듭니다.
+6. **언어** 목록에서 **Visual C#** 을 클릭한 다음, **확인** 을 클릭하여 프로젝트를 만듭니다.
 
-7. 디자인 화면을 마우스 오른쪽 단추로 클릭한 다음, **원본 보기**를 클릭하여 **분할** 보기로 전환합니다.
+7. 디자인 화면을 마우스 오른쪽 단추로 클릭한 다음, **원본 보기** 를 클릭하여 **분할** 보기로 전환합니다.
 
 8. 코드의 오른쪽 상단에 있는 **복사** 링크를 클릭하여 다음 코드를 복사합니다.
 
@@ -74,7 +76,7 @@ Blend에서 간단한 코드 숨겨진 구문 오류, 컴파일 오류 및 런�
    </Grid>
    ```
 
-9. 기본 **그리드**를 찾아 여는 **그리드** 태그와 닫는 태그 사이에 코드를 붙여 넣습니다. 작업을 마치면 코드가 다음과 같이 됩니다.
+9. 기본 **그리드** 를 찾아 여는 **그리드** 태그와 닫는 태그 사이에 코드를 붙여 넣습니다. 작업을 마치면 코드가 다음과 같이 됩니다.
 
     ```xml
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -116,7 +118,7 @@ XAML 오류가 감지되면 디자인 화면에서 프로젝트에 잘못된 태
 
 ## <a name="debug-in-visual-studio"></a>Visual Studio에서 디버그
 
-Visual Studio에서 Blend 프로젝트를 열어 앱에서 코드를 보다 쉽게 디버그할 수 있습니다. Visual Studio에서 Blend 프로젝트를 열려면 **프로젝트 패널에서 프로젝트를** 마우스 오른쪽 단추로 클릭 한 다음 **Visual studio에서 편집**을 클릭 합니다. Visual Studio에서 디버깅 세션을 마친 후 Ctrl + Shift + S를 눌러 변경 내용을 모두 저장 한 다음 Blend로 다시 전환 합니다. 프로젝트를 다시 로드할 것인지 묻는 메시지가 나타납니다. **모두 예를** 클릭 하 여 Blend에서 작업을 계속 진행 합니다.
+Visual Studio에서 Blend 프로젝트를 열어 앱에서 코드를 보다 쉽게 디버그할 수 있습니다. Visual Studio에서 Blend 프로젝트를 열려면 **프로젝트 패널에서 프로젝트를** 마우스 오른쪽 단추로 클릭 한 다음 **Visual studio에서 편집** 을 클릭 합니다. Visual Studio에서 디버깅 세션을 마친 후 Ctrl + Shift + S를 눌러 변경 내용을 모두 저장 한 다음 Blend로 다시 전환 합니다. 프로젝트를 다시 로드할 것인지 묻는 메시지가 나타납니다. **모두 예를** 클릭 하 여 Blend에서 작업을 계속 진행 합니다.
 
 앱을 디버깅 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 UWP 앱 디버그](../debugger/debugging-windows-store-and-windows-universal-apps.md)를 참조 하세요.
 

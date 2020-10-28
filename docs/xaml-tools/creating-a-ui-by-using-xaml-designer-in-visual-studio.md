@@ -1,5 +1,7 @@
 ---
 title: XAML 디자이너 개요
+description: XAML 기반 응용 프로그램을 디자인 하는 데 도움이 되는 시각적 인터페이스를 제공 하는 Blend for Visual Studio의 XAML 디자이너 작업 영역 UI 및 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507965"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796786"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
 
@@ -31,7 +33,7 @@ Visual Studio 및 Blend for Visual Studio의 XAML 디자이너는 WPF 및 UWP와
 
 ## <a name="xaml-designer-workspace"></a>XAML 디자이너 작업 영역
 
-XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 *아트보드*(시각적 디자인 화면), XAML 편집기, 문서 개요 창(Blend for Visual Studio의 개체 및 타임라인 창) 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너**를 선택합니다.
+XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 *아트보드* (시각적 디자인 화면), XAML 편집기, 문서 개요 창(Blend for Visual Studio의 개체 및 타임라인 창) 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너** 를 선택합니다.
 
 XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동기화된 디자인 뷰를 제공합니다. Visual Studio 또는 Blend for Visual Studio에서 XAML 파일을 연 상태에서, **디자인** 및 **XAML** 탭을 사용하여 디자인 뷰와 XAML 뷰 사이에서 전환할 수 있습니다. **창 바꾸기** 단추 ![XAML 디자이너의 창 바꾸기 단추](media/swap-panes.PNG)를 사용하여 아트보드 또는 XAML 편집기 중 하나의 맨 위에 나타나는 창을 전환할 수 있습니다.
 
@@ -45,7 +47,7 @@ XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동�
 
 **맞춤선**
 
-맞춤선은 빨간색 파선 선으로 표시되는 *맞춤 경계선*으로, 컨트롤의 가장자리가 맞춰진 경우나 텍스트 기준선이 맞춰진 경우를 나타냅니다. **맞춤선에 맞추기** 를 사용하도록 설정한 경우에만 맞춤 경계선이 나타납니다.
+맞춤선은 빨간색 파선 선으로 표시되는 *맞춤 경계선* 으로, 컨트롤의 가장자리가 맞춰진 경우나 텍스트 기준선이 맞춰진 경우를 나타냅니다. **맞춤선에 맞추기** 를 사용하도록 설정한 경우에만 맞춤 경계선이 나타납니다.
 
 **모눈 레일**
 
@@ -83,11 +85,11 @@ XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동�
 
 **확대/축소**
 
-확대/축소를 사용하면 디자인 화면의 크기를 조정할 수 있습니다. 12.5%부터 800%까지 확대/축소하거나 **선택 영역에 맞춤** 및 **모두에 맞춤**과 같은 옵션을 선택할 수 있습니다.
+확대/축소를 사용하면 디자인 화면의 크기를 조정할 수 있습니다. 12.5%부터 800%까지 확대/축소하거나 **선택 영역에 맞춤** 및 **모두에 맞춤** 과 같은 옵션을 선택할 수 있습니다.
 
 **맞춤 모눈 숨기기**
 
-눈금선을 표시하는 맞춤 모눈을 표시하거나 숨깁니다. **모눈선에 맞추기** 또는 **맞춤선에 맞추기**를 사용할 때 눈금선이 사용됩니다.
+눈금선을 표시하는 맞춤 모눈을 표시하거나 숨깁니다. **모눈선에 맞추기** 또는 **맞춤선에 맞추기** 를 사용할 때 눈금선이 사용됩니다.
 
 **모눈선에 맞추기 켜기/끄기**
 
@@ -123,8 +125,8 @@ Visual Studio의 문서 개요 창은 Blend for Visual Studio의 [개체 및 타
 
 - [애니메이션을 만듭니다](animate-objects-in-xaml-designer.md)(Blend for Visual Studio에만 해당).
 
-Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서 **View**  >  **다른 창**  >  **문서 개요**보기를 선택 합니다.
-Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서 **View**  >  **문서 개요**보기를 선택 합니다.
+Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서 **View**  >  **다른 창**  >  **문서 개요** 보기를 선택 합니다.
+Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서 **View**  >  **문서 개요** 보기를 선택 합니다.
 
 ![Visual Studio의 문서 개요 창](media/document-outline-window.png)
 
@@ -152,7 +154,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 - **이름** 상자에서 현재 선택된 요소의 이름을 변경합니다.
 - 왼쪽 위 모서리에 현재 선택한 요소를 나타내는 아이콘이 있습니다.
-- 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준**목록에서 **범주**, **이름** 또는 **소스** 를 클릭합니다.
+- 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준** 목록에서 **범주** , **이름** 또는 **소스** 를 클릭합니다.
 - 컨트롤에 대한 이벤트의 목록을 보려면 번개 기호를 표시하는 **이벤트** 단추를 클릭합니다.
 - 속성을 검색하려면 검색 상자에 속성 이름을 입력하기 시작합니다. 사용자가 입력할 때 검색 조건과 일치 하는 속성이 **속성** 창에 표시 됩니다.
 
@@ -162,7 +164,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [컨트롤 및 패턴 소개](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [방법: 리소스 만들기 및 적용](../xaml-tools/how-to-create-and-apply-a-resource.md)

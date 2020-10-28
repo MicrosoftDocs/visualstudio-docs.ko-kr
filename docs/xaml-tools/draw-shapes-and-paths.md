@@ -1,6 +1,7 @@
 ---
 title: 도형 및 패스 그리기
-description: Blend for Visual Studio를 사용 하 여 도형 및 경로에 세부 정보 추가
+description: Blend for Visual Studio에서 XAML 디자이너 기능을 사용 하 여 패스 및 도형을 그리고 수정 하 고 결합 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022512"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796799"
 ---
 # <a name="draw-shapes-and-paths"></a>도형 및 패스 그리기
 
@@ -87,12 +88,12 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 ## <a name="convert-a-shape-to-a-path"></a>도형을 패스로 변환
 
-패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다. 셰이프를 선택한 다음 **서식**  >  **경로**  >  **패스로 변환**를 선택 합니다.
+패스를 수정하는 방법과 같은 방법으로 도형을 수정하려면 도형을 패스로 변환합니다. 셰이프를 선택한 다음 **서식**  >  **경로**  >  **패스로 변환** 를 선택 합니다.
 
 **짧은 비디오 보기:** ![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.png) [경로 사용: 도형을 경로로 변환](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
-> **패스로 변환**은 최소`TargetPlatformVersion` 10.0.16299.0 이상인 UWP 앱에는 현재 사용할 수 없습니다.
+> **패스로 변환** 은 최소`TargetPlatformVersion` 10.0.16299.0 이상인 UWP 앱에는 현재 사용할 수 없습니다.
 
 ## <a name="combine-paths"></a>패스 결합
 
@@ -100,7 +101,7 @@ XAML 디자이너에서 *도형은* 정확히 필요한 것입니다. (예: 사�
 
 ![패스 결합](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|번호|작업|
+|숫자|작업|
 |-|-|
 |![결합하기 전의 두 도형](../designers/media/b1_1.png)|결합하기 전의 두 도형|
 |![통합](../designers/media/b1_2.png)|통합|
