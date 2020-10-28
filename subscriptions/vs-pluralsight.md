@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005344"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
@@ -31,21 +31,21 @@ ms.locfileid: "91005344"
 1. Visual Studio 구독에 포함된 혜택의 Pluralsight 페이지로 리디렉션됩니다.
    - 양식에 요청받은 연락처 정보를 제공합니다.
    - 확인란을 클릭하여 사용 약관에 동의합니다.
-   - **사용**을 클릭합니다.
+   - **사용** 을 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 등록](_img/vs-pluralsight/vs-pluralsight-registration.png "등록 양식을 작성하고 사용 약관에 동의하는 확인란을 클릭한 다음 사용을 클릭합니다.")
 
    > [!NOTE]
-   > 등록 페이지는 몇 분 후에 만료됩니다.  페이지가 만료되기 전에 등록 프로세스를 완료하지 않은 경우 <https://my.visualstudio.com/benefits> 페이지의 Pluralsight 타일로 돌아가서 **활성화**를 다시 클릭합니다. 
+   > 등록 페이지는 몇 분 후에 만료됩니다.  페이지가 만료되기 전에 등록 프로세스를 완료하지 않은 경우 <https://my.visualstudio.com/benefits> 페이지의 Pluralsight 타일로 돌아가서 **활성화** 를 다시 클릭합니다. 
 
 1. 계정을 설정하는 데 시간이 걸릴 수 있습니다.  완료된 후 페이지에 확인 메시지가 표시되고 로그인 정보가 포함된 이메일을 받게 됩니다.  계정을 생성할 때 지정한 별칭으로 전자 메일이 발송됩니다.  메시지를 찾은 데 문제가 있는 경우 정크 또는 스팸 메일 폴더를 확인해야 합니다.
 
    > [!NOTE]
    > 해당 계정으로 새 제품을 사용할 자격이 없는 경우, 자격이 없기 때문에 계정 생성에 문제가 발생했음을 설명하는 전자 메일을 받게 됩니다.  전자 메일에는 Pluralsight의 지원 팀에 문의하는 데 도움이 되는 정보도 포함되어 있습니다. Pluralsight의 지원 팀은 계정에 대한 문의 사항에 답변해 드립니다.
 
-1. **암호 설정**을 클릭합니다.
+1. **암호 설정** 을 클릭합니다.
 
-1. **새 암호** 필드에 원하는 암호를 입력하고 **암호 확인** 필드에 다시 입력한 다음 **저장**을 클릭합니다.
+1. **새 암호** 필드에 원하는 암호를 입력하고 **암호 확인** 필드에 다시 입력한 다음 **저장** 을 클릭합니다.
 
 1. 정말 간단하죠.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
 
@@ -117,6 +117,6 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 - [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-계정을 만들면 학습을 시작할 준비가 된 것입니다.  [https://www.pluralsight.com](https://www.pluralsight.com)을 방문하여 페이지 오른쪽 위 모서리에 있는 **로그인**을 탭하여 새 코스를 시작하거나 이미 진행 중인 코스로 돌아갑니다.
+계정을 만들면 학습을 시작할 준비가 된 것입니다.  [https://www.pluralsight.com](https://www.pluralsight.com)을 방문하여 페이지 오른쪽 위 모서리에 있는 **로그인** 을 탭하여 새 코스를 시작하거나 이미 진행 중인 코스로 돌아갑니다.
 
 [Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요.

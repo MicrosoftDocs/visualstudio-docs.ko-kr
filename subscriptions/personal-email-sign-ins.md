@@ -8,10 +8,10 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 description: Visual Studio 구독 - 구독자의 Hotmail 또는 Gmail 주소가 보이는 이유는 무엇인가요?
 ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022664"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 구독 - 구독자의 개인 계정이 보이는 이유는 무엇인가요?
@@ -28,7 +28,7 @@ ms.locfileid: "91022664"
 > [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)의 최신 구독자 환경은 회사/학교 및 MSA(Microsoft 계정) ID 유형을 둘 다 지원합니다.
 
 ## <a name="solution"></a>솔루션
-문제를 해결하려면 **전자 메일 연결** 단추를 선택하면 됩니다. 그러면 시스템에서는 이름과 성이 일치하는지 여부에 따라 MSA가 있는 계정을 조직의 Azure AD(Azure Active Directory)에 있는 기존 사용자와 대조하려고 합니다. 오류가 발생하는 경우 일치 항목 오른쪽의 **X**를 클릭하여 일치 항목을 제거할 수 있습니다.  
+문제를 해결하려면 **전자 메일 연결** 단추를 선택하면 됩니다. 그러면 시스템에서는 이름과 성이 일치하는지 여부에 따라 MSA가 있는 계정을 조직의 Azure AD(Azure Active Directory)에 있는 기존 사용자와 대조하려고 합니다. 오류가 발생하는 경우 일치 항목 오른쪽의 **X** 를 클릭하여 일치 항목을 제거할 수 있습니다.  
 
 해결하는 방법을 알아보려면 이 비디오를 시청하거나 계속 읽어 보세요. 
 
@@ -37,12 +37,12 @@ ms.locfileid: "91022664"
 > [!div class="mx-imgBorder"]
 > ![전자 메일 연결 단추](_img/connect-emails/connect-emails-button.png "Microsoft 계정을 사용하는 사용자를 Azure Active Directory에 일치시키려면 전자 메일 연결 클릭")
 
-**디렉터리 검색**을 사용하여 오류를 수정하거나 Azure AD에서 누락된 정보를 입력할 수도 있습니다. 모든 일치 항목이 제대로 표시되면 한 번에 하나씩 선택하는 대신 **현재 ID** 단추를 선택하여 모든 일치 항목을 선택할 수 있습니다.  
+**디렉터리 검색** 을 사용하여 오류를 수정하거나 Azure AD에서 누락된 정보를 입력할 수도 있습니다. 모든 일치 항목이 제대로 표시되면 한 번에 하나씩 선택하는 대신 **현재 ID** 단추를 선택하여 모든 일치 항목을 선택할 수 있습니다.  
 
 > [!div class="mx-imgBorder"]
 > ![전자 메일 연결 플라이아웃](_img/connect-emails/connect-emails-flyout.png "Azure AD ID에 일치시키려는 구독자를 선택하고 계속을 클릭합니다.")
 
-그런 다음, **계속**을 클릭하면 적용할 변경 내용 목록으로 이동합니다. 동의하는 경우 **저장**을 클릭하면 변경 내용이 적용됩니다. 구독자는 다음에 구독에 로그인할 때 변경 내용을 알리는 메시지도 받게 됩니다.  Azure Active Directory에서 일치한 두 명의 구독자만 해당 목록에 표시됩니다.  이 예제에서 Frederick은 Azure AD에 해당하는 주소가 없으므로 MSA(Microsoft 계정)는 회사 계정과 일치하지 않았습니다. 
+그런 다음, **계속** 을 클릭하면 적용할 변경 내용 목록으로 이동합니다. 동의하는 경우 **저장** 을 클릭하면 변경 내용이 적용됩니다. 구독자는 다음에 구독에 로그인할 때 변경 내용을 알리는 메시지도 받게 됩니다.  Azure Active Directory에서 일치한 두 명의 구독자만 해당 목록에 표시됩니다.  이 예제에서 Frederick은 Azure AD에 해당하는 주소가 없으므로 MSA(Microsoft 계정)는 회사 계정과 일치하지 않았습니다. 
 
 > [!div class="mx-imgBorder"]
 > ![전자 메일 연결 확인](_img/connect-emails/connect-emails-confirm.png "계속을 클릭하여 제안된 변경 내용을 구현한 다음, 저장을 클릭합니다.") 

@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005900"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
@@ -71,7 +71,7 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 1. 구독자 포털의 오른쪽 위 모서리에 있는 이름을 선택합니다.
 2. **프로필 편집** 단추를 선택합니다.
 3. **정보** 탭에서 이름, 전자 메일, 국가/지역, 프로필 사진 및 연락처 기본 설정을 변경할 수 있습니다. **기본 설정** 탭에서 기본 설정된 언어, 날짜 및 시간 패턴, 시간대 및 사용자 인터페이스 테마를 선택할 수 있습니다.
-4. 변경이 완료되면 **저장**을 선택합니다.
+4. 변경이 완료되면 **저장** 을 선택합니다.
 5. 브라우저의 **뒤로** 단추를 선택하여 혜택 페이지로 돌아갑니다.
 
 ### <a name="setting-communications-preferences"></a>통신 기본 설정 지정
@@ -89,8 +89,8 @@ Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다
 
 1. MSA(Microsoft 계정)를 사용하여 [구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. **구독** 탭을 선택합니다.
-3. **관련 링크** 아래에서 **대체 계정 추가**를 선택합니다.
-4. 회사/학교 계정 전자 메일 주소를 입력하고 **추가**를 선택합니다.
+3. **관련 링크** 아래에서 **대체 계정 추가** 를 선택합니다.
+4. 회사/학교 계정 전자 메일 주소를 입력하고 **추가** 를 선택합니다.
 
 대체 계정을 추가하면 언제든지 **구독** 탭을 선택하고 **관련 링크** 섹션에서 적절한 옵션을 선택하여 해당 계정을 업데이트하거나 제거할 수 있습니다.
 

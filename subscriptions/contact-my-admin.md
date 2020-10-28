@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
 ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005690"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
@@ -27,7 +27,7 @@ ms.locfileid: "91005690"
    > ![내 관리자에게 문의](_img/contact-my-admin/contact-my-admin-button.png "내 관리자에게 문의 단추를 선택하고 메시지를 입력한 다음 보내기를 선택합니다.")
 4. 관리자의 메시지를 입력합니다.
 5. 관리자에게 전송된 메시지의 복사본을 받으려면 **나에게 복사본 보내기** 확인란을 선택합니다. 
-6. 마지막으로 **보내기**를 선택합니다.
+6. 마지막으로 **보내기** 를 선택합니다.
 
 > [!NOTE]
 > **슈퍼 관리자:**  “내 관리자에게 문의” 요청을 보내는 전자 메일 주소를 설정하려면 [계약 기본 설정](admin-prefs.md#contact-email-address)에서 해당 주소를 지정합니다.

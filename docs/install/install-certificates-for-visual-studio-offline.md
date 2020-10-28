@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037304"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750173"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -38,7 +38,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 네트워크 레이아웃을 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 그러면 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 통해 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
-**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
+**업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
+   **업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -117,9 +117,9 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
    또는 다음 명령을 사용하여 Windows와 함께 제공되는 certutil.exe를 사용하는 일괄 처리 파일을 만듭니다.
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -134,35 +134,35 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 이 폴더에 있는 세 개의 .P12 파일 각각에는 중간 인증서와 루트 인증서가 포함되어 있습니다. Windows 업데이트로 최신 상태가 유지되는 시스템은 대부분 이러한 인증서가 이미 설치되어 있습니다.
 
-* **ManifestSignCertificates.p12**는 다음을 포함합니다.
+* **ManifestSignCertificates.p12** 는 다음을 포함합니다.
   * 중간 인증서: **Microsoft Code Signing PCA 2011**
     * 필요하지 않습니다. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2011**
     * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **ManifestCounterSignCertificates.p12**는 다음을 포함합니다.
+* **ManifestCounterSignCertificates.p12** 는 다음을 포함합니다.
   * 중간 인증서: **Microsoft Time-Stamp PCA 2010**
     * 필요하지 않습니다. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2010**
     * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **Vs_installer_opc.SignCertificates.p12**는 다음을 포함합니다.
+* **Vs_installer_opc.SignCertificates.p12** 는 다음을 포함합니다.
   * 중간 인증서: **Microsoft Code Signing PCA**
     * 모든 시스템에 필요합니다. Windows 업데이트의 모든 업데이트가 적용된 시스템에는 이 인증서가 없을 수 있습니다.
   * 루트 인증서: **Microsoft Root Certificate Authority**
     * 필수 사항입니다. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
 
-**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서는 .p12 대신 .cer 파일에 저장됩니다.
+**업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서는 .p12 대신 .cer 파일에 저장됩니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.cer**은 다음을 포함합니다.
+* **ManifestSignCertificates.cer** 은 다음을 포함합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2011**
     * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **ManifestCounterSignCertificates.cer**은 다음을 포함합니다.
+* **ManifestCounterSignCertificates.cer** 은 다음을 포함합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2010**
     * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **Vs_installer_opc.SignCertificates.cer**은 다음을 포함합니다.
+* **Vs_installer_opc.SignCertificates.cer** 은 다음을 포함합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority**
     * 필수 사항입니다. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
 
@@ -178,21 +178,21 @@ Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치�
 
 설치하는 시스템을 확인할 한 가지 방법은 다음 단계를 수행하는 것입니다.
 
-1. **mmc.exe**를 실행합니다.<br/>
-  a. **파일**을 클릭한 다음, **스냅인 추가/제거**를 선택합니다.<br/>
-  b. **인증서**를 두 번 클릭하고, **컴퓨터 계정**을 선택하고 **다음**을 클릭합니다.<br/>
-  다. **로컬 컴퓨터**를 선택하고, **마침**을 클릭하고, **확인**을 클릭합니다.<br/>
+1. **mmc.exe** 를 실행합니다.<br/>
+  a. **파일** 을 클릭한 다음, **스냅인 추가/제거** 를 선택합니다.<br/>
+  b. **인증서** 를 두 번 클릭하고, **컴퓨터 계정** 을 선택하고 **다음** 을 클릭합니다.<br/>
+  다. **로컬 컴퓨터** 를 선택하고, **마침** 을 클릭하고, **확인** 을 클릭합니다.<br/>
   d. **인증서(로컬 컴퓨터)** 를 확장합니다.<br/>
-  e. **신뢰할 수 있는 루트 인증 기관**을 확장하고 **인증서**를 선택합니다.<br/>
+  e. **신뢰할 수 있는 루트 인증 기관** 을 확장하고 **인증서** 를 선택합니다.<br/>
     * 이 목록에서 필요한 루트 인증서를 확인합니다.<br/>
 
-   f. **중간 인증 기관**을 확장하고 **인증서**를 선택합니다.<br/>
+   f. **중간 인증 기관** 을 확장하고 **인증서** 를 선택합니다.<br/>
     * 이 목록에서 필요한 중간 인증서를 확인합니다.<br/>
 
-2. **파일**을 클릭한 다음, **스냅인 추가/제거**를 선택합니다.<br/>
-  a. **인증서**를 두 번 클릭하고, **내 사용자 계정**을 선택하고, **마침**, **확인**을 차례로 클릭합니다.<br/>
-  b. **인증서 – 현재 사용자**를 확장합니다.<br/>
-  다. **중간 인증 기관**을 확장하고 **인증서**를 선택합니다.<br/>
+2. **파일** 을 클릭한 다음, **스냅인 추가/제거** 를 선택합니다.<br/>
+  a. **인증서** 를 두 번 클릭하고, **내 사용자 계정** 을 선택하고, **마침** , **확인** 을 차례로 클릭합니다.<br/>
+  b. **인증서 – 현재 사용자** 를 확장합니다.<br/>
+  다. **중간 인증 기관** 을 확장하고 **인증서** 를 선택합니다.<br/>
     * 이 목록에서 필요한 중간 인증서를 확인합니다.<br/>
 
 인증서 이름이 **발급 대상** 열에 없는 경우 이러한 인증서를 설치해야 합니다.  중간 인증서가 **현재 사용자** 중간 인증서 저장소에만 있는 경우 로그인한 사용자만 해당 인증서를 사용할 수 있습니다. 다른 사용자를 위해 설치해야 할 수도 있습니다.

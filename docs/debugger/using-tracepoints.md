@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "89561340"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio에서 추적점을 사용하여 출력 창에 정보 기록
@@ -53,7 +53,7 @@ ms.locfileid: "89561340"
 
    ![선택된 조건 상자](../debugger/media/checkedconditionsbox.png "선택된 조건 상자")
 
-   조건에 대한 세 가지 선택 사항이 있습니다. **조건 식**, **필터** 및 **적중 횟수**입니다.
+   조건에 대한 세 가지 선택 사항이 있습니다. **조건 식** , **필터** 및 **적중 횟수** 입니다.
 
 ## <a name="actions-menu"></a>작업 메뉴
 
@@ -63,7 +63,7 @@ ms.locfileid: "89561340"
 
 ![카운터 출력 메시지](../debugger/media/counteroutputmessage.png "카운터 출력 메시지")
 
-**닫기**를 클릭한 다음 프로그램을 디버그하면(**F5**), 출력 창에 다음 출력이 표시됩니다.
+**닫기** 를 클릭한 다음 프로그램을 디버그하면( **F5** ), 출력 창에 다음 출력이 표시됩니다.
 
 ![출력 창의 작업 메시지](../debugger/media/actionsmessageinoutputwindow.png "출력 창의 작업 메시지")
 
@@ -99,7 +99,7 @@ ms.locfileid: "89561340"
 **변경 시** 옵션의 동작은 프로그래밍 언어마다 다릅니다.
 
 - 네이티브 코드의 경우 디버거는 조건의 첫 번째 계산을 변경으로 간주하지 않으므로 첫 번째 계산에서는 추적점이 적중되지 않습니다.
-- 관리 코드의 경우 **변경 시**를 선택하면 디버거가 첫 번째 계산에서 추적점에 도달합니다.
+- 관리 코드의 경우 **변경 시** 를 선택하면 디버거가 첫 번째 계산에서 추적점에 도달합니다.
 
 조건을 설정하는 동안 사용할 수 있는 유효한 식에 대한 자세한 내용은 [디버거에서 식](expressions-in-the-debugger.md)을 참조하세요.
 

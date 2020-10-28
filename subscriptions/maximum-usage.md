@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: conceptual
 description: 관리 포털에서 할당된 최대 구독 수를 보는 방법 알아보기
 ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022175"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>최대 사용량 기능을 사용하여 할당된 구독 수 추적

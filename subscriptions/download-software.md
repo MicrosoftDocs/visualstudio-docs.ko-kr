@@ -8,16 +8,16 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 Microsoft 소프트웨어 타이틀을 찾고 다운로드하는 방법을 알아봅니다.
 ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005602"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio 구독의 소프트웨어 타이틀 다운로드
 어떤 Visual Studio 구독을 보유하느냐에 따라 매우 다양한 Microsoft 소프트웨어 타이틀을 사용할 수 있습니다.  이 문서에서는 구독을 최대한 활용하는 데 필요한 소프트웨어를 찾고 다운로드하는 방법을 개괄적으로 소개합니다. 
 
-[다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독**에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Enterprise 구독과 Visual Studio Professional 구독이 모두 동일한 로그인 ID에 연결되어 있는 경우, 현재 Professional 구독 혜택을 보고 있더라도 Enterprise 구독에 포함된 다운로드가 표시됩니다.  
+[다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독** 에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Enterprise 구독과 Visual Studio Professional 구독이 모두 동일한 로그인 ID에 연결되어 있는 경우, 현재 Professional 구독 혜택을 보고 있더라도 Enterprise 구독에 포함된 다운로드가 표시됩니다.  
 
 회사 또는 학교에서 구독을 제공하는 경우 구독 관리자가 다운로드에 액세스할 수 있는지 여부를 제어합니다. 다운로드에 대한 액세스를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다. 다운로드 및 제품 키에 액세스할 수 없으면 [관리자에게 문의](contact-my-admin.md)하세요.
 
@@ -29,11 +29,11 @@ ms.locfileid: "91005602"
 > [!div class="mx-imgBorder"]
 > ![구독자 다운로드 페이지](_img/subscriber-downloads/subscriber-downloads-resized.png "다운로드 블레이드를 선택하면 가장 인기 있는 다운로드 항목이 표시됩니다.")
 
-예를 들어 개발자 도구 목록에서 **Visual Studio 2019**를 선택하면 사용 가능한 Visual Studio 2019 다운로드 목록이 표시됩니다.
+예를 들어 개발자 도구 목록에서 **Visual Studio 2019** 를 선택하면 사용 가능한 Visual Studio 2019 다운로드 목록이 표시됩니다.
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 다운로드](_img/subscriber-downloads/vs2019-product-list.png "제품을 선택하면 사용 가능한 버전 목록이 표시됩니다.")
 
-사용 가능한 드롭다운 메뉴를 통해 아키텍처, 언어 및 파일 형식을 쉽게 선택할 수 있습니다. 원하는 옵션을 선택하고 **다운로드**를 선택하여 제품 다운로드를 시작합니다.
+사용 가능한 드롭다운 메뉴를 통해 아키텍처, 언어 및 파일 형식을 쉽게 선택할 수 있습니다. 원하는 옵션을 선택하고 **다운로드** 를 선택하여 제품 다운로드를 시작합니다.
 
 > [!NOTE]
 > 모든 타이틀이 모든 아키텍처, 언어 또는 파일 형식에서 사용 가능한 것은 아닙니다.  
@@ -48,7 +48,7 @@ ms.locfileid: "91005602"
 > ![Visual Studio 2019 제품 키](_img/subscriber-downloads/vs2019-keys.png "키 탭에서 남은 키 수를 확인하고 사용 가능한 키를 요청할 수 있습니다.")
 
 ### <a name="obtaining-product-keys"></a>제품 키 얻기
-다운로드할 제품 키를 얻으려면 **키 가져오기**라는 파란색 키를 선택하거나, 이미 세부 정보 창을 보고 있는 경우 **키** 탭에서 **키 클레임**을 선택합니다.
+다운로드할 제품 키를 얻으려면 **키 가져오기** 라는 파란색 키를 선택하거나, 이미 세부 정보 창을 보고 있는 경우 **키** 탭에서 **키 클레임** 을 선택합니다.
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 제품 키 요청](_img/subscriber-downloads/vs2019-claim-keys.png "남은 키를 요청하려면 키 클레임을 선택합니다.")
 

@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: 관리자가 관리 포털에서 개별 구독자 또는 그룹을 찾는 방법을 설명합니다.
 ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022240"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 구독자 검색 및 필터링
@@ -22,7 +22,7 @@ Visual Studio 구독 관리 포털을 사용하면 다양한 조건에 따라 �
    > [!div class="mx-imgBorder"]
    > ![구독자 목록을 검색하려면 필터를 선택합니다.](_img/search-filter/filter-list.png "필터를 클릭하여 표시되는 구독을 제한하는 조건을 입력합니다.")
 
-2. 검색 기준으로 사용할 조건을 입력한 다음, **필터**를 다시 선택합니다.
+2. 검색 기준으로 사용할 조건을 입력한 다음, **필터** 를 다시 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![사용 가능한 필드를 사용하여 구독자 데이터를 필터링합니다.](media/filter-subscribers.png "다양한 필드에 값을 입력하여 검색 결과를 제한합니다. 예를 들어 ‘@contoso.com’을 검색하여 @contoso.com 전자 메일 주소로 모든 구독자 목록을 반환할 수 있습니다.")
 
