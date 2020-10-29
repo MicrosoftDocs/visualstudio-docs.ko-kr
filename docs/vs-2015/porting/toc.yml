@@ -1,8 +1,0 @@
-- name: 'Porting, Migrating, and Upgrading Visual Studio Projects'
-  items:
-    - name: 'Porting, Migrating, and Upgrading Visual Studio Projects'
-      href: porting-migrating-and-upgrading-visual-studio-projects.md
-    - name: Visual C++ 프로젝트를 Visual Studio 2015로 업그레이드
-      href: how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md
-    - name: 실패한 Visual Studio 프로젝트 업그레이드 문제 해결
-      href: how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md
