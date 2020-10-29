@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: 이점
       items:
+        - name: 이점 정보
+          href: about-benefits.md
         - name: 도구
           items:
             - name: Azure DevTest 개별 크레딧
