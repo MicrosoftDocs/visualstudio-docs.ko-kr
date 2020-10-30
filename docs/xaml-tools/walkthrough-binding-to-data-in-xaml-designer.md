@@ -1,5 +1,7 @@
 ---
 title: XAML 디자이너에서 데이터에 바인딩
+description: 아트 보드와 속성 창를 사용 하 여 데이터 바인딩 속성을 설정 하 여 XAMl 디자이너에서 컨트롤에 데이터를 바인딩하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 9cc5348004f344bd62e66aa03a20b0dd61017692
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713427"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047173"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>연습: XAML 디자이너에서 데이터에 바인딩
 
@@ -23,13 +25,13 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>데이터 소스로 사용할 클래스를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다.
 
 1. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 선택하고, **Windows 바탕 화면** 노드를 펼친 다음, **WPF 애플리케이션** 템플릿을 선택합니다.
 
 1. **BindingTest** 프로젝트 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
-1. **MainWindow.xaml.cs**(또는 **MainWindow.xaml.vb**) 파일을 열고 다음 코드를 추가합니다. C#에서는 `BindingTest` 네임스페이스에 코드를 추가합니다(파일의 마지막 닫는 괄호 앞에 추가). Visual Basic에서는 새 클래스를 추가합니다.
+1. **MainWindow.xaml.cs** (또는 **MainWindow.xaml.vb** ) 파일을 열고 다음 코드를 추가합니다. C#에서는 `BindingTest` 네임스페이스에 코드를 추가합니다(파일의 마지막 닫는 괄호 앞에 추가). Visual Basic에서는 새 클래스를 추가합니다.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -65,25 +67,25 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
    이 코드는 [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata) 개체를 사용하여 기본 항목 수로 값 0을 설정합니다.
 
-1. **파일** 메뉴에서 **빌드** > **솔루션 빌드**를 선택합니다.
+1. **파일** 메뉴에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>ItemCount 속성을 TextBlock 컨트롤에 바인딩하려면
 
-1. 솔루션 탐색기에서 **mainwindow.xaml** 의 바로 가기 메뉴를 열고 **뷰 디자이너**를 선택 합니다.
+1. 솔루션 탐색기에서 **mainwindow.xaml** 의 바로 가기 메뉴를 열고 **뷰 디자이너** 를 선택 합니다.
 
 1. 도구 상자에서 [그리드](xref:Windows.UI.Xaml.Controls.Grid) 컨트롤을 선택하여 양식에 추가합니다.
 
 1. `Grid`를 선택하고, [속성] 창에서 **DataContext** 속성 옆에 있는 **새로 만들기** 단추를 선택합니다.
 
-1. **개체 선택** 대화 상자에서, **모든 어셈블리 표시** 확인란을 선택 취소하고, **BindingTest** 네임스페이스 아래에서 **ShoppingCart**를 선택한 다음, **확인** 단추를 선택합니다.
+1. **개체 선택** 대화 상자에서, **모든 어셈블리 표시** 확인란을 선택 취소하고, **BindingTest** 네임스페이스 아래에서 **ShoppingCart** 를 선택한 다음, **확인** 단추를 선택합니다.
 
-     다음 그림에서는 **ShoppingCart**가 선택된 **개체 선택** 대화 상자를 보여 줍니다.
+     다음 그림에서는 **ShoppingCart** 가 선택된 **개체 선택** 대화 상자를 보여 줍니다.
 
      ![개체 선택 대화 상자](../designers/media/blendselectobject.png)
 
-1. **도구 상자**에서, `TextBlock` 컨트롤을 선택하여 양식에 추가합니다.
+1. **도구 상자** 에서, `TextBlock` 컨트롤을 선택하여 양식에 추가합니다.
 
-1. `TextBlock` 컨트롤을 선택하고, [속성] 창에서 **Text** 속성의 오른쪽에 속성 마커를 선택한 다음, **데이터 바인딩 만들기**를 선택합니다. 속성 표식은 작은 상자 모양입니다.
+1. `TextBlock` 컨트롤을 선택하고, [속성] 창에서 **Text** 속성의 오른쪽에 속성 마커를 선택한 다음, **데이터 바인딩 만들기** 를 선택합니다. 속성 표식은 작은 상자 모양입니다.
 
 1. [데이터 바인딩 만들기] 대화 상자의 **경로** 상자에서 **ItemCount : (int32)** 속성을 선택한 다음 **확인** 단추를 선택합니다.
 

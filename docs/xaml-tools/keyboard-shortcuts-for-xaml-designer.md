@@ -1,17 +1,19 @@
 ---
 title: XAML 디자이너에 대한 바로 가기 키
+description: 아트 보드와 문서 개요 창에서 요소를 사용 하기 위한 명령에 액세스 하는 XAML 디자이너의 바로 가기 키에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9f30dd3eaeb6905088e7eec9db1fa9cc2b0f32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82921150"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045894"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
 
@@ -21,7 +23,7 @@ XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여�
 
 이 표에서는 아트 보드의 요소 작업에 사용할 수 있는 바로 가기 키를 보여줍니다.
 
-|**수행할 작업**|**수행할 작업**|
+|**수행할 작업**|**단계**|
 | - |-----------------|
 |요소 만들기|**Ctrl** + **N** 누르기|
 |요소 복제|**Alt** 키를 누른 상태로 화살표 키를 누릅니다.|
@@ -34,15 +36,15 @@ XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여�
 |모든 요소 선택|**Ctrl** + **A** 를 누릅니다.|
 |모든 요소 선택 지우기|**Ctrl** + **Shift** + **A** 를 누릅니다.|
 |요소 핸들 표시 또는 숨기기|**F9** 키를 누릅니다.|
-|요소의 속성 선택|요소를 선택 하 고 속성 창에 포커스를 두고 **tab**키를 누릅니다. ( **Ctrl** + 사용 **탭** 하 여 포커스를 속성 창로 변경 합니다.) 화살표 키를 사용 하 여 드롭다운 목록에서 속성 값을 선택할 수 있습니다.|
+|요소의 속성 선택|요소를 선택 하 고 속성 창에 포커스를 두고 **tab** 키를 누릅니다. ( **Ctrl** + 사용 **탭** 하 여 포커스를 속성 창로 변경 합니다.) 화살표 키를 사용 하 여 드롭다운 목록에서 속성 값을 선택할 수 있습니다.|
 
 ## <a name="document-outline-window-shortcuts"></a>문서 개요 창 바로 가기
 
 다음 표에서는 문서 개요 창에서 요소 작업을 할 때 사용 가능한 바로 가기 키를 나열합니다.
 
-|**수행할 작업**|**수행할 작업**|
+|**수행할 작업**|**단계**|
 | - |-----------------|
-|포커스가 문서 개요 창에 있을 때 아트보드 개체 숨기기|**Ctrl** + **H**|
+|포커스가 문서 개요 창에 있을 때 아트보드 개체 숨기기|**Ctrl**+**H**|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 표시|**Shift** + **Ctrl** + **H**|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금|**Ctrl** + **L**|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금 해제|**Shift** + **Ctrl** + **L**|
