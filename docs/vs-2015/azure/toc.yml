@@ -1,95 +1,26 @@
 - name: Visual Studio를 사용한 Azure 개발
-  href: index.yml
   expanded: true
 - name: Azure에 게시
-  expanded: true
   items:
-    - name: 클라우드 서비스 게시
-      href: vs-azure-tools-publishing-a-cloud-service.md
-    - name: Visual Studio IDE를 사용하여 게시
-      href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: PowerShell 스크립트를 사용하여 게시
-      href: vs-azure-tools-publishing-using-powershell-scripts.md
     - name: Azure VM에 ASP.NET 웹앱 게시
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Azure Cloud Services에 웹앱 게시
-      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+  expanded: true
 - name: Azure 서비스에 연결
-  expanded: false
   items:
-    - name: Azure 스토리지 추가
-      href: vs-azure-tools-connected-services-storage.md
     - name: Azure AD(Active Directory) 추가
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Mobile Services 추가
-      href: vs-azure-tools-connected-services-add-mobile-services.md
-- name: Azure Cloud Services 개발
   expanded: false
+- name: Azure Cloud Services 개발
   items:
     - name: 클라우드 서비스 프로젝트 작업
-      items:
-        - name: 개인 Azure 클라우드에 액세스
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-        - name: Azure 클라우드 서비스 프로젝트 만들기
-          href: vs-azure-tools-azure-project-create.md
-        - name: Azure Cloud Services의 역할 관리
-          href: vs-azure-tools-cloud-service-project-managing-roles.md
-        - name: 클라우드 서비스 게시 또는 배포 준비
-          href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-        - name: Azure 클라우드 서비스의 가상 IP 주소를 일정하게 유지
-          href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
-        - name: 명령줄에서 Azure 프로젝트 빌드
-          href: vs-azure-tools-command-line-build.md
-        - name: Azure Cloud Services 역할 구성
-          href: vs-azure-tools-configure-roles-for-cloud-service.md
-        - name: Azure 클라우드 서비스 프로젝트 구성
-          href: vs-azure-tools-configuring-an-azure-project.md
-        - name: 여러 서비스 구성을 사용하도록 Azure 프로젝트 구성
-          href: vs-azure-tools-multiple-services-project-configurations.md
-        - name: 프로젝트를 Azure 도구의 현재 버전으로 업그레이드
-          href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
     - name: 클라우드 서비스 테스트 및 디버그
-      items:
-        - name: Azure 클라우드 서비스 또는 가상 머신 디버그
-          href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Azure 클라우드 서비스를 디버그하는 다양한 방법 알아보기
-          href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
-          href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-        - name: Emulator Express를 사용하여 로컬 컴퓨터에서 Azure 클라우드 서비스 실행 및 디버그
-          href: vs-azure-tools-emulator-express-debug-run.md
-        - name: IntelliTrace로 게시된 Azure 클라우드 서비스 디버그
-          href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-        - name: 클라우드 서비스의 성능 테스트
-          href: vs-azure-tools-performance-profiling-cloud-services.md
-        - name: Azure 코드 최적화
-          href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
     - name: Azure에 클라우드 서비스 게시
-      items:
-        - name: Azure 클라우드 서비스로 웹 애플리케이션 마이그레이션 및 게시
-          href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-        - name: 'Visual Studio [Azure 애플리케이션 게시] 마법사 사용'
-          href: vs-azure-tools-publish-azure-application-wizard.md
-        - name: Visual Studio를 사용하여 클라우드 서비스 게시
-          href: vs-azure-tools-publishing-a-cloud-service.md
-        - name: Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시
-          href: vs-azure-tools-publishing-using-powershell-scripts.md
-        - name: Publish-WebApplicationVM (Windows PowerShell 스크립트)
-          href: vs-azure-tools-publish-webapplicationvm.md
-        - name: Publish-WebApplicationWebSite (Windows PowerShell 스크립트)
-          href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
-        - name: 서비스 구성 및 프로필 관리
-          href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: 명명된 인증 자격 증명 설정
-          href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Azure 스토리지 작업
       items:
         - name: Storage Explorer 시작
           href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: 스토리지 에뮬레이터 구성 및 사용
           href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: 테이블 디자이너에 대한 필터 문자열 생성
-          href: vs-azure-tools-table-designer-construct-filter-strings.md
         - name: Storage Explorer를 사용하여 Azure Blob Storage 리소스 관리
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Azure 파일 스토리지와 함께 Storage Explorer 사용
@@ -98,11 +29,5 @@
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Storage Explorer 접근성
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+  expanded: false
 - name: 클라우드 탐색기
-  items:
-    - name: 서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
-      href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-    - name: 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
-      href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-    - name: 서버 탐색기에서 Azure Virtual Machines에 액세스
-      href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
