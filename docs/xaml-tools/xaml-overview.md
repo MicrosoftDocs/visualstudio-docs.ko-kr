@@ -1,16 +1,18 @@
 ---
 title: XAML 개요
+description: Visual Studio의 XAML 및 XAML 코드 편집기와 XAML 디자이너 도구에 대한 기본 정보를 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 997a35414f38af16d028770044c28652e13149be
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331944"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049191"
 ---
 # <a name="overview-of-xaml"></a>XAML 개요
 
