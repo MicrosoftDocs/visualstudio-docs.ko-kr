@@ -1,5 +1,7 @@
 ---
 title: MSBuild가 프로젝트를 빌드하는 방식
+description: Visual Studio, 명령줄 또는 스크립트에서 호출된 MSBuild가 프로젝트 파일을 처리하는 방식에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136864"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353254"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild가 프로젝트를 빌드하는 방식
 

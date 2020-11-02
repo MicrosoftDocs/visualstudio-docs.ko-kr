@@ -2,18 +2,18 @@
 title: Visual Studio의 새로운 Git 환경(미리 보기)
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경 알아보기
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082059"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334209"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Visual Studio의 새로운 Git 환경(미리 보기)
 
@@ -98,7 +98,7 @@ Git은 작업할 때 리포지토리에서 파일 변경 내용을 추적하고 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio에 있는 옵션 대화 상자의 미리 보기 기능 섹션 스크린샷 ":::
 
 > [!TIP]
-> Azure DevOps 리포지토리에 연결된 경우 “#” 문자를 사용하여 Azure DevOps 작업 항목을 커밋에 연결할 수 있습니다. 팀 탐색기 > 연결 관리를 통해 Azure DevOps 리포지토리를 연결할 수 있습니다.
+> Azure DevOps 리포지토리에 연결된 경우 '#' 문자를 사용하여 Azure DevOps 작업 항목을 커밋에 연결할 수 있습니다. **팀 탐색기** > **연결 관리** 를 통해 Azure DevOps 리포지토리를 연결할 수 있습니다.
 
 ### <a name="select-an-existing-branch"></a>기존 분기 선택
 

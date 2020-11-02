@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003848"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353098"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -22,23 +22,23 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 
 2. 혜택 페이지의 도구 섹션에서 Azure 타일을 찾고 혜택 타일 아래쪽에 있는 **활성화** 링크를 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![Azure 타일](_img/vs-azure/vs-azure-tile.png)
+   > ![Azure 타일](_img/vs-azure/vs-azure-tile.png "시작하려면 Azure 타일에서 '활성화' 단추를 클릭합니다.")
 
-3. 기존 Azure 구독이 없는 경우 Azure 구독을 만드는 데 필요한 정보를 입력하라는 메시지가 표시됩니다.  첫 번째 단계로 개인 정보를 제공하고 **다음**을 선택합니다.
+3. 기존 Azure 구독이 없는 경우 Azure 구독을 만드는 데 필요한 정보를 입력하라는 메시지가 표시됩니다.  첫 번째 단계로 개인 정보를 제공하고 **다음** 을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![Azure 등록](_img/vs-azure/vs-azure-about-you.png)
+   > ![Azure 등록](_img/vs-azure/vs-azure-about-you.png "Azure 구독에 개인 연락처 정보를 추가합니다.")
 
-4. 다음으로, 간단한 확인 코드를 사용하여 ID를 확인해야 합니다. 전화번호를 입력하고 문자 또는 전화를 통해 코드를 받을지 선택합니다.  받은 코드를 입력하고 **코드 확인**을 선택합니다.   
+4. 다음으로, 간단한 확인 코드를 사용하여 ID를 확인해야 합니다. 전화번호를 입력하고 문자 또는 전화를 통해 코드를 받을지 선택합니다.  받은 코드를 입력하고 **코드 확인** 을 선택합니다.   
    > [!div class="mx-imgBorder"]
-   > ![Azure 준비](_img/vs-azure/vs-azure-identity.png)
+   > ![Azure 준비](_img/vs-azure/vs-azure-identity.png "확인 코드를 요청한 다음 입력하여 계속합니다.")
 
-5. 마지막 단계로 확인란을 선택하여 약관에 동의한 다음 **가입**을 선택합니다.  이것이 전부입니다!
+5. 마지막 단계로 확인란을 선택하여 약관에 동의한 다음 **가입** 을 선택합니다.  이것이 전부입니다!
    > [!div class="mx-imgBorder"]
-   > ![Azure 준비](_img/vs-azure/vs-azure-agreement.png)
+   > ![Azure 가입](_img/vs-azure/vs-azure-agreement.png "'가입' 단추를 클릭하여 Azure 구독 만들기를 완료합니다.")
 
 0. Azure 대시보드 빠른 시작 센터가 로드됩니다.  
    > [!div class="mx-imgBorder"]
-   > ![Azure 대시보드](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Azure 대시보드](_img/vs-azure/vs-azure-quick-start.png "Azure 구독을 만든 후에는 Azure Portal로 리디렉션됩니다.") 
 
 0. 나중에 쉽게 액세스할 수 있도록 [Azure Portal](https://portal.azure.com)에 책갈피를 지정합니다.
 
@@ -54,8 +54,8 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](./contact-my-admin.md)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
-- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](./manage-vs-subscriptions.md#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
+- **조직의 누군가가 조직의 구독을 구매하는 경우** , [Visual Studio 구독 관리자에게 문의](./contact-my-admin.md)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
+- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우** , Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](./manage-vs-subscriptions.md#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
 
 아래 자격 표를 사용하여 각 구독 유형에 포함된 크레딧 수를 확인합니다.  
 

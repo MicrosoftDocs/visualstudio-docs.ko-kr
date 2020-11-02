@@ -7,26 +7,26 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: 구독 관리 포털에 새로 구매한 월간 Visual Studio 구독을 추가하는 방법을 알아봅니다.
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005101"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467598"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>구독 관리 포털에 새 월간 Visual Studio 구독 추가
 Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경우 사용자에게 구독을 할당하려면 해당 구독을 구독 관리 포털에 추가해야 할 수 있습니다.  
 
 ## <a name="how-do-i-know-if-i-need-to-add-my-subscriptions"></a>내 구독을 추가해야 하는지 어떻게 확인하나요?
 월간 구독을 추가하는 단계는 조직이 이미 보유한 구독의 종류와 사용자가 새 관리자인지 여부에 따라 달라집니다.
-- 사용자가 새 관리자인 경우 구독 관리 포털에 처음 로그인할 때 Microsoft는 사용자에게 사용자 액세스 관리자 권한이 있는 Azure 구독을 확인합니다.  사용자에 대한 월간 구독이 확인되면 해당 구독이 자동으로 추가됩니다. 
+- 사용자가 새 관리자인 경우 구독 관리 포털에 처음 로그인하면 사용자 액세스 관리자 권한이 있는 Azure 구독인지 확인합니다.  사용자에 대한 월간 구독이 확인되면 해당 구독이 자동으로 추가됩니다. 
 - 사용자가 이전에 월간 구독을 추가하거나 관리한 적이 있는 경우 로그인할 때마다 Microsoft가 새 월간 구독을 검색합니다. 
-- 이미 볼륨 라이선스를 통해 획득한 구독의 관리자이지만 이전에 월간 구독을 추가하거나 관리한 적이 없는 경우 아래 제공된 단계를 사용하여 해당 구독을 추가해야 합니다.
+- 이미 볼륨 라이선싱을 통해 획득한 구독의 관리자이지만 이전에 월간 구독을 추가하거나 관리한 적이 없는 경우 아래 제공된 단계를 사용하여 해당 구독을 추가해야 합니다.
 
 ## <a name="how-to-add-monthly-subscriptions"></a>월간 구독을 추가하는 방법
 1. <https://manage.visualstudio.com>에서 구독 관리 포털에 로그인합니다.
 1. **구독자 관리** 탭에서 **계약 추가** 드롭다운을 선택합니다. 
-1. 드롭다운에서 **새 월간 구독**을 선택합니다.
+1. 드롭다운에서 **새 월간 구독** 을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![새 월간 구독 추가 드롭다운](_img/add-monthly-subs/add-subs-drop-down.png "'계약 추가'를 선택한 다음 '새 월간 구독'을 선택합니다.")
 1. 시스템은 사용자에게 사용자 액세스 관리자 권한이 있는 Azure 구독을 검색하고 해당 Azure 구독을 사용하여 구매한 모든 Visual Studio 구독을 가져옵니다.

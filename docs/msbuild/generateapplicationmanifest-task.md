@@ -1,5 +1,7 @@
 ---
 title: GenerateApplicationManifest 작업 | Microsoft Docs
+description: MSBuild GenerateApplicationManifest 작업을 사용하여 ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트를 생성합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634099"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436551"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 작업
 
@@ -34,7 +36,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 
 다음 표에서는 `GenerateApplicationManifest` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |---------------------------------| - |
 | `AssemblyName` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Name` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 이름은 `EntryPoint` 또는 `InputManifest` 매개 변수에서 유추됩니다. 이름을 만들 수 없으면 작업에서 오류가 throw됩니다. |
 | `AssemblyVersion` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Version` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 기본값 “1.0.0.0”이 사용됩니다. |
@@ -76,7 +78,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 
 ## <a name="item-metadata"></a>항목 메타데이터
 
-|메타데이터 이름|설명|
+|메타데이터 이름|Description|
 |-------------------|-----------------|
 |`DependencyType`|종속성이 애플리케이션 또는 필수 구성 요소와 함께 게시 및 설치되는지 여부를 나타냅니다. 이 메타데이터는 모든 종속성에 유효하지만 파일에 사용되지 않습니다. 이 메타데이터의 사용 가능한 값은 다음과 같습니다.<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install이 기본값입니다.|
 |`AssemblyType`|종속성이 관리되는 어셈블리 또는 네이티브 어셈블리인지 나타냅니다. 이 메타데이터는 모든 종속성에 유효하지만 파일에 사용되지 않습니다. 이 메타데이터의 사용 가능한 값은 다음과 같습니다.<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified`가 기본값으로, 매니페스트 생성기가 자동으로 어셈블리 형식을 결정할 것임을 나타냅니다.|
@@ -84,7 +86,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 |`TargetPath`|생성된 매니페스트에서 경로를 정의하는 방법을 지정합니다. 이 특성은 모든 파일에 유효합니다. 이 특성을 지정하지 않으면 항목 사양이 사용됩니다. 이 특성은 `DependencyType` 값이 `Install`인 모든 파일 및 종속성에 유효합니다.|
 |`IsDataFile`|파일이 데이터 파일인지 여부를 나타내는 `Boolean` 메타데이터 값입니다. 데이터 파일은 애플리케이션 업데이트 간에 마이그레이션된다는 점에서 특별합니다. 이 메타데이터는 파일에만 유효합니다. 기본값은 `False`입니다.|
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
 이 예제에서는 `GenerateApplicationManifest` 작업을 사용하여 ClickOnce 애플리케이션 매니페스트를 생성하고 `GenerateDeploymentManifest` 작업을 사용하여 단일 어셈블리가 포함된 애플리케이션의 배포 매니페스트를 생성합니다. 그런 다음 `SignFile` 작업을 사용하여 매니페스트에 서명합니다.
 
@@ -138,7 +140,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 이 예제에서는 `GenerateApplicationManifest` 및 `GenerateDeploymentManifest` 작업을 통해 단일 어셈블리가 포함된 애플리케이션에 대한 ClickOnce 애플리케이션 및 배포 매니페스트를 생성하여 매니페스트의 이름과 ID를 지정합니다.
 
@@ -199,7 +201,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-3"></a>예제 3
 
 이 예제에서는 `GenerateApplicationManifest` 및 `GenerateDeploymentManifest` 작업을 통해 여러 파일 및 어셈블리가 포함된 애플리케이션에 대한 ClickOnce 애플리케이션 및 배포 매니페스트를 생성합니다.
 
@@ -318,11 +320,11 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-4"></a>예제 4
 
-이 예제에서는 `GenerateApplicationManifest` 작업을 통해 애플리케이션 *Test.exe*에 대한 네이티브 매니페스트를 생성하여 네이티브 구성 요소 *Alpha.dll* 및 격리된 COM 구성 요소 *Bravo.dll*을 참조합니다.
+이 예제에서는 `GenerateApplicationManifest` 작업을 통해 애플리케이션 *Test.exe* 에 대한 네이티브 매니페스트를 생성하여 네이티브 구성 요소 *Alpha.dll* 및 격리된 COM 구성 요소 *Bravo.dll* 을 참조합니다.
 
-이 예제에서는 *Test.exe.manifest*를 생성하여 등록이 필요 없는 COM을 활용하는 애플리케이션 XCOPY를 배포 가능하도록 만듭니다.
+이 예제에서는 *Test.exe.manifest* 를 생성하여 등록이 필요 없는 COM을 활용하는 애플리케이션 XCOPY를 배포 가능하도록 만듭니다.
 
 > [!NOTE]
 > 아래 예제에서는 매니페스트 생성 측면에 집합하도록 모든 애플리케이션 이진 파일이 미리 빌드되어 있습니다. 이 예제에서는 완벽하게 작동하는 ClickOnce 배포를 생성합니다.
@@ -356,7 +358,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)

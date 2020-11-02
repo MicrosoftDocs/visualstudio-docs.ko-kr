@@ -1,5 +1,7 @@
 ---
 title: GenerateTrustInfo 작업 | Microsoft Docs
+description: MSBuild GenerateTrustInfo 작업을 사용하여 기본 매니페스트와 TargetZone 및 ExcludedPermissions 매개 변수에서 애플리케이션 신뢰를 생성합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84007c9a10618c6d757a36debe58c272302fa3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a90188244e32b6f593affd2c29a227a2810227d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634034"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436447"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 작업
 

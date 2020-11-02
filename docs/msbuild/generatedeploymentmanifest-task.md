@@ -1,5 +1,7 @@
 ---
 title: GenerateDeploymentManifest 작업 | Microsoft Docs
+description: MSBuild GenerateDeploymentManifest 작업을 사용하여 ClickOnce 배포 매니페스트를 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca55f3eeb9b3119b27e67dcb0255f8386c521af6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634073"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436457"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 작업
 
@@ -32,7 +34,7 @@ ClickOnce 배포 매니페스트를 생성합니다. ClickOnce 배포 매니페�
 
 다음 표에서는 `GenerateDeploymentManifest` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |--------------------------| - |
 | `AssemblyName` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Name` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 이름은 `EntryPoint` 또는 `InputManifest` 매개 변수에서 유추됩니다. 이름을 유추할 수 없으면 작업에서 오류가 throw됩니다. |
 | `AssemblyVersion` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Version` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 작업은 "1.0.0.0" 값을 사용합니다. |
@@ -64,7 +66,7 @@ ClickOnce 배포 매니페스트를 생성합니다. ClickOnce 배포 매니페�
 
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 클래스의 매개 변수도 상속합니다. Task 클래스의 매개 변수 목록에 대해서는 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [GenerateApplicationManifest 작업](../msbuild/generateapplicationmanifest-task.md)

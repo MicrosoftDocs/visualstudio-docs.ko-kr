@@ -1,5 +1,7 @@
 ---
 title: GetOutOfDateItems 작업 | Microsoft Docs
+description: MSBuild GetOutOfDateItems 도우미 작업을 사용하여 트랜잭션 로그(TLOG)를 읽고 쓰고, 최신 상태가 아닌 항목 집합을 반환합니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6cc80d4e1aa3580e0185460d19f78e9737b73220
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77272397"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436827"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems 작업
 

@@ -1,5 +1,7 @@
 ---
 title: '방법: 항목 목록을 쉼표로 구분하여 표시 | Microsoft Docs'
+description: MSBuild를 사용하여 쉼표로 구분된 항목 목록을 표시하거나 항목 목록에 다른 구분 기호 문자열을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633904"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436425"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>방법: 항목 목록을 쉼표로 구분하여 표시
 
@@ -28,7 +30,7 @@ Microsoft Build Engine(MSBuild)에서 항목 목록을 사용할 때 쉽게 읽�
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-`@(TXTFile)` 항목 목록에 *App1.txt*, *App2.txt* 및 *App3.txt* 항목이 포함되는 경우 다음과 같은 메시지가 표시됩니다.
+`@(TXTFile)` 항목 목록에 *App1.txt* , *App2.txt* 및 *App3.txt* 항목이 포함되는 경우 다음과 같은 메시지가 표시됩니다.
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -69,7 +71,7 @@ Microsoft Build Engine(MSBuild)에서 항목 목록을 사용할 때 쉽게 읽�
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [항목](../msbuild/msbuild-items.md)

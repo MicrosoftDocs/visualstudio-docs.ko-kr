@@ -1,18 +1,18 @@
 ---
 title: 별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/20/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
-ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298173"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467611"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 로그인에 사용되는 계정 유형에 따라 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 사용 가능한 구독이 제대로 표시되지 않을 수 있습니다. 한 가지 원인은 구독이 할당된 로그인 ID 대신 “별칭” 또는 “이름”을 사용하기 때문일 수 있습니다. 이것을 “별칭 지정”이라고 합니다.

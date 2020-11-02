@@ -1,18 +1,18 @@
 ---
-title: Parasoft Virtualize/SOAtest Professional Desktop 혜택 | Microsoft Docs
+title: Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Parasoft Virtualize/SOA Test Professional 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006269"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436035"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -22,52 +22,52 @@ ms.locfileid: "91006269"
 
 1. Parasoft Virtualize/SOAtest Professional Desktop 혜택을 사용하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인하세요.
 
-2. 도구 섹션에서 Parasoft 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.   코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화**를 클릭합니다.
+2. 도구 섹션에서 Parasoft 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.   코드가 성공적으로 검색되었다는 알림 메시지를 받게 됩니다.  **활성화** 를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 혜택 타일](_img/vs-parasoft/vs-parasoft-tile.png)
+   > ![Parasoft 혜택 타일](_img/vs-parasoft/vs-parasoft-tile.png "시작하려면 Parasoft 타일에서 '코드 가져오기'를 클릭한 다음 '활성화'를 클릭합니다.")
 
-3. 계정을 만들 수 있는 Parasoft 웹 사이트로 리디렉션됩니다.  연락처 정보를 제공하고 **제출**을 클릭하기만 하면 됩니다.
+3. 계정을 만들 수 있는 Parasoft 웹 사이트로 리디렉션됩니다.  연락처 정보를 제공하고 **제출** 을 클릭하기만 하면 됩니다.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 혜택 계정 만들기](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![Parasoft 혜택 계정 만들기](_img/vs-parasoft/vs-parasoft-new-account.png "연락처 정보를 입력한 다음 '제출'을 클릭하여 계정을 만듭니다.")
 
    > [!Note]
    > 페이지의 표에는 전체 연도의 가격과 Visual Studio 할인 혜택이 나와 있습니다. 이 가격은 6개월 구독 사용 후에 적용됩니다.  
 
 4. 계정이 만들어지면 다운로드 지침이 포함된 전자 메일이 보내졌다는 알림 메시지가 표시됩니다.  (받은 편지함에 전자 메일이 표시되지 않는 경우 스팸 또는 정크 메일 폴더를 확인하세요.)
 
-5. 전자 메일을 열고 클립보드에 **활성화 코드**를 복사합니다.
+5. 전자 메일을 열고 클립보드에 **활성화 코드** 를 복사합니다.
 
 6. 운영 체제에 해당하는 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 혜택 환영 이메일](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![Parasoft 혜택 환영 이메일](_img/vs-parasoft/vs-parasoft-email.png "운영 체제와 일치하는 다운로드 링크를 선택합니다.")
 
-7. 사용하는 브라우저에 따라 서로 다른 대화 상자가 표시되어 설치 관리자를 실행할 기회를 제공할 수 있습니다.  예를 들어 Internet Explorer의 경우 parasoft_soavirt_9.10.2_win32_x86_64.exe가 맨 위에 나열된 최신 다운로드 목록이 표시됩니다. **실행**을 클릭하여 설치 관리자를 시작합니다.
+7. 사용하는 브라우저에 따라 서로 다른 대화 상자가 표시되어 설치 관리자를 실행할 기회를 제공할 수 있습니다.  예를 들어 Internet Explorer의 경우 parasoft_soavirt_9.10.2_win32_x86_64.exe가 맨 위에 나열된 최신 다운로드 목록이 표시됩니다. **실행** 을 클릭하여 설치 관리자를 시작합니다.
 
-8. [사용자 계정 컨트롤] 대화 상자가 열리면 **예**를 클릭합니다.
+8. [사용자 계정 컨트롤] 대화 상자가 열리면 **예** 를 클릭합니다.
 
-9. 원하는 언어를 선택하고 **확인**을 클릭합니다.
+9. 원하는 언어를 선택하고 **확인** 을 클릭합니다.
 
-10. Parasoft SOAtest & Virtualize 설치 마법사가 시작됩니다.  **다음**을 클릭합니다.
+10. Parasoft SOAtest & Virtualize 설치 마법사가 시작됩니다.  **다음** 을 클릭합니다.
     > [!div class="mx-imgBorder"]
-    > ![Parasoft 혜택 설치 시작](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![Parasoft 혜택 설치 시작](_img/vs-parasoft/vs-parasoft-start-install.png "'다음'을 클릭하여 Parasoft SOAtest 및 Virtualize 설치를 시작합니다.")
 
-11. **동의함**을 클릭하고 **다음**을 클릭합니다.
+11. **동의함** 을 클릭하고 **다음** 을 클릭합니다.
 
-12. 파일을 설치하려는 위치를 선택하고 **다음**을 클릭합니다.
+12. 파일을 설치하려는 위치를 선택하고 **다음** 을 클릭합니다.
 
-13. 그런 다음, 설치할 구성 요소를 선택하거나 모든 구성 요소를 설치(기본값)할 수 있습니다.  원하는 항목을 선택하고 **다음**을 클릭합니다.
+13. 그런 다음, 설치할 구성 요소를 선택하거나 모든 구성 요소를 설치(기본값)할 수 있습니다.  원하는 항목을 선택하고 **다음** 을 클릭합니다.
 
-14. 설치된 애플리케이션에 대한 바로 가기에 원하는 위치를 지정하고 **다음**을 클릭합니다.
+14. 설치된 애플리케이션에 대한 바로 가기에 원하는 위치를 지정하고 **다음** 을 클릭합니다.
 
-15. HTTPS 사이트의 특정 기능 테스트에는 SOAtest 웹 루트 인증 기관 인증서가 필요합니다.  루트 CA 인증서 설치 여부를 선택하고 **다음**을 클릭합니다.
+15. HTTPS 사이트의 특정 기능 테스트에는 SOAtest 웹 루트 인증 기관 인증서가 필요합니다.  루트 CA 인증서 설치 여부를 선택하고 **다음** 을 클릭합니다.
     > [!NOTE]
     > 인증서를 설치하는 것이 좋습니다.
 
-16. 설치 중에 바탕 화면 및 빠른 실행 아이콘을 만들지 여부를 선택하고 **다음**을 클릭합니다.
+16. 설치 중에 바탕 화면 및 빠른 실행 아이콘을 만들지 여부를 선택하고 **다음** 을 클릭합니다.
 
-17. 선택한 옵션을 확인하고 **설치**를 클릭하여 소프트웨어 설치를 시작합니다.
+17. 선택한 옵션을 확인하고 **설치** 를 클릭하여 소프트웨어 설치를 시작합니다.
 
-18. 설치가 완료되면 **마침**을 클릭합니다. 이제 Parasoft Virtualize/SOAtest Professional Desktop 혜택을 사용할 준비가 되었습니다!
+18. 설치가 완료되면 **마침** 을 클릭합니다. 이제 Parasoft Virtualize/SOAtest Professional Desktop 혜택을 사용할 준비가 되었습니다!
 
 ## <a name="eligibility"></a>자격
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에서 제공하는 CAST Highlight 혜택 알아보기
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005952"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353371"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CAST Highlight 혜택
 개발자는 클라우드로 마이그레이션할 때 소프트웨어에 대한 인사이트가 필요합니다. CAST Highlight를 사용하면 Visual Studio 구독자는 애플리케이션 소스 코드를 신속하게 검사하여 Azure로 마이그레이션할 애플리케이션의 클라우드 준비 상태를 식별하고, 마이그레이션 도중 및 이후에 앱 진행률을 모니터링할 수 있습니다.
@@ -23,17 +23,17 @@ ms.locfileid: "91005952"
 ## <a name="activation-steps"></a>활성화 단계
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2. "도구" 범주에서 CAST Highlight 혜택 타일을 찾아 **코드 얻기**를 클릭합니다.
+2. "도구" 범주에서 CAST Highlight 혜택 타일을 찾아 **코드 얻기** 를 클릭합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![CAST Highlight 혜택 타일](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![CAST Highlight 혜택 타일](_img/vs-cast-highlight/vs-cast-highlight-tile.png "시작하려면 CAST Highlight 혜택 타일에서 '코드 가져오기'를 클릭하세요.")
 
-0. 코드가 성공적으로 검색된 것을 알려주는 메시지가 표시됩니다.  **활성화**를 클릭합니다. (지금 활성화하지 않아도 언제든지 구독 포털에서 CAST Highlight 타일로 돌아갈 수 있습니다.  "코드 얻기" 링크가 "활성화"로 변경되고, 링크를 클릭하면 활성화 프로세스가 다시 시작됩니다.)
+0. 코드가 성공적으로 검색된 것을 알려주는 메시지가 표시됩니다.  **활성화** 를 클릭합니다. (지금 활성화하지 않아도 언제든지 구독 포털에서 CAST Highlight 타일로 돌아갈 수 있습니다.  "코드 얻기" 링크가 "활성화"로 변경되고, 링크를 클릭하면 활성화 프로세스가 다시 시작됩니다.)
 
-0. 구독의 기능을 살펴볼 수 있는 CAST Highlight 페이지로 리디렉션됩니다.  계정을 만들 준비가 완료되면 웹 양식에 연락처 정보를 입력하고 **제출**을 클릭합니다.
+0. 구독의 기능을 살펴볼 수 있는 CAST Highlight 페이지로 리디렉션됩니다.  계정을 만들 준비가 완료되면 웹 양식에 연락처 정보를 입력하고 **제출** 을 클릭합니다.
 
     > [!div class="mx-imgBorder"]
-    > ![CAST Highlight 방문 페이지](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![CAST Highlight 방문 페이지](_img/vs-cast-highlight/vs-cast-highlight-landing.png "CAST 구독을 활성화하려면 개인 정보를 제공합니다.")
 
    > [!NOTE]
    > CAST Highlight 활성화 혜택은 조직당 10회로 제한됩니다.  조직에서 활성화 10회를 모두 사용한 경우 CAST Highlight 혜택을 활성화할 수 없으며 추가 정보가 담긴 이메일을 받게 됩니다.

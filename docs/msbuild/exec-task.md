@@ -1,5 +1,7 @@
 ---
 title: Exec 작업 | Microsoft Docs
+description: MSBuild Exec 작업으로 지정된 인수를 사용하여 지정된 프로그램 또는 명령을 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288925"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436739"
 ---
 # <a name="exec-task"></a>Exec 작업
 
@@ -35,7 +37,7 @@ ms.locfileid: "85288925"
 
 |매개 변수|설명|
 |---------------|-----------------|
-|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 *program.exe*, *runprogram.bat* 또는 *setup.msi*와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|
+|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 *program.exe* , *runprogram.bat* 또는 *setup.msi* 와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|
 |`ConsoleOutput`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 각 항목 출력은 도구에서 생성하는 표준 출력 또는 표준 오류 스트림의 줄입니다. 이는 `ConsoleToMsBuild`가 `true`로 설정된 경우에만 캡처됩니다.|
 |`ConsoleToMsBuild`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 작업이 도구의 표준 오류 및 표준 출력을 캡처하고, `ConsoleOutput` 출력 매개 변수에서 사용할 수 있게 합니다.<br /><br />기본값: `false`.|
 |`CustomErrorRegularExpression`|선택적 `String` 매개 변수입니다.<br /><br /> 도구 출력에서 오류 줄을 찾는 데 사용되는 정규식을 지정합니다. 예외적으로 형식이 지정된 출력을 생성하는 도구에 유용합니다.<br /><br />기본값: `null`(사용자 지정 처리 안 함).|
@@ -55,7 +57,7 @@ ms.locfileid: "85288925"
 
 이 작업은 수행하려는 작업에 대한 특정 MSBuild 작업을 사용할 수 없을 때 유용합니다. 그러나 `Exec` 작업은 보다 구체적인 작업과 달리 실행하는 도구 또는 명령의 결과에 따라 추가 처리 또는 조건부 작업을 수행할 수 없습니다.
 
-`Exec` 작업은 프로세스를 직접 호출하지 않고 *cmd.exe*를 호출합니다.
+`Exec` 작업은 프로세스를 직접 호출하지 않고 *cmd.exe* 를 호출합니다.
 
 ## <a name="example"></a>예제
 

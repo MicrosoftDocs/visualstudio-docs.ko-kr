@@ -1,23 +1,23 @@
 ---
-title: 사전 프로덕션 환경의 인벤토리 | Visual Studio Marketplace
+title: Visual Studio 구독의 사전 프로덕션 인벤토리 | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 관리자의 사전 프로덕션 인벤토리 수행 책임에 대해 알아봅니다.
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004159"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467429"
 ---
 # <a name="inventory-of-pre-production-environment"></a>사전 프로덕션 환경의 파악
 Visual Studio 구독은 디바이스가 아닌 사용자를 계산하여 자산 관리를 간소화합니다.
 
-Visual Studio 관리자는 **특정한 명명된 개인**에게 Visual Studio 구독을 할당해야 합니다. Dev1, Dev2 등의 명명 규칙이나 "FeatureTeam" 등의 팀 이름 사용은 **허용되지 않습니다**.
+Visual Studio 관리자는 **특정한 명명된 개인** 에게 Visual Studio 구독을 할당해야 합니다. Dev1, Dev2 등의 명명 규칙이나 "FeatureTeam" 등의 팀 이름 사용은 **허용되지 않습니다** .
 
 사전 프로덕션 환경의 파악을 단순화하는 몇 가지 방법이 있습니다.
 - 사용자 할당을 검토합니다. Microsoft는 Visual Studio 구독 할당을 추적하는 데 도움이 되는 [Visual Studio 관리 포털](https://manage.visualstudio.com/)이라는 웹 사이트를 제공합니다.

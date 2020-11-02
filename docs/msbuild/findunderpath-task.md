@@ -1,5 +1,7 @@
 ---
 title: FindUnderPath 작업 | Microsoft Docs
+description: MSBuild FindUnderPath 작업을 사용하여 지정된 항목 컬렉션에서 지정된 폴더 또는 하위 폴더에 있는 경로가 포함된 항목을 찾습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634138"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436750"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 작업
 

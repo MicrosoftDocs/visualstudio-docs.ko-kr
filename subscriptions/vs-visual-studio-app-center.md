@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005729"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435737"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -26,17 +26,17 @@ App Center는 앱을 위한 관제 센터 같은 곳입니다.
 Visual Studio App Center를 시작하는 것은 간단합니다.
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2. Visual Studio App Center 타일을 찾고 **시작**을 클릭합니다.
+2. Visual Studio App Center 타일을 찾고 **시작** 을 클릭합니다.
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 타일](_img/vs-app-center/vs-app-center-tile.png)
+    > ![VS App Center 타일](_img/vs-app-center/vs-app-center-tile.png "Visual Studio App Center 타일에서 '시작'을 클릭합니다.")
 
-3. 그런 다음, 계정을 만듭니다.  Microsoft, Google, GitHub 또는 Facebook의 기존 계정을 사용하여 로그인하거나 사용자 이름, 전자 메일 및 암호를 입력하여 새 계정을 만들 수 있습니다.  **계정 만들기**를 클릭하여 계속합니다.
+3. 그런 다음, 계정을 만듭니다.  Microsoft, Google, GitHub 또는 Facebook의 기존 계정을 사용하여 로그인하거나 사용자 이름, 전자 메일 및 암호를 입력하여 새 계정을 만들 수 있습니다.  **계정 만들기** 를 클릭하여 계속합니다.
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 계정 만들기](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![VS App Center 계정 만들기](_img/vs-app-center/vs-app-center-create-account.png "로그인할 방법을 선택합니다.")
 
-4. 아주 간단합니다.  새 **조직 추가**를 클릭하거나 **새 앱 추가**를 클릭하면 시작됩니다.
+4. 아주 간단합니다.  새 **조직 추가** 를 클릭하거나 **새 앱 추가** 를 클릭하면 시작됩니다.
     > [!div class="mx-imgBorder"]
-    > ![VS App Center 포털](_img/vs-app-center/vs-app-center-portal.png)
+    > ![VS App Center 포털](_img/vs-app-center/vs-app-center-portal.png "이제 사용할 준비가 되었습니다.  '새 조직 추가'를 클릭하거나 '새 앱 추가'를 클릭하면 시작됩니다.")
 
 ## <a name="eligibility"></a>자격
 

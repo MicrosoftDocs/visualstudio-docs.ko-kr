@@ -1,5 +1,6 @@
 ---
 title: 다른 옵션을 사용하여 동일한 원본 파일 빌드
+description: 다른 옵션을 사용하여 동일한 원본 파일을 빌드하기 위해 여러 MSBuild 빌드 구성을 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037597"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436911"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>방법: 다른 옵션을 사용하여 동일한 원본 파일 빌드
 
@@ -56,7 +57,7 @@ ms.locfileid: "90037597"
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>명령줄에서 프로젝트 속성을 설정하려면
 
-- **-property** 스위치와 속성 및 속성 값을 함께 사용합니다. 예를 들어:
+- **-property** 스위치와 속성 및 속성 값을 함께 사용합니다. 예를 들면 다음과 같습니다.
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -70,7 +71,7 @@ ms.locfileid: "90037597"
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>명령줄에서 둘 이상의 프로젝트 속성을 지정하려면
 
-- **-property** 또는 **-p** 스위치와 속성 및 속성 값을 함께 여러 번 사용하거나, 하나의 **property** 또는 **-p** 스위치와 세미콜론(;)으로 구분된 여러 속성을 사용합니다. 예를 들어:
+- **-property** 또는 **-p** 스위치와 속성 및 속성 값을 함께 여러 번 사용하거나, 하나의 **property** 또는 **-p** 스위치와 세미콜론(;)으로 구분된 여러 속성을 사용합니다. 예를 들면 다음과 같습니다.
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
@@ -88,7 +89,7 @@ ms.locfileid: "90037597"
 
   프로젝트 태그에서 `TreatAsLocalProperty` 특성을 사용하여 이 동작을 변경할 수 있습니다. 해당 특성을 통해 나열된 속성 이름의 경우 명령줄에서 지정된 속성 값이 프로젝트 파일의 값보다 우선 적용되지 않습니다. 이 항목의 뒷부분에 있는 예제를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
 다음 코드 예제 "Hello World" 프로젝트에는 디버그 빌드 및 릴리스 빌드를 만드는 데 사용할 수 있는 새로운 두 가지 속성 그룹이 포함됩니다.
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 다음 예제에서는 `TreatAsLocalProperty` 특성을 사용하는 방법을 보여 줍니다. `Color` 속성에는 프로젝트 파일의 `Blue` 값 및 명령줄의 `Green` 값이 포함됩니다. 프로젝트 태그의 `TreatAsLocalProperty="Color"`를 사용하면 명령줄 속성(`Green`)이 프로젝트 파일에 정의된 속성(`Blue`)을 재정의하지 않습니다.
 
@@ -188,7 +189,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)

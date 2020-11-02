@@ -1,18 +1,18 @@
 ---
-title: WhiteSource Bolt 혜택 | Microsoft Docs
+title: Visual Studio 구독의 WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005703"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435992"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -24,17 +24,17 @@ ms.locfileid: "91005703"
 
 2. 도구 섹션에서 WhiteSource Bolt 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 혜택 타일](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![WhiteSource 혜택 타일](_img/vs-whitesource/vs-whitesource-tile.png "시작하려면 WhiteSource Bolt 타일에서 '코드 가져오기'를 클릭합니다.")
 
-3. 활성화 코드가 표시된 알림을 받게 됩니다.  **클립보드에 코드를 복사**한 다음 **활성화**를 클릭합니다.
+3. 활성화 코드가 표시된 알림을 받게 됩니다.  **클립보드에 코드를 복사** 한 다음 **활성화** 를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 혜택 코드](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![WhiteSource 혜택 코드](_img/vs-whitesource/vs-whitesource-code.png "클립보드에 코드를 복사한 다음 '활성화'를 클릭합니다.")
 
 4. **계정 활성화** 페이지의 1단계에서 **설치** 링크를 클릭합니다.
-5. Visual Studio Marketplace에서 **무료 다운로드**를 클릭합니다.
-6. 다음으로, 사용할 Azure DevOps 조직을 선택하고 **설치**를 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
+5. Visual Studio Marketplace에서 **무료 다운로드** 를 클릭합니다.
+6. 다음으로, 사용할 Azure DevOps 조직을 선택하고 **설치** 를 클릭합니다.  (아직 Azure DevOps Services를 설정하지 않은 경우 [혜택](https://my.visualstudio.com/benefits) 페이지에서 Azure DevOps Services 혜택을 활성화합니다.)
 
-7. **조직으로 이동**을 클릭합니다.
+7. **조직으로 이동** 을 클릭합니다.
 8. WhiteSource Bolt가 설치되면 [활성화 페이지](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate)로 돌아가서 동영상을 시청하여 구성 방법을 알아봅니다. 
 9. 자세한 내용은 WhiteSource Bolt [FAQ 페이지](https://bolt.whitesourcesoftware.com/azure/faq/)를 참조하세요. 
 

@@ -1,18 +1,18 @@
 ---
 title: Visual Studio + GitHub Enterprise 제품 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584128"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467585"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
@@ -35,16 +35,16 @@ Visual Studio 구독 관리에 대한 자세한 내용은 다음 항목을 참�
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스가 포함된 Visual Studio란?
 GitHub Enterprise는 Visual Studio 구독과 별도로 설정 및 관리됩니다. GitHub Enterprise가 포함된 Visual Studio 구매 이후 GitHub Enterprise 계정 설정 프로세스는 [manage.visualstudio.com](https://manage.visualstudio.com)에서 계약을 설정하는 것과 병렬로(그러나 별도로) 시작됩니다. 이 GitHub Enterprise 계정을 설정하는 데 다소 시간이 걸릴 수 있습니다. 
 
-회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise 구독이 있는 Visual Studio가 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 이메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 해당 조직에 대한 초대를 받을 수 있습니다.
+회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise 구독이 있는 Visual Studio가 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 이메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 적절한 조직에 대한 초대를 받을 수 있습니다.
 
 GitHub Enterprise 설정에 대한 자세한 내용은 [구독자 설명서](access-github.md)를 참조하세요.   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>GitHub Enterprise 구독 관리
-GitHub Enterprise 구독을 구매할 때 GitHub에 액세스하고 관리자를 식별하는 조직을 만들고 구성할 수 있도록 고객과 GitHub 파트너 관계를 맺습니다.  그런 다음, 이러한 관리자는 관리자로 설정되었다는 알림을 받습니다.  
+GitHub Enterprise 구독을 구매하면 GitHub는 고객과 협력하여 GitHub에 액세스하고 관리자를 식별할 조직을 만들고 구성하도록 돕습니다.  그러면 이러한 관리자는 관리자로 설정되었다는 알림을 받습니다.  
 
 이 프로세스는 매우 복잡하기 때문에 조직 및 관리자가 완전히 설정되기 위해서는 구독을 구매한 후 며칠이 걸릴 수 있습니다.
 
-GitHub는 클라우드 기반 GitHub.com 또는 온-프레미스 GitHub Enterprise 서버로 사용할 수 있습니다.  두 버전을 관리하는 프로세스가 다릅니다.  GitHub는 GitHub Enterprise 구독을 관리하는 데 도움이 되는 다양한 도움말 항목과 관리자 가이드를 제공합니다.  아래 선택한 항목의 링크를 제공했습니다.  
+GitHub는 클라우드 기반 GitHub.com 또는 온-프레미스 GitHub Enterprise 서버로 사용할 수 있습니다.  두 버전을 관리하는 프로세스가 다릅니다.  GitHub는 GitHub Enterprise 구독 관리에 도움이 되는 다양한 도움말 항목과 관리자 가이드를 제공합니다.  아래 선택한 항목의 링크를 제공했습니다.  
 
 ## <a name="support-resources"></a>지원 리소스
 

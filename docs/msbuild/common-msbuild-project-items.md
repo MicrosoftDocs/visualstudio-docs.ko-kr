@@ -1,5 +1,7 @@
 ---
 title: 일반적인 MSBuild 프로젝트 항목 | Microsoft Docs
+description: 일반적인 MSBuild 프로젝트 항목에 대해 알아봅니다. 항목은 하나 이상의 파일에 대한 명명된 참조이며, 파일 이름, 경로, 버전 번호와 같은 메타데이터를 포함합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136916"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796396"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 

@@ -1,5 +1,7 @@
 ---
 title: GetReferenceAssemblyPaths 작업 | Microsoft Docs
+description: MSBuild GetReferenceAssemblyPaths 작업을 사용하여 다양한 프레임워크의 참조 어셈블리 경로를 반환합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8bbe9366e9b4b2c795b21ba46bd8320599c9e572
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633982"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436798"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 작업
 

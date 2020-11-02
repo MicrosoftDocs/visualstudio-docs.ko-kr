@@ -1,5 +1,7 @@
 ---
 title: GetWinFXPath 작업 | Microsoft Docs
+description: 현재 .NET 런타임의 디렉터리를 반환하는 MSBuild GetWinFXPath 작업을 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633969"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436771"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 작업
 
@@ -31,7 +33,7 @@ ms.locfileid: "77633969"
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |-------------------| - |
 | `WinFXPath` | 선택적 **String** 출력 매개 변수입니다.<br /><br /> .NET 런타임의 실제 경로를 지정합니다. |
 | `WinFXNativePath` | 필수 **String** 매개 변수입니다.<br /><br /> 네이티브 .NET 런타임의 경로를 지정합니다. |

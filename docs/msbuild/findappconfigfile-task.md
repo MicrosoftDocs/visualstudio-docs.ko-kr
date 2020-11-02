@@ -1,5 +1,7 @@
 ---
 title: FindAppConfigFile 작업 | Microsoft Docs
+description: MSBuild FindAppConfigFile 작업을 사용하여 제공된 목록에서 app.config 파일(있는 경우)을 찾는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d186a72bcc7af18671c279ff392de066b6fd9fee
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634177"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435680"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 작업
 

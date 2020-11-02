@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드 시 환경 변수 사용 | Microsoft Docs'
+description: MSBuild 프로젝트 파일에서 환경 변수에 액세스하는 방법과 환경 변수를 사용하여 프로젝트 파일을 수정하지 않고 빌드 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac100427c653a785d1e562b807f7bd4a001ae6ff
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633787"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436174"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>방법: 빌드 시 환경 변수 사용
 
@@ -40,7 +42,7 @@ ms.locfileid: "77633787"
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>속성의 기본값을 제공하려면
 
-- 속성에 값이 없는 경우에만 속성에서 `Condition` 특성을 사용하여 값을 설정합니다. 예를 들어 다음 코드는 `ToolsPath` 환경 변수가 설정되지 않은 경우에만 `ToolsPath` 속성을 *c:\tools*로 설정합니다.
+- 속성에 값이 없는 경우에만 속성에서 `Condition` 특성을 사용하여 값을 설정합니다. 예를 들어 다음 코드는 `ToolsPath` 환경 변수가 설정되지 않은 경우에만 `ToolsPath` 속성을 *c:\tools* 로 설정합니다.
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
@@ -65,7 +67,7 @@ ms.locfileid: "77633787"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild 속성](../msbuild/msbuild-properties.md)

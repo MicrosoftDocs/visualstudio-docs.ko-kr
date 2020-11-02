@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006334"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435887"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -20,11 +20,11 @@ ms.locfileid: "91006334"
 ## <a name="activation-steps"></a>활성화 단계
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2. “전문 개발" 범주에서 DataCamp 혜택 타일을 찾고 **활성화**를 클릭합니다.
+2. “전문 개발" 범주에서 DataCamp 혜택 타일을 찾고 **활성화** 를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 혜택 타일](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![DataCamp 혜택 타일](_img/vs-datacamp/vs-datacamp-tile-2.png "시작하려면 '활성화'를 클릭합니다.")
 
-3. DataCamp 페이지에서 새 계정을 만들 수 있습니다.  이메일 주소와 암호를 입력하거나, Facebook, LinkedIn, Google 등의 기존 계정을 사용하여 로그인할 수 있습니다.  로그인 정보를 제공한 후 **시작**을 클릭합니다.
+3. DataCamp 페이지에서 새 계정을 만들 수 있습니다.  이메일 주소와 암호를 입력하거나, Facebook, LinkedIn, Google 등의 기존 계정을 사용하여 로그인할 수 있습니다.  로그인 정보를 제공한 후 **시작** 을 클릭합니다.
 
    > [!NOTE]
    > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. "죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.
@@ -36,25 +36,25 @@ ms.locfileid: "91006334"
 
    시작하려면 선택한 경로를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 경로 선택](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![DataCamp 경로 선택](_img/vs-datacamp/vs-datacamp-choose-path.png "관심 있는 학습 경로를 선택합니다.")
 
-5. 경로를 선택한 후 목표를 선택하여 학습 경로를 구체화할 수 있습니다.  예를 들어 "데이터 과학 역량 개발" 경로를 선택하면 다음 옵션이 표시됩니다. 옵션을 선택하거나 **I am not sure.  Show me all career paths**를 선택하면 더 광범위한 경로가 만들어집니다.
+5. 경로를 선택한 후 목표를 선택하여 학습 경로를 구체화할 수 있습니다.  예를 들어 "데이터 과학 역량 개발" 경로를 선택하면 다음 옵션이 표시됩니다. 옵션을 선택하거나 **I am not sure.  Show me all career paths** 를 선택하면 더 광범위한 경로가 만들어집니다.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 데이터 과학 역량](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp 데이터 과학 역량](_img/vs-datacamp/vs-datacamp-datascience.png "전체 목록을 표시하려면 'I am not sure.  Show me all career paths'를 클릭합니다.")
 
-6. 선택한 경로와 옵션에 따라 경력 트랙 선택이 표시됩니다.  원하는 트랙에 대해 **등록**을 클릭합니다.
+6. 선택한 경로와 옵션에 따라 경력 트랙 선택이 표시됩니다.  원하는 트랙에 대해 **등록** 을 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 경력 트랙](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp 경력 트랙](_img/vs-datacamp/vs-datacamp-all-tracks.png "시작하려면 선택한 경로의 '등록' 단추를 클릭합니다.")
 
-7. 트랙에 등록하면 해당 트랙의 맨 처음 코스가 열립니다.  탐색, 코스 연습 완료 등, 코스와 상호 작용하는 방법을 설명하는 자습서가 표시됩니다.
+7. 트랙에 등록하면 해당 트랙의 첫 번째 코스가 열립니다.  탐색, 코스 연습 완료 등, 코스와 상호 작용하는 방법을 설명하는 자습서가 표시됩니다.
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 시작](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![DataCamp 시작](_img/vs-datacamp/vs-datacamp-getting-started.png "과정을 탐색하는 방법을 알아보려면 자습서를 시청하세요.")
 
-언제든 코스를 중지하고 다음 세션에서 학습을 이어갈 수 있습니다.  [https://www.datacamp.com](https://www.datacamp.com)을 방문해 로그인합니다.  대시보드를 확인하고 일시 중지한 부분부터 학습을 다시 시작할 수 있습니다. **트랙 계속**을 클릭하기만 하면 됩니다.
+언제든 코스를 중지하고 다음 세션에서 학습을 이어갈 수 있습니다.  [https://www.datacamp.com](https://www.datacamp.com)을 방문해 로그인합니다.  대시보드를 확인하고 일시 중지한 부분부터 학습을 다시 시작할 수 있습니다. **트랙 계속** 을 클릭하기만 하면 됩니다.
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp 학습 계속](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp 학습 계속](_img/vs-datacamp/vs-datacamp-continue-training.png "언제든지 '트랙 계속'을 클릭하여 교육을 다시 시작할 수 있습니다.")
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |

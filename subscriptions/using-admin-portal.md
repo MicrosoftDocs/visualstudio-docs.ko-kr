@@ -7,26 +7,26 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005227"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353306"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
 
-Visual Studio 구독 관리 포털은 조직의 구독을 한 곳에서 관리하는 도구를 제공합니다. 
+Visual Studio 구독 관리 포털은 조직의 구독을 한곳에서 관리하는 도구를 제공합니다. 
 
 포털을 둘러봅니다.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
 ## <a name="important-considerations"></a>중요 고려 사항
-Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유념해야 합니다.
+Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 명심하세요.
 - **Visual Studio 구독에서는 사용자별로 라이선스가 부여됩니다.** 각 구독자는 개발 및 테스트에 필요한 만큼 여러 컴퓨터에서 소프트웨어를 사용할 수 있습니다.
-- 조직에서 구입한 Visual Studio 구독에 해당하는 **각 구독자에 대해 하나의 구독 수준만 할당합니다**. 구독 수준이 둘 이상 할당된 구독자가 있으면 구독 수준이 하나만 있도록 해당 설정을 편집합니다.
-- 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다**.
+- 조직에서 구입한 Visual Studio 구독에 해당하는 **각 구독자에 대해 하나의 구독 수준만 할당합니다** . 구독 수준이 둘 이상 할당된 구독자가 있으면 구독 수준이 하나만 있도록 해당 설정을 편집합니다.
+- 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다** .
 - **구독자 간에 구독을 공유하지 않습니다.** 구독을 명명된 개인에게 할당해야 합니다.  팀에게는 구독 할당이 허용되지 않습니다.  구독 혜택(개발 및 테스트용 소프트웨어, Microsoft Azure, E-Learning 등)의 전부 또는 일부를 사용하는 모든 사용자에게 구독을 할당해야 합니다.
 
 ## <a name="the-subscribers-page"></a>구독자 페이지
@@ -39,19 +39,19 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 - 추가 참고 사항을 위한 참조 필드
 - 구독자 다운로드 사용 여부의 표시
 - 구독자가 위치한 국가
-- 관리 포털에서 할당 통신 전자 메일에 대한 언어 기본 설정
+- 관리 포털에서 보내는 할당 통신 이메일의 언어 기본 설정
 - 통신에 사용되는 로그인 이외의 다른 전자 메일 주소에 대한 선택적 필드
 
 페이지 왼쪽 위에는 구독 할당 개요, 계약 정보 및 최대 사용량 보고서를 표시하기 위해 선택할 수 있는 몇 가지 아이콘이 있습니다.
 
 구입 및 할당되었고 각 계약에 대해 조직에서 아직 사용 가능한 구독 라이선스의 수에 대한 추가 정보를 확인하려면 맨 위 아이콘을 클릭하여 슬라이드 아웃 패널을 사용 가능하도록 설정합니다.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png)
+> ![Visual Studio 구독 관리 포털 구독자 페이지](_img/using-admin-portal/subscribers-page.png "구독 페이지에는 유형별 구독 수가 표시됩니다.")
 
 ## <a name="the-details-page"></a>세부 정보 페이지
 확인하려는 계약에 대한 자세한 내용을 보려면 두 번째 아이콘을 선택하여 계약 정보 탭을 표시합니다. 슬라이드아웃 패널에 계약 상태, 구입 계정, 조직 세부 정보, 고급 관리자 및 기타 관련 정보가 표시됩니다.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
+> ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png "세부 정보 페이지에는 슈퍼 관리자의 이름을 포함하여 계약에 대한 정보가 표시됩니다.")
 
 ## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)

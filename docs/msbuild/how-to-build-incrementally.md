@@ -1,5 +1,7 @@
 ---
 title: '방법: 증분 방식으로 빌드 | Microsoft Docs'
+description: 이전에 빌드했지만 아직 최신 상태인 구성 요소를 다시 빌드하지 않도록 MSBuild를 사용하여 증분 방식으로 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634164"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435999"
 ---
-# <a name="how-to-build-incrementally"></a>방법: 증분 방식으로 빌드
+# <a name="how-to-build-incrementally"></a>방법: 증분 빌드
 
 큰 프로젝트를 빌드할 경우 최신 상태에 있는 이전에 빌드된 구성 요소를 다시 빌드하지 않는 것이 중요합니다. 매번 모든 대상이 빌드되면 각 빌드를 완료하는 데 시간이 오래 걸릴 수 있습니다. 증분 빌드(이전에 빌드되지 않은 대상만 또는 오래된 대상이 다시 빌드되는 빌드)를 사용하도록 설정하기 위해 Microsoft Build Engine(MSBuild)에서는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프와 비교하고 대상을 건너뛰거나, 빌드하거나, 부분적으로 다시 빌드할지 결정할 수 있습니다. 하지만 입력과 출력 간에는 일대일 매핑이 있어야 합니다. 변환을 사용하여 대상이 이 직접 매핑을 식별하도록 할 수 있습니다. 변환에 대한 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.
 
@@ -29,7 +31,7 @@ ms.locfileid: "77634164"
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>대상에 대한 입력 및 출력을 지정하려면
 
-- `Target` 요소의 `Inputs` 및 `Outputs` 특성을 사용합니다. 예를 들어:
+- `Target` 요소의 `Inputs` 및 `Outputs` 특성을 사용합니다. 예를 들면 다음과 같습니다.
 
   ```xml
   <Target Name="Build"
@@ -50,7 +52,7 @@ MSBuild는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프�
 </Target>
 ```
 
-대상에 입력 및 출력이 지정된 경우 각 출력은 하나의 입력에만 매핑될 수 있습니다. 그렇지 않으면 출력과 입력 간에 직접 매핑이 없을 수 있습니다. 예를 들어 이전 [Csc 작업](../msbuild/csc-task.md)에서 출력 *hello.exe*는 단일 입력에 매핑될 수 없습니다. 이 출력은 모든 입력을 사용합니다.
+대상에 입력 및 출력이 지정된 경우 각 출력은 하나의 입력에만 매핑될 수 있습니다. 그렇지 않으면 출력과 입력 간에 직접 매핑이 없을 수 있습니다. 예를 들어 이전 [Csc 작업](../msbuild/csc-task.md)에서 출력 *hello.exe* 는 단일 입력에 매핑될 수 없습니다. 이 출력은 모든 입력을 사용합니다.
 
 > [!NOTE]
 > 입력과 출력 간에 직접 매핑이 없는 대상은 항상 각 출력이 하나의 입력에만 매핑될 수 있는 대상보다 더 자주 빌드됩니다. 이는 MSBuild에서는 일부 입력이 변경된 경우 다시 빌드해야 하는 출력을 결정할 수 없기 때문입니다.
@@ -104,10 +106,10 @@ MSBuild는 입력 파일의 타임스탬프를 출력 파일의 타임스탬프�
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [대상](../msbuild/msbuild-targets.md)
 - [Target 요소(MSBuild)](../msbuild/target-element-msbuild.md)
-- [변환](../msbuild/msbuild-transforms.md)
+- [변형](../msbuild/msbuild-transforms.md)
 - [Csc 작업](../msbuild/csc-task.md)
 - [Vbc 작업](../msbuild/vbc-task.md)

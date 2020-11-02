@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Concierge Chat 혜택을 알아봅니다.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006321"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353384"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Concierge Chat
 Concierge Chat 서비스는 Visual Studio 구독 혜택 사용에 도움이 될 뿐 아니라 제품 정보 및 기술 문서를 찾는 데도 도움이 됩니다.
@@ -23,9 +23,9 @@ Concierge Chat 서비스는 Visual Studio 구독 혜택 사용에 도움이 될 
 Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니다.
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 
-2. 혜택 페이지의 지원 섹션에서 Concierge Chat 타일을 찾고 **지금 채팅**을 클릭합니다.
+2. 혜택 페이지의 지원 섹션에서 Concierge Chat 타일을 찾고 **지금 채팅** 을 클릭합니다.
     > [!div class="mx-imgBorder"]
-    > ![Concierge Chat 타일](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Concierge Chat 타일](_img/vs-concierge-chat/vs-concierge-chat-tile.png "새 채팅 세션을 시작하려면 '지금 채팅'을 클릭하세요.")
 
 3. **Continue(계속)** 를 클릭합니다.
 
@@ -33,7 +33,7 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 
 5. 에이전트를 사용할 수 있는 경우 채팅이 시작됩니다.
     > [!div class="mx-imgBorder"]
-    > ![Concierge Chat 세션](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Concierge Chat 세션](_img/vs-concierge-chat/vs-concierge-chat-session.png "에이전트가 세션에 조인하면 채팅 세션 창이 표시됩니다.")
 
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
@@ -46,7 +46,7 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  예          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
-<sup>1</sup>  포함:*NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft Certified Trainer, BizSpark,  제외:* FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), Imagine
+<sup>1</sup>  포함: *NFR(전매 금지), VSIP(Visual Studio 업계 파트너), Microsoft Certified Trainer, BizSpark,  제외:* FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), Imagine
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.

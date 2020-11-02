@@ -1,5 +1,7 @@
 ---
 title: CreateProperty 작업 | Microsoft Docs
+description: MSBuild CreateProperty 작업을 사용하여 속성을 전달된 값으로 채우면 값을 다른 속성 또는 문자열로 복사할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634320"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796189"
 ---
 # <a name="createproperty-task"></a>CreateProperty 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "77634320"
 
 다음 표에서는 `CreateProperty` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |------------------| - |
 | `Value` | 선택적 `String` 출력 매개 변수입니다.<br /><br /> 새 속성에 복사할 값을 지정합니다. |
 | `ValueSetByTask` | 선택적 `String` 출력 매개 변수입니다.<br /><br /> `Value` 매개 변수와 동일한 값을 포함합니다. 출력이 최신 상태이므로 바깥쪽 대상을 건너뛸 때 MSBuild가 출력 속성을 설정하지 않도록 하려는 경우에만 이 매개 변수를 사용합니다. |
@@ -68,9 +70,9 @@ ms.locfileid: "77634320"
 </Project>
 ```
 
-프로젝트를 실행한 후 `NewFile` 속성의 값은 *Module1.vb*입니다.
+프로젝트를 실행한 후 `NewFile` 속성의 값은 *Module1.vb* 입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

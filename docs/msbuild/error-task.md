@@ -1,5 +1,7 @@
 ---
 title: 오류 작업 | Microsoft 문서
+description: MSBuild Error 작업을 사용하여 빌드를 중지하고 평가된 조건문에 따라 오류를 기록합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634229"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436648"
 ---
 # <a name="error-task"></a>Error 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "77634229"
 
 다음 표에서는 `Error` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |---------------| - |
 | `Code` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류와 연결할 오류 코드입니다. |
 | `File` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류가 포함된 파일의 이름입니다. 파일 이름을 제공하지 않으면 오류 작업이 포함된 파일이 사용됩니다. |
@@ -66,7 +68,7 @@ ms.locfileid: "77634229"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)

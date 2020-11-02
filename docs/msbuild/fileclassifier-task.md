@@ -1,5 +1,7 @@
 ---
 title: FileClassifier 작업 | Microsoft Docs
+description: MSBuild FileClassifier 작업을 사용하여 어셈블리에 포함될 소스 리소스 집합을 분류합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634190"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436899"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 작업
 
@@ -35,15 +37,15 @@ ms.locfileid: "77634190"
 |`CLREmbeddedResource`|사용되지 않습니다.|
 |`CLRResourceFiles`|사용되지 않습니다.|
 |`CLRSatelliteEmbeddedResource`|사용되지 않습니다.|
-|`Culture`|선택적 **String** 매개 변수입니다.<br /><br /> 빌드에 대한 문화권을 지정합니다. 빌드를 지역화할 수 없는 경우 이 값은 **null**입니다. **null**인 경우 기본값은 **CultureInfo.InvariantCulture**가 반환하는 소문자 값입니다.|
+|`Culture`|선택적 **String** 매개 변수입니다.<br /><br /> 빌드에 대한 문화권을 지정합니다. 빌드를 지역화할 수 없는 경우 이 값은 **null** 입니다. **null** 인 경우 기본값은 **CultureInfo.InvariantCulture** 가 반환하는 소문자 값입니다.|
 |`MainEmbeddedFiles`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 주 어셈블리에 포함되는 지역화할 수 없는 리소스를 지정합니다.|
-|`OutputType`|필수 **String** 매개 변수입니다.<br /><br /> 지정된 소스 파일을 포함할 파일의 형식을 지정합니다. 유효한 값은 **exe**, **winexe** 또는 **library**입니다.|
+|`OutputType`|필수 **String** 매개 변수입니다.<br /><br /> 지정된 소스 파일을 포함할 파일의 형식을 지정합니다. 유효한 값은 **exe** , **winexe** 또는 **library** 입니다.|
 |`SatelliteEmbeddedFiles`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> **Culture** 매개 변수로 지정된 문화권에 대한 위성 어셈블리에 포함되는 지역화할 수 있는 파일을 지정합니다.|
 |`SourceFiles`|필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> 분류할 파일의 목록을 지정합니다.|
 
 ## <a name="remarks"></a>설명
 
-**Culture** 매개 변수를 설정하지 않으면 **SourceFiles** 매개 변수를 사용하여 지정된 모든 리소스는 지역화할 수 없고, 그렇지 않고 이러한 리소스가 **false**로 설정된 **Localizable** 특성과 연결되어 있지 않는 한, 지역화할 수 있습니다.
+**Culture** 매개 변수를 설정하지 않으면 **SourceFiles** 매개 변수를 사용하여 지정된 모든 리소스는 지역화할 수 없고, 그렇지 않고 이러한 리소스가 **false** 로 설정된 **Localizable** 특성과 연결되어 있지 않는 한, 지역화할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -66,7 +68,7 @@ ms.locfileid: "77634190"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 - [작업 참조](../msbuild/wpf-msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 작업의 오류 무시 | Microsoft 문서'
+description: MSBuild 작업의 오류를 무시하고 작업 오류가 발생할 때 빌드를 중지할지 계속할지 여부를 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633826"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436247"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
 
@@ -26,19 +28,19 @@ ms.locfileid: "77633826"
 
 `ContinueOnError` 특성은 다음 값 중 하나를 포함할 수 있습니다.
 
-- **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.
+- **WarnAndContinue** 또는 **true** . 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.
 
-- **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.
+- **ErrorAndContinue** . 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.
 
-- **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.
+- **ErrorAndStop** 또는 **false** (기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.
 
 .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.
 
-`ContinueOnError`의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.
+`ContinueOnError` 의 기본값은 `ErrorAndStop`입니다. 특성을 `ErrorAndStop`으로 설정하면 프로젝트 파일을 읽는 모든 사용자에게 동작이 명시적으로 제시됩니다.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면
 
-작업의 `ContinueOnError` 특성을 사용합니다. 다음은 그 예입니다.
+작업의 `ContinueOnError` 특성을 사용합니다. 예를 들어:
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>

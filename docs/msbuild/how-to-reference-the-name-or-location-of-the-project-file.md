@@ -1,5 +1,6 @@
 ---
 title: 프로젝트 파일의 이름 또는 위치 참조
+description: MSBuild 예약 속성을 사용하여 자체 속성을 만들지 않고도 프로젝트 파일 이름 또는 위치를 참조하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036459"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436341"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>방법: 프로젝트 파일의 이름 또는 위치 참조
 
@@ -34,7 +35,7 @@ ms.locfileid: "90036459"
 
 #### <a name="to-use-the-project-properties"></a>프로젝트 속성을 사용하려면
 
-- 속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예를 들어:
+- 속성을 사용하는 것처럼 $() 표시를 사용하여 프로젝트 파일에서 속성을 참조합니다. 예를 들면 다음과 같습니다.
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -49,7 +50,7 @@ ms.locfileid: "90036459"
 > [!NOTE]
 > 프로젝트 파일에서 예약된 속성을 다시 정의할 수 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
  다음 예제 프로젝트 파일은 출력의 이름을 지정하기 위해 프로젝트 이름을 예약된 속성으로 참조합니다.
 
@@ -78,7 +79,7 @@ ms.locfileid: "90036459"
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
  다음 예제 프로젝트 파일에서는 `MSBuildProjectDirectory` 예약된 속성을 사용하여 프로젝트 파일 위치에 파일에 대한 전체 경로를 만듭니다.
 
@@ -94,7 +95,7 @@ ms.locfileid: "90036459"
 
 이 예제에서는 [속성 함수](property-functions.md) 구문을 사용하여 정적 .NET Framework 메서드 <xref:System.IO.Path.Combine*?displayProperty=fullName>를 호출합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)

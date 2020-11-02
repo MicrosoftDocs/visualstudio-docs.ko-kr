@@ -1,5 +1,7 @@
 ---
 title: AssignProjectConfiguration 작업 | Microsoft 문서
+description: MSBuild AssignProjectConfiguration 작업을 사용하여 구성 문자열 목록을 수락하고 지정된 프로젝트에 할당합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508524"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353397"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 작업
 

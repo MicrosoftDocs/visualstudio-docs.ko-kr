@@ -1,5 +1,7 @@
 ---
 title: AssignTargetPath 작업 | Microsoft Docs
+description: MSBuild AssignTargetPath 작업을 사용하여 파일 목록을 수락하고 아직 지정되지 않은 경우 TargetPath 특성을 추가합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634541"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353332"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 작업
 
@@ -32,7 +34,7 @@ ms.locfileid: "77634541"
 |---------------|-----------------|
 |`RootFolder`|선택적 `string` 입력 매개 변수입니다.<br /><br /> 대상 링크를 포함하는 폴더에 대한 경로가 포함됩니다.|
 |`Files`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 입력 매개 변수입니다.<br /><br /> 들어오는 파일 목록을 포함합니다.|
-|`AssignedFiles`|옵션<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` 출력 매개 변수입니다.<br /><br /> 결과 파일 목록을 포함합니다.|
+|`AssignedFiles`|선택 사항<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` 출력 매개 변수입니다.<br /><br /> 결과 파일 목록을 포함합니다.|
 
 ## <a name="remarks"></a>설명
 

@@ -1,5 +1,7 @@
 ---
 title: Choose 요소(MSBuild) | Microsoft Docs
+description: MSBuild Choose 요소를 사용하여 자식 요소를 평가하고 평가할 ItemGroup 또는 PropertyGroup 요소 집합 하나를 선택합니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634476"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796630"
 ---
 # <a name="choose-element-msbuild"></a>Choose 요소(MSBuild)
 

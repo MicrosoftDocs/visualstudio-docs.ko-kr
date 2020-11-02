@@ -1,5 +1,7 @@
 ---
 title: 속성 및 항목 비교 | Microsoft 문서
+description: MSBuild 속성 및 항목이 정보를 작업에 전달하고, 조건을 평가하고, 프로젝트 파일이 참조할 수 있는 값을 저장하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634411"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796773"
 ---
 # <a name="compare-properties-and-items"></a>속성 및 항목 비교하기
 
@@ -27,7 +29,7 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
 
 ## <a name="scalars-and-vectors"></a>스칼라 및 벡터
 
-MSBuild 속성은 문자열 값이 하나만 있는 이름-값 쌍이므로 보통 *스칼라*로 설명됩니다. MSBuild 항목 종류는 항목의 목록이므로 보통 *벡터*로 설명됩니다. 그러나 실제로 속성이 여러 값을 나타낼 수 있으며 항목 종류에는 0개 또는 1개의 항목이 있을 수 있습니다.
+MSBuild 속성은 문자열 값이 하나만 있는 이름-값 쌍이므로 보통 *스칼라* 로 설명됩니다. MSBuild 항목 종류는 항목의 목록이므로 보통 *벡터* 로 설명됩니다. 그러나 실제로 속성이 여러 값을 나타낼 수 있으며 항목 종류에는 0개 또는 1개의 항목이 있을 수 있습니다.
 
 ### <a name="target-dependency-injection"></a>대상 종속성 주입
 
@@ -111,7 +113,7 @@ OutputDir 항목 종류에는 "KeyFiles\\;Certificates\\" 값을 가진 `Include
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>평가 순서의 미묘한 효과
 
-빌드의 평가 단계에서 속성 확인이 항목 확인 앞에 옵니다. 그럼에도 불구하고 속성은 항목 값에 따라 다르게 표시되는 값을 가질 수 있습니다. 다음 스크립트를 살펴보세요.
+빌드의 평가 단계에서 속성 확인이 항목 확인 앞에 옵니다. 그럼에도 불구하고 속성은 항목 값에 따라 다르게 표시되는 값을 가질 수 있습니다. 다음 스크립트를 고려해 보세요.
 
 ```xml
 <ItemGroup>
@@ -185,6 +187,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [고급 개념](../msbuild/msbuild-advanced-concepts.md)

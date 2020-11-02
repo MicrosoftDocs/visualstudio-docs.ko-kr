@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관리 방법에 대한 클라우드 솔루션 공급자에 대한 정보입니다.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006230"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353267"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 [CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.
@@ -33,39 +33,39 @@ Azure 구독에 대한 [소유자 또는 참가자 액세스 권한](https://na0
 ## <a name="how-to-buy"></a>구매 방법
 
 1. [Microsoft 파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.
-0. **고객**을 선택하고 구입할 고객을 선택합니다.
-0. **서비스 관리**를 선택합니다.
-0. **Visual Studio Marketplace**를 선택합니다.
+0. **고객** 을 선택하고 구입할 고객을 선택합니다.
+0. **서비스 관리** 를 선택합니다.
+0. **Visual Studio Marketplace** 를 선택합니다.
 0. 고객의 이름이 오른쪽 상단 모서리에 있는지 확인합니다.
-0. **구독**을 선택합니다.
+0. **구독** 을 선택합니다.
 0. Visual Studio Enterprise 또는 Professional을 선택합니다.
-0. **구입**을 선택합니다.
+0. **구입** 을 선택합니다.
 0. 구매에 대해 청구할 Azure 구독을 선택합니다.
 0. 고객에게 필요한 사용자 수를 입력합니다.
-0. 순서를 검토하고 **확인**합니다.
+0. 순서를 검토하고 **확인** 합니다.
 
 >[!NOTE]
 > Visual Studio 구독을 CSP로서 구매할 때마다 이러한 단계를 수행해야 합니다. 이 때 구매 자동화에 대한 API는 없습니다.
 
-구매를 확인하면 **관리**를 선택해 고객의 최종 사용자에게 구독을 할당할 수 있습니다.  **서비스 관리**를 선택하여 파트너 센터에서 구독 관리 포털에 액세스할 수도 있습니다.  여기에서 아래의 단계 또는 비디오를 참조하십시오.
+구매를 확인하면 **관리** 를 선택해 고객의 최종 사용자에게 구독을 할당할 수 있습니다.  **서비스 관리** 를 선택하여 파트너 센터에서 구독 관리 포털에 액세스할 수도 있습니다.  여기에서 아래의 단계 또는 비디오를 참조하십시오.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>고객에 대한 Visual Studio 클라우드 구독 관리 방법
 
 1. [Microsoft 파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.
 0. **고객** 및 고객의 이름을 선택합니다.
-0. **서비스 관리**를 선택합니다.
-0. **Visual Studio 구독 관리**를 선택합니다.
+0. **서비스 관리** 를 선택합니다.
+0. **Visual Studio 구독 관리** 를 선택합니다.
 
-이 고객에 대해 1 초과 Azure 구독이 있는 경우 드롭 다운 메뉴를 사용하여 구매한 구독을 통해 Azure 구독을 선택합니다.  **라이선스 요약**은 할당된 구독 수 및 각 Visual Studio 클라우드 구독 옵션에 대해 사용할 수 있는 구독 수를 표시합니다.  또한 요약을 사용하면 추가로 구독을 구매하거나 구독 수를 줄일 수 있습니다.
+이 고객에 대해 1 초과 Azure 구독이 있는 경우 드롭 다운 메뉴를 사용하여 구매한 구독을 통해 Azure 구독을 선택합니다.  **라이선스 요약** 은 할당된 구독 수 및 각 Visual Studio 클라우드 구독 옵션에 대해 사용할 수 있는 구독 수를 표시합니다.  또한 요약을 사용하면 추가로 구독을 구매하거나 구독 수를 줄일 수 있습니다.
 
-**추가**를 선택하여 새 사용자에게 구독을 할당합니다.  표시된 개수를 업데이트하면 최종 사용자가 이메일 알림을 받습니다. 그런 다음, 최종 사용자는 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 Visual Studio 구독을 활성화하기 위해 제공된 이메일 주소를 사용하여 로그인할 수 있습니다.
+**추가** 를 선택하여 새 사용자에게 구독을 할당합니다.  표시된 개수를 업데이트하면 최종 사용자가 이메일 알림을 받습니다. 그런 다음, 최종 사용자는 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에서 Visual Studio 구독을 활성화하기 위해 제공된 이메일 주소를 사용하여 로그인할 수 있습니다.
 
 Visual Studio 구독을 다른 사용자에게 다시 할당하려면 현재 구독자를 지우고 새 구독자를 추가할 수 있습니다.
 
 구독자가 Visual Studio 구독을 활성화하지 않았다면 초대 이메일을 누락했을 수 있습니다.  Visual Studio 관리자 포털 내에서 사용자에게 활성화 초대를 다시 전송하도록 요청할 수 있습니다.
 
 ## <a name="view-visual-studio-pricing-for-csp-partners"></a>CSP 파트너에 대한 Visual Studio 가격 책정 보기
-CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.  왼쪽 탐색 창에서 **가격 책정 및 제품**을 선택합니다.  오른쪽 상단의 **사용량 기반 서비스**에서 현재 달 가격 책정 파일을 선택합니다. Excel 스프레드시트를 다운로드한 후 **Azure 가격 목록** 시트로 이동하여 **미터 범주** 열을 **Visual Studio**로 필터링합니다.
+CSP 파트너에 대한 Visual Studio 가격 책정을 보려면 [파트너 센터](https://partnercenter.microsoft.com)에 로그인합니다.  왼쪽 탐색 창에서 **가격 책정 및 제품** 을 선택합니다.  오른쪽 상단의 **사용량 기반 서비스** 에서 현재 달 가격 책정 파일을 선택합니다. Excel 스프레드시트를 다운로드한 후 **Azure 가격 목록** 시트로 이동하여 **미터 범주** 열을 **Visual Studio** 로 필터링합니다.
 
 이 스프레드시트에 나타나는 것을 해석하는 방법은 다음과 같습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: CreateItem 작업 | Microsoft Docs
+description: MSBuild CreateItem 작업을 사용하여 항목 컬렉션을 입력 항목으로 채워 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634333"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796760"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 
@@ -78,7 +80,7 @@ ms.locfileid: "77634333"
 
 |항목 컬렉션입니다.|콘텐츠|
 |---------------------|--------------|
-|`MySourceItemsWithMetadata`|*file1.resx*(`MyMetadata="Hello"`)<br /><br /> *file2.resx*(`MyMetadata="Hello"`)|
+|`MySourceItemsWithMetadata`|*file1.resx* (`MyMetadata="Hello"`)<br /><br /> *file2.resx* (`MyMetadata="Hello"`)|
 
 ## <a name="see-also"></a>참고 항목
 

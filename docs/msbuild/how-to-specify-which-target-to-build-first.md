@@ -1,5 +1,7 @@
 ---
 title: '방법: 먼저 빌드할 대상 지정 | Microsoft Docs'
+description: MSBuild 프로젝트 파일에서 처음 빌드할 초기 대상 또는 기본 대상을 지정하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a9ce8f17e70344445f95e8b4742838e40a92fe88
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072530"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436183"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>방법: 먼저 빌드할 대상 지정
 
@@ -60,7 +62,7 @@ ms.locfileid: "82072530"
 
 ## <a name="use-the--target-switch"></a>-target 스위치 사용
 
- 기본 대상이 프로젝트 파일에 정의되어 있지 않거나 기본 대상을 사용하지 않으려는 경우 명령줄 스위치 **-target**을 사용하여 다른 대상을 지정할 수 있습니다. `DefaultTargets` 특성으로 지정된 대상 대신 **-target** 스위치를 사용하여 지정된 하나 이상의 대상이 실행됩니다. `InitialTargets` 특성에 지정된 대상이 항상 먼저 실행됩니다.
+ 기본 대상이 프로젝트 파일에 정의되어 있지 않거나 기본 대상을 사용하지 않으려는 경우 명령줄 스위치 **-target** 을 사용하여 다른 대상을 지정할 수 있습니다. `DefaultTargets` 특성으로 지정된 대상 대신 **-target** 스위치를 사용하여 지정된 하나 이상의 대상이 실행됩니다. `InitialTargets` 특성에 지정된 대상이 항상 먼저 실행됩니다.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>기본 대상 이외의 대상을 먼저 사용하려면
 
@@ -74,7 +76,7 @@ ms.locfileid: "82072530"
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild](../msbuild/msbuild.md)
 - [대상](../msbuild/msbuild-targets.md)

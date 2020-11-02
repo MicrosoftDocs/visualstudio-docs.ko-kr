@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkPath 작업 | Microsoft Docs
+description: MSBuild GetFrameworkPath 작업을 사용하여 .NET Framework 어셈블리의 경로를 검색하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634008"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436835"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 작업
 
@@ -34,7 +36,7 @@ ms.locfileid: "77634008"
 
 다음 표에서는 `GetFrameworkPath` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 프레임워크 버전 1.1 어셈블리에 대한 경로가 있는 경우 포함됩니다. 그렇지 않으면 `null`를 반환합니다.|
 |`FrameworkVersion20Path`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 프레임워크 버전 2.0 어셈블리에 대한 경로가 있는 경우 포함됩니다. 그렇지 않으면 `null`를 반환합니다.|
@@ -65,7 +67,7 @@ ms.locfileid: "77634008"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

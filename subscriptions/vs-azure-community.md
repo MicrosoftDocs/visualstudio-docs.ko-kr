@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 지원 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006243"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353215"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Azure 커뮤니티 지원 포함
 Azure 커뮤니티를 통해 선택 지원 포럼 내에서 Azure 팀의 직접적인 도움을 받습니다.  Azure 커뮤니티 혜택은 Azure 관련 항목에 초점을 맞춘 포럼 컬렉션에 대한 액세스 권한을 제공합니다.
@@ -39,11 +39,11 @@ Azure 커뮤니티를 통해 선택 지원 포럼 내에서 Azure 팀의 직접�
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
+        - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
-        - [: Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Cloud Services(웹 및 작업자 역할)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
         - [가격 책정 및 청구](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
@@ -55,15 +55,15 @@ Azure 커뮤니티를 시작하는 것은 간단합니다.
 
 2. 지원 섹션에서 Azure 커뮤니티 타일을 찾고 **도움말 보기** 링크를 클릭합니다.
     > [!div class="mx-imgBorder"]
-    >![Azure 커뮤니티 타일](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Azure 커뮤니티 타일](_img/vs-azure-community/vs-azure-community-tile.png "시작하려면 Azure 커뮤니티 타일에서 '도움말 보기' 단추를 클릭합니다.")
 
 3. 사용 가능한 포럼 목록이 표시됩니다.  선택한 포럼을 클릭하면 됩니다.
     > [!div class="mx-imgBorder"]
-    > ![Azure 커뮤니티 포럼](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Azure 커뮤니티 포럼](_img/vs-azure-community/vs-azure-community-forums.png "Azure 커뮤니티 지원 페이지에서 원하는 포럼을 선택합니다.")
 
 4. 포럼에서 주제 및 응답을 보거나, 질문에 대한 답변을 검색하거나, 새 질문을 게시할 수 있습니다.
     > [!div class="mx-imgBorder"]
-    > ![Azure 커뮤니티 예](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Azure 커뮤니티 예](_img/vs-azure-community/vs-azure-community-example.png "포럼에서 토픽을 보거나 답변을 검색하거나 새 질문을 게시할 수 있습니다.")
 
 ## <a name="eligibility"></a>자격
 Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래와 같습니다.

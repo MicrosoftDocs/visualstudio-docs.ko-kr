@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드할 파일 선택 | Microsoft Docs'
+description: 각 파일을 개별적으로 나열하거나 와일드카드를 사용하여 MSBuild 프로젝트 파일에서 빌드할 파일을 선택하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633813"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436197"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 
@@ -40,7 +42,7 @@ ms.locfileid: "77633813"
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > 항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예를 들어 `Include="..\..\form2.cs"`을 참조하십시오.
+    > 항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예: `Include="..\..\form2.cs"`
 
 #### <a name="to-declare-multiple-items"></a>여러 항목을 선언하려면
 
@@ -70,13 +72,13 @@ ms.locfileid: "77633813"
 
     `Include="Images\**\*.jpg"`
 
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>*img*로 시작하는 모든 *.jpg* 파일을 포함하려면
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>*img* 로 시작하는 모든 *.jpg* 파일을 포함하려면
 
 - 다음 `Include` 특성을 사용합니다.
 
     `Include="Images\**\img*.jpg"`
 
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>디렉터리에서 이름이 *jpgs*로 끝나는 모든 파일을 포함하려면
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>디렉터리에서 이름이 *jpgs* 로 끝나는 모든 파일을 포함하려면
 
 - 다음 `Include` 특성 중 하나를 사용합니다.
 
@@ -105,7 +107,7 @@ ms.locfileid: "77633813"
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
 다음 코드 예제에서는 모든 입력 파일을 개별적으로 포함하는 프로젝트를 보여 줍니다.
 
@@ -140,7 +142,7 @@ ms.locfileid: "77633813"
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 다음 코드 예제에서는 와일드카드를 사용하여 모든 *.cs* 파일을 포함합니다.
 
@@ -175,7 +177,7 @@ ms.locfileid: "77633813"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)
 - [항목](../msbuild/msbuild-items.md)

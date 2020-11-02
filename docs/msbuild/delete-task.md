@@ -1,5 +1,7 @@
 ---
 title: Delete 작업 | Microsoft Docs
+description: MSBuild Delete 작업을 사용하여 지정된 파일을 삭제할 때의 매개 변수 및 고려 사항에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288912"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796487"
 ---
 # <a name="delete-task"></a>Delete 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "85288912"
 
 다음 표에서는 `Delete` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`DeletedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 삭제된 파일을 지정합니다.|
 |`Files`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 삭제할 파일을 지정합니다.|

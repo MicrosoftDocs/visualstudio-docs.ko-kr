@@ -1,5 +1,7 @@
 ---
 title: CustomBuild 작업 | Microsoft Docs
+description: 이 문서에서는 MSBuild에서 C++ 빌드 프로세스 사용자 지정을 지원하는 데 사용되는 MSBuild CustomBuild 작업을 설명합니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595347"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796552"
 ---
 # <a name="custombuild-task"></a>CustomBuild 작업
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 관리 포털에서 언어, 연락처, 구독 수준 등에 대한 기본 설정을 지정하는 방법 알아보기
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022615"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467442"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>관리 포털에서 계약 기본 설정 지정
 슈퍼 관리자는 관리 포털에서 각 계약에 전역으로 적용될 특정 기본 설정을 지정할 수 있습니다.  이 기본 설정은 관리자가 구독자를 추가할 때 구독 세부 정보를 자동으로 채우며 슈퍼 관리자만 전역으로 수정할 수 있습니다.  
@@ -26,7 +26,7 @@ ms.locfileid: "91022615"
    > [!div class="mx-imgBorder"]
    > ![관리자 기본 설정 단추](_img/admin-prefs/admin-prefs-button.png "관리자 관리 및 계약 기본 설정을 차례로 클릭하여 기본 설정을 표시합니다.")
 
-3. **계약 기본 설정**을 클릭합니다.
+3. **계약 기본 설정** 을 클릭합니다.
 패널이 왼쪽에서 열리고 사용 가능한 기본 설정이 표시됩니다. 
 
    > [!div class="mx-imgBorder"]
@@ -53,15 +53,15 @@ ms.locfileid: "91022615"
 기본 통신 언어 및 로캘을 설정하면 구독을 할당하는 절차를 간소화할 수 있습니다.  예를 들어 개발 팀이 관리 팀과 다른 국가에 있는 경우 구독자 위치에 가장 적합한 기본 설정을 지정할 수 있습니다. 개별 구독자의 모든 관리자가 이 설정을 변경할 수 있습니다. 
 
 ### <a name="default-external-subscribers-setting"></a>기본 외부 구독자 설정
-이 기본 설정을 사용하여 관리자가 조직의 테넌트/디렉터리 외부에서 구독자를 추가할 수 있는지 여부를 결정할 수 있습니다.  이 기능을 끄면 외부 구독자가 허용되지 않습니다.  이 기능을 사용하도록 설정하고 관리자가 외부 구독자를 추가하려고 하면 선택을 확인하는 메시지가 표시되고 구독을 할당할 수 있습니다. 관리자는 이 설정을 재정의할 수 없습니다. 
+이 기본 설정을 사용하면 관리자가 조직의 테넌트/디렉터리 외부에서 구독자를 추가할 수 있는지 여부를 결정할 수 있습니다.  이 기능을 끄면 외부 구독자가 허용되지 않습니다.  이 기능을 사용하도록 설정하고 관리자가 외부 구독자를 추가하려고 하면 선택을 확인하는 메시지가 표시되고 구독을 할당할 수 있습니다. 관리자가 이 설정을 재정의할 수 없습니다. 
 
 ### <a name="default-downloads-setting"></a>기본 다운로드 설정
 기본적으로 켜지는 이 설정을 사용하도록 설정하면 관리자가 새 구독을 만들 때 구독자가 다운로드에 액세스할 수 있습니다.  관리자가 개별 구독을 기준으로 다운로드를 사용하지 않도록 설정할 수 있습니다.  다운로드에 대한 액세스를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.  
 
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q:  구독자가 관리자에게 문의할 수 없도록 **연락처 전자 메일 주소**를 사용하지 않도록 설정할 수 있나요?
-A:  아니요 - 보안 그룹, 그룹 전자 메일 별칭 또는 개별 전자 메일 주소를 사용하여 연락하는 관리자를 확인하는 동안에는 기능을 사용하지 않도록 설정할 수 없습니다.
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>Q:  구독자가 관리자에게 문의할 수 없도록 **연락처 이메일 주소** 를 사용하지 않도록 설정할 수 있나요?
+A:  아니요 - 보안 그룹, 그룹 이메일 별칭 또는 개별 이메일 주소를 사용하여 연락하는 관리자를 확인하는 동안에는 기능을 사용하지 않도록 설정할 수 없습니다.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Q: 구독자의 전자 메일에 응답하면 구독자가 내 전자 메일 주소를 알게 되나요?
 A:  사용 중인 모든 전자 메일 클라이언트에서 응답이 제공되므로 구독자가 받는 응답에는 사용 중인 모든 전자 메일 주소가 표시됩니다.  따라서 그룹 별칭에서 응답하는 경우 그룹 별칭이 표시됩니다.  자신의 전자 메일 주소에서 응답하면 해당 주소가 표시됩니다.  
@@ -69,7 +69,7 @@ A:  사용 중인 모든 전자 메일 클라이언트에서 응답이 제공되
 ### <a name="q-where-can-i-find-out-more-about-the-contact-my-admin-feature-in-the-subscriber-portal"></a>Q: 구독자 포털에서 **내 관리자에게 문의** 기능에 대한 자세한 정보는 어디에서 찾을 수 있나요?
 A:  [내 관리자에게 문의](contact-my-admin.md) 문서를 참조하세요. 
 
-### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Q: **연락처 전자 메일 주소**가 완성되지 않고 구독자가 **내 관리자에게 문의** 기능을 사용하는 경우에는 누가 해당 요청을 받나요?
+### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>Q: **연락처 전자 메일 주소** 가 완성되지 않고 구독자가 **내 관리자에게 문의** 기능을 사용하는 경우에는 누가 해당 요청을 받나요?
 A:  **연락처 전자 메일 주소** 기본 설정에 특정 전자 메일 주소가 설정되어 있지 않으면 계약의 모든 관리자가 요청을 받게 됩니다. 
 
 ## <a name="resources"></a>리소스

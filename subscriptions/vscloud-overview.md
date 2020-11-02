@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353449"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -36,29 +36,32 @@ ms.locfileid: "91005318"
 
 3. 청구에 사용할 Azure 구독을 선택합니다. Azure 구독이 없는 경우 새 Azure 계정을 만들 수 있습니다.
     > [!div class="mx-imgBorder"]
-    > ![청구에 대한 Azure 구독 선택](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
+    > ![청구에 대한 Azure 구독 선택](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "구독을 구매하는 데 사용할 Azure 구독을 선택합니다.")
 
 4. 구입할 구독의 수를 선택합니다.
     > [!div class="mx-imgBorder"]
     > ![구독 수 선택](_img/buy-vs-subscriptions/buy-vs-sub-users.png "구매할 구독 수 선택")
 
-    자신에게 할당된 구독을 사용하지 않으려면 **이 구독을 내게 할당**을 지웁니다.
+    자신에게 할당된 구독을 사용하지 않으려면 **이 구독을 내게 할당** 을 지웁니다.
 
 5. 구매를 확인하고 완료합니다. 구독을 자신에게 할당한 경우 [Visual Studio 구독자 포털](https://my.visualstudio.com)을 방문해 소프트웨어를 다운로드하고 다른 구독자 혜택을 사용하기 시작할 수 있습니다.
 
 > [!div class="mx-imgBorder"]
-> ![구매를 성공적으로 완료](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
+> ![구매를 성공적으로 완료](_img/buy-vs-subscriptions/buy-vs-sub-success.png "구매 성공을 확인하는 메시지가 표시됩니다.")
+
+0. **내 구독 보기** 를 클릭하여 구독자 포털을 열고 구독 사용을 시작합니다.
 
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 구독자 포털로 이동](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
+> ![Visual Studio 구독자 포털로 이동](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "Visual Studio 구독 포털에서 구독을 탐색하고 사용 가능한 혜택을 사용할 수 있습니다.")
 
-하나 이상의 구독을 구매한 경우 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 이동해 다른 사용자에게 구독을 할당합니다.  새 구독을 처음 구매한 경우에는 관리 포털에 [새 구독을 추가](add-monthly-subs.md)해야 할 수 있습니다.
-
-> [!div class="mx-imgBorder"]
-> ![다른 사용자에게 구독 할당](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
+둘 이상의 구독을 구매한 경우 [Visual Studio 구독 관리 포털](https://manage.visualstudio.com)로 이동해 다른 사용자에게 구독을 할당합니다.  새 구독을 처음 구매한 경우에는 관리 포털에 [새 구독을 추가](add-monthly-subs.md)해야 할 수 있습니다.
 
 > [!div class="mx-imgBorder"]
-> ![구독 보기](_img/buy-vs-subscriptions/assign-subscriptions.png)
+> ![다른 사용자에게 구독 할당](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "사용자에게 구독을 제공하려면 '사용자에게 할당'을 클릭합니다.")
+
+
+> [!div class="mx-imgBorder"]
+> ![구독 보기](_img/buy-vs-subscriptions/assign-subscriptions.png "'추가'를 클릭하여 사용자에게 구독 할당")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>구매한 클라우드 구독 갱신 취소
 
@@ -69,7 +72,7 @@ ms.locfileid: "91005318"
 > [!div class="mx-imgBorder"]
 > ![구독 개요 표시](_img/buy-vs-subscriptions/overview-button.png "개요 단추를 선택하여 구독 정보 표시")
 
-4. 취소하려는 구독 항목을 찾고 **수량 변경**을 선택합니다.
+4. 취소하려는 구독 항목을 찾고 **수량 변경** 을 선택합니다.
 1. 수량을 영(0)으로 설정합니다. 구독은 예약된 청구 날짜까지 유지되지만 청구 날짜에 도달해도 갱신되지 않습니다.   
 
 > [!div class="mx-imgBorder"]
@@ -99,7 +102,7 @@ A:  아니요.  구독 상태가 그대로 유지되며 현재와 마찬가지�
 A: 특정 월에 구매한 연간 구독은 1년 치 요금이 즉시 청구되며 1년간 유효합니다. 따라서 구매 당월의 라이선스 수만 수정할 수 있습니다(라이선스는 1년간 유효하고 1년 치 요금이 청구됨). 구매 당월이 지나면 구독 수를 늘릴 수 없습니다.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q: 고객의 구독 수를 줄일려면 어떻게 해야 하나요?
-A: 관리자는 https://manage.visualstudio.com 을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 *않습니다*. 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
+A: 관리자는 https://manage.visualstudio.com 을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 *않습니다* . 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q: 구독을 취소하면 나중에 다른 연간 클라우드 구독을 구입할 수 있나요?
 A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio 구독을 구입할 수 있는 여러 옵션이 있습니다.  [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)에서 자세히 알아보세요.
@@ -115,7 +118,7 @@ A:  기존 고객에게는 영향이 없습니다. 신규 고객은 Visual Studi
 A: 특정 월에 구입한 연간 구독은 1년 전체에 대해 즉시 요금이 청구되며 해당 1년 동안 유효합니다. 따라서 관리자는 구매 당월의 라이선스 수만 수정하면 됩니다(1년 동안 유효하고 1년에 대해 청구됨). 구매 당월이 지나면 구독 수를 늘릴 수 없습니다.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q: 고객의 구독 수를 줄일려면 어떻게 해야 하나요?
-A:  관리자는 [https://manage.visualstudio.com](https://manage.visualstudio.com)을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 **않습니다**. 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
+A:  관리자는 [https://manage.visualstudio.com](https://manage.visualstudio.com)을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 **않습니다** . 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q: 고객이 구독을 취소하면 나중에 더 많은 연간 클라우드 구독을 구입할 수 있나요?
 A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio 구독을 구입할 수 있는 여러 옵션이 있습니다.  [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)에서 자세히 알아보세요.

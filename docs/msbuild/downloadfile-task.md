@@ -1,5 +1,7 @@
 ---
 title: DownloadFile 작업 | Microsoft Docs
+description: HTTP를 사용하여 지정된 파일을 다운로드하는 MSBuild DownloadFile 작업의 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634255"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436655"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 작업
 

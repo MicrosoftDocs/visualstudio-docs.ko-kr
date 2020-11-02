@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 07/19/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 description: Azure DevOps 및 Azure를 사용하기 위해 Visual Studio 구독에 대한 대체 ID를 추가하는 방법
-ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005716"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353179"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 구독자용 ID
 Visual Studio 구독을 활성화하면 Visual Studio 구독을 사용하여 활성화하는 동안 사용했던 ID(또는 로그인)을 연결합니다. 이러한 방식으로 [Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs), Azure DevOps 및 Azure에서 사용자를 인식할 수 있습니다.
@@ -22,7 +22,7 @@ Azure DevOps에서는 로그인할 때마다 Visual Studio 구독 상태를 확�
 
 Azure에서 구독자 혜택인 [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)을 활성화하는 경우 Visual Studio 구독 상태를 확인합니다.
 
-[Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 내에서 활성화 동안 사용했던 ID 외에도 **대체 ID**를 추가할 수 있습니다. 구독을 활성화하기 위해 Microsoft 계정을 사용하는 경우 대체 ID를 추가할 수 있습니다. 이 방식으로 회사 또는 학교 계정(Visual Studio, Microsoft 365 또는 회사나 학교 네트워크에 로그인할 때 사용하는 계정)을 추가할 수 있으며, 사용자의 개인 계정과 회사 또는 학교 계정 모두를 사용하여 Azure DevOps에 액세스할 수도 있습니다.
+[Visual Studio 구독자 포털](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 내에서 활성화 동안 사용했던 ID 외에도 **대체 ID** 를 추가할 수 있습니다. 구독을 활성화하기 위해 Microsoft 계정을 사용하는 경우 대체 ID를 추가할 수 있습니다. 이 방식으로 회사 또는 학교 계정(Visual Studio, Microsoft 365 또는 회사나 학교 네트워크에 로그인할 때 사용하는 계정)을 추가할 수 있으며, 사용자의 개인 계정과 회사 또는 학교 계정 모두를 사용하여 Azure DevOps에 액세스할 수도 있습니다.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>구독에 대체 계정 추가
 대체 계정을 Visual Studio 구독에 추가하면 구독이 할당된 ID 외에 다른 ID로 Azure DevOps 및 Azure 같은 구독 혜택에 액세스할 수 있습니다. 이전에 이 기능은 VS(Visual Studio) 구독이 MSA(Microsoft 계정)에 할당된 경우에만 사용할 수 있었습니다. Azure AD(Azure Active Directory)에서 회사 또는 학교 계정에 대해 이 기능을 확장했습니다.
@@ -34,10 +34,10 @@ Azure에서 구독자 혜택인 [월간 Azure DevTest 개별 크레딧](https://
 ### <a name="add-the-alternate-account"></a>대체 계정 추가
 1. Microsoft 계정(https://my.visualstudio.com) 을 사용하여 Visual Studio 구독자 포털에 로그인합니다.
 2. **구독** 탭을 선택합니다.
-3. **대체 계정 추가**를 선택합니다.
+3. **대체 계정 추가** 를 선택합니다.
 4. 회사 또는 학교 계정을 추가합니다.
     > [!div class="mx-imgBorder"]
-    > ![회사 또는 학교 계정 추가](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > ![회사 또는 학교 계정 추가](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png "구독에서 회사 또는 학교 계정을 대체 계정으로 추가.")
 
 5. 회사 또는 학교 계정을 사용하여 Azure DevOps(https://{youraccount}.visualstudio.com)에 로그인합니다.
 

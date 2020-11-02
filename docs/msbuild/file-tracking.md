@@ -1,5 +1,7 @@
 ---
 title: 파일 추적 | Microsoft Docs
+description: MSBuild 파일 추적 기능을 사용하여 프로세스 및 해당 자식 프로세스에 Windows 파일 시스템에 대한 호출을 기록합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2fafae7cce22cc41fdd51a4bc727ac6bfb791b9
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634203"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436634"
 ---
 # <a name="file-tracking"></a>파일 추적
 

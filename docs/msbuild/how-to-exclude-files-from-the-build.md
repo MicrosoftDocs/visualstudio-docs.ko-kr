@@ -1,5 +1,7 @@
 ---
 title: '방법: 빌드에서 파일 제외 | Microsoft 문서'
+description: MSBuild 프로젝트 파일의 빌드에서 파일을 명시적으로 제외하거나 조건부로 포함하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633865"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436375"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>방법: 빌드에서 파일 제외
 
@@ -25,7 +27,7 @@ ms.locfileid: "77633865"
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>빌드의 입력에서 파일 또는 디렉터리 제외
 
- 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 다음은 그 예입니다.
+ 항목 목록은 빌드에 사용할 입력 파일입니다. 포함할 항목은 `Include` 특성을 사용하여 그룹으로 또는 개별적으로 선언됩니다. 예를 들면 다음과 같습니다.
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -36,7 +38,7 @@ ms.locfileid: "77633865"
 
  와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 빌드의 입력으로 포함한 경우, 해당 디렉터리 또는 중첩된 디렉터리 집합 중 하나의 디렉터리에 포함하지 않으려면 하나 이상의 파일이 있을 수 있습니다. 항목 목록에서 항목을 제외하려면 `Exclude` 특성을 사용합니다.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>*Form2*를 제외한 모든 *.cs* 또는 *.vb* 파일을 포함하려면
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>*Form2* 를 제외한 모든 *.cs* 또는 *.vb* 파일을 포함하려면
 
 - 다음 `Include` 및 `Exclude` 특성 중 하나를 사용합니다.
 
@@ -50,7 +52,7 @@ ms.locfileid: "77633865"
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>*Form2* 및 *Form3*을 제외한 모든 *.cs* 또는 *.vb* 파일을 포함하려면
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>*Form2* 및 *Form3* 을 제외한 모든 *.cs* 또는 *.vb* 파일을 포함하려면
 
 - 다음 `Include` 및 `Exclude` 특성 중 하나를 사용합니다.
 
@@ -93,7 +95,7 @@ ms.locfileid: "77633865"
 
 ## <a name="example"></a>예제
 
- 다음 코드 예제에서는 *Form2.cs*를 제외한 모든 *.cs* 파일을 디렉터리에 포함한 프로젝트를 빌드합니다.
+ 다음 코드 예제에서는 *Form2.cs* 를 제외한 모든 *.cs* 파일을 디렉터리에 포함한 프로젝트를 빌드합니다.
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -126,8 +128,8 @@ ms.locfileid: "77633865"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-- [Items](../msbuild/msbuild-items.md)
+- [항목](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)

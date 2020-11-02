@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022441"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467546"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -26,16 +26,16 @@ ms.locfileid: "91022441"
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>일괄 추가를 사용하여 구독 할당
 1. <https://manage.visualstudio.com> 에서 Visual Studio 구독 관리 포털에 로그인합니다.
 
-1. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다. **추가** 탭을 선택한 다음 드롭다운에서 **일괄 추가**를 선택합니다.  
+1. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다. **추가** 탭을 선택한 다음 드롭다운에서 **일괄 추가** 를 선택합니다.  
 
-1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. 여러 구독자 업로드 대화 상자에서 **다운로드**를 선택하여 템플릿을 다운로드합니다.
+1. 일괄 추가는 Microsoft Excel 템플릿을 사용하여 구독자 정보를 업로드합니다. 여러 구독자 업로드 대화 상자에서 **다운로드** 를 선택하여 템플릿을 다운로드합니다.
    > [!div class="mx-imgBorder"]
    > ![Excel 템플릿을 다운로드하여 여러 구독자 업로드](media/download-template-upload-subscribers.png "빈 Excel 템플릿을 다운로드하여 대량 할당 프로세스를 시작합니다.")
    >
    > [!NOTE]
    > 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
 
-1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조*는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
+1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. ( *참조* 는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
 
     > [!NOTE]
     > 관리자는 템플릿의 필드 중 하나를 사용하여 구독자의 소프트웨어 다운로드 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다.  다운로드를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.
@@ -48,11 +48,11 @@ ms.locfileid: "91022441"
     - 모든 필수 필드가 완료되었는지 확인합니다. 
     - **오류 메시지** 열을 확인합니다.  나열된 오류가 있다면 파일을 업로드하기 전에 오류를 해결합니다. 
 
-1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기**를 선택합니다.
+1. Visual Studio 구독 관리 포털로 돌아갑니다. **여러 구독자 업로드** 대화 상자에서 **찾아보기** 를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![저장된 템플릿으로 이동하여 여러 구독자 업로드](media/bulk-add-browse-saved-template.png "파일 위치로 이동하거나 이 대화 상자로 끌어서 놓을 수 있습니다.")
 
-1. 저장한 Excel 파일로 이동한 다음, **확인**을 선택합니다.
+1. 저장한 Excel 파일로 이동한 다음, **확인** 을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![Excel 템플릿을 업로드하여 여러 구독자 업로드](media/bulk-upload-subscribers.png "데이터가 포함된 템플릿이 여기에 표시됩니다.  확인을 선택하여 업로드를 시작합니다.")
 
@@ -65,10 +65,10 @@ ms.locfileid: "91022441"
    오류가 발생하는 경우 다음 단계를 수행합니다.
    1. 만든 Excel 파일을 열고 문제를 해결한 후 파일을 저장합니다.
    0. 관리 포털로 돌아가서 오류 메시지를 해제합니다.
-   0. **추가**를 선택합니다.
-   0. **대량 추가**를 선택합니다.
-   0. Excel 파일을 이미 저장했으므로 템플릿을 다운로드할 필요가 없습니다.  **찾아보기**를 선택하고 방금 저장한 파일을 찾은 다음 **열기**를 선택합니다.
-   0. **확인**을 선택합니다.
+   0. **추가** 를 선택합니다.
+   0. **대량 추가** 를 선택합니다.
+   0. Excel 파일을 이미 저장했으므로 템플릿을 다운로드할 필요가 없습니다.  **찾아보기** 를 선택하고 방금 저장한 파일을 찾은 다음 **열기** 를 선택합니다.
+   0. **확인** 을 선택합니다.
 
 
     업로드가 성공적으로 완료되면 구독자 목록과 확인 메시지가 표시됩니다.
@@ -99,7 +99,7 @@ Azure Active Directory 그룹 기능을 사용하여 구독자를 추가하는 �
 
 2. 여러 구독자를 한 번에 추가하려면 **구독자 관리** 탭으로 이동합니다.
 
-3. **추가** 탭을 선택한 다음 드롭다운에서 **Azure Active Directory 그룹**을 선택합니다.  
+3. **추가** 탭을 선택한 다음 드롭다운에서 **Azure Active Directory 그룹** 을 선택합니다.  
 
    > [!div class="mx-imgBorder"]
    > ![Azure AD를 사용하여 일괄 추가 선택](_img/assign-license-bulk/bulk-add-aad.png "Azure AD를 사용하는 대량 추가 기능을 선택하여 Azure Active Directory 그룹에서 구독자를 가져옵니다.")
@@ -111,14 +111,16 @@ Azure Active Directory 그룹 기능을 사용하여 구독자를 추가하는 �
    > [!div class="mx-imgBorder"]
    > ![Azure AD 그룹 선택](_img/assign-license-bulk/bulk-add-aad-details.png "Azure AD 그룹의 이름을 선택하여 해당 그룹에서 구독자를 추가합니다.")
 
-6. **추가**를 선택한 다음 **확인**을 선택합니다. 
+6. **추가** 를 선택한 다음 **확인** 을 선택합니다. 
 
 7. 추가된 그룹을 보려면 사용자 목록 아래로 스크롤합니다.  
 
-8. 그룹 멤버를 표시하려면 **구독자 보기**를 선택합니다. 그룹의 구독자에 대한 세부 정보를 볼 수 있지만 구독자 또는 구독자에게 할당된 구독은 편집할 수 없습니다.    
+8. 그룹 멤버를 표시하려면 **구독자 보기** 를 선택합니다. 그룹의 구독자에 대한 세부 정보를 볼 수 있지만 구독자 또는 구독자에게 할당된 구독은 편집할 수 없습니다.    
 
 > [!NOTE]
 > 사용자에게 이미 개별적으로 구독을 할당했고 이후 해당 사용자가 Azure AD 그룹의 일부로 추가되었다면 해당 사용자는 그룹의 일부로 추가되며 더 이상 개인으로 표시되지 않습니다. 그러나 개별 구독이 다른 구독 수준인 경우에는 두 개의 구독을 갖게 됩니다.  예제:  개별 Visual Studio Professional 구독이 있는 사용자가 Visual Studio Enterprise 구독이 할당된 그룹의 멤버인 경우 해당 사용자는 두 가지 구독을 모두 갖게 됩니다.  
+>
+> 구독이 할당된 Azure Active Directory 그룹에서 구독자를 제거하는 경우 관리 포털에 업데이트가 반영되려면 최대 24시간이 걸릴 수 있습니다. 
 
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
@@ -131,7 +133,7 @@ A: 아니요. 개별 구독자의 정보를 수정하려면 Azure AD 보안 그�
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q: Azure AD 보안 그룹에 구독자를 추가했지만 구독 관리 포털에는 추가되었다고 표시되지 않고 구독도 없습니다. 이유는 무엇입니까?  
 A: 조직이 Azure AD를 구성한 방식에 따라 사용자가 추가되기까지 최대 24시간 지연될 수 있습니다. 24시간 넘게 지연되면 [고객 지원팀에 문의](https://visualstudio.microsoft.com/support/support-overview-vs)하세요.  
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

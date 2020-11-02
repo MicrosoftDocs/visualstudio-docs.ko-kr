@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 09/08/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006006"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353423"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.

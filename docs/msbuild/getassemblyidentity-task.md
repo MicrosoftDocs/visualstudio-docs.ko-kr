@@ -1,5 +1,7 @@
 ---
 title: GetAssemblyIdentity 작업 | Microsoft Docs
+description: MSBuild GetAssemblyIdentity 작업을 사용하여 지정된 파일에서 어셈블리 ID를 검색하고 ID 정보를 출력합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e242864ca68e0d84ace5f8ebeefd02881a394f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634021"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436862"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 작업
 

@@ -1,5 +1,6 @@
 ---
 title: AspNetCompiler 작업을 사용하여 ASP.NET 미리 컴파일
+description: MSBuild AspNetCompiler 작업을 사용하여 ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 aspnet_compiler.exe를 래핑합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,37 +20,37 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 43b7ccc11e8d265c0b1490e7e8de0bd33d903904
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 328c5d91767054b3ad4516838f95769ca6d848d0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036186"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353410"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 
-`AspNetCompiler` 작업은 ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe*를 래핑합니다.
+`AspNetCompiler` 작업은 ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe* 를 래핑합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
 다음 표에서는 `AspNetCompiler` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 강력한 이름의 어셈블리에서 부분적으로 신뢰할 수 있는 호출자를 사용할 수 있습니다.|
-|`Clean`|선택적 `Boolean` 매개 변수<br /><br /> 이 매개 변수가 `true`이면 미리 컴파일된 애플리케이션이 클린 빌드됩니다. 이전에 컴파일된 구성 요소가 모두 다시 컴파일됩니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-c** 스위치에 해당합니다.|
-|`Debug`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 컴파일 중 디버그 정보(.PDB 파일)가 내보내집니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-d** 스위치에 해당합니다.|
+|`Clean`|선택적 `Boolean` 매개 변수<br /><br /> 이 매개 변수가 `true`이면 미리 컴파일된 애플리케이션이 클린 빌드됩니다. 이전에 컴파일된 구성 요소가 모두 다시 컴파일됩니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-c** 스위치에 해당합니다.|
+|`Debug`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 컴파일 중 디버그 정보(.PDB 파일)가 내보내집니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-d** 스위치에 해당합니다.|
 |`DelaySign`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 어셈블리를 만들 때 완전히 서명되지 않습니다.|
 |`FixedNames`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 컴파일된 어셈블리에 고정 이름이 지정됩니다.|
-|`Force`|선택적 `Boolean` 매개 변수<br /><br /> 이 매개 변수가 `true`이면 대상 디렉터리가 이미 있는 경우 작업은 대상 디렉터리를 덮어씁니다. 기존 콘텐츠는 손실됩니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-f** 스위치에 해당합니다.|
+|`Force`|선택적 `Boolean` 매개 변수<br /><br /> 이 매개 변수가 `true`이면 대상 디렉터리가 이미 있는 경우 작업은 대상 디렉터리를 덮어씁니다. 기존 콘텐츠는 손실됩니다. 기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-f** 스위치에 해당합니다.|
 |`KeyContainer`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 이름의 키 컨테이너를 지정합니다.|
 |`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 이름 키 파일의 실제 경로를 지정합니다.|
-|`MetabasePath`|선택적 `String` 매개 변수입니다.<br /><br /> 애플리케이션의 전체 IIS 메타베이스 경로를 지정합니다. 이 매개 변수는 `VirtualPath` 또는 `PhysicalPath` 매개 변수와 함께 사용할 수 없습니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-m** 스위치에 해당합니다.|
-|`PhysicalPath`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일할 애플리케이션의 실제 경로를 지정합니다. 이 매개 변수가 누락되면 IIS 메타데이터가 애플리케이션을 찾는 데 사용됩니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-p** 스위치에 해당합니다.|
-|`TargetFrameworkMoniker`|선택적 `String` 매개 변수입니다.<br /><br /> *aspnet_compiler.exe*의 .NET Framework 버전을 나타내는 TargetFrameworkMoniker가 사용되도록 지정합니다. .NET Framework 모니커만 허용합니다.|
+|`MetabasePath`|선택적 `String` 매개 변수입니다.<br /><br /> 애플리케이션의 전체 IIS 메타베이스 경로를 지정합니다. 이 매개 변수는 `VirtualPath` 또는 `PhysicalPath` 매개 변수와 함께 사용할 수 없습니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-m** 스위치에 해당합니다.|
+|`PhysicalPath`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일할 애플리케이션의 실제 경로를 지정합니다. 이 매개 변수가 누락되면 IIS 메타데이터가 애플리케이션을 찾는 데 사용됩니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-p** 스위치에 해당합니다.|
+|`TargetFrameworkMoniker`|선택적 `String` 매개 변수입니다.<br /><br /> *aspnet_compiler.exe* 의 .NET Framework 버전을 나타내는 TargetFrameworkMoniker가 사용되도록 지정합니다. .NET Framework 모니커만 허용합니다.|
 |`TargetPath`|선택적 `String` 매개 변수입니다.<br /><br /> 애플리케이션이 컴파일되는 실제 경로를 지정합니다. 지정하지 않으면 애플리케이션은 현재 위치에서 미리 컴파일됩니다.|
-|`Updateable`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 미리 컴파일된 애플리케이션이 업데이트 가능합니다.  기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-u** 스위치에 해당합니다.|
-|`VirtualPath`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일할 애플리케이션의 가상 경로입니다. `PhysicalPath`가 지정되면 실제 경로가 애플리케이션을 찾는 데 사용됩니다. 그렇지 않으면 IIS 메타베이스가 사용되고 애플리케이션은 기본 사이트에 있는 것으로 간주됩니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-v** 스위치에 해당합니다.|
+|`Updateable`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 미리 컴파일된 애플리케이션이 업데이트 가능합니다.  기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-u** 스위치에 해당합니다.|
+|`VirtualPath`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일할 애플리케이션의 가상 경로입니다. `PhysicalPath`가 지정되면 실제 경로가 애플리케이션을 찾는 데 사용됩니다. 그렇지 않으면 IIS 메타베이스가 사용되고 애플리케이션은 기본 사이트에 있는 것으로 간주됩니다. 이 매개 변수는 *aspnet_compiler.exe* 의 **-v** 스위치에 해당합니다.|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

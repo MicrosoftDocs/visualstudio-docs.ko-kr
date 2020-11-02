@@ -1,5 +1,7 @@
 ---
 title: MSBuild를 사용하여 병렬로 여러 프로젝트 빌드 | Microsoft Docs
+description: 다중 프로젝트를 병렬로 실행하여 더 빠르게 빌드하는 데 사용할 수 있는 MSBuild 설정에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634502"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353241"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 
@@ -28,7 +30,7 @@ ms.locfileid: "77634502"
 - MSBuild 작업에서 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 작업 매개 변수.
 
 > [!NOTE]
-> 명령줄의 **verbosity**( **-v**) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
+> 명령줄의 **verbosity** ( **-v** ) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount 스위치
 
@@ -48,7 +50,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 `BuildInParallel`은 MSBuild 작업에 대한 선택적 부울 매개 변수입니다. `BuildInParallel`을 `true`(기본값은 `true`)로 설정하면 가능한 많은 프로젝트를 동시에 빌드하기 위해 여러 작업자 프로세스가 생성됩니다. 이러한 방식이 제대로 작동하려면 `-maxcpucount` 스위치를 1보다 큰 값으로 설정해야 하며 시스템에는 최소한 듀얼 코어나 두 개 이상의 프로세서가 있어야 합니다.
 
-다음은 `BuildInParallel` 매개 변수를 설정하는 방법에 대한 *microsoft.common.targets*의 예제입니다.
+다음은 `BuildInParallel` 매개 변수를 설정하는 방법에 대한 *microsoft.common.targets* 의 예제입니다.
 
 ```xml
 <PropertyGroup>
@@ -72,7 +74,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 </MSBuild>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [다중 프로세서를 사용하여 프로젝트 빌드](../msbuild/using-multiple-processors-to-build-projects.md)
 - [다중 프로세서 인식 로거 작성](../msbuild/writing-multi-processor-aware-loggers.md)

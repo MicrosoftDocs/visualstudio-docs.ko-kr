@@ -1,5 +1,7 @@
 ---
 title: BscMake 작업 | Microsoft Docs
+description: Microsoft Browse Information Maintenance Utility 도구인 bscmake.exe를 래핑한 BscMake에 대해 알아봅니다. Visual Studio IDE는 더 이상 BscMake를 사용하지 않습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,19 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634515"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353280"
 ---
 # <a name="bscmake-task"></a>BscMake 작업
 
 > [!IMPORTANT]
 > BscMake는 더 이상 Visual Studio IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 정보는 *Solution* 폴더의 *.sdf* 파일에 자동으로 저장됩니다.
 
- Microsoft Browse Information Maintenance Utility 도구(*bscmake.exe*)를 래핑합니다.  *bscmake.exe* 도구는 컴파일하는 동안 만들어진 소스 브라우저 파일( *.sbr*)에서 찾아보기 정보 파일( *.bsc*)을 빌드합니다. **개체 브라우저**를 사용하여 *.bsc* 파일을 볼 수 있습니다. 자세한 내용은 [BSCMAKE 참조](/cpp/build/reference/bscmake-reference)를 참조하세요.
+ Microsoft Browse Information Maintenance Utility 도구( *bscmake.exe* )를 래핑합니다.  *bscmake.exe* 도구는 컴파일하는 동안 만들어진 소스 브라우저 파일( *.sbr* )에서 찾아보기 정보 파일( *.bsc* )을 빌드합니다. **개체 브라우저** 를 사용하여 *.bsc* 파일을 볼 수 있습니다. 자세한 내용은 [BSCMAKE 참조](/cpp/build/reference/bscmake-reference)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 

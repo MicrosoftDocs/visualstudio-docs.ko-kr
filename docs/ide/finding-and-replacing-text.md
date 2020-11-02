@@ -1,7 +1,6 @@
 ---
 title: 텍스트 및 다중 캐럿 선택 영역 찾기 및 바꾸기
-description: Visual Studio 코드 편집기에서 찾기 및 바꾸기 기능을 사용하는 방법을 알아봅니다.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298581"
+ms.locfileid: "92334196"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 
@@ -123,9 +122,9 @@ ms.locfileid: "92298581"
 |**Ctrl**+**Alt** + 두 번 클릭|보조 단어 선택 영역 추가|
 |**Ctrl**+**Alt** + 클릭 + 끌어오기|보조 선택 영역 추가|
 |**Shift**+**Alt**+ **.**|선택 항목으로 일치하는 다음 텍스트 추가|
-|**Ctrl**+**Shift**+**Alt**+ **,**|선택 항목으로 일치하는 모든 텍스트 추가|
+|**Shift**+**Alt**+ **;**|선택 항목으로 일치하는 모든 텍스트 추가|
 |**Shift**+**Alt**+ **,**|마지막으로 선택한 발생 항목 제거|
-|**Ctrl**+**Shift**+**Alt**+ **.**|일치하는 다음 발생 항목 건너뛰기|
+|**Shift**+**Alt**+ **/**|일치하는 다음 발생 항목 건너뛰기|
 |**Alt** + 클릭|상자 선택 영역 추가|
 |**Esc** 또는 클릭|모든 선택 영역 지우기|
 

@@ -1,5 +1,7 @@
 ---
 title: 작업 실패 진단 | Microsoft Docs
+description: 실패한 작업, 도구 이름, 기타 정보를 식별하여 MSBuild 작업 오류를 진단하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +16,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593280"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796474"
 ---
-# <a name="diagnosing-task-failures"></a>작업 실패 진단
+# <a name="diagnosing-task-failures"></a>작업 오류 진단
 
 작업에서 특정 오류를 기록하지 않은 경우 <xref:Microsoft.Build.Utilities.ToolTask> 파생 클래스가 0이 아닌 종료 코드를 반환하는 도구 프로세스를 실행할 때 `MSB6006`이 내보내집니다.
 
@@ -51,7 +53,7 @@ Build FAILED.
 
 이 결과는 프로젝트 `S:\MSB6006_demo\MSB6006_demo.csproj`에서 `InvokeToolTask`라는 대상의 파일 `S:\MSB6006_demo\MSB6006_demo.csproj`의 19번 줄에 정의된 작업에서 오류가 발생했음을 나타냅니다.
 
-### <a name="in-visual-studio"></a>Visual Studio에서
+### <a name="in-visual-studio"></a>Visual Studio
 
 `Project`, `File` 및 `Line` 열의 Visual Studio 오류 목록에서 동일한 정보를 사용할 수 있습니다.
 

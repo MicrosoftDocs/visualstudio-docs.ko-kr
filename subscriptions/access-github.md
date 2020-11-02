@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Visual Studio 구독의 일부로 GitHub Enterprise에 액세스하는 방법 알아보기
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584173"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467520"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise 구독이 포함된 visual Studio
 
@@ -39,7 +39,7 @@ GitHub Enterprise가 포함된 Visual Studio 구독은 다음 두 부분으로 �
 1. Visual Studio 구독(Enterprise 또는 Professional)
 2. GitHub Enterprise 
 
-GitHub 구독이 있는 Visual Studio가 할당되면 Visual Studio 구독 관리자가 구독을 할당했음을 알리는 전자 메일을 받게 됩니다.  이때 <https://my.visualstudio.com/benefits>에서 사용 가능한 구독 혜택을 볼 수 있습니다.  여기에는 GitHub Enterprise 혜택이 포함됩니다.
+GitHub 구독이 있는 Visual Studio가 할당되면 Visual Studio 구독 관리자가 구독을 할당했음을 알리는 이메일을 받게 됩니다.  이때 <https://my.visualstudio.com/benefits>에서 사용 가능한 구독 혜택을 볼 수 있습니다.  여기에는 GitHub Enterprise 혜택이 포함됩니다.
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise에서 Enterprise 계정 설정 보류 중](_img/access-github/pending-account-setup.png "조직에서 먼저 Enterprise 계정을 설정해야 합니다.")  
@@ -49,7 +49,7 @@ GitHub Enterprise는 Visual Studio 구독과 별도로 GitHub 관리자가 관�
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise에서 GitHub 초대 보류 중](_img/access-github/pending-invite.png "GitHub 조직에 대한 초대를 요청하려면 GitHub 관리자에게 문의하세요.")  
 
-GitHub 조직 관리자로부터 초대를 받으면 GitHub에서 전자 메일을 받게 되며 혜택 타일이 다시 업데이트됩니다.
+GitHub 조직 관리자로부터 초대를 받으면 GitHub에서 이메일을 받게 되며 혜택 타일이 다시 업데이트됩니다.
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise에서 초대 수락 보류 중](_img/access-github/pending-acceptance.png "GitHub의 전자 메일에서 받은 초대 수락")  
@@ -75,7 +75,7 @@ GitHub를 처음 사용하는 경우 도움이 되는 리소스는 다음과 같
 ## <a name="frequently-asked-questions"></a>질문과 대답
 
 ### <a name="q--where-is-my-github-subscription"></a>Q:  내 GitHub 구독은 어디에 있나요?
-A:  GitHub Enterprise 계정을 설정하는 프로세스는 시간이 걸릴 수 있습니다.  기다리고 있다가 아무 소식도 받지 못했다면 GitHub 관리자에게 연락하는 것이 좋습니다.  관리자가 계속 작업 중이거나 GitHub Enterprise 계정을 만들지 않기로 했을 수 있습니다. 
+A:  GitHub Enterprise 계정을 설정하는 프로세스는 시간이 걸릴 수 있습니다.  기다려도 아무 소식도 듣지 못했다면 GitHub 관리자에게 연락하는 것이 좋습니다.  관리자가 아직 작업 중이거나 GitHub Enterprise 계정을 만들지 않기로 했을 수 있습니다. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Q: 전체 Visual Studio 구독 혜택을 받게 되나요?
 A:  GitHub Enterprise와 함께, 구독을 별도로 구매한 경우와 동일하게 소프트웨어 다운로드, 클라우드 서비스, 기술 지원 및 파트너 혜택 등 표준 Visual Studio 구독의 모든 혜택을 받을 수 있습니다.

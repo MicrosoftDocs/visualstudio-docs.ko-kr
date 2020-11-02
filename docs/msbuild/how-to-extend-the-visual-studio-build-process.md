@@ -1,6 +1,7 @@
 ---
 title: 빌드 프로세스 확장
-ms.custom: seodec18
+description: 프로젝트 빌드 방법을 제어하고 사용자 지정할 수 있도록 빌드 프로세스를 수정하는 다양한 방법을 알아봅니다.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88041040"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436357"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 
-Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 MSBuild *.targets* 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 *Microsoft.Common.targets*는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 문서에서는 Visual Studio 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.
+Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 MSBuild *.targets* 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 *Microsoft.Common.targets* 는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 문서에서는 Visual Studio 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.
 
-- 공통 대상(*Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
+- 공통 대상( *Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
 
 - 공통 대상에 정의된 “DependsOn” 속성을 재정의합니다.
 
@@ -34,7 +35,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 공통 대상은 빌드 프로세스의 일부 주요 대상의 전후에 호출되는 미리 정의된 빈 대상 집합을 포함합니다. 예를 들어 MSBuild는 메인 `CoreBuild` 대상 전에 `BeforeBuild` 대상을 호출하고 `CoreBuild` 대상 후에 `AfterBuild` 대상을 호출합니다. 기본적으로 공통 대상의 빈 대상은 아무것도 수행하지 않지만 공통 대상을 가져오는 프로젝트 파일에서 원하는 대상을 정의하여 해당 기본 동작을 재정의할 수 있습니다. 미리 정의된 대상을 재정의하면 MSBuild 작업을 사용하여 빌드 프로세스를 더 세부적으로 제어할 수 있습니다.
 
 > [!NOTE]
-> SDK 스타일 프로젝트에는 *프로젝트 파일의 마지막 줄 뒤*에 대상의 암시적 가져오기가 있습니다. 즉, [방법: MSBuild 프로젝트 SDK 사용](how-to-use-project-sdk.md)의 설명대로 가져오기를 수동으로 지정하지 않는 한 기본 대상을 재정의할 수 없습니다.
+> SDK 스타일 프로젝트에는 *프로젝트 파일의 마지막 줄 뒤* 에 대상의 암시적 가져오기가 있습니다. 즉, [방법: MSBuild 프로젝트 SDK 사용](how-to-use-project-sdk.md)의 설명대로 가져오기를 수동으로 지정하지 않는 한 기본 대상을 재정의할 수 없습니다.
 
 #### <a name="to-override-a-predefined-target"></a>미리 정의된 대상을 재정의하려면
 
@@ -62,7 +63,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|이러한 대상 중 하나에 삽입된 작업은 핵심 컴파일이 완료되기 전이나 후에 실행됩니다. 대부분의 사용자 지정은 이러한 두 개의 대상 중 하나에서 수행됩니다.|
 |`BeforeBuild`, `AfterBuild`|이러한 대상 중 하나에 삽입된 작업은 빌드의 모든 작업 전이나 후에 실행됩니다. **참고:**`BeforeBuild` 및 `AfterBuild` 대상은 프로젝트 파일 대부분의 끝에 삽입된 주석에서 이미 정의되어 있습니다. 따라서 프로젝트 파일에 빌드 전후 이벤트를 쉽게 추가할 수 있습니다.|
-|`BeforeRebuild`, `AfterRebuild`|이러한 대상 중 하나에 삽입된 작업은 핵심 다시 빌드 기능이 호출되기 전 또는 후에 실행됩니다. *Microsoft.Common.targets*에서 대상 실행 순서는 차례로 `BeforeRebuild`, `Clean`, `Build` 및 `AfterRebuild`입니다.|
+|`BeforeRebuild`, `AfterRebuild`|이러한 대상 중 하나에 삽입된 작업은 핵심 다시 빌드 기능이 호출되기 전 또는 후에 실행됩니다. *Microsoft.Common.targets* 에서 대상 실행 순서는 차례로 `BeforeRebuild`, `Clean`, `Build` 및 `AfterRebuild`입니다.|
 |`BeforeClean`, `AfterClean`|이러한 대상 중 하나에 삽입된 작업은 핵심 정리 기능이 호출되기 전 또는 후에 실행됩니다.|
 |`BeforePublish`, `AfterPublish`|이러한 대상 중 하나에 삽입된 작업은 핵심 게시 기능이 호출되기 전 또는 후에 실행됩니다.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|이러한 대상 중 하나에 삽입된 작업은 어셈블리 참조가 확인되기 전이나 후에 실행됩니다.|
@@ -70,7 +71,7 @@ Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 
 
 ## <a name="example-aftertargets-and-beforetargets"></a>예: AfterTargets 및 BeforeTargets
 
-다음 예제에서는 `AfterTargets` 특성을 사용하여 출력 파일에 무언가를 수행하는 사용자 지정 대상을 추가하는 방법을 보여 줍니다. 이 경우에는 새 폴더 *CustomOutput*에 출력 파일을 복사합니다.  이 예제에서는 또한, `BeforeTargets` 특성을 사용하고 `CoreClean` 대상보다 먼저 사용자 지정 정리 작업이 실행되도록 지정하여 `CustomClean` 대상이 있는 사용자 지정 빌드 작업을 통해 만들어진 파일을 정리하는 방법도 보여 줍니다.
+다음 예제에서는 `AfterTargets` 특성을 사용하여 출력 파일에 무언가를 수행하는 사용자 지정 대상을 추가하는 방법을 보여 줍니다. 이 경우에는 새 폴더 *CustomOutput* 에 출력 파일을 복사합니다.  이 예제에서는 또한, `BeforeTargets` 특성을 사용하고 `CoreClean` 대상보다 먼저 사용자 지정 정리 작업이 실행되도록 지정하여 `CustomClean` 대상이 있는 사용자 지정 빌드 작업을 통해 만들어진 파일을 정리하는 방법도 보여 줍니다.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -1,5 +1,7 @@
 ---
 title: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
+description: MSBuild.exe 명령줄을 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633930"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436429"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
 
-*MSBuild.exe*를 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드할 수 있습니다.
+*MSBuild.exe* 를 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드할 수 있습니다.
 
 ## <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>솔루션에서 특정 프로젝트의 특정 대상을 빌드하려면
 
@@ -39,7 +41,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 ## <a name="troubleshooting"></a>문제 해결
 
-사용할 수 있는 옵션을 검사하려는 경우 MSBuild에서 제공하는 디버깅 옵션을 사용할 수 있습니다. `MSBUILDEMITSOLUTION=1` 환경 변수를 설정하고 솔루션을 빌드합니다. 그러면 빌드 시 솔루션의 MSBuild의 내부 보기를 보여주는 *\<SolutionName>.sln.metaproj*라는 MSBuild 파일을 만듭니다. 이 보기를 검사하여 빌드할 수 있는 대상을 확인할 수 있습니다.
+사용할 수 있는 옵션을 검사하려는 경우 MSBuild에서 제공하는 디버깅 옵션을 사용할 수 있습니다. `MSBUILDEMITSOLUTION=1` 환경 변수를 설정하고 솔루션을 빌드합니다. 그러면 빌드 시 솔루션의 MSBuild의 내부 보기를 보여주는 *\<SolutionName>.sln.metaproj* 라는 MSBuild 파일을 만듭니다. 이 보기를 검사하여 빌드할 수 있는 대상을 확인할 수 있습니다.
 
 이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다.
 

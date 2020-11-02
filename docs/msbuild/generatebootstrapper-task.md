@@ -1,5 +1,7 @@
 ---
 title: GenerateBootstrapper 작업 | Microsoft 문서
+description: 애플리케이션 및 해당 필수 조건을 자동으로 검색, 다운로드, 설치하는 데 MSBuild GenerateBootstrapper 작업을 사용합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634086"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436474"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 작업
 
@@ -86,7 +88,7 @@ ms.locfileid: "77634086"
 
    선택적 `String` 출력 매개 변수입니다.
 
-   *setup.exe*의 빌드 위치를 지정합니다.
+   *setup.exe* 의 빌드 위치를 지정합니다.
 
 - `ComponentsLocation`
 
@@ -94,9 +96,9 @@ ms.locfileid: "77634086"
 
    설치할 설치 필수 조건을 검색할 부트스트래퍼의 위치를 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.
 
-  - `HomeSite`: 필수 구성 요소가 구성 요소 공급업체에서 호스트되고 있음을 나타냅니다.
+  - `HomeSite`: 필수 조건이 구성 요소 공급업체에서 호스트되고 있음을 나타냅니다.
 
-  - `Relative`: 필수 구성 요소가 애플리케이션의 같은 위치에 있음을 나타냅니다.
+  - `Relative`: 필수 조건이 애플리케이션의 같은 위치에 있음을 나타냅니다.
 
   - `Absolute`: 모든 구성 요소를 중앙 URL에서 찾을 수 있음을 나타냅니다. 이 값은 `ComponentsUrl` 입력 매개 변수와 함께 사용해야 합니다.
 
@@ -179,7 +181,7 @@ ms.locfileid: "77634086"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

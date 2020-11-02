@@ -1,5 +1,7 @@
 ---
 title: CallTarget 작업 | Microsoft Docs
+description: MSBuild CallTarget 작업을 사용하여 프로젝트 파일 내에서 지정된 대상을 호출하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094564"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353293"
 ---
 # <a name="calltarget-task"></a>CallTarget 작업
 
@@ -31,7 +33,7 @@ ms.locfileid: "79094564"
 
  다음 표에서는 `CallTarget` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |---------------------------| - |
 | `RunEachTargetSeparately` | 선택적 `Boolean` 입력 매개 변수입니다.<br /><br /> `true`인 경우 MSBuild 엔진이 대상마다 한 번씩 호출됩니다. `false`인 경우 MSBuild 엔진이 한 번씩 호출되어 모든 대상을 빌드합니다. 기본값은 `false`입니다. |
 | `TargetOutputs` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 빌드된 모든 대상의 출력을 포함합니다. |
@@ -67,7 +69,7 @@ ms.locfileid: "79094564"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [대상](../msbuild/msbuild-targets.md)

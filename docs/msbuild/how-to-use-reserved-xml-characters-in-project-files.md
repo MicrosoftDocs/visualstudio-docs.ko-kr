@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로젝트 파일에서 예약된 XML 문자 사용 | Microsoft 문서'
+description: 예약된 XML 문자를 MSBuild 프로젝트 파일의 해당하는 명명된 엔터티로 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f98044378b717536c42f25f5033b072ac3680675
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633774"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436089"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>방법: 프로젝트 파일에서 예약된 XML 문자 사용
 

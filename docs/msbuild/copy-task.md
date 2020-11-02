@@ -1,5 +1,7 @@
 ---
 title: Copy 작업 | Microsoft 문서
+description: MSBuild Copy 작업을 사용하여 파일 시스템의 새 파일 또는 폴더 위치에 파일을 복사하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508043"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796229"
 ---
 # <a name="copy-task"></a>Copy 작업
 
@@ -74,7 +76,7 @@ ms.locfileid: "89508043"
 
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
 다음 예제에서는 `MySourceFiles` 항목 컬렉션의 항목을 *c:\MyProject\Destination* 폴더로 복사합니다.
 
@@ -95,9 +97,9 @@ ms.locfileid: "89508043"
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
-다음 예제에서는 재귀적 복사를 수행하는 방법을 보여 줍니다. 이 프로젝트는 디렉터리 구조를 유지하면서 *c:\MySourceTree*의 모든 파일을 재귀적으로 *c:\MyDestinationTree*에 복사합니다.
+다음 예제에서는 재귀적 복사를 수행하는 방법을 보여 줍니다. 이 프로젝트는 디렉터리 구조를 유지하면서 *c:\MySourceTree* 의 모든 파일을 재귀적으로 *c:\MyDestinationTree* 에 복사합니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

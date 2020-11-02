@@ -1,5 +1,7 @@
 ---
 title: 전달 로거 만들기 | Microsoft Docs
+description: MSBuild 전달 로거를 만들어 프로젝트를 빌드할 때 모니터링하려는 이벤트를 선택할 수 있도록 하여 로깅 효율성을 개선합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634307"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796578"
 ---
 # <a name="create-forwarding-loggers"></a>전달 로거 만들기
 
@@ -36,13 +38,13 @@ ms.locfileid: "77634307"
 
 ## <a name="specify-a-forwarding-logger"></a>전달 로거 지정
 
- 전달 로거를 어셈블리로 컴파일한 후에 빌드하는 동안 이를 사용하도록 MSBuild에 지시해야 합니다. 이를 위해 *MSBuild.exe*와 함께 `-FileLogger`, `-FileLoggerParameters` 및 `-DistributedFileLogger` 스위치를 사용합니다. `-FileLogger` 스위치는 *MSBuild.exe*에서 로거를 직접 연결하도록 지시합니다. `-DistributedFileLogger` 스위치는 노드당 로그 파일이 있음을 의미합니다. 전달 로거에 매개 변수를 설정하려면 `-FileLoggerParameters` 스위치를 사용합니다. 해당 스위치 및 기타 *MSBuild.exe* 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
+ 전달 로거를 어셈블리로 컴파일한 후에 빌드하는 동안 이를 사용하도록 MSBuild에 지시해야 합니다. 이를 위해 *MSBuild.exe* 와 함께 `-FileLogger`, `-FileLoggerParameters` 및 `-DistributedFileLogger` 스위치를 사용합니다. `-FileLogger` 스위치는 *MSBuild.exe* 에서 로거를 직접 연결하도록 지시합니다. `-DistributedFileLogger` 스위치는 노드당 로그 파일이 있음을 의미합니다. 전달 로거에 매개 변수를 설정하려면 `-FileLoggerParameters` 스위치를 사용합니다. 해당 스위치 및 기타 *MSBuild.exe* 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
 
 ## <a name="multi-processor-aware-loggers"></a>다중 프로세서 인식 로거
 
  다중 프로세서 시스템에서 프로젝트를 빌드할 때 각 프로세서의 빌드 메시지가 통합 시퀀스에서 자동으로 인터리브되지 않습니다. 대신 모든 메시지에 연결된 <xref:Microsoft.Build.Framework.BuildEventContext> 클래스를 사용하여 메시지 그룹화 우선 순위를 설정해야 합니다. 다중 프로세서 빌드에 대한 자세한 내용은 [다중 프로세서 환경의 로깅](../msbuild/logging-in-a-multi-processor-environment.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [빌드 로거](../msbuild/build-loggers.md)

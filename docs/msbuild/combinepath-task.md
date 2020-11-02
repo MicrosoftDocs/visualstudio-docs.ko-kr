@@ -1,5 +1,7 @@
 ---
 title: CombinePath 작업 | Microsoft Docs
+description: MSBuild CombinePath 작업을 사용하여 지정된 경로를 단일 경로로 결합하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288964"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796617"
 ---
 # <a name="combinepath-task"></a>CombinePath 작업
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800244"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467637"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -134,11 +134,11 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | 개발자 커뮤니티 | sendvsfeedback2.azurewebsites.net/api | https/443 | 개발자 커뮤니티 피드백 도구 API를 호출하는 데 사용됩니다(내 문제, 검색, 투표, 주석, 제출, 업로드, 재개). |
 | IntelliCode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Intellicode API를 호출하는 데 사용됩니다. |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Live Share API를 호출하는 데 사용됩니다. |
-| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API를 호출하는 데 사용됩니다. |
-| JavaScript 자동 형식 획득 | registry.npmjs.org | https/443 | 인기 있는 JavaScript 라이브러리에 Intellisense를 제공하기 위해 TypeScript 형식 정의를 설치하는 데 사용됩니다. |
+| GitHub Codespaces | \*.online.visualstudio.com | https/443 | GitHub Codespaces API를 호출하는 데 사용됩니다. |
+| JavaScript 자동 형식 획득 | registry.npmjs.org | https/443 | 인기 있는 JavaScript 라이브러리에 IntelliSense를 제공하기 위해 TypeScript 형식 정의를 설치하는 데 사용됩니다. |
 | Visual Studio 구독 라이선싱 서비스 | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | 온라인 활성화에 대한 라이선싱 |
 | 디버거 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>SSH를 통해 Unix/macOS에서 .NET Core 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다. <br><br>2. <br>원격 Windows Docker 컨테이너 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다.<br><br> 3. .NET Framework 소스 단계별 실행에 사용됨 <br><br> 4. <br>사용자가 등록하는 경우 NuGet.org 기호 서버에 게시된 기호를 다운로드하는 데 사용됩니다.<br><br> 5. 사용자가 등록하는 경우 MS 기호 및 이진 파일을 다운로드하는 데 사용되며, 덤프에서 관리 코드를 디버깅하는 데 필요할 수도 있습니다. |
-| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Visual Studio Codespaces API를 호출하는 데 사용됩니다. |
+| GitHub Codespaces| \*.online.visualstudio.com | https/443 | GitHub Codespaces API를 호출하는 데 사용됩니다. |
 | Xamarin Android 앱 게시 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Visual Studio에서 직접 Xamarin Android 애플리케이션을 게시/업로드하기 위해 Google Play 스토어 서비스와 상호 작용하는 데 사용됩니다. |
 | Azure Container Registry | *.azurecr.io | https/443 | CICD 파이프라인 구성을 위해 Azure에서 호스트되는 컨테이너 레지스트리에 액세스 |
 | | | | |
