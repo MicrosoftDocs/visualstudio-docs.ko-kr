@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio IDE를 다운로드하고 설치하는 방법을 알아봅니다.
-ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006308"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435762"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 혜택
 
@@ -26,7 +26,7 @@ IDE를 다운로드하려면
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. 도구 섹션에서 Visual Studio IDE 타일을 찾고 혜택 타일 아래쪽에 있는 **다운로드** 링크를 클릭합니다.  또한 [다운로드](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) 페이지에서 다운로드할 수도 있습니다.
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise 타일](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Visual Studio Enterprise tile](_img/vs-ide-experience/vs-ide-tile.png "Visual Studio 타일에서 '다운로드'를 클릭하여 Visual Studio를 설치합니다.")
 
 3. Visual Studio의 다운로드 결과 페이지로 리디렉션됩니다. 여기서 IDE를 다운로드하고 정품 인증을 받기 위한 제품 키를 얻을 수 있습니다. 또한 파란색 **키 가져오기** 링크를 클릭하여 제품 키를 요청하거나 나중에 [제품 키](https://my.visualstudio.com/productkeys) 페이지에서 키를 요청할 수 있습니다.
 4. [다운로드 결과] 페이지의 [세부 정보] 탭에서
@@ -34,28 +34,28 @@ IDE를 다운로드하려면
    - 언어 기본 설정을 선택합니다.
 5. 파란색 다운로드 단추를 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise 다운로드 세부 정보](_img/vs-ide-experience/vs-ide-download-details.png)
-6. 다운로드한 설치 관리자 패키지를 클릭합니다.  지금 설치하라는 메시지가 표시되면 **실행**을 클릭합니다.
-7. [사용자 계정 컨트롤] 대화 상자에서 **예**를 클릭합니다.
-8. **계속**을 클릭하여 사용 조건에 동의합니다.
+   > ![Visual Studio Enterprise 다운로드 세부 정보](_img/vs-ide-experience/vs-ide-download-details.png "'다운로드' 단추를 클릭하여 다운로드를 시작합니다.")
+6. 다운로드한 설치 관리자 패키지를 클릭합니다.  지금 설치하라는 메시지가 표시되면 **실행** 을 클릭합니다.
+7. [사용자 계정 컨트롤] 대화 상자에서 **예** 를 클릭합니다.
+8. **계속** 을 클릭하여 사용 조건에 동의합니다.
 9. 설치 관리자가 시작되면 해당 탭에서 원하는 워크로드, 개별 구성 요소 및 언어 팩을 선택합니다.
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise 사용자 지정](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Visual Studio Enterprise 사용자 지정](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "워크로드 및 기타 구성 요소를 선택합니다.")
 
-10. **설치**를 클릭합니다.
+10. **설치** 를 클릭합니다.
 
-11. 설치가 완료되면 설치를 수정하거나 Visual Studio를 시작할 수 있는 옵션이 제공됩니다.  **시작**을 클릭하여 시작합니다.  여러 버전이 설치되어 있는 경우 버전이 나열됩니다.
+11. 설치가 완료되면 설치를 수정하거나 Visual Studio를 시작할 수 있는 옵션이 제공됩니다.  **시작** 을 클릭하여 시작합니다.  여러 버전이 설치되어 있는 경우 버전이 나열됩니다.
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise 시작](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Visual Studio Enterprise 시작](_img/vs-ide-experience/vs-ide-versions.png "Visual Studio를 시작하려면 '시작'을 클릭하세요.")
 
 12. Visual Studio 구독과 연결된 계정으로 로그인합니다.
 
-13. 기본 설정된 테마를 선택하고 **Visual Studio 시작**을 클릭합니다.
+13. 기본 설정된 테마를 선택하고 **Visual Studio 시작** 을 클릭합니다.
 
 14. Visual Studio가 열립니다. Visual Studio를 사용할 준비가 되었습니다!
 
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise 사용 시작](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Visual Studio Enterprise 사용 시작](_img/vs-ide-experience/vs-ide-start-cropped.png "클라우드를 비롯한 다양한 환경에서")
 
 
 ## <a name="eligibility"></a>자격
