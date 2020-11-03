@@ -1,5 +1,7 @@
 ---
 title: 빌드 로거 | Microsoft Docs
+description: MSBuild 로거를 사용하여 빌드 출력을 관리 및 사용자 지정하고 특정 빌드 이벤트에 대한 응답으로 메시지, 오류 또는 경고를 표시합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634528"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353202"
 ---
 # <a name="build-loggers"></a>빌드 로거
 
@@ -50,9 +52,9 @@ MSBuild.exe **-verbosity** 스위치에 특정 값이 포함되어 있을 때만
 
 ## <a name="specify-a-logger"></a>로거 지정
 
-로거가 어셈블리로 컴파일되면 빌드하는 동안 MSBuild에 해당 로거를 사용하도록 지시해야 합니다. 이 작업은 *MSBuild.exe*와 함께 **-logger** 스위치를 사용하여 수행합니다. *MSBuild.exe*에 대해 사용할 수 있는 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
+로거가 어셈블리로 컴파일되면 빌드하는 동안 MSBuild에 해당 로거를 사용하도록 지시해야 합니다. 이 작업은 *MSBuild.exe* 와 함께 **-logger** 스위치를 사용하여 수행합니다. *MSBuild.exe* 에 대해 사용할 수 있는 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
 
-다음 명령줄은 프로젝트 *MyProject.csproj*를 빌드하고 *SimpleLogger.dll*에서 구현된 로거 클래스를 사용합니다. **nologo** 스위치는 배너 및 저작권 메시지를 숨기고 **-noconsolelogger** 스위치는 기본 MSBuild 콘솔 로거를 사용하지 않도록 설정합니다.
+다음 명령줄은 프로젝트 *MyProject.csproj* 를 빌드하고 *SimpleLogger.dll* 에서 구현된 로거 클래스를 사용합니다. **nologo** 스위치는 배너 및 저작권 메시지를 숨기고 **-noconsolelogger** 스위치는 기본 MSBuild 콘솔 로거를 사용하지 않도록 설정합니다.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
@@ -64,7 +66,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예제 1
 
 ### <a name="description"></a>설명
 
@@ -74,7 +76,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 ### <a name="description"></a>설명
 
