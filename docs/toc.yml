@@ -966,7 +966,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참고
+- name: 참조
   items:
     - name: 바로 가기 키
       items:
@@ -1492,3 +1492,8 @@
       href: ide/developer-community-guidelines.md
     - name: 개발자 커뮤니티 데이터 개인 정보
       href: ide/developer-community-privacy.md
+- name: Visual Studio 2015
+  expanded: true
+  items:
+    - name: Visual Studio 2015 설명서
+      href: vs-2015-archive.md
