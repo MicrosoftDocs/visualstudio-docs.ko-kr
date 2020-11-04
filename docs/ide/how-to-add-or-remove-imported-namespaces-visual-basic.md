@@ -1,5 +1,6 @@
 ---
-title: '방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)'
+title: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,24 +15,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284741"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047104"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 
 네임스페이스를 가져오면 해당 네임스페이스의 요소를 정규화하지 않고 코드에서 사용할 수 있습니다. 예를 들어 `System.Messaging.MessageQueue` 클래스의 `Create` 메서드에 액세스하려면 `System.Messaging` 네임스페이스를 가져오고 코드에 필요한 요소를 `MessageQueue.Create`로 참조하면 됩니다.
 
-가져온 네임스페이스는 **프로젝트 디자이너**의 **참조** 페이지에서 관리됩니다. 이 대화 상자에서 지정하는 가져오기는 컴파일러( */imports*)에 직접 전달되고 프로젝트의 모든 파일에 적용됩니다. `Imports` 문을 사용하여 단일 소스 코드 파일에서 네임스페이스를 사용합니다.
+가져온 네임스페이스는 **프로젝트 디자이너** 의 **참조** 페이지에서 관리됩니다. 이 대화 상자에서 지정하는 가져오기는 컴파일러( */imports* )에 직접 전달되고 프로젝트의 모든 파일에 적용됩니다. `Imports` 문을 사용하여 단일 소스 코드 파일에서 네임스페이스를 사용합니다.
 
 ### <a name="to-add-an-imported-namespace"></a>가져온 네임스페이스를 추가하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
 
-2. **프로젝트 디자이너**에서 **참조** 탭을 클릭합니다.
+2. **프로젝트 디자이너** 에서 **참조** 탭을 클릭합니다.
 
 3. **가져온 네임스페이스** 목록에서 추가할 네임스페이스의 확인란을 선택합니다.
 
@@ -40,9 +41,9 @@ ms.locfileid: "85284741"
 
 ### <a name="to-remove-an-imported-namespace"></a>가져온 네임스페이스를 제거하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
 
-2. **프로젝트 디자이너**에서 **참조** 탭을 클릭합니다.
+2. **프로젝트 디자이너** 에서 **참조** 탭을 클릭합니다.
 
 3. **가져온 네임스페이스** 목록에서 제거할 네임스페이스의 확인란을 선택 취소합니다.
 
@@ -53,9 +54,9 @@ ms.locfileid: "85284741"
 
 ### <a name="to-add-a-user-import"></a>사용자 가져오기를 추가하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
 
-2. **프로젝트 디자이너**에서 **참조** 탭을 클릭합니다.
+2. **프로젝트 디자이너** 에서 **참조** 탭을 클릭합니다.
 
 3. **가져온 네임스페이스** 목록 아래 텍스트 상자에 루트 네임스페이스를 포함하여 가져올 네임스페이스의 전체 이름을 입력합니다.
 
@@ -66,9 +67,9 @@ ms.locfileid: "85284741"
 
 ### <a name="to-update-a-user-import"></a>사용자 가져오기를 업데이트하려면
 
-1. **솔루션 탐색기**에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트의 **My Project** 노드를 두 번 클릭합니다.
 
-2. **프로젝트 디자이너**에서 **참조** 탭을 클릭합니다.
+2. **프로젝트 디자이너** 에서 **참조** 탭을 클릭합니다.
 
 3. **가져온 네임스페이스** 목록에서 변경할 네임스페이스를 선택합니다.
 

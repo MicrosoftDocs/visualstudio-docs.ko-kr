@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005344"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택

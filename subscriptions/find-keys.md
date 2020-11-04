@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91004969"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기

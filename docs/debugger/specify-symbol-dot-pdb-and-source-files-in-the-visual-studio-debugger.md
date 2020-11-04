@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89599588"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 소스 파일 지정(C#, C++, Visual Basic, F#)
@@ -188,7 +188,7 @@ Visual Studio IDE에서 프로젝트를 빌드하고 표준 **디버그** 빌드
 
   메이크파일을 사용하여 C/C++ 애플리케이션을 빌드하고 **/Fd** 없이 **/ZI** 또는 **/Zi** 를 지정하는 경우 컴파일러에서 *.pdb* 파일 2개를 만듭니다.
 
-  - *VC\<x>.pdb* . 여기서 *\<x>* 는 Microsoft C++ 컴파일러의 버전을 나타냅니다(예: *VC11.pdb* ).
+  - *VC\<x>.pdb*. 여기서 *\<x>* 는 Microsoft C++ 컴파일러의 버전을 나타냅니다(예: *VC11.pdb* ).
 
     *VC\<x>.pdb* 파일에는 각 개체 파일에 대한 디버깅 정보가 모두 들어 있으며 프로젝트 메이크파일과 동일한 디렉터리에 저장됩니다. C/C++ 컴파일러는 개체 파일을 만들 때마다 *VC\<x>.pdb* 에 디버그 정보를 병합합니다. 따라서 *\<windows.h>* 와 같은 공통 헤더 파일은 모든 소스 파일에 포함되지만, 해당 헤더의 typedef는 모든 개체 파일에 포함되지 않고 한 번만 저장됩니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다.
 

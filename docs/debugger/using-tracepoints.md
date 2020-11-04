@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561340"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio에서 추적점을 사용하여 출력 창에 정보 기록
