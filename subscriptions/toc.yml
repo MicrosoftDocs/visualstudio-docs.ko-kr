@@ -44,6 +44,8 @@
       href: using-the-subscriber-portal.md
     - name: 구독 관리
       href: manage-vs-subscriptions.md
+    - name: 구독이 만료되는 경우
+      href: subscription-expiration.md
     - name: 구독 관리자에게 문의
       href: contact-my-admin.md
     - name: 이점
