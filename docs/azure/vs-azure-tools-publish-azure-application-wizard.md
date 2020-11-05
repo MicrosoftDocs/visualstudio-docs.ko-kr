@@ -4,17 +4,16 @@ description: Visual Studio Azure 애플리케이션 게시 마법사에서 다�
 author: ghogen
 manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280533"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399458"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure 애플리케이션 게시 마법사 사용
 
@@ -31,21 +30,21 @@ Visual Studio에서 웹 애플리케이션을 개발한 후 **Azure 애플리케
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **게시**를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **게시** 를 선택합니다.
 
 **Azure에서 사용되지 않는 웹 애플리케이션 프로젝트가 있는 경우:**
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **변환** > **Azure 클라우드 서비스 프로젝트로 변환**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **변환** > **Azure 클라우드 서비스 프로젝트로 변환** 을 선택합니다.
 
-1. **솔루션 탐색기**에서 새로 만든 Azure 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **게시**를 선택합니다.
+1. **솔루션 탐색기** 에서 새로 만든 Azure 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **게시** 를 선택합니다.
 
 ## <a name="sign-in-page"></a>로그인 페이지
 
 ![로그인 페이지](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
 
-**계정** - 계정을 선택하거나 계정 드롭다운 목록에서 **계정 추가**를 선택합니다.
+**계정** - 계정을 선택하거나 계정 드롭다운 목록에서 **계정 추가** 를 선택합니다.
 
 **구독 선택** - 배포에 사용할 구독을 선택합니다.
 
@@ -79,7 +78,7 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 **배포 업데이트** - 업데이트된 구성 요소만 배포하려면 이 옵션을 선택합니다. 이 유형의 배포는 전체 배포보다 빠를 수 있습니다. 클라우드 서비스의 상수 가상 IP 주소를 유지하려면 이 옵션을 선택해야 합니다.
 
-**배포 업데이트 - 설정** - 이 대화 상자는 역할을 업데이트하는 방법을 자세히 지정하는 데 사용됩니다. **증분 업데이트**를 선택하면 애플리케이션의 각 인스턴스가 하나씩 차례로 업데이트되므로 해당 애플리케이션을 항상 사용할 수 있습니다. **동시 업데이트**를 선택하면 애플리케이션의 모든 인스턴스가 동시에 업데이트됩니다. 동시 업데이트는 신속하게 진행되지만 업데이트 과정 중에 서비스를 사용할 수 없습니다.
+**배포 업데이트 - 설정** - 이 대화 상자는 역할을 업데이트하는 방법을 자세히 지정하는 데 사용됩니다. **증분 업데이트** 를 선택하면 애플리케이션의 각 인스턴스가 하나씩 차례로 업데이트되므로 해당 애플리케이션을 항상 사용할 수 있습니다. **동시 업데이트** 를 선택하면 애플리케이션의 모든 인스턴스가 동시에 업데이트됩니다. 동시 업데이트는 신속하게 진행되지만 업데이트 과정 중에 서비스를 사용할 수 없습니다.
 
 ![배포 설정](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
@@ -97,7 +96,7 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 ## <a name="summary-page"></a>요약 페이지
 
-![요약](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![요약 페이지](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
 **대상 프로필** - 선택한 설정에서 게시 프로필을 만들도록 선택할 수 있습니다. 예를 들어, 테스트 환경에 대한 하나의 프로필을 만들고 프로덕션용으로 다른 하나를 만들 수 있습니다. 이 프로파일을 저장하려면 **저장** 아이콘을 선택합니다. 마법사는 프로필을 만들고 Visual Studio 프로젝트에 저장합니다. 프로필 이름을 수정하려면 **대상 프로필** 목록을 연 다음 **&lt;관리...&gt;** 를 선택합니다.
 
@@ -106,7 +105,7 @@ Azure Storage 계정은 애플리케이션 배포용 패키지를 저장합니�
 
 ## <a name="publishing-your-application"></a>애플리케이션 게시
 
-프로젝트 배포에 대한 설정을 모두 구성했으면 대화 상자의 아래쪽에서 **게시**를 선택합니다. Visual Studio의 **출력** 창에서 프로세스 상태를 모니터링할 수 있습니다.
+프로젝트 배포에 대한 설정을 모두 구성했으면 대화 상자의 아래쪽에서 **게시** 를 선택합니다. Visual Studio의 **출력** 창에서 프로세스 상태를 모니터링할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

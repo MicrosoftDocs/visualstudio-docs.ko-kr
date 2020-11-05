@@ -4,17 +4,16 @@ description: Visual Studio를 사용하여 Azure 클라우드 서비스에 대�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740047"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399281"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 역할 구성
 Azure 클라우드 서비스에는 하나 이상의 작업자 또는 웹 역할이 포함될 수 있습니다. 각 역할에 대해 해당 역할을 설정하는 방법을 정의하고 해당 역할을 실행하는 방법을 구성해야 합니다. 클라우드 서비스의 역할에 대한 자세한 내용은 [Azure Cloud Services 소개](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)를 참조하세요.
@@ -36,7 +35,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
     ![솔루션 탐색기 프로젝트 - 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
@@ -44,10 +43,10 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![프로젝트 속성 페이지 - 개발 탭](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. **서비스 구성** 목록에서 편집할 서비스 구성의 이름을 선택합니다. 이 역할에 대한 서비스 구성을 모두 변경하려면 **모든 구성**을 선택합니다.
+1. **서비스 구성** 목록에서 편집할 서비스 구성의 이름을 선택합니다. 이 역할에 대한 서비스 구성을 모두 변경하려면 **모든 구성** 을 선택합니다.
 
     > [!IMPORTANT]
-    > 특정 서비스 구성을 선택하면 일부 속성은 모든 구성에 대해서만 설정 가능하므로 비활성화됩니다. 이러한 속성을 편집하려면 **모든 구성**을 선택해야 합니다.
+    > 특정 서비스 구성을 선택하면 일부 속성은 모든 구성에 대해서만 설정 가능하므로 비활성화됩니다. 이러한 속성을 편집하려면 **모든 구성** 을 선택해야 합니다.
 
     ![Azure 클라우드 서비스에 대한 서비스 구성 목록](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -56,7 +55,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -66,13 +65,13 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. **서비스 구성** 목록에서 업데이트할 서비스 구성을 선택합니다.
 
-    ![서비스 구성 목록](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
+    ![서비스 구성 목록 1](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. **인스턴스 수** 텍스트 상자에서 이 역할에 대해 시작하려는 인스턴스 수를 입력합니다. Azure에 클라우드 서비스를 게시할 때 각 인스턴스는 별도의 가상 머신에서 실행됩니다.
 
     ![인스턴스 수 업데이트](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택 합니다.
+1. Visual Studio의 도구 모음에서 **저장** 을 선택 합니다.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>스토리지 계정에 대한 연결 문자열 관리
 서비스 구성에 대한 연결 문자열을 추가, 제거 또는 수정할 수 있습니다. 예를 들어, `UseDevelopmentStorage=true`값이 있는 로컬 서비스 구성에 대해 로컬 연결 문자열이 필요할 수 있습니다. 또한 Azure에서 스토리지 계정을 사용하는 클라우드 서비스 구성을 구성하려고 할 수도 있습니다.
@@ -86,7 +85,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -98,7 +97,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![서비스 구성](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. 연결 문자열을 추가하려면 **설정 추가**를 선택합니다.
+1. 연결 문자열을 추가하려면 **설정 추가** 를 선택합니다.
 
     ![연결 문자열 추가](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -107,18 +106,18 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
     ![새 연결 문자열](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
     - **이름** - 연결 문자열에 사용할 이름을 입력합니다.
-    - **형식** - 드롭다운 목록에서 **연결 문자열**을 선택합니다.
+    - **형식** - 드롭다운 목록에서 **연결 문자열** 을 선택합니다.
     - **값** - **값** 셀에 연결 문자열을 직접 입력하거나 **스토리지 연결 문자열 만들기** 대화 상자에서 줄임표(...)를 선택하여 작업할 수 있습니다.
 
 1. **스토리지 연결 문자열 만들기** 대화 상자에서 **다음을 사용하여 연결** 옵션을 선택합니다. 그런 다음 선택한 옵션에 대한 지침을 따릅니다.
 
-    - **Microsoft Azure Storage 에뮬레이터** -이 옵션을 선택 하는 경우 Azure에만 적용 되므로 대화 상자의 나머지 설정은 사용할 수 없습니다. **확인**을 선택합니다.
-    - **구독** - 이 옵션을 선택하면 드롭다운 목록을 사용하여 Microsoft 계정을 선택하고 로그인하거나 Microsoft 계정을 추가합니다. Azure 구독 및 스토리지 계정을 선택합니다. **확인**을 선택합니다.
-    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 에 대 한 옵션을 선택 합니다. 대부분의 시나리오에는 HTTPS를 권장 합니다. **확인을**선택 합니다.
+    - **Microsoft Azure Storage 에뮬레이터** -이 옵션을 선택 하는 경우 Azure에만 적용 되므로 대화 상자의 나머지 설정은 사용할 수 없습니다. **확인** 을 선택합니다.
+    - **구독** - 이 옵션을 선택하면 드롭다운 목록을 사용하여 Microsoft 계정을 선택하고 로그인하거나 Microsoft 계정을 추가합니다. Azure 구독 및 스토리지 계정을 선택합니다. **확인** 을 선택합니다.
+    - **수동으로 입력한 자격 증명** - 스토리지 계정 이름과 기본 또는 보조 키를 입력합니다. **연결** 에 대 한 옵션을 선택 합니다. 대부분의 시나리오에는 HTTPS를 권장 합니다. **확인을** 선택 합니다.
 
-1. 연결 문자열을 삭제하려면 연결 문자열을 선택한 다음 **설정 제거**를 선택합니다.
+1. 연결 문자열을 삭제하려면 연결 문자열을 선택한 다음 **설정 제거** 를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택 합니다.
+1. Visual Studio의 도구 모음에서 **저장** 을 선택 합니다.
 
 ## <a name="programmatically-access-a-connection-string"></a>프로그래밍 방식으로 연결 문자열 액세스
 
@@ -148,7 +147,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -158,9 +157,9 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. **서비스 구성** 목록에서 업데이트할 서비스 구성을 선택합니다.
 
-    ![서비스 구성 목록](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![서비스 구성 목록 2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. 사용자 지정 설정을 추가하려면 **설정 추가**를 선택합니다.
+1. 사용자 지정 설정을 추가하려면 **설정 추가** 를 선택합니다.
 
     ![사용자 지정 설정 추가](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -169,12 +168,12 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
     ![새 사용자 지정 설정](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
     - **이름** - 설정 이름을 입력합니다.
-    - **형식** - 드롭다운 목록에서 **문자열**을 선택합니다.
+    - **형식** - 드롭다운 목록에서 **문자열** 을 선택합니다.
     - **값** - 설정 값을 입력합니다. 값을 **값** 셀에 값을 직접 입력하거나 줄임표(...)를 선택하여 **문자열 편집** 대화 상자에서 값을 입력할 수 있습니다.
 
-1. 사용자 지정 설정을 삭제하려면 설정을 선택한 다음 **설정 제거**를 선택합니다.
+1. 사용자 지정 설정을 삭제하려면 설정을 선택한 다음 **설정 제거** 를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택 합니다.
+1. Visual Studio의 도구 모음에서 **저장** 을 선택 합니다.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>프로그래밍 방식으로 사용자 지정 설정 값 액세스
 
@@ -199,7 +198,7 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
 1. Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만들거나 엽니다.
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 확장 합니다. **역할** 노드에서 업데이트하려는 역할을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
     ![솔루션 탐색기 - Azure 역할의 상황에 맞는 메뉴](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -207,11 +206,11 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
 
     ![로컬 스토리지 탭](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. **서비스 구성** 목록에서 모든 서비스 구성에 로컬 스토리지 설정이 적용되므로 **모든 구성**이 선택되어 있는지 확인합니다. 다른 값을 지정하면 페이지의 모든 입력 필드가 비활성화됩니다.
+1. **서비스 구성** 목록에서 모든 서비스 구성에 로컬 스토리지 설정이 적용되므로 **모든 구성** 이 선택되어 있는지 확인합니다. 다른 값을 지정하면 페이지의 모든 입력 필드가 비활성화됩니다.
 
-    ![서비스 구성 목록](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![서비스 구성 목록 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
-1. 로컬 스토리지 항목을 추가하려면 **로컬 스토리지 추가**를 선택합니다.
+1. 로컬 스토리지 항목을 추가하려면 **로컬 스토리지 추가** 를 선택합니다.
 
     ![로컬 스토리지 추가](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-add-local-storage.png)
 
@@ -223,9 +222,9 @@ Visual Studio에서 Azure 클라우드 서비스를 만들 때 두 개의 서비
     - **크기(MB)** - 새 로컬 스토리지에 필요한 크기(MB)를 입력합니다.
     - **역할 재생에서 정리** - 이 옵션을 선택하면 역할에 대한 가상 머신을 재활용할 때 새 로컬 스토리지의 데이터를 제거합니다.
 
-1. 로컬 스토리지 항목을 삭제하려면 해당 항목을 선택한 다음 **로컬 스토리지 제거**를 선택합니다.
+1. 로컬 스토리지 항목을 삭제하려면 해당 항목을 선택한 다음 **로컬 스토리지 제거** 를 선택합니다.
 
-1. Visual Studio의 도구 모음에서 **저장**을 선택 합니다.
+1. Visual Studio의 도구 모음에서 **저장** 을 선택 합니다.
 
 ## <a name="programmatically-accessing-local-storage"></a>프로그래밍 방식으로 로컬 스토리지 액세스
 
@@ -254,7 +253,7 @@ using (FileStream writeStream = File.Create(filePath))
 
 이전 섹션의 코드로 만든 파일을 보려면 다음 단계를 수행합니다.
 
-1. Windows 알림 영역에서 Azure 아이콘을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **컴퓨팅 에뮬레이터 UI 표시**를 선택합니다.
+1. Windows 알림 영역에서 Azure 아이콘을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **컴퓨팅 에뮬레이터 UI 표시** 를 선택합니다.
 
     ![Azure 컴퓨팅 에뮬레이터 표시](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
@@ -262,7 +261,7 @@ using (FileStream writeStream = File.Create(filePath))
 
     ![Azure 컴퓨팅 에뮬레이터](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. **Microsoft Azure Compute 에뮬레이터** 메뉴에서 **도구** > **로컬 저장소 열기**를 선택합니다.
+1. **Microsoft Azure Compute 에뮬레이터** 메뉴에서 **도구** > **로컬 저장소 열기** 를 선택합니다.
 
     ![로컬 저장소 메뉴 항목 열기](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 

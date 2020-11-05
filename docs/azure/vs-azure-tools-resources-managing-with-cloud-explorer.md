@@ -4,17 +4,16 @@ description: 클라우드 탐색기를 사용하여 Visual Studio 내에서 Azur
 author: ghogen
 manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800387"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399392"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
 
@@ -24,45 +23,45 @@ ms.locfileid: "88800387"
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-* **Azure 워크로드**가 선택된 Visual Studio 2017 이상([Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
+* **Azure 워크로드** 가 선택된 Visual Studio 2017 이상( [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)하거나 [Visual Studio 구독자 혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)할 수 있습니다.
 
 > [!NOTE]
-> 클라우드 탐색기를 보려면 **Ctrl** + **Q** 를 눌러 검색 상자를 활성화 한 다음 **클라우드 탐색기**을 입력 합니다.
+> 클라우드 탐색기를 보려면 **Ctrl** + **Q** 를 눌러 검색 상자를 활성화 한 다음 **클라우드 탐색기** 을 입력 합니다.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>클라우드 탐색기에 Azure 계정 추가
 
-Azure 계정과 연결 된 리소스를 보려면 먼저 **클라우드 탐색기**에 계정을 추가 해야 합니다.
+Azure 계정과 연결 된 리소스를 보려면 먼저 **클라우드 탐색기** 에 계정을 추가 해야 합니다.
 
-1. **클라우드 탐색기**에서 **계정 관리** 단추를 선택 합니다.
+1. **클라우드 탐색기** 에서 **계정 관리** 단추를 선택 합니다.
 
    ![클라우드 탐색기 Azure 계정 설정 아이콘](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. **계정 관리**를 선택합니다.
+1. **계정 관리** 를 선택합니다.
 
    ![클라우드 탐색기 계정 추가 링크](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
 1. 해당 리소스를 검색하려는 Azure 계정에 로그인합니다.
 
-1. Azure 계정에 로그인하면 해당 계정과 연결된 구독이 표시됩니다. 탐색할 계정 구독에 대한 확인란을 선택한 다음 **적용**을 선택합니다.
+1. Azure 계정에 로그인하면 해당 계정과 연결된 구독이 표시됩니다. 탐색할 계정 구독에 대한 확인란을 선택한 다음 **적용** 을 선택합니다.
 
    ![클라우드 탐색기: 표시할 Azure 구독 선택](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. 검색 하려는 리소스를 포함 하는 구독을 선택 하면 해당 구독과 리소스가 **클라우드 탐색기**표시 됩니다.
+1. 검색 하려는 리소스를 포함 하는 구독을 선택 하면 해당 구독과 리소스가 **클라우드 탐색기** 표시 됩니다.
 
    ![Azure 계정에 대한 클라우드 탐색기 리소스 목록](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>클라우드 탐색기에서 Azure 계정 제거
 
-1. **클라우드 탐색기**에서 **계정 관리**를 선택합니다.
+1. **클라우드 탐색기** 에서 **계정 관리** 를 선택합니다.
 
-   ![클라우드 탐색기 Azure 계정 설정 아이콘](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Azure 계정 설정](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. 제거할 계정 옆에 있는 **계정 관리**를 선택합니다.
+1. 제거할 계정 옆에 있는 **계정 관리** 를 선택합니다.
 
-   ![클라우드 탐색기 Azure 계정 설정 아이콘](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
+   ![계정 제거](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
 
-1. **제거**를 선택하여 계정을 제거합니다.
+1. **제거** 를 선택하여 계정을 제거합니다.
 
     ![클라우드 탐색기 계정 관리 대화 상자](./media/vs-azure-tools-resources-managing-with-cloud-explorer/accountmanage.PNG)
 
@@ -70,7 +69,7 @@ Azure 계정과 연결 된 리소스를 보려면 먼저 **클라우드 탐색�
 
 Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** 보기를 선택할 수 있습니다.
 
-1. **클라우드 탐색기**에서 리소스 보기 드롭다운을 선택합니다.
+1. **클라우드 탐색기** 에서 리소스 보기 드롭다운을 선택합니다.
 
    ![원하는 리소스 보기를 선택하기 위한 클라우드 탐색기 드롭다운 목록](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
@@ -85,7 +84,7 @@ Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** �
 
 ## <a name="view-and-navigate-resources-in-cloud-explorer"></a>클라우드 탐색기에서 리소스 보기 및 탐색
 
-클라우드 탐색기에서 Azure 리소스를 탐색하고 정보를 보려면, 항목의 형식 또는 연결된 리소스 그룹을 확장한 다음 리소스를 선택합니다. 리소스를 선택하면 클라우드 탐색기의 아래쪽의 두 탭, 즉 **작업** 및 **속성**에 정보가 나타납니다.
+클라우드 탐색기에서 Azure 리소스를 탐색하고 정보를 보려면, 항목의 형식 또는 연결된 리소스 그룹을 확장한 다음 리소스를 선택합니다. 리소스를 선택하면 클라우드 탐색기의 아래쪽의 두 탭, 즉 **작업** 및 **속성** 에 정보가 나타납니다.
 
 * **작업** 탭 - 선택한 리소스에 대해 클라우드 탐색기에서 수행할 수 있는 동작을 표시합니다. 또한 리소스를 클릭하여 상황에 맞는 메뉴에서 이러한 옵션을 볼 수도 있습니다.
 
@@ -95,13 +94,13 @@ Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** �
 
   ![클라우드 탐색기 스크린샷](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-모든 리소스에는 **포털에서 열기**작업이 있습니다. 이 작업을 선택하면 클라우드 탐색기는 [Azure 포털](https://portal.azure.com)에서 선택한 리소스를 표시합니다. **포털에서 열기** 기능은 여러 층으로 중첩된 리소스를 탐색하기에 더욱 간편합니다.
+모든 리소스에는 **포털에서 열기** 작업이 있습니다. 이 작업을 선택하면 클라우드 탐색기는 [Azure 포털](https://portal.azure.com)에서 선택한 리소스를 표시합니다. **포털에서 열기** 기능은 여러 층으로 중첩된 리소스를 탐색하기에 더욱 간편합니다.
 
 추가 작업 및 속성 값은 Azure 리소스에 따라 다르게 나타날 수도 있습니다. 예를 들어 웹앱 및 논리 앱에는 **포털에서 열기** 외에 **브라우저에서 열기** 및 **디버거 연결** 작업도 있습니다. 스토리지 계정 blob, 큐 또는 테이블을 선택하면 편집기를 열려는 작업이 나타납니다. Azure 앱에는 **URL** 및 **상태** 속성이 있으며, 스토리지 리소스에는 키와 연결 문자열 속성이 있습니다.
 
 ## <a name="find-resources-in-cloud-explorer"></a>클라우드 탐색기에서 리소스 찾기
 
-Azure 계정 구독에서 특정 이름의 리소스를 찾으려면 **클라우드 탐색기**의 **검색** 상자에 이름을 입력 합니다.
+Azure 계정 구독에서 특정 이름의 리소스를 찾으려면 **클라우드 탐색기** 의 **검색** 상자에 이름을 입력 합니다.
 
   ![클라우드 탐색기에서 리소스 찾기](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 

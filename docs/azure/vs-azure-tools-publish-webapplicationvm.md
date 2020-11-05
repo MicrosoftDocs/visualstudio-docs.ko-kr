@@ -4,17 +4,16 @@ description: 가상 머신에 웹 애플리케이션을 배포하는 방법을 �
 author: ghogen
 manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: dc8c6083cb0abdcbd8bcd51de717a383cabb5068
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508420"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398568"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell 스크립트)
 가상 머신에 웹 애플리케이션을 배포합니다. 없는 경우 스크립트는 Azure 구독에 필요한 리소스를 만듭니다.

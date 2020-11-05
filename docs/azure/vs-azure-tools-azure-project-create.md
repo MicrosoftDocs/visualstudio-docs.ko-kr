@@ -4,17 +4,16 @@ description: Visual Studio에서 Azure 클라우드 서비스 프로젝트를 �
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280377"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399756"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트 만들기
 
@@ -26,9 +25,9 @@ Visual Studio는 간단한 범용 Azure 서비스인 [azure 클라우드 서비�
 ::: moniker range="vs-2017"
 1. 관리자 권한으로 Visual Studio를 엽니다.
 
-1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. Visual C# 또는 Visual Basic 프로젝트 템플릿 노드에서 **클라우드**를 선택한 다음 템플릿 목록에서 **Azure 클라우드 서비스**를 선택합니다.
+1. Visual C# 또는 Visual Basic 프로젝트 템플릿 노드에서 **클라우드** 를 선택한 다음 템플릿 목록에서 **Azure 클라우드 서비스** 를 선택합니다.
 
     ![새 Azure 클라우드 서비스](./media/vs-azure-tools-azure-project-create/new-project-wizard-for-cloud-service.png)
 
@@ -36,16 +35,16 @@ Visual Studio는 간단한 범용 Azure 서비스인 [azure 클라우드 서비�
 
 1. 프로젝트에 대한 이름과 위치 및 솔루션에 대한 이름을 입력합니다.
 
-1. **확인**을 선택합니다.
+1. **확인** 을 선택합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
-1. 검색 상자에 *클라우드*를 입력한 다음, **Azure 클라우드 서비스**를 선택합니다.
+1. 검색 상자에 *클라우드* 를 입력한 다음, **Azure 클라우드 서비스** 를 선택합니다.
 
    ![새 Azure 클라우드 서비스](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
 
-1. 프로젝트 이름을 지정하고 **만들기**를 선택합니다.
+1. 프로젝트 이름을 지정하고 **만들기** 를 선택합니다.
 
    ![프로젝트 이름 지정](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
 ::: moniker-end
@@ -54,11 +53,11 @@ Visual Studio는 간단한 범용 Azure 서비스인 [azure 클라우드 서비�
 
     ![새 Azure 클라우드 서비스 역할 선택](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. 추가한 역할의 이름을 바꾸려면 **새 Microsoft Azure 클라우드 서비스** 대화 상자에서 역할 위에 마우스를 놓고 상황에 맞는 메뉴에서 **이름 바꾸기**를 선택합니다. 역할을 추가한 후 솔루션 내에서(**솔루션 탐색기**에서) 역할의 이름을 바꿀 수도 있습니다.
+1. 추가한 역할의 이름을 바꾸려면 **새 Microsoft Azure 클라우드 서비스** 대화 상자에서 역할 위에 마우스를 놓고 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택합니다. 역할을 추가한 후 솔루션 내에서( **솔루션 탐색기** 에서) 역할의 이름을 바꿀 수도 있습니다.
 
     ![Azure 클라우드 서비스 역할 이름 바꾸기](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 
-Visual Studio Azure 프로젝트에는 솔루션의 역할 프로젝트에 대한 연결이 있습니다. 또한 *서비스 정의 파일* 및 *서비스 구성 파일*도 포함됩니다.
+Visual Studio Azure 프로젝트에는 솔루션의 역할 프로젝트에 대한 연결이 있습니다. 또한 *서비스 정의 파일* 및 *서비스 구성 파일* 도 포함됩니다.
 
 - **서비스 정의 파일** -필요한 역할, 끝점 및 가상 컴퓨터 크기를 포함 하 여 응용 프로그램에 대 한 런타임 설정을 정의 합니다.
 - **서비스 구성 파일** - 얼마나 많은 역할의 인스턴스가 실행되는지와 역할에 대해 정의된 설정의 값을 구성합니다.

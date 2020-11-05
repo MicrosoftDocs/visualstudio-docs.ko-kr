@@ -3,18 +3,17 @@ title: Azure SQL Database에 대 한 연결 추가 | Microsoft Docs
 description: Visual Studio를 사용 하 여 앱에 Azure SQL Database 연결을 추가 연결된 서비스
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643248"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399049"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Azure SQL Database에 대 한 연결 추가
 
@@ -33,7 +32,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 연결된 서비스 기능은 필요한 모든 참조와 연결 코드를 프로젝트에 추가하고 구성 파일을 적절하게 수정합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
 ## <a name="prerequisites"></a>필수 구성 요소
 
 - Azure 워크 로드가 설치 된 Visual Studio
@@ -41,21 +40,21 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
 ## <a name="connect-to-azure-sql-database-using-connected-services"></a>연결된 서비스를 사용 하 여 Azure SQL Database에 연결
 
-1. Visual Studio에서 프로젝트를 엽니다.
+1. Visual Studio에서 새 프로젝트를 엽니다.
 
-1. **솔루션 탐색기**에서 **연결된 서비스** 노드를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **연결 된 서비스 추가**를 선택 합니다.
+1. **솔루션 탐색기** 에서 **연결된 서비스** 노드를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **연결 된 서비스 추가** 를 선택 합니다.
 
-1. **연결된 서비스** 탭에서 **서비스 종속성**에 대 한 + 아이콘을 선택 합니다.
+1. **연결된 서비스** 탭에서 **서비스 종속성** 에 대 한 + 아이콘을 선택 합니다.
 
     ![서비스 종속성 추가](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. **종속성 추가** 페이지에서 **Azure SQL Database**를 선택 합니다.
+1. **종속성 추가** 페이지에서 **Azure SQL Database** 를 선택 합니다.
 
     ![Azure SQL Database 서비스 추가](./media/azure-sql-database-add-connected-service/azure-sql-database.png)
 
     아직 로그인 하지 않은 경우 Azure 계정에 로그인 합니다. Azure 계정이 없으면 [무료 평가판](https://azure.microsoft.com/account/free)에 등록할 수 있습니다.
 
-1. **Azure SQL Database 구성** 화면에서 기존 Azure SQL Database를 선택 하 고 **다음**을 선택 합니다.
+1. **Azure SQL Database 구성** 화면에서 기존 Azure SQL Database를 선택 하 고 **다음** 을 선택 합니다.
 
     새 구성 요소를 만들어야 하는 경우 다음 단계로 이동 합니다. 그러지 않은 경우 7단계로 건너뜁니다.
 
@@ -65,21 +64,21 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
    1. 화면 맨 아래에서 **SQL Database 만들기를** 선택 합니다.
 
-   1. **새 화면 만들기 Azure SQL Database** 를 입력 하 고 **만들기**를 선택 합니다.
+   1. **새 화면 만들기 Azure SQL Database** 를 입력 하 고 **만들기** 를 선택 합니다.
 
        ![새 Azure SQL Database](./media/azure-sql-database-add-connected-service/create-new-azure-sql-database.png)
 
-   1. **Azure SQL Database 구성** 화면이 표시 되 면 목록에 새 데이터베이스가 표시 됩니다. 목록에서 새 데이터베이스를 선택 하 고 **다음**을 선택 합니다.
+   1. **Azure SQL Database 구성** 화면이 표시 되 면 목록에 새 데이터베이스가 표시 됩니다. 목록에서 새 데이터베이스를 선택 하 고 **다음** 을 선택 합니다.
 
 1. 연결 문자열 이름을 입력 하거나 기본값을 선택 하 고 연결 문자열을 로컬 비밀 파일에 저장할지, 아니면 [Azure Key Vault](/azure/key-vault)에 저장할지를 선택 합니다.
 
    ![연결 문자열 지정](./media/azure-sql-database-add-connected-service/connection-string.png)
 
-1. **변경 내용 요약** 화면에는 프로세스를 완료 한 경우 프로젝트에 적용 되는 모든 수정 사항이 표시 됩니다. 변경 내용이 양호 하면 **마침**을 선택 합니다.
+1. **변경 내용 요약** 화면에는 프로세스를 완료 한 경우 프로젝트에 적용 되는 모든 수정 사항이 표시 됩니다. 변경 내용이 양호 하면 **마침** 을 선택 합니다.
 
    ![변경 내용 요약](./media/azure-sql-database-add-connected-service/summary-of-changes.png)
 
-   방화벽 규칙을 설정 하 라는 메시지가 표시 되 면 **예**를 선택 합니다.
+   방화벽 규칙을 설정 하 라는 메시지가 표시 되 면 **예** 를 선택 합니다.
 
    ![방화벽 규칙](./media/azure-sql-database-add-connected-service/firewall-rules.png)
 
@@ -87,7 +86,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
    ![서비스 종속성](./media/azure-sql-database-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Azure SQL Database 제품 페이지](https://azure.microsoft.com/services/sql-database/)
 - [Azure SQL Database 설명서](/azure/azure-sql/database/)

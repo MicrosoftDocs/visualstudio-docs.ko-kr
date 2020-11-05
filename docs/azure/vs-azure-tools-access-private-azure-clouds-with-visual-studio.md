@@ -4,17 +4,16 @@ description: Visual Studio를 사용하여 프라이빗 클라우드 리소스�
 author: ghogen
 manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280390"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398737"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Visual Studio로 프라이빗 Azure 클라우드에 액세스
 
@@ -22,23 +21,23 @@ ms.locfileid: "85280390"
 
 1. 프라이빗 클라우드에 대한 Azure Portal에서 게시 설정 파일을 다운로드하거나 게시 설정 파일에 대해 관리자에게 문의합니다. 파일 확장명은 `.publishsettings`입니다.
 
-1. Visual Studio **서버 탐색기**에서 **Azure** 노드를 마우스 오른쪽 단추로 클릭하고 **구독 관리 및 필터링**을 선택합니다.
+1. Visual Studio **서버 탐색기** 에서 **Azure** 노드를 마우스 오른쪽 단추로 클릭하고 **구독 관리 및 필터링** 을 선택합니다.
 
     ![구독 명령 관리](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. **Microsoft Azure 구독 관리** 대화 상자에서 **인증서** 탭을 선택한 다음 **가져오기**를 선택합니다.
+1. **Microsoft Azure 구독 관리** 대화 상자에서 **인증서** 탭을 선택한 다음 **가져오기** 를 선택합니다.
 
     ![Azure 인증서 가져오기](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. **Microsoft Azure 구독 가져오기** 대화 상자에서 **찾아보기**를 선택합니다.
+1. **Microsoft Azure 구독 가져오기** 대화 상자에서 **찾아보기** 를 선택합니다.
 
     ![Microsoft Azure 구독 가져오기 대화 상자의 찾아보기 단추](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. **열기** 대화 상자에서 게시 설정 파일을 저장한 디렉터리로 이동하여 파일을 선택한 다음 **열기**를 선택합니다.
+1. **열기** 대화 상자에서 게시 설정 파일을 저장한 디렉터리로 이동하여 파일을 선택한 다음 **열기** 를 선택합니다.
 
     ![게시 설정 파일 선택](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. **Microsoft Azure 구독 가져오기** 대화 상자로 돌아가면 **찾아보기**를 선택합니다.
+1. **Microsoft Azure 구독 가져오기** 대화 상자로 돌아가면 **찾아보기** 를 선택합니다.
 
     ![게시 설정 파일 가져오기](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 클라우드 서비스로 웹 응용 프로그램 마이그레이션 및 게시
 description: Visual Studio를 사용하여 Azure 클라우드 서비스로 웹 애플리케이션을 마이그레이션 및 게시하는 방법에 대해 알아보세요.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036537"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399821"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>방법: Visual Studio에서 Azure 클라우드 서비스로 웹 응용 프로그램 마이그레이션 및 게시
 
@@ -43,8 +43,8 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 
 ### <a name="test-the-migration-locally"></a>로컬로 마이그레이션 테스트
 
-1. Visual Studio **솔루션 탐색기**에서 추가된 클라우드 서비스 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 클릭합니다.
-1. **디버그 > 디버깅 시작**(F5)을 선택하여 Azure 디버깅 환경을 시작합니다. 이 환경은 다양한 Azure 서비스 에뮬레이션을 제공합니다.
+1. Visual Studio **솔루션 탐색기** 에서 추가된 클라우드 서비스 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정** 을 클릭합니다.
+1. **디버그 > 디버깅 시작** (F5)을 선택하여 Azure 디버깅 환경을 시작합니다. 이 환경은 다양한 Azure 서비스 에뮬레이션을 제공합니다.
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>애플리케이션에 Azure SQL Database 사용
 
@@ -56,30 +56,30 @@ Azure의 호스팅 서비스와 확장 기능을 활용하기 위해 웹 애플�
 ## <a name="publish-the-application-to-azure-cloud-service"></a>애플리케이션을 Azure Cloud Service에 게시
 
 1. [Visual Studio에서 Azure 애플리케이션 게시 또는 배포 준비](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)의 설명에 따라 Azure 구독에서 필요한 클라우드 서비스 및 스토리지 계정을 만듭니다.
-1. Visual Studio에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Microsoft Azure에 게시... **("게시…" 명령과 다름)를 선택합니다.
-1. 나타나는 **Azure 애플리케이션 게시**에서, 계정을 사용하여 Azure 구독에 로그인하고 **다음 &gt;** 을 선택합니다.
+1. Visual Studio에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Microsoft Azure에 게시...** ("게시…" 명령과 다름)를 선택합니다.
+1. 나타나는 **Azure 애플리케이션 게시** 에서, 계정을 사용하여 Azure 구독에 로그인하고 **다음 &gt;** 을 선택합니다.
 1. 선택한 환경 및 구성에 맞는 대상 클라우드 서비스를 **설정 > 일반 설정** 탭의 **클라우드 서비스** 드롭다운 목록에서 선택합니다.
-1. **설정 &gt; 고급 설정**에서 사용할 스토리지 계정을 선택하고 **다음 &gt;** 을 선택합니다.
-1. **진단**에서 Application Insights에 정보를 보낼 것인지 선택합니다.
-1. **다음 >** 을 선택하여 요약 정보를 살펴본 후 **게시**를 선택하여 배포를 시작합니다.
+1. **설정 &gt; 고급 설정** 에서 사용할 스토리지 계정을 선택하고 **다음 &gt;** 을 선택합니다.
+1. **진단** 에서 Application Insights에 정보를 보낼 것인지 선택합니다.
+1. **다음 >** 을 선택하여 요약 정보를 살펴본 후 **게시** 를 선택하여 배포를 시작합니다.
 1. Visual Studio에서 진행률을 추적할 수 있는 활동 로그 창이 열립니다.
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
 
-1. (선택 사항) 배포 프로세스를 취소하려면 활동 로그에서 개별 항목을 마우스 오른쪽 단추로 클릭하고 **취소한 후 제거**를 선택합니다. 이 명령은 배포 프로세스를 중지하고 Azure에서 배포 환경을 삭제합니다. 참고: 이 배포 환경을 배포한 후 제거하려면 [Azure Portal](https://portal.azure.com)을 사용해야 합니다.
+1. (선택 사항) 배포 프로세스를 취소하려면 활동 로그에서 개별 항목을 마우스 오른쪽 단추로 클릭하고 **취소한 후 제거** 를 선택합니다. 이 명령은 배포 프로세스를 중지하고 Azure에서 배포 환경을 삭제합니다. 참고: 이 배포 환경을 배포한 후 제거하려면 [Azure Portal](https://portal.azure.com)을 사용해야 합니다.
 1. (선택 사항) 역할 인스턴스가 시작되면 Visual Studio의 **서버 탐색기 > Cloud Services** 노드에 자동으로 배포 환경이 표시됩니다. 여기에서 개별 역할 인스턴스의 상태를 볼 수 있습니다.
-1. 배포 후 애플리케이션에 액세스하려면 **Azure 활동 로그**에 URL과 함께 **완료됨** 상태가 나타날 때 배포 옆의 화살표를 선택합니다. Azure에서 특정 유형의 웹 애플리케이션을 시작하는 방법은 다음 표를 참조하세요.
+1. 배포 후 애플리케이션에 액세스하려면 **Azure 활동 로그** 에 URL과 함께 **완료됨** 상태가 나타날 때 배포 옆의 화살표를 선택합니다. Azure에서 특정 유형의 웹 애플리케이션을 시작하는 방법은 다음 표를 참조하세요.
 
 ## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>컴퓨팅 에뮬레이터를 사용하여 Azure에서 애플리케이션 시작
 
-모든 종류의 애플리케이션은 **디버그 &gt; 디버깅 시작**(F5)을 선택하여 Visual Studio 디버거에 연결된 브라우저에서 시작할 수 있습니다. ASP.NET 빈 웹 애플리케이션 프로젝트를 사용하는 경우 먼저 애플리케이션에 `.aspx` 페이지를 추가하고 웹 프로젝트의 시작 페이지로 설정해야 합니다.
+모든 종류의 애플리케이션은 **디버그 &gt; 디버깅 시작** (F5)을 선택하여 Visual Studio 디버거에 연결된 브라우저에서 시작할 수 있습니다. ASP.NET 빈 웹 애플리케이션 프로젝트를 사용하는 경우 먼저 애플리케이션에 `.aspx` 페이지를 추가하고 웹 프로젝트의 시작 페이지로 설정해야 합니다.
 
 다음 표에는 Azure에서 애플리케이션을 시작하는 방법이 자세히 설명되어 있습니다.
 
 | 웹 애플리케이션 유형 | Azure에서 실행 |
 | --- | --- |
-| ASP.NET 웹 애플리케이션<br/>(MVC 2, MVC 3, MVC 4 포함) | **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. |
-| ASP.NET 빈 웹 애플리케이션 | 애플리케이션에 기본 `.aspx` 페이지가 있는 경우 **Azure 활동 로그**의 **배포** 탭에서 URL을 선택합니다. 다른 페이지로 이동하려면 브라우저에서 `<deployment_url>/<page_name>.aspx` 양식의 URL을 입력합니다. |
+| ASP.NET 웹 애플리케이션<br/>(MVC 2, MVC 3, MVC 4 포함) | **Azure 활동 로그** 의 **배포** 탭에서 URL을 선택합니다. |
+| ASP.NET 빈 웹 애플리케이션 | 애플리케이션에 기본 `.aspx` 페이지가 있는 경우 **Azure 활동 로그** 의 **배포** 탭에서 URL을 선택합니다. 다른 페이지로 이동하려면 브라우저에서 `<deployment_url>/<page_name>.aspx` 양식의 URL을 입력합니다. |
 | WCF 서비스 애플리케이션<br/>WCF 워크플로 서비스 애플리케이션 | `.svc` 파일을 WCF 서비스 프로젝트의 시작 페이지로 설정합니다. 그런 다음 `<deployment_url>/<service_file>.svc`로 이동합니다. |
 | ASP.NET 동적 엔터티<br/>SQL에 대한 ASP.NET Dynamic Data Linq | 다음 섹션의 설명에 따라 연결 문자열을 업데이트합니다. 그런 다음 `<deployment_url>/<page_name>.aspx`로 이동합니다. Linq to SQL의 경우 Azure SQL 데이터베이스를 사용해야 합니다. |
 
