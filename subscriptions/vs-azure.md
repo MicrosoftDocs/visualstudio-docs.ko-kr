@@ -1,18 +1,18 @@
 ---
-title: Microsoft Azure 혜택 | Microsoft Docs
+title: Visual Studio 구독의 Microsoft Azure 혜택 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353098"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903646"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -48,7 +48,7 @@ Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스�
 > [!IMPORTANT]
 > 현재 Azure 구독이 사용할 수 없게 되거나 데이터에 액세스할 수 없게 되기 전에 리소스를 다른 Azure 구독으로 이전해야 합니다.  
 
-Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
+Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하려면 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
 
 - **Visual Studio 구독을 직접 구매하는 경우** Microsoft Store를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
