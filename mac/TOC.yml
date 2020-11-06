@@ -171,19 +171,7 @@
         - name: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
           href: docker-multi-container.md
     - name: Unity 게임 개발
-      items:
-        - name: Unity 게임 개발
-          href: unity-tools.md
-        - name: 설정
-          href: setup-vsmac-tools-unity.md
-        - name: Unity 시작
-          href: unity-walkthrough.md
-        - name: Unity 도구 사용
-          href: using-vsmac-tools-unity.md
-        - name: Unity에서 .NET 4.x 사용
-          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
-        - name: 변경 로그
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Xamarin을 사용한 모바일 앱
       href: ./xamarin.md
 - name: 액세스 가능성

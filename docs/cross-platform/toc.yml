@@ -6,31 +6,31 @@
 - name: Visual Studio Tools for Unity
   items:
     - name: Visual Studio Tools for Unity
-      href: visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 시작
-      href: getting-started-with-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 사용
-      href: using-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
     - name: Unity에서 .NET 4.x 사용
-      href: unity-scripting-upgrade.md
+      href: /gamedev/unity/unity-scripting-upgrade.md
     - name: Visual Studio Tools for Unity 프로그램
       items:
         - name: Visual Studio Tools for Unity 프로그램
-          href: programming-visual-studio-tools-for-unity.md
+          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
         - name: VSTU에서 만든 프로젝트 파일 사용자 지정
-          href: customize-project-files-created-by-vstu.md
+          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
         - name: Unity 로그 콜백을 VSTU와 공유
-          href: share-the-unity-log-callback-with-vstu.md
+          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
     - name: Unity 및 Azure로 프로그램
-      href: visual-studio-tools-for-unity-azure.md
+      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
     - name: 문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
-      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
     - name: '변경 로그(Visual Studio Tools for Unity, Windows)'
-      href: change-log-visual-studio-tools-for-unity.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
     - name: '변경 로그(Visual Studio Tools for Unity, Mac)'
-      href: change-log-visual-studio-tools-for-unity-mac.md
+      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
     - name: Unity 앱을 사용한 DevOps
-      href: application-lifecycle-management-alm-with-unity-apps.md
+      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
 - name: C++를 사용하여 플랫폼 간 모바일 개발
   href: /cpp/cross-platform/
 - name: UWP(유니버설 Windows 플랫폼)용 앱 개발
