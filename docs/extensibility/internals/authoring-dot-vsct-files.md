@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583686"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413914"
 ---
 # <a name="author-vsct-files"></a>. Vsct 파일 작성
 이 문서에서는 Visual Studio IDE (통합 개발 환경)에 메뉴 항목, 도구 모음 및 기타 UI (사용자 인터페이스) 요소를 추가 하기 위해 *vsct* 파일을 작성 하는 방법을 보여 줍니다. VSPackage (Visual Studio 패키지)에 이미 *. vsct* 파일이 없는 UI 요소를 추가할 때 이러한 단계를 사용 합니다.
@@ -51,9 +51,9 @@ ms.locfileid: "91583686"
 
 1. 요소의 맨 위에서 `CommandTable` `Extern` 참조할 각 외부 파일에 대해 하나의 요소를 추가 하 고 `href` 특성을 파일 이름으로 설정 합니다. 다음 헤더 파일을 참조 하 여 Visual Studio 리소스에 액세스할 수 있습니다.
 
-   - *Stdidcmd*: Visual Studio에서 노출 하는 모든 명령의 id를 정의 합니다.
+   - *Stdidcmd* : Visual Studio에서 노출 하는 모든 명령의 id를 정의 합니다.
 
-   - *Vsshlids .h*: Visual Studio 메뉴에 대 한 명령 id를 포함 합니다.
+   - *Vsshlids .h* : Visual Studio 메뉴에 대 한 명령 id를 포함 합니다.
 
 2. 패키지에서 Visual Studio 또는 다른 패키지에 정의 된 명령을 호출 하는 경우 요소 뒤에 요소를 추가 `UsedCommands` `Commands` 합니다. 이 요소를 패키지의 일부가 아닌 호출 하는 각 명령에 대 한 [UsedCommand](../../extensibility/usedcommand-element.md) 요소로 채웁니다. `guid` `id` 요소의 및 특성을 `UsedCommand` 호출할 명령의 GUID 및 ID 값으로 설정 합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "91583686"
 
 #### <a name="to-declare-ui-elements"></a>UI 요소를 선언 하려면
 
-1. 요소에 `Symbols` 세 개의 [GuidSymbol](../../extensibility/guidsymbol-element.md) 요소를 추가 합니다. 각 `GuidSymbol` 요소에는 `name` 특성과 `value` 특성이 있습니다. `name`요소의 용도를 반영 하도록 특성을 설정 합니다. `value`특성은 GUID를 사용 합니다. (GUID를 생성 하려면 **도구** 메뉴에서 **guid 만들기**를 선택 하 고 **레지스트리 형식**을 선택 합니다.)
+1. 요소에 `Symbols` 세 개의 [GuidSymbol](../../extensibility/guidsymbol-element.md) 요소를 추가 합니다. 각 `GuidSymbol` 요소에는 `name` 특성과 `value` 특성이 있습니다. `name`요소의 용도를 반영 하도록 특성을 설정 합니다. `value`특성은 GUID를 사용 합니다. (GUID를 생성 하려면 **도구** 메뉴에서 **guid 만들기** 를 선택 하 고 **레지스트리 형식** 을 선택 합니다.)
 
      첫 번째 `GuidSymbol` 요소는 패키지를 나타내고 일반적으로 자식이 없습니다. 두 번째 `GuidSymbol` 요소는 명령 집합을 나타내며 메뉴, 그룹 및 명령을 정의 하는 모든 기호를 포함 합니다. 세 번째 `GuidSymbol` 요소는 이미지 저장소를 나타내며 명령의 모든 아이콘에 대 한 기호를 포함 합니다. 아이콘을 사용 하는 명령이 없으면 세 번째 요소를 생략할 수 있습니다 `GuidSymbol` .
 
@@ -108,7 +108,7 @@ ms.locfileid: "91583686"
        > [!NOTE]
        > 도구 모음 단추에는 아이콘이 있어야 합니다.
 
-   자세한 내용은 [Menucommands 및 OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)를 참조 하세요.
+   자세한 내용은 [Menucommands 및 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)를 참조 하세요.
 
 4. 명령에 아이콘이 필요한 경우 요소에 [비트맵](../../extensibility/bitmaps-element.md) 요소를 추가 `Commands` 합니다. 그런 다음 각 아이콘에 대해 [비트맵](../../extensibility/bitmap-element.md) 요소를 요소에 추가 `Bitmaps` 합니다. 여기서는 비트맵 리소스의 위치를 지정 합니다. 자세한 내용은 [메뉴 명령에 아이콘 추가](../../extensibility/adding-icons-to-menu-commands.md)를 참조 하세요.
 

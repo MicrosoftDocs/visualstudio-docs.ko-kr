@@ -7,12 +7,12 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 9882497fec78c6560dcb40e636cb8323c1b249b3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049443"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414154"
 ---
 # <a name="visual-studio-2015-documentation"></a>Visual Studio 2015 설명서
 
@@ -28,9 +28,9 @@ ms.locfileid: "93049443"
 
 Visual Studio 2015 IDE에서 F1 도움말 기능을 계속 사용할 수 있습니다. 문제가 발생 하는 경우이 페이지의 맨 아래에 있는 문서 피드백 링크를 사용 하 여 GitHub 리포지토리 문제를 만듭니다.
 
-Visual Studio 2015 문서를 자주 사용 하는 경우 도움말 뷰어를 사용 하 고 해당 버전에 대 한 오프 라인 도움말 설명서를 다운로드 하는 옵션을 탐색 하는 것이 좋습니다. [Microsoft 도움말 뷰어](/visualstudio/help-viewer/overview)를 참조 하십시오.
+Visual Studio 2015 문서를 자주 사용 하는 경우 도움말 뷰어를 사용 하 고 해당 버전에 대 한 오프 라인 도움말 설명서를 다운로드 하는 옵션을 탐색 하는 것이 좋습니다. [Microsoft 도움말 뷰어](./help-viewer/overview.md)를 참조 하십시오.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 이전 버전에 대 한 설명서](/previous-versions/visualstudio/)
 - [Visual Studio 2015 릴리스](/visualstudio/releasenotes/vs2015-version-history)

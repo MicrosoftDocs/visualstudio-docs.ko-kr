@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049215"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414479"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 
@@ -32,7 +32,7 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 |XAML 편집하며 계속하기|XECxxxx| Visual Studio 2019 버전 16.1 이전 |
 |XAML 핫 다시 로드 | XHRxxxx | Visual Studio 2019 버전 16.2 이상 |
 
-Xaml 편집 &의 브랜드에 대 한 자세한 내용은 xaml 핫 다시 로드로 계속 하려면 [릴리스 정보](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) 를 참조 하세요.
+Xaml 편집 &의 브랜드에 대 한 자세한 내용은 xaml 핫 다시 로드로 계속 하려면 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) 를 참조 하세요.
 
 > [!Note]
 > 일부 오류 또는 경고에는 해당 코드가 포함됩니다. 이러한 오류는 일반적으로 XAML 디자이너 오류입니다.

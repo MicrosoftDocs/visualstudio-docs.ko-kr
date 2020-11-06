@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583595"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414024"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 사용자 지정 편집기를 만든 후 추가 기능을 추가할 수 있습니다.
@@ -34,11 +34,11 @@ ms.locfileid: "91583595"
 
 3. 인터페이스를 설정 하 여 편집기 팩터리를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 합니다.
 
-     자세한 내용은 [편집기 팩터리](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true)를 참조 하세요.
+     자세한 내용은 [편집기 팩터리](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015)를 참조 하세요.
 
 4. 편집기에서 내부 활성화 또는 간단한 포함을 사용 하 여 문서 뷰 개체 창을 관리할 지 여부를 결정 합니다.
 
-     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)를 참조 하세요.
+     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)를 참조 하세요.
 
 5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>명령을 처리 하는 인터페이스를 구현 합니다.
 
@@ -69,15 +69,15 @@ ms.locfileid: "91583595"
 
     2. `QueryService`서비스에서 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 를 호출 하 여에 대 한 포인터를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. 사용자가 편집기와 **도구 상자**사이에서 또는 외부 편집기 (예: Microsoft Word)와 **도구 상자**사이에서 항목을 끌어서 놓을 수 있도록 합니다. 다음 단계를 수행합니다.
+9. 사용자가 편집기와 **도구 상자** 사이에서 또는 외부 편집기 (예: Microsoft Word)와 **도구 상자** 사이에서 항목을 끌어서 놓을 수 있도록 합니다. 다음 단계를 수행합니다.
 
     1. 편집기 `IDropTarget` 에서를 구현 하 여 편집기가 놓기 대상 임을 IDE에 알립니다.
 
-    2. 편집기에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> **도구 상자의**항목을 사용 하거나 사용 하지 않도록 설정 하려면 뷰에서 인터페이스를 구현 합니다.
+    2. 편집기에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> **도구 상자의** 항목을 사용 하거나 사용 하지 않도록 설정 하려면 뷰에서 인터페이스를 구현 합니다.
 
     3. 서비스에서를 구현 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> 고를 호출 `QueryService` 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> 및 인터페이스에 대 한 포인터를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> .
 
-         이러한 단계를 통해 VSPackage가 **도구 상자**에 새 항목을 추가할 수 있습니다.
+         이러한 단계를 통해 VSPackage가 **도구 상자** 에 새 항목을 추가할 수 있습니다.
 
 10. 편집기에 대 한 다른 선택적 기능을 사용할지 여부를 결정 합니다.
 
@@ -115,7 +115,7 @@ ms.locfileid: "91583595"
 
 12. 상황에 맞는 도움말 지원을 구현 합니다.
 
-     이 단계에서는 편집기의 항목에 대 한 F1 도움말 및 동적 도움말 창 지원을 제공할 수 있습니다. 자세한 내용은 [방법: 편집기에 대 한 컨텍스트 제공](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true)을 참조 하세요.
+     이 단계에서는 편집기의 항목에 대 한 F1 도움말 및 동적 도움말 창 지원을 제공할 수 있습니다. 자세한 내용은 [방법: 편집기에 대 한 컨텍스트 제공](/previous-versions/visualstudio/visual-studio-2015/extensibility/how-to-provide-context-for-editors?preserve-view=true&view=vs-2015)을 참조 하세요.
 
 13. 인터페이스를 구현 하 여 편집기에서 자동화 개체 모델을 노출 `IDispatch` 합니다.
 
@@ -138,9 +138,9 @@ ms.locfileid: "91583595"
   > [!NOTE]
   > `IOleInPlaceComponent`인터페이스는 OLE 2 메뉴 병합을 방지 하는 데 사용 됩니다.
 
-   `IOleCommandTarget`구현에서는 **잘라내기**, **복사**및 **붙여넣기**와 같은 명령을 처리 합니다. 을 구현 하는 경우 편집기에서 자체의 `IOleCommandTarget` 명령 메뉴 구조를 정의 하거나에서 정의한 표준 명령을 구현할 수 있는지 여부를 결정 *합니다.* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 일반적으로 편집기는 IDE의 메뉴를 사용 및 확장 하 고 자체 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에 고유한 특정 명령을 정의 해야 하는 경우가 종종 있습니다. 편집기에서 사용 하는 표준 명령을 선언 하 고 *vsct* 파일에 새 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음을 정의 해야 합니다. 내부 활성화 편집기를 만드는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 메뉴 병합을 사용 하는 대신 *vsct* 파일에서 편집기의 메뉴 및 도구 모음을 구현 하 고 정의 합니다.
+   `IOleCommandTarget`구현에서는 **잘라내기** , **복사** 및 **붙여넣기** 와 같은 명령을 처리 합니다. 을 구현 하는 경우 편집기에서 자체의 `IOleCommandTarget` 명령 메뉴 구조를 정의 하거나에서 정의한 표준 명령을 구현할 수 있는지 여부를 결정 *합니다.* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 일반적으로 편집기는 IDE의 메뉴를 사용 및 확장 하 고 자체 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에 고유한 특정 명령을 정의 해야 하는 경우가 종종 있습니다. 편집기에서 사용 하는 표준 명령을 선언 하 고 *vsct* 파일에 새 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음을 정의 해야 합니다. 내부 활성화 편집기를 만드는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 메뉴 병합을 사용 하는 대신 *vsct* 파일에서 편집기의 메뉴 및 도구 모음을 구현 하 고 정의 합니다.
 
-- UI에서 메뉴 명령을 crowding 하지 않으려면 새 명령을 고안 전에 IDE에서 기존 명령을 사용 해야 합니다. 공유 명령은 *Sharedcmddef. vsct* 및 *shellcmddef vsct*에 정의 되어 있습니다. 이러한 파일은 기본적으로 설치의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 설치 됩니다 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
+- UI에서 메뉴 명령을 crowding 하지 않으려면 새 명령을 고안 전에 IDE에서 기존 명령을 사용 해야 합니다. 공유 명령은 *Sharedcmddef. vsct* 및 *shellcmddef vsct* 에 정의 되어 있습니다. 이러한 파일은 기본적으로 설치의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 설치 됩니다 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
 
 - `ISelectionContainer` 단일 및 다중 선택을 나타낼 수 있습니다. 선택한 각 개체는 개체로 구현 됩니다 `IDispatch` .
 

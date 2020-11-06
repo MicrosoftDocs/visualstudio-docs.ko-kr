@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dec1cf1e3ec4301b1f219f7345957877ea420528
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585643"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414180"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>사용자 지정 편집기의 구문 색 지정
 핵심 편집기를 비롯 한 Visual Studio 환경 SDK 편집기는 언어 서비스를 사용 하 여 특정 구문 항목을 식별 하 고 지정 된 문서 뷰에 대해 지정 된 색으로 표시 합니다.
@@ -52,7 +52,7 @@ ms.locfileid: "91585643"
 3. 에서 반환 되는 색 지정 정보를 사용 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 하 여 해당 텍스트를 다시 표시 하 고 표시 합니다.
 
 > [!NOTE]
-> 언어 서비스의 svc를 사용 하는 것 외에도 VSPackage는 범용 Visual Studio 환경 SDK 텍스트 색 지정 메커니즘을 사용 하도록 선택할 수 있습니다. 이 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)을 참조 하세요.
+> 언어 서비스의 svc를 사용 하는 것 외에도 VSPackage는 범용 Visual Studio 환경 SDK 텍스트 색 지정 메커니즘을 사용 하도록 선택할 수 있습니다. 이 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3b125737162146af954ad8561eb41e5ee8f2e8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584531"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414557"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 
@@ -28,7 +28,7 @@ Visual Studio에서는 색 지정 서비스를 사용 하 여 언어 요소를 �
  ![SVC 색 지정기 그래픽](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> 구문 색 지정 서비스는 텍스트 색 지정을 위한 일반 Visual Studio 메커니즘과는 별개입니다. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]색상화를 지 원하는 일반 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)을 참조 하세요.
+> 구문 색 지정 서비스는 텍스트 색 지정을 위한 일반 Visual Studio 메커니즘과는 별개입니다. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]색상화를 지 원하는 일반 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)을 참조 하세요.
 
  Svc 외에도 언어 서비스는 사용자 지정 색 항목을 제공 한다는 것을 광고 하 여 편집기에서 사용 하는 사용자 지정 색 항목을 제공할 수 있습니다. 인터페이스를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 구현 하는 동일한 개체에 인터페이스를 구현 하 여이 작업을 수행할 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> . 편집기에서 메서드를 호출할 때 사용자 지정 색 항목의 수를 반환 하 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 고, 편집기에서 메서드를 호출할 때 개별 사용자 지정 색 항목을 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> .
 
@@ -60,7 +60,7 @@ Visual Studio에서는 색 지정 서비스를 사용 하 여 언어 요소를 �
     3. 메서드에서 반환 되는 색 지정 정보를 사용 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 하 여 선택한 텍스트를 표시 합니다.
 
 > [!NOTE]
-> 언어 서비스 svc를 사용 하는 것 외에도 VSPackage는 범용 Visual Studio 텍스트 색 지정 메커니즘을 사용할 수 있습니다. 이 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)을 참조 하세요.
+> 언어 서비스 svc를 사용 하는 것 외에도 VSPackage는 범용 Visual Studio 텍스트 색 지정 메커니즘을 사용할 수 있습니다. 이 메커니즘에 대 한 자세한 내용은 [글꼴 및 색 사용](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)을 참조 하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [구문 색 지정 구현](../../extensibility/internals/implementing-syntax-coloring.md)
