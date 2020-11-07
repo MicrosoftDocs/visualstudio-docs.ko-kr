@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 지역화 | Microsoft Docs
+description: ClickOnce 응용 프로그램을 특정 문화권에 적합 한 버전으로 지역화 하는 세 가지 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841671"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350831"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce 애플리케이션 지역화
 지역화는 애플리케이션을 특정 문화권에 적합하게 만드는 프로세스입니다. 이 프로세스에서는 UI(사용자 인터페이스) 텍스트를 지역별 언어로 번역하고, 올바른 데이터 및 통화 형식 지정을 사용하고, 양식에서 컨트롤 크기를 조정하고, 필요하면 오른쪽에서 왼쪽으로 컨트롤을 미러링합니다.
@@ -46,7 +48,7 @@ ms.locfileid: "90841671"
 
  이 메서드는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 기본값입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 메서드를 사용하려고 추가 작업을 수행할 필요는 없습니다.
 
- *MageUI.exe*에서 이 메서드를 사용하려면 *MageUI.exe*에서 애플리케이션의 문화권을 **중립**으로 설정해야 합니다. 그 후에 모든 위성 어셈블리를 배포에 수동으로 포함해야 합니다. *MageUI.exe*에서 애플리케이션 매니페스트의 **파일** 탭에서 **채우기** 단추를 사용하여 위성 어셈블리를 추가할 수 있습니다.
+ *MageUI.exe* 에서 이 메서드를 사용하려면 *MageUI.exe* 에서 애플리케이션의 문화권을 **중립** 으로 설정해야 합니다. 그 후에 모든 위성 어셈블리를 배포에 수동으로 포함해야 합니다. *MageUI.exe* 에서 애플리케이션 매니페스트의 **파일** 탭에서 **채우기** 단추를 사용하여 위성 어셈블리를 추가할 수 있습니다.
 
  이 접근 방법의 장점은 단일 배포를 만들고 지역화된 배포 과정을 단순화한다는 점입니다. 런타임에 사용자 Windows 운영 체제의 기본 문화권에 따라 해당 위성 어셈블리가 사용됩니다. 이 접근 방법의 단점은 클라이언트 컴퓨터에서 애플리케이션이 설치되거나 업데이트될 때마다 모든 위성 어셈블리를 다운로드한다는 점입니다. 애플리케이션에 많은 문자열이 포함되거나 고객의 네트워크 연결 속도가 느리면 애플리케이션 업데이트 중에 이 프로세스가 성능에 영향을 미칠 수 있습니다.
 
@@ -58,7 +60,7 @@ ms.locfileid: "90841671"
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 메서드를 사용하려면 원하는 지역의 **게시** 탭에서 **언어 게시** 속성을 설정합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 선택된 지역에 필요한 위성 어셈블리를 자동으로 포함하고 기타 모든 위성 어셈블리를 배포에서 제외합니다.
 
- Microsoft에서 *MageUI.exe* 도구를 사용 하 여 동일한 작업을 수행할 수 있습니다 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . 애플리케이션 매니페스트의 **파일** 탭에서 **채우기** 단추를 사용하여 기타 모든 위성 어셈블리를 애플리케이션 디렉터리에서 제외하고 *MageUI.exe*의 배포 매니페스트에 대한 **이름** 탭에서 **문화권** 필드를 설정합니다. 이러한 단계에서는 올바른 위성 어셈블리를 포함하고 배포 매니페스트의 `assemblyIdentity` 요소에서 `language` 특성을 해당 문화권으로 설정합니다.
+ Microsoft에서 *MageUI.exe* 도구를 사용 하 여 동일한 작업을 수행할 수 있습니다 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . 애플리케이션 매니페스트의 **파일** 탭에서 **채우기** 단추를 사용하여 기타 모든 위성 어셈블리를 애플리케이션 디렉터리에서 제외하고 *MageUI.exe* 의 배포 매니페스트에 대한 **이름** 탭에서 **문화권** 필드를 설정합니다. 이러한 단계에서는 올바른 위성 어셈블리를 포함하고 배포 매니페스트의 `assemblyIdentity` 요소에서 `language` 특성을 해당 문화권으로 설정합니다.
 
  애플리케이션을 게시하고 나서 애플리케이션이 지원하는 각 추가 문화권에 대해 이 단계를 반복해야 합니다. 매번 다른 웹 서버 디렉터리 또는 파일 공유 디렉터리에 게시하는지 확인해야 합니다. 이는 각 애플리케이션 매니페스트가 다른 위성 어셈블리를 참조하고 각 배포 매니페스트에는 `language` 특성의 다른 값이 포함되기 때문입니다.
 

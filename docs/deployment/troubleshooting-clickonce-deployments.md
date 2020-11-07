@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 배포 문제 해결 | Microsoft Docs
+description: ClickOnce 배포의 가장 일반적인 문제를 진단 하 고 해결 하는 데 도움이 되는이 문서를 사용 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235175"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350503"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 배포 문제 해결
 이 항목은 배포와 관련 된 가장 일반적인 문제를 진단 하 고 해결 하는 데 도움이 됩니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -56,7 +58,7 @@ ms.locfileid: "87235175"
 
  System.object를 사용 하는 ClickOnce 응용 프로그램을 디버깅 하는 기술에 대해 설명 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

@@ -1,5 +1,7 @@
 ---
 title: 제품 매니페스트 만들기 | Microsoft Docs
+description: 단일 제품 매니페스트 및 각 로캘에 대 한 패키지 매니페스트가 포함 된 패키지를 사용 하 여 ClickOnce 응용 프로그램에 대 한 필수 구성 요소를 배포 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852220"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351221"
 ---
 # <a name="how-to-create-a-product-manifest"></a>방법: 제품 매니페스트 만들기
 응용 프로그램에 대 한 필수 구성 요소를 배포 하기 위해 부트스트래퍼 패키지를 만들 수 있습니다. 부트스트래퍼 패키지는 단일 제품 매니페스트 파일을 포함 하지만 각 로캘에 대 한 패키지 매니페스트를 포함 합니다. 패키지 매니페스트에는 패키지의 지역화 관련 측면이 포함 됩니다. 여기에는 문자열, 최종 사용자 사용권 계약 및 언어 팩이 포함 됩니다.
@@ -36,7 +38,7 @@ ms.locfileid: "90852220"
 
 1. 부트스트래퍼 패키지에 대 한 디렉터리를 만듭니다. 이 예제에서는 C:\package.를 사용 합니다.
 
-2. Visual Studio에서 *product.xml*이라는 새 XML 파일을 만들고 *c:\package* 폴더에 저장 합니다.
+2. Visual Studio에서 *product.xml* 이라는 새 XML 파일을 만들고 *c:\package* 폴더에 저장 합니다.
 
 3. 다음 XML을 추가 하 여 패키지에 대 한 XML 네임 스페이스 및 제품 코드를 설명 합니다. 제품 코드를 패키지의 고유 식별자로 바꿉니다.
 
@@ -54,7 +56,7 @@ ms.locfileid: "90852220"
       </RelatedProducts>
     ```
 
-5. XML을 추가 하 여 부트스트래퍼 패키지에 있는 모든 파일을 나열 합니다. 이 예에서는 *CorePackage.msi*패키지 파일 이름을 사용 합니다.
+5. XML을 추가 하 여 부트스트래퍼 패키지에 있는 모든 파일을 나열 합니다. 이 예에서는 *CorePackage.msi* 패키지 파일 이름을 사용 합니다.
 
     ```xml
     <PackageFiles>
@@ -64,7 +66,7 @@ ms.locfileid: "90852220"
 
 6. *CorePackage.msi* 파일을 *c:\package* 폴더로 복사 하거나 이동 합니다.
 
-7. 부트스트래퍼 명령을 사용 하 여 패키지를 설치 하는 XML을 추가 합니다. 부트스트래퍼는 자동으로 설치 되는 **/qn** 플래그를 *.msi* 파일에 자동으로 추가 합니다. 파일이 *.exe*인 경우 부트스트래퍼는 셸을 사용 하 여 *.exe* 파일을 실행 합니다. 다음 XML은 *CorePackage.msi*인수를 표시 하지 않지만 특성에 명령줄 인수를 넣을 수 있습니다 `Arguments` .
+7. 부트스트래퍼 명령을 사용 하 여 패키지를 설치 하는 XML을 추가 합니다. 부트스트래퍼는 자동으로 설치 되는 **/qn** 플래그를 *.msi* 파일에 자동으로 추가 합니다. 파일이 *.exe* 인 경우 부트스트래퍼는 셸을 사용 하 여 *.exe* 파일을 실행 합니다. 다음 XML은 *CorePackage.msi* 인수를 표시 하지 않지만 특성에 명령줄 인수를 넣을 수 있습니다 `Arguments` .
 
     ```xml
     <Commands>

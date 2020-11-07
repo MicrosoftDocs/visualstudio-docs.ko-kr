@@ -1,5 +1,7 @@
 ---
 title: '&lt;Strings &gt; 요소 (부트스트래퍼) | Microsoft Docs'
+description: Strings 요소는 제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747406"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350480"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 요소 (부트스트래퍼)
 제품 이름, 패키지 이름 및 설치 오류 메시지에 대 한 지역화 된 문자열을 정의 합니다.
@@ -49,9 +51,9 @@ ms.locfileid: "66747406"
 
 |특성|설명|
 |---------------|-----------------|
-|`Name`|필수 요소. 문자열의 이름입니다.|
+|`Name`|필수 사항입니다. 문자열의 이름입니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 .NET Framework 설치 관리자에 대 한 모든 영어 문자열을 지정 합니다.
 
 ```xml
@@ -73,5 +75,5 @@ ms.locfileid: "66747406"
 </Strings>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [\<Package> 요소인](../deployment/package-element-bootstrapper.md)

@@ -1,5 +1,7 @@
 ---
 title: 지역화 된 부트스트래퍼 패키지 만들기 | Microsoft Docs
+description: 각 로캘에 대해 두 개 이상의 파일을 만들어 ClickOnce에서 지역화 된 버전의 부트스트래퍼 패키지를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852487"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351247"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>방법: 지역화된 부트스트래퍼 패키지 만들기
-부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 *eula.rtf*와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트(*package.xml*)를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.
+부트스트래퍼 패키지를 만든 후에는 각 로캘에 대해 두 파일, 즉 *eula.rtf* 와 같은 소프트웨어 사용 약관 파일과 패키지 매니페스트( *package.xml* )를 추가로 만들어 부트스트래퍼 패키지의 지역화된 버전을 만들 수 있습니다.
 
  Visual Studio 2010에는 기본적으로 .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 및 F# Runtime 4.0용 지역화된 부트스트래퍼 패키지만 포함되어 있습니다. 3개 단계를 완료하면 다른 부트스트래퍼용 지역화된 패키지를 만들 수 있습니다.
 
-1. *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> *에 로캘 이름 뒤에 이름이 지정 된 폴더를 만듭니다.
+1. *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>* 에 로캘 이름 뒤에 이름이 지정 된 폴더를 만듭니다.
 
 2. 부트스트래퍼 패키지용 소프트웨어 사용 약관이 포함된 파일을 만들어 새 폴더에 저장합니다.
 
@@ -39,7 +41,7 @@ ms.locfileid: "90852487"
 
 1. 로캘 이름과 같은 이름을 지정하여 폴더를 만듭니다.
 
-     32 비트 컴퓨터에서 *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ * 폴더에 폴더를 만듭니다.
+     32 비트 컴퓨터에서 *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 폴더에 폴더를 만듭니다.
 
      64 비트 컴퓨터의 경우에는 *filefiles (86 \\ \<BootstrapperPackageName> \\ ) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 폴더에 폴더를 만듭니다.
 
@@ -74,9 +76,9 @@ ms.locfileid: "90852487"
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>프랑스어로 지역화된 .NET Framework 3.5 서비스 팩 1용 부트스트래퍼 패키지를 만들려면
 
-1. 이름이 *fr*인 폴더를 만듭니다. 폴더 이름은 로캘 이름과 일치해야 합니다.
+1. 이름이 *fr* 인 폴더를 만듭니다. 폴더 이름은 로캘 이름과 일치해야 합니다.
 
-     32 비트 컴퓨터에서 *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\ * 폴더에 폴더를 만듭니다.
+     32 비트 컴퓨터에서 *Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\* 폴더에 폴더를 만듭니다.
 
      64비트 컴퓨터에서는 해당 폴더를 *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* 폴더에서 만듭니다.
 
@@ -86,7 +88,7 @@ ms.locfileid: "90852487"
 
 4. 오류 문자열이 프랑스어로 표시되도록 패키지 매니페스트의 `<Strings>` 섹션을 업데이트합니다.
 
-5. 값을 `<String Name="Culture">` *fr*로 변경 합니다.
+5. 값을 `<String Name="Culture">` *fr* 로 변경 합니다.
 
 6. *package.xml* 파일을 저장 합니다.
 

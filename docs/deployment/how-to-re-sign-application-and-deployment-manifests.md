@@ -1,5 +1,7 @@
 ---
 title: 응용 프로그램 및 배포 매니페스트 다시 서명 | Microsoft Docs
+description: 배포 속성을 변경한 후 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트를 다시 서명 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851686"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351130"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 다시 서명
 Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 프로그램) 또는 Office 솔루션에 대 한 응용 프로그램 매니페스트에서 배포 속성을 변경한 후에는 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트에 모두 다시 서명 해야 합니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
@@ -31,7 +33,7 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
  매니페스트에 다시 서명할 수 있는 또 다른 시나리오는 고객이 자신의 인증서를 사용 하 여 응용 프로그램 및 배포 매니페스트에 서명 하려고 할 때입니다.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>애플리케이션 및 배포 매니페스트 다시 서명
- 이 절차에서는 응용 프로그램 매니페스트 파일 (*.manifest*)을 이미 변경한 것으로 가정 합니다. 자세한 내용은 [방법: 배포 속성 변경](/previous-versions/cc442869(v=vs.110))을 참조 하세요.
+ 이 절차에서는 응용 프로그램 매니페스트 파일 ( *.manifest* )을 이미 변경한 것으로 가정 합니다. 자세한 내용은 [방법: 배포 속성 변경](/previous-versions/cc442869(v=vs.110))을 참조 하세요.
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 응용 프로그램 및 배포 매니페스트에 다시 서명 하려면
 
@@ -67,10 +69,10 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. 필요에 따라 마스터 배포 매니페스트 (*publish \\ \<appname> . application*)를 버전 배포 디렉터리 (*publish\Application Files \\ \<appname> _ \<version> *)에 복사 합니다.
+5. 필요에 따라 마스터 배포 매니페스트 ( *publish \\ \<appname> . application* )를 버전 배포 디렉터리 ( *publish\Application Files \\ \<appname> _ \<version>* )에 복사 합니다.
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트 업데이트 및 다시 서명
- 이 절차에서는 응용 프로그램 매니페스트 파일 (*.manifest*)을 이미 변경 했지만 업데이트 된 다른 파일이 있는 것으로 가정 합니다. 파일이 업데이트 되 면 파일을 나타내는 해시도 업데이트 해야 합니다.
+ 이 절차에서는 응용 프로그램 매니페스트 파일 ( *.manifest* )을 이미 변경 했지만 업데이트 된 다른 파일이 있는 것으로 가정 합니다. 파일이 업데이트 되 면 파일을 나타내는 해시도 업데이트 해야 합니다.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe를 사용 하 여 응용 프로그램 및 배포 매니페스트를 업데이트 하 고 다시 서명 하려면
 
@@ -110,7 +112,7 @@ Windows Forms 응용 프로그램, xbap (Windows Presentation Foundation 응용 
 
 6. 응용 프로그램 및 배포 매니페스트 파일을 제외 하 고 파일에 *.deploy* 파일 확장명을 다시 추가 합니다.
 
-7. 필요에 따라 마스터 배포 매니페스트 (*publish \\ \<appname> . application*)를 버전 배포 디렉터리 (*publish\Application Files \\ \<appname> _ \<version> *)에 복사 합니다.
+7. 필요에 따라 마스터 배포 매니페스트 ( *publish \\ \<appname> . application* )를 버전 배포 디렉터리 ( *publish\Application Files \\ \<appname> _ \<version>* )에 복사 합니다.
 
 ## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

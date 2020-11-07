@@ -1,5 +1,7 @@
 ---
 title: '&lt;RelatedProducts &gt; 요소 (부트스트래퍼) | Microsoft Docs'
+description: RelatedProducts 요소는 현재 제품에 종속 되거나 포함 된 다른 제품을 정의 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747466"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350571"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts &gt; 요소 (부트스트래퍼)
 `RelatedProducts`요소는 현재 제품에 종속 되거나 포함 된 다른 제품을 정의 합니다.
@@ -73,7 +75,7 @@ ms.locfileid: "66747466"
 |---------------|-----------------|
 |`Code`|요소의 특성에 지정 된 대로 포함 된 제품의 코드 이름 `ProductCode` `Product` 입니다. 자세한 내용은 [\<Product> 요소](../deployment/product-element-bootstrapper.md)를 참조하세요.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 Microsoft 설치 관리자가 .NET Framework와 함께 설치 되도록 지정 하므로 별도의 설치가 필요 하지 않습니다.
 
 ```xml
@@ -82,5 +84,5 @@ ms.locfileid: "66747466"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [\<Product> 요소인](../deployment/product-element-bootstrapper.md)

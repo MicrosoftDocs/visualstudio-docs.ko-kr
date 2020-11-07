@@ -1,5 +1,7 @@
 ---
 title: '&lt;publisherIdentity &gt; 요소 (ClickOnce 배포) | Microsoft Docs'
+description: PublisherIdentity 요소는 배포 매니페스트를 서명한 게시자에 대 한 정보를 포함 합니다. 서명 된 매니페스트에는 요소가 필요 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927541"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350688"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity &gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 서명한 게시자에 대한 정보를 포함합니다.
@@ -40,8 +42,8 @@ ms.locfileid: "62927541"
 
 |특성|설명|
 |---------------|-----------------|
-|`name`|필수 요소. 이 응용 프로그램을 게시 한 파티의 id를 설명 합니다.|
-|`issuerKeyHash`|필수 요소. 인증서 발급자의 공개 키에 대 한 SHA-1 해시를 포함 합니다.|
+|`name`|필수 사항입니다. 이 응용 프로그램을 게시 한 파티의 id를 설명 합니다.|
+|`issuerKeyHash`|필수 사항입니다. 인증서 발급자의 공개 키에 대 한 SHA-1 해시를 포함 합니다.|
 
 #### <a name="parameters"></a>매개 변수
 

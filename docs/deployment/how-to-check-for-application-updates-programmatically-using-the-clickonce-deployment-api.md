@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 배포 API를 사용 하 여 자동 앱 업데이트
+description: ApplicationDeployment 클래스를 사용 하 여 사용자 요청과 같은 이벤트를 기반으로 업데이트를 확인 하는 코드를 ClickOnce에서 작성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382577"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351260"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>방법: ClickOnce 배포 API를 사용하여 프로그래밍 방식으로 애플리케이션 업데이트 확인
 ClickOnce는 응용 프로그램이 배포 된 후 응용 프로그램을 업데이트 하는 두 가지 방법을 제공 합니다. 첫 번째 방법에서는 특정 간격으로 업데이트를 자동으로 확인 하도록 ClickOnce 배포를 구성할 수 있습니다. 두 번째 메서드에서는 클래스를 사용 하 여 <xref:System.Deployment.Application.ApplicationDeployment> 사용자 요청과 같은 이벤트를 기반으로 업데이트를 확인 하는 코드를 작성할 수 있습니다.
@@ -59,7 +61,7 @@ ClickOnce는 응용 프로그램이 배포 된 후 응용 프로그램을 업데
 ## <a name="net-framework-security"></a>.NET Framework 보안
  응용 프로그램에는 프로그래밍 방식 업데이트를 사용할 수 있는 완전 신뢰 권한이 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 배포 업데이트를 위한 대체 위치 지정](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

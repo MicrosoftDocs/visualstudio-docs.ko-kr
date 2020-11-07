@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 애플리케이션 보안 | Microsoft Docs
+description: ClickOnce 응용 프로그램에 대 한 코드에 대 한 액세스를 제한할 수 있는 .NET Framework의 코드 액세스 보안 제약 조건에 대 한 영향에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286305"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350552"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce 애플리케이션 보안
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에서는 .NET Framework의 코드 액세스 보안 제한에 따라 보호된 리소스 및 작업에 대한 코드의 액세스를 제한합니다. 따라서 코드 액세스 보안의 의미를 이해하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 적절하게 작성해야 합니다. 애플리케이션에서는 완전 신뢰 영역이나 부분 신뢰 영역(예: 인터넷 및 인트라넷 영역)을 사용하여 액세스를 제한할 수 있습니다.
@@ -50,7 +52,7 @@ ms.locfileid: "85286305"
  코드 액세스 보안 및 ClickOnce에 대 한 자세한 내용은 [clickonce 응용 프로그램에 대 한 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조 하세요.
 
 ## <a name="code-signing-certificates"></a>코드 서명 인증서
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용하여 애플리케이션을 게시하려면 퍼블릭/전용 키 쌍을 사용하여 애플리케이션과 해당 애플리케이션의 배포 매니페스트에 서명합니다. 매니페스트에 서명하는 도구는 **프로젝트 디자이너** 의 **서명**페이지에서 사용할 수 있습니다. 자세한 내용은 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)을 참조하십시오.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용하여 애플리케이션을 게시하려면 퍼블릭/전용 키 쌍을 사용하여 애플리케이션과 해당 애플리케이션의 배포 매니페스트에 서명합니다. 매니페스트에 서명하는 도구는 **프로젝트 디자이너** 의 **서명** 페이지에서 사용할 수 있습니다. 자세한 내용은 [Signing Page, Project Designer](../ide/reference/signing-page-project-designer.md)을 참조하십시오.
 
  매니페스트에 서명한 후에는 설치 시 Authenticode 서명 기반의 게시자 정보가 권한 대화 상자에 표시되어 애플리케이션의 출처를 신뢰할 수 있음을 보여 줍니다.
 

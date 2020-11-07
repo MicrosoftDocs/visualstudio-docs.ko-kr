@@ -1,5 +1,6 @@
 ---
 title: ClickOnce 앱의 URL 활성화를 사용 하지 않도록 설정
+description: 사용자가 시작 메뉴에서 응용 프로그램을 시작 하려는 경우 ClickOnce 응용 프로그램에 대 한 자동 시작 설치를 사용 하지 않도록 설정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809762"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351234"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
 
@@ -32,7 +33,7 @@ ms.locfileid: "90809762"
 
 이 절차에서는 MageUI.exe Windows SDK (소프트웨어 개발 키트) 도구를 사용 합니다. 이 도구에 대 한 자세한 내용은 참조 하세요. [MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)합니다. Visual Studio를 사용 하 여이 절차를 수행할 수도 있습니다.
 
-## <a name="procedure"></a>프로시저
+## <a name="procedure"></a>절차
 
 ### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면
 

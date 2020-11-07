@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 배포의 필수 구성 요소에 대 한 지원 URL
+description: Clickonce 배포가 ClickOnce 응용 프로그램을 실행 하기 위한 필수 구성 요소 및 누락 된 필수 구성 요소를 처리 하는 방법을 테스트 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381732"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350948"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>방법: ClickOnce 배포 시 개별 필수 구성 요소에 대한 지원 URL 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 실행 하기 위해 클라이언트 컴퓨터에서 사용할 수 있어야 하는 여러 필수 구성 요소를 테스트할 수 있습니다. 이러한 종속성에는 필요한 최소 버전의 .NET Framework, 운영 체제 버전, GAC (전역 어셈블리 캐시)에 사전 설치 해야 하는 모든 어셈블리가 포함 됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]그러나는 이러한 필수 구성 요소를 설치할 수 없습니다. 필수 구성 요소가 없는 경우 설치를 중단 하 고 설치에 실패 한 이유를 설명 하는 대화 상자를 표시 합니다.
 
  필수 구성 요소를 설치 하는 방법에는 두 가지가 있습니다. 부트스트래퍼 응용 프로그램을 사용 하 여 설치할 수 있습니다. 또는 필수 구성 요소를 찾을 수 없는 경우 대화 상자에서 사용자에 게 표시 되는 개별 필수 구성 요소에 대 한 지원 URL을 지정할 수 있습니다. 해당 URL에서 참조 하는 페이지에는 필수 구성 요소를 설치 하는 지침에 대 한 링크가 포함 될 수 있습니다. 응용 프로그램에서 개별 필수 구성 요소에 대 한 지원 URL을 지정 하지 않은 경우에는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램의 배포 매니페스트에 지정 된 지원 url이 정의 된 경우 해당 url을 전체로 표시 합니다.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *Mage.exe*및 *MageUI.exe* 모두 배포를 생성 하는 데 사용할 수 있지만 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이러한 도구는 개별 필수 구성 요소에 대 한 지원 URL 지정을 직접 지원 하지 않습니다. 이 문서에서는 이러한 지원 Url을 포함 하도록 배포의 응용 프로그램 매니페스트 및 배포 매니페스트를 수정 하는 방법을 설명 합니다.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] *Mage.exe* 및 *MageUI.exe* 모두 배포를 생성 하는 데 사용할 수 있지만 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이러한 도구는 개별 필수 구성 요소에 대 한 지원 URL 지정을 직접 지원 하지 않습니다. 이 문서에서는 이러한 지원 Url을 포함 하도록 배포의 응용 프로그램 매니페스트 및 배포 매니페스트를 수정 하는 방법을 설명 합니다.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>개별 필수 구성 요소에 대 한 지원 URL 지정
 
@@ -81,7 +83,7 @@ ms.locfileid: "85381732"
 ## <a name="net-framework-security"></a>.NET Framework 보안
  응용 프로그램이 부분 신뢰로 실행 되도록 표시 된 경우 지원 URL은 대화 상자에 표시 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)

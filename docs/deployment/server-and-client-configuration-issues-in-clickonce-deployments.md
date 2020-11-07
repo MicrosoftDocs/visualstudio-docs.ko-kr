@@ -1,5 +1,6 @@
 ---
 title: 서버/클라이언트 구성 문제 (ClickOnce)
+description: ClickOnce 응용 프로그램의 배포에 영향을 줄 수 있는 서버 및 클라이언트 구성 문제에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af8b864092f56150ff71d0e23b0bf59280aeb6c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811236"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350555"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Windows에서 인식할 수 없는 파일 형식 (예: Microsoft Word 파일)이 배포에 포함 되어 있으면 IIS에서 해당 파일을 전송 하는 것을 거부 하 고 배포가 실패 합니다.
@@ -32,7 +33,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
  이러한 제한으로 인해 매니페스트 및 어셈블리와 같은 핵심 파일을 다운로드 하는 데 문제가 발생 하지는 않지만 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램의 일부로 포함 된 데이터 파일을 다운로드 하지 못할 수도 있습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 에서 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IIS 구성 관리자에서 이러한 파일의 다운로드를 금지 하는 처리기를 제거 하 여이 오류를 해결할 수 있습니다. 자세한 내용은 IIS 서버 설명서를 참조 하십시오.
 
- 일부 웹 서버는 *.dll*, *.config*및 *.mdf*와 같은 확장명을 가진 파일을 차단할 수 있습니다. Windows 기반 응용 프로그램에는 일반적으로 이러한 확장 중 일부를 포함 하는 파일이 포함 됩니다. 사용자가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 웹 서버에서 차단 된 파일에 액세스 하는 응용 프로그램을 실행 하려고 하면 오류가 발생 합니다. 모든 파일 확장명을 차단 해제 하는 대신 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 은 기본적으로 *.deploy* 파일 확장명을 사용 하 여 모든 응용 프로그램 파일을 게시 합니다. 따라서 관리자는 다음 세 가지 파일 확장명을 차단 해제 하도록 웹 서버를 구성 하기만 하면 됩니다.
+ 일부 웹 서버는 *.dll* , *.config* 및 *.mdf* 와 같은 확장명을 가진 파일을 차단할 수 있습니다. Windows 기반 응용 프로그램에는 일반적으로 이러한 확장 중 일부를 포함 하는 파일이 포함 됩니다. 사용자가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 웹 서버에서 차단 된 파일에 액세스 하는 응용 프로그램을 실행 하려고 하면 오류가 발생 합니다. 모든 파일 확장명을 차단 해제 하는 대신 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 은 기본적으로 *.deploy* 파일 확장명을 사용 하 여 모든 응용 프로그램 파일을 게시 합니다. 따라서 관리자는 다음 세 가지 파일 확장명을 차단 해제 하도록 웹 서버를 구성 하기만 하면 됩니다.
 
 - *. 응용 프로그램*
 
@@ -42,7 +43,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
   그러나 [게시 옵션 대화 상자](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))에서 **".deploy" 파일 확장명 사용** 옵션을 선택 취소 하 여이 옵션을 사용 하지 않도록 설정할 수 있습니다 .이 경우 응용 프로그램에 사용 되는 모든 파일 확장명을 차단 해제 하도록 웹 서버를 구성 해야 합니다.
 
-  예를 들어 .NET Framework를 설치 하지 않은 IIS를 사용 하는 경우 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우 *.manifest*, *응용 프로그램*및 *.deploy*를 구성 해야 합니다.
+  예를 들어 .NET Framework를 설치 하지 않은 IIS를 사용 하는 경우 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우 *.manifest* , *응용 프로그램* 및 *.deploy* 를 구성 해야 합니다.
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 및 SSL(Secure Sockets Layer) (SSL)
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Internet Explorer에서 ssl 인증서에 대 한 메시지가 표시 되는 경우를 제외 하 고 응용 프로그램은 ssl을 통해 정상적으로 작동 합니다. 사이트 이름이 일치 하지 않거나 인증서가 만료 된 경우와 같이 인증서에 문제가 있는 경우 메시지가 표시 될 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]SSL 연결을 사용 하려면 인증서가 최신 상태이 고 인증서 데이터가 사이트 데이터와 일치 하는지 확인 합니다.
@@ -61,7 +62,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 > 배포 공급자가 비어 있지 않거나 Microsoft .NET Framework Assistant 확장이 설치 된 경우 Mozilla Firefox가 지원 됩니다. 이 확장은 .NET Framework 3.5 s p 1로 패키지 됩니다. XBAP를 지원 하기 위해 필요한 경우 NPWPF 플러그 인이 활성화 됩니다.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>브라우저 스크립팅을 통해 ClickOnce 응용 프로그램 활성화
- 액티브 스크립팅을 사용 하 여 응용 프로그램을 시작 하는 사용자 지정 웹 페이지를 개발한 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 일부 컴퓨터에서 응용 프로그램이 실행 되지 않을 수 있습니다. Internet Explorer에는이 동작에 영향을 주는 **파일 다운로드에 대 한 자동 프롬프트**라는 설정이 포함 되어 있습니다. 이 설정은이 동작에 영향을 주는 **옵션** 메뉴의 **보안** 탭에서 사용할 수 있습니다. 이를 **파일 다운로드에 대 한 자동 프롬프트**라고 하며 **다운로드** 범주 아래에 나열 됩니다. 속성은 인트라넷 웹 페이지에 대해 기본적으로 **사용** 으로 설정 되 고 인터넷 웹 페이지에 대해 기본적으로 **사용 하지 않도록** 설정 됩니다. 이 설정을 **사용 하지 않도록**설정 하면 응용 프로그램을 프로그래밍 방식으로 활성화 하려고 할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (예: 속성에 해당 URL을 할당 하는 경우 `document.location` ) 차단 됩니다. 이 경우 사용자는 응용 프로그램의 URL로 설정 된 하이퍼링크를 클릭 하는 등 사용자가 시작한 다운로드를 통해서만 응용 프로그램을 시작할 수 있습니다.
+ 액티브 스크립팅을 사용 하 여 응용 프로그램을 시작 하는 사용자 지정 웹 페이지를 개발한 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 일부 컴퓨터에서 응용 프로그램이 실행 되지 않을 수 있습니다. Internet Explorer에는이 동작에 영향을 주는 **파일 다운로드에 대 한 자동 프롬프트** 라는 설정이 포함 되어 있습니다. 이 설정은이 동작에 영향을 주는 **옵션** 메뉴의 **보안** 탭에서 사용할 수 있습니다. 이를 **파일 다운로드에 대 한 자동 프롬프트** 라고 하며 **다운로드** 범주 아래에 나열 됩니다. 속성은 인트라넷 웹 페이지에 대해 기본적으로 **사용** 으로 설정 되 고 인터넷 웹 페이지에 대해 기본적으로 **사용 하지 않도록** 설정 됩니다. 이 설정을 **사용 하지 않도록** 설정 하면 응용 프로그램을 프로그래밍 방식으로 활성화 하려고 할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (예: 속성에 해당 URL을 할당 하는 경우 `document.location` ) 차단 됩니다. 이 경우 사용자는 응용 프로그램의 URL로 설정 된 하이퍼링크를 클릭 하는 등 사용자가 시작한 다운로드를 통해서만 응용 프로그램을 시작할 수 있습니다.
 
 ## <a name="additional-server-configuration-issues"></a>추가 서버 구성 문제
 
@@ -111,13 +112,13 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
  기본적으로 Windows Server에는 FrontPage Server Extensions 설치 되어 있지 않습니다. 를 사용 하 여 FrontPage Server Extensions HTTP를 사용 하 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 는 Windows Server 웹 서버에 게시 하려면 먼저 FrontPage Server Extensions를 설치 해야 합니다. Windows Server에서 서버 관리 관리 도구를 사용 하 여 설치를 수행할 수 있습니다.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: 잠긴 콘텐츠 형식
- 에서 IIS는 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 알려진 특정 콘텐츠 형식 (예: *.htm*, *.html*, *.txt*등)을 제외 하 고 모든 파일 형식을 잠급니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 서버를 사용 하 여 응용 프로그램을 배포할 수 있도록 설정 하려면 응용 프로그램, *.manifest*및 응용 프로그램에서 사용 하는 다른 모든 사용자 지정 파일 형식의 파일을 다운로드할 수 있도록 IIS 설정을 변경 해야 *합니다.*
+ 에서 IIS는 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 알려진 특정 콘텐츠 형식 (예: *.htm* , *.html* , *.txt* 등)을 제외 하 고 모든 파일 형식을 잠급니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 서버를 사용 하 여 응용 프로그램을 배포할 수 있도록 설정 하려면 응용 프로그램, *.manifest* 및 응용 프로그램에서 사용 하는 다른 모든 사용자 지정 파일 형식의 파일을 다운로드할 수 있도록 IIS 설정을 변경 해야 *합니다.*
 
  IIS 서버를 사용 하 여 배포 하는 경우 *inetmgr.exe* 를 실행 하 고 기본 웹 페이지에 대 한 새 파일 형식을 추가 합니다.
 
 - *응용 프로그램* 및 *.manifest* 확장의 경우 MIME 형식은 "application/x-y-application" 이어야 합니다. 다른 파일 형식의 경우 MIME 형식은 "응용 프로그램/8 진수 스트림" 이어야 합니다.
 
-- 확장명 " \<em> " 및 mime 형식 "응용 프로그램/8 진수 스트림"을 사용 하 여 mime 형식을 만들면 차단 해제 된 파일 형식의 파일을 다운로드할 수 있습니다. 그러나 * \* .aspx* 및 * \* .asmx* 와 같은 차단 된 파일 형식은 다운로드할 수 없습니다.
+- 확장명 " \<em> " 및 mime 형식 "응용 프로그램/8 진수 스트림"을 사용 하 여 mime 형식을 만들면 차단 해제 된 파일 형식의 파일을 다운로드할 수 있습니다. 그러나 *\* .aspx* 및 *\* .asmx* 와 같은 차단 된 파일 형식은 다운로드할 수 없습니다.
 
   Windows Server에서 MIME 형식을 구성 하는 방법에 대 한 지침은 [웹 사이트 또는 응용 프로그램에 mime 형식을 추가 하는 방법](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)을 참조 하세요.
 
@@ -129,11 +130,11 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="http-compression-issues"></a>HTTP 압축 문제
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]에서는 클라이언트에 스트림을 보내기 전에 GZIP 알고리즘을 사용 하 여 데이터 스트림을 압축 하는 웹 서버 기술인 HTTP 압축을 사용 하는 다운로드를 수행할 수 있습니다. 클라이언트 (이 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] )는 파일을 읽기 전에 스트림 압축을 풉니다.
 
- IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 (*.dll*), xml (*.xml*), 배포 매니페스트 (*응용 프로그램*) 및 응용 프로그램 매니페스트 (*.manifest*)에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.
+ IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 ( *.dll* ), xml ( *.xml* ), 배포 매니페스트 ( *응용 프로그램* ) 및 응용 프로그램 매니페스트 ( *.manifest* )에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.
 
  IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/help/234497)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)
