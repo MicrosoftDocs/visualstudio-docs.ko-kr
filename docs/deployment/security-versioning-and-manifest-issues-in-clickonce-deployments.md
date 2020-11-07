@@ -1,5 +1,6 @@
 ---
 title: 보안/버전 관리/매니페스트 문제 (ClickOnce)
+description: Clickonce 배포에 성공 하지 못할 수 있는 ClickOnce 보안, 응용 프로그램 버전 관리 및 매니페스트 구문 및 의미 체계와 관련 된 문제에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811249"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349375"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 배포의 보안, 버전 관리 및 매니페스트 문제
 
@@ -95,7 +96,7 @@ ms.locfileid: "90811249"
 > [!NOTE]
 > 매니페스트를 업데이트할 때마다 다시 서명 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [ClickOnce 배포](../deployment/troubleshooting-clickonce-deployments.md) 
  문제 해결 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md) 

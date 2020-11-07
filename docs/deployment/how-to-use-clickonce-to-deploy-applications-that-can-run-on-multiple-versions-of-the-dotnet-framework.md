@@ -1,5 +1,7 @@
 ---
 title: ClickOnce를 사용 하 여 멀티 타기 팅 apps 배포
+description: ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대상으로 하는 응용 프로그램을 배포 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381706"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349518"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: ClickOnce를 사용하여 여러 버전의 .NET 프레임워크에서 실행할 수 있는 애플리케이션 배포
 ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대상으로 하는 응용 프로그램을 배포할 수 있습니다. 이렇게 하려면 응용 프로그램 및 배포 매니페스트를 생성 하 고 업데이트 해야 합니다.
@@ -102,7 +104,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대
 
 - 응용 프로그램 및 배포 매니페스트를 업데이트 하 고 다시 서명 합니다. 자세한 내용은 [방법: 응용 프로그램 및 배포 매니페스트 다시 서명](../deployment/how-to-re-sign-application-and-deployment-manifests.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [\<dependency> 요소인](../deployment/dependency-element-clickonce-application.md)

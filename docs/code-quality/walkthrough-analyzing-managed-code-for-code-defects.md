@@ -1,6 +1,8 @@
 ---
 title: 코드 오류에 대 한 관리 코드 분석 연습 | Microsoft Docs
 ms.date: 01/29/2018
+description: 레거시 코드 분석을 사용 하 여 .NET 관리 코드 어셈블리를 분석 하는 방법을 알아봅니다. 오류를 확인 하 고 .NET 디자인 지침을 준수 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659194"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349024"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>연습: 정적 코드 분석을 사용 하 여 코드 오류 찾기
 
@@ -27,7 +29,7 @@ ms.locfileid: "91659194"
 
 1. Visual Studio를 열고 **클래스 라이브러리 (.NET Framework)** 템플릿에서 새 프로젝트를 만듭니다.
 
-1. 프로젝트 이름을 **CodeAnalysisManagedDemo**로 합니다.
+1. 프로젝트 이름을 **CodeAnalysisManagedDemo** 로 합니다.
 
 1. 프로젝트를 만든 후 *Class1.cs* 파일을 엽니다.
 
@@ -51,9 +53,9 @@ ms.locfileid: "91659194"
 
 ## <a name="analyze-the-project-for-code-defects"></a>프로젝트에서 코드 오류를 분석 합니다.
 
-1. **솔루션 탐색기**에서 CodeAnalysisManagedDemo 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 CodeAnalysisManagedDemo 프로젝트를 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **속성** 을 클릭합니다.
 
    CodeAnalysisManagedDemo 속성 페이지가 표시 됩니다.
 
@@ -63,7 +65,7 @@ ms.locfileid: "91659194"
 
 4. **빌드에 코드 분석 사용** 이 선택 되어 있는지 확인 합니다.
 
-5. **이 규칙 집합 실행** 드롭다운 목록에서 **Microsoft 모든 규칙**을 선택 합니다.
+5. **이 규칙 집합 실행** 드롭다운 목록에서 **Microsoft 모든 규칙** 을 선택 합니다.
 
 ::: moniker-end
 
@@ -71,23 +73,23 @@ ms.locfileid: "91659194"
 
 4. **이진 분석기** 섹션에서 **빌드 시 실행** 이 선택 되어 있는지 확인 합니다.
 
-5. **활성 규칙** 드롭다운 목록에서 **Microsoft 모든 규칙**을 선택 합니다.
+5. **활성 규칙** 드롭다운 목록에서 **Microsoft 모든 규칙** 을 선택 합니다.
 
 ::: moniker-end
 
-6. **파일** 메뉴에서 **선택한 항목 저장**을 클릭 한 다음 속성 페이지를 닫습니다.
+6. **파일** 메뉴에서 **선택한 항목 저장** 을 클릭 한 다음 속성 페이지를 닫습니다.
 
-7. **빌드** 메뉴에서 **CodeAnalysisManagedDemo 빌드**를 클릭 합니다.
+7. **빌드** 메뉴에서 **CodeAnalysisManagedDemo 빌드** 를 클릭 합니다.
 
     CodeAnalysisManagedDemo 프로젝트 빌드 경고는 **오류 목록** 및 **출력** 창에 표시 됩니다.
 
 ## <a name="correct-the-code-analysis-issues"></a>코드 분석 문제 해결
 
-1. **보기** 메뉴에서 **오류 목록**를 선택 합니다.
+1. **보기** 메뉴에서 **오류 목록** 를 선택 합니다.
 
-    선택한 개발자 프로필에 따라 **보기** 메뉴에서 **다른 창** 을 가리킨 다음 **오류 목록**를 선택 해야 할 수 있습니다.
+    선택한 개발자 프로필에 따라 **보기** 메뉴에서 **다른 창** 을 가리킨 다음 **오류 목록** 를 선택 해야 할 수 있습니다.
 
-1. **솔루션 탐색기**에서 **모든 파일 표시**를 선택합니다.
+1. **솔루션 탐색기** 에서 **모든 파일 표시** 를 선택합니다.
 
 1. 속성 노드를 확장 한 다음 *AssemblyInfo.cs* 파일을 엽니다.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91659194"
 
    CA2210: 어셈블리에는 강력한 이름 키를 사용 하 여 ' CodeAnalysisManagedDemo ' 서명에 [올바른 강력한 이름을 사용 해야 합니다](../code-quality/ca2210.md).
 
-   1. **프로젝트** 메뉴에서 **CodeAnalysisManagedDemo 속성**을 선택 합니다.
+   1. **프로젝트** 메뉴에서 **CodeAnalysisManagedDemo 속성** 을 선택 합니다.
 
       프로젝트 속성이 표시 됩니다.
 
@@ -127,11 +129,11 @@ ms.locfileid: "91659194"
 
       **강력한 이름 키 만들기** 대화 상자가 나타납니다.
 
-   1. **키 파일 이름**에 **testkey**를 입력 합니다.
+   1. **키 파일 이름** 에 **testkey** 를 입력 합니다.
 
-   1. 암호를 입력 한 다음 **확인**을 선택 합니다.
+   1. 암호를 입력 한 다음 **확인** 을 선택 합니다.
 
-   1. **파일** 메뉴에서 **선택한 항목 저장**을 선택한 다음 속성 페이지를 닫습니다.
+   1. **파일** 메뉴에서 **선택한 항목 저장** 을 선택한 다음 속성 페이지를 닫습니다.
 
    모든 변경을 완료 한 후 Class1.cs 파일은 다음과 같습니다.
 
@@ -162,14 +164,14 @@ ms.locfileid: "91659194"
 
 1. 나머지 경고 각각에 대해 다음을 수행합니다.
 
-    1. **오류 목록**에서 경고를 선택 합니다.
+    1. **오류 목록** 에서 경고를 선택 합니다.
 
-    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 **표시 표시 안 함 파일에서 표시 안 함**을 선택  >  **In Suppression File**합니다.
+    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 **표시 표시 안 함 파일에서 표시 안 함** 을 선택  >  **In Suppression File** 합니다.
 
 1. 프로젝트를 다시 빌드합니다.
 
      프로젝트는 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [관리 코드에 대한 코드 분석](../code-quality/code-analysis-for-managed-code-overview.md)

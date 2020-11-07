@@ -1,6 +1,8 @@
 ---
 title: 자동 기능 일시 중단
 ms.date: 11/04/2016
+description: Visual Studio에서 분석 범위를 줄이고, 가비지 수집 대기 시간이 짧은 모드를 해제 하 고, 시스템 메모리가 제한 된 경우 캐시를 플러시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508381"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348543"
 ---
 # <a name="automatic-feature-suspension"></a>자동 기능 일시 중단
 
@@ -56,7 +58,7 @@ GC 낮은 대기 시간 모드를 다시 사용 하도록 설정 하려면 Visua
 
 - 모든 참조 찾기
 
-- 다음 탐색
+- 탐색
 
 - Using 추가
 

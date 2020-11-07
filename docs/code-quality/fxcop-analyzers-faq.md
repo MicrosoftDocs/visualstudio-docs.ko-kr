@@ -1,6 +1,8 @@
 ---
 title: FxCop 코드 분석 및 FxCop 분석기
 ms.date: 09/06/2018
+description: Visual Studio에서 레거시 FxCop 및 FxCop 분석기 간의 차이점을 이해 합니다. 이러한 분석기를 사용 하는 방법에 대 한 질문에 대 한 대답을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc04cbc6d46d8dc47a08d06c8c5949bb5d9107f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e6768ad7f1ee87f75592c736b03bf6fd64e28c2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79431367"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348960"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
 
@@ -22,20 +24,20 @@ ms.locfileid: "79431367"
 
 ## <a name="whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers"></a>레거시 FxCop와 FxCop 분석기 간의 차이점은?
 
-레거시 FxCop는 컴파일된 어셈블리에서 빌드 후 분석을 실행합니다. **FxCopCmd.exe**라는 별도 실행 파일로 실행됩니다. FxCopCmd.exe는 컴파일된 어셈블리를 로드하고, 코드 분석을 실행한 다음, 결과(또는 *진단*)를 보고합니다.
+레거시 FxCop는 컴파일된 어셈블리에서 빌드 후 분석을 실행합니다. **FxCopCmd.exe** 라는 별도 실행 파일로 실행됩니다. FxCopCmd.exe는 컴파일된 어셈블리를 로드하고, 코드 분석을 실행한 다음, 결과(또는 *진단* )를 보고합니다.
 
-FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. 프로젝트 또는 솔루션에서 참조되는 [NuGet 패키지로 설치](install-fxcop-analyzers.md#nuget-package)합니다. 컴파일러 실행 동안 FxCop 분석기는 소스 코드 기반 분석을 실행합니다. FxCop 분석기는 **csc.exe** 또는 **vbc.exe**의 컴파일러 프로세스 내에서 호스팅되며, 프로젝트가 빌드될 때 분석을 실행합니다. 분석기 결과는 컴파일러 결과와 함께 보고됩니다.
+FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. 프로젝트 또는 솔루션에서 참조되는 [NuGet 패키지로 설치](install-fxcop-analyzers.md#nuget-package)합니다. 컴파일러 실행 동안 FxCop 분석기는 소스 코드 기반 분석을 실행합니다. FxCop 분석기는 **csc.exe** 또는 **vbc.exe** 의 컴파일러 프로세스 내에서 호스팅되며, 프로젝트가 빌드될 때 분석을 실행합니다. 분석기 결과는 컴파일러 결과와 함께 보고됩니다.
 
 > [!NOTE]
 > [Visual Studio 확장으로 FxCop 분석기를 설치](install-fxcop-analyzers.md#vsix)할 수도 있습니다. 이 경우 분석기는 코드 편집기에 입력한 대로 실행하지만 빌드 시 실행하지 않습니다. CI(지속적인 통합)의 일부로 FxCop 분석기를 실행하려는 경우 NuGet 패키지로 대신 설치합니다.
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령은 FxCop 분석기를 실행하나요?
 
-Visual Studio 2019 16.5 릴리스 이전에는 **분석**  >  **실행 코드 분석**을 선택 하면 레거시 분석이 실행 됩니다. Visual Studio 2019 16.5를 시작 하면 **코드 분석 실행** 메뉴 옵션이 선택한 프로젝트 또는 솔루션에 대 한 Roslyn 기반 분석기를 실행 합니다. Roslyn 기반 FxCop 분석기를 설치한 경우에도 실행 됩니다. 자세한 내용은 [방법: 관리 코드에 대해 수동으로 코드 분석 실행](how-to-run-code-analysis-manually-for-managed-code.md)을 참조 하세요.
+Visual Studio 2019 16.5 릴리스 이전에는 **분석**  >  **실행 코드 분석** 을 선택 하면 레거시 분석이 실행 됩니다. Visual Studio 2019 16.5를 시작 하면 **코드 분석 실행** 메뉴 옵션이 선택한 프로젝트 또는 솔루션에 대 한 Roslyn 기반 분석기를 실행 합니다. Roslyn 기반 FxCop 분석기를 설치한 경우에도 실행 됩니다. 자세한 내용은 [방법: 관리 코드에 대해 수동으로 코드 분석 실행](how-to-run-code-analysis-manually-for-managed-code.md)을 참조 하세요.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성은 분석기를 실행하나요?
 
-아니요. 프로젝트 파일에서 **RunCodeAnalysis** 속성(예: *.csproj*)은 레거시 FxCop 실행에만 사용됩니다. **FxCopCmd.exe**를 호출하는 빌드 후 msbuild 작업을 실행합니다.
+아니요. 프로젝트 파일에서 **RunCodeAnalysis** 속성(예: *.csproj* )은 레거시 FxCop 실행에만 사용됩니다. **FxCopCmd.exe** 를 호출하는 빌드 후 msbuild 작업을 실행합니다.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>그러면 FxCop 분석기를 어떻게 실행하나요?
 
@@ -43,7 +45,7 @@ FxCop 분석기를 실행하려면 먼저 [NuGet 패키지를 설치합니다](i
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop 분석기 NuGet 패키지를 설치한 후에도 경고 CA0507이 표시됨
 
-FxCop 분석기를 설치 했지만 경고가 계속 표시 되는 경우 **"" 코드 분석 실행 "은 빌드 중에 실행 되는 FxCop 분석기를 위해 더 이상 사용 되지 않으므로** [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file) 의 **runcodeanalysis** msbuild 속성을 **false**로 설정 해야 할 수 있습니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행 됩니다.
+FxCop 분석기를 설치 했지만 경고가 계속 표시 되는 경우 **"" 코드 분석 실행 "은 빌드 중에 실행 되는 FxCop 분석기를 위해 더 이상 사용 되지 않으므로** [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file) 의 **runcodeanalysis** msbuild 속성을 **false** 로 설정 해야 할 수 있습니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행 됩니다.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -57,7 +59,7 @@ FxCop 분석기를 설치 했지만 경고가 계속 표시 되는 경우 **"" �
 
 프로젝트에서 빌드 옵션을 사용 하 여 경고를 오류로 처리 하는 경우 FxCop 분석기 경고가 오류로 나타날 수 있습니다. 코드 분석 경고가 오류로 처리 되지 않도록 하려면 [코드 분석 FAQ](../code-quality/analyzers-faq.md#treat-warnings-as-errors)의 단계를 따르세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [FxCop 분석기로 마이그레이션](migrate-from-legacy-analysis-to-fxcop-analyzers.md)

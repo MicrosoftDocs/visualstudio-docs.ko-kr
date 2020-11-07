@@ -1,6 +1,8 @@
 ---
 title: 사용자 지정 코드 분석 규칙 집합 만들기
 ms.date: 11/02/2018
+description: Visual Studio에서 코드 분석 규칙 집합을 사용자 지정 하는 방법을 알아봅니다. 처음부터 새로 또는 기존 집합에서 새 집합을 만드는 방법을 참조 하세요. 규칙 우선 순위를 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860501"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348816"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합 사용자 지정
 
@@ -24,9 +26,9 @@ ms.locfileid: "91860501"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>기존 규칙 집합에서 사용자 지정 규칙 집합 만들기
 
-사용자 지정 규칙 집합을 만들려면 **규칙 집합 편집기**에서 기본 제공 규칙 집합을 열 수 있습니다. 여기에서 특정 규칙을 추가 또는 제거 하 고, 규칙을 위반할 때 발생 하는 동작을 변경할 수 있습니다 &mdash; . 예를 들어 경고 또는 오류를 표시할 수 있습니다.
+사용자 지정 규칙 집합을 만들려면 **규칙 집합 편집기** 에서 기본 제공 규칙 집합을 열 수 있습니다. 여기에서 특정 규칙을 추가 또는 제거 하 고, 규칙을 위반할 때 발생 하는 동작을 변경할 수 있습니다 &mdash; . 예를 들어 경고 또는 오류를 표시할 수 있습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 선택 합니다.
 
 2. **속성** 페이지에서 **코드 분석** 탭을 선택 합니다.
 
@@ -51,17 +53,17 @@ ms.locfileid: "91860501"
 4. **열기** 를 선택 하 여 규칙 집합 편집기에서 규칙을 표시 합니다.
 
 > [!NOTE]
-> .NET Core 또는 .NET Standard 프로젝트인 경우 **코드 분석** 속성 탭이 없기 때문에 프로세스는 약간 다릅니다. 단계에 따라 [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](/dotnet/fundamentals/code-analysis/code-quality-rule-options)합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기**에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
+> .NET Core 또는 .NET Standard 프로젝트인 경우 **코드 분석** 속성 탭이 없기 때문에 프로세스는 약간 다릅니다. 단계에 따라 [미리 정의 된 규칙 집합을 프로젝트에 복사 하 고 활성 규칙 집합으로 설정](/dotnet/fundamentals/code-analysis/code-quality-rule-options)합니다. 규칙 집합을 복사한 후에는 **솔루션 탐색기** 에서 열어 [Visual Studio 규칙 집합 편집기에서 편집할](working-in-the-code-analysis-rule-set-editor.md) 수 있습니다.
 
 ## <a name="create-a-new-rule-set"></a>새 규칙 집합 만들기
 
 **새 파일** 대화 상자에서 새 규칙 집합 파일을 만들 수 있습니다.
 
-1. **파일**  >  **새로 만들기**  >  **파일**을 선택 하거나 **ctrl** + **N**을 누릅니다.
+1. **파일**  >  **새로 만들기**  >  **파일** 을 선택 하거나 **ctrl** + **N** 을 누릅니다.
 
-2. **새 파일** 대화 상자에서 왼쪽의 **일반** 범주를 선택한 다음 **코드 분석 규칙 집합**을 선택 합니다.
+2. **새 파일** 대화 상자에서 왼쪽의 **일반** 범주를 선택한 다음 **코드 분석 규칙 집합** 을 선택 합니다.
 
-3. **열기**를 선택합니다.
+3. **열기** 를 선택합니다.
 
    새 규칙 집합 파일이 규칙 집합 편집기에서 *열립니다.*
 
@@ -70,19 +72,19 @@ ms.locfileid: "91860501"
 > [!NOTE]
 > 다음 절차는 **코드 분석** 속성 탭이 없는 .net Core 프로젝트에는 적용 되지 않습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 선택 합니다.
 
 2. **속성** 페이지에서 **코드 분석** 탭을 선택 합니다.
 
 ::: moniker range="vs-2017"
 
-3. **\<Choose multiple rule sets>** **이 규칙 집합 실행**에서 선택 합니다.
+3. **\<Choose multiple rule sets>** **이 규칙 집합 실행** 에서 선택 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. **\<Choose multiple rule sets>** **활성 규칙**에서 선택 합니다.
+3. **\<Choose multiple rule sets>** **활성 규칙** 에서 선택 합니다.
 
 ::: moniker-end
 
@@ -90,7 +92,7 @@ ms.locfileid: "91860501"
 
    ![규칙 집합 추가 또는 제거 대화 상자](media/add-remove-rule-sets.png)
 
-5. 다른 이름 **으로 저장**을 선택 하 고, *. 규칙 집합* 파일의 이름을 입력 한 다음, **저장**을 선택 합니다.
+5. 다른 이름 **으로 저장** 을 선택 하 고, *. 규칙 집합* 파일의 이름을 입력 한 다음, **저장** 을 선택 합니다.
 
    **이 규칙 집합 실행** 목록에서 새 규칙 집합이 선택 됩니다.
 
@@ -109,7 +111,7 @@ ms.locfileid: "91860501"
    </RuleSet>
    ```
 
-- 동일한 규칙이 심각도가 *같은* 규칙 집합에서 두 번 이상 나열 되는 경우 **오류 목록**에 다음 경고가 표시 될 수 있습니다.
+- 동일한 규칙이 심각도가 *같은* 규칙 집합에서 두 번 이상 나열 되는 경우 **오류 목록** 에 다음 경고가 표시 될 수 있습니다.
 
    **CA0063: 규칙 집합 파일 ' your \[ ]. 규칙 집합 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다. 파일이 규칙 집합 스키마를 따르지 않습니다.**
 
@@ -136,7 +138,7 @@ ms.locfileid: "91860501"
 
 ## <a name="name-and-description"></a>이름 및 설명
 
-편집기에 열려 있는 규칙 집합의 표시 이름을 변경 하려면 **Properties** 메뉴 **View**  >  모음에서**속성 창** 보기를 선택 하 여 속성 창을 엽니다. **이름** 상자에 표시 이름을 입력 합니다. 규칙 집합에 대 한 설명을 입력할 수도 있습니다.
+편집기에 열려 있는 규칙 집합의 표시 이름을 변경 하려면 **Properties** 메뉴 **View**  >  모음에서 **속성 창** 보기를 선택 하 여 속성 창을 엽니다. **이름** 상자에 표시 이름을 입력 합니다. 규칙 집합에 대 한 설명을 입력할 수도 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

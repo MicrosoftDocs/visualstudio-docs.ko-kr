@@ -1,5 +1,7 @@
 ---
 title: 패키지 매니페스트 만들기 | Microsoft Docs
+description: 부트스트래퍼 패키지를 사용 하 여 각 로캘에 대 한 패키지 매니페스트를 포함 하는 ClickOnce 응용 프로그램에 대 한 필수 구성 요소를 배포 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851712"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350051"
 ---
 # <a name="how-to-create-a-package-manifest"></a>방법: 패키지 매니페스트 만들기
 응용 프로그램에 대 한 필수 구성 요소를 배포 하기 위해 부트스트래퍼 패키지를 사용할 수 있습니다. 부트스트래퍼 패키지는 단일 제품 매니페스트 파일을 포함 하지만 각 로캘에 대 한 패키지 매니페스트를 포함 합니다. 서로 다른 지역화 된 버전에서 공유 되는 기능은 제품 매니페스트로 이동 해야 합니다.
@@ -34,11 +36,11 @@ ms.locfileid: "90851712"
 
 #### <a name="to-create-the-package-manifest"></a>패키지 매니페스트를 만들려면
 
-1. 부트스트래퍼 패키지에 대 한 디렉터리를 만듭니다. 이 예에서는 *C:\package*를 사용 합니다.
+1. 부트스트래퍼 패키지에 대 한 디렉터리를 만듭니다. 이 예에서는 *C:\package* 를 사용 합니다.
 
 2. 로캘 이름 (예: 영어의 경우 *en* )을 사용 하 여 하위 디렉터리를 만듭니다.
 
-3. Visual Studio에서 *package.xml*이라는 XML 파일을 만들고 *C:\package\en* 폴더에 저장 합니다.
+3. Visual Studio에서 *package.xml* 이라는 XML 파일을 만들고 *C:\package\en* 폴더에 저장 합니다.
 
 4. XML을 추가 하 여 부트스트래퍼 패키지의 이름,이 지역화 된 패키지 매니페스트의 culture 및 선택적 라이선스 계약을 나열 합니다. 다음 XML에서는 및 변수를 사용 합니다 .이 변수는 `DisplayName` `Culture` 이후 요소에 정의 되어 있습니다.
 

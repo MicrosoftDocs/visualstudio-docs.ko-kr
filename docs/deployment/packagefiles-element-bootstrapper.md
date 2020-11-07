@@ -1,5 +1,7 @@
 ---
 title: '&lt;PackageFiles &gt; 요소 (부트스트래퍼) | Microsoft Docs'
+description: Command 요소의 결과로 실행 되는 설치 패키지를 정의 하는 PackageFile 요소를 포함 하는 PackageFiles 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747520"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349544"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 요소 (부트스트래퍼)
 요소는 요소의 `PackageFiles` `PackageFile` 결과로 실행 되는 설치 패키지를 정의 하는 요소를 포함 합니다 `Command` .
@@ -55,13 +57,13 @@ ms.locfileid: "66747520"
 
 | 특성 | 설명 |
 |---------------| - |
-| `Name` | 필수 요소. 패키지 파일의 이름입니다. `Command`패키지를 설치 하는 조건을 정의할 때 요소가 참조 하는 이름입니다. 이 값은 `Strings` 와 같은 도구 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 패키지를 설명 하는 데 사용 하는 지역화 된 이름을 검색 하기 위해 테이블의 키로도 사용 됩니다. |
+| `Name` | 필수 사항입니다. 패키지 파일의 이름입니다. `Command`패키지를 설치 하는 조건을 정의할 때 요소가 참조 하는 이름입니다. 이 값은 `Strings` 와 같은 도구 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 패키지를 설명 하는 데 사용 하는 지역화 된 이름을 검색 하기 위해 테이블의 키로도 사용 됩니다. |
 | `HomeSite` | 선택 사항입니다. 설치 관리자에 포함 되어 있지 않은 경우 원격 서버에 있는 패키지의 위치입니다. |
 | `CopyOnBuild` | 선택 사항입니다. 부트스트래퍼가 빌드 시 패키지 파일을 디스크에 복사할지 여부를 지정 합니다. 기본값은 true입니다. |
 | `PublicKey` | 패키지의 인증서 서명자에 대 한 암호화 된 공개 키입니다. `HomeSite`을 사용 하는 경우 필수이 고, 그렇지 않으면 선택적입니다. |
 | `Hash` | 선택 사항입니다. 패키지 파일의 SHA1 해시입니다. 이는 설치 시 파일의 무결성을 확인 하는 데 사용 됩니다. 패키지 파일에서 동일한 해시를 계산할 수 없는 경우 패키지가 설치 되지 않습니다. |
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 .NET Framework 재배포 가능 패키지에 대 한 패키지 및 Windows Installer와 같은 해당 종속성을 정의 합니다.
 
 ```xml
@@ -73,7 +75,7 @@ ms.locfileid: "66747520"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [\<Product> 요소인](../deployment/product-element-bootstrapper.md)
 - [\<Package> 요소인](../deployment/package-element-bootstrapper.md)
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

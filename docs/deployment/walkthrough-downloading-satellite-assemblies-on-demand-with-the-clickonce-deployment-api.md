@@ -1,5 +1,6 @@
 ---
 title: 요청 시 위성 어셈블리 다운로드 (ClickOnce API)
+description: 위성 어셈블리를 선택 사항으로 표시 하 고 클라이언트 컴퓨터의 현재 문화권 설정에 필요한 어셈블리만 다운로드 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809239"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349297"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API를 사용 하 여 요청 시 위성 어셈블리 다운로드
 위성 어셈블리를 사용하면 Windows Forms 애플리케이션을 여러 문화권에 맞게 구성할 수 있습니다. *위성 어셈블리* 는 애플리케이션의 기본 문화권 이외의 문화권을 위한 애플리케이션 리소스가 포함된 어셈블리입니다.
@@ -51,11 +52,11 @@ ms.locfileid: "90809239"
 
 2. [Resgen.exe (리소스 파일 생성기)](/dotnet/framework/tools/resgen-exe-resource-file-generator) 또는을 사용 하 여 응용 프로그램에 대 한 위성 어셈블리를 생성 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다.
 
-3. 애플리케이션 매니페스트를 생성하거나 *MageUI.exe*를 사용하여 기존 애플리케이션 매니페스트를 엽니다. 이 도구에 대 한 자세한 내용은 참조 하세요. [MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)합니다.
+3. 애플리케이션 매니페스트를 생성하거나 *MageUI.exe* 를 사용하여 기존 애플리케이션 매니페스트를 엽니다. 이 도구에 대 한 자세한 내용은 참조 하세요. [MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)합니다.
 
 4. **파일** 탭을 클릭합니다.
 
-5. **줄임표** 단추(**...**)를 클릭하고 *Resgen.exe*를 사용하여 생성한 위성 어셈블리를 비롯한 애플리케이션의 모든 어셈블리와 파일이 포함된 디렉터리를 선택합니다. 위성 어셈블리의 이름은 * \<isoCode>\ApplicationName.resources.dll*형식으로 \<isoCode> 지정 됩니다. 여기서은 RFC 1766 형식의 언어 식별자입니다.
+5. **줄임표** 단추( **...** )를 클릭하고 *Resgen.exe* 를 사용하여 생성한 위성 어셈블리를 비롯한 애플리케이션의 모든 어셈블리와 파일이 포함된 디렉터리를 선택합니다. 위성 어셈블리의 이름은 *\<isoCode>\ApplicationName.resources.dll* 형식으로 \<isoCode> 지정 됩니다. 여기서은 RFC 1766 형식의 언어 식별자입니다.
 
 6. **채우기** 를 클릭하여 배포에 파일을 추가합니다.
 
@@ -66,5 +67,5 @@ ms.locfileid: "90809239"
 ## <a name="next-steps"></a>다음 단계
  프로덕션 환경에서는 기본적으로 클라이언트 컴퓨터에 올바른 값이 설정되어 있으므로 <xref:System.Threading.Thread.CurrentUICulture%2A> 를 특정 값으로 설정하는 줄을 코드 예제에서 제거해야 할 수 있습니다. 예를 들어 애플리케이션이 일본어 클라이언트 컴퓨터에서 실행될 경우 <xref:System.Threading.Thread.CurrentUICulture%2A> 는 기본적으로 `ja-JP` 입니다. 애플리케이션을 배포하기 전에 이 값을 프로그래밍 방식으로 설정하면 위성 어셈블리를 쉽게 테스트할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 지역화](../deployment/localizing-clickonce-applications.md)

@@ -1,5 +1,6 @@
 ---
 title: 비주얼 스타일을 사용 하 여 WPF 앱 게시
+description: 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하는 방법에 대해 알아봅니다 .이를 통해 사용자가 선택한 테마에 따라 컨트롤의 모양이 변경 될 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810460"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349856"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
 
@@ -50,17 +51,17 @@ ms.locfileid: "90810460"
 
     **Visual Basic 프로젝트에서 매니페스트 파일을 열려면**
 
-    1. 메뉴 모음에서 **프로젝트**, *projectname* **속성**을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
+    1. 메뉴 모음에서 **프로젝트** , *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
 
          WPF 프로젝트에 대 한 속성 페이지가 나타납니다.
 
-    2. **응용 프로그램** 탭에서 **Windows 설정 보기**를 선택 합니다.
+    2. **응용 프로그램** 탭에서 **Windows 설정 보기** 를 선택 합니다.
 
-         응용 프로그램 매니페스트 파일은 **코드 편집기**에서 열립니다.
+         응용 프로그램 매니페스트 파일은 **코드 편집기** 에서 열립니다.
 
     **C # 프로젝트에서 매니페스트 파일을 열려면**
 
-    1. 메뉴 모음에서 **프로젝트**, *projectname* **속성**을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
+    1. 메뉴 모음에서 **프로젝트** , *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
 
          WPF 프로젝트에 대 한 속성 페이지가 나타납니다.
 
@@ -69,7 +70,7 @@ ms.locfileid: "90810460"
         > [!NOTE]
         > 매니페스트 필드에 **기본 설정이 있는 매니페스트 포함** 또는 **매니페스트가 없는 응용 프로그램 만들기** 가 표시 되는 경우 비주얼 스타일을 사용할 수 없습니다. 매니페스트 파일의 이름이 매니페스트 필드에 표시 되는 경우이 절차의 다음 단계를 진행 합니다.
 
-    3. **솔루션 탐색기**에서 **모든 파일 표시**를 선택합니다.
+    3. **솔루션 탐색기** 에서 **모든 파일 표시** 를 선택합니다.
 
          이 단추는 제외 된 항목 및 일반적으로 숨겨지는 항목을 포함 하 여 모든 프로젝트 항목을 표시 합니다. 매니페스트 파일은 프로젝트 항목으로 표시 됩니다.
 
@@ -96,27 +97,27 @@ ms.locfileid: "90810460"
     </asmv1:assembly>
     ```
 
-2. 메모장에서 **파일**을 클릭 한 다음 다른 **이름으로 저장**을 클릭 합니다.
+2. 메모장에서 **파일** 을 클릭 한 다음 다른 **이름으로 저장** 을 클릭 합니다.
 
-3. 다른 이름 **으로 저장** 대화 상자의 파일 **형식** 드롭다운 목록에서 **모든 파일**을 선택 합니다.
+3. 다른 이름 **으로 저장** 대화 상자의 파일 **형식** 드롭다운 목록에서 **모든 파일** 을 선택 합니다.
 
 4. **파일 이름 상자에서** 파일 이름을 파일 이름 끝에 추가 하 고 .manifest를 추가 *합니다* . 예: *themes*.
 
-5. **폴더 찾아보기** 단추를 선택 하 고 폴더를 선택한 다음 **저장**을 클릭 합니다.
+5. **폴더 찾아보기** 단추를 선택 하 고 폴더를 선택한 다음 **저장** 을 클릭 합니다.
 
     > [!NOTE]
     > 나머지 절차에서는이 파일의 이름이 *themes* 이 고 파일이 컴퓨터의 *C:\temp* 디렉터리에 저장 되어 있다고 가정 합니다.
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>게시 된 솔루션의 실행 파일에 매니페스트 파일 포함
 
-1. **Visual Studio 명령 프롬프트**를 엽니다.
+1. **Visual Studio 명령 프롬프트** 를 엽니다.
 
-    **Visual Studio 명령 프롬프트**를 여는 방법에 대 한 자세한 내용은 [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조 하세요.
+    **Visual Studio 명령 프롬프트** 를 여는 방법에 대 한 자세한 내용은 [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조 하세요.
 
    > [!NOTE]
    > 나머지 단계는 솔루션에 대해 다음과 같은 가정을 합니다.
    >
-   > - 솔루션 이름은 **MyWPFProject**입니다.
+   > - 솔루션 이름은 **MyWPFProject** 입니다.
    > - 솔루션은 다음 디렉터리에 `%UserProfile%\Documents\Visual Studio 2010\Projects\` 있습니다.
    >
    > - 솔루션은 다음 디렉터리에 게시 `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` 됩니다.
@@ -176,7 +177,7 @@ ms.locfileid: "90810460"
 
    이러한 단계를 수행한 후에는 게시 된 파일을 최종 사용자가 응용 프로그램을 설치 하려는 위치로 이동할 수 있습니다. 솔루션을 자주 업데이트 하려는 경우 이러한 명령을 스크립트로 이동 하 고 새 버전을 게시할 때마다 스크립트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 -[ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [비주얼 스타일 개요](/windows/desktop/Controls/visual-styles-overview)

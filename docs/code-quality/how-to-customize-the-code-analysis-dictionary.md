@@ -1,6 +1,8 @@
 ---
 title: '방법: 코드 분석 사전 사용자 지정'
 ms.date: 11/04/2016
+description: 철자 및 이름 지정 규칙 오류를 식별 하는 코드 분석 사전에 대해 알아봅니다. 사용자 지정 사전을 만들어 프로젝트에 적용 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
@@ -12,22 +14,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453646"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348738"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 
 코드 분석에서는 기본 제공 사전을 사용 하 여 코드에서 코드의 식별자를 검사 하 여 철자, 문법적 사례 및 .NET 디자인 지침의 다른 명명 규칙에서 오류를 확인 합니다. 사용자 지정 사전 Xml 파일을 만들어 용어, 약어 및 머리글자어를 기본 제공 사전에 추가, 제거 또는 수정할 수 있습니다.
 
-예를 들어 코드에 **DoorKnokker**이라는 클래스가 포함 되어 있다고 가정 합니다. 코드 분석에서는 두 단어 ( **문** 및 **knokker**)의 복합형로 이름을 식별 합니다. 그러면 **knokker** 의 철자가 잘못 되었다는 경고가 발생 합니다. 코드 분석에서 철자를 인식할 수 있도록 하려면 **knokker** 이라는 용어를 사용자 지정 사전에 추가 합니다.
+예를 들어 코드에 **DoorKnokker** 이라는 클래스가 포함 되어 있다고 가정 합니다. 코드 분석에서는 두 단어 ( **문** 및 **knokker** )의 복합형로 이름을 식별 합니다. 그러면 **knokker** 의 철자가 잘못 되었다는 경고가 발생 합니다. 코드 분석에서 철자를 인식할 수 있도록 하려면 **knokker** 이라는 용어를 사용자 지정 사전에 추가 합니다.
 
 ## <a name="to-create-a-custom-dictionary"></a>사용자 지정 사전을 만들려면
 
-**CustomDictionary.xml**라는 파일을 만듭니다.
+**CustomDictionary.xml** 라는 파일을 만듭니다.
 
 다음 XML 구조를 사용 하 여 사용자 지정 단어를 정의 합니다.
 
@@ -264,14 +266,14 @@ Dictionary/머리글자어/CasingExceptions 노드의 용어는 다음 코드 �
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> 프로젝트에 사용자 지정 사전을 적용 하려면
 
-1. **솔루션 탐색기**에서 다음 절차 중 하나를 사용 합니다.
+1. **솔루션 탐색기** 에서 다음 절차 중 하나를 사용 합니다.
 
-    - 단일 프로젝트에 사전을 추가 하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭 한 다음 **기존 항목 추가**를 클릭 합니다. **기존 항목 추가** 대화 상자에서 파일을 지정 합니다.
+    - 단일 프로젝트에 사전을 추가 하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭 한 다음 **기존 항목 추가** 를 클릭 합니다. **기존 항목 추가** 대화 상자에서 파일을 지정 합니다.
   
-    - 둘 이상의 프로젝트 간에 공유 되는 사전을 추가 하려면 **기존 항목 추가** 대화 상자에서 공유할 파일을 찾고 **추가** 단추에서 아래쪽 화살표를 클릭 한 다음 **링크로 추가**를 클릭 합니다.
+    - 둘 이상의 프로젝트 간에 공유 되는 사전을 추가 하려면 **기존 항목 추가** 대화 상자에서 공유할 파일을 찾고 **추가** 단추에서 아래쪽 화살표를 클릭 한 다음 **링크로 추가** 를 클릭 합니다.
 
-2. **솔루션 탐색기**에서 **CustomDictionary.xml** 파일 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
+2. **솔루션 탐색기** 에서 **CustomDictionary.xml** 파일 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 클릭 합니다.
 
-3. **빌드 작업** 목록에서 **CodeAnalysisDictionary**를 선택 합니다.
+3. **빌드 작업** 목록에서 **CodeAnalysisDictionary** 를 선택 합니다.
 
-4. **출력 디렉터리에 복사** 목록에서 **복사 안 함**을 선택 합니다.
+4. **출력 디렉터리에 복사** 목록에서 **복사 안 함** 을 선택 합니다.

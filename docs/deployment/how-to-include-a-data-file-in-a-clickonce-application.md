@@ -1,5 +1,6 @@
 ---
 title: ClickOnce 앱에 데이터 파일 포함
+description: 모든 형식의 데이터 파일을 ClickOnce 응용 프로그램에 추가 하 여 대상 컴퓨터의 로컬 디스크에 있는 데이터 디렉터리에 저장 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809148"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349947"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 데이터 파일 포함
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]설치 하는 각 응용 프로그램에는 응용 프로그램이 자체 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 데이터 디렉터리가 할당 됩니다. 데이터 파일에는 텍스트 파일, XML 파일 또는 Microsoft Access 데이터베이스 (*.mdb*) 파일 등 모든 형식의 파일이 포함 될 수 있습니다. 다음 절차에서는 모든 형식의 데이터 파일을 응용 프로그램에 추가 하는 방법을 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]설치 하는 각 응용 프로그램에는 응용 프로그램이 자체 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 데이터 디렉터리가 할당 됩니다. 데이터 파일에는 텍스트 파일, XML 파일 또는 Microsoft Access 데이터베이스 ( *.mdb* ) 파일 등 모든 형식의 파일이 포함 될 수 있습니다. 다음 절차에서는 모든 형식의 데이터 파일을 응용 프로그램에 추가 하는 방법을 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe를 사용 하 여 데이터 파일을 포함 하려면
 
@@ -69,11 +70,11 @@ ms.locfileid: "90809148"
 
 4. **파일** 탭을 선택 합니다.
 
-5. 탭의 맨 위에 있는 텍스트 상자에 응용 프로그램 파일이 포함 된 디렉터리를 입력 하 고 **채우기**를 클릭 합니다.
+5. 탭의 맨 위에 있는 텍스트 상자에 응용 프로그램 파일이 포함 된 디렉터리를 입력 하 고 **채우기** 를 클릭 합니다.
 
      데이터 파일이 표에 표시 됩니다.
 
-6. 데이터 파일의 **파일 유형** 값을 **데이터**로 설정 합니다.
+6. 데이터 파일의 **파일 유형** 값을 **데이터** 로 설정 합니다.
 
 7. 응용 프로그램 매니페스트를 저장 하 고 파일에 다시 서명 합니다.
 
@@ -83,5 +84,5 @@ ms.locfileid: "90809148"
 
      응용 프로그램 매니페스트의 해시가 변경 되었으므로 배포 매니페스트에 다시 서명 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

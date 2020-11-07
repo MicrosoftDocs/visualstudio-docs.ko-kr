@@ -1,5 +1,7 @@
 ---
 title: 디자이너를 사용 하 여 ClickOnce 응용 프로그램의 URL 활성화 사용 안 함
+description: Visual Studio를 사용 하 여 ClickOnce 응용 프로그램의 자동 시작을 사용 하지 않도록 설정 하 여 사용자가 시작 메뉴에서 응용 프로그램을 시작 해야 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382486"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350012"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>방법: 디자이너를 사용하여 ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
 일반적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 웹 서버에서 설치 된 직후 자동으로 시작 됩니다. 보안상의 이유로이 동작을 사용 하지 않도록 설정 하 고, 대신 **시작** 메뉴에서 응용 프로그램을 시작 하도록 사용자에 게 지시할 수 있습니다. 다음 절차에서는 URL 활성화를 사용하지 않도록 설정하는 방법에 대해 설명합니다.
@@ -30,21 +32,21 @@ ms.locfileid: "85382486"
 
  이 절차에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 사용 합니다. 을 사용 하 여이 작업을 수행할 수도 있습니다 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . 자세한 내용은 [방법: ClickOnce 응용 프로그램의 URL 활성화 사용 안 함](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)을 참조 하세요.
 
-## <a name="procedure"></a>프로시저
+## <a name="procedure"></a>절차
 
 #### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면
 
-1. **솔루션 탐색기**에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 클릭 합니다.
 
 2. **속성** 페이지에서 **게시** 탭을 클릭 합니다.
 
-3. **옵션**을 클릭합니다.
+3. **옵션** 을 클릭합니다.
 
-4. **매니페스트**를 클릭 합니다.
+4. **매니페스트** 를 클릭 합니다.
 
-5. **URL을 통해 응용 프로그램을 활성화 하지 않도록 차단**확인란을 선택 합니다.
+5. **URL을 통해 응용 프로그램을 활성화 하지 않도록 차단** 확인란을 선택 합니다.
 
 6. 애플리케이션을 배포합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)

@@ -1,6 +1,8 @@
 ---
 title: 관리 코드에 대한 확장 디자인 지침 규칙 규칙 집합
 ms.date: 11/04/2016
+description: 유용성 및 유지 관리에 중점을 둔 Visual Studio의 확장 된 디자인 지침 규칙 규칙 집합에 대해 알아봅니다. 규칙 설명을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8062ef99d3c1ad43b633e896617e95851a40930a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 0da23a533ca7667ba946299a3197dd487999afec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658596"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348985"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>관리 코드에 대한 확장 디자인 지침 규칙 규칙 집합
 

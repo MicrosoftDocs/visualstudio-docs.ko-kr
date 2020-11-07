@@ -1,6 +1,8 @@
 ---
 title: .NET 용으로 코드 분석을 수동으로 실행 하는 방법
 ms.date: 09/02/2020
+description: 'Visual Studio 2019 버전 16.5 이상 버전에서 코드 분석을 수동으로 실행 하는 방법에 대해 알아봅니다. C # 또는 Visual Basic 코드에서 Roslyn 분석기를 실행 하는 방법을 참조 하세요.'
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037161"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348725"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>.NET에 대해 수동으로 코드 분석 실행
 기본적으로 .NET Compiler Platform ("Roslyn") 분석기는 실시간 분석을 수행 하 고 빌드 중에도 입력할 때 c # 또는 Visual Basic 코드를 분석 합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.
@@ -29,8 +31,8 @@ ms.locfileid: "90037161"
 
 ### <a name="run-code-analysis-manually"></a>수동으로 코드 분석 실행
 
-1. **솔루션 탐색기**에서 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 선택 합니다.
 
 2. **분석** 메뉴에서 *프로젝트 이름* **에 대해 코드 분석 실행** 을 선택 합니다.
 
-코드 분석은 백그라운드에서 실행을 시작 합니다. Visual Studio 상태 표시줄에서 왼쪽 아래 모퉁이에 **대 한 코드 분석을 실행 \<project> ** 하는 중 ... 메시지가 표시 됩니다. 코드 분석이 완료 되 면 상태 메시지가 **에 대해 \<project> 완료 된 코드 분석 **으로 변경 됩니다. 모든 코드 분석 진단 기능을 사용 하 여 오류 목록이 곧 새로 고쳐집니다.
+코드 분석은 백그라운드에서 실행을 시작 합니다. Visual Studio 상태 표시줄에서 왼쪽 아래 모퉁이에 **대 한 코드 분석을 실행 \<project>** 하는 중 ... 메시지가 표시 됩니다. 코드 분석이 완료 되 면 상태 메시지가 **에 대해 \<project> 완료 된 코드 분석** 으로 변경 됩니다. 모든 코드 분석 진단 기능을 사용 하 여 오류 목록이 곧 새로 고쳐집니다.

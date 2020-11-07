@@ -1,5 +1,6 @@
 ---
 title: 오류 문제 해결 (ClickOnce 배포)
+description: 이 문서에서는 ClickOnce 응용 프로그램을 배포할 때 발생할 수 있는 일반적인 오류에 대해 설명 하 고 각 문제를 해결 하는 단계를 제공 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809455"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349268"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 이 문서에서는 응용 프로그램을 배포할 때 발생할 수 있는 다음과 같은 일반적인 오류를 나열 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 고 각 문제를 해결 하는 단계를 제공 합니다.
@@ -90,7 +91,7 @@ ms.locfileid: "90809455"
  PrivatePath (Fusion 검색 경로)를 사용 하려면 응용 프로그램이 완전 신뢰 권한을 요청 해야 합니다. 완전 신뢰를 요청 하도록 응용 프로그램 매니페스트를 변경한 후 다시 시도 하십시오.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>제거 하는 동안 "응용 프로그램을 제거 하지 못했습니다." 라는 메시지가 나타납니다.
- 이 메시지는 일반적으로 응용 프로그램이 이미 제거 되었거나 저장소가 손상 되었음을 나타냅니다. **확인**을 클릭 하면 **프로그램 추가/제거** 항목이 제거 됩니다.
+ 이 메시지는 일반적으로 응용 프로그램이 이미 제거 되었거나 저장소가 손상 되었음을 나타냅니다. **확인** 을 클릭 하면 **프로그램 추가/제거** 항목이 제거 됩니다.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>설치 하는 동안 플랫폼 종속성이 설치 되어 있지 않다는 메시지가 표시 됩니다.
  응용 프로그램을 실행 하는 데 필요한 GAC (전역 어셈블리 캐시)에 필수 구성 요소가 누락 되었습니다.
@@ -103,7 +104,7 @@ ms.locfileid: "90809455"
  URL을 사용 하 여 게시 하는 경우 대상 컴퓨터가 FrontPage Server Extensions 사용 하도록 설정 되었는지 확인 합니다.
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>오류 메시지: 웹 사이트 ' '을 (를) 만들 수 없습니다 \<site> . FrontPage Server Extensions와 통신 하기 위한 구성 요소가 설치 되어 있지 않습니다.
- 게시 중인 컴퓨터에 Microsoft Visual Studio 웹 제작 구성 요소가 설치 되어 있는지 확인 합니다. Express 사용자의 경우이 구성 요소는 기본적으로 설치 되지 않습니다. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358)를 참조하세요.
+ 게시 중인 컴퓨터에 Microsoft Visual Studio 웹 제작 구성 요소가 설치 되어 있는지 확인 합니다. Express 사용자의 경우이 구성 요소는 기본적으로 설치 되지 않습니다. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358)을(를) 참조하세요.
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>오류 메시지: 파일 ' 6.0.0.0, Version =, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture = \* , Type = win32 '를 찾을 수 없습니다.
  비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하려고 하면이 오류 메시지가 나타납니다. 이 문제를 해결 하려면 [방법: 비주얼 스타일을 사용 하 여 WPF 응용 프로그램 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)를 참조 하세요.
@@ -113,12 +114,12 @@ ms.locfileid: "90809455"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>인증서 저장소의 인증서를 사용 하 여 서명 하려고 하 고 빈 메시지 상자를 받았습니다.
  **서명** 대화 상자에서 다음을 수행 해야 합니다.
 
-- **저장 된 인증서로 서명**을 선택 하 고
+- **저장 된 인증서로 서명** 을 선택 하 고
 
 - 목록에서 인증서를 선택 합니다. 첫 번째 인증서는 기본 선택 사항이 아닙니다.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>"서명 안 함" 단추를 클릭 하면 예외가 발생 합니다.
- 이 문제는 알려진 버그입니다. 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 매니페스트에 서명 해야 합니다. 서명 옵션 중 하나를 선택한 다음 **확인**을 클릭 하면 됩니다.
+ 이 문제는 알려진 버그입니다. 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 매니페스트에 서명 해야 합니다. 서명 옵션 중 하나를 선택한 다음 **확인** 을 클릭 하면 됩니다.
 
 ## <a name="additional-errors"></a>추가 오류
  다음 표에서는 사용자가 응용 프로그램을 설치할 때 클라이언트 컴퓨터 사용자가 받을 수 있는 몇 가지 일반적인 오류 메시지를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 오류의 가장 가능성이 높은 원인에 대 한 설명 옆에 각 오류 메시지가 나열 됩니다.
@@ -137,7 +138,7 @@ ms.locfileid: "90809455"
 | 네트워크를 통해 바로 가기를 활성화할 수 없습니다. | 응용 프로그램에 대 한 바로 가기는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 로컬 하드 디스크 에서만 시작할 수 있습니다. 원격 서버에서 바로 가기 파일을 가리키는 URL을 열어 시작할 수 없습니다. |
 | 응용 프로그램이 너무 커서 부분 신뢰로 온라인에서 실행할 수 없습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오. | 부분 신뢰로 실행 되는 응용 프로그램은 온라인 응용 프로그램 할당량 크기의 절반 (기본적으로 250 MB) 보다 클 수 없습니다. |
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

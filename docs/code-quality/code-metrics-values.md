@@ -1,6 +1,8 @@
 ---
 title: 코드 메트릭 계산
 ms.date: 11/02/2018
+description: 순환 복잡성, 클래스 결합 및 기타 Visual Studio 코드 메트릭에 대해 알아보세요. 메트릭이 개발 진행률을 추적 하 고 위험을 식별 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599460"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348647"
 ---
 # <a name="code-metrics-values"></a>코드 메트릭 값
 
@@ -46,7 +48,7 @@ Visual Studio에서 코드 메트릭 데이터를 생성 하는 방법에 대 �
 
 - **소스 코드 줄** -빈 줄을 포함 하 여 소스 파일에 있는 소스 코드 줄의 정확한 수를 나타냅니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 2.9.5 (영문)부터 사용할 수 있습니다.
 
-- **실행 코드 줄** -대략적인 실행 코드 줄 또는 작업 수를 나타냅니다. 실행 코드의 작업 수입니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 2.9.5 (영문)부터 사용할 수 있습니다. 값은 일반적으로 레거시 모드에서 사용 되는 MSIL 명령 기반 메트릭에 해당 하는 이전 메트릭과 **코드 줄**의 근접 일치 항목입니다.
+- **실행 코드 줄** -대략적인 실행 코드 줄 또는 작업 수를 나타냅니다. 실행 코드의 작업 수입니다. 이 메트릭은 Visual Studio 2019 버전 16.4 및 2.9.5 (영문)부터 사용할 수 있습니다. 값은 일반적으로 레거시 모드에서 사용 되는 MSIL 명령 기반 메트릭에 해당 하는 이전 메트릭과 **코드 줄** 의 근접 일치 항목입니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

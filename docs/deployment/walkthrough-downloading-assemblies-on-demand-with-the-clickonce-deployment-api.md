@@ -1,5 +1,6 @@
 ---
 title: 요청 시 어셈블리 다운로드 (ClickOnce API)
+description: ClickOnce 응용 프로그램의 특정 어셈블리를 선택 사항으로 표시 하 고 공용 언어 런타임에서 필요할 때 해당 어셈블리를 다운로드 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809252"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349265"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API를 사용 하 여 요청 시 어셈블리 다운로드
 기본적으로 응용 프로그램에 포함 된 모든 어셈블리는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음 실행할 때 다운로드 됩니다. 그러나 소수의 사용자가 사용 하는 응용 프로그램의 일부가 있을 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에서는 애플리케이션의 특정 어셈블리를 "선택 사항"으로 표시하는 방법 및 CLR(공용 언어 런타임)에서 요청할 때 <xref:System.Deployment.Application> 네임스페이스에 있는 클래스를 사용하여 이를 다운로드하는 방법을 설명합니다.
@@ -58,7 +59,7 @@ ms.locfileid: "90809252"
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. 사용 하는 언어에 따라 *ClickOnceLibrary.cs* 또는 *clickoncelibrary.dll 찾고*라는 파일로 텍스트를 *ClickOnceOnDemand* 디렉터리에 저장 합니다.
+6. 사용 하는 언어에 따라 *ClickOnceLibrary.cs* 또는 *clickoncelibrary.dll 찾고* 라는 파일로 텍스트를 *ClickOnceOnDemand* 디렉터리에 저장 합니다.
 
 7. 파일을 어셈블리로 컴파일합니다.
 
@@ -85,7 +86,7 @@ ms.locfileid: "90809252"
 
 11. `PublicKeyToken`을 이전에 검색 한 값으로 설정 합니다.
 
-12. *Form1.cs* 또는 *.vb*로 파일을 저장 합니다.
+12. *Form1.cs* 또는 *.vb* 로 파일을 저장 합니다.
 
 13. 다음 명령을 사용 하 여 실행 파일로 컴파일합니다.
 
@@ -101,15 +102,15 @@ ms.locfileid: "90809252"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>MageUI.exe를 사용 하 여 ClickOnce 응용 프로그램에서 어셈블리를 선택 사항으로 표시 하려면
 
-1. *MageUI.exe*를 사용 하 여 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)에 설명 된 대로 응용 프로그램 매니페스트를 만듭니다. 응용 프로그램 매니페스트에 대해 다음 설정을 사용 합니다.
+1. *MageUI.exe* 를 사용 하 여 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)에 설명 된 대로 응용 프로그램 매니페스트를 만듭니다. 응용 프로그램 매니페스트에 대해 다음 설정을 사용 합니다.
 
     - 응용 프로그램 매니페스트의 이름을로 `ClickOnceOnDemand` 합니다.
 
-    - **파일** 페이지의 *ClickOnceLibrary.dll* 행에서 **파일 형식** 열을 **없음**으로 설정 합니다.
+    - **파일** 페이지의 *ClickOnceLibrary.dll* 행에서 **파일 형식** 열을 **없음** 으로 설정 합니다.
 
     - **파일** 페이지의 *ClickOnceLibrary.dll* 행에 있는 그룹 열에을 입력 `ClickOnceLibrary.dll` 합니다 **Group** .
 
-2. *MageUI.exe*를 사용 하 여 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)에 설명 된 대로 배포 매니페스트를 만듭니다. 배포 매니페스트에 대해 다음 설정을 사용 합니다.
+2. *MageUI.exe* 를 사용 하 여 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)에 설명 된 대로 배포 매니페스트를 만듭니다. 배포 매니페스트에 대해 다음 설정을 사용 합니다.
 
     - 배포 매니페스트의 이름을로 `ClickOnceOnDemand` 합니다.
 
@@ -127,5 +128,5 @@ ms.locfileid: "90809252"
 
 3. 기본 폼이 나타나면 <xref:System.Windows.Forms.Button>을 누릅니다. 메시지 상자 창에 "Hello, World!"라는 문자열이 표시되어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application.ApplicationDeployment>

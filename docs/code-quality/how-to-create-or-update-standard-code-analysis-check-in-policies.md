@@ -1,5 +1,6 @@
 ---
 title: 표준 코드 분석 체크 인 정책 만들기/업데이트
+description: Azure DevOps 프로젝트의 모든 코드 프로젝트에서 코드 분석이 실행 되도록 하는 방법에 대해 알아봅니다. 프로젝트 코드 분석 체크 인 정책을 구성 하는 방법을 참조 하세요.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808628"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348764"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -36,7 +37,7 @@ ms.locfileid: "90808628"
 
 ## <a name="to-open-the-check-in-policy-editor"></a>체크 인 정책 편집기를 열려면
 
-1. 팀 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 **프로젝트 설정**을 가리킨 다음 **소스 제어**를 클릭 합니다.
+1. 팀 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭 하 고 **프로젝트 설정** 을 가리킨 다음 **소스 제어** 를 클릭 합니다.
 
 1. **원본 제어** 대화 상자에서 **체크 인 정책** 탭을 선택 합니다.
 
@@ -68,6 +69,6 @@ ms.locfileid: "90808628"
 
 사용자 지정 체크 인 정책 규칙 집합을 만들고 구현 하는 방법에 대 한 자세한 내용은 [관리 코드에 대 한 사용자 지정 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

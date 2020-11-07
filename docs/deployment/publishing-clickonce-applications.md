@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 응용 프로그램 게시 | Microsoft Docs
+description: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램을 처음으로 게시 하는 방법에 대해 알아봅니다. 프로젝트 디자이너의 게시 페이지에서 나중에 변경 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,17 +22,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641538"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349492"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 애플리케이션 게시
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.
 
- 이후 게시 속성 변경은 **프로젝트 디자이너**의 **게시** 페이지에서 수행합니다.
+ 이후 게시 속성 변경은 **프로젝트 디자이너** 의 **게시** 페이지에서 수행합니다.
 
 ## <a name="publish-wizard"></a>게시 마법사
  게시 마법사를 사용하여 애플리케이션 게시를 위한 기본 설정을 지정할 수 있습니다. 여기에는 다음과 같은 게시 속성이 포함됩니다.
@@ -54,7 +56,7 @@ ms.locfileid: "89641538"
 |[방법: 최종 사용자가 설치하는 원본 위치 지정](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|사용자가 애플리케이션을 다운로드하고 설치할 수 있는 위치를 설정하는 방법을 설명합니다.|
 |[방법: ClickOnce 오프라인 또는 온라인 설치 모드 지정](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|애플리케이션을 오프라인으로 제공할지 아니면 온라인으로 제공할지를 설정하는 방법을 설명합니다.|
 |[방법: ClickOnce 게시 버전 설정](../deployment/how-to-set-the-clickonce-publish-version.md)|게시하는 애플리케이션을 업데이트로 간주할지 여부를 결정하는 ClickOnce **게시 버전** 속성을 설정하는 방법을 설명합니다.|
-|[방법: ClickOnce 게시 버전 자동 증가](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|애플리케이션을 게시할 때마다 **PublishVersion**의 수정 번호를 자동으로 증분하는 방법을 설명합니다.|
+|[방법: ClickOnce 게시 버전 자동 증가](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|애플리케이션을 게시할 때마다 **PublishVersion** 의 수정 번호를 자동으로 증분하는 방법을 설명합니다.|
 
  자세한 내용은 [프로젝트 디자이너, 게시 페이지](../ide/reference/publish-page-project-designer.md) 를 참조 하세요.
 
@@ -90,7 +92,7 @@ ms.locfileid: "89641538"
 |[방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|ClickOnce 애플리케이션을 실행하는 데 사용되는 URL에 전달된 매개 변수를 검색하는 방법을 보여 줍니다.|
 |[방법: 디자이너를 사용하여 ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|사용자가 디자이너를 사용하여 **시작** 메뉴에서 애플리케이션을 강제로 시작하도록 하는 방법을 설명합니다.|
 |[방법: ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|사용자가 **시작** 메뉴에서 애플리케이션을 강제로 시작하도록 하는 방법을 설명합니다.|
-|[연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 디자이너를 사용하여 다운로드하는 방법을 설명합니다.|
+|[연습: 디자이너를 사용 하 여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 디자이너를 사용하여 다운로드하는 방법을 설명합니다.|
 |[연습: ClickOnce 배포 API를 사용 하 여 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 다운로드하는 방법을 설명합니다.|
 |[연습: ClickOnce 배포 API를 사용 하 여 요청 시 위성 어셈블리 다운로드](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|위성 어셈블리를 선택적 항목으로 표시하고 클라이언트 컴퓨터의 현재 문화권 설정에 필요한 어셈블리만 다운로드하는 방법을 설명합니다.|
 |[연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|
@@ -100,6 +102,6 @@ ms.locfileid: "89641538"
 |[연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|ClickOnce 애플리케이션을 설치하는 사용자 지정 설치 관리자를 만드는 방법을 설명합니다.|
 |[방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|비주얼 스타일을 사용하는 WPF 애플리케이션을 게시할 때 발생하는 오류를 해결하기 위한 단계별 지침을 제공합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 참조](../deployment/clickonce-reference.md)

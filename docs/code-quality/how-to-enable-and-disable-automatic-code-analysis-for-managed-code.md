@@ -1,16 +1,18 @@
 ---
 title: 레거시 코드 분석 사용 안 함
 ms.date: 10/04/2019
+description: Visual Studio에서 이진 코드 분석을 설정 및 해제 하는 방법에 대해 알아봅니다. 관리 코드 프로젝트에서이 기능을 구성 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801024"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348751"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 이진 코드 분석 사용 및 사용 안 함
 
@@ -21,11 +23,11 @@ ms.locfileid: "88801024"
 
 레거시 코드 분석을 사용 하거나 사용 하지 않도록 설정 하려면:
 
-1. **솔루션 탐색기**에서 프로젝트를 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 선택 하 고 저장 하거나 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 선택 합니다.
 
 2. 프로젝트에 대 한 속성 대화 상자에서 **코드 분석** 탭으로 이동 합니다.
 
-3. **구성** 의 빌드 형식과 **플랫폼**의 대상 플랫폼을 지정 합니다. (Non-.NET Core/.NET Standard 프로젝트에만 해당)
+3. **구성** 의 빌드 형식과 **플랫폼** 의 대상 플랫폼을 지정 합니다. (Non-.NET Core/.NET Standard 프로젝트에만 해당)
 
 ::: moniker range="vs-2017"
 

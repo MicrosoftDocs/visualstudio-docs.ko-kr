@@ -1,5 +1,7 @@
 ---
 title: '&lt;Signature &gt; 요소 (ClickOnce 배포) | Microsoft Docs'
+description: Signature 요소에는이 배포 매니페스트에 디지털 서명 하는 데 필요한 정보가 포함 되어 있습니다. 배포 매니페스트에 서명 하는 것은 선택 사항 이지만 권장 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835422"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349284"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature &gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다.
@@ -28,8 +30,8 @@ ms.locfileid: "85835422"
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 
@@ -38,7 +40,7 @@ ms.locfileid: "85835422"
 
  매니페스트에 서명 하려면 모든 파일에 대해 해시를 제공 해야 합니다. 사용자는 해시 되지 않은 파일의 콘텐츠를 확인할 수 없으므로 해시 되지 않은 파일이 있는 매니페스트는 서명할 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 `Signature` 배포에 사용 되는 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ```xml
@@ -70,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

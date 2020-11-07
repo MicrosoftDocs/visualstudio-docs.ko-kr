@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 구성
 ms.date: 04/04/2018
+description: Visual Studio 레거시 코드 분석에서 사용 하는 규칙 집합을 구성 하는 방법에 대해 알아봅니다. 솔루션의 하나 또는 여러 프로젝트에 규칙 집합을 적용 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801050"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348803"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 분석 구성
 
@@ -36,15 +38,15 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
 1. 프로젝트의 속성 페이지에서 **코드 분석** 탭을 엽니다. 다음 방법 중 하나로 이 작업을 수행할 수 있습니다.
 
-   - **솔루션 탐색기**에서 프로젝트를 선택 합니다. 메뉴 모음에서 **분석**  >  **구성 코드 분석**  >  **을 \<projectname> **선택 합니다.
+   - **솔루션 탐색기** 에서 프로젝트를 선택 합니다. 메뉴 모음에서 **분석**  >  **구성 코드 분석**  >  **을 \<projectname>** 선택 합니다.
 
-   - **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택한 다음 **코드 분석** 탭을 선택 합니다.
+   - **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택한 다음 **코드 분석** 탭을 선택 합니다.
 
 2. **구성** 및 **플랫폼** 목록에서 빌드 구성 및 대상 플랫폼을 선택 합니다.
 
 ::: moniker range="vs-2017"
 
-3. 선택한 구성을 사용 하 여 프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 **빌드 시 코드 분석 사용**을 선택 합니다. **분석**  >  **실행 코드 분석**실행  >  **코드 분석 실행을 \<projectname> **선택 하 여 코드 분석을 수동으로 실행할 수도 있습니다.
+3. 선택한 구성을 사용 하 여 프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 **빌드 시 코드 분석 사용** 을 선택 합니다. **분석**  >  **실행 코드 분석** 실행  >  **코드 분석 실행을 \<projectname>** 선택 하 여 코드 분석을 수동으로 실행할 수도 있습니다.
 
 ::: moniker-end
 
@@ -83,9 +85,9 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
 1. Visual Studio에서 솔루션을 엽니다.
 
-2. **분석** 메뉴에서 **솔루션에 대 한 코드 분석 구성**을 선택 합니다.
+2. **분석** 메뉴에서 **솔루션에 대 한 코드 분석 구성** 을 선택 합니다.
 
-3. 필요한 경우 **공용 속성**을 확장 한 다음 **코드 분석 설정**을 선택 합니다.
+3. 필요한 경우 **공용 속성** 을 확장 한 다음 **코드 분석 설정** 을 선택 합니다.
 
 4. 하나 이상의 프로젝트에 대 한 규칙 집합을 지정할 수 있습니다.
 
@@ -97,6 +99,6 @@ Visual Studio에서 코드 분석 [규칙 집합](../code-quality/rule-set-refer
 
 5. 프로젝트의 **규칙 집합** 필드를 선택한 다음 적용 하려는 규칙 집합의 이름을 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

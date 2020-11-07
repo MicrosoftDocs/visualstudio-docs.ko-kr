@@ -1,5 +1,6 @@
 ---
 title: 온라인 ClickOnce 앱에서 쿼리 문자열 정보 검색
+description: ClickOnce 응용 프로그램을 사용 하 여 URL의 쿼리 부분을 읽고, Mageui.exe를 사용 하 여 쿼리 문자열 매개 변수를 허용 하도록 응용 프로그램을 구성 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d289e0b15938e730657a449ef1566bdb6ee8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809769"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349921"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색
-*쿼리 문자열* 은 임의의 정보를 *name=value*형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`애플리케이션이 있으며, 애플리케이션이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.
+*쿼리 문자열* 은 임의의 정보를 *name=value* 형식으로 포함하는, 물음표(?)로 시작되는 URL의 일부입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에 호스트하는 `WindowsApp1` 이라는 이름의 `servername`애플리케이션이 있으며, 애플리케이션이 시작될 때 `username` 변수에 대해 값을 전달하려 한다고 가정해 보겠습니다. URL은 다음과 같습니다.
 
  `http://servername/WindowsApp1.application?username=joeuser`
 
@@ -40,7 +41,7 @@ ms.locfileid: "90809769"
 > [!NOTE]
 > 이 기능의 사용 여부를 결정하기 전에 이 항목의 뒷부분에 나오는 "보안" 섹션을 참조하세요.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Mage.exe* 또는 *MageUI.exe*를 사용 하 여 배포를 만드는 방법에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Mage.exe* 또는 *MageUI.exe* 를 사용 하 여 배포를 만드는 방법에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
 
 > [!NOTE]
 > .NET Framework 3.5 SP1부터 명령줄 인수를 오프라인 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달할 수 있습니다. 애플리케이션에 인수를 제공하려는 경우 .APPREF-MS 확장명의 바로 가기 파일에 매개 변수를 전달할 수 있습니다.
@@ -62,14 +63,14 @@ ms.locfileid: "90809769"
    MageUI
    ```
 
-2. **파일** 메뉴에서 **열기**를 선택하고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 대한 배포 매니페스트를 엽니다( `.application` 확장명으로 끝나는 파일).
+2. **파일** 메뉴에서 **열기** 를 선택하고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 대한 배포 매니페스트를 엽니다( `.application` 확장명으로 끝나는 파일).
 
 3. 왼쪽 탐색 창에서 **배포 옵션** 패널을 선택하고, **애플리케이션으로 URL 매개 변수가 전달되도록 허용** 확인란을 선택합니다.
 
-4. **파일** 메뉴에서 **저장**을 선택합니다.
+4. **파일** 메뉴에서 **저장** 을 선택합니다.
 
 > [!NOTE]
-> 또는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서 쿼리 문자열이 전달되도록 할 수 있습니다. **프로젝트 속성** 을 열고 **게시**탭을 선택하고 **옵션** 단추를 클릭한 다음 **매니페스트** 를 선택하여 **애플리케이션으로 URL 매개 변수가 전달되도록 허용**확인란을 선택합니다.
+> 또는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서 쿼리 문자열이 전달되도록 할 수 있습니다. **프로젝트 속성** 을 열고 **게시** 탭을 선택하고 **옵션** 단추를 클릭한 다음 **매니페스트** 를 선택하여 **애플리케이션으로 URL 매개 변수가 전달되도록 허용** 확인란을 선택합니다.
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
  쿼리 문자열 매개 변수를 사용할 경우 애플리케이션의 설치 및 활성화 방법에 대해 신중해야 합니다. 웹 또는 네트워크 공유에서 애플리케이션을 사용자 컴퓨터에 설치하도록 구성한 경우 사용자는 URL을 통해 애플리케이션을 한 번만 활성화할 가능성이 있습니다. 그런 다음 사용자는 대개 **시작** 메뉴의 바로 가기를 사용하여 애플리케이션을 활성화합니다. 그 결과 애플리케이션은 수명 동안 쿼리 문자열 인수를 한 번만 수신하도록 보장됩니다. 나중에 사용할 수 있도록 사용자의 컴퓨터에 이러한 인수를 저장하기로 선택한 경우 안전한 방식으로 저장해야 합니다.
@@ -79,5 +80,5 @@ ms.locfileid: "90809769"
 ## <a name="net-framework-security"></a>.NET Framework 보안
  악의적인 문자의 입력을 사용 전에 지우려는 경우에만 URL 매개 변수가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 전달되도록 하세요. 예를 들어 따옴표, 슬래시 또는 세미콜론이 포함된 문자열은 데이터베이스에 대한 SQL 쿼리에서 필터링되지 않고 사용될 경우 임의의 데이터 작업을 수행할 수 있습니다. 쿼리 문자열 보안에 대 한 자세한 내용은 [스크립트 악용 개요](/previous-versions/w1sw53ds(v=vs.140))를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

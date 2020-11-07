@@ -1,5 +1,6 @@
 ---
 title: 배포 업데이트를 위한 대체 위치 지정
+description: 배포 매니페스트에서 ClickOnce 응용 프로그램에 대 한 업데이트를 위한 대체 위치를 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808752"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349648"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>방법: 배포 업데이트를 위한 대체 위치 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]처음에 CD 또는 파일 공유에서 응용 프로그램을 설치할 수 있지만 응용 프로그램은 웹에서 정기적으로 업데이트를 확인 해야 합니다. 초기 설치 후 응용 프로그램이 웹에서 자동으로 업데이트 될 수 있도록 배포 매니페스트에서 업데이트에 대 한 대체 위치를 지정할 수 있습니다.
@@ -39,7 +40,7 @@ ms.locfileid: "90808752"
 
 3. **배포 옵션** 탭을 선택합니다.
 
-4. **시작 위치**라는 텍스트 상자에 응용 프로그램 업데이트에 대 한 배포 매니페스트를 포함 하는 디렉터리에 대 한 URL을 입력 합니다.
+4. **시작 위치** 라는 텍스트 상자에 응용 프로그램 업데이트에 대 한 배포 매니페스트를 포함 하는 디렉터리에 대 한 URL을 입력 합니다.
 
 5. 배포 매니페스트를 저장 합니다.
 
@@ -54,14 +55,14 @@ ms.locfileid: "90808752"
 3. 파일을 저장합니다.
 
    > [!NOTE]
-   > 이제 *Mage.exe*를 사용 하 여 파일에 다시 서명 해야 합니다. 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
+   > 이제 *Mage.exe* 를 사용 하 여 파일에 다시 서명 해야 합니다. 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
 
 ## <a name="net-framework-security"></a>.NET Framework 보안
  CD와 같은 오프 라인 미디어에서 응용 프로그램을 설치 하 고 컴퓨터가 온라인 상태 이면는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 먼저 배포 매니페스트의 태그에 지정 된 URL을 확인 `<deploymentProvider>` 하 여 업데이트 위치에 최신 버전의 응용 프로그램이 포함 되어 있는지 확인 합니다. 이 경우에서 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 초기 설치 디렉터리 대신 응용 프로그램을 직접 설치 하 고 CLR (공용 언어 런타임)에서를 사용 하 여 응용 프로그램의 신뢰 수준을 결정 합니다 `<deploymentProvider>` . 컴퓨터가 오프 라인 이거나 연결할 수 없는 경우는 `<deploymentProvider>` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cd에서 설치 하 고, CLR은 설치 지점에 따라 트러스트를 부여 합니다. CD 설치의 경우 응용 프로그램이 완전 신뢰를 수신 합니다. 모든 후속 업데이트는 해당 신뢰 수준을 상속 합니다.
 
  를 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 사용 하는 모든 응용 프로그램은 응용 프로그램 `<deploymentProvider>` 매니페스트에서 필요한 사용 권한을 명시적으로 선언 해야 합니다. 따라서 응용 프로그램은 서로 다른 컴퓨터에서 서로 다른 신뢰 수준을 수신 하지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

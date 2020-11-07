@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 애플리케이션 오류
 ms.date: 11/04/2016
+description: 관리 코드 분석 도구가 Visual Studio에서 생성 하는 오류 메시지에 대해 알아봅니다. 오류 코드 및 해당 설명을 봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521318"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348504"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 
 이 섹션은 관리 코드 분석 도구에서 생성 되는 오류 메시지에 대 한 참조입니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 |코드|Description|
 |-|-|
@@ -39,12 +41,12 @@ ms.locfileid: "85521318"
 |[CA0058](ca0058.md)|참조 된 어셈블리를 로드할 수 없습니다.|
 |[CA0059](ca0059.md)|명령줄 전환 오류입니다.|
 |[CA0060](ca0060.md)|간접적으로 참조 되는 어셈블리를 로드할 수 없습니다.|
-|[CA0061](ca0061.md)|'*RuleId*' 규칙을 찾을 수 없습니다.|
-|[CA0062](ca0062.md)|'*RuleSetName*' 규칙 집합에서 참조 되는 '*RuleId*' 규칙을 찾을 수 없습니다.|
+|[CA0061](ca0061.md)|' *RuleId* ' 규칙을 찾을 수 없습니다.|
+|[CA0062](ca0062.md)|' *RuleSetName* ' 규칙 집합에서 참조 되는 ' *RuleId* ' 규칙을 찾을 수 없습니다.|
 |[CA0063](ca0063.md)|규칙 집합 파일 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다.|
 |[CA0064](ca0064.md)|지정 된 규칙 집합에 FxCop 규칙이 포함 되어 있지 않으므로 분석이 수행 되지 않았습니다.|
-|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: '*TypeName*' 형식에 이름이 '*propertyfieldname*' 인 속성과 필드가 모두 있습니다.|
-|[CA0066](ca0066.md)|**/Targetframeworkversion** 에 제공*된 ' n a s*e ' 값이 인식할 수 있는 버전이 아닙니다.|
+|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: ' *TypeName* ' 형식에 이름이 ' *propertyfieldname* ' 인 속성과 필드가 모두 있습니다.|
+|[CA0066](ca0066.md)|**/Targetframeworkversion** 에 제공 *된 ' n a s* e ' 값이 인식할 수 있는 버전이 아닙니다.|
 |[CA0067](ca0067.md)|디렉터리를 찾을 수 없습니다.|
 |[CA0068](ca0068.md)|*' AssemblyName '* 대상 어셈블리에 대 한 디버그 정보를 찾을 수 없습니다.|
 |[CA0069](ca0069.md)|대체 플랫폼 사용. *FrameworkVersion1* 를 찾을 수 없습니다. 대신 *FrameworkVersion2* 를 사용 합니다. 최상의 분석 결과를 위해 올바른 프레임 워크 버전이 설치 되어 있는지 확인 합니다.|

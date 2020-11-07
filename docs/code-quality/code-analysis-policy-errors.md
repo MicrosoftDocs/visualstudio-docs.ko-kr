@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 정책 오류
 ms.date: 11/04/2016
+description: Visual Studio의 코드 분석 정책 오류에 대해 알아봅니다. 코드를 체크 인할 때 정책이 충족 되지 않는 경우 발생 하는 오류에 대 한 설명을 봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587747"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349102"
 ---
 # <a name="code-analysis-policy-errors"></a>코드 분석 정책 오류
 
@@ -29,7 +31,7 @@ ms.locfileid: "75587747"
 
 - 솔루션에 있는 모든 프로젝트에 대해 코드 분석이 빌드 시에 설정되지 않았습니다.
 
-- Visual studio에서 프로젝트에 대 한 로컬 규칙 집합은 프로젝트 규칙 집합 보다 **덜 제한적입니다** . 예를 들어 서버에서 **동작**오류로 설정 된 규칙은 = **Error** **작업** 을 **경고** 로 설정 하거나 Visual studio에서 실행 중인 규칙 집합에서 **None** 으로 설정 합니다.
+- Visual studio에서 프로젝트에 대 한 로컬 규칙 집합은 프로젝트 규칙 집합 보다 **덜 제한적입니다** . 예를 들어 서버에서 **동작** 오류로 설정 된 규칙은 = **Error** **작업** 을 **경고** 로 설정 하거나 Visual studio에서 실행 중인 규칙 집합에서 **None** 으로 설정 합니다.
 
 - Visual Studio에 지정 된 규칙 집합에 프로젝트의 코드 분석 체크 인 정책에 지정 된 규칙 집합에 지정 된 규칙이 모두 포함 되어 있지 않습니다.
 
@@ -47,11 +49,11 @@ ms.locfileid: "75587747"
 
 **' '의 버전이 {0} 올바르지 않습니다. 정책에 지정 된 강력한 이름은 ' {1} '입니다.**
 
-이 오류는 .NET 프로젝트에 적용 됩니다. 코드 분석 정책에 필요한 규칙 .dll이 로컬 컴퓨터에 있지만 버전/공개 키가 일치 하지 않습니다. 이 오류를 해결 하려면 정책 작성자가 컴퓨터에서 *C:\Program Files\Microsoft Visual Studio 8 \ Team ToolTools\FxCop\Rules \\ * 디렉터리의 .dll을 업데이트 해야 합니다.
+이 오류는 .NET 프로젝트에 적용 됩니다. 코드 분석 정책에 필요한 규칙 .dll이 로컬 컴퓨터에 있지만 버전/공개 키가 일치 하지 않습니다. 이 오류를 해결 하려면 정책 작성자가 컴퓨터에서 *C:\Program Files\Microsoft Visual Studio 8 \ Team ToolTools\FxCop\Rules \\* 디렉터리의 .dll을 업데이트 해야 합니다.
 
 **{0}정책에 지정 된 ' ' 어셈블리가 없습니다.**
 
-이 오류는 .NET 프로젝트에 적용 됩니다. 코드 분석 정책에 필요한 규칙에 해당 dll이 클라이언트 컴퓨터에 설치 되어 있지 않습니다. 이 오류를 해결 하려면 정책 작성자가 컴퓨터에서 *C:\Program Files\Microsoft Visual Studio 8 \ Team ToolTools\FxCop\Rules \\ * 디렉터리의 dll을 업데이트 해야 합니다.
+이 오류는 .NET 프로젝트에 적용 됩니다. 코드 분석 정책에 필요한 규칙에 해당 dll이 클라이언트 컴퓨터에 설치 되어 있지 않습니다. 이 오류를 해결 하려면 정책 작성자가 컴퓨터에서 *C:\Program Files\Microsoft Visual Studio 8 \ Team ToolTools\FxCop\Rules \\* 디렉터리의 dll을 업데이트 해야 합니다.
 
 **프로젝트 {0} 규칙 설정이 코드 분석 정책을 준수 하지 않습니다.**
 
@@ -73,6 +75,6 @@ ms.locfileid: "75587747"
 
 이 오류는 관리 되지 않는 프로젝트에 적용 됩니다. 코드 분석 정책에는 C/c + +에 대 한 코드 분석이 필요 하지만 클라이언트의 현재 프로젝트에서는 사용할 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 애플리케이션 오류](../code-quality/code-analysis-application-errors.md)

@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 해제
 ms.date: 09/01/2020
+description: .NET Core, .NET Standard 및 .NET Framework 프로젝트에서 Visual Studio 소스 코드 분석을 해제 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037148"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348556"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>.NET에 대 한 소스 코드 분석 사용 안 함
 
@@ -35,7 +37,7 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 ![Visual Studio에서 라이브 코드 분석 또는 빌드에 대 한 사용 또는 사용 안 함](media/run-on-build-run-live-analysis.png)
 
-이 페이지를 열려면 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **코드 분석** 탭을 선택 합니다.
+이 페이지를 열려면 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **코드 분석** 탭을 선택 합니다.
 
 - 빌드 시 소스 분석을 사용 하지 않도록 설정 하려면 **빌드 시 실행** 옵션을 선택 취소 합니다.
 - 라이브 소스 분석을 사용 하지 않도록 설정 하려면 **라이브 분석에서 실행** 옵션을 선택 취소 합니다.
@@ -47,13 +49,13 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 분석기에 대 한 소스 코드 분석을 해제 하려면 다음 MSBuild 속성 중 하나 이상을 [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file)에 추가 합니다.
 
-| MSBuild 속성 | Description | 기본값 |
+| MSBuild 속성 | 설명 | 기본값 |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | 빌드 시 분석기가 실행 되는지 여부를 제어 합니다. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | 분석기가 디자인 타임에 코드를 실시간으로 분석할 지 여부를 제어 합니다. | `true` |
 | `RunAnalyzers` | 빌드 및 디자인 타임에 분석기를 사용 하지 않도록 설정 합니다. 이 속성은 및 보다 우선적으로 적용 `RunAnalyzersDuringBuild` `RunAnalyzersDuringLiveAnalysis` 됩니다. | `true` |
 
-예제:
+예:
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -67,7 +69,7 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 ## <a name="source-analysis"></a>소스 분석
 
-Visual Studio 2017에서 [소스 분석](roslyn-analyzers-overview.md) 을 해제할 수 없습니다. **오류 목록**에서 분석기 오류를 지우려면 **Analyze**  >  메뉴 모음에서 분석**실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않을 수 있습니다. 자세한 내용은 [위반 표시 안 함](use-roslyn-analyzers.md#suppress-violations)을 참조 하세요.
+Visual Studio 2017에서 [소스 분석](roslyn-analyzers-overview.md) 을 해제할 수 없습니다. **오류 목록** 에서 분석기 오류를 지우려면 **Analyze**  >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않을 수 있습니다. 자세한 내용은 [위반 표시 안 함](use-roslyn-analyzers.md#suppress-violations)을 참조 하세요.
 
 Visual Studio 2019 버전 16.3부터 소스 코드 분석을 해제 하거나 요청 시 실행할 수 있습니다. Visual Studio 2019로 업그레이드 하는 것이 좋습니다.
 

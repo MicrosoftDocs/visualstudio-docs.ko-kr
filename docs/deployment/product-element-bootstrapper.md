@@ -1,5 +1,7 @@
 ---
 title: '&lt;Product &gt; 요소 (부트스트래퍼) | Microsoft Docs'
+description: Product 요소는 제품 파일 내의 최상위 XML 요소입니다. Product 요소는 제품 파일에 필요 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747447"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349479"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Product &gt; 요소 (부트스트래퍼)
 `Product`요소는 제품 파일 내의 최상위 XML 요소입니다.
@@ -144,7 +146,7 @@ ProductCode
 |---------------|-----------------|
 |`ProductCode`|제품의 고유 식별자입니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 .NET Framework를 설치 하기 위한 전체 제품 파일을 보여 줍니다.
 
 ```xml
@@ -249,5 +251,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

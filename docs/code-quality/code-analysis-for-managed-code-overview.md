@@ -1,6 +1,8 @@
 ---
 title: 관리 코드에 대한 코드 분석
 ms.date: 08/27/2020
+description: Visual Studio의 .NET Compiler Platform 기반 코드 분석기에 대해 알아봅니다. 이러한 분석기가 관리 되는 어셈블리의 FxCop 정적 분석을 대체 하는 이유를 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d13a8afdfcbeb6ae9f91e39779af8b82b2461000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 643e8457dbbe838d593a7bad38064537b6cbe57d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091405"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348530"
 ---
 # <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>Visual Studio에서 .NET에 대 한 코드 분석 개요
 
