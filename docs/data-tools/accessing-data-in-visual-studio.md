@@ -1,5 +1,6 @@
 ---
 title: Visual Studio에서 데이터 작업
+description: Visual Studio에서 데이터 작업 로컬 컴퓨터, Lan 또는 공용 또는 사설 클라우드를 통해 다른 데이터베이스 제품 또는 서비스의 데이터에 연결 하는 앱을 만듭니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959824"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382093"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio에서 데이터 작업
 
@@ -70,13 +71,13 @@ JavaScript, Python, PHP, Ruby 또는 c + +의 응용 프로그램의 경우 라�
 
 ::: moniker range="vs-2017"
 
-많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Visual Studio의 nuget 패키지 관리자를 통해 nuget.org 또는 Visual Studio의 nuget 패키지 관리자를 통해 제품을 탐색할 수 있습니다 (**도구**  >  **nuget 패키지 관리자**  >  **솔루션용 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. 이러한 제품은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 찾아보거나, **도구**  >  **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 찾을 수 있습니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
+많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Visual Studio의 nuget 패키지 관리자를 통해 nuget.org 또는 Visual Studio의 nuget 패키지 관리자를 통해 제품을 탐색할 수 있습니다 ( **도구**  >  **nuget 패키지 관리자**  >  **솔루션용 nuget 패키지 관리** ). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. 이러한 제품은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 찾아보거나, **도구**  >  **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 찾을 수 있습니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Visual Studio의 nuget 패키지 관리자를 통해 nuget.org 또는 Visual Studio의 nuget 패키지 관리자를 통해 제품을 탐색할 수 있습니다 (**도구**  >  **nuget 패키지 관리자**  >  **솔루션용 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 제품을 찾아보거나 **확장**  >  **관리** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 이러한 제품을 찾아볼 수 있습니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
+많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Visual Studio의 nuget 패키지 관리자를 통해 nuget.org 또는 Visual Studio의 nuget 패키지 관리자를 통해 제품을 탐색할 수 있습니다 ( **도구**  >  **nuget 패키지 관리자**  >  **솔루션용 nuget 패키지 관리** ). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 제품을 찾아보거나 **확장**  >  **관리** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 이러한 제품을 찾아볼 수 있습니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
 
 ::: moniker-end
 

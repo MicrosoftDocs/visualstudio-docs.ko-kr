@@ -1,5 +1,6 @@
 ---
 title: 데이터 바인딩 사용자 지정 개체
+description: Visual Studio에서 개체를 데이터 원본으로 바인딩합니다. 디자인 타임 도구를 사용 하 여 사용자 지정 개체를 응용 프로그램의 데이터 원본으로 작업 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282932"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382106"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio에서 개체를 데이터 원본으로 바인딩
 
@@ -134,7 +135,7 @@ Windows Forms 컨트롤에 데이터 바인딩된 사용자 지정 개체의 데
 
 Visual Studio는 데이터베이스에 대해 직접 실행할 수 있는 DBDirect 메서드를 만듭니다. 이러한 메서드에는 DataSet 또는 DataTable 개체가 필요 하지 않습니다.
 
-|TableAdapter DBDirect 메서드|설명|
+|TableAdapter DBDirect 메서드|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|데이터베이스에 새 레코드를 추가 하 여 개별 열 값을 메서드 매개 변수로 전달할 수 있도록 합니다.|
 |`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. Update 메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> 메서드는의,, `TableAdapter.Update` <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> 또는 배열을 <xref:System.Data.DataRow> 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|
@@ -147,6 +148,6 @@ Visual Studio는 데이터베이스에 대해 직접 실행할 수 있는 DBDire
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

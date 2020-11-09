@@ -1,5 +1,7 @@
 ---
 title: '&lt;fileAssociation &gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
+description: FileAssociation 요소는 응용 프로그램과 연결할 파일 확장명을 식별 합니다. FileAssociation 요소는 선택 사항입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928520"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382730"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation &gt; 요소 (ClickOnce 응용 프로그램)
 응용 프로그램과 연결할 파일 확장명을 식별 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <fileAssociation
@@ -40,12 +42,12 @@ ms.locfileid: "62928520"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  `fileAssociation` 요소는 선택적입니다. 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|특성|Description|
 |---------------|-----------------|
-|`extension`|필수 요소. 응용 프로그램과 연결할 파일 확장명입니다.|
-|`description`|필수 요소. 셸에서 사용할 파일 형식에 대 한 설명입니다.|
-|`progid`|필수 요소. 파일 형식을 고유 하 게 식별 하는 이름입니다.|
-|`defaultIcon`|필수 요소. 이 확장명을 가진 파일에 사용할 아이콘을 지정 합니다. 이 요소를 포함 하는 [ \<assembly> 요소](../deployment/assembly-element-clickonce-application.md) 내에서 [ \<file> 요소](../deployment/file-element-clickonce-application.md) 를 사용 하 여 아이콘 파일을 지정 해야 합니다.|
+|`extension`|필수 사항입니다. 응용 프로그램과 연결할 파일 확장명입니다.|
+|`description`|필수 사항입니다. 셸에서 사용할 파일 형식에 대 한 설명입니다.|
+|`progid`|필수 사항입니다. 파일 형식을 고유 하 게 식별 하는 이름입니다.|
+|`defaultIcon`|필수 사항입니다. 이 확장명을 가진 파일에 사용할 아이콘을 지정 합니다. 이 요소를 포함 하는 [ \<assembly> 요소](../deployment/assembly-element-clickonce-application.md) 내에서 [ \<file> 요소](../deployment/file-element-clickonce-application.md) 를 사용 하 여 아이콘 파일을 지정 해야 합니다.|
 
 ## <a name="remarks"></a>설명
  이 요소는 "urn: 스키마-microsoft-com: clickonce"에 대 한 XML 네임 스페이스 참조를 포함 해야 합니다. 요소를 사용 하는 경우 해당 요소는 `<fileAssociation>` `<application>` 부모 [ \<assembly> 요소의](../deployment/assembly-element-clickonce-application.md)요소 뒤에와 야 합니다.
@@ -78,5 +80,5 @@ ms.locfileid: "62928520"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

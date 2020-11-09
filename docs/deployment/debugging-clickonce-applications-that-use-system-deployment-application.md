@@ -1,5 +1,7 @@
 ---
 title: System.object를 사용 하는 ClickOnce 응용 프로그램 디버그
+description: 응용 프로그램에서 제공 하는 배포 개체 모델에 액세스 하 여 고급 ClickOnce 배포 기능을 사용 하 고 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382655"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382990"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용하는 ClickOnce 애플리케이션 디버그
 에서 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용 하면 응용 프로그램을 업데이트 하는 방법을 구성할 수 있습니다. 그러나 고급 배포 기능을 사용 하 고 사용자 지정 해야 하는 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서 제공 하는 배포 개체 모델에 액세스 해야 <xref:System.Deployment.Application> 합니다. <xref:System.Deployment.Application>다음과 같은 고급 작업에 api를 사용할 수 있습니다.
@@ -43,11 +45,11 @@ ms.locfileid: "85382655"
 
 2. 응용 프로그램의 버전 1을 배포 합니다.
 
-3. 비어 있는 새 솔루션을 만듭니다. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 클릭합니다. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 연 다음 **Visual Studio 솔루션** 폴더를 선택 합니다. **템플릿** 창에서 **빈 솔루션**을 선택 합니다.
+3. 비어 있는 새 솔루션을 만듭니다. **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 클릭합니다. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 연 다음 **Visual Studio 솔루션** 폴더를 선택 합니다. **템플릿** 창에서 **빈 솔루션** 을 선택 합니다.
 
-4. 이 새 솔루션에 대 한 속성에 보관 된 원본 위치를 추가 합니다. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. **속성 페이지** 대화 상자에서 **디버그 소스 파일**을 선택 하 고 보관 된 소스 코드의 디렉터리를 추가 합니다. 그렇지 않으면 소스 파일 경로가 .pdb 파일에 기록 되므로 디버거가 오래 된 소스 파일을 찾습니다. 디버거가 오래 된 소스 파일을 사용 하는 경우 소스가 일치 하지 않는다는 메시지가 표시 됩니다.
+4. 이 새 솔루션에 대 한 속성에 보관 된 원본 위치를 추가 합니다. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다. **속성 페이지** 대화 상자에서 **디버그 소스 파일** 을 선택 하 고 보관 된 소스 코드의 디렉터리를 추가 합니다. 그렇지 않으면 소스 파일 경로가 .pdb 파일에 기록 되므로 디버거가 오래 된 소스 파일을 찾습니다. 디버거가 오래 된 소스 파일을 사용 하는 경우 소스가 일치 하지 않는다는 메시지가 표시 됩니다.
 
-5. 디버거가 *.pdb* 파일을 찾을 수 있는지 확인 합니다. 응용 프로그램을 사용 하 여 응용 프로그램을 배포한 경우 디버거에서 해당 파일을 자동으로 찾습니다. 이는 항상 먼저 문제의 어셈블리 옆에 표시 됩니다. 그렇지 않으면 **기호 파일 (.pdb) 위치** 에 보관 경로를 추가 해야 합니다 .이 옵션에 액세스 하려면 **도구** 메뉴에서 **옵션**을 클릭 한 다음 **디버깅** 노드를 열고 **기호**를 클릭 합니다.
+5. 디버거가 *.pdb* 파일을 찾을 수 있는지 확인 합니다. 응용 프로그램을 사용 하 여 응용 프로그램을 배포한 경우 디버거에서 해당 파일을 자동으로 찾습니다. 이는 항상 먼저 문제의 어셈블리 옆에 표시 됩니다. 그렇지 않으면 **기호 파일 (.pdb) 위치** 에 보관 경로를 추가 해야 합니다 .이 옵션에 액세스 하려면 **도구** 메뉴에서 **옵션** 을 클릭 한 다음 **디버깅** 노드를 열고 **기호** 를 클릭 합니다.
 
 6. 메서드와 메서드 호출 사이에 발생 하는 작업을 디버깅 `CheckForUpdate` `Download` / `Update` 합니다.
 
@@ -76,5 +78,5 @@ ms.locfileid: "85382655"
 
    <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A>응용 프로그램이 배포 된 경우에만 api를 호출 하려면 속성을 사용 하 고 <xref:System.Deployment.Application> , 디버깅 중에는 api를 호출 하면 안 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:System.Deployment.Application>

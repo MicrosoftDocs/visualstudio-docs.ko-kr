@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 관리 되지 않는 API 참조 | Microsoft Docs
+description: CleanOnlineAppCache, GetDeploymentDataFromManifest 및 LaunchApplication을 포함 하 여 dfshim.dll에서 관리 되지 않는 ClickOnce 공용 Api에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900279"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382613"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 관리되지 않는 API 참조
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll에서 관리 되지 않는 공용 Api.
@@ -52,7 +54,7 @@ ms.locfileid: "62900279"
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|형식|
+|매개 변수|Description|형식|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL`에 대한 포인터입니다.|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest`에 대한 포인터입니다.|LPCWSTR|
@@ -80,7 +82,7 @@ ms.locfileid: "62900279"
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|형식|
+|매개 변수|Description|형식|
 |---------------|-----------------|----------|
 |`deploymentUrl`|배포 매니페스트의 URL을 포함 하는 NULL로 끝나는 문자열에 대 한 포인터입니다.|LPCWSTR|
 |`data`|나중에 사용하기 위해 예약되어 있습니다. Null이어야 합니다.|LPVOID|
@@ -89,5 +91,5 @@ ms.locfileid: "62900279"
 ### <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류를 나타내는 HRESULT를 반환 합니다. 관리 되는 예외가 발생 하면는 0x80020009 (DISP_E_EXCEPTION)를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

@@ -1,5 +1,7 @@
 ---
 title: '&lt;entryPoint &gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
+description: EntryPoint 요소는이 ClickOnce 응용 프로그램이 클라이언트 컴퓨터에서 실행 될 때 실행 되어야 하는 어셈블리를 식별 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928619"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382809"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint &gt; 요소 (ClickOnce 응용 프로그램)
 이 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램이 클라이언트 컴퓨터에서 실행 될 때 실행 되어야 하는 어셈블리를 식별 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <entryPoint
@@ -54,34 +56,34 @@ ms.locfileid: "62928619"
 
  `entryPoint` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|특성|Description|
 |---------------|-----------------|
-|`name`|선택 사항입니다. 이 값은 .NET Framework에서 사용 되지 않습니다.|
+|`name`|(선택 사항) 이 값은 .NET Framework에서 사용 되지 않습니다.|
 
  `entryPoint` 에는 다음 요소가 있습니다.
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- 필수 요소. `assemblyIdentity`및 해당 특성의 역할은 [ \<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-application.md)에 정의 되어 있습니다.
+ 필수 사항입니다. `assemblyIdentity`및 해당 특성의 역할은 [ \<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-application.md)에 정의 되어 있습니다.
 
  `processorArchitecture`이 요소의 특성과 `processorArchitecture` `assemblyIdentity` 응용 프로그램 매니페스트의 다른 위치에 정의 된 특성이 일치 해야 합니다.
 
 ## <a name="commandline"></a>commandLine
- 필수 요소. 는 요소의 자식 이어야 합니다 `entryPoint` . 자식 요소가 없으며 다음과 같은 특성이 있습니다.
+ 필수 사항입니다. 는 요소의 자식 이어야 합니다 `entryPoint` . 자식 요소가 없으며 다음과 같은 특성이 있습니다.
 
-| 특성 | 설명 |
+| 특성 | Description |
 |--------------| - |
-| `file` | 필수 요소. 응용 프로그램의 시작 어셈블리에 대 한 로컬 참조 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 입니다. 이 값에는 슬래시 (/) 또는 백슬래시 ( \\ ) 경로 구분 기호를 사용할 수 없습니다. |
-| `parameters` | 필수 요소. 진입점을 사용 하 여 수행할 작업을 설명 합니다. 유일 하 게 유효한 값은입니다 `run` . 빈 문자열을 제공 하면 `run` 가 가정 됩니다. |
+| `file` | 필수 사항입니다. 응용 프로그램의 시작 어셈블리에 대 한 로컬 참조 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 입니다. 이 값에는 슬래시 (/) 또는 백슬래시 ( \\ ) 경로 구분 기호를 사용할 수 없습니다. |
+| `parameters` | 필수 사항입니다. 진입점을 사용 하 여 수행할 작업을 설명 합니다. 유일 하 게 유효한 값은입니다 `run` . 빈 문자열을 제공 하면 `run` 가 가정 됩니다. |
 
 ## <a name="customhostrequired"></a>customHostRequired
- 선택 사항입니다. 포함 하는 경우,이 배포에 사용자 지정 호스트 내에 배포 되는 구성 요소가 포함 되어 있고 독립 실행형 응용 프로그램이 아닌 경우에 지정 합니다.
+ (선택 사항) 포함 하는 경우,이 배포에 사용자 지정 호스트 내에 배포 되는 구성 요소가 포함 되어 있고 독립 실행형 응용 프로그램이 아닌 경우에 지정 합니다.
 
  이 요소가 있으면 및 요소도 없어야 합니다 `assemblyIdentity` `commandLine` . 인 경우에는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 중에 유효성 검사 오류가 발생 합니다.
 
  이 요소에는 특성이 없고 자식이 없습니다.
 
 ## <a name="customux"></a>customUX
- 선택 사항입니다. 사용자 지정 설치 관리자가 응용 프로그램을 설치 및 유지 관리 하 고 시작 메뉴 항목, 바로 가기 또는 프로그램 추가/제거 항목을 만들지 않도록 지정 합니다.
+ (선택 사항) 사용자 지정 설치 관리자가 응용 프로그램을 설치 및 유지 관리 하 고 시작 메뉴 항목, 바로 가기 또는 프로그램 추가/제거 항목을 만들지 않도록 지정 합니다.
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
@@ -110,5 +112,5 @@ ms.locfileid: "62928619"
   </entryPoint>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

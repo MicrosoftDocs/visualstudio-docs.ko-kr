@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 보안 및 배포 | Microsoft Docs
+description: 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있도록 하는 배포 기술인 ClickOnce에 대 한 Visual Studio 지원에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285496"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382678"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 보안 및 배포
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 최소한의 사용자 조작으로 설치 하 고 실행할 수 있는 자동 업데이트 Windows 기반 응용 프로그램을 만들 수 있도록 하는 배포 기술입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visual Basic 및 Visual c #을 사용 하 여 프로젝트를 개발한 경우 ClickOnce 기술을 사용 하 여 배포 된 응용 프로그램 게시 및 업데이트에 대 한 완전 한 지원을 제공 합니다. Visual C++ 응용 프로그램 배포에 대 한 자세한 내용은 [Visual C++ 응용 프로그램에 대 한 ClickOnce 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조 하세요.
@@ -38,7 +40,7 @@ ms.locfileid: "85285496"
   이전에는 이러한 문제로 인해 개발자가 Windows 기반 응용 프로그램 대신 웹 응용 프로그램을 만들어 쉽게 설치할 수 있도록 다양 한 사용자 인터페이스를 사용 하는 경우가 있습니다. 를 사용 하 여 배포 된 응용 프로그램을 사용 하 여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 두 가지 기술을 모두 활용할 수 있습니다.
 
 ## <a name="what-is-a-clickonce-application"></a>ClickOnce 애플리케이션이란?
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 기술을 사용 하 여 게시 된 모든 Windows Presentation Foundation (*xbap*), Windows Forms (*.exe*), 콘솔 응용 프로그램 (*.exe*) 또는 Office 솔루션 (*.dll*)입니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 웹 페이지, 네트워크 파일 공유 또는 cd-rom 등의 미디어에서 세 가지 방법으로 게시할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 최종 사용자의 컴퓨터에 설치 하 고 컴퓨터가 오프 라인 상태인 경우에도 로컬로 실행 하거나, 최종 사용자의 컴퓨터에 아무것도 설치 하지 않고 온라인 전용 모드에서 실행할 수 있습니다. 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)을 참조 하세요.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 기술을 사용 하 여 게시 된 모든 Windows Presentation Foundation ( *xbap* ), Windows Forms ( *.exe* ), 콘솔 응용 프로그램 ( *.exe* ) 또는 Office 솔루션 ( *.dll* )입니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 웹 페이지, 네트워크 파일 공유 또는 cd-rom 등의 미디어에서 세 가지 방법으로 게시할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램은 최종 사용자의 컴퓨터에 설치 하 고 컴퓨터가 오프 라인 상태인 경우에도 로컬로 실행 하거나, 최종 사용자의 컴퓨터에 아무것도 설치 하지 않고 온라인 전용 모드에서 실행할 수 있습니다. 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)을 참조 하세요.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 자동으로 업데이트할 수 있습니다. 사용 가능한 최신 버전을 확인 하 고 업데이트 된 파일을 자동으로 바꿀 수 있습니다. 개발자는 업데이트 동작을 지정할 수 있으며, 네트워크 관리자는 강제 업데이트 지정과 같은 업데이트 전략을 제어할 수 있습니다. 최종 사용자나 관리자가 업데이트를 이전 버전으로 롤백할 수도 있습니다. 자세한 내용은 [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)을 참조 하세요.
 
@@ -60,7 +62,7 @@ ms.locfileid: "85285496"
  핵심 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 아키텍처는 응용 프로그램 매니페스트 및 배포 매니페스트와 같은 두 가지 XML 매니페스트 파일을 기반으로 합니다. 파일은 ClickOnce 응용 프로그램이 설치 된 위치, 업데이트 방법 및 업데이트 된 시기를 설명 하는 데 사용 됩니다.
 
 ### <a name="publish-clickonce-applications"></a>ClickOnce 애플리케이션 게시
- 응용 프로그램 매니페스트는 응용 프로그램 자체에 대해 설명 합니다. 여기에는 어셈블리, 응용 프로그램을 구성 하는 종속성 및 파일, 필요한 권한 및 업데이트를 사용할 수 있는 위치가 포함 됩니다. 응용 프로그램 개발자는 Visual Studio의 게시 마법사 또는의 매니페스트 생성 및 편집 도구 (*Mage.exe*)를 사용 하 여 응용 프로그램 매니페스트를 만든 다음 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 자세한 내용은 [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)를 참조 하세요.
+ 응용 프로그램 매니페스트는 응용 프로그램 자체에 대해 설명 합니다. 여기에는 어셈블리, 응용 프로그램을 구성 하는 종속성 및 파일, 필요한 권한 및 업데이트를 사용할 수 있는 위치가 포함 됩니다. 응용 프로그램 개발자는 Visual Studio의 게시 마법사 또는의 매니페스트 생성 및 편집 도구 ( *Mage.exe* )를 사용 하 여 응용 프로그램 매니페스트를 만든 다음 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 자세한 내용은 [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)를 참조 하세요.
 
  배포 매니페스트는 애플리케이션이 배포되는 방법을 기술합니다. 여기에는 응용 프로그램 매니페스트의 위치 및 클라이언트에서 실행 해야 하는 응용 프로그램의 버전이 포함 됩니다.
 
@@ -72,7 +74,7 @@ ms.locfileid: "85285496"
 
  컴퓨터 또는 엔터프라이즈 수준에서 인증서를 신뢰할 수 있으므로 신뢰할 수 있는 인증서로 서명 된 ClickOnce 응용 프로그램을 자동으로 설치할 수 있습니다. 신뢰할 수 있는 인증서에 대 한 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조 하세요.
 
- 응용 프로그램을 사용자의 **시작** 메뉴와 **제어판**의 **프로그램 추가/제거** 그룹에 추가할 수 있습니다. 다른 배포 기술과 달리 **Program Files** 폴더 또는 레지스트리에는 아무것도 추가 되지 않으며 설치에는 관리 권한이 필요 하지 않습니다.
+ 응용 프로그램을 사용자의 **시작** 메뉴와 **제어판** 의 **프로그램 추가/제거** 그룹에 추가할 수 있습니다. 다른 배포 기술과 달리 **Program Files** 폴더 또는 레지스트리에는 아무것도 추가 되지 않으며 설치에는 관리 권한이 필요 하지 않습니다.
 
 > [!NOTE]
 > 응용 프로그램이 **시작** 메뉴 및 **프로그램 추가/제거** 그룹에 추가 되는 것을 방지 하 여 웹 응용 프로그램 처럼 동작 하도록 할 수도 있습니다. 자세한 내용은 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)을 참조 하세요.
@@ -91,7 +93,7 @@ ms.locfileid: "85285496"
 ## <a name="clickonce-tools"></a>ClickOnce 도구
  다음 표에서는 응용 프로그램 및 배포 매니페스트를 생성, 편집, 서명 및 다시 서명 하는 데 사용할 수 있는 도구를 보여 줍니다.
 
-|도구|설명|
+|도구|Description|
 |----------|-----------------|
 |[프로젝트 디자이너, 보안 페이지](../ide/reference/security-page-project-designer.md)|응용 프로그램 및 배포 매니페스트에 서명 합니다.|
 |[프로젝트 디자이너, 게시 페이지](../ide/reference/publish-page-project-designer.md)|Visual Basic 및 Visual c # 응용 프로그램에 대 한 응용 프로그램 및 배포 매니페스트를 생성 하 고 편집 합니다.|
@@ -111,7 +113,7 @@ ms.locfileid: "85285496"
 |Chrome|3.5|
 |Microsoft Edge|3.5|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [Windows Vista의 ClickOnce 배포](../deployment/clickonce-deployment-on-windows-vista.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

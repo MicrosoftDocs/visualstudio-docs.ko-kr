@@ -1,5 +1,6 @@
 ---
 title: 데이터 액세스 포럼
+description: 공용 포럼에서 오류 및 경고 문제 해결에 대 한 지원을 찾습니다. 데이터 관련 포럼의 목록을 봅니다.
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +225,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587045"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382483"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>포럼에서 데이터 액세스 오류 문제 해결
 
@@ -251,6 +252,6 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진에 대 한 연결 문제 해결](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

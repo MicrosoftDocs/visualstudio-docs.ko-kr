@@ -1,6 +1,6 @@
 ---
 title: 속성 형식이 일치 하지 않습니다.
-description: 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
+description: 연결을 만들 수 없습니다. 속성 형식이 일치 하지 않습니다. 이 Visual Studio 개체 관계형 디자이너 (O/R 디자이너) 메시지에 대 한 정보를 봅니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,18 +9,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743188"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382054"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
 
 연결을 만들 수 없습니다 \<association name> . 속성 형식이 일치 하지 않습니다. 속성에 일치 하는 형식이 없습니다 \<property names> .
 
-연결이 **연결 편집기** 대화 상자에서 선택한 **연결 속성**에 의해 정의되었습니다. 연결의 각 측에 대한 속성은 동일한 데이터 형식이어야 합니다.
+연결이 **연결 편집기** 대화 상자에서 선택한 **연결 속성** 에 의해 정의되었습니다. 연결의 각 측에 대한 속성은 동일한 데이터 형식이어야 합니다.
 
 메시지에 나열된 속성은 동일한 데이터 형식을 갖지 않습니다.
 
@@ -28,11 +28,11 @@ ms.locfileid: "89743188"
 
 1. 메시지를 검사하여 메시지에서 호출된 속성을 기록합니다.
 
-2. **확인**을 클릭하여 대화 상자를 닫습니다.
+2. **확인** 을 클릭하여 대화 상자를 닫습니다.
 
-3. **연결 속성**을 검사하고 동일한 데이터 형식의 속성을 선택합니다.
+3. **연결 속성** 을 검사하고 동일한 데이터 형식의 속성을 선택합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

@@ -1,5 +1,6 @@
 ---
 title: 데이터베이스의 그림에 컨트롤 바인딩
+description: 데이터 소스 창을 사용 하 여 데이터베이스의 이미지를 Visual Studio 응용 프로그램의 컨트롤에 바인딩할 수 있습니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282986"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382301"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>데이터베이스의 그림에 컨트롤 바인딩
 
@@ -39,16 +40,16 @@ ms.locfileid: "85282986"
 2. **데이터 원본** 창에서 원하는 테이블 또는 개체를 확장 하 여 해당 열 또는 속성을 표시 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하 여 엽니다.
+   > **데이터 소스** 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 엽니다.
 
 3. 이미지 데이터를 포함 하는 열 또는 속성을 선택 하 고 드롭다운 컨트롤 목록에서 다음 컨트롤 중 하나를 선택 합니다.
 
-    - WPF designer가 열려 있으면 **이미지**를 선택 합니다.
+    - WPF designer가 열려 있으면 **이미지** 를 선택 합니다.
 
-    - Windows Forms designer가 열려 있으면 **PictureBox**를 선택 합니다.
+    - Windows Forms designer가 열려 있으면 **PictureBox** 를 선택 합니다.
 
     - 또는 데이터 바인딩을 지원 하 고 이미지를 표시할 수 있는 다른 컨트롤을 선택할 수 있습니다. 사용할 컨트롤이 사용 가능한 컨트롤 목록에 없으면 목록에 추가 하 여 선택할 수 있습니다 (예를 들어, 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

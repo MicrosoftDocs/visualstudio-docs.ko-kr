@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 참조 | Microsoft Docs
+description: 이러한 참조 문서를 사용 하 여 ClickOnce 응용 프로그램을 나타내는 데 사용 되는 XML 파일의 구조를 이해할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900328"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383029"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 참조
 다음 페이지에서는 ClickOnce 응용 프로그램을 나타내는 데 사용 되는 XML 파일의 구조에 대해 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+## <a name="in-this-section"></a>단원 내용
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
  응용 프로그램 매니페스트를 구성 하는 요소와 특성을 나열 하 고 설명 합니다.
 
@@ -42,7 +44,7 @@ ms.locfileid: "62900328"
 
  dfshim.dll에서 관리 되지 않는 공용 Api를 나열 합니다.
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 ## <a name="related-sections"></a>관련 단원
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)

@@ -1,5 +1,6 @@
 ---
 title: WCF 데이터 서비스에 WPF 컨트롤 바인딩
+description: Visual Studio에서 WCF 데이터 서비스에 WPF 컨트롤을 바인딩합니다. 컨트롤은 WCF 데이터 서비스에서 캡슐화 된 고객 레코드에 바인딩됩니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282854"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382210"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -60,45 +61,45 @@ ms.locfileid: "85282854"
 
 ## <a name="create-the-service-project"></a>서비스 프로젝트 만들기
 
-1. C # 또는 Visual Basic **ASP.NET 웹 응용 프로그램** 프로젝트를 만들어이 연습을 시작 합니다. 프로젝트 이름을 **AdventureWorksService**로 합니다.
+1. C # 또는 Visual Basic **ASP.NET 웹 응용 프로그램** 프로젝트를 만들어이 연습을 시작 합니다. 프로젝트 이름을 **AdventureWorksService** 로 합니다.
 
-2. **솔루션 탐색기**에서 **Default.aspx**를 오른쪽 마우스 단추로 클릭하고 **삭제**를 선택합니다. 이 파일은 연습에 필요 하지 않습니다.
+2. **솔루션 탐색기** 에서 **Default.aspx** 를 오른쪽 마우스 단추로 클릭하고 **삭제** 를 선택합니다. 이 파일은 연습에 필요 하지 않습니다.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>서비스에 대 한 엔터티 데이터 모델 만들기
 
 WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 노출 하려면 서비스에 대 한 데이터 모델을 정의 해야 합니다. WCF 데이터 서비스는 두 가지 유형의 데이터 모델인 엔터티 데이터 모델 및 인터페이스를 구현 하는 CLR (공용 언어 런타임) 개체를 사용 하 여 정의 되는 사용자 지정 데이터 모델을 지원 합니다 <xref:System.Linq.IQueryable%601> . 이 연습에서는 데이터 모델에 대해 엔터티 데이터 모델을 만듭니다.
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-2. 설치된 템플릿 목록에서 **데이터**를 클릭한 다음, **ADO.NET 엔터티 데이터 모델** 프로젝트 항목을 선택합니다.
+2. 설치된 템플릿 목록에서 **데이터** 를 클릭한 다음, **ADO.NET 엔터티 데이터 모델** 프로젝트 항목을 선택합니다.
 
-3. 이름을로 변경 하 `AdventureWorksModel.edmx` 고 **추가**를 클릭 합니다.
+3. 이름을로 변경 하 `AdventureWorksModel.edmx` 고 **추가** 를 클릭 합니다.
 
      **엔터티 데이터 모델** 마법사가 열립니다.
 
-4. **모델 콘텐츠 선택** 페이지에서 **데이터베이스에서 생성**을 클릭한 후, **다음**을 클릭합니다.
+4. **모델 콘텐츠 선택** 페이지에서 **데이터베이스에서 생성** 을 클릭한 후, **다음** 을 클릭합니다.
 
 5. **데이터 연결 선택** 페이지에서 다음 옵션 중 하나를 선택합니다.
 
     - AdventureWorksLT 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-    - **새 연결**을 클릭하고 AdventureWorksLT 데이터베이스에 대한 연결을 만듭니다.
+    - **새 연결** 을 클릭하고 AdventureWorksLT 데이터베이스에 대한 연결을 만듭니다.
 
-6. **데이터 연결 선택** 페이지에서 **다른 이름으로 App.Config의 엔터티 연결 설정 저장** 옵션이 선택되어 있는지 확인한 후, **다음**을 클릭합니다.
+6. **데이터 연결 선택** 페이지에서 **다른 이름으로 App.Config의 엔터티 연결 설정 저장** 옵션이 선택되어 있는지 확인한 후, **다음** 을 클릭합니다.
 
-7. **데이터베이스 개체 선택** 페이지에서 **테이블**을 확장한 다음, **SalesOrderHeader** 테이블을 선택합니다.
+7. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장한 다음, **SalesOrderHeader** 테이블을 선택합니다.
 
-8. **마침**을 클릭합니다.
+8. **Finish** 를 클릭합니다.
 
 ## <a name="create-the-service"></a>서비스 만들기
 
 엔터티 데이터 모델의 데이터를 WPF 응용 프로그램에 노출 하는 WCF 데이터 서비스를 만듭니다.
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
-2. **설치된 템플릿** 목록에서 **웹**을 클릭한 다음, **WCF 데이터 서비스** 프로젝트 항목을 선택합니다.
+2. **설치된 템플릿** 목록에서 **웹** 을 클릭한 다음, **WCF 데이터 서비스** 프로젝트 항목을 선택합니다.
 
-3. **이름** 상자에 `AdventureWorksService.svc` 를 입력 하 고 **추가**를 클릭 합니다.
+3. **이름** 상자에 `AdventureWorksService.svc` 를 입력 하 고 **추가** 를 클릭 합니다.
 
      Visual Studio가 `AdventureWorksService.svc` 프로젝트에를 추가 합니다.
 
@@ -119,37 +120,37 @@ WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 �
 
 WCF 데이터 서비스의 데이터를 표시 하려면 서비스를 기반으로 하는 데이터 원본을 사용 하 여 새 WPF 응용 프로그램을 만듭니다. 이 연습 뒷부분에서 애플리케이션에 데이터 바인딩된 컨트롤을 추가합니다.
 
-1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고, **추가**를 클릭하고, **새 프로젝트**를 선택합니다.
+1. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고, **추가** 를 클릭하고, **새 프로젝트** 를 선택합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음, **Windows**를 선택합니다.
+2. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 을 확장한 다음, **Windows** 를 선택합니다.
 
 3. **WPF 애플리케이션** 프로젝트 템플릿을 선택합니다.
 
-4. **이름** 상자에 `AdventureWorksSalesEditor`를 입력하고 **확인**을 클릭합니다.
+4. **이름** 상자에 `AdventureWorksSalesEditor`를 입력하고 **확인** 을 클릭합니다.
 
    Visual Studio에서 `AdventureWorksSalesEditor` 프로젝트를 솔루션에 추가 합니다.
 
-5. **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
+5. **데이터** 메뉴에서 **데이터 소스 표시** 를 클릭합니다.
 
    **데이터 원본** 창이 열립니다.
 
-6. **데이터 소스** 창에서 **새 데이터 소스 추가**를 클릭합니다.
+6. **데이터 소스** 창에서 **새 데이터 소스 추가** 를 클릭합니다.
 
    **데이터 소스 구성** 마법사가 열립니다.
 
-7. 마법사의 **데이터 원본 형식 선택** 페이지에서 **서비스**를 선택한 후, **다음**을 클릭합니다.
+7. 마법사의 **데이터 원본 형식 선택** 페이지에서 **서비스** 를 선택한 후, **다음** 을 클릭합니다.
 
-8. **서비스 참조 추가** 대화 상자에서 **검색**을 클릭합니다.
+8. **서비스 참조 추가** 대화 상자에서 **검색** 을 클릭합니다.
 
    Visual Studio는 현재 솔루션에서 사용 가능한 서비스를 검색 하 고 `AdventureWorksService.svc` **서비스** 상자에서 사용 가능한 서비스 목록에 추가 합니다.
 
-9. **네임스페이스** 상자에 **AdventureWorksService**를 입력합니다.
+9. **네임스페이스** 상자에 **AdventureWorksService** 를 입력합니다.
 
-10. **서비스** 상자에서 **AdventureWorksService.svc**를 클릭한 다음, **확인**을 클릭합니다.
+10. **서비스** 상자에서 **AdventureWorksService.svc** 를 클릭한 다음, **확인** 을 클릭합니다.
 
     Visual Studio에서 서비스 정보를 다운로드한 다음, **데이터 원본 구성** 마법사로 돌아갑니다.
 
-11. **서비스 참조 추가** 페이지에서 **마침**을 클릭합니다.
+11. **서비스 참조 추가** 페이지에서 **마침** 을 클릭합니다.
 
     Visual Studio는 서비스에서 반환하는 데이터를 나타내는 노드를 **데이터 원본** 창에 추가합니다.
 
@@ -157,7 +158,7 @@ WCF 데이터 서비스의 데이터를 표시 하려면 서비스를 기반으�
 
 WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니다. 이 연습 뒷부분에서 사용자가 이러한 단추를 사용해 판매 레코드를 보고 업데이트할 수 있도록 하는 코드를 추가합니다.
 
-1. **솔루션 탐색기**에서 **MainWindow.xaml**을 두 번 클릭합니다.
+1. **솔루션 탐색기** 에서 **MainWindow.xaml** 을 두 번 클릭합니다.
 
    WPF 디자이너에서 창이 열립니다.
 
@@ -179,11 +180,11 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 `SalesOrderHeaders` **데이터 소스** 창에서 디자이너로 노드를 끌어 고객 레코드를 표시 하는 컨트롤을 만듭니다.
 
-1. **데이터 원본** 창에서 **SalesOrderHeaders** 노드의 드롭다운 메뉴를 클릭하고 **정보**를 선택합니다.
+1. **데이터 원본** 창에서 **SalesOrderHeaders** 노드의 드롭다운 메뉴를 클릭하고 **정보** 를 선택합니다.
 
 2. **SalesOrderHeaders** 노드를 확장합니다.
 
-3. 이 예에서는 일부 필드를 표시하지 않을 것이므로 다음 노드 옆의 드롭다운 메뉴를 클릭하고 **없음**을 선택합니다.
+3. 이 예에서는 일부 필드를 표시하지 않을 것이므로 다음 노드 옆의 드롭다운 메뉴를 클릭하고 **없음** 을 선택합니다.
 
     - **CreditCardApprovalCode**
 
@@ -219,7 +220,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 1. 디자이너를 만들려면를 `Window_Loaded` 이벤트 처리기에서 텍스트를 두 번 클릭: **MainWindow**.
 
-2. 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드의 *localhost*주소는 사용 중인 개발 컴퓨터의 로컬 호스트 주소로 바꿔야 합니다.
+2. 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드의 *localhost* 주소는 사용 중인 개발 컴퓨터의 로컬 호스트 주소로 바꿔야 합니다.
 
      [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
@@ -263,23 +264,23 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 애플리케이션을 빌드하고 실행하여 고객 레코드를 보고 업데이트할 수 있는지 확인합니다.
 
-1. **빌드** 메뉴에서 **솔루션 빌드**를 클릭 합니다. 솔루션이 오류 없이 빌드되는지 확인합니다.
+1. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭 합니다. 솔루션이 오류 없이 빌드되는지 확인합니다.
 
-2. **Ctrl** + **F5**를 누릅니다.
+2. **Ctrl** + **F5** 를 누릅니다.
 
      Visual Studio는 디버깅하지 않고 **AdventureWorksService** 프로젝트를 시작합니다.
 
-3. **솔루션 탐색기**에서 **AdventureWorksSalesEditor** 프로젝트를 마우스 오른쪽 단추로 클릭합니다.
+3. **솔루션 탐색기** 에서 **AdventureWorksSalesEditor** 프로젝트를 마우스 오른쪽 단추로 클릭합니다.
 
-4. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)의 **디버그**에서 **새 인스턴스 시작**을 클릭 합니다.
+4. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)의 **디버그** 에서 **새 인스턴스 시작** 을 클릭 합니다.
 
      애플리케이션이 실행됩니다. 다음을 확인합니다.
 
-    - 판매 주문 ID가 **71774**인 첫 번째 판매 레코드의 서로 다른 데이터 필드가 텍스트 상자에 표시됩니다.
+    - 판매 주문 ID가 **71774** 인 첫 번째 판매 레코드의 서로 다른 데이터 필드가 텍스트 상자에 표시됩니다.
 
     - 또는 단추를 클릭 **>** **<** 하 여 다른 판매 레코드를 탐색할 수 있습니다.
 
-5. 판매 레코드 중 하나의 **주석** 상자에 텍스트를 입력한 다음, **변경내용 저장**을 클릭합니다.
+5. 판매 레코드 중 하나의 **주석** 상자에 텍스트를 입력한 다음, **변경내용 저장** 을 클릭합니다.
 
 6. 애플리케이션을 닫았다가 Visual Studio에서 다시 시작합니다.
 
@@ -298,7 +299,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 ## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [데이터 집합에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)
+- [데이터 세트로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF 개요 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework 개요 (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
 - [데이터 바인딩 개요 (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

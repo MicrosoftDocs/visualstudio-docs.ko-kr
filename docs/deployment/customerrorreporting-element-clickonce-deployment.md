@@ -1,5 +1,7 @@
 ---
 title: '&lt;customErrorReporting &gt; 요소 (ClickOnce 배포) | Microsoft Docs'
+description: CustomErrorReporting 요소는 예외 스택을 표시 하는 오류 대화 상자 대신 오류가 발생 하는 경우 표시할 URI를 지정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900373"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382522"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting &gt; 요소 (ClickOnce 배포)
 오류가 발생할 때 표시할 URI를 지정합니다.
@@ -47,5 +49,5 @@ Example Generated Error:
 http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

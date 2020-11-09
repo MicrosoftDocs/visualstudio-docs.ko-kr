@@ -1,5 +1,7 @@
 ---
 title: '&lt;compatibleFrameworks &gt; 요소 (ClickOnce 배포) | Microsoft Docs'
+description: CompatibleFrameworks 요소는이 응용 프로그램을 설치 및 실행할 수 있는 .NET Framework 버전을 식별 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746035"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383068"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks &gt; 요소 (ClickOnce 배포)
 이 애플리케이션이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다.
@@ -27,16 +29,16 @@ ms.locfileid: "66746035"
 > [!NOTE]
 > [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)를 사용 하는 인증서로 이미 서명 된 응용 프로그램 매니페스트를 저장 하는 경우MageUI.exe는 요소를 지원 하지 않습니다. 대신 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 사용 해야 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -47,20 +49,20 @@ ms.locfileid: "66746035"
 
 |특성|설명|
 |---------------|-----------------|
-|`S` `upportUrl`|선택 사항입니다. 기본 호환 .NET Framework 버전을 다운로드할 수 있는 URL을 지정 합니다.|
+|`S` `upportUrl`|(선택 사항) 기본 호환 .NET Framework 버전을 다운로드할 수 있는 URL을 지정 합니다.|
 
 ## <a name="framework"></a>프레임워크
- 필수 요소. 다음 표에서는 요소가 지 원하는 특성을 보여 줍니다 `framework` .
+ 필수 사항입니다. 다음 표에서는 요소가 지 원하는 특성을 보여 줍니다 `framework` .
 
-|특성|설명|
+|특성|Description|
 |---------------|-----------------|
-|`targetVersion`|필수 요소. 대상 .NET Framework의 버전 번호를 지정 합니다.|
-|`profile`|필수 요소. 대상 .NET Framework의 프로필을 지정 합니다.|
-|`supportedRuntime`|필수 요소. 대상 .NET Framework와 연결 된 런타임의 버전 번호를 지정 합니다.|
+|`targetVersion`|필수 사항입니다. 대상 .NET Framework의 버전 번호를 지정 합니다.|
+|`profile`|필수 사항입니다. 대상 .NET Framework의 프로필을 지정 합니다.|
+|`supportedRuntime`|필수 사항입니다. 대상 .NET Framework와 연결 된 런타임의 버전 번호를 지정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 `compatibleFrameworks` 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 배포는에서 실행할 수 있습니다 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . .NET Framework 4는의 상위 집합 이므로 실행할 수도 있습니다 [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
 
 ```xml
@@ -72,5 +74,5 @@ ms.locfileid: "66746035"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

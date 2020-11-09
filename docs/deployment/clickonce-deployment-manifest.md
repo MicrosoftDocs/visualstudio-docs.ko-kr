@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 배포 매니페스트 | Microsoft Docs
+description: 배포할 현재 ClickOnce 응용 프로그램 버전을 포함 하 여 ClickOnce 배포를 설명 하는 XML 파일인 배포 매니페스트에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,29 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900481"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383094"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 배포 매니페스트
 배포 매니페스트는 배포할 현재 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션 버전의 ID를 포함하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 설명하는 XML 파일입니다.
 
  배포 매니페스트에는 다음 요소와 특성이 있습니다.
 
-| 요소 | 설명 | 특성 |
+| 요소 | Description | 특성 |
 | - | - | - |
-| [\<assembly> 요소](../deployment/assembly-element-clickonce-deployment.md) | 필수 요소. 최상위 요소입니다. | `manifestVersion` |
-| [\<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-deployment.md) | 필수 요소. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 대한 애플리케이션 매니페스트를 식별합니다. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<description> 요소](../deployment/description-element-clickonce-deployment.md) | 필수 요소. 제어판에서 셸 존재 및 **프로그램 추가/제거** 항목을 만드는 데 사용되는 애플리케이션 정보를 식별합니다. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<deployment> 요소](../deployment/deployment-element-clickonce-deployment.md) | 선택 사항입니다. 업데이트를 배포하고 시스템에 노출하는 데 사용되는 특성을 식별합니다. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks> 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 필수 요소. 이 애플리케이션이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다. | `SupportUrl` |
-| [\<dependency> 요소](../deployment/dependency-element-clickonce-deployment.md) | 필수 요소. 배포를 위해 설치할 애플리케이션 버전 및 애플리케이션 매니페스트 위치를 식별합니다. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<assembly> 요소](../deployment/assembly-element-clickonce-deployment.md) | 필수 사항입니다. 최상위 요소입니다. | `manifestVersion` |
+| [\<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-deployment.md) | 필수 사항입니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 대한 애플리케이션 매니페스트를 식별합니다. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description> 요소](../deployment/description-element-clickonce-deployment.md) | 필수 사항입니다. 제어판에서 셸 존재 및 **프로그램 추가/제거** 항목을 만드는 데 사용되는 애플리케이션 정보를 식별합니다. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<deployment> 요소](../deployment/deployment-element-clickonce-deployment.md) | (선택 사항) 업데이트를 배포하고 시스템에 노출하는 데 사용되는 특성을 식별합니다. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks> 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 필수 사항입니다. 이 애플리케이션이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다. | `SupportUrl` |
+| [\<dependency> 요소](../deployment/dependency-element-clickonce-deployment.md) | 필수 사항입니다. 배포를 위해 설치할 애플리케이션 버전 및 애플리케이션 매니페스트 위치를 식별합니다. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity> 요소](../deployment/publisheridentity-element-clickonce-deployment.md) | 서명된 매니페스트에 필요합니다. 이 배포 매니페스트에 서명한 게시자에 대한 정보를 포함합니다. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature> 요소](../deployment/signature-element-clickonce-deployment.md) | 선택 사항입니다. 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다. | 없음 |
-| [\<customErrorReporting> 요소](../deployment/customerrorreporting-element-clickonce-deployment.md) | 선택 사항입니다. 오류가 발생할 때 표시할 URI를 지정합니다. | URI |
+| [\<Signature> 요소](../deployment/signature-element-clickonce-deployment.md) | (선택 사항) 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다. | None |
+| [\<customErrorReporting> 요소](../deployment/customerrorreporting-element-clickonce-deployment.md) | (선택 사항) 오류가 발생할 때 표시할 URI를 지정합니다. | URI |
 
 ## <a name="remarks"></a>설명
  배포 매니페스트 파일은 현재 버전 및 기타 배포 설정을 포함하여 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션 배포를 식별합니다. 이 파일은 애플리케이션의 현재 버전 및 배포에 포함된 모든 파일을 설명하는 애플리케이션 매니페스트를 참조합니다.
@@ -52,7 +54,7 @@ ms.locfileid: "62900481"
 ## <a name="file-name-syntax"></a>파일 이름 구문
  배포 매니페스트 파일의 이름은 *응용 프로그램* 확장명으로 끝나야 합니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
  다음 코드 예제에서는 배포 매니페스트를 보여 줍니다.
 
 ```xml
@@ -117,5 +119,5 @@ ms.locfileid: "62900481"
 </Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

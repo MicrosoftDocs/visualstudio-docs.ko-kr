@@ -1,5 +1,6 @@
 ---
 title: 데이터에 WPF 컨트롤 바인딩-1 부
+description: WPF 컨트롤을 데이터에 바인딩합니다. 이러한 데이터 바인딩된 컨트롤을 만들려면 데이터 소스 창에서 Visual Studio의 WPF Designer로 항목을 끌어 옵니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282883"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381924"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
@@ -33,11 +34,11 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 다음 표에서는 **데이터 원본** 창에서 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]로 항목을 끌어서 수행할 수 있는 작업을 보여 줍니다.
 
-|Task|추가 정보|
+|Task|자세한 정보|
 |----------| - |
-|새 데이터 바인딩된 컨트롤을 만듭니다.<br /><br /> 기존 컨트롤을 데이터에 바인딩합니다.|[데이터 집합에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)|
+|새 데이터 바인딩된 컨트롤을 만듭니다.<br /><br /> 기존 컨트롤을 데이터에 바인딩합니다.|[데이터 세트로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |부모-자식 관계로 관련 데이터를 표시하는 컨트롤을 만듭니다. 그러면 사용자가 어느 한 컨트롤에서 부모 데이터 레코드를 선택하면 선택한 부모 레코드의 관련 자식 데이터가 다른 한 컨트롤에 표시됩니다.|[WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)|
-|한 테이블의 정보를 다른 테이블의 외래 키 필드 값을 기반으로 표시하는 *조회 테이블*을 만듭니다.|[WPF 애플리케이션에서 조회 테이블 만들기](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|한 테이블의 정보를 다른 테이블의 외래 키 필드 값을 기반으로 표시하는 *조회 테이블* 을 만듭니다.|[WPF 애플리케이션에서 조회 테이블 만들기](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |데이터베이스의 이미지에 컨트롤을 바인딩합니다.|[데이터베이스의 그림에 컨트롤 바인딩](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>유효한 놓기 대상
@@ -54,8 +55,8 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 | - | - | - |
 | 데이터 세트 | 예 | 예 |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 예 | 예 |
-| 서비스 | 예 | 예 |
-| Object | 예 | 예 |
+| 서비스 | 예 | 아니요 |
+| Object | 예 | 아니요 |
 
 ### <a name="datasets"></a>데이터 세트
 

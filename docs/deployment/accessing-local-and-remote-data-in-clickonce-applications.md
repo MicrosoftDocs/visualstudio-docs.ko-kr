@@ -1,5 +1,6 @@
 ---
 title: 로컬 & 원격 데이터에 액세스 (ClickOnce 앱)
+description: ClickOnce에서 로컬 및 원격으로 데이터를 읽고 쓰기 위해 제공 하는 다양 한 옵션에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810473"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383263"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스
 대부분 애플리케이션에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.
@@ -38,7 +39,7 @@ ms.locfileid: "90810473"
 ### <a name="clickonce-data-directory"></a>ClickOnce 데이터 디렉터리
  로컬 컴퓨터에 설치된 모든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에는 사용자의 Documents and Settings 폴더에 저장된 데이터 디렉터리가 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션에 포함되고 “데이터" 파일로 표시된 모든 파일은 애플리케이션이 설치될 때 이 디렉터리에 복사됩니다. 데이터 파일의 파일 형식은 가장 자주 사용되는 텍스트, XML 및 데이터베이스 파일(예: Microsoft Access .mdb 파일)이 될 수 있습니다.
 
- 데이터 디렉터리는 애플리케이션이 명시적으로 저장 및 유지 관리하는 데이터인 애플리케이션에서 관리되는 데이터에 사용됩니다. 애플리케이션 매니페스트에서 “데이터"로 표시되지 않은 모든 정적, 독립적 파일은 애플리케이션 디렉터리에 있습니다. 이 디렉터리는 응용 프로그램의 실행 파일 (*.exe*)과 어셈블리가 상주 하는 위치입니다.
+ 데이터 디렉터리는 애플리케이션이 명시적으로 저장 및 유지 관리하는 데이터인 애플리케이션에서 관리되는 데이터에 사용됩니다. 애플리케이션 매니페스트에서 “데이터"로 표시되지 않은 모든 정적, 독립적 파일은 애플리케이션 디렉터리에 있습니다. 이 디렉터리는 응용 프로그램의 실행 파일 ( *.exe* )과 어셈블리가 상주 하는 위치입니다.
 
 > [!NOTE]
 > [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션이 제거되면 데이터 디렉터리도 제거됩니다. 문서와 같이 최종 사용자가 관리하는 데이터를 저장하는 데 절대 데이터 디렉터리를 사용하지 마세요.
@@ -61,7 +62,7 @@ ms.locfileid: "90810473"
 
  <xref:System.Windows.Forms.Application> 클래스에서 관련 변수(예: <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)를 사용하여 데이터 디렉터리 경로를 가져올 수도 있습니다.
 
- 기타 파일 형식을 조작하려면 추가 권한이 필요할 수 있습니다. 예를 들어 Access 데이터베이스 (*.mdb*) 파일을 사용 하려는 경우에는 응용 프로그램에서 관련 클래스를 사용 하기 위해 완전 신뢰를 어설션해야 합니다 \<xref:System.Data> .
+ 기타 파일 형식을 조작하려면 추가 권한이 필요할 수 있습니다. 예를 들어 Access 데이터베이스 ( *.mdb* ) 파일을 사용 하려는 경우에는 응용 프로그램에서 관련 클래스를 사용 하기 위해 완전 신뢰를 어설션해야 합니다 \<xref:System.Data> .
 
 #### <a name="data-directory-and-application-versions"></a>데이터 디렉터리 및 애플리케이션 버전
  각 애플리케이션 버전에는 다른 버전에서 격리된 고유한 데이터 디렉터리가 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 애플리케이션에 런타임에 새 데이터 파일을 만들 위치가 있도록 데이터 파일이 배포에 포함되는지와 관계없이 이 디렉터리를 만듭니다. 새 애플리케이션 버전이 설치될 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 기존 데이터 파일이 원래 배포에 포함되거나 애플리케이션에서 만들어지는지와 관계없이 모든 기존 데이터 파일을 이전 버전의 데이터 디렉터리에서 새 버전의 데이터 디렉터리로 복사합니다.
@@ -108,6 +109,6 @@ ms.locfileid: "90810473"
 
  대부분은 데이터베이스에 직접 액세스할 필요가 없고 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 또는 XML Web service에서 작성된 웹 서버 애플리케이션을 통해 액세스합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션이 웹 서버에서 배포될 경우 이 방식으로 데이터베이스에 액세스하는 것이 대부분 가장 적합한 방법입니다. 애플리케이션의 권한을 높이지 않고 서버를 부분 신뢰로 액세스할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [방법: ClickOnce 응용 프로그램에 데이터 파일 포함](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

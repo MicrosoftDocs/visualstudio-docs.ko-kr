@@ -1,6 +1,6 @@
 ---
 title: 커밋되지 않은 편집
-description: 저장 하기 전에 데이터 바인딩된 컨트롤에 대 한 in-process 편집 내용 커밋
+description: 데이터를 저장 하기 전에 데이터 바인딩된 Windows Forms 컨트롤에서 in-process 편집 내용을 커밋합니다. 폼의 모든 BindingSource 구성 요소에 대해 EndEdit를 호출 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038376"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382392"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>데이터 바인딩된 컨트롤에서 데이터를 저장하기 전에 In-Process 편집 커밋
 
@@ -52,7 +52,7 @@ ms.locfileid: "90038376"
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)

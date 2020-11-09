@@ -1,5 +1,6 @@
 ---
 title: 클라이언트에 신뢰할 수 있는 게시자 추가 상자 (ClickOnce)
+description: ClickOnce 응용 프로그램이 사용자에 게 메시지를 표시 하지 않고 더 높은 신뢰 수준에서 실행 되도록 클라이언트 컴퓨터에 인증서를 추가 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809809"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382704"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 신뢰할 수 있는 애플리케이션 배포를 사용하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션이 사용자 프롬프트 없이 더 높은 신뢰 수준으로 실행되도록 클라이언트 컴퓨터를 구성할 수 있습니다. 다음 절차에서는 명령줄 도구 CertMgr.exe를 사용하여, 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 저장소에 게시자의 인증서를 추가하는 방법을 보여 줍니다.
@@ -39,7 +40,7 @@ ms.locfileid: "90809809"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
+2. Base64 X.509( *.cer* ) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -49,7 +50,7 @@ ms.locfileid: "90809809"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대 한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조 하세요.
+2. Base64 X.509( *.cer* ) 형식으로 인증서를 내보냅니다. 인증서 형식에 대 한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조 하세요.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -57,7 +58,7 @@ ms.locfileid: "90809809"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)

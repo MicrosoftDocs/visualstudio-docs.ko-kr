@@ -1,5 +1,7 @@
 ---
 title: '&lt;assembly &gt; 요소 (ClickOnce 배포) | Microsoft Docs'
+description: Assembly 요소는 루트 요소 이며 ClickOnce 배포에 필요 합니다. 처음 포함 된 요소는 assemblyIdentity 요소 여야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929071"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383237"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; 요소 (ClickOnce 배포)
 배포 매니페스트에 대 한 최상위 수준 요소입니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -40,9 +42,9 @@ ms.locfileid: "62929071"
 
  `assembly` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|특성|Description|
 |---------------|-----------------|
-|`manifestVersion`|필수 요소. 이 특성은로 설정 해야 합니다 `1.0` .|
+|`manifestVersion`|필수 사항입니다. 이 특성은로 설정 해야 합니다 `1.0` .|
 
 ## <a name="example"></a>예
  다음 코드 예제에서는를 `assembly` 사용 하 여 배포 된 응용 프로그램에 대 한 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 코드 예제는 [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md) 항목에 대해 제공 되는 더 큰 예제의 일부입니다.
@@ -62,6 +64,6 @@ ms.locfileid: "62929071"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
 - [\<assembly> 요소인](../deployment/assembly-element-clickonce-application.md)

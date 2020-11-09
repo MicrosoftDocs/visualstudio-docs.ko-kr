@@ -1,5 +1,7 @@
 ---
 title: ClickOnce에서 응용 프로그램 업데이트를 수행 하는 방법 | Microsoft Docs
+description: ClickOnce에서 파일 버전 정보를 사용 하 여 응용 프로그램의 업데이트 여부를 결정 하는 방법에 대해 알아봅니다. ClickOnce는 파일 패치를 사용 하 여 다운로드 시 중복성을 방지 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900026"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382669"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce에서 애플리케이션 업데이트가 수행되는 방식
 ClickOnce는 응용 프로그램의 배포 매니페스트에 지정 된 파일 버전 정보를 사용 하 여 응용 프로그램의 파일을 업데이트할지 여부를 결정 합니다. 업데이트가 시작 된 후 ClickOnce는 *파일 패치* 라는 기법을 사용 하 여 응용 프로그램 파일의 중복 다운로드를 방지 합니다.
@@ -35,6 +37,6 @@ ClickOnce는 응용 프로그램의 배포 매니페스트에 지정 된 파일 
 
  데이터로 표시 되 고 데이터 디렉터리에 저장 된 파일에 대해서는 파일 패치가 적용 되지 않습니다. 이러한 파일은 항상 파일의 해시 서명과 관계 없이 다운로드 됩니다. 데이터 디렉터리에 대 한 자세한 내용은 [ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)

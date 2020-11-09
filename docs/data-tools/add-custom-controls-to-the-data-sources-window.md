@@ -1,5 +1,6 @@
 ---
 title: 데이터 소스 창에 사용자 지정 컨트롤 추가
+description: Visual Studio의 데이터 소스 창에 사용자 지정 컨트롤을 추가 합니다. 바인딩 가능한 컨트롤 목록을 사용자 지정 합니다. 연결 된 컨트롤을 추가 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283075"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382067"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>데이터 소스 창에 사용자 지정 컨트롤 추가
 
@@ -39,9 +40,9 @@ ms.locfileid: "85283075"
 2. **데이터 소스** 창에서 창에 추가한 데이터 원본의 일부인 항목을 클릭 한 다음 해당 항목에 대 한 드롭다운 메뉴를 클릭 합니다.
 
    > [!TIP]
-   > 데이터 소스 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하 여 엽니다.
+   > 데이터 소스 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 엽니다.
 
-3. 드롭다운 메뉴에서 **사용자 지정**을 클릭 합니다. 다음 대화 상자 중 하나가 열립니다.
+3. 드롭다운 메뉴에서 **사용자 지정** 을 클릭 합니다. 다음 대화 상자 중 하나가 열립니다.
 
     - **Windows Forms 디자이너** 열려 있으면 **옵션** 대화 상자의 **데이터 UI 사용자 지정** 페이지가 열립니다. 자세한 내용은 [데이터 UI 사용자 지정 옵션 대화 상자](../ide/reference/options-windows-forms-designer-data-ui-customization.md)를 참조 하세요.
 
@@ -60,7 +61,7 @@ ms.locfileid: "85283075"
     > [!NOTE]
     > 선택 하려는 컨트롤이 **연결 된 컨트롤** 상자에 표시 되지 않는 경우 컨트롤을 목록에 추가 해야 합니다. 자세한 내용은 [연결 된 컨트롤 추가](#add-associated-controls)를 참조 하세요.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
 7. **데이터 소스** 창에서 하나 이상의 컨트롤과 연결 된 데이터 형식의 항목을 클릭 한 다음 항목에 대 한 드롭다운 메뉴를 클릭 합니다.
 
@@ -72,11 +73,11 @@ ms.locfileid: "85283075"
 
 연결 된 컨트롤 목록에 컨트롤을 추가 하려면 다음을 수행 합니다.
 
-1. **도구 상자** 를 마우스 오른쪽 단추로 클릭 하 고 **항목 선택**을 선택 하 여 원하는 컨트롤을 **도구 상자** 에 추가 합니다.
+1. **도구 상자** 를 마우스 오른쪽 단추로 클릭 하 고 **항목 선택** 을 선택 하 여 원하는 컨트롤을 **도구 상자** 에 추가 합니다.
 
      컨트롤에는 다음 특성 중 하나가 있어야 합니다.
 
-    |특성|설명|
+    |특성|Description|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|와 같은 데이터의 단일 열 또는 속성을 표시 하는 간단한 컨트롤에 대해이 특성을 구현 <xref:System.Windows.Forms.TextBox> 합니다.|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|와 같은 데이터의 목록 (또는 테이블)을 표시 하는 컨트롤에 대해이 특성을 구현 <xref:System.Windows.Forms.DataGridView> 합니다.|
@@ -89,7 +90,7 @@ ms.locfileid: "85283075"
     > [!NOTE]
     > 현재 솔루션 또는 참조 되는 어셈블리 내에 있는 컨트롤만 연결 된 컨트롤의 목록에 추가할 수 있습니다. 또한 컨트롤은 위의 표에 있는 데이터 바인딩 특성 중 하나를 구현 해야 합니다. 데이터 소스 창에서 사용할 수 없는 사용자 지정 컨트롤에 데이터를 바인딩하려면 컨트롤을 **도구 상자** 에서 디자인 화면으로 끌어 온 다음 바인딩할 항목을 **데이터 소스** 창에서 컨트롤로 끌어 옵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [데이터 UI 사용자 지정 옵션 대화 상자](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

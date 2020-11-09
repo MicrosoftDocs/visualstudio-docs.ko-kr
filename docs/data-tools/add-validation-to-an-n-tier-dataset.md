@@ -1,5 +1,6 @@
 ---
 title: n 계층 데이터 세트에 유효성 검사 추가
+description: Visual Studio에서 n 계층 데이터 집합에 유효성 검사를 추가 합니다. 개별 열 또는 전체 행의 변경 내용에 대 한 유효성을 검사 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283023"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382132"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 계층 데이터 세트에 유효성 검사 추가
 N 계층 솔루션으로 분리 된 데이터 집합에 유효성 검사를 추가 하는 것은 기본적으로 단일 파일 데이터 집합에 유효성 검사를 추가 하는 것과 같습니다 (단일 프로젝트의 데이터 집합). 데이터에 대 한 유효성 검사를 수행 하기 위한 제안 된 위치는 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 데이터 테이블의 및/또는 이벤트 중입니다.
@@ -34,7 +35,7 @@ N 계층 솔루션으로 분리 된 데이터 집합에 유효성 검사를 추�
 > 데이터 집합 디자이너는 및 이벤트에 대해 c #에서 이벤트 처리기를 자동으로 만들지 않습니다 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> . 이벤트 처리기를 수동으로 만들고 이벤트 처리기를 기본 이벤트에 연결 해야 합니다. 다음 절차에서는 Visual Basic 및 c #에서 필요한 이벤트 처리기를 만드는 방법을 설명 합니다.
 
 ## <a name="validate-changes-to-individual-columns"></a>개별 열에 대 한 변경 내용 유효성 검사
-이벤트를 처리 하 여 개별 열에 있는 값의 유효성을 검사 <xref:System.Data.DataTable.ColumnChanging> 합니다. <xref:System.Data.DataTable.ColumnChanging>열의 값이 수정 되 면 발생 하는 이벤트입니다. <xref:System.Data.DataTable.ColumnChanging> **데이터 세트 디자이너**에서 원하는 열을 두 번 클릭 하 여 이벤트에 대 한 이벤트 처리기를 만듭니다.
+이벤트를 처리 하 여 개별 열에 있는 값의 유효성을 검사 <xref:System.Data.DataTable.ColumnChanging> 합니다. <xref:System.Data.DataTable.ColumnChanging>열의 값이 수정 되 면 발생 하는 이벤트입니다. <xref:System.Data.DataTable.ColumnChanging> **데이터 세트 디자이너** 에서 원하는 열을 두 번 클릭 하 여 이벤트에 대 한 이벤트 처리기를 만듭니다.
 
 처음으로 열을 두 번 클릭 하면 디자이너에서 이벤트에 대 한 이벤트 처리기를 생성 합니다 <xref:System.Data.DataTable.ColumnChanging> . `If...Then`특정 열을 테스트 하는 문도 생성 됩니다. 예를 들어 Northwind Orders 테이블에서 **RequiredDate** 열을 두 번 클릭 하면 다음 코드가 생성 됩니다.
 
@@ -53,7 +54,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>개별 열 값을 변경 하는 동안 유효성 검사를 추가 하려면
 
-1. **솔루션 탐색기**에서 *.xsd* 파일을 두 번 클릭 하 여 데이터 집합을 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
+1. **솔루션 탐색기** 에서 *.xsd* 파일을 두 번 클릭 하 여 데이터 집합을 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
 
 2. 유효성을 검사할 열을 두 번 클릭 합니다. 이 작업은 <xref:System.Data.DataTable.ColumnChanging> 이벤트 처리기를 만듭니다.
 
@@ -106,11 +107,11 @@ End Sub
 
 주문을 입력 하는 경우 유효성 검사를 수행 하면 OrderDate의 RequiredDate 이전에 주문이 입력 되지 않습니다. 이 예에서는 RequiredDate 열과 OrderDate 열 모두에 대 한 값을 비교 해야 하므로 개별 열 변경의 유효성을 검사 하는 것은 적합 하지 않습니다.
 
-<xref:System.Data.DataTable.RowChanging> **데이터 세트 디자이너**테이블의 제목 표시줄에 있는 테이블 이름을 두 번 클릭 하 여 이벤트에 대 한 이벤트 처리기를 만듭니다.
+<xref:System.Data.DataTable.RowChanging> **데이터 세트 디자이너** 테이블의 제목 표시줄에 있는 테이블 이름을 두 번 클릭 하 여 이벤트에 대 한 이벤트 처리기를 만듭니다.
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>전체 행을 변경 하는 동안 유효성 검사를 추가 하려면
 
-1. **솔루션 탐색기**에서 *.xsd* 파일을 두 번 클릭 하 여 데이터 집합을 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
+1. **솔루션 탐색기** 에서 *.xsd* 파일을 두 번 클릭 하 여 데이터 집합을 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
 
 2. 디자이너에서 데이터 테이블의 제목 표시줄을 두 번 클릭 합니다.
 
@@ -166,7 +167,7 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [연습: N 계층 데이터 응용 프로그램 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

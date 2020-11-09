@@ -1,5 +1,6 @@
 ---
 title: 데이터에 Windows Forms 컨트롤 바인딩
+description: 응용 프로그램 사용자에 게 데이터를 표시할 수 있도록 Visual Studio에서 데이터에 Windows Forms 컨트롤을 바인딩합니다.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508550"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382379"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩
 
@@ -31,7 +32,7 @@ ms.locfileid: "89508550"
 ![데이터 원본 끌기 작업](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> **데이터 소스** 창이 표시 되지 않는 경우 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하거나 **Shift** + **Alt** + **D**를 눌러 열 수 있습니다. **데이터 소스** 창을 보려면 Visual Studio에서 프로젝트를 열어야 합니다.
+> **데이터 소스** 창이 표시 되지 않는 경우 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하거나 **Shift** + **Alt** + **D** 를 눌러 열 수 있습니다. **데이터 소스** 창을 보려면 Visual Studio에서 프로젝트를 열어야 합니다.
 
 항목을 끌기 전에 바인딩하려는 컨트롤의 형식을 설정할 수 있습니다. 테이블 자체를 선택 하는지 아니면 개별 열을 선택 하는지에 따라 다른 값이 표시 됩니다.  사용자 지정 값을 설정할 수도 있습니다. 테이블의 경우 **세부 정보** 는 각 열이 별도의 컨트롤에 바인딩되어 있음을 의미 합니다.
 
@@ -53,7 +54,7 @@ ms.locfileid: "89508550"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView 컨트롤의 데이터에 바인딩
 
-[DataGridView 컨트롤](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)의 경우 전체 테이블이 해당 단일 컨트롤에 바인딩됩니다. **DataGridView** 를 폼으로 끌면 레코드 탐색을 위한 도구 스트립 ( <xref:System.Windows.Forms.BindingNavigator> )도 표시 됩니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다. 다음 그림에서는 Customers 테이블에 Orders 테이블과의 관계가 있으므로 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) 도 추가 되었습니다. 이러한 변수는 모두 자동 생성 코드에서 form 클래스의 private 멤버로 선언 됩니다. **DataGridView** 를 채우기 위한 자동 생성 코드는 `Form_Load` 이벤트 처리기에 있습니다. 데이터베이스를 업데이트 하기 위해 데이터를 저장 하는 코드는 `Save` **BindingNavigator**에 대 한 이벤트 처리기에 있습니다. 필요에 따라이 코드를 이동 하거나 수정할 수 있습니다.
+[DataGridView 컨트롤](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)의 경우 전체 테이블이 해당 단일 컨트롤에 바인딩됩니다. **DataGridView** 를 폼으로 끌면 레코드 탐색을 위한 도구 스트립 ( <xref:System.Windows.Forms.BindingNavigator> )도 표시 됩니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md) <xref:System.Windows.Forms.BindingSource> 및가 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다. 다음 그림에서는 Customers 테이블에 Orders 테이블과의 관계가 있으므로 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) 도 추가 되었습니다. 이러한 변수는 모두 자동 생성 코드에서 form 클래스의 private 멤버로 선언 됩니다. **DataGridView** 를 채우기 위한 자동 생성 코드는 `Form_Load` 이벤트 처리기에 있습니다. 데이터베이스를 업데이트 하기 위해 데이터를 저장 하는 코드는 `Save` **BindingNavigator** 에 대 한 이벤트 처리기에 있습니다. 필요에 따라이 코드를 이동 하거나 수정할 수 있습니다.
 
 ![BindingNavigator를 사용 하는 GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
@@ -67,12 +68,12 @@ ms.locfileid: "89508550"
 
 ## <a name="bind-to-data-in-individual-controls"></a>개별 컨트롤의 데이터에 바인딩
 
-데이터 소스를 **세부 정보**에 바인딩하는 경우 데이터 집합의 각 열이 별도의 컨트롤에 바인딩됩니다.
+데이터 소스를 **세부 정보** 에 바인딩하는 경우 데이터 집합의 각 열이 별도의 컨트롤에 바인딩됩니다.
 
 ![세부 정보에 데이터 소스 바인딩](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> 위의 그림에서는 Orders 테이블이 아니라 Customers 테이블의 Orders 속성에서 끌어 옵니다. 속성에 바인딩하면 `Customer.Orders` **DataGridView** 에서 만든 탐색 명령이 details 컨트롤에 즉시 반영 됩니다. Orders 테이블에서 끌어 오면 컨트롤이 데이터 집합에 계속 바인딩되어 있지만 **DataGridView**와 동기화 되지 않습니다.
+> 위의 그림에서는 Orders 테이블이 아니라 Customers 테이블의 Orders 속성에서 끌어 옵니다. 속성에 바인딩하면 `Customer.Orders` **DataGridView** 에서 만든 탐색 명령이 details 컨트롤에 즉시 반영 됩니다. Orders 테이블에서 끌어 오면 컨트롤이 데이터 집합에 계속 바인딩되어 있지만 **DataGridView** 와 동기화 되지 않습니다.
 
 다음 그림은 Customers 테이블의 Orders 속성이 **데이터 소스** 창의 **세부 정보** 에 바인딩된 후 폼에 추가 되는 기본 데이터 바인딩된 컨트롤을 보여 줍니다.
 
@@ -80,7 +81,7 @@ ms.locfileid: "89508550"
 
 또한 각 컨트롤에는 스마트 태그가 있습니다. 이 태그를 사용 하면 해당 컨트롤에만 적용 되는 사용자 지정이 가능 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Windows Forms의 데이터 바인딩 (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)
