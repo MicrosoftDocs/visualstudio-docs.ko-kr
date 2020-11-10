@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740028"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407720"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 사용자 지정 메뉴 명령에 바로 가기 키를 바인딩하려면 패키지에 대 한 *vsct* 파일에 항목을 추가 하면 됩니다. 이 항목에서는 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 바로 가기 키를 매핑하는 방법과 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기로 제한 하는 방법에 대해 설명 합니다.
@@ -31,9 +31,9 @@ ms.locfileid: "80740028"
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>바로 가기 키의 사용 가능 여부를 확인 하려면
 
-1. **도구**  >  **옵션**  >  **환경** 창에서 **키보드**를 선택 합니다.
+1. **도구**  >  **옵션**  >  **환경** 창에서 **키보드** 를 선택 합니다.
 
-2. **에서 새 바로 가기 사용** 이 **전역**으로 설정 되어 있는지 확인 합니다.
+2. **에서 새 바로 가기 사용** 이 **전역** 으로 설정 되어 있는지 확인 합니다.
 
 3. **바로 가기 키 누르기** 상자에 사용 하려는 바로 가기 키를 입력 합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "80740028"
 4. 매핑되지 않은 키를 찾을 때까지 다른 키 조합을 사용해 보세요.
 
    > [!NOTE]
-   > **Alt** 키를 사용 하는 바로 가기 키는 메뉴를 열고 명령을 직접 실행 하지 않을 수 있습니다. 따라서 **Alt**키를 포함 하는 바로 가기를 입력 하면 **현재 box에서 사용 하는 바로 가기가** 비어 있을 수 있습니다. **옵션** 대화 상자를 닫은 다음 키를 눌러 바로 가기에서 메뉴가 열리지 않는지 확인할 수 있습니다.
+   > **Alt** 키를 사용 하는 바로 가기 키는 메뉴를 열고 명령을 직접 실행 하지 않을 수 있습니다. 따라서 **Alt** 키를 포함 하는 바로 가기를 입력 하면 **현재 box에서 사용 하는 바로 가기가** 비어 있을 수 있습니다. **옵션** 대화 상자를 닫은 다음 키를 눌러 바로 가기에서 메뉴가 열리지 않는지 확인할 수 있습니다.
 
    다음 절차에서는 기존 VSPackage 메뉴 명령을 사용 하는 것으로 가정 합니다. 이 작업을 수행 하는 데 도움이 필요 하면 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 살펴보세요.
 
@@ -59,7 +59,7 @@ ms.locfileid: "80740028"
 
     `guid`및 특성을 `id` 호출 하려는 명령의 명령으로 설정 합니다.
 
-    특성을 `mod1` **Control**, **Alt**또는 **Shift**로 설정 합니다.
+    특성을 `mod1` **Control** , **Alt** 또는 **Shift** 로 설정 합니다.
 
     KeyBindings 섹션은 다음과 같습니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "80740028"
 
    사용자 지정 편집기 에서만 명령을 사용할 수 있도록 하려면 `editor` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자 지정 편집기를 포함 하는 VSPackage를 만들 때 패키지 템플릿에서 생성 된 사용자 지정 편집기의 이름으로 특성을 설정 합니다. 이름 값을 찾으려면 `<Symbols>` `<GuidSymbol>` `name` 특성이 "."로 끝나는 노드에 대 한 섹션을 확인 합니다 `editorfactory` . 사용자 지정 편집기의 이름입니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
  이 예제에서는 바로 가기 **키 Ctrl** + **Alt** + **C** 를 `cmdidMyCommand` 이름이 인 패키지의 명령에 바인딩합니다 `MyPackage` .
 
 ```
@@ -98,7 +98,7 @@ ms.locfileid: "80740028"
 </CommandTable>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
  이 예제에서는 바로 가기 **키 Ctrl** + **B** 를 `cmdidBold` 라는 프로젝트의 명령에 바인딩합니다 `TestEditor` . 명령은 사용자 지정 편집기 에서만 사용할 수 있으며 다른 편집기에서는 사용할 수 없습니다.
 
 ```xml

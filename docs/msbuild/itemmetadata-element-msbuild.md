@@ -1,5 +1,7 @@
 ---
 title: ItemMetadata 요소(MSBuild) | Microsoft Docs
+description: 메타데이터 값을 가진 사용자 정의 항목 메타데이터 키를 포함하는 MSBuild ItemMetadata 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633618"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903594"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 요소(MSBuild)
 
 항목 메타데이터 값을 포함하는 사용자 정의 항목 메타데이터 키를 포함합니다. 한 항목에 메타데이터 키-값 쌍이 얼마든지 포함될 수 있습니다.
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
  \<Item>
 
 ## <a name="syntax"></a>구문
@@ -38,11 +40,11 @@ ms.locfileid: "77633618"
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 
@@ -52,9 +54,9 @@ ms.locfileid: "77633618"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[항목](../msbuild/item-element-msbuild.md)|빌드 프로세스에 대한 입력을 정의하는 사용자 정의 요소입니다.|
+|[Item](../msbuild/item-element-msbuild.md)|빌드 프로세스에 대한 입력을 정의하는 사용자 정의 요소입니다.|
 
 ## <a name="text-value"></a>텍스트 값
 
@@ -74,7 +76,7 @@ ms.locfileid: "77633618"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
-- [Items](../msbuild/msbuild-items.md)
+- [항목](../msbuild/msbuild-items.md)

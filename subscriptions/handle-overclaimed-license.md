@@ -1,18 +1,18 @@
 ---
-title: 초과 할당된 라이선스 처리 | Microsoft Docs
+title: Visual Studio 구독에서 초과 할당된 라이선스 처리 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: 관리자가 초과 할당된 구독을 해결하는 방법을 알아봅니다.
-ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022589"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904289"
 ---
 # <a name="over-allocated-subscriptions"></a>초과 할당된 구독
 구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 "초과 할당"이라고 합니다.  
@@ -34,10 +34,10 @@ ms.locfileid: "91022589"
 - 일부 구독 할당을 삭제합니다.  (true-up은 연중 어느 시점에서든 할당된 최대 구독 수를 기준으로 발생되므로, 이 경우에도 해당 연간 true-up에 대한 지불이 이루어져야 합니다.)
 
 ## <a name="billing-and-true-up"></a>청구 및 true-up
-조직에 EA(기업계약)가 있는 경우 관리자는 구매 없이도 구독을 할당할 수 있고, 나중에 "true up"이라고 알려진 조정 프로세스를 통해 구독료를 지불할 수 있습니다.  초과 할당하면 "true-up" 기간 동안 사용자에게 할당된 최대 구독 수에 대한 비용이 조직에 청구됩니다.  이는 true-up이 이루어질 때 할당된 최대 구독 수가 더 이상 없더라도 마찬가지입니다.  최대 사용량 모니터링에 대한 자세한 내용은 [최대 사용량](maximum-usage.md) 항목을 참조하세요.
+조직에 EA(기업계약)가 있는 경우 관리자는 구매 없이도 구독을 할당할 수 있고, 나중에 "true up"이라고 알려진 조정 프로세스를 통해 구독료를 지불할 수 있습니다.  초과 할당하면 “true-up” 기간 동안 사용자에게 할당된 최대 구독 수에 대한 비용이 조직에 청구됩니다.  이는 true-up이 이루어질 때 할당된 최대 구독 수가 더 이상 없더라도 마찬가지입니다.  최대 사용량 모니터링에 대한 자세한 내용은 [최대 사용량](maximum-usage.md) 항목을 참조하세요.
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

@@ -1,5 +1,7 @@
 ---
 title: 증분 빌드 | Microsoft Docs
+description: 최신 출력 파일이 실행되지 않도록 최적화된 MSBuild 증분 빌드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633722"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904592"
 ---
 # <a name="incremental-builds"></a>증분 빌드
 
@@ -24,7 +26,7 @@ ms.locfileid: "77633722"
 > [!NOTE]
 > MSBuild가 입력 파일을 평가할 때 현재 실행 목록의 콘텐츠만 고려됩니다. 마지막 빌드에서 목록을 변경하더라도 대상이 자동으로 만료되지는 않습니다.
 
-모든 출력 항목이 최신 상태인 경우 MSBuild는 대상을 건너뜁니다. 이 대상의 *증분 빌드*는 빌드 속도를 크게 향상 시킬 수 있습니다. 일부 파일만 최신 상태인 경우 MSBuild는 대상을 실행하지만 최신 항목을 건너뛰므로 모든 항목을 최신 상태로 합니다. 이 프로세스는 *부분 증분 빌드*로 알려져 있습니다.
+모든 출력 항목이 최신 상태인 경우 MSBuild는 대상을 건너뜁니다. 이 대상의 *증분 빌드* 는 빌드 속도를 크게 향상 시킬 수 있습니다. 일부 파일만 최신 상태인 경우 MSBuild는 대상을 실행하지만 최신 항목을 건너뛰므로 모든 항목을 최신 상태로 합니다. 이 프로세스는 *부분 증분 빌드* 로 알려져 있습니다.
 
 1-1 매핑은 일반적으로 항목 변환에서 생성됩니다. 자세한 내용은 [변환](../msbuild/msbuild-transforms.md)을 참조하세요.
 
@@ -42,7 +44,7 @@ ms.locfileid: "77633722"
 
 ## <a name="output-inference"></a>출력 유추
 
-MSBuild는 대상의 `Inputs` 및 `Outputs` 특성을 비교하여 대상을 실행해야 하는지 여부를 결정합니다. 이상적으로 증분 빌드가 완료된 후 존재하는 파일 집합은 연결된 대상의 실행 여부와 관계 없이 동일하게 유지되어야 합니다. 작업에 의해 만들어지거나 변경되는 속성 및 항목은 빌드에 영향을 줄 수 있기 때문에 MSBuild는 영향을 주는 대상을 건너뛰더라도 해당 값을 유추해야 합니다. 이 프로세스는 *출력 유추*로 알려져 있습니다.
+MSBuild는 대상의 `Inputs` 및 `Outputs` 특성을 비교하여 대상을 실행해야 하는지 여부를 결정합니다. 이상적으로 증분 빌드가 완료된 후 존재하는 파일 집합은 연결된 대상의 실행 여부와 관계 없이 동일하게 유지되어야 합니다. 작업에 의해 만들어지거나 변경되는 속성 및 항목은 빌드에 영향을 줄 수 있기 때문에 MSBuild는 영향을 주는 대상을 건너뛰더라도 해당 값을 유추해야 합니다. 이 프로세스는 *출력 유추* 로 알려져 있습니다.
 
 여기에는 세 가지 경우가 있습니다.
 
@@ -52,7 +54,7 @@ MSBuild는 대상의 `Inputs` 및 `Outputs` 특성을 비교하여 대상을 실
 
 - 대상에 오래된 출력이 없으며 건너뜁니다. MSBuild는 대상을 평가하고 대상이 실행된 것처럼 항목 및 속성에 변경 내용을 만듭니다.
 
-증분 컴파일을 지원하기 위해 작업은 모든 `Output` 요소의 `TaskParameter` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 예를 들어 다음과 같은 노래를 선택할 수 있다.
+증분 컴파일을 지원하기 위해 작업은 모든 `Output` 요소의 `TaskParameter` 특성 값이 작업 입력 매개 변수와 동일한지 확인해야 합니다. 몇 가지 예제는 다음과 같습니다.
 
 ```xml
 <CreateProperty Value="123">

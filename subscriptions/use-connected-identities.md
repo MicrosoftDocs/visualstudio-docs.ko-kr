@@ -1,27 +1,27 @@
 ---
-title: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 | Microsoft Docs
+title: Visual Studio 구독에서 연결된 ID를 사용하는 방법 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 연결된 Microsoft 계정 및 Azure Active Directory ID를 사용하는 방법 알아보기
-ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005240"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904037"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 연결된 ID를 사용하는 방법
-사용자가 회사 또는 학교를 통해 Visual Studio 구독을 받고 Microsoft 계정(MSA)을 사용하여 로그인하는 경우, 구독 관리자는 조직의 Azure Active Directory(Azure AD)에서 사용자의 ID에 MSA를 연결할 수 있습니다.  이렇게 하면 구독에 포함된 일부 혜택에 액세스하는 방법이 변경됩니다. 
+사용자가 회사 또는 학교를 통해 Visual Studio 구독을 받고 MSA(Microsoft 계정)를 사용하여 로그인하는 경우, 구독 관리자는 조직의 Azure AD(Azure Active Directory)에서 사용자의 ID에 MSA를 연결할 수 있습니다.  이렇게 하면 구독에 포함된 일부 혜택에 액세스하는 방법이 변경됩니다. 
 
 ## <a name="overview-of-connected-ids"></a>연결된 ID 개요
-조직은 Azure AD 기반 ID로 점점 이동하여 향상된 보안을 제공하고 구독의 자동화된 관리를 지원합니다.  구독에서 @outlook.com 또는 다른 개인 이메일 주소와 같은 MSA를 사용하는 경우 관리자가 로그인 이메일을 Azure AD ID로 변경할 수 있습니다.  그러면 https://my.visualstudio.com 에서 구독자 포털에 로그인하는 방법이 변경되지만 모든 혜택에 액세스하는 방법은 변경되지 않을 수 있습니다.  
+조직은 Azure AD 기반 ID로 점점 이동하여 향상된 보안을 제공하고 구독의 자동화된 관리를 지원합니다.  구독에서 @outlook.com 또는 다른 개인 전자 메일 주소와 같은 MSA를 사용하는 경우 관리자가 로그인 전자 메일을 Azure AD ID로 변경할 수 있습니다.  그러면 https://my.visualstudio.com 에서 구독자 포털에 로그인하는 방법이 변경되지만 모든 혜택에 액세스하는 방법은 변경되지 않을 수 있습니다.  
 
-관리자가 MSA와 Azure AD ID를 연결하는 경우 MSA 대신 Azure AD ID를 사용하여 Visual Studio 구독에 액세스를 시작하는 것을 알리는 이메일을 받게 됩니다. 
+관리자가 MSA와 Azure AD ID를 연결하는 경우 MSA 대신 Azure AD ID를 사용하여 Visual Studio 구독에 액세스를 시작하는 것을 알리는 전자 메일을 받게 됩니다. 
 
 ## <a name="how-to-access-benefits-using-azure-ad-identities"></a>Azure AD ID를 사용하여 혜택에 액세스하는 방법
 관리자가 MSA를 Azure AD ID에 연결한 후 Azure AD를 사용하는 혜택에 액세스하려면 Azure AD ID를 사용하여 https://my.visualstudio.com 에서 구독자 포털에 로그인해야 합니다.  여기에는 다음이 포함됩니다.

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 회사 또는 학교 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005809"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903380"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>회사 또는 학교 계정으로 Visual Studio 구독 로그인 
 
@@ -31,7 +31,7 @@ Visual Studio 구독에 로그인하는 단계는 사용 중인 계정의 종류
 3. **Continue(계속)** 를 클릭합니다.
 4. 회사 로그인 페이지로 리디렉션됩니다.
 5. 암호를 입력합니다.
-6. **로그인**을 클릭합니다.
+6. **로그인** 을 클릭합니다.
 7. 그러면 “혜택” 페이지가 표시됩니다.
 
 이제 사용 중인 구독 유형이 포털 위쪽에 걸쳐 있는 파란색 막대에 표시되는 것을 확인할 볼 수 있습니다.
@@ -48,8 +48,8 @@ Visual Studio 구독에 로그인하는 단계는 사용 중인 계정의 종류
 
 3. **Continue(계속)** 를 클릭합니다.
 4. 결정 페이지로 리디렉션됩니다.
-    - 구독이 AAD(Azure Active Directory) 테넌트에 연결된 “회사 또는 학교” 계정에 연결된 경우 **회사 또는 학교 계정**을 선택합니다.
-    - 구독이 “회사” 전자 메일 주소에 연결되지만 “개인” Microsoft 계정(MSA)으로도 변환된 경우 **개인**을 선택합니다.
+    - 구독이 AAD(Azure Active Directory) 테넌트에 연결된 “회사 또는 학교” 계정에 연결된 경우 **회사 또는 학교 계정** 을 선택합니다.
+    - 구독이 “회사” 전자 메일 주소에 연결되지만 “개인” Microsoft 계정(MSA)으로도 변환된 경우 **개인** 을 선택합니다.
 
         > [!NOTE]
         > 이 경우는 이전에 Visual Studio 구독(이전 MSDN)을 사용한 많은 구독자에 해당합니다.
@@ -57,7 +57,7 @@ Visual Studio 구독에 로그인하는 단계는 사용 중인 계정의 종류
     - 하나의 경로가 실패하면 다른 경로를 시도하세요.  구독 관리자가 구독을 수정했을 수 있습니다.
 
 5. 암호를 입력합니다.
-6. **로그인**을 클릭합니다.
+6. **로그인** 을 클릭합니다.
 7. 그러면 “혜택” 페이지가 표시됩니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답

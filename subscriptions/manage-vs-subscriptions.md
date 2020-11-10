@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005900"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904681"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -57,7 +57,7 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 
 ## <a name="transferring-subscriptions"></a>구독 양도
 
-Microsoft 볼륨 라이선스를 통해 구독을 구입했고 조직 내의 다른 사람에게 이 구독을 다시 할당해야 하는 경우 관리자가 이 작업을 대신 수행해야 합니다.
+Microsoft 볼륨 라이선싱을 통해 구독을 구입했고 조직 내의 다른 사람에게 이 구독을 다시 할당해야 하는 경우 관리자가 이 작업을 대신 수행해야 합니다.
 일반 정품 구독은 고객 서비스에 문의하여 다른 사용자에게 양도할 수 있습니다. 무료 또는 "전매 금지" 구독은 양도할 수 없습니다.
 
 ## <a name="managing-my-profile"></a>내 프로필 관리

@@ -1,18 +1,18 @@
 ---
-title: 제품 키 사용 | Microsoft Docs
+title: Visual Studio 구독에서 제품 키 사용 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 얻고 관리하는 방법을 알아봅니다.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005848"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903992"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 사용
 

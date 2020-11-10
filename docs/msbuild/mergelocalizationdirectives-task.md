@@ -1,5 +1,7 @@
 ---
 title: MergeLocalizationDirectives 작업 | Microsoft Docs
+description: MSBuild에서 MergeLocalizationDirectives 작업을 사용하여 지역화 특성 및 XAML 이진 형식 파일의 주석을 단일 파일에 병합하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633501"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903884"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 작업
 
@@ -38,7 +40,7 @@ ms.locfileid: "77633501"
 
 ## <a name="remarks"></a>설명
 
-지역화 특성 및 주석을 XAML 내용에 추가할 수 있습니다. Windows Presentation Foundation(WPF) 지역화 지원을 사용하면 지역화 특성 및 주석을 제거하고 생성된 어셈블리와는 별개인 *.loc* 파일에 추가할 수 있습니다. 이 작업은 **LocalizationPropertyStorage** 특성을 사용하여 수행할 수 있습니다. 지역화 특성 및 주석과 **LocalizationPropertyStorage**에 대한 자세한 내용은 [지역화 특성 및 주석](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)을 참조하세요.
+지역화 특성 및 주석을 XAML 내용에 추가할 수 있습니다. Windows Presentation Foundation(WPF) 지역화 지원을 사용하면 지역화 특성 및 주석을 제거하고 생성된 어셈블리와는 별개인 *.loc* 파일에 추가할 수 있습니다. 이 작업은 **LocalizationPropertyStorage** 특성을 사용하여 수행할 수 있습니다. 지역화 특성 및 주석과 **LocalizationPropertyStorage** 에 대한 자세한 내용은 [지역화 특성 및 주석](/dotnet/framework/wpf/advanced/localization-attributes-and-comments)을 참조하세요.
 
 ## <a name="example"></a>예제
 

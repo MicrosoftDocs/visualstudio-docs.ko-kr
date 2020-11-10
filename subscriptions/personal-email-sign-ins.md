@@ -1,18 +1,18 @@
 ---
-title: VLSC에 표시된 개인 전자 메일
+title: VLSC의 Visual Studio 구독 관련 개인 전자 메일
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/22/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독 - 구독자의 Hotmail 또는 Gmail 주소가 보이는 이유는 무엇인가요?
-ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022664"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904259"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 구독 - 구독자의 개인 계정이 보이는 이유는 무엇인가요?
 기업이 VLSC(볼륨 라이선스 서비스 센터)에서 새 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)로 마이그레이션한 후 관리자는 일부 구독자의 “로그인 전자 메일 주소”에 Hotmail 또는 Outlook과 같은 개인 전자 메일 주소가 표시되는 것을 발견했습니다.  

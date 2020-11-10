@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382964"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407681"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependency &gt; 요소 (ClickOnce 배포)
 설치할 응용 프로그램의 버전과 응용 프로그램 매니페스트의 위치를 식별 합니다.
@@ -128,7 +128,7 @@ ms.locfileid: "94382964"
 ## <a name="remarks"></a>설명
  일반적으로 배포 매니페스트에는 `assemblyIdentity` 응용 프로그램 매니페스트의 이름 및 버전을 식별 하는 단일 요소가 있습니다.
 
-## <a name="example"></a>예
+## <a name="example-1"></a>예 1
  다음 코드 예제에서는 `dependency` 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ```xml
@@ -147,7 +147,7 @@ ms.locfileid: "94382964"
 </dependency>
 ```
 
-## <a name="example"></a>예
+## <a name="example-2"></a>예제 2
  다음 코드 예제에서는 GAC에 이미 설치 된 어셈블리에 대 한 종속성을 지정 합니다.
 
 ```xml
@@ -158,7 +158,7 @@ ms.locfileid: "94382964"
 </dependency>
 ```
 
-## <a name="example"></a>예
+## <a name="example-3"></a>예제 3
  다음 코드 예제에서는 특정 버전의 공용 언어 런타임에 대 한 종속성을 지정 합니다.
 
 ```xml
@@ -169,7 +169,7 @@ ms.locfileid: "94382964"
 </dependency>
 ```
 
-## <a name="example"></a>예
+## <a name="example-4"></a>예제 4
  다음 코드 예에서는 운영 체제 종속성을 지정 합니다.
 
 ```xml

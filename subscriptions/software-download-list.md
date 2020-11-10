@@ -1,5 +1,5 @@
 ---
-title: 어떤 소프트웨어를 다운로드할 수 있나요? | Microsoft Docs
+title: Visual Studio 구독에서 어떤 소프트웨어 다운로드를 사용할 수 있나요? | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 소프트웨어 다운로드 목록을 찾습니다.
-ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004013"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903460"
 ---
 # <a name="what-software-is-available-for-download"></a>어떤 소프트웨어를 다운로드할 수 있나요?
 
