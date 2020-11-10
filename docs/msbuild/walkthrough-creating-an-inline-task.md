@@ -1,5 +1,7 @@
 ---
 title: '연습: 인라인 작업 만들기 | Microsoft Docs'
+description: 작업을 호스트하는 별도의 어셈블리를 만들지 않고도 프로젝트 파일에 인라인으로 MSBuild 작업을 만드는 과정을 안내합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289146"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046637"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>연습: 인라인 작업 만들기
 
@@ -32,13 +34,13 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 - 2개의 입력 매개 변수와 MSBuild 항목을 반환하는 1개의 출력 매개 변수가 있는 작업입니다.
 
-작업을 만들고 실행하려면 다음과 같이 Visual Studio와 **Visual Studio 명령 프롬프트 창**을 사용합니다.
+작업을 만들고 실행하려면 다음과 같이 Visual Studio와 **Visual Studio 명령 프롬프트 창** 을 사용합니다.
 
 1. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만듭니다.
 
 2. Visual Studio에서 프로젝트 파일을 수정하여 인라인 작업을 만듭니다.
 
-3. **명령 프롬프트 창**을 사용하여 프로젝트를 빌드하고 결과를 검토합니다.
+3. **명령 프롬프트 창** 을 사용하여 프로젝트를 빌드하고 결과를 검토합니다.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>MSBuild 프로젝트 만들기 및 수정
 
@@ -46,13 +48,13 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 #### <a name="to-create-and-modify-a-project-file"></a>프로젝트 파일을 만들고 수정하려면
 
-1. Visual Studio에서 C# **Windows Forms 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 **InlineTasks**인지 확인합니다.
+1. Visual Studio에서 C# **Windows Forms 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치** 를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기** 가 선택되어 있고, **소스 제어에 추가** 가 선택 취소되어 있고, **솔루션 이름** 이 **InlineTasks** 인지 확인합니다.
 
-3. **확인**을 클릭하여 프로젝트 파일을 만듭니다.
+3. **확인** 을 클릭하여 프로젝트 파일을 만듭니다.
 
-3. **솔루션 탐색기**에서 **InlineTasks** 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음, **프로젝트 언로드**를 클릭합니다.
+3. **솔루션 탐색기** 에서 **InlineTasks** 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음, **프로젝트 언로드** 를 클릭합니다.
 
-4. 프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **InlineTasks.csproj 편집**을 클릭합니다.
+4. 프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **InlineTasks.csproj 편집** 을 클릭합니다.
 
      프로젝트 파일이 코드 편집기에 나타납니다.
 
@@ -90,24 +92,24 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 ### <a name="run-the-hello-task"></a>Hello 작업 실행
 
- **명령 프롬프트 창**에서 MSBuild를 실행하여 Hello 작업을 생성하고 이 작업을 호출하는 TestBuild 대상을 처리합니다.
+ **명령 프롬프트 창** 에서 MSBuild를 실행하여 Hello 작업을 생성하고 이 작업을 호출하는 TestBuild 대상을 처리합니다.
 
 ##### <a name="to-run-the-hello-task"></a>Hello 작업을 실행하려면
 
-1. **시작**을 클릭하고 **모든 프로그램**을 클릭한 후 **Visual Studio Tools** 폴더를 찾고 **Visual Studio 명령 프롬프트**를 마우스 오른쪽 단추로 클릭합니다.
+1. **시작** 을 클릭하고 **모든 프로그램** 을 클릭한 후 **Visual Studio Tools** 폴더를 찾고 **Visual Studio 명령 프롬프트** 를 마우스 오른쪽 단추로 클릭합니다.
 
-2. **명령 프롬프트 창**에서 프로젝트 파일이 들어 있는 폴더(이 경우 *D:\InlineTasks\InlineTasks\\* )를 찾습니다.
+2. **명령 프롬프트 창** 에서 프로젝트 파일이 들어 있는 폴더(이 경우 *D:\InlineTasks\InlineTasks\\* )를 찾습니다.
 
-3. 명령 스위치 없이 **msbuild**를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이렇게 하면 *InlineTasks.csproj* 파일이 빌드되고 기본 대상 TestBuild가 처리됩니다. 그 결과 Hello 작업이 호출됩니다.
+3. 명령 스위치 없이 **msbuild** 를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이렇게 하면 *InlineTasks.csproj* 파일이 빌드되고 기본 대상 TestBuild가 처리됩니다. 그 결과 Hello 작업이 호출됩니다.
 
-4. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.
+4. **명령 프롬프트 창** 에서 출력을 검토합니다. 다음 줄이 표시됩니다.
 
     `Hello, world!`
 
    > [!NOTE]
    > hello 메시지가 표시되지 않으면 프로젝트 파일을 다시 저장해 보고 Hello 작업을 실행하세요.
 
-   코드 편집기와 **명령 프롬프트 창**을 오가면서 프로젝트 파일을 변경하고 결과를 빠르게 확인할 수 있습니다.
+   코드 편집기와 **명령 프롬프트 창** 을 오가면서 프로젝트 파일을 변경하고 결과를 빠르게 확인할 수 있습니다.
 
 ## <a name="define-the-echo-task"></a>Echo 작업 정의
 
@@ -133,9 +135,9 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>
    ```
 
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.
+2. **명령 프롬프트 창** 에서 명령 스위치 없이 **msbuild** 를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.
 
-3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.
+3. **명령 프롬프트 창** 에서 출력을 검토합니다. 다음 줄이 표시됩니다.
 
     `Greetings!`
 
@@ -170,9 +172,9 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>
    ```
 
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.
+2. **명령 프롬프트 창** 에서 명령 스위치 없이 **msbuild** 를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 Echo 작업이 호출됩니다.
 
-3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.
+3. **명령 프롬프트 창** 에서 출력을 검토합니다. 다음 줄이 표시됩니다.
 
     `The sum is 9`
 
@@ -226,9 +228,9 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
    </Target>
    ```
 
-2. **명령 프롬프트 창**에서 명령 스위치 없이 **msbuild**를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 RegX 작업이 호출됩니다.
+2. **명령 프롬프트 창** 에서 명령 스위치 없이 **msbuild** 를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이 명령은 기본 대상 TestBuild를 처리하며 결과적으로 RegX 작업이 호출됩니다.
 
-3. **명령 프롬프트 창**에서 출력을 검토합니다. 다음 줄이 표시됩니다.
+3. **명령 프롬프트 창** 에서 출력을 검토합니다. 다음 줄이 표시됩니다.
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs

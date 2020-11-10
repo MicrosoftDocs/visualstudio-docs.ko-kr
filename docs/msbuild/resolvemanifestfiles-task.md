@@ -1,5 +1,7 @@
 ---
 title: ResolveManifestFiles 작업 | Microsoft Docs
+description: MSBuild가 ResolveManifestFiles 작업을 사용하여 빌드 프로세스의 항목을 매니페스트 생성을 위한 파일로 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632695"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048563"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 작업
 

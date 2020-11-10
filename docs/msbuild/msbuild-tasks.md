@@ -1,5 +1,7 @@
 ---
 title: MSBuild 작업 | Microsoft Docs
+description: MSBuild가 빌드 프로세스 중에 원자성 빌드 작업을 수행하는 작업 또는 실행 코드 단위를 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633137"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049056"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 작업
 
-빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. MSBuild에서는 *작업*을 통해 이러한 동작을 수행합니다. 작업은 MSBuild에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.
+빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. MSBuild에서는 *작업* 을 통해 이러한 동작을 수행합니다. 작업은 MSBuild에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.
 
 ## <a name="task-logic"></a>작업 논리
 
@@ -67,7 +69,7 @@ ms.locfileid: "77633137"
 
 ## <a name="overridden-tasks"></a>재정의된 작업
 
- MSBuild는 여러 위치에서 작업을 찾습니다. 첫 번째 위치는 .NET Framework 디렉터리에 저장된 확장명이 *.OverrideTasks*인 파일입니다. 이러한 파일의 작업은 프로젝트 파일의 작업을 비롯하여 이름이 동일한 다른 작업을 재정의합니다. 두 번째 위치는 .NET Framework 디렉터리의 확장명이 *.Tasks*인 파일입니다. 이러한 위치 중 하나에 작업이 없으면 프로젝트 파일의 작업을 사용합니다.
+ MSBuild는 여러 위치에서 작업을 찾습니다. 첫 번째 위치는 .NET Framework 디렉터리에 저장된 확장명이 *.OverrideTasks* 인 파일입니다. 이러한 파일의 작업은 프로젝트 파일의 작업을 비롯하여 이름이 동일한 다른 작업을 재정의합니다. 두 번째 위치는 .NET Framework 디렉터리의 확장명이 *.Tasks* 인 파일입니다. 이러한 위치 중 하나에 작업이 없으면 프로젝트 파일의 작업을 사용합니다.
 
 ## <a name="see-also"></a>참조
 

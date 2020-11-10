@@ -1,5 +1,7 @@
 ---
 title: RegisterAssembly 작업 | Microsoft Docs
+description: MSBuild가 RegisterAssembly 작업을 사용하여 지정된 어셈블리 내의 메타데이터를 읽고 필요한 항목을 레지스트리에 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c95606a00e86ffd187162e444f2c710c5cc3a0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce332ac17a20b40cdfbeb4effaf6caf060a87307
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632890"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048767"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 작업
 
@@ -38,7 +40,7 @@ ms.locfileid: "77632890"
 |`Assemblies`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> COM에 등록할 어셈블리를 지정합니다.|
 |`AssemblyListFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> `RegisterAssembly` 작업과 [UnregisterAssembly](../msbuild/unregisterassembly-task.md) 작업 사이의 상태에 대한 정보를 포함합니다. 이 정보를 통해 `UnregisterAssembly` 작업이 `RegisterAssembly` 작업에서 등록되지 못한 어셈블리의 등록을 취소하려고 하는 시도를 방지합니다.|
 |`CreateCodeBase`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 전역 어셈블리 캐시에 설치되지 않은 어셈블리에 대한 파일 경로를 지정하는 코드베이스 항목을 레지스트리에 만듭니다. 전역 어셈블리 캐시에 등록 중인 어셈블리를 다음에 설치하려면 이 옵션을 지정해야 합니다.|
-|`TypeLibFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 지정된 어셈블리에서 생성할 형식 라이브러리를 지정합니다. 생성된 형식 라이브러리에는 어셈블리 내에 정의된 액세스 가능 형식에 대한 정의가 들어 있습니다. 형식 라이브러리는 다음 조건 중 하나가 충족되는 경우에만 생성됩니다.<br /><br /> - 해당 이름의 형식 라이브러리가 해당 위치에 존재하지 않습니다.<br />- 형식 라이브러리는 존재하지만 전달되는 어셈블리보다 오래된 것입니다.<br /><br /> 형식 라이브러리가 전달되는 어셈블리보다 최신인 경우 새 형식 라이브러리가 만들어지지 않으며 어셈블리는 계속 등록됩니다.<br /><br /> 이 매개 변수를 지정하는 경우 `Assemblies` 매개 변수와 동일한 수의 항목이 포함되어야 하며, 그러지 않으면 작업이 실패합니다. 입력을 지정하지 않으면 작업은 기본적으로 어셈블리의 이름이 되며 항목의 확장명을 *.tlb*로 변경합니다.|
+|`TypeLibFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 지정된 어셈블리에서 생성할 형식 라이브러리를 지정합니다. 생성된 형식 라이브러리에는 어셈블리 내에 정의된 액세스 가능 형식에 대한 정의가 들어 있습니다. 형식 라이브러리는 다음 조건 중 하나가 충족되는 경우에만 생성됩니다.<br /><br /> - 해당 이름의 형식 라이브러리가 해당 위치에 존재하지 않습니다.<br />- 형식 라이브러리는 존재하지만 전달되는 어셈블리보다 오래된 것입니다.<br /><br /> 형식 라이브러리가 전달되는 어셈블리보다 최신인 경우 새 형식 라이브러리가 만들어지지 않으며 어셈블리는 계속 등록됩니다.<br /><br /> 이 매개 변수를 지정하는 경우 `Assemblies` 매개 변수와 동일한 수의 항목이 포함되어야 하며, 그러지 않으면 작업이 실패합니다. 입력을 지정하지 않으면 작업은 기본적으로 어셈블리의 이름이 되며 항목의 확장명을 *.tlb* 로 변경합니다.|
 
 ## <a name="remarks"></a>설명
 

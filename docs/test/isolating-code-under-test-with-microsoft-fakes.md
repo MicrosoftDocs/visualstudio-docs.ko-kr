@@ -10,16 +10,16 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739878"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325951"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
-Microsoft Fakes는 *스텁* 또는 *shim*을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 애플리케이션의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.
+Microsoft Fakes는 *스텁* 또는 *shim* 을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다. 테스트에서 제어하는 작은 코드 조각입니다. 테스트를 위해 코드를 격리하여 테스트가 실패할 경우 원인이 어디에 있는지 파악합니다. 애플리케이션의 다른 부분이 아직 작동하지 않더라도 스텁 및 shim을 사용해서 코드를 테스트할 수도 있습니다.
 
 Fakes는 두 가지 버전이 있습니다.
 
@@ -33,10 +33,11 @@ Fakes는 두 가지 버전이 있습니다.
 
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
-- .NET Core 및 SDK 스타일 프로젝트 지원은 현재 미리 보기 버전입니다. [자세히 알아보기](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 업데이트 6에서 미리 보기로 제공한 .NET Core 및 SDK 스타일 프로젝트 지원은 업데이트 8에서 기본적으로 사용하도록 설정되어 있습니다. 자세한 내용은 [.NET Core 및 SDK 스타일 프로젝트용 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)를 참조하세요.
+::: moniker-end
 
 > [!NOTE]
-> - .NET Standard 프로젝트는 지원되지 않습니다.
 > - Visual Studio를 이용한 프로파일링은 Microsoft Fakes를 사용하는 테스트에는 사용할 수 없습니다.
 
 ## <a name="choose-between-stub-and-shim-types"></a>스텁 및 shim 형식 중에 선택
@@ -82,11 +83,15 @@ Fakes는 두 가지 버전이 있습니다.
 
 2. **Fakes 어셈블리 추가**
 
-    1. **솔루션 탐색기**에서 테스트 프로젝트의 참조 목록을 확장합니다. Visual Basic에서 작업하는 경우 참조 목록을 보기 위해 **모든 파일 표시**를 선택해야 합니다.
+   1. **솔루션 탐색기** 에서 
+       - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
+       ::: moniker range=">=vs-2019"
+       - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+       ::: moniker-end
+       - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
+   2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간** 을 shim하려면 **System.dll** 을 선택합니다.
 
-    2. 인터페이스(예: IStockFeed)를 정의한 어셈블리에 대한 참조를 선택합니다. 이 참조의 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
-
-    3. 솔루션을 다시 빌드합니다.
+   3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가** 를 선택합니다.
 
 3. 테스트에서 스텁 인스턴스를 생성하고 해당 메서드에 대한 코드를 제공합니다.
 
@@ -169,9 +174,9 @@ shim을 사용하려면 애플리케이션 코드를 수정하거나 특정 방�
 
 1. **Fakes 어셈블리 추가**
 
-     **솔루션 탐색기**에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 *System.dll*에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시**를 클릭합니다.
+     **솔루션 탐색기** 에서 단위 테스트 프로젝트의 참조를 열고 모조하려는 메서드가 포함된 어셈블리에 대한 참조를 선택합니다. 이 예제에서 `DateTime` 클래스는 *System.dll* 에 있습니다.  Visual Basic 프로젝트에서 참조를 보려면 **모든 파일 표시** 를 클릭합니다.
 
-     **Fakes 어셈블리 추가**를 선택합니다.
+     **Fakes 어셈블리 추가** 를 선택합니다.
 
 2. **ShimsContext에 shim 삽입**
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 (참조할 ‘System.IO.Fakes’ 어셈블리가 없습니다. 네임스페이스는 shim 만들기 프로세스에서 생성됩니다. 그러나 일반적인 방법으로 ‘using’ 또는 ‘Import’를 사용할 수 있습니다.)
 
 또한 특정 인스턴스, 생성자 및 속성에 대한 shim을 만들 수 있습니다. 자세한 내용은 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>CI에서 Microsoft Fakes 사용
+
+### <a name="microsoft-fakes-assembly-generation"></a>Microsoft Fakes 어셈블리 생성
+Microsoft Fakes에는 Visual Studio Enterprise가 필요하므로, Fakes 어셈블리를 생성하려면 [Visual Studio Build 작업](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)을 사용하여 프로젝트를 빌드해야 합니다.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 이에 대한 대안은 Fakes 어셈블리를 CI에 체크 인하고 [MSBuild 작업](../msbuild/msbuild-task.md?view=vs-2019)을 사용하는 것입니다. 이 작업을 수행하는 경우 다음 코드 조각과 같이 테스트 프로젝트에 생성된 Fakes 어셈블리에 대한 어셈블리 참조가 있는지 확인해야 합니다.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+이 참조는 암시적으로 테스트 프로젝트에 어셈블리 참조를 추가하여 이동한 것이므로 SDK 스타일 프로젝트(.NET Core 및 .NET Framework)에서 수동으로 추가해야 합니다. 이 방법을 따르는 경우 부모 어셈블리가 변경될 때 Fakes 어셈블리가 업데이트되도록 해야 합니다.
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Microsoft Fakes 테스트 실행
+Microsoft Fakes 어셈블리가 구성된 `FakesAssemblies` 디렉터리(기본값 `$(ProjectDir)FakesAssemblies`)에 있는 한, [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)을 사용하여 테스트를 실행할 수 있습니다.
+
+::: moniker range=">=vs-2019"
+Microsoft Fakes를 사용하는 .NET Core 프로젝트에서 [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)으로 분산 테스트를 실행하려면 Visual Studio 2019 업데이트 9 미리 보기 `20201020-06` 이상이 필요합니다.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Microsoft Fakes를 사용하는 .NET Framework 테스트 프로젝트를 SDK 스타일 .NET Framework 또는 .NET Core 프로젝트로 전환
+Microsoft Fakes에 대해 설정된 .NET Framework를 .NET Core로 전환하려면 최소한의 변경만 필요합니다. 고려해야 할 사례는 다음과 같습니다.
+- 사용자 지정 프로젝트 템플릿을 사용하는 경우 해당 템플릿이 SDK 스타일이고 호환되는 대상 프레임워크에 대한 빌드인지 확인해야 합니다.
+- 일부 형식은 .NET Framework 및 .NET Core에서 서로 다른 어셈블리에 있습니다. 예를 들어 `System.DateTime`은 .NET Framework에서는 `System`/`mscorlib`에 있고 .NET Core에서는 `System.Runtime`에 있습니다. 이러한 시나리오에서는 모조되는 어셈블리를 변경해야 합니다.
+- Fakes 어셈블리 및 테스트 프로젝트에 대한 어셈블리 참조가 있는 경우 다음과 같은 누락된 참조에 대한 빌드 경고가 표시될 수 있습니다.
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  이 경고는 Fakes 생성에서 수행해야 하는 변경 때문에 발생하며 무시할 수 있습니다. 이제 빌드 중에 어셈블리 참조를 암시적으로 추가하기 때문에 프로젝트 파일에서 어셈블리 참조를 제거하여 이 경고를 방지할 수 있습니다.
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Microsoft Fakes 지원 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>.NET Framework를 대상으로 하는 이전 프로젝트의 Microsoft Fakes(비 SDK 스타일).
+- Microsoft Fakes 어셈블리 생성은 Visual Studio Enterprise 2015 이상에서 지원됩니다.
+- Microsoft Fakes 테스트는 모든 사용 가능한 Microsoft TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
+- Visual Studio Enterprise 2015 이상에서 Microsoft Fakes를 사용하는 테스트 프로젝트에 대해 코드 검사가 지원됩니다.
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK 스타일 .NET Framework 및 .NET Core 프로젝트의 Microsoft Fakes
+- Microsoft Fakes 어셈블리 생성은 Visual Studio Enterprise 2019 업데이트 6에서는 미리 보기로 지원되고 업데이트 8에서는 기본적으로 사용하도록 설정되어 있습니다.
+- .NET Framework를 대상으로 하는 프로젝트에 대한 Microsoft Fakes 테스트는 사용 가능한 모든 Microsoft TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
+- .NET Core를 대상으로 하는 프로젝트에 대한 Microsoft Fakes 테스트는 버전이 [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 이상인 Microsoft.TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
+- Visual Studio Enterprise version 2015 이상에서 .NET Framework를 대상으로 Microsoft Fakes를 사용하는 테스트 프로젝트에 대해 코드 검사가 지원됩니다.
+- .NET Core를 대상으로 Microsoft Fakes를 사용하는 테스트 프로젝트에 대한 코드 검사 지원은 개발 중입니다.
+
 
 ## <a name="in-this-section"></a>단원 내용
 [스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

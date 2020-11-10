@@ -1,5 +1,7 @@
 ---
 title: 작업 기본 클래스 | Microsoft Docs
+description: Microsoft.Build.Utilities.Task 기본 클래스가 해당 클래스에서 상속되는 작업에 추가하는 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 41557eb7df3da8a6322a3951520918ffb158b57a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631954"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048004"
 ---
 # <a name="task-base-class"></a>Task 기본 클래스
 

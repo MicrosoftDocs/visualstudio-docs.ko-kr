@@ -1,5 +1,7 @@
 ---
 title: MSBuild 15에 대한 기존 애플리케이션 업데이트 | Microsoft Docs
+description: 애플리케이션의 프로그래밍 빌드가 Visual Studio 또는 MSBuild.exe 내에서 수행된 빌드와 일치하는지 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184031"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047643"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15에 대한 기존 애플리케이션 업데이트
 
@@ -26,7 +28,7 @@ ms.locfileid: "84184031"
 
 ## <a name="use-microsoftbuildlocator"></a>Microsoft.Build.Locator 사용
 
-애플리케이션에서 *Microsoft.Build.Locator.dll*을 재배포하는 경우 다른 MSBuild 어셈블리를 배포할 필요가 없습니다.
+애플리케이션에서 *Microsoft.Build.Locator.dll* 을 재배포하는 경우 다른 MSBuild 어셈블리를 배포할 필요가 없습니다.
 
 MSBuild 15 및 로케이터 API를 사용하도록 프로젝트를 업데이트하려면 아래에 설명된 프로젝트에서 몇 가지를 변경해야 합니다. 프로젝트를 업데이트하는 데 필요한 변경의 예를 보려면 [MSBuildLocator 리포지토리에서 예제 프로젝트에 만든 커밋](https://github.com/Microsoft/MSBuildLocator/commits/example-updating-to-msbuild-15)을 참조하세요.
 
@@ -69,7 +71,7 @@ Microsoft.Build.Locator 패키지를 참조하면 애플리케이션에서 버�
 
 ### <a name="ensure-output-is-clean"></a>출력 정리 확인
 
-*Microsoft.Build.\*.dll* 어셈블리를 포함하지 않는지 확인하도록 프로젝트를 빌드하고 출력 디렉터리를 검사합니다(*Microsoft.Build.Locator.dll* 이외, 다음 단계에서 추가됨).
+*Microsoft.Build.\*.dll* 어셈블리를 포함하지 않는지 확인하도록 프로젝트를 빌드하고 출력 디렉터리를 검사합니다( *Microsoft.Build.Locator.dll* 이외, 다음 단계에서 추가됨).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Microsoft.Build.Locator에 대한 패키지 참조 추가
 

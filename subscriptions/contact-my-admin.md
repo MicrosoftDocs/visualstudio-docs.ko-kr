@@ -7,15 +7,15 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005690"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289979"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
-회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
+# <a name="get-assistance-from-your-subscriptions-admin"></a>구독 관리자의 도움 받기
+회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자(“관리자”)가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
 
 많은 조직의 규모 및 복잡성을 고려해 볼 때 관리자가 누구인지 알지 못할 수 있으므로 어디에서 도움을 받을지 알기 어려울 수 있습니다.  관리자에게 문의하는 데 도움이 되는 새로운 기능을 구독자 포털에 추가했습니다.   
 
@@ -33,7 +33,7 @@ ms.locfileid: "91005690"
 > **슈퍼 관리자:**  “내 관리자에게 문의” 요청을 보내는 전자 메일 주소를 설정하려면 [계약 기본 설정](admin-prefs.md#contact-email-address)에서 해당 주소를 지정합니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

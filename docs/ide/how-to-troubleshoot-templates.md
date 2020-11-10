@@ -1,5 +1,6 @@
 ---
-title: 프로젝트 템플릿 및 항목 템플릿의 로드 문제 해결
+title: 프로젝트 템플릿 및 항목 템플릿 문제 해결
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591387"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045706"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
 
@@ -38,9 +39,9 @@ ms.locfileid: "75591387"
 
 1. *.zip* 파일의 압축을 풉니다.
 
-1. Visual Studio의 **파일** 메뉴에서 **열기** > **파일**을 선택합니다.
+1. Visual Studio의 **파일** 메뉴에서 **열기** > **파일** 을 선택합니다.
 
-1. 템플릿에 대한 *vstemplate* 파일을 선택하고 **열기**를 선택합니다.
+1. 템플릿에 대한 *vstemplate* 파일을 선택하고 **열기** 를 선택합니다.
 
 1. *vstemplate* 파일의 XML이 템플릿 스키마를 따르는지 확인합니다. *vstemplate* 스키마에 대한 자세한 내용은 [템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요.
 
@@ -49,7 +50,7 @@ ms.locfileid: "75591387"
 
 1. *vstemplate* 파일을 저장한 다음, 닫습니다.
 
-1. 템플릿에 포함되어 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음 **보내기** > **압축(ZIP) 폴더**를 선택합니다. 선택한 파일이 *.zip* 파일로 압축됩니다.
+1. 템플릿에 포함되어 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음 **보내기** > **압축(ZIP) 폴더** 를 선택합니다. 선택한 파일이 *.zip* 파일로 압축됩니다.
 
 1. 새 *.zip* 파일을 이전 *.zip* 파일과 같은 디렉터리에 배치합니다.
 

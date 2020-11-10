@@ -1,5 +1,7 @@
 ---
 title: 게임 및 앱을 위한 3D 자산 작업
+description: DirectX 기반 게임 및 앱에 대한 3D 모델, 질감 및 셰이더를 만들거나 수정하는 데 사용할 수 있는 Visual Studio 도구에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589801"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134565"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>게임 및 앱을 위한 3D 자산 작업
 
@@ -35,7 +37,7 @@ Visual Studio 이미지 편집기를 사용하여 많은 공통 유형 및 형�
 
 ### <a name="3d-models"></a>3D 모델
 
-3D 모델은 게임과 앱에서 공간과 모양을 만듭니다. 최소한, 모델은 모델의 모양을 나타내는 선 또는 삼각형을 정의하기 위해 인덱싱 데이터와 함께 3D 공간에서 *꼭짓점*으로 알려진 점의 위치를 인코딩합니다. 추가 데이터는 이러한 꼭짓점과 연결될 수 있습니다(예: 색 정보, 법선 벡터 또는 앱 관련 특성). 또한 각 모델은 개체 전체 특성을 정의할 수도 있습니다. 예를 들어 개체 표면의 모양을 컴퓨팅하는 데 사용되는 셰이더 또는 개체의 표면에 적용되는 질감을 정의할 수 있습니다.
+3D 모델은 게임과 앱에서 공간과 모양을 만듭니다. 최소한, 모델은 모델의 모양을 나타내는 선 또는 삼각형을 정의하기 위해 인덱싱 데이터와 함께 3D 공간에서 *꼭짓점* 으로 알려진 점의 위치를 인코딩합니다. 추가 데이터는 이러한 꼭짓점과 연결될 수 있습니다(예: 색 정보, 법선 벡터 또는 앱 관련 특성). 또한 각 모델은 개체 전체 특성을 정의할 수도 있습니다. 예를 들어 개체 표면의 모양을 컴퓨팅하는 데 사용되는 셰이더 또는 개체의 표면에 적용되는 질감을 정의할 수 있습니다.
 
 Visual Studio 모델 편집기를 사용하여 몇 가지 공통 형식으로 3D 모델을 작업할 수 있습니다.
 

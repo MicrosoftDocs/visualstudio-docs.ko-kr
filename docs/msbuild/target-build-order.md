@@ -1,5 +1,7 @@
 ---
 title: 대상 빌드 순서 | Microsoft Docs
+description: 한 대상에 대한 입력이 다른 대상의 출력에 따라 달라지는 경우, MSBuild 대상이 실행되는 순서를 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +12,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585459"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048063"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.
 
-- `InitialTargets`입니다. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.
+- `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.
 
-- `DefaultTargets`입니다. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.
+- `DefaultTargets`. 이 `Project` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 실행할 대상을 지정합니다.
 
-- `DependsOnTargets`입니다. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.
+- `DependsOnTargets`. 이 `Target` 특성은 이 대상을 실행하려면 먼저 실행해야 하는 대상을 지정합니다.
 
-- `BeforeTargets` 및 `AfterTargets` 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).
+- `BeforeTargets`와 `AfterTargets`을 참조하세요. 이러한 `Target` 특성은 지정된 대상 전이나 후에 이 대상을 실행해야 하도록 지정합니다(MSBuild 4.0).
 
 대상은 빌드의 후속 대상이 종속되더라도 빌드 중에 두 번 실행되지 않습니다. 대상이 실행되고 나면 빌드 내에서 해당 대상의 역할은 완료됩니다.
 
@@ -85,7 +87,7 @@ ms.locfileid: "75585459"
 
 MSBuild 4.0에서는 `BeforeTargets` 및 `AfterTargets` 특성을 사용하여 대상 순서를 지정할 수 있습니다.
 
-다음 스크립트를 살펴보세요.
+다음 스크립트를 고려해 보세요.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

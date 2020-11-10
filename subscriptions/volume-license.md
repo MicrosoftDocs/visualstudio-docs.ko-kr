@@ -2,17 +2,17 @@
 title: Visual Studio 볼륨 라이선스 고객 관리 포털에 액세스 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
-description: 볼륨 라이선스 계약의 관리자가 Visual Studio 구독 관리 포털에 액세스하는 방법을 알아봅니다.
-ms.openlocfilehash: e5b95d2afcb9aec822b3a1ec63e76562c9d255e6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: 볼륨 라이선스 계약의 관리자가 Visual Studio 구독 관리 포털에 액세스하는 방법 알아보기
+ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353436"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904211"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>볼륨 라이선스 계약의 관리자로 관리 포털에 액세스
 
@@ -21,7 +21,7 @@ ms.locfileid: "92353436"
    > [!div class="mx-imgBorder"]
    > ![볼륨 라이선스 관리자 알림](_img/volume-license/super-admin-notice-2020.png "새 관리자는 포털에 액세스하라는 환영 알림을 받습니다.")
 
-로그인하면 자동으로 고급 관리자로 설정되며 구독 및 다른 관리자에 대한 관리를 시작할 수 있습니다. 슈퍼 관리자와 관리자의 차이점에 대한 정보는 [관리자 역할](admin-roles.md)에 대한 문서를 참조하세요.
+로그인하면 자동으로 슈퍼 관리자로 설정되며 구독 및 다른 관리자 관리를 시작할 수 있습니다. 슈퍼 관리자와 관리자의 차이점에 대한 정보는 [관리자 역할](admin-roles.md)에 대한 문서를 참조하세요.
 
 이 정보는 다음을 포함하지만 이에 제한되지 않는 모든 볼륨 라이선스 계약 유형에 적용됩니다. 기업계약, 기업 정기가입, Select, Select Plus, Open, Open License, 정부 및 아카데믹 계약. 
 

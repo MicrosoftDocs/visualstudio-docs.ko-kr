@@ -1,5 +1,7 @@
 ---
 title: MSBuild 속성 | Microsoft Docs
+description: MSBuild 이름-값 속성 쌍이 작업에 값을 전달하고, 조건을 평가하고, 값을 저장하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633293"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046129"
 ---
 # <a name="msbuild-properties"></a>MSBuild 속성
 
@@ -64,7 +66,7 @@ ms.locfileid: "77633293"
 
 ## <a name="registry-properties"></a>레지스트리 속성
 
- 다음 구문을 사용하여 시스템 레지스트리 값을 읽을 수 있습니다. 여기서 `Hive`는 **HKEY_LOCAL_MACHINE**과 같은 레지스트리 하이브, `MyKey`는 키 이름, `MySubKey`는 하위 키 이름, `Value`는 하위 키의 값입니다.
+ 다음 구문을 사용하여 시스템 레지스트리 값을 읽을 수 있습니다. 여기서 `Hive`는 **HKEY_LOCAL_MACHINE** 과 같은 레지스트리 하이브, `MyKey`는 키 이름, `MySubKey`는 하위 키 이름, `Value`는 하위 키의 값입니다.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)

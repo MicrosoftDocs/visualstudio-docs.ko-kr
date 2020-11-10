@@ -1,5 +1,7 @@
 ---
 title: MSBuild 참조 | Microsoft Docs
+description: Visual Studio용 빌드 시스템인 MSBuild의 참조 정보를 포함하는 문서에 대한 링크에 액세스합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633267"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046572"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 
 MSBuild는 Visual Studio용 빌드 시스템입니다. 다음 링크를 통해 MSBuild 참조 정보가 포함된 항목으로 이동할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)\
  MSBuild 파일 형식을 구성하는 XML 요소에 대해 설명합니다.

@@ -1,5 +1,7 @@
 ---
 title: XmlPeek 작업 | Microsoft Docs
+description: MSBuild가 XmlPeek 작업을 사용하여 XML 파일의 XPath 쿼리에 지정된 값을 반환하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b535af260d205c74ef87d0325680389d1dbe58
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286123"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047253"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 작업
 
@@ -31,7 +33,7 @@ XML 파일에서 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 
  다음 표에서는 `XmlPeek` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`Namespaces`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리 접두사에 대한 네임스페이스를 지정합니다.|
 |`Query`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리를 지정합니다.|

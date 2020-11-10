@@ -1,5 +1,7 @@
 ---
 title: XSLT 코드를 디버그하는 방법
+description: XSLT 디버거를 사용하여 코드를 단계별로 실행하고 중단점을 설정하고 XSLT 실행 상태를 확인하는 방법으로 Visual Studio에서 XSLT 코드를 디버그하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815619"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047746"
 ---
 # <a name="debugging-xslt"></a>XSLT 디버깅
 
@@ -33,7 +35,7 @@ Visual Studio에서 XSLT 코드를 디버그할 수 있습니다. XSLT 디버거
 
 1. Visual Studio에서 스타일시트 또는 XML 파일을 엽니다.
 
-1. **XML** 메뉴에서 **XSLT 디버깅 시작**을 선택하거나 **Alt**+**F5**를 누릅니다.
+1. **XML** 메뉴에서 **XSLT 디버깅 시작** 을 선택하거나 **Alt**+**F5** 를 누릅니다.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>XSLT를 사용하는 앱에서 디버그
 

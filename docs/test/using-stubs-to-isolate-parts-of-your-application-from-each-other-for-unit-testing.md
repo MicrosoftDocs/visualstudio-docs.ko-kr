@@ -10,16 +10,16 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289055"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325967"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
 
-*스텁 유형*은 테스트하는 구성 요소를 이러한 구성 요소가 호출하는 다른 구성 요소에서 쉽게 격리할 수 있도록 Microsoft Fakes 프레임워크에서 제공하는 두 가지 기술 중 하나입니다. 스텁은 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드입니다. 스텁을 사용하는 이점은 일관적 결과를 반환하기 때문에 테스트를 더 쉽게 작성할 수 있다는 점입니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.
+*스텁 유형* 은 테스트하는 구성 요소를 이러한 구성 요소가 호출하는 다른 구성 요소에서 쉽게 격리할 수 있도록 Microsoft Fakes 프레임워크에서 제공하는 두 가지 기술 중 하나입니다. 스텁은 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드입니다. 스텁을 사용하는 이점은 일관적 결과를 반환하기 때문에 테스트를 더 쉽게 작성할 수 있다는 점입니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.
 
 Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
 
@@ -29,7 +29,7 @@ Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사
 
 ![Real 및 Stub 클래스는 하나의 인터페이스를 따릅니다.](../test/media/fakesinterfaces.png)
 
-스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 애플리케이션의 다른 부분에서 한 부분을 격리하는 데 사용합니다. *System.dll*과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
+스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 애플리케이션의 다른 부분에서 한 부분을 격리하는 데 사용합니다. *System.dll* 과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
 ## <a name="how-to-use-stubs"></a>스텁 사용 방법
 
@@ -88,7 +88,7 @@ End Function
 
 - “구성 요소”란 함께 개발하고 업데이트하는 클래스 또는 클래스의 그룹을 의미합니다. 일반적으로 구성 요소는 Visual Studio 프로젝트의 코드입니다. 한 구성 요소 안에 있는 클래스는 동시에 업데이트되므로 결합을 해제하는 것은 그보다 중요하지 않습니다.
 
-- 또한 *System.dll*과 같이 비교적 안정적 플랫폼의 클래스에서 구성 요소를 분리하는 것도 그렇게 중요하지 않습니다. 이러한 모든 클래스의 인터페이스를 작성할 경우 코드가 복잡해집니다.
+- 또한 *System.dll* 과 같이 비교적 안정적 플랫폼의 클래스에서 구성 요소를 분리하는 것도 그렇게 중요하지 않습니다. 이러한 모든 클래스의 인터페이스를 작성할 경우 코드가 복잡해집니다.
 
 다음과 같은 인터페이스를 사용하여 StockFeed에서 StockAnalyzer 코드를 분리할 수 있습니다.
 
@@ -147,13 +147,16 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>Fakes 어셈블리 추가
 
-1. **솔루션 탐색기**에서 단위 테스트 프로젝트의 **참조**를 확장합니다.
+1. **솔루션 탐색기** 에서 
+    - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
+    ::: moniker range=">=vs-2019"
+    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+    ::: moniker-end
+    - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
 
-   Visual Basic에서 작업하는 경우 **참조** 노드를 보기 위해 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시**를 선택합니다.
+2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간** 을 shim하려면 **System.dll** 을 선택합니다.
 
-2. 스텁을 만들 인터페이스 정의가 포함된 어셈블리를 선택합니다.
-
-3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
+3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가** 를 선택합니다.
 
 ### <a name="write-your-test-with-stubs"></a>스텁을 사용하여 테스트 작성
 
@@ -218,7 +221,7 @@ End Class
 
 ### <a name="verify-parameter-values"></a>매개 변수 값 확인
 
-구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 다음은 그 예입니다.
+구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 [TestClass]
@@ -390,7 +393,7 @@ public void TestGetValue()
 
 ### <a name="stubs-of-virtual-classes"></a>가상 클래스의 스텁
 
-위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 다음은 그 예입니다.
+위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 // Base class in application under test

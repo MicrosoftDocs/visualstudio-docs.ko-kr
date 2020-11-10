@@ -1,5 +1,7 @@
 ---
 title: RemoveDir 작업 | Microsoft Docs
+description: MSBuild가 RemoveDir 작업을 사용하여 지정된 디렉터리와 모든 파일 및 하위 디렉터리를 제거하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632799"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048737"
 ---
 # <a name="removedir-task"></a>RemoveDir 작업
 

@@ -1,5 +1,7 @@
 ---
 title: ParameterGroup 요소 | Microsoft Docs
+description: UsingTask TaskFactory에서 생성한 작업에 표시되는 선택적 매개 변수 목록을 포함하는 MSBuild ParameterGroup 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263081"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048873"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 요소
 
 `UsingTask` `TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.
 
- \<Project> \<UsingTask> \<ParameterGroup>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
 
 ## <a name="syntax"></a>구문
@@ -46,13 +48,13 @@ ms.locfileid: "78263081"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|[Parameter](../msbuild/parameter-element.md)|`UsingTask` `TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|
+|[매개 변수](../msbuild/parameter-element.md)|`UsingTask` `TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수 정보를 포함합니다. 요소의 이름은 매개 변수의 이름입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | MSBuild에서 작업을 등록하는 방법을 제공합니다. 프로젝트에는 `UsingTask` 요소가 없을 수도 있고 하나 이상 있을 수 있습니다. |
 
@@ -73,7 +75,7 @@ ms.locfileid: "78263081"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: 경고 작업 | Microsoft Docs
+description: MSBuild가 Warning 작업을 사용하여 빌드 중에 평가된 조건문을 기반으로 경고를 기록하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631096"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047818"
 ---
 # <a name="warning-task"></a>Warning 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "77631096"
 
  다음 표에서는 `Warning` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |---------------| - |
 | `Code` | 선택적 `String` 매개 변수입니다.<br /><br /> 경고와 연결할 경고 코드입니다. |
 | `File` | 선택적 `String` 매개 변수입니다.<br /><br /> 있는 경우 관련 파일을 지정합니다. 파일을 제공하지 않으면 경고 작업이 포함된 파일이 사용됩니다. |

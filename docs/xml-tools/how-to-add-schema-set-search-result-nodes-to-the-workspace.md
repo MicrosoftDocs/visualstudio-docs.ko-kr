@@ -1,5 +1,7 @@
 ---
 title: 작업 영역에 XML 스키마 집합 검색 결과 노드 추가
+description: 작업 영역에서 키워드 검색을 수행한 결과로 XML 스키마 탐색기에서 강조 표시되는 노드를 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d94544fd017809b32b7a144b16da4515e6b2e4bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306ec76b6089d822dfdcd154ff1947aef1c9cac
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816321"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049176"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>방법: 작업 영역에 스키마 집합 검색 결과 노드 추가
 
-이 항목에서는 작업 영역에서 키워드 검색을 수행한 결과로 **XML 스키마 탐색기**에서 강조 표시되는 노드를 추가하는 방법에 대해 설명합니다.
+이 항목에서는 작업 영역에서 키워드 검색을 수행한 결과로 **XML 스키마 탐색기** 에서 강조 표시되는 노드를 추가하는 방법에 대해 설명합니다.
 
 > [!NOTE]
 > 전역 노드만 [작업 영역](../xml-tools/xml-schema-designer-workspace.md)에 추가할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "85816321"
 
      ![XML 스키마 탐색기 키워드 검색](../xml-tools/media/schemaexplorersearch.gif)
 
-     또한 검색 결과가 **XML 스키마 탐색기**에서 강조 표시되고 세로 스크롤 막대의 눈금 표시로 나타납니다.
+     또한 검색 결과가 **XML 스키마 탐색기** 에서 강조 표시되고 세로 스크롤 막대의 눈금 표시로 나타납니다.
 
 3. 요약 결과 창에서 **작업 영역에 선택한 노드 추가** 단추를 클릭하여 작업 영역에 검색 결과를 추가합니다.
 

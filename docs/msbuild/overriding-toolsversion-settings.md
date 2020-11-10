@@ -1,5 +1,7 @@
 ---
 title: ToolsVersion 설정 재정의 | Microsoft Docs
+description: 프로젝트 및 솔루션에 대한 MSBuild 도구 집합의 값을 변경하거나 재정의할 수 있는 여러 가지 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633020"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048904"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 설정 재정의
 
@@ -30,7 +32,7 @@ ms.locfileid: "77633020"
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>명령줄 빌드에서 프로젝트 및 솔루션의 ToolsVersion 설정 재정의
 
- 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `-ToolsVersion`(또는 `-tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 다음은 그 예입니다.
+ 일반적으로 Visual Studio 프로젝트는 프로젝트 파일에 지정된 ToolsVersion을 사용하여 빌드되지만 명령줄에서 `-ToolsVersion`(또는 `-tv`) 스위치를 사용하여 해당 값을 재정의하고 다른 도구 집합을 사용하여 모든 프로젝트 및 프로젝트 간 종속성을 빌드할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
@@ -44,7 +46,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
  MSBuild 작업은 한 프로젝트로 다른 프로젝트를 빌드할 수 있는 기본 수단입니다. MSBuild 작업이 프로젝트에 지정된 것과 다른 ToolsVersion으로 프로젝트를 빌드할 수 있도록 `ToolsVersion`이라는 선택적 작업 매개 변수를 제공합니다. 다음 예제에서는 이 매개 변수를 사용하는 방법을 보여 줍니다.
 
-1. 다음 코드가 포함된 *projectA.proj*라는 파일을 만듭니다.
+1. 다음 코드가 포함된 *projectA.proj* 라는 파일을 만듭니다.
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -62,7 +64,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-2. 다음 코드가 포함된 *projectB.proj*라는 또 다른 파일을 만듭니다.
+2. 다음 코드가 포함된 *projectB.proj* 라는 또 다른 파일을 만듭니다.
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -121,13 +123,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. 환경 변수 `MSBUILDDEFAULTTOOLSVERSION`가 `ToolsVersion`으로 설정된 경우 이 값을 사용합니다.
 
-    2. *MSBuild.exe.config*에서 `DefaultOverrideToolsVersion`이 사용되는 경우 이 값을 사용합니다.
+    2. *MSBuild.exe.config* 에서 `DefaultOverrideToolsVersion`이 사용되는 경우 이 값을 사용합니다.
 
     3. 레지스트리에서 `DefaultOverrideToolsVersion`이 설정된 경우 이 값을 사용합니다.
 
     4. 이외에는 현재 `ToolsVersion`을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)

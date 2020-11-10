@@ -7,18 +7,18 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: 월간 구독에 대한 관리자 설정
-ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91006113"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904248"
 ---
-# <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
+# <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
 
 Visual Studio 월간 구독은 관리자에 의해 관리됩니다. 이러한 개인들은 구독을 할당하고 할당을 편집하고 구독을 추가 또는 삭제하고 다른 구독 관리 작업을 수행할 수 있습니다.
 
-## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Azure 구독 소유자가 첫 번째 관리자
+## <a name="the-azure-subscription-owner-is-the-first-admin"></a>Azure 구독 소유자가 첫 번째 관리자
 
 Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Azure 구독의 소유자로서 해당 구독에 대한 관리자로 자동 설정됩니다.
 
@@ -28,9 +28,9 @@ Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Az
 
 월간 구독을 구매하는 데 사용된 Azure 구독의 소유자로서 추가 관리자를 할당할 수 있습니다.
 
-## <a name="add-administrators"></a>관리자 추가
+## <a name="add-admins"></a>관리자 추가
 
-관리자를 추가하려면
+관리자를 추가하려면 다음과 같이 합니다.
 
 1. [portal.azure.com](https://portal.azure.com)에서 Azure Portal에 연결합니다.
 2. Visual Studio 월간 구독을 구매하는 데 사용된 계정으로 로그인합니다.
@@ -55,7 +55,7 @@ Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Az
 새 관리자는 이제 [관리 포털](https://manage.visualstudio.com)에 로그인하여 페이지의 왼쪽 위 모서리에 있는 목록에서 월간 구독을 구매하는 데 사용된 동일한 Azure 구독을 선택하고 이러한 구독을 관리할 수 있습니다.
 
 > [!NOTE]
-> 관리자로 설정하지 않은 월간 구독을 편집할 수 있는 액세스 권한이 사용자에게 있는 경우에는 사용자는 기본 Azure 구독에서 구독을 관리할 수 있는 역할을 가질 수 있습니다. 해당 역할에는 소유자, 기여자, 서비스 관리자 또는 공동 관리자가 포함됩니다. 자세한 내용은 [청구 관리자 추가](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts)를 참조하세요.
+> 관리자로 설정하지 않은 월간 구독을 편집할 수 있는 액세스 권한이 있는 사용자가 있으면 해당 사용자는 구독을 관리할 수 있는 기본 Azure 구독의 역할을 가질 수 있습니다. 해당 역할에는 소유자, 기여자, 서비스 관리자 또는 공동 관리자가 포함됩니다. 자세한 내용은 [청구 관리자 추가](/azure/devops/organizations/billing/add-backup-billing-managers)를 참조하세요.
 
 Visual Studio 월간 구독에 대한 자세한 내용은 구독 구입에서 [개요](vscloud-overview.md)를 참조하세요. Visual Studio 월간 구독을 구매하려면 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)에서 Visual Studio Marketplace를 방문하세요.
 

@@ -1,5 +1,7 @@
 ---
 title: ItemGroup 요소(MSBuild) | Microsoft 문서
+description: 사용자 정의 항목 요소 세트를 포함하는 MSBuild ItemGroup 요소에 대해 알아봅니다. 모든 항목은 ItemGroup의 자식이어야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288977"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903619"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 
@@ -48,7 +50,7 @@ ms.locfileid: "85288977"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 |`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다. |
@@ -61,7 +63,7 @@ ms.locfileid: "85288977"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [Target](../msbuild/target-element-msbuild.md) | .NET Framework 3.5부터 `ItemGroup` 요소는 `Target` 요소 내에 표시될 수 있습니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. |

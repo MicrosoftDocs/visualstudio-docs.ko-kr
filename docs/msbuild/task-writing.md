@@ -1,5 +1,7 @@
 ---
 title: 작업 작성 | Microsoft Docs
+description: MSBuild 빌드 프로세스 중에 실행되는 코드를 제공하는 작업을 직접 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631839"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047914"
 ---
 # <a name="task-writing"></a>작업 작성
 
@@ -97,10 +99,10 @@ namespace MyTasks
 
  프로젝트가 작업을 실행하려는 경우 MSBuild는 작업 클래스를 포함하는 어셈블리를 찾는 방법을 알고 있어야 합니다. 작업은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 사용하여 등록됩니다.
 
- MSBuild 파일 *Microsoft.Common.Tasks*는 MSBuild와 함께 제공된 모든 작업을 등록하는 `UsingTask` 요소의 목록을 포함하는 프로젝트 파일입니다. 이 파일은 모든 프로젝트를 빌드할 때 자동으로 포함됩니다. *Microsoft.Common.Tasks*에 등록된 작업이 현재 프로젝트 파일에도 등록된 경우 현재 프로젝트 파일이 우선 순위를 가집니다. 즉, 동일한 이름을 가진 고유 작업으로 기본 작업을 재정의할 수 있습니다.
+ MSBuild 파일 *Microsoft.Common.Tasks* 는 MSBuild와 함께 제공된 모든 작업을 등록하는 `UsingTask` 요소의 목록을 포함하는 프로젝트 파일입니다. 이 파일은 모든 프로젝트를 빌드할 때 자동으로 포함됩니다. *Microsoft.Common.Tasks* 에 등록된 작업이 현재 프로젝트 파일에도 등록된 경우 현재 프로젝트 파일이 우선 순위를 가집니다. 즉, 동일한 이름을 가진 고유 작업으로 기본 작업을 재정의할 수 있습니다.
 
 > [!TIP]
-> *Microsoft.Common.Tasks*의 내용을 확인하여 MSBuild와 함께 제공되는 작업의 목록을 볼 수 있습니다.
+> *Microsoft.Common.Tasks* 의 내용을 확인하여 MSBuild와 함께 제공되는 작업의 목록을 볼 수 있습니다.
 
 ## <a name="raise-events-from-a-task"></a>작업에서 이벤트 발생
 
@@ -170,7 +172,7 @@ public string RequiredProperty { get; set; }
 
 MSBuild는 기본적으로 `string`, `bool`, `ITaskItem`, `ITaskItem[]` 형식의 속성을 처리합니다. 작업이 다른 형식의 매개 변수를 허용하는 경우, MSBuild는 <xref:System.Convert.ChangeType%2A>을 호출하여 모든 속성 및 항목 참조가 펼쳐진 `string`에서 대상 형식으로 변환합니다. 변환에 실패한 입력 매개 변수가 하나라도 있으면 MSBuild는 오류를 내보내고 작업의 `Execute()` 메서드를 호출하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예제 1
 
 ### <a name="description"></a>설명
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 ### <a name="description"></a>설명
 
@@ -231,9 +233,9 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-3"></a>예제 3
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 이 C# 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 필수 문자열 속성이 있으며 등록된 모든 로거로 표시되는 이벤트를 발생시킵니다.
 
@@ -241,9 +243,9 @@ namespace SimpleTask2
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>예제
+## <a name="example-4"></a>예제 4
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 예제에서는 이전 예제 작업, SimpleTask3을 호출하는 프로젝트 파일을 보여 줍니다.
 

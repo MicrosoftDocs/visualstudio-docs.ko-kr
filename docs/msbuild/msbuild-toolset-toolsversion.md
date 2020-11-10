@@ -1,5 +1,7 @@
 ---
 title: MSBuild 도구 집합(ToolsVersion) | Microsoft Docs
+description: MSBuild 프로젝트 파일에서 ToolsVersion 특성을 사용하여 작업의 도구 집합, 대상 및 애플리케이션을 빌드하기 위한 도구를 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426965"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049031"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 
-MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구로 구성된 도구 집합을 사용합니다. 일반적으로 MSBuild 도구 집합에는 *microsoft.common.tasks* 파일, *microsoft.common.targets* 파일 및 컴파일러(예: *csc.exe* 및 *vbc.exe*)가 포함되어 있습니다. 대부분의 도구 집합을 사용하여 애플리케이션을 둘 이상의 .NET Framework 버전 및 둘 이상의 시스템 플랫폼으로 컴파일할 수 있습니다. 그러나 MSBuild 2.0 도구 집합을 사용해서는 .NET Framework 2.0만 대상으로 할 수 있습니다.
+MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구로 구성된 도구 집합을 사용합니다. 일반적으로 MSBuild 도구 집합에는 *microsoft.common.tasks* 파일, *microsoft.common.targets* 파일 및 컴파일러(예: *csc.exe* 및 *vbc.exe* )가 포함되어 있습니다. 대부분의 도구 집합을 사용하여 애플리케이션을 둘 이상의 .NET Framework 버전 및 둘 이상의 시스템 플랫폼으로 컴파일할 수 있습니다. 그러나 MSBuild 2.0 도구 집합을 사용해서는 .NET Framework 2.0만 대상으로 할 수 있습니다.
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 특성
 
@@ -63,7 +65,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
  사용자 지정 도구 집합을 정의하여 `MSBuildToolsPath`의 값을 수정할 수 있습니다. 자세한 내용은 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요.
 
- 명령줄에서 솔루션을 빌드하고 *msbuild.exe*에 대해 `ToolsVersion`을 지정하면 솔루션의 각 프로젝트에서 자체 `ToolsVersion`을 지정하더라도 모든 프로젝트 및 해당 프로젝트 간 종속성이 해당 `ToolsVersion`에 따라 빌드됩니다. 프로젝트별로 `ToolsVersion` 값을 정의하려면 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
+ 명령줄에서 솔루션을 빌드하고 *msbuild.exe* 에 대해 `ToolsVersion`을 지정하면 솔루션의 각 프로젝트에서 자체 `ToolsVersion`을 지정하더라도 모든 프로젝트 및 해당 프로젝트 간 종속성이 해당 `ToolsVersion`에 따라 빌드됩니다. 프로젝트별로 `ToolsVersion` 값을 정의하려면 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
 
  `ToolsVersion` 특성은 프로젝트 마이그레이션에도 사용됩니다. 예를 들어, Visual Studio 2010에서 Visual Studio 2008 프로젝트를 열면 프로젝트 파일이 ToolsVersion=“4.0”을 포함하도록 업데이트됩니다. 그런 다음 Visual Studio 2008에서 해당 프로젝트를 열려고 하면 업그레이드된 `ToolsVersion`이 인식되지 않으므로 이 특성이 여전히 3.5로 설정된 것처럼 프로젝트가 빌드됩니다.
 
@@ -79,7 +81,7 @@ MSBuild는 애플리케이션을 빌드하기 위한 작업, 대상 및 도구�
 
 - 추가 관리되는 도구
 
-  관리되는 도구에는 *ResGen.exe* 및 *TlbImp.exe*가 포함됩니다.
+  관리되는 도구에는 *ResGen.exe* 및 *TlbImp.exe* 가 포함됩니다.
 
 MSBuild는 다음과 같이 도구 집합에 액세스하는 두 가지 방법을 제공합니다.
 

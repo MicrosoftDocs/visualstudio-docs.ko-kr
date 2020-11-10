@@ -1,5 +1,7 @@
 ---
 title: 디자인 타임에 어셈블리 확인 | Microsoft Docs
+description: MSBuild가 타기팅 팩의 참조 어셈블리를 사용하여 디자인 타임에 어셈블리에 대한 참조를 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632565"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048494"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
 

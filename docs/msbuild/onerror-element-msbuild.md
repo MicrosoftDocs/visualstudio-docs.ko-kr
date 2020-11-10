@@ -1,5 +1,7 @@
 ---
 title: OnError 요소(MSBuild) | Microsoft Docs
+description: MSBuild가 실패한 작업에 대해 ContinueOnError 특성이 false인 경우 OnError 요소를 사용하여 하나 이상의 대상이 실행되도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633085"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048951"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 요소(MSBuild)
 
 `ContinueOnError` 특성이 실패한 태스크의 `false`인 경우 하나 이상의 대상이 실행되도록 합니다.
 
- \<프로젝트> \<대상> \<OnError>
+ \<Project> \<Target>
  \<OnError>
 
 ## <a name="syntax"></a>구문
@@ -45,7 +47,7 @@ ms.locfileid: "77633085"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 |`ExecuteTargets`|필수 특성입니다.<br /><br /> 태스크가 실패한 경우 실행할 대상입니다. 여러 대상을 세미콜론으로 구분합니다. 여러 대상이 지정된 순서로 실행됩니다.|
@@ -56,9 +58,9 @@ ms.locfileid: "77633085"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | MSBuild 작업의 컨테이너 요소입니다. |
+| [대상](../msbuild/target-element-msbuild.md) | MSBuild 작업의 컨테이너 요소입니다. |
 
 ## <a name="remarks"></a>설명
 

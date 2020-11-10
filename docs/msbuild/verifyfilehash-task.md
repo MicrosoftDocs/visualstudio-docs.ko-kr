@@ -1,5 +1,7 @@
 ---
 title: VerifyFileHash 작업 | Microsoft Docs
+description: MSBuild가 VerifyFileHash 작업을 사용하여 파일이 예상되는 파일 해시와 일치하는지 확인하고, 일치하지 않으면 실패하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77579530"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046094"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 작업
 
@@ -32,7 +34,7 @@ ms.locfileid: "77579530"
 
  다음 표에서는 `VerifyFileHash` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`File`|필수 `String` 매개 변수입니다.<br /><br />해시되고 유효성이 검사된 파일입니다.|
 |`Hash`|필수 `String` 매개 변수입니다.<br /><br />파일의 예상 해시입니다.|

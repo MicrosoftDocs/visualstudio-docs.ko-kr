@@ -1,5 +1,7 @@
 ---
 title: MakeDir 작업 | Microsoft Docs
+description: MSBuild에서 MakeDir 작업을 사용하여 디렉터리 및 필요한 경우 부모 디렉터리를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633540"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904303"
 ---
 # <a name="makedir-task"></a>MakeDir 작업
 

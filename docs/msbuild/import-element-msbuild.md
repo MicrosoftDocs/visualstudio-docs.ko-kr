@@ -1,5 +1,7 @@
 ---
 title: Import 요소(MSBuild) | Microsoft Docs
+description: MSBuild에서 Import 요소를 사용하여 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져오는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094494"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903958"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 
@@ -45,7 +47,7 @@ ms.locfileid: "79094494"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Project`|필수 특성입니다.<br /><br /> 가져올 프로젝트 파일의 경로입니다. 경로에 와일드카드를 포함할 수 있습니다. 일치하는 파일은 정렬된 순서로 가져오게 됩니다. 이 기능을 사용하여, 디렉터리에 코드 파일을 추가함으로써 프로젝트에 코드를 추가할 수 있습니다.|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
@@ -57,7 +59,7 @@ ms.locfileid: "79094494"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [ImportGroup](../msbuild/importgroup-element.md) | 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. |
@@ -80,7 +82,7 @@ ms.locfileid: "79094494"
 
  .NET Framework 4에서는 MSBuild가 Project 특성에 와일드카드를 사용하도록 허용합니다. 와일드카드가 있으면 발견되는 모든 일치 항목이 정렬되고(재현 가능성을 위해), 마치 해당 순서가 명시적으로 설정된 것처럼 순서대로 가져오기가 수행됩니다.
 
- 이는 파일 이름을 가져오기 파일에 명시적으로 추가하지 않고도 다른 사람이 파일을 가져올 수 있도록 확장성 지점을 제공하려는 경우 유용합니다. 이를 위해 *Microsoft.Common.Targets*는 파일의 상단에 다음 줄을 포함합니다.
+ 이는 파일 이름을 가져오기 파일에 명시적으로 추가하지 않고도 다른 사람이 파일을 가져올 수 있도록 확장성 지점을 제공하려는 경우 유용합니다. 이를 위해 *Microsoft.Common.Targets* 는 파일의 상단에 다음 줄을 포함합니다.
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>

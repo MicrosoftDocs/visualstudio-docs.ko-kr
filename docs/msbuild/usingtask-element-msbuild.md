@@ -1,5 +1,7 @@
 ---
 title: UsingTask 요소(MSBuild) | Microsoft Docs
+description: 작업 요소에 참조된 작업을 작업 구현이 포함된 어셈블리에 매핑하는 MSBuild UsingTask 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289159"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046114"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 
@@ -41,7 +43,7 @@ ms.locfileid: "85289159"
 ```
 
 > [!NOTE]
-> 속성 및 항목과 달리 `TaskName`에 적용되는 *첫 번째* `UsingTask` 요소가 사용됩니다. 작업을 재정의하려면 기존 작업 *이전*에 새 `UsingTask`를 정의해야 합니다.
+> 속성 및 항목과 달리 `TaskName`에 적용되는 *첫 번째* `UsingTask` 요소가 사용됩니다. 작업을 재정의하려면 기존 작업 *이전* 에 새 `UsingTask`를 정의해야 합니다.
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
@@ -49,7 +51,7 @@ ms.locfileid: "85289159"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Architecture`|선택적 특성입니다.<br /><br /> 작업이 지정된 비트 수의 프로세스에서 실행되도록 지정합니다. 현재 프로세스가 요구 사항을 충족하지 않으면 작업이 요구 사항을 충족하는 작업 호스트 프로세스에서 실행됩니다.<br /><br /> 지원되는 값은 `x86`(32비트), `x64`(64비트), `CurrentArchitecture` 및 `*`(모든 아키텍처)입니다.|  
 |`AssemblyName`|`AssemblyName` 특성 또는 `AssemblyFile` 특성이 필요합니다.<br /><br /> 로드할 어셈블리의 이름입니다. `AssemblyName` 특성에서는 강력한 이름의 어셈블리를 허용하지만 필수적 요소는 아닙니다. 이 특성을 사용하면 .NET Framework에서 <xref:System.Reflection.Assembly.Load%2A> 메서드를 사용하여 어셈블리를 로드하는 것과 같은 결과를 얻을 수 있습니다.<br /><br /> `AssemblyFile` 특성을 사용하는 경우에는 이 특성을 사용할 수 없습니다.|
@@ -68,7 +70,7 @@ ms.locfileid: "85289159"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
@@ -83,7 +85,7 @@ ms.locfileid: "85289159"
 
 `Task`가 처음 사용되면 사용자 지정 작업이 포함된 어셈블리가 로드됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
 
  다음 예제에서는 `AssemblyName` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 
@@ -100,7 +102,7 @@ ms.locfileid: "85289159"
 </UsingTask>
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
  다음 예제에서는 `AssemblyFile` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 

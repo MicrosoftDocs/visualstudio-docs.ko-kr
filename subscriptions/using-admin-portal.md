@@ -1,18 +1,18 @@
 ---
-title: 구독 관리 포털 시작하기 | Visual Studio Marketplace
+title: Visual Studio 구독 관리 포털 시작하기 | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353306"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904557"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
 
@@ -25,8 +25,8 @@ Visual Studio 구독 관리 포털은 조직의 구독을 한곳에서 관리하
 ## <a name="important-considerations"></a>중요 고려 사항
 Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 명심하세요.
 - **Visual Studio 구독에서는 사용자별로 라이선스가 부여됩니다.** 각 구독자는 개발 및 테스트에 필요한 만큼 여러 컴퓨터에서 소프트웨어를 사용할 수 있습니다.
-- 조직에서 구입한 Visual Studio 구독에 해당하는 **각 구독자에 대해 하나의 구독 수준만 할당합니다** . 구독 수준이 둘 이상 할당된 구독자가 있으면 구독 수준이 하나만 있도록 해당 설정을 편집합니다.
-- 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다** .
+- 조직에서 구입한 Visual Studio 구독에 해당하는 **각 구독자에 대해 하나의 구독 수준만 할당합니다**. 구독 수준이 둘 이상 할당된 구독자가 있으면 구독 수준이 하나만 있도록 해당 설정을 편집합니다.
+- 구독이 업그레이드되거나("버전 업그레이드" 라이선스 구입 후) 더 낮은 수준으로 갱신되는 경우 **구독자의 구독 수준을 업데이트해야 합니다**.
 - **구독자 간에 구독을 공유하지 않습니다.** 구독을 명명된 개인에게 할당해야 합니다.  팀에게는 구독 할당이 허용되지 않습니다.  구독 혜택(개발 및 테스트용 소프트웨어, Microsoft Azure, E-Learning 등)의 전부 또는 일부를 사용하는 모든 사용자에게 구독을 할당해야 합니다.
 
 ## <a name="the-subscribers-page"></a>구독자 페이지

@@ -2,7 +2,7 @@
 title: 일반적인 MSBuild 프로젝트 항목 | Microsoft Docs
 description: 일반적인 MSBuild 프로젝트 항목에 대해 알아봅니다. 항목은 하나 이상의 파일에 대한 명명된 참조이며, 파일 이름, 경로, 버전 번호와 같은 메타데이터를 포함합니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796396"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238625"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 
@@ -160,7 +160,19 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | 값 | 필수 문자열입니다. `AssemblyMetadataAttribute` 특성 생성자의 두 번째 매개 변수(값)가 됩니다. |
 
 > [!NOTE]
-> .NET Core SDK를 사용하는 프로젝트에만 적용됩니다.
+> 이 항목은 SDK for .NET 5(및 .NET Core) 이상 버전을 사용하는 프로젝트에 적용됩니다.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+`[InternalsVisibleTo(..)]` 어셈블리 특성으로 내보낼 어셈블리를 지정합니다.
+
+| 항목 메타데이터 이름 | 설명 |
+|-----------------------| - |
+| 포함 | 어셈블리 이름입니다. |
+| 키 | 선택적 문자열입니다. 어셈블리의 공개 키입니다. |
+
+> [!NOTE]
+> 이 항목은 SDK for .NET 5(및 .NET Core) 이상 버전을 사용하는 프로젝트에 적용됩니다.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 

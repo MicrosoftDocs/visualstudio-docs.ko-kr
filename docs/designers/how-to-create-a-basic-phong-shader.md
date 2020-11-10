@@ -1,5 +1,7 @@
 ---
 title: '방법: 기본 퐁 셰이더 만들기'
+description: 셰이더 디자이너 및 Directed Graph Shader Language를 사용하여 기본형 Phong 조명 모델을 구현하는 조명 셰이더를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769192"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134134"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>방법: 기본 퐁 셰이더 만들기
 
@@ -25,15 +27,15 @@ ms.locfileid: "85769192"
 
 램버트 조명 모델에 대한 자세한 내용은 [방법: 기본 램버트 셰이더 만들기](../designers/how-to-create-a-basic-lambert-shader.md)를 참조하세요.
 
-시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
+시작하기 전에 **속성** 창과 **도구 상자** 가 표시되는지 확인하세요.
 
 1. [방법: 기본 램버트 셰이더 만들기](../designers/how-to-create-a-basic-lambert-shader.md)에 설명된 대로 램버트 셰이더를 만듭니다.
 
-2. **최종 색** 노드에서 **램버트** 노드의 연결을 끊습니다. **램버트** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
+2. **최종 색** 노드에서 **램버트** 노드의 연결을 끊습니다. **램버트** 노드의 **RGB** 터미널을 선택하고 **연결 끊기** 를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
-3. **더하기** 노드를 그래프에 추가합니다. **도구 상자**의 **수학**에서 **더하기**를 선택하고 디자인 화면으로 이동합니다.
+3. **더하기** 노드를 그래프에 추가합니다. **도구 상자** 의 **수학** 에서 **더하기** 를 선택하고 디자인 화면으로 이동합니다.
 
-4. **반사** 노드를 그래프에 추가합니다. **도구 상자**의 **유틸리티**에서 **반사**를 선택하고 디자인 화면으로 이동합니다.
+4. **반사** 노드를 그래프에 추가합니다. **도구 상자** 의 **유틸리티** 에서 **반사** 를 선택하고 디자인 화면으로 이동합니다.
 
 5. 반사 기여도를 추가합니다. **반사** 노드의 **출력** 터미널을 **더하기** 노드의 **X** 터미널로 이동하고 **램버트** 노드의 **출력** 터미널을 **더하기** 노드의 **Y** 터미널로 이동합니다. 이러한 연결은 픽셀에 대한 총 확산 및 반사 색 기여도를 결합합니다.
 

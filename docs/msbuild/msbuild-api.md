@@ -1,5 +1,7 @@
 ---
 title: MSBuild API | Microsoft Docs
+description: MSBuild에서 프로그램이 빌드를 수행하고 프로젝트를 검사할 수 있도록 제공하는 공용 API 화면에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87ee95c4027d0513c78d3ce0386cf31d47baf94
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 34628f08c8860771b07d8e2544c79ad23eba18cf
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862683"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903567"
 ---
 # <a name="use-the-msbuild-api"></a>MSBuild API 사용
 

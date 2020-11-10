@@ -1,5 +1,7 @@
 ---
 title: 질감 및 이미지 작업
+description: Visual Studio에서 이미지 편집기를 사용하여 DirectX 앱 개발에 사용되는 것과 같은 형식으로 질감 및 이미지를 만들고 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589866"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134722"
 ---
 # <a name="work-with-textures-and-images"></a>질감 및 이미지 작업
 
@@ -46,11 +48,11 @@ Visual Studio에서 이미지 편집기를 사용하여 질감 및 이미지를 
 
 ### <a name="cube-maps"></a>큐브 맵
 
-큐브 맵은 다양한 유형의 데이터(예: 색상 또는 법선)를 포함할 수 있지만 큐브 면은 6가지 질감으로 구성됩니다. 이로 인해 큐브 맵은 질감 좌표를 제공하여 샘플링되지 않고 큐브 중앙이 원점인 벡터를 제공하여 샘플링됩니다. 샘플링은 벡터가 큐브와 교차하는 지점에서 수행됩니다. 큐브 맵은 리플렉션 계산에 사용될 수 있는 환경의 근사값을 제공하는 데 사용되거나( *환경 매핑*이라고 함), 구면 개체에 2차원 질감이 제공할 수 있는 기본적인 수준보다 왜곡이 적은 질감을 제공하기 위해 사용됩니다.
+큐브 맵은 다양한 유형의 데이터(예: 색상 또는 법선)를 포함할 수 있지만 큐브 면은 6가지 질감으로 구성됩니다. 이로 인해 큐브 맵은 질감 좌표를 제공하여 샘플링되지 않고 큐브 중앙이 원점인 벡터를 제공하여 샘플링됩니다. 샘플링은 벡터가 큐브와 교차하는 지점에서 수행됩니다. 큐브 맵은 리플렉션 계산에 사용될 수 있는 환경의 근사값을 제공하는 데 사용되거나( *환경 매핑* 이라고 함), 구면 개체에 2차원 질감이 제공할 수 있는 기본적인 수준보다 왜곡이 적은 질감을 제공하기 위해 사용됩니다.
 
 ## <a name="related-topics"></a>관련 항목
 
 |제목|Description|
 |-----------|-----------------|
-|[이미지 편집기](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
+|[Image Editor](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
 |[이미지 편집기 예제](../designers/how-to-create-a-basic-texture.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|

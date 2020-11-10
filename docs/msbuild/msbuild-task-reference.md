@@ -1,5 +1,7 @@
 ---
 title: MSBuild 작업 참조 | Microsoft Docs
+description: MSBuild에 포함된 작업에 대해 알아봅니다. 이러한 작업은 빌드 프로세스 중에 실행되는 코드를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865325"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049078"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 
@@ -28,12 +30,12 @@ ms.locfileid: "78865325"
 
 이 섹션의 항목에 나열된 매개 변수 외에도 각 작업에는 다음과 같은 매개 변수가 있습니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |-------------------| - |
 | `Condition` | 선택적 `String` 매개 변수입니다.<br /><br /> MSBuild 엔진이 이 작업의 실행 여부를 결정하는 데 사용하는 `Boolean` 식입니다. MSBuild에서 지원되는 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요. |
-| `ContinueOnError` | 선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요. |
+| `ContinueOnError` | 선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false** (기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요. |
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [Task 기본 클래스](../msbuild/task-base-class.md)
 
@@ -53,7 +55,7 @@ ms.locfileid: "78865325"
 
 - [AspNetCompiler 작업](../msbuild/aspnetcompiler-task.md)
 
- ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe*를 래핑합니다.
+ ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe* 를 래핑합니다.
 
 - [AssignCulture 작업](../msbuild/assignculture-task.md)
 
@@ -301,13 +303,13 @@ ms.locfileid: "78865325"
 
 - [XslTransformation 작업](../msbuild/xsltransformation-task.md)
 
- XSLT(*Extensible Stylesheet Language Transformation*) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.
+ XSLT( *Extensible Stylesheet Language Transformation* ) 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.
 
 - [ZipDirectory 작업](../msbuild/zipdirectory-task.md)
 
  디렉터리의 콘텐츠에서 *.zip* 보관을 만듭니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [작업 작성](../msbuild/task-writing.md)

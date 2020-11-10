@@ -1,5 +1,7 @@
 ---
 title: WPF MSBuild 작업 참조 | Microsoft Docs
+description: 추가 작업으로 MSBuild를 확장하는 WPF(Windows Presentation Foundation) 빌드 프로세스에 대한 작업 참조입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630849"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047517"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
 
@@ -57,7 +59,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+ 하나 이상의 리소스( *.jpg* , *.ico* , *.bmp* , 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- XAML Browser Application(XBAP) 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname>.exe.manifest*)에 **\<hostInBrowser />** 요소를 추가합니다.
+ XAML Browser Application(XBAP) 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname>.exe.manifest* )에 **\<hostInBrowser />** 요소를 추가합니다.
 
 ## <a name="see-also"></a>참조
 

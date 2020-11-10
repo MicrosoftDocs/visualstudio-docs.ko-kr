@@ -1,5 +1,6 @@
 ---
 title: 처음부터 MSBuild 프로젝트 파일 만들기
+description: XML이 구성되는 방식과 빌드를 제어하기 위해 변경하는 방법을 이해하기 위해 MSBuild 프로젝트 파일을 처음부터 만드는 과정을 안내합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136695"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046063"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
 
@@ -50,7 +51,7 @@ ms.locfileid: "92136695"
 
 ## <a name="extend-the-path"></a>경로 확장
 
-MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PATH 환경 변수를 확장해야 합니다. **Visual Studio용 개발자 명령 프롬프트**를 사용할 수 있습니다. Windows 10에서 Windows 작업 표시줄의 검색 상자를 사용하여 검색합니다. 일반 명령 프롬프트 또는 스크립트 환경에서 환경을 설정하려면 Visual Studio 설치의 *Common7/Tools* 하위 폴더에서 *VSDevCmd.bat*를 실행합니다.
+MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PATH 환경 변수를 확장해야 합니다. **Visual Studio용 개발자 명령 프롬프트** 를 사용할 수 있습니다. Windows 10에서 Windows 작업 표시줄의 검색 상자를 사용하여 검색합니다. 일반 명령 프롬프트 또는 스크립트 환경에서 환경을 설정하려면 Visual Studio 설치의 *Common7/Tools* 하위 폴더에서 *VSDevCmd.bat* 를 실행합니다.
 
 ## <a name="create-a-minimal-application"></a>최소 애플리케이션 만들기
 
@@ -58,9 +59,9 @@ MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PAT
 
 1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’). 
 
-2. **md HelloWorld**를 입력하여 *\HelloWorld\\* 라는 하위 폴더를 만듭니다.
+2. **md HelloWorld** 를 입력하여 *\HelloWorld\\* 라는 하위 폴더를 만듭니다.
 
-3. **cd HelloWorld**를 입력하여 새 폴더로 변경합니다.
+3. **cd HelloWorld** 를 입력하여 새 폴더로 변경합니다.
 
 4. 메모장이나 다른 텍스트 편집기를 시작한 후 다음 코드를 입력합니다.
 
@@ -80,15 +81,15 @@ MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PAT
     }
     ```
 
-5. 이 소스 코드 파일을 저장하고 이름을 *Helloworld.cs*로 지정합니다.
+5. 이 소스 코드 파일을 저장하고 이름을 *Helloworld.cs* 로 지정합니다.
 
-6. 명령 프롬프트에서 **csc helloworld.cs**를 입력하여 애플리케이션을 빌드합니다.
+6. 명령 프롬프트에서 **csc helloworld.cs** 를 입력하여 애플리케이션을 빌드합니다.
 
-7. 명령 프롬프트에서 **helloworld**를 입력하여 애플리케이션을 테스트합니다.
+7. 명령 프롬프트에서 **helloworld** 를 입력하여 애플리케이션을 테스트합니다.
 
      **Hello, world!** 메시지가 표시됩니다.
 
-8. 명령 프롬프트에서 **del helloworld.exe**를 입력하여 애플리케이션을 삭제합니다.
+8. 명령 프롬프트에서 **del helloworld.exe** 를 입력하여 애플리케이션을 삭제합니다.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>최소 MSBuild 프로젝트 파일 만들기
 
@@ -136,25 +137,25 @@ MSBuild를 사용하려면 먼저 필요한 도구를 모두 포함하도록 PAT
     <Csc Sources="@(Compile)"/>
     ```
 
-5. 이 프로젝트 파일을 저장하고 이름을 *Helloworld.csproj*로 지정합니다.
+5. 이 프로젝트 파일을 저장하고 이름을 *Helloworld.csproj* 로 지정합니다.
 
 최소 프로젝트 파일은 다음 코드와 유사합니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
 
-Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 컴파일러 `Csc` 작업이 유일한 작업입니다. 이 작업에는 컴파일할 소스 파일 목록이 필요하며, 이는 `Compile` 항목 값으로 제공됩니다. `Compile` 항목은 하나의 소스 파일 *Helloworld.cs*만 참조합니다.
+Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 컴파일러 `Csc` 작업이 유일한 작업입니다. 이 작업에는 컴파일할 소스 파일 목록이 필요하며, 이는 `Compile` 항목 값으로 제공됩니다. `Compile` 항목은 하나의 소스 파일 *Helloworld.cs* 만 참조합니다.
 
 > [!NOTE]
-> 다음과 같이 항목 요소에 별표 와일드카드 문자(\*)를 사용하여 파일 이름 확장명이 *.cs*인 모든 파일을 참조할 수 있습니다.
+> 다음과 같이 항목 요소에 별표 와일드카드 문자(\*)를 사용하여 파일 이름 확장명이 *.cs* 인 모든 파일을 참조할 수 있습니다.
 >
 > ```xml
 > <Compile Include="*.cs" />
@@ -164,11 +165,11 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
  이제 애플리케이션을 빌드하기 위해 방금 만든 프로젝트 파일을 사용합니다.
 
-1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
+1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build** 를 입력합니다.
 
      그러면 Helloworld 애플리케이션을 만들기 위해 Visual C# 컴파일러를 호출하여 Helloworld 프로젝트 파일의 Build 대상이 빌드됩니다.
 
-2. **helloworld**를 입력하여 애플리케이션을 테스트합니다.
+2. **helloworld** 를 입력하여 애플리케이션을 테스트합니다.
 
      **Hello, world!** 메시지가 표시됩니다.
 
@@ -187,7 +188,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
 ### <a name="to-add-build-properties"></a>빌드 속성을 추가하려면
 
-1. 명령 프롬프트에서 **del helloworld.exe**를 입력하여 기존 애플리케이션을 삭제합니다.
+1. 명령 프롬프트에서 **del helloworld.exe** 를 입력하여 기존 애플리케이션을 삭제합니다.
 
 2. 프로젝트 파일에서 여는 `PropertyGroup` 요소 바로 뒤에 이 `Project` 요소를 삽입합니다.
 
@@ -225,7 +226,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -251,13 +252,13 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
  이제 출력 폴더 및 애플리케이션 이름을 지정하기 위해 빌드 속성을 사용한 프로젝트 파일을 사용하여 애플리케이션을 빌드할 수 있습니다.
 
-1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build**를 입력합니다.
+1. 명령 프롬프트에 **msbuild helloworld.csproj -t:Build** 를 입력합니다.
 
      그러면 *\Bin\\* 폴더가 만들어진 다음, Visual C# 컴파일러가 호출되어 *MSBuildSample* 애플리케이션이 만들어져 *\Bin\\* 폴더에 배치됩니다.
 
-2. *\Bin\\* 폴더가 만들어져 *MSBuildSample* 애플리케이션을 포함하고 있는지 확인하려면 **dir Bin**을 입력합니다.
+2. *\Bin\\* 폴더가 만들어져 *MSBuildSample* 애플리케이션을 포함하고 있는지 확인하려면 **dir Bin** 을 입력합니다.
 
-3. **Bin\MSBuildSample**을 입력하여 애플리케이션을 테스트합니다.
+3. **Bin\MSBuildSample** 을 입력하여 애플리케이션을 테스트합니다.
 
      **Hello, world!** 메시지가 표시됩니다.
 
@@ -301,7 +302,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -328,31 +329,31 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
 ### <a name="to-test-the-build-targets"></a>빌드 대상을 테스트하려면
 
-1. 명령 프롬프트에 **msbuild helloworld.csproj -p:AssemblyName=Greetings**를 입력합니다.
+1. 명령 프롬프트에 **msbuild helloworld.csproj -p:AssemblyName=Greetings** 를 입력합니다.
 
-     **-t** 스위치를 사용하여 대상을 명시적으로 설정하지 않았으므로 MSBuild가 기본 Build 대상을 실행합니다. **-p** 스위치는 `AssemblyName` 속성을 재정의하고 이 속성에 새 값 `Greetings`를 제공합니다. 따라서 새 애플리케이션 *Greetings.exe*가 *\Bin\\* 폴더에 만들어집니다.
+     **-t** 스위치를 사용하여 대상을 명시적으로 설정하지 않았으므로 MSBuild가 기본 Build 대상을 실행합니다. **-p** 스위치는 `AssemblyName` 속성을 재정의하고 이 속성에 새 값 `Greetings`를 제공합니다. 따라서 새 애플리케이션 *Greetings.exe* 가 *\Bin\\* 폴더에 만들어집니다.
 
-2. *\Bin\\* 폴더에 *MSBuildSample* 애플리케이션과 새 *Greetings* 애플리케이션이 둘 다 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.
+2. *\Bin\\* 폴더에 *MSBuildSample* 애플리케이션과 새 *Greetings* 애플리케이션이 둘 다 포함되어 있는지 확인하려면 **dir Bin** 을 입력합니다.
 
-3. **Bin\Greetings**를 입력하여 Greetings 애플리케이션을 테스트합니다.
+3. **Bin\Greetings** 를 입력하여 Greetings 애플리케이션을 테스트합니다.
 
      **Hello, world!** 메시지가 표시됩니다.
 
-4. **msbuild helloworld.csproj -t:clean**을 입력하여 MSBuildSample 애플리케이션을 삭제합니다.
+4. **msbuild helloworld.csproj -t:clean** 을 입력하여 MSBuildSample 애플리케이션을 삭제합니다.
 
      그러면 Clean 작업이 실행되어 기본 `AssemblyName` 속성값 `MSBuildSample`이 포함되어 있는 애플리케이션이 제거됩니다.
 
-5. **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**를 입력하여 Greetings 애플리케이션을 삭제합니다.
+5. **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** 를 입력하여 Greetings 애플리케이션을 삭제합니다.
 
      그러면 Clean 작업이 실행되어 지정된 **AssemblyName** 속성값 `Greetings`가 포함되어 있는 애플리케이션이 제거됩니다.
 
-6. 이제 *\Bin\\* 폴더가 비어 있는지 확인하려면 **dir Bin**을 입력합니다.
+6. 이제 *\Bin\\* 폴더가 비어 있는지 확인하려면 **dir Bin** 을 입력합니다.
 
-7. **msbuild**를 입력합니다.
+7. **msbuild** 를 입력합니다.
 
      프로젝트 파일이 지정되어 있지 않더라도 현재 폴더에 프로젝트 파일이 하나뿐이므로 MSBuild는 *helloworld.csproj* 파일을 빌드합니다. 따라서 *MSBuildSample* 애플리케이션이 *\Bin\\* 폴더에 만들어집니다.
 
-     *\Bin\\* 폴더에 *MSBuildSample* 애플리케이션이 포함되어 있는지 확인하려면 **dir Bin**을 입력합니다.
+     *\Bin\\* 폴더에 *MSBuildSample* 애플리케이션이 포함되어 있는지 확인하려면 **dir Bin** 을 입력합니다.
 
 ## <a name="build-incrementally"></a>증분 방식으로 빌드
 
@@ -377,9 +378,9 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
     </Target>
     ```
 
-2. 명령 프롬프트에서 **msbuild -v:d**를 입력하여 Build 대상을 테스트합니다.
+2. 명령 프롬프트에서 **msbuild -v:d** 를 입력하여 Build 대상을 테스트합니다.
 
-     *helloworld.csproj*는 기본 프로젝트 파일이고, 해당 Build는 기본 대상이라는 사실을 기억하세요.
+     *helloworld.csproj* 는 기본 프로젝트 파일이고, 해당 Build는 기본 대상이라는 사실을 기억하세요.
 
      **-v:d** 스위치는 빌드 프로세스에 대한 자세한 설명을 지정합니다.
 

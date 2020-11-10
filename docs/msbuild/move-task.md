@@ -1,5 +1,7 @@
 ---
 title: Move 작업 | Microsoft Docs
+description: 새 위치로 파일을 이동하는 MSBuild Move 작업의 매개 변수 및 설정을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8714108f7c537d9a50fda453050a54802f14e335
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633462"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903553"
 ---
 # <a name="move-task"></a>Move 작업
 

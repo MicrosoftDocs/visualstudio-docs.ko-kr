@@ -1,5 +1,7 @@
 ---
 title: XmlPoke 작업 | Microsoft Docs
+description: MSBuild가 XmlPoke 작업을 사용하여 XPath 쿼리에 지정된 값을 XML 파일로 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072507"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047230"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 작업
 
@@ -31,7 +33,7 @@ XML 파일로의 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 
  다음 표에서는 `XmlPoke` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`Namespaces`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리 접두사에 대한 네임스페이스를 지정합니다. `Namespaces`는 `Prefix` 및 `Uri` 특성을 포함한 `Namespace` 요소로 이루어진 XML 코드 조각입니다. `Prefix` 특성은 `Uri` 특성에 지정된 네임스페이스와 연결할 접두사를 지정합니다. 빈 `Prefix`를 사용하지 않습니다.|
 |`Query`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리를 지정합니다.|

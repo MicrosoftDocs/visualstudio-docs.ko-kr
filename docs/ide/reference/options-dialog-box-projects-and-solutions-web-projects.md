@@ -1,5 +1,6 @@
 ---
-title: 옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
+title: 옵션 대화 상자의 웹 프로젝트
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114476"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102638"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 
-웹 프로젝트가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 내에서 개발에 사용할 웹 서버를 설정합니다. 이러한 옵션에 액세스하려면 **도구 > 옵션**을 선택하고 **프로젝트 및 솔루션**을 확장한 후 **웹 프로젝트**를 선택합니다.
+웹 프로젝트가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 내에서 개발에 사용할 웹 서버를 설정합니다. 이러한 옵션에 액세스하려면 **도구 > 옵션** 을 선택하고 **프로젝트 및 솔루션** 을 확장한 후 **웹 프로젝트** 를 선택합니다.
 
 기본적으로 Visual Studio에서 웹 프로젝트를 실행하는 경우 Visual Studio 개발 서버를 사용합니다. 자세한 내용은 [Visual Studio의 ASP.NET 웹 프로젝트에 대한 웹 서버](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\))를 참조하세요.
 

@@ -1,5 +1,7 @@
 ---
 title: MSBuild 16.0의 새로운 기능 | Microsoft Docs
+description: MSBuild 16.0의 변경된 기능, 업데이트된 기능 및 속성을 알아보고 릴리스 정보에 대한 링크를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 48fc1a02ad34a3d5229ead0da79c0f6fa781670e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711653"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047794"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 
@@ -21,7 +23,7 @@ ms.locfileid: "88711653"
 
 ## <a name="changed-path"></a>변경된 경로
 
- MSBuild는 각 Visual Studio 버전 아래 *\Current* 폴더에 설치되며, 실행 파일은 *\Bin* 하위 폴더에 있습니다. 예를 들어 Visual Studio 2019 Community와 함께 설치된 *MSBuild.exe* 경로는 *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe*입니다. PowerShell 모듈 [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)을 사용하여 MSBuild를 찾을 수도 있습니다.
+ MSBuild는 각 Visual Studio 버전 아래 *\Current* 폴더에 설치되며, 실행 파일은 *\Bin* 하위 폴더에 있습니다. 예를 들어 Visual Studio 2019 Community와 함께 설치된 *MSBuild.exe* 경로는 *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* 입니다. PowerShell 모듈 [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)을 사용하여 MSBuild를 찾을 수도 있습니다.
 
 ## <a name="changed-properties"></a>변경된 속성
 

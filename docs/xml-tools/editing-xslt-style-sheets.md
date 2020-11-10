@@ -1,5 +1,7 @@
 ---
 title: XSLT 스타일시트 편집
+description: XML 편집기에서 XSLT 스타일 시트를 편집하기 위한 기능에 대해 알아봅니다(구문 색 지정, 밑줄, 편집기에서 XSLT 디버거 시작 등).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31d961de62822bf036a898601ba0125db5a0dafc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592843"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045885"
 ---
 # <a name="edit-xslt-style-sheets"></a>XSLT 스타일시트 편집
 

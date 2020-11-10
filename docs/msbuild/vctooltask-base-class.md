@@ -1,5 +1,7 @@
 ---
 title: VCToolTask 클래스 | Microsoft Docs
+description: VCToolTask 기본 클래스가 해당 클래스에서 상속되는 작업에 추가하는 여러 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -11,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2e45d7c672ebc2177c2bb197399133e7b077a5c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591673"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046743"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 기본 클래스
 
@@ -35,7 +37,7 @@ ms.locfileid: "75591673"
 |**ErrorListRegex**|선택적 **ITaskItem[]** 매개 변수입니다.|
 |**ErrorListListExclusion**|선택적 **ITaskItem[]** 매개 변수입니다.|
 |**GenerateCommandLine**|선택적 **string** 매개 변수입니다.<br/><br/>**CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 및 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] 값을 사용합니다.|
-|**GenerateCommandLineExceptSwitches**|선택적 **string** 매개 변수입니다.<br/><br/>**string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 및 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] 값을 사용합니다.|
+|**GenerateCommandLineExceptSwitches**|선택적 **string** 매개 변수입니다.<br/><br/>**string[]** *switchesToRemove* , **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] 및 **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default] 값을 사용합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

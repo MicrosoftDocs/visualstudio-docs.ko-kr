@@ -1,5 +1,7 @@
 ---
 title: MSBuild 인라인 작업 | Microsoft Docs
+description: Microsoft.Build.Framework.ITask 인터페이스를 구현하는 클래스를 컴파일하여 MSBuild 인라인 작업을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "81638041"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046337"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 인라인 작업
 
@@ -83,7 +85,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 - `Type` 값이 `Fragment`이면 코드는 서명 또는 `return` 문이 아니라 `Execute` 메서드의 내용을 정의합니다.
 
-코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" 또는 ">"와 같은 예약 문자 이스케이프에 신경쓰지 않아도 됩니다.
+코드 자체는 일반적으로 `<![CDATA[` 표식 및 `]]>` 표식 사이에 나타납니다. 코드가 CDATA 섹션에 있으므로 "\<" or ">"와 같은 예약 문자 이스케이프에 신경 쓰지 않아도 됩니다.
 
 또는 `Code` 요소의 `Source` 특성을 사용하여 작업에 대한 코드를 포함하는 파일의 위치를 지정할 수 있습니다. 소스 파일의 코드는 `Type` 특성으로 지정된 형식이어야 합니다. `Source` 특성이 있으면 `Type`의 기본값은 `Class`입니다. `Source`가 없으면 기본값은 `Fragment`입니다.
 
@@ -117,7 +119,7 @@ Log.LogError("Hello, world!");
 </Project>
 ```
 
- *HelloWorld.targets*라는 파일에 HelloWorld 작업을 저장한 다음, 다음과 같이 프로젝트에서 호출할 수 있습니다.
+ *HelloWorld.targets* 라는 파일에 HelloWorld 작업을 저장한 다음, 다음과 같이 프로젝트에서 호출할 수 있습니다.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

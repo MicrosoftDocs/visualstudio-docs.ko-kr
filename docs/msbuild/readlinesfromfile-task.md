@@ -1,5 +1,7 @@
 ---
 title: ReadLinesFromFile 작업 | Microsoft Docs
+description: MSBuild가 ReadLinesFromFile 작업을 사용하여 텍스트 파일에서 항목 목록을 읽는 방법을 알아봅니다. 파일은 각 줄에 하나의 항목이 있어야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632903"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048782"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "77632903"
 
  다음 표에서는 `ReadLinesFromFile` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`File`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 읽을 파일을 지정합니다. 파일은 각 줄에 하나의 항목이 있어야 합니다.|
 |`Lines`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 파일에서 읽은 줄을 포함합니다.|

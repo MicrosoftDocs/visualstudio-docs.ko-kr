@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 디자이너 콘텐츠 모델 뷰
+description: XAML 스키마 디자이너에서 지역 및 전역 스키마 노드 및 해당 구성 요소의 그래픽 표현을 제공하는 콘텐츠 모델 뷰에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592915"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049207"
 ---
 # <a name="content-model-view"></a>콘텐츠 모델 뷰
 
@@ -52,7 +54,7 @@ ms.locfileid: "75592915"
 |**샘플 XML 생성**|전역 요소에만 사용할 수 있습니다. 전역 요소를 위한 샘플 XML 파일을 생성합니다.|
 |**설명서 표시**|주석/설명서 노드 콘텐츠를 표시하거나 숨깁니다.|
 |**다이어그램을 이미지로 내보내기**|디자인 화면을 XPS 파일에 저장합니다.|
-|**코드 보기**|XML 편집기에서 선택된 노드가 포함된 파일을 엽니다. **XML 스키마 탐색기**에서 선택된 항목이 XML 편집기에서도 선택됩니다.|
+|**코드 보기**|XML 편집기에서 선택된 노드가 포함된 파일을 엽니다. **XML 스키마 탐색기** 에서 선택된 항목이 XML 편집기에서도 선택됩니다.|
 |**속성 창**|**속성** 창이 아직 열려 있지 않으면 해당 창을 엽니다. 이 창에서 노드에 대한 정보를 표시합니다.|
 
 다음 표에서는 **작업 영역** 패널에 사용할 수 있는 옵션에 대해 설명합니다.
@@ -66,7 +68,7 @@ ms.locfileid: "75592915"
 |**작업 영역에서 선택 항목을 제외한 모든 내용 제거**|작업 영역 및 디자인 화면에서 선택하지 않은 노드를 제거합니다.|
 |**샘플 XML 생성**|전역 요소에만 사용할 수 있습니다. 전역 요소를 위한 샘플 XML 파일을 생성합니다.|
 |**모두 선택**|**작업 영역** 패널에서 모든 노드를 선택합니다.|
-|**코드 보기**|XML 편집기에서 선택된 노드가 포함된 파일을 엽니다. **XML 스키마 탐색기**에서 선택된 항목이 XML 편집기에서도 선택됩니다.|
+|**코드 보기**|XML 편집기에서 선택된 노드가 포함된 파일을 엽니다. **XML 스키마 탐색기** 에서 선택된 항목이 XML 편집기에서도 선택됩니다.|
 |**속성 창**|**속성** 창이 아직 열려 있지 않으면 해당 창을 엽니다. 이 창에서 노드에 대한 정보를 표시합니다.|
 
 ## <a name="properties-window"></a>속성 창
@@ -119,7 +121,7 @@ ms.locfileid: "75592915"
 
 ## <a name="xml-editor-integration"></a>XML 편집기 통합
 
-오른쪽 클릭(상황에 맞는) 메뉴를 사용하여 **XSD 디자이너**와 XML 편집기 사이를 전환할 수 있습니다.
+오른쪽 클릭(상황에 맞는) 메뉴를 사용하여 **XSD 디자이너** 와 XML 편집기 사이를 전환할 수 있습니다.
 
 XML 편집기에서 스키마 집합을 변경하면 해당 변경 내용이 콘텐츠 모델 뷰에서 동기화됩니다. 자세한 내용은 [XML 편집기와 통합](../xml-tools/integration-with-xml-editor.md)을 참조하세요.
 

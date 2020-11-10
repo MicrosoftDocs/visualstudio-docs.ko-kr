@@ -1,5 +1,7 @@
 ---
 title: XSLT 디버거 창
+description: 지역, 출력, 중단점, 호출 스택, 조사식 창을 포함하여 XSLT 관련 디버깅 동작을 제어하는 XSLT 디버거 UI 부분에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592882"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045804"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스(XSLT)
 
@@ -51,12 +53,12 @@ ms.locfileid: "75592882"
 
 ## <a name="task-list"></a>작업 목록
 
-**작업 목록**에는 스타일시트의 모든 컴파일 오류가 나열됩니다. 오류를 두 번 클릭하면 오류가 발생한 줄에 커서가 놓입니다.
+**작업 목록** 에는 스타일시트의 모든 컴파일 오류가 나열됩니다. 오류를 두 번 클릭하면 오류가 발생한 줄에 커서가 놓입니다.
 
-**작업 목록**에는 XSLT 파일의 스크립트 블록에서 발생한 모든 오류가 포함됩니다.
+**작업 목록** 에는 XSLT 파일의 스크립트 블록에서 발생한 모든 오류가 포함됩니다.
 
 > [!NOTE]
-> XSLT 디버거에는 경고가 없으므로 **작업 목록**에 절대로 표시되지 않습니다.
+> XSLT 디버거에는 경고가 없으므로 **작업 목록** 에 절대로 표시되지 않습니다.
 
 ## <a name="breakpoints-window"></a>중단점 창
 

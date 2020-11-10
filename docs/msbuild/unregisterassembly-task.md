@@ -1,5 +1,7 @@
 ---
 title: UnregisterAssembly 작업 | Microsoft Docs
+description: MSBuild가 UnregisterAssembly 작업을 사용하여 COM interop 목적으로 지정된 어셈블리의 등록을 취소하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631499"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046921"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
 

@@ -1,5 +1,7 @@
 ---
 title: SDK 요소(MSBuild) | Microsoft Docs
+description: MSBuild 프로젝트 SDK를 참조하는 MSBuild Sdk 요소의 구문, 특성 및 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632474"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048366"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 요소(MSBuild)
 
@@ -43,7 +45,7 @@ MSBuild 프로젝트 SDK를 참조합니다.
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 프로젝트 SDK의 이름입니다.|
 |`Version`|선택적 특성입니다.<br /><br /> 프로젝트 SDK의 버전입니다.|
@@ -54,11 +56,11 @@ MSBuild 프로젝트 SDK를 참조합니다.
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: MSBuild 프로젝트 SDK 참조](../msbuild/how-to-use-project-sdk.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: MSBuild 항목 | Microsoft Docs
-description: ItemGroup의 MSBuild Include 특성을 사용하여 빌드에 포함할 파일 지정
+description: ItemGroup의 MSBuild Include 특성을 사용하여 빌드에 포함할 파일을 지정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247587"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904508"
 ---
 # <a name="msbuild-items"></a>MSBuild 항목
 
@@ -169,7 +169,7 @@ MSBuild 항목은 빌드 시스템에 대한 입력이며, 일반적으로 파�
 
 ## <a name="item-definitions"></a>항목 정의
 
- .NET Framework 3.5부터는 [ItemDefinitionGroup 요소](../msbuild/itemdefinitiongroup-element-msbuild.md)를 사용하여 모든 항목 종류에 기본 메타데이터를 추가할 수 있습니다. 잘 알려진 메타데이터와 마찬가지로 기본 메타데이터는 지정한 항목 종류의 모든 항목과 연결됩니다. 항목 정의에서 기본 메타데이터를 명시적으로 재정의할 수 있습니다. 예를 들어 다음 XML은 `Compile` 항목 *one.cs* 및 *three.cs*에 값이 "Monday"인 메타데이터 `BuildDay`를 제공합니다. 이 코드는 *two.cs* 항목에는 값이 "Tuesday"인 메타데이터 `BuildDay`를 제공합니다.
+ .NET Framework 3.5부터는 [ItemDefinitionGroup 요소](../msbuild/itemdefinitiongroup-element-msbuild.md)를 사용하여 모든 항목 종류에 기본 메타데이터를 추가할 수 있습니다. 잘 알려진 메타데이터와 마찬가지로 기본 메타데이터는 지정한 항목 종류의 모든 항목과 연결됩니다. 항목 정의에서 기본 메타데이터를 명시적으로 재정의할 수 있습니다. 예를 들어 다음 XML은 `Compile` 항목 *one.cs* 및 *three.cs* 에 값이 "Monday"인 메타데이터 `BuildDay`를 제공합니다. 이 코드는 *two.cs* 항목에는 값이 "Tuesday"인 메타데이터 `BuildDay`를 제공합니다.
 
 ```xml
 <ItemDefinitionGroup>

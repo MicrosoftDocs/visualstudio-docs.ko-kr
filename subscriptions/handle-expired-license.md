@@ -1,5 +1,5 @@
 ---
-title: 만료된 라이선스 처리 | Microsoft Docs
+title: Visual Studio 구독에서 만료된 라이선스 처리 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: 2b8a4ad5-e5b3-48a3-bb65-23a5cd3f22e9
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 관리자가 만료된 Visual Studio 구독을 처리하는 방법을 알아봅니다.
-ms.openlocfilehash: c0cfa87b0adcbc417ba7fdaed9f3da619a522d27
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cea4f33d884b75b885f2d6dd09d779470ab84c5d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004891"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904015"
 ---
 # <a name="expired-subscriptions"></a>만료된 구독
 사용자의 구독이 만료된 경우 포털의 구독자 목록에 이름 옆에 빨간색 막대로 표시됩니다. 해당 구독자가 Visual Studio 구독 혜택을 계속 사용하려면 해당 라이선스를 갱신해야 합니다.

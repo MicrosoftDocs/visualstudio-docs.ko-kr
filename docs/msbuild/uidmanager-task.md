@@ -1,5 +1,7 @@
 ---
 title: UidManager 작업 | Microsoft Docs
+description: MSBuild UidManager 작업이 UID(고유 식별자)를 확인, 업데이트 또는 제거하여 소스 XAML 파일에 포함된 모든 XAML 요소를 지역화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631525"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046938"
 ---
 # <a name="uidmanager-task"></a>UidManager 작업
 
@@ -32,11 +34,11 @@ ms.locfileid: "77631525"
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |-------------------------| - |
 | `IntermediateDirectory` | 선택적 **문자열** 매개 변수입니다.<br /><br /> **MarkupFiles** 매개 변수로 지정된 소스 XAML 파일을 백업하는 데 사용되는 디렉터리를 지정합니다. |
 | `MarkupFiles` | 필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> UID 확인, 업데이트 또는 제거를 포함할 소스 XAML 파일을 지정합니다. |
-| `Task` | 필수 **String** 매개 변수입니다.<br /><br /> 수행하려는 UID 관리 작업을 지정합니다. 유효한 옵션은 **Check**, **Update** 또는 **Remove**입니다. |
+| `Task` | 필수 **String** 매개 변수입니다.<br /><br /> 수행하려는 UID 관리 작업을 지정합니다. 유효한 옵션은 **Check** , **Update** 또는 **Remove** 입니다. |
 
 ## <a name="example"></a>예제
 

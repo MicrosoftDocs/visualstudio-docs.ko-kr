@@ -1,5 +1,7 @@
 ---
 title: 다중 프로세서 환경에서의 로그인 | Microsoft Docs
+description: MSBuild에서 다중 프로세서 인식 로거를 제공하고 사용자 지정 “전달 로거” 만들기를 지원하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633566"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904373"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>다중 프로세서 환경에서의 로그인
 
@@ -30,7 +32,7 @@ MSBuild에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝
 
 ### <a name="central-logging-model"></a>중앙 로깅 모델
 
-다중 프로세서 빌드의 경우 MSBuild는 "중앙 로깅 모델"을 사용합니다. 중앙 로깅 모델에서 *MSBuild.exe*의 인스턴스는 기본 빌드 프로세스 또는 “중앙 노드”의 역할을 합니다. *MSBuild.exe*의 보조 인스턴스 또는 “보조 노드”는 중앙 노드에 연결됩니다. 중앙 노드에 연결된 모든 ILogger 기반 로거는 "중앙 로거"라고 하며 보조 노드에 연결된 로거는 "보조 로거"라고 합니다.
+다중 프로세서 빌드의 경우 MSBuild는 "중앙 로깅 모델"을 사용합니다. 중앙 로깅 모델에서 *MSBuild.exe* 의 인스턴스는 기본 빌드 프로세스 또는 “중앙 노드”의 역할을 합니다. *MSBuild.exe* 의 보조 인스턴스 또는 “보조 노드”는 중앙 노드에 연결됩니다. 중앙 노드에 연결된 모든 ILogger 기반 로거는 "중앙 로거"라고 하며 보조 노드에 연결된 로거는 "보조 로거"라고 합니다.
 
 빌드가 발생하면 보조 로거는 중앙 로거로 이벤트 트래픽을 라우팅합니다. 이벤트는 여러 개의 보조 노드에서 들어오므로 데이터는 중앙 노드에 동시에 도착하지만 인터리브됩니다. 이벤트-프로젝트 및 이벤트-대상 참조를 해결하기 위해 이벤트 인수는 추가 빌드 이벤트 컨텍스트 정보를 포함합니다.
 
@@ -75,7 +77,7 @@ Culture=neutral
 
 별표(*)는 `-dl` 스위치에서 두 개의 로거 이름을 구분합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 로거](../msbuild/build-loggers.md)
 - [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)

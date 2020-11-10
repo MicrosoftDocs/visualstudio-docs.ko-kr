@@ -1,18 +1,18 @@
 ---
-title: Azure PAYG(종량제) 혜택
+title: Visual Studio 구독의 Azure 종량제 혜택
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Azure 종량제(Pay-As-You-Go) 계정을 설정하는 방법을 알아봅니다.
-ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: cb9d89cc704c8d072e0807189f88ba757d9aad78
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353188"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904565"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 종량제 구독
 클라우드에서 팀과 공동으로 작업해 보세요.  여러 개발 및 테스트 종량제(PAYG, Pay-As-You-Go) 구독을 만들면 다른 구독자와 협업을 가능하게 하는 한편 팀과 환경 간의 격리를 제공합니다.  Azure에서 구독 소프트웨어의 개발/테스트 및 클라우드 사용권에 대한 시간당 요금이 독점적으로 할인됩니다.

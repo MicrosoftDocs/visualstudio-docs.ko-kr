@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 탐색기의 상황에 맞는 메뉴
+description: 스키마 관련 검색 및 기타 작업을 수행하기 위한 항목을 포함하는 XML 스키마 탐색기의 상황에 맞는 메뉴에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592895"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049164"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>상황에 맞는 메뉴(XML 스키마 탐색기)
 

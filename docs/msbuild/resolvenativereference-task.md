@@ -1,5 +1,7 @@
 ---
 title: ResolveNativeReference 작업 | Microsoft Docs
+description: MSBuild가 ResolveNativeReference 작업을 사용하여 Microsoft.Build.Tasks.ResolveNativeReference 클래스를 구현해 네이티브 참조를 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b76b31e96947914c9a641ed4ceb23c7761eb85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad9f5c85a3a295971a5f80fcb994c382346d9af3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632682"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048548"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 작업
 

@@ -1,5 +1,7 @@
 ---
 title: IDE에서 빌드 시작 | Microsoft Docs
+description: Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor를 사용하여 사용자 지정 프로젝트 시스템에 대한 빌드를 시작하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e0447cae810da48bd592371a40f22c40ff45cec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632123"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048168"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE에서 빌드 시작
 

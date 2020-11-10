@@ -1,5 +1,7 @@
 ---
 title: ResourcesGenerator 작업 | Microsoft Docs
+description: MSBuild가 ResourcesGenerator 작업을 사용하여 하나 이상의 리소스를 .resources 파일에 포함하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,20 +19,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632513"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048476"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 작업
 
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 작업은 하나 이상의 리소스( *.jpg* , *.ico* , *.bmp* , 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 ## <a name="task-parameters"></a>작업 매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`OutputPath`|필수 **String** 매개 변수입니다.<br /><br /> 출력 디렉터리의 경로를 지정합니다. 경로가 절대 경로가 아니면 루트 프로젝트 디렉터리의 상대 경로로 처리됩니다.|
 |`OutputResourcesFile`|필수 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 생성된 *.resources* 파일의 경로 및 이름을 지정합니다. 경로가 절대 경로가 아니면 루트 프로젝트 디렉터리에 상대적으로 *.resources* 파일이 생성됩니다.|

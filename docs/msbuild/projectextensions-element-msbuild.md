@@ -1,5 +1,7 @@
 ---
 title: ProjectExtensions 요소(MSBuild) | Microsoft Docs
+description: MSBuild 프로젝트 파일에 비 MSBuild 정보를 포함할 수 있도록 하는 MSBuildProjectExtensions 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632968"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048843"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 요소(MSBuild)
 
@@ -45,7 +47,7 @@ MSBuild 프로젝트 파일이 MSBuild 이외의 정보를 포함하도록 허�
 
 ### <a name="attributes"></a>특성
 
- 없음
+ None
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -53,7 +55,7 @@ MSBuild 프로젝트 파일이 MSBuild 이외의 정보를 포함하도록 허�
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 

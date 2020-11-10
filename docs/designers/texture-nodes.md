@@ -1,5 +1,7 @@
 ---
 title: 질감 노드
+description: 셰이더 디자이너에서 다양한 질감 유형 및 도형을 샘플링한 다음 질감 좌표를 생성하거나 변환하는 질감 노드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3393bb979b73694c4ac65120ae794ef1205b37c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c3e45789358e49a0b224a6de3ea6e5dfea44bf01
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589815"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133964"
 ---
 # <a name="texture-nodes"></a>질감 노드
 

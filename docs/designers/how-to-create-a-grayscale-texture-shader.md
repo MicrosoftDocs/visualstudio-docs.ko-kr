@@ -1,5 +1,7 @@
 ---
 title: '방법: 회색조 질감 셰이더 만들기'
+description: 셰이더 디자이너와 Directed Graph Shader Language를 사용하여 질감 샘플의 RGB 색 값을 수정하는 회색조 질감 셰이더를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a311456fd3f8eab12c24e26c32349f208e0a723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 737c74c5d58bb15724827f15be029d3a84e21977
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769075"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134055"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
 
@@ -23,13 +25,13 @@ ms.locfileid: "85769075"
 
 최종 출력 색으로 작성하기 전에 질감 샘플의 색 값을 수정하여 회색조 질감 셰이더를 구현할 수 있습니다.
 
-시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
+시작하기 전에 **속성** 창과 **도구 상자** 가 표시되는지 확인하세요.
 
 1. [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)에 설명된 대로 기본 질감 셰이더를 만듭니다.
 
-2. **최종 색**노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
+2. **최종 색** 노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기** 를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
-3. **흐리기** 노드를 그래프에 추가합니다. **도구 상자**의 **필터**에서 **흐리기**를 선택하고 디자인 화면으로 이동합니다.
+3. **흐리기** 노드를 그래프에 추가합니다. **도구 상자** 의 **필터** 에서 **흐리기** 를 선택하고 디자인 화면으로 이동합니다.
 
 4. **흐리기** 노드를 사용하여 회색조 값을 계산합니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 **흐리기** 노드의 **RGB** 터미널로 이동합니다.
 
@@ -51,6 +53,6 @@ ms.locfileid: "85769075"
 
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)
-- [이미지 편집기](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [셰이더 디자이너](../designers/shader-designer.md)
 - [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

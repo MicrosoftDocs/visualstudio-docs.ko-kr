@@ -1,5 +1,7 @@
 ---
 title: MSBuild 모범 사례 | Microsoft Docs
+description: 와일드 카드를 사용하지 않고 Condition 특성을 사용하는 것과 같은 MSBuild 스크립트 작성 모범 사례에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263151"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047655"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 모범 사례
 

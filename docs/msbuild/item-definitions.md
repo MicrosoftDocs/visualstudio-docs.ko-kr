@@ -1,5 +1,7 @@
 ---
 title: 항목 정의 | Microsoft Docs
+description: MSBuild에서 ItemGroup 및 ItemDefinitionGroup을 사용하여 프로젝트 파일의 항목에 대한 메타데이터를 선언하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633709"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904659"
 ---
 # <a name="item-definitions"></a>항목 정의
 
-MSBuild 2.0에서는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 사용하여 프로젝트 파일에서 항목의 정적 선언을 수행할 수 있습니다. 그러나 메타데이터는 모든 항목에 대해 동일하더라도 항목 수준에만 추가할 수 있습니다. MSBuild 3.5부터 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)이라는 프로젝트 요소가 이 제한 사항을 해결합니다. *ItemDefinitionGroup*을 사용하면 명명된 항목 형식의 모든 항목에 기본 메타데이터 값을 추가하는 항목 정의 집합을 정의할 수 있습니다.
+MSBuild 2.0에서는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 사용하여 프로젝트 파일에서 항목의 정적 선언을 수행할 수 있습니다. 그러나 메타데이터는 모든 항목에 대해 동일하더라도 항목 수준에만 추가할 수 있습니다. MSBuild 3.5부터 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)이라는 프로젝트 요소가 이 제한 사항을 해결합니다. *ItemDefinitionGroup* 을 사용하면 명명된 항목 형식의 모든 항목에 기본 메타데이터 값을 추가하는 항목 정의 집합을 정의할 수 있습니다.
 
 *ItemDefinitionGroup* 요소는 프로젝트 파일의 [Project](../msbuild/project-element-msbuild.md) 요소 바로 뒤에 표시됩니다. 항목 정의는 다음과 같은 기능을 제공합니다.
 

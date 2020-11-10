@@ -1,5 +1,7 @@
 ---
 title: Otherwise 요소(MSBuild) | Microsoft Docs
+description: MSBuild가 Otherwise 요소를 사용하여 모든 When 요소의 조건이 false인 경우에만 실행할 코드 블록을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633046"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048934"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 요소(MSBuild)
 

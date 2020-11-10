@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007184"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918242"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
@@ -62,8 +62,8 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 성능 프로파일러에서 사용할 수 있는 도구는 다음과 같습니다.
 
 - [CPU 사용량](../profiling/cpu-usage.md)
-- [.NET 코드의 메모리 사용량](../profiling/dotnet-alloc-tool.md)
-- [메모리 사용량](#analyze-memory-usage)
+- [.NET 개체 할당](../profiling/dotnet-alloc-tool.md)
+- [메모리 사용량](../profiling/memory-usage-without-debugging2.md)
 - [.NET Async 도구](../profiling/analyze-async.md)
 - [데이터베이스 도구](../profiling/analyze-database.md)
 - [GPU 사용량](../profiling/gpu-usage.md)
@@ -107,7 +107,12 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ## <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
-**진단 도구** 창에서는 **메모리 사용량** 도구를 사용하여 앱의 메모리 사용량을 평가할 수도 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. [디버거 통합 메모리 사용량 도구](../profiling/memory-usage.md) 또는 [성능 프로파일러](../profiling/memory-usage-without-debugging2.md)의 사후 분석 메모리 사용량 도구를 사용할 수 있습니다. 또 다른 메모리 분석 도구인 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md)를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 됩니다.
+**진단 도구** 창에서는 **메모리 사용량** 도구를 사용하여 앱의 메모리 사용량을 평가할 수도 있습니다. 예를 들어 힙에 있는 개체의 수와 크기를 확인할 수 있습니다. [디버거 통합 메모리 사용량 도구](../profiling/memory-usage.md) 또는 [성능 프로파일러](../profiling/memory-usage-without-debugging2.md)의 사후 분석 메모리 사용량 도구를 사용할 수 있습니다.
+
+.NET 개발자는 [.NET 개체 할당 도구](../profiling/dotnet-alloc-tool.md) 또는 [메모리 사용량](../profiling/memory-usage.md) 도구 중에서 선택할 수 있습니다.
+
+- **.NET 개체 할당 도구** 를 사용하면 .NET 코드의 할당 패턴과 비정상 요소를 식별하는 데 도움이 되고 가비지 수집의 일반적인 문제를 식별할 수 있습니다. 이 도구는 사후 분석 도구로만 실행됩니다. 로컬 컴퓨터 또는 원격 컴퓨터에서 이 도구를 실행할 수 있습니다.
+- **메모리 사용량** 도구는 .NET 앱에서 일반적이지 않은 메모리 누수를 식별하는 데 유용합니다. 코드를 단계별로 실행하는 경우와 같이 메모리를 검사하는 동안 디버거 기능을 사용해야 하는 경우 [디버거 통합 메모리 사용량](../profiling/beginners-guide-to-performance-profiling.md) 도구를 사용하는 것이 좋습니다.
 
 **메모리 사용량** 도구를 사용하여 메모리 사용량을 분석하려면 메모리 스냅샷을 하나 이상 만들어야 합니다. 메모리를 분석하는 가장 좋은 방법은 스냅샷을 두 개(의심되는 메모리 문제가 발생하기 직전과 직후) 만드는 것입니다. 그런 다음 두 스냅샷의 차이점을 보고 변경 내용을 정확히 확인할 수 있습니다. 다음 그림에서는 디버거 통합 도구를 사용하여 스냅샷을 만드는 방법을 보여 줍니다.
 
@@ -169,7 +174,7 @@ UWP 앱의 **진단 도구** 창에서 **UI 분석** 을 사용하도록 설정�
 
 Direct3D 앱(Direct3D 구성 요소가 C++에 있어야 함)에서 GPU에 대한 활동을 검사하고 성능 문제를 분석할 수 있습니다. 자세한 내용은 [GPU 사용량](./gpu-usage.md)을 참조하세요. 이 도구를 사용하려면 성능 프로파일러에서 **GPU 사용량** 을 선택한 다음 **시작** 을 선택합니다. 앱에서 프로파일링에 관심 있는 시나리오를 확인한 다음 **컬렉션 중지** 를 선택하여 보고서를 생성합니다.
 
-그래프에서 기간을 선택하고 **자세히 보기** 를 선택하면 상세 보기가 아래쪽 창에 나타납니다. 상세 보기에서 각 CPU 및 GPU에서 얼마나 많은 활동이 발생하는지를 확인할 수 있습니다. 맨 아래 창에서 이벤트를 선택하면 타임라인에 팝업이 표시됩니다. 예를 들어 **현재** 이벤트를 선택하면 **현재** 호출 팝업이 표시됩니다. 연한 회색 Vsync 세로줄을 참조로 사용하여 특정 **현재** 호출에 Vsync가 누락되었는지 여부를 확인할 수 있습니다. 앱이 60 FPS를 꾸준히 적중하려면 두 Vsyncs마다 하나의 **현재** 호출이 있어야 합니다.
+그래프에서 기간을 선택하고 **자세히 보기** 를 선택하면 상세 보기가 아래쪽 창에 나타납니다. 상세 보기에서 각 CPU 및 GPU에서 얼마나 많은 활동이 발생하는지를 확인할 수 있습니다. 맨 아래 창에서 이벤트를 선택하면 타임라인에 팝업이 표시됩니다. 예를 들어 **현재** 이벤트를 선택하면 **현재** 호출 팝업이 표시됩니다. (연한 회색 VSync 세로줄을 참조로 사용하여 특정 **현재** 호출에 VSync가 누락되었는지 여부를 확인할 수 있습니다. 앱이 60FPS를 꾸준히 적중하려면 두 VSync마다 하나의 **현재** 호출이 있어야 합니다.)
 
 ![GPU 사용량 프로파일링 도구](../profiling/media/prof-tour-gpu-usage.png "Diag GPU Usage")
 
@@ -226,12 +231,12 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|no|
+|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
 |[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
 |[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
 |[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
-|[성능 탐색기](#analyze-performance-legacy-tools)|no|no|no|
+|[성능 탐색기](#analyze-performance-legacy-tools)|no|아니요|아니요|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
@@ -240,16 +245,16 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|no|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
+|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|아니요|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
-|[성능 탐색기](../profiling/performance-explorer.md)|예|no|예|
+|[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
-|[네트워크 사용량](../profiling/network-usage.md)|no|예|no|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|HTML은 예, XAML은 no|no|
-|[JavaScript 메모리](../profiling/javascript-memory.md)|no|HTML은 예, XAML은 no|no|
+|[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
+|[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
 ::: moniker-end
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

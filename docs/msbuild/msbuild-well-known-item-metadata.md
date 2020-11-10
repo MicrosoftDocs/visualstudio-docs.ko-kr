@@ -1,5 +1,7 @@
 ---
 title: MSBuild 잘 알려진 항목 메타데이터 | Microsoft Docs
+description: 모든 항목을 만들 때 할당되는 MSBuild 메타데이터 및 빌드 동작을 제어하기 위해 정의할 수 있는 몇 가지 선택적 MSBuild 메타데이터에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425383"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049015"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 잘 알려진 항목 메타데이터
 
 항목 메타데이터는 항목에 연결된 값입니다. 일부는 항목을 만들 때 MSBuild가 항목에 할당하지만 필요한 메타데이터를 직접 정의할 수도 있습니다. 일부 사용자 정의 메타데이터 값은 MSBuild, 특정 작업 또는 .NET SDK와 같은 SDK에서 유효합니다.
 
-이 문서의 첫 번째 표에서는 모든 항목을 만들 때 할당되는 메타데이터에 대해 설명합니다. 다음 표에서는 MSBuild에서 유효한 몇 가지 선택적 메타데이터를 보여 줍니다. 이러한 메타데이터를 정의하여 빌드 동작을 제어할 수 있습니다. 각 예제에서 프로젝트에 파일 *C:\MyProject\Source\Program.cs*를 포함하는 데 다음과 같은 항목 선언이 사용되었습니다.
+이 문서의 첫 번째 표에서는 모든 항목을 만들 때 할당되는 메타데이터에 대해 설명합니다. 다음 표에서는 MSBuild에서 유효한 몇 가지 선택적 메타데이터를 보여 줍니다. 이러한 메타데이터를 정의하여 빌드 동작을 제어할 수 있습니다. 각 예제에서 프로젝트에 파일 *C:\MyProject\Source\Program.cs* 를 포함하는 데 다음과 같은 항목 선언이 사용되었습니다.
 
 ```xml
 <ItemGroup>

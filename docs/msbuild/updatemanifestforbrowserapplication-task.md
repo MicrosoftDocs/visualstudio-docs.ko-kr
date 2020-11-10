@@ -1,5 +1,7 @@
 ---
 title: UpdateManifestForBrowserApplication 작업 | Microsoft Docs
+description: MSBuild가 UpdateManifestForBrowserApplication 작업을 실행하여 애플리케이션 매니페스트에 hostInBrowser 요소를 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631330"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046811"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 작업
 
@@ -34,7 +36,7 @@ ms.locfileid: "77631330"
 |매개 변수|설명|
 |---------------|-----------------|
 |`ApplicationManifest`|필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> `<hostInBrowser />` 요소를 추가할 애플리케이션 매니페스트 파일의 경로와 이름을 지정합니다.|
-|`HostInBrowser`|필수 **Boolean** 매개 변수입니다.<br /><br /> **\<hostInBrowser />** 요소를 포함하도록 애플리케이션 매니페스트를 수정할지 여부를 지정합니다. **true**인 경우 새로운 **\<hostInBrowser />** 요소가 **\<entryPoint />** 요소에 포함됩니다. 포함된 요소는 누적됩니다. 즉, 기존 **\<hostInBrowser />** 요소를 제거하거나 덮어쓰지 않습니다. 대신 추가 **\<hostInBrowser />** 요소가 만들어집니다. **false**이면 애플리케이션 매니페스트가 수정되지 않습니다.|
+|`HostInBrowser`|필수 **Boolean** 매개 변수입니다.<br /><br /> **\<hostInBrowser />** 요소를 포함하도록 애플리케이션 매니페스트를 수정할지 여부를 지정합니다. **true** 인 경우 새로운 **\<hostInBrowser />** 요소가 **\<entryPoint />** 요소에 포함됩니다. 포함된 요소는 누적됩니다. 즉, 기존 **\<hostInBrowser />** 요소를 제거하거나 덮어쓰지 않습니다. 대신 추가 **\<hostInBrowser />** 요소가 만들어집니다. **false** 이면 애플리케이션 매니페스트가 수정되지 않습니다.|
 
 ## <a name="remarks"></a>설명
 

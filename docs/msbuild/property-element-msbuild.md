@@ -1,5 +1,7 @@
 ---
 title: Property 요소(MSBuild) | Microsoft Docs
+description: PropertyGroup 요소의 자식으로 지정해야 하는 사용자 정의 속성 이름 및 값이 포함되는 MSBuild Property 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632955"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048834"
 ---
 # <a name="property-element-msbuild"></a>Property 요소(MSBuild)
 
@@ -43,7 +45,7 @@ ms.locfileid: "77632955"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 
@@ -53,7 +55,7 @@ ms.locfileid: "77632955"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|속성에 대한 grouping 요소입니다.|
 
@@ -65,7 +67,7 @@ ms.locfileid: "77632955"
 
 ## <a name="remarks"></a>설명
 
- 속성 이름에는 ASCII 문자만 사용할 수 있습니다. "`$(`" 및 "`)`" 사이에 속성 이름을 배치하여 프로젝트에서 속성값을 참조합니다. 예를 들어 `builddir` 속성 값이 `build`이면 `$(builddir)\classes`는 *build\classes*로 해석됩니다. 속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
+ 속성 이름에는 ASCII 문자만 사용할 수 있습니다. "`$(`" 및 "`)`" 사이에 속성 이름을 배치하여 프로젝트에서 속성값을 참조합니다. 예를 들어 `builddir` 속성 값이 `build`이면 `$(builddir)\classes`는 *build\classes* 로 해석됩니다. 속성에 대한 자세한 내용은 [MSBuild 속성](../msbuild/msbuild-properties.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

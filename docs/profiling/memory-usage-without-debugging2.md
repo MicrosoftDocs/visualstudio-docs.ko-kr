@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007201"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918229"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 메모리 사용량 분석
 
 **메모리 사용량** 도구는 앱의 메모리 사용량을 모니터링합니다. 이 도구를 사용하여 Visual Studio에서 활발하게 개발 중인 시나리오의 실시간 메모리 효과를 학습할 수 있습니다. 앱의 메모리 상태에 대한 자세한 스냅샷을 만들고 스냅샷을 비교하여 메모리 문제의 근본 원인을 찾을 수 있습니다. 메모리 사용량 도구는 .NET, ASP.NET, C++ 또는 혼합 모드(.NET 및 네이티브) 앱에서 사용할 수 있습니다.
 
-메모리 사용량 도구는 [디버거를 사용하거나 사용하지 않고](../profiling/running-profiling-tools-with-or-without-the-debugger.md) 실행할 수 있습니다. 다음 문서에서는 Visual Studio 성능 프로파일러에서 디버거 없이 **메모리 사용량** 도구를 사용하는 방법을 보여줍니다.
+메모리 사용량 도구는 [디버거를 사용하거나 사용하지 않고](../profiling/running-profiling-tools-with-or-without-the-debugger.md) 실행할 수 있습니다. 다음 문서에서는 Visual Studio **성능 프로파일러** 에서 디버거 없이 메모리 사용량 도구를 사용하는 방법을 보여 줍니다. 이 방법은 릴리스 빌드에 권장됩니다.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>메모리 사용량 진단 세션
 

@@ -1,5 +1,7 @@
 ---
 title: MSBuild 작업 | Microsoft Docs
+description: MSBuild 작업이 동일한 MSBuild 프로세스를 사용하여 다른 MSBuild 프로젝트에서 자식 프로젝트를 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072582"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049064"
 ---
 # <a name="msbuild-task"></a>MSBuild 작업
 
@@ -33,11 +35,11 @@ ms.locfileid: "82072582"
 
  다음 표에서는 `MSBuild` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | 설명 |
+| 매개 변수 | Description |
 |-----------------------------------| - |
 | `BuildInParallel` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 `Projects` 매개 변수에 지정된 프로젝트가 가능한 경우 병렬로 빌드됩니다. 기본값은 `false`입니다. |
 | `Projects` | 필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 빌드할 프로젝트 파일을 지정합니다. |
-| `Properties` | 선택적 `String` 매개 변수입니다.<br /><br /> 자식 프로젝트에 전역 속성으로 적용할 속성 이름/값 쌍의 세미콜론으로 구분된 목록입니다. 이 매개 변수는 지정하는 경우 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md)를 사용하여 빌드할 때 **-property** 스위치가 포함된 속성을 설정하는 것과 동일한 기능을 제공합니다. 예를 들어:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` 매개 변수를 통해 프로젝트에 속성을 전달하면 MSBuild에서는 프로젝트 파일이 이미 로드되었더라도 프로젝트의 새 인스턴스를 만들 수 있습니다. MSBuild에서는 지정된 프로젝트 경로의 단일 프로젝트 인스턴스와 고유한 전역 속성 집합을 만듭니다. 예를 들어 이 동작을 사용하여 *myproject.proj*를 호출하는 여러 MSBuild 작업을 만들 수 있으며, Configuration=Release를 지정하여 *myproject.proj*의 단일 인스턴스를 가져옵니다(작업에서 고유한 속성을 지정하지 않은 경우). MSBuild에 아직 표시되지 않은 속성을 지정하면 MSBuild에서는 프로젝트의 다른 인스턴스와 병렬로 빌드될 수 있는 프로젝트의 새 인스턴스를 만듭니다. 예를 들어 릴리스 구성을 디버그 구성과 동시에 빌드할 수 있습니다.|
+| `Properties` | 선택적 `String` 매개 변수입니다.<br /><br /> 자식 프로젝트에 전역 속성으로 적용할 속성 이름/값 쌍의 세미콜론으로 구분된 목록입니다. 이 매개 변수는 지정하는 경우 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md)를 사용하여 빌드할 때 **-property** 스위치가 포함된 속성을 설정하는 것과 동일한 기능을 제공합니다. 예를 들어:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` 매개 변수를 통해 프로젝트에 속성을 전달하면 MSBuild에서는 프로젝트 파일이 이미 로드되었더라도 프로젝트의 새 인스턴스를 만들 수 있습니다. MSBuild에서는 지정된 프로젝트 경로의 단일 프로젝트 인스턴스와 고유한 전역 속성 집합을 만듭니다. 예를 들어 이 동작을 사용하여 *myproject.proj* 를 호출하는 여러 MSBuild 작업을 만들 수 있으며, Configuration=Release를 지정하여 *myproject.proj* 의 단일 인스턴스를 가져옵니다(작업에서 고유한 속성을 지정하지 않은 경우). MSBuild에 아직 표시되지 않은 속성을 지정하면 MSBuild에서는 프로젝트의 다른 인스턴스와 병렬로 빌드될 수 있는 프로젝트의 새 인스턴스를 만듭니다. 예를 들어 릴리스 구성을 디버그 구성과 동시에 빌드할 수 있습니다.|
 | `RebaseOutputs` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 빌드한 프로젝트의 대상 출력 항목 상대 경로가 호출 프로젝트를 기준으로 조정됩니다. 기본값은 `false`입니다. |
 | `RemoveProperties` | 선택적 `String` 매개 변수입니다.<br /><br /> 제거할 전역 속성의 집합을 지정합니다. |
 | `RunEachTargetSeparately` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 MSBuild 작업이 MSBuild에 전달된 목록의 각 대상을 동시에 호출하는 대신 한 번에 하나씩 호출합니다. 이 매개 변수를 `true`로 설정하면 이전에 호출된 대상에 오류가 발생하더라도 후속 대상이 호출됩니다. 그렇지 않은 경우에는 빌드 오류로 인해 모든 후속 대상의 호출이 중지됩니다. 기본값은 `false`입니다. |
@@ -53,7 +55,7 @@ ms.locfileid: "82072582"
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
- [Exec 작업](../msbuild/exec-task.md)을 사용하여 *MSBuild.exe*를 시작하는 경우와 달리 이 작업에서는 동일한 MSBuild 프로세스를 사용하여 자식 개체를 빌드합니다. 건너뛸 수 있는 이미 빌드된 대상의 목록은 부모 빌드와 자식 빌드 간에 공유됩니다. 또한 새 MSBuild 프로세스가 만들어지지 않으므로 이 작업은 속도도 더 빠릅니다.
+ [Exec 작업](../msbuild/exec-task.md)을 사용하여 *MSBuild.exe* 를 시작하는 경우와 달리 이 작업에서는 동일한 MSBuild 프로세스를 사용하여 자식 개체를 빌드합니다. 건너뛸 수 있는 이미 빌드된 대상의 목록은 부모 빌드와 자식 빌드 간에 공유됩니다. 또한 새 MSBuild 프로세스가 만들어지지 않으므로 이 작업은 속도도 더 빠릅니다.
 
  이 작업에서는 프로젝트 파일뿐 아니라 솔루션 파일도 처리할 수 있습니다.
 

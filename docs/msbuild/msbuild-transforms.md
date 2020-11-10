@@ -1,5 +1,7 @@
 ---
 title: MSBuild 변환 | Microsoft Docs
+description: MSBuild가 항목 목록 간의 일대일 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633111"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048995"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 변환
 
@@ -32,7 +34,7 @@ ms.locfileid: "77633111"
 @(RESXFile->'%(filename).resources')
 ```
 
-예를 들어 @(RESXFile) 항목 목록의 항목이 *Form1.resx*, *Form2.resx* 및 *Form3.resx*인 경우 변환 목록의 출력은  *Form1.resources*, *Form2.resources* 및 *Form3.resources*가 됩니다.
+예를 들어 @(RESXFile) 항목 목록의 항목이 *Form1.resx* , *Form2.resx* 및 *Form3.resx* 인 경우 변환 목록의 출력은  *Form1.resources* , *Form2.resources* 및 *Form3.resources* 가 됩니다.
 
 > [!NOTE]
 > 표준 항목 목록에 구분 기호를 지정한 것과 동일한 방식으로 변환된 항목 목록에 사용자 지정 구분 기호를 지정할 수 있습니다. 예를 들어 기본 세미콜론(;) 대신 쉼표(,)를 사용하여 변환된 항목 목록을 구분하려면 `@(RESXFile->'Toolset\%(filename)%(extension)', ',')` XML을 사용합니다.
@@ -45,7 +47,7 @@ ms.locfileid: "77633111"
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- 예를 들어 `RESXFile` 항목 목록에 포함된 항목이 *Project1\Form1.resx*, *Project1\Form2.resx* 및 *Project1\Form3.text*인 경우 변환 목록의 출력은 *Toolset\Form1.resx*, *Toolset\Form2.resx* 및 *Toolset\Form3.text*가 됩니다.
+ 예를 들어 `RESXFile` 항목 목록에 포함된 항목이 *Project1\Form1.resx* , *Project1\Form2.resx* 및 *Project1\Form3.text* 인 경우 변환 목록의 출력은 *Toolset\Form1.resx* , *Toolset\Form2.resx* 및 *Toolset\Form3.text* 가 됩니다.
 
 ## <a name="dependency-analysis"></a>종속성 분석
 
@@ -69,7 +71,7 @@ ms.locfileid: "77633111"
 
 ### <a name="description"></a>설명
 
- 다음 예제에서는 변환을 사용하는 MSBuild 프로젝트 파일을 보여 줍니다. 이 예제에서는 *c:\sub0\sub1\sub2\sub3* 디렉터리에 *.xsd* 파일 하나만 있고 작업 디렉터리가 *c:\sub0*이라고 가정합니다.
+ 다음 예제에서는 변환을 사용하는 MSBuild 프로젝트 파일을 보여 줍니다. 이 예제에서는 *c:\sub0\sub1\sub2\sub3* 디렉터리에 *.xsd* 파일 하나만 있고 작업 디렉터리가 *c:\sub0* 이라고 가정합니다.
 
 ### <a name="code"></a>코드
 

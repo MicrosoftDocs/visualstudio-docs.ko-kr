@@ -1,5 +1,7 @@
 ---
 title: Message 작업 | Microsoft Docs
+description: 빌드 중에 메시지를 기록하는 MSBuild Message 작업의 매개 변수 및 설정에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865364"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903842"
 ---
 # <a name="message-task"></a>Message 작업
 
@@ -33,7 +35,7 @@ ms.locfileid: "78865364"
 
  다음 표에서는 `Message` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`Importance`|선택적 `String` 매개 변수입니다.<br /><br /> 메시지의 중요도를 지정합니다. 이 매개 변수는 `high`, `normal` 또는 `low` 값을 가질 수 있습니다. 기본값은 `normal`입니다.|
 |`Text`|선택적 `String` 매개 변수입니다.<br /><br /> 기록할 오류 텍스트입니다.|
@@ -62,7 +64,7 @@ ms.locfileid: "78865364"
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)

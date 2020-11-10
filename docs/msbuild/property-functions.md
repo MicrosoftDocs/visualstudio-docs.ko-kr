@@ -1,5 +1,7 @@
 ---
 title: 속성 함수 | Microsoft Docs
+description: MSBuild 속성 정의에 표시되는 .NET Framework 메서드에 대한 호출인 속성 함수를 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183654"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048811"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -248,9 +250,9 @@ MSBuild `GetRegistryValue` 속성 함수는 레지스트리 키 값을 반환합
 다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView

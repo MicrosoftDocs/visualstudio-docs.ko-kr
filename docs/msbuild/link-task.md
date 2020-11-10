@@ -1,5 +1,7 @@
 ---
 title: 링크 작업 | Microsoft 문서
+description: MSBuild에서 링크 작업을 사용하여 COFF 개체 파일 및 라이브러리를 연결하는 Microsoft C++ 링커 도구인 link.exe를 래핑하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,16 +32,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865351"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904062"
 ---
 # <a name="link-task"></a>링크 작업
 
-Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
+Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe* ) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -185,7 +187,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **Boolean** 매개 변수입니다.
 
-  관리 코드에서 네이티브 DLL로 호출하는 링커 생성 P/Invoke에 링커가 **SuppressUnmanagedCodeSecurityAttribute**를 적용할지 여부를 지정합니다.
+  관리 코드에서 네이티브 DLL로 호출하는 링커 생성 P/Invoke에 링커가 **SuppressUnmanagedCodeSecurityAttribute** 를 적용할지 여부를 지정합니다.
 
   자세한 내용은 [/CLRUNMANAGEDCODECHECK(SuppressUnmanagedCodeSecurityAttribute 추가)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)를 참조하세요.
 
@@ -219,7 +221,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **String[]** 매개 변수입니다.
 
-  이 매개 변수를 사용하면 DLL의 *로드가 지연*됩니다. 로드를 지연할 DLL의 이름을 지정합니다.
+  이 매개 변수를 사용하면 DLL의 *로드가 지연* 됩니다. 로드를 지연할 DLL의 이름을 지정합니다.
 
   자세한 내용은 [/DELAYLOAD(가져오기 로드 지연)](/cpp/build/reference/delayload-delay-load-import)를 참조하세요.
 
@@ -341,7 +343,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **Boolean** 매개 변수입니다.
 
-  `true`이면 *맵 파일*을 만듭니다. 맵 파일의 파일 이름 확장명은 *.map*입니다.
+  `true`이면 *맵 파일* 을 만듭니다. 맵 파일의 파일 이름 확장명은 *.map* 입니다.
 
   자세한 내용은 [/MAP(맵 파일 생성)](/cpp/build/reference/map-generate-mapfile)을 참조하세요.
 
@@ -359,7 +361,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   가상 메모리의 총 힙 할당을 지정합니다.
 
-  자세한 내용은 [/HEAP(힙 크기 설정)](/cpp/build/reference/heap-set-heap-size)의 `reserve` 인수를 참조하세요. 이 표의 **HeapCommitSize**도 참조하세요.
+  자세한 내용은 [/HEAP(힙 크기 설정)](/cpp/build/reference/heap-set-heap-size)의 `reserve` 인수를 참조하세요. 이 표의 **HeapCommitSize** 도 참조하세요.
 
 - **IgnoreAllDefaultLibraries**
 
@@ -605,7 +607,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **Boolean** 매개 변수입니다.
 
-  `true`이고 출력 등록을 사용하도록 설정하면 **HKEY_CLASSES_ROOT**에 대한 레지스트리 쓰기가 **HKEY_CURRENT_USER**로 리디렉션되도록 합니다.
+  `true`이고 출력 등록을 사용하도록 설정하면 **HKEY_CLASSES_ROOT** 에 대한 레지스트리 쓰기가 **HKEY_CURRENT_USER** 로 리디렉션되도록 합니다.
 
 - **PreprocessOutput**
 
@@ -617,7 +619,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   선택적 **Boolean** 매개 변수입니다.
 
-  `true`이면 *Bind.exe*에서 링크된 이미지가 바인딩되지 않음을 나타냅니다.
+  `true`이면 *Bind.exe* 에서 링크된 이미지가 바인딩되지 않음을 나타냅니다.
 
   자세한 내용은 [/ALLOWBIND(DLL 바인딩 방지)](/cpp/build/reference/allowbind-prevent-dll-binding)를 참조하세요.
 

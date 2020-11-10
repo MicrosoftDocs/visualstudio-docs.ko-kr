@@ -1,5 +1,7 @@
 ---
 title: ResolveNonMSBuildProjectOutput 작업 | Microsoft Docs
+description: MSBuild가 ResolveNonMSBuildProjectOutput 작업을 사용하여 비 MSBuild 프로젝트 참조에 대한 출력 파일을 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604ed91d32140c3b037e6ddef21e996f72ef8439
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3486788331574aa70874c0deeefa3c553404c166
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632578"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048520"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 작업
 

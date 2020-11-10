@@ -1,5 +1,7 @@
 ---
 title: 매개 변수 요소 | Microsoft Docs
+description: UsingTask TaskFactory에서 생성한 작업의 특정 매개 변수에 대한 정보를 포함하는 MSBuild Parameter 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263108"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048878"
 ---
-# <a name="parameter-element"></a>Parameter 요소
+# <a name="parameter-element"></a>매개 변수 요소
 
 `UsingTask` `TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수 정보를 포함합니다.  요소의 이름은 매개 변수의 이름입니다.  자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
  \<Parameter>
 
@@ -42,15 +44,15 @@ ms.locfileid: "78263108"
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
 
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+ 다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`ParameterType`|선택적 특성입니다.<br /><br /> 매개 변수의 .NET 형식(예: `System.String`)입니다.|
-|`Output`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 출력 매개 변수입니다. 기본적으로 값은 `false`입니다.|
-|`Required`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 이 매개 변수는 작업의 필수 매개 변수입니다. 기본적으로 값은 `false`입니다.|
+|`Output`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 출력 매개 변수입니다. 기본적으로 이 값은 `false`입니다.|
+|`Required`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 이 매개 변수는 작업의 필수 매개 변수입니다. 기본적으로 이 값은 `false`입니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -58,7 +60,7 @@ ms.locfileid: "78263108"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|`UsingTask` `TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다.|
 

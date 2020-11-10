@@ -1,5 +1,7 @@
 ---
 title: 다중 프로세서 인식 로거 작성 | Microsoft Docs
+description: MSBuild가 사용자 지정 "전달 로거"를 만들 수 있도록 다중 프로세서 인식 로거 및 로깅 모델을 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630749"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047304"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 
@@ -35,7 +37,7 @@ MSBuild에서는 다중 프로세서를 사용할 수 있기 때문에 프로젝
 
 ### <a name="central-logging-model"></a>중앙 로깅 모델
 
- 중앙 로깅 모델에서 *MSBuild.exe*의 단일 인스턴스는 “중앙 노드”의 역할을 하며 중앙 노드의 자식 인스턴스(“보조 노드”)는 빌드 작업을 수행할 수 있도록 중앙 노드에 연결합니다.
+ 중앙 로깅 모델에서 *MSBuild.exe* 의 단일 인스턴스는 “중앙 노드”의 역할을 하며 중앙 노드의 자식 인스턴스(“보조 노드”)는 빌드 작업을 수행할 수 있도록 중앙 노드에 연결합니다.
 
  ![중앙 로거 모델](../msbuild/media/centralnode.png "CentralNode")
 
@@ -72,7 +74,7 @@ public interface INodeLogger: ILogger
 
 - 사용자 고유의 사용자 지정 전달 로거를 작성합니다.
 
-요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 *MSBuild.exe*를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.
+요구 사항에 맞게 ConfigurableForwardingLogger를 수정할 수 있습니다. 이렇게 하려면 *MSBuild.exe* 를 사용하여 명령줄에서 로거를 호출하고 로거에서 중앙 노드로 전달하려는 빌드 이벤트를 나열합니다.
 
 대신 사용자 지정 전달 로거를 만들 수 있습니다. 사용자 지정 전달 로거를 만들어 로거의 동작을 미세 조정할 수 있습니다. 그러나 사용자 지정 전달 로거를 만드는 것은 ConfigurableForwardingLogger를 사용자 지정하는 것보다 더 복잡합니다. 자세한 내용은 [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)를 참조하세요.
 
@@ -118,6 +120,6 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)

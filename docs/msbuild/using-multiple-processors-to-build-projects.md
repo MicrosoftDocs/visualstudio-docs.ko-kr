@@ -1,5 +1,7 @@
 ---
 title: 다중 프로세서를 사용하여 프로젝트 빌드 | Microsoft Docs
+description: MSBuild가 사용할 수 있는 각 프로세서에 대한 별도의 빌드 프로세스를 만들어 여러 프로세서 또는 코어가 있는 시스템을 활용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631304"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047580"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>다중 프로세서를 사용하여 프로젝트 빌드
 
@@ -36,7 +38,7 @@ MSBuild에서는 다중 프로세서 또는 다중 핵심 프로세서가 있는
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++ 프로젝트(.vcxproj) 및 솔루션(.sln) 파일
 
- C++ 프로젝트( *.vcxproj*) 및 솔루션( *.sln*) 파일은 둘 다 [MSBuild 작업](../msbuild/msbuild-task.md)에 전달될 수 있습니다. C++ 프로젝트의 경우 VCWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. C++ 솔루션의 경우 SolutionWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. 두 경우 모두 결과 프로젝트는 다른 MSBuild 프로젝트와 동일하게 처리됩니다.
+ C++ 프로젝트( *.vcxproj* ) 및 솔루션( *.sln* ) 파일은 둘 다 [MSBuild 작업](../msbuild/msbuild-task.md)에 전달될 수 있습니다. C++ 프로젝트의 경우 VCWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. C++ 솔루션의 경우 SolutionWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. 두 경우 모두 결과 프로젝트는 다른 MSBuild 프로젝트와 동일하게 처리됩니다.
 
 ## <a name="multi-process-execution"></a>다중 프로세스 실행
 
@@ -44,7 +46,7 @@ MSBuild에서는 다중 프로세서 또는 다중 핵심 프로세서가 있는
 
  이 문제를 방지하면서 여전히 다중 프로세서 빌드를 사용하기 위해 MSBuild에서는 "프로세스 격리"를 사용합니다. 프로세스 격리를 사용하여 MSBuild는 최대 `n`개의 프로세스를 만들 수 있습니다. 여기서 `n`은 시스템에서 사용할 수 있는 프로세서 수입니다. 예를 들어 MSBuild가 2개의 프로세서가 있는 시스템에서 솔루션을 빌드할 경우 빌드 프로세스가 2개만 만들어집니다. 이러한 프로세스는 솔루션의 모든 프로젝트를 빌드하기 위해 다시 사용됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [작업](../msbuild/msbuild-tasks.md)

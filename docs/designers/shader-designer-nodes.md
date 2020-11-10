@@ -1,5 +1,7 @@
 ---
 title: 셰이더 디자이너 노드
+description: 이 섹션의 문서를 사용하여 그래픽 효과를 만드는 데 사용할 수 있는 다양한 셰이더 디자이너 노드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bac48316e60422b9561535d67c14aeadbd416f4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768789"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134232"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
 설명서의 이 섹션에 있는 문서에는 그래픽 효과를 만드는 데 사용할 수 있는 다양한 셰이더 디자이너 노드에 대한 정보가 포함되어 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: Output 요소(MSBuild) | Microsoft Docs
+description: 항목 및 속성에 작업 출력 값을 저장하는 MSBuild Output 요소의 특성, 요소 및 예제에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633033"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048924"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
 
@@ -47,7 +49,7 @@ ms.locfileid: "77633033"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`TaskParameter`|필수 특성입니다.<br /><br /> 태스크 출력 매개 변수의 이름입니다.|
 |`PropertyName`|`PropertyName` 또는 `ItemName` 특성이 필요합니다.<br /><br /> 태스크의 출력 매개 변수 값을 수신하는 속성입니다. 프로젝트는 $(\<PropertyName>) 구문을 사용하여 속성을 참조할 수 있습니다. 이 속성 이름은 새 속성 이름 또는 프로젝트에 이미 정의된 이름일 수 있습니다.<br /><br /> `ItemName`을 이미 사용한 경우 이 특성을 사용할 수 없습니다.|
@@ -60,7 +62,7 @@ ms.locfileid: "77633033"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | MSBuild 작업의 인스턴스를 만들고 실행합니다. |
 

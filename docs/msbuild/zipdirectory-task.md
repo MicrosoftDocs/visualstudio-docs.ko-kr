@@ -1,5 +1,7 @@
 ---
 title: ZipDirectory 작업 | Microsoft Docs
+description: MSBuild가 ZipDirectory 작업을 사용하여 디렉터리의 콘텐츠에서 .zip 보관 파일을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183069"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046616"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 작업
 

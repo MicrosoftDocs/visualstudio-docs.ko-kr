@@ -1,5 +1,7 @@
 ---
 title: '방법: 기본 색 셰이더 만들기'
+description: 셰이더 디자이너와 Directed Graph Shader Language를 사용하여 최종 색을 상수 RGB 색 값으로 설정하는 단색 셰이더를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769163"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134108"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>방법: 기본 색 셰이더 만들기
 
@@ -23,13 +25,13 @@ ms.locfileid: "85769163"
 
 최종 출력 색에 대한 RGB 색 상수의 색 값을 작성하여 최종 색 셰이더를 구현할 수 있습니다.
 
-시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
+시작하기 전에 **속성** 창과 **도구 상자** 가 표시되는지 확인하세요.
 
 1. 사용할 DGSL 셰이더를 만듭니다. DGSL 셰이더를 프로젝트에 추가하는 방법에 대한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 시작 섹션을 참조하세요.
 
-2. **점 색** 노드를 삭제합니다. **선택** 도구를 사용하여 **점 색** 노드를 선택한 다음, 메뉴 모음에서 **편집** > **삭제**를 선택합니다.
+2. **점 색** 노드를 삭제합니다. **선택** 도구를 사용하여 **점 색** 노드를 선택한 다음, 메뉴 모음에서 **편집** > **삭제** 를 선택합니다.
 
-3. **색 상수** 노드를 그래프에 추가합니다. **도구 상자**의 **상수**에서 **색 상수**를 선택하고 디자인 화면으로 이동합니다.
+3. **색 상수** 노드를 그래프에 추가합니다. **도구 상자** 의 **상수** 에서 **색 상수** 를 선택하고 디자인 화면으로 이동합니다.
 
 4. **색 상수** 노드의 색 값을 지정합니다. **선택** 도구를 사용하여 **색 상수** 노드를 선택하고 **속성** 창의 **출력** 속성에서 색 값을 지정합니다. 주황색의 경우 (1.0, 0.5, 0.2, 1.0) 값을 지정합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: '방법: 셰이더 내보내기'
+description: 셰이더 디자이너를 사용하여 Directed Graph Shader Language 셰이더를 앱에서 사용할 수 있도록 내보내는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768986"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134304"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
 
-이 문서에서는 앱에서 사용할 수 있도록 **셰이더 디자이너**를 사용하여 DGSL(Directed Graph Shader Language) 셰이더를 내보내는 방법을 보여 줍니다.
+이 문서에서는 앱에서 사용할 수 있도록 **셰이더 디자이너** 를 사용하여 DGSL(Directed Graph Shader Language) 셰이더를 내보내는 방법을 보여 줍니다.
 
 ## <a name="export-a-shader"></a>셰이더 내보내기
 
@@ -27,7 +29,7 @@ ms.locfileid: "85768986"
 
      열 수 있는 **시각적 셰이더 그래프(.dgsl)** 파일이 없으면 [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)에 설명된 대로 파일을 만듭니다.
 
-2. **셰이더 디자이너** 도구 모음에서 **고급** > **내보내기** > **다른 이름으로 내보내기**를 선택합니다. **셰이더 내보내기** 대화 상자가 나타납니다.
+2. **셰이더 디자이너** 도구 모음에서 **고급** > **내보내기** > **다른 이름으로 내보내기** 를 선택합니다. **셰이더 내보내기** 대화 상자가 나타납니다.
 
 3. **파일 형식** 드롭다운 목록에서 내보내려는 형식을 선택합니다.
 

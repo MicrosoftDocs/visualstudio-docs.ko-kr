@@ -1,5 +1,7 @@
 ---
 title: 대상 일괄 처리의 항목 메타데이터 | Microsoft Docs
+description: MSBuild에서 대상 일괄 처리의 항목 메타데이터를 사용하여 빌드 대상의 입력 및 출력에 종속성 분석을 수행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633670"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904612"
 ---
 # <a name="item-metadata-in-target-batching"></a>대상 일괄 처리의 항목 메타데이터
 
@@ -67,7 +69,7 @@ MSBuild에는 빌드 대상의 입력 및 출력에 대한 종속성 분석을 �
 </Project>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md)
 - [일괄 처리](../msbuild/msbuild-batching.md)

@@ -1,5 +1,7 @@
 ---
 title: 대규모 프로젝트 빌드 시 메모리의 효율적인 사용 | Microsoft Docs
+description: 대량 프로젝트를 빌드할 때 MSBuild가 이전 버전 언로드, 캐시 검색과 같이 메모리를 자동으로 관리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40f2713d93e4f1ad9755efaea2f8fba5f0bda94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61bfa09bf91b49c163e47bbf71c0d192b6950160
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631317"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047603"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>대규모 프로젝트 빌드 시 메모리의 효율적인 사용
 
@@ -25,6 +27,6 @@ ms.locfileid: "77631317"
 
  버전 4.0는 프로젝트에서 `UnloadProjectsOnCompletion` 및 `UseResultsCache`와 같은 속성을 사용할 필요가 없도록 하여 이 메모리 관리를 자동으로 처리합니다.
 
-### <a name="see-also"></a>참조
+### <a name="see-also"></a>참고 항목
 
 - [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

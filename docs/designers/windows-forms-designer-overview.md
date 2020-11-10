@@ -1,5 +1,7 @@
 ---
 title: Windows Forms 앱 디자인
+description: Windows Forms 기반 애플리케이션을 만들기 위한 빠른 개발 솔루션을 제공하는 Visual Studio의 Windows Forms 디자이너에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: overview
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768756"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134657"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows Forms 디자이너 개요
 
@@ -33,7 +35,7 @@ Visual Studio의 Windows Forms 디자이너는 Windows Forms 기반 애플리케
 - **Shift** 또는 **Ctrl** 키를 누른 채로 클릭하여 여러 컨트롤을 선택합니다. **Shift** 키를 누른 채로 클릭하면 크기를 맞추거나 조작할 때 선택한 첫 번째 컨트롤이 나머지 컨트롤의 기준이 됩니다. **Ctrl** 키를 누른 채로 클릭하면 마지막으로 선택한 컨트롤이 기준이 되므로 새 컨트롤이 추가될 때마다 기준 컨트롤이 변경됩니다. 또는 선택하려는 컨트롤 주위로 선택 사각형을 끌어 여러 컨트롤을 선택할 수 있습니다.
 
 > [!NOTE]
-> 리소스 편집기가 아닌 Windows Forms 디자이너를 사용하여 양식의 리소스( *.resx*) 파일을 변경할 수 있습니다. 양식 기반 .resx 파일을 편집하는 경우 리소스 편집기에서 변경한 내용이 손실 될 수 있다는 경고가 표시됩니다. Windows Forms 디자이너는 .resx 파일을 생성하기 때문입니다.
+> 리소스 편집기가 아닌 Windows Forms 디자이너를 사용하여 양식의 리소스( *.resx* ) 파일을 변경할 수 있습니다. 양식 기반 .resx 파일을 편집하는 경우 리소스 편집기에서 변경한 내용이 손실 될 수 있다는 경고가 표시됩니다. Windows Forms 디자이너는 .resx 파일을 생성하기 때문입니다.
 
 ## <a name="see-also"></a>참고 항목
 

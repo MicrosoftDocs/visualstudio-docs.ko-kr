@@ -1,5 +1,7 @@
 ---
 title: XslTransformation 작업 | Microsoft Docs
+description: MSBuild가 XslTransformation 작업을 사용하여 XSLT를 사용하는 XML 입력을 변환하고 출력 장치 또는 파일로 출력하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094546"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047197"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
 
@@ -31,7 +33,7 @@ XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 �
 
  다음 표에서는 `XslTransformation` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |`OutputPaths`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> XML 변환에 대한 출력 파일을 지정합니다.|
 |`Parameters`|선택적 `String` 매개 변수입니다.<br /><br /> 매개 변수를 XSLT 입력 문서로 지정합니다.  각 매개 변수를 `<Parameter Name="" Value="" Namespace="" />`로 저장하는 원시 XML을 제공합니다.|
@@ -47,7 +49,7 @@ XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 �
 
 ## <a name="example"></a>예제
 
-다음 예에서는 XSL 변환 파일 *transform.xslt*를 사용하여 xml 파일 `$(XmlInputFileName)`을 수정합니다. 변환된 XML은 `$(IntermediateOutputPath)output.xml`에 기록됩니다. XSL 변환에서 입력 매개 변수로 `$(Parameter1)`을 사용합니다.
+다음 예에서는 XSL 변환 파일 *transform.xslt* 를 사용하여 xml 파일 `$(XmlInputFileName)`을 수정합니다. 변환된 XML은 `$(IntermediateOutputPath)output.xml`에 기록됩니다. XSL 변환에서 입력 매개 변수로 `$(Parameter1)`을 사용합니다.
 
 ```xml
     <XslTransformation XslInputPath="transform.xslt"
@@ -56,7 +58,7 @@ XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 �
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [XSLT 매개 변수](/dotnet/standard/data/xml/xslt-parameters)
 - [작업](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: MSBuild의 로깅 | Microsoft 문서
+description: MSBuild 로깅을 통해 빌드 이벤트, 메시지, 경고 및 오류를 로그 파일에 캡처하여 빌드 진행률을 모니터링할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633553"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904334"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 로그인
 
 로깅은 빌드의 진행률을 모니터링할 수 있는 방법을 제공합니다. 로깅은 빌드 이벤트, 메시지, 경고 및 오류를 로그 파일에 캡처합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
 
@@ -43,6 +45,6 @@ ms.locfileid: "77633553"
 
  사용자 지정 전달 로거를 만드는 방법을 간략하게 설명합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 여러 프로젝트를 병렬로 실행하여 더 빠르게 여러 프로젝트를 빌드하는 방법을 설명합니다.

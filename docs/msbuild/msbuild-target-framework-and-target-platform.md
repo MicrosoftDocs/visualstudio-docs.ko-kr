@@ -1,5 +1,7 @@
 ---
 title: MSBuild 대상 프레임워크 및 대상 플랫폼 | Microsoft Docs
+description: 대상 .NET Framework 버전 및 대상 플랫폼 또는 소프트웨어 아키텍처에서 실행할 MSBuild 프로젝트를 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350838"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049105"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 
-프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 80x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.
+프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼* 에서 실행되도록 빌드할 수 있습니다.  예를 들어 80x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트* 라고 합니다.
 
 > [!IMPORTANT]
 > 이 문서에서는 이전 방법으로 대상 프레임워크를 지정하는 방법을 보여 줍니다. SDK 스타일 프로젝트는 netstandard와 같이 다른 TargetFrameworks를 사용하도록 설정합니다. 자세한 내용은 [대상 프레임워크](/dotnet/standard/frameworks)를 참조하세요.
@@ -58,7 +60,7 @@ ms.locfileid: "85350838"
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- *대상 프로필*은 대상 프레임워크의 하위 집합입니다. 예를 들어 .NET Framework 4 Client Profile에는 MSBuild 어셈블리에 대한 참조가 포함되지 않습니다.
+ *대상 프로필* 은 대상 프레임워크의 하위 집합입니다. 예를 들어 .NET Framework 4 Client Profile에는 MSBuild 어셈블리에 대한 참조가 포함되지 않습니다.
 
  > [!NOTE]
  > 대상 프로필은 [이식 가능한 클래스 라이브러리](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)에만 적용됩니다.
@@ -72,7 +74,7 @@ ms.locfileid: "85350838"
 
 ## <a name="target-platform"></a>대상 플랫폼
 
- *플랫폼*은 하드웨어 및 특정 런타임 환경을 정의하는 소프트웨어의 조합입니다. 예를 들면 다음과 같습니다.
+ *플랫폼* 은 하드웨어 및 특정 런타임 환경을 정의하는 소프트웨어의 조합입니다. 예를 들면 다음과 같습니다.
 
 - `x86`은 Intel 80x86 프로세서 또는 이와 동등한 프로세서에서 실행되는 32비트 Windows 운영 체제를 지정합니다.
 
@@ -80,7 +82,7 @@ ms.locfileid: "85350838"
 
 - `Xbox`는 Microsoft Xbox 360 플랫폼을 지정합니다.
 
-*대상 플랫폼*은 빌드할 프로젝트의 실행 기반이 되는 특정 플랫폼입니다. 대상 플랫폼은 프로젝트 파일의 `PlatformTarget`빌드 속성에서 지정됩니다. IDE에서 프로젝트 속성 페이지 또는 **구성 관리자**를 사용하여 대상 플랫폼을 변경할 수 있습니다.
+*대상 플랫폼* 은 빌드할 프로젝트의 실행 기반이 되는 특정 플랫폼입니다. 대상 플랫폼은 프로젝트 파일의 `PlatformTarget`빌드 속성에서 지정됩니다. IDE에서 프로젝트 속성 페이지 또는 **구성 관리자** 를 사용하여 대상 플랫폼을 변경할 수 있습니다.
 
 ```xml
 <PropertyGroup>
@@ -89,7 +91,7 @@ ms.locfileid: "85350838"
 
 ```
 
-*대상 구성*은 대상 플랫폼의 하위 집합입니다. 예를 들어 `x86` `Debug` 구성에는 대부분의 코드 최적화가 포함되지 않습니다. 대상 구성은 프로젝트 파일의 `Configuration` 빌드 속성에서 지정됩니다. 프로젝트 속성 페이지 또는 **구성 관리자**를 사용하여 대상 구성을 변경할 수 있습니다.
+*대상 구성* 은 대상 플랫폼의 하위 집합입니다. 예를 들어 `x86` `Debug` 구성에는 대부분의 코드 최적화가 포함되지 않습니다. 대상 구성은 프로젝트 파일의 `Configuration` 빌드 속성에서 지정됩니다. 프로젝트 속성 페이지 또는 **구성 관리자** 를 사용하여 대상 구성을 변경할 수 있습니다.
 
 ```xml
 <PropertyGroup>

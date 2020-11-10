@@ -1,5 +1,7 @@
 ---
 title: Touch 작업 | Microsoft Docs
+description: 파일의 액세스 및 수정 시간을 설정하는 MSBuild Touch 작업의 매개 변수 및 사용법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631655"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047008"
 ---
 # <a name="touch-task"></a>Touch 작업
 

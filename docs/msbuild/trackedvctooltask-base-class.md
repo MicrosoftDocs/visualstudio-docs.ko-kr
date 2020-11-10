@@ -1,5 +1,7 @@
 ---
 title: TrackedVCToolTask 클래스 | Microsoft Docs
+description: TrackedVCToolTask 기본 클래스가 해당 클래스에서 상속하는 작업에 추가하는 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -11,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01b55e0ad88cb520078479217306bac948e6cd60
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594931"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046992"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 기본 클래스
 

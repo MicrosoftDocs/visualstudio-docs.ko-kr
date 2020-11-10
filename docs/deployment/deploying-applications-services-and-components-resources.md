@@ -1,8 +1,10 @@
 ---
 title: 폴더, IIS, Azure 또는 다른 대상에 Visual Studio 앱을 배포합니다.
 titleSuffix: ''
-description: 게시 마법사를 사용하여 앱 게시 옵션 자세히 알아보기
-ms.custom: contperfq1
+description: 게시 도구를 사용하여 앱 게시 옵션 자세히 알아보기
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928530"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382974"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>폴더, IIS, Azure 또는 다른 대상에 앱 배포
 
@@ -31,7 +33,7 @@ ms.locfileid: "91928530"
 - 어떤 배포 옵션을 선택할지 잘 모르시겠나요? [내게 적합한 게시 옵션](#what-publishing-options-are-right-for-me)을 참조하세요.
 - Azure App Service 또는 IIS의 배포 문제에 대한 도움말은 [Azure App Service 및 IIS에서 ASP.NET Core 문제 해결](/aspnet/core/test/troubleshoot-azure-iis)을 참조하세요.
 - .NET 배포 설정을 구성하는 방법에 대한 자세한 내용은 [.NET 배포 설정 구성](#configure-net-deployment-settings)을 참조하세요.
-- 새 대상에 배포하려면 이전에 게시 프로필을 만든 경우 구성된 프로필에 대한 **게시** 창에서 **새로 만들기**를 선택합니다.
+- 새 대상에 배포하려면 이전에 게시 프로필을 만든 경우 구성된 프로필에 대한 **게시** 창에서 **새로 만들기** 를 선택합니다.
 
    ![새 게시 프로필 만들기](../deployment/media/create-a-new-publish-profile.png)
 
@@ -209,7 +211,7 @@ IIS의 ASP.NET Core 문제 해결에 관한 도움말은 [Azure App Service 및 
 
 ## <a name="import-profile"></a>프로필 가져오기
 
-IIS 또는 Azure App Service에 게시할 때 프로필을 가져올 수 있습니다. 게시 설정 파일( *\*.publishsettings*)을 사용하여 배포를 구성할 수 있습니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
+IIS 또는 Azure App Service에 게시할 때 프로필을 가져올 수 있습니다. 게시 설정 파일( *\*.publishsettings* )을 사용하여 배포를 구성할 수 있습니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
 
 게시 설정 파일 사용 시, 각 배포 프로필을 수동으로 구성하는 것에 비해 배포 구성이 간소화되며 팀 환경에서의 효율성이 증가합니다.
 

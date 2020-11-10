@@ -1,5 +1,7 @@
 ---
 title: MSBuild 조건부 구문 | Microsoft Docs
+description: MSBuild가 Choose, When 및 Otherwise 요소를 사용하여 조건부 처리 메커니즘을 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 614a59771ea63637ee7c0576f67bf4798cb90c1f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184291"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046413"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 조건부 구문
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio 구독에 로그인할 때 발생할 수 있는 문제에 대해 알아보기
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005279"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903444"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio 구독에 로그인할 때의 문제
 Visual Studio 구독을 사용하려면 먼저 로그인해야 합니다.  구독에 따라 Microsoft 계정(MSA) 또는 AAD(Azure Active Directory) ID로 설정했을 수 있습니다.  이 문서에서는 구독에 로그인하는 동안 발생할 수 있는 몇 가지 문제에 대해 설명합니다.
@@ -32,12 +32,12 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
 회사 또는 학교 이메일 주소로 Microsoft 소비자 앱에 등록하려고 하면 아래 메시자가 표시됩니다.
 
    > [!div class="mx-imgBorder"]
-   > ![회사 이메일로 계정을 만들 수 없습니다.](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![회사 이메일로 계정을 만들 수 없습니다.](_img/sign-in-issues/cannot-use-work-email.png "사용자 이름 및 암호를 제공하여 계정을 만듭니다.")
 
 그러나 개인 및 회사/학교 계정을 지원하는 Microsoft 앱에 등록하려고 하면 다음 메시지가 표시됩니다.
 
    > [!div class="mx-imgBorder"]
-   > ![회사/학교 계정 지원](_img/sign-in-issues/existing-account.png)
+   > ![회사/학교 계정 지원](_img/sign-in-issues/existing-account.png "여기서는 회사 또는 학교 전자 메일 주소를 사용하여 가입할 수 없습니다...")
 
 ### <a name="are-existing-accounts-affected"></a>기존 계정에 영향을 주나요?
 여기에 설명된 등록 블록만 새 계정 생성을 방지합니다. 이미 회사/학교 이메일 주소가 있는 Microsoft 계정을 가진 사용자에게는 영향을 주지 않습니다. 이미 이러한 상황에 있는 경우 개인 Microsoft 계정의 이름을 쉽게 변경할 수 있습니다. 이 [지원 문서](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)는 간단한 단계별 지침을 제공합니다. 개인 Microsoft 계정의 이름을 바꾸는 것은 사용자 이름을 변경하는 것으로, 회사 이메일이나 Microsoft 365와 같은 비즈니스 서비스에 로그인하는 방법에 영향을 주지 않습니다. 또한 개인적인 것에 영향을 주지 않습니다. 단지 로그인하는 방식만 변경됩니다. 다른(개인) 이메일 주소를 사용하거나, Microsoft에서 새 @outlook.com 이메일 주소를 가져오거나, 전화 번호를 새 사용자 이름으로 사용할 수 있습니다.
@@ -61,7 +61,7 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
 회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: JohnD@contoso.com) 사용자가 별칭 또는 이름(예: John.Doe@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다. VLSC(볼륨 라이선스 서비스 센터)를 통해 구독을 관리하는 많은 고객의 경우 제공된 전자 메일 주소(John.Doe@contoso.com)가 “회사 또는 학교 계정” 옵션을 통해 인증에 성공하는 데 필요한 디렉터리 주소(JohnD@contoso.com)와 일치하지 않을 때 이 별칭 지정으로 인해 로그인에 실패할 수 있습니다.
 
 ### <a name="what-options-do-i-have"></a>어떤 방법이 있습니까?
-구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 Microsoft 계정(MSA)을 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 이 작업 수행과 관련된 정책 또는 문제에 대해 관리자와 이야기를 나눕니다. 
+구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 MSA(Microsoft 계정)를 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 작업 수행과 관련된 정책 또는 문제에 관해 관리자와 이야기를 나눕니다. 
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)

@@ -1,5 +1,7 @@
 ---
 title: 이미지 라이브러리
+description: Visual Studio, Windows, Office 및 기타 Microsoft 소프트웨어에 표시되는 애플리케이션 이미지가 포함되어 있는 Visual Studio 이미지 라이브러리에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c37868558ec483b85b4480ba85a1eaa5fe23beb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768669"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134709"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 이미지 라이브러리
 

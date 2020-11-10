@@ -9,18 +9,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1a241fa8422a71900312198988dacfe144525b5a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810525"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325921"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 
-**shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 격리할 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 더 쉽게 작성할 수 있습니다.
+**shim 형식** 은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 격리할 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 더 쉽게 작성할 수 있습니다.
 
-*shim*을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 격리할 수 있습니다. 솔루션의 구성 요소를 서로 격리하려면 *스텁*을 사용하세요.
+*shim* 을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 격리할 수 있습니다. 솔루션의 구성 요소를 서로 격리하려면 *스텁* 을 사용하세요.
 
 개요 및 “빠른 시작” 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
 
@@ -28,9 +28,9 @@ ms.locfileid: "90810525"
 
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
-
-> [!NOTE]
-> .NET Standard 프로젝트는 지원되지 않습니다.
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 업데이트 6에서 미리 보기로 제공한 .NET Core 및 SDK 스타일 프로젝트 지원은 업데이트 8에서 기본적으로 사용하도록 설정되어 있습니다. 자세한 내용은 [.NET Core 및 SDK 스타일 프로젝트용 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)를 참조하세요.
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>예: Y2K 버그
 
@@ -67,13 +67,16 @@ using (ShimsContext.Create()) {
 
 첫 번째로 Fakes 어셈블리를 추가합니다.
 
-1. **솔루션 탐색기**에서 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
+1. **솔루션 탐색기** 에서 
+    - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
+    ::: moniker range=">=vs-2019"
+    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+    ::: moniker-end
+    - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
 
-   - Visual Basic에서 작업하는 경우 **참조** 노드를 보기 위해 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시**를 선택합니다.
+2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간** 을 shim하려면 **System.dll** 을 선택합니다.
 
-2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간**을 shim하려면 **System.dll**을 선택합니다.
-
-3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
+3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가** 를 선택합니다.
 
 ### <a name="use-shimscontext"></a>ShimsContext 사용
 
@@ -93,7 +96,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>shim을 사용하여 테스트 작성
 
-테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 다음은 그 예입니다.
+테스트 코드에서 모조할 메서드에 대해 *우회* 를 삽입합니다. 다음은 그 예입니다.
 
 ```csharp
 [TestClass]
@@ -154,7 +157,7 @@ End Class
 
 shim 클래스 이름은 원래 형식 이름에 `Fakes.Shim` 접두사를 추가하여 구성합니다.
 
-shim은 테스트 대상 애플리케이션의 코드에 *우회*를 삽입하여 작동합니다. 원래 메서드가 호출될 때마다 Fakes 시스템은 실제 메서드를 호출하는 대신 shim 코드가 호출되도록 우회를 수행합니다.
+shim은 테스트 대상 애플리케이션의 코드에 *우회* 를 삽입하여 작동합니다. 원래 메서드가 호출될 때마다 Fakes 시스템은 실제 메서드를 호출하는 대신 shim 코드가 호출되도록 우회를 수행합니다.
 
 우회는 런타임에 생성 및 삭제됩니다. 항상 `ShimsContext`의 수명 내에서 우회를 만들어야 합니다. 삭제하면 활성화된 동안 만든 shim이 모두 제거됩니다. 이 작업은 `using` 문 내에서 수행하는 것이 가장 좋습니다.
 
@@ -520,7 +523,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>제한 사항
 
-.NET 기본 클래스 라이브러리 **mscorlib** 및 **System**의 일부 형식에서는 shim을 사용할 수 없습니다.
+Shim은 .NET 기본 클래스 라이브러리 **mscorlib** , **System** (.NET Framework) 및 **System.Runtime** (.NET Core)의 모든 형식에 사용할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
 

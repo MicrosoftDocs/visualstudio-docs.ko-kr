@@ -1,5 +1,7 @@
 ---
 title: UpdateManifest 작업 | Microsoft Docs
+description: MSBuild가 UpdateManifest 작업을 사용하여 매니페스트에서 선택한 속성을 업데이트하고 다시 서명하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631344"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046854"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 작업
 
@@ -31,7 +33,7 @@ ms.locfileid: "77631344"
 
  다음 표에서는 `UpdateManifest` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`ApplicationManifest`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 애플리케이션 매니페스트를 지정합니다.|
 |`ApplicationPath`|필수 `String` 매개 변수입니다.<br /><br /> 애플리케이션 매니페스트의 경로를 지정합니다.|

@@ -1,5 +1,7 @@
 ---
 title: MT 작업 | Microsoft Docs
+description: Microsoft 매니페스트 도구인 mt.exe를 래핑하는 MSBuild MT 작업의 매개 변수 및 명령줄 옵션에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,16 +26,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5ce7e602c3f95766fdade297c2ee235cebba24c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633059"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048987"
 ---
 # <a name="mt-task"></a>MT 작업
 
-Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.
+Microsoft 매니페스트 도구, *mt.exe* 를 래핑합니다. 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -51,21 +53,21 @@ Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용�
 |**DependencyInformationFile**|선택적 **String** 매개 변수입니다.<br /><br /> 매니페스트 도구에 대한 빌드 종속성 정보를 추적하기 위해 Visual Studio에서 사용하는 종속성 정보 파일을 지정합니다.|
 |**EmbedManifest**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 어셈블리에 매니페스트 파일을 포함합니다. `false`인 경우 독립 실행형 매니페스트 파일로 만듭니다.|
 |**EnableDPIAwareness**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 애플리케이션을 DPI 인식으로 표시하는 매니페스트 정보에 추가합니다. DPI 인식 애플리케이션을 작성하면 사용자 인터페이스는 높은 DPI 디스플레이 설정의 광범위한 부분에서 일관성 있게 보입니다.<br /><br /> 자세한 내용은 [높은 DPI](/windows/desktop/win7devguide/high-dpi)를 참조하세요.|
-|**GenerateCatalogFiles**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 카탈로그 정의( *.cdf*) 파일을 생성합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/makecdfs** 옵션을 참조하세요.|
+|**GenerateCatalogFiles**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 카탈로그 정의( *.cdf* ) 파일을 생성합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/makecdfs** 옵션을 참조하세요.|
 |**GenerateCategoryTags**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 범주 태그가 생성됩니다. 이 매개 변수가 `true`인 경우 **ManifestFromManagedAssemblyMT** 작업 매개 변수도 지정되어야 합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/category** 옵션을 참조하세요.|
 |**InputResourceManifests**|선택적 **String** 매개 변수입니다.<br /><br /> 지정한 식별자를 가진 RT_MANIFEST 형식의 리소스에서 매니페스트를 입력합니다. \<file>[;[#]\<resource_id>] 형식의 리소스를 지정합니다. 여기서 선택적 \<resource_id> 매개 변수는 음수가 아닌 16비트 숫자입니다.<br /><br /> `resource_id`가 지정되지 않은 경우 CREATEPROCESS_MANIFEST_RESOURCE 기본값(1)이 사용됩니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/inputresource** 옵션을 참조하세요.|
 |**ManifestFromManagedAssembly**|선택적 **String** 매개 변수입니다.<br /><br /> 지정된 관리되는 어셈블리에서 매니페스트를 생성합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/managedassemblyname** 옵션을 참조하세요.|
 |**ManifestToIgnore**|선택적 **String** 매개 변수입니다.<br /><br /> (사용되지 않습니다.)|
 |**OutputManifestFile**|선택적 **String** 매개 변수입니다.<br /><br /> 출력 매니페스트의 이름을 지정합니다. 이 매개 변수가 생략되고 하나의 매니페스트만 작업 중인 경우 해당 매니페스트는 위치에서 수정됩니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/out** 옵션을 참조하세요.|
 |**OutputResourceManifests**|선택적 **String** 매개 변수입니다.<br /><br /> 지정한 식별자를 가진 RT_MANIFEST 형식의 리소스에 매니페스트를 출력합니다. 리소스는 \<file>[;[#]\<resource_id>] 형식이며 여기서 선택적 \<resource_id> 매개 변수는 음수가 아닌 16비트 숫자입니다.<br /><br /> `resource_id`가 지정되지 않은 경우 CREATEPROCESS_MANIFEST_RESOURCE 기본값(1)이 사용됩니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/outputresource** 옵션을 참조하세요.|
-|**RegistrarScriptFile**|선택적 **String** 매개 변수입니다.<br /><br /> 등록이 필요 없는 COM 매니페스트를 지원하기 위해 사용할 등록자 스크립트( *.rgs*) 파일의 이름을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/rgs** 옵션을 참조하세요.|
-|**ReplacementsFile**|선택적 **String** 매개 변수입니다.<br /><br /> 등록자 스크립트( *.rgs*) 파일에서 대체 가능한 문자열 값이 들어 있는 파일을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/replacements** 옵션을 참조하세요.|
+|**RegistrarScriptFile**|선택적 **String** 매개 변수입니다.<br /><br /> 등록이 필요 없는 COM 매니페스트를 지원하기 위해 사용할 등록자 스크립트( *.rgs* ) 파일의 이름을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/rgs** 옵션을 참조하세요.|
+|**ReplacementsFile**|선택적 **String** 매개 변수입니다.<br /><br /> 등록자 스크립트( *.rgs* ) 파일에서 대체 가능한 문자열 값이 들어 있는 파일을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/replacements** 옵션을 참조하세요.|
 |**ResourceOutputFileName**|선택적 **String** 매개 변수입니다.<br /><br /> 매니페스트를 프로젝트 출력에 포함시키는 데 사용하는 출력 리소스 파일을 지정합니다.|
 |**Sources**|선택적 `ITaskItem[]` 매개 변수입니다.<br /><br /> 공백으로 구분된 매니페스트 소스 파일 목록을 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/manifest** 옵션을 참조하세요.|
 |**SuppressDependencyElement**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 종속성 요소 없이 매니페스트를 생성합니다. 이 매개 변수가 `true`인 경우 **ManifestFromManagedAssemblyMT** 작업 매개 변수도 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/nodependency** 옵션을 참조하세요.|
 |**SuppressStartupBanner**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업을 시작할 때 저작권과 버전 번호 메시지가 표시되지 않도록 합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/nologo** 옵션을 참조하세요.|
 |**TrackerLogDirectory**|선택적 `String` 매개 변수입니다.<br /><br /> 이 작업에 대한 추적 로그를 저장할 중간 디렉터리를 지정합니다.|
-|**TypeLibraryFile**|선택적 **String** 매개 변수입니다.<br /><br /> 형식 라이브러리( *.tlb*) 파일의 이름을 지정합니다. 이 매개 변수를 지정하는 경우 **ComponentFileNameMT** 작업 매개 변수도 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/tlb** 옵션을 참조하세요.|
+|**TypeLibraryFile**|선택적 **String** 매개 변수입니다.<br /><br /> 형식 라이브러리( *.tlb* ) 파일의 이름을 지정합니다. 이 매개 변수를 지정하는 경우 **ComponentFileNameMT** 작업 매개 변수도 지정합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/tlb** 옵션을 참조하세요.|
 |**UpdateFileHashes**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 **UpdateFileHashesSearchPathMT** 작업 매개 변수로 지정된 경로에서 파일의 해시 값을 계산한 다음 계산된 값을 사용하여 매니페스트의 **file** 요소의 **hash** 특성의 값을 업데이트합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/hashupdate** 옵션을 참조하세요. 또한 이 표에서 **UpdateFileHashesSearchPath** 매개 변수도 참조하세요.|
 |**UpdateFileHashesSearchPath**|선택적 `String` 매개 변수입니다.<br /><br /> 파일 해시가 업데이트될 때 사용할 검색 경로를 지정합니다. **UpdateFileHashesMT** 작업 매개 변수와 함께 이 매개 변수를 사용합니다.<br /><br /> 자세한 내용은 이 표의 **UpdateFileHashes** 매개 변수를 참조하세요.|
 |**VerboseOutput**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 자세한 디버깅 정보를 표시합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/verbose** 옵션을 참조하세요.|

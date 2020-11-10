@@ -1,5 +1,7 @@
 ---
 title: MSBuild 일괄 처리 | Microsoft Docs
+description: MSBuild가 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 대상 또는 작업을 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289276"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047695"
 ---
 # <a name="msbuild-batching"></a>MSBuild 일괄 처리
 

@@ -1,5 +1,7 @@
 ---
 title: WriteCodeFragment 작업 | Microsoft Docs
+description: MSBuild가 WriteCodeFragment 작업을 사용하여 지정된 생성된 코드 조각에서 임시 코드 파일을 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc96f804541f780da38776d19b19393eb249a4ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630694"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047461"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 작업
 

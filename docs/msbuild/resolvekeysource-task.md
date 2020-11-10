@@ -1,5 +1,7 @@
 ---
 title: ResolveKeySource 작업 | Microsoft Docs
+description: 강력한 이름 키 원본을 결정하는 MSBuild ResolveKeySource 작업의 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa4e2454a0216e697ed12404091eb0ef16416cb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2ed7bf0e831153d1120789d97b2a27aa77822a6b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632708"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048580"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 작업
 

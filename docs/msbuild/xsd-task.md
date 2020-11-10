@@ -1,5 +1,7 @@
 ---
 title: XSD 작업 | Microsoft Docs
+description: MSBuild가 XSD 작업을 사용하여 소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구 xsd.exe를 래핑하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,19 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630784"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047207"
 ---
 # <a name="xsd-task"></a>XSD 작업
 
-소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구(*xsd.exe*)를 래핑합니다.
+소스에서 스키마 또는 클래스 파일을 생성하는 XML 스키마 정의 도구( *xsd.exe* )를 래핑합니다.
 
 > [!NOTE]
-> Visual Studio 2017부터 *xsd.exe*에 대한 C++ 프로젝트 지원이 사용되지 않습니다. *CppCodeProvider.dll*을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다.
+> Visual Studio 2017부터 *xsd.exe* 에 대한 C++ 프로젝트 지원이 사용되지 않습니다. *CppCodeProvider.dll* 을 수동으로 GAC에 추가하여 **Microsoft.VisualC.CppCodeProvider** API를 계속 사용할 수 있습니다.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -62,7 +64,7 @@ ms.locfileid: "77630784"
 
      생성된 코드에 사용할 프로그래밍 언어를 지정합니다.
 
-     **CS**(C#, 기본값), **VB**(Visual Basic) 또는 **JS**(JScript) 중에서 선택합니다. `System.CodeDom.Compiler.CodeDomProvider Class`를 구현하는 클래스의 정규화된 이름을 지정할 수도 있습니다.
+     **CS** (C#, 기본값), **VB** (Visual Basic) 또는 **JS** (JScript) 중에서 선택합니다. `System.CodeDom.Compiler.CodeDomProvider Class`를 구현하는 클래스의 정규화된 이름을 지정할 수도 있습니다.
 
 - **Namespace**
 

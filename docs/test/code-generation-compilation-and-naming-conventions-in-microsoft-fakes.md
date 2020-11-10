@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589333"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325942"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -22,9 +22,9 @@ ms.locfileid: "75589333"
 
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
-
-> [!NOTE]
-> .NET Standard 프로젝트는 지원되지 않습니다.
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 업데이트 6에서 미리 보기로 제공한 .NET Core 및 SDK 스타일 프로젝트 지원은 업데이트 8에서 기본적으로 사용하도록 설정되어 있습니다. 자세한 내용은 [.NET Core 및 SDK 스타일 프로젝트용 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)를 참조하세요.
+::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>코드 생성 및 컴파일
 
@@ -32,7 +32,7 @@ ms.locfileid: "75589333"
 
 스텁 형식의 생성은 *.fakes* 파일 확장명을 가진 XML 파일에서 구성됩니다. Fakes 프레임워크는 사용자 지정 MSBuild 작업을 통해 빌드 프로세스에서 통합되고 빌드 시 해당 파일을 검색합니다. Fakes 코드 생성기는 스텁 형식을 어셈블리로 컴파일하고 프로젝트에 대한 참조를 추가합니다.
 
-다음 예제에서는 *FileSystem.dll*에 정의된 스텁 형식을 보여 줍니다.
+다음 예제에서는 *FileSystem.dll* 에 정의된 스텁 형식을 보여 줍니다.
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -64,17 +64,17 @@ ms.locfileid: "75589333"
 
 - 필터는 기본적으로 대/소문자를 구분하지 않으며 부분 문자열 일치를 수행합니다.
 
-     `el`은 "hello"와 일치합니다.
+     `el`는 "hello"와 일치합니다.
 
 - 필터의 끝에 `!`를 추가하여 정확하게 대/소문자를 구분하여 일치하도록 합니다.
 
-     `el!`은 "hello"와 일치하지 않습니다.
+     `el!`는 "hello"와 일치하지 않습니다.
 
-     `hello!`은 "hello"와 일치합니다.
+     `hello!`는 "hello"와 일치합니다.
 
 - 필터의 끝에 `*`를 추가하여 문자열의 접두사가 일치하도록 합니다.
 
-     `el*`은 "hello"와 일치하지 않습니다.
+     `el*`는 "hello"와 일치하지 않습니다.
 
      `he*`는 "hello"와 일치합니다.
 
@@ -134,7 +134,7 @@ Fakes 프레임워크는 동일한 키를 사용하여 생성된 모든 어셈�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-대체 키를 `KeyFile` 특성 값으로 *.fakes* 파일의 `Fakes`\\`Compilation` 요소에 포함하는 *.snk* 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예를 들어:
+대체 키를 `KeyFile` 특성 값으로 *.fakes* 파일의 `Fakes`\\`Compilation` 요소에 포함하는 *.snk* 파일의 전체 경로를 지정하면 shim된 어셈블리에 대해 만든 키와 같은 다른 공용 키를 Fakes 어셈블리에 지정할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -177,13 +177,13 @@ Fakes 어셈블리를 컴파일하면 빌드 시간이 현저하게 길어질 �
 
 ### <a name="avoid-assembly-name-clashing"></a>어셈블리 이름 충돌 방지
 
-팀 빌드 환경에서는 모든 빌드 출력이 단일 디렉터리에 병합됩니다. 여러 프로젝트가 Fakes를 사용하는 경우 서로 다른 버전의 Fakes 어셈블리가 서로를 재정의할 수 있습니다. 예를 들어 .NET Framework 2.0의 TestProject1 fakes *mscorlib.dll*과 .NET Framework 4의 TestProject2 fakes *mscorlib.dll* 모두 *mscorlib.Fakes.dll* Fakes 어셈블리를 생성할 수 있습니다.
+팀 빌드 환경에서는 모든 빌드 출력이 단일 디렉터리에 병합됩니다. 여러 프로젝트가 Fakes를 사용하는 경우 서로 다른 버전의 Fakes 어셈블리가 서로를 재정의할 수 있습니다. 예를 들어 .NET Framework 2.0의 TestProject1 fakes *mscorlib.dll* 과 .NET Framework 4의 TestProject2 fakes *mscorlib.dll* 모두 *mscorlib.Fakes.dll* Fakes 어셈블리를 생성할 수 있습니다.
 
 이 문제를 방지하려면 Fakes가 *.fakes* 파일을 추가할 때 프로젝트 이외 참조에 대해 버전 정규화된 Fakes 어셈블리 이름을 자동으로 만들어야 합니다. 버전 정규화된 Fakes 어셈블리 이름은 Fakes 어셈블리 이름을 만들 때 버전 번호를 포함합니다.
 
 어셈블리에 MyAssembly 및 버전 1.2.3.4를 지정하는 경우 Fakes 어셈블리 이름은 MyAssembly.1.2.3.4.Fakes입니다.
 
-이 버전은 *.fakes*에서 어셈블리 요소의 버전 특성을 편집하여 변경하거나 제거할 수 있습니다.
+이 버전은 *.fakes* 에서 어셈블리 요소의 버전 특성을 편집하여 변경하거나 제거할 수 있습니다.
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -223,33 +223,33 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>shim 대리자 속성 또는 스텁 대리자 필드 명명 규칙
 
-필드 명명에 대한 **기본 규칙**이며, 빈 이름에서 시작합니다.
+필드 명명에 대한 **기본 규칙** 이며, 빈 이름에서 시작합니다.
 
 - 메서드 이름을 추가합니다.
 
 - 메서드 이름이 명시적 인터페이스 구현인 경우 점이 제거됩니다.
 
-- 메서드가 제네릭인 경우 `Of`*n*이 추가됩니다. 여기서 *n*은 제네릭 메서드 인수 수입니다.
+- 메서드가 제네릭인 경우 `Of`*n* 이 추가됩니다. 여기서 *n* 은 제네릭 메서드 인수 수입니다.
 
-  getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
+  getter 또는 setter 속성과 같은 **특수 메서드 이름** 은 다음 표에 설명된 대로 처리됩니다.
 
 |메서드 특성...|예제|추가되는 메서드 이름|
 |-|-|-|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
-|메서드 이름이 "_"로 구분되는 두 부분으로 구성된 **접근자**(예: 속성 getter)|*kind_name*(일반적인 경우이지만 ECMA에 의해 강제되지 않음)|*NameKind*, 여기서 두 부분이 대문자로 처리되고 교환됨|
+|메서드 이름이 "_"로 구분되는 두 부분으로 구성된 **접근자** (예: 속성 getter)|*kind_name* (일반적인 경우이지만 ECMA에 의해 강제되지 않음)|*NameKind* , 여기서 두 부분이 대문자로 처리되고 교환됨|
 ||`Prop` 속성의 getter|`PropGet`|
 ||`Prop` 속성의 setter|`PropSet`|
 ||이벤트 adder|`Add`|
 ||이벤트 remover|`Remove`|
 |두 부분으로 구성된 **연산자**|`op_name`|`NameOp`|
 |예: + 연산자|`op_Add`|`AddOp`|
-|**변환 연산자**의 경우 반환 형식이 추가됩니다.|`T op_Implicit`|`ImplicitOpT`|
+|**변환 연산자** 의 경우 반환 형식이 추가됩니다.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
-> - **인덱서의 getter 및 setter**는 속성과 유사하게 처리됩니다. 인덱서의 기본 이름은 `Item`입니다.
+> - **인덱서의 getter 및 setter** 는 속성과 유사하게 처리됩니다. 인덱서의 기본 이름은 `Item`입니다.
 > - **매개 변수 형식** 이름은 변형되고 연결됩니다.
-> - **반환 형식**은 오버로드 모호성이 제거될 때까지 무시됩니다. 오버로드 모호성이 있는 경우 반환 형식은 이름의 끝에 추가됩니다.
+> - **반환 형식** 은 오버로드 모호성이 제거될 때까지 무시됩니다. 오버로드 모호성이 있는 경우 반환 형식은 이름의 끝에 추가됩니다.
 
 ### <a name="parameter-type-naming-conventions"></a>매개 변수 형식 명명 규칙
 
@@ -274,6 +274,6 @@ attribute of the Assembly element in the .fakes:
 
 - 결과 이름이 선언 형식의 멤버와 충돌하는 경우 01부터 시작하는 두 자리 카운터를 추가하여 번호 매기기 구성표를 사용합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

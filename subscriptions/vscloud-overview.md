@@ -2,17 +2,17 @@
 title: Visual Studio 클라우드 구독을 구매하는 방법
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353449"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92918086"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -102,7 +102,7 @@ A:  아니요.  구독 상태가 그대로 유지되며 현재와 마찬가지�
 A: 특정 월에 구매한 연간 구독은 1년 치 요금이 즉시 청구되며 1년간 유효합니다. 따라서 구매 당월의 라이선스 수만 수정할 수 있습니다(라이선스는 1년간 유효하고 1년 치 요금이 청구됨). 구매 당월이 지나면 구독 수를 늘릴 수 없습니다.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q: 고객의 구독 수를 줄일려면 어떻게 해야 하나요?
-A: 관리자는 https://manage.visualstudio.com 을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 *않습니다* . 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
+A: 여전히 관리자는 구독 수를 줄일 수 있는데, https://manage.visualstudio.com 을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 됩니다. 시스템은 비례 배분된 크레딧을 생성하지 *않습니다*. 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q: 구독을 취소하면 나중에 다른 연간 클라우드 구독을 구입할 수 있나요?
 A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio 구독을 구입할 수 있는 여러 옵션이 있습니다.  [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)에서 자세히 알아보세요.
@@ -118,7 +118,7 @@ A:  기존 고객에게는 영향이 없습니다. 신규 고객은 Visual Studi
 A: 특정 월에 구입한 연간 구독은 1년 전체에 대해 즉시 요금이 청구되며 해당 1년 동안 유효합니다. 따라서 관리자는 구매 당월의 라이선스 수만 수정하면 됩니다(1년 동안 유효하고 1년에 대해 청구됨). 구매 당월이 지나면 구독 수를 늘릴 수 없습니다.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q: 고객의 구독 수를 줄일려면 어떻게 해야 하나요?
-A:  관리자는 [https://manage.visualstudio.com](https://manage.visualstudio.com)을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 계속 구독의 수를 줄일 수 있습니다. 시스템은 비례 배분된 크레딧을 생성하지 **않습니다** . 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
+A:  여전히 관리자는 구독 수를 줄일 수 있는데, [https://manage.visualstudio.com](https://manage.visualstudio.com)을 방문하여 이 문서의 지침에 따라 구독 수를 줄이면 됩니다. 시스템은 비례 배분된 크레딧을 생성하지 **않습니다**. 환불을 받으려면 Azure 청구 팀에 문의해야 합니다.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q: 고객이 구독을 취소하면 나중에 더 많은 연간 클라우드 구독을 구입할 수 있나요?
 A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio 구독을 구입할 수 있는 여러 옵션이 있습니다.  [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)에서 자세히 알아보세요.

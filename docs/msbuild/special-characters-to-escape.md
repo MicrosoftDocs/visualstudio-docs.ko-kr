@@ -1,5 +1,7 @@
 ---
 title: 이스케이프할 특수 문자 | Microsoft Docs
+description: 사용되는 컨텍스트에서 특별한 의미가 있는 경우에만 이스케이프해야 하는 특수 문자에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184044"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048267"
 ---
 # <a name="special-characters-to-escape"></a>이스케이프할 특수 문자
 

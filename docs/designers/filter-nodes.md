@@ -1,5 +1,7 @@
 ---
 title: 필터 노드
+description: 셰이더 디자이너에서 색상 또는 질감 샘플 등의 입력을 비유적 색 값으로 변환하는 필터 노드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc74287706976f96a5e565bef3da1493cd44866
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97f81a51248f548ea26283dc193645ff7216eb0f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769273"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134167"
 ---
 # <a name="filter-nodes"></a>필터 노드
 

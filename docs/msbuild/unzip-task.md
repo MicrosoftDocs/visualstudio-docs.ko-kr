@@ -1,5 +1,7 @@
 ---
 title: 작업 압축 풀기 | Microsoft Docs
+description: 지정된 위치에 .zip 보관 파일을 푸는 MSBuild Unzip 작업의 매개 변수 및 사용법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631512"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046901"
 ---
 # <a name="unzip-task"></a>Unzip 작업
 
@@ -40,7 +42,7 @@ ms.locfileid: "77631512"
 
  다음 표에서는 `Unzip` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`DestinationFolder`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수<br /><br /> 파일을 압축 해제할 대상 폴더를 지정합니다.|
 |`OverwriteReadOnlyFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 읽기 전용 파일을 덮어씁니다. 기본값은 `false`입니다.|

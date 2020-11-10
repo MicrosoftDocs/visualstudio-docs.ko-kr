@@ -1,5 +1,7 @@
 ---
 title: UsingTask의 Task 요소(MSBuild) | Microsoft Docs
+description: UsingTask TaskFactory에 전달되는 데이터를 포함하는 MSBuild UsingTask의 Task 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263190"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047895"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>UsingTask의 Task 요소(MSBuild)
 
 `UsingTask` `TaskFactory`에 전달되는 데이터가 들어 있습니다. 자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.
 
- \<Project> \<UsingTask> \<Task>
+ \<Project> \<UsingTask>
  \<Task>
 
 ## <a name="syntax"></a>구문
@@ -42,19 +44,19 @@ ms.locfileid: "78263190"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Evaluate`|선택적 부울 특성입니다.<br /><br /> `true`인 경우, MSBuild는 내부 요소를 평가하고, 작업을 인스턴스화할 때 정보를 `TaskFactory`에 전달하기 전에 항목 및 속성을 확장합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |데이터|`Task` 태그 간에 텍스트는 그대로 `TaskFactory`로 전송됩니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | 설명 |
+| 요소 | Description |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | MSBuild에서 작업을 등록하는 방법을 제공합니다. 프로젝트에는 `UsingTask` 요소가 없을 수도 있고 하나 이상 있을 수 있습니다. |
 
