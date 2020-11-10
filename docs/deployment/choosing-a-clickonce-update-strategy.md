@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383159"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437606"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce 업데이트 전략 선택
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 애플리케이션 자동 업데이트를 제공할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션은 배포 매니페스트 파일을 주기적으로 읽어서 애플리케이션의 업데이트가 사용 가능한지 확인합니다. 사용 가능한 경우 새 버전의 애플리케이션을 다운로드하여 실행합니다. 효율성을 위해 변경된 파일만 다운로드합니다.
@@ -73,6 +73,8 @@ ms.locfileid: "94383159"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> .NET 3.1 이상 응용 프로그램의 경우 응용 프로그램을 시작 하기 전에 업데이트를 확인 하는 것은 유일 하 게 지원 되는 업데이트 옵션입니다.
 
 ## <a name="make-updates-required"></a>업데이트 필요
  사용자가 업데이트된 버전의 애플리케이션을 실행하도록 해야 할 경우가 있습니다. 예를 들어, 이전 버전의 애플리케이션이 올바로 작동하지 않게 하는 웹 서비스 같은 외부 리소스를 변경할 수 있습니다. 이 경우 업데이트를 필수로 표시하여 사용자가 이전 버전을 실행하지 못하도록 합니다.
@@ -119,7 +121,7 @@ ms.locfileid: "94383159"
  신뢰할 수 있는 애플리케이션 배포를 사용할 경우 신뢰 수준에 대한 메시지가 표시되지 않습니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참조
- \<xref:System.Deployment.Application>
+- <xref:System.Deployment.Application>
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)

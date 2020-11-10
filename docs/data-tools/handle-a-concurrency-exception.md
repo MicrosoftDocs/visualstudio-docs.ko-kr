@@ -1,5 +1,7 @@
 ---
 title: 동시성 예외 처리
+description: 두 사용자가 동시에 데이터베이스의 동일한 데이터를 변경 하려고 할 때 발생 하는 동시성 예외 (System.data.dbconcurrencyexception)를 처리 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407668"
+ms.locfileid: "94436448"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -45,7 +47,7 @@ ms.locfileid: "94407668"
 
 7. 오류를 파악 한 다음 레코드의 다른 버전을 표시 하 여 사용자가 계속 해 서 데이터베이스를 업데이트 하거나 업데이트를 취소할지 여부를 결정할 수 있도록 합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 

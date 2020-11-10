@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트 쿼리
+description: 쿼리 데이터 집합을 이해 합니다. 데이터 집합 대/소문자 구분에 대해 알아봅니다. 데이터 테이블에서 특정 행을 찾고, 열 값으로 행을 찾고, 관련 레코드에 액세스 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281866"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436070"
 ---
 # <a name="query-datasets"></a>데이터 세트 쿼리
 데이터 집합에서 특정 레코드를 검색 하려면 DataTable에서 메서드를 사용 하 고 `FindBy` , 테이블의 Rows 컬렉션을 반복 하는 고유한 foreach 문을 작성 하거나, [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)를 사용 합니다.
@@ -70,7 +72,7 @@ ms.locfileid: "85281866"
 > [!NOTE]
 > Windows Forms 응용 프로그램에서 작업 중이 고 데이터 바인딩 기능을 사용 하 여 데이터를 표시 하는 경우 디자이너에서 생성 한 폼을 사용 하면 응용 프로그램에 충분 한 기능을 제공할 수 있습니다. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)을 참조 하세요. 특히 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
 
-다음 코드 예제에서는 형식화 된 데이터 집합에서 위쪽 및 아래쪽 관계를 탐색 하는 방법을 보여 줍니다. 이 코드 예제에서는 형식화 된 <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` )와 생성 된 FindBy*PrimaryKey* () 메서드를 사용 하 여 `FindByCustomerID` 원하는 행을 찾고 관련 레코드를 반환 합니다. 예제는 다음을 수행 하는 경우에만 올바르게 컴파일 및 실행 됩니다.
+다음 코드 예제에서는 형식화 된 데이터 집합에서 위쪽 및 아래쪽 관계를 탐색 하는 방법을 보여 줍니다. 이 코드 예제에서는 형식화 된 <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` )와 생성 된 FindBy *PrimaryKey* () 메서드를 사용 하 여 `FindByCustomerID` 원하는 행을 찾고 관련 레코드를 반환 합니다. 예제는 다음을 수행 하는 경우에만 올바르게 컴파일 및 실행 됩니다.
 
 - 테이블이 포함 된 이라는 데이터 집합의 인스턴스입니다 `NorthwindDataSet` `Customers` .
 
@@ -96,4 +98,4 @@ ms.locfileid: "85281866"
 
 ## <a name="see-also"></a>참조
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

@@ -1,18 +1,20 @@
 ---
 title: 네이티브 권장 규칙 규칙 집합
 ms.date: 11/04/2016
+description: Visual Studio Native 권장 규칙 집합에 대해 알아봅니다. 네이티브 코드의 보안, 견고성 및 기타 중요 한 문제에 대 한 규칙 설명을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600020"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437033"
 ---
 # <a name="native-recommended-rules-rule-set"></a>네이티브 권장 규칙 규칙 집합
 
@@ -38,20 +40,20 @@ ms.locfileid: "89600020"
 |[C6201](/cpp/code-quality/c6201)|인덱스가 스택 버퍼 최대값을 초과함|
 |[C6214](/cpp/code-quality/c6214)|BOOL에 대 한 잘못 된 캐스트 HRESULT|
 |[C6215](/cpp/code-quality/c6215)|HRESULT에 대 한 잘못 된 캐스팅 부울|
-|[C6216](/cpp/code-quality/c6216)|HRESULT에 대 한 잘못 된 컴파일러 삽입 캐스트 BOOL|
+|[C6216](/cpp/code-quality/c6216)|HRESULT에 대 한 BOOL 캐스트 Compiler-Inserted 잘못 되었습니다.|
 |[C6217](/cpp/code-quality/c6217)|NOT을 사용 하는 잘못 된 HRESULT 테스트|
 |[C6220](/cpp/code-quality/c6220)|-1과 비교할 때 잘못 된 HRESULT입니다.|
 |[C6226](/cpp/code-quality/c6226)|-1에 대 한 잘못 된 HRESULT 할당|
 |[C6230](/cpp/code-quality/c6230)|부울로 잘못 된 HRESULT 사용|
-|[C6235](/cpp/code-quality/c6235)|논리 Or를 사용 하는 0이 아닌 상수|
-|[C6236](/cpp/code-quality/c6236)|0이 아닌 상수가 포함 된 논리합|
-|[C6237](/cpp/code-quality/c6237)|0 (논리 포함) 및 부작용 손실|
+|[C6235](/cpp/code-quality/c6235)|Logical-Or를 사용 하는 0이 아닌 상수|
+|[C6236](/cpp/code-quality/c6236)|0이 아닌 상수가 포함 된 Logical-Or|
+|[C6237](/cpp/code-quality/c6237)|Logical-And에서 의도 하지 않은 결과가 손실 되는 경우|
 |[C6242](/cpp/code-quality/c6242)|강제 로컬 해제|
 |[C6248](/cpp/code-quality/c6248)|Null DACL 만들기|
 |[C6250](/cpp/code-quality/c6250)|릴리스되지 않은 주소 설명자|
 |[C6255](/cpp/code-quality/c6255)|Alloca의 보호 되지 않는 사용|
 |[C6258](/cpp/code-quality/c6258)|스레드 종료 사용|
-|[C6259](/cpp/code-quality/c6259)|비트 Or 제한 된 스위치의 비활성 코드|
+|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 제한 된 스위치의 비활성 코드|
 |[C6260](/cpp/code-quality/c6260)|바이트 산술 사용|
 |[C6262](/cpp/code-quality/c6262)|과도 한 스택 사용|
 |[C6263](/cpp/code-quality/c6263)|루프에서 Alloca 사용|
@@ -64,18 +66,18 @@ ms.locfileid: "89600020"
 |[C6274](/cpp/code-quality/c6274)|Format 함수의 비문자 인수|
 |[C6276](/cpp/code-quality/c6276)|잘못된 문자열 캐스팅|
 |[C6277](/cpp/code-quality/c6277)|잘못된 CreateProcess 호출|
-|[C6278](/cpp/code-quality/c6278)|배열-새 스칼라-삭제 불일치|
-|[C6279](/cpp/code-quality/c6279)|스칼라-새 배열-삭제 불일치|
-|[C6280](/cpp/code-quality/c6280)|메모리 할당-할당 해제 불일치|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 불일치|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 불일치|
+|[C6280](/cpp/code-quality/c6280)|메모리 Allocation-Deallocation 불일치|
 |[C6281](/cpp/code-quality/c6281)|비트 관계 우선 순위|
 |[C6282](/cpp/code-quality/c6282)|할당은 테스트를 대체 합니다.|
-|[C6283](/cpp/code-quality/c6283)|기본 배열-새 스칼라-삭제 불일치|
+|[C6283](/cpp/code-quality/c6283)|기본 Array-New Scalar-Delete 일치 하지 않습니다.|
 |[C6284](/cpp/code-quality/c6284)|Format 함수의 개체 인수 잘못됨|
-|[C6285](/cpp/code-quality/c6285)|상수의 논리합|
-|[C6286](/cpp/code-quality/c6286)|0이 아닌 논리 또는 손실 부작용|
+|[C6285](/cpp/code-quality/c6285)|상수 Logical-Or|
+|[C6286](/cpp/code-quality/c6286)|0이 아닌 Logical-Or 부작용이 손실 됩니다.|
 |[C6287](/cpp/code-quality/c6287)|중복 테스트|
-|[C6288](/cpp/code-quality/c6288)|논리적 And를 통한 상호 포함이 False입니다.|
-|[C6289](/cpp/code-quality/c6289)|논리합에 대 한 상호 제외가 True입니다.|
+|[C6288](/cpp/code-quality/c6288)|Logical-And에 대 한 상호 포함이 False입니다.|
+|[C6289](/cpp/code-quality/c6289)|Logical-Or에 대 한 상호 제외가 True입니다.|
 |[C6290](/cpp/code-quality/c6290)|논리 부정 비트 AND 우선 순위|
 |[C6291](/cpp/code-quality/c6291)|논리 부정 비트 OR 우선 순위|
 |[C6292](/cpp/code-quality/c6292)|루프가 최대값부터 위로 계산 됩니다.|
@@ -92,7 +94,7 @@ ms.locfileid: "89600020"
 |[C6308](/cpp/code-quality/c6308)|Realloc 누수|
 |[C6310](/cpp/code-quality/c6310)|잘못 된 예외 필터 상수|
 |[C6312](/cpp/code-quality/c6312)|예외 실행 루프 계속|
-|[C6314](/cpp/code-quality/c6314)|비트 or 우선 순위|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or 우선 순위|
 |[C6317](/cpp/code-quality/c6317)|보완 하지 않음|
 |[C6318](/cpp/code-quality/c6318)|예외 검색 계속|
 |[C6319](/cpp/code-quality/c6319)|쉼표로 무시 됨|
@@ -103,7 +105,7 @@ ms.locfileid: "89600020"
 |[C6333](/cpp/code-quality/c6333)|VirtualFree 잘못 된 크기|
 |[C6335](/cpp/code-quality/c6335)|프로세스 핸들 누수|
 |[C6381](/cpp/code-quality/c6381)|종료 정보 없음|
-|[C6383](/cpp/code-quality/c6383)|요소-카운트 바이트 수 버퍼 오버런|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count 버퍼 오버런|
 |[C6384](/cpp/code-quality/c6384)|포인터 크기 나누기|
 |[C6385](/cpp/code-quality/c6385)|읽기 오버런|
 |[C6386](/cpp/code-quality/c6386)|쓰기 오버런|

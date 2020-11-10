@@ -1,6 +1,8 @@
 ---
 title: 관리 코드에 대한 보안 규칙 규칙 집합
 ms.date: 11/04/2016
+description: Visual Studio 레거시 코드 분석에 대 한 보안 규칙 규칙 집합에 대해 알아봅니다. 잠재적인 보안 문제에 초점을 맞춘 규칙 설명을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f3205bf3c81bbb9dac19c810e3a89a5fcd2227b
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 32237eb1229e28d1077b2eec8586f52151d69c2d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658401"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436955"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>관리 코드에 대한 보안 규칙 규칙 집합
 

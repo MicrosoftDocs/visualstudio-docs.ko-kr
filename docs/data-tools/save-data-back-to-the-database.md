@@ -1,5 +1,7 @@
 ---
 title: 데이터를 다시 데이터베이스에 저장
+description: 데이터 집합 도구를 사용 하 여 데이터를 데이터베이스에 다시 저장 합니다. 데이터 집합은 수정 된 경우 데이터베이스에 다시 저장 해야 하는 데이터의 메모리 내 복사본입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281749"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436057"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 
@@ -41,7 +43,7 @@ Windows Form 또는 XAML 페이지의 컨트롤에 데이터 집합 테이블을
 
 Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직접 이동할 수 있습니다.
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[데이터베이스에 새 레코드 삽입](../data-tools/insert-new-records-into-a-database.md)|Tableadapter 또는 Command 개체를 사용 하 여 업데이트 및 삽입을 수행 하는 방법|
 |[TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)|Tableadapter를 사용 하 여 업데이트를 수행 하는 방법|
@@ -125,7 +127,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 다음 표에서는 열거형의 가능한 값에 대해 자세히 설명 합니다 <xref:System.Data.DataRowState> .
 
-|DataRowState 값|설명|
+|DataRowState 값|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|행이에 항목으로 추가 되었습니다 <xref:System.Data.DataRowCollection> . 이 상태의 행은 마지막 메서드가 호출 될 때 존재 하지 않기 때문에 해당 하는 원래 버전이 없습니다 <xref:System.Data.DataRow.AcceptChanges%2A> .|
 |<xref:System.Data.DataRowState.Deleted>|개체의를 사용 하 여 행을 삭제 했습니다 <xref:System.Data.DataRow.Delete%2A> <xref:System.Data.DataRow> .|
@@ -139,7 +141,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 다음 표에서는 열거형의 가능한 값에 대해 자세히 설명 합니다 <xref:System.Data.DataRowVersion> .
 
-|DataRowVersion 값|설명|
+|DataRowVersion 값|Description|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|레코드의 현재 버전에는를 마지막으로 호출한 이후 레코드에서 수행 된 모든 수정 내용이 포함 됩니다 <xref:System.Data.DataRow.AcceptChanges%2A> . 행이 삭제 된 경우에는 현재 버전이 없습니다.|
 |<xref:System.Data.DataRowVersion.Default>|데이터 집합 스키마 또는 데이터 원본에 의해 정의 된 레코드의 기본값입니다.|
@@ -274,7 +276,7 @@ UPDATE 문에서는 레코드에 기록 될 새 값과 이전 값 (레코드를 
 
 ## <a name="see-also"></a>참조
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [TableAdapter 만들기 및 구성](create-and-configure-tableadapters.md)
 - [TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -18,17 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383198"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437725"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 애플리케이션 빌드
+
 에서 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE (통합 개발 환경)에서 프로젝트를 만든 경우에도 명령줄에서 프로젝트를 빌드할 수 있습니다. 실제로 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] .NET Framework만 설치 된 다른 컴퓨터에서로 만든 프로젝트를 다시 빌드할 수 있습니다. 따라서 자동화 된 프로세스를 사용 하 여 빌드를 재현할 수 있습니다. 예를 들어 중앙 빌드 랩에서 또는 프로젝트 자체 빌드 범위를 벗어나는 고급 스크립팅 기술을 사용할 수 있습니다.
 
-## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>MSBuild를 사용 하 여 ClickOnce 응용 프로그램 배포 재현
+## <a name="use-msbuild-to-reproduce-net-framework-clickonce-application-deployments"></a>MSBuild를 사용 하 여 ClickOnce 응용 프로그램 배포 .NET Framework 재현
+
  명령줄에서 msbuild/target: publish를 호출 하면 MSBuild 시스템에서 프로젝트를 빌드하고 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publish 폴더에 응용 프로그램을 만들도록 지시 합니다. 이는 IDE에서 **게시** 명령을 선택 하는 것과 같습니다.
 
  이 명령은 Visual Studio 명령 프롬프트 환경의 경로에 있는 *msbuild.exe* 를 실행 합니다.
@@ -41,7 +43,7 @@ ms.locfileid: "94383198"
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>MSBuild를 사용 하 여 기본 ClickOnce 응용 프로그램 만들기 및 빌드
 
-#### <a name="to-create-and-publish-a-clickonce-project"></a>ClickOnce 프로젝트를 만들고 게시 하려면
+### <a name="to-create-and-publish-a-clickonce-project"></a>ClickOnce 프로젝트를 만들고 게시 하려면
 
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.
 
@@ -73,15 +75,29 @@ ms.locfileid: "94383198"
 
     이 단계는 선택 사항 이지만, 명령줄 빌드에서 새 파일이 모두 생성 되었는지 확인 합니다.
 
-5. `msbuild /target:publish`.
+5. `msbuild /target:publish`을 입력합니다.
 
    위의 단계를 수행 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publish** 라는 프로젝트의 하위 폴더에 전체 응용 프로그램 배포가 생성 됩니다. *Cmdlinedemo. 응용 프로그램* 은 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 매니페스트입니다. *0.0.0 CmdLineDemo_1* 폴더에는 응용 프로그램 매니페스트 *CmdLineDemo.exe* 및 *CmdLineDemo.exe* 파일이 포함 되어 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Setup.exe* 은 부트스트래퍼로, 기본적으로 .NET Framework를 설치 하도록 구성 되어 있습니다. Dotnetfx.exe 폴더는 .NET Framework에 대 한 재배포 가능 패키지를 포함 합니다. 웹을 통해 또는 UNC 또는 CD/DVD를 통해 응용 프로그램을 배포 하는 데 필요한 전체 파일 집합입니다.
-   
+
 > [!NOTE]
 > MSBuild 시스템은 출력 위치 (예:)를 지정 **하는 데이 옵션을** 사용 합니다 `msbuild /t:publish /p:PublishDir="<specific location>"` .
 
+::: moniker range=">=vs-2019"
+
+## <a name="build-net-clickonce-applications-from-the-command-line"></a>명령줄에서 .NET ClickOnce 응용 프로그램 빌드
+
+명령줄에서 .NET ClickOnce 응용 프로그램을 빌드하는 것은 유사한 환경입니다. 단, MSBuild 명령줄에서 게시 프로필에 대 한 추가 속성을 제공 해야 합니다. 게시 프로필을 만드는 가장 쉬운 방법은 Visual Studio를 사용 하는 것입니다.  자세한 내용은 [ClickOnce를 사용 하 여 .Net Windows 응용 프로그램 배포를](quickstart-deploy-using-clickonce-folder.md) 참조 하세요.
+
+게시 프로필을 만든 후에는 msbuild 명령줄에서 pubxml 파일을 속성으로 제공할 수 있습니다. 예를 들면 다음과 같습니다.
+
+```cmd
+    msbuild /t:publish /p:PublishProfile=<pubxml file> /p:PublishDir="<specific location>"
+```
+::: moniker-end
+
 ## <a name="publish-properties"></a>속성 게시
- 위의 절차에서 응용 프로그램을 게시 하면 게시 마법사에서 다음 속성이 프로젝트 파일에 삽입 됩니다. 이러한 속성은 응용 프로그램을 생성 하는 방법에 직접적인 영향을 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+
+ 위의 절차에서 응용 프로그램을 게시할 때 게시 마법사 또는 .NET Core 3.1 용 게시 프로필 파일 또는 이후 프로젝트에서 다음 속성이 프로젝트 파일에 삽입 됩니다. 이러한 속성은 응용 프로그램을 생성 하는 방법에 직접적인 영향을 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
  *Cmdlinedemo. .vbproj*  /  *cmdlinedemo* :
 
@@ -105,21 +121,36 @@ ms.locfileid: "94383198"
 <BootstrapperEnabled>true</BootstrapperEnabled>
 ```
 
- 이러한 속성은 프로젝트 파일 자체를 변경 하지 않고 명령줄에서 재정의할 수 있습니다. 예를 들어 다음은 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 부트스트래퍼 없이 응용 프로그램 배포를 빌드합니다.
+ .NET Framework 프로젝트의 경우 프로젝트 파일 자체를 변경 하지 않고 명령줄에서 이러한 속성을 재정의할 수 있습니다. 예를 들어 다음은 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 부트스트래퍼 없이 응용 프로그램 배포를 빌드합니다.
 
 ```cmd
 msbuild /target:publish /property:BootstrapperEnabled=false
-```
+ ```
+
+::: moniker range=">=vs-2019"
+.NET Core 3.1 이상에서는 이러한 설정이 pubxml 파일에 제공 됩니다.
 
  게시 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **프로젝트 디자이너** 의 **게시** , **보안** 및 **서명** 속성 페이지에서에 제어 됩니다. 다음은 응용 프로그램 디자이너의 다양 한 속성 페이지에서 각을 설정 하는 방법에 대 한 설명과 함께 게시 속성에 대 한 설명입니다.
 
+> [!NOTE]
+> .NET Windows 데스크톱 프로젝트의 경우 이제 이러한 설정이 게시 마법사에 있습니다.
+::: moniker-end
+
 - `AssemblyOriginatorKeyFile` 응용 프로그램 매니페스트를 서명 하는 데 사용 되는 키 파일을 결정 합니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 동일한 키를 사용 하 여 어셈블리에 강력한 이름을 할당할 수도 있습니다. 이 속성은 **프로젝트 디자이너** 의 **서명** 페이지에서 설정 합니다.
+::: moniker range=">=vs-2019"
+.NET windows 응용 프로그램의 경우이 설정은 프로젝트 파일에 남아 있습니다.
+::: moniker-end
 
   **보안** 페이지에 설정 되는 속성은 다음과 같습니다.
 
 - **ClickOnce 보안 설정 사용** 매니페스트 생성 여부를 결정 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다. 프로젝트를 처음 만들 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 매니페스트 생성은 기본적으로 해제 되어 있습니다. 처음으로 게시 하는 경우 마법사가이 플래그를 자동으로 설정 합니다.
 
 - **Targetzone** 은 응용 프로그램 매니페스트로 내보낼 신뢰 수준을 결정 합니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 가능한 값은 "Internet", "LocalIntranet" 및 "Custom"입니다. 인터넷 및 LocalIntranet를 사용 하면 기본 권한 집합이 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트로 내보내집니다. LocalIntranet은 기본값이 며, 기본적으로 완전 신뢰를 의미 합니다. 사용자 지정 *은 기본 응용 프로그램 매니페스트 파일* 에 명시적으로 지정 된 권한만 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 매니페스트로 내보내도록 지정 합니다. *응용 프로그램 매니페스트* 파일은 신뢰 정보 정의만 포함 하는 부분 매니페스트 파일입니다. 이 파일은 **보안** 페이지에서 권한을 구성할 때 프로젝트에 자동으로 추가 되는 숨겨진 파일입니다.
+-
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> .NET Core 3.1 이상 버전의 Windows 데스크톱 프로젝트에서는 이러한 보안 설정이 지원 되지 않습니다.
+::: moniker-end
 
   **게시** 페이지에 설정 된 속성은 다음과 같습니다.
 
@@ -140,10 +171,18 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - `UpdateEnabled` 응용 프로그램에서 업데이트를 확인 해야 하는지 여부를 나타냅니다.
 
 - `UpdateMode` 포그라운드 업데이트 또는 백그라운드 업데이트를 지정 합니다.
-
+::: moniker range=">=vs-2019"
+   .NET Core 3.1 이상에서는 프로젝트가 지원 되지 않습니다.  
+::: moniker-end
 - `UpdateInterval` 응용 프로그램이 업데이트를 확인 하는 빈도를 지정 합니다.
+::: moniker range=">=vs-2019"
+   .NET Core 3.1 이상에서는이 설정이 지원 되지 않습니다.
+::: moniker-end
 
 - `UpdateIntervalUnits``UpdateInterval`값이 시간, 일 또는 주 단위로 지정 되는지 여부를 지정 합니다.
+::: moniker range=">=vs-2019"
+   .NET Core 3.1 이상에서는이 설정이 지원 되지 않습니다.
+::: moniker-end
 
 - `UpdateUrl` (표시 되지 않음) 응용 프로그램에서 업데이트를 수신 하는 위치입니다. 지정 된 경우이 값은 응용 프로그램 매니페스트에 삽입 됩니다.
 
@@ -160,6 +199,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - `IsWebBootstrapper`*setup.exe* 부트스트래퍼가 웹 또는 디스크 기반 모드에서 작동 하는지 여부를 결정 합니다.
 
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, 및 UpdateURL
+
  다음 표에서는 ClickOnce 배포에 대 한 네 가지 URL 옵션을 보여 줍니다.
 
 |URL 옵션|Description|
@@ -170,6 +210,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |`UpdateURL`|(선택 사항) 업데이트 위치가와 다른 경우이 URL 옵션을 설정 합니다 `InstallURL` . 예를 들어를 `PublishURL` FTP 경로로 설정 하 고을 `UpdateURL` 웹 URL로 설정할 수 있습니다.|
 
 ## <a name="see-also"></a>참조
+
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>

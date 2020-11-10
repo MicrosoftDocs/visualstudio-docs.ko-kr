@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트 도구
+description: Visual Studio에서 사용할 수 있는 데이터 집합 도구를 검토 합니다. 데이터 집합 워크플로, 데이터 집합 및 N 계층 아키텍처, 데이터 집합 및 XML에 대해 읽어 보세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586720"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436487"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio의 데이터 세트 도구
 
@@ -77,7 +79,7 @@ Visual Studio는 데이터 집합 작업을 간소화 하는 도구를 제공 �
 
   - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-  - [데이터 집합의 데이터 편집](../data-tools/edit-data-in-datasets.md)
+  - [데이터 세트의 데이터 편집](../data-tools/edit-data-in-datasets.md)
 
   - [데이터 세트의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)
 
@@ -95,6 +97,6 @@ N 계층 응용 프로그램의 데이터 집합에 대 한 자세한 내용은 
 
 데이터 집합을 XML로 변환 하는 방법에 대 한 자세한 내용은 [xml 데이터를 데이터 집합으로 읽어](../data-tools/read-xml-data-into-a-dataset.md) 데이터 집합을 [xml로 저장](../data-tools/save-a-dataset-as-xml.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

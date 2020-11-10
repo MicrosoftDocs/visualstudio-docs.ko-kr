@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 변수 디자이너 사용'
+description: 변수 디자이너를 사용 하 여 데이터 바인딩 시나리오 및 조건문에 사용할 변수를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817413"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437829"
 ---
 # <a name="how-to-use-the-variable-designer"></a>방법: 변수 디자이너 사용
 
@@ -31,12 +33,12 @@ ms.locfileid: "85817413"
 
 3. 디자인 캔버스의 왼쪽 아래 모퉁이에 있는 **변수** 단추를 클릭 하 여 변수 디자이너를 엽니다. 변수 디자이너가 나타납니다.
 
-4. **변수 만들기**라는 빈 행을 클릭 합니다. 그러면 다음 기본값을 사용 하 여 새 변수를 사용 하 여 새 행을 **추가 합니다. 여기서 x** 는 초기 값이 1 인 정수입니다. 여기서 x는 고유 변수 이름, **변수 형식**에 대 한 문자열, **범위** **에 대 한** **문자열** 을 만들기 위해 자동으로 증가 하는 정수 variablex. **기본값**에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
+4. **변수 만들기** 라는 빈 행을 클릭 합니다. 그러면 다음 기본값을 사용 하 여 새 변수를 사용 하 여 새 행을 **추가 합니다. 여기서 x** 는 초기 값이 1 인 정수입니다. 여기서 x는 고유 변수 이름, **변수 형식** 에 대 한 문자열, **범위** **에 대 한** **문자열** 을 만들기 위해 자동으로 증가 하는 정수 variablex. **기본값** 에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
 
     > [!NOTE]
     > 변수를 삭제 하려면 변수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
 - [변수 및 인수](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

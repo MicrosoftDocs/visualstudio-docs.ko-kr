@@ -1,5 +1,7 @@
 ---
 title: WPF 애플리케이션에서 조회 테이블 만들기
+description: WPF 앱에서 조회 테이블을 만듭니다. 조회 테이블은 다른 테이블의 외래 키 필드 값을 기반으로 데이터 테이블의 정보를 표시 하는 컨트롤입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282620"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436695"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
 
-용어 *조회 테이블* ( *조회 바인딩*이라고 함)은 다른 테이블의 외래 키 필드 값을 기반으로 한 데이터 테이블의 정보를 표시 하는 컨트롤을 설명 합니다. **데이터 소스** 창에서 부모 테이블 또는 개체의 주 노드를 관련 자식 테이블의 열 또는 속성에 이미 바인딩된 컨트롤로 끌어 조회 테이블을 만들 수 있습니다.
+용어 *조회 테이블* ( *조회 바인딩* 이라고 함)은 다른 테이블의 외래 키 필드 값을 기반으로 한 데이터 테이블의 정보를 표시 하는 컨트롤을 설명 합니다. **데이터 소스** 창에서 부모 테이블 또는 개체의 주 노드를 관련 자식 테이블의 열 또는 속성에 이미 바인딩된 컨트롤로 끌어 조회 테이블을 만들 수 있습니다.
 
 예를 들어 sales 데이터베이스의 테이블을 생각해 보겠습니다 `Orders` . 테이블의 각 레코드에 `Orders` 는 `CustomerID` 주문에 배치 된 고객을 나타내는가 포함 됩니다. 는 `CustomerID` 테이블의 고객 레코드를 가리키는 외래 키입니다 `Customers` . 테이블의 주문 목록을 표시 하는 경우 `Orders` 대신 실제 고객 이름을 표시 하는 것이 좋습니다 `CustomerID` . 고객 이름이 테이블에 있으므로 `Customers` 고객 이름을 표시 하는 조회 테이블을 만들어야 합니다. 조회 테이블은 레코드의 값을 사용 하 여 `CustomerID` `Orders` 관계를 탐색 하 고 고객 이름을 반환 합니다.
 
@@ -42,18 +44,18 @@ ms.locfileid: "85282620"
     > [!NOTE]
     > 조회 테이블을 만들려면 먼저 두 개의 관련 테이블이 나 개체가 프로젝트의 데이터 원본으로 존재 해야 합니다.
 
-2. **WPF 디자이너**를 열고 디자이너에 **데이터 소스** 창의 항목에 대 한 유효한 놓기 대상인 컨테이너가 포함 되어 있는지 확인 합니다.
+2. **WPF 디자이너** 를 열고 디자이너에 **데이터 소스** 창의 항목에 대 한 유효한 놓기 대상인 컨테이너가 포함 되어 있는지 확인 합니다.
 
      유효한 놓기 대상에 대 한 자세한 내용은 [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)을 참조 하세요.
 
-3. **데이터** 메뉴에서 **데이터 원본 표시**를 클릭하여 **데이터 원본** 창을 엽니다.
+3. **데이터** 메뉴에서 **데이터 원본 표시** 를 클릭하여 **데이터 원본** 창을 엽니다.
 
 4. 부모 테이블이 나 개체 및 관련 자식 테이블이 나 개체를 볼 수 있을 때까지 **데이터 소스** 창에서 노드를 확장 합니다.
 
     > [!NOTE]
     > 관련 자식 테이블이 나 개체는 부모 테이블이 나 개체 아래에 확장 가능한 자식 노드로 표시 되는 노드입니다.
 
-5. 자식 노드에 대 한 드롭다운 메뉴를 클릭 하 고 **세부 정보**를 선택 합니다.
+5. 자식 노드에 대 한 드롭다운 메뉴를 클릭 하 고 **세부 정보** 를 선택 합니다.
 
 6. 자식 노드를 확장 합니다.
 
@@ -61,7 +63,7 @@ ms.locfileid: "85282620"
 
     - **ComboBox**
 
-    - **상자가**
+    - **ListBox**
 
     - **ListView**
 
@@ -88,7 +90,7 @@ ms.locfileid: "85282620"
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio는이 속성을 디자이너로 끌어 온 자식 데이터의 열 또는 속성에 바인딩합니다. 부모 데이터의 외래 키입니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio는 부모 데이터의 외래 키인 자식 데이터의 열 또는 속성 경로에이 속성을 설정 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)

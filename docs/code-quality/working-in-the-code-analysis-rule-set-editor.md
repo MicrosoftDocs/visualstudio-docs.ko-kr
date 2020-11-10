@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 규칙 집합 편집기 사용
 ms.date: 04/04/2018
+description: Visual Studio에서 규칙 집합을 편집 하 고 보는 방법에 대해 알아봅니다. 규칙 심각도를 설정 하 고, 사용자 지정 집합에서 규칙을 지정 하 고, 규칙 집합 표에서 데이터를 조정 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659181"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436825"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -26,10 +28,10 @@ ms.locfileid: "91659181"
 |작업 (심각도)|Description|
 |-|-|
 |경고|**오류 목록** 및 빌드 시에 경고를 생성 합니다.|
-|Error|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
-|정보|**오류 목록**에서 메시지를 생성 합니다.|
+|오류|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
+|정보|**오류 목록** 에서 메시지를 생성 합니다.|
 |숨김|위반은 사용자에 게 표시 되지 않습니다. 그러나 IDE에 위반에 대 한 알림이 표시 됩니다.|
-|없음|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
+|None|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
 
 사용자가 지정한 규칙 집합 필드를 기준으로 규칙을 그룹화 하는 트리 구조의 규칙이 편집기에 표시 됩니다. 규칙 집합에서 규칙을 추가 하거나 제거 하려면 다음 단계 중 하나 이상을 수행 합니다.
 
@@ -74,7 +76,7 @@ ms.locfileid: "91659181"
 |**이름**|규칙의 제목입니다.|
 |**Namespace**|규칙의 네임 스페이스입니다.|
 |**대상 유형**|기본, 관리 또는 데이터베이스 코드에 대 한 규칙 인지 여부를 나타냅니다.|
-|**동작**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
+|**작업**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
 |**원본 규칙 집합**|규칙을 포함 하는 규칙 집합입니다.|
 
 ## <a name="sort-and-filter-rule-sets"></a>규칙 집합 정렬 및 필터링

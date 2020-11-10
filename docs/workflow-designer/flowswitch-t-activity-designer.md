@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너 FlowSwitch &lt; T &gt; 활동 디자이너
+description: FlowSwitch <T> 활동이 일치 조건에 따라 제어 흐름에 대 한 분기를 제공 하는 조건부 노드인 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711575"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435797"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T> 활동 디자이너
 
@@ -30,24 +32,24 @@ ms.locfileid: "88711575"
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>FlowSwitch \<T> 활동 디자이너 사용
 
-** \<T> FlowSwitch** 활동 디자이너는 **도구 상자**의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X**를 누릅니다.
+**\<T> FlowSwitch** 활동 디자이너는 **도구 상자** 의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X** 를 누릅니다.
 
-**FlowSwitch \<T> ** 활동 디자이너를 **도구 상자** 에서 끌어다 **순서도** 활동 디자이너 내의 워크플로 디자이너 화면에 놓을 수 있습니다. 를 평가 하 여 얻은 형식 (제네릭 매개 변수를 사용 하 여 코드에 연결 됨)을 지정 하려면 표시 되는 **형식 선택** 창을 사용 합니다 <xref:System.Activities.Statements.FlowSwitch%601> <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . 이 프로시저는 <xref:System.Activities.Statements.FlowSwitch%601> 활동 내에서 **Switch** 라는 활동을 만듭니다 <xref:System.Activities.Statements.Flowchart> . <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>"VB 식 입력" 이라는 힌트 텍스트가 표시 되는 위치를 클릭 하 여 **속성** 창의 **식** 상자에를 입력할 수 있습니다.
+**FlowSwitch \<T>** 활동 디자이너를 **도구 상자** 에서 끌어다 **순서도** 활동 디자이너 내의 워크플로 디자이너 화면에 놓을 수 있습니다. 를 평가 하 여 얻은 형식 (제네릭 매개 변수를 사용 하 여 코드에 연결 됨)을 지정 하려면 표시 되는 **형식 선택** 창을 사용 합니다 <xref:System.Activities.Statements.FlowSwitch%601> <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . 이 프로시저는 <xref:System.Activities.Statements.FlowSwitch%601> 활동 내에서 **Switch** 라는 활동을 만듭니다 <xref:System.Activities.Statements.Flowchart> . <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>"VB 식 입력" 이라는 힌트 텍스트가 표시 되는 위치를 클릭 하 여 **속성** 창의 **식** 상자에를 입력할 수 있습니다.
 
-**FlowSwitch \<T> ** 활동 디자이너 위로 마우스를 가져가면 연결 하는 데 사용 되는 사각형 핸들이 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 가장자리 주위에 표시 됩니다. **FlowSwitch<T \> ** 활동 디자이너와 기타 활동 디자이너를 **순서도**로 끌어 오면 표시 되는 <xref:System.Activities.Activity> 개체를 함께 연결 하 여 실행 순서를 지정할 수 있습니다. 와 연결 된 중 하나를 만들려면 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> <xref:System.Activities.Statements.FlowSwitch%601> ** \><FlowSwitch** 의 경계에 있는 square case 핸들 중 하나를 클릭 하 고 마우스 단추를 누른 상태에서 마우스 단추를 누른 상태에서 해당 디자이너 위로 마우스를 가져가면 대상 활동 주변에 비슷한 방식으로 표시 되는 핸들 중 하나로 끕니다. 마우스 단추를 놓으면 **FlowSwitch<T \> ** 의 화살표가이 사례를 나타내는 대상 디자이너에 표시 됩니다. 이 경우의 기본값은 화살표에 표시 되며 **속성** 창의 **case** 상자에서 편집할 수 있습니다.
+**FlowSwitch \<T>** 활동 디자이너 위로 마우스를 가져가면 연결 하는 데 사용 되는 사각형 핸들이 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 가장자리 주위에 표시 됩니다. **FlowSwitch<T \>** 활동 디자이너와 기타 활동 디자이너를 **순서도** 로 끌어 오면 표시 되는 <xref:System.Activities.Activity> 개체를 함께 연결 하 여 실행 순서를 지정할 수 있습니다. 와 연결 된 중 하나를 만들려면 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> <xref:System.Activities.Statements.FlowSwitch%601> **\><FlowSwitch** 의 경계에 있는 square case 핸들 중 하나를 클릭 하 고 마우스 단추를 누른 상태에서 마우스 단추를 누른 상태에서 해당 디자이너 위로 마우스를 가져가면 대상 활동 주변에 비슷한 방식으로 표시 되는 핸들 중 하나로 끕니다. 마우스 단추를 놓으면 **FlowSwitch<T \>** 의 화살표가이 사례를 나타내는 대상 디자이너에 표시 됩니다. 이 경우의 기본값은 화살표에 표시 되며 **속성** 창의 **case** 상자에서 편집할 수 있습니다.
 
 ### <a name="the-flowswitcht-properties"></a>FlowSwitch \<T> 속성
 
 다음 표에서는 <xref:System.Activities.Statements.FlowSwitch%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용량|
+|속성 이름|필수|사용|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|실행 경로에서 전환할 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>를 결정하기 위해 계산할 식을 지정합니다.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 계산으로 얻은 가능한 결과와 <xref:System.Activities.Statements.FlowNode> 개체 집합 간의 고유 매핑을 지정합니다.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 계산이 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 개체에 포함된 값 중 하나와 일치하지 않을 경우의 매핑을 지정합니다.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|참|실행 경로에서 전환할 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>를 결정하기 위해 계산할 식을 지정합니다.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|거짓|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 계산으로 얻은 가능한 결과와 <xref:System.Activities.Statements.FlowNode> 개체 집합 간의 고유 매핑을 지정합니다.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|참|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 계산이 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 개체에 포함된 값 중 하나와 일치하지 않을 경우의 매핑을 지정합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
-- [순서도](../workflow-designer/flowchart-activity-designers.md)
-- [순서도](../workflow-designer/flowchart-activity-designer.md)
+- [Flowchart](../workflow-designer/flowchart-activity-designers.md)
+- [Flowchart](../workflow-designer/flowchart-activity-designer.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

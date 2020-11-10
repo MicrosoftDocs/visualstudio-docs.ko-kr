@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너: 바로 가기 키'
+description: Visual Studio에서 워크플로 디자이너 탐색 하기 위해 키보드에 입력할 수 있는 다양 한 명령을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b2db8eb0bd2f85a052c9c172b33b179382d168
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115390"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437653"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 
@@ -29,7 +31,7 @@ Visual Studio 내에서 전역 바로 가기 및 디버깅 바로 가기는 워�
 
 다음 표에서는 워크플로 디자이너 명령에 할당 된 기본 바로 가기 키를 요약 합니다.
 
-|바로 가기|목적|
+|바로 가기|용도|
 |-|-------------|
 |Ctrl+E, A|인수 디자이너를 표시하거나 숨깁니다.|
 |Ctrl+E, C|현재 위치에서 선택한 활동을 축소합니다.|
@@ -45,7 +47,7 @@ Visual Studio 내에서 전역 바로 가기 및 디버깅 바로 가기는 워�
 |Ctrl+E, X|워크플로의 모든 활동을 확장합니다.|
 |Ctrl+Alt+F6|키보드 포커스를 현재 UI 영역에서 시퀀스의 다음 영역으로 이동합니다. 순서는 다음과 같습니다.<br /><br /> 1. 탐색 모음 탐색 모음<br />2. 디자이너 화면<br />3. 인수/변수/열린 경우 디자이너 가져오기<br />4. 셸|
 
-### <a name="flowchart"></a>순서도
+### <a name="flowchart"></a>Flowchart
 
 다음 목록은 키보드로 순서도를 구성하는 데 사용되는 제스처를 보여 줍니다. 워크플로 디자이너의 나머지 부분에서와 같이 Visual Studio와 함께 제공 되는 전역 도구 상자 바로 가기를 사용 하 여 디자이너 화면에 활동을 추가 합니다.
 

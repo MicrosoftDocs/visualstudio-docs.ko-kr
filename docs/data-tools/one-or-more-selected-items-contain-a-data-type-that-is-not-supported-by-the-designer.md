@@ -1,6 +1,6 @@
 ---
 title: 지원되지 않는 데이터 형식
-description: 선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
+description: 선택한 하나 이상의 항목에 디자이너에서 지원 하지 않는 데이터 형식이 포함 되어 있습니다. 이 Visual Studio O/R 디자이너 메시지에 대 한 정보를 봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034080"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436135"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
 
-O/ **r** 디자이너에서 **서버 탐색기** 또는 **데이터베이스 탐색기** 끌어온 항목 중 하나 이상이 **o/r 디자이너**에서 지원 하지 않는 데이터 형식 (예: [CLR 사용자 정의 형식)](/dotnet/framework/data/adonet/sql/clr-user-defined-types)을 포함 합니다.
+O/ **r** 디자이너에서 **서버 탐색기** 또는 **데이터베이스 탐색기** 끌어온 항목 중 하나 이상이 **o/r 디자이너** 에서 지원 하지 않는 데이터 형식 (예: [CLR 사용자 정의 형식)](/dotnet/framework/data/adonet/sql/clr-user-defined-types)을 포함 합니다.
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
@@ -27,6 +27,6 @@ O/ **r** 디자이너에서 **서버 탐색기** 또는 **데이터베이스 탐
 
 2. **서버 탐색기** 또는 **데이터베이스 탐색기** 디자이너에서 뷰를 끌어 놓습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,7 @@
 ---
 title: 데이터베이스에 새 레코드 삽입
+description: Tableadapter의 DBDirect 메서드 또는 명령 개체 중 하나인 TableAdapter. Update 메서드를 사용 하 여 데이터베이스에 새 레코드를 삽입 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281996"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436278"
 ---
 # <a name="insert-new-records-into-a-database"></a>데이터베이스에 새 레코드 삽입
 
@@ -84,6 +86,6 @@ Tableadapter는 응용 프로그램의 요구 사항에 따라 데이터베이�
 
 연결 하려는 데이터베이스에 대 한 액세스 권한과 원하는 테이블에 대 한 삽입을 수행할 수 있는 권한이 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

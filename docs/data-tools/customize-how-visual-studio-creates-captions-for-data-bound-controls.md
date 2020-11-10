@@ -1,5 +1,7 @@
 ---
 title: 데이터 바인딩된 컨트롤에 대 한 캡션 사용자 지정
+description: Visual Studio에서 데이터 바인딩된 컨트롤에 대 한 캡션을 만드는 방법을 사용자 지정 합니다. 데이터 소스 창의 스마트 캡션 동작을 수정 합니다. 스마트 캡션을 해제 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282581"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436630"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
 
@@ -26,13 +28,13 @@ ms.locfileid: "85282581"
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER \Software\microsoft\visualstudio\15.0\data designer** 레지스트리 키에서 **Smartcaptionexpression**, **Smartcaptionexpression**및 **smartcaptionexpression** 값을 설정 하 여 이러한 레이블이 생성 되는 방식을 사용자 지정할 수 있습니다.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression** , smartcaptionexpression 및 smartcaptionexpression 값 **SmartCaptionReplacement** 을 설정 하 여 이러한 레이블이 **SmartCaptionSuffix** 생성 되는 방식을 사용자 지정할 수 있습니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER \Software\microsoft\visualstudio\16.0\data designer** 레지스트리 키에서 **Smartcaptionexpression**, **Smartcaptionexpression**및 **smartcaptionexpression** 값을 설정 하 여 이러한 레이블이 생성 되는 방식을 사용자 지정할 수 있습니다.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression** , smartcaptionexpression 및 smartcaptionexpression 값 **SmartCaptionReplacement** 을 설정 하 여 이러한 레이블이 **SmartCaptionSuffix** 생성 되는 방식을 사용자 지정할 수 있습니다.
 
 ::: moniker-end
 
@@ -43,10 +45,10 @@ ms.locfileid: "85282581"
 
 다음 표에서는 캡션 레이블을 제어 하는 레지스트리 값에 대해 설명 합니다.
 
-|레지스트리 항목|설명|
+|레지스트리 항목|Description|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|패턴을 일치 시키기 위해 사용 하는 정규식입니다.|
-|**SmartCaptionReplacement**|**Smartcaptionexpression**에 일치 하는 그룹을 표시 하는 형식입니다.|
+|**SmartCaptionReplacement**|**Smartcaptionexpression** 에 일치 하는 그룹을 표시 하는 형식입니다.|
 |**SmartCaptionSuffix**|캡션의 끝에 추가할 선택적 문자열입니다.|
 
 다음 표에서는 이러한 레지스트리 값에 대 한 내부 기본 설정을 나열 합니다.
@@ -64,9 +66,9 @@ ms.locfileid: "85282581"
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>데이터 소스 창의 스마트 캡션 동작 수정
 
-1. **시작** 을 클릭 한 다음 **실행**을 클릭 하 여 명령 창을 엽니다.
+1. **시작** 을 클릭 한 다음 **실행** 을 클릭 하 여 명령 창을 엽니다.
 
-2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인**을 클릭 합니다.
+2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인** 을 클릭 합니다.
 
 3. **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** 노드를 확장 합니다.
 
@@ -88,15 +90,15 @@ ms.locfileid: "85282581"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **Smartcaptionexpression** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
+6. **Smartcaptionexpression** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정** 을 선택 합니다.
 
 7. **데이터 소스** 창에서 사용 하려는 정규식을 입력 합니다.
 
-8. **Smartcaptionreplacement** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
+8. **Smartcaptionreplacement** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정** 을 선택 합니다.
 
 9. 정규식에서 일치 하는 패턴을 표시 하려는 방식으로 형식이 지정 된 대체 문자열을 입력 합니다.
 
-10. **Smartcaptionsuffix** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
+10. **Smartcaptionsuffix** 값을 마우스 오른쪽 단추로 클릭 하 고 **수정** 을 선택 합니다.
 
 11. 캡션의 끝에 표시할 문자를 입력 합니다.
 
@@ -104,9 +106,9 @@ ms.locfileid: "85282581"
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>스마트 캡션 기능 해제
 
-1. **시작** 을 클릭 한 다음 **실행**을 클릭 하 여 명령 창을 엽니다.
+1. **시작** 을 클릭 한 다음 **실행** 을 클릭 하 여 명령 창을 엽니다.
 
-2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인**을 클릭 합니다.
+2. `regedit` **실행** 대화 상자에를 입력 하 고 **확인** 을 클릭 합니다.
 
 3. **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** 노드를 확장 합니다.
 
@@ -128,16 +130,16 @@ ms.locfileid: "85282581"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **Smartcaptionexpression** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
+6. **Smartcaptionexpression** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정** 을 선택 합니다.
 
 7. `(.*)`값으로을 입력 합니다. 그러면 전체 문자열이 일치 합니다.
 
-8. **Smartcaptionreplacement** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정**을 선택 합니다.
+8. **Smartcaptionreplacement** 항목을 마우스 오른쪽 단추로 클릭 하 고 **수정** 을 선택 합니다.
 
 9. `$1`값으로을 입력 합니다. 이렇게 하면 문자열을 일치 하는 값으로 대체 하 여 변경 되지 않은 상태로 유지 되도록 전체 문자열을 대체 합니다.
 
     다음 번에 **데이터 소스** 창에서 항목을 끌면 수정 되지 않은 캡션으로 캡션 레이블이 생성 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

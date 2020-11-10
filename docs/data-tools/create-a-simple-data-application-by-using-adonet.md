@@ -1,5 +1,6 @@
 ---
 title: ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
+description: Visual Studio에서 Windows Forms 및 ADO.NET를 사용 하 여 간단한 폼-데이터 응용 프로그램을 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037434"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436799"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -44,15 +45,15 @@ ms.locfileid: "90037434"
 
 1. Visual Studio에서 **서버 탐색기** 창을 엽니다.
 
-2. **데이터 연결** 을 마우스 오른쪽 단추로 클릭 하 고 **새 SQL Server 데이터베이스 만들기**를 선택 합니다.
+2. **데이터 연결** 을 마우스 오른쪽 단추로 클릭 하 고 **새 SQL Server 데이터베이스 만들기** 를 선택 합니다.
 
-3. **서버 이름** 텍스트 상자에 **(localdb) \mssqllocaldb**를 입력 합니다.
+3. **서버 이름** 텍스트 상자에 **(localdb) \mssqllocaldb** 를 입력 합니다.
 
-4. **새 데이터베이스 이름** 텍스트 상자에 **Sales**를 입력 한 다음 **확인**을 선택 합니다.
+4. **새 데이터베이스 이름** 텍스트 상자에 **Sales** 를 입력 한 다음 **확인** 을 선택 합니다.
 
      빈 **Sales** 데이터베이스가 만들어지고 서버 탐색기의 데이터 연결 노드에 추가 됩니다.
 
-5. **Sales** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리**를 선택 합니다.
+5. **Sales** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리** 를 선택 합니다.
 
      쿼리 편집기 창이 열립니다.
 
@@ -64,9 +65,9 @@ ms.locfileid: "90037434"
 
 ## <a name="create-the-forms-and-add-controls"></a>폼 만들기 및 컨트롤 추가
 
-1. Windows Forms 애플리케이션의 프로젝트를 만든 다음, 이름을 **SimpleDataApp**으로 지정합니다.
+1. Windows Forms 애플리케이션의 프로젝트를 만든 다음, 이름을 **SimpleDataApp** 으로 지정합니다.
 
-    Visual Studio에서는 프로젝트와 **Form1**이라는 빈 Windows 양식을 포함한 여러 파일을 만듭니다.
+    Visual Studio에서는 프로젝트와 **Form1** 이라는 빈 Windows 양식을 포함한 여러 파일을 만듭니다.
 
 2. 프로젝트에 두 개의 Windows 양식을 추가하여 총 세 개의 양식을 만든 다음, 다음 이름을 지정합니다.
 
@@ -123,16 +124,16 @@ ms.locfileid: "90037434"
 ## <a name="store-the-connection-string"></a>연결 문자열 저장
 애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 *App.config* 파일에 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
 
-**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl** + **A**, **ctrl** + **C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
+**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl** + **A** , **ctrl** + **C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
 
-1. C #을 사용 하는 경우 **솔루션 탐색기**에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
-    Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **모든 파일 표시**를 클릭 하 고 **내 프로젝트** 노드를 확장 한 다음 **설정** 파일을 엽니다.
+1. C #을 사용 하는 경우 **솔루션 탐색기** 에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
+    Visual Basic를 사용 하는 경우 **솔루션 탐색기** 에서 **모든 파일 표시** 를 클릭 하 고 **내 프로젝트** 노드를 확장 한 다음 **설정** 파일을 엽니다.
 
 2. **이름** 열에을 입력 `connString` 합니다.
 
 3. **유형** 목록에서 **(연결 문자열)** 을 선택 합니다.
 
-4. **범위** 목록에서 **응용 프로그램**을 선택 합니다.
+4. **범위** 목록에서 **응용 프로그램** 을 선택 합니다.
 
 5. **값** 열에 외부 따옴표 없이 연결 문자열을 입력 한 다음 변경 내용을 저장 합니다.
 
@@ -149,9 +150,9 @@ ms.locfileid: "90037434"
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Navigation 폼을 시작 폼으로 만들기
 
-C#을 사용하는 경우 **솔루션 탐색기**에서 **Program.cs**를 연 다음, `Application.Run` 줄을 `Application.Run(new Navigation());`으로 변경합니다.
+C#을 사용하는 경우 **솔루션 탐색기** 에서 **Program.cs** 를 연 다음, `Application.Run` 줄을 `Application.Run(new Navigation());`으로 변경합니다.
 
-Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **속성** 창을 열고 **응용 프로그램** 탭을 선택한 후 **시작 폼** 목록에서 **simpledataapp.navigation** 를 선택 합니다.
+Visual Basic를 사용 하는 경우 **솔루션 탐색기** 에서 **속성** 창을 열고 **응용 프로그램** 탭을 선택한 후 **시작 폼** 목록에서 **simpledataapp.navigation** 를 선택 합니다.
 
 #### <a name="create-auto-generated-event-handlers"></a>자동 생성 된 이벤트 처리기 만들기
 

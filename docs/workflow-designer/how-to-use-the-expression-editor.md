@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 식 편집기 사용'
+description: 식 편집기가 여러 워크플로 활동에서 식을 입력 하 고 계산 하는 데 사용할 수 있는 워크플로 디자이너 컨트롤인 경우를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817439"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437855"
 ---
 # <a name="how-to-use-the-expression-editor"></a>방법: 식 편집기 사용
 
 식 편집기는 식을 입력 하 고 계산 하기 위해 많은 워크플로 활동에서 사용 되는 워크플로 디자이너 컨트롤입니다. 식 편집기는 IntelliSense, 색 지정, ParamInfo, 오류 물결선 등의 모든 기능을 갖춘 IDE 편집 환경을 제공 합니다. 컴파일러는 입력 된 식의 유효성을 검사 합니다. 식이 잘못된 경우 오류 아이콘이 표시됩니다. 편집기를 **식 편집기** 대화 상자로 열 수도 있습니다.
 
-식이란 인수나 속성에 바인딩된 Visual Basic 코드 또는 리터럴 값입니다. 여기에는 새 값을 생성 하는 작업과 결합 된 값 요소 (예: 변수, 상수, 리터럴, 속성)가 포함 됩니다. 애플리케이션이 C#을 사용하는 프로그램에 있는 경우에도 식은 VB.NET 구문으로 작성됩니다. 즉, 대문자는 중요 하지 않습니다. 단일 등호 ("= =" 대신 "=")를 사용 하 여 비교를 수행 하 고, 부울 연산자는 "&&" 및 "| |" 기호 대신 "and" 및 "or" 단어를 사용 하 고 **null**대신 **아무 것도** 사용 하지 않습니다. Visual Basic의 식 및 연산자에 대 한 자세한 내용 및 일부 샘플은 [Visual Basic의 연산자 및 식](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))을 참조 하세요.
+식이란 인수나 속성에 바인딩된 Visual Basic 코드 또는 리터럴 값입니다. 여기에는 새 값을 생성 하는 작업과 결합 된 값 요소 (예: 변수, 상수, 리터럴, 속성)가 포함 됩니다. 애플리케이션이 C#을 사용하는 프로그램에 있는 경우에도 식은 VB.NET 구문으로 작성됩니다. 즉, 대문자는 중요 하지 않습니다. 단일 등호 ("= =" 대신 "=")를 사용 하 여 비교를 수행 하 고, 부울 연산자는 "&&" 및 "| |" 기호 대신 "and" 및 "or" 단어를 사용 하 고 **null** 대신 **아무 것도** 사용 하지 않습니다. Visual Basic의 식 및 연산자에 대 한 자세한 내용 및 일부 샘플은 [Visual Basic의 연산자 및 식](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))을 참조 하세요.
 
 **식 편집기** 는 다음과 같이 동작 합니다.
 
@@ -53,6 +55,6 @@ ms.locfileid: "85817439"
 
      식을 입력 하거나 편집 하는 다른 방법은 속성 표에서 속성 이름 옆에 있는 줄임표를 클릭 하는 것입니다. 줄임표를 선택 하면 **식 편집기** 가 대화 상자로 열립니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

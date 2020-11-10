@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: Imports 디자이너 사용'
+description: Imports designer를 사용 하 여 식에서 사용할 형식의 네임 스페이스를 입력 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817426"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437842"
 ---
 # <a name="how-to-use-the-imports-designer"></a>방법: 가져오기 디자이너 사용
 
 가져오기 디자이너를 사용하여 식에서 사용할 형식의 네임스페이스를 입력할 수 있습니다. Imports 디자이너에서 네임 스페이스를 지정 **하 여 Visual Basic** 및 c #에서 키워드를 가져오거나 **사용 하** 는 것과 마찬가지로, imports 디자이너에서 네임 스페이스를 지정 하면 정규화 된 버전 형식 이름이 아니라 식에 형식 이름을 입력할 수 있습니다.
 
-가져오기 디자이너에는 UI의 변경 내용과 워크플로 저장 시 변경 내용이 모두 적용됩니다. 워크플로가 저장되면 가져오기 디자이너에 네임스페이스를 자동으로 추가할 수 있습니다. 여기에는 다음과 같은 옵션이 포함됩니다.
+가져오기 디자이너에는 UI의 변경 내용과 워크플로 저장 시 변경 내용이 모두 적용됩니다. 워크플로가 저장되면 가져오기 디자이너에 네임스페이스를 자동으로 추가할 수 있습니다. 이러한 요구 사항은 다음과 같습니다.
 
 - 변수 및 인수 선언에 사용된 형식의 네임스페이스
 

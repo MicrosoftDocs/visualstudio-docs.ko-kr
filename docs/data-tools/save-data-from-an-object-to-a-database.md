@@ -1,5 +1,7 @@
 ---
 title: 개체에서 데이터베이스로 데이터 저장
+description: Visual Studio의 데이터 집합 도구를 사용 하 여 개체의 데이터를 데이터베이스에 저장 합니다. 새 레코드를 저장 하 고, 기존 레코드를 업데이트 하 고, 기존 레코드를 삭제 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281658"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436021"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
 
@@ -33,7 +35,7 @@ ms.locfileid: "85281658"
 > [!NOTE]
 > TableAdapter를 구성 하는 경우 주 쿼리는 생성 되는 메서드에 대 한 충분 한 정보를 제공 해야 합니다 `DBDirect` . 예를 들어 기본 키 열이 정의 되지 않은 테이블의 데이터를 쿼리하도록 TableAdapter가 구성 된 경우에는 메서드를 생성 하지 않습니다 `DBDirect` .
 
-|TableAdapter DBDirect 메서드|설명|
+|TableAdapter DBDirect 메서드|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|데이터베이스에 새 레코드를 추가 하 고 개별 열 값을 메서드 매개 변수로 전달할 수 있도록 합니다.|
 |`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. `Update`메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> `TableAdapter.Update`메서드는 <xref:System.Data.DataSet> ,, <xref:System.Data.DataTable> <xref:System.Data.DataRow> 또는의 배열을 <xref:System.Data.DataRow> 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|

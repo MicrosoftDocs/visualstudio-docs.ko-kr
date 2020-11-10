@@ -1,5 +1,7 @@
 ---
 title: Entity Framework 도구
+description: Visual Studio의 Entity Framework Tools을 이해 합니다. Entity Framework Tools는 EF (Entity Framework) 응용 프로그램을 빌드하는 데 도움이 되도록 설계 되었습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916730"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436643"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio의 Entity Framework Tools
 
@@ -30,9 +32,9 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
 
 다음은 Visual Studio에서 Entity Framework 도구를 구성 하는 특정 도구입니다.
 
-- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 디자이너** (**Entity Designer**)를 사용 하 여 엔터티, 연결, 매핑 및 상속 관계를 시각적으로 만들고 수정할 수 있습니다. 또한 **Entity Designer** 는 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 개체 계층 코드를 생성 합니다.
+- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 디자이너** ( **Entity Designer** )를 사용 하 여 엔터티, 연결, 매핑 및 상속 관계를 시각적으로 만들고 수정할 수 있습니다. 또한 **Entity Designer** 는 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 개체 계층 코드를 생성 합니다.
 
-- ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 마법사** 를 사용 하 여 기존 데이터베이스에서 개념적 모델을 생성 하 고 응용 프로그램에 데이터베이스 연결 정보를 추가할 수 있습니다.
+- **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 마법사** 를 사용 하 여 기존 데이터베이스에서 개념적 모델을 생성 하 고 응용 프로그램에 데이터베이스 연결 정보를 추가할 수 있습니다.
 
 - **데이터베이스 만들기 마법사** 를 사용 하 여 먼저 개념적 모델을 만든 다음 모델을 지 원하는 데이터베이스를 만들 수 있습니다.
 
@@ -47,13 +49,13 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
 
 ## <a name="related-topics"></a>관련 항목
 
-| 제목 | 설명 |
+| 제목 | Description |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 에서 제공 하는 도구를 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] . |
 | [엔터티 데이터 모델](/dotnet/framework/data/adonet/entity-data-model) | 에서 빌드된 응용 프로그램에서 사용 하는 데이터 작업을 위한 링크와 정보를 제공 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 합니다. |
 | [Entity Framework (EF) 설명서)](/ef/ef6/get-started) | Entity Framework를 최대한 활용 하는 데 도움이 되는 비디오, 자습서 및 고급 설명서의 인덱스를 제공 합니다. |
 | [ASP.NET 5 응용 프로그램을 새 데이터베이스로](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Entity Framework 7을 사용 하 여 새 ASP.NET 5 응용 프로그램을 만드는 방법을 설명 합니다. |
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,5 +1,7 @@
 ---
 title: TableAdapters를 사용하여 데이터 세트 채우기
+description: Tableadapter를 사용 하 여 데이터 집합을 채웁니다. TableAdapter 구성 요소는 하나 이상의 쿼리나 지정 된 저장 프로시저를 기반으로 DB의 데이터로 데이터 집합을 채웁니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282438"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436461"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
 
@@ -35,7 +37,7 @@ TableAdapter 구성 요소는 지정 된 하나 이상의 쿼리나 저장 프�
 
 TableAdapter 작업에 대 한 자세한 내용은 다음 항목 중 하나를 직접 건너뛸 수 있습니다.
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[TableAdapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)|디자이너를 사용 하 여 Tableadapter를 만들고 구성 하는 방법|
 |[매개 변수가 있는 TableAdapter 쿼리 만들기](../data-tools/create-parameterized-tableadapter-queries.md)|사용자가 TableAdapter 프로시저 또는 쿼리에 인수를 제공할 수 있게 하는 방법|
@@ -52,7 +54,7 @@ Tableadapter는 데이터베이스에 연결 하 고, 쿼리 또는 저장 프�
 
 ![클라이언트 애플리케이션의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter는 **데이터 세트 디자이너**를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들면 다음과 같습니다.
+Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -63,7 +65,7 @@ TableAdapter를 만들 때 초기 쿼리 또는 저장 프로시저를 사용 �
 
 ## <a name="tableadapter-update-commands"></a>TableAdapter update 명령
 
-TableAdapter의 업데이트 기능은 **Tableadapter 마법사**의 주 쿼리에서 사용할 수 있는 정보의 양에 따라 달라 집니다. 예를 들어를 사용 하 여 여러 테이블에서 값을 인출 하도록 구성 된 Tableadapter, `JOIN` 스칼라 값, 뷰 또는 집계 함수의 결과는 처음에 업데이트를 기본 데이터베이스로 다시 보내는 기능을 사용 하 여 생성 되지 않습니다. 그러나 `INSERT` `UPDATE` `DELETE` **속성** 창에서, 및 명령을 수동으로 구성할 수 있습니다.
+TableAdapter의 업데이트 기능은 **Tableadapter 마법사** 의 주 쿼리에서 사용할 수 있는 정보의 양에 따라 달라 집니다. 예를 들어를 사용 하 여 여러 테이블에서 값을 인출 하도록 구성 된 Tableadapter, `JOIN` 스칼라 값, 뷰 또는 집계 함수의 결과는 처음에 업데이트를 기본 데이터베이스로 다시 보내는 기능을 사용 하 여 생성 되지 않습니다. 그러나 `INSERT` `UPDATE` `DELETE` **속성** 창에서, 및 명령을 수동으로 구성할 수 있습니다.
 
 ## <a name="tableadapter-queries"></a>TableAdapter 쿼리
 
@@ -81,15 +83,15 @@ TableAdapter의 데이터 테이블과 동일한 스키마의 데이터를 반�
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter 상속
 
-Tableadapter는 구성 된 클래스를 캡슐화 하 여 표준 데이터 어댑터의 기능을 확장 합니다 <xref:System.Data.Common.DataAdapter> . 기본적으로 TableAdapter는 클래스에서 상속 <xref:System.ComponentModel.Component> 되며 클래스로 캐스팅할 수 없습니다 <xref:System.Data.Common.DataAdapter> . TableAdapter를 클래스로 캐스팅 하면 <xref:System.Data.Common.DataAdapter> <xref:System.InvalidCastException> 오류가 발생 합니다. TableAdapter의 기본 클래스를 변경 하려면 <xref:System.ComponentModel.Component> **데이터 세트 디자이너**Tableadapter의 **기본 클래스** 속성에서 파생 되는 클래스를 지정할 수 있습니다.
+Tableadapter는 구성 된 클래스를 캡슐화 하 여 표준 데이터 어댑터의 기능을 확장 합니다 <xref:System.Data.Common.DataAdapter> . 기본적으로 TableAdapter는 클래스에서 상속 <xref:System.ComponentModel.Component> 되며 클래스로 캐스팅할 수 없습니다 <xref:System.Data.Common.DataAdapter> . TableAdapter를 클래스로 캐스팅 하면 <xref:System.Data.Common.DataAdapter> <xref:System.InvalidCastException> 오류가 발생 합니다. TableAdapter의 기본 클래스를 변경 하려면 <xref:System.ComponentModel.Component> **데이터 세트 디자이너** Tableadapter의 **기본 클래스** 속성에서 파생 되는 클래스를 지정할 수 있습니다.
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 메서드 및 속성
 
-TableAdapter 클래스는 .NET 형식이 아닙니다. 즉, 설명서 나 **개체 브라우저**에서 볼 수 없습니다. 앞에서 언급 한 마법사 중 하나를 사용 하는 경우 디자인 타임에 만들어집니다. TableAdapter를 만들 때 TableAdapter에 할당 되는 이름은 작업 중인 테이블의 이름을 기준으로 합니다. 예를 들어 라는 데이터베이스의 테이블을 기반으로 TableAdapter를 만들 경우 `Orders` tableadapter의 이름은 `OrdersTableAdapter` 입니다. TableAdapter의 클래스 이름은 **데이터 세트 디자이너**의 **name** 속성을 사용 하 여 변경할 수 있습니다.
+TableAdapter 클래스는 .NET 형식이 아닙니다. 즉, 설명서 나 **개체 브라우저** 에서 볼 수 없습니다. 앞에서 언급 한 마법사 중 하나를 사용 하는 경우 디자인 타임에 만들어집니다. TableAdapter를 만들 때 TableAdapter에 할당 되는 이름은 작업 중인 테이블의 이름을 기준으로 합니다. 예를 들어 라는 데이터베이스의 테이블을 기반으로 TableAdapter를 만들 경우 `Orders` tableadapter의 이름은 `OrdersTableAdapter` 입니다. TableAdapter의 클래스 이름은 **데이터 세트 디자이너** 의 **name** 속성을 사용 하 여 변경할 수 있습니다.
 
 Tableadapter의 일반적으로 사용 되는 메서드와 속성은 다음과 같습니다.
 
-|멤버|설명|
+|멤버|Description|
 |------------|-----------------|
 |`TableAdapter.Fill`|Tableadapter의 연결 된 데이터 테이블을 TableAdapter 명령의 결과로 채웁니다 `SELECT` .|
 |`TableAdapter.Update`|변경 내용을 데이터베이스에 다시 보내고 업데이트의 영향을 받는 행 수를 나타내는 정수를 반환 합니다. 자세한 내용은 [TableAdapter를 사용 하 여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)를 참조 하세요.|
@@ -99,7 +101,7 @@ Tableadapter의 일반적으로 사용 되는 메서드와 속성은 다음과 �
 
 ## <a name="tableadapter-update-method"></a>TableAdapter update 메서드
 
-Tableadapter는 데이터 명령을 사용 하 여 데이터베이스에 대 한 읽기 및 쓰기를 합니다. TableAdapter의 초기 `Fill` (주) 쿼리를 연결 된 데이터 테이블의 스키마를 만드는 기준으로 사용 하 고 `InsertCommand` `UpdateCommand` 메서드와 연결 된, 및 명령을 사용 합니다 `DeleteCommand` `TableAdapter.Update` . Tableadapter의 메서드를 호출 하면 tableadapter `Update` **쿼리 구성 마법사**를 사용 하 여 추가한 추가 쿼리 중 하나가 아니라 tableadapter를 원래 구성할 때 생성 된 문이 실행 됩니다.
+Tableadapter는 데이터 명령을 사용 하 여 데이터베이스에 대 한 읽기 및 쓰기를 합니다. TableAdapter의 초기 `Fill` (주) 쿼리를 연결 된 데이터 테이블의 스키마를 만드는 기준으로 사용 하 고 `InsertCommand` `UpdateCommand` 메서드와 연결 된, 및 명령을 사용 합니다 `DeleteCommand` `TableAdapter.Update` . Tableadapter의 메서드를 호출 하면 tableadapter `Update` **쿼리 구성 마법사** 를 사용 하 여 추가한 추가 쿼리 중 하나가 아니라 tableadapter를 원래 구성할 때 생성 된 문이 실행 됩니다.
 
 TableAdapter를 사용 하는 경우 일반적으로 수행 하는 명령을 사용 하 여 동일한 작업을 효율적으로 수행 합니다. 예를 들어 어댑터의 메서드를 호출 하 `Fill` 는 경우 어댑터는 해당 속성에서 data 명령을 실행 하 `SelectCommand` 고 데이터 판독기 (예:)를 사용 <xref:System.Data.SqlClient.SqlDataReader> 하 여 결과 집합을 데이터 테이블로 로드 합니다. 마찬가지로 어댑터의 메서드를 호출 하는 경우 `Update` `UpdateCommand` `InsertCommand` `DeleteCommand` 데이터 테이블에서 변경 된 각 레코드에 대해, 및 속성에서 적절 한 명령을 실행 합니다.
 
@@ -126,17 +128,17 @@ TableAdapterManager 클래스는 .NET 형식이 아닙니다. 따라서 설명�
 
 다음은 클래스의 자주 사용 되는 메서드와 속성입니다 `TableAdapterManager` .
 
-|멤버|설명|
+|멤버|Description|
 |------------|-----------------|
 |`UpdateAll` 메서드|모든 데이터 테이블의 모든 데이터를 저장 합니다.|
 |`BackUpDataSetBeforeUpdate` 속성|메서드를 실행 하기 전에 데이터 집합의 백업 복사본을 만들지 여부를 결정 합니다 `TableAdapterManager.UpdateAll` . 부울.|
 |*tableName* `TableAdapter` 속성|TableAdapter를 나타냅니다. 생성 된 TableAdapterManager는 관리 하는 각 it에 대 한 속성을 포함 합니다 `TableAdapter` . 예를 들어 Customers 및 Orders 테이블이 포함 된 데이터 집합은 및 속성을 포함 하는 TableAdapterManager를 사용 하 여 생성 `CustomersTableAdapter` `OrdersTableAdapter` 됩니다.|
-|`UpdateOrder` 속성|개별 insert, update 및 delete 명령의 순서를 제어 합니다. 열거형의 값 중 하나로 설정 `TableAdapterManager.UpdateOrderOption` 합니다.<br /><br /> 기본적으로은 `UpdateOrder` **Insertupdatedelete**로 설정 됩니다. 즉, 데이터 집합의 모든 테이블에 대 한 삽입, 업데이트 및 삭제 작업이 수행 됩니다.|
+|`UpdateOrder` 속성|개별 insert, update 및 delete 명령의 순서를 제어 합니다. 열거형의 값 중 하나로 설정 `TableAdapterManager.UpdateOrderOption` 합니다.<br /><br /> 기본적으로은 `UpdateOrder` **Insertupdatedelete** 로 설정 됩니다. 즉, 데이터 집합의 모든 테이블에 대 한 삽입, 업데이트 및 삭제 작업이 수행 됩니다.|
 
 ## <a name="security"></a>보안
 
 CommandType 속성이로 설정 된 데이터 명령을 사용 하는 경우 <xref:System.Data.CommandType.Text> 클라이언트에서 전송 된 정보를 데이터베이스에 전달 하기 전에 신중 하 게 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 사용자 입력을 데이터베이스로 전송 하기 전에 항상 정보가 유효한 지 확인 하십시오. 가능 하면 매개 변수가 있는 쿼리나 저장 프로시저를 항상 사용 하는 것이 가장 좋습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
