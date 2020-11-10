@@ -1,5 +1,7 @@
 ---
 title: Windows Forms 애플리케이션에서 데이터 필터링 및 정렬
+description: Windows Forms 응용 프로그램에서 데이터를 필터링 하 고 정렬 합니다. 필터 속성을 원하는 레코드를 반환 하는 문자열 식으로 설정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 076ec70fa3a2aed3ddc65d0a4b50272c824a1cfb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282386"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435067"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Windows Forms 애플리케이션에서 데이터 필터링 및 정렬
 
@@ -49,6 +51,6 @@ ms.locfileid: "85282386"
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: 계층적 업데이트
+description: 참조 무결성 규칙을 유지 하면서 업데이트 된 데이터 (2 + 관련 테이블이 포함 된 데이터 집합에서)를 다시 DB로 저장 하는 계층적 업데이트를 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586577"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435158"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 
@@ -34,17 +36,17 @@ ms.locfileid: "75586577"
 
 계층적 업데이트 기능은를 사용 하 여 `TableAdapterManager` 형식화 된 `TableAdapter` 데이터 집합의를 관리 합니다. `TableAdapterManager`구성 요소는 .net 형식이 아닌 Visual Studio에서 생성 된 클래스입니다. **데이터 소스** 창에서 Windows FORM 또는 WPF 페이지로 테이블을 끌어 오면 Visual Studio에서 TableAdapterManager 형식의 변수를 폼 이나 페이지에 추가 하 고 디자이너의 구성 요소 트레이에 표시 합니다. 클래스에 대 한 자세한 내용은 `TableAdapterManager` [Tableadapter](../data-tools/create-and-configure-tableadapters.md)의 TableAdapterManager 참조 섹션을 참조 하세요.
 
-기본적으로 데이터 집합은 관련 테이블을 "관계 전용"으로 처리 합니다. 즉, foreign key 제약 조건을 적용 하지 않습니다. **데이터 세트 디자이너**를 사용 하 여 디자인 타임에 해당 설정을 수정할 수 있습니다. 두 테이블 간의 관계 선을 선택 하 여 **관계** 대화 상자를 표시 합니다. 여기에서 변경한 내용에 따라 `TableAdapterManager` 관련 테이블의 변경 내용을 데이터베이스에 다시 보낼 때가 동작 하는 방식이 결정 됩니다.
+기본적으로 데이터 집합은 관련 테이블을 "관계 전용"으로 처리 합니다. 즉, foreign key 제약 조건을 적용 하지 않습니다. **데이터 세트 디자이너** 를 사용 하 여 디자인 타임에 해당 설정을 수정할 수 있습니다. 두 테이블 간의 관계 선을 선택 하 여 **관계** 대화 상자를 표시 합니다. 여기에서 변경한 내용에 따라 `TableAdapterManager` 관련 테이블의 변경 내용을 데이터베이스에 다시 보낼 때가 동작 하는 방식이 결정 됩니다.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>데이터 집합에서 계층적 업데이트를 사용 하도록 설정
 
-기본적으로 계층적 업데이트는 프로젝트에서 추가 되거나 만들어진 모든 새 데이터 집합에 대해 사용 하도록 설정 됩니다. 데이터 집합에서 형식화 된 데이터 집합의 **계층적 업데이트** 속성을 **True** 또는 **False**로 설정 하 여 계층적 업데이트를 설정 하거나 해제 합니다.
+기본적으로 계층적 업데이트는 프로젝트에서 추가 되거나 만들어진 모든 새 데이터 집합에 대해 사용 하도록 설정 됩니다. 데이터 집합에서 형식화 된 데이터 집합의 **계층적 업데이트** 속성을 **True** 또는 **False** 로 설정 하 여 계층적 업데이트를 설정 하거나 해제 합니다.
 
 ![계층적 업데이트 설정](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>테이블 간에 새 관계 만들기
 
-두 테이블 간에 새 관계를 만들려면 데이터 세트 디자이너에서 각 테이블의 제목 표시줄을 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **관계 추가**를 선택 합니다.
+두 테이블 간에 새 관계를 만들려면 데이터 세트 디자이너에서 각 테이블의 제목 표시줄을 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **관계 추가** 를 선택 합니다.
 
 ![계층 구조 업데이트 관계 추가 메뉴](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -87,7 +89,7 @@ ms.locfileid: "75586577"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>저장 전에 관련 테이블로 변경 내용을 커밋하도록 코드를 업데이트하려면
 
-1. <xref:System.Windows.Forms.BindingNavigator>에서 **저장** 단추를 두 번 클릭하여 코드 편집기에서 **Form1**을 엽니다.
+1. <xref:System.Windows.Forms.BindingNavigator>에서 **저장** 단추를 두 번 클릭하여 코드 편집기에서 **Form1** 을 엽니다.
 
 2. `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. **저장** 단추 클릭 이벤트 내의 코드는 다음과 같습니다.
 
@@ -118,13 +120,13 @@ ms.locfileid: "75586577"
 
 다음은 클래스의 자주 사용 되는 메서드와 속성입니다 `TableAdapterManager` .
 
-|멤버|설명|
+|멤버|Description|
 |------------|-----------------|
 |`UpdateAll` 메서드|모든 데이터 테이블의 모든 데이터를 저장 합니다.|
 |`BackUpDataSetBeforeUpdate` 속성|메서드를 실행 하기 전에 데이터 집합의 백업 복사본을 만들지 여부를 결정 합니다 `TableAdapterManager.UpdateAll` . 부울.|
 |*tableName* `TableAdapter` 속성|를 나타냅니다 `TableAdapter` . 생성 된에는 `TableAdapterManager` 관리 하는 각 클래스에 대 한 속성이 포함 `TableAdapter` 됩니다. 예를 들어 Customers 및 Orders 테이블이 포함 된 데이터 집합은 `TableAdapterManager` 및 속성이 포함 된를 사용 하 여 생성 됩니다 `CustomersTableAdapter` `OrdersTableAdapter` .|
-|`UpdateOrder` 속성|개별 insert, update 및 delete 명령의 순서를 제어 합니다. 열거형의 값 중 하나로 설정 `TableAdapterManager.UpdateOrderOption` 합니다.<br /><br /> 기본적으로은 `UpdateOrder` **Insertupdatedelete**로 설정 됩니다. 즉, 데이터 집합의 모든 테이블에 대 한 삽입, 업데이트 및 삭제 작업이 수행 됩니다.|
+|`UpdateOrder` 속성|개별 insert, update 및 delete 명령의 순서를 제어 합니다. 열거형의 값 중 하나로 설정 `TableAdapterManager.UpdateOrderOption` 합니다.<br /><br /> 기본적으로은 `UpdateOrder` **Insertupdatedelete** 로 설정 됩니다. 즉, 데이터 집합의 모든 테이블에 대 한 삽입, 업데이트 및 삭제 작업이 수행 됩니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

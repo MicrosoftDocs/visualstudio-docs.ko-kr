@@ -1,6 +1,8 @@
 ---
 title: IDE 또는 명령줄에서 코드 메트릭 생성
 ms.date: 11/02/2018
+description: Visual Studio에서 코드 메트릭 데이터를 생성 하는 방법에 대해 알아봅니다. 솔루션 탐색기, 규칙 집합 파일, 명령줄 또는 메뉴 명령을 사용 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658531"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434794"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -24,7 +26,7 @@ ms.locfileid: "91658531"
 
 - [.Net 코드 품질 분석기](#net-code-quality-analyzers-code-metrics-rules) 를 사용 하도록 설정 하 고 여기에 포함 된 4 개의 코드 메트릭 (유지 관리) 규칙을 사용 하도록 설정 합니다.
 
-- Visual Studio 내에서 [ **분석**  >  **코드 메트릭 계산** ](#calculate-code-metrics-menu-command) 메뉴 명령을 선택 합니다.
+- Visual Studio 내에서 [ **분석**  >  **코드 메트릭 계산**](#calculate-code-metrics-menu-command) 메뉴 명령을 선택 합니다.
 
 - C# 및 Visual Basic 프로젝트에 대한 [명령줄](#command-line-code-metrics)에서
 
@@ -52,7 +54,7 @@ ms.locfileid: "91658531"
 
 코드 메트릭 규칙이 발생 하는 임계값을 구성할 수 있습니다.
 
-1. 텍스트 파일을 만듭니다. 예를 들어 *CodeMetricsConfig.txt*이름을 지정할 수 있습니다.
+1. 텍스트 파일을 만듭니다. 예를 들어 *CodeMetricsConfig.txt* 이름을 지정할 수 있습니다.
 
 2. 다음 형식으로 텍스트 파일에 원하는 임계값을 추가 합니다.
 
@@ -78,9 +80,9 @@ ms.locfileid: "91658531"
 
 다음 방법 중 하나를 통해 전체 솔루션에 대 한 코드 메트릭 결과를 생성할 수 있습니다.
 
-- 메뉴 모음에서 **분석**에서  >  솔루션에 대 한**코드 메트릭 계산**을 선택  >  **For Solution**합니다.
+- 메뉴 모음에서 **분석** 에서  >  솔루션에 대 한 **코드 메트릭 계산** 을 선택  >  **For Solution** 합니다.
 
-- **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산**을 선택 합니다.
+- **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산** 을 선택 합니다.
 
 - **코드 메트릭 결과** 창에서 **솔루션에 대 한 코드 메트릭 계산** 단추를 선택 합니다.
 
@@ -88,11 +90,11 @@ ms.locfileid: "91658531"
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>하나 이상의 프로젝트에 대 한 코드 메트릭 결과 생성
 
-1. **솔루션 탐색기**에서 하나 이상의 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 하나 이상의 프로젝트를 선택 합니다.
 
-1. 메뉴 모음에서 **분석**  >  **Calculate Code Metrics**  >  **선택한 프로젝트에 대 한**코드 메트릭 계산을 선택 합니다.
+1. 메뉴 모음에서 **분석**  >  **Calculate Code Metrics**  >  **선택한 프로젝트에 대 한** 코드 메트릭 계산을 선택 합니다.
 
-결과가 생성 되 고 **코드 메트릭 결과** 창이 표시 됩니다. 결과 세부 정보를 보려면 **계층 구조**에서 트리를 확장 합니다.
+결과가 생성 되 고 **코드 메트릭 결과** 창이 표시 됩니다. 결과 세부 정보를 보려면 **계층 구조** 에서 트리를 확장 합니다.
 
 ::: moniker range="vs-2017"
 
@@ -282,7 +284,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 1. [Dotnet/roslyn](https://github.com/dotnet/roslyn-analyzers) 리포지토리를 복제 합니다.
 2. 관리자 권한으로 Visual Studio에 대 한 개발자 명령 프롬프트를 엽니다.
 3. **Roslyn-분석기** 리포지토리의 루트에서 다음 명령을 실행 합니다.`Restore.cmd`
-4. 디렉터리를 *src\Tools*로 변경 합니다.
+4. 디렉터리를 *src\Tools* 로 변경 합니다.
 5. 다음 명령을 실행 하 여 **메트릭의 .csproj** 프로젝트를 빌드합니다.
 
    ```shell
@@ -293,7 +295,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 사용
 
-*Metrics.exe*를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면 다음과 같습니다.
+*Metrics.exe* 를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -305,7 +307,7 @@ Completed Successfully.
 
 #### <a name="legacy-mode"></a>레거시 모드
 
-*레거시 모드*에서 *Metrics.exe* 빌드를 선택할 수 있습니다. 도구의 레거시 모드 버전은 [이전 버전의 도구에서 생성](#previous-versions)된 것과 더 가까운 메트릭 값을 생성 합니다. 또한 레거시 모드에서는 이전 버전의 도구에서 코드 메트릭을 생성 한 것과 동일한 메서드 형식 집합에 대 한 코드 메트릭을 생성 *Metrics.exe* 합니다. 예를 들어 필드 및 속성 이니셜라이저의 코드 메트릭 데이터를 생성 하지 않습니다. 레거시 모드는 이전 버전과의 호환성을 위해 또는 코드 메트릭 번호를 기반으로 하는 코드 체크 인 게이트를 사용 하는 경우에 유용 합니다. 레거시 모드에서 *Metrics.exe* 를 빌드하는 명령은 다음과 같습니다.
+*레거시 모드* 에서 *Metrics.exe* 빌드를 선택할 수 있습니다. 도구의 레거시 모드 버전은 [이전 버전의 도구에서 생성](#previous-versions)된 것과 더 가까운 메트릭 값을 생성 합니다. 또한 레거시 모드에서는 이전 버전의 도구에서 코드 메트릭을 생성 한 것과 동일한 메서드 형식 집합에 대 한 코드 메트릭을 생성 *Metrics.exe* 합니다. 예를 들어 필드 및 속성 이니셜라이저의 코드 메트릭 데이터를 생성 하지 않습니다. 레거시 모드는 이전 버전과의 호환성을 위해 또는 코드 메트릭 번호를 기반으로 하는 코드 체크 인 게이트를 사용 하는 경우에 유용 합니다. 레거시 모드에서 *Metrics.exe* 를 빌드하는 명령은 다음과 같습니다.
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
@@ -316,11 +318,11 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ### <a name="previous-versions"></a>이전 버전
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015에는 *Metrics.exe*라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 최신 버전의 *Metrics.exe* 도구는 소스 코드를 대신 분석 합니다. 최신 *Metrics.exe* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE와 이전 버전의 *Metrics.exe*에 의해 생성 된 것과 다를 수 있습니다. Visual Studio 2019부터 Visual Studio IDE는 명령줄 도구와 같은 소스 코드를 분석 하 고 결과는 동일 해야 합니다.
+Visual Studio 2015에는 *Metrics.exe* 라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 최신 버전의 *Metrics.exe* 도구는 소스 코드를 대신 분석 합니다. 최신 *Metrics.exe* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE와 이전 버전의 *Metrics.exe* 에 의해 생성 된 것과 다를 수 있습니다. Visual Studio 2019부터 Visual Studio IDE는 명령줄 도구와 같은 소스 코드를 분석 하 고 결과는 동일 해야 합니다.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015에는 *Metrics.exe*라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 새 *Metrics.exe* 도구는 대신 소스 코드를 분석 합니다. 새 *Metrics.exe* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE와 이전 버전의 *Metrics.exe*에 의해 생성 된 것과 다릅니다.
+Visual Studio 2015에는 *Metrics.exe* 라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 새 *Metrics.exe* 도구는 대신 소스 코드를 분석 합니다. 새 *Metrics.exe* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE와 이전 버전의 *Metrics.exe* 에 의해 생성 된 것과 다릅니다.
 ::: moniker-end
 
 새 명령줄 코드 메트릭 도구는 솔루션과 프로젝트를 로드할 수 있는 한 소스 코드 오류가 있는 경우에도 메트릭을 계산 합니다.
@@ -334,7 +336,7 @@ Visual Studio 2019 버전 16.4 및 메트릭 (2.9.5)에서 시작 `SourceLines` 
 `LinesOfCode`메트릭은 새 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
 ::: moniker-end
 
-및와 같은 기타 `CyclomaticComplexity` 메트릭은 `MaintainabilityIndex` 이전 버전의 *Metrics.exe*와 같은 수식을 사용 하지만 새 도구는 `IOperations` IL (중간 언어) 명령 대신 (논리적 원본 명령)의 수를 계산 합니다. Visual Studio IDE와 이전 버전의 *Metrics.exe*에 의해 생성 되는 숫자는 약간 다릅니다.
+및와 같은 기타 `CyclomaticComplexity` 메트릭은 `MaintainabilityIndex` 이전 버전의 *Metrics.exe* 와 같은 수식을 사용 하지만 새 도구는 `IOperations` IL (중간 언어) 명령 대신 (논리적 원본 명령)의 수를 계산 합니다. Visual Studio IDE와 이전 버전의 *Metrics.exe* 에 의해 생성 되는 숫자는 약간 다릅니다.
 
 ## <a name="see-also"></a>참조
 

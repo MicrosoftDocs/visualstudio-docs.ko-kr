@@ -1,6 +1,8 @@
 ---
 title: 생성 된 코드에 대 한 코드 분석 위반 표시 안 함
 ms.date: 05/13/2019
+description: 생성 된 코드에 대 한 코드 분석 경고를 표시 하지 않는 방법에 대해 알아봅니다. Visual Studio에서 생성 된 코드에 대 한 레거시 분석 경고를 표시 하지 않도록 하는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371809"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435549"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함
 
@@ -26,7 +28,7 @@ ms.locfileid: "85371809"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>프로젝트에서 생성 된 코드에 대 한 경고를 표시 하지 않으려면
 
-1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
 2. **코드 분석** 탭을 선택 합니다.
 

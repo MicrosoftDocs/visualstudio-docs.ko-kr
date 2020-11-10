@@ -1,5 +1,7 @@
 ---
 title: TableAdapter를 사용하여 데이터베이스에 직접 액세스
+description: Insert, Update 및 Delete와 같은 메서드를 사용 하 여 데이터베이스에서 직접 데이터를 조작 하는 TableAdapter를 사용 하 여 데이터베이스에 직접 액세스 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebf6233116c62ee1e25e2bef0ab4d80bdec029b7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282568"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435184"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter를 사용하여 데이터베이스에 직접 액세스
 
@@ -70,6 +72,6 @@ ms.locfileid: "85282568"
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

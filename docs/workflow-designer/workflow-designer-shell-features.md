@@ -1,5 +1,7 @@
 ---
 title: Workflow Designer 셸 기능
+description: 워크플로 디자이너 Shell 기능에 현재 보기를 관리 하기 위한 다양 한 단추가 포함 되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6b192eae3340c6a3d84bb3ccbcce7cbf8d65b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239a879fbffe67bf54149ba29e98edcd3428410d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816386"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433650"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow Designer 셸 기능
 
@@ -33,7 +35,7 @@ ms.locfileid: "85816386"
 ## <a name="copying-or-saving-workflows-as-images"></a>워크플로를 이미지로 복사 또는 저장
  워크플로를 비트맵 형식으로 복사하거나 비트맵 또는 벡터 형식으로 저장할 수 있습니다. 이미지를 복사하거나 저장하면 모든 자식과 확장된 자식을 포함하여 현재의 경로 탐색 루트의 전체 활동에 대한 뷰를 다른 프로그램으로 내보낼 수 있습니다.
 
- 이미지로 복사 하려면 디자이너의 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **이미지로 복사**를 선택 합니다. 이미지로 저장 하려면 디자이너의 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **이미지로 저장**을 선택 합니다. 워크플로는 JPG, PNG, GIF 또는 XPS 형식으로 저장할 수 있습니다. 형식은 창 맨 아래에 있는 **파일 형식:** 드롭다운 목록 상자의 다른 이름 **으로 저장** 대화 상자에서 선택 됩니다.
+ 이미지로 복사 하려면 디자이너의 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **이미지로 복사** 를 선택 합니다. 이미지로 저장 하려면 디자이너의 아무 곳 이나 마우스 오른쪽 단추로 클릭 하 고 **이미지로 저장** 을 선택 합니다. 워크플로는 JPG, PNG, GIF 또는 XPS 형식으로 저장할 수 있습니다. 형식은 창 맨 아래에 있는 **파일 형식:** 드롭다운 목록 상자의 다른 이름 **으로 저장** 대화 상자에서 선택 됩니다.
 
 ## <a name="fonts-and-colors"></a>글꼴 및 색
 

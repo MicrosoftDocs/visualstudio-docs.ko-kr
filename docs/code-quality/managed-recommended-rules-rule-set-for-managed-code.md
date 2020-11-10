@@ -1,6 +1,8 @@
 ---
 title: 관리 코드에 대한 관리 권장 규칙 규칙 집합
 ms.date: 11/04/2016
+description: Visual Studio에서 관리 권장 규칙 규칙 집합에 대해 알아봅니다. 보안, 견고성 및 기타 중요 한 문제에 초점을 맞춘 규칙에 대 한 설명을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 30874b00f7bca4d66a60e359445c28be686d3269
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658492"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435367"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 권장 규칙 규칙 집합
 

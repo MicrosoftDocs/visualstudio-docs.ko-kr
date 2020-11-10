@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너 형식 컬렉션 편집기 대화 상자
+description: 형식 컬렉션 편집기 대화 상자를 사용 하 여 송신 및 수신 작업에 알려진 형식을 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,22 +12,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e58655f9baf91766fc9b8ff15afe708f1069a565
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593059"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433676"
 ---
 # <a name="type-collection-editor-dialog-box"></a>형식 컬렉션 편집기 대화 상자
 
-**형식 컬렉션 편집기** 대화 상자는 **보내기** 및 **받기** 작업에 알려진 형식을 추가 하는 데 사용 됩니다. 이 대화 상자는 **InvokeMethod** 활동에 제네릭 형식 인수를 추가 하는 데도 사용 됩니다. **보내기** 및 **받기** 작업에서 알려진 형식을 추가 하는 데 사용 하는 경우 **형식 컬렉션 편집기** 대화 상자에서 고유한 형식을 추가 해야 합니다. 중복 형식을 추가 하 고 **확인**을 클릭 하 여 변경 내용을 커밋하는 경우 오류 메시지가 반환 됩니다. **InvokeMethod** 활동을 사용 하 여 제네릭 형식 인수를 추가 하는 경우 **형식 컬렉션 편집기** 대화 상자를 사용 하 여 중복 된 형식을 추가할 수 있습니다.
+**형식 컬렉션 편집기** 대화 상자는 **보내기** 및 **받기** 작업에 알려진 형식을 추가 하는 데 사용 됩니다. 이 대화 상자는 **InvokeMethod** 활동에 제네릭 형식 인수를 추가 하는 데도 사용 됩니다. **보내기** 및 **받기** 작업에서 알려진 형식을 추가 하는 데 사용 하는 경우 **형식 컬렉션 편집기** 대화 상자에서 고유한 형식을 추가 해야 합니다. 중복 형식을 추가 하 고 **확인** 을 클릭 하 여 변경 내용을 커밋하는 경우 오류 메시지가 반환 됩니다. **InvokeMethod** 활동을 사용 하 여 제네릭 형식 인수를 추가 하는 경우 **형식 컬렉션 편집기** 대화 상자를 사용 하 여 중복 된 형식을 추가할 수 있습니다.
 
 자세한 내용은 [데이터 계약 알려진 형식](/dotnet/framework/wcf/feature-details/data-contract-known-types)을 참조 하세요.
 
 다음 표에서는 **형식 컬렉션** 대화 상자의 UI (사용자 인터페이스) 요소에 대해 설명 합니다.
 
-|UI 요소|설명|
+|UI 요소|Description|
 |-|-----------------|
 |**Type List**|추가 또는 제거된 형식의 목록입니다.|
 

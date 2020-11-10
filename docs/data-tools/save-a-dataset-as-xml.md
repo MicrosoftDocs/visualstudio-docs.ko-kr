@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트를 XML로 저장
+description: '데이터 집합을 XML로 저장 합니다. 데이터 집합에서 사용 가능한 XML 메서드 (예: GetXml 또는 WriteXml)를 호출 하 여 데이터 집합의 XML 데이터에 액세스 합니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281736"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434625"
 ---
 # <a name="save-a-dataset-as-xml"></a>데이터 세트를 XML로 저장
 

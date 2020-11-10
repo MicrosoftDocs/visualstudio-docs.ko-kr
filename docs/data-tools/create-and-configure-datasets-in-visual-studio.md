@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트 만들기 및 구성
+description: Visual Studio에서 데이터 집합을 만들고 구성 합니다. 데이터 집합은 DB의 데이터를 메모리에 저장 하 고 해당 데이터에 대 한 CRUD 작업을 지 원하는 개체 집합입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,22 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282750"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435406"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>방법: Visual Studio에서 데이터 집합 만들기 및 구성
 
 데이터 집합은 데이터베이스의 데이터를 메모리에 저장 하 고 변경 내용 추적을 지원 하 여 데이터베이스에 항상 연결 되어 있지 않아도 해당 데이터에 대 한 CRUD (만들기, 읽기, 업데이트 및 삭제) 작업을 가능 하 게 하는 개체 집합입니다. 데이터 집합은 데이터 비즈니스 응용 프로그램에 대 한 간단한 *양식을* 위해 설계 되었습니다. 새 응용 프로그램의 경우 Entity Framework를 사용 하 여 메모리에 데이터를 저장 하 고 모델링 하는 것이 좋습니다. 데이터 집합을 사용 하려면 데이터베이스 개념에 대 한 기본 지식이 있어야 합니다.
 
-<xref:System.Data.DataSet>디자인 타임에 **데이터 소스 구성 마법사**를 사용 하 여 Visual Studio에서 형식화 된 클래스를 만들 수 있습니다. 데이터 집합을 프로그래밍 방식으로 만드는 방법에 대 한 자세한 내용은 [데이터 집합 만들기 (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset)를 참조 하십시오.
+<xref:System.Data.DataSet>디자인 타임에 **데이터 소스 구성 마법사** 를 사용 하 여 Visual Studio에서 형식화 된 클래스를 만들 수 있습니다. 데이터 집합을 프로그래밍 방식으로 만드는 방법에 대 한 자세한 내용은 [데이터 집합 만들기 (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset)를 참조 하십시오.
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>데이터 소스 구성 마법사를 사용 하 여 새 데이터 집합 만들기
 
-1. Visual Studio에서 프로젝트를 연 다음 **프로젝트**  >  **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
+1. Visual Studio에서 프로젝트를 연 다음 **프로젝트**  >  **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사** 를 시작 합니다.
 
 2. 연결할 데이터 원본의 유형을 선택 합니다.
 
@@ -40,13 +42,13 @@ ms.locfileid: "85282750"
 
      ![데이터베이스 개체 선택](../data-tools/media/raddata-chose-objects.png)
 
-5. **마침**을 클릭합니다.
+5. **Finish** 를 클릭합니다.
 
-   데이터 집합은 **솔루션 탐색기**노드로 표시 됩니다.
+   데이터 집합은 **솔루션 탐색기** 노드로 표시 됩니다.
 
    ![솔루션 탐색기의 데이터 집합](../data-tools/media/dataset-in-solution-explorer.png)
 
-6. **솔루션 탐색기** 에서 데이터 집합 노드를 클릭 하 여 데이터 집합 **디자이너**에서 데이터 집합을 엽니다. 데이터 집합의 각 테이블에는 `TableAdapter` 맨 아래에 표시 되는 연결 된 개체가 있습니다. 테이블 어댑터는 데이터 집합을 채우는 데 사용 되며 필요에 따라 데이터베이스에 명령을 보낼 수 있습니다.
+6. **솔루션 탐색기** 에서 데이터 집합 노드를 클릭 하 여 데이터 집합 **디자이너** 에서 데이터 집합을 엽니다. 데이터 집합의 각 테이블에는 `TableAdapter` 맨 아래에 표시 되는 연결 된 개체가 있습니다. 테이블 어댑터는 데이터 집합을 채우는 데 사용 되며 필요에 따라 데이터베이스에 명령을 보낼 수 있습니다.
 
    ![데이터 세트 디자이너](../data-tools/media/dataset-designer.png)
 
@@ -62,7 +64,7 @@ ms.locfileid: "85282750"
 
      ![데이터 집합 도구 상자](../data-tools/media/raddata-dataset-toolbox.png)
 
-그런 다음 데이터를 사용 하 여 데이터 집합을 채우는 방법을 지정 하려고 할 수 있습니다. 이렇게 하려면 **TableAdapter 구성 마법사**를 사용 합니다. 자세한 내용은 [tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)를 참조 하세요.
+그런 다음 데이터를 사용 하 여 데이터 집합을 채우는 방법을 지정 하려고 할 수 있습니다. 이렇게 하려면 **TableAdapter 구성 마법사** 를 사용 합니다. 자세한 내용은 [tableadapter를 사용 하 여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)를 참조 하세요.
 
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>기존 데이터 집합에 데이터베이스 테이블 또는 기타 개체 추가
 
@@ -72,7 +74,7 @@ ms.locfileid: "85282750"
 
 2. Visual Studio의 왼쪽 여백에 있는 **데이터 원본** 탭을 클릭 하거나 검색 상자에 **데이터 소스** 를 입력 합니다.
 
-3. 데이터 집합 노드를 마우스 오른쪽 단추로 클릭 하 고 **마법사를 사용 하 여 데이터 원본 구성**을 선택 합니다.
+3. 데이터 집합 노드를 마우스 오른쪽 단추로 클릭 하 고 **마법사를 사용 하 여 데이터 원본 구성** 을 선택 합니다.
 
      ![데이터 소스 상황에 맞는 메뉴](../data-tools/media/data-source-context-menu.png)
 
@@ -80,17 +82,17 @@ ms.locfileid: "85282750"
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>데이터 집합에 독립 실행형 데이터 테이블 추가
 
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다.
+1. **데이터 세트 디자이너** 에서 데이터 세트를 엽니다.
 
-2. <xref:System.Data.DataTable> **도구 상자** 의 **데이터 집합** 탭에서 **데이터 세트 디자이너**로 클래스를 끌어 옵니다.
+2. <xref:System.Data.DataTable> **도구 상자** 의 **데이터 집합** 탭에서 **데이터 세트 디자이너** 로 클래스를 끌어 옵니다.
 
-3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 테이블을 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **열**추가를 선택 합니다. **속성** 창을 사용 하 여 열의 데이터 형식을 설정 하 고 필요한 경우 키를 설정 합니다.
+3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 테이블을 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **열** 추가를 선택 합니다. **속성** 창을 사용 하 여 열의 데이터 형식을 설정 하 고 필요한 경우 키를 설정 합니다.
 
 독립 실행형 테이블은 `Fill` 데이터를 채울 수 있도록 독립 실행형 테이블에서 논리를 구현 해야 합니다. 독립 실행형 데이터 테이블을 채우는 방법에 대 한 자세한 내용은 [DataAdapter에서 데이터 집합 채우기](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)를 참조 하세요.
 
 ## <a name="see-also"></a>참조
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [데이터 세트에서의 관계](../data-tools/relationships-in-datasets.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

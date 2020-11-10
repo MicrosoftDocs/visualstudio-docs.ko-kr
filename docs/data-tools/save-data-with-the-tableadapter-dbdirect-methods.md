@@ -1,5 +1,7 @@
 ---
 title: TableAdapter DBDirect 메서드를 사용하여 데이터 저장
+description: 이 연습에서는 TableAdapter의 DBDirect 메서드를 사용 하 여 데이터베이스에 대해 직접 SQL 문을 실행 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281611"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434573"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 
@@ -29,7 +31,7 @@ ms.locfileid: "85281611"
 
 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.
 
-- 새 **Windows Forms 응용 프로그램**을 만듭니다.
+- 새 **Windows Forms 응용 프로그램** 을 만듭니다.
 
 - [데이터 소스 구성 마법사](../data-tools/media/data-source-configuration-wizard.png)를 사용 하 여 데이터 집합을 만들고 구성 합니다.
 
@@ -39,15 +41,15 @@ ms.locfileid: "85281611"
 
 - 데이터베이스에 직접 액세스 하 고 삽입, 업데이트 및 삭제를 수행 하는 메서드를 추가 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
-1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **데이터 저장소 및 처리** 워크 로드의 일부로 또는 개별 구성 요소로 SQL Server Express LocalDB를 설치할 수 있습니다.
+1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자** 를 통해 설치 합니다. **Visual Studio 설치 관리자** 에서 **데이터 저장소 및 처리** 워크 로드의 일부로 또는 개별 구성 요소로 SQL Server Express LocalDB를 설치할 수 있습니다.
 
 2. 다음 단계를 수행 하 여 Northwind 샘플 데이터베이스를 설치 합니다.
 
-    1. Visual Studio에서 **SQL Server 개체 탐색기** 창을 엽니다. SQL Server 개체 탐색기는 **데이터 저장소 및 처리** 워크 로드의 일부로 Visual Studio 설치 관리자에 설치 됩니다. **SQL Server** 노드를 확장 합니다. LocalDB 인스턴스를 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리**를 선택 합니다.
+    1. Visual Studio에서 **SQL Server 개체 탐색기** 창을 엽니다. SQL Server 개체 탐색기는 **데이터 저장소 및 처리** 워크 로드의 일부로 Visual Studio 설치 관리자에 설치 됩니다. **SQL Server** 노드를 확장 합니다. LocalDB 인스턴스를 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리** 를 선택 합니다.
 
        쿼리 편집기 창이 열립니다.
 
@@ -59,17 +61,17 @@ ms.locfileid: "85281611"
 
 ## <a name="create-a-windows-forms-application"></a>Windows Forms 애플리케이션 만들기
 
-첫 번째 단계는 **Windows Forms 응용 프로그램**을 만드는 것입니다.
+첫 번째 단계는 **Windows Forms 응용 프로그램** 을 만드는 것입니다.
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다.
 
-2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱** 을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
-4. 프로젝트 이름을 **TableAdapterDbDirectMethodsWalkthrough**로 지정한 다음 **확인**을 선택 합니다.
+4. 프로젝트 이름을 **TableAdapterDbDirectMethodsWalkthrough** 로 지정한 다음 **확인** 을 선택 합니다.
 
-     **TableAdapterDbDirectMethodsWalkthrough** 프로젝트가 만들어져 **솔루션 탐색기**에 추가됩니다.
+     **TableAdapterDbDirectMethodsWalkthrough** 프로젝트가 만들어져 **솔루션 탐색기** 에 추가됩니다.
 
 ## <a name="create-a-data-source-from-your-database"></a>데이터베이스에서 데이터 원본 만들기
 
@@ -77,13 +79,13 @@ ms.locfileid: "85281611"
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
 
-1. **데이터** 메뉴에서 **데이터 소스 표시**를 선택 합니다.
+1. **데이터** 메뉴에서 **데이터 원본 표시** 를 선택합니다.
 
    **데이터 원본** 창이 열립니다.
 
-2. **데이터** 소스 창에서 **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
+2. **데이터** 소스 창에서 **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사** 를 시작 합니다.
 
-3. **데이터 소스 형식 선택** 화면에서 **데이터베이스**를 선택 하 고 **다음**을 선택 합니다.
+3. **데이터 소스 형식 선택** 화면에서 **데이터베이스** 를 선택 하 고 **다음** 을 선택 합니다.
 
 4. **데이터 연결 선택** 화면에서 다음 중 하나를 수행 합니다.
 
@@ -91,17 +93,17 @@ ms.locfileid: "85281611"
 
          또는
 
-    - **새 연결**을 선택하여 **연결 추가/수정** 대화 상자를 시작합니다.
+    - **새 연결** 을 선택하여 **연결 추가/수정** 대화 상자를 시작합니다.
 
-5. 데이터베이스에 암호가 필요 하면 중요 한 데이터를 포함 하는 옵션을 선택 하 고 **다음**을 선택 합니다.
+5. 데이터베이스에 암호가 필요 하면 중요 한 데이터를 포함 하는 옵션을 선택 하 고 **다음** 을 선택 합니다.
 
-6. **응용 프로그램 구성 파일에 연결 문자열 저장** 화면에서 **다음**을 선택 합니다.
+6. **응용 프로그램 구성 파일에 연결 문자열 저장** 화면에서 **다음** 을 선택 합니다.
 
 7. **데이터베이스 개체 선택** 화면에서 **테이블** 노드를 확장 합니다.
 
-8. `Region`테이블을 선택 하 고 **마침**을 선택 합니다.
+8. `Region`테이블을 선택 하 고 **마침** 을 선택 합니다.
 
-     **NorthwindDataSet**가 프로젝트에 추가되고 `Region` 테이블이 **데이터 원본** 창에 나타납니다.
+     **NorthwindDataSet** 가 프로젝트에 추가되고 `Region` 테이블이 **데이터 원본** 창에 나타납니다.
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>폼에 데이터를 표시 하는 컨트롤 추가
 
@@ -113,7 +115,7 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>개별 TableAdapter DbDirect 메서드를 호출하는 단추를 추가하려면
 
-1. <xref:System.Windows.Forms.Button> 컨트롤 3개를 **도구 상자**에서 **Form1**의 **RegionDataGridView** 아래로 끌어 옵니다.
+1. <xref:System.Windows.Forms.Button> 컨트롤 3개를 **도구 상자** 에서 **Form1** 의 **RegionDataGridView** 아래로 끌어 옵니다.
 
 2. 각 단추에 대해 다음 **이름** 및 **텍스트** 속성을 설정합니다.
 
@@ -121,7 +123,7 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
     |----------|----------|
     |`InsertButton`|**삽입**|
     |`UpdateButton`|**Update**|
-    |`DeleteButton`|**Delete**|
+    |`DeleteButton`|**삭제**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>데이터베이스에 새 레코드를 삽입하는 코드를 추가하려면
 
@@ -134,7 +136,7 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>데이터베이스에서 레코드를 업데이트하는 코드를 추가하려면
 
-1. **UpdateButton**을 두 번 클릭하여 클릭 이벤트에 대한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.
+1. **UpdateButton** 을 두 번 클릭하여 클릭 이벤트에 대한 이벤트 처리기를 만들고 코드 편집기에서 폼을 엽니다.
 
 2. `UpdateButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
@@ -166,8 +168,8 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 - 폼에 검색 기능을 추가합니다.
 
-- **데이터 원본** 창에서 **마법사로 데이터 세트 구성**을 선택하여 추가 테이블을 데이터 세트에 추가합니다. 관련 노드를 폼으로 끌어 관련 데이터를 표시하는 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
+- **데이터 원본** 창에서 **마법사로 데이터 세트 구성** 을 선택하여 추가 테이블을 데이터 세트에 추가합니다. 관련 노드를 폼으로 끌어 관련 데이터를 표시하는 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

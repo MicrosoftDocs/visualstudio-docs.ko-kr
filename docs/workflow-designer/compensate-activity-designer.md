@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너-보정 활동 디자이너
+description: 보정 활동 디자이너와 보정 활동 디자이너를 사용 하 여 보정 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876153"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434326"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 활동 디자이너
 
@@ -29,7 +31,7 @@ ms.locfileid: "86876153"
 
 ### <a name="using-the-compensate-activity-designer"></a>Compensate 활동 디자이너 사용
 
-**보정** 활동 디자이너는 **도구 상자**의 **트랜잭션** 범주에 있습니다. **도구 상자**를 열려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 선택 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X**를 누릅니다.
+**보정** 활동 디자이너는 **도구 상자** 의 **트랜잭션** 범주에 있습니다. **도구 상자** 를 열려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 선택 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X** 를 누릅니다.
 
 **도구 상자** 에서 **보정** 활동 디자이너를 끌어와 같이 활동을 배치할 아무 곳에 나 워크플로 디자이너 화면에 놓을 수 있습니다 <xref:System.Activities.Statements.Sequence> . 활동 디자이너를 삭제 하면 <xref:System.Activities.Statements.Compensate> 기본 보정을 사용 하는 활동이 만들어집니다 <xref:System.Activities.Activity.DisplayName%2A> . <xref:System.Activities.Activity.DisplayName%2A> **보정** 활동 디자이너의 머리글 또는 속성 표의 **DisplayName** 상자에서 값을 편집할 수 있습니다.
 
@@ -37,15 +39,15 @@ ms.locfileid: "86876153"
 
 다음 표에서는 <xref:System.Activities.Statements.CancellationScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 속성은 <xref:System.Activities.Activity.DisplayName%2A> 속성 표 또는 워크플로 디자이너 화면에서 편집할 수 있습니다. 속성 <xref:System.Activities.Statements.Compensate.Target%2A> 표에서 속성을 편집 합니다.
 
-|속성 이름|필수|사용량|
+|속성 이름|필수|사용|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Compensate> 활동의 선택적 이름을 지정합니다. 기본값은 Compensate입니다.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|True|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Compensate>을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.Compensate> 활동의 선택적 이름을 지정합니다. 기본값은 Compensate입니다.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|참|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Compensate>을 지정합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate 활동 디자이너](../workflow-designer/compensate-activity-designer.md)
-- [확인](../workflow-designer/confirm-activity-designer.md)
+- [지](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

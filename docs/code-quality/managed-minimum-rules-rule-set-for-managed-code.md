@@ -1,6 +1,8 @@
 ---
 title: 관리 코드에 대한 관리 최소 규칙 규칙 집합
 ms.date: 11/04/2016
+description: 보안, 견고성 및 기타 중요 한 문제에 초점을 맞춘 Visual Studio에서 관리 되는 최소 규칙 규칙 집합에 대해 알아봅니다. 규칙 설명을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 903b464172d541277de5fbac6d8ab035578b6154
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 5a0e5c59621f948cbb7465a6726fa8c3003480d4
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658505"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435393"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 최소 규칙 규칙 집합
 

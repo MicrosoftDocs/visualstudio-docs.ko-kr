@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너-마이그레이션 활동 디자이너
+description: 마이그레이션 활동 디자이너를 사용 하 여 .NET Framework 4 이상을 대상으로 하는 워크플로에서 워크플로 3.0/3.5 활동을 호출 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
@@ -8,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed5640495c7de8550db63d2fa48d3fab1e67de9a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435614"
 ---
 # <a name="migration-activity-designers"></a>마이그레이션 활동 디자이너
 
@@ -27,7 +29,7 @@ ms.locfileid: "73189722"
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
-- [순서도](../workflow-designer/flowchart-activity-designers.md)
+- [Flowchart](../workflow-designer/flowchart-activity-designers.md)
 
 - [활동 디자이너 사용](control-flow-activity-designers.md)
 
@@ -35,7 +37,7 @@ ms.locfileid: "73189722"
 
 - [런타임](../workflow-designer/runtime-activity-designers.md)
 
-- [기본 요소](../workflow-designer/primitives-activity-designers.md)
+- [기본 형식](../workflow-designer/primitives-activity-designers.md)
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

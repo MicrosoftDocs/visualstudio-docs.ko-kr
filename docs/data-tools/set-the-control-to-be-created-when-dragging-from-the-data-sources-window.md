@@ -1,5 +1,6 @@
 ---
 title: 끌 때 컨트롤을 만들도록 설정
+description: 데이터 소스 창에서 WPF designer 또는 Visual Studio의 Windows Forms designer로 끌어올 때 만들 컨트롤을 설정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036264"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434469"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>데이터 소스 창에서 끌어올 때 만들 컨트롤 설정
 
@@ -38,15 +39,15 @@ ms.locfileid: "90036264"
 2. **데이터 소스** 창에서 설정 하려는 데이터 테이블이 나 개체를 나타내는 항목을 선택 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않은 경우 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 하 여 열 수 있습니다.
+   > **데이터 소스** 창이 열려 있지 않은 경우 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 열 수 있습니다.
 
 3. 항목에 대 한 드롭다운 메뉴를 클릭 하 고 메뉴에서 다음 항목 중 하나를 클릭 합니다.
 
-    - 각 데이터 필드를 별도의 컨트롤에 표시 하려면 **세부 정보**를 클릭 합니다. 데이터 항목을 디자이너로 끌어 오면이 작업은 각 컨트롤에 대 한 레이블과 함께 부모 데이터 테이블이 나 개체의 각 열 또는 속성에 대해 서로 다른 데이터 바인딩된 컨트롤을 만듭니다.
+    - 각 데이터 필드를 별도의 컨트롤에 표시 하려면 **세부 정보** 를 클릭 합니다. 데이터 항목을 디자이너로 끌어 오면이 작업은 각 컨트롤에 대 한 레이블과 함께 부모 데이터 테이블이 나 개체의 각 열 또는 속성에 대해 서로 다른 데이터 바인딩된 컨트롤을 만듭니다.
 
     - 모든 데이터를 단일 컨트롤로 표시 하려면 목록에서 WPF 응용 프로그램의 **DataGrid** 또는 **목록** , Windows Forms 응용 프로그램에서 **DataGridView** 와 같은 다른 컨트롤을 선택 합니다.
 
-    사용 가능한 컨트롤 목록은 열려 있는 디자이너, 프로젝트에서 대상으로 하는 .NET 버전 및 **도구 상자**에 데이터 바인딩을 지 원하는 사용자 지정 컨트롤을 추가 했는지 여부에 따라 달라 집니다. 만들려는 컨트롤이 사용 가능한 컨트롤 목록에 없으면 목록에 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
+    사용 가능한 컨트롤 목록은 열려 있는 디자이너, 프로젝트에서 대상으로 하는 .NET 버전 및 **도구 상자** 에 데이터 바인딩을 지 원하는 사용자 지정 컨트롤을 추가 했는지 여부에 따라 달라 집니다. 만들려는 컨트롤이 사용 가능한 컨트롤 목록에 없으면 목록에 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
 
     데이터 **소스** 창에서 데이터 테이블 또는 개체의 컨트롤 목록에 추가할 수 있는 사용자 지정 Windows Forms 컨트롤을 만드는 방법에 대 한 자세한 내용은 [복합 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)를 참조 하세요.
 
@@ -64,12 +65,12 @@ ms.locfileid: "90036264"
 
 4. 열 또는 속성에 대 한 드롭다운 메뉴를 클릭 한 다음 항목을 디자이너로 끌 때 만들려는 컨트롤을 선택 합니다.
 
-     사용 가능한 컨트롤 목록은 열려 있는 디자이너, 프로젝트에서 대상으로 하는 .NET 버전 및 **도구 상자**에 추가한 데이터 바인딩을 지 원하는 사용자 지정 컨트롤에 따라 다릅니다. 만들려는 컨트롤이 사용 가능한 컨트롤 목록에 있으면 목록에 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
+     사용 가능한 컨트롤 목록은 열려 있는 디자이너, 프로젝트에서 대상으로 하는 .NET 버전 및 **도구 상자** 에 추가한 데이터 바인딩을 지 원하는 사용자 지정 컨트롤에 따라 다릅니다. 만들려는 컨트롤이 사용 가능한 컨트롤 목록에 있으면 목록에 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.
 
      데이터 **소스** 창에서 데이터 열 또는 속성에 대 한 컨트롤 목록에 추가할 수 있는 사용자 지정 컨트롤을 만드는 방법을 알아보려면 [단순 데이터 바인딩을 지 원하는 Windows Forms 사용자 정의 컨트롤 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)를 참조 하세요.
 
      열 또는 속성에 대 한 컨트롤을 만들지 않으려면 드롭다운 메뉴에서 **없음** 을 선택 합니다. 이 방법은 부모 테이블이 나 개체를 디자이너에 끌어 놓을 수 있지만 특정 열 또는 속성을 포함 하지 않으려는 경우에 유용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

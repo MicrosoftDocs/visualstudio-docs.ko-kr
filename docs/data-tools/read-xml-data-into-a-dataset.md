@@ -1,5 +1,7 @@
 ---
 title: XML 데이터를 데이터 세트에 읽어오기
+description: XML 데이터를 데이터 집합으로 읽습니다. 이 연습에서는 XML 데이터를 데이터 집합에 로드 하는 Windows 응용 프로그램을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281788"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434651"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 데이터 세트에 읽어오기
 
@@ -33,15 +35,15 @@ ADO.NET는 XML 데이터 작업을 위한 간단한 메서드를 제공 합니�
 
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기
 
-C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만듭니다. 프로젝트 이름을 **ReadingXML**로 합니다.
+C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만듭니다. 프로젝트 이름을 **ReadingXML** 로 합니다.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>데이터 집합으로 읽어올 XML 파일 생성
 
 이 연습에서는 XML 데이터를 데이터 집합으로 읽는 방법을 중점적으로 설명 하므로 XML 파일의 내용이 제공 됩니다.
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
-2. **XML 파일**을 선택 하 고 파일 이름을 **authors.xml**로 지정한 다음 **추가**를 선택 합니다.
+2. **XML 파일** 을 선택 하 고 파일 이름을 **authors.xml** 로 지정한 다음 **추가** 를 선택 합니다.
 
    XML 파일이 디자이너로 로드 되 고 편집할 준비가 됩니다.
 
@@ -107,7 +109,7 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
    </Authors_Table>
    ```
 
-4. **파일** 메뉴에서 **authors.xml저장 **을 선택 합니다.
+4. **파일** 메뉴에서 **authors.xml저장** 을 선택 합니다.
 
 ## <a name="create-the-user-interface"></a>사용자 인터페이스 만들기
 
@@ -127,7 +129,7 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
 
 1. `Form1`디자인 뷰에서를 엽니다.
 
-2. **도구 상자**에서 다음 컨트롤을 폼으로 끌어옵니다.
+2. **도구 상자** 에서 다음 컨트롤을 폼으로 끌어옵니다.
 
     - 한 <xref:System.Windows.Forms.DataGridView> 컨트롤
 
@@ -150,11 +152,11 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
 
 이 단계에서는 라는 새 데이터 집합을 만듭니다 `authors` . 데이터 집합에 대 한 자세한 내용은 [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)를 참조 하세요.
 
-1. **솔루션 탐색기**에서 **Form1**의 원본 파일을 선택한 다음 **솔루션 탐색기** 도구 모음에서 **디자이너 보기** 단추를 선택 합니다.
+1. **솔루션 탐색기** 에서 **Form1** 의 원본 파일을 선택한 다음 **솔루션 탐색기** 도구 모음에서 **디자이너 보기** 단추를 선택 합니다.
 
-2. [도구 상자, 데이터 탭](../ide/reference/toolbox-data-tab.md)에서 **데이터 집합** 을 **Form1**로 끌어 옵니다.
+2. [도구 상자, 데이터 탭](../ide/reference/toolbox-data-tab.md)에서 **데이터 집합** 을 **Form1** 로 끌어 옵니다.
 
-3. **데이터 집합 추가** 대화 상자에서 **형식화 되지 않은 데이터 집합**을 선택 하 고 **확인**을 선택 합니다.
+3. **데이터 집합 추가** 대화 상자에서 **형식화 되지 않은 데이터 집합** 을 선택 하 고 **확인** 을 선택 합니다.
 
      **DataSet1** 가 구성 요소 트레이에 추가 됩니다.
 
@@ -164,7 +166,7 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
 
 **Xml 읽기** 단추를 클릭 하면 xml 파일이 데이터 집합으로 읽혀집니다. 그런 다음 데이터 집합에 바인딩하는 컨트롤에 대 한 속성을 설정 <xref:System.Windows.Forms.DataGridView> 합니다.
 
-1. **솔루션 탐색기**에서 **Form1**을 선택 하 고 **솔루션 탐색기** 도구 모음에서 **디자이너 보기** 단추를 선택 합니다.
+1. **솔루션 탐색기** 에서 **Form1** 을 선택 하 고 **솔루션 탐색기** 도구 모음에서 **디자이너 보기** 단추를 선택 합니다.
 
 2. **XML 읽기** 단추를 선택 합니다.
 
@@ -181,7 +183,7 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
 
 **스키마 표시** 단추를 클릭 하면 <xref:System.IO.StringWriter> 스키마를 사용 하 여 채워진 개체가 생성 되 고 컨트롤에 표시 됩니다 <xref:System.Windows.Forms.TextBox> .
 
-1. **솔루션 탐색기**에서 **Form1**을 선택 하 고 **디자이너 보기** 단추를 선택 합니다.
+1. **솔루션 탐색기** 에서 **Form1** 을 선택 하 고 **디자이너 보기** 단추를 선택 합니다.
 
 2. **스키마 표시** 단추를 선택 합니다.
 

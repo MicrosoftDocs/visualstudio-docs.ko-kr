@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너 PickBranch 활동 디자이너
+description: PickBranch activity designer가 들어오는 이벤트에 의해 트리거될 수 있는 Pick 활동 내에서 실행의 이벤트 기반 경로를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876088"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434235"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 활동 디자이너
 
@@ -27,11 +29,11 @@ ms.locfileid: "86876088"
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Pick 활동 디자이너를 사용하는 방법
 
-**도구 상자**의 **제어 흐름** 범주에 있는 **PickBranch** 디자이너에 액세스 합니다.
+**도구 상자** 의 **제어 흐름** 범주에 있는 **PickBranch** 디자이너에 액세스 합니다.
 
 <xref:System.Activities.Statements.PickBranch> **Branch1** 및 **Branch2** 의 표시 이름을 사용 하는 두 개의 빈 개체는 기본적으로 <xref:System.Activities.Statements.Pick> **Pick** 활동 디자이너를 워크플로 디자이너에 처음 놓을 때 활동의 요소로 만들어집니다. 이러한 <xref:System.Activities.Statements.PickBranch.DisplayName%2A> 각 속성 값은 **PickBranch** designer 헤더 또는 각 분기의 **속성** 창에서 편집할 수 있습니다.
 
-개체의 컬렉션에 개체를 추가 하는 방법은 두 가지입니다 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> . **도구 상자**에서 **PickBranch** 디자이너를 끌어서 놓거나 **뚝딱** 디자인 화면에서 오른쪽 클릭 메뉴를 사용 합니다.
+개체의 컬렉션에 개체를 추가 하는 방법은 두 가지입니다 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> . **도구 상자** 에서 **PickBranch** 디자이너를 끌어서 놓거나 **뚝딱** 디자인 화면에서 오른쪽 클릭 메뉴를 사용 합니다.
 
 - **PickBranch** 디자이너는 <xref:System.Activities.Statements.PickBranch> **도구 상자** 에서 끌고 워크플로 디자이너 표면의 **Pick** 활동 디자이너 분기 중 하나로 끌어 놓으면를 만듭니다. 새 <xref:System.Activities.Statements.PickBranch> 개체는 <xref:System.Activities.Statements.Pick> 디자이너 내에서 컬렉션에 이미 포함되어 있는 기존 <xref:System.Activities.Statements.PickBranch> 요소의 왼쪽 또는 오른쪽에 배치됩니다. **PickBranch** 디자이너를 마우스를 사용 하 여 **뚝딱** 디자이너에 끌어다 놓으면 **뚝딱** 디자이너는 파란색 세로 띠를 사용 하 여 <xref:System.Activities.Statements.PickBranch> 지정 된 마우스 배치에 대해가 추가 된 위치를 표시 합니다.
 
@@ -44,7 +46,7 @@ ms.locfileid: "86876088"
 <xref:System.Activities.Statements.PickBranch>를 삭제하는 방법은 두 가지입니다.
 
 - **PickBranch** 디자이너를 선택 하 고 삭제 합니다.
-- **PickBranch** 디자이너를 선택 하 고 마우스 오른쪽 단추를 클릭 하 여 상황에 맞는 메뉴를 가져온 다음 **삭제**를 선택 합니다.
+- **PickBranch** 디자이너를 선택 하 고 마우스 오른쪽 단추를 클릭 하 여 상황에 맞는 메뉴를 가져온 다음 **삭제** 를 선택 합니다.
 
 **PickBranch** 디자이너를 선택 해야 합니다. **트리거** 또는 **작업** 상자 내에서 작업 중 하나를 실수로 선택 하면 개체가 아닌 이러한 작업 중 하나를 삭제 합니다 <xref:System.Activities.Statements.PickBranch> .
 
@@ -52,13 +54,13 @@ ms.locfileid: "86876088"
 
 다음 표에서는 가장 유용한 속성을 보여 주고 <xref:System.Activities.Statements.PickBranch> 워크플로 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용량|
+|속성 이름|필수|사용|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|**PickBranch** 디자이너의 헤더에 표시 되는 이름입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|각 <xref:System.Activities.Statements.PickBranch>에는 트리거될 경우 실행되는 <xref:System.Activities.Statements.PickBranch.Action%2A>이 포함되어 있습니다.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|거짓|**PickBranch** 디자이너의 헤더에 표시 되는 이름입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|참|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|거짓|각 <xref:System.Activities.Statements.PickBranch>에는 트리거될 경우 실행되는 <xref:System.Activities.Statements.PickBranch.Action%2A>이 포함되어 있습니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 - [선택 활동](/dotnet/framework/windows-workflow-foundation/pick-activity)

@@ -1,5 +1,7 @@
 ---
 title: WPF 및 Entity Framework 6을 사용 하는 간단한 데이터 앱
+description: 이 연습에서는 Windows Presentation Foundation (WPF)를 사용 하 여 Visual Studio에서 간단한 폼-데이터 앱을 만드는 방법 및 Entity Framework 6을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743389"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435495"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용하여 간단한 데이터 애플리케이션 만들기
 
-이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스 Entity Framework 6 (Entity Framework Core 아님)을 사용 하 고 .NET Framework에 대해 Windows Presentation Foundation를 사용 합니다 (.NET Core 아님). 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동**, **이전**으로 이동, **처음으로**이동, **끝으로 이동**, **업데이트** 및 **삭제**단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
+이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스 Entity Framework 6 (Entity Framework Core 아님)을 사용 하 고 .NET Framework에 대해 Windows Presentation Foundation를 사용 합니다 (.NET Core 아님). 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동** , **이전** 으로 이동, **처음으로** 이동, **끝으로 이동** , **업데이트** 및 **삭제** 단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
 
 이 문서에서는 Visual Studio에서 데이터 도구를 사용 하는 방법을 집중적으로 설명 하며, 기본 기술에 대해 설명 하지 않습니다. XAML, Entity Framework 및 SQL에 대 한 기본적인 지식이 있다고 가정 합니다. 또한이 예제에서는 WPF 응용 프로그램의 표준인 MVVM (모델-뷰-ViewModel) 아키텍처를 보여 주지 않습니다. 그러나이 코드를 수정 하지 않은 사용자 고유의 MVVM 응용 프로그램으로 복사할 수 있습니다.
 
@@ -26,11 +28,11 @@ ms.locfileid: "89743389"
 
 이 예에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다. 해당 제품에 대 한 ADO.NET 데이터 공급자가 Entity Framework를 지 원하는 경우 다른 SQL 데이터베이스 제품과 함께 작동 해야 합니다.
 
-1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **.NET 데스크톱 개발** 워크로드의 일부로 또는 개별 구성 요소로서 SQL Server Express LocalDB를 설치할 수 있습니다.
+1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자** 를 통해 설치 합니다. **Visual Studio 설치 관리자** 에서 **.NET 데스크톱 개발** 워크로드의 일부로 또는 개별 구성 요소로서 SQL Server Express LocalDB를 설치할 수 있습니다.
 
 2. 다음 단계를 수행 하 여 Northwind 샘플 데이터베이스를 설치 합니다.
 
-    1. Visual Studio에서 **SQL Server 개체 탐색기** 창을 엽니다. **SQL Server 개체 탐색기** 는 **데이터 저장소 및 처리** 워크 로드의 일부로 **Visual Studio 설치 관리자**에 설치 됩니다. **SQL Server** 노드를 확장 합니다. LocalDB 인스턴스를 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리**를 선택 합니다.
+    1. Visual Studio에서 **SQL Server 개체 탐색기** 창을 엽니다. **SQL Server 개체 탐색기** 는 **데이터 저장소 및 처리** 워크 로드의 일부로 **Visual Studio 설치 관리자** 에 설치 됩니다. **SQL Server** 노드를 확장 합니다. LocalDB 인스턴스를 마우스 오른쪽 단추로 클릭 하 고 **새 쿼리** 를 선택 합니다.
 
        쿼리 편집기 창이 열립니다.
 
@@ -46,11 +48,11 @@ ms.locfileid: "89743389"
 
 1. Visual Studio에서 새 c # **WPF 앱** 프로젝트를 만듭니다.
 
-2. Entity Framework 6 용 NuGet 패키지를 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 합니다. 주 메뉴에서 **프로젝트**  >  **NuGet 패키지 관리**를 선택 합니다.
+2. Entity Framework 6 용 NuGet 패키지를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 합니다. 주 메뉴에서 **프로젝트**  >  **NuGet 패키지 관리** 를 선택 합니다.
 
      ![NuGet 패키지 관리 메뉴 항목](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. **NuGet 패키지 관리자**에서 **찾아보기** 링크를 클릭 합니다. Entity Framework은 목록의 맨 위 패키지인 것입니다. 오른쪽 창에서 **설치** 를 클릭 하 고 프롬프트를 따릅니다. 설치가 완료 되 면 출력 창에 사용자에 게 알려 줍니다.
+3. **NuGet 패키지 관리자** 에서 **찾아보기** 링크를 클릭 합니다. Entity Framework은 목록의 맨 위 패키지인 것입니다. 오른쪽 창에서 **설치** 를 클릭 하 고 프롬프트를 따릅니다. 설치가 완료 되 면 출력 창에 사용자에 게 알려 줍니다.
 
      ![NuGet 패키지 Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
@@ -58,17 +60,17 @@ ms.locfileid: "89743389"
 
 ## <a name="create-the-model"></a>모델 만들기
 
-1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델**를 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델** 를 선택 합니다.
 
    ![Entity Framework 모델 새 항목](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. 모델을 호출 `Northwind_model` 하 고 **확인을**선택 합니다. **엔터티 데이터 모델 마법사** 가 열립니다. **데이터베이스에서 EF Designer** 를 선택 하 고 **다음**을 클릭 합니다.
+2. 모델을 호출 `Northwind_model` 하 고 **확인을** 선택 합니다. **엔터티 데이터 모델 마법사** 가 열립니다. **데이터베이스에서 EF Designer** 를 선택 하 고 **다음** 을 클릭 합니다.
 
    ![데이터베이스의 EF 모델](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. 다음 화면에서 LocalDB Northwind 연결 (예: (localdb) \MSSQLLocalDB)을 입력 하거나 선택 하 고 Northwind 데이터베이스를 지정한 후 **다음**을 클릭 합니다.
+3. 다음 화면에서 LocalDB Northwind 연결 (예: (localdb) \MSSQLLocalDB)을 입력 하거나 선택 하 고 Northwind 데이터베이스를 지정한 후 **다음** 을 클릭 합니다.
 
-4. 마법사의 다음 페이지에서 Entity Framework 모델에 포함할 테이블, 저장 프로시저 및 기타 데이터베이스 개체를 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 **고객**, **주문**및 **주문 세부 정보**를 선택 합니다. 기본값을 선택 된 채로 두고 **마침**을 클릭 합니다.
+4. 마법사의 다음 페이지에서 Entity Framework 모델에 포함할 테이블, 저장 프로시저 및 기타 데이터베이스 개체를 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 **고객** , **주문** 및 **주문 세부 정보** 를 선택 합니다. 기본값을 선택 된 채로 두고 **마침** 을 클릭 합니다.
 
     ![모델에 대 한 데이터베이스 개체 선택](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -78,7 +80,7 @@ ms.locfileid: "89743389"
 
     *.Edmx* 파일의 디자이너 화면에서는 모델의 일부 속성 및 관계를 수정할 수 있습니다. 이 연습에서는 디자이너를 사용 하지 않겠습니다.
 
-6. *.Tt* 파일은 일반적인 용도로, 이러한 파일 중 하나를 조정 하 여 WPF 데이터 바인딩 작업을 수행 해야 합니다 .이 경우에는 ObservableCollections가 필요 합니다. **솔루션 탐색기**에서 *Northwind_model*를 찾을 때까지 Northwind_model 노드를 확장 합니다. (에 있지 않은지 확인 *합니다. Context.tt* 파일은 *.edmx* 파일 바로 아래에 있습니다.
+6. *.Tt* 파일은 일반적인 용도로, 이러한 파일 중 하나를 조정 하 여 WPF 데이터 바인딩 작업을 수행 해야 합니다 .이 경우에는 ObservableCollections가 필요 합니다. **솔루션 탐색기** 에서 *Northwind_model* 를 찾을 때까지 Northwind_model 노드를 확장 합니다. (에 있지 않은지 확인 *합니다. Context.tt* 파일은 *.edmx* 파일 바로 아래에 있습니다.
 
    - 의 두 항목을 <xref:System.Collections.ICollection> 로 바꿉니다 <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
@@ -94,15 +96,15 @@ ms.locfileid: "89743389"
 
 사용자 고유의 데이터 바인딩 코드를 작성할 수 있지만 Visual Studio에서 사용자에 게 더 쉽게 수행할 수 있습니다.
 
-1. 주 메뉴에서 **프로젝트**  >  **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사**를 엽니다. 데이터베이스가 아니라 모델 클래스에 바인딩되어 있기 때문에 **개체** 를 선택 합니다.
+1. 주 메뉴에서 **프로젝트**  >  **새 데이터 소스 추가** 를 선택 하 여 **데이터 소스 구성 마법사** 를 엽니다. 데이터베이스가 아니라 모델 클래스에 바인딩되어 있기 때문에 **개체** 를 선택 합니다.
 
      ![개체 원본을 사용 하는 데이터 소스 구성 마법사](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. 프로젝트에 대 한 노드를 확장 하 고 **Customer**를 선택 합니다. 주문의 원본은 Customer의 Orders 탐색 속성에서 자동으로 생성 됩니다.
+2. 프로젝트에 대 한 노드를 확장 하 고 **Customer** 를 선택 합니다. 주문의 원본은 Customer의 Orders 탐색 속성에서 자동으로 생성 됩니다.
 
      ![엔터티 클래스를 데이터 소스로 추가](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. **마침**을 클릭합니다.
+3. **Finish** 를 클릭합니다.
 
 4. 코드 보기에서 *mainwindow.xaml* 로 이동 합니다. 이 예제의 목적을 위해 XAML을 간단 하 게 유지 합니다. Mainwindow.xaml의 제목을 좀 더 설명적인 이름으로 변경 하 고, 현재의 높이와 너비를 600 x 800로 늘립니다. 나중에 언제 든 지 변경할 수 있습니다. 이제 다음 세 개의 행 정의를 주 그리드에 추가 하 고, 탐색 단추를 위한 행 하나, 고객 세부 정보에 대 한 행, 주문을 표시 하는 그리드에 대 한 행을 추가 합니다.
 
@@ -114,11 +116,11 @@ ms.locfileid: "89743389"
         </Grid.RowDefinitions>
     ```
 
-5. 이제 디자이너에서 볼 수 있도록 *mainwindow.xaml* 을 엽니다. 이렇게 하면 **데이터 소스** 창이 **도구 상자**옆의 Visual Studio 창 여백에 옵션으로 표시 됩니다. 탭을 클릭 하 여 창을 열거나 **Shift** + **Alt** + **D** 를 누르거나 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 합니다. Customers 클래스의 각 속성을 자체의 개별 텍스트 상자에 표시할 예정입니다. 먼저 **Customers** 콤보 상자의 화살표를 클릭 하 고 **세부 정보**를 선택 합니다. 그런 다음 디자이너에서 가운데 행으로 이동할 것임을 알 수 있도록 노드를 디자인 화면의 가운데 부분으로 끕니다. 잃어버리지 경우 나중에 XAML에서 수동으로 행을 지정할 수 있습니다. 기본적으로 컨트롤은 grid 요소에 세로로 배치 되지만이 시점에서 폼에서 원하는 대로 정렬할 수 있습니다. 예를 들어 **이름** 텍스트 상자를 주소 위의 위쪽에 배치 하는 것이 적합할 수 있습니다. 이 문서의 샘플 응용 프로그램은 필드의 순서를 다시 정렬 하 고 두 개의 열로 다시 정렬 합니다.
+5. 이제 디자이너에서 볼 수 있도록 *mainwindow.xaml* 을 엽니다. 이렇게 하면 **데이터 소스** 창이 **도구 상자** 옆의 Visual Studio 창 여백에 옵션으로 표시 됩니다. 탭을 클릭 하 여 창을 열거나 **Shift** + **Alt** + **D** 를 누르거나 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다. Customers 클래스의 각 속성을 자체의 개별 텍스트 상자에 표시할 예정입니다. 먼저 **Customers** 콤보 상자의 화살표를 클릭 하 고 **세부 정보** 를 선택 합니다. 그런 다음 디자이너에서 가운데 행으로 이동할 것임을 알 수 있도록 노드를 디자인 화면의 가운데 부분으로 끕니다. 잃어버리지 경우 나중에 XAML에서 수동으로 행을 지정할 수 있습니다. 기본적으로 컨트롤은 grid 요소에 세로로 배치 되지만이 시점에서 폼에서 원하는 대로 정렬할 수 있습니다. 예를 들어 **이름** 텍스트 상자를 주소 위의 위쪽에 배치 하는 것이 적합할 수 있습니다. 이 문서의 샘플 응용 프로그램은 필드의 순서를 다시 정렬 하 고 두 개의 열로 다시 정렬 합니다.
 
      ![개별 컨트롤에 대 한 고객 데이터 원본 바인딩](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     이제 코드 보기에서 `Grid` 부모 표의 행 1 (중간 행)에 새 요소를 볼 수 있습니다. 부모 표에는 `DataContext` 요소에 추가 된 CollectionViewSource를 참조 하는 특성이 있습니다 `Windows.Resources` . 해당 데이터 컨텍스트가 지정 된 경우 첫 번째 텍스트 상자를 **Address**에 바인딩하면 해당 이름이 `Address` `Customer` collectionviewsource의 현재 개체의 속성에 매핑됩니다.
+     이제 코드 보기에서 `Grid` 부모 표의 행 1 (중간 행)에 새 요소를 볼 수 있습니다. 부모 표에는 `DataContext` 요소에 추가 된 CollectionViewSource를 참조 하는 특성이 있습니다 `Windows.Resources` . 해당 데이터 컨텍스트가 지정 된 경우 첫 번째 텍스트 상자를 **Address** 에 바인딩하면 해당 이름이 `Address` `Customer` collectionviewsource의 현재 개체의 속성에 매핑됩니다.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -142,7 +144,7 @@ ms.locfileid: "89743389"
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8. **F5**키를 누릅니다. CollectionViewSource로 검색 된 첫 번째 고객에 대 한 세부 정보가 표시 됩니다. 또한 데이터 표에 해당 주문이 표시 되어야 합니다. 서식 지정이 유용 하지 않으므로이를 해결 해 보겠습니다. 다른 레코드를 보고 기본 CRUD 작업을 수행 하는 방법도 만들 수 있습니다.
+8. **F5** 키를 누릅니다. CollectionViewSource로 검색 된 첫 번째 고객에 대 한 세부 정보가 표시 됩니다. 또한 데이터 표에 해당 주문이 표시 되어야 합니다. 서식 지정이 유용 하지 않으므로이를 해결 해 보겠습니다. 다른 레코드를 보고 기본 CRUD 작업을 수행 하는 방법도 만들 수 있습니다.
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>새 고객과 주문에 대해 페이지 디자인 조정 및 그리드 추가
 
@@ -419,7 +421,7 @@ Windows Forms 응용 프로그램에서는 데이터베이스의 행을 탐색 �
 
 코드 숨김이 추가 및 삭제 메서드를 제외 하 고는 최소화 됩니다. 탐색은 CollectionViewSource의 View 속성에서 메서드를 호출 하 여 수행 됩니다. 는 `DeleteOrderCommandHandler` 순서에 따라 하위 삭제를 수행 하는 방법을 보여 줍니다. 연결 된 Order_Details를 먼저 삭제 해야 합니다. 는 `UpdateCommandHandler` 컬렉션에 새 고객 또는 주문을 추가 하거나 사용자가 텍스트 상자에서 변경한 내용으로 기존 고객 또는 주문을 업데이트 합니다.
 
-*MainWindow.xaml.cs*의 mainwindow.xaml 클래스에 이러한 처리기 메서드를 추가 합니다. Customers 테이블의 CollectionViewSource에 다른 이름이 있는 경우 다음 각 방법에서 이름을 조정 해야 합니다.
+*MainWindow.xaml.cs* 의 mainwindow.xaml 클래스에 이러한 처리기 메서드를 추가 합니다. Customers 테이블의 CollectionViewSource에 다른 이름이 있는 경우 다음 각 방법에서 이름을 조정 해야 합니다.
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 

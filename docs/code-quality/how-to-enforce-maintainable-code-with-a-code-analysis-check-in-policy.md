@@ -1,6 +1,8 @@
 ---
 title: 코드 분석 체크 인 정책 사용
 ms.date: 11/04/2016
+description: 코드 분석 체크 인 정책을 사용 하 여 코드가 상속, 클래스 결합, 유지 관리 및 복잡성 표준에 부합 하는지 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371861"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434820"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책을 사용 하 여 유지 가능한 코드 적용
 
@@ -27,21 +29,21 @@ Team Foundation에 대 한 버전 제어 관리자는 체크 인 정책 요구 �
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>코드 분석 정책 편집기를 열려면
 
-1. **팀 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **프로젝트 설정**을 클릭 한 다음 **소스 제어**를 클릭 합니다.
+1. **팀 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **프로젝트 설정** 을 클릭 한 다음 **소스 제어** 를 클릭 합니다.
 
      **소스 제어** 대화 상자가 나타납니다.
 
-2. 체크 인 **정책** 탭에서 **추가**를 클릭 합니다.
+2. 체크 인 **정책** 탭에서 **추가** 를 클릭 합니다.
 
      **체크 인 정책 추가** 대화 상자가 나타납니다.
 
-3. 체크 인 **정책** 목록에서 **코드 분석** 확인란을 선택 하 고 **확인**을 클릭 합니다.
+3. 체크 인 **정책** 목록에서 **코드 분석** 확인란을 선택 하 고 **확인** 을 클릭 합니다.
 
      **코드 분석 정책 편집기** 대화 상자가 나타납니다.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>코드 분석 유지 관리 규칙을 사용 하려면
 
-1. **코드 분석 정책 편집기** 대화 상자의 **규칙 설정**에서 **유지 관리 규칙** 노드를 확장 합니다.
+1. **코드 분석 정책 편집기** 대화 상자의 **규칙 설정** 에서 **유지 관리 규칙** 노드를 확장 합니다.
 
 2. 다음 규칙의 확인란을 선택 합니다.
 
@@ -55,9 +57,9 @@ Team Foundation에 대 한 버전 제어 관리자는 체크 인 정책 요구 �
 
      또한 성공적인 빌드를 방지 하는 규칙 위반을 원하는 경우 규칙 설명 옆에 있는 **경고를 오류로 처리** 확인란을 선택 합니다.
 
-3. **확인**을 클릭합니다. 이제 새 체크 인 정책이 이후 체크 인에 적용 됩니다.
+3. **확인** 을 클릭합니다. 이제 새 체크 인 정책이 이후 체크 인에 적용 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
 - [코드 분석 체크 인 정책 만들기 및 사용](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

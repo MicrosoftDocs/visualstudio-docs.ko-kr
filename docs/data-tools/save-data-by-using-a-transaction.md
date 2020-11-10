@@ -1,5 +1,7 @@
 ---
 title: '방법: 트랜잭션을 사용하여 데이터 저장'
+description: Visual Studio에서 데이터 집합 도구를 사용 하 여 트랜잭션을 사용 하 여 데이터를 저장 하는 방법을 검토 합니다. 트랜잭션에는 system.string 네임 스페이스를 사용 하 여 데이터를 저장 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281697"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434586"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용하여 데이터 저장
 
@@ -37,9 +39,9 @@ ms.locfileid: "85281697"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>System.Transactions.dll에 대 한 참조를 추가 하려면
 
-1. **프로젝트** 메뉴에서 **참조 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **참조 추가** 를 선택합니다.
 
-2. **.Net** 탭 (SQL Server 프로젝트에 대 한**SQL Server** 탭)에서 **시스템 트랜잭션을**선택한 다음 **확인**을 선택 합니다.
+2. **.Net** 탭 (SQL Server 프로젝트에 대 한 **SQL Server** 탭)에서 **시스템 트랜잭션을** 선택한 다음 **확인** 을 선택 합니다.
 
      *System.Transactions.dll* 에 대 한 참조가 프로젝트에 추가 됩니다.
 

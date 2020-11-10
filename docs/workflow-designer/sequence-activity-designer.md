@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너 시퀀스 활동 디자이너
+description: 시퀀스 활동에 순서 대로 실행 되는 자식 활동의 순서가 지정 된 컬렉션을 포함 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9e7e6e9114405bc1575e0256dd63211a4fb6d08
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875971"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433975"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 활동 디자이너
 
@@ -31,11 +33,11 @@ ms.locfileid: "86875971"
 
 다음 표에서는 <xref:System.Activities.Statements.Sequence> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용량|
+|속성 이름|필수|사용|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.Sequence> 활동 디자이너의 이름을 지정합니다. 기본값은 Sequence입니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|거짓|머리글에 <xref:System.Activities.Statements.Sequence> 활동 디자이너의 이름을 지정합니다. 기본값은 Sequence입니다. 속성 표에서 또는 활동 디자이너의 머리글에서 직접 값을 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
-- [순서도](../workflow-designer/flowchart-activity-designer.md)
+- [Flowchart](../workflow-designer/flowchart-activity-designer.md)
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
