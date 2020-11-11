@@ -1,6 +1,7 @@
 ---
 title: 데이터에 WPF 컨트롤 바인딩-1 부
 description: WPF 컨트롤을 데이터에 바인딩합니다. 이러한 데이터 바인딩된 컨트롤을 만들려면 데이터 소스 창에서 Visual Studio의 WPF Designer로 항목을 끌어 옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381924"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518611"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
@@ -84,7 +85,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 - 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 메서드를 호출 `Get<EntityName>Query` 하 여 엔터티를 데이터로 채우고 <xref:System.Windows.Data.CollectionViewSource> 컨테이너의 리소스에서를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. <xref:System.Windows.FrameworkElement.Loaded>이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
 
-### <a name="services"></a>Services
+### <a name="services"></a>서비스
 
 **데이터 소스** 창에서 디자이너로 서비스 개체 또는 속성을 끌어 오면 Visual Studio에서 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 데이터 바인딩된 컨트롤을 만들거나 기존 컨트롤을 개체나 속성에 바인딩하는을 생성 합니다. 그러나 Visual Studio는 프록시 서비스 개체를 데이터로 채우는 코드를 생성 하지 않습니다. 이 코드를 직접 작성해야 합니다. 이 작업을 수행 하는 방법을 보여 주는 예제는 [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)을 참조 하세요.
 
@@ -107,6 +108,6 @@ Visual Studio에서 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharp
 
 - 컨트롤에 대한 데이터 바인딩을 만듭니다. 디자이너의 기존 컨트롤로 항목을 끌면 XAML이 컨트롤을 항목에 바인딩합니다. 항목을 컨테이너로 끌어 오면 XAML은 끌어 온 항목에 대해 선택한 컨트롤을 만들고 컨트롤을 항목에 바인딩합니다. 이 컨트롤은 새로운 <xref:System.Windows.Controls.Grid> 내에 만들어집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

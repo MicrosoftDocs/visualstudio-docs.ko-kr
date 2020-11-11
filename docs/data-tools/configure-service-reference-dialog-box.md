@@ -1,6 +1,7 @@
 ---
 title: 서비스 참조 구성 대화 상자
 description: Visual Studio에서 서비스 참조 구성 대화 상자를 사용 하 여 WCF (Windows Communication Foundation) 서비스의 동작을 구성할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382353"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518728"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 
@@ -104,7 +105,7 @@ WCF 클라이언트가 서비스를 추가 하거나 업데이트할 때 새 형
 > [!NOTE]
 > **웹 참조 추가** 단추는 **서비스 참조 추가 대화 상자** 에서 **서비스 참조 구성** 대화 상자가 표시 되는 경우에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 웹 서비스에 참조 추가](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 서비스 및 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

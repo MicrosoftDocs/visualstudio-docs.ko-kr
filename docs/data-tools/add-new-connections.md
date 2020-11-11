@@ -1,6 +1,7 @@
 ---
 title: 새 연결 추가
 description: Visual Studio의 연결을 DB 또는 서비스에 추가 하 고 서버 탐색기, 클라우드 탐색기 또는 SQL Server 개체 탐색기를 사용 하 여 DB 내용과 스키마를 탐색 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382418"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518715"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 

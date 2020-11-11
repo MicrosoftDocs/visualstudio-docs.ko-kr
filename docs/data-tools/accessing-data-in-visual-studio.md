@@ -1,6 +1,7 @@
 ---
 title: Visual Studio에서 데이터 작업
 description: Visual Studio에서 데이터 작업 로컬 컴퓨터, Lan 또는 공용 또는 사설 클라우드를 통해 다른 데이터베이스 제품 또는 서비스의 데이터에 연결 하는 앱을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382093"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518741"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio에서 데이터 작업
 

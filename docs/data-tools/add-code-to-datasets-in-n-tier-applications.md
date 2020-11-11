@@ -1,6 +1,7 @@
 ---
 title: n 계층 애플리케이션에서 데이터 세트에 코드 추가
 description: Visual Studio에서 n 계층 앱의 데이터 집합에 코드를 추가 합니다. 데이터 집합에 대 한 partial 클래스 파일을 만들고 코드를 DatasetName 대신 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382197"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518689"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
 
@@ -64,7 +65,7 @@ ms.locfileid: "94382197"
     }
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)
 - [n 계층 애플리케이션에서 TableAdapter에 코드 추가](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)

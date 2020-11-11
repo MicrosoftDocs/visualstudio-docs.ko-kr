@@ -1,6 +1,7 @@
 ---
 title: 데이터에 Windows Forms 컨트롤 바인딩
 description: 응용 프로그램 사용자에 게 데이터를 표시할 수 있도록 Visual Studio에서 데이터에 Windows Forms 컨트롤을 바인딩합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382379"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518650"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩
 
@@ -81,7 +82,7 @@ ms.locfileid: "94382379"
 
 또한 각 컨트롤에는 스마트 태그가 있습니다. 이 태그를 사용 하면 해당 컨트롤에만 적용 되는 사용자 지정이 가능 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Windows Forms의 데이터 바인딩 (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -1,6 +1,7 @@
 ---
 title: 새 데이터 원본 추가
 description: Visual Studio에서 새 데이터 소스를 추가 합니다. 데이터 원본은 데이터 저장소에 연결 하 고 .NET 응용 프로그램에서 데이터를 사용할 수 있도록 하는 .NET 개체입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382119"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518676"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 원본 추가
 
