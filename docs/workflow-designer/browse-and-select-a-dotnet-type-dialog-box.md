@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너-.NET 유형 찾아보기 및 선택 대화 상자
+description: .NET 형식 찾아보기 및 선택 대화 상자를 사용 하 여 어셈블리 및 프로젝트의 트리 뷰에서 형식을 선택 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597115"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438180"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 
@@ -51,11 +53,11 @@ ms.locfileid: "75597115"
 
 2. 사용할 형식 이름이 **형식 이름** 상자의 트리에 표시 되 면 형식을 클릭 하 여이를 선택 하면 드롭다운 상자가 표시 됩니다.
 
-     드롭다운 상자에서 제네릭를 닫는 데 사용할 형식을 선택 하 고 **확인**을 클릭 합니다.
+     드롭다운 상자에서 제네릭를 닫는 데 사용할 형식을 선택 하 고 **확인** 을 클릭 합니다.
 
 ## <a name="types-displayed-in-the-type-browser"></a>형식 브라우저에 표시된 형식
 
-형식 브라우저에 표시되는 형식은 형식 브라우저의 시작 방식에 따라 달라질 수 있습니다. **Vs2010**내부의 워크플로 프로젝트에서 형식 브라우저를 시작한 경우에는 기본적으로 참조 되는 어셈블리 및 참조 된 프로젝트의 모든 형식이 표시 됩니다. **Vs2010** 프로젝트 시스템 외부에서 형식 브라우저가 시작 된 경우 (예: 다시 호스트 된 워크플로 응용 프로그램 또는 독립 실행형 워크플로 파일에서) AppDomain에 로드 된 모든 어셈블리의 형식이 기본적으로 표시 됩니다.
+형식 브라우저에 표시되는 형식은 형식 브라우저의 시작 방식에 따라 달라질 수 있습니다. **Vs2010** 내부의 워크플로 프로젝트에서 형식 브라우저를 시작한 경우에는 기본적으로 참조 되는 어셈블리 및 참조 된 프로젝트의 모든 형식이 표시 됩니다. **Vs2010** 프로젝트 시스템 외부에서 형식 브라우저가 시작 된 경우 (예: 다시 호스트 된 워크플로 응용 프로그램 또는 독립 실행형 워크플로 파일에서) AppDomain에 로드 된 모든 어셈블리의 형식이 기본적으로 표시 됩니다.
 
 활동 디자이너 개발자는 형식 브라우저의 형식을 필터링할 수 있습니다. 특정 활동에서 형식의 하위 집합만 표시되는 경우가 있습니다. 예를 들어 <xref:System.Activities.Statements.TryCatch> 활동의 경우 <xref:System.Exception>에서 파생된 형식만 형식 브라우저에 표시됩니다.
 
@@ -73,6 +75,6 @@ ms.locfileid: "75597115"
 
 서비스 계약 형식을 선택할 때 형식 브라우저는 <xref:System.ServiceModel.ServiceContractAttribute> 특성이 있는 형식만 보여줍니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [활동 디자이너 사용](control-flow-activity-designers.md)

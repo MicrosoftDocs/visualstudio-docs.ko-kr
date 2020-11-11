@@ -1,5 +1,7 @@
 ---
 title: Workflow Designer로 애플리케이션 개발
+description: Visual Studio에서 WF 응용 프로그램을 그래픽으로 생성 하 고 디버깅 하는 데 사용할 수 있는 워크플로 디자이너를 사용 하 여 응용 프로그램을 개발 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88825e5328fc11702a503311b227fde155c79d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438076"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>워크플로 디자이너를 사용하여 앱 개발
 
@@ -31,7 +33,7 @@ ms.locfileid: "85814722"
 
 Visual Studio에서 워크플로 프로젝트 템플릿을 사용 하려면 먼저 **Windows Workflow Foundation** 구성 요소를 설치 합니다.
 
-1. Visual Studio 설치 관리자를 엽니다. **Tools**  >  Visual Studio에서 도구**가져오기 도구 및 기능** 을 선택 하 여 신속 하 게 열 수 있습니다.
+1. Visual Studio 설치 관리자를 엽니다. **Tools**  >  Visual Studio에서 도구 **가져오기 도구 및 기능** 을 선택 하 여 신속 하 게 열 수 있습니다.
 
 1. Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택 합니다.
 
@@ -39,10 +41,10 @@ Visual Studio에서 워크플로 프로젝트 템플릿을 사용 하려면 먼�
 
    ![Visual Studio 용 Windows Workflow Foundation 구성 요소](media/windows-workflow-foundation-component.png)
 
-1. **수정**을 선택합니다.
+1. **수정** 을 선택합니다.
 
    Visual Studio에서 **Windows Workflow Foundation** 구성 요소를 설치 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 이동 경로 탐색 사용'
+description: 이동 경로 탐색을 사용 하 여 자식 활동에 액세스 하거나 상위 활동으로 이동 하거나 활동를 확장 또는 축소 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817465"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437894"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>방법: 이동 경로 탐색 사용
 
@@ -42,7 +44,7 @@ ms.locfileid: "85817465"
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>모든 활동 확장명 또는 축소
 
-1. 사용자 인터페이스의 모두 **확장** 및 **모두 축소** 단추를 사용 하 여 현재 이동 경로 루트의 모든 활동을 확장 하거나 축소 합니다. 모두 확장 및 모두 축소는 전역 상태입니다. 즉, 이동 경로 탐색을 사용 하 여 루트 활동을 변경 하는 경우 **복원**을 클릭할 때까지 모두 확장 또는 모두 축소 상태가 지속 됩니다.
+1. 사용자 인터페이스의 모두 **확장** 및 **모두 축소** 단추를 사용 하 여 현재 이동 경로 루트의 모든 활동을 확장 하거나 축소 합니다. 모두 확장 및 모두 축소는 전역 상태입니다. 즉, 이동 경로 탐색을 사용 하 여 루트 활동을 변경 하는 경우 **복원** 을 클릭할 때까지 모두 확장 또는 모두 축소 상태가 지속 됩니다.
 
 2. 모두 확장 또는 모두 축소 상태를 적용 한 후에는 표시 되는 **복원** 단추를 클릭 하 여 이전에 각 작업에 적용 된 상태를 볼 수 있습니다.
 
@@ -50,4 +52,4 @@ ms.locfileid: "85817465"
     > 와 같은 활동이 <xref:System.Activities.Statements.Flowchart> 현재 위치의 확장에서 옵트아웃 된 경우 **모두 확장** 및 **모두 축소** 단추와 연결 된 기능을 **순서도** 디자이너에서 사용할 수 없습니다. **순서도** 디자이너에 대 한 자세한 내용은 [flowchart](../workflow-designer/flowchart-activity-designer.md) 항목을 참조 하세요.
 
     > [!WARNING]
-    > 모두 확장은 **Switch** 및 **TryCatch** activity designer에서 특수 한 효과를 가집니다. **모두 확장**을 클릭 하면 모든 스위치 사례와 모든 try/catch/finally 블록이 표시 됩니다. **복원** 또는 **모두 축소** 를 클릭 하면 이러한 디자이너가 기본 상태로 돌아갑니다. 여기서 개별 case/블록을 클릭 하 여 해당 내용을 볼 수 있습니다.
+    > 모두 확장은 **Switch** 및 **TryCatch** activity designer에서 특수 한 효과를 가집니다. **모두 확장** 을 클릭 하면 모든 스위치 사례와 모든 try/catch/finally 블록이 표시 됩니다. **복원** 또는 **모두 축소** 를 클릭 하면 이러한 디자이너가 기본 상태로 돌아갑니다. 여기서 개별 case/블록을 클릭 하 여 해당 내용을 볼 수 있습니다.

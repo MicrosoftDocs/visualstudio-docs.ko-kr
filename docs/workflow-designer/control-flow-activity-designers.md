@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너-제어 흐름 활동 디자이너
+description: 워크플로 내에서 흐름을 제어 하는 데 사용 되는 시스템 제공 활동에 해당 하는 제어 흐름 활동 디자이너에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7cf2f4f05db2fbc06c6209d5b39b211dd731f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114675"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438141"
 ---
 # <a name="control-flow-activity-designers"></a>제어 흐름 활동 디자이너
 
@@ -49,13 +51,13 @@ ms.locfileid: "76114675"
 
  [활동 디자이너 사용](control-flow-activity-designers.md)
 
- [순서도](../workflow-designer/flowchart-activity-designers.md)
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)
 
  [메시징](../workflow-designer/messaging-activity-designers.md)
 
  [런타임](../workflow-designer/runtime-activity-designers.md)
 
- [기본 요소](../workflow-designer/primitives-activity-designers.md)
+ [기본 형식](../workflow-designer/primitives-activity-designers.md)
 
  [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

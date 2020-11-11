@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 도구 상자에 활동 추가'
+description: 현재 프로젝트 내에서 추가 하거나 다른 프로젝트에서 참조 하 여 솔루션의 도구 상자에 활동을 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815827"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437946"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>방법: 도구 상자에 활동 추가
 
@@ -46,18 +48,18 @@ ms.locfileid: "85815827"
 
 1. 워크플로 솔루션을 엽니다.
 
-2. **도구** 메뉴에서 **도구 상자 항목 선택**을 선택 합니다.
+2. **도구** 메뉴에서 **도구 상자 항목 선택** 을 선택 합니다.
 
 3. **도구 상자 항목 선택** 대화 상자에서 **시스템-작업 구성 요소** 탭을 선택한 다음 **찾아보기** 를 클릭 하 여 추가할 사용자 지정 활동이 포함 된 어셈블리로 이동 합니다.
 
-4. 어셈블리를 선택 하 고 **확인을**클릭 합니다. 사용자 지정 활동 구성 요소가 구성 요소 목록에 추가되고 자동으로 선택됩니다.
+4. 어셈블리를 선택 하 고 **확인을** 클릭 합니다. 사용자 지정 활동 구성 요소가 구성 요소 목록에 추가되고 자동으로 선택됩니다.
 
-    1. **확인**을 클릭하여 대화 상자를 닫습니다.
+    1. **확인** 을 클릭하여 대화 상자를 닫습니다.
 
 5. 도구 상자를 표시 하려면 **보기** 메뉴에서 **도구 상자** 를 선택 합니다.
 
 6. 사용자 지정 작업은 **도구 상자** 에서 항목이 추가 되기 전에 포커스가 있던 범주 아래에 나타납니다. 예를 들어 도구 상자 항목을 추가 하기 전에 **도구 상자** 에서 **일반** 범주를 선택 하면 활동이 **일반** 범주 아래에 나타납니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)

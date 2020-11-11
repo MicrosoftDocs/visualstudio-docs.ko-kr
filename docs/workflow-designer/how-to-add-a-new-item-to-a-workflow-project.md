@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너: 워크플로 프로젝트에 새 항목 추가'
+description: 워크플로 프로젝트를 만든 후 워크플로 활동, 디자이너 및 기타 친숙 한 Visual Studio 항목을 프로젝트에 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814618"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437972"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>방법: 워크플로 프로젝트에 새 항목 추가
 
@@ -21,7 +23,7 @@ ms.locfileid: "85814618"
 
 다음 표에서는 워크플로 프로젝트에 추가할 수 있는 WF (Windows Workflow Foundation) 항목을 보여 줍니다.
 
-| Name | 설명 |
+| Name | Description |
 |-| - |
 | 활동 | 다른 활동으로 구성할 활동입니다. 이 항목을 선택 하면 새 프로젝트의 **활동 라이브러리** 템플릿을 선택할 때와 동일한 XAML 파일이 프로젝트에 추가 됩니다. 이 절차에 대 한 자세한 내용은 [워크플로 프로젝트 만들기](creating-a-workflow-project.md)를 참조 하세요. |
 | 활동 디자이너 | 활동의 디자인 타임 환경을 사용자 지정할 디자이너입니다. 이 항목을 선택 하면 새 프로젝트에 대해 **Activity Designer 라이브러리** 템플릿을 선택할 때와 동일한 파일이 프로젝트에 추가 됩니다. |
@@ -30,7 +32,7 @@ ms.locfileid: "85814618"
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>워크플로 프로젝트에 새 항목을 추가하려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
    **새 항목 추가** 대화 상자가 열립니다.
 
@@ -43,6 +45,6 @@ ms.locfileid: "85814618"
 
 1. **추가** 를 선택 하 여 프로젝트에 항목을 추가 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [워크플로 프로젝트 만들기](../workflow-designer/creating-a-workflow-project.md)

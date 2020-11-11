@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너 CorrelationScope 활동 디자이너
+description: CorrelationScope activity designer를 사용 하 여 CorrelationScope 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876101"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438115"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 활동 디자이너
 
@@ -27,7 +29,7 @@ ms.locfileid: "86876101"
 
 ### <a name="use-the-correlationscope-activity-designer"></a>CorrelationScope 활동 디자이너 사용
 
-**CorrelationScope** 활동 디자이너는 **도구 상자**의 **메시징** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X**를 누릅니다.
+**CorrelationScope** 활동 디자이너는 **도구 상자** 의 **메시징** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너 왼쪽에 있는 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** + **Alt** + **X** 를 누릅니다.
 
 **CorrelationScope** 활동 디자이너를 **도구 상자** 에서 끌어서 워크플로 디자이너 화면에 놓을 수 있습니다. 그러면 <xref:System.ServiceModel.Activities.CorrelationScope> 기본 **DisplayName** 이 CorrelationScope 인 활동이 만들어집니다. <xref:System.Activities.Activity.DisplayName%2A> **CorrelationScope** 활동 디자이너의 머리글 또는 **속성** 창의 **DisplayName** 상자에서을 편집할 수 있습니다.
 
@@ -39,13 +41,13 @@ ms.locfileid: "86876101"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.CorrelationScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 **속성** 창이 나 워크플로 디자이너 화면에서 편집할 수 있으며 둘 다에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용량|
+|속성 이름|필수|사용|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 선택적 이름입니다.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|자식 메시징 활동을 관리하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>을 지정합니다. 이 속성을 설정하지 않으면 <xref:System.ServiceModel.Activities.CorrelationScope>는 자동으로 <xref:System.ServiceModel.Activities.CorrelationHandle>을 만듭니다.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|상관 관계 범위 내에 활동을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 선택적 이름입니다.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|거짓|자식 메시징 활동을 관리하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>을 지정합니다. 이 속성을 설정하지 않으면 <xref:System.ServiceModel.Activities.CorrelationScope>는 자동으로 <xref:System.ServiceModel.Activities.CorrelationHandle>을 만듭니다.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|거짓|상관 관계 범위 내에 활동을 지정합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [받습니다](../workflow-designer/receive-activity-designer.md)

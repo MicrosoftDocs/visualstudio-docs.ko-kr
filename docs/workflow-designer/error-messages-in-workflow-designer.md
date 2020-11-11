@@ -1,5 +1,7 @@
 ---
 title: Workflow Designer의 오류 메시지
+description: 워크플로 디자이너 작업할 때 발생할 수 있는 오류 메시지 유형에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f3886739cbc6deefd13570ae0f49da7e89ad9b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597050"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438037"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
 
@@ -37,7 +39,7 @@ ms.locfileid: "75597050"
 
 잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로 빌드는 성공 하지만 <xref:System.Activities.InvalidWorkflowException> 런타임 시이 throw 됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
 
-Visual Studio 내에서 워크플로를 로드 하면 해당 오류가 **오류 목록**표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록**에서 오류를 두 번 클릭 합니다.
+Visual Studio 내에서 워크플로를 로드 하면 해당 오류가 **오류 목록** 표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록** 에서 오류를 두 번 클릭 합니다.
 
 ### <a name="expression-errors"></a>식 오류
  잘못된 식에는 식 앞에 빨간색 원과 흰색 느낌표가 표시됩니다. 하지만 이 아이콘 위로 마우스를 가져가면 오류의 원인을 설명하는 도구 설명이 표시됩니다. Visual Studio 내에서 식을 클릭 하 여 오류의 원본에 밑줄을 표시 하는 줄을 표시 합니다. 밑줄이 그어진 텍스트 위로 마우스를 가져가면 오류의 원인을 설명하는 도구 설명이 표시됩니다.

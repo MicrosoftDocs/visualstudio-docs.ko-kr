@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너: 활동 대리자 정의 및 사용'
+description: 활동 대리자를 정의 하 고 사용 하는 데 사용할 수 있는 InvokeDelegate 활동에 대 한 기본 디자이너가 .NET Framework 4.5에 포함 되어 있는지 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817504"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437920"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 
@@ -26,31 +28,31 @@ ms.locfileid: "85817504"
    > [!NOTE]
    > **워크플로** 프로젝트 템플릿이 표시 되지 않는 경우 먼저 Visual Studio의 **Windows Workflow Foundation** 구성 요소를 설치 합니다. 자세한 지침은 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)를 참조 하세요.
 
-3. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **워크플로** 범주를 선택 하 고 **작업** 항목 템플릿을 선택 합니다. 새 활동의 이름을 **Myforeach. .xaml** 로 지정한 다음 **확인을**선택 합니다.
+3. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **워크플로** 범주를 선택 하 고 **작업** 항목 템플릿을 선택 합니다. 새 활동의 이름을 **Myforeach. .xaml** 로 지정한 다음 **확인을** 선택 합니다.
 
    활동은 workflow designer에서 열립니다.
 
 4. 워크플로 디자이너에서 **인수** 탭을 클릭 합니다.
 
-5. **인수 만들기**를 클릭합니다. 새 인수 **항목**의 이름을로 합니다.
+5. **인수 만들기** 를 클릭합니다. 새 인수 **항목** 의 이름을로 합니다.
 
 6. **인수 형식** 열에서 **배열 [T]** 를 선택 합니다.
 
-7. 유형 브라우저에서 **개체** 를 선택한 다음 **확인**을 선택 합니다.
+7. 유형 브라우저에서 **개체** 를 선택한 다음 **확인** 을 선택 합니다.
 
-8. **인수 만들기** 를 다시 클릭 합니다. 새 인수 **본문**의 이름을로 합니다. 새 인수에 대 한 **방향** 열에서 **속성**을 선택 합니다.
+8. **인수 만들기** 를 다시 클릭 합니다. 새 인수 **본문** 의 이름을로 합니다. 새 인수에 대 한 **방향** 열에서 **속성** 을 선택 합니다.
 
 9. 인수 형식 열에서 **형식 찾아보기** 를 선택 합니다.
 
-10. 유형 브라우저의 **유형 이름** 필드에 **activityaction** 을 입력 합니다. 트리 뷰에서 **Activityaction \<T> ** 을 선택 합니다. 인수에 **Activityaction \<Object> ** 유형을 할당 하는 데 나타나는 드롭다운에서 **개체** 를 선택 합니다.
+10. 유형 브라우저의 **유형 이름** 필드에 **activityaction** 을 입력 합니다. 트리 뷰에서 **Activityaction \<T>** 을 선택 합니다. 인수에 **Activityaction \<Object>** 유형을 할당 하는 데 나타나는 드롭다운에서 **개체** 를 선택 합니다.
 
 11. 활동을 <xref:System.Activities.Statements.While> 도구 상자의 **제어 흐름** 섹션에서 디자이너 화면으로 끌어 옵니다.
 
 12. <xref:System.Activities.Statements.While>활동을 선택 하 고 **변수** 탭을 선택 합니다.
 
-13. **변수 만들기**를 선택 합니다. 새 변수 **인덱스**의 이름을로 합니다.
+13. **변수 만들기** 를 선택 합니다. 새 변수 **인덱스** 의 이름을로 합니다.
 
-14. **변수 형식** 열에서 **Int32**를 선택 합니다. **범위** 는 **While**으로, **기본** 열은 비워 둡니다.
+14. **변수 형식** 열에서 **Int32** 를 선택 합니다. **범위** 는 **While** 으로, **기본** 열은 비워 둡니다.
 
 15. 활동의 **Condition** 속성 <xref:System.Activities.Statements.While> 을 **인덱스 < 항목. Length;** 로 설정 합니다.
 
@@ -64,15 +66,15 @@ ms.locfileid: "85817504"
 
 20. <xref:System.Activities.Statements.Assign> 활동을 <xref:System.Activities.Statements.InvokeDelegate> 활동 아래의 가로선으로 끌어 놓습니다. <xref:System.Activities.Statements.Assign>활동이 만들어지고 <xref:System.Activities.Statements.Sequence> 활동은 **Myforeach** 활동의 **Body** 섹션에 두 활동을 포함 하는 활동을 자동으로 만듭니다. **본문** 섹션에는 단일 활동만 포함할 수 있으므로 시퀀스가 필요 합니다. 새 활동을 자동으로 만드는 <xref:System.Activities.Statements.Sequence> 것은 .NET Framework 4.5의 새로운 기능입니다.
 
-21. 활동의 **to** 속성을 <xref:System.Activities.Statements.Assign> **index**로 설정 합니다. **Assign** 활동의 **Value** 속성을 **인덱스 + 1**로 설정 합니다.
+21. 활동의 **to** 속성을 <xref:System.Activities.Statements.Assign> **index** 로 설정 합니다. **Assign** 활동의 **Value** 속성을 **인덱스 + 1** 로 설정 합니다.
 
     사용자 지정 **Myforeach** 작업은 **항목** 컬렉션을 통해 전달 된 각 값에 대해 임의의 활동을 한 번 호출 하 고 컬렉션의 값을 활동의 입력으로 사용 합니다.
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>워크플로에서 사용자 지정 활동 사용
 
-1. **Ctrl** + **Shift** + **B**를 눌러 프로젝트를 빌드합니다.
+1. **Ctrl** + **Shift** + **B** 를 눌러 프로젝트를 빌드합니다.
 
-2. **솔루션 탐색기**의 디자이너에서 **workflow1.vb** 를 엽니다.
+2. **솔루션 탐색기** 의 디자이너에서 **workflow1.vb** 를 엽니다.
 
 3. 도구 상자에서 **Myforeach** 활동을 디자이너 화면으로 끌어 옵니다. 작업은 도구 상자에서 프로젝트와 이름이 같은 섹션에 있습니다.
 

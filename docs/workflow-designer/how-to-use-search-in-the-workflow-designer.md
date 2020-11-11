@@ -1,5 +1,7 @@
 ---
 title: '방법: Workflow Designer에서 검색 사용'
+description: 더 크고 복잡 한 워크플로를 쉽게 만들 수 있도록 워크플로 디자이너 내에서 검색 하 여 키워드별로 항목을 찾는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ad6f8b6d3afd1f30f2e9a02eaa4927fb3608d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817478"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437907"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: Workflow Designer에서 검색 사용
 
@@ -29,13 +31,13 @@ ms.locfileid: "85817478"
 
 - 인수
 
-- 식
+- 표현식
 
 ### <a name="use-quick-find"></a>빠른 찾기 사용
 
-1. Workflow designer를 연 상태에서 **ctrl + F**를 누르거나 찾기 **편집**  >  **을 선택 하 고**  >  **빠른 찾기**를 바꿉니다.
+1. Workflow designer를 연 상태에서 **ctrl + F** 를 누르거나 찾기 **편집**  >  **을 선택 하 고**  >  **빠른 찾기** 를 바꿉니다.
 
-2. **찾을 내용** 텍스트 상자에 검색 용어를 입력 하 고 **다음 찾기**를 클릭 합니다.
+2. **찾을 내용** 텍스트 상자에 검색 용어를 입력 하 고 **다음 찾기** 를 클릭 합니다.
 
 3. 검색 용어는 현재 워크플로에 있습니다. 다음 그림은 디자이너에 있는 활동 표시 이름을 보여 줍니다.
 
@@ -47,8 +49,8 @@ ms.locfileid: "85817478"
 
 ### <a name="use-find-in-files"></a>파일에서 찾기 사용
 
-1. Visual Studio에서 **ctrl** + **Shift** + **F**를 누르거나, 찾기 **편집**  >  **을 선택 하 고**  >  **파일에서 찾기**를 바꾸기를 선택 합니다.
+1. Visual Studio에서 **ctrl** + **Shift** + **F** 를 누르거나, 찾기 **편집**  >  **을 선택 하 고**  >  **파일에서 찾기** 를 바꾸기를 선택 합니다.
 
-2. **찾을 내용** 텍스트 상자에 검색 항목을 입력 하 고 **모두 찾기**를 클릭 합니다.
+2. **찾을 내용** 텍스트 상자에 검색 항목을 입력 하 고 **모두 찾기** 를 클릭 합니다.
 
 3. **찾기 결과 보기에** 찾기 결과가 표시 됩니다. 결과 항목을 두 번 클릭 하면 workflow designer의 일치 항목이 포함 된 활동으로 이동 합니다.

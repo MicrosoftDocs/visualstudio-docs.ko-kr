@@ -1,5 +1,7 @@
 ---
 title: '워크플로 디자이너-방법: 워크플로에 주석 추가'
+description: '.NET Framework 4.5를 사용 하 여 개발자가 디자이너의 특정 항목 형식 (예: 작업, 상태 및 전환 항목)에 주석을 추가 하는 방법을 알아봅니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815502"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437959"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 워크플로에 주석 추가
 
@@ -59,21 +61,21 @@ ms.locfileid: "85815502"
 
 ## <a name="showing-or-hiding-all-annotations"></a>모든 주석 표시 또는 숨기기
 
-1. 주석이 있는 활동을 마우스 오른쪽 단추로 클릭합니다. **주석**, **모든 주석 표시**를 선택 합니다.
+1. 주석이 있는 활동을 마우스 오른쪽 단추로 클릭합니다. **주석** , **모든 주석 표시** 를 선택 합니다.
 
    모든 주석은 활동의 디자이너에 표시 됩니다.
 
-1. 활동 디자이너 외부에 모든 주석을 표시 하려면 활동을 마우스 오른쪽 단추로 클릭 하 고 **주석**, **모든 주석 숨기기**를 선택 합니다.
+1. 활동 디자이너 외부에 모든 주석을 표시 하려면 활동을 마우스 오른쪽 단추로 클릭 하 고 **주석** , **모든 주석 숨기기** 를 선택 합니다.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>활동 주석 편집 또는 삭제
 
 1. 주석이 있는 활동을 마우스 오른쪽 단추로 클릭합니다.
 
-1. 주석 **,** **주석 편집** 또는 **주석 삭제**를 선택 합니다.
+1. 주석 **,** **주석 편집** 또는 **주석 삭제** 를 선택 합니다.
 
    주석이 편집 또는 삭제를 위해 열립니다.
 
-1. 모든 주석을 한 번에 삭제 하려면 워크플로 디자이너를 마우스 오른쪽 단추로 클릭 하 고 **주석**, **모든 주석 삭제**를 선택 합니다.
+1. 모든 주석을 한 번에 삭제 하려면 워크플로 디자이너를 마우스 오른쪽 단추로 클릭 하 고 **주석** , **모든 주석 삭제** 를 선택 합니다.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>변수 또는 인수에 대한 주석 추가, 편집 및 삭제
 

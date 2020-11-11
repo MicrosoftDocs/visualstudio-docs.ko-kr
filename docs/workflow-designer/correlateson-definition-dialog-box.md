@@ -1,5 +1,7 @@
 ---
 title: 워크플로 디자이너-CorrelatesOn 정의 대화 상자
+description: 워크플로 디자이너에서 CorrelatesOn 대화 상자를 사용 하 여 Receive 활동의 CorrelatesOn 속성을 편집 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876127"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438128"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 정의 대화 상자
 
@@ -25,7 +27,7 @@ ms.locfileid: "86876127"
 
 다음 표에서는 **CorrelatesOn** 대화 상자의 UI (사용자 인터페이스) 요소에 대해 설명 합니다.
 
-|UI 요소|설명|
+|UI 요소|Description|
 |-|-----------------|
 |**CorrelatesWith**|메시지를 적절한 워크플로 인스턴스로 라우팅하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
 |**XPath 쿼리**|받은 메시지에서 상관 관계 데이터를 추출하는 데 사용되는 쿼리가 포함된 키/값 쌍입니다. 이 값은 속성에 해당 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 합니다. XPath 쿼리는 <xref:System.ServiceModel.MessageQuerySet> 개체에 포함되어 있습니다.|
@@ -34,7 +36,7 @@ ms.locfileid: "86876127"
 
 활동은 일반적으로 활동을 배치 **하는 위치** 에 관계 없이 **도구 상자** 에서 끌어서 워크플로 디자이너 화면에 놓을 수 있습니다. 활동 디자이너를 삭제 하면 <xref:System.ServiceModel.Activities.Receive> 기본 Receive를 사용 하는 활동이 만들어집니다 <xref:System.Activities.Activity.DisplayName%2A> . **CorrelatesOn 정의** 대화 상자를 열려면 **Receive** 활동 디자이너를 선택한 다음 속성 표에서 **CorrelatesOn** 속성에 대 한 컬렉션 텍스트 옆에 있는 줄임표 단추를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [상관 관계 이니셜라이저 추가 대화 상자](../workflow-designer/add-correlationinitializers-dialog-box.md)
