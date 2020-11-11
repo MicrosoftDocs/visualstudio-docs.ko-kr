@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099442"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414323"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -43,7 +43,7 @@ ms.locfileid: "92099442"
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
 
 | 프로젝트 형식 | 고객 지원팀 |
 | --- | --- |

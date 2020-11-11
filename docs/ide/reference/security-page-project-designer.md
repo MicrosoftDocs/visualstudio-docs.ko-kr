@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 보안 페이지
+description: 프로젝트 디자이너의 보안 페이지는 ClickOnce 배포를 사용하여 배포된 애플리케이션에 대한 코드 액세스 보안 설정을 구성하는 데 사용됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418901"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350259"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 
-**프로젝트 디자이너**의 **보안** 페이지는 ClickOnce 배포를 사용하여 배포된 애플리케이션에 대한 코드 액세스 보안 설정을 구성하는 데 사용됩니다. 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
+**프로젝트 디자이너** 의 **보안** 페이지는 ClickOnce 배포를 사용하여 배포된 애플리케이션에 대한 코드 액세스 보안 설정을 구성하는 데 사용됩니다. 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
 
-이 **보안** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 클릭한 다음 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **보안** 탭을 클릭합니다.
+이 **보안** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드를 클릭한 다음 **프로젝트** 메뉴에서 **속성** 을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **보안** 탭을 클릭합니다.
 
 ## <a name="security-settings"></a>보안 설정
 
@@ -52,7 +54,7 @@ WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기
 
  **부분 신뢰 애플리케이션**
 
-이 옵션을 선택하면 애플리케이션은 클라이언트 컴퓨터에서 설치되거나 실행될 때 부분 신뢰 권한을 요청합니다. *부분 신뢰*는 요청된 코드 액세스 보안 권한 하에서 허용된 작업만이 실행됨을 의미합니다. 보안 권한을 구성하는 방법에 대한 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
+이 옵션을 선택하면 애플리케이션은 클라이언트 컴퓨터에서 설치되거나 실행될 때 부분 신뢰 권한을 요청합니다. *부분 신뢰* 는 요청된 코드 액세스 보안 권한 하에서 허용된 작업만이 실행됨을 의미합니다. 보안 권한을 구성하는 방법에 대한 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
 
 **ClickOnce 보안 권한** 영역에서 옵션을 구성하여 부분 신뢰 보안 설정을 지정할 수 있습니다.
 
@@ -60,9 +62,9 @@ WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기
 
  **설치할 애플리케이션을 가져올 영역**
 
-코드 액세스 보안 권한의 기본 집합을 지정합니다. 제한된 권한 집합에 **인터넷** 또는 **로컬 인트라넷**을 선택하거나 **(사용자 지정)** 을 선택하여 사용자 지정 권한 집합을 구성합니다. 애플리케이션이 영역에 부여된 것보다 많은 권한을 요청할 경우 추가 권한을 부여할 최종 사용자에게 ClickOnce 신뢰 프롬프트가 표시됩니다. 보안 권한을 구성하는 방법에 대한 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
+코드 액세스 보안 권한의 기본 집합을 지정합니다. 제한된 권한 집합에 **인터넷** 또는 **로컬 인트라넷** 을 선택하거나 **(사용자 지정)** 을 선택하여 사용자 지정 권한 집합을 구성합니다. 애플리케이션이 영역에 부여된 것보다 많은 권한을 요청할 경우 추가 권한을 부여할 최종 사용자에게 ClickOnce 신뢰 프롬프트가 표시됩니다. 보안 권한을 구성하는 방법에 대한 자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.
 
-WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기본적으로 **인터넷**으로 설정됩니다.
+WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기본적으로 **인터넷** 으로 설정됩니다.
 
  **권한 XML 편집**
 

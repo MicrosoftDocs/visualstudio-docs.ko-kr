@@ -14,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947780"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414544"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -252,7 +252,7 @@ VSDoc는 이제 더 쉽게 작성할 수 있고 JavaScript의 표준으로 승�
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 확장
 
-이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](../vs-2015/ide/extending-javascript-intellisense.md)을 작성할 수 있었습니다.
+이전에는 타사 라이브러리용으로 사용자 지정 완료 결과를 추가할 수 있는 [IntelliSense 확장](/previous-versions/visualstudio/visual-studio-2015/ide/extending-javascript-intellisense)을 작성할 수 있었습니다.
 이러한 확장은 작성하기가 매우 어렵고 설치하여 참조하는 작업음 번거로우므로, 새 언어 서비스에서는 앞으로 이러한 파일을 지원하지 않습니다.
 쉬운 대안으로서 TypeScript 정의 파일을 작성하여 이전 `.intellisense.js` 확장과 동일한 IntelliSense 이점을 제공할 수 있습니다.
 선언(`.d.ts`) 파일 작성에 대한 자세한 내용은 [여기](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)에서 알아볼 수 있습니다.

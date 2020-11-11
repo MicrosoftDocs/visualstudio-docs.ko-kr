@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816543"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407551"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 변형
 모든 렌더링 대상 및 스왑 체인에서 MSAA(MultiSample Anti-Aliasing) 설정을 재정의합니다.
@@ -54,7 +54,7 @@ ms.locfileid: "64816543"
 
  재생 시 이러한 종류의 충돌이 감지되면 의도된 동작을 복제하려고 최대한 시도하지만 결과가 정확하게 일치하지 않을 수도 있습니다. 이러한 변형의 영향을 잘못 표현하는 방식으로 이 문제가 해당 변형의 성능에 영향을 미치는 것이 일반적이지 않긴 하지만 복제된 질감의 콘텐츠가 동일하지 않을 수 있으므로 가능합니다. 예를 들어 픽셀 셰이더의 흐름 제어가 질감의 정확한 콘텐츠로 결정되는 경우가 여기에 해당됩니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예 1
  `ID3D11Device::CreateTexture2D`를 사용하여 만든 렌더링 대상에 대해 다음과 같은 코드를 사용하여 이러한 변형을 재현할 수 있습니다.
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
  또는 다음과 같은 코드를 사용하여 IDXGISwapChain::CreateSwapChain 또는 D3D11CreateDeviceAndSwapChain을 사용해 만든 스왑 체인에 대해서도 이러한 변형을 재현할 수 있습니다.
 
 ```cpp

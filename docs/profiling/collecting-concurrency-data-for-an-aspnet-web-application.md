@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811138"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407707"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 ASP.NET 웹 애플리케이션에 대한 동시성 데이터 수집
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 동시성 방법을 사용하면 리소스 경합 데이터를 수집할 수 있습니다.
@@ -54,5 +54,5 @@ ms.locfileid: "90811138"
 
 - [Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>참조
+## <a name="see-also"></a>참조
 - [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)

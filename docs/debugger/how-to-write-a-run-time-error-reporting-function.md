@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073943d8b6a3dbf5ee3af653a43046c3b389fbfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348407"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407642"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>방법: 런타임 오류 보고 함수 작성(C++)
 사용자 지정 런타임 오류 보고 함수는 `_CrtDbgReportW`와 동일하게 선언해야 합니다. 이 함수는 디버거에 1을 값으로 반환해야 합니다.
 
 다음 예제에서는 사용자 지정 보고 함수를 정의하는 방법을 보여 줍니다.
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예제 1
 
 ```cpp
 #include <stdio.h>
@@ -61,7 +61,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예 2
 다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)을 참조하세요.
 
 ```cpp
@@ -106,7 +106,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)
 ```
 
-## <a name="example"></a>예제
+## <a name="example-3"></a>예제 3
 `_RTC_SetErrorFuncW`를 사용하여 `_CrtDbgReportW` 대신 사용자 지정 함수를 설치합니다. 자세한 내용은 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)를 참조하세요. `_RTC_SetErrorFuncW`의 반환 값은 이전 보고 함수이며 필요한 경우 이를 저장하고 복원할 수 있습니다.
 
 ```cpp

@@ -3,14 +3,14 @@ title: Visual Studio 사용자 환경 개선 프로그램
 description: Mac용 Visual Studio에서 개인 정보 설정을 관리하는 방법을 알아봅니다.
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284267"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438206"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
 
@@ -24,7 +24,7 @@ VSCEIP는 기본적으로 켜져 있습니다. 아래 지침에 따라 사용 �
 
 1. Mac용 Visual Studio를 엽니다.
 
-1. 메뉴 모음에서 **Visual Studio > 기본 설정 > 기타 > 피드백**을 선택합니다.
+1. 메뉴 모음에서 **Visual Studio > 기본 설정 > 기타 > 피드백** 을 선택합니다.
 
 1. 참여에 대한 기본 설정을 선택합니다.
 
@@ -32,10 +32,10 @@ VSCEIP는 기본적으로 켜져 있습니다. 아래 지침에 따라 사용 �
 
 [!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [사용자 환경 개선 프로그램(Windows의 Visual Studio)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Windows의 Visual Studio에서 수집한 시스템에서 생성된 로그](/visualstudio/ide/diagnostic-data-collection)
 * [Mac용 Visual Studio의 문제를 보고하는 방법](report-a-problem.md)
-* [Mac용 Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Mac용 Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/vsm-home)
 * [Microsoft 개인정보처리방침](https://privacy.microsoft.com/privacystatement)
