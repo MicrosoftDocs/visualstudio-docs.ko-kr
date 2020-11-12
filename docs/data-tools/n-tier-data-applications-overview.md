@@ -1,5 +1,7 @@
 ---
 title: N 계층 데이터 애플리케이션 개요
+description: N 계층 데이터 애플리케이션 개요를 살펴봅니다. 분산 애플리케이션 또는 다중 계층 애플리케이션이라고도 하는 이러한 데이터 애플리케이션은 여러 계층으로 구분됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426865"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436213"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
 ‘N 계층’ 데이터 애플리케이션은 여러 ‘계층’으로 분리된 데이터 애플리케이션입니다.  “분산 앱”과 “다중 계층 애플리케이션”이라고도 하는 N 계층 애플리케이션은 클라이언트 및 서버 간에 분산되는 별개의 계층으로 처리를 분산합니다. 데이터에 액세스하는 애플리케이션을 개발할 때 애플리케이션을 구성하는 여러 계층을 명확하게 구분해야 합니다.

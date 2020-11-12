@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382974"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434495"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>폴더, IIS, Azure 또는 다른 대상에 앱 배포
 
@@ -147,8 +147,12 @@ App Service 게시에 대한 자세한 내용은 다음을 참조하세요.
 
 ## <a name="folder"></a>폴더
 
-파일 시스템에 배포하는 경우 사용자 컴퓨터의 특정 폴더에 애플리케이션의 파일을 복사하면 됩니다. 이 작업은 주로 테스트를 위해 또는 컴퓨터에서 서버도 실행하는 경우 제한된 수의 사용자가 사용할 애플리케이션을 배포하기 위해 사용됩니다. 대상 폴더가 네트워크에서 공유되는 경우 파일 시스템에 배포하면 웹 애플리케이션 파일을 특정 서버에 배포할 수 있는 다른 사용자들이 사용할 수 있게 됩니다.
+파일 시스템에 배포하는 경우 사용자 컴퓨터의 특정 폴더에 애플리케이션의 파일을 복사하면 됩니다. 폴더에 배포하는 작업은 주로 테스트를 위해 또는 컴퓨터에서 서버도 실행하는 경우 제한된 수의 사용자가 사용할 애플리케이션을 배포하기 위해 사용됩니다. 대상 폴더가 네트워크에서 공유되는 경우 파일 시스템에 배포하면 웹 애플리케이션 파일을 특정 서버에 배포할 수 있는 다른 사용자들이 사용할 수 있게 됩니다.
+::: moniker range=">=vs-2019"
+Visual Studio 2019 16.8부터 폴더 대상에는 ClickOnce를 사용하여 .Net Windows 애플리케이션을 게시하는 기능이 포함됩니다.
 
+ClickOnce를 사용하여 .NET Core 3.1 이상 Windows 애플리케이션을 게시하려는 경우 [ClickOnce를 사용하여 .NET Windows 애플리케이션 배포](quickstart-deploy-using-clickonce-folder.md)를 참조하세요.
+::: moniker-end
 구성된 방식이나 연결된 네트워크에 따라 서버를 실행하는 모든 로컬 머신이 인터넷 또는 인트라넷을 통해 애플리케이션을 제공할 수 있습니다. 컴퓨터를 인터넷에 직접 연결하는 경우 외부 보안 위협으로부터 보호하기 위해 특히 주의해야 합니다. 이러한 컴퓨터를 직접 관리하기 때문에 소프트웨어 및 하드웨어 구성에 대한 모든 권한을 갖습니다.
 
 어떤 이유(예: 컴퓨터 액세스)로든 Azure App Service 또는 Azure Virtual Machines와 같은 클라우드 서비스를 사용할 수 없는 경우 고유한 데이터 센터의 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)을 사용할 수 있습니다. Azure Stack을 사용하면 모든 항목을 온-프레미스에서 유지하면서 Azure App Service 및 Azure Virtual Machines를 통해 컴퓨팅 리소스를 관리하고 사용할 수 있습니다.
@@ -156,10 +160,16 @@ App Service 게시에 대한 자세한 내용은 다음을 참조하세요.
 ### <a name="when-to-choose-file-system-deployment"></a>파일 시스템 배포를 선택해야 하는 경우
 
 - 파일 공유에만 애플리케이션을 배포하면 되며, 다른 사용자는 여기서 다른 서버에 배포합니다.
+::: moniker range=">=vs-2019"
+- ClickOnce를 사용하여 .NET Windows 애플리케이션을 배포하려고 합니다.
+::: moniker-end
 - 로컬 테스트 배포만 있으면 됩니다.
 - 다른 배포 대상에 보내기 전에 애플리케이션 파일을 개별적으로 검사하고 수정하려고 합니다.
 
 자세한 내용은 [빠른 시작 - 로컬 폴더에 배포](quickstart-deploy-to-local-folder.md)를 참조하세요.
+::: moniker range=">=vs-2019"
+ClickOnce를 사용하여 .NET Windows 애플리케이션을 배포하는 데 대한 자세한 내용은 [ClickOnce를 사용하여 .NET Windows 애플리케이션 배포](quickstart-deploy-using-clickonce-folder.md)를 참조하세요.
+::: moniker-end
 
 설정을 선택하는 방법에 대한 추가 도움말은 다음을 참조하세요.
 
