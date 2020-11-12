@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Microsoft Store용 데스크톱 앱 패키지
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: ClickOnce를 사용하여 데스크톱 앱 배포
+        - name: ClickOnce를 사용하여 .NET Windows 애플리케이션 배포
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: ClickOnce를 사용하여 .NET Framework 데스크톱 앱 배포
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: 명령줄에서 ClickOnce 애플리케이션 빌드
           href: building-clickonce-applications-from-the-command-line.md
