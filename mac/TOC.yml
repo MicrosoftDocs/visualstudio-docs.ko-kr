@@ -169,7 +169,7 @@
         - name: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
           href: docker-multi-container.md
     - name: Unity 게임 개발
-      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: Xamarin을 사용한 모바일 앱
       href: ./xamarin.md
 - name: 액세스 가능성

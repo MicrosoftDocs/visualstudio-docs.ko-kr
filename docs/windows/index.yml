@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 492b1e9fa0e141651f6871cc678e5473ebe4c7b5
-  ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+  ms.openlocfilehash: 01fee6752bbbc5512e78f3daa313846300a77ca9
+  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/05/2020
-  ms.locfileid: "93400091"
+  ms.lasthandoff: 11/12/2020
+  ms.locfileid: "94567135"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -156,7 +156,7 @@ additionalContent:
     - title: 게임
       links:
       - text: Unity를 사용한 게임 개발
-        url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity.md
+        url: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
       - text: C++를 사용한 게임 개발
         url: /windows/uwp/gaming/e2e
     - title: 기타 도구 집합
