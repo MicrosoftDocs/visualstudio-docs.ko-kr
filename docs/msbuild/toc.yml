@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0의 새로운 기능
       href: what-s-new-in-msbuild-15-0.md
+    - name: 변경 웨이브
+      href: change-waves.md
     - name: MSBuild 개념
       items:
         - name: 개요
