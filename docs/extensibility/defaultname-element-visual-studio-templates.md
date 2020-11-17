@@ -1,5 +1,7 @@
 ---
 title: DefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: DefaultName 요소 및 프로젝트 또는 항목을 만들 때 Visual Studio 프로젝트 시스템에서 생성 하는 이름을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712314"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672732"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 요소 (Visual Studio 템플릿)
 프로젝트 또는 항목을 만들 때 Visual Studio 프로젝트 시스템에서 생성 하는 이름을 지정 합니다.
@@ -63,7 +65,7 @@ ms.locfileid: "80712314"
 
  프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성 하지 않도록 하려면 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) 요소를로 설정 `False` 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 클래스의 표준 항목 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

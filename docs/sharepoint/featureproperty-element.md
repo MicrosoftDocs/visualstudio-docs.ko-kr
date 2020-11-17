@@ -1,5 +1,7 @@
 ---
 title: FeatureProperty 요소 | Microsoft Docs
+description: SharePoint 프로젝트 항목 스키마의 요소인 FeatureProperty 요소에 대 한 참조 정보를 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546525"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672758"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 요소
   SharePoint에 배포 될 때 기능에 포함 되는 사용자 지정 속성을 나타냅니다. 기능이 배포 된 후에는 코드에서 속성에 액세스할 수 있습니다.
@@ -34,9 +36,9 @@ ms.locfileid: "85546525"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|**Key**|필수 **xs: string** 특성입니다.<br /><br /> 속성 값을 저장 하 고 검색 하는 데 사용 되는 키입니다. 각 속성에는 기능 내에서 고유한 키가 있어야 합니다.|
+|**키**|필수 **xs: string** 특성입니다.<br /><br /> 속성 값을 저장 하 고 검색 하는 데 사용 되는 키입니다. 각 속성에는 기능 내에서 고유한 키가 있어야 합니다.|
 |**값**|필수 **xs: string** 특성입니다.<br /><br /> 속성 값입니다.|
 
 ### <a name="child-elements"></a>자식 요소

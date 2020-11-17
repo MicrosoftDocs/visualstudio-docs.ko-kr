@@ -1,5 +1,7 @@
 ---
 title: ExtensionData 요소 | Microsoft Docs
+description: SharePoint 프로젝트 항목 스키마의 요소인 ExtensionData 요소에 대 한 참조 정보를 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b700239f97153cef94ab1d7010ad16ed9aa6001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546564"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672537"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 요소
   SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.

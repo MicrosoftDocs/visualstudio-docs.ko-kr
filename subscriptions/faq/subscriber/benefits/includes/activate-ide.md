@@ -7,12 +7,12 @@ author: evanwindom
 ms.author: v-evwin
 ms.date: 11/12/2020
 ms.faqid: q3_4
-ms.openlocfilehash: afcfa047e8b6b26f8e5d3648c91d684c13d8a59d
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 7e38e477cbcbe17ce5407ba87cd7f26b35b4d174
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575563"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94633441"
 ---
 ## <a name="how-do-i-download-find-a-key-and-activate-the-visual-studio-ide"></a>Visual Studio IDE를 다운로드하고 키를 찾고 활성화하려면 어떻게 하나요?
 구독 수준에 따라 액세스할 수 있는 Visual Studio IDE 수준이 식별됩니다. 예를 들어 Visual Studio Professional 구독에는 Visual Studio Enterprise에 대한 액세스 권한이 없습니다. 사용 중인 수준이 확실하지 않은 경우 포털에서 [구독 페이지](https://my.visualstudio.com/subscriptions)를 참조하여 사용 가능한 구독을 확인하세요. 
@@ -25,4 +25,4 @@ ms.locfileid: "94575563"
 0. 구독이 할당된 전자 메일을 사용하면 설치 후에 즉시 IDE에 로그인 할 수 있으며, **제품 키가 필요하지 않습니다**. 오프라인 환경에 있는 경우 [제품 키를 요청](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)하는 방법을 알아보세요.
 
 ### <a name="find-an-older-version"></a>이전 버전 찾기 
-구독 포털의  [다운로드 페이지](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20mac&pgroup=)에서 이전 버전을 검색하여 다운로드할 수도 있습니다.
+구독 포털의  [다운로드 페이지](https://my.visualstudio.com/Downloads?q=visual%20studio&pgroup=)에서 이전 버전을 검색하여 다운로드할 수도 있습니다.

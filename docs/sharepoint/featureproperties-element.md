@@ -1,5 +1,7 @@
 ---
 title: FeatureProperties 요소 | Microsoft Docs
+description: SharePoint 프로젝트 항목 스키마의 요소인 FeatureProperties 요소에 대 한 참조 정보를 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967333"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672602"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 요소
   SharePoint에 배포 될 때 기능과 함께 포함 되는 속성 값의 컬렉션입니다. 기능이 배포 된 후 코드에서 속성 값에 액세스할 수 있습니다.

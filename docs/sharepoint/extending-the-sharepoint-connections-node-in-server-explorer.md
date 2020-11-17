@@ -1,6 +1,8 @@
 ---
 title: 서버 탐색기에서 SharePoint 연결 노드 확장 Microsoft Docs
 titleSuffix: ''
+description: Visual Studio의 서버 탐색기 창에서 SharePoint 연결 노드를 확장 합니다. 노드에 사용자 지정 속성을 추가 합니다. 기본 제공 노드에 대 한 데이터를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584609"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672563"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>서버 탐색기의 SharePoint 연결 노드 확장
   Visual Studio에서는 **서버 탐색기** 창의 **SharePoint 연결** 노드를 사용 하 여 개발 컴퓨터의 로컬 SharePoint 사이트에 연결할 수 있습니다. 이 노드에는 로컬 SharePoint 사이트의 여러 구성 요소가 계층적 트리 보기로 표시 됩니다. 예를 들어 로컬 사이트의 목록, 문서 라이브러리 및 콘텐츠 형식을 볼 수 있습니다. **서버 탐색기** 를 사용 하 여 로컬 SharePoint 사이트에 연결 하는 방법에 대 한 자세한 내용은 [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)를 참조 하세요.
@@ -67,7 +69,7 @@ ms.locfileid: "91584609"
 
  속성 사용에 대 한 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [방법: 서버 탐색기에서 SharePoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

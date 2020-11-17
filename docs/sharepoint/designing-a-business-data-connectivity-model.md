@@ -1,5 +1,7 @@
 ---
 title: 비즈니스 데이터 연결 모델 디자인 | Microsoft Docs
+description: BDC (비즈니스 데이터 연결) 모델을 디자인 합니다. 엔터티 및 메서드를 추가 합니다. 메서드 매개 변수를 정의 합니다. 필터 설명자를 추가 합니다. BDC 모델의 유효성을 검사 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984460"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672654"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 디자인
   모델 파일에 엔터티 및 메서드를 추가 하 여 BDC (비즈니스 데이터 연결) 서비스용 모델을 개발할 수 있습니다. 엔터티는 데이터 필드의 컬렉션을 설명 합니다. 예를 들어 엔터티는 데이터베이스의 테이블을 나타낼 수 있습니다. 메서드는 엔터티가 나타내는 데이터를 추가, 삭제 또는 업데이트 하는 등의 작업을 수행 합니다. 자세한 내용은 [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)을 참조 하세요.
@@ -42,7 +44,7 @@ ms.locfileid: "72984460"
 ## <a name="define-method-parameters"></a>메서드 매개 변수 정의
  메서드를 만들 때 Visual Studio는 메서드 형식에 적절 한 입력 및 출력 매개 변수를 추가 합니다. 이러한 매개 변수는 자리 표시자 일 뿐입니다. 대부분의 경우 올바른 형식의 데이터를 전달 하거나 반환 하도록 매개 변수를 수정 해야 합니다. 예를 들어 기본적으로 Finder 메서드는 문자열을 반환 합니다. 대부분의 경우 Finder 메서드의 반환 매개 변수를 수정 하 여 엔터티 컬렉션을 반환 하려고 합니다. 매개 변수의 형식 설명자를 수정 하 여이를 수행할 수 있습니다. 형식 설명자는 매개 변수의 데이터 형식을 설명 하는 특성의 컬렉션입니다. 자세한 내용은 [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)를 참조 하세요.
 
- Visual Studio를 사용 하면 모델의 매개 변수 간에 형식 설명자를 복사할 수 있습니다. 예를 들어 `CustomerTD` 메서드의 반환 매개 변수에 대해 라는 형식 설명자를 정의할 수 있습니다 `GetCustomer` . `CustomerTD` **BDC 탐색기**에서 형식 설명자를 복사한 다음 해당 형식 설명자를 메서드의 입력 매개 변수에 붙여 넣을 수 있습니다 `CreateCustomer` . 이렇게 하면 동일한 형식 설명자를 두 번 이상 정의할 필요가 없습니다.
+ Visual Studio를 사용 하면 모델의 매개 변수 간에 형식 설명자를 복사할 수 있습니다. 예를 들어 `CustomerTD` 메서드의 반환 매개 변수에 대해 라는 형식 설명자를 정의할 수 있습니다 `GetCustomer` . `CustomerTD` **BDC 탐색기** 에서 형식 설명자를 복사한 다음 해당 형식 설명자를 메서드의 입력 매개 변수에 붙여 넣을 수 있습니다 `CreateCustomer` . 이렇게 하면 동일한 형식 설명자를 두 번 이상 정의할 필요가 없습니다.
 
 ## <a name="method-instances"></a>메서드 인스턴스
  메서드를 만들 때 Visual Studio는 기본 메서드 인스턴스를 추가 합니다. 메서드 인스턴스는 메서드에 대 한 참조와 매개 변수의 기본값을 더한 값입니다. 단일 메서드에 여러 메서드 인스턴스를 사용할 수 있습니다. 각 인스턴스는 메서드 시그니처와 기본값 집합의 조합입니다. 자세한 내용은 [방법: 매개 변수의 형식 설명자 정의](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)를 참조 하세요.
@@ -57,7 +59,7 @@ ms.locfileid: "72984460"
  SharePoint는 사용자가 필터 값을 제공할 수 있도록 하는 몇 가지 기능을 제공 합니다. 예를 들어 비즈니스 데이터 웹 파트는 필터 텍스트 상자를 제공 합니다. 사용자는 텍스트 상자에 값을 입력하여 목록에서 데이터를 제한할 수 있습니다. 메서드에 필터 설명자를 추가 하는 방법에 대 한 자세한 내용은 [방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)를 참조 하세요.
 
 ### <a name="filter-descriptor-properties"></a>필터 설명자 속성
- 필터 설명자의 **연결 된 형식 설명자**, **이름**및 **형식** 속성의 값을 설정 해야 합니다. 다른 모든 속성은 선택 사항입니다.
+ 필터 설명자의 **연결 된 형식 설명자**, **이름** 및 **형식** 속성의 값을 설정 해야 합니다. 다른 모든 속성은 선택 사항입니다.
 
  **연결 된 형식 설명자** 속성은 필터 설명자를 입력 매개 변수에 연결 합니다. 사용자가 필터 값을 제공 하면 BDC 서비스에서 입력 매개 변수를 사용 하 여 해당 값을 메서드에 전달 합니다.
 
@@ -69,14 +71,14 @@ ms.locfileid: "72984460"
  경우에 따라 사용자가 필터 값을 제공 하지 않을 수 있습니다. 메서드 인스턴스에 기본값을 추가 하거나 메서드 코드의 기본값을 설정 하 여 기본값을 제공할 수 있습니다. 메서드 인스턴스에 기본값을 추가 하는 방법에 대 한 자세한 내용은 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))를 참조 하십시오. 메서드의 코드에서 입력 매개 변수의 기본값을 설정 하는 방법에 대 한 예제는 [방법: Finder 메서드에 필터 설명자 추가](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)를 참조 하세요.
 
 ## <a name="validate-the-model"></a>모델의 유효성 검사
- 개발 하는 동안 모델의 유효성을 검사할 수 있습니다. Visual Studio는 모델이 예상 대로 동작 하지 않을 수 있는 문제를 식별 합니다. 이러한 문제는 Visual Studio **오류 목록**에 나타납니다.
+ 개발 하는 동안 모델의 유효성을 검사할 수 있습니다. Visual Studio는 모델이 예상 대로 동작 하지 않을 수 있는 문제를 식별 합니다. 이러한 문제는 Visual Studio **오류 목록** 에 나타납니다.
 
- BDC 디자이너에 대 한 바로 가기 메뉴를 열고 **유효성 검사**를 선택 하 여 모델의 유효성을 검사할 수 있습니다. 모델에 오류가 포함 되어 있으면 **오류 목록**에 표시 됩니다. 목록에서 오류를 두 번 클릭하여 오류가 포함된 코드로 빠르게 커서를 이동할 수 있습니다. 또는 **f8** 키를 **Shift** + **F8** 반복 해 서 선택 하 여 목록에 있는 오류를 앞으로 또는 뒤로 이동할 수 있습니다.
+ BDC 디자이너에 대 한 바로 가기 메뉴를 열고 **유효성 검사** 를 선택 하 여 모델의 유효성을 검사할 수 있습니다. 모델에 오류가 포함 되어 있으면 **오류 목록** 에 표시 됩니다. 목록에서 오류를 두 번 클릭하여 오류가 포함된 코드로 빠르게 커서를 이동할 수 있습니다. 또는 **f8** 키를 **Shift** + **F8** 반복 해 서 선택 하 여 목록에 있는 오류를 앞으로 또는 뒤로 이동할 수 있습니다.
 
- 모델 규칙을 위반 하는 경우 유효성 검사 오류가 발생할 수 있습니다. 예를 들어 형식 설명자의 **IsCollection** 속성이 **true**로 설정 되어 있지만 자식 형식 설명자가 없는 경우 유효성 검사 오류가 표시 됩니다. Visual Studio **오류 목록**에 표시 되는 일부 오류를 이해 하려면 BDC 모델의 규칙을 참조 해야 할 수 있습니다. BDC 모델의 규칙에 대 한 자세한 내용은 [BDCMetadata 스키마](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))를 참조 하세요.
+ 모델 규칙을 위반 하는 경우 유효성 검사 오류가 발생할 수 있습니다. 예를 들어 형식 설명자의 **IsCollection** 속성이 **true** 로 설정 되어 있지만 자식 형식 설명자가 없는 경우 유효성 검사 오류가 표시 됩니다. Visual Studio **오류 목록** 에 표시 되는 일부 오류를 이해 하려면 BDC 모델의 규칙을 참조 해야 할 수 있습니다. BDC 모델의 규칙에 대 한 자세한 내용은 [BDCMetadata 스키마](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))를 참조 하세요.
 
 ## <a name="debug-the-solution-that-contains-the-model"></a>모델을 포함 하는 솔루션 디버그
- Visual Studio에서 코드를 디버깅 하는 것 처럼 코드를 디버그할 수 있습니다. 코드를 디버그 하려면 코드의 아무 곳에 나 중단점을 설정한 다음 디버거를 시작 합니다. Visual Studio에서 SharePoint 사이트를 엽니다. SharePoint에서 비즈니스 데이터를 사용 하는 목록 또는 웹 파트를 만듭니다. 그런 다음 코드를 단계별로 실행 할 수 있습니다. SharePoint 프로젝트를 디버깅 하는 방법에 대 한 자세한 내용은 [sharepoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)을 참조 하세요.
+ Visual Studio에서 코드를 디버깅 하는 것 처럼 코드를 디버그할 수 있습니다. 코드를 디버그 하려면 코드의 아무 곳에 나 중단점을 설정한 다음 디버거를 시작 합니다. Visual Studio에서 SharePoint 사이트를 엽니다. SharePoint에서 비즈니스 데이터를 사용 하는 목록 또는 웹 파트를 만듭니다. 그런 다음 코드를 단계별로 실행 할 수 있습니다. SharePoint 프로젝트를 디버그하는 방법에 대한 자세한 내용은 [SharePoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)을 참조하세요.
 
  또한 프로젝트에 추가 하는 사용자 지정 어셈블리에서 코드를 디버그할 수 있습니다. 그러나 사용자 지정 어셈블리의 코드를 디버깅 하려면 어셈블리를 솔루션 패키지에 추가 해야 합니다. 자세한 내용은 [방법: 추가 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)를 참조 하세요.
 
@@ -101,10 +103,10 @@ ms.locfileid: "72984460"
 ### <a name="retract-models-that-become-corrupt"></a>손상 된 모델 취소
  디버거를 처음 시작하면 Visual Studio에서 전체 모델을 SharePoint에 배포합니다. 그런 다음, Visual Studio는 각 시간에 대해 배포 간 변경 내용을 적용 하 여 SharePoint의 모델을 업데이트 합니다.
 
- Visual Studio에서 SharePoint의 모델을 완전히 제거 하려는 경우가 있을 수 있습니다. 예를 들어 모델이 손상 될 수 있습니다.  모델을 SharePoint에 다시 배포 하려면 모델의 **증분 업데이트** 속성을 **False**로 설정한 다음 디버거를 시작 합니다. **증분 업데이트** 속성은 **BDC 탐색기**에서 모델을 나타내는 노드를 선택 하면 **속성** 창에 표시 됩니다. 기본적으로 모델의 이름은 **BdcModel1**입니다.
+ Visual Studio에서 SharePoint의 모델을 완전히 제거 하려는 경우가 있을 수 있습니다. 예를 들어 모델이 손상 될 수 있습니다.  모델을 SharePoint에 다시 배포 하려면 모델의 **증분 업데이트** 속성을 **False** 로 설정한 다음 디버거를 시작 합니다. **증분 업데이트** 속성은 **BDC 탐색기** 에서 모델을 나타내는 노드를 선택 하면 **속성** 창에 표시 됩니다. 기본적으로 모델의 이름은 **BdcModel1** 입니다.
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>모델 엔터티의 식별자 이름 변경
- 모델을 배포한 후 식별자의 이름을 변경 하면 배포 오류가 발생할 수 있습니다. 모델의 **증분 업데이트** 속성을 **False**로 설정 하 여이 오류를 해결할 수 없습니다. 모델을 수동으로 취소 한 다음 솔루션을 다시 배포 해야 합니다. 자세한 내용은 [SharePoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)을 참조 하세요. 모델을 처음 배포 하기 전에 **증분 업데이트** 속성을 **False** 로 설정 하 여이 오류를 방지할 수 있습니다.
+ 모델을 배포한 후 식별자의 이름을 변경 하면 배포 오류가 발생할 수 있습니다. 모델의 **증분 업데이트** 속성을 **False** 로 설정 하 여이 오류를 해결할 수 없습니다. 모델을 수동으로 취소 한 다음 솔루션을 다시 배포 해야 합니다. 자세한 내용은 [SharePoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)을 참조 하세요. 모델을 처음 배포 하기 전에 **증분 업데이트** 속성을 **False** 로 설정 하 여이 오류를 방지할 수 있습니다.
 
 ## <a name="locate-documentation-for-bdc-model-elements"></a>BDC 모델 요소에 대 한 설명서 찾기
  Visual Studio에서는 각 엔터티, 메서드 또는 사용자가 만드는 다른 항목에 대 한 XML 요소를 모델에 추가 합니다. 요소 특성은 **속성 창에 속성으로** 표시 됩니다. 모델을 디자인할 때 Visual Studio에서 생성 하는 요소 및 특성에 대 한 자세한 내용은 [BDCMetadata 스키마](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))를 참조 하세요.

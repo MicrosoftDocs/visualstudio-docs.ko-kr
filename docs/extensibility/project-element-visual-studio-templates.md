@@ -1,5 +1,7 @@
 ---
 title: Project 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 프로젝트 요소 및 프로젝트에 추가할 파일이 나 디렉터리를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702000"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672387"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 요소 (Visual Studio 템플릿)
 프로젝트에 추가할 파일 또는 디렉터리를 지정 합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "80702000"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`File`|필수 특성입니다.<br /><br /> 템플릿 *.zip* 파일에 있는 프로젝트 파일의 이름을 지정 합니다.|
 |`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 템플릿에서 프로젝트를 만들 때 교체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|
@@ -73,7 +75,7 @@ ms.locfileid: "80702000"
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**새 프로젝트** 대화 상자에서 사용자가 입력 한 이름에 따라 프로젝트 파일 이름의 이름을 자동으로 바꿉니다. `TargetFileName`템플릿을 사용 하 여 만든 프로젝트 파일에 대 한 대체 파일 이름을 제공 하려는 경우 특성을 사용 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

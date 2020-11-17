@@ -1,5 +1,7 @@
 ---
 title: NumberOfParentCategoriesToRollUp 요소 (템플릿)
+description: NumberOfParentCategoriesToRollUp 요소 및이 요소에 새 프로젝트 대화 상자에 템플릿이 표시 되는 부모 범주의 수를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702364"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672413"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 요소 (Visual Studio 템플릿)
 **새 프로젝트** 대화 상자에 템플릿이 표시 되는 부모 범주 수를 지정 합니다.
@@ -58,7 +60,7 @@ ms.locfileid: "80702364"
 ## <a name="remarks"></a>설명
  `NumberOfParentCategoriesToRollUp`는 선택적 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 Windows 응용 프로그램에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] . 이 메타 데이터가 포함 된 템플릿이 최상위 노드 아래에 두 개의 폴더 수준으로 배치 되는 경우 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿은 **새 프로젝트** 대화 상자의 최상위 노드에 표시 됩니다. `NumberOfParentCategoriesToRollUp`가 설정 되지 않은 경우 템플릿이 실제로 위치한 노드에만 표시 됩니다.
 
 ```xml

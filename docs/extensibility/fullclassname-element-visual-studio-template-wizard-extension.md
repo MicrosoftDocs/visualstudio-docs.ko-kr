@@ -1,5 +1,7 @@
 ---
 title: FullClassName 요소 (VS 템플릿 마법사 확장)
+description: FullClassName 요소와 IWizard 인터페이스를 구현 하는 클래스의 정규화 된 이름에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769603"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672745"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 요소 (Visual Studio 템플릿 마법사 확장)
 인터페이스를 구현 하는 클래스의 정규화 된 이름 `IWizard` 입니다.
@@ -55,7 +57,7 @@ ms.locfileid: "85769603"
 ## <a name="remarks"></a>설명
  `FullClassName`은 `WizardExtension`의 필수 자식 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 Windows 응용 프로그램에 대 한 표준 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

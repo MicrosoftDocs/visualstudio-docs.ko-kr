@@ -1,5 +1,7 @@
 ---
 title: SharePoint 패키징 및 배포 확장 | Microsoft Docs
+description: SharePoint 패키징 및 배포를 확장 합니다. 배포 단계 및 구성을 만듭니다. 배포 충돌을 처리 합니다. 유효성 검사 규칙을 사용자 지정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672589"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 확장
   SharePoint 프로젝트의 패키징 및 배포 프로세스를 확장할 수 있습니다.
@@ -50,9 +52,9 @@ ms.locfileid: "62967466"
  경우에 따라 배포 충돌이 발생할 수 있습니다. 충돌을 해결하는 방법에는 여러 가지가 있습니다. 자세한 내용은 [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)을 참조 하세요.
 
 ## <a name="customize-validation-rules"></a>유효성 검사 규칙 사용자 지정
- 솔루션 패키지(.wsp)를 배포하기 전에 사용자 지정 기능 및 패키지 유효성 검사 규칙을 만들어 기능 또는 패키지가 유효한지 확인할 수 있습니다. 예를 들어, 정보, 경고 또는 오류를 개발자에게 보고하여 개발자가 유효성 검사 문제를 해결하는 데 도움을 줄 수 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조 하세요.
+ 솔루션 패키지(.wsp)를 배포하기 전에 사용자 지정 기능 및 패키지 유효성 검사 규칙을 만들어 기능 또는 패키지가 유효한지 확인할 수 있습니다. 예를 들어, 정보, 경고 또는 오류를 개발자에게 보고하여 개발자가 유효성 검사 문제를 해결하는 데 도움을 줄 수 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [방법: 배포 단계가 실행 될 때 코드 실행](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [연습: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [방법: SharePoint 솔루션에 대 한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

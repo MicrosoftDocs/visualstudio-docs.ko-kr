@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Visual Studio Tools for Unity, Mac의 변경 로그를 확인합니다. 버전 1.0.0.0부터 2.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 5/19/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,70 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72e1897e8eb7f7072ba22189c6414ba2585a6711
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341256"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672849"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2830"></a>2.8.3.0
+2020 년 11 월 10 일 릴리스
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **디버거:**
+
+  - 솔루션에 VSTU 프로젝트가 없는 경우에도 Unity에 연결을 수정 했습니다.
+
+## <a name="2820"></a>2.8.2.0
+2020 년 10 월 27 일 출시
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)뿐만 아니라에서 상속 하는 모든 항목에 적용할 진단이 향상 되었습니다 `Component` `MonoBehaviour` .
+
+## <a name="2810"></a>2.8.1.0
+2020 년 10 월 13 일 출시
+
+### <a name="new-features"></a>새로운 기능
+
+- **평가:**
+
+  - 호출을 사용한 암시적 변환에 대 한 지원이 추가 되었습니다. 이전에는 평가기에서 엄격한 형식 검사를 적용 하 여 `Failed to find a match for method([parameters...])` 경고 메시지를 생성 했습니다.
+
+- **통합:**
+
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 진단이 추가되었습니다. `System.Reflection`,, 또는와 같은 성능 중요 메시지에서는 기능을 사용 하지 않아야 합니다 `Update` `FixedUpdate` `LateUpdate` `OnGUI` .
+
+  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 모든 정적 메서드에 대 한 지원으로 향상 되 고 suppressors `AssetPostprocessor` .
+
+  - `CS8618`에 대한 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 억제 장치가 추가되었습니다. `C# 8.0` nullable 참조 형식 및 nullable이 아닌 참조 형식을 소개 합니다. 에서 상속 되는 형식의 초기화 검색 `UnityEngine.Object` 은 지원 되지 않으며 오류가 발생 합니다.
+
+  - 이제 Unity 2019. x 및 2020 + 모두에 대해 동일한 플레이어 및 asmdef 프로젝트 생성 메커니즘을 사용 합니다.
+  
+  - 마법사를 사용 하 여 Unity 메시지를 생성할 때 사용자 환경이 개선 되었습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 설명의 메시지에 대 한 예기치 않은 완료를 수정 했습니다.
+
+## <a name="2800"></a>2.8.0.0 
+2020 년 9 월 14 일 출시
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 2019. x를 사용 하 여 플레이어 프로젝트 생성을 수정 했습니다.
 
 ## <a name="2710"></a>2.7.1.0
 릴리스 날짜: 2020년 8월 5일

@@ -1,5 +1,7 @@
 ---
 title: Hidden 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 숨겨진 요소 및 템플릿이 새 프로젝트 또는 새 항목 추가 대화 상자에 표시 되는지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711118"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672702"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 요소 (Visual Studio 템플릿)
 
@@ -67,7 +69,7 @@ ms.locfileid: "80711118"
 
 지정 된 경우 요소의 다른 자식 요소 `TemplateData` 는 필요 하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 c # 템플릿에 대 한 메타 데이터를 보여 줍니다.
 
@@ -96,7 +98,7 @@ ms.locfileid: "80711118"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

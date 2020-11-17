@@ -1,5 +1,7 @@
 ---
 title: Folder 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
+description: Folder 요소 및 프로젝트에 추가 되는 폴더를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769586"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672719"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트에 추가 될 폴더를 지정 합니다.
@@ -41,7 +43,7 @@ ms.locfileid: "85769586"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 프로젝트 폴더의 이름입니다.|
 |`TargetFolderName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 폴더에 지정할 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여 폴더 이름을 만들거나 *.zip* 파일에서 직접 사용할 수 없는 국제 문자열로 폴더 이름을 지정 하는 데 유용 합니다.|
@@ -64,7 +66,7 @@ ms.locfileid: "85769586"
 
  다음 방법 중 하나를 사용 하 여 프로젝트 항목을 템플릿에서 폴더로 구성할 수 있습니다.
 
-- 템플릿 *.zip* 파일에 폴더를 포함 하 고 요소 없이 요소에 파일의 경로를 지정 하 여 *.vstemplate* 파일의 프로젝트에 추가 합니다. `ProjectItem` `Folder` 이것이 권장된 방법입니다. 예를 들면 다음과 같습니다.
+- 템플릿 *.zip* 파일에 폴더를 포함 하 고 요소 없이 요소에 파일의 경로를 지정 하 여 *.vstemplate* 파일의 프로젝트에 추가 합니다. `ProjectItem` `Folder` 이것이 권장된 방법입니다. 예를 들어:
 
      `...`
 
@@ -74,7 +76,7 @@ ms.locfileid: "85769586"
 
      `...`
 
-- 템플릿 *.zip* 파일에 폴더를 포함 하 고 *.vstemplate* 파일의 요소를 사용 하 여 프로젝트에 추가 합니다. `Folder` 예를 들면 다음과 같습니다.
+- 템플릿 *.zip* 파일에 폴더를 포함 하 고 *.vstemplate* 파일의 요소를 사용 하 여 프로젝트에 추가 합니다. `Folder` 예를 들어:
 
      `...`
 

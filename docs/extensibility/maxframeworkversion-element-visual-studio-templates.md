@@ -1,5 +1,7 @@
 ---
 title: MaxFrameworkVersion 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: MaxFrameworkVersion 요소 및 템플릿에 필요한 .NET Framework의 최대 버전을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702628"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672427"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -59,7 +61,7 @@ ms.locfileid: "80702628"
 
 `MaxFrameworkVersion`는 선택적 요소입니다. `MaxFrameworkVersion`요소는 필요 하지 않은 경우 생략 해야 합니다. 따라서 템플릿에 대해 지원 되는 .NET Framework 버전의 범위를 실수로 제한 하지 않습니다. .NET Framework 템플릿에 적용 되지 않는 경우에도 생략 해야 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준 클래스 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 

@@ -1,5 +1,7 @@
 ---
 title: SharePoint 프로젝트 항목 확장 | Microsoft Docs
+description: SharePoint 프로젝트 항목을 확장 하는 작업을 검토 합니다. 프로젝트 항목 확장 및 프로젝트 항목 인스턴스가 어떻게 관련 되어 있는지 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967398"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672576"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint 프로젝트 항목 확장
   Visual Studio에 이미 설치 되어 있는 SharePoint 프로젝트 항목의 형식에 기능을 추가 하려는 경우 프로젝트 항목 확장을 만듭니다. 예를 들어 Visual Studio에서 기본 제공 **이벤트 수신기** 또는 **목록 정의** 프로젝트 항목에 대 한 확장을 만들거나 사용자 지정 프로젝트 항목 형식에 대 한 확장을 만들 수 있습니다. 모든 SharePoint 프로젝트 항목 형식에 대 한 확장을 만들 수도 있습니다.
@@ -29,9 +31,9 @@ ms.locfileid: "62967398"
 
  프로젝트 항목을 확장 하는 경우 프로젝트 항목에 다음 기능을 추가할 수도 있습니다.
 
-- 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목은 **솔루션 탐색기**에서 프로젝트 항목에 대 한 바로 가기 메뉴를 열면 나타납니다. 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 **Shift** + **F10** 키를 선택 하 여 바로 가기 메뉴를 엽니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)를 참조 하세요.
+- 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목은 **솔루션 탐색기** 에서 프로젝트 항목에 대 한 바로 가기 메뉴를 열면 나타납니다. 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택 하 고 **Shift** + **F10** 키를 선택 하 여 바로 가기 메뉴를 엽니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)를 참조 하세요.
 
-- 프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성은 **솔루션 탐색기**에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)를 참조 하세요.
+- 프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)를 참조 하세요.
 
   프로젝트 항목 확장을 만들고, 배포 하 고, 테스트 하는 방법을 보여 주는 연습은 [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)을 참조 하세요.
 
@@ -64,7 +66,7 @@ ms.locfileid: "62967398"
 |웹 파트|VisualStudio.|
 |워크플로 연결 양식|VisualStudio를 연결 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [방법: SharePoint 프로젝트 항목 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [방법: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [방법: SharePoint 프로젝트 항목 확장에 속성 추가](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

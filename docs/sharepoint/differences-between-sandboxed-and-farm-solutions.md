@@ -1,5 +1,7 @@
 ---
 title: 샌드박스 솔루션과 팜 솔루션의 차이점 | Microsoft Docs
+description: 샌드박스가 적용 된 솔루션과 팜 솔루션의 차이점을 이해 합니다. Visual Studio에서 두 가지 유형의 솔루션을 사용 하 여 디버깅 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967548"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672784"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>샌드박스가 적용 된 솔루션과 팜 솔루션의 차이점
   SharePoint 솔루션을 컴파일하면 sharepoint 서버에 배포 되 고 디버거가 디버그에 연결 됩니다. 솔루션을 디버깅 하는 데 사용 되는 프로세스는 샌드박스가 적용 된 솔루션 속성: 샌드박스가 적용 된 솔루션 또는 팜 솔루션의 설정에 따라 달라 집니다.
@@ -38,7 +40,7 @@ ms.locfileid: "62967548"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 현재 사이트를 실행 하는 w3wp.exe 또는 Spucworkerprocess.exe 프로세스에만 디버거를 연결 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 관리 되는 COM Plus 및 워크플로 디버깅 엔진을 연결 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)
