@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 탐색기에서 정렬, 필터링 및 그룹화
+description: XML 스키마 탐색기 도구 모음의 정렬, 필터링 및 그룹화 옵션 메뉴에서 사용할 수 있는 옵션에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592518"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351494"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>정렬, 필터링 및 그룹화(XML 스키마 탐색기)
 
@@ -31,7 +33,7 @@ ms.locfileid: "75592518"
 
 ## <a name="sorting-options"></a>정렬 옵션
 
-사용할 수 있는 정렬 옵션은 다음과 같습니다. 기본값은 **유형별 정렬**입니다. **정렬 기준** 옵션은 파일 및 네임스페이스에 적용되지 않습니다.
+사용할 수 있는 정렬 옵션은 다음과 같습니다. 기본값은 **유형별 정렬** 입니다. **정렬 기준** 옵션은 파일 및 네임스페이스에 적용되지 않습니다.
 
 - **유형별 정렬**
 
@@ -75,7 +77,7 @@ ms.locfileid: "75592518"
 
 ### <a name="document-order"></a>문서 순서
 
-**문서 순서** 옵션은 **스키마 파일 표시** 옵션을 선택한 경우 사용할 수 있습니다. **문서 순서**를 선택하면 전역 노드가 스키마 파일에 표시된 순서대로 표시됩니다.
+**문서 순서** 옵션은 **스키마 파일 표시** 옵션을 선택한 경우 사용할 수 있습니다. **문서 순서** 를 선택하면 전역 노드가 스키마 파일에 표시된 순서대로 표시됩니다.
 
 ## <a name="persisting-sortfilter-options"></a>정렬/필터 옵션 유지
 

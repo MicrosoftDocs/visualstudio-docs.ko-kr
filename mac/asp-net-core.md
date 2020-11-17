@@ -1,21 +1,21 @@
 ---
 title: ASP.NET Core 시작
 description: 이 문서에서는 설치 및 새 프로젝트 만들기를 포함하여 Mac용 Visual Studio에서 ASP.NET을 시작하는 방법을 설명합니다.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 04/02/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584063"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493363"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -44,13 +44,13 @@ ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 �
 
 ![ASP.NET 프로젝트 옵션](media/asp-net-core-2019-new-asp-core.png)
 
-**ASP.NET Core 빈 웹 애플리케이션**을 선택하고 **다음**을 누릅니다. 프로젝트에 이름을 지정하고 **만들기**를 누릅니다. 그러면 새 ASP.NET Core 앱이 만들어집니다. 솔루션 패드의 왼쪽 창에서 두 번째 화살표를 확장한 다음 **Startup.cs**를 선택합니다. 아래 이미지와 비슷하게 표시됩니다.
+**ASP.NET Core 빈 웹 애플리케이션** 을 선택하고 **다음** 을 누릅니다. 프로젝트에 이름을 지정하고 **만들기** 를 누릅니다. 그러면 새 ASP.NET Core 앱이 만들어집니다. 솔루션 창의 왼쪽 창에서 두 번째 화살표를 확장한 다음, **Startup.cs** 를 선택합니다. 아래 이미지와 비슷하게 표시됩니다.
 
 ![새로운 ASP.NET Core 빈 프로젝트 보기](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core 빈 템플릿은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs**가 포함된 웹 애플리케이션을 만듭니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
+ASP.NET Core 빈 템플릿은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs** 가 포함된 웹 애플리케이션을 만듭니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
 
-![종속성을 표시하는 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
+![종속성을 표시하는 솔루션 창](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
@@ -128,7 +128,7 @@ ASP.NET Core 앱이 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 인스
 
 ![브라우저 실행](media/asp-net-web-picker.png)
 
-Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작합니다. 해당 포트를 확인하려면 **보기 &gt; 패드** 아래에 나열된 애플리케이션 출력을 엽니다. 아래에 표시된 것과 비슷한 출력이 나타납니다.
+Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작합니다. 해당 포트를 확인하려면 **보기 > 다른 창** 메뉴 아래에 나열되는 애플리케이션 출력을 엽니다. 아래에 표시된 것과 비슷한 출력이 나타납니다.
 
 ![수신 대기 포트를 표시하는 애플리케이션 출력](media/asp-net-core-image6.png)
 
@@ -138,17 +138,17 @@ Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작
 
 ## <a name="adding-a-controller"></a>컨트롤러 추가
 
-ASP.NET Core 앱은 MVC(모델-뷰-컨트롤러) 디자인 패턴을 사용하여 앱의 각 부분에 대한 책임을 논리적으로 구분합니다. MVC는 다음과 같이 구성됩니다.
+ASP.NET Core 앱은 MVC(모델-뷰-컨트롤러) 디자인 패턴을 사용하여 앱의 각 부분에 대한 책임을 논리적으로 구분합니다. MVC 디자인 패턴은 다음 개념으로 구성됩니다.
 
 - **모델**: 앱의 데이터를 나타내는 클래스입니다.
 - **보기**: 앱의 사용자 인터페이스(대개 모델 데이터임)를 표시합니다.
 - **컨트롤러**: 브라우저 요청을 처리하고 사용자 입력 및 상호 작용에 응답하는 클래스입니다.
 
-MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspnet/core/mvc/overview) 가이드를 참조하세요.
+MVC 사용에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspnet/core/mvc/overview) 가이드를 참조하세요.
 
 컨트롤러를 추가하려면 다음을 수행합니다.
 
-1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일**을 선택합니다. **일반 > 빈 클래스**를 선택하고 컨트롤러 이름을 입력합니다.
+1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일** 을 선택합니다. **일반 > 빈 클래스** 를 선택하고 컨트롤러 이름을 입력합니다.
 
     ![새 파일 대화 상자](media/asp-net-core-image8.png)
 
@@ -177,7 +177,7 @@ MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspne
 
 3. **종속성** 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가...** 를 선택하여 `Microsoft.AspNetCore.Mvc` 종속성을 프로젝트에 추가합니다.
 
-4. 검색 상자를 사용하여 `Microsoft.AspNetCore.Mvc`의 NuGet 라이브러리를 찾은 다음 **패키지 추가**를 선택합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며, 필수 종속성에 대한 다양한 라이선스에 동의하라는 메시지가 표시될 수도 있습니다.
+4. 검색 상자를 사용하여 `Microsoft.AspNetCore.Mvc`의 NuGet 라이브러리를 찾은 다음 **패키지 추가** 를 선택합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며, 필수 종속성에 대한 다양한 라이선스에 동의하라는 메시지가 표시될 수도 있습니다.
 
     ![Nuget 추가](media/asp-net-core-image9.png)
 
@@ -230,7 +230,7 @@ MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspne
 
 ## <a name="troubleshooting"></a>문제 해결
 
-Mac OS 10.12(Sierra) 이상에 .NET Core를 수동으로 설치해야 하는 경우 다음을 수행합니다.
+macOS 10.12(Sierra) 이상에 .NET Core를 수동으로 설치해야 하는 경우 다음을 수행합니다.
 
 1. .NET Core 설치를 시작하기 전에 모든 OS 업데이트를 안정적인 최신 버전으로 업데이트했는지 확인합니다. 앱 스토어 애플리케이션으로 이동한 다음 업데이트 탭을 선택하면 확인할 수 있습니다.
 
@@ -242,7 +242,7 @@ Mac OS 10.12(Sierra) 이상에 .NET Core를 수동으로 설치해야 하는 경
 
 이 가이드에서는 ASP.NET Core를 소개했습니다. ASP.NET Core란 무엇이고 언제 사용해야 하는지를 설명하고, Mac용 Visual Studio에서 사용하는 방법에 대한 정보를 제공했습니다.
 이후 단계에 대한 자세한 내용은 다음 가이드를 참조하세요.
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) 문서
+- [ASP.NET Core](/aspnet/core/) 문서
 - [네이티브 모바일 애플리케이션용 백 엔드 서비스 만들기](/aspnet/core/mobile/native-mobile-backend) - Xamarin.Forms 앱용 ASP.NET Core를 사용하여 REST 서비스를 빌드하는 방법을 보여 줍니다.
 - [ASP.NET Core 실습 교육](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
 

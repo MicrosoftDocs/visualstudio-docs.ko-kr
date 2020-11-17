@@ -1,5 +1,7 @@
 ---
 title: ProjectItem 요소 (Visual Studio 항목 템플릿) | Microsoft Docs
+description: 항목이 프로젝트에 대 한 것인지 또는 항목에 대 한 것인지에 따라 항목 템플릿에 대 한 ProjectItem 요소와 다른 특성을 허용 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770720"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672335"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소 (Visual Studio 항목 템플릿)
 항목 템플릿에 포함 되는 파일을 지정 합니다.
@@ -48,7 +50,7 @@ ms.locfileid: "85770720"
 
 ### <a name="attributes"></a>특성
 
-| 특성 | 설명 |
+| attribute | 설명 |
 |---------------------| - |
 | `SubType` | 선택적 특성입니다.<br /><br /> 다중 파일 항목 템플릿에서 항목의 하위 유형을 지정 합니다. 이 값은 항목을 여는 데 사용할 편집기를 결정 하는 데 사용 됩니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . |
 | `CustomTool` | 선택적 특성입니다.<br /><br /> 프로젝트 파일의 항목에 대 한 사용자 지정 도구를 설정 합니다. |
@@ -81,7 +83,7 @@ ms.locfileid: "85770720"
 
  이 템플릿에서 항목이 생성 되 면 파일 이름은 사용자가 **새 항목 추가** 대화 상자에 입력 한 이름을 기반으로 합니다. 다중 파일 항목 템플릿을 만들 때 유용 합니다. 자세한 내용은 [방법: 다중 파일 항목 템플릿](../ide/how-to-create-multi-file-item-templates.md) 및 [템플릿 매개 변수](../ide/template-parameters.md)만들기를 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 클래스의 표준 항목 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

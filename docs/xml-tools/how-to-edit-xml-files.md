@@ -1,6 +1,8 @@
 ---
 title: '방법: XML 파일 편집'
 ms.date: 11/04/2016
+description: Visual Studio에서 XML 편집기를 사용하여 XML 또는 DTD 콘텐츠를 포함하는 파일을 편집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249510"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399984"
 ---
 # <a name="how-to-edit-xml-files"></a>방법: XML 파일 편집
 
@@ -26,53 +28,53 @@ XML 파일을 편집하려면 편집할 파일을 엽니다.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>프로젝트에 새 XML 파일 추가
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
-2. **템플릿** 창에서 **XML 파일**을 선택합니다.
+2. **템플릿** 창에서 **XML 파일** 을 선택합니다.
 
-3. **이름** 필드에 파일 이름을 입력하고 **추가**를 누릅니다.
+3. **이름** 필드에 파일 이름을 입력하고 **추가** 를 누릅니다.
 
    XML 파일이 프로젝트에 추가되고 XML 편집기에서 열립니다. 파일에는 기본 XML 선언, `<?xml version="1.0" encoding="utf-8" ?>`이 포함됩니다.
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>프로젝트에 기존 XML 파일 추가
 
-1. **프로젝트** 메뉴에서 **기존 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **기존 항목 추가** 를 선택합니다.
 
    **기존 항목 추가** 대화 상자가 나타납니다.
 
-2. XML 파일을 선택하고 **추가**를 누릅니다.
+2. XML 파일을 선택하고 **추가** 를 누릅니다.
 
 ## <a name="create-a-new-xml-or-xslt-file"></a>새 XML 또는 XSLT 파일 만들기
 
-1. **파일** 메뉴에서 **새로 만들기**를 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 선택합니다.
 
    **새 파일** 대화 상자가 표시됩니다.
 
-2. 새 XML 파일을 만들려면 **XML 파일**을 선택하고 새 XSLT 스타일시트를 만들려면 **XSLT 파일**을 선택합니다.
+2. 새 XML 파일을 만들려면 **XML 파일** 을 선택하고 새 XSLT 스타일시트를 만들려면 **XSLT 파일** 을 선택합니다.
 
-3. **열기**를 선택합니다.
+3. **열기** 를 선택합니다.
 
 ## <a name="create-an-empty-project-for-xml-files"></a>XML 파일에 대한 빈 프로젝트 만들기
 
 ::: moniker range="vs-2017"
 
-1. **파일 메뉴**에서 **새로 만들기** > **프로젝트**를 선택합니다.
+1. **파일 메뉴** 에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
 2. 원하는 코드 언어를 선택한 다음, **빈 프로젝트(.NET Framework)** 템플릿을 선택합니다.
 
-3. **확인**을 선택합니다.
+3. **확인** 을 선택합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. **파일 메뉴**에서 **새로 만들기** > **프로젝트**를 선택합니다.
+1. **파일 메뉴** 에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
-2. 템플릿 검색 상자에 **빈 프로젝트**를 입력하고 **빈 프로젝트(.NET Framework)** 템플릿을 선택한 후 **다음**을 선택합니다.
+2. 템플릿 검색 상자에 **빈 프로젝트** 를 입력하고 **빈 프로젝트(.NET Framework)** 템플릿을 선택한 후 **다음** 을 선택합니다.
 
-3. **만들기**를 선택합니다.
+3. **만들기** 를 선택합니다.
 
 ::: moniker-end
 

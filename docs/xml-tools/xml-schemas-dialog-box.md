@@ -1,5 +1,7 @@
 ---
 title: XML 스키마
+description: XML 문서와 연결할 XSD(XML 스키마 정의 언어) 스키마를 선택하는 데 사용되는 XML 스키마 대화 상자에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592336"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351403"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 스키마 대화 상자
 
 **XML 스키마** 대화 상자는 XML 문서와 연결할 XSD(XML 스키마 정의 언어) 스키마를 선택하는 데 사용됩니다. 스키마 캐시에서 스키마를 선택하거나 캐시에 없는 스키마를 지정할 수 있습니다. 선택한 스키마는 스키마 집합의 일부분으로 간주됩니다. 스키마 집합은 IntelliSense 및 XML 문서 유효성 검사에 사용됩니다.
 
-**XML 스키마** 대화 상자는 문서 속성 창에서 **스키마** 단추를 클릭하거나 **XML** 메뉴에서 **스키마**를 선택하여 액세스할 수 있습니다.
+**XML 스키마** 대화 상자는 문서 속성 창에서 **스키마** 단추를 클릭하거나 **XML** 메뉴에서 **스키마** 를 선택하여 액세스할 수 있습니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
@@ -45,7 +47,7 @@ XML 스키마 파일 이름을 표시합니다.
 
 **추가**
 
-스키마 집합에 추가할 스키마를 추가로 선택할 수 있는 **XSD 스키마 열기** 대화 상자를 엽니다. 스키마를 스키마 집합에 추가하면 **사용** 열 값이 **이 스키마 사용**으로 설정됩니다.
+스키마 집합에 추가할 스키마를 추가로 선택할 수 있는 **XSD 스키마 열기** 대화 상자를 엽니다. 스키마를 스키마 집합에 추가하면 **사용** 열 값이 **이 스키마 사용** 으로 설정됩니다.
 
 **제거**
 

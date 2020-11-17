@@ -1,5 +1,7 @@
 ---
 title: '연습: XSLT IntelliSense 사용'
+description: 이 연습의 단계를 수행하여 XSLT IntelliSense를 사용하여 일부 특성의 값을 자동으로 완성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8bbed6a70316e92e2c79aaa6cabc20930f10e7
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817283"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351468"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>연습: XSLT IntelliSense 사용
 

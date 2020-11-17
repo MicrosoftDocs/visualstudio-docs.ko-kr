@@ -1,5 +1,7 @@
 ---
 title: Name 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: Name 요소에 대해 알아보고 새 프로젝트 또는 새 항목 추가 대화 상자에 표시 되는 템플릿 이름을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702451"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671183"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿의 이름을 지정 합니다.
@@ -41,7 +43,7 @@ ms.locfileid: "80702451"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 ID를 지정하는 GUID입니다.|
 |`ID`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 리소스 ID를 지정합니다.|
@@ -63,7 +65,7 @@ ms.locfileid: "80702451"
 ## <a name="remarks"></a>설명
  `Name`은 `TemplateData`의 필수 자식 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```xml

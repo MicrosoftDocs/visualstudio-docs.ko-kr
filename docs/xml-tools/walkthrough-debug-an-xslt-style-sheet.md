@@ -1,5 +1,7 @@
 ---
 title: XSLT 스타일시트 디버그
+description: 이 연습의 단계를 수행하여 Visual Studio에서 XSLT 디버거를 사용하여 XSLT 스타일시트를 디버그하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815125"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351338"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>연습: XSLT 스타일시트 디버그
 
@@ -26,33 +28,33 @@ ms.locfileid: "85815125"
 
 ## <a name="start-debugging"></a>디버깅 시작
 
-1. **파일** 메뉴에서 **열기** > **파일**을 선택합니다.
+1. **파일** 메뉴에서 **열기** > **파일** 을 선택합니다.
 
-2. *below-average.xsl* 파일을 찾고 **열기**를 선택합니다.
+2. *below-average.xsl* 파일을 찾고 **열기** 를 선택합니다.
 
    XML 편집기에서 스타일시트를 엽니다.
 
 3. 문서 속성 창의 **입력** 필드에서 찾아보기 단추( **...** )를 클릭합니다 (**속성** 창이 표시되지 않으면 편집기에서 열려 있는 파일의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **속성** 선택).
 
-4. *books.xml* 파일을 찾은 다음 **열기**를 선택합니다.
+4. *books.xml* 파일을 찾은 다음 **열기** 를 선택합니다.
 
    그러면 XSLT 변형에 사용되는 소스 문서 파일이 설정됩니다.
 
-5. *below-average.xsl*의 줄 12에서 [중단점](../debugger/using-breakpoints.md)을 설정합니다. 다음의 여러 방법 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
+5. *below-average.xsl* 의 줄 12에서 [중단점](../debugger/using-breakpoints.md)을 설정합니다. 다음의 여러 방법 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
 
    - 줄 12에서 편집기의 여백을 클릭합니다.
 
-   - 줄 12의 아무 곳이나 클릭한 다음 **F9**를 누릅니다.
+   - 줄 12의 아무 곳이나 클릭한 다음 **F9** 를 누릅니다.
 
-   - `xsl:if` 시작 태그를 마우스 오른쪽 단추로 클릭한 다음 **중단점** > **중단점 삽입**을 선택합니다.
+   - `xsl:if` 시작 태그를 마우스 오른쪽 단추로 클릭한 다음 **중단점** > **중단점 삽입** 을 선택합니다.
 
       ![Visual Studio의 XSL 파일에 중단점 삽입](media/insert-breakpoint.PNG)
 
-6. 메뉴 모음에서 **XML** > **XSLT 디버깅 시작**을 선택하거나 **Alt**+**F5**를 누릅니다.
+6. 메뉴 모음에서 **XML** > **XSLT 디버깅 시작** 을 선택하거나 **Alt**+**F5** 를 누릅니다.
 
    디버깅 프로세스가 시작됩니다.
 
-   편집기에서 디버거는 스타일시트의 `xsl:if` 요소에 배치됩니다. 편집기에서 *below-average.xml*이라는 다른 파일이 열립니다. 이 파일은 입력 파일 *books.xml*의 각 노드가 처리될 때 채워질 출력 파일입니다.
+   편집기에서 디버거는 스타일시트의 `xsl:if` 요소에 배치됩니다. 편집기에서 *below-average.xml* 이라는 다른 파일이 열립니다. 이 파일은 입력 파일 *books.xml* 의 각 노드가 처리될 때 채워질 출력 파일입니다.
 
    **자동**, **지역** 및 **조사식 1** 창이 Visual Studio 창의 맨 아래에 표시됩니다. **지역** 창에 모든 지역 변수 및 현재 값이 표시됩니다. 여기에는 스타일시트에 정의된 변수가 포함되며 디버거에서 현재 컨텍스트에 있는 노드를 추적하는 데 사용하는 변수도 포함됩니다.
 
@@ -60,7 +62,7 @@ ms.locfileid: "85815125"
 
 입력 파일이 처리될 때 해당 값을 검사할 수 있도록 **조사식 1** 창에 두 개의 변수를 추가합니다 (보려고 하는 변수가 이미 있는 경우 **지역** 창을 사용하여 값을 검사할 수도 있음).
 
-1. **디버그** 메뉴에서 **Windows** > **조사식** > **조사식 1**을 선택합니다.
+1. **디버그** 메뉴에서 **Windows** > **조사식** > **조사식 1** 을 선택합니다.
 
    **조사식 1** 창이 표시됩니다.
 
@@ -80,19 +82,19 @@ ms.locfileid: "85815125"
 
 ## <a name="step-through-the-code"></a>단계별로 코드 실행
 
-1. **F5**를 눌러 계속합니다.
+1. **F5** 를 눌러 계속합니다.
 
    첫 번째 book 노드가 `xsl:if` 조건을 만족하기 때문에 book 노드가 *below-average.xml* 출력 파일에 추가됩니다. 디버거는 스타일시트의 `xsl:if` 요소에 다시 배치될 때까지 계속 실행됩니다. 이제 디버거가 *books.xml* 파일의 두 번째 book 노드에 배치됩니다.
 
    **조사식 1** 창에서 `self::node()` 값이 두 번째 book 노드로 변경됩니다. 가격 요소 값을 검사하여 가격이 평균을 초과하는 것을 확인할 수 있으므로 `xsl:if` 조건은 실패해야 합니다.
 
-2. **F5**를 눌러 계속합니다.
+2. **F5** 를 눌러 계속합니다.
 
    두 번째 book 노드는 `xsl:if` 조건을 충족하지 않으므로 이 *below-average.xml* 출력 파일에 추가되지 않습니다. 디버거는 스타일시트의 `xsl:if` 요소에 다시 배치될 때까지 계속 실행됩니다. 이제 디버거가 *books.xml* 파일의 세 번째 `book` 노드에 배치됩니다.
 
    **조사식 1** 창에서 `self::node()` 값이 세 번째 book 노드로 변경됩니다. `price` 요소의 값을 확인하면 가격이 평균보다 낮음을 알 수 있습니다. `xsl:if` 조건이 성공해야 합니다.
 
-3. **F5**를 눌러 계속합니다.
+3. **F5** 를 눌러 계속합니다.
 
    `xsl:if` 조건을 만족했기 때문에 세 번째 book이 *below-average.xml* 출력 파일에 추가됩니다. XML 문서에 있는 모든 book이 처리되었으므로 디버거가 중지됩니다.
 

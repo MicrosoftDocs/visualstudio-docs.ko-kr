@@ -1,5 +1,6 @@
 ---
 title: Azure App Service에 게시
+description: Mac용 Visual Studio에서 게시 도구를 사용하여 웹 애플리케이션을 게시하는 방법입니다.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950512"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493428"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 
@@ -31,17 +32,17 @@ ms.locfileid: "85950512"
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 
- 1. 솔루션 패드에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+ 1. 솔루션 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
     ![게시 상황에 맞는 메뉴](media/publish-context-menu.png)
 
  2. 이전에 Azure App Service에 이 프로젝트를 게시한 적이 있다면 메뉴에 게시 프로필이 표시됩니다. 해당 게시 프로필을 선택하여 게시 프로세스를 시작하세요.
 
- 3. 이 프로젝트를 App Service에 처음으로 게시하려면 **Azure에 게시**를 선택합니다.
+ 3. 이 프로젝트를 App Service에 처음으로 게시하려면 **Azure에 게시** 를 선택합니다.
 
     ![App Service에 게시 상황에 맞는 메뉴](media/publish-to-azure-context-menu.png)
 
- 4. **Azure App Service에 게시** 대화 상자가 나타나고 기존 App Services가 표시됩니다. 기존 App Service에 게시하려면 목록에서 App Service를 선택한 후 **게시**를 클릭합니다.
+ 4. **Azure App Service에 게시** 대화 상자가 나타나고 기존 App Services가 표시됩니다. 기존 App Service에 게시하려면 목록에서 App Service를 선택한 후 **게시** 를 클릭합니다.
 
     ![Azure App Service에 게시 대화 상자](media/publish-to-app-service-dialog.png)
 
@@ -57,17 +58,17 @@ ms.locfileid: "85950512"
 
     **구독** 드롭다운을 사용하여 App Service와 연결할 구독을 변경할 수 있습니다.
 
-    드롭다운을 사용하여 기존의 **리소스 그룹**을 선택하거나 **+** 단추를 사용하여 새로 만들 수 있습니다.
+    드롭다운을 사용하여 기존의 **리소스 그룹** 을 선택하거나 **+** 단추를 사용하여 새로 만들 수 있습니다.
 
     App Service 계획에 기존 항목을 선택하거나 **사용자 지정** 라디오 단추를 선택하여 새로 만들 수 있습니다.
 
-    새 App Service를 만들고 프로젝트를 게시하려면 **만들기**를 클릭합니다.
+    새 App Service를 만들고 프로젝트를 게시하려면 **만들기** 를 클릭합니다.
 
-    **만들기**를 클릭하면 **새 App Service** 대화 상자가 무시되고 App Service 만들기가 시작되었음을 알리는 다음과 같은 메시지가 표시됩니다.
+    **만들기** 를 클릭하면 **새 App Service** 대화 상자가 무시되고 App Service 만들기가 시작되었음을 알리는 다음과 같은 메시지가 표시됩니다.
 
       ![App Service 만들기 메시지](media/publish-create-app-service-message.png)
 
-    **확인**을 클릭하면 메시지가 해제되고 프로젝트를 계속 작업할 수 있습니다. IDE 상단의 상태 표시줄을 통해 게시 프로세스의 상태를 볼 수 있습니다. 웹이 성공적으로 게시되면 기본 브라우저에 사이트가 열립니다.
+    **확인** 을 클릭하면 메시지가 해제되고 프로젝트를 계속 작업할 수 있습니다. IDE 상단의 상태 표시줄을 통해 게시 프로세스의 상태를 볼 수 있습니다. 웹이 성공적으로 게시되면 기본 브라우저에 사이트가 열립니다.
 
 ## <a name="related-video"></a>관련 동영상
 

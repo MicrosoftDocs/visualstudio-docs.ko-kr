@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048811"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437125"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -340,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild TargetFramework 및 TargetPlatform 함수
+
+MSBuild는 [TargetFramework 및 TargetPlatform 속성](msbuild-target-framework-and-target-platform.md)을 처리하는 여러 함수를 정의합니다.
+
+|함수 시그니처|설명|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier(문자열 targetFramework)|TargetFramework에서 TargetFrameworkIdentifier를 구문 분석합니다.|
+|GetTargetFrameworkVersion(문자열 targetFramework)|TargetFramework에서 TargetFrameworkVersion을 구문 분석합니다.|
+|GetTargetPlatformIdentifier(문자열 targetFramework)|TargetFramework에서 TargetPlatformIdentifier를 구문 분석합니다.|
+|GetTargetPlatformVersion(문자열 targetFramework)|TargetFramework에서 TargetPlatformVersion을 구문 분석합니다.|
+|IsTargetFrameworkCompatible(문자열 targetFrameworkTarget, 문자열 targetFrameworkCandidate)|후보 대상 프레임워크가 이 대상 프레임워크와 호환되면 ‘True’를 반환하고, 그러지 않으면 false를 반환합니다.|
+
+다음 예제에서는 이러한 함수를 사용하는 방법을 보여 줍니다. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 조건 함수

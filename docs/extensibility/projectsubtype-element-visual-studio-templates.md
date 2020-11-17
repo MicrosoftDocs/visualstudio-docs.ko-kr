@@ -1,5 +1,7 @@
 ---
 title: ProjectSubType 형식 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: ProjectSubType 형식 요소 및 템플릿을 ProjectType 요소에 지정 된 값의 하위 범주로 분류 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701827"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672322"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 형식 요소 (Visual Studio 템플릿)
 템플릿을 요소에 지정 된 값의 하위 범주로 분류 합니다 `ProjectType` .

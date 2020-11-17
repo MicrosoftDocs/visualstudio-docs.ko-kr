@@ -2,7 +2,7 @@
 title: 'Visual Studio 문서: 새로운 기능 기록 '
 titleSuffix: ''
 description: Visual Studio 문서의 새로운 기능에 관한 기록
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659305"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414505"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 문서의 새로운 기능에 관한 기록
 
-Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 항목에는 2020년 7월부터 2020년 9월 이전의 문서 주요 변경 내용이 포함되어 있습니다. 새로운 기능의 최신 내용은 [Visual Studio 문서: 문서에 추가된 새로운 기능](whats-new-visual-studio-docs.md)을 참조하세요.
+Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 문서에는 2020년 7월부터 2020년 10월 이전의 문서 주요 변경 내용이 포함되어 있습니다. 새로운 기능의 최신 내용은 [Visual Studio 문서: 문서에 추가된 새로운 기능](whats-new-visual-studio-docs.md)을 참조하세요.
+
+## <a name="september-2020"></a>2020년 9월
+### <a name="code-quality"></a>코드 품질
+
+**새 문서**
+
+- [CA1416: 플랫폼 호환성 유효성 검사](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) - CA1416 플랫폼 호환성 유효성 검사 문서화
+- [CA1834: Use StringBuilder.Append(char) for single character strings](/dotnet/fundamentals/code-analysis/quality-rules/ca1834)(단일 문자열에 StringBuilder.Append(char) 사용) - CA1834에 대한 문서
+
+**업데이트됨**
+
+- [소스 코드 분석 개요](../code-quality/roslyn-analyzers-overview.md) - .NET 리팩터링을 위한 소스 코드 분석
+- [코드 품질 분석 구성](../code-quality/use-roslyn-analyzers.md) - .NET 리팩터링을 위한 소스 코드 분석
+
+### <a name="containers"></a>컨테이너
+
+**새 문서**
+
+- [Bridge to Kubernetes 사용](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes로 Kubernetes를 사용한 로컬 프로세스 리브랜딩
+- [Bridge to Kubernetes 작동 방식](../containers/overview-bridge-to-kubernetes.md) - Bridge to Kubernetes로 Kubernetes를 사용한 로컬 프로세스 리브랜딩
+
+### <a name="deployment"></a>배포
+
+**업데이트된 문서**
+
+- [폴더, IIS, Azure 또는 다른 대상에 앱 배포](../deployment/deploying-applications-services-and-components-resources.md) - 배포 업데이트
+- [Visual Studio를 사용하여 앱을 폴더에 배포](../deployment/quickstart-deploy-to-local-folder.md) - 배포 업데이트
+
+### <a name="ide"></a>IDE
+
+**새 문서**
+
+- [Visual Studio의 새로운 Git 환경(미리 보기)](./git-with-visual-studio.md) - 새 Git 환경 콘텐츠 추가(미리 보기)
+- [C++ EditorConfig 서식 지정 규칙](./cpp-editorconfig-properties.md) - 새 문서
+- [GitHub Codespaces란? (미리 보기)](./codespaces/codespaces-overview.md) - Codespaces 추가(미리 보기) 콘텐츠
+- [codespace를 사용자 지정하는 방법(미리 보기)](./codespaces/customize-codespaces.md) - Codespaces 추가(미리 보기) 콘텐츠
+- [지원되는 Visual Studio 기능(미리 보기)](./codespaces/supported-features-codespaces.md) - Codespaces 추가(미리 보기) 콘텐츠
+- [codespace와 함께 Visual Studio를 사용하는 방법(미리 보기)](./codespaces/use-visual-studio-with-codespaces.md) - Codespaces 추가(미리 보기) 콘텐츠
+
+**업데이트된 문서**
+
+- [EditorConfig에 NET 코딩 규칙 설정](/dotnet/fundamentals/code-analysis/code-style-rule-options) - 업데이트된 editorconfig
+- [언어 규칙](/dotnet/fundamentals/code-analysis/style-rules/language-rules) - 누락된 예
+
+### <a name="install"></a>설치
+
+**새 문서**
+
+- [ARM 기반 디바이스에서의 Visual Studio](../install/visual-studio-on-arm-devices.md) - ARM 기반 VS용 문서 추가
+
+**업데이트된 문서**
+
+- [Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결](../install/troubleshooting-network-related-errors-in-visual-studio.md) - 피드백 인증 프록시 크래시에 대한 해결 방법 추가
+
+### <a name="profiling"></a>프로파일링
+
+**업데이트된 문서**
+
+- [Visual Studio에서 메모리 사용량 측정](../profiling/memory-usage.md) - 프로파일링 기능 둘러보기로 업데이트
+- [PerfTips](../profiling/perftips.md) - 프로파일링 기능 둘러보기로 업데이트
+- [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md) - 프로파일링 기능 둘러보기로 업데이트
+- [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - 프로파일링 기능 둘러보기로 업데이트
+  - 콘텐츠 성능 개선 사항
 
 ## <a name="august-2020"></a>2020년 8월
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 항목에는 2
 
 **업데이트된 문서**
 
-- [Visual Studio에서 창 레이아웃 사용자 지정](./customizing-window-layouts-in-visual-studio.md) - 창 레이아웃 사용자 지정 항목에 모니커된 세로 문서 탭 추가
+- [Visual Studio에서 창 레이아웃 사용자 지정](./customizing-window-layouts-in-visual-studio.md) - 창 레이아웃 사용자 지정 문서에 모니커된 세로 문서 탭 추가
 - [Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법](./how-to-report-a-problem-with-visual-studio.md)
   - NMI에 자세한 정보 추가
   - 전체 문제 보고 페이지 다시 작성
@@ -157,8 +221,8 @@ Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 항목에는 2
 
 **업데이트된 문서**
 
-- [변경 로그(Visual Studio Tools for Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md) - 4.7.1.0에 대한 Bump VSTU 변경 로그
-- [변경 로그(Visual Studio Tools for Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md) - 2.7.1.0에 대한 Bump VSTUM 변경 로그
+- [변경 로그(Visual Studio Tools for Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) - 4.7.1.0에 대한 Bump VSTU 변경 로그
+- [변경 로그(Visual Studio Tools for Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) - 2.7.1.0에 대한 Bump VSTUM 변경 로그
 
 ### <a name="get-started"></a>시작
 

@@ -1,5 +1,7 @@
 ---
 title: CreateNewFolder 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: CreateNewFolder 요소에 대해 알아보고, 프로젝트가 생성 될 대상 디렉터리가 존재 하지 않는지 확인할 지 여부를 결정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739676"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671581"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 요소 (Visual Studio 템플릿)
 프로젝트를 만들 대상 디렉터리가 없음을 확인할지 여부를 결정합니다. 디렉터리가 있으면 프로젝트에 대해 새 디렉터리를 만들 수 있습니다. 일반적으로는 모든 공통 프로젝트 형식이 새 디렉터리에 새 프로젝트를 만들지 여부를 결정하는 데 사용하는 `NewProjectRequiresNewFolder(VsTemplate)` 레지스트리 플래그(`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`)가 이 설정을 재정의합니다.
@@ -34,7 +36,7 @@ ms.locfileid: "80739676"
 </CreateNewFolder>
 ```
 
-## <a name="type"></a>형식
+## <a name="type"></a>유형
  `Boolean`
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -62,7 +64,7 @@ ms.locfileid: "80739676"
 
  `CreateNewFolder` 요소에 지정된 값은 기본 프로젝트 시스템에서 지원하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서만 적용됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 템플릿에서 프로젝트를 만들 때 새 폴더를 만들지 않도록 지정합니다.
 
 ```

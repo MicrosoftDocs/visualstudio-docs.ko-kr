@@ -1,5 +1,7 @@
 ---
 title: XML 조각
+description: XML 코드 조각을 다시 사용하고 파일에 삽입하여 XML 파일을 더욱 빠르게 빌드할 수 있도록 하는 XML 편집기의 XML 코드 조각 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f2bcdd0c28d7b4b99c92d3346b32ed34aa92a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592323"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350194"
 ---
 # <a name="xml-snippets"></a>XML 조각
 

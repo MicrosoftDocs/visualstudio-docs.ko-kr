@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928673"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400104"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -24,10 +24,10 @@ ms.locfileid: "91928673"
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>실행 설정 파일 만들기 및 사용자 지정
 
-1. 실행 설정 파일을 솔루션에 추가합니다. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서 **추가** > **새 항목**, **XML File**을 차례로 선택합니다. 파일을 *test.runsettings* 등의 이름으로 저장합니다.
+1. 실행 설정 파일을 솔루션에 추가합니다. **솔루션 탐색기** 의 솔루션 바로 가기 메뉴에서 **추가** > **새 항목**, **XML File** 을 차례로 선택합니다. 파일을 *test.runsettings* 등의 이름으로 저장합니다.
 
    > [!TIP]
-   > 확장명으로 *.runsettings*를 사용하면 파일 이름은 아무런 상관이 없습니다.
+   > 확장명으로 *.runsettings* 를 사용하면 파일 이름은 아무런 상관이 없습니다.
 
 2. [예제 *.runsettings 파일](#example-runsettings-file)에서 콘텐츠를 추가하고, 이후 섹션의 설명에 따라 요구 사항에 맞게 사용자 지정합니다.
 
@@ -61,11 +61,11 @@ IDE에서 사용자 지정 설정을 끄고 켜려는 경우 **테스트** 메�
 사용 가능한 메서드는 Visual Studio 버전에 따라 다릅니다.
 
 ::: moniker range="vs-2017"
-IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정** > **테스트 설정 파일 선택**을 선택한 다음, *.runsettings* 파일을 선택합니다.
+IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정** > **테스트 설정 파일 선택** 을 선택한 다음, *.runsettings* 파일을 선택합니다.
 
 ![Visual Studio 2017에서 테스트 설정 파일 메뉴 선택](media/select-test-settings-file.png)
 
-테스트 설정 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
+테스트 설정 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석** 을 사용할 때마다 실행 설정 파일이 적용됩니다.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -94,7 +94,7 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
 #### <a name="manually-select-the-run-settings-file"></a>실행 설정 파일 수동 선택
 
-IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 runsettings 파일 선택**을 선택한 후 *.runsettings* 파일을 선택합니다.
+IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 runsettings 파일 선택** 을 선택한 후 *.runsettings* 파일을 선택합니다.
 
    - 이 파일은 솔루션 루트에 있는 *.runsettings* 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.
    - 이 파일 선택은 로컬에서만 지속됩니다.
@@ -122,16 +122,16 @@ IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 ru
 
 ### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 버전 16.3 이하
 
-IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정 파일 선택**을 선택합니다. *.runsettings* 파일을 찾아 선택합니다.
+IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정 파일 선택** 을 선택합니다. *.runsettings* 파일을 찾아 선택합니다.
 
 ![Visual Studio 2019에서 테스트 설정 파일 메뉴 선택](media/vs-2019/select-settings-file.png)
 
-테스트 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
+테스트 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석** 을 사용할 때마다 실행 설정 파일이 적용됩니다.
 ::: moniker-end
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>명령줄에서 실행 설정 파일 지정
 
-명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용하고, **/Settings** 매개 변수를 통해 설정 파일을 지정합니다.
+명령줄에서 테스트를 실행하려면 *vstest.console.exe* 를 사용하고, **/Settings** 매개 변수를 통해 설정 파일을 지정합니다.
 
 1. Visual Studio용 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 엽니다.
 
@@ -172,6 +172,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||TestAdapters가 있는 디렉터리에 대한 하나 이상의 경로|
 |**TestSessionTimeout**||사용자가 지정된 시간 제한을 초과하는 테스트 세션을 종료할 수 있도록 합니다. 시간 제한을 설정하면 리소스가 효율적으로 사용되고 테스트 세션이 설정된 시간으로 제한됩니다. 이 설정은 **Visual Studio 2017 버전 15.5** 이상에서 사용할 수 있습니다.|
-|**DotnetHostPath**||testhost를 실행하는 데 사용되는 dotnet 호스트의 사용자 지정 경로를 지정합니다. dotnet/runtime 리포지토리를 빌드하는 경우와 같이 사용자 자체 dotnet을 빌드할 때 유용합니다. 이 옵션을 지정하면 testhost.exe 찾기를 건너뛰고 항상 testhost.dll을 사용합니다.
+|**DotnetHostPath**||testhost를 실행하는 데 사용되는 dotnet 호스트의 사용자 지정 경로를 지정합니다. dotnet/runtime 리포지토리를 빌드하는 경우와 같이 사용자 자체 dotnet을 빌드할 때 유용합니다. 이 옵션을 지정하면 testhost.exe 찾기를 건너뛰고 항상 testhost.dll을 사용합니다.|
+|**TreatNoTestsAsError**|false| true 또는 false <br>테스트가 검색되지 않는 경우 종료 코드를 정의하는 부울 값을 지정합니다. 값이 `true`이고 테스트가 검색되지 않으면 0이 아닌 종료 코드가 반환됩니다. 그렇지 않으면 0이 반환됩니다.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 요소(진단 데이터 어댑터)
 
@@ -231,7 +233,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 
 ### <a name="blame-data-collector"></a>원인 데이터 수집기
 
-이 옵션을 사용하여 테스트 호스트 크래시가 발생하는 문제가 있는 테스트를 격리할 수 있습니다. 수집기를 실행하면 크래시가 발생하기 전에 테스트 실행 순서를 캡처하는 *TestResults*의 출력 파일(*Sequence.xml*)이 만들어집니다.
+이 옵션을 사용하여 테스트 호스트 크래시가 발생하는 문제가 있는 테스트를 격리할 수 있습니다. 수집기를 실행하면 크래시가 발생하기 전에 테스트 실행 순서를 캡처하는 *TestResults* 의 출력 파일(*Sequence.xml*)이 만들어집니다.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -304,17 +306,17 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|구성|기본값|값|
+|Configuration|기본값|값|
 |-|-|-|
-|**ForcedLegacyMode**|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true**로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
+|**ForcedLegacyMode**|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true** 로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
 |**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](/previous-versions/dd286589(v=vs.140))를 참조하세요.|
-|**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. [설정 메뉴에서](#specify-a-run-settings-file-in-the-ide) 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true**로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|false|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트의 일부로 시작된 프로세스도 종료됩니다. 테스트 실행기를 활성 상태로 유지하려면 값을 **true**로 설정합니다. 예를 들어, 이 설정을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|
-|**DeploymentEnabled**|true|값을 **false**로 설정할 경우 테스트 메서드에서 지정한 배포 항목이 배포 디렉터리로 복사되지 않습니다.|
+|**SettingsFile**||여기에서 MSTest 어댑터와 함께 사용할 테스트 설정 파일을 지정할 수 있습니다. [설정 메뉴에서](#specify-a-run-settings-file-in-the-ide) 테스트 설정 파일을 지정할 수도 있습니다.<br /><br />이 값을 지정하면 **ForcedlegacyMode** 도 **true** 로 설정해야 합니다.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**KeepExecutorAliveAfterLegacyRun**|false|테스트 실행이 완료되면 MSTest가 종료됩니다. 테스트의 일부로 시작된 프로세스도 종료됩니다. 테스트 실행기를 활성 상태로 유지하려면 값을 **true** 로 설정합니다. 예를 들어, 이 설정을 사용하여 브라우저가 코딩된 UI 테스트 사이에서 계속 실행되도록 할 수 있습니다.|
+|**DeploymentEnabled**|true|값을 **false** 로 설정할 경우 테스트 메서드에서 지정한 배포 항목이 배포 디렉터리로 복사되지 않습니다.|
 |**CaptureTraceOutput**|true|<xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>을 사용하여 테스트 메서드에서 디버그 추적으로 쓸 수 있습니다.|
-|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|테스트를 실행한 후 배포 디렉터리를 유지하려면 이 값을 **false**로 설정합니다.|
-|**MapInconclusiveToFailed**|false|테스트가 불충분한 상태로 완료되는 경우 **테스트 탐색기**에서 건너뛴 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 값을 **true**로 설정합니다.|
-|**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true**로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
+|**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|테스트를 실행한 후 배포 디렉터리를 유지하려면 이 값을 **false** 로 설정합니다.|
+|**MapInconclusiveToFailed**|false|테스트가 불충분한 상태로 완료되는 경우 **테스트 탐색기** 에서 건너뛴 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 값을 **true** 로 설정합니다.|
+|**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true** 로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
 |**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="example-runsettings-file"></a>예제 *.runsettings* 파일
@@ -345,6 +347,10 @@ public void HomePageTest()
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

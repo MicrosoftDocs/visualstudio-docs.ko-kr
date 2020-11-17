@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053431"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344496"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -33,7 +33,7 @@ ms.locfileid: "89053431"
 
 * 명령줄 도구 사용 경험
 
-* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 성능 도구](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
+* Visual Studio가 설치되어 있지 않은 원격 머신에서 성능 정보를 수집하려면 원격 머신에 [Visual Studio용 원격 도구](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)를 설치합니다. 도구의 버전이 Visual Studio의 버전과 일치해야 합니다.
 
 ## <a name="collect-performance-data"></a>성능 데이터 수집
 
@@ -45,7 +45,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
    ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
-1. 다음 명령을 입력하여 *VSDiagnostics.exe*를 시작합니다.
+1. 다음 명령을 입력하여 *VSDiagnostics.exe* 를 시작합니다.
 
    ```cmd
    VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
@@ -57,7 +57,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
    * \<*pid*>, 프로파일링하려는 프로세스의 PID입니다(이 경우 1단계에서 찾은 PID).
    * \<*configFile*>, 시작하려는 컬렉션 에이전트의 구성 파일입니다. 자세한 내용은 [에이전트의 구성 파일](#config_file)을 참조하세요.
 
-   예를 들어 앞에서 설명한 대로 *pid*를 대체하여 CPUUsageBase 에이전트에 다음 명령을 사용할 수 있습니다.
+   예를 들어 앞에서 설명한 대로 *pid* 를 대체하여 CPUUsageBase 에이전트에 다음 명령을 사용할 수 있습니다.
 
    ```cmd
    VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
@@ -79,7 +79,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 컬렉션 에이전트는 측정하려는 항목에 따라 서로 다른 유형의 데이터를 수집하는 상호 교환이 가능한 구성 요소입니다.
 
-편의를 위해 에이전트 구성 파일에 해당 정보를 저장할 수 있습니다. 구성 파일은 최소한 *.dll*의 이름과 해당 COM CLSID를 포함하는 *.json* 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
+편의를 위해 에이전트 구성 파일에 해당 정보를 저장할 수 있습니다. 구성 파일은 최소한 *.dll* 의 이름과 해당 COM CLSID를 포함하는 *.json* 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 

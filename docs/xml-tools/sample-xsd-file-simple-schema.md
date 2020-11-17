@@ -1,5 +1,7 @@
 ---
 title: '샘플 XSD 파일: 단순한 스키마'
+description: XSD 스키마 디자이너 설명서의 다양한 예제에서 사용되는 간단한 구매 주문 스키마에 대한 샘플 XSD 파일을 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 974e15c9645a1c1fcb8d17a8e10adc995a8743f4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75592544"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398724"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>샘플 XSD 파일: 단순한 스키마
 

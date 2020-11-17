@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 탐색기
+description: Visual Studio 및 XML 편집기와 통합된 XML 스키마 탐색기의 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592349"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351299"
 ---
 # <a name="xml-schema-explorer"></a>XML 스키마 탐색기
 
-**XML 스키마 탐색기**는 XSD(XML 스키마 정의 언어) 스키마 작업을 수행할 수 있도록 Microsoft Visual Studio 및 XML 편집기와 통합되었습니다. XML 스키마 파일을 열면 **XML 스키마 탐색기**에서 **스키마 집합** 노드가 나타납니다. 대상 파일은 물론 `include` 또는 `import` 문에서 참조되는 모든 파일에 대해 포함된 스키마, 가져온 스키마 또는 다시 정의된 스키마도 모두 **XML 스키마 탐색기**에 나타납니다.
+**XML 스키마 탐색기** 는 XSD(XML 스키마 정의 언어) 스키마 작업을 수행할 수 있도록 Microsoft Visual Studio 및 XML 편집기와 통합되었습니다. XML 스키마 파일을 열면 **XML 스키마 탐색기** 에서 **스키마 집합** 노드가 나타납니다. 대상 파일은 물론 `include` 또는 `import` 문에서 참조되는 모든 파일에 대해 포함된 스키마, 가져온 스키마 또는 다시 정의된 스키마도 모두 **XML 스키마 탐색기** 에 나타납니다.
 
-**XML 스키마 탐색기**를 사용하면 다음을 수행할 수 있습니다.
+**XML 스키마 탐색기** 를 사용하면 다음을 수행할 수 있습니다.
 
 - 스키마 집합을 간단히 파악할 수 있습니다.
 
@@ -35,18 +37,18 @@ ms.locfileid: "75592349"
 
 - 전역 요소를 위한 샘플 XML을 생성할 수 있습니다.
 
-**XML 스키마 탐색기**에서는 트리 뷰를 통해 스키마 집합을 계층적으로 표시합니다. 또한 검색, 필터링, 탐색 및 정렬 기능도 제공합니다.**** **XML 스키마 탐색기**에 액세스하려면 다음 중 하나를 수행합니다.
+**XML 스키마 탐색기** 에서는 트리 뷰를 통해 스키마 집합을 계층적으로 표시합니다. 또한 검색, 필터링, 탐색 및 정렬 기능도 제공합니다. **XML 스키마 탐색기** 에 액세스하려면 다음 중 하나를 수행합니다.
 
 - [시작 뷰](../xml-tools/start-view.md)에 있는 경우 **XML 스키마 탐색기** 링크를 클릭합니다.
 
-- [그래프 뷰](../xml-tools/graph-view.md) 또는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)에 있으며 작업 영역에 노드가 있는 경우 상황에 맞는(오른쪽 클릭) 메뉴를 사용하여 **XML 스키마 탐색기**를 선택합니다.
+- [그래프 뷰](../xml-tools/graph-view.md) 또는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)에 있으며 작업 영역에 노드가 있는 경우 상황에 맞는(오른쪽 클릭) 메뉴를 사용하여 **XML 스키마 탐색기** 를 선택합니다.
 
-- 또한 **보기** 메뉴에서 **XML 스키마 탐색기**를 선택할 수 있습니다.
+- 또한 **보기** 메뉴에서 **XML 스키마 탐색기** 를 선택할 수 있습니다.
 
-- *.xsd* 파일과 연결된 Visual Basic XML 리터럴이 있는 *.vb* 파일에서 **XML 스키마 탐색기**에 액세스할 수 있습니다. **XML 스키마 탐색기**에서 스키마 집합을 보려면 XML 리터럴 또는 XML 네임스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 클릭하고 **스키마 탐색기에 표시** 명령을 선택합니다. 자세한 내용은 [XML 리터럴과 XML 스키마 탐색기와의 통합](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)을 참조하세요.
+- *.xsd* 파일과 연결된 Visual Basic XML 리터럴이 있는 *.vb* 파일에서 **XML 스키마 탐색기** 에 액세스할 수 있습니다. **XML 스키마 탐색기** 에서 스키마 집합을 보려면 XML 리터럴 또는 XML 네임스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 클릭하고 **스키마 탐색기에 표시** 명령을 선택합니다. 자세한 내용은 [XML 리터럴과 XML 스키마 탐색기와의 통합](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)을 참조하세요.
 
 ## <a name="tree-view"></a>트리 뷰
-**XML 스키마 탐색기**에서는 미리 컴파일된 스키마 집합 정보를 트리 구조로 표시합니다. 트리 구조는 다음과 같이 구성됩니다.
+**XML 스키마 탐색기** 에서는 미리 컴파일된 스키마 집합 정보를 트리 구조로 표시합니다. 트리 구조는 다음과 같이 구성됩니다.
 
 - 최상위 수준은 스키마 집합 노드입니다.
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467637"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398997"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -81,6 +81,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | developer.apple.com | Xamarin.iOS 프로비저닝 |
 | appstoreconnect.apple.com | Xamarin.iOS 프로비저닝 |
 | idmsa.apple.com | Xamarin.iOS 프로비저닝 |
+| akamized.net | Content Delivery Network(Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio 및 Azure 서비스 사용

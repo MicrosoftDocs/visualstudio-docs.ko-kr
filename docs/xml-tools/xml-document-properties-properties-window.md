@@ -1,5 +1,7 @@
 ---
 title: XML 문서 속성, 속성 창
+description: XML 편집기의 활성 문서에 대한 기본 정보를 제공하는 속성 창의 XML 문서 속성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592427"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350233"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 문서 속성, 속성 창
 

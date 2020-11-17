@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 디자이너에서 콘텐츠 모델 뷰를 사용하여 노드 검사
+description: XML 스키마 디자이너의 콘텐츠 모델 뷰를 사용하여 XML 스키마의 노드에 대한 콘텐츠 모델을 검사하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815983"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399511"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>방법: 콘텐츠 모델 뷰를 사용하여 노드의 콘텐츠 모델 검사
 
@@ -23,13 +25,13 @@ ms.locfileid: "85815983"
 
 1. 새 XML 스키마 파일을 만듭니다.
 
-2. 시작 뷰에서 **XML 편집기를 사용하여 기본 XML 스키마 파일 표시 및 편집**을 클릭합니다.
+2. 시작 뷰에서 **XML 편집기를 사용하여 기본 XML 스키마 파일 표시 및 편집** 을 클릭합니다.
 
 3. [샘플 XML 스키마: 구매 주문 스키마](../xml-tools/sample-xsd-file-purchase-order-schema.md)에서 XML 스키마 샘플 코드를 복사하고 붙여넣어 기본적으로 새 XSD 파일에 추가된 코드를 바꿉니다.
 
-4. XML 편집기에서 `purchaseOrder` 요소를 마우스 오른쪽 단추로 클릭하고 **XML 탐색기에 표시**를 선택하여 스키마 탐색기에서 `purchaseOrder` 요소를 선택합니다.
+4. XML 편집기에서 `purchaseOrder` 요소를 마우스 오른쪽 단추로 클릭하고 **XML 탐색기에 표시** 를 선택하여 스키마 탐색기에서 `purchaseOrder` 요소를 선택합니다.
 
-5. XML 탐색기에서 `purchaseOrder`를 마우스 오른쪽 단추로 클릭하고 **콘텐츠 모델 뷰로 표시**를 선택합니다.
+5. XML 탐색기에서 `purchaseOrder`를 마우스 오른쪽 단추로 클릭하고 **콘텐츠 모델 뷰로 표시** 를 선택합니다.
 
      콘텐츠 모델 뷰는 해당 디자인 화면에 `purchaseOrder` 요소를 표시합니다.
 
@@ -41,4 +43,4 @@ ms.locfileid: "85815983"
 
 8. XSD 도구 모음에서 **설명서 표시** 단추를 클릭하여 설명서를 표시하거나 숨깁니다. 또한 디자인 화면을 마우스 오른쪽 단추로 클릭하여 설명서를 표시하거나 숨길 수 있습니다.
 
-9. `purchaseOrder` 노드를 마우스 오른쪽 단추로 클릭하고 **샘플 XML 생성**을 선택하여 XML 인스턴스 문서를 봅니다.
+9. `purchaseOrder` 노드를 마우스 오른쪽 단추로 클릭하고 **샘플 XML 생성** 을 선택하여 XML 인스턴스 문서를 봅니다.

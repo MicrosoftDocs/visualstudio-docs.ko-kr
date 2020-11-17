@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 게시 페이지
+description: 프로젝트 디자이너의 게시 페이지는 ClickOnce 배포를 위한 속성을 구성하는 데 사용됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -13,31 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68926166"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350285"
 ---
 # <a name="publish-page-project-designer"></a>프로젝트 디자이너, 게시 페이지
 
 **프로젝트 디자이너** 의 **게시** 페이지를 통해 ClickOnce 배포를 위한 속성을 구성합니다.
 
-이 **게시** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **게시** 탭을 클릭합니다.
+이 **게시** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성** 을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **게시** 탭을 클릭합니다.
 
 > [!NOTE]
-> 여기에 설명된 ClickOnce 속성 중 일부는 **빌드** 메뉴에서 또는 이 페이지의 **PublishWizard** 단추를 클릭하여 사용할 수 있는 **PublishWizard**에서도 설정할 수 있습니다.
+> 여기에 설명된 ClickOnce 속성 중 일부는 **빌드** 메뉴에서 또는 이 페이지의 **PublishWizard** 단추를 클릭하여 사용할 수 있는 **PublishWizard** 에서도 설정할 수 있습니다.
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 
  **게시 폴더 위치**
 
-애플리케이션이 게시되는 위치를 지정합니다. 드라이브 경로(`C:\deploy\myapplication`), 파일 공유(`\\server\myapplication`) 또는 FTP 서버(`ftp://ftp.microsoft.com/myapplication`)일 수 있습니다. 찾아보기( **...** ) 단추가 작동하려면**게시 위치**상자에 텍스트가 있어야 합니다.
+애플리케이션이 게시되는 위치를 지정합니다. 드라이브 경로(`C:\deploy\myapplication`), 파일 공유(`\\server\myapplication`) 또는 FTP 서버(`ftp://ftp.microsoft.com/myapplication`)일 수 있습니다. 찾아보기( **...** ) 단추가 작동하려면 **게시 위치** 상자에 텍스트가 있어야 합니다.
 
  **설치 폴더 URL**
 
-(선택 사항) 사용자가 애플리케이션을 설치할 웹 사이트를 지정합니다. **게시 위치**와 다른 경우(예: 애플리케이션이 준비 서버에 게시된 경우)에만 이 옵션이 필요합니다.
+선택 사항입니다. 사용자가 애플리케이션을 설치할 웹 사이트를 지정합니다. **게시 위치** 와 다른 경우(예: 애플리케이션이 준비 서버에 게시된 경우)에만 이 옵션이 필요합니다.
 
  **설치 모드 및 설정**
 
@@ -57,7 +59,7 @@ WPF 웹 브라우저 앱의 경우 온라인으로만 사용 가능하므로, **
 
 애플리케이션의 업데이트 동작을 지정하는 데 사용되는 [애플리케이션 업데이트] 대화 상자를 엽니다. **온라인으로만 애플리케이션 사용 가능** 을 선택한 경우 사용할 수 없습니다.
 
- **옵션**
+ **Options**
 
 추가 고급 게시 옵션을 지정하는 데 사용되는 [게시 옵션] 대화 상자를 엽니다.
 
@@ -69,7 +71,7 @@ ClickOnce를 사용하여 애플리케이션 버전을 둘 이상 설치하면 �
 
  **게시할 때마다 자동으로 수정 번호 증가**
 
-(선택 사항) 이 옵션이 선택된 경우(기본값), 애플리케이션을 게시할 때마다 게시 버전 번호의 **수정** 부분이 1씩 증가합니다. 그러면 애플리케이션이 업데이트로 게시됩니다.
+선택 사항입니다. 이 옵션이 선택된 경우(기본값), 애플리케이션을 게시할 때마다 게시 버전 번호의 **수정** 부분이 1씩 증가합니다. 그러면 애플리케이션이 업데이트로 게시됩니다.
 
  **게시 마법사**
 
@@ -77,9 +79,9 @@ ClickOnce를 사용하여 애플리케이션 버전을 둘 이상 설치하면 �
 
  **지금 게시**
 
-현재 설정을 사용하여 애플리케이션을 게시합니다. **PublishWizard**에서 **마침** 단추와 동일합니다.
+현재 설정을 사용하여 애플리케이션을 게시합니다. **PublishWizard** 에서 **마침** 단추와 동일합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [ClickOnce 애플리케이션 게시](../../deployment/publishing-clickonce-applications.md)
 - [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
@@ -91,7 +93,7 @@ ClickOnce를 사용하여 애플리케이션 버전을 둘 이상 설치하면 �
 - [방법: ClickOnce 게시 버전 설정](../../deployment/how-to-set-the-clickonce-publish-version.md)
 - [방법: ClickOnce 게시 버전 자동 증가](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [방법: ClickOnce를 통해 게시할 파일 지정](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [방법: ClickOnce 애플리케이션을 사용하여 필수 조건 설치](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [방법: ClickOnce 애플리케이션의 필수 구성 요소 설치](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [방법: ClickOnce 애플리케이션에 대한 업데이트 관리](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
 - [방법: ClickOnce 애플리케이션의 게시 언어 변경](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
 - [방법: ClickOnce 애플리케이션의 시작 메뉴 이름 지정](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)

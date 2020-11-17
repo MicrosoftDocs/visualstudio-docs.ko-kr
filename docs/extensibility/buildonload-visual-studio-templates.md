@@ -1,6 +1,7 @@
 ---
 title: BuildOnLoad attribute 및 요소 (Visual Studio 템플릿)
 titleSuffix: ''
+description: BuildOnLoad 특성 및 요소에 대해 알아보고 프로젝트를 만든 후 즉시 프로젝트를 빌드 하는지 여부를 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036862"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671607"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad attribute 및 요소
 
@@ -84,7 +85,7 @@ ms.locfileid: "90036862"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [BuildProjectOnload 요소](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent 요소](../extensibility/templatecontent-element-visual-studio-templates.md)

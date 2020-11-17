@@ -1,5 +1,8 @@
 ---
 title: Assembly 요소 (Visual Studio 템플릿) | Microsoft Docs
+titleSuffix: ''
+description: 어셈블리 요소 및 어셈블리에 대 한 정보를 지정 하는 방법에 대해 알아봅니다. 템플릿에서 해당 어셈블리에 대 한 참조를 프로젝트에 추가 하는 데 사용 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740038"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671648"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소 (Visual Studio 템플릿)
 템플릿에서 해당 어셈블리의 참조를 프로젝트에 추가 하는 데 사용 하는 어셈블리에 대 한 정보를 지정 합니다.
@@ -55,7 +58,7 @@ ms.locfileid: "80740038"
 
  이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 이 어셈블리 이름은 다음 방법 중 하나로 지정 해야 합니다.
 
-- 전체 어셈블리 이름으로 예:
+- 전체 어셈블리 이름으로 예를 들어:
 
     ```
     <Assembly>

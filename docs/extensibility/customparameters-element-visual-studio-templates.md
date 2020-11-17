@@ -1,5 +1,7 @@
 ---
 title: CustomParameters 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: CustomParameters 요소에 대해 알아보고 마법사에서 매개 변수를 바꿀 때 템플릿 마법사에 전달할 사용자 지정 매개 변수를 그룹화 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739415"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671481"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 요소 (Visual Studio 템플릿)
 마법사에서 매개 변수 대체를 만들 때 템플릿 마법사에 전달할 사용자 지정 매개 변수를 그룹화 합니다.
@@ -52,7 +54,7 @@ ms.locfileid: "80739415"
 
 ## <a name="remarks"></a>설명
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 템플릿에서 여러 사용자 지정 매개 변수를 사용 하는 방법을 보여 줍니다. 다음 사용자 지정 매개 변수를 사용 하 여 템플릿에서 프로젝트 또는 항목을 만들 때 템플릿 파일의 및의 모든 인스턴스 `$color1$` `$color2$` 는 각각 및로 바뀝니다 `Red` `Blue` .
 
 ```
@@ -62,7 +64,7 @@ ms.locfileid: "80739415"
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [CustomParameter 요소 (Visual Studio 템플릿)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

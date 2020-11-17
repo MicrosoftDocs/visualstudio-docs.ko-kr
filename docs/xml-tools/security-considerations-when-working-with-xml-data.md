@@ -1,5 +1,7 @@
 ---
 title: XML 데이터 사용 시 보안 고려 사항
+description: XML 편집기나 XSLT 디버거에서 XML 데이터로 작업할 때의 보안 고려 사항에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9e98e18e3e01f53afa6b0a9ea3bdec94f2186f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815840"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351351"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML 데이터 사용 시 보안 고려 사항
 

@@ -1,5 +1,7 @@
 ---
 title: XML 스키마 디자이너 시작 뷰
+description: XML 스키마(XSD) 디자이너의 시작 뷰에서 사용할 수 있는 명령에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592531"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351364"
 ---
 # <a name="start-view"></a>시작 뷰
 
@@ -25,7 +27,7 @@ ms.locfileid: "75592531"
 
 ## <a name="watermark"></a>워터마크
 
-워터마크 창에는 모든 XSD 디자이너 뷰, XML 편집기 및 **XML 스키마 탐색기**에 대한 링크 목록이 있습니다. 스키마 집합에 오류가 있는 경우 목록 끝에 다음 텍스트가 표시됩니다. “오류 목록을 사용하여 집합의 오류 표시 및 수정”
+워터마크 창에는 모든 XSD 디자이너 뷰, XML 편집기 및 **XML 스키마 탐색기** 에 대한 링크 목록이 있습니다. 스키마 집합에 오류가 있는 경우 목록 끝에 다음 텍스트가 표시됩니다. “오류 목록을 사용하여 집합의 오류 표시 및 수정”
 
 ## <a name="schema-set-details"></a>스키마 집합 정보
 

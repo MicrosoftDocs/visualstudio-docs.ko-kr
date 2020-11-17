@@ -1,5 +1,7 @@
 ---
 title: '방법: XML 리터럴과 함께 XML 스키마 디자이너 사용'
+description: XML 스키마 디자이너를 사용하여 Visual Basic 프로젝트에서 XML 리터럴과 연결된 스키마를 보는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b515092087ab213db5d3002f00c56753c2e3de14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814644"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399174"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>방법: XML 리터럴과 함께 XML 스키마 디자이너 사용
 
@@ -25,17 +27,17 @@ ms.locfileid: "85814644"
 
 1. Visual Studio를 엽니다.
 
-2. **XMLLiterals**라는 새 Visual Basic **콘솔 앱** 프로젝트를 만듭니다.
+2. **XMLLiterals** 라는 새 Visual Basic **콘솔 앱** 프로젝트를 만듭니다.
 
-     새 프로젝트에는 Visual Basic 소스 파일인 *Module1.vb*가 한 개 들어 있습니다.
+     새 프로젝트에는 Visual Basic 소스 파일인 *Module1.vb* 가 한 개 들어 있습니다.
 
 ## <a name="add-an-existing-xsd-file"></a>기존 XSD 파일 추가
 
 1. 새 텍스트 파일을 메모장에서 엽니다. [구매 주문 스키마](../xml-tools/sample-xsd-file-simple-schema.md)에서 XML 스키마 샘플 코드를 복사하고 파일에 붙여넣습니다.
 
-2. 일부 위치에 있는 파일을 이름 *PurchaseOrderSchema.xsd*로 저장합니다.
+2. 일부 위치에 있는 파일을 이름 *PurchaseOrderSchema.xsd* 로 저장합니다.
 
-3. **솔루션 탐색기**에서 프로젝트의 이름을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **기존 항목**을 선택합니다. **기존 항목 추가** 대화 상자가 나타납니다. *PurchaseOrderSchema.xsd* 파일을 찾아 선택한 다음, **추가**를 클릭합니다.
+3. **솔루션 탐색기** 에서 프로젝트의 이름을 마우스 오른쪽 단추로 클릭하고 **추가** 를 선택한 다음, **기존 항목** 을 선택합니다. **기존 항목 추가** 대화 상자가 나타납니다. *PurchaseOrderSchema.xsd* 파일을 찾아 선택한 다음, **추가** 를 클릭합니다.
 
      이제 XMLLiterals 프로젝트에 두 파일(*Module1.vb* 및 *PurchaseOrderSchema.xsd*)이 있습니다.
 
@@ -72,6 +74,6 @@ ms.locfileid: "85814644"
    End Module
    ```
 
-2. XML 리터럴 또는 XML 네임스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 클릭하고 **스키마 탐색기에 표시**를 선택합니다.
+2. XML 리터럴 또는 XML 네임스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 클릭하고 **스키마 탐색기에 표시** 를 선택합니다.
 
-   **XML 스키마 탐색기**는 XML 스키마 집합과 연결된 XML 리터럴이 있는 Visual Basic 파일과 나란히 표시됩니다.
+   **XML 스키마 탐색기** 는 XML 스키마 집합과 연결된 XML 리터럴이 있는 Visual Basic 파일과 나란히 표시됩니다.

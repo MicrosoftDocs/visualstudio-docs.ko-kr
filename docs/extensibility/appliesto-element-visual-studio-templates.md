@@ -1,5 +1,7 @@
 ---
 title: AppliesTo 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: AppliesTo 요소 및 하나 이상의 기능과 일치 하는 선택적 식을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fca9f6550a066d3f3e0e46514a15d9ff14cb66c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740080"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671703"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 요소 (Visual Studio 템플릿)
 
@@ -74,7 +76,7 @@ ms.locfileid: "80740080"
 
 - 프로젝트 기능에는 다음 예약 문자를 제외한 모든 문자 ("' ':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>?)가 있을 수 있습니다. \t\b\n\r
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 세 개의 서로 다른 템플릿을 보여줍니다. `Template1` 모든 c # 프로젝트 형식 또는 기능을 지 원하는 다른 프로젝트 형식에 적용 됩니다 `WindowsAppContainer` . `Template2` 모든 종류의 c # 프로젝트에 적용 됩니다. `Template3`은 `WindowsAppContainer` 프로젝트가 아닌 C# 프로젝트에 적용됩니다.
 

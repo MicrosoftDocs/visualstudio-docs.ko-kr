@@ -1,5 +1,6 @@
 ---
 title: EnableLocationBrowseButton 요소(Visual Studio 템플릿)
+description: EnableLocationBrowseButton 요소 및 새 프로젝트 대화 상자에서 찾아보기 단추를 사용할 수 있는지 여부를 지정 하는 방법에 대해 알아봅니다.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036654"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671261"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
 사용자가 새 프로젝트가 저장 되는 기본 디렉터리를 쉽게 수정할 수 있도록 **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정 합니다.

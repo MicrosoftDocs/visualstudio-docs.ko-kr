@@ -1,5 +1,7 @@
 ---
 title: '방법: XML 스키마에서 XML 조각 생성'
+description: XML 편집기를 사용하여 XSD(XML 스키마 정의 언어) 스키마에서 XML 코드 조각을 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817179"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399471"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 코드 조각 생성
 
@@ -50,9 +52,9 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 코드 
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>새 XML 파일을 만들어 XML 스키마와 연결하는 방법
 
-1. **파일** 메뉴에서 **새로 만들기**를 가리키고 **파일**을 클릭합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 가리키고 **파일** 을 클릭합니다.
 
-2. **템플릿** 창에서 **XML 파일**을 선택하고 **열기**를 클릭합니다.
+2. **템플릿** 창에서 **XML 파일** 을 선택하고 **열기** 를 클릭합니다.
 
      편집기에서 새 파일이 열립니다. 파일에는 기본 XML 선언, `<?xml version="1.0" encoding="utf-8">`이 포함됩니다.
 
@@ -60,13 +62,13 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 코드 
 
      **XSD 스키마** 대화 상자가 표시됩니다.
 
-4. **추가**를 클릭합니다.
+4. **추가** 를 클릭합니다.
 
      **XSD 스키마 열기** 대화 상자가 표시됩니다.
 
-5. 스키마 파일을 선택하고 **열기**를 클릭합니다.
+5. 스키마 파일을 선택하고 **열기** 를 클릭합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
      이제 XML 스키마가 XML 문서와 연결되었습니다.
 
@@ -84,7 +86,7 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 코드 
 
      **Contact** 루트 요소를 추가합니다.
 
-3. 멤버 목록에서 **Contact**를 선택하고 **Enter** 키를 누릅니다.
+3. 멤버 목록에서 **Contact** 를 선택하고 **Enter** 키를 누릅니다.
 
      시작 태그 `<Contact`가 추가되고 요소 이름 뒤에 커서가 놓입니다.
 

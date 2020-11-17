@@ -3,27 +3,27 @@ title: 새 프로젝트 및 솔루션 만들기
 description: 이 문서에서는 Mac용 Visual Studio에서 프로젝트와 솔루션을 만드는 방법을 설명합니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183961"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493297"
 ---
 # <a name="create-a-new-project"></a>새 프로젝트 만들기
 
 ## <a name="opening-the-project-creation-dialog"></a>프로젝트 만들기 대화 상자 열기
 
-Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습니다. Mac용 Visual Studio를 처음 열면 시작 창이 표시됩니다. 여기에서 **새로 만들기**를 선택하면 프로젝트 만들기 화면으로 이동합니다.
+Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습니다. Mac용 Visual Studio를 처음 열면 시작 창이 표시됩니다. 여기에서 **새로 만들기** 를 선택하면 프로젝트 만들기 화면으로 이동합니다.
 
 > [!TIP]
-> 또한 시작 창에서 최근 프로젝트 및 솔루션을 열고 검색할 수도 있습니다. 메뉴 모음으로 이동하여 **파일 > 최근 솔루션**을 선택하여 최근 프로젝트를 열 수도 있습니다.
+> 또한 시작 창에서 최근 프로젝트 및 솔루션을 열고 검색할 수도 있습니다. 메뉴 모음으로 이동하여 **파일 > 최근 솔루션** 을 선택하여 최근 프로젝트를 열 수도 있습니다.
 
 ![새 프로젝트 만들기가 표시된 시작 창](media/first-run-project.png)
 
-솔루션이 로드된 상태로 Mac용 Visual Studio가 이미 열려 있는 경우 메뉴 모음으로 이동한 후 **파일> 새 솔루션**을 선택하여 새 솔루션을 만들 수 있습니다. 이러한 방식으로 새 솔루션을 만들면 이미 로드된 솔루션은 닫힙니다.
+솔루션이 로드된 상태로 Mac용 Visual Studio가 이미 열려 있는 경우 메뉴 모음으로 이동한 후 **파일> 새 솔루션** 을 선택하여 새 솔루션을 만들 수 있습니다. 이러한 방식으로 새 솔루션을 만들면 이미 로드된 솔루션은 닫힙니다.
 
 ## <a name="creating-a-new-project"></a>새 프로젝트 만들기
 
@@ -45,7 +45,7 @@ Mac용 Visual Studio에서 새 프로젝트를 만드는 여러 방법이 있습
 
 ## <a name="adding-additional-projects-to-a-solution"></a>추가 프로젝트를 솔루션에 추가
 
-Solution Pad에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 프로젝트 추가** 또는 **추가 > 기존 프로젝트 추가** 중에서 선택하여 솔루션에 추가 프로젝트를 추가할 수 있습니다.
+**솔루션 창** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 프로젝트 추가** 또는 **추가 > 기존 프로젝트 추가** 를 선택하여 솔루션에 프로젝트를 더 추가할 수 있습니다.
 
 새 프로젝트를 추가하면 [새 프로젝트 구성](#configuring-your-new-project)에 표시된 대로 프로젝트 만들기가 진행됩니다.
 

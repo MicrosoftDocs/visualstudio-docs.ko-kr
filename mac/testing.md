@@ -1,18 +1,19 @@
 ---
 title: Mac용 Visual Studio 테스트 도구
-ms.date: 08/03/2020
+description: Mac용 Visual Studio를 사용하여 테스트 만들기 및 실행
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580963"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493389"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 테스트 도구
 
@@ -27,7 +28,7 @@ Mac용 Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준
 > .NET Core 애플리케이션의 유닛 테스트 및 단위 테스트 프레임워크 선택에 관한 자세한 내용은 [.NET Core 및 .NET Standard의 유닛 테스트](/dotnet/core/testing/?pivots=xunit) 설명서를 참조하세요.
 
 ## <a name="running-tests"></a>테스트 실행
-**단위 테스트** 창은 단위 테스트를 실행하는 데 사용되고 **보기 > 패드 > 단위 테스트** 메뉴를 사용하여 엽니다. 솔루션의 단위 테스트는 자동으로 검색되어 이 창에 표시됩니다. 여기서 모든 테스트 또는 선택한 테스트 세트를 실행할 수 있습니다.
+**단위 테스트** 창은 단위 테스트를 실행하는 데 사용되며 **보기 > 테스트** 메뉴를 사용하여 엽니다. 솔루션의 단위 테스트는 자동으로 검색되어 이 창에 표시됩니다. 여기서 모든 테스트 또는 선택한 테스트 세트를 실행할 수 있습니다.
 
 ![테스트 실행 또는 중지를 위한 단위 테스트 및 도구 모음의 목록을 보여 주는 테스트 창](media/test-window.PNG)
 

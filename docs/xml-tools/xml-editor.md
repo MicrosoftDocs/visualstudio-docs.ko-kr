@@ -1,5 +1,7 @@
 ---
 title: XML 편집기
+description: 텍스트 편집기를 기반으로 하며 XML 언어를 추가 지원하는 Visual Studio의 XML 편집기에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713544"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351442"
 ---
 # <a name="xml-editor"></a>XML 편집기
 

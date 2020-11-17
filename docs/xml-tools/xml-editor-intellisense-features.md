@@ -1,5 +1,7 @@
 ---
 title: XML 편집기 IntelliSense 기능
+description: Visual Studio에서 XML 편집기의 IntelliSense 기능과 이러한 기능을 XSD(XML 스키마 정의 언어) 및 XSLT 문서에서 사용하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592388"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350246"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 
@@ -91,9 +93,9 @@ XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 
 
 XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
-- 일치하는 시작 태그와 끝 태그
+- 쌍을 이루는 시작 및 끝 태그
 
-- “\<” 또는 “>” 꺾쇠 괄호 쌍
+- "\<" or ">" 꺾쇠 괄호 쌍
 
 - 주석의 시작과 끝
 
@@ -119,11 +121,11 @@ IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습�
 
 ### <a name="to-change-the-auto-completion-behavior"></a>자동 완성 동작을 변경하려면
 
-1. **도구** 메뉴에서 **옵션**을 선택합니다.
+1. **도구** 메뉴에서 **옵션** 을 선택합니다.
 
-2. **텍스트 편집기**를 확장하고 **XML**을 확장한 다음, **기타**를 선택합니다.
+2. **텍스트 편집기** 를 확장하고 **XML** 을 확장한 다음, **기타** 를 선택합니다.
 
-3. **자동 삽입** 섹션에서 원하는 대로 변경하고 **확인**을 클릭합니다.
+3. **자동 삽입** 섹션에서 원하는 대로 변경하고 **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

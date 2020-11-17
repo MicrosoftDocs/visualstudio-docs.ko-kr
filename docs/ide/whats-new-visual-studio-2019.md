@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 08/21/2020
+ms.date: 11/10/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005371"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438273"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.7 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.8 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
-
-Visual Studio는 개발자의 요구를 충족하기 위해 계속 변경됩니다. **[Microsoft Build](https://mybuild.microsoft.com/)** 라이브러리의 다음 비디오에서 일부 [최신 기능](/visualstudio/releases/2019/release-notes/) 둘러보기에 참여하여 향후 제공될 기능을 [살펴보세요](/visualstudio/releases/2019/release-notes-preview/). <br><br>*비디오 길이:* 44분 58초
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
 Visual Studio 2019를 사용하면 모든 개발자, 앱 및 플랫폼을 위한 업계 최고의 도구와 서비스가 제공됩니다. Visual Studio를 처음 사용하는 사용자와 수년간 사용해 온 사용자 모두에게 유용한 여러 기능이 최신 버전에 포함되어 있습니다.
 
@@ -138,6 +134,12 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 자세한 내용은 [코드 가져오기: 새 Visual Studio 시작 창 디자인 방법](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) 블로그 게시물을 참조하세요.
 
+### <a name="git-productivity"></a>Git 생산성
+
+**16.8의 새로운 기능** Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. 지난 두 릴리스 기간 중 피드백에 따라 기능 집합을 구축하고 반복했습니다. 이제 새 환경은 모든 사용자에 대해 기본적으로 설정되어 있습니다. 새 Git 메뉴에서 리포지토리를 복제, 생성 또는 열 수 있습니다. 통합된 Git 도구 창을 사용하여 코드에 변경 내용을 커밋하고 푸시하며, 분기를 관리하고, 원격 리포지토리를 최신 상태로 유지하고, 병합 충돌을 해결합니다.
+
+자세한 내용은 [Visual Studio의 Git 생산성](git-with-visual-studio.md) 페이지를 참조하세요.
+
 ### <a name="live-share"></a>Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/)는 Visual Studio 내에서 바로 코드베이스와 컨텍스트를 팀원과 공유하고 즉각적인 양방향 협업을 수행할 수 있는 개발자 서비스입니다. 실시간 공유를 사용하면 귀하가 공유한 프로젝트를 팀원이 원활하고 안전하게 읽고, 탐색하고, 편집하고, 디버깅할 수 있습니다.
@@ -222,11 +224,11 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 
 - **Visual Studio 2019의 향상된 Git 환경(미리 보기)**
 
-   Microsoft에서는 GitHub, Azure Repos 및 기타 원격 호스팅 서비스에서 코드를 사용할 때 생산성을 향상하도록 지속적으로 Git 환경을 개선하고 있습니다. 한 번의 동작(또는 클릭)으로 Visual Studio 2019 내에서 초기화하고 푸시할 수 있습니다. 새 분기를 만들고, 현재 분기를 관리하고, 병합 충돌을 해결할 수도 있습니다.
+   이제 새 Git 버전 제어 환경은 Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes/)에서 기본적으로 설정되어 있지만 최신 미리 보기 릴리스에서 환경을 개선하기 위해 기능을 계속 추가하고 있습니다.
 
-   자세한 내용은 [Visual Studio의 새 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
+   자세한 내용은 [Visual Studio의 Git 생산성](git-with-visual-studio.md) 페이지를 참조하세요.
 
-미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 페이지를 참조하세요.
+미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://aka.ms/vspreview/)** 페이지를 참조하세요.
 
 ## <a name="give-us-feedback"></a>피드백 보내기
 

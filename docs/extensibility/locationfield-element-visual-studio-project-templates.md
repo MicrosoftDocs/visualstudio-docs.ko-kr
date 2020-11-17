@@ -1,6 +1,8 @@
 ---
 title: LocationField 요소(Visual Studio 프로젝트 템플릿)
 titleSuffix: ''
+description: LocationField 요소 및 프로젝트 템플릿에 대해 새 프로젝트 대화 상자 위치 텍스트 상자를 사용, 사용 안 함 또는 숨길지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739135"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671274"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 요소 (Visual Studio 프로젝트 템플릿)
 **새 프로젝트** 대화 상자의 **위치** 텍스트 상자를 프로젝트 템플릿에 대해 사용, 사용 안 함 또는 숨길지 여부를 지정 합니다.
@@ -46,7 +48,7 @@ ms.locfileid: "89739135"
 
 |요소|설명|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고 **새 프로젝트**에 표시 하는 방법을 정의 합니다.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류 하 고 **새 프로젝트** 에 표시 하는 방법을 정의 합니다.|
 
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
@@ -66,7 +68,7 @@ ms.locfileid: "89739135"
 
  요소에 지정 된 값은 `Location` 기본 프로젝트 시스템에서 지 원하는 경우에만 대화 상자에서 적용 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
 
 ```

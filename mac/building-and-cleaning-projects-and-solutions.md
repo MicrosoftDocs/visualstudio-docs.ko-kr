@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939107"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492700"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>프로젝트와 솔루션 빌드 및 정리
 
@@ -22,7 +22,7 @@ ms.locfileid: "85939107"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>전체 솔루션을 빌드, 다시 빌드 또는 정리하려면
 
-1. **Solution Pad**에서 솔루션 노드를 선택합니다.
+1. **솔루션 창** 에서 솔루션 노드를 선택합니다.
 
     ![솔루션 노드 선택](media/compiling-and-building-image1.png)
 
@@ -30,15 +30,15 @@ ms.locfileid: "85939107"
 
     ![모든 메뉴 항목 빌드 선택](media/compiling-and-building-image2.png)
 
-    * 프로젝트 내에서 가장 최근 빌드 이후에 변경된 파일과 구성 요소를 컴파일하려면 **모두 빌드**를 선택합니다.
+    * 프로젝트 내에서 가장 최근 빌드 이후에 변경된 파일과 구성 요소를 컴파일하려면 **모두 빌드** 를 선택합니다.
 
-    * 솔루션을 “정리”하고 모든 프로젝트 파일과 구성 요소를 빌드하려면 **모두 다시 빌드**를 선택합니다.
+    * 솔루션을 “정리”하고 모든 프로젝트 파일과 구성 요소를 빌드하려면 **모두 다시 빌드** 를 선택합니다.
 
-    * 중간 파일과 출력 파일을 모두 삭제하려면 **모두 정리**를 선택합니다. 그런 다음 프로젝트 및 구성 요소 파일만 유지하여 중간 파일과 출력 파일의 새 인스턴스를 빌드할 수 있습니다.
+    * 중간 파일과 출력 파일을 모두 삭제하려면 **모두 정리** 를 선택합니다. 그런 다음 프로젝트 및 구성 요소 파일만 유지하여 중간 파일과 출력 파일의 새 인스턴스를 빌드할 수 있습니다.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>단일 프로젝트를 빌드 또는 다시 빌드하려면
 
-1. **Solution Pad**에서 프로젝트를 선택합니다.
+1. **솔루션 창** 에서 프로젝트를 선택합니다.
 
 2. 메뉴 모음에서 **빌드** 메뉴를 선택합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "85939107"
 
 * **빌드** 메뉴의 **중지** 항목을 사용합니다.
 
-* **Cmd+Shift+Return**을 누릅니다.
+* **Cmd+Shift+Return** 을 누릅니다.
 
 ## <a name="see-also"></a>참조
 

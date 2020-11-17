@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f3dfdecb28254e5b9683cd1e9640c5a45b728a6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134696"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493480"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>자습서: Windows Forms 디자이너 시작
 

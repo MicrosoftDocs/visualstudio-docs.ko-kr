@@ -1,5 +1,7 @@
 ---
 title: CreateInPlace 요소 (Visual Studio 템플릿)
+description: CreateInPlace 요소 및 프로젝트를 만들고 특정 또는 임시 위치에서 매개 변수 대체를 수행할지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739666"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671984"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 요소 (Visual Studio 템플릿)
 프로젝트를 만들고 지정 된 위치에서 매개 변수 대체를 수행 하거나 임시 위치에서 매개 변수 대체를 수행 하 고 지정 된 위치에 프로젝트를 저장할 것인지 여부를 지정 합니다.
@@ -56,7 +58,7 @@ ms.locfileid: "80739666"
 ## <a name="remarks"></a>설명
  `CreateInPlace`는 선택적 요소입니다. 기본값은 `true`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
 
 ```

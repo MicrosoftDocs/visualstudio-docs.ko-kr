@@ -1,5 +1,7 @@
 ---
 title: CustomParameter 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: CustomParameter 요소에 대해 알아보고 템플릿에서 프로젝트 또는 항목을 만들 때 사용할 사용자 지정 매개 변수 이름 및 값을 포함 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739422"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671951"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 요소 (Visual Studio 템플릿)
 템플릿에서 프로젝트 또는 항목을 만들 때 사용할 사용자 지정 매개 변수 이름 및 값을 포함 합니다.
@@ -34,7 +36,7 @@ ms.locfileid: "80739422"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Name`|필수 사항입니다. 매개 변수의 이름입니다. 매개 변수의 형식은 $*name*$입니다.|
 |`Value`|필수 요소. 매개 변수의 대체 값입니다.|
@@ -51,7 +53,7 @@ ms.locfileid: "80739422"
 ## <a name="remarks"></a>설명
  템플릿에 요소가 포함 된 경우 `CustomParameter` 모든 인스턴스는 `Name` 생성 된 `Value` 프로젝트 또는 항목 파일의 특성으로 대체 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 템플릿에서 여러 사용자 지정 매개 변수를 사용 하는 방법을 보여 줍니다. 다음 사용자 지정 매개 변수를 사용 하 여 템플릿에서 프로젝트 또는 항목을 만들 때 템플릿 파일의 및의 모든 인스턴스 `$color1$` `$color2$` 는 각각 및로 바뀝니다 `Red` `Blue` .
 
 ```
@@ -61,7 +63,7 @@ ms.locfileid: "80739422"
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [CustomParameters 요소 (Visual Studio 템플릿)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

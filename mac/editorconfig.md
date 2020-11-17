@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938521"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493064"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>사용자 지정 EditorConfig 파일 만들기 및 편집
 
@@ -41,17 +41,17 @@ EditorConfig는 C#에서 [코딩 규칙](/visualstudio/ide/editorconfig-code-sty
 
 1. Mac용 Visual Studio에서 프로젝트를 엽니다. EditorConfig 파일을 추가할 솔루션 또는 프로젝트 노드를 선택합니다. 솔루션 디렉터리에 파일을 추가하면 솔루션의 모든 프로젝트에 .editorconfig 설정이 적용됩니다.
 
-2. 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일**을 선택하여 **새 파일** 대화 상자를 엽니다.
+2. 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일** 을 선택하여 **새 파일** 대화 상자를 엽니다.
 
     ![콘텐츠 메뉴 항목](media/editorconfig-image0.png)
 
-3. **기타 > 빈 텍스트 파일**을 선택하고 **이름**에 `.editorconfig`를 지정합니다. **새로 만들기**를 눌러 파일을 만들고 편집기에서 엽니다.
+3. **기타 > 빈 텍스트 파일** 을 선택하고 **이름** 에 `.editorconfig`를 지정합니다. **새로 만들기** 를 눌러 파일을 만들고 편집기에서 엽니다.
 
     ![새 파일 대화 상자](media/editorconfig-image1.png)
 
     솔루션 수준에서 항목을 추가하면 해당 항목이 자동으로 생성되고 **솔루션 항목** 폴더에 중첩됩니다.
 
-    ![솔루션 패드에 표시되는 솔루션 항목](media/editorconfig-image1a.png)
+    ![솔루션 창에 표시된 솔루션 항목](media/editorconfig-image1a.png)
 
 4. 파일을 편집합니다. 예를 들어:
 
@@ -70,7 +70,7 @@ EditorConfig는 C#에서 [코딩 규칙](/visualstudio/ide/editorconfig-code-sty
     csharp_new_line_before_open_brace = none
     ```
 
-4. `.editorconfig` 파일의 설정은 작성하는 모든 새 코드에 적용되지만 기존 코드를 새 설정과 일치하도록 다시 포맷해야 할 수 있습니다. `.editorconfig` 파일의 설정을 기존 원본 파일에 적용하려면 파일을 열고 메뉴 모음에서 **편집 > 서식 > 문서 서식**을 선택합니다.
+4. `.editorconfig` 파일의 설정은 작성하는 모든 새 코드에 적용되지만 기존 코드를 새 설정과 일치하도록 다시 포맷해야 할 수 있습니다. `.editorconfig` 파일의 설정을 기존 원본 파일에 적용하려면 파일을 열고 메뉴 모음에서 **편집 > 서식 > 문서 서식** 을 선택합니다.
 
     ![문서 서식 메뉴 항목](media/editorconfig-image2.png)
 
@@ -80,17 +80,17 @@ EditorConfig는 C#에서 [코딩 규칙](/visualstudio/ide/editorconfig-code-sty
 
 기존의 `.editorconfig` 파일을 프로젝트에서 재사용하는 것이 좋습니다. 기존 파일을 추가하려면 다음을 수행합니다.
 
-1. 기존 파일을 추가하려는 폴더를 마우스 오른쪽 단추로 클릭하고 **추가 > 파일 추가**를 선택합니다.
+1. 기존 파일을 추가하려는 폴더를 마우스 오른쪽 단추로 클릭하고 **추가 > 파일 추가** 를 선택합니다.
 
 2. 필요한 파일의 디렉터리로 이동합니다.
 
 3. `.` (예: `.editorconfig`)로 시작하는 파일은 macOS의 숨겨진 파일이므로 **Command + Shift +.** 를 누릅니다. `.editorconfig` 파일을 표시하려면
 
-4. `.editorconfig` 파일을 선택하고 **열기**를 클릭합니다.
+4. `.editorconfig` 파일을 선택하고 **열기** 를 클릭합니다.
 
     ![새 파일 창 추가](media/editorconfig-image3b.png)
 
-5. 다음 대화 상자가 표시되면 **디렉터리에 파일 복사** 옵션을 선택하고 **확인**을 선택합니다.
+5. 다음 대화 상자가 표시되면 **디렉터리에 파일 복사** 옵션을 선택하고 **확인** 을 선택합니다.
 
     ![대화 상자 옵션 폴더에 파일 추가](media/editorconfig-image3.png)
 
@@ -98,7 +98,7 @@ EditorConfig는 C#에서 [코딩 규칙](/visualstudio/ide/editorconfig-code-sty
 
 EditorConfig 파일을 코드베이스에 추가하면 추가된 모든 새 코드가 지정된 설정에 따라 자동으로 포맷됩니다. 코드베이스를 포맷하지 않으면 기존 코드는 자동으로 설정을 반영하지 않습니다.
 
-`.editorconfig` 파일의 설정을 반영하려면 솔루션 노드를 선택하고 메뉴 모음에서 **편집 > 서식 > 문서 서식**을 선택합니다.
+`.editorconfig` 파일의 설정을 반영하려면 솔루션 노드를 선택하고 메뉴 모음에서 **편집 > 서식 > 문서 서식** 을 선택합니다.
 
 ![메뉴 모음에서 문서 서식](media/editorconfig-image3a.png)
 
@@ -141,7 +141,7 @@ csharp_new_line_before_open_brace = none
 
 각 솔루션에는 `.editorconfig` 파일이 여러 개 있을 수 있습니다. Mac용 Visual Studio는 `.editorconfig` 파일을 솔루션의 위쪽에서 아래쪽으로 읽으며 진행 중인 설정을 추가하고 재정의합니다. 즉, 편집 중인 파일에 ‘가장 가까운’ `.editorconfig`의 설정이 우선합니다. 설정은 `.editorconfig` 파일에서 동일한 폴더(있는 경우)로 가져온 다음, 부모 폴더의 `.editorconfig`(있는 경우) 등에서 가져옵니다. 찾을 때까지 `root=true`입니다.
 
-모든 상위 수준 `.editorconfig` 파일에서 이 코드베이스 부분에 적용된 설정이 _없음_을 확인하려면 `root=true` 속성을 하위 수준 `.editorconfig` 파일의 최상위에 추가합니다.
+모든 상위 수준 `.editorconfig` 파일에서 이 코드베이스 부분에 적용된 설정이 _없음_ 을 확인하려면 `root=true` 속성을 하위 수준 `.editorconfig` 파일의 최상위에 추가합니다.
 
 ```EditorConfig
 # top-most EditorConfig file

@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247376"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493207"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
 
 키보드 접근성에 대한 자세한 내용은 [방법: 키보드 탐색 사용](~/accessibility-keyboard.md)을 참조하세요.
 
-해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Mac용 Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나와 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩**을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
+해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Mac용 Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나와 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩** 을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
 
 > [!TIP]
 > 이 문서에 표시되는 바로 가기 키와 Mac용 Visual Studio의 키 바인딩 기본 설정은 macOS에서 일반적으로 사용되는 기호를 사용하여 표시됩니다. 기호를 잘 모르는 경우에는 [macOS 키 기호 조회 표](#macos-key-symbols-lookup)를 검토합니다.
@@ -48,8 +48,8 @@ ms.locfileid: "88247376"
 |모든 중단점 제거|**⇧⌘F9**|
 |커서까지 실행|**⌘F10**|
 |다음 문 설정|**⇧⌘F10**|
-|다음 문 표시|**⌥\***|
-|한 단계씩 코드 실행|**⇧⌘I**, **⌘F11**|
+|다음 문 표시|**⌥\** _|
+|한 단계씩 코드 실행|_*⇧⌘I**, **⌘F11**|
 |프로시저 나가기|**⇧⌘U**, **⇧⌘F11**|
 |프로시저 단위 실행|**⇧⌘O**, **F10**|
 |중단점 설정/해제|**⌘\\**, **F9**|
@@ -254,9 +254,9 @@ ms.locfileid: "88247376"
 |다음 문서|**⌘}** , **⌘F6**|
 |이전 문서|**⌘{**, **⇧⌘F6**|
 |다음 문서로 전환|**⌃⇥**|
-|다음 패드로 전환|**⌃⌥⇥**|
+|다음 도구 창으로 전환|**⌃⌥⇥**|
 |이전 문서로 전환|**⌃⇧⇥**|
-|이전 패드로 전환|**⌃⌥⇧⇥**|
+|이전 도구 창으로 전환|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 키 기호 조회
 

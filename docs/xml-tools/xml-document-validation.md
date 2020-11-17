@@ -1,5 +1,7 @@
 ---
 title: XML 편집기에서 XML 문서 유효성 검사
+description: XML 편집기의 XML 문서 유효성 검사 및 이 편집기에서 XML 1.0 구문을 검사하고 데이터를 입력할 때 데이터 유효성 검사를 수행하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592414"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351455"
 ---
 # <a name="xml-document-validation"></a>XML 문서 유효성 검사
 

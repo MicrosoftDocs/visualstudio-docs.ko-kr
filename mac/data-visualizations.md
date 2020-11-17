@@ -3,28 +3,28 @@ title: 디버깅 - 데이터 시각화
 description: 디버깅은 프로그래밍의 공통적인 필수 부분입니다. Mac용 Visual Studio에는 편리한 디버깅을 위한 전체 기능 모음이 포함되어 있습니다. 이 문서에서는 디버거에서 개체를 검사할 때 볼 수 있는 다양한 데이터 시각화를 살펴보겠습니다.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691740"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493246"
 ---
 # <a name="data-visualizations"></a>데이터 시각화
 
 Mac용 Visual Studio에는 디버거에 대한 UI 지원이 포함되어 있으므로 디버그하는 동안 변수, 필드 또는 속성의 값을 시각화할 수 있습니다. 이러한 데이터 시각화 도우미는 색 구조체의 색을 표시하는 등 확장된 버전의 데이터를 표시하고 개발자가 알려진 구조를 검사할 수 있게 합니다.
 
-디버그 **로컬** 패드의 시각화 도우미는 사용자가 행을 마우스로 가리킬 때 값 오른쪽에 표시되는 미리 보기 아이콘을 클릭하면 표시할 수 있습니다.
+디버그 **지역** 창의 시각화 도우미는 사용자가 행을 마우스로 가리킬 때 값 오른쪽에 표시되는 미리 보기 아이콘을 클릭하여 표시할 수 있습니다.
 
-![로컬 패드](media/data-visualizations-image9.png)
+![지역 창](media/data-visualizations-image9.png)
 
 아래 목록에는 Mac용 Visual Studio에서 디버그할 때 제공되는 여러 가지 새로운 시각화가 나와 있습니다.
 
 ## <a name="point"></a>Point
-iOS 및 Mac의 CGPoint 또는 Point/PointF는 디버그 패드에 X 및 Y 값을 표시하는 튜플로 렌더링됩니다.
+iOS 및 Mac의 CGPoint 또는 Point/PointF는 디버그 창에 X 및 Y 값을 표시하는 튜플로 렌더링됩니다.
 
 ![포인트 시각화](media/data-visualizations-image10.png)
 

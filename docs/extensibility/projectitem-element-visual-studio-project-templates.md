@@ -1,5 +1,7 @@
 ---
 title: ProjectItem 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
+description: 프로젝트 템플릿에 대 한 ProjectItem 요소와 프로젝트가 프로젝트 또는 항목에 대 한 것인지 여부에 따라 다른 특성을 허용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770303"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671326"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트 템플릿에 포함 되는 파일을 지정 합니다.
@@ -50,7 +52,7 @@ ms.locfileid: "85770303"
 
 ### <a name="attributes"></a>특성
 
-| 특성 | 설명 |
+| attribute | 설명 |
 |---------------------| - |
 | `TargetFileName` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 프로젝트 항목의 이름과 경로를 지정 합니다. 이 특성은 템플릿 *.zip* 파일의 디렉터리 구조와 다른 디렉터리 구조를 만들거나 매개 변수 대체를 사용 하 여 항목 이름을 만드는 데 유용 합니다. |
 | `ReplaceParameters` | 선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때이 항목에 대체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다. |
@@ -84,7 +86,7 @@ ms.locfileid: "85770303"
 
  `TargetFileName`특성을 사용 하 여 파일 이름에 국제 문자를 포함 하는 파일의 이름을 바꿀 수도 있습니다. 예를 들어 *, .zip 파일* 에는 유니코드 문자를 포함 하는 파일 이름이 포함 될 수 없으므로 *.zip* 파일로 압축 하려면 먼저 파일의 이름을 바꿔야 합니다. `TargetFileName`특성은 파일 이름을 원래 유니코드 파일 이름으로 다시 설정 하는 데 사용할 수 있습니다.
 
- 특성을 사용 하 여 매개 변수를 사용 하 여 `TargetFileName` 파일 이름을 바꿀 수도 있습니다. 다음 절차에서는 프로젝트 이름에 따라 파일 이름에 *.zip* 파일의 루트 디렉터리에 있는 *MyFile*파일의 이름을 바꾸는 방법을 설명 합니다.
+ 특성을 사용 하 여 매개 변수를 사용 하 여 `TargetFileName` 파일 이름을 바꿀 수도 있습니다. 다음 절차에서는 프로젝트 이름에 따라 파일 이름에 *.zip* 파일의 루트 디렉터리에 있는 *MyFile* 파일의 이름을 바꾸는 방법을 설명 합니다.
 
 ### <a name="to-rename-files-with-parameters"></a>매개 변수를 사용 하 여 파일 이름을 바꾸려면
 
@@ -110,7 +112,7 @@ ms.locfileid: "85770303"
 
     이 템플릿에서 프로젝트가 생성 되 면 파일 이름은 사용자가 **새 프로젝트** 대화 상자에서 입력 한 이름에 따라 모든 안전 하지 않은 문자 및 공백이 제거 됩니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

@@ -1,5 +1,7 @@
 ---
 title: XML 편집기 스키마 캐시
+description: IntelliSense 및 XML 문서 유효성 검사에 사용되는 표준 XML 스키마를 포함하는 XML 편집기에서 제공하는 스키마 캐시에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592492"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351377"
 ---
 # <a name="schema-cache"></a>스키마 캐시
 
@@ -30,7 +32,7 @@ XML 편집기에서는 솔루션에 있는 스키마, 문서 **속성** 창의 *
 | *msbuild.xsd* | MSBuild make 파일에 대한 스키마(`http://schemas.microsoft.com/developer/msbuild/2003`)입니다. |
 | *msdata.xsd* | <xref:System.Data.DataSet> 클래스 “urn:schemas-microsoft-com:xml-msdata”에 의해 추가된 XSD 주석의 스키마입니다. |
 | *msxsl.xsd* | Microsoft XSLT 스크립트 블록 확장명 urn:schemas-microsoft-com:xslt에 대한 스키마입니다. |
-| *SnippetFormat.xsd* | 코드 조각 XML 파일에 대한 스키마입니다. 예를 들어, *%VSInstallDir%\VC#\Expansions*를 참조하세요. |
+| *SnippetFormat.xsd* | 코드 조각 XML 파일에 대한 스키마입니다. 예를 들어, *%VSInstallDir%\VC#\Expansions* 를 참조하세요. |
 | *Soap1.1.xsd* | SOAP(Simple Object Access Protocol) 1.1에 대한 스키마(`http://schemas.xmlsoap.org/soap/envelope/`)입니다. |
 | *Soap1.2.xsd* | SOAP(Simple Object Access Protocol) 1.2에 대한 스키마입니다. |
 | *SiteMapSchema.xsd* | ASP.NET 사이트 맵 XML 파일에 대한 스키마(`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`)입니다. |
@@ -110,13 +112,13 @@ XML 편집기 패키지가 로드될 때 편집기에서 스키마 캐시 디렉
 
 ### <a name="to-change-the-schema-cache-location"></a>스키마 캐시 위치를 변경하려면
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **텍스트 편집기**를 확장하고 **XML**을 확장한 다음, **기타**를 클릭합니다.
+2. **텍스트 편집기** 를 확장하고 **XML** 을 확장한 다음, **기타** 를 클릭합니다.
 
 3. **스키마** 필드에서 **찾아보기** 단추를 클릭합니다.
 
-4. 스키마 캐시 폴더를 선택하고 **확인**을 클릭합니다.
+4. 스키마 캐시 폴더를 선택하고 **확인** 을 클릭합니다.
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>공통 스키마 디렉터리를 추가하려면
 

@@ -1,5 +1,6 @@
 ---
 title: EnableEditOfLocationField 요소(Visual Studio 템플릿)
+description: EnableEditOfLocationField 요소 및 사용자가 위치 필드를 편집할 수 있는지 여부를 지정 하는 방법에 대해 알아봅니다.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037408"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671300"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소 (Visual Studio 템플릿)
 사용자가 위치 필드를 편집할 수 있는지 여부를 지정 합니다.
@@ -36,7 +37,7 @@ ms.locfileid: "90037408"
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음
+ None
 
 ### <a name="child-elements"></a>자식 요소
  없음

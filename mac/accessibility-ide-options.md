@@ -6,20 +6,20 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
-ms.openlocfilehash: 7b0959c8a2f91e340a8b173d94fb2dbd9e2d9474
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f56141cb59cc679993140e2ed2093fe1cb9d9790
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801817"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493467"
 ---
 # <a name="set-ide-accessibility-options"></a>IDE 접근성 옵션 설정
 
 macOS에 적합한 기능 외에도 다양한 기능을 지원하는 여러 접근성 옵션 기능이 Mac용 Visual Studio에 제공됩니다.
 
-## <a name="resize-pad-and-editor-content"></a>패드 및 편집기 콘텐츠 크기 조정
+## <a name="resize-tool-windows-and-editor-content"></a>크기 조정 도구 창 및 편집기 콘텐츠
 
-1. 콘텐츠 크기를 조정하려는 패드 또는 창을 선택합니다.
+1. 콘텐츠 크기를 조정하려는 도구 창이나 편집기 창을 선택합니다.
 
 1. **보기(메뉴)** 를 선택한 다음 **확대(&#8984;+)** 또는 **축소(&#8984;-)** 를 선택합니다.
 
@@ -28,18 +28,18 @@ macOS에 적합한 기능 외에도 다양한 기능을 지원하는 여러 접�
 
 ## <a name="change-the-content-font-and-size"></a>콘텐츠 글꼴 및 크기 변경
 
-Mac용 Visual Studio에서 대부분의 패드에 있는 콘텐츠의 글꼴과 크기를 사용자 지정할 수 있습니다. 방법은 다음과 같습니다.
+Mac용 Visual Studio에서 대부분의 도구 창에 있는 콘텐츠의 글꼴과 크기를 사용자 지정할 수 있습니다. 방법은 다음과 같습니다.
 
 1. **Visual Studio(메뉴)**  > **기본 설정... (&#8984;,)** 으로 이동합니다.
 
-1. **기본 설정**에서 **환경** > **글꼴**로 이동합니다.
+1. **기본 설정** 에서 **환경** > **글꼴** 로 이동합니다.
 
-1. **텍스트 편집기**, **일반 패드 텍스트** 또는 **출력 패드 콘텐츠**에서 글꼴 및 크기 단추를 선택합니다.
+1. **텍스트 편집기**, **일반 도구 창 텍스트** 또는 **출력 창 콘텐츠** 에서 글꼴 및 크기 단추를 선택합니다.
 
-1. 원하는 글꼴, 스타일 및 크기를 선택하고 **확인**을 선택합니다.
+1. 원하는 글꼴, 스타일 및 크기를 선택하고 **확인** 을 선택합니다.
 
 > [!TIP]
-> 각 설정에 대 한 기본 글꼴 및 스타일로 돌아가려면 **기본값으로 설정**을 선택합니다.
+> 각 설정에 대 한 기본 글꼴 및 스타일로 돌아가려면 **기본값으로 설정** 을 선택합니다.
 
 ## <a name="change-the-editor-syntax-highlighting"></a>편집기 구문 강조 표시 변경
 
@@ -47,7 +47,7 @@ Mac용 Visual Studio에서 대부분의 패드에 있는 콘텐츠의 글꼴과 
 
 1. **Visual Studio(메뉴)**  > **기본 설정... (&#8984;,)** 으로 이동합니다.
 
-1. **기본 설정**에서 **텍스트 편집기** > **색 테마**로 이동합니다.
+1. **기본 설정** 에서 **텍스트 편집기** > **색 테마** 로 이동합니다.
 
 1. 원하는 테마를 선택합니다.
 

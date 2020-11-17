@@ -1,18 +1,18 @@
 ---
 title: Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 description: XAML에서 디자인 타임 데이터를 사용하는 방법에 대해 알아봅니다.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298475"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492897"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 
@@ -25,7 +25,7 @@ ms.locfileid: "92298475"
 
 디자인 타임 데이터는 XAML 디자이너에서 컨트롤을 더 쉽게 시각화할 수 있도록 설정하는 모의 데이터입니다. 시작하려면 XAML 문서 헤더에 다음 코드 줄이 아직 없는 경우 추가합니다.
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>사용자 지정 형식 및 속성으로 디자인 타임 데이터 사용
 
-기본적으로 이 기능은 플랫폼 컨트롤 및 속성에서만 작동합니다. 이 섹션에서는 고유한 사용자 지정 컨트롤을 디자인 타임 컨트롤로 사용하도록 설정하는 데 필요한 단계를 설명합니다. Visual Studio 2019 미리 보기 버전 [16.8](/visualstudio/releases/2019/preview-notes) 이상을 사용 중인 고객에게 제공되는 새로운 기능입니다. 사용하도록 설정하는 데는 세 가지 요구 사항이 있습니다.
+기본적으로 이 기능은 플랫폼 컨트롤 및 속성에서만 작동합니다. 이 섹션에서는 고유한 사용자 지정 컨트롤을 디자인 타임 컨트롤로 사용하도록 설정하는 데 필요한 단계를 설명합니다. Visual Studio 2019 버전 [16.8](/visualstudio/releases/2019/release-notes/) 이상을 사용 중인 고객에게 제공되는 새로운 기능입니다. 사용하도록 설정하는 데는 세 가지 요구 사항이 있습니다.
 
-- 사용자 지정 xmlns 네임스페이스 
+- 사용자 지정 xmlns 네임스페이스
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

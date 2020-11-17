@@ -1,6 +1,8 @@
 ---
 title: 디버그하는 동안 XPath 식 계산
 ms.date: 03/05/2019
+description: 디버깅 중 간략한 조사식 창을 사용하여 XPath 식을 계산하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816256"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399743"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath 식 계산
 
@@ -34,21 +36,21 @@ XPath 식을 계산할 때:
 
 1. `xsl:if` 시작 태그에 중단점을 삽입합니다.
 
-2. 디버깅을 시작하려면 메뉴 모음에서 **XML** > **XSLT 디버깅 시작**을 선택하거나 **Alt**+**F5**를 누릅니다.
+2. 디버깅을 시작하려면 메뉴 모음에서 **XML** > **XSLT 디버깅 시작** 을 선택하거나 **Alt**+**F5** 를 누릅니다.
 
    디버거가 시작되고 `xsl:if` 태그에서 중단됩니다.
 
-3. 마우스 오른쪽 단추를 클릭하고 **간략한 조사식**을 선택합니다.
+3. 마우스 오른쪽 단추를 클릭하고 **간략한 조사식** 을 선택합니다.
 
    **간략한 조사식** 창이 열립니다.
 
-4. **간략한 조사식** 대화 상자의 **식** 필드에 `./price/text()`를 입력하고 **다시 계산**을 선택합니다.
+4. **간략한 조사식** 대화 상자의 **식** 필드에 `./price/text()`를 입력하고 **다시 계산** 을 선택합니다.
 
    현재 book 노드의 가격이 **값** 상자에 나타납니다.
 
    ![간략한 조사식 창에서 XPath 식 계산](media/quickwatch-price.png)
 
-5. XPath 식을 `./price/text() < $bookAverage`로 변경하고 **다시 계산**을 클릭합니다.
+5. XPath 식을 `./price/text() < $bookAverage`로 변경하고 **다시 계산** 을 클릭합니다.
 
    **값** 상자에 XPath 식이 `true`로 계산되었음이 나타납니다.
 

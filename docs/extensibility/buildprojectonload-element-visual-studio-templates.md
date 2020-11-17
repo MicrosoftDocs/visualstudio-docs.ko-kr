@@ -1,5 +1,7 @@
 ---
 title: BuildProjectOnload 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: BuildProjectOnload 요소와 새 프로젝트를 만들어 솔루션에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739955"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671594"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소 (Visual Studio 템플릿)
 는 새 프로젝트를 만들고 솔루션에 추가 하는 경우에만 빌드합니다. 전체 솔루션이 빌드되지 않습니다.

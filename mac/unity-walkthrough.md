@@ -3,16 +3,16 @@ title: Unity로 게임 빌드 시작하기
 description: Unity 및 Mac용 Visual Studio 시작하기
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950655"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493584"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Unity로 게임 빌드 시작하기
 
@@ -36,13 +36,13 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
 ## <a name="task-1-creating-a-basic-unity-project"></a>작업 1: 기본 Unity 프로젝트 만들기
 
-1. **Unity**를 시작합니다. 요청된 경우 로그인합니다.
+1. **Unity** 를 시작합니다. 요청된 경우 로그인합니다.
 
-2. **새로 만들기**를 클릭합니다.
+2. **새로 만들기** 를 클릭합니다.
 
     ![Unity의 새로 만들기 단추](media/unity-image1.png)
 
-3. **프로젝트 이름**을 **"UnityLab"** 으로 설정하고 **3D**를 선택합니다. **프로젝트 만들기**를 클릭합니다.
+3. **프로젝트 이름** 을 **"UnityLab"** 으로 설정하고 **3D** 를 선택합니다. **프로젝트 만들기** 를 클릭합니다.
 
     ![새 프로젝트 만들기 화면](media/unity-image2.png)
 
@@ -50,9 +50,9 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![빈 Unity 인터페이스](media/unity-image3.png)
 
-5. Unity를 처음 사용하는 개발자를 위해 앱에서 실행되는 모든 것은 **장면**이라는 컨텍스트 내에 있게 됩니다. 장면 파일은 현재 장면과 해당 속성에 대해 프로젝트에서 사용되는 리소스에 대한 모든 종류의 메타데이터를 포함하는 단일 파일입니다. 플랫폼용 앱을 패키징하는 경우 결과 앱은 사용자가 추가하는 플랫폼 종속 코드와 함께, 하나 이상의 장면 컬렉션으로 마무리됩니다. 한 프로젝트에 원하는 만큼 많은 장면을 넣을 수 있습니다.
+5. Unity를 처음 사용하는 개발자를 위해 앱에서 실행되는 모든 것은 **장면** 이라는 컨텍스트 내에 있게 됩니다. 장면 파일은 현재 장면과 해당 속성에 대해 프로젝트에서 사용되는 리소스에 대한 모든 종류의 메타데이터를 포함하는 단일 파일입니다. 플랫폼용 앱을 패키징하는 경우 결과 앱은 사용자가 추가하는 플랫폼 종속 코드와 함께, 하나 이상의 장면 컬렉션으로 마무리됩니다. 한 프로젝트에 원하는 만큼 많은 장면을 넣을 수 있습니다.
 
-6. 새 장면에 방금 카메라와 방향성 광원이 생겼습니다. 장면에는 무엇이든 보이게 하는 **카메라**와 무엇이든 들리게 하는 **오디오 수신기**가 필요합니다. 이러한 구성 요소는 **GameObject**에 연결되어 있습니다.
+6. 새 장면에 방금 카메라와 방향성 광원이 생겼습니다. 장면에는 무엇이든 보이게 하는 **카메라** 와 무엇이든 들리게 하는 **오디오 수신기** 가 필요합니다. 이러한 구성 요소는 **GameObject** 에 연결되어 있습니다.
 
 7. **계층 구조** 창에서 **주 카메라** 개체를 선택합니다.
 
@@ -66,11 +66,11 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![강조 표시된 방향성 광원 개체](media/unity-image6.png)
 
-10. **검사기**를 사용하여 형식, 색, 강도, 섀도 형식 등을 포함해 일반적인 조명 속성을 포함하는지 확인합니다.
+10. **검사기** 를 사용하여 형식, 색, 강도, 섀도 형식 등을 포함해 일반적인 조명 속성을 포함하는지 확인합니다.
 
     ![속성 검사자 창에서 속성 보기](media/unity-image7.png)
 
-11. Unity 프로젝트는 Mac용 Visual Studio 프로젝트와 약간 다르다는 것에 주목하는 것이 중요합니다. 맨 아래의 **프로젝트** 탭에서 **자산** 폴더를 마우스 오른쪽 단추로 클릭하고 **Finder에 표시**를 선택합니다.
+11. Unity 프로젝트는 Mac용 Visual Studio 프로젝트와 약간 다르다는 것에 주목하는 것이 중요합니다. 맨 아래의 **프로젝트** 탭에서 **자산** 폴더를 마우스 오른쪽 단추로 클릭하고 **Finder에 표시** 를 선택합니다.
 
     ![Finder에 표시 컨텍스트 작업](media/unity-image8.png)
 
@@ -78,17 +78,17 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![Finder에서의 자산](media/unity-image9.png)
 
-13. **Finder** 창을 닫고 **Unity**로 돌아갑니다.
+13. **Finder** 창을 닫고 **Unity** 로 돌아갑니다.
 
-14. **Assets** 폴더는 자산-아트, 코드, 오디오 등을 모두 포함합니다. 지금은 비어 있지만, 프로젝트로 불러 오는 모든 단일 파일이 여기로 이동합니다. 이 폴더는 **Unity 편집기**에서 항상 최상위 레벨의 폴더입니다. 하지만 항상 바로 파일 시스템을 통해서가 아니라, Unity 인터페이스(또는 Mac용 Visual Studio)를 통해 파일을 추가하고 제거하세요.
+14. **Assets** 폴더는 자산-아트, 코드, 오디오 등을 모두 포함합니다. 지금은 비어 있지만, 프로젝트로 불러 오는 모든 단일 파일이 여기로 이동합니다. 이 폴더는 **Unity 편집기** 에서 항상 최상위 레벨의 폴더입니다. 하지만 항상 바로 파일 시스템을 통해서가 아니라, Unity 인터페이스(또는 Mac용 Visual Studio)를 통해 파일을 추가하고 제거하세요.
 
     ![Unity의 자산 폴더](media/unity-image10.png)
 
-15. **GameObject**는 거의 모든 것이 모델, 조명, 파티클 시스템 등을 포함해 이 유형에서 파생되므로 Unity에서의 개발에 중요합니다. **GameObject > 3차원 개체 > 큐브** 메뉴를 통해 장면에 새 **큐브** 개체를 추가합니다.
+15. **GameObject** 는 거의 모든 것이 모델, 조명, 파티클 시스템 등을 포함해 이 유형에서 파생되므로 Unity에서의 개발에 중요합니다. **GameObject > 3차원 개체 > 큐브** 메뉴를 통해 장면에 새 **큐브** 개체를 추가합니다.
 
     ![장면의 큐브 개체](media/unity-image11.png)
 
-16. 새로운 **GameObject**의 속성을 빠르게 살펴 보고 이름, 태그, 계층 및 변형이 있는지 확인합니다. 이러한 속성은 모든 **GameObject**에 공통됩니다. 또한 메시 필터, 박스 콜라이더 및 렌더러를 포함한 다양한 구성 요소가 필요한 기능을 제공하기 위해 **큐브**에 연결되어 있습니다.
+16. 새로운 **GameObject** 의 속성을 빠르게 살펴 보고 이름, 태그, 계층 및 변형이 있는지 확인합니다. 이러한 속성은 모든 **GameObject** 에 공통됩니다. 또한 메시 필터, 박스 콜라이더 및 렌더러를 포함한 다양한 구성 요소가 필요한 기능을 제공하기 위해 **큐브** 에 연결되어 있습니다.
 
     ![게임 개체 속성](media/unity-image12.png)
 
@@ -108,11 +108,11 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![큐브를 보여주는 장면 뷰](media/unity-image16.png)
 
-21. 큐브를 축을 따라 아래를 향하여 오른쪽으로 이동합니다. 그러면 **검사기**에서 **Transform.Position** 속성이 업데이트됩니다. 여기에 보이는 것과 비슷하게 위치로 끌어야 랩에서 이후 단계를 더 쉽게 진행할 수 있습니다.
+21. 큐브를 축을 따라 아래를 향하여 오른쪽으로 이동합니다. 그러면 **검사기** 에서 **Transform.Position** 속성이 업데이트됩니다. 여기에 보이는 것과 비슷하게 위치로 끌어야 랩에서 이후 단계를 더 쉽게 진행할 수 있습니다.
 
     ![축을 따라 큐브 한 개 이동하기](media/unity-image17.png)
 
-22. 이제 플레이어를 추적하도록 Enemy 논리를 구동하는 코드를 추가할 수 있습니다. **프로젝트** 패드에서 **Assets** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > C# 스크립트**를 선택합니다.
+22. 이제 플레이어를 추적하도록 Enemy 논리를 구동하는 코드를 추가할 수 있습니다. **프로젝트** 창에서 **자산** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > C# 스크립트** 를 선택합니다.
 
     ![C# 스크립트 컨텍스트 작업](media/unity-image18.png)
 
@@ -124,29 +124,29 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![게임 개체로 스크립트 추가를 보여주는 강조 표시](media/unity-image20.png)
 
-25. **파일 > 장면 저장**을 선택하여 현재 장면을 저장합니다. **"MyScene"** 으로 이름을 지정합니다.
+25. **파일 > 장면 저장** 을 선택하여 현재 장면을 저장합니다. **"MyScene"** 으로 이름을 지정합니다.
 
 ## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>작업 2: Visual Studio for Mac Tools for Unity 작업
 
-1. C# 코드를 편집하는 가장 좋은 방법은 Mac용 Visual Studio를 사용하는 것입니다. 기본 처리기로 Mac용 Visual Studio를 사용하도록 Unity를 구성할 수 있습니다. **Unity > 기본 설정**을 선택합니다.
+1. C# 코드를 편집하는 가장 좋은 방법은 Mac용 Visual Studio를 사용하는 것입니다. 기본 처리기로 Mac용 Visual Studio를 사용하도록 Unity를 구성할 수 있습니다. **Unity > 기본 설정** 을 선택합니다.
 
-2. **외부 도구** 탭을 선택합니다. **외부 스크립트 편집기** 드롭다운에서 **찾아보기**를 선택하고 **Applications/Visual Studio.app**을 선택합니다. 또는 이미 **Visual Studio** 옵션이 있는 경우에는 그냥 선택하세요.
+2. **외부 도구** 탭을 선택합니다. **외부 스크립트 편집기** 드롭다운에서 **찾아보기** 를 선택하고 **Applications/Visual Studio.app** 을 선택합니다. 또는 이미 **Visual Studio** 옵션이 있는 경우에는 그냥 선택하세요.
 
     ![기본 설정의 외부 도구 탭](media/unity-image21.png)
 
-3. 이제 Unity는 스크립트 편집에 **Mac용 Visual Studio**를 사용하도록 구성되었습니다. **Unity 기본 설정** 대화 상자를 닫습니다.
+3. 이제 Unity는 스크립트 편집에 **Mac용 Visual Studio** 를 사용하도록 구성되었습니다. **Unity 기본 설정** 대화 상자를 닫습니다.
 
     ![기본 설정에서 선택된 Visual Studio](media/unity-image22.png)
 
-4. **EnemyAI.cs**를 두 번 클릭하여 **Mac용 Visual Studio**에서 엽니다.
+4. **EnemyAI.cs** 를 두 번 클릭하여 **Mac용 Visual Studio** 에서 엽니다.
 
     ![Unity에서 선택된 Enemy 자산](media/unity-image23.png)
 
-5. Visual Studio 솔루션은 간단합니다. 이전에 만든 **자산** 폴더(**Finder**와 같은 폴더)와 **EnemyAI.cs** 스크립트가 들어 있습니다. 보다 복잡한 프로젝트에서는 계층 구조가 Unity에서 보이는 것과는 다르게 보일 가능성이 높습니다.
+5. Visual Studio 솔루션은 간단합니다. 이전에 만든 **자산** 폴더(**Finder** 와 같은 폴더)와 **EnemyAI.cs** 스크립트가 들어 있습니다. 보다 복잡한 프로젝트에서는 계층 구조가 Unity에서 보이는 것과는 다르게 보일 가능성이 높습니다.
 
-    ![Mac용 Visual Studio의 솔루션 패드](media/unity-image24.png)
+    ![Mac용 Visual Studio의 솔루션 창](media/unity-image24.png)
 
-6. **EnemyAI.cs**가 편집기에서 열려 있습니다. 초기 스크립트에는 **Start** 및 **Update** 메서드에 대한 스텁만 들어 있습니다.
+6. **EnemyAI.cs** 가 편집기에서 열려 있습니다. 초기 스크립트에는 **Start** 및 **Update** 메서드에 대한 스텁만 들어 있습니다.
 
 7. 초기 Enemy 코드를 아래 코드로 바꿉니다.
 
@@ -186,49 +186,49 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
     }
     ```
 
-8. 여기에 정의되어 있는 간단한 Enemy 동작을 빠르게 살펴 봅니다. **Start** 메서드에서 **변형**뿐만 아니라 플레이어 개체에 대한 참조를 가져옵니다. 프레임마다 호출되는 **Update** 메서드에서 Enemy는 플레이어 개체를 향해 이동합니다. 키워드와 이름에 색 코딩을 사용하여 Mac용 Visual Studio에서 코드베이스를 훨씬 쉽게 파악할 수 있습니다.
+8. 여기에 정의되어 있는 간단한 Enemy 동작을 빠르게 살펴 봅니다. **Start** 메서드에서 **변형** 뿐만 아니라 플레이어 개체에 대한 참조를 가져옵니다. 프레임마다 호출되는 **Update** 메서드에서 Enemy는 플레이어 개체를 향해 이동합니다. 키워드와 이름에 색 코딩을 사용하여 Mac용 Visual Studio에서 코드베이스를 훨씬 쉽게 파악할 수 있습니다.
 
-9. 변경 사항을 **Mac용 Visual Studio**의 Enemy 스크립트에 저장합니다.
+9. 변경 사항을 **Mac용 Visual Studio** 의 Enemy 스크립트에 저장합니다.
 
 ## <a name="task-3-debugging-the-unity-project"></a>작업 3: Unity 프로젝트 디버깅
 
-1. **Start** 메서드에서 코드 첫 줄에 중단점을 설정합니다. 대상 선에서 편집기 여백을 클릭하거나 줄에 커서를 놓고 **F9**를 누를 수 있습니다.
+1. **Start** 메서드에서 코드 첫 줄에 중단점을 설정합니다. 대상 선에서 편집기 여백을 클릭하거나 줄에 커서를 놓고 **F9** 를 누를 수 있습니다.
 
     ![Mac용 Visual Studio에서 중단점 설정](media/unity-image25.png)
 
-2. **디버깅 시작** 단추를 클릭하거나 **F5**를 누릅니다. 그러면 프로젝트가 빌드되고 디버깅을 위해 Unity에 연결됩니다.
+2. **디버깅 시작** 단추를 클릭하거나 **F5** 를 누릅니다. 그러면 프로젝트가 빌드되고 디버깅을 위해 Unity에 연결됩니다.
 
     ![Mac용 Visual Studio의 시작 단추](media/unity-image26.png)
 
-3. **Unity**로 돌아가 **실행** 단추를 클릭하여 게임을 시작합니다.
+3. **Unity** 로 돌아가 **실행** 단추를 클릭하여 게임을 시작합니다.
 
     ![Unity의 실행 단추](media/unity-image27.png)
 
 4. 중단점이 적중되며 이제 Mac용 Visual Studio 디버깅 도구를 사용할 수 있습니다.
 
-    ![Mac용 Visual Studio에서 중단점 적중](media/unity-image28.png)
+    ![Mac용 Visual Studio의 중단점 적중](media/unity-image28.png)
 
-5. **로컬** 패드에서 **EnemyAI** 개체를 참조하는 **이** 포인터를 찾습니다. 참조를 확장하고 **속도**와 같은 연결된 멤버를 찾아볼 수 있는지 확인합니다.
+5. **지역** 창에서 **EnemyAI** 개체를 참조하는 **이** 포인터를 찾습니다. 참조를 확장하고 **속도** 와 같은 연결된 멤버를 찾아볼 수 있는지 확인합니다.
 
-    ![Mac용 Visual Studio에서 로컬 디버깅](media/unity-image29.png)
+    ![Mac용 Visual Studio의 지역 창](media/unity-image29.png)
 
-6. 여백을 클릭하거나 줄을 선택하고 **F9**를 눌러 추가한 것과 같은 방식으로 **Start** 메서드에서 중단점을 제거합니다.
+6. 여백을 클릭하거나 줄을 선택하고 **F9** 를 눌러 추가한 것과 같은 방식으로 **Start** 메서드에서 중단점을 제거합니다.
 
-    ![Mac용 Visual Studio에서 중단점 적중](media/unity-image30.png)
+    ![Mac용 Visual Studio에서 중단점을 클릭하여 제거](media/unity-image30.png)
 
-7. **F10**을 눌러 코드의 첫 줄로 이동하여 매개 변수로 태그를 사용하여 **플레이어** 게임 개체를 찾습니다.
+7. **F10** 을 눌러 코드의 첫 줄로 이동하여 매개 변수로 태그를 사용하여 **플레이어** 게임 개체를 찾습니다.
 
 8. 마우스 커서를 코드 편집기 창 내부의 **플레이어** 변수에 올려 놓고 연결된 멤버를 봅니다. 오버레이를 확장하면 자식 속성도 볼 수 있습니다.
 
     ![Mac용 Visual Studio 편집기의 디버깅 창](media/unity-image31.png)
 
-9. **F5**를 누르거나 **실행** 단추를 눌러 실행을 계속합니다. Unity로 돌아가 Enemy 큐브가 반복해서 플레이어 큐브에 접근하는지 확인합니다. 보이지 않을 경우 카메라를 조정해야 할 수 있습니다.
+9. **F5** 를 누르거나 **실행** 단추를 눌러 실행을 계속합니다. Unity로 돌아가 Enemy 큐브가 반복해서 플레이어 큐브에 접근하는지 확인합니다. 보이지 않을 경우 카메라를 조정해야 할 수 있습니다.
 
     ![Unity에서 장면 재생](media/unity-image32.png)
 
-10. **Mac용 Visual Studio**로 다시 돌아가 **Update** 메서드의 첫 줄에 중단점을 설정합니다. 즉시 적중되어야 합니다.
+10. **Mac용 Visual Studio** 로 다시 돌아가 **Update** 메서드의 첫 줄에 중단점을 설정합니다. 즉시 적중되어야 합니다.
 
-    ![Mac용 Visual Studio에서 중단점 설정](media/unity-image33.png)
+    ![Mac용 Visual Studio에서 중단점 제거](media/unity-image33.png)
 
 11. 속도가 너무 빨라서 앱을 다시 시작하지 않고 변경 사항의 영향력을 테스트하고 싶어한다고 가정하겠습니다. **자동** 또는 **로컬** 창 내에서 **속도** 변수를 찾은 다음, **"10"** 으로 변경하고 **Enter** 키를 누릅니다.
 
@@ -236,7 +236,7 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
 12. 중단점을 제거하고 **F5** 키를 눌러 실행을 계속합니다.
 
-13. **Unity**로 돌아가 실행 중인 애플리케이션을 봅니다. Enemy 큐브가 이제 원래 속도의 5분의 1로 움직입니다.
+13. **Unity** 로 돌아가 실행 중인 애플리케이션을 봅니다. Enemy 큐브가 이제 원래 속도의 5분의 1로 움직입니다.
 
     ![애플리케이션일 실행 중인 Unity 창](media/unity-image35.png)
 
@@ -244,7 +244,7 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![Unity 앱 중지](media/unity-image36.png)
 
-15. **Mac용 Visual Studio**로 돌아갑니다. **중지** 단추를 클릭하여 디버깅 세션을 중지합니다.
+15. **Mac용 Visual Studio** 로 돌아갑니다. **중지** 단추를 클릭하여 디버깅 세션을 중지합니다.
 
     ![Mac용 Visual Studio에서 디버깅 세션 중지](media/unity-image37.png)
 
@@ -254,11 +254,11 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![Mac용 Visual Studio 편집기에서 메서드 선택](media/unity-image38.png)
 
-2. 새 브라우저 창에 **Vector3**에 대한 문서가 열립니다. 만족스러우면 브라우저 창을 닫습니다.
+2. 새 브라우저 창에 **Vector3** 에 대한 문서가 열립니다. 만족스러우면 브라우저 창을 닫습니다.
 
     ![문서로 열리는 브라우저 창](media/unity-image39.png)
 
-3. 또한 Mac용 Visual Studio는 Unity 동작 클래스를 신속하게 만들 수 있도록 도우미를 제공하기도 합니다. **솔루션 탐색기**에서 **자산**을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 MonoBehaviour**를 선택합니다.
+3. 또한 Mac용 Visual Studio는 Unity 동작 클래스를 신속하게 만들 수 있도록 도우미를 제공하기도 합니다. **솔루션 탐색기** 에서 **자산** 을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 MonoBehaviour** 를 선택합니다.
 
     ![새 MonoBehaviour 컨텍스트 작업](media/unity-image40.png)
 
@@ -270,7 +270,7 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![Mac용 Visual Studio에서 오버로드 살펴보기](media/unity-image42.png)
 
-6. 또한 Mac용 visual Studio를 사용하여 새 셰이더를 쉽게 정의할 수도 있습니다. **솔루션 탐색기**에서 **자산**을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 셰이더**를 선택합니다.
+6. 또한 Mac용 visual Studio를 사용하여 새 셰이더를 쉽게 정의할 수도 있습니다. **솔루션 탐색기** 에서 **자산** 을 마우스 오른쪽 단추로 클릭하고 **추가 > 새 셰이더** 를 선택합니다.
 
     ![Mac용 visual Studio의 새 셰이더 작업](media/unity-image43.png)
 
@@ -278,7 +278,7 @@ Visual Studio for Mac Tools for Unity는 Mac용 Visual Studio와 함께 설치�
 
     ![구문 강조](media/unity-image44.png)
 
-8. **Unity**로 돌아갑니다. Mac용 Visual Studio는 동일한 프로젝트 시스템으로 작동하므로, 다른 위치에서 적용한 변경 사항도 서로 자동으로 동기화되어 있음을 알 수 있습니다. 이제 언제나 쉽게 작업에 최상의 도구를 사용할 수 있습니다.
+8. **Unity** 로 돌아갑니다. Mac용 Visual Studio는 동일한 프로젝트 시스템으로 작동하므로, 다른 위치에서 적용한 변경 사항도 서로 자동으로 동기화되어 있음을 알 수 있습니다. 이제 언제나 쉽게 작업에 최상의 도구를 사용할 수 있습니다.
 
     ![Unity 자산 패널](media/unity-image45.png)
 

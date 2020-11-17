@@ -1,5 +1,7 @@
 ---
 title: Linux의 App Service에 게시
+description: 연속 및 일회성 옵션 등 컨테이너를 사용하여 Azure App Service Linux에 ASP.NET Core 앱을 게시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 790e88edcd5d0d77e09cc349c82c242cd3da876d
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830737"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350724"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용하여 Linux의 App Service에 ASP.NET Core 앱 게시
 
@@ -30,17 +32,17 @@ Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 AS
 
 ## <a name="publish-to-azure-app-service-on-linux"></a>Azure App Service on Linux에 게시
 
-1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다(또는 **빌드** > **게시** 메뉴 항목 사용).
+1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다(또는 **빌드** > **게시** 메뉴 항목 사용).
 
     ![솔루션 탐색기의 프로젝트 상황에 맞는 메뉴에서 게시 명령](../deployment/media/quickstart-publish.png "게시 선택")
 
-1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새로 만들기**를 선택합니다.
+1. 게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새로 만들기** 를 선택합니다.
 
-1. **게시** 창에서 **Azure**를 선택합니다.
+1. **게시** 창에서 **Azure** 를 선택합니다.
 
     ![게시 대상 선택](../deployment/media/quickstart-publish-azure-new.png)
 
-1. **Azure App Service(Linux)** 및 **다음**을 차례로 선택합니다.
+1. **Azure App Service(Linux)** 및 **다음** 을 차례로 선택합니다.
 
     ![Azure App Service on Linux 선택](../deployment/media/quickstart-publish-linux-select-azure-service.png)
 
@@ -48,24 +50,24 @@ Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 AS
 
     ![Azure App Service의 새 인스턴스를 만드는 링크](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. **Azure App Service 만들기(Linux)** 대화 상자에서 **앱 이름**, **리소스 그룹** 및 **App Service 계획** 입력 필드가 채워집니다. 이러한 이름을 유지하거나 변경할 수 있습니다. 준비가 되면 **만들기**를 선택합니다.
+1. **Azure App Service 만들기(Linux)** 대화 상자에서 **앱 이름**, **리소스 그룹** 및 **App Service 계획** 입력 필드가 채워집니다. 이러한 이름을 유지하거나 변경할 수 있습니다. 준비가 되면 **만들기** 를 선택합니다.
 
     ![Azure App Service 선택](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
-1. **게시** 대화 상자에서 새로 만든 인스턴스가 자동으로 선택됩니다. 준비가 되면 **마침**을 클릭합니다.
+1. **게시** 대화 상자에서 새로 만든 인스턴스가 자동으로 선택됩니다. 준비가 되면 **마침** 을 클릭합니다.
 
     ![Azure App Service 선택](../deployment/media/quickstart-publish-linux-select-instance.png)
 
-1. **게시**를 선택합니다. Visual Studio는 Azure App Service에 앱을 배포하고, 브라우저에 웹앱이 로드됩니다. 프로젝트 속성 **게시** 창은 사이트 URL 및 기타 세부 정보를 표시합니다.
+1. **게시** 를 선택합니다. Visual Studio는 Azure App Service에 앱을 배포하고, 브라우저에 웹앱이 로드됩니다. 프로젝트 속성 **게시** 창은 사이트 URL 및 기타 세부 정보를 표시합니다.
 
     ![프로필 요약을 표시하는 게시 속성 창](../deployment/media/quickstart-publish-linux-summary-page.png)
 
 ## <a name="clean-up-resources"></a>리소스 정리
 
 이전 단계에서 Azure 리소스를 리소스 그룹에 만들었습니다. 나중에 이러한 리소스가 필요하지 않은 경우에 리소스 그룹을 삭제하여 삭제할 수 있습니다.
-Azure Portal의 왼쪽 메뉴에서 **리소스 그룹**을 선택한 다음, **myResourceGroup**을 선택합니다.
+Azure Portal의 왼쪽 메뉴에서 **리소스 그룹** 을 선택한 다음, **myResourceGroup** 을 선택합니다.
 리소스 그룹 페이지에서 나열된 리소스가 삭제하려는 항목인지 확인합니다.
-**삭제**를 선택하고, 텍스트 상자에 **myResourceGroup**을 입력한 다음, **삭제**를 선택합니다.
+**삭제** 를 선택하고, 텍스트 상자에 **myResourceGroup** 을 입력한 다음, **삭제** 를 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

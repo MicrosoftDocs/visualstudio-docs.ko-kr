@@ -3,15 +3,15 @@ title: 프로젝트에 NuGet 패키지 포함하기
 description: 이 문서에서는 Mac용 Visual Studio를 사용하여 프로젝트에 NuGet 패키지를 포함하는 방법을 설명합니다. 여기에서는 IDE 통합 기능을 소개할 뿐 아니라 패키지를 찾아 다운로드하는 방법도 살펴봅니다.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127200"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493493"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 NuGet 패키지 설치 및 관리
 
@@ -23,7 +23,7 @@ Mac용 Visual Studio에서 NuGet을 사용하는 방법에 대해서는 [빠른 
 
 ## <a name="find-and-install-a-package"></a>패키지 찾기 및 설치
 
-1. Mac용 Visual Studio에서 프로젝트를 열어 놓고, **Solution Pad**에서 **종속성** 폴더(Xamarin 프로젝트를 사용하는 경우 **패키지** 폴더)를 마우스 오른쪽 단추로 클릭한 다음, **NuGet 패키지 관리...** 를 선택합니다.
+1. Mac용 Visual Studio에서 프로젝트를 열어 놓고 **솔루션 창** 에서 **종속성** 폴더(Xamarin 프로젝트를 사용하는 경우 **패키지** 폴더)를 마우스 오른쪽 단추로 클릭한 다음, **NuGet 패키지 관리...** 를 선택합니다.
 
     ![새 NuGet 패키지 컨텍스트 작업 추가하기](media/nuget-walkthrough-packages-menu.png)
 
@@ -61,9 +61,9 @@ using Newtonsoft.Json;
 
 패키지 업데이트는 **종속성** 노드(Xamarin 프로젝트의 경우 **패키지** 노드)를 마우스 오른쪽 단추로 클릭하여 한 번에 모두 수행하거나, 각 패키지에서 개별적으로 수행할 수 있습니다. 새 버전의 NuGet 패키지를 사용할 수 있는 경우, 업데이트 아이콘이 ![원이 있는 위쪽 화살표](media/nuget-walkthrough-update-icon.png) 모양으로 표시됩니다.
 
-**종속성**을 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴에 액세스하고 **업데이트**를 선택하여 모든 패키지를 업데이트합니다.
+**종속성** 을 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴에 액세스하고 **업데이트** 를 선택하여 모든 패키지를 업데이트합니다.
 
-![패키지 메뉴](media/nuget-walkthrough-packages-menu-update.png)
+![업데이트 메뉴가 강조 표시된 종속성 상황에 맞는 메뉴](media/nuget-walkthrough-packages-menu-update.png)
 
 * **NuGet 패키지 관리** - 프로젝트에 패키지를 더 추가하기 위한 창을 엽니다.
 * **업데이트** - 각 패키지에 대해 소스 서버를 확인하고 모든 최신 버전을 다운로드합니다.
@@ -71,8 +71,21 @@ using Newtonsoft.Json;
 
 업데이트 및 복원 옵션은 솔루션 수준에서도 사용 가능하며, 솔루션 내의 모든 프로젝트에 영향을 줍니다.
 
+### <a name="updating-to-pre-release-versions-of-packages"></a>패키지의 시험판 버전으로 업데이트
+패키지의 최신 시험판 버전으로 업데이트하려면 **종속성** 을 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴를 열고 **NuGet 패키지 관리...** 메뉴를 선택합니다.
+
+![NuGet 패키지 관리... 메뉴가 강조 표시된 종속성 상황에 맞는 메뉴](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+대화 상자 아래쪽에 있는 **시험판 패키지 표시** 확인란을 선택합니다.
+
+![‘시험판 패키지 표시’ 옵션이 선택된 상태로 열린 NuGet 패키지 관리 대화 상자](media/nuget-walkthrough-show-pre-release-packages.png)
+
+마지막으로 대화 상자의 **업데이트** 탭에서 업데이트할 패키지를 선택하고 **새 버전** 드롭다운에서 새 시험판 버전을 선택한 후 **업데이트 패키지** 를 클릭합니다.
+
+![패키지를 선택하고 새 버전 드롭다운 목록이 열린 상태에서 설치됨 탭으로 열린 NuGet 패키지 관리 대화 상자](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
+
 ### <a name="locating-outdated-packages"></a>오래된 패키지 찾기
-solution pad에서 현재 설치된 패키지 버전을 확인하 고 업데이트할 패키지를 마우스 오른쪽 단추로 클릭할 수 있습니다.
+솔루션 창에서 현재 설치된 패키지 버전을 확인하고 업데이트할 패키지를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
 ![업데이트, 제거, 새로 고침 옵션이 있는 패키지 메뉴](media/nuget-walkthrough-PackageMenu.png)
 
@@ -115,17 +128,17 @@ solution pad에서 현재 설치된 패키지 버전을 확인하 고 업데이�
 
 설치에 사용할 수 있는 패키지를 처음에는 nuget.org에서 검색합니다. 하지만 Mac용 Visual Studio에 다른 패키지 위치를 추가할 수 있습니다. 이는 개발 중인 자체 NuGet 패키지를 테스트하거나, 회사나 조직 내에서 개인 NuGet 서버를 사용할 때 유용할 수 있습니다.
 
-Mac용 Visual Studio에서 **Visual Studio > 기본 설정 > NuGet > 소스**로 이동하여 패키지 소스의 목록을 보고 편집합니다. 소스는 (URL로 지정된) 원격 서버 또는 로컬 디렉터리일 수 있습니다.
+Mac용 Visual Studio에서 **Visual Studio > 기본 설정 > NuGet > 소스** 로 이동하여 패키지 소스의 목록을 보고 편집합니다. 소스는 (URL로 지정된) 원격 서버 또는 로컬 디렉터리일 수 있습니다.
 
 ![패키지 소스](media/nuget-walkthrough-PackageSource.png)
 
-새로운 소스를 설정하려면 **추가**를 클릭합니다. 패키지 소스에 식별 이름과 URL(또는 파일 경로)을 입력하세요. 소스가 보안 웹 서버인 경우에는 사용자 이름과 암호도 입력하고, 그렇지 않은 경우에는 비워둡니다.
+새로운 소스를 설정하려면 **추가** 를 클릭합니다. 패키지 소스에 식별 이름과 URL(또는 파일 경로)을 입력하세요. 소스가 보안 웹 서버인 경우에는 사용자 이름과 암호도 입력하고, 그렇지 않은 경우에는 비워둡니다.
 
-![패키지 소스 추가](media/nuget-walkthrough-PackageSource2.png)
+![이름, 위치 URL, 사용자 이름 및 암호를 확인하는 프롬프트가 포함된 패키지 소스 추가 대화 상자](media/nuget-walkthrough-PackageSource2.png)
 
 그런 다음 패키지를 검색할 때 서로 다른 소스를 선택할 수 있습니다.
 
-![패키지 소스 추가](media/nuget-walkthrough-PackageSource3.png)
+![패키지 소스 목록이 포함된 드롭다운이 표시된 패키지 소스 추가 대화 상자](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>버전 제어
 

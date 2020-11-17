@@ -1,20 +1,20 @@
 ---
 title: Windows 사용자를 위한 Mac용 Visual Studio
-description: Mac용 Visual Studio의 액세스 가능성 기능과 사용하도록 설정하는 방법을 소개합니다.
+description: Windows 운영 체제에서 Visual Studio 사용에 익숙한 개발자를 위해 Mac용 Visual Studio를 소개합니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984266"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493376"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Windows 사용자를 위한 Mac용 Visual Studio
 
-운영 체제 간에 마이그레이션하는 것은 어려울 수 있습니다. 사용자 인터페이스에서 메뉴 항목의 분류에 이르기까지 플랫폼 간 애플리케이션에서 종종 사소한 차이가 있습니다. 또한 사용자는 새로운 운영 체제의 사용자 인터페이스에 적응하는 학습 곡선을 갖게 됩니다. 여기에서는 Mac용 Visual Studio와 Windows용 Visual Studio의 가장 일반적인 차이점에 대해 알아봅니다. macOS와 Windows 간의 몇 가지 다른 규칙도 알아봅니다.
+운영 체제 간에 마이그레이션하는 것은 어려울 수 있습니다. 사용자 인터페이스에서 메뉴 항목의 분류에 이르기까지 플랫폼 간 애플리케이션에서 종종 사소한 차이가 있습니다. 여기에서는 Mac용 Visual Studio와 Windows용 Visual Studio의 가장 일반적인 차이점에 대해 알아봅니다. macOS와 Windows 간의 몇 가지 다른 규칙도 알아봅니다.
 
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
 
@@ -28,7 +28,7 @@ macOS는 Windows에 대한 서로 다른 시스템 차원의 바로 가기를 �
 
 macOS Command(⌘) 보조 키는 일반적으로 Windows의 Control 키를 대체할 수 있습니다. 다음은 몇 가지 예제 및 자주 사용되는 바로 가기입니다.
 
-|작업                   |Windows 바로 가기         |macOS 바로 가기      |
+|Task                   |Windows 바로 가기         |macOS 바로 가기      |
 |-----------------------|-------------------------|--------------------|
 |복사                   |`Ctrl + C`               |`⌘ + C`             |
 |붙여넣기                  |`Ctrl + V`               |`⌘ + V`             |
@@ -45,14 +45,13 @@ macOS Command(⌘) 보조 키는 일반적으로 Windows의 Control 키를 대�
 
 macOS의 메뉴는 Windows의 메뉴와 다르게 구성됩니다. Mac용 Visual Studio도 예외는 아닙니다. 여기에서 가장 일반적인 메뉴 옵션 중 일부를 찾을 수 있습니다.
 
-|작업                   |Visual Studio(Windows)                                              |Mac용 Visual Studio                |
+|Task                   |Visual Studio(Windows)                                              |Mac용 Visual Studio                |
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |기본 설정(옵션)  |도구 > 옵션...                                                   |Visual Studio > 기본 설정...       |
 |확장             |확장 > 확장 관리                                       |Visual Studio > 확장...        |
-|레이아웃                |창 > 창 레이아웃 적용 > [레이아웃 선택]                       |보기 > [레이아웃 선택]               |
-|Updates                |도움말 > 업데이트 확인                                             |Visual Studio > 업데이트 확인... |
+|레이아웃                |창 > 창 레이아웃 적용 > [레이아웃 선택]                       |보기 > 레이아웃 > [레이아웃 선택]               |
+|업데이트                |도움말 > 업데이트 확인                                             |Visual Studio > 업데이트 확인... |
 |NuGet 패키지 관리자  |도구 > NuGet 패키지 관리자 > NuGet 패키지 또는 솔루션 관리... |프로젝트 > NuGet 패키지 관리...   |
-|패드/창         |보기 > [패드/창 선택]                                         |보기 > 패드 > [패드/창 선택]  |
 |도구 찾기             |편집 > 찾기 및 바꾸기 > [도구 선택]                              |검색 > [도구 선택]               |
 |Visual Studio 정보    |도움말 > Microsoft Visual Studio 정보                                 |Visual Studio > Visual Studio 정보  
 

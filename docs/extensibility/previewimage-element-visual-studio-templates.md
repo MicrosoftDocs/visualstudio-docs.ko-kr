@@ -1,5 +1,7 @@
 ---
 title: PreviewImage 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: PreviewImage 요소에 대해 알아보고, 새 프로젝트 또는 새 항목 추가 대화 상자에 표시 되는 미리 보기 이미지의 파일 이름을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702012"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672348"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 미리 보기 이미지에 대 한 미리 보기 이미지를 파일 이름으로 지정 합니다.

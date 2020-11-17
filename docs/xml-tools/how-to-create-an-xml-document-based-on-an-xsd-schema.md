@@ -1,5 +1,7 @@
 ---
 title: '방법: XSD 스키마를 기반으로 XML 문서 만들기'
+description: 샘플 XML 생성 기능을 사용하여 XSD 스키마를 기반으로 XML 문서를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fdd987a5153a4f421b4bfad83e1ce7979dddb54
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893361"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398893"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>방법: XSD 스키마를 기반으로 XML 문서 만들기
 
@@ -43,7 +45,7 @@ ms.locfileid: "88893361"
 
 1. [:방법 XSD 스키마 파일 만들기 및 편집](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)의 단계를 수행합니다.
 
-2. [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)에서 `PurchaseOrder` 전역 요소를 마우스 오른쪽 단추로 클릭하고 **샘플 XML 생성**을 선택합니다.
+2. [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)에서 `PurchaseOrder` 전역 요소를 마우스 오른쪽 단추로 클릭하고 **샘플 XML 생성** 을 선택합니다.
 
      이 옵션을 선택하면 다음 샘플 XML 콘텐츠를 포함하는 PurchaseOrder.*xml* 파일이 XML 편집기에서 생성되고 열립니다.
 

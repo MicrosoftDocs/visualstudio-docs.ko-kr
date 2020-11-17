@@ -3,14 +3,14 @@ title: Docker 시작
 description: Mac용 Visual Studio에서 프로젝트에 Docker를 추가하는 방법을 알아봅니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939053"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493077"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Docker 시작
 
@@ -27,13 +27,13 @@ Docker를 설치하려면 [Mac용 Docker Desktop 설치](https://docs.docker.com
 
 ## <a name="creating-an-aspnet-core-web-application-and-adding-docker-support"></a>ASP.NET Core 웹 애플리케이션을 만들고 Docker 지원 추가
 
-1. **파일 > 새 솔루션**으로 이동하여 새 솔루션을 만듭니다.
-1. **.NET Core > 앱**에서 **웹 애플리케이션** 템플릿을 선택합니다. ![새 ASP.NET 애플리케이션 만들기](media/docker-quickstart-1.png)
+1. **파일 > 새 솔루션** 으로 이동하여 새 솔루션을 만듭니다.
+1. **.NET Core > 앱** 에서 **웹 애플리케이션** 템플릿을 선택합니다. ![새 ASP.NET 애플리케이션 만들기](media/docker-quickstart-1.png)
 1. 대상 프레임워크를 선택합니다. 이 예제에서는 .NET Core 2.2를 사용합니다. ![대상 프레임워크 설정](media/docker-quickstart-2.png)
 1. 이름(이 예제에서는 _DockerDemo_) 등의 프로젝트 정보를 입력합니다. 생성된 프로젝트에는 ASP.NET Core 웹 사이트를 빌드 및 실행하는 데 필요한 모든 기본 사항이 포함되어 있습니다.
-1. Solution Pad에서 DockerDemo 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > Docker 지원 추가**를 선택합니다. ![Docker 지원 추가](media/docker-quickstart-3.png)
+1. 솔루션 창에서 DockerDemo 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > Docker 지원 추가** 를 선택합니다. ![Docker 지원 추가](media/docker-quickstart-3.png)
 
-Mac용 Visual Studio에서 **docker-compose**라는 새 프로젝트를 솔루션에 자동으로 추가하고, 기존 프로젝트에 **Dockerfile**을 추가합니다.
+Mac용 Visual Studio에서 **docker-compose** 라는 새 프로젝트를 솔루션에 자동으로 추가하고, 기존 프로젝트에 **Dockerfile** 을 추가합니다.
 
 ![생성된 docker 지원 파일](media/docker-quickstart-4.png)
 
@@ -63,7 +63,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 ```
 
-위의 *Dockerfile*은 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 이미지를 기반으로 하며, 프로젝트를 빌드하고 컨테이너에 추가하여 기본 이미지를 수정하는 방법을 포함하고 있습니다.
+위의 *Dockerfile* 은 [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) 이미지를 기반으로 하며, 프로젝트를 빌드하고 컨테이너에 추가하여 기본 이미지를 수정하는 방법을 포함하고 있습니다.
 
 > [!NOTE]
 > Mac용 Visual Studio에서 생성된 기본 Dockerfile은 HTTP 트래픽용 포트 80을 공개합니다. HTTPS 트래픽을 사용하려면 Dockerfile에 `Expose 443`을 추가합니다.

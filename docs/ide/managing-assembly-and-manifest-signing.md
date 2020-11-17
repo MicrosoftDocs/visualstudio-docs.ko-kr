@@ -1,5 +1,7 @@
 ---
 title: 어셈블리 및 매니페스트 서명 관리
+description: 소프트웨어 구성 요소에 전역적으로 고유한 ID를 제공하는 강력한 이름 서명의 이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770414"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351390"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
 
@@ -58,7 +60,7 @@ C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Visual Studio에서 어셈블리에 서명하는 방법
 
-프로젝트 속성 창의 **서명** 탭을 사용하여 애플리케이션 또는 구성 요소에 서명합니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택). **서명** 탭을 선택하고 나서 **어셈블리 서명** 확인란을 선택합니다.
+프로젝트 속성 창의 **서명** 탭을 사용하여 애플리케이션 또는 구성 요소에 서명합니다(**솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택). **서명** 탭을 선택하고 나서 **어셈블리 서명** 확인란을 선택합니다.
 
 키 파일을 지정합니다. 새 키 파일을 만들도록 선택하면 새 키 파일은 항상 *.pfx* 형식으로 만들어집니다. 새 파일의 이름 및 암호가 필요합니다.
 
@@ -71,7 +73,7 @@ C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한
 
 매니페스트 서명에 대한 자세한 내용은 [방법: 애플리케이션 및 배포 매니페스트 서명](../ide/how-to-sign-application-and-deployment-manifests.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)
 - [강력한 이름의 어셈블리(C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

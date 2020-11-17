@@ -1,16 +1,18 @@
 ---
 title: '연습: XSLT 계층 구조 사용'
+description: 이 연습의 단계를 수행하여 Visual Studio에서 XSLT 계층 구조 도구를 사용하여 참조된 스타일시트에서 디버그하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815034"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351325"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>연습: XSLT 계층 구조 사용
 
@@ -46,7 +48,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </COLLECTION>
     ```
 
-1. 다음 *xslincludefile.xsl*을 추가합니다.
+1. 다음 *xslincludefile.xsl* 을 추가합니다.
 
     ```xml
     <?xml version='1.0'?>

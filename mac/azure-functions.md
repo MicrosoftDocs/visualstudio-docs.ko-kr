@@ -1,18 +1,18 @@
 ---
 title: Azure Functions 소개
-description: Mac용 Visual Studio에서 Azure Functions 사용
+description: Mac용 Visual Studio에서 Azure Functions를 시작합니다.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402319"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492843"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
@@ -26,12 +26,12 @@ Azure Function 도구는 **Mac용 Visual Studio 7.5** 이상에 포함되어 있
 
 ## <a name="creating-your-first-azure-functions-project"></a>Azure Functions 프로젝트 처음 만들기
 
-1. Mac용 Visual Studio에서 **파일 > 새 솔루션**을 선택합니다.
-2. 새 프로젝트 대화 상자에서 **클라우드 > 일반**의 Azure Functions 템플릿을 선택하고 **다음**을 클릭합니다.
+1. Mac용 Visual Studio에서 **파일 > 새 솔루션** 을 선택합니다.
+2. 새 프로젝트 대화 상자에서 **클라우드 > 일반** 의 Azure Functions 템플릿을 선택하고 **다음** 을 클릭합니다.
 
     ![Azure Functions 옵션을 표시하는 새 프로젝트 대화 상자](media/azure-functions-image1.png)
 
-3. 사용할 초기 Azure Functions 템플릿을 선택하여 함수 이름을 입력하고 **다음**을 클릭합니다.
+3. 사용할 초기 Azure Functions 템플릿을 선택하여 함수 이름을 입력하고 **다음** 을 클릭합니다.
 
     ![Azure Functions 템플릿을 표시하는 새 프로젝트 대화 상자](media/azure-functions-image2.png)
 
@@ -45,7 +45,7 @@ Azure Function 도구는 **Mac용 Visual Studio 7.5** 이상에 포함되어 있
 
     다양한 유형의 Azure Functions 템플릿 및 각 템플릿을 구성하는 데 필요한 바인딩 속성에 대한 자세한 내용은 [사용 가능한 함수 템플릿](#available-function-templates) 섹션을 참조하세요. 이 예제에서는 액세는 권한이 익명으로 설정된 Http 트리거를 사용하고 있습니다.
 
-4. 매개 변수를 설정한 후 프로젝트의 위치를 선택하고 **만들기**를 선택합니다.
+4. 매개 변수를 설정한 후 프로젝트의 위치를 선택하고 **만들기** 를 선택합니다.
 
 Mac용 Visual Studio는 기본 함수가 포함된 .NET Standard 프로젝트를 만듭니다. 여기에는 **Newtonsoft.Json** 패키지뿐 아니라 여러 **AzureWebJobs** 패키지에 대한 NuGet 참조가 포함됩니다.
 
@@ -81,7 +81,7 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
 함수 템플릿을 사용하면 가장 일반적인 트리거 및 템플릿을 통해 새 함수를 신속하게 만들 수 있습니다. 다른 유형의 함수를 만들려면 다음을 수행합니다.
 
-1. 새 함수를 추가하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고**추가 > 함수 추가...** 를 선택합니다.
+1. 새 함수를 추가하려면 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **추가 > 함수 추가...** 를 선택합니다.
 
     ![새 함수를 추가하기 위한 컨텍스트 작업](media/azure-functions-addnew.png)
 
@@ -95,10 +95,10 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
 ## <a name="publish-to-azure"></a>Azure에 게시
 
-1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시**를 선택합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image5.png)
+1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시** 를 선택합니다.  ![게시 > Azure에 게시... 옵션이 강조 표시된 상황에 맞는 메뉴](media/azure-functions-image5.png)
 2. Azure 계정을 Mac용 Visual  Studio에 이미 연결한 경우 사용 가능한 앱 서비스 목록이 표시됩니다. 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다.
-3. **Azure App Service 게시** 대화 상자에서 기존 앱 서비스를 선택하거나 **새로 만들기**를 클릭하여 새 앱을 만들 수 있습니다.
-4. **새 App Service 만들기** 대화 상자에서 다음과 같은 설정을 입력합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image7.png)
+3. **Azure App Service 게시** 대화 상자에서 기존 앱 서비스를 선택하거나 **새로 만들기** 를 클릭하여 새 앱을 만들 수 있습니다.
+4. **새 App Service 만들기** 대화 상자에서 다음과 같은 설정을 입력합니다.  ![서비스 이름, 구독, 리소스 그룹 및 서비스 플랜 설정에 대한 필드가 있는 새 App Service 대화 상자](media/azure-functions-image7.png)
 
     |설정  |설명  |
     |---------|---------|
@@ -107,25 +107,25 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
     |**[리소스 그룹](/azure/azure-resource-manager/resource-group-overview)**|함수 앱을 만들 리소스 그룹의 이름입니다. **+** 를 선택하여 새 리소스 그룹을 만듭니다.|
     |**[서비스 계획](/azure/azure-functions/functions-scale)**|기존 계획을 선택하거나 사용자 지정 계획을 만듭니다. 가까운 지역 또는 함수에 액세스하는 다른 서비스 근처의 위치를 선택합니다.|
 
-5. **다음**을 클릭하여 스토리지 계정을 만듭니다. Azure 스토리지 계정은 함수 런타임에서 필요합니다. **사용자 지정**을 클릭하여 범용 스토리지 계정을 만들거나 기존 스토리지 계정을 사용합니다.
+5. **다음** 을 클릭하여 스토리지 계정을 만듭니다. Azure 스토리지 계정은 함수 런타임에서 필요합니다. **사용자 지정** 을 클릭하여 범용 스토리지 계정을 만들거나 기존 스토리지 계정을 사용합니다.
 
-    ![Azure 메뉴 옵션에 게시](media/azure-functions-image8.png)
+    ![스토리지 계정 이름을 확인하는 프롬프트가 포함된 새 App Service 대화 상자](media/azure-functions-image8.png)
 
-6. **만들기**를 클릭하여 이러한 설정으로 Azure에서 함수 앱 및 관련 리소스를 만들고 함수 프로젝트 코드를 배포합니다.
+6. **만들기** 를 클릭하여 이러한 설정으로 Azure에서 함수 앱 및 관련 리소스를 만들고 함수 프로젝트 코드를 배포합니다.
 
-7. 게시 중에 "Azure에서 함수 버전 업데이트"를 알리는 대화 상자가 표시될 수 있습니다. **예**를 클릭합니다.
+7. 게시 중에 "Azure에서 함수 버전 업데이트"를 알리는 대화 상자가 표시될 수 있습니다. **예** 를 클릭합니다.
 
-    ![Azure 메뉴 옵션에 게시](media/azure-functions-image12.png)
+    ![예 및 아니요 옵션과 함께 “Azure 애플리케이션 설정을 로컬 Functions 버전에 맞게 업데이트하시겠습니까?”를 묻는 프롬프트](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>함수 앱 설정
 
 local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 추가해야 합니다. 이러한 설정은 프로젝트를 게시할 때 자동으로 업로드되지 않습니다.
 
-앱 설정에 액세스하려면 [https://ms.portal.azure.com/](https://ms.portal.azure.com/)의 Azure Portal로 이동합니다. **Function App** 아래에서 **Function App**을 선택하고 함수 이름을 강조 표시합니다.
+앱 설정에 액세스하려면 [https://ms.portal.azure.com/](https://ms.portal.azure.com/)의 Azure Portal로 이동합니다. **Function App** 아래에서 **Function App** 을 선택하고 함수 이름을 강조 표시합니다.
 
 ![Azure 함수 메뉴](media/azure-functions-image9.png)
 
-**개요** 탭에서 **구성된 기능** 아래의 **애플리케이션 설정**을 선택합니다.
+**개요** 탭에서 **구성된 기능** 아래의 **애플리케이션 설정** 을 선택합니다.
 
 ![Azure 함수의 탭을 통해](media/azure-functions-image10.png)
 
@@ -133,7 +133,7 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 ![Azure Portal의 애플리케이션 설정 영역](media/azure-functions-image11.png)
 
-설정할 필요가 있는 중요한 설정은 `FUNCTIONS_EXTENSION_VERSION`입니다. Mac용 Visual Studio에서 게시할 때 이 값을 **베타**로 설정해야 합니다.
+설정할 필요가 있는 중요한 설정은 `FUNCTIONS_EXTENSION_VERSION`입니다. Mac용 Visual Studio에서 게시할 때 이 값을 **베타** 로 설정해야 합니다.
 
 ## <a name="available-function-templates"></a>사용 가능한 함수 템플릿
 
@@ -159,4 +159,4 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 - **Image Resizer** - Blob가 컨테이너에 추가될 때마다 크기 조정된 이미지를 만드는 함수입니다. 이 템플릿은 트리거, 소형 이미지 출력, 중간 이미지 출력을 위해 경로 및 연결을 사용합니다.
 
-- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부와 사용할 키(함수는 함수 키 사용, 관리자는 계정 액세스 키 사용)를 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://github.com/Azure-Samples/functions-dotnet-sas-token/) 샘플을 참조하세요.
+- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한** 도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부와 사용할 키(함수는 함수 키 사용, 관리자는 계정 액세스 키 사용)를 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://github.com/Azure-Samples/functions-dotnet-sas-token/) 샘플을 참조하세요.

@@ -1,6 +1,7 @@
 ---
 title: Assembly 요소(Visual Studio 템플릿 마법사 확장)
 titleSuffix: ''
+description: Assembly 요소 및 IWizard 인터페이스를 구현 하는 어셈블리의 이름 또는 강력한 이름을 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a26584a16e290da3278c713924d2046d173eec9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037421"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671723"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소 (Visual Studio 템플릿 마법사 확장)
 인터페이스를 구현 하는 어셈블리의 이름 또는 강력한 이름을 지정 합니다 `IWizard` .
@@ -47,7 +48,7 @@ ms.locfileid: "90037421"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정 하기 위한 등록 요소를 포함 합니다.|
 

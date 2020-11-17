@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251338"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400326"
 ---
 # <a name="convert-typeof-to-nameof"></a>`typeof`를 `nameof`로 변환
 
@@ -33,15 +33,16 @@ ms.locfileid: "88251338"
 ## <a name="how-to"></a>방법
 
 1. `typeof(<QualifiedType>).Name` 인스턴스(C#) 또는 `GetType(<QualifiedType>).Name` 인스턴스(Visual Basic) 내에 커서를 놓습니다.
+
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+
 3. 다음 옵션 중 하나를 선택합니다.
 
-- C#
-  <br>**‘typeof’를 ‘nameof’로 변환**
-  ![typeof를 nameof로 변환](media/convert-type-of.PNG) 선택
+    - C#
+      <br>**‘typeof’를 ‘nameof’로 변환** 을 선택합니다. ![typeof를 nameof로 변환](media/convert-type-of.PNG)
 
-- Visual Basic
-  <br>**‘GetType’을 ‘NameOf’로 변환** ![typeof를 nameof로 변환](media/convert-get-type.PNG) 선택
+    - Visual Basic
+      <br>**‘GetType’을 ‘NameOf’로 변환** 을 선택합니다. ![typeof를 nameof로 변환](media/convert-get-type.PNG)
 
 ## <a name="see-also"></a>참고 항목
 
