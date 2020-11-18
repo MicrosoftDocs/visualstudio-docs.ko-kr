@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036173"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672771"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -39,7 +39,7 @@ ms.locfileid: "90036173"
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 - **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일 동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다. 자세한 내용은 [평가판 버전 확장 또는 라이선스 업데이트](../ide/how-to-unlock-visual-studio.md)를 참조하세요.
 
-- **Visual Studio Community 버전 계속 사용** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 Visual Studio Community를 **무료**로 계속 사용합니다. 
+- **Visual Studio Community 버전 계속 사용** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 Visual Studio Community를 **무료** 로 계속 사용합니다. 
 
 - **Visual Studio 구독 또는 Azure DevOps 조직과 연결된 계정을 사용하는 경우 Visual Studio를 잠금 해제합니다**. 자세한 지침은 [평가판 버전 확장 또는 라이선스 업데이트](../ide/how-to-unlock-visual-studio.md)를 참조하세요.
 
@@ -47,11 +47,11 @@ ms.locfileid: "90036173"
 
 - **Visual Studio 설정 동기화** – 아무 디바이스에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio에서 설정 동기화](../ide/synchronized-settings-in-visual-studio.md)를 참조하세요.
 
-- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고 **Azure 및 Azure DevOps Services 등의 서비스에 자동으로 연결**합니다.
+- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고 **Azure 및 Azure DevOps Services 등의 서비스에 자동으로 연결** 합니다.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio에 로그인하는 방법
 
-Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 입력하라는 메시지가 나타납니다. 
+Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 입력하라는 메시지가 나타납니다.
 
 ![로그인 프롬프트](../ide/media/vs2019_signinpopup.png)
 
@@ -63,7 +63,7 @@ Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 �
 
 ![현재 VS2019에 로그인한 사용자](../ide/media/vs2019_username.png)
 
-처음 Visual Studio를 열 때 로그인하지 않도록 선택하더라도 나중에 쉽게 로그인할 수 있습니다. Visual Studio 환경의 오른쪽 위 모서리에서 **로그인** 링크를 찾습니다. 
+처음 Visual Studio를 열 때 로그인하지 않도록 선택하더라도 나중에 쉽게 로그인할 수 있습니다. Visual Studio 환경의 오른쪽 위 모서리에서 **로그인** 링크를 찾습니다.
 
 ![로그인하지 않은 사용자](../ide/media/vs2019_usernotsignedin.png)
 
@@ -71,11 +71,11 @@ Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 �
 
 ## <a name="to-change-your-profile-information"></a>프로필 정보를 변경하려면
 
-1. **파일** > **계정 설정**으로 이동하여 **Visual Studio 프로필 관리** 링크를 선택합니다.
+1. **파일** > **계정 설정** 으로 이동하여 **Visual Studio 프로필 관리** 링크를 선택합니다.
 
-1. 브라우저 창에서 **프로필 편집**을 선택하고 원하는 대로 설정을 변경합니다.
+1. 브라우저 창에서 **프로필 편집** 을 선택하고 원하는 대로 설정을 변경합니다.
 
-1. 완료되면 **변경 내용 저장**을 선택합니다.
+1. 완료되면 **변경 내용 저장** 을 선택합니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 
@@ -84,6 +84,7 @@ Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 �
 ## <a name="see-also"></a>참조
 
 * [평가판 버전 확장 또는 라이선스 업데이트](../ide/how-to-unlock-visual-studio.md)
+* [Visual Studio에서 GitHub 계정 작업](../ide/work-with-github-accounts.md)
 * [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 * [로그인(Mac용 Visual Studio)](/visualstudio/mac/signing-in)
 * [활성화(Mac용 Visual Studio)](/visualstudio/mac/activation)
