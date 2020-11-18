@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 프로젝트 확장 만들기 | Microsoft Docs'
+description: Visual Studio에 열려 있는 모든 SharePoint 프로젝트에 기능을 추가할 수 있도록 프로젝트 확장을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/28/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 191f5d718064a4e094a2c28e3f584168b20fb3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017157"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850665"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>방법: SharePoint 프로젝트 확장 만들기
-  Visual Studio에 열려 있는 모든 SharePoint 프로젝트에 기능을 추가 하려는 경우 프로젝트 확장을 만듭니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조 하세요.
+  Visual Studio에 열려 있는 모든 SharePoint 프로젝트에 기능을 추가 하려는 경우 프로젝트 확장을 만듭니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조하세요.
 
 ### <a name="to-create-a-project-extension"></a>프로젝트 확장을 만들려면
 
@@ -40,7 +42,7 @@ ms.locfileid: "86017157"
 
 5. 메서드 구현에서 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> *projectservice* 매개 변수의 멤버를 사용 하 여 확장의 동작을 정의 합니다. 이 매개 변수는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 인터페이스에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체입니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 인터페이스에 의해 정의 된 대부분의 SharePoint 프로젝트 이벤트를 처리 하는 간단한 프로젝트 확장을 만드는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> . 코드를 테스트 하려면에서 SharePoint 프로젝트를 만든 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 솔루션에 프로젝트를 추가 하거나 프로젝트 속성 값을 변경 하거나 프로젝트를 삭제 하거나 제외 합니다. 확장은 **출력** 창과 **오류 목록** 창에 메시지를 기록 하 여 이벤트를 알립니다.
 
   ```vb
@@ -199,7 +201,7 @@ ms.locfileid: "86017157"
 ## <a name="deploy-the-extension"></a>확장 배포
  확장을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
 - [방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [방법: SharePoint 프로젝트에 속성 추가](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

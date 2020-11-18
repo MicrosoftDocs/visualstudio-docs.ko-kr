@@ -1,5 +1,7 @@
 ---
 title: API 참조 (SharePoint 도구 확장성) | Microsoft Docs
+description: Visual Studio에서 SharePoint 도구 확장에 대 한 API 참조 설명서를 검토 합니다. VisualStudio와 같은 관련 네임 스페이스의 목록을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987992"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850392"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 참조 (SharePoint 도구 확장성)
   이 섹션에는 Visual Studio에서 SharePoint 도구를 확장 하기 위한 API 참조 설명서가 포함 되어 있습니다.
@@ -29,7 +31,7 @@ ms.locfileid: "62987992"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- 사용자 지정 *SharePoint 명령을*만드는 데 사용할 수 있는 형식을 포함 합니다. SharePoint 명령은 SharePoint 도구 확장에서 SharePoint 서버 개체 모델을 호출하는 메서드입니다.
+ 사용자 지정 *SharePoint 명령을* 만드는 데 사용할 수 있는 형식을 포함 합니다. SharePoint 명령은 SharePoint 도구 확장에서 SharePoint 서버 개체 모델을 호출하는 메서드입니다.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -67,10 +69,10 @@ ms.locfileid: "62987992"
 
  SharePoint 프로젝트의 기능 및 패키지 유효성 검사 동작을 사용자 지정하는 데 사용하는 형식을 포함합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 도구 확장성&#41;참조 &#40;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [SharePoint 도구 확장의 프로그래밍 모델 개요](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
-- [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)

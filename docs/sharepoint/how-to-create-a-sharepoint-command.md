@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 명령 만들기 | Microsoft Docs'
+description: SharePoint 도구 확장에서 서버 개체 모델의 API를 호출 하는 사용자 지정 SharePoint 명령을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850704"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>방법: SharePoint 명령 만들기
   SharePoint 도구 확장에서 서버 개체 모델을 사용 하려면 API를 호출 하는 사용자 지정 *SharePoint 명령을* 만들어야 합니다. 서버 개체 모델을 직접 호출할 수 있는 어셈블리에서 SharePoint 명령을 정의 합니다.
@@ -53,13 +55,13 @@ ms.locfileid: "86016214"
 
     - 두 번째 매개 변수와 반환 값은 WCF (Windows Communication Foundation)에서 serialize 할 수 있는 형식 이어야 합니다. 자세한 내용은 [데이터 계약 Serializer에서 지 원하는 형식](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) 및 [XmlSerializer 클래스 사용](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class)을 참조 하세요.
 
-    - 메서드는 모든 표시 유형 (**public**, **internal**또는 **private**)을 가질 수 있으며 정적 또는 비정적 일 수 있습니다.
+    - 메서드는 모든 표시 유형 (**public**, **internal** 또는 **private**)을 가질 수 있으며 정적 또는 비정적 일 수 있습니다.
 
 4. 을 메서드에 적용 합니다 <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> . 이 특성은 명령의 고유 식별자를 지정 합니다. 이 식별자는 메서드 이름과 일치 하지 않아도 됩니다.
 
      SharePoint 도구 확장에서 명령을 호출 하는 경우에는 동일한 고유 식별자를 지정 해야 합니다. 자세한 내용은 [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)을 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 식별자를 포함 하는 SharePoint 명령을 보여 줍니다 `Contoso.Commands.UpgradeSolution` . 이 명령은 서버 개체 모델의 Api를 사용 하 여 배포 된 솔루션으로 업그레이드 합니다.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
@@ -77,7 +79,7 @@ ms.locfileid: "86016214"
 ## <a name="deploying-the-command"></a>명령 배포
  명령을 배포 하려면 명령을 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용 하는 확장 어셈블리를 사용 하 여 동일한 확장 (*vsix*) 패키지에 명령 어셈블리를 포함 합니다. 또한 source.extension.vsixmanifest 파일에서 명령 어셈블리에 대 한 항목을 추가 해야 합니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

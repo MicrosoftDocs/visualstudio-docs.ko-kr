@@ -1,6 +1,8 @@
 ---
 title: '방법: 특정 목록 인스턴스에 대 한 이벤트 수신기 만들기 | Microsoft Docs'
 titleSuffix: ''
+description: 특정 목록 인스턴스에 대 한 이벤트 수신기를 만듭니다. 목록 인스턴스 이벤트 수신기는 목록 정의의 모든 인스턴스에서 발생 하는 이벤트에 응답 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585838"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849898"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>방법: 특정 목록 인스턴스에 대 한 이벤트 수신기 만들기
   목록 인스턴스 이벤트 수신기는 목록 정의의 모든 인스턴스에서 발생 하는 이벤트에 응답 합니다. 이벤트 수신기 템플릿에서 특정 목록 인스턴스를 대상으로 지정할 수는 없지만 목록 정의로 범위가 지정 된 이벤트 수신기를 수정 하 여 특정 목록 인스턴스의 이벤트에 응답할 수 있습니다.
@@ -37,20 +39,20 @@ ms.locfileid: "91585838"
 
 3. **모든 사이트 콘텐츠** 페이지에서 **만들기** 링크를 선택 합니다.
 
-4. **만들기** 대화 상자에서 **알림** 유형을 선택 하 고 알림의 이름을 **testannouncements**로 지정한 다음 **만들기** 단추를 선택 합니다.
+4. **만들기** 대화 상자에서 **알림** 유형을 선택 하 고 알림의 이름을 **testannouncements** 로 지정한 다음 **만들기** 단추를 선택 합니다.
 
 5. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이벤트 수신기 프로젝트를 만듭니다.
 
-6. **원하는 이벤트 수신기 유형을** 선택 하십시오. 목록에서 **목록 항목 이벤트**를 선택 합니다.
+6. **원하는 이벤트 수신기 유형을** 선택 하십시오. 목록에서 **목록 항목 이벤트** 를 선택 합니다.
 
     > [!NOTE]
-    > 목록 정의의 범위에 해당 하는 다른 종류의 이벤트 수신기를 선택할 수도 있습니다. 예를 들어 **메일 이벤트** 나열 또는 **워크플로 이벤트 나열**을 선택할 수 있습니다.
+    > 목록 정의의 범위에 해당 하는 다른 종류의 이벤트 수신기를 선택할 수도 있습니다. 예를 들어 **메일 이벤트** 나열 또는 **워크플로 이벤트 나열** 을 선택할 수 있습니다.
 
-7. **이벤트 소스로 사용할 항목** 을 선택 하십시오. 목록에서 **공지**를 선택 합니다.
+7. **이벤트 소스로 사용할 항목** 을 선택 하십시오. 목록에서 **공지** 를 선택 합니다.
 
 8. **다음 이벤트 처리** 목록에서 **항목을 추가 하** 고 있습니다. 확인란을 선택한 다음 **마침** 단추를 선택 합니다.
 
-9. **솔루션 탐색기**의 EventReceiver1 아래에서 *Elements.xml*를 엽니다.
+9. **솔루션 탐색기** 의 EventReceiver1 아래에서 *Elements.xml* 를 엽니다.
 
      이벤트 수신기가 다음 코드 줄을 사용하여 알림 목록 정의를 현재 참조합니다.
 
@@ -84,7 +86,7 @@ ms.locfileid: "91585838"
 
 17. 새 공지를 추가 합니다.
 
-     수신기가 사용자 지정 알림 목록 인스턴스인 **Testannouncements**이벤트에만 응답 하도록 구성 되어 있으므로 이벤트 수신기는 새 알림에서 트리거되지 않습니다.
+     수신기가 사용자 지정 알림 목록 인스턴스인 **Testannouncements** 이벤트에만 응답 하도록 구성 되어 있으므로 이벤트 수신기는 새 알림에서 트리거되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)

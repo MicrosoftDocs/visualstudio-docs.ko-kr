@@ -1,6 +1,8 @@
 ---
 title: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기 | Microsoft Docs
 titleSuffix: ''
+description: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록을 만듭니다. Visual Studio에서는 이러한 형식의 SharePoint 항목에 대 한 프로젝트 항목 템플릿을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,15 +21,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585108"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850522"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기
-  Visual Studio는 *목록* 및 *콘텐츠 형식을*비롯 하 여 다양 한 기본 SharePoint 항목에 대 한 프로젝트 항목 템플릿을 제공 합니다. 둘 다 사이트 열 (또는 *필드*)을 통합할 수 있습니다. 콘텐츠 형식 및 목록에 대한 새로운 디자이너를 사용하면 이러한 항목을 이전보다 쉽게 만들 수 있습니다.
+  Visual Studio는 *목록* 및 *콘텐츠 형식을* 비롯 하 여 다양 한 기본 SharePoint 항목에 대 한 프로젝트 항목 템플릿을 제공 합니다. 둘 다 사이트 열 (또는 *필드*)을 통합할 수 있습니다. 콘텐츠 형식 및 목록에 대한 새로운 디자이너를 사용하면 이러한 항목을 이전보다 쉽게 만들 수 있습니다.
 
 ## <a name="site-columns"></a>사이트 열
  사이트 열은 SharePoint 프로젝트에 추가할 수 있는 가장 기본적인 요소 중 하나입니다. 사이트 열은 연락처 목록의 연락처에 대한 전화 번호, 설명 또는 도시 이름과 같은 데이터의 형식을 나타냅니다.
@@ -45,7 +47,7 @@ ms.locfileid: "91585108"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[연습: SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|사용자 지정 콘텐츠 형식에서 사용되는 사이트 열을 만드는 방법을 보여 줍니다. 이 경우 콘텐츠 형식이 사용자 지정 목록에서 사용됩니다.|
 

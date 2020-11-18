@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 솔루션 빌드 | Microsoft Docs'
+description: SharePoint 솔루션을 빌드합니다. Visual Studio에서 SharePoint 솔루션을 빌드하는 것은 다른 응용 프로그램을 빌드하는 것과 다릅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014514"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850691"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>방법: SharePoint 솔루션 빌드
 
@@ -31,8 +33,8 @@ SharePoint 솔루션 빌드는 Visual Studio에서 다른 응용 프로그램을
 
 2. 솔루션 또는 프로젝트를 빌드하거나 다시 빌드하기 위한 적절 한 옵션을 선택 합니다. 자세한 내용은 [Visual Studio에서 컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)를 참조 하세요.
 
-3. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+3. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

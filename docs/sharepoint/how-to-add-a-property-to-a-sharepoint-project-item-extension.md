@@ -1,6 +1,8 @@
 ---
 title: '방법: SharePoint 프로젝트 항목 확장에 속성 추가 | Microsoft Docs'
 titleSuffix: ''
+description: SharePoint 프로젝트 항목 확장을 사용 하 여 Visual Studio에 이미 설치 되어 있는 모든 SharePoint 프로젝트 항목에 속성을 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584258"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850171"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장에 속성 추가
-  프로젝트 항목 확장을 사용 하 여 Visual Studio에 이미 설치 되어 있는 모든 SharePoint 프로젝트 항목에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기**에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다.
+  프로젝트 항목 확장을 사용 하 여 Visual Studio에 이미 설치 되어 있는 모든 SharePoint 프로젝트 항목에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다.
 
  다음 단계에서는 프로젝트 항목 확장을 이미 만들었다고 가정 합니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)를 참조 하세요.
 

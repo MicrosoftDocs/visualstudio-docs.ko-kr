@@ -1,5 +1,7 @@
 ---
 title: SharePoint 오류에 대 한 추가 정보 | Microsoft Docs
+description: Visual Studio SharePoint 도구에서 발생 하는 오류 및 경고 문제 해결에 대 한 추가 정보를 확인 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985076"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850431"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>SharePoint 오류에 대 한 추가 정보
+# <a name="additional-information-for-sharepoint-errors"></a>SharePoint 오류에 대한 추가 정보
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]문제 해결 항목과 공용 포럼에서 SharePoint 도구 오류 및 경고 문제 해결에 대 한 지원을 찾을 수 있습니다.
 
 ## <a name="troubleshoot-errors-and-issues"></a>오류 및 문제 해결

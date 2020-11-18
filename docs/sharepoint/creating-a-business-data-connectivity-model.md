@@ -1,5 +1,7 @@
 ---
 title: 비즈니스 데이터 연결 모델 만들기 | Microsoft Docs
+description: Visual Studio를 사용 하 여 BDC (비즈니스 데이터 연결) 모델을 만들거나 기존 BDC 모델을 사용자 지정 합니다. 각 SharePoint 프로젝트는 하나의 모델만 포함할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,27 +17,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841479"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850470"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 만들기
   Visual Studio를 사용 하 여 BDC (비즈니스 데이터 연결) 모델을 만들거나 기존 BDC 모델을 사용자 지정할 수 있습니다. 각 SharePoint 프로젝트는 하나의 모델만 포함할 수 있습니다. 자세한 내용은 [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)을 참조 하세요.
 
 ## <a name="create-a-new-model"></a>새 모델 만들기
- 새 모델을 만들려면 **비즈니스 데이터 연결 모델** 프로젝트를 만들거나 **빈 SharePoint 프로젝트**에 **비즈니스 데이터 연결 모델** 항목을 추가 합니다.
+ 새 모델을 만들려면 **비즈니스 데이터 연결 모델** 프로젝트를 만들거나 **빈 SharePoint 프로젝트** 에 **비즈니스 데이터 연결 모델** 항목을 추가 합니다.
 
 > [!NOTE]
 > 컴퓨터에가 설치 되어 있어야 합니다 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .
 
- Visual Studio에서 프로젝트에 폴더를 추가 합니다. 이 폴더에는 **새 항목 추가** 대화 상자에서 **비즈니스 데이터 연결 모델** 항목에 대해 지정한 이름이 지정 됩니다. 새 **비즈니스 데이터 연결 모델** 프로젝트를 만드는 경우 Visual Studio에서 폴더 이름을 **BdcModel1**로 합니다.
+ Visual Studio에서 프로젝트에 폴더를 추가 합니다. 이 폴더에는 **새 항목 추가** 대화 상자에서 **비즈니스 데이터 연결 모델** 항목에 대해 지정한 이름이 지정 됩니다. 새 **비즈니스 데이터 연결 모델** 프로젝트를 만드는 경우 Visual Studio에서 폴더 이름을 **BdcModel1** 로 합니다.
 
  Visual Studio에서 새 폴더에 다음 파일을 추가 합니다.
 
-|파일|Description|
+|파일|설명|
 |----------|-----------------|
 |모델 정의 파일|모델을 설명 하는 엔터티, 메서드, LOB (기간 업무) 시스템 개체 및 기타 메타 데이터를 정의 하는 XML을 포함 합니다.<br /><br /> BDC 디자이너, **Bdc 탐색기**, **Bdc 메서드 세부 정보** 창 및 **속성** 창을 사용 하 여이 파일의 메타 데이터를 수정 합니다.|
 |엔터티 서비스 코드 파일|기본 엔터티의 인스턴스를 검색, 업데이트 및 삭제 하는 메서드를 포함 합니다.|
@@ -58,11 +60,11 @@ ms.locfileid: "90841479"
 
   두 경우 모두 가져오는 모델에 정의 된 LOB 시스템은 영향을 받지 않으며 계속 예상 대로 작동 합니다. 기존 모델을 SharePoint 프로젝트에 추가 하려면 Visual Studio **기존 항목 추가** 대화 상자를 사용 합니다. 자세한 내용은 [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)를 참조 하세요.
 
-  **.Net 어셈블리 추가 LobSystem**에서 옵션을 선택 하 여 가져온 모델에 .NET Framework ASSEMBLY 형식의 LOB 시스템을 추가할 수 있습니다. 이렇게 하면 사용자 지정 코드를 작성 하 고 디자이너를 사용 하 여 가져온 모델에 대 한 메타 데이터를 정의할 수 있습니다.
+  **.Net 어셈블리 추가 LobSystem** 에서 옵션을 선택 하 여 가져온 모델에 .NET Framework ASSEMBLY 형식의 LOB 시스템을 추가할 수 있습니다. 이렇게 하면 사용자 지정 코드를 작성 하 고 디자이너를 사용 하 여 가져온 모델에 대 한 메타 데이터를 정의할 수 있습니다.
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md)|새 BDC 모델을 만드는 방법을 보여 줍니다.|
 |[방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|기존 모델을 SharePoint 프로젝트로 가져오는 방법을 보여 줍니다.|

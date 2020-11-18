@@ -1,5 +1,7 @@
 ---
 title: '방법: 엔터티 간 연결 만들기 | Microsoft Docs'
+description: Visual Studio에서 연결을 만들어 BDC (비즈니스 데이터 연결) 모델의 엔터티 간 관계를 정의 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016931"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849846"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>방법: 엔터티 간 연결 만들기
   연결을 만들어 BDC (비즈니스 데이터 연결) 모델의 엔터티 간 관계를 정의할 수 있습니다. Visual Studio는 모델의 소비자에 게 각 연결에 대 한 정보를 제공 하는 메서드를 생성 합니다. 이러한 메서드는 SharePoint 웹 파트, 목록 또는 사용자 지정 애플리케이션에서 사용되어 UI(사용자 인터페이스)에 데이터 관계를 표시할 수 있습니다.
@@ -35,7 +37,7 @@ ms.locfileid: "86016931"
 
 ### <a name="to-create-an-association-between-entities"></a>엔터티 간 연결을 만들려면
 
-1. **도구 상자**의 **BusinessDataConnectivity** 탭에서 **연결** 항목을 선택 합니다.
+1. **도구 상자** 의 **BusinessDataConnectivity** 탭에서 **연결** 항목을 선택 합니다.
 
 2. BDC 디자이너에서 소스 엔터티를 선택한 다음 대상 엔터티를 선택합니다.
 
@@ -61,7 +63,7 @@ ms.locfileid: "86016931"
 
      연결 탐색기 메서드의 예는 [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [엔터티 간 연결 만들기](../sharepoint/creating-an-association-between-entities.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)

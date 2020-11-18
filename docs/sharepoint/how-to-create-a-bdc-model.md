@@ -1,5 +1,7 @@
 ---
 title: '방법: BDC 모델 만들기 | Microsoft Docs'
+description: 해당 종류의 항목에 대해 Visual Studio 템플릿을 사용 하 여 BDC (비즈니스 데이터 연결) 모델을 만든 다음 SharePoint 프로젝트에 모델을 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139da31ced1d32def450a1dc176ca241b0c4677f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014544"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850678"
 ---
 # <a name="how-to-create-a-bdc-model"></a>방법: BDC 모델 만들기
-  해당 종류의 항목에 대 한 템플릿을 사용 하 고 SharePoint 프로젝트에 모델을 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 만들 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요. 모델을 디자인 하는 방법에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
+  해당 종류의 항목에 대 한 템플릿을 사용 하 고 SharePoint 프로젝트에 모델을 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 만들 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조하세요. 모델을 디자인 하는 방법에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
 
 ### <a name="to-create-a-bdc-project"></a>BDC 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
     > [!NOTE]
-    > IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 **파일**  >  **새로 만들기 프로젝트**를 선택 합니다.
+    > IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 **파일**  >  **새로 만들기 프로젝트** 를 선택 합니다.
 
      **새 프로젝트** 대화 상자가 열립니다.
 
-2. **Visual Basic** 또는 **Visual c #** 에서 **Office/sharepoint**, **sharepoint 솔루션**을 선택 합니다.
+2. **Visual Basic** 또는 **Visual c #** 에서 **Office/sharepoint**, **sharepoint 솔루션** 을 선택 합니다.
 
 3. **템플릿** 창에서 **SharePoint 2013-빈 프로젝트** 항목을 선택 하 고 **확인** 단추를 선택 합니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "86014544"
 
      빈 SharePoint 프로젝트가 생성 됩니다.
 
-5. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+5. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
 6. **새 항목 추가** 대화 상자에서 **Office/SharePoint** 노드를 선택 합니다.
 
@@ -55,11 +57,11 @@ ms.locfileid: "86014544"
 
 8. **이름** 상자에서 BDC 모델의 이름을 지정한 다음 **추가** 단추를 선택 합니다.
 
-     **비즈니스 데이터 연결 모델** 항목이 프로젝트에 추가 됩니다. 기본적으로 모델은 BDC 디자이너에 표시 됩니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요.
+     **비즈니스 데이터 연결 모델** 항목이 프로젝트에 추가 됩니다. 기본적으로 모델은 BDC 디자이너에 표시 됩니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
-- [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [방법: 리소스 파일을 사용하여 지역화된 이름, 속성, 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [방법: BDC 기능에 사용자 지정 어셈블리 포함](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)

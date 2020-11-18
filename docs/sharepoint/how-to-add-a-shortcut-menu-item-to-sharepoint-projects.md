@@ -1,6 +1,8 @@
 ---
 title: '방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가 | Microsoft Docs'
 titleSuffix: ''
+description: Visual Studio에서 SharePoint 프로젝트에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목은 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하면 나타납니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585851"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850067"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가
-  모든 SharePoint 프로젝트에 바로 가기 메뉴 항목을 추가할 수 있습니다. 메뉴 항목은 사용자가 **솔루션 탐색기**의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하면 나타납니다.
+  모든 SharePoint 프로젝트에 바로 가기 메뉴 항목을 추가할 수 있습니다. 메뉴 항목은 사용자가 **솔루션 탐색기** 의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하면 나타납니다.
 
  다음 단계에서는 프로젝트 확장을 이미 만들었다고 가정 합니다. 자세한 내용은 [방법: SharePoint 프로젝트 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)를 참조 하세요.
 
@@ -36,7 +38,7 @@ ms.locfileid: "91585851"
 3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>새 개체에 대 한 이벤트 처리기에서 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 사용자가 바로 가기 메뉴 항목을 클릭할 때 실행 하려는 작업을 수행 합니다.
 
 ## <a name="example"></a>예제
- 다음 코드 예제에서는 **솔루션 탐색기**의 SharePoint 프로젝트 노드에 바로 가기 메뉴 항목을 추가 하는 방법을 보여 줍니다. 사용자가 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **출력 창에 메시지 쓰기** 메뉴 항목을 클릭 하면 Visual Studio에서 **출력** 창에 메시지를 표시 합니다. 이 예제에서는 SharePoint 프로젝트 서비스를 사용 하 여 메시지를 표시 합니다. 자세한 내용은 [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)을 참조 하세요.
+ 다음 코드 예제에서는 **솔루션 탐색기** 의 SharePoint 프로젝트 노드에 바로 가기 메뉴 항목을 추가 하는 방법을 보여 줍니다. 사용자가 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **출력 창에 메시지 쓰기** 메뉴 항목을 클릭 하면 Visual Studio에서 **출력** 창에 메시지를 표시 합니다. 이 예제에서는 SharePoint 프로젝트 서비스를 사용 하 여 메시지를 표시 합니다. 자세한 내용은 [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)을 참조 하세요.
 
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
  [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]

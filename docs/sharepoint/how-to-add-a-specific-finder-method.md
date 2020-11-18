@@ -1,5 +1,7 @@
 ---
 title: '방법: 특정 Finder 메서드 추가 | Microsoft Docs'
+description: Finder 메서드를 추가 하 여 엔터티 인스턴스를 가져옵니다. BDC 서비스는 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택 하는 경우 메서드를 호출 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,27 +19,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014813"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849730"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>방법: 특정 Finder 메서드 추가
-  *특정 Finder* 메서드를 만들어 단일 엔터티 인스턴스를 반환할 수 있습니다. 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택 하면 BDC (비즈니스 데이터 연결) 서비스가 특정 Finder 메서드를 실행 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
+  *특정 Finder* 메서드를 만들어 단일 엔터티 인스턴스를 반환할 수 있습니다. 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택 하면 BDC (비즈니스 데이터 연결) 서비스가 특정 Finder 메서드를 실행 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
 
 ### <a name="to-create-a-specific-finder-method"></a>특정 Finder 메서드를 만들려면
 
-1. **BDC 디자이너**에서 엔터티를 선택 합니다.
+1. **BDC 디자이너** 에서 엔터티를 선택 합니다.
 
     Visual Studio에서 **BDC 디자이너** 에 엔터티를 추가 하는 방법에 대 한 자세한 내용은 [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)를 참조 하세요.
 
-2. 메뉴 모음에서 **보기**  >  **다른 창**, **BDC 메서드 세부 정보**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  >  **다른 창**, **BDC 메서드 세부 정보** 를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. 해당 창에 대 한 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
-3. **메서드 추가** 목록에서 **특정 Finder 메서드 만들기**를 선택 합니다.
+3. **메서드 추가** 목록에서 **특정 Finder 메서드 만들기** 를 선택 합니다.
 
     Visual Studio에서는 다음 요소를 모델에 추가 합니다. 이러한 요소는 **BDC 메서드 세부 정보** 창에 표시 됩니다.
 
@@ -51,7 +53,7 @@ ms.locfileid: "86014813"
 
    - 메서드에 대 한 메서드 인스턴스입니다.
 
-     자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
+     자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
 
 4. Visual Studio **속성** 창을 엽니다.
 
@@ -61,13 +63,13 @@ ms.locfileid: "86014813"
    > 엔터티에 Finder 메서드를 추가한 경우에는이 단계를 수행할 필요가 없습니다. Visual Studio는 Finder 메서드에서 정의한 형식 설명자를 사용 합니다.
 
    > [!NOTE]
-   > 엔터티 형식의 식별자 필드가 자동으로 생성 되는 데이터베이스 테이블의 필드를 나타내는 경우에는 식별자 필드의 **읽기** 전용 속성을 **True**로 설정 합니다.
+   > 엔터티 형식의 식별자 필드가 자동으로 생성 되는 데이터베이스 테이블의 필드를 나타내는 경우에는 식별자 필드의 **읽기** 전용 속성을 **True** 로 설정 합니다.
 
 6. **메서드 세부 정보** 창에서 메서드의 메서드 인스턴스를 선택 합니다.
 
-7. **속성 창**에서 **반환 매개 변수 이름** 속성을 메서드의 반환 매개 변수 이름으로 설정 합니다. 메서드 인스턴스 속성에 대 한 자세한 내용은 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))를 참조 하십시오.
+7. **속성 창** 에서 **반환 매개 변수 이름** 속성을 메서드의 반환 매개 변수 이름으로 설정 합니다. 메서드 인스턴스 속성에 대 한 자세한 내용은 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))를 참조 하십시오.
 
-8. **솔루션 탐색기**에서 엔터티에 대해 생성 된 서비스 코드 파일의 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+8. **솔루션 탐색기** 에서 엔터티에 대해 생성 된 서비스 코드 파일의 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
     엔터티 서비스 코드 파일이 코드 편집기에서 열립니다. 엔터티 서비스 코드 파일에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요.
 
@@ -85,7 +87,7 @@ ms.locfileid: "86014813"
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)
 - [방법: Creator 메서드 추가](../sharepoint/how-to-add-a-creator-method.md)

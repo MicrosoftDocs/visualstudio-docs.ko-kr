@@ -1,5 +1,7 @@
 ---
 title: SharePoint 개체 모델 호출 | Microsoft Docs
+description: SharePoint 도구 확장에서 사용할 수 있는 두 가지 개체 모델을 호출 하는 방법을 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988403"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850054"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>SharePoint 개체 모델 호출
   Visual Studio에서 SharePoint 도구에 대 한 확장을 만들 때 특정 작업을 수행 하려면 SharePoint Api를 호출 해야 할 수 있습니다. 예를 들어 SharePoint 프로젝트에 대 한 사용자 지정 배포 단계를 만드는 경우 솔루션을 배포 하는 일부 작업을 수행 하기 위해 SharePoint Api를 호출 해야 할 수 있습니다.
@@ -52,9 +54,9 @@ ms.locfileid: "62988403"
  SharePoint 명령을 만들고 사용 하는 방법을 보여 주는 연습은 [연습: sharepoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) 및 [연습: 웹 파트 표시를 위한 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)을 참조 하세요.
 
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>SharePoint 명령 실행 방법 이해
- SharePoint 명령을 정의 하는 어셈블리는 *vssphost4.exe*라는 64 비트 호스트 프로세스에 로드 됩니다. SharePoint 도구 확장에서 SharePoint 명령을 호출한 후에는 32 비트 Visual Studio 프로세스 (*devenv.exe*) 대신 *vssphost4.exe* 에서 명령이 실행 됩니다. 레지스트리의 값을 설정 하 여 SharePoint 명령이 실행 되는 방법의 일부 측면을 제어할 수 있습니다. 자세한 내용은 [Visual Studio의 SharePoint 도구에 대 한 디버그 확장](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)(영문)을 참조 하세요.
+ SharePoint 명령을 정의 하는 어셈블리는 *vssphost4.exe* 라는 64 비트 호스트 프로세스에 로드 됩니다. SharePoint 도구 확장에서 SharePoint 명령을 호출한 후에는 32 비트 Visual Studio 프로세스 (*devenv.exe*) 대신 *vssphost4.exe* 에서 명령이 실행 됩니다. 레지스트리의 값을 설정 하 여 SharePoint 명령이 실행 되는 방법의 일부 측면을 제어할 수 있습니다. 자세한 내용은 [Visual Studio의 SharePoint 도구에 대 한 디버그 확장](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)(영문)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [방법: SharePoint 명령 실행](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [SharePoint 도구 확장의 프로그래밍 모델 개요](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

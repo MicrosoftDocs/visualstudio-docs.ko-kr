@@ -1,5 +1,7 @@
 ---
 title: '방법: 리소스 파일 추가 | Microsoft Docs'
+description: 솔루션 노드의 바로 가기 메뉴에 있는 명령과 솔루션 탐색기의 기능 노드를 사용 하 여 Visual Studio에서 리소스 파일을 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015186"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850132"
 ---
 # <a name="how-to-add-a-resource-file"></a>방법: 리소스 파일 추가
   리소스 파일을 추가 하기 위한 명령은 솔루션 노드의 바로 가기 메뉴와 솔루션 탐색기의 기능 노드에 있습니다. 자세한 내용은 [SharePoint 솔루션 지역화](../sharepoint/localizing-sharepoint-solutions.md)를 참조 하세요.
@@ -27,7 +29,7 @@ ms.locfileid: "86015186"
 
 1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 솔루션을 엽니다.
 
-2. **솔루션 탐색기**에서 SharePoint 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+2. **솔루션 탐색기** 에서 SharePoint 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
 3. **새 항목 추가** 대화 상자에서 **전역 리소스 파일** 템플릿을 선택 하 고 **추가** 단추를 선택 합니다.
 
@@ -36,7 +38,7 @@ ms.locfileid: "86015186"
 
 4. **리소스 추가** 대화 상자에서 리소스 파일의 문화권 (예: 영어 (미국))을 선택 합니다.
 
-    이 단계에서는 Resource_x_ 형식의 전역 리소스 파일을 솔루션에 추가**합니다.** <em>문화권</em><strong>.</strong> *resource1.resx*와 같은 resx입니다.
+    이 단계에서는 Resource_x_ 형식의 전역 리소스 파일을 솔루션에 추가 **합니다.** <em>문화권</em><strong>.</strong> *resource1.resx* 와 같은 resx입니다.
 
 5. 에서 **리소스 편집기** 가 열리면 리소스 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 파일에 리소스를 추가 합니다.
 
@@ -44,11 +46,11 @@ ms.locfileid: "86015186"
 
 1. SharePoint 솔루션이에서 아직 열려 있지 않은 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 솔루션을 엽니다.
 
-2. **솔루션 탐색기**의 **기능** 노드에서 기능 이름에 대 한 바로 가기 메뉴를 열고 **기능 리소스 추가**를 선택 합니다.
+2. **솔루션 탐색기** 의 **기능** 노드에서 기능 이름에 대 한 바로 가기 메뉴를 열고 **기능 리소스 추가** 를 선택 합니다.
 
-     이 단계에서는 _ResourceFileName_형식으로 기능에 리소스 파일을 추가**합니다.** Feature1와 같은 _culture_**.RESX**. *-US .resx*.
+     이 단계에서는 _ResourceFileName_ 형식으로 기능에 리소스 파일을 추가 **합니다.** Feature1와 같은 _culture_**.RESX**. *-US .resx*.
 
 3. 에서 **리소스 편집기** 가 열리면 리소스 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 파일에 리소스를 추가 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

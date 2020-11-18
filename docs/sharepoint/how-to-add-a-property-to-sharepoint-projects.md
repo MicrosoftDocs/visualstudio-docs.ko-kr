@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 프로젝트에 속성 추가 | Microsoft Docs'
+description: 프로젝트 확장을 사용 하 여 SharePoint 프로젝트에 속성을 추가 합니다. 솔루션 탐색기에서 프로젝트를 선택 하면 속성 창에 속성이 표시 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015917"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850158"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>방법: SharePoint 프로젝트에 속성 추가
-  프로젝트 확장을 사용 하 여 SharePoint 프로젝트에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기**에서 프로젝트를 선택 하면 **속성** 창에 표시 됩니다.
+  프로젝트 확장을 사용 하 여 SharePoint 프로젝트에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기** 에서 프로젝트를 선택 하면 **속성** 창에 표시 됩니다.
 
  다음 단계에서는 프로젝트 확장을 이미 만들었다고 가정 합니다. 자세한 내용은 [방법: SharePoint 프로젝트 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)를 참조 하세요.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015917"
 
 3. 이벤트에 대 한 이벤트 처리기에서 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 속성 클래스의 인스턴스를 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> 이벤트 인수 매개 변수의 컬렉션에 추가 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 두 개의 속성을 SharePoint 프로젝트에 추가 하는 방법을 보여 줍니다. 한 속성은 프로젝트 사용자 옵션 파일 ( *.csproj. user* 파일 또는 *.vbproj* 파일)에서 해당 데이터를 유지 합니다. 다른 속성은 프로젝트 파일 (*.csproj* 파일 또는 *.vbproj* 파일)에 데이터를 유지 합니다.
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
@@ -80,7 +82,7 @@ ms.locfileid: "86015917"
 ## <a name="deploy-the-extension"></a>확장 배포
  확장을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 확장](../sharepoint/extending-sharepoint-projects.md)
 - [방법: SharePoint 프로젝트 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
