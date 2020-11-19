@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 SharePoint 도구 확장 | Microsoft Docs
+description: Visual Studio의 SharePoint 도구를 확장합니다. SharePoint 프로젝트 시스템을 확장합니다. 서버 탐색기의 SharePoint 연결 노드를 확장합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016036"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672628"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Visual Studio의 SharePoint 도구 확장
   Visual Studio의 SharePoint 도구는 다양한 애플리케이션 개발 시나리오의 요구 사항을 충족합니다. 그러나 본인이나 다른 개발자에게 필요한 기능이 제공되지 않는 경우를 발견할 수도 있습니다. 이 경우에는 SharePoint 도구를 확장하여 필요한 기능을 만들 수 있습니다.

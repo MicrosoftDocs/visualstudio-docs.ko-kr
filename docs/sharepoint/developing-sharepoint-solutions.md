@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션 개발 | Microsoft Docs
+description: SharePoint 솔루션을 개발합니다. SharePoint 프로젝트 요소를 알아봅니다. SharePoint 프로젝트 및 프로젝트 항목 속성을 살펴봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016795"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672823"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록은 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)을 참조하세요. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.
@@ -28,7 +30,7 @@ ms.locfileid: "86016795"
  SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 프로젝트 요소
- SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목*이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일*이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).
+ SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목* 이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일* 이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).
 
  프로젝트 항목 파일로 채워져 있는 프로젝트 템플릿을 사용하여 프로젝트를 만드는 대신, **빈 프로젝트** 템플릿을 사용하여 빈 SharePoint 프로젝트를 만들고 프로젝트 항목을 수동으로 추가할 수 있습니다. SharePoint 프로젝트에는 선택적으로 SharePoint에서 활성화에 사용되는 기능 파일 하나 이상과 프로젝트를 배포할 패키지 파일이 포함될 수 있습니다.
 
@@ -47,24 +49,24 @@ ms.locfileid: "86016795"
 
  기능을 수동으로 추가하려면 기능 노드의 바로 가기 메뉴에서 **기능 추가** 명령을 실행합니다. 기능 디자이너를 사용하여 기능 콘텐츠를 보거나 변경할 수 있습니다. 자세한 내용은 [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)을 참조하세요.
 
- 기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature*x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.
+ 기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature *x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.
 
 #### <a name="package-node"></a>패키지 노드
  **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 이 파일을 ‘솔루션 패키지’라고 하며, .WSP 확장명을 사용하는 .CAB 기반 파일입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.
 
- 패키지 노드를 두 번 클릭하거나 바로 가기 메뉴를 열고 **열기**를 선택하여 패키지 디자이너에서 패키지 내용을 보거나 변경할 수 있습니다. 자세한 내용은 [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)를 참조하세요.
+ 패키지 노드를 두 번 클릭하거나 바로 가기 메뉴를 열고 **열기** 를 선택하여 패키지 디자이너에서 패키지 내용을 보거나 변경할 수 있습니다. 자세한 내용은 [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)를 참조하세요.
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 프로젝트 및 프로젝트 항목 속성
  SharePoint 프로젝트는 다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트와 마찬가지로 속성 창과 속성 페이지에 속성이 표시됩니다. 표시되는 속성은 선택된 노드에 따라 달라집니다.
 
- **솔루션 탐색기**에서 SharePoint 프로젝트, 프로젝트 항목 또는 프로젝트 항목 파일 노드를 선택하면 속성 창이나 속성 페이지에 다음 속성이 표시됩니다.
+ **솔루션 탐색기** 에서 SharePoint 프로젝트, 프로젝트 항목 또는 프로젝트 항목 파일 노드를 선택하면 속성 창이나 속성 페이지에 다음 속성이 표시됩니다.
 
 ### <a name="project-properties"></a>프로젝트 속성
 
 |속성 이름|설명|
 |-------------------|-----------------|
 |활성 배포 구성|배포하는 동안 수행되는 일련의 단계를 지정합니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)을 참조하세요.|
-|어셈블리 배포 대상|*SharePoint 애플리케이션 어셈블리* 가 배치되는 위치를 결정합니다. 올바른 어셈블리 위치 값은 *GlobalAssemblyCache* (기본값) 또는 *WebApplication*입니다.<br /><br /> *Sandboxed Solution* 속성을 **true**로 설정하면 이 속성이 사용하지 않도록 설정됩니다.|
+|어셈블리 배포 대상|*SharePoint 애플리케이션 어셈블리* 가 배치되는 위치를 결정합니다. 올바른 어셈블리 위치 값은 *GlobalAssemblyCache* (기본값) 또는 *WebApplication* 입니다.<br /><br /> *Sandboxed Solution* 속성을 **true** 로 설정하면 이 속성이 사용하지 않도록 설정됩니다.|
 |디버깅 후 자동 취소|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 디버그 모드로 애플리케이션을 실행하고 나서 SharePoint에서 배포된 솔루션을 자동으로 취소할지를 지정합니다. 이 옵션을 선택하면 디버그한 후 IDE가 디자인 뷰로 돌아가면 솔루션이 취소됩니다. 이 옵션의 선택을 취소하면 솔루션이 취소되지 않습니다. 자세한 내용은 [솔루션 취소](/previous-versions/office/developer/sharepoint-2010/aa543958(v=office.14))를 참조하세요.|
 |구성 편집|프로젝트에 사용할 배포 구성을 지정합니다. 자세한 내용은 [방법: SharePoint 배포 구성 편집](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) 및 [SharePoint 솔루션 패키지 배포, 게시, 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)를 참조하세요.|
 |스크립트 디버깅 대신 Silverlight 디버깅 사용|이 옵션을 선택하면 Silverlight 디버거가 디버깅 프로세스에 연결됩니다. 이 옵션의 선택을 취소하면 스크립트 디버거가 디버깅 프로세스에 연결됩니다. 자세한 내용은 [Silverlight 디버깅 개요](/previous-versions/windows/)를 참조하세요.|
@@ -73,7 +75,7 @@ ms.locfileid: "86016795"
 |배포 전 명령줄|SharePoint 솔루션을 배포하기 전에 실행할 명령을 지정합니다. 이 명령줄은 MSBuild 변수 및 모든 배치 명령을 지원합니다. 자세한 내용은 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)을 참조하세요.|
 |프로젝트 파일|프로젝트에 대한 빌드, 구성 및 기타 정보가 들어 있는 파일의 이름입니다.|
 |프로젝트 폴더|시스템에서 프로젝트 파일의 위치입니다. 읽기 전용입니다.|
-|Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션*이라고도 하는 *샌드박스 솔루션*으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 및 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)를 참조하세요.|
+|Sandboxed Solution|프로젝트를 *사용자가 만든 솔루션* 이라고도 하는 *샌드박스 솔루션* 으로 배포할지를 지정합니다. 샌드박스 솔루션을 신뢰할 수 있어야 할 필요는 없습니다. **true** 값은 프로젝트가 샌드박스 솔루션으로 배포됨을 의미하고 **false** 값은 프로젝트가 팜 솔루션으로 배포됨을 의미합니다. 자세한 내용은 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 및 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)를 참조하세요.|
 |사이트 URL|이 프로젝트에 대한 대상 사이트의 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 을(를) 지정합니다.|
 |시작 항목|프로젝트에서 실행할 첫 번째 항목을 지정합니다.|
 

@@ -1,5 +1,7 @@
 ---
 title: SharePoint용 웹 파트 만들기 | Microsoft Docs
+description: SharePoint용 웹 파트를 만듭니다. 웹 파트를 사용하면 브라우저를 통해 SharePoint 사이트 페이지의 콘텐츠, 모양, 동작을 수정할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740159"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672797"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint용 웹 파트 만들기
   웹 파트를 사용하면 브라우저를 통해 SharePoint 사이트 페이지의 콘텐츠, 모양, 동작을 수정할 수 있습니다. 웹 파트는 웹 파트 페이지 내에서 실행되는 서버 쪽 컨트롤이며, SharePoint 사이트에 표시되는 페이지의 구성 요소입니다. [구성 요소: 웹 파트](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))를 참조하세요.
@@ -52,15 +54,15 @@ ms.locfileid: "90740159"
  자세한 내용은 [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)를 참조하세요.
 
 ### <a name="visual-web-part-item"></a>비주얼 웹 파트 항목
- 비주얼 웹 파트는 Visual Studio의 Visual Web Developer 디자이너를 사용하여 만드는 웹 파트입니다. 비주얼 웹 파트는 다른 웹 파트와 동일하게 작동합니다. 단추 및 텍스트 상자와 같은 컨트롤을 웹 파트에 추가하려면 XML 파일에 코드를 추가합니다. 그러나 Visual Studio **도구 상자**에서 웹 파트로 끌거나 복사하여 비주얼 웹 파트에 컨트롤을 추가합니다. 그러면 디자이너에서 XML 파일에 필요한 코드를 생성합니다. [방법: 디자이너를 사용하여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)를 참조하세요.
+ 비주얼 웹 파트는 Visual Studio의 Visual Web Developer 디자이너를 사용하여 만드는 웹 파트입니다. 비주얼 웹 파트는 다른 웹 파트와 동일하게 작동합니다. 단추 및 텍스트 상자와 같은 컨트롤을 웹 파트에 추가하려면 XML 파일에 코드를 추가합니다. 그러나 Visual Studio **도구 상자** 에서 웹 파트로 끌거나 복사하여 비주얼 웹 파트에 컨트롤을 추가합니다. 그러면 디자이너에서 XML 파일에 필요한 코드를 생성합니다. [방법: 디자이너를 사용하여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)를 참조하세요.
 
 ## <a name="sharepoint-controls"></a>SharePoint 컨트롤
- Visual Studio는 애플리케이션 페이지와 같은 SharePoint 페이지를 만들기 위한 몇 가지 컨트롤을 제공합니다. 해당 컨트롤은 **도구 상자**의 **SharePoint 컨트롤** 아래에 표시됩니다. 컨트롤 기능은 SharePoint 사이트 및 목록 페이지에 사용되는 ASP.NET 서버 컨트롤을 포함하는 [Microsoft.SharePoint.WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 네임스페이스에서 파생됩니다.
+ Visual Studio는 애플리케이션 페이지와 같은 SharePoint 페이지를 만들기 위한 몇 가지 컨트롤을 제공합니다. 해당 컨트롤은 **도구 상자** 의 **SharePoint 컨트롤** 아래에 표시됩니다. 컨트롤 기능은 SharePoint 사이트 및 목록 페이지에 사용되는 ASP.NET 서버 컨트롤을 포함하는 [Microsoft.SharePoint.WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 네임스페이스에서 파생됩니다.
 
 |컨트롤 이름|설명|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|ASP 메뉴를 삽입합니다. 자세한 내용은 [메뉴 컨트롤 개요](/previous-versions/ecs0x9w5(v=vs.140))를 참조하세요.|
-|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|*.aspx* 페이지에 **LINK** 요소를 삽입하고 **CssRegistration**에서 정의된 하나 이상의 외부 스타일시트를 적용합니다.|
+|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|*.aspx* 페이지에 **LINK** 요소를 삽입하고 **CssRegistration** 에서 정의된 하나 이상의 외부 스타일시트를 적용합니다.|
 |[DateTimeControl](/previous-versions/office/sharepoint-server/ms414993(v=office.15))|*.aspx* 페이지에 DateTime 컨트롤을 삽입합니다.|
 |[FormDigest](/previous-versions/office/sharepoint-server/ms416616(v=office.15))|*.aspx* 페이지에 보안 유효성 검사를 삽입합니다.|
 |[ListProperty](/previous-versions/office/sharepoint-server/ms455032(v=office.15))|지정한 목록의 속성을 반환합니다.|
