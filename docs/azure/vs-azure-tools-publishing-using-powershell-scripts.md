@@ -4,17 +4,16 @@ description: Visual Studio에서 Windows PowerShell 스크립트를 사용하여
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407590"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902145"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시
 
@@ -22,7 +21,7 @@ Visual Studio에서 웹 애플리케이션을 만들 경우 Windows PowerShell �
 
 이러한 스크립트를 사용하면 일시적으로 사용할 사이트의 사용자 지정 버전(개발 및 테스트 환경이라고도 함)을 프로비저닝할 수 있습니다. 예를 들어 Azure 가상 컴퓨터 또는 웹 사이트의 스테이징 슬롯에 특정 버전의 웹 사이트를 설정하고 테스트 제품군 실행, 버그 재현, 버그 수정 사항 테스트, 제안된 변경 사항 시험, 데모 또는 프레젠테이션을 위한 사용자 지정 환경 설정을 수행할 수 있습니다. 프로젝트를 게시하는 스크립트를 만든 다음 필요에 따라 스크립트를 다시 실행하여 동일한 환경을 다시 만들거나 웹 애플리케이션의 자체 빌드로 스크립트를 실행하여 테스트를 위한 사용자 지정 환경을 만들 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 * **Azure 워크로드** 가 설치된 Visual Studio 2015 이상 또는 Visual Studio 2013 및 Azure SDK 2.3 이상. [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)를 참조하세요. (웹 프로젝트용 스크립트를 생성하기 위해 Azure SDK는 필요하지 않습니다. 이 기능은 클라우드 서비스의 웹 역할이 아닌 웹 프로젝트용입니다.)
 * Azure PowerShell 0.7.4 이상 [Azure PowerShell 설치 및 구성 방법](/powershell/azure/overview)을 참조하세요.
@@ -317,12 +316,12 @@ Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대�
 | Add-AzureVM |Azure 가상 머신을 만들고 배포된 VM의 URL을 반환합니다. 함수가 필수 구성 요소를 설정한 다음 **New-AzureVM** 함수(Azure 모듈)를 호출하여 새 가상 머신을 만듭니다. |
 | Add-AzureVMEndpoints |가상 머신에 새 입력 엔드포인트를 추가하고 새 엔드포인트로 가상 머신을 반환합니다. |
 | Add-AzureVMStorage |현재 구독에 새 Azure Storage 계정을 만듭니다. 계정 이름은 "devtest"로 시작하고 그 다음에 고유한 영숫자 문자열이 포함됩니다. 함수에서 새 스토리지 계정의 이름을 반환합니다. 새 스토리지 계정에 대해 위치 또는 선호도 그룹을 지정합니다. |
-| Add-AzureWebsite |지정된 이름 및 위치로 웹 사이트를 만듭니다. 이 함수는 Azure 모듈에서 **New-AzureWebsite** 함수라고 합니다. 구독에 이미 지정된 이름의 웹 사이트가 없을 경우 이 함수는 웹 사이트를 만들고 웹 사이트 개체를 반환합니다. 그 외의 경우 `$null`를 반환합니다. |
+| Add-AzureWebsite |지정된 이름 및 위치로 웹 사이트를 만듭니다. 이 함수는 Azure 모듈에서 **New-AzureWebsite** 함수라고 합니다. 구독에 이미 지정된 이름의 웹 사이트가 없을 경우 이 함수는 웹 사이트를 만들고 웹 사이트 개체를 반환합니다. 그렇지 않으면 `$null`을 반환합니다. |
 | Backup-구독 |현재 Azure 구독을 스크립트 범위의 `$Script:originalSubscription` 변수에 저장합니다. 이 함수는 현재 Azure 구독(`Get-AzureSubscription -Current`에서 가져옴) 및 해당 스토리지 계정, 이 스크립트로 변경된 구독(`$UserSpecifiedSubscription` 변수에 저장) 및 해당 스토리지 계정을 스크립트 범위에 저장합니다. 이러한 값을 저장하면 원래 현재 상태가 변경된 경우 `Restore-Subscription` 등의 함수를 사용하여 현재 구독 및 스토리지 계정을 현재 상태로 복원할 수 있습니다. |
 | Find-AzureVM |지정된 Azure 가상 머신을 가져옵니다. |
 | Format-DevTestMessageWithTime |메시지 앞에 날짜와 시간을 추가합니다. 이 함수는 오류 및 자세한 정보 표시 스트림에 작성되는 메시지를 위해 설계되었습니다. |
 | Get-AzureSQLDatabaseConnectionString |연결 문자열을 조립하여 Azure SQL 데이터베이스에 연결합니다. |
-| Get-AzureVMStorage |*지정 된 위치 또는 선호도 그룹에서 이름 패턴이 "devtest" (대/소문자 구분 안 함) 인 첫 번째 저장소 계정의 이름을 반환 합니다. "Devtest* " 저장소 계정이 위치 또는 선호도 그룹과 일치 하지 않으면 함수는이를 무시 합니다. 위치 또는 선호도 그룹을 지정합니다. |
+| Get-AzureVMStorage |*지정 된 위치 또는 선호도 그룹에서 이름 패턴이 "devtest" (대/소문자 구분 안 함) 인 첫 번째 저장소 계정의 이름을 반환 합니다. "Devtest*" 저장소 계정이 위치 또는 선호도 그룹과 일치 하지 않으면 함수는이를 무시 합니다. 위치 또는 선호도 그룹을 지정합니다. |
 | Get-MSDeployCmd |MsDeploy.exe 도구를 실행하는 명령을 반환합니다. |
 | New-AzureVMEnvironment |JSON 구성 파일의 값과 일치하는 구독에서 가상 머신을 검색하거나 만듭니다. |
 | Publish-WebPackage |MsDeploy.exe 및 웹 게시 패키지인 .Zip 파일을 사용하여 리소스를 웹 사이트에 배포합니다. 이 함수는 출력을 생성하지 않습니다. MSDeploy.exe에 대한 호출이 실패할 경우 함수가 예외를 throw합니다. 더 자세한 출력을 가져오려면 **-Verbose** 옵션을 사용합니다. |
@@ -334,7 +333,7 @@ Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대�
 | Test-HttpsUrl |입력 URL을 System.Uri 개체로 변환합니다. URL이 절대적이고 해당 스키마가 https인 경우 `$True` 을(를) 반환합니다. URL이 상대적이고 해당 스키마가 HTTPS가 아니거나 입력 문자열을 URL로 변환할 수 없을 경우 `$false` 을(를) 반환합니다. |
 | Test-Member |속성 또는 메서드가 개체의 구성원인 경우 `$true` 을(를) 반환합니다. 그렇지 않으면 `$false`을(를) 반환합니다. |
 | Write-ErrorWithTime |현재 시간을 접두사로 하는 오류 메시지를 작성합니다. 이 함수는 **Format-DevTestMessageWithTime** 함수를 호출하고 메시지를 쓰기 전의 시간을 오류 스트림 앞에 추가합니다. |
-| Write-HostWithTime |현재 시간을 접두사로 하는 호스트 프로그램( **Write-Host** )에 메시지를 씁니다. 호스트 프로그램에 쓰는 효과는 다양합니다. Windows PowerShell을 호스팅하는 대부분의 프로그램은 이러한 메시지를 표준 출력에 씁니다. |
+| Write-HostWithTime |현재 시간을 접두사로 하는 호스트 프로그램(**Write-Host**)에 메시지를 씁니다. 호스트 프로그램에 쓰는 효과는 다양합니다. Windows PowerShell을 호스팅하는 대부분의 프로그램은 이러한 메시지를 표준 출력에 씁니다. |
 | Write-VerboseWithTime |현재 시간을 접두사로 하는 자세한 정보 메시지를 작성합니다. 이 함수는 **Write-Verbose** 를 호출하므로 **Verbose** 매개 변수로 스크립트가 실행되거나 **VerbosePreference** 기본 설정이 **계속** 으로 설정된 경우에만 메시지가 표시됩니다. |
 
 **Publish-WebApplication**

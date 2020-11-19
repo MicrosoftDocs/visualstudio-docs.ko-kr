@@ -3,17 +3,16 @@ title: 클라우드 탐색기를 사용하여 Azure 리소스 관리 | Microsoft
 description: 클라우드 탐색기를 사용하여 Visual Studio 내에서 Azure 리소스를 검색 및 관리하는 방법에 대해 알아봅니다.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399392"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902282"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
 
@@ -23,7 +22,7 @@ ms.locfileid: "93399392"
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-* **Azure 워크로드** 가 선택된 Visual Studio 2017 이상( [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
+* **Azure 워크로드** 가 선택된 Visual Studio 2017 이상([Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)하거나 [Visual Studio 구독자 혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)할 수 있습니다.
 
 > [!NOTE]

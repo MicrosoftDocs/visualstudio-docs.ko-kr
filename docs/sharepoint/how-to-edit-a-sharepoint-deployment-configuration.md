@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 배포 구성 편집 | Microsoft Docs'
+description: SharePoint 배포 구성을 만들거나 기존 배포 구성을 수정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016777"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903561"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>방법: SharePoint 배포 구성 편집
   배포 구성을 만들거나 기존 배포 구성을 수정할 수 있습니다. 예를 들어 단일 단계를 실행 하거나 배포 프로세스의 단계 순서를 변경할 수 있습니다. 기본 제공 되 고 프로그래밍 방식으로 추가 된 구성을 변경할 수 없기 때문에 배포 구성을 만들거나 수정할 수 있습니다.
@@ -28,7 +30,7 @@ ms.locfileid: "86016777"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint 배포 구성을 만들려면
 
-1. **솔루션 탐색기**에서 SharePoint 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**, _ProjectName_**속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 SharePoint 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**, _ProjectName_**속성** 을 선택 합니다.
 
 2. **SharePoint** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
@@ -45,11 +47,11 @@ ms.locfileid: "86016777"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>활성 배포 구성을 변경 하려면
 
-1. **솔루션 탐색기**에서 SharePoint 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  ** \<*ProjectName*> 속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 SharePoint 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **\<*ProjectName*> 속성** 을 선택 합니다.
 
 2. **SharePoint** 탭을 선택 합니다.
 
 3. **활성 배포 구성** 목록 상자에서 사용 하려는 배포 구성의 이름을 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>참고 항목
+- [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

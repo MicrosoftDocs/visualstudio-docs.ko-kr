@@ -4,17 +4,16 @@ description: 서버 탐색기로 스토리지 리소스 찾아보기 및 관리
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398867"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902222"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
@@ -34,7 +33,7 @@ Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확�
 
 스토리지 에뮬레이터 계정의 리소스를 보려면 **개발** 노드를 확장하세요. **개발** 노드를 확장했을 때 스토리지 에뮬레이터가 시작하지 않으면 자동으로 시작될 것입니다. 이 프로세스는 몇 초 정도 걸릴 수 있습니다. 스토리지 에뮬레이터가 시작하는 동안 Visual Studio의 다른 영역에서 작업을 계속할 수 있습니다.
 
-스토리지 계정의 리소스를 보려면 서버 탐색기에서 스토리지 계정의 노드를 확장하세요. 그러면 **Blob** , **큐** 및 **테이블** 노드가 표시됩니다.
+스토리지 계정의 리소스를 보려면 서버 탐색기에서 스토리지 계정의 노드를 확장하세요. 그러면 **Blob**, **큐** 및 **테이블** 노드가 표시됩니다.
 
 ## <a name="work-with-blob-resources"></a>Blob 리소스로 작업
 
@@ -82,7 +81,7 @@ Blob 컨테이너 보기의 오른쪽 위 모서리에 있는 단추를 사용�
 
    ![Blob 컨테이너에 폴더 추가하기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
-1. 폴더를 두 번 클릭하거나 Enter 키를 눌러 폴더의 콘텐츠를 확인합니다. 컨테이너의 폴더에 있는 경우 **부모 디렉터리 열기** (화살표) 단추를 선택하여 컨테이너의 루트로 다시 이동할 수 있습니다.
+1. 폴더를 두 번 클릭하거나 Enter 키를 눌러 폴더의 콘텐츠를 확인합니다. 컨테이너의 폴더에 있는 경우 **부모 디렉터리 열기**(화살표) 단추를 선택하여 컨테이너의 루트로 다시 이동할 수 있습니다.
 
 ### <a name="to-delete-a-container-folder"></a>컨테이너 폴더를 삭제하려면
 
@@ -94,7 +93,7 @@ Blob 컨테이너의 폴더는 가상 폴더이기 때문에 빈 폴더를 만�
 
 공통 접두사를 지정하여 표시되는 Blob를 필터링할 수 있습니다.
 
-예를 들어 필터 텍스트 상자에 접두사 **hello** 를 입력한 다음 **실행** ( **!** ) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
+예를 들어 필터 텍스트 상자에 접두사 **hello** 를 입력한 다음 **실행**(**!**) 단추를 선택하면 “hello”로 시작하는 Blob만 나타납니다.
 
 ![필터 텍스트 상자](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 

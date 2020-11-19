@@ -1,5 +1,7 @@
 ---
 title: '방법: 배포 충돌 처리 | Microsoft Docs'
+description: SharePoint 프로젝트 항목의 배포 충돌을 처리 하는 사용자 고유의 코드를 구현 하는 방법의 예제를 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015311"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903509"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>방법: 배포 충돌 처리
   사용자 고유의 코드를 제공 하 여 SharePoint 프로젝트 항목의 배포 충돌을 처리할 수 있습니다. 예를 들어 현재 프로젝트 항목의 파일이 배포 위치에 이미 있는지 여부를 확인 한 다음 현재 프로젝트 항목을 배포 하기 전에 배포 된 파일을 삭제할 수 있습니다. 배포 충돌에 대 한 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.
@@ -55,7 +57,7 @@ ms.locfileid: "86015311"
 ## <a name="deploy-the-extension"></a>확장 배포
  확장을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리 및 확장을 사용 하 여 배포 하려는 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)
 - [방법: 배포 단계가 실행 될 때 코드 실행](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)

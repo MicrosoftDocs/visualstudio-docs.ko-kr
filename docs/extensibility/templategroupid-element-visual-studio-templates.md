@@ -1,5 +1,7 @@
 ---
 title: Templates Groupid 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 템플릿 Groupid 요소와 항목 템플릿이 표시 되는 프로젝트 종류를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699073"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903223"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 요소(Visual Studio 템플릿)
 항목 템플릿이 표시되는 프로젝트 종류를 지정합니다. 이 요소는 [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가로 설정 된 경우에 중요 `false` 합니다. [Showbydefault (Visual Studio 템플릿)](../extensibility/showbydefault-visual-studio-templates.md) 가로 설정 된 경우 `true` 모든 프로젝트 형식에서 항목 템플릿을 사용할 수 있습니다.
@@ -56,7 +58,7 @@ ms.locfileid: "80699073"
 ## <a name="remarks"></a>설명
  `TemplateGroupID`는 요소입니다.
 
- 요소 값은 `TemplateGroupID` 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects)과 함께 \\ **새 항목 추가** 대화 상자에 표시 되는 템플릿을 필터링 하는 데 사용 됩니다.
+ 요소 값은 `TemplateGroupID` 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \projects)과 함께 \\ **새 항목 추가** 대화 상자에 표시 되는 템플릿을 필터링 하는 데 사용 됩니다.
 
 |Visual C++ 값|의미|
 |------------------------|-------------|
@@ -70,6 +72,6 @@ ms.locfileid: "80699073"
 |WinRT-Native|Windows 8.0 스토어 프로젝트에 사용됩니다.|
 |VC-Android|Android 프로젝트에 사용됩니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

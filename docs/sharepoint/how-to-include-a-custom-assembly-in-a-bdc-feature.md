@@ -1,5 +1,7 @@
 ---
 title: '방법: BDC 기능에 사용자 지정 어셈블리 포함 | Microsoft Docs'
+description: 프로젝트가 동일한 솔루션에 있는 다른 프로젝트의 어셈블리를 참조할 수 있도록 BDC (비즈니스 데이터 연결) 기능에 사용자 지정 어셈블리를 포함 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740073"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903470"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>방법: BDC 기능에 사용자 지정 어셈블리 포함
   프로젝트는 같은 솔루션에 있는 다른 프로젝트의 어셈블리를 참조할 수 있습니다. 그러나 **lobsystem에 참조 된 어셈블리 할당** 대화 상자를 사용 하 여 프로젝트의 기능 파일에 이러한 어셈블리를 추가 해야 합니다.
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>BDC (비즈니스 데이터 연결) 기능에 사용자 지정 어셈블리를 포함 하려면
 
-1. **솔루션 탐색기**에서 BDC 모델이 포함 된 폴더를 선택 합니다.
+1. **솔루션 탐색기** 에서 BDC 모델이 포함 된 폴더를 선택 합니다.
 
-2. **보기** 메뉴에서 **속성 창**을 클릭합니다.
+2. **보기** 메뉴에서 **속성 창** 을 클릭합니다.
 
 3. **속성** 창에서 **어셈블리** 속성을 선택 하 고 줄임표 단추 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 선택 합니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "90740073"
     > [!NOTE]
     > 사용자 지정 어셈블리의 코드를 디버깅 하려면 솔루션 패키지에 어셈블리를 추가 해야 합니다. 자세한 내용은 [방법: 추가 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 리소스 파일을 사용하여 지역화된 이름, 속성, 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)

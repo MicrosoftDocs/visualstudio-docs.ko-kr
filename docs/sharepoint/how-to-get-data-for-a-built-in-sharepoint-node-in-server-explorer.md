@@ -1,6 +1,8 @@
 ---
 title: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기
 titleSuffix: ''
+description: Visual Studio의 서버 탐색기 창에서 기본 제공 SharePoint 노드의 기본 SharePoint 구성 요소에 대 한 데이터를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3a975374b82b10c0e29d74bcf68d7bce3225a967
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585773"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903522"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기
-  **서버 탐색기**의 각 기본 제공 sharepoint 노드에 대해 노드가 나타내는 기본 sharepoint 구성 요소에 대 한 데이터를 가져올 수 있습니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.
+  **서버 탐색기** 의 각 기본 제공 sharepoint 노드에 대해 노드가 나타내는 기본 sharepoint 구성 요소에 대 한 데이터를 가져올 수 있습니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.
 
-## <a name="example"></a>예제
- 다음 코드 예제에서는 목록 노드가 **서버 탐색기**에서 나타내는 기본 SharePoint 목록의 데이터를 가져오는 방법을 보여 줍니다. 기본적으로 목록 노드에는 웹 브라우저에서 목록을 열 때 클릭할 수 있는 **브라우저의 상황에** 맞는 메뉴 항목이 있습니다. 이 예제에서는 visual studio에서 직접 목록을 여는 visual Studio 상황에 맞는 메뉴 항목 **의 뷰** 를 추가 하 여 목록 노드를 확장 합니다. 이 코드는 노드의 목록 데이터에 액세스 하 여 Visual Studio에서 열 목록의 URL을 가져옵니다.
+## <a name="example"></a>예
+ 다음 코드 예제에서는 목록 노드가 **서버 탐색기** 에서 나타내는 기본 SharePoint 목록의 데이터를 가져오는 방법을 보여 줍니다. 기본적으로 목록 노드에는 웹 브라우저에서 목록을 열 때 클릭할 수 있는 **브라우저의 상황에** 맞는 메뉴 항목이 있습니다. 이 예제에서는 visual studio에서 직접 목록을 여는 visual Studio 상황에 맞는 메뉴 항목 **의 뷰** 를 추가 하 여 목록 노드를 확장 합니다. 이 코드는 노드의 목록 데이터에 액세스 하 여 Visual Studio에서 열 목록의 URL을 가져옵니다.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]

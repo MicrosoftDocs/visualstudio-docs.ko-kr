@@ -4,17 +4,16 @@ description: Azure 웹 사이트에 웹 프로젝트를 게시하는 방법에 �
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c487084a276be31730f1e268527f4c10a2f7b747
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398828"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902170"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell 스크립트)
 ## <a name="syntax"></a>구문

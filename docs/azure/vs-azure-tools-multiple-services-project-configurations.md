@@ -4,17 +4,16 @@ description: ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg 및 Servi
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399808"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902365"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하여 Visual Studio에서 Azure 프로젝트 구성
 
@@ -39,7 +38,7 @@ Visual Studio의 Azure 클라우드 서비스 프로젝트에는 `ServiceDefinit
 
 **인스턴스** 횟수 속성을 이 역할에 대해 서비스를 실행해야 하는 인스턴스 수로 설정합니다.
 
-**VM 크기** 속성을 **매우 작음** , **작음** , **보통** , **큼** 또는 **매우 큼** 으로 설정합니다.  자세한 내용은 [Cloud Services의 크기](/azure/cloud-services/cloud-services-sizes-specs)를 참조 하세요.
+**VM 크기** 속성을 **매우 작음**, **작음**, **보통**, **큼** 또는 **매우 큼** 으로 설정합니다.  자세한 내용은 [Cloud Services의 크기](/azure/cloud-services/cloud-services-sizes-specs)를 참조 하세요.
 
 ### <a name="startup-action-web-role-only"></a>시작 작업(웹 역할만)
 
@@ -51,7 +50,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 ### <a name="diagnostics"></a>진단
 
-기본적으로 웹 역할에 대한 진단이 사용됩니다. Azure 클라우드 서비스 프로젝트 및 스토리지 계정은 로컬 스토리지 에뮬레이터를 사용하도록 설정됩니다. Azure에 배포할 준비가 되면 대신 Azure Storage를 사용하도록 작성기 단추( **...** )를 선택할 수 있습니다. 요청 시 또는 자동으로 예약된 간격으로 스토리지 계정에 진단 데이터를 전송할 수 있습니다. Azure 진단에 대한 자세한 내용은 [Azure Cloud Services 및 Virtual Machines에서 진단 사용](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.
+기본적으로 웹 역할에 대한 진단이 사용됩니다. Azure 클라우드 서비스 프로젝트 및 스토리지 계정은 로컬 스토리지 에뮬레이터를 사용하도록 설정됩니다. Azure에 배포할 준비가 되면 대신 Azure Storage를 사용하도록 작성기 단추(**...**)를 선택할 수 있습니다. 요청 시 또는 자동으로 예약된 간격으로 스토리지 계정에 진단 데이터를 전송할 수 있습니다. Azure 진단에 대한 자세한 내용은 [Azure Cloud Services 및 Virtual Machines에서 진단 사용](/azure/cloud-services/cloud-services-dotnet-diagnostics)을 참조하세요.
 
 ## <a name="settings-page"></a>설정 페이지
 
@@ -68,7 +67,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 연결 문자열을 만들려면 **설정 추가** 를 선택하고 **형식** 을 “연결 문자열”로 설정합니다.
 
-새 또는 기존 연결 문자열의 **경우 ...를 선택 합니다** . _ *값* * 필드 오른쪽에 있는 _ **저장소 연결 문자열 만들기** 대화 상자를 엽니다.
+새 또는 기존 연결 문자열의 **경우 ...를 선택 합니다** . _ *값** 필드 오른쪽에 있는 _ **저장소 연결 문자열 만들기** 대화 상자를 엽니다.
 
 1. **연결 방법** 에서 구독에서 스토리지 계정을 선택하는 **구독** 옵션을 선택합니다. 그런 다음 Visual Studio에서 자동으로 `.publishsettings` 파일에서 스토리지 계정 자격 증명을 획득합니다.
 1. **수동으로 입력한 자격 증명** 을 선택하면 Azure Portal의 정보를 사용하여 계정 이름 및 키를 직접 지정할 수 있습니다. 계정 키를 복사하려면:

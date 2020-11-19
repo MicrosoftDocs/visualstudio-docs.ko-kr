@@ -3,28 +3,27 @@ title: 테이블 디자이너에 대한 필터 문자열 생성하기 | Microsof
 description: 테이블 디자이너에 대한 필터 문자열 생성하기
 author: ghogen
 manager: jillfra
-assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398607"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901923"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>테이블 디자이너에 대한 필터 문자열 생성하기
 ## <a name="overview"></a>개요
 Visual Studio **테이블 디자이너** 에 표시된 Azure 테이블에서 데이터를 필터링하려면 필터 문자열을 생성하고 필터 필드에 입력합니다. 필터 문자열 구문은 WCF Data Services에 의해 정의되며 SQL WHERE 절과 유사하지만 HTTP 요청을 통해 Table service에 전송됩니다. **테이블 디자이너** 는 적절한 인코딩을 처리하므로 원하는 속성 값을 필터링하려면 단순히 속성 이름, 비교 연산자, 조건 값 및 필요에 따라 부울 연산자를 필터 필드에 입력하면 됩니다. [Storage 서비스 REST API 참조](/rest/api/storageservices/)를 통해 테이블 쿼리에 대한 URL을 생성하는 경우 $filter 쿼리 옵션은 포함할 필요가 없습니다.
 
-WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 ( **$filter** )에 대한 자세한 내용은 [OData URI 규칙 사양](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)을 참조하세요.
+WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 (**$filter**)에 대한 자세한 내용은 [OData URI 규칙 사양](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)을 참조하세요.
 
 ## <a name="comparison-operators"></a>비교 연산자
 다음의 논리 연산자는 모든 속성 유형에 대해 지원됩니다.
 
-| 논리 연산자 | Description | 필터 문자열의 예 |
+| 논리 연산자 | 설명 | 필터 문자열의 예 |
 | --- | --- | --- |
 | eq |같음 |'Redmond'와 같은 도시 |
 | gt |보다 큼 |20보다 큰 가격 |

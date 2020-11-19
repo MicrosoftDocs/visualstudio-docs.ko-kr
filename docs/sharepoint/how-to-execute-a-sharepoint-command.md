@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 명령 실행 | Microsoft Docs'
+description: SharePoint 도구 확장에서 서버 개체 모델 API를 호출 하는 사용자 지정 SharePoint 명령을 만드는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016988"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903537"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>방법: SharePoint 명령 실행
   SharePoint 도구 확장에서 서버 개체 모델을 사용 하려면 API를 호출 하는 사용자 지정 *SharePoint 명령을* 만들어야 합니다. 명령을 정의 하 고 SharePoint 도구 확장을 사용 하 여 배포한 후에 확장은 명령을 실행 하 여 SharePoint 서버 개체 모델을 호출할 수 있습니다. 명령을 실행 하려면 개체의 ExecuteCommand 메서드 중 하나를 사용 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> 합니다.
@@ -32,7 +34,7 @@ ms.locfileid: "86016988"
 
          프로젝트 시스템 확장에 대 한 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조 하세요.
 
-    - **서버 탐색기**의 **SharePoint 연결** 노드 확장에서 속성을 사용 합니다 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> . 개체를 가져오려면 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 속성을 사용 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> 합니다.
+    - **서버 탐색기** 의 **SharePoint 연결** 노드 확장에서 속성을 사용 합니다 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> . 개체를 가져오려면 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 속성을 사용 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> 합니다.
 
          **서버 탐색기** 확장에 대 한 자세한 내용은 [서버 탐색기에서 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조 하세요.
 
@@ -65,12 +67,12 @@ ms.locfileid: "86016988"
 
 - 두 번째 매개 변수는 명령의 사용자 지정 두 번째 매개 변수에 전달 하려는 값입니다. 이 경우 SharePoint 사이트로 업그레이드 되는 *.wsp* 파일의 전체 경로입니다.
 
-- 코드는 암시적 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 매개 변수를 명령에 전달 하지 않습니다. 이 매개 변수는 SharePoint 프로젝트 시스템의 확장 또는 **서버 탐색기**의 **sharepoint 연결** 노드 확장에서 명령을 호출할 때 명령에 자동으로 전달 됩니다. 인터페이스를 구현 하는 프로젝트 템플릿 마법사와 같은 다른 형식의 솔루션에서는 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 이 매개 변수가 **null**입니다.
+- 코드는 암시적 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 매개 변수를 명령에 전달 하지 않습니다. 이 매개 변수는 SharePoint 프로젝트 시스템의 확장 또는 **서버 탐색기** 의 **sharepoint 연결** 노드 확장에서 명령을 호출할 때 명령에 자동으로 전달 됩니다. 인터페이스를 구현 하는 프로젝트 템플릿 마법사와 같은 다른 형식의 솔루션에서는 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 이 매개 변수가 **null** 입니다.
 
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예에는 VisualStudio 어셈블리에 대 한 참조가 필요 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [방법: SharePoint 명령 만들기](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

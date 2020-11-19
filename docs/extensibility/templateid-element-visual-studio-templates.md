@@ -1,5 +1,7 @@
 ---
 title: TemplateID 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: TemplateID 요소 및 템플릿 Groupid 요소를 기준으로 항목 템플릿 그룹으로 분류 되는 항목 템플릿에 대 한 식별자를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699063"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903184"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 요소(Visual Studio 템플릿)
 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md) 요소를 기준으로 항목 템플릿의 그룹으로 분류 되는 항목 템플릿에 대 한 식별자를 지정 합니다.
@@ -56,8 +58,8 @@ ms.locfileid: "80699063"
 
  .Vstemplate 파일에서 요소를 생략 하면 `TemplateID` [Name](../extensibility/name-element-visual-studio-templates.md) 요소가 템플릿의 식별자로 사용 됩니다.
 
- 요소 값은 `TemplateID` 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects)과 함께 \\ **새 항목 추가** 대화 상자에 표시 되는 템플릿을 필터링 하는 데 사용 됩니다.
+ 요소 값은 `TemplateID` 프로젝트 시스템 등록 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects)과 함께 \\ **새 항목 추가** 대화 상자에 표시 되는 템플릿을 필터링 하는 데 사용 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

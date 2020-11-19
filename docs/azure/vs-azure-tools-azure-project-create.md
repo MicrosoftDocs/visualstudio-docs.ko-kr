@@ -3,17 +3,16 @@ title: Azure 클라우드 서비스 프로젝트 만들기
 description: Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만드는 방법을 알아봅니다.
 author: ghogen
 manager: jillfra
-assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 1fd554a397c6db3bb1f1d5beb2fc12c0423aed22
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399756"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902794"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트 만들기
 
@@ -53,7 +52,7 @@ Visual Studio는 간단한 범용 Azure 서비스인 [azure 클라우드 서비�
 
     ![새 Azure 클라우드 서비스 역할 선택](./media/vs-azure-tools-azure-project-create/new-cloud-service.png)
 
-1. 추가한 역할의 이름을 바꾸려면 **새 Microsoft Azure 클라우드 서비스** 대화 상자에서 역할 위에 마우스를 놓고 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택합니다. 역할을 추가한 후 솔루션 내에서( **솔루션 탐색기** 에서) 역할의 이름을 바꿀 수도 있습니다.
+1. 추가한 역할의 이름을 바꾸려면 **새 Microsoft Azure 클라우드 서비스** 대화 상자에서 역할 위에 마우스를 놓고 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택합니다. 역할을 추가한 후 솔루션 내에서(**솔루션 탐색기** 에서) 역할의 이름을 바꿀 수도 있습니다.
 
     ![Azure 클라우드 서비스 역할 이름 바꾸기](./media/vs-azure-tools-azure-project-create/new-cloud-service-rename.png)
 

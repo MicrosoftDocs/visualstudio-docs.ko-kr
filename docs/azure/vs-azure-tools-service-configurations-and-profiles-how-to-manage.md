@@ -3,17 +3,16 @@ title: 서비스 구성 및 프로필을 관리하는 방법 | Microsoft Docs
 description: 서비스 구성 및 프로필 구성 파일로 작업하는 방법에 대해 배우기|배포 환경에 대한 설정을 저장하고 클라우드 서비스에 대한 설정을 게시합니다.
 author: ghogen
 manager: jillfra
-assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398880"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902081"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>서비스 구성 및 프로필을 관리하는 방법
 ## <a name="overview"></a>개요

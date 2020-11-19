@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 템플릿 스키마 참조 | Microsoft Docs
+description: .Vstemplate 파일의 XML 요소를 탐색 하 여 Visual Studio 템플릿 스키마에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49e41431938eed0078f6cbb241d3d62812899942
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9402efcc6c08343f1661945ae1701f7be7909bab
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697969"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903418"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 템플릿 스키마 참조
 이 섹션에는 프로젝트 템플릿, 항목 템플릿 및 시작 키트에 대 한 메타 데이터를 저장 하는 파일인 *.vstemplate* 파일의 XML 요소에 대 한 정보가 포함 되어 있습니다.
@@ -27,7 +29,7 @@ ms.locfileid: "80697969"
 
 |요소|자식 요소|특성|
 |-------------|--------------------|----------------|
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|없음|없음|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|None|None|
 |[Assembly(템플릿)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly(마법사 확장명)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -44,7 +46,7 @@ ms.locfileid: "80697969"
 ||[사용되지 않음]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[숨김](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[아이콘과](../extensibility/icon-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|
+|[아이콘](../extensibility/icon-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
@@ -72,11 +74,11 @@ ms.locfileid: "80697969"
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> 프로젝트<br /><br /> 참조<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> 참조<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Name<br /><br /> 설명<br /><br /> 아이콘<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> 숨김<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|형식<br /><br /> 버전|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Type<br /><br /> 버전|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|Name|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|어셈블리<br /><br /> FullClassName|--|
 

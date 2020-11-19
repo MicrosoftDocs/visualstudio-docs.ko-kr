@@ -1,5 +1,7 @@
 ---
 title: Templates Data 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 템플릿과 템플릿 데이터 요소에 대해 알아보고 새 프로젝트 또는 새 항목 추가 대화 상자에 템플릿이 표시 되는 방식을 정의 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699186"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903262"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 요소(Visual Studio 템플릿)
 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.
@@ -49,7 +51,7 @@ ms.locfileid: "80699186"
 | - | - |
 | [이름](../extensibility/name-element-visual-studio-templates.md) | 필수적 요소입니다.<br /><br /> **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿의 이름을 지정 합니다. |
 | [설명](../extensibility/description-element-visual-studio-templates.md) | 필수적 요소입니다.<br /><br /> **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿에 대 한 설명을 지정 합니다. |
-| [아이콘과](../extensibility/icon-element-visual-studio-templates.md) | 필수적 요소입니다.<br /><br /> 템플릿에 대 한 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 아이콘 역할을 하는 이미지 파일의 경로와 파일 이름을 지정 합니다. |
+| [아이콘](../extensibility/icon-element-visual-studio-templates.md) | 필수적 요소입니다.<br /><br /> 템플릿에 대 한 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 아이콘 역할을 하는 이미지 파일의 경로와 파일 이름을 지정 합니다. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 필수적 요소입니다.<br /><br /> **새 프로젝트** 대화 상자의 지정 된 그룹 아래에 표시 되도록 프로젝트 템플릿을 분류 합니다. |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> **새 프로젝트** 대화 상자의 지정 된 하위 범주 아래에 표시 되도록 프로젝트 템플릿을 분류 합니다. |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | 선택적 요소입니다.<br /><br /> 템플릿 ID를 지정 합니다. |
@@ -81,7 +83,7 @@ ms.locfileid: "80699186"
 
  선택적 요소를 포함 하지 않는 경우 해당 요소에 대 한 기본값이 사용 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```
@@ -108,6 +110,6 @@ ms.locfileid: "80699186"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

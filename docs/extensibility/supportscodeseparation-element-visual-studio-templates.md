@@ -1,6 +1,7 @@
 ---
 title: SupportsCodeSeparation 요소(Visual Studio 템플릿)
 titleSuffix: ''
+description: 새 항목 추가 대화 상자에서 SupportsCodeSeparation 요소와 개별 파일에 코드 입력 확인란을 사용 하도록 설정할지 여부를 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038467"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901858"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 요소(Visual Studio 템플릿)
 **새 항목 추가** 대화 상자에서 **별도의 파일에 코드 입력** 확인란을 사용할지 여부를 지정 합니다.
@@ -62,7 +63,7 @@ ms.locfileid: "90038467"
 
  코드 분리 또는 코드를 사용 하는 페이지 모델을 사용 하면 태그를 한 파일에 유지 하 고 프로그래밍 코드를 다른 파일에 유지할 수 있습니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 및 기타 .NET 언어는이 모델을 사용 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예에서는 **별도의 파일에 코드 입력** 옵션을 표시 하도록 지정 합니다.
 
 ```

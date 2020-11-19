@@ -1,5 +1,7 @@
 ---
 title: SDKReference 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: SDKReference 요소 및 항목 템플릿에서 SDK 참조를 사용 하도록 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700170"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901689"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 요소(Visual Studio 템플릿)
 항목 템플릿에서 SDK 참조를 사용하도록 지정합니다.
@@ -60,7 +62,7 @@ ms.locfileid: "80700170"
 ...
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [References 요소(Visual Studio 템플릿)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 요소(Visual Studio 템플릿)](../extensibility/reference-element-visual-studio-templates.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

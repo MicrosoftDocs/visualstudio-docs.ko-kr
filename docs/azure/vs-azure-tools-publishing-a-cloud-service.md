@@ -3,17 +3,16 @@ title: Azure Tools를 사용하여 클라우드 서비스 게시 | Microsoft Doc
 description: Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트를 게시하는 방법에 대해 알아보세요.
 author: ghogen
 manager: jillfra
-assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 4e8aa31189a04dace088f1bcf8cc7ad88e0b20ac
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399320"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902131"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio를 사용하여 클라우드 서비스 게시
 
@@ -70,9 +69,9 @@ Azure 애플리케이션을 게시하면 다음 작업 중 하나를 수행할 �
 
 - **웹 역할만 업데이트할 수 있습니다**. 작업자 역할은 업데이트할 수 없습니다. 또한 `web role.cs`에서 `RoleEntryPoint`를 업데이트할 수 없습니다.
 
-- **웹 역할의 단일 인스턴스만 지원할 수 있음** : 배포 환경에서 웹 역할의 인스턴스를 여러 개 포함할 수 없습니다. 하지만 각각의 웹 역할에 하나의 인스턴스만 있는 경우는 지원됩니다.
+- **웹 역할의 단일 인스턴스만 지원할 수 있음**: 배포 환경에서 웹 역할의 인스턴스를 여러 개 포함할 수 없습니다. 하지만 각각의 웹 역할에 하나의 인스턴스만 있는 경우는 지원됩니다.
 
-- **원격 데스크톱 연결 사용** :이 요구 사항은 웹 배포 사용자와 암호를 사용 하 여 가상 컴퓨터에 연결 하 여 인터넷 정보 서비스 (IIS)를 실행 하는 서버에 변경 내용을 배포 하는 데 사용 됩니다. 또한 가상 머신에 연결하고 이 가상 머신에 IIS에 대해 신뢰할 수 있는 인증서를 추가해야 할 수 있습니다. (이 인증서는 웹 배포에서 사용하는 IIS 원격 연결의 보안을 유지합니다.)
+- **원격 데스크톱 연결 사용**:이 요구 사항은 웹 배포 사용자와 암호를 사용 하 여 가상 컴퓨터에 연결 하 여 인터넷 정보 서비스 (IIS)를 실행 하는 서버에 변경 내용을 배포 하는 데 사용 됩니다. 또한 가상 머신에 연결하고 이 가상 머신에 IIS에 대해 신뢰할 수 있는 인증서를 추가해야 할 수 있습니다. (이 인증서는 웹 배포에서 사용하는 IIS 원격 연결의 보안을 유지합니다.)
 
 다음 절차에서는 **Azure 응용 프로그램 게시** 마법사를 사용한다고 가정합니다.
 

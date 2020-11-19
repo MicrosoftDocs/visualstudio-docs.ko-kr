@@ -1,6 +1,7 @@
 ---
 title: SupportsLanguageDropDown 요소(Visual Studio 템플릿)
 titleSuffix: ''
+description: SupportsLanguageDropDown 요소 및 웹 항목 템플릿이 여러 언어에 대해 동일한 지 여부 및 언어 옵션을 사용할 수 있는지 여부를 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ef6cb4f96bf1b31566fef8b714ed30c270ad754
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036849"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901728"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 요소(Visual Studio 템플릿)
 
@@ -68,7 +69,7 @@ ms.locfileid: "90036849"
 
  이 요소의 값을로 설정 하면 `true` 모든 프로그래밍 언어에 대해 항목 템플릿이 동일 하 고 **새 항목 추가** 대화 상자에서 **언어** 옵션을 사용할 수 있습니다. 이 옵션을 사용 하면 템플릿에서 만들려는 새 항목의 프로그래밍 언어를 선택할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
  다음 예에서는 **언어** 드롭다운 옵션을 표시 하도록를 지정 합니다.
 

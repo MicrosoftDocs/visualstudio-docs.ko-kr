@@ -3,18 +3,17 @@ title: Azure 클라우드 서비스 또는 가상 머신 디버그
 description: Visual Studio에서 클라우드 서비스 또는 Virtual Machine 디버깅
 author: mikejo5000
 manager: jillfra
-ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398698"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902561"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 

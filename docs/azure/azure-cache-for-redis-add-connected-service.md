@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ad233d51e271dfbacb80b7f5f2792d546a8a3e0a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398620"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903066"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Visual Studio 연결된 서비스를 사용 하 여 Redis 용 Azure Cache를 추가 합니다.
 
