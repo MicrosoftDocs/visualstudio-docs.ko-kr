@@ -104,6 +104,12 @@
               href: vs-concierge-chat.md
             - name: 기술 지원
               href: vs-tech-support.md
+            - name: 개발자 커뮤니티
+              href: vs-developer-community.md
+            - name: Microsoft Q&A
+              href: vs-microsoft-qa.md
+            - name: Microsoft 기술 커뮤니티
+              href: vs-microsoft-tech-community.md
 - name: 소프트웨어 및 키
   items:
     - name: 소프트웨어 다운로드
