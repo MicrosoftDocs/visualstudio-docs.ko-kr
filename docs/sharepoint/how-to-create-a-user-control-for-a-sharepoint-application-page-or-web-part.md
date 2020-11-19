@@ -1,6 +1,8 @@
 ---
 title: SharePoint 응용 프로그램 페이지 또는 웹 파트에 대 한 사용자 정의 컨트롤 만들기
 titleSuffix: ''
+description: SharePoint 솔루션에 대 한 사용자 지정 기능을 제공 하 고 웹 파트 또는 응용 프로그램 페이지에서 해당 기능을 다시 사용 하는 사용자 지정 사용자 정의 컨트롤을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9c8a99562d937d7b10c3539888c2dd62eb1d1da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584102"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903678"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>방법: SharePoint 애플리케이션 페이지 또는 웹 파트용 사용자 정의 컨트롤 만들기
   SharePoint 솔루션에 대한 사용자 지정 기능을 제공하는 사용자 지정 사용자 정의 컨트롤을 만들 수 있으며, 프로젝트 내에서 해당 기능을 다시 사용할 수 있습니다. 웹 파트 또는 애플리케이션 페이지에 사용자 정의 컨트롤을 포함하고, 다른 ASP.NET 컨트롤과 SharePoint 컨트롤을 추가하고, 컨트롤에 대한 속성과 메서드를 정의할 수 있습니다. 사용자 정의 컨트롤에 대 한 자세한 내용은 [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) 및 [SharePoint에서 사용자 정의 컨트롤 및 서버 컨트롤](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)만들기를 참조 하세요.
@@ -30,9 +32,9 @@ ms.locfileid: "91584102"
 
      [SharePoint 프로젝트 및 프로젝트 항목 템플릿을](../sharepoint/sharepoint-project-and-project-item-templates.md)참조 하세요.
 
-2. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
+2. **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다.
 
-3. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+3. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
      **새 항목 추가** 대화 상자가 열립니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "91584102"
 
      Visual Studio는 프로젝트에 여러 폴더와 파일을 추가 합니다. 이러한 파일에 대 한 자세한 내용은 [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)를 참조 하세요.
 
-     기본적으로 사용자 정의 컨트롤 파일은 Visual Web Developer 디자이너의 **소스** 뷰에 표시 됩니다. 이 뷰에서 컨트롤의 XML 태그를 편집할 수 있습니다. **도구 상자**에서 컨트롤을 끌어 시각적으로 컨트롤을 디자인 하려면 **디자인** 뷰로 전환할 수 있습니다. [디자인 뷰, 웹 페이지 디자이너를](/previous-versions/aspnet/ms178149\(v\=vs.100\))참조 하세요.
+     기본적으로 사용자 정의 컨트롤 파일은 Visual Web Developer 디자이너의 **소스** 뷰에 표시 됩니다. 이 뷰에서 컨트롤의 XML 태그를 편집할 수 있습니다. **도구 상자** 에서 컨트롤을 끌어 시각적으로 컨트롤을 디자인 하려면 **디자인** 뷰로 전환할 수 있습니다. [디자인 뷰, 웹 페이지 디자이너를](/previous-versions/aspnet/ms178149\(v\=vs.100\))참조 하세요.
 
 7. 컨트롤에서 발생하는 이벤트를 처리하려면 사용자 정의 컨트롤의 코드 파일에 코드를 추가합니다.
 

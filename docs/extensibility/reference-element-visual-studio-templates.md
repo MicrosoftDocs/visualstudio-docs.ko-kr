@@ -1,5 +1,7 @@
 ---
 title: Reference 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 참조 요소 및 프로젝트에 항목이 추가 될 때 추가할 어셈블리 참조를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701617"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903769"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference 요소 (Visual Studio 템플릿)
 항목이 프로젝트에 추가될 때 추가할 어셈블리 참조를 지정합니다.
@@ -59,7 +61,7 @@ ms.locfileid: "80701617"
 
  `Reference`및 `References` 요소는 특성 값이 인 *.vstemplate* 파일에만 사용할 수 있습니다 `Type` `Item` .
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `TemplateContent` 항목 템플릿의 요소를 보여 줍니다. 이 XML은 *System.dll* 및 *System.Data.dll* 어셈블리에 대 한 참조를 추가 합니다.
 
 ```xml

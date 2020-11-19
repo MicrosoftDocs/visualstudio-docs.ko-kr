@@ -1,6 +1,8 @@
 ---
 title: SharePoint 솔루션을 원격으로 배포, 게시, & 업그레이드
 titleSuffix: ''
+description: 원격 사이트 또는 로컬 SharePoint 사이트에서 샌드 박싱된 SharePoint 솔루션을 배포, 게시 및 업그레이드 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585786"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903574"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드
   로컬 시스템에 SharePoint 솔루션을 배포 하는 것 외에도 샌드박스가 적용 된 SharePoint 솔루션을 원격 사이트 또는 로컬 SharePoint 사이트에 게시할 수 있습니다. 원격 게시 프로세스는 .wsp 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 솔루션을 활성화할 수 있도록 합니다 *.* 변경한 후 원격 SharePoint 솔루션 설치를 업그레이드할 수도 있습니다.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>샌드박스 SharePoint 솔루션을 원격 SharePoint 서버에 게시 하려면
 
-1. **솔루션 탐색기**에서 게시 하려는 샌드박스가 적용 된 SharePoint 프로젝트에 대 한 바로 가기 메뉴를 열고 **게시**를 선택 합니다.
+1. **솔루션 탐색기** 에서 게시 하려는 샌드박스가 적용 된 SharePoint 프로젝트에 대 한 바로 가기 메뉴를 열고 **게시** 를 선택 합니다.
 
 2. **게시** 대화 상자에서 **SharePoint 사이트에 게시** 옵션 단추를 선택한 다음 온라인 게시 사이트의 URL (예:)을 입력 `https://mytestsite.sharepoint.microsoftonline.com` 합니다.
 
@@ -49,13 +51,13 @@ ms.locfileid: "91585786"
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>원격 SharePoint 서버에서 샌드박스 SharePoint 솔루션을 업그레이드 하려면
  샌드 박싱된 SharePoint 솔루션이 원격 서버에 이미 게시 된 경우에서 응용 프로그램을 변경한 후 다음 프로세스를 통해 업그레이드할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-1. 에서 SharePoint 패키지의 이름을 바꿉니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 이렇게 하려면에서 패키지를 **솔루션 탐색기** 엽니다. **패키지 탐색기**에 나타납니다.
+1. 에서 SharePoint 패키지의 이름을 바꿉니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 이렇게 하려면에서 패키지를 **솔루션 탐색기** 엽니다. **패키지 탐색기** 에 나타납니다.
 
-2. **패키지 탐색기**의 **이름** 상자에서 패키지 이름을 고유한 이름으로 변경 합니다.
+2. **패키지 탐색기** 의 **이름** 상자에서 패키지 이름을 고유한 이름으로 변경 합니다.
 
 3. 프로젝트를 저장합니다.
 
-4. **솔루션 탐색기**에서 프로젝트에 대 한 바로 가기 메뉴를 열고 **게시**를 선택 합니다.
+4. **솔루션 탐색기** 에서 프로젝트에 대 한 바로 가기 메뉴를 열고 **게시** 를 선택 합니다.
 
 5. **게시** 대화 상자에서 **SharePoint 사이트에 게시** 옵션 단추를 선택한 후 솔루션이 저장 된 원격 서버의 URL이 없는 경우 해당 URL을 입력 합니다.
 

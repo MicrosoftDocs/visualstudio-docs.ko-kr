@@ -1,5 +1,7 @@
 ---
 title: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기
+description: 개발 컴퓨터에서 명령줄 MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 (.wsp)를 빌드, 정리 및 유효성 검사 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017019"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903730"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기
   개발 컴퓨터에서 명령줄 MSBuild 작업을 사용 하 여 SharePoint 패키지 (*.wsp*)를 빌드, 정리 및 유효성 검사할 수 있습니다. 이러한 명령을 사용 하 여 빌드 컴퓨터에서 Team Foundation Server를 사용 하 여 빌드 프로세스를 자동화할 수도 있습니다.
@@ -26,7 +28,7 @@ ms.locfileid: "86017019"
 
 #### <a name="to-build-a-sharepoint-package"></a>SharePoint 패키지를 빌드하려면
 
-1. Windows **시작** 메뉴에서 **모든 프로그램**  >  **보조 프로그램**  >  **명령 프롬프트**를 선택 합니다.
+1. Windows **시작** 메뉴에서 **모든 프로그램**  >  **보조 프로그램**  >  **명령 프롬프트** 를 선택 합니다.
 
 2. SharePoint 프로젝트가 있는 디렉터리로 변경 합니다.
 
@@ -105,7 +107,7 @@ ms.locfileid: "86017019"
     msbuild /property:WarningLevel = 2
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)
 - [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

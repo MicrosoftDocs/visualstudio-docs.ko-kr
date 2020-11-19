@@ -1,5 +1,7 @@
 ---
 title: TargetPlatformName 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: TargetPlatformName 요소 및 프로젝트 템플릿이 대상으로 하는 플랫폼을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b8f81ad86c98ab31e8f5d5dddf0efa1b2c89d85
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699273"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903990"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 요소(Visual Studio 템플릿)
 프로젝트 템플릿의 대상 플랫폼을 지정합니다. 이 요소는 프로젝트 템플릿을 사용하여 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 앱을 만들도록 지정하는 데 사용됩니다.
@@ -49,7 +51,7 @@ ms.locfileid: "80699273"
  텍스트 값은 필수입니다.
 
 ## <a name="remarks"></a>설명
- 텍스트는 **Windows**여야 합니다.
+ 텍스트는 **Windows** 여야 합니다.
 
 ## <a name="example"></a>예
  이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 이상을 대상으로 하도록 지정합니다.
@@ -64,6 +66,6 @@ ms.locfileid: "80699273"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

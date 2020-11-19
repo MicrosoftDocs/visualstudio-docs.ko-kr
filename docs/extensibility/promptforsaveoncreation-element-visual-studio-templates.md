@@ -1,6 +1,8 @@
 ---
 title: PromptForSaveOnCreation 요소(Visual Studio 템플릿)
 titleSuffix: ''
+description: PromptForSaveOnCreation 요소 및 새 프로젝트 대화 상자를 통해 프로젝트 저장 위치를 묻는 메시지를 사용자에 게 표시할지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +17,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ffc610cf701bdf5be3a0b6116455ac413fbd6dcd
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: e6897eb86f531ca86d0e935836683b8a0b244645
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743132"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903795"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소 (Visual Studio 템플릿)
 

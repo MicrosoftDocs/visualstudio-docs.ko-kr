@@ -1,5 +1,7 @@
 ---
 title: SupportsMasterPage 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: SupportsMasterPage 요소와 새 항목 추가 대화 상자에서 마스터 페이지 선택 확인란이 설정 되어 있는지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699456"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903834"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 요소(Visual Studio 템플릿)
 **새 항목 추가** 대화 상자에서 **마스터 페이지 선택** 확인란을 사용할지 여부를 지정 합니다.
@@ -83,6 +85,6 @@ ms.locfileid: "80699456"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

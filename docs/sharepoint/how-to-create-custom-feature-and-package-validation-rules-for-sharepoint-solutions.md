@@ -1,6 +1,8 @@
 ---
 title: SharePoint 솔루션에 대 한 기능 및 패키지 유효성 검사 만들기
 titleSuffix: ''
+description: Visual Studio에서 생성 된 솔루션 패키지를 확인 하거나 전체 기능을 확인 하는 사용자 지정 유효성 검사 규칙을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,16 +16,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8f76abeee6ace851025a29ce6d85b894bf479dfa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585825"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903691"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>SharePoint 솔루션에 대 한 기능 및 패키지 유효성 검사 만들기
 
-  Visual Studio에서 생성 된 솔루션 패키지를 확인 하는 사용자 지정 유효성 검사 규칙을 만들 수 있습니다. **PackagingExplorer**의 패키지 또는 기능에 대 한 상황에 맞는 메뉴에서 **유효성** 검사를 선택 하 여 전체 기능 또는 패키지에 대 한 전체 유효성 검사를 수행할 수 있습니다. 프로젝트에 새 SharePoint 프로젝트 항목 또는 기능을 추가 하 여 패키지나 기능이 유효한 상태 인지 확인 하는 경우 부분 유효성 검사가 수행 됩니다.
+  Visual Studio에서 생성 된 솔루션 패키지를 확인 하는 사용자 지정 유효성 검사 규칙을 만들 수 있습니다. **PackagingExplorer** 의 패키지 또는 기능에 대 한 상황에 맞는 메뉴에서 **유효성** 검사를 선택 하 여 전체 기능 또는 패키지에 대 한 전체 유효성 검사를 수행할 수 있습니다. 프로젝트에 새 SharePoint 프로젝트 항목 또는 기능을 추가 하 여 패키지나 기능이 유효한 상태 인지 확인 하는 경우 부분 유효성 검사가 수행 됩니다.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>사용자 지정 패키지 유효성 검사 규칙을 만들려면
 
@@ -43,7 +45,7 @@ ms.locfileid: "91585825"
 
 4. 를 <xref:System.ComponentModel.Composition.ExportAttribute> 클래스에 추가 합니다. 이 특성을 사용 하면 Visual Studio에서 유효성 검사 규칙을 검색 하 고 로드할 수 있습니다. <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>또는 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 형식을 특성 생성자에 전달 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 사용자 지정 기능 유효성 검사 규칙을 만드는 방법을 보여 줍니다.
 
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]

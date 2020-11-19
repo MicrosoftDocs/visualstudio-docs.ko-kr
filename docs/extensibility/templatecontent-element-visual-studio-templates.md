@@ -1,5 +1,7 @@
 ---
 title: TemplateContent 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: TemplateContent 요소 및 템플릿 콘텐츠를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53cd7d4b5302652fc371f27b76d7e789a6942640
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699229"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903951"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 요소(Visual Studio 템플릿)
 
@@ -44,7 +46,7 @@ ms.locfileid: "80699229"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|템플릿에서 프로젝트를 만들 때 솔루션을 빌드 할지 여부를 지정 합니다.|
 
@@ -94,7 +96,7 @@ ms.locfileid: "80699229"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

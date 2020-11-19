@@ -1,6 +1,8 @@
 ---
 title: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정
 titleSuffix: ''
+description: Visual Studio가 명령 프롬프트에서 MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 파일 (.wsp)을 만드는 방법을 사용자 지정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585812"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903652"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정
   명령 프롬프트에서 MSBuild 대상을 사용 하 여 Visual Studio에서 SharePoint 패키지 파일 (*.wsp*)을 만드는 방법을 사용자 지정할 수 있습니다. 예를 들어 MSBuild 속성을 사용자 지정하여 패키징 중간 디렉터리 및 열거되는 파일을 지정하는 MSBuild 항목 그룹을 변경할 수 있습니다.
@@ -40,11 +42,11 @@ ms.locfileid: "91585812"
 
     이 예제에서는 이 대상의 패키징 전에 메시지를 표시합니다.
 
-2. 파일의 이름을 **Customlayout. groove**로 지정한 다음 sharepoint 프로젝트의 폴더에 저장 합니다.
+2. 파일의 이름을 **Customlayout. groove** 로 지정한 다음 sharepoint 프로젝트의 폴더에 저장 합니다.
 
-3. 프로젝트를 열고 바로 가기 메뉴를 연 다음 **프로젝트 언로드**를 선택 합니다.
+3. 프로젝트를 열고 바로 가기 메뉴를 연 다음 **프로젝트 언로드** 를 선택 합니다.
 
-4. **솔루션 탐색기**에서 프로젝트에 대 한 바로 가기 메뉴를 연 다음 * \<ProjectName> .vbproj* **편집** 또는 * \<ProjectName> .csproj* **편집** 을 선택 합니다.
+4. **솔루션 탐색기** 에서 프로젝트에 대 한 바로 가기 메뉴를 연 다음 *\<ProjectName> .vbproj* **편집** 또는 *\<ProjectName> .csproj* **편집** 을 선택 합니다.
 
 5. 프로젝트 파일의 끝 부분에 있는 `Import` 행 뒤에 다음 줄을 추가합니다.
 
@@ -54,13 +56,13 @@ ms.locfileid: "91585812"
 
 6. 프로젝트 파일을 저장한 후 닫습니다.
 
-7. **솔루션 탐색기**에서 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **프로젝트 다시 로드**를 선택 합니다.
+7. **솔루션 탐색기** 에서 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **프로젝트 다시 로드** 를 선택 합니다.
 
    프로젝트를 게시할 때 패키징이 시작되기 전에 메시지가 출력에 나타납니다.
 
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout 대상을 사용자 지정 하려면
 
-1. 메뉴 모음에서 **파일**파일 열기를 선택  >  **Open**  >  **File**합니다.
+1. 메뉴 모음에서 **파일** 파일 열기를 선택  >  **Open**  >  **File** 합니다.
 
 2. **파일 열기** 대화 상자에서 프로젝트 폴더로 이동 하 고 customlayout. 대상 파일을 선택한 다음 **열기** 단추를 선택 합니다.
 

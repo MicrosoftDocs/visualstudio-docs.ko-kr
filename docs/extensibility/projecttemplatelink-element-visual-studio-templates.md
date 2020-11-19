@@ -1,5 +1,7 @@
 ---
 title: ProjectTemplateLink 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 요소에 대해 알아보고 <element> 다중 프로젝트 템플릿에서 한 프로젝트의 .vstemplate 파일에 대 한 경로를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87b33d9b4b3863b89ecd06c3ea959c6e35ec7c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011985"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903847"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 요소(Visual Studio 템플릿)
 다중 프로젝트 템플릿에서 한 프로젝트의 *.vstemplate* 파일에 대 한 경로를 지정 합니다.
@@ -49,14 +51,14 @@ ms.locfileid: "90011985"
 |attribute|설명|
 |---------------|-----------------|
 |`ProjectName`|선택적 특성입니다.<br /><br /> 다중 프로젝트 템플릿에 있는 개별 프로젝트 각각의 이름을 지정합니다. **새 프로젝트** 대화 상자는 개별 프로젝트에 이름을 할당할 수 없습니다.|
-|`CopyParameters`|각 연결된 템플릿에 복사할 기본 그룹 템플릿에서 모든 변수를 활성화할수 있습니다.<br /><br /> 연결된 템플릿의 매개 변수에는 `"$ext_*$"` 접두사가 있습니다. 예를 들어 부모 그룹 템플릿에서 매개 변수에 `$projectname$` **ExampleProject1**값이 있는 경우 연결 된 템플릿이 실행 될 때 해당 매개 변수는 `$ext_projectname$` `$projectname$` 부모 그룹 템플릿의 매개 변수 복사본 인 매개 변수를 가져옵니다.<br /><br /> 그에 따라 연결된 템플릿을 통해 부모 그룹 템플릿에서만 편리하게 만들 수 있는 일부 공통 매개 변수를 공유할 수 있습니다.<br /><br /> 이 특성은 선택적이며 포함되지 않은 경우 기본값이 `false`로 자동 설정됩니다.<br /><br /> 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 제품 버전을 참조 하려면 [VISUAL STUDIO 2013 SDK 업데이트 2에서 제공 되는 참조 어셈블리](/previous-versions/dn632168(v=vs.120))를 참조 하세요.|
+|`CopyParameters`|각 연결된 템플릿에 복사할 기본 그룹 템플릿에서 모든 변수를 활성화할수 있습니다.<br /><br /> 연결된 템플릿의 매개 변수에는 `"$ext_*$"` 접두사가 있습니다. 예를 들어 부모 그룹 템플릿에서 매개 변수에 `$projectname$` **ExampleProject1** 값이 있는 경우 연결 된 템플릿이 실행 될 때 해당 매개 변수는 `$ext_projectname$` `$projectname$` 부모 그룹 템플릿의 매개 변수 복사본 인 매개 변수를 가져옵니다.<br /><br /> 그에 따라 연결된 템플릿을 통해 부모 그룹 템플릿에서만 편리하게 만들 수 있는 일부 공통 매개 변수를 공유할 수 있습니다.<br /><br /> 이 특성은 선택적이며 포함되지 않은 경우 기본값이 `false`로 자동 설정됩니다.<br /><br /> 이 특성은 Visual Studio 2013 업데이트 2에서 도입되었습니다. 올바른 제품 버전을 참조 하려면 [VISUAL STUDIO 2013 SDK 업데이트 2에서 제공 되는 참조 어셈블리](/previous-versions/dn632168(v=vs.120))를 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|다중 프로젝트 템플릿의 구성과 내용을 지정합니다.|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.|

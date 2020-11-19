@@ -1,5 +1,7 @@
 ---
 title: '방법: SharePoint 프로젝트 항목 형식 정의 | Microsoft Docs'
+description: 사용자 지정 SharePoint 프로젝트 항목을 만들려는 경우 프로젝트 항목 형식을 정의 하는 방법을 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016853"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903613"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>방법: SharePoint 프로젝트 항목 형식 정의
   사용자 지정 SharePoint 프로젝트 항목을 만들려는 경우 프로젝트 항목 형식을 정의 합니다. 자세한 내용은 [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)를 참조 하세요.
@@ -40,9 +42,9 @@ ms.locfileid: "86016853"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. 이 특성을 사용 하면 Visual Studio에서 구현을 검색 하 고 로드할 수 있습니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> . <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>형식을 특성 생성자에 전달 합니다.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 프로젝트 항목 형식 정의에서이 특성은 새 프로젝트 항목의 문자열 식별자를 지정 합니다. *회사 이름*형식을 사용 하는 것이 좋습니다. 모든 프로젝트 항목의 이름이 고유한 지 확인 하는 데 도움이 되는 *기능 이름* 입니다.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. 프로젝트 항목 형식 정의에서이 특성은 새 프로젝트 항목의 문자열 식별자를 지정 합니다. *회사 이름* 형식을 사용 하는 것이 좋습니다. 모든 프로젝트 항목의 이름이 고유한 지 확인 하는 데 도움이 되는 *기능 이름* 입니다.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 이 특성은 **솔루션 탐색기**에서이 프로젝트 항목에 대해 표시할 아이콘을 지정 합니다. 이 특성은 선택 사항입니다. 클래스에 적용 하지 않는 경우 Visual Studio에서 프로젝트 항목의 기본 아이콘을 표시 합니다. 이 특성을 설정 하는 경우 어셈블리에 포함 된 아이콘 또는 비트맵의 정규화 된 이름을 전달 합니다.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. 이 특성은 **솔루션 탐색기** 에서이 프로젝트 항목에 대해 표시할 아이콘을 지정 합니다. 이 특성은 선택 사항입니다. 클래스에 적용 하지 않는 경우 Visual Studio에서 프로젝트 항목의 기본 아이콘을 표시 합니다. 이 특성을 설정 하는 경우 어셈블리에 포함 된 아이콘 또는 비트맵의 정규화 된 이름을 전달 합니다.
 
 5. 메서드 구현에서 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> *projectItemTypeDefinition* 매개 변수의 멤버를 사용 하 여 프로젝트 항목 형식의 동작을 정의 합니다. 이 매개 변수는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> 및 인터페이스에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체입니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> . 프로젝트 항목 형식의 특정 인스턴스에 액세스 하려면 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 및와 같은 이벤트를 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> 합니다.
 
@@ -66,7 +68,7 @@ ms.locfileid: "86016853"
 
  프로젝트 항목을 배포 하려면 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 어셈블리, 템플릿 및 프로젝트 항목과 함께 배포할 다른 모든 파일에 대 한 확장 (VSIX) 패키지를 만듭니다. 자세한 내용은 [Visual Studio에서 SharePoint 도구에 대 한 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

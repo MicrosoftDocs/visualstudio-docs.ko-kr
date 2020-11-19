@@ -1,5 +1,7 @@
 ---
 title: ProjectType 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: ProjectType 요소 및 프로젝트 템플릿이 새 프로젝트 또는 새 항목 추가 대화 상자에 표시 되도록 분류 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701802"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903821"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자의 지정 된 그룹 아래에 나타나도록 프로젝트 템플릿을 분류 합니다.
@@ -68,7 +70,7 @@ ms.locfileid: "80701802"
 
  템플릿 하위 유형은 [Projectsubtype 형식](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소를 사용 하 여 지정할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

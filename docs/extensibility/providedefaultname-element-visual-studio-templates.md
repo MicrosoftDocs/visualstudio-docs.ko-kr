@@ -1,5 +1,7 @@
 ---
 title: ProvideDefaultName 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: ProvideDefaultName 요소 및 Visual Studio가 새 항목 추가 또는 새 프로젝트 대화 상자에서 기본 Visual Studio 이름을 생성 하는지 여부를 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701712"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903808"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 요소 (Visual Studio 템플릿)
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]프로젝트 시스템이 **새 항목 추가** 또는 **새 프로젝트** 대화 상자에서 템플릿의 기본 이름을 생성할지 여부를 지정 합니다.
@@ -59,7 +61,7 @@ ms.locfileid: "80701712"
 
  [Defaultname](../extensibility/defaultname-element-visual-studio-templates.md) 요소를 사용 하 여 **새 항목 추가** 및 **새 프로젝트** 대화 상자에서 프로젝트 또는 항목의 기본 이름을 지정 합니다. `ProvideDefaultName`요소의 값이 인 경우 `true` 프로젝트의 요소를 생략 하면 `DefaultName` 대화 상자에 템플릿 이름, 즉 [name](../extensibility/name-element-visual-studio-templates.md) 요소의 값이 채워집니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 요소를 `ProvideDefaultName` 로 설정 합니다 `false` .
 
 ```

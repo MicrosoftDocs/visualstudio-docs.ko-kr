@@ -1,6 +1,8 @@
 ---
 title: 로컬 SharePoint 사이트에 SharePoint 솔루션 게시 & 배포
 titleSuffix: ''
+description: 개발 컴퓨터의 로컬 SharePoint 서버에 SharePoint 솔루션을 배포 또는 게시 하는 방법을 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,27 +16,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585799"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903587"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>방법: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
   개발 컴퓨터의 로컬 SharePoint 서버에 SharePoint 솔루션을 배포 하거나 게시할 수 있습니다. 배포 프로세스는 *.wsp* 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 기능을 활성화 합니다. 게시 프로세스는 *.wsp* 파일만 SharePoint 서버에 복사 하 고 설치 합니다. SharePoint에서 사용 하도록 설정 하려면 수동으로 활성화 해야 합니다.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>로컬 SharePoint 서버에 SharePoint 솔루션을 배포 하려면
 
-1. **솔루션 탐색기**에서 배포 하려는 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 배포 하려는 프로젝트를 선택 합니다.
 
-2. 메뉴 모음에서 **빌드**, **솔루션 배포**를 선택 합니다.
+2. 메뉴 모음에서 **빌드**, **솔루션 배포** 를 선택 합니다.
 
      *.Wsp* 파일은 로컬 SharePoint 서버에 생성 및 설치 됩니다. 또한 기능이 활성화 됩니다.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>SharePoint 솔루션을 로컬 SharePoint 서버에 게시 하려면
 
-1. **솔루션 탐색기**에서 게시 하려는 SharePoint 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **게시**를 선택 합니다.
+1. **솔루션 탐색기** 에서 게시 하려는 SharePoint 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **게시** 를 선택 합니다.
 
 2. **게시** 대화 상자에서 **파일 시스템에 게시** 옵션 단추를 선택 합니다.
 

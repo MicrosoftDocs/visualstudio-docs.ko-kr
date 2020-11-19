@@ -1,5 +1,7 @@
 ---
 title: 솔루션 폴더 요소 (Visual Studio 템플릿) | Microsoft Docs
+description: 솔루션에서 프로젝트를 여러 프로젝트 템플릿에 그룹화 하는 방법 및 폴더 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be6cb773e2d822efe01f87b1102293898005cbc8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699993"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903782"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 요소(Visual Studio 템플릿)
 다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.
@@ -41,7 +43,7 @@ ms.locfileid: "80699993"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 솔루션 폴더의 기본 이름입니다.|
 
@@ -97,7 +99,7 @@ ms.locfileid: "80699993"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)
