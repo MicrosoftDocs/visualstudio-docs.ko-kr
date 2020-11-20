@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트의 데이터 유효성 검사
+description: 데이터 집합에서 데이터의 유효성을 검사 하는 방법을 알아봅니다. 데이터 유효성 검사에는 데이터 개체에 입력 된 값이 데이터 집합의 스키마 내에서 제약 조건을 따르는지 확인 하는 작업이 포함 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281086"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998306"
 ---
 # <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
 데이터 유효성 검사는 데이터 개체에 입력 된 값이 데이터 집합의 스키마 내에서 제약 조건을 준수 하는지 확인 하는 프로세스입니다. 또한 유효성 검사 프로세스는 이러한 값이 응용 프로그램에 대해 설정 된 규칙을 따라 수행 되는지 확인 합니다. 기본 데이터베이스에 업데이트를 보내기 전에 데이터의 유효성을 검사 하는 것이 좋습니다. 이렇게 하면 응용 프로그램과 데이터베이스 간의 잠재적 왕복 수 뿐만 아니라 오류가 줄어듭니다.
@@ -64,7 +66,7 @@ ms.locfileid: "85281086"
 
 ## <a name="data-update-events"></a>데이터 업데이트 이벤트
 
-|이벤트|설명|
+|이벤트|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|열의 값이 변경 되 고 있습니다. 이 이벤트는 제안 된 새 값과 함께 행과 열을 사용자에 게 전달 합니다.|
 |<xref:System.Data.DataTable.ColumnChanged>|열의 값이 변경 되었습니다. 이벤트는 제안 된 값과 함께 행과 열을 사용자에 게 전달 합니다.|
@@ -97,7 +99,7 @@ ms.locfileid: "85281086"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>행이 변경 될 때 데이터의 유효성을 검사 하려면 (Visual Basic)
 
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
+1. **데이터 세트 디자이너** 에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
 
 2. 유효성을 검사할 테이블의 제목 표시줄을 두 번 클릭 합니다. 이 작업을 수행 <xref:System.Data.DataTable.RowChanging> 하면 <xref:System.Data.DataTable> 데이터 집합의 partial 클래스 파일에에 대 한 이벤트 처리기가 자동으로 만들어집니다.
 
@@ -108,7 +110,7 @@ ms.locfileid: "85281086"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>행이 변경 될 때 데이터의 유효성을 검사 하려면 (c #)
 
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
+1. **데이터 세트 디자이너** 에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
 
 2. 유효성을 검사할 테이블의 제목 표시줄을 두 번 클릭 합니다. 이 작업은에 대 한 부분 클래스 파일을 만듭니다 <xref:System.Data.DataTable> .
 
@@ -209,6 +211,6 @@ ms.locfileid: "85281086"
 
 ## <a name="see-also"></a>추가 정보
 
-- [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [방법: DataGridView 컨트롤 Windows Forms의 데이터 유효성 검사](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
 - [방법: Windows Forms ErrorProvider 구성 요소를 사용 하 여 폼 유효성 검사에 대 한 오류 아이콘 표시](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

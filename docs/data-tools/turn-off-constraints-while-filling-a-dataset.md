@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트를 채우는 동안 제약 조건 해제
+description: 데이터 집합을 채우는 동안 제약 조건을 해제 하는 방법을 알아봅니다. 프로그래밍 방식으로 또는 데이터 세트 디자이너를 사용 하 여 업데이트 제약 조건을 일시 중단 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4d1e17d2f6a0159a9c0187d5e1a3d16216d0ba
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281268"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998319"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 
@@ -45,7 +47,7 @@ ms.locfileid: "85281268"
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>데이터 세트 디자이너를 사용 하 여 업데이트 제약 조건을 일시 중단 하려면
 
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
+1. **데이터 세트 디자이너** 에서 데이터 세트를 엽니다. 자세한 내용은 [연습: 데이터 세트 디자이너에서 데이터 집합 만들기](walkthrough-creating-a-dataset-with-the-dataset-designer.md)를 참조 하세요.
 
 2. **속성** 창에서 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성을 `false`로 설정합니다.
 

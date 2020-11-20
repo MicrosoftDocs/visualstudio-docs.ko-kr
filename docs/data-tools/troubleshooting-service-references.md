@@ -1,5 +1,7 @@
 ---
 title: 서비스 참조 문제 해결
+description: Visual Studio에서 WCF (Windows Communication Foundation) 또는 WCF Data Services 참조를 사용 하 여 작업할 때 발생할 수 있는 일반적인 문제를 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586122"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998072"
 ---
 # <a name="troubleshoot-service-references"></a>서비스 참조 문제 해결
 
@@ -33,7 +35,7 @@ ms.locfileid: "75586122"
 
 이 오류를 해결하려면
 
-1. **솔루션 탐색기**에서 *app.config* 파일을 두 번 클릭 하 여 엽니다.
+1. **솔루션 탐색기** 에서 *app.config* 파일을 두 번 클릭 하 여 엽니다.
 
 2. 속성을 찾아 `MaxReceivedMessageSize` 더 큰 값으로 변경 합니다.
 
@@ -43,7 +45,7 @@ ms.locfileid: "75586122"
 
 이 오류를 해결하려면
 
-- **솔루션 탐색기**에서 WCF 서비스 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **빌드**를 클릭 합니다.
+- **솔루션 탐색기** 에서 WCF 서비스 라이브러리 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **빌드** 를 클릭 합니다.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>원격 데스크톱을 통해 서비스에 액세스 하는 동안 오류 발생
 
@@ -74,17 +76,17 @@ ms.locfileid: "75586122"
 
 이 오류를 해결 하려면 서비스 프로젝트를 수동으로 다시 빌드해야 합니다.
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **옵션** 대화 상자에서 **프로젝트 및 솔루션**을 확장 한 다음 **일반**을 선택 합니다.
+2. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 을 확장 한 다음 **일반** 을 선택 합니다.
 
-3. **고급 빌드 구성 표시** 확인란이 선택 되어 있는지 확인 한 다음 **확인**을 클릭 합니다.
+3. **고급 빌드 구성 표시** 확인란이 선택 되어 있는지 확인 한 다음 **확인** 을 클릭 합니다.
 
 4. WCF 서비스 프로젝트를 로드 합니다.
 
-5. **Configuration Manager** 대화 상자에서 **활성 솔루션 구성을** **디버그**로 설정 합니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
+5. **Configuration Manager** 대화 상자에서 **활성 솔루션 구성을** **디버그** 로 설정 합니다. 자세한 내용은 [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
 
-6. **솔루션 탐색기**에서 WCF 서비스 프로젝트를 선택 합니다.
+6. **솔루션 탐색기** 에서 WCF 서비스 프로젝트를 선택 합니다.
 
 7. **빌드** 메뉴에서 **다시** 빌드를 클릭 하 여 WCF 서비스 프로젝트를 다시 빌드합니다.
 
@@ -94,11 +96,11 @@ ms.locfileid: "75586122"
 
 이 오류를 해결 하려면 RSS 피드를 사용 하지 않도록 설정 합니다.
 
-1. Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션**을 클릭합니다.
+1. Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션** 을 클릭합니다.
 
-2. **콘텐츠** 탭의 **피드** 섹션에서 **설정**을 클릭 합니다.
+2. **콘텐츠** 탭의 **피드** 섹션에서 **설정** 을 클릭 합니다.
 
-3. **피드 설정** 대화 상자에서 **피드 읽기용 보기 설정** 확인란의 선택을 취소 한 다음 **확인**을 클릭 합니다.
+3. **피드 설정** 대화 상자에서 **피드 읽기용 보기 설정** 확인란의 선택을 취소 한 다음 **확인** 을 클릭 합니다.
 
 4. **확인** 을 클릭 하 여 **인터넷 옵션** 대화 상자를 닫습니다.
 

@@ -1,5 +1,6 @@
 ---
 title: 단일 테이블 상속을 사용 하는 LINQ to SQL 클래스
+description: 이 연습에서는 Visual Studio 개체 관계형 디자이너 (O/R 디자이너)에서 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스를 만듭니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036758"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998241"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (O/R 디자이너)
 [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 일반적으로 관계형 시스템에서 구현 되는 단일 테이블 상속을 지원 합니다. 이 연습은 [방법: O/R 디자이너를 사용 하 여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 항목에서 제공 하는 일반 단계를 확장 하 고에서 상속 사용을 보여 주는 몇 가지 실제 데이터를 제공 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 합니다.
@@ -43,12 +44,12 @@ ms.locfileid: "90036758"
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>상속을 보여 주기 위한 기본 테이블을 만들려면
 
-1. **서버 탐색기** 또는 **데이터베이스 탐색기**에서 **테이블** 노드를 마우스 오른쪽 단추로 클릭 하 고 **새 테이블 추가**를 클릭 합니다.
+1. **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **테이블** 노드를 마우스 오른쪽 단추로 클릭 하 고 **새 테이블 추가** 를 클릭 합니다.
 
     > [!NOTE]
     > Northwind 데이터베이스 또는 테이블을 추가할 수 있는 기타 데이터베이스를 사용할 수 있습니다.
 
-2. **테이블 디자이너**에서 테이블에 다음 열을 추가 합니다.
+2. **테이블 디자이너** 에서 테이블에 다음 열을 추가 합니다.
 
     |열 이름|데이터 형식|Null 허용|
     |-----------------|---------------|-----------------|
@@ -60,18 +61,18 @@ ms.locfileid: "90036758"
 
 3. ID 열을 기본 키로 설정합니다.
 
-4. 테이블을 저장하고 이름을 **Person**으로 지정합니다.
+4. 테이블을 저장하고 이름을 **Person** 으로 지정합니다.
 
 ## <a name="add-data-to-the-table"></a>테이블에 데이터 추가
 속성이 올바르게 구성되었는지 확인하기 위해서는 단일 테이블 상속에서 각 클래스에 대한 몇 가지 데이터가 테이블에 필요합니다.
 
 ### <a name="to-add-data-to-the-table"></a>테이블에 데이터를 추가하려면
 
-1. 데이터 뷰에서 테이블을 엽니다. **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **Person** 테이블을 마우스 오른쪽 단추로 클릭 하 고 **테이블 데이터 표시**를 클릭 합니다.
+1. 데이터 뷰에서 테이블을 엽니다. **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **Person** 테이블을 마우스 오른쪽 단추로 클릭 하 고 **테이블 데이터 표시** 를 클릭 합니다.
 
 2. 다음 데이터를 테이블로 복사합니다. ( **결과** 창에서 전체 행을 선택 하 여 복사 하 고 테이블에 붙여넣을 수 있습니다.)
 
-    |**ID**|**유형**|**FirstName**|**LastName**|**관리자**|
+    |**ID**|**형식**|**FirstName**|**LastName**|**관리자**|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -91,52 +92,52 @@ ms.locfileid: "90036758"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>새 Windows Forms 응용 프로그램을 만들려면
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다.
 
-2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
+2. 왼쪽 창에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱** 을 선택 합니다.
 
 3. 가운데 창에서 **Windows Forms 앱** 프로젝트 형식을 선택 합니다.
 
-4. 프로젝트 이름을 **InheritanceWalkthrough**로 지정한 다음 **확인**을 선택 합니다.
+4. 프로젝트 이름을 **InheritanceWalkthrough** 로 지정한 다음 **확인** 을 선택 합니다.
 
-     **InheritanceWalkthrough** 프로젝트가 만들어지고 **솔루션 탐색기**에 추가됩니다.
+     **InheritanceWalkthrough** 프로젝트가 만들어지고 **솔루션 탐색기** 에 추가됩니다.
 
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>프로젝트에 LINQ to SQL 클래스 파일 추가
 
 ### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>프로젝트에 LINQ to SQL 파일을 추가하려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-2. **LINQ to SQL 클래스** 템플릿을 클릭한 다음, **추가**를 클릭합니다.
+2. **LINQ to SQL 클래스** 템플릿을 클릭한 다음, **추가** 를 클릭합니다.
 
      *.Dbml* 파일이 프로젝트에 추가 되 고 **O/R 디자이너가** 열립니다.
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>O/R 디자이너를 사용하여 상속 만들기
-**상속** 개체를 **도구 상자**에서 디자인 화면으로 끌어 와서 상속을 구성합니다.
+**상속** 개체를 **도구 상자** 에서 디자인 화면으로 끌어 와서 상속을 구성합니다.
 
 ### <a name="to-create-the-inheritance"></a>상속을 만들려면
 
-1. **서버 탐색기** 또는 **데이터베이스 탐색기**에서 이전에 만든 **Person** 테이블로 이동 합니다.
+1. **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 이전에 만든 **Person** 테이블로 이동 합니다.
 
 2. **Person** 테이블을 **O/R 디자이너** 디자인 화면으로 끌어 놓습니다.
 
-3. 두 번째 **Person** 테이블을 **O/R 디자이너로** 끌어 오고 이름을 **Employee**로 변경 합니다.
+3. 두 번째 **Person** 테이블을 **O/R 디자이너로** 끌어 오고 이름을 **Employee** 로 변경 합니다.
 
 4. **Person** 개체에서 **Manager** 속성을 삭제합니다.
 
-5. **Employee** 개체에서 **Type**, **ID**, **FirstName** 및 **LastName** 속성을 삭제합니다. 즉, **Manager**를 제외한 모든 속성을 삭제합니다.
+5. **Employee** 개체에서 **Type**, **ID**, **FirstName** 및 **LastName** 속성을 삭제합니다. 즉, **Manager** 를 제외한 모든 속성을 삭제합니다.
 
-6. **도구 상자**의 **개체 관계형 디자이너** 탭에서 **Person** 및 **Employee** 개체 사이에 **상속**을 만듭니다. 이렇게 하려면 **도구 상자**에서 **상속** 항목을 클릭하고 마우스 단추를 놓으세요. 그런 다음, **Employee** 개체를 클릭 하 고 **O/R 디자이너**에서 **Person** 개체를 클릭 합니다. 그러면 상속 선의 화살표가 **Person** 개체를 가리킵니다.
+6. **도구 상자** 의 **개체 관계형 디자이너** 탭에서 **Person** 및 **Employee** 개체 사이에 **상속** 을 만듭니다. 이렇게 하려면 **도구 상자** 에서 **상속** 항목을 클릭하고 마우스 단추를 놓으세요. 그런 다음, **Employee** 개체를 클릭 하 고 **O/R 디자이너** 에서 **Person** 개체를 클릭 합니다. 그러면 상속 선의 화살표가 **Person** 개체를 가리킵니다.
 
 7. 디자인 화면에서 **상속** 선을 클릭합니다.
 
-8. **Discriminator Property** 속성을 **Type**으로 설정합니다.
+8. **Discriminator Property** 속성을 **Type** 으로 설정합니다.
 
-9. **Derived Class Discriminator Value** 속성을 **2**로 설정합니다.
+9. **Derived Class Discriminator Value** 속성을 **2** 로 설정합니다.
 
-10. **Base Class Discriminator Value** 속성을 **1**로 설정합니다.
+10. **Base Class Discriminator Value** 속성을 **1** 로 설정합니다.
 
-11. **Inheritance Default** 속성을 **Person**으로 설정합니다.
+11. **Inheritance Default** 속성을 **Person** 으로 설정합니다.
 
 12. 프로젝트를 빌드합니다.
 
@@ -145,7 +146,7 @@ ms.locfileid: "90036758"
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>LINQ 쿼리를 만들고 폼에 결과를 표시하려면
 
-1. **ListBox**를 **Form1**으로 끌어서 놓습니다.
+1. **ListBox** 를 **Form1** 으로 끌어서 놓습니다.
 
 2. 폼을 두 번 클릭하여 `Form1_Load` 이벤트 처리기를 만듭니다.
 
@@ -179,13 +180,13 @@ ms.locfileid: "90036758"
 
 ### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면
 
-1. **F5**키를 누릅니다.
+1. **F5** 키를 누릅니다.
 
 2. **Type** 열의 값이 2인 레코드만 표시되는지 확인합니다.
 
-3. 폼을 닫아 디버깅을 **디버그** 메뉴에서 **디버깅 중지**를 클릭 합니다.
+3. 폼을 닫아 디버깅을 **디버그** 메뉴에서 **디버깅 중지** 를 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

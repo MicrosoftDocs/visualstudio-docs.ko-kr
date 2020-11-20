@@ -1,6 +1,6 @@
 ---
 title: 적용되지 않은 변경 내용
-description: 경고 - 동작 구성 대화 상자에 적용되지 않은 변경이 있음
+description: 경고-동작 구성 대화 상자에 적용 되지 않은 변경 내용이 있습니다. 이 Visual Studio O/R 디자이너 메시지에 대 한 정보를 봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036732"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998215"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>경고: 동작 구성 대화 상자에 적용되지 않은 변경이 있음
 
@@ -25,10 +25,10 @@ ms.locfileid: "90036732"
 
 ## <a name="change-options"></a>변경 옵션
 
-- 변경 내용을 적용 하 고 계속 하려면 **예**를 클릭 합니다. 변경 내용은 선택한 **클래스** 및 **동작**에 적용 됩니다.
+- 변경 내용을 적용 하 고 계속 하려면 **예** 를 클릭 합니다. 변경 내용은 선택한 **클래스** 및 **동작** 에 적용 됩니다.
 
-- 이전 변경 내용을 취소 하 고 계속 하려면 **아니요**를 클릭 합니다.
+- 이전 변경 내용을 취소 하 고 계속 하려면 **아니요** 를 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

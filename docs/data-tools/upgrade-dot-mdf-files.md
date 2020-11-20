@@ -1,5 +1,7 @@
 ---
 title: .mdf 파일 업그레이드
+description: 최신 버전의 Visual Studio를 설치한 후 데이터베이스 파일 (.mdf)을 업그레이드 하는 옵션을 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281125"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998046"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
 
@@ -57,7 +59,7 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>LocalDB 버전을 사용 하도록 데이터베이스 파일을 업그레이드 하려면
 
-1. **서버 탐색기**에서 **데이터베이스에 연결** 단추를 선택 합니다.
+1. **서버 탐색기** 에서 **데이터베이스에 연결** 단추를 선택 합니다.
 
 2. **연결 추가** 대화 상자에서 다음 정보를 지정 합니다.
 
@@ -79,11 +81,11 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
     데이터베이스가 업그레이드 되 고 LocalDB 데이터베이스 엔진에 연결 되며 이전 버전의 LocalDB와 더 이상 호환 되지 않습니다.
 
-연결에 대 한 바로 가기 메뉴를 열고 **연결 수정**을 선택 하 여 LocalDB를 사용 하도록 SQL Server Express 연결을 수정할 수도 있습니다. **연결 수정** 대화 상자에서 서버 이름을로 변경 `(LocalDB)\MSSQLLocalDB` 합니다. **고급 속성** 대화 상자에서 **사용자 인스턴스가** **False**로 설정 되어 있는지 확인 합니다.
+연결에 대 한 바로 가기 메뉴를 열고 **연결 수정** 을 선택 하 여 LocalDB를 사용 하도록 SQL Server Express 연결을 수정할 수도 있습니다. **연결 수정** 대화 상자에서 서버 이름을로 변경 `(LocalDB)\MSSQLLocalDB` 합니다. **고급 속성** 대화 상자에서 **사용자 인스턴스가** **False** 로 설정 되어 있는지 확인 합니다.
 
 ### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>SQL Server Express 버전을 사용 하도록 데이터베이스 파일을 업그레이드 하려면
 
-1. 데이터베이스에 대 한 연결에 대 한 바로 가기 메뉴에서 **연결 수정**을 선택 합니다.
+1. 데이터베이스에 대 한 연결에 대 한 바로 가기 메뉴에서 **연결 수정** 을 선택 합니다.
 
 2. **연결 수정** 대화 상자에서 **고급** 단추를 선택 합니다.
 
@@ -97,13 +99,13 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
   - 프로젝트를 실행 하려면 **F5** 키를 선택 합니다.
 
-  - 데이터베이스를 편집 하려면 **솔루션 탐색기**에서 *.mdf* 파일을 열고 **서버 탐색기** 에서 노드를 확장 하 여 데이터베이스 작업을 수행 합니다.
+  - 데이터베이스를 편집 하려면 **솔루션 탐색기** 에서 *.mdf* 파일을 열고 **서버 탐색기** 에서 노드를 확장 하 여 데이터베이스 작업을 수행 합니다.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>기본 데이터베이스 엔진 SQL Server Express 만들려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 선택합니다.
 
-2. **옵션** 대화 상자에서 **데이터베이스 도구** 옵션을 확장 한 다음 **데이터 연결**을 선택 합니다.
+2. **옵션** 대화 상자에서 **데이터베이스 도구** 옵션을 확장 한 다음 **데이터 연결** 을 선택 합니다.
 
 3. **SQL Server 인스턴스 이름** 입력란에 사용 하려는 SQL Server Express 또는 LocalDB 인스턴스의 이름을 지정 합니다. 인스턴스에 이름이 지정 되지 않은 경우를 지정 `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` 합니다.
 

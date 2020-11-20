@@ -1,5 +1,7 @@
 ---
 title: 형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
+description: 형식화 된 데이터 집합과 형식화 되지 않은 데이터 집합의 차이점을 이해 합니다. 형식화 된 데이터 집합과 형식화 되지 않은 데이터 집합의 데이터 액세스를 대조 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586109"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998059"
 ---
 # <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
-형식화 된 데이터 집합은 기본 클래스에서 처음 파생 된 데이터 집합이 며 <xref:System.Data.DataSet> .xsd 파일에 저장 된 **데이터 세트 디자이너**의 정보를 사용 하 여 강력한 형식의 새 데이터 집합 클래스를 생성 합니다. 스키마의 정보 (테이블, 열 등)가 생성 되 고 새 데이터 집합 클래스에 일련의 첫 번째 클래스 개체 및 속성으로 컴파일됩니다. 형식화 된 데이터 집합은 기본 클래스에서 상속 되므로 <xref:System.Data.DataSet> 형식화 된 클래스는 클래스의 모든 기능을 가정 <xref:System.Data.DataSet> 하 고 클래스의 인스턴스를 매개 변수로 사용 하는 메서드와 함께 사용할 수 있습니다 <xref:System.Data.DataSet> .
+형식화 된 데이터 집합은 기본 클래스에서 처음 파생 된 데이터 집합이 며 <xref:System.Data.DataSet> .xsd 파일에 저장 된 **데이터 세트 디자이너** 의 정보를 사용 하 여 강력한 형식의 새 데이터 집합 클래스를 생성 합니다. 스키마의 정보 (테이블, 열 등)가 생성 되 고 새 데이터 집합 클래스에 일련의 첫 번째 클래스 개체 및 속성으로 컴파일됩니다. 형식화 된 데이터 집합은 기본 클래스에서 상속 되므로 <xref:System.Data.DataSet> 형식화 된 클래스는 클래스의 모든 기능을 가정 <xref:System.Data.DataSet> 하 고 클래스의 인스턴스를 매개 변수로 사용 하는 메서드와 함께 사용할 수 있습니다 <xref:System.Data.DataSet> .
 
 이와 달리 형식화 되지 않은 데이터 집합에는 해당 하는 기본 제공 스키마가 없습니다. 형식화 된 데이터 집합에서와 마찬가지로 형식화 되지 않은 데이터 집합은 테이블, 열 등을 포함 하지만 컬렉션 으로만 표시 됩니다. 그러나 형식화 되지 않은 데이터 집합에서 수동으로 테이블 및 기타 데이터 요소를 만든 후에는 데이터 집합의 메서드를 사용 하 여 데이터 집합의 구조를 스키마로 내보낼 수 있습니다 <xref:System.Data.DataSet.WriteXmlSchema%2A> .
 
@@ -34,7 +36,7 @@ ms.locfileid: "75586109"
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-형식화 된 액세스는 더 쉽게 읽을 수 있을 뿐만 아니라 Visual Studio **코드 편집기**에서 IntelliSense에 의해 완전히 지원 됩니다. 형식화 된 데이터 집합에 대 한 구문을 사용 하 여 보다 쉽게 작업할 수 있을 뿐만 아니라 컴파일 시간에 형식 검사를 제공 하므로 데이터 집합 멤버에 값을 할당할 때 오류가 발생할 가능성을 크게 줄일 수 있습니다. 클래스에서 열 이름을 변경한 <xref:System.Data.DataSet> 다음 응용 프로그램을 컴파일하면 빌드 오류가 발생 합니다. **작업 목록**에서 빌드 오류를 두 번 클릭 하면 이전 열 이름을 참조 하는 코드 줄로 바로 이동할 수 있습니다. 런타임에는 컬렉션이 아니라 컴파일 타임에 액세스를 결정 하기 때문에 형식화 된 데이터 집합의 테이블 및 열에 대 한 액세스도 약간 더 빠릅니다.
+형식화 된 액세스는 더 쉽게 읽을 수 있을 뿐만 아니라 Visual Studio **코드 편집기** 에서 IntelliSense에 의해 완전히 지원 됩니다. 형식화 된 데이터 집합에 대 한 구문을 사용 하 여 보다 쉽게 작업할 수 있을 뿐만 아니라 컴파일 시간에 형식 검사를 제공 하므로 데이터 집합 멤버에 값을 할당할 때 오류가 발생할 가능성을 크게 줄일 수 있습니다. 클래스에서 열 이름을 변경한 <xref:System.Data.DataSet> 다음 응용 프로그램을 컴파일하면 빌드 오류가 발생 합니다. **작업 목록** 에서 빌드 오류를 두 번 클릭 하면 이전 열 이름을 참조 하는 코드 줄로 바로 이동할 수 있습니다. 런타임에는 컬렉션이 아니라 컴파일 타임에 액세스를 결정 하기 때문에 형식화 된 데이터 집합의 테이블 및 열에 대 한 액세스도 약간 더 빠릅니다.
 
 형식화 된 데이터 집합에는 많은 이점이 있지만 형식화 되지 않은 데이터 집합은 다양 한 상황에서 유용 합니다. 가장 명백한 시나리오는 데이터 집합에 사용할 수 있는 스키마가 없는 경우입니다. 이는 예를 들어 응용 프로그램이 데이터 집합을 반환 하는 구성 요소와 상호 작용 하지만 해당 구조를 미리 알 수 없는 경우에 발생할 수 있습니다. 마찬가지로 정적이 고 예측 가능한 구조가 없는 데이터로 작업 하는 경우도 있습니다. 이 경우 형식화 된 데이터 집합을 사용 하는 것은 적합 하지 않습니다. 데이터 구조를 변경 하 여 형식화 된 데이터 집합 클래스를 다시 생성 해야 하기 때문입니다.
 
