@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션 빌드 및 디버그 | Microsoft Docs
+description: SharePoint 솔루션을 빌드 및 디버그하고 Visual Studio에서 다른 유형의 프로젝트를 빌드 및 디버깅하는 것과 어떻게 다른지 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016367"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850223"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>SharePoint 솔루션 빌드 및 디버그
   일반적으로 SharePoint 솔루션 빌드 및 디버그는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 다른 형식의 프로젝트를 빌드하고 디버그하는 것과 같습니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다.

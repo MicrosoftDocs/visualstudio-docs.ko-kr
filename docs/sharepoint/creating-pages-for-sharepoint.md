@@ -1,5 +1,7 @@
 ---
 title: SharePoint용 페이지 만들기 | Microsoft Docs
+description: Visual Studio에서 템플릿을 사용하여 SharePoint용 애플리케이션 페이지를 만듭니다. SharePoint Designer를 사용하여 사이트 페이지, 마스터 페이지, 페이지 레이아웃을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015172"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850626"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint용 페이지 만들기
   SharePoint 사이트의 애플리케이션 페이지, 사이트 페이지, 마스터 페이지, 페이지 레이아웃을 만들 수 있습니다.

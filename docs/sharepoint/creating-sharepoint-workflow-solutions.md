@@ -1,5 +1,7 @@
 ---
 title: SharePoint 워크플로 솔루션 만들기 | Microsoft Docs
+description: 도구를 사용하여 SharePoint 워크플로 솔루션을 만들어 SharePoint 웹 사이트에 있는 문서 및 목록 항목의 수명 주기를 관리하는 사용자 지정 워크플로를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015286"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850613"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 
-[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서는 SharePoint 웹 사이트에 있는 문서 및 목록 항목의 수명 주기를 관리하는 사용자 지정 워크플로를 만드는 데 도움이 되는 도구를 제공합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에는 워크플로를 만들고 구성하는 데 도움이 되는 **SharePoint 사용자 지정 마법사**도 포함되어 있습니다.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서는 SharePoint 웹 사이트에 있는 문서 및 목록 항목의 수명 주기를 관리하는 사용자 지정 워크플로를 만드는 데 도움이 되는 도구를 제공합니다. 제공되는 항목에는 디자이너, 작업 컨트롤 집합 및 필수 어셈블리 참조가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에는 워크플로를 만들고 구성하는 데 도움이 되는 **SharePoint 사용자 지정 마법사** 도 포함되어 있습니다.
 
 SharePoint에 대한 자세한 내용은 [Microsoft SharePoint 제품 및 기술](/sharepoint/dev/)을 참조하세요.
 
@@ -52,18 +54,18 @@ SharePoint에 대한 자세한 내용은 [Microsoft SharePoint 제품 및 기술
  워크플로 유형에 대한 자세한 내용은 [워크플로 유형](/previous-versions/office/developer/sharepoint-2010/ms468447(v=office.14))을 참조하세요.
 
 ### <a name="use-the-wizard"></a>마법사 사용
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 워크플로 프로젝트를 만드는 경우, 먼저 **SharePoint 사용자 지정 마법사**에서 해당 설정을 지정합니다. 마법사는 이 설정을 사용하여 **솔루션 탐색기**에 프로젝트를 만듭니다. 이 프로젝트에는 코드 파일, 워크플로를 배포하는 데 사용되는 여러 파일, 사용자 지정 SharePoint 워크플로를 만드는 데 필요한 어셈블리에 대한 참조가 포함됩니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 워크플로 프로젝트를 만드는 경우, 먼저 **SharePoint 사용자 지정 마법사** 에서 해당 설정을 지정합니다. 마법사는 이 설정을 사용하여 **솔루션 탐색기** 에 프로젝트를 만듭니다. 이 프로젝트에는 코드 파일, 워크플로를 배포하는 데 사용되는 여러 파일, 사용자 지정 SharePoint 워크플로를 만드는 데 필요한 어셈블리에 대한 참조가 포함됩니다.
 
- 워크플로를 만든 후 속성 창에서 해당 속성을 수정할 수 있습니다. 대부분의 워크플로 속성은 속성 창에서 직접 변경할 수 있지만, 값을 변경하기 위해 줄임표 단추(![ASP.NET 모바일 디자이너 줄임표](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 클릭해야 하는 경우도 있습니다. 이 단추를 클릭하면 **SharePoint 사용자 지정 마법사**가 다시 시작됩니다. 속성 값을 변경한 후 **마침** 단추를 선택하여 종료합니다.
+ 워크플로를 만든 후 속성 창에서 해당 속성을 수정할 수 있습니다. 대부분의 워크플로 속성은 속성 창에서 직접 변경할 수 있지만, 값을 변경하기 위해 줄임표 단추(![ASP.NET 모바일 디자이너 줄임표](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 클릭해야 하는 경우도 있습니다. 이 단추를 클릭하면 **SharePoint 사용자 지정 마법사** 가 다시 시작됩니다. 속성 값을 변경한 후 **마침** 단추를 선택하여 종료합니다.
 
 > [!NOTE]
 > **워크플로 유형** 속성은 읽기 전용이며 변경할 수 없습니다. 워크플로 유형을 변경하려면 다른 워크플로를 만들어야 합니다.
 
 ## <a name="design-a-sharepoint-workflow"></a>SharePoint 워크플로 디자인
- 비즈니스 프로세스의 모든 단계를 정의한 후 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 디자이너를 사용하여 SharePoint 워크플로를 디자인합니다. 디자이너를 열려면 **솔루션 탐색기**에서 Workflow1.cs 또는 Workflow1.vb를 두 번 클릭하거나 이 파일의 바로 가기 메뉴를 열고 **열기**를 선택합니다.
+ 비즈니스 프로세스의 모든 단계를 정의한 후 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 디자이너를 사용하여 SharePoint 워크플로를 디자인합니다. 디자이너를 열려면 **솔루션 탐색기** 에서 Workflow1.cs 또는 Workflow1.vb를 두 번 클릭하거나 이 파일의 바로 가기 메뉴를 열고 **열기** 를 선택합니다.
 
 ### <a name="activities"></a>활동
- 워크플로를 디자인하려면 **도구 상자**의 활동을 디자이너의 ‘워크플로 일정’에 추가합니다. 워크플로 일정에는 활동 시퀀스가 수행해야 하는 순서대로 포함됩니다.
+ 워크플로를 디자인하려면 **도구 상자** 의 활동을 디자이너의 ‘워크플로 일정’에 추가합니다. 워크플로 일정에는 활동 시퀀스가 수행해야 하는 순서대로 포함됩니다.
 
  활동에는 다음 두 가지 유형이 있습니다.
 
@@ -71,13 +73,13 @@ SharePoint에 대한 자세한 내용은 [Microsoft SharePoint 제품 및 기술
 
 - ‘복합 활동’은 다른 활동을 포함합니다. 예를 들어 조건부 활동에는 두 개의 분기가 포함될 수 있습니다.
 
-  **도구 상자**에서 두 가지 유형의 활동을 모두 사용할 수 있습니다.
+  **도구 상자** 에서 두 가지 유형의 활동을 모두 사용할 수 있습니다.
 
   활동에 속성, 메서드, 이벤트를 설정할 수 있습니다. **속성** 창을 사용하여 활동의 속성을 설정합니다.
 
   사용자 지정 활동을 만들 수도 있습니다. 자세한 내용은 [연습: 사용자 지정 사이트 워크플로 활동 만들기](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)를 참조하세요.
 
-  활동은 **도구 상자**의 다음 탭에 구성되어 있습니다.
+  활동은 **도구 상자** 의 다음 탭에 구성되어 있습니다.
 
 - **SharePoint 워크플로**
 
@@ -122,7 +124,7 @@ SharePoint에 대한 자세한 내용은 [Microsoft SharePoint 제품 및 기술
  SharePoint 라이브러리 또는 목록의 항목 속성을 사용하여 사용자로부터 정보를 수집할 수도 있습니다. 주 코드 파일(Workflow1.cs 또는 Workflow1.vb)에서는 `workflowProperties`라는 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언합니다. `workflowProperties` 개체를 사용하여 코드에서 라이브러리 또는 목록의 속성에 액세스합니다. 예제를 보려면 [연습: SharePoint 워크플로 솔루션 만들기 및 디버그](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)를 참조하세요.
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 디버그
- 다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 기반 프로젝트를 디버그할 때와 동일한 방법으로 SharePoint 워크플로 프로젝트를 디버그할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 시작하면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 **SharePoint 사용자 지정 마법사**에 지정된 설정을 사용하여 적절한 SharePoint 웹 사이트를 열고 워크플로 템플릿을 적절한 라이브러리 또는 목록과 자동으로 연결합니다. 또한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 *w3wp.exe*라는 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 프로세스에 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 연결합니다.
+ 다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 기반 프로젝트를 디버그할 때와 동일한 방법으로 SharePoint 워크플로 프로젝트를 디버그할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 시작하면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 **SharePoint 사용자 지정 마법사** 에 지정된 설정을 사용하여 적절한 SharePoint 웹 사이트를 열고 워크플로 템플릿을 적절한 라이브러리 또는 목록과 자동으로 연결합니다. 또한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 *w3wp.exe* 라는 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 프로세스에 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 연결합니다.
 
  워크플로를 테스트하려면 워크플로를 수동으로 시작해야 합니다. 자세한 내용은 [SharePoint 솔루션 디버그](../sharepoint/debugging-sharepoint-solutions.md)에서 “워크플로 디버그” 섹션을 참조하세요. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 애플리케이션 디버깅에 대한 자세한 내용은 [웹 애플리케이션 및 스크립트 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)를 참조하세요.
 

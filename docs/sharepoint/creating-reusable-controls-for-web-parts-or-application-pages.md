@@ -1,6 +1,8 @@
 ---
 title: 웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기 | Microsoft Docs
 titleSuffix: ''
+description: SharePoint에서 실행되는 애플리케이션 페이지와 웹 파트에서 사용할 수 있는 재사용 가능한 사용자 지정 컨트롤(사용자 컨트롤)을 Visual Studio에서 만들 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3052b2eab3dc353cdccc991a793c47485037fe8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2e9d2f3a99e3e43ebf40208bf8dfc01d5ac92dca
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585095"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850600"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기
   Visual Studio에서는 SharePoint에서 실행되는 애플리케이션 페이지와 웹 파트에서 사용할 수 있는 재사용 가능한 사용자 지정 컨트롤을 만들 수 있습니다. 해당 컨트롤을 사용자 정의 컨트롤이라고 합니다. 사용자 정의 컨트롤은 ASP.NET 웹 페이지와 유사하게 작동하는 일종의 복합 컨트롤입니다. 사용자 정의 컨트롤에 기존 웹 서버 컨트롤 및 태그를 추가하고 컨트롤의 속성과 메서드를 정의할 수 있습니다. 그런 다음 ASP.NET 웹 페이지에 포함할 수 있으며, 여기서는 하나의 단위로 작동합니다.
 
 ## <a name="create-a-user-control"></a>사용자 정의 컨트롤 만들기
- 사용자 정의 컨트롤을 만들려면 **빈 SharePoint 프로젝트**에 **사용자 정의 컨트롤**을 추가합니다. 자세한 내용은 [방법: SharePoint 애플리케이션 페이지 또는 웹 파트용 사용자 정의 컨트롤 만들기](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)를 참조하세요.
+ 사용자 정의 컨트롤을 만들려면 **빈 SharePoint 프로젝트** 에 **사용자 정의 컨트롤** 을 추가합니다. 자세한 내용은 [방법: SharePoint 애플리케이션 페이지 또는 웹 파트용 사용자 정의 컨트롤 만들기](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)를 참조하세요.
 
  **사용자 정의 컨트롤** 항목을 추가하면 Visual Studio에서 프로젝트에 폴더를 생성하고 여러 개의 파일을 폴더에 추가합니다. 다음 표에서는 각 파일에 관해 설명합니다.
 
