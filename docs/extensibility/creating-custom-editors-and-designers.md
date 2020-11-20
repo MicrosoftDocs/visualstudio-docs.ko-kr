@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 편집기 및 디자이너 만들기 | Microsoft Docs
+description: 핵심 편집기, 사용자 지정 편집기, 외부 편집기 및 디자이너와 같은 Visual Studio IDE에서 호스팅할 수 있는 다양 한 형식의 편집기에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414258"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973608"
 ---
 # <a name="create-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 

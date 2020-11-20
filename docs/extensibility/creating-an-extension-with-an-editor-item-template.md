@@ -1,5 +1,7 @@
 ---
 title: 편집기 항목 템플릿을 사용 하 여 확장 만들기 | Microsoft Docs
+description: Visual Studio SDK의 항목 템플릿을 사용 하 여 편집기에 분류자, 장식 및 여백을 추가 하는 기본 편집기 확장을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,25 +12,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6264cb35e404d69900094513875fc7b79310a4d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903841"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973740"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>편집기 항목 템플릿을 사용 하 여 확장 만들기
 Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 분류자, 장식 및 여백을 추가 하는 기본 편집기 확장을 만들 수 있습니다. 편집기 항목 템플릿은 Visual c # 또는 Visual Basic VSIX 프로젝트에 사용할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-classifier-extension"></a>분류자 확장 만들기
  편집기 분류자 항목 템플릿은 텍스트 파일에서 적절 한 텍스트 (이 경우 모든 항목)를 색으로 구분 하는 편집기 분류자를 만듭니다.
 
-1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성**을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트**를 선택 합니다. **이름** 상자에 `TestClassifier`을 입력합니다. **확인**을 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성** 을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트** 를 선택 합니다. **이름** 상자에 `TestClassifier`을 입력합니다. **확인** 을 클릭합니다.
 
-2. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 분류자**를 선택 합니다. 기본 파일 이름 (*EditorClassifier1.cs*)을 그대로 둡니다.
+2. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 분류자** 를 선택 합니다. 기본 파일 이름 (*EditorClassifier1.cs*)을 그대로 둡니다.
 
 3. 다음과 같이 4 개의 코드 파일이 있습니다.
 
@@ -47,9 +49,9 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 ## <a name="create-a-text-relative-adornment-extension"></a>텍스트 상대 장식 확장 만들기
  편집기 텍스트 장식 템플릿은 빨간색 윤곽선과 파란색 배경이 있는 상자를 사용 하 여 텍스트 문자 ' a '의 모든 인스턴스를 데코레이팅하는 텍스트 관련 장식을 만듭니다. 상자는 이동 하거나 다시 포맷 하는 경우에도 항상 ' a ' 문자를 중첩 하므로 텍스트를 기준으로 합니다.
 
-1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성**을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트**를 선택 합니다. **이름** 상자에 `TestAdornment`을 입력합니다. **확인**을 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성** 을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트** 를 선택 합니다. **이름** 상자에 `TestAdornment`을 입력합니다. **확인** 을 클릭합니다.
 
-2. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 텍스트 장식**을 선택 합니다. 기본 파일 이름 (*TextAdornment1.cs/vb*)을 그대로 둡니다.
+2. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 텍스트 장식** 을 선택 합니다. 기본 파일 이름 (*TextAdornment1.cs/vb*)을 그대로 둡니다.
 
 3. 다음과 같은 두 가지 코드 파일이 있습니다.
 
@@ -67,9 +69,9 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>편집기 뷰포트 장식 템플릿을 사용 하 여 뷰포트 장식 확장을 만들려면
 
-1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성**을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트**를 선택 합니다. **이름** 상자에 `ViewportAdornment`을 입력합니다. **확인**을 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성** 을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트** 를 선택 합니다. **이름** 상자에 `ViewportAdornment`을 입력합니다. **확인** 을 클릭합니다.
 
-2. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 뷰포트 장식**을 선택 합니다. 기본 파일 이름 (*ViewportAdornment1.cs/vb*)을 그대로 둡니다.
+2. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 여 **편집기 뷰포트 장식** 을 선택 합니다. 기본 파일 이름 (*ViewportAdornment1.cs/vb*)을 그대로 둡니다.
 
 3. 다음과 같은 두 가지 코드 파일이 있습니다.
 
@@ -84,9 +86,9 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>편집기 여백 템플릿을 사용 하 여 여백 확장을 만들려면
 
-1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성**을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트**를 선택 합니다. **이름** 상자에 `MarginExtension`을 입력합니다. **확인**을 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 한 다음 **확장성** 을 클릭 합니다. **템플릿** 창에서 **VSIX 프로젝트** 를 선택 합니다. **이름** 상자에 `MarginExtension`을 입력합니다. **확인** 을 클릭합니다.
 
-2. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 고 **편집기 여백**을 선택 합니다. 기본 파일 이름 (EditorMargin1.cs/vb)을 그대로 둡니다.
+2. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. Visual c # **확장성** 노드로 이동 하 고 **편집기 여백** 을 선택 합니다. 기본 파일 이름 (EditorMargin1.cs/vb)을 그대로 둡니다.
 
 3. 다음과 같은 두 가지 코드 파일이 있습니다.
 
@@ -96,5 +98,5 @@ Visual Studio SDK에 포함 된 항목 템플릿을 사용 하 여 편집기에 
 
 4. 이 프로젝트를 빌드하고 디버깅을 시작 합니다. 실험적 인스턴스가 나타납니다. 텍스트 파일을 열면 **Hello EditorMargin1** 라는 단어가 있는 녹색 여백이 가로 스크롤 막대 아래에 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

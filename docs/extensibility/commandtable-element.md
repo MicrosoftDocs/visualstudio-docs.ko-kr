@@ -1,5 +1,7 @@
 ---
 title: CommandTable 요소 | Microsoft Docs
+description: CommandTable은 VSPackage에서 IDE에 제공 하는 명령의 레이아웃 및 유형을 정의 하는 vsct 파일의 루트 요소입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739652"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974516"
 ---
 # <a name="commandtable-element"></a>CommandTable 요소
 CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage에서 IDE에 제공 하는 명령의 실제 레이아웃 및 형식을 정의 하는 파일입니다. 명령에는 메뉴 항목, 메뉴, 도구 모음, 콤보 상자 등이 포함 될 수 있습니다. 자세한 내용은 [Visual Studio 명령 테이블 (vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조 하세요.
@@ -44,14 +46,14 @@ CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage
 
 ### <a name="attributes"></a>특성
 
-| 특성 | 설명 |
+| attribute | Description |
 |-----------| - |
 | xmlns | 필수 요소. XML 네임 스페이스:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: xs = " <http://www.w3.org/2001/XMLSchema> " |
 | language | 선택 사항입니다. Language 특성은 명령 테이블의 모든 요소에 대 한 기본 언어를 지정 하는 데 사용할 수 있습니다 \<Strings> .  언어가 지정 되지 않은 경우 현재 프로세스의 언어가 사용 됩니다.<br /><br /> language = "en-us" |
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Extern 요소](../extensibility/extern-element.md)|선택 사항입니다. 컴파일러에 대 한 전처리기 지시문을 포함 합니다.|
 |[Include 요소](../extensibility/include-element.md)|선택 사항입니다. 컴파일에 포함할 파일에 대 한 경로를 포함 합니다.|
@@ -65,9 +67,9 @@ CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |없음||
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

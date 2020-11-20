@@ -1,5 +1,7 @@
 ---
 title: 기능 플래그 | Microsoft Docs
+description: 소스 제어 플러그 인의 기능과 확장 기능을 나타내는 SCC_EXCAP_xxx 플래그를 나타내는 SCC_CAP_xxx 플래그에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739874"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974438"
 ---
 # <a name="capability-flags"></a>기능 플래그
-SCC_CAP_*xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는 데 사용 되는 비트 플래그입니다. SCC_EXCAP_*xxx* 플래그는 확장 기능을 나타내고 정수 값을 확인 하는 증분 플래그입니다.
+SCC_CAP_ *xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는 데 사용 되는 비트 플래그입니다. SCC_EXCAP_ *xxx* 플래그는 확장 기능을 나타내고 정수 값을 확인 하는 증분 플래그입니다.
 
-|기능 코드|값|설명|
+|기능 코드|값|Description|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|[Sccremove](../extensibility/sccremove-function.md) 및 명령을 지원 합니다.|
 |`SCC_CAP_RENAME`|0x00000002L|[Sccrename](../extensibility/sccrename-function.md) 및 명령을 지원 합니다.|
@@ -50,7 +52,7 @@ SCC_CAP_*xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는
 
 ## <a name="capability-bits-added-in-version-12"></a>버전 1.2에 추가 된 기능 비트
 
-|기능 코드|값|설명|
+|기능 코드|값|Description|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)을 지원 합니다.|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)을 지원 합니다.|
@@ -63,7 +65,7 @@ SCC_CAP_*xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는
 ## <a name="capability-bits-added-in-version-13"></a>버전 1.3에 추가 된 기능 비트
  이러한 플래그는 기능이 지원 되는지 여부를 확인 하기 위해 [Sccgetextendedcapabilities](../extensibility/sccgetextendedcapabilities-function.md) 함수에 한 번에 하나씩 전달 됩니다.
 
-|확장 된 기능 코드|값|설명|
+|확장 된 기능 코드|값|Description|
 |------------------------------|-----------|-----------------|
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|는 `SCC_CHECKOUT_LOCALVER` 체크 아웃에 대 한 옵션을 지원 합니다.|
 |`SCC_EXCAP_BACKGROUND_GET`|2|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)을 지원 합니다.|
@@ -77,5 +79,5 @@ SCC_CAP_*xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|체크 아웃 한 파일을 삭제할 수 있습니다.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|체크 아웃 된 파일의 이름을 바꿀 수 있습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

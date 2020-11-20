@@ -1,5 +1,7 @@
 ---
 title: 옵션 페이지 만들기 | Microsoft Docs
+description: 속성 표를 사용 하 여 속성을 검사 하 고 설정 하는 간단한 도구/옵션 페이지를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903820"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973717"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 
@@ -25,7 +27,7 @@ ms.locfileid: "85903820"
 
  MPF는 도구 옵션 페이지, 클래스 및 클래스를 만드는 데 도움이 되는 두 가지 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.DialogPage> . 클래스를 서브클래싱 하 여 이러한 페이지에 대 한 컨테이너를 제공 하는 VSPackage를 만듭니다 `Package` . 클래스에서 파생 하 여 각 도구 옵션 페이지를 만듭니다 `DialogPage` .
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -37,7 +39,7 @@ ms.locfileid: "85903820"
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `MyToolsOptionsExtension` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이라는 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가 `MyToolsOptionsPackage` 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가 대화 상자**에서 **visual c # 항목**  >  **확장성** 으로 이동 하 고 **visual Studio 패키지**를 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을으로 변경 합니다 `MyToolsOptionsPackage.cs` . VSPackage를 만드는 방법에 대 한 자세한 내용은 VSPackage를 [사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)를 참조 하세요.
+2. 이라는 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가 `MyToolsOptionsPackage` 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가 대화 상자** 에서 **visual c # 항목**  >  **확장성** 으로 이동 하 고 **visual Studio 패키지** 를 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을으로 변경 합니다 `MyToolsOptionsPackage.cs` . VSPackage를 만드는 방법에 대 한 자세한 내용은 VSPackage를 [사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)를 참조 하세요.
 
 ### <a name="to-create-the-tools-options-property-grid"></a>도구 옵션 속성 표를 만들려면
 
@@ -97,9 +99,9 @@ ms.locfileid: "85903820"
 
 6. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
-7. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴의 **옵션**을 클릭 합니다.
+7. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴의 **옵션** 을 클릭 합니다.
 
-     왼쪽 창에 **내 범주가**표시 됩니다. 옵션 범주는 사전순으로 나열 되므로 목록의 중간에 표시 되어야 합니다. **내 범주** 를 열고 **내 그리드 페이지**를 클릭 합니다. 오른쪽 창에 옵션 표가 표시 됩니다. 속성 범주는 **내 옵션**이며 속성 이름은 **내 정수 옵션**입니다. 속성 설명, **내 정수 옵션**은 창 아래쪽에 표시 됩니다. 값을 초기 값 256에서 다른 값으로 변경 합니다. **확인**을 클릭 한 다음 **내 그리드 페이지**를 다시 엽니다. 새 값이 유지 되는 것을 볼 수 있습니다.
+     왼쪽 창에 **내 범주가** 표시 됩니다. 옵션 범주는 사전순으로 나열 되므로 목록의 중간에 표시 되어야 합니다. **내 범주** 를 열고 **내 그리드 페이지** 를 클릭 합니다. 오른쪽 창에 옵션 표가 표시 됩니다. 속성 범주는 **내 옵션** 이며 속성 이름은 **내 정수 옵션** 입니다. 속성 설명, **내 정수 옵션** 은 창 아래쪽에 표시 됩니다. 값을 초기 값 256에서 다른 값으로 변경 합니다. **확인** 을 클릭 한 다음 **내 그리드 페이지** 를 다시 엽니다. 새 값이 유지 되는 것을 볼 수 있습니다.
 
      옵션 페이지는 Visual Studio의 검색 상자를 통해서도 사용할 수 있습니다. IDE 위쪽의 검색 상자에 **내 범주** 를 입력 하면 결과에 나열 된 내 **그리드 > 내 범주가** 표시 됩니다.
 
@@ -190,7 +192,7 @@ ms.locfileid: "85903820"
     }
     ```
 
-     필드에는 `optionsPage` 부모 인스턴스에 대 한 참조가 포함 `OptionPageCustom` 됩니다. `Initialize`메서드는 `OptionString` **텍스트 상자**에를 표시 합니다. 이벤트 처리기는 **TextBox** `OptionString` 포커스가 **Textbox**를 벗어날 때 텍스트 상자의 현재 값을에 씁니다.
+     필드에는 `optionsPage` 부모 인스턴스에 대 한 참조가 포함 `OptionPageCustom` 됩니다. `Initialize`메서드는 `OptionString` **텍스트 상자** 에를 표시 합니다. 이벤트 처리기는 **TextBox** `OptionString` 포커스가 **Textbox** 를 벗어날 때 텍스트 상자의 현재 값을에 씁니다.
 
 9. 패키지 코드 파일에서 속성에 대 한 재정의를 클래스에 추가 하 여 `OptionPageCustom.Window` `OptionPageCustom` 의 인스턴스를 만들고 초기화 하 고 반환 `MyUserControl` 합니다. 이제 클래스는 다음과 같습니다.
 
@@ -221,11 +223,11 @@ ms.locfileid: "85903820"
 
 10. 프로젝트를 빌드하고 실행합니다.
 
-11. 실험적 인스턴스에서 **도구**  >  **옵션**을 클릭 합니다.
+11. 실험적 인스턴스에서 **도구**  >  **옵션** 을 클릭 합니다.
 
-12. **내 범주** 를 찾은 다음 **사용자 지정 페이지**를 찾습니다.
+12. **내 범주** 를 찾은 다음 **사용자 지정 페이지** 를 찾습니다.
 
-13. 기본값 **문자열**의 값을 변경 합니다. **확인**을 클릭 한 다음 **내 사용자 지정 페이지**를 다시 엽니다. 새 값이 유지 된 것을 볼 수 있습니다.
+13. 기본값 **문자열** 의 값을 변경 합니다. **확인** 을 클릭 한 다음 **내 사용자 지정 페이지** 를 다시 엽니다. 새 값이 유지 된 것을 볼 수 있습니다.
 
 ## <a name="access-options"></a>액세스 옵션
 
@@ -247,7 +249,7 @@ ms.locfileid: "85903820"
 
      이 코드 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 는를 호출 하 여 인스턴스를 만들거나 검색 `OptionPageGrid` 합니다. `OptionPageGrid` 는 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 를 호출 하 여 해당 옵션을 로드 합니다 .이는 공용 속성입니다.
 
-2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolsOptionsCommand.cs*로 변경 합니다.
+2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolsOptionsCommand.cs* 로 변경 합니다.
 
 3. *MyToolsOptionsCommand* 파일에서 명령의 메서드 본문을 `ShowMessageBox` 다음과 같이 바꿉니다.
 
@@ -262,10 +264,10 @@ ms.locfileid: "85903820"
 
 4. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
-5. 실험적 인스턴스의 **도구** 메뉴에서 **MyToolsOptionsCommand 호출**을 클릭 합니다.
+5. 실험적 인스턴스의 **도구** 메뉴에서 **MyToolsOptionsCommand 호출** 을 클릭 합니다.
 
      메시지 상자에의 현재 값이 표시 됩니다 `OptionInteger` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)

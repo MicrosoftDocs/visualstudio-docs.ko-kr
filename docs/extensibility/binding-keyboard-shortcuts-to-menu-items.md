@@ -1,5 +1,7 @@
 ---
 title: 메뉴 항목에 바로 가기 키 바인딩 | Microsoft Docs
+description: Visual Studio의 바로 가기 키를 기본 편집기나 사용자 지정 편집기에 대 한 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 매핑하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407720"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974621"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 사용자 지정 메뉴 명령에 바로 가기 키를 바인딩하려면 패키지에 대 한 *vsct* 파일에 항목을 추가 하면 됩니다. 이 항목에서는 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 바로 가기 키를 매핑하는 방법과 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기로 제한 하는 방법에 대해 설명 합니다.
@@ -59,7 +61,7 @@ ms.locfileid: "94407720"
 
     `guid`및 특성을 `id` 호출 하려는 명령의 명령으로 설정 합니다.
 
-    특성을 `mod1` **Control** , **Alt** 또는 **Shift** 로 설정 합니다.
+    특성을 `mod1` **Control**, **Alt** 또는 **Shift** 로 설정 합니다.
 
     KeyBindings 섹션은 다음과 같습니다.
 
@@ -105,5 +107,5 @@ ms.locfileid: "94407720"
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

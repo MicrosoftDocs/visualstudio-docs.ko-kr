@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 시작 페이지 만들기 | Microsoft Docs
+description: 사용자 지정 시작 페이지를 만드는 방법에 대해 알아봅니다. 빈 시작 페이지로 시작 하 고, 빈 UserControl 요소에 컨트롤을 추가한 다음, 페이지를 테스트 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903674"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974565"
 ---
 # <a name="creating-a-custom-start-page"></a>사용자 지정 시작 페이지 만들기
 
@@ -69,15 +71,15 @@ Visual studio가 충돌 하지 않는지 확인할 때까지 사용자 지정 �
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>수동으로 만든 사용자 지정 시작 페이지를 테스트 하려면
 
-1. XAML 파일, 지원 되는 텍스트 파일 또는 태그 파일을 *%USERPROFILE%\My Documents\Visual Studio 2015 \Startpages \\ * 폴더에 복사 합니다.
+1. XAML 파일, 지원 되는 텍스트 파일 또는 태그 파일을 *%USERPROFILE%\My Documents\Visual Studio 2015 \Startpages \\* 폴더에 복사 합니다.
 
-2. 시작 페이지에서 Visual Studio에서 설치 되지 않은 어셈블리의 컨트롤이 나 형식을 참조 하는 경우 어셈블리를 복사 하 여 *{Visual studio 설치 폴더} \Common7\IDE\PrivateAssemblies \\ *에 붙여넣습니다.
+2. 시작 페이지에서 Visual Studio에서 설치 되지 않은 어셈블리의 컨트롤이 나 형식을 참조 하는 경우 어셈블리를 복사 하 여 *{Visual studio 설치 폴더} \Common7\IDE\PrivateAssemblies \\* 에 붙여넣습니다.
 
 3. Visual Studio 명령 프롬프트에서 **devenv/rootsuffix Exp** 를 입력 하 여 visual studio의 실험적 인스턴스를 엽니다.
 
 4. 실험적 인스턴스에서 **도구**  >  **옵션**  >  **환경**  >  **시작** 페이지로 이동 하 고 **사용자 지정 시작 페이지** 드롭다운에서 XAML 파일을 선택 합니다.
 
-5. **보기** 메뉴에서 **시작 페이지**를 클릭합니다.
+5. **보기** 메뉴에서 **시작 페이지** 를 클릭합니다.
 
      사용자 지정 시작 페이지가 표시 됩니다. 모든 파일을 변경 하려면 실험적 인스턴스를 닫고 변경 내용을 적용 하 고 변경 된 파일을 복사 하 여 붙여넣은 다음 실험적 인스턴스를 다시 열어 변경 내용을 확인 해야 합니다.
 
@@ -85,7 +87,7 @@ Visual studio가 충돌 하지 않는지 확인할 때까지 사용자 지정 �
 
 - 시작 페이지를 테스트 하 여 안정적인 것으로 확인 한 후에는 **옵션** 대화 상자에서 **시작 페이지 사용자 지정** 옵션을 사용 하 여 Visual Studio의 기본 인스턴스에서 시작 페이지로 선택할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)

@@ -1,5 +1,7 @@
 ---
 title: 모달 대화 상자 만들기 및 관리 | Microsoft Docs
+description: Dialogwindow를 사용 하거나 DialogWindow를 사용 하지 않고 Visual Studio 내에서 모달 대화 상자를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903778"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973629"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>모달 대화 상자 만들기 및 관리
 Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표시 되는 동안 대화 상자의 부모 창이 비활성화 되었는지 확인 한 다음 대화 상자를 닫은 후 부모 창을 다시 사용 하도록 설정 해야 합니다. 이렇게 하지 않으면 오류 메시지가 표시 될 수 있습니다. *모달 대화 상자가 활성화 되어 있기 때문에 Microsoft Visual Studio를 종료할 수 없습니다. 활성 대화 상자를 닫고 다시 시도 하세요.*
@@ -26,7 +28,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표�
 
 ## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>DialogWindow에서 파생 된 대화 상자 만들기
 
-1. **Opendialogtest** 라는 VSIX 프로젝트를 만들고 **opendialog**라는 메뉴 명령을 추가 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+1. **Opendialogtest** 라는 VSIX 프로젝트를 만들고 **opendialog** 라는 메뉴 명령을 추가 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 2. 클래스를 사용 하려면 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> **참조 추가** 대화 상자의 프레임 워크 탭에서 다음 어셈블리에 대 한 참조를 추가 해야 합니다.
 
@@ -38,7 +40,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표�
 
     - *System.Xaml*
 
-3. *OpenDialog.cs*에서 다음 문을 추가 합니다 `using` .
+3. *OpenDialog.cs* 에서 다음 문을 추가 합니다 `using` .
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -68,7 +70,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표�
     testDialog.ShowModal();
     ```
 
-7. 애플리케이션을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 되어야 합니다. 실험적 인스턴스의 **도구** 메뉴에 **opendialog 호출**이라는 명령이 표시 되어야 합니다. 이 명령을 클릭 하면 대화 상자 창이 표시 됩니다. 창을 최소화 하 고 최대화할 수 있습니다.
+7. 애플리케이션을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 되어야 합니다. 실험적 인스턴스의 **도구** 메뉴에 **opendialog 호출** 이라는 명령이 표시 되어야 합니다. 이 명령을 클릭 하면 대화 상자 창이 표시 됩니다. 창을 최소화 하 고 최대화할 수 있습니다.
 
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>DialogWindow에서 파생 되지 않은 대화 상자 만들기 및 관리
 
@@ -125,4 +127,4 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표�
     }
     ```
 
-7. 애플리케이션을 빌드 및 실행합니다. **도구** 메뉴에 **opendialog 호출**이라는 명령이 표시 되어야 합니다. 이 명령을 클릭 하면 대화 상자 창이 표시 됩니다.
+7. 애플리케이션을 빌드 및 실행합니다. **도구** 메뉴에 **opendialog 호출** 이라는 명령이 표시 되어야 합니다. 이 명령을 클릭 하면 대화 상자 창이 표시 됩니다.

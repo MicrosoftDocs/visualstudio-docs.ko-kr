@@ -1,5 +1,7 @@
 ---
 title: Combo 요소 | Microsoft Docs
+description: Combo 요소는 콤보 상자에 표시 되는 명령을 정의 합니다. DropDownCombo, DynamicCombo, IndexCombo 및 MRUCombo의 네 가지 종류가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739813"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974318"
 ---
 # <a name="combo-element"></a>Combo 요소
 콤보 상자에 표시 되는 명령을 정의 합니다. DropDownCombo, DynamicCombo, IndexCombo 및 MRUCombo의 네 가지 종류의 콤보 상자가 있습니다.
@@ -36,7 +38,7 @@ ms.locfileid: "80739813"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
 |id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
@@ -48,16 +50,16 @@ ms.locfileid: "80739813"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|Parent|선택 사항입니다. 단추의 부모 요소입니다.|
+|부모|선택 사항입니다. 단추의 부모 요소입니다.|
 |CommandFlag|필수 요소. [명령 플래그 요소](../extensibility/command-flag-element.md)를 참조 하세요. 단추에 대 한 유효한 CommandFlag 값은 다음과 같습니다.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -필터 키<br /><br /> -IconAndText<br /><br /> -NoAutoComplete 완성<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - StretchHorizontally|
 |문자열|필수 요소. [Strings 요소](../extensibility/strings-element.md)를 참조 하세요. 자식 ButtonText 요소를 정의 해야 합니다.|
-|주석|선택적 설명입니다.|
+|Annotation|선택적 설명입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|
 

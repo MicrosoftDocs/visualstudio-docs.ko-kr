@@ -1,5 +1,7 @@
 ---
 title: 명령 플래그 요소 | Microsoft Docs
+description: 명령 플래그 요소는 부모 요소를 수정 합니다. 부모 요소와 자식 요소를 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649366"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974197"
 ---
 # <a name="command-flag-eelement"></a>Command 플래그 Eelement
 부모 요소를 수정 합니다.
@@ -35,7 +37,7 @@ ms.locfileid: "81649366"
 
 ### <a name="child-elements"></a>자식 요소
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |AllowParams|사용자가 명령의 정식 이름을 입력할 때 **명령 창에** 명령 매개 변수를 입력할 수 있음을 나타냅니다.<br /><br /> 유효 기간: `Button`|
 |AlwaysCreate|메뉴는 그룹이 나 단추가 없는 경우에도 만들어집니다.<br /><br /> 유효 기간: `Menu`|
@@ -69,7 +71,7 @@ ms.locfileid: "81649366"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Buttons 요소](../extensibility/buttons-element.md)|[단추 요소](../extensibility/button-element.md) 요소에 대 한 그룹을 제공 합니다.|
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴를 정의 합니다.|

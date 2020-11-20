@@ -1,5 +1,7 @@
 ---
 title: 공유 및 버전 관리 Vspackage 중에서 선택 Microsoft Docs
+description: 여러 버전의 Visual Studio 및 .NET Framework를 사용 하 여 공유 또는 버전이 있는 전략을 통해 Vspackage를 함께 설치 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011933"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974405"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 Vspackage 중에서 선택
 서로 다른 버전의 Visual Studio가 동일한 컴퓨터에 공존할 수 있습니다. Vspackage는 모든 혼합 버전을 지원할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

@@ -1,5 +1,7 @@
 ---
 title: 다중 인스턴스 도구 창 만들기 | Microsoft Docs
+description: 여러 인스턴스가 동시에 열릴 수 있도록 도구 창을 수정 하는 방법에 대해 알아봅니다. 기본적으로 도구 창에는 인스턴스가 하나만 열려 있을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904063"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974004"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>다중 인스턴스 도구 창 만들기
 여러 인스턴스를 동시에 열 수 있도록 도구 창을 프로그래밍할 수 있습니다. 기본적으로 도구 창에는 인스턴스가 하나만 열려 있을 수 있습니다.
@@ -25,7 +27,7 @@ ms.locfileid: "85904063"
 
 ## <a name="create-a-basic-single-instance-tool-window"></a>기본 (단일 인스턴스) 도구 창 만들기
 
-1. VSIX 템플릿을 사용 하 여 **Multiinstancetoolwindow** 라는 프로젝트를 만들고 **MIToolWindow**이라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
+1. VSIX 템플릿을 사용 하 여 **Multiinstancetoolwindow** 라는 프로젝트를 만들고 **MIToolWindow** 이라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
 
     > [!NOTE]
     > 도구 창을 사용 하 여 확장을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.

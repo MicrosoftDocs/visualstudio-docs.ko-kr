@@ -1,5 +1,7 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 2 부 | Microsoft Docs
+description: 이전 문서에서 만든 프로젝트에 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903829"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974609"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>기본 프로젝트 시스템 만들기, 2 부
 [기본 프로젝트 시스템을 만드는](../extensibility/creating-a-basic-project-system-part-1.md)이 시리즈의 첫 번째 연습은 기본 프로젝트 시스템을 만드는 방법을 보여 줍니다. 이 연습은 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하 여 기본 프로젝트 시스템을 기반으로 합니다. 이 연습을 시작 하기 전에 첫 번째 연습을 완료 해야 합니다.
 
-이 연습에서는 프로젝트 파일 이름 확장명이 *. myproj*인 프로젝트 형식을 만드는 방법을 배웁니다. 연습을 완료 하기 위해 활용는 기존 Visual c # 프로젝트 시스템에서 연습을 수행 하기 때문에 사용자 고유의 언어를 만들 필요가 없습니다.
+이 연습에서는 프로젝트 파일 이름 확장명이 *. myproj* 인 프로젝트 형식을 만드는 방법을 배웁니다. 연습을 완료 하기 위해 활용는 기존 Visual c # 프로젝트 시스템에서 연습을 수행 하기 때문에 사용자 고유의 언어를 만들 필요가 없습니다.
 
 이 연습에서는 다음 작업을 수행 하는 방법을 배웁니다.
 
@@ -40,7 +42,7 @@ ms.locfileid: "85903829"
 > 이 연습의 단계는 c # 프로젝트를 기반으로 합니다. 그러나 파일 이름 확장명, 코드 등의 세부 사항을 제외 하 고 Visual Basic 프로젝트에 대해 동일한 단계를 사용할 수 있습니다.
 
 ## <a name="create-a-visual-studio-template"></a>Visual Studio 템플릿 만들기
-- [기본 프로젝트 시스템을 만들고 1 부에서는](../extensibility/creating-a-basic-project-system-part-1.md) 기본 프로젝트 템플릿을 만들고 프로젝트 시스템에 추가 하는 방법을 보여 줍니다. 또한 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 시스템 레지스트리에서 * \\ \\ Templates\Projects\SimpleProject* 폴더의 전체 경로를 기록 하는 특성을 사용 하 여이 템플릿을 Visual Studio에 등록 하는 방법을 보여 줍니다.
+- [기본 프로젝트 시스템을 만들고 1 부에서는](../extensibility/creating-a-basic-project-system-part-1.md) 기본 프로젝트 템플릿을 만들고 프로젝트 시스템에 추가 하는 방법을 보여 줍니다. 또한 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 시스템 레지스트리에서 *\\ \\ Templates\Projects\SimpleProject* 폴더의 전체 경로를 기록 하는 특성을 사용 하 여이 템플릿을 Visual Studio에 등록 하는 방법을 보여 줍니다.
 
 기본 프로젝트 템플릿 대신 Visual Studio 템플릿 (*.vstemplate* 파일)을 사용 하 여 **새 프로젝트** 대화 상자에 템플릿을 표시 하는 방법과 템플릿 매개 변수를 대체 하는 방법을 제어할 수 있습니다. *.Vstemplate* 파일은 프로젝트 시스템 템플릿을 사용 하 여 프로젝트를 만들 때 소스 파일이 포함 되는 방법을 설명 하는 XML 파일입니다. 프로젝트 시스템 자체는 *.vstemplate* 파일 및 소스 파일을 *.zip* 파일에 수집 하 고 *.zip* 파일을 Visual Studio에 알려진 위치에 복사 하 여 배포 됩니다. 이 프로세스에 대해서는이 연습의 뒷부분에서 자세히 설명 합니다.
 
@@ -55,7 +57,7 @@ ms.locfileid: "85903829"
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. *SimpleProject* 라는 XML 파일을 * \\ Templates\Projects\SimpleProject \\ * 폴더에 추가 합니다.
+3. *SimpleProject* 라는 XML 파일을 *\\ Templates\Projects\SimpleProject \\* 폴더에 추가 합니다.
 
 4. *SimpleProject* 의 내용을 다음 코드로 바꿉니다.
 
@@ -83,7 +85,7 @@ ms.locfileid: "85903829"
     </VSTemplate>
     ```
 
-5. **속성** 창의 * \\ Templates\Projects\SimpleProject \\ * 폴더에서 5 개 파일을 모두 선택 하 고 **빌드 작업** 을 **ZipProject**로 설정 합니다.
+5. **속성** 창의 *\\ Templates\Projects\SimpleProject \\* 폴더에서 5 개 파일을 모두 선택 하 고 **빌드 작업** 을 **ZipProject** 로 설정 합니다.
 
     ![간단한 프로젝트 폴더](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -113,7 +115,7 @@ ms.locfileid: "85903829"
   Visual Studio 템플릿 스키마의 요소에 대 한 자세한 내용은 [Visual studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조 하세요.
 
 > [!NOTE]
-> 프로젝트에 Visual Studio 템플릿이 둘 이상 있는 경우 모든 템플릿은 별도의 폴더에 있습니다. 해당 폴더의 모든 파일에는 **빌드 작업** 을 **ZipProject**로 설정 해야 합니다.
+> 프로젝트에 Visual Studio 템플릿이 둘 이상 있는 경우 모든 템플릿은 별도의 폴더에 있습니다. 해당 폴더의 모든 파일에는 **빌드 작업** 을 **ZipProject** 로 설정 해야 합니다.
 
 ## <a name="adding-a-minimal-vsct-file"></a>최소 vsct 파일 추가
  새 또는 수정 된 Visual Studio 템플릿을 인식 하려면 visual Studio를 설치 모드에서 실행 해야 합니다. 설치 모드에는 *. vsct* 파일이 있어야 합니다. 따라서 프로젝트에 최소 *vsct* 파일을 추가 해야 합니다.
@@ -129,9 +131,9 @@ ms.locfileid: "85903829"
     </CommandTable>
     ```
 
-3. 이 파일의 **빌드 작업** 을 **VSCTCompile**로 설정 합니다. **속성** 창이 아닌 *.csproj* 파일 에서만이 작업을 수행할 수 있습니다. 이 시점에서이 파일의 **빌드 작업이** **없음** 으로 설정 되어 있는지 확인 합니다.
+3. 이 파일의 **빌드 작업** 을 **VSCTCompile** 로 설정 합니다. **속성** 창이 아닌 *.csproj* 파일 에서만이 작업을 수행할 수 있습니다. 이 시점에서이 파일의 **빌드 작업이** **없음** 으로 설정 되어 있는지 확인 합니다.
 
-    1. SimpleProject 노드를 마우스 오른쪽 단추로 클릭 한 다음 **SimpleProject 편집**을 클릭 합니다.
+    1. SimpleProject 노드를 마우스 오른쪽 단추로 클릭 한 다음 **SimpleProject 편집** 을 클릭 합니다.
 
     2. *.Csproj* 파일에서 *SimpleProject* 항목을 찾습니다.
 
@@ -139,7 +141,7 @@ ms.locfileid: "85903829"
         <None Include="SimpleProject.vsct" />
         ```
 
-    3. 빌드 작업을 **VSCTCompile**로 변경 합니다.
+    3. 빌드 작업을 **VSCTCompile** 로 변경 합니다.
 
         ```
         <VSCTCompile Include="SimpleProject.vsct" />
@@ -147,16 +149,16 @@ ms.locfileid: "85903829"
 
     4. 프로젝트 파일을 열고 편집기를 닫습니다.
 
-    5. SimpleProject 노드를 저장 한 다음 **솔루션 탐색기** **프로젝트 다시 로드**를 클릭 합니다.
+    5. SimpleProject 노드를 저장 한 다음 **솔루션 탐색기** **프로젝트 다시 로드** 를 클릭 합니다.
 
 ## <a name="examine-the-visual-studio-template-build-steps"></a>Visual Studio 템플릿 빌드 단계를 검토 합니다.
  VSPackage 프로젝트 빌드 시스템은 일반적으로 *.vstemplate* 파일을 변경 하거나 *.vstemplate* 파일을 포함 하는 프로젝트를 다시 작성할 때 설치 모드에서 Visual Studio를 실행 합니다. MSBuild의 자세한 정도를 보통 이상으로 설정 하 여 수행할 수 있습니다.
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **프로젝트 및 솔루션** 노드를 확장 하 고 **빌드 및 실행**을 선택 합니다.
+2. **프로젝트 및 솔루션** 노드를 확장 하 고 **빌드 및 실행** 을 선택 합니다.
 
-3. **MSBuild 프로젝트 빌드 출력의 자세한 정도** 를 **보통**으로 설정 합니다. **확인**을 클릭합니다.
+3. **MSBuild 프로젝트 빌드 출력의 자세한 정도** 를 **보통** 으로 설정 합니다. **확인** 을 클릭합니다.
 
 4. SimpleProject 프로젝트를 다시 빌드합니다.
 
@@ -175,24 +177,24 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Visual Studio 템플릿 배포
-Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.zip* 파일은 Visual Studio에 알려진 위치에 배포 되어야 합니다. ProjectTemplates 폴더의 위치는 일반적으로 *<% LOCALAPPDATA% > \microsoft\visualstudio\14.0exp\projecttemplates*입니다.
+Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.zip* 파일은 Visual Studio에 알려진 위치에 배포 되어야 합니다. ProjectTemplates 폴더의 위치는 일반적으로 *<% LOCALAPPDATA% > \microsoft\visualstudio\14.0exp\projecttemplates* 입니다.
 
-프로젝트 팩터리를 배포 하려면 설치 프로그램에 관리자 권한이 있어야 합니다. Visual Studio 설치 노드: *. ..\Microsoft Visual studio 14.0 \ Common7\IDE\ProjectTemplates*에 템플릿을 배포 합니다.
+프로젝트 팩터리를 배포 하려면 설치 프로그램에 관리자 권한이 있어야 합니다. Visual Studio 설치 노드: *. ..\Microsoft Visual studio 14.0 \ Common7\IDE\ProjectTemplates* 에 템플릿을 배포 합니다.
 
 ## <a name="test-a-visual-studio-template"></a>Visual Studio 템플릿 테스트
 프로젝트 팩터리를 테스트 하 여 Visual Studio 템플릿을 사용 하 여 프로젝트 계층 구조를 만드는 지 여부를 확인 합니다.
 
 1. Visual Studio SDK 실험적 인스턴스를 다시 설정 합니다.
 
-    설정 [!INCLUDE[win7](../debugger/includes/win7_md.md)] : **시작** 메뉴에서 **Microsoft Visual Studio/Microsoft Visual Studio SDK/도구** 폴더를 찾은 다음 **Microsoft Visual Studio 실험적 인스턴스 다시 설정**을 선택 합니다.
+    설정 [!INCLUDE[win7](../debugger/includes/win7_md.md)] : **시작** 메뉴에서 **Microsoft Visual Studio/Microsoft Visual Studio SDK/도구** 폴더를 찾은 다음 **Microsoft Visual Studio 실험적 인스턴스 다시 설정** 을 선택 합니다.
 
-    이후 버전의 Windows에서는 **시작** 화면에서 **Microsoft Visual Studio \<version> 실험적 인스턴스 다시 설정**을 입력 합니다.
+    이후 버전의 Windows에서는 **시작** 화면에서 **Microsoft Visual Studio \<version> 실험적 인스턴스 다시 설정** 을 입력 합니다.
 
-2. 명령 프롬프트 창이 나타납니다. **아무 키나 눌러 계속 하려면** **enter**키를 누릅니다. 창을 닫은 후 Visual Studio를 엽니다.
+2. 명령 프롬프트 창이 나타납니다. **아무 키나 눌러 계속 하려면** **enter** 키를 누릅니다. 창을 닫은 후 Visual Studio를 엽니다.
 
 3. SimpleProject 프로젝트를 다시 빌드하고 디버깅을 시작 합니다. 실험적 인스턴스가 나타납니다.
 
-4. 실험적 인스턴스에서 SimpleProject 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **SimpleProject**를 선택 합니다.
+4. 실험적 인스턴스에서 SimpleProject 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **SimpleProject** 를 선택 합니다.
 
 5. SimpleProject의 새 인스턴스가 표시 되어야 합니다.
 
@@ -207,9 +209,9 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 이 섹션에서는 SimpleProject 프로젝트 형식에 대 한 콘솔 자식 노드를 만드는 방법을 보여 줍니다.
 
-1. * \\ Templates\Projects\SimpleProject \\ * 폴더의 이름을 * \\ Templates\Projects\ConsoleApp \\ *로 바꿉니다.
+1. *\\ Templates\Projects\SimpleProject \\* 폴더의 이름을 *\\ Templates\Projects\ConsoleApp \\* 로 바꿉니다.
 
-2. **속성** 창의 * \\ Templates\Projects\ConsoleApp \\ * 폴더에서 5 개 파일을 모두 선택 하 고 **빌드 작업이** **ZipProject**로 설정 되었는지 확인 합니다.
+2. **속성** 창의 *\\ Templates\Projects\ConsoleApp \\* 폴더에서 5 개 파일을 모두 선택 하 고 **빌드 작업이** **ZipProject** 로 설정 되었는지 확인 합니다.
 
 3. SimpleProject 파일에서 \<TemplateData> 닫는 태그 바로 앞에 있는 섹션의 끝에 다음 줄을 추가 합니다.
 
@@ -285,13 +287,13 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 1. *SimpleProjectNode.cs* 파일에서 메서드를 제거 `AddFileFromTemplate` 합니다.
 
-2. * \\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 파일에서 속성을 찾아 \<RootNamespace> 값을 $safeprojectname $로 변경 합니다.
+2. *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 파일에서 속성을 찾아 \<RootNamespace> 값을 $safeprojectname $로 변경 합니다.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. * \\ Templates\Projects\SimpleProject\Program.cs* 파일에서 파일의 내용을 다음 코드로 바꿉니다.
+3. *\\ Templates\Projects\SimpleProject\Program.cs* 파일에서 파일의 내용을 다음 코드로 바꿉니다.
 
     ```
     using System;
@@ -315,9 +317,9 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 4. SimpleProject 프로젝트를 다시 빌드하고 디버깅을 시작 합니다. 실험적 인스턴스가 표시 되어야 합니다.
 
-5. 새 SimpleProject 콘솔 응용 프로그램을 만듭니다. **프로젝트 형식** 창에서 **SimpleProject**를 선택 합니다. **Visual Studio에 설치 된 템플릿**에서 **콘솔 응용 프로그램**을 선택 합니다.
+5. 새 SimpleProject 콘솔 응용 프로그램을 만듭니다. **프로젝트 형식** 창에서 **SimpleProject** 를 선택 합니다. **Visual Studio에 설치 된 템플릿** 에서 **콘솔 응용 프로그램** 을 선택 합니다.
 
-6. 새로 만든 프로젝트에서 *Program.cs*를 엽니다. 다음과 유사 하 게 표시 됩니다 (파일의 GUID 값이 서로 다름).
+6. 새로 만든 프로젝트에서 *Program.cs* 를 엽니다. 다음과 유사 하 게 표시 됩니다 (파일의 GUID 값이 서로 다름).
 
     ```csharp
     using System;
@@ -462,18 +464,18 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 7. Visual Studio는 프로젝트 팩터리를 호출 하 여 Visual Studio 템플릿을 사용 하 여 프로젝트를 만듭니다. 새 *Program.cs* 파일이 코드 편집기에서 열립니다.
 
-8. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. **속성 페이지** 대화 상자가 표시됩니다.
+8. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다. **속성 페이지** 대화 상자가 표시됩니다.
 
     ![간단한 프로젝트 속성 페이지](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 
 ## <a name="test-the-project-property-page"></a>프로젝트 속성 페이지 테스트
 이제 속성 값을 수정 하 고 변경할 수 있는지 여부를 테스트할 수 있습니다.
 
-1. **MyConsoleApplication 속성 페이지** 대화 상자에서 **Defaultnamespace** 를 **MyApplication**로 변경 합니다.
+1. **MyConsoleApplication 속성 페이지** 대화 상자에서 **Defaultnamespace** 를 **MyApplication** 로 변경 합니다.
 
-2. **OutputType** 속성을 선택한 다음 **클래스 라이브러리**를 선택 합니다.
+2. **OutputType** 속성을 선택한 다음 **클래스 라이브러리** 를 선택 합니다.
 
-3. **적용**, **확인**을 차례로 클릭합니다.
+3. **적용**, **확인** 을 차례로 클릭합니다.
 
 4. **속성 페이지** 대화 상자를 다시 열고 변경 내용이 유지 되었는지 확인 합니다.
 

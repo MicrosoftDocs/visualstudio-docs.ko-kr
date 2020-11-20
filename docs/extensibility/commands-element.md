@@ -1,5 +1,7 @@
 ---
 title: Commands 요소 | Microsoft Docs
+description: Commands 요소는 VSPackage 도구 모음에 있는 명령 컬렉션을 나타내고 메뉴, 그룹, 단추, combos 및 비트맵 섹션을 포함할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739689"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974502"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션에는 메뉴, 그룹, 단추, combos 및 비트맵과 같이 최대 5 개의 하위 섹션이 포함 될 수 있습니다.
@@ -42,13 +44,13 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |패키지|명령을 제공 하는 VSPackage을 식별 하는 GUID입니다.<br /><br /> 예를 들면 package = "guidVsPackage1Pkg"입니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴를 정의 합니다.|
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
@@ -58,7 +60,7 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|
 
@@ -88,6 +90,6 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 <Commands>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

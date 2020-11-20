@@ -1,5 +1,7 @@
 ---
 title: 비트맵 요소 | Microsoft Docs
+description: Bitmap 요소는 하나 이상의 비트맵 요소를 그룹화 합니다. 이 문서에는 비트맵 요소의 예가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739980"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974568"
 ---
 # <a name="bitmaps-element"></a>비트맵 요소
 [Bitmap 요소](../extensibility/bitmap-element.md) 요소를 그룹화 합니다.
@@ -35,20 +37,20 @@ ms.locfileid: "80739980"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[비트맵 요소](../extensibility/bitmaps-element.md)|비트맵 요소를 그룹화 합니다.|
 |[Bitmap 요소](../extensibility/bitmap-element.md)|비트맵을 정의 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|
 
@@ -62,6 +64,6 @@ ms.locfileid: "80739980"
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

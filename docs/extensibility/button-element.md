@@ -1,5 +1,7 @@
 ---
 title: Button 요소 | Microsoft Docs
+description: Button 요소는 사용자가 상호 작용할 수 있는 요소를 정의 합니다. Button, MenuButton 및 SplitDropDown 단추를 사용할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739934"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974489"
 ---
 # <a name="button-element"></a>Button 요소
 사용자가 조작할 수 있는 요소를 정의 합니다. 단추, MenuButton 및 SplitDropDown 단추가 다를 수 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "80739934"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
 |id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
@@ -47,21 +49,21 @@ ms.locfileid: "80739934"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[부모 요소](../extensibility/parent-element.md)|선택 사항입니다. 단추의 부모 요소입니다.|
 |[Icon 요소](../extensibility/icon-element.md)|선택 사항입니다. 단추와 연결 된 아이콘입니다.|
 |[명령 플래그 요소](../extensibility/command-flag-element.md)|필수 요소. 단추에 대 한 유효한 CommandFlag 값은 다음과 같습니다.<br /><br /> -AllowParams<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -Text) 단추<br /><br /> -TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|
 |[Strings 요소](../extensibility/strings-element.md)|필수 요소. 자식 [Buttontext 요소](../extensibility/buttontext-element.md) 를 정의 해야 합니다.|
-|주석|선택적 설명입니다.|
+|Annotation|선택적 설명입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Buttons 요소](../extensibility/buttons-element.md)|단추 요소를 그룹화 합니다.|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 *. vsct* 파일의 단추를 정의 합니다.
 
  ```xml
@@ -76,5 +78,5 @@ ms.locfileid: "80739934"
 </Button>
  ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

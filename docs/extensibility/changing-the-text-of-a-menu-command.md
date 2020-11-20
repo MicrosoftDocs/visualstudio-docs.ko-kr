@@ -1,5 +1,7 @@
 ---
 title: 메뉴 명령의 텍스트 변경 | Microsoft Docs
+description: 이 코드 예제를 검토 하 여 IMenuCommandService 서비스를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22669e67becb62d5e90f58c0cdd6b572e684bcf
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183693"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974390"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>메뉴 명령의 텍스트를 변경 합니다.
 다음 단계에서는 서비스를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법을 보여 줍니다 <xref:System.ComponentModel.Design.IMenuCommandService> .
 
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService를 사용 하 여 메뉴 명령 레이블 변경
 
-1. `MenuText` **ChangeMenuText**라는 메뉴 명령을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+1. `MenuText` **ChangeMenuText** 라는 메뉴 명령을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 2. *. Vsct* 파일에서 `TextChanges` 다음 예제와 같이 메뉴 명령에 플래그를 추가 합니다.
 
@@ -73,6 +75,6 @@ ms.locfileid: "84183693"
 
 5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 나타납니다.
 
-6. **도구** 메뉴에서 **Invoke ChangeMenuText**라는 명령이 표시 되어야 합니다.
+6. **도구** 메뉴에서 **Invoke ChangeMenuText** 라는 명령이 표시 되어야 합니다.
 
-7. 명령을 클릭 합니다. **MenuItemCallback** 가 호출 되었음을 알리는 메시지 상자가 표시 됩니다. 메시지 상자를 해제할 때 도구 메뉴의 명령 이름이 **새 텍스트**임을 확인할 수 있습니다.
+7. 명령을 클릭 합니다. **MenuItemCallback** 가 호출 되었음을 알리는 메시지 상자가 표시 됩니다. 메시지 상자를 해제할 때 도구 메뉴의 명령 이름이 **새 텍스트** 임을 확인할 수 있습니다.

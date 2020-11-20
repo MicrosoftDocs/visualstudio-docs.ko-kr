@@ -1,5 +1,7 @@
 ---
 title: 소프트웨어 개발 키트 만들기 | Microsoft Docs
+description: Sdk의 일반 인프라 및 플랫폼 SDK와 확장 SDK를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904114"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974320"
 ---
 # <a name="create-a-software-development-kit"></a>소프트웨어 개발 키트 만들기
 
@@ -33,7 +35,7 @@ Sdk에는 다음과 같은 두 가지 유형이 있습니다.
 
 ### <a name="installation"></a>설치
 
-모든 플랫폼 Sdk는 *HKLM\Software\Microsoft\Microsoft sdk \\ [tpi] \v [tpi] \\ @InstallationFolder = [SDK root]* 에 설치 됩니다. 따라서 SDK는 [!INCLUDE[win81](../debugger/includes/win81_md.md)] *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*에 설치 됩니다.
+모든 플랫폼 Sdk는 *HKLM\Software\Microsoft\Microsoft sdk \\ [tpi] \v [tpi] \\ @InstallationFolder = [SDK root]* 에 설치 됩니다. 따라서 SDK는 [!INCLUDE[win81](../debugger/includes/win81_md.md)] *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1* 에 설치 됩니다.
 
 ### <a name="layout"></a>Layout
 
@@ -50,11 +52,11 @@ Sdk에는 다음과 같은 두 가지 유형이 있습니다.
                         \[arch]
 ```
 
-| 노드 | 설명 |
+| 노드 | Description |
 |------------------------| - |
 | *참조* 폴더 | 코딩 될 수 있는 Api를 포함 하는 이진 파일을 포함 합니다. 여기에는 Windows 메타 데이터 (WinMD) 파일 또는 어셈블리가 포함 될 수 있습니다. |
-| *Designtime* 폴더 | 사전 실행/디버깅 시간에만 필요한 파일을 포함 합니다. 여기에는 XML 문서, 라이브러리, 헤더, 도구 상자 디자인 타임 이진 파일, MSBuild 아티팩트 등이 포함 될 수 있습니다.<br /><br /> XML 문서를 *\Designtime* 폴더에 배치 하는 것이 가장 좋지만, 참조용 xml 문서는 Visual Studio의 참조 파일과 함께 계속 배치 됩니다. 예를 들어 참조에 대 한 XML doc<em> \\ [config] \\ [아치] \sample.dll</em> 은 *\references \\ [config] \\ [\sample.xml*)가 되며 해당 문서의 지역화 된 버전은 *\references \\ [config] \\ [아치] \\ [locale] \sample.xml*됩니다. |
-| *구성* 폴더 | *Debug*, *Retail* 및 *CommonConfiguration*의 폴더는 3 개만 있을 수 있습니다. Sdk 작성자는 sdk 소비자가 대상으로 하는 구성에 관계 없이 동일한 SDK 파일 집합을 사용 해야 하는 경우 *CommonConfiguration* 아래에 해당 파일을 저장할 수 있습니다. |
+| *Designtime* 폴더 | 사전 실행/디버깅 시간에만 필요한 파일을 포함 합니다. 여기에는 XML 문서, 라이브러리, 헤더, 도구 상자 디자인 타임 이진 파일, MSBuild 아티팩트 등이 포함 될 수 있습니다.<br /><br /> XML 문서를 *\Designtime* 폴더에 배치 하는 것이 가장 좋지만, 참조용 xml 문서는 Visual Studio의 참조 파일과 함께 계속 배치 됩니다. 예를 들어 참조에 대 한 XML doc <em> \\ [config] \\ [아치] \sample.dll</em> 은 *\references \\ [config] \\ [\sample.xml*)가 되며 해당 문서의 지역화 된 버전은 *\references \\ [config] \\ [아치] \\ [locale] \sample.xml* 됩니다. |
+| *구성* 폴더 | *Debug*, *Retail* 및 *CommonConfiguration* 의 폴더는 3 개만 있을 수 있습니다. Sdk 작성자는 sdk 소비자가 대상으로 하는 구성에 관계 없이 동일한 SDK 파일 집합을 사용 해야 하는 경우 *CommonConfiguration* 아래에 해당 파일을 저장할 수 있습니다. |
 | *아키텍처* 폴더 | 지원 되는 모든 *아키텍처* 폴더가 있을 수 있습니다. Visual Studio는 x86, x64, ARM 및 중립적인 아키텍처를 지원 합니다. 참고: Win32는 x 86에 매핑되고 AnyCPU는 중립에 매핑됩니다.<br /><br /> MSBuild는 플랫폼 Sdk에 대 한 *\CommonConfiguration\neutral* 에서만 보입니다. |
 | *SDKManifest.xml* | 이 파일은 Visual Studio에서 SDK를 사용 하는 방법을 설명 합니다. 다음에 대 한 SDK 매니페스트를 확인 합니다 [!INCLUDE[win81](../debugger/includes/win81_md.md)] .<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 개체 브라우저 찾아보기 목록에 표시 되는 값입니다.<br /><br /> **Platformidentity:** 이 특성이 있으면 SDK가 플랫폼 SDK이 고이 sdk에서 추가 된 참조를 로컬로 복사 하지 않는다는 것을 Visual Studio 및 MSBuild에 알립니다.<br /><br /> **Targetframework:** 이 특성은 Visual Studio에서이 특성의 값에 지정 된 것과 같은 프레임 워크를 대상으로 하는 프로젝트 에서만 SDK를 사용할 수 있도록 하는 데 사용 됩니다.<br /><br /> **Minvsversion:** 이 특성은 Visual Studio에서 해당 특성에 적용 되는 Sdk만을 사용 하는 데 사용 됩니다.<br /><br /> **참조:** 이 특성은 컨트롤을 포함 하는 참조에 대해서만 지정 해야 합니다. 참조에 컨트롤이 포함 되어 있는지 여부를 지정 하는 방법에 대 한 자세한 내용은 아래를 참조 하세요. |
 
@@ -107,7 +109,7 @@ Sdk에는 다음과 같은 두 가지 유형이 있습니다.
 
 2. *References* 폴더: api를 포함 하는 이진 파일입니다. 이러한 파일은 Windows 메타 데이터 (WinMD) 파일 또는 어셈블리가 될 수 있습니다.
 
-3. *Redist* 폴더: 런타임/디버깅에 필요한 파일이 며 사용자 응용 프로그램의 일부로 패키지 되어야 합니다. 모든 이진 파일은 *\redist \\<config \> \\ \><아치*아래에 배치 해야 하며, 이진 이름에는 고유성을 보장 하기 위해 다음과 같은 형식이 있어야 합니다. *]* \<company> ... \<product> \<purpose> \<extension> <em>. 예를 들면 * Microsoft.Cpp.Build.dll</em>입니다. 다른 Sdk의 파일 이름 (예: javascript, css, pri, xaml, png, jpg 파일)과 충돌 하는 이름을 가진 모든 파일은 <em> \\ \> \\ \> \\ xaml 컨트롤에 연결 된 파일을 제외 하 고 sdkname<아치<<\> \* 아래에 배치 해야 합니다. 이러한 파일은 * \redist \\<config \> \\<아치 \> \\<componentname \> \\ 아래에 배치 해야</em>합니다.
+3. *Redist* 폴더: 런타임/디버깅에 필요한 파일이 며 사용자 응용 프로그램의 일부로 패키지 되어야 합니다. 모든 이진 파일은 *\redist \\<config \> \\ \><아치* 아래에 배치 해야 하며, 이진 이름에는 고유성을 보장 하기 위해 다음과 같은 형식이 있어야 합니다. *]* \<company> ... \<product> \<purpose> \<extension> <em>. 예를 들면 * Microsoft.Cpp.Build.dll</em>입니다. 다른 Sdk의 파일 이름 (예: javascript, css, pri, xaml, png, jpg 파일)과 충돌 하는 이름을 가진 모든 파일은 <em> \\ \> \\ \> \\ xaml 컨트롤에 연결 된 파일을 제외 하 고 sdkname<아치<<\> \* 아래에 배치 해야 합니다. 이러한 파일은 * \redist \\<config \> \\<아치 \> \\<componentname \> \\ 아래에 배치 해야</em>합니다.
 
 4. *Designtime* 폴더: 사전 실행/디버깅 시간에만 필요한 파일 이며 사용자 응용 프로그램의 일부로 패키지할 수 없습니다. XML 문서, 라이브러리, 헤더, 도구 상자 디자인 타임 이진 파일, MSBuild 아티팩트 등이 될 수 있습니다. 네이티브 프로젝트에서 사용 하기 위한 모든 SDK에는 *SDKName* 파일이 있어야 합니다. 다음은 이러한 파일 형식의 샘플을 보여 줍니다.
 
@@ -127,9 +129,9 @@ Sdk에는 다음과 같은 두 가지 유형이 있습니다.
 
    ```
 
-    XML 참조 문서는 참조 파일과 함께 배치 됩니다. 예를 들어 *\references \\<구성 \> \\<아치 \>\sample.dll* 어셈블리에 대 한 XML 참조 문서는 * \\ 구성 \> \\<아치 \>\sample.xml<구성<* 의 *지역화 된 버전입니다. \\ \> \\ \> \\ \> *
+    XML 참조 문서는 참조 파일과 함께 배치 됩니다. 예를 들어 *\references \\<구성 \> \\<아치 \>\sample.dll* 어셈블리에 대 한 XML 참조 문서는 *\\ 구성 \> \\<아치 \>\sample.xml<구성<* 의 *지역화 된 버전입니다. \\ \> \\ \> \\ \>*
 
-5. *구성* 폴더: *Debug*, *Retail*및 *CommonConfiguration*의 세 하위 폴더입니다. Sdk 작성자는 sdk 소비자의 대상 구성에 관계 없이 동일한 SDK 파일 집합을 사용 해야 하는 경우 *CommonConfiguration* 에 파일을 저장할 수 있습니다.
+5. *구성* 폴더: *Debug*, *Retail* 및 *CommonConfiguration* 의 세 하위 폴더입니다. Sdk 작성자는 sdk 소비자의 대상 구성에 관계 없이 동일한 SDK 파일 집합을 사용 해야 하는 경우 *CommonConfiguration* 에 파일을 저장할 수 있습니다.
 
 6. *아키텍처* 폴더: x86, X64, ARM, 중립적 아키텍처가 지원 됩니다. Win32는 x 86에 매핑되고 AnyCPU는 중립으로 매핑됩니다.
 
@@ -181,9 +183,9 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 9. SupportedArchitectures: SDK에서 지 원하는 아키텍처의 세미콜론으로 구분 된 목록입니다. 소비 하는 프로젝트의 대상 SDK 아키텍처가 지원 되지 않는 경우 MSBuild에서 경고를 표시 합니다. 이 특성을 지정 하지 않으면 MSBuild는이 유형의 경고를 표시 하지 않습니다.
 
-10. SupportsMultipleVersions:이 특성이 **오류** 또는 **경고**로 설정 된 경우 MSBuild는 동일한 프로젝트가 동일한 SDK 제품군의 여러 버전을 참조할 수 없음을 나타냅니다. 이 특성이 없거나 **허용**으로 설정 되어 있으면 MSBuild는이 유형의 오류 또는 경고를 표시 하지 않습니다.
+10. SupportsMultipleVersions:이 특성이 **오류** 또는 **경고** 로 설정 된 경우 MSBuild는 동일한 프로젝트가 동일한 SDK 제품군의 여러 버전을 참조할 수 없음을 나타냅니다. 이 특성이 없거나 **허용** 으로 설정 되어 있으면 MSBuild는이 유형의 오류 또는 경고를 표시 하지 않습니다.
 
-11. AppX: 디스크의 Windows 구성 요소 라이브러리에 대 한 앱 패키지의 경로를 지정 합니다. 이 값은 로컬 디버깅 중에 Windows 구성 요소 라이브러리의 등록 구성 요소에 전달 됩니다. 파일 이름에 대 한 명명 규칙은 ... * \<Company> \<Product> \<Architecture> \<Configuration> 입니다 \<Version> . appx*. 구성 및 아키텍처는 Windows 구성 요소 라이브러리에 적용 되지 않는 경우 특성 이름 및 특성 값에서 선택 사항입니다. 이 값은 Windows 구성 요소 라이브러리에만 적용 됩니다.
+11. AppX: 디스크의 Windows 구성 요소 라이브러리에 대 한 앱 패키지의 경로를 지정 합니다. 이 값은 로컬 디버깅 중에 Windows 구성 요소 라이브러리의 등록 구성 요소에 전달 됩니다. 파일 이름에 대 한 명명 규칙은 ... *\<Company> \<Product> \<Architecture> \<Configuration> 입니다 \<Version> . appx*. 구성 및 아키텍처는 Windows 구성 요소 라이브러리에 적용 되지 않는 경우 특성 이름 및 특성 값에서 선택 사항입니다. 이 값은 Windows 구성 요소 라이브러리에만 적용 됩니다.
 
 12. CopyRedistToSubDirectory: 앱 패키지 루트 (즉, **앱 패키지 만들기** 마법사에서 선택한 **패키지 위치** )와 런타임 레이아웃 루트를 기준으로 *\redist* 폴더 아래의 파일을 복사할 위치를 지정 합니다. 기본 위치는 앱 패키지 및 **F5** 레이아웃의 루트입니다.
 
@@ -267,7 +269,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [연습: c # 또는 Visual Basic를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

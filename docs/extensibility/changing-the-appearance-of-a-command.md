@@ -1,5 +1,7 @@
 ---
 title: 명령 모양 변경 | Microsoft Docs
+description: 명령 사용/사용 안 함, 숨김/표시 또는 선택/선택 취소와 같은 명령 모양을 변경 하는 피드백을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183719"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974410"
 ---
 # <a name="change-the-appearance-of-a-command"></a>명령 모양 변경
 명령의 모양을 변경 하 여 사용자에 게 피드백을 제공할 수 있습니다. 예를 들어, 사용할 수 없는 경우 명령이 다르게 표시 되도록 할 수 있습니다. 명령을 사용 하거나 사용 하지 않도록 설정 하거나, 메뉴에서 표시 하거나 숨길 수 있습니다.
@@ -80,11 +82,11 @@ ms.locfileid: "84183719"
 
 6. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 되어야 합니다.
 
-7. **도구** 메뉴에서 **ChangeMenuText 호출** 명령을 클릭 합니다. 이 시점에서 명령 이름은 ChangeMenuText를 **호출**하므로 명령 처리기가 **ChangeMyCommand ()** 를 호출 하지 않습니다.
+7. **도구** 메뉴에서 **ChangeMenuText 호출** 명령을 클릭 합니다. 이 시점에서 명령 이름은 ChangeMenuText를 **호출** 하므로 명령 처리기가 **ChangeMyCommand ()** 를 호출 하지 않습니다.
 
-8. 이제 **도구** 메뉴에 **새 텍스트가**표시 됩니다. **새 텍스트**를 클릭 합니다. 이제 명령이 회색으로 표시 됩니다.
+8. 이제 **도구** 메뉴에 **새 텍스트가** 표시 됩니다. **새 텍스트** 를 클릭 합니다. 이제 명령이 회색으로 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

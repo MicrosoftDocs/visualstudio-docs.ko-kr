@@ -1,5 +1,6 @@
 ---
 title: 소스 제어 플러그 인 구현-모범 사례
+description: Visual Studio에서 소스 제어 플러그 인을 안정적으로 구현 하는 데 도움이 되는 기술 세부 정보를 검토 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038454"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974643"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인을 구현 하기 위한 모범 사례
 다음 기술 세부 정보는에서 소스 제어 플러그 인을 안정적으로 구현 하는 데 도움이 될 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

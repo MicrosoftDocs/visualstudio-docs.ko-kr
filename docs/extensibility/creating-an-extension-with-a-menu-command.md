@@ -1,5 +1,7 @@
 ---
 title: 메뉴 명령을 사용 하 여 확장 만들기 | Microsoft Docs
+description: 메모장을 실행 하는 메뉴 명령을 사용 하 여 확장을 만드는 방법에 대해 알아봅니다. 메뉴 명령을 만든 다음 메뉴 명령 처리기를 변경 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,34 +15,34 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972337"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974276"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
 
 이 연습에서는 메모장을 실행 하는 메뉴 명령을 사용 하 여 확장을 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-menu-command"></a>메뉴 명령 만들기
 
-1. **Firstmenucommand**라는 VSIX 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
+1. **Firstmenucommand** 라는 VSIX 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
 ::: moniker range="vs-2017"
 
-2. 프로젝트가 열리면 **firstcommand**라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs*로 변경 합니다.
+2. 프로젝트가 열리면 **firstcommand** 라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs* 로 변경 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 프로젝트가 열리면 **firstcommand**라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs*로 변경 합니다.
+2. 프로젝트가 열리면 **firstcommand** 라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *FirstCommand.cs* 로 변경 합니다.
 
 ::: moniker-end
 
@@ -50,17 +52,17 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ::: moniker range="vs-2017"
 
-4. 실험적 인스턴스에서 **도구**  >  **확장 및 업데이트** 창을 엽니다. 여기에 **Firstmenucommand** 확장이 표시 됩니다. Visual Studio의 작업 인스턴스에서 **확장 및 업데이트** 를 열면 **firstmenucommand**가 표시 되지 않습니다.
+4. 실험적 인스턴스에서 **도구**  >  **확장 및 업데이트** 창을 엽니다. 여기에 **Firstmenucommand** 확장이 표시 됩니다. Visual Studio의 작업 인스턴스에서 **확장 및 업데이트** 를 열면 **firstmenucommand** 가 표시 되지 않습니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 실험적 **인스턴스에서 확장**  >  **관리** 확장 창을 엽니다. 여기에 **Firstmenucommand** 확장이 표시 됩니다. Visual Studio의 작업 인스턴스에서 **확장 관리** 를 열면 **firstmenucommand**가 표시 되지 않습니다.
+4. 실험적 **인스턴스에서 확장**  >  **관리** 확장 창을 엽니다. 여기에 **Firstmenucommand** 확장이 표시 됩니다. Visual Studio의 작업 인스턴스에서 **확장 관리** 를 열면 **firstmenucommand** 가 표시 되지 않습니다.
 
 ::: moniker-end
 
-이제 실험적 인스턴스의 **도구** 메뉴로 이동 합니다. **FirstCommand 명령 호출** 을 확인 해야 합니다. 이 시점에서 명령은 **FirstMenuCommand MenuItemCallback () 내에 firstcommand**라는 메시지 상자를 표시 합니다. 다음 섹션에서이 명령을 실행 하 여 실제로 메모장을 시작 하는 방법을 알아봅니다.
+이제 실험적 인스턴스의 **도구** 메뉴로 이동 합니다. **FirstCommand 명령 호출** 을 확인 해야 합니다. 이 시점에서 명령은 **FirstMenuCommand MenuItemCallback () 내에 firstcommand** 라는 메시지 상자를 표시 합니다. 다음 섹션에서이 명령을 실행 하 여 실제로 메모장을 시작 하는 방법을 알아봅니다.
 
 ## <a name="change-the-menu-command-handler"></a>메뉴 명령 처리기 변경
 
@@ -100,17 +102,17 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     }
     ```
 
-4. 이제 사용해 보세요. 프로젝트 디버깅을 시작 하 고 **도구**  >  **호출 firstcommand**를 클릭 하면 메모장의 인스턴스가 표시 됩니다.
+4. 이제 사용해 보세요. 프로젝트 디버깅을 시작 하 고 **도구**  >  **호출 firstcommand** 를 클릭 하면 메모장의 인스턴스가 표시 됩니다.
 
     클래스의 인스턴스를 사용 하 여 <xref:System.Diagnostics.Process> 메모장 뿐만 아니라 실행 파일을 실행할 수 있습니다. 예를 들어를 사용 하 여 사용해 보세요 `calc.exe` .
 
 ## <a name="clean-up-the-experimental-environment"></a>실험적 환경 정리
 
-여러 확장을 개발 하거나 확장 코드의 다른 버전을 사용 하 여 결과를 탐색 하는 경우 실험 환경에서 작동 하지 않을 수 있습니다. 이 경우 다시 설정 스크립트를 실행 해야 합니다. **Visual Studio 실험적 인스턴스를 다시 설정**하 고 VISUAL studio SDK의 일부로 제공 됩니다. 이 스크립트는 실험적 환경에서 확장에 대 한 모든 참조를 제거 하므로 처음부터 시작할 수 있습니다.
+여러 확장을 개발 하거나 확장 코드의 다른 버전을 사용 하 여 결과를 탐색 하는 경우 실험 환경에서 작동 하지 않을 수 있습니다. 이 경우 다시 설정 스크립트를 실행 해야 합니다. **Visual Studio 실험적 인스턴스를 다시 설정** 하 고 VISUAL studio SDK의 일부로 제공 됩니다. 이 스크립트는 실험적 환경에서 확장에 대 한 모든 참조를 제거 하므로 처음부터 시작할 수 있습니다.
 
 이 스크립트는 다음 두 가지 방법 중 하나로 가져올 수 있습니다.
 
-1. 바탕 화면에서 **Visual Studio 실험적 인스턴스 다시 설정**을 찾습니다.
+1. 바탕 화면에서 **Visual Studio 실험적 인스턴스 다시 설정** 을 찾습니다.
 
 2. 명령줄에서 다음을 실행하세요.
 
@@ -127,9 +129,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
-확장을 설치 하려면 *친구는 Visual* Studio의 모든 열린 인스턴스를 닫은 다음 vsix 파일을 두 번 클릭 하 여 **vsix 설치 관리자**를 표시 해야 합니다. 파일이 *%LocalAppData%\Microsoft\VisualStudio \<version> \extensions* 디렉터리에 복사 됩니다.
+확장을 설치 하려면 *친구는 Visual* Studio의 모든 열린 인스턴스를 닫은 다음 vsix 파일을 두 번 클릭 하 여 **vsix 설치 관리자** 를 표시 해야 합니다. 파일이 *%LocalAppData%\Microsoft\VisualStudio \<version> \extensions* 디렉터리에 복사 됩니다.
 
-친구가 Visual Studio를 다시 시작 하면 **도구**  >  **확장 및 업데이트**에서 firstmenucommand 확장을 찾을 수 있습니다. 확장 **및 업데이트로** 이동 하 여 확장을 제거 하거나 사용 하지 않도록 설정할 수 있습니다.
+친구가 Visual Studio를 다시 시작 하면 **도구**  >  **확장 및 업데이트** 에서 firstmenucommand 확장을 찾을 수 있습니다. 확장 **및 업데이트로** 이동 하 여 확장을 제거 하거나 사용 하지 않도록 설정할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

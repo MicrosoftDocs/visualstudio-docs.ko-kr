@@ -1,5 +1,7 @@
 ---
 title: WPF 도구 상자 컨트롤 만들기 | Microsoft Docs
+description: WPF 도구 상자 컨트롤 템플릿을 사용 하 여 다른 사용자에 게 배포할 수 있는 도구 상자 컨트롤을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903951"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973979"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF 도구 상자 컨트롤 만들기
 
@@ -31,9 +33,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `MyToolboxControl` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 프로젝트가 열리면 이라는 **WPF 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `MyToolboxControl` . **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **WPF 도구 상자 컨트롤**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolboxControl.cs*로 변경 합니다.
+2. 프로젝트가 열리면 이라는 **WPF 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `MyToolboxControl` . **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **WPF 도구 상자 컨트롤** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolboxControl.cs* 로 변경 합니다.
 
-    이제 솔루션에는 사용자 정의 컨트롤, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **도구 상자**에 컨트롤을 추가 하는 VisualStudio 및 배포를 위한 VSIX 매니페스트에 **ToolboxControl** 자산 항목이 포함 되어 있습니다.
+    이제 솔루션에는 사용자 정의 컨트롤, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **도구 상자** 에 컨트롤을 추가 하는 VisualStudio 및 배포를 위한 VSIX 매니페스트에 **ToolboxControl** 자산 항목이 포함 되어 있습니다.
 
 #### <a name="to-create-the-control-ui"></a>컨트롤 UI를 만들려면
 
@@ -55,13 +57,13 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ## <a name="renaming-the-control"></a>컨트롤 이름 바꾸기
 
- 기본적으로 컨트롤은 **MyToolboxControl MyToolboxControl**이라는 그룹의 **MyToolboxControl** 로 **도구 상자** 에 표시 됩니다. 이러한 이름은 *MyToolboxControl.xaml.cs* 파일에서 변경할 수 있습니다.
+ 기본적으로 컨트롤은 **MyToolboxControl MyToolboxControl** 이라는 그룹의 **MyToolboxControl** 로 **도구 상자** 에 표시 됩니다. 이러한 이름은 *MyToolboxControl.xaml.cs* 파일에서 변경할 수 있습니다.
 
 1. 코드 보기에서 *MyToolboxControl.xaml.cs* 을 엽니다.
 
 2. 클래스를 찾아 `MyToolboxControl` TestControl로 이름을 바꿉니다. 이 작업을 수행 하는 가장 빠른 방법은 클래스 이름을 바꾼 다음 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택 하 고 단계를 완료 하는 것입니다. **이름 바꾸기** 명령에 대 한 자세한 내용은 [이름 바꾸기 리팩터링 (c #)](../ide/reference/rename.md)을 참조 하세요.
 
-3. 특성으로 이동 하 여 `ProvideToolboxControl` **테스트**를 위해 첫 번째 매개 변수의 값을 변경 합니다. **도구 상자**에 컨트롤을 포함 하는 그룹의 이름입니다.
+3. 특성으로 이동 하 여 `ProvideToolboxControl` **테스트** 를 위해 첫 번째 매개 변수의 값을 변경 합니다. **도구 상자** 에 컨트롤을 포함 하는 그룹의 이름입니다.
 
     결과 코드는 다음과 같습니다.
 
@@ -96,8 +98,8 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 1. 테스트 된 프로젝트를 빌드한 후 프로젝트의 * \bin\debug 폴더에서 *.vsix* 파일을 찾을 수 있습니다. \*
 
-2. *.Vsix* 파일을 두 번 클릭 하 고 설치 절차를 수행 하 여 로컬 컴퓨터에 설치할 수 있습니다. 컨트롤을 제거 하려면 **도구**  >  **확장 및 업데이트** 로 이동 하 여 컨트롤 확장을 찾은 다음 **제거**를 클릭 합니다.
+2. *.Vsix* 파일을 두 번 클릭 하 고 설치 절차를 수행 하 여 로컬 컴퓨터에 설치할 수 있습니다. 컨트롤을 제거 하려면 **도구**  >  **확장 및 업데이트** 로 이동 하 여 컨트롤 확장을 찾은 다음 **제거** 를 클릭 합니다.
 
 3. 네트워크 또는 웹 사이트에 *.vsix* 파일을 업로드 합니다.
 
-    [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트에 파일을 업로드 하는 경우 다른 사용자가 **Tools**  >  Visual Studio에서 도구**확장 및 업데이트** 를 사용 하 여 온라인으로 컨트롤을 찾아 설치할 수 있습니다.
+    [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트에 파일을 업로드 하는 경우 다른 사용자가 **Tools**  >  Visual Studio에서 도구 **확장 및 업데이트** 를 사용 하 여 온라인으로 컨트롤을 찾아 설치할 수 있습니다.

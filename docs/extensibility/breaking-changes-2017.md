@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2017 확장성의 주요 변경 내용
+description: Visual Studio 2017 확장성 모델의 주요 변경 내용에 대 한 자세한 내용 및 해결 하기 위해 수행할 수 있는 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011790"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973754"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -63,7 +65,7 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
 
 * GAC에 설치 된 어셈블리는 다음과 같습니다.
 
-  이러한 어셈블리는 이제 <em>[INSTALLDIR] \Common7\IDE \* , * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*아래에 설치 됩니다. 이러한 폴더는 Visual Studio 프로세스의 검색 경로에 포함 되어 있습니다.
+  이러한 어셈블리는 이제 <em>[INSTALLDIR] \Common7\IDE \* , * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> 또는 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies* 아래에 설치 됩니다. 이러한 폴더는 Visual Studio 프로세스의 검색 경로에 포함 되어 있습니다.
 
 * 비 검색 경로에 설치 된 어셈블리를 GAC에 설치 합니다.
 
@@ -98,7 +100,7 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
 ### <a name="global-com-registration"></a>전역 COM 등록
 
 * 이전에는 Visual Studio가 네이티브 COM 등록을 지원 하기 위해 HKEY_CLASSES_ROOT 및 HKEY_LOCAL_MACHINE hive에 많은 레지스트리 키를 설치 했습니다. 이러한 영향을 제거 하기 위해 Visual Studio에서는 이제 [COM 구성 요소에 대해 등록이 필요 없는 활성화](/previous-versions/dotnet/articles/ms973913(v=msdn.10))를 사용 합니다.
-* 결과적 으로% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv 아래의 대부분의 TLB/DTE.OLB/DLL 파일은 Visual Studio에 의해 더 이상 기본적으로 설치 되지 않습니다. 이제 이러한 파일은 Visual Studio 호스트 프로세스에서 사용 하는 해당 등록이 필요 없는 COM 매니페스트가 있는 [INSTALLDIR] 아래에 설치 됩니다.
+* 결과적 으로% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv 아래의 대부분의 TLB/DTE.OLB/DLL 파일은 Visual Studio에 의해 더 이상 기본적으로 설치 되지 않습니다. 이제 이러한 파일은 Visual Studio 호스트 프로세스에서 사용 하는 해당 Registration-Free COM 매니페스트와 함께 [INSTALLDIR] 아래에 설치 됩니다.
 * 결과적으로, Visual Studio COM 인터페이스에 대 한 전역 COM 등록을 사용 하는 외부 코드는 이러한 등록을 더 이상 찾을 수 없습니다. Visual Studio 프로세스 내에서 실행 되는 코드에는 차이점이 표시 되지 않습니다.
 
 ### <a name="visual-studio-registry"></a>Visual Studio 레지스트리
@@ -109,13 +111,13 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
   * **HKCU\Software\Microsoft\VisualStudio \{ Version}**: 사용자 특정 설정을 저장 하기 위해 Visual Studio에서 만든 레지스트리 키입니다.
   * **HKCU\Software\Microsoft\VisualStudio \{ 버전} _Config**: 위의 Visual STUDIO HKLM 키 복사본과 *.pkgdef* 파일에서 확장명으로 병합 된 레지스트리 키가 있습니다.
 
-* 레지스트리에 대 한 영향을 줄이기 위해 Visual Studio는 이제 [Regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 함수를 사용 하 여 레지스트리 키를 *[VSAPPDATA] \privateregistry.bin*의 전용 이진 파일에 저장 합니다. 매우 적은 수의 Visual Studio 관련 키만 시스템 레지스트리에 남아 있습니다.
+* 레지스트리에 대 한 영향을 줄이기 위해 Visual Studio는 이제 [Regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 함수를 사용 하 여 레지스트리 키를 *[VSAPPDATA] \privateregistry.bin* 의 전용 이진 파일에 저장 합니다. 매우 적은 수의 Visual Studio 관련 키만 시스템 레지스트리에 남아 있습니다.
 * Visual Studio 프로세스 내에서 실행 되는 기존 코드는 영향을 받지 않습니다. Visual Studio는 HKCU Visual Studio 별 키 아래의 모든 레지스트리 작업을 개인 레지스트리로 리디렉션합니다. 다른 레지스트리 위치에 대 한 읽기 및 쓰기는 시스템 레지스트리를 계속 사용 합니다.
 * Visual Studio 레지스트리 항목에 대해이 파일에서 외부 코드를 로드 하 고 읽어야 합니다.
 
 ### <a name="react-to-this-breaking-change"></a>이 주요 변경 사항에 대응
 
-* 외부 코드는 COM 구성 요소에 대 한 등록이 필요 없는 활성화를 사용 하도록 변환 해야 합니다.
+* COM 구성 요소에 대 한 Registration-Free 활성화를 사용 하도록 외부 코드를 변환 해야 합니다.
 * 외부 구성 요소는 여기서 설명 하는 [지침에 따라](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)Visual Studio 위치를 찾을 수 있습니다.
 * 외부 구성 요소는 Visual Studio 레지스트리 키에 직접 읽기/쓰기 대신 [외부 설정 관리자](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) 를 사용 하는 것이 좋습니다.
 * 확장에서 사용 하는 구성 요소가 등록을 위한 다른 기술을 구현 했을 수 있는지 확인 합니다. 예를 들어 디버거 확장은 새로운 [MSVSMON JSON 파일 COM 등록](migrate-debugger-COM-registration.md)을 활용할 수 있습니다.
