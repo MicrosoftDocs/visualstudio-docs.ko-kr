@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492897"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704003"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 
@@ -181,7 +181,7 @@ WPF .NET Core에서 사용자 지정 xmlns 네임스페이스를 만들려면 �
 
 - 디자인 타임 데이터에는 Visual Studio 2019 버전 [16.7](/visualstudio/releases/2019/release-notes) 이상이 필요합니다.
 
-- .NET Core 및 UWP에서 WPF(Windows Presentation Foundation)를 대상으로 하는 Windows 데스크톱 프로젝트를 지원합니다. “.NET Framework용 새 WPF XAML 디자이너” 미리 보기 기능을 사용하도록 설정한 경우 이 기능을 .NET Framework에도 사용할 수 있습니다.
+- .NET Core 및 UWP에서 WPF(Windows Presentation Foundation)를 대상으로 하는 Windows 데스크톱 프로젝트를 지원합니다. 이 기능은 NET Framework용 [미리 보기 채널](/visualstudio/releases/2019/release-notes-preview)에서도 사용할 수 있습니다. 활성화하려면 **도구** > **옵션** > **환경** > **미리 보기 기능** 으로 이동한 다음 **.NET Framework용 새 WPF XAML 디자이너** 를 선택하고 Visual Studio를 다시 시작합니다.
 
 - Visual Studio 2019 버전 16.7부터는 이 기능이 WPF 및 UWP 프레임워크의 모든 기본 제공 컨트롤에서 작동합니다. 타사 컨트롤 지원은 16.8 미리 보기 릴리스에서 사용할 수 있습니다.
 

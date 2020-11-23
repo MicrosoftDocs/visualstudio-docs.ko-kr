@@ -1,5 +1,5 @@
 ---
-title: 디버거에서 실행 중인 프로세스에 연결 | Microsoft Docs
+title: 디버거에서 실행 중인 프로세스에 연결
 ms.custom: seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
@@ -28,21 +28,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959863"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671468"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
-로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스가 실행된 후 **디버그** > **프로세스에 연결**을 선택하거나 Visual Studio에서 **Ctrl**+**Alt**+**P**를 누르고, **프로세스에 연결** 대화 상자를 사용하여 프로세스에 디버거를 연결합니다.
+로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스가 실행된 후 **디버그** > **프로세스에 연결** 을 선택하거나 Visual Studio에서 **Ctrl**+**Alt**+**P** 를 누르고, **프로세스에 연결** 대화 상자를 사용하여 프로세스에 디버거를 연결합니다.
 
-**프로세스에 연결**을 사용하여 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버그하거나, 여러 프로세스를 동시에 디버그하거나, Visual Studio에서 생성되지 않은 앱을 디버그하거나, 디버거가 연결된 Visual Studio에서 시작하지 않은 앱을 디버그할 수 있습니다. 예를 들어 디버거를 사용하지 않고 앱을 실행해 예외가 발생하는 경우 앱을 실행하는 프로세스에 디버거를 연결하고 디버깅을 시작할 수 있습니다.
+**프로세스에 연결** 을 사용하여 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버그하거나, 여러 프로세스를 동시에 디버그하거나, Visual Studio에서 생성되지 않은 앱을 디버그하거나, 디버거가 연결된 Visual Studio에서 시작하지 않은 앱을 디버그할 수 있습니다. 예를 들어 디버거를 사용하지 않고 앱을 실행해 예외가 발생하는 경우 앱을 실행하는 프로세스에 디버거를 연결하고 디버깅을 시작할 수 있습니다.
 
 > [!TIP]
-> 디버깅 시나리오에 **프로세스에 연결**을 사용하고 있는지 확실하지 않은 경우 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
+> 디버깅 시나리오에 **프로세스에 연결** 을 사용하고 있는지 확실하지 않은 경우 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
 
 ## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a> 로컬 컴퓨터에서 실행 중인 프로세스에 연결
 
@@ -52,11 +52,11 @@ ms.locfileid: "91959863"
 
 1. Visual Studio에서 **디버그** > **프로세스에 연결**(또는 **Ctrl**+**Alt**+**P**)을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
 
-1. **연결 형식**을 확인합니다.
+1. **연결 형식** 을 확인합니다.
 
-   대부분의 시나리오에서는 **기본값**을 사용할 수 있습니다. 일부 시나리오에는 다른 연결 형식이 필요할 수 있습니다. 자세한 내용은 이 문서의 다른 섹션 또는 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
+   대부분의 시나리오에서는 **기본값** 을 사용할 수 있습니다. 일부 시나리오에는 다른 연결 형식이 필요할 수 있습니다. 자세한 내용은 이 문서의 다른 섹션 또는 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
 
-1. **연결 대상**을 로컬 컴퓨터 이름으로 설정합니다.
+1. **연결 대상** 을 로컬 컴퓨터 이름으로 설정합니다.
 
    ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
 
@@ -67,20 +67,20 @@ ms.locfileid: "91959863"
    - 프로세스 이름을 모르는 경우 목록을 탐색하거나 일반적인 프로세스 이름에 대한 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
 
    >[!TIP]
-   >**프로세스에 연결** 대화 상자가 열려 있는 동안 배경에서 프로세스를 시작 및 중지할 수 있으므로 실행 중인 프로세스의 목록이 항상 최신 상태인 것은 아닙니다. 언제든지 **새로 고침**을 선택하여 현재 목록을 볼 수 있습니다.
+   >**프로세스에 연결** 대화 상자가 열려 있는 동안 배경에서 프로세스를 시작 및 중지할 수 있으므로 실행 중인 프로세스의 목록이 항상 최신 상태인 것은 아닙니다. 언제든지 **새로 고침** 을 선택하여 현재 목록을 볼 수 있습니다.
 
 1. **연결 대상** 필드에서 디버그할 코드 형식이 표시되어 있는지 확인합니다. 기본 **자동** 설정은 대부분의 앱 유형에서 작동합니다.
 
    **기본값** 연결 형식을 사용하는 경우 연결하려는 코드 형식을 수동으로 선택할 수 있습니다. 그렇지 않으면 **선택** 옵션이 해제될 수 있습니다.
 
    수동으로 코드 형식을 선택하려면
-   1. **선택**을 클릭합니다.
-   1. **코드 형식 선택** 대화 상자의 **다음 코드 형식 디버그**를 선택합니다.
+   1. **선택** 을 클릭합니다.
+   1. **코드 형식 선택** 대화 상자의 **다음 코드 형식 디버그** 를 선택합니다.
       목록의 프로세스에 연결하려고 할 때 오류가 발생하는 경우 [코드 형식 선택](../debugger/select-code-type-dialog-box.md) 대화 상자를 사용하여 [문제를 해결](#BKMK_Troubleshoot_attach_errors)할 수 있습니다.
    1. 디버그할 코드 형식을 선택합니다.
-   1. **확인**을 선택합니다.
+   1. **확인** 을 선택합니다.
 
-1. **연결**을 선택합니다.
+1. **연결** 을 선택합니다.
 
 >[!NOTE]
 >디버깅을 위해 여러 앱에 연결할 수 있지만 한 번에 하나의 앱만 디버거에서 활성화됩니다. Visual Studio **디버그 위치** 도구 모음 또는 **프로세스** 창에서 활성 앱을 설정할 수 있습니다.
@@ -95,14 +95,14 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 
 1. Visual Studio에서 **디버그** > **프로세스에 연결**(또는 **Ctrl**+**Alt**+**P**)을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
 
-1. **연결 형식**을 확인합니다.
+1. **연결 형식** 을 확인합니다.
 
-   대부분의 시나리오에서는 **기본값**을 사용할 수 있습니다. Linux 또는 컨테이너화된 앱 디버깅과 같은 일부 시나리오에는 다른 연결 형식이 필요합니다. 자세한 내용은 이 문서의 다른 섹션 또는 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
+   대부분의 시나리오에서는 **기본값** 을 사용할 수 있습니다. Linux 또는 컨테이너화된 앱 디버깅과 같은 일부 시나리오에는 다른 연결 형식이 필요합니다. 자세한 내용은 이 문서의 다른 섹션 또는 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조하세요.
 
 1. **연결 대상** 상자에서 다음 방법 중 하나를 사용하여 원격 컴퓨터를 선택합니다.
 
-   - **연결 대상**옆에 있는 드롭다운 화살표를 선택하고 드롭다운 목록에서 컴퓨터 이름을 선택합니다.
-   - **연결 대상** 상자에 컴퓨터 이름을 입력하고 **Enter 키**를 누릅니다.
+   - **연결 대상** 옆에 있는 드롭다운 화살표를 선택하고 드롭다운 목록에서 컴퓨터 이름을 선택합니다.
+   - **연결 대상** 상자에 컴퓨터 이름을 입력하고 **Enter 키** 를 누릅니다.
 
      Visual Studio에서 **\<remote computer name>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
 
@@ -119,15 +119,15 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 
      ::: moniker-end
 
-   - **연결 대상** 상자 옆에 있는 **찾기** 단추를 선택하여 **원격 연결** 대화 상자를 엽니다. **원격 연결** 대화 상자에는 로컬 서브넷에 있거나 컴퓨터에 직접 연결된 모든 디바이스가 나열되어 있습니다. 원격 디바이스를 검색하려면 서버에서 [UDP 포트 3702를 열어야](../debugger/remote-debugger-port-assignments.md) 할 수 있습니다. 원하는 컴퓨터 또는 디바이스를 선택한 다음 **선택**을 클릭합니다.
+   - **연결 대상** 상자 옆에 있는 **찾기** 단추를 선택하여 **원격 연결** 대화 상자를 엽니다. **원격 연결** 대화 상자에는 로컬 서브넷에 있거나 컴퓨터에 직접 연결된 모든 디바이스가 나열되어 있습니다. 원격 디바이스를 검색하려면 서버에서 [UDP 포트 3702를 열어야](../debugger/remote-debugger-port-assignments.md) 할 수 있습니다. 원하는 컴퓨터 또는 디바이스를 선택한 다음 **선택** 을 클릭합니다.
 
    > [!NOTE]
    > **연결 형식** 설정은 디버깅 세션 간에 유지됩니다. **연결 대상** 설정은 해당 대상을 사용하여 디버깅 연결에 성공한 경우에만 디버깅 세션 간에 유지됩니다.
 
-3. **새로 고침**을 클릭하여 **사용 가능한 프로세스** 목록을 채웁니다.
+3. **새로 고침** 을 클릭하여 **사용 가능한 프로세스** 목록을 채웁니다.
 
     >[!TIP]
-    >**프로세스에 연결** 대화 상자가 열려 있는 동안 배경에서 프로세스를 시작 및 중지할 수 있으므로 실행 중인 프로세스의 목록이 항상 최신 상태인 것은 아닙니다. 언제든지 **새로 고침**을 선택하여 현재 목록을 볼 수 있습니다.
+    >**프로세스에 연결** 대화 상자가 열려 있는 동안 배경에서 프로세스를 시작 및 중지할 수 있으므로 실행 중인 프로세스의 목록이 항상 최신 상태인 것은 아닙니다. 언제든지 **새로 고침** 을 선택하여 현재 목록을 볼 수 있습니다.
 
 4. **사용 가능한 프로세스** 목록에서 연결하려는 프로세스를 찾아 선택합니다.
 
@@ -145,99 +145,29 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
    **기본값** 연결 형식을 사용하는 경우 연결하려는 코드 형식을 수동으로 선택할 수 있습니다. 그렇지 않으면 **선택** 옵션이 해제될 수 있습니다.
 
    수동으로 코드 형식을 선택하려면
-   1. **선택**을 클릭합니다.
-   1. **코드 형식 선택** 대화 상자의 **다음 코드 형식 디버그**를 선택합니다.
+   1. **선택** 을 클릭합니다.
+   1. **코드 형식 선택** 대화 상자의 **다음 코드 형식 디버그** 를 선택합니다.
       목록의 프로세스에 연결하려고 할 때 오류가 발생하는 경우 [코드 형식 선택](../debugger/select-code-type-dialog-box.md) 대화 상자를 사용하여 [문제를 해결](#BKMK_Troubleshoot_attach_errors)할 수 있습니다.
-   1. **확인**을 선택합니다.
+   1. **확인** 을 선택합니다.
 
-6. **연결**을 선택합니다.
+6. **연결** 을 선택합니다.
 
 >[!NOTE]
 >디버깅을 위해 여러 앱에 연결할 수 있지만 한 번에 하나의 앱만 디버거에서 활성화됩니다. Visual Studio **디버그 위치** 도구 모음 또는 **프로세스** 창에서 활성 앱을 설정할 수 있습니다.
 
-원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정으로 Visual Studio를 실행하는 경우 세션 0에서 실행 중인 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 세션 0은 *w3wp.exe*를 비롯한 서비스 및 기타 서버 프로세스에 사용됩니다. 관리자 계정으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하여 이 문제를 해결할 수 있습니다.
+원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정으로 Visual Studio를 실행하는 경우 세션 0에서 실행 중인 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 세션 0은 *w3wp.exe* 를 비롯한 서비스 및 기타 서버 프로세스에 사용됩니다. 관리자 계정으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하여 이 문제를 해결할 수 있습니다.
 
-이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p <ProcessId>`를 실행하여 프로세스에 연결합니다. 프로세스 ID는 *tlist.exe*를 사용하여 확인할 수 있습니다. *tlist.exe*를 얻으려면 [WDK 및 WinDbg 다운로드](/windows-hardware/drivers/download-the-wdk)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
-
-::: moniker range=">= vs-2019"
+이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p <ProcessId>`를 실행하여 프로세스에 연결합니다. 프로세스 ID는 *tlist.exe* 를 사용하여 확인할 수 있습니다. *tlist.exe* 를 얻으려면 [WDK 및 WinDbg 다운로드](/windows-hardware/drivers/download-the-wdk)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>SSH를 사용하여 Linux에서 실행되는 .NET Core 프로세스에 연결
 
 자세한 내용은 [SSH를 사용하여 Linux에서 실행되는 .NET Core 원격 디버그](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조하세요.
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Linux Docker 컨테이너에서 실행되는 프로세스에 연결
+::: moniker range=">= vs-2019"
 
-**프로세스에 연결** 대화 상자를 사용하여 로컬 또는 원격 컴퓨터의 Linux .NET Core Docker 컨테이너에서 실행되는 프로세스에 Visual Studio 디버거를 연결할 수 있습니다.
+## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Docker 컨테이너에서 실행되는 프로세스에 연결
 
-> [!IMPORTANT]
-> 이 기능을 사용하려면 .NET Core 플랫폼 간 개발 워크로드를 설치하고 소스 코드에 대한 로컬 액세스 권한이 있어야 합니다.
-
-**Linux Docker 컨테이너에서 실행 중인 프로세스에 연결하려면**
-
-1. Visual Studio에서 **디버그 > 프로세스에 연결(CTRL+ALT+P)** 을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
-
-![프로세스에 연결 메뉴](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
-
-2. **연결 형식**을 **Docker(Linux 컨테이너)** 로 설정합니다.
-3. **찾기...** 를 선택하여 **Docker 컨테이너 선택** 대화 상자를 통해 **연결 대상**을 설정합니다.
-
-    Docker 컨테이너 프로세스는 로컬 또는 원격으로 디버그할 수 있습니다.
-
-    **Docker 컨테이너 프로세스를 로컬로 디버그하려면**
-    1. **Docker CLI 호스트**를 **로컬 컴퓨터**로 설정합니다.
-    1. 목록에서 연결할 실행 중인 컨테이너를 선택하고 **확인**을 누릅니다.
-
-    ![Docker 컨테이너 메뉴 선택](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
-
-    **B. Docker 컨테이너 프로세스를 원격으로 디버그하려면**
-
-    > [!NOTE]
-    > Docker 컨테이너에서 실행 중인 프로세스에 원격으로 연결하는 옵션에는 두 가지가 있습니다. SSH를 사용하는 첫 번째 옵션은 로컬 컴퓨터에 Docker 도구를 설치하지 않은 경우에 적합합니다.  Docker 도구를 로컬로 설치했고 원격 요청을 허용하도록 구성된 Docker 디먼이 있는 경우 Docker 디먼을 사용하는 두 번째 옵션을 이용해 보세요.
-
-    1. ***SSH를 통해 원격 컴퓨터에 연결하려면***
-        1. **추가...** 를 선택하여 원격 시스템에 연결합니다.<br/>
-        ![원격 시스템에 연결](../debugger/media/connect-remote-system.png "원격 시스템에 연결")
-        1. SSH 또는 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인**을 누릅니다.
-
-    1. ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
-        1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
-        1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인**을 누릅니다.
-
-4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 Visual Studio에서 C# 컨테이너 프로세스 디버깅을 시작합니다.
-
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")
-
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Windows Docker 컨테이너에서 실행되는 프로세스에 연결
-
-**프로세스에 연결** 대화 상자를 사용하여 로컬 컴퓨터의 Windows Docker 컨테이너에서 실행되는 프로세스에 Visual Studio 디버거를 연결할 수 있습니다.
-
-> [!IMPORTANT]
-> .NET Core 프로세스에 이 기능을 사용하려면 .NET Core 플랫폼 간 개발 워크로드를 설치하고 소스 코드에 대한 로컬 액세스 권한이 있어야 합니다.
-
-**Linux Docker 컨테이너에서 실행 중인 프로세스에 연결하려면**
-
-1. Visual Studio에서 **디버그 > 프로세스에 연결**(또는 **CTRL+ALT+P**)을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
-
-   ![프로세스에 연결 메뉴](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
-
-2. **연결 형식**을 **Docker(Windows 컨테이너)** 로 설정합니다.
-3. **찾기...** 를 선택하여 **Docker 컨테이너 선택** 대화 상자를 통해 **연결 대상**을 설정합니다.
-
-    > [!IMPORTANT]
-    > 대상 프로세스는 실행 중인 Docker Windows 컨테이너와 프로세서 아키텍처가 동일해야 합니다.
-
-   현재는 SSH를 통해 원격 컨테이너를 대상으로 설정할 수 없고 Docker 디먼을 사용해야만 합니다.
-
-    ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
-    1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
-
-    1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 확인을 선택합니다.
-
-4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
-
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete-windows.png "완료된 Windows Docker 연결 메뉴")
-
-5.  사용 가능한 프로세스 목록에서 해당 컨테이너 프로세스를 선택하고 **연결**을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
+Visual Studio 2019부터 Docker 컨테이너에서 실행되는 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. Linux .NET Core Docker 컨테이너의 경우에는 [Linux Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)을 참조하세요. Windows Docker 컨테이너의 경우에는 [Windows Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container)을 참조하세요.
 
 ::: moniker-end
 
@@ -256,23 +186,24 @@ UWP(유니버설 Windows 플랫폼) 앱과 같은 일부 앱 유형에서는 프
 
 디버거에서 C++로 작성된 코드에 연결하려면 코드에 `DebuggableAttribute`가 있어야 합니다. 이 특성은 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 링커 옵션으로 링크하여 자동으로 코드에 추가할 수 있습니다.
 
-클라이언트 쪽 스크립트 디버깅의 경우 브라우저에서 스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome에서 클라이언트 쪽 스크립트를 디버그하려면 **JavaScript(Chrome)** 또는 **JavaScript(Microsoft Edge - Chromium)** 를 코드 형식으로 선택합니다. 그러면 앱 유형에 따라 모든 Chrome 인스턴스를 닫고 디버깅 모드에서 브라우저를 시작해야 할 수 있습니다(명령줄에 `chrome.exe --remote-debugging-port=9222` 입력). 이전 버전의 Visual Studio에서는 Chrome용 스크립트 디버거가 **웹 키트**였습니다.
+클라이언트 쪽 스크립트 디버깅의 경우 브라우저에서 스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome에서 클라이언트 쪽 스크립트를 디버그하려면 **JavaScript(Chrome)** 또는 **JavaScript(Microsoft Edge - Chromium)** 를 코드 형식으로 선택합니다. 그러면 앱 유형에 따라 모든 Chrome 인스턴스를 닫고 디버깅 모드에서 브라우저를 시작해야 할 수 있습니다(명령줄에 `chrome.exe --remote-debugging-port=9222` 입력). 이전 버전의 Visual Studio에서는 Chrome용 스크립트 디버거가 **웹 키트** 였습니다.
 
-연결하려는 실행 중 프로세스를 신속하게 선택하려면 Visual Studio에서 **Ctrl**+**Alt**+**P**를 입력한 다음 프로세스 이름의 첫 글자를 입력합니다.
+연결하려는 실행 중 프로세스를 신속하게 선택하려면 Visual Studio에서 **Ctrl**+**Alt**+**P** 를 입력한 다음 프로세스 이름의 첫 글자를 입력합니다.
 
 |시나리오|디버그 방법|프로세스 이름|참고 사항 및 링크|
 |-|-|-|-|
 |IIS 서버의 ASP.NET 4 또는 4.5 원격 디버그|원격 도구 및 **프로세스에 연결** 사용|*w3wp.exe*|[원격 IIS 컴퓨터의 ASP.NET 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)를 참조하세요.|
 |IIS 서버의 ASP.NET Core 원격 디버그|원격 도구 및 **프로세스에 연결** 사용|*w3wp.exe* 또는 *dotnet.exe*|.NET Core 3부터 *w3wp.exe* 프로세스가 기본 [앱 내 호스팅 모델](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)에 사용됩니다. 앱 배포의 경우 [IIS에 게시](/aspnet/core/host-and-deploy/iis/)를 참조하세요. 자세한 내용은 [원격 IIS 컴퓨터의 ASP.NET Core 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)를 참조하세요.|
 |지원되는 앱 형식에 대해 로컬 IIS 서버의 클라이언트 쪽 스크립트 디버그 |**프로세스에 연결** 사용|*chrome.exe*, *MicrosoftEdgeCP.exe* 또는 *iexplore.exe*|스크립트 디버깅을 사용하도록 설정해야 합니다. Chrome의 경우 디버그 모드에서 Chrome을 실행하고(명령줄에 `chrome.exe --remote-debugging-port=9222` 입력) **연결 대상** 필드에서 **JavaScript(Chrome)** 를 선택합니다.|
-|로컬 컴퓨터에서 C#, Visual Basic 또는 C++ 앱을 디버그|표준 디버깅(**F5**) 또는 **프로세스에 연결** 을 사용|*\<appname>.exe*|대부분의 시나리오에서는 **프로세스에 연결**이 아니라 표준 디버깅을 사용합니다.|
+|로컬 컴퓨터에서 C#, Visual Basic 또는 C++ 앱을 디버그|표준 디버깅(**F5**) 또는 **프로세스에 연결** 을 사용|*\<appname>.exe*|대부분의 시나리오에서는 **프로세스에 연결** 이 아니라 표준 디버깅을 사용합니다.|
 |Windows 데스크톱 앱 원격 디버그|원격 도구|N/A| [C# 또는 Visual Basic 앱 원격 디버그](../debugger/remote-debugging-csharp.md) 또는 [C++ 앱 원격 디버그](../debugger/remote-debugging-cpp.md)을 참조하세요.|
-|Linux에서 .NET Core 원격 디버그|**프로세스에 연결** 사용|*dotnet.exe*|SSH를 사용하려면 [SSH를 사용하여 Linux에서 실행되는 .NET Core 원격 디버그](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조하세요. 컨테이너화된 앱의 경우 이 문서의 이전 섹션을 참조하세요.|
+|Linux에서 .NET Core 원격 디버그|**프로세스에 연결** 사용|*dotnet.exe* 또는 고유한 프로세스 이름|SSH를 사용하려면 [SSH를 사용하여 Linux에서 실행되는 .NET Core 원격 디버그](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조하세요. 컨테이너화된 앱의 경우에는 [Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)을 참조하세요.|
+|컨테이너화된 앱 디버그|*dotnet.exe* 또는 고유한 프로세스 이름|[Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md)을 참조하세요.|
 |Linux에서 Python 원격 디버그|**프로세스에 연결** 사용|*debugpy*|[Python 도구에서 원격으로 연결](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)을 참조하세요.|
 |디버거를 사용하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET 앱 디버깅|**프로세스에 연결** 사용|*iiexpress.exe*|이렇게 하면 프로파일링과 같은 경우에 앱을 더 빠르게 로드하는 데 도움이 될 수 있습니다. |
 |서버 프로세스에서 다른 지원되는 다른 앱 유형 디버깅|서버가 원격인 경우 원격 도구 및 **프로세스에 연결** 사용|*chrome.exe*, *iexplore.exe* 또는 기타 프로세스|필요한 경우 리소스 모니터를 사용하여 프로세스를 식별합니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
-|UWP(유니버설 Windows 플랫폼) 앱, OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결**을 사용하는 대신 [설치된 앱 패키지 디버그](debug-installed-app-package.md)를 참조하세요.|
-|Visual Studio에서 시작하지 않은 UWP(유니버설 Windows 플랫폼) 앱, OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결**을 사용하는 대신 [설치된 앱 패키지 디버그](debug-installed-app-package.md)를 참조하세요.|
+|UWP(유니버설 Windows 플랫폼) 앱, OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결** 을 사용하는 대신 [설치된 앱 패키지 디버그](debug-installed-app-package.md)를 참조하세요.|
+|Visual Studio에서 시작하지 않은 UWP(유니버설 Windows 플랫폼) 앱, OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결** 을 사용하는 대신 [설치된 앱 패키지 디버그](debug-installed-app-package.md)를 참조하세요.|
 
 ## <a name="use-debugger-features"></a>디버거 기능 사용
 
@@ -301,19 +232,19 @@ UWP(유니버설 Windows 플랫폼) 앱과 같은 일부 앱 유형에서는 프
 
 **코드 형식에 연결하지 못한 이유에 대한 자세한 정보를 얻으려면:**
 
-1. 프로세스에서 분리합니다. **디버그** 메뉴에서 **모두 분리**를 선택합니다.
+1. 프로세스에서 분리합니다. **디버그** 메뉴에서 **모두 분리** 를 선택합니다.
 
 1. 연결에 실패한 코드 형식만 선택하여 프로세스에 다시 연결합니다.
 
     1. **프로세스에 연결** 대화 상자의 **사용 가능한 프로세스** 목록에서 프로세스를 선택합니다.
 
-    2. **선택**을 선택합니다.
+    2. **선택** 을 선택합니다.
 
     3. **코드 형식 선택** 대화 상자에서 **다음 코드 형식 디버깅** 을 선택하고 연결에 실패한 코드 형식을 선택합니다. 다른 코드 형식을 선택 취소합니다.
 
-    4. **확인**을 선택합니다.
+    4. **확인** 을 선택합니다.
 
-    5. **프로세스에 연결** 대화 상자에서 **연결**을 선택합니다.
+    5. **프로세스에 연결** 대화 상자에서 **연결** 을 선택합니다.
 
     이렇게 하면 연결이 완전히 실패하고 자세한 오류 메시지가 나타납니다.
 

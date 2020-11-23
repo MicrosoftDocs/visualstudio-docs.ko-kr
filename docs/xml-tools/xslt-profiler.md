@@ -2,7 +2,7 @@
 title: XSLT 성능
 description: XSLT 코드의 성능을 최적화하는 데 도움이 되는 자세한 XSLT 성능 보고서를 만드는 Visual Studio의 XSLT 프로파일러에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351416"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531890"
 ---
 # <a name="the-xslt-profiler"></a>XSLT 프로파일러
 
@@ -23,14 +24,14 @@ XSLT 프로파일러는 XSLT 코드의 성능 관련 문제를 측정 및 평가
 
 XSLT 프로파일러는 Visual Studio에 포함되어 있으며 **XML** 메뉴에서 사용할 수 있습니다.
 
-![XSLT 프로파일러](../xml-tools/media/profile-xslt-menu.png)
+![XSLT 프로파일러](../xml-tools/media/profile-xslt-menu.png "Visual Studio 2017의 XML 메뉴 항목 스크린샷")
 
 > [!NOTE]
-> XSLT 프로파일러는 Visual Studio의 Enterprise Edition에서만 사용할 수 있습니다.
+> XSLT 프로파일러는 Visual Studio 2017의 Enterprise Edition에서만 사용할 수 있습니다.
 
 ## <a name="create-a-performance-report"></a>성능 보고서 만들기
 
-1. Visual Studio에서 XSLT 문서를 엽니다.
+1. Visual Studio 2017에서 XSLT 문서를 엽니다.
 
 2. 메뉴 모음에서 **XML** > **XSLT 프로파일링** 을 선택합니다.
 

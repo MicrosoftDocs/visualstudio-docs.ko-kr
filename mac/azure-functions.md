@@ -7,16 +7,16 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492843"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575543"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
-Azure Functions는 클라우드에서 명시적인 인프라 프로비전이나 관리 없이 이벤트 중심 코드 조각을 만들고 실행하는 방법입니다. Azure Functions에 대한 자세한 내용은 [Azure Functions 설명서](/azure/azure-functions/)를 참조하세요.
+Azure Functions는 클라우드에서 인프라를 명시적으로 프로비전 또는 관리하지 않고도 코드 함수의 이벤트 기반 코드 조각을 만들고 실행하는 방법입니다. Azure Functions에 대한 자세한 내용은 [Azure Functions 설명서](/azure/azure-functions/)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,7 +37,7 @@ Azure Function 도구는 **Mac용 Visual Studio 7.5** 이상에 포함되어 있
 
     > [!TIP]
     > 번들로 제공되는 Azure Functions 런타임 및 템플릿(CLI)은 가능한 한 최신 상태로 유지되지만 필연적으로 구형이 됩니다. 새 Functions 프로젝트를 만들 때 Mac용 Visual Studio는 CLI에 대한 업데이트를 확인하고 아래 이미지와 같이 사용자에게 알립니다. 업데이트된 템플릿을 다운로드하려면 단추를 클릭하면 됩니다.
-    > ![Azure Functions 업데이트를 보여주는 새 프로젝트 대화 상자를 사용할 수 있습니다.](media/azure-functions-update.png)
+    > ![Azure Functions 업데이트를 사용할 수 있음을 보여 주는 새 프로젝트 대화 상자](media/azure-functions-update.png)
 
     선택한 함수의 형식에 따라 다음 페이지에서는 다음 이미지에 설명된 액세스 권한과 같은 세부 정보를 입력하라는 메시지가 표시됩니다.
 
@@ -147,9 +147,9 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
   - Http POST CRUD
   - 매개 변수가 있는 http 트리거
 
-- **Timer** - 미리 정의된 일정에 따라 정리 또는 기타 일괄 처리 작업을 실행합니다. 이 템플릿에는 이름과 일정 등 두 필드가 있고 6개 필드 CRON 식입니다. 자세한 내용은 [Azure functions 문서의 Timer 부분](/azure/azure-functions/functions-create-scheduled-function)을 참조하세요.
+- **Timer** - 미리 정의된 일정에 따라 정리 또는 기타 일괄 처리 작업을 실행합니다. 이 템플릿에는 이름과 일정 등 두 필드가 있고 6개 필드 CRON 식입니다. 자세한 내용은 [Azure Functions 문서의 시간 부분](/azure/azure-functions/functions-create-scheduled-function)을 참조하세요.
 
-- **Queue Trigger** – Azure Storage 큐에 도착하면 메시지에 응답하는 함수입니다. 함수 이름 외에도 이 템플릿은 **경로**(메시지를 읽을 큐의 이름)와 스토리지 계정 **연결**(스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름)을 사용합니다. 자세한 내용은 [Azure 함수 문서의 큐 스토리지 부분](/azure/azure-functions/functions-create-storage-queue-triggered-function)을 참조하세요.
+- **Queue Trigger** – Azure Storage 큐에 도착하면 메시지에 응답하는 함수입니다. 함수 이름 외에도 이 템플릿은 **경로**(메시지를 읽을 큐의 이름)와 스토리지 계정 **연결**(스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름)을 사용합니다. 자세한 내용은 [Azure Functions 문서의 큐 스토리지 부분](/azure/azure-functions/functions-create-storage-queue-triggered-function)을 참조하세요.
 
 - **Blob Trigger** – 컨테이너에 추가되는 Azure Storage Blob를 처리합니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. 자세한 내용은 [Azure Functions Blob Storage 문서](/azure/azure-functions/functions-create-storage-blob-triggered-function)를 참조하세요.
 

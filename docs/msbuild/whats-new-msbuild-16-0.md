@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047794"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531864"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 
@@ -32,6 +32,10 @@ ms.locfileid: "93047794"
 - 이 도구 버전의 `MSBuildToolsVersion`은 “현재”입니다. 어셈블리 버전은 15.1.0.0인 Visual Studio 2017과 동일합니다.
 
 - 이 도구 버전의 `VisualStudioVersion`은 “16.0”입니다.
+
+## <a name="change-waves"></a>변경 웨이브
+
+MSBuild 16.8부터는 중단을 유발할 수 있는 MSBuild의 특정 변경 사항을 옵트아웃할 수 있습니다. [변경 웨이브](change-waves.md)를 참조하세요.
 
 ## <a name="updates"></a>Updates
 

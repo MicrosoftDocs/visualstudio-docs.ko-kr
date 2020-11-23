@@ -2,20 +2,20 @@
 title: Visual Studio의 Git 환경
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경을 활용하여 생산성을 높일 수 있는 방법을 알아봅니다.
-ms.date: 11/10/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493558"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704068"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Visual Studio의 Git 생산성
+# <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
 Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. [버전 16.6](/visualstudio/releases/2019/release-notes-v16.6)부터 피드백에 따라 기능 집합을 구축하고 반복해 왔습니다. [버전 16.8](/visualstudio/releases/2019/release-notes/) 릴리스부터 새 Git 환경은 모든 사용자에 대해 기본적으로 설정되어 있습니다.
 
@@ -24,11 +24,18 @@ Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. [버�
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Visual Studio에서 Git을 사용하는 방법
 
-Visual Studio 2019에서 Git을 사용하여 생산성을 높일 수 있는 세 가지 방법이 있습니다.
+Visual Studio 2019의 새로운 Git 환경을 사용하는 방법을 안내합니다. 핵심 사항만 빠르게 확인하고 싶다면 다음 비디오를 시청하세요. <br><br>*비디오 길이:* 5분 27초
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Visual Studio에서 Git을 사용하여 생산성을 높일 수 있는 세 가지 방법이 있습니다.
 
 - [기존 Git 리포지토리 열기](#open-an-existing-local-repository). 코드가 이미 머신에 있는 경우 **파일** > **열기** > **프로젝트/솔루션**(또는 **폴더**)을 사용하여 코드를 엽니다. 그러면 Visual Studio에서 코드에 초기화된 Git 리포지토리가 있는지 자동으로 검색합니다.
 - [새 Git 리포지토리 만들기](#create-a-new-git-repository). 코드가 Git과 연결되지 않은 경우 새 Git 리포지토리를 만들 수 있습니다.
 - [기존 Git 리포지토리 복제](#clone-an-existing-git-repository). 작업하려는 코드가 머신에 없는 경우 기존 원격 리포지토리를 복제할 수 있습니다.
+
+> [!NOTE]
+> 또한 Visual Studio 2019는 [버전 16.8](/visualstudio/releases/2019/release-notes/)부터 완전히 통합된 GitHub 계정 환경을 제공합니다. 이제 키 집합에 GitHub 및 GitHub Enterprise 계정을 모두 추가할 수 있습니다. Microsoft 계정과 같은 방법으로 추가하고 활용할 수 있어 Visual Studio에서 GitHub 리소스에 더 쉽게 액세스할 수 있습니다. 자세한 내용은 [Visual Studio에서 GitHub 계정 작업](work-with-github-accounts.md) 페이지를 참조하세요.
 
 ## <a name="create-a-new-git-repository"></a>새 Git 리포지토리 만들기
 
@@ -195,8 +202,10 @@ Visual Studio의 병합 편집기는 들어오는 변경 내용, 현재 변경 �
 
 ## <a name="see-also"></a>추가 정보
 
+- [Visual Studio의 Git 환경 릴리스 알림](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) 블로그 포스트
 - YouTube의 [새 Git 환경 출시](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio 도구 상자 시리즈에서 제공: Channel 9 및 [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)의 새 Git 환경](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) 비디오
 - [Visual Studio의 Git 환경에 대한 흥미로운 새 업데이트](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) 블로그 게시물
 - [Visual Studio 2019의 향상된 Git 환경](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/) 블로그 게시물
+- [Visual Studio에서 GitHub 계정 작업](work-with-github-accounts.md)
 - [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes)

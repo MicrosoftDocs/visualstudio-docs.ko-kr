@@ -1,5 +1,7 @@
 ---
 title: UWP(유니버설 Windows 플랫폼)용 앱 개발
+description: Visual Studio 및 유니버설 Windows 앱 개발 도구를 사용하여 앱을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75587149"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671421"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 
@@ -60,7 +62,7 @@ Windows 10 Phone, Windows 10 데스크톱 또는 Xbox에서 이 앱을 실행합
 
 이 소프트웨어를 설치한 후에 개발을 위해 Windows 10 디바이스를 사용하도록 설정해야 합니다. 자세한 내용은 [디바이스를 개발에 사용하도록 설정](/windows/uwp/get-started/enable-your-device-for-development)을 참조하세요. 각 Windows 10 디바이스에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.
 
-## <a name="universal-windows-apps"></a>범용 Windows 앱
+## <a name="universal-windows-apps"></a>유니버설 Windows 앱
 
 C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정된 개발 언어를 선택하여 Windows 10 디바이스용 유니버설 Windows 플랫폼 앱을 만듭니다. [첫 번째 앱 만들기](/windows/uwp/get-started/your-first-app)를 참조하거나 [Windows 10용 도구 개요](https://channel9.msdn.com/Series/ConnectOn-Demand/229) 비디오를 시청하세요.
 
@@ -68,6 +70,6 @@ C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정된 개발 언어를 
 
 유니버설 Windows 앱을 만든 후 앱을 패키지하여 Windows 10 디바이스에 설치하거나 Windows 스토어에 제출해야 합니다. [앱 패키징](/windows/uwp/packaging/index)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 플랫폼 간 모바일 개발](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
