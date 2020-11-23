@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: 게시 도구를 사용하여 .NET Core 애플리케이션 배포
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Microsoft Store용 데스크톱 앱 패키지
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce를 사용하여 .NET Windows 애플리케이션 배포
           href: quickstart-deploy-using-clickonce-folder.md
         - name: ClickOnce를 사용하여 .NET Framework 데스크톱 앱 배포
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: 설치 관리자 패키지(Windows 데스크톱) 만들기
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Microsoft Store용 데스크톱 앱 패키지 >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: 명령줄에서 ClickOnce 애플리케이션 빌드
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Azure에 ASP.NET Core 앱 게시
+        - name: Azure에 ASP.NET Core 앱 게시 >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: 게시 설정 가져오기 및 IIS에 배포
           href: tutorial-import-publish-settings-iis.md
         - name: 게시 설정 가져오기 및 Azure에 배포
           href: tutorial-import-publish-settings-azure.md
-        - name: Git를 사용하여 Azure에 ASP.NET Core 연속 배포
+        - name: Git을 사용하여 Azure에 ASP.NET Core 지속적으로 배포 >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: C/C++ 앱 배포
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Microsoft Store용 데스크톱 앱 패키지
+        - name: 설치 관리자 패키지 만들기
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Microsoft Store용 데스크톱 앱 패키지 >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: ClickOnce를 사용하여 C++/CLR 앱 배포...
+        - name: ClickOnce를 사용하여 C++/CLR 앱 배포 >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Visual Studio를 사용하여 UWP 앱 패키지
+        - name: Visual Studio를 사용하여 UWP 앱 패키지 >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Linux App Service에 게시
+        - name: Linux App Service에 게시 >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Azure App Service에 게시
+        - name: Azure App Service에 게시 >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: 방법 가이드
   items:

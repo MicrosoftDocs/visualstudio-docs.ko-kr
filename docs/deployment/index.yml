@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038493"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903912"
 landingContent:
 - title: 배포 정보
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: 배포 소개
       url: deploying-applications-services-and-components.md
+- title: 시작(.NET Core, Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: 폴더, IIS 또는 Azure에 배포
       url: deploying-applications-services-and-components-resources.md
-- title: 시작
-  linkLists:
   - linkListType: quickstart
     links:
     - text: Azure App Service에 게시
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: 폴더에 게시
       url: quickstart-deploy-to-local-folder.md
+    - text: ClickOnce를 사용하여 .NET Core 앱 배포
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: .NET 앱 배포
   linkLists:
   - linkListType: tutorial
     links:
     - text: .NET Core 앱 배포
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: ClickOnce를 사용하여 데스크톱 앱 배포
+    - text: ClickOnce를 사용하여 .NET Framework 데스크톱 앱 배포
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: 명령줄에서 ClickOnce 애플리케이션 빌드
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: 설치 관리자 패키지를 사용하여 데스크톱 앱 배포
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: Windows Store용 데스크톱 앱 패키지
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: C++ 앱 배포
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 설치 관리자 패키지를 사용하여 배포
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: Windows Store용 데스크톱 앱 패키지
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: ASP.NET Core 앱 배포
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: Git을 사용하여 게시
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: C++ 앱 배포
+- title: 추가 배포 유형
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 설치 프로젝트를 사용하여 배포(C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: Windows Store용 데스크톱 앱 패키지
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: Python 앱 배포
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Linux App Service에 게시
+    - text: Python 앱을 Linux App Service에
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: Node.js 앱 배포
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Linux App Service에 게시
+    - text: Node.js 앱을 Linux App Service에
       url: ../javascript/publish-nodejs-app-azure.md
-- title: NuGet.org에 .NET 패키지 배포
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: NuGet.org에 게시(.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: NuGet.org에 게시(.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: 컨테이너화된 앱 배포
+      url: ../containers/index.yml
+    - text: NuGet 패키지 게시
+      url: /nuget
