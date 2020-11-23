@@ -1,5 +1,7 @@
 ---
 title: C++용 데이터 도구
+description: C++용 Visual Studio 데이터 도구를 살펴봅니다. C++ 애플리케이션에서 ODBC 및 SQL Native Client를 통해 localDB에 연결할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 063efeebff92698b8e5db66880360713c73fe150
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281099"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998098"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++용 Visual Studio 데이터 도구
 
@@ -35,13 +37,13 @@ SQL Server 2005 이상의 사용자 지정 기능을 활용하려면 [SQL Server
 
    ![SSMS 연결 대화 상자](../data-tools/media/raddata-ssms-connect-dialog.png)
 
-   그런 다음 왼쪽 창에서 localdb 노드를 마우스 오른쪽 단추로 클릭하고 **연결**을 선택합니다.
+   그런 다음 왼쪽 창에서 localdb 노드를 마우스 오른쪽 단추로 클릭하고 **연결** 을 선택합니다.
 
    ![SSMS 데이터베이스 연결](../data-tools/media/raddata-ssms-attach-database.png)
 
-4. ODBC Windows SDK 샘플을 다운로드하고 새 위치에 압축을 풉니다. 이 샘플에서는 데이터베이스에 연결하고 쿼리 및 명령을 실행하는 데 사용되는 기본 ODBC 명령을 보여 줍니다. [Microsoft ODBC(Open Database Connectivity)](/sql/odbc/microsoft-open-database-connectivity-odbc)에서 해당 기능을 자세히 알아볼 수 있습니다. 솔루션을 처음 로드할 때(C++ 폴더에 있는 경우) Visual Studio에서 현재 버전으로의 업그레이드를 제공합니다. **예**를 클릭합니다.
+4. ODBC Windows SDK 샘플을 다운로드하고 새 위치에 압축을 풉니다. 이 샘플에서는 데이터베이스에 연결하고 쿼리 및 명령을 실행하는 데 사용되는 기본 ODBC 명령을 보여 줍니다. [Microsoft ODBC(Open Database Connectivity)](/sql/odbc/microsoft-open-database-connectivity-odbc)에서 해당 기능을 자세히 알아볼 수 있습니다. 솔루션을 처음 로드할 때(C++ 폴더에 있는 경우) Visual Studio에서 현재 버전으로의 업그레이드를 제공합니다. **예** 를 클릭합니다.
 
-5. Native Client를 사용하려면 ‘헤더’ 파일 및 ‘라이브러리’ 파일이 필요합니다.  파일에는 sql.h에 정의된 ODBC 함수 외에도 SQL Server 관련 함수와 정의가 포함되어 있습니다. **프로젝트** > **속성** > **VC++ 디렉터리**에서 다음 디렉터리를 추가합니다.
+5. Native Client를 사용하려면 ‘헤더’ 파일 및 ‘라이브러리’ 파일이 필요합니다.  파일에는 sql.h에 정의된 ODBC 함수 외에도 SQL Server 관련 함수와 정의가 포함되어 있습니다. **프로젝트** > **속성** > **VC++ 디렉터리** 에서 다음 디렉터리를 추가합니다.
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -49,7 +51,7 @@ SQL Server 2005 이상의 사용자 지정 기능을 활용하려면 [SQL Server
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6. *odbcsql.cpp*에 줄을 추가합니다. #define으로 관련 없는 OLE DB 정의가 컴파일되는 것을 방지합니다.
+6. *odbcsql.cpp* 에 줄을 추가합니다. #define으로 관련 없는 OLE DB 정의가 컴파일되는 것을 방지합니다.
 
    ```cpp
    #define _SQLNCLI_ODBC_
@@ -58,13 +60,13 @@ SQL Server 2005 이상의 사용자 지정 기능을 활용하려면 [SQL Server
 
     샘플은 실제로 Native Client 기능을 사용하지 않으므로 컴파일 및 실행을 위해 앞의 단계를 수행하지 않아도 됩니다. 하지만 이제 이 기능을 사용할 수 있도록 프로젝트가 구성됩니다. 자세한 내용은 [SQL Server Native Client 프로그래밍](/sql/relational-databases/native-client/sql-server-native-client)을 참조하세요.
 
-7. ODBC 하위 시스템에서 사용할 드라이버를 지정합니다. 샘플은 DRIVER 연결 문자열 특성을 명령줄 인수로 전달합니다. **프로젝트** > **속성** > **디버깅**에서 이 명령 인수를 추가합니다.
+7. ODBC 하위 시스템에서 사용할 드라이버를 지정합니다. 샘플은 DRIVER 연결 문자열 특성을 명령줄 인수로 전달합니다. **프로젝트** > **속성** > **디버깅** 에서 이 명령 인수를 추가합니다.
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. **F5** 키를 눌러 애플리케이션을 빌드하고 실행합니다. 드라이버에서 데이터베이스를 입력하라는 대화 상자가 표시됩니다. `(localdb)\MSSQLLocalDB`를 입력하고 **트러스트된 연결 사용**을 선택합니다. **확인**을 누릅니다. 연결에 성공했음을 나타내는 메시지가 콘솔에 표시되어야 합니다. 또한 SQL 문을 입력할 수 있는 명령 프롬프트가 표시되어야 합니다. 다음 화면에는 예제 쿼리와 결과가 표시됩니다.
+8. **F5** 키를 눌러 애플리케이션을 빌드하고 실행합니다. 드라이버에서 데이터베이스를 입력하라는 대화 상자가 표시됩니다. `(localdb)\MSSQLLocalDB`를 입력하고 **트러스트된 연결 사용** 을 선택합니다. **확인** 을 누릅니다. 연결에 성공했음을 나타내는 메시지가 콘솔에 표시되어야 합니다. 또한 SQL 문을 입력할 수 있는 명령 프롬프트가 표시되어야 합니다. 다음 화면에는 예제 쿼리와 결과가 표시됩니다.
 
    ![ODBC 샘플 쿼리 출력](../data-tools/media/raddata-odbc-sample-query-output.png)
 

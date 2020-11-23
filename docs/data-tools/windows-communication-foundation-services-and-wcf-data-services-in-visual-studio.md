@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation 및 WCF Data Services
+description: 분산 앱을 만들기 위한 WCF(Windows Communication Foundation) 서비스 및 Visual Studio의 WCF Data Services를 살펴봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281047"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997903"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 
@@ -107,7 +109,7 @@ WCF 템플릿에 대한 자세한 내용은 [WCF Visual Studio 템플릿](/dotne
 
 #### <a name="wcf-service-host"></a>WCF 서비스 호스트
 
-WCF 서비스 프로젝트에 대한 Visual Studio 디버거를 시작할 때(**F5**를 누름) WCF 서비스 호스트 도구가 자동으로 시작되어 서비스를 로컬로 호스팅합니다. WCF 서비스 호스트는 WCF 서비스 프로젝트의 서비스를 열거하고 프로젝트의 구성을 로드하며, 발견한 각 서비스에 대한 호스트를 인스턴스화합니다.
+WCF 서비스 프로젝트에 대한 Visual Studio 디버거를 시작할 때(**F5** 를 누름) WCF 서비스 호스트 도구가 자동으로 시작되어 서비스를 로컬로 호스팅합니다. WCF 서비스 호스트는 WCF 서비스 프로젝트의 서비스를 열거하고 프로젝트의 구성을 로드하며, 발견한 각 서비스에 대한 호스트를 인스턴스화합니다.
 
 WCF 서비스 호스트를 사용하면 개발하는 동안 추가 코드를 작성하거나 특정 호스트를 커밋하지 않고 WCF 서비스를 테스트할 수 있습니다.
 
@@ -139,7 +141,7 @@ Visual Studio는 **서비스 참조 추가** 대화 상자를 사용하여 추�
 
 ### <a name="to-select-a-service-endpoint"></a>서비스 엔드포인트 선택
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **서비스 참조 추가**를 선택하여 WCF 서비스에 참조를 추가합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **서비스 참조 추가** 를 선택하여 WCF 서비스에 참조를 추가합니다.
 
 2. 코드 편집기에서 서비스 참조에 대한 생성자를 추가합니다.
 
@@ -152,18 +154,18 @@ Visual Studio는 **서비스 참조 추가** 대화 상자를 사용하여 추�
     ```
 
     > [!NOTE]
-    > *ServiceReference*를 서비스 참조에 대한 네임스페이스로 바꾸고 *Service1Client*를 서비스 이름으로 바꿉니다.
+    > *ServiceReference* 를 서비스 참조에 대한 네임스페이스로 바꾸고 *Service1Client* 를 서비스 이름으로 바꿉니다.
 
 3. 생성자에 대한 오버로드가 포함된 IntelliSense 목록이 표시됩니다. `endpointConfigurationName As String` 오버로드를 선택합니다.
 
-4. 오버로드 이후 `=`*ConfigurationName*을 입력합니다. 여기서 *ConfigurationName*은 사용하려는 엔드포인트의 이름입니다.
+4. 오버로드 이후 `=`*ConfigurationName* 을 입력합니다. 여기서 *ConfigurationName* 은 사용하려는 엔드포인트의 이름입니다.
 
     > [!NOTE]
     > 사용 가능한 엔드포인트의 이름을 알 수 없는 경우 *app.config* 파일에서 찾을 수 있습니다.
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF 서비스에 사용할 수 있는 엔드포인트 찾기
 
-1. **솔루션 탐색기**에서 서비스 참조를 포함하는 프로젝트에 대한 **app.config** 파일을 마우스 오른쪽 단추로 클릭한 다음 **열기**를 클릭합니다. 파일이 코드 편집기에 표시됩니다.
+1. **솔루션 탐색기** 에서 서비스 참조를 포함하는 프로젝트에 대한 **app.config** 파일을 마우스 오른쪽 단추로 클릭한 다음 **열기** 를 클릭합니다. 파일이 코드 편집기에 표시됩니다.
 
 2. 파일에서 `<Client>` 태그를 검색합니다.
 
@@ -171,7 +173,7 @@ Visual Studio는 **서비스 참조 추가** 대화 상자를 사용하여 추�
 
      서비스 참조에서 여러 엔드포인트를 제공하는 경우 두 개 이상의 `<Endpoint` 태그가 있습니다.
 
-4. `<EndPoint>` 태그 내에서 `name="`*SomeService*`"` 매개 변수(여기서 *SomeService*는 엔드포인트 이름을 나타냄)를 찾을 수 있습니다. 서비스 참조에 대한 생성자의 `endpointConfigurationName As String` 오버로드로 전달될 수 있는 엔드포인트의 이름입니다.
+4. `<EndPoint>` 태그 내에서 `name="`*SomeService*`"` 매개 변수(여기서 *SomeService* 는 엔드포인트 이름을 나타냄)를 찾을 수 있습니다. 서비스 참조에 대한 생성자의 `endpointConfigurationName As String` 오버로드로 전달될 수 있는 엔드포인트의 이름입니다.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>방법: 비동기적으로 서비스 메서드 호출
 
@@ -186,9 +188,9 @@ WCF(Windows Communication Foundation) 서비스의 대부분 메서드는 동기
 
 ### <a name="to-call-a-service-method-asynchronously"></a>비동기적으로 서비스 메서드 호출
 
-1. **솔루션 탐색기**에서 서비스 참조를 선택합니다.
+1. **솔루션 탐색기** 에서 서비스 참조를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **서비스 참조 구성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **서비스 참조 구성** 을 클릭합니다.
 
 3. **서비스 참조 구성** 대화 상자에서 **비동기 작업 생성** 확인란을 선택합니다.
 
@@ -198,7 +200,7 @@ WCF(Windows Communication Foundation) 서비스의 대부분 메서드는 동기
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>WCF 서비스에서 반환하는 단일 데이터 필드에 컨트롤을 바인딩
 
-1. **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
+1. **데이터** 메뉴에서 **데이터 소스 표시** 를 클릭합니다.
 
    **데이터 원본** 창이 표시됩니다.
 
@@ -216,13 +218,13 @@ WCF(Windows Communication Foundation) 서비스의 대부분 메서드는 동기
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>WCF 서비스에서 반환하는 복합 형식에 컨트롤을 바인딩
 
-1. **데이터** 메뉴에서 **데이터 원본 표시**를 선택합니다. **데이터 원본** 창이 표시됩니다.
+1. **데이터** 메뉴에서 **데이터 원본 표시** 를 선택합니다. **데이터 원본** 창이 표시됩니다.
 
 2. **데이터 원본** 창에서 서비스 참조에 대한 노드를 확장합니다. 서비스에서 반환한 모든 복합 형식이 표시됩니다.
 
 3. 형식에 대한 노드를 선택하고 드롭다운 화살표를 클릭하면 사용 가능한 옵션 목록이 표시됩니다.
 
-4. **DataGridView**를 클릭하면 그리드에 데이터가 표시되고, **Details**를 클릭하면 개별 컨트롤에 데이터가 표시됩니다.
+4. **DataGridView** 를 클릭하면 그리드에 데이터가 표시되고, **Details** 를 클릭하면 개별 컨트롤에 데이터가 표시됩니다.
 
 5. 노드를 양식으로 끌어서 놓습니다. 컨트롤이 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소와 함께 양식에 추가됩니다.
 
@@ -234,19 +236,19 @@ WCF(Windows Communication Foundation) 서비스의 대부분 메서드는 동기
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>단일 어셈블리에서 형식 공유를 사용하지 않도록 설정
 
-1. **솔루션 탐색기**에서 서비스 참조를 선택합니다.
+1. **솔루션 탐색기** 에서 서비스 참조를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **서비스 참조 구성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **서비스 참조 구성** 을 클릭합니다.
 
-3. **서비스 참조 구성** 대화 상자에서 **참조된 어셈블리 중 지정된 어셈블리의 형식 재사용**을 선택합니다.
+3. **서비스 참조 구성** 대화 상자에서 **참조된 어셈블리 중 지정된 어셈블리의 형식 재사용** 을 선택합니다.
 
 4. 형식 공유를 사용하도록 설정할 각 어셈블리에 대해 확인란을 선택합니다. 어셈블리에 형식 공유를 사용하지 않도록 설정하려면 확인란을 선택하지 않은 상태로 둡니다.
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>모든 어셈블리에서 형식 공유를 사용하지 않도록 설정
 
-1. **솔루션 탐색기**에서 서비스 참조를 선택합니다.
+1. **솔루션 탐색기** 에서 서비스 참조를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **서비스 참조 구성**을 클릭합니다.
+2. **프로젝트** 메뉴에서 **서비스 참조 구성** 을 클릭합니다.
 
 3. **서비스 참조 구성** 대화 상자에서 **참조된 어셈블리 중 지정된 어셈블리의 형식 재사용** 확인란 선택을 해제합니다.
 
