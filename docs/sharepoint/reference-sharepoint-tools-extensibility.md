@@ -1,5 +1,7 @@
 ---
 title: 참조 (SharePoint 도구 확장성) | Microsoft Docs
+description: SharePoint 프로젝트 항목 스키마 참조 및 API 참조를 포함 하 여 Visual Studio에서 SharePoint 도구 확장에 대 한 참조 설명서에 대 한 링크를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827105"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440716"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>참조 (SharePoint 도구 확장성)
 
@@ -33,6 +35,6 @@ ms.locfileid: "62827105"
 
 Visual Studio의 SharePoint 도구 확장에 대 한 API 참조 설명서가 포함 되어 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
-- [Visual Studio에서 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio의 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

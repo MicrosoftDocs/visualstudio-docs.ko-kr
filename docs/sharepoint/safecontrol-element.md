@@ -1,5 +1,7 @@
 ---
 title: SafeControl 요소 | Microsoft Docs
+description: 사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 표시 된 ASPX 컨트롤이 나 웹 파트를 나타내는 SafeControl 요소에 대 한 정보를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547929"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440625"
 ---
 # <a name="safecontrol-element"></a>SafeControl 요소
   모든 사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤이 나 웹 파트를 나타냅니다.
@@ -38,9 +40,9 @@ ms.locfileid: "85547929"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|**어셈블리**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트가 정의 된 어셈블리의 이름입니다. 기본적으로이 특성은 어셈블리 이름에 대해 **$SharePoint. AssemblyFullName $** 대체 (fullname) 매개 변수를 사용 합니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조 하세요.|
+|**어셈블리**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트가 정의 된 어셈블리의 이름입니다. 기본적으로이 특성은 어셈블리 이름에 대해 **$SharePoint. AssemblyFullName $** 대체 (fullname) 매개 변수를 사용 합니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.|
 |**IsSafe**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 액세스할 수 있도록 ASPX 컨트롤이 나 웹 파트를 안전 하 게 보호 하는지 여부를 지정 합니다.|
 |**Issafeagas 스크립트**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 ASPX 컨트롤이 나 웹 파트의 속성을 보거나 편집할 수 있는지 여부를 지정 합니다.|
 |**이름**|선택적 **xs: string** 특성입니다.<br /><br /> 컬렉션에 있는이 안전 컨트롤 항목의 이름입니다.|

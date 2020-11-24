@@ -1,5 +1,7 @@
 ---
 title: SafeControls 요소 | Microsoft Docs
+description: SafeControls 요소에 대 한 정보를 가져옵니다 .이 요소는 SharePoint 사이트의 ASPX 페이지에서 액세스 하기 위해 보안으로 표시 된 ASPX 컨트롤 또는 웹 파트의 컬렉션을 포함 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547903"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440677"
 ---
 # <a name="safecontrols-element"></a>SafeControls 요소
   모든 사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤 및 웹 파트의 컬렉션입니다.

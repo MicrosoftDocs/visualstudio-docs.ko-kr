@@ -1,5 +1,7 @@
 ---
 title: URL 선택 대화 상자 (SharePoint 개발)
+description: 사용자가 해당 프로젝트 또는 SharePoint를 실행 하는 로컬 서버에 있는 파일을 선택할 수 있는 URL 선택 대화 상자에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261938"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442536"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 선택 대화 상자 (Visual Studio에서 SharePoint 개발)
   URL 선택기 대화 상자에서 프로젝트에 있거나 SharePoint를 실행하는 로컬 서버에 있는 마스터 페이지 파일 또는 이미지 파일과 같은 파일을 선택할 수 있습니다.
@@ -42,7 +44,7 @@ ms.locfileid: "66261938"
 
   **서버** 노드를 확장 하 여 SharePoint를 실행 하는 로컬 서버에 있는 파일을 선택 합니다. 대화 상자에서 선택할 수 있는 것으로 표시 하려면 이러한 파일이 다음 조건을 충족 해야 합니다.
 
-- 이 파일은 **이미지**, **레이아웃**또는 **controltemplates**의 다음 매핑된 폴더 중 하나에 있어야 합니다.
+- 이 파일은 **이미지**, **레이아웃** 또는 **controltemplates** 의 다음 매핑된 폴더 중 하나에 있어야 합니다.
 
 - SharePoint 콘텐츠 데이터베이스에서 파일을 찾을 수 없습니다.
 
@@ -52,7 +54,7 @@ ms.locfileid: "66261938"
 
   **파일 형식** 수행 중인 작업에 적절 한 파일 목록에서 선택할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
-- [SharePoint에 대 한 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+## <a name="see-also"></a>참조
+- [SharePoint용 애플리케이션 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [SharePoint용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

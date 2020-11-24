@@ -1,5 +1,7 @@
 ---
 title: ProjectItemFile 요소 | Microsoft Docs
+description: SharePoint 프로젝트 항목 XML 스키마 참조의 프로젝트 항목 파일을 나타내는 ProjectItemFile 요소에 대 한 참조 정보를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539856"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440807"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 요소
   SharePoint에 배포 될 때 프로젝트 항목에 포함할 기능 요소 파일 등의 SharePoint 파일을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <ProjectItemFile Source = "Name of the file"
@@ -30,7 +32,7 @@ ms.locfileid: "85539856"
     Type = "Type of deployment for the file" />
 ```
 
-## <a name="type"></a>형식
+## <a name="type"></a>유형
  **ProjectItemFileType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -38,11 +40,11 @@ ms.locfileid: "85539856"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |**원본**|필수 **xs: string** 특성입니다.<br /><br /> 프로젝트 항목과 함께 배포할 파일의 이름입니다.|
 |**대상**|선택적 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더를 기준으로 SharePoint에 파일이 배포 될 경로입니다. 배포 루트 폴더는 **type** 특성으로 지정 된 배포 유형에 따라 결정 됩니다. **대상** 특성이 지정 되지 않은 경우 파일은 **원본** 특성에 지정 된 이름의 폴더에 배포 됩니다.<br /><br /> 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 경로** 및 **배포 루트** 속성에 대 한 설명을 참조 하세요.|
-|**유형**|필수 **xs: string** 특성입니다.<br /><br /> 파일에 대 한 배포 유형입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
+|**형식**|필수 **xs: string** 특성입니다.<br /><br /> 파일에 대 한 배포 유형입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음

@@ -1,5 +1,7 @@
 ---
 title: ProjectOutputFile 요소 | Microsoft Docs
+description: ProjectOutputFile 요소에 대 한 참조 정보를 가져옵니다 .이 요소는 SharePoint 프로젝트 항목 XML 스키마 참조에서 개별 프로젝트의 출력을 나타냅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542391"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442030"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 요소
   SharePoint에 배포 될 때 프로젝트 항목과 함께 포함할 개별 프로젝트의 출력을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <ProjectOutputFile ProjectId = "GUID of the project"
@@ -31,7 +33,7 @@ ms.locfileid: "85542391"
     Type = "Type of deployment for the project output" />
 ```
 
-## <a name="type"></a>형식
+## <a name="type"></a>유형
  **ProjectOutputFileType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -39,12 +41,12 @@ ms.locfileid: "85542391"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |**ProjectId**|필수 **xs: string** 특성입니다.<br /><br /> 포함 하려는 출력이 있는 종속 프로젝트의 GUID입니다. 이는 종속 프로젝트 파일의 **Projectguid** 요소에 해당 합니다.|
 |**ProjectPath**|필수 **xs: string** 특성입니다.<br /><br /> 포함 하려는 출력이 있는 종속 프로젝트의 프로젝트 파일 이름을 포함 한 상대 경로입니다. 이 경로는 SharePoint 프로젝트 항목을 포함 하는 SharePoint 프로젝트의 루트 폴더를 기준으로 합니다.|
 |**대상**|선택적 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더를 기준으로 SharePoint 서버에 종속 프로젝트 출력을 배포할 경로입니다. 배포 루트 폴더는 **type** 특성으로 지정 된 배포 유형에 따라 결정 됩니다.<br /><br /> 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 경로** 및 **배포 루트** 속성에 대 한 설명을 참조 하세요.|
-|**유형**|필수 **xs: string** 특성입니다.<br /><br /> 종속 프로젝트의 출력에 사용할 배포 형식입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
+|**형식**|필수 **xs: string** 특성입니다.<br /><br /> 종속 프로젝트의 출력에 사용할 배포 형식입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
