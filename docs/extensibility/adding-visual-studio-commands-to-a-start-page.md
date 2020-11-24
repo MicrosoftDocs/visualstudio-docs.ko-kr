@@ -1,5 +1,7 @@
 ---
 title: 시작 페이지에 Visual Studio 명령 추가 | Microsoft Docs
+description: Visual studio의 사용자 지정 시작 페이지에서 Visual Studio 명령을 XAML 개체에 바인딩하는 다양 한 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740120"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597524"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>시작 페이지에 Visual Studio 명령 추가
 
@@ -34,7 +36,7 @@ xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.Vis
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-*Microsoft.VisualStudio.Shell.Immutable.11.0.dll*어셈블리에서 VisualStudio에 대 한 다른 네임 스페이스를 추가 합니다. 이 어셈블리에 대 한 참조를 프로젝트에 추가 해야 할 수도 있습니다.
+*Microsoft.VisualStudio.Shell.Immutable.11.0.dll* 어셈블리에서 VisualStudio에 대 한 다른 네임 스페이스를 추가 합니다. 이 어셈블리에 대 한 참조를 프로젝트에 추가 해야 할 수도 있습니다.
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
@@ -110,6 +112,6 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
  예제는 [연습: 시작 페이지에 사용자 설정 저장](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)

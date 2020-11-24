@@ -1,5 +1,7 @@
 ---
 title: 도구 모음에 명령 추가 | Microsoft Docs
+description: 주 창, 솔루션 탐색기 및 사용자 지정 도구 창을 포함 하 여 Visual Studio의 windows에서 도구 모음에 사용자 고유의 명령을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f8a779479d32986dfa774109a0c9a3fcd717fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e808e6f472c48dcd14aac2d81b4cd3f615397f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740176"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597719"
 ---
 # <a name="add-commands-to-toolbars"></a>도구 모음에 명령 추가
 도구 모음은 명령에 바인딩된 단추를 포함 하는 가로 또는 세로 줄무늬입니다. Visual Studio의 다양 한 창에서 도구 모음에 고유한 명령을 추가할 수 있습니다. 주 Visual Studio 창, 솔루션 탐색기 및 사용자 지정 도구 창이 있습니다.

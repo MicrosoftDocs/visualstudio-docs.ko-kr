@@ -1,5 +1,7 @@
 ---
 title: 가장 최근에 사용한 목록을 하위 메뉴에 추가 | Microsoft Docs
+description: 가장 최근에 사용한 메뉴 명령이 포함 된 동적 목록을 Visual Studio IDE (통합 개발 환경)의 하위 메뉴에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904206"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597928"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>가장 최근에 사용한 목록을 하위 메뉴에 추가
 이 연습은 [메뉴에 하위 메뉴 추가](../extensibility/adding-a-submenu-to-a-menu.md)의 데모를 기반으로 하 고, 동적 목록을 하위 메뉴에 추가 하는 방법을 보여 줍니다. 동적 목록은 MRU (가장 최근에 사용 됨) 목록을 만들기 위한 기본을 형성 합니다.
@@ -30,7 +32,7 @@ ms.locfileid: "85904206"
 
 메뉴 및 *vsct* 파일에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension"></a>확장 만들기
@@ -41,13 +43,13 @@ ms.locfileid: "85904206"
 
 ## <a name="create-a-dynamic-item-list-command"></a>동적 항목 목록 만들기 명령
 
-1. *Testcommandpackage. vsct*를 엽니다.
+1. *Testcommandpackage. vsct* 를 엽니다.
 
 2. 섹션에서 `Symbols` `GuidSymbol` 다음과 같이 guidTestCommandPackageCmdSet 라는 노드의 그룹 및 명령에 대 한 기호를 추가 `MRUListGroup` `cmdidMRUList` 합니다.
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. 섹션에서 `Groups` 기존 그룹 항목 뒤에 선언 된 그룹을 추가 합니다.
@@ -77,15 +79,15 @@ ms.locfileid: "85904206"
 
 5. 프로젝트를 빌드하고 디버깅을 시작 하 여 새 명령의 표시를 테스트 합니다.
 
-    **Testmenu** 메뉴에서 새 하위 **메뉴, 하위 메뉴**를 클릭 하 여 새 명령 **MRU 자리 표시자**를 표시 합니다. 다음 절차에서 동적 MRU 명령이 구현 된 후이 명령 레이블은 하위 메뉴가 열릴 때마다 해당 목록으로 대체 됩니다.
+    **Testmenu** 메뉴에서 새 하위 **메뉴, 하위 메뉴** 를 클릭 하 여 새 명령 **MRU 자리 표시자** 를 표시 합니다. 다음 절차에서 동적 MRU 명령이 구현 된 후이 명령 레이블은 하위 메뉴가 열릴 때마다 해당 목록으로 대체 됩니다.
 
 ## <a name="filling-the-mru-list"></a>MRU 목록 채우기
 
-1. *TestCommandPackageGuids.cs*에서 클래스 정의의 기존 명령 id 뒤에 다음 줄을 추가 합니다 `TestCommandPackageGuids` .
+1. *TestCommandPackageGuids.cs* 에서 클래스 정의의 기존 명령 id 뒤에 다음 줄을 추가 합니다 `TestCommandPackageGuids` .
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. *TestCommand.cs* 에서 다음 using 문을 추가 합니다.
@@ -147,7 +149,7 @@ ms.locfileid: "85904206"
 6. 메서드 뒤에 `InitMRUMenu` 다음 메서드를 추가 `OnMRUQueryStatus` 합니다. 각 MRU 항목에 대 한 텍스트를 설정 하는 처리기입니다.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ ms.locfileid: "85904206"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ ms.locfileid: "85904206"
 7. 메서드 뒤에 `OnMRUQueryStatus` 다음 메서드를 추가 `OnMRUExec` 합니다. MRU 항목을 선택 하기 위한 처리기입니다. 이 메서드는 선택한 항목을 목록 맨 위로 이동한 다음 선택한 항목을 메시지 상자에 표시 합니다.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ ms.locfileid: "85904206"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];
@@ -190,14 +192,14 @@ ms.locfileid: "85904206"
 
 1. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
-2. **Testmenu** 메뉴에서 **testmenu 호출**을 클릭 합니다. 이렇게 하면 명령이 선택 되었음을 나타내는 메시지 상자가 표시 됩니다.
+2. **Testmenu** 메뉴에서 **testmenu 호출** 을 클릭 합니다. 이렇게 하면 명령이 선택 되었음을 나타내는 메시지 상자가 표시 됩니다.
 
     > [!NOTE]
     > 이 단계는 VSPackage을 강제로 로드 하 고 MRU 목록을 올바르게 표시 하는 데 필요 합니다. 이 단계를 건너뛰면 MRU 목록이 표시 되지 않습니다.
 
-3. **테스트 메뉴** 메뉴에서 **하위 메뉴**를 클릭 합니다. 하위 메뉴의 끝에 표시 되는 네 개의 항목 목록이 구분 기호 아래에 표시 됩니다. **항목 3**을 클릭 하면 메시지 상자가 표시 되 고 **선택 된 항목 3**이 표시 됩니다. (4 개 항목 목록이 표시 되지 않는 경우 이전 단계의 지침을 따랐는지 확인 합니다.)
+3. **테스트 메뉴** 메뉴에서 **하위 메뉴** 를 클릭 합니다. 하위 메뉴의 끝에 표시 되는 네 개의 항목 목록이 구분 기호 아래에 표시 됩니다. **항목 3** 을 클릭 하면 메시지 상자가 표시 되 고 **선택 된 항목 3** 이 표시 됩니다. (4 개 항목 목록이 표시 되지 않는 경우 이전 단계의 지침을 따랐는지 확인 합니다.)
 
-4. 하위 메뉴를 다시 엽니다. 이제 **항목 3** 이 목록의 맨 위에 있고 다른 항목은 한 위치 아래로 푸시 되었습니다. **항목 3** 을 다시 클릭 합니다. 그러면 메시지 상자에 **선택한 항목 3**이 표시 됩니다 .이는 텍스트를 명령 레이블과 함께 새 위치로 올바르게 이동 했음을 나타냅니다.
+4. 하위 메뉴를 다시 엽니다. 이제 **항목 3** 이 목록의 맨 위에 있고 다른 항목은 한 위치 아래로 푸시 되었습니다. **항목 3** 을 다시 클릭 합니다. 그러면 메시지 상자에 **선택한 항목 3** 이 표시 됩니다 .이는 텍스트를 명령 레이블과 함께 새 위치로 올바르게 이동 했음을 나타냅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [동적으로 메뉴 항목 추가](../extensibility/dynamically-adding-menu-items.md)

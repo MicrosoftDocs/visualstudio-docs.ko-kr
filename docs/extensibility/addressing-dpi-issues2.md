@@ -1,5 +1,7 @@
 ---
 title: DPI Issues2의 주소 지정 Microsoft Docs
+description: 콘텐츠를 확장 하 고, 문제를 레이아웃 하 고, DPI 확장 Api를 사용 하는 등 고해상도 화면에 대 한 프로그래밍과 관련 된 문제에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740100"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598460"
 ---
 # <a name="address-dpi-issues"></a>주소 DPI 문제
 장치 수가 늘어나고 "고해상도" 화면에 제공 됩니다. 일반적으로 이러한 화면에는 인치당 200 픽셀 (ppi)이 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하려면 장치에 대 한 일반적인 보기 거리에서 콘텐츠를 보는 데 필요한 요구에 맞게 콘텐츠를 확장 해야 합니다. 2014의 경우 고밀도 디스플레이의 기본 대상은 모바일 컴퓨팅 장치 (태블릿, clamshell 랩톱 및 휴대폰)입니다.
@@ -103,7 +105,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>이미지 및 레이아웃 크기를 조정 하는 데에는 DPIHelper 라이브러리/클래스 사용
 Visual Studio DPI 도우미 라이브러리는 네이티브 및 관리 되는 폼에서 사용할 수 있으며, 다른 응용 프로그램에서 Visual Studio shell 외부에서 사용할 수 있습니다.
 
-이 라이브러리를 사용 하려면 Visual Studio의 하이 [진한 확장성 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 로 이동 하 여 DPI_Images_Icons 높은 샘플을 복제 합니다.
+이 라이브러리를 사용 하려면 Visual Studio의로는 [진한 확장성 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 로 이동 하 여 High-DPI_Images_Icons 샘플을 복제 합니다.
 
 소스 파일에서 *Vsuidpihelper* 를 포함 하 고 클래스의 정적 함수를 호출 합니다 `VsUI::DpiHelper` .
 
@@ -126,7 +128,7 @@ Visual Studio 환경 내에서 실행 되는 관리 코드에서 DPI 도우미 �
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- 프로젝트에 **PresentationCore**및 **PresentationUI**에 **대**한 참조가 있는지 확인 합니다.
+- 프로젝트에 **PresentationCore** 및 **PresentationUI** 에 **대** 한 참조가 있는지 확인 합니다.
 
 - 코드에서 **VisualStudio ui** 네임 스페이스를 사용 하 고, DpiHelper 클래스의 정적 함수를 호출 합니다. 지원 되는 형식 (요소, 크기, 사각형 등)의 경우 확장 된 새 개체를 반환 하는 확장 함수가 제공 됩니다. 예:
 

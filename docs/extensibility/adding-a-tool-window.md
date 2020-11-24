@@ -1,5 +1,7 @@
 ---
 title: 도구 창 추가 | Microsoft Docs
+description: 도구 창을 만들고 도구 창에 명령이 포함 된 도구 모음을 추가 하 여 Visual Studio에 통합 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904141"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597992"
 ---
 # <a name="add-a-tool-window"></a>도구 창 추가
 
@@ -32,13 +34,13 @@ ms.locfileid: "85904141"
 
 - 도구 창에 대 한 기본 위치를 설정 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-tool-window"></a>도구 창 만들기
 
-1. VSIX 템플릿을 사용 하 여 **Firsttoolwin** 이라는 프로젝트를 만들고 **FirstToolWindow**이라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
+1. VSIX 템플릿을 사용 하 여 **Firsttoolwin** 이라는 프로젝트를 만들고 **FirstToolWindow** 이라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
 
     > [!NOTE]
     > 도구 창을 사용 하 여 확장을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
@@ -47,12 +49,12 @@ Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으
 
 1. 기본 컨트롤을 제거 합니다. *Firsttoolwindowcontrol* 을 열고 **Click Me** 를 삭제 합니다. 클릭합니다.
 
-2. **도구 상자**에서 **모든 WPF 컨트롤** 섹션을 확장 하 고 **미디어 요소** 컨트롤을 **firsttoolwindowcontrol** 폼으로 끕니다. 컨트롤을 선택 하 고 **속성** 창에서이 요소 이름을 **mediaElement1**로 선택 합니다.
+2. **도구 상자** 에서 **모든 WPF 컨트롤** 섹션을 확장 하 고 **미디어 요소** 컨트롤을 **firsttoolwindowcontrol** 폼으로 끕니다. 컨트롤을 선택 하 고 **속성** 창에서이 요소 이름을 **mediaElement1** 로 선택 합니다.
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>도구 창에 도구 모음 추가
 다음과 같은 방법으로 도구 모음을 추가 하면 해당 그라데이션과 색이 IDE의 나머지 부분과 일치 하는 것을 보장할 수 있습니다.
 
-1. **솔루션 탐색기**에서 *Firsttoolwindowpackage. vsct*를 엽니다. *. Vsct* 파일은 도구 창에서 XML을 사용 하 여 GUI (그래픽 사용자 인터페이스) 요소를 정의 합니다.
+1. **솔루션 탐색기** 에서 *Firsttoolwindowpackage. vsct* 를 엽니다. *. Vsct* 파일은 도구 창에서 XML을 사용 하 여 GUI (그래픽 사용자 인터페이스) 요소를 정의 합니다.
 
 2. 섹션에서 `<Symbols>` `<GuidSymbol>` 특성이 인 노드를 찾습니다 `name` `guidFirstToolWindowPackageCmdSet` . `<IDSymbol>`이 노드의 요소 목록에 다음 두 요소를 추가 `<IDSymbol>` 하 여 도구 모음 및 도구 모음 그룹을 정의 합니다.
 
@@ -129,7 +131,7 @@ Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>FirstToolWindowControl에 MediaPlayer 속성 추가
 Toolbar 컨트롤에 대 한 이벤트 처리기에서 코드는 FirstToolWindowControl 클래스의 자식인 Media Player 컨트롤에 액세스할 수 있어야 합니다.
 
-**솔루션 탐색기**에서 *firsttoolwindowcontrol*을 마우스 오른쪽 단추로 클릭 하 고 **코드 보기**를 클릭 한 후 firsttoolwindowcontrol 클래스에 다음 코드를 추가 합니다.
+**솔루션 탐색기** 에서 *firsttoolwindowcontrol* 을 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 클릭 한 후 firsttoolwindowcontrol 클래스에 다음 코드를 추가 합니다.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -255,7 +257,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 그런 다음 도구 창에 대 한 IDE에서 기본 위치를 지정 합니다. 도구 창에 대 한 구성 정보는 *FirstToolWindowPackage.cs* 파일에 있습니다.
 
-1. *FirstToolWindowPackage.cs*에서 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 형식을 생성자에 전달 하는 클래스의 특성을 찾습니다. 기본 위치를 지정 하려면 다음 예제와 같이 생성자에 더 많은 매개 변수를 추가 해야 합니다.
+1. *FirstToolWindowPackage.cs* 에서 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 형식을 생성자에 전달 하는 클래스의 특성을 찾습니다. 기본 위치를 지정 하려면 다음 예제와 같이 생성자에 더 많은 매개 변수를 추가 해야 합니다.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -263,7 +265,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    첫 번째 명명 된 매개 변수는이 `Style` 고 해당 값은입니다 `Tabbed` . 즉, 창이 기존 창에서 탭이 됩니다. 도킹 위치는 매개 변수에서 지정 합니다 `Window` .이 경우에는 **솔루션 탐색기**의 GUID입니다.
+    첫 번째 명명 된 매개 변수는이 `Style` 고 해당 값은입니다 `Tabbed` . 즉, 창이 기존 창에서 탭이 됩니다. 도킹 위치는 매개 변수에서 지정 합니다 `Window` .이 경우에는 **솔루션 탐색기** 의 GUID입니다.
 
     > [!NOTE]
     > IDE의 창 형식에 대 한 자세한 내용은를 참조 하십시오 <xref:EnvDTE.vsWindowType> .
@@ -272,13 +274,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 1. **F5** 키를 눌러 Visual Studio 실험적 빌드의 새 인스턴스를 엽니다.
 
-2. **보기** 메뉴에서 **다른 창** 을 가리킨 다음 **첫 번째 도구 창**을 클릭 합니다.
+2. **보기** 메뉴에서 **다른 창** 을 가리킨 다음 **첫 번째 도구 창** 을 클릭 합니다.
 
-    미디어 플레이어 도구 창은 **솔루션 탐색기**와 동일한 위치에 열립니다. 이전과 동일한 위치에 계속 표시 되는 경우 창 레이아웃 (**창/다시 설정 창 레이아웃**)을 다시 설정 합니다.
+    미디어 플레이어 도구 창은 **솔루션 탐색기** 와 동일한 위치에 열립니다. 이전과 동일한 위치에 계속 표시 되는 경우 창 레이아웃 (**창/다시 설정 창 레이아웃**)을 다시 설정 합니다.
 
-3. 도구 창에서 단추 ( **검색** 아이콘 포함)를 클릭 합니다. 지원 되는 사운드 또는 비디오 파일 (예: *C:\windows\media\chimes.wav*)을 선택 하 고 **열기**를 누릅니다.
+3. 도구 창에서 단추 ( **검색** 아이콘 포함)를 클릭 합니다. 지원 되는 사운드 또는 비디오 파일 (예: *C:\windows\media\chimes.wav*)을 선택 하 고 **열기** 를 누릅니다.
 
     Chime 소리가 들려야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

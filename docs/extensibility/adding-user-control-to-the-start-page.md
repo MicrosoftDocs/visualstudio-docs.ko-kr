@@ -1,5 +1,7 @@
 ---
 title: 시작 페이지에 사용자 정의 컨트롤 추가 | Microsoft Docs
+description: Visual Studio의 시작 페이지에 Windows Presentation Foundation (WPF) 사용자 정의 컨트롤을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011998"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597550"
 ---
 # <a name="add-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가
 
@@ -32,11 +34,11 @@ ms.locfileid: "90011998"
 
 1. [사용자 지정 시작 페이지 만들기](../extensibility/creating-a-custom-start-page.md)에서 만든을 사용 하 여 시작 페이지를 만듭니다.
 
-2. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가**를 클릭 한 다음 **새 프로젝트**를 클릭 합니다.
+2. **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 프로젝트** 를 클릭 합니다.
 
-3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 또는 **Visual c #** 노드를 확장 하 고 **Windows**를 클릭 합니다. 가운데 창에서 **WPF 사용자 정의 컨트롤 라이브러리**를 선택 합니다.
+3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 또는 **Visual c #** 노드를 확장 하 고 **Windows** 를 클릭 합니다. 가운데 창에서 **WPF 사용자 정의 컨트롤 라이브러리** 를 선택 합니다.
 
-4. 컨트롤의 이름을 `WebUserControl` 지정한 다음 **확인을**클릭 합니다.
+4. 컨트롤의 이름을 `WebUserControl` 지정한 다음 **확인을** 클릭 합니다.
 
 ## <a name="implement-the-user-control"></a>사용자 정의 컨트롤 구현
 
@@ -111,7 +113,7 @@ WPF 사용자 정의 컨트롤을 구현 하려면 XAML에서 UI (사용자 인�
 2. 다음과 같이 SetButton_Click 이벤트 처리기를 채웁니다.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -139,11 +141,11 @@ WPF 사용자 정의 컨트롤을 구현 하려면 XAML에서 UI (사용자 인�
 
 시작 페이지 프로젝트에서이 컨트롤을 사용할 수 있도록 하려면 시작 페이지 프로젝트 파일에서 새 컨트롤 라이브러리에 대 한 참조를 추가 합니다. 그런 다음 시작 페이지 XAML 태그에 컨트롤을 추가할 수 있습니다.
 
-1. **솔루션 탐색기**의 시작 페이지 프로젝트에서 **참조** 를 마우스 오른쪽 단추로 클릭 한 다음 **참조 추가**를 클릭 합니다.
+1. **솔루션 탐색기** 의 시작 페이지 프로젝트에서 **참조** 를 마우스 오른쪽 단추로 클릭 한 다음 **참조 추가** 를 클릭 합니다.
 
-2. **프로젝트** 탭에서 **Webusercontrol** 을 선택 하 고 **확인**을 클릭 합니다.
+2. **프로젝트** 탭에서 **Webusercontrol** 을 선택 하 고 **확인** 을 클릭 합니다.
 
-3. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+3. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
     솔루션을 빌드하면 솔루션의 다른 파일에 대해 IntelliSense에서 사용자 컨트롤을 사용할 수 있습니다.
 
@@ -151,7 +153,7 @@ WPF 사용자 정의 컨트롤을 구현 하려면 XAML에서 UI (사용자 인�
 
 ### <a name="to-add-the-control-to-the-markup"></a>태그에 컨트롤을 추가 하려면
 
-1. **솔루션 탐색기**에서 시작 페이지 *.xaml* 파일을 엽니다.
+1. **솔루션 탐색기** 에서 시작 페이지 *.xaml* 파일을 엽니다.
 
 2. **XAML** 창에서 최상위 요소에 다음 네임 스페이스 선언을 추가 합니다 <xref:System.Windows.Controls.Grid> .
 
@@ -177,19 +179,19 @@ WPF 사용자 정의 컨트롤을 구현 하려면 XAML에서 UI (사용자 인�
 
 ## <a name="test-a-manually-created-custom-start-page"></a>수동으로 만든 사용자 지정 시작 페이지 테스트
 
-1. XAML 파일, 지원 되는 텍스트 파일 또는 태그 파일을 *%USERPROFILE%\My Documents\Visual Studio 2015 \Startpages \\ * 폴더에 복사 합니다.
+1. XAML 파일, 지원 되는 텍스트 파일 또는 태그 파일을 *%USERPROFILE%\My Documents\Visual Studio 2015 \Startpages \\* 폴더에 복사 합니다.
 
-2. 시작 페이지에서 Visual Studio에서 설치 되지 않은 어셈블리의 컨트롤이 나 형식을 참조 하는 경우 어셈블리를 복사한 다음 _Visual studio 설치 폴더_**\Common7\IDE\PrivateAssemblies \\ **에 붙여넣습니다.
+2. 시작 페이지에서 Visual Studio에서 설치 되지 않은 어셈블리의 컨트롤이 나 형식을 참조 하는 경우 어셈블리를 복사한 다음 _Visual studio 설치 폴더_**\Common7\IDE\PrivateAssemblies \\** 에 붙여넣습니다.
 
 3. Visual Studio 명령 프롬프트에서 **devenv/rootsuffix Exp** 를 입력 하 여 visual studio의 실험적 인스턴스를 엽니다.
 
 4. 실험적 인스턴스에서 **도구**  >  **옵션**  >  **환경**  >  **시작** 페이지로 이동 하 고 **사용자 지정 시작 페이지** 드롭다운에서 XAML 파일을 선택 합니다.
 
-5. **보기** 메뉴에서 **시작 페이지**를 클릭합니다.
+5. **보기** 메뉴에서 **시작 페이지** 를 클릭합니다.
 
     사용자 지정 시작 페이지가 표시 됩니다. 모든 파일을 변경 하려면 실험적 인스턴스를 닫고 변경 내용을 적용 하 고 변경 된 파일을 복사 하 여 붙여넣은 다음 실험적 인스턴스를 다시 열어 변경 내용을 확인 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF 컨테이너 컨트롤](/previous-versions/bb675291(v=vs.110))
 - [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

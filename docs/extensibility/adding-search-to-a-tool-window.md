@@ -1,5 +1,7 @@
 ---
 title: 도구 창에 검색 추가 | Microsoft Docs
+description: 검색 상자, 필터링 및 진행률 표시기를 비롯 한 검색 기능을 Visual Studio의 도구 창에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903407"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597641"
 ---
 # <a name="add-search-to-a-tool-window"></a>도구 창에 검색 추가
 확장에서 도구 창을 만들거나 업데이트 하는 경우 Visual Studio의 다른 위치에 표시 되는 것과 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음과 같은 기능이 포함 됩니다.
@@ -48,7 +50,7 @@ ms.locfileid: "85903407"
 
 ## <a name="to-create-a-vsix-project"></a>VSIX 프로젝트를 만들려면
 
-1. `TestToolWindowSearch` **Testsearch**라는 도구 창을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 이 작업을 수행 하는 데 도움이 필요한 경우 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
+1. `TestToolWindowSearch` **Testsearch** 라는 도구 창을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 이 작업을 수행 하는 데 도움이 필요한 경우 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
 ## <a name="to-create-a-tool-window"></a>도구 창을 만들려면
 
@@ -75,14 +77,14 @@ ms.locfileid: "85903407"
 
      **Testsearchcontrol** 클래스에서 다음 코드를 추가 합니다.
 
-     이 코드는 <xref:System.Windows.Controls.TextBox> 이름이 **SearchResultsTextBox** 인 Public 속성과 **searchcontent**라는 공용 문자열 속성을 추가 합니다. 생성자에서 SearchResultsTextBox은 입력란으로 설정 되 고 SearchContent는 줄 바꿈 구분 문자열 집합으로 초기화 됩니다. 텍스트 상자의 콘텐츠도 문자열 집합으로 초기화 됩니다.
+     이 코드는 <xref:System.Windows.Controls.TextBox> 이름이 **SearchResultsTextBox** 인 Public 속성과 **searchcontent** 라는 공용 문자열 속성을 추가 합니다. 생성자에서 SearchResultsTextBox은 입력란으로 설정 되 고 SearchContent는 줄 바꿈 구분 문자열 집합으로 초기화 됩니다. 텍스트 상자의 콘텐츠도 문자열 집합으로 초기화 됩니다.
 
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
 
 5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 나타납니다.
 
-6. 메뉴 모음에서 **View**  >  **다른 창**  >  **testsearch**보기를 선택 합니다.
+6. 메뉴 모음에서 **View**  >  **다른 창**  >  **testsearch** 보기를 선택 합니다.
 
      도구 창이 나타나지만 검색 컨트롤이 아직 표시 되지 않습니다.
 
@@ -93,15 +95,15 @@ ms.locfileid: "85903407"
      검색을 사용 하려면 속성을 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> . <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>클래스는을 구현 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> 고 검색을 사용 하지 않는 기본 구현을 제공 합니다.
 
     ```csharp
-    public override bool SearchEnabled
+    public override bool SearchEnabled
     {
-        get { return true; }
+        get { return true; }
     }
     ```
 
 2. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 나타납니다.
 
-3. Visual Studio의 실험적 인스턴스에서 **Testsearch**를 엽니다.
+3. Visual Studio의 실험적 인스턴스에서 **Testsearch** 를 엽니다.
 
      도구 창의 맨 위에 검색 워터 마크와 돋보기 아이콘이 포함 **된 검색 컨트롤이** 나타납니다. 그러나 검색 프로세스가 아직 구현 되지 않았기 때문에 검색은 아직 작동 하지 않습니다.
 
@@ -232,17 +234,17 @@ ms.locfileid: "85903407"
 
     1. 프로젝트를 다시 빌드하고 디버깅을 시작 합니다.
 
-    2. Visual Studio의 실험적 인스턴스에서 도구 창을 다시 열고 검색 창에 일부 검색 텍스트를 입력 한 다음 **Enter 키**를 누릅니다.
+    2. Visual Studio의 실험적 인스턴스에서 도구 창을 다시 열고 검색 창에 일부 검색 텍스트를 입력 한 다음 **Enter 키** 를 누릅니다.
 
          올바른 결과가 표시 됩니다.
 
 ## <a name="to-customize-the-search-behavior"></a>검색 동작을 사용자 지정 하려면
  검색 설정을 변경 하 여 검색 컨트롤이 표시 되는 방법과 검색을 수행 하는 방법을 다양 하 게 변경할 수 있습니다. 예를 들어 워터 마크 (검색 상자에 표시 되는 기본 텍스트), 검색 컨트롤의 최소 및 최대 너비 및 진행률 표시줄을 표시할지 여부를 변경할 수 있습니다. 검색 결과가 표시 되기 시작 하는 시점 (주문형 또는 인스턴트 검색)과 최근 검색 된 용어 목록을 표시할지 여부를 변경할 수도 있습니다. 전체 설정 목록은 클래스에서 찾을 수 있습니다 <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> .
 
-1. * TestSearch.cs * 파일에서 다음 코드를 클래스에 추가 `TestSearch` 합니다. 이 코드는 요청 시 검색 대신 즉시 검색을 사용 하도록 설정 합니다. 즉, 사용자가 **ENTER 키**를 클릭할 필요가 없습니다. 이 코드는 `ProvideSearchSettings` `TestSearch` 기본 설정을 변경 하는 데 필요한 클래스의 메서드를 재정의 합니다.
+1. * TestSearch.cs * 파일에서 다음 코드를 클래스에 추가 `TestSearch` 합니다. 이 코드는 요청 시 검색 대신 즉시 검색을 사용 하도록 설정 합니다. 즉, 사용자가 **ENTER 키** 를 클릭할 필요가 없습니다. 이 코드는 `ProvideSearchSettings` `TestSearch` 기본 설정을 변경 하는 데 필요한 클래스의 메서드를 재정의 합니다.
 
     ```csharp
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
     {
         Utilities.SetValue(pSearchSettings,
             SearchSettingsDataSource.SearchStartTypeProperty.Name,
@@ -284,13 +286,13 @@ ms.locfileid: "85903407"
      검색을 수행할 때마다 검색 창 (검색 텍스트 상자 아래 파란색 선)에 진행률 표시줄이 나타납니다.
 
 ## <a name="to-enable-users-to-refine-their-searches"></a>사용자가 검색을 구체화할 수 있도록 하려면
- **대/소문자 구분** 또는 **전체 단어 일치**등의 옵션을 사용 하 여 사용자가 검색을 구체화할 수 있습니다. 옵션은 확인란과 같이 표시 되는 부울 이거나 단추로 표시 되는 명령입니다. 이 연습에서는 부울 옵션을 만듭니다.
+ **대/소문자 구분** 또는 **전체 단어 일치** 등의 옵션을 사용 하 여 사용자가 검색을 구체화할 수 있습니다. 옵션은 확인란과 같이 표시 되는 부울 이거나 단추로 표시 되는 명령입니다. 이 연습에서는 부울 옵션을 만듭니다.
 
 1. *TestSearch.cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 메서드를 재정의 합니다 `SearchOptionsEnum` .이 메서드를 사용 하면 검색 구현에서 지정 된 옵션의 설정 또는 해제 여부를 검색할 수 있습니다. 의 코드는 `SearchOptionsEnum` 대/소문자를 열거자와 일치 시키는 옵션을 추가 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> . 케이스를 일치 시키는 옵션도 속성으로 사용할 수 있습니다 `MatchCaseOption` .
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum
     {
         get
         {
@@ -342,13 +344,13 @@ ms.locfileid: "85903407"
 1. *TestSearch.cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 `SearchFiltersEnum` <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> 짝수 줄만 표시 되도록를 지정 하는를 추가 하 여를 구현 합니다.
 
     ```csharp
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum
     {
         get
         {
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
         }
     }
 
@@ -359,19 +361,19 @@ ms.locfileid: "85903407"
 2. *TestSearch.cs* 파일에서 클래스에 있는 클래스에 다음 메서드를 추가 합니다 `TestSearchTask` `TestSearch` . 이러한 메서드는 `OnStartSearch` 다음 단계에서 수정할 수 있는 메서드를 지원 합니다.
 
     ```csharp
-    private string RemoveFromString(string origString, string stringToRemove)
+    private string RemoveFromString(string origString, string stringToRemove)
     {
         int index = origString.IndexOf(stringToRemove);
         if (index == -1)
             return origString;
-        else 
+        else 
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();
     }
 
-    private string[] GetEvenItems(string[] contentArr)
+    private string[] GetEvenItems(string[] contentArr)
     {
         int length = contentArr.Length / 2;
-        string[] evenContentArr = new string[length];
+        string[] evenContentArr = new string[length];
 
         int indexB = 0;
         for (int index = 1; index < contentArr.Length; index += 2)
@@ -387,13 +389,13 @@ ms.locfileid: "85903407"
 3. 클래스에서 `TestSearchTask` `OnStartSearch` 다음 코드를 사용 하 여 메서드를 업데이트 합니다. 이 변경 내용은 필터를 지원 하도록 코드를 업데이트 합니다.
 
     ```csharp
-    protected override void OnStartSearch()
+    protected override void OnStartSearch()
     {
-        // Use the original content of the text box as the target of the search. 
-        var separator = new string[] { Environment.NewLine };
+        // Use the original content of the text box as the target of the search. 
+        var separator = new string[] { Environment.NewLine };
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);
 
-        // Get the search option. 
+        // Get the search option. 
         bool matchCase = false;
         matchCase = m_toolWindow.MatchCaseOption.Value;
 
@@ -406,7 +408,7 @@ ms.locfileid: "85903407"
         {
             string searchString = this.SearchQuery.SearchString;
 
-            // If the search string contains the filter string, filter the content array. 
+            // If the search string contains the filter string, filter the content array. 
             string filterString = "lines:\"even\"";
 
             if (this.SearchQuery.SearchString.Contains(filterString))
@@ -418,7 +420,7 @@ ms.locfileid: "85903407"
                 searchString = RemoveFromString(searchString, filterString);
             }
 
-            // Determine the results. 
+            // Determine the results. 
             uint progress = 0;
             foreach (string line in contentArr)
             {
@@ -441,7 +443,7 @@ ms.locfileid: "85903407"
 
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
 
-                // Uncomment the following line to demonstrate the progress bar. 
+                // Uncomment the following line to demonstrate the progress bar. 
                 // System.Threading.Thread.Sleep(100);
             }
         }
@@ -457,8 +459,8 @@ ms.locfileid: "85903407"
             this.SearchResults = resultCount;
         }
 
-        // Call the implementation of this method in the base class. 
-        // This sets the task status to complete and reports task completion. 
+        // Call the implementation of this method in the base class. 
+        // This sets the task status to complete and reports task completion. 
         base.OnStartSearch();
     }
     ```
@@ -471,7 +473,7 @@ ms.locfileid: "85903407"
 
 6. 필터를 선택 합니다.
 
-     검색 상자에 **"짝수" 줄**이 포함 되 고 다음과 같은 결과가 나타납니다.
+     검색 상자에 **"짝수" 줄** 이 포함 되 고 다음과 같은 결과가 나타납니다.
 
      2 양호
 

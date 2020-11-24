@@ -1,5 +1,7 @@
 ---
 title: 언어 서버 프로토콜 확장 추가 | Microsoft Docs
+description: LSP (언어 서버 프로토콜)를 기반으로 언어 서버를 통합 하는 Visual Studio 확장을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860457"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598148"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -107,7 +109,7 @@ textDocument/이름 바꾸기 | 예
 
 LSP 기반 언어 서버를 사용 하 여 언어 서비스 확장을 만들려면 먼저 인스턴스에 대해 **Visual Studio 확장 개발** 워크 로드를 설치 했는지 확인 합니다.
 
-다음으로 **파일**  >  **새로 만들기 프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**로 이동 하 여 새 VSIX 프로젝트를 만듭니다.
+다음으로 **파일**  >  **새로 만들기 프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트** 로 이동 하 여 새 VSIX 프로젝트를 만듭니다.
 
 ![vsix 프로젝트 만들기](media/lsp-vsix-project.png)
 
@@ -125,7 +127,7 @@ LSP는 언어에 대해 텍스트 색 지정을 제공 하는 방법에 대 한 
 
 1. 확장 내에 "문법" 이라는 폴더를 만듭니다 .이 폴더는 사용자가 선택 하는 모든 이름일 수 있습니다.
 
-2. *문법* 폴더 안에 사용자 지정 색 지정을 제공 하는 모든 * \* tmlanguage*, * \* . info.plist*, * \* tmlanguage*또는 * \* json* 파일을 포함 합니다.
+2. *문법* 폴더 안에 사용자 지정 색 지정을 제공 하는 모든 *\* tmlanguage*, *\* . info.plist*, *\* tmlanguage* 또는 *\* json* 파일을 포함 합니다.
 
    > [!TIP]
    > *. Tmtheme* 파일은 범위가 Visual Studio 분류 (명명 된 색 키)에 매핑되는 방식을 정의 합니다. 지침을 보려면 *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* 디렉터리에서 전역 *tmtheme* 파일을 참조할 수 있습니다.
@@ -137,9 +139,9 @@ LSP는 언어에 대해 텍스트 색 지정을 제공 하는 방법에 대 한 
     "MyLang"="$PackageFolder$\Grammars"
     ```
 
-4. 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **빌드** 작업을 **내용** 으로 변경 하 고 **VSIX에 포함** 속성을 **true**로 변경 합니다.
+4. 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **빌드** 작업을 **내용** 으로 변경 하 고 **VSIX에 포함** 속성을 **true** 로 변경 합니다.
 
-이전 단계를 완료 한 후에는 ' MyLang ' 라는 리포지토리 원본 (' MyLang '은 명확성을 위한 이름이 며 임의의 고유 문자열일 수 있음)으로 *문법* 폴더가 패키지의 설치 디렉터리에 추가 됩니다. 이 디렉터리의 모든 문법 (*tmlanguage* 파일) 및 테마 파일 (잠재력*테마* 파일)은로 선택 되며 textmate에 제공 된 기본 제공 문법을 대체 합니다. 문법 파일의 선언 된 확장이 열려 있는 파일의 확장명과 일치 하는 경우 TextMate은에서 한 단계씩 실행 됩니다.
+이전 단계를 완료 한 후에는 ' MyLang ' 라는 리포지토리 원본 (' MyLang '은 명확성을 위한 이름이 며 임의의 고유 문자열일 수 있음)으로 *문법* 폴더가 패키지의 설치 디렉터리에 추가 됩니다. 이 디렉터리의 모든 문법 (*tmlanguage* 파일) 및 테마 파일 (잠재력 *테마* 파일)은로 선택 되며 textmate에 제공 된 기본 제공 문법을 대체 합니다. 문법 파일의 선언 된 확장이 열려 있는 파일의 확장명과 일치 하는 경우 TextMate은에서 한 단계씩 실행 됩니다.
 
 ## <a name="create-a-simple-language-client"></a>간단한 언어 클라이언트 만들기
 
@@ -219,7 +221,7 @@ namespace MockLanguageExtension
 
 [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) [async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true) 는 궁극적으로 호출 된 메서드를 호출 하 여 호출 합니다. 언어 서버를 시작 하 고이에 대 한 연결을 설정 하는 논리를 포함 합니다. 서버에 쓰고 서버에서 읽기 위한 스트림을 포함 하는 연결 개체를 반환 해야 합니다. 여기에서 throw 되는 모든 예외는 Visual Studio의 정보 표시줄 메시지를 통해 사용자에 게 표시 되 고 표시 됩니다.
 
-### <a name="activation"></a>정품 인증
+### <a name="activation"></a>활성화
 
 언어 클라이언트 클래스를 구현한 후에는 Visual Studio로 로드 되 고 활성화 되는 방법을 정의 하는 두 가지 특성을 정의 해야 합니다.
 
@@ -292,7 +294,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
 
 다음 단계를 수행 하 여 설정에 대 한 지원을 LSP 언어 서비스 확장에 추가 합니다.
 
-1. 설정 및 해당 기본값을 포함 하는 JSON 파일을 프로젝트에 추가 합니다 (예: *MockLanguageExtensionSettings.js*). 예를 들면 다음과 같습니다.
+1. 설정 및 해당 기본값을 포함 하는 JSON 파일을 프로젝트에 추가 합니다 (예: *MockLanguageExtensionSettings.js*). 예:
 
     ```json
     {
@@ -300,7 +302,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
     }
     ```
 
-2. JSON 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **빌드** 작업을 "콘텐츠"로 변경 하 고 "VSIX에 포함" 속성을 **true**로 변경 합니다.
+2. JSON 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **빌드** 작업을 "콘텐츠"로 변경 하 고 "VSIX에 포함" 속성을 **true** 로 변경 합니다.
 
 3. ConfigurationSections을 구현 하 고 JSON 파일에 정의 된 설정에 대 한 접두사 목록을 반환 합니다 .이는 Visual Studio Code package.js의 구성 섹션 이름에 매핑됩니다.
 
@@ -328,7 +330,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
 
-5. .Pkgdef 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **빌드** 작업을 **내용** 으로 변경 하 고 **VSIX에 포함** 속성을 **true**로 변경 합니다.
+5. .Pkgdef 파일을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 선택 합니다. **빌드** 작업을 **내용** 으로 변경 하 고 **VSIX에 포함** 속성을 **true** 로 변경 합니다.
 
 6. *Source.extension.vsixmanifest* 파일을 열고 **자산** 탭에서 자산을 추가 합니다.
 
@@ -341,8 +343,8 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>사용자가 작업 영역에 대 한 설정 편집
 
 1. 사용자가 서버가 소유 하는 파일이 포함 된 작업 영역을 엽니다.
-2. 사용자가 *. vs* 폴더에 *VSWorkspaceSettings.js의*파일을 추가 합니다.
-3. 사용자가 서버에서 제공 하는 설정에 대 한 줄을 파일 * 의VSWorkspaceSettings.js* 에 추가 합니다. 예를 들면 다음과 같습니다.
+2. 사용자가 *. vs* 폴더에 *VSWorkspaceSettings.js의* 파일을 추가 합니다.
+3. 사용자가 서버에서 제공 하는 설정에 대 한 줄을 파일 *의VSWorkspaceSettings.js* 에 추가 합니다. 예:
 
     ```json
     {
@@ -369,7 +371,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
 * "Messages": 추적이 켜져 있지만 메서드 이름과 응답 ID만 추적 됩니다.
 * "Verbose": 추적이 설정 되었습니다. 전체 rpc 메시지를 추적 합니다.
 
-추적 기능이 설정 되 면 콘텐츠는 *%temp%\VisualStudio\LSP* 디렉터리의 파일에 기록 됩니다. 로그는 명명 형식 *[LanguageClientName]-[Datetime 스탬프] .log*를 따릅니다. 현재는 폴더 열기 시나리오에 대해서만 추적을 사용 하도록 설정할 수 있습니다. 단일 파일을 열어 언어 서버를 활성화 하는 경우 진단 추적을 지원 하지 않습니다.
+추적 기능이 설정 되 면 콘텐츠는 *%temp%\VisualStudio\LSP* 디렉터리의 파일에 기록 됩니다. 로그는 명명 형식 *[LanguageClientName]-[Datetime 스탬프] .log* 를 따릅니다. 현재는 폴더 열기 시나리오에 대해서만 추적을 사용 하도록 설정할 수 있습니다. 단일 파일을 열어 언어 서버를 활성화 하는 경우 진단 추적을 지원 하지 않습니다.
 
 ### <a name="custom-messages"></a>사용자 지정 메시지
 
@@ -498,6 +500,6 @@ Visual Studio의 LSP 기반 언어 서버에 대 한 지원은 [폴더 열기 �
 
 Marketplace 지침은 [여기](walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [다른 언어에 대한 Visual Studio 편집기 지원 추가](../ide/adding-visual-studio-editor-support-for-other-languages.md)

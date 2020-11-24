@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 항목에 특성 추가 | Microsoft Docs
+description: 셸 Interop 메서드 GetItemAttribute 및 SetItemAttribute를 사용 하 여 Visual Studio에서 프로젝트 항목에 특성을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f96be0d9b2ba661c29cdc1a25d7348bcff6eb1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740194"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597914"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>프로젝트 항목에 특성 추가
 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 및는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 프로젝트 항목의 특성 값을 가져오고 설정 합니다. SetItemAttribute가 아직 없는 경우 특성을 만들어 프로젝트 항목 메타 데이터에 추가 합니다.
@@ -43,5 +45,5 @@ ms.locfileid: "80740194"
 
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [MSBuild 프로젝트 파일에 데이터 보관](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

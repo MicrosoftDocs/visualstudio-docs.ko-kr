@@ -1,5 +1,7 @@
 ---
 title: 도구 모음 추가 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)에 명령에 바인딩되는 단추가 포함 된 도구 모음을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904077"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597953"
 ---
 # <a name="add-a-toolbar"></a>도구 모음 추가
 이 연습에서는 Visual Studio IDE에 도구 모음을 추가 하는 방법을 보여 줍니다.
@@ -27,15 +29,15 @@ ms.locfileid: "85904077"
 
  메뉴에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-toolbar"></a>도구 모음을 사용 하 여 확장 만들기
- 이라는 VSIX 프로젝트를 만듭니다 `IDEToolbar` . **ToolbarTestCommand**라는 메뉴 명령 항목 템플릿을 추가 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+ 이라는 VSIX 프로젝트를 만듭니다 `IDEToolbar` . **ToolbarTestCommand** 라는 메뉴 명령 항목 템플릿을 추가 합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 ## <a name="create-a-toolbar-for-the-ide"></a>IDE에 대 한 도구 모음 만들기
 
-1. *ToolbarTestCommandPackage*에서 기호 섹션을 찾습니다. GuidToolbarTestCommandPackageCmdSet 라는 GuidSymbol 요소에서 다음과 같이 도구 모음 및 도구 모음 그룹에 대 한 선언을 추가 합니다.
+1. *ToolbarTestCommandPackage* 에서 기호 섹션을 찾습니다. GuidToolbarTestCommandPackageCmdSet 라는 GuidSymbol 요소에서 다음과 같이 도구 모음 및 도구 모음 그룹에 대 한 선언을 추가 합니다.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -85,9 +87,9 @@ ms.locfileid: "85904077"
 
 5. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 되어야 합니다.
 
-6. Visual Studio 메뉴 모음을 마우스 오른쪽 단추로 클릭 하 여 도구 모음 목록을 가져옵니다. **테스트 도구 모음**을 선택 합니다.
+6. Visual Studio 메뉴 모음을 마우스 오른쪽 단추로 클릭 하 여 도구 모음 목록을 가져옵니다. **테스트 도구 모음** 을 선택 합니다.
 
 7. 이제 도구 모음이 파일에서 찾기 아이콘의 오른쪽에 아이콘으로 표시 됩니다. 아이콘을 클릭 하면 ToolbarTestCommandPackage 라는 메시지 상자가 표시 됩니다 **. ToolbarTestCommand. MenuItemCallback () 내부 IDEToolbar**.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

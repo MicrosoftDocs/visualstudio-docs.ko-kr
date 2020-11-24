@@ -1,5 +1,7 @@
 ---
 title: VSIX 패키지의 분석 | Microsoft Docs
+description: Visual Studio에서 하나 이상의 Visual Studio 확장 및 메타 데이터 매니페스트 파일이 포함 된 파일인 VSIX 패키지의 내용에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012336"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598161"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데 사용 하는 메타 데이터와 함께 하나 이상의 Visual Studio 확장을 포함 하는 *.vsix* 파일입니다. 이 메타 데이터는 VSIX 매니페스트와 *[Content_Types] .xml* 파일에 포함 되어 있습니다. VSIX 패키지에는 지역화 된 설정 텍스트를 제공 하기 위해 하나 이상의 *확장명 vsixlangpack* 파일이 포함 되어 있을 수 있으며, 종속성을 설치 하기 위한 추가 VSIX 패키지가 포함 될 수도 있습니다.
@@ -50,7 +52,7 @@ VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데
  VSIX 패키지에서 참조 된 어셈블리의 위성 Dll을 포함 하려면 `SatelliteDllsProjectOutputGroup` **vsix 속성에 포함 된 출력 그룹** 에를 추가 합니다.
 
 ## <a name="installation-location"></a>설치 위치
- 설치 하는 동안 **확장 및 업데이트** 는 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*아래의 폴더에 있는 VSIX 패키지의 콘텐츠를 찾습니다.
+ 설치 하는 동안 **확장 및 업데이트** 는 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* 아래의 폴더에 있는 VSIX 패키지의 콘텐츠를 찾습니다.
 
  *% LocalAppData%은 (* 는) 사용자별 디렉터리 이므로 기본적으로 현재 사용자 에게만 설치가 적용 됩니다. 그러나 매니페스트의 [AllUsers](/previous-versions/ee191547(v=vs.110)) 요소를로 설정 하는 경우 `True` 확장은 <em> \\ .</em> 로 설치 됩니다. VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> 는 컴퓨터의 모든 사용자가 사용할 수 있습니다.
 
