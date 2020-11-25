@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: e18550018a593c0a3eae0d521148cd240b40f5df
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838316"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>제품 키를 사용하여 방금 다운로드한 소프트웨어를 활성화하려면 어떻게 해야 하나요??
@@ -25,5 +25,5 @@ ms.locfileid: "91838316"
 
 제품 키를 가져오고 사용하는 방법에 대한 자세한 내용은 다음 문서를 참조하세요.
 
-- [제품 키 개요](../../../../product-keys.md)
-- [키 찾기 및 클레임](../../../../find-keys.md)
+- [제품 키 개요](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)
+- [키 찾기 및 클레임](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)

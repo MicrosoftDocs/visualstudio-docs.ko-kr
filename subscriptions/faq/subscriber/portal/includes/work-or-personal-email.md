@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q1_1
 ms.openlocfilehash: 9df919ae6a4dd95b2e4013b205c48a864cbfa326
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81386012"
 ---
 ## <a name="should-i-sign-in-using-my-work-email-or-my-personal-email"></a>내 회사 전자 메일이나 개인 전자 메일을 사용하여 로그인해야 하나요?

@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78dc44f4cebbfd245d8e5a8e1a667b422282c7ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349154"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040643"
 ---
 # <a name="overview"></a>개요
 
@@ -292,7 +292,7 @@ dotnet_diagnostic.CA2231.severity = warning
   처음으로 규칙 집합을 편집 하는 경우 Visual Studio에서 기본 규칙 집합 파일의 복사본을 만들고 이름을. a s t a .로 설정 하 고 프로젝트에 추가 합니다 *\<projectname> .* 또한이 사용자 지정 규칙 집합은 프로젝트에 대 한 활성 규칙 집합이 됩니다.
 
    > [!NOTE]
-   > .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기** 에서 규칙 집합에 대 한 메뉴 명령을 지원 하지 않습니다 (예: **활성 규칙 집합 열기** ). .NET Core 또는 .NET Standard 프로젝트에 대해 기본이 아닌 규칙 집합을 지정 하려면 프로젝트 파일에 [ **CodeAnalysisRuleSet** 속성](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 을 수동으로 추가 합니다. Visual Studio 규칙 집합 편집기 UI의 규칙 집합 내에서 규칙을 계속 구성할 수 있습니다.
+   > .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기** 에서 규칙 집합에 대 한 메뉴 명령을 지원 하지 않습니다 (예: **활성 규칙 집합 열기**). .NET Core 또는 .NET Standard 프로젝트에 대해 기본이 아닌 규칙 집합을 지정 하려면 프로젝트 파일에 [ **CodeAnalysisRuleSet** 속성](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 을 수동으로 추가 합니다. Visual Studio 규칙 집합 편집기 UI의 규칙 집합 내에서 규칙을 계속 구성할 수 있습니다.
 
 1. 포함 하는 어셈블리를 확장 하 여 규칙을 찾습니다.
 
@@ -408,7 +408,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 .NET Core 프로젝트에서 NuGet 분석기를 포함 하는 프로젝트에 대 한 참조를 추가 하면 해당 분석기도 자동으로 종속 프로젝트에 추가 됩니다. 이 동작을 사용 하지 않도록 설정 하려면 예를 들어, 종속 프로젝트가 단위 테스트 프로젝트인 경우 **PrivateAssets** 특성을 설정 하 여 참조 된 프로젝트의 *.csproj* 또는 *.vbproj* 파일에서 NuGet 패키지를 private으로 표시 합니다.
 
 ```xml
-<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
 ## <a name="see-also"></a>참고 항목

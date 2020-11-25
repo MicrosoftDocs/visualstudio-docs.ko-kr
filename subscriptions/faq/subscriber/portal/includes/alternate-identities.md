@@ -12,11 +12,11 @@ manager: ''
 robots: ''
 ms.date: 4/3/2020
 ms.faqid: q1_5
-ms.openlocfilehash: d50798fcc04baca95d6ee4843f5ecd79d5e892c3
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838223"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>내 구독에 대체 ID를 추가하려면 어떻게 해야 하나요? 그리고 대체 ID를 추가하면 내 Azure 크레딧과 Azure DevOps에 어떤 영향을 주나요?
@@ -27,4 +27,4 @@ ms.locfileid: "91838223"
 
 모든 구독에 대해 “회사 또는 학교 계정”을 추가할 수 있으므로, 로그인이 필요한 혜택(VS IDE, Azure DevOps, Azure)에서 해당 계정을 사용할 수 있습니다.
 
-간편하게 대체 ID를 추가할 수 있습니다. [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)에 연결하고 ‘대체 계정 추가’를 클릭한 다음, 전자 메일 주소를 입력하고 ‘추가’를 클릭합니다. 대체 ID를 사용하는 방법에 대한 자세한 내용은 [대체 ID](../../../../vs-alternate-identity.md) 문서를 확인하세요.
+간편하게 대체 ID를 추가할 수 있습니다. [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)에 연결하고 ‘대체 계정 추가’를 클릭한 다음, 전자 메일 주소를 입력하고 ‘추가’를 클릭합니다. 대체 ID를 사용하는 방법에 대한 자세한 내용은 [대체 ID](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) 문서를 확인하세요.

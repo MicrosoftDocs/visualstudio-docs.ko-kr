@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_2
 ms.openlocfilehash: 28a9aae5bdae0d249eb7dd03e75978dc63922be1
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81386042"
 ---
 ## <a name="how-much-does-it-cost"></a>가격은 얼마인가요?

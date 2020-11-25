@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_8
-ms.openlocfilehash: 34094e2a89c2a9808d4f0ba921d97e434be3b66a
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838217"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>알아두어야 할 다른 제한 사항이 있나요?
@@ -29,4 +29,4 @@ Visual Studio 구독자를 위한 월간 Azure 크레딧은 개발 및 테스트
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 통해 판매되는 제품
 - Azure에서 별도로 판매되는 제품(예: Azure Active Directory Premium)
 
-해당 서비스를 구매하려면 [지출 한도](/azure/billing/billing-spending-limit)를 제거하고 청구에 사용할 신용 카드를 제공해야 합니다.
+해당 서비스를 구매하려면 [지출 한도](https://docs.microsoft.com/azure/billing/billing-spending-limit)를 제거하고 청구에 사용할 신용 카드를 제공해야 합니다.

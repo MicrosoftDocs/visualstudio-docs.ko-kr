@@ -4,18 +4,18 @@ ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules, unported rules, deprecated rules
+- .NET analyzers, ported rules, unported rules, deprecated rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33f935158077e566a5a9bc14645acaae79201347
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: c73816ae31ac9283b0f9053c08b8a351511b9a76
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832179"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040370"
 ---
 # <a name="deprecated-rules"></a>사용되지 않는 규칙
 

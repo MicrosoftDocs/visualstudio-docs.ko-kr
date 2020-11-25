@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q1_2
 ms.openlocfilehash: a6cebe5f056383c221e494a5c10838cc68f2b166
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "81385952"
 ---
 ## <a name="how-do-i-access-the-my-visual-studio-subscribers-portal-without-knowing-my-login-credentials-associated-with-my-work-email"></a>내 회사 전자 메일에 연결된 로그인 자격 증명을 모르는 경우 Visual Studio 구독자 포털에 액세스하려면 어떻게 해야 하나요?

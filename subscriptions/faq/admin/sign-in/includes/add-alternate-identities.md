@@ -7,13 +7,13 @@ ms.assetid: a8fa961b-4e81-4af4-9913-67dd2c28897e
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: c70ad4093de872ff25a9254d35bc1796a5dd95a4
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e31cfc372b76fa8cbc0fce4d105c11da9c453fd0
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838358"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970334"
 ---
 ## <a name="what-does-it-mean-when-my-subscribers-add-alternate-identities"></a>내 구독자가 대체 ID를 추가하는 경우 무엇을 의미하나요?
 
-대체 계정을 추가하면 개발자가 Visual Studio 구독 혜택(VS IDE, Azure DevOps, Azure) 중 일부를 구독이 할당된 ID 외에 다른 ID로 액세스할 수 있습니다. 이 경우 다른 계정에 구독의 복사본을 제공하는 것이 아니라 대체 계정으로 두 가지 혜택에 액세스하는 기능만 제공합니다. [Visual Studio 구독 ID에 대해 자세히 알아보세요](../../../../vs-alternate-identity.md).
+대체 계정을 추가하면 개발자가 Visual Studio 구독 혜택(VS IDE, Azure DevOps, Azure) 중 일부를 구독이 할당된 ID 외에 다른 ID로 액세스할 수 있습니다. 이 경우 다른 계정에 구독의 복사본을 제공하는 것이 아니라 대체 계정으로 두 가지 혜택에 액세스하는 기능만 제공합니다. [Visual Studio 구독 ID에 대해 자세히 알아보세요](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity).

@@ -13,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348686"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040383"
 ---
 # <a name="install-third-party-analyzers"></a>타사 분석기 설치
 
-Visual Studio에는 핵심 *Roslyn* (.NET Compiler Platform) 분석기가 포함 되어 있습니다. 이러한 분석기는 항상 켜져 있습니다. NuGet 패키지로 추가 분석기를 설치 하거나 *VSIX* 파일에 Visual Studio 확장으로 설치할 수 있습니다.
+Visual Studio에는 핵심 *Roslyn*(.NET Compiler Platform) 분석기가 포함 되어 있습니다. 이러한 분석기는 항상 켜져 있습니다. NuGet 패키지로 추가 분석기를 설치 하거나 *VSIX* 파일에 Visual Studio 확장으로 설치할 수 있습니다.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet 분석기 패키지를 설치 하려면
 
@@ -63,7 +63,7 @@ Visual Studio에는 핵심 *Roslyn* (.NET Compiler Platform) 분석기가 포함
 
 2. 왼쪽 창에서 **온라인** 을 확장 한 다음 **Visual Studio Marketplace** 를 선택 합니다.
 
-3. 검색 상자에 설치 하려는 분석기 확장의 이름을 입력 합니다. 예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#vsix) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다.
+3. 검색 상자에 설치 하려는 분석기 확장의 이름을 입력 합니다.
 
 4. **다운로드** 를 선택합니다.
 
@@ -101,4 +101,4 @@ Visual Studio에는 핵심 *Roslyn* (.NET Compiler Platform) 분석기가 포함
 ## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
-- [FxCop 분석기 설치](../code-quality/install-fxcop-analyzers.md)
+- [.NET 분석기 설치](../code-quality/install-net-analyzers.md)

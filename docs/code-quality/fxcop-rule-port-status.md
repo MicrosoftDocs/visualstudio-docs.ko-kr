@@ -1,33 +1,33 @@
 ---
 title: FxCop 규칙 포트 상태
 ms.date: 05/21/2019
-description: Visual Studio에서 FxCop 분석기로 이식 된 정적 코드 분석 규칙에 대해 알아봅니다. 이식 하 여 업데이트를 이식 하는 규칙 및 리소스를 봅니다.
+description: Visual Studio에서 .NET 분석기로 이식 된 정적 코드 분석 규칙에 대해 알아봅니다. 이식 하 여 업데이트를 이식 하는 규칙 및 리소스를 봅니다.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules
+- .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348947"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039577"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
-이전에 Visual Studio에서 정적 코드 분석을 사용한 경우 현재 구현에서 [FxCop 분석기](install-fxcop-analyzers.md)로 사용할 수 있는 규칙을 궁금할 수 있습니다. 이 페이지에는 이식 된 규칙이 나열 됩니다. 이식 되지 않은 규칙 및 포트를 이식할 계획이 있는지 여부는 이식 되지 않은 [규칙](fxcop-unported-rules.md) 을 참조 하세요.
+이전에 Visual Studio에서 정적 코드 분석을 사용한 경우 현재 구현에서 [.net 분석기](install-net-analyzers.md)로 사용할 수 있는 규칙을 궁금할 수 있습니다. 이 페이지에는 이식 된 규칙이 나열 됩니다. 이식 되지 않은 규칙 및 포트를 이식할 계획이 있는지 여부는 이식 되지 않은 [규칙](fxcop-unported-rules.md) 을 참조 하세요.
 
 ## <a name="ported-rules"></a>포팅된 규칙
 
-Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) 에는 FxCop 분석기로 이식 된 규칙의 최신 목록이 있습니다. 또한이 페이지에는 규칙이 기본적으로 사용 하도록 설정 되어 있고 연결 된 *코드 수정* 이 있는지 여부와 같은 추가 정보가 있습니다. [코드 수정](../ide/quick-actions.md) 사항은 Visual Studio의 전구 아이콘 메뉴에서 사용할 수 있는 한 번 클릭으로 수정 되었습니다.
+Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) 에는 roslyn 분석기로 이식 된 규칙의 최신 목록이 있습니다. 또한이 페이지에는 규칙이 기본적으로 사용 하도록 설정 되어 있고 연결 된 *코드 수정* 이 있는지 여부와 같은 추가 정보가 있습니다. [코드 수정](../ide/quick-actions.md) 사항은 Visual Studio의 전구 아이콘 메뉴에서 사용할 수 있는 한 번 클릭으로 수정 되었습니다.
 
-이 페이지의 날짜를 기준으로 [fxcop 분석기](install-fxcop-analyzers.md) 로 이식 된 fxcop 규칙의 목록에는 다음이 포함 됩니다.
+이 페이지의 날짜를 기준으로 [.net 분석기](install-net-analyzers.md) 로 이식 된 FxCop 규칙의 목록에는 다음이 포함 됩니다.
 
 규칙 ID | 제목
 --------|---------
@@ -64,7 +64,7 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | 네임스페이스에 형식을 선언하세요.
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | 표시되는 인스턴스 필드를 선언하지 마세요.
 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 정적 소유자 형식은 정적 또는 NotInheritable 이어야 합니다.
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 정적 소유자 형식에는 생성자를 사용할 수 없습니다 (CA1053는 FxCop 분석기의 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) 에 포함 됨).
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 정적 소유자 형식에는 생성자를 사용할 수 없습니다 (CA1053 is [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) of .net 분석기의 일부).
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Uri 매개 변수는 문자열이 면 안 됩니다.
 [CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Uri 반환 값은 문자열이 면 안 됩니다.
 [CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Uri 속성은 문자열이 면 안 됩니다.
@@ -204,4 +204,4 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [.NET 분석기 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)
