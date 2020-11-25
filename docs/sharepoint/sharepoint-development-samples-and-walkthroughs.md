@@ -1,5 +1,7 @@
 ---
 title: SharePoint 개발 샘플 및 연습 | Microsoft Docs
+description: 예제 애플리케이션, 예제 코드 및 SharePoint 개발을 설명하는 단계별 연습을 시작하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015805"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440638"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 개발 샘플 및 연습
   이 섹션에는 샘플 애플리케이션, 예제 코드, SharePoint 솔루션을 빌드하는 데 사용되는 구문, 구조, 기술을 보여 주는 단계별 연습이 포함되어 있습니다.

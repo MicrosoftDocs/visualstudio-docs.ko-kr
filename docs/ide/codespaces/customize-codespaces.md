@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862224"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850509"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>codespace를 사용자 지정하는 방법(미리 보기)
 
@@ -84,7 +84,7 @@ GitHub Codespaces는 다음 *devcontainer.json* 속성을 지원합니다. Visua
 
 ## <a name="customize-with-devinit"></a>devinit를 사용하여 사용자 지정
 
-[devinit](../../devinit/getting-started-with-devinit.md)는 프레임워크 및 도구를 환경에 설치하도록 해주는 Windows codespace에 포함된 명령줄 도구입니다. 명령 프롬프트(`devinit -t require-dotnetcoresdk`)에서 수동으로 실행할 수 있지만 실제 기능은 사용자 지정 [ *.devinit.json*](../../devinit/devinit-json.md) 파일을 만들어 만들 때마다 codespace를 균일하게 구성하는 작업을 기반으로 합니다.
+[devinit](../../devinit/getting-started-with-devinit.md)는 프레임워크 및 도구를 환경에 설치하도록 해주는 Windows codespace에 포함된 명령줄 도구입니다. 명령 프롬프트(`devinit run -t require-dotnetcoresdk`)에서 수동으로 실행할 수 있지만 실제 기능은 사용자 지정 [ *.devinit.json*](../../devinit/devinit-json.md) 파일을 만들어 만들 때마다 codespace를 균일하게 구성하는 작업을 기반으로 합니다.
 
 `devinit`에는 SQL Server 및 Azure CLI 같은 특정 항목을 설치하고 chocolatey, npm, vcpkg 등의 일반 패키지 관리자도 실행하는 도구 집합이 포함됩니다. `devinit` 도구의 전체 목록은 [사용 가능한 도구](../../devinit/devinit-tool-list.md) 설명서에서 찾을 수 있습니다.
 
@@ -92,7 +92,7 @@ GitHub Codespaces는 다음 *devcontainer.json* 속성을 지원합니다. Visua
 
 `devinit` 명령줄을 직접 실행할 수 있지만 실행할`devinit` 도구 집합을 설명하는 [*devinit.json*](../../devinit/devinit-json.md) 구성 파일을 만드는 것이 좋습니다. 
 
-예를 들어 [.NET Core SDK](/dotnet/core/sdk)를 설치하기 위한 *.devinit.json*은 다음과 같이 표시됩니다.
+예를 들어 [.NET Core SDK](/dotnet/core/sdk)를 설치하기 위한 *.devinit.json* 은 다음과 같이 표시됩니다.
 
 ```json
 {
@@ -138,7 +138,7 @@ GitHub Codespaces는 다음 *devcontainer.json* 속성을 지원합니다. Visua
 
 **devinit.json**
 
-*.devinit.json* 파일의 콘텐츠입니다. 해당 파일은 *.devcontainer.json*과 동일한 폴더에 있어야 합니다.
+*.devinit.json* 파일의 콘텐츠입니다. 해당 파일은 *.devcontainer.json* 과 동일한 폴더에 있어야 합니다.
 
 ```json
 {
@@ -160,7 +160,7 @@ GitHub Codespaces는 포트 전달을 통해 원격 환경에서 실행되는 �
 
 ### <a name="configure-port-forwarding"></a>포트 전달 구성
 
-지정된 리포지토리에 대해 기본적으로 전달해야 하는 포트가 하나 이상 있는 경우 *devcontainer.json*에서 `forwardPorts` 속성을 사용하여 구성할 수 있습니다.
+지정된 리포지토리에 대해 기본적으로 전달해야 하는 포트가 하나 이상 있는 경우 *devcontainer.json* 에서 `forwardPorts` 속성을 사용하여 구성할 수 있습니다.
 
 * `forwardPorts` - 환경이 실행 중일 때 로컬로 자동으로 전달해야 하는 포트 또는 포트 배열입니다.
 

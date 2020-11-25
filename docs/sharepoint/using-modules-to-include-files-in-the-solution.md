@@ -1,5 +1,7 @@
 ---
 title: 모듈을 사용하여 솔루션에 파일 포함 | Microsoft Docs
+description: 'SharePoint 솔루션의 파일에 대한 컨테이너 또는 모듈을 사용하여 파일 형식(예: 마스터 페이지)에 관계없이 SharePoint 서버에 파일을 배포할 수 있습니다.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015813"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442523"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>모듈을 사용하여 솔루션에 파일 포함
   파일 형식(예: 새 마스터 페이지)과 관계없이 SharePoint Server에 파일을 배포해야 하는 경우도 있습니다. 이렇게 하려면 ‘모듈’([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 코드 모듈 아님)을 사용할 수 있습니다. 모듈은 SharePoint 솔루션 내 파일의 컨테이너입니다. 솔루션을 배포하면 모듈의 파일이 SharePoint Server의 지정한 폴더에 복사됩니다.
@@ -51,10 +53,10 @@ ms.locfileid: "86015813"
 |요소 이름|설명|
 |------------------|-----------------|
 |요소|모듈에 정의된 모든 요소를 포함합니다.|
-|모듈|Module 요소에는 `<Module Name="Module1">` 형식으로 모듈 이름을 지정하는 단일 특성 *Name*이 있습니다.<br /><br /> 모듈 이름(또는 해당 ‘폴더 이름’ 속성)을 변경하는 경우 Module 요소의 이름을 수동으로 업데이트해야 합니다.<br /><br /> Module 요소에 파일의 하위 디렉터리를 지정하면 WSS([!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)])에서 일치하는 디렉터리 구조를 자동으로 만듭니다.|
-|파일|File 요소에는 두 가지 매개 변수(*Path* 및 *Url*)가 있습니다.<br /><br /> - Path: SharePoint 솔루션 파일의 이름 및 위치입니다. 형식은 `Path="Module1\Sample.txt"`입니다.<br /><br /> - Url: SharePoint Server에서 파일이 배포되는 위치입니다. 형식은 `Url="Module1/Sample.txt"`입니다.<br /><br /> - Type: 두 가지 설정(*GhostableInLibrary* 및 *Ghostable*)이 있는 선택적 특성입니다. 형식은 `Type="GhostableInLibrary"`입니다. *GhostableInLibrary*를 지정하면 라이브러리에 파일을 추가할 때 파일에 수반되는 목록 항목과 함께 파일이 SharePoint의 문서 라이브러리에 추가됩니다. *Ghostable*을 지정하면 파일이 SharePoint의 문서 라이브러리 외부에 추가됩니다.|
+|모듈|Module 요소에는 `<Module Name="Module1">` 형식으로 모듈 이름을 지정하는 단일 특성 *Name* 이 있습니다.<br /><br /> 모듈 이름(또는 해당 ‘폴더 이름’ 속성)을 변경하는 경우 Module 요소의 이름을 수동으로 업데이트해야 합니다.<br /><br /> Module 요소에 파일의 하위 디렉터리를 지정하면 WSS([!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)])에서 일치하는 디렉터리 구조를 자동으로 만듭니다.|
+|파일|File 요소에는 두 가지 매개 변수(*Path* 및 *Url*)가 있습니다.<br /><br /> - Path: SharePoint 솔루션 파일의 이름 및 위치입니다. 형식은 `Path="Module1\Sample.txt"`입니다.<br /><br /> - Url: SharePoint Server에서 파일이 배포되는 위치입니다. 형식은 `Url="Module1/Sample.txt"`입니다.<br /><br /> - Type: 두 가지 설정(*GhostableInLibrary* 및 *Ghostable*)이 있는 선택적 특성입니다. 형식은 `Type="GhostableInLibrary"`입니다. *GhostableInLibrary* 를 지정하면 라이브러리에 파일을 추가할 때 파일에 수반되는 목록 항목과 함께 파일이 SharePoint의 문서 라이브러리에 추가됩니다. *Ghostable* 을 지정하면 파일이 SharePoint의 문서 라이브러리 외부에 추가됩니다.|
 
- 배포하려는 각 파일에 해당하는 `<File>` 요소 항목이 *Elements.xml*에 있어야 합니다.
+ 배포하려는 각 파일에 해당하는 `<File>` 요소 항목이 *Elements.xml* 에 있어야 합니다.
 
 ## <a name="see-also"></a>추가 정보
 - [방법: 모듈을 사용하여 파일 포함](../sharepoint/how-to-include-files-by-using-a-module.md)
