@@ -1,5 +1,7 @@
 ---
 title: 단위 테스트 시작
+description: Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코드 상태를 유지 관리하고, 코드 적용 범위를 확인하고 , 고객이 찾기 전에 오류와 결함을 찾을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153042"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441783"
 ---
-# <a name="get-started-with-unit-testing"></a>단위 테스트 시작
+# <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
 Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코드 상태를 유지 관리하고, 코드 적용 범위를 확인하고 , 고객이 찾기 전에 오류와 결함을 찾을 수 있습니다. 단위 테스트를 수시로 실행하여 코드가 올바르게 작동하는지 확인합니다.
 
@@ -26,7 +28,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
 1. Visual Studio에서 테스트할 프로젝트를 엽니다.
 
-   예제 단위 테스트를 보여 주기 위해 이 문서에서는 **HelloWorldCore**라는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
+   예제 단위 테스트를 보여 주기 위해 이 문서에서는 **HelloWorldCore** 라는 간단한 “Hello World” 프로젝트를 테스트합니다. 이러한 프로젝트의 샘플 코드는 다음과 같습니다.
 
    ```csharp
    namespace HelloWorldCore
@@ -40,7 +42,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
       }
    ```
 
-1. **솔루션 탐색기**에서 솔루션 노드를 선택합니다. 그런 다음, 상단 메뉴 모음에서 **파일** > **추가** > **새 프로젝트**를 선택합니다.
+1. **솔루션 탐색기** 에서 솔루션 노드를 선택합니다. 그런 다음, 상단 메뉴 모음에서 **파일** > **추가** > **새 프로젝트** 를 선택합니다.
 
 1. 새 프로젝트 대화 상자에서 사용할 테스트 프레임워크에 대한 단위 테스트 프로젝트 템플릿을 찾아 선택합니다.
 
@@ -48,7 +50,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
    ![Visual Studio 2019의 단위 테스트 프로젝트 템플릿](media/vs-2019/add-new-test-project.png)
 
-   **다음**을 클릭하여 테스트 프로젝트의 이름을 선택한 다음, **만들기**를 클릭합니다.
+   **다음** 을 클릭하여 테스트 프로젝트의 이름을 선택한 다음, **만들기** 를 클릭합니다.
 
    ::: moniker-end
 
@@ -56,7 +58,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
    ![Visual Studio 2019의 단위 테스트 프로젝트 템플릿](media/mstest-test-project-template.png)
 
-   테스트 프로젝트의 이름을 선택한 다음, **확인**을 클릭합니다.
+   테스트 프로젝트의 이름을 선택한 다음, **확인** 을 클릭합니다.
 
    ::: moniker-end
 
@@ -64,9 +66,9 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
    ![솔루션 탐색기의 단위 테스트 프로젝트](media/vs-2019/solution-explorer.png)
 
-1. 단위 테스트 프로젝트에서 **참조** 또는 **종속성**을 마우스 오른쪽 단추로 클릭한 다음, **참조 추가**를 선택하여 테스트하려는 프로젝트에 대한 참조를 추가합니다.
+1. 단위 테스트 프로젝트에서 **참조** 또는 **종속성** 을 마우스 오른쪽 단추로 클릭한 다음, **참조 추가** 를 선택하여 테스트하려는 프로젝트에 대한 참조를 추가합니다.
 
-1. 테스트할 코드가 포함된 프로젝트를 선택하고 **확인**을 클릭합니다.
+1. 테스트할 코드가 포함된 프로젝트를 선택하고 **확인** 을 클릭합니다.
 
    ![Visual Studio에서 프로젝트 참조 추가](media/vs-2019/reference-manager.png)
 
@@ -142,13 +144,13 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 1. [테스트 탐색기](../test/run-unit-tests-with-test-explorer.md)를 엽니다.
 
    ::: moniker range=">=vs-2019"
-   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **테스트 탐색기**를 선택합니다.
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **테스트 탐색기** 를 선택합니다.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기**를 선택합니다.
+   테스트 탐색기를 열려면 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기** 를 선택합니다.
    ::: moniker-end
 
-1. **모두 실행**을 클릭하여 단위 테스트를 실행합니다.
+1. **모두 실행** 을 클릭하여 단위 테스트를 실행합니다.
 
    ![테스트 탐색기에서 단위 테스트 실행](media/vs-2019/test-explorer-run-all.png)
 
@@ -166,7 +168,7 @@ Visual Studio 2017 이상에서 MSTest, xUnit 또는 NUnit 테스트 프레임�
 > [!NOTE]
 > 라이브 단위 테스트는 Enterprise 버전에서만 사용 가능합니다.
 
-1. **테스트** > **Live Unit Testing** > **시작**을 선택하여 **테스트** 메뉴에서 라이브 단위 테스트를 켭니다.
+1. **테스트** > **Live Unit Testing** > **시작** 을 선택하여 **테스트** 메뉴에서 라이브 단위 테스트를 켭니다.
 
    ::: moniker range="vs-2017"
 
@@ -201,17 +203,17 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 확인하고 필
 
 ## <a name="analyze-code-coverage"></a>코드 검사 분석
 
-프로젝트의 코드 중 단위 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
+프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정하려면 Visual Studio의 코드 검사 기능을 사용합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행해야 합니다. 방법을 알아보려면 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
 ## <a name="use-a-third-party-test-framework"></a>타사 테스트 프레임워크 사용
 
-Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Visual Studio에서 단위 테스트를 실행할 수 있습니다. **NuGet 패키지 관리자**를 사용하여 선택한 프레임워크에 대한 NuGet 패키지를 설치합니다. 또는 NUnit 및 xUnit 테스트 프레임워크의 경우 Visual Studio에는 필요한 NuGet 패키지를 포함하는 미리 구성된 테스트 프로젝트 템플릿이 포함되어 있습니다.
+Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Visual Studio에서 단위 테스트를 실행할 수 있습니다. **NuGet 패키지 관리자** 를 사용하여 선택한 프레임워크에 대한 NuGet 패키지를 설치합니다. 또는 NUnit 및 xUnit 테스트 프레임워크의 경우 Visual Studio에는 필요한 NuGet 패키지를 포함하는 미리 구성된 테스트 프로젝트 템플릿이 포함되어 있습니다.
 
 [NUnit](https://nunit.org/)을 사용하는 단위 테스트를 만들려면 다음을 수행합니다.
 
 1. 테스트할 코드가 포함된 솔루션을 엽니다.
 
-2. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
+2. **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
 
 3. **NUnit Test Project** 프로젝트 템플릿을 선택합니다.
 
@@ -219,13 +221,13 @@ Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
    ![Visual Studio 2019의 NUnit 테스트 프로젝트 템플릿](media/vs-2019/nunit-test-project-template.png)
 
-   **다음**을 클릭하여 프로젝트 이름을 지정한 다음, **만들기**를 클릭합니다.
+   **다음** 을 클릭하여 프로젝트 이름을 지정한 다음, **만들기** 를 클릭합니다.
 
    ::: moniker-end
 
    ::: moniker range="vs-2017"
 
-   프로젝트의 이름을 지정한 다음, **확인**을 클릭하여 만듭니다.
+   프로젝트의 이름을 지정한 다음, **확인** 을 클릭하여 만듭니다.
 
    ::: moniker-end
 
@@ -235,15 +237,15 @@ Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
 4. 테스트할 코드가 포함된 프로젝트에 테스트 프로젝트의 참조를 추가합니다.
 
-   **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가** > **참조**를 선택합니다. **참조** 또는 **종속성** 노드의 오른쪽 클릭 메뉴에서 참조를 추가할 수도 있습니다.
+   **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가** > **참조** 를 선택합니다. **참조** 또는 **종속성** 노드의 오른쪽 클릭 메뉴에서 참조를 추가할 수도 있습니다.
 
 5. 테스트 메서드에 코드를 추가합니다.
 
    ![단위 테스트 코드 파일에 코드 추가](media/vs-2019/unit-test-method.png)
 
-6. **테스트 탐색기**에서 테스트를 실행하거나 테스트 코드를 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하여 테스트를 실행합니다.
+6. **테스트 탐색기** 에서 테스트를 실행하거나 테스트 코드를 마우스 오른쪽 단추로 클릭하고 **테스트 실행** 을 선택하여 테스트를 실행합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 * [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [단위 테스트 만들기 명령](create-unit-tests-menu.md)
