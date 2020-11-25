@@ -1,5 +1,7 @@
 ---
 title: '연습: SharePoint 프로젝트 항목 형식 확장 | Microsoft Docs'
+description: 이 연습에서는 BDC (비즈니스 데이터 연결) 모델 프로젝트 항목과 같은 SharePoint 프로젝트 항목 형식에 대 한 확장을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740008"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970413"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   **비즈니스 데이터 연결 모델** 프로젝트 항목을 사용 하 여 SHAREPOINT의 BDC (비즈니스 데이터 연결) 서비스에 대 한 모델을 만들 수 있습니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터는 사용자에 게 표시 되지 않습니다. 또한 사용자가 데이터를 볼 수 있도록 SharePoint에서 외부 목록을 만들어야 합니다.
@@ -30,13 +32,13 @@ ms.locfileid: "90740008"
 
   - BDC 모델의 데이터를 표시 하는 외부 목록을 생성 합니다. 확장 프로그램은 SharePoint 프로젝트 시스템의 개체 모델을 사용 하 여 목록을 정의 하는 *Elements.xml* 파일을 생성 합니다. 또한 BDC 모델과 함께 배포 되도록 프로젝트에 파일을 추가 합니다.
 
-  - **솔루션 탐색기**의 **비즈니스 데이터 연결 모델** 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 개발자는이 메뉴 항목을 클릭 하 여 BDC 모델의 외부 목록을 생성할 수 있습니다.
+  - **솔루션 탐색기** 의 **비즈니스 데이터 연결 모델** 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 개발자는이 메뉴 항목을 클릭 하 여 BDC 모델의 외부 목록을 생성할 수 있습니다.
 
 - VSIX (Visual Studio Extension) 패키지를 빌드하여 확장 어셈블리를 배포 합니다.
 
 - 확장 테스트
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -62,22 +64,22 @@ ms.locfileid: "90740008"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
 3. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 노드를 확장 한 다음 **확장성** 노드를 선택 합니다.
 
     > [!NOTE]
     > **확장성** 노드는 VISUAL Studio SDK를 설치 하는 경우에만 사용할 수 있습니다. 자세한 내용은이 항목의 앞부분에 있는 전제 조건 섹션을 참조 하세요.
 
-4. **새 프로젝트** 대화 상자의 맨 위에 있는 목록에서 **.NET Framework 4.5**을 선택 합니다.
+4. **새 프로젝트** 대화 상자의 맨 위에 있는 목록에서 **.NET Framework 4.5** 을 선택 합니다.
 
      SharePoint 도구 확장에는이 버전의 .NET Framework 기능이 필요 합니다.
 
 5. **VSIX 프로젝트** 템플릿을 선택 합니다.
 
-6. **이름** 상자에 **GenerateExternalDataLists**를 입력 하 고 **확인** 단추를 선택 합니다.
+6. **이름** 상자에 **GenerateExternalDataLists** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기**에 **GenerateExternalDataLists** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **GenerateExternalDataLists** 프로젝트를 추가 합니다.
 
 7. Source.extension.vsixmanifest 파일이 자동으로 열리지 않으면 GenerateExternalDataLists 프로젝트에서 바로 가기 메뉴를 연 다음 **열기** 를 선택 합니다.
 
@@ -85,15 +87,15 @@ ms.locfileid: "90740008"
 
 #### <a name="to-create-the-extension-project"></a>확장 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 **GenerateExternalDataLists** 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 **GenerateExternalDataLists** 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트 추가** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 노드를 확장 한 다음 **Windows** 노드를 선택 합니다.
 
-3. 대화 상자 위쪽의 목록에서 **.NET Framework 4.5**을 선택 합니다.
+3. 대화 상자 위쪽의 목록에서 **.NET Framework 4.5** 을 선택 합니다.
 
-4. 프로젝트 템플릿 목록에서 **클래스 라이브러리**를 선택 합니다.
+4. 프로젝트 템플릿 목록에서 **클래스 라이브러리** 를 선택 합니다.
 
-5. **이름** 상자에 **BdcProjectItemExtension**를 입력 하 고 **확인** 단추를 선택 합니다.
+5. **이름** 상자에 **BdcProjectItemExtension** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**BdcProjectItemExtension** 프로젝트를 솔루션에 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
@@ -110,7 +112,7 @@ ms.locfileid: "90740008"
 
     - GenerateExternalDataLists
 
-2. BdcProjectItemExtension 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **참조 추가**를 선택 합니다.
+2. BdcProjectItemExtension 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **참조 추가** 를 선택 합니다.
 
 3. **어셈블리** 노드 아래에서 **프레임 워크** 노드를 선택 하 고 다음 어셈블리 각각의 확인란을 선택 합니다.
 
@@ -152,37 +154,37 @@ ms.locfileid: "90740008"
 
 #### <a name="to-build-the-solution"></a>솔루션을 빌드하려면
 
-1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>VSIX 패키지를 만들어 프로젝트 항목 확장 배포
  확장을 배포 하려면 솔루션의 VSIX 프로젝트를 사용 하 여 VSIX 패키지를 만듭니다. 먼저 VSIX 프로젝트에 포함 된 source.extension.vsixmanifest 파일을 수정 하 여 VSIX 패키지를 구성 합니다. 그런 다음 솔루션을 빌드하여 VSIX 패키지를 만듭니다.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>VSIX 패키지를 구성 하 고 만들려면
 
-1. **솔루션 탐색기**에서 GenerateExternalDataLists 프로젝트의 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 GenerateExternalDataLists 프로젝트의 source.extension.vsixmanifest 파일에 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 합니다.
 
      Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
-2. **제품 이름** 상자에 **외부 데이터 목록 생성기**를 입력 합니다.
+2. **제품 이름** 상자에 **외부 데이터 목록 생성기** 를 입력 합니다.
 
-3. **작성자** 상자에 **Contoso**를 입력 합니다.
+3. **작성자** 상자에 **Contoso** 를 입력 합니다.
 
-4. **설명** 상자에 **외부 데이터 목록을 생성 하는 데 사용할 수 있는 비즈니스 데이터 연결 모델 프로젝트 항목의 확장명**을 입력 합니다.
+4. **설명** 상자에 **외부 데이터 목록을 생성 하는 데 사용할 수 있는 비즈니스 데이터 연결 모델 프로젝트 항목의 확장명** 을 입력 합니다.
 
 5. 편집기의 **자산** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
      **새 자산 추가** 대화 상자가 나타납니다.
 
-6. **유형** 목록에서 **VisualStudio**을 선택 합니다.
+6. **유형** 목록에서 **VisualStudio** 을 선택 합니다.
 
     > [!NOTE]
     > 이 값 `MefComponent` 은 source.extension.vsixmanifest 파일의 요소에 해당 합니다. 이 요소는 VSIX 패키지에 있는 확장 어셈블리의 이름을 지정 합니다. 자세한 내용은 [Mefcomponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))를 참조 하세요.
 
-7. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+7. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-8. **프로젝트** 목록에서 **BdcProjectItemExtension**를 선택한 다음 **확인** 단추를 선택 합니다.
+8. **프로젝트** 목록에서 **BdcProjectItemExtension** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-9. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+9. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
 10. 프로젝트가 오류 없이 컴파일되고 빌드 되었는지 확인 합니다.
 
@@ -201,31 +203,31 @@ ms.locfileid: "90740008"
 
 3. GenerateExternalDataLists 코드 파일을 연 다음 메서드의 첫 번째 코드 줄에 중단점을 추가 합니다 `GenerateExternalDataLists_Execute` .
 
-4. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 디버깅을 시작 합니다.
+4. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 디버깅을 시작 합니다.
 
      Visual Studio 는%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1.0에 확장을 설치 하 고 Visual Studio의 실험적 인스턴스를 시작 합니다. Visual Studio의이 인스턴스에서 프로젝트 항목을 테스트 합니다.
 
 #### <a name="to-test-the-extension"></a>확장을 테스트 하려면
 
-1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
-2. **새 프로젝트** 대화 상자에서 **템플릿** 노드를 확장 하 고 **Visual c #** 노드를 확장 한 다음 **SharePoint** 노드를 확장 하 고 **2010**을 선택 합니다.
+2. **새 프로젝트** 대화 상자에서 **템플릿** 노드를 확장 하 고 **Visual c #** 노드를 확장 한 다음 **SharePoint** 노드를 확장 하 고 **2010** 을 선택 합니다.
 
 3. 대화 상자 위쪽의 목록에서 **.NET Framework 3.5** 가 선택 되어 있는지 확인 합니다. 의 프로젝트에 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 는이 버전의 .NET Framework 필요 합니다.
 
-4. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트**를 선택 합니다.
+4. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트** 를 선택 합니다.
 
-5. **이름** 상자에 **SharePointProjectTestBDC**를 입력 하 고 **확인** 단추를 선택 합니다.
+5. **이름** 상자에 **SharePointProjectTestBDC** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
-6. SharePoint 사용자 지정 마법사에서 디버깅에 사용할 사이트의 URL을 입력 하 고 **팜 솔루션으로 배포**를 선택한 다음 **마침** 단추를 선택 합니다.
+6. SharePoint 사용자 지정 마법사에서 디버깅에 사용할 사이트의 URL을 입력 하 고 **팜 솔루션으로 배포** 를 선택한 다음 **마침** 단추를 선택 합니다.
 
-7. SharePointProjectTestBDC 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+7. SharePointProjectTestBDC 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
 8. **NewItem 추가-SharePointProjectTestBDC** 대화 상자에서 설치 된 언어 노드를 확장 하 고 **SharePoint** 노드를 확장 합니다.
 
 9. **2010** 노드를 선택 하 고 **비즈니스 데이터 연결 모델 (팜 솔루션에만 해당)** 템플릿을 선택 합니다.
 
-10. **이름** 상자에 **TestBDCModel**를 입력 한 다음 **추가** 단추를 선택 합니다.
+10. **이름** 상자에 **TestBDCModel** 를 입력 한 다음 **추가** 단추를 선택 합니다.
 
 11. ProjectItemExtension 코드 파일의 메서드에 설정 된 중단점에서 Visual Studio의 다른 인스턴스의 코드가 중지 되는지 확인 `Initialize` 합니다.
 
@@ -239,7 +241,7 @@ ms.locfileid: "90740008"
 
 15. 웹 브라우저를 닫습니다.
 
-16. TestBDCModel 프로젝트가 열려 있는 Visual Studio 인스턴스에서 **솔루션 탐색기**의 **TestBDCModel** 노드에 대 한 바로 가기 메뉴를 열고 **외부 데이터 목록 생성**을 선택 합니다.
+16. TestBDCModel 프로젝트가 열려 있는 Visual Studio 인스턴스에서 **솔루션 탐색기** 의 **TestBDCModel** 노드에 대 한 바로 가기 메뉴를 열고 **외부 데이터 목록 생성** 을 선택 합니다.
 
 17. Visual Studio의 다른 인스턴스의 코드가 메서드에서 설정 하는 중단점에서 중지 되는지 확인 `GenerateExternalDataLists_Execute` 합니다. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **계속** 을 선택 하 여 프로젝트를 계속 디버깅 합니다.
 
@@ -266,25 +268,25 @@ ms.locfileid: "90740008"
 
 2. SharePoint 사이트의 리본에서 **목록** 탭을 선택 합니다.
 
-3. **목록** 탭의 **설정** 그룹에서 **목록 설정**을 선택 합니다.
+3. **목록** 탭의 **설정** 그룹에서 **목록 설정** 을 선택 합니다.
 
-4. **사용 권한 및 관리**에서 **이 목록 삭제**를 선택 하 고 **확인** 을 선택 하 여 휴지통으로 목록을 보낼지 확인 합니다.
+4. **사용 권한 및 관리** 에서 **이 목록 삭제** 를 선택 하 고 **확인** 을 선택 하 여 휴지통으로 목록을 보낼지 확인 합니다.
 
 5. 웹 브라우저를 닫습니다.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>SharePoint 사이트에서 BDC 모델을 제거 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **빌드**  >  **취소**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **빌드**  >  **취소** 를 선택 합니다.
 
      Visual Studio는 SharePoint 사이트에서 BDC 모델을 제거 합니다.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Visual Studio에서 프로젝트 항목 확장을 제거 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
      **확장명 및 업데이트** 대화 상자가 열립니다.
 
-2. 확장 목록에서 **외부 데이터 목록 생성기**를 선택한 다음 **제거** 단추를 선택 합니다.
+2. 확장 목록에서 **외부 데이터 목록 생성기** 를 선택한 다음 **제거** 단추를 선택 합니다.
 
 3. 표시 되는 대화 상자에서 **예** 를 선택 하 여 확장을 제거할 것임을 확인 합니다.
 

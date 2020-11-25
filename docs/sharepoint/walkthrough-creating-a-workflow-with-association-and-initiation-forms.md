@@ -1,5 +1,7 @@
 ---
 title: 연결 및 초기화 폼이 있는 워크플로 만들기
+description: 이 SharePoint 연습에서는 연결 및 초기화 폼의 사용을 통합 하는 기본 순차 워크플로를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017125"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970432"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>연습: 연결 및 초기화 폼이 있는 워크플로 만들기
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>연습: 연결 및 시작 양식을 사용하여 워크플로 만들기
   이 연습에서는 연결 및 초기화 폼의 사용을 통합 하는 기본적인 순차 워크플로를 만드는 방법을 보여 줍니다. 이러한 매개 변수는 SharePoint 관리자 (연결 양식)에서 처음으로 연결 될 때 및 사용자가 워크플로를 시작할 때 (시작 폼) 매개 변수를 워크플로에 추가할 수 있는 ASPX 폼입니다.
 
  이 연습에서는 사용자가 다음 요구 사항을 충족 하는 경비 보고서에 대 한 승인 워크플로를 만들려는 시나리오를 간략하게 설명 합니다.
@@ -68,7 +70,7 @@ ms.locfileid: "86017125"
 
 1. 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. **템플릿** 창에서 **SharePoint 2010 프로젝트** 프로젝트 템플릿을 선택 합니다.
 
@@ -80,11 +82,11 @@ ms.locfileid: "86017125"
 
      또한이 단계에서는 솔루션에 대 한 신뢰 수준을 팜 솔루션으로 설정 합니다 .이는 워크플로 프로젝트에 대해 유일 하 게 사용할 수 있는 옵션입니다.
 
-6. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
+6. **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다.
 
-7. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+7. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
-8. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+8. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 9. **템플릿** 창에서 **순차 워크플로 (팜 솔루션에만 해당)** 템플릿을 선택한 다음 **추가** 단추를 선택 합니다.
 
@@ -103,7 +105,7 @@ ms.locfileid: "86017125"
 
 #### <a name="to-add-an-association-form-to-the-workflow"></a>워크플로에 연결 폼을 추가 하려면
 
-1. **솔루션 탐색기**에서 **workflow1.vb** 노드를 선택 합니다.
+1. **솔루션 탐색기** 에서 **workflow1.vb** 노드를 선택 합니다.
 
 2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 하 여 **새 항목 추가** 대화 상자를 표시 합니다.
 
@@ -111,7 +113,7 @@ ms.locfileid: "86017125"
 
 4. 템플릿 목록에서 **워크플로 연결 양식** 템플릿을 선택 합니다.
 
-5. **이름** 텍스트 상자에 **ExpenseReportAssocForm**을 입력 합니다.
+5. **이름** 텍스트 상자에 **ExpenseReportAssocForm** 을 입력 합니다.
 
 6. **추가** 단추를 선택 하 여 프로젝트에 폼을 추가 합니다.
 
@@ -136,7 +138,7 @@ ms.locfileid: "86017125"
     > [!NOTE]
     > 프로젝트가에 있으면 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **모든 파일 보기** 단추를 선택 하 여이 단계를 수행 해야 합니다.
 
-4. ExpenseReportAssocForm 파일에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+4. ExpenseReportAssocForm 파일에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 5. 메서드를 `GetAssociationData` 다음으로 바꿉니다.
 
@@ -164,7 +166,7 @@ ms.locfileid: "86017125"
 
 #### <a name="to-create-an-initiation-form"></a>시작 폼을 만들려면
 
-1. **솔루션 탐색기**에서 **workflow1.vb** 노드를 선택 합니다.
+1. **솔루션 탐색기** 에서 **workflow1.vb** 노드를 선택 합니다.
 
 2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 하 여 **새 항목 추가** 대화 상자를 표시 합니다.
 
@@ -172,7 +174,7 @@ ms.locfileid: "86017125"
 
 4. 템플릿 목록에서 **워크플로 시작 양식** 템플릿을 선택 합니다.
 
-5. **이름** 텍스트 상자에 **ExpenseReportInitForm**을 입력 합니다.
+5. **이름** 텍스트 상자에 **ExpenseReportInitForm** 을 입력 합니다.
 
 6. **추가** 단추를 선택 하 여 프로젝트에 폼을 추가 합니다.
 
@@ -198,7 +200,7 @@ ms.locfileid: "86017125"
 
 3. **솔루션 탐색기** 의 **ExpenseReportInitForm** 파일을 확장 하 여 종속 파일을 표시 합니다.
 
-4. ExpenseReportInitForm 파일에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+4. ExpenseReportInitForm 파일에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 5. 메서드를 `Page_Load` 다음 예제로 바꿉니다.
 
@@ -253,19 +255,19 @@ ms.locfileid: "86017125"
 
 1. 프로젝트에서 Workflow1.vb를 열어 workflow designer에 워크플로를 표시 합니다.
 
-2. **도구 상자**에서 **Windows Workflow v 3.0** 노드를 확장 하 고 **IfElse** 작업을 찾습니다.
+2. **도구 상자** 에서 **Windows Workflow v 3.0** 노드를 확장 하 고 **IfElse** 작업을 찾습니다.
 
 3. 다음 단계 중 하나를 수행 하 여이 활동을 워크플로에 추가 합니다.
 
-    - **IfElse** 활동에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 하 고 workflow designer의 **onWorkflowActivated1** 활동 아래에 있는 줄의 바로 가기 메뉴를 연 다음 **붙여넣기**를 선택 합니다.
+    - **IfElse** 활동에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 workflow designer의 **onWorkflowActivated1** 활동 아래에 있는 줄의 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
-    - **도구 상자**에서 **IfElse** 활동을 끌어 workflow designer의 **onWorkflowActiviated1** 활동 아래 줄에 연결 합니다.
+    - **도구 상자** 에서 **IfElse** 활동을 끌어 workflow designer의 **onWorkflowActiviated1** 활동 아래 줄에 연결 합니다.
 
 4. 도구 상자에서 **SharePoint 워크플로** 노드를 확장 하 고 **createtask** 작업을 찾습니다.
 
 5. 다음 단계 중 하나를 수행 하 여이 활동을 워크플로에 추가 합니다.
 
-    - **Createtask** 작업에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 하 고 workflow designer의 **IfElseActivity1** 내에서 두 개의 **작업 삭제** 영역 중 하나에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기**를 선택 합니다.
+    - **Createtask** 작업에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 workflow designer의 **IfElseActivity1** 내에서 두 개의 **작업 삭제** 영역 중 하나에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
     - **도구 상자** 의 **createtask** 활동을 두 개의 **Drop 활동에서 다음** 영역으로 끌어 옵니다. **IfElseActivity1**
 
@@ -283,20 +285,20 @@ ms.locfileid: "86017125"
 
 12. **새 멤버에 바인딩** 탭을 선택 하 고 **필드 만들기** 옵션 단추를 선택한 다음 **확인** 단추를 선택 합니다.
 
-13. **도구 상자**에서 **SharePoint 워크플로** 노드를 확장 하 고 **LogToHistoryListActivity** 활동을 찾습니다.
+13. **도구 상자** 에서 **SharePoint 워크플로** 노드를 확장 하 고 **LogToHistoryListActivity** 활동을 찾습니다.
 
 14. 다음 단계 중 하나를 수행 하 여이 활동을 워크플로에 추가 합니다.
 
-    - **LogToHistoryListActivity** 활동에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 하 고, workflow designer의 **IfElseActivity1** 내에서 기타 **작업 삭제** 영역에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기**를 선택 합니다.
+    - **LogToHistoryListActivity** 활동에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고, workflow designer의 **IfElseActivity1** 내에서 기타 **작업 삭제** 영역에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
-    - **도구 상자**에서 **LogToHistoryListActivity** 활동을 끌어 **IfElseActivity1**내의 다른 **drop 활동** 영역에 놓습니다.
+    - **도구 상자** 에서 **LogToHistoryListActivity** 활동을 끌어 **IfElseActivity1** 내의 다른 **drop 활동** 영역에 놓습니다.
 
 ## <a name="add-code-to-the-workflow"></a>워크플로에 코드 추가
  그런 다음 워크플로에 코드를 추가 하 여 기능을 제공 합니다.
 
 #### <a name="to-add-code-to-the-workflow"></a>워크플로에 코드를 추가 하려면
 
-1. Workflow designer에서 **createTask1** 작업에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+1. Workflow designer에서 **createTask1** 작업에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 2. 다음 메서드를 추가합니다.
 
@@ -359,7 +361,7 @@ ms.locfileid: "86017125"
 
 5. **속성** 창에서 **Condition** 속성의 드롭다운 화살표를 선택한 다음 *코드 조건* 값을 설정 합니다.
 
-6. 그 옆에 있는 더하기 기호 (![TreeView plus](../sharepoint/media/plus.gif "TreeView 더하기 기호"))를 선택 하 여 **Condition** 속성을 확장 한 다음 해당 값을 *checkapprovalneeded*로 설정 합니다.
+6. 그 옆에 있는 더하기 기호 (![TreeView plus](../sharepoint/media/plus.gif "TreeView 더하기 기호"))를 선택 하 여 **Condition** 속성을 확장 한 다음 해당 값을 *checkapprovalneeded* 로 설정 합니다.
 
 7. Workflow designer에서 **logToHistoryListActivity1** 작업에 대 한 바로 가기 메뉴를 열고 **처리기 생성** 을 선택 하 여 이벤트에 대 한 빈 메서드를 생성 `MethodInvoking` 합니다.
 
@@ -426,11 +428,11 @@ ms.locfileid: "86017125"
 
      이렇게 하면 워크플로 시작 양식이 표시 됩니다. **자동 승인 제한** 상자에 표시 되는 값은 연결 폼에 입력 되었기 때문에 읽기 전용입니다.
 
-7. **비용 합계** 텍스트 상자에 **1600**를 입력 한 다음 **워크플로 시작** 단추를 선택 합니다.
+7. **비용 합계** 텍스트 상자에 **1600** 를 입력 한 다음 **워크플로 시작** 단추를 선택 합니다.
 
      그러면 **공유 문서** 목록이 다시 표시 됩니다. **완료** 된 값이 포함 된 **ExpenseReportWorkflow** 라는 새 열이 워크플로가 시작 된 항목에 추가 됩니다.
 
-8. 업로드 된 문서 옆의 드롭다운 화살표를 선택한 다음 **워크플로 항목을 선택 하 여 워크플로** 상태 페이지를 표시 합니다. **완료 된 워크플로**아래에서 **완료** 된 값을 선택 합니다. **작업은 작업 섹션에** 나열 됩니다.
+8. 업로드 된 문서 옆의 드롭다운 화살표를 선택한 다음 **워크플로 항목을 선택 하 여 워크플로** 상태 페이지를 표시 합니다. **완료 된 워크플로** 아래에서 **완료** 된 값을 선택 합니다. **작업은 작업 섹션에** 나열 됩니다.
 
 9. 작업의 제목을 선택 하 여 작업 세부 정보를 표시 합니다.
 
@@ -447,4 +449,4 @@ ms.locfileid: "86017125"
 
 ## <a name="see-also"></a>추가 정보
 - [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)
-- [연습: 워크플로에 응용 프로그램 페이지 추가](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
+- [연습: 워크플로에 애플리케이션 페이지 추가](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

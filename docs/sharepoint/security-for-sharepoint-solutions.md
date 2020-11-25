@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션에 대 한 보안 | Microsoft Docs
+description: SharePoint 응용 프로그램의 보안을 향상 시키기 위해 Visual Studio에 통합 된 기능을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983783"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970450"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션에 대 한 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에는 SharePoint 응용 프로그램의 보안을 강화 하는 데 도움이 되는 다음 기능이 포함 되어 있습니다.
@@ -34,12 +36,12 @@ ms.locfileid: "73983783"
  AllowPartiallyTrustedCallers 특성은 시스템 전역 어셈블리 캐시 ()에 배포 되지 않은 모든 SharePoint 솔루션에 추가 됩니다 [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] . 여기에는 SharePoint 응용 프로그램 Bin 디렉터리에 배포 된 샌드박스가 적용 된 솔루션 또는 솔루션이 포함 됩니다. 자세한 내용은 [버전 1 Microsoft .NET Framework의 보안 변경 내용](/previous-versions/msp-n-p/ff921345(v=pandp.10)) 및 [SharePoint Foundation의 웹 파트 배포](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))를 참조 하세요.
 
 ## <a name="safe-against-script-property"></a>Safe 스크립트 속성
- *스크립트 삽입* 은 잠재적으로 악의적인 코드를 컨트롤이 나 웹 페이지에 삽입 하는 것입니다. 스크립트 삽입 으로부터 SharePoint 2010 사이트를 보호 하기 위해 참가자는 기본적으로 웹 파트 또는 해당 속성을 보거나 편집할 수 없습니다. 이 동작은 SafeAgainstScript 라는 SafeControl 특성에 의해 제어 됩니다. 에서 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] **스크립트에 대해**프로젝트 항목의 **안전 컨트롤 항목** 하위 속성에 대해이 특성을 안전 하 게 설정 합니다. 자세한 내용은 [프로젝트 항목의 패키지 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 및 [방법: 컨트롤을 안전 컨트롤로 표시](../sharepoint/how-to-mark-controls-as-safe-controls.md)를 참조 하세요.
+ *스크립트 삽입* 은 잠재적으로 악의적인 코드를 컨트롤이 나 웹 페이지에 삽입 하는 것입니다. 스크립트 삽입 으로부터 SharePoint 2010 사이트를 보호 하기 위해 참가자는 기본적으로 웹 파트 또는 해당 속성을 보거나 편집할 수 없습니다. 이 동작은 SafeAgainstScript 라는 SafeControl 특성에 의해 제어 됩니다. 에서 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] **스크립트에 대해** 프로젝트 항목의 **안전 컨트롤 항목** 하위 속성에 대해이 특성을 안전 하 게 설정 합니다. 자세한 내용은 [프로젝트 항목의 패키지 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 및 [방법: 컨트롤을 안전 컨트롤로 표시](../sharepoint/how-to-mark-controls-as-safe-controls.md)를 참조 하세요.
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista 및 Windows 7 사용자 계정 컨트롤
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 및 [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 에는 UAC (사용자 계정 컨트롤) 라는 보안 기능이 포함 되어 있습니다. 및 시스템에서 SharePoint 솔루션을 개발 하려면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] UAC를 시스템 관리자로 실행 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 합니다. **시작** 메뉴에서에 대 한 바로 가기 메뉴를 연 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 **관리자 권한으로 실행**을 선택 합니다.
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] 및 [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 에는 UAC (사용자 계정 컨트롤) 라는 보안 기능이 포함 되어 있습니다. 및 시스템에서 SharePoint 솔루션을 개발 하려면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] UAC를 시스템 관리자로 실행 해야 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 합니다. **시작** 메뉴에서에 대 한 바로 가기 메뉴를 연 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음 **관리자 권한으로 실행** 을 선택 합니다.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]항상 관리자 권한으로 실행 되도록 바로 가기를 구성 하려면 해당 바로 가기 메뉴를 열고 **속성**을 선택한 다음 **속성** 대화 상자에서 **고급** 단추를 선택 하 고 **관리자 권한으로 실행** 확인란을 선택 합니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]항상 관리자 권한으로 실행 되도록 바로 가기를 구성 하려면 해당 바로 가기 메뉴를 열고 **속성** 을 선택한 다음 **속성** 대화 상자에서 **고급** 단추를 선택 하 고 **관리자 권한으로 실행** 확인란을 선택 합니다.
 
  자세한 내용은 [Windows Vista에서 사용자 계정 컨트롤 이해 및 구성](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10))을 참조 하세요. 및 [Windows 7 사용자 계정 컨트롤](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10))
 

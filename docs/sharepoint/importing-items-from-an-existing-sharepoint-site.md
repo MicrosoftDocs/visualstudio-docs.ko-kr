@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017032"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970560"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>기존 SharePoint 사이트에서 항목 가져오기
   SharePoint 솔루션 패키지 가져오기 프로젝트 템플릿을 사용하면 기존 SharePoint 사이트에 있는 콘텐츠 형식 및 필드 등의 요소를 새 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 솔루션에서 다시 사용할 수 있습니다. 수정 없이도 가져온 솔루션을 대부분 실행할 수 있지만 몇 가지 제한 및 문제를 고려해야 합니다. 항목을 가져온 후 수정한 경우에는 특히 주의해야 합니다.
@@ -74,29 +74,29 @@ ms.locfileid: "86017032"
 ## <a name="what-happens-when-you-import-a-solution"></a>솔루션을 가져올 때 수행되는 작업
  SharePoint 솔루션 패키지 가져오기 템플릿을 사용하여 솔루션을 가져오면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 *.wsp* 파일 내용을 모두 복사하고 가져온 요소와 해당 파일 간의 연결 및 참조를 최대한 많이 유지하고 조정하려고 합니다.
 
- 가져온 항목은 모두 **솔루션 탐색기**의 해당 폴더에 복사됩니다. 예를 들어 콘텐츠 형식은 **콘텐츠 형식** 폴더 아래 나타나고 목록 인스턴스는 **목록 인스턴스**폴더 아래 나타납니다. 가져온 항목과 연결된 파일도 해당 항목 폴더로 복사됩니다. 예를 들어 가져온 목록 인스턴스에는 모듈, 양식 및 ASPX 페이지가 포함됩니다.
+ 가져온 항목은 모두 **솔루션 탐색기** 의 해당 폴더에 복사됩니다. 예를 들어 콘텐츠 형식은 **콘텐츠 형식** 폴더 아래 나타나고 목록 인스턴스는 **목록 인스턴스** 폴더 아래 나타납니다. 가져온 항목과 연결된 파일도 해당 항목 폴더로 복사됩니다. 예를 들어 가져온 목록 인스턴스에는 모듈, 양식 및 ASPX 페이지가 포함됩니다.
 
 ### <a name="dependent-items"></a>종속 항목
  SharePoint 솔루션 패키지 가져오기 마법사에서 항목을 선택했지만 종속 항목을 선택하지 않은 경우 가져오기 전에 종속 항목도 선택해야 한다는 메시지 상자가 나타납니다.
 
 ### <a name="what-are-features"></a>기능이란?
- SharePoint 디자이너 사용자는 *솔루션 탐색기*에서 가져온 솔루션에 **기능** 이라는 예기치 않은 파일이 있는 것을 볼 수 있습니다. 기능은 SharePoint 디자이너 솔루션에 있었지만 화면에 표시되지 않았습니다. 이제 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에 기능이 표시됩니다.
+ SharePoint 디자이너 사용자는 *솔루션 탐색기* 에서 가져온 솔루션에 **기능** 이라는 예기치 않은 파일이 있는 것을 볼 수 있습니다. 기능은 SharePoint 디자이너 솔루션에 있었지만 화면에 표시되지 않았습니다. 이제 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에 기능이 표시됩니다.
 
  기능은 SharePoint 항목의 컨테이너입니다. 각 기능은 콘텐츠 형식 및 목록 정의 등 포함된 각 항목에 대한 참조를 유지합니다. 솔루션을 가져올 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 가져온 모든 요소에 대해 기능을 설정하고 파일에 대한 기능-요소 관계를 유지하려고 합니다. 참조를 확인할 수 없는 모든 파일은 **기타 가져온 파일** 폴더에 나타납니다.
 
  기능에 대한 자세한 내용은 [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md) 및 [기능 작업](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))을 참조하세요.
 
 ### <a name="handle-special-cases"></a>특수 사례 처리
- Visual Studio에서 종속 파일이 있는 항목을 조정할 수 없는 경우가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 확인할 수 없는 모든 파일은 **기타 가져온 파일**폴더에 나타납니다. 또한 솔루션과 함께 배포되지 않도록 **DeploymentType** 속성이 **NoDeployment** 로 설정됩니다.
+ Visual Studio에서 종속 파일이 있는 항목을 조정할 수 없는 경우가 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 확인할 수 없는 모든 파일은 **기타 가져온 파일** 폴더에 나타납니다. 또한 솔루션과 함께 배포되지 않도록 **DeploymentType** 속성이 **NoDeployment** 로 설정됩니다.
 
- 예를 들어 목록 정의 ExpenseForms를 가져오면 **솔루션 탐색기**의 **목록 정의** 폴더 아래에 해당 이름의 목록 정의가 *Elements.xml* 및 *Schema.xml* 파일과 함께 나타납니다. 그러나 관련 ASPX 및 HTML 양식은 **기타 가져온 파일** 폴더의 **ExpenseForms** 폴더 아래 배치될 수 있습니다. 가져오기를 완료하려면 **솔루션 탐색기** 에서 이러한 파일을 ExpenseForms 목록 정의로 이동하고 각 파일의 **DeploymentType** 속성을 **NoDeployment** 에서 **ElementFile**로 변경합니다.
+ 예를 들어 목록 정의 ExpenseForms를 가져오면 **솔루션 탐색기** 의 **목록 정의** 폴더 아래에 해당 이름의 목록 정의가 *Elements.xml* 및 *Schema.xml* 파일과 함께 나타납니다. 그러나 관련 ASPX 및 HTML 양식은 **기타 가져온 파일** 폴더의 **ExpenseForms** 폴더 아래 배치될 수 있습니다. 가져오기를 완료하려면 **솔루션 탐색기** 에서 이러한 파일을 ExpenseForms 목록 정의로 이동하고 각 파일의 **DeploymentType** 속성을 **NoDeployment** 에서 **ElementFile** 로 변경합니다.
 
  이벤트 수신기를 가져오면 *Elements.xml* 파일이 올바른 위치에 복사되지만, 어셈블리가 솔루션과 함께 배포되도록 솔루션 패키지에 어셈블리를 수동으로 포함해야 합니다. 이 작업을 수행하는 방법[!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] [방법: 다른 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)를 참조하세요.
 
- 워크플로를 가져오면 InfoPath 양식이 **기타 가져온 파일** 폴더에 복사됩니다. 웹 템플릿이 포함된 *.wsp* 파일이 **솔루션 탐색기**의 시작 페이지로 설정됩니다.
+ 워크플로를 가져오면 InfoPath 양식이 **기타 가져온 파일** 폴더에 복사됩니다. 웹 템플릿이 포함된 *.wsp* 파일이 **솔루션 탐색기** 의 시작 페이지로 설정됩니다.
 
 ## <a name="import-fields-and-property-bags"></a>필드 및 속성 모음 가져오기
- 여러 필드가 있는 솔루션을 가져오면 **솔루션 탐색기**에서 **필드** 노드 아래의 단일 *Elements.xml* 파일에 모든 개별 필드 정의가 병합됩니다. 마찬가지로, 모든 속성 모음 항목은 **PropertyBags** 노드 아래의 *Elements.xml* 파일에 병합됩니다.
+ 여러 필드가 있는 솔루션을 가져오면 **솔루션 탐색기** 에서 **필드** 노드 아래의 단일 *Elements.xml* 파일에 모든 개별 필드 정의가 병합됩니다. 마찬가지로, 모든 속성 모음 항목은 **PropertyBags** 노드 아래의 *Elements.xml* 파일에 병합됩니다.
 
  SharePoint에서 필드는 텍스트, 부울 또는 조회 같은 지정된 데이터 형식의 열입니다. 자세한 내용은 [구성 요소: 열 및 필드 형식](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14))을 참조하세요. 속성 모음을 사용하면 팜부터 SharePoint 사이트의 목록에 이르기까지 SharePoint의 개체에 속성을 추가할 수 있습니다. 속성 모음은 속성 이름 및 값의 해시 테이블로 구현됩니다. 자세한 내용은 [SharePoint 구성 관리](/previous-versions/msp-n-p/ff647766(v=pandp.10)) 또는 [SharePoint 속성 모음 설정](https://archive.codeplex.com/?p=pbs)을 참조하세요.
 

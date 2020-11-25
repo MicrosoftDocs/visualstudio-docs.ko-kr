@@ -1,5 +1,7 @@
 ---
 title: SharePoint 패키징 및 배포 문제 해결 | Microsoft Docs
+description: SharePoint 솔루션을 패키지 하 고 배포할 때 발생할 수 있는 다양 한 문제를 이해 하 고 해결 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981931"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969946"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 문제 해결
   이 항목에서는 SharePoint 솔루션을 패키지하고 배포할 때 발생할 수 있는 다양한 문제에 대해 설명합니다.
@@ -40,7 +42,7 @@ ms.locfileid: "72981931"
  패키지 디자이너를 통해 패키지에 프로젝트 출력을 추가할 수 있습니다. 그러나 프로젝트 출력을 추가할 때 프로젝트의 플랫폼이 SharePoint 솔루션의 플랫폼과 일치하는지 확인해야 합니다. SharePoint 서버에 배포 하려는 어셈블리에 대해 **ANY CPU** 플랫폼 대상을 사용 하는 것이 좋습니다. 자세한 내용은 [컴파일 페이지, 프로젝트 디자이너 &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) 및 [고급 컴파일러 설정 대화 상자 &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)을 참조 하세요.
 
 ## <a name="validation-warnings-and-errors"></a>유효성 검사 경고 및 오류
- Visual Studio의 SharePoint 개발 도구는 유효성 검사 단계를 수행하여 솔루션 패키지가 올바르게 생성되었는지 확인합니다. 기능과 패키지에 대한 사용자 지정 유효성 검사 단계를 만들 수도 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대 한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조 하세요.
+ Visual Studio의 SharePoint 개발 도구는 유효성 검사 단계를 수행하여 솔루션 패키지가 올바르게 생성되었는지 확인합니다. 기능과 패키지에 대한 사용자 지정 유효성 검사 단계를 만들 수도 있습니다. 자세한 내용은 [방법: SharePoint 솔루션에 대한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)를 참조하세요.
 
 ## <a name="deployment-conflict-resolution"></a>배포 충돌 해결
  SharePoint 솔루션을 배포할 때 서버의 항목이 솔루션 패키지에 있는 항목과 같은 이름, URL 또는 ID를 갖고 있는 경우 충돌이 발생할 수 있습니다. **배포 충돌 해결** 속성을 변경 하 여 모듈, 웹 파트, 목록 인스턴스 및 내용 유형에 대 한 충돌을 해결 하거나 보고 하거나 무시할 수 있습니다.
@@ -112,4 +114,4 @@ ms.locfileid: "72981931"
 
 ## <a name="see-also"></a>추가 정보
 
-- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

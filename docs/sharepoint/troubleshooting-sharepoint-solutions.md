@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션 문제 해결 | Microsoft Docs
+description: Visual Studio 디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 발생할 수 있는 문제 또는 경고를 확인 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298384"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970281"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 다음과 같은 문제나 경고가 발생할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버그](/previous-versions/bb386166(v=vs.100))를 참조 하세요.
@@ -102,7 +104,7 @@ ms.locfileid: "92298384"
  없음
 
 ### <a name="resolution"></a>해결 방법
- 이 문제는 *webtemp_SiteDefinitionProject1.xml*webtemp 사이트 정의 구성 파일의 **Path** 속성에 잘못 된 값이 있기 때문에 발생 합니다. **배포 위치**아래에 있는 webtemp 파일의 **Path** 속성에서 1033을 적절 한 로캘로 변경 합니다 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . 예를 들어, 일본어 로캘을 사용 하려면 값을 1041로 변경 합니다. 자세한 내용은 참조 [Microsoft에 의해 할당되는 로캘 ID](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)를 참조하세요.
+ 이 문제는 *webtemp_SiteDefinitionProject1.xml* webtemp 사이트 정의 구성 파일의 **Path** 속성에 잘못 된 값이 있기 때문에 발생 합니다. **배포 위치** 아래에 있는 webtemp 파일의 **Path** 속성에서 1033을 적절 한 로캘로 변경 합니다 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . 예를 들어, 일본어 로캘을 사용 하려면 값을 1041로 변경 합니다. 자세한 내용은 참조 [Microsoft에 의해 할당되는 로캘 ID](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)를 참조하세요.
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>정상적인 시스템에 워크플로 프로젝트를 배포 하면 오류가 표시 됩니다.
  이 문제는 클린 시스템의 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 워크플로 프로젝트를 배포하는 경우 발생합니다. 클린 시스템은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 SharePoint를 새로 설치했지만 워크플로 프로젝트를 배포하지 않은 컴퓨터입니다.
@@ -115,7 +117,7 @@ ms.locfileid: "92298384"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>워크플로 마법사를 다시 입력 하려면
 
-1. **솔루션 탐색기**에서 워크플로 노드를 선택 합니다.
+1. **솔루션 탐색기** 에서 워크플로 노드를 선택 합니다.
 
 2. **속성** 창에서 줄임표 단추가 있는 모든 속성의 줄임표 (...) 단추를 선택 합니다.
 
@@ -123,7 +125,7 @@ ms.locfileid: "92298384"
  이미지 컨트롤과 같은 이미지를 표시 하는 컨트롤을 사용 하 여 응용 프로그램 페이지를 포함 하는 SharePoint 솔루션을 디버깅 하는 경우에는 [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] 브라우저에서 페이지를 새로 고쳐 이미지에 적용 된 변경 내용을 표시 해야 합니다.
 
 ## <a name="error-the-site-location-is-not-valid"></a>오류: 사이트 위치가 잘못 되었습니다.
- 가 설치 되지 않은 경우이 문제가 발생할 수 있습니다 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] . **Sharepoint 사용자 지정 마법사**에 지정 된 sharepoint 웹 사이트에 대 한 관리자 액세스 권한이 없는 경우에도 발생할 수 있습니다.
+ 가 설치 되지 않은 경우이 문제가 발생할 수 있습니다 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] . **Sharepoint 사용자 지정 마법사** 에 지정 된 sharepoint 웹 사이트에 대 한 관리자 액세스 권한이 없는 경우에도 발생할 수 있습니다.
 
 ### <a name="error-message"></a>오류 메시지
 
@@ -156,9 +158,9 @@ ms.locfileid: "92298384"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>이벤트 수신기의 기능 범위를 변경 하려면
 
-1. **솔루션 탐색기**에서 파일을 두 번 클릭 하거나 바로 가기 메뉴를 연 다음 **열기**를 선택 하 여 **기능 디자이너** 에서 이벤트 수신기의 *기능* 파일을 엽니다.
+1. **솔루션 탐색기** 에서 파일을 두 번 클릭 하거나 바로 가기 메뉴를 연 다음 **열기** 를 선택 하 여 **기능 디자이너** 에서 이벤트 수신기의 *기능* 파일을 엽니다.
 
-2. **범위**옆의 화살표를 선택 하 고 표시 되는 목록에서 **사이트** 를 선택 합니다.
+2. **범위** 옆의 화살표를 선택 하 고 표시 되는 목록에서 **사이트** 를 선택 합니다.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>비즈니스 데이터 연결 모델 프로젝트의 식별자 이름이 변경 된 후 배포 오류가 표시 됩니다.
  이 문제는 BDC (비즈니스 데이터 연결) 모델에서 엔터티의 식별자 이름을 변경한 후 솔루션을 배포 하려고 할 때 발생 합니다.
@@ -189,9 +191,9 @@ ms.locfileid: "92298384"
 
 ##### <a name="to-resolve-this-issue"></a>이 문제를 해결하려면
 
-1. **솔루션 탐색기**에서 파일 이름 확장명이 *.ascx*인 사용자 정의 컨트롤 파일을 선택 합니다.
+1. **솔루션 탐색기** 에서 파일 이름 확장명이 *.ascx* 인 사용자 정의 컨트롤 파일을 선택 합니다.
 
-2. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
+2. 메뉴 모음에서 **보기**  >  **속성 창** 을 선택 합니다.
 
 3. **속성** 창에서 **배포 위치** 노드를 확장 합니다.
 
@@ -212,7 +214,7 @@ ms.locfileid: "92298384"
  이 문제는 가져온 목록 인스턴스의 이름을 바꾼 다음에서 실행 하는 경우에 발생 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 합니다.
 
 ### <a name="error-message"></a>오류 메시지
- 빌드 오류: 배포 단계 ' 기능 활성화 '에서 오류가 발생 했습니다. 파일 템플릿 \ 기능 \\ [*프로젝트*<em>기능</em>*이름*가져오기] \Files\Lists \\ [*이전*<em>목록 이름</em>] \Schema.xml 존재 하지 않습니다.
+ 빌드 오류: 배포 단계 ' 기능 활성화 '에서 오류가 발생 했습니다. 파일 템플릿 \ 기능 \\ [*프로젝트*<em>기능</em>*이름* 가져오기] \Files\Lists \\ [*이전*<em>목록 이름</em>] \Schema.xml 존재 하지 않습니다.
 
 ### <a name="resolution"></a>해결 방법
  목록 인스턴스를 가져올 때 CustomSchema 라는 특성이 목록 인스턴스의 Elements.xml 파일에 추가 됩니다. Elements.xml 목록 인스턴스에 대 한 사용자 지정 schema.xml의 경로를 포함 합니다. 에서 목록 인스턴스의 이름을 바꾸면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용자 지정 schema.xml의 배포 경로가 변경 되지만 CustomSchema 특성의 경로 값은 업데이트 되지 않습니다. 따라서 목록 인스턴스는 기능이 활성화 될 때 CustomSchema 특성으로 지정 된 이전 경로에서 *schema.xml* 파일을 찾을 수 없습니다.
@@ -238,7 +240,7 @@ ms.locfileid: "92298384"
 
 4. IIS 제한 시간 전에 대기 시간을 늘리려면 **Ping 최대 응답 시간 (초)** 값을 90 초 보다 큰 값으로 변경 합니다.
 
-5. IIS ping을 사용 하지 않도록 설정 하려면 **Ping 사용** 을 **False**로 설정 합니다.
+5. IIS ping을 사용 하지 않도록 설정 하려면 **Ping 사용** 을 **False** 로 설정 합니다.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>자동 취소는 분리 된 목록 인스턴스를 SharePoint에 남겨 둡니다.
  이 문제는 다음 단계를 수행 하는 경우 발생 합니다.
@@ -257,7 +259,7 @@ ms.locfileid: "92298384"
 ### <a name="resolution"></a>해결 방법
  이는 SharePoint 솔루션의 디버그 세션을 닫은 후 자동 취소 기능이 솔루션을 취소 하기 때문에 발생 합니다. 취소는 SharePoint에서 목록 정의를 삭제 하지만 목록의 인스턴스를 삭제 하지는 않습니다. 기본 목록 정의는 목록 인스턴스에 필요 합니다.
 
- 이 문제를 해결 하려면 메뉴 모음에서 **빌드**배포를 선택 하 여 솔루션을 배포  >  **Deploy**합니다. **F5** 키를 선택 하 여 솔루션을 디버깅 하지 마십시오. 그런 다음 SharePoint에서 목록 인스턴스를 삭제 합니다.
+ 이 문제를 해결 하려면 메뉴 모음에서 **빌드** 배포를 선택 하 여 솔루션을 배포  >  **Deploy** 합니다. **F5** 키를 선택 하 여 솔루션을 디버깅 하지 마십시오. 그런 다음 SharePoint에서 목록 인스턴스를 삭제 합니다.
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>원래 SharePoint 솔루션은 내보낸 버전으로 대체 됩니다.
  SharePoint 솔루션을 내보내는 경우 솔루션을로 가져온 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 후 솔루션을 내보낸 사이트와 동일한 사이트에 다시 배포 하면 원래 SharePoint 솔루션이 대체 됩니다. 원본 솔루션이 활성화 되지 않은 서버에 솔루션을 배포 하는 경우에는이 문제가 발생 하지 않습니다.
@@ -275,9 +277,9 @@ ms.locfileid: "92298384"
  Web.config 구성 파일을 로드할 수 없습니다. 파일에 잘못 된 형식의 XML 요소가 있는지 확인 한 후 다시 시도 하십시오. 다음 오류가 발생 했습니다. 지정 된 키가 사전에 없습니다.
 
 ### <a name="resolution"></a>해결 방법
- 이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 애플리케이션의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열고 **응용 프로그램 관리** 링크를 선택한 다음 **웹 응용 프로그램**에서 **대체 액세스 매핑 구성** 링크를 선택 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역 만들기](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))를 참조 하세요.
+ 이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 애플리케이션의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열고 **응용 프로그램 관리** 링크를 선택한 다음 **웹 응용 프로그램** 에서 **대체 액세스 매핑 구성** 링크를 선택 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역 만들기](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

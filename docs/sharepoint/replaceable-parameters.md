@@ -1,5 +1,7 @@
 ---
 title: 대체 가능 매개 변수 | Microsoft Docs
+description: 디자인 타임에 실제 값이 알려지지 않은 SharePoint 솔루션 항목의 프로젝트 파일 내에 값을 지정 하는 대체 가능 매개 변수 (토큰)를 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +16,15 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842127"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970257"
 ---
 # <a name="replaceable-parameters"></a>대체 가능 매개 변수
-  대체 가능 매개 변수 또는 *토큰*은 프로젝트 파일 내에서 실제 값이 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하기 위해 프로젝트 파일 내에서 사용할 수 있습니다. 함수는 표준 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰과 유사 합니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
+  대체 가능 매개 변수 또는 *토큰* 은 프로젝트 파일 내에서 실제 값이 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하기 위해 프로젝트 파일 내에서 사용할 수 있습니다. 함수는 표준 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰과 유사 합니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
 
 ## <a name="token-format"></a>토큰 형식
  토큰은 달러 기호 ($) 문자로 시작 하 고 끝납니다. 배포 시 프로젝트를 SharePoint 솔루션 패키지 (*.wsp* 파일)에 패키지할 때 사용 되는 모든 토큰이 실제 값으로 바뀝니다. 예를 들어 **Package.Name $ $SharePoint** 토큰은 "Test SharePoint Package" 문자열로 확인 될 수 있습니다.
@@ -64,7 +66,7 @@ ms.locfileid: "90842127"
 |$SharePoint FileNameWithoutExtension $|파일 이름 확장명이 없는 기능 정의 파일의 이름입니다.|
 |$SharePoint. DeploymentPath $|패키지의 기능을 포함 하는 폴더의 이름입니다. 이 토큰은 기능 디자이너의 "배포 경로" 속성에 해당 합니다. 예제 값은 "Project1_Feature1"입니다.|
 |$SharePoint Feature.Id $|포함 하는 기능의 SharePoint ID입니다. 모든 기능 수준 토큰과 마찬가지로이 토큰은 기능을 통해 패키지에 포함 된 파일에만 사용할 수 있으며 기능 외부의 패키지에는 직접 추가 되지 않습니다.|
-|$SharePoint ProjectItem.Name $|**ISharePointProjectItem.Name**에서 가져온 프로젝트 항목의 이름 (파일 이름 아님)입니다.|
+|$SharePoint ProjectItem.Name $|**ISharePointProjectItem.Name** 에서 가져온 프로젝트 항목의 이름 (파일 이름 아님)입니다.|
 |$SharePoint \<GUID> . 형식. AssemblyQualifiedName $|토큰의 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)]와 일치하는 형식의 정규화된 어셈블리 이름입니다. [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)]의 형식은 소문자이며 Guid.ToString("D") 형식과 일치합니다(즉, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 |$SharePoint \<GUID> . 형식. FullName $|토큰에서 GUID와 일치 하는 형식의 전체 이름입니다. GUID의 형식은 소문자 이며 Guid. ToString ("D") 형식에 해당 합니다 (즉, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 
@@ -75,7 +77,7 @@ ms.locfileid: "90842127"
 
 - .ASCX
 
-- LOGIN.ASPX
+- ASPX
 
 - 웹
 
@@ -86,9 +88,9 @@ ms.locfileid: "90842127"
   그러나 목록에 파일 확장명을 더 추가할 수 있습니다. Sharepoint `<TokenReplacementFileExtensions>` 대상 파일의 이전에 정의 된 sharepoint 프로젝트 파일의 모든 PropertyGroup에 요소를 추가 \<Import> 합니다.
 
 > [!NOTE]
-> 프로젝트를 컴파일한 후에 토큰 대체가 발생 하므로 *.cs*, *.vb* 또는 *.resx*와 같이 컴파일되는 파일 형식에 대 한 파일 확장명을 추가 하면 안 됩니다. 토큰은 컴파일되지 않은 파일 에서만 바뀝니다.
+> 프로젝트를 컴파일한 후에 토큰 대체가 발생 하므로 *.cs*, *.vb* 또는 *.resx* 와 같이 컴파일되는 파일 형식에 대 한 파일 확장명을 추가 하면 안 됩니다. 토큰은 컴파일되지 않은 파일 에서만 바뀝니다.
 
- 예를 들어 토큰 대체 파일 이름 확장명 목록에 파일 이름 확장명 ( *yourextension*)을 추가 하려면 프로젝트 (*.csproj*) 파일에 다음을 추가*합니다.*
+ 예를 들어 토큰 대체 파일 이름 확장명 목록에 파일 이름 확장명 ( *yourextension*)을 추가 하려면 프로젝트 (*.csproj*) 파일에 다음을 추가 *합니다.*
 
 ```xml
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -105,5 +107,5 @@ ms.locfileid: "90842127"
 
  대상 (*.targets*) 파일에 확장을 직접 추가할 수 있습니다. 그러나 확장을 추가 하면 자체 뿐 아니라 로컬 시스템에 패키지 된 모든 SharePoint 프로젝트에 대 한 확장 목록이 변경 됩니다. 이 확장은 시스템의 유일한 개발자 이거나 대부분의 프로젝트에 필요한 경우에 편리할 수 있습니다. 그러나 시스템에 특정 하므로이 방법을 이식할 수 없으므로 프로젝트 파일에 확장을 추가 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

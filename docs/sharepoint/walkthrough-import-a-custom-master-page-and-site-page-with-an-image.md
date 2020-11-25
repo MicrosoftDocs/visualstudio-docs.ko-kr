@@ -1,5 +1,7 @@
 ---
 title: 이미지를 사용 하 여 사용자 지정 마스터 페이지 & 사이트 페이지로 가져오기
+description: 이 연습에서는 SharePoint 사용자 지정 마스터 페이지와 이미지를 포함 하는 사이트 페이지를 Visual Studio SharePoint 프로젝트로 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015693"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970156"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>연습: 이미지를 사용 하 여 사용자 지정 마스터 페이지 및 사이트 페이지 가져오기
   이 연습에서는 SharePoint 사용자 지정 마스터 페이지와 이미지를 포함 하는 사이트 페이지를 sharepoint 프로젝트로 가져오는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -33,7 +35,7 @@ ms.locfileid: "86015693"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 다음 구성 요소가 있어야 합니다.
 
 - 및 SharePoint의 지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]
@@ -49,9 +51,9 @@ ms.locfileid: "86015693"
 
 1. SharePoint 디자이너의 탐색 창에서 **마스터 페이지** 사이트 개체를 선택 합니다.
 
-2. **마스터 페이지** 리본에서 **빈 마스터 페이지**를 선택 합니다.
+2. **마스터 페이지** 리본에서 **빈 마스터 페이지** 를 선택 합니다.
 
-3. 새 마스터 페이지를 선택한 다음 **마스터 페이지** 리본에서 **파일 편집**을 선택 합니다.
+3. 새 마스터 페이지를 선택한 다음 **마스터 페이지** 리본에서 **파일 편집** 을 선택 합니다.
 
 4. SharePoint 디자이너의 맨 아래에서 **코드** 탭을 선택 합니다.
 
@@ -76,7 +78,7 @@ ms.locfileid: "86015693"
     </html>
     ```
 
-6. 페이지를 저장 하 고 **마스터 페이지** 탭을 선택 하 고 마스터 페이지의 이름을 **mybasic1**로 바꿉니다.
+6. 페이지를 저장 하 고 **마스터 페이지** 탭을 선택 하 고 마스터 페이지의 이름을 **mybasic1** 로 바꿉니다.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>SharePoint 디자이너에서 콘텐츠 데이터베이스에 이미지 추가
  이제 사이트 페이지에 표시할 이미지를 추가할 수 있습니다. 이미지는 SharePoint 콘텐츠 데이터베이스에 배포 됩니다.
@@ -85,7 +87,7 @@ ms.locfileid: "86015693"
 
 1. 탐색 창에서 **모든 파일** 사이트 개체를 선택한 다음 트리 뷰에서 **images** 폴더를 선택 합니다.
 
-2. **모든 파일** 리본에서 **파일 가져오기**를 선택 하 고 원하는 파일을 선택한 다음 **확인** 단추를 선택 합니다. 이 예에서는 파일 이름이 **myimg1.png**입니다.
+2. **모든 파일** 리본에서 **파일 가져오기** 를 선택 하 고 원하는 파일을 선택한 다음 **확인** 단추를 선택 합니다. 이 예에서는 파일 이름이 **myimg1.png** 입니다.
 
      필요에 따라 이미지를 구성 하는 데 도움이 되는 하위 폴더를 만들 수 있습니다.
 
@@ -98,7 +100,7 @@ ms.locfileid: "86015693"
 
 1. 탐색 창에서 **사이트 페이지** 개체를 선택 합니다.
 
-2. **페이지 리본에서** **페이지** 단추를 선택 하 고, **ASPX** 페이지 유형을 선택한 다음, 새 파일의 이름을 **mycontentpage1**로 설정 합니다.
+2. **페이지 리본에서** **페이지** 단추를 선택 하 고, **ASPX** 페이지 유형을 선택한 다음, 새 파일의 이름을 **mycontentpage1** 로 설정 합니다.
 
      필요한 경우 사이트 페이지를 구성 하는 데 도움이 되는 하위 폴더를 만들 수 있습니다.
 
@@ -131,7 +133,7 @@ ms.locfileid: "86015693"
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>SharePoint 디자이너에서 항목을 내보내려면
 
-1. SharePoint 디자이너의 탐색 창에서 **팀 사이트** 개체를 선택한 다음 **사이트** 리본에서 **템플릿으로 저장**을 선택 합니다.
+1. SharePoint 디자이너의 탐색 창에서 **팀 사이트** 개체를 선택한 다음 **사이트** 리본에서 **템플릿으로 저장** 을 선택 합니다.
 
 2. **템플릿으로 저장** 대화 상자에서 파일 이름 및 템플릿 이름을 입력 하 고 **콘텐츠 포함** 확인란을 선택한 다음 **확인** 단추를 선택 합니다.
 
@@ -158,7 +160,7 @@ ms.locfileid: "86015693"
 
 3. **마침** 단추를 선택 하 여 선택한 항목을 가져옵니다.
 
-4. **솔루션 탐색기**에서 \_ catalogsmasterpage \_ 노드를 선택 하 고 **배포 충돌 해결** 속성의 값을 **자동**으로 설정 합니다.
+4. **솔루션 탐색기** 에서 \_ catalogsmasterpage \_ 노드를 선택 하 고 **배포 충돌 해결** 속성의 값을 **자동** 으로 설정 합니다.
 
     이렇게 하면 배포 충돌을 자동으로 해결할 수 있습니다.
 
@@ -170,7 +172,7 @@ ms.locfileid: "86015693"
 
    - 기존 마스터 페이지가 사용자 지정 마스터 페이지로 설정 된 경우 일시적으로 다른 마스터 페이지를 사용자 지정 마스터 페이지로 설정 합니다. SharePoint에 파일을 배포한 후 새 마스터 페이지를 사용자 지정 마스터 페이지로 설정 합니다.
 
-6. 메뉴 모음에서 **빌드**  >  **솔루션 배포**를 선택 합니다.
+6. 메뉴 모음에서 **빌드**  >  **솔루션 배포** 를 선택 합니다.
 
 7. SharePoint 사이트를 열어 배포 된 항목을 확인 합니다.
 
@@ -179,4 +181,4 @@ ms.locfileid: "86015693"
 ## <a name="see-also"></a>추가 정보
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
-- [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
