@@ -1,5 +1,7 @@
 ---
 title: '검사 목록: 새 프로젝트 형식 만들기 | Microsoft Docs'
+description: Visual Studio에서 새 프로젝트 형식을 만들고 표시 하기 위해 완료 해야 하는 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414193"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189968"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록에서는 이러한 작업에 대 한 지침을 제공 합니다.
@@ -49,15 +51,15 @@ ms.locfileid: "93414193"
 
     - 자동화에 사용할 수 있는 개체 또는에서 파생 된 클래스 `IDispatch` 입니다.
 
-    - XML 명령 테이블 ( *.vvsct* ) 파일. 자세한 내용은 [Visual Studio 명령 테이블 (vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조 하세요.
+    - XML 명령 테이블 (*.vvsct*) 파일. 자세한 내용은 [Visual Studio 명령 테이블 (vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조 하세요.
 
 6. 프로젝트 형식을 테스트, 디버그 및 시작 합니다.
 
 7. 의 값으로를 설정 하 여 **참조 추가** 대화 상자의 **프로젝트** 탭에 프로젝트를 표시 합니다 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` . 자세한 내용은 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>를 참조하세요.
 
-8. Vspackage를 설치 하기 위한 Microsoft Installer ( *.msi* ) 파일을 만듭니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [프로젝트 형식 등록](../../extensibility/internals/registering-a-project-type.md)및 [vspackage](../../extensibility/internals/vspackages.md)을 참조 하세요.
+8. Vspackage를 설치 하기 위한 Microsoft Installer (*.msi*) 파일을 만듭니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [프로젝트 형식 등록](../../extensibility/internals/registering-a-project-type.md)및 [vspackage](../../extensibility/internals/vspackages.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)
 - [프로젝트 형식 만들기](../../extensibility/internals/creating-project-types.md)

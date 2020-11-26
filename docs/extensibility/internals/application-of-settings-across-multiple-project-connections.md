@@ -1,5 +1,6 @@
 ---
 title: 여러 프로젝트 연결에서 설정 적용
+description: 일괄 작업을 실행 하기 위해 소스 제어 플러그 인을 사용 하 여 여러 프로젝트 연결에서 설정을 적용 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034925"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190111"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>여러 프로젝트 연결에서 설정 적용
 소스 제어 플러그 인 API 버전 1.2을 사용 하 여 빌드된 소스 제어 플러그 인은 일괄 처리 작업을 사용 하 여 여러 프로젝트 또는 여러 연결 컨텍스트에서 동일한 원본 제어 작업을 실행할 수 있습니다. 일괄 처리를 사용 하 여 사용자 환경에서 중복 된 프로젝트별 대화 상자를 제거할 수 있습니다.
@@ -35,5 +36,5 @@ ms.locfileid: "90034925"
 
 `SCCBeginBatch`함수는 소스 제어 작업 그룹을 시작 합니다. `SccEndBatch`함수는 그룹을 닫습니다. 그룹은 중첩 될 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

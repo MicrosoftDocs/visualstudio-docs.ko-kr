@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 중괄호 일치 | Microsoft Docs
+description: 괄호 및 중괄호와 같이 함께 발생 해야 하는 언어 요소를 추적할 수 있도록 하는 레거시 언어 서비스의 중괄호 일치에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709813"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190007"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>레거시 언어 서비스의 중괄호 일치
 중괄호 일치는 괄호 및 중괄호와 같이 함께 발생 해야 하는 언어 요소를 개발자가 추적 하는 데 도움이 됩니다. 개발자가 닫는 중괄호를 입력 하면 여는 중괄호가 강조 표시 됩니다.
@@ -38,9 +40,9 @@ ms.locfileid: "80709813"
  중괄호를 입력 하는 방법에 대 한 자세한 설명은 중괄호를 입력 하는 방법에 대 한 자세한 내용은 [레거시 언어 서비스 파서 및 스캐너](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)문서에서 *예제 구문 분석 작업* 섹션을 참조 하세요.
 
 ## <a name="enable-support-for-brace-matching"></a>중괄호 일치 지원 사용
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>특성은 클래스의 해당 속성을 설정 하는 **matchbraces**, **MatchBracesAtCaret**및 **ShowMatchingBrace** 레지스트리 항목을 설정할 수 있습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . 사용자가 언어 기본 설정 속성을 설정할 수도 있습니다.
+ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>특성은 클래스의 해당 속성을 설정 하는 **matchbraces**, **MatchBracesAtCaret** 및 **ShowMatchingBrace** 레지스트리 항목을 설정할 수 있습니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . 사용자가 언어 기본 설정 속성을 설정할 수도 있습니다.
 
-|레지스트리 항목|속성|설명|
+|레지스트리 항목|속성|Description|
 |--------------------|--------------|-----------------|
 |MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|중괄호 일치를 사용 합니다.|
 |MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|캐럿이 이동할 때 중괄호 일치를 사용 하도록 설정 합니다.|
@@ -135,6 +137,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 파서 및 스캐너](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

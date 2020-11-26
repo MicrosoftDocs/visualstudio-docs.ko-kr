@@ -1,5 +1,7 @@
 ---
 title: 명령 가용성 | Microsoft Docs
+description: 현재 프로젝트, 현재 편집기 및 기타 요소에 따라 변경 되는 명령 컨텍스트가 Visual Studio에서 사용할 수 있는 명령을 결정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709693"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189942"
 ---
 # <a name="command-availability"></a>명령 가용성
 
@@ -53,7 +55,7 @@ Visual Studio 컨텍스트는 사용할 수 있는 명령을 결정 합니다. �
 > [!CAUTION]
 > 다른 Vspackage가이에 종속 될 수 있으므로 VSPackage가 기존 컨텍스트 Guid에 영향을 주지 않는지 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

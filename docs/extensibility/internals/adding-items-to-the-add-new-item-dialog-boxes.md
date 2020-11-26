@@ -1,5 +1,7 @@
 ---
 title: 새 항목 추가 대화 상자에 항목 추가 | Microsoft Docs
+description: 프로젝트에 사용할 템플릿 및 프로젝트 요소를 표시할 수 있도록 Visual Studio에서 새 항목 추가 대화 상자에 항목을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710220"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190163"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 항목 추가
 **새 항목 추가** 대화 상자에 항목을 추가 하는 프로세스는 레지스트리 키로 시작 합니다. 다음 레지스트리 항목에 표시 된 것 처럼 **Additemtemplates** 섹션에는 **새 항목 추가** 대화 상자에서 사용할 수 있는 항목이 배치 된 디렉터리의 경로와 이름이 포함 되어 있습니다.
@@ -23,7 +25,7 @@ ms.locfileid: "80710220"
 > [!NOTE]
 > 코드 세그먼트 바로 다음에 나오는 테이블에는 레지스트리 항목에 대 한 추가 정보가 포함 되어 있습니다.
 
- 이 섹션은 **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**아래에 있습니다.
+ 이 섹션은 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects** 아래에 있습니다.
 
  첫 번째 GUID는이 형식의 프로젝트에 대 한 CLSID입니다. 두 번째 GUID는 항목 추가 템플릿에 대해 등록 된 프로젝트 형식을 나타냅니다.
 
@@ -35,7 +37,7 @@ ms.locfileid: "80710220"
 
  **Sortpriority** = dword: 00000064
 
-| Name | 유형 | 데이터 ( *.rgs* 파일) | 설명 |
+| 이름 | 유형 | 데이터 ( *.rgs* 파일) | Description |
 |------------------|-----------| - | - |
 | @ (기본값) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | **항목 템플릿 추가** 의 리소스 ID입니다. |
 | Val 템플릿 디렉터리 | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **새 항목 추가** 마법사의 대화 상자에 표시 되는 프로젝트 항목의 경로입니다. |
@@ -46,7 +48,7 @@ ms.locfileid: "80710220"
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- [ **새 항목 추가** ] 대화 상자 트리의 왼쪽에 있는 노드는 " *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; (으*)로 설정 된 **템플릿**디렉터리에 대해 나열 된 디렉터리입니다. 트리의 추가 요소는 해당 루트 디렉터리 내의 하위 디렉터리를 기반으로 합니다. 프로젝트에 추가할 수 있는 파일은 **새 항목 추가** 대화 상자의 오른쪽 창에 있는 항목입니다.
+ [ **새 항목 추가** ] 대화 상자 트리의 왼쪽에 있는 노드는 " *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; (으*)로 설정 된 **템플릿** 디렉터리에 대해 나열 된 디렉터리입니다. 트리의 추가 요소는 해당 루트 디렉터리 내의 하위 디렉터리를 기반으로 합니다. 프로젝트에 추가할 수 있는 파일은 **새 항목 추가** 대화 상자의 오른쪽 창에 있는 항목입니다.
 
  일반적으로이 폴더에는 프로젝트에 대 한 템플릿 파일 (예: 템플릿 HTML 또는 *.cpp* 파일)과 마법사 시작을 위한 모든 *.vsz* 파일이 포함 됩니다. 항목을 표시 하는 방법을 제어 하기 위해 디렉터리 이름 및 아이콘 지역화를 위한 .vsdir 파일도 포함할 수 있습니다 *.* 지역화 된 문자열은 **새 항목 추가** 대화 상자 트리에서이 노드를 나타내는 대화 상자에 표시 되는 캡션입니다.
 
@@ -77,7 +79,7 @@ ms.locfileid: "80710220"
 
   이 필터 기능을 구현 하는 경우 숨겨야 하는 모든 항목의 테이블을 매핑할 필요가 없습니다. 항목을 형식으로 분류 하 고 해당 분류를 *.vsdir* 파일이 나 파일에 배치할 수 있습니다. 그런 다음 인터페이스를 구현 하 여 특정 분류가 포함 된 항목을 숨길 수 있습니다. 이러한 방식으로 프로젝트 내의 상태를 기준으로 **새 항목 추가** 대화 상자에서 항목을 동적으로 만들 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 - [일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

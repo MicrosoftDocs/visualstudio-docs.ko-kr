@@ -1,5 +1,7 @@
 ---
 title: Windows Installer 패키지 작성 | Microsoft Docs
+description: 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블로 구성 된 Visual Studio 용 Windows Installer 패키지를 작성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710034"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190124"
 ---
 # <a name="author-a-windows-installer-package"></a>Windows Installer 패키지 작성
 데이터는 Windows Installer 모델을 구동 합니다. 예를 들어 파일을 복사 하 고 레지스트리 항목을 작성 하는 프로시저 스크립트를 작성 하는 대신 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블에서 행과 열을 작성 합니다.
@@ -41,7 +43,7 @@ VSPackage를 설치 하려면 Windows Installer 패키지에 다음 태스크를
 
 - InstallShield 제한 된 버전
 
-   Visual Studio **새 프로젝트** 대화 상자를 통해 InstallShield의 제한 된 버전을 가져올 수 있습니다. **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포**를 선택 합니다. InstallShield 템플릿을 선택 합니다.
+   Visual Studio **새 프로젝트** 대화 상자를 통해 InstallShield의 제한 된 버전을 가져올 수 있습니다. **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포** 를 선택 합니다. InstallShield 템플릿을 선택 합니다.
 
 - Windows Installer XML 도구 집합
 
@@ -49,5 +51,5 @@ VSPackage를 설치 하려면 Windows Installer 패키지에 다음 태스크를
 
    을 사용 하 여에 통합 되는 상업용 제품의 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -1,5 +1,7 @@
 ---
 title: 자동화 모델 개요 | Microsoft Docs
+description: Visual Studio 추가 기능 또는 확장을 작성할 수 있는 개체 집합으로 구성 된 Visual Studio 자동화 모델에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa06b58ccd8d4cba8e16b17bc725798ae02d7e8f
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f88d064c551ccffe1c59e68c8472b519a58db436
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414440"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190098"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 자동화 모델은 Visual Studio 추가 기능 또는 확장을 작성할 수 있는 개체 집합으로 구성 됩니다. 추가 기능은 Visual Studio 환경을 조작 하 고 일반적인 작업을 자동화할 수 있는 응용 프로그램입니다. Visual Studio 확장은 사용자 지정 Visual Studio 구성 요소를 만들거나 텍스트 편집기와 같은 표준 구성 요소의 기능에 추가할 수 있습니다.
@@ -42,5 +44,5 @@ ms.locfileid: "93414440"
 
 자동화에 대 한 자세한 내용은 [Visual Studio의 자동화 및 확장성](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015)을 참조 하세요. 이 문서와이 문서에 링크를 제공 하는 문서는 VSPackage에 대 한 자동화를 제공 하는 방법에 대 한 의사 결정을 내리는 데 도움이 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 추가 기능 만들기](/previous-versions/80493a3w(v=vs.140))

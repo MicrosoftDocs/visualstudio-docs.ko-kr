@@ -1,5 +1,7 @@
 ---
 title: 새 항목 추가 대화 상자에 디렉터리 추가 | Microsoft Docs
+description: 레지스트리 스크립트를 사용 하 여 디렉터리를 등록 하는 방법으로 Visual Studio에서 새 항목 추가 대화 상자에 디렉터리를 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6a8090a47c275e66272ed3ee3e5d5a1eef1926d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710261"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189734"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 디렉터리 추가
-다음 코드 예제에서는 **새 항목 추가** 대화 상자에 대 한 새 디렉터리 집합을 등록 하는 방법을 보여 줍니다. **새 항목 추가** 대화 상자의 디렉터리는 각 프로젝트 마다 다릅니다. 따라서 디렉터리는 **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp\projects**에 있는 **Projects** 하위 키 아래에 등록 됩니다.
+다음 코드 예제에서는 **새 항목 추가** 대화 상자에 대 한 새 디렉터리 집합을 등록 하는 방법을 보여 줍니다. **새 항목 추가** 대화 상자의 디렉터리는 각 프로젝트 마다 다릅니다. 따라서 디렉터리는 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects** 에 있는 **Projects** 하위 키 아래에 등록 됩니다.
 
 ## <a name="registry-script"></a>레지스트리 스크립트
 
@@ -50,11 +52,11 @@ NoRemove Projects
  `SortPriority`값은 정렬 우선 순위를 지정 합니다.
 
 ## <a name="add-items-to-an-existing-project"></a>기존 프로젝트에 항목 추가
- 기존 프로젝트에 항목을 추가할 수도 있습니다. 예를 들어 프로젝트의 경우 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] * \<root> Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* 폴더에 항목을 추가할 수 있습니다. 이 경우 `%GUID_Project%` 는 c # 프로젝트 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC})에 대 한 GUID입니다.
+ 기존 프로젝트에 항목을 추가할 수도 있습니다. 예를 들어 프로젝트의 경우 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] *\<root> Files\Microsoft Visual Studio\VC # \CSharpProjectItems\LocalProjectItems* 폴더에 항목을 추가할 수 있습니다. 이 경우 `%GUID_Project%` 는 c # 프로젝트 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC})에 대 한 GUID입니다.
 
  프로젝트 하위 형식을 프로그래밍 하 여 기존 프로젝트를 확장할 수도 있습니다. 프로젝트 하위 유형을 사용 하면 새 프로젝트 유형을 작성 하지 않고 프로젝트를 확장할 수 있습니다. 프로젝트 하위 형식에 대 한 자세한 내용은 [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [새 프로젝트 대화 상자에 디렉터리 추가](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

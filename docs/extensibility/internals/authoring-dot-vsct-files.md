@@ -1,5 +1,7 @@
 ---
 title: 만들. Vsct 파일 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)에 메뉴 항목, 도구 모음 및 기타 UI 요소를 추가 하는 vsct 파일을 작성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413914"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190085"
 ---
 # <a name="author-vsct-files"></a>. Vsct 파일 작성
 이 문서에서는 Visual Studio IDE (통합 개발 환경)에 메뉴 항목, 도구 모음 및 기타 UI (사용자 인터페이스) 요소를 추가 하기 위해 *vsct* 파일을 작성 하는 방법을 보여 줍니다. VSPackage (Visual Studio 패키지)에 이미 *. vsct* 파일이 없는 UI 요소를 추가할 때 이러한 단계를 사용 합니다.
@@ -51,9 +53,9 @@ ms.locfileid: "93413914"
 
 1. 요소의 맨 위에서 `CommandTable` `Extern` 참조할 각 외부 파일에 대해 하나의 요소를 추가 하 고 `href` 특성을 파일 이름으로 설정 합니다. 다음 헤더 파일을 참조 하 여 Visual Studio 리소스에 액세스할 수 있습니다.
 
-   - *Stdidcmd* : Visual Studio에서 노출 하는 모든 명령의 id를 정의 합니다.
+   - *Stdidcmd*: Visual Studio에서 노출 하는 모든 명령의 id를 정의 합니다.
 
-   - *Vsshlids .h* : Visual Studio 메뉴에 대 한 명령 id를 포함 합니다.
+   - *Vsshlids .h*: Visual Studio 메뉴에 대 한 명령 id를 포함 합니다.
 
 2. 패키지에서 Visual Studio 또는 다른 패키지에 정의 된 명령을 호출 하는 경우 요소 뒤에 요소를 추가 `UsedCommands` `Commands` 합니다. 이 요소를 패키지의 일부가 아닌 호출 하는 각 명령에 대 한 [UsedCommand](../../extensibility/usedcommand-element.md) 요소로 채웁니다. `guid` `id` 요소의 및 특성을 `UsedCommand` 호출할 명령의 GUID 및 ID 값으로 설정 합니다.
 
@@ -233,7 +235,7 @@ ms.locfileid: "93413914"
 
    - 메뉴 컨트롤러: 메뉴 컨트롤러는 옆에 화살표를 포함 하는 단추입니다. 화살표를 클릭 하면 목록이 열립니다. 메뉴 컨트롤러를 UI에 추가 하려면 `Menu` `type` `MenuController` 원하는 동작에 따라 요소를 만들고 해당 특성을 or로 설정 `MenuControllerLatched` 합니다. 메뉴 컨트롤러를 채우려면 요소의 부모로 설정 `Group` 합니다. 메뉴 컨트롤러는 드롭다운 목록에서 해당 그룹의 모든 자식을 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

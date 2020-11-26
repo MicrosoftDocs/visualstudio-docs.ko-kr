@@ -1,5 +1,6 @@
 ---
 title: 프로젝트 및 편집기에 대 한 소스 제어 지침
+description: 소스 제어를 지원 하기 위해 프로젝트와 편집기가 준수 해야 하는 지침에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037636"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190137"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>프로젝트 및 편집기에 대 한 추가 소스 제어 지침
 소스 제어를 지원 하기 위해 프로젝트와 편집기에서 준수 해야 하는 여러 가지 지침이 있습니다.
@@ -34,5 +35,5 @@ ms.locfileid: "90037636"
 |개체 및 속성을 예측 가능한 순서로 유지|X|X|병합을 용이 하 게 하기 위해 파일을 알파벳 순서와 같은 예측 가능한 순서로 유지 합니다.|
 |다시 로드|X|X|디스크에서 파일을 변경 하면 편집기에서 파일을 다시 로드할 수 있어야 합니다. 소스 제어에 참여 하는 경우 환경에서 구현을 호출 하 여 데이터를 다시 로드 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> . 가장 어려운 다시 로드 사례는 IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 를 호출 하 고 정보를 처리 하는 경우 체크 아웃이 수행 되는 경우입니다. 그러나이 경우에는 다시 로드 코드를 실행할 수 있어야 합니다.<br /><br /> 환경에서 프로젝트 파일을 자동으로 다시 로드 합니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> 중첩 된 프로젝트 파일 다시 로드를 지원 하기 위해 프로젝트가 중첩 된 계층 구조를 포함 하는 경우에는 프로젝트를 구현 해야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 지원](../../extensibility/internals/supporting-source-control.md)

@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 및 프로젝트 항목 템플릿 추가 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)의 대화 상자에 프로젝트 및 프로젝트 항목 템플릿을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710202"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190176"
 ---
 # <a name="add-project-and-project-item-templates"></a>프로젝트 및 프로젝트 항목 템플릿 추가
 사용자 고유의 프로젝트 형식을 만들 때 표준 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경) 대화 상자를 사용 하 여 새 프로젝트 및 프로젝트 항목을 추가할 수 있도록 지원 해야 합니다. 다음 항목에서는 프로젝트 및 프로젝트 항목을 추가 하는 여러 가지 방법에 대해 설명 합니다.

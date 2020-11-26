@@ -1,5 +1,7 @@
 ---
 title: VSPackage 설치 디렉터리 선택 | Microsoft Docs
+description: 관리 되는지 또는 관리 되지 않는 요소 등의 요소를 사용 하 여 VSPackage 및 지원 파일의 설치 디렉터리를 선택 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011907"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189981"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage 설치 디렉터리 선택
 VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage 관리 되는지, 관리 되지 않는지, 병렬 버전 관리 체계 및 사용자 선택에 따라 달라 집니다.
 
 ## <a name="unmanaged-vspackages"></a>관리 되지 않는 Vspackage
- 관리 되지 않는 VSPackage는 모든 위치에 설치할 수 있는 COM 서버입니다. 해당 등록 정보는 해당 위치를 정확 하 게 반영 해야 합니다. 설치 관리자 UI (사용자 인터페이스)는 기본 위치를 Windows Installer 속성 값의 하위 디렉터리로 제공 해야 합니다 `ProgramFilesFolder` . 예를 들면 다음과 같습니다.
+ 관리 되지 않는 VSPackage는 모든 위치에 설치할 수 있는 COM 서버입니다. 해당 등록 정보는 해당 위치를 정확 하 게 반영 해야 합니다. 설치 관리자 UI (사용자 인터페이스)는 기본 위치를 Windows Installer 속성 값의 하위 디렉터리로 제공 해야 합니다 `ProgramFilesFolder` . 예를 들어:
 
 *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \v1.0\\*
 
  사용자는 작은 부팅 파티션을 유지 하 고 다른 볼륨에 응용 프로그램 및 도구를 설치 하는 것을 선호 하는 사용자에 맞게 기본 디렉터리를 변경할 수 있어야 합니다.
 
- Side-by-side 스키마를 사용 하 여 버전이 지정 된 VSPackage를 사용 하는 경우 하위 디렉터리를 사용 하 여 다른 버전을 저장할 수 있습니다. 예를 들면 다음과 같습니다.
+ Side-by-side 스키마를 사용 하 여 버전이 지정 된 VSPackage를 사용 하는 경우 하위 디렉터리를 사용 하 여 다른 버전을 저장할 수 있습니다. 예를 들어:
 
  *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2002\\*
 
@@ -59,7 +61,7 @@ VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 
 
 VSPackage DLL이 리소스를 포함 하 고 **SatelliteDll\DllName** 레지스트리 항목이이를 가리키는 경우는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 위의 순서로 로드 하려고 시도 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
 - [패키지 등록 관리](/previous-versions/bb166783(v=vs.100))
