@@ -1,5 +1,6 @@
 ---
 title: 중첩 프로젝트 언로드 및 다시 로드
+description: Visual Studio에서 중첩 된 프로젝트를 언로드하고 다시 로드할 때 수행 해야 하는 추가 단계에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154eb51014d9719b601cf87d53383f57941403a8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62cb611e927b878b82e1b5a1025331e1a443560e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036823"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304670"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>중첩 프로젝트 언로드 및 다시 로드에 대 한 고려 사항
 

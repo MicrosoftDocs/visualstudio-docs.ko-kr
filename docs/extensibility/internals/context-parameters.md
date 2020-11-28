@@ -1,5 +1,7 @@
 ---
 title: 컨텍스트 매개 변수 | Microsoft Docs
+description: 마법사를 추가 하거나 구현할 때 프로젝트의 상태를 정의 하는 Visual Studio IDE (통합 개발 환경)의 컨텍스트 매개 변수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012453"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304720"
 ---
 # <a name="context-parameters"></a>컨텍스트 매개 변수
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 마법사를 **새 프로젝트**, **새 항목 추가**또는 **하위 프로젝트 추가** 대화 상자에 추가할 수 있습니다. 추가 된 마법사는 **파일** 메뉴 또는 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 사용할 수 있습니다. IDE는 컨텍스트 매개 변수를 마법사의 구현에 전달 합니다. 컨텍스트 매개 변수는 IDE에서 마법사를 호출할 때 프로젝트의 상태를 정의 합니다.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 마법사를 **새 프로젝트**, **새 항목 추가** 또는 **하위 프로젝트 추가** 대화 상자에 추가할 수 있습니다. 추가 된 마법사는 **파일** 메뉴 또는 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 사용할 수 있습니다. IDE는 컨텍스트 매개 변수를 마법사의 구현에 전달 합니다. 컨텍스트 매개 변수는 IDE에서 마법사를 호출할 때 프로젝트의 상태를 정의 합니다.
 
  IDE는 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> ide의 호출에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> 프로젝트의 메서드에 대 한 플래그를 설정 하 여 마법사를 시작 합니다. 설정 되 면 프로젝트에서 `IVsExtensibility::RunWizardFile` 등록 된 마법사 이름 또는 GUID 및 IDE가 전달 하는 기타 컨텍스트 매개 변수를 사용 하 여 메서드를 실행 해야 합니다.
 
@@ -62,6 +64,6 @@ ms.locfileid: "90012453"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)
-- [마법사](../../extensibility/internals/wizards.md)
+- [마법사로](../../extensibility/internals/wizards.md)
 - [마법사 (.vsz) 파일](../../extensibility/internals/wizard-dot-vsz-file.md)
 - [마법사 시작에 대 한 컨텍스트 매개 변수](/previous-versions/tz690efs(v=vs.140))

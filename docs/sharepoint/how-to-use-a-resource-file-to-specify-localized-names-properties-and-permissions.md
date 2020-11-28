@@ -1,6 +1,8 @@
 ---
 title: SharePoint 프로젝트에서 리소스 파일을 사용 하는 방법 | Microsoft Docs
 titleSuffix: ''
+description: SharePoint 프로젝트의 리소스 파일을 사용 하 여 지역화 된 이름을 제공 하 고, 속성을 정의 하 고, BDC 모델에 정의 된 개체에 대 한 사용 권한을 적용할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585747"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304366"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>SharePoint 프로젝트에서 리소스 파일을 사용 하는 방법
 
@@ -33,13 +35,13 @@ ms.locfileid: "91585747"
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>SharePoint 프로젝트에 BDC 리소스 파일을 추가 하려면
 
-1. **솔루션 탐색기**에서 SharePoint 프로젝트에 대 한 폴더를 확장 하 고 BDC 모델이 포함 된 폴더를 선택 합니다.
+1. **솔루션 탐색기** 에서 SharePoint 프로젝트에 대 한 폴더를 확장 하 고 BDC 모델이 포함 된 폴더를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
 3. **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-4. **새 항목 추가** 대화 상자에서 **비즈니스 데이터 연결 리소스 항목**을 선택 합니다.
+4. **새 항목 추가** 대화 상자에서 **비즈니스 데이터 연결 리소스 항목** 을 선택 합니다.
 
 5. **이름** 상자에서 리소스 파일의 이름을 지정한 다음 **추가** 단추를 선택 합니다.
 

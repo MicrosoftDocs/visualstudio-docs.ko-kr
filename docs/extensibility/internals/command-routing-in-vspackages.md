@@ -1,5 +1,7 @@
 ---
 title: Vspackage에서 명령 라우팅 | Microsoft Docs
+description: Vspackage의 명령 라우팅과 Visual Studio에서 실행 되는 컨텍스트에 따라 명령이 라우팅되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709551"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305223"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage의 명령 라우팅
 명령은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행 되는 컨텍스트를 기반으로에서 라우팅됩니다. 초기 컨텍스트에서 전역 컨텍스트로 외부로 라우팅됩니다.

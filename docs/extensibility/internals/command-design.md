@@ -1,5 +1,7 @@
 ---
 title: 명령 디자인 | Microsoft Docs
+description: Visual Studio에서 VSPackage 명령을 디자인 하는 방법에 대해 알아봅니다. , 표시 되는 위치를 지정 하는 방법, 사용 가능한 경우 및 처리 방법 등을 포함 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709657"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304870"
 ---
 # <a name="command-design"></a>명령 디자인
 VSPackage에 명령을 추가 하는 경우 표시 되는 위치, 사용할 수 있는 시간 및 처리 방법을 지정 해야 합니다.
@@ -41,7 +43,7 @@ VSPackage에 명령을 추가 하는 경우 표시 되는 위치, 사용할 수 
 ### <a name="command-organization"></a>명령 구성
  환경에서는 그룹, 우선 순위 및 메뉴를 기준으로 명령을 배치 합니다.
 
-- 그룹은 **잘라내기**, **복사**및 **붙여넣기** 명령 그룹과 같은 관련 명령의 논리적 모음입니다. 그룹은 메뉴에 표시 되는 명령입니다.
+- 그룹은 **잘라내기**, **복사** 및 **붙여넣기** 명령 그룹과 같은 관련 명령의 논리적 모음입니다. 그룹은 메뉴에 표시 되는 명령입니다.
 
 - 우선 순위 그룹의 개별 명령이 메뉴에 표시 되는 순서를 결정 합니다.
 
@@ -60,7 +62,7 @@ VSPackage에 명령을 추가 하는 경우 표시 되는 위치, 사용할 수 
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[명령 구현](../../extensibility/internals/command-implementation.md)|VSPackage에서 명령을 구현 하는 방법을 설명 합니다.|
 |[명령 가용성](../../extensibility/internals/command-availability.md)|Visual Studio 컨텍스트에서 사용할 수 있는 명령을 결정 하는 방법에 대해 설명 합니다.|

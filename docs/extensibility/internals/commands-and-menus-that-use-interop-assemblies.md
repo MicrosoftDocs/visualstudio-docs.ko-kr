@@ -1,5 +1,7 @@
 ---
 title: Interop 어셈블리를 사용 하는 명령 및 메뉴 | Microsoft Docs
+description: Interop 어셈블리를 사용 하 여 VSPackage에서 메뉴 및 도구 모음 명령을 구현할 때 완료 해야 하는 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4bf3c1843db67fdadcf0fe177aa17e0f17a627e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709492"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304808"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Interop 어셈블리를 사용 하는 명령 및 메뉴
 Interop 어셈블리를 사용 하 여 메뉴 및 도구 모음 명령을 구현 하는 VSPackage는 다음을 수행 해야 합니다.

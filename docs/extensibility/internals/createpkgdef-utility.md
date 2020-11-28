@@ -1,5 +1,7 @@
 ---
 title: CreatePkgDef 유틸리티 | Microsoft Docs
+description: Visual Studio 확장의 .dll 파일을 매개 변수로 사용 하는 CreatePkgDef 유틸리티에 대해 알아보고 .dll 파일과 함께 사용 되는 .pkgdef 파일을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709162"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305549"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 Visual Studio 확장에 대 한 .dll 파일을 매개 변수로 사용 하 고 *.dll* 파일과 함께 사용 되는 *.pkgdef* 파일을 만듭니다. *.Pkgdef* 파일은 확장이 설치 될 때 시스템 레지스트리에 기록 될 모든 정보를 포함 합니다.
@@ -43,7 +45,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **어셈블리** 유틸리티를 사용 하 여 등록을 강제 합니다.
 
 **&lt;AssemblyPath&gt;**\
-*.Pkgdef*를 생성 하려는 *.dll* 파일의 경로입니다.
+*.Pkgdef* 를 생성 하려는 *.dll* 파일의 경로입니다.
 
 ## <a name="remarks"></a>설명
 *.Pkgdef* 파일을 사용 하 여 확장 배포는 이전 버전의 Visual Studio에 대 한 레지스트리 요구 사항을 대체 합니다.
@@ -56,9 +58,9 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-설치 폴더가 *%Localappdata%\Microsoft\Visual Studio\16.0\Extensions \\ *인 경우 Visual Studio에서 확장을 인식 하지만 기본적으로 사용 하지 않도록 설정 됩니다. 사용자는 확장 **관리**를 사용 하 여 확장을 사용 하도록 설정할 수 있습니다.
+설치 폴더가 *%Localappdata%\Microsoft\Visual Studio\16.0\Extensions \\* 인 경우 Visual Studio에서 확장을 인식 하지만 기본적으로 사용 하지 않도록 설정 됩니다. 사용자는 확장 **관리** 를 사용 하 여 확장을 사용 하도록 설정할 수 있습니다.
 
-설치 폴더가 *%vsinstalldir%\Common7\IDE\Extensions \\ *인 경우 확장은 기본적으로 사용 하도록 설정 됩니다.
+설치 폴더가 *%vsinstalldir%\Common7\IDE\Extensions \\* 인 경우 확장은 기본적으로 사용 하도록 설정 됩니다.
 
 > [!NOTE]
 > 확장 **관리** 도구는 VSIX 패키지의 일부로 설치 되지 않은 경우 확장에 액세스할 때 사용할 수 없습니다.
@@ -73,14 +75,14 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-설치 폴더가 *%Localappdata%\Microsoft\Visual Studio\15.0\Extensions \\ *인 경우 Visual Studio에서 확장을 인식 하지만 기본적으로 사용 하지 않도록 설정 됩니다. 사용자는 확장 **및 업데이트**를 사용 하 여 확장을 사용 하도록 설정할 수 있습니다.
+설치 폴더가 *%Localappdata%\Microsoft\Visual Studio\15.0\Extensions \\* 인 경우 Visual Studio에서 확장을 인식 하지만 기본적으로 사용 하지 않도록 설정 됩니다. 사용자는 확장 **및 업데이트** 를 사용 하 여 확장을 사용 하도록 설정할 수 있습니다.
 
-설치 폴더가 *%vsinstalldir%\Common7\IDE\Extensions \\ *인 경우 확장은 기본적으로 사용 하도록 설정 됩니다.
+설치 폴더가 *%vsinstalldir%\Common7\IDE\Extensions \\* 인 경우 확장은 기본적으로 사용 하도록 설정 됩니다.
 
 > [!NOTE]
 > 확장 **및 업데이트** 도구는 VSIX 패키지의 일부로 설치 되지 않은 경우 확장에 액세스 하는 데 사용할 수 없습니다.
 
 ::: moniker-end
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)

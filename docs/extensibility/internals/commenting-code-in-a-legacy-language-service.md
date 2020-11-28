@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 코드 주석 달기 | Microsoft Docs
+description: Visual Studio에서 레거시 언어 서비스의 코드 주석 달기 지원을 제공 하는 MPF (관리 패키지 프레임 워크) 클래스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709434"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304996"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 주석 코드
 프로그래밍 언어는 일반적으로 코드에 주석을 달고 주석을 추가할 수 있는 수단을 제공 합니다. 주석은 코드에 대 한 추가 정보를 제공 하는 텍스트 섹션 이지만 컴파일 또는 해석 중에는 무시 됩니다.
@@ -32,14 +34,14 @@ ms.locfileid: "80709434"
 
 일반적으로 줄 주석에는 시작 문자 (또는 문자)가 있으며, 블록 주석에는 시작과 끝 문자가 모두 있습니다. 예를 들어 c #에서 줄 주석은로 시작 하 `//` 고, 블록 주석은로 시작 `/*` 하 고로 끝납니다 `*/` .
 
-사용자가 고급 **편집**메뉴에서 명령 **주석 선택 항목** 을 선택 하면  >  **Advanced** 명령은 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 클래스의 메서드로 라우팅됩니다 <xref:Microsoft.VisualStudio.Package.Source> . 사용자가 명령 **주석 제거**를 선택 하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
+사용자가 고급 **편집** 메뉴에서 명령 **주석 선택 항목** 을 선택 하면  >  **Advanced** 명령은 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 클래스의 메서드로 라우팅됩니다 <xref:Microsoft.VisualStudio.Package.Source> . 사용자가 명령 **주석 제거** 를 선택 하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
 
 ## <a name="support-code-comments"></a>지원 코드 주석
  의 명명 된 매개 변수를 통해 언어 서비스에서 코드 주석을 지원할 수 있습니다 `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . 이 속성은 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 클래스의 속성을 설정 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . 언어 서비스 기능을 설정 하는 방법에 대 한 자세한 내용은 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)을 참조 하세요.
 
  또한 메서드를 재정의 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> 하 여 <xref:Microsoft.VisualStudio.Package.CommentInfo> 언어에 대 한 주석 문자를 포함 하는 구조체를 반환 해야 합니다. C # 스타일 줄 주석 문자는 기본값입니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음은 메서드의 구현 예제입니다 <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> .
 
 ```csharp
@@ -61,6 +63,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

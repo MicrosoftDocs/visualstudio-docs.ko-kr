@@ -1,5 +1,7 @@
 ---
 title: CreateExpInstance 유틸리티 | Microsoft Docs
+description: Visual Studio의 실험적 인스턴스를 만들거나, 다시 설정 하거나, 삭제할 수 있는 CreateExpInstance 유틸리티에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709235"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305359"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 **Createexpinstance** 유틸리티를 사용 하 여 Visual Studio의 실험적 인스턴스를 만들거나, 다시 설정 하거나, 삭제할 수 있습니다. 실험적 인스턴스를 사용 하 여 기본 제품을 변경 하지 않고 Visual Studio 확장을 디버그 하 고 테스트할 수 있습니다.
@@ -44,7 +46,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="remarks"></a>설명
  Visual Studio 확장에서 작업 하는 경우 F5 키를 눌러 기본 실험적 인스턴스를 열고 현재 확장을 설치할 수 있습니다. 실험적 인스턴스를 사용할 수 없는 경우 Visual Studio에서 기본 설정을 포함 하는 인스턴스를 만듭니다.
 
- 실험적 인스턴스의 기본 위치는 Visual Studio 버전 번호에 따라 다릅니다. 예를 들어 Visual Studio 2015의 경우 위치는 *%localappdata%\Microsoft\VisualStudio\14.0Exp \\ *입니다. 디렉터리 위치의 모든 파일은 해당 인스턴스의 일부로 간주 됩니다. 디렉터리 이름이 기본 위치로 변경 되지 않는 한 모든 추가 실험적 인스턴스는 Visual Studio에서 로드 되지 않습니다.
+ 실험적 인스턴스의 기본 위치는 Visual Studio 버전 번호에 따라 다릅니다. 예를 들어 Visual Studio 2015의 경우 위치는 *%localappdata%\Microsoft\VisualStudio\14.0Exp \\* 입니다. 디렉터리 위치의 모든 파일은 해당 인스턴스의 일부로 간주 됩니다. 디렉터리 이름이 기본 위치로 변경 되지 않는 한 모든 추가 실험적 인스턴스는 Visual Studio에서 로드 되지 않습니다.
 
  Visual Studio는 실험적 인스턴스를 열 때 시스템 레지스트리에 액세스 하지 않습니다. 이는 실험적 버전의 레지스트리 hive를 사용 하는 이전 버전의 Visual Studio와는 다릅니다.
 
@@ -54,5 +56,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **CreateExpInstance.exe/Reset/VSInstance = 14.0/Vsinstance = Exp**
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../../extensibility/internals/vspackages.md)

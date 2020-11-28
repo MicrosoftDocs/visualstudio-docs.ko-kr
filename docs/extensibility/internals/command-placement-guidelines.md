@@ -1,5 +1,7 @@
 ---
 title: 명령 배치 지침 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)에서 명령을 배치 하는 방법에 대 한 지침과 모범 사례를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709564"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305253"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
 Visual Studio IDE (통합 개발 환경)에서 명령의 위치를 지정 하는 모범 사례는 명령 집합의 크기에 따라 달라 집니다. 명령은 *vsct* 파일의 정보에 따라 정의 되 고 배치 됩니다.

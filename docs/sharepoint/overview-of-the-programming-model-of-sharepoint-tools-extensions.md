@@ -1,6 +1,8 @@
 ---
 title: SharePoint 도구 확장의 프로그래밍 모델 개요
 titleSuffix: ''
+description: SharePoint 도구 확장의 프로그래밍 모델 개요를 참조 하세요. 확장성 인터페이스를 구현 합니다. 개체 모델을 이해 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585734"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305136"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 도구 확장의 프로그래밍 모델 개요
   Visual Studio에서 SharePoint 도구의 확장을 만드는 경우 SharePoint 도구에서 노출하는 확장성 인터페이스를 하나 이상 구현하여 시작합니다. 대부분의 경우 SharePoint 도구에서 제공하는 다른 형식을 사용하여 확장에서 기능도 구현합니다. 일부 시나리오에서는 Visual Studio 및 SharePoint에서 제공하는 다른 개체 모델의 형식을 사용할 수도 있습니다. 이러한 각 개체 모델의 용도를 이해하고 이러한 개체 모델을 서로 사용하여 SharePoint 도구의 확장을 만드는 방법을 알아야 합니다.
@@ -46,7 +48,7 @@ ms.locfileid: "91585734"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>SharePoint 도구 확장에서 사용 하는 개체 모델 이해
  SharePoint 도구의 확장을 만들 때 사용할 수 있는 몇 가지 개체 모델은 다음과 같습니다.
 
-- *SharePoint 도구 개체 모델*입니다. 이 개체 모델에서는 SharePoint 도구 확장과 기타 관련 형식을 만들기 위해 구현하는 확장성 인터페이스를 제공합니다.
+- *SharePoint 도구 개체 모델* 입니다. 이 개체 모델에서는 SharePoint 도구 확장과 기타 관련 형식을 만들기 위해 구현하는 확장성 인터페이스를 제공합니다.
 
 - *Visual Studio 자동화 및 통합 개체 모델*. 이러한 개체 모델을 사용하여 SharePoint 도구 개체 모델의 범위를 벗어나는 Visual Studio 기능에 액세스할 수 있습니다.
 
@@ -73,7 +75,7 @@ ms.locfileid: "91585734"
 
 |네임스페이스|Description|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|사용자 지정 *SharePoint 명령을*만드는 데 사용할 수 있는 형식을 포함 합니다. SharePoint 명령은 SharePoint 도구 확장에서 SharePoint 서버 개체 모델을 호출하는 메서드입니다. 자세한 내용은 [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|사용자 지정 *SharePoint 명령을* 만드는 데 사용할 수 있는 형식을 포함 합니다. SharePoint 명령은 SharePoint 도구 확장에서 SharePoint 서버 개체 모델을 호출하는 메서드입니다. 자세한 내용은 [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
@@ -84,16 +86,16 @@ ms.locfileid: "91585734"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio 자동화 개체 모델
  Visual Studio 자동화 개체 모델은 Visual Studio 프로젝트와 IDE를 자동화하는 데 사용할 수 있는 API를 제공합니다. Visual Studio 개체 모델을 사용하면 SharePoint 프로젝트에 한정되지 않는 프로젝트 관련 작업을 수행하거나 Visual Studio에서 기타 일반적인 자동화 작업을 수행할 수 있습니다. 이 개체 모델은 일반적으로 Visual Studio 추가 기능 및 매크로에 많이 사용하지만 Sharepoint 도구 확장에 사용할 수도 있습니다.
 
- Visual Studio 자동화 개체 모델의 주요 부분은 *EnvDTE.dll* 어셈블리에 정의 되어 있습니다. *EnvDTE 어셈블리 \\ \<version> * 는 특정 버전의 Visual Studio에서 도입 된 추가 기능을 제공 합니다. Visual Studio에 포함되어 있습니다.
+ Visual Studio 자동화 개체 모델의 주요 부분은 *EnvDTE.dll* 어셈블리에 정의 되어 있습니다. *EnvDTE 어셈블리 \\ \<version>* 는 특정 버전의 Visual Studio에서 도입 된 추가 기능을 제공 합니다. Visual Studio에 포함되어 있습니다.
 
  자동화 개체 모델에 대 한 자세한 내용은 [Visual STUDIO SDK 참조](../extensibility/visual-studio-sdk-reference.md)를 참조 하세요.
 
 ### <a name="visual-studio-integration-object-model"></a>Visual Studio 통합 개체 모델
- 통합 개체 모델은 *VSPackage*를 만들어 Visual Studio에 기능을 추가 하는 데 사용할 수 있는 api를 제공 합니다. VSPackage는 도구 창, 편집기, 디자이너, 서비스, 프로젝트 등의 사용자 지정 기능을 제공하여 Visual Studio IDE를 확장하는 모듈입니다.
+ 통합 개체 모델은 *VSPackage* 를 만들어 Visual Studio에 기능을 추가 하는 데 사용할 수 있는 api를 제공 합니다. VSPackage는 도구 창, 편집기, 디자이너, 서비스, 프로젝트 등의 사용자 지정 기능을 제공하여 Visual Studio IDE를 확장하는 모듈입니다.
 
- 기본 제공 SharePoint 도구와 함께 사용할 새 Visual Studio 기능을 추가하려는 경우 통합 개체 모델을 사용할 수 있습니다. 예를 들어 SharePoint 사이트에 대한 사용자 지정 작업을 나타내는 사용자 지정 SharePoint 프로젝트 항목을 만드는 경우 사용자 지정 작업용 디자이너를 구현하는 VSPackage를 만들 수도 있습니다. **솔루션 탐색기**에서 사용자 지정 작업을 나타내는 바로 가기 메뉴 항목을 프로젝트 항목에 추가 하 여 디자이너를 사용자 지정 작업에 연결할 수 있습니다. 사용자 지정 작업 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음 **Shift** + **F10** 키를 선택 하 여 바로 가기 메뉴를 열고 **열기**를 선택 하 여 디자이너를 열 수 있습니다.
+ 기본 제공 SharePoint 도구와 함께 사용할 새 Visual Studio 기능을 추가하려는 경우 통합 개체 모델을 사용할 수 있습니다. 예를 들어 SharePoint 사이트에 대한 사용자 지정 작업을 나타내는 사용자 지정 SharePoint 프로젝트 항목을 만드는 경우 사용자 지정 작업용 디자이너를 구현하는 VSPackage를 만들 수도 있습니다. **솔루션 탐색기** 에서 사용자 지정 작업을 나타내는 바로 가기 메뉴 항목을 프로젝트 항목에 추가 하 여 디자이너를 사용자 지정 작업에 연결할 수 있습니다. 사용자 지정 작업 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음 **Shift** + **F10** 키를 선택 하 여 바로 가기 메뉴를 열고 **열기** 를 선택 하 여 디자이너를 열 수 있습니다.
 
- 이 개체 모델은 Visual Studio SDK에 포함된 어셈블리 집합에서 정의됩니다. 이 개체 모델의 일부 주 어셈블리는 *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*및 *Microsoft.VisualStudio.OLE.Interop.dll*를 포함 합니다.
+ 이 개체 모델은 Visual Studio SDK에 포함된 어셈블리 집합에서 정의됩니다. 이 개체 모델의 일부 주 어셈블리는 *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* 및 *Microsoft.VisualStudio.OLE.Interop.dll* 를 포함 합니다.
 
  통합 개체 모델에 대 한 자세한 내용은 [자동화 모델 개요](../extensibility/internals/automation-model-overview.md) 및 [Visual Studio SDK 참조](../extensibility/visual-studio-sdk-reference.md)를 참조 하세요.
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585734"
 
 |개체 모델|Description|
 |------------------|-----------------|
-|서버 개체 모델|서버 개체 모델을 사용하면 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에 표시되는 모든 기능을 프로그래밍 방식으로 액세스할 수 있습니다. 이 개체 모델은 SharePoint 서버에서 실행되는 SharePoint 솔루션에 사용됩니다. 이 개체 모델의 대부분은 *Microsoft.SharePoint.dll* 어셈블리에서 정의 됩니다. 서버 개체 모델에 대 한 자세한 내용은 [SharePoint Foundation Server 쪽 개체 모델 사용](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))을 참조 하세요.|
+|서버 개체 모델|서버 개체 모델을 사용하면 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]에 표시되는 모든 기능을 프로그래밍 방식으로 액세스할 수 있습니다. 이 개체 모델은 SharePoint 서버에서 실행되는 SharePoint 솔루션에 사용됩니다. 이 개체 모델의 대부분은 *Microsoft.SharePoint.dll* 어셈블리에서 정의 됩니다. 서버 개체 모델에 대 한 자세한 내용은 [SharePoint Foundation Server-Side 개체 모델 사용](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))을 참조 하세요.|
 |클라이언트 개체 모델|클라이언트 개체 모델은 원격 클라이언트나 서버의 SharePoint 데이터와 상호 작용하는 데 사용할 수 있는 서버 개체 모델의 하위 집합입니다. 이 모델은 일반적인 작업을 수행하기 위해 실행해야 하는 왕복 수를 최소화하도록 디자인되었습니다. 클라이언트 개체 모델의 대부분은 *Microsoft.SharePoint.Client.dll* 및 *Microsoft.SharePoint.Client.Runtime.dll* 어셈블리에서 정의 됩니다. 클라이언트 개체 모델에 대 한 자세한 내용은 [관리 되는 클라이언트 개체 모델](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))을 참조 하세요.|
 
 ## <a name="see-also"></a>참고 항목

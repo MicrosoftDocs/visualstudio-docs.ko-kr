@@ -1,5 +1,7 @@
 ---
 title: '방법: 컨트롤을 안전 컨트롤로 표시 | Microsoft Docs'
+description: 어셈블리를 추가할 때 SharePoint 프로젝트 항목 또는 패키지 디자이너의 안전 컨트롤 항목 속성에서 컨트롤을 안전한 컨트롤로 표시 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016261"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304504"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>방법: 컨트롤을 안전 컨트롤로 표시
-  보안을 위해 SharePoint는 스크립트 삽입에 대해 보호 되는 웹 컨트롤과 그렇지 않은 웹 컨트롤을 구별 합니다. 신뢰할 수 없는 사용자가 보호 된 컨트롤 또는 *안전 컨트롤*에 액세스할 수 있습니다. 패키지에 어셈블리를 추가할 때 SharePoint 프로젝트 항목 또는 **패키지 디자이너** 의 안전 컨트롤 항목 속성에서 컨트롤을 안전한 것으로 표시할 수 있습니다. 자세한 내용은 다음을 참조하세요.
+  보안을 위해 SharePoint는 스크립트 삽입에 대해 보호 되는 웹 컨트롤과 그렇지 않은 웹 컨트롤을 구별 합니다. 신뢰할 수 없는 사용자가 보호 된 컨트롤 또는 *안전 컨트롤* 에 액세스할 수 있습니다. 패키지에 어셈블리를 추가할 때 SharePoint 프로젝트 항목 또는 **패키지 디자이너** 의 안전 컨트롤 항목 속성에서 컨트롤을 안전한 것으로 표시할 수 있습니다. 자세한 내용은 다음을 참조하세요.
 
 - [web.config 파일 설정을 변경](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) 하 고 [웹 파트 어셈블리를 안전 컨트롤로 등록](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))합니다.
 
@@ -43,11 +45,11 @@ ms.locfileid: "86016261"
 
 4. **안전 컨트롤 항목** 대화 상자에서 **추가** 단추를 두 번 선택 하 여 두 개의 안전 컨트롤 항목을 **멤버** 창에 추가 합니다. 하나는 단추이 고 다른 하나는 텍스트 상자에 추가 합니다.
 
-5. 첫 번째 안전 컨트롤 항목을 선택 하 고 **safe** 속성의 값을 **false**로 변경 하 고, 해당 **형식 이름** 속성을 **Button1**로, **스크립트에 대해 safe** 속성을 **false**로 변경 합니다.
+5. 첫 번째 안전 컨트롤 항목을 선택 하 고 **safe** 속성의 값을 **false** 로 변경 하 고, 해당 **형식 이름** 속성을 **Button1** 로, **스크립트에 대해 safe** 속성을 **false** 로 변경 합니다.
 
      이 단계에서는 단추 컨트롤을 안전 하지 않은 컨트롤로 식별 합니다.
 
-6. 목록에서 두 번째 안전 컨트롤 항목을 선택합니다. **Safe** 속성의 값을 **true** 로 유지 하 고 해당 **형식 이름** 속성을 **TextBox1** 로 설정 하 고 스크립트 속성에 **대 한 보안** 을 **true**로 설정 합니다.
+6. 목록에서 두 번째 안전 컨트롤 항목을 선택합니다. **Safe** 속성의 값을 **true** 로 유지 하 고 해당 **형식 이름** 속성을 **TextBox1** 로 설정 하 고 스크립트 속성에 **대 한 보안** 을 **true** 로 설정 합니다.
 
      이제 텍스트 상자 컨트롤이 스크립트 삽입에 대 한 안전한 컨트롤로 표시 됩니다.
 
@@ -67,13 +69,13 @@ ms.locfileid: "86016261"
 
 4. 다른 SharePoint 솔루션을 만듭니다.
 
-5. **솔루션 탐색기**에서 *패키지 파일에* 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 하 여 **패키지 디자이너**를 엽니다.
+5. **솔루션 탐색기** 에서 *패키지 파일에* 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 하 여 **패키지 디자이너** 를 엽니다.
 
-6. **패키지 디자이너**에서 **고급** 탭을 선택 합니다.
+6. **패키지 디자이너** 에서 **고급** 탭을 선택 합니다.
 
-7. **추가 어셈블리**에서 **추가** 단추를 선택한 다음 목록에서 **기존 어셈블리 추가** 를 선택 합니다.
+7. **추가 어셈블리** 에서 **추가** 단추를 선택한 다음 목록에서 **기존 어셈블리 추가** 를 선택 합니다.
 
-8. **기존 어셈블리 추가** 대화 상자에서 **소스 경로**옆에 있는 줄임표 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표")) 단추를 선택 합니다.
+8. **기존 어셈블리 추가** 대화 상자에서 **소스 경로** 옆에 있는 줄임표 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표")) 단추를 선택 합니다.
 
 9. 1 단계에서 만든 SharePoint 솔루션에서 어셈블리를 선택한 다음 **열기** 단추를 선택 합니다.
 
@@ -90,7 +92,7 @@ ms.locfileid: "86016261"
     |네임스페이스|컨트롤의 정규화 된 네임 스페이스 (예: **BdcModelProject1. VisualWebPart1**)입니다.|
     |유형 이름|Button1|
     |어셈블리 이름|강력한 어셈블리 이름 (예: 14.0.0.0, Version =, Culture = 중립, PublicKeyToken = 71e9bce111e9429c).|
-    |안전|**안전** 확인란의 선택을 취소 합니다.|
+    |Safe|**안전** 확인란의 선택을 취소 합니다.|
     |스크립트에 대해 안전|스크립트를 **안전** 하 게 유지 확인란을 선택 취소 합니다.|
 
     > [!NOTE]
@@ -107,11 +109,11 @@ ms.locfileid: "86016261"
     |네임스페이스|컨트롤의 정규화 된 네임 스페이스 (예: **BdcModelProject1. VisualWebPart1**)입니다.|
     |유형 이름|TextBox1|
     |어셈블리 이름|강력한 어셈블리 이름 (예: 14.0.0.0, Version =, Culture = 중립, PublicKeyToken = 71e9bce111e9429c).|
-    |안전|**안전** 확인란을 선택 합니다.|
+    |Safe|**안전** 확인란을 선택 합니다.|
     |스크립트에 대해 안전|**스크립트에 대해 안전** 확인란을 선택 합니다.|
 
 16. **Tab** 키를 선택 하 고 **확인** 단추를 선택 하 여 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

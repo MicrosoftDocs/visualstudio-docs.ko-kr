@@ -1,5 +1,7 @@
 ---
 title: 구성 옵션 개요 | Microsoft Docs
+description: Visual Studio의 프로젝트 구성에 대 한 옵션에 대해 알아봅니다. 구성은 속성 및 파일 위치의 명명 된 집합으로 설명 되는 빌드 형식입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709405"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304744"
 ---
 # <a name="configuration-options-overview"></a>구성 옵션 개요
-의 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 빌드, 디버깅, 실행 및/또는 배포할 수 있는 여러 구성을 지원할 수 있습니다. 구성은 명명 된 속성 집합 (일반적으로 컴파일러 스위치 및 파일 위치)으로 설명 되는 빌드 형식입니다. 기본적으로 새 솔루션에는 *디버그* 및 *릴리스*의 두 가지 구성이 포함 됩니다. 이러한 구성은 기본 설정을 사용 하 여 적용 하거나 특정 솔루션 및/또는 프로젝트 요구 사항에 맞게 수정할 수 있습니다. 일부 패키지는 ActiveX 편집기 또는 내부 구성 요소와 같은 두 가지 방법으로 빌드할 수 있습니다. 그러나 프로젝트는 여러 구성을 지원할 필요가 없습니다. 하나의 구성만 사용할 수 있는 경우 해당 구성은 모든 솔루션 구성에 매핑됩니다.
+의 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 빌드, 디버깅, 실행 및/또는 배포할 수 있는 여러 구성을 지원할 수 있습니다. 구성은 명명 된 속성 집합 (일반적으로 컴파일러 스위치 및 파일 위치)으로 설명 되는 빌드 형식입니다. 기본적으로 새 솔루션에는 *디버그* 및 *릴리스* 의 두 가지 구성이 포함 됩니다. 이러한 구성은 기본 설정을 사용 하 여 적용 하거나 특정 솔루션 및/또는 프로젝트 요구 사항에 맞게 수정할 수 있습니다. 일부 패키지는 ActiveX 편집기 또는 내부 구성 요소와 같은 두 가지 방법으로 빌드할 수 있습니다. 그러나 프로젝트는 여러 구성을 지원할 필요가 없습니다. 하나의 구성만 사용할 수 있는 경우 해당 구성은 모든 솔루션 구성에 매핑됩니다.
 
  구성은 일반적으로 구성 이름 (예: *디버그* 또는 *릴리스*) 및 플랫폼 설정의 두 부분으로 구성 됩니다. 구성의 플랫폼 이름은 구성에서 대상으로 하는 환경 (예: API 집합 또는 운영 체제 플랫폼)을 식별 합니다. 사용자는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 플랫폼을 만들 수 없으며, 프로젝트 VSPackage 허용 하는 선택 항목 중에서 선택 해야 합니다. 사용자가 VSPackage를 설치 하면 패키지를 개발 하는 동안 생성 된 배달 플랫폼이 패키지 작성자가 설정한 조건에 따라 원하는 모든 플랫폼 이름을 표시할 수 있습니다. 그런 다음 사용자는 속성 페이지가 인스턴스화될 때 VSPackage를 통해 사용 가능한 플랫폼 목록에서 선택할 수 있습니다.
 
@@ -38,7 +40,7 @@ ms.locfileid: "80709405"
 > [!NOTE]
 > 대상으로 지정 하는 프로젝트에서 Win32를 지원 하지 않는 경우에는 Win32 플랫폼을 제외 하는 *Myconfig* 솔루션 구성을 만들 수 없습니다.
 
- 솔루션에 대 한 활성 구성을 변경 하면 해당 솔루션에 빌드, 실행, 디버깅 또는 배포 되는 프로젝트 구성 집합이 선택 됩니다. 예를 들어 활성 솔루션 구성을 *릴리스* 에서 *디버그*로 변경 하는 경우 솔루션의 모든 프로젝트는 솔루션의 디버그 구성에 표시 된 프로젝트의 구성을 사용 하 여 자동으로 빌드됩니다. 사용자가 환경의 Configuration Manager를 수동으로 변경 하지 않은 경우 프로젝트의 구성도 *Debug* 로 이름이 지정 됩니다.
+ 솔루션에 대 한 활성 구성을 변경 하면 해당 솔루션에 빌드, 실행, 디버깅 또는 배포 되는 프로젝트 구성 집합이 선택 됩니다. 예를 들어 활성 솔루션 구성을 *릴리스* 에서 *디버그* 로 변경 하는 경우 솔루션의 모든 프로젝트는 솔루션의 디버그 구성에 표시 된 프로젝트의 구성을 사용 하 여 자동으로 빌드됩니다. 사용자가 환경의 Configuration Manager를 수동으로 변경 하지 않은 경우 프로젝트의 구성도 *Debug* 로 이름이 지정 됩니다.
 
  각 프로젝트에 대해 저장 된 솔루션 구성 속성에는 프로젝트 이름, 프로젝트 구성 이름, 빌드 여부 및 배포 여부를 나타내는 플래그 및 플랫폼 이름이 포함 됩니다. 자세한 내용은 [솔루션 구성](../../extensibility/internals/solution-configuration.md)을 참조 하세요.
 
@@ -68,7 +70,7 @@ ms.locfileid: "80709405"
 
   이전 다이어그램의 구성 개체 인터페이스 및 구성 공급자 개체 인터페이스에 대 한 자세한 내용은 [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)를 참조 하세요. 또한 빌드를 [위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md) 에서는 구성 작성기 및 빌드 종속성 개체 인터페이스에 대 한 자세한 정보를 제공 하 고, [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md) 에서는 구성 배포자 및 배포 종속성 개체에 연결 된 인터페이스에 대해 자세히 설명 합니다. 마지막으로 [출력에 대 한 프로젝트 구성은](../../extensibility/internals/project-configuration-for-output.md) 출력 그룹 및 출력 개체 인터페이스를 설명 하 고 속성 페이지를 사용 하 여 구성 종속 속성을 보고 설정 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [솔루션 구성](../../extensibility/internals/solution-configuration.md)

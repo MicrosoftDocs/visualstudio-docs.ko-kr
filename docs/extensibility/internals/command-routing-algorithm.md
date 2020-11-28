@@ -1,5 +1,7 @@
 ---
 title: 명령 라우팅 알고리즘 | Microsoft Docs
+description: 명령이 다른 구성 요소에 의해 처리 되 고 가장 안쪽에서 가장 바깥쪽 컨텍스트로 라우팅되는 경우 Visual Studio의 명령 확인 순서에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709546"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305229"
 ---
 # <a name="command-routing-algorithm"></a>명령 라우팅 알고리즘
 Visual Studio의 명령은 다양 한 구성 요소에 의해 처리 됩니다. 명령은 현재 선택 항목을 기반으로 하는 가장 안쪽 컨텍스트부터 가장 바깥쪽 (전역) 컨텍스트로 라우팅됩니다. 자세한 내용은 [명령 가용성](../../extensibility/internals/command-availability.md)을 참조 하세요.
@@ -36,11 +38,11 @@ Visual Studio의 명령은 다양 한 구성 요소에 의해 처리 됩니다. 
 
 6. 문서 창: 명령의 `RouteToDocs` *vsct* 파일에 설정 된 플래그가 있는 경우 Visual Studio는 인터페이스의 인스턴스이거나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 문서 개체의 인스턴스 (일반적으로 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> 인터페이스 또는 인터페이스) 인 문서 뷰 개체에서 명령 대상을 찾습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> . 문서 보기 개체가 명령을 지원 하지 않는 경우 Visual Studio는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 반환 되는 인터페이스로 명령을 라우팅합니다. 이는 문서 데이터 개체에 대 한 선택적 인터페이스입니다.
 
-7. 현재 계층: 현재 계층은 활성 문서 창이 나 **솔루션 탐색기**에서 선택 된 계층을 소유 하는 프로젝트 일 수 있습니다. Visual Studio는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 현재 또는 활성 계층에 구현 된 인터페이스를 찾습니다. 계층은 프로젝트 항목의 문서 창에 포커스가 있더라도 계층이 활성화 될 때마다 유효한 명령을 지원 해야 합니다. 그러나 **Solution Explorer** <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스와 해당 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 및 메서드를 사용 하 여 솔루션 탐색기에 포커스가 있는 경우에만 적용 되는 명령을 지원 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
+7. 현재 계층: 현재 계층은 활성 문서 창이 나 **솔루션 탐색기** 에서 선택 된 계층을 소유 하는 프로젝트 일 수 있습니다. Visual Studio는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 현재 또는 활성 계층에 구현 된 인터페이스를 찾습니다. 계층은 프로젝트 항목의 문서 창에 포커스가 있더라도 계층이 활성화 될 때마다 유효한 명령을 지원 해야 합니다. 그러나 **Solution Explorer** <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스와 해당 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 및 메서드를 사용 하 여 솔루션 탐색기에 포커스가 있는 경우에만 적용 되는 명령을 지원 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
-     **잘라내기**, **복사**, **붙여넣기**, **삭제**, **이름 바꾸기**, **입력**및 **DoubleClick** 명령에는 특별 한 처리가 필요 합니다. 계층에서 **Delete** 및 **Remove** 명령을 처리 하는 방법에 대 한 자세한 내용은 인터페이스를 참조 하세요 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> .
+     **잘라내기**, **복사**, **붙여넣기**, **삭제**, **이름 바꾸기**, **입력** 및 **DoubleClick** 명령에는 특별 한 처리가 필요 합니다. 계층에서 **Delete** 및 **Remove** 명령을 처리 하는 방법에 대 한 자세한 내용은 인터페이스를 참조 하세요 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> .
 
 8. 전역: 이전에 언급 한 컨텍스트에서 명령이 처리 되지 않은 경우 Visual Studio는 인터페이스를 구현 하는 명령을 소유 하는 VSPackage로 라우트 하려고 시도 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . VSPackage가 아직 로드 되지 않은 경우 Visual Studio에서 메서드를 호출할 때 로드 되지 않습니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> . VSPackage는 메서드가 호출 될 때만 로드 됩니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [명령 디자인](../../extensibility/internals/command-design.md)

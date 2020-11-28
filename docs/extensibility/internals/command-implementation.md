@@ -1,5 +1,7 @@
 ---
 title: 명령 구현 | Microsoft Docs
+description: Visual Studio의 명령 구현, VSPackage에서 명령 그룹을 설정 하 고, 명령을 추가 하 고, 명령을 등록 하 고, 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709574"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304816"
 ---
 # <a name="command-implementation"></a>명령 구현
 VSPackage에서 명령을 구현 하려면 다음 작업을 수행 해야 합니다.

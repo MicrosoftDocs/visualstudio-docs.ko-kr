@@ -1,5 +1,7 @@
 ---
 title: SharePoint 응용 프로그램의 성능 프로 파일링 | Microsoft Docs
+description: 응용 프로그램이 느리거나 비효율적으로 실행 되는 경우 SharePoint 응용 프로그램의 성능을 프로 파일링 합니다. Visual Studio 프로 파일링 기능을 사용 하 여 문제 코드를 찾을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414414"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305105"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint 응용 프로그램의 성능 프로 파일링
 
@@ -39,7 +41,7 @@ IDE (통합 개발 환경)에서 여러 프로 파일링 도구를 사용 하 �
 
 ## <a name="performance-session-process"></a>성능 세션 프로세스
 
-응용 프로그램을 프로 파일링 하려면 프로파일링 도구 성능 마법사를 사용 하 여 성능 세션을 만드는 것으로 시작 합니다. 메뉴 모음에서 **분석** , **성능 마법사 시작** 을 선택 합니다. 마법사를 완료 하면 원하는 프로필 방법과 프로 파일링 하려는 응용 프로그램 등의 성능 세션에 필요한 정보를 입력 합니다. 자세한 내용은 [방법: 성능 마법사를 사용 하 여 웹 사이트 또는 웹 응용 프로그램 프로 파일링](../profiling/how-to-collect-performance-data-for-a-web-site.md)을 참조 하세요. 대신 명령줄 옵션을 사용 하 여 성능 세션을 설정 하 고 실행할 수 있습니다. 자세한 내용은 [명령줄에서 프로파일링 도구 사용](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조 하세요. 성능 세션의 모든 측면을 수동으로 구성 하려는 경우 [방법: 프로파일링 도구 사용 하 여 수동으로 성능 세션 만들기](../profiling/how-to-manually-create-performance-sessions.md)를 참조 하세요. 또한 **테스트 결과** 창에서 단위 테스트에 대 한 바로 가기 메뉴를 열고 **성능 세션 만들기** 를 선택 하 여 단위 테스트에서 성능 세션을 만들 수 있습니다.
+응용 프로그램을 프로 파일링 하려면 프로파일링 도구 성능 마법사를 사용 하 여 성능 세션을 만드는 것으로 시작 합니다. 메뉴 모음에서 **분석**, **성능 마법사 시작** 을 선택 합니다. 마법사를 완료 하면 원하는 프로필 방법과 프로 파일링 하려는 응용 프로그램 등의 성능 세션에 필요한 정보를 입력 합니다. 자세한 내용은 [방법: 성능 마법사를 사용 하 여 웹 사이트 또는 웹 응용 프로그램 프로 파일링](../profiling/how-to-collect-performance-data-for-a-web-site.md)을 참조 하세요. 대신 명령줄 옵션을 사용 하 여 성능 세션을 설정 하 고 실행할 수 있습니다. 자세한 내용은 [명령줄에서 프로파일링 도구 사용](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조 하세요. 성능 세션의 모든 측면을 수동으로 구성 하려는 경우 [방법: 프로파일링 도구 사용 하 여 수동으로 성능 세션 만들기](../profiling/how-to-manually-create-performance-sessions.md)를 참조 하세요. 또한 **테스트 결과** 창에서 단위 테스트에 대 한 바로 가기 메뉴를 열고 **성능 세션 만들기** 를 선택 하 여 단위 테스트에서 성능 세션을 만들 수 있습니다.
 
 성능 세션을 설정 하면 세션 구성이 저장 되 고 서버가 프로 파일링 데이터를 제공 하도록 구성 되며 응용 프로그램이 실행 됩니다. 응용 프로그램을 사용할 때 성능 데이터는 로그 파일에 기록 됩니다. 성능 세션은 **대상** 폴더 아래 **성능 탐색기** 에 나열 됩니다. 성능 세션이 완료 된 후 해당 보고서는 **성능 탐색기** 의 **Reports** 폴더에 표시 됩니다. 보고서를 표시 하려면 **성능 탐색기** 에서 엽니다. 성능 세션의 속성을 보거나 구성 하려면 **성능 탐색기** 에서 바로 가기 메뉴를 열고 **속성** 을 선택 합니다. 성능 세션의 특정 속성에 대 한 자세한 내용은 [프로파일링 도구에 대 한 성능 세션 구성](../profiling/configuring-performance-sessions.md)을 참조 하세요. 성능 세션의 결과를 해석 하는 방법에 대 한 자세한 내용은 [프로파일링 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)을 참조 하세요.
 

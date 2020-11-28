@@ -1,5 +1,7 @@
 ---
 title: 구성 요소 관리 | Microsoft Docs
+description: Visual Studio에서 VSPackage 설치 관리자를 만들 때 Windows Installer 구성 요소를 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709332"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304925"
 ---
 # <a name="component-management"></a>구성 요소 관리
 Windows Installer의 작업 단위를 Windows Installer 구성 요소 (WICs 또는 구성 요소 라고도 함) 라고 합니다. GUID는 Windows Installer를 사용 하는 설치에 대 한 기본 설치 단위 및 참조 계산 인 각 WIC를 식별 합니다.
@@ -29,7 +31,7 @@ Windows Installer의 작업 단위를 Windows Installer 구성 요소 (WICs 또�
 
 - 버전 간에 공유 되는 파일 및 레지스트리 키를 자체 구성 요소로 작성 합니다.
 
-     이렇게 하면 다음 버전에서 쉽게 사용할 수 있습니다. 예를 들어 전역으로 등록 된 라이브러리, 파일 확장명, **HKEY_CLASSES_ROOT**에 등록 된 기타 항목 등을 입력 합니다.
+     이렇게 하면 다음 버전에서 쉽게 사용할 수 있습니다. 예를 들어 전역으로 등록 된 라이브러리, 파일 확장명, **HKEY_CLASSES_ROOT** 에 등록 된 기타 항목 등을 입력 합니다.
 
 - 공유 구성 요소를 별도의 병합 모듈로 그룹화 합니다.
 
@@ -47,6 +49,6 @@ Windows Installer의 작업 단위를 Windows Installer 구성 요소 (WICs 또�
 
      이렇게 하면 다른 버전의 VSPackage가 설치 된 경우 공유 키가 덮어쓰여집니다. 두 번째 버전을 제거한 후에는 해당 키가 가리키는 파일이 사라집니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage 설치 시나리오](../../extensibility/internals/vspackage-setup-scenarios.md)

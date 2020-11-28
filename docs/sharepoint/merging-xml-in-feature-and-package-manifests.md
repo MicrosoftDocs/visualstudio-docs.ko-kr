@@ -1,5 +1,7 @@
 ---
 title: 기능 및 패키지 매니페스트에서 XML 병합 | Microsoft Docs
+description: SharePoint 기능 및 패키지 매니페스트에서 디자이너에서 생성 하 고 사용자가 추가한 XML 코드를 병합 합니다. 기능 및 패키지 매니페스트 요소와 병합 예외에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841791"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304237"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>기능 및 패키지 매니페스트에서 XML 병합
   기능 및 패키지는 매니페스트 파일에 의해 정의 됩니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . 이러한 패키지 된 매니페스트는 디자이너에서 생성 된 데이터와 사용자가 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 템플릿에 입력 한 사용자 지정의 조합입니다. 패키징 시는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 패키지 된 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 파일을 구성 하기 위해 제공 된 디자이너와 사용자 지정 문을 병합 합니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . 병합 예외에서 나중에 설명 된 예외를 포함 하는 비슷한 요소는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] SharePoint에 파일을 배포한 후에 유효성 검사 오류를 방지 하 고 매니페스트 파일을 더 작고 효율적으로 만드는 데 병합 됩니다.
@@ -31,11 +33,11 @@ ms.locfileid: "90841791"
  요소에 고유 키가 있는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너와 사용자 지정 키의 값을 비교 합니다. 값이 일치 하면 단일 값으로 병합 됩니다. 값이 다르면 디자이너 키 값이 삭제 되 고 사용자 지정 키 값이 사용 됩니다. 컬렉션도 병합 됩니다. 예를 들어 디자이너에서 생성 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 하 고 사용자 지정에 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 모두 어셈블리 컬렉션이 포함 된 경우 패키지 매니페스트는 하나의 어셈블리 컬렉션만 포함 합니다.
 
 ## <a name="merge-exceptions"></a>병합 예외
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 고유한 단일 식별 특성이 있는 한 대부분의 디자이너 요소를 유사한 사용자 지정 요소와 병합 합니다. 그러나 일부 요소에는 병합에 필요한 고유 식별자가 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 없습니다. 이러한 요소를 *병합 예외*라고 합니다. 이러한 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용자 지정 요소를 디자이너에서 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 제공 하는 요소와 함께 병합 하지 않고 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 대신 패키지 된 매니페스트 파일에 추가 합니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 고유한 단일 식별 특성이 있는 한 대부분의 디자이너 요소를 유사한 사용자 지정 요소와 병합 합니다. 그러나 일부 요소에는 병합에 필요한 고유 식별자가 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 없습니다. 이러한 요소를 *병합 예외* 라고 합니다. 이러한 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 사용자 지정 요소를 디자이너에서 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 제공 하는 요소와 함께 병합 하지 않고 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 대신 패키지 된 매니페스트 파일에 추가 합니다.
 
  다음은 기능 및 패키지 매니페스트 파일에 대 한 병합 예외 목록입니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] .
 
-|Designer|XML 요소|
+|디자이너|XML 요소|
 |--------------|-----------------|
 |기능 디자이너|ActivationDependency|
 |기능 디자이너|UpgradeAction|

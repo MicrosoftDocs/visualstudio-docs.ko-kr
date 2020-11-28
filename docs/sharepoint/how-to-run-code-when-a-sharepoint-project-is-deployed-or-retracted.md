@@ -1,6 +1,8 @@
 ---
 title: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드 실행
 titleSuffix: ''
+description: Visual Studio에서 발생 하는 이벤트를 처리할 수 있도록 SharePoint 프로젝트가 배포 되거나 취소 될 때 코드를 실행 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24e6536dc5fdc62bb3b1c32bbd7c379fcef1f8cd
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585760"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304485"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>방법: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드 실행
   SharePoint 프로젝트가 배포 되거나 취소 될 때 추가 작업을 수행 하려는 경우에는 Visual Studio에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.

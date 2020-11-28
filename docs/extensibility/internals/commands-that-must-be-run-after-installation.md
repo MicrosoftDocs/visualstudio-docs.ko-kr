@@ -1,5 +1,7 @@
 ---
 title: 설치 후 실행 해야 하는 명령 | Microsoft Docs
+description: Visual Studio에서 .msi 파일을 통해 배포 된 확장 설치의 일부로 실행 해야 하는 명령에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709479"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305039"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>설치 후 실행 해야 하는 명령
 *.Msi* 파일을 통해 확장을 배포 하는 경우 Visual Studio에서 확장을 검색 하기 위해 설치의 일부로 **devenv/설치 프로그램** 을 실행 해야 합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "80709479"
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- 예를 들어, Visual Studio 설치 관리자는 설치 관리자가 실행 해야 하는 실행 파일의 전체 경로를 *C:\VS2008\Common7\IDE\devenv.exe* **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** 의 레지스트리 값을 기록 합니다.
+ 예를 들어, Visual Studio 설치 관리자는 설치 관리자가 실행 해야 하는 실행 파일의 전체 경로를 *C:\VS2008\Common7\IDE\devenv.exe* **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** 레지스트리 값을 기록 합니다.
 
 > [!NOTE]
 > RegLocator 테이블의 유형 열이 2 이기 때문에 서명 테이블에서 추가 버전 정보를 지정할 필요가 없습니다.
@@ -58,7 +60,7 @@ ms.locfileid: "80709479"
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>devenv.exe 실행할 테이블 행 CustomAction
 
-|작업|형식|원본|대상|
+|작업|유형|원본|대상|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -74,12 +76,12 @@ ms.locfileid: "80709479"
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>devenv.exe 사용자 지정 작업을 예약 하는 InstallExecuteSequence 테이블
 
-|작업|조건|순서|
+|작업|조건|시퀀스|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

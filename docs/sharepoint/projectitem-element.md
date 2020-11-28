@@ -1,5 +1,7 @@
 ---
 title: ProjectItem 요소 | Microsoft Docs
+description: SharePoint 프로젝트 항목 XML 스키마 참조의 SharePoint 프로젝트 항목을 나타내는 ProjectItem 요소에 대 한 참조 정보를 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536879"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305046"
 ---
 # <a name="projectitem-element"></a>ProjectItem 요소
   SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 *.spdata* 파일의 필수 루트 요소입니다.
@@ -44,18 +46,18 @@ ms.locfileid: "85536879"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
-|**DefaultFile**|선택적 **xs: string** 특성입니다.<br /><br /> **솔루션 탐색기**에서 SharePoint 프로젝트 항목을 열 때 Visual Studio 편집기에서 열리는 파일의 상대 경로 (파일 이름 포함)입니다. 경로는 *.spdata* 파일이 들어 있는 폴더의 상대 경로입니다.|
+|**DefaultFile**|선택적 **xs: string** 특성입니다.<br /><br /> **솔루션 탐색기** 에서 SharePoint 프로젝트 항목을 열 때 Visual Studio 편집기에서 열리는 파일의 상대 경로 (파일 이름 포함)입니다. 경로는 *.spdata* 파일이 들어 있는 폴더의 상대 경로입니다.|
 |**FeatureReceiverClass**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목에 대 한 기능 수신기 클래스의 정규화 된 이름입니다. 기능 수신기에 대 한 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조 하세요.|
 |**FeatureReceiverAssembly**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목의 기능 수신기를 정의 하는 어셈블리의 정규화 된 이름을 지정 합니다. 기능 수신기에 대 한 자세한 내용은 [프로젝트 항목에 패키징 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)을 참조 하세요. 정규화 된 어셈블리 이름에 대 한 자세한 내용은 [어셈블리 이름](/dotnet/framework/app-domains/assembly-names)을 참조 하세요.|
 |**SupportedTrustLevels**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목에서 지 원하는 신뢰 수준을 지정 합니다. 이 값은 다음 문자열 중 하나일 수 있습니다. Sandbox, FullTrust 또는 모두. 모두 값은 샌드박스가 적용 되 고 FullTrust를 모두 지정 합니다.<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값은 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> 메서드 구현에서 속성에 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> . 이 특성에 대해 다른 값을 지정 하는 경우 Visual Studio는 속성에서 지정 하는 것과 동일한 신뢰 수준을 지정 하도록 값을 덮어씁니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> .|
 |**SupportedDeploymentScopes**|선택적 **xs: string** 특성입니다.<br /><br /> 이 SharePoint 프로젝트 항목에서 지 원하는 배포 범위를 지정 합니다. 이 값은 다음 문자열 중 하나 이상으로 구성 된 쉼표로 구분 된 문자열입니다. 팜, 사이트, 웹, WebApplication 또는 패키지 예: `Web, Site`<br /><br /> 사용자 지정 SharePoint 프로젝트 항목 형식에서이 특성의 값은 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> 메서드 구현에서 속성에 할당 하는 값에 해당 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> . 이 특성에 대해 다른 값을 지정 하는 경우 Visual Studio는 속성에서 지정 하는 것과 동일한 신뢰 수준을 지정 하도록 값을 덮어씁니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> .|
-|**유형**|필수 **xs: string** 특성입니다.<br /><br /> SharePoint 프로젝트 항목의 식별자입니다. 사용자 지정 SharePoint 프로젝트 항목 형식에서 식별자는에 전달 하는 문자열입니다 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . 자세한 내용은 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)를 참조 하세요.<br /><br /> Visual Studio에 포함 된 기본 제공 SharePoint 프로젝트 항목의 식별자 목록은 [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)을 참조 하세요.|
+|**형식**|필수 **xs: string** 특성입니다.<br /><br /> SharePoint 프로젝트 항목의 식별자입니다. 사용자 지정 SharePoint 프로젝트 항목 형식에서 식별자는에 전달 하는 문자열입니다 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> . 자세한 내용은 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)를 참조 하세요.<br /><br /> Visual Studio에 포함 된 기본 제공 SharePoint 프로젝트 항목의 식별자 목록은 [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|선택적 요소입니다.<br /><br /> SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.<br /><br /> **Extensiondata** 요소를 하나만 포함할 수 있습니다.|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|선택적 요소입니다.<br /><br /> SharePoint에 배포 될 때 기능에 포함 된 속성 값의 컬렉션을 나타냅니다.<br /><br /> **Featureproperties** 요소는 하나만 포함할 수 있습니다.|

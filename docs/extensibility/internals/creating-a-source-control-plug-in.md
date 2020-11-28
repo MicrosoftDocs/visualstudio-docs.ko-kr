@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 플러그 인 만들기 | Microsoft Docs
+description: 소스 제어 기능을 Visual Studio IDE (통합 개발 환경)에 추가 하는 소스 제어 플러그 인을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709177"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305367"
 ---
 # <a name="create-a-source-control-plug-in"></a>소스 제어 플러그 인 만들기
 Visual Studio SDK는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에 소스 제어 기능을 추가할 수 있는 리소스를 제공 합니다. 이 설명서에 설명 된 소스 제어 플러그 인 API를 준수 하는 모든 플러그 인 DLL을 사용할 수 있습니다.
