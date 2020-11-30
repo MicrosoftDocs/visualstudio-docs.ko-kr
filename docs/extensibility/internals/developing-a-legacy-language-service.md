@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 개발 | Microsoft Docs
+description: VSPackage의 일부로 또는 MEF (Managed Extensibility Framework) 확장을 사용 하 여 레거시 언어 서비스를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708666"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329746"
 ---
 # <a name="develop-a-legacy-language-service"></a>레거시 언어 서비스 개발
 이 섹션에서는 레거시 언어 서비스를 만드는 데 도움이 되는 항목에 대 한 링크를 제공 합니다.

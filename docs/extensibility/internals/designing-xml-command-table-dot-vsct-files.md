@@ -1,5 +1,7 @@
 ---
 title: XML 명령 테이블을 디자인 합니다. Vsct) 파일 | Microsoft Docs
+description: 단추, 콤보 상자, 메뉴 및 도구 모음을 포함 하 여 명령 항목의 레이아웃과 모양을 설명 하는 XML 명령 테이블 (.vvsct) 파일을 디자인 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708747"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328433"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML 명령 테이블 (.vvsct) 파일 디자인
 XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 레이아웃과 모양을 설명 합니다. 명령 항목에는 단추, 콤보 상자, 메뉴, 도구 모음 및 명령 항목 그룹이 있습니다. 이 문서에서는 XML 명령 테이블 파일, 명령 항목 및 메뉴에 영향을 주는 방법 및 해당 파일을 만드는 방법을 설명 합니다.
@@ -60,9 +62,9 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 
 - Keybinding: 더 이상 에뮬레이터를 지정할 필요가 없습니다. 이를 지정 하는 경우 컴파일러는 편집기와 에뮬레이터가 동일한 것으로 가정 합니다.
 
-- Keychord: Keychord가 삭제 되었습니다. 새 형식은 *Key1, Mod1, Key2, Mod2*입니다.  문자, 16 진수 또는 VK 상수를 지정할 수 있습니다.
+- Keychord: Keychord가 삭제 되었습니다. 새 형식은 *Key1, Mod1, Key2, Mod2* 입니다.  문자, 16 진수 또는 VK 상수를 지정할 수 있습니다.
 
-새 컴파일러 *vsct.exe*는 *ctc* 및 *.cvsct* 파일을 모두 컴파일합니다. 그러나 이전 *ctc.exe* 컴파일러는 *vsct* 파일을 인식 하거나 컴파일하지 않습니다.
+새 컴파일러 *vsct.exe* 는 *ctc* 및 *.cvsct* 파일을 모두 컴파일합니다. 그러나 이전 *ctc.exe* 컴파일러는 *vsct* 파일을 인식 하거나 컴파일하지 않습니다.
 
 *vsct.exe* 컴파일러를 사용 하 여 기존 *.cto* 파일을 *.vsct* 파일로 변환할 수 있습니다. 자세한 내용은 [방법: 기존. cto 파일에서 .vsct 파일 만들기](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)를 참조 하세요.
 
@@ -89,7 +91,7 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 
 - [VisibilityConstraints 요소](../../extensibility/visibilityconstraints-element.md): 명령이 항상 표시 되는지 아니면 특정 대화 상자 또는 창이 표시 되는 경우와 같은 특정 컨텍스트에서만 표시 되는지를 지정 합니다. 이 요소에 대 한 값이 있는 메뉴와 명령은 지정 된 컨텍스트가 활성 상태인 경우에만 표시 됩니다. 기본 동작은 항상 명령을 표시 하는 것입니다.
 
-- [KeyBindings 요소](../../extensibility/keybindings-element.md): 명령의 키 바인딩을 지정 합니다. 즉, **Ctrl**S와 같이 명령을 실행 하기 위해 눌러야 하는 키 조합이 하나 이상 + **S**있습니다.
+- [KeyBindings 요소](../../extensibility/keybindings-element.md): 명령의 키 바인딩을 지정 합니다. 즉, **Ctrl** S와 같이 명령을 실행 하기 위해 눌러야 하는 키 조합이 하나 이상 + **S** 있습니다.
 
 - [UsedCommands 요소](../../extensibility/usedcommands-element.md): 지정 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령이 다른 코드에 의해 구현 되더라도 현재 VSPackage 활성 상태인 경우 명령 구현을 제공 한다는 것을 환경에 알립니다.
 
@@ -113,13 +115,13 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 - 명령 및 하위 메뉴는 여러 그룹에 할당 될 수도 있으며 [commands 요소](../../extensibility/commands-element.md)를 사용 하 여 여러 메뉴에 그룹을 할당할 수 있습니다.
 
 ## <a name="vsct-file-notes"></a>. vsct 파일 정보
- 모든 파일을 컴파일하고 네이티브 위성 DLL에 배치한 후에 *vsct* 파일을 변경 하는 경우 **devenv.exe/s/nosetupvstemplates**을 실행 해야 합니다. 이렇게 하면 실험적 레지스트리에 지정 된 VSPackage 리소스를 다시 읽을 수 있으며,이를 설명 하는 내부 데이터베이스를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다시 작성할 수 있습니다.
+ 모든 파일을 컴파일하고 네이티브 위성 DLL에 배치한 후에 *vsct* 파일을 변경 하는 경우 **devenv.exe/s/nosetupvstemplates** 을 실행 해야 합니다. 이렇게 하면 실험적 레지스트리에 지정 된 VSPackage 리소스를 다시 읽을 수 있으며,이를 설명 하는 내부 데이터베이스를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다시 작성할 수 있습니다.
 
  개발 중에 IDE에서 혼란 스 러 울 수 있는 실험적 레지스트리 하이브에 여러 VSPackage 프로젝트를 만들고 등록할 수 있습니다. 이 문제를 해결 하려면 실험적 hive를 기본 설정으로 다시 설정 하 여 등록 된 모든 Vspackage 및 IDE에 적용 되었을 수 있는 모든 변경 내용을 제거 합니다. 실험적 hive를 다시 설정 하려면 Visual Studio SDK와 함께 제공 되는 CreateExpInstance.exe 도구를 사용 합니다. 다음 위치에서 찾을 수 있습니다.
 
  *% PROGRAMFILES (x86)% \ Visual Studio \\ \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
- **Createexpinstance/Reset**명령을 사용 하 여 도구를 실행 합니다. 이 도구는 일반적으로와 함께 설치 되지 않은 모든 등록 된 Vspackage를 실험적 hive에서 제거 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ **Createexpinstance/Reset** 명령을 사용 하 여 도구를 실행 합니다. 이 도구는 일반적으로와 함께 설치 되지 않은 모든 등록 된 Vspackage를 실험적 hive에서 제거 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

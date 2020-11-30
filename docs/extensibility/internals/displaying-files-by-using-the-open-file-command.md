@@ -1,5 +1,7 @@
 ---
 title: 파일 열기 명령을 사용 하 여 파일 표시 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)가 파일 메뉴에서 파일 열기 명령을 처리 하 여 파일을 표시 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708590"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328342"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>파일 열기 명령을 사용 하 여 파일을 표시 합니다.
 다음 단계에서는 IDE에서의 **파일** 메뉴에 있는 **파일 열기** 명령을 처리 하는 방법을 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 또한이 단계에서는 프로젝트가이 명령에서 시작 된 호출에 응답 하는 방법을 설명 합니다.

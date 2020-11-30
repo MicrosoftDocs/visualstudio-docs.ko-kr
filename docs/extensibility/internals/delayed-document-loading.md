@@ -1,5 +1,7 @@
 ---
 title: 지연 된 문서 로드 | Microsoft Docs
+description: Visual Studio에서 지연 된 문서 로드에 대해 알아보고 문서를 로드 하기 전에 문서에서 요소를 쿼리하지 않도록 확장을 코딩 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708807"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328394"
 ---
 # <a name="delayed-document-loading"></a>지연 된 문서 로드
 
@@ -65,4 +67,4 @@ ms.locfileid: "80708807"
 
 문서가 초기화 되었는지 여부를 나타내는 표시 된 큐가 없으므로 확장이 강제로 초기화 되는지 확인 하기 어려울 수 있습니다. 완전 하 게 초기화 되지 않은 모든 문서의 제목이 제목에 *[스텁]* 텍스트를 포함 하도록 하는 레지스트리 키를 설정 하 여 더 쉽게 확인할 수 있습니다.
 
-**HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**에서 **StubTabTitleFormatString** 을 * {0} [스텁]* 으로 설정 합니다.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** 에서 **StubTabTitleFormatString** 을 *{0} [스텁]* 으로 설정 합니다.

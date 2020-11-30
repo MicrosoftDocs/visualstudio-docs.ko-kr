@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식 만들기 | Microsoft Docs
+description: 프로그래밍 작업을 지 원하는 새 프로젝트 형식을 디자인, 생성 및 등록 하 여 Visual Studio를 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709076"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329928"
 ---
 # <a name="create-project-types"></a>프로젝트 형식 만들기
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]새 프로젝트 형식을 만들어를 확장할 수 있습니다. 새 프로젝트 형식을 만들려면 몇 가지 개념을 이해 하 고 여러 단계를 완료 해야 합니다. 다음 항목에서는 프로젝트 형식을 만드는 방법에 대 한 개요를 제공 합니다.

@@ -1,5 +1,7 @@
 ---
 title: 옵션 페이지 만들기 | Microsoft Docs
+description: 관리 되는 패키지 프레임 워크에서 DialogPage 클래스를 구현 하 여 Visual Studio의 도구 메뉴 아래에서 옵션 페이지를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709146"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328641"
 ---
 # <a name="create-options-pages"></a>옵션 페이지 만들기
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]관리 되는 패키지 프레임 워크에서에서 파생 된 클래스는 <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **도구** 메뉴의 **옵션** 페이지를 추가 하 여 IDE를 확장 합니다.
@@ -56,7 +58,7 @@ ms.locfileid: "80709146"
 
   이러한 모든 기본 기능을 재정의할 수 있습니다. 예를 들어 보다 정교한 사용자 인터페이스를 만들려면의 기본 구현만 재정의 하면 <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A> 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음은 옵션 페이지의 간단한 "Hello 세계" 구현입니다. **메뉴 명령** 옵션을 선택 하 여 Visual Studio 패키지 템플릿에서 만든 기본 프로젝트에 다음 코드를 추가 하면 옵션 페이지 기능을 적절 하 게 보여 줍니다.
 
 ### <a name="description"></a>설명

@@ -1,5 +1,7 @@
 ---
 title: 기본 명령, 그룹 및 도구 모음 배치 | Microsoft Docs
+description: Visual Studio 사용자 인터페이스가 기본적으로 표시 하는 IDE 명령, 제품 명령 및 편집기 명령에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708887"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329889"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>기본 명령, 그룹 및 도구 모음 배치
 제품 균일성 및 안정성을 위해 UI는 기본적으로 특정 명령 그룹을 표시 하 고 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 및 명령 그룹에 대 한 정의를 제공 합니다. Vspackage는 표준 명령과 명령 그룹을 사용할 수도 있습니다.
@@ -40,6 +42,6 @@ ms.locfileid: "80708887"
 
  편집기 도구 모음은 IDE 및 제품 도구 모음 아래에 배치 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

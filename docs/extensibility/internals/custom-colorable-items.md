@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 색 항목 | Microsoft Docs
+description: 키워드 및 주석과 같은 글꼴 및 색 대화 상자에서 항목을 재정의 하 여 언어 서비스의 일부로 사용자 지정 색 항목을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708991"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328537"
 ---
 # <a name="custom-colorable-items"></a>사용자 지정 색 항목
 언어 서비스의 일부로 사용자 지정 색 항목을 구현 하 여 키워드 및 주석과 같은 색 지정을 위한 형식 목록을 재정의할 수 있습니다.
 
 ## <a name="user-settings-of-colorable-items"></a>색 items의 사용자 설정
- **도구** 메뉴에서 **옵션** 을 선택 하 고 **환경**아래에서 **글꼴 및 색** 을 선택 하 여 **글꼴 및 색** 대화 상자를 표시할 수 있습니다. **텍스트 편집기나** **명령 창과**같은 디스플레이를 선택 하면 표시 **항목** 목록 상자에 해당 디스플레이에 대 한 모든 색 항목이 표시 됩니다. 각 색 항목에 대 한 글꼴, 크기, 전경색 및 배경색을 보고 변경할 수 있습니다. 선택 항목은 레지스트리의 캐시에 저장 되 고 색 항목 이름으로 액세스 됩니다.
+ **도구** 메뉴에서 **옵션** 을 선택 하 고 **환경** 아래에서 **글꼴 및 색** 을 선택 하 여 **글꼴 및 색** 대화 상자를 표시할 수 있습니다. **텍스트 편집기나** **명령 창과** 같은 디스플레이를 선택 하면 표시 **항목** 목록 상자에 해당 디스플레이에 대 한 모든 색 항목이 표시 됩니다. 각 색 항목에 대 한 글꼴, 크기, 전경색 및 배경색을 보고 변경할 수 있습니다. 선택 항목은 레지스트리의 캐시에 저장 되 고 색 항목 이름으로 액세스 됩니다.
 
 ## <a name="presentation-of-colorable-items"></a>색 항목 프레젠테이션
  IDE는 **글꼴 및 색** 대화 상자에서 색 항목의 사용자 재정의를 처리 하기 때문에 각 사용자 지정 색 항목만 이름을 지정 해야 합니다. 이 이름은 **표시 항목** 목록에 표시 됩니다. 색 항목은 사전순으로 표시 됩니다. 언어 서비스의 사용자 지정 색 항목을 그룹화 하기 위해 각 이름을 언어 이름으로 시작할 수 있습니다 (예: **Newlanguage-Comment** 및 **Newlanguage-키워드)**.
@@ -32,7 +34,7 @@ ms.locfileid: "80708991"
 >
 > *C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ VSSDK\VisualStudioIntegration\Tools\Bin*
 >
-> 캐시를 다시 설정 하려면 **Createexpinstance/Reset**를 입력 합니다. **Createexpinstance**에 대 한 자세한 내용은 [createexpinstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)를 참조 하세요.
+> 캐시를 다시 설정 하려면 **Createexpinstance/Reset** 를 입력 합니다. **Createexpinstance** 에 대 한 자세한 내용은 [createexpinstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)를 참조 하세요.
 
  색 항목 목록의 첫 번째 항목은 참조 되지 않습니다. 첫 번째 항목은 색 항목 인덱스 0에 해당 하며 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 항상 해당 항목에 대 한 기본 텍스트 색과 특성을 제공 합니다. 참조 되지 않은이 항목을 처리 하는 가장 쉬운 방법은 목록에서 자리 표시자 색 항목을 첫 번째 항목으로 제공 하는 것입니다.
 
@@ -64,7 +66,7 @@ ms.locfileid: "80708991"
 
     및 인터페이스를 구현 하는 방법에 대 한 예제는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 를 참조 하십시오 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스의 모델](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [사용자 지정 편집기의 구문 색 지정](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

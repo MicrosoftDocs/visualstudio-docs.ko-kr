@@ -1,5 +1,6 @@
 ---
 title: 소스 제어를 구현 하는 경우 VSPackage
+description: Visual Studio 소스 제어 솔루션을 확장 하는 데 사용할 수 있는 소스 제어 플러그 인 및 소스 제어 Vspackage 선택 항목에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037044"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329824"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage을 구현할지 여부를 결정 합니다.
 
@@ -40,6 +41,6 @@ ms.locfileid: "90037044"
 
 4. 쿼리 편집 및 쿼리 저장 이벤트를 처리 합니다 (쿼리 [편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)참조).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)

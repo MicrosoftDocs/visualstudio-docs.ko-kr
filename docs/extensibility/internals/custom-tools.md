@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 도구 | Microsoft Docs
+description: Visual Studio에서 도구를 프로젝트의 항목과 연결 하 고 파일이 저장 될 때마다 해당 도구를 실행 하는 사용자 지정 도구를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708953"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329967"
 ---
 # <a name="custom-tools"></a>사용자 지정 도구
-*사용자 지정 도구* 를 사용 하면 프로젝트의 항목과 도구를 연결 하 고 파일이 저장 될 때마다 해당 도구를 실행할 수 있습니다. *단일 파일 생성기*라고도 하는 특정 사용자 지정 도구는 데이터에서 코드를 생성 하는 번역기를 구현 하는 데 자주 사용 되며 그 반대의 경우도 마찬가지입니다. 예를 들어 단일 파일 생성기는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *설정* 및 *.resx* 파일에서 코드를 만들고 소스 코드를 만듭니다. 생성 된 소스 코드는 *. settings* 및 *.resx* 파일의 데이터에 대해 강력한 형식의 액세스를 제공 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]및 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 프로젝트 형식은 사용자 지정 도구를 지원 합니다. 프로젝트 형식은 사용자 지정 도구를 지원 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 하지 않습니다. 사용자 고유의 프로젝트 형식이 사용자 지정 도구를 지원할 수도 있습니다.
+*사용자 지정 도구* 를 사용 하면 프로젝트의 항목과 도구를 연결 하 고 파일이 저장 될 때마다 해당 도구를 실행할 수 있습니다. *단일 파일 생성기* 라고도 하는 특정 사용자 지정 도구는 데이터에서 코드를 생성 하는 번역기를 구현 하는 데 자주 사용 되며 그 반대의 경우도 마찬가지입니다. 예를 들어 단일 파일 생성기는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *설정* 및 *.resx* 파일에서 코드를 만들고 소스 코드를 만듭니다. 생성 된 소스 코드는 *. settings* 및 *.resx* 파일의 데이터에 대해 강력한 형식의 액세스를 제공 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]및 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 프로젝트 형식은 사용자 지정 도구를 지원 합니다. 프로젝트 형식은 사용자 지정 도구를 지원 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 하지 않습니다. 사용자 고유의 프로젝트 형식이 사용자 지정 도구를 지원할 수도 있습니다.
 
  사용자 지정 도구는 인터페이스를 구현 하는 등록 된 구성 요소 `IVsSingleFileGenerator` 입니다.
 

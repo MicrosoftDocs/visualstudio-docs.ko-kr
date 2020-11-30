@@ -1,5 +1,7 @@
 ---
 title: 연결 프로그램 명령을 사용 하 여 파일 표시 | Microsoft Docs
+description: 프로젝트가 Visual Studio IDE (통합 개발 환경)에서 연결 프로그램 명령을 호출 하 여 파일을 표시 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708587"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329694"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>연결 프로그램 명령을 사용 하 여 파일 표시
 프로젝트는 [ **연결 프로그램** ] 대화 상자를 표시 하도록 IDE에 요청할 수 있습니다. 이 요청은 표준 편집기가 선택 된 파일을 열도록 요청 하는 메시지를 표시 합니다. 다음 단계는이 프로세스를 설명 합니다.
