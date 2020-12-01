@@ -1,5 +1,7 @@
 ---
 title: 개요 | Microsoft IntelliTest 개발자 테스트 도구
+description: IntelliTest가 어떻게 자동화 및 투명 테스트 방법을 사용하고 .NET 코드에 대한 후보 테스트 도구 모음을 생성하는지 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038285"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329954"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
-IntelliTest를 사용하면 초기에 버그를 찾을 수 있으므로 테스트 유지 관리 비용이 감소합니다. 자동화 및 투명 테스트 방법을 사용하는 IntelliTest는 .NET 코드에 대한 후보 테스트 도구 모음을 생성할 수 있습니다. 테스트 도구 모음 생성은 지정하는 *정확성 속성*에 따라 추가로 안내될 수 있습니다. IntelliTest는 테스트 중인 코드가 발전함에 따라 자동으로 테스트 도구 모음을 발전시키기도 합니다.
+IntelliTest를 사용하면 초기에 버그를 찾을 수 있으므로 테스트 유지 관리 비용이 감소합니다. 자동화 및 투명 테스트 방법을 사용하는 IntelliTest는 .NET 코드에 대한 후보 테스트 도구 모음을 생성할 수 있습니다. 테스트 도구 모음 생성은 지정하는 *정확성 속성* 에 따라 추가로 안내될 수 있습니다. IntelliTest는 테스트 중인 코드가 발전함에 따라 자동으로 테스트 도구 모음을 발전시키기도 합니다.
 
 **특성 테스트** IntelliTest를 사용하여 기존 단위 테스트의 도구 모음을 기준으로 코드 동작을 결정할 수 있습니다.
 이런 테스트 도구 모음은 리팩터링 레거시 또는 익숙하지 않은 코드와 연결된 복잡성을 처리하기 위한 기반을 형성하는 재발 도구 모음으로 사용될 수 있습니다.
@@ -46,7 +48,7 @@ IntelliTest를 사용하면 초기에 버그를 찾을 수 있으므로 테스�
 
 ## <a name="the-hello-world-of-intellitest"></a>IntelliTest의 Hello World
 
-IntelliTest는 테스트된 프로그램과 관련된 입력을 찾습니다. 즉, IntelliTest를 사용하여 유명한 **Hello World!** 문자열을 생성할 수 있습니다. 이 경우 C# MSTest 기반 테스트 프로젝트를 만들고 **Microsoft.Pex.Framework**에 대한 참조를 추가했다고 가정합니다. 다른 테스트 프레임워크를 사용할 경우에는 C# 클래스 라이브러리를 만들고 프로젝트 설정 방법에 대한 테스트 프레임워크 설명서를 참조하세요.
+IntelliTest는 테스트된 프로그램과 관련된 입력을 찾습니다. 즉, IntelliTest를 사용하여 유명한 **Hello World!** 문자열을 생성할 수 있습니다. 이 경우 C# MSTest 기반 테스트 프로젝트를 만들고 **Microsoft.Pex.Framework** 에 대한 참조를 추가했다고 가정합니다. 다른 테스트 프레임워크를 사용할 경우에는 C# 클래스 라이브러리를 만들고 프로젝트 설정 방법에 대한 테스트 프레임워크 설명서를 참조하세요.
 
 다음 예제에서는 IntelliTest가 필요한 문자열을 생성하도록 **값** 매개 변수에 대한 두 가지 제약 조건을 만듭니다.
 
@@ -101,8 +103,8 @@ public void HelloWorldThrowsException167()
 
 ## <a name="important-attributes"></a>중요한 특성
 
-* [PexClass](attribute-glossary.md#pexclass)는 **PUT**가 포함된 형식을 표시합니다.
-* [PexMethod](attribute-glossary.md#pexmethod)는 **PUT**를 표시합니다.
+* [PexClass](attribute-glossary.md#pexclass)는 **PUT** 가 포함된 형식을 표시합니다.
+* [PexMethod](attribute-glossary.md#pexmethod)는 **PUT** 를 표시합니다.
 * [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)은 null이 아닌 매개 변수를 표시합니다.
 
 ```csharp
@@ -180,8 +182,8 @@ IntelliTest는 다중 스레드 프로그램을 처리하지 않습니다.
 
 ### <a name="native-code"></a>네이티브 코드
 
-IntelliTest는 **P/Invoke**를 통해 호출된 x86 명령 등의 네이티브 코드를 인식하지 못합니다. IntelliTest에는 해당 호출을 [제약 조건 해결기](input-generation.md#constraint-solver)에 전달될 수 있는 제약 조건으로 변환하는 방법이 없습니다.
-.NET 코드의 경우에도 직접 계측하는 코드를 분석만할 수 있습니다. IntelliTest는 리플렉션 라이브러리를 비롯하여 **mscorlib**의 특정 부분을 계측할 수 없습니다. **DynamicMethod**를 계측할 수 없습니다.
+IntelliTest는 **P/Invoke** 를 통해 호출된 x86 명령 등의 네이티브 코드를 인식하지 못합니다. IntelliTest에는 해당 호출을 [제약 조건 해결기](input-generation.md#constraint-solver)에 전달될 수 있는 제약 조건으로 변환하는 방법이 없습니다.
+.NET 코드의 경우에도 직접 계측하는 코드를 분석만할 수 있습니다. IntelliTest는 리플렉션 라이브러리를 비롯하여 **mscorlib** 의 특정 부분을 계측할 수 없습니다. **DynamicMethod** 를 계측할 수 없습니다.
 
 제안된 해결 방법은 해당 메서드가 동적 어셈블리의 형식으로 배치되는 테스트 모드를 포함하는 것입니다. 그러나 일부 메서드가 계측되지 않더라도 IntelliTest는 가능한 한 많은 계측된 코드를 검사하려고 시도합니다.
 
