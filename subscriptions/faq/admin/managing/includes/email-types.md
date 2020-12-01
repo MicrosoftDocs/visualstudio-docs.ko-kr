@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: dd2c7de8ad2c96c148857b2c11960fba190a5939
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "92157916"
 ---
 ## <a name="what-is-the-difference-between-a-sign-in-email-address-and-a-notification-email-address"></a>로그인 전자 메일 주소와 알림 전자 메일 주소 간의 차이점은 무엇인가요?

@@ -8,10 +8,10 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 30ed8269681a46650197f41664904c8aeac063a5
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "92157995"
 ---
 ## <a name="how-can-i-select-an-end-date-for-a-subscription"></a>구독의 종료 날짜를 선택하려면 어떻게 해야 하나요?
