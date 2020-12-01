@@ -1,5 +1,7 @@
 ---
 title: 클래스 뷰 및 개체 브라우저 아이콘
+description: '클래스 뷰 및 개체 브라우저가 코드 엔터티(예: 네임스페이스, 클래스, 함수, 변수)를 나타내는 아이콘을 표시하는 방법을 알아봅니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285150"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904003"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 
-**클래스 뷰** 및 **개체 브라우저**는 코드 엔터티(예: 네임스페이스, 클래스, 함수 및 변수)를 나타내는 아이콘을 표시합니다. 다음 표에서는 아이콘에 대해 설명합니다.
+**클래스 뷰** 및 **개체 브라우저** 는 코드 엔터티(예: 네임스페이스, 클래스, 함수 및 변수)를 나타내는 아이콘을 표시합니다. 다음 표에서는 아이콘에 대해 설명합니다.
 
 |아이콘|설명|아이콘|설명|
 |----------|-----------------|----------|-----------------|
@@ -44,7 +46,7 @@ ms.locfileid: "85285150"
 |![형식 전달 기호](../ide/media/ob_type_forward.gif)|형식 전달|||
 
 > [!TIP]
-> 이 페이지의 아이콘을 가장 잘 보려면 Microsoft Docs 테마가 **밝게**로 설정되어 있는지 확인합니다. 다음 스크린샷에 표시된 것처럼 페이지 왼쪽 아래에 있는 컨트롤에서 이 색 테마를 설정/해제할 수 있습니다.
+> 이 페이지의 아이콘을 가장 잘 보려면 Microsoft Docs 테마가 **밝게** 로 설정되어 있는지 확인합니다. 다음 스크린샷에 표시된 것처럼 페이지 왼쪽 아래에 있는 컨트롤에서 이 색 테마를 설정/해제할 수 있습니다.
 >
 > ![Docs 테마](../ide/media/toggle-docs-color-theme.png "Microsoft Docs 페이지에 대한 색 테마 설정/해제")
 

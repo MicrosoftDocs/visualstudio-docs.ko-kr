@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 결과 비교
+description: 비교 보고서 및 추세 보고서 실행을 포함하여 둘 이상의 테스트 결과를 기반으로 하는 Excel 부하 테스트 보고서의 생성 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66a388b5b6d74834c58eebad04147d5067655a28
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288847"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441596"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 
@@ -44,6 +46,6 @@ ms.locfileid: "85288847"
 |**성능 및 스트레스 보고서 만들기:** Microsoft Excel을 사용하여 부하 및 웹 성능 테스트에 대한 보고서를 만들 수 있습니다.|- [방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Microsoft Word를 사용하여 수동으로 성능 및 스트레스 보고서 만들기:** 요약, 테이블 및 그래프 데이터를 Microsoft Word 문서에 복사하여 붙여넣는 방법으로 부하 및 웹 성능 테스트에 대한 보고서를 수동으로 만들 수 있습니다.|- [방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

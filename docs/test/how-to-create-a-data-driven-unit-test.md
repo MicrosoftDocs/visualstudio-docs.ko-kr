@@ -1,5 +1,7 @@
 ---
 title: 데이터 기반 단위 테스트 만들기
+description: 관리 코드용 Microsoft 단위 테스트 프레임워크를 사용하여 데이터 원본에서 값을 검색하도록 단위 테스트 메서드를 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287989"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441198"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>방법: 데이터 기반 단위 테스트 만들기
 
@@ -63,11 +65,11 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="create-a-data-source"></a>데이터 원본 만들기
+## <a name="create-a-data-source"></a>데이터 소스 만들기
 
 `AddIntegers` 메서드를 테스트하기 위해 반환되어야 하는 매개 변수 및 합계의 값 범위를 지정하는 데이터 소스를 만듭니다. 이 예제에서는 `MathsData`이라는 Sql Compact 데이터베이스 및 다음 열 이름과 값이 포함된 `AddIntegersData`라는 테이블을 만듬
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|합계|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -129,7 +131,7 @@ DataSource 특성에는 세 개의 생성자가 있습니다.
 [DataSource(dataSourceSettingName)]
 ```
 
-하나의 매개 변수가 있는 생성자는 솔루션에 대한 *app.config* 파일에 저장된 연결 정보를 사용합니다. *dataSourceSettingsName*은 연결 정보를 지정하는 구성 파일의 Xml 요소 이름입니다.
+하나의 매개 변수가 있는 생성자는 솔루션에 대한 *app.config* 파일에 저장된 연결 정보를 사용합니다. *dataSourceSettingsName* 은 연결 정보를 지정하는 구성 파일의 Xml 요소 이름입니다.
 
 *app.config* 파일을 사용하면 단위 테스트 자체를 변경하지 않고 데이터 원본의 위치를 변경할 수 있습니다. *app.config* 파일을 만들고 사용하는 방법에 대한 자세한 내용은 [연습: 구성 파일을 사용하여 데이터 원본 정의](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)를 참조하세요.
 
@@ -160,14 +162,14 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>테스트 실행 및 결과 보기
 
-테스트 메서드 작업을 완료했으면 테스트 프로젝트를 빌드합니다. 테스트 메서드는 **테스트 실행 안 함** 그룹의 **테스트 탐색기**에 표시됩니다. 테스트를 실행하고, 작성하고, 재실행할 때 **테스트 탐색기**에는 **실패한 테스트**, **통과한 테스트** 및 **테스트 실행 안 함** 그룹에 결과가 표시됩니다. 사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다.
+테스트 메서드 작업을 완료했으면 테스트 프로젝트를 빌드합니다. 테스트 메서드는 **테스트 실행 안 함** 그룹의 **테스트 탐색기** 에 표시됩니다. 테스트를 실행하고, 작성하고, 재실행할 때 **테스트 탐색기** 에는 **실패한 테스트**, **통과한 테스트** 및 **테스트 실행 안 함** 그룹에 결과가 표시됩니다. 사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다.
 
 테스트가 실행되면 **테스트 탐색기** 위쪽에 있는 테스트 결과 표시줄에 애니메이션 효과가 적용됩니다. 테스트 실행이 끝날 때 모든 테스트가 통과했으면 표시줄이 녹색이 되고 테스트가 실패하면 빨간색이 됩니다. **테스트 탐색기** 창 아래쪽의 세부 정보 창에 테스트 실행의 요약이 표시됩니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다.
 
 > [!NOTE]
-> 각 데이터 행의 결과와 하나의 요약 결과도 있습니다. 각 데이터 행에서 테스트가 통과되면 요약 실행이 **통과**로 표시됩니다. 데이터 행에서 테스트가 실패하면 요약 실행이 **실패**로 표시됩니다.
+> 각 데이터 행의 결과와 하나의 요약 결과도 있습니다. 각 데이터 행에서 테스트가 통과되면 요약 실행이 **통과** 로 표시됩니다. 데이터 행에서 테스트가 실패하면 요약 실행이 **실패** 로 표시됩니다.
 
-예제에서 `AddIntegers_FromDataSourceTest` 메서드를 실행한 경우 결과 표시줄이 빨간색으로 바뀌고 테스트 메서드가 **실패한 테스트**로 전환됩니다. 데이터 원본에서 반복된 메서드 중 하나라도 실패하면 데이터 기반 테스트에 실패합니다. **테스트 탐색기** 창에서 실패한 테스트 기반 테스트를 선택하면 세부 정보 창에 데이터 행 인덱스별로 식별된 각 반복의 결과가 표시됩니다. 예제에서는 `AddIntegers` 알고리즘이 음수 값을 제대로 처리하지 않는 것 같습니다.
+예제에서 `AddIntegers_FromDataSourceTest` 메서드를 실행한 경우 결과 표시줄이 빨간색으로 바뀌고 테스트 메서드가 **실패한 테스트** 로 전환됩니다. 데이터 원본에서 반복된 메서드 중 하나라도 실패하면 데이터 기반 테스트에 실패합니다. **테스트 탐색기** 창에서 실패한 테스트 기반 테스트를 선택하면 세부 정보 창에 데이터 행 인덱스별로 식별된 각 반복의 결과가 표시됩니다. 예제에서는 `AddIntegers` 알고리즘이 음수 값을 제대로 처리하지 않는 것 같습니다.
 
 테스트 중인 메서드가 수정되고 테스트가 다시 실행되면 결과 표시줄이 녹색으로 바뀌고 테스트 메서드가 **통과한 테스트** 그룹으로 이동합니다.
 

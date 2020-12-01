@@ -1,5 +1,7 @@
 ---
 title: 코드 변경 내용 미리 보기
+description: 변경 내용 미리 보기 창으로 승인하기 전에 프로젝트에 적용될 수정 작업을 진행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +11,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8eef438f1dd504120b62e2e0018935489d6c80a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585771"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871446"
 ---
 # <a name="preview-changes-window"></a>변경 내용 미리 보기 창
 
@@ -28,7 +30,7 @@ Visual Studio에서 다양한 *빠른 작업* 또는 *리팩터링* 도구를 �
 
 변경 내용을 검토한 후 **적용** 단추를 클릭하여 변경 내용을 커밋하거나, **취소** 단추를 클릭하여 현재 상태를 유지합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 리팩터링](../ide/refactoring-in-visual-studio.md)
 - [빠른 작업](../ide/quick-actions.md)

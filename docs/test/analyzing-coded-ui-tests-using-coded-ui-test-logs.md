@@ -1,5 +1,7 @@
 ---
 title: 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
+description: 코딩된 UI 테스트 실행에 대한 중요한 정보를 필터링하고 기록하는 코딩된 UI 테스트 로그를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036147"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442497"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 
@@ -26,11 +28,11 @@ ms.locfileid: "90036147"
 
 - 테스트 프로젝트에 *App.config* 파일이 없는 경우:
 
-   1. 테스트를 실행할 때 어떤 *QTAgent\*.exe* 프로세스를 시작할지 결정합니다. 이것을 결정하는 한 가지 방법은 Windows **작업 관리자**에서 **세부 정보** 탭을 확인하는 것입니다.
+   1. 테스트를 실행할 때 어떤 *QTAgent\*.exe* 프로세스를 시작할지 결정합니다. 이것을 결정하는 한 가지 방법은 Windows **작업 관리자** 에서 **세부 정보** 탭을 확인하는 것입니다.
 
-   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 폴더에서 해당 *.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
+   2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 폴더에서 해당 *.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config* 를 엽니다.
 
-   2. **EqtTraceLevel**의 값을 원하는 로그 수준으로 수정합니다.
+   2. **EqtTraceLevel** 의 값을 원하는 로그 수준으로 수정합니다.
 
       ```xml
       <!-- You must use integral values for "value".
@@ -60,18 +62,18 @@ ms.locfileid: "90036147"
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2단계: 코딩된 UI 테스트를 실행하고 로그 보기
 
-현재 위치에서 *QTAgent\*.exe.config* 파일을 적절하게 수정한 코딩된 UI 테스트를 실행하는 경우 **테스트 탐색기** 결과에 출력 링크가 표시됩니다. 로그 파일은 테스트에 실패한 경우뿐만 아니라 추적 수준이 **verbose**로 설정되었을 때 성공한 테스트의 경우에도 생성됩니다.
+현재 위치에서 *QTAgent\*.exe.config* 파일을 적절하게 수정한 코딩된 UI 테스트를 실행하는 경우 **테스트 탐색기** 결과에 출력 링크가 표시됩니다. 로그 파일은 테스트에 실패한 경우뿐만 아니라 추적 수준이 **verbose** 로 설정되었을 때 성공한 테스트의 경우에도 생성됩니다.
 
-1. **테스트** 메뉴에서 **창**을 선택한 다음, **테스트 탐색기**를 선택합니다.
+1. **테스트** 메뉴에서 **창** 을 선택한 다음, **테스트 탐색기** 를 선택합니다.
 
-2. **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다.
+2. **빌드** 메뉴에서 **솔루션 빌드** 를 선택합니다.
 
-3. **테스트 탐색기**에서 실행하려는 코딩된 UI 테스트를 선택하고 해당 테스트의 바로 가기 메뉴를 연 다음, **선택한 테스트 실행**을 선택합니다.
+3. **테스트 탐색기** 에서 실행하려는 코딩된 UI 테스트를 선택하고 해당 테스트의 바로 가기 메뉴를 연 다음, **선택한 테스트 실행** 을 선택합니다.
 
      자동화된 테스트가 실행되고 성공 또는 실패 여부를 나타냅니다.
 
     > [!TIP]
-    > **테스트 탐색기**를 보려면 **테스트** > **Windows**를 선택한 다음, **테스트 탐색기**를 선택합니다.
+    > **테스트 탐색기** 를 보려면 **테스트** > **Windows** 를 선택한 다음, **테스트 탐색기** 를 선택합니다.
 
 4. **테스트 탐색기** 결과에서 **출력** 링크를 선택합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 구성 파일을 사용하여 원본 데이터 정의
+description: 데이터 소스를 정의하는 app.config 파일 만들기부터 단위 테스트를 위해 app.config 파일에서 정의한 데이터 소스를 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75776151"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598499"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 통한 데이터 원본 정의
 
@@ -46,11 +48,11 @@ ms.locfileid: "75776151"
 
 1. 테스트 프로젝트에 이미 *app.config* 파일이 있는 경우 [사용자 지정 구성 섹션 정의](#define-a-custom-configuration-section)로 이동합니다.
 
-2. **솔루션 탐색기**에서 테스트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가** > **새 항목**을 선택합니다.
+2. **솔루션 탐색기** 에서 테스트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **추가** > **새 항목** 을 선택합니다.
 
      **새 항목 추가** 창이 열립니다.
 
-3. **애플리케이션 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
+3. **애플리케이션 구성 파일** 템플릿을 선택하고 **추가** 를 클릭합니다.
 
 ## <a name="define-a-custom-configuration-section"></a>사용자 지정 구성 섹션 정의
 
@@ -58,7 +60,7 @@ ms.locfileid: "75776151"
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config 파일에 사용자 지정 구성 섹션을 추가하려면
 
-1. *app.config*의 루트 요소는 **구성** 요소여야 합니다. **configuration** 요소 내에 **configSections** 요소를 만듭니다. **configSections**는 *app.config* 파일의 첫 번째 요소여야 합니다.
+1. *app.config* 의 루트 요소는 **구성** 요소여야 합니다. **configuration** 요소 내에 **configSections** 요소를 만듭니다. **configSections** 는 *app.config* 파일의 첫 번째 요소여야 합니다.
 
 2. **configSections** 요소 내에 **section** 요소를 만듭니다.
 
@@ -190,9 +192,9 @@ ms.locfileid: "75776151"
 
 ### <a name="to-create-a-microsoft-access-data-source"></a>Microsoft Access 데이터 원본을 만들려면
 
-1. *testdatasource.accdb*라는 Microsoft Access 데이터베이스를 만듭니다.
+1. *testdatasource.accdb* 라는 Microsoft Access 데이터베이스를 만듭니다.
 
-2. *testdatasource.accdb*에 테이블을 만들고 이름을 `MyDataTable`로 지정합니다.
+2. *testdatasource.accdb* 에 테이블을 만들고 이름을 `MyDataTable`로 지정합니다.
 
 3. `Number` 데이터 형식을 사용하여 이름이 `Arg1` 및 `Arg2`인 두 개의 필드를 `MyDataTable`에 만듭니다.
 
@@ -204,9 +206,9 @@ ms.locfileid: "75776151"
 
 ### <a name="to-create-a-microsoft-excel-data-source"></a>Microsoft Excel 데이터 원본을 만들려면
 
-1. *data.xlsx*라는 Microsoft Excel 스프레드시트를 만듭니다.
+1. *data.xlsx* 라는 Microsoft Excel 스프레드시트를 만듭니다.
 
-2. *data.xlsx*에 없는 경우 `Sheet1`이라는 시트를 만듭니다.
+2. *data.xlsx* 에 없는 경우 `Sheet1`이라는 시트를 만듭니다.
 
 3. `Sheet1`에 두 개의 열 머리글을 만들고 `Val1` 및 `Val2`로 이름을 지정합니다.
 
@@ -267,7 +269,7 @@ ms.locfileid: "75776151"
 > [!IMPORTANT]
 > 테스트에서 배포 디렉터리를 통해 액세스할 수 있도록 데이터 원본과 같은 항목을 배포합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
 - [방법: 데이터 기반 단위 테스트 만들기](../test/how-to-create-a-data-driven-unit-test.md)

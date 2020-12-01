@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
-ms.openlocfilehash: 18bf3b0e36efda193c341993f9c2a88f04430922
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796ab12716d1d2f3ec2570c32b410c8360b8a81
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801765"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998388"
 ---
 # <a name="accessibility-features-of-macos"></a>macOS의 접근성 옵션
 
@@ -21,20 +21,28 @@ macOS는 다양한 사용자를 지원하기 위한 많은 기능을 갖춘 액�
 
 Mac용 Visual Studio의 보조 기술 지원은 기본적으로 꺼져 있습니다. 접근성 지원을 사용하려면:
 
-1. **Visual Studio(메뉴)**  > **기본 설정** > **기타**로 이동하고 **접근성**을 선택합니다.
+1. **Visual Studio(메뉴)**  > **기본 설정** > **기타** 로 이동하고 **접근성** 을 선택합니다.
 
 1. **접근성 사용** 확인란을 선택합니다.
 
    ![접근성 사용이 선택된 접근성 기본 설정의 스크린샷](media/accessibility-preferences.png)
 
-1. Apple의 보조 기술에 대한 지원을 사용하도록 설정하려면 **Visual Studio 다시 시작**을 선택합니다.
+1. Apple의 보조 기술에 대한 지원을 사용하도록 설정하려면 **Visual Studio 다시 시작** 을 선택합니다.
+
+또는 명령줄을 사용하여 내게 필요한 옵션 기능을 사용하도록 설정할 수도 있습니다. 이를 위해서는 터미널에 다음 명령을 입력합니다.
+
+```bash
+defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
+```
+
+명령줄을 통해 이 설정을 변경한 후 Visual Studio를 다시 시작해야 합니다.
 
 ## <a name="increase-the-contrast-in-macos"></a>macOS에서 대비 증가
 
 Mac용 Visual Studio는 macOS에서 대비 증가를 지원하여 UI 요소의 대비를 높이고 개요를 더 자세히 정의합니다. 이 기능을 사용하려면:
 
-1. **시스템 기본 설정**을 엽니다.
+1. **시스템 기본 설정** 을 엽니다.
 
-1. **접근성**으로 이동하고 **표시**를 선택합니다.
+1. **접근성** 으로 이동하고 **표시** 를 선택합니다.
 
 1. **대비 증가** 확인란을 선택합니다.

@@ -1,5 +1,7 @@
 ---
 title: 코드 조각 함수
+description: C# 코드 조각에 사용할 수 있는 GenerateSwitchCases(EnumerationLiteral), ClassName(), SimpleTypeName(TypeName) 함수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594242"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006512"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 
@@ -27,7 +29,7 @@ ms.locfileid: "75594242"
 
 다음 표에서는 코드 조각의 `Function` 요소에 사용할 수 있는 함수를 설명합니다.
 
-|함수|Description|언어|
+|기능|설명|Language|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|`EnumerationLiteral` 매개 변수로 지정된 열거형 멤버에 대한 switch 문과 case 문 집합을 생성합니다. `EnumerationLiteral` 매개 변수는 열거형 리터럴 또는 열거형 형식에 대한 참조여야 합니다.|C#|
 |`ClassName()`|삽입된 코드 조각을 포함하는 클래스의 이름을 반환합니다.|C#|
@@ -155,7 +157,7 @@ ms.locfileid: "75594242"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Function 요소](../ide/code-snippets-schema-reference.md#function-element)
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)

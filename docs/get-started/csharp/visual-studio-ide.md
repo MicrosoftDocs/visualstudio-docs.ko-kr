@@ -1,8 +1,11 @@
 ---
 title: C# 개발자를 위한 개요
+description: Visual Studio 통합 개발 환경에 대해 알아보고 C# 개발자에 맞게 조정하는 방법을 알아봅니다.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85771128"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904016"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE 시작 | C\#
 
@@ -26,15 +29,15 @@ ms.locfileid: "85771128"
 
 C# 개발자에게 맞춰진 환경 설정을 사용하도록 Visual Studio를 구성해 보겠습니다.
 
-1. 메뉴 모음에서 **도구** > **설정 가져오기 및 내보내기**를 선택합니다.
+1. 메뉴 모음에서 **도구** > **설정 가져오기 및 내보내기** 를 선택합니다.
 
-2. **설정 가져오기 및 내보내기 마법사**의 첫 번째 페이지에서 **모두 다시 설정**을 선택한 후 **다음**을 선택합니다.
+2. **설정 가져오기 및 내보내기 마법사** 의 첫 번째 페이지에서 **모두 다시 설정** 을 선택한 후 **다음** 을 선택합니다.
 
-3. **현재 설정 저장** 페이지에서 현재 설정을 저장하거나 저장하지 않는 옵션을 선택한 후 **다음**을 선택합니다. 설정을 사용자 지정하지 않은 경우 **아니요, 다시 설정하여 현재 설정을 덮어씁니다.** 를 선택합니다.
+3. **현재 설정 저장** 페이지에서 현재 설정을 저장하거나 저장하지 않는 옵션을 선택한 후 **다음** 을 선택합니다. 설정을 사용자 지정하지 않은 경우 **아니요, 다시 설정하여 현재 설정을 덮어씁니다.** 를 선택합니다.
 
-4. **기본 설정 컬렉션 선택** 페이지에서 **Visual C#** 을 선택한 후 **마침**을 선택합니다.
+4. **기본 설정 컬렉션 선택** 페이지에서 **Visual C#** 을 선택한 후 **마침** 을 선택합니다.
 
-5. **다시 설정 완료** 페이지에서 **닫기**를 선택합니다.
+5. **다시 설정 완료** 페이지에서 **닫기** 를 선택합니다.
 
 IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 

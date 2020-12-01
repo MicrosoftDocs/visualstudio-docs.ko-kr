@@ -1,5 +1,7 @@
 ---
 title: 스텁을 사용하여 테스트를 위한 앱 부분 격리
+description: 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드인 스텁에 대해 알아봅니다. 스텁을 사용하면 일관된 결과가 반환됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325967"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598564"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
 
@@ -150,7 +152,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. **솔루션 탐색기** 에서 
     - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
     ::: moniker range=">=vs-2019"
-    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리**, **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
     ::: moniker-end
     - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
 

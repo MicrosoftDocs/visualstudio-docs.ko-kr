@@ -1,5 +1,7 @@
 ---
 title: 웹 성능 테스트용 레코더 플러그 인 만들기
+description: 웹 성능 테스트 레코더 도구 모음에서 중지를 선택한 후 WebTestRecorderPlugin으로 기록된 웹 성능 테스트를 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,20 +10,20 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288011"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440062"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 **웹 성능 테스트 레코더** 도구 모음의 **중지**를 선택한 후에 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하여 기록된 웹 성능 테스트를 수정할 수 있습니다. 수정 사항은 **웹 성능 테스트 레코더** 도구 모음의 **중지** 를 선택한 후에 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 적용됩니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 **웹 성능 테스트 편집기** 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기**를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
+레코더 플러그 인을 사용하면 동적 매개 변수에서 사용자 지정 상관 관계를 수행할 수 있습니다. 웹 성능 테스트에서는 기본 제공 상관 관계 기능을 사용하여 테스트가 완료될 때 또는 사용자가 **웹 성능 테스트 편집기** 도구 모음의 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기** 를 사용할 때 웹 기록에서 동적 매개 변수를 검색합니다. 그러나 기본 제공 검색 기능으로 항상 모든 동적 매개 변수를 찾을 수 있는 것은 아닙니다. 예를 들어 대개 5-30분마다 값이 변경되는 세션 ID는 찾지 못합니다. 따라서 상관 관계 프로세스를 사용자가 직접 수행해야 합니다.
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>을 사용하면 사용자 고유의 사용자 지정 플러그 인에 대한 코드를 작성할 수 있습니다. 이 플러그 인은 웹 성능 테스트가 저장되고 웹 성능 테스트 편집기에 표시되기 전에 여러 가지 방법으로 상관 관계 연결을 수행하거나 웹 성능 테스트를 수정할 수 있습니다. 따라서 많은 기록에 대해 특정 동적 변수를 연결해야 하는 것으로 판단될 경우 이 프로세스를 자동화할 수 있습니다.
 
@@ -37,18 +39,18 @@ ms.locfileid: "85288011"
 
 2. 새 **클래스 라이브러리** 프로젝트를 솔루션에 추가합니다.
 
-3. **솔루션 탐색기**의 새 클래스 라이브러리 프로젝트 폴더에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+3. **솔루션 탐색기** 의 새 클래스 라이브러리 프로젝트 폴더에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다.
 
     > [!TIP]
-    > 새 클래스 라이브러리 프로젝트 폴더의 예는 **RecorderPlugins**입니다.
+    > 새 클래스 라이브러리 프로젝트 폴더의 예는 **RecorderPlugins** 입니다.
 
      **참조 추가** 대화 상자가 표시됩니다.
 
 4. **.NET** 탭을 선택합니다.
 
-5. 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
+5. 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 를 선택한 다음, **확인** 을 선택합니다.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework**가 **솔루션 탐색기**의 **References** 폴더에 추가됩니다.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 가 **솔루션 탐색기** 의 **References** 폴더에 추가됩니다.
 
 6. 레코더 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
@@ -92,7 +94,7 @@ ms.locfileid: "85288011"
 
      **WebTestRecordPlugins 사용** 대화 상자가 나타납니다.
 
-2. 레코더 플러그 인의 확인란을 선택하고 **확인**을 선택합니다.
+2. 레코더 플러그 인의 확인란을 선택하고 **확인** 을 선택합니다.
 
      웹 성능 테스트의 기록이 완료된 후 새 레코더 플러그 인이 실행됩니다.
 

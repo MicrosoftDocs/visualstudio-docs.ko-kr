@@ -1,5 +1,7 @@
 ---
 title: 웹 템플릿 만들기
+description: 수동으로 웹 템플릿을 만들고 템플릿에 사용되는 프로그래밍 언어를 식별하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 8546b1364248b5c419a32e8f8ed40abf0b69fb5a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284180"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597082"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 
@@ -52,9 +54,9 @@ ms.locfileid: "85284180"
      </TemplateData>
      ```
 
-7. 템플릿(*vstemplate* 파일 포함)에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음, **보내기** > **압축(ZIP) 폴더**를 선택합니다. 파일이 *.zip* 파일로 압축됩니다.
+7. 템플릿(*vstemplate* 파일 포함)에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음, **보내기** > **압축(ZIP) 폴더** 를 선택합니다. 파일이 *.zip* 파일로 압축됩니다.
 
-8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*입니다.
+8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates* 입니다.
 
 ## <a name="example"></a>예제
 

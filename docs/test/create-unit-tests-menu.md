@@ -1,5 +1,7 @@
 ---
 title: 단위 테스트 메서드 스텁 만들기
+description: 테스트 프로젝트, 테스트 클래스, 클래스 내 테스트 메서드 스텁을 쉽게 구성할 수 있는 단위 테스트 만들기 명령을 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288665"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441861"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>단위 테스트 만들기 명령을 사용하여 단위 테스트 메서드 스텁 만들기
 
@@ -33,7 +35,7 @@ ms.locfileid: "85288665"
 
 ## <a name="get-started"></a>시작
 
-시작하려면 테스트할 프로젝트의 코드 편집기에서 메서드, 형식 또는 네임스페이스를 선택하고 마우스 오른쪽 단추로 클릭한 다음, **단위 테스트 만들기**를 선택합니다. 테스트를 생성하는 방법을 구성할 수 있는 **단위 테스트 만들기** 대화 상자가 열립니다.
+시작하려면 테스트할 프로젝트의 코드 편집기에서 메서드, 형식 또는 네임스페이스를 선택하고 마우스 오른쪽 단추로 클릭한 다음, **단위 테스트 만들기** 를 선택합니다. 테스트를 생성하는 방법을 구성할 수 있는 **단위 테스트 만들기** 대화 상자가 열립니다.
 
 ![단위 테스트 만들기 명령 사용](media/createunittestcommand.png)
 

@@ -1,5 +1,7 @@
 ---
 title: 이전 버전의 .NET Framework를 대상으로 하는 단위 테스트
+description: .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트 프로젝트를 만드는 방법을 알아봅니다. 대상으로 지정된 버전은 3.5 이상이어야 하며 클라이언트 버전일 수 없습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288171"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441250"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -24,7 +26,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 - 로컬 컴퓨터의 Visual Studio에서 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.
 
-- 명령 프롬프트에서 *MSTest.exe*를 사용하여 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.
+- 명령 프롬프트에서 *MSTest.exe* 를 사용하여 .NET Framework의 특정 버전을 대상으로 지정하는 단위 테스트를 실행할 수 있습니다.
 
 - 빌드 에이전트에서 단위 테스트를 빌드의 일부로 실행할 수 있습니다.
 
@@ -50,11 +52,11 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 1. 새 Visual Basic **Unit Test Project** 프로젝트를 만듭니다.
 
-2. **솔루션 탐색기**에 새 Visual Basic 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **속성**을 선택합니다.
+2. **솔루션 탐색기** 에 새 Visual Basic 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **속성** 을 선택합니다.
 
      Visual Basic 테스트 프로젝트의 속성이 표시됩니다.
 
-3. **컴파일** 탭에서 다음 그림과 같이 **고급 컴파일 옵션**을 선택합니다.
+3. **컴파일** 탭에서 다음 그림과 같이 **고급 컴파일 옵션** 을 선택합니다.
 
      ![고급 컴파일 옵션](../test/media/howtoconfigureunittest35frameworka.png)
 
@@ -66,11 +68,11 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 1. 새 C# **Unit Test Project** 프로젝트를 만듭니다.
 
-2. **솔루션 탐색기**에 새 C# 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **속성**을 선택합니다.
+2. **솔루션 탐색기** 에 새 C# 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **속성** 을 선택합니다.
 
    C# 테스트 프로젝트의 속성이 표시됩니다.
 
-3. **애플리케이션** 탭에서 **대상 프레임워크**를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
+3. **애플리케이션** 탭에서 **대상 프레임워크** 를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
    ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
@@ -81,9 +83,9 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
    > [!WARNING]
    > Visual C++용 .NET Framework의 이전 버전에 대한 C++/CLI 단위 테스트를 빌드하려면 Visual Studio의 해당 버전을 사용해야 합니다.
 
-2. **솔루션 탐색기**의 새 C++ 테스트 프로젝트에서 **프로젝트 언로드**를 선택합니다.
+2. **솔루션 탐색기** 의 새 C++ 테스트 프로젝트에서 **프로젝트 언로드** 를 선택합니다.
 
-3. **솔루션 탐색기**에서 언로드된 C++ 테스트 프로젝트를 선택하고 **\<project name> 편집**을 선택합니다.
+3. **솔루션 탐색기** 에서 언로드된 C++ 테스트 프로젝트를 선택하고 **\<project name> 편집** 을 선택합니다.
 
    . *.vcxproj* 파일이 편집기에서 열립니다.
 
@@ -102,7 +104,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 5. *.vcxproj* 파일을 저장하고 닫습니다.
 
-6. **솔루션 탐색기**에 새 C++ 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **프로젝트 다시 로드**를 선택합니다.
+6. **솔루션 탐색기** 에 새 C++ 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **프로젝트 다시 로드** 를 선택합니다.
 
 ## <a name="see-also"></a>참조
 

@@ -1,5 +1,7 @@
 ---
 title: '방법: 클래스 디자이너를 사용하여 형식 만들기'
+description: 클래스 다이어그램에서 C# 및 Visual Basic 프로젝트를 위한 새로운 형식을 만들어 디자인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770223"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901442"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>방법: 클래스 디자이너를 사용하여 형식 만들기
 
@@ -30,7 +32,7 @@ ms.locfileid: "85770223"
 
 ## <a name="create-a-new-type"></a><a name="CreateType"></a> 새 형식 만들기
 
-1. **도구 상자**의 **클래스 디자이너**에서 이 중 하나를 클래스 다이어그램으로 끌어 옵니다.
+1. **도구 상자** 의 **클래스 디자이너** 에서 이 중 하나를 클래스 다이어그램으로 끌어 옵니다.
 
     - **클래스** 또는 **추상 클래스**
 
@@ -48,9 +50,9 @@ ms.locfileid: "85770223"
 
 3. 형식에 대해 초기 코드를 추가할 파일을 선택합니다.
 
-    - 새 파일을 만들어 현재 프로젝트에 추가하려면 **새 파일 만들기**를 선택하고 파일 이름을 지정합니다.
+    - 새 파일을 만들어 현재 프로젝트에 추가하려면 **새 파일 만들기** 를 선택하고 파일 이름을 지정합니다.
 
-    - 기존 파일에 코드를 추가하려면 **기존 파일에 추가**를 선택합니다.
+    - 기존 파일에 코드를 추가하려면 **기존 파일에 추가** 를 선택합니다.
 
          여러 앱 간에 코드를 공유하는 프로젝트가 솔루션에 포함되어 있는 경우 앱 프로젝트의 클래스 다이어그램에 새 형식을 추가할 수 있지만 해당 클래스 파일이 같은 앱 프로젝트 또는 공유 프로젝트에 있어야 합니다.
 
@@ -70,7 +72,7 @@ ms.locfileid: "85770223"
 
 1. 클래스 다이어그램에서 형식의 모양을 클릭합니다.
 
-2. **속성**에서 해당 형식의 **사용자 지정 특성** 속성 옆에 있는 줄임표(...) 단추를 클릭합니다.
+2. **속성** 에서 해당 형식의 **사용자 지정 특성** 속성 옆에 있는 줄임표(...) 단추를 클릭합니다.
 
 3. 하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
 
@@ -80,13 +82,13 @@ ms.locfileid: "85770223"
 
 1. 클래스 다이어그램에서 형식 모양에 있는 멤버의 이름을 클릭하거나 클래스 세부 내용 창에서 해당 행을 클릭합니다.
 
-2. **속성**에서 해당 멤버의 **사용자 지정 특성** 속성을 찾습니다.
+2. **속성** 에서 해당 멤버의 **사용자 지정 특성** 속성을 찾습니다.
 
 3. 하나 이상의 사용자 지정 특성을 한 줄에 하나씩 추가합니다. 중괄호로 묶지 마십시오.
 
    사용자 지정 특성이 해당 형식에 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)

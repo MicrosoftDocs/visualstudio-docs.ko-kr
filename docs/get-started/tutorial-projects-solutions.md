@@ -1,20 +1,23 @@
 ---
 title: 프로젝트 및 솔루션 소개
+description: 프로젝트와 솔루션의 차이점 및 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법을 알아봅니다.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704055"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903938"
 ---
 # <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
 
@@ -55,7 +58,7 @@ ms.locfileid: "94704055"
 
 1. 왼쪽 창에서 **기타 프로젝트 형식** 을 확장하고 **Visual Studio 솔루션** 을 선택합니다. 가운데 창에서 **빈 솔루션** 템플릿을 선택합니다. 솔루션 이름을 **QuickSolution** 으로 지정한 다음, **확인** 을 선택합니다.
 
-   ![Visual Studio 2017의 빈 솔루션 템플릿](media/tutorial-projects-new-solution.png)
+   ![Visual Studio 2017의 빈 솔루션 템플릿](media/tutorial-projects-new-solution.png "Visual Studio 2017의 빈 솔루션 템플릿.")
 
    **시작 페이지** 가 닫히고 솔루션이 Visual Studio 창 오른쪽에 있는 **솔루션 탐색기** 에 표시됩니다. 자주 **솔루션 탐색기** 를 사용하여 프로젝트의 내용을 탐색할 수 있습니다.
 
@@ -69,7 +72,7 @@ ms.locfileid: "94704055"
 
 3. **새 프로젝트 만들기** 페이지에서 검색 상자에 **빈 솔루션** 을 입력하고 **빈 솔루션** 템플릿, **다음** 을 차례로 선택합니다.
 
-   ![Visual Studio 2019의 빈 솔루션 템플릿](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Visual Studio 2019의 빈 솔루션 템플릿](media/vs-2019/tutorial-projects-blank-solution-template.png "Visual Studio 2019의 빈 솔루션 템플릿.")
 
     > [!TIP]
     > 여러 워크로드를 설치했다면 **빈 솔루션** 템플릿이 검색 결과 목록 상단에 표시되지 않을 수도 있습니다. 목록의 **다른 검색 결과** 섹션으로 스크롤해 보세요. 템플릿이 표시될 것입니다.
@@ -97,7 +100,7 @@ ms.locfileid: "94704055"
    > [!NOTE]
    > 대화 상자의 왼쪽 창에서 **Visual C#** 이 표시되지 않으면 **.NET 데스크톱 개발** Visual Studio 워크로드를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새로운 워크로드를 설치하는 쉬운 방법은 **새 프로젝트 추가** 대화 상자의 왼쪽 아래에 있는 **Visual Studio 설치 관리자 열기** 링크를 선택하는 것입니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
    >
-   > ![Visual Studio 설치 관리자 열기 링크](media/tutorial-projects-open-installer.png)
+   > ![Visual Studio 설치 관리자 열기 링크](media/tutorial-projects-open-installer.png "Visual Studio 2017 새 프로젝트 추가 대화 상자의 Visual Studio 설치 관리자 열기 링크.")
 
 ::: moniker-end
 
@@ -116,9 +119,11 @@ ms.locfileid: "94704055"
    QuickDate라는 프로젝트는 **솔루션 탐색기** 의 솔루션 아래에 표시됩니다. 현재 *App.config* 라는 단일 파일이 포함됩니다.
 
    > [!NOTE]
-   > **빈 프로젝트(.NET Framework)** 템플릿이 표시되지 않는 경우 **.NET 데스크톱 개발** Visual Studio 워크로드를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다. 새 프로젝트를 만들 때 **원하는 내용을 찾을 수 없습니까?** 로 표시된 텍스트 아래에서 **추가 도구 및 기능 설치** 링크를 선택하면 새 워크로드를 간편히 설치할 수 있습니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+   > **빈 프로젝트(.NET Framework)** 템플릿이 표시되지 않는 경우 **.NET 데스크톱 개발** Visual Studio 워크로드를 설치해야 합니다. Visual Studio에서는 워크로드 기반 설치를 사용하여 개발할 형식에 필요한 구성 요소만을 설치합니다.
    >
-   > ![Visual Studio 설치 관리자 열기 링크](media/vs-2019/tutorial-projects-open-installer.png)
+   >새 프로젝트를 만들 때 **원하는 내용을 찾을 수 없습니까?** 로 표시된 텍스트 아래에서 **추가 도구 및 기능 설치** 링크를 선택하면 새 워크로드를 간편히 설치할 수 있습니다. Visual Studio 설치 관리자가 실행되면 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+   >
+   > ![Visual Studio 설치 관리자 열기 링크](media/vs-2019/tutorial-projects-open-installer.png "Visual Studio 새 프로젝트 만들기 대화 상자의 Visual Studio 설치 관리자 열기 링크.")
 
 ::: moniker-end
 
@@ -174,7 +179,7 @@ ms.locfileid: "94704055"
 
    두 번째 프로젝트가 **솔루션 탐색기** 에 추가되고 *UnitTest1.cs* 라는 파일이 편집기에서 열립니다.
 
-   ![두 개의 프로젝트를 포함한 Visual Studio 솔루션 탐색기](media/tutorial-projects-solution-explorer.png)
+   ![두 개의 프로젝트를 포함한 Visual Studio 솔루션 탐색기](media/tutorial-projects-solution-explorer.png "Visual Studio 2017의 두 개의 프로젝트가 포함된 솔루션 탐색기.")
 
 ::: moniker-end
 
@@ -188,7 +193,7 @@ ms.locfileid: "94704055"
 
    두 번째 프로젝트가 **솔루션 탐색기** 에 추가되고 *UnitTest1.cs* 라는 파일이 편집기에서 열립니다.
 
-   ![두 개의 프로젝트를 포함한 Visual Studio 솔루션 탐색기](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![두 개의 프로젝트를 포함한 Visual Studio 솔루션 탐색기](media/vs-2019/tutorial-projects-solution-explorer.png "Visual Studio의 두 개의 프로젝트가 포함된 솔루션 탐색기.")
 
 ::: moniker-end
 
@@ -204,7 +209,7 @@ ms.locfileid: "94704055"
 
    **QuickDate** 프로젝트에 대한 참조가 추가됩니다.
 
-   ![프로젝트 참조를 보여주는 Visual Studio 2019 솔루션 탐색기](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![프로젝트 참조를 보여주는 Visual Studio 2019 솔루션 탐색기](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Visual Studio에서 프로젝트 참조를 보여 주는 솔루션 탐색기.")
 
 ## <a name="add-test-code"></a>테스트 코드 추가
 
@@ -240,7 +245,7 @@ ms.locfileid: "94704055"
 
    코드 파일이 다음과 같이 나타납니다.
 
-   ![CSharp 코드](media/tutorial-projects-cs-code.png)
+   ![CSharp 코드](media/tutorial-projects-cs-code.png "이 문서의 테스트 코드 추가 섹션에 있는 코드 조각.")
 
 ## <a name="project-properties"></a>프로젝트 속성
 
@@ -250,7 +255,7 @@ ms.locfileid: "94704055"
 
    프로젝트의 *속성 페이지* 가 **애플리케이션** 탭에서 열립니다. 속성 페이지에는 프로젝트에 대한 다양한 설정이 포함됩니다. **QuickTest** 프로젝트의 어셈블리의 이름은 실제로 "QuickTest"입니다. 변경하려는 경우 여기에서 변경할 수 있습니다. 그런 다음, 테스트 프로젝트를 빌드할 때 결과 이진 파일의 이름이 *QuickTest.dll* 에서 선택한 이름으로 변경됩니다.
 
-   ![프로젝트 속성](media/tutorial-projects-netcore-properties.png)
+   ![프로젝트 속성](media/tutorial-projects-netcore-properties.png "Visual Studio의 프로젝트 속성 대화 상자.")
 
 1. **빌드** 및 **디버그** 와 같은 프로젝트 속성 페이지의 일부 다른 탭을 탐색합니다. 이러한 탭은 다양한 형식의 프로젝트에 따라 달라집니다.
 
@@ -258,7 +263,7 @@ ms.locfileid: "94704055"
 
 단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **실행** > **모든 테스트** 를 선택합니다. **테스트 탐색기** 라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
 
-![통과한 테스트를 보여주는 Visual Studio의 텍스트 탐색기](media/tutorial-projects-test-explorer.png)
+![통과한 테스트를 보여주는 Visual Studio의 텍스트 탐색기](media/tutorial-projects-test-explorer.png "통과한 테스트를 보여 주는 Visual Studio의 테스트 탐색기.")
 
 ::: moniker range="vs-2017"
 

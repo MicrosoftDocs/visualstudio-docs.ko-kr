@@ -1,5 +1,7 @@
 ---
 title: 기존 프로젝트 항목 템플릿 업데이트
+description: 템플릿 내보내기 마법사 및 기타 수동 프로세스를 사용하여 이미 만든 프로젝트 항목 템플릿을 업데이트하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283920"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596887"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
 
@@ -25,29 +27,29 @@ ms.locfileid: "85283920"
 
 Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 있는 **템플릿 내보내기** 마법사를 제공합니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
 1. 업데이트할 템플릿을 선택하고 새 프로젝트를 만드는 단계를 계속 진행합니다.
 
 1. Visual Studio에서 프로젝트를 수정합니다. 예를 들어 출력 형식을 변경하거나 새 파일을 프로젝트에 추가합니다.
 
-1. **프로젝트** 메뉴에서 **템플릿 내보내기**를 선택합니다.
+1. **프로젝트** 메뉴에서 **템플릿 내보내기** 를 선택합니다.
 
-    **템플릿 내보내기 마법사**가 열립니다.
+    **템플릿 내보내기 마법사** 가 열립니다.
 
 1. 마법사에서 표시되는 메시지를 따라 템플릿을 *.zip* 파일로 내보냅니다.
 
-1. (선택 사항) *.zip* 파일을 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* 디렉터리에 배치하여 선택할 수 있도록 합니다. **템플릿 내보내기 마법사**에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 이 단계를 수행해야 합니다.
+1. (선택 사항) *.zip* 파일을 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* 디렉터리에 배치하여 선택할 수 있도록 합니다. **템플릿 내보내기 마법사** 에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 이 단계를 수행해야 합니다.
 
 1. 이전 템플릿 *.zip* 파일을 삭제합니다.
 
 ## <a name="manually-update-an-existing-template"></a>기존 템플릿 수동 업데이트
 
-압축된 *.zip* 파일에 있는 파일을 수정하여 **템플릿 내보내기 마법사**를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
+압축된 *.zip* 파일에 있는 파일을 수정하여 **템플릿 내보내기 마법사** 를 사용하지 않고 기존 템플릿을 업데이트할 수 있습니다.
 
 ### <a name="to-manually-update-an-existing-template"></a>기존 템플릿을 수동으로 업데이트하려면
 
-1. 템플릿을 포함하는 *.zip* 파일을 찾습니다. 사용자 프로젝트 템플릿은 일반적으로 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*에 있습니다.
+1. 템플릿을 포함하는 *.zip* 파일을 찾습니다. 사용자 프로젝트 템플릿은 일반적으로 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* 에 있습니다.
 
 1. *.zip* 파일의 압축을 풉니다.
 
@@ -57,7 +59,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
     *.vstemplate* 스키마에 대한 자세한 내용은 [Visual Studio 템플릿 스키마 참조(확장성)](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요. 원본 파일에서 매개 변수화할 수 있는 항목에 대한 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.
 
-1. 템플릿에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭하면 나타나는 메뉴, 즉 바로 가기 메뉴에서 **보내기** > **압축(ZIP) 폴더**를 선택합니다.
+1. 템플릿에 있는 파일을 선택하고 마우스 오른쪽 단추를 클릭하면 나타나는 메뉴, 즉 바로 가기 메뉴에서 **보내기** > **압축(ZIP) 폴더** 를 선택합니다.
 
     선택한 파일이 *.zip* 파일로 압축됩니다.
 

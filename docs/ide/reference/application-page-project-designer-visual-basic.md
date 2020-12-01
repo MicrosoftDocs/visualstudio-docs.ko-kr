@@ -1,5 +1,7 @@
 ---
 title: VB 프로젝트 속성의 애플리케이션 페이지
+description: Visual Basic 프로젝트 디자이너의 애플리케이션 페이지를 사용하여 프로젝트의 애플리케이션 설정과 속성을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595815"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871420"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 프로젝트 디자이너의 **애플리케이션** 페이지를 사용하여 프로젝트의 애플리케이션 설정과 속성을 지정할 수 있습니다.
 
-**애플리케이션** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. **프로젝트 디자이너**가 나타나면 **애플리케이션** 탭을 선택합니다.
+**애플리케이션** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성** 을 선택합니다. **프로젝트 디자이너** 가 나타나면 **애플리케이션** 탭을 선택합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -42,12 +44,12 @@ ms.locfileid: "75595815"
 
 ### <a name="root-namespace"></a>루트 네임스페이스
 
-프로젝트의 모든 파일에 대한 기본 네임스페이스를 지정합니다. 예를 들어 **루트 네임스페이스**를 `Project1`로 설정하고 코드의 네임스페이스 외부에 `Class1`이 있는 경우 해당 네임스페이스는 `Project1.Class1`입니다. 코드의 `Order` 네임스페이스에 `Class2`가 있는 경우 해당 네임스페이스는 `Project1.Order.Class2`입니다.
+프로젝트의 모든 파일에 대한 기본 네임스페이스를 지정합니다. 예를 들어 **루트 네임스페이스** 를 `Project1`로 설정하고 코드의 네임스페이스 외부에 `Class1`이 있는 경우 해당 네임스페이스는 `Project1.Class1`입니다. 코드의 `Order` 네임스페이스에 `Class2`가 있는 경우 해당 네임스페이스는 `Project1.Order.Class2`입니다.
 
-**루트 네임스페이스**의 선택을 취소하는 경우 코드에서 프로젝트의 네임스페이스 구조를 지정할 수 있습니다.
+**루트 네임스페이스** 의 선택을 취소하는 경우 코드에서 프로젝트의 네임스페이스 구조를 지정할 수 있습니다.
 
 > [!NOTE]
-> [네임스페이스 명령문](/dotnet/visual-basic/language-reference/statements/namespace-statement)에서 `Global` 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스**의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Namespace` 문에 `Global` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
+> [네임스페이스 명령문](/dotnet/visual-basic/language-reference/statements/namespace-statement)에서 `Global` 키워드를 사용하는 경우 프로젝트의 루트 네임스페이스 외부에서 네임스페이스를 정의할 수 있습니다. **루트 네임스페이스** 의 선택을 취소하면 `Global`이 최상위 네임스페이스가 되므로 `Namespace` 문에 `Global` 키워드가 필요하지 않습니다. 자세한 내용은 [Visual Basic의 네임스페이스](/dotnet/visual-basic/programming-guide/program-structure/namespaces)에서 "Namespace 문의 Global 키워드"를 참조하세요.
 
 코드에서 네임스페이스를 만드는 방법에 대한 자세한 내용은 [Namespace 문](/dotnet/visual-basic/language-reference/statements/namespace-statement)을 참조하세요.
 
@@ -68,15 +70,15 @@ ms.locfileid: "75595815"
 
 ### <a name="application-type"></a>애플리케이션 종류
 
-빌드할 애플리케이션 종류를 지정합니다. 값은 프로젝트 형식에 따라 달라집니다. 예를 들어 **Windows Forms 앱**의 경우 대부분 **Windows Forms 애플리케이션**, **클래스 라이브러리**, **콘솔 애플리케이션**, **Windows 서비스** 또는 **웹 컨트롤 라이브러리**를 지정할 수 있습니다.
+빌드할 애플리케이션 종류를 지정합니다. 값은 프로젝트 형식에 따라 달라집니다. 예를 들어 **Windows Forms 앱** 의 경우 대부분 **Windows Forms 애플리케이션**, **클래스 라이브러리**, **콘솔 애플리케이션**, **Windows 서비스** 또는 **웹 컨트롤 라이브러리** 를 지정할 수 있습니다.
 
-웹 애플리케이션 프로젝트의 경우 **클래스 라이브러리**를 지정해야 합니다.
+웹 애플리케이션 프로젝트의 경우 **클래스 라이브러리** 를 지정해야 합니다.
 
 **애플리케이션 종류** 속성에 대한 자세한 내용은 [/target(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)을 참조하세요. 프로그래밍 방식으로 해당 속성에 액세스하는 방법에 대한 자세한 내용은 <xref:VSLangProj.ProjectProperties.OutputType%2A>을 참조하세요.
 
 ### <a name="auto-generate-binding-redirects"></a>바인딩 리디렉션 자동 생성
 
-앱 또는 해당 구성 요소가 동일한 어셈블리의 버전을 두 개 이상 참조하는 경우 프로젝트에 바인딩 리디렉션이 추가됩니다. 프로젝트 파일에서 바인딩 리디렉션을 수동으로 정의하려는 경우 **바인딩 리디렉션 자동 생성**의 선택을 취소합니다.
+앱 또는 해당 구성 요소가 동일한 어셈블리의 버전을 두 개 이상 참조하는 경우 프로젝트에 바인딩 리디렉션이 추가됩니다. 프로젝트 파일에서 바인딩 리디렉션을 수동으로 정의하려는 경우 **바인딩 리디렉션 자동 생성** 의 선택을 취소합니다.
 
 리디렉션에 대한 자세한 내용은 [어셈블리 버전 리디렉션](/dotnet/framework/configure-apps/redirect-assembly-versions)을 참조하세요.
 
@@ -84,13 +86,13 @@ ms.locfileid: "75595815"
 
 애플리케이션의 시작 폼 또는 진입점을 지정합니다.
 
-**애플리케이션 프레임워크 사용**이 선택된 경우(기본값), 이 목록에 **시작 폼**이라는 제목이 지정되고, 애플리케이션 프레임워크에서 개체가 아니라 시작 폼만 지원하기 때문에 폼만 표시됩니다.
+**애플리케이션 프레임워크 사용** 이 선택된 경우(기본값), 이 목록에 **시작 폼** 이라는 제목이 지정되고, 애플리케이션 프레임워크에서 개체가 아니라 시작 폼만 지원하기 때문에 폼만 표시됩니다.
 
-프로젝트가 WPF 브라우저 애플리케이션인 경우 이 목록에 **시작 URI**라는 제목이 지정되고 기본값은 **Page1.xaml**입니다. **시작 URI** 목록을 사용하면 애플리케이션이 시작 시 표시하는 사용자 인터페이스 리소스(XAML 요소)를 지정할 수 있습니다. 자세한 내용은 <xref:System.Windows.Application.StartupUri%2A>을 참조하세요.
+프로젝트가 WPF 브라우저 애플리케이션인 경우 이 목록에 **시작 URI** 라는 제목이 지정되고 기본값은 **Page1.xaml** 입니다. **시작 URI** 목록을 사용하면 애플리케이션이 시작 시 표시하는 사용자 인터페이스 리소스(XAML 요소)를 지정할 수 있습니다. 자세한 내용은 <xref:System.Windows.Application.StartupUri%2A>을 참조하세요.
 
-**애플리케이션 프레임워크 사용**의 선택이 취소된 경우 이 목록은 **시작 개체**가 되고 `Sub Main`을 포함하는 폼과 클래스 또는 모듈을 둘 다 표시합니다.
+**애플리케이션 프레임워크 사용** 의 선택이 취소된 경우 이 목록은 **시작 개체** 가 되고 `Sub Main`을 포함하는 폼과 클래스 또는 모듈을 둘 다 표시합니다.
 
-**시작 개체**는 애플리케이션 로드 시 호출할 진입점을 정의합니다. 일반적으로 애플리케이션의 기본 폼이나 애플리케이션 시작 시 실행되어야 하는 `Sub Main` 프로시저로 설정됩니다. 클래스 라이브러리에 진입점이 없기 때문에 이 속성의 유일한 옵션은 **(없음)** 입니다. 자세한 내용은 [/main](/dotnet/visual-basic/reference/command-line-compiler/main)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>를 참조하세요.
+**시작 개체** 는 애플리케이션 로드 시 호출할 진입점을 정의합니다. 일반적으로 애플리케이션의 기본 폼이나 애플리케이션 시작 시 실행되어야 하는 `Sub Main` 프로시저로 설정됩니다. 클래스 라이브러리에 진입점이 없기 때문에 이 속성의 유일한 옵션은 **(없음)** 입니다. 자세한 내용은 [/main](/dotnet/visual-basic/reference/command-line-compiler/main)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>를 참조하세요.
 
 ### <a name="icon"></a>아이콘
 
@@ -102,15 +104,15 @@ ms.locfileid: "75595815"
 
 ### <a name="enable-application-framework"></a>애플리케이션 프레임워크 사용
 
-프로젝트에서 애플리케이션 프레임워크를 사용할지 여부를 지정합니다. 이 옵션의 설정은 **시작 폼**/**시작 개체**에서 사용할 수 있는 옵션에 영향을 줍니다.
+프로젝트에서 애플리케이션 프레임워크를 사용할지 여부를 지정합니다. 이 옵션의 설정은 **시작 폼**/**시작 개체** 에서 사용할 수 있는 옵션에 영향을 줍니다.
 
 이 확인란이 선택된 경우 애플리케이션에서 표준 `Sub Main`을 사용합니다. 이 확인란을 선택하면 **Windows 애플리케이션 프레임워크 속성** 섹션의 기능을 사용할 수 있으며, 시작 폼도 선택해야 합니다.
 
-이 확인란의 선택을 취소하면 애플리케이션이 **시작 폼**에서 지정된 사용자 지정 `Sub Main`을 사용합니다. 이 경우 시작 개체(메서드 또는 클래스의 사용자 지정 `Sub Main`) 또는 폼을 지정할 수 있습니다. 또한 **Windows 애플리케이션 프레임워크 속성** 섹션의 옵션을 사용할 수 없게 됩니다.
+이 확인란의 선택을 취소하면 애플리케이션이 **시작 폼** 에서 지정된 사용자 지정 `Sub Main`을 사용합니다. 이 경우 시작 개체(메서드 또는 클래스의 사용자 지정 `Sub Main`) 또는 폼을 지정할 수 있습니다. 또한 **Windows 애플리케이션 프레임워크 속성** 섹션의 옵션을 사용할 수 없게 됩니다.
 
 ### <a name="view-windows-settings"></a>Windows 설정 보기
 
-이 단추를 클릭하면 *app.manifest* 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 애플리케이션에 대한 매니페스트 데이터를 생성합니다. 그런 다음, *app.manifest*의 `<requestedExecutionLevel>` 태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
+이 단추를 클릭하면 *app.manifest* 파일이 생성되고 열립니다. Visual Studio는 이 파일을 사용하여 애플리케이션에 대한 매니페스트 데이터를 생성합니다. 그런 다음, *app.manifest* 의 `<requestedExecutionLevel>` 태그를 다음과 같이 수정하여 UAC 요청된 실행 수준을 설정합니다.
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -127,11 +129,11 @@ ClickOnce는 `asInvoker` 수준이나 가상화된 모드(매니페스트 생성
 
 ### <a name="enable-xp-visual-styles"></a>XP 비주얼 스타일 사용
 
-*Windows XP 테마*라고도 하는 Windows XP 비주얼 스타일을 사용하거나 사용하지 않습니다. 예를 들어 Windows XP 비주얼 스타일은 둥근 모서리와 동적 색이 지정된 컨트롤을 사용할 수 있게 합니다. 기본값을 사용합니다.
+*Windows XP 테마* 라고도 하는 Windows XP 비주얼 스타일을 사용하거나 사용하지 않습니다. 예를 들어 Windows XP 비주얼 스타일은 둥근 모서리와 동적 색이 지정된 컨트롤을 사용할 수 있게 합니다. 기본값을 사용합니다.
 
 ### <a name="make-single-instance-application"></a>단일 인스턴스 애플리케이션 작성
 
-사용자가 애플리케이션의 여러 인스턴스를 실행하지 못하도록 하려면 이 확인란을 선택합니다. 이 확인란은 기본적으로 *선택이 취소*되어 있으므로 애플리케이션의 여러 인스턴스를 실행할 수 있습니다. 자세한 내용은 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> 이벤트를 참조하세요.
+사용자가 애플리케이션의 여러 인스턴스를 실행하지 못하도록 하려면 이 확인란을 선택합니다. 이 확인란은 기본적으로 *선택이 취소* 되어 있으므로 애플리케이션의 여러 인스턴스를 실행할 수 있습니다. 자세한 내용은 <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> 이벤트를 참조하세요.
 
 ### <a name="save-mysettings-on-shutdown"></a>종료할 때 My.Settings 저장
 
@@ -139,17 +141,17 @@ ClickOnce는 `asInvoker` 수준이나 가상화된 모드(매니페스트 생성
 
 ### <a name="authentication-mode"></a>인증 모드
 
-Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 지정하려면 **Windows**(기본값)를 선택합니다. `My.User` 개체를 사용하여 런타임에 이 정보를 검색할 수 있습니다. 기본 Windows 인증 방법을 사용하는 대신 사용자를 인증할 사용자 고유의 코드를 제공하는 경우 **애플리케이션 정의**를 선택합니다.
+Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 지정하려면 **Windows**(기본값)를 선택합니다. `My.User` 개체를 사용하여 런타임에 이 정보를 검색할 수 있습니다. 기본 Windows 인증 방법을 사용하는 대신 사용자를 인증할 사용자 고유의 코드를 제공하는 경우 **애플리케이션 정의** 를 선택합니다.
 
 ### <a name="shutdown-mode"></a>종료 모드
 
-다른 폼이 열려 있어도 시작 폼으로 설정된 폼을 닫을 때 애플리케이션이 종료되도록 지정하려면 **시작 폼을 닫을 때**(기본값)를 선택합니다. 마지막 폼을 닫을 때나 `My.Application.Exit` 또는 `End` 문을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 폼을 닫을 때**를 선택합니다.
+다른 폼이 열려 있어도 시작 폼으로 설정된 폼을 닫을 때 애플리케이션이 종료되도록 지정하려면 **시작 폼을 닫을 때**(기본값)를 선택합니다. 마지막 폼을 닫을 때나 `My.Application.Exit` 또는 `End` 문을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 폼을 닫을 때** 를 선택합니다.
 
-`Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때**를 선택합니다.
+`Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때** 를 선택합니다.
 
-마지막 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때**를 선택합니다. 이 값은 기본 설정입니다.
+마지막 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때** 를 선택합니다. 이 값은 기본 설정입니다.
 
-주 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때**를 선택합니다.
+주 창을 닫을 때 또는 `Shutdown`을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때** 를 선택합니다.
 
 ### <a name="splash-screen"></a>시작 화면
 
@@ -167,17 +169,17 @@ Windows 인증을 사용하여 현재 로그온한 사용자를 식별하도록 
 
 이 속성은 WPF(Windows Presentation Foundation) 애플리케이션에만 적용됩니다.
 
-<xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때**를 선택합니다.
+<xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **명시적으로 종료할 때** 를 선택합니다.
 
-마지막 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때**를 선택합니다. 이 값은 기본 설정입니다.
+마지막 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **마지막 창을 닫을 때** 를 선택합니다. 이 값은 기본 설정입니다.
 
-주 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때**를 선택합니다.
+주 창을 닫을 때 또는 <xref:System.Windows.Application.Shutdown%2A>을 명시적으로 호출할 때 애플리케이션이 종료되도록 지정하려면 **주 창을 닫을 때** 를 선택합니다.
 
 이 설정을 사용하는 방법에 대한 자세한 내용은 <xref:System.Windows.Application.Shutdown%2A>을 참조하세요.
 
 ### <a name="edit-xaml"></a>XAML 편집
 
-이 단추를 클릭하면 XAML 편집기에서 애플리케이션 정의 파일(Application.xaml)을 엽니다. 이 단추를 클릭하면 애플리케이션 정의 노드에서 *Application.xaml*이 열립니다. 리소스 정의 등의 특정 작업을 수행하려면 이 파일을 편집해야 할 수도 있습니다. 애플리케이션 정의 파일이 없는 경우 프로젝트 디자이너에서 새로 만듭니다.
+이 단추를 클릭하면 XAML 편집기에서 애플리케이션 정의 파일(Application.xaml)을 엽니다. 이 단추를 클릭하면 애플리케이션 정의 노드에서 *Application.xaml* 이 열립니다. 리소스 정의 등의 특정 작업을 수행하려면 이 파일을 편집해야 할 수도 있습니다. 애플리케이션 정의 파일이 없는 경우 프로젝트 디자이너에서 새로 만듭니다.
 
 ### <a name="view-application-events"></a>애플리케이션 이벤트 보기
 

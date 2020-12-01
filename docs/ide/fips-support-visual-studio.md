@@ -1,6 +1,7 @@
 ---
 title: FIPS에 대한 Visual Studio 지원
 titleSuffix: ''
+description: Visual Studio에서 Windows, Azure 및 .NET에서 FIPS(Federal Information Processing Standard) 발행물 140-2 승인 작업 모드를 지원하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ddf7831df3a820c757120159d6d367b884d224a4
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045517"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597485"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio에서 FIPS 140-2 승인 작업 모드 지원
 

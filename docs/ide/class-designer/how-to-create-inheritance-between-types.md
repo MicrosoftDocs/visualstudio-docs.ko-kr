@@ -1,5 +1,7 @@
 ---
 title: '방법: 형식 간의 상속 만들기(클래스 디자이너)'
+description: 클래스 디자이너를 사용하여 클래스 다이어그램에서 두 형식 간의 상속 관계를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,24 +15,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770201"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901468"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 만들기
 
-**클래스 디자이너**를 사용하여 클래스 다이어그램의 두 형식 간에 상속 관계를 만들려면 기본 형식을 하나 이상의 파생 형식과 연결합니다. 두 클래스, 클래스와 인터페이스 또는 두 인터페이스 간에 상속 관계를 적용할 수 있습니다.
+**클래스 디자이너** 를 사용하여 클래스 다이어그램의 두 형식 간에 상속 관계를 만들려면 기본 형식을 하나 이상의 파생 형식과 연결합니다. 두 클래스, 클래스와 인터페이스 또는 두 인터페이스 간에 상속 관계를 적용할 수 있습니다.
 
 ## <a name="to-create-an-inheritance-between-types"></a>형식 간에 상속을 만들려면
 
-1. **솔루션 탐색기**의 프로젝트에서 클래스 다이어그램 파일(.cd)을 엽니다.
+1. **솔루션 탐색기** 의 프로젝트에서 클래스 다이어그램 파일(.cd)을 엽니다.
 
      클래스 다이어그램이 없으면 새로 만듭니다. [방법: 프로젝트에 클래스 다이어그램 추가](how-to-add-class-diagrams-to-projects.md)를 참조하세요.
 
-2. **도구 상자**의 **클래스 디자이너**에서 **상속**을 클릭합니다.
+2. **도구 상자** 의 **클래스 디자이너** 에서 **상속** 을 클릭합니다.
 
 3. 클래스 다이어그램에서 다음 항목부터 시작하여 원하는 형식 간에 상속 선을 그립니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "85770201"
     >
     >  기존 제네릭 형식을 시각화할 수는 있지만 새 제네릭 형식을 만들 수는 없습니다. 또한 기존 제네릭 형식의 형식 매개 변수를 변경할 수도 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [상속](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [상속 기본 사항](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

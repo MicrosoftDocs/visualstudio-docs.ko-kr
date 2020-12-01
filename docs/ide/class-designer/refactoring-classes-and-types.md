@@ -1,5 +1,7 @@
 ---
 title: 클래스 디자이너에서 클래스 및 형식 이름 바꾸기 및 이동
+description: 클래스 디자이너와 클래스 세부 내용 창을 사용하여 클래스와 형식의 이름을 바꾸고 이동하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768603"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901090"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>클래스 디자이너에서 클래스 및 형식 리팩터링
 
@@ -55,7 +57,7 @@ ms.locfileid: "85768603"
 
 ### <a name="rename-in-the-class-details-window"></a>클래스 세부 내용 창에서 이름 바꾸기
 
-1. **클래스 세부 내용** 창을 표시하려면 형식 또는 형식 멤버를 마우스 오른쪽 단추로 클릭하고 **클래스 세부 내용**을 선택합니다.
+1. **클래스 세부 내용** 창을 표시하려면 형식 또는 형식 멤버를 마우스 오른쪽 단추로 클릭하고 **클래스 세부 내용** 을 선택합니다.
 
      **클래스 세부 내용** 창이 나타납니다.
 
@@ -68,7 +70,7 @@ ms.locfileid: "85768603"
 
 ### <a name="rename-in-the-properties-window"></a>속성 창에서 이름 바꾸기
 
-1. 클래스 다이어그램 또는 **클래스 세부 내용** 창에서 형식이나 멤버를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+1. 클래스 다이어그램 또는 **클래스 세부 내용** 창에서 형식이나 멤버를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.
 
      **속성** 창이 나타나고 형식 또는 형식 멤버의 속성이 표시됩니다.
 
@@ -78,14 +80,14 @@ ms.locfileid: "85768603"
 
 ## <a name="move-type-members-from-one-type-to-another"></a>형식 간에 형식 멤버 이동
 
-**클래스 디자이너**를 사용하면 형식 멤버를 다른 형식으로 이동할 수 있습니다. 두 형식이 모두 현재 클래스 다이어그램에 표시되어야 합니다.
+**클래스 디자이너** 를 사용하면 형식 멤버를 다른 형식으로 이동할 수 있습니다. 두 형식이 모두 현재 클래스 다이어그램에 표시되어야 합니다.
 
-1. 디자인 화면에 표시된 형식에서 다른 형식으로 이동할 멤버를 마우스 오른쪽 단추로 클릭하고 **잘라내기**를 선택합니다.
+1. 디자인 화면에 표시된 형식에서 다른 형식으로 이동할 멤버를 마우스 오른쪽 단추로 클릭하고 **잘라내기** 를 선택합니다.
 
-2. 대상 형식을 마우스 오른쪽 단추로 클릭하고 **붙여넣기**를 선택합니다.
+2. 대상 형식을 마우스 오른쪽 단추로 클릭하고 **붙여넣기** 를 선택합니다.
 
      속성이 소스 형식에서 제거되고 대상 형식에 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)

@@ -1,5 +1,7 @@
 ---
 title: 프로젝트에서 참조 관리
+description: 프로젝트에서 외부 구성 요소 및 연결된 서비스에 대한 참조를 관리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183537"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870952"
 ---
 # <a name="manage-references-in-a-project"></a>프로젝트에서 참조 관리
 
 외부 구성 요소 또는 연결된 서비스에 대해 코드를 작성하기 전에 프로젝트에 이에 대한 참조가 포함되어 있어야 합니다. 참조는 기본적으로 Visual Studio에서 구성 요소 또는 서비스를 찾기 위해 필요로 하는 정보를 포함하는 프로젝트 파일의 항목입니다.
 
-참조를 추가하려면 **솔루션 탐색기**에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다. 자세한 내용은 [방법: 참조 추가 또는 제거](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)를 참조하세요.
+참조를 추가하려면 **솔루션 탐색기** 에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조** 를 선택합니다. 자세한 내용은 [방법: 참조 추가 또는 제거](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)를 참조하세요.
 
 ![Visual C&#43;&#43;에서 참조 추가](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -69,7 +71,7 @@ Windows 8.1 프로젝트의 대상을 Windows 10으로 다시 지정하도록 �
 1. 지원되지 않는 확장 SDK를 소유한 공급업체의 사이트로 이동하여 프로젝트의 대상 플랫폼 버전과 호환되는 종속성으로 확장 SDK 버전을 설치합니다.
 
     > [!NOTE]
-    > 기존 SDK가 다른 확장 SDK에 종속되어 있는지 확인하는 한 가지 방법은 **참조 관리자**를 살펴보는 것입니다. Visual Studio를 다시 시작하고, 새 C# UWP 앱 프로젝트를 만들고, 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **참조 추가**를 선택합니다. **Windows** 탭, **확장** 하위 탭으로 이동하여 확장 SDK를 선택합니다. **참조 관리자**에서 오른쪽 창을 살펴봅니다. 종속성이 있는 경우 나열됩니다.
+    > 기존 SDK가 다른 확장 SDK에 종속되어 있는지 확인하는 한 가지 방법은 **참조 관리자** 를 살펴보는 것입니다. Visual Studio를 다시 시작하고, 새 C# UWP 앱 프로젝트를 만들고, 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **참조 추가** 를 선택합니다. **Windows** 탭, **확장** 하위 탭으로 이동하여 확장 SDK를 선택합니다. **참조 관리자** 에서 오른쪽 창을 살펴봅니다. 종속성이 있는 경우 나열됩니다.
 
     > [!IMPORTANT]
     > 프로젝트가 Windows 10을 대상으로 하고 이전에 설치된 확장 SDK가 Microsoft Visual C++ 런타임 패키지에 종속된 경우 Windows 10과 호환되는 Microsoft Visual C++ 런타임 패키지의 버전은 v14.0이고 Visual Studio와 함께 설치됩니다.
@@ -78,9 +80,9 @@ Windows 8.1 프로젝트의 대상을 Windows 10으로 다시 지정하도록 �
 
 1. Visual Studio를 다시 시작하고 앱을 엽니다.
 
-1. 오류가 발생한 프로젝트에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭한 다음, **참조 추가**를 선택합니다.
+1. 오류가 발생한 프로젝트에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭한 다음, **참조 추가** 를 선택합니다.
 
-1. **Windows** 탭과 **확장** 하위 탭을 차례로 클릭한 다음 이전 확장 SDK에 대한 확인란의 선택을 취소하고 새 확장 SDK에 대한 확인란을 선택합니다. **확인**을 클릭합니다.
+1. **Windows** 탭과 **확장** 하위 탭을 차례로 클릭한 다음 이전 확장 SDK에 대한 확인란의 선택을 취소하고 새 확장 SDK에 대한 확인란을 선택합니다. **확인** 을 클릭합니다.
 
 ## <a name="add-a-reference-at-design-time"></a>디자인 타임에 참조 추가
 
@@ -91,17 +93,17 @@ Windows 8.1 프로젝트의 대상을 Windows 10으로 다시 지정하도록 �
 - 같은 솔루션에 있는 다른 프로젝트 디렉터리. 이러한 어셈블리는 **프로젝트** 탭에서 찾을 수 있습니다.
 
 > [!NOTE]
-> - 모든 프로젝트에는 **mscorlib**에 대한 암시적 참조가 포함되어 있습니다.
+> - 모든 프로젝트에는 **mscorlib** 에 대한 암시적 참조가 포함되어 있습니다.
 > - `System.Core`가 참조 목록에서 제거되더라도 모든 프로젝트에 `System.Core`에 대한 암시적 참조가 포함됩니다.
 > - Visual Basic 프로젝트에는 <xref:Microsoft.VisualBasic>에 대한 암시적 참조가 포함되어 있습니다.
 
 ## <a name="references-to-shared-components-at-run-time"></a>런타임의 공유 구성 요소에 대한 참조
 
-런타임에 구성 요소는 프로젝트의 출력 경로 또는 GAC(전역 어셈블리 캐시)에 있어야 합니다. 프로젝트에 이러한 위치 중 하나에 없는 개체에 대한 참조가 포함되어 있는 경우 프로젝트를 빌드할 때 프로젝트의 출력 경로에 대한 참조를 복사해야 합니다. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 복사본을 만들 수 있는지 여부를 나타냅니다. 값이 **True**이면 프로젝트를 빌드할 때 참조가 프로젝트 디렉터리에 복사됩니다. 값이 **False**이면 참조가 복사되지 않습니다.
+런타임에 구성 요소는 프로젝트의 출력 경로 또는 GAC(전역 어셈블리 캐시)에 있어야 합니다. 프로젝트에 이러한 위치 중 하나에 없는 개체에 대한 참조가 포함되어 있는 경우 프로젝트를 빌드할 때 프로젝트의 출력 경로에 대한 참조를 복사해야 합니다. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 복사본을 만들 수 있는지 여부를 나타냅니다. 값이 **True** 이면 프로젝트를 빌드할 때 참조가 프로젝트 디렉터리에 복사됩니다. 값이 **False** 이면 참조가 복사되지 않습니다.
 
 GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 포함된 애플리케이션을 배포하는 경우 구성 요소는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 설정과 관계없이 애플리케이션과 함께 배포되지 않습니다. 이전 버전의 Visual Studio에서는 어셈블리가 배포되었는지 확인하기 위해 참조에 대한 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성을 설정할 수 있습니다. 이제 \Bin 폴더에 어셈블리를 수동으로 추가해야 합니다. 그러면 모든 사용자 지정 코드가 조사되어 친숙하지 않은 사용자 지정 코드를 게시할 가능성이 줄어듭니다.
 
-어셈블리 또는 구성 요소를 전역 어셈블리 캐시 내에 있거나 프레임워크 구성 요소인 경우 기본적으로 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 **False** 입니다. 그렇지 않으면 이 속성의 값은 **True**로 설정됩니다. 프로젝트 간 참조는 항상 **True**로 설정됩니다.
+어셈블리 또는 구성 요소를 전역 어셈블리 캐시 내에 있거나 프레임워크 구성 요소인 경우 기본적으로 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 **False** 입니다. 그렇지 않으면 이 속성의 값은 **True** 로 설정됩니다. 프로젝트 간 참조는 항상 **True** 로 설정됩니다.
 
 ## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>다른 버전의 .NET을 대상으로 하는 프로젝트 또는 어셈블리 참조
 
@@ -120,7 +122,7 @@ GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 �
 
 ## <a name="shared-project-references"></a>공유 프로젝트 참조
 
-대부분의 다른 프로젝트 형식과 달리 *공유 프로젝트*에는 이진 출력이 없습니다. 대신 코드는 코드를 참조하는 각 프로젝트로 컴파일됩니다. [공유 프로젝트](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)를 사용하면 다양한 애플리케이션 프로젝트에서 참조되는 공통 코드를 작성할 수 있습니다. 코드는 각 참조하는 프로젝트의 일부로 컴파일되며 플랫폼 특정 기능을 공유 코드 베이스에 통합하는 데 도움이 되는 컴파일러 지시문을 포함할 수 있습니다. 참조 관리자 대화 상자의 **공유 프로젝트** 탭에서 공유 프로젝트에 대한 참조를 추가합니다.
+대부분의 다른 프로젝트 형식과 달리 *공유 프로젝트* 에는 이진 출력이 없습니다. 대신 코드는 코드를 참조하는 각 프로젝트로 컴파일됩니다. [공유 프로젝트](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)를 사용하면 다양한 애플리케이션 프로젝트에서 참조되는 공통 코드를 작성할 수 있습니다. 코드는 각 참조하는 프로젝트의 일부로 컴파일되며 플랫폼 특정 기능을 공유 코드 베이스에 통합하는 데 도움이 되는 컴파일러 지시문을 포함할 수 있습니다. 참조 관리자 대화 상자의 **공유 프로젝트** 탭에서 공유 프로젝트에 대한 참조를 추가합니다.
 
 ## <a name="file-references"></a>파일 참조
 

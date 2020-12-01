@@ -1,5 +1,6 @@
 ---
 title: 요청 수준 플러그 인 만들기(웹 성능 테스트)
+description: 개별 요청에서 웹 성능 테스트 플러그 인을 사용하여 웹 성능 테스트의 주 선언문 외부에서 코드를 다시 사용할 수 있는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb0b5339507866b8e6c134db2951c5ae94f108b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810274"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441067"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
@@ -31,25 +32,25 @@ ms.locfileid: "90810274"
 
 ## <a name="to-create-a-request-level-plug-in"></a>요청 수준 플러그 인을 만들려면
 
-1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+1. **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** 를 선택한 다음, **새 프로젝트** 를 선택합니다.
 
 2. 새 **클래스 라이브러리** 프로젝트를 만듭니다.
 
-3. **솔루션 탐색기**의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+3. **솔루션 탐색기** 의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다.
 
      **참조 추가** 대화 상자가 표시됩니다.
 
-4. **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
+4. **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 를 선택한 다음, **확인** 을 선택합니다.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework**에 대한 참조가 **솔루션 탐색기**의 **Reference** 폴더에 추가됩니다.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** 에 대한 참조가 **솔루션 탐색기** 의 **Reference** 폴더에 추가됩니다.
 
-5. **솔루션 탐색기**에서 웹 성능 테스트 요청 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭합니다. **참조 추가**를 선택합니다.
+5. **솔루션 탐색기** 에서 웹 성능 테스트 요청 테스트 플러그 인을 추가할 부하 테스트를 포함하는 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭합니다. **참조 추가** 를 선택합니다.
 
      **참조 추가 대화 상자가 표시됩니다**.
 
-6. **프로젝트** 탭을 선택하고, **클래스 라이브러리 프로젝트**를 선택한 다음, **확인**을 선택합니다.
+6. **프로젝트** 탭을 선택하고, **클래스 라이브러리 프로젝트** 를 선택한 다음, **확인** 을 선택합니다.
 
-7. **코드 편집기**에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
+7. **코드 편집기** 에서 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
 8. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> 및 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> 이벤트 처리기 중 하나 또는 둘 모두에서 코드를 구현합니다. 샘플 구현을 보려면 다음 예제 단원을 참조하십시오.
 
@@ -57,18 +58,18 @@ ms.locfileid: "90810274"
 
 10. 요청 플러그 인을 추가할 웹 성능 테스트를 엽니다.
 
-11. 요청 플러그 인을 추가할 요청을 마우스 오른쪽 단추로 클릭한 다음, **요청 플러그 인 추가**를 선택합니다.
+11. 요청 플러그 인을 추가할 요청을 마우스 오른쪽 단추로 클릭한 다음, **요청 플러그 인 추가** 를 선택합니다.
 
      **웹 테스트 요청 플러그 인 추가** 대화 상자가 표시됩니다.
 
-12. **플러그 인 선택**에서 새 플러그 인을 선택합니다.
+12. **플러그 인 선택** 에서 새 플러그 인을 선택합니다.
 
 13. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
     > [!NOTE]
     > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 [속성] 창을 사용하여 웹 성능 테스트 플러그 인 속성을 변경할 수도 있습니다.
 
-14. **확인**을 선택합니다.
+14. **확인** 을 선택합니다.
 
      해당 플러그 인이 HTTP 요청의 자식 폴더인 **요청 플러그 인** 폴더에 추가됩니다.
 

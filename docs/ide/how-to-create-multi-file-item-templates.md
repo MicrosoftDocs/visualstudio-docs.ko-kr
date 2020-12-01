@@ -1,5 +1,7 @@
 ---
 title: 다중 파일 항목 템플릿 만들기
+description: 여러 파일로 구성된 Visual Studio의 항목 템플릿을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284427"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597264"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -26,7 +28,7 @@ ms.locfileid: "85284427"
 
 - 양식에 대한 포함 리소스가 들어 있는 파일
 
-다중 파일 항목 템플릿에는 항목을 만들 때 올바른 파일 확장명을 사용하도록 매개 변수가 필요합니다. **템플릿 내보내기 마법사**를 사용하여 다중 파일 항목 템플릿을 만드는 경우 이러한 매개 변수가 자동으로 생성되므로 더 이상 편집할 필요가 없습니다.
+다중 파일 항목 템플릿에는 항목을 만들 때 올바른 파일 확장명을 사용하도록 매개 변수가 필요합니다. **템플릿 내보내기 마법사** 를 사용하여 다중 파일 항목 템플릿을 만드는 경우 이러한 매개 변수가 자동으로 생성되므로 더 이상 편집할 필요가 없습니다.
 
 ## <a name="use-the-export-template-wizard"></a>템플릿 내보내기 마법사 사용
 
@@ -36,7 +38,7 @@ ms.locfileid: "85284427"
 
 1. 단일 파일 항목 템플릿을 수동으로 만들 때처럼 항목 템플릿을 만들되, 다중 파일 항목을 구성 하는 각 파일을 포함합니다.
 
-1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 확장명입니다. 예를 들어:
+1. *.vstemplate* XML 파일에서 각 개별 파일에 대한 `ProjectItem` 요소를 추가하고 이 요소에 `TargetFileName` 특성을 추가합니다. `TargetFileName` 특성 값을 *$fileinputname$.FileExtension* 으로 설정합니다. 여기서 *FileExtension* 은 템플릿에 포함될 파일의 파일 확장명입니다. 예를 들어:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -53,15 +55,15 @@ ms.locfileid: "85284427"
      > [!NOTE]
      > 이 템플릿에서 파생된 항목이 프로젝트에 추가되면 파일 이름은 사용자가 **새 항목 추가** 대화 상자에 입력한 이름에서 파생됩니다.
 
-1. 템플릿에 포함할 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음 **보내기** > **압축(ZIP) 폴더**를 선택합니다.
+1. 템플릿에 포함할 파일을 선택하고 마우스 오른쪽 단추를 클릭한 다음 **보내기** > **압축(ZIP) 폴더** 를 선택합니다.
 
    선택한 파일이 *.zip* 파일로 압축됩니다.
 
-1. *.zip* 파일을 사용자 항목 템플릿 위치에 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates*입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
+1. *.zip* 파일을 사용자 항목 템플릿 위치에 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates* 입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
 1. Visual Studio를 종료한 다음 다시 엽니다.
 
-1. 새 프로젝트를 만들거나 기존 프로젝트를 연 다음, **프로젝트** > **새 항목 추가**를 선택하거나 **Ctrl**+**Shift**+**A**를 누릅니다.
+1. 새 프로젝트를 만들거나 기존 프로젝트를 연 다음, **프로젝트** > **새 항목 추가** 를 선택하거나 **Ctrl**+**Shift**+**A** 를 누릅니다.
 
    **새 항목 추가** 대화 상자에 다중 파일 항목 템플릿이 나타납니다.
 

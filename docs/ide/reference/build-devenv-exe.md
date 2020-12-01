@@ -1,5 +1,7 @@
 ---
 title: -Build(devenv.exe)
+description: 빌드 devenv 명령줄 스위치와 지정된 솔루션 구성 파일로 솔루션이나 프로젝트를 빌드하기 위해 이 스위치를 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4b23a15984c4ded6ca77b1660e14c53be9fd42e3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595763"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871433"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,23 +37,23 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  필수 사항입니다. 솔루션 파일의 전체 경로 및 이름입니다.
+  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
 - *SolnConfigName*
 
-  (선택 사항) *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  선택 사항입니다. *SolutionName* 에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 여러 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼을 지정해야 합니다(예: `Debug|Win32`). 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
-  (선택 사항) 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. *SolutionName* 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
+  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. *SolutionName* 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  (선택 사항) 명명된 프로젝트를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
+  선택 사항입니다. 명명된 프로젝트를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
 
 - `/Out` *OutputFilename*
 
-  (선택 사항) 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
+  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -63,7 +65,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - `/Build` 스위치는 마지막 빌드 이후 변경된 프로젝트만을 빌드합니다. 솔루션에서 모든 프로젝트를 빌드하려면 대신 [/rebuild](../../ide/reference/rebuild-devenv-exe.md)를 사용합니다.
 
-- **잘못된 프로젝트 구성**이라는 오류 메시지가 표시되면 솔루션 플랫폼 또는 프로젝트 플랫폼(예: `Debug|Win32`)을 지정했는지 확인합니다.
+- **잘못된 프로젝트 구성** 이라는 오류 메시지가 표시되면 솔루션 플랫폼 또는 프로젝트 플랫폼(예: `Debug|Win32`)을 지정했는지 확인합니다.
 
 ## <a name="example"></a>예제
 
@@ -73,7 +75,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트 및 솔루션 빌드 및 정리](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트에 대한 실행 설정 선택
+description: 부하 테스트에는 부하 테스트가 실행되는 방식에 영향을 미치는 속성인 실행 설정이 포함될 수 있습니다. 활성 실행 설정 선택 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,27 +10,27 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8400c5afcb81215078617cca00cef9aa8ce018d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287547"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439864"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>방법: 부하 테스트에 대한 활성 실행 설정 선택
 
-**부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+**부하 테스트 새로 만들기 마법사** 를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기** 를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-부하 테스트에는 부하 테스트가 실행되는 방식에 영향을 미치는 속성 집합인 *실행 설정*이 하나 이상 포함될 수 있습니다. 실행 설정은 **속성** 창에서 범주별로 구성됩니다. 부하 테스트가 실행될 때 현재 활성 상태로 설정되어 있는 실행 설정이 사용됩니다.
+부하 테스트에는 부하 테스트가 실행되는 방식에 영향을 미치는 속성 집합인 *실행 설정* 이 하나 이상 포함될 수 있습니다. 실행 설정은 **속성** 창에서 범주별로 구성됩니다. 부하 테스트가 실행될 때 현재 활성 상태로 설정되어 있는 실행 설정이 사용됩니다.
 
 > [!NOTE]
 > 실행 설정 속성의 전체 목록과 해당 설명을 보려면 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
 부하 테스트의 **실행 설정** 폴더 아래에 실행 설정 노드가 하나만 있는 경우 해당 노드가 항상 활성 노드가 됩니다. 부하 테스트에 여러 실행 설정 노드가 있는 경우에는 부하 테스트를 실행할 때 사용할 노드 하나를 선택할 수 있습니다. [방법: 부하 테스트에 실행 설정 추가](../test/how-to-add-additional-run-settings-to-a-load-test.md)를 참조하세요.
 
-**부하 테스트 편집기**에서 활성 실행 설정은 "[Active]" 접미사로 식별됩니다.
+**부하 테스트 편집기** 에서 활성 실행 설정은 "[Active]" 접미사로 식별됩니다.
 
 ## <a name="select-the-active-run-setting"></a>활성 실행 설정 선택
 
@@ -36,9 +38,9 @@ ms.locfileid: "85287547"
 
 2. **실행 설정** 폴더를 확장합니다.
 
-3. 활성화할 실행 설정 노드를 마우스 오른쪽 단추로 클릭한 다음, **활성 상태로 설정**을 선택합니다.
+3. 활성화할 실행 설정 노드를 마우스 오른쪽 단추로 클릭한 다음, **활성 상태로 설정** 을 선택합니다.
 
-     **부하 테스트 편집기**에서 영향을 받는 실행 설정 노드는 "[Active]" 접미사로 업데이트됩니다.
+     **부하 테스트 편집기** 에서 영향을 받는 실행 설정 노드는 "[Active]" 접미사로 업데이트됩니다.
 
      선택한 실행 설정은 활성화되고 다른 실행 설정을 선택하여 활성화할 때까지 활성 상태로 유지됩니다.
 

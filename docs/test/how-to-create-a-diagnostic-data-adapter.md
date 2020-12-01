@@ -1,5 +1,7 @@
 ---
 title: '방법: 진단 데이터 어댑터 만들기'
+description: Visual Studio로 클래스 라이브러리를 만들고 진단 데이터 어댑터 API를 추가하여 진단 데이터 어댑터를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928621"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439851"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
-*진단 데이터 어댑터*를 만들려면 Visual Studio를 사용해서 클래스 라이브러리를 만든 후 Visual Studio Enterprise에서 제공되는 진단 데이터 어댑터 API를 사용자의 클래스 라이브러리에 추가합니다. 테스트 실행 중 발생한 이벤트를 처리할 때 프레임워크에서 제공되는 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>에 원하는 정보를 스트림 또는 파일 형태로 보냅니다. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>로 보낸 스트림이나 파일은 테스트를 마칠 때 테스트 결과에 첨부 파일로 저장됩니다. [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]를 사용하거나 이러한 테스트 결과를 기반으로 하여 버그를 만들면 해당 버그에도 이 파일이 연결됩니다.
+*진단 데이터 어댑터* 를 만들려면 Visual Studio를 사용해서 클래스 라이브러리를 만든 후 Visual Studio Enterprise에서 제공되는 진단 데이터 어댑터 API를 사용자의 클래스 라이브러리에 추가합니다. 테스트 실행 중 발생한 이벤트를 처리할 때 프레임워크에서 제공되는 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>에 원하는 정보를 스트림 또는 파일 형태로 보냅니다. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>로 보낸 스트림이나 파일은 테스트를 마칠 때 테스트 결과에 첨부 파일로 저장됩니다. [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]를 사용하거나 이러한 테스트 결과를 기반으로 하여 버그를 만들면 해당 버그에도 이 파일이 연결됩니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,21 +54,21 @@ Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 
 
 1. 새 **클래스 라이브러리** 프로젝트를 만듭니다.
 
-2. 어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**을 추가합니다.
+2. 어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon** 을 추가합니다.
 
-   1. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1. **솔루션 탐색기** 에서 **참조** 를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-   2. **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
+   2. **.NET** 를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll** 을 찾습니다.
 
-   3. **확인**을 선택합니다.
+   3. **확인** 을 선택합니다.
 
-3. 어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
+3. 어셈블리 **Microsoft.VisualStudio.QualityTools.Common** 을 추가합니다.
 
-   1. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1. **솔루션 탐색기** 에서 **참조** 를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-   2. **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
+   2. **/.NET** 를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll** 을 찾습니다.
 
-   3. **확인**을 선택합니다.
+   3. **확인** 을 선택합니다.
 
 4. 다음 `using` 지시문을 클래스 파일에 추가합니다.
 
@@ -79,7 +81,7 @@ Visual Studio 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 
    using System;
    ```
 
-5. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>를 진단 데이터 어댑터의 클래스에 추가하여 이를 진단 데이터 어댑터로 표시합니다. 여기서 **회사**, **제품** 및 **버전**을 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
+5. <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute>를 진단 데이터 어댑터의 클래스에 추가하여 이를 진단 데이터 어댑터로 표시합니다. 여기서 **회사**, **제품** 및 **버전** 을 진단 데이터 어댑터에 맞는 적절한 정보로 바꿉니다.
 
    ```csharp
    [DataCollectorTypeUri("datacollector://Company/Product/Version")]

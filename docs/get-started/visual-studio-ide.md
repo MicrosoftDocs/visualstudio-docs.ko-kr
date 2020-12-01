@@ -1,10 +1,13 @@
 ---
 title: Visual Studio 개요
 titleSuffix: ''
+description: Visual Studio 통합 개발 환경에 대해 알아봅니다.
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: overview
-ms.custom: vs-get-started
+ms.custom:
+- vs-get-started
+- SEO-VS-2020
 author: TerryGLee
 f1_keywords:
 - vs.startpage
@@ -13,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5790d652ad98c684786efaa39a1fd23948d3b36e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 406b02c0453c8e8b6fb353c0a1b021f64cab6181
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770879"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901455"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 

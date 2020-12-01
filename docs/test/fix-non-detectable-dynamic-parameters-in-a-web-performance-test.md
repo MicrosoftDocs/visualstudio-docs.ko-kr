@@ -1,5 +1,6 @@
 ---
 title: 검색할 수 없는 동적 매개 변수 수정(웹 성능 테스트)
+description: 웹 성능 테스트 레코더 및 재생 엔진에서 일반적인 유형의 동적 매개 변수 대부분을 자동으로 처리하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cad94040997d8cead6be799bee6b2bc17aab699c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810642"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442718"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 
@@ -36,11 +37,11 @@ ms.locfileid: "90810642"
 
 검색할 수 있는 동적 매개 변수 및 검색할 수 없는 동적 매개 변수 모두를 보여 주기 위해, 컨트롤 몇 가지와 일부 사용자 지정 코드가 제공되는 세 가지 웹 폼이 있는 단순한 ASP.NET 웹 애플리케이션을 만듭니다. 그런 다름 동적 매개 변수를 격리하고 이를 처리하는 방법에 대해 알아봅니다.
 
-1. **DynamicParameterSample**이라는 새 ASP.NET 프로젝트를 만듭니다.
+1. **DynamicParameterSample** 이라는 새 ASP.NET 프로젝트를 만듭니다.
 
      ![빈 ASP.NET 웹 애플리케이션 프로젝트 만들기](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2. *Querystring.aspx*라는 웹 폼을 추가합니다.
+2. *Querystring.aspx* 라는 웹 폼을 추가합니다.
 
 3. 디자인 뷰에서 HiddenField를 페이지로 끌어 놓고 (ID) 속성의 값을 HiddenFieldSessionID로 변경합니다.
 
@@ -75,13 +76,13 @@ ms.locfileid: "90810642"
     }
     ```
 
-6. *ASPQuery.aspx*라는 두 번째 웹 폼을 추가합니다.
+6. *ASPQuery.aspx* 라는 두 번째 웹 폼을 추가합니다.
 
-7. 디자인 뷰에서 **레이블**을 페이지로 끈 다음, **(ID)** 속성의 값을 **IndexLabel**로 변경합니다.
+7. 디자인 뷰에서 **레이블** 을 페이지로 끈 다음, **(ID)** 속성의 값을 **IndexLabel** 로 변경합니다.
 
      ![Web Form에 레이블 추가](../test/media/web_test_dynamicparameter_label.png)
 
-8. **하이퍼링크**를 페이지로 끌어 해당 **텍스트** 속성에 대한 베일을 **Back**으로 변경합니다.
+8. **하이퍼링크** 를 페이지로 끌어 해당 **텍스트** 속성에 대한 베일을 **Back** 으로 변경합니다.
 
      ![Web Form에 하이퍼링크 추가](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -89,7 +90,7 @@ ms.locfileid: "90810642"
 
      ![NavigateURL 속성 편집](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
-     *Querystring.aspx*를 선택합니다.
+     *Querystring.aspx* 를 선택합니다.
 
      ![Querystring.aspx가 될 URL 선택](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
@@ -102,9 +103,9 @@ ms.locfileid: "90810642"
             }
     ```
 
-11. *JScriptQuery.aspx*라는 세 번째 웹 폼을 추가합니다.
+11. *JScriptQuery.aspx* 라는 세 번째 웹 폼을 추가합니다.
 
-     두 번째 페이지에 대해 했던 것처럼 **레이블**을 폼으로 끌어 **(ID)** 속성을 **IndexLabel**로 설정하고 **하이퍼링크**를 폼으로 끌어 **텍스트** 속성을 **Back**으로, **NavigationURL** 속성을 **Querystring.aspx**로 설정합니다.
+     두 번째 페이지에 대해 했던 것처럼 **레이블** 을 폼으로 끌어 **(ID)** 속성을 **IndexLabel** 로 설정하고 **하이퍼링크** 를 폼으로 끌어 **텍스트** 속성을 **Back** 으로, **NavigationURL** 속성을 **Querystring.aspx** 로 설정합니다.
 
      ![세 번째 Web Form을 추가하고 구성](../test/media/web_test_dynamicparameter_addwebform3.png)
 
@@ -119,11 +120,11 @@ ms.locfileid: "90810642"
 
 13. 프로젝트를 저장합니다.
 
-14. **솔루션 탐색기**에서 *Querystring.aspx*를 시작 페이지로 설정합니다.
+14. **솔루션 탐색기** 에서 *Querystring.aspx* 를 시작 페이지로 설정합니다.
 
      ![Querystring.aspx에 시작 페이지 설정](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. **Ctrl**+**F5**를 눌러 브라우저에서 해당 웹 애플리케이션을 실행합니다. URL을 복사합니다. 테스트를 기록할 때 필요합니다.
+15. **Ctrl**+**F5** 를 눌러 브라우저에서 해당 웹 애플리케이션을 실행합니다. URL을 복사합니다. 테스트를 기록할 때 필요합니다.
 
 16. 두 링크를 모두 시도합니다. "성공"이라는 메시지를 각각 표시해야 합니다. Dynamic querystring parameter was found."라는 메시지가 나타납니다.
 
@@ -159,15 +160,15 @@ ms.locfileid: "90810642"
 
 7. ASPQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 자동으로 검색되었습니다. 그러나 JScriptQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 검색되지 않습니다.
 
-     *Querystring.aspx*에 추출 규칙을 추가하려면 **확인**을 선택하고, ASPQuery 페이지에 바인딩합니다.
+     *Querystring.aspx* 에 추출 규칙을 추가하려면 **확인** 을 선택하고, ASPQuery 페이지에 바인딩합니다.
 
      ![검색된 동적 매개 변수 승격](../test/media/web_test_dynamicparameter_promotedialog.png)
 
-     추출 규칙은 *Querystring.aspx*에 대한 첫 번째 요청에 추가됩니다.
+     추출 규칙은 *Querystring.aspx* 에 대한 첫 번째 요청에 추가됩니다.
 
      ![요청에 추가된 추출 규칙](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
-     *ASPQuery.aspx*에 대한 요청 트리에서 두 번째 요청을 확장하고 CustomQueryString의 값이 추출 규칙에 바인딩되어 있는지 확인합니다.
+     *ASPQuery.aspx* 에 대한 요청 트리에서 두 번째 요청을 확장하고 CustomQueryString의 값이 추출 규칙에 바인딩되어 있는지 확인합니다.
 
      ![추출 규칙에 바인딩된 CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
@@ -193,7 +194,7 @@ ms.locfileid: "90810642"
 
 4. 테스트 편집기를 보면 *JScriptQuery.aspx* 요청의 CustomQueryString에 `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`의 값이 할당되었고 의심되는 동적 부분은 “1v0yhyiyr0raa2w4j4pwf5zl”이라는 것을 알 수 있습니다. 찾을 내용 드롭다운 목록에서 검색 문자열의 의심 가는 부분을 제거합니다. 그러면 검색 문자열은 "CustomQueryString=jScriptQueryString___"이 됩니다.
 
-     동적 매개 변수는 오류가 있는 요청보다 먼저 발생한 요청 중 하나에서 값을 할당 받았습니다. 따라서 [위로 검색] 확인란을 선택하고 *Querystring.aspx*에 대한 이전 요청이 요청 패널에 강조 표시될 때까지 다음 찾기를 계속 선택합니다. 다음 찾기를 세 번 선택한 다음에 발생합니다.
+     동적 매개 변수는 오류가 있는 요청보다 먼저 발생한 요청 중 하나에서 값을 할당 받았습니다. 따라서 [위로 검색] 확인란을 선택하고 *Querystring.aspx* 에 대한 이전 요청이 요청 패널에 강조 표시될 때까지 다음 찾기를 계속 선택합니다. 다음 찾기를 세 번 선택한 다음에 발생합니다.
 
      ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
@@ -226,15 +227,15 @@ ms.locfileid: "90810642"
 
      새 추출 규칙이 *Querystring.aspx* 요청에 추가되고 ‘Param0’ 값이 할당됩니다.
 
-     매개 변수를 바인딩할 추출한 텍스트와 일치하는 항목이 있다는 메시지가 대화 상자에 표시되는 경우 **예**를 선택합니다.
+     매개 변수를 바인딩할 추출한 텍스트와 일치하는 항목이 있다는 메시지가 대화 상자에 표시되는 경우 **예** 를 선택합니다.
 
      ![추출 규칙 생성됨](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8. **다음 찾기**를 선택합니다. 첫 번째 일치 항목은 변경해야 하는 항목이며 JScriptQuery 페이지의 CustomQueryString에 대한 매개 변수입니다.
+8. **다음 찾기** 를 선택합니다. 첫 번째 일치 항목은 변경해야 하는 항목이며 JScriptQuery 페이지의 CustomQueryString에 대한 매개 변수입니다.
 
      ![매개 변수에 대한 텍스트를 찾아 바꾸기](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
-9. **바꾸기**를 선택합니다.
+9. **바꾸기** 를 선택합니다.
 
      ![텍스트를 매개 변수로 대체](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 

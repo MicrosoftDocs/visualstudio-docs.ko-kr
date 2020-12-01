@@ -1,5 +1,7 @@
 ---
 title: 프로세스에서 복구할 수 없는 오류 발생
+description: Visual Studio의 정상적인 작업 중에 복구할 수 없는 오류가 발생할 수 있는 프로세스를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: e44f96e0a8056a369b164e725aca6832b5a349cb
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90025567"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871485"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 복구할 수 없는 프로세스 오류
 

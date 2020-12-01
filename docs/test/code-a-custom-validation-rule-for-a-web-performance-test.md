@@ -1,5 +1,6 @@
 ---
 title: 웹 성능 테스트의 사용자 지정 유효성 검사 규칙 만들기
+description: 유효성 검사 규칙 클래스인 ValidationRule에서 파생된 고유한 유효성 검사 규칙을 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 627122368c90163cf9aef4c8035bfbb67c4a0dba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810616"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441831"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 유효성 검사 규칙 코딩
 
@@ -49,11 +50,11 @@ ms.locfileid: "90810616"
 
 6. (선택 항목) 테스트 프로젝트에서 사용자 지정 유효성 검사 규칙을 포함하는 클래스 라이브러리 프로젝트에 대한 참조를 추가합니다.
 
-7. 테스트 프로젝트에서 웹 성능 테스트를 **웹 성능 테스트 편집기**에서 엽니다.
+7. 테스트 프로젝트에서 웹 성능 테스트를 **웹 성능 테스트 편집기** 에서 엽니다.
 
-8. 웹 성능 테스트 요청에 사용자 지정 유효성 검사 규칙을 추가하려면 요청을 마우스 오른쪽 단추로 클릭하고 **유효성 검사 규칙 추가**를 선택합니다.
+8. 웹 성능 테스트 요청에 사용자 지정 유효성 검사 규칙을 추가하려면 요청을 마우스 오른쪽 단추로 클릭하고 **유효성 검사 규칙 추가** 를 선택합니다.
 
-     **유효성 검사 규칙 추가** 대화 상자가 나타납니다. **규칙 선택** 목록에 미리 정의된 유효성 검사 규칙과 함께 사용자 지정 유효성 검사 규칙이 표시됩니다. 사용자 지정 유효성 검사 규칙을 선택한 다음, **확인**을 선택합니다.
+     **유효성 검사 규칙 추가** 대화 상자가 나타납니다. **규칙 선택** 목록에 미리 정의된 유효성 검사 규칙과 함께 사용자 지정 유효성 검사 규칙이 표시됩니다. 사용자 지정 유효성 검사 규칙을 선택한 다음, **확인** 을 선택합니다.
 
 9. 웹 성능 테스트를 실행합니다.
 

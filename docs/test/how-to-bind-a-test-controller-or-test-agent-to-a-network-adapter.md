@@ -1,5 +1,6 @@
 ---
 title: 네트워크 어댑터에 테스트 컨트롤러/테스트 에이전트 바인딩
+description: 여러 네트워크 어댑터에 대해 설치된 경우 IP 주소를 사용하여 테스트 컨트롤러 또는 테스트 에이전트를 네트워크 어댑터에 바인딩하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc590973a0a98cd9c5108c9cfe44ea957073b313
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3f4c215937f6637eedfa869a5e3abd701966c693
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810300"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442354"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>방법: 네트워크 어댑터에 테스트 컨트롤러 또는 테스트 에이전트 바인딩
 
@@ -36,19 +37,19 @@ ms.locfileid: "90810300"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>네트워크 어댑터의 IP 주소를 가져오려면
 
-1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **cmd**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작** 을 선택하고 **검색 시작** 상자를 선택한 다음, **cmd** 를 입력하고 **Enter** 키를 선택합니다.
 
-2. **ipconfig /all**을 입력합니다.
+2. **ipconfig /all** 을 입력합니다.
 
      네트워크 어댑터의 IP 주소가 표시됩니다. 컨트롤러를 바인딩할 네트워크 어댑터의 IP 주소를 기록해 둡니다.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>네트워크 어댑터를 테스트 컨트롤러에 바인딩하려면
 
-1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작** 을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc** 를 입력하고 **Enter** 키를 선택합니다.
 
      **서비스** 대화 상자가 표시됩니다.
 
-2. 결과 창의 **이름** 열에서 **Visual Studio Test Controller** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
+2. 결과 창의 **이름** 열에서 **Visual Studio Test Controller** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지** 를 선택합니다.
 
      또는
 
@@ -56,7 +57,7 @@ ms.locfileid: "90810300"
 
      `net stop vsttcontroller`
 
-3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* 에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
 
 4. `<appSettings>` 태그를 찾습니다.
 
@@ -90,11 +91,11 @@ ms.locfileid: "90810300"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>네트워크 인터페이스 카드를 테스트 에이전트에 바인딩하려면
 
-1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작** 을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc** 를 입력하고 **Enter** 키를 선택합니다.
 
     **서비스** 대화 상자가 표시됩니다.
 
-2. 결과 창의 **이름** 열에서 **Visual Studio 테스트 에이전트** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
+2. 결과 창의 **이름** 열에서 **Visual Studio 테스트 에이전트** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지** 를 선택합니다.
 
      또는
 
@@ -102,7 +103,7 @@ ms.locfileid: "90810300"
 
      **net stop vsttagent**
 
-3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* 에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
 
 4. `<appSettings>` 태그를 찾습니다.
 

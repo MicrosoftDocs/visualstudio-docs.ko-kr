@@ -1,5 +1,7 @@
 ---
 title: 도구 상자 항목 선택, WPF 구성 요소
+description: WPF 구성 요소 탭으로 로컬 컴퓨터에서 선택할 수 있는 Windows Presentation Foundation 컨트롤을 표시하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,26 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099351"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871329"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>도구 상자 항목 선택, WPF 구성 요소
 
-**도구 상자 항목 선택** 대화 상자의 이 탭에는 로컬 컴퓨터에서 사용할 수 있는 WPF(Windows Presentation Foundation) 컨트롤 목록이 표시됩니다. 이 목록을 표시하려면 **도구** 메뉴에서 **도구 상자 항목 선택**을 선택하여 **도구 상자 항목 선택** 대화 상자를 표시하고 **WPF 구성 요소** 탭을 선택합니다. 나열된 구성 요소를 정렬하려면 열 머리글을 선택합니다.
+**도구 상자 항목 선택** 대화 상자의 이 탭에는 로컬 컴퓨터에서 사용할 수 있는 WPF(Windows Presentation Foundation) 컨트롤 목록이 표시됩니다. 이 목록을 표시하려면 **도구** 메뉴에서 **도구 상자 항목 선택** 을 선택하여 **도구 상자 항목 선택** 대화 상자를 표시하고 **WPF 구성 요소** 탭을 선택합니다. 나열된 구성 요소를 정렬하려면 열 머리글을 선택합니다.
 
-- 구성 요소 옆의 확인란이 선택되면 해당 구성 요소의 아이콘이 **도구 상자**에 표시됩니다.
+- 구성 요소 옆의 확인란이 선택되면 해당 구성 요소의 아이콘이 **도구 상자** 에 표시됩니다.
 
     > [!TIP]
     > WPF 컨트롤을 편집용으로 열린 프로젝트 문서에 추가하려면 해당 **도구 상자** 아이콘을 디자인 보기 화면으로 끌어서 놓습니다. 구성 요소의 기본 태그 및 코드가 프로젝트에 삽입되고 이제 수정할 수 있습니다. 자세한 내용은 [도구 상자](../../ide/reference/toolbox.md)를 참조하세요.
 
-- 구성 요소 옆의 확인란이 선택 취소되면 해당 아이콘이 **도구 상자**에서 제거됩니다.
+- 구성 요소 옆의 확인란이 선택 취소되면 해당 아이콘이 **도구 상자** 에서 제거됩니다.
 
     > [!NOTE]
-    > 구성 요소의 아이콘이 **도구 상자**에 표시되는지 여부에 관계없이 컴퓨터에 설치된 .NET 구성 요소를 계속 사용할 수 있습니다.
+    > 구성 요소의 아이콘이 **도구 상자** 에 표시되는지 여부에 관계없이 컴퓨터에 설치된 .NET 구성 요소를 계속 사용할 수 있습니다.
 
 **WPF 구성 요소** 탭에는 다음 정보가 포함됩니다.
 
@@ -39,7 +41,7 @@ ms.locfileid: "92099351"
 
 컴퓨터의 레지스트리에 있는 항목에 대한 WPF 컨트롤의 이름을 나열합니다.
 
-**네임스페이스**
+**Namespace**
 
 구성 요소 구조를 정의하는 [.NET API](/dotnet/api/?view=netframework-4.7&preserve-view=true) 네임스페이스의 계층 구조를 표시합니다. 컴퓨터에 설치된 각 .NET 네임스페이스 내에서 사용 가능한 구성 요소를 나열하려면 이 열을 기준으로 정렬합니다.
 
@@ -53,7 +55,7 @@ ms.locfileid: "92099351"
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-### <a name="filter"></a>필터
+### <a name="filter"></a>Assert
 
 입력란에 제공하는 문자열을 기준으로 WPF 컨트롤 목록을 필터링합니다. 4개 열에서 모든 일치 항목이 표시됩니다.
 
@@ -81,7 +83,7 @@ WPF 컨트롤이 포함된 어셈블리로 이동할 수 있는 **열기** 대�
 
 컨트롤에 대한 네임스페이스 및 어셈블리를 매핑하면 XAML에서 직접 컨트롤을 참조할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [도구 상자](../../ide/reference/toolbox.md)
 - [WPF 시작](../../designers/getting-started-with-wpf.md)

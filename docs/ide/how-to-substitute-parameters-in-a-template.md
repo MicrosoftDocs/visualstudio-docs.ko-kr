@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 및 항목 템플릿에 이름 매개 변수 추가
+description: 템플릿 매개 변수를 수정하여 클래스 이름 및 네임스페이스와 같은 식별자를 대체하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba830035f441421ca0eb83404b37319d9a9e2ca3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283946"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596861"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>방법: 템플릿 매개 변수 대체
 
@@ -26,7 +28,7 @@ ms.locfileid: "85283946"
 
 ## <a name="example---namespace-name"></a>예 - 네임스페이스 이름
 
-1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 다음은 그 예입니다.
+1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 예들 들어 다음과 같습니다.
 
     ```csharp
     namespace $safeprojectname$
@@ -40,7 +42,7 @@ ms.locfileid: "85283946"
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)

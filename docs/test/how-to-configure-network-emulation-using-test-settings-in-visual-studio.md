@@ -1,5 +1,7 @@
 ---
 title: 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
+description: Visual Studio에서 애플리케이션을 다양한 네트워크 환경에서 테스트할 수 있도록 진단 데이터 어댑터를 구성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27de590cc40808eb3bebf18857c0ba4b254c39d1
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 98ee28b51445af4b81422460ecb1450b2d383407
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928660"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440162"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -72,7 +74,7 @@ Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 
     > [!NOTE]
     > 네트워크 에뮬레이션 어댑터는 클라이언트 역할 또는 서버 역할에만 구성해야 합니다. 이 두 역할에서 어댑터를 사용할 필요는 없습니다. 어댑터에서 두 역할 간 통신에 영향을 주는 네트워크 노이즈를 에뮬레이트하므로 두 역할에서 어댑터를 사용할 필요가 없습니다. 필요한 경우를 제외하고는 네트워크 에뮬레이션 어댑터의 클라이언트 역할을 선택하여 서버 역할에서 추가 오버헤드가 발생하지 않도록 해야 합니다.
 
-2. **네트워크 에뮬레이션**을 선택하고 **구성**을 선택합니다.
+2. **네트워크 에뮬레이션** 을 선택하고 **구성** 을 선택합니다.
 
      네트워크 에뮬레이션을 구성하기 위한 대화 상자가 나타납니다.
 

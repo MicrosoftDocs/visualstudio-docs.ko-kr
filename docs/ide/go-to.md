@@ -1,5 +1,7 @@
 ---
 title: 파일로 이동, 기호로 이동, 줄로 이동
+description: Visual Studio의 이동 명령과 이를 사용하여 집중 코드 검색을 수행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593787"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597537"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 
@@ -25,10 +27,10 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 
 ## <a name="how-to-use-it"></a>사용 방법
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | **Ctrl**+**T** 또는 **Ctrl**+ **,** 를 누름
-**마우스** | **편집** > **이동** > **전체로 이동**을 선택
+**마우스** | **편집** > **이동** > **전체로 이동** 을 선택
 
 코드 편집기의 오른쪽 위에 작은 창이 표시됩니다.
 
@@ -52,20 +54,20 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 
 특정 형식의 코드 요소로 검색을 제한하려면 검색 상자에서 접두사를 지정하거나 다섯 개의 필터 아이콘 중 하나를 선택합니다.
 
-접두사 | 아이콘 | 바로 가기 | Description
+접두사 | 아이콘 | 바로 가기 | 설명
 :-: | - | - | -
 :| ![줄 아이콘](media/gotoall-line-icon.png) | **Ctrl**+**G** | 지정된 줄 번호로 이동합니다.
 f| ![파일 아이콘](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | 지정된 파일로 이동합니다.
 r| ![최근에 사용한 파일 아이콘](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | 지정되고 최근에 방문한 파일로 이동
 t| ![형식 아이콘](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | 지정된 형식으로 이동합니다.
-m| ![멤버 아이콘](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | 지정된 멤버로 이동합니다.
+분| ![멤버 아이콘](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | 지정된 멤버로 이동합니다.
 \#| ![기호 아이콘](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | 지정된 기호로 이동합니다.
 
 ### <a name="filter-to-a-specific-location"></a>특정 위치로 필터링합니다.
 
 특정 위치로 검색을 제한하려면 두 개의 문서 아이콘 중 하나를 선택합니다.
 
-아이콘 | Description
+아이콘 | 설명
 ---- | ---
 ![현재 문서](media/gotoall_currentdocument.png) | 현재 문서에서만 검색합니다.
 ![외부 문서](media/gotoall_external.png) | 프로젝트/솔루션에 있는 문서와 외부 문서를 검색합니다.
@@ -80,13 +82,13 @@ m| ![멤버 아이콘](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl*
 
 기어 아이콘 선택 ![기어 아이콘](media/gotoall_gear.png) 을 클릭하면 이 기능의 작동 방식을 변경할 수 있습니다.
 
-설정 | Description
+설정 | 설명
 ------- | ---
 미리 보기 탭 사용 | 선택한 항목을 IDE의 미리 보기 탭에서 즉시 표시합니다.
-자세한 정보 표시 | 문서 주석의 프로젝트, 파일, 줄 및 요약 정보를 창에 표시합니다.
+세부 정보 표시 | 문서 주석의 프로젝트, 파일, 줄 및 요약 정보를 창에 표시합니다.
 창 가운데 맞춤 | 이 창을 코드 편집기의 오른쪽 위가 아니라 가운데 위로 이동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 탐색](../ide/navigating-code.md)
 - [줄 이동 대화 상자](../ide/reference/go-to-line.md)

@@ -1,5 +1,7 @@
 ---
 title: 어셈블리 정보 대화 상자
+description: 어셈블리 정보 대화 상자와 이 대화 상자를 사용하여 전역 어셈블리 특성 .NET Framework 값을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,25 +14,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809009"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871342"
 ---
 # <a name="assembly-information-dialog-box"></a>어셈블리 정보 대화 상자
 
 어셈블리 정보 대화 상자는 프로젝트에서 자동으로 만들어진 AssemblyInfo 파일에 저장된 .NET Framework 글로벌 어셈블리 특성의 값을 지정하는 데 사용됩니다. 솔루션 탐색기에서 AssemblyInfo 파일은 Visual Basic 프로젝트의 **내 프로젝트** 노드에 있습니다(확인하려면 **모든 파일 표시** 클릭). C# 프로젝트의 경우 **속성** 아래에 있습니다. 자세한 내용은 [특성(C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)을 참조하세요.
 
-이 대화 상자에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음, **프로젝트** 메뉴에서 **속성**을 선택합니다. **애플리케이션** 페이지에서 **어셈블리 정보** 단추를 선택합니다.
+이 대화 상자에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음, **프로젝트** 메뉴에서 **속성** 을 선택합니다. **애플리케이션** 페이지에서 **어셈블리 정보** 단추를 선택합니다.
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 
 **제목**\
 어셈블리 매니페스트의 제목을 지정합니다. <xref:System.Reflection.AssemblyTitleAttribute>에 해당합니다.
 
-**Description**\
+**설명**\
 어셈블리 매니페스트의 선택적 설명을 지정합니다. <xref:System.Reflection.AssemblyDescriptionAttribute>에 해당합니다.
 
 **회사**\
@@ -65,7 +67,7 @@ Win32 파일 버전 리소스에 대해 특정 버전을 사용하도록 컴파�
 > [!NOTE]
 > .NET Framework 클래스 라이브러리에서 NuGet 패키지를 생성할 때 이러한 속성을 설정하는 방법에 대한 자세한 내용은 [패키지의 프로젝트 속성 구성](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [특성](/previous-versions/z0w1kczw(v=vs.140))

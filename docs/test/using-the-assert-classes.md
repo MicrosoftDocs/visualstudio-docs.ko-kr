@@ -1,5 +1,7 @@
 ---
 title: MSTest 어설션 클래스 및 메서드
+description: 애플리케이션 코드의 단위 테스트 중 코드 동작의 정확성을 테스트하기 위해 Assert 문을 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/07/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c36916c79bd783ed2c6ce960b068e85478b9971d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c5401fb15a19d069c0bf454661d6d9283abb2585
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592050"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598200"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>단위 테스트를 위한 Assert 클래스 사용
 
@@ -47,6 +49,6 @@ ms.locfileid: "75592050"
 
 애플리케이션 코드의 메서드가 throw할 것으로 예상했던 예외가 실제로 해당 메서드에서 throw되었는지 확인하려면 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 메서드를 사용하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)

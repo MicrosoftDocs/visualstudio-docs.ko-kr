@@ -1,5 +1,7 @@
 ---
 title: 문제 보고서에 대한 개인 데이터
+description: Developer Community에서 검토할 문제 보고서를 작성할 때 개인 데이터의 보안을 강화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739969"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005940"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -29,9 +31,9 @@ ms.locfileid: "90739969"
 
 데이터 개인 정보에 대한 우려가 있는 경우 항상 공개되는 초기 보고서의 제목이나 내용에 비공개 내용을 넣지 마십시오. 대신 보고서를 만든 다음, 별도의 주석으로 개인 세부 정보를 보냅니다. 문제 보고서가 작성되면 회신과 첨부 파일을 볼 수 있는 사용자를 지정할 수 있습니다.
 
-1. 작성한 보고서에서 **주석 추가**를 선택하여 문제에 대한 개인 설명을 작성합니다.
+1. 작성한 보고서에서 **주석 추가** 를 선택하여 문제에 대한 개인 설명을 작성합니다.
 
-2. 회신 편집기에서 **제출** 및 **취소** 단추 아래의 컨트롤을 사용하여 회신 대상을 지정합니다. **중재자 및 원래 게시자가 볼 수 있음**을 선택하여 Microsoft 직원과 본인만 볼 수 있도록 제한합니다.
+2. 회신 편집기에서 **제출** 및 **취소** 단추 아래의 컨트롤을 사용하여 회신 대상을 지정합니다. **중재자 및 원래 게시자가 볼 수 있음** 을 선택하여 Microsoft 직원과 본인만 볼 수 있도록 제한합니다.
 
    ![개발자 커뮤니티의 개인 정보 제어](media/developer-community-privacy-control.png)
 
@@ -47,9 +49,9 @@ ms.locfileid: "90739969"
 
 ## <a name="data-we-collect"></a>데이터 수집
 
-Visual Studio 설치 관리자에서 **문제 보고**가 시작되면 최신 설치 로그를 수집합니다.
+Visual Studio 설치 관리자에서 **문제 보고** 가 시작되면 최신 설치 로그를 수집합니다.
 
-Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터 중 하나 이상을 수집합니다.
+Visual Studio에서 **문제 보고** 가 시작되면 다음 유형의 데이터 중 하나 이상을 수집합니다.
 
 - 이벤트 로그의 Watson 및 .NET 엔트리
 

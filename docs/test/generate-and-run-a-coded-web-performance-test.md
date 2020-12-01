@@ -1,5 +1,7 @@
 ---
 title: 코딩된 웹 성능 테스트
+description: 웹 성능 테스트를 코드 기반 스크립트로 변환한 후에 편집하고 사용자 정의하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589580"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442640"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 
@@ -85,7 +87,7 @@ ms.locfileid: "75589580"
 ## <a name="qa"></a>Q&A
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q: 두 개 이상의 테스트를 동시에 실행할 수 있습니까?
-**A:** 예. **솔루션 탐색기**에서 오른쪽 클릭(상황에 맞는) 메뉴를 사용합니다.
+**A:** 예. **솔루션 탐색기** 에서 오른쪽 클릭(상황에 맞는) 메뉴를 사용합니다.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q: 코딩된 테스트를 생성하기 전이나 후에 데이터 소스를 추가해야 합니까?
 **A:** 코드는 자동으로 생성되므로 코딩된 테스트를 생성하기 전에 [데이터 원본](../test/add-a-data-source-to-a-web-performance-test.md)으로 쉽게 추가할 수 있습니다.

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542430"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974078"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
 
@@ -28,11 +28,11 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
 
 1. Visual Studio를 열고 **Python 환경** 창(**보기** > **다른 Windows** > **Python 환경**)으로 전환하고 Anaconda 환경을 선택합니다.
 
-2. 해당 환경의 **패키지(Conda)** 탭(**pip** 또는 **패키지**로 나타낼 수 있음)을 검사하여 `ipython` 및 `matplotlib`가 나열되는지 확인합니다. 그렇지 않은 경우 여기에서 설치하세요. ([Python 환경 Windows - 패키지 탭](python-environments-window-tab-reference.md)을 참조하세요.)
+2. 해당 환경의 **패키지(Conda)** 탭(**pip** 또는 **패키지** 로 나타낼 수 있음)을 검사하여 `ipython` 및 `matplotlib`가 나열되는지 확인합니다. 그렇지 않은 경우 여기에서 설치하세요. ([Python 환경 Windows - 패키지 탭](python-environments-window-tab-reference.md)을 참조하세요.)
 
-3. **개요** 탭을 선택하고 **IPython 대화형 모드 사용**을 선택합니다. Visual Studio 2015에서는 **대화형 옵션 구성**을 선택하여 **옵션** 대화 상자를 연 다음, **대화형 모드**를 **IPython**으로 설정한 다음, **확인**을 선택합니다.
+3. **개요** 탭을 선택하고 **IPython 대화형 모드 사용** 을 선택합니다. Visual Studio 2015에서는 **대화형 옵션 구성** 을 선택하여 **옵션** 대화 상자를 연 다음, **대화형 모드** 를 **IPython** 으로 설정한 다음, **확인** 을 선택합니다.
 
-4. **대화형 창 열기**를 선택하여 IPython 모드에서 **대화형** 창을 표시합니다. 대화형 모드를 방금 변경한 경우 창을 다시 설정해야 할 수 있습니다. >>> 프롬프트만 표시되는 경우 **In [2]** 와 같은 프롬프트를 받을 수 있도록 **Enter** 키를 눌러야 할 수도 있습니다.
+4. **대화형 창 열기** 를 선택하여 IPython 모드에서 **대화형** 창을 표시합니다. 대화형 모드를 방금 변경한 경우 창을 다시 설정해야 할 수 있습니다. >>> 프롬프트만 표시되는 경우 **In [2]** 와 같은 프롬프트를 받을 수 있도록 **Enter** 키를 눌러야 할 수도 있습니다.
 
     ![IPython 모드의 대화형 창](media/ipython-repl-03.png)
 
@@ -51,7 +51,7 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
 
     ![대화형 창의 인라인 그래프](media/ipython-repl-04.png)
 
-7. REPL을 입력하는 대신 편집기에서 코드를 작성하여 선택하고 마우스 오른쪽 단추를 클릭한 다음, **대화형으로 보내기** 명령을 선택할 수 있습니다(또는**Ctrl**+**Enter** 키 누름). 아래 코드를 편집기의 새 파일에 붙여넣고 **Ctrl**+**A**로 선택한 다음, **대화형** 창으로 보내보세요. (Visual Studio는 중간 또는 부분 그래프가 제공되지 않도록 코드를 한 단위로 보냅니다. 그리고 다른 환경을 선택하여 Python 프로젝트가 열린 경우가 아니라면 Visual Studio는 **Python 환경** 창에서 기본값으로 선택된 환경과 관계없이 **대화형** 창을 엽니다.)
+7. REPL을 입력하는 대신 편집기에서 코드를 작성하여 선택하고 마우스 오른쪽 단추를 클릭한 다음, **대화형으로 보내기** 명령을 선택할 수 있습니다(또는 **Ctrl**+**Enter** 키 누름). 아래 코드를 편집기의 새 파일에 붙여넣고 **Ctrl**+**A** 로 선택한 다음, **대화형** 창으로 보내보세요. (Visual Studio는 중간 또는 부분 그래프가 제공되지 않도록 코드를 한 단위로 보냅니다. 그리고 다른 환경을 선택하여 Python 프로젝트가 열린 경우가 아니라면 Visual Studio는 **Python 환경** 창에서 기본값으로 선택된 환경과 관계없이 **대화형** 창을 엽니다.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -82,6 +82,4 @@ IPython에는 시스템 셸로 이스케이프, 변수 대체, 캡처 출력과 
 
 ## <a name="see-also"></a>참조
 
-- 설치하지 않고 쉽게 Jupyter를 사용하려면 노트북을 유지하고 다른 사용자와 공유할 수 있도록 해주는 무료 [Azure Notebook 호스티드 서비스](https://notebooks.azure.com/)를 시도해보세요.
-
-- [Azure 데이터 과학 Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview)은 다양한 범위의 다른 데이터 과학 도구와 함께 Jupyter Notebook을 실행하도록 미리 구성됩니다.
+- [Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview)은 다양한 기타 데이터 과학 도구와 함께 Jupyter Notebook을 실행하도록 미리 구성되어 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: 새 항목 추가 명령
+description: 새 항목 추가 명령으로 새 솔루션 항목이나 프레임셋을 현재 솔루션에 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585693"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871290"
 ---
 # <a name="add-new-item-command"></a>새 항목 추가 명령
 현재 솔루션에 .htm, .css, .txt 또는 프레임셋 같은 새 솔루션 항목을 추가하고 엽니다.
@@ -31,11 +33,11 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
 ## <a name="arguments"></a>인수
 `filename`\
-(선택 사항) 솔루션에 추가할 항목의 경로와 파일 이름입니다.
+선택 사항입니다. 솔루션에 추가할 항목의 경로와 파일 이름입니다.
 
 ## <a name="switches"></a>스위치
 /t: `templatename`\
-(선택 사항) 만들 파일의 형식을 지정합니다. 템플릿 이름이 지정되지 않은 경우 기본적으로 텍스트 파일이 만들어집니다.
+선택 사항입니다. 만들 파일의 형식을 지정합니다. 템플릿 이름이 지정되지 않은 경우 기본적으로 텍스트 파일이 만들어집니다.
 
 /t:`templatename` 인수 구문은 **새 솔루션 항목 추가** 대화 상자에 있는 정보를 미러링합니다. 전체 범주 뒤에 파일 형식을 입력해야 합니다. 백슬래시(`\`)로 범주 이름과 파일 형식을 구분하고 전체 문자열을 따옴표로 묶습니다.
 
@@ -46,9 +48,9 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 /e: `editorname`\
-(선택 사항) 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
+선택 사항입니다. 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
 
-/e:`editorname` 인수 구문은 **연결 프로그램 대화 상자**에 따옴표로 묶여 나타나는 순서대로 편집기 이름을 사용합니다.
+/e:`editorname` 인수 구문은 **연결 프로그램 대화 상자** 에 따옴표로 묶여 나타나는 순서대로 편집기 이름을 사용합니다.
 
 예를 들어 소스 코드 편집기에서 스타일시트를 열려면 /e:`editorname` 인수에 대해 다음과 같이 입력합니다.
 
@@ -63,7 +65,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

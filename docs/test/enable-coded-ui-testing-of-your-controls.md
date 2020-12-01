@@ -1,5 +1,7 @@
 ---
 title: 컨트롤의 코딩된 UI 테스트 사용
+description: 컨트롤을 보다 쉽게 테스트할 수 있도록 코딩된 UI 테스트 프레임워크에 대한 지원을 구현하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288691"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441406"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 
@@ -69,7 +71,7 @@ ms.locfileid: "85288691"
 4. 자식 컨트롤의 접근성 개체에 대해 <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> 및 <xref:System.Windows.Forms.AccessibleObject.Select%2A> 속성과 메서드를 재정의합니다.
 
 > [!NOTE]
-> 이 항목에서는 <xref:System.Windows.Forms.AccessibleObject>에 있는 액세스 가능성 샘플로부터 시작한 다음, 남은 절차의 해당 샘플에 빌드합니다. 액세스 가능성 샘플의 작동 가능 버전을 만들려면 콘솔 애플리케이션을 만들고 *Program.cs*의 코드를 샘플 코드로 바꿉니다. Accessibility, System.Drawing 및 System.Windows.Forms에 대한 참조를 추가합니다. 빌드 경고를 제거하려면 Accessibility에 대한 **Interop 형식 포함**을 **False**로 변경합니다. 프로젝트의 출력 형식을 **콘솔 애플리케이션**에서 **Windows 애플리케이션**으로 변경하면 애플리케이션을 실행할 때 콘솔 창이 표시되지 않습니다.
+> 이 항목에서는 <xref:System.Windows.Forms.AccessibleObject>에 있는 액세스 가능성 샘플로부터 시작한 다음, 남은 절차의 해당 샘플에 빌드합니다. 액세스 가능성 샘플의 작동 가능 버전을 만들려면 콘솔 애플리케이션을 만들고 *Program.cs* 의 코드를 샘플 코드로 바꿉니다. Accessibility, System.Drawing 및 System.Windows.Forms에 대한 참조를 추가합니다. 빌드 경고를 제거하려면 Accessibility에 대한 **Interop 형식 포함** 을 **False** 로 변경합니다. 프로젝트의 출력 형식을 **콘솔 애플리케이션** 에서 **Windows 애플리케이션** 으로 변경하면 애플리케이션을 실행할 때 콘솔 창이 표시되지 않습니다.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>속성 공급자를 구현하여 사용자 지정 속성의 유효성 검사를 지원
 
@@ -99,7 +101,7 @@ ms.locfileid: "85288691"
     }
     ```
 
-1. 클래스 라이브러리 프로젝트를 만들어서 컨트롤에 대한 UI 테스트 확장명 패키지를 만듭니다. Accessibility, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common 및 Microsoft.VisualStudio.TestTools.Extension에 대한 참조를 추가합니다. Accessibility에 대한 **Interop 형식 포함**을 **False**로 변경합니다.
+1. 클래스 라이브러리 프로젝트를 만들어서 컨트롤에 대한 UI 테스트 확장명 패키지를 만듭니다. Accessibility, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common 및 Microsoft.VisualStudio.TestTools.Extension에 대한 참조를 추가합니다. Accessibility에 대한 **Interop 형식 포함** 을 **False** 로 변경합니다.
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>에서 파생되는 속성 공급자 클래스를 추가합니다.
 
@@ -134,7 +136,7 @@ ms.locfileid: "85288691"
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>의 남은 추상 메서드 및 속성을 재정의합니다.
 
-1. 바이너리를 빌드하고 이를 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*에 복사합니다.
+1. 바이너리를 빌드하고 이를 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* 에 복사합니다.
 
 > [!NOTE]
 > 이 확장명 패키지는 “Text” 형식의 모든 컨트롤에 적용됩니다. 같은 형식의 여러 컨트롤을 테스트할 경우, 개별적으로 테스트하고 테스트를 기록할 때 배포되는 확장명 패키지를 관리할 수 있습니다.
@@ -171,7 +173,7 @@ Visual Studio는 테스트를 기록할 때 각 마우스 및 키보드 이벤�
 
 1. 확장 패키지의 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> 메서드에 작업 필터를 추가합니다.
 
-1. 이진 파일을 빌드하고 이를 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*에 복사합니다.
+1. 이진 파일을 빌드하고 이를 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* 에 복사합니다.
 
 > [!NOTE]
 > 작업 필터는 액세스 가능성 구현 또는 속성 공급자에 종속되지 않습니다.
@@ -182,7 +184,7 @@ Visual Studio는 테스트를 기록할 때 각 마우스 및 키보드 이벤�
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>속성 공급자 또는 작업 필터를 디버그하려면
 
-1. 확장명 패키지의 디버그 버전을 빌드하고, *.dll* 및 *.pdb* 파일을 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*에 복사합니다.
+1. 확장명 패키지의 디버그 버전을 빌드하고, *.dll* 및 *.pdb* 파일을 *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* 에 복사합니다.
 
 2. (디버거가 아닌 위치에서) 애플리케이션을 실행합니다.
 
@@ -196,7 +198,7 @@ Visual Studio는 테스트를 기록할 때 각 마우스 및 키보드 이벤�
 
 6. 코딩된 UI 테스트 빌더에서, 속성 공급자를 실행하기 위한 어설션을 만들고, 작업 필터를 실행하기 위한 작업을 기록합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)

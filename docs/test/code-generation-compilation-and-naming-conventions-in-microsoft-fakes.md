@@ -1,5 +1,7 @@
 ---
 title: 'Microsoft Fakes: 코드 생성 및 컴파일, 명명 규칙'
+description: Fakes 생성 형식, 멤버 및 매개 변수에 대한 명명 규칙 등 Fakes 코드 생성 및 컴파일의 옵션과 문제에 대해 설명합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325942"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441635"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -237,7 +239,7 @@ attribute of the Assembly element in the .fakes:
 |-|-|-|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
-|메서드 이름이 "_"로 구분되는 두 부분으로 구성된 **접근자** (예: 속성 getter)|*kind_name* (일반적인 경우이지만 ECMA에 의해 강제되지 않음)|*NameKind* , 여기서 두 부분이 대문자로 처리되고 교환됨|
+|메서드 이름이 "_"로 구분되는 두 부분으로 구성된 **접근자**(예: 속성 getter)|*kind_name*(일반적인 경우이지만 ECMA에 의해 강제되지 않음)|*NameKind*, 여기서 두 부분이 대문자로 처리되고 교환됨|
 ||`Prop` 속성의 getter|`PropGet`|
 ||`Prop` 속성의 setter|`PropSet`|
 ||이벤트 adder|`Add`|

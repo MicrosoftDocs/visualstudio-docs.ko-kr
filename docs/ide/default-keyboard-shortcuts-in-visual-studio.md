@@ -1,5 +1,7 @@
 ---
 title: 기본 바로 가기 키
+description: 다양한 명령과 창에 액세스할 수 있는 Visual Studio 기본 바로 가기 키에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022219"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006369"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 
-해당 바로 가기 키를 선택하여 Visual Studio의 다양한 [명령](reference/visual-studio-commands.md)과 창에 액세스할 수 있습니다. 이 페이지에는 Visual Studio를 설치할 때 선택한 **일반** 프로필의 기본 명령 바로 가기가 나와 있습니다. 선택한 프로필과 관계없이 **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음, **키보드**를 선택하여 명령의 [바로 가기를 확인](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)할 수 있습니다. 또한 지정한 명령에 다른 바로 가기를 할당하여 바로 가기를 사용자 지정할 수도 있습니다.
+해당 바로 가기 키를 선택하여 Visual Studio의 다양한 [명령](reference/visual-studio-commands.md)과 창에 액세스할 수 있습니다. 이 페이지에는 Visual Studio를 설치할 때 선택한 **일반** 프로필의 기본 명령 바로 가기가 나와 있습니다. 선택한 프로필과 관계없이 **옵션** 대화 상자를 열고 **환경** 노드를 확장한 다음, **키보드** 를 선택하여 명령의 [바로 가기를 확인](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)할 수 있습니다. 또한 지정한 명령에 다른 바로 가기를 할당하여 바로 가기를 사용자 지정할 수도 있습니다.
 
 일반적인 바로 가기 키 목록과 기타 생산성 정보는 다음을 참조하세요.
 
@@ -35,7 +37,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 - [분석](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [편집](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [프로젝트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
+- [테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [아키텍처](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
@@ -60,7 +62,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 
 ## <a name="global-shortcuts"></a>전역 바로 가기
 
-이러한 바로 가기 키는 *전역*이므로 Visual Studio 창에 포커스가 있을 때 사용할 수 있습니다.
+이러한 바로 가기 키는 *전역* 이므로 Visual Studio 창에 포커스가 있을 때 사용할 수 있습니다.
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> 분석
 

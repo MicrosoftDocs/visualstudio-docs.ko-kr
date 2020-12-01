@@ -1,5 +1,7 @@
 ---
 title: 템플릿 찾기
+description: 프로젝트 템플릿과 항목 템플릿을 찾아서 구성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecbc5421562ca79466ace0d93a16ac4e3635ddfb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 517918bf7e56381a4d4d2a36fc43f976a07c29ea
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284245"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597160"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
 
@@ -87,7 +89,7 @@ ms.locfileid: "85284245"
 ::: moniker-end
 
 > [!TIP]
-> **도구** > **옵션** > **프로젝트 및 솔루션** > **위치**에서 사용자 템플릿의 알려진 위치를 변경할 수 있습니다.
+> **도구** > **옵션** > **프로젝트 및 솔루션** > **위치** 에서 사용자 템플릿의 알려진 위치를 변경할 수 있습니다.
 
 ::: moniker range="vs-2017"
 
@@ -106,7 +108,7 @@ ms.locfileid: "85284245"
 
 1. 이 범주의 모든 템플릿을 새 폴더에 넣습니다.
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 선택합니다.
 
    **HelloWorld** 범주가 **새 프로젝트** 대화 상자의 **설치됨** > **Visual C#** 아래에 나타납니다.
 
@@ -118,7 +120,7 @@ ms.locfileid: "85284245"
 
 1. 이 범주의 모든 템플릿을 새 폴더에 넣습니다.
 
-1. 프로젝트를 만들거나 기존 프로젝트를 엽니다. 그런 다음 **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. 프로젝트를 만들거나 기존 프로젝트를 엽니다. 그런 다음 **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
    **HelloWorld** 범주가 **새 항목 추가** 대화 상자의 **설치됨** > **Visual C# 항목** 아래에 나타납니다.
 
@@ -146,7 +148,7 @@ ms.locfileid: "85284245"
 
 1. *.vstemplate* 파일을 저장한 다음, 닫습니다.
 
-1. 템플릿에 있는 파일을 선택하여 선택 사항을 마우스 오른쪽 단추로 클릭하고, **보내기** > **압축(ZIP) 폴더**를 선택합니다.
+1. 템플릿에 있는 파일을 선택하여 선택 사항을 마우스 오른쪽 단추로 클릭하고, **보내기** > **압축(ZIP) 폴더** 를 선택합니다.
 
    파일이 *.zip* 파일로 압축됩니다.
 

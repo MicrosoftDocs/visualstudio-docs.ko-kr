@@ -1,5 +1,7 @@
 ---
 title: DebuggerDisplay 특성 추가
+description: DebuggerDisplay 특성을 추가하여 디버거 변수 창에 개체, 속성 또는 필드가 표시되는 방식을 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810391"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871121"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 추가
 
@@ -30,7 +32,7 @@ ms.locfileid: "90810391"
 
 1. 형식, 대리자, 속성 또는 필드에 커서를 놓습니다. 
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 **DebuggerDisplay 특성 추가**를 선택합니다.
+2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 **DebuggerDisplay 특성 추가** 를 선택합니다.
 
     ![비교 연산자 생성](media/add-debugger-display-attribute.png)
 

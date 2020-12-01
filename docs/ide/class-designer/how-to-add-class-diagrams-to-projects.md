@@ -1,5 +1,6 @@
 ---
 title: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)
+description: 클래스와 기타 형식을 디자인, 편집, 리팩터링하고, C#, Visual Basic 또는 C++ 프로젝트에 클래스 다이어그램을 추가하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa336672dce538c5bfe07cd8ae7b1a4c5771cbd
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102557"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903002"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
 
@@ -69,7 +70,7 @@ ms.locfileid: "93102557"
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>클래스 다이어그램에 전체 프로젝트의 내용을 표시하려면
 
-**솔루션 탐색기** 나 클래스 뷰에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **보기** , **클래스 다이어그램 보기** 를 차례로 선택합니다.
+**솔루션 탐색기** 나 클래스 뷰에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **보기**, **클래스 다이어그램 보기** 를 차례로 선택합니다.
 
 자동으로 채워진 클래스 다이어그램이 만들어집니다.
 

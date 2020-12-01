@@ -1,8 +1,11 @@
 ---
 title: 코드 편집기의 편집 개요
+description: Visual Studio에서 코드 편집기를 사용하여 파일에 코드를 추가하는 방법과 코드를 작성, 탐색, 리팩터링하는 방법을 알아봅니다.
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595269"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901780"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
@@ -50,13 +53,13 @@ Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파�
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio를 엽니다. **Esc** 키를 누르거나 시작 창에서 **코드를 사용하지 않고 계속**을 클릭하여 개발 환경을 엽니다.
+1. Visual Studio를 엽니다. **Esc** 키를 누르거나 시작 창에서 **코드를 사용하지 않고 계속** 을 클릭하여 개발 환경을 엽니다.
 
 ::: moniker-end
 
-2. 메뉴 모음의 **파일** 메뉴에서 **새로 만들기** > **파일**을 선택합니다.
+2. 메뉴 모음의 **파일** 메뉴에서 **새로 만들기** > **파일** 을 선택합니다.
 
-3. **새 파일** 대화 상자의 **일반** 범주 아래에서 **Visual C# 클래스**를 선택한 다음 **열기**를 선택합니다.
+3. **새 파일** 대화 상자의 **일반** 범주 아래에서 **Visual C# 클래스** 를 선택한 다음 **열기** 를 선택합니다.
 
    C# 클래스의 구조를 사용하여 편집기에서 새 파일이 열립니다. (전체 Visual Studio 프로젝트를 만들어서 코드 편집기에서 제공하는 일부 혜택을 가져올 필요가 없습니다. 코드 파일만 있으면 됩니다.)
 
@@ -64,7 +67,7 @@ Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파�
 
 ## <a name="use-code-snippets"></a>코드 조각 사용
 
-Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각*을 제공합니다. [코드 조각](../ide/code-snippets.md)은 C#, Visual Basic 및 C++를 포함하여 다양한 프로그래밍 언어에서 사용할 수 있습니다. C# `void Main` 코드 조각을 파일에 추가하겠습니다.
+Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각* 을 제공합니다. [코드 조각](../ide/code-snippets.md)은 C#, Visual Basic 및 C++를 포함하여 다양한 프로그래밍 언어에서 사용할 수 있습니다. C# `void Main` 코드 조각을 파일에 추가하겠습니다.
 
 1. 파일에서 마지막 닫기 괄호 **}** 바로 위에 커서를 놓고 `svm` 문자를 입력합니다. (`svm`은 `static void Main`을 의미하며, [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 메서드는 C# 애플리케이션의 진입점입니다.)
 
@@ -76,7 +79,7 @@ Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠�
 
    `static void Main()` 메서드 서명이 파일에 추가됩니다.
 
-사용 가능한 코드 조각은 프로그래밍 언어마다 다릅니다. **편집** > **IntelliSense** > **코드 조각 삽입**을 선택한 다음, 언어의 폴더를 선택하여 언어에 사용 가능한 코드 조각을 확인할 수 있습니다. C#의 경우 목록은 다음과 같습니다.
+사용 가능한 코드 조각은 프로그래밍 언어마다 다릅니다. **편집** > **IntelliSense** > **코드 조각 삽입** 을 선택한 다음, 언어의 폴더를 선택하여 언어에 사용 가능한 코드 조각을 확인할 수 있습니다. C#의 경우 목록은 다음과 같습니다.
 
 ![C# 코드 조각 목록](media/tutorial-code-snippet-list.png)
 
@@ -124,13 +127,13 @@ Visual Studio의 메뉴 모음에 있는 단추 행인 도구 모음은 코딩�
 
 ![축소 단추 개요](media/tutorial-collapse.png)
 
-코드 블록은 줄임표(`...`) 뒤에 있는 첫 번째 줄로 축소됩니다. 코드 블록을 다시 확장하려면 더하기 기호가 있는 동일한 회색 상자를 클릭하거나 **Ctrl**+**M**, **Ctrl**+**M**을 다시 누릅니다. 이 기능은 [개요](../ide/outlining.md)라고 하고 긴 메서드 또는 전체 클래스를 축소하는 경우에 특히 유용합니다.
+코드 블록은 줄임표(`...`) 뒤에 있는 첫 번째 줄로 축소됩니다. 코드 블록을 다시 확장하려면 더하기 기호가 있는 동일한 회색 상자를 클릭하거나 **Ctrl**+**M**, **Ctrl**+**M** 을 다시 누릅니다. 이 기능은 [개요](../ide/outlining.md)라고 하고 긴 메서드 또는 전체 클래스를 축소하는 경우에 특히 유용합니다.
 
 ## <a name="view-symbol-definitions"></a>기호 정의 보기
 
-Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 검사할 수 있습니다. 예를 들어 기호가 참조되는 **정의로 이동**을 선택하는 것이 정의가 포함되는 파일을 탐색하는 한 가지 방법입니다. [정의 피킹](../ide/go-to-and-peek-definition.md#peek-definition)을 사용하는 것도 작업 중인 파일에서 포커스를 이동하지 않는 더욱 빠른 방식입니다. `string` 형식의 정의를 피킹하겠습니다.
+Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 검사할 수 있습니다. 예를 들어 기호가 참조되는 **정의로 이동** 을 선택하는 것이 정의가 포함되는 파일을 탐색하는 한 가지 방법입니다. [정의 피킹](../ide/go-to-and-peek-definition.md#peek-definition)을 사용하는 것도 작업 중인 파일에서 포커스를 이동하지 않는 더욱 빠른 방식입니다. `string` 형식의 정의를 피킹하겠습니다.
 
-1. `string`의 모든 항목을 마우스 오른쪽 단추로 클릭하고 콘텐츠 메뉴에서 **정의 피킹**을 선택합니다. 또는 **Alt**+**F12** 키를 누릅니다.
+1. `string`의 모든 항목을 마우스 오른쪽 단추로 클릭하고 콘텐츠 메뉴에서 **정의 피킹** 을 선택합니다. 또는 **Alt**+**F12** 키를 누릅니다.
 
    `String` 클래스의 정의를 포함한 팝업 창이 표시됩니다. 팝업 창 내에서 스크롤하거나 피킹된 코드에서 다른 형식의 정의에 피킹할 수도 있습니다.
 
@@ -148,7 +151,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
    foreach (string str in qu
    ```
 
-   IntelliSense에 `query` 기호에 대한 **요약 정보**가 표시됩니다.
+   IntelliSense에 `query` 기호에 대한 **요약 정보** 가 표시됩니다.
 
    ![Visual Studio에서 IntelliSense 단어 완성](media/tutorial-intellisense-completion-list.png)
 
@@ -167,11 +170,11 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 
 누구도 처음부터 제대로 코딩할 수 없습니다. 변경할 수 있는 작업 중 하나는 변수 또는 메서드의 이름입니다. Visual Studio의 [리팩터링](../ide/refactoring-in-visual-studio.md) 기능을 사용하여 `_words` 변수 이름을 `words`로 변경해 보겠습니다.
 
-1. `_words` 변수의 정의 위에 커서를 두거나, 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **이름 바꾸기**를 선택하거나, **Ctrl**+**R**, **Ctrl**+**R** 키를 누릅니다.
+1. `_words` 변수의 정의 위에 커서를 두거나, 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택하거나, **Ctrl**+**R**, **Ctrl**+**R** 키를 누릅니다.
 
    편집기의 오른쪽 위에 팝업 **이름 바꾸기** 대화 상자가 나타납니다.
 
-1. 원하는 이름 **단어**를 입력합니다. 쿼리에서 `words`에 대한 참조 이름이 자동으로 바뀝니다. **Enter** 키를 누르기 전에 **이름 바꾸기** 팝업 상자에서 **주석 포함** 확인란을 선택합니다.
+1. 원하는 이름 **단어** 를 입력합니다. 쿼리에서 `words`에 대한 참조 이름이 자동으로 바뀝니다. **Enter** 키를 누르기 전에 **이름 바꾸기** 팝업 상자에서 **주석 포함** 확인란을 선택합니다.
 
    ![이름 바꾸기 대화 상자](media/tutorial-rename.png)
 
@@ -184,7 +187,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)
 - [코드 탐색](../ide/navigating-code.md)

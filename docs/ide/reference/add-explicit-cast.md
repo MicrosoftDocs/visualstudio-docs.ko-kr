@@ -1,5 +1,7 @@
 ---
 title: 명시적 캐스트 추가
+description: 코드의 컨텍스트를 기반으로 식에 명시적 캐스트를 자동 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/26/2020
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8208ec9c84eb076ab5c313b3078d3853619fb06
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182978"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870848"
 ---
 # <a name="add-explicit-cast"></a>명시적 캐스트 추가
 

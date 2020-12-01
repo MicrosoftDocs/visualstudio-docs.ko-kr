@@ -1,5 +1,7 @@
 ---
 title: 웹 성능 테스트에 데이터 소스 추가
+description: 예를 들어, 다른 값을 폼 게시 매개 변수에 제공하는 경우와 같이 데이터를 바인딩하여 다른 값을 같은 테스트에 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c43545af9063ad83c61631b59032751fd9526a12
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289068"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442203"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
@@ -128,7 +130,7 @@ ms.locfileid: "85289068"
 
      ![RadioButtonList1 값에 ColorName 필드 바인딩](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. **솔루션 탐색기**에서 *Local.testsettings* 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
+2. **솔루션 탐색기** 에서 *Local.testsettings* 파일을 열고, **데이터 소스 행마다 한 번씩 실행** 옵션을 선택합니다.
 
      ![테스트 설정 파일 편집](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -140,7 +142,7 @@ ms.locfileid: "85289068"
 
      ![웹 성능 테스트를 실행하여 바인딩 확인](../test/media/web_test_databinding_sql_runtest.png)
 
-     각 데이터 행에 대해 두 가지 실행이 표시됩니다. 실행 1은 페이지 *Red.aspx*에 대한 요청을 보내고 실행 2는 페이지 *Blue.aspx*에 대한 요청을 보냅니다.
+     각 데이터 행에 대해 두 가지 실행이 표시됩니다. 실행 1은 페이지 *Red.aspx* 에 대한 요청을 보내고 실행 2는 페이지 *Blue.aspx* 에 대한 요청을 보냅니다.
 
      ![테스트 실행 결과](../test/media/web_test_databinding_sql_runresults.png)
 
@@ -154,7 +156,7 @@ ms.locfileid: "85289068"
 
      ![데이터 바인딩을 사용하여 테스트 통과](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>질문과 대답
+## <a name="q--a"></a>Q & A
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q: 데이터 소스로 사용할 수 있는 데이터베이스는 무엇입니까?
 
@@ -200,7 +202,7 @@ ms.locfileid: "85289068"
 
 **A:** 열 머리글을 추가할 수 없는 경우 스키마 설명 파일을 사용하여 CSV 파일을 데이터베이스로 취급할 수 있습니다.
 
-1. *schema.ini*라는 새 텍스트 파일을 추가합니다.
+1. *schema.ini* 라는 새 텍스트 파일을 추가합니다.
 
      ![schema.ini 파일 추가](../test/media/web_test_databinding_schemafile.png)
 
@@ -227,11 +229,11 @@ ms.locfileid: "85289068"
 
      ![.NET Framework OLE DB 데이터 공급자 선택](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
-7. **고급**을 선택합니다.
+7. **고급** 을 선택합니다.
 
      ![고급 선택](../test/media/web_test_databinding_advanced.png)
 
-8. 공급자 속성의 경우 Microsoft.Jet.OLEDB.4.0을 선택한 다음, **확장 속성**을 Text;HDR=NO로 설정합니다.
+8. 공급자 속성의 경우 Microsoft.Jet.OLEDB.4.0을 선택한 다음, **확장 속성** 을 Text;HDR=NO로 설정합니다.
 
      ![고급 속성 적용](../test/media/web_test_databinding_advancedproperties.png)
 

@@ -1,5 +1,7 @@
 ---
 title: 인코딩 및 줄 바꿈 문자
+description: Visual Studio에서 줄바꿈으로 해석하는 문자와 원래 인코딩 및 줄 바꿈 문자를 유지하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045598"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006642"
 ---
 # <a name="encodings-and-line-endings"></a>인코딩 및 줄 끝
 
@@ -50,7 +52,7 @@ Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.
 
 > [!NOTE]
 > **파일** 메뉴에서 **고급 저장 옵션** 이 보이지 않으면 추가할 수 있습니다. 
-> 1. **도구** , **사용자 지정** 을 선택합니다. 
+> 1. **도구**, **사용자 지정** 을 선택합니다. 
 > 1. **명령** 탭을 선택하고 **메뉴 표시줄** 라디오 단추를 선택한 다음 해당 드롭다운 목록에서 **파일** 을 선택합니다. **명령 추가** 단추를 선택합니다. 
 > 1. **명령 추가** 대화 상자의 **범주** 에서 **파일** 을 선택한 다음, **명령** 목록에서 **고급 저장 옵션** 을 선택합니다. **확인** 단추를 선택합니다.
 > 1. **위로 이동** 및 **아래로 이동** 단추를 사용하여 명령을 메뉴의 원하는 위치로 이동합니다. **닫기** 를 선택하여 **사용자 지정** 대화 상자를 닫습니다. 

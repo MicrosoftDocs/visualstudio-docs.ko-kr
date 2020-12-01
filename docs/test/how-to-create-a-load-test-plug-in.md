@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 플러그 인 만들기
+description: 부하 테스트의 기능을 확장하거나 수정할 수 있도록 부하 테스트를 실행하는 동안 부하 테스트 플러그인을 만들어서 코드를 여러 번 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288028"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441094"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>방법: 부하 테스트 플러그 인 만들기
 
@@ -38,44 +40,44 @@ ms.locfileid: "85288028"
 
      자세한 내용은 [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)를 참조하세요.
 
-3. 새 **클래스 라이브러리** 프로젝트를 솔루션에 추가합니다. (**솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.)
+3. 새 **클래스 라이브러리** 프로젝트를 솔루션에 추가합니다. (**솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** 를 선택한 다음, **새 프로젝트** 를 선택합니다.)
 
-4. **솔루션 탐색기**의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+4. **솔루션 탐색기** 의 새 클래스 라이브러리에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다.
 
    **참조 추가** 대화 상자가 표시됩니다.
 
-5. **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.LoadTestFramework**를 선택합니다.
+5. **.NET** 탭을 선택하고 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 를 선택합니다.
 
-6. **확인**을 선택합니다.
+6. **확인** 을 선택합니다.
 
-   **Microsoft.VisualStudio.QualityTools.LoadTestFramework**에 대한 참조가 **솔루션 탐색기**의 **Reference** 폴더에 추가됩니다.
+   **Microsoft.VisualStudio.QualityTools.LoadTestFramework** 에 대한 참조가 **솔루션 탐색기** 의 **Reference** 폴더에 추가됩니다.
 
-7. **솔루션 탐색기**에서 부하 테스트 플러그 인을 추가할 부하 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+7. **솔루션 탐색기** 에서 부하 테스트 플러그 인을 추가할 부하 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다.
 
    **참조 추가 대화 상자가 표시됩니다**.
 
 8. **프로젝트** 탭을 선택하고 클래스 라이브러리 프로젝트를 선택합니다.
 
-9. **확인**을 선택합니다.
+9. **확인** 을 선택합니다.
 
-10. **코드 편집기**에서 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 네임스페이스에 대한 `using` 문을 추가합니다.
+10. **코드 편집기** 에서 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 네임스페이스에 대한 `using` 문을 추가합니다.
 
 11. 클래스 라이브러리 프로젝트에서 만들어진 클래스에 대한 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 구현합니다. 샘플 구현을 보려면 다음 예제 단원을 참조하십시오.
 
 12. 코드를 작성한 후 새 프로젝트를 빌드합니다.
 
-13. 부하 테스트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **부하 테스트 플러그 인 추가**를 선택합니다.
+13. 부하 테스트의 최상위 노드를 마우스 오른쪽 단추로 클릭하고 **부하 테스트 플러그 인 추가** 를 선택합니다.
 
      **부하 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
 
-14. **플러그 인 선택**에서 부하 테스트 플러그 인 클래스를 선택합니다.
+14. **플러그 인 선택** 에서 부하 테스트 플러그 인 클래스를 선택합니다.
 
 15. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
     > [!NOTE]
     > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 **속성** 창을 사용하여 웹 성능 테스트 플러그 인 속성을 변경할 수도 있습니다.
 
-16. **확인**을 선택합니다.
+16. **확인** 을 선택합니다.
 
      해당 플러그 인이 **부하 테스트 플러그 인** 폴더에 추가됩니다.
 

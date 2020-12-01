@@ -1,5 +1,7 @@
 ---
 title: 진단 데이터 및 시스템에서 생성된 로그
+description: Visual Studio 시스템 생성 로그와 수집되는 데이터 형식 및 이를 문제 해결과 제품 품질 개선에 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387254"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005927"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio에서 수집한 시스템에서 생성된 로그
 

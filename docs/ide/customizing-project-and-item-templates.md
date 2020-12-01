@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 템플릿 및 항목 템플릿 사용자 지정
+description: 프로젝트 템플릿 및 항목 템플릿을 만든 후 사용자 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf53f572708dcacc955b9488c322227309289b9b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567556"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006278"
 ---
 # <a name="customize-project-and-item-templates"></a>프로젝트 및 항목 템플릿 사용자 지정
 
@@ -35,7 +37,7 @@ ms.locfileid: "75567556"
 
    자세한 내용은 [방법: 프로젝트 템플릿에 마법사 사용(확장성)](../extensibility/how-to-use-wizards-with-project-templates.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 템플릿 문제 해결](../ide/how-to-troubleshoot-templates.md)

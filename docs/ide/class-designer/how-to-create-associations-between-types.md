@@ -1,5 +1,7 @@
 ---
 title: '방법: 형식 간의 연결 만들기(클래스 디자이너)'
+description: 클래스 디자이너에서 여러 형식 간의 연결을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,25 +18,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cce893efaad5f2317b175391a2685cae7053e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770954"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901611"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 연결 만들기
 
-**클래스 디자이너**의 연결 선은 다이어그램에서 클래스가 어떻게 연결되어 있는지 보여 줍니다. 연결 선은 해당 프로젝트에서 다른 클래스의 필드 또는 속성의 형식인 클래스를 나타냅니다. 일반적으로 연결 선은 프로젝트에서 클래스 간에 가장 중요한 관계를 보여 주는 데 사용됩니다.
+**클래스 디자이너** 의 연결 선은 다이어그램에서 클래스가 어떻게 연결되어 있는지 보여 줍니다. 연결 선은 해당 프로젝트에서 다른 클래스의 필드 또는 속성의 형식인 클래스를 나타냅니다. 일반적으로 연결 선은 프로젝트에서 클래스 간에 가장 중요한 관계를 보여 주는 데 사용됩니다.
 
 모든 필드와 속성을 연결로 표시할 수 있지만 다이어그램에서 강조할 내용에 따라 중요한 멤버만 연결로 표시하는 것이 좋습니다. 그 밖의 멤버는 일반 멤버로 표시하거나 완전히 숨길 수도 있습니다.
 
 > [!NOTE]
-> **클래스 디자이너**에서는 단방향 연결만 지원됩니다.
+> **클래스 디자이너** 에서는 단방향 연결만 지원됩니다.
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>클래스 다이어그램에서 연결 선을 정의하려면
 
-1. 도구 상자의 **클래스 디자이너**에서 **연결**을 선택합니다.
+1. 도구 상자의 **클래스 디자이너** 에서 **연결** 을 선택합니다.
 
 2. 서로 연결할 두 모양 간에 연결 선을 그립니다.
 
@@ -50,10 +52,10 @@ ms.locfileid: "85770954"
 
    도형은 포커스를 얻고 멤버는 **클래스 세부 내용** 및 **속성** 창에 표시됩니다.
 
-2. **클래스 세부 내용**이나 **속성** 창에서 해당 속성의 이름 필드를 편집하고 **Enter** 키를 누릅니다.
+2. **클래스 세부 내용** 이나 **속성** 창에서 해당 속성의 이름 필드를 편집하고 **Enter** 키를 누릅니다.
 
    **클래스 세부 내용** 창, 형식 연결 선, **속성** 창 및 코드에서 이름이 업데이트됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 멤버 표시와 연결 표시 간 변경](how-to-change-between-member-notation-and-association-notation.md)

@@ -1,5 +1,7 @@
 ---
 title: 코딩된 UI 테스트 및 작업 기록 확장
+description: 코딩된 UI 테스트 프레임워크의 확장성을 활용하여 특정 UI에 대해 코딩된 UI 테스트 프레임워크 확장을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c8efead1712ace2f533cb9075ea7a4c5305289a4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a2996da30c0be8e3dc4d303d0e46e901c8b885d
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036082"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442627"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 
@@ -29,7 +31,7 @@ ms.locfileid: "90036082"
 > [!NOTE]
 > 샘플은 Microsoft Excel 2010에서 사용하도록 제공됩니다. 다른 버전의 Excel에서 작동하거나 작동하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

@@ -1,5 +1,6 @@
 ---
 title: 단위 테스트에서 MSTest 사용
+description: Visual Studio의 단위 테스트를 지원하는 MSTest 프레임워크에 대해 알아봅니다. 이러한 클래스와 멤버를 사용하여 단위 테스트를 코딩합니다.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 759eaded70c3e95b76123062e00072aced4ecdfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810538"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598577"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>단위 테스트에서 MSTest 프레임워크 사용
 
@@ -96,7 +97,7 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 
 ## <a name="the-testcontext-class"></a>TestContext 클래스
 
-다음 특성 및 해당 특성에 할당된 값은 특정 테스트 메서드에 대해 Visual Studio 속성 창에 표시됩니다. 이러한 특성은 단위 테스트의 코드를 통해 액세스할 수 없습니다. 대신 개발자가 Visual Studio의 IDE를 통해, 또는 Visual Studio 테스트 엔진이 단위 테스트를 사용하거나 실행하는 방식에 영향을 줍니다. 예를 들어, 이러한 특성 중 일부는 **테스트 관리자** 창과 **테스트 결과** 창에 열로 표시됩니다. 즉, 이러한 특성을 사용하여 테스트 및 테스트 결과를 그룹화하고 정렬할 수 있습니다. 이러한 특성 중 하나로 단위 테스트에 임의의 메타데이터를 추가하는 데 사용하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>가 있습니다. 예를 들어 이 특성을 사용하면 단위 테스트를 `[TestProperty("TestPass", "Accessibility")]`로 표시하여 이 테스트에 포함되는 테스트 합격의 이름을 저장할 수 있습니다. 또는 테스트의 종류를 나타내는 표시기(`[TestProperty("TestKind", "Localization")]`)를 저장하는 데 이 특성을 사용할 수 있습니다. 이 특성을 사용하여 만드는 속성과 할당하는 속성 값은 둘 다 Visual Studio **속성** 창에서 **테스트 특정**이라는 제목 아래에 표시됩니다.
+다음 특성 및 해당 특성에 할당된 값은 특정 테스트 메서드에 대해 Visual Studio 속성 창에 표시됩니다. 이러한 특성은 단위 테스트의 코드를 통해 액세스할 수 없습니다. 대신 개발자가 Visual Studio의 IDE를 통해, 또는 Visual Studio 테스트 엔진이 단위 테스트를 사용하거나 실행하는 방식에 영향을 줍니다. 예를 들어, 이러한 특성 중 일부는 **테스트 관리자** 창과 **테스트 결과** 창에 열로 표시됩니다. 즉, 이러한 특성을 사용하여 테스트 및 테스트 결과를 그룹화하고 정렬할 수 있습니다. 이러한 특성 중 하나로 단위 테스트에 임의의 메타데이터를 추가하는 데 사용하는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>가 있습니다. 예를 들어 이 특성을 사용하면 단위 테스트를 `[TestProperty("TestPass", "Accessibility")]`로 표시하여 이 테스트에 포함되는 테스트 합격의 이름을 저장할 수 있습니다. 또는 테스트의 종류를 나타내는 표시기(`[TestProperty("TestKind", "Localization")]`)를 저장하는 데 이 특성을 사용할 수 있습니다. 이 특성을 사용하여 만드는 속성과 할당하는 속성 값은 둘 다 Visual Studio **속성** 창에서 **테스트 특정** 이라는 제목 아래에 표시됩니다.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 

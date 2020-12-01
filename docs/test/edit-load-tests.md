@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 편집기
+description: 부하 테스트를 정의하는 시나리오, 카운터 집합, 실행 설정의 차이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288704"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441471"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 
@@ -22,7 +24,7 @@ ms.locfileid: "85288704"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-부하 테스트는 *시나리오*, *카운터 집합* 및 *실행 설정*으로 정의됩니다. 다음 그림은 [시나리오](../test/edit-load-test-scenarios.md), [카운터 집합](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) 및 [실행 설정](../test/load-test-run-settings-properties.md)의 차이점을 설명합니다.
+부하 테스트는 *시나리오*, *카운터 집합* 및 *실행 설정* 으로 정의됩니다. 다음 그림은 [시나리오](../test/edit-load-test-scenarios.md), [카운터 집합](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) 및 [실행 설정](../test/load-test-run-settings-properties.md)의 차이점을 설명합니다.
 
 ![부하 테스트 아키텍처](../test/media/load_test_editor.png)
 
@@ -38,7 +40,7 @@ ms.locfileid: "85288704"
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>성능 카운터 집합 구성 및 관리
 
-부하 테스트에서는 기술별로 구성된 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합에는 부하 테스트, IIS, ASP.NET 및 SQL이 포함됩니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 부하 테스트에 포함되도록 지정한 컴퓨터에 대해 미리 정의되고 중요한 초기 카운터 집합이 구성됩니다. **부하 테스트 편집기**에서 카운터를 관리합니다.
+부하 테스트에서는 기술별로 구성된 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합에는 부하 테스트, IIS, ASP.NET 및 SQL이 포함됩니다. **부하 테스트 새로 만들기 마법사** 를 사용하여 부하 테스트를 만들 때 부하 테스트에 포함되도록 지정한 컴퓨터에 대해 미리 정의되고 중요한 초기 카운터 집합이 구성됩니다. **부하 테스트 편집기** 에서 카운터를 관리합니다.
 
 자세한 내용은 [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)을 참조하세요.
 
@@ -48,7 +50,7 @@ ms.locfileid: "85288704"
 
 자세한 내용은 [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md) 및 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)

@@ -1,5 +1,7 @@
 ---
 title: 코딩된 UI 테스트 분석
+description: 코딩된 UI 테스트를 만들 때 코딩된 UI 테스트에 추가되는 파일에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591205"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441796"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 
@@ -24,17 +26,17 @@ ms.locfileid: "75591205"
 
 ## <a name="contents-of-a-coded-ui-test"></a>코딩된 UI 테스트 내용
 
-코딩된 UI 테스트를 만드는 경우 **코딩된 UI 테스트 빌더**에서 테스트 대상 사용자 인터페이스 맵과 모든 테스트에 대한 테스트 메서드, 매개 변수 및 어설션을 만듭니다. 각 테스트에 대한 클래스 파일도 만듭니다.
+코딩된 UI 테스트를 만드는 경우 **코딩된 UI 테스트 빌더** 에서 테스트 대상 사용자 인터페이스 맵과 모든 테스트에 대한 테스트 메서드, 매개 변수 및 어설션을 만듭니다. 각 테스트에 대한 클래스 파일도 만듭니다.
 
 |파일|콘텐츠|편집 가능 여부|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[선언 섹션](#UIMapDesignerFile)<br /><br /> [UIMap 클래스](#UIMapClass)(부분, 자동 생성됨)<br /><br /> [메서드](#UIMapMethods)<br /><br /> [속성](#UIMapProperties)|예|
-|[UIMap.cs](#UIMapCS)|[UIMap 클래스](#UIMapCS)(부분)|yes|
-|[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 클래스](#CodedUITestCS)<br /><br /> [메서드](#CodedUITestMethods)<br /><br /> [속성](#CodedUITestProperties)|yes|
+|[UIMap.cs](#UIMapCS)|[UIMap 클래스](#UIMapCS)(부분)|Yes|
+|[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 클래스](#CodedUITestCS)<br /><br /> [메서드](#CodedUITestMethods)<br /><br /> [속성](#CodedUITestProperties)|Yes|
 |[UIMap.uitest](#UIMapuitest)|테스트용 UI의 XML 맵|예|
 
 ### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
-이 파일에는 테스트를 만들 때 **코딩된 UI 테스트 빌더**에서 자동으로 생성되는 코드가 들어 있습니다. 이 파일은 테스트가 변경될 때마다 다시 생성되므로 코드를 추가하거나 수정할 수 있는 파일이 아닙니다.
+이 파일에는 테스트를 만들 때 **코딩된 UI 테스트 빌더** 에서 자동으로 생성되는 코드가 들어 있습니다. 이 파일은 테스트가 변경될 때마다 다시 생성되므로 코드를 추가하거나 수정할 수 있는 파일이 아닙니다.
 
 #### <a name="declarations-section"></a>선언 섹션
 이 섹션에는 Windows UI에 대한 다음 선언이 포함됩니다.
@@ -65,7 +67,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-클래스 코드는 partial 클래스로 선언된 클래스에 적용되는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성으로 시작합니다. 이 파일의 모든 클래스에도 해당 특성이 적용되는 것을 확인합니다. 이 클래스에 대한 더 많은 코드를 포함할 수 있는 다른 파일은 뒷부분에 설명하는 *UIMap.cs*입니다.
+클래스 코드는 partial 클래스로 선언된 클래스에 적용되는 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성으로 시작합니다. 이 파일의 모든 클래스에도 해당 특성이 적용되는 것을 확인합니다. 이 클래스에 대한 더 많은 코드를 포함할 수 있는 다른 파일은 뒷부분에 설명하는 *UIMap.cs* 입니다.
 
 생성된 `UIMap` 클래스에는 테스트를 기록할 때 지정된 각 메서드에 대한 코드가 포함됩니다.
 
@@ -187,12 +189,12 @@ public class AddItemsParams
 기본적으로 이 파일은 메서드나 속성이 없는 partial `UIMap` 클래스를 포함합니다.
 
 #### <a name="uimap-class"></a>UIMap 클래스
-여기서 사용자 지정 코드를 만들어 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 기능을 확장할 수 있습니다. 이 파일에서 만드는 코드는 테스트를 수정할 때마다 **코딩된 UI 테스트 빌더**에서 덮어쓰지 않습니다.
+여기서 사용자 지정 코드를 만들어 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 기능을 확장할 수 있습니다. 이 파일에서 만드는 코드는 테스트를 수정할 때마다 **코딩된 UI 테스트 빌더** 에서 덮어쓰지 않습니다.
 
 [UIMap](/previous-versions/dd580454(v=vs.140))의 모든 부분에서 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 다른 부분에 있는 메서드와 속성을 사용할 수 있습니다.
 
 ### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
-이 파일은 **코딩된 UI 테스트 빌더**에서 생성되지만 테스트를 수정할 때마다 다시 생성되지 않으므로 이 파일의 코드를 수정할 수 있습니다. 파일 이름은 테스트를 만들 때 지정한 테스트 이름에서 생성됩니다.
+이 파일은 **코딩된 UI 테스트 빌더** 에서 생성되지만 테스트를 수정할 때마다 다시 생성되지 않으므로 이 파일의 코드를 수정할 수 있습니다. 파일 이름은 테스트를 만들 때 지정한 테스트 이름에서 생성됩니다.
 
 #### <a name="codeduitest1-class"></a>CodedUITest1 클래스
 
@@ -266,7 +268,7 @@ public void MyTestCleanup()
 
 *UIMap.uitest* 파일은 직접 편집할 수 없습니다. 그러나 코딩된 UI 빌더를 사용하여 테스트를 수정할 수 있으며, *UIMap.uitest* 파일과 [*UIMap.Designer.cs*](#UIMapDesignerFile) 파일이 자동으로 수정됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

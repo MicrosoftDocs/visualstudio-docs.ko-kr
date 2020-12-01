@@ -1,5 +1,6 @@
 ---
 title: shim을 사용하여 앱 격리(유닛 테스트)
+description: 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회하는 shim 유형의 사용 방법을 알아봅니다. shim은 모든 호출에서 일관된 결과를 반환할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325921"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598213"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 
@@ -70,7 +71,7 @@ using (ShimsContext.Create()) {
 1. **솔루션 탐색기** 에서 
     - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
     ::: moniker range=">=vs-2019"
-    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+    - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리**, **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
     ::: moniker-end
     - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
 
@@ -523,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>제한 사항
 
-Shim은 .NET 기본 클래스 라이브러리 **mscorlib** , **System** (.NET Framework) 및 **System.Runtime** (.NET Core)의 모든 형식에 사용할 수 없습니다.
+Shim은 .NET 기본 클래스 라이브러리 **mscorlib**, **System**(.NET Framework) 및 **System.Runtime**(.NET Core)의 모든 형식에 사용할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
 

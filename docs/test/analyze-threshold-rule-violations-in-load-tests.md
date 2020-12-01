@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트의 임계값 규칙 위반 분석
+description: 위반 사항을 분석할 수 있도록 설정한 임계값 규칙의 위반 사항을 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,18 +17,18 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591283"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442705"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
 임계값 규칙은 특정 성능 카운터와 연결되며, 위반이 발생하면 성능 카운터가 설정된 값을 초과하거나 이러한 값 아래로 떨어진 것입니다. 부하 테스트를 실행할 때 이전에 설정한 임계값 규칙에서 발생하는 위반을 분석할 수 있습니다.
 
-위반이 발생한 경우 **부하 테스트 분석기**의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
+위반이 발생한 경우 **부하 테스트 분석기** 의 상태 표시줄에 **임계값 위반** 하이퍼링크가 표시되고 발생한 위반 개수가 지정됩니다. 이 하이퍼링크를 선택하면 임계값 위반 테이블이 표시됩니다. **카운터** 창 및 그래프에서도 임계값 위반을 볼 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -34,14 +36,14 @@ ms.locfileid: "75591283"
 
 임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
-|열|Description|기본적으로 표시되는지 여부|
+|열|설명|기본적으로 표시되는지 여부|
 |-|-|-|
-|Time|부하 테스트 도중 위반이 발생한 시간입니다.|yes|
-|Computer|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:** Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|yes|
-|Category|위반이 발생한 성능 카운터 범주입니다.|yes|
-|카운터|위반이 발생한 성능 카운터 이름입니다.|yes|
-|인스턴스|위반이 발생한 성능 카운터 인스턴스입니다.|yes|
-|메시지|임계값 위반을 설명하는 메시지입니다. 예: **값 5가 중요 임계값 0을 초과합니다.**|yes|
+|시간|부하 테스트 도중 위반이 발생한 시간입니다.|Yes|
+|Computer|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:** Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|Yes|
+|범주|위반이 발생한 성능 카운터 범주입니다.|Yes|
+|카운터|위반이 발생한 성능 카운터 이름입니다.|Yes|
+|인스턴스|위반이 발생한 성능 카운터 인스턴스입니다.|Yes|
+|메시지|임계값 위반을 설명하는 메시지입니다. 예: **값 5가 중요 임계값 0을 초과합니다.**|Yes|
 
 > [!NOTE]
 > 열 머리글을 선택하여 테이블을 정렬할 수 있습니다.
@@ -74,7 +76,7 @@ ms.locfileid: "75591283"
 
 자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

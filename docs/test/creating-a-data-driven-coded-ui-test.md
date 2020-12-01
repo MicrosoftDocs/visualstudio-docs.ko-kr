@@ -1,5 +1,7 @@
 ---
 title: 데이터 기반의 코딩된 UI 테스트 자습서
+description: 다른 매개 변수 값으로 테스트를 여러 번 실행하여 코딩된 데이터 기반 UI 테스트로 다양한 조건을 테스트하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595360"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442679"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 
@@ -40,7 +42,7 @@ ms.locfileid: "75595360"
    > [!NOTE]
    > **코딩된 UI 테스트 프로젝트** 템플릿이 표시되지 않으면, [코딩된 UI 테스트 구성 요소를 설치](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)해야 합니다.
 
-2. **작업을 기록**하도록 선택합니다.
+2. **작업을 기록** 하도록 선택합니다.
 
     ![작업을 기록하도록 선택](../test/media/cuit_datadriven_generatecodedialog.png)
 
@@ -64,17 +66,17 @@ ms.locfileid: "75595360"
    }
    ```
 
-5. `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
+5. `AddNumbers()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **테스트 실행** 을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
 
-    테스트 성공 여부를 보여 주는 테스트 결과가 **테스트 탐색기** 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows**와 **테스트 탐색기**를 차례로 선택합니다.
+    테스트 성공 여부를 보여 주는 테스트 결과가 **테스트 탐색기** 창에 표시됩니다. 테스트 탐색기 창을 열려면 **테스트** 메뉴에서 **Windows** 와 **테스트 탐색기** 를 차례로 선택합니다.
 
-6. 테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성**과 **코딩된 UI 테스트 빌더 사용**을 차례로 선택합니다.
+6. 테스트에서 필요한 값을 확인하는 데 사용되는 어설션 매개 변수 값에는 데이터 소스도 사용할 수 있으므로, 어설션을 추가해 두 숫자의 합이 올바른지 유효성을 검사해 보겠습니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **코딩된 UI 테스트에 대한 코드 생성** 과 **코딩된 UI 테스트 빌더 사용** 을 차례로 선택합니다.
 
     합을 표시하는 계산기의 텍스트 컨트롤을 매핑합니다.
 
     ![UI 텍스트 컨트롤 매핑](../test/media/cuit_datadriven_addassertion.png)
 
-7. 합의 값이 올바른지 유효성을 검사하는 어설션을 추가합니다. 값이 **3**인 **DisplayText** 속성을 선택한 후 **어설션 추가**를 선택합니다. **AreEqual** 비교 연산자를 사용하여 비교 값이 **3**인지 확인합니다.
+7. 합의 값이 올바른지 유효성을 검사하는 어설션을 추가합니다. 값이 **3** 인 **DisplayText** 속성을 선택한 후 **어설션 추가** 를 선택합니다. **AreEqual** 비교 연산자를 사용하여 비교 값이 **3** 인지 확인합니다.
 
     ![어설션 구성](../test/media/cuit_datadriven_builderaddassertion2.png)
 
@@ -92,19 +94,19 @@ ms.locfileid: "75595360"
    }
    ```
 
-9. `ValidateSum()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **테스트 실행**을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
+9. `ValidateSum()` 메서드를 사용하여 테스트가 실행되는지 확인합니다. 위에 나와 있는 테스트 메서드에 커서를 놓고 오른쪽 클릭 메뉴를 열고 **테스트 실행** 을 선택합니다. (바로 가기 키: **Ctrl**+**R**,**T**).
 
      이 시점에서는 모든 매개 변수 값이 해당 메서드에서 상수로 정의되어 있습니다. 다음으로는 데이터 집합을 만들어 테스트를 데이터 기반으로 설정합니다.
 
 ### <a name="step-2---create-a-data-set"></a>2단계 - 데이터 집합 만들기
 
-1. dataDrivenSample 프로젝트 *data.csv*에 텍스트 파일을 추가합니다.
+1. dataDrivenSample 프로젝트 *data.csv* 에 텍스트 파일을 추가합니다.
 
      ![프로젝트에 쉼표로 구분된 값 파일 추가](../test/media/cuit_datadriven_addcsvfile.png)
 
 2. 다음 데이터를 사용하여 *.csv* 파일을 채웁니다.
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|합계|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -114,7 +116,7 @@ ms.locfileid: "75595360"
 
      ![데이터로 .csv 파일 채우기](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3. *.csv* 파일은 올바른 인코딩을 사용하여 저장되어야 합니다. **파일** 메뉴에서 **고급 저장 옵션**을 선택하고 인코딩으로 **유니코드(시그니처 없는 UTF-8) - 코드 페이지 65001**을 선택합니다.
+3. *.csv* 파일은 올바른 인코딩을 사용하여 저장되어야 합니다. **파일** 메뉴에서 **고급 저장 옵션** 을 선택하고 인코딩으로 **유니코드(시그니처 없는 UTF-8) - 코드 페이지 65001** 을 선택합니다.
 
 4. *.csv* 파일은 출력 디렉터리에 복사해야 하며 그렇지 않으면 테스트를 실행할 수 없습니다. **속성** 창에서 해당 파일을 복사합니다.
 
@@ -187,7 +189,7 @@ ms.locfileid: "75595360"
 
          ![코딩에 도움을 받으려면 코딩된 UI 테스트 편집기 사용](../test/media/cuit_datadriven_testeditor.png)
 
-    - **속성** 창에서 **검색 속성**을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
+    - **속성** 창에서 **검색 속성** 을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
 
          ![코딩에 도움을 받으려면 검색 속성 사용](../test/media/cuit_datadriven_searchproperties.png)
 
@@ -199,7 +201,7 @@ ms.locfileid: "75595360"
 
 *.csv* 파일의 값을 사용하여 3회 반복 실행되는 테스트를 확인할 수 있습니다. 유효성 검사도 작동해야 하며, 테스트 탐색기에서 테스트가 통과로 표시되어야 합니다.
 
-## <a name="q--a"></a>Q&A
+## <a name="q--a"></a>Q & A
 
 ### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express 또는 XML과 같은 기타 데이터 소스 형식에는 어떤 데이터 소스 특성이 있나요?
 
@@ -233,7 +235,7 @@ ms.locfileid: "75595360"
 
 기록된 메서드를 수정해야 하는 경우에는 해당 메서드를 *UIMap.cs* 파일에 복사한 후 이름을 바꾸어야 합니다. *UIMap.cs* 파일을 사용하여 *UIMapDesigner.cs* 파일의 메서드와 속성을 재정의할 수 있습니다. 코딩된 *UITest.cs* 파일에서 원래 메서드에 대한 참조를 제거하고 이름을 바꾼 메서드 이름으로 바꾸어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

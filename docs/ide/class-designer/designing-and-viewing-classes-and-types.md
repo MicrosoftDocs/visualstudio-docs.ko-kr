@@ -1,5 +1,7 @@
 ---
 title: 클래스 디자이너 사용
+description: Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스와 기타 형식을 디자인, 시각화, 리팩터링하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,16 +19,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507913"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902989"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Class Designer를 사용하여 클래스와 형식 디자인 및 보기
 
-Visual Studio에서 **클래스 디자이너**를 사용하여 코드의 클래스와 기타 형식을 디자인, 시각화 및 리팩터링할 수 있습니다. C#, Visual Basic 또는 C++ 프로젝트에서 클래스를 만들고 편집하려면 클래스 다이어그램을 사용합니다. 또한 클래스 다이어그램을 사용하여 프로젝트 구조를 더 잘 이해하거나 코드를 다시 구성할 수 있습니다.
+Visual Studio에서 **클래스 디자이너** 를 사용하여 코드의 클래스와 기타 형식을 디자인, 시각화 및 리팩터링할 수 있습니다. C#, Visual Basic 또는 C++ 프로젝트에서 클래스를 만들고 편집하려면 클래스 다이어그램을 사용합니다. 또한 클래스 다이어그램을 사용하여 프로젝트 구조를 더 잘 이해하거나 코드를 다시 구성할 수 있습니다.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>클래스 다이어그램을 사용하여 할 수 있는 작업
 
@@ -56,7 +58,7 @@ Visual Studio에서 **클래스 디자이너**를 사용하여 코드의 클래�
 > [!NOTE]
 > 클래스 디자이너는 소스 파일 위치를 추적하지 않으므로 프로젝트 구조를 변경하거나 프로젝트에서 소스 파일을 이동하면 클래스 디자이너가 해당 형식을 찾지 못할 수 있습니다(특히 소스 형식이 typedef, 기본 클래스 또는 연결 형식인 경우). **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류가 발생하면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../writing-code-in-the-code-and-text-editor.md)
 - [솔루션 전체의 종속성 매핑](../../modeling/map-dependencies-across-your-solutions.md)

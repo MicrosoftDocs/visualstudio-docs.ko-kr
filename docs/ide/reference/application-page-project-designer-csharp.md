@@ -1,5 +1,7 @@
 ---
 title: C# 프로젝트 속성의 애플리케이션 페이지
+description: C# 프로젝트 디자이너의 애플리케이션 페이지를 사용하여 프로젝트의 애플리케이션 설정과 속성을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595828"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871381"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 애플리케이션 페이지(C#)
 
-**프로젝트 디자이너**의 **애플리케이션** 페이지를 사용하여 프로젝트의 애플리케이션 설정과 속성을 지정할 수 있습니다.
+**프로젝트 디자이너** 의 **애플리케이션** 페이지를 사용하여 프로젝트의 애플리케이션 설정과 속성을 지정할 수 있습니다.
 
-**애플리케이션** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성**을 선택합니다. **프로젝트 디자이너**가 나타나면 **애플리케이션** 탭을 클릭합니다.
+**애플리케이션** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음, 메뉴 모음에서 **프로젝트** > **속성** 을 선택합니다. **프로젝트 디자이너** 가 나타나면 **애플리케이션** 탭을 클릭합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -65,9 +67,9 @@ ms.locfileid: "75595828"
 
 **출력 형식**
 
-빌드할 애플리케이션 종류를 지정합니다. 값은 프로젝트 형식에 따라 달라집니다. 예를 들어 **콘솔 앱** 프로젝트의 경우 **Windows 애플리케이션**, **콘솔 애플리케이션** 또는 **클래스 라이브러리**를 출력 형식으로 지정할 수 있습니다.
+빌드할 애플리케이션 종류를 지정합니다. 값은 프로젝트 형식에 따라 달라집니다. 예를 들어 **콘솔 앱** 프로젝트의 경우 **Windows 애플리케이션**, **콘솔 애플리케이션** 또는 **클래스 라이브러리** 를 출력 형식으로 지정할 수 있습니다.
 
-웹 애플리케이션 프로젝트의 경우 **클래스 라이브러리**를 지정해야 합니다.
+웹 애플리케이션 프로젝트의 경우 **클래스 라이브러리** 를 지정해야 합니다.
 
 **출력 형식** 속성에 대한 자세한 내용은 [/target(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option)을 참조하세요.
 
@@ -75,7 +77,7 @@ ms.locfileid: "75595828"
 
 **바인딩 리디렉션 자동 생성**
 
-앱 또는 해당 구성 요소가 동일한 어셈블리의 버전을 두 개 이상 참조하는 경우 프로젝트에 바인딩 리디렉션이 추가됩니다. 프로젝트 파일에서 바인딩 리디렉션을 수동으로 정의하려는 경우 **바인딩 리디렉션 자동 생성**의 선택을 취소합니다.
+앱 또는 해당 구성 요소가 동일한 어셈블리의 버전을 두 개 이상 참조하는 경우 프로젝트에 바인딩 리디렉션이 추가됩니다. 프로젝트 파일에서 바인딩 리디렉션을 수동으로 정의하려는 경우 **바인딩 리디렉션 자동 생성** 의 선택을 취소합니다.
 
 리디렉션에 대한 자세한 내용은 [어셈블리 버전 리디렉션](/dotnet/framework/configure-apps/redirect-assembly-versions)을 참조하세요.
 
@@ -83,7 +85,7 @@ ms.locfileid: "75595828"
 
 애플리케이션 로드 시 호출할 진입점을 정의합니다. 일반적으로 애플리케이션의 기본 폼이나 애플리케이션 시작 시 실행되어야 하는 `Main` 프로시저로 설정됩니다. 클래스 라이브러리에 진입점이 없기 때문에 이 속성의 유일한 옵션은 **(설정 안 함)** 입니다.
 
-기본적으로, WPF 앱 프로젝트에서 이 옵션은 **(설정 안 함)** 으로 설정됩니다. 다른 옵션은 \[projectname].App입니다. WPF 프로젝트에서는 애플리케이션을 시작할 때 UI 리소스를 로드하도록 시작 URI를 설정해야 합니다. 이렇게 하려면 프로젝트에서 *Application.xaml* 파일을 열고, `StartupUri` 속성을 프로젝트의 *.xaml* 파일(예: *Window1.xaml*)로 설정합니다. 허용되는 루트 요소 목록은 <xref:System.Windows.Application.StartupUri%2A>를 참조하세요. 또한 프로젝트의 클래스에서 `public static void Main()` 메서드를 정의해야 합니다. 이 클래스는 **시작 개체** 목록에 *ProjectName.ClassName*으로 나타납니다. 그런 다음 클래스를 시작 개체로 선택할 수 있습니다.
+기본적으로, WPF 앱 프로젝트에서 이 옵션은 **(설정 안 함)** 으로 설정됩니다. 다른 옵션은 \[projectname].App입니다. WPF 프로젝트에서는 애플리케이션을 시작할 때 UI 리소스를 로드하도록 시작 URI를 설정해야 합니다. 이렇게 하려면 프로젝트에서 *Application.xaml* 파일을 열고, `StartupUri` 속성을 프로젝트의 *.xaml* 파일(예: *Window1.xaml*)로 설정합니다. 허용되는 루트 요소 목록은 <xref:System.Windows.Application.StartupUri%2A>를 참조하세요. 또한 프로젝트의 클래스에서 `public static void Main()` 메서드를 정의해야 합니다. 이 클래스는 **시작 개체** 목록에 *ProjectName.ClassName* 으로 나타납니다. 그런 다음 클래스를 시작 개체로 선택할 수 있습니다.
 
 자세한 내용은 [/main(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)을 참조하세요. 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.StartupObject%2A>를 참조하세요.
 
@@ -101,26 +103,26 @@ ms.locfileid: "75595828"
 
 **아이콘**
 
-프로그램 아이콘으로 사용할 *.ico* 파일을 설정합니다. **찾아보기**를 클릭하여 기존 그래픽을 찾거나 원하는 파일의 이름을 입력합니다. 자세한 내용은 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요.
+프로그램 아이콘으로 사용할 *.ico* 파일을 설정합니다. **찾아보기** 를 클릭하여 기존 그래픽을 찾거나 원하는 파일의 이름을 입력합니다. 자세한 내용은 [/win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요.
 
 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>를 참조하세요.
 
 아이콘을 만드는 방법에 대한 자세한 내용은 [아이콘을 위한 이미지 편집기](/cpp/windows/image-editor-for-icons)를 참조하세요.
 
-**Manifest**
+**file:///**
 
 Windows Vista에서 UAC(사용자 계정 컨트롤)로 애플리케이션을 실행하는 경우 매니페스트 생성 옵션을 선택합니다. 이 옵션에 사용할 수 있는 값은 다음과 같습니다.
 
 - **기본 설정으로 구성된 매니페스트 포함** Windows Vista에서 Visual Studio가 작동하는 일반적인 방식(`requestedExecutionLevel`을 `AsInvoker`로 지정하여 애플리케이션의 실행 파일에 보안 정보 포함)을 지원합니다. 기본 옵션입니다.
 
-- **매니페스트 없이 애플리케이션 만들기** 이 방법을 *가상화*라고 합니다. 이 옵션은 이전 애플리케이션과의 호환성을 위해 사용합니다.
+- **매니페스트 없이 애플리케이션 만들기** 이 방법을 *가상화* 라고 합니다. 이 옵션은 이전 애플리케이션과의 호환성을 위해 사용합니다.
 
-- **Properties\app.manifest**. 이 옵션은 ClickOnce 또는 등록이 필요하지 않은 COM에 의해 배포된 애플리케이션에 필요합니다. ClickOnce 배포를 사용하여 애플리케이션을 게시하면 **매니페스트**가 자동으로 이 옵션으로 설정됩니다.
+- **Properties\app.manifest**. 이 옵션은 ClickOnce 또는 등록이 필요하지 않은 COM에 의해 배포된 애플리케이션에 필요합니다. ClickOnce 배포를 사용하여 애플리케이션을 게시하면 **매니페스트** 가 자동으로 이 옵션으로 설정됩니다.
 
 **리소스 파일**
 
 프로젝트에 대한 리소스 파일을 제공하는 경우 이 라디오 단추를 선택합니다. 이 옵션을 선택하면 **아이콘** 및 **매니페스트** 옵션이 사용되지 않습니다.
 
-경로 이름을 입력하거나 찾아보기 단추( **...** )를 사용하여 Win32 리소스 파일을 프로젝트에 추가합니다.
+경로 이름을 입력하거나 찾아보기 단추(**...**)를 사용하여 Win32 리소스 파일을 프로젝트에 추가합니다.
 
 자세한 내용은 [.NET 앱의 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요.

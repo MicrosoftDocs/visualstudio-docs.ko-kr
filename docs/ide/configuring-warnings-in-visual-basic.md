@@ -1,5 +1,7 @@
 ---
 title: Configuring Warnings in Visual Basic
+description: Visual Basic에서 경고를 구성하여 버그가 적으면서 더 깔끔하고 더 빠르고 더 나은 코드를 작성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +14,34 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114721"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006408"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic에서 경고 구성
 
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러에는 런타임 오류를 일으킬 수 있는 코드에 대한 일련의 경고가 포함됩니다. 이 정보를 사용하여 버그가 더 적으면서 더 깔끔하고 더 빠르고 더 나은 코드를 작성할 수 있습니다. 예를 들어 컴파일러에서는 사용자가 할당되지 않은 개체 변수의 멤버를 호출하거나, 반환 값을 설정하지 않고 함수에서 반환되거나, 예외를 catch하기 위한 논리에서 오류가 있는 `Try` 블록을 실행하려고 시도할 경우 경고를 생성합니다.
 
-경우에 따라 컴파일러에서는 사용자가 오류 발생이 예상되는 작업이 아닌 긴급한 작업에 집중할 수 있도록 사용자 대신 추가 논리를 제공합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 이전 버전에서 **Option Strict**는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러가 제공하는 추가 논리를 제한하는 데 사용되었습니다. 경고를 구성하면 이 논리를 개별 경고 수준에서 더 세밀하게 제한할 수 있습니다.
+경우에 따라 컴파일러에서는 사용자가 오류 발생이 예상되는 작업이 아닌 긴급한 작업에 집중할 수 있도록 사용자 대신 추가 논리를 제공합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 이전 버전에서 **Option Strict** 는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 컴파일러가 제공하는 추가 논리를 제한하는 데 사용되었습니다. 경고를 구성하면 이 논리를 개별 경고 수준에서 더 세밀하게 제한할 수 있습니다.
 
 프로젝트를 사용자 지정하고 애플리케이션에 관련되지 않은 일부 경고를 끄면서 다른 경고를 오류로 전환하고자 할 수 있습니다. 이 페이지에서는 개별 경고를 켜고 끄는 방법을 설명합니다.
 
 ## <a name="turning-warnings-off-and-on"></a>경고 끄기 및 켜기
-경고를 구성하는 방법은 두 가지입니다. **프로젝트 디자이너**를 사용하여 구성하거나 **/warnaserror** 및 **/nowarn** 컴파일러 옵션을 사용할 수 있습니다.
+경고를 구성하는 방법은 두 가지입니다. **프로젝트 디자이너** 를 사용하여 구성하거나 **/warnaserror** 및 **/nowarn** 컴파일러 옵션을 사용할 수 있습니다.
 
-**프로젝트 디자이너** 페이지의 **컴파일** 탭에서 경고를 켜고 끌 수 있습니다. 모든 경고를 사용하지 않으려면 **모든 경고 사용 안 함** 확인란을 선택하고, 모든 경고를 오류로 처리하려면 **모든 경고를 오류로 처리**를 선택합니다. 표시된 표에서 원하는 대로 일부 개별 경고를 오류 또는 경고로 토글할 수 있습니다.
+**프로젝트 디자이너** 페이지의 **컴파일** 탭에서 경고를 켜고 끌 수 있습니다. 모든 경고를 사용하지 않으려면 **모든 경고 사용 안 함** 확인란을 선택하고, 모든 경고를 오류로 처리하려면 **모든 경고를 오류로 처리** 를 선택합니다. 표시된 표에서 원하는 대로 일부 개별 경고를 오류 또는 경고로 토글할 수 있습니다.
 
-**Option Strict**가 **끄기**로 설정되면 **Option Strict** 관련 경고를 서로 개별적으로 처리할 수 없습니다. **Option Strict**가 **켜기**로 설정되면 상태에 관계없이 관련 경고가 오류로 처리됩니다. 명령줄 컴파일러에서 `/optionstrict:custom`을 지정하여 **Option Strict**가 **사용자 지정**으로 설정되면 **Option Strict** 경고를 개별적으로 켜고 끌 수 있습니다.
+**Option Strict** 가 **끄기** 로 설정되면 **Option Strict** 관련 경고를 서로 개별적으로 처리할 수 없습니다. **Option Strict** 가 **켜기** 로 설정되면 상태에 관계없이 관련 경고가 오류로 처리됩니다. 명령줄 컴파일러에서 `/optionstrict:custom`을 지정하여 **Option Strict** 가 **사용자 지정** 으로 설정되면 **Option Strict** 경고를 개별적으로 켜고 끌 수 있습니다.
 
-컴파일러의 **/warnaserror** 명령줄 옵션을 사용하여 경고를 오류로 처리할지 여부를 지정할 수도 있습니다. \+ 또는 -를 사용하여 이 목록에 쉼표로 구분된 목록을 추가하면 어떤 경고를 오류 또는 경고로 처리할지 지정할 수 있습니다. 다음 표에서는 가능한 옵션을 자세히 설명합니다.
+컴파일러의 **/warnaserror** 명령줄 옵션을 사용하여 경고를 오류로 처리할지 여부를 지정할 수도 있습니다. + 또는 -를 사용하여 이 목록에 쉼표로 구분된 목록을 추가하면 어떤 경고를 오류 또는 경고로 처리할지 지정할 수 있습니다. 다음 표에서는 가능한 옵션을 자세히 설명합니다.
 
-|명령줄 옵션|지정 내용|
+|명령줄 옵션|설명|
 | - |---------------|
 |`/warnaserror+`|모든 경고를 오류로 처리합니다.|
-|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 이것이 기본값입니다.|
+|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 기본값입니다.|
 |`/warnaserror+:<warning list` `>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리합니다.|
 |`/warnaserror-:<warning list>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리하지 않습니다.|
 |`/nowarn`|경고를 보고하지 않습니다.|
@@ -47,10 +49,10 @@ ms.locfileid: "76114721"
 
 경고 목록에는 오류로 처리되어야 하는 경고의 오류 ID 번호가 포함되고 이 오류 ID 번호는 명령줄 옵션과 함께 특정 경고를 켜거나 끄는 데 사용될 수 있습니다. 경고 목록에 잘못된 번호가 있으면 오류가 보고됩니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 이 명령줄 인수 예제에 대한 표에서는 각 인수가 수행하는 작업을 설명합니다.
 
-|인수|Description|
+|인수|설명|
 |--------------|-----------------|
 |`vbc /warnaserror`|모든 경고를 오류로 처리하도록 지정합니다.|
 |`vbc /warnaserror:42024`|경고 42024가 오류로 처리되도록 지정합니다.|
@@ -117,7 +119,7 @@ ID: 42028
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [오류 형식](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally 명령문](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

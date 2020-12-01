@@ -1,5 +1,7 @@
 ---
 title: 다중 프로젝트 템플릿 만들기
+description: Visual Studio에서 여러 프로젝트에 대한 컨테이너 역할을 동시에 수행할 수 있는 다중 프로젝트 템플릿을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284414"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597228"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 
@@ -46,7 +48,7 @@ ms.locfileid: "85284414"
 
 다중 프로젝트 템플릿에 대한 루트 *vstemplate* 파일은 다음과 같은 점에서 단일 프로젝트 템플릿과 다릅니다.
 
-- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup**이 있습니다. 예를 들어:
+- **VSTemplate** 요소의 **Type** 특성에는 **Project** 대신 값 **ProjectGroup** 이 있습니다. 예를 들어:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -88,19 +90,19 @@ ms.locfileid: "85284414"
 2. 서식 파일에 내보낼 준비가 될 때까지 프로젝트를 사용자 지정합니다.
 
    > [!TIP]
-   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예: `$ext_safeprojectname$`. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
+   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예: `$ext_safeprojectname$`. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true** 로 설정합니다.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. **프로젝트** 메뉴에서 **템플릿 내보내기**를 선택합니다.
+3. **프로젝트** 메뉴에서 **템플릿 내보내기** 를 선택합니다.
 
-   **템플릿 내보내기 마법사**가 열립니다.
+   **템플릿 내보내기 마법사** 가 열립니다.
 
-4. **템플릿 형식 선택** 페이지에서 **프로젝트 템플릿**을 선택합니다. 템플릿으로 내보낼 프로젝트 중 하나를 선택한 후, **다음**을 선택합니다. (솔루션의 각 프로젝트에 대해 이러한 단계를 반복합니다.)
+4. **템플릿 형식 선택** 페이지에서 **프로젝트 템플릿** 을 선택합니다. 템플릿으로 내보낼 프로젝트 중 하나를 선택한 후, **다음** 을 선택합니다. (솔루션의 각 프로젝트에 대해 이러한 단계를 반복합니다.)
 
-5. **템플릿 옵션 선택** 페이지에서 템플릿의 이름 및 설명(옵션), 아이콘 및 미리 보기 이미지를 입력합니다. **마침**을 선택합니다.
+5. **템플릿 옵션 선택** 페이지에서 템플릿의 이름 및 설명(옵션), 아이콘 및 미리 보기 이미지를 입력합니다. **마침** 을 선택합니다.
 
    프로젝트는 *.zip* 파일로 내보내지고 지정된 출력 위치에 배치됩니다.
 
@@ -111,19 +113,19 @@ ms.locfileid: "85284414"
 
 7. 만든 해당 하위 디렉터리에 각 프로젝트의 *.zip* 파일 콘텐츠의 압축을 풉니다.
 
-8. 기본 디렉터리에 파일 확장명이 *.vstemplate*인 XML 파일을 만듭니다. 이 파일은 다중 프로젝트 템플릿에 대한 메타데이터를 포함합니다. 파일의 구조를 따르는 예제를 참조하세요. 각 프로젝트의 *vstemplate* 파일에 대한 상대 경로를 지정해야 합니다.
+8. 기본 디렉터리에 파일 확장명이 *.vstemplate* 인 XML 파일을 만듭니다. 이 파일은 다중 프로젝트 템플릿에 대한 메타데이터를 포함합니다. 파일의 구조를 따르는 예제를 참조하세요. 각 프로젝트의 *vstemplate* 파일에 대한 상대 경로를 지정해야 합니다.
 
-9. 기본 디렉터리의 모든 폴더를 선택하고, 마우스 오른쪽 단추를 클릭하면 나타나는 메뉴, 즉 바로 가기 메뉴에서 **보내기** > **압축(ZIP) 폴더**를 선택합니다.
+9. 기본 디렉터리의 모든 폴더를 선택하고, 마우스 오른쪽 단추를 클릭하면 나타나는 메뉴, 즉 바로 가기 메뉴에서 **보내기** > **압축(ZIP) 폴더** 를 선택합니다.
 
    파일 및 폴더가 *.zip* 파일로 압축됩니다.
 
-10. 사용자 프로젝트 템플릿 디렉터리에 *.zip* 파일을 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*입니다.
+10. 사용자 프로젝트 템플릿 디렉터리에 *.zip* 파일을 복사합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* 입니다.
 
-11. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택하고 템플릿이 표시되는지 확인합니다.
+11. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트** 를 선택하고 템플릿이 표시되는지 확인합니다.
 
 ## <a name="two-project-example"></a>두 프로젝트 예제
 
-이 예제에서는 기본 다중 프로젝트 루트 *vstemplate* 파일을 보여줍니다. 이 예제에서는 템플릿에 **내 Windows 애플리케이션** 및 **내 클래스 라이브러리**의 두 개 프로젝트가 있습니다. **ProjectTemplateLink** 요소에서 **ProjectName** 특성은 프로젝트에 지정된 이름을 지정합니다.
+이 예제에서는 기본 다중 프로젝트 루트 *vstemplate* 파일을 보여줍니다. 이 예제에서는 템플릿에 **내 Windows 애플리케이션** 및 **내 클래스 라이브러리** 의 두 개 프로젝트가 있습니다. **ProjectTemplateLink** 요소에서 **ProjectName** 특성은 프로젝트에 지정된 이름을 지정합니다.
 
 > [!TIP]
 > **ProjectName** 특성을 지정하지 않으면 *vstemplate* 파일의 이름이 프로젝트 이름으로 사용됩니다.
@@ -152,7 +154,7 @@ ms.locfileid: "85284414"
 
 ## <a name="example-with-solution-folders"></a>솔루션 폴더의 예
 
-이 예제에서는 **SolutionFolder** 요소를 사용하여 프로젝트를 **Math Classes** 및 **Graphics Classes**의 두 그룹으로 나눕니다. 이 템플릿에는 각 솔루션 폴더에 2개가 포함되는 4개의 프로젝트가 있습니다.
+이 예제에서는 **SolutionFolder** 요소를 사용하여 프로젝트를 **Math Classes** 및 **Graphics Classes** 의 두 그룹으로 나눕니다. 이 템플릿에는 각 솔루션 폴더에 2개가 포함되는 4개의 프로젝트가 있습니다.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

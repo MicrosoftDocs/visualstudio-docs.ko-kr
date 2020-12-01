@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
+description: 부하 테스트 편집기의 속성 창에서 사용할 에이전트 속성을 설정하여 시나리오에서 사용할 에이전트를 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,23 +14,23 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287495"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440911"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>방법: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 
-**부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+**부하 테스트 새로 만들기 마법사** 를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기** 를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 
-에이전트는 **속성** 창에서 **사용할 에이전트 속성**을 변경하도록 **부하 테스트 편집기**를 사용하여 지정할 수 있습니다.
+에이전트는 **속성** 창에서 **사용할 에이전트 속성** 을 변경하도록 **부하 테스트 편집기** 를 사용하여 지정할 수 있습니다.
 
 컨트롤러 및 에이전트를 사용하여 부하 테스트를 원격으로 실행하려는 경우 시나리오에서 사용할 에이전트를 지정할 수 있습니다. 예를 들어 특정 에이전트 집합을 지정하여 성능 추세를 분석할 때 일관성을 유지할 수 있습니다. 또한 에이전트는 지리적으로 분산되어 있을 수 있으므로 에이전트에서 실행하는 스크립트와 에이전트가 있는 위치 간에 밀접한 관계가 있습니다.
 
@@ -47,11 +49,11 @@ ms.locfileid: "85287495"
 
 1. 부하 테스트를 엽니다.
 
-     **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
+     **부하 테스트 편집기** 가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
 2. 부하 테스트 트리 **시나리오** 폴더에서 사용할 에이전트를 지정할 시나리오 노드를 선택합니다.
 
-3. **보기** 메뉴에서 **속성 창**을 선택합니다.
+3. **보기** 메뉴에서 **속성 창** 을 선택합니다.
 
      시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
@@ -60,13 +62,13 @@ ms.locfileid: "85287495"
      에이전트는 "**Agent1, Agent2, Agent3**"과 같이 쉼표로 구분해야 합니다. 속성을 공백으로 두면 시나리오에서 사용 가능한 모든 에이전트를 사용하도록 지정됩니다.
 
     > [!NOTE]
-    > 로컬 실행의 경우에는 **사용할 에이전트** 속성이 무시됩니다. 원격 실행의 경우에는 **사용할 에이전트**에 에이전트가 지정되어 있지 않으면 시나리오의 테스트가 실행되지 않습니다.
+    > 로컬 실행의 경우에는 **사용할 에이전트** 속성이 무시됩니다. 원격 실행의 경우에는 **사용할 에이전트** 에 에이전트가 지정되어 있지 않으면 시나리오의 테스트가 실행되지 않습니다.
 
-5. 속성을 변경한 후 **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **사용할 에이전트** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+5. 속성을 변경한 후 **파일** 메뉴에서 **저장** 을 선택합니다. 그러면 새 **사용할 에이전트** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
-- [연습: 부하 테스트 생성 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
+- [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)

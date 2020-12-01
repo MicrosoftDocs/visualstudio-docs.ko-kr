@@ -1,5 +1,7 @@
 ---
 title: 기존 프로젝트 추가 명령
+description: 기존 프로젝트 추가 명령과 기존 프로젝트를 현재 솔루션에 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2c12106621599d428e9a701de9ba5e468b5e312a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595880"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871004"
 ---
 # <a name="add-existing-project-command"></a>기존 프로젝트 추가 명령
 현재 솔루션에 기존 프로젝트를 추가합니다.
@@ -31,7 +33,7 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>인수
 `filename`\
-(선택 사항) 솔루션에 추가할 프로젝트의 전체 경로 및 프로젝트 이름(확장명 포함)입니다.
+선택 사항입니다. 솔루션에 추가할 프로젝트의 전체 경로 및 프로젝트 이름(확장명 포함)입니다.
 
 `filename` 인수에 공백이 있는 경우 따옴표로 묶어야 합니다.
 
@@ -47,7 +49,7 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

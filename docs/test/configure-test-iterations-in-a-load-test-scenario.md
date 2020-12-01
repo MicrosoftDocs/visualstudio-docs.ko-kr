@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트에 대한 테스트 반복 구성
+description: 시나리오의 최대 반복 횟수와 반복 간 일시 중지 시간을 구성할 수 있도록 테스트 반복 설정을 구성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5316b03220a094d3280aba3eb8c46f190a2874f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288782"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442562"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 
@@ -53,7 +55,7 @@ ms.locfileid: "85288782"
 
 3. 부하 테스트 트리 **시나리오** 폴더에서 최대 테스트 반복 횟수를 지정할 시나리오 노드를 선택합니다.
 
-4. **보기** 메뉴에서 **속성 창**을 선택합니다.
+4. **보기** 메뉴에서 **속성 창** 을 선택합니다.
 
      시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
@@ -62,7 +64,7 @@ ms.locfileid: "85288782"
     > [!NOTE]
     > **최대 테스트 반복 횟수** 속성에 0 값을 사용하면 최대 반복 횟수를 없음으로 지정하는 것입니다.
 
-6. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **최대 테스트 반복 횟수** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+6. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장** 을 선택합니다. 그러면 새 **최대 테스트 반복 횟수** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>시나리오의 테스트 반복 간 인지 시간 지정
 
@@ -77,21 +79,21 @@ ms.locfileid: "85288782"
 
 1. 부하 테스트를 엽니다.
 
-     **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
+     **부하 테스트 편집기** 가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
 2. 부하 테스트 트리 **시나리오** 폴더에서 인지 시간을 지정할 시나리오 노드를 선택합니다.
 
-3. **보기** 메뉴에서 **속성 창**을 선택합니다.
+3. **보기** 메뉴에서 **속성 창** 을 선택합니다.
 
      시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
 4. **테스트 반복 간 인지 시간** 속성 값에 다음 테스트 반복을 시작하기 전에 대기할 시간(초)을 나타내는 숫자를 입력합니다.
 
-5. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 반복 간 인지 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+5. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장** 을 선택합니다. 그러면 새 **테스트 반복 간 인지 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)
-- [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이션](../test/edit-think-times-in-load-test-scenarios.md)
+- [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이트](../test/edit-think-times-in-load-test-scenarios.md)

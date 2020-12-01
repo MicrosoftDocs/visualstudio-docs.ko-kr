@@ -1,5 +1,7 @@
 ---
 title: 빠른 작업, 전구 및 스크루드라이버
+description: 하나의 빠른 작업으로 코드를 리팩터링, 생성 또는 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036524"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870783"
 ---
 # <a name="quick-actions"></a>빠른 작업
 
@@ -42,7 +44,7 @@ ms.locfileid: "90036524"
 - 코드 생성(예: [지역 변수 도입](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)을 참조하세요.
 
 전구![전구 아이콘](media/light-bulb-icon.png) 또는 스크루드라이버![스크루드라이버 아이콘](media/screwdriver-icon.png) 아이콘을 사용하거나 **Ctrl**+**을 눌러 빠른 작업을 적용 할 수 있습니다.** 동작을 사용할 수 있는 코드 줄에 커서가 있는 경우입니다. 오류를 나타내는 빨간 물결무늬가 있는 경우 오류 전구![오류 전구 아이콘](media/error-light-bulb-icon.png)가 표시되고, Visual Studio에는 해당 오류에 사용할 수 있는 수정 사항이 있습니다.
 
@@ -68,7 +70,7 @@ ms.locfileid: "90036524"
 
 ![확장된 전구](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio에서 코드 생성](../ide/code-generation-in-visual-studio.md)
 - [일반적인 빠른 작업](../ide/common-quick-actions.md)

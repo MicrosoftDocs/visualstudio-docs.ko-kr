@@ -1,7 +1,7 @@
 ---
 title: Bridge to Kubernetes 작동 방식
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: Bridge to Kubernetes를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 프로세스에 대해 설명합니다.
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, 컨테이너
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116105"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440612"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -105,6 +105,37 @@ Bridge to Kubernetes가 Kubernetes 클러스터에서 Azure Dev Spaces가 사용
 ## <a name="diagnostics-and-logging"></a>진단 및 로깅
 
 Bridge to Kubernetes를 사용하여 클러스터에 연결하는 경우 클러스터의 진단 로그가 개발 컴퓨터의 *TEMP* 디렉터리에서 *Bridge to Kubernetes* 폴더에 기록됩니다.
+
+## <a name="rbac-authorization"></a>RBAC 권한 부여
+
+Kubernetes는 RBAC(역할 기반 액세스 제어)를 제공하여 사용자 및 그룹에 대한 권한을 관리합니다. 자세한 내용은 [Kubernetes 설명서](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)를 참고하세요. YAML 파일을 생성하고 `kubectl`로 클러스터에 적용하여 RBAC 지원 클러스터에 대한 권한을 설정할 수 있습니다. 
+
+클러스터의 사용 권한을 설정하려면 `<namespace>`에 대한 자체 네임스페이스와 액세스 권한이 필요한 주체(사용자 및 그룹)로 다음과 같이 *permissions.yml* 등의 YAML 파일을 만들거나 수정합니다.
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+다음 명령을 사용하여 권한을 적용합니다.
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>제한 사항
 

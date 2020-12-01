@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
+description: 문자열을 매개 변수화할 수 있는 부하 테스트 편집기를 사용하여 부하 테스트 실행 설정에서 사용할 컨텍스트 매개 변수를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288418"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440189"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 
-**부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기**를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
+**부하 테스트 새로 만들기 마법사** 를 사용하여 부하 테스트를 만든 다음, **부하 테스트 편집기** 를 사용하여 시나리오 속성을 테스트 요구 사항 및 목표에 맞게 변경할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -56,19 +58,19 @@ ms.locfileid: "85288418"
 
 2. 부하 테스트 편집기에서 부하 테스트 트리의 **실행 설정** 폴더를 확장합니다.
 
-3. 컨텍스트 매개 변수를 추가할 특정 실행 설정을 마우스 오른쪽 단추로 클릭하고 **컨텍스트 매개 변수 추가**를 선택합니다.
+3. 컨텍스트 매개 변수를 추가할 특정 실행 설정을 마우스 오른쪽 단추로 클릭하고 **컨텍스트 매개 변수 추가** 를 선택합니다.
 
      새 컨텍스트 매개 변수가 부하 테스트 트리의 **실행 설정** 폴더에 있는 **컨텍스트 매개 변수** 폴더에 추가됩니다.
 
-     또는
+     -또는-
 
-     실행 설정에 이미 **컨텍스트 매개 변수** 폴더가 있는 경우 이 폴더를 마우스 오른쪽 단추로 클릭하고 **컨텍스트 매개 변수 추가**를 선택합니다.
+     실행 설정에 이미 **컨텍스트 매개 변수** 폴더가 있는 경우 이 폴더를 마우스 오른쪽 단추로 클릭하고 **컨텍스트 매개 변수 추가** 를 선택합니다.
 
-4. **속성** 창에서 **Name** 값을 적절한 값(예: WebServer1)으로 변경합니다. **속성** 창에서 **Value**을 사용할 매개 변수(예: `http://CorporateStagingWebServer`)로 변경합니다.
+4. **속성** 창에서 **Name** 값을 적절한 값(예: WebServer1)으로 변경합니다. **속성** 창에서 **Value** 을 사용할 매개 변수(예: `http://CorporateStagingWebServer`)로 변경합니다.
 
 5. (선택 사항) **Value** 속성에 다른 문자열(예: `http://CorporateProductionWebServer`)을 사용하여 3-5단계를 반복합니다.
 
-6. 활성 상태로 설정할 실행 설정을 선택합니다. 실행 설정에 대한 바로 가기 메뉴를 열고 **활성 상태로 설정**을 선택합니다.
+6. 활성 상태로 설정할 실행 설정을 선택합니다. 실행 설정에 대한 바로 가기 메뉴를 열고 **활성 상태로 설정** 을 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

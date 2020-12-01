@@ -1,5 +1,7 @@
 ---
 title: 참조 관리자에서 참조 추가
+description: 참조 관리자 대화 상자로 개발된 구성 요소에 참조를 추가하고 관리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,51 +23,51 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87390264"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597316"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
-참조 관리자 대화 상자를 사용하여 사용자가 개발했거나 Microsoft 또는 타사에서 개발한 구성 요소에 대한 참조를 추가하고 관리할 수 있습니다. 유니버설 Windows 앱을 개발하는 경우 프로젝트에서 올바른 모든 Windows SDK DLL을 자동으로 참조합니다. .NET 애플리케이션을 개발하는 경우 프로젝트에서 자동으로 *mscorlib.dll*을 참조합니다. 일부 .NET API는 수동으로 추가해야 하는 구성 요소에서 노출됩니다. COM 구성 요소 또는 사용자 지정 구성 요소에 대한 참조를 수동으로 추가해야 합니다.
+참조 관리자 대화 상자를 사용하여 사용자가 개발했거나 Microsoft 또는 타사에서 개발한 구성 요소에 대한 참조를 추가하고 관리할 수 있습니다. 유니버설 Windows 앱을 개발하는 경우 프로젝트에서 올바른 모든 Windows SDK DLL을 자동으로 참조합니다. .NET 애플리케이션을 개발하는 경우 프로젝트에서 자동으로 *mscorlib.dll* 을 참조합니다. 일부 .NET API는 수동으로 추가해야 하는 구성 요소에서 노출됩니다. COM 구성 요소 또는 사용자 지정 구성 요소에 대한 참조를 수동으로 추가해야 합니다.
 
 ## <a name="reference-manager-dialog-box"></a>참조 관리자 대화 상자
 
 프로젝트 형식에 따라 참조 관리자 대화 상자의 왼쪽에 다음과 같은 다양한 범주가 표시됩니다.
 
-- **어셈블리**에는 **프레임워크** 및 **확장** 하위 그룹이 포함됩니다.
+- **어셈블리** 에는 **프레임워크** 및 **확장** 하위 그룹이 포함됩니다.
 
-- **COM**에는 참조에 사용할 수 있는 모든 COM 구성 요소가 나열됩니다.
+- **COM** 에는 참조에 사용할 수 있는 모든 COM 구성 요소가 나열됩니다.
 
 - **프로젝트**
 
 - **공유 프로젝트**
 
-- **Windows**에는 **핵심** 및 **확장** 하위 그룹이 포함됩니다. **개체 브라우저**를 사용하여 Windows SDK 또는 확장명 SDK에서 참조를 탐색할 수 있습니다.
+- **Windows** 에는 **핵심** 및 **확장** 하위 그룹이 포함됩니다. **개체 브라우저** 를 사용하여 Windows SDK 또는 확장명 SDK에서 참조를 탐색할 수 있습니다.
 
-- **찾아보기**에는 **최근 항목** 하위 그룹이 포함됩니다.
+- **찾아보기** 에는 **최근 항목** 하위 그룹이 포함됩니다.
  
     > [!NOTE]
-    > C++ 프로젝트를 개발하는 경우 참조 관리자 대화 상자에 **찾아보기**가 표시되지 않을 수 있습니다.
+    > C++ 프로젝트를 개발하는 경우 참조 관리자 대화 상자에 **찾아보기** 가 표시되지 않을 수 있습니다.
 
 ## <a name="add-a-reference"></a>참조 추가
 
-1. **솔루션 탐색기**에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다.
+1. **솔루션 탐색기** 에서 **참조** 또는 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **참조 추가** 를 선택합니다. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조** 를 선택합니다.
 
-   **참조 관리자**가 열리고 사용 가능한 참조 목록이 그룹별로 나열됩니다.
+   **참조 관리자** 가 열리고 사용 가능한 참조 목록이 그룹별로 나열됩니다.
 
-2. 추가할 참조를 지정한 다음, **확인**을 선택합니다.
+2. 추가할 참조를 지정한 다음, **확인** 을 선택합니다.
 
 ## <a name="assemblies-tab"></a>어셈블리 탭
 
 **어셈블리** 탭은 참조에 사용할 수 있는 .NET 어셈블리를 모두 나열합니다. **어셈블리** 탭에는 GAC(전역 어셈블리 캐시)의 어셈블리는 표시되지 않습니다. GAC의 어셈블리는 런타임 환경의 일부이기 때문입니다. GAC에 등록된 어셈블리에 대한 참조가 포함된 애플리케이션을 배포하거나 복사하는 경우, 이 어셈블리는 **로컬 복사** 설정과 관계없이 애플리케이션과 함께 배포되거나 복사되지 않습니다. 자세한 내용은 [프로젝트의 참조 관리](../ide/managing-references-in-a-project.md)를 참조하세요.
 
-EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> 또는 <xref:EnvDTE100>)에 대한 참조를 수동으로 추가할 때는 **속성** 창에서 참조의 **Interop 형식 포함** 속성을 **False**로 설정합니다. 이 속성을 **True**로 설정하면 포함할 수 없는 특정 EnvDTE 속성으로 인해 빌드 문제가 발생할 수 있습니다.
+EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> 또는 <xref:EnvDTE100>)에 대한 참조를 수동으로 추가할 때는 **속성** 창에서 참조의 **Interop 형식 포함** 속성을 **False** 로 설정합니다. 이 속성을 **True** 로 설정하면 포함할 수 없는 특정 EnvDTE 속성으로 인해 빌드 문제가 발생할 수 있습니다.
 
-모든 데스크톱 프로젝트에는 **mscorlib**에 대한 암시적 참조가 포함되어 있습니다. Visual Basic 프로젝트에는 <xref:Microsoft.VisualBasic>에 대한 암시적 참조가 포함되어 있습니다. System.Core가 참조 목록에서 제거되더라도 모든 프로젝트에 **System.Core**에 대한 암시적 참조가 포함되어 있습니다.
+모든 데스크톱 프로젝트에는 **mscorlib** 에 대한 암시적 참조가 포함되어 있습니다. Visual Basic 프로젝트에는 <xref:Microsoft.VisualBasic>에 대한 암시적 참조가 포함되어 있습니다. System.Core가 참조 목록에서 제거되더라도 모든 프로젝트에 **System.Core** 에 대한 암시적 참조가 포함되어 있습니다.
 
 프로젝트 형식이 어셈블리를 지원하지 않으면 참조 관리자 대화 상자에 이 탭이 나타나지 않습니다.
 
@@ -75,11 +77,11 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
    .NET Core 또는 유니버셜 Windows 플랫폼을 대상으로 하지 않는 프로젝트의 경우 **프레임워크** 탭은 대상 프레임워크에서 어셈블리를 열거합니다. 사용자는 애플리케이션에서 필요한 모든 참조를 추가해야 합니다.
 
-   범용 Windows 프로젝트에는 기본적으로 대상 프레임워크의 모든 어셈블리에 대한 참조가 포함됩니다. 관리 프로젝트에서 **솔루션 탐색기**의 **참조** 폴더 아래에 있는 읽기 전용 노드는 전체 프레임워크에 대한 참조를 나타냅니다. 따라서 **프레임워크** 탭은 프레임워크의 어떠한 어셈블리도 열거하지 않고 대신 다음과 같은 메시지를 표시합니다. "모든 프레임워크 어셈블리가 이미 참조되었습니다. 개체 브라우저를 사용하여 Framework에서 참조를 탐색하십시오."
+   범용 Windows 프로젝트에는 기본적으로 대상 프레임워크의 모든 어셈블리에 대한 참조가 포함됩니다. 관리 프로젝트에서 **솔루션 탐색기** 의 **참조** 폴더 아래에 있는 읽기 전용 노드는 전체 프레임워크에 대한 참조를 나타냅니다. 따라서 **프레임워크** 탭은 프레임워크의 어떠한 어셈블리도 열거하지 않고 대신 다음과 같은 메시지를 표시합니다. "모든 프레임워크 어셈블리가 이미 참조되었습니다. 개체 브라우저를 사용하여 Framework에서 참조를 탐색하십시오."
 
-2. **확장**은 구성 요소 및 컨트롤의 외부 공급업체가 개발하고 대상 프레임워크를 확장한 모든 어셈블리가 나열됩니다. 사용자 애플리케이션의 목적에 따라 이러한 어셈블리가 필요할 수 있습니다.
+2. **확장** 은 구성 요소 및 컨트롤의 외부 공급업체가 개발하고 대상 프레임워크를 확장한 모든 어셈블리가 나열됩니다. 사용자 애플리케이션의 목적에 따라 이러한 어셈블리가 필요할 수 있습니다.
 
-   **확장**은 다음 위치에 등록된 어셈블리를 열거하여 채워집니다.
+   **확장** 은 다음 위치에 등록된 어셈블리를 열거하여 채워집니다.
 
    32-bit 컴퓨터:
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]`
@@ -91,7 +93,7 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
    및 이전 버전의 [대상 프레임워크 식별자]
 
-   예를 들어, 프로젝트가 32비트 컴퓨터에서 .NET Framework 4를 대상으로 지정하는 경우, **확장**은 *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* 및 *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*에서 등록된 어셈블리를 열거합니다.
+   예를 들어, 프로젝트가 32비트 컴퓨터에서 .NET Framework 4를 대상으로 지정하는 경우, **확장** 은 *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* 및 *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx* 에서 등록된 어셈블리를 열거합니다.
 
 프로젝트의 프레임워크 버전에 따라 목록의 일부 구성 요소는 표시되지 않을 수 있습니다. 이 비동기화는 다음과 같은 경우에 발생할 수 있습니다.
 
@@ -130,7 +132,7 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-  *\<VersionMinimum\>* 은 적용되는 최하위 프레임워크 버전입니다. *\<VersionMinimum\>* 이 v3.0인 경우 *AssemblyFoldersEx*에 지정된 폴더는 .NET Framework 3.0 이상을 대상으로 하는 프로젝트에 적용됩니다.
+  *\<VersionMinimum\>* 은 적용되는 최하위 프레임워크 버전입니다. *\<VersionMinimum\>* 이 v3.0인 경우 *AssemblyFoldersEx* 에 지정된 폴더는 .NET Framework 3.0 이상을 대상으로 하는 프로젝트에 적용됩니다.
 
   *\<AssemblyLocation\>* 은 **참조 추가** 대화 상자에 표시하려는 어셈블리의 디렉터리(예: *C:\MyAssemblies*)입니다.
 
@@ -158,11 +160,11 @@ EnvDTE 네임스페이스(<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref
 
 ### <a name="core-subgroup"></a>핵심 하위 그룹
 
-유니버설 Windows 앱 프로젝트에는 기본적으로 유니버설 Windows SDK에 대한 참조가 있습니다. 따라서 **참조 관리자**의 **핵심** 하위 그룹은 유니버설 Windows SDK의 어셈블리를 열거하지 않습니다.
+유니버설 Windows 앱 프로젝트에는 기본적으로 유니버설 Windows SDK에 대한 참조가 있습니다. 따라서 **참조 관리자** 의 **핵심** 하위 그룹은 유니버설 Windows SDK의 어셈블리를 열거하지 않습니다.
 
 ### <a name="extensions-subgroup"></a>확장 하위 그룹
 
-**확장**은 대상 Windows 플랫폼을 확장하는 사용자 SDK를 나열합니다.
+**확장** 은 대상 Windows 플랫폼을 확장하는 사용자 SDK를 나열합니다.
 
 SDK는 Visual Studio에서 단일 구성 요소로 처리하는 파일의 컬렉션입니다. **확장** 탭에서, 참조 관리자 대화 상자가 호출된 프로젝트에 적용되는 SDK는 단일 항목으로 나열됩니다. SDK 콘텐츠는 프로젝트에 추가되면 모두 Visual Studio에서 사용되므로 IntelliSense, 도구 상자, 디자이너, 개체 브라우저, 빌드, 배포, 디버깅, 패키지의 SDK 콘텐츠를 활용하기 위해 사용자가 어떠한 추가 작업도 수행할 필요가 없습니다.
 
@@ -191,9 +193,9 @@ SDK를 찾아 프로젝트에 추가할 수는 없습니다. 파일(예: 어셈�
 
 WinMD에 대한 파일 참조를 수행하는 경우, 예상되는 레이아웃은 *\<FileName>.winmd*, *\<FileName>.dll* 및 *\<FileName>.pri* 파일이 모두 나란히 배치되는 것입니다. 다음과 같은 시나리오에서 WinMD를 참조하는 경우, 불완전한 파일 집합이 프로젝트 출력 디렉터리에 복사되고, 그에 따라 빌드 및 런타임 오류가 발생합니다.
 
-- **기본 구성 요소**: 네이티브 프로젝트에서는 연결되지 않은 네임스페이스 집합 각각에 대한 하나의 WinMD 및 그 구현으로 구성된 하나의 DLL을 만듭니다. WinMD는 서로 다른 이름을 갖게 됩니다. 이 기본 구성 요소 파일을 참조하는 경우, MSBuild에서는 서로 다른 이름을 가진 WinMD에서 하나의 구성 요소를 만드는 것을 인식하지 못합니다. 따라서 동일한 이름의 *\<FileName>.dll* 및 *\<FileName>.winmd*만 복사되어 런타임 오류가 발생합니다. 이 문제를 해결하기 위해서는 확장명 SDK를 만듭니다. 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
+- **기본 구성 요소**: 네이티브 프로젝트에서는 연결되지 않은 네임스페이스 집합 각각에 대한 하나의 WinMD 및 그 구현으로 구성된 하나의 DLL을 만듭니다. WinMD는 서로 다른 이름을 갖게 됩니다. 이 기본 구성 요소 파일을 참조하는 경우, MSBuild에서는 서로 다른 이름을 가진 WinMD에서 하나의 구성 요소를 만드는 것을 인식하지 못합니다. 따라서 동일한 이름의 *\<FileName>.dll* 및 *\<FileName>.winmd* 만 복사되어 런타임 오류가 발생합니다. 이 문제를 해결하기 위해서는 확장명 SDK를 만듭니다. 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
 
-- **컨트롤 사용**: XAML 컨트롤은 최소 하나씩의 *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* 및 *\<ImageName>.jpg*로 구성됩니다. 프로젝트를 빌드할 때 파일 참조와 연관된 리소스 파일은 프로젝트의 출력 디렉터리에 복사되지 않고 *\<FileName>.winmd*, *\<FileName>.dll* 및 *\<FileName>.pri*만 복사됩니다. 빌드 오류가 기록되어 사용자에게 리소스 *\<XamlName>.xaml* 및 *\<ImageName>.jpg*가 누락되었음을 알려줍니다. 성공적으로 빌드하려면 사용자는 이러한 리소스 파일을 수동으로 빌드 및 디버깅/런타임용 프로젝트 출력 디렉터리에 복사해야 합니다. 이 문제를 해결하려면 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)의 단계에 따라 확장명 SDK를 만들거나, 프로젝트 파일을 편집하여 다음 속성을 추가합니다.
+- **컨트롤 사용**: XAML 컨트롤은 최소 하나씩의 *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* 및 *\<ImageName>.jpg* 로 구성됩니다. 프로젝트를 빌드할 때 파일 참조와 연관된 리소스 파일은 프로젝트의 출력 디렉터리에 복사되지 않고 *\<FileName>.winmd*, *\<FileName>.dll* 및 *\<FileName>.pri* 만 복사됩니다. 빌드 오류가 기록되어 사용자에게 리소스 *\<XamlName>.xaml* 및 *\<ImageName>.jpg* 가 누락되었음을 알려줍니다. 성공적으로 빌드하려면 사용자는 이러한 리소스 파일을 수동으로 빌드 및 디버깅/런타임용 프로젝트 출력 디렉터리에 복사해야 합니다. 이 문제를 해결하려면 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)의 단계에 따라 확장명 SDK를 만들거나, 프로젝트 파일을 편집하여 다음 속성을 추가합니다.
 
     ```xml
     <PropertyGroup>

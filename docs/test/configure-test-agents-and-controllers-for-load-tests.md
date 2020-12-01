@@ -1,5 +1,6 @@
 ---
 title: 부하 테스트를 위한 테스트 에이전트/테스트 컨트롤러 구성
+description: 하나의 컴퓨터에서 단독으로 생성할 수 있는 것보다 더 많은 부하를 생성하는 물리적 컴퓨터 또는 가상 머신을 사용하여 Visual Studio에서 시뮬레이션된 부하를 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099403"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442614"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 개요
 

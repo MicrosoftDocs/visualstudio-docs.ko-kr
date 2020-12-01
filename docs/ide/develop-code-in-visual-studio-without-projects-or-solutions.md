@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 또는 솔루션 없이 코드 개발
+description: 프로젝트 또는 솔루션 없이 Visual Studio에서 직접 코드를 개발하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,32 +13,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769662"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006005"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발
 
 솔루션이나 프로젝트 파일 없이 거의 모든 유형의 디렉터리 기반 프로젝트에서 Visual Studio로 코드를 열 수 있습니다. 예를 들어 GitHub에서 리포지토리를 복제하여 Visual Studio로 직접 열고 솔루션이나 프로젝트를 만들지 않고도 개발을 시작할 수 있습니다. 필요한 경우 간단한 JSON 파일을 통해 사용자 지정 빌드 작업을 지정하고 매개 변수를 실행할 수 있습니다.
 
-Visual Studio에서 코드 파일을 연 후 **솔루션 탐색기**에는 폴더의 모든 파일이 표시됩니다. 파일을 클릭하여 편집을 시작할 수 있습니다. 백그라운드에서 Visual Studio는 IntelliSense, 탐색 및 리팩터링 기능을 사용할 수 있도록 파일 인덱싱을 시작합니다. 파일을 편집, 생성, 이동 또는 삭제하면 Visual Studio는 변경 내용을 자동으로 추적하고 해당 IntelliSense 인덱스를 계속해서 업데이트합니다. 코드는 구문 색 지정으로 표시되며, 대부분의 경우 기본 IntelliSense 문 완성을 포함합니다.
+Visual Studio에서 코드 파일을 연 후 **솔루션 탐색기** 에는 폴더의 모든 파일이 표시됩니다. 파일을 클릭하여 편집을 시작할 수 있습니다. 백그라운드에서 Visual Studio는 IntelliSense, 탐색 및 리팩터링 기능을 사용할 수 있도록 파일 인덱싱을 시작합니다. 파일을 편집, 생성, 이동 또는 삭제하면 Visual Studio는 변경 내용을 자동으로 추적하고 해당 IntelliSense 인덱스를 계속해서 업데이트합니다. 코드는 구문 색 지정으로 표시되며, 대부분의 경우 기본 IntelliSense 문 완성을 포함합니다.
 
 ## <a name="open-any-code"></a>코드 열기
 
 Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다.
 
-- Visual Studio 메뉴 모음에서 **파일** > **열기** > **폴더**를 선택한 다음, 코드 위치로 이동합니다.
+- Visual Studio 메뉴 모음에서 **파일** > **열기** > **폴더** 를 선택한 다음, 코드 위치로 이동합니다.
 
 - 코드가 포함된 폴더의 상황에 맞는 메뉴(마우스 오른쪽 단추 클릭)에서 **Visual Studio에서 열기** 명령을 선택합니다.
 
 ::: moniker range="vs-2017"
-- Visual Studio **시작 페이지**에서 **폴더 열기** 링크를 선택합니다.
+- Visual Studio **시작 페이지** 에서 **폴더 열기** 링크를 선택합니다.
 
     > [!IMPORTANT]
-    > Visual Studio **시작 페이지**에서 **폴더 열기** 링크를 사용하여 모든 코드를 열 수 있는 것은 아닙니다. 예를 들어 코드 파일이 솔루션의 일부로, &mdash;즉 .sln 파일에&mdash; 저장된 경우 여기에 나열된 다른 옵션 중 하나를 사용하여 코드를 열어야 합니다.
+    > Visual Studio **시작 페이지** 에서 **폴더 열기** 링크를 사용하여 모든 코드를 열 수 있는 것은 아닙니다. 예를 들어 코드 파일이 솔루션의 일부로, &mdash;즉 .sln 파일에&mdash; 저장된 경우 여기에 나열된 다른 옵션 중 하나를 사용하여 코드를 열어야 합니다.
 
 ::: moniker-end
 
@@ -48,7 +50,7 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
 ::: moniker-end
 
-- 키보드 사용자인 경우 Visual Studio에서 **Ctrl**+**Shift**+**Alt**+**O**를 누릅니다.
+- 키보드 사용자인 경우 Visual Studio에서 **Ctrl**+**Shift**+**Alt**+**O** 를 누릅니다.
 
 - 복제된 GitHub 리포지토리에서 코드를 엽니다.
 
@@ -62,7 +64,7 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
    ![GitHub 복제 단추](./media/VSIDE_Code_Clone.png)
 
-1. Visual Studio에서 **팀 탐색기** 탭을 선택하여 **팀 탐색기**를 엽니다. 탭이 표시되지 않으면 **보기** > **팀 탐색기**에서 엽니다.
+1. Visual Studio에서 **팀 탐색기** 탭을 선택하여 **팀 탐색기** 를 엽니다. 탭이 표시되지 않으면 **보기** > **팀 탐색기** 에서 엽니다.
 
 1. [팀 탐색기]의 **로컬 Git 리포지토리** 섹션에서 **복제** 명령을 선택한 다음, GitHub 페이지의 URL을 텍스트 상자에 붙여넣습니다.
 
@@ -70,11 +72,11 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
 1. **복제** 단추를 선택하여 프로젝트 파일을 로컬 Git 리포지토리에 복제합니다. 리포지토리의 크기에 따라 이 프로세스에는 몇 분이 걸릴 수 있습니다.
 
-1. 시스템에 리포지토리를 복제한 후에 **팀 탐색기**에서 새로 복제된 리포지토리의 상황에 맞는 메뉴(마우스 오른쪽 단추 클릭)에서 **열기** 명령을 선택합니다.
+1. 시스템에 리포지토리를 복제한 후에 **팀 탐색기** 에서 새로 복제된 리포지토리의 상황에 맞는 메뉴(마우스 오른쪽 단추 클릭)에서 **열기** 명령을 선택합니다.
 
    ![복제된 리포지토리](./media/VSIDE_Code_Clone3.png)
 
-1. **폴더 보기 표시** 명령을 선택하여 **솔루션 탐색기**에서 파일을 봅니다.
+1. **폴더 보기 표시** 명령을 선택하여 **솔루션 탐색기** 에서 파일을 봅니다.
 
    ![폴더 보기 표시](./media/VSIDE_Code_Clone3_show.png)
 
@@ -101,11 +103,11 @@ MSBuild 기반 코드베이스에는 **시작** 단추의 드롭다운 목록에
 
 코드베이스에 Python 또는 JavaScript 코드가 포함된 경우에는 *.json* 파일을 구성할 필요가 없지만 해당 워크로드를 설치해야 합니다. 시작 스크립트도 구성해야 합니다.
 
-1. **도구** > **도구 및 기능 가져오기**를 선택하거나 Visual Studio를 닫고 Visual Studio 설치 관리자를 실행하는 방법으로 [Node.js 개발](https://visualstudio.microsoft.com/vs/node-js/) 또는 [Python 개발](https://visualstudio.microsoft.com/vs/python/) 워크로드를 설치합니다.
+1. **도구** > **도구 및 기능 가져오기** 를 선택하거나 Visual Studio를 닫고 Visual Studio 설치 관리자를 실행하는 방법으로 [Node.js 개발](https://visualstudio.microsoft.com/vs/node-js/) 또는 [Python 개발](https://visualstudio.microsoft.com/vs/python/) 워크로드를 설치합니다.
 
    ![Node.js 및 Python 개발 워크로드](media/python_nodejs_workloads.png)
 
-1. **솔루션 탐색기**의 JavaScript 또는 Python 파일의 마우스 오른쪽 단추 메뉴나 상황에 맞는 메뉴에서 **시작 항목으로 설정** 명령을 선택합니다.
+1. **솔루션 탐색기** 의 JavaScript 또는 Python 파일의 마우스 오른쪽 단추 메뉴나 상황에 맞는 메뉴에서 **시작 항목으로 설정** 명령을 선택합니다.
 
 1. **시작** 단추를 선택하여 디버깅을 시작합니다.
 

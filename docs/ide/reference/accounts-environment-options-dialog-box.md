@@ -1,5 +1,7 @@
 ---
 title: 계정 옵션 참조
+description: Visual Studio에 로그인할 때 사용하는 계정과 관련된 몇 가지 옵션 설정 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595906"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871147"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>계정, 환경, 옵션 대화 상자
 
@@ -29,7 +31,7 @@ ms.locfileid: "75595906"
 
 ### <a name="enable-device-code-flow"></a>디바이스 코드 흐름 사용
 
-이 옵션을 선택할 때 **파일** > **계정 설정** 페이지에서 **계정 추가**를 선택하면 Visual Studio의 동작이 변경됩니다. **계정에 로그인** 페이지를 확인하는 대신 로그인할 웹 브라우저에 붙여넣을 URL과 코드를 제공하는 대화 상자가 나타납니다. 이 옵션은 예를 들어 이전 버전의 Internet Explorer를 사용하거나 방화벽이 액세스를 제한하는 경우와 같이 Visual Studio에 일반적인 방식으로 로그인할 수 없는 경우에 유용합니다. 자세한 내용은 [여러 사용자 계정으로 작업](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)을 참조하세요.
+이 옵션을 선택할 때 **파일** > **계정 설정** 페이지에서 **계정 추가** 를 선택하면 Visual Studio의 동작이 변경됩니다. **계정에 로그인** 페이지를 확인하는 대신 로그인할 웹 브라우저에 붙여넣을 URL과 코드를 제공하는 대화 상자가 나타납니다. 이 옵션은 예를 들어 이전 버전의 Internet Explorer를 사용하거나 방화벽이 액세스를 제한하는 경우와 같이 Visual Studio에 일반적인 방식으로 로그인할 수 없는 경우에 유용합니다. 자세한 내용은 [여러 사용자 계정으로 작업](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)을 참조하세요.
 
 ## <a name="registered-azure-clouds"></a>등록된 Azure 클라우드
 
@@ -41,7 +43,7 @@ ms.locfileid: "75595906"
 
 추가 Azure 클라우드를 등록한 후에는 Visual Studio에 로그인할 때 로그인하려는 Azure 클라우드를 선택할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [여러 컴퓨터 간에 설정 동기화](../synchronized-settings-in-visual-studio.md)
 - [Visual Studio에 로그인](../signing-in-to-visual-studio.md)

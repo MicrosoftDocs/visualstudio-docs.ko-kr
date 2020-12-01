@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트에 대한 ASP.NET 프로파일러 구성
+description: ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 ASP.NET 프로파일러 정보를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baea8be1da9a6dd89c06aa328bf579974503921f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288210"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442328"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 부하 테스트에 대한 ASP.NET 프로파일러 구성
 
@@ -40,13 +42,13 @@ ASP.NET 프로파일러 진단 데이터 어댑터를 사용하여 부하 테스
     > [!WARNING]
     > 이 역할은 웹 서버여야 합니다.
 
-2. **ASP.NET 프로파일러**를 선택하여 ASP.NET 프로파일링 데이터 수집을 활성화한 다음, **구성**을 선택합니다.
+2. **ASP.NET 프로파일러** 를 선택하여 ASP.NET 프로파일링 데이터 수집을 활성화한 다음, **구성** 을 선택합니다.
 
      ASP.NET 프로파일링 데이터 컬렉션을 구성하는 데 사용할 대화 상자가 나타납니다.
 
-3. **프로파일러 샘플링 간격**에 각 ASP.NET 프로파일링 샘플을 수집하기 전에 대기할 중단되지 않은 CPU 클록 주기 수를 나타내는 값을 입력합니다.
+3. **프로파일러 샘플링 간격** 에 각 ASP.NET 프로파일링 샘플을 수집하기 전에 대기할 중단되지 않은 CPU 클록 주기 수를 나타내는 값을 입력합니다.
 
-4. 계층 상호 작용 프로파일링을 사용하려면 **계층 상호 작용 프로파일링 사용**을 선택합니다.
+4. 계층 상호 작용 프로파일링을 사용하려면 **계층 상호 작용 프로파일링 사용** 을 선택합니다.
 
      계층 상호 작용 프로파일링에서는 각 아티팩트(예: *MyPage.aspx* 또는 *CompanyLogo.gif*)에 대해 웹 서버로 전송되는 요청 수와 각 요청을 처리하는 데 걸린 시간을 계산합니다. 또한 계층 상호 작용 프로파일링에서는 페이지 요청의 일부로 사용된 ADO.NET 연결과 해당 요청을 처리할 때 실행된 쿼리 및 저장 프로시저 호출 수를 수집합니다.
 

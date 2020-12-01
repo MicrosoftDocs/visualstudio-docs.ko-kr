@@ -1,5 +1,7 @@
 ---
 title: '방법: 부하 테스트 결과 리포지토리 선택'
+description: 테스트 결과를 저장하기 위해 로컬 또는 원격 SQL 서버를 식별하는 방법을 알아봅니다. 서버에는 부하 테스트 결과 저장소가 있어야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ada73cc1f907a298a2cc1efcf3281fb8a219ef32
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287573"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439942"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>방법: 부하 테스트 결과 리포지토리 선택
 
@@ -32,26 +34,26 @@ ms.locfileid: "85287573"
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>부하 테스트 데이터에 사용될 결과 저장소 식별
 
-1. **솔루션 탐색기**에서 부하 테스트 파일을 엽니다.
+1. **솔루션 탐색기** 에서 부하 테스트 파일을 엽니다.
 
-2. **부하 테스트** 도구 모음에서 **테스트 컨트롤러 관리**를 선택합니다. **테스트 컨트롤러 관리** 대화 상자가 나타납니다. 에이전트를 원격으로 사용하는 경우 컨트롤러를 선택해야 합니다.
+2. **부하 테스트** 도구 모음에서 **테스트 컨트롤러 관리** 를 선택합니다. **테스트 컨트롤러 관리** 대화 상자가 나타납니다. 에이전트를 원격으로 사용하는 경우 컨트롤러를 선택해야 합니다.
 
      ![부하 테스트 결과 저장소 연결 속성](../test/media/loadtestconnectionproperties.png) 부하 테스트 결과 저장소 연결 속성
 
-3. **부하 테스트 결과 저장소**에서 **(…)** 를 클릭하여 **연결 속성** 대화 상자를 표시합니다.
+3. **부하 테스트 결과 저장소** 에서 **(…)** 를 클릭하여 **연결 속성** 대화 상자를 표시합니다.
 
-4. **서버 이름**에 `LoadTest` 스크립트를 실행한 서버 이름을 입력합니다.
+4. **서버 이름** 에 `LoadTest` 스크립트를 실행한 서버 이름을 입력합니다.
 
     > [!TIP]
     > 로컬 컴퓨터에서 SQL Express를 부하 테스트 저장소로 사용하는 경우에는 \<computername>\sqlexpress(예: **MyComputer\sqlexpress**)를 입력합니다.
 
-5. **서버에 로그온**에서 **Windows 인증 사용**을 선택할 수 있습니다. 사용자 이름 및 암호를 지정할 수 있지만 지정할 경우 **암호 저장** 옵션을 선택해야 합니다.
+5. **서버에 로그온** 에서 **Windows 인증 사용** 을 선택할 수 있습니다. 사용자 이름 및 암호를 지정할 수 있지만 지정할 경우 **암호 저장** 옵션을 선택해야 합니다.
 
-6. **데이터베이스에 연결**에서 **데이터베이스 이름 선택 또는 입력**을 선택합니다. 드롭다운 목록 상자에서 **LoadTest**를 선택합니다.
+6. **데이터베이스에 연결** 에서 **데이터베이스 이름 선택 또는 입력** 을 선택합니다. 드롭다운 목록 상자에서 **LoadTest** 를 선택합니다.
 
-7. **확인**을 선택합니다. **연결 테스트**를 선택하여 연결을 테스트합니다.
+7. **확인** 을 선택합니다. **연결 테스트** 를 선택하여 연결을 테스트합니다.
 
-8. **테스트 컨트롤러 관리** 대화 상자에서 **닫기**를 선택합니다.
+8. **테스트 컨트롤러 관리** 대화 상자에서 **닫기** 를 선택합니다.
 
 ## <a name="see-also"></a>참조
 

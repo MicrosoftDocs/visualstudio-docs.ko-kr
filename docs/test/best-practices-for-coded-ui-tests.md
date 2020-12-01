@@ -1,5 +1,7 @@
 ---
 title: 최선의 코딩된 UI 테스트 방법
+description: 코딩된 UI 테스트 개발을 위한 권장 사항에 대해 알아봅니다. 이러한 지침은 유연한 코딩된 UI 테스트를 만드는 데 도움이 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a4a79ca397b46d06e18c62fde2034551ff7afe0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565164"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441809"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>코딩된 UI 테스트에 대한 모범 사례
 
@@ -26,7 +28,7 @@ ms.locfileid: "75565164"
 
 유연한 코딩된 UI 테스트를 만들려면 다음 지침을 따르세요.
 
-- 가능한 한 **코딩된 UI 테스트 빌더**를 사용합니다.
+- 가능한 한 **코딩된 UI 테스트 빌더** 를 사용합니다.
 
 - *UIMap.Designer.cs* 파일은 직접 수정하지 마세요. 파일을 수정하면 파일에 대한 변경 내용을 덮어씁니다.
 
@@ -38,7 +40,7 @@ ms.locfileid: "75565164"
 
 - 가능하면 기록된 각 메서드를 10개 미만의 작업으로 제한합니다. 이 모듈식 방법을 사용하면 UI가 변경될 경우 메서드를 쉽게 바꿀 수 있습니다.
 
-- *UIMap.Designer.cs* 파일에 어설션 메서드를 자동으로 추가하는 **코딩된 UI 테스트 빌더**를 사용하여 각 어설션을 만듭니다.
+- *UIMap.Designer.cs* 파일에 어설션 메서드를 자동으로 추가하는 **코딩된 UI 테스트 빌더** 를 사용하여 각 어설션을 만듭니다.
 
 - UI(사용자 인터페이스)가 변경되면 테스트 메서드 또는 어설션 메서드를 다시 기록하거나 기존 테스트 메서드의 영향을 받는 섹션을 다시 기록합니다.
 
@@ -52,13 +54,13 @@ ms.locfileid: "75565164"
 
 코딩된 UI 테스트는 사용자 인터페이스의 여러 변경 내용에 맞게 자동으로 조정됩니다. 예를 들어 UI 요소의 위치 또는 색이 변경된 경우에도 대체로 코딩된 UI 테스트에서 올바른 요소를 찾습니다.
 
-테스트 실행 도중 검색 속성 집합을 사용하여 테스트 프레임 워크에서 UI 컨트롤을 찾습니다. 검색 속성은 *UIMap.Designer.cs* 파일의 **코딩된 UI 테스트 빌더**에서 만든 정의에서 각 컨트롤 클래스에 적용됩니다. 검색 속성에는 컨트롤의 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 및 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 속성과 같이 컨트롤을 식별하는 데 사용할 수 있는 속성 이름과 속성 값의 이름-값 쌍이 포함됩니다. 검색 속성이 변경되지 않은 경우 코딩된 UI 테스트가 UI에서 컨트롤을 성공적으로 찾습니다. 검색 속성이 변경된 경우 코딩된 UI 테스트에 추론을 적용하여 UI에서 컨트롤과 창을 찾는 스마트 일치 알고리즘이 있습니다. UI가 변경된 경우 이전에 식별된 요소의 검색 속성을 수정하여 찾을 수 있습니다.
+테스트 실행 도중 검색 속성 집합을 사용하여 테스트 프레임 워크에서 UI 컨트롤을 찾습니다. 검색 속성은 *UIMap.Designer.cs* 파일의 **코딩된 UI 테스트 빌더** 에서 만든 정의에서 각 컨트롤 클래스에 적용됩니다. 검색 속성에는 컨트롤의 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 및 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 속성과 같이 컨트롤을 식별하는 데 사용할 수 있는 속성 이름과 속성 값의 이름-값 쌍이 포함됩니다. 검색 속성이 변경되지 않은 경우 코딩된 UI 테스트가 UI에서 컨트롤을 성공적으로 찾습니다. 검색 속성이 변경된 경우 코딩된 UI 테스트에 추론을 적용하여 UI에서 컨트롤과 창을 찾는 스마트 일치 알고리즘이 있습니다. UI가 변경된 경우 이전에 식별된 요소의 검색 속성을 수정하여 찾을 수 있습니다.
 
 ## <a name="if-your-user-interface-changes"></a>사용자 인터페이스가 변경된 경우
 
 개발 중에는 사용자 인터페이스가 자주 변경됩니다. 이러한 변경의 영향을 줄이는 몇 가지 방법은 다음과 같습니다.
 
-- 이 컨트롤을 참조하는 기록된 메서드를 찾고 **코딩된 UI 테스트 빌더**를 사용하여 이 메서드에 대한 작업을 다시 기록합니다. 메서드에 동일한 이름을 사용하여 기존 작업을 덮어쓸 수 있습니다.
+- 이 컨트롤을 참조하는 기록된 메서드를 찾고 **코딩된 UI 테스트 빌더** 를 사용하여 이 메서드에 대한 작업을 다시 기록합니다. 메서드에 동일한 이름을 사용하여 기존 작업을 덮어쓸 수 있습니다.
 
 - 컨트롤에 더 이상 유효하지 않은 어설션이 있는 경우
 
@@ -85,7 +87,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>

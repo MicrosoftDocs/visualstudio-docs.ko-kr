@@ -1,5 +1,7 @@
 ---
 title: 파일 헤더 추가
+description: EditorConfig 파일을 사용하여 기존 파일, 프로젝트, 솔루션에 파일 헤더를 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810378"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870861"
 ---
 # <a name="add-file-header"></a>파일 헤더 추가
 
@@ -36,7 +38,7 @@ ms.locfileid: "90810378"
 
 3. 규칙 값을 적용하려는 헤더 텍스트와 같게 설정합니다. `{fileName}`을 파일 이름의 자리 표시자로 사용할 수 있습니다.
 
-    ![EditorConfig 파일 헤더 규칙](media/add-file-header-rule.png)
+    ![file_header_template 값을 보여주는 EditorConfig 파일의 스크린샷입니다.](media/add-file-header-rule.png)
 
     > [!NOTE]
     > EditorConfig에 명시적 multiline을 사용할 수 없으며 Unix 줄 바꿈 문자를 사용하여 새 줄을 삽입해야 합니다.
@@ -45,17 +47,17 @@ ms.locfileid: "90810378"
 
 5. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
-6. **파일 헤더 추가**를 선택합니다. 
+6. **파일 헤더 추가** 를 선택합니다. 
 
-    ![EditorConfig 파일 헤더 규칙](media/add-file-header.png)
+    ![파일 헤더 추가 옵션의 스크린샷입니다.](media/add-file-header.png)
 
-7. 전체 프로젝트 또는 솔루션에 파일 헤더를 적용하려면 **다음 위치에서 모든 발생 수정** 옵션 아래에서 **프로젝트** 또는 **솔루션**을 선택합니다.
+7. 전체 프로젝트 또는 솔루션에 파일 헤더를 적용하려면 **다음 위치에서 모든 발생 수정** 옵션 아래에서 **프로젝트** 또는 **솔루션** 을 선택합니다.
 
 8. 변경 내용을 미리 볼 수 있는 **모든 발생 수정** 대화 상자가 열립니다.
 
     ![모든 발생 수정 대화 상자](media/file-header-preview-changes.png)
 
-8. **적용**을 선택하여 변경 내용을 적용합니다.
+8. **적용** 을 선택하여 변경 내용을 적용합니다.
 
 ## <a name="see-also"></a>참조
 

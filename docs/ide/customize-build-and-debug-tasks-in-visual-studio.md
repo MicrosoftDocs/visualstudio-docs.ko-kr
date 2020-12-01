@@ -1,5 +1,6 @@
 ---
 title: JSON 파일을 사용하여 빌드 디버그 작업 사용자 지정
+description: Visual Studio에서 인식하지 않는 코드 베이스를 실행하고 디버그하기 위해 몇 가지 구성 세부 정보를 제공하도록 작업을 사용자 지정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 795fbb099654c8b947c1c8e2941fad015a574717
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 26f529fe8d9d8731375c4aa0783dde0dadb28a1d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046229"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006460"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
 
@@ -150,7 +151,7 @@ bin:
 
 - `taskName`은 오른쪽 클릭 메뉴에 표시되는 이름을 지정합니다.
 - `appliesTo`는 명령이 수행될 수 있는 파일을 지정합니다.
-- `command` 속성은 호출할 명령을 지정합니다. 이 예제에서는 `COMSPEC` 환경 변수를 사용하여 명령줄 인터프리터(일반적으로 *cmd.exe* )를 식별합니다.
+- `command` 속성은 호출할 명령을 지정합니다. 이 예제에서는 `COMSPEC` 환경 변수를 사용하여 명령줄 인터프리터(일반적으로 *cmd.exe*)를 식별합니다.
 - `args` 속성은 호출된 명령에 전달할 인수를 지정합니다.
 - `${file}` 매크로는 **솔루션 탐색기** 에서 선택한 파일을 검색합니다.
 
@@ -217,12 +218,12 @@ bin:
 |매크로|설명|
 |-|-|
 |`${env.<VARIABLE>}`| 개발자 명령 프롬프트에 대해 설정된 환경 변수(예: ${env.PATH}, ${env.COMSPEC} 등)를 지정합니다. 자세한 내용은 [Visual Studio용 개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조하세요.|
-|`${workspaceRoot}`| 작업 영역 폴더의 전체 경로(예: *C:\sources\hello* )|
-|`${file}`| 이 작업을 실행하도록 선택된 파일 또는 폴더의 전체 경로(예: *C:\sources\hello\src\hello.js* )|
-|`${relativeFile}`| 파일 또는 폴더의 상대 경로(예: *src\hello.js* )|
-|`${fileBasename}`| 경로 또는 확장명이 없는 파일 이름(예: *hello* )|
-|`${fileDirname}`| 파일 이름을 제외한 파일의 전체 경로(예: *C:\sources\hello\src* )|
-|`${fileExtname}`| 선택한 파일의 확장명(예: *.js* )|
+|`${workspaceRoot}`| 작업 영역 폴더의 전체 경로(예: *C:\sources\hello*)|
+|`${file}`| 이 작업을 실행하도록 선택된 파일 또는 폴더의 전체 경로(예: *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| 파일 또는 폴더의 상대 경로(예: *src\hello.js*)|
+|`${fileBasename}`| 경로 또는 확장명이 없는 파일 이름(예: *hello*)|
+|`${fileDirname}`| 파일 이름을 제외한 파일의 전체 경로(예: *C:\sources\hello\src*)|
+|`${fileExtname}`| 선택한 파일의 확장명(예: *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>launch.vs.json을 사용하여 디버깅 구성
 

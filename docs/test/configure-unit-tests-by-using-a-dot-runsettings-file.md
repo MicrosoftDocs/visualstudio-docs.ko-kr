@@ -1,5 +1,7 @@
 ---
 title: .runsettings 파일을 사용하여 단위 테스트 구성
+description: Visual Studio에서 .runsettings 파일을 사용하여 명령줄, IDE 또는 빌드 워크플로에서 실행되는 단위 테스트의 구성 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518767"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442692"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -306,7 +308,7 @@ public void HomePageTest()
 </MSTest>
 ```
 
-|Configuration|기본값|값|
+|구성|기본값|값|
 |-|-|-|
 |**ForcedLegacyMode**|false|Visual Studio 2012에서 MSTest 어댑터는 더욱 빠르고 확장성 가능하도록 최적화되었습니다. 테스트가 실행되는 순서와 같은 일부 동작은 이전 버전 Visual Studio처럼 정확하지 않을 수 있습니다. 이전 테스트 어댑터를 사용하려면 이 값을 **true** 로 설정합니다.<br /><br />예를 들어, 단위 테스트에 대해 *app.config* 파일을 지정한 경우 이 설정을 사용할 수 있습니다.<br /><br />새 어댑터를 사용할 수 있도록 테스트를 리팩터링하는 것이 좋습니다.|
 |**IgnoreTestImpact**|false|테스트 영향 기능은 MSTest 또는 Microsoft Test Manager(Visual Studio 2017에서 더 이상 사용되지 않음)에서 실행할 때 최근 변경 내용의 영향을 받는 테스트의 우선 순위를 지정합니다. 이 설정에서는 이 기능이 비활성화됩니다. 자세한 내용은 [이전 빌드 이후 실행해야 할 테스트](/previous-versions/dd286589(v=vs.140))를 참조하세요.|

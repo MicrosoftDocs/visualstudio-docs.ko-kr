@@ -1,5 +1,7 @@
 ---
 title: 프로젝트에 app.config 파일을 추가하는 방법
+description: 공용 언어 런타임에서 어셈블리 파일을 찾고 로드하는 방법을 사용자 지정할 수 있도록 C# 프로젝트에 애플리케이션 구성 파일(app.config 파일)을 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770834"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597355"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 애플리케이션 구성 파일 추가
 
@@ -29,17 +31,17 @@ C# 프로젝트에 애플리케이션 구성 파일(*app.config* 파일)을 추�
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>C# 프로젝트에 애플리케이션 구성 파일을 추가하려면
 
-1. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+1. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
-1. **설치됨** > **Visual C# 항목**을 확장한 다음, **애플리케이션 구성 파일** 템플릿을 선택합니다.
+1. **설치됨** > **Visual C# 항목** 을 확장한 다음, **애플리케이션 구성 파일** 템플릿을 선택합니다.
 
 1. **이름** 텍스트 상자에서 이름을 입력하고 **추가** 단추를 선택합니다.
 
-     *app.config*라는 파일을 프로젝트에 추가합니다.
+     *app.config* 라는 파일을 프로젝트에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [애플리케이션 설정 관리(.NET)](../ide/managing-application-settings-dotnet.md)
 - [구성 파일 스키마(.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

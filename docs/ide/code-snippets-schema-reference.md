@@ -1,5 +1,7 @@
 ---
 title: 코드 조각 스키마 참조
+description: IntelliSense 코드 조각 XML 스키마와 이를 사용하여 생산성을 높이는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183680"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006473"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -44,7 +46,7 @@ IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입�
 
 ## <a name="author-element"></a>Author 요소
 
-코드 조각 작성자의 이름을 지정합니다. **코드 조각 관리자**에는 코드 조각의 `Author` 요소에 저장된 이름이 표시됩니다.
+코드 조각 작성자의 이름을 지정합니다. **코드 조각 관리자** 에는 코드 조각의 `Author` 요소에 저장된 이름이 표시됩니다.
 
 ```xml
 <Author>
@@ -62,7 +64,7 @@ IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입�
 
 짧은 코드 블록에 대한 컨테이너를 제공합니다.
 
-### <a name="keywords"></a>키워드가
+### <a name="keywords"></a>키워드
 
 `Code` 요소의 텍스트에는 `$end$` 및 `$selected$`의 두 예약어를 사용할 수 있습니다. `$end$`는 코드 조각을 삽입하고 나서 커서를 놓을 위치를 표시합니다. `$selected$`는 코드 조각을 호출하면 조각으로 삽입되는 문서에서 선택한 텍스트를 나타냅니다. 다음을 포함하는 코드 조각의 예를 들어 보겠습니다.
 
@@ -151,7 +153,7 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 </CodeSnippet>
 ```
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Format`|필수 특성입니다. 코드 조각의 스키마 버전을 지정합니다. Format 특성은 x.x.x 구문의 문자열이어야 합니다. 여기서 각 "x"는 버전 번호의 숫자 값을 나타냅니다. Visual Studio에서는 이해할 수 없는 `Format` 특성을 갖는 코드 조각을 무시합니다.|
 
@@ -403,7 +405,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Literal>
 ```
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 
@@ -448,7 +450,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Object>
 ```
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 
@@ -588,7 +590,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 
 ## <a name="title-element"></a>Title 요소
 
-코드 조각의 제목을 지정합니다. 코드 조각의 `Title` 요소에 저장된 제목은 **코드 조각 선택**과 **코드 조각 관리자**의 코드 조각 설명에 표시됩니다.
+코드 조각의 제목을 지정합니다. 코드 조각의 `Title` 요소에 저장된 제목은 **코드 조각 선택** 과 **코드 조각 관리자** 의 코드 조각 설명에 표시됩니다.
 
 ```xml
 <Title>

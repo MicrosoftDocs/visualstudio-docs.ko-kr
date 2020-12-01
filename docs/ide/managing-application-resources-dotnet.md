@@ -1,5 +1,7 @@
 ---
 title: 애플리케이션 리소스 관리(.NET)
+description: 컴파일 프로세스의 일부가 아닌 애플리케이션 리소스 파일을 관리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992370"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596744"
 ---
 # <a name="manage-application-resources-net"></a>애플리케이션 리소스 관리(.NET)
 
@@ -37,9 +39,9 @@ ms.locfileid: "88992370"
 
 관리 코드 프로젝트에서 프로젝트 속성 창을 엽니다. 다음 방법 중 하나로 속성 창을 열 수 있습니다.
 
-- **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택
+- **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택
 - **Ctrl**+**Q** 검색 상자에 **프로젝트 속성** 입력
-- **솔루션 탐색기**에서 **Alt**+**Enter** 키 선택
+- **솔루션 탐색기** 에서 **Alt**+**Enter** 키 선택
 
 **리소스** 탭을 선택합니다. 프로젝트에 *.resx* 파일이 포함되지 않은 경우 하나를 추가하고, 다른 종류의 리소스를 추가 및 삭제하고, 기존 리소스를 수정할 수 있습니다.
 

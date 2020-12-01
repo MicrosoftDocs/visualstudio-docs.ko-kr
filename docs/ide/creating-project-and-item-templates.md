@@ -1,5 +1,7 @@
 ---
 title: 프로젝트와 파일에 대한 템플릿
+description: 사용자에게 일부 기본 코드와 구조체를 제공하는 재사용 가능한 스텁을 프로젝트 및 항목 템플릿이 어떻게 제공하는지 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313798"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006304"
 ---
 # <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿
 
@@ -67,7 +69,7 @@ ms.locfileid: "89313798"
 
 템플릿 폴더에 대한 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 컬렉션 형식 연결 시각화(클래스 디자이너)'
+description: 클래스 디자이너에서 컬렉션 형식 연결을 시각화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769892"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901078"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>방법: 클래스 디자이너에서 컬렉션 형식 연결 시각화
 
@@ -32,11 +34,11 @@ ms.locfileid: "85769892"
 
 2. 클래스 다이어그램에서 속성 및 필드가 표시되도록 클래스를 확장합니다.
 
-3. 클래스에서 필드나 속성을 마우스 오른쪽 단추로 클릭하고 **컬렉션 형식 연결로 표시**를 선택합니다.
+3. 클래스에서 필드나 속성을 마우스 오른쪽 단추로 클릭하고 **컬렉션 형식 연결로 표시** 를 선택합니다.
 
 속성 또는 필드가 수집된 형식과 연결된 형식 연결 선으로 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)
 - [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)

@@ -1,5 +1,7 @@
 ---
 title: 테스트 컨트롤러 및 테스트 에이전트 포트 구성
+description: 다른 소프트웨어와의 충돌을 방지하기 위해 테스트 컨트롤러, 테스트 에이전트, 클라이언트에 사용되는 기본 수신 포트를 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288821"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441570"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 포트 구성
 
@@ -65,7 +67,7 @@ ms.locfileid: "85288821"
 
 테스트 컨트롤러와 테스트 에이전트에 대한 포트를 구성하려면 다음 지침에 따르십시오.
 
-- **컨트롤러 서비스** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* 파일을 편집하여 포트의 값을 수정합니다.
+- **컨트롤러 서비스***%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* 파일을 편집하여 포트의 값을 수정합니다.
 
     ```xml
     <appSettings>
@@ -73,7 +75,7 @@ ms.locfileid: "85288821"
     </appSettings>
     ```
 
-- **에이전트 서비스** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* 파일을 편집하여 포트를 수정합니다.
+- **에이전트 서비스***%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* 파일을 편집하여 포트를 수정합니다.
 
     ```xml
     <appSettings>
@@ -87,6 +89,6 @@ ms.locfileid: "85288821"
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
