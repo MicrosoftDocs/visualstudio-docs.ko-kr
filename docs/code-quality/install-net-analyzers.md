@@ -1,7 +1,7 @@
 ---
-title: .NET 분석기 사용 또는 설치
+title: 자사 .NET 분석기 사용 또는 설치
 ms.date: 08/03/2018
-description: .NET SDK에서 .NET 분석기를 사용 하도록 설정 하거나 이러한 분석기를 NuGet 패키지로 설치 하는 방법에 대해 알아봅니다.
+description: .NET SDK에서 자사 .NET 분석기를 사용 하도록 설정 하거나 이러한 분석기를 NuGet 패키지로 설치 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14d89caba498a07c2447f9df1109e4da9f6a466
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 60eb4828d4c8450376178c2fdccf7d4c0f63d989
+ms.sourcegitcommit: 208bd1edebfe6dec5d3bb92c63b5c1e093677e35
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112172"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440373"
 ---
-# <a name="enable-or-install-net-analyzers"></a>.NET 분석기 사용 또는 설치
+# <a name="enable-or-install-first-party-net-analyzers"></a>자사 .NET 분석기 사용 또는 설치
 
 ## <a name="overview"></a>개요
 
-.NET 컴파일러 플랫폼(Roslyn) 분석기는 C# 또는 Visual Basic 코드를 검사하여 코드 품질 및 코드 스타일 문제를 확인합니다. 다음 방법 중 하나를 사용 하 여 이러한 분석기를 사용 하거나 설치할 수 있습니다.
+.NET 컴파일러 플랫폼(Roslyn) 분석기는 C# 또는 Visual Basic 코드를 검사하여 코드 품질 및 코드 스타일 문제를 확인합니다. 다음 방법 중 하나로 자사 .NET 분석기를 사용 하도록 설정 하거나 설치할 수 있습니다.
 
 - **.NET sdk에서 사용**: Visual Studio 2019 16.8 및 .Net 5.0부터 이러한 분석기는 [.net sdk에 포함](/dotnet/fundamentals/code-analysis/overview)되어 있습니다. 분석은 기본적으로 .NET 5.0 이상을 대상으로 하는 프로젝트에 대해 사용 하도록 설정 됩니다. 속성을로 설정 하 여 이전 .NET 버전을 대상으로 하는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 수 있습니다 `EnableNETAnalyzers` `true` . 을로 설정 하 여 프로젝트에 대 한 코드 분석을 사용 하지 않도록 설정할 수도 있습니다 `EnableNETAnalyzers` `false` .
 
