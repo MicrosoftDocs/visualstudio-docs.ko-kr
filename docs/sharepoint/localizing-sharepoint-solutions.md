@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션 지역화 | Microsoft Docs
+description: 하드 코드된 문자열을 코드에서 제거하여 이를 번역된 문자열을 포함한 XML 기반 리소스(.resx) 파일로 추상화하여 SharePoint 솔루션을 지역화합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017141"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304278"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint 솔루션 지역화
 
@@ -54,7 +56,7 @@ ms.locfileid: "86017141"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 애플리케이션에서 일반적으로 지역화하는 세 가지 영역은 기능, ASPX 페이지 태그, 코드입니다. 예시를 위해 다음 섹션에서는 독일어와 일본어로 지역화하려는 SharePoint 솔루션이 있다고 가정합니다. 기본 언어는 한국어(Korean)입니다.
 
 ### <a name="localize-features"></a>기능 지역화
- 기능을 지역화하려면 하드 코드된 기능 제목 및 설명 대신 지역화된 리소스 파일의 번역된 제목 및 문자열을 참조하는 식을 사용해야 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 **기능 디자이너**에서 이 변경 작업을 수행합니다. 자세한 내용은 [방법: 기능 지역화](../sharepoint/how-to-localize-a-feature.md)를 참조하세요.
+ 기능을 지역화하려면 하드 코드된 기능 제목 및 설명 대신 지역화된 리소스 파일의 번역된 제목 및 문자열을 참조하는 식을 사용해야 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 **기능 디자이너** 에서 이 변경 작업을 수행합니다. 자세한 내용은 [방법: 기능 지역화](../sharepoint/how-to-localize-a-feature.md)를 참조하세요.
 
  영어 기능을 독일어와 일본어로 지역화하려면 영어, 독일어, 일본어의 세 가지 리소스 파일 프로젝트 항목을 프로젝트에 추가합니다. 기능 리소스 파일은 ASPX 태그 또는 코드를 지역화하는 데 사용할 수 없습니다. 별도의 리소스 파일이 필요합니다.
 
@@ -64,16 +66,16 @@ ms.locfileid: "86017141"
 $Resources:String ID
 ```
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 기능 리소스 이름은 항상 Resources로 지정됩니다. 고정 언어가 아닌 다른 언어를 선택하면 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]가 리소스 파일 이름에 추가됩니다. 예를 들어 고정 언어(기본) 기능 리소스 파일을 추가하는 경우 파일 이름은 *Resources.resx*가 됩니다. 일본어(일본) 문화권을 선택하여 언어별 기능 리소스를 추가하는 경우 파일 이름은 *Resources.ja-JP.resx*가 됩니다. 기능 리소스 파일 이름은 자동으로 할당되며, 변경할 수 없습니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 기능 리소스 이름은 항상 Resources로 지정됩니다. 고정 언어가 아닌 다른 언어를 선택하면 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]가 리소스 파일 이름에 추가됩니다. 예를 들어 고정 언어(기본) 기능 리소스 파일을 추가하는 경우 파일 이름은 *Resources.resx* 가 됩니다. 일본어(일본) 문화권을 선택하여 언어별 기능 리소스를 추가하는 경우 파일 이름은 *Resources.ja-JP.resx* 가 됩니다. 기능 리소스 파일 이름은 자동으로 할당되며, 변경할 수 없습니다.
 
  기능 리소스의 범위는 리소스가 추가된 기능의 로컬 범위입니다. 솔루션의 모든 기능 또는 요소 파일에서 사용할 수 있는 리소스를 만들려면 기능 리소스 파일 대신 **전역 리소스 파일** 프로젝트 항목을 추가합니다. **전역 리소스 파일** 프로젝트 항목은 **새 항목 추가** 대화 상자에서 **SharePoint** 아래의 **2010** 폴더에 있습니다. 전역 리소스 파일은 SharePoint 루트 폴더의 \Resources 폴더에 배포됩니다.
 
 ### <a name="localize-aspx-page-markup"></a>ASPX 페이지 태그 지역화
  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 페이지를 지역화하려면 영어, 독일어, 일본어의 세 가지 리소스 파일 프로젝트 항목을 프로젝트에 추가합니다. 태그 외에 코드를 지역화할 필요가 없는 경우 전역 리소스 파일을 대신 추가할 수 있습니다.
 
- 기본 언어 리소스 파일의 이름을 지정합니다. 지역화된 리소스 파일에는 언어별 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]를 추가해서 동일한 이름을 지정합니다. 예를 들어 독일어의 경우 *MyAppResources.de-DE.resx*를 지정하고, 일본어의 경우 *MyAppResources.ja-JP.resx*를 지정합니다.
+ 기본 언어 리소스 파일의 이름을 지정합니다. 지역화된 리소스 파일에는 언어별 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]를 추가해서 동일한 이름을 지정합니다. 예를 들어 독일어의 경우 *MyAppResources.de-DE.resx* 를 지정하고, 일본어의 경우 *MyAppResources.ja-JP.resx* 를 지정합니다.
 
- 각 리소스 파일의 **배포 유형** 속성을 **AppGlobalResource**로 설정합니다. 그러면 리소스 파일이 App_GlobalResources 폴더에 배포되어, 솔루션의 모든 ASPX 페이지와 컨트롤에서 해당 파일을 사용할 수 있습니다. App_GlobalResources 폴더는 C:\inetpub\wwwroot\wss\VirtualDirectories\\<port number\>\App_GlobalResources에 있습니다.
+ 각 리소스 파일의 **배포 유형** 속성을 **AppGlobalResource** 로 설정합니다. 그러면 리소스 파일이 App_GlobalResources 폴더에 배포되어, 솔루션의 모든 ASPX 페이지와 컨트롤에서 해당 파일을 사용할 수 있습니다. App_GlobalResources 폴더는 C:\inetpub\wwwroot\wss\VirtualDirectories\\<port number\>\App_GlobalResources에 있습니다.
 
 > [!NOTE]
 > 비전역 리소스 파일을 사용하는 경우 배포 유형 속성과 기타 SharePoint 관련 속성을 사용하려면 프로젝트 항목 폴더로 이동합니다.
@@ -109,11 +111,11 @@ $Resources:String ID
 ### <a name="localize-code"></a>코드 지역화
  기능 문자열과 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 태그 지역화뿐 아니라 솔루션 코드에 표시되는 메시지 문자열과 오류 문자열도 지역화해야 합니다. 지역화된 정보 및 오류 메시지는 위성 어셈블리에 포함됩니다. 위성 어셈블리는 예외 등의 출력 메시지, [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] 텍스트와 같이 사용자에게 표시되는 문자열을 포함합니다.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서는 표준 .NET Framework 허브 및 스포크 모델을 사용합니다. 허브 또는 주 프로그램 어셈블리는 기본 언어 리소스를 포함합니다. 스포크 또는 위성 어셈블리는 언어별 리소스를 포함합니다. 자세한 내용은 [리소스 패키지 및 배포](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100))를 참조하세요. 위성 어셈블리는 리소스( *.resx*) 파일에서 컴파일됩니다. 프로젝트 및 솔루션 패키지에 언어별 리소스 파일을 추가하면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 리소스 파일을 *{Project Name}.resources.dll*이라는 위성 어셈블리로 컴파일합니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서는 표준 .NET Framework 허브 및 스포크 모델을 사용합니다. 허브 또는 주 프로그램 어셈블리는 기본 언어 리소스를 포함합니다. 스포크 또는 위성 어셈블리는 언어별 리소스를 포함합니다. 자세한 내용은 [리소스 패키지 및 배포](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100))를 참조하세요. 위성 어셈블리는 리소스( *.resx*) 파일에서 컴파일됩니다. 프로젝트 및 솔루션 패키지에 언어별 리소스 파일을 추가하면 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 리소스 파일을 *{Project Name}.resources.dll* 이라는 위성 어셈블리로 컴파일합니다.
 
  ASPX 태그와 마찬가지로 기본 언어와 지역화된 각 언어에 하나씩, 별도의 리소스 파일 프로젝트 항목을 프로젝트에 추가하여 SharePoint 애플리케이션 코드를 지역화합니다. 그러나 앞서 설명한 것처럼 ASPX 태그를 지역화하기 위한 리소스 파일이 이미 있는 경우에는 코드를 지역화하는 데 재사용할 수 있습니다. 리소스 파일을 만들어야 하는 경우, 선택한 이름에 *.resx* 확장명을 추가해서 기본 언어 리소스 파일에 지정합니다. 지역화된 리소스 파일에는 언어별 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]를 추가해서 동일한 이름을 지정합니다. 위성 리소스 어셈블리를 만들 수 있게 하려면 각 리소스 파일의 빌드 작업 속성을 포함 리소스로 설정합니다.
 
- 위성 어셈블리를 만들려면 프로젝트를 빌드한 다음, **패키지 디자이너**의 **고급** 탭을 통해 파일을 다른 어셈블리로 추가합니다. 어셈블리를 추가하는 경우 *de-DE\\{Project Item Name}.resources.dll*과 같이 위치 경로 앞에 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 폴더를 추가합니다. 그러면 패키지에 동일한 이름의 파일을 포함할 수 있습니다.
+ 위성 어셈블리를 만들려면 프로젝트를 빌드한 다음, **패키지 디자이너** 의 **고급** 탭을 통해 파일을 다른 어셈블리로 추가합니다. 어셈블리를 추가하는 경우 *de-DE\\{Project Item Name}.resources.dll* 과 같이 위치 경로 앞에 문화권 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 폴더를 추가합니다. 그러면 패키지에 동일한 이름의 파일을 포함할 수 있습니다.
 
  코드에서 다음 구문을 사용하여 하드 코드된 문자열을 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 메서드 호출로 바꿉니다.
 

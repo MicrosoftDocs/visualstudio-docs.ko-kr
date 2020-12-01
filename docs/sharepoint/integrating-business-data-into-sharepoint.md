@@ -1,5 +1,7 @@
 ---
 title: SharePoint에 비즈니스 데이터 통합 | Microsoft Docs
+description: BDC(비즈니스 데이터 연결) 서비스용 모델을 만들어 비즈니스 데이터를 SharePoint로 통합하는 방법에 대한 고급 요약을 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016315"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304346"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint에 비즈니스 데이터 통합
   SharePoint에 비즈니스 데이터를 통합할 수 있습니다. 비즈니스 데이터는 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel, SAP 등의 백 엔드 서버 애플리케이션 또는 웹 서비스에서 가져올 수 있습니다. 사용자는 SharePoint에서 외부 목록 또는 비즈니스 데이터 웹 파트를 사용하여 비즈니스 데이터를 표시, 추가, 업데이트 또는 삭제할 수 있습니다.  사용자는 Microsoft Outlook과 같은 Microsoft Office 애플리케이션에서 오프라인으로 이 데이터에 액세스할 수도 있습니다. 자세한 내용은 [외부 데이터를 표시할 수 있는 위치](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))를 참조하세요.

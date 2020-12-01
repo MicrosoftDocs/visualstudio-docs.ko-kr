@@ -1,5 +1,7 @@
 ---
 title: SharePoint 솔루션 패키지 및 배포 | Microsoft Docs
+description: 솔루션 패키지(.wsp) 파일을 사용하여 SharePoint Server에 배포된 SharePoint 솔루션 패키지를 만들어 배포합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015593"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305084"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>SharePoint 솔루션 패키지 및 배포
   일반적으로 SharePoint 솔루션은 솔루션 패키지(.wsp) 파일을 사용하여 SharePoint Server에 배포됩니다. Visual Studio를 사용하여 SharePoint 프로젝트 항목을 기능으로 구성하고 패키지를 만들어 SharePoint 기능을 배포할 수 있습니다.
@@ -84,20 +86,20 @@ ms.locfileid: "86015593"
  솔루션 탐색기를 사용하여 SharePoint 프로젝트의 파일을 탐색하고 열 수 있습니다. 솔루션 탐색기의 상황에 맞는 메뉴를 사용하여 기능, 기능 이벤트 수신기, 기능 리소스를 추가합니다. 또한 기능 디자이너와 패키지 디자이너를 열어 배포할 기능 및 패키지를 구성할 수 있습니다.
 
 ## <a name="deploy-sharepoint-solutions"></a>SharePoint 솔루션 배포
- Visual Studio에서 기능 및 패키지를 사용자 지정한 후 SharePoint Server에 배포할 *.wsp* 파일을 만들 수 있습니다. 개발 컴퓨터의 SharePoint Server에 있는 *.wsp*만 Visual Studio에서 디버그하고 테스트할 수 있습니다. 원격 SharePoint Server에 SharePoint 솔루션을 배포하는 방법에 대한 자세한 내용은 [솔루션 배포](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))를 참조하세요.
+ Visual Studio에서 기능 및 패키지를 사용자 지정한 후 SharePoint Server에 배포할 *.wsp* 파일을 만들 수 있습니다. 개발 컴퓨터의 SharePoint Server에 있는 *.wsp* 만 Visual Studio에서 디버그하고 테스트할 수 있습니다. 원격 SharePoint Server에 SharePoint 솔루션을 배포하는 방법에 대한 자세한 내용은 [솔루션 배포](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))를 참조하세요.
 
  개발 컴퓨터의 배포 단계를 사용자 지정할 수도 있습니다. 자세한 내용은 [SharePoint 솔루션 패키지 배포, 게시, 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)를 참조하세요.
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>SharePoint 솔루션에 파일 배포
  일반적으로 SharePoint 솔루션에 SharePoint 프로젝트 항목을 추가하면 필요한 모든 파일이 포함됩니다. 컴파일할 수 있는 파일(코드 파일)은 솔루션의 출력 어셈블리에 빌드됩니다. 그러나 컴파일할 수 없는 파일(예: *.xml*, *.txt* 또는 리소스 파일)을 SharePoint 프로젝트에 추가해야 하는 경우도 있습니다. 해당 파일은 솔루션에 자동으로 패키지되지 않습니다. 파일이 패키지되게 하려면 매핑된 폴더 또는 SharePoint 프로젝트 항목에 파일을 추가합니다.
 
- 매핑된 폴더에 추가한 파일은 솔루션을 배포할 때 자동으로 SharePoint 하이브에 복사됩니다. SharePoint 프로젝트 항목에 추가한 파일은 각 파일의 **배포 위치** 속성에 지정한 위치에 배포됩니다. 이 위치는 부분적으로 **배포 유형** 속성에 따라 설정됩니다. 기본적으로 **배포 유형** 속성 값은 **NoDeployment**로, 파일이 솔루션과 함께 배포되지 않습니다. 패키지에 파일을 포함하려면 속성에 다른 값을 설정해야 합니다.
+ 매핑된 폴더에 추가한 파일은 솔루션을 배포할 때 자동으로 SharePoint 하이브에 복사됩니다. SharePoint 프로젝트 항목에 추가한 파일은 각 파일의 **배포 위치** 속성에 지정한 위치에 배포됩니다. 이 위치는 부분적으로 **배포 유형** 속성에 따라 설정됩니다. 기본적으로 **배포 유형** 속성 값은 **NoDeployment** 로, 파일이 솔루션과 함께 배포되지 않습니다. 패키지에 파일을 포함하려면 속성에 다른 값을 설정해야 합니다.
 
  예를 들어 SharePoint 프로젝트에 *.xml* 파일을 추가하려면 다음 작업 중 하나를 수행합니다.
 
-- SharePoint의 매핑된 폴더 “레이아웃”을 프로젝트에 추가합니다. 그러면 **솔루션 탐색기**에 프로젝트 하위 폴더를 포함하는 **레이아웃** 폴더가 생성됩니다. 새 하위 폴더에 *.xml* 파일을 추가합니다. 기본적으로 파일은 SharePoint 파일 시스템의 *..\TEMPLATE\LAYOUTS\\\<Folder Name>* 아래에 배포됩니다. 매핑된 폴더를 추가하는 방법에 대한 자세한 내용은 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)를 참조하세요.
+- SharePoint의 매핑된 폴더 “레이아웃”을 프로젝트에 추가합니다. 그러면 **솔루션 탐색기** 에 프로젝트 하위 폴더를 포함하는 **레이아웃** 폴더가 생성됩니다. 새 하위 폴더에 *.xml* 파일을 추가합니다. 기본적으로 파일은 SharePoint 파일 시스템의 *..\TEMPLATE\LAYOUTS\\\<Folder Name>* 아래에 배포됩니다. 매핑된 폴더를 추가하는 방법에 대한 자세한 내용은 [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md)를 참조하세요.
 
-- SharePoint 프로젝트 항목 폴더에 *.xml* 파일을 추가하고 *.xml* 파일의 **배포 유형** 속성을 **NoDeployment**에서 다른 설정(예: **RootFile** 또는 **ElementFile**)으로 변경합니다. 적절한 **배포 유형** 설정은 파일 및 프로젝트에 따라 다릅니다. **배포 유형** 속성 설정에 대한 자세한 내용은 [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)을 참조하세요.
+- SharePoint 프로젝트 항목 폴더에 *.xml* 파일을 추가하고 *.xml* 파일의 **배포 유형** 속성을 **NoDeployment** 에서 다른 설정(예: **RootFile** 또는 **ElementFile**)으로 변경합니다. 적절한 **배포 유형** 설정은 파일 및 프로젝트에 따라 다릅니다. **배포 유형** 속성 설정에 대한 자세한 내용은 [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)을 참조하세요.
 
   추가한 파일이 솔루션의 특정 프로젝트에 적용되지 않는 경우 솔루션에 빈 SharePoint 프로젝트를 추가한 다음, 파일을 더 추가할 수 있습니다. SharePoint, 특히 콘텐츠 데이터베이스에 파일을 배포하는 또 다른 방법은 프로젝트에 모듈을 추가한 다음, 모듈에 파일을 추가하는 것입니다. 자세한 내용은 [모듈을 사용하여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)을 참조하세요.
 
