@@ -21,15 +21,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135094"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189786"
 ---
 # <a name="options-dialog-box-environment--general"></a>옵션 대화 상자: 환경 \> 일반
 
-이 페이지에서는 IDE(통합 개발 환경)에 대한 다른 옵션 중에서도 색 테마, 상태 표시줄 설정 및 파일 확장명 연결을 변경할 수 있습니다. **도구** 메뉴를 열고 **옵션**을 선택한 다음 **환경** 폴더를 열고 **일반** 페이지를 선택하여 **옵션** 대화 상자에 액세스할 수 있습니다.
+이 페이지에서는 IDE(통합 개발 환경)에 대한 다른 옵션 중에서도 색 테마, 상태 표시줄 설정 및 파일 확장명 연결을 변경할 수 있습니다. **도구** 메뉴를 열고 **옵션** 을 선택한 다음 **환경** 폴더를 열고 **일반** 페이지를 선택하여 **옵션** 대화 상자에 액세스할 수 있습니다.
 
 ## <a name="visual-experience"></a>시각적 효과
 
@@ -37,7 +37,7 @@ ms.locfileid: "91135094"
 
 IDE의 **파랑**, **밝게**, **어둡게** 또는 **파랑(추가 대비)** 색 테마를 선택합니다.
 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)에서 **Visual Studio 색 테마 편집기**를 다운로드 및 설치하여 미리 정의된 추가 테마를 설치하고 사용자 지정 테마를 만들 수 있습니다. 이 도구를 설치하면 **색 테마** 목록 상자에 다른 색 테마가 추가로 나타납니다.
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)에서 **Visual Studio 색 테마 편집기** 를 다운로드 및 설치하여 미리 정의된 추가 테마를 설치하고 사용자 지정 테마를 만들 수 있습니다. 이 도구를 설치하면 **색 테마** 목록 상자에 다른 색 테마가 추가로 나타납니다.
 
 **메뉴 모음에 제목 대/소문자 스타일 적용**
 
@@ -51,7 +51,7 @@ IDE의 **파랑**, **밝게**, **어둡게** 또는 **파랑(추가 대비)** �
 
 > [!TIP]
 > - Windows 10에는 **Let Windows try to fix apps so they're not blurry**(Windows에서 앱이 흐려 보이지 않도록 수정 허용)라는 설정이 있습니다. **픽셀 밀도가 다른 화면의 렌더링 최적화** 옵션이 선택된 경우 해당 Windows 설정을 **켜면** 효과가 별로 없습니다.
-> - Windows 10에는 **프로그램 호환성 문제 해결사**도 있습니다. Visual Studio의 모양을 수정하는 데는 해당 문제 해결사를 사용하지 않는 것이 좋습니다.
+> - Windows 10에는 **프로그램 호환성 문제 해결사** 도 있습니다. Visual Studio의 모양을 수정하는 데는 해당 문제 해결사를 사용하지 않는 것이 좋습니다.
 
 ::: moniker-end
 

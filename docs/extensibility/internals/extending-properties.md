@@ -1,5 +1,7 @@
 ---
 title: 속성 확장 | Microsoft Docs
+description: Visual Studio 속성 창에서 구현 해야 하는 인터페이스에 대해 알아보고를 호출 하 여 속성 목록을 확장 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708422"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479538"
 ---
 # <a name="extend-properties"></a>속성 확장
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창은 COM 및 com + 구성 요소에 대 한 유니버설 속성 브라우저 이며 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 제품을 지원 합니다. **속성** 창은 `ITypeInfo` 형식 정보 및 com + 메타 데이터와 함께 작동 하 여 IDE (통합 개발 환경)의 다른 창에서 현재 선택 된 개체에 대 한 디자인 타임 속성을 나열 합니다.

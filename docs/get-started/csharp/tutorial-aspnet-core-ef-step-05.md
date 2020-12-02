@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780945"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189760"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>5단계: Azure에 ASP.NET Core 앱 배포
 
@@ -37,7 +37,7 @@ Visual Studio 2019에서 ASP.NET Core 앱을 엽니다. [이 자습서 시리즈
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 
-1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다. **게시** 마법사에서 대상으로 **Azure**를 선택합니다.
+1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다. **게시** 마법사에서 대상으로 **Azure** 를 선택합니다.
 
    ![Azure App Service 1의 스크린샷](media/vs-2019/app-service-screen-1.png)
 
@@ -45,25 +45,25 @@ Visual Studio 2019에서 ASP.NET Core 앱을 엽니다. [이 자습서 시리즈
 
    ![Azure App Service 2의 스크린샷](media/vs-2019/app-service-screen-2.png)
 
-1. **새 Azure App Service 만들기**를 선택합니다. Azure 계정이 아직 없는 경우 **Azure 체험 계정 만들기**를 클릭하고 간단한 등록 프로세스를 완료합니다.
+1. **새 Azure App Service 만들기** 를 선택합니다. Azure 계정이 아직 없는 경우 **Azure 체험 계정 만들기** 를 클릭하고 간단한 등록 프로세스를 완료합니다.
 
    ![Azure App Service 3의 스크린샷](media/vs-2019/app-service-screen-3.png)
 
-1. 이름 및 리소스 그룹을 지정하거나 기본값을 그대로 적용하고 **만들기**를 선택합니다. 리소스 그룹은 Azure에서 스토리지 계정, 키 자격 증명 모음, 데이터베이스와 함께 작동하는 서비스와 같은 관련 리소스를 구성하는 방법입니다.
+1. 이름 및 리소스 그룹을 지정하거나 기본값을 그대로 적용하고 **만들기** 를 선택합니다. 리소스 그룹은 Azure에서 스토리지 계정, 키 자격 증명 모음, 데이터베이스와 함께 작동하는 서비스와 같은 관련 리소스를 구성하는 방법입니다.
 
    ![Azure App Service 4의 스크린샷](media/vs-2019/app-service-screen-4.png)
 
-1. **마침**을 선택합니다. 리소스가 Azure에서 만들어지고, 앱이 배포되고, **게시** 탭이 방금 만든 항목에 대한 정보로 채워집니다. **게시** 탭에서는 클릭 한 번으로 동일한 구성으로 게시할 단추가 제공되거나, 구성 세부 정보가 표시되거나, 데이터베이스와 같은 서비스를 추가할 수 있습니다.
+1. **마침** 을 선택합니다. 리소스가 Azure에서 만들어지고, 앱이 배포되고, **게시** 탭이 방금 만든 항목에 대한 정보로 채워집니다. **게시** 탭에서는 클릭 한 번으로 동일한 구성으로 게시할 단추가 제공되거나, 구성 세부 정보가 표시되거나, 데이터베이스와 같은 서비스를 추가할 수 있습니다.
 
 이제 Azure SQL Server 데이터베이스를 추가합니다.
 
-1. **게시** 탭의 **서비스 종속성**에서 **SQL Server 데이터베이스** 옆에 있는 **구성**을 선택합니다.
+1. **게시** 탭의 **서비스 종속성** 에서 **SQL Server 데이터베이스** 옆에 있는 **구성** 을 선택합니다.
 
-1. 다음 화면에서 **Azure SQL Database**를 선택합니다.
+1. 다음 화면에서 **Azure SQL Database** 를 선택합니다.
 
    ![Azure SQL Database 화면의 스크린샷](media/vs-2019/app-service-azure-sql-db.png)
 
-1. **SQL Database 구성** 화면에서 **SQL Database 만들기**를 선택합니다.
+1. **SQL Database 구성** 화면에서 **SQL Database 만들기** 를 선택합니다.
 
    ![SQL Database 구성 화면의 스크린샷](media/vs-2019/app-service-azure-sql-db-2.png)
 
@@ -95,7 +95,7 @@ Azure를 사용하여 앱을 호스트하는 또 다른 이점은 보안 및 규
 
 ## <a name="update-connection-string"></a>연결 문자열 업데이트
 
-기본적으로 Azure에서는 새 앱이 새 SQL Server 데이터베이스에 연결할 때 `DefaultConnection`이라는 연결 문자열을 사용해야 합니다. 현재 이 자습서의 앞부분에서 만든 앱은 `AppDbContext`라는 연결 문자열을 사용합니다. *appsettings.json* 및 *Startup.cs*에서 이 문자열을 변경한 후 앱을 다시 배포해야 합니다.
+기본적으로 Azure에서는 새 앱이 새 SQL Server 데이터베이스에 연결할 때 `DefaultConnection`이라는 연결 문자열을 사용해야 합니다. 현재 이 자습서의 앞부분에서 만든 앱은 `AppDbContext`라는 연결 문자열을 사용합니다. *appsettings.json* 및 *Startup.cs* 에서 이 문자열을 변경한 후 앱을 다시 배포해야 합니다.
 
 ## <a name="test-the-app-running-in-azure"></a>Azure에서 실행 중인 앱 테스트
 

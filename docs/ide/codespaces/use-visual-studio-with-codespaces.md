@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006256"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189929"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>codespace와 함께 Visual Studio를 사용하는 방법(미리 보기)
 
@@ -34,7 +34,7 @@ Visual Studio 2019 미리 보기를 사용하여 GitHub Codespaces에 연결하�
 
 1. Visual Studio 2019 미리 보기에서 **도구** > **옵션** 메뉴 항목을 사용하여 옵션 대화 상자를 엽니다.
 
-2. **환경**에서 **미리 보기 기능**을 선택하고 **GitHub Codespaces에 연결** 미리 보기 기능을 선택합니다.
+2. **환경** 에서 **미리 보기 기능** 을 선택하고 **GitHub Codespaces에 연결** 미리 보기 기능을 선택합니다.
 
    ![GitHub Codespaces에 연결 미리 보기 기능 확인](media/connect-to-github-codespaces-preview-feature.png)
 
@@ -48,15 +48,15 @@ codespace가 아직 없는 경우 Visual Studio에서 만들 수 있습니다.
 
    ![codespace에 연결이 있는 Visual Studio 시작 창](media/visual-studio-start-window.png)
 
-2. **codespace에 연결**을 선택하면 GitHub에 로그인하라는 메시지가 표시됩니다. 아직 없는 경우 GitHub 계정을 만들 수도 있습니다.
+2. **codespace에 연결** 을 선택하면 GitHub에 로그인하라는 메시지가 표시됩니다. 아직 없는 경우 GitHub 계정을 만들 수도 있습니다.
 
    ![Visual Studio GitHub에 로그인](media/visual-studio-sign-in-to-github.png)
 
-   **GitHub에 로그인**을 선택한 후 온라인 GitHub 로그인 워크플로를 따릅니다.
+   **GitHub에 로그인** 을 선택한 후 온라인 GitHub 로그인 워크플로를 따릅니다.
 
 3. codespace를 만든 적이 없으면 만들라는 메시지가 표시됩니다.
 
-   “codespace 세부 정보”에서 **리포지토리 URL**을 제공해야 합니다. GitHub Codespaces는 생성 시 지정된 리포지토리를 codespace에 복제합니다.
+   “codespace 세부 정보”에서 **리포지토리 URL** 을 제공해야 합니다. GitHub Codespaces는 생성 시 지정된 리포지토리를 codespace에 복제합니다.
 
    드롭다운을 통해 **인스턴스 유형** 및 **다음 시간 후 일시 중단** 시간 제한을 수정할 수도 있습니다. codespace 세부 정보를 설정한 후 **만들기 및 연결** 단추를 선택합니다.
 
@@ -90,7 +90,7 @@ codespace를 만든 후 Visual Studio에서 직접 codespace를 열 수 있습�
 
    ![Visual Studio 파일 codespace에 연결 메뉴 항목](media/visual-studio-file-connect-to-codespace.png)
 
-2. **codespace에 연결**을 선택합니다. 아직 로그인하지 않은 경우 GitHub에 로그인하라는 메시지가 표시됩니다.
+2. **codespace에 연결** 을 선택합니다. 아직 로그인하지 않은 경우 GitHub에 로그인하라는 메시지가 표시됩니다.
 
 3. 그런 다음, 오른쪽 패널에 있는 세부 정보와 함께 모든 GitHub codespace를 볼 수 있습니다.
 

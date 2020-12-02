@@ -13,15 +13,15 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b3f7f6785b1a1693e0b041e64a0d507281926d3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809939"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189821"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>메모리 할당 및 개체 수명 데이터 값 이해
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 *.NET 메모리 할당* 프로파일링 방법은 할당에서 생성되었거나 가비지 수집에서 삭제된 개체 크기 및 수에 대한 정보를 수집하고 이벤트가 발생할 때 함수 *호출 스택*에 대한 추가 정보를 수집합니다. *호출 스택*은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 *.NET 메모리 할당* 프로파일링 방법은 할당에서 생성되었거나 가비지 수집에서 삭제된 개체 크기 및 수에 대한 정보를 수집하고 이벤트가 발생할 때 함수 *호출 스택* 에 대한 추가 정보를 수집합니다. *호출 스택* 은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
 
 메모리 프로파일러는 프로파일링된 애플리케이션에서 .NET Framework 개체를 할당할 때마다 컴퓨터 프로세서를 중단시킵니다. 개체 수명 데이터도 수집되는 경우 프로파일러는 각 .NET Framework 가비지 수집 후에 프로세서를 중단합니다. 데이터는 프로파일링된 각 함수와 각 개체 유형에 대해 집계됩니다.
 

@@ -8,11 +8,11 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
 ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005913"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970495"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -25,7 +25,7 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 2. 포털의 Professional Development(전문가 개발) 또는 Education(교육) 섹션에서 CODE Magazine 타일을 찾은 다음, **Get Code**(코드 가져오기)를 클릭합니다.
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine 타일](_img/vs-code-magazine/vs-code-magazine-tile.png "CODE Magazine 타일")
-3. 코드가 검색되었다는 메시지가 표시됩니다.  **활성화**를 클릭하여 계속합니다.  활성화 준비가 되지 않았어도 괜찮습니다.  언제든지 타일로 돌아가서 활성화할 수 있습니다.  코드를 검색한 후에는 “Get Code”(코드 가져오기) 링크가 “Activate”(활성화)로 바뀝니다.
+3. 코드가 검색되었다는 메시지가 표시됩니다.  **활성화** 를 클릭하여 계속합니다.  활성화 준비가 되지 않았어도 괜찮습니다.  언제든지 타일로 돌아가서 활성화할 수 있습니다.  코드를 검색한 후에는 “Get Code”(코드 가져오기) 링크가 “Activate”(활성화)로 바뀝니다.
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine 코드 검색됨](_img/vs-code-magazine/vs-code-magazine-success.png "코드 검색됨")
 4. CODE Magazine 방문 페이지로 리디렉션됩니다. 국가/지역을 선택하고 잡지를 받는 방법을 선택합니다. 

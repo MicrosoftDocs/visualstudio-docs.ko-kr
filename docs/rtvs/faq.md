@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365667"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189097"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -49,7 +49,7 @@ A. RTVS 1.0 릴리스는 영어 전용입니다. 1.1 릴리스는 Visual Studio 
 
 **질문: 실제로 저는 현재 Visual Studio 설정을 좋아하지만 새 데이터 과학 설정을 사용해 보고 싶습니다. 어떻게 할까요?**
 
-A. **도구** > **설정 가져오기 및 내보내기**를 사용하여 현재 Visual Studio 설정을 저장하고 데이터 과학 설정으로 전환합니다. 저장된 설정을 복원하려면 **설정 가져오기 및 내보내기** 명령을 다시 사용합니다.
+A. **도구** > **설정 가져오기 및 내보내기** 를 사용하여 현재 Visual Studio 설정을 저장하고 데이터 과학 설정으로 전환합니다. 저장된 설정을 복원하려면 **설정 가져오기 및 내보내기** 명령을 다시 사용합니다.
 
 **질문: 네트워크 공유에 내 Visual Studio 프로젝트를 저장할 수 있나요?**
 

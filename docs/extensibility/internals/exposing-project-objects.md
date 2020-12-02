@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 개체 노출 | Microsoft Docs
+description: 자동화 인터페이스를 사용 하 여 프로젝트에 액세스할 수 있도록 하는 자동화 개체를 제공 하 여 Visual Studio에서 사용자 지정 프로젝트 형식에 대 한 개체를 노출 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708478"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479513"
 ---
 # <a name="expose-project-objects"></a>프로젝트 개체 노출
 
@@ -91,6 +93,6 @@ ms.locfileid: "80708478"
 
      사용자 지정 `Projects` 컬렉션 개체는 프로젝트 자동화 모델의 나머지 부분에 대 한 편리한 진입점입니다. 프로젝트 개체는 프로젝트 컬렉션 에서도 액세스할 수 <xref:EnvDTE.Solution> 있습니다. 컬렉션 개체를 소비자에 게 제공 하는 적절 한 코드 및 레지스트리 항목을 만든 후에는 `Projects` 구현에서 프로젝트 모델에 대 한 나머지 표준 개체를 제공 해야 합니다. 자세한 내용은 [프로젝트 모델링](../../extensibility/internals/project-modeling.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

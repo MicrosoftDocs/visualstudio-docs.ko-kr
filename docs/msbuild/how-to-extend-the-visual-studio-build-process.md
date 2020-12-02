@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436357"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970072"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 
 Visual Studio 빌드 프로세스는 프로젝트 파일로 가져온 일련의 MSBuild *.targets* 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 *Microsoft.Common.targets* 는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 문서에서는 Visual Studio 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.
 
-- 공통 대상( *Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
+- 공통 대상(*Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
 
 - 공통 대상에 정의된 “DependsOn” 속성을 재정의합니다.
 

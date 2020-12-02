@@ -1,5 +1,7 @@
 ---
 title: 비주얼 디자이너에 형식 노출 | Microsoft Docs
+description: Visual Studio에서 비주얼 디자이너에 사용할 수 있도록 사용자 지정 도구의 클래스 및 형식 정의를 포함 하 여 클래스 및 형식 정의를 노출 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012532"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479531"
 ---
 # <a name="expose-types-to-visual-designers"></a>비주얼 디자이너에 형식 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 비주얼 디자이너를 표시 하기 위해 디자인 타임에 클래스 및 형식 정의에 대 한 액세스 권한이 있어야 합니다. 클래스는 현재 프로젝트의 전체 종속성 집합 (참조 및 해당 종속성)을 포함 하는 미리 정의 된 어셈블리 집합에서 로드 됩니다. 또한 비주얼 디자이너에서 사용자 지정 도구에 의해 생성 된 파일에 정의 된 클래스 및 형식에 액세스 해야 할 수도 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "90012532"
 
 - 생성 된 코드는 전역 프로젝트 설정과 동일한 언어 여야 합니다.
 
-     <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>레지스트리에서 **GeneratesDesignTimeSource** 가 1로 설정 된 경우 사용자 지정 도구에서 요청 된 확장 프로그램으로 보고 하는 내용에 관계 없이 임시 PE가 컴파일됩니다. 확장명은 .vb, *.cs*또는 *.jsl*일 필요가 없습니다 *.* 모든 확장이 가능 합니다.
+     <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>레지스트리에서 **GeneratesDesignTimeSource** 가 1로 설정 된 경우 사용자 지정 도구에서 요청 된 확장 프로그램으로 보고 하는 내용에 관계 없이 임시 PE가 컴파일됩니다. 확장명은 .vb, *.cs* 또는 *.jsl* 일 필요가 없습니다 *.* 모든 확장이 가능 합니다.
 
 - 사용자 지정 도구에서 생성 된 코드는 유효 해야 하며, 실행이 완료 될 때 프로젝트에 있는 참조 집합만 사용 하 여 자체적으로 컴파일해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> .
 
