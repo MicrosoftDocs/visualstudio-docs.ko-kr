@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 플러그 인 시작 | Microsoft Docs
+description: 소스 코드 버전 제어에 사용 하기 위해 소스 제어 플러그 인 API에 정의 된 함수를 구현 하는 소스 제어 플러그 인을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708341"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480501"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>원본 제어 플러그 인 시작
 소스 제어 플러그 인을 만들려면 소스 제어 플러그 인 API에 정의 된 함수를 구현 하는 DLL을 만든 다음에 DLL을 등록 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에 사용할 수 있도록 해야 합니다.

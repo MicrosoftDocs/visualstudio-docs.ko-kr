@@ -1,5 +1,7 @@
 ---
 title: 계층 및 선택 | Microsoft Docs
+description: Visual Studio가 프로젝트와 같은 계층 구조를 처리 하는 방법 및 선택 컨텍스트를 사용 하 여 사용자에 게 표시 되는 항목을 결정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708134"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480423"
 ---
 # <a name="hierarchies-and-selection"></a>계층 및 선택
 를 사용자 지정할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 가 프로젝트와 같은 계층 구조 및 선택 컨텍스트를 사용 하 여 사용자에 게 표시 되는 항목을 결정 하는 방법을 이해 해야 합니다. 이 섹션에서는 계층 및 선택의 개념에 대해 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

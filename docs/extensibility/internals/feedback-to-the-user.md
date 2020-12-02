@@ -1,5 +1,7 @@
 ---
 title: 사용자 의견 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)에서 사용 가능한 기능에 대 한 시각적 피드백을 사용자에 게 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708409"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480527"
 ---
 # <a name="feedback-to-the-user"></a>사용자 의견
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 사용 가능한 기능에 대 한 시각적 피드백은 사용자의 현재 선택 영역 및 전역 선택 컨텍스트를 기반으로 합니다. 다음 표에서는 다양 한 선택 컨텍스트에서 사용할 수 있는 기능을 보여 줍니다.

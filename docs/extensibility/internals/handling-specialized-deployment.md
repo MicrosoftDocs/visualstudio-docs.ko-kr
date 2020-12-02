@@ -1,5 +1,7 @@
 ---
 title: 특수 배포 처리 | Microsoft Docs
+description: Visual Studio에서 응용 프로그램 프로젝트의 특수 배포를 처리 하는 방법을 알아봅니다. 예를 들어 웹 서버 또는 장치에 대 한 배포가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708216"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480436"
 ---
 # <a name="handle-specialized-deployment"></a>특수 배포 처리
 배포는 프로젝트에 대 한 선택적 작업입니다. 예를 들어 웹 프로젝트는 프로젝트가 웹 서버를 업데이트할 수 있도록 배포를 지원 합니다. 마찬가지로, **스마트 장치** 프로젝트는 배포를 지원 하 여 빌드된 응용 프로그램을 대상 장치에 복사 합니다. 프로젝트 하위 유형은 인터페이스를 구현 하 여 특수 한 배포 동작을 제공할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> . 이 인터페이스는 전체 배포 작업 집합을 정의 합니다.
@@ -289,5 +291,5 @@ ms.locfileid: "80708216"
 > [!NOTE]
 > 이 [항목에서 제공](https://github.com/Microsoft/VSSDK-Extensibility-Samples)하는 모든 코드 예제는 더 큰 예제의 구성 요소입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)

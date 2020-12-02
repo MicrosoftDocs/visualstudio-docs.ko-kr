@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 계층 구조 Microsoft Docs
+description: 프로젝트 항목 및 관련 속성을 포함 하는 Visual Studio IDE (통합 개발 환경)의 프로젝트 계층 구조에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708186"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480358"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio의 계층 구조
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 프로젝트를 *계층 구조로*표시 합니다. IDE에서 계층은 노드 트리로, 각 노드에는 연관 된 속성 집합이 있습니다. *프로젝트 계층 구조* 는 프로젝트의 항목, 항목의 관계 및 항목의 관련 속성 및 명령을 포함 하는 컨테이너입니다.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 프로젝트를 *계층 구조로* 표시 합니다. IDE에서 계층은 노드 트리로, 각 노드에는 연관 된 속성 집합이 있습니다. *프로젝트 계층 구조* 는 프로젝트의 항목, 항목의 관계 및 항목의 관련 속성 및 명령을 포함 하는 컨테이너입니다.
 
  에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 계층 인터페이스를 사용 하 여 프로젝트 계층 구조를 관리 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>인터페이스는 프로젝트 항목에서 호출 하는 명령을 표준 명령 처리기 대신 적절 한 계층 창으로 리디렉션합니다.
 

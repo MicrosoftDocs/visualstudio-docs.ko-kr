@@ -1,5 +1,7 @@
 ---
 title: 중첩 프로젝트에 대 한 AddItem 대화 상자 필터링 | Microsoft Docs
+description: 부모 프로젝트의 IVsFilterAddProjectItemDlg 인터페이스를 구현 하 여 Visual Studio에서 중첩 된 프로젝트에 대 한 AddItem 대화 상자를 필터링 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708379"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480463"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>중첩 프로젝트에 대 한 AddItem 대화 상자 필터링
 중첩 된 프로젝트에 대 한 **AddItem** 대화 상자를 표시 하면 부모 프로젝트가 대화 상자에 표시 되는 항목을 제어할 수 있습니다.
@@ -29,7 +31,7 @@ ms.locfileid: "80708379"
 
  `IVsFilterAddProjectItemDlg`인터페이스는 범주별 필터링을 구현할 수도 있습니다. 자세한 내용은 [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) 및 [프로젝트 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)

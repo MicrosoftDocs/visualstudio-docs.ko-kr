@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 메뉴의 Guid 및 Id | Microsoft Docs
+description: Visual studio IDE (통합 개발 환경)에 포함 된 Visual Studio 메뉴 모음에서 메뉴 및 그룹에 대 한 GUID 및 ID 값 목록을 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708237"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480410"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 메뉴의 Guid 및 Id
 이 문서에서는 Visual Studio 메뉴 모음에서 메뉴 및 그룹의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -32,11 +34,11 @@ ms.locfileid: "80708237"
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음의 그룹
  메뉴 모음에 메뉴를 추가 하려면 이러한 그룹 중 하나를 부모로 설정 합니다.
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |파일/편집/보기|IDG_VS_MM_FILEEDITVIEW|
 |리팩터링|IDG_VS_MM_REFACTORING:|
-|프로젝트|IDG_VS_MM_PROJECT|
+|Project|IDG_VS_MM_PROJECT|
 |빌드|IDG_VS_MM_BUILDDEBUGRUN|
 |형식/도구|IDG_VS_MM_TOOLSADDINS|
 |창/도움말/커뮤니티|IDG_VS_MM_WINDOWHELP|
@@ -52,7 +54,7 @@ ms.locfileid: "80708237"
 |편집|IDM_VS_MENU_EDIT|
 |View|IDM_VS_MENU_VIEW|
 |리팩터링|IDM_VS_MENU_REFACTORING|
-|프로젝트|IDM_VS_MENU_PROJECT|
+|Project|IDM_VS_MENU_PROJECT|
 |빌드|IDM_VS_MENU_BUILD|
 |서식|IDM_VS_MENU_FORMAT|
 |도구|IDM_VS_MENU_TOOLS|
@@ -67,7 +69,7 @@ ms.locfileid: "80708237"
 
 ### <a name="file-menu-groups"></a>파일 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |새로 만들기/열기|IDG_VS_FILE_FILE|
 |추가|IDG_VS_FILE_ADD|
@@ -83,7 +85,7 @@ ms.locfileid: "80708237"
 
 ### <a name="edit-menu-groups"></a>메뉴 그룹 편집
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |실행 취소/다시 실행|IDG_VS_EDIT_UNDOREDO|
 |잘라내기/복사/붙여넣기|IDG_VS_EDIT_CUTCOPY|
@@ -96,14 +98,14 @@ ms.locfileid: "80708237"
 
 ### <a name="refactor-menu-groups"></a>리팩터링 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |일반|IDG_REFACTORING_COMMON|
 |고급|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>메뉴 그룹 보기
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |양식 코드|IDG_VS_VIEW_FORMCODE|
 |브라우저|IDG_VS_VIEW_BROWSER|
@@ -124,7 +126,7 @@ ms.locfileid: "80708237"
 
 ### <a name="project-menu-groups"></a>프로젝트 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |기타 추가|IDG_VS_PROJ_MISCADD|
 |추가|IDG_VS_PROJ_ADD|
@@ -136,7 +138,7 @@ ms.locfileid: "80708237"
 
 ### <a name="build-menu-groups"></a>빌드 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |해결 방법|IDG_VS_BUILD_SOLUTION|
 |선택|IDG_VS_BUILD_SELECTION|
@@ -146,7 +148,7 @@ ms.locfileid: "80708237"
 
 ### <a name="tools-menu-groups"></a>도구 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |명령줄|IDG_VS_TOOLS_CMDLINE|
 |코드 조각|IDG_VS_TOOLS_SNIPPETS|
@@ -158,9 +160,9 @@ ms.locfileid: "80708237"
 
 ### <a name="window-menu-groups"></a>창 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
-|단추를 사용하여 새|IDG_VS_WINDOW_NEW|
+|새로 만들기|IDG_VS_WINDOW_NEW|
 |도킹/닫기|IDG_VS_DOCKCLOSE|
 |도킹/숨기기|IDG_VS_DOCKHIDE|
 |정렬|IDG_VS_WINDOW_ARRANGE|
@@ -169,7 +171,7 @@ ms.locfileid: "80708237"
 
 ### <a name="help-menu-groups"></a>도움말 메뉴 그룹
 
-|그룹|ID|
+|그룹화|ID|
 |-----------|--------|
 |샘플|IDG_VS_HELP_SAMPLES|
 |지원|IDG_VS_HELP_SUPPORT|
@@ -179,7 +181,7 @@ ms.locfileid: "80708237"
  다음 계층에서는 Visual Studio 메뉴 모음의 메뉴와 연결 된 하위 메뉴를 보여 줍니다. 그룹만 메뉴를 부모로 사용할 수 있기 때문에 모든 하위 메뉴는 메뉴에서 직접 상속 하는 것이 아니라 메뉴의 그룹에서 상속 되어야 합니다. 메뉴, 그룹 및 하위 메뉴 간의 관계에 대 한 자세한 내용은 [메뉴에 하위 메뉴 추가](../../extensibility/adding-a-submenu-to-a-menu.md)를 참조 하세요.
 
 > [!NOTE]
-> Visual Studio 메뉴 모음의 메뉴 이름은 다음과 같이 IDE의 그룹에 대 한 명명 규칙에서 유추 될 수 있으므로이 계층 구조에 별도로 표시 되지 않습니다. *IDG_VS_ \<Menu Name\> _ \<Group Name\> *.
+> Visual Studio 메뉴 모음의 메뉴 이름은 다음과 같이 IDE의 그룹에 대 한 명명 규칙에서 유추 될 수 있으므로이 계층 구조에 별도로 표시 되지 않습니다. *IDG_VS_ \<Menu Name\> _ \<Group Name\>*.
 
 |부모 그룹|]|자식 그룹|
 |------------------|-------------|------------------|
@@ -213,7 +215,7 @@ ms.locfileid: "80708237"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 도구 모음의 Guid 및 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [Visual Studio 명령의 Guid 및 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 Vspackage 시작 | Microsoft Docs
+description: Visual Studio의 소스 제어 Vspackage 및 소스 제어 플러그 인에 대 한 고급 대안에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708337"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480488"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>소스 제어 Vspackage 시작
 
