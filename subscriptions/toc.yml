@@ -188,7 +188,7 @@
           href: aliasing.md
         - name: 개인 전자 메일 로그인을 사용하는 구독자
           href: personal-email-sign-ins.md
-        - name: GitHub Enterprise가 포함된 Visual Studio 관리
+        - name: GitHub Enterprise가 포함된 Visual Studio 구독 관리
           href: assign-github.md
 - name: 리소스
   items:
