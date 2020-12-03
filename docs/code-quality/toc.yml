@@ -8,15 +8,21 @@
       items:
         - name: 개요
           href: roslyn-analyzers-overview.md
+        - name: 설치
+          expanded: true
+          items:
+            - name: .NET 분석기
+              href: install-net-analyzers.md
+            - name: 타사 분석기
+              href: install-roslyn-analyzers.md
         - name: Configuration
           expanded: true
           items:
             - name: 개요
               href: use-roslyn-analyzers.md
             - name: .NET 분석기
+              expanded: true
               items:
-                - name: .NET 분석기 설치
-                  href: install-net-analyzers.md
                 - name: 코드 품질
                   items:
                     - name: 코드 품질 옵션
@@ -42,8 +48,6 @@
               href: automatic-feature-suspension.md
             - name: 코드 분석 위반 표시 안 함
               href: in-source-suppression-overview.md
-        - name: 타사 분석기 설치
-          href: install-roslyn-analyzers.md
         - name: FAQ
           href: analyzers-faq.md
     - name: 레거시 분석
