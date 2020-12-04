@@ -272,8 +272,8 @@
           href: ide/codespaces/customize-codespaces.md
         - name: 지원되는 Visual Studio 기능
           href: ide/codespaces/supported-features-codespaces.md
-    - name: 프로젝트 또는 리포지토리에 연결
-      displayName: Azure DevOps VSTS GitHub
+    - name: 팀 탐색기의 프로젝트에 연결
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
     - name: Visual Studio의 새로운 Git 환경
       href: ide/git-with-visual-studio.md
