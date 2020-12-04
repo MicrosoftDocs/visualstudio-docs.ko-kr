@@ -1,5 +1,7 @@
 ---
 title: 식 계산기 아키텍처 | Microsoft Docs
+description: 식 계산기 및 기호 공급자/바인더 인터페이스를 포함 하 여 Visual Studio 디버그 패키지에 소유 언어를 통합 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738704"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560163"
 ---
 # <a name="expression-evaluator-architecture"></a>식 계산기 아키텍처
 > [!IMPORTANT]
@@ -51,7 +53,7 @@ ms.locfileid: "80738704"
 
  [키 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md) 실행 컨텍스트와 함께 EE를 작성할 때 필요한 중요 한 인터페이스에 대해 설명 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)
 - [로컬의 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)

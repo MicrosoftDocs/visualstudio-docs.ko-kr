@@ -1,5 +1,7 @@
 ---
 title: 예외 처리 (Visual Studio SDK) | Microsoft Docs
+description: 예외가 throw 될 때 발생 하는 프로세스에 대해 알아봅니다. 이 문서에서는 관련 된 모든 단계에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738768"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559656"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>예외 처리 (Visual Studio SDK)
 다음에서는 예외가 throw 될 때 발생 하는 프로세스에 대해 설명 합니다.
@@ -38,7 +40,7 @@ ms.locfileid: "80738768"
 
          메서드가 S_FALSE 반환 하는 경우 디버깅 중인 프로그램에 예외를 처리할 수 있는 두 번째 기회가 제공 됩니다.
 
-6. 디버깅 중인 프로그램에 두 번째 예외에 대 한 처리기가 없는 경우 DE는 `IDebugExceptionEvent2` **EVENT_SYNC_STOP**로 SDM에를 보냅니다.
+6. 디버깅 중인 프로그램에 두 번째 예외에 대 한 처리기가 없는 경우 DE는 `IDebugExceptionEvent2` **EVENT_SYNC_STOP** 로 SDM에를 보냅니다.
 
 7. 디버그 패키지는 첫 번째 예외 대화 상자를 열어 예외를 처리 하는 방법을 사용자에 게 요청 합니다.
 
@@ -48,5 +50,5 @@ ms.locfileid: "80738768"
 
 10. 메서드가 S_OK 반환 하는 경우는를 호출 `IDebugExceptionEvent2::PassToDebuggee` 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

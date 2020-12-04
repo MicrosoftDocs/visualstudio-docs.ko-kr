@@ -1,5 +1,7 @@
 ---
 title: 포트 가져오기 | Microsoft Docs
+description: Visual Studio에서 디버그 엔진에 포트를 제공 하 여 프로그램 노드를 포트에 등록 하 고 프로세스 정보에 대 한 요청을 충족 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738635"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560050"
 ---
 # <a name="get-a-port"></a>포트 가져오기
 포트는 프로세스가 실행 중인 컴퓨터에 대 한 연결을 나타냅니다. 이 컴퓨터는 로컬 컴퓨터 또는 원격 컴퓨터 일 수 있습니다. 즉, Windows 기반이 아닌 운영 체제를 실행할 수 있습니다. 자세한 내용은 [포트](../../extensibility/debugger/ports.md) 를 참조 하십시오.
@@ -27,7 +29,7 @@ ms.locfileid: "80738635"
 
 Visual Studio는 필요한 포트를 디버그 엔진에 제공 하 고 포트 공급자에서이 포트를 가져옵니다. 프로그램이에 연결 되어 있는 경우 (디버거 내에서 또는 예외가 throw 되어 Just-in-time [JIT] 대화 상자를 트리거) 사용자에 게 사용할 전송 선택 (포트 공급자의 다른 이름)이 제공 됩니다. 그렇지 않고 사용자가 디버거 내에서 프로그램을 시작 하는 경우 프로젝트 시스템은 사용할 포트 공급자를 지정 합니다. 어느 경우 든 Visual Studio는 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스로 표시 되는 포트 공급자를 인스턴스화하고 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 인터페이스를 사용 하 여 [addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 를 호출 하 여 새 포트를 요청 합니다. 그런 다음이 포트는 디버그 엔진에 한 형식 또는 다른 형식으로 전달 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 코드 조각에서는 [Launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 에 제공 된 포트를 사용 하 여 [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)에 프로그램 노드를 등록 하는 방법을 보여 줍니다. 명확 하 게 하기 위해이 개념과 직접 관련 되지 않은 매개 변수는 생략 되었습니다.
 
 > [!NOTE]
@@ -96,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램 등록](../../extensibility/debugger/registering-the-program.md)
 - [프로그램을 디버그할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [포트 공급자](../../extensibility/debugger/port-suppliers.md)

@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341251"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559812"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
@@ -40,7 +40,7 @@ Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x 및 NET Standard 2.0 프로필 중에서 선택
 
-.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings( **편집 > 프로젝트 설정 > 플레이어** )의 드롭다운 메뉴를 사용하여 **Api 호환성 수준** 을 지정할 수 있습니다. 두 가지 옵션 중이 있습니다.
+.NET 4.x 해당 스크립팅 런타임으로 전환한 후 PlayerSettings(**편집 > 프로젝트 설정 > 플레이어**)의 드롭다운 메뉴를 사용하여 **Api 호환성 수준** 을 지정할 수 있습니다. 두 가지 옵션 중이 있습니다.
 
 * **.NET Standard 2.0**. 이 프로필은 .NET Foundation에서 게시한 [.NET Standard 2.0 프로필](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)과 일치합니다. Unity는 새 프로젝트에 .NET Standard 2.0을 권장합니다. 크기가 제한된 플랫폼에 적합한 .NET 4.x보다 작습니다. 또한 Unity는 Unity가 지원하는 모든 플랫폼에서 이 프로필을 지원하기 위해 커밋되었습니다.
 
@@ -58,9 +58,9 @@ Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/03/28/updated-scri
 
 ![어셈블리 참조 추가 누락](media/vs/vstu-missing-reference.png)
 
-Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일을 다시 생성합니다. 따라서 프로젝트를 다시 열면 어셈블리 참조가 손실되므로 Visual Studio에서 직접 어셈블리 참조를 추가할 수 없습니다. 대신 **mcs.rsp** 라는 특수 텍스트 파일을 사용해야 합니다.
+Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일을 다시 생성합니다. 따라서 프로젝트를 다시 열면 어셈블리 참조가 손실되므로 Visual Studio에서 직접 어셈블리 참조를 추가할 수 없습니다. 대신, **csc.rsp 라는 특수** 텍스트 파일을 사용 해야 합니다.
 
-1. Unity 프로젝트의 루트 **자산** 디렉터리에 **mcs.rsp** 라는 새 텍스트 파일을 만듭니다.
+1. Unity 프로젝트의 루트 **자산** 디렉터리에 **csc.rsp** 라는 새 텍스트 파일을 만듭니다.
 
 1. 빈 텍스트 파일의 첫 번째 줄에 `-r:System.Net.Http.dll`을 입력한 다음, 파일을 저장합니다. "System.Net.Http.dll"을 누락되었을 수 있는 참조가 포함된 어셈블리로 바꿀 수 있습니다.
 

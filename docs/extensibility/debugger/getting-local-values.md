@@ -1,5 +1,7 @@
 ---
 title: 로컬 값을 가져오는 중 | Microsoft Docs
+description: 관리 코드와 비관리 코드에 GetPropertyInfo를 사용 하 여 Visual Studio에서 지역 변수의 값을 가져오는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4287bb726ca4b64bc939c12098ca0fc98948931
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738612"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559981"
 ---
 # <a name="get-local-values"></a>로컬 값 가져오기
 > [!IMPORTANT]
@@ -438,7 +440,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [로컬 속성 가져오기](../../extensibility/debugger/getting-local-properties.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

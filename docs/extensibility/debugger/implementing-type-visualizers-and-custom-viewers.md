@@ -1,5 +1,7 @@
 ---
 title: 형식 시각화 도우미 및 사용자 지정 뷰어 구현 | Microsoft Docs
+description: 사용자가 숫자 덤프 보다 더 의미 있는 방식으로 데이터를 볼 수 있도록 하는 형식 시각화 도우미 및 사용자 지정 뷰어를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738500"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559903"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>형식 시각화 도우미 및 사용자 지정 뷰어 구현
 > [!IMPORTANT]
@@ -55,7 +57,7 @@ ms.locfileid: "80738500"
 
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [데이터 시각화 및 보기](../../extensibility/debugger/visualizing-and-viewing-data.md)
 - [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

@@ -1,5 +1,7 @@
 ---
 title: 디버거 확장성 시작 | Microsoft Docs
+description: Visual Studio 환경에서 프로그램을 디버깅 하는 데 사용 되는 디버거 구성 요소를 만들고 사용자 지정 하는 작업을 시작 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738600"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560037"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>디버거 확장성 시작
 는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 환경 내에서 프로그램을 디버깅 하는 데 사용 되는 디버거 구성 요소를 만들고 사용자 지정 하는 데 필요한 정보를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -39,8 +41,8 @@ ms.locfileid: "80738600"
 
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버그 엔진 (DE), 식 계산기 (EE) 및 기호 처리기 (SH)를 포함 하는 디버깅 구성 요소에 대 한 개요를 제공 합니다.
 
- [디버거 개념](../../extensibility/debugger/debugger-concepts.md) 주요 디버깅 아키텍처 개념을 설명 합니다.
+ [디버거 개념](../../extensibility/debugger/debugger-concepts.md) 기본 디버깅 아키텍처 개념을 설명합니다.
 
- [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 디버그 엔진 (DE)이 코드, 설명서 및 식 계산 컨텍스트 내에서 동시에 작동 하는 방법을 설명 합니다. 각각의 세 가지 컨텍스트, 위치, 위치 또는 관련 평가에 대해 설명 합니다.
+ [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 디버그 엔진 (DE)이 코드, 설명서 및 식 계산 컨텍스트 내에서 동시에 작동 하는 방법을 설명 합니다. 세 가지 컨텍스트, 위치 또는 관련 계산에 관해 설명합니다.
 
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md) 프로그램 시작 및 식 계산과 같은 다양 한 디버깅 태스크에 대 한 링크를 포함 합니다.

@@ -1,5 +1,7 @@
 ---
 title: 로컬 속성을 가져오는 중 | Microsoft Docs
+description: Visual Studio에서 EnumChildren를 사용 하 여 관리 코드와 비관리 코드에 대 한 이러한 예제를 통해 로컬 속성을 가져오는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b6d104f88999ba7dd8e115a752a78853af6603
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738624"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560020"
 ---
 # <a name="get-local-properties"></a>로컬 속성 가져오기
 > [!IMPORTANT]
@@ -156,6 +158,6 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [지역 열거](../../extensibility/debugger/enumerating-locals.md)

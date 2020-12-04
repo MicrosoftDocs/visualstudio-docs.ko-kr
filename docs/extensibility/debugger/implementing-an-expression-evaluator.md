@@ -1,5 +1,7 @@
 ---
 title: 식 계산기 구현 | Microsoft Docs
+description: 디버그 엔진, 기호 공급자, 바인더 개체 및 식 계산기를 포함 하는 식을 계산 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738546"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559968"
 ---
 # <a name="implement-an-expression-evaluator"></a>식 계산기 구현
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738546"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  EE는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)를 실행 합니다. `IDebugProperty2` 지역 변수, 기본 형식 또는 Visual Studio에 대 한 개체와 같은 식 계산 결과를 설명 하는 메커니즘을 제공 합니다. 그러면 **지역**, **조사식**또는 **직접 실행** 창에 적절 한 정보가 표시 됩니다.
+  EE는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)를 실행 합니다. `IDebugProperty2` 지역 변수, 기본 형식 또는 Visual Studio에 대 한 개체와 같은 식 계산 결과를 설명 하는 메커니즘을 제공 합니다. 그러면 **지역**, **조사식** 또는 **직접 실행** 창에 적절 한 정보가 표시 됩니다.
 
   SP는 정보를 요청 하는 경우 DE에 의해 EE에 제공 됩니다. SP는 다음 인터페이스 및 해당 파생 항목과 같은 주소 및 필드를 설명 하는 인터페이스를 실행 합니다.
 
@@ -61,5 +63,5 @@ ms.locfileid: "80738546"
 ## <a name="in-this-section"></a>섹션 내용
  [식 계산기 구현 전략](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) 식 계산기 (EE) 구현 전략에 대 한 3 단계 프로세스를 정의 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

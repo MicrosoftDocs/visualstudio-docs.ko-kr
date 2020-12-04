@@ -1,5 +1,7 @@
 ---
 title: 식 계산기 | Microsoft Docs
+description: 중단 모드에서 런타임에 변수와 식을 구문 분석 하 고 평가 하는 언어의 구문을 검사 하는 식 계산기에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738682"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560137"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 식 계산기 (EE)는 런타임에 변수와 식을 구문 분석 하 고 평가 하 여 IDE가 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어의 구문을 검사 합니다.
@@ -40,5 +42,5 @@ ms.locfileid: "80738682"
 ## <a name="implementation-notes"></a>구현 참고 사항
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그 엔진은 CLR (공용 언어 런타임) 인터페이스를 사용 하 여 식 계산기와 통신할 것으로 간주 합니다. 따라서 디버그 엔진에서 작동 하는 식 계산기는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] clr을 지원 해야 합니다. 모든 clr 디버깅 인터페이스의 전체 목록은의 일부인 debugref.doc에서 찾을 수 있습니다 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)

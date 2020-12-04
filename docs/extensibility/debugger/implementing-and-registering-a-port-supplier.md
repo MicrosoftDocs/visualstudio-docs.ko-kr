@@ -1,5 +1,7 @@
 ---
 title: 포트 공급자 구현 및 등록 | Microsoft Docs
+description: 프로세스를 관리 하는 포트를 추적 하 고 제공 하는 포트 공급자를 구현 하 고 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efa9cdd8740648b66fe7190177b5fe769c4b2539
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738525"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559929"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>포트 공급자 구현 및 등록
 포트 공급자의 역할은 포트를 추적 하 고 제공 하 여 프로세스를 관리 하는 것입니다. 포트를 만들어야 하는 경우 포트 공급자는 포트 공급자의 GUID를 사용 하 여 CoCreate를 사용 하 여 인스턴스화됩니다 (세션 디버그 관리자 [SDM]은 사용자가 선택한 포트 공급자 또는 프로젝트 시스템에서 지정한 포트 공급자를 사용 함). 그러면 SDM이 [Canaddport](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) 를 호출 하 여 포트를 추가할 수 있는지 확인 합니다. 포트를 추가할 수 있는 경우 [Addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 를 호출 하 고 포트를 설명 하는 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 를 전달 하 여 새 포트를 요청 합니다. `AddPort`[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스로 표시 되는 새 포트를 반환 합니다.
@@ -55,11 +57,11 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
-> [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 는 `RemoveMetric` *dbgmetric* 에 정의 되 고 *ad2de*로 컴파일되는 정적 함수입니다. `metrictypePortSupplier`, `metricCLSID` 및 도우미는 `metricName` *dbgmetric*에도 정의 되어 있습니다.
+> [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 는 `RemoveMetric` *dbgmetric* 에 정의 되 고 *ad2de* 로 컴파일되는 정적 함수입니다. `metrictypePortSupplier`, `metricCLSID` 및 도우미는 `metricName` *dbgmetric* 에도 정의 되어 있습니다.
 
  포트 공급자는 [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) 및 [getportsupplierid](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)메서드를 통해 각각 이름 및 GUID를 제공할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [포트 공급자](../../extensibility/debugger/port-suppliers.md)

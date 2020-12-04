@@ -1,5 +1,7 @@
 ---
 title: '방법: 사용자 지정 디버그 엔진 디버깅 | Microsoft Docs'
+description: Visual Studio를 사용 하 여 사용자 지정 디버그 엔진 또는 사용자 지정 프로젝트 형식을 디버깅 하는 데 사용할 수 있는 단계에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903305"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560813"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 사용자 지정 디버그 엔진 디버깅
 프로젝트 형식은 메서드에서 디버그 엔진 (DE)을 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> . 이는 프로젝트 형식을 제어 하는 인스턴스의 제어에서 DE가 시작 됨을 의미 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 그러나이 인스턴스는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE를 디버그할 수 없습니다. 사용자 지정 DE를 디버그할 수 있도록 하는 단계는 다음과 같습니다.
@@ -29,11 +31,11 @@ ms.locfileid: "85903305"
 
 ## <a name="debug-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 디버그
 
-1. 원격 디버그 모니터 *msvsmon.exe*를 시작 합니다.
+1. 원격 디버그 모니터 *msvsmon.exe* 를 시작 합니다.
 
 2. *msvsmon.exe* **도구** 메뉴에서 **옵션** 을 선택 하 여 **옵션** 대화 상자를 엽니다.
 
-3. "인증 없음" 옵션을 선택 하 고 **확인**을 클릭 합니다.
+3. "인증 없음" 옵션을 선택 하 고 **확인** 을 클릭 합니다.
 
 4. 인스턴스를 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하 고 사용자 지정 DE 프로젝트를 엽니다.
 
@@ -57,13 +59,13 @@ ms.locfileid: "85903305"
 
 1. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]일반 레지스트리 hive에서 시작 하 고 프로젝트 형식 프로젝트 (프로젝트 형식의 인스턴스화가 아닌 프로젝트 형식에 대 한 소스)를 로드 합니다.
 
-2. 프로젝트 속성을 열고 **디버그** 페이지로 이동 합니다. **명령**에 IDE 경로를 입력 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (기본적으로 *[drive]* Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. 프로젝트 속성을 열고 **디버그** 페이지로 이동 합니다. **명령** 에 IDE 경로를 입력 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (기본적으로 *[drive]* Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
-3. **명령 인수**에서 `/rootsuffix exp` 실험적 레지스트리 hive (VSIP를 설치할 때 만들어짐)에 대해을 입력 합니다.
+3. **명령 인수** 에서 `/rootsuffix exp` 실험적 레지스트리 hive (VSIP를 설치할 때 만들어짐)에 대해을 입력 합니다.
 
 4. **확인** 을 클릭하여 변경 내용을 수락합니다.
 
-5. **F5**키를 눌러 프로젝트 형식을 시작 합니다. 그러면의 두 번째 인스턴스가 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 됩니다.
+5. **F5** 키를 눌러 프로젝트 형식을 시작 합니다. 그러면의 두 번째 인스턴스가 시작 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 됩니다.
 
 6. 이 시점에서 프로젝트 형식 소스 코드에 중단점을 추가할 수 있습니다.
 
@@ -73,5 +75,5 @@ ms.locfileid: "85903305"
 
 9. DE 시작 프로세스를 디버깅 하는 경우 "사용자 지정 디버그 엔진 디버그" 절차의 단계를 수행 하 여 DE-DE를 시작한 후에 연결할 수 있습니다. 이를 통해 세 가지 인스턴스를 실행할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 하나는 프로젝트 형식 소스를 위한 것이 고 다른 하나는 인스턴스화된 프로젝트 형식에 대 한 것이 고, 세 번째 인스턴스는 de-de에 연결 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

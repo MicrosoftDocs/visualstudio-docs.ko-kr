@@ -1,5 +1,7 @@
 ---
 title: 식 계산 (Visual Studio 디버깅 SDK) | Microsoft Docs
+description: 중단 모드에서 IDE는 프로그램 변수를 포함 하는 식을 평가 합니다. 디버그 엔진이 식을 구문 분석 하 고 계산 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738707"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560891"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산 (Visual Studio 디버깅 SDK)
 중단 모드에서 IDE는 여러 프로그램 변수를 포함 하는 간단한 식을 계산 해야 합니다. 디버그 엔진 (DE)은 해당 평가를 수행 하기 위해 IDE 창 중 하나에 입력 된 식을 구문 분석 하 고 평가 해야 합니다.
@@ -30,7 +32,7 @@ ms.locfileid: "80738707"
 ## <a name="using-expression-evaluation"></a>식 계산 사용
  식 계산을 사용 하려면 다음 표에 나와 있는 것 처럼 [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드와 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스의 모든 메서드를 구현 해야 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|식을 비동기식으로 계산 합니다.|
 |[중단이](../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료 합니다.|
@@ -38,5 +40,5 @@ ms.locfileid: "80738707"
 
  동기 및 비동기 평가를 수행 하려면 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 메서드를 구현 해야 합니다. 비동기 식 계산에는 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)의 구현이 필요 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

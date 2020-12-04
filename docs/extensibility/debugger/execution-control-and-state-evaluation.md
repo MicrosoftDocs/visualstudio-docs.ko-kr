@@ -1,5 +1,7 @@
 ---
 title: 실행 제어 및 상태 평가 | Microsoft Docs
+description: Visual Studio 디버깅에서 디버거 구성 요소 간에 전송 된 이벤트에 대 한 실행 컨트롤을 기반으로 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 021fab07cfaf1ec17821a8ef9a33a03f2d6ec714
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738746"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560904"
 ---
 # <a name="execution-control-and-state-evaluation"></a>실행 제어 및 상태 평가
 응용 프로그램을 디버깅 하려면 함수를 한 단계씩 실행 하 고 중단점에서 중지 하 고 실행을 계속 하는 등의 실행 제어 기능을 구현 해야 합니다. Visual Studio 디버깅은 디버거 구성 요소 간에 전송 된 이벤트에 대 한 실행 제어를 기반으로 합니다.
