@@ -1,5 +1,7 @@
 ---
 title: 키 식 계산기 인터페이스 | Microsoft Docs
+description: 평가 컨텍스트와 함께 식 계산기를 작성할 때 알아 두어야 하는 인터페이스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01527edac4000f0b2f7b89fdd507fc093f0d7734
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5693ebee96428b343da2bb14202ffef06fd6dd81
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738495"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606686"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>키 식 계산기 인터페이스
 > [!IMPORTANT]
@@ -56,5 +58,5 @@ ms.locfileid: "80738495"
 
      이 인터페이스는 값 및 해당 형식을 나타내며 식 계산의 결과입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

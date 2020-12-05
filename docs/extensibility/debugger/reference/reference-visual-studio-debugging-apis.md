@@ -1,5 +1,7 @@
 ---
 title: 참조 (Visual Studio 디버깅 Api) | Microsoft Docs
+description: Visual Studio 디버깅 SDK 참조는 디버거의 런타임 아키텍처 및 기능에 대 한 기본 모델을 간략하게 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713633"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606465"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>참조(Visual Studio 디버깅 API)
 
@@ -35,6 +37,6 @@ Visual Studio 디버깅 API의 인터페이스, 열거자 및 구조에 대 한 
 
 디버깅 관련 용어와 해당 정의의 목록을 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 디버거 확장성](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

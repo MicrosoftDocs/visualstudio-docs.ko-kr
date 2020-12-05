@@ -1,5 +1,7 @@
 ---
 title: 디버깅을 위한 SDK 도우미 | Microsoft Docs
+description: C + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하기 위한 전역 도우미 함수인 함수 및 선언에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713645"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606543"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 이러한 함수와 선언에는 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하기 위한 전역 도우미 함수가 있습니다.
@@ -262,14 +264,14 @@ HRESULT EnumMetricSections(
 |자리 표시자|Description|
 |-----------------|-----------------|
 |*[레지스트리 키]*|`HKEY_CURRENT_USER` 또는 `HKEY_LOCAL_MACHINE`|
-|*[버전 루트]*|Visual Studio의 버전입니다 (예:, `7.0` `7.1` 또는 `8.0` ). 그러나 **/rootsuffix** 스위치를 사용 하 여이 루트를 수정할 수도 있습니다 **devenv.exe**합니다. VSIP의 경우이 한정자는 일반적으로 **Exp**이므로 버전 루트는 8.0 Exp와 같이 됩니다.|
+|*[버전 루트]*|Visual Studio의 버전입니다 (예:, `7.0` `7.1` 또는 `8.0` ). 그러나 **/rootsuffix** 스위치를 사용 하 여이 루트를 수정할 수도 있습니다 **devenv.exe** 합니다. VSIP의 경우이 한정자는 일반적으로 **Exp** 이므로 버전 루트는 8.0 Exp와 같이 됩니다.|
 |*[메트릭 루트]*|이는 `AD7Metrics` `AD7Metrics(Debug)` dbgmetric의 디버그 버전이 사용 되는지 여부에 따라 또는입니다. **참고:**  Dbgmetric 사용 여부에 관계 없이이 명명 규칙은 레지스트리에 반영 해야 하는 디버그 버전과 릴리스 버전 간에 차이가 있는 경우 준수 해야 합니다.|
 |*[메트릭 유형]*|작성할 메트릭 형식 (,, 등) `Engine` `ExpressionEvaluator` 입니다. `SymbolProvider` 이는 모두 dbgmetric에서로 정의 됩니다. `metricTypeXXXX` 여기서 `XXXX` 는 특정 형식 이름입니다.|
 |*수치*|메트릭을 설정 하기 위해 값을 할당할 항목의 이름입니다. 메트릭의 실제 구성은 메트릭 유형에 따라 달라 집니다.|
 |*[메트릭 값]*|메트릭에 할당 된 값입니다. 값에 포함 되는 형식 (문자열, 숫자 등)은 메트릭에 따라 달라 집니다.|
 
 > [!NOTE]
-> 모든 Guid는 형식으로 저장 됩니다 `{GUID}` . 예: `{123D150B-FA18-461C-B218-45B3E4589F9B}`
+> 모든 Guid는 형식으로 저장 됩니다 `{GUID}` . 예들 들어 `{123D150B-FA18-461C-B218-45B3E4589F9B}`입니다.
 
 ### <a name="debug-engines"></a>디버그 엔진
  다음은 레지스트리의 디버그 엔진 메트릭에 대 한 구성입니다. `Engine` 는 디버그 엔진의 메트릭 유형 이름이 고 위의 레지스트리 하위 트리의 *[메트릭 유형]* 에 해당 합니다.
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |자리 표시자|Description|
 |-----------------|-----------------|
 |*[디버그 엔진 guid]*|예외를 지 원하는 디버그 엔진의 GUID입니다.|
-|*[예외 형식]*|처리할 수 있는 예외 클래스를 식별 하는 하위 키의 일반 제목입니다. 일반적인 이름은 **c + + 예외**, **Win32 예외**, **공용 언어 런타임 예외**및 **기본 런타임 검사**입니다. 이러한 이름은 사용자에 대 한 특정 예외 클래스를 식별 하는 데도 사용 됩니다.|
+|*[예외 형식]*|처리할 수 있는 예외 클래스를 식별 하는 하위 키의 일반 제목입니다. 일반적인 이름은 **c + + 예외**, **Win32 예외**, **공용 언어 런타임 예외** 및 **네이티브 Run-Time 검사** 입니다. 이러한 이름은 사용자에 대 한 특정 예외 클래스를 식별 하는 데도 사용 됩니다.|
 |*발생할*|예외에 대 한 이름입니다 (예: **_com_error** 또는 **제어 중단)**. 이러한 이름은 사용자에 대 한 특정 예외를 식별 하는 데도 사용 됩니다.|
 
 ## <a name="requirements"></a>요구 사항
@@ -424,5 +426,5 @@ HRESULT EnumMetricSections(
 
  라이브러리: cdss\ad2defilelib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

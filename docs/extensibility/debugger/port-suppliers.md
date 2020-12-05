@@ -1,5 +1,7 @@
 ---
 title: 포트 공급자 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 포트 공급자의 정의와 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3226053a23a45c42a45de038e44829d4a150af6
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738307"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606582"
 ---
 # <a name="port-suppliers"></a>포트 공급자
-디버거 아키텍처에서 *포트 공급자*는 다음과 같습니다.
+디버거 아키텍처에서 *포트 공급자* 는 다음과 같습니다.
 
 - 는 서버에 포함 되어 있으며 해당 서버에 대 한 요청에 포트를 제공 합니다.
 
@@ -31,7 +33,7 @@ ms.locfileid: "80738307"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 포트 공급자와 기본 포트를 제공 합니다. 사용자 지정 포트를 구현 해야 하는 경우 해당 사용자 지정 포트를 제공 하기 위해 사용자 지정 포트 공급자도 구현 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [서버](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Ports](../../extensibility/debugger/ports.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

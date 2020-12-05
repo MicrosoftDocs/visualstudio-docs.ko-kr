@@ -1,5 +1,7 @@
 ---
 title: 포트 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 포트의 정의와 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b42e7fa97c12afa07923e99d8b084840ee7ccad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738312"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606563"
 ---
 # <a name="ports"></a>포트
 디버거 아키텍처에서 *포트*:
@@ -31,7 +33,7 @@ ms.locfileid: "80738312"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 네이티브 및 관리 되는 모든 Windows 기반 프로세스를 처리 하는 기본 포트를 제공 합니다. Windows 기반이 아닌 외부 장치를 사용 하는 연결에 대해 사용자 지정 포트를 설정 해야 합니다. 이러한 사용자 지정 포트를 제공 하려면 사용자 지정 포트 공급자도 설정 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [서버](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [프로세스](../../extensibility/debugger/processes.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

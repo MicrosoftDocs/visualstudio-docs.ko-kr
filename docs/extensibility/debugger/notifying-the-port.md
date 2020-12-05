@@ -1,5 +1,7 @@
 ---
 title: 포트에 알림 | Microsoft Docs
+description: 프로그램을 시작한 후 포트에 알림이 표시 되는 방법에 대해 알아봅니다. 이 문서에는 자세한 설명이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738322"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606621"
 ---
 # <a name="notify-the-port"></a>포트에 알림
 프로그램을 시작한 후 다음과 같이 포트에 알림이 표시 되어야 합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "80738322"
 
  DE의 id를 알고 있으면 SDM에서 프로그램에 연결할 준비가 된 것입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램 시작](../../extensibility/debugger/launching-a-program.md)
 - [시작 후 연결](../../extensibility/debugger/attaching-after-a-launch.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

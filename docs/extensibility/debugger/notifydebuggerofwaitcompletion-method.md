@@ -1,5 +1,7 @@
 ---
 title: NotifyDebuggerOfWaitCompletion 메서드 | Microsoft Docs
+description: 디버거에서 중단점 대상으로 사용 되는 자리 표시자 인 NotifyDebuggerOfWaitCompletion 메서드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35571b28287ecdea48a2ff089cb25cf3ed742d60
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738337"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606634"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 메서드
 디버거에서 중단점 대상으로 사용 되는 자리 표시자 메서드입니다. 이 메서드는 인라인 또는 최적화 되지 않아야 합니다.

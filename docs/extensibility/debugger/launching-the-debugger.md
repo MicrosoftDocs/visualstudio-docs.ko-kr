@@ -1,5 +1,7 @@
 ---
 title: 디버거 시작 | Microsoft Docs
+description: 디버거를 시작 하는 데 필요한 적절 한 특성이 포함 된 메서드 및 이벤트의 시퀀스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb2f484449d1b3f8474a6586d298b057875b342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738450"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606660"
 ---
 # <a name="launch-the-debugger"></a>디버거 시작
 디버거를 시작 하려면 적절 한 특성과 함께 올바른 메서드 및 이벤트 시퀀스를 전송 해야 합니다.
 
 ## <a name="sequences-of-methods-and-events"></a>메서드 및 이벤트 시퀀스
 
-1. **디버그** 메뉴를 선택 하 고 **시작**을 선택 하 여 세션 디버그 관리자 (SDM)를 호출 합니다. 자세한 내용은 [프로그램 시작](../../extensibility/debugger/launching-a-program.md)을 참조 하세요.
+1. **디버그** 메뉴를 선택 하 고 **시작** 을 선택 하 여 세션 디버그 관리자 (SDM)를 호출 합니다. 자세한 내용은 [프로그램 시작](../../extensibility/debugger/launching-a-program.md)을 참조 하세요.
 
 2. SDM은 [Onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 메서드를 호출 합니다.
 
@@ -51,6 +53,6 @@ ms.locfileid: "80738450"
 
 8. DE는 특성을 사용 하 여 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 을 SDM으로 보냅니다 `EVENT_SYNC` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)
 - [프로그램 시작](../../extensibility/debugger/launching-a-program.md)

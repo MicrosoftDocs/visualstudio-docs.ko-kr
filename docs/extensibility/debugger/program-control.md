@@ -1,5 +1,7 @@
 ---
 title: 프로그램 제어 | Microsoft Docs
+description: 실행, 단계별 실행, 계속, 스레드 일시 중단/재개 등 프로그램 수준에서 발생 하는 Visual Studio 디버깅의 루틴에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738235"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606530"
 ---
 # <a name="program-control"></a>프로그램 제어
 Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이 프로그램 수준에서 발생 합니다.
@@ -46,5 +48,5 @@ Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이
 
  다중 스레드 프로그램의 경우 [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드와 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 인터페이스의 모든 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

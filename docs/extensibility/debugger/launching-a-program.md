@@ -1,5 +1,7 @@
 ---
 title: 프로그램 시작 | Microsoft Docs
+description: F5 키를 사용 하 여 IDE에서 디버거를 실행 하는 프로그램을 디버그할 때 발생 하는 일련의 이벤트에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738481"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606699"
 ---
 # <a name="launch-a-program"></a>프로그램 시작
 프로그램을 디버깅 하려는 사용자는 **F5** 키를 눌러 IDE에서 디버거를 실행할 수 있습니다. 그러면 다음과 같이 IDE에서 디버그 엔진 (DE)에 연결 하는 일련의 이벤트가 시작 됩니다. 그러면 프로그램에 연결 되거나 연결 됩니다.
@@ -39,7 +41,7 @@ ms.locfileid: "80738481"
 
    새로 만든 프로그램은 동일한 IDE에서 관련 되거나 관련 되지 않은 다른 프로그램과 함께 시작 되거나 연결 되어 디버그 세션을 구성 합니다.
 
-   사용자가 처음으로 **F5 키**를 누를 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 의 디버그 패키지는 메서드를 통해 프로젝트 패키지 (시작 하는 프로그램의 형식에 연결 됨)를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> 솔루션의 활성 프로젝트 디버그 설정으로 구조체를 채웁니다. 이 구조체는 메서드를 호출 하 여 디버그 패키지로 다시 전달 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> . 그런 다음 디버그 패키지는 디버깅 중인 프로그램 및 관련 디버그 엔진을 시작 하는 SDM (세션 디버그 관리자)을 인스턴스화합니다.
+   사용자가 처음으로 **F5 키** 를 누를 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 의 디버그 패키지는 메서드를 통해 프로젝트 패키지 (시작 하는 프로그램의 형식에 연결 됨)를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> 솔루션의 활성 프로젝트 디버그 설정으로 구조체를 채웁니다. 이 구조체는 메서드를 호출 하 여 디버그 패키지로 다시 전달 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> . 그런 다음 디버그 패키지는 디버깅 중인 프로그램 및 관련 디버그 엔진을 시작 하는 SDM (세션 디버그 관리자)을 인스턴스화합니다.
 
    SDM에 전달 되는 인수 중 하나는 프로그램을 시작 하는 데 사용할 DE의 GUID입니다.
 

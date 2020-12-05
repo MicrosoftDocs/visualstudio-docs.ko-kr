@@ -1,5 +1,7 @@
 ---
 title: 운영 모드 | Microsoft Docs
+description: IDE가 작동 하는 세 가지 모드 (디자인 모드, 실행 모드 및 중단 모드)에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738286"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606608"
 ---
 # <a name="operational-modes"></a>운영 모드
 다음과 같이 IDE에서 작동할 수 있는 세 가지 모드가 있습니다.
@@ -54,5 +56,5 @@ ms.locfileid: "80738286"
 
  프로그램에서 코드의 다음 줄 또는 함수에 대 한 단계를 성공적으로 실행 하거나 커서 또는 설정 된 중단점까지 실행 하면 DE가 자동으로 중단 모드로 전환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [실행 제어](../../extensibility/debugger/control-of-execution.md)

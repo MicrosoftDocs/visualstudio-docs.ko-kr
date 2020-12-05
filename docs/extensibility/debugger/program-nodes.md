@@ -1,5 +1,7 @@
 ---
 title: 프로그램 노드 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 프로그램 노드의 정의 및 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738223"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606491"
 ---
 # <a name="program-nodes"></a>프로그램 노드
-디버거 아키텍처에서 *프로그램 노드*는 다음과 같습니다.
+디버거 아키텍처에서 *프로그램 노드* 는 다음과 같습니다.
 
 - 은 프로그램에 대 한 간단한 설명입니다.
 
@@ -33,7 +35,7 @@ ms.locfileid: "80738223"
 
   프로그램이에 연결 되기 전에는 IDE에 프로그램에 대 한 간단한 설명만 필요 합니다. 이 정보는 프로그램 노드에서 가져올 수 있습니다. 프로그램이에 연결 되 면 IDE는 프로그램에서 실행 중인 모든 스레드의 목록과 같은 보다 자세한 정보를 표시 합니다. 이 정보는 프로그램 자체에서 가져옵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램](../../extensibility/debugger/programs.md)
 - [프로세스](../../extensibility/debugger/processes.md)
 - [디버그 엔진](../../extensibility/debugger/debug-engine.md)

@@ -1,5 +1,7 @@
 ---
 title: 모듈 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 모듈의 정의 및 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57202231c1bbfc7712d322b8cc7a30e3f64c87af
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738353"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606647"
 ---
 # <a name="modules"></a>모듈
-디버거 아키텍처 측면에서 *모듈*은 다음과 같습니다.
+디버거 아키텍처 측면에서 *모듈* 은 다음과 같습니다.
 
 - 는 실행 파일 또는 DLL과 같은 코드의 물리적 컨테이너입니다.
 
@@ -27,6 +29,6 @@ ms.locfileid: "80738353"
 
 - 는 디버그 엔진에서 모듈을 설명 하기 위해 만든 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) 인터페이스로 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

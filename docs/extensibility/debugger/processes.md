@@ -1,5 +1,7 @@
 ---
 title: 프로세스 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 프로세스의 정의와 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a707d62443004795824c8bd437c29802635cf41
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738239"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606504"
 ---
 # <a name="processes"></a>프로세스
-디버거 아키텍처에서 *프로세스*는 다음과 같습니다.
+디버거 아키텍처에서 *프로세스* 는 다음과 같습니다.
 
 - 는 프로그램 집합에 대 한 컨테이너입니다. 스레드 집합의 컨테이너인 Windows 프로세스와 매우 유사 합니다.
 
@@ -34,7 +36,7 @@ ms.locfileid: "80738239"
 
   디버그 패키지는 [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)를 호출 하 여 디버그 엔진 (de)을 프로세스에 연결할 수 있습니다 .이는 de-de가 처리할 수 있는 프로세스에서 실행 되는 모든 프로그램에 연결 하는 것을 의미 합니다. 예를 들어 공용 언어 런타임 DE가 프로세스에 연결 되 면 관리 코드를 실행 하는 프로그램에만 연결 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램](../../extensibility/debugger/programs.md)
 - [스레드](../../extensibility/debugger/threads.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
