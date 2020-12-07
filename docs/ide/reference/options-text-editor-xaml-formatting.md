@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, XAML, 서식
+description: 서식 옵션 페이지와 해당 하위 페이지를 사용하여 XAML로 프로그래밍할 때 코드 편집기에서 코드의 서식을 지정하는 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,16 +31,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568245"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040526"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 
-**서식** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **서식 지정** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XAML** > **서식 지정** 노드를 확장합니다.
+**서식** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션** 을 클릭합니다. **서식 지정** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XAML** > **서식 지정** 노드를 확장합니다.
 
 ## <a name="auto-formatting-events"></a>자동 서식 지정 이벤트
 
@@ -88,7 +90,7 @@ ms.locfileid: "75568245"
 
 **지정한 길이를 초과할 때 태그 줄 바꿈**
 
-**길이**에 의해 지정된 줄 길이에서 줄 바꿈할지 지정합니다.
+**길이** 에 의해 지정된 줄 길이에서 줄 바꿈할지 지정합니다.
 
 **길이**
 
@@ -174,6 +176,6 @@ Width="75">Hello</Button>
 </Grid>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

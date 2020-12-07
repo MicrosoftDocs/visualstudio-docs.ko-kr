@@ -1,5 +1,7 @@
 ---
 title: 테스트 생성 | Microsoft IntelliTest 개발자 테스트 도구
+description: IntelliTest가 구현 메서드에서 테스트 사례를 생성한 다음, 메서드에 대한 입력을 생성하고 데이터에 대한 어설션을 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315176"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329447"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -69,7 +71,7 @@ void ReplaceFirstChar(string target, char c) {
 }
 ```
 
-여기서 **ReplaceFirstChar**은 문자열의 첫 번째 문제를 바꾸는 메서드입니다.
+여기서 **ReplaceFirstChar** 은 문자열의 첫 번째 문제를 바꾸는 메서드입니다.
 
 ```csharp
 class StringHelper {
@@ -172,7 +174,7 @@ public void Test2([PexAssumeNotNull] object o)
 
 메서드의 사전 조건은 메서드가 성공하는 조건을 표현합니다.
 
-일반적으로 사전 조건을 적용하려면 매개 변수 및 개체 상태를 확인하고 위반될 경우 **ArgumentException** 또는 **InvalidOperationException**을 throw합니다.
+일반적으로 사전 조건을 적용하려면 매개 변수 및 개체 상태를 확인하고 위반될 경우 **ArgumentException** 또는 **InvalidOperationException** 을 throw합니다.
 
 IntelliTest에서 [매개 변수가 있는 단위 테스트](#parameterized-unit-testing)의 사전 조건은 [PexAssume](static-helper-classes.md#pexassume)을 사용하여 표현됩니다.
 
@@ -191,7 +193,7 @@ IntelliTest에서 [매개 변수가 있는 단위 테스트](#parameterized-unit
 
 1. [구성된 경로 경계](exploration-bounds.md) 내에서 종료되지 않을 경우 [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) 옵션이 설정되지 않는 한 실패로 간주합니다.
 
-1. 테스트에서 **PexAssumeFailedException**을 throw할 경우 테스트가 성공합니다. 그러나 일반적으로 [TestEmissionFilter](exploration-bounds.md#testemissionfilter)가 **All**로 설정된 경우가 아니면 테스트가 필터링됩니다.
+1. 테스트에서 **PexAssumeFailedException** 을 throw할 경우 테스트가 성공합니다. 그러나 일반적으로 [TestEmissionFilter](exploration-bounds.md#testemissionfilter)가 **All** 로 설정된 경우가 아니면 테스트가 필터링됩니다.
 
 1. 테스트가 [어설션](#assumptions-and-assertions)을 위반하면(예: 유닛 테스트 프레임워크의 어설션 위반 예외 throw) 테스트가 실패합니다.
 
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>추가 정보
+## <a name="further-reading"></a>추가 참고 자료
 
 * [Test to code binding](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)(테스트-코드 바인딩)
 * [One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)(한 번 테스트로 모두 제어)

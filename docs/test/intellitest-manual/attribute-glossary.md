@@ -1,5 +1,7 @@
 ---
 title: 특성 용어집 | Microsoft IntelliTest 개발자 테스트 도구
+description: 이 문서에서는 네임스페이스로 구성된 IntelliTest 특성의 목록과 특성에 대한 세부 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c356893b0c9716374950df3edc3dc480f022100
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315228"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330227"
 ---
 # <a name="attribute-glossary"></a>특성 용어집
 
@@ -46,7 +48,7 @@ ms.locfileid: "89315228"
 <a name="pexassumenotnull"></a>
 ## <a name="pexassumenotnull"></a>PexAssumeNotNull
 
-이 특성은 제어되는 값이 **null**일 수 없음을 어설션합니다. 다음에 연결될 수 있습니다.
+이 특성은 제어되는 값이 **null** 일 수 없음을 어설션합니다. 다음에 연결될 수 있습니다.
 
 * 매개 변수가 있는 테스트 메서드의 **매개 변수**
 
@@ -79,7 +81,7 @@ ms.locfileid: "89315228"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-이 특성은 *explorations*가 포함된 클래스를 표시합니다. MSTest **TestClassAttribute**(또는 NUnit **TestFixtureAttribute**)에 해당합니다. 이 특성은 선택적 요소입니다.
+이 특성은 *explorations* 가 포함된 클래스를 표시합니다. MSTest **TestClassAttribute**(또는 NUnit **TestFixtureAttribute**)에 해당합니다. 이 특성은 선택 사항입니다.
 
 [PexClass](#pexclass)로 표시된 클래스는 *기본 생성 가능한* 클래스여야 합니다.
 
@@ -89,7 +91,7 @@ ms.locfileid: "89315228"
 
 클래스가 해당 요구 사항을 충족하지 않을 경우 오류가 보고되고 탐색에 실패합니다.
 
-IntelliTest가 클래스의 일부인 새 테스트를 별도의 파일로 생성할 수 있도록 해당 클래스를 **partial**로 만드는 것이 좋습니다. 이 방법은 [표시 여부](input-generation.md#visibility)로 인한 많은 문제를 해결하며 C#의 일반적인 기술입니다.
+IntelliTest가 클래스의 일부인 새 테스트를 별도의 파일로 생성할 수 있도록 해당 클래스를 **partial** 로 만드는 것이 좋습니다. 이 방법은 [표시 여부](input-generation.md#visibility)로 인한 많은 문제를 해결하며 C#의 일반적인 기술입니다.
 
 **추가 도구 모음 및 범주**:
 
@@ -142,7 +144,7 @@ public partial class MyTests {
 <a name="pexexplorationattributebase"></a>
 ## <a name="pexexplorationattributebase"></a>PexExplorationAttributeBase
 
-[자세한 정보](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
+[추가 정보](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
 
 <a name="pexassemblysettings"></a>
 ## <a name="pexassemblysettings"></a>PexAssemblySettings
@@ -205,7 +207,7 @@ public void MyTest(object testParameter)
 
 **예제**
 
-다음 테스트는 **Stack**의 생성자가 **ArgumentOutOfRangeException**을 throw할 수 있도록 지정합니다.
+다음 테스트는 **Stack** 의 생성자가 **ArgumentOutOfRangeException** 을 throw할 수 있도록 지정합니다.
 
 ```csharp
 class Stack {
@@ -233,17 +235,17 @@ class CtorTest(int capacity) {
 <a name="pexallowedexceptionfromassembly"></a>
 ## <a name="pexallowedexceptionfromassembly"></a>PexAllowedExceptionFromAssembly
 
-[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
 
 <a name="pexallowedexceptionfromtype"></a>
 ## <a name="pexallowedexceptionfromtype"></a>PexAllowedExceptionFromType
 
-[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
 
 <a name="pexallowedexceptionfromtypeundertest"></a>
 ## <a name="pexallowedexceptionfromtypeundertest"></a>PexAllowedExceptionFromTypeUnderTest
 
-[자세한 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
+[추가 정보](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 

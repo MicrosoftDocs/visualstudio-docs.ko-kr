@@ -1,5 +1,7 @@
 ---
 title: 스레드 목록 표시 명령
+description: 스레드 목록 표시 명령 및 현재 프로그램의 스레드 목록을 표시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595490"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305256"
 ---
 # <a name="list-threads-command"></a>스레드 목록 표시 명령
 현재 프로그램의 스레드 목록을 표시합니다.
@@ -33,7 +35,7 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>인수
 `index`
 
-(선택 사항) 해당 인덱스별로 현재 스레드가 될 스레드를 선택합니다.
+선택 사항입니다. 해당 인덱스별로 현재 스레드가 될 스레드를 선택합니다.
 
 ## <a name="remarks"></a>설명
 지정하는 경우 `index` 인수는 현재 스레드로 지정된 스레드를 표시합니다. 별표(*)는 현재 스레드 옆에 있는 목록에 표시됩니다.

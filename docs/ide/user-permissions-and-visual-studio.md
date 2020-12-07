@@ -1,5 +1,6 @@
 ---
 title: 관리자 권한으로 실행
+description: 관리자 권한으로 Visual Studio를 실행하는 방법을 알아봅니다.
 ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75718638"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478954"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 
@@ -28,11 +29,11 @@ ms.locfileid: "75718638"
 
 일반 사용자로 Visual Studio IDE에서 거의 모든 작업을 수행할 수 있습니다. 다음 작업을 완료하려면 관리자 권한이 필요합니다.
 
-|영역|Task|참조 항목|
+|Area|작업|참조 항목|
 |----------|----------| - |
 |설치|Visual Studio 설치 또는 수정|[Visual Studio 설치](../install/install-visual-studio.md), [Visual Studio 수정](../install/modify-visual-studio.md)|
 ||로컬 도움말 콘텐츠를 설치, 업데이트 또는 제거합니다.|[로컬 도움말 콘텐츠 설치 및 관리](../help-viewer/install-manage-local-content.md)|
-|도구 상자|**도구 상자**에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
+|도구 상자|**도구 상자** 에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
 |빌딩|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||C++ 프로젝트를 빌드할 때 등록 단계를 포함합니다.||
 |디버깅|높은 권한으로 실행되는 애플리케이션 디버깅합니다.|[디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)|
@@ -55,7 +56,7 @@ ms.locfileid: "75718638"
 
 1. **시작** 메뉴를 열고 Visual Studio 2017로 스크롤합니다.
 
-1. **Visual Studio 2017**의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행**을 선택합니다.
+1. **Visual Studio 2017** 의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행** 을 선택합니다.
 
    Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
 
@@ -65,7 +66,7 @@ ms.locfileid: "75718638"
 
 1. **시작** 메뉴를 열고 Visual Studio 2019로 스크롤합니다.
 
-1. **Visual Studio 2019**의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행**을 선택합니다.
+1. **Visual Studio 2019** 의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행** 을 선택합니다.
 
    Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
 

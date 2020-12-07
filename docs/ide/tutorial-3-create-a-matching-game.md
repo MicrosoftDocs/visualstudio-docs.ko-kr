@@ -1,5 +1,7 @@
 ---
 title: '자습서 3: 맞추기 게임 만들기'
+description: 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
@@ -9,14 +11,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810837"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479032"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
+# <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
 
 이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다.
 
@@ -53,7 +55,7 @@ ms.locfileid: "90810837"
 |[8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|플레이어가 게임에 이겼는지 여부를 확인하기 위해 `CheckForWinner()` 메서드를 추가합니다.|
 |[9단계: 기타 기능 사용](../ide/step-9-try-other-features.md)|아이콘과 색을 변경하고 모눈과 소리를 추가하는 등 다른 기능을 테스트해 봅니다. 보드를 크게 하거나 타이머를 조정해 볼 수 있습니다.|
 
-또한 유용한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요.
+또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

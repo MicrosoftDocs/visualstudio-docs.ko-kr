@@ -1,5 +1,7 @@
 ---
 title: 코딩된 UI 테스트가 특정 이벤트를 기다리도록 지정
+description: '코딩된 UI 테스트 재생 테스트에 특정 이벤트(예: 창이 나타나거나 진행률 표시줄이 사라짐)가 발생할 때까지 기다리도록 지시하는 방법을 알아봅니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286780"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329564"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정
 
@@ -47,7 +49,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
-컨트롤의 지정된 속성이 지정된 값을 갖게 될 때까지 기다립니다. 예를 들어 상태 텍스트가 **완료**로 변경될 때까지 기다립니다.
+컨트롤의 지정된 속성이 지정된 값을 갖게 될 때까지 기다립니다. 예를 들어 상태 텍스트가 **완료** 로 변경될 때까지 기다립니다.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
@@ -55,7 +57,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
-지정된 조건자가 `true`로 반환될 때까지 기다립니다. 이 메서드는 특정 컨트롤에서 복잡한 대기 작업(예: OR 조건)에 사용할 수 있습니다. 예를 들어 다음 코드에 표시된 대로 상태 텍스트가 **Succeeded** 또는 **Failed**가 될 때까지 기다릴 수 있습니다.
+지정된 조건자가 `true`로 반환될 때까지 기다립니다. 이 메서드는 특정 컨트롤에서 복잡한 대기 작업(예: OR 조건)에 사용할 수 있습니다. 예를 들어 다음 코드에 표시된 대로 상태 텍스트가 **Succeeded** 또는 **Failed** 가 될 때까지 기다릴 수 있습니다.
 
 ```csharp
 
@@ -72,7 +74,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
-이전 메서드는 모두 UITestControl의 인스턴스 메서드입니다. 이 메서드는 정적 메서드입니다. 또한 이 메서드는 지정된 조건자가 `true`가 될 때까지 기다리지만 여러 컨트롤에서 복잡한 대기 작업(예: OR 조건)에 사용할 수 있습니다. 예를 들어 다음 코드에 표시된 대로 상태 텍스트가 **Succeeded**가 되거나 오류 메시지가 나타날 때까지 기다릴 수 있습니다.
+이전 메서드는 모두 UITestControl의 인스턴스 메서드입니다. 이 메서드는 정적 메서드입니다. 또한 이 메서드는 지정된 조건자가 `true`가 될 때까지 기다리지만 여러 컨트롤에서 복잡한 대기 작업(예: OR 조건)에 사용할 수 있습니다. 예를 들어 다음 코드에 표시된 대로 상태 텍스트가 **Succeeded** 가 되거나 오류 메시지가 나타날 때까지 기다릴 수 있습니다.
 
 ```csharp
 

@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, HTML(Web Forms), 유효성 검사
+description: HTML 섹션의 유효성 검사 페이지를 사용하여 HTML 편집기가 문서에서 HTML 태그 구문을 확인하는 방법에 대한 기본 설정을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568284"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040565"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>옵션, 텍스트 편집기, HTML(Web Forms), 유효성 검사
 
-**유효성 검사** 옵션 페이지를 사용하여 HTML 편집기에서 문서의 HTML 태그 구문이 올바른지 검사하는 방법에 대한 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **유효성 검사**를 확장합니다.
+**유효성 검사** 옵션 페이지를 사용하여 HTML 편집기에서 문서의 HTML 태그 구문이 올바른지 검사하는 방법에 대한 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **유효성 검사** 를 확장합니다.
 
 ## <a name="validation"></a>유효성 검사
 
@@ -40,8 +42,8 @@ ms.locfileid: "75568284"
      다른 확인란을 사용하여 편집기에서 표시하게 할 오류의 개별 유형을 지정하여 유효성 검사를 세부 조정할 수 있습니다.
 
      > [!NOTE]
-     > 일부 스키마는 오류의 개별 유형을 표시하는 옵션을 제공하지 않습니다. 예를 들어 대상 스키마로 **XHTML 1.1**을 선택한 경우 모든 옵션 확인란이 사용하지 않도록 설정됩니다. 이 경우 모든 오류 유형이 표시됩니다.
+     > 일부 스키마는 오류의 개별 유형을 표시하는 옵션을 제공하지 않습니다. 예를 들어 대상 스키마로 **XHTML 1.1** 을 선택한 경우 모든 옵션 확인란이 사용하지 않도록 설정됩니다. 이 경우 모든 오류 유형이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

@@ -1,5 +1,7 @@
 ---
 title: 코딩된 UI 테스트에 다른 웹 브라우저 사용
+description: 웹 애플리케이션에 서로 다른 브라우저를 사용하여 테스트를 사용자 지정하고 재생하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289328"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330032"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 
@@ -43,17 +45,17 @@ ms.locfileid: "85289328"
 > [!NOTE]
 > Google Chrome 또는 Mozilla Firefox 브라우저로는 코딩된 UI 테스트를 기록할 수 없습니다.
 
-**Internet Explorer로 재생:** 브라우저를 명시적으로 지정하지 않은 경우 기본적으로 Internet Explorer에서 테스트가 실행됩니다. 테스트 코드에서 **BrowserWindow.CurrentBrowser** 속성을 설정하여 사용할 브라우저를 명시적으로 설정할 수 있습니다. Internet Explorer의 경우 이 속성을 **IE** 또는 **Internet Explorer**로 설정해야 합니다.
+**Internet Explorer로 재생:** 브라우저를 명시적으로 지정하지 않은 경우 기본적으로 Internet Explorer에서 테스트가 실행됩니다. 테스트 코드에서 **BrowserWindow.CurrentBrowser** 속성을 설정하여 사용할 브라우저를 명시적으로 설정할 수 있습니다. Internet Explorer의 경우 이 속성을 **IE** 또는 **Internet Explorer** 로 설정해야 합니다.
 
-**Internet Explorer 이외의 웹 브라우저:** Internet Explorer 이외의 브라우저에서 재생하려면 테스트 코드에서 BrowserWindow.CurrentBrowser 속성을 **Firefox** 또는 **Chrome**으로 설정합니다.
+**Internet Explorer 이외의 웹 브라우저:** Internet Explorer 이외의 브라우저에서 재생하려면 테스트 코드에서 BrowserWindow.CurrentBrowser 속성을 **Firefox** 또는 **Chrome** 으로 설정합니다.
 
-IE가 아닌 웹 브라우저에서 테스트를 재생하려면 **코딩된 UI 다중 브라우저용 Selenium 구성 요소**를 설치해야 합니다.
+IE가 아닌 웹 브라우저에서 테스트를 재생하려면 **코딩된 UI 다중 브라우저용 Selenium 구성 요소** 를 설치해야 합니다.
 
 ### <a name="install-selenium-components"></a>Selenium 구성 요소 설치
 
 ::: moniker range="vs-2017"
 
-1. **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.
+1. **도구** 메뉴 모음에서 **확장 및 업데이트** 를 선택합니다.
 
 2. **확장 및 업데이트** 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.
 
@@ -61,13 +63,13 @@ IE가 아닌 웹 브라우저에서 테스트를 재생하려면 **코딩된 UI 
 
 ::: moniker range=">=vs-2019"
 
-1. **확장** 메뉴에서 **확장 관리**를 선택합니다.
+1. **확장** 메뉴에서 **확장 관리** 를 선택합니다.
 
 2. **확장 관리** 대화 상자에서 `Selenium components for Cross Browser Testing`을 검색합니다.
 
 ::: moniker-end
 
-3. 확장명을 강조 표시하고 **다운로드**를 선택합니다.
+3. 확장명을 강조 표시하고 **다운로드** 를 선택합니다.
 
     > [!TIP]
     > 또한 [여기](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)에서 코딩된 UI 다중 브라우저 테스트용 Selenium 구성 요소를 다운로드할 수 있습니다.
@@ -80,15 +82,15 @@ IE가 아닌 웹 브라우저에서 테스트를 재생하려면 **코딩된 UI 
 
 1. 내 코드만 사용:
 
-    1. **도구** 메뉴에서 **옵션**을 선택한 다음 **디버깅**을 선택합니다.
+    1. **도구** 메뉴에서 **옵션** 을 선택한 다음 **디버깅** 을 선택합니다.
 
-    2. **내 코드만 사용**을 선택합니다.
+    2. **내 코드만 사용** 을 선택합니다.
 
 2. CLR 예외 사용 안 함:
 
-    1. **디버그** 메뉴에서 **예외**를 선택합니다.
+    1. **디버그** 메뉴에서 **예외** 를 선택합니다.
 
-    2. **공용 언어 런타임 예외**에 대해 **사용자가 처리하지 않음**을 선택 취소합니다.
+    2. **공용 언어 런타임 예외** 에 대해 **사용자가 처리하지 않음** 을 선택 취소합니다.
 
 코딩된 UI 테스트에서 `BrowserWindow.CurrentBrowser`을 변경할 옵션이 표시되지 않는 경우 다양한 웹 브라우저를 사용하여 코딩된 UI 테스트를 지원하지 않는 Visual Studio 버전을 사용하는 중일 수 있습니다. 코딩된 UI 테스트를 사용하려면 Visual Studio Enterprise edition을 사용해야 합니다.
 

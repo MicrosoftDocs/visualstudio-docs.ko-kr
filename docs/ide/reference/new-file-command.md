@@ -1,5 +1,7 @@
 ---
 title: 새 파일 명령
+description: 새 파일 명령 및 새 파일을 만들어 여는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595958"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304102"
 ---
 # <a name="new-file-command"></a>새 파일 명령
 새 파일을 만들고 엽니다. 파일은 기타 파일 폴더 아래에 나타납니다.
@@ -32,11 +34,11 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>인수
 `filename`
 
-(선택 사항) 파일의 이름입니다. 이름을 제공하지 않으면 기본 이름이 제공됩니다. 템플릿 이름이 나열되지 않으면 텍스트 파일이 만들어집니다.
+선택 사항입니다. 파일의 이름입니다. 이름을 제공하지 않으면 기본 이름이 제공됩니다. 템플릿 이름이 나열되지 않으면 텍스트 파일이 만들어집니다.
 
 ## <a name="switches"></a>스위치
 /t:`templatename`\
-(선택 사항) 만들 파일의 형식을 지정합니다.
+선택 사항입니다. 만들 파일의 형식을 지정합니다.
 
 /t:`templatename` 인수 구문은 새 파일 대화 상자에 있는 정보를 미러링합니다. 뒤에 백슬래시(`\`)가 오는 범주 이름 및 템플릿 이름을 입력하고 전체 문자열을 따옴표로 묶습니다.
 
@@ -49,7 +51,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 위의 예제에서는 C++ 파일 템플릿이 **새 파일** 대화 상자의 Visual C++ 범주 아래에 있는지 나타냅니다.
 
 /e:`editorname`\
-(선택 사항) 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
+선택 사항입니다. 파일이 열리는 편집기의 이름입니다. 편집기 이름을 제공하지 않고 인수를 지정한 경우 **연결 프로그램** 대화 상자가 나타납니다.
 
 /e:`editorname` 인수 구문은 연결 프로그램 대화 상자에 따옴표로 묶여 나타나는 편집기 이름을 사용합니다.
 
@@ -66,7 +68,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

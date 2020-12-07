@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 및 항목 템플릿 매개 변수
+description: 템플릿이 인스턴스화될 때 템플릿 매개 변수를 사용하여 템플릿의 값을 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +12,20 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169367"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479203"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
-템플릿이 인스턴스화될 때 템플릿에서 값을 바꿀 수 있습니다. 이 기능을 설정하려면 *템플릿 매개 변수*를 사용합니다. 템플릿 매개 변수는 템플릿에서 클래스 이름 및 네임 스페이스 같은 값을 바꾸는 데 사용할 수 있습니다. 사용자가 새 항목을 추가하거나 프로젝트가 이러한 매개 변수를 바꾸는 경우 백그라운드에서 실행되는 템플릿 마법사입니다.
+템플릿이 인스턴스화될 때 템플릿에서 값을 바꿀 수 있습니다. 이 기능을 설정하려면 *템플릿 매개 변수* 를 사용합니다. 템플릿 매개 변수는 템플릿에서 클래스 이름 및 네임 스페이스 같은 값을 바꾸는 데 사용할 수 있습니다. 사용자가 새 항목을 추가하거나 프로젝트가 이러한 매개 변수를 바꾸는 경우 백그라운드에서 실행되는 템플릿 마법사입니다.
 
 ## <a name="declare-and-enable-template-parameters"></a>템플릿 매개 변수 선언 및 사용
 
-템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예를 들어:
+템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 다음은 그 예입니다. 
 
 - $safeprojectname$
 
@@ -60,12 +62,12 @@ ms.locfileid: "78169367"
 |safeitemname|`itemname`과 동일하지만, 모든 안전하지 않은 문자와 공백이 밑줄 문자로 대체됩니다.|
 |safeitemrootname|`safeitemname`와 동일합니다.|
 |safeprojectname|프로젝트를 만들 때 사용자가 제공했지만 안전하지 않은 문자 및 공백을 모두 제거한 이름입니다.|
-|Time|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
+|time|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
 |specifiedsolutionname|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `specifiedsolutionname`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `specifiedsolutionname`은 비어 있습니다.|
 |userdomain|현재 사용자 도메인입니다.|
 |사용자 이름|현재 사용자 이름입니다.|
 |webnamespace|현재 웹 사이트의 이름입니다. 이 매개 변수는 고유한 클래스 이름을 보장하기 위해 웹 양식 템플릿에서 사용됩니다. 웹 사이트가 웹 서버의 루트 디렉터리에 있으면 이 템플릿 매개 변수는 웹 서버의 루트 디렉터리를 확인합니다.|
-|년|YYYY 형식인 현재 연도입니다.|
+|연도|YYYY 형식인 현재 연도입니다.|
 
 > [!NOTE]
 > 템플릿 매개 변수는 대/소문자를 구분합니다.
@@ -117,7 +119,7 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 템플릿의 매개 변수 대체](how-to-substitute-parameters-in-a-template.md)
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)

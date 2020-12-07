@@ -1,5 +1,7 @@
 ---
 title: -ResetSettings(devenv.exe)
+description: ResetSettings devenv 명령줄 스위치를 사용하여 Visual Studio 기본 설정을 복원하고 Visual Studio IDE를 자동으로 시작하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22b3308b3bd1fed6ff1bc3d1f3a5622eb6f8284f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593865"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040032"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
 
@@ -39,11 +41,11 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  (선택 사항) Visual Studio에 적용할 설정 파일의 전체 경로와 이름입니다.
+  선택 사항입니다. Visual Studio에 적용할 설정 파일의 전체 경로와 이름입니다.
 
 - *DefaultCollectionSpecifier*
 
-  (선택 사항) 복원할 설정의 기본 컬렉션을 나타내는 지정자입니다. 표에 나열된 기본 컬렉션 지정자 중 하나를 선택합니다.
+  선택 사항입니다. 복원할 설정의 기본 컬렉션을 나타내는 지정자입니다. 표에 나열된 기본 컬렉션 지정자 중 하나를 선택합니다.
 
   | 기본 컬렉션 이름 | 컬렉션 지정자 |
   | --- | --- |
@@ -57,7 +59,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 ## <a name="remarks"></a>설명
 
-*SettingsFile*을 지정하지 않으면 IDE가 기존 설정을 사용하여 열립니다.
+*SettingsFile* 을 지정하지 않으면 IDE가 기존 설정을 사용하여 열립니다.
 
 ## <a name="example"></a>예제
 
@@ -71,7 +73,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [환경 설정](../environment-settings.md)
 - [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)

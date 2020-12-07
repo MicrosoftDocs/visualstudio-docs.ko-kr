@@ -1,5 +1,7 @@
 ---
 title: '연습: 코드 조각 만들기'
+description: XML 파일을 만들고, 적절한 요소를 채운 다음, 코드를 추가하는 세 단계로 코드 조각을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 61b7f227344f00fe277d4bf062f83bd3c1d79fd5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800504"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479643"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>연습: 코드 조각 만들기
 
@@ -52,9 +54,9 @@ ms.locfileid: "88800504"
 
 1. Visual Studio에서 새 XML 파일을 만들고 위에 표시된 템플릿을 추가합니다.
 
-2. Title 요소에 코드 조각의 **제목**을 입력합니다. 제목 **제곱근**을 사용합니다.
+2. Title 요소에 코드 조각의 **제목** 을 입력합니다. 제목 **제곱근** 을 사용합니다.
 
-3. **Code** 요소의 **Language** 특성에 코드 조각의 언어를 입력합니다. C#의 경우 **CSharp**를, Visual Basic의 경우 **VB**를, C++의 경우 **CPP**를 사용합니다.
+3. **Code** 요소의 **Language** 특성에 코드 조각의 언어를 입력합니다. C#의 경우 **CSharp** 를, Visual Basic의 경우 **VB** 를, C++의 경우 **CPP** 를 사용합니다.
 
    > [!TIP]
    > 사용 가능한 언어 값을 모두 보려면 [코드 조각 스키마 참조](code-snippets-schema-reference.md) 페이지에서 [코드 요소 특성 섹션](code-snippets-schema-reference.md#attributes)으로 이동합니다.
@@ -80,17 +82,17 @@ ms.locfileid: "88800504"
    > [!NOTE]
    > 코드 조각의 **CDATA** 섹션에 있는 코드 줄의 들여쓰기 또는 서식은 지정할 수 없습니다. 삽입 시, 언어 서비스에서 삽입된 코드의 서식을 자동으로 지정합니다.
 
-5. 조각을 *SquareRoot.snippet*으로 저장합니다(어디에서나 저장할 수 있음).
+5. 조각을 *SquareRoot.snippet* 으로 저장합니다(어디에서나 저장할 수 있음).
 
 ## <a name="import-a-code-snippet"></a>코드 조각 가져오기
 
-1. **코드 조각 관리자**를 사용하여 Visual Studio 설치에 조각을 가져올 수 있습니다. **도구** > **코드 조각 관리자**를 선택하여 엽니다.
+1. **코드 조각 관리자** 를 사용하여 Visual Studio 설치에 조각을 가져올 수 있습니다. **도구** > **코드 조각 관리자** 를 선택하여 엽니다.
 
 2. **가져오기** 단추를 클릭합니다.
 
-3. 이전 절차에서 코드 조각을 저장한 위치로 이동하고, 선택하고, **열기**를 클릭합니다.
+3. 이전 절차에서 코드 조각을 저장한 위치로 이동하고, 선택하고, **열기** 를 클릭합니다.
 
-4. 오른쪽 창의 선택 항목 중에서 코드 조각을 추가할 위치를 선택하라고 묻는 **코드 조각 가져오기** 대화 상자가 열립니다. 선택 사항 중 하나는 **내 코드 조각**이어야 합니다. **마침**, **확인**을 차례로 선택하고 클릭합니다.
+4. 오른쪽 창의 선택 항목 중에서 코드 조각을 추가할 위치를 선택하라고 묻는 **코드 조각 가져오기** 대화 상자가 열립니다. 선택 사항 중 하나는 **내 코드 조각** 이어야 합니다. **마침**, **확인** 을 차례로 선택하고 클릭합니다.
 
 5. 코드 조각은 코드 언어에 따라 다음 위치 중 하나에 복사됩니다.
 
@@ -108,7 +110,7 @@ ms.locfileid: "88800504"
 
    ::: moniker-end
 
-6. C# 또는 Visual Basic 프로젝트를 열고 코드 조각을 테스트합니다. 편집기에서 코드 파일을 열어둔 상태로 오른쪽 클릭 메뉴에서 **코드 조각** > **코드 조각 삽입**을 선택한 다음, **내 코드 조각**을 선택합니다. **제곱근**이라고 하는 코드 조각이 보여야 합니다. 폴더를 두 번 클릭합니다.
+6. C# 또는 Visual Basic 프로젝트를 열고 코드 조각을 테스트합니다. 편집기에서 코드 파일을 열어둔 상태로 오른쪽 클릭 메뉴에서 **코드 조각** > **코드 조각 삽입** 을 선택한 다음, **내 코드 조각** 을 선택합니다. **제곱근** 이라고 하는 코드 조각이 보여야 합니다. 폴더를 두 번 클릭합니다.
 
    코드 조각이 코드 파일에 삽입됩니다.
 
@@ -116,13 +118,13 @@ ms.locfileid: "88800504"
 
 ::: moniker range="vs-2017"
 
-1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. 파일 *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# or Visual Basic]\My Code Snippet\SquareRoot.snippet*을 열어 추가한 코드 조각을 편집합니다.
+1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. 파일 *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# or Visual Basic]\My Code Snippet\SquareRoot.snippet* 을 열어 추가한 코드 조각을 편집합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. 파일 *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# or Visual Basic]\My Code Snippet\SquareRoot.snippet*을 열어 추가한 코드 조각을 편집합니다.
+1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. 파일 *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# or Visual Basic]\My Code Snippet\SquareRoot.snippet* 을 열어 추가한 코드 조각을 편집합니다.
 
 ::: moniker-end
 
@@ -141,7 +143,7 @@ ms.locfileid: "88800504"
    </Header>
    ```
 
-4. **코드 조각 관리자**를 열고 코드 조각을 선택합니다. 오른쪽 창에서 이제 **Description** 및 **Author** 필드가 채워졌습니다.
+4. **코드 조각 관리자** 를 열고 코드 조각을 선택합니다. 오른쪽 창에서 이제 **Description** 및 **Author** 필드가 채워졌습니다.
 
    ![코드 조각 관리자에서 코드 조각 설명](media/code-snippet-description-author.png)
 
@@ -158,7 +160,7 @@ ms.locfileid: "88800504"
 
 6. 코드 조각 파일을 다시 저장합니다.
 
-7. 바로 가기를 테스트하려면 이전에 사용한 프로젝트를 열고 편집기에 **sqrt**를 입력한 후 **Tab**을 누릅니다(Visual Basic은 한 번, C#는 두 번).
+7. 바로 가기를 테스트하려면 이전에 사용한 프로젝트를 열고 편집기에 **sqrt** 를 입력한 후 **Tab** 을 누릅니다(Visual Basic은 한 번, C#는 두 번).
 
    코드 조각이 삽입됩니다.
 
@@ -198,7 +200,7 @@ ms.locfileid: "88800504"
    ![Visual Studio에서 코드 조각 대체 매개 변수 도구 설명](media/snippet-replacement-parameter-tooltip.png)
 
    > [!TIP]
-   > 코드 조각에서 둘 이상의 대체 가능한 매개 변수가 있는 경우에는 **Tab**을 눌러 이동하여 값을 변경할 수 있습니다.
+   > 코드 조각에서 둘 이상의 대체 가능한 매개 변수가 있는 경우에는 **Tab** 을 눌러 이동하여 값을 변경할 수 있습니다.
 
 ## <a name="import-a-namespace"></a>네임스페이스 가져오기
 

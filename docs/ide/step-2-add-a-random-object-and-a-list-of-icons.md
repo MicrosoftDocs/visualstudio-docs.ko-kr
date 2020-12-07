@@ -1,5 +1,7 @@
 ---
 title: '2단계: 임의의 개체 및 아이콘 목록 추가'
+description: 게임에 사용할 일치하는 기호 세트를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579424"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480696"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2단계: 임의의 개체 및 아이콘 목록 추가
 
@@ -26,7 +28,7 @@ ms.locfileid: "77579424"
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>임의의 개체 및 아이콘 목록을 추가하려면
 
-1. **솔루션 탐색기**에서, C#을 사용 중인 경우 *Form1.cs*를 선택하고 Visual Basic을 사용 중인 경우 *Form1.vb*를 선택한 다음, 메뉴 모음에서 **보기** > **코드**를 선택합니다. 또는 **F7** 키를 선택하거나 **솔루션 탐색기**에서 **Form1**을 두 번 클릭하면 됩니다.
+1. **솔루션 탐색기** 에서, C#을 사용 중인 경우 *Form1.cs* 를 선택하고 Visual Basic을 사용 중인 경우 *Form1.vb* 를 선택한 다음, 메뉴 모음에서 **보기** > **코드** 를 선택합니다. 또는 **F7** 키를 선택하거나 **솔루션 탐색기** 에서 **Form1** 을 두 번 클릭하면 됩니다.
 
      이렇게 하면 Form1 뒤의 코드 모듈이 표시됩니다.
 
@@ -42,7 +44,7 @@ ms.locfileid: "77579424"
 
 3. List 개체를 추가하는 경우 **IntelliSense** 창이 열리는 것을 확인할 수 있습니다. 다음은 C# 예시이지만 Visual Basic에서 목록을 추가할 때에도 이와 비슷한 텍스트가 나타납니다.
 
-     ![Click 이벤트가 표시된 속성 창](../ide/media/express_listintellisense.png)<br/>***IntelliSense** 창*
+     ![Click 이벤트가 표시된 속성 창](../ide/media/express_listintellisense.png)<br/>**_IntelliSense_** 창
 
     > [!NOTE]
     > IntelliSense 창은 코드를 수동으로 입력하는 경우에만 나타납니다. 복사한 코드를 붙여 넣는 경우에는 표시되지 않습니다.
@@ -51,7 +53,7 @@ ms.locfileid: "77579424"
 
      `List` 문을 사용하여 `new` 개체를 만드는 경우 목록에 저장할 데이터의 종류를 지정해야 합니다. 이를 위해 **IntelliSense** 창의 맨 위에 있는 도구 설명에서 목록의 요소 형식을 보여 줍니다. 또한 `List<string>`(C#의 경우) 및 `List(Of String)`(Visual Basic의 경우)는 `string` 데이터 형식의 요소를 포함하는 `List` 개체임을 나타냅니다. 문자열은 **IntelliSense** 창 오른쪽에 있는 도구 설명에서 알려 주는 텍스트를 저장하기 위해 프로그램에서 사용합니다.
 
-4. Visual Basic에서는 먼저 임시 배열을 만들어야 하지만 C#에서는 하나의 문으로 목록을 만들 수 있습니다. 이는 C# 언어에 값을 받아들이는 목록을 준비하는 *컬렉션 이니셜라이저*가 포함되어 있기 때문입니다. Visual Basic에서도 컬렉션 이니셜라이저를 사용할 수 있습니다. 그러나 이전 버전의 Visual Basic과의 호환성을 위해 위의 코드를 사용하는 것이 좋습니다.
+4. Visual Basic에서는 먼저 임시 배열을 만들어야 하지만 C#에서는 하나의 문으로 목록을 만들 수 있습니다. 이는 C# 언어에 값을 받아들이는 목록을 준비하는 *컬렉션 이니셜라이저* 가 포함되어 있기 때문입니다. Visual Basic에서도 컬렉션 이니셜라이저를 사용할 수 있습니다. 그러나 이전 버전의 Visual Basic과의 호환성을 위해 위의 코드를 사용하는 것이 좋습니다.
 
      `new` 문에 컬렉션 이니셜라이저를 사용하면 새 List 개체가 만들어진 후 프로그램에서 중괄호 내에 있는 사용자 제공 데이터로 개체를 채웁니다. 이 경우에는 아이콘이라는 문자열 목록이 만들어지고 이 목록은 16개의 문자열이 포함되도록 초기화됩니다. 각 문자열은 단일 문자이며 모두 레이블에 포함될 아이콘에 해당합니다. 따라서 이 게임에는 느낌표, 대문자 N, 쉼표 등이 각각 쌍으로 포함됩니다. 이러한 문자는 Webdings 글꼴로 설정되며, 버스, 오토바이, 거미 등의 기호로 나타납니다. 목록 개체에는 TableLayoutPanel 패널의 각 셀에 하나씩 모두 16개의 문자열이 포함됩니다.
 
@@ -62,4 +64,4 @@ ms.locfileid: "77579424"
 
 - 다음 자습서 단계로 이동하려면 [**3단계: 각 레이블에 임의 아이콘 할당**](../ide/step-3-assign-a-random-icon-to-each-label.md)을 참조하세요.
 
-- 이전 자습서 단계로 돌아가려면 [1단계: 프로젝트 만들기 및 양식에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)를 참조하세요.
+- 이전 자습서 단계로 돌아가려면 [1단계: 프로젝트 만들기 및 폼에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)를 참조하세요.

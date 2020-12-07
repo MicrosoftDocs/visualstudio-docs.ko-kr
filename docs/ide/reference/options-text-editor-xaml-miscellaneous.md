@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, XAML, 기타
+description: XML 섹션의 기타 페이지를 사용하여 XAML 문서에서 요소 및 특성의 서식을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,16 +30,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544094"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040968"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 
-**기타** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 서식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **기타** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XAML** > **기타** 노드를 확장합니다.
+**기타** 속성 페이지를 사용하여 XAML 문서에서 요소와 특성의 서식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션** 을 클릭합니다. **기타** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XAML** > **기타** 노드를 확장합니다.
 
 ## <a name="auto-insert"></a>자동 삽입
 

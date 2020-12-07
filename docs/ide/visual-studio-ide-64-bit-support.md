@@ -1,5 +1,7 @@
 ---
 title: 64비트 지원
+description: 64비트 플랫폼을 비롯하여 다양한 플랫폼을 대상으로 하는 애플리케이션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11cd4979172f80b44ad5fb5ed335b00737e7579d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594138"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479721"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64비트 지원
 
@@ -28,7 +30,7 @@ Visual Studio를 사용하면 64비트 플랫폼을 비롯하여 다양한 플�
 
 ## <a name="configure-projects-as-64-bit-applications"></a>프로젝트를 64비트 애플리케이션으로 구성
 
-[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)에는 64비트 애플리케이션으로 빌드할 프로그램 구성에 대한 설명이 있습니다.
+[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)에는 64비트 애플리케이션으로 빌드할 프로젝트 구성에 대한 설명이 있습니다.
 
 ## <a name="debug-a-64-bit-application"></a>64비트 애플리케이션 디버그
 

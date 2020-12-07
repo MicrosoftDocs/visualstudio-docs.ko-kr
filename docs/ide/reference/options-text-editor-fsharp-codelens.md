@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, F#, CodeLens
+description: F# 섹션의 CodeLens 페이지를 사용하여 F#에 대한 텍스트 편집기 CodeLens 설정을 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568479"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039655"
 ---
 # <a name="options-text-editor-f-codelens"></a>옵션, 텍스트 편집기, F#, CodeLens
 
-**CodeLens** 옵션 페이지를 사용하여 F#의 텍스트 편집기 CodeLens 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **F#**  > **CodeLens**를 선택합니다.
+**CodeLens** 옵션 페이지를 사용하여 F#의 텍스트 편집기 CodeLens 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **F#**  > **CodeLens** 를 선택합니다.
 
 ## <a name="codelens"></a>CodeLens
 
@@ -38,7 +40,7 @@ ms.locfileid: "75568479"
 
    주석에 사용되는 기본 접두사를 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [CodeLens에서 코드 변경 내용 및 기타 기록 찾기](../../ide/find-code-changes-and-other-history-with-codelens.md)

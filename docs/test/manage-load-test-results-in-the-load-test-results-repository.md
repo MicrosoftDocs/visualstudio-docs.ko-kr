@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 결과 관리
+description: 부하 테스트 중에 수집된 데이터를 관리하는 방법을 알아봅니다. 이 데이터는 부하 테스트 결과 리포지토리 SQL 데이터베이스에 저장됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9945551469541cdcffe520844da600d758dc43b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea27d94f4fbe4c0ebe81cf0153ce2e98a0789dd6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286767"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328745"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
-부하 테스트를 실행할 때 부하 테스트 실행 도중 수집된 정보는 *부하 테스트 결과 리포지토리*라는 SQL 데이터베이스에 저장될 수 있습니다. 부하 테스트 결과 리포지토리에는 성능 카운터 데이터와 기록된 오류에 대한 정보가 들어 있습니다. 결과 리포지토리 데이터베이스는 컨트롤러용 설치 프로그램에서 만들어지거나 부하 테스트를 처음으로 로컬에서 실행할 때 자동으로 만들어집니다. 부하 테스트를 로컬로 실행할 때 부하 테스트 스키마가 없으면 데이터베이스가 자동으로 만들어집니다.
+부하 테스트를 실행할 때 부하 테스트 실행 도중 수집된 정보는 *부하 테스트 결과 리포지토리* 라는 SQL 데이터베이스에 저장될 수 있습니다. 부하 테스트 결과 리포지토리에는 성능 카운터 데이터와 기록된 오류에 대한 정보가 들어 있습니다. 결과 리포지토리 데이터베이스는 컨트롤러용 설치 프로그램에서 만들어지거나 부하 테스트를 처음으로 로컬에서 실행할 때 자동으로 만들어집니다. 부하 테스트를 로컬로 실행할 때 부하 테스트 스키마가 없으면 데이터베이스가 자동으로 만들어집니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -47,16 +49,16 @@ Visual Studio Enterprise가 설치된 경우 부하 테스트 결과 저장소�
 |-|-----------------------|
 |**부하 테스트 결과 리포지토리 설정:** SQL 데이터베이스에 부하 테스트 결과 리포지토리를 설정할 수 있습니다. **참고:** 테스트 컨트롤러를 설치할 때 부하 테스트 리포지토리를 만들 수도 있습니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.||
 |**결과 리포지토리 선택 및 보기:** 특정 결과 리포지토리를 선택할 수 있습니다. 로컬 결과 저장소로 제한되지는 않습니다. 부하 테스트는 주로 에이전트 컴퓨터의 원격 집합에서 실행됩니다. 에이전트나 로컬 컴퓨터의 테스트 결과는 부하 테스트 결과 저장소가 만들어진 모든 SQL 서버에 저장할 수 있습니다. 에이전트나 로컬 컴퓨터 모두 **테스트 컨트롤러 관리** 창을 사용하여 부하 테스트 결과를 저장할 위치를 식별해야 합니다.|-   [방법: 부하 테스트 결과 리포지토리 선택](../test/how-to-select-a-load-test-results-repository.md)<br />-   [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)|
-|**리포지토리에서 부하 테스트 결과 삭제:** **부하 테스트 결과 열기 및 관리** 대화 상자를 사용하여 **부하 테스트 편집기**에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**리포지토리에서 결과 가져오기 및 내보내기:** **부하 테스트 편집기**에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**리포지토리에서 부하 테스트 결과 삭제:****부하 테스트 결과 열기 및 관리** 대화 상자를 사용하여 **부하 테스트 편집기** 에서 부하 테스트 결과를 제거할 수 있습니다.|-   [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**리포지토리에서 결과 가져오기 및 내보내기:****부하 테스트 편집기** 에서 부하 테스트 결과를 가져오고 내보낼 수 있습니다.|-   [방법: 리포지토리로 부하 테스트 결과 가져오기](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [방법: 리포지토리에서 부하 테스트 결과 내보내기](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>관련 작업
 
 [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-**부하 테스트 분석기**를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
+**부하 테스트 분석기** 를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)

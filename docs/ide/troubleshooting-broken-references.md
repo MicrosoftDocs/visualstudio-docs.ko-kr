@@ -1,5 +1,7 @@
 ---
 title: 끊어진 참조 문제 해결
+description: 애플리케이션 이외의 이유로 인해 참조된 구성 요소를 찾을 수 없는 경우 발생할 수 있는 끊어진 참조 문제를 해결하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565918"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479175"
 ---
 # <a name="troubleshoot-broken-references"></a>끊어진 참조 문제 해결
 
@@ -43,7 +45,7 @@ ms.locfileid: "75565918"
 
 프로젝트가 여러 컴퓨터에서 공유될 경우 구성 요소가 각 컴퓨터에서 서로 다른 디렉터리에 있으면 일부 참조를 찾지 못할 수 있습니다. 참조는 구성 요소 파일 이름으로 저장됩니다(예: *MyComponent*). 참조가 프로젝트에 추가되면 구성 요소 파일의 폴더 위치(예: *C:\MyComponents*)가 **ReferencePath** 프로젝트 속성에 추가됩니다.
 
-프로젝트가 열리면 참조 경로에서 디렉터리를 확인하여 이러한 참조된 구성 요소 파일을 찾으려고 합니다. 구성 요소가 다른 디렉터리(예: *D:\MyComponents*)에 저장된 컴퓨터에서 프로젝트가 열리면 참조를 찾을 수 없고 오류가 **작업 목록**에 표시됩니다.
+프로젝트가 열리면 참조 경로에서 디렉터리를 확인하여 이러한 참조된 구성 요소 파일을 찾으려고 합니다. 구성 요소가 다른 디렉터리(예: *D:\MyComponents*)에 저장된 컴퓨터에서 프로젝트가 열리면 참조를 찾을 수 없고 오류가 **작업 목록** 에 표시됩니다.
 
 이 문제를 해결하려면 끊어진 참조를 삭제하고 나서 **참조 추가** 대화 상자를 사용하여 바꿀 수 있습니다. 또 다른 해결 방법은 프로젝트의 속성 페이지에서 **참조 경로** 항목을 사용하고 목록에서 폴더를 수정하여 올바른 위치를 가리키는 것입니다. **참조 경로** 속성은 각 컴퓨터에서 사용자별로 유지됩니다. 따라서 참조 경로를 수정해도 프로젝트의 다른 사용자에게 영향을 미치지 않습니다.
 
@@ -52,9 +54,9 @@ ms.locfileid: "75565918"
 
 ### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>참조 경로를 수정하여 끊어진 프로젝트 문제를 해결하려면
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 을 클릭합니다.
 
-   **프로젝트 디자이너**가 표시됩니다.
+   **프로젝트 디자이너** 가 표시됩니다.
 
 1. Visual Basic을 사용할 경우 **참조** 페이지를 선택하고 **참조 경로** 단추를 클릭합니다. **참조 경로** 대화 상자에서 참조할 항목이 포함된 폴더의 경로를 **폴더** 필드에 입력하고 **폴더 추가** 단추를 클릭합니다.
 
@@ -90,4 +92,4 @@ ms.locfileid: "75565918"
 
 ## <a name="see-also"></a>참고 항목
 
-- [프로젝트 디자이너, 참조 페이지(Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
+- [참조 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, F#, 고급
+description: F# 섹션의 고급 페이지를 사용하여 F#에 대한 블록 구조 가이드 및 개요 설정을 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770946"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039642"
 ---
 # <a name="options-text-editor-f-advanced"></a>옵션, 텍스트 편집기, F#, 고급
 
-**고급** 옵션 페이지를 사용하여 F#의 일부 텍스트 편집기 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **F#**  > **고급**을 선택합니다.
+**고급** 옵션 페이지를 사용하여 F#의 일부 텍스트 편집기 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **F#**  > **고급** 을 선택합니다.
 
 ## <a name="block-structure-guides"></a>블록 구조 가이드
 
@@ -28,7 +30,7 @@ ms.locfileid: "85770946"
 
 축소 가능한 코드 블록을 만드는 코드 파일을 자동으로 요약하려면 이 확인란을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [옵션, 텍스트 편집기, 모든 언어, 탭](../../ide/reference/options-text-editor-all-languages-tabs.md)

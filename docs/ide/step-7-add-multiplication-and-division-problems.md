@@ -1,5 +1,7 @@
 ---
 title: '7단계: 곱하기 및 나누기 문제 추가'
+description: 곱하기 및 나누기 문제를 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579783"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479500"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7단계: 곱하기 및 나누기 문제 추가
 
@@ -58,7 +60,7 @@ ms.locfileid: "77579783"
      다음 그림과 같이 퀴즈를 푸는 사람은 네 가지 문제에 대한 답을 입력하여 퀴즈를 완료해야 합니다.
 
      ![네 개의 문제가 있는 수학 퀴즈](../ide/media/express_finishedquiz.png)<br/>
-*네 개의 문제가 있는* ***수학 퀴즈***
+*네 개의 문제가 있는 **수학 퀴즈**
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

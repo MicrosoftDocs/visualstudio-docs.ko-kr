@@ -1,5 +1,7 @@
 ---
 title: Visual Basic IntelliSense
+description: Visual Basic 소스 코드 편집기에서 제공하는 IntelliSense 기능을 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594190"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478824"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 코드 파일에 대한 IntelliSense
 
@@ -37,9 +39,9 @@ Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 
 
     문이 열거형의 멤버를 참조하는 경우 IntelliSense는 `Enum`의 멤버 목록을 표시합니다. 문이 `Boolean`을 참조하는 경우 IntelliSense는 true-false 드롭다운 메뉴를 표시합니다.
 
-**Visual Basic** 폴더의 **일반** 속성 페이지에서 **멤버 목록 자동 표시**의 선택을 해제하여 완료를 기본적으로 끌 수 있습니다.
+**Visual Basic** 폴더의 **일반** 속성 페이지에서 **멤버 목록 자동 표시** 의 선택을 해제하여 완료를 기본적으로 끌 수 있습니다.
 
-멤버 목록, 단어 자동 완성 또는 **Alt**+**오른쪽 화살표**를 호출하여 완료를 수동으로 실행할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
+멤버 목록, 단어 자동 완성 또는 **Alt**+**오른쪽 화살표** 를 호출하여 완료를 수동으로 실행할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
 
 ## <a name="intellisense-in-zone"></a>영역 내 IntelliSense
 

@@ -1,5 +1,7 @@
 ---
 title: 테스트 에이전트 및 테스트 컨트롤러 설치
+description: Visual Studio 에이전트를 사용하여 Azure Test Plans 또는 Team Foundation Server로 테스트를 오케스트레이션하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928608"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328888"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -34,7 +36,7 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 ## <a name="install-the-test-controller-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 설치
 
-[visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents)에서Visual Studio용 에이전트를 다운로드할 수 있습니다. *Agents for Visual Studio 2019*를 찾고, ‘에이전트’ 또는 ‘컨트롤러’를 선택한 다음, ‘다운로드’를 선택합니다.    다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
+[visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents)에서Visual Studio용 에이전트를 다운로드할 수 있습니다. *Agents for Visual Studio 2019* 를 찾고, ‘에이전트’ 또는 ‘컨트롤러’를 선택한 다음, ‘다운로드’를 선택합니다.    다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
 
 [이전 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지에서 Visual Studio 2017, Visual Studio 2015 및 Visual Studio 2013용 에이전트를 다운로드할 수 있습니다.
 

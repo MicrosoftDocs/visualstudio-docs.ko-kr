@@ -1,5 +1,7 @@
 ---
 title: -Out(devenv.exe)
+description: Out devenv 명령줄 스위치를 사용하여 솔루션을 실행, 실행 및 종료, 업그레이드, 빌드, 다시 빌드, 정리 또는 배포할 때 오류를 저장하고 표시할 파일을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568013"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040058"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /Out FileName
 
 - *FileName*
 
-  필수 사항입니다. 실행 파일을 빌드할 때 출력을 수신할 파일의 경로 및 이름입니다.
+  필수 요소. 실행 파일을 빌드할 때 출력을 수신할 파일의 경로 및 이름입니다.
 
 ## <a name="remarks"></a>설명
 

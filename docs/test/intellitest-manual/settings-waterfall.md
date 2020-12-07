@@ -1,5 +1,7 @@
 ---
 title: 폭포수형 설정 | Microsoft IntelliTest 개발자 테스트 도구
+description: 어셈블리, 픽스쳐 및 탐색 수준에서 설정을 구성하는 폭포수형 설정에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591582"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329512"
 ---
 # <a name="settings-waterfall"></a>폭포수형 설정
 

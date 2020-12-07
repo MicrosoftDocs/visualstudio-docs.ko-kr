@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352272"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190211"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -40,11 +40,11 @@ ms.locfileid: "91352272"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ****** Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ***Enterprise 및 Professional 고객용 지원 옵션** _ 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
-* 업데이트 모델을 결정합니다.
+_ 업데이트 모델을 결정합니다.
 
   업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
 
@@ -66,11 +66,11 @@ ms.locfileid: "91352272"
 
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ****** 이전 버전의 Visual Studio 지원 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ***이전 버전의 Visual Studio 지원** _ 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
   누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
-* 업데이트 모델을 결정합니다.
+_ 업데이트 모델을 결정합니다.
 
   업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
 

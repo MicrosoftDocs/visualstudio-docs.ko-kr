@@ -1,5 +1,7 @@
 ---
 title: var을 명시적 형식으로 바꾸도록 코드 리팩터링
+description: 빠른 작업을 사용하여 지역 변수 식의 var을 명시적 형식으로 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a9270ca6cf7407d196eca211b6a76c6dc6a8be78
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595776"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305537"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>var을 명시적 형식으로 바꾸도록 리팩터링
 
@@ -42,7 +44,7 @@ ms.locfileid: "75595776"
 
    ![명시적 형식 빠른 작업 메뉴 사용](media/use-explicit-type.png)
 
-1. **명시적 형식 사용**을 선택합니다. 또는 **변경 사항 미리 보기**를 선택하여 [변경 사항 미리 보기](../../ide/preview-changes.md) 대화 상자를 연 다음, **적용**을 선택합니다.
+1. **명시적 형식 사용** 을 선택합니다. 또는 **변경 사항 미리 보기** 를 선택하여 [변경 사항 미리 보기](../../ide/preview-changes.md) 대화 상자를 연 다음, **적용** 을 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,5 +1,7 @@
 ---
 title: 제네릭 메서드의 단위 테스트
+description: 제네릭 메서드의 단위 테스트 만들기에 대한 정보와 예제를 사용하여 제네릭 메서드의 단위 테스트를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 40255c4ab86d407da4e851bd84cb65e5b4a0f8c9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 88ef5d64d2513bb97bdd5589e04669629dfdf6ae
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035679"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330045"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 
@@ -25,7 +27,7 @@ ms.locfileid: "90035679"
 
 Visual Studio는 `MyList<T>`와 같은 제네릭 클래스의 단위 테스트를 생성하는 경우 제네릭 도우미와 테스트 메서드의 두 메서드를 생성합니다. `MyList<T>`에 하나 이상의 형식 제약 조건이 있는 경우 형식 인수가 형식 제약 조건을 모두 충족해야 합니다. 테스트 대상 제네릭 코드가 허용되는 모든 입력에 대해 예상대로 작동하는지 확인하기 위해 테스트 메서드는 테스트하려는 모든 제약 조건을 사용하여 제네릭 도우미 메서드를 호출합니다.
 
-## <a name="examples"></a>예
+## <a name="examples"></a>예제
 다음 예제에서는 제네릭의 단위 테스트를 보여 줍니다.
 
 - [생성된 테스트 코드 편집](#EditingGeneratedTestCode) 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.
@@ -109,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]
 public void SizeOfLinkedListTest()
 {
-    SizeOfLinkedListTestHelper<int>();  // step 6
+    SizeOfLinkedListTestHelper<int>();  // step 6
     SizeOfLinkedListTestHelper<char>(); // step 7
 }
 ```
@@ -194,6 +196,6 @@ namespace TestProject1
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)

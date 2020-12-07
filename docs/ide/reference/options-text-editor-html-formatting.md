@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, HTML(Web Forms), 서식 지정
+description: HTML 섹션의 서식 페이지를 사용하여 코드 편집기에서 코드의 서식을 지정하는 HTML 프로젝트 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568323"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040981"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>옵션, 텍스트 편집기, HTML(Web Forms), 서식 지정
 
-**서식** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 HTML 프로젝트 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **서식**을 확장합니다.
+**서식** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 HTML 프로젝트 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **서식** 을 확장합니다.
 
 ## <a name="capitalization"></a>대문자 표시
 

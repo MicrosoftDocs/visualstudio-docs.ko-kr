@@ -16,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871498"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479955"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 

@@ -1,5 +1,7 @@
 ---
 title: 간략한 조사식 명령
+description: 간략한 조사식 명령에 대해 알아보고, 선택한 텍스트 또는 지정한 텍스트가 간략한 조사식 창의 식 필드에 표시되는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6185418364e8b22e1f473308b2db9899c8778d13
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565632"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304163"
 ---
 # <a name="quick-watch-command"></a>간략한 조사식 명령
 [간략한 조사식](../../debugger/watch-and-quickwatch-windows.md) 창의 식 필드에 선택하거나 지정한 텍스트를 표시합니다. 이 대화 상자를 사용하여 디버거에서 인식되는 변수 또는 식의 현재 값이나 레지스터의 콘텐츠를 계산할 수 있습니다. 또한 비const 변수 값 또는 레지스터 콘텐츠를 변경할 수 있습니다.
@@ -32,7 +34,7 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>인수
 
 `text`\
-(선택 사항) **간략한 조사식** 대화 상자에 추가할 텍스트입니다.
+선택 사항입니다. **간략한 조사식** 대화 상자에 추가할 텍스트입니다.
 
 ## <a name="remarks"></a>설명
 

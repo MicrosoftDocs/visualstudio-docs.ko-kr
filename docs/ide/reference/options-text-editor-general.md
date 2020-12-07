@@ -1,5 +1,7 @@
 ---
 title: 일반, 텍스트 편집기, 옵션
+description: 일반 페이지를 사용하여 Visual Studio 코드 및 텍스트 편집기에 대한 전역 설정을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
@@ -33,16 +35,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 1665db5fff414227c18fd8de4224302cb6d43c2a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472826"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040604"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>옵션 대화 상자: 텍스트 편집기 \> 일반
 
-이 대화 상자에서는 Visual Studio 코드 및 텍스트 편집기에 대한 전역 설정을 변경할 수 있습니다. 이 대화 상자를 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 폴더를 확장하고, **일반**을 선택합니다.
+이 대화 상자에서는 Visual Studio 코드 및 텍스트 편집기에 대한 전역 설정을 변경할 수 있습니다. 이 대화 상자를 표시하려면 **도구** 메뉴에서 **옵션** 을 선택하고, **텍스트 편집기** 폴더를 확장하고, **일반** 을 선택합니다.
 
 ## <a name="settings"></a>설정
 
@@ -68,7 +70,7 @@ ms.locfileid: "80472826"
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>마우스 클릭을 사용하여 정의로 이동 수행
 
-선택할 경우 **Ctrl** 키를 누르고 마우스를 클릭한 채 요소를 가리킬 수 있습니다. 이렇게 하면 선택한 요소의 정의로 이동합니다. **한정자 키 사용** 드롭다운에서 **Alt** 또는 **Ctrl** + **Alt**를 선택할 수도 있습니다.
+선택할 경우 **Ctrl** 키를 누르고 마우스를 클릭한 채 요소를 가리킬 수 있습니다. 이렇게 하면 선택한 요소의 정의로 이동합니다. **한정자 키 사용** 드롭다운에서 **Alt** 또는 **Ctrl** + **Alt** 를 선택할 수도 있습니다.
 
 코드 편집기에서 현재 위치를 벗어나지 않고 창에 요소의 정의를 표시하려면 **Peek 뷰에서 정의 열기** 확인란을 선택합니다.
 

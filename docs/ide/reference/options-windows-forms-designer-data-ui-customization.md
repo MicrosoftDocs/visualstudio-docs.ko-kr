@@ -1,5 +1,7 @@
 ---
 title: 옵션, Windows Forms 디자이너, 데이터 UI 사용자 지정
+description: 데이터 UI 사용자 지정 페이지를 사용하여 데이터 소스 창에서 항목에 대해 사용할 수 있는 컨트롤 목록에 표시되는 컨트롤을 정의하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b43776d2218f6f2a6a120e139dcae9d540f6f10
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114682"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040097"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>옵션 대화 상자: Windows Forms 디자이너 > 데이터 UI 사용자 지정
 
-이 대화 상자는 데이터 소스 창에서 항목에 대해 사용할 수 있는 컨트롤 목록에 표시되는 컨트롤을 정의합니다. 이 대화 상자를 열려면 **도구** > **옵션**을 선택한 다음, **Windows Forms 디자이너** > **데이터 UI 사용자 지정**을 선택합니다.
+이 대화 상자는 데이터 소스 창에서 항목에 대해 사용할 수 있는 컨트롤 목록에 표시되는 컨트롤을 정의합니다. 이 대화 상자를 열려면 **도구** > **옵션** 을 선택한 다음, **Windows Forms 디자이너** > **데이터 UI 사용자 지정** 을 선택합니다.
 
 데이터 소스 창의 항목에서 컨트롤을 선택하여 Windows Forms 앱의 폼으로 끌어올 수 있습니다. 사용 가능한 컨트롤은 항목의 데이터 형식에 따라 결정됩니다. 각 데이터 형식에는 기본 컨트롤을 포함하여 이 대화 상자에 정의된 유효한 관련 컨트롤 목록이 있습니다. 컨트롤을 선택하지 않고 데이터 소스 창에서 폼으로 항목을 끌어오면 선택한 항목의 데이터 형식에 대한 기본 컨트롤이 폼에 추가됩니다.
 

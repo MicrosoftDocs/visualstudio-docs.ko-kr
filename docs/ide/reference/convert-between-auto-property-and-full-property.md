@@ -1,5 +1,7 @@
 ---
 title: Auto 속성과 full 속성 간 변환
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 자동 구현 속성과 전체 속성 간에 변환하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.openlocfilehash: b53f337b538ff1c0aef84272eea7d9e032eb2c1d
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80395738"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040838"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>Auto 속성과 full 속성 간 변환
 
@@ -34,11 +36,11 @@ ms.locfileid: "80395738"
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 3. 다음 두 옵션 중에서 선택합니다. 
 
-    **전체 속성으로 변환**을 선택합니다.
+    **전체 속성으로 변환** 을 선택합니다.
 
    ![자동 속성을 전체 속성으로 변환](media/convert-auto-property-to-full-property.png) 
 
-    **auto 속성 사용**을 선택합니다. 
+    **auto 속성 사용** 을 선택합니다. 
 
     ![전체 속성을 auto 속성으로 변환](media/convert-full-property-to-auto-property.png) 
 

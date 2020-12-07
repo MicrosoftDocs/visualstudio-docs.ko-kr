@@ -1,5 +1,6 @@
 ---
 title: 일반 문자열 리터럴과 축자 문자열 리터럴 간 변환
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 일반 문자열과 축자 문자열 리터럴 간에 변환하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d50b979902e6eb5a606305b262f5009caef87467
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045908"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040461"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>일반 문자열 리터럴과 축자 문자열 리터럴 간 변환 리팩터링
 

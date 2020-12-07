@@ -1,5 +1,7 @@
 ---
 title: '8단계: 퀴즈 사용자 지정'
+description: timeLabel 컨트롤을 다른 색으로 전환하고 퀴즈를 푸는 사람에게 힌트를 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 21403aeb51f342f607575d99a79ce2bdb7aaa54a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579373"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479318"
 ---
 # <a name="step-8-customize-the-quiz"></a>8단계: 퀴즈 사용자 지정
 

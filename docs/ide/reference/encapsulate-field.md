@@ -1,5 +1,7 @@
 ---
 title: 필드를 속성으로 리팩터링
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 필드를 속성으로 변환하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569714"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305468"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>필드 캡슐화 리팩터링
 
@@ -48,13 +50,13 @@ ms.locfileid: "75569714"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - **Ctrl+R**을 누른 다음 **Ctrl+E**를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - **Ctrl+R** 을 누른 다음 **Ctrl+E** 를 누릅니다.  바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
       - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
    - **마우스**
-      - **편집 > 리팩터링 > 필드 캡슐화**를 선택합니다.
+      - **편집 > 리팩터링 > 필드 캡슐화** 를 선택합니다.
       - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **필드 캡슐화** 항목을 선택합니다.
 
-   선택 | Description
+   선택 영역 | 설명
    --------- | -----------
    **필드 캡슐화(및 속성 사용)** | 속성을 사용하여 필드를 캡슐화하고 생성된 속성을 사용하도록 필드의 모든 사용을 업데이트합니다.
    **필드 캡슐화(그러나 필드 계속 사용)** | 속성을 사용하여 필드를 캡슐화하지만 필드의 모든 사용을 그대로 유지합니다.

@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing FAQ
+description: 지원되는 프레임워크, 구성 및 사용자 지정을 포함하는 Live Unit Testing에 대해 자주 묻는 질문을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591543"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329291"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답
 
@@ -31,7 +33,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2019 또는 Visual Studio 2017로 업그레이드하세요.
 
-경우에 따라 Live Unit Testing이 작동하기 위해 솔루션의 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 솔루션의 명시적 빌드를 수행하거나(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**를 선택) 또는 Living Unit Testing을 활성화하기 전에 솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원**을 선택해서 패키지를 복원합니다.
+경우에 따라 Live Unit Testing이 작동하기 위해 솔루션의 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 솔루션의 명시적 빌드를 수행하거나(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드** 를 선택) 또는 Living Unit Testing을 활성화하기 전에 솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원** 을 선택해서 패키지를 복원합니다.
 
 ## <a name="net-core-support"></a>.NET Core 지원
 
@@ -77,7 +79,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 "일반적인" 계측되지 않은 빌드에 필요하지 않은 계측(Live Unit Testing)을 위해 빌드하는 사용자 지정 단계가 솔루션에 필요한 경우 프로젝트 또는 *.targets* 파일에 코드를 추가하여 `BuildingForLiveUnitTesting` 속성에 대해 확인하고 사용자 지정 사전/사후 빌드 단계를 수행할 수 있습니다. 또한 특정 빌드 단계(예: 패키지 게시 또는 생성)을 제거하거나 빌드 단계(예: 필수 구성 요소 복사)를 이 프로젝트 속성을 기반으로 하는 Live Unit Testing 빌드에 추가할 수 있습니다. 이 속성을 기반으로 빌드를 사용자 지정하면 일반적인 빌드를 변경하지 않고 Live Unit Testing 빌드에만 영향을 줍니다.
 
-예를 들어 일반적인 빌드 중에 NuGet 패키지를 생성하는 대상이 있을 수 있습니다. 아마도 편집을 모두 완료한 후에 NuGet 패키지를 생성하려고 하지는 않을 것입니다. 따라서 다음과 같은 작업을 실행하여 Live Unit Testing 빌드에서 해당 대상을 해제할 수 있습니다.  
+예를 들어 일반적인 빌드 중에 NuGet 패키지를 생성하는 대상이 있을 수 있습니다. 아마도 편집을 모두 완료한 후에 NuGet 패키지를 생성하려고 하지는 않을 것입니다. 따라서 다음과 같은 작업을 실행하여 Live Unit Testing 빌드에서 해당 대상을 해제할 수 있습니다.  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -171,7 +173,7 @@ Live Unit Testing 빌드 동안 `<LiveUnitTestingBuildRootPath>` 속성은 `.vs\
 
 **Live Unit Testing 빌드 아티팩트를 원하는 *.vs* 폴더의 기본 위치 대신 특정 위치로 이동하려고 합니다. 어떻게 변경할 수 있나요?**
 
-`LiveUnitTesting_BuildRoot` 사용자 수준 환경 변수를 Live Unit Testing 빌드 아티팩트를 배치하려는 경로로 설정합니다. 
+`LiveUnitTesting_BuildRoot` 사용자 수준 환경 변수를 Live Unit Testing 빌드 아티팩트를 배치하려는 경로로 설정합니다. 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>테스트 탐색기 및 Live Unit Testing
 
@@ -179,13 +181,13 @@ Live Unit Testing 빌드 동안 `<LiveUnitTestingBuildRootPath>` 속성은 `.vs\
 
 다음과 같은 몇 가지 차이점이 있습니다.
 
-- **테스트 탐색기** 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다. 계측된 이진 파일을 디버그하려는 경우 테스트 메서드에서 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)  메서드 호출을 추가하면 해당 메서드가 실행될 때(Live Unit Testing에서 실행하는 경우 포함)마다 디버거가 시작되고 계측된 이진 파일을 연결하고 디버그할 수 있습니다. 그러나 계측이 대부분의 사용자 시나리오에 대해 투명하고 계측된 이진 파일을 디버그할 필요가 없는 것이 좋습니다.
+- **테스트 탐색기** 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다. 계측된 이진 파일을 디버그하려는 경우 테스트 메서드에서 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 메서드 호출을 추가하면 해당 메서드가 실행될 때(Live Unit Testing에서 실행하는 경우 포함)마다 디버거가 시작되고 계측된 이진 파일을 연결하고 디버그할 수 있습니다. 그러나 계측이 대부분의 사용자 시나리오에 대해 투명하고 계측된 이진 파일을 디버그할 필요가 없는 것이 좋습니다.
 
 - Live Unit Testing은 테스트를 실행하기 위해 새 애플리케이션 도메인을 만들지 않지만 **테스트 탐색기** 창에서 실행되는 테스트는 새 애플리케이션 도메인을 만듭니다.
 
-- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트 탐색기**에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
+- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트 탐색기** 에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
 
-- **테스트 탐색기**는 기본적으로 STA(단일 스레드 아파트)에서 실행되는 반면 Live Unit Testing은 MTA(다중 스레드 아파트)에서 테스트를 실행합니다. Live Unit Testing의 STA에서 MSTest 테스트를 실행하려면 `MSTest.STAExtensions 1.0.3-beta`에서 찾을 수 있는 `<STATestMethod>` 또는 `<STATestClass>` 특성을 사용하여 NuGet 패키지 테스트 메서드 또는 포함한 클래스를 데코레이트합니다. NUnit의 경우 테스트 메서드를 `<RequiresThread(ApartmentState.STA)>` 특성을 사용하여 데코레이트하고 xUnit의 경우 `<STAFact>` 특성을 사용하여 데코레이트합니다.
+- **테스트 탐색기** 는 기본적으로 STA(단일 스레드 아파트)에서 실행되는 반면 Live Unit Testing은 MTA(다중 스레드 아파트)에서 테스트를 실행합니다. Live Unit Testing의 STA에서 MSTest 테스트를 실행하려면 `MSTest.STAExtensions 1.0.3-beta`에서 찾을 수 있는 `<STATestMethod>` 또는 `<STATestClass>` 특성을 사용하여 NuGet 패키지 테스트 메서드 또는 포함한 클래스를 데코레이트합니다. NUnit의 경우 테스트 메서드를 `<RequiresThread(ApartmentState.STA)>` 특성을 사용하여 데코레이트하고 xUnit의 경우 `<STAFact>` 특성을 사용하여 데코레이트합니다.
 
 ## <a name="exclude-tests"></a>테스트 제외
 
@@ -248,7 +250,7 @@ Live Unit Testing은 원본 파일이 변경되었음을 감지할 때마다 빌
 
 **Live Unit Testing이 출력 창의 메시지를 기반으로 한 테스트를 실행하는 것처럼 보이는데 편집기에서 아이콘을 확인할 수 없는 이유는 무엇인가요?**
 
-Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되지 않는 경우 편집기에서 아이콘이 표시되지 않습니다. 예를 들어 Live Unit Testing은 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`로 설정된 프로젝트와 호환되지 않습니다. 이 경우에 Live Unit Testing이 작동하기 위해 이 설정을 제거하거나 `true`로 변경하도록 빌드 프로세스를 업데이트해야 합니다. 
+Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되지 않는 경우 편집기에서 아이콘이 표시되지 않습니다. 예를 들어 Live Unit Testing은 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`로 설정된 프로젝트와 호환되지 않습니다. 이 경우에 Live Unit Testing이 작동하기 위해 이 설정을 제거하거나 `true`로 변경하도록 빌드 프로세스를 업데이트해야 합니다. 
 
 ## <a name="capture-logs"></a>캡처 로그
 
@@ -256,7 +258,7 @@ Live Unit Testing이 작동하는 어셈블리가 어떤 이유로든 계측되�
 
 자세한 로그를 수집하려면 몇 가지 작업을 수행할 수 있습니다.
 
-- **도구** > **옵션** > **Live Unit Testing**으로 이동하여 로깅 옵션을 **자세한 정보**로 변경합니다. 자세한 정보 로깅을 사용하면 **출력** 창에 자세한 로그가 표시됩니다.
+- **도구** > **옵션** > **Live Unit Testing** 으로 이동하여 로깅 옵션을 **자세한 정보** 로 변경합니다. 자세한 정보 로깅을 사용하면 **출력** 창에 자세한 로그가 표시됩니다.
 
 - `LiveUnitTesting_BuildLog` 사용자 환경 변수를 MSBuild 로그를 캡처하는 데 사용하려는 파일의 이름으로 설정합니다. Live Unit Testing 빌드의 자세한 MSBuild 로그 메시지를 해당 파일에서 검색할 수 있습니다.
 

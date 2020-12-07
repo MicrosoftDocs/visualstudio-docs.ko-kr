@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 API
+description: 부하 테스트를 제어하거나 향상할 수 있는 테스트 플러그 인을 지원하는 부하 테스트 API의 사용 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287105"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328680"
 ---
 # <a name="how-to-use-the-load-test-api"></a>방법: 부하 테스트 API 사용
 
@@ -46,7 +48,7 @@ Visual Studio에서는 부하 테스트를 제어하거나 향상시킬 수 있�
 
 8. 부하 테스트 편집기를 사용하여 새 부하 테스트 플러그 인을 추가합니다.
 
-    1. 부하 테스트의 루트 노드를 마우스 오른쪽 단추로 클릭한 다음, **부하 테스트 플러그 인 추가**를 선택합니다.
+    1. 부하 테스트의 루트 노드를 마우스 오른쪽 단추로 클릭한 다음, **부하 테스트 플러그 인 추가** 를 선택합니다.
 
     2. **부하 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
 

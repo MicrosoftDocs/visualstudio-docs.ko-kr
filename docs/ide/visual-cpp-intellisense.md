@@ -1,5 +1,7 @@
 ---
 title: C++ IntelliSense
+description: C++ 프로젝트를 코딩하는 동안 사용할 수 있는 몇 가지 IntelliSense 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594216"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478889"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 기능
 
@@ -38,7 +40,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 ![Visual C++ 단어 자동 완성 창](../ide/media/vs2015_cpp_complete_word.png)
 
-멤버 목록을 처음 호출하는 경우 현재 컨텍스트에서 액세스할 수 있는 멤버만 표시됩니다. 그 후에 **Ctrl**+**J**를 사용하면 접근성과 관계없이 모든 멤버가 표시됩니다. 세 번째로 호출하면 보다 광범위한 프로그램 요소 목록이 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **자동 목록 멤버** 아래에 있는 **옵션** 대화 상자에서 멤버 목록을 끌 수 있습니다.
+멤버 목록을 처음 호출하는 경우 현재 컨텍스트에서 액세스할 수 있는 멤버만 표시됩니다. 그 후에 **Ctrl**+**J** 를 사용하면 접근성과 관계없이 모든 멤버가 표시됩니다. 세 번째로 호출하면 보다 광범위한 프로그램 요소 목록이 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **자동 목록 멤버** 아래에 있는 **옵션** 대화 상자에서 멤버 목록을 끌 수 있습니다.
 
 ![Visual C++ 멤버 목록](../ide/media/vs2015_cpp_list_members.png)
 
@@ -68,11 +70,11 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 공유 코드 프로젝트에서 표시선과 같은 일부 IntelliSense 기능은 Android 컨텍스트에서 작업하는 경우에도 사용할 수 있습니다. 비활성 프로젝트에서 오류가 발생하는 일부 코드를 작성하는 경우에도 IntelliSense에서 표시선을 표시하지만 현재 컨텍스트의 오류 표시선과 다른 색으로 표시됩니다.
 
-Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 애플리케이션을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary**입니다.
+Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 애플리케이션을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary** 입니다.
 
 ![iOS가 활성 프로젝트로 선택됩니다.](../ide/media/intellisensecppcrossplatform2.png)
 
-다음 사항을 참고하십시오.
+다음을 확인합니다.
 
 - iOS 프로젝트에 대해 `__ANDROID__`가 정의되어 있으므로 6줄의 `#ifdef` 분기가 비활성 영역을 나타내기 위해 회색으로 표시되어 있습니다.
 
@@ -90,7 +92,7 @@ Android로 활성 프로젝트를 변경한 경우 물결 기호가 변경됩니
 
 ## <a name="intellisense-for-stand-alone-files"></a>독립 실행형 파일의 IntelliSense
 
-프로젝트 외부의 단일 파일을 여는 경우에도 IntelliSense가 작동합니다. **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 특정 IntelliSense 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 프로젝트의 일부가 아닌 단일 파일에 대해 IntelliSense를 구성하려면 **프로젝트가 아닌 파일에 대한 IntelliSense 및 검색**을 찾습니다.
+프로젝트 외부의 단일 파일을 여는 경우에도 IntelliSense가 작동합니다. **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 특정 IntelliSense 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 프로젝트의 일부가 아닌 단일 파일에 대해 IntelliSense를 구성하려면 **프로젝트가 아닌 파일에 대한 IntelliSense 및 검색** 을 찾습니다.
 
 ![Visual C++ 단일 파일 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -104,7 +106,7 @@ Android로 활성 프로젝트를 변경한 경우 물결 기호가 변경됩니
 
 ![도구 옵션 대화 상자](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
 - [IntelliSense에 대한 C++ 프로젝트 구성](visual-cpp-intellisense-configuration.md)

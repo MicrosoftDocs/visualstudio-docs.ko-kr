@@ -1,5 +1,7 @@
 ---
 title: U-SQL 편집기 서식 옵션
+description: 서식 옵션 페이지와 해당 하위 페이지를 사용하여 U-SQL로 프로그래밍할 때 코드 편집기에서 코드의 서식을 지정하는 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -13,22 +15,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5bf65c6c80bbcf24d48f5da584349cc4d6b26049
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568271"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040292"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>옵션, 텍스트 편집기, U-SQL, 서식
 
-**서식 지정** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 옵션을 설정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택합니다. **옵션** 대화 상자에서 **텍스트 편집기** > **U-SQL** > **서식**을 선택합니다.
+**서식 지정** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 옵션을 설정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션** 을 선택합니다. **옵션** 대화 상자에서 **텍스트 편집기** > **U-SQL** > **서식** 을 선택합니다.
 
 ## <a name="general-page"></a>일반 페이지
 
 ### <a name="general-settings"></a>일반 설정
 
-이 설정은 코드 편집기가 서식 옵션을 코드에 적용하는 *시기*에 영향을 미칩니다.
+이 설정은 코드 편집기가 서식 옵션을 코드에 적용하는 *시기* 에 영향을 미칩니다.
 
 - **세미콜론 입력 시 완성 문에 서식 자동 지정**
 
@@ -46,7 +48,7 @@ ms.locfileid: "75568271"
 
 각 언어에 대한 **탭** 페이지의 들여쓰기 옵션은 줄 끝에서 **Enter** 키를 누를 때 코드 편집기에서 커서를 배치하는 위치만을 결정합니다. **서식** 아래 들여쓰기 옵션은 코드 서식이 자동으로 지정되는 경우 적용됩니다(예:
 
-- **붙여넣을 때 들여쓰기 조정**이 선택된 동안 코드를 파일에 붙여넣을 경우,
+- **붙여넣을 때 들여쓰기 조정** 이 선택된 동안 코드를 파일에 붙여넣을 경우,
 - 서식 지정되는 블록이 수동으로 입력되는 경우).
 
 ## <a name="see-also"></a>참고 항목

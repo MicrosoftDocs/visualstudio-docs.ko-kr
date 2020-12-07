@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, F#, 코드 수정
+description: F# 섹션의 코드 수정 페이지를 사용하여 코드 오류를 파악하고 해결 방법을 제공하는 데 도움이 되는 설정을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73d66e4f8611a08d6dee3733c30b075d71f6712c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770930"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039603"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>옵션: 텍스트 편집기 > F# > 코드 수정
 
-코드 수정 옵션 페이지를 사용하여 코드 오류를 식별하고 해결 방법을 제공하는 데 도움이 될 수 있는 설정을 지정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **F#**  > **코드 수정**을 선택합니다.
+코드 수정 옵션 페이지를 사용하여 코드 오류를 식별하고 해결 방법을 제공하는 데 도움이 될 수 있는 설정을 지정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션** 을 선택한 다음, **텍스트 편집기** > **F#**  > **코드 수정** 을 선택합니다.
 
 ## <a name="code-fixes"></a>코드 수정
 

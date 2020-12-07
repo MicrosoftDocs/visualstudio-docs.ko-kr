@@ -1,5 +1,7 @@
 ---
 title: 형식과 일치하도록 파일 이름 바꾸기
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 파일 이름과 일치하도록 형식의 이름을 바꾸거나, 파일 이름에 포함된 형식과 일치하도록 파일 이름을 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594398"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479825"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>형식을 파일 이름에 동기화 또는 파일 이름을 형식 리팩터링에 동기화
 
@@ -49,19 +51,19 @@ ms.locfileid: "75594398"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 트리거에 **빠른 작업 및 리팩터링** 메뉴를 선택 **로 파일 이름 바꾸기 *TypeName*.cs** 미리 보기 창 팝업에서 위치 *TypeName* 은 선택한 형식의 이름입니다.
-      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **_Filename_으로 형식 이름 바꾸기**를 선택합니다. 여기서 *Filename*은 현재 파일의 이름입니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 ***TypeName*.cs로 파일 이름 바꾸기** 를 선택합니다. 여기서 *TypeName* 은 선택한 형식의 이름입니다.
+      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **_Filename_ 으로 형식 이름 바꾸기** 를 선택합니다. 여기서 *Filename* 은 현재 파일의 이름입니다.
    - **마우스**
-      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 ***TypeName*.cs로 파일 이름 바꾸기**를 선택합니다. 여기서 *TypeName*은 선택한 형식의 이름입니다.
-      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **_Filename_으로 형식 이름 바꾸기**를 선택합니다. 여기서 *Filename*은 현재 파일의 이름입니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택 **로 파일 이름 바꾸기 *TypeName*.cs** 미리 보기 창 팝업에서 위치 *TypeName* 은 선택한 형식의 이름입니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **_Filename_ 으로 형식 이름 바꾸기** 를 선택합니다. 여기서 *Filename* 은 현재 파일의 이름입니다.
 
    형식 또는 파일의 이름이 바뀝니다.
 
-   - C#: 아래 예제에서는 **MyClass.cs** 파일의 이름이 형식 이름과 일치하도록 **MyNewClass.cs**로 바뀌었습니다.
+   - C#: 아래 예제에서는 **MyClass.cs** 파일의 이름이 형식 이름과 일치하도록 **MyNewClass.cs** 로 바뀌었습니다.
 
        ![인라인 결과 C#](media/synctype-result-cs.png)
 
-   - Visual Basic: 아래 예제에서는 **Employee.vb** 파일의 이름이 형식 이름과 일치하도록 **Person.vb**로 바뀌었습니다.
+   - Visual Basic: 아래 예제에서는 **Employee.vb** 파일의 이름이 형식 이름과 일치하도록 **Person.vb** 로 바뀌었습니다.
 
        ![인라인 결과 Visual Basic](media/synctype-result-vb.png)
 

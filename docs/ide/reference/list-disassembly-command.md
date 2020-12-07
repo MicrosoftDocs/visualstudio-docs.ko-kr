@@ -1,5 +1,7 @@
 ---
 title: 디스어셈블리 목록 표시 명령
+description: 디스어셈블리 목록 표시 명령 및 디버그 프로세스를 시작하고 오류 처리 방식을 지정하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770649"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305333"
 ---
 # <a name="list-disassembly-command"></a>디스어셈블리 목록 표시 명령
 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListDisassembly [/count:number] [/endaddress:expression]
@@ -36,27 +38,27 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
 /count: `number` [또는] /c: `number` [또는] /length: `number` [또는] /l: `number`
 
-(선택 사항) 표시할 지침의 수입니다. 기본값은 8입니다.
+선택 사항입니다. 표시할 지침의 수입니다. 기본값은 8입니다.
 
 /endaddress: `expression` [또는] /e: `expression`
 
-(선택 사항) 디스어셈블리를 중지할 주소입니다.
+선택 사항입니다. 디스어셈블리를 중지할 주소입니다.
 
 /codebytes:`yes`&#124;`no` [또는] /bytes:`yes`&#124;`no` [또는] /b:`yes`&#124;`no`
 
-(선택 사항) 코드 바이트를 표시할지를 나타냅니다. 기본값은 `no`입니다.
+선택 사항입니다. 코드 바이트를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
 
 /source:`yes`&#124;`no` [또는] /s:`yes`&#124;`no`
 
-(선택 사항) 소스 코드를 표시할지를 나타냅니다. 기본값은 `no`입니다.
+선택 사항입니다. 소스 코드를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
 
 /symbolnames:`yes`&#124;`no` [또는] /names:`yes`&#124;`no` [또는] /n:`yes`&#124;`no`
 
-(선택 사항) 기호 이름을 표시할지를 나타냅니다. 기본값은 `yes`입니다.
+선택 사항입니다. 기호 이름을 표시할지를 나타냅니다. 기본값은 `yes`여야 합니다.
 
  [/linenumbers:`yes`&#124;`no`]
 
-(선택 사항) 소스 코드와 연결된 줄 번호를 볼 수 있도록 합니다. /source 스위치는 /linenumbers 스위치를 사용하는 `yes`의 값이 있어야 합니다.
+선택 사항입니다. 소스 코드와 연결된 줄 번호를 볼 수 있도록 합니다. /source 스위치는 /linenumbers 스위치를 사용하는 `yes`의 값이 있어야 합니다.
 
 ## <a name="example"></a>예제
 

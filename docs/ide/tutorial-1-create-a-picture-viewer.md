@@ -1,5 +1,7 @@
 ---
 title: '자습서 1: 사진 뷰어 만들기'
+description: 파일에서 그림을 로드하여 창에 표시하는 앱을 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
@@ -10,16 +12,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811216"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479136"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
-이 자습서에서는 파일에서 그림을 로드하여 창에 표시하는 앱을 빌드합니다. 또한 **Windows Forms 디자이너**를 사용하여 단추와 그림 상자 같은 컨트롤을 양식에 끌어오고, 해당 속성을 설정하고, 컨테이너를 사용하여 양식의 크기를 자연스럽게 조정하는 방법을 알아봅니다. 코드 작성을 시작합니다.
+이 자습서에서는 파일에서 그림을 로드하여 창에 표시하는 앱을 빌드합니다. 또한 **Windows Forms 디자이너** 를 사용하여 단추와 그림 상자 같은 컨트롤을 양식에 끌어오고, 해당 속성을 설정하고, 컨테이너를 사용하여 양식의 크기를 자연스럽게 조정하는 방법을 알아봅니다. 코드 작성을 시작합니다.
 
 > [!NOTE]
 > 이 자습서는 C#과 Visual Basic을 모두 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하세요.
@@ -58,9 +60,9 @@ ms.locfileid: "90811216"
 |[8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|IntelliSense 도구를 사용하여 코드를 작성합니다.|
 |[9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)|코드를 검토하고 테스트합니다. 필요한 경우 주석을 추가합니다.|
 |[10단계: 추가 단추 및 확인란에 대한 코드 작성](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|IntelliSense를 사용하여 다른 단추와 확인란이 작동하도록 코드를 작성합니다.|
-|[11단계: 앱을 실행하고 다른 기능을 사용해 보세요.](../ide/step-11-run-your-program-and-try-other-features.md)|앱을 실행하고 배경색을 설정합니다. 색, 글꼴 및 테두리 변경과 같은 다른 기능을 사용해 봅니다.|
+|[11단계: 앱 실행 및 기타 기능 사용](../ide/step-11-run-your-program-and-try-other-features.md)|앱을 실행하고 배경색을 설정합니다. 색, 글꼴 및 테두리 변경과 같은 다른 기능을 사용해 봅니다.|
 
-또한 유용한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요.
+또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

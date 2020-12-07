@@ -1,5 +1,6 @@
 ---
 title: if 문을 switch 문 또는 식으로 변환
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 if 문을 switch 문 또는 C# 8.0 switch 식으로 변환하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102534"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305556"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>If 문을 switch 문 또는 switch 식으로 변환
 

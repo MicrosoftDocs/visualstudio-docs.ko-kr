@@ -1,5 +1,7 @@
 ---
 title: 탐색 경계 | Microsoft IntelliTest 개발자 테스트 도구
+description: PexSettingsAttributeBase는 특성으로서 설정 경계에 대한 추상 기본 클래스입니다. 명명된 속성을 사용하여 설정을 수정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315215"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328901"
 ---
 # <a name="exploration-bounds"></a>탐색 경계
 
-**PexSettingsAttributeBase**는 특성으로서 설정 경계에 대한 추상 기본 클래스입니다. IntelliTest의 설정 개요는 [폭포수형 설정](settings-waterfall.md)을 참조하세요.
+**PexSettingsAttributeBase** 는 특성으로서 설정 경계에 대한 추상 기본 클래스입니다. IntelliTest의 설정 개요는 [폭포수형 설정](settings-waterfall.md)을 참조하세요.
 
 이와 관련된 명명된 속성 및 파생 특성을 사용하여 설정을 수정할 수 있습니다.
 
@@ -123,9 +125,9 @@ IntelliTest가 테스트 탐색 중에 시도할 최대 실행 수입니다.
 
 이 탐색 경계의 목적은 루프 또는 반복이 포함된 코드에 무한 수의 실행 경로가 있으므로 [입력 생성](input-generation.md) 중에 IntelliTest를 제한하는 것입니다.
 
-두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths**는 다음과 같이 관련됩니다.
+두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths** 는 다음과 같이 관련됩니다.
 
-* IntelliTest는 다른 테스트 입력을 통해 매개 변수가 있는 테스트 메서드를 **MaxRuns**번까지 호출합니다.
+* IntelliTest는 다른 테스트 입력을 통해 매개 변수가 있는 테스트 메서드를 **MaxRuns** 번까지 호출합니다.
 * 실행된 코드가 결정적이면 IntelliTest는 매번 다른 경로를 사용합니다. 그러나 조건에 따라 실행된 코드가 다른 입력을 통해 이전에 이미 사용된 실행 경로를 따를 수 있습니다.
 * IntelliTest는 발견한 고유한 실행 경로 수를 계산합니다. 이 개수는 **MaxRunsWithUniquePaths** 옵션으로 제한됩니다.
 
@@ -143,9 +145,9 @@ IntelliTest가 탐색 중에 고려할 최대 고유 경로 수입니다.
 
 이 탐색 경계의 목적은 루프 또는 반복이 포함된 코드에 무한 수의 실행 경로가 있으므로 [입력 생성](input-generation.md) 중에 IntelliTest를 제한하는 것입니다.
 
-두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths**는 다음과 같이 관련됩니다.
+두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths** 는 다음과 같이 관련됩니다.
 
-* IntelliTest는 다른 테스트 입력을 통해 매개 변수가 있는 테스트 메서드를 **MaxRuns**번까지 호출합니다.
+* IntelliTest는 다른 테스트 입력을 통해 매개 변수가 있는 테스트 메서드를 **MaxRuns** 번까지 호출합니다.
 * 실행된 코드가 결정적이면 IntelliTest는 매번 다른 경로를 사용합니다. 그러나 조건에 따라 실행된 코드가 다른 입력을 통해 이전에 이미 사용된 실행 경로를 따를 수 있습니다.
 * IntelliTest는 발견한 고유한 실행 경로 수를 계산합니다. 이 개수는 **MaxRunsWithUniquePaths** 옵션으로 제한됩니다.
 
@@ -166,7 +168,7 @@ IntelliTest가 탐색 중에 고려할 최대 고유 경로 수입니다.
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 사용 가능한 값은
+IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 가능한 값은 다음과 같습니다.
 
 * **모두** - 가정 위반을 포함하여 모든 것에 대한 테스트를 내보냅니다.
 * **FailuresAndIncreasedBranchHits**(기본값) - 모든 실패에 대한 테스트를 내보내고 테스트 사례에서 [TestEmissionBranchHits](#testemissionbranchhits)에 의해 제어되는 검사가 증가할 때마다 테스트를 내보냅니다.
@@ -180,9 +182,9 @@ IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 사용 �
 
 **TestEmissionBranchHits** 설정은 IntelliTest에서 분기 검사 여부만 고려해야 하는지(**TestEmissionBranchHits=1**), 테스트에서 분기가 한 번 또는 두 번 검사되는지(**TestEmissionBranchHits=2**) 등을 결정합니다.
 
-**TestEmissionBranchHits=1**은 IntelliTest가 도달할 수 있는 모든 분기를 검사할 매우 작은 테스트 도구 모음을 생성합니다. 특히, 이 테스트 도구 모음은 도달한 모든 기본 블록 및 문도 검사합니다.
+**TestEmissionBranchHits=1** 은 IntelliTest가 도달할 수 있는 모든 분기를 검사할 매우 작은 테스트 도구 모음을 생성합니다. 특히, 이 테스트 도구 모음은 도달한 모든 기본 블록 및 문도 검사합니다.
 
-이 옵션의 기본값은 **TestEmissionBranchHits=2**로서, 미래 재발 오류를 검색하는 데 더 적합한 더 표현적인 테스트 도구 모음을 생성합니다.
+이 옵션의 기본값은 **TestEmissionBranchHits=2** 로서, 미래 재발 오류를 검색하는 데 더 적합한 더 표현적인 테스트 도구 모음을 생성합니다.
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 

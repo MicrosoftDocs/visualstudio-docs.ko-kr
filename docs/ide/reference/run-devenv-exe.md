@@ -1,5 +1,7 @@
 ---
 title: -Run(devenv.exe)
+description: Run devenv 명령줄 스위치를 사용하여 지정된 프로젝트 또는 솔루션을 컴파일하고 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e523220ca3269b6af5404ce2d6ab653f29698599
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593631"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039907"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -44,7 +46,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  (선택 사항) 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
+  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
 ## <a name="remarks"></a>설명
 

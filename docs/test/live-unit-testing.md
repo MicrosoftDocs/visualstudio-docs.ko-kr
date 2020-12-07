@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: 지원되는 프레임워크 및 Live Unit Testing을 구성하는 방법을 포함하여 애플리케이션 개발 중 Live Unit Testing에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249905"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329356"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -36,14 +38,14 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 Microsoft.VisualStudio.QualityTools.UnitTestFramework를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2019 또는 Visual Studio 2017로 업그레이드하세요.
 
-경우에 따라 Live Unit Testing이 작동하기 위해 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 이렇게 하려면 솔루션의 명시적 빌드를 수행합니다(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**를 선택). 또는 솔루션에서 패키지를 복원합니다(솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원**을 선택).
+경우에 따라 Live Unit Testing이 작동하기 위해 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 이렇게 하려면 솔루션의 명시적 빌드를 수행합니다(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드** 를 선택). 또는 솔루션에서 패키지를 복원합니다(솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원** 을 선택).
 
 ## <a name="configure"></a>구성
 
-최상위 Visual Studio 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **옵션** 대화 상자의 왼쪽 창에서 **Live Unit Testing**을 선택하여 Live Unit Testing을 구성합니다.
+최상위 Visual Studio 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음, **옵션** 대화 상자의 왼쪽 창에서 **Live Unit Testing** 을 선택하여 Live Unit Testing을 구성합니다.
 
 > [!TIP]
-> Live Unit Testing을 사용하도록 설정한 후에(다음 섹션 [Live Unit Testing 시작 일시 중지 및 중지](#start-pause-and-stop) 참조) **테스트** > **Live Unit Testing** > **옵션**을 선택하여 **옵션** 대화 상자를 열 수도 있습니다.
+> Live Unit Testing을 사용하도록 설정한 후에(다음 섹션 [Live Unit Testing 시작 일시 중지 및 중지](#start-pause-and-stop) 참조) **테스트** > **Live Unit Testing** > **옵션** 을 선택하여 **옵션** 대화 상자를 열 수도 있습니다.
 
 다음 이미지에서는 대화 상자에서 사용할 수 있는 Live Unit Testing 구성 옵션을 표시합니다.
 
@@ -79,13 +81,13 @@ Microsoft.VisualStudio.QualityTools.UnitTestFramework를 참조하는 이전 MST
 
 ## <a name="start-pause-and-stop"></a>시작, 일시 중지 및 중지
 
-Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택합니다. Live Unit Testing을 사용하면 **Live Unit Testing** 메뉴에서 사용할 수 있는 옵션이 단일 항목에서 **시작**, **일시 중지** 및 **중지**로 변경됩니다.
+Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작** 을 선택합니다. Live Unit Testing을 사용하면 **Live Unit Testing** 메뉴에서 사용할 수 있는 옵션이 단일 항목에서 **시작**, **일시 중지** 및 **중지** 로 변경됩니다.
 
-- **일시 중지**는 Live Unit Testing을 일시적으로 중단합니다.
+- **일시 중지** 는 Live Unit Testing을 일시적으로 중단합니다.
 
-  Live Unit Testing이 일시 중지되면 검사 시각화는 편집기에 표시되지 않지만 수집된 모든 데이터는 유지됩니다. Live Unit Testing을 다시 시작하려면 Live Unit Testing 메뉴에서 **계속**을 선택합니다. Live Unit Testing은 일시 중지되는 동안 수행한 모든 편집 내용을 적용하는 데 필요한 작업을 수행하고 문자 모양을 적절하게 업데이트합니다.
+  Live Unit Testing이 일시 중지되면 검사 시각화는 편집기에 표시되지 않지만 수집된 모든 데이터는 유지됩니다. Live Unit Testing을 다시 시작하려면 Live Unit Testing 메뉴에서 **계속** 을 선택합니다. Live Unit Testing은 일시 중지되는 동안 수행한 모든 편집 내용을 적용하는 데 필요한 작업을 수행하고 문자 모양을 적절하게 업데이트합니다.
 
-- **중지**는 Live Unit Testing를 완전히 중지합니다. Live Unit Testing은 수집된 모든 데이터를 삭제합니다.
+- **중지** 는 Live Unit Testing를 완전히 중지합니다. Live Unit Testing은 수집된 모든 데이터를 삭제합니다.
 
 > [!NOTE]
 > 단위 테스트 프로젝트를 포함하지 않는 솔루션에서 Live Unit Testing을 시작하면 **Live Unit Testing** 메뉴에 **일시 중지** 및 **중지** 옵션이 나타나지만 Live Unit Testing은 시작되지 않습니다. **출력** 창에는 "이 솔루션에서 참조하는 지원되는 테스트 어댑터가 없습니다."로 시작되는 메시지가 표시됩니다.
@@ -133,18 +135,18 @@ Live Unit Testing을 사용하도록 설정하면 Visual Studio 편집기에서 
 ::: moniker range="vs-2017"
 ## <a name="test-explorer"></a>테스트 탐색기
 
-**테스트 탐색기**는 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing은 **Test Explorer**와 통합됩니다. Live Unit Testing이 사용되지 않거나 중지되면 **Test Explorer**는 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. 소스 코드를 변경하려면 테스트를 다시 실행해야 합니다. 반면에 Live Unit Testing을 사용하는 경우 **Test Explorer**에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다.
+**테스트 탐색기** 는 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing은 **Test Explorer** 와 통합됩니다. Live Unit Testing이 사용되지 않거나 중지되면 **Test Explorer** 는 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. 소스 코드를 변경하려면 테스트를 다시 실행해야 합니다. 반면에 Live Unit Testing을 사용하는 경우 **Test Explorer** 에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다.
 
 > [!TIP]
-> 최상위 Visual Studio 메뉴에서 **테스트** > **Windows** > **테스트 탐색기**를 선택하여 **Live Unit Testing**을 엽니다.
+> 최상위 Visual Studio 메뉴에서 **테스트** > **Windows** > **테스트 탐색기** 를 선택하여 **Live Unit Testing** 을 엽니다.
 
 **Test Explorer** 창에서 일부 테스트가 흐리게 표시된 것을 알 수 있습니다. 예를 들어 이전에 저장한 프로젝트를 연 후 Live Unit Testing을 활성화하면 다음 이미지와 같이 **Test Explorer** 창에는 실패한 테스트를 제외한 모든 항목이 흐리게 표시됩니다. 이 경우 Live Unit Testing에서 실패한 테스트를 다시 실행했지만 성공한 테스트는 다시 실행하지 않았습니다. Live Unit Testing의 지속되는 데이터가 테스트를 마지막으로 성공적으로 실행한 이후에 변경되지 않았음을 나타냅니다.
 
 ![테스트 탐색기의 실패한 테스트](media/lut-test-explorer.png)
 
-**테스트 탐색기** 메뉴에서 **모두 실행** 또는 **실행** 옵션을 선택하여 흐리게 표시되는 모든 테스트를 다시 실행할 수 있습니다. 또는 **테스트 탐색기** 메뉴에서 하나 이상의 테스트를 선택하고 마우스 오른쪽 단추를 클릭한 다음, 팝업 메뉴에서 **선택한 테스트 실행** 또는 **선택한 테스트 디버그**를 선택합니다. 테스트가 실행되면서 맨 위로 버블링됩니다.
+**테스트 탐색기** 메뉴에서 **모두 실행** 또는 **실행** 옵션을 선택하여 흐리게 표시되는 모든 테스트를 다시 실행할 수 있습니다. 또는 **테스트 탐색기** 메뉴에서 하나 이상의 테스트를 선택하고 마우스 오른쪽 단추를 클릭한 다음, 팝업 메뉴에서 **선택한 테스트 실행** 또는 **선택한 테스트 디버그** 를 선택합니다. 테스트가 실행되면서 맨 위로 버블링됩니다.
 
-Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer**에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
+Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer** 에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
 
 - Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
 - Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
@@ -154,10 +156,10 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 ::: moniker range=">=vs-2019"
 ## <a name="live-unit-testing-window"></a>Live Unit Testing 창
 
-**테스트 탐색기**와 비슷한 **Live Unit Testing**은 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing을 사용하는 경우 **테스트 탐색기**에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다. Live Unit Testing이 사용되지 않거나 중지되면 **Live Unit Testing**은 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. Live Unit Testing을 다시 시작한 후에는 테스트를 다시 실행하려면 소스 코드를 변경해야 합니다.
+**테스트 탐색기** 와 비슷한 **Live Unit Testing** 은 테스트 결과를 실행, 디버그 및 분석할 수 있게 해 주는 인터페이스를 제공합니다. Live Unit Testing을 사용하는 경우 **테스트 탐색기** 에서 단위 테스트의 상태가 즉시 업데이트됩니다. 단위 테스트를 명시적으로 실행할 필요가 없습니다. Live Unit Testing이 사용되지 않거나 중지되면 **Live Unit Testing** 은 마지막으로 테스트를 실행한 단위 테스트의 상태를 표시합니다. Live Unit Testing을 다시 시작한 후에는 테스트를 다시 실행하려면 소스 코드를 변경해야 합니다.
 
 > [!TIP]
-> 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작**을 선택하여 Live Unit Testing을 시작합니다. **보기** > **다른 창** > **Live Unit Testing 창**을 사용하여 **Live Unit Testing** 창을 열 수도 있습니다.
+> 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **시작** 을 선택하여 Live Unit Testing을 시작합니다. **보기** > **다른 창** > **Live Unit Testing 창** 을 사용하여 **Live Unit Testing** 창을 열 수도 있습니다.
 
 **Live Unit Testing** 창에서 일부 테스트가 흐리게 표시된 것을 알 수 있습니다. 예를 들어 Live Unit Testing을 중지했다가 다시 시작하면 다음 이미지와 같이 **Live Unit Testing** 창에서 모든 테스트가 흐리게 표시됩니다. 흐리게 표시된 테스트 결과는 해당 테스트가 최근 Live Unit 테스트 실행에 포함되지 않았음을 나타냅니다. 테스트의 변경 사항이나 테스트 종속성이 검색된 경우에만 테스트가 실행됩니다. 변경 내용이 없으면 테스트가 불필요하게 실행되지 않습니다. 이 경우에는 회색으로 표시된 테스트 결과는 최근 실행에 포함되지 않았어도 “최신 상태”입니다.
 
@@ -165,7 +167,7 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 흐리게 표시된 테스트를 다시 실행하려면 코드를 변경하면 됩니다.
 
-Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer**에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
+Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer** 에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
 
 - Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
 - Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
@@ -181,7 +183,7 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 ![대규모 프로젝트에 대한 Live Unit Testing 대화 상자](media/lut-large-project.png)
 
-이 대화 상자는 대규모 프로젝트에서 실행되는 많은 수의 동적 테스트 실행으로 인해 성능에 심각한 영향을 줄 수 있다는 경고를 표시합니다. **확인**을 선택하면 Live Unit Testing에서 솔루션의 모든 테스트를 실행합니다. **취소**를 선택하면 실행할 테스트를 선택할 수 있습니다. 다음 섹션에서는 이 작업을 수행하는 방법을 설명합니다.
+이 대화 상자는 대규모 프로젝트에서 실행되는 많은 수의 동적 테스트 실행으로 인해 성능에 심각한 영향을 줄 수 있다는 경고를 표시합니다. **확인** 을 선택하면 Live Unit Testing에서 솔루션의 모든 테스트를 실행합니다. **취소** 를 선택하면 실행할 테스트를 선택할 수 있습니다. 다음 섹션에서는 이 작업을 수행하는 방법을 설명합니다.
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>테스트 프로젝트 및 테스트 메서드 포함 및 제외
 
@@ -191,8 +193,8 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 단위 테스트에서 개별 프로젝트를 선택하려면 Live Unit Testing을 시작한 후에 다음을 수행합니다.
 
-1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **제외**를 선택하여 전체 솔루션을 제외합니다.
-1. 테스트에 포함하려는 테스트 프로젝트 각각을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **포함**을 선택합니다.
+1. **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **제외** 를 선택하여 전체 솔루션을 제외합니다.
+1. 테스트에 포함하려는 테스트 프로젝트 각각을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **포함** 을 선택합니다.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>코드 편집기 창에서 개별 테스트 제외
 

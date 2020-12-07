@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c8fa5bcacd4d6086dbe926240ec11743f06e513d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036914"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480332"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10단계: 추가 단추 및 확인란에 대한 코드 작성
 
@@ -46,7 +46,7 @@ ms.locfileid: "90036914"
 
 ## <a name="next-steps"></a>다음 단계
 
-* 다음 자습서 단계로 이동하려면 **[11단계: 앱 실행 및 기타 ](../ide/step-11-run-your-program-and-try-other-features.md)** 을 참조하세요.
+* 다음 자습서 단계로 이동하려면 **[11단계: 앱 실행 및 기타](../ide/step-11-run-your-program-and-try-other-features.md)** 을 참조하세요.
 
 * 이전 자습서 단계로 돌아가려면 [9단계: 코드 검토, 주석 처리 및 테스트](../ide/step-9-review-comment-and-test-your-code.md)를 참조하세요.
 

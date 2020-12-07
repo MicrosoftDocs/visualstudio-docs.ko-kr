@@ -1,5 +1,7 @@
 ---
 title: EvaluateStatement
+description: 문 실행 명령 및 지정된 문을 평가 및 표시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b6333b6b57891065b42c2d56e3acfe68b315de
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 264629769bbb25af97404e7c97c2676c4951f8d3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595659"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305434"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
 
@@ -34,7 +36,7 @@ ms.locfileid: "75595659"
 
 `text`
 
-필수 사항입니다. 평가할 문입니다.
+필수 요소. 평가할 문입니다.
 
 ## <a name="example"></a>예제
 

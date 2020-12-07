@@ -1,5 +1,7 @@
 ---
 title: 아랍어 및 히브리어 지원
+description: 아랍어 및 히브리어 텍스트를 표시하고 개체 이름 및 값에 양방향 텍스트를 입력하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591998"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478967"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Visual Studio에서 양방향 언어에 대한 지원
 
@@ -42,7 +44,7 @@ Visual Studio는 유니코드를 지원하므로 시스템이 적절한 로캘 �
 
 - 프로젝트 경로에 포함하는 폴더를 비롯한 솔루션, 프로젝트 및 파일 이름.
 
-   **솔루션 탐색기**에는 솔루션 및 요소 이름이 제대로 표시됩니다.
+   **솔루션 탐색기** 에는 솔루션 및 요소 이름이 제대로 표시됩니다.
 
 - 파일 콘텐츠.
 
@@ -50,7 +52,7 @@ Visual Studio는 유니코드를 지원하므로 시스템이 적절한 로캘 �
 
 - 데이터 요소.
 
-   **서버 탐색기**는 이러한 요소를 제대로 표시하고 편집할 수 있습니다.
+   **서버 탐색기** 는 이러한 요소를 제대로 표시하고 편집할 수 있습니다.
 
 - Windows 클립보드에 복사된 요소.
 
@@ -78,7 +80,7 @@ Visual Studio는 유니코드를 지원하므로 시스템이 적절한 로캘 �
 
 ## <a name="right-to-left-reading-order"></a>오른쪽에서 왼쪽 읽기 순서
 
-Visual Studio에서는 오른쪽에서 왼쪽 읽기 순서가 제한적으로 지원됩니다. 기본적으로 Visual Studio의 텍스트 입력 컨트롤에는 왼쪽에서 오른쪽 읽기 순서가 사용됩니다. 대부분의 경우 표준 Windows 제스처를 사용하여 읽기 순서를 전환할 수 있습니다. 예를 들어 **Ctrl**+**RightShift**를 눌러 속성 값에 대한 오른쪽에서 왼쪽 읽기 순서를 지원하도록 **속성** 창을 전환할 수 있습니다.
+Visual Studio에서는 오른쪽에서 왼쪽 읽기 순서가 제한적으로 지원됩니다. 기본적으로 Visual Studio의 텍스트 입력 컨트롤에는 왼쪽에서 오른쪽 읽기 순서가 사용됩니다. 대부분의 경우 표준 Windows 제스처를 사용하여 읽기 순서를 전환할 수 있습니다. 예를 들어 **Ctrl**+**RightShift** 를 눌러 속성 값에 대한 오른쪽에서 왼쪽 읽기 순서를 지원하도록 **속성** 창을 전환할 수 있습니다.
 
 Visual Studio에서 다음 경우에는 오른쪽에서 왼쪽 읽기 순서가 지원되지 않습니다.
 

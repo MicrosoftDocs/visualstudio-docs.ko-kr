@@ -1,5 +1,7 @@
 ---
 title: Microsoft Fakes를 사용하여 테스트 중인 코드 격리
+description: Microsoft Fakes가 스텁 또는 shim을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325951"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329538"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -86,7 +88,7 @@ Fakes는 두 가지 버전이 있습니다.
    1. **솔루션 탐색기** 에서 
        - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
        ::: moniker range=">=vs-2019"
-       - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리** , **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+       - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리**, **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
        ::: moniker-end
        - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
    2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간** 을 shim하려면 **System.dll** 을 선택합니다.

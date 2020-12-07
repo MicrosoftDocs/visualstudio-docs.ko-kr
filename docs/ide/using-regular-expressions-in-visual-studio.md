@@ -1,5 +1,7 @@
 ---
 title: 정규식 사용
+description: Visual Studio에서 사용할 수 있는 몇 가지 정규식 문자, 연산자, 구문 및 패턴 예제에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568622"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478993"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -33,7 +35,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 |용도|식|예제|
 |-------------|----------------|-------------|
-|줄 바꿈 이외의 모든 단일 문자를 찾습니다. 자세한 내용은 [임의의 문자](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)를 참조하세요.|을 선택합니다.|`a.o`는 “around”의 “aro” 및 “about”의 “abo”와 일치하지만 “across”의 “acro”와 일치하지 않습니다.|
+|줄 바꿈 이외의 모든 단일 문자를 찾습니다. 자세한 내용은 [임의의 문자](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)를 참조하세요.|.|`a.o`는 “around”의 “aro” 및 “about”의 “abo”와 일치하지만 “across”의 “acro”와 일치하지 않습니다.|
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 많은 문자를 찾음). 자세한 내용은 [0번 이상 일치](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)를 참조하세요.|*|`a*r`는 "rack"의 "r", "ark"의 "ar", "aardvark"의 "aar"과 일치합니다.|
 |임의의 문자를 0회 이상 찾습니다.|.*|`c.*e`는 “racket”의 “cke”, “comment”의 “comme”, “code”의 “code”와 일치합니다.|
 |이전 식에서 일치 항목 1개 이상을 찾습니다(가능한 한 많은 문자를 찾음). 자세한 내용은 [1번 이상 일치](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-)를 참조하세요.|+|`e+d`는 “feeder”의 “eed” 및 “faded”의 “ed”와 일치합니다.|
@@ -71,9 +73,9 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 - **정규식 내에서** `\number`을 사용하십시오. 예를 들어 정규식 `(\w+)\s\1`의 `\1`은 첫 번째 캡처 그룹 `(\w+)`를 참조합니다.
 
-- **바꾸기 패턴에서** `$number`을 사용하십시오. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a**와 **z** 사이의 단일 문자를 포함합니다. 이 식은 다음 문자열에서 일치 항목 4개를 찾습니다. **1a 2b 3c 4d**. 대체 문자열 `z$1`은 첫 번째 그룹(`$1`)만 참조하고 문자열을 **z1 z2 z3 z4**로 변환합니다.
+- **바꾸기 패턴에서** `$number`을 사용하십시오. 예를 들어 그룹화된 정규식 `(\d)([a-z])`은 다음 두 그룹을 정의합니다. 첫 번째 그룹은 단일 10진수를 포함하고 두 번째 그룹은 **a** 와 **z** 사이의 단일 문자를 포함합니다. 식은 문자열 **1a 2b 3c 4d** 에서 일치 항목 4개를 찾습니다. 대체 문자열 `z$1`은 첫 번째 그룹(`$1`)만 참조하고 문자열을 **z1 z2 z3 z4** 로 변환합니다.
 
-다음 그림에서 정규식은 `(\w+)\s\1`이고 대체 문자열은 `$1`입니다. 정규식과 바꾸기 패턴 모두, 자동으로 번호 1이 매겨진 첫 번째 캡처 그룹을 참조합니다. Visual Studio의 **빠른 바꾸기** 대화 상자에서 **모두 바꾸기**를 선택하면 반복 단어가 텍스트에서 제거됩니다.
+다음 그림에서 정규식은 `(\w+)\s\1`이고 대체 문자열은 `$1`입니다. 정규식과 바꾸기 패턴 모두, 자동으로 번호 1이 매겨진 첫 번째 캡처 그룹을 참조합니다. Visual Studio의 **빠른 바꾸기** 대화 상자에서 **모두 바꾸기** 를 선택하면 반복 단어가 텍스트에서 제거됩니다.
 
 ![Visual Studio에서 번호가 매겨진 캡처 그룹이 표시된 빠른 바꾸기](media/numbered-capture-group.png)
 
@@ -90,7 +92,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 - **바꾸기 패턴에서** `${name}`을 사용하십시오. 예: `${repeated}`.
 
-예를 들어 다음 그림에서 정규식은 `(?<repeated>\w+)\s\k<repeated>`이고 대체 문자열은 `${repeated}`입니다. 정규식과 바꾸기 패턴 모두, 이름이 `repeated`인 캡처 그룹을 참조합니다. Visual Studio의 **빠른 바꾸기** 대화 상자에서 **모두 바꾸기**를 선택하면 반복 단어가 텍스트에서 제거됩니다.
+예를 들어 다음 그림에서 정규식은 `(?<repeated>\w+)\s\k<repeated>`이고 대체 문자열은 `${repeated}`입니다. 정규식과 바꾸기 패턴 모두, 이름이 `repeated`인 캡처 그룹을 참조합니다. Visual Studio의 **빠른 바꾸기** 대화 상자에서 **모두 바꾸기** 를 선택하면 반복 단어가 텍스트에서 제거됩니다.
 
 ![Visual Studio에서 명명된 캡처 그룹이 표시된 빠른 바꾸기](media/named-capture-group.png)
 
@@ -99,7 +101,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 명명된 캡처 그룹에 대한 자세한 내용은 [명명된 일치하는 하위 식](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions)을 참조하세요. 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체](/dotnet/standard/base-types/substitutions-in-regular-expressions)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [정규식 언어](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)

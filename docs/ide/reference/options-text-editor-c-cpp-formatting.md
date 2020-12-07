@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, C/C++, 서식
+description: 서식 옵션 페이지와 해당 하위 페이지를 사용하여 C 및 C++로 프로그래밍할 때 코드 편집기에서 코드의 서식을 지정하는 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 264485fd8f20ee31046035dba7b208795d0d91b0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596257"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041089"
 ---
 # <a name="options-text-editor-cc-formatting"></a>옵션, 텍스트 편집기, C/C++, 서식
 
@@ -29,7 +31,7 @@ ms.locfileid: "75596257"
 
 ![C++ Formatting 속성 페이지](media/cpp-formatting.png)
 
-이 페이지에 액세스하려면 왼쪽 창의 **옵션** 대화 상자에서 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음 **서식**을 클릭합니다.
+이 페이지에 액세스하려면 왼쪽 창의 **옵션** 대화 상자에서 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음 **서식** 을 클릭합니다.
 
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
@@ -62,7 +64,7 @@ ClangFormat 지원은 기본적으로 활성화되어 있습니다. LLVM, Google
 
 이러한 페이지를 통해 사용자 지정에 대해 다양한 서식을 지정할 수 있지만 ClangFormat이 사용된 경우에는 무시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense 사용](../../ide/using-intellisense.md)

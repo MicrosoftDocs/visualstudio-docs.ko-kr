@@ -1,5 +1,7 @@
 ---
 title: -Project(devenv.exe)
+description: Project devenv 명령줄 스위치를 사용하여 프로젝트를 빌드, 정리, 다시 빌드 또는 배포하기 위해 지정된 솔루션 구성 내에서 단일 프로젝트를 파악하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567777"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040111"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -37,27 +39,27 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 - *SolutionName*
 
-  필수 사항입니다. 솔루션 파일의 전체 경로 및 이름입니다.
+  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
 - {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
-  필수 사항입니다. 프로젝트를 [빌드](build-devenv-exe.md), [정리](clean-devenv-exe.md), [배포](deploy-devenv-exe.md) 또는 [다시 빌드](rebuild-devenv-exe.md)합니다.
+  필수 요소. 프로젝트를 [빌드](build-devenv-exe.md), [정리](clean-devenv-exe.md), [배포](deploy-devenv-exe.md) 또는 [다시 빌드](rebuild-devenv-exe.md)합니다.
 
 - *SolnConfigName*
 
-  (선택 사항) *SolutionName*에서 명명된 솔루션에 적용되는 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
+  선택 사항입니다. *SolutionName* 에서 명명된 솔루션에 적용되는 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
 - `/Project` *ProjName*
 
-  (선택 사항) 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
+  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  (선택 사항) 명명된 `/Project`에 적용할 프로젝트의 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다.
+  선택 사항입니다. 명명된 `/Project`에 적용할 프로젝트의 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다.
 
 - `/Out` *OutputFilename*
 
-  (선택 사항) 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
+  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
 ## <a name="remarks"></a>설명
 

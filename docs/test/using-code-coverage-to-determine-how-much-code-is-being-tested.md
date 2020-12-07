@@ -1,5 +1,7 @@
 ---
 title: 코드 검사 테스트
+description: Visual Studio의 코드 검사 기능을 사용하여 코딩된 테스트에서 테스트 중인 프로젝트 코드의 비율을 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959777"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330058"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -40,13 +42,13 @@ ms.locfileid: "91959777"
 
 ::: moniker range="vs-2017"
 
-1. **테스트** 메뉴에서 **코드 검사 분석**을 선택합니다.
+1. **테스트** 메뉴에서 **코드 검사 분석** 을 선택합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. **테스트** 메뉴에서 **모든 테스트에 대한 코드 검사 분석**을 선택합니다.
+1. **테스트** 메뉴에서 **모든 테스트에 대한 코드 검사 분석** 을 선택합니다.
 
    ![VS 2019의 코드 검사 분석 메뉴](../test/media/vs-2019/analyze-code-coverage.png)
 
@@ -54,10 +56,10 @@ ms.locfileid: "91959777"
 
 ::: moniker-end
 
-2. 테스트가 실행된 후 실행된 줄을 확인하려면 **코드 검사 결과** 창에서 ![코드 검사 강조 표시 아이콘](../test/media/codecoverage-showcoloringicon.png) **코드 검사 강조 표시**를 선택합니다. 기본적으로 테스트에 포함된 코드는 연한 파랑으로 강조됩니다.
+2. 테스트가 실행된 후 실행된 줄을 확인하려면 **코드 검사 결과** 창에서 ![코드 검사 강조 표시 아이콘](../test/media/codecoverage-showcoloringicon.png) **코드 검사 강조 표시** 를 선택합니다. 기본적으로 테스트에 포함된 코드는 연한 파랑으로 강조됩니다.
 
    > [!TIP]
-   > 색을 변경하거나 굵게 표시하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** > **설정 표시: 텍스트 편집기**를 선택합니다. **표시 항목**에서 “검사” 항목(예: **검사가 수행되지 않은 영역**)에 대한 설정을 조정합니다.
+   > 색을 변경하거나 굵게 표시하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** > **설정 표시: 텍스트 편집기** 를 선택합니다. **표시 항목** 에서 “검사” 항목(예: **검사가 수행되지 않은 영역**)에 대한 설정을 조정합니다.
    >
    > ![코드 검사 글꼴 및 색](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -74,9 +76,9 @@ ms.locfileid: "91959777"
 
 ## <a name="report-in-blocks-or-lines"></a>블록 또는 줄에서 보고
 
-코드 검사는 *블록*으로 계산됩니다. 블록은 진입점 및 진출점이 정확히 하나씩인 코드입니다.  테스트 실행 중 프로그램의 제어 흐름이 블록을 통과할 경우 해당 블록은 검사된 것으로 계산됩니다. 블록이 사용된 횟수는 결과에 영향을 아무 영향을 미치지 않습니다.
+코드 검사는 *블록* 으로 계산됩니다. 블록은 진입점 및 진출점이 정확히 하나씩인 코드입니다.  테스트 실행 중 프로그램의 제어 흐름이 블록을 통과할 경우 해당 블록은 검사된 것으로 계산됩니다. 블록이 사용된 횟수는 결과에 영향을 아무 영향을 미치지 않습니다.
 
-또한 표 머리글에서 **열 추가/제거**를 선택하여 결과를 줄 단위로 표시할 수 있습니다. 일부 사용자는 백분율이 소스 코드에 표시되는 조각 크기와 더 가깝기 때문에 줄 수를 더 선호합니다. 긴 계산 블록은 여러 줄을 차지하는 경우에도 단일 블록으로 계산됩니다.
+또한 표 머리글에서 **열 추가/제거** 를 선택하여 결과를 줄 단위로 표시할 수 있습니다. 일부 사용자는 백분율이 소스 코드에 표시되는 조각 크기와 더 가깝기 때문에 줄 수를 더 선호합니다. 긴 계산 블록은 여러 줄을 차지하는 경우에도 단일 블록으로 계산됩니다.
 
 > [!TIP]
 > 코드 줄에는 코드 블록이 둘 이상 있을 수 있습니다. 이와 같은 경우인 데다 테스트 실행에서 줄의 코드 블록을 모두 실행할 경우에는 하나의 줄로 계산됩니다. 줄에서 코드 블록이 전체가 아닌 일부만 실행되면 이는 부분 줄로 계산됩니다.
@@ -91,11 +93,11 @@ ms.locfileid: "91959777"
 
 - **이전 결과 집합을 보려면** 드롭다운 메뉴에서 선택합니다. 이 메뉴에는 새 솔루션을 열 때 삭제되는 임시 목록이 표시됩니다.
 
-- **이전 세션의 결과를 보려면** **코드 검사 결과 가져오기**를 선택하고, 솔루션에서 **TestResults** 폴더를 탐색하고, *.coverage* 파일을 가져옵니다.
+- **이전 세션의 결과를 보려면** **코드 검사 결과 가져오기** 를 선택하고, 솔루션에서 **TestResults** 폴더를 탐색하고, *.coverage* 파일을 가져옵니다.
 
    *.coverage* 파일이 생성된 이후 소스 코드가 변경된 경우 검사 강조 표시가 잘못될 수 있습니다.
 
-- **결과를 텍스트 형식으로 읽으려면** **코드 검사 결과 내보내기**를 선택합니다. 그러면 다른 도구로 처리하거나 메일로 쉽게 전송할 수 있는 읽기 가능한 *.coveragexml* 파일이 생성됩니다.
+- **결과를 텍스트 형식으로 읽으려면****코드 검사 결과 내보내기** 를 선택합니다. 그러면 다른 도구로 처리하거나 메일로 쉽게 전송할 수 있는 읽기 가능한 *.coveragexml* 파일이 생성됩니다.
 
 - **결과를 다른 사람에게 전송하려면** *.coverage* 파일 또는 내보낸 *.coveragexml* 파일을 전송합니다. 그런 다음 수신자는 파일을 가져올 수 있습니다. 동일한 버전의 소스 코드가 있으면 검사 강조를 볼 수 있습니다.
 
@@ -105,9 +107,9 @@ ms.locfileid: "91959777"
 
 예를 들어, 입력 "2"로 테스트를 실행할 경우를 가정하면 특정 함수의 50%만 검사됩니다. 입력 “-2”로 다시 테스트를 실행하면 검사 강조 보기에서 함수의 나머지 50%가 검사된 것을 확인할 수 있습니다. 이제 두 테스트 실행의 결과를 병합하면 보고서와 검사 강조 보기에 함수의 100%가 검사된 것으로 나타납니다.
 
-![코드 검사 창의 병합 단추 아이콘](../test/media/codecoverage-mergeicon.png) **코드 검사 결과 병합**을 사용하여 이 작업을 수행합니다. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
+![코드 검사 창의 병합 단추 아이콘](../test/media/codecoverage-mergeicon.png) **코드 검사 결과 병합** 을 사용하여 이 작업을 수행합니다. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
 
-병합 작업 결과를 저장하려면 **코드 검사 결과 내보내기**를 사용합니다.
+병합 작업 결과를 저장하려면 **코드 검사 결과 내보내기** 를 사용합니다.
 
 ### <a name="limitations-in-merging"></a>병합 제한 사항
 
@@ -124,7 +126,7 @@ ms.locfileid: "91959777"
 > [!TIP]
 > 클래스를 제외해도 해당 파생 클래스는 제외되지 않습니다.
 
-예를 들어:
+다음은 그 예입니다. 
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -247,11 +249,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
-- *ExclusionName*은 임의의 고유한 이름입니다.
+- *ExclusionName* 은 임의의 고유한 이름입니다.
 
-- *FunctionName*은 정규화된 함수 이름입니다. 와일드 카드를 포함할 수 있습니다. 예를 들어, 클래스의 모든 함수를 제외하려면 `MyNamespace::MyClass::*`를 씁니다.
+- *FunctionName* 은 정규화된 함수 이름입니다. 와일드 카드를 포함할 수 있습니다. 예를 들어, 클래스의 모든 함수를 제외하려면 `MyNamespace::MyClass::*`를 씁니다.
 
-- *SourceFilePath*는 .cpp 파일의 로컬 또는 UNC 경로입니다. 와일드 카드를 포함할 수 있습니다. 다음 예제는 특정 디렉터리에서 모든 파일을 제외합니다. `\\MyComputer\Source\UnitTests\*.cpp`
+- *SourceFilePath* 는 .cpp 파일의 로컬 또는 UNC 경로입니다. 와일드 카드를 포함할 수 있습니다. 다음 예제는 특정 디렉터리에서 모든 파일을 제외합니다. `\\MyComputer\Source\UnitTests\*.cpp`
 
 - `#include <CodeCoverage\CodeCoverage.h>`
 
@@ -276,19 +278,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>명령줄에서 코드 검사 분석
 
-명령줄에서 테스트를 실행하려면 *vstest.console.exe*를 사용합니다. 코드 검사는 *vstest.console.exe* 유틸리티의 옵션입니다.
+명령줄에서 테스트를 실행하려면 *vstest.console.exe* 를 사용합니다. 코드 검사는 *vstest.console.exe* 유틸리티의 옵션입니다.
 
 1. Visual Studio용 개발자 명령 프롬프트를 시작합니다.
 
    ::: moniker range="vs-2017"
 
-   Windows **시작** 메뉴에서 **Visual Studio 2017** > **VS 2017용 개발자 명령 프롬프트**를 선택합니다.
+   Windows **시작** 메뉴에서 **Visual Studio 2017** > **VS 2017용 개발자 명령 프롬프트** 를 선택합니다.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Windows **시작** 메뉴에서 **Visual Studio 2019** > **VS 2019용 개발자 명령 프롬프트**를 선택합니다.
+   Windows **시작** 메뉴에서 **Visual Studio 2019** > **VS 2019용 개발자 명령 프롬프트** 를 선택합니다.
 
    ::: moniker-end
 
@@ -304,7 +306,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 코드 검사 결과가 표시되지 않으면 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md) 문서가 도움이 될 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)
 - [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)

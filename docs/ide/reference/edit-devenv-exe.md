@@ -1,5 +1,7 @@
 ---
 title: -Edit(devenv.exe)
+description: Edit devenv 명령줄 스위치를 사용하여 기존 Visual Studio 인스턴스에서 지정된 파일을 여는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 845f83d2078999e3b3e32e048f9a3fa716300b19
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595698"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040591"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  (선택 사항) Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1*이 새 인스턴스에서 열립니다.
+  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1* 이 새 인스턴스에서 열립니다.
 
 - *FileN*
 
-  (선택 사항) Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
+  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
 
 ## <a name="remarks"></a>설명
 

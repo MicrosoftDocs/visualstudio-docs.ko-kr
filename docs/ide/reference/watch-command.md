@@ -1,5 +1,7 @@
 ---
 title: 조사식 명령
+description: 조사식 명령과 조사식 창의 지정된 인스턴스를 만들고 여는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585654"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480150"
 ---
 # <a name="watch-command"></a>조사식 명령
 **조사식** 창의 지정된 인스턴스를 만들고 엽니다. **조사식** 창을 사용하여 변수, 식 및 레지스터의 값을 계산하고, 이러한 값을 편집하고, 결과를 저장할 수 있습니다.
@@ -32,7 +34,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>인수
 
 `index`\
-필수 사항입니다. 조사식 창의 인스턴스 번호입니다.
+필수 요소. 조사식 창의 인스턴스 번호입니다.
 
 ## <a name="remarks"></a>설명
 

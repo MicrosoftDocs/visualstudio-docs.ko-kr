@@ -1,5 +1,7 @@
 ---
 title: Devenv 명령줄 스위치
+description: Devenv 명령줄 스위치에 대해 알아보고, 이 스위치를 사용하여 IDE 옵션을 설정하고 명령줄에서 프로젝트를 빌드, 디버그 및 배포하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255562"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305508"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -76,13 +78,13 @@ VSPackage 개발과 관련된 스위치에 대한 자세한 내용은 [VSPackage
 |[/Run 또는 /R](run-devenv-exe.md)|지정한 솔루션을 컴파일하고 실행합니다.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|지정한 솔루션을 컴파일 및 실행하고, 솔루션 실행 시 IDE를 최소화하고, 솔루션 실행이 완료되면 IDE를 닫습니다.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio를 안전 모드로 시작합니다. 이 스위치는 기본 환경, 기본 서비스 및 타사 패키지의 배송된 버전만 로드합니다.<br /><br /> 이 스위치는 인수가 필요 없습니다.|
-|[/UseEnv](useenv-devenv-exe.md)|IDE가 C++ 컴파일을 위한 PATH, INCLUDE, LIBPATH 및 LIB 환경 변수를 사용하게 합니다. **C++ 워크로드로 데스크톱 개발**을 사용하여 이 스위치를 설치합니다. 자세한 내용은 [명령줄 빌드에서 경로 및 환경 변수 설정](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)을 참조하세요.|
+|[/UseEnv](useenv-devenv-exe.md)|IDE가 C++ 컴파일을 위한 PATH, INCLUDE, LIBPATH 및 LIB 환경 변수를 사용하게 합니다. **C++ 워크로드로 데스크톱 개발** 을 사용하여 이 스위치를 설치합니다. 자세한 내용은 [명령줄 빌드에서 경로 및 환경 변수 설정](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)을 참조하세요.|
 
 다음 명령줄 스위치는 IDE를 표시하지 않습니다.
 
 |명령줄 스위치|설명|
 | - |-----------------|
-|[/?](q-devenv-exe.md)|**명령 프롬프트 창**에 `devenv` 스위치의 도움말을 표시합니다.<br /><br /> 이 스위치는 인수가 필요 없습니다.|
+|[/?](q-devenv-exe.md)|**명령 프롬프트 창** 에 `devenv` 스위치의 도움말을 표시합니다.<br /><br /> 이 스위치는 인수가 필요 없습니다.|
 |[/Build](build-devenv-exe.md)|지정한 솔루션의 구성에 따라 지정한 솔루션 또는 프로젝트를 빌드합니다.<br /><br /> `devenv mysln.sln /build`|
 |[/Clean](clean-devenv-exe.md)|소스 파일에 영향을 주지 않고 빌드 명령에 의해 생성된 파일을 삭제합니다.<br /><br /> `devenv mysln.sln /clean`|
 |[/Deploy](deploy-devenv-exe.md)|솔루션 구성에 따라 배포에 필요한 파일과 함께 솔루션을 빌드합니다.<br /><br /> `devenv mysln.sln /deploy`|

@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자
+description: 옵션 대화 상자, 해당 레이아웃, 그리고 사용자가 선택한 옵션을 Visual Studio가 프로젝트 및 솔루션에 적용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,16 +17,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211263"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189331"
 ---
 # <a name="options-dialog-box-visual-studio"></a>옵션 대화 상자(Visual Studio)
 
-**옵션** 대화 상자에서는 필요에 맞게 IDE(통합 개발 환경)를 구성할 수 있습니다. 예를 들어 프로젝트의 기본 저장 위치를 설정하고, 창의 기본 모양과 동작을 변경하고, 일반적으로 사용되는 명령의 바로 가기를 만들 수 있습니다. 개발 언어 및 플랫폼에 관련된 옵션도 있습니다. **도구** 메뉴에서 **옵션**에 액세스할 수 있습니다.
+**옵션** 대화 상자에서는 필요에 맞게 IDE(통합 개발 환경)를 구성할 수 있습니다. 예를 들어 프로젝트의 기본 저장 위치를 설정하고, 창의 기본 모양과 동작을 변경하고, 일반적으로 사용되는 명령의 바로 가기를 만들 수 있습니다. 개발 언어 및 플랫폼에 관련된 옵션도 있습니다. **도구** 메뉴에서 **옵션** 에 액세스할 수 있습니다.
 
 ## <a name="layout-of-the-options-dialog-box"></a>옵션 대화 상자의 레이아웃
 

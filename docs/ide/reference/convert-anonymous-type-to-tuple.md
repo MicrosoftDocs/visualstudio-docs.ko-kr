@@ -1,5 +1,7 @@
 ---
 title: 익명 형식을 튜플로 변환
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 Visual Studio에서 무명 형식을 튜플로 변환하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 452ba826a2765ef624e6c3d04bb20915a26c51fb
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094282"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040864"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>익명 형식을 튜플로 변환
 
@@ -34,14 +36,14 @@ ms.locfileid: "79094282"
 ## <a name="how-to"></a>방법
 
 1. 익명 형식으로 커서를 놓습니다.
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    ![익명 형식을 튜플로 변환](media/convert-anon-to-tuple.png)
 
-2. **Enter**를 눌러 리팩터링을 수락합니다.
+2. **Enter** 를 눌러 리팩터링을 수락합니다.
 
-   ![익명 형식을 튜플로 변환](media/convert-anon-to-tuple-complete.png)
+   ![무명 형식을 허용된 튜플로 변환](media/convert-anon-to-tuple-complete.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

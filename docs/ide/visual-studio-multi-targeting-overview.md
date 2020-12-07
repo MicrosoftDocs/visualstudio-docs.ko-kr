@@ -1,5 +1,6 @@
 ---
 title: 대상 .NET Framework
+description: 애플리케이션이 지정된 버전에서 사용 가능한 기능만 사용할 수 있도록 프로젝트에서 대상으로 할 .NET Framework 버전을 지정하는 방법을 알아봅니다.
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770449"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479734"
 ---
 # <a name="framework-targeting-overview"></a>Framework 대상 지정 개요
 
@@ -47,9 +48,9 @@ Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하�
 
 - **새 항목 추가** 대화 상자, **새 참조 추가** 대화 상자 및 **서비스 참조 추가** 대화 상자에서 항목을 필터링하여 대상 버전에서 사용할 수 없는 선택 항목을 생략합니다.
 
-- **도구 상자**에서 사용자 지정 컨트롤을 필터링하여 대상 버전에서 사용할 수 없는 컨트롤을 제거하고 여러 컨트롤을 사용할 수 있을 경우에는 가장 최신 컨트롤만 표시합니다.
+- **도구 상자** 에서 사용자 지정 컨트롤을 필터링하여 대상 버전에서 사용할 수 없는 컨트롤을 제거하고 여러 컨트롤을 사용할 수 있을 경우에는 가장 최신 컨트롤만 표시합니다.
 
-- **IntelliSense**를 필터링하여 대상 버전에서 사용할 수 없는 언어 기능을 생략합니다.
+- **IntelliSense** 를 필터링하여 대상 버전에서 사용할 수 없는 언어 기능을 생략합니다.
 
 - **속성** 창에서 속성을 필터링하여 대상 버전에서 사용할 수 없는 속성을 생략합니다.
 
@@ -81,7 +82,7 @@ Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하�
 
 기존 Visual Basic, C# 또는 F# 프로젝트의 경우, 프로젝트 속성 대화 상자에서 대상 .NET 버전을 변경합니다. C++ 프로젝트의 대상 버전을 변경하는 방법에 대한 자세한 내용은 [대상 프레임워크 및 플랫폼 도구 집합을 수정하는 방법](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)을 참조하세요.
 
-1. **솔루션 탐색기**에서 변경하려는 프로젝트의 오른쪽 클릭 메뉴를 열고 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 변경하려는 프로젝트의 오른쪽 클릭 메뉴를 열고 **속성** 을 선택합니다.
 
 1. **속성** 창의 왼쪽 열에서 **애플리케이션** 탭을 선택합니다.
 
@@ -116,7 +117,7 @@ Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하�
 
 ## <a name="enable-linq"></a>LINQ 사용
 
-.NET Framework 3.5 이상을 대상으로 지정하면 **System.Core**에 대한 참조 및 <xref:System.Linq>에 대한 프로젝트 수준 가져오기(Visual Basic에서만)가 자동으로 추가됩니다. LINQ 기능을 사용하려면 `Option Infer`도 켜야 합니다(Visual Basic에서만). 대상을 이전 .NET Framework 버전으로 변경하면 참조 및 가져오기가 자동으로 제거됩니다. 자세한 내용은 [LINQ 작업](/dotnet/csharp/tutorials/working-with-linq)을 참조하세요.
+.NET Framework 3.5 이상을 대상으로 지정하면 **System.Core** 에 대한 참조 및 <xref:System.Linq>에 대한 프로젝트 수준 가져오기(Visual Basic에서만)가 자동으로 추가됩니다. LINQ 기능을 사용하려면 `Option Infer`도 켜야 합니다(Visual Basic에서만). 대상을 이전 .NET Framework 버전으로 변경하면 참조 및 가져오기가 자동으로 제거됩니다. 자세한 내용은 [LINQ 작업](/dotnet/csharp/tutorials/working-with-linq)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

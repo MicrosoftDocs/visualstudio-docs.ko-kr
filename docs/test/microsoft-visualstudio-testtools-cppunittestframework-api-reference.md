@@ -1,5 +1,7 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
+description: 이 문서에서는 Microsoft 기본 단위 테스트 프레임워크를 기반으로 C++ 단위 테스트를 작성하는 데 사용할 수 있는 CppUnitTestFramework 멤버에 대해 설명합니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109431"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329187"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조
 
 이 항목에서는 `Microsoft::VisualStudio::CppUnitTestFramework` 네임스페이스의 public 구성원 목록을 제공합니다. 이 API를 사용하여 Microsoft Native Unit Test Framework를 기반으로 C++ 단위 테스트를 작성합니다. 이 항목의 마지막에는 [사용 예제](#example)가 있습니다.
 
-헤더 및 라이브러리 파일은 *\<Visual Studio installation folder>\VC\Auxiliary\VS\UnitTest*에 있습니다.
+헤더 및 라이브러리 파일은 *\<Visual Studio installation folder>\VC\Auxiliary\VS\UnitTest* 에 있습니다.
 
 헤더 및 라이브러리 경로는 기본 테스트 프로젝트에서 자동으로 구성됩니다.
 
@@ -102,7 +104,7 @@ ms.locfileid: "82109431"
 TEST_CLASS(className)
 ```
 
-테스트 메서드를 포함하는 각 클래스에 필요합니다. *className*을 테스트 클래스로 식별합니다. 네임스페이스 범위에서 `TEST_CLASS`를 선언해야 합니다.
+테스트 메서드를 포함하는 각 클래스에 필요합니다. *className* 을 테스트 클래스로 식별합니다. 네임스페이스 범위에서 `TEST_CLASS`를 선언해야 합니다.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -111,7 +113,7 @@ TEST_METHOD(methodName)
 }
 ```
 
-*methodName*을 테스트 메서드로 정의합니다. 메서드의 클래스 범위에서 `TEST_METHOD`를 선언해야 합니다.
+*methodName* 을 테스트 메서드로 정의합니다. 메서드의 클래스 범위에서 `TEST_METHOD`를 선언해야 합니다.
 
 ### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> 초기화 및 정리
 
@@ -124,7 +126,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-각 테스트 메서드를 실행하기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 메서드를 실행하기 전에 실행되는 메서드로 *methodName* 을 정의합니다. `TEST_METHOD_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -133,7 +135,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
-각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_METHOD_CLEANUP`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 메서드를 실행한 후에 실행되는 메서드로 *methodName* 을 정의합니다. `TEST_METHOD_CLEANUP`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 #### <a name="test-classes"></a><a name="test_classes"></a> 테스트 클래스
 
@@ -144,7 +146,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
-각 테스트 클래스를 만들기 전에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 클래스를 만들기 전에 실행되는 메서드로 *methodName* 을 정의합니다. `TEST_CLASS_INITIALIZE`는 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -153,7 +155,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
-각 테스트 클래스를 만든 후에 실행되는 메서드로 *methodName*을 정의합니다. `TEST_CLASS_CLEANUP`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
+각 테스트 클래스를 만든 후에 실행되는 메서드로 *methodName* 을 정의합니다. `TEST_CLASS_CLEANUP`은 테스트 클래스에서 한 번만 정의할 수 있으며 테스트 클래스의 범위에서 정의해야 합니다.
 
 #### <a name="test-modules"></a><a name="test_modules"></a> 테스트 모듈
 
@@ -164,13 +166,13 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
-모듈을 로드할 때 실행되는 메서드 *methodName*을 정의합니다. `TEST_MODULE_INITIALIZE`는 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
+모듈을 로드할 때 실행되는 메서드 *methodName* 을 정의합니다. `TEST_MODULE_INITIALIZE`는 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
-모듈을 언로드할 때 실행되는 메서드 *methodName*을 정의합니다. `TEST_MODULE_CLEANUP`은 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
+모듈을 언로드할 때 실행되는 메서드 *methodName* 을 정의합니다. `TEST_MODULE_CLEANUP`은 테스트 모듈에서 한 번만 정의할 수 있으며 네임스페이스 범위에서 선언해야 합니다.
 
 ### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> 테스트 특성 만들기
 
@@ -183,9 +185,9 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
-하나 이상의 `TEST_METHOD_ATTRIBUTE` 매크로로 정의된 특성을 테스트 메서드 *testMethodName*에 추가합니다.
+하나 이상의 `TEST_METHOD_ATTRIBUTE` 매크로로 정의된 특성을 테스트 메서드 *testMethodName* 에 추가합니다.
 
-`TEST_METHOD_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
+`TEST_METHOD_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue* 를 사용하여 특성을 정의합니다.
 
 #### <a name="test-class-attributes"></a><a name="test_class_attributes"></a> 테스트 클래스 특성
 
@@ -196,9 +198,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
-하나 이상의 `TEST_CLASS_ATTRIBUTE` 매크로로 정의된 특성을 테스트 클래스 *testClassName*에 추가합니다.
+하나 이상의 `TEST_CLASS_ATTRIBUTE` 매크로로 정의된 특성을 테스트 클래스 *testClassName* 에 추가합니다.
 
-`TEST_CLASS_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
+`TEST_CLASS_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue* 를 사용하여 특성을 정의합니다.
 
 #### <a name="test-module-attributes"></a><a name="test_module_attributes"></a> 테스트 모듈 특성
 
@@ -209,9 +211,9 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-하나 이상의 `TEST_MODULE_ATTRIBUTE` 매크로로 정의된 특성을 테스트 모듈 *testModuleName*에 추가합니다.
+하나 이상의 `TEST_MODULE_ATTRIBUTE` 매크로로 정의된 특성을 테스트 모듈 *testModuleName* 에 추가합니다.
 
-`TEST_MODULE_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue*를 사용하여 특성을 정의합니다.
+`TEST_MODULE_ATTRIBUTE` 매크로는 이름 *attributeName* 및 값 *attributeValue* 를 사용하여 특성을 정의합니다.
 
 #### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a> 미리 정의된 특성
 
@@ -221,25 +223,25 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
-이름 `Owner` 및 특성 값 *ownerAlias*를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `Owner` 및 특성 값 *ownerAlias* 를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-이름 `Description` 및 특성 값 *description*을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `Description` 및 특성 값 *description* 을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-이름 `Priority` 및 특성 값 *priority*를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `Priority` 및 특성 값 *priority* 를 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-이름 `WorkItem` 및 특성 값 *workItem*을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
+이름 `WorkItem` 및 특성 값 *workItem* 을 사용하여 `TEST_METHOD_ATTRIBUTE`를 정의합니다.
 
 ```cpp
 TEST_IGNORE()
@@ -558,10 +560,10 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
 ## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
 ### <a name="logger"></a><a name="logger"></a> Logger
-Logger 클래스는 **출력 창**에 작성하는 정적 메서드를 포함합니다.
+Logger 클래스는 **출력 창** 에 작성하는 정적 메서드를 포함합니다.
 
 ### <a name="write-message"></a><a name="write_message"></a> 메시지 작성
-**출력 창**에 문자열 작성
+**출력 창** 에 문자열 작성
 
 ```cpp
 static void Logger::WriteMessage(const wchar_t* message)

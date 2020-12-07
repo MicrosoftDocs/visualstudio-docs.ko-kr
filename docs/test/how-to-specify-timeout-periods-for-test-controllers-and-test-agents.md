@@ -1,5 +1,7 @@
 ---
 title: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간
+description: 연결된 XML 구성 파일을 편집하여 테스트 컨트롤러 및 테스트 에이전트에 대한 시간 제한 값을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287287"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330006"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 
@@ -28,7 +30,7 @@ ms.locfileid: "85287287"
 
 - 테스트 컨트롤러: *QTController.exe.config*
 
-    |키 이름|Description|값|
+    |키 이름|설명|값|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|에이전트 ping 요청을 기다릴 시간(초)으로, 이후에는 연결이 끊어진 것으로 간주됩니다.|"n"초|
     |AgentSyncTimeoutInSeconds|동기화 테스트 실행을 시작할 때 모든 에이전트가 동기화되기를 기다릴 시간(초)으로, 이후에는 실행이 중단됩니다.|"n"초|
@@ -37,7 +39,7 @@ ms.locfileid: "85287287"
 
 - 테스트 에이전트: *QTAgentService.exe.config*
 
-    |키 이름|Description|값|
+    |키 이름|설명|값|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|컨트롤러에 연결을 시도할 간격을 나타내는 시간(초)입니다.|"n"초 기본값: "30"(30초)|
     |RemotingTimeoutSeconds|원격 호출이 지속될 수 있는 최대 시간(초)입니다.|"n"초 기본값: "600"(10분)|
@@ -46,7 +48,7 @@ ms.locfileid: "85287287"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>테스트 컨트롤러에 대한 에이전트 제한 시간 옵션을 지정하려면
 
-1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
+1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
 
 2. `<appSettings>` 태그를 찾습니다.
 
@@ -80,7 +82,7 @@ ms.locfileid: "85287287"
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>테스트 에이전트에 대한 에이전트 제한 시간 옵션을 지정하려면
 
-1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
+1. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* 에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
 
 2. `<appSettings>` 태그를 찾습니다.
 

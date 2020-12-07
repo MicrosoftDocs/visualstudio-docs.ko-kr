@@ -1,5 +1,7 @@
 ---
 title: Debug.Print
+description: 인쇄 명령 및 식을 계산하거나 지정된 텍스트를 표시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567842"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304128"
 ---
 # <a name="print-command"></a>인쇄 명령
 
@@ -35,7 +37,7 @@ ms.locfileid: "75567842"
 
 `text`
 
-필수 사항입니다. 계산할 식 또는 표시할 텍스트입니다.
+필수 요소. 계산할 식 또는 표시할 텍스트입니다.
 
 ## <a name="remarks"></a>설명
 

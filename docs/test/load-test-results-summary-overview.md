@@ -1,5 +1,7 @@
 ---
 title: 부하 테스트 결과 요약 개요
+description: 부하 테스트 요약을 보는 방법을 알아봅니다. 부하 테스트 요약에는 핵심 결과가 간단하고 읽기 쉬운 형식으로 제공됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584493"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328823"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 
@@ -134,7 +136,7 @@ ms.locfileid: "75584493"
 
 ## <a name="print-a-summary"></a>요약 인쇄
 
-요약의 바로 가기 메뉴에서 **인쇄**를 선택하면 부하 테스트 요약을 인쇄할 수 있습니다. 또한 요약의 바로 가기 메뉴에서 **인쇄 미리 보기**를 선택하여 인쇄 내용을 미리 볼 수 있으며, 미리 보기 화면에서 바로 인쇄할 수도 있습니다.
+요약의 바로 가기 메뉴에서 **인쇄** 를 선택하면 부하 테스트 요약을 인쇄할 수 있습니다. 또한 요약의 바로 가기 메뉴에서 **인쇄 미리 보기** 를 선택하여 인쇄 내용을 미리 볼 수 있으며, 미리 보기 화면에서 바로 인쇄할 수도 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

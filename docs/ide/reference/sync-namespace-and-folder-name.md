@@ -1,5 +1,7 @@
 ---
 title: 동기화 네임스페이스 및 폴더 이름
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 네임스페이스와 폴더 이름을 동기화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67160759"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479812"
 ---
 # <a name="sync-namespace-and-folder-name"></a>동기화 네임스페이스 및 폴더 이름
 
@@ -32,7 +34,7 @@ ms.locfileid: "67160759"
 
 1. 네임스페이스 이름에 커서를 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. **네임스페이스를 \<folder name>(으)로 변경**을 선택합니다.
+3. **네임스페이스를 \<folder name>(으)로 변경** 을 선택합니다.
 
    ![네임스페이스 및 폴더 이름 동기화](media/sync-namespace-and-folder-name.png)
 

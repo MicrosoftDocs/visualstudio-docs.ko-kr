@@ -1,5 +1,7 @@
 ---
 title: -NoSplash(devenv.exe)
+description: NoSplash devenv 명령줄 스위치를 사용하여 시작 화면이 표시되지 않도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62950655"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044000"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash(devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /NoSplash [File1[ FileN]...]
 
 - *File1*
 
-  (선택 사항) Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1*이 새 인스턴스에서 열립니다.
+  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 파일입니다. Visual Studio의 인스턴스가 없으면 간소화된 창 레이아웃으로 새 인스턴스가 만들어지고 *File1* 이 새 인스턴스에서 열립니다.
 
 - *FileN*
 
-  (선택 사항) Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
+  선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
 
 ## <a name="remarks"></a>설명
 

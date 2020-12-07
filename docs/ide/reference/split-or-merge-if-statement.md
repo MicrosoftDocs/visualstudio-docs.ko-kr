@@ -1,5 +1,7 @@
 ---
 title: 분할 또는 병합 if 문
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 if 문을 분할 또는 병합하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093684"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479929"
 ---
 # <a name="split-or-merge-if-statements"></a>분할 또는 병합 if 문
 
@@ -37,11 +39,11 @@ ms.locfileid: "79093684"
 
 1. `&&` 또는 `||` 연산자 옆의 `if` 문에 커서를 놓습니다.
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
     ![If 문 분할](../media/split-if-statement.png)
 
-3. **중첩된 if 문으로 분할**을 선택합니다.
+3. **중첩된 if 문으로 분할** 을 선택합니다.
 
     ![If 문 분할 완료](../media/split-if-statement-complete.png)
 
@@ -49,14 +51,14 @@ ms.locfileid: "79093684"
 
 1. 내부 `if` 키워드에 커서를 놓습니다.
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
     ![If 문 병합](../media/merge-if-statement.png)
 
-3. **외부 if 문과 병합**을 선택합니다.
+3. **외부 if 문과 병합** 을 선택합니다.
 
     ![If 문 병합 완료](../media/merge-if-statement-complete.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

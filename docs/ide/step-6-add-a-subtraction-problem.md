@@ -1,5 +1,7 @@
 ---
 title: '6단계: 빼기 문제 추가'
+description: 빼기 문제를 추가하고 작업을 수행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579822"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480670"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.
@@ -43,7 +45,7 @@ ms.locfileid: "77579822"
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     새 정수 변수의 이름인 **minuend**와 **subtrahend**는 프로그래밍 용어가 아닙니다. 이러한 이름은 뺌수(subtrahend)와 빼임수(minuend)를 산술 형식으로 표현한 일반적인 이름입니다. 차는 피감수에서 감수를 뺀 값입니다. 프로그램에서 변수, 컨트롤, 구성 요소 또는 메서드에 특정 이름을 사용하도록 요구하지 않기 때문에 다른 이름을 사용할 수도 있습니다. 이름을 숫자로 시작하면 안 된다는 것과 같은 몇 가지 규칙이 있지만 일반적으로 x1, x2, x3, x4 등과 같은 이름을 사용할 수 있습니다. 그러나 이 경우 코드를 읽기 어렵고 문제를 추적하기가 거의 불가능할 수 있습니다. 변수 이름을 고유하고 알아보기 쉽게 만들기 위해 이 자습서의 뒷부분에서는 곱하기(multiplicand × multiplier = product)와 나누기(dividend ÷ divisor = quotient)에 일반적인 이름을 사용합니다.
+     새 정수 변수의 이름인 **minuend** 와 **subtrahend** 는 프로그래밍 용어가 아닙니다. 이러한 이름은 뺌수(subtrahend)와 빼임수(minuend)를 산술 형식으로 표현한 일반적인 이름입니다. 차는 피감수에서 감수를 뺀 값입니다. 프로그램에서 변수, 컨트롤, 구성 요소 또는 메서드에 특정 이름을 사용하도록 요구하지 않기 때문에 다른 이름을 사용할 수도 있습니다. 이름을 숫자로 시작하면 안 된다는 것과 같은 몇 가지 규칙이 있지만 일반적으로 x1, x2, x3, x4 등과 같은 이름을 사용할 수 있습니다. 그러나 이 경우 코드를 읽기 어렵고 문제를 추적하기가 거의 불가능할 수 있습니다. 변수 이름을 고유하고 알아보기 쉽게 만들기 위해 이 자습서의 뒷부분에서는 곱하기(multiplicand × multiplier = product)와 나누기(dividend ÷ divisor = quotient)에 일반적인 이름을 사용합니다.
 
      다음으로 빼기 문제에 대해 난수 값을 제공하도록 `StartTheQuiz()` 메서드를 수정합니다.
 
@@ -60,12 +62,12 @@ ms.locfileid: "77579822"
      이 자습서의 앞부분에서 “randomizer”로 이름을 지정한 Random 클래스의 `Next()` 메서드를 여러 가지 방법으로 호출할 수 있습니다. 여러 가지 방법으로 호출할 수 있는 메서드를 오버로드된 메서드라고 하며, IntelliSense를 사용하여 이를 탐색해 볼 수 있습니다. `Next()` 메서드에 대한 IntelliSense 창의 도구 설명을 다시 살펴봅니다.
 
      ![IntelliSense 창 도구 설명](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *창 도구 설명*
+**_IntelliSense_* _ 창 도구 설명
 
      도구 설명에 **(+2개 오버로드)** 가 표시되며, 이는 `Next()` 메서드를 두 가지 다른 방법으로 호출할 수 있음을 나타냅니다. 오버로드에는 저마다 다른 개수와 형식의 인수가 포함되어 있으므로 작동 방식도 서로 조금씩 다릅니다. 예를 들어 메서드는 단일 정수 인수를 사용하고 메서드 오버로드 중 하나는 정수 하나와 문자열 하나를 사용할 수 있습니다. 수행하려는 작업을 기반으로 올바른 오버로드를 선택합니다. `StartTheQuiz()` 메서드에 코드를 추가할 때 `randomizer.Next(`를 입력하는 즉시 IntelliSense 창에 추가 정보가 나타납니다. 오버로드를 순환하려면 다음 그림과 같이 **위쪽 화살표** 키와 **아래쪽 화살표** 키를 선택합니다.
 
      ![IntelliSense의 Next&#40;&#41; 메서드 오버로드](../ide/media/express_nextoverload.png)<br/>
-***IntelliSense***의 ***Next()*** *메서드* *오버로드*
+*_**IntelliSense**_ 의 ***Next()** _ 메서드 오버로드
 
      이 경우 최소값 및 최대값을 지정할 수 있도록 마지막 오버로드를 선택하는 것이 좋습니다.
 
@@ -86,7 +88,7 @@ ms.locfileid: "77579822"
      다음 그림과 같이 프로그램에 빼기 문제가 포함되었습니다.
 
      ![뺄셈 문제가 있는 수학 퀴즈](../ide/media/express_addsubtract.png)<br/>
-*뺄셈 문제가 있는* ***수학 퀴즈***
+*_뺄셈 문제_* 가 있는 수학 퀴즈
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

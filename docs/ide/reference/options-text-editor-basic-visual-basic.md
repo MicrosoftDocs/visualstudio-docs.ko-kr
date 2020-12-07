@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, 기본(VB), 고급
+description: 기본 섹션의 고급 페이지를 사용하여 분석의 기본 설정, Import 지시문 및 강조 표시 속성을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,15 +20,15 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214646"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040994"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>옵션, 텍스트 편집기, 기본(Visual Basic), 고급
-**옵션**(**도구** 메뉴), **텍스트 편집기**의 **Basic** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.
+**옵션**(**도구** 메뉴), **텍스트 편집기** 의 **Basic** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.
 
 ## <a name="analysis"></a>분석
 
@@ -55,7 +57,7 @@ ms.locfileid: "88214646"
 
  **참조 및 키워드의 강조 표시 사용**
 
-텍스트 편집기는 기호의 모든 인스턴스 또는 `If..Then`, `While...End While` 또는 `Try...Catch...Finally` 등의 절에 있는 모든 키워드를 강조 표시할 수 있습니다. **Ctrl** + **Shift** + **아래쪽 화살표** 또는 **Ctrl** + **Shift** + **위쪽 화살표**를 눌러 강조 표시된 참조 또는 키워드 간에 탐색할 수 있습니다.
+텍스트 편집기는 기호의 모든 인스턴스 또는 `If..Then`, `While...End While` 또는 `Try...Catch...Finally` 등의 절에 있는 모든 키워드를 강조 표시할 수 있습니다. **Ctrl** + **Shift** + **아래쪽 화살표** 또는 **Ctrl** + **Shift** + **위쪽 화살표** 를 눌러 강조 표시된 참조 또는 키워드 간에 탐색할 수 있습니다.
 
 ## <a name="outlining"></a>개요
 

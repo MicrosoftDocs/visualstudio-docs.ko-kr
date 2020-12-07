@@ -1,5 +1,7 @@
 ---
 title: 문자열 보간 간소화
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 문자열 보간을 간소화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5e801d417280d5d9ce8225c2185b582544fe2cef
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 422e3f24b98fd1ddd155e5c3975833b4e4cb248c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810339"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479942"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>문자열 보간 리팩터링 간소화
 
@@ -35,12 +37,12 @@ ms.locfileid: "90810339"
 
 1. 다음 문자열 보간에 캐럿을 놓습니다.
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
 3. **보간 간소화** 선택
 
     ![문자열 보간 간소화](media/simplify-string-interpolation.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

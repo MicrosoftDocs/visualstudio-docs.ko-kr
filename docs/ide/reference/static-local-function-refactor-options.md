@@ -1,5 +1,7 @@
 ---
 title: 정적 로컬 함수 리팩터링 옵션
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여, 로컬 함수를 정적으로 만들어서 함수 밖에서 정의된 변수를 함수 선언과 호출로 전달하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77144832"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479890"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>정적 로컬 함수 리팩터링 및 빠른 작업
 
@@ -38,11 +40,11 @@ ms.locfileid: "77144832"
 
 1. 로컬 함수 이름 위에 캐럿을 놓습니다.
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    ![로컬 함수를 정적으로 지정](media/make-local-function-static.png)
 
-3. **로컬 함수를 '정적'으로 지정**을 선택합니다.
+3. **로컬 함수를 '정적'으로 지정** 을 선택합니다.
 
 ## <a name="pass-variable-explicitly-in-a-static-local-function"></a>정적 로컬 함수에서 변수를 명시적으로 전달
 
@@ -60,12 +62,12 @@ ms.locfileid: "77144832"
 
 1. 정적 로컬 함수에서 사용되는 변수에 캐럿을 배치합니다.
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    ![정적 로컬 함수에서 변수를 명시적으로 전달](media/pass-variable-explicitly-static-local-function.png)
 
 3. **Pass variable explicitly in local static function**(변수를 로컬 static 함수로 명시적으로 전달)을 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: 정적 도우미 클래스 | Microsoft IntelliTest 개발자 테스트 도구
+description: 매개 변수가 있는 단위 테스트를 작성하는 데 사용하도록 IntelliTest에서 제공하는 정적 도우미 클래스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315189"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329473"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 
@@ -34,11 +36,11 @@ IntelliTest는 [매개 변수가 있는 단위 테스트](test-generation.md#par
 
 가정(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사전 조건](test-generation.md#precondition))을 표현하는 데 사용되는 정적 클래스입니다. 이 클래스의 메서드는 부적절한 테스트 입력을 필터링하는 데 사용할 수 있습니다.
 
-가정된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssumeFailedException**이 throw됩니다. 이로 인해 테스트가 자동으로 무시됩니다.
+가정된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssumeFailedException** 이 throw됩니다. 이로 인해 테스트가 자동으로 무시됩니다.
 
 **예제**
 
-다음 매개 변수가 있는 테스트에서는 **j=0**을 간주하지 않습니다.
+다음 매개 변수가 있는 테스트에서는 **j=0** 을 간주하지 않습니다.
 
 ```csharp
 public void TestSomething(int i, int j) {
@@ -57,16 +59,16 @@ public void TestSomething(int i, int j) {
           return;
 ```
 
-단, 실패한 **PexAssume**으로 인해 테스트 사례가 생성되지 않는 경우는 제외합니다. **if** 문의 경우 IntelliTest는 개별 테스트 사례를 생성하여 **if** 문의 **then** 분기를 검사합니다.
+단, 실패한 **PexAssume** 으로 인해 테스트 사례가 생성되지 않는 경우는 제외합니다. **if** 문의 경우 IntelliTest는 개별 테스트 사례를 생성하여 **if** 문의 **then** 분기를 검사합니다.
 
-**PexAssume**에는 문자열, 배열 및 컬렉션에 대한 가정에 맞게 특수화된 중첩 클래스도 포함됩니다.
+**PexAssume** 에는 문자열, 배열 및 컬렉션에 대한 가정에 맞게 특수화된 중첩 클래스도 포함됩니다.
 
 <a name="pexassert"></a>
 ## <a name="pexassert"></a>PexAssert
 
 어설션(예: [매개 변수가 있는 단위 테스트](test-generation.md#parameterized-unit-testing)의 [사후 조건](test-generation.md#postcondition))을 표현하는 데 사용되는 정적 클래스입니다.
 
-어설션된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssertFailedException**이 throw되어 테스트가 실패합니다.
+어설션된 조건이 일부 테스트 입력에 적용되지 않으면 **PexAssertFailedException** 이 throw되어 테스트가 실패합니다.
 
 **예제**
 
@@ -85,7 +87,7 @@ public void TestSomething(int i) {
 
 테스트에 보조 입력 값을 제공하며 [매개 변수가 있는 모의 개체](input-generation.md#parameterized-mocks)를 구현하는 데 사용할 수 있는 정적 클래스입니다.
 
-**PexChoose** 클래스는 특정 입력 값에 대해 테스트가 통과하는지 아니면 실패하는지를 확인하는 데 사용할 수 없습니다. **PexChoose**는 *선택 항목*이라고도 하는 입력 값만을 제공합니다. 사용자는 입력 값을 제한해야 하며 테스트 통과 또는 실패를 정의하는 어설션을 작성해야 합니다.
+**PexChoose** 클래스는 특정 입력 값에 대해 테스트가 통과하는지 아니면 실패하는지를 확인하는 데 사용할 수 없습니다. **PexChoose** 는 *선택 항목* 이라고도 하는 입력 값만을 제공합니다. 사용자는 입력 값을 제한해야 하며 테스트 통과 또는 실패를 정의하는 어설션을 작성해야 합니다.
 
 **작동 모드**
 
@@ -95,9 +97,9 @@ public void TestSomething(int i) {
 
 * 특정 테스트 사례에 대해 생성된 코드에서는 특정 방법으로 선택 항목 공급자를 설정하므로, 해당 테스트 사례를 다시 실행하면 특정 선택 항목이 특정 실행 경로를 트리거합니다.
 
-**사용 현황**
+**사용법**
 
-* **PexChoose.Value**를 호출해서 새 값을 생성하면 됩니다.
+* **PexChoose.Value** 를 호출해서 새 값을 생성하면 됩니다.
 
 ```csharp
 public int Foo() {
@@ -110,7 +112,7 @@ public int Foo() {
 
 명명된 값을 기록하기 위한 정적 클래스입니다.
 
-IntelliTest가 코드를 탐색할 때 **PexObserve**는 형식 문자열 표현으로 계산된 값을 기록하는 데 사용됩니다. 이 값은 고유한 이름과 연결됩니다.
+IntelliTest가 코드를 탐색할 때 **PexObserve** 는 형식 문자열 표현으로 계산된 값을 기록하는 데 사용됩니다. 이 값은 고유한 이름과 연결됩니다.
 
 ```csharp
 PexObserve.Value<string>("result", result);
@@ -141,7 +143,7 @@ public partial class MathExTests {
 
 매개 변수에 대한 제약 조건을 무시하고 값과 연결된 기호 정보를 인쇄하는 데 사용되는 정적 클래스입니다.
 
-**사용 현황**
+**사용법**
 
 일반적으로 IntelliTest는 실행 중에 코드의 모든 실행 경로를 검사하려고 시도합니다. 그러나 특히 가정 및 어설션 조건을 계산할 경우에는 일부 가능한 사례를 탐색하면 안 됩니다.
 

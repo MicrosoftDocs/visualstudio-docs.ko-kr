@@ -1,5 +1,7 @@
 ---
 title: -SafeMode(devenv.exe)
+description: SafeMode devenv 명령줄 스위치를 사용하여 안전 모드에서 Visual Studio를 시작하고 기본 환경 및 서비스만 로드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593592"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039877"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode(devenv.exe)
 

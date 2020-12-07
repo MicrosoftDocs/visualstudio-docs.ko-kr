@@ -1,5 +1,6 @@
 ---
 title: for 루프를 foreach 문으로 변환하도록 리팩터링
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 for 루프와 foreach 문 간에 변환하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70c2b17f00c1f5e72ce0e913c360b4655b18df12
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045915"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040825"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for 루프와 foreach 문 사이를 변환하는 리팩터링
 

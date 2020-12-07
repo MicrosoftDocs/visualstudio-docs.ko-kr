@@ -1,5 +1,7 @@
 ---
 title: '3단계: 카운트다운 타이머 추가'
+description: 퀴즈를 푸는 사람이 퀴즈를 마칠 때까지 남은 시간(초)을 추적하도록 카운트다운 타이머를 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579875"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480644"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3단계: 카운트다운 타이머 추가
 
@@ -29,7 +31,7 @@ ms.locfileid: "77579875"
 
 ## <a name="to-add-a-countdown-timer"></a>카운트다운 타이머를 추가하려면
 
-1. 이전 절차에서와 같이 **timeLeft**라는 정수 변수를 추가합니다. 이 코드는 다음과 같습니다.
+1. 이전 절차에서와 같이 **timeLeft** 라는 정수 변수를 추가합니다. 이 코드는 다음과 같습니다.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
@@ -38,11 +40,11 @@ ms.locfileid: "77579875"
 
      이제 타이머와 같이 실제로 초를 세는 메서드가 있어야 합니다. 이 메서드는 지정된 시간이 지나면 이벤트를 발생시킵니다.
 
-2. 디자인 창에서 **도구 상자**의 **구성 요소** 범주에 있는 <xref:System.Windows.Forms.Timer> 컨트롤을 폼으로 이동합니다.
+2. 디자인 창에서 **도구 상자** 의 **구성 요소** 범주에 있는 <xref:System.Windows.Forms.Timer> 컨트롤을 폼으로 이동합니다.
 
      그러면 디자인 창의 맨 아래에 있는 회색 영역에 이 컨트롤이 표시됩니다.
 
-3. 폼에서 방금 추가한 **timer1** 아이콘을 선택하고 **Interval** 속성을 **1000**으로 설정합니다.
+3. 폼에서 방금 추가한 **timer1** 아이콘을 선택하고 **Interval** 속성을 **1000** 으로 설정합니다.
 
      간격 값은 밀리초 단위이므로 값으로 1000을 지정하면 <xref:System.Windows.Forms.Timer.Tick> 이벤트가 1초 간격으로 발생합니다.
 
@@ -57,7 +59,7 @@ ms.locfileid: "77579875"
 
      추가한 문을 기반으로 타이머는 1초 간격으로 **timeLeft** 정수 변수가 0보다 큰지 확인하여 시간이 다 되었는지 여부를 확인합니다. 이 값이 0보다 크면 시간이 남은 것입니다. 타이머는 먼저 timeLeft에서 1을 뺀 다음, 퀴즈를 푸는 사람에게 남은 시간(초)을 표시하도록 **timeLabel** 컨트롤의 **Text** 속성을 업데이트합니다.
 
-     남은 시간이 없으면 타이머가 중지되고 **timeLabel** 컨트롤의 텍스트가 **Time's up!** 으로 변경되어 표시됩니다. 퀴즈가 끝났다는 메시지 상자가 나타나고 답(이 경우, addend1과 addend2를 더한 값)이 표시됩니다. 퀴즈를 푸는 사람이 다른 퀴즈를 시작할 수 있도록 **startButton** 컨트롤의 **Enabled** 속성이 **true**로 설정됩니다.
+     남은 시간이 없으면 타이머가 중지되고 **timeLabel** 컨트롤의 텍스트가 **Time's up!** 으로 변경되어 표시됩니다. 퀴즈가 끝났다는 메시지 상자가 나타나고 답(이 경우, addend1과 addend2를 더한 값)이 표시됩니다. 퀴즈를 푸는 사람이 다른 퀴즈를 시작할 수 있도록 **startButton** 컨트롤의 **Enabled** 속성이 **true** 로 설정됩니다.
 
      이제 프로그램에서 결정을 내리도록 지시하는 방법인 `if else` 문을 추가했습니다. `if else` 문은 다음과 같습니다.
 

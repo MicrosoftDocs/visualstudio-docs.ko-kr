@@ -1,5 +1,7 @@
 ---
 title: 로컬 함수를 메서드로 변환
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 로컬 함수를 메서드로 변환하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -7,12 +9,12 @@ ms.author: kehavens
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64a46fc6221f00e6bb130be8010cb2544a00dcc8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71301686"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305571"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>로컬 함수를 메서드로 변환
 
@@ -32,7 +34,7 @@ ms.locfileid: "71301686"
 
     ![로컬 함수를 메서드 코드로 변환 샘플](media/convert-local-function-to-method.png)
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
     ![로컬 함수를 메서드 코드 수정 사항으로 변환 샘플](media/convert-local-function-to-method-codefix.png)
 
@@ -40,7 +42,7 @@ ms.locfileid: "71301686"
 
     ![로컬 함수를 메서드 결과로 변환 샘플](media/convert-local-function-to-method-result.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

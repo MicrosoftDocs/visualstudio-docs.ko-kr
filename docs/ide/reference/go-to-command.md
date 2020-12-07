@@ -1,5 +1,7 @@
 ---
 title: 이동 명령
+description: 이동 명령 및 커서를 지정된 줄로 이동하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0ef161cb8108ed3244c263ee51fee4251fc05d8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569207"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305211"
 ---
 # <a name="go-to-command"></a>이동 명령
 지정된 줄로 커서를 이동합니다.
@@ -31,7 +33,7 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>인수
 `linenumber`\
-(선택 사항) 이동할 줄 번호를 나타내는 정수입니다.
+선택 사항입니다. 이동할 줄 번호를 나타내는 정수입니다.
 
 ## <a name="remarks"></a>설명
 줄 번호는 1부터 시작합니다. `linenumber` 값이 1보다 작은 경우 첫 번째 줄이 표시됩니다. `linenumber` 값이 마지막 줄 번호보다 큰 경우 마지막 줄이 표시됩니다.

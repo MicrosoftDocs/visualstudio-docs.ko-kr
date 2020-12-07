@@ -1,5 +1,7 @@
 ---
 title: C++용 CTest 사용 방법
+description: 기본적으로 Visual Studio IDE에 통합된 CTest를 사용하여 테스트를 만들고 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2020
 ms.topic: how-to
 ms.author: corob
@@ -7,16 +9,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: c429c9e676ead54bb9f168e3220bf2d4791fac63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ed713e8b216d64816abd9e25d4d84ce53c44499
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287235"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329993"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Visual Studio 2017 이상에서 C++용 CTest를 사용하는 방법 | Microsoft Docs
 
-CMake(CTest 포함)는 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 기본적으로 Visual Studio IDE에 통합되어 있습니다. 머신에 설치해야 하는 경우 Visual Studio 설치 관리자 프로그램을 열고 **C++를 사용한 데스크톱 개발** 단추를 클릭한 다음, **수정**을 클릭합니다. 워크로드 구성 요소 목록 아래에서 **Windows용 C++ CMake 도구**를 선택합니다.
+CMake(CTest 포함)는 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 기본적으로 Visual Studio IDE에 통합되어 있습니다. 머신에 설치해야 하는 경우 Visual Studio 설치 관리자 프로그램을 열고 **C++를 사용한 데스크톱 개발** 단추를 클릭한 다음, **수정** 을 클릭합니다. 워크로드 구성 요소 목록 아래에서 **Windows용 C++ CMake 도구** 를 선택합니다.
 
 ## <a name="to-write-tests"></a>테스트를 작성하려면
 
@@ -26,7 +28,7 @@ Visual Studio에서 CMake를 사용하는 방법에 대한 자세한 내용은 [
 
 ## <a name="to-run-tests"></a>테스트를 실행하려면
 
-CTest는 **테스트 탐색기**와 완전히 통합되어 있고 Google 및 Boost 단위 테스트 프레임워크를 모두 지원합니다. 이러한 프레임워크는 기본적으로 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 포함됩니다. 그러나 이전 버전의 Visual Studio에서 프로젝트를 업그레이드하는 경우 Visual Studio 설치 관리자 프로그램을 사용하여 해당 프레임워크를 설치해야 할 수 있습니다.
+CTest는 **테스트 탐색기** 와 완전히 통합되어 있고 Google 및 Boost 단위 테스트 프레임워크를 모두 지원합니다. 이러한 프레임워크는 기본적으로 **C++를 통한 데스크톱 개발** 워크로드의 구성 요소로 포함됩니다. 그러나 이전 버전의 Visual Studio에서 프로젝트를 업그레이드하는 경우 Visual Studio 설치 관리자 프로그램을 사용하여 해당 프레임워크를 설치해야 할 수 있습니다.
 
 다음 그림은 Google Test 프레임워크를 사용하여 실행되는 CTest의 결과를 보여줍니다.
 

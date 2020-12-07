@@ -1,5 +1,7 @@
 ---
 title: Work with multiple user accounts
+description: 모든 Microsoft 계정을 Visual Studio에 추가하여 별도로 로그인하지 않고도 모든 계정에서 리소스에 액세스할 수 있도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671339"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480345"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -115,7 +117,7 @@ Visual Studio에 추가 계정을 추가하려면:
 
 1. **Visual Studio** 아래에서 **계속** 을 선택합니다.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![계속 옵션을 보여 주는 디바이스 로그인 페이지의 스크린샷.](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. 프롬프트에 따라 계정 자격 증명을 입력합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 코드 조각 문제 해결
+description: 조각 파일의 잘못된 내용이나 손상된 조각 파일에 의해 일반적으로 발생하는 IntelliSense 코드 조각 문제를 해결하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588696"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479188"
 ---
 # <a name="troubleshoot-snippets"></a>코드 조각 문제 해결
 
@@ -25,9 +27,9 @@ IntelliSense 코드 조각 문제는 코드 조각 파일이 손상되었거나 
 
 ## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>코드 조각은 파일 탐색기에서 Visual Studio 소스 파일로 끌어올 수 없습니다.
 
-- 코드 조각 파일의 XML은 손상되었을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
+- 코드 조각 파일의 XML은 손상되었을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기** 는 XML 구조에서 문제를 찾을 수 있습니다.
 
-- 코드 조각 파일은 코드 조각 스키마를 준수하지 않을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기**는 XML 구조에서 문제를 찾을 수 있습니다.
+- 코드 조각 파일은 코드 조각 스키마를 준수하지 않을 수 있습니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 **XML 편집기** 는 XML 구조에서 문제를 찾을 수 있습니다.
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>코드에는 강조 표시되지 않는 컴파일러 오류가 있습니다.
 

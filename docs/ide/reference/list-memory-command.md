@@ -1,5 +1,7 @@
 ---
 title: 메모리 목록 표시 명령
+description: 메모리 목록 표시 명령 및 지정된 메모리 범위의 내용을 표시하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568713"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305321"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.
@@ -34,24 +36,24 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>인수
 `expression`
 
-(선택 사항) 메모리를 표시하기 시작할 메모리 주소입니다.
+선택 사항입니다. 메모리를 표시하기 시작할 메모리 주소입니다.
 
 ## <a name="switches"></a>스위치
 /ANSI&#124;Unicode
 
-(선택 사항) 메모리에 해당하는 문자(ANSI 또는 유니코드)로 메모리를 표시합니다.
+선택 사항입니다. 메모리에 해당하는 문자(ANSI 또는 유니코드)로 메모리를 표시합니다.
 
 /Count:`number`
 
-(선택 사항) `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
+선택 사항입니다. `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
 
 /Format:`formattype`
 
-(선택 사항) **메모리** 창에서 메모리 정보를 볼 형식(OneByte, TwoBytes, FourBytes, EightBytes, Float(32비트) 또는 Double(64비트))을 지정합니다. OneByte를 사용하는 경우 `/Unicode`를 사용할 수 없습니다.
+선택 사항입니다. **메모리** 창에서 메모리 정보를 볼 형식(OneByte, TwoBytes, FourBytes, EightBytes, Float(32비트) 또는 Double(64비트))을 지정합니다. OneByte를 사용하는 경우 `/Unicode`를 사용할 수 없습니다.
 
 /Hex&#124;Signed&#124;Unsigned
 
-(선택 사항) 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
+선택 사항입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
 
 ## <a name="remarks"></a>설명
 모든 스위치를 포함한 전체 **Debug.ListMemory** 명령을 작성하는 대신 특정 스위치를 지정된 값으로 미리 설정한 미리 정의된 별칭을 사용하여 명령을 호출할 수 있습니다. 예를 들어, 다음을 입력하는 대신

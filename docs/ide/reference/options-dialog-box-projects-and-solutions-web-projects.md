@@ -1,5 +1,6 @@
 ---
 title: 옵션 대화 상자의 웹 프로젝트
+description: 웹 프로젝트 옵션을 사용하여 웹 프로젝트가 Visual Studio 내에서의 개발에 사용할 웹 서버를 설정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102638"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044013"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 

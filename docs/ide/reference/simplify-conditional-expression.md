@@ -1,5 +1,7 @@
 ---
 title: 조건식 단순화
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 조건식을 간소화하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dd7b3f29e804ec5e925c34f7994164d5a8465a50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810352"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480215"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>조건식 단순화 리팩터링
 
@@ -34,7 +36,7 @@ ms.locfileid: "90810352"
 
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
-3. **조건식 단순화**를 선택합니다.
+3. **조건식 단순화** 를 선택합니다.
 
     ![조건식 단순화](media/simplify-conditional-expression.png)
 

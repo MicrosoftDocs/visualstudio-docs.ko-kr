@@ -1,5 +1,7 @@
 ---
 title: 줄 이동
+description: 줄 이동 대화 상자에 대해 알아보고, 활성 문서에서 특정 줄로 이동할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249872"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304208"
 ---
 # <a name="go-to-line-dialog-box"></a>행 이동 대화 상자
 
-**줄 이동** 대화 상자를 사용하면 활성 문서의 특정 줄로 이동할 수 있습니다. 이 대화 상자에 액세스하려면 편집할 문서를 열고 **편집** > **이동** > **줄 이동**을 선택하거나 **Ctrl**+**G**를 누릅니다.
+**줄 이동** 대화 상자를 사용하면 활성 문서의 특정 줄로 이동할 수 있습니다. 이 대화 상자에 액세스하려면 편집할 문서를 열고 **편집** > **이동** > **줄 이동** 을 선택하거나 **Ctrl**+**G** 를 누릅니다.
 
 ![Visual Studio의 줄 이동 대화 상자](media/go-to-line-dialog-box.png)
 

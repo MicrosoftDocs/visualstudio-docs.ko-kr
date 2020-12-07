@@ -1,5 +1,6 @@
 ---
 title: 테스트 컨트롤러/테스트 에이전트 요구 사항(부하 테스트)
+description: 부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항에 대해 알아봅니다. Visual Studio는 여러 테스트 형식을 지원합니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810551"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330188"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 

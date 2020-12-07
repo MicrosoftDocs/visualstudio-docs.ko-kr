@@ -1,5 +1,6 @@
 ---
 title: 관례에서 생성을 통한 테스트 우선 개발
+description: 관례에서 생성 기능을 사용하여 테스트 우선 개발 접근 방식을 통합하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 10/09/2017
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d12801f4397cbca1e9d4c0334f18908f93aecd
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d763a937ac23b397151aec163c2d0d90d7ebe6ba
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102612"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479682"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 

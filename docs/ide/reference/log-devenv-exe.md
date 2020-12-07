@@ -1,5 +1,7 @@
 ---
 title: -Log(devenv.exe)
+description: Log devenv 명령줄 스위치를 사용하여 문제 해결을 위해 모든 작업을 로그 파일에 기록하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9dae594df60d75ced4ba6bdda5cb37c8c07a852
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595464"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040578"
 ---
 # <a name="log-devenvexe"></a>/Log(devenv.exe)
 

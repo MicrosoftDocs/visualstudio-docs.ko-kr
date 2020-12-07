@@ -1,5 +1,7 @@
 ---
 title: 옵션, 텍스트 편집기, C/C++, 실험적
+description: C/C++ 섹션의 실험적 페이지를 사용하여 IntelliSense 및 검색 데이터베이스와 관련된 실험적 동작을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278705"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040305"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
 
@@ -24,11 +26,11 @@ ms.locfileid: "77278705"
 
 ::: moniker range="vs-2017"
 
-이 문서에서는 Visual Studio 2017의 옵션을 설명합니다. Visual Studio 2015의 경우 목차 위의 선택기에서 **2015**를 선택합니다.
+이 문서에서는 Visual Studio 2017의 옵션을 설명합니다. Visual Studio 2015의 경우 목차 위의 선택기에서 **2015** 를 선택합니다.
 
 ::: moniker-end
 
-이 속성 페이지에 액세스하려면 **Ctrl**+**Q**를 눌러 검색 상자를 활성화한 다음, **실험적**을 입력합니다. 검색에서 처음 몇 글자 후에 페이지를 찾습니다. **도구** > **옵션**을 선택하고 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음, **실험적**을 선택하여 액세스할 수도 있습니다.
+이 속성 페이지에 액세스하려면 **Ctrl**+**Q** 를 눌러 검색 상자를 활성화한 다음, **실험적** 을 입력합니다. 검색에서 처음 몇 글자 후에 페이지를 찾습니다. **도구** > **옵션** 을 선택하고 **텍스트 편집기**, **C/C++** 를 차례로 확장한 다음, **실험적** 을 선택하여 액세스할 수도 있습니다.
 
 이러한 기능은 Visual Studio 설치에서 사용할 수 있습니다.
 
@@ -43,7 +45,7 @@ ms.locfileid: "77278705"
 
 ## <a name="enable-faster-project-load"></a>빠른 프로젝트 로드 사용
 
-Visual Studio 2017 버전 15.3부터 이 기능을 **프로젝트 캐싱 사용**이라고 하며 [VC++ 프로젝트 설정](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) 속성 페이지로 이동되었습니다.
+Visual Studio 2017 버전 15.3부터 이 기능을 **프로젝트 캐싱 사용** 이라고 하며 [VC++ 프로젝트 설정](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) 속성 페이지로 이동되었습니다.
 
 이 옵션을 사용하면 다음에 프로젝트를 열 때 Visual Studio에서 프로젝트 데이터를 캐시할 수 있으며, 프로젝트 파일에서 다시 계산하지 않고 캐시한 데이터를 로드할 수 있습니다. 캐시한 데이터를 사용하면 프로젝트 로드 시간이 상당히 빨라집니다.
 
@@ -61,7 +63,7 @@ Visual Studio 2017 버전 15.3부터 이 기능을 **프로젝트 캐싱 사용*
 
 - **온라인 도움말** - 오류 메시지에 대한 온라인 도움말 검색
 
-- 기타...
+- 등...
 
 ## <a name="see-also"></a>참고 항목
 

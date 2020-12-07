@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 코드 분석
+description: 코드 분석, 프로젝트 디자이너 및 코드에서 실행하도록 선택할 수 있는 코드 분석 도구의 포함 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659357"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041034"
 ---
 # <a name="code-analysis-project-designer"></a>프로젝트 디자이너, 코드 분석
 
 코드에서 실행할 수 있는 코드 분석 도구가 들어 있습니다. 이 도구는 Microsoft .NET 디자인 지침에 명시된 프로그래밍 및 디자인 규칙의 위반과 같은 어셈블리 관련 정보를 보고합니다.
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 
 코드 분석 사용\
 프로젝트에 대한 코드 분석을 사용하거나 사용하지 않도록 설정합니다.

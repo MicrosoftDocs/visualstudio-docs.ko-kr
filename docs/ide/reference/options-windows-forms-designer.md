@@ -1,5 +1,7 @@
 ---
 title: 옵션, Windows Forms 디자이너, 일반
+description: 일반 페이지를 사용하여 Visual Studio에서 Windows Forms 디자이너의 모눈 및 기타 기능에 대한 기본 설정을 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d7172ca12344ab046c9bf65e7df280a9fa6dd0aa
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568063"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040084"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>옵션 대화 상자: Windows Forms 디자이너
 

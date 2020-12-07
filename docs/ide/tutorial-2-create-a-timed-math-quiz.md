@@ -1,5 +1,7 @@
 ---
 title: '자습서 2: 시간이 지정된 수학 퀴즈 만들기'
+description: 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
@@ -9,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b0044e5d3a08e46318a325443e9f05742e141127
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810850"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479110"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
@@ -50,7 +52,7 @@ ms.locfileid: "90810850"
 |[7단계: 곱하기 및 나누기 문제 추가](../ide/step-7-add-multiplication-and-division-problems.md)|난수를 생성하고 타이머를 사용하며 올바른 답을 확인하는 곱하기 및 나누기 문제를 추가합니다.|
 |[8단계: 퀴즈 사용자 지정](../ide/step-8-customize-the-quiz.md)|색 변경과 힌트 추가 같은 다른 기능을 사용해 봅니다.|
 
-또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요.
+또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic fundamentals: Development for absolute beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)(Visual Basic 기초: 완전 초보자를 위한 개발)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

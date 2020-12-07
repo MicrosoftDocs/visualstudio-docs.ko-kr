@@ -1,5 +1,7 @@
 ---
 title: 단위 테스트
+description: 개발자와 테스터에게 코드에서 논리 오류를 빠르게 찾는 방법을 제공하기 위해 사용할 수 있는 단위 테스트 도구에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099312"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330136"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 
@@ -24,7 +26,7 @@ ms.locfileid: "92099312"
 
 단위 테스트 도구는 다음과 같습니다.
 
-* **테스트 탐색기**&mdash;단위 테스트를 실행하고 **테스트 탐색기**에서 결과를 확인합니다. 타사 프레임워크를 비롯하여 **테스트 탐색기**용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.
+* **테스트 탐색기**&mdash;단위 테스트를 실행하고 **테스트 탐색기** 에서 결과를 확인합니다. 타사 프레임워크를 비롯하여 **테스트 탐색기** 용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.
 
 * **관리 코드용 Microsoft 단위 테스트 프레임워크**&mdash;관리 코드용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 .NET 코드 테스트용 프레임워크를 제공합니다.
 
@@ -46,7 +48,7 @@ ms.locfileid: "92099312"
 |**테스트 탐색기를 사용한 단위 테스트:** 테스트 탐색기를 통해 보다 다 생산적이고 효율적인 단위 테스트를 만드는 방법에 대해 알아봅니다.|- [유닛 테스트 기본 사항](../test/unit-test-basics.md)<br />- [단위 테스트 프로젝트 만들기](../test/create-a-unit-test-project.md)<br />- [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)<br />- [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)|
 |**단위 테스트 C++**|- [C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)|
 |**단위 테스트 격리**|- [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**코드 검사를 사용하여 테스트된 프로젝트의 코드의 비율 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아봅니다.|- [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**코드 검사를 사용하여 프로젝트의 코드 중 테스트되는 부분 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아보세요.|- [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다.|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**품질 게이트 설정:** 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 하는 품질 게이트를 만드는 방법에 대해 알아봅니다.|- [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**테스트 옵션 설정:** 테스트 결과가 저장되는 위치와 같이 테스트 옵션을 구성하는 방법에 대해 알아봅니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
@@ -56,6 +58,6 @@ ms.locfileid: "92099312"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>에서는 단위 테스트를 지원하는 특성, 예외, 어설션 및 기타 클래스를 제공하는 UnitTesting 네임스페이스에 대해 설명합니다.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web>에서는 ASP.NET 및 웹 서비스 단위 테스트를 지원하여 UnitTesting 네임스페이스를 확장하는 UnitTesting.Web 네임스페이스에 대해 설명합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 품질 향상](../test/improve-code-quality.md)

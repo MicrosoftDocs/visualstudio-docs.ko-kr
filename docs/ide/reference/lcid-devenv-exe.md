@@ -1,5 +1,7 @@
 ---
 title: -LCID(devenv.exe)
+description: LCID devenv 명령줄 스위치를 사용하여 IDE 내의 텍스트, 통화 및 기타 값에 사용되는 기본 언어를 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557938"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043987"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  필수 사항입니다. 지정한 언어의 로캘 식별자(LCID)입니다.
+  필수 요소. 지정한 언어의 로캘 식별자(LCID)입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -51,8 +53,8 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 
 |언어|LCID|
 |--------------|----------|
-|중국어 (간체)|2052|
-|중국어 (번체)|1028|
+|중국어(간체)|2052|
+|중국어(번체)|1028|
 |체코어|1029|
 |영어|1033|
 |프랑스어|1036|

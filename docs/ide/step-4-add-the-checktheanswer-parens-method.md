@@ -1,5 +1,7 @@
 ---
 title: '4단계: CheckTheAnswer() 메서드 추가'
+description: CheckTheAnswer() 메서드를 작성하여 수학 문제의 답이 맞는지 여부를 확인하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: a1d9d22363aa26628d122b451c51fb7d1df29fbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472616"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480592"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4단계: CheckTheAnswer() 메서드 추가
 

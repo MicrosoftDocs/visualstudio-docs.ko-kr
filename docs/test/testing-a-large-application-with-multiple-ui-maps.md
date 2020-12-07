@@ -1,5 +1,7 @@
 ---
 title: 여러 UI 맵이 포함된 대형 애플리케이션 테스트
+description: 여러 UI 맵을 사용하여 대규모 애플리케이션을 테스트하는 경우 코딩된 UI 테스트를 사용하는 방법을 알아봅니다. 이 기능을 사용하려면 Visual Studio Enterprise가 필요합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286585"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330162"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 애플리케이션 테스트
 
@@ -50,26 +52,26 @@ UI 맵 파일을 여러 개 사용하면 다음과 같은 이점을 얻을 수 �
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>코딩된 UI 테스트 프로젝트에 UI 맵을 추가하려면
 
-1. **솔루션 탐색기**에서 코딩된 UI 테스트 프로젝트에 모든 UI 맵을 저장할 폴더를 만들려면 코딩된 UI 테스트 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고, **추가**를 가리킨 다음, **새 폴더**를 선택합니다. 예를 들어 이 폴더의 이름을 `UIMaps`라고 지정해 봅니다.
+1. **솔루션 탐색기** 에서 코딩된 UI 테스트 프로젝트에 모든 UI 맵을 저장할 폴더를 만들려면 코딩된 UI 테스트 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고, **추가** 를 가리킨 다음, **새 폴더** 를 선택합니다. 예를 들어 이 폴더의 이름을 `UIMaps`라고 지정해 봅니다.
 
     새 폴더는 코딩된 UI 테스트 프로젝트 아래에 표시됩니다.
 
-2. `UIMaps` 폴더를 마우스 오른쪽 단추로 클릭하고 **추가**를 가리킨 다음 **새 항목**을 선택합니다.
+2. `UIMaps` 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** 를 가리킨 다음 **새 항목** 을 선택합니다.
 
     **새 항목 추가** 대화 상자가 표시됩니다.
 
    > [!NOTE]
    > 코딩된 UI 테스트 프로젝트 내에 있어야 새로 코딩된 UI 테스트 맵을 추가할 수 있습니다.
 
-3. 목록에서 **코딩된 UI 테스트 맵**을 선택합니다.
+3. 목록에서 **코딩된 UI 테스트 맵** 을 선택합니다.
 
     **이름** 상자에 새 UI 맵의 이름을 입력합니다. 해당 맵이 나타낼 구성 요소 또는 페이지의 이름을 사용합니다(예: `HomePageMap`).
 
-4. **추가**를 선택합니다.
+4. **추가** 를 선택합니다.
 
     Visual Studio 창이 최소화되고 **코딩된 UI 테스트 빌더** 대화 상자가 표시됩니다.
 
-5. 첫 번째 메서드에 대한 작업을 기록하고 **코드 생성**을 선택합니다.
+5. 첫 번째 메서드에 대한 작업을 기록하고 **코드 생성** 을 선택합니다.
 
 6. 첫 번째 구성 요소 또는 페이지에 대한 모든 작업 및 어설션을 기록한 다음, 메서드로 그룹화한 후 **코딩된 UI 테스트 빌더** 대화 상자를 닫습니다.
 
@@ -139,7 +141,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

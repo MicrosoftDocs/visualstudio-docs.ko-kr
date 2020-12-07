@@ -1,5 +1,7 @@
 ---
 title: 웹 성능 테스트 API
+description: 코딩된 웹 성능 테스트, 테스트 플러그 인, 요청 플러그 인, 요청, 추출/유효성 검사 규칙을 지원하는 웹 성능 테스트 API에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287079"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329720"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 
@@ -47,24 +49,24 @@ ms.locfileid: "85287079"
 
 8. 웹 성능 테스트 편집기를 사용하여 새 웹 성능 테스트 플러그 인을 추가합니다.
 
-    1. 도구 모음의 **웹 테스트 플러그 인 추가**를 선택합니다.
+    1. 도구 모음의 **웹 테스트 플러그 인 추가** 를 선택합니다.
 
          **웹 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
 
-    2. **플러그 인 선택**에서 웹 성능 테스트 플러그 인 클래스를 선택합니다.
+    2. **플러그 인 선택** 에서 웹 성능 테스트 플러그 인 클래스를 선택합니다.
 
     3. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
         > [!NOTE]
         > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 [속성] 창을 사용하여 웹 성능 테스트 플러그 인 속성을 편집할 수도 있습니다.
 
-    4. **확인**을 선택합니다.
+    4. **확인** 을 선택합니다.
 
 9. 웹 성능 테스트를 실행합니다.
 
-     <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>의 예제 구현은 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)를 참조하세요.
+     <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>의 구현에 대한 예제를 보려면 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)
