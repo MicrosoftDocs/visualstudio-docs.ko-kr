@@ -1,5 +1,7 @@
 ---
 title: 문서 수준 사용자 지정의 아키텍처
+description: 사용자 지정 구성 요소와 사용자 지정 구성 요소를 Microsoft Office 응용 프로그램에서 작동 하는 방법을 비롯 하 여 문서 수준 사용자 지정의 측면에 대해 알아봅니다
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926552"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845963"
 ---
 # <a name="architecture-of-document-level-customizations"></a>문서 수준 사용자 지정의 아키텍처
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 에는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정을 만드는 프로젝트가 포함되어 있습니다. 이 항목에서는 다음과 같은 문서 수준 사용자 지정의 측면에 대해 설명합니다.
@@ -91,11 +93,11 @@ ms.locfileid: "68926552"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml 파일 이름 확장명을 가진 Word 문서에 대 한 지원
  문서 수준 프로젝트 템플릿에서는 다음과 같은 파일 형식을 기반으로 프로젝트를 만드는 것을 허용하지 않습니다.
 
-- Word XML 문서 (* \* xml*).
+- Word XML 문서 (*\* xml*).
 
-- Word 2003 XML 문서 (* \* xml*).
+- Word 2003 XML 문서 (*\* xml*).
 
-  최종 사용자가 이러한 파일 형식으로 사용자 지정을 사용하도록 하려면 위의 표에 지정된 지원되는 파일 형식 중 하나를 사용하는 사용자 지정을 빌드하고 배포합니다. 사용자 지정을 설치 하면 최종 사용자가 문서를 xml (Word XML 문서) 형식 또는 Word* \* 2003 xml*문서 (xml) 형식으로 저장할 수 있으며 사용자 지정은 예상 대로 계속 작동 합니다.* \* *
+  최종 사용자가 이러한 파일 형식으로 사용자 지정을 사용하도록 하려면 위의 표에 지정된 지원되는 파일 형식 중 하나를 사용하는 사용자 지정을 빌드하고 배포합니다. 사용자 지정을 설치 하면 최종 사용자가 문서를 xml (Word XML 문서) 형식 또는 Word *\* 2003 xml* 문서 (xml) 형식으로 저장할 수 있으며 사용자 지정은 예상 대로 계속 작동 합니다.*\**
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> 사용자 지정 구성 요소
  사용자 지정의 주요 구성 요소는 문서와 어셈블리입니다. 이러한 구성 요소 외에 Microsoft Office 애플리케이션이 사용자 지정을 검색하고 로드하는 방식에서 중요한 역할을 하는 몇 가지 다른 부분이 있습니다.
@@ -109,7 +111,7 @@ ms.locfileid: "68926552"
  자세한 내용은 [Visual Studio tools For Office runtime 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)를 참조 하세요.
 
 ## <a name="how-customizations-work-with-microsoft-office-applications"></a><a name="HowCustomizationsWork"></a> 사용자 지정이 Microsoft Office 응용 프로그램에서 작동 하는 방식
- 사용자가 Microsoft Office 사용자 지정의 일부인 문서를 열 때 애플리케이션은 문서와 연결된 배포 매니페스트를 사용하여 최신 버전의 사용자 지정 어셈블리를 찾아 로드합니다. 배포 매니페스트의 위치는 **assemblylocation**이라는 사용자 지정 문서 속성에 저장 됩니다. 솔루션을 빌드할 때 이 위치를 식별하는 문자열이 속성에 삽입됩니다.
+ 사용자가 Microsoft Office 사용자 지정의 일부인 문서를 열 때 애플리케이션은 문서와 연결된 배포 매니페스트를 사용하여 최신 버전의 사용자 지정 어셈블리를 찾아 로드합니다. 배포 매니페스트의 위치는 **assemblylocation** 이라는 사용자 지정 문서 속성에 저장 됩니다. 솔루션을 빌드할 때 이 위치를 식별하는 문자열이 속성에 삽입됩니다.
 
  배포 매니페스트는 애플리케이션 매니페스트를 가리키며 그때 가장 최신 어셈블리를 가리킵니다. 자세한 내용은 [Office 솔루션의 응용 프로그램 및 배포 매니페스트](../vsto/application-and-deployment-manifests-in-office-solutions.md)를 참조 하세요.
 
@@ -125,7 +127,7 @@ ms.locfileid: "68926552"
 
 1. Microsoft Office 애플리케이션은 사용자 지정 문서 속성에서 문서와 연결된 관리 코드 확장이 있는지 여부를 확인합니다. 자세한 내용은 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)를 참조 하세요.
 
-2. 관리 코드 확장이 있는 경우 응용 프로그램은 *VSTOLoader.dll*로드 하는 *VSTOEE.dll*로드 합니다. 이러한 Dll은 Visual Studio 2010 Tools for Office runtime의 로더 구성 요소인 관리 되지 않는 Dll입니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)를 참조 하세요.
+2. 관리 코드 확장이 있는 경우 응용 프로그램은 *VSTOLoader.dll* 로드 하는 *VSTOEE.dll* 로드 합니다. 이러한 Dll은 Visual Studio 2010 Tools for Office runtime의 로더 구성 요소인 관리 되지 않는 Dll입니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)를 참조 하세요.
 
 3. *VSTOLoader.dll* 를 로드 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 하 고의 관리 되는 부분을 시작 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
@@ -141,7 +143,7 @@ ms.locfileid: "68926552"
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 사용자 지정 어셈블리에서 **Startup** 이벤트 처리기를 호출합니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)

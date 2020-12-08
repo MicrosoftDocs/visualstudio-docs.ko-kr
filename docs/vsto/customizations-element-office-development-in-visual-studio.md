@@ -1,7 +1,8 @@
 ---
 title: '&lt;사용자 지정 &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstov4 네임 스페이스의 사용자 지정 요소에 각 Office 솔루션 설치 및 로드에 대 한 모든 정보가 포함 되는 방법에 대해 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790001"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844038"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;사용자 지정 &gt; 요소 (Visual Studio에서 Office 개발)
   `customizations` 네임스페이스의 `vstov4` 요소에는 각 Office 솔루션 설치 및 로드에 대한 모든 정보가 포함됩니다.

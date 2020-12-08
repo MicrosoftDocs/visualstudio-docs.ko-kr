@@ -1,5 +1,7 @@
 ---
 title: 작업 창 개요
+description: 작업 창이 특정 Microsoft Office Word 문서 또는 Excel 통합 문서에 연결 되는 사용자 지정 가능한 문서 작업 작업창 임을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986306"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844831"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업 창은 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 되는 사용자 지정 가능한 **문서 작업** 작업창입니다. 작업 창은 Excel의 **XML 원본** 작업 창 또는 Word의 **스타일 및 서식** 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스팅됩니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
@@ -59,17 +61,17 @@ ms.locfileid: "72986306"
 
  솔루션에서 작업창을 숨기려면 다음 여러 가지 옵션이 있습니다.
 
-- Word의 경우 <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> 문서 동작 작업창을 나타내는 개체의 속성을 **false**로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 클래스에서 실행해야 합니다.
+- Word의 경우 <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> 문서 동작 작업창을 나타내는 개체의 속성을 **false** 로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 클래스에서 실행해야 합니다.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Excel의 경우 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> 개체의 속성을 <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false**로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisWorkbook` 클래스에서 실행해야 합니다.
+- Excel의 경우 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> 개체의 속성을 <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false** 로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisWorkbook` 클래스에서 실행해야 합니다.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Word 또는 Excel의 경우 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 작업 창을 나타내는 명령 모음의 속성을 **false**로 설정할 수 있습니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 또는 `ThisWorkbook` 클래스에서 실행해야 합니다.
+- Word 또는 Excel의 경우 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 작업 창을 나타내는 명령 모음의 속성을 **false** 로 설정할 수 있습니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 또는 `ThisWorkbook` 클래스에서 실행해야 합니다.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -148,7 +150,7 @@ ms.locfileid: "72986306"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션에서 WPF 컨트롤 사용](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 문서에 그림 및 Word 아트 추가
+description: 디자인 타임 또는 런타임에 문서에 그림 및 그리기 개체를 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585394"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844051"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>방법: 프로그래밍 방식으로 문서에 그림 및 Word 아트 추가
   디자인 타임 또는 런타임에 그림 및 그리기 개체를 문서에 추가할 수 있습니다. WordArt를 사용하면 Microsoft Office Word 문서에 장식 텍스트를 추가할 수 있습니다. 이러한 특수 텍스트 효과는 사용자 지정하고 문서에 삽입할 수 있는 그리기 개체입니다.
@@ -38,9 +40,9 @@ ms.locfileid: "91585394"
 
 2. 리본의 **삽입** 탭을 클릭 합니다.
 
-3. **그림**그룹에서 그림을 **클릭 합니다.**
+3. **그림** 그룹에서 그림을 **클릭 합니다.**
 
-4. **그림 삽입** 대화 상자에서 삽입 하려는 그림으로 이동 하 고 **삽입**을 클릭 합니다.
+4. **그림 삽입** 대화 상자에서 삽입 하려는 그림으로 이동 하 고 **삽입** 을 클릭 합니다.
 
      그림이 문서의 현재 커서 위치에 추가됩니다.
 
@@ -63,9 +65,9 @@ ms.locfileid: "91585394"
 
 2. 리본의 **삽입** 탭을 클릭 합니다.
 
-3. **텍스트** 그룹에서 **wordart**를 클릭 한 다음 wordart 스타일을 선택 합니다.
+3. **텍스트** 그룹에서 **wordart** 를 클릭 한 다음 wordart 스타일을 선택 합니다.
 
-4. 문서에 표시할 텍스트를 **WordArt 텍스트 편집** 대화 상자에 추가 하 고 **확인**을 클릭 합니다.
+4. 문서에 표시할 텍스트를 **WordArt 텍스트 편집** 대화 상자에 추가 하 고 **확인** 을 클릭 합니다.
 
      선택한 WordArt 스타일이 적용된 문서에 텍스트가 추가됩니다.
 

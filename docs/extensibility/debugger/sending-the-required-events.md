@@ -1,5 +1,7 @@
 ---
 title: 필요한 이벤트를 보내는 중 | Microsoft Docs
+description: 디버그 엔진을 만들어 Visual Studio 디버깅에서 프로그램에 연결 하는 데 필요한 순서가 지정 된 이벤트에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713002"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845312"
 ---
 # <a name="send-the-required-events"></a>필요한 이벤트 보내기
 이 절차를 사용 하 여 필요한 이벤트를 전송 합니다.
@@ -36,5 +38,5 @@ ms.locfileid: "80713002"
 > [!NOTE]
 > 대부분의 언어는 코드의 시작 부분에서 전역 이니셜라이저 또는 미리 컴파일된 외부 함수 (CRT 라이브러리 또는 _Main)를 사용 합니다. 디버깅 중인 프로그램의 언어에 초기 진입점 전에 이러한 형식의 요소가 포함 되어 있으면이 코드가 실행 되 고 **main** 또는와 같은 사용자 진입점에 도달할 때 진입점 이벤트가 전송 됩니다 `WinMain` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램을 디버그할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

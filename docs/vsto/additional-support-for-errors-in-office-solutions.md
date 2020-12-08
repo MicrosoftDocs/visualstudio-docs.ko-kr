@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 오류에 대 한 추가 지원
+description: 지원 리소스를 사용 하 여 Visual Studio에서 Office 솔루션을 만들 때 발생 하는 문제에 대 한 답변을 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,12 +58,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984633"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844779"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 솔루션의 오류에 대 한 추가 지원
 
@@ -77,7 +79,7 @@ Office 솔루션에서 몇 가지 일반적인 오류에 대 한 도움이 필�
 
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)
 
-## <a name="other-resources"></a>기타 리소스
+## <a name="other-resources"></a>관련 자료
 
 [Visual Studio tools for Office 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
@@ -91,7 +93,7 @@ Visual Studio의 Office 개발자 도구에 대 한 질문을 위한 포럼을 �
 
 Visual Studio를 사용 하 여 Office 솔루션 및 Office 개발을 개발 하는 방법에 대해 자세히 알아볼 수 있는 추가 리소스 링크를 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)

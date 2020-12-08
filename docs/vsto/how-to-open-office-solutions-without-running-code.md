@@ -1,5 +1,7 @@
 ---
 title: '방법: 코드를 실행 하지 않고 Office 솔루션 열기'
+description: 어셈블리 코드를 실행 하지 않고 관리 코드 확장이 포함 된 문서 또는 통합 문서를 여는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543483"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844922"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>방법: 코드를 실행 하지 않고 Office 솔루션 열기
   관리 코드 확장을 사용 하 여 만든 Microsoft Office 솔루션은 최종 사용자의 Office 응용 프로그램의 보안 설정이 높음으로 설정 된 경우에도 실행 됩니다. .NET 어셈블리 코드 보안은 Microsoft Office가 아닌 Microsoft .NET 프레임 워크에서 관리 하기 때문입니다.
@@ -49,7 +51,7 @@ ms.locfileid: "85543483"
 
      솔루션이 여러 사용자에 의해 사용 되는 경우이 방법을 사용 하면 솔루션을 실행할 수 없습니다. 이는 코드 또는 참조 된 서버에서 문제가 발견 되어 모든 사용자가 실행 하지 못하게 하려는 경우에 유용할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

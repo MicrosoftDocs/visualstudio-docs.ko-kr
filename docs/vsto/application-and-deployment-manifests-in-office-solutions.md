@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 응용 프로그램 및 배포 매니페스트
+description: 응용 프로그램 매니페스트가 어셈블리를 찾고 업데이트 하는 Office 솔루션에서 사용 되는 정보를 제공 하는 XML 파일 인 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584440"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844714"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office 솔루션의 응용 프로그램 및 배포 매니페스트
   애플리케이션 매니페스트는 Office 솔루션에서 어셈블리를 찾고 업데이트하는 데 사용되는 정보를 제공하는 XML 파일입니다. 애플리케이션 매니페스트는 배포 매니페스트와 함께 사용할 수 있습니다. 배포 매니페스트는 서버에 저장된 XML 파일로, 최신 버전의 애플리케이션 매니페스트 및 어셈블리를 찾는 데 필요한 정보를 제공합니다.
@@ -36,7 +38,7 @@ ms.locfileid: "91584440"
 ## <a name="create-application-and-deployment-manifests"></a>응용 프로그램 및 배포 매니페스트 만들기
  애플리케이션 매니페스트는 빌드 프로세스의 일부로 자동으로 생성됩니다. 문서 수준 프로젝트를 빌드할 때마다 배포 매니페스트의 위치가 사용자 지정 문서 속성으로 문서에 포함됩니다. VSTO 추가 기능의 경우 배포 매니페스트의 위치는 레지스트리에 저장됩니다.
 
- **게시 마법사**에 대 한 자세한 내용은 ClickOnce를 [사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
+ **게시 마법사** 에 대 한 자세한 내용은 ClickOnce를 [사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
  매니페스트가 Office 솔루션과 작동 하는 방식에 대 한 자세한 내용은 [office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 

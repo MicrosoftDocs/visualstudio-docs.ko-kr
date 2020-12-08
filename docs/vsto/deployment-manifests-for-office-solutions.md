@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에 대 한 배포 매니페스트
+description: 배포 매니페스트는 Office 솔루션의 배포 설정을 설명 하 고 현재 응용 프로그램 버전을 식별 하는 XML 파일 임을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547552"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845507"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션에 대 한 배포 매니페스트
   배포 매니페스트는 Office 솔루션의 배포 설정을 설명 하 고 현재 응용 프로그램 버전을 식별 하는 XML 파일입니다.
@@ -183,6 +185,6 @@ ms.locfileid: "85547552"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)

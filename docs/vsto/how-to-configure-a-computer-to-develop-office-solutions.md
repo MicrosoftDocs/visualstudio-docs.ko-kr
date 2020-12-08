@@ -1,5 +1,7 @@
 ---
 title: '방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성'
+description: Visual Studio에서 Microsoft Office 개발자 도구를 사용할 수 있도록 개발 컴퓨터를 구성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585499"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844311"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성
   Visual Studio의 Microsoft Office 개발자 도구를 사용할 수 있도록 개발 컴퓨터를 구성하려면 이 항목의 지침을 따릅니다. 이러한 단계를 수행하려면 개발 컴퓨터에 대한 관리자 권한이 있어야 합니다.

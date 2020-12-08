@@ -1,5 +1,7 @@
 ---
 title: '방법: Word 문서에 콘텐츠 컨트롤 추가'
+description: 문서 수준 Word 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538387"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845559"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>방법: Word 문서에 콘텐츠 컨트롤 추가
   문서 수준 Word 프로젝트에서는 디자인 타임 또는 런타임에 프로젝트의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다. Word VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다.
@@ -51,7 +53,7 @@ ms.locfileid: "85538387"
 ## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> 디자인 타임에 콘텐츠 컨트롤 추가
  디자인 타임에 문서 수준 프로젝트의 문서에 콘텐츠 컨트롤을 추가하는 여러 가지 방법이 있습니다.
 
-- **도구 상자** 의 **Word 컨트롤**탭에서 콘텐츠 컨트롤을 추가합니다.
+- **도구 상자** 의 **Word 컨트롤** 탭에서 콘텐츠 컨트롤을 추가합니다.
 
 - Word에서 네이티브 콘텐츠 컨트롤을 추가하는 것과 동일한 방식으로 문서에 콘텐츠 컨트롤을 추가합니다.
 
@@ -67,7 +69,7 @@ ms.locfileid: "85538387"
 
 3. 다음 방법 중 하나로 컨트롤을 추가합니다.
 
-    - **도구 상자**에서 콘텐츠 컨트롤을 두 번 클릭합니다.
+    - **도구 상자** 에서 콘텐츠 컨트롤을 두 번 클릭합니다.
 
          또는
 
@@ -78,7 +80,7 @@ ms.locfileid: "85538387"
     - **도구 상자** 에서 문서로 콘텐츠 컨트롤을 끌어옵니다. 콘텐츠 컨트롤이 마우스 포인터 위치가 아니라 문서의 현재 선택 영역에 추가됩니다.
 
 > [!NOTE]
-> <xref:Microsoft.Office.Tools.Word.GroupContentControl> 도구 상자 **를 사용하여**을 추가할 수 없습니다. Word에서나 런타임에만 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 을 추가할 수 있습니다.
+> <xref:Microsoft.Office.Tools.Word.GroupContentControl> 도구 상자 **를 사용하여** 을 추가할 수 없습니다. Word에서나 런타임에만 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 을 추가할 수 있습니다.
 
 > [!NOTE]
 > Visual Studio는 도구 상자에 확인란 콘텐츠 컨트롤을 제공하지 않습니다. 문서에 확인란 콘텐츠 컨트롤을 추가하려면 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Word.ContentControl> 개체를 만들어야 합니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)을 참조 하세요.
@@ -182,7 +184,7 @@ ms.locfileid: "85538387"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

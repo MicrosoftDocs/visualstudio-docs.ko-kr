@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 XML 부분 개요
+description: 일부 Microsoft Office 응용 프로그램에 대 한 문서에 XML 데이터를 포함 하는 방법을 알아봅니다. 문서에 XML 데이터를 포함하는 경우 해당 데이터에 사용자 지정 XML 부분이라는 이름이 지정됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784422"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844129"
 ---
 # <a name="custom-xml-parts-overview"></a>사용자 지정 XML 부분 개요
-  일부 Microsoft Office 애플리케이션에 대한 문서에 XML 데이터를 포함할 수 있습니다. 문서에 XML 데이터를 포함 하는 경우 데이터는 *사용자 지정 xml 부분*으로 이름이 지정 됩니다.
+  일부 Microsoft Office 애플리케이션에 대한 문서에 XML 데이터를 포함할 수 있습니다. 문서에 XML 데이터를 포함 하는 경우 데이터는 *사용자 지정 xml 부분* 으로 이름이 지정 됩니다.
 
  Visual Studio에서 VSTO 추가 기능 또는 문서 수준 솔루션을 사용하여 문서에 사용자 지정 XML 부분을 만들고 수정할 수 있습니다. 사용자 지정 XML 부분을 만들고 수정하기 위해 Microsoft Office 애플리케이션을 시작할 필요는 없습니다.
 
@@ -41,9 +43,9 @@ ms.locfileid: "64784422"
 > 또한 visual Studio를 사용하여 문서 수준 사용자 지정에 데이터 개체를 캐시할 수 있습니다. 몇 가지 유사점은 있지만 이 기능은 사용자 지정 XML 부분과 다릅니다. 자세한 내용은 [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)를 참조 하세요.
 
 ## <a name="understand-custom-xml-parts"></a>사용자 지정 XML 부분 이해
- 사용자 지정 XML 부분은 Open XML 형식과 함께 2007 Microsoft Office System에서 도입되었습니다. 이러한 형식에는 Excel, PowerPoint 및 Word에 대 한 새로운 XML 기반 파일 형식 (예: *.xlsx*, *.pptx*및 *.docx*)이 포함 됩니다. 이러한 형식의 문서는 ZIP 보관 파일의 폴더에 구성 된 XML 파일 (이름이 지정 된 *xml 부분*)로 구성 됩니다. 대다수의 XML 부분은 문서의 구조 및 상태를 정의하는 데 도움이 되는 기본 제공 부분입니다. 그러나 문서에는 임의의 XML 데이터를 문서에 저장하는 데 사용할 수 있는 사용자 지정 XML 부분도 포함될 수 있습니다.
+ 사용자 지정 XML 부분은 Open XML 형식과 함께 2007 Microsoft Office System에서 도입되었습니다. 이러한 형식에는 Excel, PowerPoint 및 Word에 대 한 새로운 XML 기반 파일 형식 (예: *.xlsx*, *.pptx* 및 *.docx*)이 포함 됩니다. 이러한 형식의 문서는 ZIP 보관 파일의 폴더에 구성 된 XML 파일 (이름이 지정 된 *xml 부분*)로 구성 됩니다. 대다수의 XML 부분은 문서의 구조 및 상태를 정의하는 데 도움이 되는 기본 제공 부분입니다. 그러나 문서에는 임의의 XML 데이터를 문서에 저장하는 데 사용할 수 있는 사용자 지정 XML 부분도 포함될 수 있습니다.
 
- XML 파일 형식을 사용 하면 응용 프로그램이 이전 이진 파일 형식 (예: *.xls*, *.ppt*및 *.doc*)에서 불가능 한 방식으로 문서를 사용할 수 있습니다. ZIP 보관 파일을 읽을 수 있는 애플리케이션은 Microsoft Office가 설치되어 있지 않아도 문서의 내용을 검사하고 수정할 수 있습니다.
+ XML 파일 형식을 사용 하면 응용 프로그램이 이전 이진 파일 형식 (예: *.xls*, *.ppt* 및 *.doc*)에서 불가능 한 방식으로 문서를 사용할 수 있습니다. ZIP 보관 파일을 읽을 수 있는 애플리케이션은 Microsoft Office가 설치되어 있지 않아도 문서의 내용을 검사하고 수정할 수 있습니다.
 
  Open XML 및 사용자 지정 XML 부분의 구조에 대한 자세한 내용은 다음 문서를 참조하세요.
 
@@ -78,7 +80,7 @@ ms.locfileid: "64784422"
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>사용자 지정 XML 부분을 Word 콘텐츠 컨트롤에 바인딩
  사용자 지정 XML 부분의 요소에 Word 솔루션의 콘텐츠 컨트롤을 바인딩할 수 있습니다. 콘텐츠 컨트롤이 사용자 지정 XML 부분에 바인딩된 경우 사용자 지정 XML 부분의 데이터가 콘텐츠 컨트롤의 UI(사용자 인터페이스)에 표시됩니다. 사용자가 컨트롤의 텍스트를 편집하는 경우 해당 XML 요소가 자동으로 업데이트됩니다. 마찬가지로, 사용자 지정 XML 부분의 요소 값이 변경되는 경우 XML 요소에 바인딩된 콘텐츠 컨트롤에 새 데이터가 표시됩니다. 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [문서 수준 사용자 지정의 XML 스키마 및 데이터](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 - [방법: 문서 수준 사용자 지정에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 - [방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

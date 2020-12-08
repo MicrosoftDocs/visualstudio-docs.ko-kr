@@ -1,5 +1,7 @@
 ---
 title: Office 프로젝트 디버그
+description: 다른 Visual Studio 프로젝트에 사용 하는 것과 동일한 Microsoft Visual Studio 도구를 사용 하 여 Office 프로젝트를 디버깅 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189702"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845637"
 ---
 # <a name="debug-office-projects"></a>Office 프로젝트 디버그
   다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트에 사용한 것과 동일한 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 도구를 사용하여 Office 프로젝트를 디버그할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 중단점 삽입 및 **지역** 창에서 변수 보기 기능과 같은 디버거 기능은 Office 프로젝트를 디버그할 때도 사용할 수 있습니다. 디버깅 도구에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [Visual Studio의 디버그](../debugger/debugger-feature-tour.md)를 참조 하세요.
@@ -48,7 +50,7 @@ ms.locfileid: "73189702"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>Office 2013 또는 Office 2016을 사용하여 Office 2013 VSTO 추가 기능 디버깅
  Visual Studio 2015을 사용 하는 경우 두 버전의 Office를 함께 설치 하는 경우 Visual Studio는 Office 2016를 시작 합니다. Visual Studio 2013 사용 하는 경우 Visual Studio는 Office 2013를 시작 합니다.
 
- 다른 버전의 Office(2013 또는 2016)를 사용하여 VSTO 추가 기능을 디버그하려면 **프로젝트 디자이너**를 열고 **디버그** 탭에서 **시작 외부 프로그램** 옵션 단추를 선택합니다. 그런 다음 적절한 Office 애플리케이션 실행의 위치로 이동합니다.
+ 다른 버전의 Office(2013 또는 2016)를 사용하여 VSTO 추가 기능을 디버그하려면 **프로젝트 디자이너** 를 열고 **디버그** 탭에서 **시작 외부 프로그램** 옵션 단추를 선택합니다. 그런 다음 적절한 Office 애플리케이션 실행의 위치로 이동합니다.
 
 ## <a name="f10-and-f11-behavior"></a>F10 및 F11 동작
  Office 프로젝트 디버깅을 시작할 때 **F10** 및 **F11** 키가 다른 Visual Basic 또는 c # 프로젝트 디버깅을 시작할 때와 동일한 동작을 수행 하지 않습니다. Visual Basic 또는 C# 프로젝트에서는 디버거가 main 함수에서 중지하고 Office 프로젝트에서는 Visual Studio가 Office 애플리케이션의 main 함수를 제어하지 않습니다. 그러나 디버깅 하는 동안 **F10** 및 **F11** 의 함수는 Visual Basic 및 c # 프로젝트의 기능과 동일 합니다.
@@ -63,7 +65,7 @@ ms.locfileid: "73189702"
  기본적으로 Visual Studio는 Office 프로젝트에 대한 Just-In-Time 디버깅 오류를 표시하지 않습니다. 그러나 이 기능을 사용하도록 설정하여 발생되는 오류를 표시할 수 있습니다. 자세한 내용은 [Visual Studio에서 just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 참조 하세요.
 
 ## <a name="command-line-arguments"></a>명령줄 인수
- **디버그** 속성 페이지에서 시작 **작업** 을 시작 **프로젝트**로 설정 하면 명령줄 인수를 시작 옵션으로 지정한 경우에도 Visual Studio에서 프로젝트를 디버깅할 때 명령줄 인수를 사용 하지 않습니다. 디버깅을 시작할 때 명령줄 인수를 사용 하려면 **시작 프로젝트**이외의 **시작 작업** 을 선택 해야 합니다.
+ **디버그** 속성 페이지에서 시작 **작업** 을 시작 **프로젝트** 로 설정 하면 명령줄 인수를 시작 옵션으로 지정한 경우에도 Visual Studio에서 프로젝트를 디버깅할 때 명령줄 인수를 사용 하지 않습니다. 디버깅을 시작할 때 명령줄 인수를 사용 하려면 **시작 프로젝트** 이외의 **시작 작업** 을 선택 해야 합니다.
 
 ## <a name="source-control"></a>원본 제어
  디버그 속성은 소스 제어에서 여러 사용자 간에 공유되지 않습니다. Visual Basic 및 C# 프로젝트는 디버깅 속성을 사용자별 파일(*ProjectName*.vbproj.user 또는 *ProjectName*.csproj.user)에 저장하며 이 파일은 소스 제어에서 사용되지 않습니다. 둘 이상의 사용자를 디버깅하는 경우 각 사용자가 디버그 속성을 수동으로 입력해야 합니다.
@@ -97,7 +99,7 @@ ms.locfileid: "73189702"
 
  오류를 로그 파일에 기록하려면 `VSTO_LOGALERTS` 라는 환경 변수를 만들고 1로 설정합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 VSTO 추가 기능에 대한 배포 매니페스트를 포함하는 폴더 또는 사용자 지정과 관련된 문서 또는 통합 문서를 포함하는 폴더에 로그 파일을 만듭니다. 이 작업이 실패 하면는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 로컬 *% TEMP%* 폴더에 로그 파일을 만듭니다. 애플리케이션 수준 VSTO 추가 기능의 경우 기본 이름은 *추가 기능 이름*.vsto.log입니다. 문서 수준 프로젝트의 경우 로그 파일의 이름은 *문서 이름*.*확장명*.log(예: ExcelWorkbook1.xlsx.log)입니다. 오류 로깅을 중지하려면 환경 변수를 삭제하거나 0으로 설정합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션 빌드](../vsto/building-office-solutions.md)
 - [방법: 사용 하지 않도록 설정 된 VSTO 추가 기능 다시 활성화](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

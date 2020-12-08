@@ -1,5 +1,7 @@
 ---
 title: '방법: 사용자 지정 문서 속성 만들기 및 수정'
+description: 문서와 함께 저장 하려는 추가 정보가 있는 경우 사용자 지정 문서 속성을 만들고 수정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dd4f4ada36be4ef7b70f4f32d659abb10c8a62a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4897008f102600bd222a21761237acc4bcb62a30
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547214"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844298"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>방법: 사용자 지정 문서 속성 만들기 및 수정
   위에 나열된 Microsoft Office 애플리케이션은 문서와 함께 저장되는 기본 제공 속성을 제공합니다. 문서와 함께 저장하려는 추가 정보가 있는 경우 사용자 지정 문서 속성을 만들고 수정할 수 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "85547214"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  정의되지 않은 속성에 대한 `Value` 속성에 액세스하는 동안 예외가 발생합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: 문서 속성에서 읽기 및 문서 속성에 쓰기](../vsto/how-to-read-from-and-write-to-document-properties.md)

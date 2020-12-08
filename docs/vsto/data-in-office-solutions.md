@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 데이터
+description: Visual Studio를 사용 하 여 Microsoft Office 솔루션을 만들 때 데이터 작업을 수행 하는 다양 한 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189688"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845550"
 ---
 # <a name="data-in-office-solutions"></a>Office 솔루션의 데이터
   많은 Office 솔루션에서 사용자는 데이터를 검색하거나 수정할 수 있도록 합니다. Visual Studio를 사용하여 Office 솔루션을 만드는 경우 데이터로 작업할 수 있는 여러 가지 방법이 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Office 솔루션의 컨트롤에 데이터를 바인딩하는 방법에 대해 설명합니다.

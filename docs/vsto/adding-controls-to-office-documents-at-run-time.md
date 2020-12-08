@@ -1,5 +1,7 @@
 ---
 title: 런타임에 Office 문서에 컨트롤 추가
+description: Microsoft Office Word 문서에 컨트롤을 추가 하 고 런타임에 Excel 통합 문서를 Microsoft Office 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,15 +24,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986331"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844844"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>런타임에 Office 문서에 컨트롤 추가
-  런타임에 Microsoft Office Word 문서 및 Microsoft Office Excel 통합 문서에 컨트롤을 추가할 수 있습니다. 런타임에 제거할 수도 있습니다. 런타임에 추가하거나 제거하는 컨트롤을 *동적 컨트롤*이라고 합니다.
+  런타임에 Microsoft Office Word 문서 및 Microsoft Office Excel 통합 문서에 컨트롤을 추가할 수 있습니다. 런타임에 제거할 수도 있습니다. 런타임에 추가하거나 제거하는 컨트롤을 *동적 컨트롤* 이라고 합니다.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -54,7 +56,7 @@ ms.locfileid: "72986331"
 - Excel 또는 Word 용 VSTO 추가 기능 프로젝트에서 `Controls` 런타임에 생성 하는 또는의 속성을 <xref:Microsoft.Office.Tools.Excel.Worksheet> 사용 <xref:Microsoft.Office.Tools.Word.Document> 합니다. 런타임에 이러한 개체를 생성 하는 방법에 대 한 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
 ### <a name="add-controls"></a>컨트롤 추가
- <xref:Microsoft.Office.Tools.Excel.ControlCollection> 및 <xref:Microsoft.Office.Tools.Word.ControlCollection> 형식에는 문서 및 워크시트에 호스트 컨트롤 및 공용 Windows Forms 컨트롤을 추가하는 데 사용할 수 있는 도우미 메서드가 포함되어 있습니다. 각 메서드 이름은 `Add`*컨트롤 클래스*형식을 사용합니다. 여기서 *컨트롤 클래스* 는 추가할 컨트롤의 클래스 이름입니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 문서에 추가하려면 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> 메서드를 사용합니다.
+ <xref:Microsoft.Office.Tools.Excel.ControlCollection> 및 <xref:Microsoft.Office.Tools.Word.ControlCollection> 형식에는 문서 및 워크시트에 호스트 컨트롤 및 공용 Windows Forms 컨트롤을 추가하는 데 사용할 수 있는 도우미 메서드가 포함되어 있습니다. 각 메서드 이름은 `Add`*컨트롤 클래스* 형식을 사용합니다. 여기서 *컨트롤 클래스* 는 추가할 컨트롤의 클래스 이름입니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 문서에 추가하려면 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> 메서드를 사용합니다.
 
  다음 코드 예제에서는 Excel용 문서 수준 프로젝트의 <xref:Microsoft.Office.Tools.Excel.NamedRange> 에 `Sheet1` 를 추가합니다.
 
@@ -62,7 +64,7 @@ ms.locfileid: "72986331"
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]
 
 ### <a name="access-and-delete-controls"></a>컨트롤 액세스 및 삭제
- <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 <xref:Microsoft.Office.Tools.Word.Document>의 `Controls` 속성을 사용하여 디자인 타임에 추가한 컨트롤을 비롯한 문서의 모든 컨트롤을 반복할 수 있습니다. 디자인 타임에 추가된 컨트롤을 *정적 컨트롤*이라고 합니다.
+ <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 <xref:Microsoft.Office.Tools.Word.Document>의 `Controls` 속성을 사용하여 디자인 타임에 추가한 컨트롤을 비롯한 문서의 모든 컨트롤을 반복할 수 있습니다. 디자인 타임에 추가된 컨트롤을 *정적 컨트롤* 이라고 합니다.
 
  `Delete`컨트롤의 메서드를 호출 하거나 `Remove` 각 controls 컬렉션의 메서드를 호출 하 여 동적 컨트롤을 제거할 수 있습니다. 다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> 메서드를 사용하여 Excel용 문서 수준 프로젝트의 <xref:Microsoft.Office.Tools.Excel.NamedRange> 에서 `Sheet1` 를 제거합니다.
 
@@ -137,7 +139,7 @@ ms.locfileid: "72986331"
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)

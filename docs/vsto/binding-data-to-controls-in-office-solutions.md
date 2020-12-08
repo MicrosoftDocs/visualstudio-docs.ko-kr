@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 컨트롤에 데이터 바인딩
+description: Microsoft Office Word 문서 또는 Excel 워크시트의 Windows Forms 컨트롤과 호스트 컨트롤을 데이터 원본에 바인딩하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986167"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844428"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office 솔루션의 컨트롤에 데이터 바인딩
   컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 애플리케이션 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "72986167"
 
  호스트 컨트롤은 Word의 콘텐츠 컨트롤 및 Excel의 명명된 범위와 같이 Word 및 Excel 개체 모델에 있는 개체를 확장합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
- Windows Forms와 호스트 컨트롤 모두 데이터 세트 및 데이터 테이블 같은 데이터 원본에 대해 *단순 데이터 바인딩*과 *복합 데이터 바인딩*을 둘 다 지원하는 Windows Forms 데이터 바인딩 모델을 사용합니다. Windows Forms의 데이터 바인딩 모델에 대 한 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)를 참조 하세요.
+ Windows Forms와 호스트 컨트롤 모두 데이터 세트 및 데이터 테이블 같은 데이터 원본에 대해 *단순 데이터 바인딩* 과 *복합 데이터 바인딩* 을 둘 다 지원하는 Windows Forms 데이터 바인딩 모델을 사용합니다. Windows Forms의 데이터 바인딩 모델에 대 한 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)를 참조 하세요.
 
 ## <a name="simple-data-binding"></a>단순 데이터 바인딩
  단순 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 값 등 단일 데이터 요소에 바인딩될 때 존재합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 데이터 세트의 필드로 바인딩될 수 있는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 가집니다. 데이터 세트의 필드가 변경되면 명명된 범위의 값도 변경됩니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 제외한 모든 호스트 컨트롤은 단일 데이터 바인딩을 지원합니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤은 컬렉션이므로 데이터 바인딩을 지원하지 않습니다.
@@ -97,10 +99,10 @@ ms.locfileid: "72986167"
 
  자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [방법: Windows Form에 단순 바인딩된 컨트롤 만들기](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 - [TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)
 - [데이터 캐시](../vsto/caching-data.md)

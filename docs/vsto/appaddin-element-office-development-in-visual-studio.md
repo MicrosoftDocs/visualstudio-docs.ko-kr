@@ -1,5 +1,7 @@
 ---
 title: '&lt;appAddin &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstov4 네임 스페이스의 appAddin 요소가 VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531640"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844753"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 요소 (Visual Studio에서 Office 개발)
   네임 스페이스의 **Appaddin** 요소는 `vstov4` VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <appAddin
@@ -41,7 +43,7 @@ ms.locfileid: "85531640"
 
  **Appaddin** 요소에는 다음과 같은 특성이 있습니다.
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |**애플리케이션**|필수 요소. Microsoft Office 애플리케이션을 식별합니다. 값은 Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word 중 하나입니다.|
 |**loadBehavior**|선택 사항입니다. 기본적으로이 값을로 설정 하 여 **loadBehavior** 를 사용 하도록 설정 합니다. 디버깅을 위해서는 이 값을 2로 설정하여 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)의 LoadBehavior Values 이라는 표를 참조 하세요.|
@@ -53,10 +55,10 @@ ms.locfileid: "85531640"
  선택 사항입니다. **Friendlyname** 요소는 [&#60;friendlyname&#62; 요소 &#40;Visual Studio에서 Office 개발&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
 
 ### <a name="description"></a>description
- 선택 사항입니다. **Description** 요소는 [Visual Studio&#41;에서 Office 개발을 &#40;&#62; 요소&#60;설명 ](../vsto/description-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
+ 선택 사항입니다. **Description** 요소는 [Visual Studio&#41;에서 Office 개발을 &#40;&#62; 요소&#60;설명](../vsto/description-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
 
 ### <a name="formregions"></a>formRegions
- 양식 영역을 포함하는 Outlook VSTO 추가 기능에 대해서만 필수 요소. **Formregions** 요소는 [Visual Studio&#41;에서 Office 개발 &#40;요소&#62;&#60;formregions ](../vsto/formregions-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
+ 양식 영역을 포함하는 Outlook VSTO 추가 기능에 대해서만 필수 요소. **Formregions** 요소는 [Visual Studio&#41;에서 Office 개발 &#40;요소&#62;&#60;formregions](../vsto/formregions-element-office-development-in-visual-studio.md)에 설명 되어 있습니다.
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 

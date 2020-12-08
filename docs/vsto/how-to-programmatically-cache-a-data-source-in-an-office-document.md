@@ -1,5 +1,7 @@
 ---
 title: Office 문서의 데이터 소스를 프로그래밍 방식으로 캐시
+description: 호스트 항목의 StartCaching 메서드를 호출 하 여 프로그래밍 방식으로 문서의 데이터 캐시에 데이터 개체를 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544770"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845014"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시
   `StartCaching`, 또는와 같은 호스트 항목의 메서드를 호출 하 여 문서의 데이터 캐시에 데이터 개체를 프로그래밍 방식으로 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> . 호스트 항목의 메서드를 호출 하 여 데이터 캐시에서 데이터 개체를 제거 `StopCaching` 합니다.
@@ -54,7 +56,7 @@ ms.locfileid: "85544770"
     > [!NOTE]
     > `StopCaching` `Shutdown` 문서 또는 워크시트의 이벤트에 대 한 이벤트 처리기에서를 호출 하지 마세요. 이벤트가 발생 한 시간에는 `Shutdown` 너무 늦게 데이터 캐시를 수정할 수 있습니다. 이벤트에 대 한 자세한 내용은 `Shutdown` [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [데이터 캐시](../vsto/caching-data.md)
 - [방법: 오프 라인 이나 서버에서 사용할 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

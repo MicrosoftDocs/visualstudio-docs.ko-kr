@@ -1,7 +1,8 @@
 ---
 title: '&lt;사용자 지정 &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstov4 네임 스페이스의 사용자 지정 요소가 특정 Office 솔루션을 설명 하는 방법에 대해 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544874"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844116"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;사용자 지정 &gt; 요소 (Visual Studio에서 Office 개발)
   `customization` 네임스페이스의 `vstov4` 요소는 특정 Office 솔루션에 대해 설명합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.
@@ -57,11 +58,11 @@ ms.locfileid: "85544874"
 
  `customization` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`id`|다중 프로젝트 배포의 경우 필수 요소입니다. `id` 요소는 Office 솔루션을 고유하게 식별합니다.|
 
-### <a name="document-level-customizations"></a>문서 수준 사용자 지정
+### <a name="document-level-customizations"></a>사용자 지정 Document-Level
  `customization` 요소에는 다음 자식 요소가 있습니다.
 
 #### <a name="document"></a>문서

@@ -1,5 +1,7 @@
 ---
 title: '방법: 워크시트에 차트 컨트롤 추가'
+description: 디자인 타임 및 런타임에 문서 수준 사용자 지정에서 Microsoft Office Excel 워크시트에 차트 컨트롤을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546239"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845468"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>방법: 워크시트에 차트 컨트롤 추가
   <xref:Microsoft.Office.Tools.Excel.Chart>디자인 타임 및 런타임에 문서 수준 사용자 지정에서 Microsoft Office Excel 워크시트에 컨트롤을 추가할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.Chart>런타임에 VSTO 추가 기능에서 컨트롤을 추가할 수도 있습니다.
@@ -43,17 +45,17 @@ ms.locfileid: "85546239"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Excel의 워크시트에 차트 호스트 컨트롤을 추가하려면
 
-1. **삽입** 탭의 **차트** 그룹에서 **열**을 클릭 하 고 차트 범주를 클릭 한 다음 원하는 차트의 종류를 클릭 합니다.
+1. **삽입** 탭의 **차트** 그룹에서 **열** 을 클릭 하 고 차트 범주를 클릭 한 다음 원하는 차트의 종류를 클릭 합니다.
 
-2. **차트 삽입** 대화 상자에서 **확인**을 클릭 합니다.
+2. **차트 삽입** 대화 상자에서 **확인** 을 클릭 합니다.
 
-3. **디자인** 탭의 **데이터** 그룹에서 **데이터 선택**을 클릭 합니다.
+3. **디자인** 탭의 **데이터** 그룹에서 **데이터 선택** 을 클릭 합니다.
 
 4. **데이터 원본 선택** 대화 상자에서 **차트** **데이터 범위** 상자를 클릭 하 고 기본 선택을 모두 선택 취소 합니다.
 
-5. **차트에 대 한 데이터** 시트에서 차트의 데이터를 포함 하는 셀 범위를 선택 합니다 ( **A5** ~ **D8**셀).
+5. **차트에 대 한 데이터** 시트에서 차트의 데이터를 포함 하는 셀 범위를 선택 합니다 ( **A5** ~ **D8** 셀).
 
-6. **데이터 소스 선택** 대화 상자에서 **확인**을 클릭 합니다.
+6. **데이터 소스 선택** 대화 상자에서 **확인** 을 클릭 합니다.
 
 ## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 차트 컨트롤 추가
  런타임에 동적으로 <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 차트는 문서를 닫을 때 문서에 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
@@ -82,7 +84,7 @@ ms.locfileid: "85546239"
 
 - 워크시트의 A5부터 D8까지의 범위에 저장된 차트로 작성할 데이터
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [차트 컨트롤](../vsto/chart-control.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Outlook 연락처 액세스'
+description: 프로그래밍 방식으로 Outlook 연락처에 액세스할 수 있는 방법을 알아봅니다. 이 예에서는 마지막 이름에 지정 된 검색 문자열이 포함 된 모든 연락처를 찾습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520097"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844689"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처 액세스
   이 예에서는 마지막 이름에 지정 된 검색 문자열이 포함 된 모든 연락처를 찾습니다.
@@ -34,7 +36,7 @@ ms.locfileid: "85520097"
 
 - **연락처** 폴더에 "**Na"** 문자열 (예: Tzipi Butnaru)이 포함 된 성이 있는 연락처입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [연락처 항목 작업](../vsto/working-with-contact-items.md)
 - [방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [방법: 프로그래밍 방식으로 특정 연락처 검색](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

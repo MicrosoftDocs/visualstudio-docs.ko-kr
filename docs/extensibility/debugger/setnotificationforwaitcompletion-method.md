@@ -1,5 +1,7 @@
 ---
 title: SetNotificationForWaitCompletion 메서드 | Microsoft Docs
+description: 디버거가 상태 비트를 사용 하 여 약속 스타일 작업에 대 한 비동기 메서드 본문의 단계를 진행 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712869"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845221"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 메서드
 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 상태 비트를 설정 하거나 해제 합니다.

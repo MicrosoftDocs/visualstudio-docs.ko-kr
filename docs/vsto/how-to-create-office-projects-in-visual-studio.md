@@ -1,7 +1,8 @@
 ---
 title: '방법: Visual Studio에서 Office 프로젝트 만들기'
+description: Visual Studio를 사용 하 여 Microsoft Office 응용 프로그램에 대 한 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 방법을 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547565"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844376"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>방법: Visual Studio에서 Office 프로젝트 만들기
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 사용 하 여 Microsoft Office 응용 프로그램에 대 한 VSTO 추가 기능 및 문서 수준 사용자 지정을 만들 수 있습니다. 이러한 형식의 프로젝트에 대 한 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -39,14 +40,14 @@ ms.locfileid: "85547565"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>VSTO 추가 기능 프로젝트를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다. IDE (통합 개발 환경)가 개발 설정을 사용 하도록 설정 된 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **파일** 메뉴에서 **새**  >  **프로젝트**를 선택 합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다. IDE (통합 개발 환경)가 개발 설정을 사용 하도록 설정 된 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **파일** 메뉴에서 **새**  >  **프로젝트** 를 선택 합니다.
 
     **새 프로젝트** 대화 상자가 나타납니다.
 
    > [!NOTE]
    > 기본적으로 Office 프로젝트는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]을(를) 대상으로 합니다. 자세한 내용은 [.NET Framework client profile](/dotnet/framework/deployment/client-profile)을 참조 하세요.
 
-2. 템플릿 창에서 사용 하려는 언어에 대 한 노드 아래의 **Office/SharePoint**를 확장 합니다.
+2. 템플릿 창에서 사용 하려는 언어에 대 한 노드 아래의 **Office/SharePoint** 를 확장 합니다.
 
 3. **Office 추가 기능** 노드를 선택 합니다.
 
@@ -94,11 +95,11 @@ ms.locfileid: "85547565"
 
 ### <a name="to-create-a-document-level-customization-project"></a>문서 수준 사용자 지정 프로젝트를 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다. IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 **파일** 메뉴에서 **새**  >  **프로젝트**를 선택 합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다. IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 **파일** 메뉴에서 **새**  >  **프로젝트** 를 선택 합니다.
 
     **새 프로젝트** 대화 상자가 나타납니다.
 
-2. 템플릿 창에서 사용 하려는 언어에 대 한 노드 아래의 **Office/SharePoint**를 확장 합니다.
+2. 템플릿 창에서 사용 하려는 언어에 대 한 노드 아래의 **Office/SharePoint** 를 확장 합니다.
 
 3. **Office 추가 기능** 노드를 선택합니다.
 
@@ -147,9 +148,9 @@ ms.locfileid: "85547565"
    - 백분율 기호(%)
 
    > [!NOTE]
-   > [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 프로젝트에서 기존 문서를 사용할 경우 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]에서 생성되거나 해당 항목으로 변환된 문서만 사용하세요. 마찬가지로 Word 2010 프로젝트의 기존 문서를 사용할 경우 Word 2010에서 생성되거나 해당 항목으로 변환된 문서만 사용하세요. 이전 버전 Word에서 생성된 문서를 사용하면 문서에서 특정 기능이 사용하지 않도록 설정됩니다. 이들 기능을 사용하는 코드를 작성하려고 하면 프로젝트에서 오류가 발생할 수 있습니다. 문서를 변환 하려면 또는 Word 2010에서 문서를 열고 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 리본의 **파일** 탭에서 **정보**  >  **변환**을 선택 합니다.
+   > [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 프로젝트에서 기존 문서를 사용할 경우 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]에서 생성되거나 해당 항목으로 변환된 문서만 사용하세요. 마찬가지로 Word 2010 프로젝트의 기존 문서를 사용할 경우 Word 2010에서 생성되거나 해당 항목으로 변환된 문서만 사용하세요. 이전 버전 Word에서 생성된 문서를 사용하면 문서에서 특정 기능이 사용하지 않도록 설정됩니다. 이들 기능을 사용하는 코드를 작성하려고 하면 프로젝트에서 오류가 발생할 수 있습니다. 문서를 변환 하려면 또는 Word 2010에서 문서를 열고 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 리본의 **파일** 탭에서 **정보**  >  **변환** 을 선택 합니다.
 
-8. **마침**을 선택합니다.
+8. **마침** 을 선택합니다.
 
 9. 다음 경우에 Word의 보안 센터에 있는 신뢰할 수 있는 위치 목록에 프로젝트 폴더와 하위 폴더를 추가합니다.
 
@@ -159,7 +160,7 @@ ms.locfileid: "85547565"
 
      문서를 신뢰할 수 있는 위치에 추가 하는 방법에 대 한 자세한 내용은 온라인 웹 사이트 Microsoft Office [파일의 신뢰할 수 있는 위치 만들기, 제거 또는 변경](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 프로젝트 템플릿 개요](../vsto/office-project-templates-overview.md)
 - [Office 솔루션 공동 개발](../vsto/collaborative-development-of-office-solutions.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

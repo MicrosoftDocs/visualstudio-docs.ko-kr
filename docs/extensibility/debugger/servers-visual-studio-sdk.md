@@ -1,5 +1,7 @@
 ---
 title: 서버 (Visual Studio SDK) | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 서버 정의 및 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712891"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845299"
 ---
 # <a name="servers-visual-studio-sdk"></a>서버(Visual Studio SDK)
 디버거 아키텍처에서 *서버*:
@@ -27,7 +29,7 @@ ms.locfileid: "80712891"
 
 - 는 Visual Studio 에서만 구현 되는 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) 인터페이스로 표시 됩니다 .이 인터페이스는 visual studio를 실행 하는 각 인스턴스에 대해 하나의 서버 인스턴스만 구현 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Ports](../../extensibility/debugger/ports.md)
 - [포트 공급자](../../extensibility/debugger/port-suppliers.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

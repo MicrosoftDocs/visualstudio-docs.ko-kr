@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 작업창
+description: 사용자 지정 작업창을 만들고 사용자에 게 친숙 한 인터페이스를 제공 하 여 솔루션의 기능에 액세스할 수 있도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862357"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844182"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 애플리케이션에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.
@@ -102,7 +104,7 @@ ms.locfileid: "91862357"
 
  다음 표에서는 <xref:Microsoft.Office.Tools.CustomTaskPane> 속성을 사용하여 사용자 지정 작업창에 대해 수행할 수 있는 변경 내용을 보여 줍니다.
 
-|Task|속성|
+|작업|속성|
 |----------|--------------|
 |작업창의 크기를 변경하려면|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |작업창의 위치를 변경하려면|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -114,7 +116,7 @@ ms.locfileid: "91862357"
 
  다음 표에서는 사용자 지정 작업창에 대한 사용자 변경 내용에 응답하기 위해 처리할 수 있는 이벤트를 보여 줍니다.
 
-|Task|이벤트|
+|작업|이벤트|
 |----------|-----------|
 |사용자가 작업창의 위치를 변경할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |사용자 작업창을 숨기거나 표시되도록 설정할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|

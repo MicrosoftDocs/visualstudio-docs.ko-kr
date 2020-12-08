@@ -1,5 +1,7 @@
 ---
 title: 'Excel: 문서 수준 사용자 지정 프로그래밍 시작'
+description: Visual Studio를 사용 하 여 Microsoft Office Excel 용 문서 수준 사용자 지정을 만들기 시작 하기 위해 알아야 할 내용을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585682"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846040"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel 용 문서 수준 사용자 지정 프로그래밍 시작
   Visual Studio를 사용 하 여 Excel Microsoft Office에 대 한 문서 수준 사용자 지정을 만들기 시작한 경우 알아야 할 사항은 다음과 같습니다.

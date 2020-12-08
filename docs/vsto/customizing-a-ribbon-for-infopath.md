@@ -1,5 +1,7 @@
 ---
 title: InfoPath에 대 한 리본 사용자 지정
+description: InfoPath Microsoft Office에서 리본을 사용자 지정 하는 경우 응용 프로그램에서 사용자 지정 리본이 나타나는 위치를 고려해 야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255513"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844169"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본 사용자 지정
   Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 애플리케이션 창에서 리본을 표시할 수 있습니다.
@@ -36,7 +38,7 @@ ms.locfileid: "71255513"
   인쇄 미리 보기 창을 통해 디자이너와 사용자는 양식이나 양식 템플릿을 인쇄하기 전에 해당 페이지를 미리 볼 수 있습니다.
 
 > [!NOTE]
-> 인쇄 미리 보기 창에는 **추가 기능** 탭이 나타나지 않습니다. 인쇄 미리 보기 창에 사용자 지정 탭을 표시하려면 탭의 **OfficeId** 속성을 **TabAddIns**로 설정하지 않았는지 확인합니다.
+> 인쇄 미리 보기 창에는 **추가 기능** 탭이 나타나지 않습니다. 인쇄 미리 보기 창에 사용자 지정 탭을 표시하려면 탭의 **OfficeId** 속성을 **TabAddIns** 로 설정하지 않았는지 확인합니다.
 
  리본을 표시할 각 창의 리본 형식을 지정해야 합니다.
 
@@ -61,8 +63,8 @@ ms.locfileid: "71255513"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
-- [리본 XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)

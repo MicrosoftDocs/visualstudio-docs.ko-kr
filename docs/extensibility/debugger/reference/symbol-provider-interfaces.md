@@ -1,5 +1,7 @@
 ---
 title: 기호 공급자 인터페이스 | Microsoft Docs
+description: 이 문서에서는 중단 모드에서 호출 스택의 변수를 평가 하는 Visual Studio SDK의 기호 처리 인터페이스에 대 한 설명에 연결 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715845"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845793"
 ---
 # <a name="symbol-provider-interfaces"></a>기호 공급자 인터페이스
 다음은에 대 한 기호 처리 인터페이스 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 입니다.
@@ -32,7 +34,7 @@ ms.locfileid: "80715845"
 |[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|SP|배열 기호 또는 배열 형식을 나타냅니다.|
 |[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|SP|클래스 기호 또는 클래스 형식을 나타냅니다.|
 |[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|SP|관리 코드와 관련 된 메서드를 사용 하 여 COM + 기호 공급자를 나타냅니다.|
-|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|관리 코드와 관련 된 메서드를 사용 하 여 **IDebugComPlusSymbolProvider**를 확장 하는 com + 기호 공급자를 나타냅니다.|
+|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|관리 코드와 관련 된 메서드를 사용 하 여 **IDebugComPlusSymbolProvider** 를 확장 하는 com + 기호 공급자를 나타냅니다.|
 |[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|SP|다른 기호 또는 형식에 대 한 컨테이너인 기호 또는 형식을 나타냅니다.|
 |[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|SP|기호에 연결할 수 있는 사용자 지정 특성을 나타냅니다.|
 |[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|SP|메서드 또는 형식에 대 한 사용자 지정 특성에 대 한 쿼리를 나타냅니다.|
@@ -58,5 +60,5 @@ ms.locfileid: "80715845"
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 개체의 컬렉션을 나타냅니다.|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|[Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체의 컬렉션을 나타냅니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

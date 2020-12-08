@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 데이터 연습
+description: Microsoft Word 및 Microsoft Excel 용 문서 수준 사용자 지정 및 VSTO 추가 기능에서 데이터를 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956032"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845585"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 솔루션의 데이터 연습
   다음 연습에서는 Microsoft Office Word 및 Microsoft Office Excel용 문서 수준 사용자 지정 및 VSTO 추가 기능 데이터로 작업하는 방법을 보여 줍니다.
@@ -47,7 +49,7 @@ ms.locfileid: "62956032"
 
 - [연습: 서버의 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Excel을 시작 하지 않고 Microsoft Office Excel 통합 문서에 캐시 되는 데이터 집합을 수정 하는 방법을 보여 줍니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)
 - [Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)

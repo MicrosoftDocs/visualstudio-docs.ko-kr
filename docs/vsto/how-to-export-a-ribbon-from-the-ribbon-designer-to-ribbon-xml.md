@@ -1,5 +1,7 @@
 ---
 title: '방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기'
+description: 리본 메뉴를 사용자 지정 하는 방법을 알아보고 디자이너에서 리본 XML로 리본을 내보내고 XML을 직접 편집할 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298432"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844142"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기
   **리본 (비주얼 디자이너)** 항목은 가능한 모든 유형의 리본 사용자 지정을 지원 하지 않습니다. 고급 방법으로 리본을 사용자 지정 하기 위해 디자이너에서 리본 XML로 리본 메뉴를 내보내고 XML을 직접 편집할 수 있습니다.
@@ -36,19 +38,19 @@ ms.locfileid: "92298432"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>리본 디자이너에서 리본 XML로 리본 메뉴를 내보내려면
 
-1. **솔루션 탐색기**에서 리본 코드 파일을 마우스 오른쪽 단추로 클릭 한 다음 **디자이너 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 리본 코드 파일을 마우스 오른쪽 단추로 클릭 한 다음 **디자이너 보기** 를 클릭 합니다.
 
-2. 리본 디자이너를 마우스 오른쪽 단추로 클릭 한 다음 **XML로 리본 메뉴 내보내기를**클릭 합니다.
+2. 리본 디자이너를 마우스 오른쪽 단추로 클릭 한 다음 **XML로 리본 메뉴 내보내기를** 클릭 합니다.
 
      Visual Studio에서 리본 XML 파일 및 리본 XML 코드 파일을 프로젝트에 추가 합니다.
 
 3. 리본 코드 클래스에서로 시작 하는 주석을 찾습니다 `TODO:` .
 
-4. 개발 중인 솔루션의 형식에 따라 이러한 주석의 코드 블록을 **ThisAddin**, **ThisWorkbook**또는 **ThisDocument** 클래스에 복사 합니다.
+4. 개발 중인 솔루션의 형식에 따라 이러한 주석의 코드 블록을 **ThisAddin**, **ThisWorkbook** 또는 **ThisDocument** 클래스에 복사 합니다.
 
      이 코드를 사용 하 여 Microsoft Office 응용 프로그램에서 사용자 지정 리본을 검색 하 고 로드할 수 있습니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.
 
-5. **ThisAddin**, **ThisWorkbook**또는 **ThisDocument** 클래스에서 코드 블록의 주석 처리를 제거 합니다.
+5. **ThisAddin**, **ThisWorkbook** 또는 **ThisDocument** 클래스에서 코드 블록의 주석 처리를 제거 합니다.
 
      코드의 주석 처리를 해제 한 후에는 다음 예제와 유사 합니다. 이 예제에서는 리본 클래스가 호출 됩니다 `MyRibbon` .
 
@@ -65,7 +67,7 @@ ms.locfileid: "92298432"
 
      콜백 메서드를 작성 하 고 RibbonX 프로그래밍 모델을 사용 하는 방법에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

@@ -1,5 +1,7 @@
 ---
 title: VSTO 추가 기능 프로그래밍 시작
+description: VSTO 추가 기능을 사용 하 여 Microsoft Office 응용 프로그램을 자동화 하 고, 응용 프로그램의 기능을 확장 하 고, 응용 프로그램의 사용자 인터페이스를 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253584"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845117"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 추가 기능 프로그래밍 시작
   VSTO 추가 기능을 사용하여 Microsoft Office 애플리케이션을 자동화하고 애플리케이션의 기능을 확장할 수 있으며 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. VSTO 추가 기능이 Visual Studio를 사용 하 여 만들 수 있는 다른 유형의 Office 솔루션과 어떻게 다른 지에 대 한 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -74,7 +76,7 @@ ms.locfileid: "71253584"
 
 - [연습: Excel 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [연습: Outlook 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [연습: Outlook 용 첫 VSTO Add-In 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [연습: PowerPoint 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
@@ -86,7 +88,7 @@ ms.locfileid: "71253584"
 
   Office 프로젝트의 일반적인 작업 중 일부를 안내 하는 항목의 목록은 [office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)

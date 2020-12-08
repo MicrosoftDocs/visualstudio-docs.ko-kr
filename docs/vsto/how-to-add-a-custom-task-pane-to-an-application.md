@@ -1,5 +1,7 @@
 ---
 title: '방법: 응용 프로그램에 사용자 지정 작업창 추가'
+description: VSTO (Visual Studio Tools for Office) 추가 기능을 사용 하 여 응용 프로그램에 사용자 지정 작업창을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546213"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845052"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>방법: 응용 프로그램에 사용자 지정 작업창 추가
   VSTO 추가 기능을 사용하여 위에 나열된 애플리케이션에 사용자 지정 작업창을 추가할 수 있습니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
@@ -34,9 +36,9 @@ ms.locfileid: "85546213"
 
 1. 위에 나열된 애플리케이션 중 하나에 대한 VSTO 추가 기능 프로젝트를 열거나 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-2. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **MyUserControl**로 변경한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **MyUserControl** 로 변경한 다음 **추가** 를 클릭 합니다.
 
      사용자 정의 컨트롤이 디자이너에서 열립니다.
 
@@ -57,7 +59,7 @@ ms.locfileid: "85546213"
     > [!NOTE]
     > 이 코드는 애플리케이션의 활성 창과 사용자 지정 작업창을 연결합니다. 일부 애플리케이션의 경우 작업창이 애플리케이션의 다른 문서나 항목과 함께 표시되도록 이 코드를 수정하는 것이 좋습니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

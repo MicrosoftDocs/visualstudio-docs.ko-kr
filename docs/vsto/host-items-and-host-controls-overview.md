@@ -1,5 +1,7 @@
 ---
 title: 호스트 항목 및 호스트 컨트롤 개요
+description: 호스트 항목 및 호스트 컨트롤은 Office 솔루션에 프로그래밍 모델을 제공 하는 데 도움이 되는 형식입니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255924"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845572"
 ---
 # <a name="host-items-and-host-controls-overview"></a>호스트 항목 및 호스트 컨트롤 개요
   호스트 항목과 호스트 컨트롤은 Visual Studio에서 Office 개발 도구를 사용하여 만든 Office 솔루션에 프로그래밍 모델을 제공하는 데 도움이 되는 형식입니다. 호스트 항목과 호스트 컨트롤은 COM 기반의 Microsoft Office Word 및 Microsoft Office Excel의 개체 모델과 상호 작용합니다. 이는 Windows Forms 컨트롤과 같이 관리되는 개체와 상호 작용한다고 하는 편이 더 정확합니다.
@@ -59,7 +61,7 @@ ms.locfileid: "71255924"
 
 - <xref:Microsoft.Office.Tools.Excel.ChartSheet>
 
-  이러한 형식은 각각 *네이티브 Office 개체*라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 예를 들어 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 <xref:Microsoft.Office.Interop.Word.Document> 개체를 확장하며 이는 Word용 주 interop 어셈블리에서 정의됩니다.
+  이러한 형식은 각각 *네이티브 Office 개체* 라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 예를 들어 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 <xref:Microsoft.Office.Interop.Word.Document> 개체를 확장하며 이는 Word용 주 interop 어셈블리에서 정의됩니다.
 
   호스트 항목은 일반적으로 해당 Office 개체와 기본 기능이 같지만 다음과 같은 기능으로 더욱 향상되었습니다.
 
@@ -145,10 +147,10 @@ ms.locfileid: "71255924"
 - [방법: Word 문서에 XMLNodes 컨트롤 추가](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>호스트 컨트롤 이름
- 호스트 컨트롤을 **도구 상자** 에서 문서에 끌어 놓는 경우 해당 컨트롤은 자동으로 명명되는데 이름 끝에 증분값을 붙인 컨트롤 형식을 사용합니다. 예를 들어 bookmark 이름은 **bookmark1**, **bookmark2**등입니다. Word 또는 Excel의 본래 기능을 사용하여 컨트롤을 추가하는 경우에는 컨트롤을 만들 때 특정 이름을 지정할 수 있습니다. 또한 **속성** 창에서 **이름** 속성 값을 변경하여 컨트롤의 이름을 바꿀 수도 있습니다.
+ 호스트 컨트롤을 **도구 상자** 에서 문서에 끌어 놓는 경우 해당 컨트롤은 자동으로 명명되는데 이름 끝에 증분값을 붙인 컨트롤 형식을 사용합니다. 예를 들어 bookmark 이름은 **bookmark1**, **bookmark2** 등입니다. Word 또는 Excel의 본래 기능을 사용하여 컨트롤을 추가하는 경우에는 컨트롤을 만들 때 특정 이름을 지정할 수 있습니다. 또한 **속성** 창에서 **이름** 속성 값을 변경하여 컨트롤의 이름을 바꿀 수도 있습니다.
 
 > [!NOTE]
-> 예약어를 사용하여 호스트 컨트롤의 이름을 지정할 수 없습니다. 예를 들어 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하고 이름을 **System**으로 변경하면 프로젝트를 빌드할 때 오류가 발생합니다.
+> 예약어를 사용하여 호스트 컨트롤의 이름을 지정할 수 없습니다. 예를 들어 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하고 이름을 **System** 으로 변경하면 프로젝트를 빌드할 때 오류가 발생합니다.
 
 ### <a name="delete-host-controls"></a>호스트 컨트롤 삭제
  문서 수준 프로젝트에서는 Excel 워크시트 또는 Word 문서에서 컨트롤을 선택 하 고 **delete** 키를 눌러 디자인 타임에 호스트 컨트롤을 삭제할 수 있습니다. 하지만 **컨트롤을 삭제하려면 Excel의** 이름 정의 <xref:Microsoft.Office.Tools.Excel.NamedRange> 대화 상자를 사용해야 합니다.
@@ -166,9 +168,9 @@ ms.locfileid: "71255924"
  호스트 컨트롤이 Office 개체를 확장하는 한 가지 방법은 이벤트를 추가하는 것입니다. 예를 들어 Excel의 <xref:Microsoft.Office.Interop.Excel.Range> 개체 및 Word의 <xref:Microsoft.Office.Interop.Word.Bookmark> 개체에는 이벤트가 없지만 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 프로그래밍 가능한 이벤트를 추가하여 이러한 개체를 확장합니다. Windows Forms에서 컨트롤의 이벤트를 액세스하는 방법과 같은 방법으로(Visual Basic의 이벤트 드롭다운 목록 및 C#의 이벤트 속성 페이지를 통해) 이러한 이벤트에 액세스하고 코드를 추가할 수 있습니다. 자세한 내용은 [연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)을 참조 하세요.
 
 > [!NOTE]
-> Excel에서 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Application> 속성을 **false**라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 이 속성을 **false** 로 설정 하면 Excel에서 호스트 컨트롤의 이벤트를 비롯 한 이벤트를 발생 시킬 수 없습니다.
+> Excel에서 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Application> 속성을 **false** 라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 이 속성을 **false** 로 설정 하면 Excel에서 호스트 컨트롤의 이벤트를 비롯 한 이벤트를 발생 시킬 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
