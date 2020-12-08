@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 배포
+description: ClickOnce 또는 Windows Installer를 사용하여 Office 솔루션을 배포할 수 있습니다. ClickOnce를 사용 하면 솔루션을 배포 하는 데 필요한 단계 수를 줄일 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ec10c42935ac961218f910fbef98d51f5f5569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416512"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846313"
 ---
 # <a name="deploy-an-office-solution"></a>Office 솔루션 배포
   ClickOnce 또는 Windows Installer를 사용하여 Office 솔루션을 배포할 수 있습니다. ClickOnce를 사용하면 솔루션의 배포 및 업데이트에 필요한 단계 수를 줄일 수 있습니다. Windows Installer를 사용하는 경우, 솔루션이 설치되는 방법과 사용자가 솔루션을 설치할 때 설치 프로그램에서 표시되는 페이지를 제어할 수 있습니다.

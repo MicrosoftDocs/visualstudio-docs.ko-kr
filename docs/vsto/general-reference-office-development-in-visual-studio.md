@@ -1,7 +1,8 @@
 ---
 title: 일반 참조 (Visual Studio에서 Office 개발)
+description: Visual Studio에서 Microsoft Office 개발 프로젝트에 대 한 일반적인 참조 정보를 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551508"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847782"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>일반 참조 (Visual Studio에서 Office 개발)
   이 섹션에는 Visual Studio의 Microsoft Office 프로젝트에 대 한 기술 세부 정보가 포함 되어 있습니다.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 
  Office를 사용 하 여 설치할 수 있는 주 interop 어셈블리를 나열 하 고 각각에 대 한 간략 한 설명을 제공 합니다.

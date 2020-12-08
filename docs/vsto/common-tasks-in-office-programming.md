@@ -1,5 +1,7 @@
 ---
 title: Office 프로그래밍의 일반적인 작업
+description: Microsoft Office Word 또는 Office Excel의 개체 모델을 사용 하지 않고도 문서 수준 사용자 지정에서 데이터를 프로그래밍 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809861"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846300"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 프로그래밍의 일반적인 작업
   이 항목은 Visual Studio를 사용하여 Office 솔루션을 프로그래밍하는 방법에 대한 다음 범주의 일반적인 질문에 대해 답변을 찾을 수 있도록 설계되었습니다.
@@ -230,7 +232,7 @@ ms.locfileid: "90809861"
 
 - [방법: Office 솔루션의 설치 경로 변경](/previous-versions/bb608626(v=vs.110))
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)

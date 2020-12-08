@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 Office 솔루션 아키텍처
+description: Visual Studio에서 Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션 및 작동 방식에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551870"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847587"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio의 Office 솔루션 아키텍처
   이 섹션의 항목에서는 Visual Studio에서 Office 개발자 도구를 사용하여 만든 솔루션의 작동 방식에 대한 정보를 제공합니다.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)
 

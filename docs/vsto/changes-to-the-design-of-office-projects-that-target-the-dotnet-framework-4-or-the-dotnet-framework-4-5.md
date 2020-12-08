@@ -1,5 +1,7 @@
 ---
 title: .NET Framework를 대상으로 하는 Office 프로젝트의 변경 내용 디자인
+description: .NET Framework 4 이상을 대상으로 하는 Office 프로젝트의 디자인에 대해 Visual Studio에 도입 된 변경 내용에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be681bb930e22b3e4cdd4597eb4d265c27b08139
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583829"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847860"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 Office 프로젝트의 디자인 변경
   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]부터 Visual Studio에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트의 디자인에 몇 가지 변경 사항이 도입되었습니다. 이전 버전의 Visual Studio에서 Office 프로젝트를 사용하는 데 익숙한 경우 .NET Framework 4.0 이상의 버전을 대상으로 하는 Office 프로젝트를 개발하기 전에 이러한 변경 사항을 알고 있어야 합니다. 기본적으로 Visual Studio 2013 이상을 사용하여 만드는 모든 프로젝트는 .NET Framework 4.0 이상을 대상으로 합니다.

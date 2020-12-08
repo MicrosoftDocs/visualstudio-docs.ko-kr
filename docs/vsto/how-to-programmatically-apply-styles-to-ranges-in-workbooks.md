@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용'
+description: 통합 문서에서 영역에 명명 된 스타일을 적용할 수 있는 방법을 알아봅니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8b511d195a40f42bf0b1224dd828b6c6d2b9671
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 75dec33b0bf07f117b6228a293e62092c5d012c2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585355"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847561"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용
   통합 문서의 영역에 명명된 스타일을 적용할 수 있습니다. Excel에서는 미리 정의된 다양한 스타일을 제공합니다.

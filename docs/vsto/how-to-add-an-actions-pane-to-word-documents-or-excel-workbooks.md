@@ -1,5 +1,7 @@
 ---
 title: Word 문서 또는 Excel 통합 문서에 작업 창 추가
+description: Microsoft Office Word 문서 또는 Microsoft Excel 통합 문서에 작업 창을 추가 하는 방법에 대해 먼저 Windows Forms 사용자 정의 컨트롤을 만들어야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546226"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848068"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가
   Microsoft Office Word 문서 또는 Microsoft Excel 통합 문서에 작업 창을 추가 하려면 먼저 Windows Forms 사용자 정의 컨트롤을 만듭니다. 그런 다음 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 프로젝트에서 필드 (Word) 또는 `ThisWorkbook.ActionsPane` 필드 (Excel)의 속성에 사용자 정의 컨트롤을 추가 합니다.
@@ -37,9 +39,9 @@ ms.locfileid: "85546226"
 
 1. Visual Studio에서 Word 또는 Excel 문서 수준 프로젝트를 엽니다.
 
-2. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤**을 선택 하 고 이름을 **HelloControl**로 선택한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤** 을 선택 하 고 이름을 **HelloControl** 로 선택한 다음 **추가** 를 클릭 합니다.
 
     > [!NOTE]
     > 또는 **사용자 정의 컨트롤** 항목을 프로젝트에 추가할 수 있습니다. **작업 창 컨트롤** 및 **사용자 정의 컨트롤** 항목에 의해 생성 된 클래스는 기능적으로 동일 합니다.
@@ -47,7 +49,7 @@ ms.locfileid: "85546226"
 4. **도구 상자** 의 **Windows Forms** 탭에서 **Button** 컨트롤을 컨트롤로 끌어 옵니다.
 
     > [!NOTE]
-    > 컨트롤이 디자이너에 표시 되지 않는 경우 **솔루션 탐색기**에서 **HelloControl** 를 두 번 클릭 합니다.
+    > 컨트롤이 디자이너에 표시 되지 않는 경우 **솔루션 탐색기** 에서 **HelloControl** 를 두 번 클릭 합니다.
 
 5. 단추의 이벤트 처리기에 코드를 추가 <xref:System.Windows.Forms.Control.Click> 합니다. 다음 예제에서는 Microsoft Office Word 문서에 대 한 코드를 보여 줍니다.
 
@@ -75,7 +77,7 @@ ms.locfileid: "85546226"
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [연습: 작업 창에서 문서에 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)

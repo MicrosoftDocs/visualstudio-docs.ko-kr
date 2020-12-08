@@ -1,5 +1,7 @@
 ---
 title: 변경 값의 샘플 구현 | Microsoft Docs
+description: 지역 창에 표시 되는 모든 로컬에는 IDebugProperty2 개체가 연결 되어 있습니다. Visual Studio에서 메모리의 로컬 값을 업데이트 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713110"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847730"
 ---
 # <a name="sample-implementation-of-changing-values"></a>변경 값의 샘플 구현
 > [!IMPORTANT]
@@ -420,6 +422,6 @@ HRESULT FieldSetValue(
 
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [로컬의 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

@@ -1,5 +1,7 @@
 ---
 title: 차트 컨트롤
+description: 워크시트에 차트를 추가 하면 Visual Studio에서 직접 프로그래밍할 수 있는 차트 개체를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255299"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847830"
 ---
 # <a name="chart-control"></a>차트 컨트롤
   <xref:Microsoft.Office.Tools.Excel.Chart> 컨트롤은 이벤트를 노출하는 차트 개체입니다. 워크시트에 차트를 추가하면 Visual Studio에서 Microsoft Office Excel 개체 모델을 트래버스하지 않고 직접 프로그래밍할 수 있는 <xref:Microsoft.Office.Tools.Excel.Chart> 개체를 만듭니다.

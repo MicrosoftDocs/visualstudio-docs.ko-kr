@@ -1,5 +1,7 @@
 ---
 title: '방법: 포함 목록 보안 구성'
+description: 최종 사용자에 게 신뢰 결정을 포함 목록에 저장 하 여 Office 솔루션을 설치 하는 옵션이 제공 되는지 여부를 제어 하도록 ClickOnce 신뢰 프롬프트를 구성 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541637"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846729"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
   관리자 권한이 있는 경우 신뢰 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 확인을 포함 목록에 저장 하 여 최종 사용자에 게 Office 솔루션을 설치 하는 옵션이 제공 되는지 여부를 제어 하도록 신뢰 프롬프트를 구성할 수 있습니다. 포함 목록에 대 한 자세한 내용은 [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)를 참조 하세요.
@@ -40,9 +42,9 @@ ms.locfileid: "85541637"
 
 1. 레지스트리 편집기를 엽니다.
 
-    1. **시작**을 클릭한 다음 **실행**을 클릭합니다.
+    1. **시작** 을 클릭한 다음 **실행** 을 클릭합니다.
 
-    2. **열기** 상자에 **regedt32.exe**를 입력 한 다음 **확인**을 클릭 합니다.
+    2. **열기** 상자에 **regedt32.exe** 를 입력 한 다음 **확인** 을 클릭 합니다.
 
 2. 다음 레지스트리 키를 찾습니다.
 
@@ -50,7 +52,7 @@ ms.locfileid: "85541637"
 
      키가 없으면 새로 만듭니다.
 
-3. 다음 하위 키가 아직 없는 경우 **문자열 값**으로 추가 하 고 연결 된 값을 사용 합니다.
+3. 다음 하위 키가 아직 없는 경우 **문자열 값** 으로 추가 하 고 연결 된 값을 사용 합니다.
 
     |문자열 값 하위 키|값|
     |-------------------------|-----------|
@@ -60,7 +62,7 @@ ms.locfileid: "85541637"
     |**LocalIntranet**|**사용**|
     |**사이트**|**사용**|
 
-     기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정**되어 있습니다.
+     기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정** 되어 있습니다.
 
 ### <a name="to-enable-the-inclusion-list-programmatically"></a>프로그래밍 방식으로 포함 목록을 사용 하도록 설정 하려면
 
@@ -99,9 +101,9 @@ ms.locfileid: "85541637"
 
 1. 레지스트리 편집기를 엽니다.
 
-    1. **시작**을 클릭한 다음 **실행**을 클릭합니다.
+    1. **시작** 을 클릭한 다음 **실행** 을 클릭합니다.
 
-    2. **열기** 상자에 **regedt32.exe**를 입력 한 다음 **확인**을 클릭 합니다.
+    2. **열기** 상자에 **regedt32.exe** 를 입력 한 다음 **확인** 을 클릭 합니다.
 
 2. 다음 레지스트리 키를 찾습니다.
 
@@ -109,7 +111,7 @@ ms.locfileid: "85541637"
 
      키가 없으면 새로 만듭니다.
 
-3. 다음 하위 키가 아직 없는 경우 **문자열 값**으로 추가 하 고 연결 된 값을 사용 합니다.
+3. 다음 하위 키가 아직 없는 경우 **문자열 값** 으로 추가 하 고 연결 된 값을 사용 합니다.
 
     |문자열 값 하위 키|값|
     |-------------------------|-----------|
@@ -119,7 +121,7 @@ ms.locfileid: "85541637"
     |**LocalIntranet**|**AuthenticodeRequired**|
     |**사이트**|**AuthenticodeRequired**|
 
-     기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정**되어 있습니다.
+     기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정** 되어 있습니다.
 
 ### <a name="to-restrict-the-inclusion-list-programmatically"></a>프로그래밍 방식으로 포함 목록을 제한 하려면
 
@@ -158,15 +160,15 @@ ms.locfileid: "85541637"
 
 1. 레지스트리 편집기를 엽니다.
 
-    1. **시작**을 클릭한 다음 **실행**을 클릭합니다.
+    1. **시작** 을 클릭한 다음 **실행** 을 클릭합니다.
 
-    2. **열기** 상자에 **regedt32.exe**를 입력 한 다음 **확인**을 클릭 합니다.
+    2. **열기** 상자에 **regedt32.exe** 를 입력 한 다음 **확인** 을 클릭 합니다.
 
 2. 아직 존재 하지 않는 경우 다음 레지스트리 키를 만듭니다.
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-3. 다음 하위 키가 아직 없는 경우 **문자열 값**으로 추가 하 고 연결 된 값을 사용 합니다.
+3. 다음 하위 키가 아직 없는 경우 **문자열 값** 으로 추가 하 고 연결 된 값을 사용 합니다.
 
     |문자열 값 하위 키|값|
     |-------------------------|-----------|
@@ -207,6 +209,6 @@ ms.locfileid: "85541637"
 
 3. 애플리케이션을 빌드 및 실행합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

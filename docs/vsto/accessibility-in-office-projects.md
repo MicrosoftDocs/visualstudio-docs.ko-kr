@@ -1,5 +1,7 @@
 ---
 title: Office 프로젝트의 내게 필요한 옵션
+description: 표준 접근성 요구 사항을 충족 하는 사용자 지정 솔루션을 빌드할 수 있는 다양 한 내게 필요한 옵션 기능을 포함 하는 Microsoft Office 프로젝트에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189628"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847366"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 프로젝트의 내게 필요한 옵션
 
@@ -40,15 +42,15 @@ Microsoft Visual Studio 및 Microsoft Office에는 표준 접근성 요구 사�
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>디자이너에서 리본 탭 및 컨트롤에 대 한 바로 가기 키를 보려면
 
-1. Visual Studio의 **도구** 메뉴에서 **옵션**을 클릭 합니다.
+1. Visual Studio의 **도구** 메뉴에서 **옵션** 을 클릭 합니다.
 
-2. **Office 도구** 노드를 확장 하 고 **Microsoft Office Excel 키보드** 또는 **Microsoft Office Word 키보드**를 적절히 선택 합니다.
+2. **Office 도구** 노드를 확장 하 고 **Microsoft Office Excel 키보드** 또는 **Microsoft Office Word 키보드** 를 적절히 선택 합니다.
 
-3. **동적 키보드 구성표**를 선택 합니다.
+3. **동적 키보드 구성표** 를 선택 합니다.
 
      변경 내용을 적용 하려면 Visual Studio를 다시 시작 해야 한다는 내용의 메시지가 표시 됩니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 5. Visual Studio를 다시 시작 하 고 프로젝트를 다시 엽니다.
 
@@ -70,7 +72,7 @@ Microsoft Visual Studio 및 Microsoft Office에는 표준 접근성 요구 사�
   문서에서 Windows Forms 컨트롤의 제한에 대 한 자세한 내용은 [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)을 참조 하세요.
 
 ### <a name="actions-panes-and-custom-task-panes"></a>작업 창 및 사용자 지정 작업창
- 작업 창 또는 사용자 지정 작업창에 포커스가 있는 경우 Windows Forms 응용 프로그램에서 컨트롤에 액세스 하는 것과 동일한 방식으로 컨트롤에 액세스 합니다. 작업 창과 문서 사이에서 커서를 이동 하려면 **F6**키를 누를 수 있습니다.
+ 작업 창 또는 사용자 지정 작업창에 포커스가 있는 경우 Windows Forms 응용 프로그램에서 컨트롤에 액세스 하는 것과 동일한 방식으로 컨트롤에 액세스 합니다. 작업 창과 문서 사이에서 커서를 이동 하려면 **F6** 키를 누를 수 있습니다.
 
  작업 창 및 사용자 지정 작업창에 대 한 자세한 내용은 [작업 창 개요](../vsto/actions-pane-overview.md) 및 [사용자 지정 작업창](../vsto/custom-task-panes.md)을 참조 하세요.
 
@@ -80,11 +82,11 @@ Visual Studio에는 디스플레이 모드와 관련 된 다음과 같은 제한
 
 - 문서의 확대/축소 설정을 100% 이외의 값으로 변경 하면 Word 문서 또는 Excel 워크시트의 컨트롤이 사용 하지 않도록 설정 됩니다.
 
-- 사용자가 **고대비 사용**을 위해 컴퓨터의 접근성 옵션을 변경 하면 **새 프로젝트** 대화 상자에 컨트롤이 올바르게 표시 되지 않습니다.
+- 사용자가 **고대비 사용** 을 위해 컴퓨터의 접근성 옵션을 변경 하면 **새 프로젝트** 대화 상자에 컨트롤이 올바르게 표시 되지 않습니다.
 
 돋보기를 사용 하 여 이러한 제한을 극복할 수 있습니다. 돋보기는 화면의 확대 된 부분을 표시 하는 별도의 창을 만드는 창에 표시 되는 유틸리티입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)

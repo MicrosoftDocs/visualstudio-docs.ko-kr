@@ -1,5 +1,7 @@
 ---
 title: Outlook 양식 영역 만들기
+description: 양식 영역을 사용 하 여 양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 Microsoft Outlook 양식을 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255911"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847964"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook 양식 영역 만들기
   양식 영역을 사용하여 Microsoft Office Outlook 양식을 사용자 지정할 수 있습니다. Visual Studio는 양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 하는 고급 도구를 제공합니다.
@@ -69,11 +71,11 @@ ms.locfileid: "71255911"
 
  마법사를 사용하여 만들려는 양식 영역의 형식을 지정합니다. 다음 표에서는 각 양식 영역 형식에 대해 설명합니다.
 
-|영역 형식|Description|
+|영역 형식|설명|
 |-----------------|-----------------|
 |별도|Outlook 양식에 새 페이지로 양식 영역을 추가합니다.|
 |인접|Outlook 양식의 기본 페이지 맨 아래에 양식 영역을 추가합니다.|
-|대체 기능|Outlook 양식의 기본 페이지를 대체하는 새 페이지로 양식 영역을 추가합니다.|
+|Replacement|Outlook 양식의 기본 페이지를 대체하는 새 페이지로 양식 영역을 추가합니다.|
 |모두 바꾸기|전체 Outlook 양식을 양식 영역으로 바꿉니다.|
 
  마법사를 사용하여 표시 조건을 지정하고 확장할 양식의 형식을 선택할 수도 있습니다. 자세한 내용은 [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)를 참조 하세요.
@@ -116,18 +118,18 @@ ms.locfileid: "71255911"
 
  양식 영역 디자이너를 여는 방법에는 다음 세 가지가 있습니다.
 
-- **솔루션 탐색기**에서 양식 영역 코드 파일을 두 번 클릭 합니다.
+- **솔루션 탐색기** 에서 양식 영역 코드 파일을 두 번 클릭 합니다.
 
-- **솔루션 탐색기**에서 양식 영역 코드 파일을 마우스 오른쪽 단추로 클릭 한 다음 **디자이너 보기**를 클릭 합니다.
+- **솔루션 탐색기** 에서 양식 영역 코드 파일을 마우스 오른쪽 단추로 클릭 한 다음 **디자이너 보기** 를 클릭 합니다.
 
-- **솔루션 탐색기**에서 양식 영역 코드 파일을 선택 하 고 **보기** 메뉴에서 **디자이너**를 클릭 합니다.
+- **솔루션 탐색기** 에서 양식 영역 코드 파일을 선택 하 고 **보기** 메뉴에서 **디자이너** 를 클릭 합니다.
 
   양식 영역 디자이너는 관리되는 컨트롤만 지원합니다. 네이티브 Outlook 컨트롤을 추가할 수 없습니다.
 
 ## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a> Outlook에서 디자인 한 양식 영역 가져오기
  Outlook에서 디자인할 때 양식 영역에 네이티브 Outlook 컨트롤을 추가할 수 있습니다. 네이티브 Outlook 컨트롤을 사용하여 디자인 타임에 Outlook 데이터에 바인딩할 수 있습니다. 그러나 양식 영역 디자이너를 사용하여 관리되는 컨트롤을 추가하거나 양식 영역의 디자인을 변경할 수 없습니다.
 
- **새 Outlook 양식 영역** 마법사를 사용 하 여 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져올 수 있습니다. **양식 영역을 만드는 방법 선택** 페이지에서 **Outlook 양식 저장 파일 (.ofs) 가져오기**를 선택 합니다. 그런 다음 Outlook 양식 저장 파일 (*.ofs*) 파일의 위치를 찾아볼 수 있습니다. Outlook에서는 양식 영역을 *.ofs* 파일로 저장 합니다.
+ **새 Outlook 양식 영역** 마법사를 사용 하 여 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져올 수 있습니다. **양식 영역을 만드는 방법 선택** 페이지에서 **Outlook 양식 저장 파일 (.ofs) 가져오기** 를 선택 합니다. 그런 다음 Outlook 양식 저장 파일 (*.ofs*) 파일의 위치를 찾아볼 수 있습니다. Outlook에서는 양식 영역을 *.ofs* 파일로 저장 합니다.
 
  **새 Outlook 양식 영역** 마법사는 *.ofs* 파일을 프로젝트 디렉터리에 복사 하 고 양식 영역 디자이너 파일에 컨트롤 참조를 추가 합니다. 그런 다음 양식 영역 코드 파일에서 컨트롤 이벤트를 처리할 수 있습니다.
 
@@ -151,7 +153,7 @@ ms.locfileid: "71255911"
 ### <a name="handle-form-region-events"></a><a name="HandlingFormRegionEvents"></a> 양식 영역 이벤트 처리
  **Outlook 양식 영역** 항목은 다음 세 가지 이벤트 처리기를 양식 영역 코드 파일에 자동으로 추가 합니다.
 
-|이벤트|Description|
+|이벤트|설명|
 |-----------|-----------------|
 |FormRegionInitializing|양식 영역을 초기화하기 전에 발생합니다. 이 이벤트 처리기의 조건을 검사하여 Outlook에서 양식 영역을 표시할지 여부를 확인할 수 있습니다. 자세한 내용은 [방법: Outlook에서 양식 영역 표시 안 함](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)을 참조 하세요.|
 |FormRegionShowing|양식 영역의 인스턴스가 만들어진 후 양식 영역이 표시되기 전에 발생합니다.|
@@ -176,7 +178,7 @@ ms.locfileid: "71255911"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[Outlook 양식 영역 만들기에 대 한 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)|양식 영역을 최적화하고 잠재적인 문제를 방지하는 데 도움이 되는 정보를 제공합니다.|
 |[방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|**새 Outlook 양식 영역** 마법사를 사용 하 여 표준 또는 사용자 지정 Microsoft Office outlook 양식을 확장 하는 양식 영역을 만드는 방법을 보여 줍니다.|

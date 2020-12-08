@@ -1,5 +1,7 @@
 ---
 title: 서버에 있는 문서의 데이터 액세스
+description: Microsoft Office Word 또는 Microsoft Office Excel의 개체 모델을 사용 하지 않고도 문서 수준 사용자 지정에서 데이터를 프로그래밍 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255773"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847626"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>서버에 있는 문서의 데이터 액세스
   Microsoft Office Word 또는 Microsoft Office Excel의 개체 모델을 사용 하지 않고도 문서 수준 사용자 지정에서 데이터에 대해 프로그래밍할 수 있습니다. 즉, Word 또는 Excel이 설치 되지 않은 서버에서 문서에 포함 된 데이터에 액세스할 수 있습니다. 예를 들어, 서버 (예: 페이지)의 코드는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 문서의 데이터를 사용자 지정 하 고 사용자 지정 된 문서를 최종 사용자에 게 보낼 수 있습니다. 최종 사용자가 문서를 열면 솔루션 어셈블리의 데이터 바인딩 코드가 사용자 지정 된 데이터를 문서에 바인딩합니다. 이는 문서의 데이터가 사용자 인터페이스에서 분리 되기 때문에 가능 합니다. 자세한 내용은 [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)를 참조 하세요.
@@ -70,14 +72,14 @@ ms.locfileid: "71255773"
 ### <a name="modify-null-values-in-the-data-cache"></a>데이터 캐시에서 null 값 수정
  문서를 저장 하 고 닫을 때 값이 **null** 인 개체는 데이터 캐시에 저장 되지 않습니다. 캐시 된 데이터를 수정할 때 다음과 같은 제한 사항이 있습니다.
 
-- 데이터 캐시의 개체를 **null**값으로 설정 하면 문서를 열 때 데이터 캐시의 모든 개체가 자동으로 **null** 로 설정 되 고 문서를 저장 하 고 닫을 때 전체 데이터 캐시가 지워집니다. 즉, 캐시 된 모든 개체가 데이터 캐시에서 제거 되 고 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 컬렉션이 비어 있게 됩니다.
+- 데이터 캐시의 개체를 **null** 값으로 설정 하면 문서를 열 때 데이터 캐시의 모든 개체가 자동으로 **null** 로 설정 되 고 문서를 저장 하 고 닫을 때 전체 데이터 캐시가 지워집니다. 즉, 캐시 된 모든 개체가 데이터 캐시에서 제거 되 고 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 컬렉션이 비어 있게 됩니다.
 
 - 데이터 캐시에 **null** 개체가 포함 된 솔루션을 빌드하고 문서를 처음 열기 전에 클래스를 사용 하 여 이러한 개체를 초기화 하려는 경우 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 데이터 캐시의 모든 개체를 초기화 해야 합니다. 일부 개체만 초기화 하면 문서를 열 때 모든 개체가 **null** 로 설정 되 고 문서를 저장 하 고 닫을 때 전체 데이터 캐시가 지워집니다.
 
 ## <a name="access-typed-datasets-in-the-cache"></a>캐시의 형식화 된 데이터 집합에 액세스
- Office 솔루션과 Office 외부 응용 프로그램 (예: Windows Forms 응용 프로그램 또는 프로젝트)에서 형식화 된 데이터 집합의 데이터에 액세스 하려는 경우 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 두 프로젝트 모두에서 참조 되는 별도의 어셈블리에 형식화 된 데이터 집합을 정의 해야 합니다. **데이터 소스 구성** 마법사나 **데이터 세트 디자이너**를 사용 하 여 각 프로젝트에 형식화 된 데이터 집합을 추가 하는 경우 .NET Framework는 두 프로젝트의 형식화 된 데이터 집합을 서로 다른 형식으로 처리 합니다. 형식화 된 데이터 집합을 만드는 방법에 대 한 자세한 내용은 [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조 하세요.
+ Office 솔루션과 Office 외부 응용 프로그램 (예: Windows Forms 응용 프로그램 또는 프로젝트)에서 형식화 된 데이터 집합의 데이터에 액세스 하려는 경우 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 두 프로젝트 모두에서 참조 되는 별도의 어셈블리에 형식화 된 데이터 집합을 정의 해야 합니다. **데이터 소스 구성** 마법사나 **데이터 세트 디자이너** 를 사용 하 여 각 프로젝트에 형식화 된 데이터 집합을 추가 하는 경우 .NET Framework는 두 프로젝트의 형식화 된 데이터 집합을 서로 다른 형식으로 처리 합니다. 형식화 된 데이터 집합을 만드는 방법에 대 한 자세한 내용은 [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [서버에 있는 문서의 데이터 액세스](../vsto/accessing-data-in-documents-on-the-server.md)
 - [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)

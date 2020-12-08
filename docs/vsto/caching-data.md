@@ -1,5 +1,7 @@
 ---
 title: 데이터 캐시
+description: 문서 수준 사용자 지정에서 데이터 개체를 캐시 하는 방법에 대해 알아봅니다. Microsoft Office Word 또는 Excel을 열지 않고 오프 라인으로 또는 데이터에 액세스할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939417"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847873"
 ---
 # <a name="cache-data"></a>데이터 캐시
   문서 수준 사용자 지정에서 데이터 개체를 캐시 하 여 데이터를 오프 라인으로 액세스 하거나 Word Microsoft Office 또는 Microsoft Office Excel을 열지 않고도 데이터에 액세스할 수 있습니다. 개체를 캐시 하려면 개체에 특정 요구 사항을 충족 하는 데이터 형식이 있어야 합니다. .NET Framework의 많은 일반적인 데이터 형식은, 및를 포함 하 여 이러한 요구 사항을 충족 <xref:System.String> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 합니다.
@@ -79,11 +81,11 @@ ms.locfileid: "62939417"
  자세한 내용은 [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)를 참조 하세요.
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>데이터 캐시에 null 값을 추가 하는 경우 데이터 손실 방지
- 데이터 캐시에 개체를 추가 하는 경우 문서를 저장 하 고 닫기 전에 캐시 된 모든 개체를**null** 이 아닌 값으로 초기화 해야 합니다. 문서를 저장 하 고 닫을 때 캐시 된 개체에 **null** 값이 있는 경우는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 캐시 된 모든 개체를 데이터 캐시에서 자동으로 제거 합니다.
+ 데이터 캐시에 개체를 추가 하는 경우 문서를 저장 하 고 닫기 전에 캐시 된 모든 개체를 **null** 이 아닌 값으로 초기화 해야 합니다. 문서를 저장 하 고 닫을 때 캐시 된 개체에 **null** 값이 있는 경우는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 캐시 된 모든 개체를 데이터 캐시에서 자동으로 제거 합니다.
 
  디자인 타임에 특성을 사용 하 여 **null** 값이 포함 된 개체를 데이터 캐시에 추가 하는 경우 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 문서를 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 열기 전에 클래스를 사용 하 여 캐시 된 데이터 개체를 초기화할 수 있습니다. 이는 최종 사용자가 문서를 열기 전에 Word 또는 Excel이 설치 되지 않은 서버에서 캐시 된 데이터를 초기화 하려는 경우에 유용 합니다. 자세한 내용은 [서버에 있는 문서의 데이터 액세스](../vsto/accessing-data-in-documents-on-the-server.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 오프 라인 이나 서버에서 사용할 데이터 캐시](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)

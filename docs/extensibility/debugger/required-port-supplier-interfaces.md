@@ -1,5 +1,7 @@
 ---
 title: 필요한 포트 공급자 인터페이스 | Microsoft Docs
+description: 포트 공급자가 실행 해야 하는 인터페이스에 대해 알아봅니다. 포트 공급자는 포트를 제공 하 고 구현 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2aeb1f26f81d773e171aa3fed6b0f2ef976c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713160"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847132"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
 포트 공급자는 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스를 구현 해야 합니다. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -80,5 +82,5 @@ ms.locfileid: "80713160"
 
   SDM이이 프로그램에 연결 하는 방법을 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 개체의 데이터로 문서 채우기'
+description: 솔루션에서 개체의 데이터를 사용 하는 방법을 알아보고 Windows Forms 컨트롤을 사용 하 여 문서에 데이터를 표시할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547175"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848055"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>방법: 개체의 데이터로 문서 채우기
 
@@ -66,10 +68,10 @@ VSTO 추가 기능 프로젝트에서 컨트롤을 만들고 런타임에 바인
 
 4. 데이터 원본을 데이터 바인딩으로 컨트롤에 추가합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 데이터베이스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource 구성 요소 개요](/dotnet/framework/winforms/controls/bindingsource-component-overview)

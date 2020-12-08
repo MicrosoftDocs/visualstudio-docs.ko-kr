@@ -1,5 +1,7 @@
 ---
 title: 자동 저장이 Office 솔루션에 미치는 영향
+description: 자동 저장이 Excel, PowerPoint 및 Word에서 자동으로 편집 내용을 저장 하는 기능을 자동으로 저장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826685"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846794"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>자동 저장이 Office 솔루션에 미치는 영향
 
@@ -26,5 +28,5 @@ ms.locfileid: "62826685"
 > [!NOTE]
 > Windows Desktop Word, Excel 및 PowerPoint 용 자동 저장은 2017에서 도입 되었으며 현재 Office365 구독자를 위해 사용할 수 있습니다. Office 2016 이전 버전에 영구적인 라이선스를 구매한 경우 현재 공동 작성 기능에 액세스할 수 없습니다. (Excel Online, Android 용 excel, iOS 용 excel 및 Windows 스토어의 Excel Mobile은이 기능을 지원 합니다.)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 개발](./developing-office-solutions.md)

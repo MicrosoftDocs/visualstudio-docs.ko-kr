@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 문서 속성 개요
+description: 문서 수준 프로젝트를 빌드할 때 Visual Studio에서 프로젝트의 문서에 두 가지 사용자 지정 속성을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298456"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847795"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
@@ -30,7 +32,7 @@ ms.locfileid: "92298456"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="_assemblyname"></a>\_기능의
+## <a name="_assemblyname"></a>\_AssemblyName
 
 이 속성은의 Office 솔루션 로더 구성 요소에 있는 인터페이스의 CLSID를 포함 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . CLSID 값은 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B입니다. 이 값을 변경해 서는 안 됩니다.
 
@@ -40,7 +42,7 @@ ms.locfileid: "92298456"
 
  \_Assemblylocation 속성 값은 솔루션이 배포 되는 방법에 따라 다양 한 형식을 가질 수 있습니다.
 
-- 웹 사이트, UNC 경로 또는 CD 또는 USB 드라이브에서 설치 하도록 솔루션을 게시 하는 경우 _AssemblyLocation 속성은 *DeploymentManifestPath* | *솔루션 id*형식입니다. 다음 문자열을 예로 들 수 있습니다.
+- 웹 사이트, UNC 경로 또는 CD 또는 USB 드라이브에서 설치 하도록 솔루션을 게시 하는 경우 _AssemblyLocation 속성은 *DeploymentManifestPath* | *솔루션 id* 형식입니다. 다음 문자열을 예로 들 수 있습니다.
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
@@ -50,7 +52,7 @@ ms.locfileid: "92298456"
 
   솔루션 *id* 는에서 솔루션을 식별 하는 데 사용 하는 GUID입니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . 프로젝트를 빌드할 때 *솔루션 id* 가 자동으로 생성 됩니다. **Vstolocal** 용어는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 어셈블리를 문서와 동일한 폴더에서 로드 해야 함을에 나타냅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)

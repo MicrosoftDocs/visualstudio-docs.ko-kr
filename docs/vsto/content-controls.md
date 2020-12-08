@@ -1,5 +1,7 @@
 ---
 title: 콘텐츠 컨트롤
+description: 콘텐츠 컨트롤 및 콘텐츠 컨트롤이 문서와 템플릿을 디자인 하는 방법을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986186"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848042"
 ---
 # <a name="content-controls"></a>콘텐츠 컨트롤
   콘텐츠 컨트롤은 다음과 같은 기능이 있는 문서와 템플릿을 디자인하는 방법을 제공합니다.
@@ -97,7 +99,7 @@ ms.locfileid: "72986186"
 ### <a name="group"></a>그룹
  그룹 컨트롤은 사용자가 편집하거나 삭제할 수 없는 문서의 보호된 영역을 정의합니다. 그룹 컨트롤에는 텍스트, 표, 그래픽 및 기타 콘텐츠 컨트롤과 같은 모든 문서 항목이 포함될 수 있습니다. 자세한 내용은 유형을 참조 하세요 <xref:Microsoft.Office.Tools.Word.GroupContentControl> .
 
-### <a name="picture"></a>Picture
+### <a name="picture"></a>그림
  그림 컨트롤은 이미지를 표시합니다. 디자인 타임 또는 런타임에 이미지를 지정할 수 있거나, 사용자가 이 컨트롤을 클릭하여 문서에 삽입할 이미지를 선택할 수 있습니다. 자세한 내용은 유형을 참조 하세요 <xref:Microsoft.Office.Tools.Word.PictureContentControl> .
 
 ### <a name="rich-text"></a>서식 있는 텍스트
@@ -204,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>콘텐츠 컨트롤에 대 한 데이터 바인딩 이벤트
  모든 콘텐츠 컨트롤은 데이터 소스가 업데이트되기 전에 컨트롤의 텍스트가 특정 조건을 충족하는지 확인하는 작업과 같은 데이터 관련 작업을 수행하기 위해 처리할 수 있는 이벤트 집합을 제공합니다. 다음 표에서는 데이터 바인딩과 관련된 콘텐츠 컨트롤 이벤트를 보여 줍니다.
 
-|Task|이벤트|
+|작업|이벤트|
 |----------|-----------|
 |Word에서 사용자 지정 XML 부분에 바인딩된 콘텐츠 컨트롤의 텍스트를 자동으로 업데이트하기 바로 전에 코드를 실행합니다.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |Word에서 콘텐츠 컨트롤에 바인딩된 사용자 지정 XML 부분의 데이터를 자동으로 업데이트하기 바로 전, 즉 콘텐츠 컨트롤의 텍스트가 변경된 후에 코드를 실행합니다.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -234,7 +236,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)

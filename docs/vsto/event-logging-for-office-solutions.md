@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에 대 한 이벤트 로깅
+description: Windows에서 이벤트 뷰어를 사용 하 여 Visual Studio Tools for Office 런타임에 의해 캡처되는 예외 메시지를 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951946"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847769"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 솔루션에 대 한 이벤트 로깅
   Windows에서 이벤트 뷰어를 사용하여 Office 솔루션을 설치하거나 제거할 때 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 캡처되는 예외 메시지를 확인할 수 있습니다. 이벤트 로거에서 이러한 메시지를 사용하여 설치 및 배포 문제를 해결할 수 있습니다.
@@ -32,35 +34,35 @@ ms.locfileid: "62951946"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 및 Windows XP에서 이벤트 로그를 읽으려면
 
-1. 제어판에서 **관리 도구**를 엽니다.
+1. 제어판에서 **관리 도구** 를 엽니다.
 
-2. **이벤트 뷰어**를 시작 합니다.
+2. **이벤트 뷰어** 를 시작 합니다.
 
-3. 이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.
+3. 이벤트 로그의 목록에서 **애플리케이션** 을 선택합니다.
 
-4. **보기** 메뉴에서 **필터**를 클릭합니다.
+4. **보기** 메뉴에서 **필터** 를 클릭합니다.
 
-5. **이벤트 원본** 목록에서 **VSTO 4.0**을 선택합니다.
+5. **이벤트 원본** 목록에서 **VSTO 4.0** 을 선택합니다.
 
-6. 설치 이벤트의 경우 **이벤트 ID** 상자에 **4096**을 입력합니다.
+6. 설치 이벤트의 경우 **이벤트 ID** 상자에 **4096** 을 입력합니다.
 
 7. **확인** 을 클릭하여 필터링된 보기를 확인합니다.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Windows 7, Windows Vista 및 Windows Server 2008에서 이벤트 로그를 읽으려면
 
-1. 제어판에서 **관리 도구**를 엽니다.
+1. 제어판에서 **관리 도구** 를 엽니다.
 
-2. **이벤트 뷰어**를 시작 합니다.
+2. **이벤트 뷰어** 를 시작 합니다.
 
-3. **Windows 로그**를 확장합니다.
+3. **Windows 로그** 를 확장합니다.
 
-4. 이벤트 로그의 목록에서 **애플리케이션**을 선택합니다.
+4. 이벤트 로그의 목록에서 **애플리케이션** 을 선택합니다.
 
-5. **작업** 메뉴에서 **현재 로그 필터링**을 클릭합니다.
+5. **작업** 메뉴에서 **현재 로그 필터링** 을 클릭합니다.
 
-6. **이벤트 원본** 목록에서 **VSTO 4.0**을 선택합니다.
+6. **이벤트 원본** 목록에서 **VSTO 4.0** 을 선택합니다.
 
-7. 설치 이벤트의 경우 **이벤트 ID** 상자에 **4096**을 입력합니다.
+7. 설치 이벤트의 경우 **이벤트 ID** 상자에 **4096** 을 입력합니다.
 
 8. **확인** 을 클릭하여 필터링된 보기를 확인합니다.
 
@@ -84,17 +86,17 @@ ms.locfileid: "62951946"
 
 ### <a name="to-disable-the-event-log"></a>이벤트 로그를 사용 하지 않도록 설정 하려면
 
-1. 제어판에서 **시스템**을 엽니다.
+1. 제어판에서 **시스템** 을 엽니다.
 
-2. **고급** 탭에서 **환경 변수**를 클릭합니다.
+2. **고급** 탭에서 **환경 변수** 를 클릭합니다.
 
-3. **시스템 변수** 창에서 **새로 만들기**를 클릭합니다.
+3. **시스템 변수** 창에서 **새로 만들기** 를 클릭합니다.
 
 4. **새 시스템 변수** 대화 상자에서 **변수 이름** 상자에 **VSTO_EVENTLOGDISABLED** 를 입력합니다.
 
-5. **변수 값** 상자에 **1**을 입력합니다.
+5. **변수 값** 상자에 **1** 을 입력합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

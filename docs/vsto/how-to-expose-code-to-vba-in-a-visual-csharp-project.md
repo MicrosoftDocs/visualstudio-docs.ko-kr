@@ -1,6 +1,7 @@
 ---
 title: '방법: c # 프로젝트에서 VBA로 코드 노출'
-ms.custom: seodec18
+description: '두 가지 코드 형식이 서로 상호 작용 하도록 하려면 Visual c # 프로젝트의 코드를 VBA (Visual Basic for Applications) 코드에 노출 하는 방법을 알아봅니다.'
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544835"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846599"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: Visual c # 프로젝트에서 VBA로 코드 노출
   두 가지 코드 형식이 서로 상호 작용 하도록 하려면 Visual c # 프로젝트의 코드를 VBA (Visual Basic for Applications) 코드에 노출할 수 있습니다.
@@ -46,7 +47,7 @@ ms.locfileid: "85544835"
 
 2. 사용자에 게 매크로를 설정 하 라는 메시지를 표시 하지 않고 문서의 VBA 코드를 실행할 수 있는지 확인 합니다. Word 또는 Excel의 보안 센터 설정에서 신뢰할 수 있는 위치 목록에 Office 프로젝트의 위치를 추가하여 VBA 코드를 실행하도록 신뢰할 수 있습니다.
 
-3. VBA에 노출할 멤버를 프로젝트의 공용 클래스에 추가 하 고 새 멤버를 **public**으로 선언 합니다.
+3. VBA에 노출할 멤버를 프로젝트의 공용 클래스에 추가 하 고 새 멤버를 **public** 으로 선언 합니다.
 
 4. <xref:System.Runtime.InteropServices.ComVisibleAttribute>VBA에 노출 하는 클래스에 다음 및 특성을 적용 합니다 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> . 이러한 특성은 클래스가 COM에 표시되도록 하지만 클래스 인터페이스를 생성하지 않습니다.
 
@@ -90,10 +91,10 @@ ms.locfileid: "85544835"
 
 9. 의 디자이너에서 문서 (Word의 경우) 또는 워크시트 (Excel의 경우)를 엽니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-10. **속성** 창에서 **ReferenceAssemblyFromVbaProject** 속성을 선택하고 값을 **True**로 변경합니다.
+10. **속성** 창에서 **ReferenceAssemblyFromVbaProject** 속성을 선택하고 값을 **True** 로 변경합니다.
 
     > [!NOTE]
-    > 통합 문서나 문서에 VBA 코드가 이미 포함 되어 있지 않거나 문서의 VBA 코드를 실행 하도록 신뢰할 수 없는 경우 **ReferenceAssemblyFromVbaProject** 속성을 **True**로 설정 하면 오류 메시지가 표시 됩니다. 그 이유는 이러한 경우 Visual Studio에서 문서의 VBA 프로젝트를 수정할 수 없기 때문입니다.
+    > 통합 문서나 문서에 VBA 코드가 이미 포함 되어 있지 않거나 문서의 VBA 코드를 실행 하도록 신뢰할 수 없는 경우 **ReferenceAssemblyFromVbaProject** 속성을 **True** 로 설정 하면 오류 메시지가 표시 됩니다. 그 이유는 이러한 경우 Visual Studio에서 문서의 VBA 프로젝트를 수정할 수 없기 때문입니다.
 
 11. 표시되는 메시지에서 **확인** 을 클릭합니다. 이 메시지는에서 프로젝트를 실행할 때 통합 문서나 문서에 VBA 코드를 추가 하는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 다음에 프로젝트를 빌드할 때 vba 코드가 손실 됨을 알려 줍니다. 프로젝트를 빌드할 때마다 빌드 출력 폴더의 문서를 덮어쓰므로이는입니다.
 
@@ -101,7 +102,7 @@ ms.locfileid: "85544835"
 
 12. 프로젝트를 빌드합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)

@@ -1,5 +1,7 @@
 ---
 title: Excel 개체 모델 개요
+description: Excel 개체 모델에서 제공 하는 개체와 상호 작용 하 여 Excel Microsoft Office를 사용 하는 솔루션을 개발할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a823692a5cc0f154c514edff4fe9398de0efd212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649420"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847691"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.
@@ -80,7 +82,7 @@ ms.locfileid: "81649420"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> 개체는 Excel 애플리케이션 자체를 나타냅니다. <xref:Microsoft.Office.Interop.Excel.Application> 개체는 실행 중인 애플리케이션, 해당 인스턴스에 적용된 옵션 및 인스턴스 내에서 열려 있는 현재 사용자 개체에 대한 많은 정보를 표시합니다.
 
 > [!NOTE]
-> Excel에서 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Application> 속성을 **false**라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 이 속성을 false로 설정하면 Excel에서 호스트 컨트롤의 이벤트를 비롯한 모든 이벤트를 발생시킬 수 없습니다.
+> Excel에서 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 개체의 <xref:Microsoft.Office.Interop.Excel.Application> 속성을 **false** 라는 Word 또는 Excel 개체 모델에 고유하게 존재하는 개체를 확장합니다. 이 속성을 false로 설정하면 Excel에서 호스트 컨트롤의 이벤트를 비롯한 모든 이벤트를 발생시킬 수 없습니다.
 
 ### <a name="workbook-object"></a>통합 문서 개체
  <xref:Microsoft.Office.Interop.Excel.Workbook> 개체는 Excel 애플리케이션 내에서 단일 통합 문서를 나타냅니다.

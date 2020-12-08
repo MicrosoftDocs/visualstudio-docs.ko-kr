@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Excel 범위에 색 적용'
+description: 셀 범위 내의 텍스트에 색을 적용 하 고 NamedRange 컨트롤 또는 네이티브 Excel 범위 개체를 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543457"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848003"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>방법: 프로그래밍 방식으로 Excel 범위에 색 적용
   셀 범위 내의 텍스트에 색을 적용 하려면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 나 네이티브 Excel 범위 개체를 사용 합니다.
@@ -50,7 +52,7 @@ ms.locfileid: "85543457"
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [범위 작업](../vsto/working-with-ranges.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

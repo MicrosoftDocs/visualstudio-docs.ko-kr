@@ -1,5 +1,7 @@
 ---
 title: 문서 호스트 항목
+description: 문서 호스트 항목은 Word 용 주 interop 어셈블리의 문서 형식을 확장 하는 형식입니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35455ac7751a34632362cfa3f2c9b8f2f827fc6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253703"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846911"
 ---
 # <a name="document-host-item"></a>문서 호스트 항목
   <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 Word용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Word.Document> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목은 <xref:Microsoft.Office.Interop.Word.Document> 개체와 동일한 모든 속성, 메서드 및 이벤트를 제공할 뿐 아니라 추가 이벤트를 노출하고 호스트 컨트롤 및 Windows Forms 컨트롤에 대한 컨테이너 역할을 합니다.
@@ -47,7 +49,7 @@ ms.locfileid: "71253703"
 
  <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목을 생성하려면 `GetVstoObject` 메서드를 사용합니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)

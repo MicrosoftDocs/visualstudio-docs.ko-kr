@@ -1,5 +1,7 @@
 ---
 title: 식 계산의 샘플 구현 | Microsoft Docs
+description: Visual Studio에서 ParseText를 호출 하 여 조사식 windows 식에 대 한 IDebugExpression2 개체를 생성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713106"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847704"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>식 계산의 샘플 구현
 > [!IMPORTANT]
@@ -107,6 +109,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [조사식 창 식 계산](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [조사식 식 계산](../../extensibility/debugger/evaluating-a-watch-expression.md)

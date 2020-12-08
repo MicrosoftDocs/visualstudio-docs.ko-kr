@@ -1,5 +1,7 @@
 ---
 title: '방법: ListObject 컨트롤을 데이터로 채우기'
+description: 데이터 바인딩을 사용 하 여 신속 하 게 문서에 데이터를 추가 합니다. 데이터를 표시 하지만 더 이상 데이터 원본에 바인딩되지 않도록 목록 개체의 연결을 끊을 수도 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2941022cb434198298e9d098ef562efeaba4893f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544822"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846521"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>방법: ListObject 컨트롤을 데이터로 채우기
   신속하게 문서에 데이터를 추가하는 방법으로 데이터 바인딩을 사용할 수 있습니다. 목록 개체에 데이터를 바인딩한 후 해당 데이터를 표시하지만 더 이상 데이터 원본에 바인딩되지 않도록 목록 개체의 연결을 끊을 수 있습니다.
@@ -56,7 +58,7 @@ ms.locfileid: "85544822"
 ## <a name="compile-the-code"></a>코드 컴파일
  이 코드 예제에서는 이 코드가 표시되는 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 이라는 기존 `list1` 가 있는 것으로 간주합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

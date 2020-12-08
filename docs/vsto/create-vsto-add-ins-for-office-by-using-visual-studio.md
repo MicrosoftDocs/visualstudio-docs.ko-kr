@@ -1,7 +1,8 @@
 ---
 title: Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
+description: Visual Studio의 Microsoft Office 개발자 도구를 사용 하 여 Office를 확장 하는 .NET Framework 응용 프로그램을 만드는 방법에 대해 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 50337b728647b5e15a877216713cd6fc9823742a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809364"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847977"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
-  Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 애플리케이션을 만들 수 있습니다. 이러한 애플리케이션을 *Office 솔루션*이라고도 합니다.
+  Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 애플리케이션을 만들 수 있습니다. 이러한 애플리케이션을 *Office 솔루션* 이라고도 합니다.
 
  Office 개발자 도구는 다양한 비즈니스 요구 사항에 맞는 Office 솔루션을 만드는 데 사용할 수 있는 기능을 제공합니다. 이 도구에는 Visual Basic 또는 Visual C#을 사용하여 Office 솔루션을 만들 수 있는 프로젝트 템플릿과 Office 솔루션용 사용자 지정 사용자 인터페이스를 만들 수 있는 비주얼 디자이너가 포함되어 있습니다.
 
@@ -28,7 +29,7 @@ ms.locfileid: "90809364"
 
  Office 개발에 대 한 최신 정보는 [Microsoft Office 개발자 센터](https://developer.microsoft.com/office/docs)를 참조 하세요.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](getting-started-office-development-in-visual-studio.md)
 
  Office 솔루션을 만들기 위해 개발 컴퓨터를 구성하는 방법, Office 솔루션 만들기를 시작하는 방법 및 Visual Studio에 포함된 Office 개발용 새 기능에 대한 정보 링크를 제공합니다.

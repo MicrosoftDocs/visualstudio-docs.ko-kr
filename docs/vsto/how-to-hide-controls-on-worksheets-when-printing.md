@@ -1,5 +1,7 @@
 ---
 title: '방법: 인쇄할 때 워크시트에서 컨트롤 숨기기'
+description: Windows Forms 컨트롤을 포함 하는 Microsoft Office Excel 워크시트를 인쇄할 때 컨트롤을 숨길 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544809"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846495"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>방법: 인쇄할 때 워크시트에서 컨트롤 숨기기
   Windows Forms 컨트롤을 포함 하는 Microsoft Office Excel 문서를 인쇄 하면 컨트롤이 인쇄 된 워크시트에 표시 됩니다. 워크시트를 인쇄할 때 컨트롤을 숨길 수 있습니다.
@@ -37,11 +39,11 @@ ms.locfileid: "85544809"
 
 1. Visual Studio에서 Excel 프로젝트를 만들거나 열고 **Sheet1** 이 디자이너에 표시 되는지 확인 합니다. 프로젝트 만들기에 대 한 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-2. **도구 상자**의 **공용 컨트롤** 탭에서 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 컨트롤을의 셀로 끌어 옵니다 `Sheet1` .
+2. **도구 상자** 의 **공용 컨트롤** 탭에서 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 컨트롤을의 셀로 끌어 옵니다 `Sheet1` .
 
-3. **속성** 창에서 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> 속성을 **False**로 설정 합니다.
+3. **속성** 창에서 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> 속성을 **False** 로 설정 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

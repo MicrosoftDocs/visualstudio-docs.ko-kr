@@ -1,5 +1,7 @@
 ---
 title: 런타임에 양식 영역 액세스
+description: 런타임에 다양 한 프로젝트 형식 및 버전의 Microsoft Office 양식 영역에 액세스 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255794"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847418"
 ---
 # <a name="access-a-form-region-at-run-time"></a>런타임에 양식 영역 액세스
 
@@ -59,7 +61,7 @@ ms.locfileid: "71255794"
  `Globals` 클래스를 사용하여 양식 영역의 컨트롤에 액세스하려면 컨트롤에서 양식 영역 코드 파일 외부의 코드에 액세스할 수 있도록 만들어야 합니다.
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>양식 영역 디자이너에서 디자인 된 양식 영역
- C#의 경우 액세스하려는 각 컨트롤의 한정자를 변경합니다. 이렇게 하려면 양식 영역 디자이너에서 각 컨트롤을 선택하고 **Modifiers** 속성을 **Internal** 로 변경하거나 **속성** 창에서 **public** 으로 변경합니다. 예를 들어 **의** Modifier `textBox1` 속성을 **Internal**로 변경한 경우 `textBox1` 을 입력하여 `Globals.FormRegions.FormRegion1.textBox1`에 액세스할 수 있습니다.
+ C#의 경우 액세스하려는 각 컨트롤의 한정자를 변경합니다. 이렇게 하려면 양식 영역 디자이너에서 각 컨트롤을 선택하고 **Modifiers** 속성을 **Internal** 로 변경하거나 **속성** 창에서 **public** 으로 변경합니다. 예를 들어 **의** Modifier `textBox1` 속성을 **Internal** 로 변경한 경우 `textBox1` 을 입력하여 `Globals.FormRegions.FormRegion1.textBox1`에 액세스할 수 있습니다.
 
  Visual Basic의 경우 한정자를 변경할 필요가 없습니다.
 

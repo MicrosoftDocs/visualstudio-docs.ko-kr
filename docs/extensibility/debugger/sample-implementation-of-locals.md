@@ -1,5 +1,7 @@
 ---
 title: 지역 |의 샘플 구현 Microsoft Docs
+description: 이 문서의 식 계산기에서 Visual Studio가 메서드에 대 한 로컬를 가져오는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011894"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847639"
 ---
 # <a name="sample-implementation-of-locals"></a>로컬의 샘플 구현
 > [!IMPORTANT]
@@ -44,7 +46,7 @@ ms.locfileid: "90011894"
 
 10. Visual Studio는 로컬의 이름, 값 및 형식을 가져오기 위해 각 로컬에 대해 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 를 호출 합니다. 이 정보는 **지역** 창에 표시 됩니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [GetMethodProperty 구현](../../extensibility/debugger/implementing-getmethodproperty.md) [Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)의 구현을 설명 합니다.
 
  [지역 열거](../../extensibility/debugger/enumerating-locals.md) 디버그 엔진 (DE)에서 지역 변수 또는 인수를 열거 하는 호출을 수행 하는 방법을 설명 합니다.

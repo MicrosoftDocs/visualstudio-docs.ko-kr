@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소
+description: 범위 또는 선택 개체를 사용 하 여 작업 하는 경우 텍스트를 삽입 하기 전에 선택 항목을 삽입 지점으로 변경할 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585290"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847652"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 또는 선택 영역 축소
   <xref:Microsoft.Office.Interop.Word.Range> 또는 <xref:Microsoft.Office.Interop.Word.Selection> 개체를 사용하여 작업하는 경우 기존 텍스트를 덮어쓰지 않도록 텍스트를 삽입하기 전에 삽입 지점으로 선택을 변경해야 할 수 있습니다. 및 개체에는 모두 <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Interop.Word.Selection> 열거형 값을 사용 하는 Collapse 메서드가 있습니다 <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> .

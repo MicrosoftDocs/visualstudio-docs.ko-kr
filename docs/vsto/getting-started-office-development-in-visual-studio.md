@@ -1,7 +1,8 @@
 ---
 title: 시작 (Visual Studio에서 Office 개발)
+description: Visual Studio에서 Microsoft Office 개발자 도구를 사용 하 여 Office 솔루션을 빌드하는 방법에 대해 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a14d8254d42b78e788622afd93c6832871d54627
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986070"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847327"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>시작 (Visual Studio에서 Office 개발)
   이 섹션에는 Visual Studio에서 Microsoft Office 개발자 도구 사용을 시작하는 데 도움이 되는 항목이 포함되어 있습니다.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Visual Studio에서 Office 솔루션을 개발하는 데 필요한 배경 정보를 제공합니다.

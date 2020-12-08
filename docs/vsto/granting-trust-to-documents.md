@@ -1,5 +1,7 @@
 ---
 title: 문서에 신뢰 부여
+description: 인증서를 사용 하 여 매니페스트에 서명 하거나 신뢰 프롬프트를 클릭 하는 것과 같이 문서 수준 프로젝트의 보안 요구 사항이 응용 프로그램 수준 프로젝트와 동일한 지 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298613"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847743"
 ---
 # <a name="grant-trust-to-documents"></a>문서에 신뢰 부여
   문서 수준 프로젝트에는 인증서를 사용하여 매니페스트에 서명하거나 신뢰 프롬프트를 클릭하는 것과 같은 애플리케이션 수준 프로젝트와 같은 보안 요구 사항이 있습니다. 또한 문서 또는 통합 문서는 신뢰할 수 있는 위치로 지정된 디렉터리에 있어야 합니다.
@@ -43,7 +45,7 @@ ms.locfileid: "92298613"
 
 - 문서 수준 솔루션의 문서 또는 통합 문서는 어셈블리와 같은 디렉터리나 다른 디렉터리에 저장할 수 있습니다. 예를 들어 문서는 SharePoint 서버에 있고 어셈블리는 네트워크 파일 공유에 있을 수 있습니다. 자세한 내용은 [방법: ClickOnce를 사용 하 여 SharePoint 서버에 문서 수준 Office 솔루션 게시](/previous-versions/bb608595(v=vs.110))를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

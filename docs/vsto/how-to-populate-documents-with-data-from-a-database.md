@@ -1,5 +1,7 @@
 ---
 title: '방법: 데이터베이스의 데이터로 문서 채우기'
+description: 솔루션에서 데이터베이스의 데이터를 사용 하는 방법 및 Windows Forms 컨트롤을 사용 하 여 문서에 데이터를 표시 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547201"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848081"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 문서 채우기
 
@@ -66,11 +68,11 @@ Windows Forms 프로젝트의 데이터에 액세스하는 것과 동일한 방�
 
 형식화 된 데이터 집합 및 데이터베이스에 업데이트를 보내는 방법에 대 한 자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 원본 추가](../data-tools/add-new-data-sources.md)
-- [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)

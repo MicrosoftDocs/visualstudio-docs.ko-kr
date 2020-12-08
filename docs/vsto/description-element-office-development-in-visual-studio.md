@@ -1,7 +1,8 @@
 ---
 title: '&lt;description &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstov4 네임 스페이스의 description 요소는 COM 추가 기능 대화 상자에 나타나는 Office 솔루션에 대 한 설명을 저장 합니다.
 titleSuffix: ''
-ms.custom: secdec18
+ms.custom: secdec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c8b54f8ccf2181a053ae5d2fe221b49840cd72c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 377599e770a93faca9e283ec543091508b773bc7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520269"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846235"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;description &gt; 요소 (Visual Studio에서 Office 개발)
   `description` 네임스페이스의 `vstov4` 요소는 Microsoft Office 애플리케이션의 COM 추가 기능 대화 상자에 나타나는 Office 솔루션에 대한 설명을 저장합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```xml
 <description>

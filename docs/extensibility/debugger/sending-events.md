@@ -1,5 +1,7 @@
 ---
 title: 이벤트 전송 | Microsoft Docs
+description: 디버거와 디버그 엔진이 DCOM을 기반으로 하는 이벤트 모델을 사용 하는 방법에 대해 알아봅니다. 이벤트는 COM 개체로 전송 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713037"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847912"
 ---
 # <a name="send-events"></a>이벤트 보내기
 디버거와 디버그 엔진 (DE) 간의 통신 메커니즘은 DCOM을 기반으로 하는 이벤트 모델입니다. 이벤트는 COM 개체로 전송 되며 각 이벤트에는 다음을 지정 하는 매개 변수가 있습니다.
@@ -30,7 +32,7 @@ ms.locfileid: "80713037"
 
   모든 디버그 이벤트는 메서드 [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)를 사용 하 여 전송 됩니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [이벤트 원본](../../extensibility/debugger/event-sources-visual-studio-sdk.md) 디버그 엔진 (DE) 및 세션 디버그 관리자 (SDM)의 두 이벤트 소스에 대해 설명 합니다.
 
  [지원 되는 이벤트 유형](../../extensibility/debugger/supported-event-types.md) 현재 지원 되는 이벤트 유형인 비동기 및 동기를 설명 합니다.

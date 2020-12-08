@@ -1,5 +1,7 @@
 ---
 title: '방법: 문서 수준 사용자 지정에 사용자 지정 XML 부분 추가'
+description: 문서 수준 사용자 지정에서 사용자 지정 XML 부분을 만들어 Microsoft Office Excel 통합 문서 Microsoft Office 또는 Word 문서에 XML 데이터를 저장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298443"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847432"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>방법: 문서 수준 사용자 지정에 사용자 지정 XML 부분 추가
   문서 수준 사용자 지정에서 사용자 지정 XML 부분을 만들어 Microsoft Office Excel 통합 문서 또는 Microsoft Office Word 문서에 XML 데이터를 저장할 수 있습니다. 자세한 내용은 [사용자 지정 XML 부분 개요](../vsto/custom-xml-parts-overview.md)를 참조 하세요.
@@ -58,6 +60,6 @@ ms.locfileid: "92298443"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  간단한 설명을 위해 이 예제에서는 메서드에서 지역 변수로 정의된 XML 문자열을 사용합니다. 일반적으로 파일 또는 데이터베이스와 같은 외부 원본에서 XML을 가져와야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 XML 부분 개요](../vsto/custom-xml-parts-overview.md)
 - [방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

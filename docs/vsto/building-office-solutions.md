@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 빌드
+description: Windows Forms와 같은 Visual Studio에서 Office 프로젝트 빌드 및 디버깅, 다른 형식의 프로젝트 빌드 및 디버깅 간의 차이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551853"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847938"
 ---
 # <a name="build-office-solutions"></a>Office 솔루션 빌드
   일반적으로 Office 프로젝트를 빌드하고 디버깅하는 것은 Windows Forms와 같이 Visual Studio에서 다른 형식의 프로젝트를 빌드하고 디버깅하는 것과 같습니다. 이 섹션의 항목에서는 차이점에 대해 설명합니다. 응용 프로그램을 빌드하는 방법에 대 한 일반적인 내용은 [Visual Studio에서 컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)를 참조 하세요.
@@ -46,11 +48,11 @@ ms.locfileid: "69551853"
 
 - 프로젝트 문서의 복사본
 
-- 프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사**속성을 가진 참조되는 모든 어셈블리
+- 프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사** 속성을 가진 참조되는 모든 어셈블리
 
-- 파일 이름 확장명이 *.manifest*인 응용 프로그램 매니페스트입니다. 자세한 내용은 [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)를 참조 하세요.
+- 파일 이름 확장명이 *.manifest* 인 응용 프로그램 매니페스트입니다. 자세한 내용은 [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)를 참조 하세요.
 
-- 파일 이름 확장명이 *.vsto*인 배포 매니페스트 자세한 내용은 [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)를 참조 하세요.
+- 파일 이름 확장명이 *.vsto* 인 배포 매니페스트 자세한 내용은 [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)를 참조 하세요.
 
 - *PDB*(프로그램 데이터베이스) 파일입니다.
 
@@ -60,13 +62,13 @@ ms.locfileid: "69551853"
 ### <a name="application-level-projects"></a>응용 프로그램 수준 프로젝트
  VSTO 추가 기능 프로젝트를 빌드하면 프로젝트 출력에 다음과 같은 항목이 포함 됩니다.
 
-- 프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사**속성을 가진 참조되는 모든 어셈블리
+- 프로젝트 어셈블리 및 **true** 로 설정된 해당 **로컬 복사** 속성을 가진 참조되는 모든 어셈블리
 
-- 파일 이름 확장명이 *.manifest*인 응용 프로그램 매니페스트입니다. 자세한 내용은 [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)를 참조 하세요.
+- 파일 이름 확장명이 *.manifest* 인 응용 프로그램 매니페스트입니다. 자세한 내용은 [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)를 참조 하세요.
 
-- 파일 이름 확장명이 *.vsto*인 배포 매니페스트 자세한 내용은 [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)를 참조 하세요.
+- 파일 이름 확장명이 *.vsto* 인 배포 매니페스트 자세한 내용은 [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)를 참조 하세요.
 
-- 프로젝트 어셈블리에 대 한*PDB*(프로그램 데이터베이스) 파일입니다.
+- 프로젝트 어셈블리에 대 한 *PDB*(프로그램 데이터베이스) 파일입니다.
 
   또한 VSTO 추가 기능 프로젝트의 빌드 프로세스는 VSTO 추가 기능을 로드하는 데 필요한 개발 컴퓨터에서 레지스트리 항목 집합을 만듭니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)을 참조 하세요.
 
@@ -79,7 +81,7 @@ ms.locfileid: "69551853"
   Outlook은 이 정보를 양식 영역으로 로드해야 합니다.
 
 ## <a name="referenced-assemblies"></a>참조된 어셈블리
- Office 솔루션 빌드 프로젝트에서 어셈블리(클래스 라이브러리 프로젝트 포함)를 참조할 수 있습니다. 모든 참조된 어셈블리에는 **로컬 복사**라는 속성이 있습니다. **로컬 복사** 는 어셈블리를 출력 디렉터리에 복사할지 여부를 나타냅니다. 기본적으로 **true**로 설정 됩니다. **로컬 복사** 를 **true** 로 설정한 모든 참조된 어셈블리는 출력 디렉터리에 복사됩니다.
+ Office 솔루션 빌드 프로젝트에서 어셈블리(클래스 라이브러리 프로젝트 포함)를 참조할 수 있습니다. 모든 참조된 어셈블리에는 **로컬 복사** 라는 속성이 있습니다. **로컬 복사** 는 어셈블리를 출력 디렉터리에 복사할지 여부를 나타냅니다. 기본적으로 **true** 로 설정 됩니다. **로컬 복사** 를 **true** 로 설정한 모든 참조된 어셈블리는 출력 디렉터리에 복사됩니다.
 
 ## <a name="security-during-the-build-process"></a>빌드 프로세스 중 보안
  Visual Studio는 개발 컴퓨터에서 보안 설정을 자동으로 구성하여 빌드 프로세스 동안 솔루션에 신뢰를 부여합니다. 그렇게 하면 솔루션을 디버깅하면서 실행할 수 있습니다.
@@ -94,7 +96,7 @@ ms.locfileid: "69551853"
  또한 문서 수준 프로젝트의 경우 Office 신뢰할 수 있는 폴더 목록에 문서의 정규화된 위치를 추가해야 합니다. 자세한 내용은 [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)를 참조 하세요.
 
 ## <a name="change-the-platform-target"></a>플랫폼 대상 변경
- 기본적으로 Office 프로젝트의 플랫폼 대상은 **임의 CPU**입니다. 일반적으로 이 설정을 변경해서는 안 됩니다. **임의 CPU** 플랫폼 대상 설정으로 빌드된 Office 솔루션은 32비트 및 64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서 실행됩니다.
+ 기본적으로 Office 프로젝트의 플랫폼 대상은 **임의 CPU** 입니다. 일반적으로 이 설정을 변경해서는 안 됩니다. **임의 CPU** 플랫폼 대상 설정으로 빌드된 Office 솔루션은 32비트 및 64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서 실행됩니다.
 
  64비트 버전의 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 또는 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]에서만 실행되는 솔루션을 만드는 경우에만 플랫폼 대상을 x64로 설정해야 하며, 솔루션은 네이티브 64비트 API를 호출합니다. 플랫폼 대상 설정을 변경 하는 방법에 대 한 자세한 내용은 [방법: 플랫폼을 대상으로 하는 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)을 참조 하세요.
 

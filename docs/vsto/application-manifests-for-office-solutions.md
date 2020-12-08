@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 응용 프로그램 매니페스트
+description: 응용 프로그램 매니페스트가 Microsoft Office 솔루션에 로드 된 어셈블리를 설명 하는 XML 파일을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531510"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847925"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 솔루션의 응용 프로그램 매니페스트
   애플리케이션 매니페스트는 Microsoft Office 솔루션에 로드된 어셈블리를 설명하는 XML 파일입니다. Visual Studio의 Microsoft Office 개발 도구는 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md) 참조에 정의 된 응용 프로그램 매니페스트 스키마를 사용 합니다.
@@ -27,7 +29,7 @@ ms.locfileid: "85531510"
 |요소|설명|특성|
 |-------------|-----------------|----------------|
 |[ ClickOnce 응용 프로그램 &#40;어셈블리&#62; 요소를&#60;&#41;](../deployment/assembly-element-clickonce-deployment.md)|필수 요소. 최상위 요소입니다.|**manifestVersion**|
-|[&#60;assemblyIdentity&#62; 요소 &#40;ClickOnce 응용 프로그램&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|필수 요소. [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 애플리케이션의 주 어셈블리를 식별합니다.|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
+|[&#60;assemblyIdentity&#62; 요소 &#40;ClickOnce 응용 프로그램&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|필수 요소. [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 애플리케이션의 주 어셈블리를 식별합니다.|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **언어**|
 |[&#60;trustInfo&#62; 요소 &#40;ClickOnce 응용 프로그램&#41;](../deployment/trustinfo-element-clickonce-application.md)|애플리케이션 보안 요구 사항을 식별합니다.|없음|
 |[&#60;entryPoint&#62; 요소 &#40;ClickOnce 응용 프로그램&#41;](../deployment/entrypoint-element-clickonce-application.md)|필수 요소. 실행을 위해 애플리케이션 코드 진입점을 식별합니다.|**name**<br /><br /> **dependencyName**<br /><br /> **d**|
 |[&#60;종속성&#62; 요소 &#40;ClickOnce 응용 프로그램&#41;](../deployment/dependency-element-clickonce-deployment.md)|필수 요소. 애플리케이션을 실행하는 데 필요한 각 종속성을 식별합니다. 필요에 따라 사전 설치해야 하는 어셈블리를 식별합니다.|없음|
@@ -100,7 +102,7 @@ ms.locfileid: "85531510"
 
  `OutlookAddIn1.dll.manifest`
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)

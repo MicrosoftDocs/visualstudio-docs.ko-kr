@@ -1,5 +1,7 @@
 ---
 title: '&lt;application &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstav3 네임 스페이스의 응용 프로그램 요소가 Office 솔루션에 대 한 설명을 래핑하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543743"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847041"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; 요소 (Visual Studio에서 Office 개발)
   `application` 네임스페이스의 `vstav3` 요소는 Office 솔루션에 대한 설명을 래핑합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.

@@ -1,5 +1,7 @@
 ---
 title: 문서 수준 사용자 지정의 캐시 된 데이터
+description: 데이터를 데이터 캐시로 포함할 수 있도록 하 여 Visual Studio가 문서 수준 사용자 지정의 뷰에서 데이터를 분리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238350"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847899"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>문서 수준 사용자 지정의 캐시 된 데이터
   문서 수준 사용자 지정의 기본 목표는 Office 문서의 보기에서 데이터를 분리 하는 것입니다. 데이터는 숫자 및 텍스트를 포함 하 여 문서에 저장 된 정보를 나타냅니다. 보기는 Microsoft Office Word 및 Microsoft Office Excel의 사용자 인터페이스와 개체 모델을 나타냅니다.
 
- Visual Studio는 데이터 *를 데이터* *캐시로*포함 시킬 수 있도록 하 여 문서 수준 사용자 지정에서 뷰의 데이터를 분리 합니다. Word 또는 Excel을 시작 하지 않고 데이터를 직접 읽거나 수정할 수 있습니다. 이 기능은 Microsoft Office 설치 되지 않은 서버에서 문서의 데이터를 수정 해야 하는 경우에 유용 합니다. Word 및 Excel은 클라이언트 환경에서 사용 하기 위한 것입니다. 서버에서 실행 되도록 설계 되지 않았습니다.
+ Visual Studio는 데이터 *를 데이터* *캐시로* 포함 시킬 수 있도록 하 여 문서 수준 사용자 지정에서 뷰의 데이터를 분리 합니다. Word 또는 Excel을 시작 하지 않고 데이터를 직접 읽거나 수정할 수 있습니다. 이 기능은 Microsoft Office 설치 되지 않은 서버에서 문서의 데이터를 수정 해야 하는 경우에 유용 합니다. Word 및 Excel은 클라이언트 환경에서 사용 하기 위한 것입니다. 서버에서 실행 되도록 설계 되지 않았습니다.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -60,6 +62,6 @@ ms.locfileid: "88238350"
 |어떤 유형의 데이터를 저장할 수 있나요?|특정 요구 사항을 충족 하는 사용자 지정 어셈블리의 모든 public 개체입니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.|모든 XML 데이터입니다.|
 |Microsoft Office 응용 프로그램을 시작 하지 않고 데이터에 액세스할 수 있나요?|예,에서 제공 하는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스를 사용 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 합니다.|예. <xref:System.IO.Packaging> 네임 스페이스의 클래스를 사용 하거나 OPEN XML 형식 SDK를 사용 하 여 사용 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)

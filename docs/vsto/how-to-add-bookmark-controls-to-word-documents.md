@@ -1,5 +1,6 @@
 ---
 title: '방법: Word 문서에 책갈피 컨트롤 추가'
+description: 문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 책갈피 컨트롤을 추가할 수 있습니다.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547253"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847470"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>방법: Word 문서에 책갈피 컨트롤 추가
   문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다.
@@ -41,7 +42,7 @@ ms.locfileid: "85547253"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> 디자인 타임에 책갈피 컨트롤 추가
  디자인 타임에 문서 수준 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가하는 여러 가지 방법이 있습니다.
 
-- Visual Studio **도구 상자**에서.
+- Visual Studio **도구 상자** 에서.
 
    <xref:Microsoft.Office.Tools.Word.Bookmark> 도구 상자 **에서 문서로** 컨트롤을 끌어올 수 있습니다. 이미 **도구 상자** 를 사용하여 Windows Forms 컨트롤을 문서에 추가 중인 경우 이 방법을 선택하는 것이 좋습니다.
 
@@ -65,7 +66,7 @@ ms.locfileid: "85547253"
 
 3. 책갈피에 포함하려는 텍스트 또는 기타 항목을 선택합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
      기본 책갈피 이름을 유지하지 않으려면 **속성** 창에서 이름을 변경할 수 있습니다.
 
@@ -75,7 +76,7 @@ ms.locfileid: "85547253"
 
 2. 리본 메뉴의 **삽입** 탭에 있는 **링크** 그룹에서 **책갈피** 단추를 클릭합니다.
 
-3. **책갈피** 대화 상자에서 새 책갈피의 이름을 입력하고 **추가**를 클릭합니다.
+3. **책갈피** 대화 상자에서 새 책갈피의 이름을 입력하고 **추가** 를 클릭합니다.
 
 ## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에 책갈피 컨트롤 추가
  프로젝트에서 <xref:Microsoft.Office.Tools.Word.Bookmark> 클래스의 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 속성 메서드를 사용하여 프로그래밍 방식으로 런타임에 문서에 `ThisDocument` 컨트롤을 추가할 수 있습니다. 다음과 같은 방법으로 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가하는 데 사용할 수 있는 두 개의 메서드 오버로드가 있습니다.
@@ -125,7 +126,7 @@ ms.locfileid: "85547253"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

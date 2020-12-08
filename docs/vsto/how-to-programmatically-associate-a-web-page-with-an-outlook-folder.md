@@ -1,5 +1,7 @@
 ---
 title: Outlook 폴더에 웹 페이지 연결
+description: 웹 페이지를 Microsoft Office Outlook 폴더와 연결 하는 방법에 대해 알아봅니다. 이 예제에서는 Outlook에서 HtmlView 라는 폴더를 확인 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e4c2ee5e6494023ee3d5bca97f96ad3c8fe35517
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585342"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847509"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>Outlook 폴더에 웹 페이지 연결
 

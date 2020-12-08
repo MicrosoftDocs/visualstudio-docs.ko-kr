@@ -1,5 +1,7 @@
 ---
 title: Outlook 메시지 클래스에 양식 영역 연결
+description: 양식 영역을 각 항목의 메시지 클래스와 연결 하 여 양식 영역을 표시 하는 Microsoft Office Outlook 항목을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254571"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847002"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 메시지 클래스에 양식 영역 연결
   양식 영역을 각 항목의 메시지 클래스와 연결 하 여 양식 영역을 표시 하는 Microsoft Office Outlook 항목을 지정할 수 있습니다. 예를 들어 메일 항목의 아래쪽에 양식 영역을 추가 하려는 경우 양식 영역을 메시지 클래스와 연결할 수 있습니다 `IPM.Note` .

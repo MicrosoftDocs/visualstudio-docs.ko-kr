@@ -1,5 +1,7 @@
 ---
 title: 프로그램 등록 | Microsoft Docs
+description: 디버그 엔진이 포트를 획득 한 후 디버깅 되는 프로그램을 포트에 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713165"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847098"
 ---
 # <a name="register-the-program"></a>프로그램 등록
 디버그 엔진이 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스로 표시 되는 포트를 가져온 후 프로그램을 디버그할 수 있도록 하는 다음 단계는 포트에 등록 하는 것입니다. 등록 된 프로그램은 다음 방법 중 하나를 사용 하 여 디버그할 수 있습니다.
@@ -104,6 +106,6 @@ ms.locfileid: "80713165"
 
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [포트 가져오기](../../extensibility/debugger/getting-a-port.md)
 - [프로그램을 디버그할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

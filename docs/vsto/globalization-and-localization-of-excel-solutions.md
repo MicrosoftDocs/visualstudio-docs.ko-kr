@@ -1,5 +1,7 @@
 ---
 title: Excel 솔루션 세계화 및 지역화
+description: 영어가 아닌 Windows 용 설정이 있는 컴퓨터에서 실행 될 Microsoft Office Excel 솔루션에 대 한 특별 고려 사항에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986050"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847756"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 세계화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반 정보는 [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)를 참조 하세요.
@@ -77,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.
 
- 예를 들면 다음과 같습니다.
+ 예:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -95,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>외부 데이터를 사용 하는 응용 프로그램
  레거시 시스템에서 내보낸 쉼표로 구분된 값이 포함된 파일(CSV 파일)과 같이 외부 데이터를 사용하거나 열려 있는 모든 코드는 en-US 이외의 서식을 사용하여 이러한 파일을 내보내는 경우에도 영향을 받을 수 있습니다. 데이터베이스가 날짜를 문자열로 저장하지 않거나 이진 형식을 사용하는 작업만 수행하면 모든 값이 이진 형식이 되기 때문에 데이터베이스 액세스가 영향을 받지 않을 수 있습니다. 또한 Excel의 데이터를 사용하여 SQL 쿼리를 구성하는 경우 사용하는 함수에 따라 해당 쿼리가 en-US 형식인지 확인해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

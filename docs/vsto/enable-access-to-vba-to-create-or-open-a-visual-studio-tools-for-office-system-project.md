@@ -1,8 +1,8 @@
 ---
 title: VSTO 시스템 프로젝트를 만들거나 열기 위한 VBA 액세스
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Visual Studio Tools for Office 시스템 프로젝트를 만들거나 열려면 먼저 Office VBA 프로젝트 시스템에 대 한 액세스를 명시적으로 사용 하도록 설정 해야 합니다.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584861"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846131"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>VBA에 대 한 액세스를 사용 하 여 Microsoft Office 시스템 프로젝트에 대 한 Visual Studio Tools 만들기 또는 열기
 
@@ -51,43 +51,43 @@ Microsoft Office에서 Visual Basic for Applications (VBA) 프로젝트 시스�
 
 1. **파일** 탭을 클릭합니다.
 
-2. **옵션**을 클릭합니다.
+2. **옵션** 을 클릭합니다.
 
-3. **보안 센터**를 클릭 한 다음 **보안 센터 설정**을 클릭 합니다.
+3. **보안 센터** 를 클릭 한 다음 **보안 센터 설정** 을 클릭 합니다.
 
-4. **보안 센터**에서 **매크로 설정**을 클릭 합니다.
+4. **보안 센터** 에서 **매크로 설정** 을 클릭 합니다.
 
 5. Visual Basic 프로젝트에 대 한 액세스를 활성화 하거나 비활성화 하려면 **VBA project 개체 모델에** 대 한 트러스트 된 액세스를 선택 하거나 선택 취소 합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>2007 Microsoft Office 시스템을 사용 하 여 Visual Basic 프로젝트에 대 한 액세스를 사용 하거나 사용 하지 않도록 설정 하려면
 
-1. Word 또는 Excel의 **도구** 메뉴에서 **매크로**를 가리킨 다음 **보안**을 클릭 합니다.
+1. Word 또는 Excel의 **도구** 메뉴에서 **매크로** 를 가리킨 다음 **보안** 을 클릭 합니다.
 
 2. **보안** 대화 상자에서 **신뢰할 수 있는 게시자** 탭을 클릭 합니다.
 
-3. **Visual Basic 프로젝트에**대 한 액세스를 사용 하지 않도록 설정 하거나 선택을 취소 하려면 선택 합니다.
+3. **Visual Basic 프로젝트에** 대 한 액세스를 사용 하지 않도록 설정 하거나 선택을 취소 하려면 선택 합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ## <a name="to-set-your-office-macro-security-level"></a>Office 매크로 보안 수준을 설정하려면
 
 1. **파일** 탭을 클릭합니다.
 
-2. **옵션**을 클릭합니다.
+2. **옵션** 을 클릭합니다.
 
-3. **보안 센터**를 클릭 한 다음 **보안 센터 설정**을 클릭 합니다.
+3. **보안 센터** 를 클릭 한 다음 **보안 센터 설정** 을 클릭 합니다.
 
-4. **보안 센터**에서 **매크로 설정**을 클릭 합니다.
+4. **보안 센터** 에서 **매크로 설정** 을 클릭 합니다.
 
 5. **매크로 설정** 섹션에서 원하는 설정을 선택 합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>2007 Microsoft Office 시스템으로 Office 매크로 보안 수준을 설정 하려면
 
-1. Word 또는 Excel의 **도구** 메뉴에서 **매크로**를 가리킨 다음 **보안**을 클릭 합니다.
+1. Word 또는 Excel의 **도구** 메뉴에서 **매크로** 를 가리킨 다음 **보안** 을 클릭 합니다.
 
 2. **보안 수준** 탭에서 원하는 설정을 선택 합니다.
 
@@ -95,35 +95,35 @@ Microsoft Office에서 Visual Basic for Applications (VBA) 프로젝트 시스�
 
 ### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>2007 Microsoft Office system과 함께 VBA를 설치하려면
 
-1. 제어판에서 **프로그램 추가/제거** 또는 **프로그램 및 기능**을 실행 합니다.
+1. 제어판에서 **프로그램 추가/제거** 또는 **프로그램 및 기능** 을 실행 합니다.
 
 2. **현재 설치 된 프로그램** 목록에서 Office를 선택 합니다.
 
-3. **변경**을 클릭합니다.
+3. **변경** 을 클릭합니다.
 
-4. **기능 추가/제거**를 선택한 다음 **계속**을 클릭 합니다.
+4. **기능 추가/제거** 를 선택한 다음 **계속** 을 클릭 합니다.
 
-5. **응용 프로그램의 고급 사용자 지정**선택을 선택 하 고 **다음**을 클릭 합니다.
+5. **응용 프로그램의 고급 사용자 지정** 선택을 선택 하 고 **다음** 을 클릭 합니다.
 
 6. **응용 프로그램 및 도구에 대 한 업데이트 옵션 선택** 목록에서 **Office 공유 기능** 을 확장 합니다.
 
-7. **Visual Basic for Applications**옆에 있는 드롭다운 메뉴를 열고 **내 컴퓨터에서 실행**을 클릭 합니다.
+7. **Visual Basic for Applications** 옆에 있는 드롭다운 메뉴를 열고 **내 컴퓨터에서 실행** 을 클릭 합니다.
 
 8. **Continue(계속)** 를 클릭합니다.
 
-9. **닫기**를 클릭합니다.
+9. **닫기** 를 클릭합니다.
 
 ## <a name="to-repair-your-installation-of-office"></a>Office 설치를 복구하려면
 
-1. 제어판에서 **프로그램 추가/제거** 또는 **프로그램 및 기능**을 실행 합니다.
+1. 제어판에서 **프로그램 추가/제거** 또는 **프로그램 및 기능** 을 실행 합니다.
 
 2. **현재 설치 된 프로그램** 목록에서 Office의 버전을 선택 합니다.
 
-3. **변경**을 클릭합니다.
+3. **변경** 을 클릭합니다.
 
-4. **다시 설치 또는 복구**를 선택 하 고 **다음**을 클릭 합니다.
+4. **다시 설치 또는 복구** 를 선택 하 고 **다음** 을 클릭 합니다.
 
-5. **Office 설치에서 오류 검색 및 복구**를 선택한 다음 **설치**를 클릭 합니다.
+5. **Office 설치에서 오류 검색 및 복구** 를 선택한 다음 **설치** 를 클릭 합니다.
 
 ## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

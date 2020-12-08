@@ -1,5 +1,7 @@
 ---
 title: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가
+description: VSTO 추가 기능에서 사용자 지정 XML 부분을 만들어 다음과 같은 형식의 문서에 XML 데이터를 저장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538296"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847717"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>방법: VSTO 추가 기능을 사용 하 여 문서에 사용자 지정 XML 부분 추가
   VSTO 추가 기능에서 사용자 지정 XML 부분을 만들어 다음과 같은 형식의 문서에 XML 데이터를 저장할 수 있습니다.
@@ -67,7 +69,7 @@ ms.locfileid: "85538296"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>PowerPoint 프레젠테이션에 사용자 지정 XML 부분을 추가하려면
 
-1. <xref:Microsoft.Office.Core.CustomXMLPart>프레젠테이션의 [Microsoft. _Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) 컬렉션에 새 개체를 추가 합니다. <xref:Microsoft.Office.Core.CustomXMLPart> 에는 프레젠테이션에 저장하려는 XML 문자열이 들어 있습니다.
+1. <xref:Microsoft.Office.Core.CustomXMLPart>프레젠테이션의 [Microsoft.Office.Interop.PowerPoint._Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) 컬렉션에 새 개체를 추가 합니다. <xref:Microsoft.Office.Core.CustomXMLPart> 에는 프레젠테이션에 저장하려는 XML 문자열이 들어 있습니다.
 
      다음 코드 예제에서는 지정된 프레젠테이션에 사용자 지정 XML 부분을 추가합니다.
 
@@ -76,11 +78,11 @@ ms.locfileid: "85538296"
 
 2. `AddCustomXmlPartToPresentation` `ThisAddIn` POWERPOINT 용 VSTO 추가 기능 프로젝트의 클래스에 메서드를 추가 합니다.
 
-3. 프로젝트의 다른 코드에서 메서드를 호출합니다. 예를 들어 사용자가 프레젠테이션을 열 때 사용자 지정 XML 부분을 만들려면 [AfterPresentationOpen 이벤트 EApplication_Event](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) 에 대 한 이벤트 처리기에서 메서드를 호출 합니다.
+3. 프로젝트의 다른 코드에서 메서드를 호출합니다. 예를 들어 사용자가 프레젠테이션을 열 때 사용자 지정 XML 부분을 만들려면 [AfterPresentationOpen 이벤트 Microsoft.Office.Interop.PowerPoint.EApplication_Event](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) 에 대 한 이벤트 처리기에서 메서드를 호출 합니다.
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
  간단한 설명을 위해 이 예제에서는 메서드에서 지역 변수로 정의된 XML 문자열을 사용합니다. 일반적으로 파일 또는 데이터베이스와 같은 외부 원본에서 XML을 가져와야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 XML 부분 개요](../vsto/custom-xml-parts-overview.md)
 - [방법: 문서 수준 사용자 지정에 사용자 지정 XML 부분 추가](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

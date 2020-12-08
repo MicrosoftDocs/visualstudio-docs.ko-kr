@@ -1,5 +1,7 @@
 ---
 title: 런타임에 리본 메뉴에 액세스
+description: 리본을 표시, 숨기기 및 수정하고, 사용자가 사용자 지정 작업창, 작업 창 또는 Outlook 양식 영역의 컨트롤에서 코드를 실행할 수 있도록 하는 코드를 작성할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8facf847e484824b636324d1f84427a08172035
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255741"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847600"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>런타임에 리본 메뉴에 액세스
   리본을 표시, 숨기기 및 수정하고, 사용자가 사용자 지정 작업창, 작업 창 또는 Outlook 양식 영역의 컨트롤에서 코드를 실행할 수 있도록 하는 코드를 작성할 수 있습니다.
@@ -39,7 +41,7 @@ ms.locfileid: "71255741"
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]
 
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>특정 Outlook 검사기 창에 나타나는 리본 컬렉션에 액세스
- Outlook *검사기*에 나타나는 리본 컬렉션에 액세스할 수 있습니다. 검사기는 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 Outlook에서 열리는 창입니다. 검사기 창의 리본 메뉴에 액세스하려면 `Globals` 클래스의 `Ribbons` 속성을 호출하고 검사기를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체를 전달합니다.
+ Outlook *검사기* 에 나타나는 리본 컬렉션에 액세스할 수 있습니다. 검사기는 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 Outlook에서 열리는 창입니다. 검사기 창의 리본 메뉴에 액세스하려면 `Globals` 클래스의 `Ribbons` 속성을 호출하고 검사기를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체를 전달합니다.
 
  다음 예제에서는 현재 포커스가 있는 검사기의 리본 컬렉션을 가져옵니다. 이 예제에서는 `Ribbon1`이라는 리본 메뉴에 액세스하고 리본 메뉴의 콤보 상자에 표시되는 텍스트를 `Hello World`로 설정합니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "71255741"
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]
 
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>특정 Outlook 탐색기에 대해 표시 되는 리본 컬렉션 액세스
- Outlook *탐색기*에 나타나는 리본 컬렉션에 액세스할 수 있습니다. 탐색기는 Outlook 인스턴스에 대한 기본 애플리케이션 UI(사용자 인터페이스)입니다. 탐색기 창의 리본 메뉴에 액세스하려면 `Globals` 클래스의 `Ribbons` 속성을 호출하고 탐색기를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Explorer> 개체를 전달합니다.
+ Outlook *탐색기* 에 나타나는 리본 컬렉션에 액세스할 수 있습니다. 탐색기는 Outlook 인스턴스에 대한 기본 애플리케이션 UI(사용자 인터페이스)입니다. 탐색기 창의 리본 메뉴에 액세스하려면 `Globals` 클래스의 `Ribbons` 속성을 호출하고 탐색기를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Explorer> 개체를 전달합니다.
 
  다음 예제에서는 현재 포커스가 있는 탐색기의 리본 컬렉션을 가져옵니다. 이 예제에서는 `Ribbon1`이라는 리본 메뉴에 액세스하고 리본 메뉴의 콤보 상자에 표시되는 텍스트를 `Hello World`로 설정합니다.
 
@@ -57,7 +59,7 @@ ms.locfileid: "71255741"
 ## <a name="see-also"></a>참고 항목
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
-- [리본 XML](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
 - [리본 개체 모델 개요](../vsto/ribbon-object-model-overview.md)
 - [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [연습: 런타임에 리본 메뉴의 컨트롤 업데이트](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)

@@ -1,5 +1,7 @@
 ---
 title: 런타임에 VSTO 추가 기능의 Excel 통합 문서 & Word 문서 확장
+description: VSTO 추가 기능을 사용 하 여 다양 한 방법으로 Word 문서 및 Excel 통합 문서를 사용자 지정할 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585447"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847829"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장
   VSTO 추가 기능을 사용하여 다음과 같은 방법으로 Word 문서 및 Excel 통합 문서를 사용자 지정할 수 있습니다.
@@ -40,7 +42,7 @@ ms.locfileid: "91585447"
   **적용 대상:** 이 문서의 정보는 Excel 및 Word 응용 프로그램의 VSTO 추가 기능 프로젝트에 적용 됩니다. 자세한 내용은 [Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능](../vsto/features-available-by-office-application-and-project-type.md)을 참조 하세요.
 
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>VSTO 추가 기능에서 확장 개체 생성
- *확장 개체* 는 Visual Studio Tools for Office 런타임에서 제공하는 형식의 인스턴스로, 기본적으로 Word 또는 Excel 개체 모델에 있는 개체( *네이티브 Office 개체*라고 함)에 기능을 추가합니다. Word 또는 Excel 개체에 대한 확장 개체를 생성하려면 `GetVstoObject` 메서드를 사용합니다. `GetVstoObject`지정 된 Word 또는 Excel 개체에 대해 메서드를 처음으로 호출 하는 경우 지정 된 개체를 확장 하는 새 개체를 반환 합니다. 메서드를 호출하고 동일한 Word 또는 Excel 개체를 지정할 때마다 동일한 확장 개체가 반환됩니다.
+ *확장 개체* 는 Visual Studio Tools for Office 런타임에서 제공하는 형식의 인스턴스로, 기본적으로 Word 또는 Excel 개체 모델에 있는 개체( *네이티브 Office 개체* 라고 함)에 기능을 추가합니다. Word 또는 Excel 개체에 대한 확장 개체를 생성하려면 `GetVstoObject` 메서드를 사용합니다. `GetVstoObject`지정 된 Word 또는 Excel 개체에 대해 메서드를 처음으로 호출 하는 경우 지정 된 개체를 확장 하는 새 개체를 반환 합니다. 메서드를 호출하고 동일한 Word 또는 Excel 개체를 지정할 때마다 동일한 확장 개체가 반환됩니다.
 
  확장 개체의 형식은 네이티브 Office 개체의 형식과 동일한 이름을 사용하지만 형식은 <xref:Microsoft.Office.Tools.Excel> 또는 <xref:Microsoft.Office.Tools.Word> 네임스페이스에 정의되어 있습니다. 예를 들어 `GetVstoObject` 메서드를 호출하여 <xref:Microsoft.Office.Interop.Word.Document> 개체를 확장하는 경우 메서드는 <xref:Microsoft.Office.Tools.Word.Document> 개체를 반환합니다.
 
@@ -49,7 +51,7 @@ ms.locfileid: "91585447"
  확장 개체가 특정 네이티브 Office 개체에 대해 이미 생성되었는지 확인하려면 `HasVstoObject` 메서드를 사용합니다. 자세한 내용은 [Office 개체가 확장 되었는지 확인](#HasVstoObject)을 참조 하세요.
 
 ### <a name="generate-host-items"></a>호스트 항목 생성
- 를 사용 하 여 `GetVstoObject` 문서 수준 개체 (, 또는)를 확장 하는 경우 <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> 반환 된 개체를 <xref:Microsoft.Office.Interop.Word.Document> *호스트 항목*이라고 합니다. 호스트 항목은 다른 확장 개체 및 컨트롤을 비롯하여 다른 개체를 포함할 수 있는 형식입니다. 이 형식은 Word 또는 Excel 주 interop 어셈블리의 해당 형식과 유사하지만 추가 기능을 제공합니다. 호스트 항목에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
+ 를 사용 하 여 `GetVstoObject` 문서 수준 개체 (, 또는)를 확장 하는 경우 <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> 반환 된 개체를 <xref:Microsoft.Office.Interop.Word.Document> *호스트 항목* 이라고 합니다. 호스트 항목은 다른 확장 개체 및 컨트롤을 비롯하여 다른 개체를 포함할 수 있는 형식입니다. 이 형식은 Word 또는 Excel 주 interop 어셈블리의 해당 형식과 유사하지만 추가 기능을 제공합니다. 호스트 항목에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
  호스트 항목을 생성한 후에는 문서, 통합 문서 또는 워크시트에 관리되는 컨트롤을 추가하는 데 사용할 수 있습니다. 자세한 내용은 [문서 및 워크시트에 관리 되는 컨트롤 추가](#AddControls)를 참조 하세요.
 
@@ -87,7 +89,7 @@ ms.locfileid: "91585447"
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> 문서 및 워크시트에 관리 되는 컨트롤 추가
  <xref:Microsoft.Office.Tools.Word.Document> 또는 <xref:Microsoft.Office.Tools.Excel.Worksheet>를 생성한 후 이러한 확장 개체가 나타내는 문서 또는 워크시트에 컨트롤을 추가할 수 있습니다. 컨트롤을 추가 하려면 `Controls` 또는의 속성을 사용 <xref:Microsoft.Office.Tools.Word.Document> 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet> . 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
- Windows Forms 컨트롤 또는 *호스트 컨트롤*을 추가할 수 있습니다. 호스트 컨트롤은 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 제공하는 컨트롤로, Word 또는 Excel 주 interop 어셈블리에서 해당 컨트롤을 래핑합니다. 호스트 컨트롤은 기본 네이티브 Office 개체의 모든 동작을 노출 합니다. 또한 Windows Forms 데이터 바인딩 모델을 사용 하 여 이벤트를 발생 시키고 데이터에 바인딩할 수 있습니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
+ Windows Forms 컨트롤 또는 *호스트 컨트롤* 을 추가할 수 있습니다. 호스트 컨트롤은 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 제공하는 컨트롤로, Word 또는 Excel 주 interop 어셈블리에서 해당 컨트롤을 래핑합니다. 호스트 컨트롤은 기본 네이티브 Office 개체의 모든 동작을 노출 합니다. 또한 Windows Forms 데이터 바인딩 모델을 사용 하 여 이벤트를 발생 시키고 데이터에 바인딩할 수 있습니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
 > [!NOTE]
 > VSTO 추가 기능을 사용하여 워크시트에 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 컨트롤을 추가하거나 문서에 <xref:Microsoft.Office.Tools.Word.XMLNode> 또는 <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 추가할 수는 없습니다. 이러한 호스트 컨트롤은 프로그래밍 방식으로 추가할 수 없습니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)에 대 한 제한 사항을 참조 하세요.
@@ -117,7 +119,7 @@ ms.locfileid: "91585447"
 ## <a name="determine-whether-an-office-object-has-been-extended"></a><a name="HasVstoObject"></a> Office 개체가 확장 되었는지 확인
  확장 개체가 특정 네이티브 Office 개체에 대해 이미 생성되었는지 확인하려면 `HasVstoObject` 메서드를 사용합니다. 이 메서드는 확장 개체가 이미 생성 된 경우 **true** 를 반환 합니다.
 
- `Globals.Factory.HasVstoMethod` 메서드를 사용하세요. 확장 개체에 대해 테스트하려는 네이티브 Word 또는 Excel 개체(예: <xref:Microsoft.Office.Interop.Word.Document> 또는 <xref:Microsoft.Office.Interop.Excel.Worksheet>)를 전달합니다.
+ `Globals.Factory.HasVstoMethod` 메서드를 사용합니다. 확장 개체에 대해 테스트하려는 네이티브 Word 또는 Excel 개체(예: <xref:Microsoft.Office.Interop.Word.Document> 또는 <xref:Microsoft.Office.Interop.Excel.Worksheet>)를 전달합니다.
 
  `HasVstoObject` 메서드는 지정된 Office 개체에 확장 개체가 있는 경우에만 코드를 실행하려는 경우 유용합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 문서를 저장 하기 전에 문서에서 관리 되는 컨트롤을 제거 하는 이벤트를 처리 하는 WORD VSTO 추가 기능이 있는 경우 메서드를 사용 `HasVstoObject` 하 여 문서가 확장 되었는지 여부를 확인 합니다. 문서가 확장 되지 않은 경우 관리 되는 컨트롤을 포함할 수 없으며 이벤트 처리기는 문서에서 컨트롤을 정리 하려고 하지 않고를 반환할 수 있습니다.
 

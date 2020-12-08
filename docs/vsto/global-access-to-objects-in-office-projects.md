@@ -1,5 +1,7 @@
 ---
 title: Office 프로젝트의 개체에 대 한 전역 액세스
+description: Globals 클래스를 사용 하 여 프로젝트의 모든 코드에서 런타임에 여러 프로젝트 항목에 액세스 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2653f314edf07c4dcca6d3afc74af64c548af35
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041053"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846391"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office 프로젝트의 개체에 대 한 전역 액세스
   Office 프로젝트를 만들면 Visual Studio에서 `Globals` 라는 클래스를 프로젝트에 자동으로 생성합니다. `Globals` 클래스를 사용하여 프로젝트의 모든 코드에서 런타임에 여러 프로젝트 항목에 액세스할 수 있습니다.
@@ -75,7 +77,7 @@ ms.locfileid: "88041053"
 > [!NOTE]
 > `Globals` 클래스는 디자인 타임에 초기화되지 않지만 컨트롤 인스턴스는 디자이너에서 만듭니다. 즉, 사용자 정의 컨트롤 클래스 내에서 클래스의 속성을 사용 하는 사용자 정의 컨트롤을 만드는 경우 `Globals` 반환 된 개체를 사용 하기 전에 속성에서 **null** 을 반환 하는지 여부를 확인 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

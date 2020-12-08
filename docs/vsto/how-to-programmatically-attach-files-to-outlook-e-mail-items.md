@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부'
+description: Microsoft Office Outlook 항목에 파일을 첨부할 수 있는 방법에 대해 알아봅니다. 이 예제에서는 새 메일 항목에 파일을 첨부 하 고 Armando에 전달 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585329"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847392"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부
   이 예제에서는 새 메일 항목에 파일을 첨부 하 고 Armando에 전달 합니다. 이 예제에서는 Ar마나트 이라는 사용자가 받는 사람으로 존재 한다고 가정 합니다.

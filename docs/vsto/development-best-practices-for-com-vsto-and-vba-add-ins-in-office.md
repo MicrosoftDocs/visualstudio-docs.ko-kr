@@ -1,5 +1,7 @@
 ---
 title: '개발 모범 사례: Office의 COM, VSTO, & VBA 추가 기능'
+description: Microsoft Office에 대 한 COM, VSTO 및 VBA 추가 기능을 개발할 때 권장 되는 모범 사례에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 07/25/2017
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e536c48004d9c8ff729ac5fb064e04e02c6884b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e7387b58bae486588687fe018453fafb5d6571f7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581198"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846898"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
   Office 용 COM, VSTO 또는 VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따릅니다.   이렇게 하면 다음과 같은 이점을 얻을 수 있습니다.

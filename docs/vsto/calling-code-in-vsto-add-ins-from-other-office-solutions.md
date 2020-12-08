@@ -1,5 +1,7 @@
 ---
 title: 다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
+description: 다른 Microsoft Office 솔루션을 포함 하 여 VSTO 추가 기능의 개체를 다른 솔루션에 노출 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255324"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847847"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
   VSTO 추가 기능의 개체를 다른 Microsoft Office 솔루션을 비롯한 다른 솔루션에 노출할 수 있습니다. 이는 해당 VSTO 추가 기능이 다른 솔루션에서 사용하도록 하려는 서비스를 제공하는 경우에 유용합니다. 예를 들어 웹 서비스의 재무 데이터에 대해 계산을 수행 하는 Microsoft Office Excel 용 VSTO 추가 기능이 있는 경우 다른 솔루션은 런타임에 Excel VSTO 추가 기능을 호출 하 여 이러한 계산을 수행할 수 있습니다.
@@ -46,7 +48,7 @@ ms.locfileid: "71255324"
 
 - COM VSTO 추가 기능(즉, <xref:Extensibility.IDTExtensibility2> 인터페이스를 직접 구현하는 VSTO 추가 기능)
 
-- VSTO 추가 기능과 다른 프로세스에서 실행되는 솔루션(이러한 유형의 솔루션을 *OOP(Out-of-Process) 클라이언트*라고도 함). 여기에는 Windows Forms 또는 콘솔 애플리케이션 같은 Office 애플리케이션을 자동화하는 애플리케이션, 그리고 다른 프로세스에서 로드되는 VSTO 추가 기능이 포함됩니다.
+- VSTO 추가 기능과 다른 프로세스에서 실행되는 솔루션(이러한 유형의 솔루션을 *OOP(Out-of-Process) 클라이언트* 라고도 함). 여기에는 Windows Forms 또는 콘솔 애플리케이션 같은 Office 애플리케이션을 자동화하는 애플리케이션, 그리고 다른 프로세스에서 로드되는 VSTO 추가 기능이 포함됩니다.
 
 ## <a name="expose-objects-to-other-solutions"></a>다른 솔루션에 개체 노출
  VSTO 추가 기능의 개체를 다른 솔루션에 노출하려면 VSTO 추가 기능에서 다음 단계를 수행합니다.
@@ -56,13 +58,13 @@ ms.locfileid: "71255324"
 2. <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 클래스에서 `ThisAddIn` 메서드를 재정의합니다. 다른 솔루션에 노출하려는 클래스의 인스턴스를 반환합니다.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>다른 솔루션에 노출 하려는 클래스를 정의 합니다.
- 최소한, 노출하려는 클래스는 public 클래스여야 하며, <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성이 **true**로 설정되어 있어야 하고, [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 인터페이스를 노출해야 합니다.
+ 최소한, 노출하려는 클래스는 public 클래스여야 하며, <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성이 **true** 로 설정되어 있어야 하고, [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 인터페이스를 노출해야 합니다.
 
  [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 인터페이스를 노출하는 데 권장되는 방식은 다음 단계를 수행하는 것입니다.
 
 1. 다른 솔루션에 노출하려는 멤버를 선언하는 인터페이스를 정의합니다. 이 인터페이스를 VSTO 추가 기능 프로젝트에 정의할 수 있습니다. 하지만 클래스를 비VBA 솔루션에 노출하려는 경우에는 이 인터페이스를 별도의 클래스 라이브러리 프로젝트에 정의해야 할 수 있습니다. 이렇게 해야 VSTO 추가 기능을 호출하는 솔루션이 VSTO 추가 기능 프로젝트를 참조하지 않고 인터페이스를 참조할 수 있기 때문입니다.
 
-2. <xref:System.Runtime.InteropServices.ComVisibleAttribute>이 인터페이스에 특성을 적용 하 고이 특성을 **true**로 설정 합니다.
+2. <xref:System.Runtime.InteropServices.ComVisibleAttribute>이 인터페이스에 특성을 적용 하 고이 특성을 **true** 로 설정 합니다.
 
 3. 이 인터페이스에 구현할 클래스를 수정합니다.
 
@@ -111,7 +113,7 @@ ms.locfileid: "71255324"
    COMAddIn 속성의 반환 값을 사용 하는 방법은 VBA 클라이언트와 비 VBA 클라이언트에 따라 다릅니다. OOP(Out-of-Process) 클라이언트의 경우 가능한 경합 상태가 발생하지 않도록 하기 위해 추가 코드가 필요합니다.
 
 ### <a name="access-objects-from-vba-solutions"></a>VBA 솔루션에서 개체 액세스
- 다음 코드 예제에서는 VBA를 사용 하 여 VSTO 추가 기능에 의해 노출 되는 메서드를 호출 하는 방법을 보여 줍니다. 이 VBA 매크로는 `ImportData` **EXCELIMPORTDATA**라는 VSTO 추가 기능에 정의 된 라는 메서드를 호출 합니다. 큰 연습의 컨텍스트에서이 코드를 보려면 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
+ 다음 코드 예제에서는 VBA를 사용 하 여 VSTO 추가 기능에 의해 노출 되는 메서드를 호출 하는 방법을 보여 줍니다. 이 VBA 매크로는 `ImportData` **EXCELIMPORTDATA** 라는 VSTO 추가 기능에 정의 된 라는 메서드를 호출 합니다. 큰 연습의 컨텍스트에서이 코드를 보려면 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
 ```vb
 Sub CallVSTOMethod()
