@@ -1,5 +1,7 @@
 ---
 title: '방법: 작업 창에서 컨트롤 레이아웃 관리'
+description: 사용자 정의 컨트롤을 제대로 쌓기 위해 코드를 작성 하 여 작업 창에서 컨트롤 레이아웃을 관리 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520149"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848250"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>방법: 작업 창에서 컨트롤 레이아웃 관리
   작업 창은 기본적으로 문서 또는 워크시트의 오른쪽에 도킹 됩니다. 그러나 왼쪽, 위쪽 또는 아래쪽에 도킹할 수 있습니다. 여러 사용자 정의 컨트롤을 사용 하는 경우 작업 창에서 사용자 정의 컨트롤을 제대로 스택 하는 코드를 작성할 수 있습니다. 자세한 내용은 [작업 창 개요](../vsto/actions-pane-overview.md)를 참조 하세요.
@@ -38,7 +40,7 @@ ms.locfileid: "85520149"
 
 1. 여러 사용자 컨트롤이 나 중첩 된 작업 창 컨트롤을 포함 하는 작업 창이 포함 된 Microsoft Office Word 용 문서 수준 프로젝트를 엽니다. 자세한 내용은 [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)를 참조 하세요.
 
-2. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+2. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 3. <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>작업 창의 이벤트 처리기에서 작업 창의 방향이 가로 인지 확인 합니다.
 
@@ -65,7 +67,7 @@ ms.locfileid: "85520149"
 
 - 여러 사용자 컨트롤이 나 중첩 된 작업 창 컨트롤을 포함 하는 작업 창을 포함 하는 Word 문서 수준 프로젝트입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

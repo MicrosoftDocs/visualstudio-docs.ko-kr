@@ -1,5 +1,7 @@
 ---
 title: Excel 솔루션
+description: 프로젝트 템플릿을 사용 하 여 Excel을 자동화 하 고 Excel 기능을 확장 하 고 Excel UI (사용자 인터페이스)를 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986076"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848120"
 ---
 # <a name="excel-solutions"></a>Excel 솔루션
   Visual Studio에서는 Microsoft Office Excel용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Excel을 자동화하고, Excel 기능을 확장한 다음 Excel UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 개요 &#40;vsto&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -85,7 +87,7 @@ ms.locfileid: "72986076"
 ### <a name="options-for-all-project-types"></a>모든 프로젝트 형식에 대 한 옵션
  다음 표에서는 문서 수준 사용자 지정과 VSTO 추가 기능에서 모두 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |리본 메뉴 사용자 지정|[리본 개요](../vsto/ribbon-overview.md)|
 |문서 수준 사용자 지정에 대한 사용자 지정 통합 문서 또는 VSTO 추가 기능에 대한 열려 있는 통합 문서에서 워크시트에 Windows Forms 컨트롤 또는 확장된 Excel 컨트롤 추가|[방법: Office 문서에 Windows forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [방법: 워크시트에 차트 컨트롤 추가](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|
@@ -93,7 +95,7 @@ ms.locfileid: "72986076"
 ### <a name="options-for-document-level-customizations"></a>문서 수준 사용자 지정 옵션
  다음 표에서는 문서 수준 사용자 지정에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |통합 문서에 작업 창 추가|[작업 창 개요](../vsto/actions-pane-overview.md)<br /><br /> [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |워크시트에 XML 노드에 매핑된 확장된 범위 컨트롤 추가|[방법: 워크시트에 XMLMappedRange 컨트롤 추가](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
@@ -101,7 +103,7 @@ ms.locfileid: "72986076"
 ### <a name="options-for-vsto-add-ins"></a>VSTO 추가 기능에 대한 옵션
  다음 표에서는 VSTO 추가 기능에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |사용자 지정 작업창을 만듭니다.|[사용자 지정 작업 창](../vsto/custom-task-panes.md)|
 

@@ -1,7 +1,8 @@
 ---
 title: '방법: Visual Studio 내에서 워크시트에 스키마 매핑'
+description: 워크시트가 Visual Studio에서 열려 있는 동안 Microsoft Office Excel 워크시트에 XML 스키마를 매핑하는 방법에 대해 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538140"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848211"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>방법: Visual Studio 내에서 워크시트에 스키마 매핑
   워크시트가 Visual Studio에서 열려 있는 동안에는 XML 스키마를 워크시트에 매핑할 수 있습니다. Visual Studio 외부에서 통합 문서를 열 때 사용 하는 것과 동일한 Microsoft Office Excel 도구를 사용 합니다. Excel 솔루션을 만들기 전이나 후에 워크시트에 스키마를 매핑 하는지 여부에 관계 없이 Office 프로젝트는 동일한 개체를 만듭니다.
@@ -43,19 +44,19 @@ ms.locfileid: "85538140"
     > [!NOTE]
     > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발자 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)를 참조 하세요.
 
-4. **XML** 그룹에서 **원본**을 클릭 합니다.
+4. **XML** 그룹에서 **원본** 을 클릭 합니다.
 
      **XML 소스** 창이 열립니다.
 
-5. **Xml 원본** 창에서 **xml 맵**을 클릭 합니다.
+5. **Xml 원본** 창에서 **xml 맵** 을 클릭 합니다.
 
      **XML 맵** 대화 상자가 열립니다.
 
-6. **XML 맵** 대화 상자에서 **추가**를 클릭 합니다.
+6. **XML 맵** 대화 상자에서 **추가** 를 클릭 합니다.
 
-7. 스키마 파일을 찾아 선택한 다음 **열기**를 클릭 합니다.
+7. 스키마 파일을 찾아 선택한 다음 **열기** 를 클릭 합니다.
 
-8. **확인**을 클릭합니다.
+8. **확인** 을 클릭합니다.
 
      스키마는 **XML 원본** 창에 표시 됩니다. 프로젝트에서 형식화 된는 <xref:System.Data.DataSet> 스키마를 기반으로 생성 되 고 <xref:System.Windows.Forms.BindingSource> 가 만들어집니다.
 
@@ -65,6 +66,6 @@ ms.locfileid: "85538140"
 
      반복 스키마 요소를 끌면 Office 프로젝트에서 <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터 소스에 자동으로 바인딩되지 않는 컨트롤이 생성 됩니다. 자세한 내용은 [문서 수준 사용자 지정의 XML 스키마 및 데이터](../vsto/xml-schemas-and-data-in-document-level-customizations.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio 내부의 Word 문서에 스키마 매핑](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [문서 수준 사용자 지정의 XML 스키마 및 데이터](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

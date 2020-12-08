@@ -1,5 +1,7 @@
 ---
 title: Architecture of VSTO Add-ins
+description: Visual Studio에서 만든 VSTO 추가 기능에는 안정성과 보안을 강조 하 고 Microsoft Office와 긴밀 하 게 작동 하도록 하는 아키텍처 기능이 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 451ae0bd466403819a5b4e53d76070876d762c38
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841918"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848354"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture of VSTO Add-ins
   Visual Studio에서 Office 개발자 도구를 사용하여 만든 VSTO 추가 기능에는 안정성과 보안을 강조하고 Microsoft Office와 긴밀하게 작업할 수 있도록 하는 아키텍처 기능이 있습니다. 이 항목에서는 다음과 같은 VSTO 추가 기능의 측면에 대해 설명합니다.

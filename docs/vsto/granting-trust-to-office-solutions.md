@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에 신뢰 부여
+description: Office 솔루션에 신뢰를 부여 하려면 솔루션 어셈블리, 배포 매니페스트 및 문서를 신뢰 하도록 각 대상 컴퓨터의 보안 정책을 수정 하는 것을 의미 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315241"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848328"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office 솔루션에 신뢰 부여
   Office 솔루션에 신뢰 부여는 솔루션 어셈블리, 응용 프로그램 매니페스트, 배포 매니페스트 및 문서를 신뢰 하도록 각 대상 컴퓨터의 보안 정책을 수정 하는 것을 의미 합니다. 사용자 또는 최종 사용자가 Office 솔루션에 신뢰를 부여할 수 있습니다.

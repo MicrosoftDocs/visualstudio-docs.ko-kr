@@ -1,5 +1,7 @@
 ---
 title: '방법: 워크시트에 NamedRange 컨트롤 추가'
+description: 디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 NamedRange 컨트롤을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543522"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848146"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>방법: 워크시트에 NamedRange 컨트롤 추가
   디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다.
@@ -39,7 +41,7 @@ ms.locfileid: "85543522"
   컨트롤에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Excel.NamedRange> [NamedRange 컨트롤](../vsto/namedrange-control.md)을 참조 하세요.
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> 디자인 타임에 NamedRange 컨트롤 추가
- 디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자**및 **데이터 원본** 창에서 추가할 수 있습니다.
+ 디자인 타임에 문서 수준 프로젝트에서 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가하기 위한 여러 가지 방법이 있습니다. 즉, Excel, Visual Studio **도구 상자** 및 **데이터 원본** 창에서 추가할 수 있습니다.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85543522"
 
 1. 명명된 범위에 포함하려는 셀을 선택합니다.
 
-2. **이름 상자**에 범위 이름을 입력 하 고 **enter**키를 누릅니다.
+2. **이름 상자** 에 범위 이름을 입력 하 고 **enter** 키를 누릅니다.
 
      **이름 상자** 는 워크시트의 **A** 열 바로 위에 수식 입력줄 옆에 있습니다.
 
@@ -61,7 +63,7 @@ ms.locfileid: "85543522"
 
 3. 명명된 범위에 포함하려는 셀을 선택합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
      컨트롤에 지정된 기본 이름을 원하지 않으면 **속성** 창에서 이름을 변경할 수 있습니다.
 
@@ -93,7 +95,7 @@ ms.locfileid: "85543522"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

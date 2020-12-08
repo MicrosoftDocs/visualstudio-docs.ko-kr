@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 런타임의 어셈블리
+description: Visual Studio에서 Visual Studio Tools for Office 런타임 어셈블리에 대 한 참조를 자동으로 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918790"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848302"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office 런타임의 어셈블리
   Office 프로젝트를 만들면 Visual Studio에서 프로젝트 형식 및 프로젝트의 대상 .NET Framework에 사용되는 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 어셈블리에 자동으로 참조를 추가합니다. .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]및 [!INCLUDE[net_v45](includes/net-v45-md.md)]용 Office 확장에는 각각 다른 어셈블리가 있습니다. Office 확장에 대 한 자세한 내용은 [Visual Studio Tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)를 참조 하세요.
@@ -37,7 +39,7 @@ ms.locfileid: "75918790"
 |Microsoft.VisualStudio.Tools.Applications.Runtime.dll|다음과 같은 형식을 제공합니다.<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> 문서 수준 사용자 지정에서 데이터 개체를 캐시 하는 데 사용할 수 있는 특성 및 인터페이스입니다. 자세한 내용은 [데이터 캐시](caching-data.md)를 참조 하세요.<br />- <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> Office 솔루션에 대 한 ClickOnce 설치 관리자의 최종 단계로 추가 설치 단계를 실행 하기 위해 구현할 수 있는 인터페이스입니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.<br />-Visual Studio Tools for Office 런타임에 의해 throw 될 수 있는 예외입니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용 하기 위한 것이 아닙니다.|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll|다음과 같은 형식을 제공합니다.<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 사용자 지정 어셈블리를 문서에 연결 하 고 문서에서 캐시 된 데이터에 액세스 하는 데 사용할 수 있는 클래스입니다. 자세한 내용은 [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](managing-documents-on-a-server-by-using-the-serverdocument-class.md)를 참조 하세요.<br />-문서 수준 사용자 지정에서 캐시 된 데이터의 계층 구조를 나타내는 여러 클래스입니다. 자세한 내용은 [서버에 있는 문서의 데이터 액세스](accessing-data-in-documents-on-the-server.md)를 참조 하세요.|
 
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](includes/net-v45-md.md)] 를 대상으로 하는 프로젝트도 다음과 같은 어셈블리를 참조합니다. 이러한 어셈블리는 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 재배포 가능 패키지의 일부가 아닙니다. 대신 솔루션과 함께 배포되어야 하는 종속 어셈블리입니다. 기본적으로 프로젝트에 대한 빌드 출력 폴더에 복사되며, 이러한 어셈블리의 **로컬 복사** 속성은 **True**로 설정됩니다. ClickOnce를 사용하여 프로젝트를 배포하는 경우 이러한 어셈블리는 생성된 패키지에 포함 됩니다.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](includes/net-v45-md.md)] 를 대상으로 하는 프로젝트도 다음과 같은 어셈블리를 참조합니다. 이러한 어셈블리는 [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] 재배포 가능 패키지의 일부가 아닙니다. 대신 솔루션과 함께 배포되어야 하는 종속 어셈블리입니다. 기본적으로 프로젝트에 대한 빌드 출력 폴더에 복사되며, 이러한 어셈블리의 **로컬 복사** 속성은 **True** 로 설정됩니다. ClickOnce를 사용하여 프로젝트를 배포하는 경우 이러한 어셈블리는 생성된 패키지에 포함 됩니다.
 
 |어셈블리 이름|설명|
 |-------------------|-----------------|
@@ -61,6 +63,6 @@ ms.locfileid: "75918790"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 프로그래밍 방식으로 문서에 사용자 지정 어셈블리를 연결 하 고 문서에서 캐시 된 데이터에 액세스 하는 데 사용할 수 있는 클래스입니다. 자세한 내용은 [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](managing-documents-on-a-server-by-using-the-serverdocument-class.md)를 참조 하세요.<br />-문서 수준 사용자 지정에서 캐시 된 데이터의 계층 구조를 나타내는 여러 클래스입니다. 자세한 내용은 [서버에 있는 문서의 데이터 액세스](accessing-data-in-documents-on-the-server.md)를 참조 하세요.|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|다음과 같은 형식을 제공합니다.<br /><br /> -.NET Framework 3.5를 대상으로 하는 Office 솔루션에 신뢰를 부여 하는 사용자 포함 목록 항목을 만드는 데 사용할 수 있는 VisualStudio 및 UserInclusionList 클래스입니다 .이 클래스를 사용할 수 있습니다.<br />-Visual Studio Tools for Office 런타임 인프라의 일부 이며 코드에서 직접 사용 하기 위한 것이 아닙니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio Tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio Tools for Office 런타임 설치 시나리오](visual-studio-tools-for-office-runtime-installation-scenarios.md)

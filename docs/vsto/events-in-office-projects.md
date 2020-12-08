@@ -1,5 +1,7 @@
 ---
 title: Office 프로젝트의 이벤트
+description: 각 Office 프로젝트 템플릿에서 여러 이벤트 처리기를 생성 하는 방법 및 이러한 이벤트 처리기가 VSTO 추가 기능의 이벤트 처리기와 약간 다른 지 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986112"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848185"
 ---
 # <a name="events-in-office-projects"></a>Office 프로젝트의 이벤트
   각 Office 프로젝트 템플릿은 몇 가지 이벤트 처리기를 자동으로 생성합니다. 문서 수준 사용자 지정의 이벤트 처리기는 VSTO 추가 기능의 이벤트 처리기와 약간 다릅니다.
@@ -45,7 +47,7 @@ ms.locfileid: "72986112"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="document-level-projects"></a>문서 수준 프로젝트
- Visual Studio에서는 문서 수준 사용자 지정의 신규 또는 기존 문서나 워크시트 뒤에서 생성된 코드를 제공합니다. 이 코드에서는 두 가지 이벤트인 **Startup** 및 **Shutdown**을 발생시킵니다.
+ Visual Studio에서는 문서 수준 사용자 지정의 신규 또는 기존 문서나 워크시트 뒤에서 생성된 코드를 제공합니다. 이 코드에서는 두 가지 이벤트인 **Startup** 및 **Shutdown** 을 발생시킵니다.
 
 ### <a name="startup-event"></a>Startup 이벤트
  **Startup** 이벤트는 문서가 실행 중이고 어셈블리의 모든 초기화 코드가 실행된 후 각 호스트 항목(문서, 통합 문서 또는 워크시트)에 대해 발생합니다. 이 이벤트는 코드가 실행되고 있는 클래스의 생성자에서 실행될 마지막 항목입니다. 호스트 항목에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
@@ -82,10 +84,10 @@ ms.locfileid: "72986112"
   - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
-> 문서의 **Shutdown** 이벤트 처리기 중에 프로그래밍 방식으로 컨트롤을 제거하지 마세요. 문서의 UI 요소는 **Shutdown** 이벤트가 발생할 때 더 이상 사용할 수 없습니다. 애플리케이션이 닫히기 전에 컨트롤을 제거하려면 **BeforeClose** , **BeforeSave**등의 다른 이벤트 처리기에 코드를 추가합니다.
+> 문서의 **Shutdown** 이벤트 처리기 중에 프로그래밍 방식으로 컨트롤을 제거하지 마세요. 문서의 UI 요소는 **Shutdown** 이벤트가 발생할 때 더 이상 사용할 수 없습니다. 애플리케이션이 닫히기 전에 컨트롤을 제거하려면 **BeforeClose** , **BeforeSave** 등의 다른 이벤트 처리기에 코드를 추가합니다.
 
 ### <a name="event-handler-method-declarations"></a>이벤트 처리기 메서드 선언
- 모든 이벤트 처리기 메서드 선언에는 동일한 인수인 *sender* 및 *e*가 전달됩니다. Excel에서 *sender* 인수는 `Sheet1` , `Sheet2`등의 시트를 참조하고, Word에서 *sender* 인수는 문서를 참조합니다. *e* 인수는 이벤트의 표준 인수를 참조합니다. 이 경우에는 표준 인수가 사용되지 않습니다.
+ 모든 이벤트 처리기 메서드 선언에는 동일한 인수인 *sender* 및 *e* 가 전달됩니다. Excel에서 *sender* 인수는 `Sheet1` , `Sheet2`등의 시트를 참조하고, Word에서 *sender* 인수는 문서를 참조합니다. *e* 인수는 이벤트의 표준 인수를 참조합니다. 이 경우에는 표준 인수가 사용되지 않습니다.
 
  다음 코드 예제에서는 Word용 문서 수준 프로젝트의 기본 이벤트 처리기를 보여 줍니다.
 
@@ -152,7 +154,7 @@ ms.locfileid: "72986112"
 > [!NOTE]
 > 레지스트리를 수정하여 Outlook이 종료될 때 Outlook에서 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트를 강제로 발생시킬 수 있습니다. 그러나 관리자가 이 설정을 되돌리는 경우 `ThisAddIn_Shutdown` 메서드에 추가하는 모든 코드가 Outlook이 종료될 때 더 이상 실행되지 않습니다. 자세한 내용은 [Outlook 2010에 대 한 종료 변경 내용](/previous-versions/office/developer/office-2010/ee720183(v=office.14))을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
