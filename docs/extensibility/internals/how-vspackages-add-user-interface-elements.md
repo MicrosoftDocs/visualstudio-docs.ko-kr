@@ -1,5 +1,7 @@
 ---
 title: Vspackage 사용자 인터페이스 요소를 추가 하는 방법 | Microsoft Docs
+description: Vspackage에서 메뉴, 도구 모음 및 도구 창과 같은 UI (사용자 인터페이스) 요소를 Visual Studio에 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649592"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761090"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 사용자 인터페이스 요소를 추가 하는 방법
 VSPackage 파일을 사용 하 여 메뉴, 도구 모음 및 도구 창과 같은 UI (사용자 인터페이스) 요소를 Visual Studio에 추가할 수 *있습니다.*
@@ -187,7 +189,7 @@ Combos는 섹션에 정의 되어 있습니다 `Combos` . 각 `Combo` 요소는 
 |-------------| - | - | - |
 |그룹|[Groups 요소](../../extensibility/groups-element.md), IDE, 기타 vspackage|메뉴, 그룹, 항목 자체|메뉴, 그룹 및 명령|
 |메뉴|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|1 ~ *n* 그룹|0- *n* 그룹|
-|도구 모음|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|항목 자체|0- *n* 그룹|
+|Toolbar|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|항목 자체|0- *n* 그룹|
 |메뉴 항목|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체|-0 ~ *n* 그룹|
 |단추|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체||
 |콤보|[Combos 요소](../../extensibility/combos-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체||
@@ -288,5 +290,5 @@ Vspackage는 [UsedCommands 요소](../../extensibility/usedcommands-element.md) 
 
 - 특정 UI 요소가 IDE에 표시 되도록 하려면 하나 이상의 인터페이스를 구현 하거나 일부 코드를 작성 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

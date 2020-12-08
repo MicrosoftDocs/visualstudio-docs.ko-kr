@@ -1,5 +1,7 @@
 ---
 title: '방법: Windows에 대 한 자동화 기능 제공 Microsoft Docs'
+description: VisualStudio 메서드를 사용 하 여 Visual Studio에서 문서 및 도구 창에 대 한 자동화를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fec2b9ef6612a294dc70d129cf4bdd3dde843262
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a22e397a4c55ae23241e6fc89fb7d896fffa78f4
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905264"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761298"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>방법: windows에 대 한 자동화 제공
 

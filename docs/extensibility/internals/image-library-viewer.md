@@ -1,5 +1,7 @@
 ---
 title: 이미지 라이브러리 뷰어 | Microsoft Docs
+description: 이미지 매니페스트를 로드 하 고 검색 하 여 이미지 특성을 확인 하 고 조작할 수 있도록 하는 Visual Studio 이미지 라이브러리 뷰어 도구에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536346"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761273"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스트를 로드 하 고 검색 하 여 사용자가 Visual Studio와 동일한 방식으로 조작할 수 있도록 합니다. 사용자는 배경, 크기, DPI, 고대비 및 기타 설정을 변경할 수 있습니다. 또한이 도구는 각 이미지 매니페스트에 대 한 로딩 정보를 표시 하 고 이미지 매니페스트의 각 이미지에 대 한 소스 정보를 표시 합니다. 이 도구는 다음과 같은 경우에 유용 합니다.
@@ -71,7 +73,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -110,7 +112,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -127,11 +129,11 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 |**Attribute**|**정의**|
 |-|-|
 |URI|하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br /><br /> -절대 구성 요소 리소스 참조<br /><br /> -네이티브 리소스를 포함 하는 파일의 경로|
-|배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*: 소스를 밝은 배경에 사용할 수 있습니다.<br /><br /> - *어둡게*: 소스를 짙은 배경으로 사용할 수 있습니다.<br /><br /> - *System.windows.forms.systeminformation.highcontrast*: 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 소스를 고대비 모드의 어두운 배경에 사용할 수 있습니다.<br /><br /> **배경** 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> **배경이** *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. **배경이** 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
+|배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*: 소스를 밝은 배경에 사용할 수 있습니다.<br /><br /> - *어둡게*: 소스를 짙은 배경으로 사용할 수 있습니다.<br /><br /> - *System.windows.forms.systeminformation.highcontrast*: 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 소스를 고대비 모드의 어두운 배경에 사용할 수 있습니다.<br /><br /> **배경** 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> **배경이** *Light*, *어둡게*, *HighContrastLight* 또는 *HighContrastDark* 인 경우 소스의 색은 반전 되지 않습니다. **배경이** 생략 되거나 *system.windows.forms.systeminformation.highcontrast* 로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
 
  요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.
 
-|**Element**|**특성 (모두 필수)**|**정의**|
+|**요소**|**특성 (모두 필수)**|**정의**|
 |-|-|-|
 |\<Size>|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
 |\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
@@ -162,7 +164,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 
@@ -179,7 +181,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
  기본적으로이 도구는 Visual Studio 설치 디렉터리를 찾아 디렉터리 검색 목록에 해당 디렉터리를 추가 하려고 합니다. 도구에서 찾을 수 없는 디렉터리를 수동으로 추가할 수 있습니다.
 
- 모든 매니페스트가 로드 된 후에는 도구를 사용 하 여 이미지에 대 한 **배경색** , **DPI**, **고대비**또는 **grayscaling** 를 전환 하 여 다양 한 설정에 맞게 이미지 자산을 올바르게 렌더링 하는지 확인할 수 있습니다.
+ 모든 매니페스트가 로드 된 후에는 도구를 사용 하 여 이미지에 대 한 **배경색** , **DPI**, **고대비** 또는 **grayscaling** 를 전환 하 여 다양 한 설정에 맞게 이미지 자산을 올바르게 렌더링 하는지 확인할 수 있습니다.
 
  ![이미지 라이브러리 뷰어 배경](../../extensibility/internals/media/image-library-viewer-background.png "이미지 라이브러리 뷰어 배경")
 

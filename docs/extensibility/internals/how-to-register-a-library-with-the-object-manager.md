@@ -1,5 +1,7 @@
 ---
 title: '방법: 개체 관리자를 사용 하 여 라이브러리 등록 | Microsoft Docs'
+description: 클래스 뷰 및 개체 브라우저와 같은 검색 도구에서 기호를 볼 수 있도록 Visual Studio 개체 관리자를 사용 하 여 라이브러리를 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905232"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761387"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자를 사용 하 여 라이브러리 등록
 기호-검색 도구 (예: **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과**)를 사용 하 여 프로젝트 또는 외부 구성 요소에서 기호를 볼 수 있습니다. 기호에는 네임 스페이스, 클래스, 인터페이스, 메서드 및 기타 언어 요소가 포함 됩니다. 라이브러리는 이러한 기호를 추적 하 고 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 데이터로 채우는 개체 관리자에 게 노출 합니다.
@@ -164,7 +166,7 @@ ms.locfileid: "85905232"
 
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

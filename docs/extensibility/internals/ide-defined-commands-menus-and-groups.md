@@ -1,5 +1,7 @@
 ---
-title: IDE 정의 명령, 메뉴 및 그룹 | Microsoft Docs
+title: IDE-Defined 명령, 메뉴 및 그룹 | Microsoft Docs
+description: Visual Studio IDE (통합 개발 환경)에 정의 된 메뉴, 명령 및 명령 그룹에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707724"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761025"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 정의 명령, 메뉴 및 그룹
 대부분의 메뉴, 명령 및 명령 그룹은 IDE에서 사용할 수 있도록 이미 정의 되어 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이러한 명령은를 확장 하는 경우에도 사용할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>환경에서 정의 된 명령 찾기
+## <a name="finding-environment-defined-commands"></a>Environment-Defined 명령 찾기
  환경 명령은 다음과 같은 4 개의 vsct 파일 집합에 정의 되어 있습니다.
 
 - SharedCmdDef vsct
@@ -48,7 +50,7 @@ ms.locfileid: "80707724"
 
  Visual Studio IDE에서 정의한 명령의 GUID 및 ID 값을 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블(.Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [프로젝트 시스템 확장을 위한 IDE 정의 명령](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

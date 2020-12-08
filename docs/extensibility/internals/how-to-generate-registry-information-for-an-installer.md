@@ -1,5 +1,7 @@
 ---
 title: '방법: 설치 관리자에 대 한 레지스트리 정보 생성 | Microsoft Docs'
+description: Visual Studio의 RegPkg.exe 유틸리티를 사용 하 여 Windows installer 설치 패키지의 통합에 대 한 VSPackage 레지스트리 정보를 생성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905462"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761227"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보 생성
 
 *RegPkg.exe* 유틸리티를 사용 하 여 관리 되는 VSPackage 등록 매니페스트를 생성할 수 있습니다. 매니페스트를 Windows Installer 설치 패키지에 통합할 수 있습니다. 또한 RegPkg는 [WINDOWS INSTALLER XML 도구 집합](https://wixtoolset.org/)을 기반으로 설치 원본 파일에 포함 될 수 있는 파일을 생성할 수 있습니다.
 
 > [!IMPORTANT]
-> RegPkg는 개발 시스템과 관련 된 경로 이름을 생성 하므로 RegPkg를 사용할 때마다 적절 한 형식의 속성 Windows Installer 사용 하도록 출력을 편집 해야 합니다. 예를 들어 `InprocServer32` 값은 * \<SystemFolder\>mscoree.dll* 해야 하며 경로는 및를 사용 해야 합니다 *\<#filekey\>* *\<$componentkey\>* . 이러한 방식으로 출력을 조정 하면 다른 드라이브나 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로에 Windows가 설치 된 컴퓨터가 지원 됩니다. 자세한 내용은 Windows Installer SDK에서 [서식 지정](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 을 참조 하세요. 개발 시스템 경로 (예: *File_ \<filename\> *양식의 파일 id)에 대 한 RegPkg 규칙을 따르는 경우에는 변경 내용을 덜 만들어야 합니다.
+> RegPkg는 개발 시스템과 관련 된 경로 이름을 생성 하므로 RegPkg를 사용할 때마다 적절 한 형식의 속성 Windows Installer 사용 하도록 출력을 편집 해야 합니다. 예를 들어 `InprocServer32` 값은 *\<SystemFolder\>mscoree.dll* 해야 하며 경로는 및를 사용 해야 합니다 *\<#filekey\>* *\<$componentkey\>* . 이러한 방식으로 출력을 조정 하면 다른 드라이브나 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로에 Windows가 설치 된 컴퓨터가 지원 됩니다. 자세한 내용은 Windows Installer SDK에서 [서식 지정](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 을 참조 하세요. 개발 시스템 경로 (예: *File_ \<filename\>* 양식의 파일 id)에 대 한 RegPkg 규칙을 따르는 경우에는 변경 내용을 덜 만들어야 합니다.
 
 ## <a name="to-create-a-registration-manifest"></a>등록 매니페스트를 만들려면
 
@@ -181,7 +183,7 @@ ms.locfileid: "85905462"
     </Include>
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Vspackage 등록](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

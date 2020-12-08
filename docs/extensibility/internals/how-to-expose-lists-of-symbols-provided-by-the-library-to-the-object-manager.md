@@ -1,5 +1,7 @@
 ---
 title: 개체 관리자에 제공 되는 기호 목록 표시 | Microsoft Docs
+description: IVsSimpleObjectList2 인터페이스를 구현 하 여 Visual Studio의 개체 관리자에 기호 목록을 노출 하 고 기호 검색 도구를 업데이트 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708084"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761350"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출
-기호 검색 도구, **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과**는 새 데이터에 대 한 요청을 개체 관리자에 게 전달 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 개체 관리자는 적절 한 라이브러리를 찾고 새 기호 목록을 요청 합니다. 라이브러리는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인터페이스를 통해 개체 관리자에 게 요청 된 데이터를 제공 하 여 응답 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]개체 관리자는 인터페이스의 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 하 여 데이터를 가져오고이를 사용 하 여 기호 검색 도구의 뷰를 채우거 나 업데이트 합니다.
+기호 검색 도구, **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과** 는 새 데이터에 대 한 요청을 개체 관리자에 게 전달 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 개체 관리자는 적절 한 라이브러리를 찾고 새 기호 목록을 요청 합니다. 라이브러리는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인터페이스를 통해 개체 관리자에 게 요청 된 데이터를 제공 하 여 응답 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]개체 관리자는 인터페이스의 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 하 여 데이터를 가져오고이를 사용 하 여 기호 검색 도구의 뷰를 채우거 나 업데이트 합니다.
 
  도구가 호출 되거나 노드가 확장 되거나 뷰가 새로 고쳐질 때 라이브러리에서 데이터에 대 한 요청을 받을 수 있습니다. 기호 검색 도구를 처음 호출 하는 경우 개체 관리자는 라이브러리에 최상위 목록을 제공 하도록 요청 합니다. 사용자가 목록 노드를 확장 하면 해당 노드 아래의 자식 목록이 라이브러리에 제공 됩니다. 모든 개체 관리자 조회는 관심 있는 항목의 인덱스를 포함 합니다. 새 목록을 표시 하려면 개체 관리자는 목록에 있는 항목의 수, 항목의 형식, 이름, 접근성 및 기타 속성을 결정 해야 합니다.
 

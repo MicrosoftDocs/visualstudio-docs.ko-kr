@@ -1,5 +1,7 @@
 ---
 title: '방법: 중첩 프로젝트 구현 | Microsoft Docs'
+description: 솔루션 및 부모 프로젝트에서 이벤트를 발생 시켜 프로젝트 계층 구조를 빌드하여 Visual Studio에서 중첩 된 프로젝트를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905353"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761339"
 ---
 # <a name="how-to-implement-nested-projects"></a>방법: 중첩 프로젝트 구현
 
@@ -27,7 +29,7 @@ ms.locfileid: "85905353"
 1. IDE (통합 개발 환경)는 인터페이스를 호출 하 여 부모 프로젝트의 프로젝트 파일 및 시작 정보를 로드 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> . 부모 프로젝트가 만들어지고 솔루션에 추가 됩니다.
 
     > [!NOTE]
-    > 이 시점에서 부모 프로젝트가 생성 되어야 자식 프로젝트를 만들 수 있기 때문에 부모 프로젝트가 중첩 된 프로젝트를 만들 수 없습니다. 이 순서에 따라 부모 프로젝트가 자식 프로젝트에 설정을 적용할 수 있으며, 필요한 경우 자식 프로젝트가 부모 프로젝트에서 정보를 가져올 수 있습니다. 이 시퀀스는 SCC (소스 코드 제어) 및 **솔루션 탐색기**같은 클라이언트에서 필요 합니다.
+    > 이 시점에서 부모 프로젝트가 생성 되어야 자식 프로젝트를 만들 수 있기 때문에 부모 프로젝트가 중첩 된 프로젝트를 만들 수 없습니다. 이 순서에 따라 부모 프로젝트가 자식 프로젝트에 설정을 적용할 수 있으며, 필요한 경우 자식 프로젝트가 부모 프로젝트에서 정보를 가져올 수 있습니다. 이 시퀀스는 SCC (소스 코드 제어) 및 **솔루션 탐색기** 같은 클라이언트에서 필요 합니다.
 
      부모 프로젝트는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 해당 중첩 된 (자식) 프로젝트 또는 프로젝트를 만들기 전에 IDE에서 메서드를 호출할 때까지 기다려야 합니다.
 
@@ -84,7 +86,7 @@ ms.locfileid: "85905353"
 - [중첩 된 프로젝트에 대 한 명령 처리 구현](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [중첩 프로젝트에 대 한 AddItem 대화 상자 필터링](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)

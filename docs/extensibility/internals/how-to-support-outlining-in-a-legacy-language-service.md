@@ -1,5 +1,7 @@
 ---
 title: '방법: 레거시 언어 서비스에서 개요 지원 | Microsoft Docs'
+description: 레거시 언어 서비스에서 텍스트의 다른 영역에 대 한 개요, 확장 또는 축소에 대 한 지원을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707912"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761324"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 개요 지원
 개요는 텍스트의 여러 영역을 확장 하거나 축소 하는 데 사용 됩니다. 개요를 사용 하는 방법은 언어 마다 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.
@@ -45,6 +47,6 @@ ms.locfileid: "80707912"
 > [!NOTE]
 > 줄 바꿈 문자를 숨길 때는 주의 해야 합니다. 숨겨진 텍스트는 최종 줄 바꿈 문자를 표시 하는 첫 번째 줄의 첫 번째 줄부터 마지막 줄의 마지막 문자로 확장 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [방법: 레거시 언어 서비스에서 확장 된 개요 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

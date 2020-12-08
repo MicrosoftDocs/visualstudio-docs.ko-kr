@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 Service2 구현 | Microsoft Docs
+description: MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 확장 된 언어 서비스 기능을 지 원하는 레거시 언어 서비스를 구현 하는 방법에 대해 알아봅니다. 2 부.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238701"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761142"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>레거시 언어 서비스 구현 2
 MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 언어 서비스를 구현 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.LanguageService> 다음 추상 메서드 및 속성을 구현 해야 합니다.
@@ -32,12 +34,12 @@ MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 언어 서비�
 
   추가 기능을 지원 하기 위해 언어 서비스는 MPF 언어 서비스 클래스 중 하나에서 클래스를 파생 해야 할 수 있습니다. 예를 들어 추가 메뉴 명령을 지원 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.ViewFilter> 몇 가지 명령 처리 메서드를 재정의 해야 합니다 (자세한 내용은 참조 <xref:Microsoft.VisualStudio.Package.ViewFilter> ). <xref:Microsoft.VisualStudio.Package.LanguageService>클래스는 다양 한 클래스의 새 인스턴스를 만들기 위해 호출 되는 여러 메서드를 제공 하며, 적절 한 생성 메서드를 재정의 하 여 클래스의 인스턴스를 제공 합니다. 예를 들어 클래스의 메서드를 재정의 하 여 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> 고유한 클래스의 인스턴스를 반환 해야 <xref:Microsoft.VisualStudio.Package.ViewFilter> 합니다. 자세한 내용은 "사용자 지정 클래스 인스턴스화" 섹션을 참조 하세요.
 
-  언어 서비스는 다양 한 위치에서 사용 되는 고유한 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에는 해당 항목을 메서드, 클래스, 네임 스페이스, 속성 또는 해당 언어에 필요한 것으로 표시 하 여 해당 항목에 연결 된 아이콘이 있을 수 있습니다. 이러한 아이콘은 모든 IntelliSense 목록, **탐색 모음**및 **오류 목록** 작업 창에서 사용 됩니다. 자세한 내용은 아래의 "언어 서비스 이미지" 섹션을 참조 하세요.
+  언어 서비스는 다양 한 위치에서 사용 되는 고유한 아이콘을 제공할 수도 있습니다. 예를 들어 IntelliSense 완성 목록이 표시 되 면 목록의 각 항목에는 해당 항목을 메서드, 클래스, 네임 스페이스, 속성 또는 해당 언어에 필요한 것으로 표시 하 여 해당 항목에 연결 된 아이콘이 있을 수 있습니다. 이러한 아이콘은 모든 IntelliSense 목록, **탐색 모음** 및 **오류 목록** 작업 창에서 사용 됩니다. 자세한 내용은 아래의 "언어 서비스 이미지" 섹션을 참조 하세요.
 
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 메서드
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>메서드는 항상 클래스의 동일한 인스턴스를 반환 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . <xref:Microsoft.VisualStudio.Package.LanguagePreferences>언어 서비스에 대 한 추가 기본 설정이 필요 하지 않은 경우 기본 클래스를 사용할 수 있습니다. MPF 언어 서비스 클래스는 적어도 기본 클래스의 존재를 전제로 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 메서드의 일반적인 구현을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> . 이 예제에서는 기본 클래스를 사용 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 합니다.
 
 ```csharp
@@ -68,7 +70,7 @@ namespace TestLanguagePackage
 ## <a name="getscanner-method"></a>GetScanner 메서드
  이 메서드는 <xref:Microsoft.VisualStudio.Package.IScanner> 토큰 및 해당 형식 및 트리거를 가져오는 데 사용 되는 줄 기반 파서 또는 스캐너를 구현 하는 개체의 인스턴스를 반환 합니다. 이 스캐너는 <xref:Microsoft.VisualStudio.Package.Colorizer> 더 복잡 한 구문 분석 작업에 대 한 prelude으로 토큰 형식 및 트리거를 가져오기 위해 사용 될 수도 있지만, 색 지정을 위해 클래스에서 사용 됩니다. 인터페이스를 구현 하는 클래스를 제공 하 <xref:Microsoft.VisualStudio.Package.IScanner> 고 인터페이스의 모든 메서드를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 메서드의 일반적인 구현을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> . `TestScanner`클래스는 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스 (표시 되지 않음)를 구현 합니다.
 
 ```csharp
@@ -119,7 +121,7 @@ namespace TestLanguagePackage
 ## <a name="parsesource-method"></a>ParseSource 메서드
  여러 가지 원인에 따라 소스 파일을 구문 분석 합니다. 이 메서드에는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 특정 구문 분석 작업에서 예상 되는 항목을 설명 하는 개체가 제공 됩니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>메서드는 토큰 기능 및 범위를 결정 하는 더 복잡 한 파서를 호출 합니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>메서드는 중괄호 일치를 비롯 하 여 IntelliSense 작업을 지 원하는 데 사용 됩니다. 이러한 고급 작업을 지원 하지 않는 경우에도 유효한 개체를 반환 해야 하며이 경우 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 인터페이스를 구현 하는 클래스를 만들고 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 해당 인터페이스의 모든 메서드를 구현 해야 합니다. 모든 메서드에서 null 값을 반환할 수 있지만 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체 자체는 null 값이 아니어야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 최소한의 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> 고급 기능을 지원 하지 않고 언어 서비스를 컴파일 및 작동 시킬 수 있는 메서드 및 클래스의 최소 구현을 보여 줍니다.
 
 ```csharp
@@ -169,7 +171,7 @@ namespace TestLanguagePackage
 ## <a name="name-property"></a>Name 속성
  이 속성은 언어 서비스의 이름을 반환 합니다. 언어 서비스를 등록할 때 지정 된 이름과 같아야 합니다. 이 이름은 여러 위치에서 사용 되며, 가장 두드러진 것은 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 이름이 레지스트리에 액세스 하는 데 사용 되는 클래스입니다. 레지스트리 항목 및 키 이름에 대해 레지스트리에 사용 되므로이 속성에서 반환 된 이름은 지역화 되지 않아야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 속성의 가능한 한 가지 구현을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> . 여기에 표시 되는 이름은 하드 코드 되어 있습니다. 언어 서비스를 등록 하는 데 사용할 수 있도록 실제 이름을 리소스 파일에서 가져와야 합니다 ( [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)참조).
 
 ```csharp
@@ -193,11 +195,11 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>LanguageService 클래스
 
-|메서드|반환 된 클래스|설명|
+|방법|반환 된 클래스|설명|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|텍스트 보기에 대 한 사용자 지정 추가를 지원 하려면입니다.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|사용자 지정 문서 속성을 지원 하려면입니다.|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|**탐색 모음**을 지원 합니다.|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|**탐색 모음** 을 지원 합니다.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|코드 조각 템플릿에서 함수를 지원 하려면|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|코드 조각을 지원 하기 위해이 메서드는 일반적으로 재정의 되지 않습니다.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|구조체의 사용자 지정을 지원 하려면 <xref:Microsoft.VisualStudio.Package.ParseRequest> (일반적으로이 메서드는 재정의 되지 않음)|
@@ -210,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>원본 클래스
 
-|메서드|반환 된 클래스|설명|
+|방법|반환 된 클래스|설명|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|IntelliSense 완성 목록의 표시를 사용자 지정 하는 경우 (일반적으로이 메서드는 재정의 되지 않음)|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|오류 목록 작업 목록에 있는 지원 표식 특히 파일 열기 이상의 기능을 지원 하 고 오류를 일으킨 줄로 이동 합니다.|
@@ -220,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>의 기관 클래스
 
-|메서드|반환 된 클래스|설명|
+|방법|반환 된 클래스|설명|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|멤버 또는 형식과 같은 선언 목록을 제공 합니다. 이 메서드는 구현 되어야 하지만 null 값을 반환할 수 있습니다. 이 메서드가 유효한 개체를 반환 하는 경우 개체는 해당 버전의 클래스 인스턴스여야 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> .|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|지정 된 컨텍스트에 대 한 메서드 시그니처의 목록을 제공 합니다. 이 메서드는 구현 되어야 하지만 null 값을 반환할 수 있습니다. 이 메서드가 유효한 개체를 반환 하는 경우 개체는 해당 버전의 클래스 인스턴스여야 합니다 <xref:Microsoft.VisualStudio.Package.Methods> .|
@@ -232,7 +234,7 @@ namespace TestLanguagePackage
  IntelliSense 완성 목록의 경우 이미지 인덱스는 클래스의 메서드에서 각 항목에 대해 지정 되며 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> <xref:Microsoft.VisualStudio.Package.Declarations> , 이미지 인덱스를 제공 하려는 경우 재정의 해야 합니다. 메서드에서 반환 되는 값은 클래스 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> 생성자에 제공 되는 이미지 목록에 대 <xref:Microsoft.VisualStudio.Package.CompletionSet> 한 인덱스이 고, 클래스의 메서드에서 반환 되는 것과 동일한 이미지 목록입니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.CompletionSet> <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> . 클래스에서 메서드를 재정의 하 여 <xref:Microsoft.VisualStudio.Package.Source> 다른 이미지 목록을 제공 하는 경우에 사용할 이미지 목록을 변경할 수 있습니다.
 
 ### <a name="images-used-in-the-navigation-bar"></a>탐색 모음에 사용 되는 이미지
- **탐색 모음은** 형식 및 멤버 목록을 표시 하 고 빠른 탐색에 사용 되는 아이콘을 표시 합니다. 이러한 아이콘은 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 클래스의 메서드에서 가져오며 <xref:Microsoft.VisualStudio.Package.LanguageService> **탐색 모음**에 대해 구체적으로 재정의할 수 없습니다. 콤보 상자의 각 항목에 사용 되는 인덱스는 콤보 상자를 나타내는 목록이 클래스의 메서드에 채워질 때 지정 됩니다 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ( [레거시 언어 서비스의 탐색 모음에 대 한 지원](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)참조). 이러한 이미지 인덱스는 일반적으로 클래스의 버전을 통해 파서에서 가져옵니다 <xref:Microsoft.VisualStudio.Package.Declarations> . 인덱스를 가져오는 방법은 전적으로 사용자에 게 달려 있습니다.
+ **탐색 모음은** 형식 및 멤버 목록을 표시 하 고 빠른 탐색에 사용 되는 아이콘을 표시 합니다. 이러한 아이콘은 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> 클래스의 메서드에서 가져오며 <xref:Microsoft.VisualStudio.Package.LanguageService> **탐색 모음** 에 대해 구체적으로 재정의할 수 없습니다. 콤보 상자의 각 항목에 사용 되는 인덱스는 콤보 상자를 나타내는 목록이 클래스의 메서드에 채워질 때 지정 됩니다 <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ( [레거시 언어 서비스의 탐색 모음에 대 한 지원](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)참조). 이러한 이미지 인덱스는 일반적으로 클래스의 버전을 통해 파서에서 가져옵니다 <xref:Microsoft.VisualStudio.Package.Declarations> . 인덱스를 가져오는 방법은 전적으로 사용자에 게 달려 있습니다.
 
 ### <a name="images-used-in-the-error-list-task-window"></a>오류 목록 작업 창에서 사용 되는 이미지
  <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>메서드 파서 ( [레거시 언어 서비스 파서 및 스캐너](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)참조)가 오류를 발견 하 고 해당 오류를 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> 클래스의 메서드에 전달할 때마다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> **오류 목록** 작업 창에 오류가 보고 됩니다. 작업 창에 표시 되는 각 항목과 아이콘을 연결할 수 있으며, 해당 아이콘은 클래스의 메서드에서 반환 된 것과 동일한 이미지 목록에서 제공 됩니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> . MPF 클래스의 기본 동작은 오류 메시지와 함께 이미지를 표시 하지 않는 것입니다. 그러나 클래스에서 클래스를 파생 <xref:Microsoft.VisualStudio.Package.Source> 시키고 메서드를 재정의 하 여이 동작을 재정의할 수 있습니다 <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> . 이 메서드에서는 새 개체를 만듭니다 <xref:Microsoft.VisualStudio.Package.DocumentTask> . 개체를 반환 하기 전에 개체의 속성을 사용 <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> 하 여 <xref:Microsoft.VisualStudio.Package.DocumentTask> 이미지 인덱스를 설정할 수 있습니다. 이는 다음 예제와 같습니다. 는 `TestIconImageIndex` 모든 아이콘을 나열 하 고이 예제와 관련 된 열거형입니다. 언어 서비스에서 아이콘을 식별 하는 다른 방법을 사용할 수 있습니다.
@@ -358,7 +360,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

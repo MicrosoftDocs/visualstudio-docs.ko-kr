@@ -1,5 +1,7 @@
 ---
 title: 이미지 서비스 도구 | Microsoft Docs
+description: Visual studio 이미지 서비스를 사용 하 여 확장을 빌드하는 데 도움이 되는 Visual Studio SDK에 제공 되는 도구에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f5f1ff7cd573ff2524d35afc268858855540526
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9988b32d693fe9d65d70543a0f3d1da9a69959db
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707702"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761129"
 ---
 # <a name="image-service-tools"></a>이미지 서비스 도구
 VS SDK에는 확장 빌더에서 Visual Studio 이미지 서비스를 사용 하는 데 도움이 되는 여러 도구가 포함 되어 있습니다.

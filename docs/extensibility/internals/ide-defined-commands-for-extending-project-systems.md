@@ -1,5 +1,7 @@
 ---
-title: 프로젝트 시스템 확장을 위한 IDE 정의 명령 | Microsoft Docs
+title: 프로젝트 시스템 확장에 대 한 IDE-Defined 명령 | Microsoft Docs
+description: 프로젝트 시스템을 확장 하는 데 사용 되는 Visual Studio IDE (통합 개발 환경)에 정의 된 명령 및 명령 그룹에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707727"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761168"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>프로젝트 시스템 확장을 위한 IDE 정의 명령
 프로젝트 시스템을 확장 하려는 경우 IDE에서 제공 하는 명령 및 명령 그룹을 사용할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -32,7 +34,7 @@ ms.locfileid: "80707727"
 |IDM_VS_TOOL_PROJWIN|**솔루션 탐색기** 도구 모음입니다.|
 
 ## <a name="shortcut-menus"></a>바로 가기 메뉴
- 다음 표에서는 **솔루션 탐색기**에서 단일 노드를 선택 하거나 선택 **솔루션 탐색기**된 모든 노드가 같은 유형인 경우에 적용 되는 바로 가기 메뉴를 보여 줍니다.
+ 다음 표에서는 **솔루션 탐색기** 에서 단일 노드를 선택 하거나 선택 **솔루션 탐색기** 된 모든 노드가 같은 유형인 경우에 적용 되는 바로 가기 메뉴를 보여 줍니다.
 
 |바로 가기 메뉴|설명|
 |-------------------|-----------------|
@@ -69,7 +71,7 @@ ms.locfileid: "80707727"
 |IDG_VS_CTXT_PROJECT_TRANSFER|잘라내기, 복사 및 붙여넣기 작업을 위한 명령입니다.|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|**프로젝트 속성** 대화 상자에 대 한 액세스를 제공 하는 명령입니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [다시 사용할 수 있는 단추 그룹 만들기](../../extensibility/creating-reusable-groups-of-buttons.md)

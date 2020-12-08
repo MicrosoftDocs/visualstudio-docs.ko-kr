@@ -1,5 +1,7 @@
 ---
 title: 언어 서비스에서 개요 지원 제공 | Microsoft Docs
+description: 편집기에서 제어 하는 개요 영역 및 클라이언트 제어 개요 영역을 추가 하 여 레거시 언어 서비스에서 확장 된 개요 지원을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905283"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761363"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 확장 된 개요 지원 제공
 **정의로 축소** 명령을 지 원하는 것 이상으로 언어에 대 한 개요 지원을 확장 하는 두 가지 옵션이 있습니다. 편집기에서 제어 하는 개요 영역을 추가 하 고 클라이언트 제어 개요 영역을 추가할 수 있습니다.

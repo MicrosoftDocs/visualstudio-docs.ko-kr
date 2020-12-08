@@ -1,5 +1,7 @@
 ---
 title: '방법: 라이브러리에서 기호 식별 | Microsoft Docs'
+description: 기호 라이브러리에서 Visual Studio 개체 관리자로 탐색 정보를 전달 하는 메서드를 구현 하 여 라이브러리에서 기호를 식별 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd091f003909110c696c2e42ad80d6c6ea4859d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b1dab9dc6bee4ed987141057194d8b00ff35f99
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905399"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761383"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리에서 기호 식별
 기호 검색 도구는 기호의 계층 뷰를 표시 합니다. 기호는 네임 스페이스, 개체, 클래스, 클래스 멤버 및 기타 언어 요소를 나타냅니다.
@@ -79,7 +81,7 @@ N1
 
      개체 관리자는이 메서드를 호출 하 여 기호의 프레젠테이션 경로에 포함 된 노드의 목록을 가져옵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [방법: 개체 관리자를 사용 하 여 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

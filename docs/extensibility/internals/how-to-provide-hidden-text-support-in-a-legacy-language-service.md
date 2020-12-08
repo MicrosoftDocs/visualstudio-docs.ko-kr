@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공
+description: 편집기에서 제어 하거나 클라이언트에서 제어 하는 숨겨진 텍스트 영역을 추가 하 여 레거시 언어 서비스에서 숨겨진 텍스트 지원을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707922"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761311"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공
 개요 영역 외에도 숨겨진 텍스트 영역을 만들 수 있습니다. 숨겨진 텍스트 영역은 클라이언트 제어 또는 편집기에서 제어 될 수 있으며 텍스트 영역을 완전히 숨기는 데 사용 됩니다. 편집기는 숨겨진 영역을 가로 선으로 표시 합니다. 이에 대 한 예는 HTML 편집기의 **스크립트 전용** 뷰입니다.
