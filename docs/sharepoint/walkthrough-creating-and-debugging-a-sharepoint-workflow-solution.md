@@ -1,5 +1,7 @@
 ---
 title: SharePoint 워크플로 솔루션 만들기 & 디버그
+description: 이 연습에서는 SharePoint 워크플로 솔루션을 만들고 디버그 합니다. 기본 순차 워크플로 템플릿을 만듭니다. 워크플로 활동을 만들고 이벤트를 처리 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014621"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915312"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>연습: SharePoint 워크플로 솔루션 만들기 및 디버깅
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>연습: SharePoint 워크플로 솔루션 만들기 및 디버그
   이 연습에서는 기본 순차 워크플로 템플릿을 만드는 방법을 보여 줍니다. 워크플로는 공유 문서 라이브러리의 속성을 검사 하 여 문서가 검토 되었는지 여부를 확인 합니다. 문서가 검토 되 면 워크플로가 완료 됩니다.
 
  이 연습에서는 다음 작업을 수행합니다.
@@ -53,11 +55,11 @@ ms.locfileid: "86014621"
 
 1. 웹 브라우저에서 SharePoint 사이트 (예: http:///SitePages/Home.aspx)를 엽니다 \<system name> .
 
-2. 빠른 실행 모음에서 **Shareddocuments**를 선택 합니다.
+2. 빠른 실행 모음에서 **Shareddocuments** 를 선택 합니다.
 
 3. **라이브러리 도구** 리본에서 **라이브러리** 를 선택한 다음 리본에서 **열 만들기** 단추를 선택 하 여 새 열을 만듭니다.
 
-4. 열 **문서 상태**이름을 지정 하 고, 해당 유형을 **선택 (선택할 메뉴)** 으로 설정 하 고, 다음 세 가지 옵션을 지정한 후 **확인** 단추를 선택 합니다.
+4. 열 **문서 상태** 이름을 지정 하 고, 해당 유형을 **선택 (선택할 메뉴)** 으로 설정 하 고, 다음 세 가지 옵션을 지정한 후 **확인** 단추를 선택 합니다.
 
     - **검토 필요**
 
@@ -65,7 +67,7 @@ ms.locfileid: "86014621"
 
     - **변경 요청 됨**
 
-5. 열을 두 개 더 만들고 이름을 **담당자** 로, **의견을 검토**합니다. 담당자 열 형식을 텍스트 한 줄로 설정 하 고 검토 설명 열을 여러 줄의 텍스트로 설정 합니다.
+5. 열을 두 개 더 만들고 이름을 **담당자** 로, **의견을 검토** 합니다. 담당자 열 형식을 텍스트 한 줄로 설정 하 고 검토 설명 열을 여러 줄의 텍스트로 설정 합니다.
 
 ## <a name="enable-documents-to-be-edited-without-requiring-a-check-out"></a>체크 아웃을 요구 하지 않고 문서를 편집할 수 있도록 설정
  체크 아웃 하지 않고도 문서를 편집할 수 있는 경우 워크플로 템플릿을 테스트 하는 것이 더 쉽습니다. 다음 절차에서는이를 사용 하도록 SharePoint 사이트를 구성 합니다.
@@ -78,7 +80,7 @@ ms.locfileid: "86014621"
 
 3. **일반 설정** 섹션 **에서 버전 관리 설정 링크를** 선택 하 여 **버전 관리 설정** 페이지를 표시 합니다.
 
-4. **문서를 편집 하기 전에 체크 아웃 해야 하** 는 설정이 **아니요**인지 확인 합니다. 그렇지 않으면 **아니요** 로 변경한 다음 **확인** 단추를 선택 합니다.
+4. **문서를 편집 하기 전에 체크 아웃 해야 하** 는 설정이 **아니요** 인지 확인 합니다. 그렇지 않으면 **아니요** 로 변경한 다음 **확인** 단추를 선택 합니다.
 
 5. 브라우저를 닫습니다.
 
@@ -91,7 +93,7 @@ ms.locfileid: "86014621"
 
 2. 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-3. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+3. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 4. **템플릿** 창에서 **SharePoint 2010 프로젝트** 템플릿을 선택 합니다.
 
@@ -103,15 +105,15 @@ ms.locfileid: "86014621"
 
      이 단계에서는 솔루션에 대 한 신뢰 수준을 팜 솔루션으로 설정 합니다 .이 옵션은 워크플로 프로젝트에만 사용할 수 있습니다. 자세한 내용은 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)을 참조 하세요.
 
-7. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+7. **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
-8. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+8. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 9. **템플릿** 창에서 **순차 워크플로 (팜 솔루션에만 해당)** 템플릿을 선택한 다음 **추가** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다.
 
-10. **디버그할 워크플로 이름 지정** 페이지에서 기본 이름 (**MySharePointWorkflow-workflow1.vb**)을 적용 합니다. 기본 워크플로 템플릿 유형 값을 유지 하 고 **워크플로를 나열**한 후 **다음** 단추를 선택 합니다.
+10. **디버그할 워크플로 이름 지정** 페이지에서 기본 이름 (**MySharePointWorkflow-workflow1.vb**)을 적용 합니다. 기본 워크플로 템플릿 유형 값을 유지 하 고 **워크플로를 나열** 한 후 **다음** 단추를 선택 합니다.
 
 11. **Visual Studio에서 디버그 세션에서 워크플로를 자동으로 연결** 하 시겠습니까? 페이지에서 **다음** 단추를 선택 하 여 모든 기본 설정을 적용 합니다.
 
@@ -126,7 +128,7 @@ ms.locfileid: "86014621"
 
 #### <a name="to-create-workflow-activities"></a>워크플로 활동을 만들려면
 
-1. 워크플로가 workflow designer에 표시 되어야 합니다. 그렇지 않으면 **솔루션 탐색기**에서 **Workflow1.cs** 또는 **workflow1.vb** 를 엽니다.
+1. 워크플로가 workflow designer에 표시 되어야 합니다. 그렇지 않으면 **솔루션 탐색기** 에서 **Workflow1.cs** 또는 **workflow1.vb** 를 엽니다.
 
 2. 디자이너에서 **OnWorkflowActivated1** 활동을 선택 합니다.
 
@@ -136,9 +138,9 @@ ms.locfileid: "86014621"
 
 4. Workflow designer로 다시 전환 하 고 도구 상자를 연 다음 **Windows workflow v 3.0** 노드를 확장 합니다.
 
-5. **도구 상자**의 **Windows Workflow v 3.0** 노드에서 다음 단계 중 하나를 수행 합니다.
+5. **도구 상자** 의 **Windows Workflow v 3.0** 노드에서 다음 단계 중 하나를 수행 합니다.
 
-    1. **While** 활동에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 합니다. Workflow designer에서 **onWorkflowActivated1** 활동 아래의 줄에 대 한 바로 가기 메뉴를 열고 **붙여넣기**를 선택 합니다.
+    1. **While** 활동에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 합니다. Workflow designer에서 **onWorkflowActivated1** 활동 아래의 줄에 대 한 바로 가기 메뉴를 열고 **붙여넣기** 를 선택 합니다.
 
     2. **While** 활동을 **도구 상자** 에서 워크플로 디자이너로 끌고 활동을 **onWorkflowActivated1** 활동 아래의 줄에 연결 합니다.
 
@@ -152,9 +154,9 @@ ms.locfileid: "86014621"
 
 9. 워크플로 디자이너로 다시 전환 하 고 도구 상자를 연 다음 **SharePoint 워크플로** 노드를 확장 합니다.
 
-10. **도구 상자**의 **SharePoint 워크플로** 노드에서 다음 단계 중 하나를 수행 합니다.
+10. **도구 상자** 의 **SharePoint 워크플로** 노드에서 다음 단계 중 하나를 수행 합니다.
 
-    - **Onworkflowitemchanged** 활동에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 합니다. Workflow designer에서 **whileActivity1** 활동 내부의 줄에 대 한 바로 가기 메뉴를 열고 **붙여넣기**를 선택 합니다.
+    - **Onworkflowitemchanged** 활동에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 합니다. Workflow designer에서 **whileActivity1** 활동 내부의 줄에 대 한 바로 가기 메뉴를 열고 **붙여넣기** 를 선택 합니다.
 
     - **도구 상자** 에서 워크플로 디자이너로 **Onworkflowitemchanged** 활동을 끌어 **whileActivity1** 활동 내부의 줄에 활동을 연결 합니다.
 
@@ -172,7 +174,7 @@ ms.locfileid: "86014621"
 
 #### <a name="to-handle-activity-events"></a>활동 이벤트를 처리 하려면
 
-1. *Workflow1.cs* 또는 *workflow1.vb*에서 다음 필드를 클래스의 맨 위에 추가 합니다. `Workflow1` 이 필드는 워크플로가 완료 되었는지 여부를 확인 하기 위해 작업에 사용 됩니다.
+1. *Workflow1.cs* 또는 *workflow1.vb* 에서 다음 필드를 클래스의 맨 위에 추가 합니다. `Workflow1` 이 필드는 워크플로가 완료 되었는지 여부를 확인 하기 위해 작업에 사용 됩니다.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +184,7 @@ ms.locfileid: "86014621"
     Boolean workflowPending = true;
     ```
 
-2. `Workflow1` 클래스에 다음 메서드를 추가합니다. 이 메서드는 문서 목록의 속성 값을 확인 `Document Status` 하 여 문서를 검토 했는지 여부를 확인 합니다. `Document Status`속성이로 설정 된 경우 `Review Complete` 메서드는 워크플로를 `checkStatus` `workflowPending` 완료할 준비가 되었음을 나타내기 위해 필드를 **false** 로 설정 합니다.
+2. 다음 메서드를 `Workflow1` 클래스에 추가합니다. 이 메서드는 문서 목록의 속성 값을 확인 `Document Status` 하 여 문서를 검토 했는지 여부를 확인 합니다. `Document Status`속성이로 설정 된 경우 `Review Complete` 메서드는 워크플로를 `checkStatus` `workflowPending` 완료할 준비가 되었음을 나타내기 위해 필드를 **false** 로 설정 합니다.
 
     ```vb
     Private Sub checkStatus()
@@ -200,7 +202,7 @@ ms.locfileid: "86014621"
     }
     ```
 
-3. 및 메서드에 다음 코드를 추가 `onWorkflowActivated` `onWorkflowItemChanged` 하 여 메서드를 호출 `checkStatus` 합니다. 워크플로가 시작 되 면 메서드는 `onWorkflowActivated` 메서드를 호출 `checkStatus` 하 여 문서가 이미 검토 되었는지 여부를 확인 합니다. 검토 되지 않은 경우 워크플로는 계속 됩니다. 문서를 저장 하면 `onWorkflowItemChanged` 메서드는 메서드를 다시 호출 `checkStatus` 하 여 문서가 검토 되었는지 여부를 확인 합니다. 필드를 `workflowPending` **true**로 설정 하는 동안 워크플로는 계속 실행 됩니다.
+3. 및 메서드에 다음 코드를 추가 `onWorkflowActivated` `onWorkflowItemChanged` 하 여 메서드를 호출 `checkStatus` 합니다. 워크플로가 시작 되 면 메서드는 `onWorkflowActivated` 메서드를 호출 `checkStatus` 하 여 문서가 이미 검토 되었는지 여부를 확인 합니다. 검토 되지 않은 경우 워크플로는 계속 됩니다. 문서를 저장 하면 `onWorkflowItemChanged` 메서드는 메서드를 다시 호출 `checkStatus` 하 여 문서가 검토 되었는지 여부를 확인 합니다. 필드를 `workflowPending` **true** 로 설정 하는 동안 워크플로는 계속 실행 됩니다.
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +228,7 @@ ms.locfileid: "86014621"
     }
     ```
 
-4. 메서드에 다음 코드를 추가 `isWorkflowPending` 하 여 속성의 상태를 확인 `workflowPending` 합니다. 문서가 저장 될 때마다 **whileActivity1** 작업은 메서드를 호출 합니다 `isWorkflowPending` . 이 메서드는 <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> 개체의 속성을 검사 <xref:System.Workflow.Activities.ConditionalEventArgs> 하 여 **WhileActivity1** 활동의 지속 여부를 결정 합니다. 속성이 **true**로 설정 된 경우 활동은 계속 됩니다. 그렇지 않으면 작업이 완료 되 고 워크플로가 완료 됩니다.
+4. 메서드에 다음 코드를 추가 `isWorkflowPending` 하 여 속성의 상태를 확인 `workflowPending` 합니다. 문서가 저장 될 때마다 **whileActivity1** 작업은 메서드를 호출 합니다 `isWorkflowPending` . 이 메서드는 <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> 개체의 속성을 검사 <xref:System.Workflow.Activities.ConditionalEventArgs> 하 여 **WhileActivity1** 활동의 지속 여부를 결정 합니다. 속성이 **true** 로 설정 된 경우 활동은 계속 됩니다. 그렇지 않으면 작업이 완료 되 고 워크플로가 완료 됩니다.
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)
@@ -248,7 +250,7 @@ ms.locfileid: "86014621"
 
 #### <a name="to-test-the-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿을 테스트 하려면
 
-1. *Workflow1.cs* 또는 *Workflow1.vb*에서 **onworkflowactivated** 된 메서드 옆에 중단점을 설정 합니다.
+1. *Workflow1.cs* 또는 *Workflow1.vb* 에서 **onworkflowactivated** 된 메서드 옆에 중단점을 설정 합니다.
 
 2. **F5** 키를 선택 하 여 솔루션을 빌드하고 실행 합니다.
 
@@ -270,15 +272,15 @@ ms.locfileid: "86014621"
 
      그러면 기본 SharePoint 웹 사이트의 **공유 문서** 페이지로 돌아갑니다.
 
-9. **공유 문서** 페이지에서 **MySharePointWorkflow-workflow1.vb** 열 아래의 값이 **진행**중으로 설정 되어 있는지 확인 합니다. 이는 워크플로가 진행 중이 고 문서 검토가 대기 중임을 나타냅니다.
+9. **공유 문서** 페이지에서 **MySharePointWorkflow-workflow1.vb** 열 아래의 값이 **진행** 중으로 설정 되어 있는지 확인 합니다. 이는 워크플로가 진행 중이 고 문서 검토가 대기 중임을 나타냅니다.
 
 10. **공유 문서** 페이지에서 문서를 선택 하 고 나타나는 화살표를 선택한 다음 **속성 편집** 메뉴 항목을 선택 합니다.
 
-11. **문서 상태** 를 **검토 완료**로 설정 하 고 **저장** 단추를 선택 합니다.
+11. **문서 상태** 를 **검토 완료** 로 설정 하 고 **저장** 단추를 선택 합니다.
 
      그러면 기본 SharePoint 웹 사이트의 **공유 문서** 페이지로 돌아갑니다.
 
-12. **공유 문서** 페이지에서 **문서 상태** 열 아래의 값이 **검토 완료**로 설정 되었는지 확인 합니다. **공유 문서** 페이지를 새로 고치고 **MySharePointWorkflow-workflow1.vb** 열 아래의 값이 **Completed**로 설정 되었는지 확인 합니다. 이는 워크플로가 완료 되 고 문서가 검토 되었음을 나타냅니다.
+12. **공유 문서** 페이지에서 **문서 상태** 열 아래의 값이 **검토 완료** 로 설정 되었는지 확인 합니다. **공유 문서** 페이지를 새로 고치고 **MySharePointWorkflow-workflow1.vb** 열 아래의 값이 **Completed** 로 설정 되었는지 확인 합니다. 이는 워크플로가 완료 되 고 문서가 검토 되었음을 나타냅니다.
 
 ## <a name="next-steps"></a>다음 단계
  다음 항목에서 워크플로 템플릿을 만드는 방법에 대해 자세히 알아볼 수 있습니다.
@@ -287,7 +289,7 @@ ms.locfileid: "86014621"
 
 - Windows Workflow Foundation 작업에 대 한 자세한 내용은 [system.web. 작업 네임 스페이스](/dotnet/api/system.windows.media.color)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

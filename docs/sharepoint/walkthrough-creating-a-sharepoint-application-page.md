@@ -1,5 +1,7 @@
 ---
 title: '연습: SharePoint 응용 프로그램 페이지 만들기 | Microsoft Docs'
+description: 이 연습에서는 응용 프로그램 페이지 (특수 한 형식의 ASP.NET 페이지)를 만든 다음 로컬 SharePoint 사이트를 사용 하 여 디버그 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016493"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914883"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>연습: SharePoint 응용 프로그램 페이지 만들기
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>연습: SharePoint 애플리케이션 페이지 만들기
 
 응용 프로그램 페이지는 ASP.NET 페이지의 특수 한 형태입니다. 응용 프로그램 페이지에는 SharePoint 마스터 페이지와 병합 된 콘텐츠가 포함 되어 있습니다. 자세한 내용은 [SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)를 참조 하세요.
 
@@ -43,13 +45,13 @@ ms.locfileid: "86016493"
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint 프로젝트 만들기
 
-먼저 **빈 SharePoint 프로젝트**를 만듭니다. 나중에이 프로젝트에 **응용 프로그램 페이지** 항목을 추가 합니다.
+먼저 **빈 SharePoint 프로젝트** 를 만듭니다. 나중에이 프로젝트에 **응용 프로그램 페이지** 항목을 추가 합니다.
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
 2. **새 프로젝트** 대화 상자를 열고 사용 하려는 언어 아래의 **Office/SharePoint** 노드를 확장 한 다음 **SharePoint 솔루션** 노드를 선택 합니다.
 
-3. **Visual Studio에 설치 된 템플릿** 창에서 **SharePoint 2010-빈 프로젝트** 템플릿을 선택 합니다. 프로젝트 이름을 **MySharePointProject**로 지정한 다음 **확인** 단추를 선택 합니다.
+3. **Visual Studio에 설치 된 템플릿** 창에서 **SharePoint 2010-빈 프로젝트** 템플릿을 선택 합니다. 프로젝트 이름을 **MySharePointProject** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다. 이 마법사를 사용 하 여 프로젝트를 디버깅 하는 데 사용할 사이트와 솔루션의 신뢰 수준을 선택할 수 있습니다.
 
@@ -59,13 +61,13 @@ ms.locfileid: "86016493"
 
 응용 프로그램 페이지를 만들려면 프로젝트에 **응용 프로그램 페이지** 항목을 추가 합니다.
 
-1. **솔루션 탐색기**에서 **MySharePointProject** 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 **MySharePointProject** 프로젝트를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 3. **새 항목 추가** 대화 상자에서 **응용 프로그램 페이지 (팜 솔루션 전용 템플릿)** 를 선택 합니다.
 
-4. 페이지의 이름을 **Searchitems**로 지정한 다음 **추가** 단추를 선택 합니다.
+4. 페이지의 이름을 **Searchitems** 로 지정한 다음 **추가** 단추를 선택 합니다.
 
      Visual Web Developer designer는 페이지의 HTML 요소를 볼 수 있는 **소스** 뷰에 응용 프로그램 페이지를 표시 합니다. 디자이너에 여러 컨트롤의 태그가 표시 됩니다 <xref:System.Web.UI.WebControls.Content> . 각 컨트롤은 <xref:System.Web.UI.WebControls.ContentPlaceHolder> 기본 응용 프로그램 마스터 페이지에 정의 된 컨트롤에 매핑됩니다.
 
@@ -73,17 +75,17 @@ ms.locfileid: "86016493"
 
 응용 프로그램 페이지 항목을 사용 하면 디자이너를 사용 하 여 응용 프로그램 페이지에 ASP.NET 컨트롤을 추가할 수 있습니다. 이 디자이너는 Visual Web Developer에서 사용 되는 것과 같은 디자이너입니다. 디자이너의 **소스** 뷰에 레이블, 라디오 단추 목록 및 테이블을 추가한 다음 표준 ASP.NET 페이지를 디자인할 때와 동일한 방법으로 속성을 설정 합니다.
 
-1. 메뉴 모음에서 **View**  >  **도구 상자**보기를 선택 합니다.
+1. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
 
-2. **도구 상자**의 표준 노드에서 다음 단계 중 하나를 수행 합니다.
+2. **도구 상자** 의 표준 노드에서 다음 단계 중 하나를 수행 합니다.
 
-    - **레이블** 항목에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 하 고 디자이너의 **PlaceHolderMain** content 컨트롤 아래에 있는 줄의 바로 가기 메뉴를 연 다음 **붙여넣기**를 선택 합니다.
+    - **레이블** 항목에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 디자이너의 **PlaceHolderMain** content 컨트롤 아래에 있는 줄의 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
     - **레이블** 항목을 **도구 상자** 에서 **PlaceHolderMain** 콘텐츠 컨트롤의 본문으로 끌어 놓습니다.
 
 3. 이전 단계를 반복 하 여 **DropDownList** 항목 및 **테이블** 항목을 **PlaceHolderMain** 콘텐츠 컨트롤에 추가 합니다.
 
-4. 디자이너에서 `Text` label 컨트롤의 특성 값을 변경 하 여 **모든 항목을 표시**합니다.
+4. 디자이너에서 `Text` label 컨트롤의 특성 값을 변경 하 여 **모든 항목을 표시** 합니다.
 
 5. 디자이너에서 `<asp:DropDownList>` 요소를 다음 XML로 바꿉니다.
 
@@ -99,11 +101,11 @@ ms.locfileid: "86016493"
 
 ASP.NET 페이지와 마찬가지로 응용 프로그램 페이지에서 컨트롤을 처리 합니다. 이 절차에서는 `SelectedIndexChanged` 드롭다운 목록의 이벤트를 처리 합니다.
 
-1. **보기** 메뉴에서 **코드**를 선택 합니다.
+1. **보기** 메뉴에서 **코드** 를 선택 합니다.
 
      응용 프로그램 페이지 코드 파일이 코드 편집기에서 열립니다.
 
-2. `SearchItems` 클래스에 다음 메서드를 추가합니다. 이 코드는 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList> 이 연습의 뒷부분에서 만들 메서드를 호출 하 여의 이벤트를 처리 합니다.
+2. 다음 메서드를 `SearchItems` 클래스에 추가합니다. 이 코드는 <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> <xref:System.Web.UI.WebControls.DropDownList> 이 연습의 뒷부분에서 만들 메서드를 호출 하 여의 이벤트를 처리 합니다.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +115,12 @@ ASP.NET 페이지와 마찬가지로 응용 프로그램 페이지에서 컨트�
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. `SearchItems` 클래스에 다음 메서드를 추가합니다. 이 메서드는 서버 팜의 모든 사이트를 반복 하 고 현재 사용자가 만들거나 수정한 항목을 검색 합니다.
+4. 다음 메서드를 `SearchItems` 클래스에 추가합니다. 이 메서드는 서버 팜의 모든 사이트를 반복 하 고 현재 사용자가 만들거나 수정한 항목을 검색 합니다.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. `SearchItems` 클래스에 다음 메서드를 추가합니다. 이 메서드는 현재 사용자가 테이블에서 만들었거나 수정한 항목을 표시 합니다.
+5. 다음 메서드를 `SearchItems` 클래스에 추가합니다. 이 메서드는 현재 사용자가 테이블에서 만들었거나 수정한 항목을 표시 합니다.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -127,7 +129,7 @@ ASP.NET 페이지와 마찬가지로 응용 프로그램 페이지에서 컨트�
 
 프로젝트를 실행 하면 SharePoint 사이트가 열리고 응용 프로그램 페이지가 나타납니다.
 
-1. **솔루션 탐색기**에서 응용 프로그램 페이지에 대 한 바로 가기 메뉴를 열고 **시작 항목으로 설정**을 선택 합니다.
+1. **솔루션 탐색기** 에서 응용 프로그램 페이지에 대 한 바로 가기 메뉴를 열고 **시작 항목으로 설정** 을 선택 합니다.
 
 2. **F5** 키를 선택합니다.
 
@@ -151,7 +153,7 @@ SharePoint 응용 프로그램 페이지에 대 한 자세한 내용은 [sharepo
 
 - [웹 파트 또는 응용 프로그램 페이지에 다시 사용할 수 있는 컨트롤을 만듭니다](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [방법: 응용 프로그램 페이지 만들기](../sharepoint/how-to-create-an-application-page.md) 
  [응용 프로그램 _Layouts 페이지 유형](/previous-versions/office/aa979604(v=office.14))

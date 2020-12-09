@@ -1,5 +1,7 @@
 ---
 title: 조사식 창 식 계산 | Microsoft Docs
+description: Visual Studio가 디버그 엔진을 호출 하 여 실행이 일시 중지 될 때 조사식 목록에서 각 식의 현재 값을 확인 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738843"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915650"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>조사식 창 식 계산
 > [!IMPORTANT]
@@ -55,5 +57,5 @@ ms.locfileid: "80738843"
 ## <a name="related-sections"></a>관련 단원
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) 디버그 엔진 (DE)에서 식 계산기 (EE)를 호출할 때 전달 되는 인수를 제공 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

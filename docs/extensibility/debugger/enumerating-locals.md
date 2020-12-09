@@ -1,5 +1,7 @@
 ---
 title: 지역 열거 | Microsoft Docs
+description: 'Visual Studio에서 IDebugProperty2:: EnumChildren을 사용 하 여 지역 창을 채우는 방법에 대 한 자세한 내용을 알아봅니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738863"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915689"
 ---
 # <a name="enumerate-locals"></a>지역 열거
 > [!IMPORTANT]
@@ -245,7 +247,7 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [GetMethodProperty 구현](../../extensibility/debugger/implementing-getmethodproperty.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

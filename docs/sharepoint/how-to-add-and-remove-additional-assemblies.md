@@ -1,5 +1,7 @@
 ---
 title: '방법: 추가 어셈블리 추가 및 제거 | Microsoft Docs'
+description: SharePoint 솔루션 패키지에서 추가 어셈블리를 추가 하 고 제거 하는 방법을 알아봅니다. 또한 안전 컨트롤 및 클래스 리소스를 추가 하거나 삭제 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014832"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914974"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>방법: 추가 어셈블리 추가 및 제거
   SharePoint 패키지가 기능 또는 데이터의 다른 어셈블리에 종속 된 경우 솔루션 패키지 (.wsp)에 어셈블리를 추가할 수 있습니다. 이러한 방식으로 SharePoint 서버는 사용자 지정 어셈블리가 패키지와 함께 설치 되도록 합니다.
@@ -31,7 +33,7 @@ ms.locfileid: "86014832"
 
 #### <a name="to-add-an-existing-assembly"></a>기존 어셈블리를 추가 하려면
 
-1. **패키지 디자이너**를 엽니다. 자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)을 참조 하세요.
+1. **패키지 디자이너** 를 엽니다. 자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)을 참조 하세요.
 
 2. **고급** 탭을 선택 합니다.
 
@@ -41,11 +43,11 @@ ms.locfileid: "86014832"
 
 4. 줄임표 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 선택한 다음 추가 하려는 어셈블리를 선택 합니다. 이식성을 위해 선택한 어셈블리에 대 한 상대 경로를 사용 하는 것이 좋습니다.
 
-5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
+5. **배포 대상** 의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>프로젝트 출력에서 어셈블리를 추가 하려면
 
-1. **패키지 디자이너**를 엽니다.
+1. **패키지 디자이너** 를 엽니다.
 
      자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)을 참조 하세요.
 
@@ -57,7 +59,7 @@ ms.locfileid: "86014832"
 
 4. **원본 프로젝트** 목록에서 추가 하려는 원본 프로젝트를 선택 합니다.
 
-5. **배포 대상**의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
+5. **배포 대상** 의 경우 **globalassemblycache** 옵션 단추를 선택 하 여 어셈블리를 전역 어셈블리 캐시에 배포 하거나 **webapplication** 옵션 단추를 선택 하 여 SharePoint를 실행 하는 서버의 webapplication 폴더에 어셈블리를 배포 합니다.
 
 #### <a name="to-add-a-safe-control"></a>안전 컨트롤을 추가 하려면
 
@@ -84,7 +86,7 @@ ms.locfileid: "86014832"
 
 #### <a name="to-delete-an-existing-assembly"></a>기존 어셈블리를 삭제 하려면
 
-1. **패키지 디자이너**를 엽니다. 자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)을 참조 하세요.
+1. **패키지 디자이너** 를 엽니다. 자세한 내용은 [방법: SharePoint 솔루션 패키지 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)을 참조 하세요.
 
 2. **고급** 탭을 선택 합니다.
 
@@ -108,7 +110,7 @@ ms.locfileid: "86014832"
 
 3. Delete 키를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)
 - [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

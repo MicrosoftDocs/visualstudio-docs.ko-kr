@@ -1,5 +1,7 @@
 ---
 title: 다시 사용할 수 있는 단추 그룹 만들기 | Microsoft Docs
+description: 메뉴 또는 도구 모음에 함께 표시 되는 명령 컬렉션인 명령 그룹을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903644"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915585"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>다시 사용할 수 있는 단추 그룹 만들기
 명령 그룹은 메뉴 또는 도구 모음에서 항상 함께 표시 되는 명령 모음입니다. 모든 명령 그룹은 *vsct* 파일의 commandplacements 섹션에서 다른 부모 메뉴에 할당 하 여 다시 사용할 수 있습니다.
@@ -28,7 +30,7 @@ ms.locfileid: "85903644"
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `ReusableButtons` . 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
-2. 프로젝트가 열리면 **ReusableCommand**이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *ReusableCommand.cs*로 변경 합니다.
+2. 프로젝트가 열리면 **ReusableCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *ReusableCommand.cs* 로 변경 합니다.
 
 3. *. Vsct* 파일에서 기호 섹션으로 이동 하 고 프로젝트에 대 한 그룹 및 명령을 포함 하는 GuidSymbol 요소를 찾습니다. 이름을 guidReusableCommandPackageCmdSet로 지정 해야 합니다.
 
@@ -98,7 +100,7 @@ ms.locfileid: "85903644"
    </CommandTable>
    ```
 
-    명령 그룹은 둘 이상의 메뉴에 포함 될 수 있습니다. 부모 메뉴는 만든 항목 중 하나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct* 또는 *sharedcmdvsct*에 설명 된 대로) 또는 다른 VSPackage에서 정의 된 메뉴 중 하나를 사용할 수 있습니다. 부모 메뉴가 결국 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage에 의해 표시 되는 바로 가기 메뉴 또는에 연결 되는 경우에는 부모 메뉴의 수에 제한이 없습니다.
+    명령 그룹은 둘 이상의 메뉴에 포함 될 수 있습니다. 부모 메뉴는 만든 항목 중 하나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct* 또는 *sharedcmdvsct* 에 설명 된 대로) 또는 다른 VSPackage에서 정의 된 메뉴 중 하나를 사용할 수 있습니다. 부모 메뉴가 결국 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage에 의해 표시 되는 바로 가기 메뉴 또는에 연결 되는 경우에는 부모 메뉴의 수에 제한이 없습니다.
 
     다음 예에서는 **솔루션 탐색기** 도구 모음에서 다른 단추 오른쪽에 그룹을 배치 합니다.
 

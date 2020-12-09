@@ -1,5 +1,7 @@
 ---
 title: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기
+description: 이 연습에서는 SharePoint를 실행 하는 서버에서 SharePoint 프로젝트 솔루션을 업그레이드 하는 사용자 지정 배포 단계를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740021"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914935"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>연습: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기
   SharePoint 프로젝트를 배포할 때 Visual Studio는 일련의 배포 단계를 특정 순서로 실행 합니다. Visual Studio에는 다양 한 기본 제공 배포 단계가 포함 되어 있지만 직접 만들 수도 있습니다.
@@ -39,7 +41,7 @@ ms.locfileid: "90740021"
 
 - 새 배포 단계를 테스트 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -48,7 +50,7 @@ ms.locfileid: "90740021"
 
   다음 개념에 대 한 정보는 연습을 완료 하는 데 도움이 되지만 반드시 필요한 것은 아닙니다.
 
-- SharePoint 용 서버 개체 모델 사용 자세한 내용은 [SharePoint Foundation 서버 쪽 개체 모델 사용](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))을 참조 하세요.
+- SharePoint 용 서버 개체 모델 사용 자세한 내용은 [SharePoint Foundation Server-Side 개체 모델 사용](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))을 참조 하세요.
 
 - SharePoint 솔루션. 자세한 내용은 [솔루션 개요](/previous-versions/office/developer/sharepoint-2010/aa543214(v=office.14))를 참조 하세요.
 
@@ -69,7 +71,7 @@ ms.locfileid: "90740021"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
 3. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 노드를 확장 한 다음 **확장성** 노드를 선택 합니다.
 
@@ -78,19 +80,19 @@ ms.locfileid: "90740021"
 
 4. 대화 상자의 맨 위에서 .NET Framework 버전 목록에서 **.NET Framework 4.5** 을 선택 합니다.
 
-5. **VSIX 프로젝트** 템플릿을 선택 하 고 프로젝트의 이름을 **upgradedeploymentstep**으로 지정한 다음 **확인** 단추를 선택 합니다.
+5. **VSIX 프로젝트** 템플릿을 선택 하 고 프로젝트의 이름을 **upgradedeploymentstep** 으로 지정한 다음 **확인** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기**에 **upgradedeploymentstep** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **upgradedeploymentstep** 프로젝트를 추가 합니다.
 
 #### <a name="to-create-the-extension-project"></a>확장 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 UpgradeDeploymentStep 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 UpgradeDeploymentStep 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 노드를 확장 한 다음 **Windows** 노드를 선택 합니다.
 
 3. 대화 상자의 맨 위에서 .NET Framework 버전 목록에서 **.NET Framework 4.5** 을 선택 합니다.
 
-4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **deploymentstepextension**으로 지정한 다음 **확인** 단추를 선택 합니다.
+4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **deploymentstepextension** 으로 지정한 다음 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Deploymentstepextension** 프로젝트를 솔루션에 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
@@ -98,13 +100,13 @@ ms.locfileid: "90740021"
 
 #### <a name="to-create-the-sharepoint-command-project"></a>SharePoint 명령 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 UpgradeDeploymentStep 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 UpgradeDeploymentStep 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic**을 확장 하 고 **Windows** 노드를 선택 합니다.
+2. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 을 확장 하 고 **Windows** 노드를 선택 합니다.
 
 3. 대화 상자의 맨 위에서 .NET Framework 버전 목록에서 **.NET Framework 3.5** 을 선택 합니다.
 
-4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **SharePointCommands**로 지정한 다음 **확인** 단추를 선택 합니다.
+4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **SharePointCommands** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
      Visual Studio에서 솔루션에 **SharePointCommands** 프로젝트를 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
@@ -121,7 +123,7 @@ ms.locfileid: "90740021"
 
     - DeploymentConfigurationExtension
 
-2. DeploymentStepExtension 프로젝트에서 바로 가기 메뉴를 열고 **참조 추가**를 선택 합니다.
+2. DeploymentStepExtension 프로젝트에서 바로 가기 메뉴를 열고 **참조 추가** 를 선택 합니다.
 
 3. **프레임 워크** 탭에서 system.componentmodel 어셈블리에 대 한 확인란을 선택 합니다.
 
@@ -131,7 +133,7 @@ ms.locfileid: "90740021"
 
 1. **SharePointCommands** 프로젝트에서 명령 이라는 코드 파일을 추가 합니다.
 
-2. **솔루션 탐색기**에서 **SharePointCommands** 프로젝트 노드의 바로 가기 메뉴를 열고 **참조 추가**를 선택 합니다.
+2. **솔루션 탐색기** 에서 **SharePointCommands** 프로젝트 노드의 바로 가기 메뉴를 열고 **참조 추가** 를 선택 합니다.
 
 3. **확장** 탭에서 다음 어셈블리에 대 한 확인란을 선택한 다음 **확인** 단추 선택을 클릭 합니다.
 
@@ -179,52 +181,52 @@ ms.locfileid: "90740021"
 
 #### <a name="to-build-the-projects"></a>프로젝트를 빌드하려면 다음을 수행하십시오.
 
-1. **솔루션 탐색기**에서 **deploymentstepextension** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드**를 선택 합니다.
+1. **솔루션 탐색기** 에서 **deploymentstepextension** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드** 를 선택 합니다.
 
-2. **SharePointCommands** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드**를 선택 합니다.
+2. **SharePointCommands** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드** 를 선택 합니다.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>확장을 배포할 VSIX 패키지 만들기
  확장을 배포 하려면 솔루션의 VSIX 프로젝트를 사용 하 여 VSIX 패키지를 만듭니다. 먼저 VSIX 프로젝트에서 source.extension.vsixmanifest 파일을 수정 하 여 VSIX 패키지를 구성 합니다. 그런 다음 솔루션을 빌드하여 VSIX 패키지를 만듭니다.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>VSIX 패키지를 구성 하 고 만들려면
 
-1. **솔루션 탐색기**의 **upgradedeploymentstep** 프로젝트에서 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
+1. **솔루션 탐색기** 의 **upgradedeploymentstep** 프로젝트에서 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 합니다.
 
      Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
-2. **제품 이름** 상자에 **SharePoint 프로젝트에 대 한 업그레이드 배포 단계**를 입력 합니다.
+2. **제품 이름** 상자에 **SharePoint 프로젝트에 대 한 업그레이드 배포 단계** 를 입력 합니다.
 
-3. **작성자** 상자에 **Contoso**를 입력 합니다.
+3. **작성자** 상자에 **Contoso** 를 입력 합니다.
 
-4. **설명** 상자에 **SharePoint 프로젝트에서 사용할 수 있는 사용자 지정 업그레이드 배포 단계**를 입력 합니다.
+4. **설명** 상자에 **SharePoint 프로젝트에서 사용할 수 있는 사용자 지정 업그레이드 배포 단계** 를 입력 합니다.
 
 5. 편집기의 **자산** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
      **새 자산 추가** 대화 상자가 나타납니다.
 
-6. **유형** 목록에서 **VisualStudio**을 선택 합니다.
+6. **유형** 목록에서 **VisualStudio** 을 선택 합니다.
 
     > [!NOTE]
     > 이 값 `MefComponent` 은 source.extension.vsixmanifest 파일의 요소에 해당 합니다. 이 요소는 VSIX 패키지에 있는 확장 어셈블리의 이름을 지정 합니다. 자세한 내용은 [Mefcomponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))를 참조 하세요.
 
-7. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+7. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-8. **프로젝트** 목록에서 **deploymentstepextension**을 선택 하 고 **확인** 단추를 선택 합니다.
+8. **프로젝트** 목록에서 **deploymentstepextension** 을 선택 하 고 **확인** 단추를 선택 합니다.
 
 9. 매니페스트 편집기에서 **새로 만들기** 단추를 다시 선택 합니다.
 
      **새 자산 추가** 대화 상자가 나타납니다.
 
-10. **유형** 목록에서 **SharePoint. Commands**를 입력 합니다.
+10. **유형** 목록에서 **SharePoint. Commands** 를 입력 합니다.
 
     > [!NOTE]
     > 이 요소는 Visual Studio 확장에 포함 하려는 사용자 지정 확장 프로그램을 지정 합니다. 자세한 내용은 [Asset 요소 (VSX 스키마)](/previous-versions/dd393737(v=vs.110))를 참조 하세요.
 
-11. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+11. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-12. **프로젝트** 목록에서 **SharePointCommands**를 선택한 다음 **확인** 단추를 선택 합니다.
+12. **프로젝트** 목록에서 **SharePointCommands** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-13. 메뉴 모음에서 빌드 **Build**  >  **솔루션**빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
+13. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
 
 14. UpgradeDeploymentStep 프로젝트에 대 한 빌드 출력 폴더에 이제 UpgradeDeploymentStep .vsix 파일이 포함 되어 있는지 확인 합니다.
 
@@ -241,13 +243,13 @@ ms.locfileid: "90740021"
 
 2. DeploymentStepExtension 프로젝트에서 UpgradeStep 코드 파일을 연 다음 및 메서드의 첫 번째 코드 줄에 중단점을 추가 `CanExecute` `Execute` 합니다.
 
-3. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 디버깅을 시작 합니다.
+3. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 디버깅을 시작 합니다.
 
 4. Visual Studio는 SharePoint Projects\1.0에 대 한%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 배포 단계에 대 한 확장을 설치 하 고 Visual Studio의 실험적 인스턴스를 시작 합니다. Visual Studio의이 인스턴스에서 업그레이드 배포 단계를 테스트 합니다.
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>목록 정의 및 목록 인스턴스를 사용 하 여 SharePoint 프로젝트를 만들려면
 
-1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual c #** 노드 또는 **Visual Basic** 노드를 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
@@ -255,11 +257,11 @@ ms.locfileid: "90740021"
 
     및의 프로젝트에 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 는이 버전의 .NET Framework 필요 합니다.
 
-4. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트**를 선택 하 고 프로젝트 이름을 **EmployeesListDefinition**로 지정한 다음 **확인** 단추를 선택 합니다.
+4. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트** 를 선택 하 고 프로젝트 이름을 **EmployeesListDefinition** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
-5. **SharePoint 사용자 지정 마법사**에서 디버깅에 사용할 사이트의 URL을 입력 합니다.
+5. **SharePoint 사용자 지정 마법사** 에서 디버깅에 사용할 사이트의 URL을 입력 합니다.
 
-6. **이 SharePoint 솔루션의 신뢰 수준**아래에서 **팜 솔루션으로 배포** 옵션 단추를 선택 합니다.
+6. **이 SharePoint 솔루션의 신뢰 수준** 아래에서 **팜 솔루션으로 배포** 옵션 단추를 선택 합니다.
 
    > [!NOTE]
    > 업그레이드 배포 단계에서는 샌드박스가 적용 된 솔루션을 지원 하지 않습니다.
@@ -268,11 +270,11 @@ ms.locfileid: "90740021"
 
     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] EmployeesListDefinition 프로젝트를 만듭니다.
 
-8. EmployeesListDefinition 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+8. EmployeesListDefinition 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
 9. **새 항목 추가-EmployeesListDefinition** 대화 상자에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-10. **목록** 항목 템플릿을 선택 하 고 **직원 목록의**이름을 지정한 다음 **추가** 단추를 선택 합니다.
+10. **목록** 항목 템플릿을 선택 하 고 **직원 목록의** 이름을 지정한 다음 **추가** 단추를 선택 합니다.
 
      SharePoint 사용자 지정 마법사가 나타납니다.
 
@@ -298,7 +300,7 @@ ms.locfileid: "90740021"
 
 13. 모든 파일을 저장 한 다음 목록 디자이너를 닫습니다.
 
-14. **솔루션 탐색기**에서 **직원 목록** 노드를 확장 한 다음 **employees list Instance** 자식 노드를 확장 합니다.
+14. **솔루션 탐색기** 에서 **직원 목록** 노드를 확장 한 다음 **employees list Instance** 자식 노드를 확장 합니다.
 
 15. *Elements.xml* 파일에서이 파일의 기본 xml을 다음 xml로 바꿉니다. 이 XML은 목록 이름을 **직원** 으로 변경 하 고 승 Hance 이라는 직원에 게 정보를 추가 합니다.
 
@@ -327,7 +329,7 @@ ms.locfileid: "90740021"
 
 16. *Elements.xml* 파일을 저장 한 후 닫습니다.
 
-17. EmployeesListDefinition 프로젝트에 대 한 바로 가기 메뉴를 열고 **열기** 또는 **속성**을 선택 합니다.
+17. EmployeesListDefinition 프로젝트에 대 한 바로 가기 메뉴를 열고 **열기** 또는 **속성** 을 선택 합니다.
 
      속성 디자이너가 열립니다.
 
@@ -335,11 +337,11 @@ ms.locfileid: "90740021"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>목록 정의 및 목록 인스턴스를 배포 하려면
 
-1. **솔루션 탐색기**에서 **EmployeesListDefinition** 프로젝트 노드를 선택 합니다.
+1. **솔루션 탐색기** 에서 **EmployeesListDefinition** 프로젝트 노드를 선택 합니다.
 
-2. **속성** 창에서 **활성 배포 구성** 속성이 **기본값으로**설정 되어 있는지 확인 합니다.
+2. **속성** 창에서 **활성 배포 구성** 속성이 **기본값으로** 설정 되어 있는지 확인 합니다.
 
-3. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 합니다.
+3. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 합니다.
 
 4. 프로젝트가 성공적으로 빌드되고, 웹 브라우저가 SharePoint 사이트에 열리고, 빠른 실행 표시줄의 **목록** 항목에 새 **직원** 목록이 포함 되 고, **직원** 목록에 승 Hance에 대 한 항목이 포함 되어 있는지 확인 합니다.
 
@@ -367,17 +369,17 @@ ms.locfileid: "90740021"
 
 3. *Elements.xml* 파일을 저장 한 후 닫습니다.
 
-4. **Employees 목록** 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 **열기** 또는 **속성**을 선택 합니다.
+4. **Employees 목록** 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 **열기** 또는 **속성** 을 선택 합니다.
 
 5. 목록 디자이너에서 **보기** 탭을 선택 합니다.
 
-6. **선택한 열** 목록에서 **첨부 파일**을 선택 하 고 < 키를 선택 하 여 해당 열을 **사용 가능한 열** 목록으로 이동 합니다.
+6. **선택한 열** 목록에서 **첨부 파일** 을 선택 하 고 < 키를 선택 하 여 해당 열을 **사용 가능한 열** 목록으로 이동 합니다.
 
 7. 이전 단계를 반복 하 여 **선택한 열** 목록의 **근무처 Phone** 열을 **사용 가능한 열** 목록으로 이동 합니다.
 
      이 작업을 수행 하면 SharePoint 사이트에 있는 **Employees** 목록의 기본 보기에서 이러한 필드가 제거 됩니다.
 
-8. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 디버깅을 시작 합니다.
+8. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 디버깅을 시작 합니다.
 
 9. **배포 충돌** 대화 상자가 표시 되는지 확인 합니다.
 
@@ -400,15 +402,15 @@ ms.locfileid: "90740021"
 
 1. SharePoint 사이트의 리본 메뉴에 있는 **목록 도구** 탭에서 **항목** 탭을 선택 합니다.
 
-2. **새** 그룹에서 **새 항목**을 선택 합니다.
+2. **새** 그룹에서 **새 항목** 을 선택 합니다.
 
      또는 항목 목록 자체에서 **새 항목 추가** 링크를 선택할 수 있습니다.
 
-3. **직원-새 항목** 창의 **제목** 상자에 **시설 관리자**를 입력 합니다.
+3. **직원-새 항목** 창의 **제목** 상자에 **시설 관리자** 를 입력 합니다.
 
-4. **이름** 상자에 **Andy**을 입력 합니다.
+4. **이름** 상자에 **Andy** 을 입력 합니다.
 
-5. **회사** 상자에 **Contoso**를 입력 합니다.
+5. **회사** 상자에 **Contoso** 를 입력 합니다.
 
 6. **저장** 단추를 선택 하 고, 목록에 새 항목이 표시 되는지 확인 한 다음, 웹 브라우저를 닫습니다.
 
@@ -416,15 +418,15 @@ ms.locfileid: "90740021"
 
 #### <a name="to-test-the-upgrade-deployment-step"></a>업그레이드 배포 단계를 테스트 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기**의 **EmployeesListDefinition** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기** 의 **EmployeesListDefinition** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **속성** 을 선택 합니다.
 
     속성 편집기/디자이너가 열립니다.
 
-2. **SharePoint** 탭에서 **활성 배포 구성** 속성을 **업그레이드**로 설정 합니다.
+2. **SharePoint** 탭에서 **활성 배포 구성** 속성을 **업그레이드** 로 설정 합니다.
 
     이 사용자 지정 배포 구성에는 새로운 업그레이드 배포 단계가 포함 되어 있습니다.
 
-3. **Employees 목록** 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 **속성** 또는 **열기**를 선택 합니다.
+3. **Employees 목록** 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 **속성** 또는 **열기** 를 선택 합니다.
 
     속성 편집기/디자이너가 열립니다.
 
@@ -432,11 +434,11 @@ ms.locfileid: "90740021"
 
     이 작업을 수행 하면 SharePoint 사이트에 있는 **Employees** 목록의 기본 보기에서 이러한 필드가 제거 됩니다.
 
-5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 디버깅을 시작 합니다.
+5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 디버깅을 시작 합니다.
 
 6. 메서드의 이전에 설정한 중단점에서 Visual Studio의 다른 인스턴스의 코드가 중지 되는지 확인 `CanExecute` 합니다.
 
-7. **F5** 키를 다시 선택 하거나 메뉴 모음에서 **디버그**  >  **계속**을 선택 합니다.
+7. **F5** 키를 다시 선택 하거나 메뉴 모음에서 **디버그**  >  **계속** 을 선택 합니다.
 
 8. 메서드의 이전에 설정한 중단점에서 코드가 중지 되는지 확인 `Execute` 합니다.
 
@@ -463,25 +465,25 @@ ms.locfileid: "90740021"
 
 3. **설정** 그룹에서 **목록 설정** 항목을 선택 합니다.
 
-4. **사용 권한 및 관리**에서 **이 목록 삭제** 명령을 선택 하 고 **확인** 을 선택 하 여 휴지통으로 목록을 보낼지 확인 한 다음 웹 브라우저를 닫습니다.
+4. **사용 권한 및 관리** 에서 **이 목록 삭제** 명령을 선택 하 고 **확인** 을 선택 하 여 휴지통으로 목록을 보낼지 확인 한 다음 웹 브라우저를 닫습니다.
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>SharePoint 사이트에서 목록 정의를 제거 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **빌드**  >  **취소**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **빌드**  >  **취소** 를 선택 합니다.
 
      Visual Studio는 SharePoint 사이트에서 목록 정의를 취소 합니다.
 
 #### <a name="to-uninstall-the-extension"></a>확장을 제거하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
      **확장명 및 업데이트** 대화 상자가 열립니다.
 
-2. 확장 목록에서 **SharePoint 프로젝트의 배포 단계 업그레이드**를 선택 하 고 **제거** 명령을 선택 합니다.
+2. 확장 목록에서 **SharePoint 프로젝트의 배포 단계 업그레이드** 를 선택 하 고 **제거** 명령을 선택 합니다.
 
 3. 표시 되는 대화 상자에서 **예** 를 선택 하 여 확장을 제거할 것인지 확인 하 고 **지금 다시 시작** 을 선택 하 여 제거를 완료 합니다.
 
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (UpgradeDeploymentStep 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

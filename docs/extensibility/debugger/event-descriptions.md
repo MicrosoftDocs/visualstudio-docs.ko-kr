@@ -1,5 +1,7 @@
 ---
 title: 이벤트 설명 | Microsoft Docs
+description: 이벤트 유형과 사용 이유에 대해 알아보세요. 각 이벤트 유형에는 특정 목적이 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738796"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915611"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 각 이벤트 유형에는 특정 목적이 있습니다.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>이벤트 및 사용 이유
 
-|이벤트|설명|
+|이벤트|Description|
 |-----------|-----------------|
 |문서 이벤트 활성화|디버그 엔진 (DE)에서 IDE를 열거나 문서를 전경으로 가져올 때 발생 합니다.|
 |중단점 바인딩 또는 중단점 오류 이벤트|중단점이 바인딩되거나 중단점을 바인딩할 수 없고 오류가 반환 될 때 전송 됩니다.|
@@ -44,5 +46,5 @@ ms.locfileid: "80738796"
 |스레드 이름 변경 이벤트|사용자가 스레드 이름을 변경할 때 전송 됩니다.|
 |프로그램 이름 변경 이벤트|사용자가 프로그램 이름을 변경할 때 전송 됩니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)

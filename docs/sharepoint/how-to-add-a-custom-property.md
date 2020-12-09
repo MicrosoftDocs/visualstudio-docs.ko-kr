@@ -1,5 +1,7 @@
 ---
 title: '방법: 사용자 지정 속성 추가 | Microsoft Docs'
+description: Visual Studio의 BDC 탐색기에서 속성 편집기를 사용 하 여 SharePoint의 BDC (비즈니스 데이터 연결) 모델에 사용자 지정 속성을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017073"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915481"
 ---
 # <a name="how-to-add-a-custom-property"></a>방법: 사용자 지정 속성 추가
-  **속성 편집기**를 사용 하 여 모델에 사용자 지정 속성을 추가할 수 있습니다. 코드에서 이러한 속성에 액세스 하 여 런타임에 연결 문자열 및 기타 데이터와 같은 정보를 검색할 수 있습니다.
+  **속성 편집기** 를 사용 하 여 모델에 사용자 지정 속성을 추가할 수 있습니다. 코드에서 이러한 속성에 액세스 하 여 런타임에 연결 문자열 및 기타 데이터와 같은 정보를 검색할 수 있습니다.
 
 ### <a name="to-add-a-custom-property"></a>사용자 지정 속성을 추가 하려면
 
-1. **BDC 탐색기**에서 사용자 지정 속성을 적용 하려는 모델 요소를 나타내는 노드를 선택 합니다.
+1. **BDC 탐색기** 에서 사용자 지정 속성을 적용 하려는 모델 요소를 나타내는 노드를 선택 합니다.
 
-2. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
+2. 메뉴 모음에서 **보기**  >  **속성 창** 을 선택 합니다.
 
 3. **속성** 창에서 **사용자 지정 속성** 속성을 선택 하 고 줄임표 단추 (![ASP.NET Mobile Designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 선택 합니다.
 
@@ -43,7 +45,7 @@ ms.locfileid: "86017073"
 
 6. 사용자 지정 속성의 **값** 필드에서 값을 지정한 다음 **확인** 단추를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)

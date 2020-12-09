@@ -1,5 +1,7 @@
 ---
 title: '방법: Finder 메서드 추가 | Microsoft Docs'
+description: Visual Studio에서 Finder 메서드를 추가 합니다 .이 메서드를 통해 BDC (비즈니스 데이터 연결) 서비스에서 SharePoint 웹 파트 또는 목록의 엔터티 목록을 표시할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,27 +19,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016729"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915091"
 ---
 # <a name="how-to-add-a-finder-method"></a>방법: Finder 메서드 추가
   BDC (비즈니스 데이터 연결) 서비스를 사용 하 여 웹 파트 또는 목록의 엔터티 목록을 표시 하려면 *Finder* 메서드를 만들어야 합니다. Finder 메서드는 엔터티 인스턴스의 컬렉션을 반환 하는 특수 메서드입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
 
 ### <a name="to-create-a-finder-method"></a>Finder 메서드를 만들려면
 
-1. **BDC 디자이너**에서 엔터티를 선택 합니다.
+1. **BDC 디자이너** 에서 엔터티를 선택 합니다.
 
     자세한 내용은 [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)를 참조 하세요.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보**보기를 선택 합니다.
+2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. **Bdc 메서드 세부** 정보 창에 대 한 자세한 내용은 [bdc 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
-3. **메서드 추가** 목록에서 **Finder 메서드 만들기**를 선택 합니다.
+3. **메서드 추가** 목록에서 **Finder 메서드 만들기** 를 선택 합니다.
 
     Visual Studio는 메서드, 반환 매개 변수 및 형식 설명자를 추가 합니다.
 
@@ -46,7 +48,7 @@ ms.locfileid: "86016729"
    > [!NOTE]
    > 엔터티에 특정 Finder 메서드를 추가한 경우에는이 단계를 수행할 필요가 없습니다. Visual Studio는 특정 Finder 메서드에서 정의한 형식 설명자를 사용 합니다.
 
-5. **솔루션 탐색기**에서 엔터티에 대해 생성 된 서비스 코드 파일의 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다. 서비스 코드 파일에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요.
+5. **솔루션 탐색기** 에서 엔터티에 대해 생성 된 서비스 코드 파일의 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다. 서비스 코드 파일에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조 하세요.
 
 6. Finder 메서드에 코드를 추가 합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -62,7 +64,7 @@ ms.locfileid: "86016729"
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)

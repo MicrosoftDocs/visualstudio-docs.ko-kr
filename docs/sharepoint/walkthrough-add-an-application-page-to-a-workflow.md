@@ -1,5 +1,7 @@
 ---
 title: '연습: 워크플로에 응용 프로그램 페이지 추가 | Microsoft Docs'
+description: 이 연습에서는 SharePoint 워크플로 솔루션에 응용 프로그램 페이지를 추가 합니다. 워크플로 코드를 수정 합니다. 응용 프로그램 페이지를 만들고 코딩 하 고 테스트 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015493"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915663"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 응용 프로그램 페이지 추가
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 애플리케이션 페이지 추가
   이 연습에서는 워크플로에서 파생 된 데이터를 표시 하는 응용 프로그램 페이지를 워크플로 프로젝트에 추가 하는 방법을 보여 줍니다. [연습: 연결 및 초기화 양식으로 워크플로 만들기](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)항목에 설명 된 프로젝트를 기반으로 합니다.
 
  이 연습에서는 다음 작업을 수행합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "86015493"
 
 - 또한 [연습: 연결 및 초기화 폼이 있는 워크플로 만들기](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)항목에서 프로젝트를 완료 해야 합니다.
 
-## <a name="ammend-the-workflow-code"></a>워크플로 코드 Ammend
+## <a name="amend-the-workflow-code"></a>워크플로 코드 수정
  먼저 워크플로에 코드 줄을 추가 하 여 결과 열의 값을 경비 보고서의 양으로 설정 합니다. 이 값은 나중에 경비 보고서 요약 계산에 사용 됩니다.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>워크플로의 결과 열 값을 설정 하려면
@@ -70,7 +72,7 @@ ms.locfileid: "86015493"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>프로젝트에 응용 프로그램 페이지를 추가 하려면
 
-1. ExpenseReport 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+1. ExpenseReport 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
 2. **템플릿** 창에서 **응용 프로그램 페이지** 템플릿을 선택 하 고, 프로젝트 항목의 기본 이름 (**ApplicationPage1**)을 사용 하 고, **추가** 단추를 선택 합니다.
 
@@ -101,7 +103,7 @@ ms.locfileid: "86015493"
 
 #### <a name="to-code-the-application-page"></a>응용 프로그램 페이지를 코딩 하려면
 
-1. **ApplicationPage1** 노드를 선택 하 고 메뉴 모음에서 코드 **보기**를 선택  >  **Code** 하 여 응용 프로그램 페이지 뒤에 코드를 표시 합니다.
+1. **ApplicationPage1** 노드를 선택 하 고 메뉴 모음에서 코드 **보기** 를 선택  >  **Code** 하 여 응용 프로그램 페이지 뒤에 코드를 표시 합니다.
 
 2. 클래스의 맨 위에 있는 **using** 또는 **Import** 문 (프로그래밍 언어에 따라 다름)을 다음과 같이 바꿉니다.
 
@@ -347,9 +349,9 @@ ms.locfileid: "86015493"
 
 - [웹 파트 또는 응용 프로그램 페이지에 다시 사용할 수 있는 컨트롤을 만듭니다](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [연습: 연결 및 초기화 폼이 있는 워크플로 만들기](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [방법: 응용 프로그램 페이지 만들기](../sharepoint/how-to-create-an-application-page.md)
-- [SharePoint에 대 한 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [연습: 연결 및 시작 양식을 사용하여 워크플로 만들기](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [방법: 애플리케이션 페이지 만들기](../sharepoint/how-to-create-an-application-page.md)
+- [SharePoint용 애플리케이션 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

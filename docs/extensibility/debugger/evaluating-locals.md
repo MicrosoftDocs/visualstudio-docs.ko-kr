@@ -1,5 +1,7 @@
 ---
 title: 지역 평가 | Microsoft Docs
+description: Visual Studio가 로컬 값을 포함 하는 메모리 내의 위치에 액세스 하는 방법에 대해 알아봅니다 .이는 프로그램의 현재 상태에 따라 달라 집니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738811"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915637"
 ---
 # <a name="evaluate-locals"></a>지역 평가
 > [!IMPORTANT]
@@ -189,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

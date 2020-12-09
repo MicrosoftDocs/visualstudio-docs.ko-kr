@@ -1,6 +1,8 @@
 ---
 title: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부
 titleSuffix: ''
+description: 항목 템플릿을 사용 하 여 sharepoint 사이트에 대 한 사용자 지정 작업을 만들기 위해 SharePoint 프로젝트에 추가할 수 있는 프로젝트 항목을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585565"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915273"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부
   사용자 고유의 프로젝트 항목 형식을 만들어 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 sharepoint 사이트에 대 한 사용자 지정 작업을 만들기 위해 SharePoint 프로젝트에 추가할 수 있는 프로젝트 항목을 만듭니다. 사용자 지정 작업은 SharePoint 사이트의 **사이트 작업** 메뉴에 메뉴 항목을 추가 합니다.
@@ -34,7 +36,7 @@ ms.locfileid: "91585565"
 
   - 개발자가 프로젝트 항목의 특정 속성 및 프로젝트 항목을 포함 하는 프로젝트를 변경할 때 실행 되는 코드입니다.
 
-  - **솔루션 탐색기**의 프로젝트 항목 옆에 표시 되는 사용자 지정 아이콘입니다.
+  - **솔루션 탐색기** 의 프로젝트 항목 옆에 표시 되는 사용자 지정 아이콘입니다.
 
 - 프로젝트 항목에 대 한 Visual Studio 항목 템플릿을 만듭니다.
 
@@ -47,7 +49,7 @@ ms.locfileid: "91585565"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -75,7 +77,7 @@ ms.locfileid: "91585565"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
 3. **새 프로젝트** 대화 상자의 맨 위에 있는 목록에서 **.NET Framework 4.5** 가 선택 되어 있는지 확인 합니다.
 
@@ -86,13 +88,13 @@ ms.locfileid: "91585565"
 
 5. **VSIX 프로젝트** 템플릿을 선택 합니다.
 
-6. **이름** 상자에 **CustomActionProjectItem**를 입력 하 고 **확인** 단추를 선택 합니다.
+6. **이름** 상자에 **CustomActionProjectItem** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기**에 **CustomActionProjectItem** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **CustomActionProjectItem** 프로젝트를 추가 합니다.
 
 #### <a name="to-create-the-item-template-project"></a>항목 템플릿 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자의 맨 위에 있는 목록에서 **.NET Framework 4.5** 가 선택 되어 있는지 확인 합니다.
 
@@ -100,19 +102,19 @@ ms.locfileid: "91585565"
 
 4. 프로젝트 템플릿 목록에서 **c # 항목 템플릿** 또는 **Visual Basic 항목 템플릿** 템플릿을 선택 합니다.
 
-5. **이름** 상자에 **ItemTemplate**을 입력 하 고 **확인** 단추를 선택 합니다.
+5. **이름** 상자에 **ItemTemplate** 을 입력 하 고 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ItemTemplate** 프로젝트를 솔루션에 추가 합니다.
 
 #### <a name="to-create-the-extension-project"></a>확장 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자의 맨 위에 있는 목록에서 **.NET Framework 4.5** 가 선택 되어 있는지 확인 합니다.
 
 3. **새 프로젝트** 대화 상자에서 **Visual c #** 또는 **Visual Basic** 노드를 확장 하 고 **Windows** 노드를 선택한 다음 **클래스 라이브러리** 프로젝트 템플릿을 선택 합니다.
 
-4. **이름** 상자에 **ProjectItemDefinition**를 입력 하 고 **확인** 단추를 선택 합니다.
+4. **이름** 상자에 **ProjectItemDefinition** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ProjectItemDefinition** 프로젝트를 솔루션에 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
@@ -123,13 +125,13 @@ ms.locfileid: "91585565"
 
 #### <a name="to-configure-the-project"></a>프로젝트를 구성 하려면
 
-1. **솔루션 탐색기**에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+1. **솔루션 탐색기** 에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
-2. 프로젝트 항목 목록에서 **코드 파일**을 선택 합니다.
+2. 프로젝트 항목 목록에서 **코드 파일** 을 선택 합니다.
 
 3. **이름** 상자에 적절 한 파일 이름 확장명을 가진 **CustomAction** 이름을 입력 한 다음 **추가** 단추를 선택 합니다.
 
-4. **솔루션 탐색기**에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **참조 추가**를 선택 합니다.
+4. **솔루션 탐색기** 에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **참조 추가** 를 선택 합니다.
 
 5. **참조 관리자-ProjectItemDefinition** 대화 상자에서 **어셈블리** 노드를 선택 하 고 **프레임 워크** 노드를 선택 합니다.
 
@@ -154,37 +156,37 @@ ms.locfileid: "91585565"
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>에서 프로젝트 항목의 아이콘을 만듭니다 솔루션 탐색기
- 사용자 지정 SharePoint 프로젝트 항목을 만들 때 이미지 (아이콘 또는 비트맵)를 프로젝트 항목과 연결할 수 있습니다. 이 이미지는 **솔루션 탐색기**의 프로젝트 항목 옆에 표시 됩니다.
+ 사용자 지정 SharePoint 프로젝트 항목을 만들 때 이미지 (아이콘 또는 비트맵)를 프로젝트 항목과 연결할 수 있습니다. 이 이미지는 **솔루션 탐색기** 의 프로젝트 항목 옆에 표시 됩니다.
 
  다음 절차에서는 프로젝트 항목에 대 한 아이콘을 만들고 확장 어셈블리에 아이콘을 포함 합니다. 이 아이콘은 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> 앞에서 만든 클래스의에서 참조 합니다 `CustomActionProjectItemTypeProvider` .
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>프로젝트 항목의 사용자 지정 아이콘을 만들려면
 
-1. **솔루션 탐색기**에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**...을 선택 합니다.
+1. **솔루션 탐색기** 에서 **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목**...을 선택 합니다.
 
 2. 프로젝트 항목 목록에서 **아이콘 파일** 항목을 선택 합니다.
 
     > [!NOTE]
     > Visual Basic 프로젝트에서 **일반** 노드를 선택 하 여 **아이콘 파일** 항목을 표시 해야 합니다.
 
-3. **이름** 상자에 **CustomAction_SolutionExplorer .ico**를 입력 한 다음 **추가** 단추를 선택 합니다.
+3. **이름** 상자에 **CustomAction_SolutionExplorer .ico** 를 입력 한 다음 **추가** 단추를 선택 합니다.
 
-     새 아이콘이 **이미지 편집기**에 열립니다.
+     새 아이콘이 **이미지 편집기** 에 열립니다.
 
 4. 인식할 수 있는 디자인을 포함 하도록 아이콘 파일의 16x16 버전을 편집 하 고 아이콘 파일을 저장 합니다.
 
-5. **솔루션 탐색기**에서 **CustomAction_SolutionExplorer**를 선택 합니다.
+5. **솔루션 탐색기** 에서 **CustomAction_SolutionExplorer** 를 선택 합니다.
 
 6. **속성** 창에서 **빌드 작업** 속성 옆의 화살표를 선택 합니다.
 
-7. 표시 되는 목록에서 **포함 리소스**를 선택 합니다.
+7. 표시 되는 목록에서 **포함 리소스** 를 선택 합니다.
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 프로젝트 항목의 모든 코드는 이제 프로젝트에 있습니다. 프로젝트를 빌드하여 오류 없이 컴파일되는지 확인 합니다.
 
 #### <a name="to-build-your-project"></a>프로젝트를 빌드하려면
 
-1. **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드**를 선택 합니다.
+1. **ProjectItemDefinition** 프로젝트에 대 한 바로 가기 메뉴를 열고 **빌드** 를 선택 합니다.
 
 ## <a name="create-a-visual-studio-item-template"></a>Visual Studio 항목 템플릿 만들기
  다른 개발자가 프로젝트 항목을 사용할 수 있도록 하려면 프로젝트 템플릿 또는 항목 템플릿을 만들어야 합니다. 개발자는 Visual Studio에서 이러한 템플릿을 사용 하 여 새 프로젝트를 만들거나 기존 프로젝트에 항목을 추가 하 여 프로젝트 항목의 인스턴스를 만듭니다. 이 연습에서는 ItemTemplate 프로젝트를 사용 하 여 프로젝트 항목을 구성 합니다.
@@ -221,11 +223,11 @@ ms.locfileid: "91585565"
 
      이 파일은 항목 템플릿의 내용 및 동작을 정의 합니다. 이 파일의 내용에 대 한 자세한 내용은 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조 하세요.
 
-4. **솔루션 탐색기**에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+4. **솔루션 탐색기** 에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
 5. **새 항목 추가** 대화 상자에서 **텍스트 파일** 템플릿을 선택 합니다.
 
-6. **이름** 상자에 **CustomAction**를 입력 한 다음 **추가** 단추를 선택 합니다.
+6. **이름** 상자에 **CustomAction** 를 입력 한 다음 **추가** 단추를 선택 합니다.
 
 7. *CustomAction* 파일에 다음 XML을 추가 하 고 파일을 저장 한 후 닫습니다.
 
@@ -241,11 +243,11 @@ ms.locfileid: "91585565"
 
      이 파일에는 프로젝트 항목에 포함 된 파일에 대 한 정보가 포함 되어 있습니다. `Type`요소의 특성은 `ProjectItem` 프로젝트 항목 정의의로 전달 되는 동일한 문자열로 설정 해야 합니다 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> ( `CustomActionProjectItemTypeProvider` 이 연습의 앞부분에서 만든 클래스). *.Spdata* 파일의 내용에 대 한 자세한 내용은 [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)를 참조 하세요.
 
-8. **솔루션 탐색기**에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+8. **솔루션 탐색기** 에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
 9. **새 항목 추가** 대화 상자에서 **XML 파일** 템플릿을 선택 합니다.
 
-10. **이름** 상자에 **Elements.xml**를 입력 한 다음 **추가** 단추를 선택 합니다.
+10. **이름** 상자에 **Elements.xml** 를 입력 한 다음 **추가** 단추를 선택 합니다.
 
 11. *Elements.xml* 파일의 내용을 다음 XML로 바꾼 다음 파일을 저장 하 고 닫습니다.
 
@@ -267,9 +269,9 @@ ms.locfileid: "91585565"
 
 12. 필요에 따라 *ItemTemplate* 파일을 열고 인식할 수 있는 디자인을 포함 하도록 수정 합니다. 이 아이콘은 **새 항목 추가** 대화 상자의 프로젝트 항목 옆에 표시 됩니다.
 
-13. **솔루션 탐색기**에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **프로젝트 언로드**를 선택 합니다.
+13. **솔루션 탐색기** 에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 열고 **프로젝트 언로드** 를 선택 합니다.
 
-14. **Itemtemplate** 프로젝트에 대 한 바로 가기 메뉴를 다시 열고 **ItemTemplate 편집** 또는 **itemtemplate 편집**을 선택 합니다.
+14. **Itemtemplate** 프로젝트에 대 한 바로 가기 메뉴를 다시 열고 **ItemTemplate 편집** 또는 **itemtemplate 편집** 을 선택 합니다.
 
 15. `VSTemplate`프로젝트 파일에서 다음 요소를 찾습니다.
 
@@ -287,52 +289,52 @@ ms.locfileid: "91585565"
 
      `OutputSubPath`요소는 프로젝트를 빌드할 때 항목 템플릿이 만들어지는 경로에 추가 폴더를 지정 합니다. 여기에 지정 된 폴더는 고객이 **새 항목 추가** 대화 상자를 열고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 하는 경우에만 항목 템플릿을 사용할 수 있도록 합니다.
 
-17. **솔루션 탐색기**에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **프로젝트 다시 로드**를 선택 합니다.
+17. **솔루션 탐색기** 에서 **ItemTemplate** 프로젝트에 대 한 바로 가기 메뉴를 연 다음 **프로젝트 다시 로드** 를 선택 합니다.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>VSIX 패키지를 만들어 프로젝트 항목을 배포 합니다.
  확장을 배포 하려면 솔루션의 VSIX 프로젝트를 사용 하 여 VSIX 패키지를 만듭니다. 먼저 VSIX 프로젝트에 포함 된 source.extension.vsixmanifest 파일을 수정 하 여 VSIX 패키지를 구성 합니다. 그런 다음 솔루션을 빌드하여 VSIX 패키지를 만듭니다.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>VSIX 패키지를 구성 하 고 만들려면
 
-1. **솔루션 탐색기**에서 CustomActionProjectItem 프로젝트의 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 CustomActionProjectItem 프로젝트의 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 합니다.
 
      Visual Studio가 매니페스트 편집기에서 파일을 엽니다. Source.extension.vsixmanifest 파일은 모든 VSIX 패키지에 필요한 source.extension.vsixmanifest 파일의 기반이 됩니다. 이 파일에 대 한 자세한 내용은 [VSIX 확장 스키마 1.0 참조](/previous-versions/dd393700(v=vs.110))를 참조 하세요.
 
-2. **제품 이름** 상자에 **사용자 지정 작업 프로젝트 항목**을 입력 합니다.
+2. **제품 이름** 상자에 **사용자 지정 작업 프로젝트 항목** 을 입력 합니다.
 
-3. **작성자** 상자에 **Contoso**를 입력 합니다.
+3. **작성자** 상자에 **Contoso** 를 입력 합니다.
 
-4. **설명** 상자에 **사용자 지정 작업을 나타내는 SharePoint 프로젝트 항목**을 입력 합니다.
+4. **설명** 상자에 **사용자 지정 작업을 나타내는 SharePoint 프로젝트 항목** 을 입력 합니다.
 
 5. **자산** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
      **새 자산 추가** 대화 상자가 나타납니다.
 
-6. **유형** 목록에서 **VisualStudio**을 선택 합니다.
+6. **유형** 목록에서 **VisualStudio** 을 선택 합니다.
 
     > [!NOTE]
     > 이 값 `ItemTemplate` 은 source.extension.vsixmanifest 파일의 요소에 해당 합니다. 이 요소는 VSIX 패키지에서 프로젝트 항목 템플릿을 포함 하는 하위 폴더를 식별 합니다. 자세한 내용은 [ItemTemplate 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))를 참조 하세요.
 
-7. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+7. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-8. **프로젝트** 목록에서 **ItemTemplate**을 선택 하 고 **확인** 단추를 선택 합니다.
+8. **프로젝트** 목록에서 **ItemTemplate** 을 선택 하 고 **확인** 단추를 선택 합니다.
 
 9. **자산** 탭에서 **새로 만들기** 단추를 다시 선택 합니다.
 
      **새 자산 추가** 대화 상자가 나타납니다.
 
-10. **유형** 목록에서 **VisualStudio**을 선택 합니다.
+10. **유형** 목록에서 **VisualStudio** 을 선택 합니다.
 
     > [!NOTE]
     > 이 값 `MefComponent` 은 source.extension.vsixmanifest 파일의 요소에 해당 합니다. 이 요소는 VSIX 패키지에 있는 확장 어셈블리의 이름을 지정 합니다. 자세한 내용은 [Mefcomponent 요소 (VSX 스키마)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))를 참조 하세요.
 
-11. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+11. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-12. **프로젝트** 목록에서 **ProjectItemDefinition**를 선택 합니다.
+12. **프로젝트** 목록에서 **ProjectItemDefinition** 를 선택 합니다.
 
 13. **확인** 단추를 선택합니다.
 
-14. 메뉴 모음에서 빌드 **Build**  >  **솔루션**빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
+14. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
 
 15. CustomActionProjectItem 프로젝트에 대 한 빌드 출력 폴더에 CustomActionProjectItem 파일이 포함 되어 있는지 확인 합니다.
 
@@ -353,17 +355,17 @@ ms.locfileid: "91585565"
 
 #### <a name="to-test-the-project-item-in-visual-studio"></a>Visual Studio에서 프로젝트 항목을 테스트 하려면
 
-1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
-2. **Visual c #** 또는 **Visual Basic** (항목 템플릿에서 지 원하는 언어에 따라)를 확장 하 고 **SharePoint**를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic** (항목 템플릿에서 지 원하는 언어에 따라)를 확장 하 고 **SharePoint** 를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-3. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트**를 선택 합니다.
+3. 프로젝트 템플릿 목록에서 **SharePoint 2010 프로젝트** 를 선택 합니다.
 
-4. **이름** 상자에 **CustomActionTest**를 입력 하 고 **확인** 단추를 선택 합니다.
+4. **이름** 상자에 **CustomActionTest** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
-5. **SharePoint 사용자 지정 마법사**에서 디버깅에 사용할 사이트의 URL을 입력 한 후 **마침** 단추를 선택 합니다.
+5. **SharePoint 사용자 지정 마법사** 에서 디버깅에 사용할 사이트의 URL을 입력 한 후 **마침** 단추를 선택 합니다.
 
-6. **솔루션 탐색기**에서 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+6. **솔루션 탐색기** 에서 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
 7. **새 항목 추가** 대화 상자에서 **SharePoint** 노드 아래의 **2010** 노드를 선택 합니다.
 
@@ -377,17 +379,17 @@ ms.locfileid: "91585565"
 
 10. **F5** 키를 선택 하 여 프로젝트를 계속 디버깅 합니다.
 
-11. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기**의 **CustomAction1** 노드에 대 한 바로 가기 메뉴를 열고 **사용자 지정 작업 디자이너 보기**를 선택 합니다.
+11. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기** 의 **CustomAction1** 노드에 대 한 바로 가기 메뉴를 열고 **사용자 지정 작업 디자이너 보기** 를 선택 합니다.
 
 12. 메시지 상자가 표시 되는지 확인 하 고 **확인** 단추를 선택 합니다.
 
      이 바로 가기 메뉴를 사용 하 여 개발자에 게 사용자 지정 작업을 위한 디자이너 표시와 같은 추가 옵션이 나 명령을 제공할 수 있습니다.
 
-13. 메뉴 모음에서 출력 **보기**를 선택  >  **Output**합니다.
+13. 메뉴 모음에서 출력 **보기** 를 선택  >  **Output** 합니다.
 
      **출력** 창이 열립니다.
 
-14. **솔루션 탐색기**에서 **CustomAction1** 항목에 대 한 바로 가기 메뉴를 열고 이름을 **MyCustomAction**로 변경 합니다.
+14. **솔루션 탐색기** 에서 **CustomAction1** 항목에 대 한 바로 가기 메뉴를 열고 이름을 **MyCustomAction** 로 변경 합니다.
 
      **출력** 창에 확인 메시지가 표시 됩니다. 이 메시지는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> 클래스에서 정의한 이벤트 처리기에 의해 작성 됩니다 `CustomActionProjectItemTypeProvider` . 이 이벤트 및 기타 프로젝트 항목 이벤트를 처리 하 여 개발자가 프로젝트 항목을 수정할 때 사용자 지정 동작을 구현할 수 있습니다.
 
@@ -428,18 +430,18 @@ ms.locfileid: "91585565"
     > [!NOTE]
     > **스크립트 디버깅 사용 안 함** 대화 상자가 나타나면 **예** 단추를 선택 하 여 프로젝트를 계속 디버깅 합니다.
 
-4. **사이트 작업** 메뉴에서 **SharePoint 개발자 센터**를 선택 하 고 브라우저에서 웹 사이트가 열리는지 확인 한 https://docs.microsoft.com/sharepoint/dev/ 다음 웹 브라우저를 닫습니다.
+4. **사이트 작업** 메뉴에서 **SharePoint 개발자 센터** 를 선택 하 고 브라우저에서 웹 사이트가 열리는지 확인 한 https://docs.microsoft.com/sharepoint/dev/ 다음 웹 브라우저를 닫습니다.
 
 ## <a name="clean-up-the-development-computer"></a>개발 컴퓨터 정리
  프로젝트 항목 테스트를 마친 후 Visual Studio의 실험적 인스턴스에서 프로젝트 항목 템플릿을 제거 합니다.
 
 #### <a name="to-clean-up-the-development-computer"></a>개발 컴퓨터를 정리 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
      **확장명 및 업데이트** 대화 상자가 열립니다.
 
-2. 확장 목록에서 **사용자 지정 작업 프로젝트 항목**을 선택한 다음 **제거** 단추를 선택 합니다.
+2. 확장 목록에서 **사용자 지정 작업 프로젝트 항목** 을 선택한 다음 **제거** 단추를 선택 합니다.
 
 3. 표시 되는 대화 상자에서 **예** 단추를 선택 하 여 확장을 제거할 것임을 확인 합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 중단 모드 시작 | Microsoft Docs
+description: 함수에서 발생 하는 중단점에 대해 알아보고 커서의 소스 코드 줄을 실행 하거나 중단점까지 실행 하는 프로세스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738884"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915234"
 ---
 # <a name="enter-break-mode"></a>중단 모드로 전환
 다음 정보는 함수를 한 단계씩 실행 한 후 중단점에 커서를 포함 하는 소스 코드 줄을 실행 하거나 중단점까지 실행 한 후에 발생 하는 프로세스에 대해 설명 합니다.
@@ -41,5 +43,5 @@ ms.locfileid: "80738884"
 
     - [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) 를 통해 메모리 정보 가져오기
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

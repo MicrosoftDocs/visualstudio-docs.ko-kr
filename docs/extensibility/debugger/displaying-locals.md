@@ -1,5 +1,7 @@
 ---
 title: 지역 표시 | Microsoft Docs
+description: 실행이 일시 중지 될 때 표시 되는 메서드의 지역 이라는 지역 변수 및 인수 목록에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738936"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915546"
 ---
 # <a name="display-locals"></a>표시 지역
 > [!IMPORTANT]
@@ -37,5 +39,5 @@ ms.locfileid: "80738936"
 ## <a name="related-sections"></a>관련 단원
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) 디버그 엔진 (DE)이 식 계산기 (EE)를 호출할 때 세 개의 인수를 전달 하는 방법을 설명 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

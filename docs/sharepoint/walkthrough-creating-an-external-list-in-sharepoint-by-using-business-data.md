@@ -1,5 +1,7 @@
 ---
 title: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
+description: 비즈니스 데이터베이스의 연락처에 대 한 정보를 반환 하는 BDC 서비스용 모델을 만든 다음이 모델을 사용 하 여 SharePoint에서 외부 목록을 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740060"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915338"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -50,13 +52,13 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 ## <a name="create-a-project-that-contains-a-bdc-model"></a>BDC 모델을 포함 하는 프로젝트 만들기
 
-1. Visual Studio의 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. Visual Studio의 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
      **새 프로젝트** 대화 상자가 열립니다.
 
-2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 항목을 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 항목을 선택 합니다.
 
-3. **템플릿** 창에서 **SharePoint 2010 프로젝트**를 선택 하 고 프로젝트 이름을 **AdventureWorksTest**로 지정한 다음 **확인** 단추를 선택 합니다.
+3. **템플릿** 창에서 **SharePoint 2010 프로젝트** 를 선택 하 고 프로젝트 이름을 **AdventureWorksTest** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다. 이 마법사에서는 프로젝트를 디버그 하 고 솔루션의 신뢰 수준을 설정 하는 데 사용할 사이트를 지정할 수 있습니다.
 
@@ -64,17 +66,17 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 5. **마침** 단추를 선택 하 여 기본 로컬 SharePoint 사이트를 적용 합니다.
 
-6. **솔루션 탐색기**에서 SharePoint 프로젝트 노드를 선택 합니다.
+6. **솔루션 탐색기** 에서 SharePoint 프로젝트 노드를 선택 합니다.
 
-7. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+7. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
      **새 항목 추가** 대화 상자가 열립니다.
 
-8. **템플릿** 창에서 **비즈니스 데이터 연결 모델 (팜 솔루션에만 해당)** 을 선택 하 고 프로젝트 이름을 **AdventureWorksContacts**로 지정한 다음 **추가** 단추를 선택 합니다.
+8. **템플릿** 창에서 **비즈니스 데이터 연결 모델 (팜 솔루션에만 해당)** 을 선택 하 고 프로젝트 이름을 **AdventureWorksContacts** 로 지정한 다음 **추가** 단추를 선택 합니다.
 
 ## <a name="add-data-access-classes-to-the-project"></a>프로젝트에 데이터 액세스 클래스 추가
 
-1. 메뉴 모음에서 **도구**  >  **데이터베이스에 연결**을 선택 합니다.
+1. 메뉴 모음에서 **도구**  >  **데이터베이스에 연결** 을 선택 합니다.
 
      **연결 추가** 대화 상자가 열립니다.
 
@@ -82,21 +84,21 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
      자세한 내용은 [연결 추가/수정 (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140))을 참조 하세요.
 
-3. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
+3. **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다.
 
-4. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+4. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 5. **설치 된 템플릿** 창에서 **데이터** 노드를 선택 합니다.
 
-6. **템플릿** 창에서 **LINQ to SQL 클래스**를 선택 합니다.
+6. **템플릿** 창에서 **LINQ to SQL 클래스** 를 선택 합니다.
 
-7. **이름** 상자에서 **AdventureWorks**를 지정 하 고 **추가** 단추를 선택 합니다.
+7. **이름** 상자에서 **AdventureWorks** 를 지정 하 고 **추가** 단추를 선택 합니다.
 
      .dbml 파일이 프로젝트에 추가되고 O/R 디자이너(개체 관계형 디자이너)가 열립니다.
 
-8. 메뉴 모음에서 서버 탐색기 **보기**를 선택  >  **Server Explorer**합니다.
+8. 메뉴 모음에서 서버 탐색기 **보기** 를 선택  >  **Server Explorer** 합니다.
 
-9. **서버 탐색기**에서 AdventureWorks 예제 데이터베이스를 나타내는 노드를 확장 한 다음 **테이블** 노드를 확장 합니다.
+9. **서버 탐색기** 에서 AdventureWorks 예제 데이터베이스를 나타내는 노드를 확장 한 다음 **테이블** 노드를 확장 합니다.
 
 10. O/R 디자이너에 **Contact (Person)** 테이블을 추가 합니다.
 
@@ -106,37 +108,37 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 **비즈니스 데이터 연결 모델** 프로젝트는 Entity1 이라는 기본 엔터티를 모델에 추가 합니다. 이 엔터티를 제거 합니다. 나중에 새 엔터티를 추가 합니다. 빈 모델로 시작 하면 연습을 완료 하는 데 필요한 단계 수를 줄일 수 있습니다.
 
-1. **솔루션 탐색기**에서 **BdcModel1** 노드를 확장 하 고 *BdcModel1* 파일을 엽니다.
+1. **솔루션 탐색기** 에서 **BdcModel1** 노드를 확장 하 고 *BdcModel1* 파일을 엽니다.
 
 2. 비즈니스 데이터 연결 모델 파일이 BDC 디자이너에서 열립니다.
 
-3. 디자이너에서 **Entity1**에 대 한 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
+3. 디자이너에서 **Entity1** 에 대 한 바로 가기 메뉴를 열고 **삭제** 를 선택 합니다.
 
-4. **솔루션 탐색기**에서 *Entity1* (Visual Basic) 또는 *Entity1.cs* (c #)의 바로 가기 메뉴를 연 다음 **삭제**를 선택 합니다.
+4. **솔루션 탐색기** 에서 *Entity1* (Visual Basic) 또는 *Entity1.cs* (c #)의 바로 가기 메뉴를 연 다음 **삭제** 를 선택 합니다.
 
-5. *Entity1Service* (Visual Basic) 또는 *Entity1Service.cs* (c #)의 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
+5. *Entity1Service* (Visual Basic) 또는 *Entity1Service.cs* (c #)의 바로 가기 메뉴를 열고 **삭제** 를 선택 합니다.
 
 ## <a name="add-an-entity-to-the-model"></a>모델에 엔터티 추가
 
 모델에 엔터티를 추가 합니다. Visual Studio **도구 상자** 의 엔터티를 BDC 디자이너에 추가할 수 있습니다.
 
-1. 메뉴 모음에서 **View**  >  **도구 상자**보기를 선택 합니다.
+1. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
 
-2. **도구 상자**의 **BusinessDataConnectivity** 탭에서 **엔터티** 를 BDC 디자이너에 추가 합니다.
+2. **도구 상자** 의 **BusinessDataConnectivity** 탭에서 **엔터티** 를 BDC 디자이너에 추가 합니다.
 
      새 엔터티가 디자이너에 표시 됩니다. Visual Studio는 *Entityservice .vb* (Visual Basic) 또는 *EntityService.cs* (c #의 경우) 라는 파일을 프로젝트에 추가 합니다.
 
-3. 메뉴 모음에서 **보기**  >  **속성**  >  **창**을 선택 합니다.
+3. 메뉴 모음에서 **보기**  >  **속성**  >  **창** 을 선택 합니다.
 
-4. **속성** 창에서 **이름** 속성 값을 **Contact**로 설정 합니다.
+4. **속성** 창에서 **이름** 속성 값을 **Contact** 로 설정 합니다.
 
-5. 디자이너에서 엔터티에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **식별자**를 선택 합니다.
+5. 디자이너에서 엔터티에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **식별자** 를 선택 합니다.
 
      엔터티에 새 식별자가 나타납니다.
 
-6. **속성** 창에서 식별자의 이름을 **ContactID**로 변경 합니다.
+6. **속성** 창에서 식별자의 이름을 **ContactID** 로 변경 합니다.
 
-7. **형식 이름** 목록에서 **system.object**를 선택 합니다.
+7. **형식 이름** 목록에서 **system.object** 를 선택 합니다.
 
 ## <a name="add-a-specific-finder-method"></a>특정 Finder 메서드 추가
 
@@ -146,11 +148,11 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 1. BDC 디자이너에서 **Contact** 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보**보기를 선택 합니다.
+2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
      BDC 메서드 세부 정보 창이 열립니다.
 
-3. **메서드 추가** 목록에서 **특정 Finder 메서드 만들기**를 선택 합니다.
+3. **메서드 추가** 목록에서 **특정 Finder 메서드 만들기** 를 선택 합니다.
 
      Visual Studio에서는 다음 요소를 모델에 추가 합니다. 이러한 요소는 **BDC 메서드 세부 정보** 창에 표시 됩니다.
 
@@ -164,29 +166,29 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
     - 메서드에 대 한 메서드 인스턴스입니다.
 
-4. **BDC 메서드 세부 정보** 창에서 **연락처** 유형 설명자에 대해 표시 되는 목록을 연 다음 **편집**을 선택 합니다.
+4. **BDC 메서드 세부 정보** 창에서 **연락처** 유형 설명자에 대해 표시 되는 목록을 연 다음 **편집** 을 선택 합니다.
 
      **BDC 탐색기** 가 열리고 모델의 계층 뷰가 제공 됩니다.
 
 5. **속성** 창에서 **TypeName** 속성 옆에 있는 목록을 열고 **현재 프로젝트** 탭을 선택한 후 **Contact** 속성을 선택 합니다.
 
-6. **BDC 탐색기**에서 **연락처**의 바로 가기 메뉴를 열고 **형식 설명자 추가**를 선택 합니다.
+6. **BDC 탐색기** 에서 **연락처** 의 바로 가기 메뉴를 열고 **형식 설명자 추가** 를 선택 합니다.
 
-     **TypeDescriptor1** 라는 새 형식 설명자가 **BDC 탐색기**에 나타납니다.
+     **TypeDescriptor1** 라는 새 형식 설명자가 **BDC 탐색기** 에 나타납니다.
 
-7. **속성** 창에서 **이름** 속성 값을 **ContactID**로 설정 합니다.
+7. **속성** 창에서 **이름** 속성 값을 **ContactID** 로 설정 합니다.
 
-8. **TypeName** 속성 옆에 있는 목록을 열고 **Int32**를 선택 합니다.
+8. **TypeName** 속성 옆에 있는 목록을 열고 **Int32** 를 선택 합니다.
 
-9. **식별자** 속성 옆에 있는 목록을 열고 **ContactID**를 선택 합니다.
+9. **식별자** 속성 옆에 있는 목록을 열고 **ContactID** 를 선택 합니다.
 
 10. 6 단계를 반복 하 여 다음 각 필드에 대 한 형식 설명자를 만듭니다.
 
-    |속성|유형 이름|
+    |Name|유형 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |전화|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -217,7 +219,7 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 
 2. **BDC 메서드 세부 정보** 창에서 **readitem** 노드를 축소 합니다.
 
-3. **Readlist** 메서드 아래의 **메서드 추가** 목록에서 **Finder 메서드 만들기**를 선택 합니다.
+3. **Readlist** 메서드 아래의 **메서드 추가** 목록에서 **Finder 메서드 만들기** 를 선택 합니다.
 
      Visual Studio는 메서드, 반환 매개 변수 및 형식 설명자를 추가 합니다.
 
@@ -252,7 +254,7 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 
 3. **만들기** 페이지에서 **외부 목록** 템플릿을 선택한 다음 **만들기** 단추를 선택 합니다.
 
-4. 사용자 지정 목록에 **연락처**이름을 지정 합니다.
+4. 사용자 지정 목록에 **연락처** 이름을 지정 합니다.
 
 5. **외부 콘텐츠 형식** 필드 옆에 있는 찾아보기 단추를 선택 합니다.
 
@@ -274,7 +276,7 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
 - [방법: 업데이트 프로그램 메서드 추가](../sharepoint/how-to-add-an-updater-method.md)
 - [방법: Deleter 메서드 추가](../sharepoint/how-to-add-a-deleter-method.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md) 
  [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md) 

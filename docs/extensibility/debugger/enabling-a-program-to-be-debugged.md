@@ -1,5 +1,7 @@
 ---
 title: 디버깅할 프로그램 사용 설정 | Microsoft Docs
+description: 디버그 엔진을 시작 하거나 디버그 엔진을 기존 프로그램에 연결 하 여 프로그램을 디버깅 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738900"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915260"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>디버깅할 프로그램 사용
 디버그 엔진 (DE)이 프로그램을 디버깅 하려면 먼저 DE를 시작 하거나 기존 프로그램에 연결 해야 합니다.

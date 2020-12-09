@@ -1,5 +1,7 @@
 ---
 title: '방법: 기능 종속성 추가 및 제거 | Microsoft Docs'
+description: Visual Studio의 기능 디자이너를 사용 하 여 SharePoint 솔루션에 기능 종속성을 추가 및 제거 하는 방법을 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c318a7dc4672a10e993d0149ec77e7f94679d465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014775"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915364"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>방법: 기능 종속성 추가 및 제거
   SharePoint 기능은 기능이 나 데이터의 다른 기능에 따라 달라질 수 있습니다. 이러한 경우에는 기능에 대 한 종속성으로 이러한 다른 기능을 표시할 수 있습니다. 이러한 방식으로 SharePoint 서버는 기능이 활성화 되기 전에 종속 기능이 활성화 되도록 합니다.
@@ -64,7 +66,7 @@ ms.locfileid: "86014775"
 
 1. 기능 디자이너에서 **기능 활성화 종속성** 노드를 확장 하 고 제거할 기능의 이름을 선택한 다음 **제거** 단추를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 기능 만들기](../sharepoint/creating-sharepoint-features.md)
 - [방법: SharePoint 기능 사용자 지정](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [방법: SharePoint 기능에 항목 추가 및 제거](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

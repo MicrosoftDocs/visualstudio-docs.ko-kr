@@ -1,6 +1,8 @@
 ---
 title: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
 titleSuffix: ''
+description: 사이트 열 프로젝트 템플릿에 마법사를 추가 하 여 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 SharePoint 프로젝트를 만들 때 사용자의 데이터를 수집 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585460"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915143"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿에 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 새 프로젝트를 만들 때이 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -41,7 +43,7 @@ ms.locfileid: "91585460"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  이 연습을 수행 하려면 먼저 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)완료 하 여 SiteColumnProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -80,13 +82,13 @@ ms.locfileid: "91585460"
 
 1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SiteColumnProjectItem 솔루션을 엽니다.
 
-2. **솔루션 탐색기**에서 **SiteColumnProjectItem** 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+2. **솔루션 탐색기** 에서 **SiteColumnProjectItem** 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 3. **새 프로젝트 추가** 대화 상자의 맨 위에서 .NET Framework 버전 목록에 **.NET Framework 4.5** 이 선택 되어 있는지 확인 합니다.
 
 4. **Visual c #** 노드 또는 **Visual Basic** 노드를 확장 하 고 **Windows** 노드를 선택 합니다.
 
-5. 프로젝트 템플릿 목록에서 **WPF 사용자 정의 컨트롤 라이브러리**를 선택 하 고 프로젝트 이름을 **projecttemplate 마법사**로 지정한 다음 **확인** 단추를 선택 합니다.
+5. 프로젝트 템플릿 목록에서 **WPF 사용자 정의 컨트롤 라이브러리** 를 선택 하 고 프로젝트 이름을 **projecttemplate 마법사** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Projecttemplatewizard** 프로젝트를 솔루션에 추가 하 고 기본 UserControl1 .xaml 파일을 엽니다.
 
@@ -94,13 +96,13 @@ ms.locfileid: "91585460"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>SharePoint 명령 프로젝트를 만들려면
 
-1. **솔루션 탐색기**에서 SiteColumnProjectItem 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 프로젝트**를 선택 합니다.
+1. **솔루션 탐색기** 에서 SiteColumnProjectItem 솔루션 노드에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 프로젝트** 를 선택 합니다.
 
 2. **새 프로젝트 추가** 대화 상자의 맨 위에 있는 .NET Framework 버전 목록에서 **.NET Framework 3.5** 를 선택 합니다.
 
 3. **Visual c #** 노드 또는 **Visual Basic** 노드를 확장 한 다음 **Windows** 노드를 선택 합니다.
 
-4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **SharePointCommands**로 지정한 다음 **확인** 단추를 선택 합니다.
+4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **SharePointCommands** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**SharePointCommands** 프로젝트를 솔루션에 추가 하 고 기본 Class1 코드 파일을 엽니다.
 
@@ -111,17 +113,17 @@ ms.locfileid: "91585460"
 
 #### <a name="to-configure-the-wizard-project"></a>마법사 프로젝트를 구성 하려면
 
-1. **솔루션 탐색기**에서 **projecttemplatewizard** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 **projecttemplatewizard** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **속성** 을 선택 합니다.
 
-2. **프로젝트 디자이너**에서 Visual c # 프로젝트의 경우 **응용 프로그램** 탭을 선택 하 고 Visual Basic 프로젝트의 경우 **컴파일** 탭을 선택 합니다.
+2. **프로젝트 디자이너** 에서 Visual c # 프로젝트의 경우 **응용 프로그램** 탭을 선택 하 고 Visual Basic 프로젝트의 경우 **컴파일** 탭을 선택 합니다.
 
 3. 대상 프레임 워크가 .NET Framework 4.5 클라이언트 프로필이 아닌 .NET Framework 4.5으로 설정 되어 있는지 확인 합니다.
 
      자세한 내용은 [방법: 한 버전의 .NET Framework을 대상으로 하는 방법](../ide/visual-studio-multi-targeting-overview.md)을 참조 하세요.
 
-4. **Project템플릿 마법사** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
+4. **Project템플릿 마법사** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가** 를 선택한 다음 **새 항목** 을 선택 합니다.
 
-5. **창 (WPF)** 항목을 선택 하 고 항목 이름을 **wizardwindow**로 지정한 다음 **추가** 단추를 선택 합니다.
+5. **창 (WPF)** 항목을 선택 하 고 항목 이름을 **wizardwindow** 로 지정한 다음 **추가** 단추를 선택 합니다.
 
 6. 프로젝트에 두 개의 **사용자 정의 컨트롤 (WPF)** 항목을 추가 하 고 이름을 **1에서 2로, 2** -2로 이름을 **로 합니다.**
 
@@ -135,7 +137,7 @@ ms.locfileid: "91585460"
 
     - CommandIds
 
-8. **Projecttemplatewizard** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **참조 추가**를 선택 합니다.
+8. **Projecttemplatewizard** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **참조 추가** 를 선택 합니다.
 
 9. **어셈블리** 노드를 확장 하 고 **확장** 노드를 선택 하 고 다음 어셈블리 옆의 확인란을 선택 합니다.
 
@@ -155,19 +157,19 @@ ms.locfileid: "91585460"
 
 10. 프로젝트에 어셈블리를 추가 하려면 **확인** 단추를 선택 합니다.
 
-11. **솔루션 탐색기**의 **project템플릿 마법사** 프로젝트에 대 한 **참조** 폴더 아래에서 **EnvDTE**를 선택 합니다.
+11. **솔루션 탐색기** 의 **project템플릿 마법사** 프로젝트에 대 한 **참조** 폴더 아래에서 **EnvDTE** 를 선택 합니다.
 
-12. **속성** 창에서 **Interop 형식 포함** 속성의 값을 **False**로 변경 합니다.
+12. **속성** 창에서 **Interop 형식 포함** 속성의 값을 **False** 로 변경 합니다.
 
-13. Visual Basic 프로젝트를 개발 하는 경우 **프로젝트 디자이너**를 사용 하 여 Project템플릿 마법사 네임 스페이스를 프로젝트로 가져옵니다.
+13. Visual Basic 프로젝트를 개발 하는 경우 **프로젝트 디자이너** 를 사용 하 여 Project템플릿 마법사 네임 스페이스를 프로젝트로 가져옵니다.
 
      자세한 내용은 [방법: 가져온 네임 스페이스 추가 또는 제거 &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)를 참조 하세요.
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointcommands 프로젝트를 구성 하려면
 
-1. **솔루션 탐색기**에서 **SharePointCommands** 프로젝트 노드를 선택 합니다.
+1. **솔루션 탐색기** 에서 **SharePointCommands** 프로젝트 노드를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**,  **기존 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트**,  **기존 항목 추가** 를 선택 합니다.
 
 3. **기존 항목 추가** 대화 상자에서 ProjectTemplateWizard 프로젝트의 코드 파일이 포함 된 폴더를 찾은 다음 **CommandIds** 코드 파일을 선택 합니다.
 
@@ -177,7 +179,7 @@ ms.locfileid: "91585460"
 
 5. **SharePointCommands** 프로젝트에서 명령 이라는 다른 코드 파일을 추가 합니다.
 
-6. SharePointCommands 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **참조 추가**를 선택 합니다.
+6. SharePointCommands 프로젝트를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **참조 추가** 를 선택 합니다.
 
 7. **어셈블리** 노드를 확장 하 고 **확장** 노드를 선택 하 고 다음 어셈블리 옆의 확인란을 선택 합니다.
 
@@ -270,7 +272,7 @@ ms.locfileid: "91585460"
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>두 번째 마법사 페이지 UI를 만들려면
 
-1. ProjectTemplateWizard 프로젝트에서 파일 (.xaml) 파일에 대 한 바로 가기 메뉴를 연 다음 **열기**를 선택 합니다.
+1. ProjectTemplateWizard 프로젝트에서 파일 (.xaml) 파일에 대 한 바로 가기 메뉴를 연 다음 **열기** 를 선택 합니다.
 
      사용자 정의 컨트롤이 디자이너에서 열립니다.
 
@@ -318,14 +320,14 @@ ms.locfileid: "91585460"
 
 #### <a name="to-build-your-project"></a>프로젝트를 빌드하려면
 
-1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+1. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>프로젝트 템플릿에서 키 .snk 파일을 제거 하는 중
  [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), 만든 프로젝트 템플릿에는 각 사이트 열 프로젝트 인스턴스에 서명 하는 데 사용 되는 key.snk 파일이 포함 되어 있습니다. 이제 마법사에서 각 프로젝트에 대 한 새 key.snk 파일을 생성 하므로이 key.snk 파일은 더 이상 필요 하지 않습니다. 프로젝트 템플릿에서 키 .snk 파일을 제거 하 고이 파일에 대 한 참조를 제거 합니다.
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>프로젝트 템플릿에서 키 .snk 파일을 제거 하려면
 
-1. **솔루션 탐색기**의 **SiteColumnProjectTemplate** 노드에서 **key.snk** 파일의 바로 가기 메뉴를 열고 **삭제**를 선택 합니다.
+1. **솔루션 탐색기** 의 **SiteColumnProjectTemplate** 노드에서 **key.snk** 파일의 바로 가기 메뉴를 열고 **삭제** 를 선택 합니다.
 
 2. 나타나는 확인 대화 상자에서 **확인** 단추를 선택합니다.
 
@@ -365,7 +367,7 @@ ms.locfileid: "91585460"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>강력한 이름을 사용 하 여 마법사 어셈블리에 서명 하려면
 
-1. **솔루션 탐색기**에서 **project템플릿 마법사** 프로젝트에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+1. **솔루션 탐색기** 에서 **project템플릿 마법사** 프로젝트에 대 한 바로 가기 메뉴를 열고 **속성** 을 선택 합니다.
 
 2. **서명** 탭에서 **어셈블리 서명** 확인란을 선택합니다.
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585460"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>마법사 어셈블리에 대 한 공개 키 토큰을 가져오려면
 
-1. **시작 메뉴**에서 **모든 프로그램**을 선택 하 고 **Microsoft Visual Studio**를 선택한 다음 **Visual Studio Tools**를 선택 하 고 **개발자 명령 프롬프트**를 선택 합니다.
+1. **시작 메뉴** 에서 **모든 프로그램** 을 선택 하 고 **Microsoft Visual Studio** 를 선택한 다음 **Visual Studio Tools** 를 선택 하 고 **개발자 명령 프롬프트** 를 선택 합니다.
 
      Visual Studio 명령 프롬프트 창이 열립니다.
 
@@ -393,7 +395,7 @@ ms.locfileid: "91585460"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>.Vstemplate 파일에서 마법사 어셈블리에 대 한 참조를 추가 하려면
 
-1. **솔루션 탐색기**에서 **SiteColumnProjectTemplate** 프로젝트 노드를 확장 하 고 SiteColumnProjectTemplate 파일을 엽니다.
+1. **솔루션 탐색기** 에서 **SiteColumnProjectTemplate** 프로젝트 노드를 확장 하 고 SiteColumnProjectTemplate 파일을 엽니다.
 
 2. 파일의 끝 부분에서 `WizardExtension` 및 태그 사이에 다음 요소를 추가 `</TemplateContent>` 합니다 `</VSTemplate>` . 특성의 *토큰* 값을 `PublicKeyToken` 이전 절차에서 가져온 공개 키 토큰으로 바꿉니다.
 
@@ -438,7 +440,7 @@ ms.locfileid: "91585460"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>VSIX 패키지에 마법사를 추가 하려면
 
-1. **솔루션 탐색기**의 **SiteColumnProjectItem** 프로젝트에서 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 연 다음 **열기**를 선택 합니다.
+1. **솔루션 탐색기** 의 **SiteColumnProjectItem** 프로젝트에서 **source.extension.vsixmanifest** 파일에 대 한 바로 가기 메뉴를 연 다음 **열기** 를 선택 합니다.
 
      Visual Studio가 매니페스트 편집기에서 파일을 엽니다.
 
@@ -446,23 +448,23 @@ ms.locfileid: "91585460"
 
      **새 자산 추가** 대화 상자가 열립니다.
 
-3. **유형** 목록에서 **VisualStudio**를 선택 합니다.
+3. **유형** 목록에서 **VisualStudio** 를 선택 합니다.
 
-4. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+4. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-5. **프로젝트** 목록에서 **projecttemplatewizard**를 선택 하 고 **확인** 단추를 선택 합니다.
+5. **프로젝트** 목록에서 **projecttemplatewizard** 를 선택 하 고 **확인** 단추를 선택 합니다.
 
 6. 편집기의 **자산** 탭에서 **새로 만들기** 단추를 다시 선택 합니다.
 
      **새 자산 추가** 대화 상자가 열립니다.
 
-7. **유형** 목록에서 **SharePoint. Commands**를 입력 합니다.
+7. **유형** 목록에서 **SharePoint. Commands** 를 입력 합니다.
 
-8. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+8. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
 9. **프로젝트** 목록에서 **SharePointCommands** 프로젝트를 선택한 다음 **확인** 단추를 선택 합니다.
 
-10. 메뉴 모음에서 빌드 **Build**  >  **솔루션**빌드를 선택한 다음 솔루션이 오류 없이 빌드되는지 확인 합니다.
+10. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 빌드되는지 확인 합니다.
 
 ## <a name="test-the-wizard"></a>마법사 테스트
  이제 마법사를 테스트할 준비가 되었습니다. 먼저 Visual Studio의 실험적 인스턴스에서 SiteColumnProjectItem 솔루션의 디버깅을 시작 합니다. 그런 다음 Visual Studio의 실험적 인스턴스에서 사이트 열 프로젝트에 대 한 마법사를 테스트 합니다. 마지막으로 프로젝트를 빌드하고 실행 하 여 사이트 열이 예상 대로 작동 하는지 확인 합니다.
@@ -473,37 +475,37 @@ ms.locfileid: "91585460"
 
 2. ProjectTemplateWizard 프로젝트에서 SiteColumnProjectWizard 코드 파일을 연 다음 메서드의 첫 번째 코드 줄에 중단점을 추가 합니다 `RunStarted` .
 
-3. 메뉴 모음에서 **디버그**  >  **예외**를 선택 합니다.
+3. 메뉴 모음에서 **디버그**  >  **예외** 를 선택 합니다.
 
 4. **예외** 대화 상자에서 **공용 언어 런타임 예외** 에 대해 **throw** 됨 및 **사용자가 처리 하지 않은** 확인란이 선택 취소 되었는지 확인 하 고 **확인** 단추를 선택 합니다.
 
-5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작**을 선택 하 여 디버깅을 시작 합니다.
+5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**  >  **디버깅 시작** 을 선택 하 여 디버깅을 시작 합니다.
 
      Visual Studio 는%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0에 확장을 설치 하 고 Visual Studio의 실험적 인스턴스를 시작 합니다. Visual Studio의이 인스턴스에서 프로젝트 항목을 테스트 합니다.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Visual Studio에서 마법사를 테스트 하려면
 
-1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서, 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
 2. 프로젝트 템플릿에서 지 원하는 언어에 따라 **Visual c #** 노드 또는 **Visual Basic** 노드를 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-3. 프로젝트 템플릿 목록에서 **사이트 열**을 선택 하 고 프로젝트 이름을 **SiteColumnWizardTest**로 지정한 다음 **확인** 단추를 선택 합니다.
+3. 프로젝트 템플릿 목록에서 **사이트 열** 을 선택 하 고 프로젝트 이름을 **SiteColumnWizardTest** 로 지정한 다음 **확인** 단추를 선택 합니다.
 
 4. 메서드의 이전에 설정한 중단점에서 Visual Studio의 다른 인스턴스의 코드가 중지 되는지 확인 `RunStarted` 합니다.
 
-5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그**계속을 선택 하 여 프로젝트를 계속 디버깅  >  **Continue**합니다.
+5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그** 계속을 선택 하 여 프로젝트를 계속 디버깅  >  **Continue** 합니다.
 
-6. **SharePoint 사용자 지정 마법사**에서 디버깅에 사용할 사이트의 URL을 입력 하 고 **다음** 단추를 선택 합니다.
+6. **SharePoint 사용자 지정 마법사** 에서 디버깅에 사용할 사이트의 URL을 입력 하 고 **다음** 단추를 선택 합니다.
 
-7. **SharePoint 사용자 지정 마법사**의 두 번째 페이지에서 다음과 같이 선택 합니다.
+7. **SharePoint 사용자 지정 마법사** 의 두 번째 페이지에서 다음과 같이 선택 합니다.
 
-   - **유형** 목록에서 **부울**을 선택 합니다.
+   - **유형** 목록에서 **부울** 을 선택 합니다.
 
-   - **그룹** 목록에서 **사용자 지정 예/아니요 열**을 선택 합니다.
+   - **그룹** 목록에서 **사용자 지정 예/아니요 열** 을 선택 합니다.
 
-   - **이름** 상자에 **내 예/아니요 열**을 입력 한 후 **마침** 단추를 선택 합니다.
+   - **이름** 상자에 **내 예/아니요 열** 을 입력 한 후 **마침** 단추를 선택 합니다.
 
-     **솔루션 탐색기**새 프로젝트가 표시 되 고 **Field1**이라는 프로젝트 항목이 포함 되며, Visual Studio에서 프로젝트의 *Elements.xml* 파일을 편집기에서 엽니다.
+     **솔루션 탐색기** 새 프로젝트가 표시 되 고 **Field1** 이라는 프로젝트 항목이 포함 되며, Visual Studio에서 프로젝트의 *Elements.xml* 파일을 편집기에서 엽니다.
 
 8. *Elements.xml* 에 마법사에서 지정한 값이 포함 되어 있는지 확인 합니다.
 
@@ -516,22 +518,22 @@ ms.locfileid: "91585460"
     > [!NOTE]
     > **스크립트 디버깅 사용 안 함** 대화 상자가 나타나면 **예** 단추를 선택 하 여 프로젝트를 계속 디버깅 합니다.
 
-2. **사이트 작업** 메뉴에서 **사이트 설정**을 선택 합니다.
+2. **사이트 작업** 메뉴에서 **사이트 설정** 을 선택 합니다.
 
-3. 사이트 설정 페이지의 **갤러리**에서 **사이트 열** 링크를 선택 합니다.
+3. 사이트 설정 페이지의 **갤러리** 에서 **사이트 열** 링크를 선택 합니다.
 
-4. 사이트 열 목록에서 **사용자 지정 예/아니요 열** 그룹에 **예/아니요 열**이라는 열이 포함 되어 있는지 확인 한 다음 웹 브라우저를 닫습니다.
+4. 사이트 열 목록에서 **사용자 지정 예/아니요 열** 그룹에 **예/아니요 열** 이라는 열이 포함 되어 있는지 확인 한 다음 웹 브라우저를 닫습니다.
 
 ## <a name="clean-up-the-development-computer"></a>개발 컴퓨터 정리
  프로젝트 항목 테스트를 마친 후 Visual Studio의 실험적 인스턴스에서 프로젝트 템플릿을 제거 합니다.
 
 #### <a name="to-clean-up-the-development-computer"></a>개발 컴퓨터를 정리 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
      **확장명 및 업데이트** 대화 상자가 열립니다.
 
-2. 확장 목록에서 **사이트 열**을 선택한 다음 **제거** 단추를 선택 합니다.
+2. 확장 목록에서 **사이트 열** 을 선택한 다음 **제거** 단추를 선택 합니다.
 
 3. 표시 되는 대화 상자에서 **예** 단추를 선택 하 여 확장을 제거할 것인지 확인 하 고 **지금 다시 시작** 단추를 선택 하 여 제거를 완료 합니다.
 

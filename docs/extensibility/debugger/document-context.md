@@ -1,5 +1,7 @@
 ---
 title: 문서 컨텍스트 | Microsoft Docs
+description: 소스 파일의 위치 또는 코드 컨텍스트의 소스 문서 위치를 나타내는 Visual Studio 디버깅의 문서 컨텍스트에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48fe651e69e5e2c97756788cc30e54454c26e51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d19830346ea09731dde608e019109f61011cd60
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738924"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915533"
 ---
 # <a name="document-context"></a>문서 컨텍스트
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그할 때 *문서 컨텍스트*는 다음과 같습니다.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그할 때 *문서 컨텍스트* 는 다음과 같습니다.
 
 - 소스 파일의 위치를 나타냅니다. 소스 파일이 없을 수 있는 언어의 경우 문서 컨텍스트는 런타임 환경에 의해 일반적으로 생성 되는 문서의 위치를 식별 합니다. 예를 들어 스크립팅 엔진은 스크립트에서 문서를 생성할 수 있습니다. 자세한 내용은 [문서 위치](../../extensibility/debugger/document-position.md)를 참조 하세요.
 
@@ -26,7 +28,7 @@ ms.locfileid: "80738924"
 
 - 는 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스에 의해 구현 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [코드 컨텍스트](../../extensibility/debugger/code-context.md)
 - [기호 공급자](../../extensibility/debugger/symbol-provider.md)
 - [기호 공급자 인터페이스](../../extensibility/debugger/reference/symbol-provider-interfaces.md)

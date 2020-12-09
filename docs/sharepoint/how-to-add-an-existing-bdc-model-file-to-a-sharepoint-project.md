@@ -1,6 +1,8 @@
 ---
 title: '방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가 | Microsoft Docs'
 titleSuffix: ''
+description: 기존 BDC (비즈니스 데이터 연결) 모델 파일을 Visual Studio의 SharePoint 프로젝트에 추가 하 여 BDC 모델을 사용자 지정 하 고, 패키지 하 고, 다시 배포할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,25 +20,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584622"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914961"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가
   Visual Studio를 사용 하 여 모델 파일 (*. bdcm*)을 SharePoint 팜 프로젝트에 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 사용자 지정 하 고 패키지 하 고 재배포할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조하세요.
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>SharePoint 프로젝트에 BDC 모델 파일을 추가 하려면
 
-1. **솔루션 탐색기**에서 SharePoint 프로젝트에 대 한 폴더를 선택 합니다.
+1. **솔루션 탐색기** 에서 SharePoint 프로젝트에 대 한 폴더를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**  >  **기존 항목 추가**를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트**  >  **기존 항목 추가** 를 선택 합니다.
 
 3. **기존 항목 추가** 대화 상자에서 프로젝트에 추가 하려는 모델 정의 파일의 위치로 이동 하 여 파일을 선택한 다음 **추가** 단추를 선택 합니다.
 
-    모델이 *.net 어셈블리 형식의 LOB (기간 업무) 시스템*을 정의 하지 않는 경우 **.Net 어셈블리 추가 LobSystem** 대화 상자가 열립니다.
+    모델이 *.net 어셈블리 형식의 LOB (기간 업무) 시스템* 을 정의 하지 않는 경우 **.Net 어셈블리 추가 LobSystem** 대화 상자가 열립니다.
 
 4. 대화 상자가 표시 되 면 다음 단계 중 하나를 수행 합니다.
 
