@@ -1,5 +1,7 @@
 ---
 title: SharePoint 코드 확인 및 디버깅 | Microsoft Docs
+description: SharePoint 코드를 확인 하 고 디버그 합니다. IntelliTrace를 사용 하 여 솔루션에서 과거 이벤트 및 현재 상태를 검사 합니다. 단위 테스트를 사용 하 여 메서드가 제대로 작동 하는지 확인 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008254"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914506"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>SharePoint 코드 확인 및 디버그
 IntelliTrace와 유닛 테스트를 사용하여 SharePoint 솔루션을 보다 쉽게 디버깅하고 솔루션의 각 메서드가 올바르게 작동하도록 할 수 있습니다. 다른 형식의 프로젝트와 동일한 절차를 수행 하 여 Visual Studio에서 SharePoint 프로젝트에 이러한 기능을 사용할 수 있습니다.
@@ -40,12 +42,12 @@ SharePoint 프로젝트는 .NET Framework 기반의 애플리케이션에서 대
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[IntelliTrace](../debugger/intellitrace.md)|IntelliTrace를 사용하여 Visual Studio 솔루션을 보다 쉽게 디버깅하는 방법을 설명합니다.|
 |[연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|IntelliTrace를 사용하여 SharePoint 프로젝트에서 코딩 오류를 찾는 방법을 보여 줍니다.|
 |[코드 단위 테스트](../test/unit-test-your-code.md)|단위 테스트를 사용 하 여 코드에서 논리 오류를 찾는 방법을 설명 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [코드 품질 향상](../test/improve-code-quality.md)

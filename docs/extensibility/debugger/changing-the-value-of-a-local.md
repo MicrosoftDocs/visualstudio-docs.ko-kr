@@ -1,5 +1,7 @@
 ---
 title: 로컬의 값 변경 | Microsoft Docs
+description: 지역 창의 값 필드에 새 값이 입력 될 때 로컬 값을 변경 하는 프로세스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904272"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914337"
 ---
 # <a name="change-the-value-of-a-local"></a>로컬의 값 변경
 > [!IMPORTANT]
@@ -28,7 +30,7 @@ ms.locfileid: "85904272"
 
 1. 사용자가 새 값을 입력 하면 Visual Studio는 로컬에 연결 된 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체에서 [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 을 호출 합니다.
 
-2. `IDebugProperty2::SetValueAsString`는 다음 작업을 수행합니다.
+2. `IDebugProperty2::SetValueAsString`은 다음 작업을 수행합니다.
 
    1. 문자열을 계산 하 여 값을 생성 합니다.
 
@@ -45,6 +47,6 @@ ms.locfileid: "85904272"
 ## <a name="in-this-section"></a>섹션 내용
  [변경 값의 샘플 구현](../../extensibility/debugger/sample-implementation-of-changing-values.md) MyCEE 샘플을 사용 하 여 값을 변경 하는 과정을 단계별로 실행 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)

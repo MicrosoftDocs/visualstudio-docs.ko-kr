@@ -1,5 +1,7 @@
 ---
 title: 디버거 이벤트 호출 | Microsoft Docs
+description: 디버깅 세션의 이벤트는 특정 순서로 발생 합니다. 이 문서에서는 일반적인 디버깅 세션에서 발생 하는 이벤트의 호출 순서를 나열 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904325"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914390"
 ---
 # <a name="call-debugger-events"></a>디버거 이벤트 호출
 디버깅 세션의 이벤트는 특정 순서로 발생 합니다.
@@ -35,7 +37,7 @@ ms.locfileid: "85904325"
 
 6. [중단점 오류](../../extensibility/debugger/breakpoint-errors.md)
 
-7. [중단점 도착](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [중단점 적중](../../extensibility/debugger/hitting-a-breakpoint.md)
 
 8. [중단점 삭제](../../extensibility/debugger/deleting-a-breakpoint.md)
 
@@ -47,5 +49,5 @@ ms.locfileid: "85904325"
 
 12. [예외 처리](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

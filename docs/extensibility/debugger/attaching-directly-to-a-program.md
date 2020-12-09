@@ -1,5 +1,7 @@
 ---
 title: 프로그램에 직접 연결 | Microsoft Docs
+description: Visual Studio가 Visual studio IDE에서이 프로시저를 사용 하 여 이미 실행 중인 프로세스에 디버그 엔진을 연결 하는 것을 구현 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903269"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913778"
 ---
 # <a name="attach-directly-to-a-program"></a>프로그램에 직접 연결
 이미 실행 중인 프로세스에서 프로그램을 디버깅 하려는 사용자는 일반적으로 다음 프로세스를 따릅니다.
@@ -28,7 +30,7 @@ ms.locfileid: "85903269"
 
     **프로세스에 연결** 대화 상자가 표시 되 고 컴퓨터에 설치 된 모든 DEs (디버그 엔진)가 나열 됩니다.
 
-3. 선택한 프로세스를 디버깅 하는 데 사용할 DEs를 지정 하 고 **확인**을 클릭 합니다.
+3. 선택한 프로세스를 디버깅 하는 데 사용할 DEs를 지정 하 고 **확인** 을 클릭 합니다.
 
    디버그 패키지는 디버그 세션을 시작 하 고 DEs 목록을 여기에 전달 합니다. 그러면 디버그 세션에서이 목록을 콜백 함수와 함께 선택한 프로세스에 전달한 다음 프로세스에 실행 중인 프로그램을 열거 하도록 요청 합니다.
 
@@ -40,6 +42,6 @@ ms.locfileid: "85903269"
 
    두 번째 예외는 이미 실행 중인 프로그램에 연결 해제를 통해 전송 되는 시작 이벤트에는 일반적으로 진입점 이벤트가 포함 되지 않기 때문입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [시작 후 시작 이벤트 보내기](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

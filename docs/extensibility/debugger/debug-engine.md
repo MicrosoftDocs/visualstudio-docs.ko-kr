@@ -1,5 +1,7 @@
 ---
 title: 디버그 엔진 | Microsoft Docs
+description: 디버그 엔진이 인터프리터 또는 운영 체제와 함께 작동 하 여 실행 제어, 중단점 및 식 평가와 같은 서비스를 제공 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739058"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914220"
 ---
 # <a name="debug-engine"></a>디버그 엔진
 DE (디버그 엔진)는 인터프리터 또는 운영 체제와 함께 작동 하 여 실행 제어, 중단점 및 식 평가와 같은 디버깅 서비스를 제공 합니다. DE는 디버깅 중인 프로그램의 상태를 모니터링 하는 일을 담당 합니다. 이 작업을 수행 하기 위해 DE는 CPU 또는 런타임에서 제공 하는 Api의 지원 되는 런타임에서 사용할 수 있는 모든 메서드를 사용 합니다.
@@ -37,7 +39,7 @@ DE (디버그 엔진)는 인터프리터 또는 운영 체제와 함께 작동 �
 
  DE는 식 계산기 구성 요소와 함께 작동 하 여 특정 런타임에서 식의 구문을 이해할 수 있도록 합니다. 또한 DE는 기호 처리기 구성 요소와 함께 작동 하 여 언어 컴파일러에서 생성 된 기호화 된 디버그 정보에 액세스 합니다. 자세한 내용은 [식 계산기](../../extensibility/debugger/expression-evaluator.md) 및 [기호 공급자](../../extensibility/debugger/symbol-provider.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)
 - [식 계산기](../../extensibility/debugger/expression-evaluator.md)
 - [기호 공급자](../../extensibility/debugger/symbol-provider.md)

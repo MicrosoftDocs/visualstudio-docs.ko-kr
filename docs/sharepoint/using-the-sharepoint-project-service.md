@@ -1,5 +1,7 @@
 ---
 title: SharePoint 프로젝트 서비스 사용 | Microsoft Docs
+description: SharePoint 프로젝트 서비스를 사용 하 여 프로젝트 시스템과 관련 된 작업을 수행 합니다. 프로젝트 서비스 기능 목록을 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3aeee895810eed8e434fda93328e4e179c9d39
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 635e4123d302cf5c3173ee298f0239f5fa1c95f3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740112"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914545"
 ---
 # <a name="use-the-sharepoint-project-service"></a>SharePoint 프로젝트 서비스 사용
   SharePoint 프로젝트 시스템에는 프로젝트 시스템과 관련된 작업을 수행하는 데 사용할 수 있는 프로젝트 서비스가 포함되어 있습니다. 프로젝트 서비스는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체입니다.
@@ -42,7 +44,7 @@ ms.locfileid: "90740112"
 |[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 또는 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]이 컴퓨터에 설치되어 있는지 여부를 확인합니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A> 속성|
 |SharePoint 솔루션에 있는 기능이나 패키지의 유효성을 검사합니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A> 속성|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 - [방법: SharePoint 프로젝트 서비스 검색](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [Visual Studio의 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

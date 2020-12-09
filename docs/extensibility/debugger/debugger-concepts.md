@@ -1,5 +1,7 @@
 ---
 title: 디버거 개념 | Microsoft Docs
+description: 해당 패키지를 빌드하는 데 도움이 되는 Visual Studio 디버그 패키지를 디자인 하는 데 사용 되는 아키텍처 개념에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738987"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914038"
 ---
 # <a name="debugger-concepts"></a>디버거 개념
 Visual Studio 디버그 패키지를 빌드하려면 패키지를 디자인 하는 데 사용 되는 아키텍처 개념에 대해 잘 알고 있어야 합니다.
@@ -44,7 +46,7 @@ Visual Studio 디버그 패키지를 빌드하려면 패키지를 디자인 하�
  [중단점](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) 디버깅 아키텍처 측면에서 세 가지 유형의 중단점 (보류 중, 바인딩 및 오류)을 정의 합니다.
 
 ## <a name="related-sections"></a>관련 단원
- [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 디버그 엔진 (DE)이 코드, 설명서 및 식 계산 컨텍스트 내에서 동시에 작동 하는 방법을 설명 합니다. 각각의 세 가지 컨텍스트, 위치, 위치 또는 관련 평가에 대해 설명 합니다.
+ [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 디버그 엔진 (DE)이 코드, 설명서 및 식 계산 컨텍스트 내에서 동시에 작동 하는 방법을 설명 합니다. 세 가지 컨텍스트, 위치 또는 관련 계산에 관해 설명합니다.
 
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md) 디버그 엔진 (DE), 식 계산기 (EE) 및 기호 처리기 (SH)를 포함 하는 Visual Studio 디버깅 구성 요소에 대 한 개요를 제공 합니다.
 

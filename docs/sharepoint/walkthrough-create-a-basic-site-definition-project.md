@@ -1,5 +1,7 @@
 ---
 title: '연습: 기본 사이트 정의 프로젝트 만들기 | Microsoft Docs'
+description: 이 SharePoint 연습에서는 몇 가지 컨트롤을 사용 하 여 시각적 웹 파트를 포함 하는 기본 사이트 정의를 만드는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016762"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913856"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>연습: 기본 사이트 정의 프로젝트 만들기
   이 연습에서는 일부 컨트롤을 포함 하는 시각적 웹 파트를 포함 하는 기본 사이트 정의를 만드는 방법을 보여 줍니다. 명확 하 게 하기 위해 만드는 시각적 웹 파트에는 몇 개의 컨트롤만 있습니다. 그러나 더 많은 기능을 포함 하는 보다 정교한 SharePoint 사이트 정의를 만들 수 있습니다.
@@ -47,7 +49,7 @@ ms.locfileid: "86016762"
 
 #### <a name="to-create-a-site-definition-project"></a>사이트 정의 프로젝트를 만들려면
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 메뉴 모음에서 **파일**  >  **새로 만들기 프로젝트**를 선택 합니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다. IDE가 Visual Basic 개발 설정을 사용 하도록 설정 된 경우 메뉴 모음에서 **파일**  >  **새로 만들기 프로젝트** 를 선택 합니다.
 
     **새 프로젝트** 대화 상자가 나타납니다.
 
@@ -55,7 +57,7 @@ ms.locfileid: "86016762"
 
 3. **템플릿** 목록에서 **SharePoint 2010 프로젝트** 템플릿을 선택 합니다.
 
-4. **이름** 상자에 **testsitedef**를 입력 하 고 **확인** 단추를 선택 합니다.
+4. **이름** 상자에 **testsitedef** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
     **SharePoint 사용자 지정 마법사** 가 나타납니다.
 
@@ -67,22 +69,22 @@ ms.locfileid: "86016762"
 
 7. **마침** 단추를 선택합니다.
 
-    프로젝트가 **솔루션 탐색기**에 나타납니다.
+    프로젝트가 **솔루션 탐색기** 에 나타납니다.
 
-8. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+8. **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
-9. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+9. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-10. **템플릿** 창에서 **사이트 정의** 템플릿을 선택 하 고 **이름을** **SiteDefinition1**로 지정한 다음 **추가** 단추를 선택 합니다.
+10. **템플릿** 창에서 **사이트 정의** 템플릿을 선택 하 고 **이름을** **SiteDefinition1** 로 지정한 다음 **추가** 단추를 선택 합니다.
 
 ## <a name="create-a-visual-web-part"></a>시각적 웹 파트 만들기
  그런 다음 사이트 정의의 기본 페이지에 표시 되는 시각적 웹 파트를 만듭니다.
 
 #### <a name="to-create-a-visual-web-part"></a>비주얼 웹 파트를 만들려면
 
-1. **솔루션 탐색기**에서 **모든 파일 표시** 단추를 선택 합니다.
+1. **솔루션 탐색기** 에서 **모든 파일 표시** 단추를 선택 합니다.
 
-2. **SiteDefinition1** 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+2. **SiteDefinition1** 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016762"
 
      *VisualWebPart1* 파일이 열립니다.
 
-5. *VisualWebPart1*의 맨 아래에 다음 태그를 추가 하 여 텍스트 상자, 단추 및 레이블의 세 가지 컨트롤을 폼에 추가 합니다.
+5. *VisualWebPart1* 의 맨 아래에 다음 태그를 추가 하 여 텍스트 상자, 단추 및 레이블의 세 가지 컨트롤을 폼에 추가 합니다.
 
     ```aspx-csharp
     <table>
@@ -110,7 +112,7 @@ ms.locfileid: "86016762"
     </table>
     ```
 
-6. *VisualWebPart1*에서 *VisualWebPart1.ascx.cs* 파일 (의 경우) [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 또는 *VisualWebPart1* (의 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] )을 열고 다음 코드를 추가 합니다.
+6. *VisualWebPart1* 에서 *VisualWebPart1.ascx.cs* 파일 (의 경우) [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 또는 *VisualWebPart1* (의 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] )을 열고 다음 코드를 추가 합니다.
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -140,14 +142,14 @@ ms.locfileid: "86016762"
 
      이 코드는 이전에 만든 비주얼 웹 파트에 대 한 참조를 만듭니다.
 
-3. **솔루션 탐색기**에서 **SiteDefinition1** 노드의 바로 가기 메뉴를 열고 **시작 항목으로 설정**을 선택 합니다.
+3. **솔루션 탐색기** 에서 **SiteDefinition1** 노드의 바로 가기 메뉴를 열고 **시작 항목으로 설정** 을 선택 합니다.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>사이트 정의 솔루션 배포 및 실행
  그런 다음 프로젝트를 SharePoint에 배포 하 고 프로젝트를 실행 합니다.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>사이트 정의를 배포 및 실행하려면
 
-- 메뉴 모음에서 **빌드**  >  **testsitedef 배포**를 선택 합니다.
+- 메뉴 모음에서 **빌드**  >  **testsitedef 배포** 를 선택 합니다.
 
 - **F5** 키를 선택합니다.
 
@@ -166,7 +168,7 @@ ms.locfileid: "86016762"
 
 4. **템플릿** 섹션에서 **SharePoint 사용자 지정** 탭을 선택 합니다.
 
-5. **템플릿 선택** 목록에서 **SiteDefinition1**를 선택 합니다.
+5. **템플릿 선택** 목록에서 **SiteDefinition1** 를 선택 합니다.
 
 6. 다른 설정은 기본값으로 유지 하 고 **만들기** 단추를 선택 합니다.
 
@@ -181,6 +183,6 @@ ms.locfileid: "86016762"
 
      텍스트는 단추 오른쪽의 레이블에 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

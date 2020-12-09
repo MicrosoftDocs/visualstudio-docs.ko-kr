@@ -1,5 +1,7 @@
 ---
 title: 컨트롤 이벤트 | Microsoft Docs
+description: IDebugEvent2 인터페이스를 사용 하 여 프로그램을 제어 하는 실행 중에 이벤트를 보내는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2c3ad9c9b63923bdf2f107e7bc582f3c76cd62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739093"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914246"
 ---
 # <a name="control-events"></a>컨트롤 이벤트
 프로그램의 제어 된 실행 중에 이벤트를 전송 해야 합니다. 모든 이벤트는 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 인터페이스를 사용 하 여 전송 되며 [IDebugEvent2:: getattributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 메서드를 구현 해야 하는 특성이 있습니다.
@@ -37,5 +39,5 @@ ms.locfileid: "80739093"
 
   엔진에서 문자열 스타일의 출력을 쓰려면 [IDebugOutputStringEvent2:: GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

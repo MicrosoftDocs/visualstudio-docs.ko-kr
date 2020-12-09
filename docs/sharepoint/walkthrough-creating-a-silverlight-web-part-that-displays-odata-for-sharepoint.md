@@ -1,6 +1,8 @@
 ---
 title: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
 titleSuffix: ''
+description: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트를 만듭니다. Silverlight 응용 프로그램을 사용자 지정 하 고 Silverlight 웹 파트를 수정 하 고 테스트 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298497"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914792"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010는 OData를 통해 목록 데이터를 노출 합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData .svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스팅하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램은 ListData .svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint FOUNDATION REST 인터페이스](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 및 [Open Data Protocol](https://www.odata.org/)을 참조 하세요.
@@ -42,7 +44,7 @@ ms.locfileid: "92298497"
 
 1. 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. 템플릿 창에서 **SharePoint 2010 Silverlight 웹 파트** 템플릿을 선택 합니다.
 
@@ -58,9 +60,9 @@ ms.locfileid: "92298497"
 
 7. **Silverlight 구성 정보 지정** 페이지의 **silverlight 웹 파트를 연결 하는 방법** 섹션에서 **새 silverlight 프로젝트 만들기 및 웹 파트에 연결** 옵션 단추를 선택 합니다.
 
-8. **이름을** **slapplication**으로 변경 하 고 **Language** 를 **Visual Basic** 또는 **Visual c #** 으로 설정한 후 **silverlight 버전** 을 **silverlight 4.0**로 설정 합니다.
+8. **이름을** **slapplication** 으로 변경 하 고 **Language** 를 **Visual Basic** 또는 **Visual c #** 으로 설정한 후 **silverlight 버전** 을 **silverlight 4.0** 로 설정 합니다.
 
-9. **마침** 단추를 선택합니다. 프로젝트는 **솔루션 탐색기**표시 됩니다.
+9. **마침** 단추를 선택합니다. 프로젝트는 **솔루션 탐색기** 표시 됩니다.
 
      이 솔루션에는 Silverlight 응용 프로그램 및 Silverlight 웹 파트의 두 프로젝트가 포함 되어 있습니다. Silverlight 응용 프로그램은 SharePoint에서 목록 데이터를 검색 및 표시 하 고 silverlight 웹 파트는 Silverlight 응용 프로그램을 호스트 하 여 SharePoint에서 볼 수 있도록 합니다.
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298497"
 
 1. Silverlight 응용 프로그램에서 System.object에 대 한 어셈블리 참조를 추가 합니다. 자세한 내용은 [방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](/previous-versions/wkze6zky(v=vs.140))를 참조 하세요.
 
-2. **솔루션 탐색기**에서 **참조**에 대 한 바로 가기 메뉴를 열고 **서비스 참조 추가**를 선택 합니다.
+2. **솔루션 탐색기** 에서 **참조** 에 대 한 바로 가기 메뉴를 열고 **서비스 참조 추가** 를 선택 합니다.
 
     > [!NOTE]
     > Visual Basic를 사용 하는 경우 **솔루션 탐색기** 맨 위에 있는 **모든 파일 표시** 아이콘을 선택 하 여 **참조** 노드를 표시 해야 합니다.
@@ -82,9 +84,9 @@ ms.locfileid: "92298497"
 
 4. **확인** 단추를 선택 하 여 프로젝트에 서비스 참조를 추가 하 고 기본 서비스 이름인 ServiceReference1를 사용 합니다.
 
-5. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+5. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
-6. SharePoint 서비스를 기반으로 프로젝트에 새 데이터 원본을 추가 합니다. 이렇게 하려면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 원본**보기를 선택 합니다.
+6. SharePoint 서비스를 기반으로 프로젝트에 새 데이터 원본을 추가 합니다. 이렇게 하려면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다.
 
      **데이터 소스** 창에는 사용 가능한 모든 SharePoint 목록 데이터 (예: 작업, 알림 및 일정)가 표시 됩니다.
 
@@ -94,7 +96,7 @@ ms.locfileid: "92298497"
 
 8. Silverlight 페이지에 맞게 표 형태 컨트롤의 크기를 조정 합니다.
 
-9. Mainpage 코드 파일 (Visual c #의 경우 또는 Visual Basic*mainpage* )에서 다음 네임 스페이스 참조를 추가 합니다. *MainPage.xaml.vb*
+9. Mainpage 코드 파일 (Visual c #의 경우 또는 Visual Basic *mainpage* )에서 다음 네임 스페이스 참조를 추가 합니다. *MainPage.xaml.vb*
 
     ```vb
     ' Add the following three Imports statements.
@@ -197,7 +199,7 @@ ms.locfileid: "92298497"
 
 #### <a name="to-modify-the-silverlight-web-part"></a>Silverlight 웹 파트를 수정 하려면
 
-1. Silverlight 웹 파트 프로젝트 (**Slwebparttest**)에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+1. Silverlight 웹 파트 프로젝트 (**Slwebparttest**)에 대 한 바로 가기 메뉴를 열고 **속성** 을 선택 합니다.
 
 2. **속성** 창에서 **SharePoint** 탭을 선택 합니다.
 
@@ -212,13 +214,13 @@ ms.locfileid: "92298497"
 
 1. **F5** 키를 선택 하 여 SharePoint 솔루션을 빌드하고 실행 합니다.
 
-2. SharePoint의 **사이트 작업** 메뉴에서 **새로 만들기 페이지**를 선택 합니다.
+2. SharePoint의 **사이트 작업** 메뉴에서 **새로 만들기 페이지** 를 선택 합니다.
 
-3. **새 페이지** 대화 상자에서 **SL 웹 파트 테스트**와 같은 제목을 입력 한 다음 **만들기** 단추를 선택 합니다.
+3. **새 페이지** 대화 상자에서 **SL 웹 파트 테스트** 와 같은 제목을 입력 한 다음 **만들기** 단추를 선택 합니다.
 
-4. 페이지 디자이너의 **편집 도구** 탭에서 **삽입**을 선택 합니다.
+4. 페이지 디자이너의 **편집 도구** 탭에서 **삽입** 을 선택 합니다.
 
-5. 탭 스트립에서 **웹 파트**를 선택 합니다.
+5. 탭 스트립에서 **웹 파트** 를 선택 합니다.
 
 6. **범주** 상자에서 **사용자 지정** 폴더를 선택 합니다.
 
@@ -231,6 +233,6 @@ ms.locfileid: "92298497"
     > [!NOTE]
     > 도메인 간에 Silverlight의 데이터에 액세스 하는 경우 Silverlight는 웹 응용 프로그램을 악용 하는 데 사용할 수 있는 보안 취약성을 방지 합니다. Silverlight에서 원격 데이터에 액세스할 때 문제가 발생 하면 [도메인 경계에서 서비스를 사용할 수 있도록 설정](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [SharePoint 솔루션 패키지 배포, 게시 및 업그레이드](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

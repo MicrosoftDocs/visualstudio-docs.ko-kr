@@ -1,5 +1,7 @@
 ---
 title: 중단점 (Visual Studio SDK) | Microsoft Docs
+description: 보류 중, 바인딩 및 오류와 같은 세 가지 유형의 중단점에 대해 알아봅니다. 이 문서에서는 형식을 구현 하는 데 사용 되는 인터페이스를 나열 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d266bb97b6d3086a8f5b74100f5821a5cfca3af
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739194"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914454"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>중단점(Visual Studio SDK)
 중단점에는 보류 중, 바인딩 및 오류의 세 가지 유형이 있습니다.
@@ -44,8 +46,8 @@ ms.locfileid: "80739194"
 
 - 는 [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 인터페이스로 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
-- [프로그램](../../extensibility/debugger/programs.md)
+## <a name="see-also"></a>참고 항목
+- [Programs](../../extensibility/debugger/programs.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
 - [코드 컨텍스트](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

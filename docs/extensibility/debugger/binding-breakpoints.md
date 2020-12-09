@@ -1,5 +1,7 @@
 ---
 title: 바인딩 중단점 | Microsoft Docs
+description: IDE에서 중단점 요청을 공식화 하 고, 사용자가 중단점을 설정 하는 경우 중단점을 만들도록 디버그 세션에 메시지를 표시 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903226"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914714"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
-사용자가 **F9**키를 눌러 중단점을 설정 하는 경우 IDE에서 요청을 공식화 하 고 디버그 세션에 메시지를 표시 하 여 중단점을 만듭니다.
+사용자가 **F9** 키를 눌러 중단점을 설정 하는 경우 IDE에서 요청을 공식화 하 고 디버그 세션에 메시지를 표시 하 여 중단점을 만듭니다.
 
 ## <a name="set-a-breakpoint"></a>중단점 설정
  중단점 설정은 중단점의 영향을 받는 코드 또는 데이터를 아직 사용 하지 못할 수 있기 때문에 2 단계 프로세스입니다. 먼저 중단점을 설명 하 고 나 서 코드 또는 데이터를 사용할 수 있게 되 면 다음과 같이 해당 코드 또는 데이터에 바인딩되어야 합니다.
@@ -53,5 +55,5 @@ ms.locfileid: "85903226"
 
  DE가 중단점을 처리 하는 경우에는 바인딩할 수 없지만 다른 DE는이를 바인딩할 수 있지만 경고를 반환 합니다. IDE는 소스 코드 줄의 왼쪽에 있는 중단점 문자 모양 안에 물음표 문자 모양을 배치 하 여 응답 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

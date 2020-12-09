@@ -1,5 +1,7 @@
 ---
 title: 중단점 오류 | Microsoft Docs
+description: 중단점이 코드에 바인딩하려는 경우 프로세스에 대해 알아보고 실패 하 고 중단점 오류를 해결 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739221"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914493"
 ---
 # <a name="breakpoint-errors"></a>중단점 오류
 다음은 중단점에서 코드에 바인딩하려고 하지만 실패 하는 경우의 프로세스에 대 한 설명입니다.
@@ -32,5 +34,5 @@ ms.locfileid: "80739221"
 
 4. SDM은 [IDebugErrorBreakpoint2:: GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 을 호출 하 여 오류 중단점을 바인딩하지 못한 이유를 가져옵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

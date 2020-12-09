@@ -1,5 +1,7 @@
 ---
 title: 시작 후 연결 | Microsoft Docs
+description: 프로그램이 시작 되 면 디버그 세션이 프로그램에 디버그 엔진을 연결할 준비가 된 것입니다. 디버그 엔진과의 통신을 위한 디자인 방법을 선택 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739289"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913895"
 ---
 # <a name="attach-after-a-launch"></a>시작 후 연결
 프로그램이 시작 된 후 디버그 세션은 디버그 엔진 (DE)을 프로그램에 연결할 준비가 된 것입니다.
@@ -43,7 +45,7 @@ ms.locfileid: "80739289"
 
  이제 DE가 프로그램에 연결 되 고 시작 이벤트를 보낼 준비가 되었습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로그램에 직접 연결](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [포트에 알림](../../extensibility/debugger/notifying-the-port.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

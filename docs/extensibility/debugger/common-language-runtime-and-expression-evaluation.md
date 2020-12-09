@@ -1,5 +1,7 @@
 ---
 title: 공용 언어 런타임 및 식 계산 | Microsoft Docs
+description: 공용 언어 런타임이 디버그 엔진과 상호 작용 하는 방법과 소유 프로그래밍 언어를 Visual Studio IDE에 통합 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7c120ac1da59ab86e9419bcb031af46f1b3d900
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739115"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914259"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>공용 언어 런타임 및 식 계산
 > [!IMPORTANT]
@@ -35,5 +37,5 @@ ms.locfileid: "80739115"
 
  CLR DE가 독점 EE를 호출 하 여 식을 계산할 때 DE는 EE와 바인더 개체에 대 한 인터페이스를 제공 합니다. 따라서 CLR 기반 디버그 엔진을 작성 하는 것은 적절 한 식 계산기 인터페이스만 구현 해야 한다는 것을 의미 합니다. CLR은 바인딩과 기호 처리를 처리 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

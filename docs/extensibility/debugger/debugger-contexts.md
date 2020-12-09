@@ -1,5 +1,7 @@
 ---
 title: 디버거 컨텍스트 | Microsoft Docs
+description: Visual Studio 디버그 엔진이 코드 컨텍스트, 설명서 컨텍스트, 위치 및 식 계산 컨텍스트 내에서 작동 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56825fe299147e60c5ed9dfcefa491a427ab59e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738967"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914688"
 ---
 # <a name="debugger-contexts"></a>디버거 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 디버그 엔진 (DE)은 다음과 같이 여러 개의 고유 컨텍스트 내에서 동시에 작동 합니다.

@@ -1,5 +1,7 @@
 ---
 title: 디버거 구성 요소 | Microsoft Docs
+description: VSPackage 구현 되는 Visual Studio 디버거에서 관리 하는 디버그 세션을 구성 하는 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739014"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914116"
 ---
 # <a name="debugger-components"></a>디버거 구성 요소
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버거는 VSPackage으로 구현 되 고 전체 디버그 세션을 관리 합니다. 디버그 세션은 다음 요소로 구성 됩니다.
@@ -56,11 +58,11 @@ ms.locfileid: "80739014"
  [형식 시각화 도우미 및 사용자 지정 뷰어](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 형식 시각화 도우미 및 사용자 지정 뷰어가 무엇 인지와 식 계산기가 둘 다 지원 하기 위해 수행 하는 역할에 대해 설명 합니다.
 
 ## <a name="related-sections"></a>관련 단원
- [디버거 개념](../../extensibility/debugger/debugger-concepts.md) 주요 디버깅 아키텍처 개념을 설명 합니다.
+ [디버거 개념](../../extensibility/debugger/debugger-concepts.md) 기본 디버깅 아키텍처 개념을 설명합니다.
 
- [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 코드, 설명서 및 식 계산 컨텍스트 내에서 DE가 동시에 작동 하는 방식을 설명 합니다. 각각의 세 가지 컨텍스트, 위치, 위치 또는 관련 평가에 대해 설명 합니다.
+ [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md) 코드, 문서 및 식 계산 컨텍스트 내에서 DE가 동시에 작동하는 방식을 설명합니다. 세 가지 컨텍스트, 위치 또는 관련 계산에 관해 설명합니다.
 
  [디버그 작업](../../extensibility/debugger/debugging-tasks.md) 프로그램 시작 및 식 계산과 같은 다양 한 디버깅 태스크에 대 한 링크를 포함 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [시작](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

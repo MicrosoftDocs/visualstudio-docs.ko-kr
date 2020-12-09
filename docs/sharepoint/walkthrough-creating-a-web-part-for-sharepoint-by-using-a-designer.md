@@ -1,5 +1,7 @@
 ---
 title: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기
+description: 이 연습에서는 Visual Studio에서 SharePoint 비주얼 웹 파트 프로젝트 템플릿을 사용 하 여 시각적으로 웹 파트를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016389"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913986"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용하여 SharePoint용 웹 파트 만들기
 
 SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브라우저를 사용 하 여 해당 사이트에서 페이지의 콘텐츠, 모양 및 동작을 직접 수정할 수 있습니다. 이 연습에서는 Visual Studio에서 SharePoint **비주얼 웹 파트** 프로젝트 템플릿을 사용 하 여 시각적으로 웹 파트를 만드는 방법을 보여 줍니다.
 
@@ -49,11 +51,11 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **관리자 권한으로 실행** 옵션을 사용 하 여 시작 합니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
      **새 프로젝트** 대화 상자가 나타납니다.
 
-3. **새 프로젝트** 대화 상자의 **Visual c #** 또는 **Visual Basic**에서 **Office/sharepoint**를 확장 한 다음 **SharePoint 솔루션** 범주를 선택 합니다.
+3. **새 프로젝트** 대화 상자의 **Visual c #** 또는 **Visual Basic** 에서 **Office/sharepoint** 를 확장 한 다음 **SharePoint 솔루션** 범주를 선택 합니다.
 
 4. 템플릿 목록에서 **SharePoint 2013-비주얼 웹 파트** 템플릿을 선택한 다음 **확인** 단추를 선택 합니다.
 
@@ -69,23 +71,23 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 1. Visual Web Developer 디자이너에서 **디자인** 탭을 선택 하 여 디자인 뷰로 전환 합니다.
 
-2. 메뉴 모음에서 **View**  >  **도구 상자**보기를 선택 합니다.
+2. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
 
-3. **도구 상자**의 **표준** 노드에서 **CheckBoxList** 컨트롤을 선택 하 고 다음 단계 중 하나를 수행 합니다.
+3. **도구 상자** 의 **표준** 노드에서 **CheckBoxList** 컨트롤을 선택 하 고 다음 단계 중 하나를 수행 합니다.
 
-    - **CheckBoxList** 컨트롤에 대 한 바로 가기 메뉴를 열고 **복사**를 선택 하 고 디자이너의 첫 번째 줄에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기**를 선택 합니다.
+    - **CheckBoxList** 컨트롤에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 디자이너의 첫 번째 줄에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
-    - **도구 상자**에서 **CheckBoxList** 컨트롤을 끌고 디자이너의 첫 번째 줄에 컨트롤을 연결 합니다.
+    - **도구 상자** 에서 **CheckBoxList** 컨트롤을 끌고 디자이너의 첫 번째 줄에 컨트롤을 연결 합니다.
 
 4. 이전 단계를 반복 하지만 단추를 디자이너의 다음 줄로 이동 합니다.
 
 5. 디자이너에서 **Button1** 단추를 선택 합니다.
 
-6. 메뉴 모음에서 **보기**  >  **속성 창**을 선택 합니다.
+6. 메뉴 모음에서 **보기**  >  **속성 창** 을 선택 합니다.
 
      **속성** 창이 열립니다.
 
-7. 단추의 **텍스트** 속성에서 **Update**를 입력 합니다.
+7. 단추의 **텍스트** 속성에서 **Update** 를 입력 합니다.
 
 ## <a name="handling-the-events-of-controls-on-the-web-part"></a>웹 파트에 있는 컨트롤의 이벤트 처리
 
@@ -95,7 +97,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
    - 디자이너에서 **업데이트** 단추를 두 번 클릭 합니다.
 
-   - **업데이트** 단추의 **속성** 창에서 **이벤트** 단추를 선택 합니다. **클릭** 속성에서 **Button1_Click**를 입력 한 다음 enter 키를 선택 합니다.
+   - **업데이트** 단추의 **속성** 창에서 **이벤트** 단추를 선택 합니다. **클릭** 속성에서 **Button1_Click** 를 입력 한 다음 enter 키를 선택 합니다.
 
      코드 편집기에서 사용자 정의 컨트롤 코드 파일이 열리고 `Button1_Click` 이벤트 처리기가 나타납니다. 나중에이 이벤트 처리기에 코드를 추가 합니다.
 
@@ -139,7 +141,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
      SharePoint 사이트가 열리고 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 빠른 실행 표시줄이 페이지에 나타납니다.
 
-2. 빠른 실행 표시줄의 **목록**에서 **달력** 링크를 선택 합니다.
+2. 빠른 실행 표시줄의 **목록** 에서 **달력** 링크를 선택 합니다.
 
      **달력** 페이지가 나타납니다.
 
@@ -147,13 +149,13 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 3. 달력 페이지에서 일을 선택한 다음 선택한 날짜의 **추가** 링크를 선택 하 여 이벤트를 추가 합니다.
 
-4. **제목** 상자에서 **기본 달력에 이벤트**를 입력 한 다음 **저장** 단추를 선택 합니다.
+4. **제목** 상자에서 **기본 달력에 이벤트** 를 입력 한 다음 **저장** 단추를 선택 합니다.
 
 5. **사이트 콘텐츠** 링크를 선택 하 고 **앱 추가** 타일을 선택 합니다.
 
 6. **만들기** 페이지에서 **달력** 유형을 선택 하 고 일정 이름을 지정한 다음 **만들기** 단추를 선택 합니다.
 
-7. 새 일정에 이벤트를 추가 하 고 **사용자 지정 달력에서 이벤트 이벤트**의 이름을 지정한 다음 **저장** 단추를 선택 합니다.
+7. 새 일정에 이벤트를 추가 하 고 **사용자 지정 달력에서 이벤트 이벤트** 의 이름을 지정한 다음 **저장** 단추를 선택 합니다.
 
 ### <a name="to-add-the-web-part-to-a-web-part-page"></a>웹 파트 페이지에 웹 파트를 추가 하려면
 
@@ -161,7 +163,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 2. 리본 메뉴에서 **파일** 탭을 선택 하 고 **새 문서** 메뉴를 연 다음 **웹 파트 페이지** 명령을 선택 합니다.
 
-3. **새 웹 파트 페이지** 페이지에서 **SampleWebPartPage**페이지의 이름을 지정한 다음 **만들기** 단추를 선택 합니다.
+3. **새 웹 파트 페이지** 페이지에서 **SampleWebPartPage** 페이지의 이름을 지정한 다음 **만들기** 단추를 선택 합니다.
 
      웹 파트 페이지가 표시 됩니다.
 
@@ -185,7 +187,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 지정한 모든 달력의 이벤트가 월별 달력 보기에 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 SharePoint 용 웹 [파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

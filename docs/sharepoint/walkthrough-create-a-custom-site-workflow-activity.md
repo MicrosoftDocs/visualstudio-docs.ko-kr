@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 사이트 워크플로 작업 만들기 | Microsoft Docs'
+description: 이 연습에서는 Visual Studio를 사용 하 여 사이트 수준 SharePoint 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 참조 하세요.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016538"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913958"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>연습: 사용자 지정 사이트 워크플로 작업 만들기
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>연습: 사용자 지정 사이트 워크플로 활동 만들기
   이 연습에서는를 사용 하 여 사이트 수준 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 사이트 수준 워크플로는 사이트의 목록 뿐 아니라 전체 사이트에 적용 됩니다. 사용자 지정 활동은 백업 공지 목록을 만든 다음 공지 목록의 내용을 여기에 복사 합니다.
 
  이 연습에서는 다음 작업을 수행합니다.
@@ -54,11 +56,11 @@ ms.locfileid: "86016538"
 
 1. 메뉴 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 하 여 **새 프로젝트** 대화 상자를 표시 합니다.
 
-2. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. **템플릿** 창에서 **SharePoint 2010 프로젝트** 템플릿을 선택 합니다.
 
-4. **이름** 상자에 **AnnouncementBackup**를 입력 하 고 **확인** 단추를 선택 합니다.
+4. **이름** 상자에 **AnnouncementBackup** 를 입력 하 고 **확인** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다.
 
@@ -66,15 +68,15 @@ ms.locfileid: "86016538"
 
      이 단계에서는 솔루션에 대 한 신뢰 수준을 팜 솔루션으로 설정 합니다 .이 옵션은 워크플로 프로젝트에만 사용할 수 있습니다.
 
-6. **솔루션 탐색기**에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+6. **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
 
-7. **Visual c #** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+7. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 8. **템플릿** 창에서 **순차 워크플로 (팜 솔루션에만 해당)** 템플릿을 선택한 다음 **추가** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다.
 
-9. **디버깅할 워크플로 이름 지정** 페이지에서 기본 이름 (AnnouncementBackup-workflow1.vb)을 적용 합니다. 워크플로 템플릿 유형을 **사이트 워크플로**로 변경 하 고 **다음** 단추를 선택 합니다.
+9. **디버깅할 워크플로 이름 지정** 페이지에서 기본 이름 (AnnouncementBackup-workflow1.vb)을 적용 합니다. 워크플로 템플릿 유형을 **사이트 워크플로** 로 변경 하 고 **다음** 단추를 선택 합니다.
 
 10. **마침** 단추를 선택 하 여 나머지 기본 설정을 적용 합니다.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016538"
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. 프로젝트를 저장 한 다음 메뉴 모음에서 빌드 솔루션 **빌드**를 선택  >  **Build Solution**합니다.
+4. 프로젝트를 저장 한 다음 메뉴 모음에서 빌드 솔루션 **빌드** 를 선택  >  **Build Solution** 합니다.
 
      Class1은 **AnnouncementBackup 구성 요소** 탭의 **도구 상자** 에 사용자 지정 작업으로 나타납니다.
 
@@ -103,7 +105,7 @@ ms.locfileid: "86016538"
 
 1. 디자인 뷰의 workflow designer에서 Workflow1.vb을 엽니다.
 
-2. 작업 아래에 표시 되도록 Class1을 **도구 상자** 에서 끌어 놓고 `onWorkflowActivated1` , class1에 대 한 바로 가기 메뉴를 열고, **복사**를 선택 하 고, 활동 아래 줄에 대 한 바로 가기 메뉴를 연 `onWorkflowActivated1` 다음 **붙여넣기**를 선택 합니다.
+2. 작업 아래에 표시 되도록 Class1을 **도구 상자** 에서 끌어 놓고 `onWorkflowActivated1` , class1에 대 한 바로 가기 메뉴를 열고, **복사** 를 선택 하 고, 활동 아래 줄에 대 한 바로 가기 메뉴를 연 `onWorkflowActivated1` 다음 **붙여넣기** 를 선택 합니다.
 
 3. 프로젝트를 저장합니다.
 
@@ -114,7 +116,7 @@ ms.locfileid: "86016538"
 
 1. **F5** 키를 선택 하 여 프로젝트를 실행 하 고 SharePoint에 배포 합니다.
 
-2. 빠른 실행 모음에서 **목록** 링크를 선택 하 여 SharePoint 사이트에서 사용할 수 있는 모든 목록을 표시 합니다. **알림 이라는 알림을**위한 목록이 하나 뿐입니다.
+2. 빠른 실행 모음에서 **목록** 링크를 선택 하 여 SharePoint 사이트에서 사용할 수 있는 모든 목록을 표시 합니다. **알림 이라는 알림을** 위한 목록이 하나 뿐입니다.
 
 3. SharePoint 웹 페이지의 맨 위에서 **사이트 워크플로** 링크를 선택 합니다.
 
@@ -122,6 +124,6 @@ ms.locfileid: "86016538"
 
 5. 빠른 실행 모음에서 **공지 백업** 링크를 선택 합니다. **공지** 목록에 포함 된 모든 알림이이 새 목록에 복사 되었는지 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

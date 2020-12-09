@@ -1,5 +1,7 @@
 ---
 title: '연습: SharePoint 용 웹 파트 만들기 | Microsoft Docs'
+description: SharePoint 용 웹 파트를 만듭니다. 웹 파트를 사용 하면 사용자가 브라우저를 사용 하 여 SharePoint 사이트 페이지의 콘텐츠, 모양 및 동작을 직접 변경할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247659"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914662"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint용 웹 파트 만들기
 
 웹 파트를 사용 하면 사용자가 브라우저를 사용 하 여 SharePoint 사이트 페이지의 콘텐츠, 모양 및 동작을 직접 수정할 수 있습니다. 이 연습에서는 Visual Studio 2010에서 **웹 파트** 항목 템플릿을 사용 하 여 웹 파트를 만드는 방법을 보여 줍니다.
 
@@ -42,7 +44,7 @@ ms.locfileid: "88247659"
     > [!NOTE]
     > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
@@ -54,11 +56,11 @@ ms.locfileid: "88247659"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **관리자 권한으로 실행** 옵션을 사용 하 여 시작 합니다.
 
-2. 남자 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트**를 선택 합니다.
+2. 남자 모음에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다.
 
 3. **새 프로젝트** 대화 상자에서 사용 하려는 언어 아래의 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
-4. **템플릿** 창에서 **SharePoint 2010 프로젝트**를 선택한 다음 **확인** 단추를 선택 합니다.
+4. **템플릿** 창에서 **SharePoint 2010 프로젝트** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
      **SharePoint 사용자 지정 마법사** 가 나타납니다. 이 마법사를 사용 하 여 프로젝트를 디버깅 하는 데 사용할 사이트와 솔루션의 신뢰 수준을 선택할 수 있습니다.
 
@@ -68,19 +70,19 @@ ms.locfileid: "88247659"
 
 프로젝트에 **웹 파트** 항목을 추가 합니다. 웹 **파트** 항목은 웹 파트 코드 파일을 추가 합니다. 나중에 웹 파트 코드 파일에 웹 파트의 콘텐츠를 렌더링 하는 코드를 추가 합니다.
 
-1. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가**를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 2. **새 항목 추가** 대화 상자의 **설치 된 템플릿** 창에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. SharePoint 템플릿 목록에서 **웹 파트** 템플릿을 선택 하 고 **추가** 단추를 선택 합니다.
 
-     **웹 파트** 항목이 **솔루션 탐색기**에 나타납니다.
+     **웹 파트** 항목이 **솔루션 탐색기** 에 나타납니다.
 
 ## <a name="rendering-content-in-the-web-part"></a>웹 파트에서 콘텐츠 렌더링
 
 웹 파트 클래스의 controls 컬렉션에 웹 파트를 추가 하 여 웹 파트에 표시할 컨트롤을 지정할 수 있습니다.
 
-1. **솔루션 탐색기**에서 *WebPart1* (Visual Basic) 또는 *WebPart1.cs* (c #)를 엽니다.
+1. **솔루션 탐색기** 에서 *WebPart1* (Visual Basic) 또는 *WebPart1.cs* (c #)를 엽니다.
 
      웹 파트 코드 파일이 코드 편집기에서 열립니다.
 
@@ -116,7 +118,7 @@ ms.locfileid: "88247659"
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. `WebPart1` 클래스에 다음 메서드를 추가합니다. 이 코드는 다음 작업을 수행합니다.
+6. 다음 메서드를 `WebPart1` 클래스에 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
    - 렌더링 된 웹 파트의 웹 파트 동사 메뉴에 나타나는 동사를 만듭니다.
 
@@ -162,11 +164,11 @@ ms.locfileid: "88247659"
         </employees>
     ```
 
-2. 메모장의 메뉴 모음에서 **파일**다른  >  **이름으로 저장**을 선택 합니다.
+2. 메모장의 메뉴 모음에서 **파일** 다른  >  **이름으로 저장** 을 선택 합니다.
 
-3. 다른 이름 **으로 저장** 대화 상자의 파일 **형식** 목록에서 **모든 파일**을 선택 합니다.
+3. 다른 이름 **으로 저장** 대화 상자의 파일 **형식** 목록에서 **모든 파일** 을 선택 합니다.
 
-4. **파일 이름** 상자에 **data.xml**을 입력 합니다.
+4. **파일 이름** 상자에 **data.xml** 을 입력 합니다.
 
 5. 폴더 **찾아보기** 단추를 사용 하 여 폴더를 선택한 다음 **저장** 단추를 선택 합니다.
 
@@ -174,11 +176,11 @@ ms.locfileid: "88247659"
 
      SharePoint 사이트가 열립니다.
 
-7. **사이트 작업** 메뉴에서 **기타 옵션**을 선택 합니다.
+7. **사이트 작업** 메뉴에서 **기타 옵션** 을 선택 합니다.
 
 8. **만들기** 페이지에서 **웹 파트 페이지** 유형을 선택한 다음 **만들기** 단추를 선택 합니다.
 
-9. **새 웹 파트 페이지** 페이지에서 **SampleWebPartPage**페이지의 이름을 지정한 다음 **만들기** 단추를 선택 합니다.
+9. **새 웹 파트 페이지** 페이지에서 **SampleWebPartPage** 페이지의 이름을 지정한 다음 **만들기** 단추를 선택 합니다.
 
      웹 파트 페이지가 표시 됩니다.
 
@@ -214,7 +216,7 @@ ms.locfileid: "88247659"
 
      모든 직원이 웹 파트에 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 SharePoint 용 웹 [파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

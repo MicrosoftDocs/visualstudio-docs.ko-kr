@@ -1,5 +1,7 @@
 ---
 title: 평가 컨텍스트 | Microsoft Docs
+description: 디버그 엔진에서 식 계산기를 호출할 때 인수는 기호를 찾고 계산 하기 위한 컨텍스트를 결정 합니다. Psymbol Provider, pAddress 및 pBinder.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738807"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914519"
 ---
 # <a name="evaluation-context"></a>평가 컨텍스트
 > [!IMPORTANT]
@@ -26,7 +28,7 @@ ms.locfileid: "80738807"
 
 ## <a name="arguments"></a>인수
 
-|인수|설명|
+|인수|Description|
 |--------------|-----------------|
 |`pSymbolProvider`|기호를 식별 하는 데 사용할 기호 처리기 (SH)를 지정 하는 [Idebugsymbol 공급자](../../extensibility/debugger/reference/idebugsymbolprovider.md) 인터페이스입니다.|
 |`pAddress`|현재 실행 지점을 지정 하는 [Idebugaddress](../../extensibility/debugger/reference/idebugaddress.md) 인터페이스입니다. 이 인터페이스는 실행 중인 코드가 포함 된 메서드를 찾습니다.|
@@ -34,7 +36,7 @@ ms.locfileid: "80738807"
 
  `IDebugParsedExpression::EvaluateSync` 결과 값과 해당 형식을 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [키 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

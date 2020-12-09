@@ -1,5 +1,7 @@
 ---
 title: 프로그램에 연결 및 분리 | Microsoft Docs
+description: 디버거를 연결 하기 위한 적절 한 특성으로 올바른 메서드 및 이벤트 시퀀스를 보내는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b71a78dcee62f89dee4c54b53c1026f42895793
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903156"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913791"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>프로그램에 연결 및 분리
 디버거를 연결 하려면 적절 한 특성으로 올바른 메서드 및 이벤트 시퀀스를 전송 해야 합니다.
@@ -49,5 +51,5 @@ ms.locfileid: "85903156"
 
 6. DE는 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)을 보냅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

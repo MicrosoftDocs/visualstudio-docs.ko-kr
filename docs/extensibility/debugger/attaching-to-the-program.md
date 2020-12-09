@@ -1,5 +1,7 @@
 ---
 title: 프로그램에 연결 | Microsoft Docs
+description: 프로그램이 적절 한 포트를 사용 하 여 등록 된 후 Visual Studio에서 프로그램에 연결 하는 디버거를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903215"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913765"
 ---
 # <a name="attach-to-the-program"></a>프로그램에 연결
 적절 한 포트를 사용 하 여 프로그램을 등록 한 후에는 디버그 하려는 프로그램에 디버거를 연결 해야 합니다.
@@ -57,7 +59,7 @@ ms.locfileid: "85903215"
     > [!NOTE]
     > 이 `IDebugProgram2` 개체가 메서드로 전달 된 것과 동일한 개체가 아닌 경우 `IDebugEngine2::Attach` 이전에 전달 된 `IDebugProgram2` 개체는 포트 에서만 인식 되며 별도의 개체입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [시작 기반 첨부 파일](../../extensibility/debugger/launch-based-attachment.md)
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

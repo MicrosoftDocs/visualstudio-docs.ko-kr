@@ -1,5 +1,7 @@
 ---
 title: 디버그 패키지 | Microsoft Docs
+description: 디버그 패키지를 사용 하 여 Visual Studio shell에서 디버그 패키지를 실행 하 고 디버깅 인터페이스를 사용 하 고 세션 디버그 관리자와 통신 하 여 UI를 처리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739029"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914129"
 ---
 # <a name="debug-package"></a>패키지 디버그
 디버그 패키지는 Visual Studio 셸에서 실행 되며 모든 UI를 처리 합니다. Visual Studio 디버깅 인터페이스를 사용 하 고, SDM (세션 디버그 관리자)과 통신 합니다.
@@ -24,9 +26,9 @@ ms.locfileid: "80739029"
 
  디버그 패키지에는 언어 또는 런타임 환경 종속성이 없습니다. 디버그 패키지를 구현 하거나 수정할 필요는 없습니다.
 
- 디버그 패키지는 *vsdebug.dll*에 의해 구현 됩니다.
+ 디버그 패키지는 *vsdebug.dll* 에 의해 구현 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)
 - [스택 프레임](../../extensibility/debugger/stack-frames.md)
 - [스레드](../../extensibility/debugger/threads.md)
