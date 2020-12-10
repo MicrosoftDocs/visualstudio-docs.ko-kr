@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 ParallelForEach &lt; T &gt; 활동 디자이너
-description: ParallelForEach <T> 활동이 컬렉션의 요소를 열거 하 고 컬렉션의 각 요소에 대해 포함 문을 병렬로 실행 하는 방법에 대해 알아봅니다.
+title: ParallelForEach &lt; T &gt; 활동 디자이너
+description: 워크플로 디자이너에서 ParallelForEach <T> 활동이 컬렉션의 요소를 열거 하 고 컬렉션의 각 요소에 대해 포함 문을 병렬로 실행 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435562"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996177"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 활동 디자이너 사용
 
@@ -43,7 +43,7 @@ ms.locfileid: "94435562"
 
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.ParallelForEach%601> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|거짓|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach \<Int32>** 입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|거짓|컬렉션의 각 항목에 대해 실행할 활동입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 **있는 \<T> ParallelForEach** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
@@ -53,7 +53,7 @@ ms.locfileid: "94435562"
 
 루프 반복기는 기본적으로 이름이 지정된 항목입니다. **ParallelForEach \<T>** 활동 디자이너의 **ForEach** 상자에서 반복기 변수의 이름을 변경할 수 있습니다. 루프 반복기는 <xref:System.Activities.Statements.ParallelForEach%601> 활동의 자식에 포함된 식에서 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [시퀀스](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

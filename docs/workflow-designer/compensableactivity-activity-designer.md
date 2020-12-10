@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 CompensableActivity 활동 디자이너
-description: CompensableActivity activity designer를 사용 하 여 CompensableActivity 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
+title: CompensableActivity 활동 디자이너
+description: 워크플로 디자이너에서 CompensableActivity activity designer를 사용 하 여 CompensableActivity 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434339"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996229"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 활동 디자이너
 
@@ -34,7 +34,7 @@ ms.locfileid: "94434339"
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 속성
  다음 표에서는 <xref:System.Activities.Statements.CompensableActivity> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. <xref:System.Activities.Activity.DisplayName%2A>및 <xref:System.Activities.Activity%601.Result%2A> 속성은 속성 표에서 편집할 수 있지만 다른 속성은 워크플로 디자이너 화면에서 편집 해야 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|
 |<xref:System.Activities.Activity%601.Result%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|
@@ -43,7 +43,7 @@ ms.locfileid: "94434339"
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 보정할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Compensate> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **CompensationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 확인할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Confirm> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **ConfirmationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

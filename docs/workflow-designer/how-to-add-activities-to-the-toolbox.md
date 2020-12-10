@@ -1,6 +1,6 @@
 ---
-title: '워크플로 디자이너-방법: 도구 상자에 활동 추가'
-description: 현재 프로젝트 내에서 추가 하거나 다른 프로젝트에서 참조 하 여 솔루션의 도구 상자에 활동을 추가 합니다.
+title: 도구 상자에 활동 추가
+description: 워크플로 디자이너에서는 현재 프로젝트 내에서 작업을 추가 하거나 다른 프로젝트에서 참조 하 여 솔루션의 도구 상자에 활동을 추가 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437946"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996307"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>방법: 도구 상자에 활동 추가
 
@@ -60,6 +60,6 @@ ms.locfileid: "94437946"
 
 6. 사용자 지정 작업은 **도구 상자** 에서 항목이 추가 되기 전에 포커스가 있던 범주 아래에 나타납니다. 예를 들어 도구 상자 항목을 추가 하기 전에 **도구 상자** 에서 **일반** 범주를 선택 하면 활동이 **일반** 범주 아래에 나타납니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)

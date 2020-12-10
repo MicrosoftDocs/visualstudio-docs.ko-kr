@@ -1,5 +1,7 @@
 ---
 title: 상태 표시줄 확장 | Microsoft Docs
+description: 정보를 표시 하는 IDE의 아래쪽에서 Visual Studio 상태 표시줄을 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711547"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995696"
 ---
 # <a name="extend-the-status-bar"></a>상태 표시줄 확장
 IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 표시할 수 있습니다.
@@ -32,9 +34,9 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
 ### <a name="read-and-write-to-the-status-bar"></a>상태 표시줄에 대 한 읽기 및 쓰기
 
-1. **TestStatusBarExtension** 라는 VSIX 프로젝트를 만들고 **TestStatusBarCommand**라는 메뉴 명령을 추가 합니다.
+1. **TestStatusBarExtension** 라는 VSIX 프로젝트를 만들고 **TestStatusBarCommand** 라는 메뉴 명령을 추가 합니다.
 
-2. *TestStatusBarCommand.cs*에서 명령 처리기 메서드 코드 ( `MenuItemCallback` )를 다음으로 바꿉니다.
+2. *TestStatusBarCommand.cs* 에서 명령 처리기 메서드 코드 ( `MenuItemCallback` )를 다음으로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -112,7 +114,7 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
 1. 상태 표시줄에는 장기 실행 작업 (예: 솔루션에서 여러 프로젝트 빌드)을 나타내는 반복 애니메이션이 표시 됩니다. 이 애니메이션이 표시 되지 않으면 올바른 **도구**  >  **옵션** 설정을 사용 하도록 설정 해야 합니다.
 
-     **도구**  >  **옵션**  >  **일반** 탭으로 이동 하 여 **클라이언트 성능에 따라 시각적 효과 자동 조정**의 선택을 취소 합니다. 그런 다음 하위 옵션인 **리치 클라이언트 시각적 효과 사용**을 선택 합니다. 이제 Visual Studio의 실험적 인스턴스에서 프로젝트를 빌드할 때 애니메이션을 볼 수 있습니다.
+     **도구**  >  **옵션**  >  **일반** 탭으로 이동 하 여 **클라이언트 성능에 따라 시각적 효과 자동 조정** 의 선택을 취소 합니다. 그런 다음 하위 옵션인 **리치 클라이언트 시각적 효과 사용** 을 선택 합니다. 이제 Visual Studio의 실험적 인스턴스에서 프로젝트를 빌드할 때 애니메이션을 볼 수 있습니다.
 
      이 절차에서는 프로젝트 또는 솔루션 빌드를 나타내는 표준 Visual Studio 애니메이션을 표시 합니다.
 
@@ -139,6 +141,6 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
 3. 코드를 컴파일하고 디버깅을 시작 합니다.
 
-4. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴를 열고 **TestStatusBarCommand 호출**을 클릭 합니다.
+4. Visual Studio의 실험적 인스턴스에서 **도구** 메뉴를 열고 **TestStatusBarCommand 호출** 을 클릭 합니다.
 
      메시지 상자가 표시 되 면 맨 오른쪽의 상태 표시줄에도 애니메이션이 표시 되어야 합니다. 메시지 상자를 닫으면 애니메이션이 사라집니다.

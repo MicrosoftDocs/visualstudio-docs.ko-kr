@@ -1,5 +1,5 @@
 ---
-title: Workflow Designer에서 지원되지 않는 디버깅 시나리오
+title: 지원되지 않는 디버깅 시나리오
 description: 워크플로 디자이너에서 지원 되지 않는 디버깅 시나리오에 대해 알아봅니다. 예를 들어 "코드를 편집한 후에는 실행을 계속할 수 없습니다."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: d9ce8d15e44fecca673fdaa9fccd70ff13eb6783
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e98e2a75905f4c0a4c007691a99961dbcf1477c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433520"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996268"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Workflow Designer에서 지원되지 않는 디버깅 시나리오
 
@@ -49,10 +49,10 @@ ms.locfileid: "94433520"
 
   - 적중될 때
 
-  - 함수
+  - 기능
 
   - 데이터
 
-  - 프로세스
+  - Process
 
   - 디스어셈블리로 이동

@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 ReceiveAndSendReply 템플릿 디자이너
-description: ReceiveAndSendReply 템플릿을 사용 하 여 미리 구성 된 Receive 및 SendReply 활동의 쌍을 만드는 방법에 대해 알아봅니다.
+title: ReceiveAndSendReply 템플릿 디자이너
+description: 워크플로 디자이너에서 ReceiveAndSendReply 템플릿을 사용 하 여 미리 구성 된 Receive 및 SendReply 활동 쌍을 만드는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b66b403fb5df98bc4a23131b6062b2d06f95719
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3f11caa831ca3de0684dd49e46a37620eaa6e435
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434170"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996216"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 템플릿 디자이너
 
@@ -44,7 +44,7 @@ ms.locfileid: "94434170"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.SendReply> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-| 속성 이름 | 필수 | 사용 |
+| 속성 이름 | 필수 | 사용량 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | 거짓 | <xref:System.ServiceModel.Activities.SendReply> 활동의 선택적 이름입니다. 기본값은 SendReplyToReceive입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 <xref:System.Activities.Activity.DisplayName%2A> 필요한 것은 아니지만 이러한 값을 사용 하는 것이 가장 좋습니다. |
 | <xref:System.ServiceModel.Activities.SendReply.Request%2A> | 참 | 이 <xref:System.ServiceModel.Activities.Receive> 활동과 한 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply> 활동에 대한 참조입니다. 이 속성은 **null** 이 아니어야 합니다. <xref:System.ServiceModel.Activities.Receive><xref:System.ServiceModel.Activities.SendReply>서버에서 및 활동을 함께 사용 하 여 요청/응답 메시징 패턴을 모델링할 수 있습니다. 이 속성 <xref:System.ServiceModel.Activities.Send> 은 쌍을 이루는 활동을 지정 합니다. 디자이너에서는 활동을 만든 활동에 자동으로 바인딩되기 때문에이 속성을 편집할 수 없습니다 <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.SendReply> . |
@@ -53,7 +53,7 @@ ms.locfileid: "94434170"
 | <xref:System.ServiceModel.Activities.SendReply.Action%2A> | 거짓 | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 되지 않은 경우 해당 값의 기본값은 다음과 같습니다.<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
 | <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | 거짓 | 회신 메시지를 보내기 전에 워크플로 인스턴스를 유지할지 여부를 지정합니다. 기본 값은 **false** 입니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

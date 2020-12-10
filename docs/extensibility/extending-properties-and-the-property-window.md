@@ -1,5 +1,7 @@
 ---
 title: 속성 및 속성 창 확장 | Microsoft Docs
+description: 선택한 개체의 디자인 타임 속성 및 이벤트를 보고 편집 하는 데 사용 되는 속성 창 속성을 확장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c0deb1b4d1e0fecceefb2e91265c9e6160df8a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711734"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995787"
 ---
 # <a name="extend-properties-and-the-property-window"></a>속성 및 속성 창 확장
 **속성** 창은 선택 된 개체의 디자인 타임 속성 및 이벤트를 보고 편집 하는 데 사용 됩니다.

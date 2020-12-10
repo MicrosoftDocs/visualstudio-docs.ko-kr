@@ -1,5 +1,7 @@
 ---
 title: 디렉터리 상태 코드 열거자 | Microsoft Docs
+description: SccDirStatus 열거자에는 소스 제어 시스템의 디렉터리 상태를 지정 하는 명명 된 상수 값이 포함 되어 있으며 Scctqueryinfo에 사용 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712152"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996125"
 ---
 # <a name="directory-status-code-enumerator"></a>디렉터리 상태 코드 열거자
 열거자에는 `SccDirStatus` 소스 제어 시스템의 디렉터리 상태를 지정 하는 명명 된 상수 값이 포함 되어 있습니다. 이 열거형은 [Sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)에서 사용 됩니다. 이는 소스 제어 플러그 인 API 버전 1.2에서 도입 되었습니다.
@@ -25,10 +27,10 @@ ms.locfileid: "80712152"
 
 ```
 enum SccDirStatus {
-   SCC_DIRSTATUS_INVALID       = -1L,
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
 };
 ```
 
@@ -41,6 +43,6 @@ enum SccDirStatus {
 
  이 디렉터리에 해당 하는 SCC_DIRSTATUS_EMPTYPROJ 프로젝트가 비어 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

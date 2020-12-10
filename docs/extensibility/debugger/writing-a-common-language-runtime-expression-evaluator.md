@@ -1,5 +1,7 @@
 ---
 title: 공용 언어 런타임 식 계산기 작성 | Microsoft Docs
+description: 디버깅 중인 코드 언어에서 식을 평가 하는 공용 언어 런타임에 대 한 식 계산기를 작성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712320"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996320"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>공용 언어 런타임 식 계산기 작성
 > [!IMPORTANT]
@@ -44,5 +46,5 @@ ms.locfileid: "80712320"
 
  [형식 시각화 도우미 및 사용자 지정 뷰어 구현](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) 형식 시각화 도우미 및 사용자 지정 뷰어를 지 원하는 구성 요소에서 구현 해야 하는 인터페이스에 대해 설명 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,7 @@
 ---
 title: 형식 시각화 도우미 및 사용자 지정 뷰어 | Microsoft Docs
+description: 특정 형식의 데이터를 표시 하는 사용자 지정 뷰어 및 형식 시각화 요소와 이러한 구성 요소 간의 차이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712461"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995943"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>형식 시각화 도우미 및 사용자 지정 뷰어
 형식 시각화 도우미는 특정 형식의 데이터를 표시 하는 구성 요소입니다. 형식은 모두 시각화 도우미를 구현 하는 사용자에 게 달려 있습니다. 최종 사용자 또는 시각화 도우미의 타사 공급자 여야 합니다.
@@ -29,7 +31,7 @@ ms.locfileid: "80712461"
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>식 계산기의 사용자 지정 뷰어 지원
  EE는 EE 자체에서 데이터 형식 보기를 위한 코드를 제공 하는 사용자 지정 뷰어를 지원할 수도 있습니다. 사용자 지정 뷰어는 원하는 형식으로 데이터를 표시 하는 모든 의무를 처리 하는 [Idebugcustomviewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 인터페이스를 구현 합니다. 뷰어는 표시에 대 한 모든 권한을 가지 며 데이터를 수정 하도록 허용할 수도 있습니다. EE에서 제공 하는 모든 사용자 지정 뷰어는 제품이 배송 될 때 EE와 함께 제공 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)
 - [식 계산기](../../extensibility/debugger/expression-evaluator.md)
 - [디버그 엔진](../../extensibility/debugger/debug-engine.md)

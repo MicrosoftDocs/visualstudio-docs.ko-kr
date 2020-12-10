@@ -1,6 +1,6 @@
 ---
-title: '워크플로 디자이너: System.object, 도구 상자 항목 선택'
-description: 시스템 작업 탭에서 사용 가능한 WF (Windows Workflow Foundation) 작업, 템플릿 및 항목의 목록을 표시 하는 방법에 대해 알아봅니다.
+title: 작업, 도구 상자 항목 선택
+description: 워크플로 디자이너에서 사용 가능한 WF (Windows Workflow Foundation) 활동, 템플릿 및 항목 목록을 표시 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 280dcf7c9fe07c7b3266822f0d8b92b1c399075e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433897"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996203"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>도구 상자 항목 선택 대화 상자, 시스템 작업 탭
 

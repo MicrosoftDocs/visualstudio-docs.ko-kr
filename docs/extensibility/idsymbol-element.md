@@ -1,5 +1,7 @@
 ---
 title: IDSymbol 요소 | Microsoft Docs
+description: 'IDSymbol 요소는 메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 ID를 포함 합니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710370"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995540"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 `IDSymbol`요소는 메뉴, 그룹 또는 명령을 나타내는 GUID: id 쌍의 id를 포함 합니다. GUID는 부모 요소에서 가져옵니다 `GuidSymbol` . 요소에는 `IDSymbol` `name` 특성에 포함 된 ID에 대 한 친숙 한 이름을 제공 하는 특성이 있습니다 `value` .
@@ -32,7 +34,7 @@ ms.locfileid: "80710370"
 
 ### <a name="attributes"></a>특성
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |name|필수 요소. ID 기호의 이름입니다.|
 |값|필수 요소. ID 기호의 숫자 ID 값입니다.|
@@ -49,5 +51,5 @@ ms.locfileid: "80710370"
 ## <a name="remarks"></a>설명
  `IDSymbol`지정 된 요소의 모든 요소에 `GuidSymbol` 는 고유한가 있어야 합니다 `value` . 그러나 `IDSymbol` 동일한 값을 가진 요소는 부모 항목이 다른 경우 패키지에 있을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

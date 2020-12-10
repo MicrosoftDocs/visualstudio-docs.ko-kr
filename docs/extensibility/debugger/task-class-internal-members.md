@@ -1,5 +1,7 @@
 ---
 title: 작업 클래스-내부 멤버 | Microsoft Docs
+description: 사용자 지정 디버거를 구현 하는 데 도움이 되는 System.object 클래스의 내부 멤버에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712742"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996021"
 ---
 # <a name="task-class---internal-members"></a>작업 클래스-내부 멤버
 이 문서에서는 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 내부 멤버에 대해 설명 합니다. 이 클래스에 대 한 일반 정보는 <xref:System.Threading.Tasks.Task> 참조 문서를 참조 하세요.
@@ -49,7 +51,7 @@ ms.locfileid: "80712742"
 
 ### <a name="fields"></a>필드
 
-|Name|설명|
+|이름|설명|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|개체에서 실행할 코드를 나타내는 대리자입니다 <xref:System.Threading.Tasks.Task> .|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|개체의 추가 속성을 저장 <xref:System.Threading.Tasks.Task> 합니다.|

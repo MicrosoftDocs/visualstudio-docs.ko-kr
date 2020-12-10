@@ -1,5 +1,7 @@
 ---
 title: Define 요소 | Microsoft Docs
+description: Define 요소는 기호 이름 및 값 쌍을 정의 합니다. 이 기호는 조건부 특성으로 평가할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712264"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996242"
 ---
 # <a name="define-element"></a>Define 요소
 기호 이름 및 값 쌍을 정의 합니다. 이 기호는 조건부 특성으로 평가할 수 있습니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요. 또한 [기호 요소](../extensibility/symbols-element.md)를 참조 하세요.
@@ -32,7 +34,7 @@ ms.locfileid: "80712264"
 
 ### <a name="attributes"></a>특성
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |name|필수 요소. 기호의 이름입니다.<br /><br /> name = "모드"|
 |값|필수 요소. 기호의 값입니다.<br /><br /> value = "Standard"|

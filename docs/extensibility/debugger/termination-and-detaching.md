@@ -1,5 +1,7 @@
 ---
 title: 종료 및 분리 | Microsoft Docs
+description: 정상적인 종료는 디버깅 중인 프로그램이 중단점, 예외, 런타임 오류 또는 무한 루프 없이 완료 될 때까지 실행 됨을 의미 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74ef32708374dd3fea4c181e85b9f67a239198ba
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712487"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995969"
 ---
 # <a name="termination-and-detaching"></a>종료 및 분리
 다음 섹션에서는 일반적인 종료에 대해 설명 합니다.
@@ -26,5 +28,5 @@ ms.locfileid: "80712487"
 
  정상적인 종료를 구현 하려면 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 을 보내야 합니다. 정상적인 종료를 수행 하려면 [IDebugProgramDestroyEvent2:: GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 메서드를 실행 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

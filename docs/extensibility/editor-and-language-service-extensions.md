@@ -1,5 +1,7 @@
 ---
 title: 편집기 및 언어 서비스 확장 프로그램 | Microsoft Docs
+description: Windows Presentation Foundation를 사용 하 여 구현 되 고 관리 코드로 작성 되는 Visual Studio 코드 편집기의 대부분 기능을 확장할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78d85cd3651f8769104a61586bea1468e1c21cd2
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 2b15d5f970bfc6a32489991b578a54f2eadc96ea
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414076"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995826"
 ---
 # <a name="editor-and-language-service-extensions"></a>편집기 및 언어 서비스 확장
 Visual Studio 코드 편집기의 기능을 대부분 확장할 수 있습니다. 편집기는 Windows Presentation Foundation (WPF)를 기반으로 하며 관리 코드로 작성 됩니다. 이 디자인은 이전 버전의 Visual Studio에 있는 디자인과는 다르지만 대부분의 동일한 기능을 제공 합니다. 편집기를 확장 하려면 MEF (Managed Extensibility Framework)를 사용 합니다.
@@ -24,7 +26,7 @@ Visual Studio 코드 편집기의 기능을 대부분 확장할 수 있습니다
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)|편집기 항목 템플릿을 사용 하는 방법을 소개 합니다.|
 |[편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)|핵심 편집기의 디자인과 기능을 소개 하 고이를 확장 하는 방법을 보여 주는 문서에 대 한 링크입니다.|

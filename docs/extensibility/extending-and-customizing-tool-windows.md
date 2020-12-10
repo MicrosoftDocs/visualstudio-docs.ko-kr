@@ -1,5 +1,7 @@
 ---
 title: 도구 창 확장 및 사용자 지정 | Microsoft Docs
+description: 속성 창, 출력 창 및 작업 목록 창을 포함 하 여 Visual Studio에서 제공 하는 도구 창을 확장 하 고 사용자 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711811"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995865"
 ---
 # <a name="extend-and-customize-tool-windows"></a>도구 창 확장 및 사용자 지정
 Visual Studio는 도구 창, 문서 창 및 대화 상자 창과 같은 여러 가지 종류의 창을 제공 합니다. **속성** 창, **출력** 창 및 **작업 목록** 창과 같은 다른 창에는 도구 창의 형식이 있습니다.
@@ -30,7 +32,7 @@ Visual Studio는 도구 창, 문서 창 및 대화 상자 창과 같은 여러 �
 
  도구 창은 기본적으로 단일 인스턴스입니다. 즉, 도구 창의 인스턴스를 한 번에 하나만 열 수 있습니다. 단일 인스턴스 도구 창이 열린 후 IDE를 닫을 때까지 열린 상태로 유지됩니다. 단일 인스턴스 도구 창을 닫으면 해당 표시만 변경 됩니다. 창의 여러 인스턴스가 동시에 열릴 수 있도록 다중 인스턴스 도구 창도 만들 수 있습니다. 자세한 내용은 [다중 인스턴스 도구 창 만들기](../extensibility/creating-a-multi-instance-tool-window.md) 를 참조 하세요.
 
- 도구 창은 *동적*일 수 있습니다. 즉, 관련 된 UI 컨텍스트가 적용 될 때마다 표시 됩니다. 자동 표시를 사용하면 IDE에서 창의 혼잡함을 줄일 수 있습니다. 자세한 내용은 [동적 도구 창 열기](../extensibility/opening-a-dynamic-tool-window.md)를 참조 하세요.
+ 도구 창은 *동적* 일 수 있습니다. 즉, 관련 된 UI 컨텍스트가 적용 될 때마다 표시 됩니다. 자동 표시를 사용하면 IDE에서 창의 혼잡함을 줄일 수 있습니다. 자세한 내용은 [동적 도구 창 열기](../extensibility/opening-a-dynamic-tool-window.md)를 참조 하세요.
 
  도구 창을 문서 프레임에서 도킹, 부동 또는 탭할 수 있습니다. 도구 창 프레임이 IDE에서 제공되고 크기, 위치, 도킹 상태 및 기타 영구적 속성을 제어하는 데 사용됩니다. 도구 창에서 내용을 표시합니다. 기본 크기 및 위치는 도구 창이 처음 열릴 때만 적용되고 이후에는 도구 창 상태가 유지됩니다.
 
@@ -46,7 +48,7 @@ Visual Studio는 도구 창, 문서 창 및 대화 상자 창과 같은 여러 �
 ## <a name="modal-dialog-boxes"></a>모달 대화 상자
  Visual Studio 확장에서 모달 대화 상자를 만들어야 합니다 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> .이 대화 상자를 사용 하 여 UI의 나머지 부분을 제어할 수 있습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [프로젝트 확장](../extensibility/extending-projects.md)
 - [솔루션 확장](../extensibility/extending-solutions.md)

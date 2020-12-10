@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 다른 부분 확장 | Microsoft Docs
+description: 확장할 수 있는 Visual Studio UI의 부분에 대해 알아봅니다. VSPackage을 만들고 활동 로그에 쓰고 도구 상자와 상태 표시줄을 확장할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c9076fbba822a1dfcff1ef13294ebd4dcafd9e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cc9a471b141cfd3302814844d63a2ce8d5b74c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711759"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995839"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio의 다른 부분 확장
 

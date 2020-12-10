@@ -1,5 +1,6 @@
 ---
 title: 속성, 작업 목록, 출력, 옵션 창 확장
+description: Visual Studio의 도구 창에 대 한 정보를 새 옵션 페이지와 속성 페이지의 새 설정에 통합 하는 방법에 대해 알아봅니다.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,22 +17,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038480"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995800"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>속성, 작업 목록, 출력 및 옵션 창 확장
 Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습에서는 도구 창에 대 한 정보를 새 **옵션** 페이지 및 **속성** 페이지의 새 설정에 통합 하는 방법과 **작업 목록** 및 **출력** 창에 쓰는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-tool-window"></a>도구 창을 사용 하 여 확장 만들기
 
-1. VSIX 템플릿을 사용 하 여 **TodoList** 이라는 프로젝트를 만들고 **TodoWindow**라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
+1. VSIX 템플릿을 사용 하 여 **TodoList** 이라는 프로젝트를 만들고 **TodoWindow** 라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
 
     > [!NOTE]
     > 도구 창을 사용 하 여 확장을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
@@ -39,18 +40,18 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 ## <a name="set-up-the-tool-window"></a>도구 창 설정
  새 ToDo 항목을 입력할 텍스트 상자를 추가 하 고, 목록에 새 항목을 추가 하는 단추를 추가 하 고, 목록에 항목을 표시 하는 목록 상자를 추가 합니다.
 
-1. *TodoWindow*에서 UserControl의 Button, TextBox 및 StackPanel 컨트롤을 삭제 합니다.
+1. *TodoWindow* 에서 UserControl의 Button, TextBox 및 StackPanel 컨트롤을 삭제 합니다.
 
     > [!NOTE]
     > 이는 이후 단계에서 다시 사용 하는 **button1_Click** 이벤트 처리기를 삭제 하지 않습니다.
 
-2. **도구 상자**의 **모든 WPF 컨트롤** 섹션에서 **캔버스** 컨트롤을 그리드로 끌어 옵니다.
+2. **도구 상자** 의 **모든 WPF 컨트롤** 섹션에서 **캔버스** 컨트롤을 그리드로 끌어 옵니다.
 
-3. **텍스트 상자**, **단추**및 **목록 상자** 를 캔버스로 끌어다 놓습니다. 텍스트 상자와 단추가 같은 수준에 있도록 요소를 정렬 하 고 ListBox는 아래 그림과 같이 해당 창의 나머지 부분을 채웁니다.
+3. **텍스트 상자**, **단추** 및 **목록 상자** 를 캔버스로 끌어다 놓습니다. 텍스트 상자와 단추가 같은 수준에 있도록 요소를 정렬 하 고 ListBox는 아래 그림과 같이 해당 창의 나머지 부분을 채웁니다.
 
      ![완료된 도구 창](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
-4. XAML 창에서 단추를 찾고 콘텐츠 속성을 **추가**로 설정 합니다. 특성을 추가 하 여 단추 이벤트 처리기를 단추 컨트롤에 다시 연결 `Click="button1_Click"` 합니다. Canvas 블록은 다음과 같습니다.
+4. XAML 창에서 단추를 찾고 콘텐츠 속성을 **추가** 로 설정 합니다. 특성을 추가 하 여 단추 이벤트 처리기를 단추 컨트롤에 다시 연결 `Click="button1_Click"` 합니다. Canvas 블록은 다음과 같습니다.
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -80,7 +81,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-3. *TodoWindow.cs*에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 같습니다.
+3. *TodoWindow.cs* 에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 같습니다.
 
     ```csharp
     public TodoWindow() : base(null)
@@ -126,7 +127,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
 ### <a name="make-the-options-page-available-to-users"></a>사용자가 옵션 페이지를 사용할 수 있도록 설정
 
-1. *TodoWindowPackage.cs*에서를 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 클래스에 추가 합니다 `TodoWindowPackage` .
+1. *TodoWindowPackage.cs* 에서를 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 클래스에 추가 합니다 `TodoWindowPackage` .
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -138,7 +139,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
      ![옵션 페이지](../extensibility/media/t5optionspage.gif "T5OptionsPage")
 
-     **ToDo** 및 하위 범주 **일반**범주를 확인 합니다.
+     **ToDo** 및 하위 범주 **일반** 범주를 확인 합니다.
 
 ## <a name="make-data-available-to-the-properties-window"></a>속성 창에서 데이터를 사용할 수 있도록 설정
  할 일 `TodoItem` 목록에 개별 항목에 대 한 정보를 저장 하는 라는 클래스를 만들어 할 일 목록 정보를 사용할 수 있습니다.
@@ -231,7 +232,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-5. 클래스의 인스턴스는 `TodoItem` listbox에 저장 되 고 listbox는 함수를 호출 하므로 함수를 `ToString` 오버 로드 해야 합니다 `ToString` . 생성자 뒤에 클래스의 끝 앞에 *TodoItem.cs*에 다음 코드를 추가 합니다.
+5. 클래스의 인스턴스는 `TodoItem` listbox에 저장 되 고 listbox는 함수를 호출 하므로 함수를 `ToString` 오버 로드 해야 합니다 `ToString` . 생성자 뒤에 클래스의 끝 앞에 *TodoItem.cs* 에 다음 코드를 추가 합니다.
 
     ```csharp
     public override string ToString()
@@ -240,7 +241,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-6. *TodoWindowControl.xaml.cs*에서 `TodoWindowControl` 및 메서드에 대 한 클래스에 스텁 메서드를 `CheckForError` 추가 `UpdateList` 합니다. ProcessDialogChar 뒤와 파일 끝 앞에 배치 합니다.
+6. *TodoWindowControl.xaml.cs* 에서 `TodoWindowControl` 및 메서드에 대 한 클래스에 스텁 메서드를 `CheckForError` 추가 `UpdateList` 합니다. ProcessDialogChar 뒤와 파일 끝 앞에 배치 합니다.
 
     ```csharp
     public void CheckForErrors()
@@ -273,7 +274,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-2. 디자인 뷰에서 ListBox 컨트롤을 선택 합니다. **속성** 창에서 **이벤트 처리기** 단추를 클릭 하 고 **selectionchanged** 이벤트를 찾습니다. 텍스트 상자에 **listBox_SelectionChanged**을 입력 합니다. 이렇게 하면 SelectionChanged 처리기에 대 한 스텁이 추가 되어 이벤트에 할당 됩니다.
+2. 디자인 뷰에서 ListBox 컨트롤을 선택 합니다. **속성** 창에서 **이벤트 처리기** 단추를 클릭 하 고 **selectionchanged** 이벤트를 찾습니다. 텍스트 상자에 **listBox_SelectionChanged** 을 입력 합니다. 이렇게 하면 SelectionChanged 처리기에 대 한 스텁이 추가 되어 이벤트에 할당 됩니다.
 
 3. `TrackSelection()` 메서드를 구현합니다. 서비스를 가져와야 하므로 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> TodoWindowControl에서 액세스할 수 있도록 해야 합니다 <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> . `TodoWindow` 클래스에 다음 메서드를 추가합니다.
 
@@ -284,7 +285,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-4. *TodoWindowControl.xaml.cs*에 다음 using 지시문을 추가 합니다.
+4. *TodoWindowControl.xaml.cs* 에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -352,7 +353,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
      이제 **속성** 창에서 사용할 수 있는 클래스가 있으므로 **속성** 창을 도구 창과 통합할 수 있습니다. 사용자가 도구 창에서 ListBox의 항목을 클릭 하면 **속성** 창이 적절 하 게 업데이트 됩니다. 마찬가지로 사용자가 **속성** 창에서 할 일 항목을 변경 하는 경우 연결 된 항목을 업데이트 해야 합니다.
 
-7. 이제 *TodoWindowControl.xaml.cs*에 나머지 updatelist 함수 코드를 추가 합니다. ListBox에서 수정 된 TodoItem를 삭제 하 고 다시 추가 해야 합니다.
+7. 이제 *TodoWindowControl.xaml.cs* 에 나머지 updatelist 함수 코드를 추가 합니다. ListBox에서 수정 된 TodoItem를 삭제 하 고 다시 추가 해야 합니다.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -368,16 +369,16 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
 9. **도구**  >  **옵션** 페이지를 엽니다. 왼쪽 창에 ToDo 범주가 표시 됩니다. 범주는 사전순으로 나열 되므로 Ts 아래에서 확인 합니다.
 
-10. **Todo** 옵션 페이지에서 `DaysAhead` 속성이 **0**으로 설정 된 것을 볼 수 있습니다. **2**로 변경 합니다.
+10. **Todo** 옵션 페이지에서 `DaysAhead` 속성이 **0** 으로 설정 된 것을 볼 수 있습니다. **2** 로 변경 합니다.
 
-11. **보기/기타 창** 메뉴에서 **TodoWindow**을 엽니다. 텍스트 상자에 **EndDate** 를 입력 하 고 **추가**를 클릭 합니다.
+11. **보기/기타 창** 메뉴에서 **TodoWindow** 을 엽니다. 텍스트 상자에 **EndDate** 를 입력 하 고 **추가** 를 클릭 합니다.
 
 12. 목록 상자에 오늘 날짜를 이틀 이상 표시 해야 합니다.
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>출력 창에 텍스트를 추가 하 고 작업 목록에 항목을 추가 합니다.
- **작업 목록**의 경우 task 형식의 새 개체를 만든 다음 해당 메서드를 호출 하 여 해당 작업 개체를 **작업 목록** 에 추가 합니다 `Add` . **출력** 창에 쓰려면 해당 메서드를 호출 하 여 `GetPane` 창 개체를 가져온 다음 `OutputString` pane 개체의 메서드를 호출 합니다.
+ **작업 목록** 의 경우 task 형식의 새 개체를 만든 다음 해당 메서드를 호출 하 여 해당 작업 개체를 **작업 목록** 에 추가 합니다 `Add` . **출력** 창에 쓰려면 해당 메서드를 호출 하 여 `GetPane` 창 개체를 가져온 다음 `OutputString` pane 개체의 메서드를 호출 합니다.
 
-1. *TodoWindowControl.xaml.cs*의 `button1_Click` 메서드에서 코드를 추가 하 여 **출력** 창의 **일반** 창 (기본값)을 가져오고 여기에 씁니다. 메서드는 다음과 같습니다.
+1. *TodoWindowControl.xaml.cs* 의 `button1_Click` 메서드에서 코드를 추가 하 여 **출력** 창의 **일반** 창 (기본값)을 가져오고 여기에 씁니다. 메서드는 다음과 같습니다.
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -479,19 +480,19 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-## <a name="try-it-out"></a>기능 직접 사용해 보기
+## <a name="try-it-out"></a>사용해 보기
 
 1. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 나타납니다.
 
-2. **TodoWindow** (**View**  >  **다른 창**  >  **TodoWindow**보기)를 엽니다.
+2. **TodoWindow** (  >  **다른 창**  >  **TodoWindow** 보기)를 엽니다.
 
-3. 텍스트 상자에 항목을 입력 한 다음 **추가**를 클릭 합니다.
+3. 텍스트 상자에 항목을 입력 한 다음 **추가** 를 클릭 합니다.
 
      오늘 1 일 후의 기한 날짜는 목록 상자에 추가 됩니다. 오류가 생성 되지 않으며 **작업 목록** (**보기**  >  **작업 목록**)에 항목이 없어야 합니다.
 
-4. 이제 **도구**  >  **옵션**  >  **ToDo** 페이지의 설정을 **2** 에서 다시 **0**으로 변경 합니다.
+4. 이제 **도구**  >  **옵션**  >  **ToDo** 페이지의 설정을 **2** 에서 다시 **0** 으로 변경 합니다.
 
-5. **TodoWindow** 에 다른 항목을 입력 한 다음 **추가** 를 다시 클릭 합니다. 그러면 오류가 트리거되고 **작업 목록**항목도 트리거됩니다.
+5. **TodoWindow** 에 다른 항목을 입력 한 다음 **추가** 를 다시 클릭 합니다. 그러면 오류가 트리거되고 **작업 목록** 항목도 트리거됩니다.
 
      항목을 추가할 때 초기 날짜는 이제 2 일을 더한 값으로 설정 됩니다.
 
@@ -503,6 +504,6 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
      **속성** 창에는 항목에 대 한 두 개의 속성이 표시 됩니다.
 
-8. 속성 중 하나를 변경 하 고 enter **키를**누릅니다.
+8. 속성 중 하나를 변경 하 고 enter **키를** 누릅니다.
 
      항목이 ListBox에서 업데이트 됩니다.

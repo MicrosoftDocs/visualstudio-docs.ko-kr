@@ -1,5 +1,7 @@
 ---
 title: 스레드 | Microsoft Docs
+description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 스레드의 정의 및 역할에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712473"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995956"
 ---
 # <a name="threads"></a>스레드
-디버거 아키텍처에서 *스레드*는 다음과 같습니다.
+디버거 아키텍처에서 *스레드* 는 다음과 같습니다.
 
 - 계산의 기본 단위입니다. 스레드는 단일 호출 스택의 컨텍스트 내에서 해당 명령을 순차적으로 실행 하 여 코드 컨텍스트 간에 이동 합니다.
 
@@ -27,8 +29,8 @@ ms.locfileid: "80712473"
 
 - 는 프로그램 실행의 결과로 일반적으로 디버그 엔진 (DE) 또는 가상 머신에서 만든 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 인터페이스로 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
-- [프로그램](../../extensibility/debugger/programs.md)
+## <a name="see-also"></a>참고 항목
+- [Programs](../../extensibility/debugger/programs.md)
 - [스택 프레임](../../extensibility/debugger/stack-frames.md)
 - [디버그 엔진](../../extensibility/debugger/debug-engine.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

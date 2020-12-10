@@ -1,5 +1,7 @@
 ---
 title: 문서 잠금 보유자 관리 | Microsoft Docs
+description: 문서 창에서 열린 문서를 보지 않고 실행 중인 문서 테이블의 문서에 대 한 편집 잠금을 설정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712131"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995904"
 ---
 # <a name="document-lock-holder-management"></a>문서 잠금 보유자 관리
 
@@ -37,13 +39,13 @@ RT (실행 중인 문서 테이블)는 열려 있는 문서 및 편집 잠금 �
 
 ## <a name="additional-document-edit-lock-considerations"></a>추가 문서 편집 잠금 고려 사항
 
-"A" 편집기가 "b" 파일에 대 한 문서 편집 잠금을 포함 하는 유일한 편집기 인 경우 편집기 "b"가 파일 "b"에 대 한 문서 편집 잠금을 보유 하는 경우와는 다른 동작이 발생 합니다. 에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **클래스 디자이너** 은 연결 된 코드 파일에 대 한 편집 잠금을 보유 하지 않는 비주얼 디자이너의 예입니다. 즉, 사용자가 디자인 뷰에서 열린 클래스 다이어그램을 사용 하 고 연결 된 코드 파일을 동시에 열고 사용자가 코드 파일을 수정 하지만 변경 내용을 저장 하지 않는 경우에도 클래스 다이어그램 (.cd) 파일에 대 한 변경 내용이 손실 됩니다. **클래스 디자이너** 코드 파일에 대 한 문서 편집 잠금이 있는 경우 코드 파일을 닫을 때 사용자에 게 변경 내용을 저장할지 묻는 메시지가 표시 되지 않습니다. 사용자가 **클래스 디자이너**를 닫은 후에만 사용자에 게 변경 내용을 저장 하 라는 메시지가 표시 됩니다. 저장 된 변경 내용은 두 파일에 모두 반영 됩니다. **클래스 디자이너** 및 코드 파일 편집기 모두에서 코드 파일에 대 한 문서 편집 잠금을 보유 하 고 있는 경우 코드 파일이 나 폼을 닫을 때 사용자에 게 저장할지를 묻는 메시지가 표시 됩니다. 이때 저장 된 변경 내용은 양식과 코드 파일에 모두 반영 됩니다. 클래스 다이어그램에 대 한 자세한 내용은 [클래스 다이어그램 작업 (클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)을 참조 하세요.
+"A" 편집기가 "b" 파일에 대 한 문서 편집 잠금을 포함 하는 유일한 편집기 인 경우 편집기 "b"가 파일 "b"에 대 한 문서 편집 잠금을 보유 하는 경우와는 다른 동작이 발생 합니다. 에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **클래스 디자이너** 은 연결 된 코드 파일에 대 한 편집 잠금을 보유 하지 않는 비주얼 디자이너의 예입니다. 즉, 사용자가 디자인 뷰에서 열린 클래스 다이어그램을 사용 하 고 연결 된 코드 파일을 동시에 열고 사용자가 코드 파일을 수정 하지만 변경 내용을 저장 하지 않는 경우에도 클래스 다이어그램 (.cd) 파일에 대 한 변경 내용이 손실 됩니다. **클래스 디자이너** 코드 파일에 대 한 문서 편집 잠금이 있는 경우 코드 파일을 닫을 때 사용자에 게 변경 내용을 저장할지 묻는 메시지가 표시 되지 않습니다. 사용자가 **클래스 디자이너** 를 닫은 후에만 사용자에 게 변경 내용을 저장 하 라는 메시지가 표시 됩니다. 저장 된 변경 내용은 두 파일에 모두 반영 됩니다. **클래스 디자이너** 및 코드 파일 편집기 모두에서 코드 파일에 대 한 문서 편집 잠금을 보유 하 고 있는 경우 코드 파일이 나 폼을 닫을 때 사용자에 게 저장할지를 묻는 메시지가 표시 됩니다. 이때 저장 된 변경 내용은 양식과 코드 파일에 모두 반영 됩니다. 클래스 다이어그램에 대 한 자세한 내용은 [클래스 다이어그램 작업 (클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)을 참조 하세요.
 
 비 편집기의 문서에 편집 잠금을 설정 해야 하는 경우에는 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> .
 
 프로그래밍 방식으로 코드 파일을 수정 하는 UI 디자이너에서 두 개 이상의 파일을 변경 하는 경우가 많습니다. 이러한 경우, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> 메서드는 **다음 항목에 대 한 변경 내용을 저장 하 시겠습니까?** 대화 상자를 사용 하 여 하나 이상의 문서를 저장 하는 작업을 처리 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [문서 테이블 실행](../extensibility/internals/running-document-table.md)
 - [지 속성 및 실행 중인 문서 테이블](../extensibility/internals/persistence-and-the-running-document-table.md)
