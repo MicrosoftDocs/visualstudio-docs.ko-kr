@@ -1,5 +1,7 @@
 ---
 title: 오류 코드 | Microsoft Docs
+description: 이 문서에는 소스 제어 플러그 인 API 함수에 대 한 오류 코드, 값 및 설명 목록이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711836"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994721"
 ---
 # <a name="error-codes"></a>오류 코드
 소스 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나 여야 합니다. 모든 오류는 음수, 경고 또는 정보 오류 코드가 긍정적 이며 success는 0입니다.
@@ -79,5 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 
  플러그 인에서 일부 작업 중에 파일을 읽기 전용으로 표시 한 경우에도 소스 제어 플러그 인은 작업 폴더에 있는 파일에 대 한 권한을 가정 하지 않아야 합니다. 작업 폴더의 파일을 이동, 삭제 및 플러그 인 컨트롤 외부에서 변경할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

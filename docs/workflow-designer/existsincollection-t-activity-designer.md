@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 ExistsInCollection &lt; T &gt; 활동 디자이너
-description: ExistsInCollection activity designer를 사용 하 여 <T> ExistsInCollection 활동을 만들고 구성 하는 방법에 대해 알아봅니다 <T> .
+title: ExistsInCollection &lt; T &gt; 활동 디자이너
+description: 워크플로 디자이너에서 ExistsInCollection activity designer를 사용 하 여 <T> ExistsInCollection 활동을 만들고 구성 하는 방법에 대해 알아봅니다 <T> .
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 357001651018b1b9211efc75d3b9397fb2a943cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438024"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995410"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T> 활동 디자이너
 
@@ -37,7 +37,7 @@ ms.locfileid: "94438024"
 
 다음 표에서는 속성을 보여 주고 <xref:System.Activities.Statements.ExistsInCollection%601> 디자이너에서 이러한 속성을 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.ExistsInCollection%601> 활동의 이름입니다. 기본값은 ExistsInCollection<Int32 \> 입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|참|컬렉션에서 찾을 항목 \<T> 입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
@@ -45,7 +45,7 @@ ms.locfileid: "94438024"
 |*TypeArgument*|참|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
 |<xref:System.Activities.Activity%601.Result%2A>|거짓|지정된 항목이 컬렉션에 있는지 여부를 나타내는 값입니다. 결과에 바인딩할 변수를 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [컬렉션](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

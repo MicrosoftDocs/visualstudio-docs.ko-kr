@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 확장 | Microsoft Docs
+description: Visual Studio SDK에서 사용자 지정 프로젝트 형식을 만드는 방법 및 다양 한 형식의 Visual Studio 솔루션을 관리 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14108a304cc5f85c9a870bc66804df7daa98f3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711745"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994617"
 ---
 # <a name="extend-projects"></a>프로젝트 확장
 프로젝트 및 솔루션은 Visual Studio에서 코드 및 리소스 파일을 컴파일 및 배포 단위로 구성 하는 방법입니다. 프로젝트에서 프로젝트에 대 한 자세한 정보 [(Visual STUDIO SDK)](../extensibility/extending-projects.md)를 찾을 수 있습니다.

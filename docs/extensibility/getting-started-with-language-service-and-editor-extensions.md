@@ -1,5 +1,6 @@
 ---
 title: 언어 서비스 및 편집기 확장 시작
+description: 모든 콘텐츠 형식에 언어 서비스 기능을 추가 하 고 Visual Studio 편집기의 모양과 동작을 사용자 지정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037766"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994396"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 
@@ -48,7 +49,7 @@ ms.locfileid: "90037766"
 
 - 여백 및 스크롤 막대
 
-- Tags
+- 태그
 
 - 도구 영역
 
@@ -75,7 +76,7 @@ ms.locfileid: "90037766"
 
  여기서 *% LOCALAPPDATA%* 는 로그온 한 사용자의 이름이 고, *company* 는 확장을 소유 하는 회사의 이름이 고, *EXTENSIONID* 는 확장의 id입니다.
 
- 실험적 위치에 확장을 배포 하는 경우 디버그 모드에서 실행 됩니다. Visual Studio의 두 번째 인스턴스가 시작 되 고 **Microsoft Visual Studio 실험적 인스턴스로**이름이 지정 됩니다.
+ 실험적 위치에 확장을 배포 하는 경우 디버그 모드에서 실행 됩니다. Visual Studio의 두 번째 인스턴스가 시작 되 고 **Microsoft Visual Studio 실험적 인스턴스로** 이름이 지정 됩니다.
 
 ## <a name="manage-extensions"></a>확장 관리
 

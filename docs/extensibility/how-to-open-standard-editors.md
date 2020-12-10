@@ -1,5 +1,7 @@
 ---
 title: '방법: 표준 편집기 열기 | Microsoft Docs'
+description: 표준 편집기를 사용 하 여 OpenItem 메서드를 구현 하는 방법에 대해 알아봅니다. IDE는 지정 된 파일 형식에 대 한 표준 편집기를 확인 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905789"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993772"
 ---
 # <a name="how-to-open-standard-editors"></a>방법: 표준 편집기 열기
 표준 편집기를 열면 파일에 프로젝트별 편집기를 지정 하는 대신 IDE에서 지정 된 파일 형식에 대 한 표준 편집기를 확인할 수 있습니다.
@@ -49,7 +51,7 @@ ms.locfileid: "85905789"
 
      문서 뷰 또는 문서 뷰 개체가 창 프레임에 성공적으로 배치 된 경우를 호출 하 여 개체가 데이터를 사용 하 여 초기화 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 프로젝트 관련 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)

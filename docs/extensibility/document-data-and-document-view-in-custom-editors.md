@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 편집기의 문서 데이터 및 문서 보기 | Microsoft Docs
+description: 문서 데이터 개체 및 문서 뷰 개체인 사용자 지정 편집기의 구성 요소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994877"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>사용자 지정 편집기의 문서 데이터 및 문서 보기
 사용자 지정 편집기는 문서 데이터 개체와 문서 뷰 개체의 두 부분으로 구성 됩니다. 이름에서 알 수 있듯이 document data 개체는 표시 될 텍스트 데이터를 나타냅니다. 마찬가지로 문서 보기 개체 (또는 "보기")는 문서 데이터 개체를 표시할 하나 이상의 창을 나타냅니다.

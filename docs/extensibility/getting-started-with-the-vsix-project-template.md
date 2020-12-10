@@ -1,5 +1,7 @@
 ---
 title: VSIX 프로젝트 템플릿 시작 하기 | Microsoft Docs
+description: VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 위한 기존 확장을 패키징하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905883"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994344"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>VSIX 프로젝트 템플릿 시작
 
@@ -33,25 +35,25 @@ VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 �
 
     1. 템플릿을 만들 프로젝트를 엽니다. 이 프로젝트는 모든 프로젝트 형식일 수 있습니다.
 
-    2. **프로젝트** 메뉴에서 **템플릿 내보내기**를 클릭합니다. 마법사의 단계를 완료 합니다.
+    2. **프로젝트** 메뉴에서 **템플릿 내보내기** 를 클릭합니다. 마법사의 단계를 완료 합니다.
 
-         *.Zip* 파일은 *%USERPROFILE%\My Documents\visual Studio {Version} \My 내보내진 템플릿에서 \\ *생성 됩니다.
+         *.Zip* 파일은 *%USERPROFILE%\My Documents\visual Studio {Version} \My 내보내진 템플릿에서 \\* 생성 됩니다.
 
 2. 빈 VSIX 프로젝트를 만듭니다.
 
-     **파일** > **새로 만들기** > **프로젝트**를 선택합니다. 검색 상자에 "vsix"를 입력 하 고 **c #** 또는 **Visual Basic** 버전의 **vsix 프로젝트**를 선택 합니다.
+     **File** > **New** > **Project** 를 선택합니다. 검색 상자에 "vsix"를 입력 하 고 **c #** 또는 **Visual Basic** 버전의 **vsix 프로젝트** 를 선택 합니다.
 
 3. 프로젝트에 *.zip* 파일을 추가 합니다. **출력 디렉터리로 복사** 속성을로 설정 `Copy Always` 합니다.
 
-4. **솔루션 탐색기**에서 *source.extension.vsixmanifest* 파일을 두 번 클릭 하 여 **VSIX 매니페스트 디자이너**에서 연 후 다음과 같이 변경 합니다.
+4. **솔루션 탐색기** 에서 *source.extension.vsixmanifest* 파일을 두 번 클릭 하 여 **VSIX 매니페스트 디자이너** 에서 연 후 다음과 같이 변경 합니다.
 
-    - **제품 이름** 필드를 **내 프로젝트 템플릿으로**설정 합니다.
+    - **제품 이름** 필드를 **내 프로젝트 템플릿으로** 설정 합니다.
 
-    - **PRODUCT ID** 필드를 **myprojecttemplate-1**로 설정 합니다.
+    - **PRODUCT ID** 필드를 **myprojecttemplate-1** 로 설정 합니다.
 
-    - **Author** 필드를 **Fabrikam**으로 설정 합니다.
+    - **Author** 필드를 **Fabrikam** 으로 설정 합니다.
 
-    - **설명** 필드를 **내 프로젝트 템플릿으로**설정 합니다.
+    - **설명** 필드를 **내 프로젝트 템플릿으로** 설정 합니다.
 
     - **자산** 섹션에서 **VisualStudio** 형식을 추가 하 고 해당 경로를 *.zip* 파일의 이름으로 설정 합니다.
 
@@ -67,13 +69,13 @@ VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 �
 
 ::: moniker range="vs-2017"
 
-10. **도구** 메뉴에서 **확장 및 업데이트** 를 선택 하 고 **템플릿** 범주를 선택 합니다. 사용 가능한 확장 중 하나는 **내 프로젝트 템플릿**이어야 합니다.
+10. **도구** 메뉴에서 **확장 및 업데이트** 를 선택 하 고 **템플릿** 범주를 선택 합니다. 사용 가능한 확장 중 하나는 **내 프로젝트 템플릿** 이어야 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-10. 확장 관리 **메뉴에서** **확장 관리** 를 선택 하 고 **템플릿** 범주를 선택 합니다. 사용 가능한 확장 중 하나는 **내 프로젝트 템플릿**이어야 합니다.
+10. 확장 관리 **메뉴에서** **확장 관리** 를 선택 하 고 **템플릿** 범주를 선택 합니다. 사용 가능한 확장 중 하나는 **내 프로젝트 템플릿** 이어야 합니다.
 
 ::: moniker-end
 
@@ -83,7 +85,7 @@ VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 �
 
 1. 템플릿 폴더는 *{Visual Studio 설치 경로} \Common7\IDE\ProjectTemplates* 및 *{Visual studio 설치 경로} \Common7\IDE\ItemTemplates* 디렉터리에 있습니다. **새 프로젝트** 대화 상자의 최상위 섹션 이름이 템플릿 폴더의 이름과 정확 하 게 일치 하지 않습니다. 서로 다른 위치에서 템플릿 폴더의 이름을 사용 합니다.
 
-    *.Vsix* 파일 확장명을 *.zip*으로 변경한 다음 파일을 엽니다.
+    *.Vsix* 파일 확장명을 *.zip* 으로 변경한 다음 파일을 엽니다.
 
 2. **새 프로젝트** 대화 상자의 섹션과 같은 이름으로 새 폴더를 만듭니다.
 
@@ -91,8 +93,8 @@ VSIX 프로젝트 템플릿을 사용 하 여 확장을 만들거나 배포를 �
 
 4. 템플릿 *.zip* 파일을 새 폴더로 이동 합니다.
 
-5. *.Zip* 확장명을 *.vsix*로 변경 합니다.
+5. *.Zip* 확장명을 *.vsix* 로 변경 합니다.
 
 6. VSIX 매니페스트를 엽니다.
 
-7. VSIX 매니페스트에서 템플릿 파일을 포함 하는 디렉터리 트리의 루트를 가리키도록 템플릿의 **자산** 경로를 업데이트 합니다. 예를 들어 템플릿이 *\CSharp\Windows*에 있는 경우 참조는 *\csharp*를 가리켜야 합니다.
+7. VSIX 매니페스트에서 템플릿 파일을 포함 하는 디렉터리 트리의 루트를 가리키도록 템플릿의 **자산** 경로를 업데이트 합니다. 예를 들어 템플릿이 *\CSharp\Windows* 에 있는 경우 참조는 *\csharp* 를 가리켜야 합니다.

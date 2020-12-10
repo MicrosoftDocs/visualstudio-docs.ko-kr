@@ -1,5 +1,7 @@
 ---
 title: '방법: 문서 데이터에 보기 연결 | Microsoft Docs'
+description: 새 문서 뷰를 기존 문서 데이터 개체에 연결할 수 있습니다. 이 절차를 사용 하 여 뷰를 연결할 수 있는지 여부를 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905899"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994188"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>방법: 문서 데이터에 보기 연결
 새 문서 보기가 있는 경우 기존 문서 데이터 개체에 연결할 수 있습니다.
@@ -42,6 +44,6 @@ ms.locfileid: "85905899"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  Visual Studio는 메서드의 구현을 호출할 때 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 매개 변수에서 기존 문서 데이터 개체에 대 한 포인터를 다시 전달 `punkDocDataExisting` 합니다 (있는 경우). 에서 반환 된 문서 데이터 개체를 검토 `punkDocDataExisting` 하 여이 항목에 설명 된 절차의 4 단계에 설명 된 대로 문서 데이터 개체가 편집기에 적합 한지 확인 합니다. 적절 한 경우 편집기 팩터리는 [다중 문서 뷰 지원](../extensibility/supporting-multiple-document-views.md)에 설명 된 대로 데이터에 대 한 두 번째 뷰를 제공 해야 합니다. 그렇지 않으면 적절 한 오류 메시지를 표시 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [다중 문서 뷰 지원](../extensibility/supporting-multiple-document-views.md)
 - [사용자 지정 편집기의 문서 데이터 및 문서 보기](../extensibility/document-data-and-document-view-in-custom-editors.md)

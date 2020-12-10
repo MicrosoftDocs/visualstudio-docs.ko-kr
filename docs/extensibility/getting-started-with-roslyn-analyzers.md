@@ -1,5 +1,7 @@
 ---
 title: Roslyn 분석기 시작 | Microsoft Docs
+description: Visual Studio에서 Roslyn 분석기를 시작 하려면 다음 리소스를 사용 하세요. 자습서와 몇 가지 예를 포함 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c63510083f227f617b2a11ddec07510ffd792433
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012245"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994357"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 

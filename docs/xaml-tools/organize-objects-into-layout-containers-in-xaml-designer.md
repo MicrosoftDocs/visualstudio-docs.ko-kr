@@ -1,5 +1,5 @@
 ---
-title: XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
+title: 개체를 레이아웃 컨테이너로 구성
 description: '페이지의 개체를 정렬 하는 데 사용 되는 XAML 디자이너의 레이아웃 패널 및 컨트롤 (예: Grid, Canvas, Border 및 Viewbox)에 대해 알아봅니다.'
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
@@ -8,12 +8,12 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6df200c5adb4993d13e896eaa6d2041e0e9db044
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047354"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995527"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
@@ -31,7 +31,7 @@ ms.locfileid: "93047354"
 
 다음은 가장 많이 사용되는 레이아웃 패널이며, 다른 레이아웃 패널도 있습니다. 이 모든 항목은 Visual Studio의 **도구 상자** 또는 Blend for Visual Studio의 **자산** 패널에서 확인할 수 있습니다.
 
-### <a name="grid"></a>그리드
+### <a name="grid"></a>표
 
 개체를 행 및 열로 정렬합니다.
 
@@ -103,7 +103,7 @@ ms.locfileid: "93047354"
 
 ![ViewBox 레이아웃 컨트롤](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

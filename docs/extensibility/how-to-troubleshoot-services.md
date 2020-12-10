@@ -1,5 +1,7 @@
 ---
 title: '방법: 서비스 문제 해결 | Microsoft Docs'
+description: Visual Studio SDK에서 서비스를 가져오려고 할 때 발생할 수 있는 몇 가지 일반적인 문제를 해결 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234954"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993694"
 ---
 # <a name="how-to-troubleshoot-services"></a>방법: 서비스 문제 해결
 서비스를 가져오려고 할 때 발생할 수 있는 몇 가지 일반적인 문제는 다음과 같습니다.
@@ -66,7 +68,7 @@ if (log == null) return;
 
     도구 창이 사용자 정의 컨트롤 또는 다른 컨트롤 컨테이너를 호스트 하는 경우 컨테이너는 Windows 구성 요소 모델에 의해 배치 되며 어떤 서비스에도 액세스할 수 없습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>를 호출 하 여 컨트롤 컨테이너 내에서 VSPackage 서비스 공급자를 가져올 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용 가능한 서비스 목록](../extensibility/internals/list-of-available-services.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

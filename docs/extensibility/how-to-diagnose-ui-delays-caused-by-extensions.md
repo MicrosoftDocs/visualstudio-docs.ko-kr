@@ -1,17 +1,19 @@
 ---
 title: Visual Studio에서 확장 UI 지연 진단 | Microsoft Docs
+description: Visual Studio는 UI 지연이 확장으로 인해 발생할 수 있는지를 알려 줍니다. 확장 코드에서 UI 지연을 유발 하는 항목을 진단 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849157"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994266"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>방법: 확장으로 인해 발생한 진단 UI 지연
 
@@ -71,7 +73,7 @@ PerfView에서 추적 컬렉션을 시작한 후에는 1 단계의 트리거 작
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>활동 로그를 검사 하 여 지연 ID 가져오기
 
-앞에서 설명한 대로 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*에서 활동 로그를 찾을 수 있습니다. Visual Studio는 확장 UI 지연을 감지할 때마다를 사용 하 여 활동 로그에 노드를 소스로 씁니다 `UIDelayNotifications` . 이 노드에는 UI 지연에 대 한 네 가지 정보가 포함 되어 있습니다.
+앞에서 설명한 대로 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 에서 활동 로그를 찾을 수 있습니다. Visual Studio는 확장 UI 지연을 감지할 때마다를 사용 하 여 활동 로그에 노드를 소스로 씁니다 `UIDelayNotifications` . 이 노드에는 UI 지연에 대 한 네 가지 정보가 포함 되어 있습니다.
 
 - VS 세션에서 UI 지연을 고유 하 게 식별 하는 일련 번호 인 UI 지연 ID입니다.
 - 시작부터 종료까지 Visual Studio 세션을 고유 하 게 식별 하는 세션 ID입니다.
@@ -102,7 +104,7 @@ PerfView에서 추적 컬렉션을 시작한 후에는 1 단계의 트리거 작
 그런 다음 왼쪽 창에서 추적 파일을 선택 하 고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **열기** 를 선택 하 여 엽니다.
 
 > [!NOTE]
-> 기본적으로 PerfView는 Zip 보관 파일을 출력 합니다. *trace.zip*열면 자동으로 보관 파일의 압축을 풀거나 추적이 열립니다. 추적 수집 중에 **Zip** 상자의 선택을 취소 하 여이를 건너뛸 수 있습니다. 그러나 다른 컴퓨터에서 추적을 전송 하 고 사용 하려는 경우에는 **Zip** 상자를 사용 하지 않는 것이 좋습니다. 이 옵션을 사용 하지 않으면 Ngen 어셈블리에 필요한 Pdb가 추적에 수반 되지 않으므로 Ngen 어셈블리의 기호가 대상 컴퓨터에서 확인 되지 않습니다. Ngen 어셈블리에 대 한 Pdb에 대 한 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) 을 참조 하세요.
+> 기본적으로 PerfView는 Zip 보관 파일을 출력 합니다. *trace.zip* 열면 자동으로 보관 파일의 압축을 풀거나 추적이 열립니다. 추적 수집 중에 **Zip** 상자의 선택을 취소 하 여이를 건너뛸 수 있습니다. 그러나 다른 컴퓨터에서 추적을 전송 하 고 사용 하려는 경우에는 **Zip** 상자를 사용 하지 않는 것이 좋습니다. 이 옵션을 사용 하지 않으면 Ngen 어셈블리에 필요한 Pdb가 추적에 수반 되지 않으므로 Ngen 어셈블리의 기호가 대상 컴퓨터에서 확인 되지 않습니다. Ngen 어셈블리에 대 한 Pdb에 대 한 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) 을 참조 하세요.
 
 PerfView에서 추적을 처리 하 고 여는 데 몇 분 정도 걸릴 수 있습니다. 추적이 열리면 다양 한 "뷰" 목록이 표시 됩니다.
 
@@ -110,7 +112,7 @@ PerfView에서 추적을 처리 하 고 여는 데 몇 분 정도 걸릴 수 있
 
 먼저 **이벤트** 보기를 사용 하 여 UI 지연의 시간 범위를 가져옵니다.
 
-1. **Events** `Events` 추적 아래에서 노드를 선택 하 고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **열기** 를 선택 하 여 이벤트 보기를 엽니다.
+1.  `Events` 추적 아래에서 노드를 선택 하 고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **열기** 를 선택 하 여 이벤트 보기를 엽니다.
 2. `Microsoft-VisualStudio/ExtensionUIUnresponsiveness`왼쪽 창에서 ""를 선택 합니다.
 3. Enter 키를 누릅니다.
 

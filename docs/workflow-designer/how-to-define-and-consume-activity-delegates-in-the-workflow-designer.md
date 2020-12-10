@@ -1,6 +1,6 @@
 ---
-title: '워크플로 디자이너: 활동 대리자 정의 및 사용'
-description: 활동 대리자를 정의 하 고 사용 하는 데 사용할 수 있는 InvokeDelegate 활동에 대 한 기본 디자이너가 .NET Framework 4.5에 포함 되어 있는지 알아보세요.
+title: 활동 대리자 정의 및 사용
+description: 워크플로 디자이너에서 .NET Framework 4.5에 작업 대리자를 정의 하 고 사용 하는 데 사용할 수 있는 InvokeDelegate 작업에 대 한 기본 디자이너가 포함 된 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437920"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993278"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 
@@ -28,7 +28,7 @@ ms.locfileid: "94437920"
    > [!NOTE]
    > **워크플로** 프로젝트 템플릿이 표시 되지 않는 경우 먼저 Visual Studio의 **Windows Workflow Foundation** 구성 요소를 설치 합니다. 자세한 지침은 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)를 참조 하세요.
 
-3. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **워크플로** 범주를 선택 하 고 **작업** 항목 템플릿을 선택 합니다. 새 활동의 이름을 **Myforeach. .xaml** 로 지정한 다음 **확인을** 선택 합니다.
+3. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **워크플로** 범주를 선택 하 고 **작업** 항목 템플릿을 선택 합니다. 새 활동의 이름을 **Myforeach. .xaml** 로 지정한 다음 **확인을** 선택 합니다.
 
    활동은 workflow designer에서 열립니다.
 

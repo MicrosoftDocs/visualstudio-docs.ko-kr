@@ -1,5 +1,7 @@
 ---
 title: 확장을 왕복 하는 방법
+description: Visual studio 확장성 프로젝트를 Visual Studio 2015와 Visual studio 2019 또는 Visual Studio 2017 사이에서 라운드트립 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387280"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993616"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>방법: Visual Studio 2019/2017 및 Visual Studio 2015과 호환 되는 확장 만들기
 
@@ -29,7 +31,7 @@ Visual Studio 2019/2017 에서만 빌드 하려고 하지만 출력 VSIX를 Visu
 1. 올바른 NuGet 패키지를 가져옵니다.
 2. 확장 매니페스트 업데이트:
     * 설치 대상
-    * 필수 구성 요소
+    * 필수 조건
 3. 업데이트 .Csproj:
     * `<MinimumVisualStudioVersion>`를 업데이트합니다.
     * `<VsixType>` 속성 추가
@@ -51,13 +53,13 @@ Visual Studio 2019 또는 2017 대신 Visual Studio 2015을 사용 하 여 업�
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.js에 대 한 참조가 없는지 확인
 
-이 문서의 뒷부분에서 **.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가project.js에 저장 된 경우 * 에*는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *packages.config* 파일로 이동 하는 것이 좋습니다.
-프로젝트에 파일 * 에 대 한project.js* 포함 되어 있는 경우:
+이 문서의 뒷부분에서 **.csproj* 파일에 조건부 import 문을 삽입 합니다. NuGet 참조가project.js에 저장 된 경우 *에* 는이 작업이 수행 되지 않습니다. 따라서 모든 NuGet 참조를 *packages.config* 파일로 이동 하는 것이 좋습니다.
+프로젝트에 파일 *에 대 한project.js* 포함 되어 있는 경우:
 
-* *project.js*의 참조를 기록해 둡니다.
-* **솔루션 탐색기**에서 파일 *의project.js* 를 프로젝트에서 삭제 합니다. 그러면 파일 * 에서project.js* 삭제 되 고 프로젝트에서 제거 됩니다.
+* *project.js* 의 참조를 기록해 둡니다.
+* **솔루션 탐색기** 에서 파일 *의project.js* 를 프로젝트에서 삭제 합니다. 그러면 파일 *에서project.js* 삭제 되 고 프로젝트에서 제거 됩니다.
 * NuGet 참조를 프로젝트에 다시 추가 합니다.
-  * **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리**를 선택 합니다.
+  * **솔루션** 을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리** 를 선택 합니다.
   * Visual Studio에서 자동으로 *packages.config* 파일을 만듭니다.
 
 > [!NOTE]
@@ -122,7 +124,7 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 
 이 단계를 수행 하는 동안 수정 된 .csproj에 대 한 참조를 포함 하는 것이 좋습니다. [여기](https://github.com/Microsoft/VSSDK-Extensibility-Samples)에서 여러 예제를 찾을 수 있습니다. 모든 확장성 샘플을 선택 하 고 참조에 대 한 *.csproj* 파일을 찾은 후 다음 단계를 실행 합니다.
 
-* **파일 탐색기**에서 프로젝트 디렉터리로 이동 합니다.
+* **파일 탐색기** 에서 프로젝트 디렉터리로 이동 합니다.
 * 텍스트 편집기를 사용 하 여 *myproject* 파일을 엽니다.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. MinimumVisualStudioVersion 업데이트
@@ -213,4 +215,4 @@ VSIX를 빌드하기 위해 대상으로 지정할 버전을 Visual Studio에 �
 ![VSIX 찾기](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> 프로젝트에서 **파일을 여는**메시지와 함께 응답이 중지 되는 경우 Visual Studio를 강제로 종료 하 고, 프로젝트 디렉터리로 이동 하 고, 숨겨진 폴더를 표시 하 고, vs 폴더를 삭제 합니다 *.*
+> 프로젝트에서 **파일을 여는** 메시지와 함께 응답이 중지 되는 경우 Visual Studio를 강제로 종료 하 고, 프로젝트 디렉터리로 이동 하 고, 숨겨진 폴더를 표시 하 고, vs 폴더를 삭제 합니다 *.*

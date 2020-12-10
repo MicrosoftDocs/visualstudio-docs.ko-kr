@@ -1,5 +1,7 @@
 ---
 title: Extern 요소 | Microsoft Docs
+description: Extern 요소는 컴파일 타임에. vsct 파일과 병합할 외부 헤더 파일 (.h)을 참조 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711495"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994526"
 ---
 # <a name="extern-element"></a>Extern 요소
 Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 파일 (*.h*)을 참조 합니다. 병합할 파일은 VSCT 컴파일러에 지정 된 포함 경로에 있거나 [include 요소](../extensibility/include-element.md)에서 참조 되어야 합니다. 파일은 다른 *. vsct* 파일 또는 c + + 헤더 파일 일 수 있습니다.
@@ -38,7 +40,7 @@ Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|

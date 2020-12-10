@@ -1,5 +1,7 @@
 ---
 title: 설정 저장소에서 서비스 정보 가져오기 | Microsoft Docs
+description: 설정 저장소를 사용 하 여 사용 가능한 모든 서비스를 찾거나 특정 서비스가 설치 되어 있는지 여부를 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711367"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994435"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
 설정 저장소를 사용 하 여 사용 가능한 모든 서비스를 찾거나 특정 서비스가 설치 되어 있는지 여부를 확인할 수 있습니다. 서비스 클래스의 형식을 알아야 합니다.
@@ -22,7 +24,7 @@ ms.locfileid: "80711367"
 
 1. 이라는 VSIX 프로젝트를 만든 `FindServicesExtension` 다음 이라는 사용자 지정 명령을 추가 `FindServicesCommand` 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
 
-2. *FindServicesCommand.cs*에서 다음 using 지시문을 추가 합니다.
+2. *FindServicesCommand.cs* 에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Collections.Generic;
@@ -52,7 +54,7 @@ ms.locfileid: "80711367"
 
 4. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 나타납니다.
 
-5. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출**을 클릭 합니다.
+5. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출** 을 클릭 합니다.
 
      모든 서비스를 나열 하는 메시지 상자가 표시 됩니다.
 
@@ -78,6 +80,6 @@ ms.locfileid: "80711367"
 
 2. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
-3. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출**을 클릭 합니다.
+3. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출** 을 클릭 합니다.
 
-     텍스트 **도움말 서비스를 사용할 수**  있는 메시지가 표시 되 고 그 뒤에 **True** 또는 **False**가 표시 됩니다. 이 설정을 확인 하기 위해 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.
+     텍스트 **도움말 서비스를 사용할 수**  있는 메시지가 표시 되 고 그 뒤에 **True** 또는 **False** 가 표시 됩니다. 이 설정을 확인 하기 위해 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: 사용자 설정 및 옵션 확장 | Microsoft Docs
+description: 이 문서의 리소스를 사용 하 여 Visual Studio SDK의 사용자 설정 및 옵션을 확장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711550"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994578"
 ---
 # <a name="extend-user-settings-and-options"></a>사용자 설정 및 옵션 확장
 Visual Studio에서는 사용자 기본 설정을 유지 관리 하는 두 가지 주요 방법이 있습니다. 사용자는 **도구**  >  **옵션** 페이지를 사용 하 여 일반적이 고 언어별 인 다양 한 종류의 설정에 대해 고유한 값을 설정할 수 있습니다. 사용자 설정을 통해 일반 Visual Studio 구성 속성을 지정할 수 있습니다. 옵션 페이지에 대 한 자세한 내용은 [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)를 참조 하세요. 사용자 설정에 대 한 자세한 내용은 [사용자 설정 지원](../extensibility/internals/support-for-user-settings.md)을 참조 하세요.

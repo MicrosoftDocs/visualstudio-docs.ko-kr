@@ -1,5 +1,7 @@
 ---
 title: '방법: 열려 있는 문서에 대 한 편집기 열기 | Microsoft Docs'
+description: 표준 또는 프로젝트별 편집기에서 파일을 여는 방법에 대해 알아봅니다. 프로젝트가 문서 창을 열 때 파일이 이미 열려 있는지 여부를 확인 해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905820"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993863"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>방법: 열려 있는 문서에 대 한 편집기 열기
 프로젝트가 문서 창을 열기 전에 먼저 프로젝트에서 다른 편집기의 문서 창에 파일이 이미 열려 있는지 여부를 확인 해야 합니다. 프로젝트 관련 편집기에서 파일을 열거나에 등록 된 표준 편집기 중 하나를 사용할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -52,7 +54,7 @@ ms.locfileid: "85905820"
 
 2. 문서가 열려 있지 않으면 [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)의 단계를 완료 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 프로젝트 관련 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)
 - [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)

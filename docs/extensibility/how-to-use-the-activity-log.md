@@ -1,5 +1,7 @@
 ---
 title: '방법: 활동 로그 사용 Microsoft Docs'
+description: Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 소매 환경에서 Vspackage를 디버깅 하는 데 활동 로그를 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905589"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993577"
 ---
 # <a name="how-to-use-the-activity-log"></a>방법: 활동 로그 사용
 Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 소매 환경에서 Vspackage를 디버깅 하는 데 특히 유용 합니다.
@@ -62,9 +64,9 @@ Vspackage은 활동 로그에 메시지를 쓸 수 있습니다. 이 기능은 �
 
 활동 로그에 쓰기 전에 활동 로그를 가져와야 합니다. 나중에 사용 하기 위해 활동 로그를 캐시 하거나 저장 하지 마십시오.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log(devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [VSPackage 문제 해결](../extensibility/troubleshooting-vspackages.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 비동기 Visual Studio 서비스 제공 | Microsoft Docs'
+description: 비동기 Visual Studio 서비스를 제공 하는 방법을 알아봅니다. 이 방법을 사용 하면 UI 스레드를 차단 하지 않고 서비스를 가져올 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905742"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993642"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>방법: 비동기 Visual Studio 서비스 제공
 UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서비스를 만들어 백그라운드 스레드에서 패키지를 로드 해야 합니다. 이러한 목적을 위해 대신를 사용 하 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> <xref:Microsoft.VisualStudio.Shell.Package> 고 비동기 패키지의 특수 비동기 메서드를 사용 하 여 서비스를 추가할 수 있습니다.
@@ -22,11 +24,11 @@ UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서�
 
 ## <a name="implement-an-asynchronous-service"></a>비동기 서비스 구현
 
-1. VSIX 프로젝트를 만듭니다 (**파일**  >  **새로**만들기  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **vsix 프로젝트**). 프로젝트 이름을 **Testasync**로 합니다.
+1. VSIX 프로젝트를 만듭니다 (**파일**  >  **새로** 만들기  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **vsix 프로젝트**). 프로젝트 이름을 **Testasync** 로 합니다.
 
-2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 **Add**  >  **새 항목**추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지**를 클릭 합니다. 이 파일의 이름을 *TestAsyncPackage.cs*로 합니다.
+2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고   >  **새 항목** 추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지** 를 클릭 합니다. 이 파일의 이름을 *TestAsyncPackage.cs* 로 합니다.
 
-3. *TestAsyncPackage.cs*에서 다음이 아닌에서 상속 하도록 패키지를 변경 합니다 `AsyncPackage` `Package` .
+3. *TestAsyncPackage.cs* 에서 다음이 아닌에서 상속 하도록 패키지를 변경 합니다 `AsyncPackage` `Package` .
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -120,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>서비스 추가
 
-1. *TestAsyncPackage.cs*에서 메서드를 제거 `Initialize()` 하 고 메서드를 재정의 `InitializeAsync()` 합니다. 서비스를 추가 하 고 서비스를 만드는 콜백 메서드를 추가 합니다. 서비스를 추가 하는 비동기 이니셜라이저의 예는 다음과 같습니다.
+1. *TestAsyncPackage.cs* 에서 메서드를 제거 `Initialize()` 하 고 메서드를 재정의 `InitializeAsync()` 합니다. 서비스를 추가 하 고 서비스를 만드는 콜백 메서드를 추가 합니다. 서비스를 추가 하는 비동기 이니셜라이저의 예는 다음과 같습니다.
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -132,7 +134,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```
     이 서비스를이 패키지 외부에서 볼 수 있도록 하려면 승격 플래그 값을 마지막 매개 변수로 *true* 로 설정 합니다.  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
-2. *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*에 대 한 참조를 추가 합니다.
+2. *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* 에 대 한 참조를 추가 합니다.
 
 3. 서비스를 만들고 반환 하는 비동기 메서드로 콜백 메서드를 구현 합니다.
 
@@ -171,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>명령 처리기에서 비동기 서비스 사용
  메뉴 명령에서 비동기 서비스를 사용 하는 방법에 대 한 예제는 다음과 같습니다. 여기에 표시 된 절차를 사용 하 여 비동기 이외의 다른 메서드에서 서비스를 사용할 수 있습니다.
 
-1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가**  >  를 선택 합니다. **새 항목**  >  **확장성**  >  **사용자 지정 명령** 명령 파일의 이름을 *TestAsyncCommand.cs*로 합니다.
+1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가**  >  를 선택 합니다. **새 항목**  >  **확장성**  >  **사용자 지정 명령** 명령 파일의 이름을 *TestAsyncCommand.cs* 로 합니다.
 
 2. 사용자 지정 명령 템플릿은 `Initialize()` 명령을 초기화 하기 위해 메서드를 *TestAsyncPackage.cs* 파일에 다시 추가 합니다. `Initialize()`메서드에서 명령을 초기화 하는 줄을 복사 합니다. 다음과 같이 표시됩니다.
 
@@ -238,5 +240,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. 솔루션을 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 되 면 **도구** 메뉴로 이동 하 여 **Testasynccommand 호출** 메뉴 항목을 찾습니다. 이를 클릭 하면 TextWriterService가 지정 된 파일에 기록 합니다. 명령을 호출 하면 패키지도 로드 되므로 솔루션을 열 필요가 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

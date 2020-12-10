@@ -1,5 +1,7 @@
 ---
 title: 출력 창 확장 | Microsoft Docs
+description: Visual Studio SDK에서 출력 창을 확장 하 고 사용자 지정 창을 직접 만들고 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711650"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994669"
 ---
 # <a name="extend-the-output-window"></a>출력 창 확장
-**출력** 창은 읽기/쓰기 텍스트 창의 집합입니다. Visual Studio에는 **빌드, 빌드**에 대 한 메시지를 전달 하는 프로젝트, 및에서 **General** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 전달 하는 일반적인를 비롯 한 기본 제공 창이 있습니다. 프로젝트는 인터페이스 메서드를 통해 **빌드** 창에 대 한 참조를 자동으로 가져오며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> , Visual Studio는 서비스를 통해 **일반** 창에 직접 액세스할 수 있도록 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 합니다. 기본 제공 창 외에도 고유한 사용자 지정 창을 만들고 관리할 수 있습니다.
+**출력** 창은 읽기/쓰기 텍스트 창의 집합입니다. Visual Studio에는 **빌드, 빌드** 에 대 한 메시지를 전달 하는 프로젝트, 및에서  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 전달 하는 일반적인를 비롯 한 기본 제공 창이 있습니다. 프로젝트는 인터페이스 메서드를 통해 **빌드** 창에 대 한 참조를 자동으로 가져오며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> , Visual Studio는 서비스를 통해 **일반** 창에 직접 액세스할 수 있도록 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 합니다. 기본 제공 창 외에도 고유한 사용자 지정 창을 만들고 관리할 수 있습니다.
 
  및 인터페이스를 통해 **출력** 창을 직접 제어할 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>서비스에서 제공 하는 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> **출력** 창의 생성, 검색 및 삭제를 위한 메서드를 정의 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>인터페이스는 창을 표시 하 고, 창을 숨기고, 텍스트를 조작 하기 위한 메서드를 정의 합니다. **출력** 창을 제어 하는 또 다른 방법은 <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> Visual Studio 자동화 개체 모델의 및 개체를 통하는 것입니다. 이러한 개체는 및 인터페이스의 거의 모든 기능을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> 캡슐화 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> 합니다. 또한 <xref:EnvDTE.OutputWindow> 및 <xref:EnvDTE.OutputWindowPane> 개체는 **출력** 창을 보다 쉽게 열거 하 고 창에서 텍스트를 검색 하기 위해 더 높은 수준의 기능을 추가 합니다.
 
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>출력 창을 사용 하는 확장 만들기
  출력 창의 다양 한 측면을 나타내는 확장을 만들 수 있습니다.
 
-1. `TestOutput` **Testoutput**이라는 메뉴 명령을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+1. `TestOutput` **Testoutput** 이라는 메뉴 명령을 사용 하 여 라는 VSIX 프로젝트를 만듭니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 2. 다음 참조를 추가합니다.
 
@@ -33,14 +35,14 @@ ms.locfileid: "80711650"
 
     2. EnvDTE80
 
-3. *TestOutput.cs*에서 다음 using 문을 추가 합니다.
+3. *TestOutput.cs* 에서 다음 using 문을 추가 합니다.
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. *TestOutput.cs*에서 메서드를 삭제 `ShowMessageBox` 합니다. 다음 메서드 스텁을 추가 합니다.
+4. *TestOutput.cs* 에서 메서드를 삭제 `ShowMessageBox` 합니다. 다음 메서드 스텁을 추가 합니다.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

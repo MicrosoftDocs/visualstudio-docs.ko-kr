@@ -1,5 +1,7 @@
 ---
 title: '방법: VSIX 패키지에 종속성 추가 | Microsoft Docs'
+description: 대상 컴퓨터에 아직 없는 종속성을 설치 하는 VSIX 패키지 배포를 설정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012232"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993837"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>방법: VSIX 패키지에 종속성 추가
 
@@ -26,15 +28,15 @@ ms.locfileid: "90012232"
 
 ## <a name="to-add-a-dependency"></a>종속성을 추가 하려면
 
-1. **디자인** 뷰에서 *source.extension.vsixmanifest* 파일을 엽니다. **종속성** 탭으로 이동 하 고 **새로 만들기**를 클릭 합니다.
+1. **디자인** 뷰에서 *source.extension.vsixmanifest* 파일을 엽니다. **종속성** 탭으로 이동 하 고 **새로 만들기** 를 클릭 합니다.
 
-2. 설치 된 확장을 추가 하려면 **새 종속성 추가** 대화 상자에서 **설치 된 확장** 을 선택 하 고 **이름**에 대해 목록에서 확장을 선택 합니다.
+2. 설치 된 확장을 추가 하려면 **새 종속성 추가** 대화 상자에서 **설치 된 확장** 을 선택 하 고 **이름** 에 대해 목록에서 확장을 선택 합니다.
 
 3. 설치 되지 않은 다른 VSIX를 추가 하려면 다음을 수행 합니다. **새 종속성 추가** 대화 상자에서 파일 **시스템의 파일** 을 선택한 다음 **찾아보기** 단추를 사용 하 여 VSIX를 선택 합니다.
 
 ## <a name="require-a-specific-visual-studio-release"></a>특정 Visual Studio 릴리스 필요
 
-확장에 특정 버전의 Visual Studio 2017가 필요한 경우 (예: 15.3에서 릴리스된 기능에 따라 달라 지는 경우) VSIX **설치 대상**에서 빌드 번호를 지정할 수 있습니다. 예를 들어 릴리스 15.3의 빌드 번호는 ' 15.0.26730.3 '입니다. [여기](../install/visual-studio-build-numbers-and-release-dates.md)에서 빌드 번호에 대 한 릴리스 매핑을 볼 수 있습니다. 릴리스 번호 ' 15.3 '을 사용 하면 제대로 작동 하지 않습니다.
+확장에 특정 버전의 Visual Studio 2017가 필요한 경우 (예: 15.3에서 릴리스된 기능에 따라 달라 지는 경우) VSIX **설치 대상** 에서 빌드 번호를 지정할 수 있습니다. 예를 들어 릴리스 15.3의 빌드 번호는 ' 15.0.26730.3 '입니다. [여기](../install/visual-studio-build-numbers-and-release-dates.md)에서 빌드 번호에 대 한 릴리스 매핑을 볼 수 있습니다. 릴리스 번호 ' 15.3 '을 사용 하면 제대로 작동 하지 않습니다.
 
 확장에 15.3 이상이 필요한 경우 **설치 대상 버전** 을 [15.0.26730.3, 16.0)로 선언 합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 속성 창에 속성 노출 | Microsoft Docs
+description: 개체의 공용 속성에 대해 알아봅니다. 이러한 속성에 대 한 변경 내용은 속성 창에 반영 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711824"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994695"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>속성 창에 속성 노출
 
 이 연습에서는 개체의 공용 속성을 **속성** 창에 노출 합니다. 이러한 속성에 대 한 변경 내용은 **속성** 창에 반영 됩니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -35,7 +37,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `MyObjectPropertiesExtension` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이라는 사용자 지정 도구 창 항목 템플릿을 추가 하 여 도구 창을 추가 `MyToolWindow` 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택 합니다. **새 항목 추가 대화 상자**에서 **Visual c # 항목**  >  **확장성** 으로 이동 하 고 **사용자 지정 도구 창**을 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을 *MyToolWindow.cs*로 변경 합니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
+2. 이라는 사용자 지정 도구 창 항목 템플릿을 추가 하 여 도구 창을 추가 `MyToolWindow` 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **새 항목 추가 대화 상자** 에서 **Visual c # 항목**  >  **확장성** 으로 이동 하 고 **사용자 지정 도구 창** 을 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을 *MyToolWindow.cs* 로 변경 합니다. 사용자 지정 도구 창을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
 3. *MyToolWindow.cs* 를 열고 다음 using 문을 추가 합니다.
 
@@ -94,13 +96,13 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 6. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 되어야 합니다.
 
-7. **속성** 창이 표시 되지 않으면 **F4**키를 눌러 엽니다.
+7. **속성** 창이 표시 되지 않으면 **F4** 키를 눌러 엽니다.
 
-8. **가리키고 mytoolwindow** 창을 엽니다. **View**  >  **다른 창**보기에서 찾을 수 있습니다.
+8. **가리키고 mytoolwindow** 창을 엽니다.   >  **다른 창** 보기에서 찾을 수 있습니다.
 
     창이 열리고 창 창의 공용 속성이 **속성** 창에 나타납니다.
 
-9. **속성** 창의 **Caption** 속성을 **내 개체 속성**으로 변경 합니다.
+9. **속성** 창의 **Caption** 속성을 **내 개체 속성** 으로 변경 합니다.
 
      가리키고 mytoolwindow 창 캡션은 그에 따라 변경 됩니다.
 
@@ -110,15 +112,15 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ### <a name="to-expose-tool-window-properties"></a>도구 창 속성을 노출 하려면
 
-1. *MyToolWindow.cs*을 열고 클래스에 public 부울 속성 ischecked를 추가 합니다 `MyToolWindow` .
+1. *MyToolWindow.cs* 을 열고 클래스에 public 부울 속성 ischecked를 추가 합니다 `MyToolWindow` .
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -143,7 +145,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
      이렇게 하면 `MyToolWindowControl` 창에 액세스할 수 `MyToolWindow` 있습니다.
 
-3. *MyToolWindow.cs*에서 `MyToolWindow` 생성자를 다음과 같이 변경 합니다.
+3. *MyToolWindow.cs* 에서 `MyToolWindow` 생성자를 다음과 같이 변경 합니다.
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -176,7 +178,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
      **속성** 창에서 창의 속성을 찾습니다. **Ischecked** 속성이 창의 아래쪽에 있는 **내 속성** 범주 아래에 나타납니다.
 
-10. **가리키고 mytoolwindow** 창에서 확인란을 선택 합니다. **속성** 창의 **Ischecked** 가 **True**로 변경 됩니다. **가리키고 mytoolwindow** 창에서 확인란의 선택을 취소 합니다. **속성** 창의 **Ischecked** 가 **False**로 변경 됩니다. **속성** 창에서 **ischecked** 값을 변경 합니다. **가리키고 mytoolwindow** 창의 확인란이 새 값과 일치 하도록 변경 됩니다.
+10. **가리키고 mytoolwindow** 창에서 확인란을 선택 합니다. **속성** 창의 **Ischecked** 가 **True** 로 변경 됩니다. **가리키고 mytoolwindow** 창에서 확인란의 선택을 취소 합니다. **속성** 창의 **Ischecked** 가 **False** 로 변경 됩니다. **속성** 창에서 **ischecked** 값을 변경 합니다. **가리키고 mytoolwindow** 창의 확인란이 새 값과 일치 하도록 변경 됩니다.
 
     > [!NOTE]
     > **속성** 창에 표시 되는 개체를 삭제 해야 하는 경우 `OnSelectChange` 먼저 선택 컨테이너를 사용 하 여를 호출 `null` 합니다. 속성이 나 개체를 삭제 한 후에는 업데이트 된 및 목록을 포함 하는 선택 컨테이너로 변경할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> .
@@ -190,14 +192,14 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 1. *MyToolWindow.cs* 를 열고 이라는 public 클래스를 추가 `Simple` 합니다.
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }
@@ -240,7 +242,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     }
     ```
 
-3. *MyToolWindowControl.cs*에서 확인란 처리기를 다음 코드 줄로 바꿉니다.
+3. *MyToolWindowControl.cs* 에서 확인란 처리기를 다음 코드 줄로 바꿉니다.
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -261,10 +263,10 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 5. 실험적 인스턴스에서 **가리키고 mytoolwindow** 창을 엽니다.
 
-6. **가리키고 mytoolwindow** 창에서 확인란을 선택 합니다. **속성** 창에는 `Simple` 개체 속성 **SomeText** 및 **ReadOnly**가 표시 됩니다. 확인란을 선택 취소합니다. 창의 공용 속성은 **속성** 창에 표시 됩니다.
+6. **가리키고 mytoolwindow** 창에서 확인란을 선택 합니다. **속성** 창에는 `Simple` 개체 속성 **SomeText** 및 **ReadOnly** 가 표시 됩니다. 확인란을 선택 취소합니다. 창의 공용 속성은 **속성** 창에 표시 됩니다.
 
     > [!NOTE]
-    > **SomeText** 의 표시 이름은 **내 텍스트**입니다.
+    > **SomeText** 의 표시 이름은 **내 텍스트** 입니다.
 
 ## <a name="best-practice"></a>모범 사례
 
@@ -272,6 +274,6 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 Visual studio 도구 창은 Visual Studio 세션 사이에서 지속 됩니다. 도구 창 상태를 유지 하는 방법에 대 한 자세한 내용은을 참조 하십시오 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [속성 및 속성 창 확장](../extensibility/extending-properties-and-the-property-window.md)

@@ -1,5 +1,7 @@
 ---
 title: 동적으로 메뉴 항목 추가 | Microsoft Docs
+description: DynamicItemStart 명령 플래그를 사용 하 여 런타임에 메뉴 항목을 추가 하는 방법에 대해 알아봅니다. 이 문서에서는 Visual Studio 솔루션에서 시작 프로젝트를 설정 하는 방법을 보여 줍니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712061"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994812"
 ---
 # <a name="dynamically-add-menu-items"></a>동적으로 메뉴 항목 추가
 `DynamicItemStart`Visual Studio 명령 테이블 (*.vvsct*) 파일의 자리 표시자 단추 정의에 명령 플래그를 지정 하 여 런타임에 메뉴 항목을 추가 하 고, 명령을 표시 하 고 처리할 메뉴 항목의 수를 정의할 수 있습니다. VSPackage가 로드 되 면 자리 표시 자가 동적 메뉴 항목으로 바뀝니다.
@@ -32,7 +34,7 @@ ms.locfileid: "80712061"
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `DynamicMenuItems` .
 
-2. 프로젝트가 열리면 사용자 지정 명령 항목 템플릿을 추가 하 고 **Dynamicmenu**로 이름을 지정 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+2. 프로젝트가 열리면 사용자 지정 명령 항목 템플릿을 추가 하 고 **Dynamicmenu** 로 이름을 지정 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 ## <a name="setting-up-the-elements-in-the-vsct-file"></a>*Vsct* 파일의 요소 설정
  도구 모음에서 동적 메뉴 항목을 사용 하 여 메뉴 컨트롤러를 만들려면 다음 요소를 지정 합니다.
@@ -43,7 +45,7 @@ ms.locfileid: "80712061"
 
 - 메뉴 항목에 대 한 자리 표시자 역할을 하는 단추 및 도구 모음에 아이콘 및 도구 설명을 제공 하는 단추 두 개.
 
-1. *DynamicMenuPackage*에서 명령 id를 정의 합니다. 기호 섹션으로 이동 하 여 **guidDynamicMenuPackageCmdSet** GuidSymbol 블록에서 idsymbol 요소를 바꿉니다. 두 그룹, 메뉴 컨트롤러, 자리 표시자 명령 및 앵커 명령에 대 한 IDSymbol 요소를 정의 해야 합니다.
+1. *DynamicMenuPackage* 에서 명령 id를 정의 합니다. 기호 섹션으로 이동 하 여 **guidDynamicMenuPackageCmdSet** GuidSymbol 블록에서 idsymbol 요소를 바꿉니다. 두 그룹, 메뉴 컨트롤러, 자리 표시자 명령 및 앵커 명령에 대 한 IDSymbol 요소를 정의 해야 합니다.
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -93,9 +95,9 @@ ms.locfileid: "80712061"
 
 3. 하나는 동적 메뉴 항목에 대 한 자리 표시자로, 다른 하나는 MenuController의 앵커로 추가 합니다.
 
-     자리 표시자 단추의 부모는 **Mymenucontrollergroup**입니다. DynamicItemStart, DynamicVisibility 및 TextChanges 명령 플래그를 자리 표시자 단추에 추가 합니다. ButtonText는 표시 되지 않습니다.
+     자리 표시자 단추의 부모는 **Mymenucontrollergroup** 입니다. DynamicItemStart, DynamicVisibility 및 TextChanges 명령 플래그를 자리 표시자 단추에 추가 합니다. ButtonText는 표시 되지 않습니다.
 
-     앵커 단추는 아이콘과 도구 설명 텍스트를 포함 합니다. 앵커 단추의 부모는 **Mymenucontrollergroup**이기도 합니다. NoShowOnMenuController 명령 플래그를 추가 하 여 단추가 실제로 메뉴 컨트롤러 드롭다운에 표시 되지 않는지 확인 하 고 FixMenuController 명령 플래그를 사용 하 여 영구 앵커로 만듭니다.
+     앵커 단추는 아이콘과 도구 설명 텍스트를 포함 합니다. 앵커 단추의 부모는 **Mymenucontrollergroup** 이기도 합니다. NoShowOnMenuController 명령 플래그를 추가 하 여 단추가 실제로 메뉴 컨트롤러 드롭다운에 표시 되지 않는지 확인 하 고 FixMenuController 명령 플래그를 사용 하 여 영구 앵커로 만듭니다.
 
     ```xml
     <!-- The placeholder for the dynamic items that expand to N items at run time. -->
@@ -142,7 +144,7 @@ ms.locfileid: "80712061"
 ## <a name="implement-the-dynamic-menu-command"></a>동적 메뉴 명령 구현
  에서 상속 되는 동적 메뉴 명령 클래스를 만듭니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> . 이 구현에서 생성자는 일치 하는 명령에 사용할 조건자를 지정 합니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>이 조건자를 사용 하 여 호출할 명령을 식별 하는 속성을 설정 하려면 메서드를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> .
 
-1. *DynamicItemMenuCommand.cs*라는 새 c # 클래스 파일을 만들고에서 상속 되는 **Dynamicitemmenucommand** 라는 클래스를 추가 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> .
+1. *DynamicItemMenuCommand.cs* 라는 새 c # 클래스 파일을 만들고에서 상속 되는 **Dynamicitemmenucommand** 라는 클래스를 추가 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> .
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -205,7 +207,7 @@ ms.locfileid: "80712061"
 ## <a name="add-the-command"></a>명령 추가
  DynamicMenu 생성자는 동적 메뉴 및 메뉴 항목을 포함 하 여 메뉴 명령을 설정 하는 위치입니다.
 
-1. *DynamicMenuPackage.cs*에서 명령 집합의 GUID와 명령 ID를 추가 합니다.
+1. *DynamicMenuPackage.cs* 에서 명령 집합의 GUID와 명령 ID를 추가 합니다.
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
@@ -220,7 +222,7 @@ ms.locfileid: "80712061"
     using System.ComponentModel.Design;
     ```
 
-3. 클래스에서 `DynamicMenu` private 필드 **dte2**를 추가 합니다.
+3. 클래스에서 `DynamicMenu` private 필드 **dte2** 를 추가 합니다.
 
     ```csharp
     private DTE2 dte2;
@@ -356,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. 솔루션을 닫거나 프로젝트가 하나만 있는 솔루션을 여는 경우 도구 모음 아이콘이 사라집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

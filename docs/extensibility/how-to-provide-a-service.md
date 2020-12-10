@@ -1,5 +1,7 @@
 ---
 title: '방법: 서비스 제공 | Microsoft Docs'
+description: VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. VSPackage가 Visual Studio를 사용 하 여 서비스를 등록 하 고 서비스를 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905765"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993733"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하려면 VSPackage이 서비스를 Visual Studio에 등록 하 고 서비스를 추가 해야 합니다.
@@ -29,9 +31,9 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
 ## <a name="implement-a-service"></a>서비스 구현
 
-1. VSIX 프로젝트를 만듭니다 (**파일**  >  **새로**만들기  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**).
+1. VSIX 프로젝트를 만듭니다 (**파일**  >  **새로** 만들기  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**).
 
-2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 **Add**  >  **새 항목**추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지**를 클릭 합니다.
+2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고   >  **새 항목** 추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지** 를 클릭 합니다.
 
 3. 서비스를 구현 하려면 다음 세 가지 유형을 만들어야 합니다.
 
@@ -76,7 +78,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
 ### <a name="register-a-service"></a>서비스 등록
 
-1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 예를 들면 다음과 같습니다.
+1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 다음은 예제입니다.
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -138,7 +140,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
      값은 `helloString` "Hello" 여야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

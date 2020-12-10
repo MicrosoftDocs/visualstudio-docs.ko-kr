@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 titleSuffix: ''
+description: 확장 작성자가 UI 컨텍스트가 활성화 되 고 Vspackage 로드 될 때 조건을 정의할 수 있도록 하는 규칙 기반 UI 컨텍스트를 사용 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037109"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993460"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 
@@ -41,7 +42,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
 
 1. 새 UIContext GUID를 정의 하 고 VSPackage 클래스 및에 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 추가 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> 합니다.
 
-    예를 들어 새 UIContext "UIContextGuid"를 추가 한다고 가정해 보겠습니다. 만든 guid ( **도구**guid 만들기를 클릭 하 여 guid를 만들 수 있음  >  **Create GUID**)는 "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"입니다. 그런 다음 패키지 클래스 내부에 다음 선언을 추가 합니다.
+    예를 들어 새 UIContext "UIContextGuid"를 추가 한다고 가정해 보겠습니다. 만든 guid ( **도구** guid 만들기를 클릭 하 여 guid를 만들 수 있음  >  )는 "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"입니다. 그런 다음 패키지 클래스 내부에 다음 선언을 추가 합니다.
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
@@ -58,7 +59,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어 "DotConfig"를 참조 하는 식을 정의 합니다. "DotConfig" 용어는 활성 계층의 현재 선택 영역이 정규식 패턴 ".config $"와 일치 하는 이름을 가질 때마다 true로 평가 \\ 됩니다 ( *.config*로 끝남). (기본값) 값은 디버깅에 유용한 규칙의 선택적 이름을 정의 합니다.
+    이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어 "DotConfig"를 참조 하는 식을 정의 합니다. "DotConfig" 용어는 활성 계층의 현재 선택 영역이 정규식 패턴 ".config $"와 일치 하는 이름을 가질 때마다 true로 평가 \\ 됩니다 ( *.config* 로 끝남). (기본값) 값은 디버깅에 유용한 규칙의 선택적 이름을 정의 합니다.
 
     이 특성의 값은 빌드 시 나중에 생성 된 .pkgdef에 추가 됩니다.
 
@@ -82,7 +83,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    이제 * \* .config* 파일에 대 한 상황에 맞는 메뉴 명령은 솔루션 탐색기에서 선택한 항목이 *.config* 파일 일 때만 표시 되 고 패키지는 해당 명령 중 하나를 선택할 때까지 로드 되지 않습니다.
+    이제 *\* .config* 파일에 대 한 상황에 맞는 메뉴 명령은 솔루션 탐색기에서 선택한 항목이 *.config* 파일 일 때만 표시 되 고 패키지는 해당 명령 중 하나를 선택할 때까지 로드 되지 않습니다.
 
    그런 다음 디버거를 사용 하 여 패키지가 정상적으로 로드 되는지 확인 합니다. TestPackage를 디버그 하려면:
 
@@ -92,7 +93,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
 
 7. 프로젝트를 만들거나 하나를 엽니다.
 
-8. *.Config*이외의 확장명을 가진 파일을 선택 합니다. 중단점이 적중 되어서는 안 됩니다.
+8. *.Config* 이외의 확장명을 가진 파일을 선택 합니다. 중단점이 적중 되어서는 안 됩니다.
 
 9. *App.Config* 파일을 선택 합니다.
 
@@ -131,7 +132,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
 
 지원 되는 다양 한 유형의 용어는 다음과 같습니다.
 
-|용어|Description|
+|용어|설명|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID는 UI 컨텍스트를 참조 합니다. 용어는 UI 컨텍스트가 활성화 될 때마다 true이 고, 그렇지 않으면 false입니다.|
 |HierSingleSelectionName:\<pattern>|활성 계층의 선택 항목이 단일 항목이 고 선택한 항목의 이름이 "pattern"으로 지정 된 .Net 정규식과 일치 하는 경우에는 용어가 true가 됩니다.|

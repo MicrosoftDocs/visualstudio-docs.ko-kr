@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너-기능 컬렉션 &lt; T &gt; 활동 디자이너
-description: 작업 모음 활동 디자이너를 <T> 사용 하 여 작업을 만들고 구성 하는 방법에 대해 알아봅니다 <T> .
+title: 고 집합 컬렉션 &lt; T &gt; 활동 디자이너
+description: 작업 모음 활동 디자이너를 <T> 사용 하 여 워크플로 디자이너에서가 나 컬렉션 활동을 만들고 구성 하는 방법에 대해 알아봅니다 <T> .
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a325cfa0ba00e798b3c663aac863737ba9aceb1f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d1592eab528f2312a9ad90dec02354814d6a81c3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438260"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993252"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T> 활동 디자이너
 
@@ -37,14 +37,14 @@ ms.locfileid: "94438260"
 
 다음 표에서는 <xref:System.Activities.Statements.AddToCollection%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.AddToCollection%601> 활동의 이름입니다. 기본값은<(기본값) 컬렉션 (Int32)입니다 \> . <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|참|컬렉션에 추가할 항목 \<T> 입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|참|항목이 추가될 컬렉션입니다. 이 컬렉션은 **ICollection<TypeArgument \>** 유형입니다. 컬렉션을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
 |*TypeArgument*|참|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [컬렉션](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T> 활동 디자이너](../workflow-designer/addtocollection-t-activity-designer.md)

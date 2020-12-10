@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 SendAndReceiveReply 템플릿 디자이너
-description: SendAndReceiveReply 템플릿을 사용 하 여 미리 구성 된 Send 및 ReceiveReply 작업 쌍을 만드는 방법에 대해 알아봅니다.
+title: SendAndReceiveReply 템플릿 디자이너
+description: 워크플로 디자이너에서 SendAndReceiveReply 템플릿을 사용 하 여 미리 구성 된 Send 및 ReceiveReply 작업 쌍을 만드는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d853854700463356c457763044b33e3a72494fe0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 91885371f72c5756ddc026111404f091a2cccf08
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434001"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993265"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 템플릿 디자이너
 
@@ -36,7 +36,7 @@ ms.locfileid: "94434001"
 
 ### <a name="use-the-sendandreceivereply-template-designer"></a>SendAndReceiveReply 템플릿 디자이너 사용
 
-**도구 상자** 의 **메시징** 범주에서 **SendAndReceiveReply** 활동 디자이너에 액세스 합니다. **SendAndReceiveReply** 활동 디자이너를 **도구 상자** 에서 끌어다가 일반적으로 활동을 배치 하는 워크플로 디자이너 화면에 놓을 수 있습니다. 활동 디자이너를 삭제 하면 <xref:System.ServiceModel.Activities.Send> ReceiveReplyForSend designer를 사용 하 여 구성할 수 있는 상관 관계와 **Send** activity designer를 사용 하 여 구성할 수 있는 활동이 만들어집니다 <xref:System.ServiceModel.Activities.ReceiveReply> . **ReceiveReplyForSend**
+**도구 상자** 의 **메시징** 범주에서 **SendAndReceiveReply** 활동 디자이너에 액세스 합니다. **SendAndReceiveReply** 활동 디자이너를 **도구 상자** 에서 끌어다가 일반적으로 활동을 배치 하는 워크플로 디자이너 화면에 놓을 수 있습니다. 활동 디자이너를 삭제 하면 <xref:System.ServiceModel.Activities.Send> ReceiveReplyForSend designer를 사용 하 여 구성할 수 있는 상관 관계와 **Send** activity designer를 사용 하 여 구성할 수 있는 활동이 만들어집니다 <xref:System.ServiceModel.Activities.ReceiveReply> . 
 
 **보내기** 디자이너를 사용 하 여 작업을 구성 하는 방법에 대 한 자세한 내용은 <xref:System.ServiceModel.Activities.Send> [send](../workflow-designer/send-activity-designer.md)를 참조 하십시오.
 
@@ -44,7 +44,7 @@ ms.locfileid: "94434001"
 
 다음 표에서는 속성을 보여 주고 <xref:System.ServiceModel.Activities.ReceiveReply> 디자이너에서 이러한 속성을 사용 하는 방법을 설명 합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-| 속성 이름 | 필수 | 사용 |
+| 속성 이름 | 필수 | 사용량 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | 거짓 | <xref:System.ServiceModel.Activities.ReceiveReply> 활동의 선택적 이름입니다. 기본값은 ReceiveReplyForSend입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 <xref:System.Activities.Activity.DisplayName%2A> 필요한 것은 아니지만 이러한 값을 사용 하는 것이 가장 좋습니다. |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | 참 | 이 <xref:System.ServiceModel.Activities.Send> 활동과 한 쌍을 이루는 <xref:System.ServiceModel.Activities.ReceiveReply> 활동에 대한 참조입니다. 이 속성은 **null** 이 아니어야 합니다. <xref:System.ServiceModel.Activities.Send> 및 <xref:System.ServiceModel.Activities.ReceiveReply> 활동은 클라이언트에서 요청/응답 메시징 패턴을 모델링하는 데 함께 사용됩니다. 이 속성 <xref:System.ServiceModel.Activities.Send> 은 쌍을 이루는 활동을 지정 합니다. 디자이너에서는 활동을 만든 활동에 자동으로 바인딩되기 때문에이 속성을 편집할 수 없습니다 <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.ReceiveReply> . |
@@ -52,7 +52,7 @@ ms.locfileid: "94434001"
 | <xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A> | 거짓 | 워크플로 내에서 이 <xref:System.ServiceModel.Activities.CorrelationInitializer> 활동을 구성하는 <xref:System.ServiceModel.Activities.CorrelationHandle> 개체를 여러 개 초기화하는 <xref:System.ServiceModel.Activities.Receive> 개체 컬렉션을 지정합니다. 속성 표에서 속성 옆의 줄임표 단추를 클릭 <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> 하 여 **상관 관계 이니셜라이저 추가** 대화 상자를 엽니다. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 [CorrelationInitializers 추가 대화 상자](../workflow-designer/add-correlationinitializers-dialog-box.md)를 참조 하세요. |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Action%2A> | 거짓 | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 되지 않은 경우 해당 값의 기본값은 다음과 같습니다.<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

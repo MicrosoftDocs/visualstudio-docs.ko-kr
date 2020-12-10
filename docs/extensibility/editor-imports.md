@@ -1,5 +1,7 @@
 ---
 title: 편집기 가져오기 | Microsoft Docs
+description: 핵심 편집기에 대 한 다양 한 종류의 액세스를 제공 하는 편집기 서비스, 팩터리 및 broker를 가져오는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712007"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994773"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 확장을 제공 하는 많은 편집기 서비스, 팩터리 및 broker를 핵심 편집기에 대 한 다양 한 종류의 액세스로 가져올 수 있습니다. 예를 들어를 가져와서 지정 된 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 콘텐츠 형식에 대해를 제공할 수 있습니다. 이 탐색기를 사용 하면 텍스트 버퍼에서 다양 한 검색을 수행할 수 있습니다.
@@ -66,7 +68,7 @@ internal SVsServiceProvider ServiceProvider = null;
 
  자세한 내용은 [연습: 편집기 확장에서 DTE 개체에 액세스](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) 를 참조 하세요.
 
-## <a name="services"></a>Services
+## <a name="services"></a>서비스
  편집기 서비스는 일반적으로 서비스를 제공 하 고 여러 구성 요소에서 공유 되는 단일 엔터티입니다.
 
 |가져오기|하면|
@@ -120,5 +122,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>입니다.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

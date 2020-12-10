@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너-.NET 유형 찾아보기 및 선택 대화 상자
-description: .NET 형식 찾아보기 및 선택 대화 상자를 사용 하 여 어셈블리 및 프로젝트의 트리 뷰에서 형식을 선택 하는 방법을 알아봅니다.
+title: .NET 유형 선택 대화 상자
+description: .NET 형식 찾아보기 및 선택 대화 상자를 사용 하 여 워크플로 디자이너에 있는 어셈블리 및 프로젝트의 트리 뷰에서 형식을 선택 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438180"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995488"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 
@@ -41,7 +41,7 @@ ms.locfileid: "94438180"
 
 1. **유형 이름** 상자에 사용 하려는 유형의 이름을 입력 합니다.
 
-2. 다음 중 하나를 수행합니다.
+2. 다음 작업 중 하나를 수행합니다.
 
     - 사용할 형식 이름이 **형식 이름** 상자의 트리에 표시 되 면 형식을 두 번 클릭 하 여 선택 합니다.
 
@@ -75,6 +75,6 @@ ms.locfileid: "94438180"
 
 서비스 계약 형식을 선택할 때 형식 브라우저는 <xref:System.ServiceModel.ServiceContractAttribute> 특성이 있는 형식만 보여줍니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [활동 디자이너 사용](control-flow-activity-designers.md)

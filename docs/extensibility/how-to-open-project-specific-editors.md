@@ -1,5 +1,7 @@
 ---
-title: '방법: 프로젝트 관련 편집기 열기 | Microsoft Docs'
+title: '방법: Project-Specific 편집기 열기 | Microsoft Docs'
+description: 프로젝트 관련 편집기를 사용 하 여 OpenItem 메서드를 구현 하 여 프로젝트에서 해당 프로젝트에 대 한 편집기에 바인딩된 파일을 열 수 있도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905800"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993785"
 ---
 # <a name="how-to-open-project-specific-editors"></a>방법: 프로젝트 관련 편집기 열기
 프로젝트에 의해 열리는 항목 파일이 기본적으로 해당 프로젝트의 특정 편집기에 바인딩된 경우 프로젝트는 프로젝트별 편집기를 사용 하 여 파일을 열어야 합니다. 편집기를 선택 하기 위해 IDE의 메커니즘으로 파일을 위임할 수 없습니다. 예를 들어 표준 비트맵 편집기를 사용 하는 대신이 프로젝트 관련 편집기 옵션을 사용 하 여 프로젝트에 고유한 파일의 정보를 인식 하는 특정 비트맵 편집기를 지정할 수 있습니다.
@@ -51,7 +53,7 @@ ms.locfileid: "85905800"
 
 6. 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> 하 여 뷰를 표시 하 고 엽니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)
 - [방법: 열려 있는 문서에 대 한 편집기 열기](../extensibility/how-to-open-editors-for-open-documents.md)

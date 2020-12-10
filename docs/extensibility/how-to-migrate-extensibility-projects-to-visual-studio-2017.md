@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 2017로 확장성 프로젝트 마이그레이션
 titleSuffix: ''
+description: 확장성 프로젝트를 Visual Studio 2017로 업그레이드 하는 방법 및 확장 매니페스트 버전 2에서 버전 3 VSIX 매니페스트로 업그레이드 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352285"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993967"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션
 
@@ -47,10 +48,10 @@ ms.locfileid: "91352285"
 
 NuGet 참조를 Microsoft .로 업데이트 하려면 다음을 수행 합니다.
 
-* 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리**를 선택 합니다.
+* 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **솔루션용 NuGet 패키지 관리** 를 선택 합니다.
 * **업데이트** 탭으로 이동 합니다.
 * **Microsoft (최신 버전)** 를 선택 합니다.
-* **업데이트**를 누릅니다.
+* **업데이트** 를 누릅니다.
 
 ![인은 진한 빌드 도구](media/vssdk-build-tools.png)
 
@@ -61,7 +62,7 @@ NuGet 참조를 Microsoft .로 업데이트 하려면 다음을 수행 합니다
 > [!Note]
 > 최소한 모든 확장에서 Visual Studio 핵심 편집기 구성 요소를 필수 구성 요소로 지정 해야 합니다.
 
-* 확장 매니페스트 파일을 편집 합니다 (일반적으로 *source.extension.vsixmanifest*이라고 함).
+* 확장 매니페스트 파일을 편집 합니다 (일반적으로 *source.extension.vsixmanifest* 이라고 함).
 * `InstallationTarget`15.0이 포함 되어 있는지 확인 합니다.
 * 필요한 설치 필수 구성 요소를 추가 합니다 (아래 예제 참조).
   * 설치 필수 구성 요소에 대 한 구성 요소 Id만 지정 하는 것이 좋습니다.
@@ -105,18 +106,18 @@ NuGet 참조를 Microsoft .로 업데이트 하려면 다음을 수행 합니다
 
    ![roslyn 필수 구성 요소 추가](media/add-roslyn-prerequisite.png)
 
-* **확인**을 누릅니다.
+* **확인** 을 누릅니다.
 
 ## <a name="update-debug-settings-for-the-project"></a>프로젝트에 대 한 디버그 설정 업데이트
 
-Visual studio의 실험적 인스턴스에서 확장을 디버깅 하려는 경우 **디버그**시작 동작에 대 한 프로젝트 설정에  >  **Start action** **시작 외부 프로그램:** 값이 visual studio 2017 설치의 *devenv.exe* 파일로 설정 되어 있는지 확인 합니다.
+Visual studio의 실험적 인스턴스에서 확장을 디버깅 하려는 경우 **디버그** 시작 동작에 대 한 프로젝트 설정에  >   **시작 외부 프로그램:** 값이 visual studio 2017 설치의 *devenv.exe* 파일로 설정 되어 있는지 확인 합니다.
 
 *C:\Program files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe* 와 같을 수 있습니다.
 
 ![시작 외부 프로그램](media/start-external-program.png)
 
 > [!Note]
-> 디버그 시작 동작은 일반적으로 *.csproj 사용자* 파일에 저장 됩니다. 이 파일은 일반적으로 *.gitignore* 파일에 포함 되어 있으므로 소스 제어에 커밋될 때 일반적으로 다른 프로젝트 파일과 함께 저장 되지 않습니다. 따라서 소스 제어에서 솔루션을 새로 끌어온 경우 프로젝트에 시작 동작에 대 한 값이 설정 되어 있지 않을 수 있습니다. Visual Studio 2017을 사용 하 여 만든 새 VSIX 프로젝트에는 현재 Visual Studio 설치 디렉터리를 가리키는 기본값이 포함 된 *.csproj. 사용자* 파일이 생성 됩니다. 그러나 VSIX v2 확장을 마이그레이션하는 경우에는 *.csproj 사용자* 파일에 이전 Visual Studio 버전의 설치 디렉터리에 대 한 참조가 포함 될 수 있습니다. **디버그**시작 동작에 대 한 값을 설정 하면  >  **Start action** 확장을 디버깅 하려고 할 때 올바른 Visual Studio 실험적 인스턴스를 시작할 수 있습니다.
+> 디버그 시작 동작은 일반적으로 *.csproj 사용자* 파일에 저장 됩니다. 이 파일은 일반적으로 *.gitignore* 파일에 포함 되어 있으므로 소스 제어에 커밋될 때 일반적으로 다른 프로젝트 파일과 함께 저장 되지 않습니다. 따라서 소스 제어에서 솔루션을 새로 끌어온 경우 프로젝트에 시작 동작에 대 한 값이 설정 되어 있지 않을 수 있습니다. Visual Studio 2017을 사용 하 여 만든 새 VSIX 프로젝트에는 현재 Visual Studio 설치 디렉터리를 가리키는 기본값이 포함 된 *.csproj. 사용자* 파일이 생성 됩니다. 그러나 VSIX v2 확장을 마이그레이션하는 경우에는 *.csproj 사용자* 파일에 이전 Visual Studio 버전의 설치 디렉터리에 대 한 참조가 포함 될 수 있습니다. **디버그** 시작 동작에 대 한 값을 설정 하면  >   확장을 디버깅 하려고 할 때 올바른 Visual Studio 실험적 인스턴스를 시작할 수 있습니다.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>확장이 올바르게 빌드되는지 확인 합니다 (VSIX v3로).
 
@@ -187,18 +188,18 @@ Visual Studio 제품을 기준으로 정렬 된 구성 요소 목록은 [Visual 
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Excel 시트에는 **구성 요소 이름, 구성 요소** **,** **버전**및 **이진/파일 이름**이라는 4 개의 열이 있습니다.  필터를 사용 하 여 특정 구성 요소 및 이진 파일을 검색 하 고 찾을 수 있습니다.
+Excel 시트에는 **구성 요소 이름, 구성 요소** **,** **버전** 및 **이진/파일 이름** 이라는 4 개의 열이 있습니다.  필터를 사용 하 여 특정 구성 요소 및 이진 파일을 검색 하 고 찾을 수 있습니다.
 
 모든 참조에 대해 먼저 핵심 편집기 (VisualStudio. CoreEditor) 구성 요소에 있는 항목을 확인 합니다.  최소한 핵심 편집기 구성 요소를 모든 확장의 필수 구성 요소로 지정 해야 합니다. 핵심 편집기에 없는 왼쪽에 있는 참조의 경우 **이진 파일/파일 이름** 섹션에 필터를 추가 하 여 해당 참조의 하위 집합이 있는 구성 요소를 찾습니다.
 
 예제:
 
-* 디버거 확장이 있고 프로젝트에 *VSDebugEng.dll* 및 *VSDebug.dll*에 대 한 참조가 있음을 알고 있는 경우 **이진 파일/파일 이름** 헤더에서 필터 단추를 클릭 합니다.  "VSDebugEng.dll"을 검색 하 고 *확인을*선택 합니다.  그런 다음 **이진 파일/파일 이름** 헤더에서 필터 단추를 다시 클릭 하 고 "VSDebug.dll"를 검색 합니다.  **필터링 할 현재 선택 항목 추가** 확인란을 선택 하 고 **확인**을 선택 합니다.  이제 **구성 요소 이름을** 살펴보고 확장 형식과 가장 관련이 있는 구성 요소를 찾습니다. 이 예제에서는 Just-in-time 디버거를 선택 하 고 source.extension.vsixmanifest에 추가 합니다.
+* 디버거 확장이 있고 프로젝트에 *VSDebugEng.dll* 및 *VSDebug.dll* 에 대 한 참조가 있음을 알고 있는 경우 **이진 파일/파일 이름** 헤더에서 필터 단추를 클릭 합니다.  "VSDebugEng.dll"을 검색 하 고 *확인을* 선택 합니다.  그런 다음 **이진 파일/파일 이름** 헤더에서 필터 단추를 다시 클릭 하 고 "VSDebug.dll"를 검색 합니다.  **필터링 할 현재 선택 항목 추가** 확인란을 선택 하 고 **확인** 을 선택 합니다.  이제 **구성 요소 이름을** 살펴보고 확장 형식과 가장 관련이 있는 구성 요소를 찾습니다. 이 예제에서는 Just-in-time 디버거를 선택 하 고 source.extension.vsixmanifest에 추가 합니다.
 * 프로젝트가 디버거 요소를 처리 하는 것을 알고 있는 경우 필터 검색 상자에서 "디버거"를 검색 하 여 해당 이름에 디버거가 포함 된 구성 요소를 확인할 수 있습니다.
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Visual Studio 2017 릴리스 지정
 
-확장에 특정 버전의 Visual Studio 2017가 필요한 경우 (예: 15.3에서 릴리스된 기능에 따라 달라 지는 경우) VSIX **설치 대상**에서 빌드 번호를 지정 해야 합니다. 예를 들어 릴리스 15.3의 빌드 번호는 ' 15.0.26730.3 '입니다. [여기](../install/visual-studio-build-numbers-and-release-dates.md)에서 빌드 번호에 대 한 릴리스 매핑을 볼 수 있습니다. 릴리스 번호 ' 15.3 '을 사용 하면 제대로 작동 하지 않습니다.
+확장에 특정 버전의 Visual Studio 2017가 필요한 경우 (예: 15.3에서 릴리스된 기능에 따라 달라 지는 경우) VSIX **설치 대상** 에서 빌드 번호를 지정 해야 합니다. 예를 들어 릴리스 15.3의 빌드 번호는 ' 15.0.26730.3 '입니다. [여기](../install/visual-studio-build-numbers-and-release-dates.md)에서 빌드 번호에 대 한 릴리스 매핑을 볼 수 있습니다. 릴리스 번호 ' 15.3 '을 사용 하면 제대로 작동 하지 않습니다.
 
 확장에 15.3 이상이 필요한 경우 **설치 대상 버전** 을 [15.0.26730.3, 16.0)로 선언 합니다.
 

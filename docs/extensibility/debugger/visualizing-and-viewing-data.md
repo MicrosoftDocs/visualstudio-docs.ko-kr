@@ -1,5 +1,7 @@
 ---
 title: 데이터 시각화 및 보기 | Microsoft Docs
+description: 형식 시각화 도우미 및 사용자 지정 뷰어를 통해 데이터를 개발자에 게 제공 하는 방법을 알아봅니다. 식 계산기는 타사 형식 시각화 도우미를 지원 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712373"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995462"
 ---
 # <a name="visualizing-and-viewing-data"></a>데이터 시각화 및 보기
 시각화 도우미 및 사용자 지정 뷰어는 개발자에 게 신속 하 게 의미 있는 방식으로 데이터를 제공 합니다. 식 계산기 (EE)는 타사 형식 시각화 도우미를 지원할 뿐만 아니라 고유한 사용자 지정 뷰어를 제공할 수 있습니다.
@@ -46,6 +48,6 @@ ms.locfileid: "80712373"
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>형식 시각화 도우미 및 사용자 지정 뷰어 모두 지원
  EE는 [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 및 [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 메서드에서 형식 시각화 도우미 및 사용자 지정 뷰어를 모두 지원할 수 있습니다. 먼저 EE는 [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) 메서드에서 반환 하는 값에 제공 되는 사용자 지정 뷰어 수를 추가 합니다. 두 번째로, EE는 `CLSID` 자체 사용자 지정 뷰어를 [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 메서드에서 반환 된 목록에 추가 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)
 - [형식 시각화 도우미 및 사용자 지정 뷰어](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

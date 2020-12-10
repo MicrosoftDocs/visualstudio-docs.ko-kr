@@ -1,5 +1,7 @@
 ---
 title: '방법: 서비스 가져오기 | Microsoft Docs'
+description: Visual Studio 서비스를 사용 하 여 다양 한 기능에 액세스 하는 방법을 알아봅니다. VSPackage를 사용 하 여 대부분의 서비스를 가져올 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905826"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994084"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
 
@@ -29,9 +31,9 @@ Visual Studio는를 로드할 때 <xref:Microsoft.VisualStudio.Shell.Package> <x
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `GetServiceExtension` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이제 **GetServiceCommand**이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령**을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *GetServiceCommand.cs*로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. 이제 **GetServiceCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *GetServiceCommand.cs* 로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. *GetServiceCommand.cs*에서 메서드의 본문을 제거 `MenuItemCommand` 하 고 다음 코드를 추가 합니다.
+3. *GetServiceCommand.cs* 에서 메서드의 본문을 제거 `MenuItemCommand` 하 고 다음 코드를 추가 합니다.
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -70,7 +72,7 @@ DTE 개체는 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 를 사
 DTE 개체에서 서비스를 가져오는 방법은 다음과 같습니다.
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 
@@ -85,7 +87,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 서비스 제공](../extensibility/how-to-provide-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

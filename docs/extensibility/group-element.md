@@ -1,5 +1,7 @@
 ---
 title: Group 요소 | Microsoft Docs
+description: Group 요소는 VSPackage 명령 그룹을 정의 합니다. 이 문서에서는 특성, 자식 요소 및 부모 요소에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711227"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993856"
 ---
 # <a name="group-element"></a>Group 요소
 VSPackage 명령 그룹을 정의 합니다.
@@ -34,7 +36,7 @@ VSPackage 명령 그룹을 정의 합니다.
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
 |id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
@@ -45,8 +47,8 @@ VSPackage 명령 그룹을 정의 합니다.
 
 |요소|설명|
 |-------------|-----------------|
-|Parent|선택 사항입니다. 단추의 부모 요소입니다.|
-|주석|선택적 설명입니다.|
+|부모|선택 사항입니다. 단추의 부모 요소입니다.|
+|Annotation|선택적 설명입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 

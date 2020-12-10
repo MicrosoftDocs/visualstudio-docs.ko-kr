@@ -1,5 +1,6 @@
 ---
 title: 소스 제어 플러그 인에 대 한 경고 해제
+description: Visual Studio에서 소스 제어를 사용 하는 경우 사용자에 게 여러 호환성 경고가 표시 될 수 있습니다. 이러한 경고를 사용 하지 않도록 설정 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037187"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993551"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>방법: 소스 제어 플러그 인에 대 한 호환성 경고 해제
 
@@ -27,7 +28,7 @@ ms.locfileid: "90037187"
 
 - 다음 레지스트리 항목을 설정 합니다 (필요한 경우 값 추가).
 
-   **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword: 00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword: 00000001**
 
    이 경고는 모든 비 플러그 인에 대해 표시 됩니다 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] .
 
@@ -35,9 +36,9 @@ ms.locfileid: "90037187"
 
 - 다음 두 레지스트리 값을 설정 합니다 (필요한 경우 값 추가).
 
-     **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword: 00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword: 00000000**
 
-    **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword: 00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword: 00000001**
 
      이 경고는 소스 제어 플러그 인에서 여러 프로젝트에 대해 재진입을 명시적으로 지원 하지 않는 경우 (즉, 한 번에 하나의 파일 및 프로젝트만 체크 인할 수 있는 경우)에 표시 됩니다.
 

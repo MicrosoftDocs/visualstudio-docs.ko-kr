@@ -1,5 +1,7 @@
 ---
 title: 이미지 서비스 및 카탈로그 | Microsoft Docs
+description: 이 문서에는 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584544"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993538"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook에는 visual studio 2015에 도입 된 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
@@ -104,7 +106,7 @@ ms.locfileid: "91584544"
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -143,7 +145,7 @@ ms.locfileid: "91584544"
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -160,7 +162,7 @@ ms.locfileid: "91584544"
 |**Attribute**|**정의**|
 |-|-|
 |URI|하다 이미지를 로드할 수 있는 위치를 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -Application:///authority를 사용 하는 [PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일의 경로|
-|배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *광원:* 원본은 밝은 배경에 사용할 수 있습니다.<br /><br /> *어둡게:* 원본은 어두운 배경에서 사용할 수 있습니다.<br /><br /> *System.windows.forms.systeminformation.highcontrast:* 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 소스는 고대비 모드에서 짙은 배경으로 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어둡게*, *HighContrastLight*또는 *HighContrastDark*인 경우 소스의 색은 반전 되지 않습니다. 배경이 생략 되거나 *system.windows.forms.systeminformation.highcontrast*로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
+|배경|필드 소스를 사용 하기 위해 사용할 배경의 종류를 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *광원:* 원본은 밝은 배경에 사용할 수 있습니다.<br /><br /> *어둡게:* 원본은 어두운 배경에서 사용할 수 있습니다.<br /><br /> *System.windows.forms.systeminformation.highcontrast:* 소스는 고대비 모드의 모든 백그라운드에서 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 소스는 고대비 모드에서 밝은 배경에 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 소스는 고대비 모드에서 짙은 배경으로 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하면 모든 배경에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*, *어둡게*, *HighContrastLight* 또는 *HighContrastDark* 인 경우 소스의 색은 반전 되지 않습니다. 배경이 생략 되거나 *system.windows.forms.systeminformation.highcontrast* 로 설정 된 경우 소스 색의 반전은 이미지의 **allowcolorinversion** 특성에 의해 제어 됩니다.|
 
 요소에는 \<Source> 다음과 같은 선택적 하위 요소 중 하나만 있을 수 있습니다.
 
@@ -179,7 +181,7 @@ ms.locfileid: "91584544"
 
 |**Attribute**|**정의**|
 |-|-|
-|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -195,7 +197,7 @@ ms.locfileid: "91584544"
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 
@@ -208,7 +210,7 @@ ms.locfileid: "91584544"
 
 - *Microsoft.VisualStudio.ImageCatalog.dll*
 
-  - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하는 경우 필요 합니다.
+  - 기본 제공 이미지 카탈로그 **Knownmonikers** 를 사용 하는 경우 필요 합니다.
 
 - *Microsoft.VisualStudio.Imaging.dll*
 
@@ -245,11 +247,11 @@ ms.locfileid: "91584544"
 
 - **KnownImageIds**
 
-  - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하지만 **IVsHierarchy GetGuidProperty** 또는 **GetProperty** 호출에서 값을 반환 하는 경우와 같이 **ImageMoniker** 형식을 사용할 수 없는 경우에 필요 합니다.
+  - 기본 제공 이미지 카탈로그 **Knownmonikers** 를 사용 하지만 **IVsHierarchy GetGuidProperty** 또는 **GetProperty** 호출에서 값을 반환 하는 경우와 같이 **ImageMoniker** 형식을 사용할 수 없는 경우에 필요 합니다.
 
 - **KnownMonikers .h**
 
-  - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하는 경우 필요 합니다.
+  - 기본 제공 이미지 카탈로그 **Knownmonikers** 를 사용 하는 경우 필요 합니다.
 
 - **ImageParameters140**
 
@@ -281,13 +283,13 @@ ms.locfileid: "91584544"
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>새 WPF UI를 작성할 어떻게 할까요? 있나요?
 
-1. 위의 첫 번째 단계 섹션에 필요한 어셈블리 참조를 프로젝트에 추가 하 여 시작 합니다. 모든 항목을 추가할 필요는 없으므로 필요한 참조만 추가 합니다. (참고: **브러시**대신 또는를 사용 하 여 **색** 에 액세스할 경우 변환기가 필요 하지 않으므로 **유틸리티**에 대 한 참조를 건너뛸 수 있습니다.)
+1. 위의 첫 번째 단계 섹션에 필요한 어셈블리 참조를 프로젝트에 추가 하 여 시작 합니다. 모든 항목을 추가할 필요는 없으므로 필요한 참조만 추가 합니다. (참고: **브러시** 대신 또는를 사용 하 여 **색** 에 액세스할 경우 변환기가 필요 하지 않으므로 **유틸리티** 에 대 한 참조를 건너뛸 수 있습니다.)
 
-2. 원하는 이미지를 선택 하 고 모니커를 가져옵니다. **Knownmoniker**를 사용 하거나 고유한 사용자 지정 이미지 및 모니커를 사용 하는 경우 사용자 고유의 모니커를 사용 합니다.
+2. 원하는 이미지를 선택 하 고 모니커를 가져옵니다. **Knownmoniker** 를 사용 하거나 고유한 사용자 지정 이미지 및 모니커를 사용 하는 경우 사용자 고유의 모니커를 사용 합니다.
 
 3. XAML에 **CrispImages** 를 추가 합니다. (아래 예제 참조)
 
-4. UI 계층 구조에서 **ImageBackgroundColor** 속성을 설정 합니다. 이는 **CrispImage**에 반드시 있어야 하는 것이 아니라 배경색이 알려진 위치에 설정 해야 합니다. (아래 예제 참조)
+4. UI 계층 구조에서 **ImageBackgroundColor** 속성을 설정 합니다. 이는 **CrispImage** 에 반드시 있어야 하는 것이 아니라 배경색이 알려진 위치에 설정 해야 합니다. (아래 예제 참조)
 
 ```xaml
 <Window
@@ -317,7 +319,7 @@ ms.locfileid: "91584544"
 
 2. 모든 원본 특성을 모니커 특성으로 변경 합니다.
 
-    - 이미지가 변경 되지 않으며 **Knownmonikers**를 사용 하는 경우 해당 속성을 **knownmonikers**에 정적으로 바인딩합니다. 위의 예제를 참조 하십시오.
+    - 이미지가 변경 되지 않으며 **Knownmonikers** 를 사용 하는 경우 해당 속성을 **knownmonikers** 에 정적으로 바인딩합니다. 위의 예제를 참조 하십시오.
 
     - 이미지가 변경 되지 않으며 사용자 고유의 사용자 지정 이미지를 사용 하는 경우 고유한 모니커에 정적으로 바인딩합니다.
 
@@ -461,7 +463,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>새 도구 창에서 이미지 모니커를 사용할 어떻게 할까요? 있나요?
- Visual Studio 2015에 대해 VSIX 패키지 프로젝트 템플릿이 업데이트 되었습니다. 새 도구 창을 만들려면 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가 (**Ctrl** + **Shift** + **a**)를 선택 합니다. 프로젝트 언어의 확장성 노드 아래에서 **사용자 지정 도구 창**을 선택 하 고 도구 창에 이름을 지정한 다음 **추가** 단추를 누릅니다.
+ Visual Studio 2015에 대해 VSIX 패키지 프로젝트 템플릿이 업데이트 되었습니다. 새 도구 창을 만들려면 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가 (**Ctrl** + **Shift** + **a**)를 선택 합니다. 프로젝트 언어의 확장성 노드 아래에서 **사용자 지정 도구 창** 을 선택 하 고 도구 창에 이름을 지정한 다음 **추가** 단추를 누릅니다.
 
  도구 창에서 모니커를 사용 하는 주요 위치입니다. 각각에 대 한 지침을 따르세요.
 
@@ -576,15 +578,15 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>프로젝트 시스템의 포트를 어떻게 할까요? 하 시겠습니까?
  **프로젝트에 대 한 ImageMonikers를 제공 하는 방법**
 
-1. 프로젝트의 **IVsHierarchy**에 대 한 **VSHPROPID_SupportsIconMonikers** 를 구현 하 고 true를 반환 합니다.
+1. 프로젝트의 **IVsHierarchy** 에 대 한 **VSHPROPID_SupportsIconMonikers** 를 구현 하 고 true를 반환 합니다.
 
-2. **VSHPROPID_IconMonikerImageList** (원본 프로젝트가 **VSHPROPID_IconImgList**사용 되는 경우) 또는 **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (원본 프로젝트가 **VSHPROPID_IconHandle** 및 **VSHPROPID_OpenFolderIconHandle**사용 되는 경우)를 구현 합니다.
+2. **VSHPROPID_IconMonikerImageList** (원본 프로젝트가 **VSHPROPID_IconImgList** 사용 되는 경우) 또는 **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (원본 프로젝트가 **VSHPROPID_IconHandle** 및 **VSHPROPID_OpenFolderIconHandle** 사용 되는 경우)를 구현 합니다.
 
 3. 아이콘에 대 한 원래 VSHPROPIDs의 구현을 변경 하 여 확장 지점이 요청 하는 경우 "레거시" 버전의 아이콘을 만듭니다. **IVsImageService2** 는 이러한 아이콘을 가져오는 데 필요한 기능을 제공 합니다.
 
    **VB/c # 프로젝트 특색에 대 한 추가 요구 사항**
 
-   프로젝트가 **가장 바깥쪽 버전**임을 감지 하는 경우에만 **VSHPROPID_SupportsIconMonikers** 을 구현 합니다. 그렇지 않으면 실제 가장 바깥쪽 버전이 실제로는 이미지 모니커를 지원 하지 않을 수 있으며, 기본 버전은 사용자 지정 된 이미지를 효과적으로 "숨길" 수 있습니다.
+   프로젝트가 **가장 바깥쪽 버전** 임을 감지 하는 경우에만 **VSHPROPID_SupportsIconMonikers** 을 구현 합니다. 그렇지 않으면 실제 가장 바깥쪽 버전이 실제로는 이미지 모니커를 지원 하지 않을 수 있으며, 기본 버전은 사용자 지정 된 이미지를 효과적으로 "숨길" 수 있습니다.
 
    **CPS에서 이미지 모니커를 사용 어떻게 할까요??**
 
@@ -630,7 +632,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - 권장: 사용에 맞게 매니페스트에 기본이 아닌 이름을 제공 합니다.
 
-2. **Knownmonikers**만 사용 하는 경우 다음을 수행 합니다.
+2. **Knownmonikers** 만 사용 하는 경우 다음을 수행 합니다.
 
    - \<Images>매니페스트의 섹션을로 바꿉니다 \<Images/> .
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - 권장: 사용에 맞게 AssetsGuid 기호 및 이미지 스트립 기호의 이름을 바꿉니다.
 
-   - 각 **ContainedImage**의 GUID를 $ (ImageCatalogGuid)로 바꾸고 각 **ContainedImage**의 ID를 $ ()로 바꾸고 \<moniker> External = "True" 특성을 각 **ContainedImage** 에 추가 합니다.
+   - 각 **ContainedImage** 의 GUID를 $ (ImageCatalogGuid)로 바꾸고 각 **ContainedImage** 의 ID를 $ ()로 바꾸고 \<moniker> External = "True" 특성을 각 **ContainedImage** 에 추가 합니다.
 
        - \<moniker> 이미지와 일치 하지만 "Knownmoniker"와 일치 하는 **Knownmoniker** 로 바꾸어야 합니다. 이름에서 제거 되었습니다.
 
@@ -748,9 +750,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - "VSIX에 포함"을 True로 설정 합니다.
 
-- 내 CPS 프로젝트 시스템을 업데이트 하 고 있습니다. **ImageName** 및 **StockIconService**는 어떻게 되었습니까?
+- 내 CPS 프로젝트 시스템을 업데이트 하 고 있습니다. **ImageName** 및 **StockIconService** 는 어떻게 되었습니까?
 
-  - 이러한 업데이트는 CPS를 사용 하도록 업데이트 될 때 제거 되었습니다. 더 이상 **StockIconService**를 호출할 필요가 없으며 CPS 유틸리티의 **ToProjectSystemType ()** 확장 메서드를 사용 하 여 원하는 **knownmoniker** 를 메서드나 속성에 전달 하기만 하면 됩니다. 다음은 **ImageName** 에서 **knownmonikers** 대 한 매핑을 찾을 수 있습니다.
+  - 이러한 업데이트는 CPS를 사용 하도록 업데이트 될 때 제거 되었습니다. 더 이상 **StockIconService** 를 호출할 필요가 없으며 CPS 유틸리티의 **ToProjectSystemType ()** 확장 메서드를 사용 하 여 원하는 **knownmoniker** 를 메서드나 속성에 전달 하기만 하면 됩니다. 다음은 **ImageName** 에서 **knownmonikers** 대 한 매핑을 찾을 수 있습니다.
 
     |**ImageName**|**KnownMoniker**|
     |-|-|
@@ -819,7 +821,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - 완성 목록 공급자를 업데이트 하 고 있습니다. 이전 **StandardGlyphGroup** 및 **standardglyph** 값과 일치 하는 **knownmonikers** 는 무엇 인가요?
 
-    |Name|Name|Name|
+    |속성|속성|속성|
     |-|-|-|
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|

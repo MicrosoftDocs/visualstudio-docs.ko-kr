@@ -1,5 +1,6 @@
 ---
 title: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage 로드
+description: 백그라운드 스레드에서 패키지를 로드할 수 있도록 하는 AsyncPackage 클래스를 사용 하 여 디스크 i/o의 응답성 문제를 방지할 수 있는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037291"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993486"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage 로드
 VS 패키지를 로드 하 고 초기화 하면 디스크 i/o가 발생할 수 있습니다. 이러한 i/o가 UI 스레드에서 발생 하면 응답성 문제가 발생할 수 있습니다. 이를 해결 하기 위해 Visual Studio 2015에서는  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 패키지를 로드할 수 있도록 하는 클래스를 도입 했습니다.
 
 ## <a name="create-an-asyncpackage"></a>AsyncPackage 만들기
- 먼저 VSIX 프로젝트를 만들고 (**파일**  >  **새로 만들기**  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**) VSPackage를 프로젝트에 추가할 수 있습니다 (프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가  >  **c # 항목**  >  **확장성**  >  **Visual Studio 패키지**). 그런 다음 서비스를 만들어 패키지에 추가할 수 있습니다.
+ 먼저 VSIX 프로젝트를 만들고 (**파일**  >  **새로 만들기**  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**) VSPackage를 프로젝트에 추가할 수 있습니다 (프로젝트를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가  >  **c # 항목**  >  **확장성**  >  **Visual Studio 패키지**). 그런 다음 서비스를 만들어 패키지에 추가할 수 있습니다.
 
 1. 에서 패키지를 파생 시킵니다 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> .
 
@@ -74,7 +75,7 @@ public sealed class TestPackage : AsyncPackage
 ```
 
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>기존 VSPackage을 AsyncPackage로 변환
- 대부분의 작업은 새 **Asyncpackage**를 만드는 것과 동일 합니다. 위의 1 ~ 5 단계를 수행 합니다. 또한 다음과 같은 권장 사항을 추가로 주의 해야 합니다.
+ 대부분의 작업은 새 **Asyncpackage** 를 만드는 것과 동일 합니다. 위의 1 ~ 5 단계를 수행 합니다. 또한 다음과 같은 권장 사항을 추가로 주의 해야 합니다.
 
 1. `Initialize`패키지에 있던 재정의는 제거 해야 합니다.
 

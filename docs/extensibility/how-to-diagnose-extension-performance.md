@@ -1,5 +1,7 @@
 ---
 title: '방법: 확장 성능 진단 | Microsoft Docs'
+description: Visual Studio는 사용자에 게 저속 확장을 알립니다. 확장 영향을 계산 하는 방법 및 확장 영향을 로컬로 분석 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2016
 ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
@@ -8,12 +10,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905914"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994201"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>시작 시 확장 영향 측정
 
@@ -149,7 +151,7 @@ private void DoMoreWork()
 
 기록이 완료 되 면 PerfView에서 추적 및 확장 옵션을 자동으로 엽니다.
 
-이 예제의 목적을 위해 주로 **고급 그룹**에서 찾을 수 있는 **스레드 시간 스택** 보기에 관심이 있습니다. 이 보기에는 CPU 시간과 차단 된 시간 (예: 디스크 IO 또는 핸들 대기)을 모두 포함 하는 메서드에 의해 스레드에 소요 된 총 시간이 표시 됩니다.
+이 예제의 목적을 위해 주로 **고급 그룹** 에서 찾을 수 있는 **스레드 시간 스택** 보기에 관심이 있습니다. 이 보기에는 CPU 시간과 차단 된 시간 (예: 디스크 IO 또는 핸들 대기)을 모두 포함 하는 메서드에 의해 스레드에 소요 된 총 시간이 표시 됩니다.
 
  ![스레드 시간 스택](media/perfview-thread-time-stacks.png)
 

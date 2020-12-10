@@ -1,6 +1,6 @@
 ---
-title: 워크플로 디자이너 InitializeCorrelation 활동 디자이너
-description: InitializeCorrelation activity designer를 사용 하 여 InitializeCorrelation 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
+title: InitializeCorrelation 활동 디자이너
+description: 워크플로 디자이너 InitializeCorrelation activity Designer를 사용 하 여 InitializeCorrelation 활동을 만들고 구성 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437790"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993200"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 활동 디자이너
 
@@ -41,13 +41,13 @@ ms.locfileid: "94437790"
 
 다음 표에서는 속성을 보여 주고 <xref:System.ServiceModel.Activities.InitializeCorrelation> 디자이너에서 이러한 속성을 사용 하는 방법을 설명 합니다. 이러한 속성은 **속성** 창이 나 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 이름입니다. 기본값은 InitializeCorrelation입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 필요한 것은 아니지만 <xref:System.Activities.Activity.DisplayName%2A> 권장 됩니다.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|거짓|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|거짓|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> **상관 관계 초기화** 대화 상자를 사용 하 여를 구성할 수 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 있습니다. 이 대화 상자 사용에 대 한 자세한 내용은 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서를 참조 하세요.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [받습니다](../workflow-designer/receive-activity-designer.md)
