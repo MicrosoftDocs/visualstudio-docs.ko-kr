@@ -1,7 +1,6 @@
 - name: MSBuild
+  href: msbuild.md
   items:
-    - name: MSBuild
-      href: msbuild.md
     - name: MSBuild 16.0의 새로운 기능
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0의 새로운 기능

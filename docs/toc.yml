@@ -903,7 +903,7 @@
   href: debugger/index.yml
 - name: 테스트 >>
   displayName: Unit testing
-  href: test/improve-code-quality.md
+  href: test/index.yml
 - name: 성능 측정 >>
   displayName: Profiling
   href: profiling/index.yml
@@ -978,7 +978,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참조
+- name: 참고
   items:
     - name: 바로 가기 키
       items:

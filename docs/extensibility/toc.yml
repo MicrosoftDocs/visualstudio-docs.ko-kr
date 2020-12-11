@@ -1,846 +1,849 @@
-- name: Visual Studio SDK
-  href: visual-studio-sdk.md
-- name: Visual Studio SDK 설치
-  href: installing-the-visual-studio-sdk.md
-- name: Visual Studio 확장 개발 시작
-  href: starting-to-develop-visual-studio-extensions.md
-- name: '첫 번째 확장: Hello World 만들기'
-  href: extensibility-hello-world.md
-- name: Visual Studio 2019 SDK의 새로운 기능
+- name: Visual Studio 확장성
+  href: index.yml
   items:
+    - name: Visual Studio SDK
+      href: visual-studio-sdk.md
+    - name: Visual Studio SDK 설치
+      href: installing-the-visual-studio-sdk.md
+    - name: Visual Studio 확장 개발 시작
+      href: starting-to-develop-visual-studio-extensions.md
+    - name: '첫 번째 확장: Hello World 만들기'
+      href: extensibility-hello-world.md
     - name: Visual Studio 2019 SDK의 새로운 기능
-      href: whats-new-visual-studio-2019-sdk.md
-    - name: 동기적으로 자동 로드된 확장
-      href: synchronously-autoloaded-extensions.md
-- name: Visual Studio 2017 SDK의 새로운 기능
-  items:
+      items:
+        - name: Visual Studio 2019 SDK의 새로운 기능
+          href: whats-new-visual-studio-2019-sdk.md
+        - name: 동기적으로 자동 로드된 확장
+          href: synchronously-autoloaded-extensions.md
     - name: Visual Studio 2017 SDK의 새로운 기능
-      href: what-s-new-in-the-visual-studio-2017-sdk.md
-    - name: 확장성의 주요 변경 내용
-      href: breaking-changes-2017.md
-    - name: VSIX v3의 Ngen 지원
-      href: ngen-support.md
-    - name: 확장 폴더 외부에 설치
-      href: set-install-root.md
-    - name: 디버거 COM 등록 마이그레이션
-      href: migrate-debugger-com-registration.md
-    - name: 질문과 대답
-      href: faq-2017.md
-- name: Visual Studio 2017로 확장성 프로젝트 마이그레이션
-  href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
-- name: Visual Studio용 왕복 확장
-  href: how-to-roundtrip-VSIXs.md
-- name: 언어 서버 프로토콜
-  items:
+      items:
+        - name: Visual Studio 2017 SDK의 새로운 기능
+          href: what-s-new-in-the-visual-studio-2017-sdk.md
+        - name: 확장성의 주요 변경 내용
+          href: breaking-changes-2017.md
+        - name: VSIX v3의 Ngen 지원
+          href: ngen-support.md
+        - name: 확장 폴더 외부에 설치
+          href: set-install-root.md
+        - name: 디버거 COM 등록 마이그레이션
+          href: migrate-debugger-com-registration.md
+        - name: 질문과 대답
+          href: faq-2017.md
+    - name: Visual Studio 2017로 확장성 프로젝트 마이그레이션
+      href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
+    - name: Visual Studio용 왕복 확장
+      href: how-to-roundtrip-VSIXs.md
     - name: 언어 서버 프로토콜
-      href: language-server-protocol.md
-    - name: 언어 서버 프로토콜 확장 추가
-      href: adding-an-lsp-extension.md
-- name: 폴더 열기
-  items:
+      items:
+        - name: 언어 서버 프로토콜
+          href: language-server-protocol.md
+        - name: 언어 서버 프로토콜 확장 추가
+          href: adding-an-lsp-extension.md
     - name: 폴더 열기
-      href: open-folder.md
-    - name: 작업 영역
-      href: workspaces.md
-    - name: 파일 컨텍스트
-      href: workspace-file-contexts.md
-    - name: 인덱싱
-      href: workspace-indexing.md
-    - name: 언어 서비스
-      href: workspace-language-services.md
-    - name: 빌드
-      href: workspace-build.md
-- name: 메뉴 및 명령 확장
-  items:
+      items:
+        - name: 폴더 열기
+          href: open-folder.md
+        - name: 작업 영역
+          href: workspaces.md
+        - name: 파일 컨텍스트
+          href: workspace-file-contexts.md
+        - name: 인덱싱
+          href: workspace-indexing.md
+        - name: 언어 서비스
+          href: workspace-language-services.md
+        - name: 빌드
+          href: workspace-build.md
     - name: 메뉴 및 명령 확장
-      href: extending-menus-and-commands.md
-    - name: 메뉴 명령을 사용하여 확장 만들기
-      href: creating-an-extension-with-a-menu-command.md
-    - name: Visual Studio 메뉴 모음에 메뉴 추가
-      href: adding-a-menu-to-the-visual-studio-menu-bar.md
-    - name: 메뉴 항목에 바로 가기 키 바인딩
-      href: binding-keyboard-shortcuts-to-menu-items.md
-    - name: 메뉴에 하위 메뉴 추가
-      href: adding-a-submenu-to-a-menu.md
-    - name: 하위 메뉴에 가장 최근에 사용한 메뉴 목록 추가
-      href: adding-a-most-recently-used-list-to-a-submenu.md
-    - name: 다시 사용할 수 있는 단추 그룹 만들기
-      href: creating-reusable-groups-of-buttons.md
-    - name: 메뉴 명령에 아이콘 추가
-      href: adding-icons-to-menu-commands.md
-    - name: 메뉴 명령 텍스트 변경
-      href: changing-the-text-of-a-menu-command.md
-    - name: 명령 모양 변경
-      href: changing-the-appearance-of-a-command.md
-    - name: 사용자 인터페이스 업데이트
-      href: updating-the-user-interface.md
-    - name: 메뉴 명령 지역화
-      href: localizing-menu-commands.md
-- name: 도구 모음에 명령 추가
-  items:
+      items:
+        - name: 메뉴 및 명령 확장
+          href: extending-menus-and-commands.md
+        - name: 메뉴 명령을 사용하여 확장 만들기
+          href: creating-an-extension-with-a-menu-command.md
+        - name: Visual Studio 메뉴 모음에 메뉴 추가
+          href: adding-a-menu-to-the-visual-studio-menu-bar.md
+        - name: 메뉴 항목에 바로 가기 키 바인딩
+          href: binding-keyboard-shortcuts-to-menu-items.md
+        - name: 메뉴에 하위 메뉴 추가
+          href: adding-a-submenu-to-a-menu.md
+        - name: 하위 메뉴에 가장 최근에 사용한 메뉴 목록 추가
+          href: adding-a-most-recently-used-list-to-a-submenu.md
+        - name: 다시 사용할 수 있는 단추 그룹 만들기
+          href: creating-reusable-groups-of-buttons.md
+        - name: 메뉴 명령에 아이콘 추가
+          href: adding-icons-to-menu-commands.md
+        - name: 메뉴 명령 텍스트 변경
+          href: changing-the-text-of-a-menu-command.md
+        - name: 명령 모양 변경
+          href: changing-the-appearance-of-a-command.md
+        - name: 사용자 인터페이스 업데이트
+          href: updating-the-user-interface.md
+        - name: 메뉴 명령 지역화
+          href: localizing-menu-commands.md
     - name: 도구 모음에 명령 추가
-      href: adding-commands-to-toolbars.md
-    - name: 도구 모음 추가
-      href: adding-a-toolbar.md
-    - name: 도구 창에 도구 모음 추가
-      href: adding-a-toolbar-to-a-tool-window.md
-    - name: 솔루션 탐색기 도구 모음에 명령 추가
-      href: adding-a-command-to-the-solution-explorer-toolbar.md
-    - name: 도구 모음에 메뉴 컨트롤러 추가
-      href: adding-a-menu-controller-to-a-toolbar.md
-    - name: 메뉴 항목 동적 추가
-      href: dynamically-adding-menu-items.md
-- name: 도구 창 확장 및 사용자 지정
-  items:
+      items:
+        - name: 도구 모음에 명령 추가
+          href: adding-commands-to-toolbars.md
+        - name: 도구 모음 추가
+          href: adding-a-toolbar.md
+        - name: 도구 창에 도구 모음 추가
+          href: adding-a-toolbar-to-a-tool-window.md
+        - name: 솔루션 탐색기 도구 모음에 명령 추가
+          href: adding-a-command-to-the-solution-explorer-toolbar.md
+        - name: 도구 모음에 메뉴 컨트롤러 추가
+          href: adding-a-menu-controller-to-a-toolbar.md
+        - name: 메뉴 항목 동적 추가
+          href: dynamically-adding-menu-items.md
     - name: 도구 창 확장 및 사용자 지정
-      href: extending-and-customizing-tool-windows.md
-    - name: 도구 창으로 확장 만들기
-      href: creating-an-extension-with-a-tool-window.md
-    - name: 도구 창 추가
-      href: adding-a-tool-window.md
-    - name: 도구 창 등록
-      href: registering-a-tool-window.md
-    - name: 다중 인스턴스 도구 창 만들기
-      href: creating-a-multi-instance-tool-window.md
-    - name: 동적 도구 창 열기
-      href: opening-a-dynamic-tool-window.md
-    - name: 도구 창의 바로 가기 메뉴 추가
-      href: adding-a-shortcut-menu-in-a-tool-window.md
-    - name: 도구 창에 검색 추가
-      href: adding-search-to-a-tool-window.md
-    - name: 이벤트 구독
-      href: subscribing-to-an-event.md
-    - name: 출력 창 확장
-      href: extending-the-output-window.md
-    - name: '속성, 작업 목록, 출력 및 옵션 창 확장'
-      href: extending-the-properties-task-list-output-and-options-windows.md
-    - name: 모달 대화 상자 만들기 및 관리
-      href: creating-and-managing-modal-dialog-boxes.md
-- name: 편집기 및 언어 서비스 확장
-  items:
-    - name: 편집기 및 언어 서비스 확장
-      href: editor-and-language-service-extensions.md
-    - name: 편집기 항목 템플릿을 사용하여 확장 만들기
-      href: creating-an-extension-with-an-editor-item-template.md
+      items:
+        - name: 도구 창 확장 및 사용자 지정
+          href: extending-and-customizing-tool-windows.md
+        - name: 도구 창으로 확장 만들기
+          href: creating-an-extension-with-a-tool-window.md
+        - name: 도구 창 추가
+          href: adding-a-tool-window.md
+        - name: 도구 창 등록
+          href: registering-a-tool-window.md
+        - name: 다중 인스턴스 도구 창 만들기
+          href: creating-a-multi-instance-tool-window.md
+        - name: 동적 도구 창 열기
+          href: opening-a-dynamic-tool-window.md
+        - name: 도구 창의 바로 가기 메뉴 추가
+          href: adding-a-shortcut-menu-in-a-tool-window.md
+        - name: 도구 창에 검색 추가
+          href: adding-search-to-a-tool-window.md
+        - name: 이벤트 구독
+          href: subscribing-to-an-event.md
+        - name: 출력 창 확장
+          href: extending-the-output-window.md
+        - name: '속성, 작업 목록, 출력 및 옵션 창 확장'
+          href: extending-the-properties-task-list-output-and-options-windows.md
+        - name: 모달 대화 상자 만들기 및 관리
+          href: creating-and-managing-modal-dialog-boxes.md
     - name: 편집기 및 언어 서비스 확장
       items:
         - name: 편집기 및 언어 서비스 확장
-          href: extending-the-editor-and-language-services.md
-        - name: 언어 서비스 및 편집기 확장 시작
-          href: getting-started-with-language-service-and-editor-extensions.md
-        - name: 편집기 기본 사항
-          href: inside-the-editor.md
-        - name: 편집기의 Managed Extensibility Framework
-          href: managed-extensibility-framework-in-the-editor.md
-        - name: 언어 서비스 및 편집기 확장 지점
-          href: language-service-and-editor-extension-points.md
-        - name: 편집기 가져오기
-          href: editor-imports.md
-        - name: EditorConfig 지원
-          href: supporting-editorconfig.md
-        - name: '연습: 파일 이름 확장명에 콘텐츠 형식 연결'
-          href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: '연습: 여백 문자 모양 만들기'
-          href: walkthrough-creating-a-margin-glyph.md
-        - name: '연습: 텍스트 뷰 사용자 지정'
-          href: walkthrough-customizing-the-text-view.md
-        - name: '연습: 보기 장식, 명령 및 설정(열 안내선) 만들기'
-          href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: '연습: 텍스트 강조 표시'
-          href: walkthrough-highlighting-text.md
-        - name: '연습: 개요'
-          href: walkthrough-outlining.md
-        - name: '연습: 괄호 일치 표시'
-          href: walkthrough-displaying-matching-braces.md
-        - name: '연습: QuickInfo 도구 설명 표시'
-          href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: '연습: 서명 도움말 표시'
-          href: walkthrough-displaying-signature-help.md
-        - name: '연습: 문 완성 표시'
-          href: walkthrough-displaying-statement-completion.md
-        - name: '연습: 코드 조각 구현'
-          href: walkthrough-implementing-code-snippets.md
-        - name: '연습: 밝은 전구 추천 표시'
-          href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: '연습: 편집기 확장에서 셸 명령 사용'
-          href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: '연습: 편집기 확장에서 바로 가기 키 사용'
-          href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: '연습: 편집기 확장에서 DTE 개체 액세스'
-          href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
-    - name: 사용자 지정 편집기 및 디자이너 만들기
-      items:
+          href: editor-and-language-service-extensions.md
+        - name: 편집기 항목 템플릿을 사용하여 확장 만들기
+          href: creating-an-extension-with-an-editor-item-template.md
+        - name: 편집기 및 언어 서비스 확장
+          items:
+            - name: 편집기 및 언어 서비스 확장
+              href: extending-the-editor-and-language-services.md
+            - name: 언어 서비스 및 편집기 확장 시작
+              href: getting-started-with-language-service-and-editor-extensions.md
+            - name: 편집기 기본 사항
+              href: inside-the-editor.md
+            - name: 편집기의 Managed Extensibility Framework
+              href: managed-extensibility-framework-in-the-editor.md
+            - name: 언어 서비스 및 편집기 확장 지점
+              href: language-service-and-editor-extension-points.md
+            - name: 편집기 가져오기
+              href: editor-imports.md
+            - name: EditorConfig 지원
+              href: supporting-editorconfig.md
+            - name: '연습: 파일 이름 확장명에 콘텐츠 형식 연결'
+              href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
+            - name: '연습: 여백 문자 모양 만들기'
+              href: walkthrough-creating-a-margin-glyph.md
+            - name: '연습: 텍스트 뷰 사용자 지정'
+              href: walkthrough-customizing-the-text-view.md
+            - name: '연습: 보기 장식, 명령 및 설정(열 안내선) 만들기'
+              href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
+            - name: '연습: 텍스트 강조 표시'
+              href: walkthrough-highlighting-text.md
+            - name: '연습: 개요'
+              href: walkthrough-outlining.md
+            - name: '연습: 괄호 일치 표시'
+              href: walkthrough-displaying-matching-braces.md
+            - name: '연습: QuickInfo 도구 설명 표시'
+              href: walkthrough-displaying-quickinfo-tooltips.md
+            - name: '연습: 서명 도움말 표시'
+              href: walkthrough-displaying-signature-help.md
+            - name: '연습: 문 완성 표시'
+              href: walkthrough-displaying-statement-completion.md
+            - name: '연습: 코드 조각 구현'
+              href: walkthrough-implementing-code-snippets.md
+            - name: '연습: 밝은 전구 추천 표시'
+              href: walkthrough-displaying-light-bulb-suggestions.md
+            - name: '연습: 편집기 확장에서 셸 명령 사용'
+              href: walkthrough-using-a-shell-command-with-an-editor-extension.md
+            - name: '연습: 편집기 확장에서 바로 가기 키 사용'
+              href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
+            - name: '연습: 편집기 확장에서 DTE 개체 액세스'
+              href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
         - name: 사용자 지정 편집기 및 디자이너 만들기
-          href: creating-custom-editors-and-designers.md
-        - name: '연습: 사용자 지정 편집기 만들기'
-          href: walkthrough-creating-a-custom-editor.md
-        - name: '연습: 사용자 지정 편집기에 기능 추가'
-          href: walkthrough-adding-features-to-a-custom-editor.md
-        - name: 디자이너 초기화 및 메타데이터 구성
-          href: designer-initialization-and-metadata-configuration.md
-        - name: 디자이너에 실행 취소 지원 제공
-          href: supplying-undo-support-to-designers.md
-        - name: 사용자 지정 편집기의 구문 색 지정
-          href: syntax-coloring-in-custom-editors.md
-        - name: 사용자 지정 편집기의 문서 데이터 및 문서 보기
           items:
+            - name: 사용자 지정 편집기 및 디자이너 만들기
+              href: creating-custom-editors-and-designers.md
+            - name: '연습: 사용자 지정 편집기 만들기'
+              href: walkthrough-creating-a-custom-editor.md
+            - name: '연습: 사용자 지정 편집기에 기능 추가'
+              href: walkthrough-adding-features-to-a-custom-editor.md
+            - name: 디자이너 초기화 및 메타데이터 구성
+              href: designer-initialization-and-metadata-configuration.md
+            - name: 디자이너에 실행 취소 지원 제공
+              href: supplying-undo-support-to-designers.md
+            - name: 사용자 지정 편집기의 구문 색 지정
+              href: syntax-coloring-in-custom-editors.md
             - name: 사용자 지정 편집기의 문서 데이터 및 문서 보기
-              href: document-data-and-document-view-in-custom-editors.md
-            - name: 여러 문서 보기 지원
-              href: supporting-multiple-document-views.md
-            - name: 간단한 포함
-              href: simplified-embedding.md
-            - name: 문서 데이터에 보기 연결
-              href: how-to-attach-views-to-document-data.md
-            - name: 문서 잠금 소유자 관리
-              href: document-lock-holder-management.md
-            - name: 단일 및 다중 탭 보기
-              href: single-and-multi-tab-views.md
-            - name: 프로젝트별 편집기 열기
-              href: how-to-open-project-specific-editors.md
-            - name: 표준 편집기 열기
-              href: how-to-open-standard-editors.md
-            - name: 열린 문서에 대한 편집기 열기
-              href: how-to-open-editors-for-open-documents.md
-- name: 프로젝트 확장
-  items:
+              items:
+                - name: 사용자 지정 편집기의 문서 데이터 및 문서 보기
+                  href: document-data-and-document-view-in-custom-editors.md
+                - name: 여러 문서 보기 지원
+                  href: supporting-multiple-document-views.md
+                - name: 간단한 포함
+                  href: simplified-embedding.md
+                - name: 문서 데이터에 보기 연결
+                  href: how-to-attach-views-to-document-data.md
+                - name: 문서 잠금 소유자 관리
+                  href: document-lock-holder-management.md
+                - name: 단일 및 다중 탭 보기
+                  href: single-and-multi-tab-views.md
+                - name: 프로젝트별 편집기 열기
+                  href: how-to-open-project-specific-editors.md
+                - name: 표준 편집기 열기
+                  href: how-to-open-standard-editors.md
+                - name: 열린 문서에 대한 편집기 열기
+                  href: how-to-open-editors-for-open-documents.md
     - name: 프로젝트 확장
-      href: extending-projects.md
-    - name: '기본 프로젝트 시스템 만들기, 1부'
-      href: creating-a-basic-project-system-part-1.md
-    - name: '기본 프로젝트 시스템 만들기, 2부'
-      href: creating-a-basic-project-system-part-2.md
-    - name: 프로젝트 파일에 데이터 저장
-      href: saving-data-in-project-files.md
-    - name: 런타임에 프로젝트의 하위 형식 확인
-      href: verifying-subtypes-of-a-project-at-run-time.md
-    - name: 속성 페이지 추가 및 제거
-      href: adding-and-removing-property-pages.md
-    - name: 프로젝트 항목에 특성 추가
-      href: adding-an-attribute-to-a-project-item.md
-    - name: 프로젝트 항목의 속성 유지
-      href: persisting-the-property-of-a-project-item.md
-    - name: 유니버설 Windows 프로젝트 관리
-      href: managing-universal-windows-projects.md
-- name: 솔루션 확장
-  items:
+      items:
+        - name: 프로젝트 확장
+          href: extending-projects.md
+        - name: '기본 프로젝트 시스템 만들기, 1부'
+          href: creating-a-basic-project-system-part-1.md
+        - name: '기본 프로젝트 시스템 만들기, 2부'
+          href: creating-a-basic-project-system-part-2.md
+        - name: 프로젝트 파일에 데이터 저장
+          href: saving-data-in-project-files.md
+        - name: 런타임에 프로젝트의 하위 형식 확인
+          href: verifying-subtypes-of-a-project-at-run-time.md
+        - name: 속성 페이지 추가 및 제거
+          href: adding-and-removing-property-pages.md
+        - name: 프로젝트 항목에 특성 추가
+          href: adding-an-attribute-to-a-project-item.md
+        - name: 프로젝트 항목의 속성 유지
+          href: persisting-the-property-of-a-project-item.md
+        - name: 유니버설 Windows 프로젝트 관리
+          href: managing-universal-windows-projects.md
     - name: 솔루션 확장
-      href: extending-solutions.md
-    - name: 솔루션 탐색기 필터 확장
-      href: extending-the-solution-explorer-filter.md
-    - name: 솔루션의 프로젝트 로드 관리
-      href: managing-project-loading-in-a-solution.md
-- name: 사용자 지정 프로젝트 및 항목 템플릿 만들기
-  items:
+      items:
+        - name: 솔루션 확장
+          href: extending-solutions.md
+        - name: 솔루션 탐색기 필터 확장
+          href: extending-the-solution-explorer-filter.md
+        - name: 솔루션의 프로젝트 로드 관리
+          href: managing-project-loading-in-a-solution.md
     - name: 사용자 지정 프로젝트 및 항목 템플릿 만들기
-      href: creating-custom-project-and-item-templates.md
-    - name: Visual Studio 2017용 사용자 지정 프로젝트 및 항목 템플릿 업그레이드
-      href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
-    - name: 템플릿 검색 문제 해결
-      href: troubleshooting-template-discovery.md
-    - name: 프로젝트 템플릿에 마법사 사용
-      href: how-to-use-wizards-with-project-templates.md
-    - name: Visual Studio 템플릿 스키마 참조
       items:
+        - name: 사용자 지정 프로젝트 및 항목 템플릿 만들기
+          href: creating-custom-project-and-item-templates.md
+        - name: Visual Studio 2017용 사용자 지정 프로젝트 및 항목 템플릿 업그레이드
+          href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
+        - name: 템플릿 검색 문제 해결
+          href: troubleshooting-template-discovery.md
+        - name: 프로젝트 템플릿에 마법사 사용
+          href: how-to-use-wizards-with-project-templates.md
         - name: Visual Studio 템플릿 스키마 참조
-          href: visual-studio-template-schema-reference.md
-        - name: AppliesTo 요소(Visual Studio 템플릿)
-          href: appliesto-element-visual-studio-templates.md
-        - name: Assembly 요소(Visual Studio 템플릿)
-          href: assembly-element-visual-studio-templates.md
-        - name: Assembly 요소(Visual Studio 템플릿 마법사 확장)
-          href: assembly-element-visual-studio-template-wizard-extension.md
-        - name: BuildOnLoad 특성 및 요소(Visual Studio 템플릿)
-          href: buildonload-visual-studio-templates.md
-        - name: BuildProjectOnload 요소(Visual Studio 템플릿)
-          href: buildprojectonload-element-visual-studio-templates.md
-        - name: CreateInPlace(Visual Studio 템플릿)
-          href: createinplace-visual-studio-templates.md
-        - name: CreateNewFolder 요소(Visual Studio 템플릿)
-          href: createnewfolder-element-visual-studio-templates.md
-        - name: CustomDataSignature 요소(Visual Studio 템플릿)
-          href: customdatasignature-element-visual-studio-templates.md
-        - name: CustomParameter 요소(Visual Studio 템플릿)
-          href: customparameter-element-visual-studio-templates.md
-        - name: CustomParameters 요소(Visual Studio 템플릿)
-          href: customparameters-element-visual-studio-templates.md
-        - name: DefaultName 요소(Visual Studio 템플릿)
-          href: defaultname-element-visual-studio-templates.md
-        - name: Description 요소(Visual Studio 템플릿)
-          href: description-element-visual-studio-templates.md
-        - name: EnableEditOfLocationField 요소(Visual Studio 템플릿)
-          href: enableeditoflocationfield-element-visual-studio-templates.md
-        - name: EnableLocationBrowseButton 요소(Visual Studio 템플릿)
-          href: enablelocationbrowsebutton-element-visual-studio-templates.md
-        - name: Folder 요소(Visual Studio 프로젝트 템플릿)
-          href: folder-element-visual-studio-project-templates.md
-        - name: FullClassName 요소(Visual Studio 템플릿 마법사 확장)
-          href: fullclassname-element-visual-studio-template-wizard-extension.md
-        - name: Hidden 요소(Visual Studio 템플릿)
-          href: hidden-element-visual-studio-templates.md
-        - name: Icon 요소(Visual Studio 템플릿)
-          href: icon-element-visual-studio-templates.md
-        - name: LocationField 요소(Visual Studio 프로젝트 템플릿)
-          href: locationfield-element-visual-studio-project-templates.md
-        - name: LocationFieldMRUPrefix 요소(Visual Studio 템플릿)
-          href: locationfieldmruprefix-element-visual-studio-templates.md
-        - name: MaxFrameworkVersion 요소(Visual Studio 템플릿)
-          href: maxframeworkversion-element-visual-studio-templates.md
-        - name: Name 요소(Visual Studio 템플릿)
-          href: name-element-visual-studio-templates.md
-        - name: NumberOfParentCategoriesToRollUp(Visual Studio 템플릿)
-          href: numberofparentcategoriestorollup-visual-studio-templates.md
-        - name: PreviewImage 요소(Visual Studio 템플릿)
-          href: previewimage-element-visual-studio-templates.md
-        - name: Project 요소(Visual Studio 템플릿)
-          href: project-element-visual-studio-templates.md
-        - name: ProjectCollection 요소(Visual Studio 템플릿)
-          href: projectcollection-element-visual-studio-templates.md
-        - name: ProjectItem 요소(Visual Studio 프로젝트 템플릿)
-          href: projectitem-element-visual-studio-project-templates.md
-        - name: ProjectItem 요소(Visual Studio 항목 템플릿)
-          href: projectitem-element-visual-studio-item-templates.md
-        - name: ProjectSubType 요소(Visual Studio 템플릿)
-          href: projectsubtype-element-visual-studio-templates.md
-        - name: ProjectTemplateLink 요소(Visual Studio 템플릿)
-          href: projecttemplatelink-element-visual-studio-templates.md
-        - name: ProjectType 요소(Visual Studio 템플릿)
-          href: projecttype-element-visual-studio-templates.md
-        - name: PromptForSaveOnCreation 요소(Visual Studio 템플릿)
-          href: promptforsaveoncreation-element-visual-studio-templates.md
-        - name: ProvideDefaultName 요소(Visual Studio 템플릿)
-          href: providedefaultname-element-visual-studio-templates.md
-        - name: Reference 요소(Visual Studio 템플릿)
-          href: reference-element-visual-studio-templates.md
-        - name: References 요소(Visual Studio 템플릿)
-          href: references-element-visual-studio-templates.md
-        - name: RequiredFrameworkVersion 요소(Visual Studio 템플릿)
-          href: requiredframeworkversion-element-visual-studio-templates.md
-        - name: RequiredPlatformVersion 요소(Visual Studio 템플릿)
-          href: requiredplatformversion-element-visual-studio-templates.md
-        - name: SDKReference 요소(Visual Studio 템플릿)
-          href: sdkreference-element-visual-studio-templates.md
-        - name: ShowByDefault(Visual Studio 템플릿)
-          href: showbydefault-visual-studio-templates.md
-        - name: SolutionFolder 요소(Visual Studio 템플릿)
-          href: solutionfolder-element-visual-studio-templates.md
-        - name: SortOrder 요소(Visual Studio 템플릿)
-          href: sortorder-element-visual-studio-templates.md
-        - name: SupportsCodeSeparation 요소(Visual Studio 템플릿)
-          href: supportscodeseparation-element-visual-studio-templates.md
-        - name: SupportsLanguageDropDown 요소(Visual Studio 템플릿)
-          href: supportslanguagedropdown-element-visual-studio-templates.md
-        - name: SupportsMasterPage 요소(Visual Studio 템플릿)
-          href: supportsmasterpage-element-visual-studio-templates.md
-        - name: TargetPlatformName 요소(Visual Studio 템플릿)
-          href: targetplatformname-element-visual-studio-templates.md
-        - name: TemplateContent 요소(Visual Studio 템플릿)
-          href: templatecontent-element-visual-studio-templates.md
-        - name: TemplateData 요소(Visual Studio 템플릿)
-          href: templatedata-element-visual-studio-templates.md
-        - name: TemplateGroupID 요소(Visual Studio 템플릿)
-          href: templategroupid-element-visual-studio-templates.md
-        - name: TemplateID 요소(Visual Studio 템플릿)
-          href: templateid-element-visual-studio-templates.md
-        - name: VSTemplate 요소(Visual Studio 템플릿)
-          href: vstemplate-element-visual-studio-templates.md
-        - name: WizardData 요소(Visual Studio 템플릿)
-          href: wizarddata-element-visual-studio-templates.md
-        - name: WizardExtension 요소(Visual Studio 템플릿)
-          href: wizardextension-element-visual-studio-templates.md
-    - name: Visual Studio 템플릿 매니페스트 스키마 참조
-      href: visual-studio-template-manifest-schema-reference.md
-- name: 사용자 설정 및 옵션 확장
-  items:
+          items:
+            - name: Visual Studio 템플릿 스키마 참조
+              href: visual-studio-template-schema-reference.md
+            - name: AppliesTo 요소(Visual Studio 템플릿)
+              href: appliesto-element-visual-studio-templates.md
+            - name: Assembly 요소(Visual Studio 템플릿)
+              href: assembly-element-visual-studio-templates.md
+            - name: Assembly 요소(Visual Studio 템플릿 마법사 확장)
+              href: assembly-element-visual-studio-template-wizard-extension.md
+            - name: BuildOnLoad 특성 및 요소(Visual Studio 템플릿)
+              href: buildonload-visual-studio-templates.md
+            - name: BuildProjectOnload 요소(Visual Studio 템플릿)
+              href: buildprojectonload-element-visual-studio-templates.md
+            - name: CreateInPlace(Visual Studio 템플릿)
+              href: createinplace-visual-studio-templates.md
+            - name: CreateNewFolder 요소(Visual Studio 템플릿)
+              href: createnewfolder-element-visual-studio-templates.md
+            - name: CustomDataSignature 요소(Visual Studio 템플릿)
+              href: customdatasignature-element-visual-studio-templates.md
+            - name: CustomParameter 요소(Visual Studio 템플릿)
+              href: customparameter-element-visual-studio-templates.md
+            - name: CustomParameters 요소(Visual Studio 템플릿)
+              href: customparameters-element-visual-studio-templates.md
+            - name: DefaultName 요소(Visual Studio 템플릿)
+              href: defaultname-element-visual-studio-templates.md
+            - name: Description 요소(Visual Studio 템플릿)
+              href: description-element-visual-studio-templates.md
+            - name: EnableEditOfLocationField 요소(Visual Studio 템플릿)
+              href: enableeditoflocationfield-element-visual-studio-templates.md
+            - name: EnableLocationBrowseButton 요소(Visual Studio 템플릿)
+              href: enablelocationbrowsebutton-element-visual-studio-templates.md
+            - name: Folder 요소(Visual Studio 프로젝트 템플릿)
+              href: folder-element-visual-studio-project-templates.md
+            - name: FullClassName 요소(Visual Studio 템플릿 마법사 확장)
+              href: fullclassname-element-visual-studio-template-wizard-extension.md
+            - name: Hidden 요소(Visual Studio 템플릿)
+              href: hidden-element-visual-studio-templates.md
+            - name: Icon 요소(Visual Studio 템플릿)
+              href: icon-element-visual-studio-templates.md
+            - name: LocationField 요소(Visual Studio 프로젝트 템플릿)
+              href: locationfield-element-visual-studio-project-templates.md
+            - name: LocationFieldMRUPrefix 요소(Visual Studio 템플릿)
+              href: locationfieldmruprefix-element-visual-studio-templates.md
+            - name: MaxFrameworkVersion 요소(Visual Studio 템플릿)
+              href: maxframeworkversion-element-visual-studio-templates.md
+            - name: Name 요소(Visual Studio 템플릿)
+              href: name-element-visual-studio-templates.md
+            - name: NumberOfParentCategoriesToRollUp(Visual Studio 템플릿)
+              href: numberofparentcategoriestorollup-visual-studio-templates.md
+            - name: PreviewImage 요소(Visual Studio 템플릿)
+              href: previewimage-element-visual-studio-templates.md
+            - name: Project 요소(Visual Studio 템플릿)
+              href: project-element-visual-studio-templates.md
+            - name: ProjectCollection 요소(Visual Studio 템플릿)
+              href: projectcollection-element-visual-studio-templates.md
+            - name: ProjectItem 요소(Visual Studio 프로젝트 템플릿)
+              href: projectitem-element-visual-studio-project-templates.md
+            - name: ProjectItem 요소(Visual Studio 항목 템플릿)
+              href: projectitem-element-visual-studio-item-templates.md
+            - name: ProjectSubType 요소(Visual Studio 템플릿)
+              href: projectsubtype-element-visual-studio-templates.md
+            - name: ProjectTemplateLink 요소(Visual Studio 템플릿)
+              href: projecttemplatelink-element-visual-studio-templates.md
+            - name: ProjectType 요소(Visual Studio 템플릿)
+              href: projecttype-element-visual-studio-templates.md
+            - name: PromptForSaveOnCreation 요소(Visual Studio 템플릿)
+              href: promptforsaveoncreation-element-visual-studio-templates.md
+            - name: ProvideDefaultName 요소(Visual Studio 템플릿)
+              href: providedefaultname-element-visual-studio-templates.md
+            - name: Reference 요소(Visual Studio 템플릿)
+              href: reference-element-visual-studio-templates.md
+            - name: References 요소(Visual Studio 템플릿)
+              href: references-element-visual-studio-templates.md
+            - name: RequiredFrameworkVersion 요소(Visual Studio 템플릿)
+              href: requiredframeworkversion-element-visual-studio-templates.md
+            - name: RequiredPlatformVersion 요소(Visual Studio 템플릿)
+              href: requiredplatformversion-element-visual-studio-templates.md
+            - name: SDKReference 요소(Visual Studio 템플릿)
+              href: sdkreference-element-visual-studio-templates.md
+            - name: ShowByDefault(Visual Studio 템플릿)
+              href: showbydefault-visual-studio-templates.md
+            - name: SolutionFolder 요소(Visual Studio 템플릿)
+              href: solutionfolder-element-visual-studio-templates.md
+            - name: SortOrder 요소(Visual Studio 템플릿)
+              href: sortorder-element-visual-studio-templates.md
+            - name: SupportsCodeSeparation 요소(Visual Studio 템플릿)
+              href: supportscodeseparation-element-visual-studio-templates.md
+            - name: SupportsLanguageDropDown 요소(Visual Studio 템플릿)
+              href: supportslanguagedropdown-element-visual-studio-templates.md
+            - name: SupportsMasterPage 요소(Visual Studio 템플릿)
+              href: supportsmasterpage-element-visual-studio-templates.md
+            - name: TargetPlatformName 요소(Visual Studio 템플릿)
+              href: targetplatformname-element-visual-studio-templates.md
+            - name: TemplateContent 요소(Visual Studio 템플릿)
+              href: templatecontent-element-visual-studio-templates.md
+            - name: TemplateData 요소(Visual Studio 템플릿)
+              href: templatedata-element-visual-studio-templates.md
+            - name: TemplateGroupID 요소(Visual Studio 템플릿)
+              href: templategroupid-element-visual-studio-templates.md
+            - name: TemplateID 요소(Visual Studio 템플릿)
+              href: templateid-element-visual-studio-templates.md
+            - name: VSTemplate 요소(Visual Studio 템플릿)
+              href: vstemplate-element-visual-studio-templates.md
+            - name: WizardData 요소(Visual Studio 템플릿)
+              href: wizarddata-element-visual-studio-templates.md
+            - name: WizardExtension 요소(Visual Studio 템플릿)
+              href: wizardextension-element-visual-studio-templates.md
+        - name: Visual Studio 템플릿 매니페스트 스키마 참조
+          href: visual-studio-template-manifest-schema-reference.md
     - name: 사용자 설정 및 옵션 확장
-      href: extending-user-settings-and-options.md
-    - name: 옵션 페이지 만들기
-      href: creating-an-options-page.md
-    - name: 설정 범주 만들기
-      href: creating-a-settings-category.md
-    - name: 설정 저장소 사용
-      href: using-the-settings-store.md
-    - name: 설정 저장소에서 서비스 정보 가져오기
-      href: getting-service-information-from-the-settings-store.md
-    - name: 사용자 설정 저장소에 쓰기
-      href: writing-to-the-user-settings-store.md
-- name: 속성 및 속성 창 확장
-  items:
+      items:
+        - name: 사용자 설정 및 옵션 확장
+          href: extending-user-settings-and-options.md
+        - name: 옵션 페이지 만들기
+          href: creating-an-options-page.md
+        - name: 설정 범주 만들기
+          href: creating-a-settings-category.md
+        - name: 설정 저장소 사용
+          href: using-the-settings-store.md
+        - name: 설정 저장소에서 서비스 정보 가져오기
+          href: getting-service-information-from-the-settings-store.md
+        - name: 사용자 설정 저장소에 쓰기
+          href: writing-to-the-user-settings-store.md
     - name: 속성 및 속성 창 확장
-      href: extending-properties-and-the-property-window.md
-    - name: 속성 창에 속성 노출
-      href: exposing-properties-to-the-properties-window.md
-    - name: 프로젝트 속성 가져오기
-      href: getting-project-properties.md
-- name: Visual Studio의 다른 부분 확장
-  items:
+      items:
+        - name: 속성 및 속성 창 확장
+          href: extending-properties-and-the-property-window.md
+        - name: 속성 창에 속성 노출
+          href: exposing-properties-to-the-properties-window.md
+        - name: 프로젝트 속성 가져오기
+          href: getting-project-properties.md
     - name: Visual Studio의 다른 부분 확장
-      href: extending-other-parts-of-visual-studio.md
-    - name: VSPackage로 확장 만들기
-      href: creating-an-extension-with-a-vspackage.md
-    - name: WPF 도구 상자 컨트롤 만들기
-      href: creating-a-wpf-toolbox-control.md
-    - name: Windows Forms 도구 상자 컨트롤 만들기
-      href: creating-a-windows-forms-toolbox-control.md
-    - name: 상태 표시줄 확장
-      href: extending-the-status-bar.md
-    - name: 사용자 지정 시작 페이지 만들기
       items:
+        - name: Visual Studio의 다른 부분 확장
+          href: extending-other-parts-of-visual-studio.md
+        - name: VSPackage로 확장 만들기
+          href: creating-an-extension-with-a-vspackage.md
+        - name: WPF 도구 상자 컨트롤 만들기
+          href: creating-a-wpf-toolbox-control.md
+        - name: Windows Forms 도구 상자 컨트롤 만들기
+          href: creating-a-windows-forms-toolbox-control.md
+        - name: 상태 표시줄 확장
+          href: extending-the-status-bar.md
         - name: 사용자 지정 시작 페이지 만들기
-          href: creating-a-custom-start-page.md
-        - name: '연습: 시작 페이지에 사용자 지정 XAML 추가'
-          href: walkthrough-adding-custom-xaml-to-the-start-page.md
-        - name: 시작 페이지에 사용자 컨트롤 추가
-          href: adding-user-control-to-the-start-page.md
-        - name: 시작 페이지에 Visual Studio 명령 추가
-          href: adding-visual-studio-commands-to-a-start-page.md
-        - name: '연습: 시작 페이지에 사용자 설정 저장'
-          href: walkthrough-saving-user-settings-on-a-start-page.md
-        - name: 사용자 지정 시작 페이지 배포
-          href: deploying-custom-start-pages.md
-    - name: 활동 로그 사용
-      href: how-to-use-the-activity-log.md
-- name: Visual Studio C++ 프로젝트 확장성
-  href: visual-cpp-project-extensibility.md
-- name: Visual Studio 사용자 환경 지침
-  items:
+          items:
+            - name: 사용자 지정 시작 페이지 만들기
+              href: creating-a-custom-start-page.md
+            - name: '연습: 시작 페이지에 사용자 지정 XAML 추가'
+              href: walkthrough-adding-custom-xaml-to-the-start-page.md
+            - name: 시작 페이지에 사용자 컨트롤 추가
+              href: adding-user-control-to-the-start-page.md
+            - name: 시작 페이지에 Visual Studio 명령 추가
+              href: adding-visual-studio-commands-to-a-start-page.md
+            - name: '연습: 시작 페이지에 사용자 설정 저장'
+              href: walkthrough-saving-user-settings-on-a-start-page.md
+            - name: 사용자 지정 시작 페이지 배포
+              href: deploying-custom-start-pages.md
+        - name: 활동 로그 사용
+          href: how-to-use-the-activity-log.md
+    - name: Visual Studio C++ 프로젝트 확장성
+      href: visual-cpp-project-extensibility.md
     - name: Visual Studio 사용자 환경 지침
-      href: ux-guidelines/visual-studio-user-experience-guidelines.md
-    - name: UX Essentials
-      href: ux-guidelines/ux-essentials-for-visual-studio.md
-    - name: 글꼴 및 서식 지정
-      href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
-    - name: 색 및 스타일 지정
       items:
+        - name: Visual Studio 사용자 환경 지침
+          href: ux-guidelines/visual-studio-user-experience-guidelines.md
+        - name: UX Essentials
+          href: ux-guidelines/ux-essentials-for-visual-studio.md
+        - name: 글꼴 및 서식 지정
+          href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
         - name: 색 및 스타일 지정
-          href: ux-guidelines/colors-and-styling-for-visual-studio.md
-        - name: 공유 색
-          href: ux-guidelines/shared-colors-for-visual-studio.md
-        - name: 색 값 참조
-          href: ux-guidelines/color-value-reference-for-visual-studio.md
-    - name: 이미지 및 아이콘
-      items:
+          items:
+            - name: 색 및 스타일 지정
+              href: ux-guidelines/colors-and-styling-for-visual-studio.md
+            - name: 공유 색
+              href: ux-guidelines/shared-colors-for-visual-studio.md
+            - name: 색 값 참조
+              href: ux-guidelines/color-value-reference-for-visual-studio.md
         - name: 이미지 및 아이콘
-          href: ux-guidelines/images-and-icons-for-visual-studio.md
-        - name: 시각적 언어 사전
-          href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
-    - name: 메뉴 및 명령
-      href: ux-guidelines/menus-and-commands-for-visual-studio.md
-    - name: 상호 작용 패턴
-      items:
+          items:
+            - name: 이미지 및 아이콘
+              href: ux-guidelines/images-and-icons-for-visual-studio.md
+            - name: 시각적 언어 사전
+              href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+        - name: 메뉴 및 명령
+          href: ux-guidelines/menus-and-commands-for-visual-studio.md
         - name: 상호 작용 패턴
-          href: ux-guidelines/interaction-patterns-for-visual-studio.md
-        - name: 애플리케이션 패턴
-          href: ux-guidelines/application-patterns-for-visual-studio.md
-        - name: 일반적인 컨트롤 패턴
-          href: ux-guidelines/common-control-patterns-for-visual-studio.md
-        - name: 복합 패턴
-          href: ux-guidelines/composite-patterns-for-visual-studio.md
-    - name: UI 텍스트 및 도움말
-      href: ux-guidelines/ui-text-and-help-for-visual-studio.md
-    - name: 대화 상자 레이아웃
-      href: ux-guidelines/layout-for-visual-studio.md
-    - name: 알림 및 진행
-      href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: 애니메이션
-      href: ux-guidelines/animations-for-visual-studio.md
-    - name: 평가 도구
-      href: ux-guidelines/evaluation-tools-for-visual-studio.md
-    - name: 모니터별 인식 지원
-      href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: DPI 문제 해결
-  href: addressing-dpi-issues2.md
-- name: 이미지 서비스 및 카탈로그
-  href: image-service-and-catalog.md
-- name: 서비스 사용 및 제공
-  items:
+          items:
+            - name: 상호 작용 패턴
+              href: ux-guidelines/interaction-patterns-for-visual-studio.md
+            - name: 애플리케이션 패턴
+              href: ux-guidelines/application-patterns-for-visual-studio.md
+            - name: 일반적인 컨트롤 패턴
+              href: ux-guidelines/common-control-patterns-for-visual-studio.md
+            - name: 복합 패턴
+              href: ux-guidelines/composite-patterns-for-visual-studio.md
+        - name: UI 텍스트 및 도움말
+          href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+        - name: 대화 상자 레이아웃
+          href: ux-guidelines/layout-for-visual-studio.md
+        - name: 알림 및 진행
+          href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+        - name: 애니메이션
+          href: ux-guidelines/animations-for-visual-studio.md
+        - name: 평가 도구
+          href: ux-guidelines/evaluation-tools-for-visual-studio.md
+        - name: 모니터별 인식 지원
+          href: ux-guidelines/per-monitor-awareness-extenders.md
+    - name: DPI 문제 해결
+      href: addressing-dpi-issues2.md
+    - name: 이미지 서비스 및 카탈로그
+      href: image-service-and-catalog.md
     - name: 서비스 사용 및 제공
-      href: using-and-providing-services.md
-    - name: 서비스 가져오기
-      href: how-to-get-a-service.md
-    - name: 서비스 제공
-      href: how-to-provide-a-service.md
-    - name: 비동기 Visual Studio 서비스 제공
-      href: how-to-provide-an-asynchronous-visual-studio-service.md
-    - name: 서비스 문제 해결
-      href: how-to-troubleshoot-services.md
-- name: VSPackage 관리
-  items:
+      items:
+        - name: 서비스 사용 및 제공
+          href: using-and-providing-services.md
+        - name: 서비스 가져오기
+          href: how-to-get-a-service.md
+        - name: 서비스 제공
+          href: how-to-provide-a-service.md
+        - name: 비동기 Visual Studio 서비스 제공
+          href: how-to-provide-an-asynchronous-visual-studio-service.md
+        - name: 서비스 문제 해결
+          href: how-to-troubleshoot-services.md
     - name: VSPackage 관리
-      href: managing-vspackages.md
-    - name: 실험적 인스턴스
-      href: the-experimental-instance.md
-    - name: VSPackage 등록 및 등록 취소
-      href: registering-and-unregistering-vspackages.md
-    - name: VSPackage 로드
-      href: loading-vspackages.md
-    - name: 관리 코드에서 다중 스레드 관리
-      href: managing-multiple-threads-in-managed-code.md
-    - name: AsyncPackage를 사용하여 백그라운드에서 VSPackage 로드
-      href: how-to-use-asyncpackage-to-load-vspackages-in-the-background.md
-    - name: Visual Studio 확장에 대해 규칙 기반 UI 컨텍스트 사용
-      href: how-to-use-rule-based-ui-context-for-visual-studio-extensions.md
-    - name: 확장 성능 진단
-      href: how-to-diagnose-extension-performance.md
-    - name: 확장으로 인해 발생한 진단 UI 지연
-      href: how-to-diagnose-ui-delays-caused-by-extensions.md
-    - name: VSPackage 문제 해결
-      href: troubleshooting-vspackages.md
-- name: Visual Studio 확장 배송
-  items:
+      items:
+        - name: VSPackage 관리
+          href: managing-vspackages.md
+        - name: 실험적 인스턴스
+          href: the-experimental-instance.md
+        - name: VSPackage 등록 및 등록 취소
+          href: registering-and-unregistering-vspackages.md
+        - name: VSPackage 로드
+          href: loading-vspackages.md
+        - name: 관리 코드에서 다중 스레드 관리
+          href: managing-multiple-threads-in-managed-code.md
+        - name: AsyncPackage를 사용하여 백그라운드에서 VSPackage 로드
+          href: how-to-use-asyncpackage-to-load-vspackages-in-the-background.md
+        - name: Visual Studio 확장에 대해 규칙 기반 UI 컨텍스트 사용
+          href: how-to-use-rule-based-ui-context-for-visual-studio-extensions.md
+        - name: 확장 성능 진단
+          href: how-to-diagnose-extension-performance.md
+        - name: 확장으로 인해 발생한 진단 UI 지연
+          href: how-to-diagnose-ui-delays-caused-by-extensions.md
+        - name: VSPackage 문제 해결
+          href: troubleshooting-vspackages.md
     - name: Visual Studio 확장 배송
-      href: shipping-visual-studio-extensions.md
-    - name: VSIX 프로젝트 템플릿
-      href: vsix-project-template.md
-    - name: VSIX 프로젝트 템플릿 시작
-      href: getting-started-with-the-vsix-project-template.md
-    - name: '연습: Visual Studio 확장 기능 게시'
-      href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: '연습: 명령줄을 통한 Visual Studio 확장 기능 게시'
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: '연습: 확장 팩 만들기'
-      href: walkthough-create-extension-pack.md
-    - name: VSIX 패키지에 종속성 추가
-      href: how-to-add-a-dependency-to-a-vsix-package.md
-    - name: VSIX 패키지 분석
       items:
+        - name: Visual Studio 확장 배송
+          href: shipping-visual-studio-extensions.md
+        - name: VSIX 프로젝트 템플릿
+          href: vsix-project-template.md
+        - name: VSIX 프로젝트 템플릿 시작
+          href: getting-started-with-the-vsix-project-template.md
+        - name: '연습: Visual Studio 확장 기능 게시'
+          href: walkthrough-publishing-a-visual-studio-extension.md
+        - name: '연습: 명령줄을 통한 Visual Studio 확장 기능 게시'
+          href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+        - name: '연습: 확장 팩 만들기'
+          href: walkthough-create-extension-pack.md
+        - name: VSIX 패키지에 종속성 추가
+          href: how-to-add-a-dependency-to-a-vsix-package.md
         - name: VSIX 패키지 분석
-          href: anatomy-of-a-vsix-package.md
-        - name: VSIX 확장 스키마 2.0 참조
-          href: vsix-extension-schema-2-0-reference.md
-        - name: '[Content_types].xml 파일의 구조'
-          href: the-structure-of-the-content-types-dot-xml-file.md
-        - name: VSIX 매니페스트 디자이너
-          href: vsix-manifest-designer.md
-    - name: VSIX 패키지 지역화
-      items:
+          items:
+            - name: VSIX 패키지 분석
+              href: anatomy-of-a-vsix-package.md
+            - name: VSIX 확장 스키마 2.0 참조
+              href: vsix-extension-schema-2-0-reference.md
+            - name: '[Content_types].xml 파일의 구조'
+              href: the-structure-of-the-content-types-dot-xml-file.md
+            - name: VSIX 매니페스트 디자이너
+              href: vsix-manifest-designer.md
         - name: VSIX 패키지 지역화
-          href: localizing-vsix-packages.md
-        - name: VSIX 언어 팩 스키마 2.0 참조
-          href: vsix-language-pack-schema-2-0-reference.md
-    - name: Visual Studio 확장 기능 업데이트
-      href: how-to-update-a-visual-studio-extension.md
-    - name: Windows Installer 배포에 대한 확장 준비
-      href: preparing-extensions-for-windows-installer-deployment.md
-    - name: VSIX 패키지 서명
-      href: signing-vsix-packages.md
-    - name: Private Galleries
-      items:
+          items:
+            - name: VSIX 패키지 지역화
+              href: localizing-vsix-packages.md
+            - name: VSIX 언어 팩 스키마 2.0 참조
+              href: vsix-language-pack-schema-2-0-reference.md
+        - name: Visual Studio 확장 기능 업데이트
+          href: how-to-update-a-visual-studio-extension.md
+        - name: Windows Installer 배포에 대한 확장 준비
+          href: preparing-extensions-for-windows-installer-deployment.md
+        - name: VSIX 패키지 서명
+          href: signing-vsix-packages.md
         - name: Private Galleries
-          href: private-galleries.md
-        - name: 전용 갤러리에 대한 Atom 피드 만들기
-          href: how-to-create-an-atom-feed-for-a-private-gallery.md
-        - name: 레지스트리 설정을 사용하여 전용 갤러리 관리
-          href: how-to-manage-a-private-gallery-by-using-registry-settings.md
-    - name: 여러 버전의 Visual Studio 지원
-      items:
+          items:
+            - name: Private Galleries
+              href: private-galleries.md
+            - name: 전용 갤러리에 대한 Atom 피드 만들기
+              href: how-to-create-an-atom-feed-for-a-private-gallery.md
+            - name: 레지스트리 설정을 사용하여 전용 갤러리 관리
+              href: how-to-manage-a-private-gallery-by-using-registry-settings.md
         - name: 여러 버전의 Visual Studio 지원
-          href: supporting-multiple-versions-of-visual-studio.md
-        - name: 공유 및 버전 관리 VSPackage 중에서 선택
-          href: choosing-between-shared-and-versioned-vspackages.md
-        - name: 병렬 배포를 위해 파일 이름 확장명 등록
           items:
+            - name: 여러 버전의 Visual Studio 지원
+              href: supporting-multiple-versions-of-visual-studio.md
+            - name: 공유 및 버전 관리 VSPackage 중에서 선택
+              href: choosing-between-shared-and-versioned-vspackages.md
             - name: 병렬 배포를 위해 파일 이름 확장명 등록
-              href: registering-file-name-extensions-for-side-by-side-deployments.md
-            - name: 파일 확장명 정보
-              href: about-file-name-extensions.md
-            - name: 파일 이름 확장명에 대한 파일 처리기 지정
-              href: specifying-file-handlers-for-file-name-extensions.md
-            - name: 파일 이름 확장명에 대한 동사 등록
-              href: registering-verbs-for-file-name-extensions.md
-            - name: 병렬 파일 연결 관리
-              href: managing-side-by-side-file-associations.md
-    - name: Visual Studio 찾기
-      href: locating-visual-studio.md
-    - name: DTE를 사용하여 Visual Studio 시작
-      href: launch-visual-studio-dte.md
-- name: Visual Studio SDK 기본 사항
-  href: internals/toc.yml
-- name: Visual Studio SDK 지원
-  href: support-for-the-visual-studio-sdk.md
-- name: Visual Studio SDK 참조
-  items:
+              items:
+                - name: 병렬 배포를 위해 파일 이름 확장명 등록
+                  href: registering-file-name-extensions-for-side-by-side-deployments.md
+                - name: 파일 확장명 정보
+                  href: about-file-name-extensions.md
+                - name: 파일 이름 확장명에 대한 파일 처리기 지정
+                  href: specifying-file-handlers-for-file-name-extensions.md
+                - name: 파일 이름 확장명에 대한 동사 등록
+                  href: registering-verbs-for-file-name-extensions.md
+                - name: 병렬 파일 연결 관리
+                  href: managing-side-by-side-file-associations.md
+        - name: Visual Studio 찾기
+          href: locating-visual-studio.md
+        - name: DTE를 사용하여 Visual Studio 시작
+          href: launch-visual-studio-dte.md
+    - name: Visual Studio SDK 기본 사항
+      href: internals/toc.yml
+    - name: Visual Studio SDK 지원
+      href: support-for-the-visual-studio-sdk.md
     - name: Visual Studio SDK 참조
-      href: visual-studio-sdk-reference.md
-    - name: IntelliSenseHostFlags
-      href: intellisensehostflags.md
-    - name: VSCT XML 스키마 참조
       items:
+        - name: Visual Studio SDK 참조
+          href: visual-studio-sdk-reference.md
+        - name: IntelliSenseHostFlags
+          href: intellisensehostflags.md
         - name: VSCT XML 스키마 참조
-          href: vsct-xml-schema-reference.md
-        - name: CommandTable 요소
-          href: commandtable-element.md
-        - name: Extern 요소
-          href: extern-element.md
-        - name: Include 요소
-          href: include-element.md
-        - name: Define 요소
-          href: define-element.md
-        - name: Commands 요소
           items:
+            - name: VSCT XML 스키마 참조
+              href: vsct-xml-schema-reference.md
+            - name: CommandTable 요소
+              href: commandtable-element.md
+            - name: Extern 요소
+              href: extern-element.md
+            - name: Include 요소
+              href: include-element.md
+            - name: Define 요소
+              href: define-element.md
             - name: Commands 요소
-              href: commands-element.md
-            - name: Menus 요소
               items:
+                - name: Commands 요소
+                  href: commands-element.md
                 - name: Menus 요소
-                  href: menus-element.md
-                - name: Menu 요소
-                  href: menu-element.md
-            - name: Groups 요소
-              items:
+                  items:
+                    - name: Menus 요소
+                      href: menus-element.md
+                    - name: Menu 요소
+                      href: menu-element.md
                 - name: Groups 요소
-                  href: groups-element.md
-                - name: Group 요소
-                  href: group-element.md
-            - name: Buttons 요소
-              items:
+                  items:
+                    - name: Groups 요소
+                      href: groups-element.md
+                    - name: Group 요소
+                      href: group-element.md
                 - name: Buttons 요소
-                  href: buttons-element.md
-                - name: Button 요소
-                  href: button-element.md
-            - name: Bitmaps 요소
-              items:
+                  items:
+                    - name: Buttons 요소
+                      href: buttons-element.md
+                    - name: Button 요소
+                      href: button-element.md
                 - name: Bitmaps 요소
-                  href: bitmaps-element.md
-                - name: Bitmap 요소
-                  href: bitmap-element.md
-            - name: Combos 요소
-              items:
+                  items:
+                    - name: Bitmaps 요소
+                      href: bitmaps-element.md
+                    - name: Bitmap 요소
+                      href: bitmap-element.md
                 - name: Combos 요소
-                  href: combos-element.md
-                - name: Combo 요소
-                  href: combo-element.md
-        - name: CommandPlacements 요소
-          items:
+                  items:
+                    - name: Combos 요소
+                      href: combos-element.md
+                    - name: Combo 요소
+                      href: combo-element.md
             - name: CommandPlacements 요소
-              href: commandplacements-element.md
-            - name: CommandPlacement 요소
-              href: commandplacement-element.md
-        - name: VisibilityConstraints 요소
-          items:
-            - name: VisibilityConstraints 요소
-              href: visibilityconstraints-element.md
-            - name: VisibilityItem 요소
-              href: visibilityitem-element.md
-        - name: KeyBindings 요소
-          items:
-            - name: KeyBindings 요소
-              href: keybindings-element.md
-            - name: KeyBinding 요소
-              href: keybinding-element.md
-        - name: UsedCommands 요소
-          items:
-            - name: UsedCommands 요소
-              href: usedcommands-element.md
-            - name: UsedCommand 요소
-              href: usedcommand-element.md
-        - name: 부모 요소
-          href: parent-element.md
-        - name: Icon 요소
-          href: icon-element.md
-        - name: Strings 요소
-          items:
-            - name: Strings 요소
-              href: strings-element.md
-            - name: ButtonText 요소
-              href: buttontext-element.md
-            - name: CommandName 요소
-              href: commandname-element.md
-        - name: Command Flag 요소
-          href: command-flag-element.md
-        - name: Symbols 요소
-          items:
-            - name: Symbols 요소
-              href: symbols-element.md
-            - name: GuidSymbol 요소
               items:
+                - name: CommandPlacements 요소
+                  href: commandplacements-element.md
+                - name: CommandPlacement 요소
+                  href: commandplacement-element.md
+            - name: VisibilityConstraints 요소
+              items:
+                - name: VisibilityConstraints 요소
+                  href: visibilityconstraints-element.md
+                - name: VisibilityItem 요소
+                  href: visibilityitem-element.md
+            - name: KeyBindings 요소
+              items:
+                - name: KeyBindings 요소
+                  href: keybindings-element.md
+                - name: KeyBinding 요소
+                  href: keybinding-element.md
+            - name: UsedCommands 요소
+              items:
+                - name: UsedCommands 요소
+                  href: usedcommands-element.md
+                - name: UsedCommand 요소
+                  href: usedcommand-element.md
+            - name: 부모 요소
+              href: parent-element.md
+            - name: Icon 요소
+              href: icon-element.md
+            - name: Strings 요소
+              items:
+                - name: Strings 요소
+                  href: strings-element.md
+                - name: ButtonText 요소
+                  href: buttontext-element.md
+                - name: CommandName 요소
+                  href: commandname-element.md
+            - name: Command Flag 요소
+              href: command-flag-element.md
+            - name: Symbols 요소
+              items:
+                - name: Symbols 요소
+                  href: symbols-element.md
                 - name: GuidSymbol 요소
-                  href: guidsymbol-element.md
-                - name: IDSymbol 요소
-                  href: idsymbol-element.md
-        - name: VSCT XML 스키마 조건부 특성
-          href: vsct-xml-schema-conditional-attributes.md
-    - name: Visual Studio SDK의 GUID 및 상수
-      items:
+                  items:
+                    - name: GuidSymbol 요소
+                      href: guidsymbol-element.md
+                    - name: IDSymbol 요소
+                      href: idsymbol-element.md
+            - name: VSCT XML 스키마 조건부 특성
+              href: vsct-xml-schema-conditional-attributes.md
         - name: Visual Studio SDK의 GUID 및 상수
-          href: guids-and-constants-in-the-visual-studio-sdk.md
-        - name: IDE GUID
-          href: ide-guids.md
-        - name: IDE 상수
-          href: ide-constants.md
-    - name: 관리 코드의 COM 상수
-      href: com-constants-in-managed-code.md
-    - name: 소스 제어 플러그 인
-      items:
+          items:
+            - name: Visual Studio SDK의 GUID 및 상수
+              href: guids-and-constants-in-the-visual-studio-sdk.md
+            - name: IDE GUID
+              href: ide-guids.md
+            - name: IDE 상수
+              href: ide-constants.md
+        - name: 관리 코드의 COM 상수
+          href: com-constants-in-managed-code.md
         - name: 소스 제어 플러그 인
-          href: source-control-plug-ins.md
-        - name: 소스 제어 플러그 인 API 함수
           items:
+            - name: 소스 제어 플러그 인
+              href: source-control-plug-ins.md
             - name: 소스 제어 플러그 인 API 함수
-              href: source-control-plug-in-api-functions.md
-            - name: SccAdd 함수
-              href: sccadd-function.md
-            - name: SccAddFilesFromSCC 함수
-              href: sccaddfilesfromscc-function.md
-            - name: SccAddFromScc 함수
-              href: sccaddfromscc-function.md
-            - name: SccBackgroundGet 함수
-              href: sccbackgroundget-function.md
-            - name: SccBeginBatch 함수
-              href: sccbeginbatch-function.md
-            - name: SccCheckin 함수
-              href: scccheckin-function.md
-            - name: SccCheckout 함수
-              href: scccheckout-function.md
-            - name: SccCloseProject 함수
-              href: scccloseproject-function.md
-            - name: SccCreateSubProject 함수
-              href: scccreatesubproject-function.md
-            - name: SccDiff 함수
-              href: sccdiff-function.md
-            - name: SccDirDiff 함수
-              href: sccdirdiff-function.md
-            - name: SccDirQueryInfo 함수
-              href: sccdirqueryinfo-function.md
-            - name: SccEndBatch 함수
-              href: sccendbatch-function.md
-            - name: SccEnumChangedFiles 함수
-              href: sccenumchangedfiles-function.md
-            - name: SccGet 함수
-              href: sccget-function.md
-            - name: SccGetCommandOptions 함수
-              href: sccgetcommandoptions-function.md
-            - name: SccGetEvents 함수
-              href: sccgetevents-function.md
-            - name: SccGetExtendedCapabilities 함수
-              href: sccgetextendedcapabilities-function.md
-            - name: SccGetParentProjectPath 함수
-              href: sccgetparentprojectpath-function.md
-            - name: SccGetProjPath 함수
-              href: sccgetprojpath-function.md
-            - name: SccGetUserOption 함수
-              href: sccgetuseroption-function.md
-            - name: SccGetVersion 함수
-              href: sccgetversion-function.md
-            - name: SccHistory 함수
-              href: scchistory-function.md
-            - name: SccInitialize 함수
-              href: sccinitialize-function.md
-            - name: SccIsMultiCheckoutEnabled 함수
-              href: sccismulticheckoutenabled-function.md
-            - name: SccOpenProject 함수
-              href: sccopenproject-function.md
-            - name: SccPopulateDirList 함수
-              href: sccpopulatedirlist-function.md
-            - name: SccPopulateList 함수
-              href: sccpopulatelist-function.md
-            - name: SccProperties 함수
-              href: sccproperties-function.md
-            - name: SccQueryChanges 함수
-              href: sccquerychanges-function.md
-            - name: SccQueryInfo 함수
-              href: sccqueryinfo-function.md
-            - name: SccRemove 함수
-              href: sccremove-function.md
-            - name: SccRename 함수
-              href: sccrename-function.md
-            - name: SccRunScc 함수
-              href: sccrunscc-function.md
-            - name: SccSetOption 함수
-              href: sccsetoption-function.md
-            - name: SccUncheckout 함수
-              href: sccuncheckout-function.md
-            - name: SccUninitialize 함수
-              href: sccuninitialize-function.md
-            - name: SccWillCreateSccFile 함수
-              href: sccwillcreatesccfile-function.md
-        - name: IDE에서 구현된 콜백 함수
-          items:
+              items:
+                - name: 소스 제어 플러그 인 API 함수
+                  href: source-control-plug-in-api-functions.md
+                - name: SccAdd 함수
+                  href: sccadd-function.md
+                - name: SccAddFilesFromSCC 함수
+                  href: sccaddfilesfromscc-function.md
+                - name: SccAddFromScc 함수
+                  href: sccaddfromscc-function.md
+                - name: SccBackgroundGet 함수
+                  href: sccbackgroundget-function.md
+                - name: SccBeginBatch 함수
+                  href: sccbeginbatch-function.md
+                - name: SccCheckin 함수
+                  href: scccheckin-function.md
+                - name: SccCheckout 함수
+                  href: scccheckout-function.md
+                - name: SccCloseProject 함수
+                  href: scccloseproject-function.md
+                - name: SccCreateSubProject 함수
+                  href: scccreatesubproject-function.md
+                - name: SccDiff 함수
+                  href: sccdiff-function.md
+                - name: SccDirDiff 함수
+                  href: sccdirdiff-function.md
+                - name: SccDirQueryInfo 함수
+                  href: sccdirqueryinfo-function.md
+                - name: SccEndBatch 함수
+                  href: sccendbatch-function.md
+                - name: SccEnumChangedFiles 함수
+                  href: sccenumchangedfiles-function.md
+                - name: SccGet 함수
+                  href: sccget-function.md
+                - name: SccGetCommandOptions 함수
+                  href: sccgetcommandoptions-function.md
+                - name: SccGetEvents 함수
+                  href: sccgetevents-function.md
+                - name: SccGetExtendedCapabilities 함수
+                  href: sccgetextendedcapabilities-function.md
+                - name: SccGetParentProjectPath 함수
+                  href: sccgetparentprojectpath-function.md
+                - name: SccGetProjPath 함수
+                  href: sccgetprojpath-function.md
+                - name: SccGetUserOption 함수
+                  href: sccgetuseroption-function.md
+                - name: SccGetVersion 함수
+                  href: sccgetversion-function.md
+                - name: SccHistory 함수
+                  href: scchistory-function.md
+                - name: SccInitialize 함수
+                  href: sccinitialize-function.md
+                - name: SccIsMultiCheckoutEnabled 함수
+                  href: sccismulticheckoutenabled-function.md
+                - name: SccOpenProject 함수
+                  href: sccopenproject-function.md
+                - name: SccPopulateDirList 함수
+                  href: sccpopulatedirlist-function.md
+                - name: SccPopulateList 함수
+                  href: sccpopulatelist-function.md
+                - name: SccProperties 함수
+                  href: sccproperties-function.md
+                - name: SccQueryChanges 함수
+                  href: sccquerychanges-function.md
+                - name: SccQueryInfo 함수
+                  href: sccqueryinfo-function.md
+                - name: SccRemove 함수
+                  href: sccremove-function.md
+                - name: SccRename 함수
+                  href: sccrename-function.md
+                - name: SccRunScc 함수
+                  href: sccrunscc-function.md
+                - name: SccSetOption 함수
+                  href: sccsetoption-function.md
+                - name: SccUncheckout 함수
+                  href: sccuncheckout-function.md
+                - name: SccUninitialize 함수
+                  href: sccuninitialize-function.md
+                - name: SccWillCreateSccFile 함수
+                  href: sccwillcreatesccfile-function.md
             - name: IDE에서 구현된 콜백 함수
-              href: callback-functions-implemented-by-the-ide.md
-            - name: LPTEXTOUTPROC
-              href: lptextoutproc.md
-            - name: POPLISTFUNC
-              href: poplistfunc.md
-            - name: QUERYCHANGESFUNC
-              href: querychangesfunc.md
-            - name: POPDIRLISTFUNC
-              href: popdirlistfunc.md
-            - name: OPTNAMECHANGEPFN
-              href: optnamechangepfn.md
-        - name: Enumerators
-          items:
+              items:
+                - name: IDE에서 구현된 콜백 함수
+                  href: callback-functions-implemented-by-the-ide.md
+                - name: LPTEXTOUTPROC
+                  href: lptextoutproc.md
+                - name: POPLISTFUNC
+                  href: poplistfunc.md
+                - name: QUERYCHANGESFUNC
+                  href: querychangesfunc.md
+                - name: POPDIRLISTFUNC
+                  href: popdirlistfunc.md
+                - name: OPTNAMECHANGEPFN
+                  href: optnamechangepfn.md
             - name: Enumerators
-              href: enumerators.md
-            - name: 명령 코드 열거자
-              href: command-code-enumerator.md
-            - name: 메시지 열거자
-              href: message-enumerator.md
-            - name: 파일 상태 코드 열거자
-              href: file-status-code-enumerator.md
-            - name: 디렉터리 상태 코드 열거자
-              href: directory-status-code-enumerator.md
-        - name: 기능 플래그
-          href: capability-flags.md
-        - name: 특정 명령에 사용되는 Bitflag
-          href: bitflags-used-by-specific-commands.md
-        - name: 오류 코드
-          href: error-codes.md
-        - name: 소스 제어 플러그 인을 찾기 위한 키로 사용되는 문자열
-          href: strings-used-as-keys-for-finding-a-source-control-plug-in.md
-        - name: MSSCCPRJ.SCC 파일
-          href: mssccprj-scc-file.md
-        - name: 소스 제어 플러그 인 구현 모범 사례
-          href: best-practices-for-implementing-a-source-control-plug-in.md
-        - name: 문자열 길이에 대한 제한
-          href: restrictions-on-string-lengths.md
-        - name: 소스 제어 플러그 인 용어집
-          href: source-control-plug-in-glossary.md
-        - name: 소스 제어 플러그 인에 대한 호환성 경고 해제
-          href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
-    - name: 명령줄 스위치(Visual Studio SDK)
-      items:
+              items:
+                - name: Enumerators
+                  href: enumerators.md
+                - name: 명령 코드 열거자
+                  href: command-code-enumerator.md
+                - name: 메시지 열거자
+                  href: message-enumerator.md
+                - name: 파일 상태 코드 열거자
+                  href: file-status-code-enumerator.md
+                - name: 디렉터리 상태 코드 열거자
+                  href: directory-status-code-enumerator.md
+            - name: 기능 플래그
+              href: capability-flags.md
+            - name: 특정 명령에 사용되는 Bitflag
+              href: bitflags-used-by-specific-commands.md
+            - name: 오류 코드
+              href: error-codes.md
+            - name: 소스 제어 플러그 인을 찾기 위한 키로 사용되는 문자열
+              href: strings-used-as-keys-for-finding-a-source-control-plug-in.md
+            - name: MSSCCPRJ.SCC 파일
+              href: mssccprj-scc-file.md
+            - name: 소스 제어 플러그 인 구현 모범 사례
+              href: best-practices-for-implementing-a-source-control-plug-in.md
+            - name: 문자열 길이에 대한 제한
+              href: restrictions-on-string-lengths.md
+            - name: 소스 제어 플러그 인 용어집
+              href: source-control-plug-in-glossary.md
+            - name: 소스 제어 플러그 인에 대한 호환성 경고 해제
+              href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
         - name: 명령줄 스위치(Visual Studio SDK)
-          href: command-line-switches-visual-studio-sdk.md
-        - name: VSPackage 개발을 위한 Devenv 명령줄 스위치
-          href: devenv-command-line-switches-for-vspackage-development.md
-        - name: 명령줄 스위치 추가
-          href: adding-command-line-switches.md
-    - name: 오류 처리 및 반환 값
-      href: error-handling-and-return-values.md
-    - name: 개체
-      items:
+          items:
+            - name: 명령줄 스위치(Visual Studio SDK)
+              href: command-line-switches-visual-studio-sdk.md
+            - name: VSPackage 개발을 위한 Devenv 명령줄 스위치
+              href: devenv-command-line-switches-for-vspackage-development.md
+            - name: 명령줄 스위치 추가
+              href: adding-command-line-switches.md
+        - name: 오류 처리 및 반환 값
+          href: error-handling-and-return-values.md
         - name: 개체
-          href: objects.md
-        - name: VSCodeWindow 개체
-          href: vscodewindow-object.md
-        - name: VSCodeWindowManager 개체
-          href: vscodewindowmanager-object.md
-        - name: VSTextBuffer 개체
-          href: vstextbuffer-object.md
-        - name: VSTextView 개체
-          href: vstextview-object.md
-    - name: Visual Studio SDK 용어집
-      href: visual-studio-sdk-glossary.md
-- name: 소프트웨어 개발 키트 만들기
-  items:
+          items:
+            - name: 개체
+              href: objects.md
+            - name: VSCodeWindow 개체
+              href: vscodewindow-object.md
+            - name: VSCodeWindowManager 개체
+              href: vscodewindowmanager-object.md
+            - name: VSTextBuffer 개체
+              href: vstextbuffer-object.md
+            - name: VSTextView 개체
+              href: vstextview-object.md
+        - name: Visual Studio SDK 용어집
+          href: visual-studio-sdk-glossary.md
     - name: 소프트웨어 개발 키트 만들기
-      href: creating-a-software-development-kit.md
-    - name: SDK 및 NuGet 비교
-      href: nuget-versus-sdk-references.md
-    - name: '연습: C# 또는 Visual Basic을 사용하여 SDK 만들기'
-      href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: '연습: C++를 사용하여 SDK 만들기'
-      href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: '연습: JavaScript를 사용하여 SDK 만들기'
-      href: walkthrough-creating-an-sdk-using-javascript.md
-- name: .NET 컴파일러 플랫폼("Roslyn") 확장성
-  items:
+      items:
+        - name: 소프트웨어 개발 키트 만들기
+          href: creating-a-software-development-kit.md
+        - name: SDK 및 NuGet 비교
+          href: nuget-versus-sdk-references.md
+        - name: '연습: C# 또는 Visual Basic을 사용하여 SDK 만들기'
+          href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
+        - name: '연습: C++를 사용하여 SDK 만들기'
+          href: walkthrough-creating-an-sdk-using-cpp.md
+        - name: '연습: JavaScript를 사용하여 SDK 만들기'
+          href: walkthrough-creating-an-sdk-using-javascript.md
     - name: .NET 컴파일러 플랫폼("Roslyn") 확장성
-      href: dotnet-compiler-platform-roslyn-extensibility.md
-    - name: Roslyn 분석기 시작
-      href: getting-started-with-roslyn-analyzers.md
-    - name: ImmutableArrays에 대한 Roslyn 분석기 및 코드 인식 라이브러리
-      href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
-    - name: Roslyn 패키지 버전 참조
-      href: roslyn-version-support.md
+      items:
+        - name: .NET 컴파일러 플랫폼("Roslyn") 확장성
+          href: dotnet-compiler-platform-roslyn-extensibility.md
+        - name: Roslyn 분석기 시작
+          href: getting-started-with-roslyn-analyzers.md
+        - name: ImmutableArrays에 대한 Roslyn 분석기 및 코드 인식 라이브러리
+          href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
+        - name: Roslyn 패키지 버전 참조
+          href: roslyn-version-support.md
