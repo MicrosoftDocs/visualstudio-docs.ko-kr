@@ -1,5 +1,6 @@
 ---
 title: 텍스트 템플릿에서 ModelBus 사용
+description: Visual Studio ModelBus 참조를 포함 하는 모델을 읽는 텍스트 템플릿을 작성 하는 경우 참조를 확인 하 여 대상 모델에 액세스 하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535943"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361367"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>텍스트 템플릿에서 Visual Studio ModelBus 사용
 
@@ -37,27 +38,27 @@ Visual Studio ModelBus 참조를 포함 하는 모델을 읽는 텍스트 템플
 
     1. 아직 수행 하지 않은 경우 Visual Studio ModelBus 확장을 다운로드 하 여 설치 합니다. 자세한 내용은 [시각화 및 모델링 SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)를 참조 하세요.
 
-    2. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
+    2. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용** 을 클릭 합니다.
 
-    3. 대화 상자에서 **이 DSL을 ModelBus에 노출**합니다 .를 선택 합니다. 이 DSL을 사용 하 여 모델을 노출 하 고 다른 Dsl에 대 한 참조를 사용 하려는 경우 두 옵션을 모두 선택할 수 있습니다.
+    3. 대화 상자에서 **이 DSL을 ModelBus에 노출** 합니다 .를 선택 합니다. 이 DSL을 사용 하 여 모델을 노출 하 고 다른 Dsl에 대 한 참조를 사용 하려는 경우 두 옵션을 모두 선택할 수 있습니다.
 
-    4. **확인**을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
+    4. **확인** 을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
-    5. **모든 템플릿 변환**을 클릭 합니다.
+    5. **모든 템플릿 변환** 을 클릭 합니다.
 
     6. 솔루션을 다시 빌드합니다.
 
 2. 텍스트 템플릿 및 명령과 같은 다른 코드에서 DSL에 액세스 하려는 경우 **Modelbusadapter** 프로젝트를 복제 합니다.
 
-    1. Windows 탐색기에서 **Modelbusadapter .csproj**를 포함 하는 폴더를 복사 하 여 붙여넣습니다.
+    1. Windows 탐색기에서 **Modelbusadapter .csproj** 를 포함 하는 폴더를 복사 하 여 붙여넣습니다.
 
     2. 프로젝트 파일 (예: **T4ModelBusAdapter**)의 이름을 바꿉니다.
 
-    3. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 프로젝트**를 클릭 합니다. 새 어댑터 프로젝트인 **T4ModelBusAdapter**를 찾습니다.
+    3. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 프로젝트** 를 클릭 합니다. 새 어댑터 프로젝트인 **T4ModelBusAdapter** 를 찾습니다.
 
     4. `*.tt`새 프로젝트의 각 파일에서 네임 스페이스를 변경 합니다.
 
-    5. **솔루션 탐색기** 에서 새 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. 속성 편집기에서 생성 된 어셈블리의 이름과 기본 네임 스페이스를 변경 합니다.
+    5. **솔루션 탐색기** 에서 새 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다. 속성 편집기에서 생성 된 어셈블리의 이름과 기본 네임 스페이스를 변경 합니다.
 
     6. DslPackage 프로젝트에서 두 어댑터에 대 한 참조를 포함 하도록 새 어댑터 프로젝트에 대 한 참조를 추가 합니다.
 
@@ -161,7 +162,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 ## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>연습: ModelBus를 사용 하는 텍스트 템플릿 테스트
  이 연습에서는 다음 단계를 수행 합니다.
 
-1. 두 개의 Dsl을 생성 합니다. 하나의 DSL 인 *소비자*는 `ModelBusReference` 다른 dsl 인 *공급자*를 참조할 수 있는 속성을 가집니다.
+1. 두 개의 Dsl을 생성 합니다. 하나의 DSL 인 *소비자* 는 `ModelBusReference` 다른 dsl 인 *공급자* 를 참조할 수 있는 속성을 가집니다.
 
 2. 공급자에서 두 개의 ModelBus 어댑터를 만듭니다. 하나는 텍스트 템플릿에서 액세스 하기 위한 것이 고 다른 하나는 일반 코드입니다.
 
@@ -177,11 +178,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. 새 DSL 솔루션을 만듭니다. 이 예에서는 작업 흐름 솔루션 템플릿을 선택 합니다. 언어 이름을로 설정 하 `MBProvider` 고 파일 이름 확장명을 ". 제공"으로 설정 합니다.
 
-2. DSL 정의 다이어그램에서 위쪽 근처에 있지 않은 다이어그램의 빈 부분을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
+2. DSL 정의 다이어그램에서 위쪽 근처에 있지 않은 다이어그램의 빈 부분을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용** 을 클릭 합니다.
 
-   **Modelbus 사용**이 표시 되지 않으면 VMSDK Modelbus 확장을 다운로드 하 여 설치 합니다.
+   **Modelbus 사용** 이 표시 되지 않으면 VMSDK Modelbus 확장을 다운로드 하 여 설치 합니다.
 
-3. **Modelbus 사용** 대화 상자에서 **MODELBUS에이 DSL**표시를 선택 하 고 **확인**을 클릭 합니다.
+3. **Modelbus 사용** 대화 상자에서 **MODELBUS에이 DSL** 표시를 선택 하 고 **확인** 을 클릭 합니다.
 
     새 프로젝트인가 `ModelBusAdapter` 솔루션에 추가 됩니다.
 
@@ -189,13 +190,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 ### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>텍스트 템플릿에 대해 구성 된 ModelBus 어댑터 만들기
 
-1. 파일 탐색기에서 *Modelbusadapter .csproj*를 포함 하는 폴더를 복사 하 여 붙여넣습니다.
+1. 파일 탐색기에서 *Modelbusadapter .csproj* 를 포함 하는 폴더를 복사 하 여 붙여넣습니다.
 
-    폴더 이름을 **T4ModelBusAdapter**로 합니다.
+    폴더 이름을 **T4ModelBusAdapter** 로 합니다.
 
-    프로젝트 파일 *T4ModelBusAdapter*를 이름으로 바꿉니다.
+    프로젝트 파일 *T4ModelBusAdapter* 를 이름으로 바꿉니다.
 
-2. 솔루션 탐색기에서 MBProvider 솔루션에 T4ModelBusAdapter를 추가 합니다. 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 프로젝트**를 클릭 합니다.
+2. 솔루션 탐색기에서 MBProvider 솔루션에 T4ModelBusAdapter를 추가 합니다. 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 프로젝트** 를 클릭 합니다.
 
 3. T4ModelBusAdapter 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 속성을 클릭 합니다. 프로젝트 속성 창에서 **어셈블리 이름과** **기본 네임 스페이스** 를로 변경 합니다 `Company.MBProvider.T4ModelBusAdapters` .
 
@@ -247,7 +248,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 9. 솔루션 탐색기 제목 표시줄에서 **모든 템플릿 변환** 을 클릭 합니다.
 
-10. **F5**키를 누릅니다.
+10. **F5** 키를 누릅니다.
 
 11. DSL이 작동 하는지 확인 합니다. 실험적 프로젝트에서를 엽니다 `Sample.provider` . Visual Studio의 실험적 인스턴스를 닫습니다.
 
@@ -257,15 +258,15 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. 최소 언어 솔루션 템플릿을 사용 하 여 새 DSL을 만듭니다. 언어 이름을 MBConsumer로 설정 하 고 파일 이름 확장명을 "사용"으로 설정 합니다.
 
-2. DSL 프로젝트에서 MBProvider DSL 어셈블리에 대 한 참조를 추가 합니다. 마우스 오른쪽 단추로 클릭 한  `MBConsumer\Dsl\References` 다음 **참조 추가**를 클릭 합니다. **찾아보기** 탭에서 다음을 찾습니다.`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. DSL 프로젝트에서 MBProvider DSL 어셈블리에 대 한 참조를 추가 합니다. 마우스 오른쪽 단추로 클릭 한  `MBConsumer\Dsl\References` 다음 **참조 추가** 를 클릭 합니다. **찾아보기** 탭에서 다음을 찾습니다.`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     이렇게 하면 다른 DSL을 사용 하는 코드를 만들 수 있습니다. 여러 Dsl에 대 한 참조를 만들려는 경우에도 추가 합니다.
 
-3. DSL 정의 다이어그램에서 다이어그램을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBus 사용**을 클릭 합니다. 대화 상자에서 **이 DSL 사용을 선택 하 여 ModelBus**를 사용 합니다.
+3. DSL 정의 다이어그램에서 다이어그램을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBus 사용** 을 클릭 합니다. 대화 상자에서 **이 DSL 사용을 선택 하 여 ModelBus** 를 사용 합니다.
 
 4. 클래스에서 `ExampleElement` 새 도메인 속성을 추가 하 `MBR` 고, 속성 창에서 해당 형식을로 설정 `ModelBusReference` 합니다.
 
-5. 다이어그램에서 도메인 속성을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBusReference 특정 속성 편집**을 클릭 합니다. 대화 상자에서 **모델 요소**를 선택 합니다.
+5. 다이어그램에서 도메인 속성을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBusReference 특정 속성 편집** 을 클릭 합니다. 대화 상자에서 **모델 요소** 를 선택 합니다.
 
     파일 대화 상자 필터를 다음으로 설정 합니다.
 
@@ -275,7 +276,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     **모델 요소 유형** 목록에서 공급자 DSL에 하나 이상의 도메인 클래스 이름을 입력 합니다 (예: 회사. Mbprovider. 작업). 추상 클래스 일 수 있습니다. 목록을 비워 두면 사용자는 모든 요소에 대 한 참조를 설정할 수 있습니다.
 
-6. 대화 상자를 닫고 **모든 템플릿을 변환**합니다.
+6. 대화 상자를 닫고 **모든 템플릿을 변환** 합니다.
 
    다른 DSL의 요소에 대 한 참조를 포함할 수 있는 DSL을 만들었습니다.
 
@@ -285,11 +286,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 샘플의 복사본을 추가 합니다. **MBConsumer\Debugging** 프로젝트에를 제공 합니다. ModelBus 참조는 동일한 솔루션에 있는 파일을 참조 해야 하기 때문에이 작업이 필요 합니다.
 
-   1. 디버깅 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 항목**을 클릭 합니다.
+   1. 디버깅 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 항목** 을 클릭 합니다.
 
    2. **항목 추가** 대화 상자에서 필터를 **모든 파일 ( \* . \* )** 로 설정 합니다.
 
-   3. 로 이동한 `MBProvider\Debugging\Sample.provide` 다음 **추가**를 클릭 합니다.
+   3. 로 이동한 `MBProvider\Debugging\Sample.provide` 다음 **추가** 를 클릭 합니다.
 
 3. `Sample.consume`를 엽니다.
 
@@ -388,7 +389,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
     }
     ```
 
-3. **Ctrl** + **F5**를 누릅니다.
+3. **Ctrl** + **F5** 를 누릅니다.
 
 4. Visual Studio의 실험적 인스턴스에서를 엽니다 `Debugging\Sample.consume` .
 
@@ -396,7 +397,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     해당 요소에서 MBR을 설정한 경우 참조 된 모델이 열리고 참조 된 요소가 선택 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio Modelbus를 사용하여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)

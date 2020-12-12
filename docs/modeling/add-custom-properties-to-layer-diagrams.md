@@ -1,5 +1,7 @@
 ---
 title: 종속성 다이어그램에 사용자 지정 속성 추가
+description: 종속성 다이어그램에 대 한 확장 코드를 작성할 때 종속성 다이어그램의 요소를 사용 하 여 값을 저장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546918"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360769"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
 
@@ -31,14 +33,14 @@ ms.locfileid: "85546918"
 > [!IMPORTANT]
 > 속성이 표시 되도록 하려면 계층 속성을 표시할 각 컴퓨터에서 다음과 같이 변경 합니다.
 >
-> 1. **관리자 권한으로 실행**을 사용 하 여 메모장을 실행 합니다. *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*를 엽니다.
+> 1. **관리자 권한으로 실행** 을 사용 하 여 메모장을 실행 합니다. *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest* 를 엽니다.
 > 2. **콘텐츠** 요소 내에 다음을 추가 합니다.
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트**를 엽니다. 다음을 입력합니다.
+> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트** 를 엽니다. 다음을 입력합니다.
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -73,7 +75,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드는 일반적인 사용자 지정 속성 설명자입니다. 레이어 모델(`ILayerModel`)에서 사용자가 사용자 지정 유효성 검사 메서드의 값을 제공할 수 있게 해주는 부울 속성을 정의합니다.
 
@@ -160,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)

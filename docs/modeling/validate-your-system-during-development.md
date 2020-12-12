@@ -1,5 +1,7 @@
 ---
 title: 개발하는 동안 시스템 유효성 검사
+description: Visual Studio를 사용 하 여 소프트웨어를 사용자 요구 사항 및 시스템 아키텍처와 일관 되 게 유지 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594034"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361406"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 
@@ -38,7 +40,7 @@ Visual Studio를 사용 하면 사용자 요구 사항과 시스템 아키텍처
 |**비디오**|![비디오 채널 9에 대 한 링크 ](../data-tools/media/playvideo.gif) [: Doug 7: Visual Studio 2010을 사용 하 여 코드 이해 및 시스템 디자인](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![비디오 채널 9에 대 한 링크 ](../data-tools/media/playvideo.gif) [: 응용 프로그램 설계](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 확장성](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)
 - [분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)

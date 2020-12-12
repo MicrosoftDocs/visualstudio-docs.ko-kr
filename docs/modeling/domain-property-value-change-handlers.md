@@ -1,5 +1,7 @@
 ---
 title: 도메인 속성 값 변경 처리기
+description: Visual Studio 도메인별 언어에서 사용할 수 있는 도메인 속성 값 변경 처리기에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594710"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361731"
 ---
 # <a name="domain-property-value-change-handlers"></a>도메인 속성 값 변경 처리기
 
@@ -22,7 +24,7 @@ Visual Studio 도메인별 언어에서 도메인 속성 값이 변경 되 면 `
 
 ## <a name="override-the-property-handler-methods"></a>속성 처리기 메서드 재정의
 
-DSL의 각 도메인 속성은 부모 도메인 클래스 내에 중첩된 클래스를 통해 처리됩니다. 해당 이름은 *PropertyName*propertyhandler 형식 뒤에 나옵니다. **Dsl\generated Code\DomainClasses.cs**파일에서이 속성 처리기 클래스를 검사할 수 있습니다. 해당 클래스에서는 값이 변경되기 직전에 `OnValueChanging()`이 호출되고 값이 변경된 직후에 `OnValueChanged()`가 호출됩니다.
+DSL의 각 도메인 속성은 부모 도메인 클래스 내에 중첩된 클래스를 통해 처리됩니다. 해당 이름은 *PropertyName* propertyhandler 형식 뒤에 나옵니다. **Dsl\generated Code\DomainClasses.cs** 파일에서이 속성 처리기 클래스를 검사할 수 있습니다. 해당 클래스에서는 값이 변경되기 직전에 `OnValueChanging()`이 호출되고 값이 변경된 직후에 `OnValueChanged()`가 호출됩니다.
 
 예를 들어 라는 `Comment` 문자열 도메인 속성 및 라는 정수 속성이 있는 라는 도메인 클래스가 있다고 가정 합니다 `Text` `TextLengthCount` . `TextLengthCount`항상 문자열의 길이를 포함 하도록 하려면 `Text` Dsl 프로젝트에서 별도의 파일에 다음 코드를 작성 하면 됩니다.
 
@@ -99,7 +101,7 @@ if (newValue > 10)
 
 대신 파생 속성을 계산된 속성으로 정의할 수 있습니다. 이 경우 속성은 자체 스토리지를 포함하지 않으며 속성의 값이 필요할 때마다 정의 기능을 평가합니다. 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
 
-이전 예제 대신 **Kind** `TextLengthCount` DSL 정의에서 **계산** 되는의 Kind 필드를 설정할 수 있습니다. 이 도메인 속성에 대해 고유한 **Get** 메서드를 제공 합니다. **Get** 메서드는 문자열의 현재 길이를 반환 합니다 `Text` .
+이전 예제 대신  `TextLengthCount` DSL 정의에서 **계산** 되는의 Kind 필드를 설정할 수 있습니다. 이 도메인 속성에 대해 고유한 **Get** 메서드를 제공 합니다. **Get** 메서드는 문자열의 현재 길이를 반환 합니다 `Text` .
 
 그러나 계산된 속성을 사용하는 경우 값을 사용할 때마다 식을 평가하므로 성능상의 문제가 발생할 수 있다는 단점이 있습니다. 또한 계산된 속성에는 OnValueChanging() 및 OnValueChanged()가 없습니다.
 

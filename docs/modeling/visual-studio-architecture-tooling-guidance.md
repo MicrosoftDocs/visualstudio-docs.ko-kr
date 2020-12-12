@@ -1,5 +1,7 @@
 ---
 title: 아키텍처 도구 지침
+description: 아키텍처 도구 지침을 다운로드 하는 방법에 대 한 자세한 내용은 Visual Studio 2010의 모델링 도구 사용에 대 한 유용한 지침을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026fe95eb9e32e335832e782ffde72c93f89dc67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d05f9a904df076c437d9e2e5efb9e829cab758
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111405"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361276"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 아키텍처 도구 사용 지침
 

@@ -1,5 +1,7 @@
 ---
 title: 다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
+description: 모델 생성을 지원 하지 않는 Visual Studio 버전을 사용 하는 경우 읽기 전용 동작 뿐만 아니라 Visual Studio에서 모델 및 다이어그램을 읽는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595412"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360691"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 
@@ -37,7 +39,7 @@ ms.locfileid: "75595412"
 - 읽을 다이어그램에 대 한 두 개의 다이어그램 파일입니다 (예: **Mydiagram 다이어그램 및 MyDiagram**). 레이아웃.
 
     > [!NOTE]
-    > 종속성 다이어그램의 경우 이름이 _mydiagram_**.layerdiagram.suppressions**인 파일도 있어야 합니다.
+    > 종속성 다이어그램의 경우 이름이 _mydiagram_ 인 파일도 있어야 합니다.
 
 - 모델링 프로젝트 파일 (**mymodel**)
 
@@ -55,7 +57,7 @@ ms.locfileid: "75595412"
 
 이러한 변경 내용을 저장할 수 있습니다. 다른 사용자에 게 변경 내용을 표시 하려면 적어도 업데이트 된 **. 레이아웃** 파일을 보내야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

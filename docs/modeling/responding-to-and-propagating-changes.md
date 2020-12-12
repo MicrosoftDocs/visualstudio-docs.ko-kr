@@ -1,5 +1,7 @@
 ---
 title: 변경 내용에 대한 대응 및 전파
+description: 요소가 생성, 삭제 또는 업데이트 되는 경우 변경 내용을 모델의 다른 부분이 나 외부 리소스에 전파 하는 코드를 작성할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414518"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360614"
 ---
 # <a name="respond-to-and-propagate-changes"></a>변경 내용에 대 한 응답 및 전파
 

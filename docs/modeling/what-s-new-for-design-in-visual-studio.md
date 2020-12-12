@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2017의 디자인에 대한 새로운 기능
+description: Visual Studio 2017에서 사용할 수 있는 라이브 종속성 유효성 검사와 같은 코드 디자인에 대 한 새로운 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf622d9762e86bcb75a08c60085a15abb6fdca91
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92299518"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360977"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Visual Studio 2017의 디자인에 대한 새로운 기능
 

@@ -1,5 +1,7 @@
 ---
 title: 종속성 다이어그램에 명령 및 제스처 추가
+description: Visual Studio의 종속성 다이어그램에서 마우스 오른쪽 단추를 클릭 하 여 메뉴 명령 및 제스처 처리기를 정의 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531393"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362225"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>종속성 다이어그램에 명령 및 제스처 추가
 
@@ -38,7 +40,7 @@ Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단
 
    템플릿에서 작은 작업 예제가 포함된 프로젝트를 만듭니다.
 
-2. 확장을 테스트 하려면 **ctrl** + **f5** 또는 **f5**키를 누릅니다.
+2. 확장을 테스트 하려면 **ctrl** + **f5** 또는 **f5** 키를 누릅니다.
 
     Visual Studio의 실험적 인스턴스가 시작 됩니다. 이 인스턴스에서 종속성 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.
 
@@ -71,17 +73,17 @@ Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단
    > [!NOTE]
    > 한 클래스 라이브러리에서 두 개 이상의 명령 또는 제스처 처리기 클래스를 정의할 수 있지만, 별도 클래스 라이브러리에서 레이어 유효성 검사 클래스를 정의해야 합니다.
 
-2. 솔루션에서 VSIX 프로젝트를 추가 하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함 되어 있습니다.
+2. 솔루션에서 VSIX 프로젝트를 추가 하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest** 인 파일이 포함 되어 있습니다.
 
-3. **솔루션 탐색기**에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정**을 선택 합니다.
+3. **솔루션 탐색기** 에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정** 을 선택 합니다.
 
-4. **source.extension.vsixmanifest**의 **자산**에서 명령 또는 제스처 처리기 프로젝트를 MEF 구성 요소로 추가합니다.
+4. **source.extension.vsixmanifest** 의 **자산** 에서 명령 또는 제스처 처리기 프로젝트를 MEF 구성 요소로 추가합니다.
 
-    1. **자산**탭에서 **새로 만들기**를 선택합니다.
+    1. **자산** 탭에서 **새로 만들기** 를 선택합니다.
 
-    2. **형식**에서 **Microsoft.VisualStudio.MefComponent**를 선택합니다.
+    2. **형식** 에서 **Microsoft.VisualStudio.MefComponent** 를 선택합니다.
 
-    3. **소스**에서 **현재 솔루션의 프로젝트** 를 선택한 다음 명령 또는 제스처 처리기 프로젝트의 이름을 선택합니다.
+    3. **소스** 에서 **현재 솔루션의 프로젝트** 를 선택한 다음 명령 또는 제스처 처리기 프로젝트의 이름을 선택합니다.
 
     4. 파일을 저장합니다.
 
@@ -102,7 +104,7 @@ Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단
 
      [제스처 처리기 정의](#gesture)
 
-7. 기능을 테스트 하려면 **ctrl** + **f5** 또는 **f5**키를 누릅니다.
+7. 기능을 테스트 하려면 **ctrl** + **f5** 또는 **f5** 키를 누릅니다.
 
    Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 종속성 다이어그램을 만들거나 엽니다.
 
@@ -246,7 +248,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.
 
-- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예:
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들어:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -261,6 +263,6 @@ namespace MyLayerExtensions // change to your preference
 
 - 일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어 사용자가 솔루션 탐색기에서 종속성 다이어그램으로 항목을 끌어올 수 있습니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

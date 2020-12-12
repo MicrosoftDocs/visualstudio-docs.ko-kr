@@ -1,5 +1,7 @@
 ---
 title: 종속성 다이어그램 확장
+description: 종속성 다이어그램을 만들고 업데이트 하는 코드를 작성 하는 방법 및 Visual Studio의 종속성 다이어그램에 대해 프로그램 코드 구조의 유효성을 검사 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298427"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361627"
 ---
 # <a name="extend-dependency-diagrams"></a>종속성 다이어그램 확장
 
@@ -35,7 +37,7 @@ ms.locfileid: "92298427"
 
 레이어 확장을 실행 하려는 컴퓨터에 적합 한 버전의 Visual Studio가 설치 되어 있어야 합니다. 종속성 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)

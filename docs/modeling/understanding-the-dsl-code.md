@@ -1,5 +1,7 @@
 ---
 title: DSL 코드 이해
+description: Visual Studio에서 dsl 인스턴스를 읽고 업데이트 하는 데 사용할 수 있는 API를 DSL (Domain-Specific Language) 솔루션에서 생성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,23 +11,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565944"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361458"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 
-DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스를 읽고 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
+DSL (Domain-Specific Language) 솔루션은 Visual Studio에서 DSL 인스턴스를 읽고 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
 
 ## <a name="the-example-solution-component-diagrams"></a>예제 솔루션: 구성 요소 다이어그램
 
 이 항목에 설명 된 대부분의 예제를 원본으로 하는 솔루션을 만들려면 **구성 요소 모델** 솔루션 템플릿에서 DSL을 만듭니다. 이 템플릿은 새 DSL 솔루션을 만들 때 표시되는 표준 템플릿 중 하나입니다.
 
 > [!NOTE]
-> 구성 요소 다이어그램 DSL 템플릿은 **도메인 특정 언어 디자이너**이라고 합니다.
+> 구성 요소 다이어그램 DSL 템플릿은 **도메인 특정 언어 디자이너** 이라고 합니다.
 
 이 솔루션 템플릿에 익숙하지 않은 경우 **F5** 키를 누르고 실험을 진행 합니다. 특히 구성 요소로 포트 도구를 끌어 포트를 만들고 포트를 연결할 수 있는지 확인합니다.
 
@@ -35,7 +37,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
  Dsl **프로젝트는** dsl에 대 한 API를 정의 합니다. **Dslpackage** 프로젝트는 Visual Studio와 통합 하는 방법을 정의 합니다. 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
 
 ### <a name="the-code-directories"></a>코드 디렉터리
- 이러한 각 프로젝트의 코드는 대부분 **Dsl\dsldefinitiondsl**에서 생성 됩니다. 생성 된 코드는 생성 된 **코드** 폴더에 있습니다. 생성 된 파일을 보려면 생성 하는 **.tt** 파일 옆에 있는 **[+]** 를 클릭 합니다.
+ 이러한 각 프로젝트의 코드는 대부분 **Dsl\dsldefinitiondsl** 에서 생성 됩니다. 생성 된 코드는 생성 된 **코드** 폴더에 있습니다. 생성 된 파일을 보려면 생성 하는 **.tt** 파일 옆에 있는 **[+]** 를 클릭 합니다.
 
  생성된 코드를 검사하여 DSL을 파악하는 것이 좋습니다. 생성된 파일을 확인하려면 솔루션 탐색기에서 *.tt 파일을 확장합니다.
 
@@ -66,11 +68,11 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  `ConnectionBuilders.cs`
 
- 연결 작성기는 관계를 만드는 클래스로, 연결 도구를 작동하게 만드는 코드입니다. 이 파일에는 각 연결 도구의 클래스 쌍이 포함됩니다. 해당 이름은 도메인 관계 및 연결 도구: *관계*작성기 및 *connectaction*connectaction의 이름에서 파생 됩니다.
+ 연결 작성기는 관계를 만드는 클래스로, 연결 도구를 작동하게 만드는 코드입니다. 이 파일에는 각 연결 도구의 클래스 쌍이 포함됩니다. 해당 이름은 도메인 관계 및 연결 도구: *관계* 작성기 및 *connectaction* connectaction의 이름에서 파생 됩니다.
 
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.
 
- 관계는 관계 메서드에서 생성 됩니다 *Relationship* `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예:
+ 관계는 관계 메서드에서 생성 됩니다  `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들어:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -78,7 +80,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  예를 들어 샘플 DSL의 3가지 관계 형식에 대해 각각 연결 작성기 링크 연결 지시문을 하나씩 추가할 수 있습니다. 그러면 사용자에게 연결 도구 하나가 제공됩니다. 인스턴스화되는 관계 형식은 사용자가 선택한 소스 및 대상 요소의 형식에 따라 달라집니다.  링크 연결 지시문을 추가하려면 DSL 탐색기에서 작성기를 마우스 오른쪽 단추로 클릭합니다.
 
- 특정 도메인 관계 형식을 만들 때 실행되는 사용자 지정 코드를 작성하려면 작성기 노드에서 해당하는 링크 연결 지시문을 선택합니다. 속성 창에서 설정 **사용자 지정 연결을 사용**합니다. 솔루션을 다시 작성하고 코드를 입력하여 발생하는 오류를 해결합니다.
+ 특정 도메인 관계 형식을 만들 때 실행되는 사용자 지정 코드를 작성하려면 작성기 노드에서 해당하는 링크 연결 지시문을 선택합니다. 속성 창에서 설정 **사용자 지정 연결을 사용** 합니다. 솔루션을 다시 작성하고 코드를 입력하여 발생하는 오류를 해결합니다.
 
  사용자가이 연결 도구를 사용할 때마다 실행 되는 사용자 지정 코드를 작성 하려면 연결 작성기의 **Is custom** 속성을 설정 합니다. 소스 요소 허용 여부, 특정 소스 및 대상 조합 허용 여부 그리고 연결 설정 시 모델에 대해 수행해야 하는 업데이트를 결정하는 코드를 입력할 수 있습니다. 예를 들어 다이어그램에서 루프를 만들지 않는 경우에만 연결을 허용할 수 있습니다. 단일 관계 링크 대신 소스와 대상 간에 서로 관련된 여러 요소의 보다 복잡한 패턴을 인스턴스화할 수 있습니다.
 
@@ -86,7 +88,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  보통 참조 관계를 나타내는 다이어그램 요소인 연결선의 클래스를 포함합니다. 각 클래스는 DSL 정의의 연결선 하나에서 생성됩니다. 모든 연결선 클래스는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>에서 파생됩니다.
 
- 런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킵니다.
+ 런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 가리킵니다.
 
  런타임에 추가 스타일 기능을 변경할 수 있도록 하려면 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 및 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> 예제를 참조하세요.
 
@@ -94,7 +96,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  다이어그램을 정의하는 클래스를 포함하며, <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>에서 파생됩니다.
 
- 런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킵니다.
+ 런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 가리킵니다.
 
  이 파일은 모델에 새 요소를 추가할 때 응답하는 `FixupDiagram` 규칙도 포함합니다. 해당 규칙은 새 모양을 추가하고 모델 요소에 모양을 연결합니다.
 
@@ -102,7 +104,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  이 지시문 프로세서를 통해 사용자는 DSL 인스턴스를 읽는 텍스트 템플릿을 작성할 수 있습니다. 지시문 프로세서는 DSL의 어셈블리(DLL)를 로드하고 네임스페이스에 대해 `using` 문을 삽입합니다. 따라서 텍스트 템플릿의 코드가 DSL에 정의된 클래스 및 관계를 사용할 수 있습니다.
 
- 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md) 및 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)를 참조 하세요.
+ 자세한 내용은 [Domain-Specific 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md) 및 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)를 참조 하세요.
 
  `DomainClasses.cs`
 
@@ -122,7 +124,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
 - EGP(Element Group Prototype) 처리기 메서드. 사용자가이 클래스의 인스턴스에 다른 요소를 *병합* (추가) 할 수 있는 경우에 필요 합니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
 
-   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. 이
+   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. Component
 
    클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
 
@@ -153,7 +155,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  다중성을 1..1 또는 1..*로 지정하는 관계 역할에서는 관계 인스턴스 하나 이상이 필요하다는 경고를 사용자에게 표시해야 합니다. 이 파일은 해당 경고를 구현하는 유효성 검사 제약 조건을 제공합니다. 포함 부모에 대한 1..1 링크는 확인되지 않습니다.
 
- 이러한 제약 조건을 실행 하려면 DSL 탐색기의 **Editor\validation** 노드에 있는 **사용 ...** 옵션 중 하나를 설정 해야 합니다. 자세한 내용은 [도메인별 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
+ 이러한 제약 조건을 실행 하려면 DSL 탐색기의 **Editor\validation** 노드에 있는 **사용 ...** 옵션 중 하나를 설정 해야 합니다. 자세한 내용은 [Domain-Specific 언어로 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
 
  `PropertiesGrid.cs`
 
@@ -169,15 +171,15 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
   각 도메인 클래스, 관계, 모양, 연결선, 다이어그램 및 모델의 serializer 클래스입니다.
 
-  이러한 클래스의 많은 기능은 DSL 탐색기의 **Xml Serialization 동작**에서 설정 하 여 제어할 수 있습니다.
+  이러한 클래스의 많은 기능은 DSL 탐색기의 **Xml Serialization 동작** 에서 설정 하 여 제어할 수 있습니다.
 
   `Shapes.cs`
 
   DSL 정의의 모든 모양 클래스에 대한 클래스입니다. 모양은 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>에서 파생됩니다. 자세한 내용은 [File Storage 및 XML Serialization 사용자 지정](../modeling/customizing-file-storage-and-xml-serialization.md)을 참조 하세요.
 
-  Partial 클래스의 고유한 메서드로 생성 된 메서드를 재정의 하려면 set은 DSL 정의에서 커넥터에 대해 **Double 파생을 생성** 합니다. 생성자를 고유한 코드로 바꾸려면 set **에 사용자 지정 생성자가**있습니다.
+  Partial 클래스의 고유한 메서드로 생성 된 메서드를 재정의 하려면 set은 DSL 정의에서 커넥터에 대해 **Double 파생을 생성** 합니다. 생성자를 고유한 코드로 바꾸려면 set **에 사용자 지정 생성자가** 있습니다.
 
-  런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킵니다.
+  런타임에 색 및 일부 다른 스타일 기능을 설정 하려면 DSL 정의 다이어그램에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 가리킵니다.
 
   런타임 시 추가 스타일 기능이 변경되도록 하려면 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 및 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> 예제를 참조하세요.
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)
 - [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Domain-Specific 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

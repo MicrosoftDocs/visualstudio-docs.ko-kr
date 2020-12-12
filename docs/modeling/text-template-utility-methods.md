@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿 유틸리티 메서드
+description: Visual Studio에서 코드를 작성할 때 사용할 수 있는 다양 한 텍스트 템플릿 유틸리티 메서드에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b0015e68f7d78c2b33eaeb9e0bfb404acaed834
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591764"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362017"
 ---
 # <a name="text-template-utility-methods"></a>텍스트 템플릿 유틸리티 메서드
 
@@ -119,7 +121,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예:
+의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예를 들어:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

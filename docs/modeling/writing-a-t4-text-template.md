@@ -1,5 +1,7 @@
 ---
 title: T4 텍스트 템플릿 쓰기
+description: T4 텍스트 템플릿 및 지시문, 텍스트 블록 및 제어 블록을 포함 하는 텍스트 템플릿을 작성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593488"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361224"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
-텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "..."가 포함 됩니다. \<html> 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록*은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
+텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "..."가 포함 됩니다. \<html> 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록* 은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
 
  이 구조에서는 템플릿을 쉽게 개발할 수 있습니다. 생성된 파일의 프로토타입으로 시작한 다음 상황에 따라 다른 결과를 생성하는 제어 블록을 증분 방식으로 삽입할 수 있기 때문입니다.
 
@@ -155,7 +157,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)을 참조 하세요.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들어:
 
 ```
 List of Squares:
@@ -185,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.
+ 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들어:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -236,9 +238,9 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
+ **탐색 가능한 모델로 파일을 로드** 합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
 
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 또한 모델 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 또한 모델 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [Domain-Specific 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>디자인 타임 템플릿의 상대 파일 경로
  [디자인 타임 텍스트 템플릿에서](../modeling/design-time-code-generation-by-using-t4-text-templates.md)텍스트 템플릿에 상대적인 위치에 있는 파일을 참조 하려는 경우를 사용 `this.Host.ResolvePath()` 합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
@@ -264,7 +266,7 @@ Content of MyFile.txt is:
  이는 코드의 나머지 부분과 함께 컴파일되는 코드를 제공 하는 [런타임 텍스트 템플릿에](../modeling/run-time-text-generation-with-t4-text-templates.md)는 적용 되지 않습니다.
 
 ## <a name="editing-templates"></a>템플릿 편집
- 확장 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. **도구** 메뉴에서 **확장 관리자**를 클릭 합니다. **온라인 갤러리**를 클릭 한 다음 검색 도구를 사용 합니다.
+ 확장 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. **도구** 메뉴에서 **확장 관리자** 를 클릭 합니다. **온라인 갤러리** 를 클릭 한 다음 검색 도구를 사용 합니다.
 
 ## <a name="related-topics"></a>관련 항목
 

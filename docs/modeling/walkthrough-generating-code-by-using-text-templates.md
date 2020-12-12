@@ -1,5 +1,7 @@
 ---
 title: '연습: 텍스트 템플릿을 사용하여 코드 생성'
+description: 코드 생성을 통해 강력한 형식의 프로그램 코드를 생성할 수 있으며, 소스 모델이 변경 될 때 쉽게 변경할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532062"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360990"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 
@@ -83,9 +85,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 모든 코드 프로젝트에 이 방법을 적용할 수 있습니다. 이 연습에서는 C# 프로젝트를 사용하며, 테스트를 목적으로 콘솔 애플리케이션을 사용합니다.
 
-1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트**를 클릭 합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 클릭 한 다음 **프로젝트** 를 클릭 합니다.
 
-2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.
+2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 애플리케이션** 을 클릭합니다.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>프로토타입 XML 파일을 프로젝트에 추가
 
@@ -93,7 +95,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 파일은 템플릿이 읽을 수 있도록 프로젝트의 일부여야 하지만, 컴파일된 애플리케이션에 빌드되지는 않습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 항목**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 항목** 을 클릭 합니다.
 
 2. **새 항목 추가** 대화 상자의 **템플릿** 창에서 **XML 파일** 을 선택합니다.
 
@@ -103,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
 
-C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예:
+C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들어:
 
 ```csharp
 using System;
@@ -129,9 +131,9 @@ namespace MyProject
 
 ### <a name="add-a-text-template-file"></a>텍스트 템플릿 파일 추가
 
-텍스트 템플릿 파일을 추가 하 고 출력 확장을 *.cs*로 설정 합니다.
+텍스트 템플릿 파일을 추가 하 고 출력 확장을 *.cs* 로 설정 합니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 클릭한 다음 **새 항목**을 클릭합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** 를 클릭한 다음 **새 항목** 을 클릭합니다.
 
 2. **새 항목 추가** 대화 상자의 **템플릿** 창에서 **텍스트 템플릿** 을 선택합니다.
 
@@ -412,7 +414,7 @@ XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다
 
 이 연습에서는 코드 생성의 몇 가지 방법과 이점에 대해 설명합니다.
 
-- *코드 생성* 이란 *모델*에서 애플리케이션 소스 코드의 일부를 생성하는 것입니다. 모델은 애플리케이션 도메인에 적합한 형식으로 정보를 포함하고 있으며, 애플리케이션의 수명 동안 변경될 수 있습니다.
+- *코드 생성* 이란 *모델* 에서 애플리케이션 소스 코드의 일부를 생성하는 것입니다. 모델은 애플리케이션 도메인에 적합한 형식으로 정보를 포함하고 있으며, 애플리케이션의 수명 동안 변경될 수 있습니다.
 
 - 강력한 형식 지정은 코드 생성의 이점 중 하나입니다. 모델은 사용자에게 좀 더 적합한 형식으로 정보를 표현하며, 생성된 코드는 애플리케이션의 다른 부분에서 형식 집합을 사용하여 정보를 처리하도록 허용합니다.
 
@@ -426,9 +428,9 @@ XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다
 
 ## <a name="troubleshoot-the-text-template"></a>텍스트 템플릿 문제 해결
 
-**오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
+**오류 목록** 에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

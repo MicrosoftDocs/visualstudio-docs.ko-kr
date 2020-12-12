@@ -1,5 +1,7 @@
 ---
 title: 다이어그램을 이미지로 내보내기
+description: 동일한 버전의 Visual Studio를 사용 하지 않는 사용자와 공유할 수 있도록 모델링 다이어그램을 읽기 전용 형식으로 저장할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547604"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361640"
 ---
 # <a name="export-diagrams-as-images"></a>다이어그램을 이미지로 내보내기
 
@@ -28,7 +30,7 @@ Visual Studio에서 동일한 버전의 Visual Studio를 사용하지 않는 이
 
 1. 다이어그램에서 일부 또는 모든 모양을 선택합니다.
 
-2. 선택 항목을 마우스 오른쪽 단추로 클릭 한 다음 **복사**를 클릭 합니다.
+2. 선택 항목을 마우스 오른쪽 단추로 클릭 한 다음 **복사** 를 클릭 합니다.
 
 3. 선택 항목을 원하는 애플리케이션에 붙여넣습니다.
 
@@ -36,7 +38,7 @@ Visual Studio에서 동일한 버전의 Visual Studio를 사용하지 않는 이
 
 1. **파일** 메뉴에서 **인쇄** 를 클릭 하 여 **인쇄** 대화 상자를 엽니다.
 
-2. **이름** 목록에서 **Microsoft XPS Document Writer**를 선택 하 고 **확인**을 클릭 합니다.
+2. **이름** 목록에서 **Microsoft XPS Document Writer** 를 선택 하 고 **확인** 을 클릭 합니다.
 
 3. **다른 이름으로 파일 저장** 대화 상자에서 파일을 **xps 문서 ( \* .xps)** 파일로 저장 합니다.
 

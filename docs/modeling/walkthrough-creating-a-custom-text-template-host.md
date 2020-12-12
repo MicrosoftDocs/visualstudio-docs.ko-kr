@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 텍스트 템플릿 호스트 만들기'
+description: Visual Studio 외부에서 텍스트 템플릿 변환 기능을 사용 하려는 경우 사용자 지정 호스트를 작성 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532225"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361055"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 
@@ -35,7 +37,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 - 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 완료하려면 다음이 필요합니다.
 
@@ -714,11 +716,11 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
    End Namespace
    ```
 
-4. 의 경우에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 만 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
+4. 의 경우에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 만 **프로젝트** 메뉴를 열고 **customhost 속성** 을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program** 을 클릭 합니다.
 
-5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
+5. **파일** 메뉴에서 **모두 저장** 을 클릭합니다.
 
-6. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+6. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
 ## <a name="test-the-custom-host"></a>사용자 지정 호스트 테스트
 
@@ -801,7 +803,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
      사용자 지정 호스트 애플리케이션이 실행되어 텍스트 템플릿 변형 프로세스를 완료합니다.
 
-5. **Windows 탐색기**에서 TestTemplate.tt 파일이 포함 된 폴더로 이동 합니다.
+5. **Windows 탐색기** 에서 TestTemplate.tt 파일이 포함 된 폴더로 이동 합니다.
 
      이 폴더에는 TestTemplate1.txt 파일도 포함되어 있습니다.
 
@@ -821,6 +823,6 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

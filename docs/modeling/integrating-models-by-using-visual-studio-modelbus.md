@@ -1,5 +1,7 @@
 ---
 title: Modelbus를 사용 하 여 모델 통합
+description: 모델 간에 링크를 만드는 방법과 다른 도구에서 모델로 링크를 만드는 방법에 대해 Visual Studio ModelBus 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536944"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360730"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio를 사용 하 여 모델 통합 Modelbus
 
@@ -36,11 +38,11 @@ ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참
 
 ### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a> 모델 버스에 DSL 정의를 노출 하려면
 
-1. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
+1. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용** 을 클릭 합니다.
 
-2. 대화 상자에서 **ModelBus에이 DSL을 노출**하려고 합니다 .를 선택 합니다. 이 DSL을 모델에 표시하는 동시에 다른 DSL에 대한 참조도 사용하려는 경우 두 옵션을 모두 선택하면 됩니다.
+2. 대화 상자에서 **ModelBus에이 DSL을 노출** 하려고 합니다 .를 선택 합니다. 이 DSL을 모델에 표시하는 동시에 다른 DSL에 대한 참조도 사용하려는 경우 두 옵션을 모두 선택하면 됩니다.
 
-3. **확인**을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
+3. **확인** 을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
 4. 텍스트 템플릿에서 DSL에 액세스하려면 새 프로젝트에서 AdapterManager.tt를 수정해야 합니다. 명령 및 이벤트 처리기와 같은 기타 코드에서 DSL에 액세스하려면 이 단계를 생략합니다. 자세한 내용은 [텍스트 템플릿에서 Visual Studio ModelBus 사용](../modeling/using-visual-studio-modelbus-in-a-text-template.md)을 참조 하세요.
 
@@ -50,11 +52,11 @@ ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참
 
        `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-   3. ModelBusAdapter 프로젝트의 참조에서 **VisualStudio**를 추가 합니다.
+   3. ModelBusAdapter 프로젝트의 참조에서 **VisualStudio** 를 추가 합니다.
 
       텍스트 템플릿과 기타 코드에서 모두 DSL에 액세스하려면 어댑터 두 개(수정된 어댑터와 수정되지 않은 어댑터)가 필요합니다.
 
-5. **모든 템플릿 변환**을 클릭 합니다.
+5. **모든 템플릿 변환** 을 클릭 합니다.
 
 6. 솔루션을 다시 빌드합니다.
 
@@ -70,7 +72,7 @@ Visual Studio ModelBus 어댑터는 기본적으로 요소의 guid를 사용 하
 
 1. DslDefinition.dsl을 엽니다.
 
-2. DSL 탐색기에서 **Xml 직렬화 동작**을 확장 한 다음 **클래스 데이터**를 확장 합니다.
+2. DSL 탐색기에서 **Xml 직렬화 동작** 을 확장 한 다음 **클래스 데이터** 를 확장 합니다.
 
 3. ModelBus 참조를 만들 각 클래스에 대해 다음 작업을 수행합니다.
 
@@ -90,9 +92,9 @@ DSL에서 다른 DSL에 대 한 참조를 사용할 수 있도록 하려면 먼�
 
 ### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>DSL이 표시된 DSL에 대한 참조를 사용하도록 설정하려면
 
-1. DSL 정의 다이어그램에서 다이어그램의 주 부분을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
+1. DSL 정의 다이어그램에서 다이어그램의 주 부분을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용** 을 클릭 합니다.
 
-2. 대화 상자에서 **이 모델을 사용 하 여 모델 버스 참조를 사용 하도록 설정**합니다 .를 선택 합니다.
+2. 대화 상자에서 **이 모델을 사용 하 여 모델 버스 참조를 사용 하도록 설정** 합니다 .를 선택 합니다.
 
 3. 참조를 사용하는 DSL의 DSL 프로젝트에서 프로젝트 참조에 다음 어셈블리를 추가합니다. 노출 된 DSL의 ModelBusAdapter\bin * 디렉터리에서 이러한 어셈블리 (.dll 파일)를 찾을 수 있습니다 \\ .
 
@@ -118,15 +120,15 @@ DSL에서 다른 DSL에 대 한 참조를 사용할 수 있도록 하려면 먼�
 
 ### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>사용자가 도메인 속성에서 ModelBus 참조를 설정하도록 허용하려면
 
-1. 도메인 속성을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBusReference 특정 속성 편집**을 클릭 합니다. 그러면 *모델 버스 선택*입니다.
+1. 도메인 속성을 마우스 오른쪽 단추로 클릭 한 다음 **ModelBusReference 특정 속성 편집** 을 클릭 합니다. 그러면 *모델 버스 선택* 입니다.
 
-2. 모델 또는 모델 내의 요소에 대 한 적절 한 **종류의 ModelBusReference**를 선택 합니다.
+2. 모델 또는 모델 내의 요소에 대 한 적절 한 **종류의 ModelBusReference** 를 선택 합니다.
 
 3. 파일 대화 상자의 필터 문자열에 `Family Tree files |*.ftree` 등의 문자열을 입력합니다. 노출 된 DSL의 파일 확장명을 대체 합니다.
 
 4. 모델의 요소를 참조하려는 경우 Company.FamilyTree.Person과 같이 사용자가 선택할 수 있는 형식의 목록을 추가할 수 있습니다.
 
-5. **확인**을 클릭 한 다음 **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
+5. **확인** 을 클릭 한 다음 **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
     > [!WARNING]
     > 올바른 모델이나 엔터티를 선택하지 않은 경우 확인 단추가 사용 가능한 것처럼 표시될 수 있지만 클릭해도 아무런 변화가 없습니다.
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. 액세스하려는 DSL에는 텍스트 템플릿이 액세스하도록 구성된 ModelBus 어댑터가 있어야 합니다. 자세한 내용은 [DSL에 대 한 액세스 제공](#provide)을 참조 하세요.
 
-2. 일반적으로는 소스 DSL에 저장된 MBR(ModelBus 참조)을 사용하여 대상 DSL에 액세스합니다. 따라서 템플릿에는 소스 DSL의 지시문과 MBR을 해석하는 코드가 포함됩니다. 텍스트 템플릿에 대 한 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+2. 일반적으로는 소스 DSL에 저장된 MBR(ModelBus 참조)을 사용하여 대상 DSL에 액세스합니다. 따라서 템플릿에는 소스 DSL의 지시문과 MBR을 해석하는 코드가 포함됩니다. 텍스트 템플릿에 대 한 자세한 내용은 [Domain-Specific 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
    ```
    <#@ template debug="true" hostspecific="true"
@@ -480,19 +482,19 @@ private const string INVALID_REF_FORMAT =
 
 ModelBus 확장을 사용하면 DSL 솔루션에서 다음과 같은 변경을 수행할 수 있습니다.
 
-DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **Modelbus 사용**을 클릭 한 다음 **이 DSL을 사용 하도록 설정**을 선택 하 여 Modelbus를 사용 합니다.
+DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **Modelbus 사용** 을 클릭 한 다음 **이 DSL을 사용 하도록 설정** 을 선택 하 여 Modelbus를 사용 합니다.
 
 - DSL 프로젝트에서 참조가에 추가 됩니다 **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
 - DSL 정의에서 외부 형식 참조(`Microsoft.VisualStudio.Modeling.Integration.ModelBusReference`)가 추가됩니다.
 
-   **DSL 탐색기**의 **도메인 유형**아래에서 참조를 볼 수 있습니다. 외부 형식 참조를 수동으로 추가하려면 루트 노드를 마우스 오른쪽 단추로 클릭합니다.
+   **DSL 탐색기** 의 **도메인 유형** 아래에서 참조를 볼 수 있습니다. 외부 형식 참조를 수동으로 추가하려면 루트 노드를 마우스 오른쪽 단추로 클릭합니다.
 
 - 새 템플릿 파일 ( **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**)이 추가 됩니다.
 
-도메인 속성의 유형을 ModelBusReference로 설정 하 고 속성을 마우스 오른쪽 단추로 클릭 한 다음 **modelbusreference 특정 속성 사용**을 클릭 합니다.
+도메인 속성의 유형을 ModelBusReference로 설정 하 고 속성을 마우스 오른쪽 단추로 클릭 한 다음 **modelbusreference 특정 속성 사용** 을 클릭 합니다.
 
-- 여러 CLR 특성이 도메인 속성에 추가됩니다. 속성 창의 사용자 지정 특성 필드에서 해당 특성을 확인할 수 있습니다. **Dsl\GeneratedCode\DomainClasses.cs**에서 속성 선언에 대 한 특성을 볼 수 있습니다.
+- 여러 CLR 특성이 도메인 속성에 추가됩니다. 속성 창의 사용자 지정 특성 필드에서 해당 특성을 확인할 수 있습니다. **Dsl\GeneratedCode\DomainClasses.cs** 에서 속성 선언에 대 한 특성을 볼 수 있습니다.
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(
@@ -506,15 +508,15 @@ DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **Mod
     ("Choose a model file", "Target model|*.target")]
   ```
 
-DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **ModelBus 사용**을 클릭 한 다음 **이 DSL을 ModelBus에**표시를 선택 합니다.
+DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **ModelBus 사용** 을 클릭 한 다음 **이 DSL을 ModelBus에** 표시를 선택 합니다.
 
 - 새 프로젝트(`ModelBusAdapter`)가 솔루션에 추가됩니다.
 
 - `ModelBusAdapter`에 대한 참조가 `DslPackage` 프로젝트에 추가됩니다. `ModelBusAdapter` 에는 프로젝트에 대 한 참조가 있습니다 `Dsl` .
 
-- **DslPackage\source.extention.tt**에서 `|ModelBusAdapter|` 는 MEF 구성 요소로 추가 됩니다.
+- **DslPackage\source.extention.tt** 에서 `|ModelBusAdapter|` 는 MEF 구성 요소로 추가 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)

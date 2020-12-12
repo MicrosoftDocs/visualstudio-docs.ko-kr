@@ -1,5 +1,7 @@
 ---
 title: 프로그램 코드에서 모델 탐색 및 업데이트
+description: 모델 요소를 만들고 삭제 하 고, 속성을 설정 하 고, 요소 간의 링크를 만들고 삭제 하는 코드를 작성 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566178"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362212"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>프로그램 코드에서 모델 탐색 및 업데이트
 
@@ -55,7 +57,7 @@ ms.locfileid: "75566178"
 
  `henry.Name = "Henry VIII";`
 
- DSL 정의에서 속성의 **종류가** **계산**된 경우이를 설정할 수 없습니다. 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
+ DSL 정의에서 속성의 **종류가** **계산** 된 경우이를 설정할 수 없습니다. 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.
 
 ### <a name="relationships"></a>관계
  DSL 정의에서 정의 하는 도메인 관계는 관계의 각 끝에 있는 클래스에서 하나씩의 속성 쌍이 됩니다. 속성의 이름은 각 관계의 양쪽에서 역할에 대 한 레이블로 DslDefinition 다이어그램에 표시 됩니다. 역할의 복합성에 따라 속성의 형식은 관계의 다른 쪽 end에 있는 클래스 이거나 해당 클래스의 컬렉션입니다.
@@ -70,7 +72,7 @@ ms.locfileid: "75566178"
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **Elementlinks**. 관계는 도메인 관계 형식의 인스턴스인 *링크*라는 모델 요소로도 표현 됩니다. 링크에는 항상 하나의 소스 요소와 하나의 대상 요소가 있습니다. 소스 요소와 대상 요소는 동일할 수 있습니다.
+ **Elementlinks**. 관계는 도메인 관계 형식의 인스턴스인 *링크* 라는 모델 요소로도 표현 됩니다. 링크에는 항상 하나의 소스 요소와 하나의 대상 요소가 있습니다. 소스 요소와 대상 요소는 동일할 수 있습니다.
 
  링크 및 해당 속성에 액세스할 수 있습니다.
 
@@ -84,7 +86,7 @@ ms.locfileid: "75566178"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- 또한 링크에 액세스 하는 다른 방법도 있습니다. 예:
+ 또한 링크에 액세스 하는 다른 방법도 있습니다. 예를 들어:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +110,7 @@ ms.locfileid: "75566178"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> 클래스 정보 액세스
- DSL 정의의 클래스, 관계 및 기타 요소에 대 한 정보를 가져올 수 있습니다. 예:
+ DSL 정의의 클래스, 관계 및 기타 요소에 대 한 정보를 가져올 수 있습니다. 예를 들어:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +201,13 @@ using (Transaction t =
 
  관계의 인스턴스를 만들 수 있는 방법에는 세 가지가 있습니다. 이러한 세 가지 메서드는 모두 동일한 결과를 가집니다.
 
-- 원본 역할 수행자의 속성을 설정 합니다. 예:
+- 원본 역할 수행자의 속성을 설정 합니다. 예를 들어:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- 대상 역할 수행자의 속성을 설정 합니다. 예:
+- 대상 역할 수행자의 속성을 설정 합니다. 예를 들어:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +217,7 @@ using (Transaction t =
 
        이 역할의 복합성은 이므로 `0..*` 컬렉션에를 추가 합니다.
 
-- 관계의 인스턴스를 명시적으로 생성 합니다. 예:
+- 관계의 인스턴스를 명시적으로 생성 합니다. 예를 들어:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -288,7 +290,7 @@ using (Transaction t =
 ## <a name="locks"></a><a name="locks"></a> 중지
  잠금으로 인해 변경이 방지 될 수 있습니다. 잠금은 개별 요소, 파티션 및 저장소에 대해 설정할 수 있습니다. 이러한 수준에 변경 내용을 적용할 수 없도록 하는 잠금이 있는 경우 시도할 때 예외가 throw 될 수 있습니다. 요소를 사용 하 여 잠금을 설정할지 여부를 검색할 수 있습니다. GetLocks ()는 네임 스페이스에 정의 된 확장 메서드입니다 <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- 자세한 내용은 [잠금 정책을 정의 하 여 읽기 전용 세그먼트 만들기](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)를 참조 하세요.
+ 자세한 내용은 [Read-Only 세그먼트를 만드는 잠금 정책 정의](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)를 참조 하세요.
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> 복사 및 붙여넣기
  요소 또는 요소의 그룹을에 복사할 수 있습니다 <xref:System.Windows.Forms.IDataObject> .
@@ -327,7 +329,7 @@ using (Transaction t = targetDiagram.Store.
 |-|-|
 |도메인 클래스|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |도메인 관계|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
-|도형|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
+|셰이프|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
 |커넥터|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |다이어그램|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
@@ -381,7 +383,7 @@ FamilyTreeDiagram diagram =
 
  `connector.FromShape, connector.ToShape`
 
- 여러 셰이프는 합성입니다. 부모 셰이프와 하나 이상의 자식 계층으로 구성 됩니다. 다른 셰이프를 기준으로 배치 된 셰이프는 *자식 항목*이라고 합니다. 부모 셰이프가 이동 하면 자식이 함께 이동 합니다.
+ 여러 셰이프는 합성입니다. 부모 셰이프와 하나 이상의 자식 계층으로 구성 됩니다. 다른 셰이프를 기준으로 배치 된 셰이프는 *자식 항목* 이라고 합니다. 부모 셰이프가 이동 하면 자식이 함께 이동 합니다.
 
  *상대 자식은* 부모 셰이프의 경계 상자 외부에 나타날 수 있습니다. *중첩* 된 자식은 부모 범위 내에서 엄격 하 게 표시 됩니다.
 
@@ -482,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>저장소 파티션
  모델을 로드 하면 함께 제공 된 다이어그램이 동시에 로드 됩니다. 일반적으로 모델은 Store. DefaultPartition에 로드 되 고 다이어그램 콘텐츠는 다른 파티션에 로드 됩니다. 일반적으로 각 파티션의 콘텐츠를 로드 하 고 별도의 파일에 저장 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [도메인별 언어에서 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)

@@ -1,5 +1,7 @@
 ---
 title: 모델에서 테스트 개발
+description: 시스템 및 해당 구성 요소의 테스트를 구성 하는 데 도움이 되는 요구 사항 및 아키텍처 모델을 사용 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099299"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361835"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다. [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 모델과 테스트 간의 링크를 유지할 수도 있습니다.
@@ -22,7 +24,7 @@ ms.locfileid: "92099299"
  이러한 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
 ## <a name="system-and-subsystem-testing"></a>시스템 및 하위 시스템 테스트
- *승인 테스트*라고도 하는 *시스템 테스트* 는 사용자의 요구 사항을 충족 하는지 여부를 테스트 하는 것을 의미 합니다. 이러한 테스트는 내부 디자인이 아니라 시스템 외부에 표시되는 동작과 관련이 있습니다.
+ *승인 테스트* 라고도 하는 *시스템 테스트* 는 사용자의 요구 사항을 충족 하는지 여부를 테스트 하는 것을 의미 합니다. 이러한 테스트는 내부 디자인이 아니라 시스템 외부에 표시되는 동작과 관련이 있습니다.
 
  시스템 테스트는 시스템을 확장하거나 다시 디자인할 때 매우 유용합니다. 코드를 변경할 때 버그가 발생하는 것을 방지하는 데 도움이 됩니다.
 
@@ -63,7 +65,7 @@ ms.locfileid: "92099299"
 
 2. 모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.
 
-    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을**클릭 합니다.
+    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을** 클릭 합니다.
 
 3. 테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.
 
@@ -131,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> 모델 요소에 테스트 사례 연결
  프로젝트에서 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.
 
- 모든 종류의 요소에 테스트를 연결할 수 있습니다. 몇 가지 예제는 다음과 같습니다.
+ 모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.
 
 - 실행하는 테스트에 사용 사례를 연결합니다.
 
@@ -151,11 +153,11 @@ Assert (countAfter == countBefore = 1);
 
 2. 모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.
 
-    모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을**클릭 합니다.
+    모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을** 클릭 합니다.
 
 3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)

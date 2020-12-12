@@ -1,5 +1,7 @@
 ---
 title: 도메인별 언어에서 코드 생성
+description: Domain-Specific 언어 도구가 모델에 표시 된 데이터에서 코드, 문서 및 기타 아티팩트를 생성 하는 강력한 방법을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58a2537f2c2cab0123bc90e8d0e32a8da89874f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596582"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362199"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>도메인별 언어에서 코드 생성
 
@@ -28,7 +30,7 @@ Microsoft는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 �
 <# } #>  </table>
 ```
 
-고객 데이터베이스를 처리 하면 XML 파일이 모델 저장소로 읽혀집니다. 를 사용 하 여 만든 *지시문 프로세서*를 사용 하면 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Customer 클래스를 텍스트 템플릿의 코드에서 사용할 수 있습니다. 동일한 저장소에 대해 많은 텍스트 템플릿을 실행할 수 있습니다.
+고객 데이터베이스를 처리 하면 XML 파일이 모델 저장소로 읽혀집니다. 를 사용 하 여 만든 *지시문 프로세서* 를 사용 하면 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Customer 클래스를 텍스트 템플릿의 코드에서 사용할 수 있습니다. 동일한 저장소에 대해 많은 텍스트 템플릿을 실행할 수 있습니다.
 
 텍스트 템플릿은에 필수적 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 입니다. 이러한 도구는 도구를 Visual Studio와 통합 하는 데 사용 되는 VSPackage 및 컨트롤 뿐만 아니라 도메인 모델의 요소에 대 한 소스 코드를 생성 하는 데 사용 됩니다.
 
@@ -53,7 +55,7 @@ Microsoft는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델에 표시 �
 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)\
 텍스트 템플릿 지시문 및 제어 블록의 구문을 제공 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 텍스트 템플릿 변환 프로세스에 대해 설명 합니다.

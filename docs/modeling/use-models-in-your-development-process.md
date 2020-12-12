@@ -1,5 +1,7 @@
 ---
 title: 개발 프로세스에서 모델 사용
+description: Visual Studio에서 모델을 사용 하 여 시스템, 응용 프로그램 또는 구성 요소를 이해 하 고 변경 하는 데 도움을 줍니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298101"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361432"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
@@ -136,7 +138,7 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Agile 개발에서 모델 사용](/previous-versions/ff398061(v=vs.140))
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

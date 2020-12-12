@@ -1,5 +1,7 @@
 ---
 title: 이미지 모양의 속성
+description: 이미지 모양 및 이미지 셰이프를 사용 하 여 생성 된 디자이너에서 도메인 클래스를 표시 하는 방법을 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811177"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361916"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 
@@ -39,7 +41,7 @@ ms.locfileid: "90811177"
 
 기본적으로 이미지 파일 등의 디자이너 리소스 파일은 **Dsl** 프로젝트의 **Resources** 폴더에 있습니다.
 
-자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
 이미지 모양에는 다음 표에 나열 된 속성이 있습니다.
 
@@ -64,13 +66,13 @@ ms.locfileid: "90811177"
 |참고|이 셰이프와 연결 된 비공식 메모입니다.|\<none>|
 |초기 높이|이 도형의 초기 높이 (인치)입니다.|1|
 |초기 너비|이 도형의 초기 너비 (인치)입니다.|1.5|
-|속성으로 노출 된 채우기 색<br /><br /> 노출 된 채우기 그라데이션 모드<br /><br /> 제공 된 윤곽선 색을 속성으로 표시<br /><br /> 노출 된 윤곽선 대시 스타일을 속성으로<br /><br /> 개요 두께를 속성으로 노출<br /><br /> 텍스트 색을 노출 합니다.|이면 `True` 사용자가 셰이프의 설명 된 속성을 설정할 수 있습니다. 이를 설정 하려면 셰이프 정의를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 클릭 합니다.|거짓|
+|속성으로 노출 된 채우기 색<br /><br /> 노출 된 채우기 그라데이션 모드<br /><br /> 제공 된 윤곽선 색을 속성으로 표시<br /><br /> 노출 된 윤곽선 대시 스타일을 속성으로<br /><br /> 개요 두께를 속성으로 노출<br /><br /> 텍스트 색을 노출 합니다.|이면 `True` 사용자가 셰이프의 설명 된 속성을 설정할 수 있습니다. 이를 설정 하려면 셰이프 정의를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 클릭 합니다.|거짓|
 |설명|생성 된 디자이너를 문서화 하는 데 사용 됩니다.|\<none>|
 |표시 이름|이 셰이프에 대해 생성 된 디자이너에 표시 되는 이름입니다.|\<none>|
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none>|
 |Help Keyword|이 요소에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none>|
 |이미지|이 도형에 사용 되는 이미지 파일의 경로입니다.|\<none>|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

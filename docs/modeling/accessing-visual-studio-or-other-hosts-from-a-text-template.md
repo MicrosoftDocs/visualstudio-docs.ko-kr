@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿에서 Visual Studio 또는 다른 호스트 액세스
+description: 템플릿을 실행 하는 호스트에 의해 노출 되는 텍스트 템플릿에서 메서드와 속성을 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,12 +10,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 068de3c14240bc7e13be0e2e564c2c4e6034f987
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0f19f96ee5f6879ccc3328c29d0e1fa1d2a6d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531419"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362251"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>텍스트 템플릿에서 Visual Studio 또는 다른 호스트에 액세스
 
@@ -44,7 +46,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>오류 메시지 표시
 
-이 예에서는 템플릿을 변환할 때 메시지를 기록 합니다. 호스트가 Visual Studio 인 경우 오류는 **오류 목록**에 추가 됩니다.
+이 예에서는 템플릿을 변환할 때 메시지를 기록 합니다. 호스트가 Visual Studio 인 경우 오류는 **오류 목록** 에 추가 됩니다.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

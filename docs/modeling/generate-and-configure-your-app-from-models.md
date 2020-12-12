@@ -1,5 +1,7 @@
 ---
 title: 모델에서 앱 생성 및 구성
+description: 모델이 나타내는 내용 및 모델에서 응용 프로그램의 일부를 생성 하거나 구성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114890"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361874"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 모델에서 애플리케이션의 일부를 생성하거나 구성할 수 있습니다.
@@ -20,7 +22,7 @@ ms.locfileid: "76114890"
  모델은 코드보다 더 직접적으로 요구 사항을 나타냅니다. 모델에서 직접 애플리케이션의 동작을 파생시키면 코드를 업데이트하는 것보다 훨씬 더 빠르고 안정적으로 변경된 요구 사항에 응답할 수 있습니다. 파생을 설정하려면 일부 초기 작업이 필요하지만 요구 사항 변경이 예상되거나 제품의 여러 변형을 계획하는 경우 이 투자는 가치가 있습니다.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>모델에서 애플리케이션 코드 생성
- 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 모델을 유지 하는 것과 같은 Visual Studio 솔루션에서 코드를 생성할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+ 코드를 생성하는 가장 쉬운 방법은 텍스트 템플릿을 사용하는 것입니다. 모델을 유지 하는 것과 같은 Visual Studio 솔루션에서 코드를 생성할 수 있습니다. 자세한 내용은 다음을 참조하세요.
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +37,7 @@ ms.locfileid: "76114890"
   그러나 기존 애플리케이션에서 시작하는 경우 독립적으로 변형할 수 있도록 모델에 의해 제어되는 다양한 동작을 구분하기 위해 많은 리팩터링이 필요할 수 있습니다. 프로젝트 비용을 예상할 때 애플리케이션의 이러한 측면을 평가하는 것이 좋습니다.
 
 ## <a name="configuring-your-application-from-a-model"></a>모델에서 애플리케이션 구성
- 런타임에 애플리케이션의 동작을 변형하려는 경우 애플리케이션이 컴파일되기 전에 소스 코드를 생성하는 코드 생성을 사용할 수 없습니다. 대신 모델을 읽도록 응용 프로그램을 디자인 하 고 해당 동작을 적절 하 게 변경할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+ 런타임에 애플리케이션의 동작을 변형하려는 경우 애플리케이션이 컴파일되기 전에 소스 코드를 생성하는 코드 생성을 사용할 수 없습니다. 대신 모델을 읽도록 응용 프로그램을 디자인 하 고 해당 동작을 적절 하 게 변경할 수 있습니다. 자세한 내용은 다음을 참조하세요.
 
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -70,7 +72,7 @@ ms.locfileid: "76114890"
 
      예를 들어 UML 클래스 다이어그램이 상자와 화살표의 컬렉션인 경우 이론상 이 표기법을 사용하여 무엇이든 정의할 수 있습니다. 그러나 실제로 형식 집합을 설명하는 경우를 제외하고 클래스 다이어그램을 사용하지 않는 것이 좋습니다. 예를 들어 클래스 다이어그램을 조정 하 여 다양 한 유형의 웹 페이지를 설명할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)

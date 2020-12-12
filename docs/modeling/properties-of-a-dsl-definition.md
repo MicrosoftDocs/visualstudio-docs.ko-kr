@@ -1,5 +1,7 @@
 ---
 title: DSL 정의의 속성
+description: DslDefinition 속성이 버전 번호 매기기와 같은 도메인별 언어 정의 속성을 정의 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,23 +11,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 48771a61577c5c7ca910cc3b4f8496db37ada281
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810095"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360522"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
-DslDefinition 속성은 버전 번호 매기기와 같은 *도메인별 언어* 정의 속성을 정의 합니다. *도메인 특정 언어 디자이너*에서 다이어그램의 열린 영역을 클릭 하면 **속성** 창에 dsldefinition 속성이 나타납니다.
+DslDefinition 속성은 버전 번호 매기기와 같은 *도메인별 언어* 정의 속성을 정의 합니다. *도메인 특정 언어 디자이너* 에서 다이어그램의 열린 영역을 클릭 하면 **속성** 창에 dsldefinition 속성이 나타납니다.
 
- 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+ 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
  DslDefinition에는 다음 표의 속성이 있습니다.
 
 |속성|설명|기본값|
 |-|-|-|
-|액세스 한정자|도메인 클래스의 액세스 한정자가 public 또는 internal 인지 여부를 확인 합니다.|공공|
+|액세스 한정자|도메인 클래스의 액세스 한정자가 public 또는 internal 인지 여부를 확인 합니다.|public|
 |사용자 지정 특성|도메인 클래스에 대해 정의 된 사용자 지정 특성입니다.<br /><br /> **참고** 찾아보기 단추를 사용 하 여 특성을 추가 합니다.|\<none>|
 |회사 이름|시스템 레지스트리의 현재 회사 이름 이름입니다.|현재 회사 이름|
 |Name|이 도메인 클래스의 이름입니다.|현재 이름|

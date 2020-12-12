@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿에서 이스케이프 시퀀스 사용
+description: '텍스트 템플릿에서 이스케이프 시퀀스를 사용 하 여 텍스트 템플릿 태그를 생성 하 고 c # 코드 에서만 제어 문자와 따옴표를 이스케이프 처리 하는 방법에 대해 알아봅니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594047"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361328"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>텍스트 템플릿에서 이스케이프 시퀀스 사용
 
@@ -36,6 +38,6 @@ ms.locfileid: "75594047"
 
 - 이스케이프 \\ 문자 ()가 제어 문자 또는 따옴표를 이스케이프 하는 위치 (c # 에서만)가 아닌 다른 위치에 있으면 문자는 직접 출력 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 이스케이프 시퀀스를 사용하여 템플릿에서 템플릿 생성](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

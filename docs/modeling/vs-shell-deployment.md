@@ -1,5 +1,7 @@
 ---
 title: VS 셸 배포
+description: 격리 된 셸에서 DSL을 사용 하 여 상호 작용 하는 데 필요한 Visual Studio 기능 및 해당 솔루션이 표시 되는 방법을 결정 하는 방법을 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3729c09198b331728e2cc67299ffc3ad6c3d26
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94cffbf5ea1f7ac3c437a4c22f27f881d5493e79
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809650"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361263"
 ---
 # <a name="vs-shell-deployment"></a>VS 셸 배포
 
@@ -20,7 +22,7 @@ ms.locfileid: "90809650"
 
 Visual Studio Shell을 배포 대상으로 설정 하려면 다음을 수행 합니다.
 
-1. **Dslpackage** 프로젝트에서 **source.extension.tt**를 엽니다.
+1. **Dslpackage** 프로젝트에서 **source.extension.tt** 를 엽니다.
 
 2. 삽입 아래에서 `<SupportedProducts>` 다음을 수행 합니다.
 

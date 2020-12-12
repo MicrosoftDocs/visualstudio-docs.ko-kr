@@ -1,5 +1,7 @@
 ---
 title: 생성된 클래스 재정의 및 확장
+description: DSL 정의가 도메인별 언어를 기반으로 하는 강력한 도구 집합을 빌드할 수 있는 플랫폼에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595893"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362095"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>생성 된 클래스 재정의 및 확장
 
@@ -46,7 +48,7 @@ public partial class Book
 
 재정의할 수 있는 메서드를 검색 하려면 클래스에서 **override** 를 입력 하 고 그 뒤에 공백을 입력 합니다. IntelliSense 도구 설명에서 재정의할 수 있는 메서드를 알려 줍니다.
 
-### <a name="double-derived-classes"></a>이중 파생 클래스
+### <a name="double-derived-classes"></a>Double-Derived 클래스
 
 생성 된 클래스에 있는 대부분의 메서드는 모델링 네임 스페이스의 고정 클래스 집합에서 상속 됩니다. 그러나 일부 메서드는 생성 된 코드에 정의 되어 있습니다. 일반적으로 이것은 재정의할 수 없음을 의미 합니다. 동일한 클래스의 다른 부분 정의에 정의 된 메서드를 partial 클래스 하나에서 재정의할 수 없습니다.
 
@@ -66,7 +68,7 @@ public partial class Book
 
 생성자는 재정의할 수 없습니다. 이중 파생 클래스 에서도 생성자는 파생 클래스에 있어야 합니다.
 
-사용자 고유의 생성자를 제공 하려는 경우 `Has Custom Constructor` DSL 정의에서 도메인 클래스에 대해를 설정 하 여이 작업을 수행할 수 있습니다. **모든 템플릿 변환**을 클릭 하면 생성 된 코드에는 해당 클래스에 대 한 생성자가 포함 되지 않습니다. 누락 된 생성자에 대 한 호출을 포함 합니다. 이렇게 하면 솔루션을 빌드할 때 오류 보고서가 발생 합니다. 오류 보고서를 두 번 클릭 하 여 생성 된 코드에서 제공 해야 하는 항목을 설명 하는 설명을 확인 합니다.
+사용자 고유의 생성자를 제공 하려는 경우 `Has Custom Constructor` DSL 정의에서 도메인 클래스에 대해를 설정 하 여이 작업을 수행할 수 있습니다. **모든 템플릿 변환** 을 클릭 하면 생성 된 코드에는 해당 클래스에 대 한 생성자가 포함 되지 않습니다. 누락 된 생성자에 대 한 호출을 포함 합니다. 이렇게 하면 솔루션을 빌드할 때 오류 보고서가 발생 합니다. 오류 보고서를 두 번 클릭 하 여 생성 된 코드에서 제공 해야 하는 항목을 설명 하는 설명을 확인 합니다.
 
 생성 된 파일과 별도의 파일에 partial 클래스 정의를 작성 하 고 생성자를 제공 합니다.
 

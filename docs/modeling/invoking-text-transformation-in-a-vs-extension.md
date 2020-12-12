@@ -1,5 +1,7 @@
 ---
 title: VS 확장명에서 텍스트 변형 호출
+description: 텍스트 템플릿 서비스를 사용 하 여 텍스트 템플릿을 변환 하는 방법을 알아봅니다. STextTemplating를 가져와서 ITextTemplating으로 캐스팅 하는 방법에 대해서도 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594593"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360873"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 확장에서 텍스트 변환 호출
 
@@ -136,9 +138,9 @@ Sample text.
 
 <xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
-## <a name="related-articles"></a>관련된 문서
+## <a name="related-articles"></a>관련 문서
 
-전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 `TransformText()` 클래스의 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 `TransformText()` 클래스의 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
 Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)를 참조 하세요.
 

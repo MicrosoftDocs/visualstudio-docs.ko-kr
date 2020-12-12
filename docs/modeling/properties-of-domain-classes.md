@@ -1,5 +1,7 @@
 ---
 title: 도메인 클래스의 속성
+description: 액세스 한정자, 사용자 지정 특성 등 도메인 클래스의 다양 한 속성에 대해 알아보고 이중 파생을 생성 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810030"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360795"
 ---
 # <a name="properties-of-domain-classes"></a>도메인 클래스의 속성
-도메인 클래스의 속성은 다음 표에 나와 있습니다. 도메인 클래스에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+도메인 클래스의 속성은 다음 표에 나와 있습니다. 도메인 클래스에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
 |속성|설명|기본값|
 |-|-|-|
@@ -34,6 +36,6 @@ ms.locfileid: "90810030"
 |표시 이름|이 도메인 클래스에 대해 생성 된 디자이너에 표시 되는 이름입니다.|\<none>|
 |Help Keyword|이 도메인 클래스에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

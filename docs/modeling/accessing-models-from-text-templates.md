@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿에서 모델에 액세스
+description: 텍스트 템플릿을 사용 하 여 도메인 특정 언어 모델을 기반으로 하는 보고서 파일, 소스 코드 파일 및 기타 텍스트 파일을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531471"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362290"
 ---
 # <a name="access-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 
 텍스트 템플릿을 사용 하면 도메인별 언어 모델을 기반으로 하는 보고서 파일, 소스 코드 파일 및 기타 텍스트 파일을 만들 수 있습니다. 텍스트 템플릿에 대 한 기본 정보는 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요. DSL을 디버그할 때 텍스트 템플릿은 실험적 모드에서 작동 하 고 DSL을 배포한 컴퓨터 에서도 작동 합니다.
 
 > [!NOTE]
-> DSL 솔루션을 만들 때 예제 텍스트 템플릿인 .tt 파일이 디버깅 프로젝트에 생성 됩니다 ** \* .** 도메인 클래스의 이름을 변경 하면 이러한 템플릿이 더 이상 작동 하지 않습니다. 그럼에도 불구 하 고 필요한 기본 지시문을 포함 하 고 DSL과 일치 하도록 업데이트할 수 있는 예제를 제공 합니다.
+> DSL 솔루션을 만들 때 예제 텍스트 템플릿인 .tt 파일이 디버깅 프로젝트에 생성 됩니다 **\* .** 도메인 클래스의 이름을 변경 하면 이러한 템플릿이 더 이상 작동 하지 않습니다. 그럼에도 불구 하 고 필요한 기본 지시문을 포함 하 고 DSL과 일치 하도록 업데이트할 수 있는 예제를 제공 합니다.
 
  텍스트 템플릿에서 모델에 액세스 하려면 다음을 수행 합니다.
 
@@ -72,7 +74,7 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- 지시문의 이름 ( `MyLanguage` 이 예제에서는)은 DSL의 이름에서 파생 됩니다. DSL의 일부로 생성 된 *지시문 프로세서* 를 호출 합니다. **Dsl\GeneratedCode\DirectiveProcessor.cs**에서 소스 코드를 찾을 수 있습니다.
+ 지시문의 이름 ( `MyLanguage` 이 예제에서는)은 DSL의 이름에서 파생 됩니다. DSL의 일부로 생성 된 *지시문 프로세서* 를 호출 합니다. **Dsl\GeneratedCode\DirectiveProcessor.cs** 에서 소스 코드를 찾을 수 있습니다.
 
  DSL 지시문 프로세서는 다음과 같은 두 가지 주요 작업을 수행 합니다.
 
@@ -150,7 +152,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ### <a name="splitting-a-long-file"></a>긴 파일 분할
  이 방법에서는 템플릿을 사용 하 여 구분 기호로 구분 된 단일 파일을 생성 합니다. 그런 다음 파일을 파트로 분할 합니다. 두 개의 템플릿이 있습니다. 하나는 단일 파일을 생성 하 고 다른 하나는 분할 하는 데 사용할 수 있습니다.
 
- **LoopTemplate** 는 긴 단일 파일을 생성 합니다. 파일 확장명은 **모든 템플릿 변환**을 클릭 하면 직접 처리 되지 않으므로 파일 확장명이 "t4"입니다. 이 템플릿은 세그먼트를 구분 하는 구분 기호 문자열을 지정 하는 매개 변수를 사용 합니다.
+ **LoopTemplate** 는 긴 단일 파일을 생성 합니다. 파일 확장명은 **모든 템플릿 변환** 을 클릭 하면 직접 처리 되지 않으므로 파일 확장명이 "t4"입니다. 이 템플릿은 세그먼트를 구분 하는 구분 기호 문자열을 지정 하는 매개 변수를 사용 합니다.
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>

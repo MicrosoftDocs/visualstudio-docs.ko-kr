@@ -1,5 +1,7 @@
 ---
 title: 도메인 역할의 속성
+description: 컬렉션 형식, Customer 특성 등 도메인 역할에 연결 된 속성에 대해 알아보고 검색할 수 있는 속성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544146"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362342"
 ---
 # <a name="properties-of-domain-roles"></a>도메인 역할의 속성
-다음 표의 속성은 도메인 역할과 연결 되어 있습니다. 도메인 역할에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+다음 표의 속성은 도메인 역할과 연결 되어 있습니다. 도메인 역할에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
 |속성|설명|기본값|
 |-|-|-|
@@ -41,6 +43,6 @@ ms.locfileid: "85544146"
 > [!NOTE]
 > 표시 이름의 기본값은 소문자 문자가 뒤에 오는 각 대문자 앞에 공백을 삽입 하 여 연결 된 속성 값을 기반으로 하며 그 뒤에 다른 대문자 문자가 오지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 관계의 속성](../modeling/properties-of-domain-relationships.md)

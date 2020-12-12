@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 지시문 프로세서 만들기'
+description: Visual Studio를 사용 하 여 사용자 지정 지시문 프로세서를 작성 하 여 텍스트 템플릿을 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532238"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361887"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
-*지시문 프로세서* 는 *생성 된 변환 클래스*에 코드를 추가 하는 방식으로 작동 합니다. *텍스트 템플릿에서* *지시문* 을 호출 하는 경우 텍스트 템플릿에 작성 하는 나머지 코드는 지시문이 제공 하는 기능에 의존할 수 있습니다.
+*지시문 프로세서* 는 *생성 된 변환 클래스* 에 코드를 추가 하는 방식으로 작동 합니다. *텍스트 템플릿에서* *지시문* 을 호출 하는 경우 텍스트 템플릿에 작성 하는 나머지 코드는 지시문이 제공 하는 기능에 의존할 수 있습니다.
 
 사용자 고유의 사용자 지정 지시문 프로세서를 작성할 수 있으며, 이 프로세서를 사용하여 텍스트 템플릿을 사용자 지정할 수 있습니다. 사용자 지정 지시문 프로세서를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>에서 상속하는 클래스를 만듭니다.
 
@@ -599,15 +601,15 @@ End Property
     End Namespace
     ```
 
-4. Visual Basic의 경우 **프로젝트** 메뉴를 열고 **customdp 속성**을 클릭 합니다. **응용 프로그램** 탭의 **루트 네임 스페이스**에서 기본값인를 삭제 `CustomDP` 합니다.
+4. Visual Basic의 경우 **프로젝트** 메뉴를 열고 **customdp 속성** 을 클릭 합니다. **응용 프로그램** 탭의 **루트 네임 스페이스** 에서 기본값인를 삭제 `CustomDP` 합니다.
 
-5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
+5. **파일** 메뉴에서 **모두 저장** 을 클릭합니다.
 
-6. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+6. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
 ### <a name="build-the-project"></a>프로젝트 빌드
 
-프로젝트를 빌드합니다. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+프로젝트를 빌드합니다. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
 ## <a name="register-the-directive-processor"></a>지시문 프로세서 등록
 
@@ -637,9 +639,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. `regedit`시작 메뉴 또는 명령줄을 사용 하 여 명령을 실행 합니다.
 
-2. **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* .0 \ .0\ texttemplating\directiveprocessors**위치로 이동 하 여 노드를 클릭 합니다.
+2. **\\ \* .0 \ .0\ texttemplating\directiveprocessorsHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio** 위치로 이동 하 여 노드를 클릭 합니다.
 
-   64 비트 시스템에서 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* \ .0\ texttemplating\directiveprocessors를 사용 합니다.**
+   64 비트 시스템에서HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio를 사용 **\\ \* 합니다. 0 \ .0\ texttemplating\directiveprocessors**
 
 3. CustomDirectiveProcessor라는 새 키를 추가합니다.
 
@@ -826,15 +828,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     > 이 예제에서 `Processor` 매개 변수의 값은 `CustomDirectiveProcessor`입니다. `Processor` 매개 변수의 값은 프로세서의 레지스트리 키 이름과 일치해야 합니다.
 
-5. **파일** 메뉴에서 **모두 저장**을 선택 합니다.
+5. **파일** 메뉴에서 **모두 저장** 을 선택 합니다.
 
 ### <a name="to-test-the-directive-processor"></a>지시문 프로세서를 테스트하려면
 
-1. **솔루션 탐색기**에서 TestDP.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 TestDP.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
-   Visual Basic 사용자의 경우 기본적으로 **솔루션 탐색기** 에 TestDP.txt 표시 되지 않을 수 있습니다. 프로젝트에 할당 된 모든 파일을 표시 하려면 **프로젝트** 메뉴를 열고 **모든 파일 표시**를 클릭 합니다.
+   Visual Basic 사용자의 경우 기본적으로 **솔루션 탐색기** 에 TestDP.txt 표시 되지 않을 수 있습니다. 프로젝트에 할당 된 모든 파일을 표시 하려면 **프로젝트** 메뉴를 열고 **모든 파일 표시** 를 클릭 합니다.
 
-2. **솔루션 탐색기**에서 TestDP.txt 노드를 확장 한 다음 TestDP.txt를 두 번 클릭 하 여 편집기에서 엽니다.
+2. **솔루션 탐색기** 에서 TestDP.txt 노드를 확장 한 다음 TestDP.txt를 두 번 클릭 하 여 편집기에서 엽니다.
 
     생성된 텍스트 출력이 나타납니다. 출력은 다음과 비슷합니다.
 
@@ -959,8 +961,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. **파일** 메뉴에서 **TestDP.txt저장 **을 클릭 합니다.
+2. **파일** 메뉴에서 **TestDP.txt저장** 을 클릭 합니다.
 
-3. 브라우저에서 출력을 보려면 **솔루션 탐색기**에서 TestDP.htm를 마우스 오른쪽 단추로 클릭 하 고 **브라우저에서 보기**를 클릭 합니다.
+3. 브라우저에서 출력을 보려면 **솔루션 탐색기** 에서 TestDP.htm를 마우스 오른쪽 단추로 클릭 하 고 **브라우저에서 보기** 를 클릭 합니다.
 
    HTML 형식을 적용 한 경우를 제외 하 고는 원래 텍스트와 동일 하 게 출력 됩니다. 각 항목 이름이 굵게 표시 됩니다.

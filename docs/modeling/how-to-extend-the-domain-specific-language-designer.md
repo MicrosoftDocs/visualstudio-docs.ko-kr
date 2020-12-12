@@ -1,5 +1,7 @@
 ---
 title: '방법: 도메인별 언어 디자이너 확장'
+description: DSL (도메인별 언어) 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532588"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361510"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 
@@ -30,13 +32,13 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 2. 새 **VSIX 프로젝트** 프로젝트를 만듭니다.
 
-     **솔루션에 추가를**선택 합니다.
+     **솔루션에 추가를** 선택 합니다.
 
      *SOURCE.EXTENSION.VSIXMANIFEST* VSIX 매니페스트 편집기에서 열립니다.
 
-3. 콘텐츠 필드 위에서 **콘텐츠 추가**를 클릭 합니다.
+3. 콘텐츠 필드 위에서 **콘텐츠 추가** 를 클릭 합니다.
 
-4. **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 을 **MEF 구성 요소**로 설정 하 고 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정 합니다.
+4. **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 을 **MEF 구성 요소** 로 설정 하 고 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정 합니다.
 
 5. **버전 선택** 을 클릭 하 고 **Visual Studio Enterprise** 이 선택 되어 있는지 확인 합니다.
 
@@ -76,7 +78,7 @@ DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 �
 
 확장을 제거 하려면 다음 단계를 수행 합니다.
 
-1. Visual Studio의 **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
+1. Visual Studio의 **도구** 메뉴에서 **확장 관리자** 를 클릭 합니다.
 
 2. 확장을 선택 하 고 삭제 합니다.
 

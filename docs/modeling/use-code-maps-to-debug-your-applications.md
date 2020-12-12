@@ -1,5 +1,7 @@
 ---
 title: 코드 맵을 사용하여 애플리케이션 디버그
+description: 코드 맵을 사용 하 여 많은 코드 베이스, 익숙하지 않은 코드 또는 레거시 코드에서 손실을 방지 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594112"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361653"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 애플리케이션 디버그
 
@@ -39,7 +41,7 @@ ms.locfileid: "75594112"
 ## <a name="understand-the-problem"></a>문제 이해
  작업 중인 드로잉 프로그램에 버그가 있다고 가정합니다. 버그를 재현 하려면 Visual Studio에서 솔루션을 열고 **F5** 키를 눌러 디버깅을 시작 합니다.
 
- 선을 그릴 때 **마지막 스트로크 실행 취소**를 선택 하면 다음 줄을 그릴 때까지 아무 일도 발생 하지 않습니다.
+ 선을 그릴 때 **마지막 스트로크 실행 취소** 를 선택 하면 다음 줄을 그릴 때까지 아무 일도 발생 하지 않습니다.
 
  ![코드 맵 &#45; 재현 버그](../modeling/media/codemapstoryboardpaint0.png)
 
@@ -58,7 +60,7 @@ ms.locfileid: "75594112"
  ![코드 맵 &#45; 도구 설명 표시](../modeling/media/codemapstoryboardpaint4.png)
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>맵에서 코드 탐색 및 검사
- 각 필드에 대 한 코드 정의를 보려면 맵의 필드를 두 번 클릭 하거나 필드를 선택 하 고 **F12**키를 누릅니다. 녹색 화살표를 누르면 맵의 항목 사이에서 이동합니다. 코드 편집기의 커서를 눌러도 자동으로 이동할 수 있습니다.
+ 각 필드에 대 한 코드 정의를 보려면 맵의 필드를 두 번 클릭 하거나 필드를 선택 하 고 **F12** 키를 누릅니다. 녹색 화살표를 누르면 맵의 항목 사이에서 이동합니다. 코드 편집기의 커서를 눌러도 자동으로 이동할 수 있습니다.
 
  ![코드 맵 &#45; 검사 필드 정의](../modeling/media/codemapstoryboardpaint5.png)
 
@@ -82,11 +84,11 @@ ms.locfileid: "75594112"
  ![코드 맵 &#45; 레이아웃 변경](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
-> **증분 레이아웃** 은 기본적으로 설정 되어 있습니다. 이 설정은 새 항목을 추가할 때 맵을 가능한 적게 다시 정렬합니다. 새 항목을 추가할 때마다 전체 맵을 다시 정렬 하려면 **증분 레이아웃**을 해제 합니다.
+> **증분 레이아웃** 은 기본적으로 설정 되어 있습니다. 이 설정은 새 항목을 추가할 때 맵을 가능한 적게 다시 정렬합니다. 새 항목을 추가할 때마다 전체 맵을 다시 정렬 하려면 **증분 레이아웃** 을 해제 합니다.
 
  ![코드 맵 &#45; 레이아웃 변경](../modeling/media/codemapstoryboardpaint7.png)
 
- 이러한 메서드를 살펴보겠습니다. 맵에서 **맵에서 paintcanvas** 메서드를 두 번 클릭 하거나이 메서드를 선택 하 고 **F12**키를 누릅니다. 이 메서드가 빈 목록으로 `history` 및 `paintObjects`를 만드는 것을 볼 수 있습니다.
+ 이러한 메서드를 살펴보겠습니다. 맵에서 **맵에서 paintcanvas** 메서드를 두 번 클릭 하거나이 메서드를 선택 하 고 **F12** 키를 누릅니다. 이 메서드가 빈 목록으로 `history` 및 `paintObjects`를 만드는 것을 볼 수 있습니다.
 
  ![코드 맵 &#45; 메서드 정의 검사](../modeling/media/codemapstoryboardpaint8.png)
 
@@ -131,7 +133,7 @@ ms.locfileid: "75594112"
 
  ![메서드 호출이 없는 업데이트 map &#45; 코드 맵](../modeling/media/codemapstoryboardpaint16.png)
 
- 이제 맵은 **실행 취소** 와 다시 **그리기**간의 링크를 표시 합니다.
+ 이제 맵은 **실행 취소** 와 다시 **그리기** 간의 링크를 표시 합니다.
 
  ![메서드 호출을 사용 하 여 업데이트 된 map &#45; 코드 맵](../modeling/media/codemapstoryboardpaint17.png)
 
@@ -140,7 +142,7 @@ ms.locfileid: "75594112"
 
  이제 조사를 완료 했습니다. 코드를 매핑하여 문제를 성공적으로 발견하고 해결했습니다. 코드 주위를 탐색하고 배운 내용을 기억하는 데 도움이 되며 문제를 해결하는 단계를 보여 주는 맵도 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [디버깅하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 시각화](../modeling/visualize-code.md)

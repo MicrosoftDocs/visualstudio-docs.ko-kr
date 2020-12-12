@@ -1,5 +1,7 @@
 ---
 title: 도메인별 언어 정보
+description: DSL (도메인별 언어)이 특정 문제 공간 또는 도메인의 문을 표현 하도록 설계 되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597271"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360892"
 ---
 # <a name="about-domain-specific-languages"></a>도메인별 언어 정보
 
@@ -54,11 +56,11 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 사용자 고유의 그래픽 디자이너와 고유한 다이어그램 표기법을 가진 도메인별 언어를 만든 다음 해당 언어를 사용 하 여 각 프로젝트에 대 한 적절 한 소스 코드를 생성할 수 있습니다.
 
-## <a name="domain-specific-development"></a>도메인 특정 개발
+## <a name="domain-specific-development"></a>Domain-Specific 개발
 
 도메인 특정 개발은 도메인별 언어를 사용 하 여 모델링할 수 있는 응용 프로그램 부분을 식별 한 다음 언어를 구성 하 고 응용 프로그램 개발자에 게 배포 하는 프로세스입니다. 개발자는 도메인별 언어를 사용 하 여 응용 프로그램과 관련 된 모델을 생성 하 고, 모델을 사용 하 여 소스 코드를 생성 한 다음 소스 코드를 사용 하 여 응용 프로그램을 개발 합니다.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>그래픽 도메인별 개발의 측면
+## <a name="aspects-of-graphical-domain-specific-development"></a>그래픽 Domain-Specific 개발의 측면
 
 그래픽 도메인별 언어는 다음과 같은 기능을 포함 해야 합니다.
 
@@ -94,7 +96,7 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
 도메인 특정 언어에 대 한 모델 버스 어댑터를 만들 수도 있습니다. 이 어댑터를 사용 하면 모델 및 모델 내에서 요소를 참조할 수 있으며 DSL의 인스턴스를 액세스 하 고 업데이트할 수 있는 코드를 작성할 수 있습니다. 강력한 모델 버스 메커니즘을 사용 하 여 여러 모델에서 작동 하는 Visual Studio 확장을 작성할 수 있습니다. 모델에서 작동 하는 독립 실행형 응용 프로그램을 작성할 수도 있습니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
 
-## <a name="benefits-of-domain-specific-development"></a>도메인 특정 개발의 이점
+## <a name="benefits-of-domain-specific-development"></a>Domain-Specific 개발의 이점
 
 도메인 특정 언어는 다음과 같은 이점을 제공할 수 있습니다.
 
@@ -110,7 +112,7 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
      개발자는 모델에서 생성 하는 코드를 사용 하 여 클라이언트에 표시할 수 있는 프로토타입 응용 프로그램을 만들 수 있습니다.
 
-## <a name="the-process-of-domain-specific-development"></a>도메인 특정 개발 프로세스
+## <a name="the-process-of-domain-specific-development"></a>Domain-Specific 개발 프로세스
 
 도메인 특정 언어를 사용 하는 대부분의 소프트웨어 개발 팀은 다음 단계를 수행 하 여 해당 모델을 만들고 사용 합니다.
 
