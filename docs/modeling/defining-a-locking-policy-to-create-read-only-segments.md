@@ -1,5 +1,7 @@
 ---
 title: 잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
+description: 읽을 수는 있지만 변경할 수 없도록 DSL (도메인별 언어) 모델의 일부 또는 전부를 잠그기 위해 프로그램에 대 한 정책을 정의 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536086"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363200"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 Visual Studio 시각화 및 모델링 SDK의 불변성 API를 사용 하면 프로그램에서 DSL (도메인 특정 언어) 모델의 일부 또는 전부를 잠그고 변경할 수 있습니다. 예를 들어이 읽기 전용 옵션을 사용 하면 사용자가 동료에 게 DSL 모델에 주석을 달고 검토할 수 있지만 원래는 변경 하지 못하게 할 수 있습니다.
@@ -87,7 +89,7 @@ partition.SetLocks(Locks.Delete);
 |모두|다른 값의 비트 OR입니다.|
 
 ## <a name="locking-policies"></a>잠금 정책
- DSL의 작성자는 *잠금 정책을*정의할 수 있습니다. 잠금 정책은 SetLocks ()의 작업을 작업이 특정 잠금이 설정 되지 않도록 하거나 특정 잠금을 설정 해야 하도록 지정할 수 있습니다. 일반적으로 사용자 또는 개발자가 변수를 선언 하는 것과 동일한 방식으로 사용자 또는 개발자가 실수로 DSL을 사용 하는 것을 방해 하지 않도록 잠금 정책을 사용 `private` 합니다.
+ DSL의 작성자는 *잠금 정책을* 정의할 수 있습니다. 잠금 정책은 SetLocks ()의 작업을 작업이 특정 잠금이 설정 되지 않도록 하거나 특정 잠금을 설정 해야 하도록 지정할 수 있습니다. 일반적으로 사용자 또는 개발자가 변수를 선언 하는 것과 동일한 방식으로 사용자 또는 개발자가 실수로 DSL을 사용 하는 것을 방해 하지 않도록 잠금 정책을 사용 `private` 합니다.
 
  잠금 정책을 사용 하 여 요소의 형식에 종속 된 모든 요소에 대 한 잠금을 설정할 수도 있습니다. 이는 `SetLocks(Locks.None)` 요소를 처음 생성 하거나 파일에서 deserialize 할 때가 항상 호출 되기 때문입니다.
 
@@ -113,7 +115,7 @@ public interface ILockingPolicy
 
  이러한 메서드는 `SetLocks()` 저장소, 파티션 또는 ModelElement에 대 한 호출이 수행 될 때 호출 됩니다. 각 메서드에서 제안 된 잠금 집합이 제공 됩니다. 제안 된 집합을 반환 하거나, 잠금을 추가 하거나 뺄 수 있습니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들어:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

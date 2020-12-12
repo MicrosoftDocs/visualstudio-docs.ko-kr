@@ -1,5 +1,7 @@
 ---
 title: 속성 창 사용자 지정
+description: Visual Studio의 DSL (도메인별 언어)에서 속성 창의 모양 및 동작을 사용자 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548280"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362877"
 ---
 # <a name="customize-the-properties-window"></a>속성 창 사용자 지정
 
@@ -22,7 +24,7 @@ Visual Studio에서 DSL (도메인별 언어)의 속성 창 모양 및 동작을
 
 ## <a name="names-descriptions-and-categories"></a>이름, 설명 및 범주
 
-**이름 및 표시 이름**입니다. 도메인 속성의 정의에서 속성의 표시 이름은 런타임에 속성 창에 표시 되는 이름입니다. 이와 대조적으로이 이름은 프로그램 코드를 작성 하 여 속성을 업데이트할 때 사용 됩니다. 이름은 올바른 CLR 영숫자 이름 이어야 하지만 표시 이름에는 공백을 포함할 수 있습니다.
+**이름 및 표시 이름** 입니다. 도메인 속성의 정의에서 속성의 표시 이름은 런타임에 속성 창에 표시 되는 이름입니다. 이와 대조적으로이 이름은 프로그램 코드를 작성 하 여 속성을 업데이트할 때 사용 됩니다. 이름은 올바른 CLR 영숫자 이름 이어야 하지만 표시 이름에는 공백을 포함할 수 있습니다.
 
 DSL 정의에서 속성의 이름을 설정 하면 해당 표시 이름이 이름 복사본으로 자동 설정 됩니다. "FuelGauge"과 같은 파스칼식 대/소문자 이름을 작성 하면 표시 이름에 "연료 계기" 라는 공백이 자동으로 포함 됩니다. 그러나 표시 이름을 명시적으로 다른 값으로 설정할 수 있습니다.
 
@@ -38,15 +40,15 @@ DSL 정의에서 속성의 이름을 설정 하면 해당 표시 이름이 이�
 
 그래픽 요소의 동적 기능 중 일부는 도메인 *속성으로 표시 하거나 표시할 수* 있습니다. 이러한 방식으로 노출 된 기능은 사용자가 업데이트할 수 있으며 프로그램 코드를 사용 하 여 보다 쉽게 업데이트할 수 있습니다.
 
-DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킨 다음 기능을 선택 합니다.
+DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 가리킨 다음 기능을 선택 합니다.
 
-도형에서 **FillColor**, **OutlineColor**, **textcolor**, **OutlineDashStyle**, **OutlineThickness** 및 **FillGradientMode** 속성을 노출할 수 있습니다. 커넥터에서 **색** `,` **textcolor**, **일점 style**및 **두께** 속성을 노출할 수 있습니다. 다이어그램에서 **FillColor** 및 **textcolor** 속성을 노출할 수 있습니다.
+도형에서 **FillColor**, **OutlineColor**, **textcolor**, **OutlineDashStyle**, **OutlineThickness** 및 **FillGradientMode** 속성을 노출할 수 있습니다. 커넥터에서 **색** `,` **textcolor**, **일점 style** 및 **두께** 속성을 노출할 수 있습니다. 다이어그램에서 **FillColor** 및 **textcolor** 속성을 노출할 수 있습니다.
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>전달: 관련 된 요소의 속성을 표시 합니다.
 
 DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성이 속성 창에 표시 됩니다. 그러나 지정 된 관련 요소의 속성을 표시할 수도 있습니다. 이는 함께 작동 하는 요소 그룹을 정의한 경우에 유용 합니다. 예를 들어 main 요소와 선택적 플러그 인 요소를 정의할 수 있습니다. Main 요소가 셰이프에 매핑되고 다른 요소가이 아닌 경우 모든 속성을 한 요소에 있는 것 처럼 표시 하는 것이 유용 합니다.
 
-이 효과는 명명 된 *속성 전달*이며, 여러 경우에 자동으로 발생 합니다. 다른 경우에는 도메인 유형 설명자를 정의 하 여 속성 전달을 달성할 수 있습니다.
+이 효과는 명명 된 *속성 전달* 이며, 여러 경우에 자동으로 발생 합니다. 다른 경우에는 도메인 유형 설명자를 정의 하 여 속성 전달을 달성할 수 있습니다.
 
 ### <a name="default-property-forwarding-cases"></a>기본 속성 전달 사례
 
@@ -71,15 +73,15 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 
 #### <a name="forward-a-property-from-another-element"></a>다른 요소에서 속성 전달
 
-1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]두 개 이상의 클래스를 포함 하는 솔루션을 만듭니다 .이 예제에서는이를 **Book** 및 **Author**라고 합니다. **Book** 과 **Author**사이에는 두 종류의 관계가 있어야 합니다.
+1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]두 개 이상의 클래스를 포함 하는 솔루션을 만듭니다 .이 예제에서는이를 **Book** 및 **Author** 라고 합니다. **Book** 과 **Author** 사이에는 두 종류의 관계가 있어야 합니다.
 
-    원본 역할의 복합성 ( **북** 측의 역할)은 0 ..1 또는 1 ..1 이어야 하므로 각 **책** 에 하나의 **저자가**있습니다.
+    원본 역할의 복합성 ( **북** 측의 역할)은 0 ..1 또는 1 ..1 이어야 하므로 각 **책** 에 하나의 **저자가** 있습니다.
 
-2. **DSL 탐색기**에서 **Book** 도메인 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **새 DomainTypeDescriptor 추가**를 클릭 합니다.
+2. **DSL 탐색기** 에서 **Book** 도메인 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **새 DomainTypeDescriptor 추가** 를 클릭 합니다.
 
     사용자 지정 **속성 설명자의** 명명 된 경로 노드가 **사용자 지정 형식 설명자** 노드 아래에 나타납니다.
 
-3. **사용자 지정 형식 설명자** 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 PropertyPath 추가**를 클릭 합니다.
+3. **사용자 지정 형식 설명자** 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 PropertyPath 추가** 를 클릭 합니다.
 
     새 속성 경로가 **사용자 지정 속성 설명자 노드의 경로** 아래에 나타납니다.
 
@@ -87,9 +89,9 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 
     이 속성의 오른쪽에 있는 아래쪽 화살표를 클릭 하 여 트리 뷰에서 경로를 편집할 수 있습니다. 도메인 경로에 대 한 자세한 내용은 [도메인 경로 구문](../modeling/domain-path-syntax.md)을 참조 하세요. 이 파일을 편집한 후에는 경로가 **BookReferencesAuthor/!와 비슷해야 합니다. 작성자**.
 
-5. **속성** 을 **Author**의 **이름** 도메인 속성으로 설정 합니다.
+5. **속성** 을 **Author** 의 **이름** 도메인 속성으로 설정 합니다.
 
-6. **표시 이름을** **작성자 이름**으로 설정 합니다.
+6. **표시 이름을** **작성자 이름** 으로 설정 합니다.
 
 7. 모든 템플릿을 변환 하 고 DSL을 빌드하고 실행 합니다.
 
@@ -113,13 +115,13 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>외부 형식을 포함 하는 도메인 속성 정의
 
-1. **솔루션 탐색기**에서 외부 형식이 포함 된 어셈블리 (DLL)에 대 한 참조를 **Dsl** 프로젝트에 추가 합니다.
+1. **솔루션 탐색기** 에서 외부 형식이 포함 된 어셈블리 (DLL)에 대 한 참조를 **Dsl** 프로젝트에 추가 합니다.
 
     어셈블리는 .NET 어셈블리 이거나 사용자가 제공 하는 어셈블리 일 수 있습니다.
 
 2. 아직 수행 하지 않은 경우 형식을 **도메인 유형** 목록에 추가 합니다.
 
-   1. DslDefinition. dsl을 열고 **Dsl 탐색기**에서 루트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 외부 형식 추가**를 클릭 합니다.
+   1. DslDefinition. dsl을 열고 **Dsl 탐색기** 에서 루트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 외부 형식 추가** 를 클릭 합니다.
 
         **도메인 유형** 노드 아래에 새 항목이 나타납니다.
 
@@ -163,7 +165,7 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 
     ```
 
-3. 도메인 속성의 형식을 기본 **문자열**설정으로 그대로 둡니다.
+3. 도메인 속성의 형식을 기본 **문자열** 설정으로 그대로 둡니다.
 
 4. 편집기를 테스트 하려면 사용자가 파일 이름 편집기를 열어서 도메인 속성을 편집할 수 있는지 확인 합니다.
 
@@ -188,7 +190,7 @@ DSL의 사용자가 모델에서 요소를 선택 하면 해당 요소의 속성
 > [!NOTE]
 > **Dsl** 프로젝트에서 별도의 코드 파일에 코드를 추가 합니다.
 
-예:
+예를 들어:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +228,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-<xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들면 다음과 같습니다.
+<xref:System.ComponentModel.TypeConverter>에서 파생된 클래스를 정의합니다. **Dsl** 프로젝트에서 별도의 파일에 코드를 추가 합니다. 예를 들어:
 
 ```csharp
 /// <summary>
@@ -319,6 +321,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)

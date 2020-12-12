@@ -1,5 +1,7 @@
 ---
 title: 도메인별 언어에서 유효성 검사
+description: 유효성 검사 제약 조건을 정의 하 여 사용자가 만든 모델이 의미가 있는지 확인 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594008"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362537"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절한지를 확인하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 DSL에서 여러 세대를 포함하는 가족 구성도 그리기를 허용하는 경우 자녀의 생년월일을 부모의 생년월일 이후로 지정하도록 하는 제약 조건을 작성할 수 있습니다.
@@ -30,7 +32,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 ## <a name="running-validation"></a>유효성 검사 실행
  사용자는 모델, 즉 DSL 인스턴스를 편집할 때 다음 작업을 통해 유효성 검사를 실행할 수 있습니다.
 
-- 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **모두 유효성 검사**를 선택 합니다.
+- 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **모두 유효성 검사** 를 선택 합니다.
 
 - DSL 탐색기에서 최상위 노드를 마우스 오른쪽 단추로 클릭 하 고 **모두 유효성 검사** 를 선택 합니다.
 
@@ -54,9 +56,9 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 
 1. **Editor\validation** 노드에서 유효성 검사를 사용 하도록 설정 합니다.
 
-   1. **Dsl\dsldefinitiondsl**을 엽니다.
+   1. **Dsl\dsldefinitiondsl** 을 엽니다.
 
-   2. DSL 탐색기에서 **편집기** 노드를 확장 하 고 **유효성 검사**를 선택 합니다.
+   2. DSL 탐색기에서 **편집기** 노드를 확장 하 고 **유효성 검사** 를 선택 합니다.
 
    3. 속성 창에서 **사용**  속성을로 설정 합니다 `true` . 이러한 속성을 모두 설정하는 것이 가장 편리합니다.
 
@@ -82,7 +84,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 
     ValidationCategories는 메서드가 실행되는 시기를 지정합니다.
 
-   예를 들면 다음과 같습니다.
+   예를 들어:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -125,7 +127,7 @@ public partial class ParentsHaveChildren
 
  이 코드에서는 다음 사항에 주의하세요.
 
-- 도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식에 대 한 코드는 **Dsl\generated Code\Domain \* .cs**에 있습니다.
+- 도메인 클래스나 도메인 관계에 유효성 검사 메서드를 추가할 수 있습니다. 이러한 형식에 대 한 코드는 **Dsl\generated Code\Domain \* .cs** 에 있습니다.
 
 - 각 유효성 검사 메서드는 해당 클래스와 하위 클래스의 모든 인스턴스에 적용됩니다. 도메인 관계의 경우 각 인스턴스는 두 모델 요소 간의 링크입니다.
 
@@ -177,7 +179,7 @@ public partial class Person
 
  그러나 메서드를 결합하면 관리하기가 더 어렵고 모든 제약 조건의 `ValidationCategories`가 같아야 한다는 단점이 있습니다. 그러므로 가능한 경우에는 각 제약 조건을 별도의 메서드에 포함하는 것이 좋습니다.
 
- **컨텍스트 캐시에서 값 전달.**  컨텍스트 매개 변수에는 임의의 값을 저장할 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예를 들면 다음과 같습니다.
+ **컨텍스트 캐시에서 값 전달.**  컨텍스트 매개 변수에는 임의의 값을 저장할 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예를 들어:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -189,11 +191,11 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 ```
 
 ## <a name="validation-of-multiplicities"></a>복합성 유효성 검사
- 최소 복합성 확인을 위한 유효성 검사 메서드는 DSL에 대해 자동으로 생성됩니다. 코드는 **Dsl\generated Code\MultiplicityValidation.cs**에 기록 됩니다. 이러한 메서드는 DSL 탐색기의 **Editor\validation** 노드에서 유효성 검사를 사용 하도록 설정 하는 경우에 적용 됩니다.
+ 최소 복합성 확인을 위한 유효성 검사 메서드는 DSL에 대해 자동으로 생성됩니다. 코드는 **Dsl\generated Code\MultiplicityValidation.cs** 에 기록 됩니다. 이러한 메서드는 DSL 탐색기의 **Editor\validation** 노드에서 유효성 검사를 사용 하도록 설정 하는 경우에 적용 됩니다.
 
  도메인 관계 역할의 복합성을 1..* 또는 1..1로 설정했는데 사용자가 이 관계의 링크를 만들지 않으면 유효성 검사 오류 메시지가 표시됩니다.
 
- 예를 들어 DSL에 Person과 타운 클래스가 있고 relationship PersonLivesInTown relationship **1.. \\ ** * 마을 역할에서 타운이 없는 각 사용자에 대해 오류 메시지가 표시 됩니다.
+ 예를 들어 DSL에 Person과 타운 클래스가 있고 relationship PersonLivesInTown relationship **1.. \\** _ 님, 마을 역할에서 타운이 없는 각 사용자에 대해 오류 메시지가 표시 됩니다.
 
 ## <a name="running-validation-from-program-code"></a>프로그램 코드에서 유효성 검사 실행
  ValidationController를 만들거나 액세스하여 유효성 검사를 실행할 수 있습니다. 오류 창에서 사용자에 게 오류를 표시 하려면 다이어그램의 DocData에 연결 된 ValidationController를 사용 합니다. 예를 들어 메뉴 명령을 작성하는 경우에는 명령 집합 클래스에서 `CurrentDocData.ValidationController`를 사용할 수 있습니다.
@@ -213,7 +215,7 @@ partial class MyLanguageCommandSet
 
  자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)를 참조 하세요.
 
- 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예를 들면 다음과 같습니다.
+ 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예를 들어:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>변경 수행 시 유효성 검사 실행
  모델이 올바르지 않은 상태가 되는 즉시 사용자에게 경고를 표시하려는 경우 유효성 검사를 실행하는 저장소 이벤트를 정의할 수 있습니다. 저장소 이벤트에 대 한 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
 
- 유효성 검사 코드 외에도 다음 예제와 유사한 콘텐츠를 사용 하 여 사용자 지정 코드 파일을 **Dslpackage** 프로젝트에 추가 합니다. 이 코드는 문서에 연결된 `ValidationController`를 사용합니다. 이 컨트롤러는 Visual Studio 오류 목록에 유효성 검사 오류를 표시 합니다.
+ 유효성 검사 코드 외에도 다음 예제와 비슷한 내용이 포함 된 사용자 지정 코드 파일을 _ *Dslpackage** 프로젝트에 추가 합니다. 이 코드는 문서에 연결된 `ValidationController`를 사용합니다. 이 컨트롤러는 Visual Studio 오류 목록에 유효성 검사 오류를 표시 합니다.
 
 ```csharp
 using System;
@@ -334,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > 변경 내용이 조정되었거나 롤백되었음을 사용자에게 알려야 합니다. 예를 들어 `System.Windows.Forms.MessageBox.Show("message").`를 사용합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)

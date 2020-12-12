@@ -1,5 +1,7 @@
 ---
 title: DSL의 MSI 및 VSIX 배포
+description: 컴퓨터 또는 다른 컴퓨터에 DSL (도메인별 언어)을 설치 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542618"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363135"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -33,15 +35,15 @@ ms.locfileid: "85542618"
 
 1. DSL 패키지 프로젝트를 통해 빌드된 **.vsix** 파일을 찾습니다.
 
-   1. **솔루션 탐색기**에서 **dslpackage** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **파일 탐색기에서 폴더 열기**를 클릭 합니다.
+   1. **솔루션 탐색기** 에서 **dslpackage** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **파일 탐색기에서 폴더 열기** 를 클릭 합니다.
 
-   2. 파일 ** \\ \* bin \\ **_프로젝트_를 찾습니다 **. 패키지 vsix**
+   2. 파일 **\\ \* bin \\**_프로젝트_ 를 찾습니다 **. 패키지 vsix**
 
 2. DSL을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사 합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
    - 대상 컴퓨터에는 런타임에 Dsl을 지 원하는 버전 중 하나가 있어야 합니다 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . 자세한 내용은 [지원 되는 Visual Studio 버전 시각화 & 모델링 SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)를 참조 하세요.
 
-   - 대상 컴퓨터에는 **DslPackage\source.extensions.manifest**에 지정 된 Visual Studio 버전 중 하나가 있어야 합니다.
+   - 대상 컴퓨터에는 **DslPackage\source.extensions.manifest** 에 지정 된 Visual Studio 버전 중 하나가 있어야 합니다.
 
 3. 대상 컴퓨터에서 **.vsix** 파일을 두 번 클릭 합니다.
 
@@ -53,11 +55,11 @@ ms.locfileid: "85542618"
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX를 사용 하 여 설치 된 DSL을 제거 하려면
 
-1. **도구** 메뉴 모음에서 **확장 및 업데이트**를 선택합니다.
+1. **도구** 메뉴 모음에서 **확장 및 업데이트** 를 선택합니다.
 
-2. **설치된 확장**을 확장합니다.
+2. **설치된 확장** 을 확장합니다.
 
-3. DSL이 정의 된 확장을 선택 하 고 **제거**를 클릭 합니다.
+3. DSL이 정의 된 확장을 선택 하 고 **제거** 를 클릭 합니다.
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.
 
@@ -92,27 +94,27 @@ ms.locfileid: "85542618"
 
        - 버전
 
-   - **편집기** 노드를 클릭 하 고 속성 창에서 **아이콘**을 클릭 합니다. **Dslpackage\resources**의 아이콘 파일 (예: .ico)을 참조 하도록 값을 설정 합니다 **.**
+   - **편집기** 노드를 클릭 하 고 속성 창에서 **아이콘** 을 클릭 합니다. **Dslpackage\resources** 의 아이콘 파일 (예: .ico)을 참조 하도록 값을 설정 합니다 **.**
 
-   - **빌드** 메뉴에서 **Configuration Manager**를 열고 빌드 하려는 구성 (예: **릴리스** 또는 **디버그**)을 선택 합니다.
+   - **빌드** 메뉴에서 **Configuration Manager** 를 열고 빌드 하려는 구성 (예: **릴리스** 또는 **디버그**)을 선택 합니다.
 
-4. [시각화 및 모델링 SDK 홈 페이지로](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)이동 하 고 **다운로드** 탭에서 **CreateMsiSetupProject.tt**를 다운로드 합니다.
+4. [시각화 및 모델링 SDK 홈 페이지로](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)이동 하 고 **다운로드** 탭에서 **CreateMsiSetupProject.tt** 를 다운로드 합니다.
 
 5. Dsl 프로젝트에 **CreateMsiSetupProject.tt** 를 추가 합니다.
 
-    Visual Studio에서 **CreateMsiSetupProject. .vdproj**라는 파일을 만듭니다.
+    Visual Studio에서 **CreateMsiSetupProject. .vdproj** 라는 파일을 만듭니다.
 
 6. Windows 탐색기에서 Dsl \\ *. .vdproj를 Setup 이라는 새 폴더에 복사 합니다.
 
     (원하는 경우 이제 Dsl 프로젝트에서 CreateMsiSetupProject.tt를 제외할 수 있습니다.)
 
-7. **솔루션 탐색기**에서 ** \\ \* .vdproj** 를 기존 프로젝트로 추가 합니다.
+7. **솔루션 탐색기** 에서 **\\ \* .vdproj** 를 기존 프로젝트로 추가 합니다.
 
-8. **프로젝트** 메뉴에서 **프로젝트 종속성**을 클릭 합니다.
+8. **프로젝트** 메뉴에서 **프로젝트 종속성** 을 클릭 합니다.
 
     **프로젝트 종속성** 대화 상자에서 설치 프로젝트를 선택 합니다.
 
-    **Dslpackage**옆의 상자를 선택 합니다.
+    **Dslpackage** 옆의 상자를 선택 합니다.
 
 9. 솔루션을 다시 빌드합니다.
 

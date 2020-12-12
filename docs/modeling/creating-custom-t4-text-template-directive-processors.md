@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
+description: 텍스트 템플릿 변환 프로세스 및 사용자 지정 T4 텍스트 템플릿 지시문 프로세서를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597180"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363430"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
 
@@ -64,7 +66,7 @@ ProcessDirective ()를 호출한 후 템플릿 엔진은 다음 메서드를 호
 
 - 자세한 내용은 [연습: 사용자 지정 지시문 프로세서 만들기](../modeling/walkthrough-creating-a-custom-directive-processor.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 지시문 프로세서 배포](../modeling/deploying-a-custom-directive-processor.md) 사용자 지정 지시문 프로세서를 등록 하는 방법을 설명 합니다.
 - [연습: 사용자 지정 지시문 프로세서 만들기](../modeling/walkthrough-creating-a-custom-directive-processor.md) 사용자 지정 지시문 프로세서를 만드는 방법, 지시문 프로세서를 등록 하 고 테스트 하는 방법 및 출력 파일을 HTML로 서식 지정 하는 방법을 설명 합니다.

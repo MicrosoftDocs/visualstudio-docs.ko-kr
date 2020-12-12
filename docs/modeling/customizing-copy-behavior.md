@@ -1,5 +1,7 @@
 ---
 title: 복사 동작 사용자 지정
+description: Visual Studio 시각화 및 모델링 SDK를 사용 하 여 만든 DSL에서 사용자가 요소를 복사 하 여 붙여넣을 때 발생 하는 작업을 변경할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547344"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363109"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 Visual Studio 시각화 및 모델링 SDK를 사용 하 여 만든 DSL (도메인별 언어)에서는 사용자가 요소를 복사 하 여 붙여넣을 때 발생 하는 작업을 변경할 수 있습니다.
@@ -43,10 +45,10 @@ Visual Studio 시각화 및 모델링 SDK를 사용 하 여 만든 DSL (도메�
 DSL 탐색기에서 **편집기** 노드의 **붙여넣기 설정 복사** 속성을 설정 합니다.
 
  **같은 대상에 대한 링크를 복사합니다.**  복사한 주석 상자를 같은 주제 요소에 연결하는 경우를 예로 들 수 있습니다.
-**복사 대상 링크만 전파**하도록 역할의 **전파 복사** 속성을 설정 합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
+**복사 대상 링크만 전파** 하도록 역할의 **전파 복사** 속성을 설정 합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
 
  연결된 요소를 복사합니다. 예를 들어 새 요소를 복사하면 연결된 주석 상자의 복사본도 만들어집니다.
-역할의 **전파 복사** 속성을 설정 하 여 **링크 및 반대 역할 수행자에 복사를 전파**합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
+역할의 **전파 복사** 속성을 설정 하 여 **링크 및 반대 역할 수행자에 복사를 전파** 합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
 
  **복사 및 붙여넣기를 통해 요소를 빠르게 복제합니다.**  일반적으로는 방금 복사한 항목이 계속 선택되어 있으며 같은 형식의 요소를 해당 항목에 붙여넣을 수는 없습니다.
 요소 병합 지시문을 도메인 클래스에 추가하고 부모 클래스로 병합을 전달하도록 설정합니다. 이 작업의 효과는 끌기 작업에서도 동일합니다. 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
@@ -242,7 +244,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 1. DSL 프로젝트의 새 파일에서 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>로부터 파생되는 클래스를 만듭니다.
 
-2. 다이어그램 클래스에 대한 partial 클래스 정의를 추가합니다. 이 클래스의 이름은 **Dsl\GeneratedCode\Diagrams.cs**에서 찾을 수 있습니다.
+2. 다이어그램 클래스에 대한 partial 클래스 정의를 추가합니다. 이 클래스의 이름은 **Dsl\GeneratedCode\Diagrams.cs** 에서 찾을 수 있습니다.
 
     다이어그램 클래스에서 ElementOperations 서브클래스 인스턴스를 반환하도록 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>를 재정의합니다. 모든 호출에서 같은 인스턴스를 반환해야 합니다.
 
@@ -365,7 +367,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>표준 복사 동작
  이 섹션의 코드는 복사 동작을 변경하기 위해 재정의할 수 있는 메서드를 보여줍니다. 사용자 지정을 직접 수행하는 방법을 쉽게 확인할 수 있도록, 이 섹션에 나와 있는 코드는 복사에 사용되는 메서드를 재정의하되 표준 동작을 변경하지는 않습니다.
 
- 사용자가 Ctrl+C를 누르거나 복사 메뉴 명령을 사용하면 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 메서드가 호출됩니다. **Dslpackage\generated Code\CommandSet.cs**에서이 설정이 어떻게 설정 되었는지 확인할 수 있습니다. 명령을 설정 하는 방법에 대 한 자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)를 참조 하세요.
+ 사용자가 Ctrl+C를 누르거나 복사 메뉴 명령을 사용하면 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 메서드가 호출됩니다. **Dslpackage\generated Code\CommandSet.cs** 에서이 설정이 어떻게 설정 되었는지 확인할 수 있습니다. 명령을 설정 하는 방법에 대 한 자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)를 참조 하세요.
 
  DslPackage 프로젝트에서 *Mydsl* 의 partial 클래스 정의를 추가 하 여 ProcessOnMenuCopyCommand를 재정의할 수 있습니다 `ClipboardCommandSet` .
 
@@ -552,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)

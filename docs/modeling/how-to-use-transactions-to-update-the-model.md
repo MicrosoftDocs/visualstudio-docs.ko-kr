@@ -1,5 +1,7 @@
 ---
 title: '방법: 트랜잭션을 사용하여 모델 업데이트'
+description: 트랜잭션을 사용 하 여 저장소에 대 한 변경 내용이 그룹으로 처리 되는지 확인 하 고 트랜잭션을 사용 하 여 모델을 업데이트 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69a50ebdc7fff425224a454a491f05846105159d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594606"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363837"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 트랜잭션은 저장소에 대 한 변경 내용이 하나의 그룹으로 처리 되는지 확인 합니다. 그룹화 된 변경 내용은 단일 단위로 커밋되거나 롤백될 수 있습니다.

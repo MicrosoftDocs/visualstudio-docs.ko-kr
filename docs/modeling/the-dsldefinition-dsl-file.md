@@ -1,5 +1,7 @@
 ---
 title: DslDefinition.dsl 파일
+description: DSL 도구 솔루션의 Dsl 프로젝트에서 도메인별 언어를 정의 하는 dsl 파일의 구조에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +11,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808957"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362784"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
-이 항목에서는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *도메인별 언어*를 정의 하는 솔루션의 dsl 프로젝트에 있는 dsldefinition. dsl 파일의 구조에 대해 설명 합니다. DslDefinition. dsl 파일은 도메인별 언어의 클래스 및 관계와 도메인별 언어의 다이어그램, 모양, 연결선, serialization 형식 및 **도구 상자** 와 해당 편집 도구를 설명 합니다. DSL 솔루션에서 이러한 도구를 정의하는 코드는 DslDefinition.dsl 파일의 정보에 따라 생성됩니다.
+이 항목에서는 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *도메인별 언어* 를 정의 하는 솔루션의 dsl 프로젝트에 있는 dsldefinition. dsl 파일의 구조에 대해 설명 합니다. DslDefinition. dsl 파일은 도메인별 언어의 클래스 및 관계와 도메인별 언어의 다이어그램, 모양, 연결선, serialization 형식 및 **도구 상자** 와 해당 편집 도구를 설명 합니다. DSL 솔루션에서 이러한 도구를 정의하는 코드는 DslDefinition.dsl 파일의 정보에 따라 생성됩니다.
 
 일반적으로 *도메인 특정 언어 디자이너* 를 사용 하 여 파일을 편집할 수 있습니다. 그러나 DslDefinition.dsl 파일은 원시 형식이 XML이므로 XML 편집기에서도 열 수 있습니다. 파일에 포함된 정보와 디버깅 및 확장용으로 파일이 구성되는 방식을 파악하면 유용할 수 있습니다.
 
-이 항목의 예제는 구성 요소 다이어그램 템플릿에서 발췌한 것입니다. 해당 예제를 확인하려면 구성 요소 모델 솔루션 템플릿을 기반으로 DSL(Domain-Specific Language) 솔루션을 만듭니다. 솔루션을 만들고 나면 DSL(Domain-Specific Language) Designer에 DslDefinition.dsl 파일이 표시됩니다. 파일을 닫고 **솔루션 탐색기**에서 해당 파일을 마우스 오른쪽 단추로 클릭 한 다음 **열기**를 가리키고 **XML 편집기**를 클릭 한 다음 **확인**을 클릭 합니다.
+이 항목의 예제는 구성 요소 다이어그램 템플릿에서 발췌한 것입니다. 해당 예제를 확인하려면 구성 요소 모델 솔루션 템플릿을 기반으로 DSL(Domain-Specific Language) 솔루션을 만듭니다. 솔루션을 만들고 나면 DSL(Domain-Specific Language) Designer에 DslDefinition.dsl 파일이 표시됩니다. 파일을 닫고 **솔루션 탐색기** 에서 해당 파일을 마우스 오른쪽 단추로 클릭 한 다음 **열기** 를 가리키고 **XML 편집기** 를 클릭 한 다음 **확인** 을 클릭 합니다.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일의 섹션
 
@@ -38,7 +40,7 @@ Root 요소의 자식 요소는 \<Dsl> 다음과 같습니다.
 
 이 섹션은 모델의 각 관계를 정의합니다. 소스와 대상이 관계의 양쪽을 나타냅니다.
 
-### <a name="types"></a>형식
+### <a name="types"></a>유형
 
 이 섹션은 각 형식과 해당 네임스페이스를 정의합니다. 도메인 속성에는 두 가지 형식이 있습니다. `DomainEnumerations` 는 모델에 정의 되 고 DomainModel.cs에 형식을 생성 합니다. `ExternalTypes` 다른 곳에서 정의 된 형식 (예: `String` 또는)을 참조 `Int32` 하 고 아무 것도 생성 하지 않습니다.
 
@@ -97,7 +99,7 @@ DslDefinition.dsl 파일 전체에서 모니커를 사용하여 특정 항목에
 
 각 형식에는 자체 모니커 형식인 DomainClassMoniker, DomainRelationshipMoniker 등이 있습니다.
 
-## <a name="types"></a>형식
+## <a name="types"></a>유형
 
 Types 섹션은 DslDefinition.dsl 파일이 속성 형식으로 포함하는 모든 형식을 지정합니다. 이러한 형식에는 System.String과 같은 외부 형식과 열거 형식의 두 가지 종류가 있습니다.
 
@@ -204,13 +206,13 @@ DSL 정의에 포함되는 대부분의 요소는 직간접적으로 `DomainClas
 
 각 도메인 속성은 다음 특성도 포함할 수 있습니다.
 
-- **Isbrowsable**때. 이 특성은 사용자가 부모 클래스의 개체를 클릭할 때 **속성 창에 속성을** 표시할지 여부를 결정 합니다.
+- **Isbrowsable** 때. 이 특성은 사용자가 부모 클래스의 개체를 클릭할 때 **속성 창에 속성을** 표시할지 여부를 결정 합니다.
 
-- **Isuireadonly**입니다. 이 특성은 사용자가 속성 창이 나 속성이 표시 된 데코레이터를 **통해 속성을** 변경할 수 있는지 여부를 결정 합니다.
+- **Isuireadonly** 입니다. 이 특성은 사용자가 속성 창이 나 속성이 표시 된 데코레이터를 **통해 속성을** 변경할 수 있는지 여부를 결정 합니다.
 
 - **Kind**. 이 특성은 Normal, Calculated 또는 CustomStorage로 설정해야 합니다. 이 특성을 Calculated로 설정하는 경우 값을 결정하는 사용자 지정 코드를 제공해야 하며 속성은 읽기 전용이 됩니다. 이 특성을 CustomStorage로 설정하는 경우에는 값을 가져오고 설정하는 코드를 제공해야 합니다.
 
-- **Iselementname**입니다. 이 특성을 true로 설정하면 부모 클래스 인스턴스를 만들 때 해당 값이 고유한 값으로 자동 설정됩니다. 각 클래스에서 문자열 형식이어야 하는 속성 하나에 대해서만 이 특성을 true로 설정할 수 있습니다. 구성 요소 다이어그램 예제에서는 `Name`의 `NamedElement` 속성에서 `IsElementName`이 true로 설정되어 있습니다. 따라서 사용자가 `Component`에서 상속하는 `NamedElement` 요소를 만들 때마다 이름이 "Component6"처럼 자동으로 초기화됩니다.
+- **Iselementname** 입니다. 이 특성을 true로 설정하면 부모 클래스 인스턴스를 만들 때 해당 값이 고유한 값으로 자동 설정됩니다. 각 클래스에서 문자열 형식이어야 하는 속성 하나에 대해서만 이 특성을 true로 설정할 수 있습니다. 구성 요소 다이어그램 예제에서는 `Name`의 `NamedElement` 속성에서 `IsElementName`이 true로 설정되어 있습니다. 따라서 사용자가 `Component`에서 상속하는 `NamedElement` 요소를 만들 때마다 이름이 "Component6"처럼 자동으로 초기화됩니다.
 
 - `DefaultValue`. 이 특성을 지정한 경우 지정한 값이 이 클래스의 새 인스턴스에 대해 이 특성에 할당됩니다. `IsElementName`이 설정되어 있으면 DefaultValue 특성은 새 문자열의 시작 부분을 지정합니다.
 
@@ -267,7 +269,7 @@ OutPort 클래스 멤버를 InPort 클래스 멤버에 연결하는 Connection �
 
 ## <a name="designer-and-toolbox-tabs"></a>Designer 및 ToolboxTab
 
-**ToolboxTab** 파일의 **Designer** 섹션의 주요 부분은 요소입니다. 한 디자이너에는 이러한 여러 요소가 있을 수 있으며, 각 요소는 생성 된 디자이너의 **도구 상자**에서이 섹션을 나타냅니다. 각 **ToolboxTab** 요소에는 하나 이상의 **Elementtool** 요소, **connectiontool** 요소 또는 둘 다 포함 될 수 있습니다.
+**ToolboxTab** 파일의 **Designer** 섹션의 주요 부분은 요소입니다. 한 디자이너에는 이러한 여러 요소가 있을 수 있으며, 각 요소는 생성 된 디자이너의 **도구 상자** 에서이 섹션을 나타냅니다. 각 **ToolboxTab** 요소에는 하나 이상의 **Elementtool** 요소, **connectiontool** 요소 또는 둘 다 포함 될 수 있습니다.
 
 요소 도구는 특정 도메인 클래스 인스턴스를 만들 수 있습니다. 사용자가 요소 도구를 다이어그램으로 끌어 놓으면 이 항목 뒷부분의 요소 병합 지시문 관련 섹션에서 설명하는 요소 병합 지시문에 의해 결과가 결정됩니다.
 
@@ -296,7 +298,7 @@ OutPort 클래스 멤버를 InPort 클래스 멤버에 연결하는 Connection �
 이 모델에 대해 C#을 작성할 때는 관련된 각 클래스에 대해 관계가 생성하는 속성을 사용하여 한 단계로 링크를 이동할 수 있습니다.
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 그러나 경로 구문에서 두 홉을 모두 명시적으로 지정해야 합니다. 이 요구 사항으로 인해 중간 링크에 보다 쉽게 액세스할 수 있습니다. 다음 코드는 링크에서 Component로의 홉을 완료합니다.
@@ -378,7 +380,7 @@ Index 노드 아래의 클래스 모니커는 수락할 수 있는 요소 클래
 
 - 사용자의 serialize 된 모델 파일의 **MonikerElementName** 입니다. 이 특성은 해당 클래스를 참조하는 모니커를 사용합니다.
 
-- **MonikerAttributeName**는 모니커 내에서 XML 특성의 이름을 식별 합니다. 사용자의 serialize 된 파일 조각에서 도메인별 언어의 작성자는 "inPortMoniker"로 **MonikerElementName** , **MonikerAttributeName** 는 "path"로 정의 됩니다.
+- **MonikerAttributeName** 는 모니커 내에서 XML 특성의 이름을 식별 합니다. 사용자의 serialize 된 파일 조각에서 도메인별 언어의 작성자는 "inPortMoniker"로 **MonikerElementName** , **MonikerAttributeName** 는 "path"로 정의 됩니다.
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -465,7 +467,7 @@ serialize된 모델 파일 내에서 포함 관계와 참조 관계 둘 다의 �
 
 연결 관계에는 요소 및 특성 이름을 제공하는 자체 XML 클래스 데이터가 있습니다.
 
-**Omitelement** 특성이 true로 설정 된 경우 관계 역할 이름이 생략 됩니다 .이는 serialize 된 파일을 줄여서 표시 두 클래스에 둘 이상의 관계가 있는 경우에는 모호 합니다. 예를 들면 다음과 같습니다.
+**Omitelement** 특성이 true로 설정 된 경우 관계 역할 이름이 생략 됩니다 .이는 serialize 된 파일을 줄여서 표시 두 클래스에 둘 이상의 관계가 있는 경우에는 모호 합니다. 예를 들어:
 
 ```xml
 <component name="Component3">
@@ -480,7 +482,7 @@ DslDefinition.dsl 파일 자체는 serialize된 파일로, DSL 정의를 준수�
 
 - **Dsl** 은 rootclass 노드와 다이어그램의 클래스입니다. DomainClass, DomainRelationship 및 기타 요소는 `Dsl`에 포함됩니다.
 
-- **클래스** 는 도메인 특정 언어와 DomainClass 간의 관계에 대 한 **roleelementname** 입니다.
+- **클래스** 는 Domain-Specific Language와 DomainClass 간 관계의 **roleelementname** 입니다.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -577,7 +579,7 @@ Decorator 맵은 매핑된 클래스의 속성을 모양의 Decorator와 연결�
 
 연결선 맵은 Decorator 맵을 포함할 수도 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

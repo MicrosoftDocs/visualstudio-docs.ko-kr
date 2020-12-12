@@ -1,5 +1,7 @@
 ---
 title: 모델 공유 및 다이어그램 내보내기
+description: Visual Studio를 사용 하 여 모델, 종속성 다이어그램 및 방향이 지정 된 그래프를 만들고 편집 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591920"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363746"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.
@@ -49,6 +51,6 @@ Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동
 |[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 애플리케이션으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|
 |[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)|모델 및 다이어그램의 개요입니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)

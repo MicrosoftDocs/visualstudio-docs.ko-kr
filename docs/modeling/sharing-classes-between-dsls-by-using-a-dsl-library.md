@@ -1,5 +1,7 @@
 ---
 title: DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
+description: Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542547"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363759"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
@@ -37,7 +39,7 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
 4. 유효성 검사 제약 조건과 같이 추가 코드가 필요한 사용자 지정 항목을 추가할 수 있습니다.
 
-5. **모든 템플릿 변환**을 클릭 합니다.
+5. **모든 템플릿 변환** 을 클릭 합니다.
 
 6. 프로젝트를 빌드합니다.
 
@@ -45,7 +47,7 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
 #### <a name="to-import-a-dsl-library"></a>DSL 라이브러리를 가져오려면
 
-1. 다른 DSL 정의의 dsl **탐색기**에서 dsl의 루트 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **새 Dsllibrary 가져오기 추가**를 클릭 합니다.
+1. 다른 DSL 정의의 dsl **탐색기** 에서 dsl의 루트 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **새 Dsllibrary 가져오기 추가** 를 클릭 합니다.
 
 2. 속성 창에서 라이브러리의 **파일 경로** 를 설정 합니다. 상대 경로 또는 절대 경로 중 하나를 사용할 수 있습니다.
 
@@ -61,7 +63,7 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
    DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 가져오기가 DSL 탐색기에도 자동으로 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 

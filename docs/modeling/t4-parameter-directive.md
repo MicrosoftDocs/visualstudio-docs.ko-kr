@@ -1,5 +1,7 @@
 ---
 title: T4 매개 변수 지시문
+description: Visual Studio에서 매개 변수 지시문은 외부 컨텍스트에서 전달 된 값에서 초기화 되는 템플릿 코드의 속성을 선언 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591803"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363629"
 ---
 # <a name="t4-parameter-directive"></a>T4 매개 변수 지시문
 
@@ -82,8 +84,8 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>전처리 된 런타임 텍스트 템플릿에 값 전달
- 일반적으로 `<#@parameter#>` 전처리 된 런타임 텍스트 템플릿에는 지시문을 사용할 필요가 없습니다. 대신, 매개 변수 값을 전달 하는 데 사용할 수 있는 생성 된 코드에 대 한 추가 생성자 또는 설정 가능한 속성을 정의할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Run-Time (전처리) 텍스트 템플릿에 값 전달
+ 일반적으로 `<#@parameter#>` 전처리 된 런타임 텍스트 템플릿에는 지시문을 사용할 필요가 없습니다. 대신, 매개 변수 값을 전달 하는 데 사용할 수 있는 생성 된 코드에 대 한 추가 생성자 또는 설정 가능한 속성을 정의할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
  그러나 런타임 템플릿에서를 사용 하려는 경우 `<#@parameter>` 세션 사전을 사용 하 여 값을 전달할 수 있습니다. 예를 들어 파일을 이라는 전처리 된 템플릿으로 만들었다고 가정 합니다 `PreTextTemplate1` . 다음 코드를 사용 하 여 프로그램에서 템플릿을 호출할 수 있습니다.
 

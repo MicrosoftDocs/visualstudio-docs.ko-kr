@@ -1,5 +1,7 @@
 ---
 title: T4 Import 지시문
+description: Visual Studio T4 텍스트 템플릿에서 가져오기 지시문을 사용 하면 정규화 된 이름을 제공 하지 않고 다른 네임 스페이스의 요소를 참조할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591868"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363694"
 ---
 # <a name="t4-import-directive"></a>T4 Import 지시문
 
@@ -49,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - DSL 네임 스페이스
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)

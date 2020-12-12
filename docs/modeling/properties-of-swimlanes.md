@@ -1,5 +1,7 @@
 ---
 title: 스윔 레인의 속성
+description: 스윔 레인은 다이어그램을 세로 또는 가로 영역으로 나누는 방법과 스윔 레인 내에 표시 될 다른 셰이프를 정의 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807848"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363070"
 ---
 # <a name="properties-of-swimlanes"></a>스윔 레인의 속성
-스윔 레인을 다이어그램에 추가할 수 있습니다. 스윔 레인 다이어그램을 세로 또는 가로 영역으로 나눕니다. 스윔 레인 내에 표시 될 다른 셰이프를 정의할 수 있습니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+스윔 레인을 다이어그램에 추가할 수 있습니다. 스윔 레인 다이어그램을 세로 또는 가로 영역으로 나눕니다. 스윔 레인 내에 표시 될 다른 셰이프를 정의할 수 있습니다. 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
  스윔 레인에는 다음 표에 나열 된 속성이 있습니다.
 
@@ -44,12 +46,12 @@ ms.locfileid: "90807848"
 |맞춤|가로 또는 세로 맞춤입니다.|Vertical|
 |초기 높이|이 스윔 레인의 초기 높이 (인치)입니다. 가로 스윔 레인에만 적용할 수 있습니다.|0|
 |초기 너비|이 스윔 레인의 초기 너비 (인치)입니다. 세로 스윔 레인에만 적용할 수 있습니다.|0|
-|텍스트 색을 노출 합니다.|인 경우 `True` 사용자는 생성 된 디자이너에서 스윔 레인의 색을 설정할 수 있습니다. 이를 설정 하려면 스윔 레인 셰이프를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 클릭 합니다.|거짓|
+|텍스트 색을 노출 합니다.|인 경우 `True` 사용자는 생성 된 디자이너에서 스윔 레인의 색을 설정할 수 있습니다. 이를 설정 하려면 스윔 레인 셰이프를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 클릭 합니다.|거짓|
 |설명|생성 된 디자이너를 문서화 하는 데 사용 됩니다.|\<none>|
 |표시 이름|이 스윔 레인 클래스를 참조 하기 위해 생성 된 디자이너에 표시 되는 이름입니다.|\<none>|
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none>|
 |Help Keyword|이 스윔 레인에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

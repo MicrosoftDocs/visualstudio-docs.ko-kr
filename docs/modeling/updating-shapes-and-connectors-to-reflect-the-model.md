@@ -1,5 +1,7 @@
 ---
 title: 모양 및 연결선을 업데이트하여 모델 반영
+description: Visual Studio의 도메인별 언어에서 기본 모델의 상태를 반영 하는 모양의 모양을 만들 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115029"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362602"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 
@@ -27,11 +29,11 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>데코레이터 표시 여부를 제어 하는 도형 맵 속성 설정
 
-DSL 정의에서 모양과 도메인 클래스 간의 매핑을 구성 하 여 프로그램 코드를 작성 하지 않고도 데코레이터의 표시 여부를 제어할 수 있습니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
+DSL 정의에서 모양과 도메인 클래스 간의 매핑을 구성 하 여 프로그램 코드를 작성 하지 않고도 데코레이터의 표시 여부를 제어할 수 있습니다. 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>모양의 색 및 스타일을 속성으로 노출
 
-DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킨 다음 **채우기 색**과 같은 항목 중 하나를 클릭 합니다.
+DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가** 를 가리킨 다음 **채우기 색** 과 같은 항목 중 하나를 클릭 합니다.
 
 이제 셰이프에는 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다. 예를 들어 명령 또는 규칙의 프로그램 코드에서이를 설정 하려면 다음을 작성 합니다.
 
@@ -84,7 +86,7 @@ DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 된 셰이프 속성을 사용 하 여 초기화
 
-셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 `OnChildConfigured()` 다이어그램 클래스의 부분 정의에 재정의를 적용 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs**에 있습니다. 예를 들면 다음과 같습니다.
+셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 `OnChildConfigured()` 다이어그램 클래스의 부분 정의에 재정의를 적용 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs** 에 있습니다. 예를 들어:
 
 ```csharp
 partial class MyLanguageDiagram

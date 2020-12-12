@@ -1,5 +1,7 @@
 ---
 title: '방법: 현재 선택 항목 액세스 및 제약'
+description: 도메인 특정 언어에 대 한 명령 또는 제스처 처리기를 작성할 때 사용자가 마우스 오른쪽 단추로 클릭 한 요소를 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545693"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363395"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>방법: 현재 선택 항목 액세스 및 제약
 
@@ -30,7 +32,7 @@ ms.locfileid: "85545693"
 
 1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>클래스는 현재 선택 영역에 액세스 하는 데 사용할 수 있는 다음 멤버를 정의 합니다.
 
-    |멤버|설명|
+    |멤버|Description|
     |-|-|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 메서드|`true`모델 디자이너에서 선택한 요소가 구획 모양이 면를 반환 하 고, 그렇지 않으면를 반환 `false` 합니다.|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 메서드|`true`모델 디자이너에서 다이어그램이 선택 되어 있으면를 반환 하 고, 그렇지 않으면를 반환 `false` 합니다.|
@@ -107,7 +109,7 @@ ms.locfileid: "85545693"
 
      속성의 기본 구현에서는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 선택 항목을 수정 하지 않는 선택 규칙 개체를 가져옵니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 코드 파일은 선택 영역을 확장 하 여 처음 선택 된 각 도메인 셰이프의 모든 인스턴스를 포함 하는 선택 규칙을 만듭니다.
 

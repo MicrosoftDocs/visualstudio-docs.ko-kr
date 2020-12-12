@@ -1,5 +1,7 @@
 ---
 title: T4 텍스트 템플릿 지시문
+description: T4 테스트 템플릿 지시문 및 텍스트 템플릿 변환 엔진에 지침을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ddad0010413ebe8e0a53096bb4d90b52050d26a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591829"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363603"
 ---
 # <a name="t4-text-template-directives"></a>T4 텍스트 템플릿 지시문
 

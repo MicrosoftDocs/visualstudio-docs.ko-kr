@@ -1,5 +1,7 @@
 ---
 title: T4 Include 지시문
+description: 'Visual Studio의 텍스트 템플릿에서 < # # > 지시어를 사용 하 여 다른 파일의 텍스트를 포함할 수 있습니다 @include .'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825beee156c3de0e29e561817663c0f7731840dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591855"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363655"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
 
@@ -30,7 +32,7 @@ Visual Studio의 텍스트 템플릿에서 지시문을 사용 하 여 다른 �
 
    이러한 추가적인 포함 폴더는 포함 파일의 파일 확장명에 따라 달라질 수 있습니다. 예를 들어 DSL 도구의 포함 폴더에서는 파일 확장명이 `.tt`인 파일이 있는 포함 파일에만 액세스할 수 있습니다.
 
-- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들면 다음과 같습니다.
+- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들어:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>

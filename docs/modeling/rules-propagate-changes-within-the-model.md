@@ -1,5 +1,7 @@
 ---
 title: 규칙으로 모델 내부의 변경 내용 전파
+description: 시각화 및 모델링 SDK (VMSDK)에서 한 요소에서 다른 요소로 변경 내용을 전파 하는 저장소 규칙을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542560"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363954"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
 시각화 및 모델링 SDK (VMSDK)에서 한 요소에서 다른 요소로 변경 내용을 전파 하는 저장소 규칙을 만들 수 있습니다. 저장소의 요소가 변경 되 면 일반적으로 가장 바깥쪽 트랜잭션이 커밋될 때 규칙이 실행 되도록 예약 됩니다. 요소를 추가 하거나 삭제 하는 등의 다양 한 종류의 이벤트에 대해 다양 한 유형의 규칙이 있습니다. 특정 형식의 요소, 모양 또는 다이어그램에 규칙을 추가할 수 있습니다. 규칙으로 정의 된 많은 기본 제공 기능입니다. 예를 들어 규칙은 모델이 변경 될 때 다이어그램이 업데이트 되도록 합니다. 사용자 고유의 규칙을 추가 하 여 도메인별 언어를 사용자 지정할 수 있습니다.
@@ -159,7 +161,7 @@ namespace ExampleNamespace
 
 7. 다른 대안을 고려한 후 규칙을 사용 합니다. 예를 들어 값이 변경 될 때 속성을 업데이트 하려면 계산 된 속성을 사용 하는 것이 좋습니다. 셰이프의 크기나 위치를 제한 하려면를 사용 `BoundsRule` 합니다. 속성 값의 변경 내용에 응답 하려면 `OnValueChanged` 속성에 처리기를 추가 합니다. 자세한 내용은 [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md)를 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예에서는 두 요소를 연결 하기 위해 도메인 관계가 인스턴스화될 때 속성을 업데이트 합니다. 규칙은 사용자가 다이어그램에서 링크를 만들 때 뿐만 아니라 프로그램 코드에서 링크를 만들 때에도 트리거됩니다.
 
  이 예를 테스트 하려면 작업 흐름 솔루션 템플릿을 사용 하 여 DSL을 만들고 Dsl 프로젝트의 파일에 다음 코드를 삽입 합니다. 솔루션을 빌드 및 실행 하 고 디버깅 프로젝트에서 샘플 파일을 엽니다. 주석 모양과 흐름 요소 사이에 주석 링크를 그립니다. 주석의 텍스트는 연결한 최근 요소에 대 한 보고서로 변경 됩니다.
@@ -207,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)

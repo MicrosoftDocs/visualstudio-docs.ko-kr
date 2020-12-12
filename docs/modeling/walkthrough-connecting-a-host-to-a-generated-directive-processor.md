@@ -1,5 +1,7 @@
 ---
 title: 생성 된 지시문 프로세서에 호스트 연결
+description: 지시문 프로세서를 호출 하는 텍스트 템플릿을 지원 하도록 사용자 지정 호스트를 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237999"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362498"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -51,9 +53,9 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 또한 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)에서 만든 사용자 지정 텍스트 템플릿 변환이 있어야 합니다.
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>도메인 특정 언어 도구를 사용 하 여 지시문 프로세서 생성
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Domain-Specific 언어 도구를 사용 하 여 지시문 프로세서 생성
 
-이 연습에서는 도메인 특정 언어 디자이너 마법사를 사용 하 여 솔루션 DSLMinimalTest 도메인 특정 언어를 만듭니다.
+이 연습에서는 Domain-Specific 언어 디자이너 마법사를 사용 하 여 솔루션 DSLMinimalTest 도메인 특정 언어를 만듭니다.
 
 1. 다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.
 
@@ -65,24 +67,24 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
    - 회사 이름: Fabrikam
 
-   도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
+   도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: Domain-Specific 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
 
-2. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+2. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
    > [!IMPORTANT]
    > 이 단계에서는 지시문 프로세서를 생성 하 고 레지스트리에 대 한 키를 추가 합니다.
 
-3. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
+3. **디버그** 메뉴에서 **디버깅 시작** 을 클릭합니다.
 
     Visual Studio의 두 번째 인스턴스가 열립니다.
 
-4. 실험적 빌드의 **솔루션 탐색기**에서 파일 **샘플. min**을 두 번 클릭 합니다.
+4. 실험적 빌드의 **솔루션 탐색기** 에서 파일 **샘플. min** 을 두 번 클릭 합니다.
 
     파일이 디자이너에서 열립니다. 모델에는 두 가지 요소인 ExampleElement1 및 ExampleElement2와 그 사이의 링크가 있습니다.
 
 5. Visual Studio의 두 번째 인스턴스를 닫습니다.
 
-6. 솔루션을 저장 한 다음 도메인 특정 언어 디자이너를 닫습니다.
+6. 솔루션을 저장 하 고 Domain-Specific 언어 디자이너를 닫습니다.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>사용자 지정 텍스트 템플릿 호스트를 지시문 프로세서에 연결
 
@@ -90,7 +92,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 1. CustomHost 솔루션을 엽니다.
 
-2. **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **참조 추가** 를 클릭합니다.
 
      **참조 추가** 대화 상자가 열리고 **.net** 탭이 표시 됩니다.
 
@@ -228,9 +230,9 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
             }
     ```
 
-7. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
+7. **파일** 메뉴에서 **모두 저장** 을 클릭합니다.
 
-8. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+8. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
 
@@ -327,7 +329,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기**에서 CustomHost.exe 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 CustomHost.exe 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
 
 3. 공백을 입력합니다.
 
@@ -338,11 +340,11 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기**에서 TestTemplateWithDP.txt 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 TestTemplateWithDP.txt 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
 
      사용자 지정 호스트 응용 프로그램이 실행 되어 텍스트 템플릿 변환 프로세스를 시작 합니다.
 
-5. **Windows 탐색기**에서 TestTemplateWithDP.txt 파일이 있는 폴더로 이동 합니다.
+5. **Windows 탐색기** 에서 TestTemplateWithDP.txt 파일이 있는 폴더로 이동 합니다.
 
      폴더에는 파일 TestTemplateWithDP1.txt 포함 되어 있습니다.
 

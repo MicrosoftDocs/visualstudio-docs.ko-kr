@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿 보안
+description: 임의 코드 및 악성 지시문 프로세서와 같은 항목을 포함 하 여 보안 및 텍스트 템플릿에 대해 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d54421ea4df9c54fd4ec8c1804a1a292061996ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591972"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363798"
 ---
 # <a name="security-of-text-templates"></a>텍스트 템플릿 보안
 텍스트 템플릿에는 다음과 같은 보안 문제가 있습니다.

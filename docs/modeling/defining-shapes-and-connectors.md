@@ -1,5 +1,7 @@
 ---
 title: 모양 및 연결선 정의
+description: DSL (도메인별 언어)에서 다이어그램에 대 한 정보를 표시 하는 데 사용할 수 있는 몇 가지 기본 유형의 셰이프를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589671"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363824"
 ---
 # <a name="define-shapes-and-connectors"></a>모양 및 연결선 정의
 
@@ -20,7 +22,7 @@ DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 �
 
 ## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 도형 및 연결선의 기본 형식
 
-DSL 다이어그램은 선 또는 *커넥터로*interlinked *셰이프* 컬렉션을 보여 줍니다. 이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).
+DSL 다이어그램은 선 또는 *커넥터로* interlinked *셰이프* 컬렉션을 보여 줍니다. 이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).
 
 - 모양은 모델 요소가 표시되는 표현입니다.
 

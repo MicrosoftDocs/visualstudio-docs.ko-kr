@@ -1,5 +1,7 @@
 ---
 title: T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
+description: Visual Studio 런타임 텍스트 템플릿을 사용 하 여 응용 프로그램에서 런타임에 텍스트 문자열을 생성 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520837"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363941"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 
@@ -49,22 +51,22 @@ This report is Company Confidential.
 
 응용 프로그램에서 템플릿을 사용 하면 긴 일련의 write 문과 같이 사용자가 사용할 수 있는 것 보다 최종 형식의 출력을 쉽게 볼 수 있습니다. 출력의 형태를 변경 하는 것이 더 쉽고 안정적입니다.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>모든 응용 프로그램에서 런타임 텍스트 템플릿 만들기
+## <a name="creating-a-run-time-text-template-in-any-application"></a>모든 응용 프로그램에서 Run-Time 텍스트 템플릿 만들기
 
 ### <a name="to-create-a-run-time-text-template"></a>런타임 텍스트 템플릿을 만들려면
 
-1. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **Add**  >  **새 항목**추가를 선택 합니다.
+1. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서   >  **새 항목** 추가를 선택 합니다.
 
-2. **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿**을 선택 합니다. (Visual Basic **공통 항목**  >  을 검색 합니다. **일반**.)
+2. **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿** 을 선택 합니다. (Visual Basic **공통 항목**  >  을 검색 합니다. **일반**.)
 
 3. 템플릿 파일의 이름을 입력 합니다.
 
     > [!NOTE]
     > 템플릿 파일 이름은 생성 된 코드에서 클래스 이름으로 사용 됩니다. 따라서 공백이 나 문장 부호를 포함 하지 않아야 합니다.
 
-4. **추가**를 선택합니다.
+4. **추가** 를 선택합니다.
 
-    확장명이 **.tt**인 새 파일이 만들어집니다. 해당 **사용자 지정 도구** 속성은 **Texttemplatingfilepreprocessor**로 설정 됩니다. 여기에는 다음 줄이 포함 됩니다.
+    확장명이 **.tt** 인 새 파일이 만들어집니다. 해당 **사용자 지정 도구** 속성은 **Texttemplatingfilepreprocessor** 로 설정 됩니다. 여기에는 다음 줄이 포함 됩니다.
 
     ```
     <#@ template language="C#" #>
@@ -74,20 +76,20 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>기존 파일을 런타임 템플릿으로 변환
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>기존 파일을 Run-Time 템플릿으로 변환
 
 템플릿을 만드는 좋은 방법은 기존 출력 예제를 변환 하는 것입니다. 예를 들어 응용 프로그램에서 HTML 파일을 생성 하는 경우 일반 HTML 파일을 만들어 시작할 수 있습니다. 제대로 작동 하는지 그리고 모양이 올바른지 확인 합니다. 그런 다음 Visual Studio 프로젝트에 포함 하 고 템플릿으로 변환 합니다.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>기존 텍스트 파일을 런타임 템플릿으로 변환 하려면
 
-1. Visual Studio 프로젝트에 파일을 포함 합니다. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **Add**  >  **기존 항목**추가를 선택 합니다.
+1. Visual Studio 프로젝트에 파일을 포함 합니다. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서   >  **기존 항목** 추가를 선택 합니다.
 
-2. 파일의 **사용자 지정 도구** 속성을 **Texttemplatingfilepreprocessor**로 설정 합니다. 솔루션 탐색기에서 파일의 바로 가기 메뉴에 있는 **속성**을 선택 합니다.
+2. 파일의 **사용자 지정 도구** 속성을 **Texttemplatingfilepreprocessor** 로 설정 합니다. 솔루션 탐색기에서 파일의 바로 가기 메뉴에 있는 **속성** 을 선택 합니다.
 
     > [!NOTE]
-    > 속성이 이미 설정 되어 있으면이 속성이 **Texttemplatingfilepreprocessor** 이며 **Texttemplatingfilepreprocessor**가 아닌지 확인 합니다. 이는 확장명이 **.tt**인 파일을 포함 하는 경우에 발생할 수 있습니다.
+    > 속성이 이미 설정 되어 있으면이 속성이 **Texttemplatingfilepreprocessor** 이며 **Texttemplatingfilepreprocessor** 가 아닌지 확인 합니다. 이는 확장명이 **.tt** 인 파일을 포함 하는 경우에 발생할 수 있습니다.
 
-3. 파일 이름 확장명을 **.tt**로 변경 합니다. 이 단계는 선택 사항 이지만 잘못 된 편집기에서 파일을 여는 것을 방지 하는 데 도움이 됩니다.
+3. 파일 이름 확장명을 **.tt** 로 변경 합니다. 이 단계는 선택 사항 이지만 잘못 된 편집기에서 파일을 여는 것을 방지 하는 데 도움이 됩니다.
 
 4. 파일 이름의 주 부분에서 공백이 나 문장 부호를 제거 합니다. 예를 들어 "My Web Page.tt"는 올바르지 않지만 "MyWebPage.tt"은 올바릅니다. 파일 이름은 생성 된 코드에서 클래스 이름으로 사용 됩니다.
 
@@ -95,7 +97,7 @@ This report is Company Confidential.
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>런타임 템플릿의 콘텐츠입니다.
+## <a name="the-content-of-the-run-time-template"></a>Run-Time 템플릿의 내용
 
 ### <a name="template-directive"></a>Template 지시문
 
@@ -107,7 +109,7 @@ Language 매개 변수는 프로젝트의 언어에 따라 달라 집니다.
 
 ### <a name="plain-content"></a>일반 콘텐츠
 
-응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예:
+응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들어:
 
 ```html
 <html><body>
@@ -119,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>포함 된 프로그램 코드
 
-및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예:
+및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예를 들어:
 
 ```csharp
 <table>
@@ -150,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>템플릿을 기반으로 작성 된 코드
 
-**.Tt** 파일을 저장 하면 자회사 또는 **.vb** 파일이 생성 **됩니다.** **솔루션 탐색기**에서이 파일을 보려면 **.tt** 파일 노드를 확장 합니다. Visual Basic 프로젝트에서 먼저 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택 합니다.
+**.Tt** 파일을 저장 하면 자회사 또는 **.vb** 파일이 생성 **됩니다.** **솔루션 탐색기** 에서이 파일을 보려면 **.tt** 파일 노드를 확장 합니다. Visual Basic 프로젝트에서 먼저 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택 합니다.
 
 자회사 파일에는 라는 메서드가 포함 된 partial 클래스가 포함 되어 있습니다 `TransformText()` . 응용 프로그램에서이 메서드를 호출할 수 있습니다.
 
@@ -182,7 +184,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 일반적으로 템플릿은 응용 프로그램의 다른 부분에서 일부 데이터를 가져와야 합니다. 이 작업을 쉽게 수행 하기 위해 템플릿으로 작성 된 코드는 partial 클래스입니다. 프로젝트의 다른 파일에 같은 클래스의 다른 부분을 만들 수 있습니다. 이 파일에는 템플릿에 포함 된 코드와 응용 프로그램의 나머지 부분에 모두 액세스할 수 있는 매개 변수, 속성 및 함수를 포함 하는 생성자가 포함 될 수 있습니다.
 
-예를 들어 별도의 파일 **MyWebPageCode.cs**을 만들 수 있습니다.
+예를 들어 별도의 파일 **MyWebPageCode.cs** 을 만들 수 있습니다.
 
 ```csharp
 partial class MyWebPage
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-템플릿 파일 **MyWebPage.tt**에서 다음을 작성할 수 있습니다.
+템플릿 파일 **MyWebPage.tt** 에서 다음을 작성할 수 있습니다.
 
 ```html
 <h2>Sales figures</h2>
@@ -272,7 +274,7 @@ Partial 정의에서 템플릿 클래스에 필드를 추가할 수도 있습니
 
 ### <a name="assemblies-and-references"></a>어셈블리 및 참조
 
-템플릿 코드가 .NET 또는 **System.Xml.dll**와 같은 다른 어셈블리를 참조 하도록 하려면 일반적인 방법으로 프로젝트의 **참조** 에 추가 합니다.
+템플릿 코드가 .NET 또는 **System.Xml.dll** 와 같은 다른 어셈블리를 참조 하도록 하려면 일반적인 방법으로 프로젝트의 **참조** 에 추가 합니다.
 
 문과 동일한 방법으로 네임 스페이스를 가져오려면 지시문을 사용 하 여 `using` 이 작업을 수행할 수 있습니다 `import` .
 
@@ -294,7 +296,7 @@ Partial 정의에서 템플릿 클래스에 필드를 추가할 수도 있습니
 
 Include 지시문은 템플릿 파일이 나 포함 된 파일의 텍스트에 있는 모든 위치에서 사용할 수 있습니다.
 
-### <a name="inheritance-between-run-time-text-templates"></a>런타임 텍스트 템플릿 간 상속
+### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 텍스트 템플릿 간 상속
 
 추상 일 수 있는 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 간에 콘텐츠를 공유할 수 있습니다. `inherits`지시문의 매개 변수를 사용 `<@#template#>` 하 여 다른 런타임 템플릿 클래스를 참조 합니다.
 
@@ -310,7 +312,7 @@ Include 지시문은 템플릿 파일이 나 포함 된 파일의 텍스트에 �
 
 - 응용 프로그램은 `TextTransform()` 파생 클래스의 메서드를 호출 하지만 기본 클래스를 변환 하지는 않습니다 `SharedFragments` .
 
-- 기본 클래스와 파생 클래스 모두 런타임 텍스트 템플릿입니다. 즉, **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor**로 설정 됩니다.
+- 기본 클래스와 파생 클래스 모두 런타임 텍스트 템플릿입니다. 즉, **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor** 로 설정 됩니다.
 
 **SharedFragments.tt:**
 
@@ -433,7 +435,7 @@ End material for DerivedTemplate1.
 
 런타임 템플릿은 템플릿 및 해당 콘텐츠가 컴파일 타임에 결정 되는 모든 응용 프로그램에서 사용할 수 있습니다. 런타임에 변경 되는 템플릿에서 텍스트를 생성 하는 Visual Studio 확장을 작성 하려는 경우 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

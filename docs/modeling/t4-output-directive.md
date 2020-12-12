@@ -1,5 +1,7 @@
 ---
 title: T4 Output 지시문
+description: Visual Studio 텍스트 템플릿에서 output 지시어는 변환 된 파일의 파일 이름 확장명 및 인코딩을 정의 하는 데 사용 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591816"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363642"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
 
@@ -24,7 +26,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
 
  그러면 Visual Studio에서 이름이 **MyTemplate.cs** 인 파일을 생성 합니다.
 
- 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 애플리케이션은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+ 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 애플리케이션은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
 ## <a name="using-the-output-directive"></a>output 지시문 사용
 
@@ -50,7 +52,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
  허용 되는 값: 유효한 모든 파일 이름 확장명입니다.
 
 ## <a name="encoding-attribute"></a>encoding 특성
- 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면 다음과 같습니다.
+ 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들어:
 
  `<#@ output encoding="utf-8"#>`
 

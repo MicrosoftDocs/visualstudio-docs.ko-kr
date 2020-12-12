@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿 사용 방법
+description: 텍스트 템플릿을 사용 하 여 텍스트를 생성할 때 발생 하는 일반적인 질문에 대 한 답변에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594658"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363187"
 ---
 # <a name="how-to--with-text-templates"></a>텍스트 템플릿 사용 방법
 Visual Studio의 텍스트 템플릿은 모든 종류의 텍스트를 생성 하는 유용한 방법을 제공 합니다. 텍스트 템플릿을 사용 하 여 런타임에 응용 프로그램의 일부로 텍스트를 생성 하 고 디자인 타임에 프로젝트 코드를 생성할 수 있습니다. 이 항목에서는 가장 자주 묻는 "어떻게 할까요? ...?"를 요약 합니다. 질문.
@@ -31,7 +33,7 @@ Visual Studio의 텍스트 템플릿은 모든 종류의 텍스트를 생성 하
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>런타임에 파일을 생성 하 여 데이터를 템플릿에 전달 합니다.
  런타임에 응용 프로그램은 표준 텍스트와 데이터가 혼합 되어 있는 보고서와 같은 텍스트 파일을 생성 합니다. 수백 개의 문을 작성 하지 않으려고 `write` 합니다.
 
-- 프로젝트에 런타임 텍스트 템플릿을 추가 합니다. 이 템플릿은 코드에서 클래스를 만들어 텍스트를 생성 하는 데 인스턴스화하고 사용할 수 있습니다. 생성자 매개 변수에서 데이터를 전달할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+- 프로젝트에 런타임 텍스트 템플릿을 추가 합니다. 이 템플릿은 코드에서 클래스를 만들어 텍스트를 생성 하는 데 인스턴스화하고 사용할 수 있습니다. 생성자 매개 변수에서 데이터를 전달할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
 - 런타임에만 사용할 수 있는 템플릿에서 생성 하려는 경우 표준 텍스트 템플릿을 사용할 수 있습니다. Visual Studio 확장을 작성 하는 경우 텍스트 템플릿 서비스를 호출할 수 있습니다. 자세한 내용은 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요. 다른 컨텍스트에서는 텍스트 템플릿 엔진을 사용할 수 있습니다. 자세한 내용은 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>를 참조하세요.
 
@@ -71,14 +73,14 @@ Visual Studio의 텍스트 템플릿은 모든 종류의 텍스트를 생성 하
 
 ### <a name="generate-files-from-a-complex-model"></a>복합 모델에서 파일 생성
 
-- 모델을 나타내는 DSL (도메인별 언어)을 만드는 것이 좋습니다. 이렇게 하면 모델의 요소 이름을 반영 하는 형식과 속성을 사용 하기 때문에 템플릿을 더 쉽게 작성할 수 있습니다. 파일을 구문 분석 하거나 XML 노드를 탐색할 필요는 없습니다. 예:
+- 모델을 나타내는 DSL (도메인별 언어)을 만드는 것이 좋습니다. 이렇게 하면 모델의 요소 이름을 반영 하는 형식과 속성을 사용 하기 때문에 템플릿을 더 쉽게 작성할 수 있습니다. 파일을 구문 분석 하거나 XML 노드를 탐색할 필요는 없습니다. 예를 들어:
 
      `foreach (Book book in this.Library) { ... }`
 
-     자세한 내용은 도메인별 언어 [시작](../modeling/getting-started-with-domain-specific-languages.md) 및 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+     자세한 내용은 [Domain-Specific 언어 시작](../modeling/getting-started-with-domain-specific-languages.md) 및 [Domain-Specific 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
 ### <a name="get-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
- Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 `EnvDTE` 어셈블리를 로드 합니다. 예:
+ Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 `EnvDTE` 어셈블리를 로드 합니다. 예를 들어:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

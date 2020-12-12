@@ -1,5 +1,7 @@
 ---
 title: 다이어그램에 배경 이미지 설정
+description: Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사용 하 여 생성 된 디자이너의 배경 이미지를 설정할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542586"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363785"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사용 하 여 생성 된 디자이너의 배경 이미지를 설정할 수 있습니다.
@@ -23,13 +25,13 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
 1. 다이어그램 배경으로 사용할 이미지 파일을 현재 프로젝트의 Dsl\Resources 디렉터리에 복사합니다.
 
-2. **솔루션 탐색기**에서 Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 항목**을 클릭 합니다.
+2. **솔루션 탐색기** 에서 Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **기존 항목** 을 클릭 합니다.
 
 3. **기존 항목 추가** 대화 상자에서 Dsl\Resources 폴더로 이동 합니다.
 
-4. **파일 형식** 목록에서 **이미지 파일**을 클릭 합니다.
+4. **파일 형식** 목록에서 **이미지 파일** 을 클릭 합니다.
 
-5. 디렉터리에 복사한 이미지 파일을 클릭 한 다음 **추가**를 클릭 합니다.
+5. 디렉터리에 복사한 이미지 파일을 클릭 한 다음 **추가** 를 클릭 합니다.
 
 6. Dsl을 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 클릭 하 여 dsl 프로젝트의 속성을 엽니다.
 
@@ -41,19 +43,19 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
 10. Dsl\Properties\Resources.resx 파일이 있으며 그 아래에 Resources.Designer.cs 파일이 있는지 확인합니다.
 
-11. Resources.Designer.cs이 없는 경우 **솔루션 탐색기**에서 파일 리소스 .resx를 클릭 합니다.
+11. Resources.Designer.cs이 없는 경우 **솔루션 탐색기** 에서 파일 리소스 .resx를 클릭 합니다.
 
 12. **속성** 창에서 `Custom Tool` 속성을 `ResXFileCodeGenerator`로 설정합니다.
 
-13. **솔루션 탐색기**에서 Dsl 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **새 폴더**를 클릭 합니다.
+13. **솔루션 탐색기** 에서 Dsl 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **새 폴더** 를 클릭 합니다.
 
-14. 폴더 이름을 **Custom으로 지정**합니다.
+14. 폴더 이름을 **Custom으로 지정** 합니다.
 
-15. 사용자 지정 폴더를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **새 항목**을 클릭 합니다.
+15. 사용자 지정 폴더를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **새 항목** 을 클릭 합니다.
 
-16. **새 항목 추가** 대화 상자의 **템플릿** 목록에서 **코드 파일**을 클릭 합니다.
+16. **새 항목 추가** 대화 상자의 **템플릿** 목록에서 **코드 파일** 을 클릭 합니다.
 
-17. **이름** 상자에 `BackgroundImage.cs` 를 입력 하 고 **추가**를 클릭 합니다.
+17. **이름** 상자에 `BackgroundImage.cs` 를 입력 하 고 **추가** 를 클릭 합니다.
 
 18. 네임스페이스, 다이어그램 클래스 이름 및 이미지 파일 리소스 이름을 조정하여 다음 코드를 BackgroundImage.cs 파일에 복사합니다.
 
@@ -100,7 +102,7 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
      프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md)

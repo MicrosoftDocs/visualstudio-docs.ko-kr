@@ -1,5 +1,7 @@
 ---
 title: 텍스트 및 이미지 필드 사용자 지정
+description: 텍스트 및 이미지 파일 사용자 지정에 대해 알아봅니다. 또한 도형에서 텍스트 데코레이터를 정의할 때 TextField로 표시 되는 것에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542716"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362862"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 도형에서 텍스트 데코레이터를 정의할 때 텍스트 데코레이터는 TextField로 표시 됩니다. TextFields 및 기타 ShapeFields를 초기화 하는 예는 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
@@ -110,7 +112,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
  다음 예에서는 텍스트 필드의 글꼴을 셰이프의 모델 요소에 대 한 부울 도메인 속성의 상태에 따라 결정 합니다.
 
- 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 부울 도메인 속성을 추가 `AlternateState` 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환**을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
+ 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 부울 도메인 속성을 추가 `AlternateState` 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환** 을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
 
  코드를 테스트 하려면 F5 키를 누르고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태가 표시 되어야 합니다. 셰이프를 선택 하 고 속성 창 **AlternateState** 속성의 값을 변경 합니다. 요소 이름의 글꼴이 변경 되어야 합니다.
 
@@ -197,7 +199,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 > [!WARNING]
 > 이 예제에서는 동적 이미지 데코레이터를 만드는 방법을 보여 줍니다. 그러나 모델 변수의 상태에 따라 하나 또는 두 개의 이미지만 전환 하려는 경우에는 여러 이미지 데코레이터을 만들고 모양의 동일한 위치에서 찾은 다음 표시 유형 필터를 모델 변수의 특정 값에 따라 다르게 설정 하는 것이 더 간단 합니다. 이 필터를 설정 하려면 DSL 정의에서 도형 맵을 선택 하 고 DSL 정보 창을 열고 데코레이터 탭을 클릭 합니다.
 
- 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 부울 도메인 속성을 추가 `AlternateState` 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환**을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
+ 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 부울 도메인 속성을 추가 `AlternateState` 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환** 을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
 
  코드를 테스트 하려면 F5 키를 누르고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태가 표시 되어야 합니다. 셰이프를 선택 하 고 속성 창 **AlternateState** 속성의 값을 변경 합니다. 그러면 아이콘이 해당 모양에서 90도 회전 하 여 표시 됩니다.
 
@@ -261,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -1,5 +1,7 @@
 ---
 title: 계산된 스토리지 속성 및 사용자 지정 스토리지 속성
+description: DSL (도메인별 언어)의 모든 도메인 속성을 다이어그램 및 언어 탐색기에서 사용자에 게 표시할 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115190"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363551"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 스토리지 속성 및 사용자 지정 스토리지 속성
 DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언어 탐색기에서 사용자에 게 표시 될 수 있으며 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 값이 저장 되는 방식에 따라 달라 집니다.
@@ -33,26 +35,26 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>계산 된 저장소 속성 또는 사용자 지정 저장소 속성을 정의 하려면
 
-1. DslDefinition. dsl의 다이어그램 또는 **Dsl 탐색기**에서 도메인 속성을 선택 합니다.
+1. DslDefinition. dsl의 다이어그램 또는 **Dsl 탐색기** 에서 도메인 속성을 선택 합니다.
 
-2. **속성** 창에서 **Kind** 필드를 **계산** 또는 **사용자 지정 저장소**로 설정 합니다.
+2. **속성** 창에서 **Kind** 필드를 **계산** 또는 **사용자 지정 저장소** 로 설정 합니다.
 
      또한 해당 **형식을** 원하는 대로 설정 했는지 확인 합니다.
 
-3. **솔루션 탐색기**도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
+3. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
-4. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+4. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
-     다음 오류 메시지가 표시 됩니다. "*클래스* 에 '*속성*가져오기에 대 한 정의가 포함 되어 있지 않습니다."
+     다음 오류 메시지가 표시 됩니다. "*클래스* 에 '*속성* 가져오기에 대 한 정의가 포함 되어 있지 않습니다."
 
 5. 오류 메시지를 두 번 클릭 합니다.
 
-     Dsl\GeneratedCode\DomainClasses.cs 또는 DomainRelationships.cs가 열립니다. 강조 표시 된 메서드 호출 위에서 주석에는*속성*가져오기 ()에 대 한 구현을 제공 하 라는 메시지가 표시 됩니다.
+     Dsl\GeneratedCode\DomainClasses.cs 또는 DomainRelationships.cs가 열립니다. 강조 표시 된 메서드 호출 위에서 주석에는 *속성* 가져오기 ()에 대 한 구현을 제공 하 라는 메시지가 표시 됩니다.
 
     > [!NOTE]
-    > 이 파일은 DslDefinition. dsl에서 생성 됩니다. 이 파일을 편집 하는 경우 다음 번에 **모든 템플릿 변환**을 클릭 하면 변경 내용이 손실 됩니다. 대신, 필요한 메서드를 별도의 파일에 추가 합니다.
+    > 이 파일은 DslDefinition. dsl에서 생성 됩니다. 이 파일을 편집 하는 경우 다음 번에 **모든 템플릿 변환** 을 클릭 하면 변경 내용이 손실 됩니다. 대신, 필요한 메서드를 별도의 파일에 추가 합니다.
 
-6. 별도의 폴더 (예: CustomCode YourDomainClass)에서 클래스 파일을 만들거나 엽니다 \\ *YourDomainClass*.
+6. 별도의 폴더 (예: CustomCode YourDomainClass)에서 클래스 파일을 만들거나 엽니다 \\ .
 
      네임 스페이스는 생성 된 코드의 네임 스페이스와 동일 해야 합니다.
 
@@ -66,7 +68,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
     }  }
     ```
 
-8. **Kind** 를 **사용자 지정 저장소**로 설정 하는 경우에도 메서드를 제공 해야 `Set` 합니다. 예를 들면 다음과 같습니다.
+8. **Kind** 를 **사용자 지정 저장소** 로 설정 하는 경우에도 메서드를 제공 해야 `Set` 합니다. 예를 들어:
 
     ```
     void SetAgeValue(int value)
@@ -79,7 +81,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 
 9. 솔루션을 빌드하고 실행합니다.
 
-10. 속성을 테스트 합니다. **실행 취소** 및 **다시 실행**을 시도해 야 합니다.
+10. 속성을 테스트 합니다. **실행 취소** 및 **다시 실행** 을 시도해 야 합니다.
 
 ## <a name="transactions-and-custom-setters"></a><a name="setters"></a> 트랜잭션 및 사용자 지정 Setter
  메서드가 일반적으로 활성 트랜잭션 내에서 호출 되기 때문에 사용자 지정 저장소 속성의 Set 메서드에서는 트랜잭션을 열 필요가 없습니다.
@@ -90,7 +92,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 
 - 그러나 데이터베이스 또는 파일 내용과 같은 외부 리소스 또는 저장소 외부의 개체를 업데이트 해야 합니다. 이렇게 하면 synchronism에 저장 된 값으로 유지 됩니다.
 
-  예를 들면 다음과 같습니다.
+  예를 들어:
 
 ```
 void SetAgeValue(int value)
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  트랜잭션에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인 속성의 속성](../modeling/properties-of-domain-properties.md)

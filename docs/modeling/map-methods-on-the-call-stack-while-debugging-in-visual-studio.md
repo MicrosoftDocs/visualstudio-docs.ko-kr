@@ -1,5 +1,7 @@
 ---
 title: 디버깅하는 동안 호출 스택의 맵 메서드
+description: 디버깅 하는 동안 호출 스택을 시각적으로 추적 하는 코드 맵을 만드는 방법을 알아봅니다. 또한 맵에 대 한 메모를 만들어 코드가 수행 하는 작업을 추적할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532706"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362433"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 
@@ -79,7 +81,7 @@ ms.locfileid: "85532706"
 
 1. 디버깅을 시작합니다. (키보드: **F5**)
 
-2. 앱이 중단 모드로 들어가거나 함수를 한 단계씩 실행 한 후 **코드 맵**을 선택 합니다. (키보드: **Ctrl**  +  **Shift**  +  **`** )
+2. 앱이 중단 모드로 들어가거나 함수를 한 단계씩 실행 한 후 **코드 맵** 을 선택 합니다. (키보드: **Ctrl**  +  **Shift**  +  **`** )
 
      ![호출 스택 매핑을 시작할 코드 맵 선택](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -91,7 +93,7 @@ ms.locfileid: "85532706"
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> 코드에 대해 메모하기
 
- 코드에서 발생 하는 상황을 추적 하는 주석을 추가 합니다. 주석에서 새 줄을 추가 하려면 **Shift + Return**을 누릅니다.
+ 코드에서 발생 하는 상황을 추적 하는 주석을 추가 합니다. 주석에서 새 줄을 추가 하려면 **Shift + Return** 을 누릅니다.
 
  ![코드 맵의 호출 스택에 설명 추가](../debugger/media/debuggermap_addcomment.png)
 
@@ -105,7 +107,7 @@ ms.locfileid: "85532706"
 
  이제 지도가 있나요? C # 또는 Visual Basic으로 작업 하는 경우 코드에서 발생 하는 일을 추적 하기 위해 필드, 속성 및 기타 메서드 등의 항목을 추가 합니다.
 
- 메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵에서 메서드를 선택 하 고 **F12**키를 누릅니다.)
+ 메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵에서 메서드를 선택 하 고 **F12** 키를 누릅니다.)
 
  ![코드 맵의 메서드에 대한 코드 정의로 이동](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -166,9 +168,9 @@ ms.locfileid: "85532706"
 
   - 기본 레이아웃을 변경합니다.
 
-  - 지도를 자동으로 다시 정렬 하지 않으려면 **디버그할 때 자동으로 레이아웃**을 해제 합니다.
+  - 지도를 자동으로 다시 정렬 하지 않으려면 **디버그할 때 자동으로 레이아웃** 을 해제 합니다.
 
-  - 항목을 추가할 때 맵을 최대한 적게 다시 정렬 하려면 **증분 레이아웃**을 해제 합니다.
+  - 항목을 추가할 때 맵을 최대한 적게 다시 정렬 하려면 **증분 레이아웃** 을 해제 합니다.
 
 - **다른 사용자와 맵을 공유할 수 있습니까?**
 

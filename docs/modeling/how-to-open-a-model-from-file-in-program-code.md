@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그램 코드로 파일에서 모델 열기'
+description: ModelBus는 모델의 모델 또는 요소를 참조 하는 표준 메커니즘과 모델을 이동한 경우 모델을 찾는 표준 메커니즘을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532485"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363876"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 
@@ -26,12 +28,12 @@ Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습�
 
 1. DSL 모델을 읽을 응용 프로그램에 대 한 Visual Studio 프로젝트를 엽니다.
 
-2. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
+2. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
 3. 프로젝트 속성 창의 **응용 프로그램** 탭에서 **대상 프레임 워크** 필드를 **.NET Framework 4** 이상으로 설정 합니다.
 
 > [!NOTE]
-> 대상 프레임 워크는 **4 개의 클라이언트 프로필 .NET Framework**되어서는 안 됩니다.
+> 대상 프레임 워크는 **4 개의 클라이언트 프로필 .NET Framework** 되어서는 안 됩니다.
 
 ## <a name="references"></a>참조
 
@@ -41,11 +43,11 @@ Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니
 
   - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고로 이동 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 합니다.
 
-- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트* `.Dsl.dll` .
+- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사* 의 형식입니다. *프로젝트* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
 
-DSL을 읽는 코드를 작성 하려면 먼저 DSL에 의해 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션에서 **dsl** 프로젝트를 열고 **generatedcode** 폴더를 확인 합니다. 또는 프로젝트 **참조**에서 dsl 어셈블리를 두 번 클릭 하 고 **개체 브라우저**에서 dsl 네임 스페이스를 엽니다.
+DSL을 읽는 코드를 작성 하려면 먼저 DSL에 의해 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션에서 **dsl** 프로젝트를 열고 **generatedcode** 폴더를 확인 합니다. 또는 프로젝트 **참조** 에서 dsl 어셈블리를 두 번 클릭 하 고 **개체 브라우저** 에서 dsl 네임 스페이스를 엽니다.
 
 다음은 식별 해야 하는 클래스입니다.
 

@@ -1,5 +1,7 @@
 ---
 title: MEF를 사용하여 DSL 확장
+description: MEF (Managed Extensibility Framework)를 사용 하 여 DSL (도메인별 언어)을 확장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547643"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363174"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 
@@ -95,7 +97,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3. **DslPackage\Commands.vsct**라는 기존 파일에 다음 줄을 추가 합니다.
+3. **DslPackage\Commands.vsct** 라는 기존 파일에 다음 줄을 추가 합니다.
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,13 +105,13 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
     기존 지시문 뒤에 줄을 삽입 `<Include>` 합니다.
 
-4. *Dsldefinition. dsl*을 엽니다.
+4. *Dsldefinition. dsl* 을 엽니다.
 
-5. DSL 탐색기에서 **Editor\validation**을 선택 합니다.
+5. DSL 탐색기에서 **Editor\validation** 을 선택 합니다.
 
 6. 속성 창에서 **사용 하** 는 속성 중 하나 이상이 인지 확인 합니다 `true` .
 
-7. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환**을 클릭 합니다.
+7. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
      자회사 파일은 추가한 각 파일 아래에 나타납니다.
 
@@ -129,7 +131,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - 이 어셈블리의 이름은 일반적으로 ".Dsl.dll"로 끝납니다.
 
-   - DSL 프로젝트에 액세스할 수 있는 경우 디렉터리 **dsl \\ bin \\ \* ** 에서 어셈블리 파일을 찾을 수 있습니다.
+   - DSL 프로젝트에 액세스할 수 있는 경우에는 다음 디렉터리에서 어셈블리 파일을 찾을 수 있습니다.** \\ dsl \\ \* bin* _
 
    - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"으로 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일의 압축을 해제 합니다.
 
@@ -145,29 +147,29 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - System.Windows.Forms.dll
 
-4. 새 **VSIX 프로젝트** 프로젝트를 만듭니다.
+4. 새 _ *VSIX 프로젝트** 프로젝트를 만듭니다.
 
-5. **솔루션 탐색기**에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정**을 선택 합니다.
+5. **솔루션 탐색기** 에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정** 을 선택 합니다.
 
-6. 새 프로젝트에서 **source.extension.vsixmanifest**를 엽니다.
+6. 새 프로젝트에서 **source.extension.vsixmanifest** 를 엽니다.
 
-7. **콘텐츠 추가**를 클릭 합니다. 대화 상자에서 **콘텐츠 형식** 을 **MEF 구성 요소**로 설정 하 고 **소스 프로젝트** 를 클래스 라이브러리 프로젝트로 설정 합니다.
+7. **콘텐츠 추가** 를 클릭 합니다. 대화 상자에서 **콘텐츠 형식** 을 **MEF 구성 요소** 로 설정 하 고 **소스 프로젝트** 를 클래스 라이브러리 프로젝트로 설정 합니다.
 
 8. DSL에 VSIX 참조를 추가 합니다.
 
    1. Source.extension.vsixmanifest에서 **참조 추가** 를 클릭 **합니다.**
 
-   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\ bin \\ \* **에 빌드됩니다.
+   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\ bin \\ \** _에 빌드됩니다.
 
        이를 통해 사용자는 DSL 및 확장을 동시에 설치할 수 있습니다. 사용자가 이미 DSL을 설치한 경우에는 확장만 설치 됩니다.
 
-9. **Source.extension.vsixmanifest**의 다른 필드를 검토 하 고 업데이트 합니다. **버전 선택** 을 클릭 하 고 올바른 Visual Studio 버전이 설정 되어 있는지 확인 합니다.
+9. _ * Source.extension.vsixmanifest * *의 다른 필드를 검토 하 고 업데이트 합니다. **버전 선택** 을 클릭 하 고 올바른 Visual Studio 버전이 설정 되어 있는지 확인 합니다.
 
 10. 클래스 라이브러리 프로젝트에 코드를 추가 합니다. 다음 섹션의 예제를 가이드로 사용 합니다.
 
      원하는 수의 명령, 제스처 및 유효성 검사 클래스를 추가할 수 있습니다.
 
-11. 확장을 테스트 하려면 **f5**키를 누릅니다. Visual Studio의 실험적 인스턴스에서 DSL의 예제 파일을 만들거나 엽니다.
+11. 확장을 테스트 하려면 **f5** 키를 누릅니다. Visual Studio의 실험적 인스턴스에서 DSL의 예제 파일을 만들거나 엽니다.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Dsl 용 MEF 확장 작성
 
@@ -175,7 +177,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 ### <a name="menu-commands"></a>메뉴 명령
 
-메뉴 명령을 작성 하려면를 구현 하는 클래스를 정의 하 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 고 dsl에 정의 된 특성 ( *dsl*이라고 명명 됨)을 사용 하 여 클래스에 접두사를 지정 합니다 `CommandExtension` . 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
+메뉴 명령을 작성 하려면를 구현 하는 클래스를 정의 하 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 고 dsl에 정의 된 특성 ( *dsl* 이라고 명명 됨)을 사용 하 여 클래스에 접두사를 지정 합니다 `CommandExtension` . 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
 
 `QueryStatus()` 는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 명령이 적용 되는 시점을 나타내도록 설정 해야 합니다.
 
@@ -323,7 +325,7 @@ namespace MefExtension
 
 유효성 검사 메서드는 `ValidationExtension` DSL 및에 의해 생성 된 특성으로 표시 됩니다 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . 메서드는 특성으로 표시 되지 않은 모든 클래스에 나타날 수 있습니다.
 
-자세한 내용은 [도메인별 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
+자세한 내용은 [Domain-Specific 언어로 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
 
 ```csharp
 using Company.MyDsl;
@@ -372,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF(Managed Extensibility Framework)](/dotnet/framework/mef/index)

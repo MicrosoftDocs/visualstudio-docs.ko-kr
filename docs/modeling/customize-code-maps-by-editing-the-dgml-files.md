@@ -1,5 +1,7 @@
 ---
 title: Customize code maps by editing the DGML files
+description: 해당 방향이 지정 된 Graph Markup Language (.dgml) 파일을 편집 하 여 코드 맵을 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,18 +22,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547279"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363429"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
 코드 맵을 사용자 지정 하려면 해당 사용자의 지시 된 Graph Markup Language (.dgml) 파일을 편집 하면 됩니다. 예를 들어 요소를 편집하여 사용자 지정 스타일을 지정하거나, 코드 요소와 링크에 속성 및 범주를 할당하거나, 코드 요소 또는 링크에 문서 또는 URL을 연결할 수 있습니다. DGML 요소에 대 한 자세한 내용은 [dgml (방향이 지정 된 그래프 태그 언어) 참조](../modeling/directed-graph-markup-language-dgml-reference.md)를 참조 하세요.
 
-텍스트 또는 XML 편집기에서 코드 맵의 .dgml 파일을 편집합니다. 맵이 Visual Studio 솔루션의 일부인 경우 **솔루션 탐색기**에서 선택 하 고 바로 가기 메뉴를 연 다음 **연결 프로그램**, **XML (텍스트) 편집기**를 선택 합니다.
+텍스트 또는 XML 편집기에서 코드 맵의 .dgml 파일을 편집합니다. 맵이 Visual Studio 솔루션의 일부인 경우 **솔루션 탐색기** 에서 선택 하 고 바로 가기 메뉴를 연 다음 **연결 프로그램**, **XML (텍스트) 편집기** 를 선택 합니다.
 
 > [!NOTE]
 > 코드 맵을 만들려면 Visual Studio Enterprise edition이 있어야 합니다. Visual Studio에서 코드 맵을 편집하는 경우 .dgml 파일을 저장할 때 사용되지 않는 DGML 요소와 특성이 삭제되어 정리됩니다. 또한 수동으로 새 링크를 추가하는 경우 자동으로 코드 요소가 생성됩니다. .dgml 파일을 저장하면 사용자가 요소에 추가한 특성이 사전순으로 자동으로 재배열됩니다.
@@ -47,7 +49,7 @@ ms.locfileid: "85547279"
 
     새 그룹을 추가하려면 `<Nodes>` 섹션을 찾습니다. 새 `<Node/>` 요소를 추가합니다.
 
-3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예:
+3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예를 들어:
 
    ```xml
    <Nodes>
@@ -64,7 +66,7 @@ ms.locfileid: "85547279"
 
    - 그룹 코드 요소와 자식 코드 요소 간의 `Category` 관계를 지정하는 `Contains` 특성
 
-     예:
+     예를 들어:
 
    ```xml
    <Links>
@@ -96,7 +98,7 @@ ms.locfileid: "85547279"
     Stroke="StrokeValue"
     ```
 
-     예:
+     예를 들어:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -193,7 +195,7 @@ ms.locfileid: "85547279"
     Style="Plain"
     ```
 
-     도형
+     셰이프
 
      모양을 아이콘으로 바꾸려면 `Shape` 속성을 `None`으로 설정하고 `Icon` 속성을 아이콘 파일 경로로 설정합니다.
 
@@ -201,7 +203,7 @@ ms.locfileid: "85547279"
     Shape="ShapeFilePathLocation"
     ```
 
-     예:
+     예를 들어:
 
     ```xml
     <Nodes>
@@ -236,7 +238,7 @@ ms.locfileid: "85547279"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     예:
+     예를 들어:
 
     ```xml
     <Links>
@@ -266,7 +268,7 @@ ms.locfileid: "85547279"
 
 2. `<Style/>` 요소에 `<Condition/>` 특성이 포함된 `Expression` 요소를 추가하여 부울 값을 반환하는 식을 지정합니다.
 
-    예:
+    예를 들어:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -314,7 +316,7 @@ ms.locfileid: "85547279"
 
 3. `<Condition/>` 요소의 다음 줄에서 한 개 또는 여러 개의 `<Setter/>` 요소를 추가하여 조건을 만족하는 맵, 코드 요소 또는 링크에 적용할 `Property` 특성과 고정 `Value` 특성 또는 계산된 `Expression` 특성을 지정합니다.
 
-    예:
+    예를 들어:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +444,7 @@ ms.locfileid: "85547279"
 
 1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예:
+2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예를 들어:
 
     ```xml
     <Nodes>
@@ -464,7 +466,7 @@ ms.locfileid: "85547279"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예:
+3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예를 들어:
 
     ```xml
     <Links>
@@ -489,7 +491,7 @@ ms.locfileid: "85547279"
 
 - 원하는 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예:
+- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들어:
 
     ```xml
     <Nodes>
@@ -511,7 +513,7 @@ ms.locfileid: "85547279"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예:
+3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들어:
 
     ```xml
     <Links>
@@ -533,7 +535,7 @@ ms.locfileid: "85547279"
 
 2. 부모 범주에 대한 `<Category/>` 요소를 추가한 다음 자식 범주의 `BasedOn` 요소에 `<Category/>` 특성을 추가합니다.
 
-     예:
+     예를 들어:
 
     ```xml
     <Nodes>
@@ -582,7 +584,7 @@ ms.locfileid: "85547279"
      > [!NOTE]
      > `Reference` 특성은 요소마다 하나씩만 있을 수 있습니다.
 
-     예:
+     예를 들어:
 
    ```xml
    <Nodes>
@@ -607,7 +609,7 @@ ms.locfileid: "85547279"
 
       4. 특성을 사용 `Label` 하 여 코드 요소의 **참조로 이동** 바로 가기 메뉴에서 표시 텍스트를 지정 합니다.
 
-      예:
+      예를 들어:
 
    ```xml
    <Nodes>

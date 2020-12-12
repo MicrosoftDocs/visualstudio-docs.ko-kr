@@ -1,5 +1,7 @@
 ---
 title: '방법: 모양 또는 데코레이터 클릭 가로채기'
+description: 셰이프 또는 아이콘 데코레이터를 클릭 하 고 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로챌 수 있는 방법을 가로채는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532524"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363902"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 다음 절차에서는 셰이프 또는 아이콘 데코레이터의 클릭을 가로채는 방법을 보여 줍니다. 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로채 고 요소가 응답 하도록 만들 수 있습니다.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>셰이프 클릭을 차단 하려면
- Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. 를 재정의 `OnDoubleClick()` 하거나 이름이로 시작 하는 다른 메서드 중 하나를 재정의 `On...` 합니다. 예:
+ Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. 를 재정의 `OnDoubleClick()` 하거나 이름이로 시작 하는 다른 메서드 중 하나를 재정의 `On...` 합니다. 예를 들어:
 
 ```csharp
 public partial class MyShape // change
@@ -227,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {

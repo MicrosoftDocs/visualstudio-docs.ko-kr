@@ -1,5 +1,7 @@
 ---
 title: '방법: 바로 가기 메뉴에 명령 추가'
+description: Dsl (도메인 특정 언어)에 메뉴 명령을 추가 하 여 사용자가 DSL 관련 작업을 수행할 수 있도록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545719"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363343"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 
@@ -57,7 +59,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
 ### <a name="to-add-the-command"></a>명령을 추가하려면
 
-1. **솔루션 탐색기**의 **dslpackage** 프로젝트에서 명령을. vsct를 엽니다.
+1. **솔루션 탐색기** 의 **dslpackage** 프로젝트에서 명령을. vsct를 엽니다.
 
 2. `Commands` 요소에서 하나 이상의 단추와 하나의 그룹을 정의합니다. *단추* 는 메뉴의 항목입니다. *그룹* 은 메뉴의 섹션입니다. 이러한 항목을 정의하려면 다음 요소를 추가합니다.
 
@@ -135,11 +137,11 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
 ### <a name="to-update-the-packagett-file"></a>Package.tt 파일을 업데이트하려면
 
-1. **솔루션 탐색기**의 **dslpackage** 프로젝트에서 **generatedcode** 폴더에 있는 Package.tt 파일을 엽니다.
+1. **솔루션 탐색기** 의 **dslpackage** 프로젝트에서 **generatedcode** 폴더에 있는 Package.tt 파일을 엽니다.
 
 2. `ProvideMenuResource` 특성을 찾습니다.
 
-3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들어:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -157,9 +159,9 @@ DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
+2. **Dslpackage** 에서 **custom Code** 라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -292,7 +294,7 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- **명령. vsct**에서 삽입 한 것과 동일한 GUID 값을 사용 합니다.
+ **명령. vsct** 에서 삽입 한 것과 동일한 GUID 값을 사용 합니다.
 
 > [!NOTE]
 > VSCT 파일의 Symbols 섹션을 변경하는 경우 이러한 선언도 일치하도록 변경해야 합니다. 또한 Package.tt에서 버전 번호도 증분해야 합니다.
@@ -321,7 +323,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>명령을 실행해 보려면
 
-1. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환**을 클릭 합니다.
+1. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
 2. **F5** 키를 눌러 솔루션을 다시 빌드하고 실험적 빌드에서 도메인별 언어 디버깅을 시작 합니다.
 
@@ -357,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 이전 버전 패키지를 제거했는지 확인합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

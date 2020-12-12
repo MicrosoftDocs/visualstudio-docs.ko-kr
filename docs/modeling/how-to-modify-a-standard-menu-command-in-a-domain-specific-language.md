@@ -1,5 +1,7 @@
 ---
 title: DSL의 표준 메뉴 명령 수정
+description: DSL에서 자동으로 정의 되는 일부 표준 명령의 동작을 수정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532498"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363889"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
 
@@ -53,9 +55,9 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
+2. **Dslpackage** 에서 **custom Code** 라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예:
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:
 
     ```csharp
     using System;

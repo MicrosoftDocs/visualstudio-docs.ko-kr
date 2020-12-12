@@ -1,5 +1,7 @@
 ---
 title: 빌드 프로세스의 코드 생성
+description: Visual Studio 솔루션 빌드 프로세스의 일부로 텍스트 변환을 호출 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298199"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363564"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
@@ -57,7 +59,7 @@ Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/dev
 
 프로젝트 파일을 편집 하 여 MSBuild의 일부 기능 (예: 텍스트 변환 대상 가져오기)을 구성 합니다.
 
-**솔루션 탐색기**에서 프로젝트의 오른쪽 클릭 메뉴에 있는 **언로드** 를 선택 합니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다. 편집을 마친 후 **다시 로드**를 선택 합니다.
+**솔루션 탐색기** 에서 프로젝트의 오른쪽 클릭 메뉴에 있는 **언로드** 를 선택 합니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다. 편집을 마친 후 **다시 로드** 를 선택 합니다.
 
 ## <a name="import-the-text-transformation-targets"></a>텍스트 변환 대상 가져오기
 
@@ -258,7 +260,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 **$ (솔루션 디렉터리)** 와 같은 Visual Studio 매크로는 MSBuild에서 작동 하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
-*.Csproj* 또는 *.vbproj* 파일을 편집 하 여 프로젝트 속성을 정의 합니다. 이 예제에서는 **Mylibfolder**라는 속성을 정의 합니다.
+*.Csproj* 또는 *.vbproj* 파일을 편집 하 여 프로젝트 속성을 정의 합니다. 이 예제에서는 **Mylibfolder** 라는 속성을 정의 합니다.
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -299,7 +301,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 - 런타임 [텍스트 템플릿은](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변환 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 ::: moniker range="vs-2017"
 

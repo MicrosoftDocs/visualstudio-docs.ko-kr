@@ -1,5 +1,7 @@
 ---
 title: '방법: 끌어서 놓기 처리기 추가'
+description: 사용자가 다른 다이어그램에서 다이어그램으로 항목을 끌 수 있도록 DSL에 끌어서 놓기 이벤트에 대 한 처리기를 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,16 +9,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545667"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363330"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 
-사용자가 다른 다이어그램이 나 Visual Studio의 다른 부분에서 항목을 다이어그램으로 끌 수 있도록 DSL에 끌어서 놓기 이벤트에 대 한 처리기를 추가할 수 있습니다. 또한 두 번 클릭 등의 이벤트용 처리기도 추가할 수 있습니다. 끌어서 놓기 및 두 번 클릭 처리기를 *제스처 처리기*라고 합니다.
+사용자가 다른 다이어그램이 나 Visual Studio의 다른 부분에서 항목을 다이어그램으로 끌 수 있도록 DSL에 끌어서 놓기 이벤트에 대 한 처리기를 추가할 수 있습니다. 또한 두 번 클릭 등의 이벤트용 처리기도 추가할 수 있습니다. 끌어서 놓기 및 두 번 클릭 처리기를 *제스처 처리기* 라고 합니다.
 
 이 항목에서는 다른 다이어그램에서 시작되는 끌어서 놓기 제스처에 대해 설명합니다. 단일 다이어그램 내의 이동 및 복사 이벤트에 대해서는 `ElementOperations`의 서브클래스를 정의하는 방식을 대신 사용할 수 있습니다. 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요. DSL 정의를 사용자 지정할 수도 있습니다.
 
@@ -128,7 +130,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
   - diagramEventArgs. GetDataFormats ()-끌어온 개체를 디코딩할 수 있는 형식을 나열 합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.
 
-  - `diagramEventArgs.Data.GetData(format)` -끌어온 개체를 지정 된 형식으로 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
+  - `diagramEventArgs.Data.GetData(format)` -끌어온 개체를 지정 된 형식으로 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들어:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -160,7 +162,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
 Visual Studio 모델 버스에서 원본 DSL에 액세스할 수 있도록 설정 합니다.
 
-1. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
+1. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용** 을 클릭 합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인** 을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
 2. **모든 템플릿 변환** 을 클릭 하 고 솔루션을 다시 빌드합니다.
 
@@ -405,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {
@@ -569,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)
 - [도메인별 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)

@@ -1,5 +1,7 @@
 ---
 title: T4 텍스트 템플릿 작성 지침
+description: Visual Studio에서 프로그램 코드나 기타 응용 프로그램 리소스를 생성 하는 경우 도움이 되는 일반적인 지침에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,20 +9,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596543"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363408"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
 
 이러한 일반적인 지침은 Visual Studio에서 프로그램 코드나 기타 응용 프로그램 리소스를 생성 하는 경우에 유용할 수 있습니다. 고정 규칙은 아닙니다.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>디자인 타임 T4 템플릿에 대 한 지침
+## <a name="guidelines-for-design-time-t4-templates"></a>T4 템플릿 Design-Time에 대 한 지침
 
-디자인 타임 T4 템플릿은 디자인 타임에 Visual Studio 프로젝트에서 코드를 생성 하는 템플릿입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조 하세요.
+디자인 타임 T4 템플릿은 디자인 타임에 Visual Studio 프로젝트에서 코드를 생성 하는 템플릿입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조하세요.
 
 응용 프로그램의 다양 한 측면을 생성 합니다.
 
@@ -76,7 +78,7 @@ XML과 같은 다른 생성 된 언어에서 지시문을 사용 `<#@include#>` 
 
 생성 된 코드 폴더를 사용 합니다.
 
-**생성 된 코드**라는 프로젝트 폴더에 템플릿과 생성 된 파일을 저장 하 여 직접 편집 해야 하는 파일이 아니라는 것을 명확 하 게 합니다. 재정의 하거나 생성 된 클래스에 추가할 사용자 지정 코드를 만드는 경우 이러한 클래스를 **사용자 지정 코드**라는 폴더에 저장 합니다. 일반적인 프로젝트의 구조는 다음과 같습니다.
+**생성 된 코드** 라는 프로젝트 폴더에 템플릿과 생성 된 파일을 저장 하 여 직접 편집 해야 하는 파일이 아니라는 것을 명확 하 게 합니다. 재정의 하거나 생성 된 클래스에 추가할 사용자 지정 코드를 만드는 경우 이러한 클래스를 **사용자 지정 코드** 라는 폴더에 저장 합니다. 일반적인 프로젝트의 구조는 다음과 같습니다.
 
 ```
 MyProject
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>실행 시간 (전처리) T4 템플릿에 대 한 지침
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Run-Time (전처리) T4 템플릿에 대 한 지침
 
 공용 자료를 상속 된 템플릿으로 이동 합니다.
 
@@ -105,7 +107,7 @@ MyProject
 
 IntelliSense를 사용할 수 있기 때문에 코드를 더 쉽게 작성할 수 있다는 이점이 있습니다. 또한 프레젠테이션과 기본 논리를 더 잘 구분할 수 있습니다.
 
-예를 들어 **MyReportText.tt**에서 다음을 수행 합니다.
+예를 들어 **MyReportText.tt** 에서 다음을 수행 합니다.
 
 `The total is: <#= ComputeTotal() #>`
 
@@ -151,7 +153,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 형식화 된 모델을 사용 하는 것이 좋습니다.
 
-모델에 대해 XML 또는 데이터베이스 스키마를 만들 수 있지만 DSL (도메인 특정 언어)을 만드는 것이 유용할 수 있습니다. DSL은 스키마의 각 노드를 나타내는 클래스와 특성을 나타내는 속성을 생성 한다는 이점이 있습니다. 즉, 비즈니스 모델을 기준으로 프로그래밍할 수 있습니다. 예:
+모델에 대해 XML 또는 데이터베이스 스키마를 만들 수 있지만 DSL (도메인 특정 언어)을 만드는 것이 유용할 수 있습니다. DSL은 스키마의 각 노드를 나타내는 클래스와 특성을 나타내는 속성을 생성 한다는 이점이 있습니다. 즉, 비즈니스 모델을 기준으로 프로그래밍할 수 있습니다. 예를 들어:
 
 ```
 Team Members:
@@ -169,7 +171,7 @@ Team Members:
 
 사용자 고유의 다이어그램 유형을 DSL (도메인별 언어)로 디자인할 수도 있습니다. UML 및 Dsl 모두에서 코드를 생성할 수 있습니다. 자세한 내용은 [아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)

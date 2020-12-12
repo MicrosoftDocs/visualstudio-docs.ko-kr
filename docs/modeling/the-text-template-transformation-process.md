@@ -1,5 +1,7 @@
 ---
 title: 텍스트 템플릿 변환 프로세스
+description: 텍스트 템플릿 변환 프로세스에서 텍스트 템플릿 파일을 입력으로 사용 하 고 새 텍스트 파일을 출력으로 생성 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565866"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362654"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변환 프로세스
 텍스트 템플릿 변환 프로세스는 텍스트 템플릿 파일을 입력으로 사용 하 고 새 텍스트 파일을 출력으로 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 c # 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.

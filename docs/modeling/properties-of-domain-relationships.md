@@ -1,5 +1,7 @@
 ---
 title: 도메인 관계의 속성
+description: 액세스 한정자, Customer 특성 등의 도메인 relationshop 관련 된 속성에 대해 알아보고 Double 파생을 생성 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810004"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362459"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
-다음 표의 속성은 도메인 관계와 연결 되어 있습니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
+다음 표의 속성은 도메인 관계와 연결 되어 있습니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
 |속성|설명|기본값|
 |-|-|-|
@@ -36,6 +38,6 @@ ms.locfileid: "90810004"
 |표시 이름|생성 된 디자이너에서 도메인 관계에 대해 표시 되는 이름입니다.|\<none>|
 |Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none>|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))
