@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 데이터 시각화 도우미 만들기 | Microsoft Docs
+description: Visual Studio 디버거 시각화 도우미는 데이터를 표시하는 구성 요소입니다. 6가지 표준 시각화 도우미에 대해 알아보고 다른 시각화 도우미를 작성하거나 다운로드하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280878"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560683"
 ---
 # <a name="create-custom-data-visualizers"></a>사용자 지정 데이터 시각화 도우미 만들기
 

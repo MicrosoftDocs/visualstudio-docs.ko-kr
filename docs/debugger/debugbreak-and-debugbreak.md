@@ -1,5 +1,7 @@
 ---
 title: DebugBreak 및 __debugbreak | Microsoft Docs
+description: 중단점이 설정된 것처럼 DebugBreak 함수와 __debugbreak 내장 함수를 사용하여 프로그램을 중단시키는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404651"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559773"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak 및 __debugbreak
 코드의 어떤 위치에서든 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) Win32 함수 또는 [__debugbreak](/cpp/intrinsics/debugbreak) 내장 함수를 호출할 수 있습니다. `DebugBreak` 및 `__debugbreak`는 해당 위치에 중단점을 설정하는 것과 같은 효과가 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: 디버거의 컨텍스트 연산자(C++) | Microsoft Docs
+description: 외부 범위에 있고 로컬 이름으로 숨겨진 C++ 이름에 대해 컨텍스트를 제공해야 할 수 있습니다. 컨텍스트 연산자를 사용하여 이 작업을 수행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564706"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559760"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio 디버거의 컨텍스트 연산자(C++)
 C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름 또는 식을 한정할 수 있습니다. 컨텍스트 연산자는 로컬 이름에 의해 숨겨진 외부 범위에서 이름을 지정하는 데 유용합니다.
@@ -59,7 +61,7 @@ C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름
   {,,"a long, long, library name.dll"} g_Var
   ```
 
-- *식* 은 *모듈*의 함수 이름, 변수 이름 또는 포인터 주소와 같은 올바른 대상으로 확인되는 모든 유효한 C++ 식입니다.
+- *식* 은 *모듈* 의 함수 이름, 변수 이름 또는 포인터 주소와 같은 올바른 대상으로 확인되는 모든 유효한 C++ 식입니다.
 
   식 계산기는 식에서 기호가 나오면 다음과 같은 순서로 기호를 검색합니다.
 

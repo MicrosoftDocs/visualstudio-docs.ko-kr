@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903646"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538009"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -48,14 +48,14 @@ Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스�
 > [!IMPORTANT]
 > 현재 Azure 구독이 사용할 수 없게 되거나 데이터에 액세스할 수 없게 되기 전에 리소스를 다른 Azure 구독으로 이전해야 합니다.  
 
-Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하려면 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
+Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
 
 - **Visual Studio 구독을 직접 구매하는 경우** Microsoft Store를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **조직의 누군가가 조직의 구독을 구매하는 경우** , [Visual Studio 구독 관리자에게 문의](./contact-my-admin.md)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
-- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우** , Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](./manage-vs-subscriptions.md#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
+- **조직의 누군가가 조직의 구독을 구매하는 경우**, [Visual Studio 구독 관리자에게 문의](./contact-my-admin.md)하여 필요한 월간 크레딧을 제공하는 구독을 요청합니다.  
+- 다른 Microsoft 계정과 연결된 동일한 구독 수준의 **다른 활성 Visual Studio 구독이 있는 경우**, Visual Studio [구독 포털](https://my.visualstudio.com/subscriptions)에서 [대체 계정을 추가](./manage-vs-subscriptions.md#managing-my-profile)하여 Azure 혜택을 다른 활성 Visual Studio 구독으로 이전할 수 있습니다.  
 
 아래 자격 표를 사용하여 각 구독 유형에 포함된 크레딧 수를 확인합니다.  
 
@@ -73,10 +73,10 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 |                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             |
-|              GitHub Enterprise가 포함된 Visual Studio Enterprise               |     150 USD 월간 크레딧     |                             예                             |
+|              GitHub Enterprise가 포함된 Visual Studio Enterprise 구독               |     150 USD 월간 크레딧     |                             예                             |
 |               Visual Studio Enterprise 월간               |        사용할 수 없음        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD 월간 크레딧      |                             예
-|              GitHub Enterprise가 포함된 Visual Studio Professional              |     150 USD 월간 크레딧     |                             예                             |
+|              GitHub Enterprise가 포함된 Visual Studio Professional 구독              |     150 USD 월간 크레딧     |                             예                             |
 |              Visual Studio Professional 월간              |        사용할 수 없음        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD 월간 크레딧      |                             예                             |
 |                        MSDN 플랫폼                        |     100 USD 월간 크레딧     |                             예                             |

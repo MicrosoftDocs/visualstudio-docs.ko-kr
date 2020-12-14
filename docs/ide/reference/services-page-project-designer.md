@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 서비스 페이지
+description: 프로젝트 디자이너의 서비스 페이지를 사용하여 프로젝트에 대해 클라이언트 애플리케이션 서비스를 사용하도록 설정하고 구성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,26 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593566"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560800"
 ---
 # <a name="services-page-project-designer"></a>프로젝트 디자이너, 서비스 페이지
 
-클라이언트 애플리케이션 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 애플리케이션에서 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. **프로젝트 디자이너**의 **서비스** 페이지를 사용하여 프로젝트에 대해 클라이언트 애플리케이션 서비스를 사용하도록 설정하고 구성할 수 있습니다.
+클라이언트 애플리케이션 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 애플리케이션에서 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. **프로젝트 디자이너** 의 **서비스** 페이지를 사용하여 프로젝트에 대해 클라이언트 애플리케이션 서비스를 사용하도록 설정하고 구성할 수 있습니다.
 
 클라이언트 애플리케이션 서비스를 통해 중앙 집중식 서버를 사용하여 사용자를 인증하고, 각 사용자의 할당된 역할을 결정하고, 네트워크에서 공유할 수 있는 사용자별 애플리케이션 설정을 저장할 수 있습니다. 자세한 내용은 [클라이언트 애플리케이션 서비스](/dotnet/framework/common-client-technologies/client-application-services)를 참조하세요.
 
-**서비스** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택하고 **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **서비스** 탭을 클릭합니다.
+**서비스** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드를 선택하고 **프로젝트** 메뉴에서 **속성** 을 클릭합니다. **프로젝트 디자이너** 가 나타나면 **서비스** 탭을 클릭합니다.
 
 ## <a name="task-list"></a>작업 목록
 
 [방법: 클라이언트 애플리케이션 서비스 구성](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 
  **Configuration**
 
@@ -73,7 +75,7 @@ ms.locfileid: "75593566"
 
 기본 동작을 재정의하는 데 사용할 수 있는 [서비스의 고급 설정 대화 상자](../../ide/reference/advanced-settings-for-services-dialog-box.md)를 엽니다. 예를 들어 이 대화 상자를 사용하여 로컬 파일 시스템을 사용하는 대신 오프라인 스토리지용 데이터베이스를 지정할 수 있습니다. 자세한 내용은 [서비스의 고급 설정 대화 상자](../../ide/reference/advanced-settings-for-services-dialog-box.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [클라이언트 애플리케이션 서비스](/dotnet/framework/common-client-technologies/client-application-services)
 - [서비스의 고급 설정 대화 상자](../../ide/reference/advanced-settings-for-services-dialog-box.md)

@@ -1,5 +1,7 @@
 ---
 title: 모든 호출 스택을 사용하여 미니덤프 만들기
+description: 모든 호출 스택에 대한 정보를 포함하는 Visual Studio 프로세스에 대해 미니덤프를 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5cf6add1a20a0ee45ec69ade0d5f2839483bb9f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770844"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560878"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>모든 호출 스택을 사용하여 Visual Studio 프로세스에 대한 미니덤프 만들기
 
@@ -28,19 +30,19 @@ ms.locfileid: "85770844"
 ## <a name="create-the-minidump-file"></a>미니덤프 파일 만들기
 
 1. Visual Studio의 새 인스턴스를 시작합니다.
-1. 주 메뉴에서 **디버그** > **프로세스에 연결**을 선택합니다.
-1. 관련된 **관리** 확인란 및 **원시** 확인란을 선택하고 **첨부**를 누릅니다.
+1. 주 메뉴에서 **디버그** > **프로세스에 연결** 을 선택합니다.
+1. 관련된 **관리** 확인란 및 **원시** 확인란을 선택하고 **첨부** 를 누릅니다.
 
    ![프로세스에 연결](../ide/media/attach-to-process.png)
 
 1. 실행 중인 프로세스 목록에서 연결할 다른 Visual Studio 인스턴스를 선택합니다.
-1. 주 메뉴에서 **디버그** > **모두 중단**을 선택합니다.
-1. 주 메뉴에서 **디버그** > **다른 이름으로 덤프 저장**을 선택합니다.
+1. 주 메뉴에서 **디버그** > **모두 중단** 을 선택합니다.
+1. 주 메뉴에서 **디버그** > **다른 이름으로 덤프 저장** 을 선택합니다.
 
 ## <a name="get-the-call-stacks-from-the-minidump"></a>미니덤프에서 호출 스택 가져오기
 
 1. Visual Studio에서 덤프 파일을 엽니다.
-1. **도구** > **옵션** > **디버깅** > **기호**로 이동하여 **Microsoft 기호 서버**가 **기호 파일(.pdb) 위치**에서 선택되었는지 확인합니다.
+1. **도구** > **옵션** > **디버깅** > **기호** 로 이동하여 **Microsoft 기호 서버** 가 **기호 파일(.pdb) 위치** 에서 선택되었는지 확인합니다.
 1. **명령** 창(**보기** > **다른 창** > **명령 창**) 열기
 1. ‘~*k’를 입력합니다. 모든 스레드의 호출 스택이 창에 표시됩니다.
 1. 명령 창에서 모든 텍스트를 복사하고 텍스트 파일에 저장합니다.

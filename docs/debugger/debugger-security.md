@@ -1,5 +1,7 @@
 ---
 title: 디버거 보안 | Microsoft Docs
+description: 디버깅으로 인해 디버그하는 머신과 디버그되는 머신에 모두 발생할 수 있는 보안 위험에 대해 알아봅니다. 권장 사항을 따라 위험을 최소화합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600089"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559747"
 ---
 # <a name="debugger-security"></a>디버거 보안
 다른 프로세스를 디버깅하는 기능을 사용하면 특히 원격으로 디버깅하는 경우 등과 같이 일반적으로 얻을 수 없는 매우 강력한 성능을 발휘할 수 있습니다. 이 경우 디버깅 중인 컴퓨터에 대해 악의적인 사용자가 디버거를 통해 광범위한 손상을 입힐 수 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "89600089"
 ### <a name="managed-debugging-security"></a>관리되는 디버깅 보안
  다음은 모든 관리되는 디버깅에 적용되는 몇 가지 일반적인 권장 사항입니다.
 
-- 신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice**및 **localservice**와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 다음을 참조하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심스럽거나 확실하지 않은 경우 이 프로세스에 연결하지 마세요](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+- 신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice** 및 **localservice** 와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 다음을 참조하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심스럽거나 확실하지 않은 경우 이 프로세스에 연결하지 마세요](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 - 인터넷에서 프로젝트를 다운로드하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 로드하는 경우 주의해야 합니다. 이는 디버깅을 하지 않는 경우라 해도 매우 위험한 작업입니다. 이러한 작업은 프로젝트와 여기에 포함된 코드를 신뢰할 수 있는 경우에만 수행해야 합니다.
 

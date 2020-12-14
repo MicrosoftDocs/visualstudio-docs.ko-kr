@@ -1,5 +1,6 @@
 ---
 title: 창 속성 대화 상자, 일반 탭 Microsoft Docs
+description: 일반 탭에서 캡션, 핸들, 사각형, 애플리케이션 인스턴스 핸들, 메뉴 핸들, 사용자 데이터 등 창에 대한 정보를 확인합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +11,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849566"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862752"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 일반 탭
-**일반** 탭을 사용하여 선택한 창에 대한 정보를 표시할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+**일반** 탭을 사용하여 선택한 창에 대한 정보를 표시할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **일반** 탭에서 사용할 수 있는 설정은 다음과 같습니다.
 

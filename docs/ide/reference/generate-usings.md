@@ -1,5 +1,7 @@
 ---
 title: usings 생성
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 복사하여 붙여넣은 코드에 필요한 imports 또는 using 지시문을 즉시 추가하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -12,12 +14,12 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38996d1cda52dfe98b6ce9cf24e5adcca6a8b069
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094316"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617164"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Visual Studio에서 누락 usings 추가
 
@@ -38,7 +40,7 @@ ms.locfileid: "79094316"
 1. 필요한 `using` 지시문을 포함하지 않고 한 파일의 코드를 복사해 새 파일에 붙여넣습니다. 결과로 나타나는 오류는 누락된 `using` 지시문을 추가하는 코드 수정이 수반됩니다.
 
     > [!NOTE]
-    > 이 제안은 **도구 > 옵션 > 텍스트 편집기 > C# > 고급 > Using 지시문**에서 사용 설정해야 합니다.
+    > 이 제안은 **도구 > 옵션 > 텍스트 편집기 > C# > 고급 > Using 지시문** 에서 사용 설정해야 합니다.
 
 2. Ctrl+.를 선택하여 **빠른 작업 및 리팩터링** 메뉴를 엽니다.
 

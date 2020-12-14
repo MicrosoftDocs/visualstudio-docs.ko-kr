@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Visual Studio 구독을 통해 Microsoft Windows Virtual Desktop을 활용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005048"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537957"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>구독에서 Windows Virtual Desktop 액세스 
 이제 Visual Studio 구독자는 Microsoft Windows Virtual Desktop 서비스에 대해 Azure 개발/테스트 개별 크레딧을 사용할 수 있습니다.  
@@ -47,9 +47,9 @@ Windows Virtual Desktop을 사용하기 위한 필수 조건의 전체 목록을
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 사용 가능|  예          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능|  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독  | VL | 사용 가능|  예          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용 가능                                                             |  예             |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                       | 사용 가능                                        |  예           |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                       | 사용 가능                                        |  예           |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능|  예          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                         |  예          |
 | Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | N/A |

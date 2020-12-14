@@ -1,5 +1,7 @@
 ---
 title: 디버거 프로젝트 설정 | Microsoft Docs
+description: 디버깅에 영향을 주는 다양한 프로젝트 설정이 있습니다. 이 문서의 링크를 참조하여 속성 페이지 대화 상자를 통해 설정을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188637"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561034"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
 일부 프로젝트 설정도 디버깅에 영향을 미칩니다. 즉, 디버거가 검색할 디렉터리, 프로그램 실행에 사용할 명령과 명령 인수, 프로그램에 대해 생성되는 디버그 정보의 형식 등과 같은 사항이 이러한 설정에 따라 결정됩니다. **속성 페이지** 대화 상자에서 이 설정을 변경할 수 있습니다.

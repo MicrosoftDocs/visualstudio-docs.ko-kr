@@ -1,5 +1,6 @@
 ---
 title: IntelliSense를 통한 정규식 완성 메뉴
+description: IntelliSense 메뉴에서 IntelliSense를 사용하여 정규식을 작성하는 방법을 알아봅니다.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093858"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616696"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>IntelliSense를 통한 정규식 완성 메뉴
 
@@ -34,11 +35,11 @@ ms.locfileid: "79093858"
 ## <a name="how-to"></a>방법
 
 1. 정규식 문자열에 커서를 놓습니다.
-2. **Ctrl**+**스페이스바**를 눌러 **IntelliSense** 메뉴를 실행합니다.
+2. **Ctrl**+**스페이스바** 를 눌러 **IntelliSense** 메뉴를 실행합니다.
 3. 정규식 문자열에 추가할 문자를 선택합니다.
 
    ![정규식 완성 IntelliSense](../media/regex-completion-intellisense.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)

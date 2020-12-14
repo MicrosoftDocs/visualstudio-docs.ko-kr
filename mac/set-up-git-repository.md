@@ -3,15 +3,15 @@ title: Git 리포지토리 설정
 description: Mac용 Visual Studio를 사용하여 Git 리포지토리에 연결합니다.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493129"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561060"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -44,6 +44,9 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 ## <a name="publishing-an-existing-project"></a>기존 프로젝트 게시
 
 기존 프로젝트가 버전 제어에 아직 _존재하지 않는_ 경우 다음 단계를 사용해 Git에서 이를 설정합니다.
+
+> [!TIP]
+> .gitignore 파일을 사용하여 Git으로 추적하고 게시하는 폴더 및 파일을 제어합니다. 빌드 디렉터리, 이진 파일 또는 생성된 파일은 제외할 수 있습니다. [GitHub docs on ignoring files](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files)(파일 무시에 대한 GitHub 문서)에서 자세히 알아보세요.
 
 1. Mac용 Visual Studio의 솔루션 창에서 솔루션 이름을 선택합니다.
 

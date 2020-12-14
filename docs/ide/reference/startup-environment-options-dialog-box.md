@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 시작
+description: Visual Studio가 열릴 때 환경 섹션의 시작 페이지를 사용하여 다른 기본 작업을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27803983fe0b387f98934adfa6be3abbbe23611c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770595"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616306"
 ---
 # <a name="options-dialog-box-environment--startup"></a>옵션 대화 상자: 환경 \> 시작
 

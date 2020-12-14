@@ -1,5 +1,7 @@
 ---
 title: 편집하며 계속하기(Visual C#) | Microsoft Docs
+description: 편집하며 계속하기는 Visual C# 프로젝트에 사용할 수 있습니다. 지원되는 편집 내용에 대해 알아보고 편집 내용 적용 여부와 적용 시기를 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421643"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862883"
 ---
 # <a name="edit-and-continue-visual-c"></a>편집하며 계속하기(Visual C#)
  C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단 모드에서 코드를 변경할 수 있습니다. 디버깅 세션을 중지하고 다시 시작하지 않고도 변경 내용을 적용할 수 있습니다. 실행 모드에서 소스 편집기는 읽기 전용입니다.

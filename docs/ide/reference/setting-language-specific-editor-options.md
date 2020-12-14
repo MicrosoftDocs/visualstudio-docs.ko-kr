@@ -1,5 +1,7 @@
 ---
 title: 언어별 편집기 옵션 설정
+description: 특정 프로그래밍 언어에 적용되는 다양한 텍스트 편집기 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590841"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560748"
 ---
 # <a name="set-language-specific-editor-options"></a>언어별 편집기 옵션 설정
 

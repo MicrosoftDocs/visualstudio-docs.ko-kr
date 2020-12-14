@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에서 제공하는 CAST Highlight 혜택 알아보기
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353371"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538139"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CAST Highlight 혜택
 개발자는 클라우드로 마이그레이션할 때 소프트웨어에 대한 인사이트가 필요합니다. CAST Highlight를 사용하면 Visual Studio 구독자는 애플리케이션 소스 코드를 신속하게 검사하여 Azure로 마이그레이션할 애플리케이션의 클라우드 준비 상태를 식별하고, 마이그레이션 도중 및 이후에 앱 진행률을 모니터링할 수 있습니다.
@@ -78,9 +78,9 @@ ms.locfileid: "92353371"
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 3개월 동안 5개 앱 평가|  아니요.  새 구독자만 사용할 수 있음          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 3개월 동안 5개 앱 평가|  아니요.  새 구독자만 사용할 수 있음          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독  | VL | 3개월 동안 5개 앱 평가|  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월 동안 1개 앱 평가                                                             |  아니요.  새 구독자만 사용할 수 있음                  |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                       | 3개월 동안 1개 앱 평가                                                            |  아니요.  새 구독자만 사용할 수 있음                  |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                       | 3개월 동안 1개 앱 평가                                                            |  아니요.  새 구독자만 사용할 수 있음                  |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | N/A |

@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970505"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537697"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
@@ -31,9 +31,9 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup>  | Azure Boards & Repos(Basic<sup>2</sup>), Azure Test Plans, 자체 호스트 병렬 작업 |  예          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL| Azure Boards & Repos(Basic<sup>2</sup>), Azure Test Plans, 자체 호스트 병렬 작업 |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL| Azure Boards & Repos(Basic<sup>2</sup>), Azure Test Plans, 자체 호스트 병렬 작업 |  예          |
 | Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                        | Azure Boards & Repos(Basic<sup>2</sup>)                                                             |  예          |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL| Azure Boards & Repos(Basic<sup>2</sup>)                                                             |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL| Azure Boards & Repos(Basic<sup>2</sup>)                                                             |  예          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | Azure Boards & Repos(Basic<sup>2</sup>), Azure Test Plans                                              |  예          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Azure Boards & Repos(Basic<sup>2</sup>), Azure Test Plans                                             |  예          |
 ||

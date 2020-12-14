@@ -1,5 +1,7 @@
 ---
 title: 추상 클래스 구현
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 추상 클래스를 구현하는 데 필요한 코드를 즉시 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 08e1c0ec2a79e14b1306eaa5330ee3e62dca5a98
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617450"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
 
@@ -51,7 +53,7 @@ ms.locfileid: "75568908"
 
    ![클래스 구현 미리 보기](media/abstract-preview-cs.png)
 
-3. 드롭다운 메뉴에서 **추상 클래스 구현**을 선택합니다.
+3. 드롭다운 메뉴에서 **추상 클래스 구현** 을 선택합니다.
 
    > [!TIP]
    > - 미리 보기 창 맨 아래에 있는 **변경 내용 미리 보기** 링크를 사용하여 선택하기 전에 적용될 [모든 변경 내용을 확인](../../ide/preview-changes.md)합니다.

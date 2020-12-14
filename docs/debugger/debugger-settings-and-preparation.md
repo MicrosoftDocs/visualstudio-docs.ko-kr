@@ -1,5 +1,7 @@
 ---
 title: 디버거 설정 및 준비 | Microsoft Docs
+description: 이 섹션에서는 Visual Studio 디버거 사용을 준비하는 방법을 알려 주고 관련 속성에 대해 설명합니다. 링크를 통해 필요한 정보를 확인하세요.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738273"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560228"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 이 단원에서는 디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트 템플릿을 사용하여 프로그램을 만들면 디버그 구성에서 이 설정이 올바르게 활성화됩니다.

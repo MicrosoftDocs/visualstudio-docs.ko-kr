@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 탭 및 창
+description: 환경 섹션의 탭 및 창 페이지를 사용하여 편집기 창에서 탭 창이 작동하는 방식과 도구 창이 작동하는 방식에 대한 옵션을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30040a986ee271ac7512139738422ec6ca150cf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40c87b2521b673e0fbec3f98737d7989f94ae5a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769988"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616397"
 ---
 # <a name="options-dialog-box-environment--tabs-and-windows"></a>옵션 대화 상자: 환경 \> 탭 및 창
 

@@ -1,5 +1,6 @@
 ---
 title: 옵션 대화 상자, 환경, 확장
+description: 환경 섹션의 확장 페이지를 사용하여 Visual Studio에서 업데이트를 수행하는 방식 및 확장을 업데이트하고 검색하는 방식에 대해 옵션을 설정하는 방법을 알아봅니다.
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 10642cabb5ac9d0d864da25f8cbf285e5b58e995
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114239"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617346"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>옵션 대화 상자: 환경 \> 확장
 

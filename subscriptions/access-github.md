@@ -1,5 +1,5 @@
 ---
-title: GitHub Enterprise가 포함된 Visual Studio | Microsoft Docs
+title: GitHub Enterprise가 포함된 Visual Studio 구독 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,14 +7,14 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Visual Studio 구독의 일부로 GitHub Enterprise에 액세스하는 방법 알아보기
-ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467520"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537905"
 ---
-# <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise 구독이 포함된 visual Studio
+# <a name="visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 
 
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise, Visual Studio Professional 및 GitHub Enterprise는 �
 
 혜택 및 옵션에 대한 자세한 내용은 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> 를 참조하세요. 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스가 포함된 Visual Studio란?
+## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>GitHub Enterprise가 포함된 Visual Studio 구독 설정 프로세스는 어떻게 되나요?
 
 GitHub Enterprise가 포함된 Visual Studio 구독은 다음 두 부분으로 관리됩니다.
 1. Visual Studio 구독(Enterprise 또는 Professional)
 2. GitHub Enterprise 
 
-GitHub 구독이 있는 Visual Studio가 할당되면 Visual Studio 구독 관리자가 구독을 할당했음을 알리는 이메일을 받게 됩니다.  이때 <https://my.visualstudio.com/benefits>에서 사용 가능한 구독 혜택을 볼 수 있습니다.  여기에는 GitHub Enterprise 혜택이 포함됩니다.
+GitHub Enterprise가 포함된 Visual Studio 구독이 할당되면 Visual Studio 구독 관리자가 구독을 할당했음을 알리는 전자 메일을 받게 됩니다.  이때 <https://my.visualstudio.com/benefits>에서 사용 가능한 구독 혜택을 볼 수 있습니다.  여기에는 GitHub Enterprise 혜택이 포함됩니다.
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise에서 Enterprise 계정 설정 보류 중](_img/access-github/pending-account-setup.png "조직에서 먼저 Enterprise 계정을 설정해야 합니다.")  

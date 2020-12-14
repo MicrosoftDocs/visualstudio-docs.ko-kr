@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 키보드
+description: 환경 섹션의 키보드 페이지를 사용하여 키보드 매핑을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f538754110ed67d7b820ac49064188a08097c6f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd92e4cbe04b46a08e5b83ee05de14a1a15075d1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85771078"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617359"
 ---
 # <a name="options-dialog-box-environment--keyboard"></a>옵션 대화 상자: 환경 \> 키보드
 

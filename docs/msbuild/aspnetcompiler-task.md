@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 328c5d91767054b3ad4516838f95769ca6d848d0
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e77316628f2251fd44d27edaec4c91354fd81a4b
+ms.sourcegitcommit: 02445b684e69c1a665a7e06e9b46072d3fcd7ba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353410"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96516095"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 
@@ -76,3 +76,4 @@ ms.locfileid: "92353410"
 
 * [작업](../msbuild/msbuild-tasks.md)
 * [작업 참조](../msbuild/msbuild-task-reference.md)
+* [ASP.NET 컴파일 도구(aspnet_compiler.exe)](/previous-versions/ms229863(v=vs.100))

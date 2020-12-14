@@ -1,5 +1,7 @@
 ---
 title: 단어 줄 바꿈
+description: 코드 편집기에서 자동 줄 바꿈 옵션을 설정하고 해제하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20540fe7cc124c44cd1af0e031e10d5ee0b06ba1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770335"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617424"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 
@@ -28,7 +30,7 @@ ms.locfileid: "85770335"
 
 ## <a name="to-set-word-wrap-preferences"></a>자동 줄 바꿈 기본 설정을 설정하려면
 
-1. **도구** 메뉴에서 **옵션**을 선택합니다.
+1. **도구** 메뉴에서 **옵션** 을 선택합니다.
 
 2. **텍스트 편집기** 폴더의 **모든 언어** 하위 폴더에서 **일반** 옵션을 선택하여 이 옵션을 전역으로 설정합니다.
 
@@ -36,7 +38,7 @@ ms.locfileid: "85770335"
 
      프로그래밍 중인 언어에 대한 하위 폴더에서 **일반** 옵션을 선택합니다.
 
-3. **설정**에서 **자동 줄 바꿈 옵션**을 선택 또는 선택 취소합니다.
+3. **설정** 에서 **자동 줄 바꿈 옵션** 을 선택 또는 선택 취소합니다.
 
      **자동 줄 바꿈** 옵션을 선택하면 **자동 줄 바꿈 시각 문자 표시** 옵션을 사용할 수 있습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: C# Equals 및 GetHashCode 메서드 재정의 생성
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 Equals 및 GetHashCode 메서드를 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6f7ec74af21ef62079a3fef18dd39544e7b42aa
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569285"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617515"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
 
@@ -20,7 +22,7 @@ ms.locfileid: "75569285"
 
 - C#
 
-**대상:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
+**대상:****Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
 
 **시기:** 메모리의 개체 위치 대신 하나 이상의 필드에서 비교되어야 하는 형식이 있을 경우 이러한 재정의를 생성합니다.
 
@@ -51,7 +53,7 @@ ms.locfileid: "75569285"
 
    ![재정의 생성 미리 보기](media/overrides-preview-cs.png)
 
-1. 드롭다운 메뉴에서 **Equals(개체) 생성** 또는 **Equals 및 GetHashCode 생성**을 선택합니다.
+1. 드롭다운 메뉴에서 **Equals(개체) 생성** 또는 **Equals 및 GetHashCode 생성** 을 선택합니다.
 
 1. **멤버 선택** 대화 상자에서 메서드를 생성할 멤버를 선택합니다.
 

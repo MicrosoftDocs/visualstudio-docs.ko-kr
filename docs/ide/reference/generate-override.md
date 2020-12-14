@@ -1,5 +1,7 @@
 ---
 title: 메서드 재정의 생성
+description: 기본 클래스에서 재정의할 수 있는 메서드에 대한 코드를 즉시 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f27adacc39c53bf46b3a2ee09c71ae27b47f928
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569246"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617489"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 

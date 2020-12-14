@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 LinkedIn 프리미엄 구독의 일부로 포함된 LinkedIn 학습 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970311"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537892"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 LinkedIn 학습 혜택
 
@@ -72,9 +72,9 @@ LinkedIn Premium 구독 및 LinkedIn Learning 혜택을 활성화하려면:
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품<sup>1</sup> | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL | 6개월       |  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월                                                            |아니요.  새 구독자만 사용할 수 있음         |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL | 3개월      | 아니요.  새 구독자만 사용할 수 있음         |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL | 3개월      | 아니요.  새 구독자만 사용할 수 있음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                            |  해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              | 해당 없음         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|

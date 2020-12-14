@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자, 환경, 일반
+description: 환경 섹션의 일반 페이지를 사용하여 IDE에 대한 색 테마, 상태 표시줄 설정, 파일 확장명 연결 등을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189786"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617268"
 ---
 # <a name="options-dialog-box-environment--general"></a>옵션 대화 상자: 환경 \> 일반
 
@@ -96,6 +98,6 @@ Visual Studio에서 시각적 효과 조정을 자동으로 설정하는지 또�
 
 **자동 숨기기** 단추를 클릭할 때 도킹된 집합의 모든 도구 창이 아니라 포커스가 있는 도구 창만 자동으로 숨겨지도록 지정합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)

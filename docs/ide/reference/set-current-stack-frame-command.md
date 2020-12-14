@@ -1,5 +1,7 @@
 ---
 title: 현재 스택 프레임 설정 명령
+description: 현재 스택 프레임 설정 명령에 대해 알아보고 이 명령으로 특정 스택 프레임을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032602744247ded5cb38d8a3ae3e1157ccbc5cee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769718"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616605"
 ---
 # <a name="set-current-stack-frame-command"></a>현재 스택 프레임 설정 명령
 특정 스택 프레임을 설정할 수 있습니다.
@@ -32,7 +34,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>인수
 `index`
 
-필수 사항입니다. 해당 인덱스로 스택 프레임을 선택합니다.
+필수 요소. 해당 인덱스로 스택 프레임을 선택합니다.
 
 ## <a name="example"></a>예제
 

@@ -1,5 +1,7 @@
 ---
 title: 리팩터링 이름 바꾸기
+description: 리팩터링 이름 바꾸기 기능을 사용하여 필드, 지역 변수, 메서드, 네임스페이스, 속성 및 형식과 같은 코드 기호의 식별자 이름을 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182961"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616722"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 리팩터링
 
@@ -48,10 +50,10 @@ ms.locfileid: "84182961"
 2. 이제 다음과 같이 키보드나 마우스를 사용합니다.
 
    - **키보드**
-      - **Ctrl+R**을 누른 다음 **Ctrl+R**을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - **Ctrl+R** 을 누른 다음 **Ctrl+R** 을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
    - **마우스**
-      - **편집 > 리팩터링 > 이름 바꾸기**를 선택합니다.
-      - 코드를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다.
+      - **편집 > 리팩터링 > 이름 바꾸기** 를 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기** 를 선택합니다.
 
 3. 항목의 이름을 바꾸려면 새 이름을 입력하면 됩니다.
 
@@ -78,7 +80,7 @@ ms.locfileid: "84182961"
 
    ![이름 바꾸기 충돌](media/rename-conflict-cs.png)
 
-- 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **\<old name>을 \<new name>으로 이름 바꾸기**를 선택합니다.
+- 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **\<old name>을 \<new name>으로 이름 바꾸기** 를 선택합니다.
 
    ![편집기에서 이름 바꾸기](media/rename-with-editor-cs.png)
 

@@ -1,5 +1,7 @@
 ---
 title: if 문 반전
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 코드의 의미를 변경하지 않고 if 또는 if else 문을 반전하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 71b3a11e053b6a600d0b33db7c52a91c4950bf5b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531583"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616982"
 ---
 # <a name="invert-if-statement"></a>if 문 반전
 
@@ -36,15 +38,15 @@ ms.locfileid: "65531583"
 
     ![If else 반전](media/invert-if.png)
 
-2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
     ![if else 반전 코드 수정](media/invert-if-codefix.png)
 
-3. **if 반전**을 선택합니다.
+3. **if 반전** 을 선택합니다.
 
     ![if else 결과 반전](media/invert-if-codefix-result.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

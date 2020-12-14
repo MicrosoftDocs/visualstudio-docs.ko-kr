@@ -1,6 +1,8 @@
 ---
 title: 예외 검사
 titleSuffix: ''
+description: 예외를 디버그하는 데 도움이 되도록 Visual Studio에서 제공하는 정보와 예외에서 중단을 사용하지 않도록 선택적으로 설정하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 1/18/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d0084abff760ff227b20137cd55d905b57e1a18
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ddc57d28510fe2e2cd5dbbb3aeea993813546715
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852500"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862817"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>예외 도우미를 사용하여 예외 검사 
 

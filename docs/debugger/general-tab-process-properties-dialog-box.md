@@ -1,5 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자, 일반 탭 Microsoft Docs
+description: 일반 탭에서 모듈 이름, 프로세스 ID, 기본 우선 순위, 스레드 수, CPU 시간, 사용자 시간, 경과된 시간 등 프로세스에 대한 정보를 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849823"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862739"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 일반 탭
-**일반** 탭을 사용하여 특정 프로세스에 대한 자세한 정보를 확인할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+**일반** 탭을 사용하여 특정 프로세스에 대한 자세한 정보를 확인할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **일반** 탭에서 사용할 수 있는 설정은 다음과 같습니다.
 

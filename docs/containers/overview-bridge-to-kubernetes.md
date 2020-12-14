@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440612"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595268"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -72,7 +72,8 @@ Bridge to Kubernetes는 클러스터에 대한 연결을 설정할 때 다음 �
 Bridge to Kubernetes가 Kubernetes 클러스터에서 Azure Dev Spaces가 사용되는 것을 검색하는 경우 Bridge to Kubernetes를 사용하려면 Azure Dev Spaces를 사용하지 않도록 설정하라는 메시지가 표시됩니다.
 
 라우팅 관리자는 시작될 때 다음을 수행합니다.
-* 하위 도메인에 대해 *GENERATED_NAME* 을 사용하여 네임스페이스의 모든 수신 내용을 복제합니다.
+
+* 하위 도메인에 대해 *GENERATED_NAME* 을 사용하여 네임스페이스의 모든 수신(부하 분산 장치 수신 포함)을 복제합니다.
 * *GENERATED_NAME* 하위 도메인을 사용하여 복제된 수신 내용과 관련된 각 서비스에 대한 envoy pod를 만듭니다.
 * 격리 상태로 작업 중인 서비스에 대한 추가 envoy pod를 만듭니다. 이렇게 하면 해당 하위 도메인이 포함된 요청이 개발 컴퓨터로 라우팅됩니다.
 * 각 envoy pod가 하위 도메인을 포함하여 서비스 라우팅을 처리하도록 라우팅 규칙을 구성합니다.
@@ -144,7 +145,7 @@ Bridge to Kubernetes에는 다음과 같은 제한 사항이 있습니다.
 * 단일 Pod의 지원을 받는 서비스에만 연결할 수 있습니다. 복제본이 있는 서비스와 같이 여러 개의 Pod가 있는 서비스에는 연결할 수 없습니다.
 * Bridge to Kubernetes가 성공적으로 연결하려면 Pod에 단일 컨테이너만 실행되고 있어야 합니다. Bridge to Kubernetes는 서비스 메시를 통해 삽입된 사이드카 컨테이너와 같은 추가 컨테이너를 포함하는 Pod가 있는 서비스에 연결할 수 없습니다.
 * 현재 Bridge to Kubernetes Pod는 Linux 컨테이너여야 합니다. Windows 컨테이너는 지원되지 않습니다.
-* 격리는 HTTPS와 함께 사용할 수 없습니다.
+* Visual Studio에서 Bridge to Kubernetes를 사용하는 경우 HTTPS에서 격리를 사용할 수 없습니다. HTTPS는 Visual Studio Code를 사용하는 경우에만 격리 모드에서 지원됩니다.
 * 개발 컴퓨터에서 Bridge to Kubernetes를 실행하려면 hosts 파일을 편집하기 위해 관리자 권한이 필요합니다.
 * Bridge to Kubernetes는 Azure Dev Spaces가 사용하도록 설정된 클러스터에서는 사용할 수 없습니다.
 

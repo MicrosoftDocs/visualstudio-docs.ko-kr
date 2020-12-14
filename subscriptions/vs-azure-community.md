@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 지원 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903925"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538022"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Azure 커뮤니티 지원 포함
 Azure 커뮤니티를 통해 선택 지원 포럼 내에서 Azure 팀의 직접적인 도움을 받습니다.  Azure 커뮤니티 혜택은 Azure 관련 항목에 초점을 맞춘 포럼 컬렉션에 대한 액세스 권한을 제공합니다.
@@ -71,9 +71,9 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 |                                          구독 수준                                           |     채널      |    이점    | 갱신 가능? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise(Standard), NFR<sup>1</sup>                            | VL, Azure, 일반 정품 |   사용 가능    |    예     |
-|                           GitHub Enterprise가 포함된 Visual Studio Enterprise                           | VL, Azure, 일반 정품 |   사용 가능    |    예     |
+|                           GitHub Enterprise가 포함된 Visual Studio Enterprise 구독                           | VL, Azure, 일반 정품 |   사용 가능    |    예     |
 |                          Visual Studio Professional(표준)                          | VL, Azure, 일반 정품 |   사용 가능    |    예     |
-|                          GitHub Enterprise가 포함된 Visual Studio Professional                          | VL, Azure, 일반 정품 |   사용 가능    |    예     |
+|                          GitHub Enterprise가 포함된 Visual Studio Professional 구독                          | VL, Azure, 일반 정품 |   사용 가능    |    예     |
 |                              Visual Studio Test Professional(표준)                               |    VL, 일반 정품     |   사용 가능    |    예     |
 |                                       MSDN 플랫폼(표준)                                       |    VL, 일반 정품     |   사용 가능    |    예     |
 | Visual Studio Enterprise(월간 클라우드), Visual Studio Professional(월간 클라우드)|        모두        | 사용할 수 없음 |     아니요     |

@@ -1,5 +1,7 @@
 ---
 title: 명령 별칭
+description: 명령을 실행할 때 명령 별칭을 사용하여 더 적은 문자를 입력하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596413"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561073"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -44,12 +46,12 @@ ms.locfileid: "75596413"
 |중단점 설정/해제|bp|Debug.ToggleBreakPoint|
 |호출 스택 창|CallStack|디버그.호출스택|
 |책갈피 지우기|ClearBook|편집.책갈피지우기|
-|닫습니다|닫습니다|File.Close|
+|닫습니다|닫기|File.Close|
 |모든 문서 닫기|CloseAll|Window.CloseAllDocuments|
 |모두 지우기|cls|Edit.ClearAll|
 |명령 모드|cmd|보기.명령창|
-|코드 보기|코드|보기.코드보기|
-|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|코드 보기|code|보기.코드보기|
+|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|일|Debug.ListMemory|
 |ANSI로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|da|Debug.ListMemory /Ansi|
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) One Byte 형식|db|Debug.ListMemory /Format:OneByte|
 |Four Byte 형식인 ANSI로 [메모리 명령 목록](../../ide/reference/list-memory-command.md)|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -63,9 +65,9 @@ ms.locfileid: "75596413"
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) Eight Byte 형식|dq|Debug.ListMemory /Format:EightBytes|
 |Unicode로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|du|Debug.ListMemory /Unicode|
 |[문 실행 명령](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|끝내기|끝내기|File.Exit|
+|끝내기|종료|File.Exit|
 |선택 영역 서식|format|편집.선택영역서식|
-|전체 화면|전체 화면|보기.전체화면|
+|전체 화면|FullScreen|보기.전체화면|
 |[시작 명령](../../ide/reference/start-command.md)|g|디버그.시작|
 |[이동 명령](../../ide/reference/go-to-command.md)|GotoLn|편집.이동|
 |중괄호로 이동|GotoBrace|Edit.GotoBrace|
@@ -120,7 +122,7 @@ ms.locfileid: "75596413"
 |대문자로|Ucase|편집.대문자로|
 |실행 취소|실행 취소|편집.실행취소|
 |선택 영역을 탭으로 바꾸지 않음|Untabify|Edit.UntabifySelection|
-|조사식 창|조사식|Debug.WatchN|
+|조사식 창|보기|Debug.WatchN|
 |자동 줄 바꿈 설정/해제|WordWrap|편집.자동줄바꿈설정해제|
 |프로세스 목록 표시|&#124;|Debug.ListProcesses|
 |[스레드 목록 표시 명령](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|

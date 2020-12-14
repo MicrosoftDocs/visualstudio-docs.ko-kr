@@ -2,17 +2,17 @@
 title: Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Parasoft Virtualize/SOA Test Professional 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436035"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537450"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -74,9 +74,9 @@ ms.locfileid: "92436035"
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  예       |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise | VL | 6개월       |  예       |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독 | VL | 6개월       |  예       |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                           |해당 없음         |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | 사용할 수 없음                                                           |해당 없음         |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                      | 사용할 수 없음                                                           |해당 없음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                           |해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                                           |해당 없음         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|

@@ -1,26 +1,28 @@
 ---
 title: 팀 탐색기 참조
+description: 작업을 관리하고 다른 팀 구성원과 조정하여 프로젝트를 개발하는 팀 탐색기의 다양한 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928084"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560995"
 ---
 # <a name="team-explorer-reference"></a>팀 탐색기 참조
 
-이 문서에서는 **팀 탐색기**의 다양한 함수에 관한 Azure DevOps 문서에 대한 링크를 제공합니다.
+이 문서에서는 **팀 탐색기** 의 다양한 함수에 관한 Azure DevOps 문서에 대한 링크를 제공합니다.
 
-**팀 탐색기** 도구 창을 사용하여 프로젝트를 개발하고 사용자, 팀 또는 프로젝트에 할당된 작업을 관리하기 위해 다른 팀 구성원과 코드 작업을 조정합니다. **팀 탐색기**는 Visual Studio를 Git 및 GitHub 리포지토리, TFVC(Team Foundation 버전 제어) 리포지토리 및 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 또는 온-프레미스 [Azure DevOps 서버](/azure/devops/index-all)(이전의 TFS로 알려짐)에 호스팅된 프로젝트와 연결합니다. 소스 코드, 작업 항목 및 빌드를 관리할 수 있습니다.
+**팀 탐색기** 도구 창을 사용하여 프로젝트를 개발하고 사용자, 팀 또는 프로젝트에 할당된 작업을 관리하기 위해 다른 팀 구성원과 코드 작업을 조정합니다. **팀 탐색기** 는 Visual Studio를 Git 및 GitHub 리포지토리, TFVC(Team Foundation 버전 제어) 리포지토리 및 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 또는 온-프레미스 [Azure DevOps 서버](/azure/devops/index-all)(이전의 TFS로 알려짐)에 호스팅된 프로젝트와 연결합니다. 소스 코드, 작업 항목 및 빌드를 관리할 수 있습니다.
 
 ## <a name="home-page"></a>홈 페이지
 
-**팀 탐색기**에서 [프로젝트에 연결](../connect-team-project.md)한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
+**팀 탐색기** 에서 [프로젝트에 연결](../connect-team-project.md)한 후 **프로젝트** 섹션에서 다음 링크를 사용할 수 있습니다.
 
 - [리포지토리 복제](/azure/devops/repos/git/clone)
 - [웹 포털](/azure/devops/project/navigation/index)

@@ -1,5 +1,7 @@
 ---
 title: CRT 디버그 힙 정보 | Microsoft Docs
+description: 디버그 힙은 메모리 할당 문제를 해결하는 데 도움이 되는 강력한 도구를 제공합니다. 도구에 대해 알아보고 누수 및 오버런과 같은 문제의 해결을 지원하는 방식에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247935"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560618"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 디버그 힙 정보
 이 항목에서는 CRT 디버그 힙에 대해 자세히 설명합니다.
@@ -147,7 +149,7 @@ NoMansLand(0xFD) - 애플리케이션이 사용하는 메모리의 한쪽에 있
 
 `_CRT_BLOCK` 여러 런타임 라이브러리 함수에 의해 내부적으로 할당된 메모리 블록은 CRT 블록으로 표시되어 별도로 처리할 수 있습니다. 결과적으로 누수 탐지나 다른 작업들이 런타임 라이브러리 함수의 영향을 받지 않습니다. 할당은 CRT 형식의 어떠한 블록도 할당하거나 할당 취소하거나 해제할 수 없습니다.
 
-`_CLIENT_BLOCK` 애플리케이션은 지정한 할당 그룹을 이 형식의 메모리 블록으로 할당함으로써 디버깅을 위해 이 할당 그룹을 특별히 추적하여 디버그 힙 함수를 명시적으로 호출할 수 있습니다. 예를 들어, MFC는 모든 **CObjects**를 클라이언트 블록으로 할당하며, 다른 애플리케이션은 클라이언트 블록에 여러 메모리 개체를 가질 수 있습니다. 또한 보다 정교하게 추적하도록 클라이언트 블록의 하위 형식을 지정할 수 있습니다. 클라이언트 블록의 하위 형식을 지정하려면 16비트로 남긴 숫자를 변환하고 `OR`으로 `_CLIENT_BLOCK`연산을 실행하십시오. 예를 들어:
+`_CLIENT_BLOCK` 애플리케이션은 지정한 할당 그룹을 이 형식의 메모리 블록으로 할당함으로써 디버깅을 위해 이 할당 그룹을 특별히 추적하여 디버그 힙 함수를 명시적으로 호출할 수 있습니다. 예를 들어, MFC는 모든 **CObjects** 를 클라이언트 블록으로 할당하며, 다른 애플리케이션은 클라이언트 블록에 여러 메모리 개체를 가질 수 있습니다. 또한 보다 정교하게 추적하도록 클라이언트 블록의 하위 형식을 지정할 수 있습니다. 클라이언트 블록의 하위 형식을 지정하려면 16비트로 남긴 숫자를 변환하고 `OR`으로 `_CLIENT_BLOCK`연산을 실행하십시오. 예를 들어:
 
 ```cpp
 #define MYSUBTYPE 4
@@ -160,7 +162,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 **_IGNORE_BLOCK** - 일정한 시간 동안 디버그 힙 연산을 해제할 수 있습니다. 그 동안 메모리 블록은 리스트에 보관되지만 무시 블록으로 표시됩니다.
 
-지정한 블록의 형식 및 하위 형식을 확인하려면 함수 [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)과 매크로 **_BLOCK_TYPE** 및 **_BLOCK_SUBTYPE**을 사용합니다. 매크로는 crtdbg.h에서 다음과 같이 정의됩니다.
+지정한 블록의 형식 및 하위 형식을 확인하려면 함수 [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)과 매크로 **_BLOCK_TYPE** 및 **_BLOCK_SUBTYPE** 을 사용합니다. 매크로는 crtdbg.h에서 다음과 같이 정의됩니다.
 
 ```cpp
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)
@@ -180,11 +182,11 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 |비트 필드|기본값<br /><br /> value|설명|
 |---------------|-----------------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|켜기|디버그 할당을 사용합니다. 이 비트를 해제하면 할당은 함께 연결되어 있지만 블록 형식은 **_IGNORE_BLOCK**입니다.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|끄기|부족한 메모리 조건을 시뮬레이션하는 것과 관련해서 메모리가 실제로 해제되는 것을 방지합니다. 이 비트를 설정하면, 해제된 블록이 디버그 힙의 연결 리스트에 보관되지만 **_FREE_BLOCK**으로 표시되고 특별한 바이트 값으로 채워 집니다.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|끄기|모든 할당 및 할당 취소에서 **_CrtCheckMemory**가 호출되게 합니다. 실행 속도는 지연되지만 오류를 신속하게 찾아 냅니다.|
+|**_CRTDBG_ALLOC_MEM_DF**|켜기|디버그 할당을 사용합니다. 이 비트를 해제하면 할당은 함께 연결되어 있지만 블록 형식은 **_IGNORE_BLOCK** 입니다.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|끄기|부족한 메모리 조건을 시뮬레이션하는 것과 관련해서 메모리가 실제로 해제되는 것을 방지합니다. 이 비트를 설정하면, 해제된 블록이 디버그 힙의 연결 리스트에 보관되지만 **_FREE_BLOCK** 으로 표시되고 특별한 바이트 값으로 채워 집니다.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|끄기|모든 할당 및 할당 취소에서 **_CrtCheckMemory** 가 호출되게 합니다. 실행 속도는 지연되지만 오류를 신속하게 찾아 냅니다.|
 |**_CRTDBG_CHECK_CRT_DF**|끄기|**_CRT_BLOCK** 형식으로 표시된 블록이 누수 탐지 및 상태 차이 작업에 포함되게 합니다. 비트를 해제하면 위와 같은 작업을 하는 동안 런타임 라이브러리가 내부적으로 사용하는 메모리를 무시합니다.|
-|**_CRTDBG_LEAK_CHECK_DF**|끄기|**_CrtDumpMemoryLeaks**를 호출하여 프로그램을 종료할 때 누수 검사를 수행합니다. 애플리케이션이 할당한 모든 메모리를 해제하는 데 실패하면 오류 보고서가 생성됩니다.|
+|**_CRTDBG_LEAK_CHECK_DF**|끄기|**_CrtDumpMemoryLeaks** 를 호출하여 프로그램을 종료할 때 누수 검사를 수행합니다. 애플리케이션이 할당한 모든 메모리를 해제하는 데 실패하면 오류 보고서가 생성됩니다.|
 
 ![맨 위로 이동](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)
 
@@ -293,8 +295,8 @@ typedef struct _CrtMemState
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|힙의 스냅샷을 애플리케이션에서 제공하는 **_CrtMemState** 구조체에 저장합니다.|
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|두 메모리 상태 구조체를 비교하고 세 번째 상태 구조체에 그 차이를 저장하며, 두 상태가 다른 경우 TRUE를 반환합니다.|
 |[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|지정한 **_CrtMemState** 구조체를 덤프합니다. 구조체에는 지정한 순간의 디버그 힙 상태 스냅샷이나 두 스냅샷의 차이점이 포함될 수 있습니다.|
-|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|지정한 스냅샷이 힙의 스냅샷이거나 실행을 시작할 때 만들어진 스냅샷이기 때문에 할당된 모든 개체 정보를 덤프합니다. **_CrtSetDumpClient**를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
-|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|프로그램 실행을 시작한 이후로 메모리 누수가 발생했는지 확인하고, 메모리 누수를 탐지한 경우 할당된 개체를 모두 덤프합니다. **_CrtSetDumpClient**를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, **_CrtDumpMemoryLeaks**가 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|지정한 스냅샷이 힙의 스냅샷이거나 실행을 시작할 때 만들어진 스냅샷이기 때문에 할당된 모든 개체 정보를 덤프합니다. **_CrtSetDumpClient** 를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|프로그램 실행을 시작한 이후로 메모리 누수가 발생했는지 확인하고, 메모리 누수를 탐지한 경우 할당된 개체를 모두 덤프합니다. **_CrtSetDumpClient** 를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, **_CrtDumpMemoryLeaks** 가 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
 
 ![맨 위로 이동](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)
 
@@ -305,7 +307,7 @@ typedef struct _CrtMemState
 
 디버그 힙에 있는 각 블록에 연결된 고유한 할당 요청 번호를 이용하면 잘못된 특정 힙 할당 호출을 가장 쉽게 식별할 수 있습니다. 덤프 함수 중 하나가 블록에 대한 정보를 보고하면 이 할당 요청 번호는 중괄호로 묶어 표시합니다(예: "{36}").
 
-잘못 할당된 블록의 할당 요청 번호를 알면 이 번호를 [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)에 전달하여 중단점을 만들 수 있습니다. 블록을 할당하기 직전에 실행이 중단되면 역추적하여 잘못된 호출에 관련된 루틴이 어느 것인지 확인할 수 있습니다. 원하는 할당 요청 번호에 **_crtBreakAlloc**을 설정하여 디버거에서 같은 작업을 수행하면 다시 컴파일하지 않아도 됩니다.
+잘못 할당된 블록의 할당 요청 번호를 알면 이 번호를 [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)에 전달하여 중단점을 만들 수 있습니다. 블록을 할당하기 직전에 실행이 중단되면 역추적하여 잘못된 호출에 관련된 루틴이 어느 것인지 확인할 수 있습니다. 원하는 할당 요청 번호에 **_crtBreakAlloc** 을 설정하여 디버거에서 같은 작업을 수행하면 다시 컴파일하지 않아도 됩니다.
 
 **할당 루틴의 디버그 버전 만들기**
 

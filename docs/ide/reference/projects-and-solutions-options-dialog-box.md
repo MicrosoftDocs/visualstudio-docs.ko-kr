@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 및 솔루션, 옵션 대화 상자
+description: 프로젝트 및 솔루션 섹션의 일반 페이지를 사용하여 프로젝트 및 솔루션과 관련된 Visual Studio의 동작을 정의하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567647"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616904"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>옵션 대화 상자: 프로젝트 및 솔루션 \> 일반
 
-이 페이지를 사용하여 프로젝트 및 솔루션과 관련된 Visual Studio의 동작을 정의할 수 있습니다. 이러한 옵션에 액세스하려면 **도구** > **옵션**을 선택하고 **프로젝트 및 솔루션**을 확장한 후 **일반**을 클릭합니다.
+이 페이지를 사용하여 프로젝트 및 솔루션과 관련된 Visual Studio의 동작을 정의할 수 있습니다. 이러한 옵션에 액세스하려면 **도구** > **옵션** 을 선택하고 **프로젝트 및 솔루션** 을 확장한 후 **일반** 을 클릭합니다.
 
 **일반** 페이지에서는 다음 옵션을 사용할 수 있습니다.
 
@@ -32,7 +34,7 @@ ms.locfileid: "75567647"
 
 ## <a name="track-active-item-in-solution-explorer"></a>솔루션 탐색기에서 활성화된 항목 추적
 
-이 옵션을 선택하면 **솔루션 탐색기**가 자동으로 열리고 활성 항목이 선택됩니다. 선택한 항목은 프로젝트 또는 솔루션에서 다른 파일로 작업하거나 디자이너에서 다른 구성 요소로 작업하면 변경됩니다. 이 옵션을 선택 취소해도 **솔루션 탐색기**의 선택 항목이 자동으로 변경되지는 않습니다. 기본적으로 이 옵션은 사용하도록 설정됩니다.
+이 옵션을 선택하면 **솔루션 탐색기** 가 자동으로 열리고 활성 항목이 선택됩니다. 선택한 항목은 프로젝트 또는 솔루션에서 다른 파일로 작업하거나 디자이너에서 다른 구성 요소로 작업하면 변경됩니다. 이 옵션을 선택 취소해도 **솔루션 탐색기** 의 선택 항목이 자동으로 변경되지는 않습니다. 기본적으로 이 옵션은 사용하도록 설정됩니다.
 
 ## <a name="show-advanced-build-configurations"></a>고급 빌드 구성 표시
 
@@ -66,7 +68,7 @@ ms.locfileid: "75567647"
 
 ## <a name="prompt-before-moving-files-to-a-new-location"></a>파일을 새 위치로 이동하기 전에 확인
 
-이 옵션을 선택하면 **솔루션 탐색기**에서 작업을 통해 파일 위치를 변경하기 전에 Visual Studio에서 확인 메시지 상자를 표시합니다.
+이 옵션을 선택하면 **솔루션 탐색기** 에서 작업을 통해 파일 위치를 변경하기 전에 Visual Studio에서 확인 메시지 상자를 표시합니다.
 
 ## <a name="reopen-documents-on-solution-load"></a>솔루션 로드 시 문서 다시 열기
 
@@ -81,7 +83,7 @@ ms.locfileid: "75567647"
 이 옵션을 선택하면 솔루션이 마지막으로 열렸을 때 노드가 확장 또는 축소되었는지 여부에 따라 솔루션 탐색기에서 노드 상태를 복원합니다. 대규모 솔루션의 솔루션 로드 시간을 줄이려면 이 옵션을 선택 취소합니다.
 
 > [!TIP]
-> 이 옵션을 사용하지 않도록 설정하면 **솔루션 탐색기** 도구 모음에서 **활성 문서와 동기화**를 선택하여 솔루션 탐색기에서 활성 문서로 쉽게 이동할 수 있습니다.
+> 이 옵션을 사용하지 않도록 설정하면 **솔루션 탐색기** 도구 모음에서 **활성 문서와 동기화** 를 선택하여 솔루션 탐색기에서 활성 문서로 쉽게 이동할 수 있습니다.
 >
 > ![솔루션 탐색기에서 활성 문서와 동기화](media/sync-active-document.png)
 
@@ -89,14 +91,14 @@ ms.locfileid: "75567647"
 
 이 옵션을 선택하고 솔루션 탐색기에서 SDK 스타일 프로젝트 노드를 두 번 클릭하거나 해당 노드를 선택한 후 **Enter** 키를 누르면 프로젝트 파일(예: \*.csproj 파일)이 편집기에서 XML로 열립니다. 이 옵션을 선택 취소하면 솔루션 탐색기에서 SDK 스타일 프로젝트 노드를 두 번 클릭하거나 해당 노드를 선택한 후 **Enter** 키를 누르면 해당 노드만 확장 또는 축소됩니다.
 
-이 옵션을 선택하지 않고 SDK 스타일 프로젝트 파일을 편집하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 파일 편집**을 선택합니다. 다른 프로젝트 형식의 경우 Visual Studio에서 프로젝트를 편집하기 전에 먼저 프로젝트를 언로드해야 합니다.
+이 옵션을 선택하지 않고 SDK 스타일 프로젝트 파일을 편집하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 파일 편집** 을 선택합니다. 다른 프로젝트 형식의 경우 Visual Studio에서 프로젝트를 편집하기 전에 먼저 프로젝트를 언로드해야 합니다.
 
 > [!TIP]
-> ‘SDK 스타일 프로젝트’ 또는 [프로젝트 SDK](../../msbuild/how-to-use-project-sdk.md)에는 MSBuild 15.0에 도입된 더욱 간소화된 최신 프로젝트 파일 형식이 있습니다.  SDK 스타일 프로젝트에는 `Project` 요소에 대한 `Sdk` 특성(예: `<Project Sdk="Microsoft.NET.Sdk">`)이 포함됩니다. Visual Studio 템플릿 중 하나에서 새 .NET Core 프로젝트를 만들면 Visual Studio에서 SDK 스타일 프로젝트가 생성됩니다. 예를 들어 다음과 같습니다.
+> ‘SDK 스타일 프로젝트’ 또는 [프로젝트 SDK](../../msbuild/how-to-use-project-sdk.md)에는 MSBuild 15.0에 도입된 더욱 간소화된 최신 프로젝트 파일 형식이 있습니다. SDK 스타일 프로젝트에는 `Project` 요소에 대한 `Sdk` 특성(예: `<Project Sdk="Microsoft.NET.Sdk">`)이 포함됩니다. Visual Studio 템플릿 중 하나에서 새 .NET Core 프로젝트를 만들면 Visual Studio에서 SDK 스타일 프로젝트가 생성됩니다. 예를 들어 다음과 같습니다.
 
 ::: moniker-end
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [옵션 대화 상자: 프로젝트 및 솔루션 \> 위치](projects-solutions-locations-options.md)
 - [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, My 확장 페이지(Visual Basic)
+description: 프로젝트 디자이너의 My 확장 페이지를 사용하여 프로젝트에서 My 네임스페이스 확장을 관리하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,19 +15,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5030664722bfbea6d05320dad2932f09a4f4c93c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114222"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561008"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>프로젝트 디자이너, My 확장 페이지(Visual Basic)
-**프로젝트 디자이너**의 **내 확장** 페이지를 사용하여 프로젝트에서 `My` 네임스페이스 확장을 관리합니다. `My` 네임스페이스 확장을 사용하면 `My` 네임스페이스를 사용자 지정하여 고유한 사용자 지정 멤버를 추가할 수 있습니다. 사용자 지정 `My` 네임스페이스 확장을 만드는 방법에 대한 내용은 [Visual Basic에서 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)을 참조하세요.
+**프로젝트 디자이너** 의 **내 확장** 페이지를 사용하여 프로젝트에서 `My` 네임스페이스 확장을 관리합니다. `My` 네임스페이스 확장을 사용하면 `My` 네임스페이스를 사용자 지정하여 고유한 사용자 지정 멤버를 추가할 수 있습니다. 사용자 지정 `My` 네임스페이스 확장을 만드는 방법에 대한 내용은 [Visual Basic에서 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)을 참조하세요.
 
-**내 확장** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드의 **내 프로젝트**를 두 번 클릭합니다. **프로젝트 디자이너**가 나타나면 **내 확장** 탭을 클릭합니다.
+**내 확장** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드의 **내 프로젝트** 를 두 번 클릭합니다. **프로젝트 디자이너** 가 나타나면 **내 확장** 탭을 클릭합니다.
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 다음 옵션을 사용하면 프로젝트에서 `My` 네임스페이스 확장을 추가하거나 제거할 수 있습니다. Visual Studio 항목 템플릿을 추가할 수 있도록 `My` 네임스페이스 확장을 먼저 설치해야 합니다. `My` 네임스페이스 확장을 게시하고 설치하는 방법에 대한 내용은 [사용자 지정 내 확장 패키징 및 배포](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)를 참조하세요.
 
  **내 네임스페이스 확장**
@@ -34,13 +36,13 @@ ms.locfileid: "76114222"
 
  **확장 추가**
 
-이 단추를 클릭하면 프로젝트에 설치된 `My` 네임스페이스 확장을 추가합니다. 가능한 모든 `My` 네임스페이스 확장의 목록이 나타납니다. 프로젝트에 추가하려는 `My` 네임스페이스 확장을 선택하고 **확인**을 클릭하여 추가합니다.
+이 단추를 클릭하면 프로젝트에 설치된 `My` 네임스페이스 확장을 추가합니다. 가능한 모든 `My` 네임스페이스 확장의 목록이 나타납니다. 프로젝트에 추가하려는 `My` 네임스페이스 확장을 선택하고 **확인** 을 클릭하여 추가합니다.
 
  **확장 제거**
 
 **내 네임스페이스 확장** 목록에서 하나 이상의 참조를 선택하고 이 단추를 클릭하여 프로젝트에서 `My` 네임스페이스 확장을 제거합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Basic의 내 네임스페이스 확장](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [사용자 지정 My 확장명 패키징 및 배포](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

@@ -1,5 +1,7 @@
 ---
 title: 현재 스레드 설정 명령
+description: 현재 스레드 설정 명령에 대해 알아보고 지정한 스레드를 현재 스레드로 설정하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768692"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616566"
 ---
 # <a name="set-current-thread-command"></a>현재 스레드 설정 명령
 지정한 스레드를 현재 스레드로 설정합니다.
@@ -32,7 +34,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>인수
 `index`
 
-필수 사항입니다. 해당 인덱스로 스레드를 선택합니다.
+필수 요소. 해당 인덱스로 스레드를 선택합니다.
 
 ## <a name="example"></a>예제
 

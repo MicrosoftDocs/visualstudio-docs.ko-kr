@@ -2,17 +2,17 @@
 title: Visual Studio 구독의 Power BI Pro 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Power BI Pro 구독에 대해 알아봅니다.
-ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435790"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538074"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Power BI Pro
 
@@ -64,9 +64,9 @@ Power BI Pro를 사용하려면 기존 계정을 사용하여 계정을 설정�
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예|
-| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독  | VL | 사용 가능       |  예|
 | Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |해당 없음         |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | 사용할 수 없음                                                            |해당 없음         |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                      | 사용할 수 없음                                                            |해당 없음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                            |해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능       |  예|
 | Visual Studio Enterprise(월간 클라우드) | Azure                                       | 사용할 수 없음                                  |해당 없음|

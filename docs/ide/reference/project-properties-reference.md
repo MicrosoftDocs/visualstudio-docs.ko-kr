@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 속성 참조
+description: 프로젝트 속성을 구성하고 사용자 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f76e34f0a806a524c1305796bddabebd155e680c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567725"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560345"
 ---
 # <a name="project-properties-reference"></a>프로젝트 속성 참조
 
@@ -34,7 +36,7 @@ ms.locfileid: "75567725"
 | [프로젝트 디자이너, 디버그 페이지](../../ide/reference/debug-page-project-designer.md) | 프로젝트에 대한 디버깅 속성을 지정하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 코드 분석](../../ide/reference/code-analysis-project-designer.md) | 코드 분석 도구를 구성하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 게시 페이지](../../ide/reference/publish-page-project-designer.md) | [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]에 대한 속성을 구성하려면 이 페이지를 사용합니다. |
-| [프로젝트 디자이너, 참조 페이지(Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | 프로젝트에 사용되는 참조를 관리하려면 이 페이지를 사용합니다. |
+| [참조 페이지, 프로젝트 디자이너(Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md) | 프로젝트에 사용되는 참조를 관리하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 보안 페이지](../../ide/reference/security-page-project-designer.md) | [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 배포를 통해 배포된 애플리케이션에 대한 코드 액세스 보안을 구성하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 서명 페이지](../../ide/reference/signing-page-project-designer.md) | 애플리케이션 및 배포 매니페스트에 서명하고 어셈블리에 서명하려면 이 페이지를 사용합니다. |
 

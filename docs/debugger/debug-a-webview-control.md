@@ -1,5 +1,7 @@
 ---
 title: WebView 컨트롤 디버그(UWP) | Microsoft Docs
+description: Windows 런타임 앱에서 사용되는 WebView 컨트롤을 검사하고 디버그하는 방법을 알아봅니다. DOM 탐색기 및 JavaScript 콘솔 창을 사용할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 5439f9f253126e159df5dd9ea58bad04c3f6c649
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211117"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560553"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP 앱에서 WebView 컨트롤 디버그
 
@@ -33,13 +35,13 @@ ms.locfileid: "91211117"
 
 1. Visual Studio에서 Windows 런타임 앱에 `WebView` 컨트롤을 추가합니다.
 
-2. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **속성**을 선택하여 프로젝트의 속성을 엽니다.
+2. 솔루션 탐색기의 프로젝트 바로 가기 메뉴에서 **속성** 을 선택하여 프로젝트의 속성을 엽니다.
 
-3. **디버그**를 선택합니다. **애플리케이션 프로세스** 목록에서 **스크립트**를 선택합니다.
+3. **디버그** 를 선택합니다. **애플리케이션 프로세스** 목록에서 **스크립트** 를 선택합니다.
 
      ![스크립트 디버거 연결](../debugger/media/js_dom_webview_script_debugger.png "JS_DOM_WebView_Script_Debugger")
 
-4. (선택 사항) Express 이외의 Visual Studio 버전의 경우 **도구 > 옵션 > 디버깅 > Just-In-Time**을 선택한 다음, 스크립트에 대한 JIT(Just-In-Time) 디버깅을 사용하지 않도록 설정하여 JIT 디버깅을 비활성화합니다.
+4. (선택 사항) Express 이외의 Visual Studio 버전의 경우 **도구 > 옵션 > 디버깅 > Just-In-Time** 을 선택한 다음, 스크립트에 대한 JIT(Just-In-Time) 디버깅을 사용하지 않도록 설정하여 JIT 디버깅을 비활성화합니다.
 
     > [!NOTE]
     > JIT 디버깅을 사용하지 않도록 설정하면 일부 웹 페이지에서 발생하는 처리되지 않은 예외 대화 상자를 숨길 수 있습니다. Visual Studio Express에서는 JIT 디버깅이 항상 사용하지 않도록 설정되어 있습니다.
@@ -54,7 +56,7 @@ ms.locfileid: "91211117"
 
 3. `Webview` 컨트롤이 포함된 페이지로 이동합니다.
 
-4. **디버그**, **Windows**, **DOM 탐색기**를 선택하여 `WebView` 컨트롤에 대한 DOM 탐색기 창을 연 다음, 검사할 `WebView`의 URL을 선택합니다.
+4. **디버그**, **Windows**, **DOM 탐색기** 를 선택하여 `WebView` 컨트롤에 대한 DOM 탐색기 창을 연 다음, 검사할 `WebView`의 URL을 선택합니다.
 
      ![DOM 탐색기 열기](../debugger/media/js_dom_webview.png "JS_DOM_WebView")
 
@@ -68,7 +70,7 @@ ms.locfileid: "91211117"
 
 2. 아직 없는 경우 앱에 `WebView` 컨트롤을 추가하고 F5 키를 눌러 디버깅을 시작합니다.
 
-3. **디버그**, **Windows**, **JavaScript 콘솔**을 선택하여 `WebView` 콘솔에 대한 JavaScript 콘솔 창을 엽니다.
+3. **디버그**, **Windows**, **JavaScript 콘솔** 을 선택하여 `WebView` 콘솔에 대한 JavaScript 콘솔 창을 엽니다.
 
      JavaScript 콘솔 창이 나타납니다.
 

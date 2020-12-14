@@ -1,5 +1,7 @@
 ---
 title: 필드, 속성, 로컬 변수 생성
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 이전에 선언되지 않은 필드, 속성 또는 로컬에 대한 코드를 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ebce688317a04bdc223659fb0c085b2f0223119d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595607"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617502"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio에서 필드, 속성 또는 로컬 변수 생성
 

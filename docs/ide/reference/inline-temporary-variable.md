@@ -1,5 +1,7 @@
 ---
 title: 임시 변수를 해당 값으로 바꾸기
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 임시 변수를 제거하고 대신 해당 값으로 바꾸는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568869"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617411"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
 
@@ -50,7 +52,7 @@ ms.locfileid: "75568869"
    - **마우스**
       - 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
 
-3. [미리 보기] 창 팝업에서 **인라인 임시 변수**를 선택합니다.
+3. [미리 보기] 창 팝업에서 **인라인 임시 변수** 를 선택합니다.
 
    변수가 제거되고 해당 사용이 변수 값으로 대체됩니다.
 

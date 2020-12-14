@@ -1,5 +1,7 @@
 ---
 title: 사용되지 않는 값 및 매개 변수
+description: 사용되지 않는 값 할당, 변수, 매개 변수에 대해 알아보고 Visual Studio의 코드 편집기에 표시되는 방식에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531870"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560709"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>사용되지 않은 값 할당, 변수 및 매개 변수
 
@@ -40,7 +42,7 @@ ms.locfileid: "65531870"
   ![사용되지 않는 값 할당](media/unused-value-assignment.png)
   ![사용되지 않는 값 삭제](media/unused-value-discard.png)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [.NET 개발자를 위한 팁](../csharp-developer-productivity.md)

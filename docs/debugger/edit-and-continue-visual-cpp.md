@@ -1,5 +1,7 @@
 ---
 title: 편집하며 계속하기(C++) | Microsoft Docs
+description: 편집하며 계속하기는 C++ 프로젝트에 사용할 수 있습니다. 지원되는 편집 내용에 대해 알아보고 편집 내용 적용 여부와 적용 시기를 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599652"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863064"
 ---
 # <a name="edit-and-continue-c"></a>편집하며 계속하기(C++)
 C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. 편집하며 계속하기의 제한에 관한 자세한 내용은 [지원되는 코드 변경(C++)](../debugger/supported-code-changes-cpp.md)을 참조하세요.
@@ -31,7 +33,7 @@ Visual Studio 2015 업데이트 3 개선 사항에 관한 자세한 내용은 [V
 
  Visual Studio 2013 업데이트 3에 도입된 [/Zo(최적화된 디버깅 향상)](/cpp/build/reference/zo-enhance-optimized-debugging) 컴파일러 옵션은 [/Od((디버그) 비활성화)](/cpp/build/reference/od-disable-debug) 옵션 없이 컴파일된 이진에 대한 .pdb(기호) 파일에 정보를 더 추가합니다.
 
- **/Zo**는 편집하며 계속하기를 사용하지 않도록 설정합니다. [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)를 참조하세요.
+ **/Zo** 는 편집하며 계속하기를 사용하지 않도록 설정합니다. [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)를 참조하세요.
 
 ## <a name="enable-or-disable-edit-and-continue"></a><a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 편집하며 계속하기 사용 또는 사용 안 함
  현재 디버깅 세션 중에 적용하지 않으려는 코드 편집 내용이 있는 경우 편집하며 계속하기의 자동 호출을 사용하지 않도록 설정할 수 있습니다. 자동 편집하며 계속하기를 다시 사용하도록 설정할 수도 있습니다.
@@ -41,11 +43,11 @@ Visual Studio 2015 업데이트 3 개선 사항에 관한 자세한 내용은 [V
 
 1. 디버깅 세션에 있는 경우 디버깅을 중지합니다(**Shift+F5**).
 
-2. **도구** 메뉴에서 **옵션**을 선택합니다.
+2. **도구** 메뉴에서 **옵션** 을 선택합니다.
 
-3. **옵션** 대화 상자에서 **디버깅 > 일반**을 선택합니다.
+3. **옵션** 대화 상자에서 **디버깅 > 일반** 을 선택합니다.
 
-4. 사용하도록 설정하려면 **편집하며 계속하기 사용**을 선택합니다. 사용하지 않도록 설정하려면 확인란의 선택을 취소합니다.
+4. 사용하도록 설정하려면 **편집하며 계속하기 사용** 을 선택합니다. 사용하지 않도록 설정하려면 확인란의 선택을 취소합니다.
 
 5. **편집하며 계속하기** 그룹에서 **네이티브 편집하며 계속하기 사용** 확인란을 선택하거나 선택 취소합니다.
 
@@ -56,14 +58,14 @@ Visual Studio 2015 업데이트 3 개선 사항에 관한 자세한 내용은 [V
 
  코드 변경 내용을 명시적으로 적용하면 프로그램이 중단 모드에 계속 남아 있고 실행되지 않습니다.
 
-- 코드 변경 내용을 명시적으로 적용하려면 **디버그** 메뉴에서 **코드 변경 내용 적용**을 선택합니다.
+- 코드 변경 내용을 명시적으로 적용하려면 **디버그** 메뉴에서 **코드 변경 내용 적용** 을 선택합니다.
 
 ## <a name="how-to-stop-code-changes"></a><a name="BKMK_How_to_stop_code_changes"></a> 코드 변경을 중지하는 방법
  편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.
 
  코드 변경 내용의 적용을 중지하려면
 
-- **디버그** 메뉴에서 **코드 변경 내용 적용 중지**를 선택합니다.
+- **디버그** 메뉴에서 **코드 변경 내용 적용 중지** 를 선택합니다.
 
   이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.
 

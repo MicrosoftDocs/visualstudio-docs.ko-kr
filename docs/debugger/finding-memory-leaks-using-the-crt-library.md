@@ -1,5 +1,7 @@
 ---
 title: CRT 라이브러리로 메모리 누수 찾기 | Microsoft Docs
+description: C/C++ 디버거 및 CRT(C 런타임 라이브러리)를 통해 메모리 누수를 찾는 방법을 알아봅니다. 포함되는 기술로는 메모리 누수 보고서와 메모리 스냅샷 비교가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350487"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863077"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT 라이브러리로 메모리 누수 찾기
 
@@ -53,7 +55,7 @@ ms.locfileid: "85350487"
 
 `#define` 문은 CRT 힙 함수의 기본 버전을 해당 디버그 버전에 매핑합니다. `#define` 문을 생략하면 메모리 누수 덤프가 [덜 자세하게](#interpret-the-memory-leak-report) 표시됩니다.
 
-*crtdbg.h*를 포함하면 `malloc` 및 `free` 함수가 해당 디버그 버전인 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) 및 [_free_dbg](/cpp/c-runtime-library/reference/free-dbg)에 매핑되어 메모리 할당 및 할당 해제를 추적할 수 있습니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.
+*crtdbg.h* 를 포함하면 `malloc` 및 `free` 함수가 해당 디버그 버전인 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) 및 [_free_dbg](/cpp/c-runtime-library/reference/free-dbg)에 매핑되어 메모리 할당 및 할당 해제를 추적할 수 있습니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.
 
 위의 명령문을 사용하여 디버그 힙 함수를 사용하도록 설정한 후에는 앱 종료 지점 앞에 [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)를 호출하여 앱이 종료될 때 메모리 누수 보고서를 표시합니다.
 
@@ -108,11 +110,11 @@ Object dump complete.
 - 블록 크기(이 예제의 경우 `64 bytes`).
 - 블록 내 데이터의 처음 16바이트(16진수 형식)
 
-메모리 블록 형식은 *일반*, *클라이언트* 또는 *CRT*입니다. *표준 블록* 은 프로그램이 할당한 보통 메모리입니다. *클라이언트 블록* 은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 표준 블록 또는 클라이언트 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
+메모리 블록 형식은 *일반*, *클라이언트* 또는 *CRT* 입니다. *표준 블록* 은 프로그램이 할당한 보통 메모리입니다. *클라이언트 블록* 은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 표준 블록 또는 클라이언트 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
 
 *CRT 블록* 은 CRT 라이브러리가 자체 용도에 맞게 할당한 메모리 블록입니다. CRT 라이브러리는 이러한 블록의 할당 취소를 처리하므로 CRT 라이브러리에 심각한 문제가 없는 한 메모리 누수 보고서에 CRT 블록이 나타나지 않습니다.
 
-그 외에도 메모리 누수 보고서에 표시되지 않는 두 가지 메모리 블록 형식이 있습니다. *빈 블록*은 릴리스된 메모리이므로 정의에 따라 유출되지 않습니다. *무시 블록*은 메모리 누수 보고서에서 제외하도록 사용자가 명시적으로 지정한 메모리입니다.
+그 외에도 메모리 누수 보고서에 표시되지 않는 두 가지 메모리 블록 형식이 있습니다. *빈 블록* 은 릴리스된 메모리이므로 정의에 따라 유출되지 않습니다. *무시 블록* 은 메모리 누수 보고서에서 제외하도록 사용자가 명시적으로 지정한 메모리입니다.
 
 위의 기술은 표준 CRT `malloc` 함수를 사용하여 할당된 메모리의 메모리 누수를 식별합니다. 프로그램에서는 C++ `new` 연산자를 사용하여 메모리를 할당하지만, 메모리 누수 보고서에서 `operator new`가 `_malloc_dbg`를 호출하는 파일 이름 및 줄 번호만 볼 수 있습니다. 보다 유용한 메모리 누수 보고서를 만들기 위해 다음과 같은 매크로를 작성하여 할당한 줄을 보고할 수 있습니다.
 
@@ -167,7 +169,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```
 
-이 출력은 유출된 할당이 *debug_new.cpp*의 20번째 줄에 있음을 보고합니다.
+이 출력은 유출된 할당이 *debug_new.cpp* 의 20번째 줄에 있음을 보고합니다.
 
 >[!NOTE]
 >`new`라는 전처리기 매크로 또는 다른 언어 키워드를 만들지 않는 것이 좋습니다.
@@ -188,11 +190,11 @@ Object dump complete.
 
    CRT 라이브러리의 다중 스레드 DLL 버전을 사용하는 경우(/MD 옵션) 컨텍스트 연산자(`{,,ucrtbased.dll}_crtBreakAlloc`)를 추가합니다.
    
-   디버그 기호가 로드되었는지 확인합니다. 그렇지 않으면 `_crtBreakAlloc`는 *미확인*으로 보고됩니다.
+   디버그 기호가 로드되었는지 확인합니다. 그렇지 않으면 `_crtBreakAlloc`는 *미확인* 으로 보고됩니다.
 
 1. **Enter** 키를 누릅니다.
 
-   디버거에서 호출이 실행되고 결과가 **값** 열에 표시됩니다. 메모리를 할당할 때 중단점을 설정하지 않은 경우에는 이 값이 **-1**입니다.
+   디버거에서 호출이 실행되고 결과가 **값** 열에 표시됩니다. 메모리를 할당할 때 중단점을 설정하지 않은 경우에는 이 값이 **-1** 입니다.
 
 1. **값** 열에서 디버거를 중단할 메모리 할당의 할당 번호로 값을 바꿉니다.
 

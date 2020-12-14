@@ -1,5 +1,7 @@
 ---
 title: 편집하며 계속하기(Visual Basic) | Microsoft Docs
+description: 편집하며 계속하기는 Visual Basic 프로젝트에 사용할 수 있습니다. 지원되는 편집 내용에 대해 알아보고 편집 내용 적용 여부와 적용 시기를 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851259"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862973"
 ---
 # <a name="edit-and-continue-visual-basic"></a>편집하며 계속하기(Visual Basic)
 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 디버깅의 편집하며 계속하기 기능을 사용하면 코드가 중단 모드에서 실행되는 동안 코드를 변경할 수 있습니다. 코드 편집을 적용한 후에 새 편집 내용이 적용된 상태로 코드 실행을 다시 시작하고 그 결과를 확인할 수 있습니다.
@@ -40,7 +42,7 @@ ms.locfileid: "62851259"
  > [!NOTE]
  > 지원되지 않는 앱 및 플랫폼으로는 ASP.NET 5, Silverlight 5 및 Windows 8.1이 있습니다.
 
- **프로세스에 연결**을 사용하여 디버깅을 시작하는 경우에는 [편집하며 계속하기]가 지원되지 않습니다. 최적화된 코드 또는 혼합된 관리 및 네이티브 코드에는 편집하며 계속하기가 지원되지 않습니다. 자세한 내용은 [Supported Code Changes(C# and Visual Basic)](../debugger/supported-code-changes-csharp.md)(지원되는 코드 변경 내용(C# 및 Visual Basic))를 참조하세요.
+ **프로세스에 연결** 을 사용하여 디버깅을 시작하는 경우에는 [편집하며 계속하기]가 지원되지 않습니다. 최적화된 코드 또는 혼합된 관리 및 네이티브 코드에는 편집하며 계속하기가 지원되지 않습니다. 자세한 내용은 [Supported Code Changes(C# and Visual Basic)](../debugger/supported-code-changes-csharp.md)(지원되는 코드 변경 내용(C# 및 Visual Basic))를 참조하세요.
 
  이 단원의 항목에서는 이 기능을 사용하는 방법과 허용되지 않는 종류의 변경에 대한 자세한 내용을 제공합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: C++ 프로젝트 설정 옵션
+description: 프로젝트 및 솔루션 섹션의 VC++ 프로젝트 설정 페이지를 사용하여 로깅, 성능, 지원 파일 형식과 관련된 C++ 빌드 및 프로젝트 설정을 정의하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68918892"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616280"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정
 
@@ -31,9 +33,9 @@ ms.locfileid: "68918892"
 
 ## <a name="to-access-this-dialog-box"></a>이 대화 상자에 액세스하려면
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **프로젝트 및 솔루션**을 선택한 다음 **VC++ 프로젝트 설정**을 선택합니다.
+2. **프로젝트 및 솔루션** 을 선택한 다음 **VC++ 프로젝트 설정** 을 선택합니다.
 
 ## <a name="build-logging"></a>빌드 로깅
 
@@ -75,7 +77,7 @@ ms.locfileid: "68918892"
 
 ## <a name="extensions-to-hide"></a>숨길 확장명
 
-**모든 파일 표시**를 사용 설정한 경우 **솔루션 탐색기**에 표시하지 않을 파일의 파일 이름 확장명을 지정합니다.
+**모든 파일 표시** 를 사용 설정한 경우 **솔루션 탐색기** 에 표시하지 않을 파일의 파일 이름 확장명을 지정합니다.
 
 ## <a name="build-customization-search-path"></a>빌드 사용자 지정 검색 경로
 
@@ -85,11 +87,11 @@ ms.locfileid: "68918892"
 
 **프로젝트에 포함된 파일만 표시**
 
-프로젝트의 파일만 표시하도록 **솔루션 탐색기**를 구성합니다.
+프로젝트의 파일만 표시하도록 **솔루션 탐색기** 를 구성합니다.
 
 **모든 파일 표시**
 
-프로젝트의 파일과 디스크의 파일을 프로젝트 폴더에 표시하도록 **솔루션 탐색기**를 구성합니다.
+프로젝트의 파일과 디스크의 파일을 프로젝트 폴더에 표시하도록 **솔루션 탐색기** 를 구성합니다.
 
 ## <a name="enable-project-caching"></a>프로젝트 캐싱 사용
 

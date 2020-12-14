@@ -1,5 +1,7 @@
 ---
 title: 일반, 디버깅, 옵션 대화 상자 | Microsoft Docs
+description: 디버깅 요구에 맞게 Visual Studio 디버거 옵션을 설정합니다. 중단 동작, 디버깅 수준, 표시 동작 등을 구성할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286559"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863012"
 ---
 # <a name="general-debugging-options"></a>일반 디버깅 옵션
 
-Visual Studio 디버거 옵션을 설정하려면 **도구** > **옵션**을 선택하고 **디버깅**에서 **일반** 옵션 옆에 있는 상자를 선택하거나 선택 취소합니다. **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정**을 사용하여 모든 기본 설정을 복원할 수 있습니다. 설정의 하위 집합을 다시 설정하려면 테스트하려는 설정을 변경하기 전에 **설정 가져오기 및 내보내기 마법사**를 사용하여 설정을 저장한 다음, 저장된 설정을 나중에 가져옵니다.
+Visual Studio 디버거 옵션을 설정하려면 **도구** > **옵션** 을 선택하고 **디버깅** 에서 **일반** 옵션 옆에 있는 상자를 선택하거나 선택 취소합니다. **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정** 을 사용하여 모든 기본 설정을 복원할 수 있습니다. 설정의 하위 집합을 다시 설정하려면 테스트하려는 설정을 변경하기 전에 **설정 가져오기 및 내보내기 마법사** 를 사용하여 설정을 저장한 다음, 저장된 설정을 나중에 가져옵니다.
 
 다음 **일반** 옵션을 설정할 수 있습니다.
 
@@ -57,7 +59,7 @@ Visual Studio 디버거 옵션을 설정하려면 **도구** > **옵션**을 선
 **새 예외 도우미 사용**: 예외 도우미(exception assistant)를 대체하는 예외 도우미(Exception Helper)를 사용하도록 설정합니다. (예외 도우미(Exception Helper)는 Visual Studio 2017부터 지원됨)
 
 > [!NOTE]
-> 관리 코드의 경우 이 옵션을 이전에 **예외 도우미(exception assistant) 사용**이라고 했습니다.
+> 관리 코드의 경우 이 옵션을 이전에 **예외 도우미(exception assistant) 사용** 이라고 했습니다.
 
 **[내 코드만] 기능 사용**: 디버거는 시스템 코드 및 최적화되었거나 디버깅 기호가 없는 다른 코드를 무시하고 사용자 코드("내 코드")만 표시하고 한 단계씩 실행합니다.
 
@@ -139,7 +141,7 @@ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 - **XAML 핫 다시 로드 사용**: 앱이 실행 중일 때 XAML 코드와 함께 XAML 핫 다시 로드 기능을 사용할 수 있습니다. (이 기능은 이전에 "XAML 편집하며 계속하기"라고 했습니다.)
 
 ::: moniker range=">= vs-2019" 
-- **내 XAML만 사용**: Visual Studio 2019 버전 16.4부터 **라이브 시각적 트리**는 기본적으로 사용자 코드로 분류된 XAML만 표시합니다. 이 옵션을 사용하지 않도록 설정하면 생성된 모든 XAML 코드가 도구에 표시됩니다.
+- **내 XAML만 사용**: Visual Studio 2019 버전 16.4부터 **라이브 시각적 트리** 는 기본적으로 사용자 코드로 분류된 XAML만 표시합니다. 이 옵션을 사용하지 않도록 설정하면 생성된 모든 XAML 코드가 도구에 표시됩니다.
 
 - **요소를 선택할 때 선택 모드 해제** Visual Studio 2019 버전 16.4부터 요소를 선택하면 앱 내 도구 모음 요소 선택기 단추(**선택 영역 사용**)가 꺼집니다. 이 옵션을 사용하지 않도록 설정하면 앱 내 도구 모음 단추를 다시 클릭할 때까지 요소 선택이 계속 유지됩니다.
 

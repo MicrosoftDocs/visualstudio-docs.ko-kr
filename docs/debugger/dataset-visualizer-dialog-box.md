@@ -1,5 +1,7 @@
 ---
 title: 데이터 세트 시각화 도우미 대화 상자 | Microsoft Docs
+description: Visual Studio 디버거 시각화 도우미는 데이터를 표시하는 구성 요소입니다. 데이터 세트 시각화 도우미를 사용하여 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745596"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560475"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>데이터 세트 시각화 도우미 대화 상자
 데이터 집합 시각화 도우미를 사용하면 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 볼 수 있습니다. 디버거 변수 창이나 DataTip에서 이러한 개체 중 하나의 값 옆에 나타나는 돋보기 아이콘을 클릭하면 이 시각화 도우미에 액세스할 수 있습니다.

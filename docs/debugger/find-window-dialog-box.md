@@ -1,5 +1,7 @@
 ---
 title: 창 찾기 대화 상자 | Microsoft Docs
+description: 창 찾기 대화 상자를 사용하여 창을 선택하고 해당 속성 또는 메시지를 표시합니다.  이 문서에서는 사용량 세부 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 571cee3b1e3a391a8dc328fcc76a0ca0d06ed14f
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849979"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863025"
 ---
 # <a name="find-window-dialog-box"></a>창 찾기 대화 상자
-이 대화 상자는 창을 선택하고 해당 속성 또는 메시지를 표시하는 데 사용됩니다. 이 대화 상자를 표시하려면 **Spy** 메뉴에서 **창 찾기**를 선택하세요.
+이 대화 상자는 창을 선택하고 해당 속성 또는 메시지를 표시하는 데 사용됩니다. 이 대화 상자를 표시하려면 **Spy** 메뉴에서 **창 찾기** 를 선택하세요.
 
  다음 설정을 사용할 수 있습니다.
 

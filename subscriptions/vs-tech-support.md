@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413967"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537970"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경** 의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
@@ -108,9 +108,9 @@ Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 인시던트 4개       |  예|
-| GitHub Enterprise가 포함된 Visual Studio Enterprise | VL | 인시던트 4개       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독 | VL | 인시던트 4개       |  예|
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품, 선택한 NFR<sup>2</sup>                                        | 인시던트 2개                                                          |예         |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                     | 인시던트 2개                                                          |예         |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                     | 인시던트 2개                                                          |예         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 인시던트 2개                                             |  예         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 인시던트 2개                                               | 예         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|

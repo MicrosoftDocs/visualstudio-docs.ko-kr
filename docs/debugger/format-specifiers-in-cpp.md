@@ -1,5 +1,7 @@
 ---
 title: 디버거의 형식 지정자(C++) | Microsoft Docs
+description: 형식 지정자를 사용하여 조사식, 자동 또는 지역 창에서 값이 표시되는 형식을 변경합니다. 이 문서에서는 사용량 세부 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832322"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863038"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C++용 형식 지정자
 형식 지정자를 사용하여 **조사식**, **자동** 및 **지역** 창에 값이 표시되는 형식을 변경할 수 있습니다.
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시**를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값이 정수가 아닌 문자로 표시되도록 하려면 먼저 마우스 오른쪽 단추를 클릭하고 **16진수 표시**를 선택 취소합니다. 그런 다음, **이름** 열에서 변수 이름 뒤에 문자 형식 지정자 **, c**를 추가합니다. 이제 **값** 열에 **101 ‘e’** 가 표시됩니다.
+디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시** 를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값이 정수가 아닌 문자로 표시되도록 하려면 먼저 마우스 오른쪽 단추를 클릭하고 **16진수 표시** 를 선택 취소합니다. 그런 다음, **이름** 열에서 변수 이름 뒤에 문자 형식 지정자 **, c** 를 추가합니다. 이제 **값** 열에 **101 ‘e’** 가 표시됩니다.
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
@@ -79,7 +81,7 @@ int main() {
 |e|과학적 표기법|25000000|2.500000e+07|
 |g|과학적 점 또는 부동 소수점 중 더 짧은 항목|25000000|2.5e+07|
 |c|단일 문자|0x0065|101 'e'|
-|초|const char* 문자열(따옴표 포함)|\<location> "hello world"|"hello world"|
+|초|const char* 문자열(따옴표 포함)|\<location> “hello world”|"hello world"|
 |**sb**|const char* 문자열(따옴표 없음)|\<location> “hello world”|hello world|
 |s8|UTF-8 문자열|\<location> “This is a UTF-8 coffee cup â˜•”|“This is a UTF-8 coffee cup ☕”|
 |**s8b**|UTF-8 문자열(따옴표 제외)|\<location> “hello world”|hello world|

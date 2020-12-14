@@ -1,5 +1,7 @@
 ---
 title: 기타 파일
+description: Visual Studio 프로젝트 또는 솔루션에 포함되지 않은 파일에서 작업하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc797fe7676d24a80867cc318cbe02f94e90e7d0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585299"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561099"
 ---
 # <a name="miscellaneous-files"></a>기타 파일
 

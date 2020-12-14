@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: 엔터프라이즈용 Microsoft 365 앱 알아보기 및 설치
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006126"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537827"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio 구독의 엔터프라이즈용 Microsoft 365 앱
 엔터프라이즈용 Microsoft 365 앱(이전 Office 365 Pro Plus)은 선택된 Visual Studio 구독에서 사용할 수 있습니다. 
@@ -26,23 +26,23 @@ ms.locfileid: "91006126"
 엔터프라이즈용 Microsoft 365 앱 구독을 활성화하는 프로세스는 간단합니다.  다음 단계를 수행하여 구독을 활성화하고 애플리케이션을 설치합니다.
 
 1. [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에서 Visual Studio 구독에 로그인합니다.
-1. 엔터프라이즈용 Microsoft 365 앱 타일을 찾고 **활성화**를 선택합니다.
+1. 엔터프라이즈용 Microsoft 365 앱 타일을 찾고 **활성화** 를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 타일](_img/microsoft-365-apps-for-enterprise/tile-activate.png "‘활성화’를 선택하여 구독을 시작합니다.")
 
-1. “환영합니다. 본인 정보를 입력하세요.” 대화 상자에서 요청된 개인 연락처 정보를 제공하고 **다음**을 선택합니다.
+1. “환영합니다. 본인 정보를 입력하세요.” 대화 상자에서 요청된 개인 연락처 정보를 제공하고 **다음** 을 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 고객 정보](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "연락처 정보를 입력합니다.")
 
-1. “사용자 ID 만들기” 대화 상자에서 테넌트의 사용자 이름 및 암호를 만든 다음, **내 계정 만들기**를 선택합니다.
+1. “사용자 ID 만들기” 대화 상자에서 테넌트의 사용자 이름 및 암호를 만든 다음, **내 계정 만들기** 를 선택합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 사용자 ID 만들기](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "사용자 ID 및 암호를 만듭니다.")
 
-1. 다음으로, 로봇이 아님을 증명하는 코드를 제공하라는 메시지가 표시됩니다.  코드를 문자 메시지로 받을 수 있습니다.  코드를 입력하고 **다음**을 선택합니다. 
+1. 다음으로, 로봇이 아님을 증명하는 코드를 제공하라는 메시지가 표시됩니다.  코드를 문자 메시지로 받을 수 있습니다.  코드를 입력하고 **다음** 을 선택합니다. 
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱이 사용자가 로봇이 아님을 증명함](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "코드를 요청하고 입력하여 계속 진행합니다.")
 
-1. 계정이 만들어진 후 Office 포털의 로그인 페이지를 표시하는 대화 상자와 새 사용자 ID가 표시됩니다.  나중에 사용하기 위해 이 정보를 기록해 두고 **설치 시작**을 선택하여 Microsoft 365 앱 설치를 시작합니다.
+1. 계정이 만들어진 후 Office 포털의 로그인 페이지를 표시하는 대화 상자와 새 사용자 ID가 표시됩니다.  나중에 사용하기 위해 이 정보를 기록해 두고 **설치 시작** 을 선택하여 Microsoft 365 앱 설치를 시작합니다.
    > [!div class="mx-imgBorder"]
    > ![엔터프라이즈용 Microsoft 365 앱 이 정보 저장](_img/microsoft-365-apps-for-enterprise/save-this-info.png "새 사용자 ID 및 Office 포털의 링크를 저장합니다.")
 
@@ -56,10 +56,10 @@ ms.locfileid: "91006126"
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품| 사용 가능       |  예          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독  | VL | 사용 가능       |  예          |
 | Visual Studio Enterprise(Standard)   | NFR<sup>1</sup> | 사용할 수 없음       |  N/A          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |  N/A          |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL | 사용할 수 없음         |  N/A          |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL | 사용할 수 없음         |  N/A          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  N/A          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |

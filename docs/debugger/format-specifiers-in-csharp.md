@@ -1,5 +1,7 @@
 ---
 title: 디버거의 형식 지정자(C#) | Microsoft Docs
+description: 형식 지정자를 사용하여 조사식 창에 값이 표시되는 형식을 변경합니다. 이 문서에서는 사용량 세부 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849830"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862791"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C# 형식 지정자
 형식 지정자를 사용하여 **조사식** 창에 값이 표시되는 형식을 변경할 수 있습니다. 또한 **직접 실행** 창, **명령** 창, [추적점](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) 및 소스 창에서도 형식 지정자를 사용할 수 있습니다. 이러한 창에서 식을 일시 중지하면 결과가 [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)에 지정된 형식 표시로 나타납니다.
@@ -48,7 +50,7 @@ ms.locfileid: "62849830"
 }
 ```
 
-디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시**를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값을 16진수 정수 대신 10진수 정수로 표시하려면 **이름** 열에서 변수 이름 뒤에 10진수 형식 지정자 **, d**를 추가합니다. 이제 **값** 열에 **101**이 표시됩니다.
+디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시** 를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값을 16진수 정수 대신 10진수 정수로 표시하려면 **이름** 열에서 변수 이름 뒤에 10진수 형식 지정자 **, d** 를 추가합니다. 이제 **값** 열에 **101** 이 표시됩니다.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 

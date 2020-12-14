@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435826"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537723"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
@@ -44,9 +44,9 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | Included       |  예|
-| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL  | Included       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL  | Included       |  예|
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | Included                                                            |예|
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                        | Included                                                            |예|
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                        | Included                                                            |예|
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                            |  해당 없음|
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              |  사용할 수 없음                                            |  해당 없음|
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|

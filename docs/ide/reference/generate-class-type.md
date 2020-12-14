@@ -1,5 +1,7 @@
 ---
 title: 클래스 및 형식 생성
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 클래스 또는 형식에 대한 코드를 즉시 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595633"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617541"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -58,9 +60,9 @@ ms.locfileid: "75595633"
 
 3. 드롭다운 목록에서 옵션 중 하나를 선택합니다.
 
-   - 새 파일에 클래스 '*TypeName*' 생성 &mdash;*TypeName*.cs/.vb라는 파일에 *TypeName*라는 클래스 만들기
-   - 클래스 '*TypeName*' 생성 &mdash;현재 파일에 *TypeName*이라는 클래스를 만듭니다.
-   - 중첩된 '*TypeName*' 클래스 생성 &mdash;현재 클래스 내에 중첩된 *TypeName*이라는 클래스를 만듭니다.
+   - 새 파일에 클래스 '*TypeName*' 생성 &mdash;*TypeName*.cs/.vb라는 파일에 *TypeName* 라는 클래스 만들기
+   - 클래스 '*TypeName*' 생성 &mdash;현재 파일에 *TypeName* 이라는 클래스를 만듭니다.
+   - 중첩된 '*TypeName*' 클래스 생성 &mdash;현재 클래스 내에 중첩된 *TypeName* 이라는 클래스를 만듭니다.
    - 새 형식 생성... &mdash;지정한 모든 속성을 사용하여 새 클래스 또는 구조체를 만듭니다.
 
    > [!TIP]
@@ -70,11 +72,11 @@ ms.locfileid: "75595633"
 
    ![형식 생성](media/class-newtype-cs.png)
 
-   선택 | Description
+   선택 영역 | 설명
    --- | ---
    액세스 권한 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
-   종류 | *클래스* 또는 *구조체*로 설정할 수 있습니다.
-   속성 | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
+   Kind | *클래스* 또는 *구조체* 로 설정할 수 있습니다.
+   Name | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
    Project | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
    파일 이름 | 새 파일을 만들거나 기존 파일에 형식을 추가할 수 있습니다.
 

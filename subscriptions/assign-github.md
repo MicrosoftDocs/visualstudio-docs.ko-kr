@@ -1,26 +1,26 @@
 ---
-title: Visual Studio + GitHub Enterprise 제품 | Microsoft Docs
+title: GitHub Enterprise가 포함된 Visual Studio 구독 할당 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
-description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
-ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+description: GitHub Enterprise가 포함된 Visual Studio 구독에서 구독 관리
+ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467585"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538126"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
 
-조직에서 GitHub Enterprise가 포함된 Visual Studio Subscriptions를 구입하면 두 부분으로 프로비저닝되고 관리됩니다.
+조직에서 GitHub Enterprise가 포함된 Visual Studio 구독을 구입하면 두 부분으로 프로비저닝되고 관리됩니다.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Visual Studio 구독 관리
-조직에서 GitHub Enterprise가 포함된 Visual Studio 구독을 구입하면 구독의 Visual Studio 부분이 즉시 프로비저닝되고 Visual Studio [구독 관리](https://manage.visualstudio.com) 포털에서 할당 및 관리에 구독을 사용할 수 있습니다. GitHub 구독과 함께 Visual Studio를 할당하면 구독자는 <https://my.visualstudio.com/subscriptions>에서 Visual Studio 구독에 액세스할 수 있음을 알리는 전자 메일을 받게 됩니다.
+조직에서 GitHub Enterprise가 포함된 Visual Studio 구독을 구입하면 구독의 Visual Studio 부분은 즉시 프로비저닝되고 구독은 Visual Studio [구독 관리](https://manage.visualstudio.com) 포털에서 할당 및 관리에 사용할 수 있습니다. GitHub Enterprise가 포함된 Visual Studio 구독을 할당하면 구독자는 <https://my.visualstudio.com/subscriptions>에서 Visual Studio 구독에 액세스할 수 있음을 알리는 전자 메일을 받게 됩니다.
 
 Visual Studio 구독 관리에 대한 자세한 내용은 다음 항목을 참조하세요.
 - [관리 포털 사용](using-admin-portal.md)
@@ -33,9 +33,9 @@ Visual Studio 구독 관리에 대한 자세한 내용은 다음 항목을 참�
 > GitHub Enterprise가 포함된 Visual Studio 구독을 구입하지 않고 Visual Studio 구독 관리자가 할당하는 경우 GitHub Enterprise 계정을 만들고자 한다는 알림이 GitHub에 전송되지 않습니다.  구독이 할당되려면 먼저 GitHub Enterprise가 포함된 Visual Studio 구독을 **하나 이상 구입** 해야 합니다.
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise 설치 프로세스가 포함된 Visual Studio란?
-GitHub Enterprise는 Visual Studio 구독과 별도로 설정 및 관리됩니다. GitHub Enterprise가 포함된 Visual Studio 구매 이후 GitHub Enterprise 계정 설정 프로세스는 [manage.visualstudio.com](https://manage.visualstudio.com)에서 계약을 설정하는 것과 병렬로(그러나 별도로) 시작됩니다. 이 GitHub Enterprise 계정을 설정하는 데 다소 시간이 걸릴 수 있습니다. 
+GitHub Enterprise는 Visual Studio 구독과 별도로 설정 및 관리됩니다. GitHub Enterprise가 포함된 Visual Studio 구독을 구입한 이후 GitHub Enterprise 계정 설정 프로세스는 [manage.visualstudio.com](https://manage.visualstudio.com)에서 계약을 설정하는 것과 병렬로 시작되지만 별도의 프로세스입니다. 이 GitHub Enterprise 계정을 설정하는 데 다소 시간이 걸릴 수 있습니다. 
 
-회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise 구독이 있는 Visual Studio가 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 이메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 적절한 조직에 대한 초대를 받을 수 있습니다.
+회사에서 GitHub Enterprise 계정을 설정한 후 GitHub Enterprise가 포함된 Visual Studio 구독이 할당된 구독자는 GitHub에서 Visual Studio 구독이 연결되었음을 알리는 전자 메일을 받게 됩니다. 구독자는 이 이메일을 받은 후 GitHub 조직 관리자에게 연락하여 적절한 조직에 대한 초대를 받을 수 있습니다.
 
 GitHub Enterprise 설정에 대한 자세한 내용은 [구독자 설명서](access-github.md)를 참조하세요.   
 
@@ -71,4 +71,4 @@ Visual Studio 구독 관리에 대해 자세히 알아보세요.
 - [구독 삭제](delete-license.md)
 - [최대 사용량 확인](maximum-usage.md)
 
-GitHub Enterprise가 포함된 Visual Studio Subscriptions를 관리하는 방법에 대한 자세한 내용은 Visual Studio [구독 관리자 포털](https://visualstudio.microsoft.com/subscriptions-administration/)을 참조하세요.
+GitHub Enterprise가 포함된 Visual Studio 구독 관리에 대한 자세한 내용은 Visual Studio [구독 관리자 포털](https://visualstudio.microsoft.com/subscriptions-administration/)을 참조하세요.

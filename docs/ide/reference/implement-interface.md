@@ -1,5 +1,7 @@
 ---
 title: 인터페이스 구현
+description: 빠른 작업 및 리팩터링 메뉴를 사용하여 인터페이스를 구현하는 데 필요한 코드를 즉시 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0484ed5f63cd4651669a8e3c1f94f5aad96fcc03
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595555"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617112"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Visual Studio에서 인터페이스 구현
 
@@ -49,7 +51,7 @@ ms.locfileid: "75595555"
       - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
       - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
 
-3. 드롭다운 메뉴에서 **인터페이스 구현**을 선택합니다.
+3. 드롭다운 메뉴에서 **인터페이스 구현** 을 선택합니다.
 
    ![인터페이스 구현 미리 보기](media/interface-preview-cs.png)
 

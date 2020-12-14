@@ -1,5 +1,7 @@
 ---
 title: 예외 후 실행 계속 | Microsoft Docs
+description: 처리되지 않은 예외로 인해 디버거에서 실행이 중단되면 어떻게 되는지 알아봅니다. 동일한 스레드에서 실행을 계속할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -25,20 +27,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350682"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559383"
 ---
 # <a name="continuing-execution-after-an-exception"></a>예외 후 실행 계속
-예외로 인해 디버거가 실행을 중단하면 기본적으로 **예외 도우미**가 표시됩니다. **옵션** 대화 상자에서 **예외 도우미**를 사용하지 않도록 설정한 경우 **예외 도우미**(C# 또는 Visual Basic) 또는 **예외** 대화 상자(C+++)가 표시됩니다.
+예외로 인해 디버거가 실행을 중단하면 기본적으로 **예외 도우미** 가 표시됩니다. **옵션** 대화 상자에서 **예외 도우미** 를 사용하지 않도록 설정한 경우 **예외 도우미**(C# 또는 Visual Basic) 또는 **예외** 대화 상자(C+++)가 표시됩니다.
 
- **예외 도우미**가 표시되면 예외를 발생시킨 문제를 해결할 수 있습니다.
+ **예외 도우미** 가 표시되면 예외를 발생시킨 문제를 해결할 수 있습니다.
 
 ## <a name="managed-and-native-code"></a>관리 및 네이티브 코드
- 관리 및 네이티브 코드에서는 처리되지 않은 예외가 발생한 후 같은 스레드에서 실행을 계속할 수 있습니다. **예외 도우미**는 호출 스택을 해제하여 예외가 throw된 지점으로 되돌립니다.
+ 관리 및 네이티브 코드에서는 처리되지 않은 예외가 발생한 후 같은 스레드에서 실행을 계속할 수 있습니다. **예외 도우미** 는 호출 스택을 해제하여 예외가 throw된 지점으로 되돌립니다.
 
 ## <a name="mixed-code"></a>혼합 코드
  네이티브 및 관리 코드가 혼합된 코드를 디버깅하는 동안 처리되지 않은 예외가 발생하면 운영 체제 제한에 따라 호출 스택을 해제할 수 없습니다. 바로 가기 메뉴를 사용하여 호출 스택을 해제하려고 하면 혼합 코드 디버깅 중에 처리되지 않은 예외가 발생하면 디버거가 호출 스택을 해제할 수 없다는 내용의 오류 메시지가 나타납니다.

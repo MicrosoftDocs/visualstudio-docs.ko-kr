@@ -1,5 +1,7 @@
 ---
 title: C++ 프로젝트에서 디버그 기능 사용(-D_DEBUG) | Microsoft Docs
+description: Visual C++에서 _DEBUG를 정의하여 디버깅 기능을 사용하도록 설정합니다. 이 작업을 수행하는 방법을 알아보고 디버그하기 위해 MFC 프로그램을 연결하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,23 +26,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737951"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862935"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>C++ 프로젝트에서 디버그 기능 사용(/D_DEBUG)
-[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG**는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.
+[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG** 는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.
 
-- 소스 코드에서 **#define _DEBUG**를 지정하거나
+- 소스 코드에서 **#define _DEBUG** 를 지정하거나
 
-- **/D_DEBUG** 컴파일러 옵션을 지정합니다. (Visual Studio에서 마법사를 사용하여 프로젝트를 만드는 경우 **/D_DEBUG**는 디버그 구성에 자동으로 정의됩니다.)
+- **/D_DEBUG** 컴파일러 옵션을 지정합니다. (Visual Studio에서 마법사를 사용하여 프로젝트를 만드는 경우 **/D_DEBUG** 는 디버그 구성에 자동으로 정의됩니다.)
 
-  **/D_DEBUG**가 정의되면 컴파일러가 **#ifdef _DEBUG** 기호와 `#endif` 기호 사이의 코드 섹션을 컴파일합니다.
+  **/D_DEBUG** 가 정의되면 컴파일러가 **#ifdef _DEBUG** 기호와 `#endif` 기호 사이의 코드 섹션을 컴파일합니다.
 
-  MFC 프로그램의 디버그 구성은 MFC 라이브러리의 디버그 버전과 링크해야 합니다. **_DEBUG** 및 **_UNICODE**와 같이 정의한 기호에 따라 MFC 헤더 파일에서 링크할 MFC 라이브러리 버전이 결정됩니다. 자세한 내용은 [MFC 라이브러리 버전](/cpp/mfc/mfc-library-versions)을 참조하세요.
+  MFC 프로그램의 디버그 구성은 MFC 라이브러리의 디버그 버전과 링크해야 합니다. **_DEBUG** 및 **_UNICODE** 와 같이 정의한 기호에 따라 MFC 헤더 파일에서 링크할 MFC 라이브러리 버전이 결정됩니다. 자세한 내용은 [MFC 라이브러리 버전](/cpp/mfc/mfc-library-versions)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

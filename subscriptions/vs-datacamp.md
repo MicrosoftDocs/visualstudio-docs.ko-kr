@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435887"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538087"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -60,9 +60,9 @@ ms.locfileid: "92435887"
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
-| GitHub Enterprise가 포함된 Visual Studio Professional| VL | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독| VL | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 3개월                                             |  아니요.  새 구독자만 사용할 수 있음           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 3개월                                              |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | N/A |

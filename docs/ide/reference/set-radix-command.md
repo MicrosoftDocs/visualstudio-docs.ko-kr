@@ -1,5 +1,7 @@
 ---
 title: 기수 설정 명령
+description: 기수 설정 명령에 대해 알아보고 정수 값을 표시하는 데 사용할 숫자 기준을 설정하거나 반환하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88dc1318e29ddf35073b78218eb113fe8952aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b47c30ed938a83a2b4c47f73f55b5f7ca1db6a62
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769650"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616410"
 ---
 # <a name="set-radix-command"></a>기수 설정 명령
 정수 값을 표시하는 데 사용할 숫자 기준을 설정하거나 반환합니다.
@@ -32,9 +34,9 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>인수
 `10`, `16`, `hex` 또는 `dec`
 
-(선택 사항) 10진수(10 또는 dec) 또는 16진수(16 또는 hex)를 나타냅니다. 인수를 생략하면 현재 기수 값이 반환됩니다.
+선택 사항입니다. 10진수(10 또는 dec) 또는 16진수(16 또는 hex)를 나타냅니다. 인수를 생략하면 현재 기수 값이 반환됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 이 예제에서는 16진수 형식의 정수 값을 표시하도록 환경을 설정합니다.
 
 ```cmd

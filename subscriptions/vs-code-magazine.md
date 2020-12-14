@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970495"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538113"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -50,9 +50,9 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  아니요          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL| 사용 가능       |  아니요          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL| 사용 가능       |  아니요          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  아니요          |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | 사용 가능                                                            |  아니요          |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                      | 사용 가능                                                            |  아니요          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능                                             |  아니요          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  아니요          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |

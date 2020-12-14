@@ -2,17 +2,17 @@
 title: Visual Studio 구독의 Visual Studio App Center 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435737"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537775"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -43,9 +43,9 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, NFR<sup>1</sup> | Included       |  예          |
-| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | Included       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise 구독  | VL | Included       |  예          |
 | Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | Included                                                            |예 |
-| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | Included                                                            |예 |
+| GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                      | Included                                                            |예 |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | Included                                                            |예 |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Included                                                            |예 |
 ||

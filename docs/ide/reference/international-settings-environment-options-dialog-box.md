@@ -1,5 +1,6 @@
 ---
 title: 옵션 대화 상자의 국가별 설정
+description: 환경 섹션의 국가별 설정 페이지를 사용하여 여러 언어 버전의 IDE가 설치된 경우 기본 언어를 변경하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102495"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617372"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>옵션 대화 상자: 환경 \> 국가별 설정
 

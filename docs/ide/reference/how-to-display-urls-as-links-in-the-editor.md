@@ -1,5 +1,7 @@
 ---
 title: '방법: 편집기에서 URL을 링크로 표시'
+description: 코드 편집기에서 URL을 링크로 표시하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead76a3db9ff146aa82347a67e0bf7d52d04f30e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770342"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617086"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>방법: 편집기에서 URL을 링크로 표시
 
@@ -25,23 +27,23 @@ ms.locfileid: "85770342"
 
 - 밑줄이 표시됩니다.
 
-- 마우스로 가리키면 **도구 설명**을 표시합니다.
+- 마우스로 가리키면 **도구 설명** 을 표시합니다.
 
 - 링크를 **Ctrl**+**클릭**(Ctrl 키를 누른 채 클릭)할 때 표시되는 웹 사이트를 열어 보세요. 기본적으로 웹 사이트는 내부 웹 브라우저에 표시됩니다.
 
 ## <a name="display-urls-as-links"></a>URL을 링크로 표시
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
-2. **텍스트 편집기**를 클릭합니다.
+2. **텍스트 편집기** 를 클릭합니다.
 
-3. 하나의 언어에 대한 옵션만 변경하려면 해당 언어의 폴더를 확장하고 **일반**을 선택합니다.
+3. 하나의 언어에 대한 옵션만 변경하려면 해당 언어의 폴더를 확장하고 **일반** 을 선택합니다.
 
-     —또는—
+     또는
 
-     모든 언어에 대한 옵션을 변경하려면 **모든 언어** 폴더를 확장하고 **일반**을 선택합니다.
+     모든 언어에 대한 옵션을 변경하려면 **모든 언어** 폴더를 확장하고 **일반** 을 선택합니다.
 
-4. **표시** 아래에서 **한 번 클릭으로 URL 탐색**을 선택합니다.
+4. **표시** 아래에서 **한 번 클릭으로 URL 탐색** 을 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

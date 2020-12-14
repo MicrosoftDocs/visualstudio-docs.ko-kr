@@ -1,5 +1,7 @@
 ---
 title: 글꼴 대화 상자(Microsoft Spy++ 도움말) | Microsoft Docs
+description: 글꼴 대화 상자를 사용하여 Spy++ 뷰 창에서 사용되는 문자 글꼴을 구성합니다. 이 문서에서는 사용량 세부 정보를 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c3a3d5babc0fe78098661f22dd84fca1eac9b19
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849874"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862830"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>글꼴 대화 상자(Microsoft Spy++ 도움말)
-이 대화 상자는 [Spy++ 뷰](../debugger/spy-increment-views.md) 창에서 사용되는 문자 글꼴을 구성하는 데 사용됩니다. 이 대화 상자를 표시하려면 **뷰** 메뉴를 확장하고 **글꼴**을 선택하세요.
+이 대화 상자는 [Spy++ 뷰](../debugger/spy-increment-views.md) 창에서 사용되는 문자 글꼴을 구성하는 데 사용됩니다. 이 대화 상자를 표시하려면 **뷰** 메뉴를 확장하고 **글꼴** 을 선택하세요.
 
  다음 설정을 사용할 수 있습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 편집하며 계속하기 오류 메시지 대화 상자 | Microsoft Docs
+description: 편집하며 계속하기에서 코드 변경 내용에 사용할 수 없다고 보고할 수 있습니다. 이 문서에서는 가능한 원인을 제공합니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188226"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862848"
 ---
 # <a name="edit-and-continue-error-message"></a>편집하며 계속하기 오류 메시지
 
-**편집하며 계속하기** 오류 메시지 상자는 편집하며 계속하기를 지원하는 코드 언어에서 디버그할 때 표시되지만 편집하며 계속하기는 수행한 코드 변경 내용에 사용할 수 없습니다. 오류 메시지에 자세한 설명이 나와 있습니다. 대화 상자에 응답하려면 **확인**을 선택하여 대화 상자를 닫고 편집 시도를 취소합니다.
+**편집하며 계속하기** 오류 메시지 상자는 편집하며 계속하기를 지원하는 코드 언어에서 디버그할 때 표시되지만 편집하며 계속하기는 수행한 코드 변경 내용에 사용할 수 없습니다. 오류 메시지에 자세한 설명이 나와 있습니다. 대화 상자에 응답하려면 **확인** 을 선택하여 대화 상자를 닫고 편집 시도를 취소합니다.
 
 이 오류 메시지의 가능한 원인은 다음과 같습니다.
 
@@ -40,7 +42,7 @@ ms.locfileid: "73188226"
 - Dr. Watson 덤프를 디버그하는 동안 코드를 편집하려고 했습니다. 디버깅
 - **처리되지 않은 예외에 대한 호출 스택 해제** 옵션이 선택되지 않은 상태에서 처리되지 않은 예외가 발생한 후 코드를 편집하려고 했습니다.
 - 포함된 런타임 애플리케이션을 디버그하는 동안 코드를 편집하려고 했습니다.
-- 64비트 앱 대상으로 4.5.1보다 이전 버전의 .NET Framework를 사용하여 관리 코드를 편집하려고 했습니다. 4\.5.1 이전 버전의 .NET Framework에 편집하며 계속하기를 사용하려면 **\<ProjectName>**  > **속성** > **컴파일** 탭, **고급 컴파일러** 설정에서 대상을 **x86**으로 설정합니다.
+- 64비트 앱 대상으로 4.5.1보다 이전 버전의 .NET Framework를 사용하여 관리 코드를 편집하려고 했습니다. 4\.5.1 이전 버전의 .NET Framework에 편집하며 계속하기를 사용하려면 **\<ProjectName>**  > **속성** > **컴파일** 탭, **고급 컴파일러** 설정에서 대상을 **x86** 으로 설정합니다.
 - 디버그하는 동안 수정하여 다시 로드한 어셈블리의 코드를 편집하려고 했습니다.
 - 로드되지 않은 어셈블리의 코드를 편집하려고 했습니다.
 - 최신 버전에 빌드 오류가 있기 때문에 이전 버전의 앱 디버깅을 시작했습니다.

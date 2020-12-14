@@ -1,5 +1,7 @@
 ---
 title: 작업 디버그 | Microsoft Docs
+description: 디버그 엔진에 연결, 시작 이벤트 생성, 중단점 적중 등 프로그램 디버그에 필요한 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903560"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915572"
 ---
 # <a name="debug-tasks"></a>작업 디버그
 프로그램을 디버그하려면 프로그램을 시작하고 디버그 엔진(DE)을 연결해야 합니다. 그러지 않으면 이전에 실행한 프로그램에 DE를 연결해야 합니다. 연결되면 DE는 특정 시작 이벤트를 생성해야 합니다. 이에 대한 응답으로 디버그 패키지는 IDE에 설정된 중단점을 바인딩하려고 시도합니다. 프로그램이 바인딩된 중단점에 도달하면 중단되어 사용자 입력을 기다립니다.

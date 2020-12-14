@@ -1,5 +1,6 @@
 ---
 title: 스레드 속성 대화 상자, 일반 탭 | Microsoft Docs
+description: 스레드 속성 대화 상자에서 모듈 이름, 스레드 ID, 프로세스 ID, 스레드 상태, 대기 원인, CPU 시간 등 스레드에 대한 정보를 확인합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896369"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862999"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>스레드 속성 대화 상자, 일반 탭
-이 대화 상자는 특정 스레드에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 [Threads View](../debugger/threads-view.md)(스레드 뷰) 창으로 포커스를 이동하거나 [Messages View](../debugger/messages-view.md)(메시지 뷰)를 열고 메시지를 확장합니다. 트리에서 스레드 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+이 대화 상자는 특정 스레드에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 [Threads View](../debugger/threads-view.md)(스레드 뷰) 창으로 포커스를 이동하거나 [Messages View](../debugger/messages-view.md)(메시지 뷰)를 열고 메시지를 확장합니다. 트리에서 스레드 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **스레드 속성** 대화 상자에는 **일반** 탭이라는 하나의 창이 있습니다. 다음 설정을 사용할 수 있습니다.
 

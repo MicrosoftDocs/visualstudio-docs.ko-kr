@@ -1,5 +1,7 @@
 ---
 title: 명령
+description: Visual Studio에서 액세스할 수 있는 다양한 명령에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596374"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560956"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 
 **명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 Visual Studio 명령을 입력할 수 있습니다. 각 경우에서 보다 큼 기호(`>`)는 검색 또는 디버그 작업이 아닌 명령이 뒤에 표시됨을 나타냅니다.
 
-**도구** > **옵션** > **환경**의 **키보드** 페이지에서 전체 명령 목록 및 해당 구문을 확인할 수 있습니다.
+**도구** > **옵션** > **환경** 의 **키보드** 페이지에서 전체 명령 목록 및 해당 구문을 확인할 수 있습니다.
 
 IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령 이름을 입력할 수 있습니다. 예를 들어 프랑스어 IDE에서 동일한 명령을 실행하려면 `File.NewFile` 또는 `Fichier.NouveauFichier` 를 입력할 수 있습니다.
 
@@ -31,7 +33,7 @@ IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령
 
 ## <a name="escape-character"></a>이스케이프 문자
 
-Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케이프 문자는 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석됨을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들어:
+Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케이프 문자는 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석됨을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예들 들어 다음과 같습니다.
 
 ```
 >Edit.Find ^^t /regex
@@ -39,7 +41,7 @@ Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케�
 
 캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우에는 무시됩니다.
 
-## <a name="commands-with-arguments"></a>인수가 있는 명령
+## <a name="commands-with-arguments"></a>인수 있는 명령
 
 다음 명령은 인수 또는 스위치를 사용합니다.
 
@@ -48,9 +50,9 @@ Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케�
 | [기존 항목 추가](../../ide/reference/add-existing-item-command.md) | 현재 솔루션에 기존 파일을 추가하고 엽니다. |
 | [기존 프로젝트 추가](../../ide/reference/add-existing-project-command.md) | 현재 솔루션에 기존 프로젝트를 추가합니다. |
 | [새 항목 추가](../../ide/reference/add-new-item-command.md) | 현재 솔루션에 .htm, .css, .txt 또는 프레임셋 같은 새 솔루션 항목을 추가하고 엽니다. |
-| [Alias](../../ide/reference/alias-command.md) | 전체 명령에 대한 새 별칭, 전체 명령 및 인수에 대한 새 별칭 또는 심지어 또 다른 별칭을 만듭니다. |
+| [별칭](../../ide/reference/alias-command.md) | 전체 명령에 대한 새 별칭, 전체 명령 및 인수에 대한 새 별칭 또는 심지어 또 다른 별칭을 만듭니다. |
 | [문 실행](../../ide/reference/evaluate-statement-command.md) | 지정된 문을 평가 및 표시합니다. |
-| [Find](../../ide/reference/find-command.md) | **찾기 및 바꾸기** 컨트롤에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다. |
+| [찾기](../../ide/reference/find-command.md) | **찾기 및 바꾸기** 컨트롤에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다. |
 | [파일에서 찾기](../../ide/reference/find-in-files-command.md) | [파일에서 찾기](../../ide/find-in-files.md)에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다. |
 | [이동](../../ide/reference/go-to-command.md) | 지정된 줄로 커서를 이동합니다. |
 | [호출 스택 목록 표시](../../ide/reference/list-call-stack-command.md) | 현재 호출 스택을 표시합니다. |
@@ -78,7 +80,7 @@ Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케�
 | [중단점 설정/해제](../../ide/reference/toggle-breakpoint-command.md) | 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다. |
 | [조사식 명령](../../ide/reference/watch-command.md) | **조사식** 창의 지정된 인스턴스를 만들고 엽니다. |
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)

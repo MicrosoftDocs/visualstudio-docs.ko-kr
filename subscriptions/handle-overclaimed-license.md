@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 10/28/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 관리자가 초과 할당된 구독을 해결하는 방법을 알아봅니다.
-ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904289"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537749"
 ---
 # <a name="over-allocated-subscriptions"></a>초과 할당된 구독
 구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 "초과 할당"이라고 합니다.  
