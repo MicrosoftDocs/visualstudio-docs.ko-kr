@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK 설치 | Microsoft Docs
+description: Visual Studio를 설치하는 도중을 포함한 Visual Studio 소프트웨어 개발 키트를 설치하는 옵션에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31df92b011336320d759461ed16ce2a3c8f61017
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edab24396f5a3ae5527b76a58db90c19796c4240
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905541"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487571"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Visual Studio SDK 설치
 
@@ -21,7 +23,7 @@ Visual Studio SDK(소프트웨어 개발 키트)는 Visual Studio 설치 프로�
 
 ## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio 설치의 일부로 Visual Studio SDK 설치
 
-Visual Studio 설치에 VS SDK를 포함하려면 **기타 도구 세트**에 **Visual Studio 확장 개발** 워크로드를 설치합니다. 이 워크로드를 통해 Visual Studio SDK 및 필수 구성 요소가 설치됩니다. **요약** 뷰에서 구성 요소를 선택하거나 선택을 취소하여 설치를 추가로 조정할 수 있습니다.
+Visual Studio 설치에 VS SDK를 포함하려면 **기타 도구 세트** 에 **Visual Studio 확장 개발** 워크로드를 설치합니다. 이 워크로드를 통해 Visual Studio SDK 및 필수 구성 요소가 설치됩니다. **요약** 뷰에서 구성 요소를 선택하거나 선택을 취소하여 설치를 추가로 조정할 수 있습니다.
 
 ## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Visual Studio 설치 후 Visual Studio SDK 설치
 

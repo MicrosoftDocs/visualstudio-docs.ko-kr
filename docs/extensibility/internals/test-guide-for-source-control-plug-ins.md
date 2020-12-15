@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 플러그 인에 대한 테스트 가이드 | Microsoft Docs
+description: Visual Studio를 사용한 소스 제어 플러그 인 테스트에 대해 자세히 알아봅니다. 이 개요는 일반적인 테스트 영역을 포함합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905160"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487727"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>소스 제어 플러그 인에 대한 테스트 가이드
 이 섹션에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]를 사용하여 소스 제어 플러그 인을 테스트하기 위한 지침을 제공합니다. 가장 일반적인 테스트 영역에 대한 광범위한 개요와 문제를 일으킬 수 있는 복잡한 영역 중 일부에 대한 개요를 제공합니다. 이 개요는 테스트 사례의 전체 목록이 아닙니다.
