@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 오류 문제 해결
+description: Visual Studio에서 Microsoft Office 솔루션을 개발 하는 동안 발생할 수 있는 오류를 해결 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234694"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523038"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.
@@ -36,7 +38,7 @@ ms.locfileid: "87234694"
 
 - [코드 작성](#code)
 
-- [빌드 프로젝트](#building)
+- [프로젝트 빌드](#building)
 
 - [프로젝트 디버그](#debugging)
 
@@ -100,7 +102,7 @@ ms.locfileid: "87234694"
  문서 또는 워크시트에서 컨트롤을 그룹화하는 경우 Visual Studio에서 더 이상 해당 컨트롤을 인식하지 않습니다. 그룹화 된 컨트롤은 **속성** 창에서 액세스할 수 없으며 문서 또는 워크시트에서 검은색 사각형으로 표시 됩니다. 해당 기능을 복원하려면 컨트롤 그룹을 해제해야 합니다.
 
 ### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 서식 파일의 컨트롤은 Visual Studio에 표시 되지 않습니다.
- Visual Studio 디자이너에서 Word 서식 파일을 여는 경우 텍스트와 인라인이 아닌 서식 파일의 컨트롤이 표시되지 않을 수 있습니다. Visual Studio가 **일반** 뷰에서 Word 템플릿을 열기 때문입니다. 컨트롤을 보려면 **보기** 메뉴를 클릭 하 **Microsoft Office Word 보기** 를 가리킨 다음 **인쇄 레이아웃**을 클릭 합니다.
+ Visual Studio 디자이너에서 Word 서식 파일을 여는 경우 텍스트와 인라인이 아닌 서식 파일의 컨트롤이 표시되지 않을 수 있습니다. Visual Studio가 **일반** 뷰에서 Word 템플릿을 열기 때문입니다. 컨트롤을 보려면 **보기** 메뉴를 클릭 하 **Microsoft Office Word 보기** 를 가리킨 다음 **인쇄 레이아웃** 을 클릭 합니다.
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Visual Studio 디자이너에서 클립 아트 삽입 명령을 수행 하지 않습니다.
  Excel 또는 Word가 Visual Studio 디자이너에서 열려 있는 경우 리본의 **그림** 탭에 있는 **클립 아트** 단추를 클릭 해도 **클립 아트** 작업창이 열리지 않습니다. 클립 아트를 추가 하려면 Visual Studio 외부의 기본 프로젝트 폴더 ( *\bin* 폴더에 있는 복사본이 아님)에 있는 통합 문서 또는 문서의 복사본을 열고 클립 아트를 추가한 다음 통합 문서 또는 문서를 저장 해야 합니다.
@@ -113,9 +115,9 @@ ms.locfileid: "87234694"
 
  "'Microsoft.Office.Interop.Excel._Application.NewWorkbook' 및 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook' 간에 모호성이 있습니다."
 
- 이 오류는 개체의 다른 속성 또는 메서드와 이름이 같은 이벤트에 액세스하려는 것을 의미합니다. 이벤트에 액세스 하려면 개체를 *이벤트 인터페이스로*캐스팅 해야 합니다.
+ 이 오류는 개체의 다른 속성 또는 메서드와 이름이 같은 이벤트에 액세스하려는 것을 의미합니다. 이벤트에 액세스 하려면 개체를 *이벤트 인터페이스로* 캐스팅 해야 합니다.
 
- 이벤트가 있는 Office PIA 형식은 모든 속성 및 메서드를 포함하는 핵심 인터페이스와 개체에 의해 노출되는 이벤트를 포함하는 이벤트 인터페이스 등 두 개의 인터페이스를 구현합니다. 이러한 이벤트 인터페이스는 명명 규칙 *objectname*Events*n*_Event (예: 및)를 사용 합니다 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . 개체에 있을 것으로 예상한 이벤트에 액세스할 수 없는 경우 개체를 해당 이벤트 인터페이스로 캐스팅합니다.
+ 이벤트가 있는 Office PIA 형식은 모든 속성 및 메서드를 포함하는 핵심 인터페이스와 개체에 의해 노출되는 이벤트를 포함하는 이벤트 인터페이스 등 두 개의 인터페이스를 구현합니다. 이러한 이벤트 인터페이스는 명명 규칙 *objectname* Events *n* _Event (예: 및)를 사용 합니다 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . 개체에 있을 것으로 예상한 이벤트에 액세스할 수 없는 경우 개체를 해당 이벤트 인터페이스로 캐스팅합니다.
 
  예를 들어 <xref:Microsoft.Office.Interop.Excel.Application> 개체에는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 이벤트와 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 속성이 있습니다. <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 이벤트를 처리하려면 <xref:Microsoft.Office.Interop.Excel.Application>을 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 인터페이스로 캐스팅합니다. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 작업을 수행하는 방법을 보여 줍니다.
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234694"
  Office Pia의 이벤트 인터페이스에 대 한 자세한 내용은 [office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12//ms247299(v=office.12))를 참조 하세요.
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>또는를 대상으로 하는 프로젝트에서는 Office PIA 클래스를 참조할 수 없습니다. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 대상으로 하는 프로젝트에서는 Office PIA에 정의된 클래스를 참조하는 코드가 기본적으로 컴파일되지 않습니다. Pia의 클래스는 명명 규칙 *objectname*클래스 (예: 및)를 사용 합니다 <xref:Microsoft.Office.Interop.Word.DocumentClass> <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . 예를 들어 Word VSTO 추가 기능 프로젝트의 다음 코드는 컴파일되지 않습니다.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 대상으로 하는 프로젝트에서는 Office PIA에 정의된 클래스를 참조하는 코드가 기본적으로 컴파일되지 않습니다. Pia의 클래스는 명명 규칙 *objectname* 클래스 (예: 및)를 사용 합니다 <xref:Microsoft.Office.Interop.Word.DocumentClass> <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . 예를 들어 Word VSTO 추가 기능 프로젝트의 다음 코드는 컴파일되지 않습니다.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -153,7 +155,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 대상으로 하는 프로젝트는 기본적으로 Office PIA의 모든 interop 형식을 자동으로 포함합니다. 이 컴파일 오류는 포함된 interop 형식 기능이 클래스가 아니라 인터페이스에서만 작동하기 때문에 발생합니다. Office Pia의 인터페이스 및 클래스에 대 한 자세한 내용은 [office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299(v=office.12))를 참조 하세요. Office 프로젝트의 포함 된 interop 형식 기능에 대 한 자세한 내용은 [office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)를 참조 하세요.
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>Office 클래스에 대 한 참조를 인식할 수 없습니다.
- 응용 프로그램 등의 일부 클래스 이름은 및와 같은 여러 네임 스페이스에 <xref:Microsoft.Office.Interop.Word> 있습니다 <xref:System.Windows.Forms> . 이러한 이유로 **Imports** / 프로젝트 템플릿 맨 위에 있는 Imports**using** 문에는 다음과 같은 축약형 한정 상수가 포함 됩니다.
+ 응용 프로그램 등의 일부 클래스 이름은 및와 같은 여러 네임 스페이스에 <xref:Microsoft.Office.Interop.Word> 있습니다 <xref:System.Windows.Forms> . 이러한 이유로  / 프로젝트 템플릿 맨 위에 있는 Imports **using** 문에는 다음과 같은 축약형 한정 상수가 포함 됩니다.
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
@@ -170,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Word 또는 Excel 네임 스페이스를 가져오고 그 안에 있는 모든 클래스에 액세스할 수 있는 경우에도 Word 또는 Excel을 사용 하 여 모든 형식을 정규화 하 여 네임 스페이스 모호성을 제거 해야 합니다.
 
-## <a name="build-projects"></a><a name="building"></a> 프로젝트 빌드
+## <a name="build-projects"></a><a name="building"></a> 빌드 프로젝트
  Office 프로젝트를 빌드하면 다음과 같은 오류가 발생할 수 있습니다.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>권한이 제한 된 문서를 기반으로 하는 문서 수준 프로젝트는 빌드할 수 없습니다.
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  UNC 네트워크 위치에 Excel 또는 Word용 문서 수준 프로젝트를 만드는 경우 Excel 또는 Word의 신뢰할 수 있는 위치 목록에 문서 위치를 추가해야 합니다. 그렇지 않은 경우 Visual Studio에서 프로젝트를 실행하거나 디버그하려고 하면 사용자 지정이 로드되지 않습니다. 신뢰할 수 있는 위치에 대 한 자세한 내용은 [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)를 참조 하세요.
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>디버깅 후 스레드가 제대로 중지 되지 않습니다.
- Visual Studio의 Office 프로젝트는 디버거가 프로그램을 제대로 닫을 수 있도록 하는 스레드 명명 규칙을 따릅니다. 솔루션에서 스레드를 만드는 경우 각 스레드의 이름에 접두사 VSTA_를 지정하여 디버깅을 중지할 때 이러한 스레드가 올바르게 처리되도록 해야 합니다. 예를 들어 `Name` 네트워크 이벤트가 **VSTA_NetworkListener**될 때까지 기다리는 스레드의 속성을 설정할 수 있습니다.
+ Visual Studio의 Office 프로젝트는 디버거가 프로그램을 제대로 닫을 수 있도록 하는 스레드 명명 규칙을 따릅니다. 솔루션에서 스레드를 만드는 경우 각 스레드의 이름에 접두사 VSTA_를 지정하여 디버깅을 중지할 때 이러한 스레드가 올바르게 처리되도록 해야 합니다. 예를 들어 `Name` 네트워크 이벤트가 **VSTA_NetworkListener** 될 때까지 기다리는 스레드의 속성을 설정할 수 있습니다.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>개발 컴퓨터에서 Office 솔루션을 실행 하거나 디버그할 수 없습니다.
  개발 컴퓨터에서 Office 프로젝트를 실행 또는 개발할 수 없는 경우 다음과 같은 오류 메시지가 표시될 수 있습니다.
@@ -213,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  대화 상자에서 **예** 또는 **아니요** 를 클릭 하면 Visual Studio는 Excel 또는 Word 프로세스를 종료 하 고 디버거를 중지 합니다. 이 대화 상자를 표시하지 않고 프로젝트 디버깅을 중지하려면 Visual Studio에서 디버거를 중지하는 대신 Excel 또는 Word를 직접 종료합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)

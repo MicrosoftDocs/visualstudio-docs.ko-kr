@@ -1,5 +1,7 @@
 ---
 title: Word 개체 모델 개요
+description: Word 개체 모델은 word 용 주 interop 어셈블리에 제공 되 고 Word 네임 스페이스에 정의 된 클래스 및 인터페이스로 구성 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985386"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523492"
 ---
 # <a name="word-object-model-overview"></a>Word 개체 모델 개요
   Visual Studio에서 Word 솔루션을 개발하는 경우 Word 개체 모델을 조작합니다. 이 개체 모델은 Word용 주 interop 어셈블리에 제공되고 <xref:Microsoft.Office.Interop.Word> 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.
@@ -111,7 +113,7 @@ ms.locfileid: "72985386"
 
 - <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 문서와 함께 저장되므로 코드 실행이 중지되거나 문서를 닫을 때 삭제되지 않습니다.
 
-- <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A>개체의 속성을 <xref:Microsoft.Office.Interop.Word.View> **false** 또는 **true**로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다.
+- <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A>개체의 속성을 <xref:Microsoft.Office.Interop.Word.View> **false** 또는 **true** 로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다.
 
   Visual Studio는 <xref:Microsoft.Office.Interop.Word.Bookmark> 호스트 컨트롤을 제공하여 <xref:Microsoft.Office.Tools.Word.Bookmark> 개체를 확장합니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 네이티브 <xref:Microsoft.Office.Interop.Word.Bookmark>처럼 동작하지만 추가 이벤트 및 데이터 바인딩 기능이 있습니다. Windows Form의 텍스트 상자 컨트롤에 데이터를 바인딩하는 것과 동일한 방식으로 문서의 책갈피 컨트롤에 데이터를 바인딩할 수 있습니다. 자세한 내용은 [책갈피 컨트롤](../vsto/bookmark-control.md)을 참조 하세요.
 
@@ -128,7 +130,7 @@ ms.locfileid: "72985386"
 
  VBA 개체 모델 참조의 모든 개체 및 멤버는 Word PIA의 형식 및 멤버에 해당합니다. 예를 들어 VBA 개체 모델 참조의 Document 개체는 <xref:Microsoft.Office.Interop.Word.Document> WORD PIA의 개체에 해당 합니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Word 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [문서 작업](../vsto/working-with-documents.md)

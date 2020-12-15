@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서 저장'
+description: 메모리에 열려 있는 통합 문서를 수정 하지 않고 경로를 변경 하 고 통합 문서 복사본을 저장 하지 않고 프로그래밍 방식으로 Microsoft Excel 통합 문서를 저장 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547084"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524622"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 저장
   통합 문서를 저장하는 방법에는 여러 가지가 있습니다. 경로를 변경하지 않고 통합 문서를 저장할 수 있습니다. 통합 문서가 이전에 저장되지 않은 경우 경로를 지정하여 통합 문서를 저장해야 합니다. 명시적 경로 없이 Microsoft Office Excel은 파일을 만들 때 지정된 이름으로 현재 폴더에 파일을 저장합니다. 메모리에 열려 있는 통합 문서를 수정하지 않고 통합 문서의 복사본을 저장할 수도 있습니다.
@@ -82,7 +84,7 @@ ms.locfileid: "85547084"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  통합 문서를 저장하거나 복사하는 메서드를 대화형으로 취소하면 코드에서 런타임 오류가 발생합니다. 예를 들어 프로시저에서 메서드를 호출 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 하지만 excel에서 프롬프트를 사용 하지 않는 경우 사용자가 메시지가 표시 되 면 **취소** 를 클릭 하면 excel에서 런타임 오류가 발생 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [통합 문서 호스트 항목](../vsto/workbook-host-item.md)
 - [방법: 프로그래밍 방식으로 통합 문서 닫기](../vsto/how-to-programmatically-close-workbooks.md)

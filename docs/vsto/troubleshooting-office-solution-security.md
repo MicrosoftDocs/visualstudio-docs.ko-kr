@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 보안 문제 해결
+description: Microsoft Office 솔루션 보안으로 작업할 때 발생할 수 있는 일반적인 문제를 해결 하기 위한 몇 가지 팁에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234811"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522899"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 솔루션 보안 문제 해결
   이 항목에는 Office 솔루션 보안으로 작업할 때 발생할 수 있는 일반적인 문제를 해결 하기 위한 팁이 포함 되어 있습니다.
@@ -48,6 +50,6 @@ ms.locfileid: "87234811"
 
  IEESC 및 Internet Explorer 7 이상 효과를 관리 하려면 신뢰 하는 웹 사이트와 UNC (범용 명명 규칙) 경로를 확인 하 고 신뢰할 수 있는 보안 영역 (로컬 인트라넷 또는 신뢰할 수 있는 사이트) 중 하나에 추가 합니다. 영역을 관리 하는 방법에 대 한 자세한 내용은 [ClickOnce의 신뢰할 수 있는 게시자 구성](/previous-versions/dotnet/articles/ms996418(v=msdn.10))을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

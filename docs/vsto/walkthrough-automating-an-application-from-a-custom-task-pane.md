@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 작업창에서 응용 프로그램 자동화'
+description: 사용자가 사용자 지정 작업창에서 MonthCalendar 컨트롤을 클릭할 때 슬라이드에 날짜를 삽입 하 여 Microsoft PowerPoint를 자동화 하는 사용자 지정 작업창을 만듭니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585082"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522796"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>연습: 사용자 지정 작업창에서 응용 프로그램 자동화
   이 연습에서는 PowerPoint를 자동화하는 사용자 지정 작업창을 만드는 방법을 보여 줍니다. 사용자 지정 작업창은 사용자가 사용자 지정 작업창에 있는 <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 클릭할 때 날짜를 슬라이드에 삽입합니다.
@@ -55,22 +57,22 @@ ms.locfileid: "91585082"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. PowerPoint 추가 기능 프로젝트 템플릿을 사용하여 이름이 **MyAddIn**인 PowerPoint VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. PowerPoint 추가 기능 프로젝트 템플릿을 사용하여 이름이 **MyAddIn** 인 PowerPoint VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 **ThisAddIn.cs** 또는 **ThisAddIn.vb** 코드 파일을 열고 **MyAddIn** 프로젝트를 **솔루션 탐색기**에 추가합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 **ThisAddIn.cs** 또는 **ThisAddIn.vb** 코드 파일을 열고 **MyAddIn** 프로젝트를 **솔루션 탐색기** 에 추가합니다.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스 디자인
  사용자 지정 작업창을 위한 비주얼 디자이너는 없지만 원하는 레이아웃을 사용하여 사용자 정의 컨트롤을 디자인할 수 있습니다. 이 연습 뒷부분에서는 사용자 지정 작업창에 사용자 정의 컨트롤을 추가합니다.
 
 #### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스를 디자인하려면
 
-1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가** 를 클릭합니다.
 
-2. **새 항목 추가** 대화 상자에서 사용자 정의 컨트롤의 이름을 **MyUserControl**로 변경하고 **추가**를 클릭합니다.
+2. **새 항목 추가** 대화 상자에서 사용자 정의 컨트롤의 이름을 **MyUserControl** 로 변경하고 **추가** 를 클릭합니다.
 
      사용자 정의 컨트롤이 디자이너에서 열립니다.
 
-3. **도구 상자** 의 **공용 컨트롤**탭에서 **MonthCalendar** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
+3. **도구 상자** 의 **공용 컨트롤** 탭에서 **MonthCalendar** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
 
      **MonthCalendar** 컨트롤이 사용자 정의 컨트롤의 디자인 화면보다 큰 경우 사용자 정의 컨트롤의 크기를 조정하여 **MonthCalendar** 컨트롤에 맞춥니다.
 
@@ -98,16 +100,16 @@ ms.locfileid: "91585082"
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5. **솔루션 탐색기**에서 **MyAddIn** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **빌드**를 클릭합니다. 프로젝트가 오류 없이 빌드되는지 확인합니다.
+5. **솔루션 탐색기** 에서 **MyAddIn** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **빌드** 를 클릭합니다. 프로젝트가 오류 없이 빌드되는지 확인합니다.
 
 ## <a name="display-the-custom-task-pane"></a>사용자 지정 작업창 표시
  VSTO 추가 기능이 시작할 때 사용자 지정 작업창을 표시하려면 VSTO 추가 기능의 <xref:Microsoft.Office.Tools.AddIn.Startup> 이벤트 처리기에 있는 작업창에 사용자 정의 컨트롤을 추가합니다.
 
 ### <a name="to-display-the-custom-task-pane"></a>사용자 지정 작업창을 표시하려면
 
-1. **솔루션 탐색기**에서 **PowerPoint**를 확장합니다.
+1. **솔루션 탐색기** 에서 **PowerPoint** 를 확장합니다.
 
-2. **ThisAddIn.cs** 또는 **ThisAddIn.vb** 를 마우스 오른쪽 단추로 클릭하고 **코드 보기**를 클릭합니다.
+2. **ThisAddIn.cs** 또는 **ThisAddIn.vb** 를 마우스 오른쪽 단추로 클릭하고 **코드 보기** 를 클릭합니다.
 
 3. `ThisAddIn` 클래스에 다음 코드를 추가합니다. 이 코드는 `MyUserControl` 및 <xref:Microsoft.Office.Tools.CustomTaskPane> 의 인스턴스를 `ThisAddIn` 클래스의 멤버로 선언합니다.
 

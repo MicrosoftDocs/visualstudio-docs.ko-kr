@@ -1,5 +1,7 @@
 ---
 title: VSTO 추가 기능의 성능 향상
+description: Office 응용 프로그램용으로 만드는 VSTO 추가 기능을 신속 하 게 시작 하 고, 종료 하 고, 항목을 열고, 다른 작업을 수행할 수 있도록 최적화 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298519"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524445"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO 추가 기능의 성능 향상
   Office 애플리케이션용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
@@ -37,13 +39,13 @@ ms.locfileid: "92298519"
 
 - 이후에 애플리케이션을 시작한 후 사용자가 VSTO 추가 기능과 처음으로 상호 작용하는 경우
 
-  예를 들어 사용자가 **내 데이터 가져오기**라는 사용자 지정 단추를 선택할 때 VSTO 추가 기능에서 워크시트를 데이터로 채울 수 있습니다. 응용 프로그램은 **내 데이터 가져오기** 단추가 리본에 나타날 수 있도록 VSTO 추가 기능을 적어도 한 번 로드 해야 합니다. 그러나 사용자가 다음 번에 응용 프로그램을 시작 하면 VSTO 추가 기능이 다시 로드 되지 않습니다. VSTO 추가 기능은 사용자가 **내 데이터 가져오기** 단추를 선택할 때만 로드됩니다.
+  예를 들어 사용자가 **내 데이터 가져오기** 라는 사용자 지정 단추를 선택할 때 VSTO 추가 기능에서 워크시트를 데이터로 채울 수 있습니다. 응용 프로그램은 **내 데이터 가져오기** 단추가 리본에 나타날 수 있도록 VSTO 추가 기능을 적어도 한 번 로드 해야 합니다. 그러나 사용자가 다음 번에 응용 프로그램을 시작 하면 VSTO 추가 기능이 다시 로드 되지 않습니다. VSTO 추가 기능은 사용자가 **내 데이터 가져오기** 단추를 선택할 때만 로드됩니다.
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>요청 시 VSTO 추가 기능을 로드하도록 ClickOnce 솔루션을 구성하려면
 
-1. **솔루션 탐색기**에서 프로젝트 노드를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다.
 
-2. 메뉴 모음에서 **보기** > **속성 페이지**를 선택합니다.
+2. 메뉴 모음에서 **보기** > **속성 페이지** 를 선택합니다.
 
 3. **게시** 탭에서 **옵션** 단추를 선택합니다.
 
@@ -51,13 +53,13 @@ ms.locfileid: "92298519"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>요청 시 VSTO 추가 기능을 로드하도록 Windows Installer 솔루션을 구성하려면
 
-1. 레지스트리에서 `LoadBehavior` ** _Root_\Software\Microsoft\Office \\ _ApplicationName_\addins \\ _추가 기능 ID_ ** 키의 항목을 **0x10**으로 설정 합니다.
+1. 레지스트리에서 `LoadBehavior` **_Root_\Software\Microsoft\Office \\ _ApplicationName_\addins \\ _추가 기능 ID_** 키의 항목을 **0x10** 으로 설정 합니다.
 
      자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)을 참조 하세요.
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>솔루션을 디버그하는 동안 요청 시 VSTO 추가 기능을 로드하도록 솔루션을 구성하려면
 
-1. `LoadBehavior` ** _Root_\Software\Microsoft\Office \\ _ApplicationName_\addins \\ _추가 기능 ID_ ** 키의 항목을 **0x10**으로 설정 하는 스크립트를 만듭니다.
+1. `LoadBehavior` **_Root_\Software\Microsoft\Office \\ _ApplicationName_\addins \\ _추가 기능 ID_** 키의 항목을 **0x10** 으로 설정 하는 스크립트를 만듭니다.
 
      다음 코드에서는 이 스크립트의 예제를 보여 줍니다.
 
@@ -113,7 +115,7 @@ ms.locfileid: "92298519"
 > [!NOTE]
 > Office 개체 모델을 호출하는 모든 코드는 주 스레드에서 실행되어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [요청 시 VSTO 추가 기능 로드](/archive/blogs/andreww/demand-loading-vsto-add-ins)
 - [Office 추가 기능에서 CLR 지연 로드](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)

@@ -1,5 +1,7 @@
 ---
 title: 보안 및 배포 연습
+description: 솔루션을 실행할 수 있도록 보안 정책을 설정 하 고 Office 솔루션을 배포 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810943"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524376"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>보안 및 배포 연습
   다음 항목에서는 솔루션을 실행할 수 있도록 보안 정책을 설정 하는 방법 및 Office 솔루션을 배포 하는 방법을 보여 줍니다.
@@ -41,7 +43,7 @@ ms.locfileid: "90810943"
 
 - [방법: Office 솔루션 배포를 위한 IIS 준비](/previous-versions/bb608629(v=vs.110)) 배포 매니페스트에 대해 Microsoft 인터넷 정보 서비스 (IIS)에서 MIME 형식을 구성 하는 방법에 대해 설명 합니다.
 
-- [방법: 배포 된 Office 솔루션 업데이트](/previous-versions/bb157871(v=vs.110)) **게시 마법사**를 사용 하 여 Office 솔루션을 업데이트 하는 방법에 대 한 정보를 제공 합니다.
+- [방법: 배포 된 Office 솔루션 업데이트](/previous-versions/bb157871(v=vs.110)) **게시 마법사** 를 사용 하 여 Office 솔루션을 업데이트 하는 방법에 대 한 정보를 제공 합니다.
 
 - [방법: Office 솔루션의 설치 경로 변경](/previous-versions/bb608626(v=vs.110)) Office 솔루션의 설치 경로를 변경 하는 방법에 대 한 정보를 제공 합니다.
 
@@ -58,5 +60,5 @@ ms.locfileid: "90810943"
 
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md) Word 및 Excel 솔루션을 만드는 방법 및 솔루션에서 어셈블리의 역할을 만드는 방법에 대 한 정보 링크를 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)

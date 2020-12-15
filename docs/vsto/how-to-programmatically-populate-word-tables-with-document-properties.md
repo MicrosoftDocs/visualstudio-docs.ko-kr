@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기
+description: Visual Studio를 사용 하 여 Microsoft Word 문서에서 프로그래밍 방식으로 문서 속성을 사용 하 여 테이블을 채우는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585486"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523788"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기
   다음 예제에서는 문서의 맨 위에 Microsoft Office Word 표를 만들고 호스트 문서의 속성으로 채웁니다.

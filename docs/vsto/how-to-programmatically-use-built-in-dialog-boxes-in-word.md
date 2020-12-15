@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용'
+description: Visual Studio를 사용 하 여 프로그래밍 방식으로 Microsoft Word의 기본 제공 대화 상자를 사용 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b2c1a748d38c2b649705fa1ad2de21553b710634
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585656"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523617"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용
   Microsoft Office Word를 사용할 때 사용자 입력에 대 한 대화 상자를 표시 해야 하는 경우가 있습니다. 직접 만들 수도 있지만 개체의 컬렉션에 노출 되는 Word에서 기본 제공 대화 상자를 사용 하는 방법을 사용할 수도 있습니다 <xref:Microsoft.Office.Interop.Word.Dialogs> <xref:Microsoft.Office.Interop.Word.Application> . 이를 통해 열거형으로 표시 되는 기본 제공 대화 상자를 200 이상 액세스할 수 있습니다.

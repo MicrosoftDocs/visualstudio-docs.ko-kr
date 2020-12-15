@@ -1,5 +1,7 @@
 ---
 title: Office 문서에서 Windows Forms 컨트롤의 제한 사항
+description: Microsoft Office 문서에서 Windows Forms 컨트롤 메서드 및 속성의 제한 사항에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583738"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524448"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 문서에서 Windows Forms 컨트롤의 제한 사항
 
@@ -83,7 +85,7 @@ Windows Forms 컨트롤은 일반적으로 Windows Form에서와 같은 방식�
 |컨트롤 속성 값|Windows Form의 컨트롤 속성은 정수 값으로 설정 되지만 Word 문서에서 컨트롤의 단일 컨트롤로 설정 됩니다. Excel에서 컨트롤의 속성 값은 double로 설정 됩니다. `Height` `Width` 워크시트에 있는 컨트롤의 및 속성이 워크시트나 화면 크기를 초과 하는 경우 값이 잘립니다.|
 |컨트롤 크기 조정|크기 조정 핸들 중 하나를 사용 하 여 문서에서 컨트롤의 크기를 조정 하는 경우 컨트롤이 ac 때까지 새 컨트롤 차원이 **속성** 창에 반영 되지 않습니다.|
 |제어 동작|Excel 워크시트의 컨트롤은 워크시트 창이 분할 될 때 예상과 다르게 동작할 수 있습니다. 예를 들어 워크시트의에 대 한 액세스는 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> windows 중 하나 에서만 사용할 수 있습니다.|
-|컨트롤 이름 지정|예약어를 사용 하 여 컨트롤의 이름을 지정할 수 없습니다. 예를 들어를 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 워크시트에 추가 하 고 이름을 **System**으로 변경 하면 프로젝트를 빌드할 때 오류가 발생 합니다.|
+|컨트롤 이름 지정|예약어를 사용 하 여 컨트롤의 이름을 지정할 수 없습니다. 예를 들어를 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 워크시트에 추가 하 고 이름을 **System** 으로 변경 하면 프로젝트를 빌드할 때 오류가 발생 합니다.|
 |프로그래밍 방식으로 컨트롤 추가|런타임에 컨트롤을 문서에 추가 하려면 컨트롤의 생성자를 사용 하지 마세요. 대신에서 제공 하는 도우미 메서드를 사용 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . 예를 들어, 메서드를 사용 <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> 하 여 워크시트에 단추를 추가할 수 있습니다. 이러한 도우미 메서드에서 지원 하지 않는 컨트롤을 추가 하려는 경우 메서드를 사용할 수 있습니다 `AddControl` . 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.|
 |컨트롤 복사|Windows Forms 컨트롤을 복사 하 여 런타임에 문서에 붙여넣으면 빈 컨테이너 ActiveX 컨트롤이 문서에 붙여넣어집니다. Windows Forms 컨트롤은 새 위치에 표시 되지 않으며 원래 컨트롤의 코드 뒤에 있는 코드는 컨테이너 ActiveX 컨트롤에 복사 되지 않습니다.|
 
@@ -101,7 +103,7 @@ Windows Forms 컨트롤은 일반적으로 Windows Form에서와 같은 방식�
 > [!NOTE]
 > 타사 컨트롤은 <xref:System.Runtime.InteropServices.ComVisibleAttribute> Office 솔루션에서 사용 하기 위해 특성을 **true** 로 설정 해야 합니다.
 
-다음 컨트롤 및 구성 요소는 **도구 상자**에서 사용할 수 없습니다.
+다음 컨트롤 및 구성 요소는 **도구 상자** 에서 사용할 수 없습니다.
 
 - <xref:System.Windows.Forms.BindingNavigator>
 

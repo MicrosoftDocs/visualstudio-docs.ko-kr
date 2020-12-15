@@ -1,5 +1,7 @@
 ---
 title: 통합 문서 작업
+description: 통합 문서 및 통합 문서 클래스에는 통합 문서를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814690"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522564"
 ---
 # <a name="work-with-workbooks"></a>통합 문서 작업
   <xref:Microsoft.Office.Tools.Excel.Workbook> 및 <xref:Microsoft.Office.Interop.Excel.Workbooks> 클래스에는 통합 문서가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |새 통합 문서를 만듭니다.|[방법: 프로그래밍 방식으로 새 통합 문서 만들기](../vsto/how-to-programmatically-create-new-workbooks.md)|
 |지정된 통합 문서를 엽니다.|[방법: 프로그래밍 방식으로 통합 문서 열기](../vsto/how-to-programmatically-open-workbooks.md)|
@@ -38,7 +40,7 @@ ms.locfileid: "62814690"
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [범위 작업](../vsto/working-with-ranges.md)

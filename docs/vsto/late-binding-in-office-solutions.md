@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션의 런타임에 바인딩
+description: Microsoft Office 응용 프로그램 내 개체 모델의 일부 형식에서 런타임에 바인딩 기능을 통해 사용할 수 있는 기능을 제공 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583948"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523568"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 솔루션의 런타임에 바인딩
   Office 응용 프로그램의 개체 모델에 있는 일부 형식은 런타임에 바인딩 기능을 통해 사용할 수 있는 기능을 제공 합니다. 예를 들어, 일부 메서드 및 속성은 Office 응용 프로그램의 컨텍스트에 따라 다른 형식의 개체를 반환할 수 있으며, 일부 형식은 다른 컨텍스트에서 다른 메서드나 속성을 노출할 수 있습니다.
@@ -61,7 +63,7 @@ ms.locfileid: "62583948"
 
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)
 - [Type dynamic &#40;C&#35; 프로그래밍 가이드를 사용&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

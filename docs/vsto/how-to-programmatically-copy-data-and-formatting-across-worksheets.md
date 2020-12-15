@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 워크시트 간에 데이터 및 서식 복사
+description: FillAcrossSheets 메서드를 사용 하 여 한 시트의 범위에서 통합 문서의 다른 모든 시트에 데이터를 복사 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585264"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523195"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 간에 데이터 및 서식 복사
   메서드를 사용 하 여 한 시트의 범위에서 통합 문서의 다른 모든 시트에 데이터를 복사할 수 있습니다 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> . 범위를 지정 하 고 데이터, 형식 또는 둘 다를 복사할지 여부를 지정 합니다.

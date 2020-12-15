@@ -1,5 +1,7 @@
 ---
 title: 관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
+description: 관리 되지 않는 API 참조는 로드에서 관리 되는 VSTO 추가 기능을 지 원하는 데 사용 됩니다. 이 인터페이스를 구현 하 여 사용자 고유의 VSTO 추가 기능 로더 구성 요소를 만들 수도 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f48e7771b3e62c0c58fbc59bd9f9b534069d71
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9dbb64b54d9b0dd9a244d9a614fbce211d1edfc5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584427"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522687"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>관리 되지 않는 API 참조 (Visual Studio에서 Office 개발)
 

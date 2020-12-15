@@ -1,5 +1,7 @@
 ---
 title: 통합 문서에 로드할 수 없는 ActiveX 컨트롤이 포함 되어 있습니다.
+description: 통합 문서에 로드할 수 없는 ActiveX 컨트롤이 포함 되어 있을 때 발생 하는 오류를 해결 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584453"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524175"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>통합 문서에 로드할 수 없는 ActiveX 컨트롤이 포함 되어 있습니다.
 

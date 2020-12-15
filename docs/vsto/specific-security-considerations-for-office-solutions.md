@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에 대 한 특정 보안 고려 사항
+description: Microsoft .NET Framework 및 Microsoft Office에서 제공 하는 보안 기능을 통해 보안 위협에 대해 Office 솔루션을 보호 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985589"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524294"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 솔루션에 대 한 특정 보안 고려 사항
   Microsoft .NET Framework 및 Microsoft Office에서 제공된 보안 기능을 통해 다양한 보안 위협에 대해 Office 솔루션을 보호할 수 있습니다. 이 항목에서는 이러한 위협 중 일부에 대해 설명하고 이러한 위협으로부터 보호하기 위한 권장 사항을 제공합니다. 또한 Office 솔루션에 영향을 주는 Microsoft Office 보안 설정에 대한 정보를 포함합니다.
@@ -87,9 +89,9 @@ ms.locfileid: "72985589"
  Microsoft Office 애플리케이션을 호스트하는 기타 애플리케이션도 새 권한이 적용되는 것을 방해할 수 있습니다. 보안 정책을 변경한 후에는 호스트인지 또는 독립 실행형인지 관계없이 Office를 사용하는 모든 애플리케이션을 종료해야 합니다.
 
 ## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Microsoft Office 시스템의 보안 센터 설정이 추가 기능 또는 문서 수준 사용자 지정에 영향을 주지 않음
- 사용자는 **보안 센터**의 옵션을 설정하여 VSTO 추가 기능이 로드되지 않도록 방지할 수 있습니다. 그러나 Visual Studio의 Office 솔루션을 사용하여 만든 문서 수준 사용자 지정 및 VSTO 추가 기능은 이러한 신뢰 설정에 의해 영향을 받지 않습니다.
+ 사용자는 **보안 센터** 의 옵션을 설정하여 VSTO 추가 기능이 로드되지 않도록 방지할 수 있습니다. 그러나 Visual Studio의 Office 솔루션을 사용하여 만든 문서 수준 사용자 지정 및 VSTO 추가 기능은 이러한 신뢰 설정에 의해 영향을 받지 않습니다.
 
- 사용자가 **보안 센터**를 사용하여 VSTO 추가 기능이 로드되지 않도록 방지한 경우 다음 형식의 VSTO 추가 기능이 로드되지 않습니다.
+ 사용자가 **보안 센터** 를 사용하여 VSTO 추가 기능이 로드되지 않도록 방지한 경우 다음 형식의 VSTO 추가 기능이 로드되지 않습니다.
 
 - 관리되는/관리되지 않는 COM VSTO 추가 기능
 
@@ -107,13 +109,13 @@ ms.locfileid: "72985589"
 
 2. *ApplicationName* **옵션** 단추를 선택합니다.
 
-3. 범주 창에서 **보안 센터**를 선택합니다.
+3. 범주 창에서 **보안 센터** 를 선택합니다.
 
-4. 세부 정보 창에서 **보안 센터 설정**을 선택합니다.
+4. 세부 정보 창에서 **보안 센터 설정** 을 선택합니다.
 
-5. 범주 창에서 **추가 기능**을 선택합니다.
+5. 범주 창에서 **추가 기능** 을 선택합니다.
 
-6. 세부 정보 창에서 **애플리케이션 추가 기능에 신뢰할 수 있는 게시자의 서명 필요** 또는 **모든 애플리케이션 추가 기능 사용 안 함**을 선택합니다.
+6. 세부 정보 창에서 **애플리케이션 추가 기능에 신뢰할 수 있는 게시자의 서명 필요** 또는 **모든 애플리케이션 추가 기능 사용 안 함** 을 선택합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

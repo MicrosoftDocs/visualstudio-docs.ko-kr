@@ -1,5 +1,7 @@
 ---
 title: Word를 사용한 연습
+description: 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용 하 여 Microsoft Word를 자동화 하 고 UI (사용자 인터페이스)를 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254986"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522581"
 ---
 # <a name="walkthroughs-using-word"></a>Word를 사용한 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office Word를 자동화하고 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.
@@ -51,7 +53,7 @@ ms.locfileid: "71254986"
 
 - [연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) VSTO 추가 기능에서 XML 설명자 파일을 사용 하 여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)
 - [Office 솔루션의 데이터 연습](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)

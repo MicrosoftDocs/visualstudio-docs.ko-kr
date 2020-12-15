@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Excel 계산 실행'
+description: Visual Studio를 사용 하 여 Microsoft Excel 통합 문서에서 프로그래밍 방식으로 계산을 실행 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547383"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524702"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>방법: 프로그래밍 방식으로 Excel 계산 실행
   비슷한 프로세스를 사용 하 여 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 나 네이티브 Excel 범위 개체에서 계산을 실행 합니다.

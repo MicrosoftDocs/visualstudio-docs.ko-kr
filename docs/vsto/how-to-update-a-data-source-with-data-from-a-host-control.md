@@ -1,5 +1,7 @@
 ---
 title: '방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트'
+description: 호스트 컨트롤을 데이터 소스에 바인딩하고 컨트롤의 데이터에 적용 된 변경 내용을 사용 하 여 데이터 소스를 업데이트 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585121"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523612"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트
   호스트 컨트롤을 데이터 원본에 바인딩하고 해당 데이터 원본을 컨트롤에 있는 데이터의 변경 내용으로 업데이트할 수 있습니다. 이 프로세스는 크게 다음과 같은 두 가지 단계로 구성되어 있습니다.
@@ -81,9 +83,9 @@ ms.locfileid: "91585121"
 
 5. **서식 지정 및 고급 바인딩** 대화 상자에서 **데이터 원본 업데이트 모드** 드롭다운 목록을 클릭하고 다음 값 중 하나를 선택합니다.
 
-    - 컨트롤의 유효성을 검사할 때 데이터 원본을 업데이트하려면 **OnValidation**을 선택합니다.
+    - 컨트롤의 유효성을 검사할 때 데이터 원본을 업데이트하려면 **OnValidation** 을 선택합니다.
 
-    - 컨트롤의 데이터 바인딩된 속성 값이 변경될 때 데이터 원본을 업데이트하려면 **OnPropertyChanged**를 선택합니다.
+    - 컨트롤의 데이터 바인딩된 속성 값이 변경될 때 데이터 원본을 업데이트하려면 **OnPropertyChanged** 를 선택합니다.
 
         > [!NOTE]
         > **OnPropertyChanged** 옵션은 Word 호스트 컨트롤에는 적용되지 않습니다. Word가 문서 변경 또는 컨트롤 변경 알림을 제공하지 않기 때문입니다. 그러나 Word 문서의 Windows Forms 컨트롤에 대해서는 이 옵션을 사용할 수 있습니다.

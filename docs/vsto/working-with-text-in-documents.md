@@ -1,5 +1,7 @@
 ---
 title: 문서에서 텍스트 작업
+description: Microsoft Word의 개체 모델을 사용 하 여 Office 프로젝트에서 텍스트 작업을 수행 하는 단계별 절차 및 코드 예제에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815089"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523382"
 ---
 # <a name="work-with-text-in-documents"></a>문서에서 텍스트 작업
   이 섹션의 항목에서는 Microsoft Office Word의 개체 모델을 사용하여 Office 프로젝트에서 텍스트 작업을 수행하는 단계별 절차 및 코드 예제를 제공합니다.
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |다양한 조건에 따라 범위를 정의하고 선택합니다.|[방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
 |범위를 시작하고 끝내는 문자를 가져옵니다.|[방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|
@@ -46,6 +48,6 @@ ms.locfileid: "62815089"
 |문서를 인쇄하기 전에 책갈피의 텍스트를 숨깁니다.|[방법: 프로그래밍 방식으로 문서에서 텍스트 숨기기](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |텍스트에 주석을 추가합니다.|[방법: 프로그래밍 방식으로 문서의 텍스트에 메모 추가](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

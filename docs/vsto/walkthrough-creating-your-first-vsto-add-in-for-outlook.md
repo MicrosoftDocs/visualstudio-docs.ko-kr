@@ -1,5 +1,7 @@
 ---
 title: '연습: Outlook 용 첫 VSTO 추가 기능 만들기'
+description: Microsoft Outlook 용 응용 프로그램 수준 추가 기능을 만듭니다. 이 기능은 열려 있는 Outlook 항목에 관계 없이 응용 프로그램 자체에서 사용할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547993"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524227"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>연습: Outlook 용 첫 VSTO 추가 기능 만들기
   이 연습에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 Outlook 항목에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -48,23 +50,23 @@ ms.locfileid: "69547993"
 
 - Microsoft Outlook
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Visual Studio에서 새로운 Outlook 프로젝트를 만들려면
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+2. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 
-3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.
+3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic** 을 확장한 다음 **Office/SharePoint** 를 확장합니다.
 
 4. 확장된 **Office/SharePoint** 노드 아래에서 **Office 추가 기능** 노드를 선택합니다.
 
 5. 프로젝트 템플릿 목록에서 Outlook VSTO 추가 기능 프로젝트를 선택합니다.
 
-6. **이름** 상자에 **FirstOutlookAddIn**을 입력합니다.
+6. **이름** 상자에 **FirstOutlookAddIn** 을 입력합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**firstoutlookaddin 입력** 프로젝트를 만들고 **ThisAddIn** 코드 파일을 편집기에서 엽니다.
 
@@ -122,7 +124,7 @@ ms.locfileid: "69547993"
 
 ### <a name="to-clean-up-your-project"></a>프로젝트를 정리하려면
 
-1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리**를 클릭합니다.
+1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리** 를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
  기본적인 Outlook용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.
@@ -137,7 +139,7 @@ ms.locfileid: "69547993"
 
 - Outlook용 VSTO 추가 기능 배포. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [Outlook 솔루션](../vsto/outlook-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)

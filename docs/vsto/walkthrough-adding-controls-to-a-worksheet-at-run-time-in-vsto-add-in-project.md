@@ -1,5 +1,7 @@
 ---
 title: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
+description: 리본을 사용 하 여 사용자가 워크시트에 단추, NamedRange 및 ListObject를 추가할 수 있도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584349"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522773"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가
   Excel VSTO 추가 기능을 사용하여 열려 있는 워크시트에 컨트롤을 추가할 수 있습니다. 이 연습에서는 리본 메뉴를 사용하여 사용자가 <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> 및 <xref:Microsoft.Office.Tools.Excel.ListObject>를 워크시트에 추가할 수 있도록 하는 방법을 보여 줍니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
@@ -50,7 +52,7 @@ ms.locfileid: "91584349"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>새 Excel VSTO 추가 기능 프로젝트를 만들려면
 
-1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이름이 **Exceldynamiccontrols**인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
+1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 이름이 **Exceldynamiccontrols** 인 Excel VSTO 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
 2. **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** 어셈블리에 대 한 참조를 추가 합니다. 이 참조는 이 연습의 뒷부분에서 프로그래밍 방식으로 워크시트에 Windows Forms 컨트롤을 추가하는 데 필요합니다.
 
@@ -59,13 +61,13 @@ ms.locfileid: "91584349"
 
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>워크시트에 컨트롤을 추가하는 UI를 제공하려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-2. **새 항목 추가** 대화 상자에서 **리본 (비주얼 디자이너)** 을 선택 하 고 **추가**를 클릭 합니다.
+2. **새 항목 추가** 대화 상자에서 **리본 (비주얼 디자이너)** 을 선택 하 고 **추가** 를 클릭 합니다.
 
      **Ribbon1.cs** 또는 **Ribbon1.xml** 라는 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시 됩니다.
 
-3. **도구 상자** 의 **Office 리본 컨트롤**탭에서 CheckBox 컨트롤을 **group1**로 끌어옵니다.
+3. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 CheckBox 컨트롤을 **group1** 로 끌어옵니다.
 
 4. **CheckBox1** 을 클릭하여 선택합니다.
 
@@ -73,17 +75,17 @@ ms.locfileid: "91584349"
 
     |속성|값|
     |--------------|-----------|
-    |**이름**|**Button**|
-    |**레이블**|**Button**|
+    |**이름**|**단추**|
+    |**레이블**|**단추**|
 
-6. **group1**에 두 번째 확인란을 추가하고 다음 속성을 변경합니다.
+6. **group1** 에 두 번째 확인란을 추가하고 다음 속성을 변경합니다.
 
     |속성|값|
     |--------------|-----------|
     |**이름**|**NamedRange**|
     |**레이블**|**NamedRange**|
 
-7. **Group1**에 세 번째 확인란을 추가 하 고 다음 속성을 변경 합니다.
+7. **Group1** 에 세 번째 확인란을 추가 하 고 다음 속성을 변경 합니다.
 
     |속성|값|
     |--------------|-----------|
@@ -95,7 +97,7 @@ ms.locfileid: "91584349"
 
 ### <a name="to-add-controls-to-a-worksheet"></a>워크시트에 컨트롤을 추가하려면
 
-1. 리본 디자이너에서 **단추**를 두 번 클릭 합니다.
+1. 리본 디자이너에서 **단추** 를 두 번 클릭 합니다.
 
      <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> **단추** 확인란의 이벤트 처리기가 코드 편집기에서 열립니다.
 
@@ -106,11 +108,11 @@ ms.locfileid: "91584349"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. **솔루션 탐색기**에서 *Ribbon1.cs* 또는 *ribbon1.xml*를 선택 합니다.
+3. **솔루션 탐색기** 에서 *Ribbon1.cs* 또는 *ribbon1.xml* 를 선택 합니다.
 
-4. **보기** 메뉴에서 **디자이너**를 클릭 합니다.
+4. **보기** 메뉴에서 **디자이너** 를 클릭 합니다.
 
-5. 리본 디자이너에서 **NamedRange**를 두 번 클릭 합니다.
+5. 리본 디자이너에서 **NamedRange** 를 두 번 클릭 합니다.
 
 6. `NamedRange_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
@@ -119,7 +121,7 @@ ms.locfileid: "91584349"
      [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
      [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
 
-7. 리본 디자이너에서 **ListObject**를 두 번 클릭 합니다.
+7. 리본 디자이너에서 **ListObject** 를 두 번 클릭 합니다.
 
 8. `ListObject_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
@@ -138,11 +140,11 @@ ms.locfileid: "91584349"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>워크시트에서 컨트롤을 제거하려면
 
-1. **솔루션 탐색기**에서 *ThisAddIn.cs* 또는 *ThisAddIn .vb*를 선택 합니다.
+1. **솔루션 탐색기** 에서 *ThisAddIn.cs* 또는 *ThisAddIn .vb* 를 선택 합니다.
 
-2. **보기** 메뉴에서 **코드**를 클릭합니다.
+2. **보기** 메뉴에서 **코드** 를 클릭합니다.
 
-3. `ThisAddIn` 클래스에 다음 메서드를 추가합니다. 이 코드는 통합 문서에서 첫 번째 워크시트를 가져온 다음 `HasVstoObject` 메서드를 사용하여 워크시트에 생성된 워크시트 개체가 있는지 여부를 확인합니다. 생성된 워크시트 개체에 컨트롤이 있는 경우 코드가 해당 워크시트 개체를 가져온 다음 컨트롤 컬렉션을 반복하고 컨트롤을 제거합니다.
+3. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 통합 문서에서 첫 번째 워크시트를 가져온 다음 `HasVstoObject` 메서드를 사용하여 워크시트에 생성된 워크시트 개체가 있는지 여부를 확인합니다. 생성된 워크시트 개체에 컨트롤이 있는 경우 코드가 해당 워크시트 개체를 가져온 다음 컨트롤 컬렉션을 반복하고 컨트롤을 제거합니다.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
@@ -162,19 +164,19 @@ ms.locfileid: "91584349"
 
 3. **추가 기능** 탭을 클릭합니다.
 
-4. **Group1** 그룹에서 **단추**를 클릭 합니다.
+4. **Group1** 그룹에서 **단추** 를 클릭 합니다.
 
      선택한 셀에 단추가 나타납니다.
 
 5. Sheet1에서 다른 셀을 선택합니다.
 
-6. **Group1** 그룹에서 **NamedRange**를 클릭 합니다.
+6. **Group1** 그룹에서 **NamedRange** 를 클릭 합니다.
 
      선택한 셀에 대해 명명된 범위가 정의됩니다.
 
 7. Sheet1에서 일련의 셀을 선택합니다.
 
-8. **Group1** 그룹에서 **ListObject**를 클릭 합니다.
+8. **Group1** 그룹에서 **ListObject** 를 클릭 합니다.
 
      선택한 셀에 대해 목록 개체가 추가됩니다.
 

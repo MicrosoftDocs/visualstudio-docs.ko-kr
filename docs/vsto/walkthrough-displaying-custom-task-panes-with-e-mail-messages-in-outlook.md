@@ -1,5 +1,7 @@
 ---
 title: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
+description: Microsoft Outlook에서 만들어지거나 열리는 각 전자 메일 메시지와 함께 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584284"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522716"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
   이 연습에서는 각 전자 메일 메시지를 만들거나 열 때 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법을 보여 줍니다. 사용자는 각 메일 메시지의 리본에 있는 단추를 사용하여 사용자 지정 작업창을 표시하거나 숨길 수 있습니다.
@@ -63,47 +65,47 @@ ms.locfileid: "91584284"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. 이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능**프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능** 프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 코드 파일을 열고 **OutlookMailItemTaskPane** 프로젝트를 **솔루션 탐색기**에 추가합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 코드 파일을 열고 **OutlookMailItemTaskPane** 프로젝트를 **솔루션 탐색기** 에 추가합니다.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스 디자인
  사용자 지정 작업창을 위한 비주얼 디자이너는 없지만 원하는 UI를 사용하여 사용자 정의 컨트롤을 디자인할 수 있습니다. 이 VSTO 추가 기능의 사용자 지정 작업창에는 <xref:System.Windows.Forms.TextBox> 컨트롤이 포함된 간단한 UI가 있습니다. 이 연습 뒷부분에서는 사용자 지정 작업창에 사용자 정의 컨트롤을 추가합니다.
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스를 디자인하려면
 
-1. **솔루션 탐색기**에서 **OutlookMailItemTaskPane** 프로젝트를 클릭합니다.
+1. **솔루션 탐색기** 에서 **OutlookMailItemTaskPane** 프로젝트를 클릭합니다.
 
-2. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **TaskPaneControl**로 변경하고 **추가**를 클릭합니다.
+3. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **TaskPaneControl** 로 변경하고 **추가** 를 클릭합니다.
 
      사용자 정의 컨트롤이 디자이너에서 열립니다.
 
-4. **도구 상자** 의 **공용 컨트롤**탭에서 **TextBox** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
+4. **도구 상자** 의 **공용 컨트롤** 탭에서 **TextBox** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>리본의 사용자 인터페이스 디자인
  이 VSTO 추가 기능의 목표 중 하나는 사용자가 각 메일 메시지의 리본에서 사용자 지정 작업창을 숨기 거 나 표시 하는 방법을 제공 하는 것입니다. 사용자 인터페이스를 제공하려면 사용자가 클릭하면 사용자 지정 작업창을 표시하거나 숨길 수 있는 토글 단추를 표시하는 사용자 지정 리본 UI를 만듭니다.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>사용자 지정 리본 UI를 만들려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
 2. **새 항목 추가** 대화 상자에서 **리본(비주얼 디자이너)** 을 선택합니다.
 
-3. 새 리본의 이름을 **ManageTaskPaneRibbon**으로 변경하고 **추가**를 클릭합니다.
+3. 새 리본의 이름을 **ManageTaskPaneRibbon** 으로 변경하고 **추가** 를 클릭합니다.
 
      *ManageTaskPaneRibbon.cs* 또는 *ManageTaskPaneRibbon.vb* 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시됩니다.
 
-4. 리본 디자이너에서 **group1**을 클릭합니다.
+4. 리본 디자이너에서 **group1** 을 클릭합니다.
 
-5. **속성** 창에서 **Label** 속성을 **작업창 관리자**로 설정합니다.
+5. **속성** 창에서 **Label** 속성을 **작업창 관리자** 로 설정합니다.
 
-6. **도구 상자** 의 **Office 리본 컨트롤**탭에서 ToggleButton 컨트롤을 **작업창 관리자** 그룹으로 끌어 놓습니다.
+6. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 ToggleButton 컨트롤을 **작업창 관리자** 그룹으로 끌어 놓습니다.
 
-7. **toggleButton1**을 클릭합니다.
+7. **toggleButton1** 을 클릭합니다.
 
-8. **속성** 창에서 **Label** 속성을 **작업창 표시**로 설정합니다.
+8. **속성** 창에서 **Label** 속성을 **작업창 표시** 로 설정합니다.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>전자 메일 메시지와 함께 사용자 지정 리본 사용자 인터페이스 표시
  이 연습에서 만드는 사용자 지정 작업창은 메일 메시지가 포함된 검사기 창과 함께만 나타나도록 디자인되었습니다. 따라서 사용자 지정 리본 UI가 이 창과 함께만 표시되도록 해당 속성을 설정합니다.
@@ -112,7 +114,7 @@ ms.locfileid: "91584284"
 
 1. 리본 디자이너에서 **ManageTaskPaneRibbon** 리본을 클릭합니다.
 
-2. **속성** 창에서 **RibbonType**옆의 드롭다운 목록을 클릭하고 **Microsoft.Outlook.Mail.Compose** 및 **Microsoft.Outlook.Mail.Read**를 선택합니다.
+2. **속성** 창에서 **RibbonType** 옆의 드롭다운 목록을 클릭하고 **Microsoft.Outlook.Mail.Compose** 및 **Microsoft.Outlook.Mail.Read** 를 선택합니다.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>검사기 창 및 사용자 지정 작업창을 관리 하기 위한 클래스 만들기
  VSTO 추가 기능에서 특정 메일 메시지와 연결 된 사용자 지정 작업창을 식별 해야 하는 경우가 있습니다. 이러한 경우는 다음과 같습니다.
@@ -127,7 +129,7 @@ ms.locfileid: "91584284"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>검사기 창 및 사용자 지정 작업창을 관리 하기 위한 클래스를 만들려면
 
-1. **솔루션 탐색기**에서 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 파일을 마우스 오른쪽 단추로 클릭한 다음 **코드 보기**를 클릭합니다.
+1. **솔루션 탐색기** 에서 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 파일을 마우스 오른쪽 단추로 클릭한 다음 **코드 보기** 를 클릭합니다.
 
 2. 파일 맨 위에 다음 문을 추가합니다.
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584284"
 
 ### <a name="to-build-your-project"></a>프로젝트를 빌드하려면
 
-1. **솔루션 탐색기**에서 **OutlookMailItemTaskPane** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **빌드**를 클릭합니다. 프로젝트가 오류 없이 컴파일되는지 확인합니다.
+1. **솔루션 탐색기** 에서 **OutlookMailItemTaskPane** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **빌드** 를 클릭합니다. 프로젝트가 오류 없이 컴파일되는지 확인합니다.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>리본 토글 단추를 사용자 지정 작업창과 동기화
  토글 단추는 작업창이 표시될 때 누른 상태로 표시되고 작업창이 숨겨져 있을 때는 누르지 않은 상태로 표시됩니다. 단추의 상태를 사용자 지정 작업창과 동기화하려면 토글 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 이벤트 처리기를 수정합니다.
@@ -226,7 +228,7 @@ ms.locfileid: "91584284"
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO 추가 기능을 테스트하려면
 
-1. **F5**키를 누릅니다.
+1. **F5** 키를 누릅니다.
 
 2. Outlook에서 **새로** 만들기를 클릭 하 여 새 메일 메시지를 만듭니다.
 
@@ -242,7 +244,7 @@ ms.locfileid: "91584284"
 
 6. **작업창 표시** 단추를 다시 클릭합니다.
 
-    작업창이 열리고 텍스트 상자에 여전히 **첫 번째 작업창**이라는 문자열이 들어 있는지 확인합니다.
+    작업창이 열리고 텍스트 상자에 여전히 **첫 번째 작업창** 이라는 문자열이 들어 있는지 확인합니다.
 
 7. Outlook에서 **새로** 만들기를 클릭 하 여 두 번째 메일 메시지를 만듭니다.
 

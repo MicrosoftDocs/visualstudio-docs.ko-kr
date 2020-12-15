@@ -1,5 +1,7 @@
 ---
 title: '연습: 책갈피에 대 한 바로 가기 메뉴 만들기'
+description: Microsoft Word 용 문서 수준 사용자 지정에서 책갈피 컨트롤에 대 한 바로 가기 메뉴를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146911"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524224"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>연습: 책갈피에 대 한 바로 가기 메뉴 만들기
   이 연습에서는 <xref:Microsoft.Office.Tools.Word.Bookmark> Word 용 문서 수준 사용자 지정에서 컨트롤에 대 한 바로 가기 메뉴를 만드는 방법을 보여 줍니다. 사용자가 책갈피의 텍스트를 마우스 오른쪽 단추로 클릭 하면 바로 가기 메뉴가 나타나고 텍스트 서식을 지정 하는 데 사용할 수 있는 사용자 옵션이 제공 됩니다.
@@ -51,9 +53,9 @@ ms.locfileid: "91146911"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-- 이름 **내 책갈피 바로 가기 메뉴**를 포함 하는 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+- 이름 **내 책갈피 바로 가기 메뉴** 를 포함 하는 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio에서 디자이너에 새 Word 문서가 열리고 **책갈피 바로 가기 메뉴** 프로젝트가 **솔루션 탐색기**에 추가 됩니다.
+     Visual Studio에서 디자이너에 새 Word 문서가 열리고 **책갈피 바로 가기 메뉴** 프로젝트가 **솔루션 탐색기** 에 추가 됩니다.
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> 문서에 텍스트 및 책갈피 추가
  문서에 텍스트를 추가 하 고 두 개의 겹치는 책갈피를 추가 합니다.
@@ -66,11 +68,11 @@ ms.locfileid: "91146911"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>문서에 책갈피 컨트롤을 추가 하려면
 
-1. **도구 상자**의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. **도구 상자** 의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
     **책갈피 컨트롤 추가** 대화 상자가 나타납니다.
 
-2. "텍스트를 마우스 오른쪽 단추로 클릭 하면 바로 가기 메뉴 만들기" 라는 단어를 선택한 다음 **확인**을 클릭 합니다.
+2. "텍스트를 마우스 오른쪽 단추로 클릭 하면 바로 가기 메뉴 만들기" 라는 단어를 선택한 다음 **확인** 을 클릭 합니다.
 
     `bookmark1` 이 문서에 추가 됩니다.
 
@@ -90,9 +92,9 @@ ms.locfileid: "91146911"
 
 1. **리본 XML** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)을 참조 하세요.
 
-2. **솔루션 탐색기**에서 **ThisDocument.cs** 또는 **ThisDocument**를 선택 합니다.
+2. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 선택 합니다.
 
-3. 메뉴 모음에서 코드 **보기**를 선택  >  **Code**합니다.
+3. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
      **ThisDocument** 클래스 파일이 코드 편집기에서 열립니다.
 
@@ -101,9 +103,9 @@ ms.locfileid: "91146911"
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. **솔루션 탐색기**에서 리본 XML 파일을 선택합니다. 기본적으로 리본 XML 파일의 이름은 Ribbon1.xml입니다.
+5. **솔루션 탐색기** 에서 리본 XML 파일을 선택합니다. 기본적으로 리본 XML 파일의 이름은 Ribbon1.xml입니다.
 
-6. 메뉴 모음에서 코드 **보기**를 선택  >  **Code**합니다.
+6. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
      코드 편집기에서 리본 xml 파일이 열립니다.
 
@@ -125,16 +127,16 @@ ms.locfileid: "91146911"
 
      이 코드는 문서를 마우스 오른쪽 단추로 클릭할 때 나타나는 바로 가기 메뉴에 두 개의 단추를 추가 합니다.
 
-8. **솔루션 탐색기**에서를 마우스 오른쪽 단추로 클릭 한 `ThisDocument` 다음 **코드 보기**를 클릭 합니다.
+8. **솔루션 탐색기** 에서를 마우스 오른쪽 단추로 클릭 한 `ThisDocument` 다음 **코드 보기** 를 클릭 합니다.
 
 9. 클래스 수준에서 다음 변수 및 책갈피 변수를 선언 합니다.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. **솔루션 탐색기**에서 리본 코드 파일을 선택 합니다. 기본적으로 리본 코드 파일의 이름은 **Ribbon1.cs** 또는 **ribbon1.xml**입니다.
+10. **솔루션 탐색기** 에서 리본 코드 파일을 선택 합니다. 기본적으로 리본 코드 파일의 이름은 **Ribbon1.cs** 또는 **ribbon1.xml** 입니다.
 
-11. 메뉴 모음에서 코드 **보기**를 선택  >  **Code**합니다.
+11. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
      코드 편집기에서 리본 코드 파일이 열립니다.
 
@@ -152,9 +154,9 @@ ms.locfileid: "91146911"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **솔루션 탐색기** **ThisDocument.cs** 또는 **ThisDocument**를 선택 합니다.
+2. **솔루션 탐색기** **ThisDocument.cs** 또는 **ThisDocument** 를 선택 합니다.
 
-3. 메뉴 모음에서 코드 **보기**를 선택  >  **Code**합니다.
+3. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
      **ThisDocument** 클래스 파일이 코드 편집기에서 열립니다.
 
@@ -177,11 +179,11 @@ ms.locfileid: "91146911"
 
 1. **F5** 키를 눌러 프로젝트를 실행 합니다.
 
-2. 첫 번째 책갈피를 마우스 오른쪽 단추로 클릭 한 다음 **굵게**를 클릭 합니다.
+2. 첫 번째 책갈피를 마우스 오른쪽 단추로 클릭 한 다음 **굵게** 를 클릭 합니다.
 
 3. 의 모든 텍스트 `bookmark1` 형식이 굵게 설정 되어 있는지 확인 합니다.
 
-4. 책갈피가 겹치는 텍스트를 마우스 오른쪽 단추로 클릭 한 다음 **기울임꼴**을 클릭 합니다.
+4. 책갈피가 겹치는 텍스트를 마우스 오른쪽 단추로 클릭 한 다음 **기울임꼴** 을 클릭 합니다.
 
 5. 의 모든 텍스트가 기울임꼴 인지 확인 하 `bookmark2` 고 해당 부분의 텍스트 부분만 `bookmark1` `bookmark2` 기울임꼴입니다.
 

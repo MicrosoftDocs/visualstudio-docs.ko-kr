@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색'
+description: Visual Studio를 사용 하 여 Microsoft Excel 워크시트 범위에서 프로그래밍 방식으로 텍스트를 검색 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584757"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524556"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>방법: 프로그래밍 방식으로 워크시트 범위에서 텍스트 검색
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>개체의 메서드를 <xref:Microsoft.Office.Interop.Excel.Range> 사용 하 여 범위 내에서 텍스트를 검색할 수 있습니다. 이 텍스트는 또는와 같은 워크시트 셀에 나타날 수 있는 오류 문자열 일 수도 있습니다 `#NULL!` `#VALUE!` . 오류 문자열에 대 한 자세한 내용은 [셀 오류 값](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)을 참조 하세요.
@@ -49,7 +51,7 @@ ms.locfileid: "91584757"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. 첫 번째 찾은 범위 ( `firstFind` )를 **Nothing**과 비교 합니다. `firstFind`에 값이 없으면 코드는 찾은 범위 ()를 저장 합니다 `currentFind` .
+4. 첫 번째 찾은 범위 ( `firstFind` )를 **Nothing** 과 비교 합니다. `firstFind`에 값이 없으면 코드는 찾은 범위 ()를 저장 합니다 `currentFind` .
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]

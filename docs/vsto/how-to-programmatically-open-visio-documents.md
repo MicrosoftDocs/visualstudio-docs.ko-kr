@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Visio 문서 열기'
+description: Visual Studio를 사용 하 여 Open 또는 Microsoft.office.interop.visio.documents.openex 메서드를 사용 하 여 프로그래밍 방식으로 Visio 문서를 여는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523839"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 열기
   기존 Microsoft Office Visio 문서를 여는 방법에는 Open 및 Microsoft.office.interop.visio.documents.openex와 같은 두 가지 방법이 있습니다. Microsoft.office.interop.visio.documents.openex 메서드는 호출자가 문서를 여는 방법을 지정할 수 있는 인수를 제공 한다는 점을 제외 하 고는 Open 메서드와 동일 합니다.
@@ -48,7 +50,7 @@ ms.locfileid: "85519992"
 
 - 이라는 Visio 문서는 `myDrawing.vsd` `Test` *내 문서* 폴더 (windows XP 및 이전 버전의 경우) 또는 *Documents* 폴더 (windows Vista의 경우)에서 이름이 지정 된 디렉터리에 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 새 Visio 문서 만들기](../vsto/how-to-programmatically-create-new-visio-documents.md)

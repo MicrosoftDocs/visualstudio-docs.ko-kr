@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 배포 문제 해결
+description: Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결할 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806735"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522975"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.
@@ -69,11 +71,11 @@ ms.locfileid: "90806735"
 
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>캐시된 복사본을 로드하지 않고 어셈블리를 다운로드하려면
 
-1. 메뉴 모음에서 **프로젝트**, _ProjectName_**속성**을 참조하세요.
+1. 메뉴 모음에서 **프로젝트**, _ProjectName_**속성** 을 참조하세요.
 
-2. **애플리케이션** 페이지에서 **어셈블리 정보**를 선택합니다.
+2. **애플리케이션** 페이지에서 **어셈블리 정보** 를 선택합니다.
 
-3. **어셈블리 버전**의 수정 번호 세 번째 필드를 와일드 카드 ()로 설정 \* 합니다. 예를 들면 "1.0. *"입니다.  그런 다음 **확인** 단추를 선택 합니다.
+3. **어셈블리 버전** 의 수정 번호 세 번째 필드를 와일드 카드 ()로 설정 \* 합니다. 예를 들면 "1.0. *"입니다.  그런 다음 **확인** 단추를 선택 합니다.
 
    어셈블리 버전을 변경하면 강력한 이름으로 어셈블리에 서명할 수 있고 Fusion에서 최신 버전의 사용자 지정을 로드합니다.
 
@@ -123,9 +125,9 @@ ms.locfileid: "90806735"
 
  IIS 7에서 MIME 형식을 정의 하는 방법에 대 한 자세한 내용은 [Mime 형식 추가 (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10))를 참조 하세요.
 
- 확장명을 **.vsto** 로 설정하고 MIME 형식을 **application/x-ms-vsto**로 설정합니다.
+ 확장명을 **.vsto** 로 설정하고 MIME 형식을 **application/x-ms-vsto** 로 설정합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

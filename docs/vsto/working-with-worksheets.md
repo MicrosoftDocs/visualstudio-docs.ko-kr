@@ -1,5 +1,7 @@
 ---
 title: 워크시트 작업
+description: 워크시트와 워크시트 클래스에 워크시트를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성을 포함 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814592"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522537"
 ---
 # <a name="work-with-worksheets"></a>워크시트 작업
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 및 <xref:Microsoft.Office.Interop.Excel.Worksheet> 클래스에는 워크시트가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |통합 문서에 새 워크시트를 추가합니다.|[방법: 프로그래밍 방식으로 통합 문서에 새 워크시트 추가](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|
 |통합 문서의 지정된 위치에 워크시트의 복사본을 만듭니다.|[방법: 프로그래밍 방식으로 워크시트 복사](../vsto/how-to-programmatically-copy-worksheets.md)|
@@ -47,7 +49,7 @@ ms.locfileid: "62814592"
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [범위 작업](../vsto/working-with-ranges.md)

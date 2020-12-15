@@ -1,5 +1,7 @@
 ---
 title: SetWefProcessId 메서드
+description: SetWefProcessId 메서드가 WEF (웹 확장 프레임 워크) 콘텐츠를 실행 하는 프로세스 식별자를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537334"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524322"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 메서드
   WEF (웹 확장 프레임 워크) 콘텐츠를 실행 하는 프로세스 식별자를 제공 합니다.
@@ -30,7 +32,7 @@ HRESULT SetWefProcessId(
 
 #### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*dwProcessId*|WEF 콘텐츠를 실행 하는 데 사용 되는 프로세스 식별자입니다.|
 

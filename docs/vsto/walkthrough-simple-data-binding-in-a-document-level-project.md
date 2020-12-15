@@ -1,5 +1,7 @@
 ---
 title: '연습: 문서 수준 프로젝트의 단순 데이터 바인딩'
+description: 문서 수준 프로젝트의 데이터 바인딩에 대 한 기본 사항을 알아보고 SQL Server 데이터베이스의 단일 데이터 필드를 Microsoft Excel의 명명 된 범위에 바인딩하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584926"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524104"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 단순 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트의 데이터 바인딩에 대 한 기본 사항을 보여 줍니다. SQL Server 데이터베이스의 단일 데이터 필드는 Microsoft Office Excel에서 명명 된 범위에 바인딩됩니다. 또한이 연습에서는 테이블의 모든 레코드를 스크롤할 수 있도록 하는 컨트롤을 추가 하는 방법을 보여 줍니다.
@@ -55,37 +57,37 @@ ms.locfileid: "91584926"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. Visual Basic 또는 c #을 사용 하 여 **내 단순 데이터 바인딩**이름으로 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. Visual Basic 또는 c #을 사용 하 여 **내 단순 데이터 바인딩** 이름으로 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-   Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **단순 데이터 바인딩** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
+   Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **단순 데이터 바인딩** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
 ## <a name="create-the-data-source"></a>데이터 원본 만들기
  **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
 
-1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서   >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 표시 합니다.
 
-2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
+2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사** 를 시작합니다.
 
-3. **데이터베이스** 를 선택 하 고 **다음**을 클릭 합니다.
+3. **데이터베이스** 를 선택 하 고 **다음** 을 클릭 합니다.
 
 4. Northwind 샘플 SQL Server 데이터베이스에 대 한 데이터 연결을 선택 하거나 **새 연결** 단추를 사용 하 여 새 연결을 추가 합니다.
 
-5. 연결을 선택 하거나 만든 후 **다음**을 클릭 합니다.
+5. 연결을 선택 하거나 만든 후 **다음** 을 클릭 합니다.
 
-6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음**을 클릭 합니다.
+6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음** 을 클릭 합니다.
 
 7. **데이터베이스 개체** 창에서 **테이블** 노드를 확장 합니다.
 
 8. **Customers** 테이블 옆의 확인란을 선택 합니다.
 
-9. **Finish**를 클릭합니다.
+9. **Finish** 를 클릭합니다.
 
-   마법사가 **데이터 소스** 창에 **Customers** 테이블을 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
+   마법사가 **데이터 소스** 창에 **Customers** 테이블을 추가 합니다. 또한 **솔루션 탐색기** 에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
 ## <a name="add-controls-to-the-worksheet"></a>워크시트에 컨트롤 추가
- 이 연습에서는 두 개의 명명 된 범위와 4 개의 단추가 첫 번째 워크시트에 필요 합니다. 먼저 **데이터 소스 창에서** 두 개의 명명 된 범위를 추가 하 여 데이터 원본에 자동으로 바인딩합니다. 그런 다음 **도구 상자**에서 단추를 추가 합니다.
+ 이 연습에서는 두 개의 명명 된 범위와 4 개의 단추가 첫 번째 워크시트에 필요 합니다. 먼저 **데이터 소스 창에서** 두 개의 명명 된 범위를 추가 하 여 데이터 원본에 자동으로 바인딩합니다. 그런 다음 **도구 상자** 에서 단추를 추가 합니다.
 
 ### <a name="to-add-two-named-ranges"></a>두 개의 명명 된 범위를 추가 하려면
 
@@ -95,19 +97,19 @@ ms.locfileid: "91584926"
 
 3. **CompanyName** 열을 선택 하 고 표시 되는 드롭다운 화살표를 클릭 합니다.
 
-4. 드롭다운 목록에서 **NamedRange** 를 선택 하 고 **CompanyName** 열을 **A1**셀로 끕니다.
+4. 드롭다운 목록에서 **NamedRange** 를 선택 하 고 **CompanyName** 열을 **A1** 셀로 끕니다.
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 컨트롤이 `companyNameNamedRange` **A1**셀에 만들어집니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `customersBindingSource` , 테이블 어댑터 및 <xref:System.Data.DataSet> 인스턴스가 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
+     <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 컨트롤이 `companyNameNamedRange` **A1** 셀에 만들어집니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `customersBindingSource` , 테이블 어댑터 및 <xref:System.Data.DataSet> 인스턴스가 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
 
 5. **데이터 소스** 창에서 **CustomerID** 열을 선택 하 고 표시 되는 드롭다운 화살표를 클릭 합니다.
 
-6. 드롭다운 목록에서 **NamedRange** 를 클릭 한 다음 **CustomerID** 열을 셀 **B1**로 끕니다.
+6. 드롭다운 목록에서 **NamedRange** 를 클릭 한 다음 **CustomerID** 열을 셀 **B1** 로 끕니다.
 
-7. <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 다른 컨트롤 `customerIDNamedRange` 은 **B1**셀에 만들어지고에 바인딩됩니다 <xref:System.Windows.Forms.BindingSource> .
+7. <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 다른 컨트롤 `customerIDNamedRange` 은 **B1** 셀에 만들어지고에 바인딩됩니다 <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>단추 4 개를 추가 하려면
 
-1. **도구 상자**의 **공용 컨트롤** 탭에서 <xref:System.Windows.Forms.Button> 워크시트의 **A3** 셀에 컨트롤을 추가 합니다.
+1. **도구 상자** 의 **공용 컨트롤** 탭에서 <xref:System.Windows.Forms.Button> 워크시트의 **A3** 셀에 컨트롤을 추가 합니다.
 
     이 단추의 이름은 `Button1` 입니다.
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584926"
 
 ### <a name="to-initialize-the-controls"></a>컨트롤을 초기화 하려면
 
-1. **솔루션 탐색기**에서 **Sheet1** 또는 **Sheet1.cs**를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 메서드에 다음 코드를 추가 `Sheet1_Startup` 하 여 각 단추에 대 한 텍스트를 설정 합니다.
 
@@ -177,9 +179,9 @@ ms.locfileid: "91584926"
 
 1. **F5** 키를 눌러 프로젝트를 실행 합니다.
 
-2. 첫 번째 레코드가 **A1** 및 **B1**셀에 표시 되는지 확인 합니다.
+2. 첫 번째 레코드가 **A1** 및 **B1** 셀에 표시 되는지 확인 합니다.
 
-3. **>**( `Button3` ) 단추를 클릭 하 고 다음 레코드가 **A1** 및 **B1**셀에 표시 되는지 확인 합니다.
+3. **>**( `Button3` ) 단추를 클릭 하 고 다음 레코드가 **A1** 및 **B1** 셀에 표시 되는지 확인 합니다.
 
 4. 다른 스크롤 단추를 클릭 하 여 레코드가 예상 대로 변경 되는지 확인 합니다.
 

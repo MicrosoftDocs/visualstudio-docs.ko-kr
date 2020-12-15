@@ -1,5 +1,7 @@
 ---
 title: 연락처 항목 작업
+description: ContactItem 클래스에는 연락처를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008640"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524783"
 ---
 # <a name="work-with-contact-items"></a>연락처 항목 작업
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 클래스에는 연락처가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |지정한 문자열을 포함하는 성을 가진 모든 연락처를 검색합니다.|[방법: 프로그래밍 방식으로 Outlook 연락처 액세스](../vsto/how-to-programmatically-access-outlook-contacts.md)|
 |이름과 성으로 연락처를 검색합니다.|[방법: 프로그래밍 방식으로 특정 연락처 검색](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|
@@ -35,7 +37,7 @@ ms.locfileid: "63008640"
 
  Outlook 작업 및 Outlook 개체 모델에 대 한 자세한 내용은 [outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [메일 항목 작업](../vsto/working-with-mail-items.md)
 - [폴더 작업](../vsto/working-with-folders.md)
 - [일정 항목 작업](../vsto/working-with-calendar-items.md)

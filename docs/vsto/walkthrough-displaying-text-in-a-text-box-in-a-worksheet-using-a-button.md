@@ -1,5 +1,7 @@
 ---
 title: 단추를 사용 하 여 워크시트의 텍스트 상자에 텍스트 표시
+description: Microsoft Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 기본 사항에 대해 알아봅니다. 또한 Visual Studio에서 Office 개발 도구를 사용 하 여 Excel 프로젝트를 만듭니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328715"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522642"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>연습: 워크시트에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시
   이 연습에서는 Microsoft Office Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 방법 및 Visual Studio에서 Office 개발 도구를 사용 하 여 Excel 프로젝트를 만드는 방법에 대 한 기본 사항을 보여 줍니다. 결과를 완료 된 샘플로 보려면 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Excel 컨트롤 샘플을 참조 하세요.
@@ -45,14 +47,14 @@ ms.locfileid: "67328715"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  이 단계에서는 Visual Studio를 사용 하 여 Excel 통합 문서 프로젝트를 만듭니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. 이름 **내 Excel 단추**를 사용 하 여 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름 **내 Excel 단추** 를 사용 하 여 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **내 Excel 단추** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
+     Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **내 Excel 단추** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
 ## <a name="add-controls-to-the-worksheet"></a>워크시트에 컨트롤 추가
  이 연습에서는 첫 번째 워크시트에 단추와 텍스트 상자가 필요 합니다.
@@ -63,9 +65,9 @@ ms.locfileid: "67328715"
 
 2. 도구 상자의 **공용 컨트롤** 탭에서를로 끌어 옵니다 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> `Sheet1` .
 
-3. **보기** 메뉴에서 **속성 창**을 선택 합니다.
+3. **보기** 메뉴에서 **속성 창** 을 선택 합니다.
 
-4. **TextBox1** 이 **속성** 창 드롭다운 상자에 표시 되는지, 텍스트 상자의 **Name** 속성을 **인 displaytext**로 변경 해야 합니다.
+4. **TextBox1** 이 **속성** 창 드롭다운 상자에 표시 되는지, 텍스트 상자의 **Name** 속성을 **인 displaytext** 로 변경 해야 합니다.
 
 5. **Button** 컨트롤을로 끌어 오고 `Sheet1` 다음 속성을 변경 합니다.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328715"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자에 쓰려면
 
-1. **솔루션 탐색기**에서 **Sheet1**을 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **Sheet1** 을 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 단추의 이벤트 처리기에 다음 코드를 추가 합니다 <xref:System.Windows.Forms.Control.Click> .
 
@@ -110,7 +112,7 @@ ms.locfileid: "67328715"
 
 - 확인란을 사용 하 여 서식 변경 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)
 - [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: '연습: 작업 창에서 문서에 텍스트 삽입'
+description: Microsoft Word 문서에서 작업 창을 만듭니다. 작업 창에는 입력을 수집 하 고 텍스트를 문서에 보내는 두 개의 컨트롤이 포함 되어 있음을 알 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584965"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524165"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업 창에서 문서에 텍스트 삽입
   이 연습에서는 Microsoft Office Word 문서에서 작업 창을 만드는 방법을 보여 줍니다. 작업 창에는 입력을 수집한 다음 텍스트를 문서에 보내는 두 개의 컨트롤이 포함 되어 있습니다.
@@ -49,9 +51,9 @@ ms.locfileid: "91584965"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. **내 기본 작업 창**이라는 이름으로 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. **내 기본 작업 창** 이라는 이름으로 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio가 디자이너에서 새 Word 문서를 열고 **솔루션 탐색기**에 **내 기본 작업 창** 프로젝트를 추가 합니다.
+     Visual Studio가 디자이너에서 새 Word 문서를 열고 **솔루션 탐색기** 에 **내 기본 작업 창** 프로젝트를 추가 합니다.
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a>문서에 텍스트 및 책갈피 추가
  작업 창이 문서에서 책갈피에 텍스트를 보냅니다. 문서를 디자인 하려면 일부 텍스트를 입력 하 여 기본 양식을 만듭니다.
@@ -72,41 +74,41 @@ ms.locfileid: "91584965"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>문서에 책갈피 컨트롤을 추가 하려면
 
-1. **도구 상자**의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. **도구 상자** 의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
      **책갈피 컨트롤 추가** 대화 상자가 나타납니다.
 
-2. 단락 표시를 선택 하지 않고 단어 **이름을**선택 하 고 **확인**을 클릭 합니다.
+2. 단락 표시를 선택 하지 않고 단어 **이름을** 선택 하 고 **확인** 을 클릭 합니다.
 
     > [!NOTE]
-    > 단락 표시는 책갈피의 외부에 있어야 합니다. 문서에 단락 표시가 표시 되지 않는 경우 **도구** 메뉴를 클릭 하 **Microsoft Office Word 도구** 를 가리킨 다음 **옵션**을 클릭 합니다. **보기** 탭을 클릭 하 고 **옵션** 대화 상자의 **서식 표시** 섹션에서 **단락 표시** 확인란을 선택 합니다.
+    > 단락 표시는 책갈피의 외부에 있어야 합니다. 문서에 단락 표시가 표시 되지 않는 경우 **도구** 메뉴를 클릭 하 **Microsoft Office Word 도구** 를 가리킨 다음 **옵션** 을 클릭 합니다. **보기** 탭을 클릭 하 고 **옵션** 대화 상자의 **서식 표시** 섹션에서 **단락 표시** 확인란을 선택 합니다.
 
-3. **속성** 창에서 **않고 책갈피 2** 의 **Name** 속성을 **showname**으로 변경 합니다.
+3. **속성** 창에서 **않고 책갈피 2** 의 **Name** 속성을 **showname** 으로 변경 합니다.
 
-4. 단락 표시를 선택 하지 않고 **주소**를 선택 합니다.
+4. 단락 표시를 선택 하지 않고 **주소** 를 선택 합니다.
 
-5. 리본의 **삽입** 탭에 있는 **링크** 그룹에서 **책갈피**를 클릭 합니다.
+5. 리본의 **삽입** 탭에 있는 **링크** 그룹에서 **책갈피** 를 클릭 합니다.
 
-6. **책갈피** 대화 상자에서 **책갈피 이름** 상자에 **showaddress** 를 입력 하 고 **추가**를 클릭 합니다.
+6. **책갈피** 대화 상자에서 **책갈피 이름** 상자에 **showaddress** 를 입력 하 고 **추가** 를 클릭 합니다.
 
 ## <a name="add-controls-to-the-actions-pane"></a>작업 창에 컨트롤 추가
  작업 창 인터페이스를 디자인 하려면 프로젝트에 작업 창 컨트롤을 추가한 다음 작업 창 컨트롤에 Windows Forms 컨트롤을 추가 합니다.
 
 ### <a name="to-add-an-actions-pane-control"></a>작업 창 컨트롤을 추가 하려면
 
-1. **솔루션 탐색기**에서 **내 기본 작업 창** 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 **내 기본 작업 창** 프로젝트를 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤**을 클릭 하 고 컨트롤의 이름을 **InsertTextControl으로** 선택한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤** 을 클릭 하 고 컨트롤의 이름을 **InsertTextControl으로** 선택한 다음 **추가** 를 클릭 합니다.
 
 #### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>작업 창 컨트롤에 Windows Form 컨트롤을 추가 하려면
 
-1. 작업 창 컨트롤이 디자이너에 표시 되지 않는 경우 **InsertTextControl**를 두 번 클릭 합니다.
+1. 작업 창 컨트롤이 디자이너에 표시 되지 않는 경우 **InsertTextControl** 를 두 번 클릭 합니다.
 
-2. **도구 상자**의 **공용 컨트롤** 탭에서 **Label** 컨트롤을 작업 창 컨트롤로 끌어 옵니다.
+2. **도구 상자** 의 **공용 컨트롤** 탭에서 **Label** 컨트롤을 작업 창 컨트롤로 끌어 옵니다.
 
-3. 레이블 컨트롤의 **Text** 속성을 **Name**으로 변경 합니다.
+3. 레이블 컨트롤의 **Text** 속성을 **Name** 으로 변경 합니다.
 
 4. 작업 창 컨트롤에 **Textbox** 컨트롤을 추가 하 고 다음 속성을 변경 합니다.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584965"
     |**이름**|**getName**|
     |**크기**|**130, 20**|
 
-5. 작업 창 컨트롤에 두 번째 **Label** 컨트롤을 추가 하 고 **Text** 속성을 **Address**로 변경 합니다.
+5. 작업 창 컨트롤에 두 번째 **Label** 컨트롤을 추가 하 고 **Text** 속성을 **Address** 로 변경 합니다.
 
 6. 작업 창 컨트롤에 두 번째 **Textbox** 컨트롤을 추가 하 고 다음 속성을 변경 합니다.
 
@@ -171,7 +173,7 @@ ms.locfileid: "91584965"
 
 2. 작업 창이 표시 되는지 확인 합니다.
 
-3. 작업 창의 텍스트 상자에 이름과 주소를 입력 하 고 **삽입**을 클릭 합니다.
+3. 작업 창의 텍스트 상자에 이름과 주소를 입력 하 고 **삽입** 을 클릭 합니다.
 
 ## <a name="next-steps"></a>다음 단계
  다음으로 수행할 수 있는 몇 가지 작업은 다음과 같습니다.
