@@ -1,5 +1,7 @@
 ---
 title: 웹 사이트 지원 템플릿 | Microsoft Docs
+description: 웹 사이트 지원 템플릿에 대해 알아봅니다. Visual Studio 웹 사이트 프로젝트 및 항목 템플릿은 재사용 가능 하 고 사용자 지정할 수 있는 웹 사이트 프로젝트 및 항목 스텁을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703460"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487857"
 ---
 # <a name="web-site-support-templates"></a>웹 사이트 지원 템플릿
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트 및 항목 템플릿은 새 웹 사이트 프로젝트 및 항목을 처음부터 새로 만들 필요가 없도록 하 여 개발 프로세스를 가속화 하는 재사용 가능 하 고 사용자 지정 가능한 웹 사이트 프로젝트 및 항목 스텁을 제공 합니다. 템플릿에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [프로젝트 템플릿 및 항목 템플릿 만들기](../../ide/creating-project-and-item-templates.md)를 참조 하세요.
@@ -40,7 +42,7 @@ ms.locfileid: "80703460"
 - 웹 서비스 프로젝트
 
 ### <a name="empty-web-site-projects"></a>빈 웹 사이트 프로젝트
- 이러한 파일은 **빈 웹** 사이트 명령에 대 한 응답으로 빈 웹 사이트를 새로 만듭니다 .이 명령은 **파일**  >  **새로 만들기 웹 사이트**를 선택한 후에 사용할 수 있습니다.
+ 이러한 파일은 **빈 웹** 사이트 명령에 대 한 응답으로 빈 웹 사이트를 새로 만듭니다 .이 명령은 **파일**  >  **새로 만들기 웹 사이트** 를 선택한 후에 사용할 수 있습니다.
 
 - EmptyWeb
 
@@ -51,7 +53,7 @@ ms.locfileid: "80703460"
      이 파일은 프로젝트 템플릿 시스템의 아티팩트입니다. EmptyWeb 파일의 프로젝트 파일 참조를 충족 합니다.
 
 ### <a name="web-site-projects"></a>웹 사이트 프로젝트
- 이러한 파일은 **ASP.NET 웹 사이트** 명령에 대 한 응답으로 새 웹 사이트를 만듭니다 .이 명령에는 **파일**  >  **새로 만들기 웹 사이트**를 선택한 후 사용할 수 있습니다.
+ 이러한 파일은 **ASP.NET 웹 사이트** 명령에 대 한 응답으로 새 웹 사이트를 만듭니다 .이 명령에는 **파일**  >  **새로 만들기 웹 사이트** 를 선택한 후 사용할 수 있습니다.
 
 - Default.aspx
 
@@ -74,7 +76,7 @@ ms.locfileid: "80703460"
      이 파일은 프로젝트 템플릿 시스템의 아티팩트입니다. WebApplication .vstemplate 파일의 프로젝트 파일 참조를 충족 합니다.
 
 ### <a name="web-service-projects"></a>웹 서비스 프로젝트
- 이러한 파일은 **파일**새로 만들기 웹 사이트를 선택한 후 사용할 수 있는 **ASP.NET 웹 서비스** 명령에 응답 하 여 새 웹 사이트를 만듭니다  >  **New Web Site**.
+ 이러한 파일은 **파일** 새로 만들기 웹 사이트를 선택한 후 사용할 수 있는 **ASP.NET 웹 서비스** 명령에 응답 하 여 새 웹 사이트를 만듭니다  >  .
 
 - Service .asmx
 
@@ -135,9 +137,9 @@ ms.locfileid: "80703460"
 ### <a name="new-webform"></a>새 WebForm
  이 템플릿은 **새 Web Form 추가** 명령에 대 한 응답으로 새 스마트 웹 페이지를 만듭니다.
 
- 종속 된 코드 숨김 소스 파일을 만들려면 **별도의 파일에 코드 삽입**을 선택 합니다. 그렇지 않으면 빈 스크립팅 블록을 포함 하는 단일 웹 페이지가 만들어지고 \<% Page %> 종속 파일을 후크 하는 지시문이 없습니다.
+ 종속 된 코드 숨김 소스 파일을 만들려면 **별도의 파일에 코드 삽입** 을 선택 합니다. 그렇지 않으면 빈 스크립팅 블록을 포함 하는 단일 웹 페이지가 만들어지고 \<% Page %> 종속 파일을 후크 하는 지시문이 없습니다.
 
- 선택한 마스터 페이지에 대 한 콘텐츠 페이지를 만들려면 **마스터 페이지 선택**을 선택 합니다.
+ 선택한 마스터 페이지에 대 한 콘텐츠 페이지를 만들려면 **마스터 페이지 선택** 을 선택 합니다.
 
 - WebForm
 
@@ -166,7 +168,7 @@ ms.locfileid: "80703460"
 ### <a name="new-master-page"></a>새 마스터 페이지
  이 템플릿은 **새 마스터 페이지 추가** 명령에 대 한 응답으로 새 마스터 페이지를 만듭니다.
 
- 종속 된 코드 숨김 소스 파일을 만들려면 **별도의 파일에 코드 삽입**을 선택 합니다. 그렇지 않으면 빈 스크립팅 블록을 포함 하는 단일 웹 페이지가 만들어지고 \<% Page %> 종속 파일을 후크 하는 지시문이 없습니다.
+ 종속 된 코드 숨김 소스 파일을 만들려면 **별도의 파일에 코드 삽입** 을 선택 합니다. 그렇지 않으면 빈 스크립팅 블록을 포함 하는 단일 웹 페이지가 만들어지고 \<% Page %> 종속 파일을 후크 하는 지시문이 없습니다.
 
 - MasterPage 마스터
 
@@ -184,5 +186,5 @@ ms.locfileid: "80703460"
 
      새 마스터 페이지의 내용과 종속 파일 (있는 경우)을 결정 하는 템플릿 파일입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [웹 사이트 지원](../../extensibility/internals/web-site-support.md)

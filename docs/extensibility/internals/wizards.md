@@ -1,5 +1,7 @@
 ---
 title: 마법사 | Microsoft Docs
+description: Visual Studio에서 사용 가능한 마법사 및 템플릿과 마법사가 IDE에서 충족 해야 하는 요구 사항에 대해 마법사를 나열 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703206"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487753"
 ---
 # <a name="wizards"></a>마법사
-마법사를 만든 후에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 다른 사용자가 사용할 수 있도록 일반적으로 IDE (통합 개발 환경)에 추가 하려고 합니다. 그러면 추가 된 마법사가 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자에 나타납니다. **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자를 표시 하려면 **솔루션 탐색기**에서 열려 있는 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **새 프로젝트** 또는 **새 항목**을 클릭 합니다.
+마법사를 만든 후에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 다른 사용자가 사용할 수 있도록 일반적으로 IDE (통합 개발 환경)에 추가 하려고 합니다. 그러면 추가 된 마법사가 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자에 나타납니다. **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자를 표시 하려면 **솔루션 탐색기** 에서 열려 있는 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **새 프로젝트** 또는 **새 항목** 을 클릭 합니다.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]사용자가 **새 프로젝트 추가** 대화 상자 또는 **새 항목 추가** 대화 상자를 열거나 **솔루션 탐색기**항목을 마우스 오른쪽 단추로 클릭할 때 사용 가능한 값의 트리 뷰에서 선택할 수 있도록에서 마법사를 구현할 수 있습니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]사용자가 **새 프로젝트 추가** 대화 상자 또는 **새 항목 추가** 대화 상자를 열거나 **솔루션 탐색기** 항목을 마우스 오른쪽 단추로 클릭할 때 사용 가능한 값의 트리 뷰에서 선택할 수 있도록에서 마법사를 구현할 수 있습니다.
 
  마법사에서 새 프로젝트 또는 유틸리티의 이름을 지역화 하는 옵션을 제공 하 고 사용자가 마법사를 선택할 때 표시 되는 아이콘을 확인할 수 있습니다. 또한 다른 사용 가능한 항목을 기준으로 새 항목이 표시 되는 순서를 제어할 수 있습니다. 항목을 사전순으로 구성할 필요가 없습니다.
 
@@ -49,7 +51,7 @@ ms.locfileid: "80703206"
 
  사용자 지정 매개 변수를 사용 하 여 마법사가 시작 된 후의 마법사 작업을 제어 하는 방법을 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [프로젝트 형식](../../extensibility/internals/project-types.md):
 
  새 프로젝트 형식을 디자인 하는 방법에 대 한 정보를 제공 하는 추가 항목에 대 한 링크를 제공 합니다.

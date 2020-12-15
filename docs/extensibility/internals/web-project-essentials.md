@@ -1,5 +1,7 @@
 ---
 title: 웹 프로젝트 Essentials | Microsoft Docs
+description: Visual Studio에서 웹 프로젝트의 작동 방식에 대 한 내부 세부 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e33248ca264fefa79a8d5d5fa5d0cfa3d2da1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703544"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487922"
 ---
 # <a name="web-project-essentials"></a>웹 프로젝트 필수 항목
 웹 프로젝트는 웹 응용 프로그램을 만듭니다. 웹 프로젝트를 사용 하 여 스마트 웹 페이지를 포함 하는 웹 응용 프로그램을 만들 수 있습니다. 스마트 웹 페이지에는 요청 시 웹 페이지를 렌더링 하는 서버측 코드가 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "80703544"
 
   - WAP (웹 응용 프로그램 프로젝트)는/App_Code 폴더의 모든 소스 파일 뿐만 아니라 모든 스마트 웹 페이지에 대 한 코드를 결합 하는 단일 실행 파일을 생성 합니다.
 
-- 웹 프로젝트에 대 한 솔루션 파일은 웹 사이트 자체와 별도로 배치 됩니다. 기본적으로 솔루션 파일은 \Documents 및 설정의 \\ *계정*\My Documents \\ *\<Visual Studio ####>* \projects \\ *웹 사이트*에 있습니다.
+- 웹 프로젝트에 대 한 솔루션 파일은 웹 사이트 자체와 별도로 배치 됩니다. 기본적으로 솔루션 파일은 \Documents 및 설정의 \\ *계정*\My Documents \\ *\<Visual Studio ####>* \projects \\ *웹 사이트* 에 있습니다.
 
   > [!NOTE]
   > 솔루션 파일을 웹 사이트와 함께 유지 하려면 해당 파일을 이동 하 여 다시 엽니다.
@@ -57,5 +59,5 @@ ms.locfileid: "80703544"
 
   - 오류 표식 (빨강 물결 모양)은 항상 코드 편집기의 기본 버퍼에 만들어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [웹 프로젝트](../../extensibility/internals/web-projects.md)

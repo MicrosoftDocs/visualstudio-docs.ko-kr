@@ -1,5 +1,7 @@
 ---
 title: 고가 나 진한 유틸리티 | Microsoft Docs
+description: 이러한 문서에서는 RegPkg, CreatePkgDef, CreateExpInstance, Color 테마 도구 및 이미지 서비스 도구를 포함 하 여 고가와 함께 제공 되는 도구에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703738"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487909"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 유틸리티
 이 섹션의 항목에서는 고와 함께 제공 되는 도구에 대해 설명 합니다.
@@ -28,4 +30,4 @@ ms.locfileid: "80703738"
 - [색 테마 도구](../../extensibility/internals/color-theming-tools.md)
 - [이미지 서비스 도구](../../extensibility/internals/image-service-tools.md)
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원

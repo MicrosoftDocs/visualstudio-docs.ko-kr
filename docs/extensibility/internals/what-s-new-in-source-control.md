@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2015 SDK에서 제공 되는 소스 제어의 새로운 기능 | Microsoft Docs
+description: 소스 제어 Vspackage의 기능에 대해 알아보고 구현 단계 개요를 검토 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703403"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487818"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK에 대 한 소스 제어의 새로운 기능
 
@@ -45,7 +47,7 @@ VSPackage는 거의 모든 종류의 기능을 Visual Studio에 추가할 수 �
 
 6. 소스 제어 VSPackage는 인터페이스를 구현 하는 것과 같은 이벤트를 수신 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> 고, 인터페이스에 의해 구현 된 대로 TPD (Project Document) 이벤트를 추적 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 하 고 필요한 작업을 수행 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>

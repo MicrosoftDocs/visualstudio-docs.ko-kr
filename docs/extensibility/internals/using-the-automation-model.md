@@ -1,5 +1,7 @@
 ---
 title: Automation 모델 사용 | Microsoft Docs
+description: 자동화 모델에 연결 된 후 VSPackage의 속성 및 메서드를 가져오는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012492"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488169"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
 VSPackage를 automation에 연결한 후에는 <xref:EnvDTE.DTEClass.GetObject%2A> 개체에 대해 메서드를 호출 하 여 <xref:EnvDTE._DTE> 검색할 개체를 나타내는 문자열을 전달 하 여 속성 및 메서드를 가져올 수 있습니다.

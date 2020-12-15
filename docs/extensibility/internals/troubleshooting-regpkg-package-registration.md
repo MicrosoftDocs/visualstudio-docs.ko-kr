@@ -1,5 +1,7 @@
 ---
 title: RegPkg 패키지 등록 문제 해결 | Microsoft Docs
+description: 이 정보를 사용 하 여 Visual Studio에서 RegPkg 패키지 등록 문제를 해결할 수 있습니다. 패키지에 적합 한 버전의 RegPkg를 사용 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5266579ff235a0f6c4f3e555d79d5a00de2c194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eef67b86925bc38a317196bbf00860b75a6ee15c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234863"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487714"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 패키지 등록 문제 해결
 > [!NOTE]
@@ -36,6 +38,6 @@ ms.locfileid: "87234863"
 
    이전 버전의 RegPkg는 Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 빌드된 패키지를 등록할 수 있습니다. 그러나 해당 어셈블리의 이후 버전을 사용 하 여 작성 된 패키지는 등록할 수 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -1,5 +1,7 @@
 ---
 title: Windows Installer 기본 사항 | Microsoft Docs
+description: VSPackage 기능을 Windows Installer 구성 요소로 구성 하는 것을 포함 하 여 VSPackage을 설치 하는 데 사용 하는 Windows Installer에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703412"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487779"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 기본 사항
 Windows Installer은 사용자 컴퓨터에 응용 프로그램 또는 소프트웨어 제품을 설치 및 제거 하 고, 이러한 작업을 Windows Installer 구성 요소 (예를 들어 WICs 또는 구성 요소 라고도 함) 라는 단위로 수행 합니다. GUID는 설치의 기본 단위인 각 WIC를 식별 하 고 Windows Installer를 사용 하는 설치에 대 한 참조 수를 계산 합니다.
@@ -55,17 +57,17 @@ Windows Installer은 사용자 컴퓨터에 응용 프로그램 또는 소프트
 > [!NOTE]
 > Windows Installer 규칙의 적용은 .msi 파일의 유효성 검사를 실행 하는 경우에만 발생 합니다. 그럼에도 불구 하 고 이러한 규칙을 모범 사례에 cautioned 합니다. 자세한 내용은 [설치 데이터베이스 유효성](/windows/desktop/Msi/validating-an-installation-database) 검사 및 [패키지 유효성 검사](/windows/desktop/Msi/package-validation)를 참조 하세요.
 
-#### <a name="installer-enforced-rules"></a>설치 관리자 적용 규칙
+#### <a name="installer-enforced-rules"></a>Installer-Enforced 규칙
 
 - 지정 된 구성 요소의 모든 파일은 동일한 디렉터리에 설치 해야 합니다. 반대로 별도의 폴더에 설치 된 파일은 개별 구성 요소에 속해야 합니다.
 
 - 구성 요소별 키 경로는 하나만 있을 수 있습니다. 키 경로는 단순히 전체 구성 요소를 나타내는 파일 또는 레지스트리 키입니다.
 
-#### <a name="component-provider-responsibilities"></a>구성 요소-공급자 책임
+#### <a name="component-provider-responsibilities"></a>Component-Provider 책임
 
 - 이후 버전에서 별도로 제공할 수 있는 두 리소스는 별도의 구성 요소에 있어야 합니다. 리소스는 이러한 리소스를 별도로 제공 하지 않는 것이 확실 한 경우에만 동일한 구성 요소로 그룹화 해야 합니다. 실제로 모든 기본 리소스 (예: Dll)는 항상 별도의 WICs에 존재 하는 것이 좋습니다. 자세한 내용은 [설치 관리자 구성 요소 정의](/windows/desktop/Msi/defining-installer-components)를 참조 하세요.
 
 - 버전이 지정 된 리소스는 둘 이상의 WIC에서 제공 되어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [구성 요소 규칙이 중단 되 면 어떻게 되나요?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

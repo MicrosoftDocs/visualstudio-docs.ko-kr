@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식을 만들어야 하는 경우 | Microsoft Docs
+description: 사용자를 위해 Visual Studio를 사용자 지정 하기 위해 새 프로젝트 형식이 필요한 지 여부를 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012011"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487831"
 ---
 # <a name="when-to-create-project-types"></a>프로젝트 형식을 만들어야 하는 경우
 새 프로젝트 형식을 만들면 사용자를 사용자 지정 하기 위한 기초를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 그러나 모든 사용자 지정에는 새 프로젝트 형식을 만들 필요가 없습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 다음 지침은 시나리오에 새 프로젝트 형식이 필요한 지 여부를 확인 하는 데 도움이 됩니다.
@@ -27,7 +29,7 @@ ms.locfileid: "90012011"
 
 - 디버깅 지원을 제공 합니다.
 
-- **솔루션 탐색기**에 프로젝트 항목을 표시 합니다.
+- **솔루션 탐색기** 에 프로젝트 항목을 표시 합니다.
 
 - **프로젝트 열기** 또는 **새 프로젝트** 대화 상자를 사용 합니다.
 

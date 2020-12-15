@@ -1,5 +1,7 @@
 ---
 title: 웹 사이트 지원 특성 | Microsoft Docs
+description: 웹 사이트 프로젝트를 사용 하 여 Visual Studio의 기능을 확장 하는 데 필요한 웹 사이트 지원 특성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703491"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487870"
 ---
 # <a name="web-site-support-attributes"></a>웹 사이트 지원 특성
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트를 확장 하 여 웹 프로그래밍 언어에 대 한 지원을 제공할 수 있습니다. 언어는를 사용 하 여 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이렇게 하면 언어를 선택할 때 **새 웹 사이트** 대화 상자에 프로젝트 템플릿이 표시 될 수 있습니다.
@@ -33,7 +35,7 @@ public class PythonProjectPackage : ProjectPackage
  또한이 특성은 템플릿 폴더를 가리키도록 템플릿 경로를 설정 합니다. 템플릿 폴더의 위치에 대 한 자세한 내용은 [웹 사이트 지원 템플릿](../../extensibility/internals/web-site-support-templates.md)을 참조 하세요.
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- 이 특성은 언어 프로젝트에 배치 됩니다. 이를 통해 웹 사이트 프로젝트는 **솔루션 탐색기**의 다른 파일 형식 (기본) 아래에 하나의 파일 형식 (관련)을 중첩할 수 있습니다.
+ 이 특성은 언어 프로젝트에 배치 됩니다. 이를 통해 웹 사이트 프로젝트는 **솔루션 탐색기** 의 다른 파일 형식 (기본) 아래에 하나의 파일 형식 (관련)을 중첩할 수 있습니다.
 
  예를 들어 다음 코드는 IronPython codebehind 파일이 .aspx 파일에 연결 되도록 지정 합니다. 새 .aspx 웹 사이트를 IronPython 웹 사이트 솔루션에 만들면 새 py 원본 파일이 생성 되 고 .aspx 페이지의 자식 노드로 표시 됩니다.
 
@@ -54,5 +56,5 @@ public class PythonPackage : Package, IOleComponent
 
  IVsIntellisenseProject 구현은 참조를 처리 하 고 코드를 포함 하는 웹 페이지가 요청 되었지만 캐시 되지 않을 때 언어 컴파일러를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [웹 사이트 지원](../../extensibility/internals/web-site-support.md)

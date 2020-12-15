@@ -1,5 +1,7 @@
 ---
 title: 웹 사이트 지원 | Microsoft Docs
+description: 기존 프로젝트 시스템에 템플릿 및 등록 특성을 추가 하 여 만든 웹 사이트 프로젝트 시스템에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703439"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487844"
 ---
 # <a name="web-site-support"></a>웹 사이트 지원
 웹 사이트 프로젝트 시스템은 웹 프로젝트를 만드는 프로젝트 시스템입니다. 웹 프로젝트를 사용 하 여 웹 응용 프로그램을 만듭니다. 웹 사이트 프로젝트는 연결 된 코드를 포함 하는 각 웹 페이지에 대해 하나의 실행 파일을 생성 합니다. /App_Code 폴더의 소스 코드 파일에서 추가 실행 파일을 생성 합니다.
@@ -25,7 +27,7 @@ ms.locfileid: "80703439"
  웹 페이지를 컴파일하는 데 사용 되는 언어 컴파일러를에 등록 해야 합니다 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . 다음 예제와 같이 Web.config 파일의 [ \<compiler> 요소](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) 를 사용 하 여 컴파일러를 등록할 수 있습니다.
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>섹션 내용
@@ -37,7 +39,7 @@ ms.locfileid: "80703439"
 
  웹 사이트 프로젝트를 및에 연결 하는 등록 특성을 표시 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] .
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [웹 프로젝트](../../extensibility/internals/web-projects.md)
 
  두 종류의 웹 프로젝트, 웹 사이트 프로젝트 및 웹 응용 프로그램 프로젝트에 대 한 개요를 제공 합니다.

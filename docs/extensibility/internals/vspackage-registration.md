@@ -1,5 +1,7 @@
 ---
 title: VSPackage 등록 | Microsoft Docs
+description: 패키지에서 Visual Studio를 설치 하 고 레지스트리에 정보를 기록 하 여 로드 해야 하는 VSPackage 등록에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012128"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487987"
 ---
 # <a name="vspackage-registration"></a>VSPackage 등록
 Vspackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치 되어 있고 로드 되어야 한다는 것을 알려 주어 야 합니다. 이 프로세스는 레지스트리에서 정보를 작성 하 여 수행 됩니다. 이는 설치 관리자의 일반적인 작업입니다.
@@ -40,7 +42,7 @@ Vspackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치
 > [!NOTE]
 > RegPkg 도구는 재배포할 수 없으며 사용자 시스템에 VSPackage을 등록 하는 데 사용할 수 없습니다.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>설치 시 Vspackage에서 자체 등록 하지 않아야 하는 이유
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Vspackage가 설치 시에 Self-Register 하지 않아야 하는 이유
  VSPackage 설치 관리자는 자체 등록을 사용 하면 안 됩니다. 언뜻 보기에는 VSPackage의 레지스트리 값을 VSPackage 자체에 유지 하는 것이 좋습니다. 개발자가 일상적인 작업 및 테스트에 사용할 수 있는 레지스트리 값을 필요로 하는 경우 설치 관리자에서 레지스트리 데이터의 개별 복사본을 유지 관리 하지 않는 것이 좋습니다. 설치 관리자는 VSPackage 자체를 사용 하 여 레지스트리 값을 쓸 수 있습니다.
 
  이론적으로는 유용 하지만, 자체 등록에는 VSPackage 설치에 적합 하지 않은 여러 가지 결함이 있습니다.

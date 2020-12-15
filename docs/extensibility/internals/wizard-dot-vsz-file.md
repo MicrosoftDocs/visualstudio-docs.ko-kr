@@ -1,5 +1,7 @@
 ---
 title: 마법사 (. .Vsz 파일 | Microsoft Docs
+description: IDE에서 마법사를 시작 하는 데 사용 하는 .vsz 파일에 대해 알아봅니다. 파일에는 호출할 마법사와 마법사에 전달할 정보 등이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703318"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487740"
 ---
 # <a name="wizard-vsz-file"></a>마법사(.Vsz) 파일
 
@@ -36,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 다음은 .vsz 파일의 일부입니다.
 
-|부분|설명|
+|파트|Description|
 |----------|-----------------|
 |VSWizard|파일의 첫 번째 매개 변수는 템플릿 파일 형식의 버전 번호입니다. 이 버전 번호는 6.0, 7.0, 7.1 또는 8.0 이어야 합니다. 다른 숫자는 시작할 수 없으며 잘못 된 형식 오류가 발생 합니다.|
 |마법사|이 필드에는 마법사의 OLE ProgID 또는 IDE에서 공동으로 생성 되는 마법사의 CLSID에 대 한 GUID 문자열 표현이 포함 되어 있습니다.|
@@ -46,7 +48,7 @@ Param="WIZARDUI = FALSE"
 
 기본 로캘 ID를 .vsz 파일에 추가 하려면 `FALLBACK_LCID` = xxxx를 지정 합니다. 여기서 xxxx는 로캘 ID (예: 영어의 경우 1033)입니다. `FALLBACK_LCID`매개 변수가 정의 된 경우 현재 ID가 없는 경우 마법사에서 제공 된 대체 (fallback) 로캘 ID를 사용 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)
 - [마법사로](../../extensibility/internals/wizards.md)

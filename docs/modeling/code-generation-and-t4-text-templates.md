@@ -1,5 +1,7 @@
 ---
 title: 코드 생성 및 T4 텍스트 템플릿
+description: 텍스트 파일을 생성할 수 있는 제어 논리 및 텍스트 블록이 혼합된 T4 텍스트 템플릿에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548241"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363577"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
@@ -50,7 +52,7 @@ string webResponseText = new MyTemplate().TransformText();
 
 Visual Studio가 설치되지 않은 컴퓨터에서 애플리케이션을 실행할 수 있습니다.
 
-런타임 템플릿을 만들려면 **전처리된 텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor**로 설정할 수 있습니다.
+런타임 템플릿을 만들려면 **전처리된 텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor** 로 설정할 수 있습니다.
 
 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요. 템플릿 구문에 대한 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)를 참조하세요.
 
@@ -85,14 +87,14 @@ namespace Fabrikam.FirstJob
 
 디자인 타임 템플릿을 사용하면 요구 사항이 변경될 때 더 빠르고 안정적으로 구성을 변경할 수 있습니다. 일반적으로 입력은 워크플로 예제와 같이 비즈니스 요구 사항 측면에서 정의됩니다. 이렇게 하면 보다 쉽게 변경 내용을 사용자에게 설명할 수 있습니다. 따라서 디자인 타임 템플릿은 민첩한 개발 프로세스에 유용한 도구입니다.
 
-디자인 타임 템플릿을 만들려면 **텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFileGenerator**로 설정할 수 있습니다.
+디자인 타임 템플릿을 만들려면 **텍스트 템플릿** 파일을 프로젝트에 추가합니다. 또는 일반 텍스트 파일을 추가하고 해당 **사용자 지정 도구** 속성을 **TextTemplatingFileGenerator** 로 설정할 수 있습니다.
 
 자세한 내용은 [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조하세요. 템플릿 구문에 대한 자세한 내용은 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)를 참조하세요.
 
 > [!NOTE]
 > *모델* 이란 용어는 때때로 하나 이상의 템플릿에서 읽은 데이터를 설명하는 데 사용됩니다. 모델은 모든 형식과 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 도메인 특정 언어 모델이 아니어도 됩니다. '모델'은 단지 데이터가 코드와 달리 비즈니스 개념 측면에서 정의될 수 있음을 나타냅니다.
 
-텍스트 템플릿 변환 기능을 *T4*라고 합니다.
+텍스트 템플릿 변환 기능을 *T4* 라고 합니다.
 
 ## <a name="see-also"></a>추가 정보
 

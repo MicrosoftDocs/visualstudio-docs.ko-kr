@@ -1,5 +1,7 @@
 ---
 title: VSPackage 구조체 (소스 제어 VSPackage) | Microsoft Docs
+description: Visual Studio와 통합 하는 소스 제어 구현자를 사용 하는 VSPackage에 대 한 지침을 제공 하는 소스 제어 패키지 SDK에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703802"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487961"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 구조(소스 제어 VSPackage)
 
@@ -72,7 +74,7 @@ Visual Studio의 모든 프로젝트는 <xref:Microsoft.VisualStudio.Shell.Inter
 
 소스 제어에서 고려해 야 하는 인터페이스의 전체 목록은 [관련 서비스 및 인터페이스](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)VSPackage를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [디자인 요소](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [관련 서비스 및 인터페이스](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

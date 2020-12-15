@@ -1,5 +1,7 @@
 ---
 title: 도메인별 언어 도구 개요
+description: DSL 도구로 도메인 특정 언어를 설계한 후 사용자가 해당 언어를 기반으로 모델을 만드는 데 필요로 하는 모든 것을 생성하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e88a6157e5c9db7914ac6f7470d793be11dfdfc8
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808079"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362030"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 Visual Studio에서 호스팅되는 도메인 특정 언어 도구(DSL 도구)를 사용하면 도메인 특정 언어를 설계한 후 사용자가 해당 언어를 기반으로 모델을 만드는 데 필요한 모든 것을 생성할 수 있습니다.
@@ -64,7 +66,7 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구(DSL 도구)�
 ## <a name="validation-in-dsl-tools"></a>DSL 도구의 유효성 검사
  Dsl은 도메인 모델이 코드 생성에 대한 기본 요구 사항을 충족하는지 확인하는 한 가지 수준의 유효성 검사를 제공합니다. 일반적으로 고유한 도메인 특정 언어를 만들 때는 비즈니스 논리 규칙을 표현하는 고유한 유효성 검사를 추가합니다. 사용자 지정 유효성 검사에 대한 자세한 내용은 [도메인 특정 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조하세요.
 
- 도메인 특정 언어를 설계할 때는 유효성 검사를 자주 수행하는 것이 좋습니다. 도메인 특정 언어에 유효성 검사 오류가 있을 경우 소스 코드를 생성할 수 없습니다. 템플릿으로 소스 코드를 생성하는 프로세스는 솔루션 탐색기의 도구 모음에서 **모든 템플릿 변환**을 클릭하면 수행할 수 있습니다. 언어 정의를 수정할 때마다 **모든 템플릿 변환**을 수행해야 합니다. 자세한 내용은 [방법: 도메인 특정 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조하세요.
+ 도메인 특정 언어를 설계할 때는 유효성 검사를 자주 수행하는 것이 좋습니다. 도메인 특정 언어에 유효성 검사 오류가 있을 경우 소스 코드를 생성할 수 없습니다. 템플릿으로 소스 코드를 생성하는 프로세스는 솔루션 탐색기의 도구 모음에서 **모든 템플릿 변환** 을 클릭하면 수행할 수 있습니다. 언어 정의를 수정할 때마다 **모든 템플릿 변환** 을 수행해야 합니다. 자세한 내용은 [방법: 도메인 특정 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조하세요.
 
 ## <a name="customization-of-dsl-tools"></a>DSL 도구 사용자 지정
  모델의 동작을 구체화하고 언어에 대한 제약 조건을 정의하는 추가 코드를 제공할 수 있습니다. 필요한 경우 텍스트 템플릿을 수정하여 중요한 변경 작업을 수행할 수 있습니다.

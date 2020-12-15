@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Interop 어셈블리 사용 | Microsoft Docs
+description: Visual Studio interop 어셈블리를 사용 하 여 관리 되는 응용 프로그램에서 Visual Studio 확장성을 제공 하는 COM 인터페이스에 액세스 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704128"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487662"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio Interop 어셈블리 사용
 Visual Studio interop 어셈블리를 사용 하면 관리 되는 응용 프로그램에서 Visual Studio 확장성을 제공 하는 COM 인터페이스에 액세스할 수 있습니다. 직선 COM 인터페이스와 해당 interop 버전 간에는 몇 가지 차이점이 있습니다. 예를 들어 Hresult는 일반적으로 int 값으로 표시 되 고 예외와 동일한 방식으로 처리 되어야 하며 매개 변수 (특히 out 매개 변수)는 다르게 처리 됩니다.

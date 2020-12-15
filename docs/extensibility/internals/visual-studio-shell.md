@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Shell | Microsoft Docs
+description: Visual Studio shell은 Visual Studio의 기본 통합 에이전트 이며 기본적인 기능을 제공 하 고 Vspackage 간의 교차 통신을 지원 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703999"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488052"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]셸은의 기본 통합 에이전트입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 셸은 Vspackage가 공통 서비스를 공유할 수 있도록 하는 데 필요한 기능을 제공 합니다. 의 아키텍처 목표는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vspackage의 vest 기본 기능에 대 한 것 이기 때문에 shell은 기본 기능을 제공 하 고 해당 구성 요소 vspackage 간의 교차 통신을 지 원하는 프레임 워크입니다.
@@ -78,7 +80,7 @@ ms.locfileid: "80703999"
 
 - **도구 상자**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

@@ -1,5 +1,7 @@
 ---
 title: VSPackage 설치 시나리오 | Microsoft Docs
+description: VSPackage의 공유 또는 side-by-side 설치를 사용 하 여 Visual Studio의 side-by-side 설치를 지 원하는 모범 사례에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012115"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487974"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 설치 시나리오
 

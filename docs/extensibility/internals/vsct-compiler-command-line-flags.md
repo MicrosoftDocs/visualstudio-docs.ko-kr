@@ -1,5 +1,7 @@
 ---
-title: VSCT 컴파일러 명령줄 플래그 | Microsoft Docs
+title: VSCT 컴파일러 Command-Line 플래그 | Microsoft Docs
+description: Visual Studio 명령 테이블 컴파일러는 vsct 파일의 성공적인 컴파일을 위해 명령줄 옵션을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703964"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488013"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 Visual Studio 명령 테이블 (VSCT) 컴파일러는. vsct 파일을 성공적으로 컴파일하기 위해 명령줄 스위치를 제공 합니다.
 
 ## <a name="command-line-parameters"></a>명령줄 매개 변수
- 명령 창에서 기본 VSCT 도움말을 보려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Command** *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Tools\Bin\ 폴더로 이동 하 여 다음을 입력 합니다.
+ 명령 창에서 기본 VSCT 도움말을 보려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  *Visual Studio SDK 설치 경로*\VisualStudioIntegration\Tools\Bin\ 폴더로 이동 하 여 다음을 입력 합니다.
 
 ```
 vsct /?

@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스에서 중단점 유효성 검사 | Microsoft Docs
+description: 디버거를 시작 하기 전에 레거시 언어 서비스에서 ValidateBreakpointLocation 메서드를 재정의 하 여 중단점의 유효성을 검사 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704090"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488026"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>레거시 언어 서비스의 중단점 유효성 검사
 중단점은 프로그램 실행이 디버거에서 실행 되는 동안 특정 지점에서 중지 되어야 함을 나타냅니다. 편집기는 중단점에 대해 유효한 위치를 구성 하는 항목에 대해 알지 못하므로 사용자는 소스 파일의 모든 줄에 중단점을 설정할 수 있습니다. 디버거를 실행 하면 표시 된 모든 중단점 (보류 중인 중단점 이라고 함)이 실행 중인 프로그램의 적절 한 위치에 바인딩됩니다. 중단점의 유효성을 검사 하 여 유효한 코드 위치를 표시 하는지 확인 합니다. 예를 들어 소스 코드의 해당 위치에는 코드가 없기 때문에 주석에서 중단점을 사용할 수 없습니다. 디버거가 잘못 된 중단점을 사용 하지 않도록 설정 합니다.

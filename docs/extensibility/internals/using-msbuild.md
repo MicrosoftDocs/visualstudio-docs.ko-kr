@@ -1,5 +1,7 @@
 ---
 title: MSBuild 사용 | Microsoft Docs
+description: MSBuild는 빌드할 프로젝트 항목, 빌드 작업 및 빌드 구성을 완전히 설명 하는 프로젝트 파일을 만들기 위한 확장 가능한 XML 형식을 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704284"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487675"
 ---
 # <a name="using-msbuild"></a>MSBuild 사용
 MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로젝트 파일을 만들기 위한 잘 정의 된 확장 가능한 XML 형식을 제공 합니다.
@@ -25,7 +27,7 @@ MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로�
 ## <a name="general-msbuild-considerations"></a>일반 MSBuild 고려 사항
  .Csproj와 .vbproj 파일 등의 MSBuild 프로젝트 파일에 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 는 빌드 시에 사용 되는 데이터가 포함 되지만 디자인 타임에 사용 되는 데이터도 포함 될 수 있습니다. 빌드 시간 데이터는 [Item 요소 (msbuild)](../../msbuild/item-element-msbuild.md) 및 [Property 요소 (msbuild)](../../msbuild/property-element-msbuild.md)를 비롯 한 msbuild 기본 형식을 사용 하 여 저장 됩니다. 프로젝트 형식 및 관련 된 프로젝트 하위 형식에 해당 하는 데이터 인 디자인 타임 데이터는 해당 데이터에 대해 예약 된 자유 형식 XML로 저장 됩니다.
 
- MSBuild는 구성 개체에 대 한 기본 지원을 제공 하지 않지만 구성 관련 데이터를 지정 하기 위한 조건부 특성을 제공 합니다. 예를 들면 다음과 같습니다.
+ MSBuild는 구성 개체에 대 한 기본 지원을 제공 하지 않지만 구성 관련 데이터를 지정 하기 위한 조건부 특성을 제공 합니다. 예를 들어:
 
 ```xml
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
@@ -53,7 +55,7 @@ MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로�
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>단일 파일 생성기 및 MSBuild 작업
  디자인 타임에만 단일 파일 생성기에 액세스할 수 있지만 디자인 타임 및 빌드 시에는 MSBuild 작업을 사용할 수 있습니다. 따라서 유연성을 최대화 하기 위해 MSBuild 작업을 사용 하 여 코드를 변환 하 고 생성 합니다. 자세한 내용은 [사용자 지정 도구](../../extensibility/internals/custom-tools.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [MSBuild 참조](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [사용자 지정 도구](../../extensibility/internals/custom-tools.md)

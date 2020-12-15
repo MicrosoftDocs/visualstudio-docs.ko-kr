@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 업그레이드 | Microsoft Docs
+description: 프로젝트에서 업그레이드 지원을 구현 하기 위해 Visual Studio SDK에서 제공 하는 인터페이스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704260"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487584"
 ---
 # <a name="upgrading-projects"></a>프로젝트 업그레이드
 
@@ -35,7 +37,7 @@ Visual Studio의 한 버전에서 다음 프로젝트로 프로젝트 모델을 
 
 이전 버전의 Visual Studio에서 만든 솔루션을 최신 버전에서 열면 IDE는 솔루션 파일을 확인 하 여 업그레이드 해야 하는지 여부를 확인 합니다. 업그레이드 해야 하는 경우 업그레이드 **마법사** 가 자동으로 시작 되어 업그레이드 프로세스를 통해 사용자를 안내 합니다.
 
-솔루션을 업그레이드 해야 하는 경우 각 프로젝트 팩터리에서 업그레이드 전략을 쿼리 합니다. 전략은 프로젝트 팩터리가 복사 백업 또는 SxS 백업을 지원 하는지 여부를 결정 합니다. 이 정보는 백업에 필요한 정보를 수집 하 고 해당 옵션을 사용자에 게 제공 하는 **업그레이드 마법사**에 전송 됩니다.
+솔루션을 업그레이드 해야 하는 경우 각 프로젝트 팩터리에서 업그레이드 전략을 쿼리 합니다. 전략은 프로젝트 팩터리가 복사 백업 또는 SxS 백업을 지원 하는지 여부를 결정 합니다. 이 정보는 백업에 필요한 정보를 수집 하 고 해당 옵션을 사용자에 게 제공 하는 **업그레이드 마법사** 에 전송 됩니다.
 
 ### <a name="multi-project-solutions"></a>다중 프로젝트 솔루션
 
@@ -60,7 +62,7 @@ Visual Studio의 한 버전에서 다음 프로젝트로 프로젝트 모델을 
 
 ## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a> 사용자 지정 프로젝트 업그레이드
 
-제품의 다른 Visual Studio 버전 간에 프로젝트 파일에 있는 정보를 변경하는 경우 이전 버전에서 새 버전으로의 프로젝트 파일 업그레이드를 지원해야 합니다. **Visual Studio 변환 마법사**에 참여할 수 있도록 하는 업그레이드를 지원 하려면 인터페이스를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 이 인터페이스에는 복사 업그레이드에 사용할 수 있는 메커니즘만 포함되어 있습니다. 프로젝트 업그레이드는 솔루션의 일부가 열릴 때 수행됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스는 프로젝트 팩터리에서 구현되거나 적어도 프로젝트 팩터리에서 얻을 수 있어야 합니다.
+제품의 다른 Visual Studio 버전 간에 프로젝트 파일에 있는 정보를 변경하는 경우 이전 버전에서 새 버전으로의 프로젝트 파일 업그레이드를 지원해야 합니다. **Visual Studio 변환 마법사** 에 참여할 수 있도록 하는 업그레이드를 지원 하려면 인터페이스를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 이 인터페이스에는 복사 업그레이드에 사용할 수 있는 메커니즘만 포함되어 있습니다. 프로젝트 업그레이드는 솔루션의 일부가 열릴 때 수행됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스는 프로젝트 팩터리에서 구현되거나 적어도 프로젝트 팩터리에서 얻을 수 있어야 합니다.
 
 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스를 사용하는 이전 메커니즘은 계속 지원되지만 프로젝트의 일부가 열릴 때 프로젝트 시스템을 개념적으로 업그레이드합니다. 따라서 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 호출 하거나 구현 하는 경우에도 Visual Studio 환경에서 인터페이스를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 합니다. 이 접근 방식을 사용하면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>를 사용하여 업그레이드의 복사 및 프로젝트 전용 부분을 구현하고 나머지 작업은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 인터페이스에서 바로(아마도 새 위치에서) 수행하도록 위임할 수 있습니다.
 
@@ -98,7 +100,7 @@ Visual Studio의 한 버전에서 다음 프로젝트로 프로젝트 모델을 
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade 구현
 
-프로젝트 시스템에서를 구현 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> **Visual Studio 변환 마법사**에 참여할 수 없습니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스를 구현하더라도 여전히 파일 업그레이드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현에 위임할 수는 있습니다.
+프로젝트 시스템에서를 구현 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> **Visual Studio 변환 마법사** 에 참여할 수 없습니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 인터페이스를 구현하더라도 여전히 파일 업그레이드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 구현에 위임할 수는 있습니다.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>IVsProjectUpgrade를 구현하려면
 
@@ -179,6 +181,6 @@ Visual Studio의 한 버전에서 다음 프로젝트로 프로젝트 모델을 
 
 2. 프로젝트 항목에 프로젝트 업그레이드 알림이 표시 될 때 **Visual Studio 변환 마법사** 가 계속 표시 됩니다. 따라서 인터페이스의 메서드를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 하 여 마법사 UI에 업그레이드 메시지를 제공 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트](../../extensibility/internals/projects.md)

@@ -1,5 +1,7 @@
 ---
 title: IntelliSenseHostFlags | Microsoft Docs
+description: IntelliSenseHostFlags 열거형은 IntelliSense 호스트 플래그를 지정 합니다. 이 문서에서는 열거형 값에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710263"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487506"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 IntelliSense 호스트 플래그를 지정 합니다.
@@ -38,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>매개 변수
 
-|멤버|설명|
+|멤버|Description|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|
 |`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에 IntelliSense 대상 (함축)이 포함 되어 있습니다 `!IHF_READONLYCONTEXT` .|

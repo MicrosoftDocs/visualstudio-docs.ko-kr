@@ -1,5 +1,6 @@
 ---
 title: '&apos;소스 제어 플러그 인 API 1.3의 새로운 기능'
+description: 추가 고급 제어 기능을 제공 하는 새로운 기능을 소개 하는 소스 제어 플러그 인 API 버전 1.3의 새로운 기능에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 491c35a1a99af9b3271e8b2036f7d0c6f8f57908
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037610"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487792"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>소스 제어 플러그 인 API 버전 1.3의 새로운 기능&#39;
 소스 제어 플러그 인 API 버전 1.3에는 보다 고급 제어를 제공 하는 다음과 같은 새로운 기능이 도입 되었습니다.

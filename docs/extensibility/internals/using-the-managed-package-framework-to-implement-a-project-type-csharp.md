@@ -1,5 +1,6 @@
 ---
 title: '프로젝트 형식에 관리 되는 패키지 프레임 워크 사용 (c #)'
+description: 사용자 고유의 프로젝트 형식을 구현 하기 위해 사용 하거나 상속할 수 있는 .NET 클래스를 제공 하는 관리 패키지 프레임 워크에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038649"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487545"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
 MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝트 형식을 구현 하기 위해에서 사용 하거나 상속할 수 있는 c # 클래스를 제공 합니다. MPF는 Visual Studio에서 제공 하는 프로젝트 형식이 필요한 많은 인터페이스를 구현 하며 프로젝트 형식의 인스턴스와 관련 사항을 구현에 집중할 수 있습니다.
@@ -28,7 +29,7 @@ MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝�
 
  VSPackage 솔루션에이 프로젝트를 추가 하려면 다음을 수행 합니다.
 
-1. *Mpfprojectdir*에 MPFProj 파일을 다운로드 합니다.
+1. *Mpfprojectdir* 에 MPFProj 파일을 다운로드 합니다.
 
 2. *Mpfprojectdir*\Dev10\Src\CSharp\ProjectBase.file에서 다음 블록을 변경 합니다.
 
@@ -84,7 +85,7 @@ MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝�
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>문서 처리 클래스
+## <a name="document-handling-classes"></a>Document-Handling 클래스
  다음 표에서는 문서 처리를 지 원하는 MPF의 클래스를 나열 합니다. 자세한 내용은 [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)을 참조 하세요.
 
 |클래스 이름|
@@ -103,7 +104,7 @@ MPF (관리 되는 패키지 프레임 워크)는 사용자 고유의 프로젝�
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>자동화 지원 클래스
+## <a name="automation-support-classes"></a>Automation-Support 클래스
  다음 표에서는 프로젝트 형식의 사용자가 추가 기능을 쓸 수 있도록 자동화를 지 원하는 MPF의 클래스를 나열 합니다.
 
 |클래스 이름|

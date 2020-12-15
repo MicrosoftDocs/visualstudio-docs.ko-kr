@@ -1,5 +1,7 @@
 ---
 title: 마법사 인터페이스 (IDTWizard) | Microsoft Docs
+description: IDE는 IDTWizard 인터페이스를 사용 하 여 마법사와 통신 합니다. 마법사는 IDE에 설치 되도록이 인터페이스를 구현 해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703272"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487766"
 ---
 # <a name="wizard-interface-idtwizard"></a>마법사 인터페이스(IDTWizard)
 IDE (통합 개발 환경)는 인터페이스를 사용 하 여 <xref:EnvDTE.IDTWizard> 마법사와 통신 합니다. 마법사는 IDE에 설치 하기 위해이 인터페이스를 구현 해야 합니다.
@@ -63,7 +65,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md)
 - [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)
 - [마법사로](../../extensibility/internals/wizards.md)

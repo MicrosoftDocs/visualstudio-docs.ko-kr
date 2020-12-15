@@ -1,5 +1,7 @@
 ---
 title: Vspackage | Microsoft Docs
+description: UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 제공 하 여 Visual Studio IDE를 확장 하는 소프트웨어 모듈인 Vspackage에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440e2517a0138ca84be87090d9636288a7a5d9af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703820"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487948"
 ---
 # <a name="vspackages"></a>VSPackages
 Vspackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 요소, 서비스, 프로젝트, 편집기 및 디자이너를 제공 하 여 IDE (통합 개발 환경)를 확장 하는 소프트웨어 모듈입니다.
@@ -33,4 +35,4 @@ Vspackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 요
 
  보안 취약성을 이해 하 여 더 안전한 제품을 만들 수 있습니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원

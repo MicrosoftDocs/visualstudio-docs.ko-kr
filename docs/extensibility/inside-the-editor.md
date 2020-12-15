@@ -1,5 +1,7 @@
 ---
 title: 편집기 기본 사항
+description: 편집기의 하위 시스템 및 기능에 대해 알아봅니다. Visual Studio 편집기의 기능을 확장할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710322"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487532"
 ---
 # <a name="inside-the-editor"></a>편집기 내부
 
@@ -59,13 +61,13 @@ ms.locfileid: "80710322"
 
 텍스트 모델 하위 시스템은 UI (사용자 인터페이스) 개념을 사용 하지 않습니다. 예를 들어 텍스트 서식 또는 텍스트 레이아웃을 담당 하지 않으며 텍스트와 연결 될 수 있는 시각적 장식을 알지 못합니다.
 
-텍스트 모델 하위 시스템의 공용 형식은 *Microsoft.VisualStudio.Text.Data.dll* 및 *Microsoft.VisualStudio.CoreUtility.dll*에 포함 되어 있으며, .NET Framework 기본 클래스 라이브러리와 MEF (Managed Extensibility Framework)에만 종속 됩니다.
+텍스트 모델 하위 시스템의 공용 형식은 *Microsoft.VisualStudio.Text.Data.dll* 및 *Microsoft.VisualStudio.CoreUtility.dll* 에 포함 되어 있으며, .NET Framework 기본 클래스 라이브러리와 MEF (Managed Extensibility Framework)에만 종속 됩니다.
 
 ### <a name="text-view-subsystem"></a>텍스트 뷰 하위 시스템
 
 텍스트 뷰 하위 시스템은 텍스트의 서식을 지정 하 고 표시 하는 일을 담당 합니다. 이 하위 시스템의 형식은 형식이 Windows Presentation Foundation (WPF)를 사용 하는지 여부에 따라 두 개의 계층으로 나뉩니다. 가장 중요 한 형식은 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 및 이며 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> , 표시 되는 텍스트 줄 집합과 캐럿, 선택 영역, WPF UI 요소를 사용 하 여 텍스트를 표시할 하는 기능을 제어 합니다. 또한이 하위 시스템은 텍스트 표시 영역 주위에 여백을 제공 합니다. 이러한 여백은 확장 될 수 있으며 다양 한 종류의 콘텐츠와 시각적 효과를 포함할 수 있습니다. 여백 예는 줄 번호 표시 및 스크롤 막대입니다.
 
-텍스트 뷰 하위 시스템의 공용 형식은 *Microsoft.VisualStudio.Text.UI.dll* 및 *Microsoft.VisualStudio.Text.UI.Wpf.dll*에 포함 되어 있습니다. 첫 번째 어셈블리에는 플랫폼 독립적인 요소가 포함 되 고, 두 번째 어셈블리에는 WPF 관련 요소가 포함 됩니다.
+텍스트 뷰 하위 시스템의 공용 형식은 *Microsoft.VisualStudio.Text.UI.dll* 및 *Microsoft.VisualStudio.Text.UI.Wpf.dll* 에 포함 되어 있습니다. 첫 번째 어셈블리에는 플랫폼 독립적인 요소가 포함 되 고, 두 번째 어셈블리에는 WPF 관련 요소가 포함 됩니다.
 
 ### <a name="classification-subsystem"></a>분류 하위 시스템
 
@@ -264,9 +266,9 @@ C # 분류자는 전체 범위에 대 한 주석을 주석으로 처리 하 고,
 
 ### <a name="projection"></a><a name="projection"></a> 투사
 
-프로젝션은 실제로 텍스트를 저장 하지 않고 다른 텍스트 버퍼의 텍스트를 조합 하는 다른 종류의 텍스트 버퍼를 생성 하는 기술입니다. 예를 들어, 프로젝션 버퍼를 사용 하 여 두 개의 다른 버퍼에서 텍스트를 연결 하 고 결과를 하나의 버퍼에 있는 것 처럼 표시 하거나 한 버퍼에서 텍스트 부분을 숨길 수 있습니다. 프로젝션 버퍼는 다른 프로젝션 버퍼에 대 한 소스 버퍼 역할을 할 수 있습니다. 여러 가지 방법으로 텍스트를 다시 정렬 하기 위해 프로젝션과 관련 된 버퍼 집합을 생성할 수 있습니다. 이러한 집합을 *버퍼 그래프*라고도 합니다. Visual Studio 텍스트 개요 기능은 프로젝션 버퍼를 사용 하 여 축소 된 텍스트를 숨기고 구현 되며, Visual Studio editor for ASP.NET 페이지는 프로젝션을 사용 하 여 Visual Basic 및 c #과 같은 포함 된 언어를 지원 합니다.
+프로젝션은 실제로 텍스트를 저장 하지 않고 다른 텍스트 버퍼의 텍스트를 조합 하는 다른 종류의 텍스트 버퍼를 생성 하는 기술입니다. 예를 들어, 프로젝션 버퍼를 사용 하 여 두 개의 다른 버퍼에서 텍스트를 연결 하 고 결과를 하나의 버퍼에 있는 것 처럼 표시 하거나 한 버퍼에서 텍스트 부분을 숨길 수 있습니다. 프로젝션 버퍼는 다른 프로젝션 버퍼에 대 한 소스 버퍼 역할을 할 수 있습니다. 여러 가지 방법으로 텍스트를 다시 정렬 하기 위해 프로젝션과 관련 된 버퍼 집합을 생성할 수 있습니다. 이러한 집합을 *버퍼 그래프* 라고도 합니다. Visual Studio 텍스트 개요 기능은 프로젝션 버퍼를 사용 하 여 축소 된 텍스트를 숨기고 구현 되며, Visual Studio editor for ASP.NET 페이지는 프로젝션을 사용 하 여 Visual Basic 및 c #과 같은 포함 된 언어를 지원 합니다.
 
-는를 <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> 사용 하 여 만듭니다 <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . 프로젝션 버퍼는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> *소스 범위*라고 하는 개체의 순서가 지정 된 시퀀스로 표시 됩니다. 이러한 범위의 내용은 일련의 문자로 표시 됩니다. 소스 범위를 그리는 텍스트 버퍼에는 *소스 버퍼*라는 이름이 지정 됩니다. 프로젝션 버퍼의 클라이언트는 일반 텍스트 버퍼와 다르다는 점을 인식 하지 않아도 됩니다.
+는를 <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> 사용 하 여 만듭니다 <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . 프로젝션 버퍼는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> *소스 범위* 라고 하는 개체의 순서가 지정 된 시퀀스로 표시 됩니다. 이러한 범위의 내용은 일련의 문자로 표시 됩니다. 소스 범위를 그리는 텍스트 버퍼에는 *소스 버퍼* 라는 이름이 지정 됩니다. 프로젝션 버퍼의 클라이언트는 일반 텍스트 버퍼와 다르다는 점을 인식 하지 않아도 됩니다.
 
 프로젝션 버퍼는 소스 버퍼에서 텍스트 변경 이벤트를 수신 대기 합니다. 소스 범위의 텍스트가 변경 되 면 프로젝션 버퍼는 변경 된 텍스트 좌표를 고유한 좌표로 매핑하고 적절 한 텍스트 변경 이벤트를 발생 시킵니다. 예를 들어 다음 내용이 포함 된 원본 버퍼 A와 B를 살펴보겠습니다.
 
@@ -318,7 +320,7 @@ IntelliSense는 문 완성, 시그니처 도움말 (매개 변수 정보 라고�
 
 문 완성은 메서드 이름, XML 요소 및 기타 코딩 또는 태그 요소에 대 한 잠재적 완성의 팝업 목록을 제공 합니다. 일반적으로 사용자 제스처는 완료 세션을 호출 합니다. 세션에는 잠재적 완성 목록이 표시 되며 사용자는이를 선택 하 여 목록을 해제할 수 있습니다. 는를 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 만들고 트리거하는 역할을 담당 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . 는 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 세션에 대 한 완료 항목의를 계산 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)
 - [편집기 가져오기](../extensibility/editor-imports.md)

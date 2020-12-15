@@ -1,5 +1,6 @@
 ---
 title: '&apos;소스 제어 플러그 인 API 1.2의 새로운 기능'
+description: 소스 제어 플러그 인 API 버전 1.2에 있는 고급 소스 코드 제어 기능의 새로운 기능에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5deb43b3b5d1a654fee82b043f06ec8219530a2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037623"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487805"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>소스 제어 플러그 인 API 버전 1.2의 새로운 기능&#39;
 이 섹션에서는 소스 제어 플러그 인 API 버전 1.2의 고급 소스 코드 제어 기능을 강조 표시 합니다. 다음은 버전 1.2의 새로운 기능 목록입니다.
