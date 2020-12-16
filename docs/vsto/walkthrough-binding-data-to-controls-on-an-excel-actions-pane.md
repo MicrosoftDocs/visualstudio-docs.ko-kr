@@ -1,5 +1,7 @@
 ---
 title: '연습: Excel 작업 창의 컨트롤에 데이터 바인딩'
+description: Microsoft Excel의 작업 창에서 컨트롤에 데이터를 바인딩합니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585056"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524971"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>연습: Excel 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Microsoft Office Excel의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
@@ -59,35 +61,35 @@ ms.locfileid: "91585056"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. **내 Excel 작업 창**이름으로 Excel 통합 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. **내 Excel 작업 창** 이름으로 Excel 통합 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **내 Excel 작업 창** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
+     Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **내 Excel 작업 창** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
 ## <a name="add-a-new-data-source-to-the-project"></a>프로젝트에 새 데이터 소스 추가
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>프로젝트에 새 데이터 원본을 추가 하려면
 
-1. **데이터 소스** 창이 표시 되지 않으면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않으면 메뉴 모음에서   >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 표시 합니다.
 
-2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
+2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사** 를 시작합니다.
 
-3. **데이터베이스** 를 선택 하 고 **다음**을 클릭 합니다.
+3. **데이터베이스** 를 선택 하 고 **다음** 을 클릭 합니다.
 
 4. Northwind 샘플 SQL Server 데이터베이스에 대 한 데이터 연결을 선택 하거나 **새 연결** 단추를 사용 하 여 새 연결을 추가 합니다.
 
-5. **다음**을 클릭합니다.
+5. **다음** 을 클릭합니다.
 
-6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음**을 클릭 합니다.
+6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음** 을 클릭 합니다.
 
 7. **데이터베이스 개체** 창에서 **테이블** 노드를 확장 합니다.
 
 8. **Suppliers** 테이블 옆의 확인란을 선택 합니다.
 
-9. **Products** 테이블을 확장 하 고 **ProductName**, **공급자**, **QuantityPerUnit**및 **UnitPrice**를 선택 합니다.
+9. **Products** 테이블을 확장 하 고 **ProductName**, **공급자**, **QuantityPerUnit** 및 **UnitPrice** 를 선택 합니다.
 
-10. **Finish**를 클릭합니다.
+10. **Finish** 를 클릭합니다.
 
-    마법사에서 **Suppliers** 테이블 및 **Products** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
+    마법사에서 **Suppliers** 테이블 및 **Products** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기** 에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
 ## <a name="add-controls-to-the-worksheet"></a>워크시트에 컨트롤 추가
  그런 다음, <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> 첫 번째 워크시트에 컨트롤과 컨트롤을 추가 합니다.
@@ -98,17 +100,17 @@ ms.locfileid: "91585056"
 
 2. **데이터 소스** 창에서 **Suppliers** 테이블을 확장 합니다.
 
-3. **회사 이름** 노드에서 드롭다운 화살표를 클릭 한 다음 **NamedRange**를 클릭 합니다.
+3. **회사 이름** 노드에서 드롭다운 화살표를 클릭 한 다음 **NamedRange** 를 클릭 합니다.
 
 4. **데이터 소스** 창에서 셀 **A2** 로 **회사 이름을** 끌어 옵니다 `Sheet1` .
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 컨트롤이 `CompanyNameNamedRange` 만들어지고 텍스트가 \<CompanyName> **A2**셀에 표시 됩니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `suppliersBindingSource` , 테이블 어댑터 및가 <xref:System.Data.DataSet> 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
+     <xref:Microsoft.Office.Tools.Excel.NamedRange>이라는 컨트롤이 `CompanyNameNamedRange` 만들어지고 텍스트가 \<CompanyName> **A2** 셀에 표시 됩니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `suppliersBindingSource` , 테이블 어댑터 및가 <xref:System.Data.DataSet> 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
 
 5. **데이터 소스** 창에서 **Suppliers** 테이블 아래의 열을 뒤로 스크롤합니다. 목록의 맨 아래에 **Products** 테이블이 있습니다. **Suppliers** 테이블의 자식 이기 때문에 여기에 있습니다. **Suppliers** 테이블과 같은 수준의 **Products** 테이블을 선택 하 고 표시 되는 드롭다운 화살표를 클릭 합니다.
 
 6. 드롭다운 목록에서 **ListObject** 를 클릭 한 다음 **Products** 테이블을에서 **A6** 셀로 끕니다 `Sheet1` .
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject>이라는 컨트롤이 `ProductNameListObject` **A6**셀에 만들어집니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `productsBindingSource` 와 테이블 어댑터가 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
+     <xref:Microsoft.Office.Tools.Excel.ListObject>이라는 컨트롤이 `ProductNameListObject` **A6** 셀에 만들어집니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `productsBindingSource` 와 테이블 어댑터가 프로젝트에 추가 됩니다. 컨트롤이에 바인딩되고이는 <xref:System.Windows.Forms.BindingSource> <xref:System.Data.DataSet> 인스턴스에 바인딩됩니다.
 
 7. C #의 경우에만 구성 요소 트레이에서 **suppliersBindingSource** 를 선택 하 고 **속성** 창에서 **Modifiers** 속성을 **Internal** 로 변경 합니다.
 
@@ -117,17 +119,17 @@ ms.locfileid: "91585056"
 
 ### <a name="to-add-an-actions-pane-control"></a>작업 창 컨트롤을 추가 하려면
 
-1. **솔루션 탐색기**에서 **내 Excel 작업 창** 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 **내 Excel 작업 창** 프로젝트를 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤**을 선택 하 고 이름을 작업 **제어**로 선택한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤** 을 선택 하 고 이름을 작업 **제어** 로 선택한 다음 **추가** 를 클릭 합니다.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>작업 창 컨트롤에 데이터 바인딩된 Windows Forms 컨트롤을 추가 하려면
 
-1. **도구 상자**의 **공용 컨트롤** 탭에서 <xref:System.Windows.Forms.ComboBox> 컨트롤을 작업 창 컨트롤로 끌어 옵니다.
+1. **도구 상자** 의 **공용 컨트롤** 탭에서 <xref:System.Windows.Forms.ComboBox> 컨트롤을 작업 창 컨트롤로 끌어 옵니다.
 
-2. **Size** 속성을 **171, 21**로 변경 합니다.
+2. **Size** 속성을 **171, 21** 로 변경 합니다.
 
 3. 콤보 상자에 맞게 사용자 정의 컨트롤의 크기를 조정 합니다.
 
@@ -136,7 +138,7 @@ ms.locfileid: "91585056"
 
 ### <a name="to-set-data-binding-properties-of-the-control"></a>컨트롤의 데이터 바인딩 속성을 설정 하려면
 
-1. 작업 창 컨트롤을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. 작업 창 컨트롤을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. <xref:System.Windows.Forms.UserControl.Load>작업 창 컨트롤의 이벤트에 다음 코드를 추가 합니다.
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585056"
 
 #### <a name="to-show-the-actions-pane"></a>작업 창을 표시 하려면
 
-1. **솔루션 탐색기**에서 *ThisWorkbook* 또는 *ThisWorkbook.cs*를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 *ThisWorkbook* 또는 *ThisWorkbook.cs* 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. 클래스에 사용자 정의 컨트롤의 새 인스턴스를 만듭니다 `ThisWorkbook` .
 

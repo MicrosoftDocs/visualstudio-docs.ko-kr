@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 현재 Outlook 항목 확인'
+description: 현재 Microsoft Outlook 항목을 프로그래밍 방식으로 확인 하는 방법을 알아봅니다. 이 예제에서는 SelectionChange 이벤트를 사용 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 10b8bd8103e80040519b9e3c5546f892da326202
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585238"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526791"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>방법: 프로그래밍 방식으로 현재 Outlook 항목 확인
   이 예제에서는 이벤트를 사용 하 여 `Explorer.SelectionChange` 현재 폴더의 이름과 선택한 항목에 대 한 일부 정보를 표시 합니다. 그런 다음 코드에서 선택한 항목을 표시 합니다.

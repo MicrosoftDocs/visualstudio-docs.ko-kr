@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 기존 문서 열기'
+description: Open 메서드를 사용 하 여 정규화 된 경로 및 파일 이름으로 지정 된 기존 Microsoft Word 문서를 여는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519901"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525552"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>방법: 프로그래밍 방식으로 기존 문서 열기
   메서드는 정규화 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 된 경로와 파일 이름으로 지정 된 기존 Microsoft Office Word 문서를 엽니다. 이 메서드는 <xref:Microsoft.Office.Interop.Word.Document> 열린 문서를 나타내는을 반환 합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "85519901"
 
 - *NewDocument.doc* 이라는 문서는 C 드라이브의 *Test* 라는 디렉터리에 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)
 - [방법: 프로그래밍 방식으로 문서 닫기](../vsto/how-to-programmatically-close-documents.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

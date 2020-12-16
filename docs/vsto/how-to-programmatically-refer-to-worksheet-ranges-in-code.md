@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조'
+description: Visual Studio를 사용 하 여 Microsoft Excel 워크시트의 NamedRange 컨트롤 또는 네이티브 Excel 범위 개체의 콘텐츠를 프로그래밍 방식으로 참조 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319be5ad6c878e08a862d1e20e826c2800c33512
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584835"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526677"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조
   유사한 프로세스를 사용 하 여 컨트롤의 내용이 <xref:Microsoft.Office.Tools.Excel.NamedRange> 나 네이티브 Excel 범위 개체를 참조 합니다.

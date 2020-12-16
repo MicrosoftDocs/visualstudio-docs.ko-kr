@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에서 코드 작성
+description: Microsoft Office 솔루션에서 코드를 작성 하는 방법과 Office 개체 모델이 관리 코드에 노출 되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255039"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526026"
 ---
 # <a name="write-code-in-office-solutions"></a>Office 솔루션에서 코드 작성
   Visual Studio의 Office 프로젝트에는 기타 유형의 프로젝트와 다른 코드 작성의 몇 가지 측면이 있습니다. 이러한 차이점 중 상당수는 Office 개체 모델이 관리 코드에 노출되는 방식과 관련되어 있으며, 다른 차이점은 Office 프로젝트의 디자인과 관련되어 있습니다.
@@ -105,7 +107,7 @@ ms.locfileid: "71255039"
 
 다음 표에서는 Office 개발에서 Visual Basic과 Visual C#의 주요 차이점을 보여 줍니다.
 
-|기능|설명|Visual Basic 지원|Visual C# 지원|
+|기능|Description|Visual Basic 지원|Visual C# 지원|
 |-------------|-----------------|--------------------------|------------------------|
 |선택적 매개 변수|많은 Microsoft Office 메서드에는 메서드를 호출할 때 필요하지 않은 매개 변수가 있습니다. 매개 변수의 값이 전달되지 않는 경우 기본값이 사용됩니다.|Visual Basic에서는 선택적 매개 변수를 지원합니다.|Visual C#에서는 대부분의 경우 선택적 매개 변수를 지원합니다. 자세한 내용은 [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)를 참조 하세요.|
 |참조로 매개 변수 전달|대부분의 Microsoft Office 주 interop 어셈블리에서 선택적 매개 변수는 값으로 전달할 수 있습니다. 그러나 일부 주 interop 어셈블리에서 참조 형식을 사용하는 선택적 매개 변수는 참조로 전달해야 합니다.<br /><br /> 값 및 참조 형식 매개 변수에 대 한 자세한 내용은 [값으로 인수 전달 및 참조로 인수 전달 &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic의 경우) 및 [전달 매개 변수 &#40;C&#35; 프로그래밍 가이드&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)를 참조 하세요.|참조로 매개 변수를 전달하는 데는 추가 작업이 필요하지 않습니다. Visual Basic 컴파일러는 필요한 경우 자동으로 매개 변수를 참조로 전달합니다.|대부분의 경우 Visual C# 컴파일러는 필요한 경우 자동으로 매개 변수를 참조로 전달합니다. 자세한 내용은 [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)를 참조 하세요.|
@@ -115,11 +117,11 @@ ms.locfileid: "71255039"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Office 개발과 관리 코드의 주요 차이점
  다음 표에서는 Visual Basic 또는 Visual C#으로 작성된 관리 코드와 Office 개발의 주요 차이점을 보여 줍니다.
 
-|기능|설명|Visual Basic 및 Visual C# 지원|
+|기능|Description|Visual Basic 및 Visual C# 지원|
 |-------------|-----------------|-----------------------------------------|
 |배열 인덱스|Microsoft Office 애플리케이션에서 컬렉션의 배열 하한은 1부터 시작합니다. Visual Basic 및 Visual C#에서는 0부터 시작하는 배열을 사용합니다. 자세한 내용은 [배열 &#40;C&#35; 프로그래밍 가이드&#41;](/dotnet/csharp/programming-guide/arrays/index) 및 [Visual Basic에서 배열](/dotnet/visual-basic/programming-guide/language-features/arrays/index)을 참조 하세요.|Microsoft Office 애플리케이션의 개체 모델에서 컬렉션의 첫 번째 항목에 액세스하려면 인덱스 0 대신 1을 사용합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복'
+description: Visual Studio를 사용 하 여 Microsoft Word 문서에서 찾은 항목을 프로그래밍 방식으로 반복 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585147"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525618"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복
   클래스에는 <xref:Microsoft.Office.Interop.Word.Find> <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 검색 된 항목을 찾을 때마다 **true** 를 반환 하는 속성이 있습니다. <xref:Microsoft.Office.Interop.Word.Range> 메서드를 사용하여 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 에서 찾은 모든 인스턴스를 순환 검색할 수 있습니다.

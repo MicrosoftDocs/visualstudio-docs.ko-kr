@@ -1,5 +1,7 @@
 ---
 title: '연습: 런타임에 리본 메뉴의 컨트롤 업데이트'
+description: 리본이 Office 응용 프로그램에 로드 된 후 리본 개체 모델을 사용 하 여 리본 메뉴의 컨트롤을 업데이트 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298058"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526048"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>연습: 런타임에 리본 메뉴의 컨트롤 업데이트
 
@@ -60,9 +62,9 @@ ms.locfileid: "92298058"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>새 Outlook VSTO 추가 기능 프로젝트를 만들려면
 
-1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Ribbon_Update_At_Runtime**이름으로 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
+1. 에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Ribbon_Update_At_Runtime** 이름으로 Outlook VSTO 추가 기능 프로젝트를 만듭니다.
 
-2. **새 프로젝트** 대화 상자에서 **솔루션용 디렉터리 만들기**를 선택합니다.
+2. **새 프로젝트** 대화 상자에서 **솔루션용 디렉터리 만들기** 를 선택합니다.
 
 3. 기본 프로젝트 디렉터리에 프로젝트를 저장합니다.
 
@@ -74,35 +76,35 @@ ms.locfileid: "92298058"
 
 ### <a name="to-design-a-custom-group"></a>사용자 지정 그룹을 디자인하려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
 2. **새 항목 추가** 대화 상자에서 **리본(비주얼 디자이너)** 을 선택합니다.
 
-3. 새 리본의 이름을 **Customerribbon**로 변경한 다음 **추가**를 클릭 합니다.
+3. 새 리본의 이름을 **Customerribbon** 로 변경한 다음 **추가** 를 클릭 합니다.
 
      *CustomerRibbon.cs* 또는 *customerribbon .Vb* 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시 됩니다.
 
 4. 리본 디자이너를 클릭하여 선택합니다.
 
-5. **속성** 창에서 RibbonType 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음 **RibbonType** **를 클릭 합니다.**
+5. **속성** 창에서 RibbonType 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음  **를 클릭 합니다.**
 
      이렇게 하면 사용자가 Outlook에서 새 메일 메시지를 작성할 때 리본이 표시 됩니다.
 
 6. 리본 디자이너에서 **Group1** 을 클릭 하 여 선택 합니다.
 
-7. **속성** 창에서 **레이블** 을 **고객 구매**로 설정 합니다.
+7. **속성** 창에서 **레이블** 을 **고객 구매** 로 설정 합니다.
 
-8. **도구 상자**의 **Office 리본 컨트롤** 탭에서 **ComboBox** 를 **Customer 구매** 그룹으로 끌어 놓습니다.
+8. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 **ComboBox** 를 **Customer 구매** 그룹으로 끌어 놓습니다.
 
 9. **ComboBox1** 을 클릭 하 여 선택 합니다.
 
-10. **속성** 창에서 **레이블** 을 **고객**으로 설정 합니다.
+10. **속성** 창에서 **레이블** 을 **고객** 으로 설정 합니다.
 
-11. **도구 상자**의 **Office 리본 컨트롤** 탭에서 **메뉴** 를 **Customer 구매** 그룹으로 끌어 놓습니다.
+11. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 **메뉴** 를 **Customer 구매** 그룹으로 끌어 놓습니다.
 
-12. **속성** 창에서 **레이블** 을 **구매한 제품**으로 설정 합니다.
+12. **속성** 창에서 **레이블** 을 **구매한 제품** 으로 설정 합니다.
 
-13. **동적** 을 **true**로 설정 합니다.
+13. **동적** 을 **true** 로 설정 합니다.
 
      이렇게 하면 리본이 Office 응용 프로그램에 로드 된 후 런타임에 메뉴에 컨트롤을 추가 하 고 제거할 수 있습니다.
 
@@ -120,9 +122,9 @@ ms.locfileid: "92298058"
 
 3. **고객 구매** 그룹을 클릭 하 여 선택 합니다.
 
-4. **속성** 창에서 **Position** 속성을 확장 하 고 **PositionType** 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음 **BeforeOfficeId**를 클릭 합니다.
+4. **속성** 창에서 **Position** 속성을 확장 하 고 **PositionType** 속성 옆에 있는 드롭다운 화살표를 클릭 한 다음 **BeforeOfficeId** 를 클릭 합니다.
 
-5. 개인 **id** 속성을 **groupclipboard**로 설정 합니다.
+5. 개인 **id** 속성을 **groupclipboard** 로 설정 합니다.
 
      이렇게 하면 **고객 구매** 그룹이 **메시지** 탭의 **클립보드** 그룹 앞에 배치 됩니다.
 
@@ -132,25 +134,25 @@ ms.locfileid: "92298058"
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
 
-1. **데이터** 메뉴에서 **새 데이터 소스 추가**를 클릭합니다.
+1. **데이터** 메뉴에서 **새 데이터 소스 추가** 를 클릭합니다.
 
-     이렇게 하면 **데이터 소스 구성 마법사**가 시작 됩니다.
+     이렇게 하면 **데이터 소스 구성 마법사** 가 시작 됩니다.
 
-2. **데이터베이스**를 선택 하 고 **다음**을 클릭 합니다.
+2. **데이터베이스** 를 선택 하 고 **다음** 을 클릭 합니다.
 
-3. **데이터 집합**을 선택 하 고 **다음**을 클릭 합니다.
+3. **데이터 집합** 을 선택 하 고 **다음** 을 클릭 합니다.
 
 4. Northwind 샘플 Microsoft SQL Server Compact 4.0 데이터베이스에 대 한 데이터 연결을 선택 하거나 **새 연결** 단추를 사용 하 여 새 연결을 추가 합니다.
 
-5. 연결을 선택 하거나 만든 후 **다음**을 클릭 합니다.
+5. 연결을 선택 하거나 만든 후 **다음** 을 클릭 합니다.
 
 6. **다음** 을 클릭 하 여 연결 문자열을 저장 합니다.
 
-7. **데이터베이스 개체 선택** 페이지에서 **테이블**을 확장 합니다.
+7. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장 합니다.
 
 8. 다음 표의 옆에 있는 확인란을 각각 선택합니다.
 
-    1. **고객**
+    1. **통해**
 
     2. **주문 정보**
 
@@ -158,7 +160,7 @@ ms.locfileid: "92298058"
 
     4. **제품**
 
-9. **Finish**를 클릭합니다.
+9. **Finish** 를 클릭합니다.
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>런타임에 사용자 지정 그룹의 컨트롤 업데이트
 
@@ -172,15 +174,15 @@ ms.locfileid: "92298058"
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>리본 개체 모델을 사용하여 사용자 지정 그룹의 컨트롤을 업데이트하려면
 
-1. **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **참조 추가** 를 클릭합니다.
 
-2. **참조 추가** 대화 상자에서 **.net** 탭을 클릭 **하 고, System.xml 어셈블리를** 선택한 후 **확인**을 클릭 합니다.
+2. **참조 추가** 대화 상자에서 **.net** 탭을 클릭 **하 고, System.xml 어셈블리를** 선택한 후 **확인** 을 클릭 합니다.
 
     이 어셈블리에는 LINQ(Language-Integrated Queries)를 사용하기 위한 클래스가 포함되어 있습니다. LINQ를 사용하여 Northwind 데이터베이스의 데이터로 사용자 지정 그룹의 컨트롤을 채웁니다.
 
-3. **솔루션 탐색기**에서 **CustomerRibbon.cs** 또는 **customerribbon .vb** 를 클릭 하 여 선택 합니다.
+3. **솔루션 탐색기** 에서 **CustomerRibbon.cs** 또는 **customerribbon .vb** 를 클릭 하 여 선택 합니다.
 
-4. **보기** 메뉴에서 **코드**를 클릭합니다.
+4. **보기** 메뉴에서 **코드** 를 클릭합니다.
 
     코드 편집기에서 리본 코드 파일이 열립니다.
 
@@ -219,7 +221,7 @@ ms.locfileid: "92298058"
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. **솔루션 탐색기**에서 리본 코드 파일을 두 번 클릭 합니다.
+10. **솔루션 탐색기** 에서 리본 코드 파일을 두 번 클릭 합니다.
 
      리본 디자이너가 열립니다.
 
@@ -262,7 +264,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 
      Outlook이 시작됩니다.
 
-2. Outlook의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **메일 메시지**를 클릭 합니다.
+2. Outlook의 **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **메일 메시지** 를 클릭 합니다.
 
      다음 작업이 수행됩니다.
 
@@ -296,7 +298,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 
 - Outlook에 사용자 지정 작업창을 추가합니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)

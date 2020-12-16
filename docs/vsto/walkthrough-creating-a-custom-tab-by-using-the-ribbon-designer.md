@@ -1,5 +1,7 @@
 ---
 title: '연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기'
+description: 사용자 지정 탭을 만든 다음 리본 디자이너를 사용 하 여 컨트롤을 추가 하 고 위치를 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585017"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524834"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기
   리본 디자이너를 사용하여 사용자 지정 탭을 만들고 이 탭에 컨트롤을 추가 및 배치할 수 있습니다.
@@ -53,68 +55,68 @@ ms.locfileid: "91585017"
 
 ### <a name="to-create-an-excel-workbook-project"></a>Excel 통합 문서 프로젝트를 만들려면
 
-- 이름이 **Myexcelribbon**인 Excel 통합 문서 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
+- 이름이 **Myexcelribbon** 인 Excel 통합 문서 프로젝트를 만듭니다. 자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
-     Visual Studio가 디자이너에서 새 통합 문서를 열고 **Myexcelribbon** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
+     Visual Studio가 디자이너에서 새 통합 문서를 열고 **Myexcelribbon** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
 ## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> 작업 창 만들기
  프로젝트에 두 개의 사용자 지정 작업 창을 추가합니다. 나중에 이러한 작업 창을 표시하거나 숨기는 단추를 사용자 지정 탭에 추가합니다.
 
 ### <a name="to-create-actions-panes"></a>작업 창을 만들려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
-2. **새 항목 추가** 대화 상자에서 **ActionsPaneControl**을 선택 하 고 **추가**를 선택 합니다.
+2. **새 항목 추가** 대화 상자에서 **ActionsPaneControl** 을 선택 하 고 **추가** 를 선택 합니다.
 
      **ActionsPaneControl1.cs** 또는 **actionspanecontrol1.vb 파일이** 파일이 디자이너에서 열립니다.
 
-3. **도구 상자**의 **공용 컨트롤** 탭에서 디자이너 화면에 레이블을 추가 합니다.
+3. **도구 상자** 의 **공용 컨트롤** 탭에서 디자이너 화면에 레이블을 추가 합니다.
 
-4. **속성** 창에서 Label1의 **Text** 속성을 **Actions Pane 1**로 설정 합니다.
+4. **속성** 창에서 Label1의 **Text** 속성을 **Actions Pane 1** 로 설정 합니다.
 
-5. 1-5단계를 반복하여 두 번째 작업 창 및 레이블을 만듭니다. 두 번째 레이블의 **Text** 속성을 **Actions Pane 2**로 설정 합니다.
+5. 1-5단계를 반복하여 두 번째 작업 창 및 레이블을 만듭니다. 두 번째 레이블의 **Text** 속성을 **Actions Pane 2** 로 설정 합니다.
 
 ## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> 사용자 지정 탭 만들기
  Office 애플리케이션의 디자인 지침 중 하나는 사용자가 항상 Office 애플리케이션 UI를 제어할 수 있어야 한다는 것입니다. 작업 창에 대해 이 기능을 추가하려면 리본 메뉴의 사용자 지정 탭에서 각 작업 창을 표시하거나 숨기는 단추를 추가합니다. 사용자 지정 탭을 만들려면 프로젝트에 **리본 (비주얼 디자이너)** 항목을 추가 합니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다.
 
 ### <a name="to-create-a-custom-tab"></a>사용자 지정 탭을 만들려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
 2. **새 항목 추가** 대화 상자에서 **리본(비주얼 디자이너)** 을 선택합니다.
 
-3. 새 리본의 이름을 **myribbon.vb**로 변경 하 고 **추가**를 선택 합니다.
+3. 새 리본의 이름을 **myribbon.vb** 로 변경 하 고 **추가** 를 선택 합니다.
 
      **MyRibbon.cs** 또는 **MyRibbon.vb** 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시됩니다.
 
 4. 리본 디자이너에서 기본 탭을 선택합니다.
 
-5. **속성** 창에서 **ControlId** 속성을 확장 한 다음 **고 controlidtype** 속성을 **Custom**으로 설정 합니다.
+5. **속성** 창에서 **ControlId** 속성을 확장 한 다음 **고 controlidtype** 속성을 **Custom** 으로 설정 합니다.
 
-6. **레이블** 속성을 **My Custom Tab**으로 설정 합니다.
+6. **레이블** 속성을 **My Custom Tab** 으로 설정 합니다.
 
-7. 리본 디자이너에서 **group1**을 선택 합니다.
+7. 리본 디자이너에서 **group1** 을 선택 합니다.
 
-8. **속성** 창에서 **Label** 을 **Actions Pane Manager**로 설정 합니다.
+8. **속성** 창에서 **Label** 을 **Actions Pane Manager** 로 설정 합니다.
 
-9. **도구 상자**의 **Office 리본 컨트롤** 탭에서 단추를 **group1**로 끌어 옵니다.
+9. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 단추를 **group1** 로 끌어 옵니다.
 
-10. **Button1**을 선택 합니다.
+10. **Button1** 을 선택 합니다.
 
-11. **속성** 창에서 **Label** 을 **Show Actions Pane 1**로 설정 합니다.
+11. **속성** 창에서 **Label** 을 **Show Actions Pane 1** 로 설정 합니다.
 
-12. **Group1**에 두 번째 단추를 추가 하 고 **Label** 속성을 **Show Actions Pane 2**로 설정 합니다.
+12. **Group1** 에 두 번째 단추를 추가 하 고 **Label** 속성을 **Show Actions Pane 2** 로 설정 합니다.
 
-13. **도구 상자**의 **Office 리본 컨트롤** 탭에서 **ToggleButton** 컨트롤을 **group1**로 끌어 옵니다.
+13. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 **ToggleButton** 컨트롤을 **group1** 로 끌어 옵니다.
 
-14. **Label** 속성을 **Hide Actions Pane**으로 설정 합니다.
+14. **Label** 속성을 **Hide Actions Pane** 으로 설정 합니다.
 
 ## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> 사용자 지정 탭의 단추를 사용 하 여 작업 창 숨기기 및 표시
  마지막 단계는 사용자에게 응답하는 코드를 추가하는 것입니다. 두 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 이벤트와 설정/해제 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 이벤트에 대한 이벤트 처리기를 추가합니다. 이러한 이벤트 처리기에 작업 창을 숨기거나 표시할 수 있는 코드를 추가합니다.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>사용자 지정 탭의 단추를 사용하여 작업 창을 숨기거나 표시하려면
 
-1. **솔루션 탐색기**에서 *MyRibbon.cs* 또는 *myribbon.vb*에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 *MyRibbon.cs* 또는 *myribbon.vb* 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 2. 다음 코드를 `MyRibbon` 클래스의 맨 위에 추가합니다. 이 코드는 두 개의 작업 창 개체를 만듭니다.
 
@@ -140,15 +142,15 @@ ms.locfileid: "91585017"
 
 2. **My Custom tab** 탭을 선택 합니다.
 
-3. **사용자 지정 작업 창 관리자** 그룹에서 **Show Actions pane 1**을 선택 합니다.
+3. **사용자 지정 작업 창 관리자** 그룹에서 **Show Actions pane 1** 을 선택 합니다.
 
-     작업 창이 나타나고 레이블 **작업 창 1**이 표시 됩니다.
+     작업 창이 나타나고 레이블 **작업 창 1** 이 표시 됩니다.
 
-4. **Show Actions Pane 2**를 선택 합니다.
+4. **Show Actions Pane 2** 를 선택 합니다.
 
-     작업 창이 나타나고 레이블 **작업 창 2**가 표시 됩니다.
+     작업 창이 나타나고 레이블 **작업 창 2** 가 표시 됩니다.
 
-5. **작업 창 숨기기**를 선택 합니다.
+5. **작업 창 숨기기** 를 선택 합니다.
 
      작업 창이 더 이상 표시되지 않습니다.
 

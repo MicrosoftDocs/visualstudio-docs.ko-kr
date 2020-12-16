@@ -1,5 +1,7 @@
 ---
 title: Excel 워크시트에서 Windows Forms 컨트롤 사용
+description: Windows Forms에 컨트롤을 추가 하는 것과 동일한 방식으로 Microsoft Excel 통합 문서에 Windows Forms 컨트롤을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982315"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526524"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Excel 워크시트에서 Windows Forms 컨트롤 사용
   Windows Forms에 컨트롤을 추가 하는 것과 같은 방식으로 Microsoft Office Excel 통합 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 문서에서 컨트롤을 사용 하는 방법에 대 한 일반적인 내용은 [Office 문서의 컨트롤 Windows Forms 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)를 참조 하세요.
@@ -38,7 +40,7 @@ ms.locfileid: "62982315"
 ### <a name="formula-for-embedding-controls"></a>컨트롤 포함에 대 한 수식
  Excel에서 컨트롤을 선택하는 경우 **수식 입력줄** 에 **=EMBED("WinForms.Control.Host","")** 가 표시됩니다. 이 텍스트는 필요하며 삭제하면 안 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 워크시트 셀에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [방법: 인쇄할 때 워크시트에서 컨트롤 숨기기](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)

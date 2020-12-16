@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 VBA 및 Office 솔루션 비교
+description: Visual Studio의 Microsoft Visual Basic for Applications (VBA) 및 Microsoft Office 솔루션 간의 차이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982130"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526417"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio의 VBA 및 Office 솔루션 비교
   Microsoft VBA(Visual Basic for Applications)는 Office 애플리케이션과 긴밀하게 통합되는 비관리 코드를 사용합니다. Visual Studio를 사용하여 만든 Microsoft Office 프로젝트를 사용하면 .NET Framework 및 Visual Studio 디자인 도구를 활용할 수 있습니다.
@@ -45,7 +47,7 @@ ms.locfileid: "62982130"
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Visual Studio를 사용 하 여 만든 VBA 솔루션과 Office 솔루션 결합
  Visual Studio를 사용하여 만든 Office 솔루션에서 VBA 코드를 호출할 수 있으며 VBA에서 Visual Studio를 사용하여 만든 Office 솔루션에서 코드를 호출할 수도 있습니다. 구체적인 방법은 Office 솔루션이 VSTO 추가 기능인지, 아니면 문서 수준 사용자 지정인지에 따라 다릅니다. 자세한 내용은 [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) 및 [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)

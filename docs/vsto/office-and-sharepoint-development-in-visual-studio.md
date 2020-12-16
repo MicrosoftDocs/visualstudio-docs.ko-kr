@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에서 Office 및 SharePoint 개발
+description: 사용자가 Office 스토어에서 다운로드 하는 간단한 앱 또는 추가 기능을 만들어 Microsoft Office 및 SharePoint를 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811034"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525341"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio에서 Office 및 SharePoint 개발
   사용자가 [Office 스토어](https://store.office.com/) 또는 조직 카탈로그에서 다운로드하는 간단한 앱 또는 추가 기능이나 컴퓨터에 설치하는 .NET Framework 기반 솔루션을 만들어 Microsoft Office 및 SharePoint를 확장할 수 있습니다.

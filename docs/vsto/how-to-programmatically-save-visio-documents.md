@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Visio 문서 저장'
+description: Visual Studio를 사용 하 여 아직 저장 되지 않은 Microsoft Visio 기존 문서 및 새 문서를 프로그래밍 방식으로 저장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f8cbc8aa7b2ea796109a8143d348905df671f7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547058"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525390"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 저장
   여러 가지 방법을 사용하여 Microsoft Office Visio 문서를 저장할 수 있습니다.
@@ -74,7 +76,7 @@ ms.locfileid: "85547058"
 
 - 새 이름이 있는 문서를 저장 하려면 이름이 인 디렉터리가 `Test` *내 문서* 폴더 (windows XP 및 이전) 또는 *문서* 폴더 (windows Vista)에 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 새 Visio 문서 만들기](../vsto/how-to-programmatically-create-new-visio-documents.md)

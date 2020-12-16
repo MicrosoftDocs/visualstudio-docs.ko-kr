@@ -1,5 +1,7 @@
 ---
 title: ListObject 컨트롤
+description: ListObject 컨트롤은 이벤트를 노출 하 고 데이터에 바인딩될 수 있는 목록입니다. 디자인 타임 또는 런타임에 ListObject 컨트롤을 워크시트에 추가할 수도 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251860"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526596"
 ---
 # <a name="listobject-control"></a>ListObject 컨트롤
   <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 이벤트를 노출하고, 데이터에 바인딩될 수 있는 목록입니다. 워크시트에 목록을 추가하면 Visual Studio에서 Microsoft Office Excel 개체 모델을 트래버스하지 않고 직접 프로그래밍할 수 있는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 만듭니다.
@@ -107,7 +109,7 @@ ms.locfileid: "71251860"
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)
 - [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [방법: ListObject 컨트롤 크기 조정](../vsto/how-to-resize-listobject-controls.md)

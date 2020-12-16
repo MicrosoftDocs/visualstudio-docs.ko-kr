@@ -1,5 +1,7 @@
 ---
 title: '연습: PowerPoint 용 첫 VSTO 추가 기능 만들기'
+description: Microsoft PowerPoint 용 응용 프로그램 수준 추가 기능을 만듭니다. 이 기능은 열려 있는 프레젠테이션에 관계 없이 응용 프로그램 자체에서 사용할 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584310"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524857"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint 용 첫 VSTO 추가 기능 만들기
   이 연습에서는 Microsoft Office PowerPoint 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -53,17 +55,17 @@ ms.locfileid: "91584310"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+2. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 
-3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.
+3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic** 을 확장한 다음 **Office/SharePoint** 를 확장합니다.
 
 4. 확장된 **Office/SharePoint** 노드 아래에서 **Office 추가 기능** 노드를 선택합니다.
 
 5. 프로젝트 템플릿 목록에서 PowerPoint VSTO 추가 기능 프로젝트를 선택합니다.
 
-6. **이름** 상자에 **FirstPowerPointAddIn**을 입력 합니다.
+6. **이름** 상자에 **FirstPowerPointAddIn** 을 입력 합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**FirstPowerPointAddIn** 프로젝트를 만들고 **ThisAddIn** 코드 파일을 편집기에서 엽니다.
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584310"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>각각의 새 슬라이드에 텍스트 상자를 추가하려면
 
-1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 [응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 개체의 [PresentationNewSlide 이벤트 EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 에 대 한 이벤트 처리기를 정의 합니다.
+1. ThisAddIn 코드 파일에서 다음 코드를 `ThisAddIn` 클래스에 추가합니다. 이 코드는 [응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 개체의 [PresentationNewSlide 이벤트 Microsoft.Office.Interop.PowerPoint.EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 에 대 한 이벤트 처리기를 정의 합니다.
 
     사용자가 활성 프레젠테이션에 새 슬라이드를 추가하면 이 이벤트 처리기가 새 슬라이드의 맨 위에 텍스트 상자를 추가하고 텍스트 상자에 일부 텍스트를 추가합니다.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_PresentationNewSlide` 이벤트 처리기를 [PresentationNewSlide 이벤트 EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 와 연결 하는 데 필요 합니다.
+2. C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_PresentationNewSlide` 이벤트 처리기를 [Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트와 연결 하는 데 필요 합니다.
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584310"
 
 - `Application` 클래스의 `ThisAddIn` 필드. `Application`필드는 PowerPoint의 현재 인스턴스를 나타내는 [응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) 개체를 반환 합니다.
 
-- `Sld` [PresentationNewSlide 이벤트 EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 에 대 한 이벤트 처리기의 매개 변수입니다. `Sld`매개 변수는 새 슬라이드를 나타내는 [슬라이드](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) 개체입니다. 자세한 내용은 [PowerPoint solutions](../vsto/powerpoint-solutions.md)을 참조 하세요.
+- `Sld` [PresentationNewSlide 이벤트 Microsoft.Office.Interop.PowerPoint.EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 에 대 한 이벤트 처리기의 매개 변수입니다. `Sld`매개 변수는 새 슬라이드를 나타내는 [슬라이드](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) 개체입니다. 자세한 내용은 [PowerPoint solutions](../vsto/powerpoint-solutions.md)을 참조 하세요.
 
 ## <a name="test-the-project"></a>프로젝트 테스트
  프로젝트를 빌드 및 실행하는 경우 프레젠테이션에 추가하는 새 슬라이드에 텍스트 상자가 표시되는지 확인합니다.
@@ -115,7 +117,7 @@ ms.locfileid: "91584310"
 
 ### <a name="to-clean-up-your-project"></a>프로젝트를 정리하려면
 
-1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리**를 클릭합니다.
+1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리** 를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
  기본적인 PowerPoint용 VSTO 추가 기능을 만들었으므로 다음 항목에서 VSTO 추가 기능을 개발하는 방법에 대해 자세히 알아볼 수 있습니다.

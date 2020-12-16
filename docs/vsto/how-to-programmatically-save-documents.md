@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서 저장'
+description: Visual Studio를 사용 하 여 문서 이름 또는 새 이름을 변경 하지 않고 프로그래밍 방식으로 문서를 저장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537594"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525466"
 ---
 # <a name="how-to-programmatically-save-documents"></a>방법: 프로그래밍 방식으로 문서 저장
 
@@ -56,7 +58,7 @@ Word 문서 Microsoft Office 저장 하는 방법에는 여러 가지가 있습�
 `SaveAs`새 이름으로 문서를 저장 하려면 메서드를 사용 합니다. <xref:Microsoft.Office.Tools.Word.Document>문서 수준 word 프로젝트의 호스트 항목 또는 word 프로젝트의 네이티브 개체에 대해이 메서드를 사용할 수 있습니다 <xref:Microsoft.Office.Interop.Word.Document> . 이 메서드를 사용 하려면 새 파일 이름을 지정 해야 하지만 다른 인수는 선택 사항입니다.
 
 > [!NOTE]
-> 의 이벤트 처리기 내에 다른 **이름으로 저장** 대화 상자를 표시 하 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> `ThisDocument` 고 *Cancel* 매개 변수를 **false**로 설정 하면 응용 프로그램이 예기치 않게 종료 될 수 있습니다. *Cancel* 매개 변수를 **true**로 설정 하면 자동 저장이 사용 하지 않도록 설정 되었음을 나타내는 오류 메시지가 나타납니다.
+> 의 이벤트 처리기 내에 다른 **이름으로 저장** 대화 상자를 표시 하 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> `ThisDocument` 고 *Cancel* 매개 변수를 **false** 로 설정 하면 응용 프로그램이 예기치 않게 종료 될 수 있습니다. *Cancel* 매개 변수를 **true** 로 설정 하면 자동 저장이 사용 하지 않도록 설정 되었음을 나타내는 오류 메시지가 나타납니다.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>문서 수준 사용자 지정과 연결 된 문서를 새 이름으로 저장 하려면
 
@@ -75,7 +77,7 @@ Word 문서 Microsoft Office 저장 하는 방법에는 여러 가지가 있습�
      다음 코드 예제에서는 활성 문서를 새 이름으로 저장 합니다. 이 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에서 실행합니다.
 
     > [!NOTE]
-    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>대상 디렉터리가 없거나 파일을 저장 하는 다른 문제가 있는 경우 메서드는 예외를 throw 합니다. Try ...를 사용 하는 것이 좋습니다. ** ** <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> 메서드 주위 또는 호출 하는 메서드 내부에서 블록을 catch 합니다.
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>대상 디렉터리가 없거나 파일을 저장 하는 다른 문제가 있는 경우 메서드는 예외를 throw 합니다. Try ...를 사용 하는 것이 좋습니다. **** <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> 메서드 주위 또는 호출 하는 메서드 내부에서 블록을 catch 합니다.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]
@@ -88,7 +90,7 @@ Word 문서 Microsoft Office 저장 하는 방법에는 여러 가지가 있습�
 
 - 새 이름으로 문서를 저장 하려면 C 드라이브에 *Test* 라는 디렉터리가 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [방법: 프로그래밍 방식으로 문서 닫기](../vsto/how-to-programmatically-close-documents.md)
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)

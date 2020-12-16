@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 런타임 설치 시나리오
+description: Visual Studio 2010 Tools for Office runtime을 설치 하는 방법에 대해 알아봅니다. 이 문서에서는 세 가지 설치 시나리오에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 484627c01a5385a6da4b2b0a41a966ac31d0e6d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584375"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526407"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office 런타임 설치 시나리오
   다음 세 가지 방법으로 Visual Studio 2010 Tools for Office runtime을 설치할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "91584375"
   설치된 런타임 구성 요소는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다.
 
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>각 설치 시나리오에 설치 된 런타임 구성 요소
- Visual Studio 2010 Tools for Office runtime에는 Office 솔루션 로더, .NET Framework 3.5 용 Office 확장 및 이상용 Office 확장의 세 가지 구성 요소가 있습니다. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 런타임을 설치할 때 Office 솔루션 로더가 항상 설치됩니다. .NET Framework용 Office 확장의 설치는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다. 런타임을 처음 설치할 때 Office 확장명 중 하나를 설치할 수 없는 경우 런타임은 나중에 특정 요구 사항이 충족될 때 없는 Office 확장을 자동으로 설치합니다. 런타임의이 기능을 *요청 시 설치*라고 합니다.
+ Visual Studio 2010 Tools for Office runtime에는 Office 솔루션 로더, .NET Framework 3.5 용 Office 확장 및 이상용 Office 확장의 세 가지 구성 요소가 있습니다. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 런타임을 설치할 때 Office 솔루션 로더가 항상 설치됩니다. .NET Framework용 Office 확장의 설치는 컴퓨터의 구성과 설치 시나리오에 따라 달라집니다. 런타임을 처음 설치할 때 Office 확장명 중 하나를 설치할 수 없는 경우 런타임은 나중에 특정 요구 사항이 충족될 때 없는 Office 확장을 자동으로 설치합니다. 런타임의이 기능을 *요청 시 설치* 라고 합니다.
 
  다음 표에서는 각 런타임 설치 시나리오에서 기본적으로 설치되는 런타임 구성 요소를 보여 줍니다. 각 시나리오에 대한 자세한 내용은 뒷부분에 있습니다.
 

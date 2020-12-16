@@ -1,5 +1,7 @@
 ---
 title: '연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍'
+description: Visual Studio의 Office 개발 도구를 사용 하 여 Microsoft Excel 워크시트에 NamedRange 컨트롤을 추가 하 고 해당 이벤트에 대해 프로그램을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584939"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526130"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍
   이 연습에서는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio에서 Office 개발 도구를 사용 하 여 Microsoft Office Excel 워크시트 및 프로그램에 컨트롤을 추가 하는 방법을 보여 줍니다.
@@ -52,14 +54,14 @@ ms.locfileid: "91584939"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. 이름이 **My 명명 된 범위 이벤트**인 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름이 **My 명명 된 범위 이벤트** 인 Excel 통합 문서 프로젝트를 만듭니다. **새 문서 만들기** 가 선택 되어 있는지 확인 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
      Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **솔루션 탐색기** **내 명명 된 범위 이벤트** 프로젝트를 추가 합니다.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>워크시트에 텍스트 및 명명 된 범위 추가
- 호스트 컨트롤이 확장 된 Office 개체 이기 때문에 네이티브 개체를 추가 하는 것과 동일한 방식으로 문서에 추가할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> **삽입** 메뉴를 열고 **이름**을 가리킨 다음 **정의**를 선택 하 여 Excel 컨트롤을 워크시트에 추가할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.NamedRange> **도구 상자** 에서 워크시트로 끌어와 서 컨트롤을 추가할 수도 있습니다.
+ 호스트 컨트롤이 확장 된 Office 개체 이기 때문에 네이티브 개체를 추가 하는 것과 동일한 방식으로 문서에 추가할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> **삽입** 메뉴를 열고 **이름** 을 가리킨 다음 **정의** 를 선택 하 여 Excel 컨트롤을 워크시트에 추가할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.NamedRange> **도구 상자** 에서 워크시트로 끌어와 서 컨트롤을 추가할 수도 있습니다.
 
- 이 단계에서는 **도구 상자**를 사용 하 여 워크시트에 두 개의 명명 된 범위 컨트롤을 추가한 다음 워크시트에 텍스트를 추가 합니다.
+ 이 단계에서는 **도구 상자** 를 사용 하 여 워크시트에 두 개의 명명 된 범위 컨트롤을 추가한 다음 워크시트에 텍스트를 추가 합니다.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>워크시트에 범위를 추가 하려면
 
@@ -71,21 +73,21 @@ ms.locfileid: "91584939"
 
 3. **$A $1** 이 편집 가능 텍스트 상자에 표시 되 고 **A1** 셀이 선택 되어 있는지 확인 합니다. 그렇지 않으면 **A1** 셀을 클릭 하 여 선택 합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
      **A1** 셀은 이름이 인 범위가 됩니다 `namedRange1` . 워크시트에는 표시 되지 않지만 `namedRange1` **A1** 셀을 선택 하면 **이름** 상자에 표시 됩니다 (왼쪽에 워크시트 바로 위에 있음).
 
-5. <xref:Microsoft.Office.Tools.Excel.NamedRange> **B3**셀에 다른 컨트롤을 추가 합니다.
+5. <xref:Microsoft.Office.Tools.Excel.NamedRange> **B3** 셀에 다른 컨트롤을 추가 합니다.
 
 6. **$B $3** 이 편집 가능 텍스트 상자에 표시 되 고 **B3** 셀이 선택 되어 있는지 확인 합니다. 그렇지 않으면 **B3** 셀을 클릭 하 여 선택 합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
      **B3** 셀은 이름이 인 범위가 됩니다 `namedRange2` .
 
 ### <a name="to-add-text-to-your-worksheet"></a>워크시트에 텍스트를 추가 하려면
 
-1. **A1**셀에 다음 텍스트를 입력 합니다.
+1. **A1** 셀에 다음 텍스트를 입력 합니다.
 
     **이는 NamedRange 컨트롤의 예입니다.**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584939"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>BeforeDoubleClick 이벤트를 기반으로 NamedRange2에 텍스트를 삽입 하려면
 
-1. **솔루션 탐색기**에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택 합니다.
 
 2. 이벤트 처리기가 다음과 같이 표시 되도록 코드를 추가 합니다 `namedRange1_BeforeDoubleClick` .
 

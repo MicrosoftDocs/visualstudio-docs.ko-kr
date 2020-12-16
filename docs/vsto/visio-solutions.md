@@ -1,5 +1,7 @@
 ---
 title: Visio 솔루션
+description: VSTO 추가 기능을 사용 하 여 Visio를 자동화 하거나, Visio 기능을 확장 하거나, Visio UI (사용자 인터페이스)를 사용자 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985503"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526377"
 ---
 # <a name="visio-solutions"></a>Visio 솔루션
   Visual Studio에서는 Microsoft Office Visio용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Visio를 자동화하거나, Visio 기능을 확장하거나, Visio UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.
@@ -58,13 +60,13 @@ ms.locfileid: "72985503"
 ## <a name="customize-the-user-interface-of-visio"></a>Visio의 사용자 인터페이스 사용자 지정
  Visio UI에는 다음과 같은 사용자 지정 옵션이 있습니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |리본 메뉴 사용자 지정|[리본 개요](../vsto/ribbon-overview.md)|
 
  Visio UI를 사용자 지정하는 방법에 대한 자세한 내용은 [Visio.UIObject](/office/vba/api/Visio.UIObject) 클래스에 대한 VBA 참조 설명서를 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

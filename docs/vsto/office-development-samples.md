@@ -1,5 +1,7 @@
 ---
 title: Office 개발 샘플
+description: Microsoft Office 개발자 도구를 사용 하 여 Office 솔루션을 만드는 방법을 보여 주는 샘플 Visual Studio 응용 프로그램에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985733"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525173"
 ---
 # <a name="office-development-samples"></a>Office 개발 샘플
   Visual Studio에는 Microsoft Office 개발자 도구를 사용하여 Office 솔루션을 만드는 방법을 보여 주는 샘플 애플리케이션이 포함되어 있습니다. 이러한 샘플의 코드는 Office 솔루션을 빌드하는 데 사용되는 구문, 구조 및 기술을 보여 줍니다.
@@ -40,5 +42,5 @@ ms.locfileid: "72985733"
 |UI 관리자 샘플|VSTO 추가 기능에서 확장성 인터페이스를 구현하여 Outlook에 대한 리본 메뉴 사용자 지정, 사용자 지정 작업창 및 사용자 지정 양식 영역을 만드는 방법을 보여 줍니다. 리본, 작업창 및 양식 영역의 각 인스턴스는 서로 올바르게 통신할 수 있습니다.|
 |VBA 및 VSTO 상호 운용성 샘플|통합 문서의 VBA(Visual Basic for Applications) 코드에서 Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다.<br /><br /> 이 샘플은 온라인에서만 사용할 수 있습니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 프로그래밍의 일반적인 작업](../vsto/common-tasks-in-office-programming.md)

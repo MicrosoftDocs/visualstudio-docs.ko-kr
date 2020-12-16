@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 최근에 사용한 통합 문서 파일 나열'
+description: Visual Studio를 사용 하 여 프로그래밍 방식으로 최근에 사용한 Microsoft Excel 통합 문서 파일을 나열 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585160"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525638"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>방법: 프로그래밍 방식으로 최근에 사용한 통합 문서 파일 나열
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>속성은 Microsoft Office Excel에서 최근에 사용한 파일 목록에 표시 되는 모든 파일의 이름을 포함 하는 컬렉션을 반환 합니다. 목록의 길이는 사용자가 유지 하도록 선택한 파일 수에 따라 달라 집니다. 범위에 결과를 표시할 수 있습니다.

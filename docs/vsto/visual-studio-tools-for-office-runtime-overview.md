@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office 런타임 개요
+description: Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하려면 최종 사용자 컴퓨터에 Visual Studio 2010 Tools for Office runtime이 설치 되어 있어야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253994"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526278"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office 런타임 개요
   Visual Studio의 Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하려면 최종 사용자 컴퓨터에 Visual Studio 2010 Tools for Office runtime이 설치 되어 있어야 합니다. 자세한 내용은 [방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)를 참조 하세요. Visual Studio 2010 Tools for Office runtime은 다음 두 가지 주요 구성 요소로 구성 됩니다.
@@ -53,14 +55,14 @@ ms.locfileid: "71253994"
  대부분의 경우 Office 솔루션에서 작성하는 코드는 솔루션이 .NET Framework 3.5를 대상으로 하는지 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]을 대상으로 하는지 여부에 관계없이 동일합니다. 그러나 다른 버전의 .NET Framework를 대상으로 하는 경우 일부 기능에는 다른 코드가 필요합니다. 자세한 내용은 [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)을 참조 하세요.
 
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>.NET Framework 4 이상용 Office 확장의 인터페이스
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상용 Office 확장에 있는 대부분의 인터페이스는 사용자 코드에서 구현되지 않도록 되어 있습니다. 직접 구현할 수 있는 인터페이스에는와 같이 문자 **I**로 시작 하는 이름이 있습니다 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension> .
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상용 Office 확장에 있는 대부분의 인터페이스는 사용자 코드에서 구현되지 않도록 되어 있습니다. 직접 구현할 수 있는 인터페이스에는와 같이 문자 **I** 로 시작 하는 이름이 있습니다 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension> .
 
  문자 **I** 로 시작 하지 않는 모든 인터페이스는 Visual Studio 2010 Tools for Office runtime에 의해 내부적으로 구현 되며 이러한 인터페이스는 이후 릴리스에서 변경 될 수 있습니다. 이러한 인터페이스를 구현하는 개체를 만들려면 `Globals.Factory` 개체에서 제공하는 메서드를 프로젝트에 사용합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.SmartTag> 인터페이스를 구현하는 개체를 가져오려면 `Globals.Factory.CreateSmartTag` 메서드를 사용합니다. 에 대 한 자세한 내용은 `Globals.Factory` [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요.
 
 ### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>.NET Framework 4 이상을 대상으로 하는 프로젝트에서 동일 형식 및 포함 된 형식 사용
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상용 Office 확장의 개체 모델이 인터페이스를 기반으로 하기 때문에 Visual Studio에서 Visual C# 및 Visual Basic 모두의 동일 형식 기능을 사용하여 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 의 형식 정보를 솔루션에 포함할 수 있습니다. 이 기능을 통해 Office 솔루션 및 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 이 서로 독립적인 버전이 됩니다. 예를 들어 솔루션에서 <xref:Microsoft.Office.Tools.Word.Document> 인터페이스를 포함된 형식으로 사용하고 런타임의 향후 버전에서 <xref:Microsoft.Office.Tools.Word.Document> 인터페이스에 멤버를 추가하는 경우 해당 솔루션은 런타임의 향후 버전에서도 계속 작동합니다. 솔루션에서 <xref:Microsoft.Office.Tools.Word.Document> 인터페이스를 포함된 형식으로 사용하지 않는 경우 해당 솔루션은 런타임의 향후 버전에서 더 이상 작동하지 않습니다.
 
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트를 만드는 경우 동일 형식 기능은 기본적으로 사용되지 않습니다. 이 기능이 사용되도록 설정하려면 프로젝트에서 다음 어셈블리 참조 중 하나의 **Interop 형식 포함** 속성을 **True**로 설정합니다.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트를 만드는 경우 동일 형식 기능은 기본적으로 사용되지 않습니다. 이 기능이 사용되도록 설정하려면 프로젝트에서 다음 어셈블리 참조 중 하나의 **Interop 형식 포함** 속성을 **True** 로 설정합니다.
 
 - Microsoft.Office.Tools.dll
 
@@ -113,7 +115,7 @@ ms.locfileid: "71253994"
  Office의 64비트 버전은 Visual Studio 2008에서 2007 Microsoft Office system용 프로젝트 템플릿을 사용하여 만든 Office 솔루션도 실행할 수 있습니다. 그러나 Visual Studio 2008에서 Microsoft Office 2003용 프로젝트 템플릿을 사용하여 만든 Office 솔루션 또는 Visual Studio 2005를 사용하여 만든 Office 솔루션은 실행할 수 없습니다. 자세한 내용은 [여러 버전의 Microsoft Office에서 솔루션 실행](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)을 참조 하세요.
 
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Visual Studio 2010 Tools for Office runtime 복구
- 런타임을 복구해야 하는 경우 제어판에서 **프로그램 및 기능** 이나 **프로그램 추가/제거** 를 열고 프로그램 목록에서 **Microsoft Visual Studio 2010 Tools for Office Runtime** 을 선택한 다음 **제거**를 클릭합니다. 실행되는 설치 프로그램에서 런타임을 복구할 수 있습니다. **변경**을 클릭하면 런타임을 복구하기 위한 옵션이 표시되지 않습니다.
+ 런타임을 복구해야 하는 경우 제어판에서 **프로그램 및 기능** 이나 **프로그램 추가/제거** 를 열고 프로그램 목록에서 **Microsoft Visual Studio 2010 Tools for Office Runtime** 을 선택한 다음 **제거** 를 클릭합니다. 실행되는 설치 프로그램에서 런타임을 복구할 수 있습니다. **변경** 을 클릭하면 런타임을 복구하기 위한 옵션이 표시되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서의 범위 확장'
+description: 문서 수준 또는 응용 프로그램 수준에서 Microsoft Word 문서에서 프로그래밍 방식으로 시작 및 종료 지점 범위를 확장 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ed056b5cebcebb6fe2dffd66dc374e4e1f9205
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547422"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525734"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 확장
-  Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 두 개의 인수, 즉 *Unit* 및 *Count*를 사용 합니다. *Count* 인수는 이동할 단위의 수이 고, *Unit* 인수는 다음 값 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> .
+  Microsoft Office Word 문서에서 <xref:Microsoft.Office.Interop.Word.Range> 개체를 정의한 후 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드를 사용하여 해당 개체의 시작점과 끝점을 변경합니다. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>및 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 메서드는 두 개의 인수, 즉 *Unit* 및 *Count* 를 사용 합니다. *Count* 인수는 이동할 단위의 수이 고, *Unit* 인수는 다음 값 중 하나일 수 있습니다 <xref:Microsoft.Office.Interop.Word.WdUnits> .
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 

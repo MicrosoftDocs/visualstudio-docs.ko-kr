@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트 보호'
+description: Microsoft Excel의 보호 기능을 사용 하 여 사용자와 코드가 워크시트의 개체를 수정 하지 못하도록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545901"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526761"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 보호
   Microsoft Office Excel의 보호 기능은 사용자 및 코드가 워크시트의 개체를 수정할 수 없도록 차단합니다. 기본적으로 보호를 설정하면 모든 셀이 잠깁니다.
@@ -36,7 +38,7 @@ ms.locfileid: "85545901"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>디자이너에서 워크시트를 보호하려면
 
-1. **검토** 탭의 **변경 내용** 그룹에서 **시트 보호**를 클릭 합니다.
+1. **검토** 탭의 **변경 내용** 그룹에서 **시트 보호** 를 클릭 합니다.
 
     **시트 보호** 대화 상자가 나타납니다. 암호를 설정할 수 있으며, 필요에 따라 셀 서식 지정 또는 행 삽입과 같이 사용자가 워크시트에서 수행할 수 있는 특정 작업을 지정할 수 있습니다.
 
@@ -44,7 +46,7 @@ ms.locfileid: "85545901"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>특정 범위에서 편집을 허용하려면
 
-1. **검토** 탭의 **변경** 그룹에서 **사용자가 범위를 편집할 수 있도록 허용**을 클릭 합니다.
+1. **검토** 탭의 **변경** 그룹에서 **사용자가 범위를 편집할 수 있도록 허용** 을 클릭 합니다.
 
      **사용자가 범위를 편집할 수 있도록 허용** 대화 상자가 나타납니다. 암호를 사용하여 잠금 해제되는 범위 및 암호 없이 범위를 편집할 수 있는 사용자를 지정할 수 있습니다.
 
@@ -65,7 +67,7 @@ ms.locfileid: "85545901"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트에서 보호 제거](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [방법: 프로그래밍 방식으로 통합 문서 보호](../vsto/how-to-programmatically-protect-workbooks.md)

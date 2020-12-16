@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 업그레이드 및 마이그레이션
+description: 이전 버전의 Visual Studio에서 만든 Offince 프로젝트를 사용 하는 경우 현재 버전의 Visual Studio에서 사용 하려면 프로젝트를 업그레이드 해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808791"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526613"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office 솔루션 업그레이드 및 마이그레이션
   Microsoft Office 프로젝트를 이전 버전 Visual Studio에서 만든 경우 현재 버전의 Visual Studio에서 사용하려면 프로젝트를 업그레이드해야 합니다. Microsoft Office 프로젝트를 업그레이드하려면 Microsoft Office 개발자 도구가 포함된 Visual Studio 버전에서 프로젝트를 엽니다. Microsoft Office 개발자 도구를 포함 하는 Visual Studio 버전에 대 한 자세한 내용은 [Office 솔루션을 개발할 수 있도록 컴퓨터 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)을 참조 하세요.
@@ -83,7 +85,7 @@ ms.locfileid: "90808791"
 
  ClickOnce를 사용하여 VSTO 추가 기능을 배포하려면 설치 프로그램 또는 InstallShield Limited Edition 프로젝트를 완전히 삭제할 수 있습니다. ClickOnce를 사용 하 여 VSTO 추가 기능을 배포 하는 방법에 대 한 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Office 솔루션 업그레이드](/previous-versions/4bez6837(v=vs.140))
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [옵션 대화 상자, 프로젝트 업그레이드](../vsto/project-upgrade-options-dialog-box.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: Office 다국어 사용자 인터페이스 대상'
+description: Visual Studio를 사용 하 여 프로그래밍 방식으로 Microsoft Office 다국어 사용자 인터페이스를 대상으로 지정할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537503"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526618"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>방법: Office 다국어 사용자 인터페이스 대상
   MUI (다국어 사용자 인터페이스)는 최종 사용자에 게 UI (사용자 인터페이스)의 언어를 변경할 수 있는 기능을 제공 하는 Microsoft Office 기능입니다. 예를 들어 영어 UI를 사용 하 여 작업 하는 최종 사용자는 UI의 언어를 스페인어로 변경할 수 있습니다.
@@ -38,6 +40,6 @@ ms.locfileid: "85537503"
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Office 솔루션의 런타임에 바인딩](../vsto/late-binding-in-office-solutions.md)

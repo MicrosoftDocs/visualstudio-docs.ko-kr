@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트에서 행 그룹화'
+description: NamedRange 컨트롤 또는 네이티브 Excel 범위 개체를 사용 하 여 Microsoft Excel에서 하나 이상의 전체 행을 프로그래밍 방식으로 그룹화 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537880"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525716"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>방법: 프로그래밍 방식으로 워크시트에서 행 그룹화
   하나 이상의 전체 행을 그룹화 할 수 있습니다. 워크시트에 그룹을 만들려면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 나 네이티브 Excel 범위 개체를 사용 합니다.
@@ -58,7 +60,7 @@ ms.locfileid: "85537880"
     > [!NOTE]
     > 행의 그룹을 해제 하려면 <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [방법: 워크시트에 NamedRange 컨트롤 추가](../vsto/how-to-add-namedrange-controls-to-worksheets.md)

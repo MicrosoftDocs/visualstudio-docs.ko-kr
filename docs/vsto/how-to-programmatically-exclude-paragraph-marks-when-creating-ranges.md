@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
+description: Microsoft Word 문서에서 범위를 만들 때 프로그래밍 방식으로 단락 표시를 제외 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa4686acb6a806fd97a78064214c6805a4b354e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 57e6f6ed2a71c026589d56088f94c8bf1a523ea2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585199"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525771"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>방법: 프로그래밍 방식으로 범위를 만들 때 단락 표시 제외
   단락을 기반으로 <xref:Microsoft.Office.Interop.Word.Range> 개체를 만들 때마다 단락 표시 등 인쇄할 수 없는 모든 문자가 범위에 포함됩니다. 원본 단락의 텍스트를 대상 단락에 삽입할 수 있습니다. 대상 단락을 개별 단락으로 분할하지 않으려면 먼저 원본 단락에서 단락 표시를 제거해야 합니다. 또한 단락 서식 설정 정보는 단락 표시에 저장되므로 범위를 기존 단락에 삽입할 때 서식 정보를 포함하지 않을 수 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: 리본 단추를 사용 하 여 사용자 지정 작업창 동기화
+description: 사용자가 리본의 토글 단추를 클릭 하 여 숨기 거 나 표시할 수 있는 사용자 지정 작업창을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328331"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526085"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>연습: 사용자 지정 작업창과 리본 단추 동기화
   이 연습에서는 사용자가 리본의 토글 단추를 클릭 하 여 숨기 거 나 표시할 수 있는 사용자 지정 작업창을 만드는 방법을 보여 줍니다. Microsoft Office 애플리케이션에서는 사용자가 사용자 지정 작업창을 표시하거나 숨기는 기본 방법을 제공하지 않으므로 사용자가 클릭하여 사용자 지정 작업창을 표시하거나 숨길 수 있도록 단추와 같은 UI(사용자 인터페이스) 요소를 항상 만들어야 합니다.
@@ -60,66 +62,66 @@ ms.locfileid: "67328331"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. Excel 추가 기능 프로젝트 템플릿을 사용하여 **SynchronizeTaskPaneAndRibbon**이라는 이름의 Excel 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. Excel 추가 기능 프로젝트 템플릿을 사용하여 **SynchronizeTaskPaneAndRibbon** 이라는 이름의 Excel 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs** 또는 **ThisAddIn** 코드 파일을 열고 **솔루션 탐색기**에 **열고 synchronizetaskpaneandribbon** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs** 또는 **ThisAddIn** 코드 파일을 열고 **솔루션 탐색기** 에 **열고 synchronizetaskpaneandribbon** 프로젝트를 추가 합니다.
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>토글 단추를 리본에 추가
  Office 애플리케이션의 디자인 지침 중 하나는 사용자가 항상 Office 애플리케이션 UI를 제어할 수 있어야 한다는 것입니다. 사용자가 사용자 지정 작업창을 제어할 수 있도록 작업창을 표시하고 숨기는 리본 토글 단추를 추가할 수 있습니다. 토글 단추를 만들려면 프로젝트에 **리본(비주얼 디자이너)** 항목을 추가합니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다. 자세한 내용은 [리본 디자이너](../vsto/ribbon-designer.md)를 참조 하세요.
 
 ### <a name="to-add-a-toggle-button-to-the-ribbon"></a>토글 단추를 리본에 추가 하려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
 2. **새 항목 추가** 대화 상자에서 **리본(비주얼 디자이너)** 을 선택합니다.
 
-3. 새 리본의 이름을 **ManageTaskPaneRibbon**으로 변경하고 **추가**를 클릭합니다.
+3. 새 리본의 이름을 **ManageTaskPaneRibbon** 으로 변경하고 **추가** 를 클릭합니다.
 
      **ManageTaskPaneRibbon.cs** 또는 **ManageTaskPaneRibbon.vb** 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시됩니다.
 
-4. 리본 디자이너에서 **group1**을 클릭합니다.
+4. 리본 디자이너에서 **group1** 을 클릭합니다.
 
-5. **속성** 창에서 **Label** 속성을 **작업창 관리자**로 설정합니다.
+5. **속성** 창에서 **Label** 속성을 **작업창 관리자** 로 설정합니다.
 
-6. **도구 상자** 의 **Office 리본 컨트롤**탭에서 **ToggleButton** 을 **작업창 관리자** 그룹으로 끌어 놓습니다.
+6. **도구 상자** 의 **Office 리본 컨트롤** 탭에서 **ToggleButton** 을 **작업창 관리자** 그룹으로 끌어 놓습니다.
 
-7. **toggleButton1**을 클릭합니다.
+7. **toggleButton1** 을 클릭합니다.
 
-8. **속성** 창에서 **Label** 속성을 **작업창 표시**로 설정합니다.
+8. **속성** 창에서 **Label** 속성을 **작업창 표시** 로 설정합니다.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스 디자인
  사용자 지정 작업창을 위한 비주얼 디자이너는 없지만 원하는 레이아웃을 사용하여 사용자 정의 컨트롤을 디자인할 수 있습니다. 이 연습 뒷부분에서는 사용자 지정 작업창에 사용자 정의 컨트롤을 추가합니다.
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>사용자 지정 작업창의 사용자 인터페이스를 디자인하려면
 
-1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **사용자 정의 컨트롤 추가** 를 클릭합니다.
 
-2. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **TaskPaneControl**로 변경하고 **추가**를 클릭합니다.
+2. **새 항목 추가** 대화 상자에서 새 사용자 정의 컨트롤의 이름을 **TaskPaneControl** 로 변경하고 **추가** 를 클릭합니다.
 
      사용자 정의 컨트롤이 디자이너에서 열립니다.
 
-3. **도구 상자** 의 **공용 컨트롤**탭에서 **TextBox** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
+3. **도구 상자** 의 **공용 컨트롤** 탭에서 **TextBox** 컨트롤을 사용자 정의 컨트롤로 끌어 놓습니다.
 
 ## <a name="create-the-custom-task-pane"></a>사용자 지정 작업창 만들기
  VSTO 추가 기능이 시작될 때 사용자 지정 작업창을 만들려면 사용자 정의 컨트롤을 VSTO 추가 기능의 <xref:Microsoft.Office.Tools.AddIn.Startup> 이벤트 처리기 작업창에 추가합니다. 기본적으로 사용자 지정 작업창은 표시되지 않습니다. 이 연습 뒷부분에서는 사용자가 리본에 추가한 토글 단추를 클릭할 때 작업창을 표시 하거나 숨기는 코드를 추가 합니다.
 
 ### <a name="to-create-the-custom-task-pane"></a>사용자 지정 작업창을 만들려면
 
-1. **솔루션 탐색기**에서 **Excel**을 확장합니다.
+1. **솔루션 탐색기** 에서 **Excel** 을 확장합니다.
 
-2. **ThisAddIn.cs** 또는 **ThisAddIn.vb** 를 마우스 오른쪽 단추로 클릭하고 **코드 보기**를 클릭합니다.
+2. **ThisAddIn.cs** 또는 **ThisAddIn.vb** 를 마우스 오른쪽 단추로 클릭하고 **코드 보기** 를 클릭합니다.
 
 3. `ThisAddIn` 클래스에 다음 코드를 추가합니다. 이 코드에서는 `TaskPaneControl` 의 인스턴스를 `ThisAddIn`의 구성원으로 선언합니다.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]
 
-4. `ThisAddIn_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드에서는 `TaskPaneControl` 개체를 `CustomTaskPanes` 필드에 추가하지만 사용자 지정 작업창을 표시하지 않습니다. 기본적으로 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 클래스의 <xref:Microsoft.Office.Tools.CustomTaskPane> 속성은 **false**입니다. Visual C# 코드는 이벤트 처리기를 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트에도 연결합니다.
+4. `ThisAddIn_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드에서는 `TaskPaneControl` 개체를 `CustomTaskPanes` 필드에 추가하지만 사용자 지정 작업창을 표시하지 않습니다. 기본적으로 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 클래스의 <xref:Microsoft.Office.Tools.CustomTaskPane> 속성은 **false** 입니다. Visual C# 코드는 이벤트 처리기를 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트에도 연결합니다.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
 
-5. `ThisAddIn` 클래스에 다음 메서드를 추가합니다. 이 메서드가 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트를 처리합니다. 사용자가 **닫기** 단추(X)를 클릭하여 작업창을 닫으면 이 메서드가 리본의 토글 단추 상태를 업데이트합니다.
+5. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 메서드가 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트를 처리합니다. 사용자가 **닫기** 단추(X)를 클릭하여 작업창을 닫으면 이 메서드가 리본의 토글 단추 상태를 업데이트합니다.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]
@@ -171,7 +173,7 @@ ms.locfileid: "67328331"
 
 - Outlook에서 열린 모든 메일 메시지에 대해 사용자 지정 작업창을 만듭니다. 자세한 내용은 [연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

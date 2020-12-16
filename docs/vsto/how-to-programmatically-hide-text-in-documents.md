@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서에서 텍스트 숨기기'
+description: 특정 텍스트 범위에 대해 글꼴의 Hidden 속성을 설정 하 여 Microsoft Word 문서에서 텍스트를 숨기는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a375e8b844f82b5d310841d7b4cdc092b18ff6c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525697"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>방법: 프로그래밍 방식으로 문서에서 텍스트 숨기기
   텍스트의 특정 범위에 대해 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 의 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 속성을 설정하여 문서에서 텍스트를 숨길 수 있습니다.
@@ -54,7 +56,7 @@ ms.locfileid: "85543314"
 ## <a name="compile-the-code"></a>코드 컴파일
  이 코드 예제에서는 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 이라는 컨트롤 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Bookmark> 컨트롤 (VSTO 추가 기능)이 포함 되어 있다고 가정 `bookmark1` 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: 프로그래밍 방식으로 문서 인쇄](../vsto/how-to-programmatically-print-documents.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서의 범위 다시 설정](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입'
+description: Visual Studio를 사용 하 여 프로그래밍 방식으로 Microsoft Word 문서에 텍스트를 삽입 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585186"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525693"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입
   Microsoft Office Word 문서에 텍스트를 삽입하는 기본 방법에는 다음 세 가지가 있습니다.
@@ -45,7 +47,7 @@ ms.locfileid: "91585186"
 
 ### <a name="to-insert-text-in-a-range"></a>범위에 텍스트를 삽입하려면
 
-1. 문서의 시작 부분에 범위를 지정하고 **New Text**텍스트를 삽입합니다.
+1. 문서의 시작 부분에 범위를 지정하고 **New Text** 텍스트를 삽입합니다.
 
      다음 코드 예제는 문서 수준 사용자 지정에서 사용할 수 있습니다.
 
@@ -79,7 +81,7 @@ ms.locfileid: "91585186"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2. 이러한 문자를 **New Text**문자열로 바꿉니다.
+2. 이러한 문자를 **New Text** 문자열로 바꿉니다.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]

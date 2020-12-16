@@ -1,5 +1,7 @@
 ---
 title: '연습: Word 작업 창의 컨트롤에 데이터 바인딩'
+description: Microsoft Word의 작업 창에서 컨트롤에 데이터를 바인딩합니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585069"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526210"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>연습: Word 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Word의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
@@ -57,7 +59,7 @@ ms.locfileid: "91585069"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. **내 Word 작업 창**이라는 이름으로 word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다.
+1. **내 Word 작업 창** 이라는 이름으로 word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다.
 
      자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
@@ -68,63 +70,63 @@ ms.locfileid: "91585069"
 
 ### <a name="to-add-an-actions-pane-control"></a>작업 창 컨트롤을 추가 하려면
 
-1. **솔루션 탐색기**에서 **내 Word 작업 창** 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 **내 Word 작업 창** 프로젝트를 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤**을 선택 하 고 이름을 작업 **제어**로 지정한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 **작업 창 컨트롤** 을 선택 하 고 이름을 작업 **제어** 로 지정한 다음 **추가** 를 클릭 합니다.
 
 ### <a name="to-add-a-data-source-to-the-project"></a>프로젝트에 데이터 소스를 추가 하려면
 
-1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서   >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 표시 합니다.
 
    > [!NOTE]
    > **데이터 원본 표시** 를 사용할 수 없는 경우 Word 문서를 클릭 한 다음 다시 확인 합니다.
 
-2. **새 데이터 소스 추가** 를 클릭 하 여 **데이터 소스 구성 마법사**를 시작 합니다.
+2. **새 데이터 소스 추가** 를 클릭 하 여 **데이터 소스 구성 마법사** 를 시작 합니다.
 
-3. **데이터베이스** 를 선택 하 고 **다음**을 클릭 합니다.
+3. **데이터베이스** 를 선택 하 고 **다음** 을 클릭 합니다.
 
 4. Northwind 샘플 SQL Server 데이터베이스에 대 한 데이터 연결을 선택 하거나 **새 연결** 단추를 사용 하 여 새 연결을 추가 합니다.
 
-5. **다음**을 클릭합니다.
+5. **다음** 을 클릭합니다.
 
-6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음**을 클릭 합니다.
+6. 선택 된 경우 연결을 저장 하는 옵션을 선택 취소 하 고 **다음** 을 클릭 합니다.
 
 7. **데이터베이스 개체** 창에서 **테이블** 노드를 확장 합니다.
 
 8. **Suppliers** 및 **Products** 테이블 옆의 확인란을 선택 합니다.
 
-9. **Finish**를 클릭합니다.
+9. **Finish** 를 클릭합니다.
 
-   마법사에서 **Suppliers** 테이블 및 **Products** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기**에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
+   마법사에서 **Suppliers** 테이블 및 **Products** 테이블을 **데이터 소스** 창에 추가 합니다. 또한 **솔루션 탐색기** 에 표시 되는 형식화 된 데이터 집합을 프로젝트에 추가 합니다.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>작업 창 컨트롤에 데이터 바인딩된 Windows Forms 컨트롤을 추가 하려면
 
 1. **데이터 소스** 창에서 **Suppliers** 테이블을 확장 합니다.
 
-2. **회사 이름** 노드에서 드롭다운 화살표를 클릭 하 고 **ComboBox**를 선택 합니다.
+2. **회사 이름** 노드에서 드롭다운 화살표를 클릭 하 고 **ComboBox** 를 선택 합니다.
 
 3. **CompanyName** 을 **데이터 소스** 창에서 작업 창 컨트롤로 끌어 옵니다.
 
      <xref:System.Windows.Forms.ComboBox>컨트롤은 작업 창 컨트롤에 생성 됩니다. 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `SuppliersBindingSource` , 테이블 어댑터 및가 <xref:System.Data.DataSet> 구성 요소 트레이의 프로젝트에 추가 됩니다.
 
-4. `SuppliersBindingNavigator` **구성 요소** 트레이에서를 선택 하 고 **delete**키를 누릅니다. 이 연습에서는를 사용 하지 않습니다 `SuppliersBindingNavigator` .
+4. `SuppliersBindingNavigator` **구성 요소** 트레이에서를 선택 하 고 **delete** 키를 누릅니다. 이 연습에서는를 사용 하지 않습니다 `SuppliersBindingNavigator` .
 
     > [!NOTE]
     > 을 삭제 `SuppliersBindingNavigator` 해도 해당에 대해 생성 된 코드는 모두 제거 되지 않습니다. 이 코드를 제거할 수 있습니다.
 
-5. 레이블 아래에 있도록 콤보 상자를 이동 하 고 **Size** 속성을 **171, 21**로 변경 합니다.
+5. 레이블 아래에 있도록 콤보 상자를 이동 하 고 **Size** 속성을 **171, 21** 로 변경 합니다.
 
 6. **데이터 소스** 창에서 **Suppliers** 테이블의 자식인 **Products** 테이블을 확장 합니다.
 
-7. **ProductName** 노드에서 드롭다운 화살표를 클릭 하 고 **ListBox**를 선택 합니다.
+7. **ProductName** 노드에서 드롭다운 화살표를 클릭 하 고 **ListBox** 를 선택 합니다.
 
 8. **ProductName** 을 작업 창 컨트롤로 끌어옵니다.
 
      <xref:System.Windows.Forms.ListBox>컨트롤은 작업 창 컨트롤에 생성 됩니다. 이와 동시에 <xref:System.Windows.Forms.BindingSource> 명명 된 `ProductBindingSource` 및 테이블 어댑터는 구성 요소 트레이에서 프로젝트에 추가 됩니다.
 
-9. 레이블 아래에 있는 목록 상자를 이동 하 고 **Size** 속성을 **171, 95**로 변경 합니다.
+9. 레이블 아래에 있는 목록 상자를 이동 하 고 **Size** 속성을 **171, 95** 로 변경 합니다.
 
 10. <xref:System.Windows.Forms.Button> **도구 상자** 에서 작업 창 컨트롤로를 끌어 목록 상자 아래에 놓습니다.
 
@@ -155,19 +157,19 @@ ms.locfileid: "91585069"
 
 1. `CompanyNameComboBox` 컨트롤을 선택합니다.
 
-2. **속성** 창에서 **DataSource** 속성의 오른쪽에 있는 단추를 클릭 하 고 **suppliersBindingSource**를 선택 합니다.
+2. **속성** 창에서 **DataSource** 속성의 오른쪽에 있는 단추를 클릭 하 고 **suppliersBindingSource** 를 선택 합니다.
 
-3. **Displaymember** 속성의 오른쪽에 있는 단추를 클릭 하 고 **CompanyName**을 선택 합니다.
+3. **Displaymember** 속성의 오른쪽에 있는 단추를 클릭 하 고 **CompanyName** 을 선택 합니다.
 
-4. **데이터 바인딩** 속성을 확장 하 고 **텍스트** 속성의 오른쪽에 있는 단추를 클릭 한 다음 **없음**을 선택 합니다.
+4. **데이터 바인딩** 속성을 확장 하 고 **텍스트** 속성의 오른쪽에 있는 단추를 클릭 한 다음 **없음** 을 선택 합니다.
 
 5. `ProductNameListBox` 컨트롤을 선택합니다.
 
-6. **속성** 창에서 **DataSource** 속성의 오른쪽에 있는 단추를 클릭 하 고 **productsBindingSource**를 선택 합니다.
+6. **속성** 창에서 **DataSource** 속성의 오른쪽에 있는 단추를 클릭 하 고 **productsBindingSource** 를 선택 합니다.
 
-7. **Displaymember** 속성의 오른쪽에 있는 단추를 클릭 하 고 **ProductName**을 선택 합니다.
+7. **Displaymember** 속성의 오른쪽에 있는 단추를 클릭 하 고 **ProductName** 을 선택 합니다.
 
-8. **데이터 바인딩** 속성을 확장 하 고 **SelectedValue** 속성의 오른쪽에 있는 단추를 클릭 한 다음 **없음**을 선택 합니다.
+8. **데이터 바인딩** 속성을 확장 하 고 **SelectedValue** 속성의 오른쪽에 있는 단추를 클릭 한 다음 **없음** 을 선택 합니다.
 
 ## <a name="add-a-method-to-insert-data-into-a-table"></a>테이블에 데이터를 삽입 하는 메서드 추가
  다음 작업은 바인딩된 컨트롤에서 데이터를 읽고 Word 문서에서 테이블을 채우는 것입니다. 먼저 테이블의 머리글 서식을 지정 하는 프로시저를 만든 다음 메서드를 추가 하 여 `AddData` Word 테이블을 만들고 서식을 지정 합니다.
@@ -202,7 +204,7 @@ ms.locfileid: "91585069"
 
 ### <a name="to-show-the-actions-pane"></a>작업 창을 표시 하려면
 
-1. **솔루션 탐색기**에서 **ThisDocument** 또는 **ThisDocument.cs**를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **ThisDocument** 또는 **ThisDocument.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 다음 예제와 같이 클래스의 맨 위에 컨트롤의 새 인스턴스를 만듭니다 `ThisDocument` .
 

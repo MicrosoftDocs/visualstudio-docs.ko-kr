@@ -1,5 +1,7 @@
 ---
 title: Office UI 사용자 지정 연습
+description: 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용 하 여 Microsoft Office 응용 프로그램의 UI (사용자 인터페이스)를 사용자 지정할 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254136"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525103"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 사용자 지정 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.
@@ -64,7 +66,7 @@ ms.locfileid: "71254136"
 
 - [연습: 워크시트에서 라디오 단추를 사용 하 여 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) Excel 워크시트에서 옵션 단추를 사용 하 여 차트 스타일을 변경 하는 기본 사항을 보여 줍니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)
 - [Office 솔루션의 데이터 연습](../vsto/data-in-office-solutions-walkthroughs.md)

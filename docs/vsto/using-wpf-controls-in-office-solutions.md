@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션에서 WPF 컨트롤 사용
+description: Visual Studio에서 사용자 인터페이스를 디자인 하는 데 WPF (Windows Presentation Foundation) 컨트롤을 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189756"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526438"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office 솔루션에서 WPF 컨트롤 사용
 
@@ -45,7 +47,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
 2. **사용자 정의 컨트롤 (WPF)** 항목을 프로젝트에 추가 합니다.
 
-3. **도구 상자**에서 wpf 컨트롤을 wpf 사용자 정의 컨트롤 디자인 화면에 추가 합니다.
+3. **도구 상자** 에서 wpf 컨트롤을 wpf 사용자 정의 컨트롤 디자인 화면에 추가 합니다.
 
      기본적으로 WPF 사용자 정의 컨트롤 디자이너가 열려 있으면 **도구 상자** 에 wpf 컨트롤만 포함 됩니다.
 
@@ -59,7 +61,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
     - 사용자 지정 작업 창의 경우 프로젝트에 **사용자 정의 컨트롤** 항목을 추가 합니다. 자세한 내용은 [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)를 참조 하세요.
 
-6. **도구 상자**의 *ProjectName* **wpf 사용자 정의 컨트롤** 탭에서 WPF 사용자 정의 컨트롤을 작업 창, 양식 영역 또는 사용자 지정 작업창에 대 한 디자이너로 끌어 옵니다.
+6. **도구 상자** 의 *ProjectName* **wpf 사용자 정의 컨트롤** 탭에서 WPF 사용자 정의 컨트롤을 작업 창, 양식 영역 또는 사용자 지정 작업창에 대 한 디자이너로 끌어 옵니다.
 
      Visual Studio에서 자동으로 UI 요소에 WPF 사용자 정의 컨트롤을 호스트하는 <xref:System.Windows.Forms.Integration.ElementHost> 개체를 만듭니다.
 
@@ -71,7 +73,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
 2. **사용자 정의 컨트롤 (WPF)** 항목을 프로젝트에 추가 합니다.
 
-3. **도구 상자**에서 wpf 컨트롤을 wpf 사용자 정의 컨트롤 디자인 화면에 추가 합니다.
+3. **도구 상자** 에서 wpf 컨트롤을 wpf 사용자 정의 컨트롤 디자인 화면에 추가 합니다.
 
 4. 프로젝트를 빌드합니다.
 
@@ -79,7 +81,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
 6. Windows Forms 사용자 정의 컨트롤에 대한 디자이너를 엽니다.
 
-7. **도구 상자**의 *ProjectName* **wpf 사용자 정의 컨트롤** 탭에서 WPF 사용자 정의 컨트롤을 디자이너로 끌어 옵니다.
+7. **도구 상자** 의 *ProjectName* **wpf 사용자 정의 컨트롤** 탭에서 WPF 사용자 정의 컨트롤을 디자이너로 끌어 옵니다.
 
      Visual Studio에서 자동으로 Windows Forms 사용자 정의 컨트롤에 WPF 사용자 정의 컨트롤을 호스트하는 <xref:System.Windows.Forms.Integration.ElementHost> 개체를 만듭니다.
 
@@ -92,7 +94,7 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>ElementHost 클래스를 사용 하 여 WPF 컨트롤 호스트
 
-Visual Studio은 Office 솔루션에서 Windows Forms 컨트롤을 사용하는 데 유용한 기능을 제공하지만 WPF 컨트롤에 대해서는 유사한 기능을 제공하지 않습니다. 예를 들어 **도구 상자**에서 컨트롤을 끌거나 런타임에 도우미 메서드를 사용 하 여 디자인 타임에 문서 및 워크시트에 Windows Forms 컨트롤을 추가할 수 있습니다. 그러나 WPF 컨트롤에는 이러한 도구를 사용할 수 없습니다.
+Visual Studio은 Office 솔루션에서 Windows Forms 컨트롤을 사용하는 데 유용한 기능을 제공하지만 WPF 컨트롤에 대해서는 유사한 기능을 제공하지 않습니다. 예를 들어 **도구 상자** 에서 컨트롤을 끌거나 런타임에 도우미 메서드를 사용 하 여 디자인 타임에 문서 및 워크시트에 Windows Forms 컨트롤을 추가할 수 있습니다. 그러나 WPF 컨트롤에는 이러한 도구를 사용할 수 없습니다.
 
 WPF 컨트롤은 Windows Forms 컨트롤 또는 폼과 WPF 컨트롤 간의 통합 계층으로 <xref:System.Windows.Forms.Integration.ElementHost> 클래스를 사용합니다. 디자인 타임에 솔루션에 WPF 컨트롤을 추가하는 경우 Visual Studio에서 자동으로 <xref:System.Windows.Forms.Integration.ElementHost> 개체를 생성합니다.
 
@@ -116,7 +118,7 @@ Windows Forms 컨트롤 및 폼에 WPF 컨트롤을 호스트하기 위한 아�
 
 - [연습: WPF 콘텐츠 스타일](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)

@@ -1,5 +1,6 @@
 ---
 title: '연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기'
+description: 콘텐츠 컨트롤을 사용 하 여 Microsoft Word 서식 파일에서 구조화 되 고 재사용 가능한 콘텐츠를 만드는 문서 수준 사용자 지정을 만드는 방법에 대해 알아봅니다.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585030"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524991"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기
   이 연습에서는 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 서식 파일에서 구조화되고 재사용 가능한 콘텐츠를 만드는 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word에서는 문서 *블록*이라는 재사용 가능한 문서 부분의 컬렉션을 만들 수 있습니다. 이 연습에서는 문서 블록으로 두 개의 표를 만드는 방법을 보여 줍니다. 각 표에는 일반 텍스트 또는 날짜와 같은 서로 다른 형식의 콘텐츠를 보유할 수 있는 여러 콘텐츠 컨트롤이 포함됩니다. 표 중 하나에는 직원에 대한 정보가 포함되고 다른 표에는 고객 의견이 포함됩니다.
+ Word에서는 문서 *블록* 이라는 재사용 가능한 문서 부분의 컬렉션을 만들 수 있습니다. 이 연습에서는 문서 블록으로 두 개의 표를 만드는 방법을 보여 줍니다. 각 표에는 일반 텍스트 또는 날짜와 같은 서로 다른 형식의 콘텐츠를 보유할 수 있는 여러 콘텐츠 컨트롤이 포함됩니다. 표 중 하나에는 직원에 대한 정보가 포함되고 다른 표에는 고객 의견이 포함됩니다.
 
  서식 파일에서 문서를 만든 후 서식 파일에서 사용 가능한 문서 블록을 표시하는 여러 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 개체를 사용하여 문서에 표 중 하나를 추가할 수 있습니다.
 
@@ -57,7 +58,7 @@ ms.locfileid: "91585030"
 
 ### <a name="to-create-a-new-word-template-project"></a>새 Word 서식 파일 프로젝트를 만들려면
 
-1. 이름이 **MyBuildingBlockTemplate**인 Word 서식 파일 프로젝트를 만듭니다. 마법사에서 솔루션에 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름이 **MyBuildingBlockTemplate** 인 Word 서식 파일 프로젝트를 만듭니다. 마법사에서 솔루션에 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]디자이너에서 새 Word 템플릿을 열고 **솔루션 탐색기** **MyBuildingBlockTemplate** 프로젝트를 추가 합니다.
 
@@ -68,7 +69,7 @@ ms.locfileid: "91585030"
 
 1. 디자이너에서 호스트 되는 Word 서식 파일의 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 리본에서 **삽입** 탭을 클릭 합니다.
 
-2. **테이블 그룹에서** **테이블**을 클릭 하 고 두 개의 열과 4 개의 행이 있는 테이블을 삽입 합니다.
+2. **테이블 그룹에서** **테이블** 을 클릭 하 고 두 개의 열과 4 개의 행이 있는 테이블을 삽입 합니다.
 
 3. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.
 
@@ -79,7 +80,7 @@ ms.locfileid: "91585030"
    |**제목**|
    |**그림**|
 
-4. 두 번째 열의 첫 번째 셀을 클릭 합니다 ( **Employee Name**옆).
+4. 두 번째 열의 첫 번째 셀을 클릭 합니다 ( **Employee Name** 옆).
 
 5. 리본에서 **개발자** 탭을 클릭합니다.
 
@@ -88,15 +89,15 @@ ms.locfileid: "91585030"
 
 6. **컨트롤** 그룹에서 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") **텍스트** 단추를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 첫 번째 셀에를 추가 합니다.
 
-7. 두 번째 열의 두 번째 셀을 클릭 합니다 ( **채용 날짜**옆).
+7. 두 번째 열의 두 번째 셀을 클릭 합니다 ( **채용 날짜** 옆).
 
 8. **컨트롤** 그룹에서 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에을 추가 합니다.
 
-9. 두 번째 열의 세 번째 셀 ( **제목**옆에 있는)을 클릭 합니다.
+9. 두 번째 열의 세 번째 셀 ( **제목** 옆에 있는)을 클릭 합니다.
 
 10. **컨트롤** 그룹에서 **콤보 상자** 단추 ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") 를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 세 번째 셀에를 추가 합니다.
 
-11. 두 번째 열 ( **그림**옆)의 마지막 셀을 클릭 합니다.
+11. 두 번째 열 ( **그림** 옆)의 마지막 셀을 클릭 합니다.
 
 12. **컨트롤** 그룹에서 **그림 콘텐츠 컨트롤** 단추 ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") 를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.PictureContentControl> 마지막 셀에를 추가 합니다.
 
@@ -109,7 +110,7 @@ ms.locfileid: "91585030"
 
 2. 리본에서 **삽입** 탭을 클릭 합니다.
 
-3. **테이블 그룹에서** **테이블**을 클릭 하 고 두 개의 열과 3 개의 행이 있는 테이블을 삽입 합니다.
+3. **테이블 그룹에서** **테이블** 을 클릭 하 고 두 개의 열과 3 개의 행이 있는 테이블을 삽입 합니다.
 
 4. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.
 
@@ -119,17 +120,17 @@ ms.locfileid: "91585030"
    |**Satisfaction Rating**|
    |**설명**|
 
-5. 두 번째 열의 첫 번째 셀 ( **고객 이름**옆에 있는)을 클릭 합니다.
+5. 두 번째 열의 첫 번째 셀 ( **고객 이름** 옆에 있는)을 클릭 합니다.
 
 6. 리본에서 **개발자** 탭을 클릭합니다.
 
 7. **컨트롤** 그룹에서 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") **텍스트** 단추를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 첫 번째 셀에를 추가 합니다.
 
-8. 두 번째 열의 두 번째 셀을 클릭 합니다 ( **만족 등급**옆).
+8. 두 번째 열의 두 번째 셀을 클릭 합니다 ( **만족 등급** 옆).
 
 9. **컨트롤** 그룹에서 **드롭다운 목록** 단추 ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") 를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 두 번째 셀에을 추가 합니다.
 
-10. 두 번째 열의 마지막 셀 ( **주석**옆에 있는)을 클릭 합니다.
+10. 두 번째 열의 마지막 셀 ( **주석** 옆에 있는)을 클릭 합니다.
 
 11. **컨트롤** 그룹에서 **서식 있는 텍스트** 단추 ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") 를 클릭 하 여 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 마지막 셀에를 추가 합니다.
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585030"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>프로그래밍 방식으로 콘텐츠 컨트롤의 UI를 수정하려면
 
-1. **솔루션 탐색기**에서 **ThisDocument.cs** 또는 **ThisDocument**를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. `ThisDocument` 클래스에 다음 코드를 추가합니다. 이 코드는 이 연습의 뒷부분에서 사용할 여러 개체를 선언합니다.
 
@@ -194,7 +195,7 @@ ms.locfileid: "91585030"
 
 2. 첫 **번째 문서 블록 선택** 을 클릭 하 여 첫 번째 문서 블록 갤러리 콘텐츠 컨트롤을 표시 합니다.
 
-3. 컨트롤에서 **사용자 지정 갤러리 1** 제목 옆에 있는 드롭다운 화살표를 클릭 하 고 **Employee 테이블**을 선택 합니다.
+3. 컨트롤에서 **사용자 지정 갤러리 1** 제목 옆에 있는 드롭다운 화살표를 클릭 하 고 **Employee 테이블** 을 선택 합니다.
 
 4. **Employee name** 셀의 오른쪽에 있는 셀을 클릭 하 고 이름을 입력 합니다.
 
@@ -214,7 +215,7 @@ ms.locfileid: "91585030"
 
 1. 두 번째 **빌딩 블록 선택** 을 클릭 하 여 두 번째 빌딩 블록 갤러리 콘텐츠 컨트롤을 표시 합니다.
 
-2. 컨트롤에서 **사용자 지정 갤러리 1** 제목 옆에 있는 드롭다운 화살표를 클릭 하 고 **Customer 테이블**을 선택 합니다.
+2. 컨트롤에서 **사용자 지정 갤러리 1** 제목 옆에 있는 드롭다운 화살표를 클릭 하 고 **Customer 테이블** 을 선택 합니다.
 
 3. **Customer name** 셀의 오른쪽에 있는 셀을 클릭 하 고 이름을 입력 합니다.
 

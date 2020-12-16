@@ -1,5 +1,7 @@
 ---
 title: Excel을 사용한 연습
+description: 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용 하 여 Microsoft Excel을 자동화 하는 방법을 알아봅니다. UI (사용자 인터페이스)를 사용자 지정할 수도 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255061"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525955"
 ---
 # <a name="walkthroughs-using-excel"></a>Excel을 사용한 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office Excel을 자동화하고 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.

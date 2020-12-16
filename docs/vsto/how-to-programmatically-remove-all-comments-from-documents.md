@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서에서 모든 메모 제거'
+description: Visual Studio를 사용 하 여 Microsoft Word 문서에서 프로그래밍 방식으로 모든 주석을 제거 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584822"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526647"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>방법: 프로그래밍 방식으로 문서에서 모든 메모 제거
   `DeleteAllComments` 메서드를 사용하여 Microsoft Office Word 문서에서 모든 메모를 제거합니다.

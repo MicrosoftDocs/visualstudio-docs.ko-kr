@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 워크시트에서 보호 제거'
+description: Visual Studio를 사용 하 여 Microsoft Excel 워크시트에서 프로그래밍 방식으로 보호를 제거 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584809"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526637"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>방법: 프로그래밍 방식으로 워크시트에서 보호 제거
   Microsoft Office Excel 워크시트에서 프로그래밍 방식으로 보호를 제거할 수 있습니다.

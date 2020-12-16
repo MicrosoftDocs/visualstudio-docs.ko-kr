@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4.5으로 마이그레이션될 때 Outlook 양식 영역 업데이트
+description: 양식 영역이 있는 Outlook VSTO 추가 기능 프로젝트의 대상 프레임 워크가 .NET Framework 4 이상으로 변경 되 면 코드를 수정 해야 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584401"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526584"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>.NET Framework 4.5으로 마이그레이션될 때 Outlook 양식 영역 업데이트
 
@@ -29,7 +31,7 @@ ms.locfileid: "91584401"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Visual Studio에서 디자인한 양식 영역에 대해 생성된 코드를 업데이트하려면
 
-1. 코드 편집기에서 양식 영역 코드 숨김 파일을 엽니다. 이 파일의 이름은 *YourFormRegion*.Designer.cs 또는 *YourFormRegion*.Designer.vb입니다. Visual Basic 프로젝트에서 이 파일을 보려면 **솔루션 탐색기** 에서 **모든 파일 표시**단추를 클릭합니다.
+1. 코드 편집기에서 양식 영역 코드 숨김 파일을 엽니다. 이 파일의 이름은 *YourFormRegion*.Designer.cs 또는 *YourFormRegion*.Designer.vb입니다. Visual Basic 프로젝트에서 이 파일을 보려면 **솔루션 탐색기** 에서 **모든 파일 표시** 단추를 클릭합니다.
 
 2. `Microsoft.Office.Tools.Outlook.FormRegionControl` 대신 <xref:Microsoft.Office.Tools.Outlook.FormRegionBase>에서 파생되도록 양식 영역 클래스의 선언을 수정합니다.
 
@@ -105,7 +107,7 @@ ms.locfileid: "91584401"
     }
     ```
 
-5. 프로젝트에 새 Outlook 양식 영역 항목을 추가합니다. 새 양식 영역에 대 한 코드 숨겨진 파일을 열고 *YourNewFormRegion* `Factory` 파일의 YourNewFormRegion 및 클래스를 찾은 다음 `WindowFormRegionCollection` 이러한 클래스를 클립보드에 복사 합니다.
+5. 프로젝트에 새 Outlook 양식 영역 항목을 추가합니다. 새 양식 영역에 대 한 코드 숨겨진 파일을 열고  `Factory` 파일의 YourNewFormRegion 및 클래스를 찾은 다음 `WindowFormRegionCollection` 이러한 클래스를 클립보드에 복사 합니다.
 
 6. 프로젝트에 추가한 새 양식 영역을 삭제합니다.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584401"
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Outlook에서 가져온 양식 영역에 대해 생성된 코드를 업데이트하려면
 
-1. 코드 편집기에서 양식 영역 코드 숨김 파일을 엽니다. 이 파일의 이름은 *YourFormRegion*.Designer.cs 또는 *YourFormRegion*.Designer.vb입니다. Visual Basic 프로젝트에서 이 파일을 보려면 **솔루션 탐색기** 에서 **모든 파일 표시**단추를 클릭합니다.
+1. 코드 편집기에서 양식 영역 코드 숨김 파일을 엽니다. 이 파일의 이름은 *YourFormRegion*.Designer.cs 또는 *YourFormRegion*.Designer.vb입니다. Visual Basic 프로젝트에서 이 파일을 보려면 **솔루션 탐색기** 에서 **모든 파일 표시** 단추를 클릭합니다.
 
 2. `Microsoft.Office.Tools.Outlook.ImportedFormRegion` 대신 <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase>에서 파생되도록 양식 영역 클래스의 선언을 수정합니다.
 
@@ -177,7 +179,7 @@ ms.locfileid: "91584401"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. 프로젝트에 새 Outlook 양식 영역 항목을 추가합니다. 새 양식 영역에 대 한 코드 숨겨진 파일을 열고 *YourNewFormRegion* `Factory` 파일의 YourNewFormRegion 및 클래스를 찾은 다음 `WindowFormRegionCollection` 이러한 클래스를 클립보드에 복사 합니다.
+5. 프로젝트에 새 Outlook 양식 영역 항목을 추가합니다. 새 양식 영역에 대 한 코드 숨겨진 파일을 열고  `Factory` 파일의 YourNewFormRegion 및 클래스를 찾은 다음 `WindowFormRegionCollection` 이러한 클래스를 클립보드에 복사 합니다.
 
 6. 프로젝트에 추가한 새 양식 영역을 삭제합니다.
 
@@ -192,7 +194,7 @@ ms.locfileid: "91584401"
 
  다음 표에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 프로젝트에서 형식을 인스턴스화하는 데 사용할 메서드 및 양식 영역 형식을 보여 줍니다.
 
-|Type|사용할 팩터리 메서드|
+|유형|사용할 팩터리 메서드|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
