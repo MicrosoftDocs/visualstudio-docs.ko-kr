@@ -1,5 +1,5 @@
 ---
-title: '방법: 형식 간의 연결 만들기(클래스 디자이너)'
+title: 형식 간에 연결 만들기
 description: 클래스 디자이너에서 여러 형식 간의 연결을 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 713b7349a6ccd008174b0f6c13c1df768cca65b5
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901611"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933559"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 연결 만들기
 

@@ -10,17 +10,18 @@ ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918215"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527886"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>자습서: 간단한 C# 콘솔 앱 확장
 
@@ -58,7 +59,7 @@ ms.locfileid: "92918215"
 
    ![프로젝트 참조가 있는 솔루션 탐색기의 스크린샷](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. *Program.cs* 에서 `Calculator` 클래스와 모든 해당 코드를 선택하고 **CTRL+X** 를 눌러 Program.cs에서 자릅니다. 그리고 **CalculatorLibrary** ( *CalculatorLibrary.cs* )에서 코드를 `CalculatorLibrary` 네임스페이스에 붙여넣습니다. 그런 다음, Calculator 클래스 `public`이 코드를 라이브러리 외부에 노출하도록 합니다. 이제 *CalculatorLibrary.cs* 의 코드는 다음 코드와 유사합니다.
+1. *Program.cs* 에서 `Calculator` 클래스와 모든 해당 코드를 선택하고 **CTRL+X** 를 눌러 Program.cs에서 자릅니다. 그리고 **CalculatorLibrary**(*CalculatorLibrary.cs*)에서 코드를 `CalculatorLibrary` 네임스페이스에 붙여넣습니다. 그런 다음, Calculator 클래스 `public`이 코드를 라이브러리 외부에 노출하도록 합니다. 이제 *CalculatorLibrary.cs* 의 코드는 다음 코드와 유사합니다.
 
    ```csharp
    using System;
@@ -379,7 +380,7 @@ Visual Studio 디버거는 코드를 단계별로 실행하여 프로그래밍 �
 
 ## <a name="debug-step-through-code"></a>디버깅: 단계별 코드 실행
 
-1. **F11** 키(또는 **디버그** > **한 단계씩 코드 실행** )를 누릅니다.
+1. **F11** 키(또는 **디버그** > **한 단계씩 코드 실행**)를 누릅니다.
 
    한 단계씩 코드 실행 명령을 사용하면 앱은 현재 문을 실행하고 다음 실행 문(일반적으로 다음 코드 줄)으로 이동합니다. 왼쪽의 노란색 포인터는 항상 현재 문을 나타냅니다.
 
@@ -393,7 +394,7 @@ Visual Studio 디버거는 코드를 단계별로 실행하여 프로그래밍 �
 
    이 보기에는 현재 메서드 `Calculator.DoOperation`에 노란색 포인터가 표시되어 있고, 두 번째 행에는 *Program.cs* 의 `Main` 메서드에서 이 메서드를 호출한 함수가 표시되어 있습니다. **호출 스택** 창에는 메서드와 함수가 호출되는 순서가 표시됩니다. 또한 이 창의 바로 가기 메뉴에서 **소스 코드로 이동** 등 많은 디버거 기능에 액세스할 수 있습니다.
 
-1. **F10** 키(또는 **디버그** > **프로시저 단위 실행** )를 앱이 `switch` 문에서 일시 중지될 때까지 여러 번 누릅니다.
+1. **F10** 키(또는 **디버그** > **프로시저 단위 실행**)를 앱이 `switch` 문에서 일시 중지될 때까지 여러 번 누릅니다.
 
    ```csharp
    switch (op)
@@ -427,7 +428,7 @@ Visual Studio 디버거는 코드를 단계별로 실행하여 프로그래밍 �
 
    C#에서 `Infinity`는 0으로 나눌 때의 결과입니다.
 
-1. **F5** 키(또는 **디버그** > **디버깅 계속** )를 누릅니다.
+1. **F5** 키(또는 **디버그** > **디버깅 계속**)를 누릅니다.
 
    수학 연산의 결과로 콘솔에 무한대 기호가 표시됩니다.
 

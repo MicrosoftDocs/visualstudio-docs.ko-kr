@@ -1,5 +1,5 @@
 ---
-title: 'XML 스키마: 그래프 뷰 및 콘텐츠 모델 뷰에서 다이어그램 인쇄'
+title: 인쇄 다이어그램
 description: XML 스키마 디자이너의 그래프 뷰 또는 콘텐츠 모델 뷰에서 다이어그램을 인쇄하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9e837af5a1112d03740cc67b5d91f24d186a5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4ecf1c9cf062dec8dd1d83a5b99bb8c498667e0f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399161"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996333"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>방법: 그래프 뷰 및 콘텐츠 모델 뷰에서 다이어그램 인쇄
 

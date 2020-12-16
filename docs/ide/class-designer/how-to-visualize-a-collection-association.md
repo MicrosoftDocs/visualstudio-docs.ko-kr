@@ -1,5 +1,5 @@
 ---
-title: '방법: 컬렉션 형식 연결 시각화(클래스 디자이너)'
+title: 컬렉션 연결 시각화
 description: 클래스 디자이너에서 컬렉션 형식 연결을 시각화하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e5be53f829949cfffbdc7db727b1117aa9de8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: eaec7d97cd92e65671dedca14c2dbae056b1af10
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901078"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933585"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>방법: 클래스 디자이너에서 컬렉션 형식 연결 시각화
 

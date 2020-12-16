@@ -1,5 +1,5 @@
 ---
-title: '방법: 형식 간의 상속 보기(클래스 디자이너)'
+title: 형식 간에 상속 보기
 description: 클래스 디자이너의 클래스 다이어그램에서 기본 형식과 파생 형식 간의 상속 관계를 찾는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0e4dff57b11d0ba16fcab7d2ddf8c175e05c2b6d
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901195"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933455"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 보기
 
