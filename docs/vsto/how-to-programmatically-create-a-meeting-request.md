@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 모임 요청 만들기'
+description: Microsoft Outlook에서 프로그래밍 방식으로 모임 요청을 만들고 필요한 참석자에 게 요청을 보낼 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48233a051b42b01d5dce2c1a0fb4819882897d3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83a8ba1ddabccd307a31ffc3508e3c39fcdffbff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527803"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>방법: 프로그래밍 방식으로 모임 요청 만들기
   이 예제에서는 Microsoft Office Outlook에서 모임 요청을 만들고 필요한 참석자에게 요청을 보냅니다.

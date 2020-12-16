@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 사용자 지정 폴더 항목 만들기'
+description: Visual Studio를 사용 하 여 Microsoft Outlook에서 프로그래밍 방식으로 사용자 지정 폴더 항목을 만드는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 034131f19c141f81922c843be0eb49e640dee858
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f149758665e5d7a7cdf7f4edd5d926e1de632dca
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399213"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527793"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>방법: 프로그래밍 방식으로 사용자 지정 폴더 항목 만들기
   이 예제에서는 Microsoft Office Outlook에 새 폴더를 만듭니다. 로그온 한 사용자의 이름은 폴더 이름에 사용 됩니다.

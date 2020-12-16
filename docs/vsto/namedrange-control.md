@@ -1,5 +1,7 @@
 ---
 title: NamedRange 컨트롤
+description: NamedRange 컨트롤이 고유한 이름을 포함 하 고, 이벤트를 노출 하 고, 데이터에 바인딩될 수 있는 범위에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254724"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528088"
 ---
 # <a name="namedrange-control"></a>NamedRange 컨트롤
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 고유 이름이 있고, 이벤트를 노출하고, 데이터에 바인딩될 수 있는 범위입니다. 자세한 내용은 [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)를 참조 하세요.
@@ -50,7 +52,7 @@ ms.locfileid: "71254724"
  <xref:Microsoft.Office.Interop.Excel.Range> 에 적용할 수 있는 서식은 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤에 적용할 수 있습니다. 여기에는 테두리, 글꼴, 숫자 서식 및 스타일이 포함 됩니다.
 
 ## <a name="rename-the-control"></a>컨트롤 이름 바꾸기
- <xref:Microsoft.Office.Tools.Excel.NamedRange> 도구 상자 **에서**컨트롤을 워크시트에 추가할 때 Visual Studio에서 컨트롤 이름을 자동으로 생성합니다. **속성** 창을 사용하여 이 이름을 변경할 수 있습니다.
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> 도구 상자 **에서** 컨트롤을 워크시트에 추가할 때 Visual Studio에서 컨트롤 이름을 자동으로 생성합니다. **속성** 창을 사용하여 이 이름을 변경할 수 있습니다.
 
 ## <a name="events"></a>이벤트
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤에 대해 다음 이벤트를 사용할 수 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4.5로 마이그레이션된 Excel 또는 Word 프로젝트를 업데이트 합니다.
+description: 특정 기능을 사용 하는 Excel 또는 Word 프로젝트가 있는 경우 대상 프레임 워크가 .NET Framework 4 이상으로 변경 되 면 코드를 수정 해야 합니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584414"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528435"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>.NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트를 업데이트 합니다.
   다음 기능 중 하나를 사용하는 Excel 또는 Word 프로젝트가 있는 경우 대상 프레임워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경되면 코드를 수정해야 합니다.
@@ -44,7 +46,7 @@ ms.locfileid: "91584414"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>ExcelLocale1033Attribute를 제거하려면
 
-1. Visual Studio에서 프로젝트를 열고 **솔루션 탐색기**를 엽니다.
+1. Visual Studio에서 프로젝트를 열고 **솔루션 탐색기** 를 엽니다.
 
 2. **속성** 노드(C#의 경우) 또는 **My Project** 노드(Visual Basic의 경우) 아래에서 AssemblyInfo 코드 파일을 두 번 클릭하여 코드 편집기에서 엽니다.
 
@@ -66,9 +68,9 @@ ms.locfileid: "91584414"
 
 ### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>ExcelLocal1033Proxy 클래스에 대한 참조를 제거하려면
 
-1. Visual Studio에서 프로젝트를 열고 **솔루션 탐색기**를 엽니다.
+1. Visual Studio에서 프로젝트를 열고 **솔루션 탐색기** 를 엽니다.
 
-2. **솔루션 탐색기**에서 *ThisAddin.cs* (c #의 경우) 또는 *ThisAddin* (Visual Basic의 경우)에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+2. **솔루션 탐색기** 에서 *ThisAddin.cs* (c #의 경우) 또는 *ThisAddin* (Visual Basic의 경우)에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 3. 코드 편집기의 `VSTO generated code` 영역에서 다음 코드 줄을 주석으로 처리합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 통합 문서 호스트 항목
+description: 통합 문서 호스트 항목은 Microsoft Excel 용 주 interop 어셈블리에서 통합 문서 유형을 확장 하는 유형 임을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255077"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528352"
 ---
 # <a name="workbook-host-item"></a>통합 문서 호스트 항목
   <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 Excel용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Excel.Workbook> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 <xref:Microsoft.Office.Interop.Excel.Workbook> 개체와 동일한 속성, 메서드 및 이벤트를 제공하지만 추가 기능도 제공합니다.
@@ -46,7 +48,7 @@ ms.locfileid: "71255077"
 
  런타임에 새 Excel 통합 문서를 만드는 경우 <xref:Microsoft.Office.Interop.Excel.Workbook>형식이 됩니다. 이 형식은 호스트 항목이 아니므로 호스트 컨트롤 또는 Windows Forms 컨트롤을 포함할 수 없습니다. 런타임에 통합 문서를 만드는 방법에 대 한 자세한 내용은 [방법: 프로그래밍 방식으로 새 통합 문서 만들기](../vsto/how-to-programmatically-create-new-workbooks.md)를 참조 하세요.
 
- <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 호스트 컨트롤의 컨테이너로 사용되지 않습니다. 그러므로 통합 문서에 보이는 컨트롤을 추가할 수 없지만 <xref:System.Data.DataSet>등의 구성 요소는 추가할 수 있으므로 모든 워크시트에서 구성 요소를 공유할 수 있습니다. 도메인 수준 프로젝트에서 통합 문서에 사용할 수 있는 구성 요소는 **도구 상자** 의 **구성 요소** 탭, **데이터** 탭 및 **모든 Windows Forms**탭에서 찾을 수 있습니다.
+ <xref:Microsoft.Office.Tools.Excel.Workbook> 호스트 항목은 호스트 컨트롤의 컨테이너로 사용되지 않습니다. 그러므로 통합 문서에 보이는 컨트롤을 추가할 수 없지만 <xref:System.Data.DataSet>등의 구성 요소는 추가할 수 있으므로 모든 워크시트에서 구성 요소를 공유할 수 있습니다. 도메인 수준 프로젝트에서 통합 문서에 사용할 수 있는 구성 요소는 **도구 상자** 의 **구성 요소** 탭, **데이터** 탭 및 **모든 Windows Forms** 탭에서 찾을 수 있습니다.
 
 > [!NOTE]
 > Visual Studio의 Office 개발 도구는 공유 통합 문서를 지원하지 않습니다.

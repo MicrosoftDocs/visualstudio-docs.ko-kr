@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 솔루션
+description: VSTO 추가 기능을 사용 하 여 Project를 자동화 하거나, 프로젝트 기능을 확장 하거나, 프로젝트 UI (사용자 인터페이스)를 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985630"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527506"
 ---
 # <a name="project-solutions"></a>프로젝트 솔루션
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 에서는 Microsoft Office Project용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Project를 자동화하거나 Project 기능을 확장하거나 Project UI(사용자 인터페이스)를 사용자 지정할 수 있습니다.
@@ -56,13 +58,13 @@ ms.locfileid: "72985630"
 ## <a name="customize-the-user-interface-of-project"></a>Project의 사용자 인터페이스 사용자 지정
  다음과 같은 방법으로 Project UI를 사용자 지정할 수 있습니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |Project에서 리본에 사용자 지정 탭을 추가합니다.|[리본 개요](../vsto/ribbon-overview.md)|
 
  Project 및 기타 Microsoft Office 응용 프로그램의 UI를 사용자 지정 하는 방법에 대 한 자세한 내용은 [OFFICE ui 사용자 지정](../vsto/office-ui-customization.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: project 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

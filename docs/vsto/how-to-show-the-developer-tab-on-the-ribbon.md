@@ -1,5 +1,7 @@
 ---
 title: '방법: 리본 메뉴에 개발자 탭 표시'
+description: Visual Studio를 사용 하 여 프로그래밍 방식으로 Microsoft Word 문서에서 리본 메뉴에 개발자 탭을 표시 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545849"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528147"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>방법: 리본 메뉴에 개발자 탭 표시
   Office 응용 프로그램의 리본에서 **개발자** 탭에 액세스 하려면 기본적으로 표시 되지 않기 때문에 해당 탭을 표시 하도록 구성 해야 합니다. 예를 표시 Word의 문서 수준 사용자 지정에 <xref:Microsoft.Office.Tools.Word.GroupContentControl>을 추가하려면 해당 탭을 표시해야 합니다.
@@ -66,5 +68,5 @@ ms.locfileid: "85545849"
 
 5. **확인** 단추를 선택 하 여 **옵션** 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)

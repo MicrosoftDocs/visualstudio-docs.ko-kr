@@ -1,5 +1,7 @@
 ---
 title: 게시 마법사 (Visual Studio에서 Office 개발)
+description: 게시 마법사를 사용 하 여 솔루션 파일을 지정 된 위치에 복사 하 고 매니페스트 파일을 만들며 Visual Studio에서 설치 프로그램을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810982"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528014"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>게시 마법사 (Visual Studio에서 Office 개발)
   **게시 마법사** 를 사용 하 여 솔루션 파일을 지정 된 위치에 복사 하 고 매니페스트 파일을 만들고 설치 프로그램을 만들 수 있습니다.
 
- 이 마법사에 액세스 하려면 **빌드** 메뉴에서 *SolutionName* **게시** 를 선택 합니다. **솔루션 탐색기**에서 **게시 마법사** 에 액세스할 수도 있습니다. 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **게시**를 선택 합니다.
+ 이 마법사에 액세스 하려면 **빌드** 메뉴에서 *SolutionName* **게시** 를 선택 합니다. **솔루션 탐색기** 에서 **게시 마법사** 에 액세스할 수도 있습니다. 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **게시** 를 선택 합니다.
 
  아래 각 섹션에서는 마법사의 페이지에 대해 설명 합니다.
 
@@ -39,14 +41,14 @@ ms.locfileid: "90810982"
 
 - 표준 Windows 형식의 상대 또는 절대 경로 (예: *C:\deploy\myapplication* 또는 *\myapplication*)
 
-- * \\ \ServerName\MyApplication \\ *와 같은 UNC (범용 명명 규칙) 경로입니다.
+- *\\ \ServerName\MyApplication \\* 와 같은 UNC (범용 명명 규칙) 경로입니다.
 
 - 웹 사이트의 URL (예:)입니다 `http://www.contoso.com/MyApplication` .
 
   기본적으로 게시 위치는 IIS를 *http://localhost/projectname/* 설치한 경우이 고, iis를 설치 하지 않은 경우에는 publish \ 디렉터리입니다.
 
 > [!NOTE]
-> 대상 컴퓨터에서 Windows Vista를 실행 하는 경우에는 더 많은 고려 사항이 있습니다. 로컬 게시 옵션을 사용 하려면 Windows Vista 컴퓨터의 관리자 여야 합니다. 또한 IIS의 설치 여부에 관계 없이 기본 위치는 항상 *게시 \\ * 디렉터리입니다.
+> 대상 컴퓨터에서 Windows Vista를 실행 하는 경우에는 더 많은 고려 사항이 있습니다. 로컬 게시 옵션을 사용 하려면 Windows Vista 컴퓨터의 관리자 여야 합니다. 또한 IIS의 설치 여부에 관계 없이 기본 위치는 항상 *게시 \\* 디렉터리입니다.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>최종 사용자 컴퓨터의 기본 설치 경로는 무엇입니까?
  설치 경로는 선택 사항입니다. 원할 경우 나중에 설치 경로를 설정할 수 있습니다. 자세한 내용은 [방법: Office 솔루션의 설치 경로 변경](/previous-versions/bb608626(v=vs.110))을 참조 하십시오.
@@ -61,7 +63,7 @@ ms.locfileid: "90810982"
 
  Visual Studio는 CD 또는 DVD를 굽지 않습니다. 출력을 CD 또는 DVD에 수동으로 복사 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [프로젝트 디자이너의 게시 페이지는 Visual Studio에서 Office 개발을 &#40;&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

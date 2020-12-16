@@ -1,5 +1,7 @@
 ---
 title: Word 솔루션
+description: Visual Studio 솔루션을 사용 하 여 Word를 자동화 하 고, Word 기능을 확장 하 고, Word UI (사용자 인터페이스)를 사용자 지정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985374"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528361"
 ---
 # <a name="word-solutions"></a>Word 솔루션
   Visual Studio에서는 Microsoft Office Word용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Word를 자동화하고, Word 기능을 확장한 다음 Word UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 개요 &#40;vsto&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -85,7 +87,7 @@ ms.locfileid: "72985374"
 ### <a name="options-for-all-project-types"></a>모든 프로젝트 형식에 대 한 옵션
  다음 표에서는 문서 수준 사용자 지정과 VSTO 추가 기능에서 모두 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |리본 메뉴 사용자 지정|[리본 개요](../vsto/ribbon-overview.md)|
 |문서 수준 사용자 지정에 대한 사용자 지정 문서 또는 VSTO 추가 기능에 대한 열려 있는 문서에 Windows Forms 컨트롤 또는 확장된 Word 컨트롤 추가|[방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
@@ -93,7 +95,7 @@ ms.locfileid: "72985374"
 ### <a name="options-for-document-level-customizations"></a>문서 수준 사용자 지정 옵션
  다음 표에서는 문서 수준 사용자 지정에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |문서에 작업 창 추가|[작업 창 개요](../vsto/actions-pane-overview.md)<br /><br /> [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |확장된 XMLNode 및 XMLNodes 컨트롤을 문서 화면에 추가합니다.|[방법: Word 문서에 XMLNode 컨트롤 추가](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [방법: Word 문서에 XMLNodes 컨트롤 추가](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
@@ -101,13 +103,13 @@ ms.locfileid: "72985374"
 ### <a name="options-for-vsto-add-ins"></a>VSTO 추가 기능에 대한 옵션
  다음 표에서는 VSTO 추가 기능에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |사용자 지정 작업창을 만듭니다.|[사용자 지정 작업 창](../vsto/custom-task-panes.md)|
 
 ### <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[Word 개체 모델 개요](../vsto/word-object-model-overview.md)|Word 개체 모델에서 제공하는 주요 형식에 대해 설명합니다.|
 |[확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)|Word 솔루션에서 사용할 수 있는 확장된 개체( [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에서 제공)에 대한 정보를 제공합니다.|

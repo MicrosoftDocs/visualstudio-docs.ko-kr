@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 문서와 문서 부분 보호
+description: Microsoft Word 문서에 보호를 추가 하 여 사용자가 문서를 편집 하지 못하도록 방지 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beab8c2e1b18d56dc7b71688e0ff2ec5b74ac596
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584848"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527769"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>방법: 프로그래밍 방식으로 문서 및 문서 부분 보호
   Microsoft Office Word 문서에 보호를 추가하여 사용자의 문서 편집을 방지할 수 있습니다.

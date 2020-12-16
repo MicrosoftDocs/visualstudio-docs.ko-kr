@@ -1,5 +1,6 @@
 ---
 title: Word 용 첫 문서 수준 사용자 지정 만들기
+description: Microsoft Word에 대 한 문서 수준 사용자 지정을 만듭니다. 이러한 종류의 솔루션에서 만드는 기능은 특정 문서가 열려 있는 경우에만 사용할 수 있습니다.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527074"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>연습: Word 용 첫 문서 수준 사용자 지정 만들기
 
@@ -56,30 +57,30 @@ ms.locfileid: "91584991"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+2. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 ::: moniker range="vs-2017"
-3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.
+3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic** 을 확장한 다음 **Office/SharePoint** 를 확장합니다.
 
 4. 확장 된 **Office/SharePoint** 노드 아래에서 **VSTO 추가 기능** 노드를 선택 합니다.
 
 5. 프로젝트 템플릿 목록에서 Word VSTO 문서 프로젝트를 선택 합니다.
 
-6. **이름** 상자에 **firstdocumentcustomization 지정**을 입력 합니다.
+6. **이름** 상자에 **firstdocumentcustomization 지정** 을 입력 합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
-8. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
+8. **Visual Studio Tools for Office 프로젝트 마법사** 에서 **새 문서 만들기** 를 선택 하 고 **확인** 을 클릭 합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. **새 프로젝트 만들기** 대화 상자에서 **Word VSTO 문서** 프로젝트를 선택 합니다.
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. **다음**을 클릭합니다.
+4. **다음** 을 클릭합니다.
 
-5. **새 프로젝트 구성** 대화 상자의 **이름** 상자에 **first통합 사용자 지정** 을 입력 하 고 **만들기**를 클릭 합니다.
+5. **새 프로젝트 구성** 대화 상자의 **이름** 상자에 **first통합 사용자 지정** 을 입력 하 고 **만들기** 를 클릭 합니다.
 
-6. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
+6. **Visual Studio Tools for Office 프로젝트 마법사** 에서 **새 문서 만들기** 를 선택 하 고 **확인** 을 클릭 합니다.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstdocumentcustomization 지정** 프로젝트를 만들고 **firstdocumentcustomization 지정** 문서 및 ThisDocument 코드 파일을 프로젝트에 추가 합니다. **Firstdocumentcustomization 지정** 문서는 디자이너에서 자동으로 열립니다.
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584991"
 
 1. 디자이너 창의 **닫기** 단추 (X)를 클릭 하 여 문서를 닫습니다.
 
-2. **솔루션 탐색기**에서 **ThisDocument** 코드 파일을 마우스 오른쪽 단추로 클릭 하 고 **디자이너 보기**를 클릭 합니다.
+2. **솔루션 탐색기** 에서 **ThisDocument** 코드 파일을 마우스 오른쪽 단추로 클릭 하 고 **디자이너 보기** 를 클릭 합니다.
 
      \- 또는 -
 
-     **솔루션 탐색기**에서 **ThisDocument** 코드 파일을 두 번 클릭 합니다.
+     **솔루션 탐색기** 에서 **ThisDocument** 코드 파일을 두 번 클릭 합니다.
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>디자이너에서 문서에 텍스트 추가
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584991"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>코드를 사용하여 문서에 두 번째 텍스트 단락을 추가하려면
 
-1. **솔루션 탐색기**에서 **ThisDocument**를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **ThisDocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
      Visual Studio에서 코드 파일이 열립니다.
 
@@ -151,7 +152,7 @@ ms.locfileid: "91584991"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>개발 컴퓨터에서 완료된 프로젝트를 정리하려면
 
-1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리**를 클릭합니다.
+1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리** 를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

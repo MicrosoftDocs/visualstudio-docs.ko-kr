@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 사용자 지정 달력 만들기'
+description: 이 예제를 사용 하 여 PersonalCalendar 라는 새 일정 폴더를 프로그래밍 방식으로 만든 다음 새 약속 항목을 만들어 Calendar 폴더에 추가 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546057"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527835"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>방법: 프로그래밍 방식으로 사용자 지정 달력 만들기
-  이 예에서는 **PersonalCalendar**이라는 새 일정 폴더를 만든 다음 새 약속 항목을 만들어 Calendar 폴더에 추가 합니다. 그런 다음 코드에서 Calendar 폴더를 표시 합니다.
+  이 예에서는 **PersonalCalendar** 이라는 새 일정 폴더를 만든 다음 새 약속 항목을 만들어 Calendar 폴더에 추가 합니다. 그런 다음 코드에서 Calendar 폴더를 표시 합니다.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

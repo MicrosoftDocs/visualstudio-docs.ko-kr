@@ -1,5 +1,7 @@
 ---
 title: '연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩'
+description: Word 용 문서 수준 사용자 지정의 콘텐츠 컨트롤을 문서에 저장 된 XML 데이터에 바인딩하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544445"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527966"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩
   이 연습에서는 문서에 저장된 XML 데이터에 Word에 대한 문서 수준 사용자 지정의 콘텐츠 컨트롤을 바인딩하는 방법을 보여 줍니다.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word를 사용 하 여 문서에 *사용자 지정 xml 부분*이라는 xml 데이터를 저장할 수 있습니다. 사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤을 바인딩하여 이 데이터의 표시를 제어할 수 있습니다. 이 연습의 예제 문서에서는 사용자 지정 XML 부분에 저장된 직원 정보를 표시합니다. 문서를 열면 콘텐츠 컨트롤에 XML 요소의 값이 표시됩니다. 콘텐츠 컨트롤의 텍스트에 대한 모든 변경 내용은 사용자 지정 XML 부분에 저장됩니다.
+ Word를 사용 하 여 문서에 *사용자 지정 xml 부분* 이라는 xml 데이터를 저장할 수 있습니다. 사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤을 바인딩하여 이 데이터의 표시를 제어할 수 있습니다. 이 연습의 예제 문서에서는 사용자 지정 XML 부분에 저장된 직원 정보를 표시합니다. 문서를 열면 콘텐츠 컨트롤에 XML 요소의 값이 표시됩니다. 콘텐츠 컨트롤의 텍스트에 대한 모든 변경 내용은 사용자 지정 XML 부분에 저장됩니다.
 
  이 연습에서는 다음 작업을 수행합니다.
 
@@ -59,7 +61,7 @@ ms.locfileid: "85544445"
 
 ### <a name="to-create-a-new-word-document-project"></a>새 Word 문서 프로젝트를 만들려면
 
-1. 이름이 **employeecontrols.docx**인 Word 문서 프로젝트를 만듭니다. 솔루션에 대한 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름이 **employeecontrols.docx** 인 Word 문서 프로젝트를 만듭니다. 솔루션에 대한 새 문서를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]디자이너에서 새 Word 문서를 열고 **솔루션 탐색기** **employeecontrols.docx** 프로젝트를 추가 합니다.
 
@@ -70,7 +72,7 @@ ms.locfileid: "85544445"
 
 1. 디자이너에서 호스팅되는 Word 문서의 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 리본 메뉴에서 **삽입** 탭을 선택 합니다.
 
-2. **테이블 그룹에서** **테이블**을 선택 하 고 2 개의 열과 3 개의 행이 있는 테이블을 삽입 합니다.
+2. **테이블 그룹에서** **테이블** 을 선택 하 고 2 개의 열과 3 개의 행이 있는 테이블을 삽입 합니다.
 
 3. 다음 열과 비슷하도록 첫 번째 열에 텍스트를 입력합니다.
 
@@ -80,7 +82,7 @@ ms.locfileid: "85544445"
    |**Hire Date**|
    |**제목**|
 
-4. 테이블의 두 번째 열에서 첫 번째 행을 선택 합니다 ( **Employee Name**옆).
+4. 테이블의 두 번째 열에서 첫 번째 행을 선택 합니다 ( **Employee Name** 옆).
 
 5. 리본에서 **개발자** 탭을 선택 합니다.
 
@@ -89,11 +91,11 @@ ms.locfileid: "85544445"
 
 6. **컨트롤** 그룹에서 **텍스트** 단추 ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") 를 선택 하 여 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 첫 번째 셀에를 추가 합니다.
 
-7. 테이블의 두 번째 열에서 두 번째 행 ( **채용 날짜**옆)을 선택 합니다.
+7. 테이블의 두 번째 열에서 두 번째 행 ( **채용 날짜** 옆)을 선택 합니다.
 
 8. **컨트롤** 그룹에서 **날짜 선택** 단추 ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") 를 선택 하 여 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 두 번째 셀에를 추가 합니다.
 
-9. 테이블의 두 번째 열에서 세 번째 행 ( **제목**옆에 있는)을 선택 합니다.
+9. 테이블의 두 번째 열에서 세 번째 행 ( **제목** 옆에 있는)을 선택 합니다.
 
 10. **컨트롤** 그룹에서 **드롭다운 목록** 단추 ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") 를 선택 하 여 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 마지막 셀에를 추가 합니다.
 
@@ -104,13 +106,13 @@ ms.locfileid: "85544445"
 
 #### <a name="to-create-the-data-file"></a>데이터 파일을 만들려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
-2. **템플릿** 창에서 **XML 파일**을 선택 합니다.
+2. **템플릿** 창에서 **XML 파일** 을 선택 합니다.
 
-3. 파일 이름을 **employees.xml**로 지정한 다음 **추가** 단추를 선택 합니다.
+3. 파일 이름을 **employees.xml** 로 지정한 다음 **추가** 단추를 선택 합니다.
 
      **employees.xml** 파일이 코드 편집기에서 열립니다.
 
@@ -127,9 +129,9 @@ ms.locfileid: "85544445"
     </employees>
     ```
 
-5. **솔루션 탐색기**에서 **employees.xml** 파일을 선택 합니다.
+5. **솔루션 탐색기** 에서 **employees.xml** 파일을 선택 합니다.
 
-6. **속성** 창에서 **빌드 작업** 속성을 선택 하 고 값을 **포함 리소스**로 변경 합니다.
+6. **속성** 창에서 **빌드 작업** 속성을 선택 하 고 값을 **포함 리소스** 로 변경 합니다.
 
      이 단계에서는 프로젝트를 빌드할 때 XML 파일을 어셈블리에 리소스로 포함합니다. 이렇게 하면 런타임에 XML 파일의 내용에 액세스할 수 있습니다.
 
@@ -138,17 +140,17 @@ ms.locfileid: "85544445"
 
 #### <a name="to-create-an-xml-schema"></a>XML 스키마를 만들려면
 
-1. **프로젝트** 메뉴에서 **새 항목 추가**를 선택합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가** 를 선택합니다.
 
      **새 항목 추가** 대화 상자가 나타납니다.
 
-2. **템플릿** 창에서 **XML 스키마**를 선택 합니다.
+2. **템플릿** 창에서 **XML 스키마** 를 선택 합니다.
 
 3. 스키마 이름을 **employees .xsd** 로 하 고 **추가** 단추를 선택 합니다.
 
      스키마 디자이너가 열립니다.
 
-4. **솔루션 탐색기**에서 **employees**에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+4. **솔루션 탐색기** 에서 **employees** 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 5. **Employees .xsd** 파일의 내용을 다음 스키마로 바꿉니다.
 
@@ -225,19 +227,19 @@ ms.locfileid: "85544445"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>문서에 사용자 지정 XML 부분을 추가하려면
 
-1. **솔루션 탐색기**에서 **ThisDocument.cs** 또는 **ThisDocument**에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+1. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 2. `ThisDocument` 클래스에 다음 선언을 추가합니다. 이 코드는 문서에 사용자 지정 XML 부분을 추가하는 데 사용할 여러 개체를 선언합니다.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3. `ThisDocument` 클래스에 다음 메서드를 추가합니다. 이 메서드는 어셈블리에 리소스로 포함된 XML 데이터 파일의 내용을 가져오고 XML 문자열로 반환합니다.
+3. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. 이 메서드는 어셈블리에 리소스로 포함된 XML 데이터 파일의 내용을 가져오고 XML 문자열로 반환합니다.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4. `ThisDocument` 클래스에 다음 메서드를 추가합니다. `AddCustomXmlPart` 메서드는 메서드에 전달된 XML 문자열을 포함하는 새 사용자 지정 XML 부분을 만듭니다.
+4. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. `AddCustomXmlPart` 메서드는 메서드에 전달된 XML 문자열을 포함하는 새 사용자 지정 XML 부분을 만듭니다.
 
      사용자 지정 XML 부분이 한 번만 생성되도록 이 메서드는 일치하는 GUID를 가진 사용자 지정 XML 부분이 문서에 없는 경우에만 사용자 지정 XML 부분을 만듭니다. 이 메서드를 처음 호출하면 <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> 속성의 값이 `employeeXMLPartID` 문자열에 저장됩니다. `employeeXMLPartID` 문자열의 값은 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성을 사용하여 선언되었으므로 문서에 유지됩니다.
 
@@ -249,7 +251,7 @@ ms.locfileid: "85544445"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤을 바인딩하려면
 
-1. `ThisDocument` 클래스에 다음 메서드를 추가합니다. 이 메서드는 사용자 지정 XML 부분의 요소에 각 콘텐츠 컨트롤을 바인딩하고 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>의 날짜 표시 형식을 설정합니다.
+1. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. 이 메서드는 사용자 지정 XML 부분의 요소에 각 콘텐츠 컨트롤을 바인딩하고 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>의 날짜 표시 형식을 설정합니다.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -289,9 +291,9 @@ ms.locfileid: "85544445"
 
 7. 파일 탐색기에서 프로젝트의 위치 아래에 있는 *\bin\debug* 폴더를 엽니다.
 
-8. **EmployeeControls.docx** 에 대 한 바로 가기 메뉴를 열고 **이름 바꾸기**를 선택 합니다.
+8. **EmployeeControls.docx** 에 대 한 바로 가기 메뉴를 열고 **이름 바꾸기** 를 선택 합니다.
 
-9. 파일 이름을 **EmployeeControls.docx.zip**로 합니다.
+9. 파일 이름을 **EmployeeControls.docx.zip** 로 합니다.
 
      **EmployeeControls.docx** 문서는 Open XML 형식으로 저장 됩니다. *.Zip* 파일 이름 확장명을 사용 하 여이 문서의 이름을 바꾸면 문서의 내용을 검토할 수 있습니다. Open XML에 대 한 자세한 내용은 기술 문서 [Office (2007) OPEN xml 파일 형식 소개](/previous-versions/office/developer/office-2007/aa338205(v=office.12))를 참조 하세요.
 
@@ -299,7 +301,7 @@ ms.locfileid: "85544445"
 
 11. **Customxml** 폴더를 엽니다.
 
-12. **item2.xml** 에 대 한 바로 가기 메뉴를 열고 **열기**를 선택 합니다.
+12. **item2.xml** 에 대 한 바로 가기 메뉴를 열고 **열기** 를 선택 합니다.
 
      이 파일에는 문서에 추가한 사용자 지정 XML 부분이 포함됩니다.
 
@@ -316,7 +318,7 @@ ms.locfileid: "85544445"
 
 - 콘텐츠 컨트롤을 사용하여 문서 부분을 보호합니다. 자세한 내용은 [방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [콘텐츠 컨트롤](../vsto/content-controls.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)

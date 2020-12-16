@@ -1,5 +1,7 @@
 ---
 title: '방법: 책갈피 컨트롤 크기 조정'
+description: Visual Studio를 사용 하 여 Microsoft Word 문서에 추가할 때 책갈피 컨트롤의 크기를 설정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545862"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528202"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>방법: 책갈피 컨트롤 크기 조정
   Microsoft Office Word 문서에 추가할 때 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤의 크기를 설정합니다. 나중에 크기를 조정할 수도 있습니다.
@@ -83,11 +85,11 @@ ms.locfileid: "85545862"
 
 1. 새 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤에 포함될 텍스트를 선택합니다.
 
-2. **삽입** 메뉴에서 **책갈피**를 클릭합니다.
+2. **삽입** 메뉴에서 **책갈피** 를 클릭합니다.
 
-3. **책갈피** 대화 상자에서 크기를 조정하려는 책갈피 이름을 선택하고 **추가**를 클릭합니다.
+3. **책갈피** 대화 상자에서 크기를 조정하려는 책갈피 이름을 선택하고 **추가** 를 클릭합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

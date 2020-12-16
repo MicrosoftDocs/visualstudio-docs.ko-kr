@@ -1,5 +1,7 @@
 ---
 title: Office 개발 샘플 및 연습
+description: 예제 응용 프로그램, 예제 코드 및 Office 솔루션을 빌드하는 데 사용 되는 구문, 구조 및 기술을 보여 주는 단계별 연습에 대해 알아보세요.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +22,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551675"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527728"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 개발 샘플 및 연습
   이 섹션에는 예제 응용 프로그램, 예제 코드 및 Microsoft Office 솔루션을 빌드하는 데 사용 되는 구문, 구조 및 기술을 보여 주는 단계별 연습이 포함 되어 있습니다.
 
- 샘플 코드는 교육용 이며 수정 없이 배포 된 솔루션에서 사용 하면 안 됩니다. 특히 보안을 보다 신중 하 게 고려해 야 합니다.
+ 샘플 코드는 교육용 이며 수정 없이 배포 된 솔루션에서 사용 하면 안 됩니다. 특히, 보안에 더 주의해야 합니다.
 
  응용 프로그램 보안에 대 한 자세한 내용은 [Office 솔루션 보안](../vsto/securing-office-solutions.md)을 참조 하세요.
 
@@ -38,7 +40,7 @@ ms.locfileid: "69551675"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[Office 개발 샘플](../vsto/office-development-samples.md)|Visual Studio에서 Office 및 SharePoint 개발을 사용 하는 방법을 보여 주는 샘플 응용 프로그램에 대 한 링크를 제공 합니다.|
 |[Word를 사용한 연습](../vsto/walkthroughs-using-word.md)|Visual Studio에서 Office 개발 도구를 소개 하 고 Office Business Applications에 Word를 통합 하는 방법을 설명 하는 단계별 가이드를 제공 합니다.|
@@ -47,9 +49,9 @@ ms.locfileid: "69551675"
 |[Office UI 사용자 지정 연습](../vsto/office-ui-customization-walkthroughs.md)|Microsoft Office 응용 프로그램의 UI (사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 주는 단계별 가이드를 제공 합니다.|
 |[보안 및 배포 연습](../vsto/security-and-deployment-walkthroughs.md)|솔루션을 실행할 수 있도록 보안 정책을 설정 하 고 솔루션을 배포 하는 방법을 설명 하는 단계별 가이드를 제공 합니다.|
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
-|항목|설명|
+|항목|Description|
 |-----------|-----------------|
 |[Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|설치 프로그램, 프로젝트 템플릿, Office 주 interop 어셈블리 및 Office 개발의 새로운 기능에 대 한 정보 링크를 제공 합니다.|
 |[Visual Studio의 Office 솔루션 아키텍처](../vsto/architecture-of-office-solutions-in-visual-studio.md)|관리 코드 Office 솔루션이 개발자와 최종 사용자의 관점에서 작동 하는 방식에 대해 설명 하 고, 관리 코드가 Office 문서 및 응용 프로그램에서 작동 하는 방식에 대 한 정보를 포함 합니다.|

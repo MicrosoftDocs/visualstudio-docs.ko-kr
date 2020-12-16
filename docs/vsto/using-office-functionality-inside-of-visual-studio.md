@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 내에서 Office 기능 사용
+description: 문서 수준 프로젝트의 문서 및 연결 된 응용 프로그램을 Visual Studio 내에서 호스트 하 여 문서와 직접 작업할 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982343"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528410"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio 내에서 Office 기능 사용
   문서 수준 프로젝트를 만들 때 문서와 연결 된 응용 프로그램은 Visual Studio 내에서 호스팅되므로 문서를 직접 디자인 하 고 작업할 수 있습니다. Microsoft Office 응용 프로그램이 Visual Studio에서 열려 있는 경우 일반적으로 정상적으로 작동 합니다. 그러나 응용 프로그램의 기능 중 일부는 다르거나 액세스할 수 없습니다.
@@ -35,7 +37,7 @@ ms.locfileid: "62982343"
 ## <a name="password-protection"></a>암호 보호
  Word 문서 및 Microsoft Office Excel 통합 문서를 Microsoft Office 암호를 모르는 사람이 열 수 없도록 설정할 수 있습니다. 암호 보호는 Word와 Excel에서 다르게 처리 되며 개발 프로세스에 영향을 줄 수 있습니다. 자세한 내용은 [Office 문서의 암호 보호](../vsto/password-protection-on-office-documents.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [문서 수준 솔루션의 문서 보호](../vsto/document-protection-in-document-level-solutions.md)
 - [정보 권한 관리 및 관리 코드 확장 개요](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Office 문서에 대 한 암호 보호](../vsto/password-protection-on-office-documents.md)

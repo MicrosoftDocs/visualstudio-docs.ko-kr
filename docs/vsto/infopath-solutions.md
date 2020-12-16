@@ -1,5 +1,7 @@
 ---
 title: InfoPath 솔루션
+description: Visual Studio를 사용 하 여 Microsoft InfoPath 2013 및 InfoPath 2010 용 VSTO 추가 기능을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3223b5c8211719ad04b2ea7af8079932f6631e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808804"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527737"
 ---
 # <a name="infopath-solutions"></a>InfoPath 솔루션
   Visual Studio에서는 Microsoft Office InfoPath 2013 및 InfoPath 2010용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. InfoPath는 Office 2016에서 사용할 수 없습니다.
@@ -55,7 +57,7 @@ ms.locfileid: "90808804"
 
  InfoPath 및 기타 Microsoft Office 응용 프로그램의 UI를 사용자 지정 하는 방법에 대 한 자세한 내용은 [OFFICE ui 사용자 지정](../vsto/office-ui-customization.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Microsoft Office InfoPath 주 interop 어셈블리 정보](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)
 - [VSTO 추가 기능 프로그래밍 시작](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

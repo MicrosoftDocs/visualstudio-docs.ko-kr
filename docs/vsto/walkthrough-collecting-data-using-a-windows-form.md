@@ -1,5 +1,7 @@
 ---
 title: '연습: Windows Form을 사용 하 여 데이터 수집'
+description: Microsoft Excel 용 문서 수준 사용자 지정에서 Windows Form을 열고 사용자 로부터 정보를 수집 하 고 워크시트 셀에 해당 정보를 기록 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841515"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527174"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>연습: Windows Form을 사용 하 여 데이터 수집
   이 연습에서는 Microsoft Office Excel용 문서 수준 사용자 지정에서 Windows Form을 열고 사용자로부터 정보를 수집하고 워크시트 셀에 해당 정보를 기록하는 방법을 보여 줍니다.
@@ -44,9 +46,9 @@ ms.locfileid: "90841515"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. **WinFormInput**이라는 이름의 Excel 통합 문서 프로젝트를 만들고 마법사에서 **새 문서 만들기** 를 선택합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. **WinFormInput** 이라는 이름의 Excel 통합 문서 프로젝트를 만들고 마법사에서 **새 문서 만들기** 를 선택합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio의 디자이너에 새 Excel 통합 문서가 열리고 **WinFormInput** 프로젝트가 **솔루션 탐색기**에 추가됩니다.
+     Visual Studio의 디자이너에 새 Excel 통합 문서가 열리고 **WinFormInput** 프로젝트가 **솔루션 탐색기** 에 추가됩니다.
 
 ## <a name="add-a-namedrange-control-to-the-worksheet"></a>워크시트에 NamedRange 컨트롤 추가
 
@@ -54,30 +56,30 @@ ms.locfileid: "90841515"
 
 1. **에서** A1 `Sheet1`셀을 선택합니다.
 
-2. **이름** 상자에 **formInput**를 입력합니다.
+2. **이름** 상자에 **formInput** 를 입력합니다.
 
      **이름** 상자는 워크시트의 **A** 열 바로 위에 수식 입력줄의 왼쪽에 있습니다.
 
 3. **Enter** 키를 누릅니다.
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 **A1**셀에 추가됩니다. 워크시트에 볼 수 있는 표시가 없지만 **A1** 셀을 선택하면 **formInput** 이 **이름** 상자(왼쪽에 워크시트 바로 위) 및 **속성** 창에 나타납니다.
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 **A1** 셀에 추가됩니다. 워크시트에 볼 수 있는 표시가 없지만 **A1** 셀을 선택하면 **formInput** 이 **이름** 상자(왼쪽에 워크시트 바로 위) 및 **속성** 창에 나타납니다.
 
 ## <a name="add-a-windows-form-to-the-project"></a>프로젝트에 Windows Form 추가
  사용자에게 정보 확인 메시지를 표시하는 Windows Form을 만듭니다.
 
 ### <a name="to-add-a-windows-form"></a>Windows Form을 추가하려면
 
-1. **솔루션 탐색기** 에서 **WinFormInput**프로젝트를 선택합니다.
+1. **솔루션 탐색기** 에서 **WinFormInput** 프로젝트를 선택합니다.
 
-2. **프로젝트** 메뉴에서 **새 Windows Form 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 Windows Form 추가** 를 클릭합니다.
 
-3. 양식을 **GetInputString.vb** 또는 **GetInputString.cs**로 명명한 다음 **추가**를 클릭합니다.
+3. 양식을 **GetInputString.vb** 또는 **GetInputString.cs** 로 명명한 다음 **추가** 를 클릭합니다.
 
     새 양식이 디자이너에서 열립니다.
 
 4. 폼에 <xref:System.Windows.Forms.TextBox> 및 <xref:System.Windows.Forms.Button> 를 추가합니다.
 
-5. 단추를 선택하고 **속성** 창에서 **Text** 속성을 찾은 다음 텍스트를 **확인**으로 변경합니다.
+5. 단추를 선택하고 **속성** 창에서 **Text** 속성을 찾은 다음 텍스트를 **확인** 으로 변경합니다.
 
    그런 다음 코드를 `ThisWorkbook.vb` 또는 `ThisWorkbook.cs` 에 추가하여 사용자의 정보를 수집합니다.
 
@@ -86,7 +88,7 @@ ms.locfileid: "90841515"
 
 #### <a name="to-display-the-form-and-collect-information"></a>양식을 표시하고 정보를 수집하려면
 
-1. **솔루션 탐색기** 에서 **ThisWorkbook.vb** 또는 **ThisWorkbook.cs**를 마우스 오른쪽 단추로 클릭한 다음 **코드 보기**를 클릭합니다.
+1. **솔루션 탐색기** 에서 **ThisWorkbook.vb** 또는 **ThisWorkbook.cs** 를 마우스 오른쪽 단추로 클릭한 다음 **코드 보기** 를 클릭합니다.
 
 2. <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 의 `ThisWorkbook`이벤트 처리기에서 다음 코드를 추가하여 `GetInputString` 양식에 대한 변수를 선언한 다음 양식을 표시합니다.
 
@@ -96,7 +98,7 @@ ms.locfileid: "90841515"
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
 
-3. 명명된 범위에 텍스트를 쓰는 `WriteStringToCell` 이라는 메서드를 만듭니다. 이 메서드가 양식에서 호출되고 사용자의 입력이 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`셀의 **컨트롤인**에 전달됩니다.
+3. 명명된 범위에 텍스트를 쓰는 `WriteStringToCell` 이라는 메서드를 만듭니다. 이 메서드가 양식에서 호출되고 사용자의 입력이 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`셀의 **컨트롤인** 에 전달됩니다.
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]
@@ -107,7 +109,7 @@ ms.locfileid: "90841515"
 
 ### <a name="to-send-information-to-the-worksheet"></a>워크시트에 정보를 보내려면
 
-1. **솔루션 탐색기** 에서 **GetInputString**을 마우스 오른쪽으로 클릭한 다음 **뷰 디자이너**를 클릭합니다.
+1. **솔루션 탐색기** 에서 **GetInputString** 을 마우스 오른쪽으로 클릭한 다음 **뷰 디자이너** 를 클릭합니다.
 
 2. 해당 단추를 두 번 클릭하여 단추의 추가된 <xref:System.Windows.Forms.Control.Click> 이벤트 처리기로 코드 파일을 엽니다.
 
@@ -125,7 +127,7 @@ ms.locfileid: "90841515"
 
 2. Windows Form이 나타나는지 확인합니다.
 
-3. 텍스트 상자에 **Hello World** 를 입력한 다음 **확인**을 클릭합니다.
+3. 텍스트 상자에 **Hello World** 를 입력한 다음 **확인** 을 클릭합니다.
 
 4. **Hello World** 가 워크시트의 **A1** 셀에 나타나는지 확인합니다.
 

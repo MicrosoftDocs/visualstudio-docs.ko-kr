@@ -1,5 +1,7 @@
 ---
 title: '방법: Office 솔루션에 서명'
+description: 인증서를 증명 정보로 사용 하 여 Microsoft Office 솔루션에 신뢰를 부여 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545758"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528121"
 ---
 # <a name="how-to-sign-office-solutions"></a>방법: Office 솔루션에 서명
   솔루션에 서명 하는 경우 인증서를 증명 정보로 사용 하 여 솔루션에 신뢰를 부여할 수 있습니다. 여러 솔루션에 동일한 인증서를 사용할 수 있으며, 모든 솔루션은 추가 보안 정책 업데이트 없이 신뢰 됩니다.
@@ -35,17 +37,17 @@ ms.locfileid: "85545758"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>인증서를 사용 하 여 Office 솔루션에 서명 하려면
 
-1. **프로젝트** 메뉴에서 _SolutionName_**속성**을 클릭 합니다.
+1. **프로젝트** 메뉴에서 _SolutionName_**속성** 을 클릭 합니다.
 
 2. **서명** 탭을 클릭합니다.
 
-3. **ClickOnce 매니페스트 서명을**선택 합니다.
+3. **ClickOnce 매니페스트 서명을** 선택 합니다.
 
 4. **저장소에서 선택** 을 클릭 하거나 **파일에서를 선택** 하 고 인증서로 이동 하 여 인증서를 찾습니다.
 
 5. 올바른 인증서가 사용 되 고 있는지 확인 하려면 **자세한 정보** 를 클릭 하 여 인증서 정보를 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)

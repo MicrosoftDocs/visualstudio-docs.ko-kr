@@ -1,5 +1,7 @@
 ---
 title: XMLNodes 컨트롤
+description: 반복 스키마 요소가 Microsoft Word 문서에 매핑될 때만 XMLNodes 컨트롤이 생성 되는 것을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd82b4bac36d648bee3f6735cf844691ef6d58b2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90843312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527851"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes 컨트롤
   **중요** Microsoft word와 관련 하 여이 항목에서 설명 하는 정보는 microsoft word에서 사용자 지정 XML과 관련 된 특정 기능의 구현을 제거 했을 때 미국 및 해당 지역 외부에 있거나 microsoft에서 실행 되는 프로그램 (1 월 2010 이전에 Microsoft에서 사용이 허가 된 Microsoft Word 제품)의 혜택 및 사용을 위해서만 제공 됩니다. Microsoft Word에 대 한이 정보는 microsoft word 제품이 2010 년 1 월 10 일 이후 Microsoft에서 사용이 허가 된 Microsoft Word 제품,에서 실행 되는 프로그램을 개발 하거나 사용 하는 미국 또는 지역에 있는 개인 또는 조직에서 읽거나 사용할 수 없습니다. 이러한 제품은 해당 날짜 이전에 사용이 허가 된 제품과 동일 하 게 작동 하지 않습니다.
@@ -35,7 +37,7 @@ ms.locfileid: "90843312"
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩
  <xref:Microsoft.Office.Tools.Word.XMLNodes>컨트롤에서 데이터 바인딩을 지원 하지 않습니다. 이는 컨트롤에 <xref:Microsoft.Office.Tools.Word.XMLNodes> 복잡 한 데이터 바인딩 기능이 없고 단순 데이터 바인딩이 반복 데이터를 나타낼 수 없기 때문입니다.
 
-## <a name="formatting"></a>서식
+## <a name="formatting"></a>서식 지정
  문서 내의 텍스트에 적용할 수 있는 서식은 컨트롤에 적용할 수 있습니다 <xref:Microsoft.Office.Tools.Word.XMLNodes> .
 
 ## <a name="events"></a>이벤트

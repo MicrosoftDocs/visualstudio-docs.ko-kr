@@ -1,5 +1,7 @@
 ---
 title: Office 문서에서 동적 컨트롤 유지
+description: 사용자가 닫힌 문서를 다시 열면 영구 동적 컨트롤을 다시 만드는 코드를 솔루션에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +20,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255998"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527537"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office 문서에서 동적 컨트롤 유지
 
 문서 또는 통합 문서를 저장하고 닫으면 런타임에 추가한 컨트롤이 유지되지 않습니다. 정확한 동작은 호스트 컨트롤 및 Windows Forms 컨트롤에서 서로 다릅니다. 두 경우 모두, 사용자가 문서를 다시 열 때 컨트롤을 다시 만드는 코드를 솔루션에 추가할 수 있습니다.
 
-런타임에 문서에 추가하는 컨트롤을 *동적 컨트롤*이라고 합니다. 동적 컨트롤에 대 한 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
+런타임에 문서에 추가하는 컨트롤을 *동적 컨트롤* 이라고 합니다. 동적 컨트롤에 대 한 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -108,6 +110,6 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

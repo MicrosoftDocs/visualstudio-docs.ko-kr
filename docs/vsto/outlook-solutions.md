@@ -1,5 +1,7 @@
 ---
 title: Outlook 솔루션
+description: VSTO 추가 기능을 사용 하 여 Outlook을 자동화 하거나, Outlook 기능을 확장 하거나, Outlook UI (사용자 인터페이스)를 사용자 지정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985681"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527552"
 ---
 # <a name="outlook-solutions"></a>Outlook 솔루션
   Visual Studio에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Outlook을 자동화하거나, Outlook 기능을 확장하거나, Outlook UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. VSTO 추가 기능에 대한 자세한 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.
@@ -55,7 +57,7 @@ ms.locfileid: "72985681"
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Outlook 응용 프로그램의 사용자 인터페이스 사용자 지정
 
-|Task|참조 항목|
+|작업|참조 항목|
 |----------|--------------------------|
 |Outlook 검사기의 리본 메뉴에 사용자 지정 탭을 추가합니다.|[리본 개요](../vsto/ribbon-overview.md)|
 |Outlook 검사기의 기본 제공 탭에 사용자 지정 그룹을 추가합니다.|[방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)|
@@ -66,9 +68,9 @@ ms.locfileid: "72985681"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)|Outlook 개체 모델에서 제공하는 개체에 대해 설명합니다.|
 |[Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)|양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 Visual Studio에서 제공하는 도구에 대해 설명합니다.|
-|[연습: Outlook 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다.|
+|[연습: Outlook 용 첫 VSTO Add-In 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook용 VSTO 추가 기능을 만드는 방법을 보여 줍니다.|
 |[Office 개발의 Outlook 2010](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|Visual Studio를 사용한 Office 개발에 국한되지 않고 Outlook 솔루션을 개발하는 방법에 대한 문서와 참조 설명서를 찾을 수 있는 MSDN 라이브러리 영역입니다.|

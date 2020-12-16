@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 방식으로 Outlook 전자 메일 항목의 첨부 파일 저장
+description: Visual Studio를 사용 하 여 Microsoft Outlook 전자 메일 항목의 첨부 파일을 프로그래밍 방식으로 저장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3ade05e936397f72a0b370cb69d8be3310c3aee8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d33c2c820f03d7fb40c953165f62943e44648082
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584770"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528250"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목의 첨부 파일 저장
 

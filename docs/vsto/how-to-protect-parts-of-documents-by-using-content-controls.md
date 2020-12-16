@@ -1,5 +1,7 @@
 ---
 title: '방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호'
+description: Visual Studio를 사용 하 여 콘텐츠 컨트롤을 사용 하 여 Microsoft Word 문서의 일부를 보호 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581080"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528230"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호
   문서의 일부를 보호하는 경우 사용자가 문서의 해당 부분에서 내용을 변경하거나 삭제할 수 없습니다. 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 문서 부분을 보호할 수 있는 여러 가지 방법이 있습니다.
@@ -46,11 +48,11 @@ ms.locfileid: "91581080"
 
 2. **속성** 창에서 다음 속성 중 하나 또는 둘 다를 설정 합니다.
 
-    - 사용자가 컨트롤을 편집 하지 못하게 하려면 **Lockcontents** 를 **True**로 설정 합니다.
+    - 사용자가 컨트롤을 편집 하지 못하게 하려면 **Lockcontents** 를 **True** 로 설정 합니다.
 
-    - 사용자가 컨트롤을 삭제 하지 않도록 하려면 **LockContentControl** 를 **True**로 설정 합니다.
+    - 사용자가 컨트롤을 삭제 하지 않도록 하려면 **LockContentControl** 를 **True** 로 설정 합니다.
 
-3. **확인**을 클릭합니다.
+3. **확인** 을 클릭합니다.
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>런타임에 콘텐츠 컨트롤을 보호하려면
 
@@ -85,7 +87,7 @@ ms.locfileid: "91581080"
     > [!NOTE]
     > **개발자** 탭이 표시되지 않는 경우 먼저 개발자 탭을 표시해야 합니다. 자세한 내용은 [방법: 리본 메뉴에 개발자 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)를 참조 하세요.
 
-3. **컨트롤** 그룹에서 **그룹** 드롭다운 단추를 클릭 한 다음 **그룹**을 클릭 합니다.
+3. **컨트롤** 그룹에서 **그룹** 드롭다운 단추를 클릭 한 다음 **그룹** 을 클릭 합니다.
 
      보호된 영역을 포함하는 <xref:Microsoft.Office.Tools.Word.GroupContentControl>이 프로젝트의 `ThisDocument` 클래스에 자동으로 생성됩니다. 그룹 컨트롤을 나타내는 테두리는 디자인 타임에만 표시되고 런타임에는 표시되는 테두리가 없습니다.
 

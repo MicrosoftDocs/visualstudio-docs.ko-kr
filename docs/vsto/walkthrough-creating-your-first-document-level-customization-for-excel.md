@@ -1,5 +1,7 @@
 ---
 title: Excel 용 첫 문서 수준 사용자 지정 만들기
+description: Microsoft Excel 용 문서 수준 사용자 지정을 만듭니다. 이러한 종류의 솔루션에서 만드는 기능은 특정 통합 문서가 열려 있는 경우에만 사용할 수 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527945"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>연습: Excel 용 첫 문서 수준 사용자 지정 만들기
 
@@ -56,30 +58,30 @@ ms.locfileid: "91585004"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 시작합니다.
 
-2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
+2. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트** 를 클릭합니다.
 ::: moniker range="vs-2017"
-3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **Office/SharePoint**를 확장합니다.
+3. 템플릿 창에서 **Visual C#** 또는 **Visual Basic** 을 확장한 다음 **Office/SharePoint** 를 확장합니다.
 
 4. 확장 된 **Office/SharePoint** 노드 아래에서 **VSTO 추가 기능** 노드를 선택 합니다.
 
 5. 프로젝트 템플릿 목록에서 Excel VSTO 통합 문서 프로젝트를 선택 합니다.
 
-6. **이름** 상자에 **first통합 사용자 지정**을 입력 합니다.
+6. **이름** 상자에 **first통합 사용자 지정** 을 입력 합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
-8. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
+8. **Visual Studio Tools for Office 프로젝트 마법사** 에서 **새 문서 만들기** 를 선택 하 고 **확인** 을 클릭 합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. **새 프로젝트 만들기** 대화 상자에서 **Excel VSTO 통합 문서** 프로젝트를 선택 합니다.
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. **다음**을 클릭합니다.
+4. **다음** 을 클릭합니다.
 
-5. **새 프로젝트 구성** 대화 상자의 **이름** 상자에 **first통합 사용자 지정** 을 입력 하 고 **만들기**를 클릭 합니다.
+5. **새 프로젝트 구성** 대화 상자의 **이름** 상자에 **first통합 사용자 지정** 을 입력 하 고 **만들기** 를 클릭 합니다.
 
-6. **Visual Studio Tools for Office 프로젝트 마법사**에서 **새 문서 만들기** 를 선택 하 고 **확인**을 클릭 합니다.
+6. **Visual Studio Tools for Office 프로젝트 마법사** 에서 **새 문서 만들기** 를 선택 하 고 **확인** 을 클릭 합니다.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**First통합 문서의 사용자 지정** 프로젝트를 만들고 프로젝트에 다음 파일을 추가 합니다.
 
@@ -103,11 +105,11 @@ ms.locfileid: "91585004"
 
 1. 디자이너 창의 **닫기** 단추 (X)를 클릭 하 여 통합 문서를 닫습니다.
 
-2. **솔루션 탐색기**에서 **Sheet1** 코드 파일을 마우스 오른쪽 단추로 클릭 하 고 **디자이너 보기**를 클릭 합니다.
+2. **솔루션 탐색기** 에서 **Sheet1** 코드 파일을 마우스 오른쪽 단추로 클릭 하 고 **디자이너 보기** 를 클릭 합니다.
 
      \- 또는 -
 
-     **솔루션 탐색기**에서 **Sheet1** 코드 파일을 두 번 클릭 합니다.
+     **솔루션 탐색기** 에서 **Sheet1** 코드 파일을 두 번 클릭 합니다.
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>디자이너에서 워크시트에 텍스트 추가
 
@@ -115,12 +117,12 @@ ms.locfileid: "91585004"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>디자이너를 사용하여 워크시트에 텍스트를 추가하려면
 
-1. 디자이너에 열려 있는 워크시트에서 **A1**셀을 선택 하 고 다음 텍스트를 입력 합니다.
+1. 디자이너에 열려 있는 워크시트에서 **A1** 셀을 선택 하 고 다음 텍스트를 입력 합니다.
 
      **This text was added by using the designer.**
 
 > [!WARNING]
-> 이 텍스트 줄을 **A2**셀에 추가 하는 경우이 예제에서 다른 코드를 통해 덮어씁니다.
+> 이 텍스트 줄을 **A2** 셀에 추가 하는 경우이 예제에서 다른 코드를 통해 덮어씁니다.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>프로그래밍 방식으로 워크시트에 텍스트 추가
 
@@ -132,7 +134,7 @@ ms.locfileid: "91585004"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>코드를 사용하여 워크시트에 두 번째 텍스트 줄을 추가하려면
 
-1. **솔루션 탐색기**에서 **Sheet1**을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **Sheet1** 을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
      Visual Studio에서 코드 파일이 열립니다.
 
@@ -163,7 +165,7 @@ ms.locfileid: "91585004"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>개발 컴퓨터에서 완료된 프로젝트를 정리하려면
 
-1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리**를 클릭합니다.
+1. Visual Studio의 **빌드** 메뉴에서 **솔루션 정리** 를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

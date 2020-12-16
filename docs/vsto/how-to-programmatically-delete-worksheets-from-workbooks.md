@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제'
+description: 예를 들어 워크시트 호스트 항목을 사용 하 여 Microsoft Excel 통합 문서에서 워크시트를 프로그래밍 방식으로 삭제 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585251"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527777"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제
   통합 문서의 모든 워크시트를 삭제할 수 있습니다. 워크시트를 삭제하려면 워크시트 호스트 항목을 사용하거나 통합 문서의 시트 컬렉션을 통해 워크시트에 액세스합니다.

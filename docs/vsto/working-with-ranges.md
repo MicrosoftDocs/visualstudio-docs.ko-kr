@@ -1,5 +1,7 @@
 ---
 title: 범위 작업
+description: NamedRange 및 Range 클래스에 범위를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성을 포함 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526915"
 ---
 # <a name="work-with-ranges"></a>범위 작업
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 및 <xref:Microsoft.Office.Interop.Excel.Range> 클래스에는 범위가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |범위에 액세스하고 값을 설정합니다.|[방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
 |초기 값을 기반으로 하여 범위를 채웁니다.|[방법: 프로그래밍 방식으로 증분 변경 데이터로 범위 채우기](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|
@@ -40,7 +42,7 @@ ms.locfileid: "62815026"
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [통합 문서 작업](../vsto/working-with-workbooks.md)

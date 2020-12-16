@@ -1,5 +1,7 @@
 ---
 title: Outlook 개체 모델 개요
+description: Outlook 개체 모델에서 제공 하는 개체와 상호 작용 하 여 Microsoft Outlook 용 VSTO 추가 기능을 개발 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985687"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528052"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 개체 모델 개요
   Microsoft Office Outlook용 VSTO 추가 기능을 개발하기 위해 Outlook 개체 모델에서 제공하는 개체를 조작할 수 있습니다. Outlook 개체 모델은 사용자 인터페이스의 항목을 나타내는 클래스 및 인터페이스를 제공합니다. 예를 들어 <xref:Microsoft.Office.Interop.Outlook.Application> 개체는 전체 애플리케이션을 나타내고, <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 메일 메시지 또는 기타 항목이 포함된 폴더를 나타내고, <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 메일 메시지를 나타냅니다.
@@ -90,14 +92,14 @@ ms.locfileid: "72985687"
 ### <a name="folder-object"></a>Folder 개체
  <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 메일 메시지, 연락처, 작업 및 기타 항목을 포함하는 폴더를 나타냅니다. Outlook에서는 16개의 기본 제공 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체를 제공합니다.
 
- 기본 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 열거형 값으로 정의됩니다. 예를 들면 다음과 같습니다.
+ 기본 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 열거형 값으로 정의됩니다. 예제:
 
  Outlook의 **수신함** 폴더에 해당 하는 oldefaultfolders. Oldefaultfolders.
 
  기본에 액세스 하 고 새를 만드는 방법을 보여 주는 예제는 <xref:Microsoft.Office.Interop.Outlook.Folder> <xref:Microsoft.Office.Interop.Outlook.Folder> [방법: 프로그래밍 방식으로 사용자 지정 폴더 항목 만들기](../vsto/how-to-programmatically-create-custom-folder-items.md)를 참조 하세요.
 
 ### <a name="mailitem-object"></a>MailItem 개체
- <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 메일 메시지를 나타냅니다. <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 일반적으로 **받은 편지함**, **보낸 편지함**및 **보낼 편지함**과 같은 폴더에 있습니다. <xref:Microsoft.Office.Interop.Outlook.MailItem> 은 메일 메시지를 만들고 보내는 데 사용할 수 있는 속성과 메서드를 노출합니다.
+ <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 메일 메시지를 나타냅니다. <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 일반적으로 **받은 편지함**, **보낸 편지함** 및 **보낼 편지함** 과 같은 폴더에 있습니다. <xref:Microsoft.Office.Interop.Outlook.MailItem> 은 메일 메시지를 만들고 보내는 데 사용할 수 있는 속성과 메서드를 노출합니다.
 
  전자 메일 메시지를 만드는 방법을 보여 주는 예제는 [방법: 프로그래밍 방식으로 전자 메일 항목 만들기](../vsto/how-to-programmatically-create-an-e-mail-item.md)를 참조 하세요.
 
@@ -131,7 +133,7 @@ ms.locfileid: "72985687"
 
 ### <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[연락처 항목 작업](../vsto/working-with-contact-items.md)|연락처를 사용하여 작업을 수행하는 방법을 보여 주는 항목을 제공합니다.|
 |[메일 항목 작업](../vsto/working-with-mail-items.md)|메일 항목을 사용하여 작업을 수행하는 방법을 보여 주는 항목을 제공합니다.|

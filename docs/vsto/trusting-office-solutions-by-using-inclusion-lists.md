@@ -1,5 +1,7 @@
 ---
 title: 포함 목록을 사용 하 여 Office 솔루션 신뢰
+description: 포함 목록을 통해 사용자가 게시자를 식별 하는 인증서로 서명 된 Office 솔루션에 신뢰를 부여할 수 있도록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb5c111b4c75298ee55bc64dfbb2d0dd4b6c8b5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985543"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527467"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>포함 목록을 사용 하 여 Office 솔루션 신뢰
   포함 목록을 사용하면 사용자가 게시자를 식별하는 인증서로 서명된 Office 솔루션에 신뢰를 부여할 수 있습니다. 포함 목록은 사용자마다 고유하며 문서 수준 사용자 지정 및 VSTO 추가 기능에 대해 사용할 수 있습니다.
@@ -42,6 +44,6 @@ ms.locfileid: "72985543"
 ## <a name="structure-of-the-inclusion-list"></a>포함 목록의 구조
  올바른 포함 목록 항목에는 두 부분이 포함됩니다. 배포 매니페스트에 대한 경로와 솔루션 서명에 사용되는 공개 키입니다. 포함 목록에 추가된 솔루션은 신뢰할 수 있는 것으로 간주됩니다. Office 솔루션이 실행될 때 Office 애플리케이션은 포함 목록의 공개 키를 배포 매니페스트의 서명 키와 비교하여 현재 실행 중인 솔루션이 원래 신뢰된 버전과 동일한지 확인합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

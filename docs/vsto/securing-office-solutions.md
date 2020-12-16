@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 보안
+description: Office 솔루션의 보안 모델에 Visual Studio Tools for Office 런타임 및 ClickOnce를 비롯 한 여러 기술이 포함 되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978604"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528482"
 ---
 # <a name="secure-office-solutions"></a>Office 솔루션 보안
   Office 솔루션의 보안 모델에는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ,, [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Microsoft Office의 보안 센터 및 Internet Explorer 제한 된 사이트 영역의 여러 기술이 포함 됩니다. 다음 섹션에서는 다양한 보안 기능의 작동 방식을 설명합니다.
@@ -62,7 +64,7 @@ ms.locfileid: "62978604"
 ### <a name="document-level-solutions"></a>문서 수준 솔루션
  다음 유형의 프로젝트를 개발하고 있다면 Microsoft Office 애플리케이션의 신뢰할 수 있는 위치 목록에 문서의 정규화된 경로를 추가해야 합니다.
 
-- * \\ \Servername\sharename*와 같은 네트워크 파일 공유에 있는 문서 수준 솔루션
+- *\\ \Servername\sharename* 와 같은 네트워크 파일 공유에 있는 문서 수준 솔루션
 
 - *.Doc* 또는 *.docm* 파일을 사용 하는 Word 용 문서 수준 솔루션
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978604"
 ### <a name="temporary-certificates"></a>임시 인증서
  서명 인증서가 없는 경우 Visual Studio가 임시 인증서를 만듭니다. 이 임시 인증서는 배포하는 동안에만 사용하고 배포를 위해 공식 인증서를 구입해야 합니다.
 
- 임시 인증서는 Office 프로젝트가 처음 빌드된 후에 생성됩니다. 다음에 **f5**키를 누르면 프로젝트는 인증서가 추가 될 때 변경 된 것으로 표시 되기 때문에 다시 빌드됩니다.
+ 임시 인증서는 Office 프로젝트가 처음 빌드된 후에 생성됩니다. 다음에 **f5** 키를 누르면 프로젝트는 인증서가 추가 될 때 변경 된 것으로 표시 되기 때문에 다시 빌드됩니다.
 
  잠시 후에 많은 임시 인증서가 생성되었을 수 있으므로 때때로 임시 인증서를 지워야 합니다.
 
@@ -84,7 +86,7 @@ ms.locfileid: "62978604"
 ### <a name="sequence-of-security-checks-during-installation"></a>설치 하는 동안 보안 검사 순서
  Office 솔루션이 설치되거나 업데이트될 때 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에서는 일련의 보안 검사를 특정 시퀀스로 수행하여 신뢰에 대한 결정을 내립니다. 솔루션이 신뢰할 수 있음을 런타임이 결정한 경우에만 솔루션이 설치 또는 업데이트됩니다.
 
- 다음 네 가지 방법 중 하나로 설치 프로세스를 시작할 수 있습니다. 설치 프로그램을 실행 하 고 배포 매니페스트를 열거나 Microsoft Office 응용 프로그램 호스트를 열거나 *VSTOInstaller.exe*를 실행 하 여 설치 프로세스를 시작할 수 있습니다.
+ 다음 네 가지 방법 중 하나로 설치 프로세스를 시작할 수 있습니다. 설치 프로그램을 실행 하 고 배포 매니페스트를 열거나 Microsoft Office 응용 프로그램 호스트를 열거나 *VSTOInstaller.exe* 를 실행 하 여 설치 프로세스를 시작할 수 있습니다.
 
  첫 번째 보안 검사는 문서 수준 솔루션에만 적용됩니다. 문서 수준 솔루션의 문서는 신뢰할 수 있는 위치에 있어야 합니다. 문서가 원격 네트워크 파일 공유에 있거나 *.doc* 또는 *.docm* 파일 이름 확장명이 있는 경우 문서 위치를 신뢰할 수 있는 위치 목록에 추가 해야 합니다. 자세한 내용은 [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)를 참조 하세요.
 
@@ -100,7 +102,7 @@ ms.locfileid: "62978604"
 
  ![VSTO 보안 - 설치 프로그램을 사용하여 설치](../vsto/media/setup-vstoinstaller.png "VSTO 보안 - 설치 프로그램을 사용하여 설치")
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)
 - [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)

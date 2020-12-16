@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4.5로 마이그레이션된 리본 사용자 지정 업데이트
+description: 대상 프레임 워크가 .NET Framework 4 이상으로 변경 된 경우 프로젝트 코드를 변경 해야 한다는 것에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527938"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>.NET Framework 4.5로 마이그레이션된 리본 사용자 지정 업데이트
 
@@ -31,9 +33,9 @@ ms.locfileid: "92298609"
 ## <a name="update-the-generated-ribbon-code"></a>생성 된 리본 코드를 업데이트 합니다.
  프로젝트의 대상 프레임워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상으로 변경된 경우 다음 단계를 수행하여 리본 항목에 대해 생성된 코드를 변경해야 합니다. 업데이트해야 하는 코드 파일은 프로그래밍 언어 및 프로젝트를 만든 방법에 따라 달라집니다.
 
-- Visual Basic 프로젝트 또는에서 만든 Visual c # 프로젝트의 또는 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 리본 코드를 실행 하는 모든 파일 (리본*항목* Designer.cs 또는 해당 하는 *리본 항목*입니다. 디자이너 .vb). Visual Basic 프로젝트에서 코드 숨김 파일을 보려면 **솔루션 탐색기**의 **모든 파일 표시** 단추를 클릭 합니다.
+- Visual Basic 프로젝트 또는에서 만든 Visual c # 프로젝트의 또는 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] 리본 코드를 실행 하는 모든 파일 (리본 *항목* Designer.cs 또는 해당 하는 *리본 항목* 입니다. 디자이너 .vb). Visual Basic 프로젝트에서 코드 숨김 파일을 보려면 **솔루션 탐색기** 의 **모든 파일 표시** 단추를 클릭 합니다.
 
-- Visual Studio 2008에서 만든 다음로 업그레이드 한 Visual c # 프로젝트에서 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 리본 코드 파일 (해당 하는 리본*항목*.cs 또는 해당 하는 리본 *항목*.vb)의 처음 두 단계를 수행 하 고 리본 코드 숨겨진 파일에서 나머지 단계를 수행 합니다.
+- Visual Studio 2008에서 만든 다음로 업그레이드 한 Visual c # 프로젝트에서 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 리본 코드 파일 (해당 하는 리본 *항목*.cs 또는 해당 하는 리본 *항목*.vb)의 처음 두 단계를 수행 하 고 리본 코드 숨겨진 파일에서 나머지 단계를 수행 합니다.
 
 ### <a name="to-change-the-generated-ribbon-code"></a>생성된 리본 코드를 변경하려면
 
@@ -185,6 +187,6 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

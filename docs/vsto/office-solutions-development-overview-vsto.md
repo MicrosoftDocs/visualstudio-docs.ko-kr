@@ -1,5 +1,7 @@
 ---
 title: Office 솔루션 개발 개요 (VSTO)
+description: Word의 word 처리 기능 및 Excel의 데이터 분석 기능 등 친숙 한 Microsoft Office 사용자 인터페이스 및 도구에 대 한 사용자 지정을 개발 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811021"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527711"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 솔루션 개발 개요 (VSTO)
   Microsoft Office를 솔루션의 프런트 엔드로 사용하여 Word의 워드 프로세싱 기능, Excel의 데이터 분석 기능 및 Outlook의 전자 메일 관리 기능과 같은 익숙한 Microsoft Office 사용자 인터페이스 및 도구를 활용할 수 있습니다. Visual Studio에서 솔루션을 개발하여 Office 애플리케이션을 사용자 지정하고 비즈니스 프로세스에 필요한 특정 기능을 추가할 수 있습니다. 예를 들어 편집 가능하거나 편집 가능하지 않게 만들 수 있는 기존 부분에서 계약을 구성하는 계약 생성기로 Word를 전환할 수 있습니다. Excel을 사용하여 다양한 프로젝트에 대해 사용자 지정된 자동화된 예산 워크시트를 만들 수 있습니다. 또한 사용자가 Office 솔루션을 오프라인으로 전환하여 복잡한 솔루션을 웹 기반 아키텍처를 사용하는 경우보다 실용적으로 만들 수도 있습니다.
@@ -85,7 +87,7 @@ ms.locfileid: "90811021"
 ### <a name="security"></a>보안
  VSTO Office 솔루션의 보안은 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 솔루션을 설치하고 로드할 때 수행하는 일련의 검사를 통해 적용됩니다. 이러한 검사에는 배포 매니페스트의 위치를 신뢰할 수 있는지 여부나 배포 매니페스트에 서명하는 데 사용되는 인증서를 신뢰할 수 있는지 여부의 확인이 포함됩니다. 자세한 내용은 [Office 솔루션 보안](../vsto/securing-office-solutions.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio에서 Office 개발 &#40;시작&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

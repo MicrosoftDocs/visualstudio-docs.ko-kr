@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 약속 삭제'
+description: Microsoft Outlook에서 프로그래밍 방식으로 apppointments를 삭제 하는 방법에 대해 알아봅니다. 이 예제에서는 되풀이되는 약속의 인스턴스 하나를 삭제합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddd3d65202ad0e6673ed436203b253e691372f7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545966"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526802"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>방법: 프로그래밍 방식으로 약속 삭제
   이 예제에서는 되풀이되는 약속의 인스턴스 하나를 삭제합니다. 이 예제에서는 되풀이되는 약속의 인스턴스가 2006년 6월 28일 08시에 발생한다고 가정합니다.

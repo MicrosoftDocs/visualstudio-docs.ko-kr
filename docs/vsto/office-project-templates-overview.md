@@ -1,5 +1,7 @@
 ---
 title: Office 프로젝트 템플릿 개요
+description: Visual Studio의 Microsoft Office 개발자 도구에서 다양 한 유형의 Office 솔루션을 만들기 위한 프로젝트 템플릿을 포함 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926595"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528075"
 ---
 # <a name="office-project-templates-overview"></a>Office 프로젝트 템플릿 개요
   Visual Studio의 Microsoft Office 개발자 도구에는 다음 형식의 Office 솔루션을 만들기 위한 프로젝트 템플릿이 포함되어 있습니다.
@@ -152,7 +154,7 @@ ms.locfileid: "68926595"
 ## <a name="comparison"></a>비교
  다음 표에는 문서와 서식 파일 간의 차이에 대한 개요가 나와 있습니다.
 
-|문서|템플릿|
+|Documents|템플릿|
 |---------------|---------------|
 |문서가 읽기 전용으로 설정되어 있지 않은 경우 사용자가 문서를 열고 수정할 수 있습니다. 변경 사항을 저장하면 원본 문서에 저장됩니다.|사용자는 서식 파일을 열고 새 문서로 로컬 복사본을 만들 수 있습니다. 특별한 권한이 없으면 원본을 수정할 수 없습니다.|
 |문서를 열면 <xref:Microsoft.Office.Tools.Word.Document.Open> 이벤트가 발생합니다.|서식 파일을 열면 <xref:Microsoft.Office.Tools.Word.Document.New> 이벤트가 발생합니다.|
@@ -164,9 +166,9 @@ ms.locfileid: "68926595"
  Microsoft Office Word 서식 파일에 관리 코드 확장이 있는 경우, 해당 서식 파일이 전역 서식 파일로 연결되거나 Word의 startup 디렉터리에서 로드되면 프로젝트 어셈블리는 호출되지 않습니다. 또한 문서에서는 Office 솔루션의 일부인 서식 파일 형식을 인식할 수 없습니다.
 
 ## <a name="excel-add-ins-xla-files"></a>Excel 추가 기능 (.xla 파일)
- Excel VSTO 추가 기능 (*.xla* 파일)을 만들기 위한 Office 프로젝트는 없습니다. 통합 문서를 .xla 파일로 저장할 수는 있지만 지원되는 작업이 아니므로 권장되지 않습니다. 관리 코드 확장이 있는 통합 문서를 **Microsoft Office Excel 추가 기능 ( \* .xla)** 파일로 저장 하는 경우 **추가 기능** 대화 상자에서 선택 하 여 다른 통합 문서에 적용할 수 있습니다. VSTO 추가 기능이 적용 된 후 대상 통합 문서에서 코드가 실행 되는 경우도 있지만 이러한 Office 솔루션 사용은 지원 되지 않습니다.
+ Excel VSTO 추가 기능 (*.xla* 파일)을 만들기 위한 Office 프로젝트는 없습니다. 통합 문서를 .xla 파일로 저장할 수는 있지만 지원되는 작업이 아니므로 권장되지 않습니다. 관리 코드 확장을 포함 하는 통합 문서를 **Excel Add-In 파일 ( \* .xla) Microsoft Office** 로 저장 하는 경우 **추가 기능** 대화 상자에서이를 선택 하 여 다른 통합 문서에 적용할 수 있습니다. VSTO 추가 기능이 적용 된 후 대상 통합 문서에서 코드가 실행 되는 경우도 있지만 이러한 Office 솔루션 사용은 지원 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)

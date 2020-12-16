@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 검색 후 선택 영역 복원'
+description: Visual Studio를 사용 하 여 Microsoft Word 문서에서 검색 후에 프로그래밍 방식으로 선택 항목을 복원 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584783"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528273"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>방법: 프로그래밍 방식으로 검색 후 선택 영역 복원
   문서에서 텍스트를 찾아 바꾸는 경우 검색이 완료 된 후 사용자의 원래 선택 영역을 복원 하는 것이 좋습니다.

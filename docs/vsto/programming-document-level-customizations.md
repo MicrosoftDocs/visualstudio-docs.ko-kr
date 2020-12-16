@@ -1,5 +1,7 @@
 ---
 title: 문서 수준 사용자 지정 프로그램
+description: 문서 수준 사용자 지정을 사용 하 여 다양 한 작업을 수행할 수 있도록 Microsoft Word 또는 Excel을 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254026"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527516"
 ---
 # <a name="program-document-level-customizations"></a>문서 수준 사용자 지정 프로그램
   문서 수준 사용자 지정을 사용하여 Microsoft Office Word 또는 Microsoft Office Excel을 확장한 경우 다음 작업을 수행할 수 있습니다.
@@ -153,21 +155,21 @@ Globals.ThisDocument.Save();
 ## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>문서 수준 사용자 지정의 네이티브 Office 개체에서 확장 개체 가져오기
  많은 Office 이벤트용 이벤트 처리기에서는 이벤트를 발생시키는 통합 문서, 워크시트 또는 문서를 나타내는 네이티브 Office 개체를 수신합니다. 문서 수준 사용자 지정의 문서 또는 통합 문서에서 이벤트를 발생시킨 경우에만 일부 코드를 실행할 수도 있습니다. 예를 들어 Excel용 문서 수준 사용자 지정에서 사용자가 사용자 지정된 통합 문서의 워크시트 중 하나를 활성화할 때는 일부 코드가 실행되고, 동시에 열린 다른 일부 통합 문서의 워크시트를 활성화할 때는 코드가 실행되지 않도록 할 수 있습니다.
 
- 네이티브 Office 개체가 있을 때 개체가 문서 수준 사용자 지정의 *호스트 항목* 또는 *호스트 컨트롤* 로 확장되었는지 테스트할 수 있습니다. 호스트 항목 및 호스트 컨트롤은 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 제공하는 형식으로, 기본적으로 Word 또는 Excel 개체 모델에 있는 개체( *네이티브 Office 개체*라고 함)에 기능을 추가합니다. 호스트 항목 및 호스트 컨트롤을 통칭하여 *확장 개체*라고도 합니다. 호스트 항목 및 호스트 컨트롤에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
+ 네이티브 Office 개체가 있을 때 개체가 문서 수준 사용자 지정의 *호스트 항목* 또는 *호스트 컨트롤* 로 확장되었는지 테스트할 수 있습니다. 호스트 항목 및 호스트 컨트롤은 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 제공하는 형식으로, 기본적으로 Word 또는 Excel 개체 모델에 있는 개체( *네이티브 Office 개체* 라고 함)에 기능을 추가합니다. 호스트 항목 및 호스트 컨트롤을 통칭하여 *확장 개체* 라고도 합니다. 호스트 항목 및 호스트 컨트롤에 대 한 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject 및 HasVstoObject 메서드 이해
  네이티브 Office 개체를 테스트하려면 프로젝트에서 `HasVstoObject` 및 `GetVstoObject` 메서드를 사용합니다.
 
 - 네이티브 Office 개체에 사용자 지정의 확장 개체가 있는지 확인하려면 `HasVstoObject` 메서드를 사용합니다. 네이티브 Office 개체에 확장 개체가 있는 경우 이 메서드는 **true** 를 반환하고 그렇지 않은 경우 **false** 를 반환합니다.
 
-- 네이티브 Office 개체에 대한 확장 개체를 가져오려면 `GetVstoObject` 메서드를 사용합니다. 지정한 네이티브 Office 개체에 <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>또는 <xref:Microsoft.Office.Tools.Word.Document> 개체가 있는 경우 이 메서드는 해당 개체를 반환합니다. 그렇지 않으면 `GetVstoObject` **null**을 반환 합니다. 예를 들어 지정된 <xref:Microsoft.Office.Interop.Word.Document>가 Word 문서 프로젝트의 문서에 대한 기본 개체인 경우 `GetVstoObject` 메서드는 <xref:Microsoft.Office.Tools.Word.Document>를 반환합니다.
+- 네이티브 Office 개체에 대한 확장 개체를 가져오려면 `GetVstoObject` 메서드를 사용합니다. 지정한 네이티브 Office 개체에 <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>또는 <xref:Microsoft.Office.Tools.Word.Document> 개체가 있는 경우 이 메서드는 해당 개체를 반환합니다. 그렇지 않으면 `GetVstoObject` **null** 을 반환 합니다. 예를 들어 지정된 <xref:Microsoft.Office.Interop.Word.Document>가 Word 문서 프로젝트의 문서에 대한 기본 개체인 경우 `GetVstoObject` 메서드는 <xref:Microsoft.Office.Tools.Word.Document>를 반환합니다.
 
   문서 수준 프로젝트에서는 런타임에 메서드를 사용 하 여 `GetVstoObject` 새 <xref:Microsoft.Office.Tools.Excel.Workbook> , <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 호스트 항목을 만들 수 없습니다 <xref:Microsoft.Office.Tools.Word.Document> . 이 메서드는 디자인 타임에 프로젝트에서 생성된 기존 호스트 항목에 액세스할 때만 사용할 수 있습니다. 런타임에 새 호스트 항목을 만들려면 VSTO 추가 기능 프로젝트를 개발 해야 합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 및 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject 및 HasVstoObject 메서드 사용
  및 메서드를 호출 하려면 `HasVstoObject` `GetVstoObject` 또는 메서드를 사용 하 `Globals.Factory.GetVstoObject` `Globals.Factory.HasVstoObject` 고 테스트 하려는 네이티브 Word 또는 Excel 개체 (예: <xref:Microsoft.Office.Interop.Word.Document> 또는)를 전달 <xref:Microsoft.Office.Interop.Excel.Worksheet> 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
 - [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

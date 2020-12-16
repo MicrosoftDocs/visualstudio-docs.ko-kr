@@ -1,5 +1,7 @@
 ---
 title: '연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트'
+description: Microsoft Word 용 문서 수준 사용자 지정에서 라디오 단추를 사용 하 여 사용자에 게 문서에서 차트 스타일을 선택 하는 옵션을 제공 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584297"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528394"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트
   이 연습에서는 Microsoft Office Word의 문서 수준 사용자 지정에서 라디오 단추를 사용하여 문서에서 차트 스타일 선택 옵션을 사용자에게 제공하는 방법을 보여줍니다.
@@ -50,9 +52,9 @@ ms.locfileid: "91584297"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. 이름 **내 차트 옵션**으로 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
+1. 이름 **내 차트 옵션** 으로 Word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio가 디자이너에서 새 Word 문서를 열고 **솔루션 탐색기**에 **차트 옵션** 프로젝트를 추가 합니다.
+     Visual Studio가 디자이너에서 새 Word 문서를 열고 **솔루션 탐색기** 에 **차트 옵션** 프로젝트를 추가 합니다.
 
 ## <a name="add-a-chart-to-the-document"></a>문서에 차트 추가
 
@@ -60,36 +62,36 @@ ms.locfileid: "91584297"
 
 1. Visual Studio 디자이너에서 호스팅되는 Word 문서의 리본 메뉴에서 **삽입** 탭을 클릭 합니다.
 
-2. **텍스트** 그룹에서 **개체 삽입** 드롭다운 단추를 클릭 한 다음 **개체**를 클릭 합니다.
+2. **텍스트** 그룹에서 **개체 삽입** 드롭다운 단추를 클릭 한 다음 **개체** 를 클릭 합니다.
 
      **개체** 대화 상자가 열립니다.
 
-3. **새로 만들기** 탭의 **개체 유형** 목록에서 **Microsoft Graph 차트** 를 선택한 다음 **확인**을 클릭 합니다.
+3. **새로 만들기** 탭의 **개체 유형** 목록에서 **Microsoft Graph 차트** 를 선택한 다음 **확인** 을 클릭 합니다.
 
      삽입 지점에서 차트가 문서에 추가 되 고 일부 기본 데이터가 포함 된 **데이터 시트** 창이 표시 됩니다.
 
 4. 차트의 기본값을 적용 하 고 문서 내부를 클릭 하 여 차트에서 포커스를 이동 하려면 **데이터 시트** 창을 닫습니다.
 
-5. 차트를 마우스 오른쪽 단추로 클릭 한 다음 **개체 서식**을 클릭 합니다.
+5. 차트를 마우스 오른쪽 단추로 클릭 한 다음 **개체 서식** 을 클릭 합니다.
 
-6. **개체 서식** 대화 상자의 **레이아웃** 탭에서 **사각형** 을 선택 하 고 **확인**을 클릭 합니다.
+6. **개체 서식** 대화 상자의 **레이아웃** 탭에서 **사각형** 을 선택 하 고 **확인** 을 클릭 합니다.
 
 ## <a name="add-a-user-control-to-the-project"></a>프로젝트에 사용자 정의 컨트롤 추가
  기본적으로 문서에서는 여러 라디오 단추를 함께 사용할 수 있습니다. 라디오 단추를 사용자 컨트롤에 추가한 다음 컨택을 제어하는 코드를 작성하여 해당 단추가 올바르게 작동하도록 지정할 수 있습니다.
 
 ### <a name="to-add-a-user-control"></a>사용자 컨트롤을 추가하려면
 
-1. **솔루션 탐색기**에서 **내 차트 옵션** 프로젝트를 선택 합니다.
+1. **솔루션 탐색기** 에서 **내 차트 옵션** 프로젝트를 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **새 항목 추가** 를 클릭합니다.
 
-3. **새 항목 추가** 대화 상자에서 **사용자 정의 컨트롤**을 클릭 하 고 컨트롤 이름을 **ChartOptions로** 선택한 다음 **추가**를 클릭 합니다.
+3. **새 항목 추가** 대화 상자에서 **사용자 정의 컨트롤** 을 클릭 하 고 컨트롤 이름을 **ChartOptions로** 선택한 다음 **추가** 를 클릭 합니다.
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>사용자 컨트롤에 Windows Form 컨트롤을 추가하려면
 
-1. 사용자 정의 컨트롤이 디자이너에 표시 되지 않는 경우 **솔루션 탐색기**에서 **ChartOptions** 를 두 번 클릭 합니다.
+1. 사용자 정의 컨트롤이 디자이너에 표시 되지 않는 경우 **솔루션 탐색기** 에서 **ChartOptions** 를 두 번 클릭 합니다.
 
-2. **도구 상자**의 **공용 컨트롤** 탭에서 첫 번째 **라디오 단추** 컨트롤을 사용자 정의 컨트롤로 끌고 다음 속성을 변경 합니다.
+2. **도구 상자** 의 **공용 컨트롤** 탭에서 첫 번째 **라디오 단추** 컨트롤을 사용자 정의 컨트롤로 끌고 다음 속성을 변경 합니다.
 
     |속성|값|
     |--------------|-----------|
@@ -122,18 +124,18 @@ ms.locfileid: "91584297"
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Microsoft.Office.Interop.Graph 어셈블리에 대한 참조를 추가하려면
 
-1. **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.
+1. **프로젝트** 메뉴에서 **참조 추가** 를 클릭합니다.
 
      **참조 추가** 대화 상자가 나타납니다.
 
-2. .Net 탭에서 **Microsoft.** . m p. i n **t** . Graph를 선택 하 고 **확인**을 클릭 합니다. 어셈블리의 14.0.0.0 버전을 선택합니다.
+2. .Net 탭에서 **Microsoft.** . m p. i n **t** . Graph를 선택 하 고 **확인** 을 클릭 합니다. 어셈블리의 14.0.0.0 버전을 선택합니다.
 
 ## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>라디오 단추가 선택 된 경우 차트 스타일 변경
  단추가 정상적으로 작동하도록 하려면 사용자 컨트롤에 대한 공용 이벤트를 만들고 선택 유형을 설정하는 속성을 추가한 다음 각 라디오 단추의 `CheckedChanged` 이벤트에 대해 프로시저를 만듭니다.
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>사용자 컨트롤에서 이벤트와 속성을 만들려면
 
-1. **솔루션 탐색기**에서 사용자 정의 컨트롤을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기**를 클릭 합니다.
+1. **솔루션 탐색기** 에서 사용자 정의 컨트롤을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. `SelectionChanged` 이벤트와 `Selection` 속성을 만드는 코드를 `ChartOptions` 클래스에 추가합니다.
 
@@ -167,15 +169,15 @@ ms.locfileid: "91584297"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
 ## <a name="add-the-user-control-to-the-document"></a>문서에 사용자 정의 컨트롤 추가
- 솔루션을 빌드하면 새 사용자 정의 컨트롤이 **도구 상자**에 자동으로 추가 됩니다. 그런 다음 컨트롤을 **도구 상자** 에서 문서로 끌어 놓을 수 있습니다.
+ 솔루션을 빌드하면 새 사용자 정의 컨트롤이 **도구 상자** 에 자동으로 추가 됩니다. 그런 다음 컨트롤을 **도구 상자** 에서 문서로 끌어 놓을 수 있습니다.
 
 ### <a name="to-add-the-user-control-your-document"></a>문서에 사용자 정의 컨트롤을 추가하려면
 
-1. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+1. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
-     **ChartOptions** 사용자 정의 컨트롤이 **도구 상자**에 추가 됩니다.
+     **ChartOptions** 사용자 정의 컨트롤이 **도구 상자** 에 추가 됩니다.
 
-2. **솔루션 탐색기**에서 **ThisDocument** 또는 **ThisDocument.cs**를 마우스 오른쪽 단추로 클릭 한 다음 **뷰 디자이너**를 클릭 합니다.
+2. **솔루션 탐색기** 에서 **ThisDocument** 또는 **ThisDocument.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 **뷰 디자이너** 를 클릭 합니다.
 
 3. `ChartOptions` **도구 상자** 에서 문서로 컨트롤을 끌어 옵니다.
 

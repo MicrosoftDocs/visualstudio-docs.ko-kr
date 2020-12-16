@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: 리본 (비주얼 디자이너) 항목에서 지원 하지 않는 방식으로 리본을 사용자 지정 하려는 경우 리본 (XML) 항목을 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841550"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528419"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   리본 (XML) 항목을 사용 하면 XML을 사용 하 여 리본을 사용자 지정할 수 있습니다. 리본 (비주얼 디자이너) 항목에서 지원 하지 않는 방식으로 리본을 사용자 지정 하려는 경우 리본 (XML) 항목을 사용 합니다. 각 항목에서 수행할 수 있는 작업에 대 한 비교는 [리본 개요](../vsto/Ribbon-overview.md)를 참조 하세요.
@@ -40,12 +42,12 @@ ms.locfileid: "90841550"
 
 - 리본 XML 파일. 이 파일에서는 리본 UI(사용자 인터페이스)를 정의합니다. 이 파일을 사용하여 탭, 그룹 및 컨트롤과 같은 UI 요소를 추가할 수 있습니다. 자세한 내용은이 항목의 뒷부분에 있는 [리본 XML 파일 참조](#RibbonDescriptorFile) 를 참조 하세요.
 
-- 리본 코드 파일. 이 파일에는 *리본 클래스*가 포함되어 있습니다. 이 클래스는 **새 항목 추가** 대화 상자에서 **리본(XML)** 항목에 대해 지정한 이름을 사용합니다. Microsoft Office 응용 프로그램은이 클래스의 인스턴스를 사용 하 여 사용자 지정 리본을 로드 합니다. 자세한 내용은이 항목의 뒷부분에 있는 [리본 클래스 참조](#RibbonExtensionClass) 를 참조 하세요.
+- 리본 코드 파일. 이 파일에는 *리본 클래스* 가 포함되어 있습니다. 이 클래스는 **새 항목 추가** 대화 상자에서 **리본(XML)** 항목에 대해 지정한 이름을 사용합니다. Microsoft Office 응용 프로그램은이 클래스의 인스턴스를 사용 하 여 사용자 지정 리본을 로드 합니다. 자세한 내용은이 항목의 뒷부분에 있는 [리본 클래스 참조](#RibbonExtensionClass) 를 참조 하세요.
 
   기본적으로 이러한 파일은 리본 메뉴의 **추가 기능** 탭에 사용자 지정 그룹을 추가 합니다.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Microsoft Office 응용 프로그램에 사용자 지정 리본 메뉴 표시
- **리본 (XML)** 항목을 프로젝트에 추가한 후에는 메서드를 재정의 하 **ThisWorkbook**고 Office 응용 **ThisAddin** **ThisDocument** `CreateRibbonExtensibilityObject` 프로그램에 리본 XML 클래스를 반환 하는 코드를 ThisAddin, ThisWorkbook 또는 ThisDocument 클래스에 추가 해야 합니다.
+ **리본 (XML)** 항목을 프로젝트에 추가한 후에는 메서드를 재정의 하 고 Office 응용   `CreateRibbonExtensibilityObject` 프로그램에 리본 XML 클래스를 반환 하는 코드를 ThisAddin, ThisWorkbook 또는 ThisDocument 클래스에 추가 해야 합니다.
 
  다음 코드 예제에서는 `CreateRibbonExtensibilityObject` 메서드를 재정의하고 MyRibbon이라는 리본 XML 클래스를 반환합니다.
 
@@ -53,7 +55,7 @@ ms.locfileid: "90841550"
  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>사용자 지정 리본 메뉴의 동작 정의
- *콜백 메서드*를 만들어 리본 메뉴의 단추를 클릭 하는 것과 같은 사용자 작업에 응답할 수 있습니다. 콜백 메서드는 Windows Forms 컨트롤의 이벤트와 비슷하지만 UI 요소의 XML에서 특성으로 식별됩니다. 리본 클래스에서 메서드를 작성하고 컨트롤이 특성 값과 동일한 이름을 가진 메서드를 호출합니다. 예를 들어 사용자가 리본의 단추를 클릭할 때 호출 되는 콜백 메서드를 만들 수 있습니다. 콜백 메서드를 만들려면 다음 두 단계가 필요합니다.
+ *콜백 메서드* 를 만들어 리본 메뉴의 단추를 클릭 하는 것과 같은 사용자 작업에 응답할 수 있습니다. 콜백 메서드는 Windows Forms 컨트롤의 이벤트와 비슷하지만 UI 요소의 XML에서 특성으로 식별됩니다. 리본 클래스에서 메서드를 작성하고 컨트롤이 특성 값과 동일한 이름을 가진 메서드를 호출합니다. 예를 들어 사용자가 리본의 단추를 클릭할 때 호출 되는 콜백 메서드를 만들 수 있습니다. 콜백 메서드를 만들려면 다음 두 단계가 필요합니다.
 
 - 리본 XML 파일의 컨트롤에 코드에서 콜백 메서드를 식별하는 특성을 할당합니다.
 
@@ -116,7 +118,7 @@ ms.locfileid: "90841550"
 |요소|Description|
 |-------------|-----------------|
 |**customUI**|VSTO 추가 기능 프로젝트의 사용자 지정 리본 메뉴를 나타냅니다.|
-|**ribbon**|리본을 나타냅니다.|
+|<bpt id="p1">**</bpt>ribbon<ept id="p1">**</ept>|리본을 나타냅니다.|
 |**탭**|리본 탭 집합을 나타냅니다.|
 |**]5d**|리본 탭 하나를 나타냅니다.|
 |**group**|리본 탭의 컨트롤 그룹을 나타냅니다.|

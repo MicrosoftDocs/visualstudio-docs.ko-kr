@@ -1,5 +1,7 @@
 ---
 title: '연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩'
+description: Microsoft Excel 워크시트에 컨트롤을 추가 하 고 런타임에 컨트롤을 데이터에 바인딩하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585043"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527097"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Excel 워크시트에 컨트롤을 추가하고 런타임에 컨트롤을 데이터에 바인딩하는 방법을 보여 줍니다.
@@ -53,34 +55,34 @@ ms.locfileid: "91585043"
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. Visual Basic 또는 C#을 사용하여 **데이터베이스에서 워크시트 채우기**라는 이름으로 Excel VSTO 추가 기능 프로젝트를 만듭니다.
+1. Visual Basic 또는 C#을 사용하여 **데이터베이스에서 워크시트 채우기** 라는 이름으로 Excel VSTO 추가 기능 프로젝트를 만듭니다.
 
      자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
-     Visual Studio에서 `ThisAddIn.vb` 또는 `ThisAddIn.cs` 파일을 열고 **데이터베이스에서 워크시트 채우기** 프로젝트를 **솔루션 탐색기**에 추가합니다.
+     Visual Studio에서 `ThisAddIn.vb` 또는 `ThisAddIn.cs` 파일을 열고 **데이터베이스에서 워크시트 채우기** 프로젝트를 **솔루션 탐색기** 에 추가합니다.
 
 ## <a name="create-a-data-source"></a>데이터 소스 만들기
  **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 세트를 추가하려면
 
-1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 소스**보기를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서   >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 표시 합니다.
 
-2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
+2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사** 를 시작합니다.
 
-3. **데이터베이스**를 클릭하고 **다음**을 클릭합니다.
+3. **데이터베이스** 를 클릭하고 **다음** 을 클릭합니다.
 
-4. `AdventureWorksLT` 데이터베이스에 대한 기존 연결이 있는 경우 이 연결을 선택하고 **다음**을 클릭합니다.
+4. `AdventureWorksLT` 데이터베이스에 대한 기존 연결이 있는 경우 이 연결을 선택하고 **다음** 을 클릭합니다.
 
-    그렇지 않은 경우 **새 연결**을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)를 참조 하세요.
+    그렇지 않은 경우 **새 연결** 을 클릭하고 **연결 추가** 대화 상자를 사용하여 새 연결을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)를 참조 하세요.
 
-5. **애플리케이션 구성 파일에 연결 문자열 저장** 페이지에서 **다음**을 클릭합니다.
+5. **애플리케이션 구성 파일에 연결 문자열 저장** 페이지에서 **다음** 을 클릭합니다.
 
 6. **데이터베이스 개체 선택** 페이지에서 **테이블** 을 확장하고 **Address(SalesLT)** 를 선택합니다.
 
-7. **Finish**를 클릭합니다.
+7. **Finish** 를 클릭합니다.
 
-    *Adventureworksltdataset.xsd 파일이* 파일이 **솔루션 탐색기**에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
+    *Adventureworksltdataset.xsd 파일이* 파일이 **솔루션 탐색기** 에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
 
    - `AdventureWorksLTDataSet`라는 형식화된 데이터 세트. 이 데이터 세트는 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
 
@@ -125,7 +127,7 @@ ms.locfileid: "91585043"
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO 추가 기능을 테스트하려면
 
-- **F5**키를 누릅니다.
+- **F5** 키를 누릅니다.
 
      <xref:Microsoft.Office.Tools.Excel.ListObject> 라는 `addressListObject` 컨트롤이 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `addressBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject>가 <xref:System.Windows.Forms.BindingSource>에 바인딩되고 데이터 세트 개체에 바인딩됩니다.
 

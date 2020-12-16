@@ -1,5 +1,7 @@
 ---
 title: Office UI 사용자 지정
+description: Visual Studio의 Office 개발자 도구를 사용 하 여 Microsoft Office 응용 프로그램의 UI (사용자 인터페이스)를 사용자 지정할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041066"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527588"
 ---
 # <a name="office-ui-customization"></a>Office UI 사용자 지정
   Visual Studio에서 Office 개발자 도구를 사용하여 Microsoft Office 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 이 항목에서는 다음 섹션에서 사용자 지정할 수 있는 UI 기능에 대해 설명합니다.
@@ -95,7 +97,7 @@ ms.locfileid: "88041066"
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> 바로 가기 메뉴
  바로 가기 메뉴는 문서 또는 애플리케이션 창에서 마우스 오른쪽 단추를 클릭할 때 나타납니다. 사용자가 문서, 통합 문서 또는 호스트 컨트롤을 마우스 오른쪽 단추로 클릭할 때와 같이 이벤트가 발생한 후 나타나도록 바로 가기 메뉴를 설정할 수 있습니다. 바로 가기 메뉴에 다양한 수의 메뉴 명령 또는 컨트롤을 추가할 수 있습니다. XML을 사용하여 바로 가기 메뉴를 만들 수 있습니다. Office 프로젝트에 **리본 (xml)** 항목을 추가 하는 경우 리본 xml 파일에 xml을 추가 하 여 바로 가기 메뉴를 만들 수 있습니다. XML을 사용 하 여 바로 가기 메뉴를 만드는 방법에 대 한 자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../vsto/how-to-add-commands-to-shortcut-menus.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [리본 개요](../vsto/ribbon-overview.md)
 - [Office 문서의 Windows forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [작업 창 개요](../vsto/actions-pane-overview.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 문서 속성에서 읽기 및 문서 속성에 쓰기'
+description: Visual Studio를 사용 하 여 Microsoft Excel 및 Microsoft Word에서 문서 속성을 가져오거나 설정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541325"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528215"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>방법: 문서 속성에서 읽기 및 문서 속성에 쓰기
   문서와 함께 문서 속성을 저장할 수 있습니다. Office 애플리케이션은 작성자, 제목 및 주제와 같은 다양한 기본 제공 속성을 제공합니다. 이 항목에서는 Microsoft Office Excel 및 Microsoft Office Word에서 문서 속성을 설정하는 방법을 보여 줍니다.
@@ -78,7 +80,7 @@ ms.locfileid: "85541325"
 
  Word 및 Excel과 해당 개체로 작업 중이지만 Microsoft Office에서 사용 가능한 기본 제공 문서 속성 목록을 제공합니다. 정의되지 않은 속성에 액세스하려고 하면 예외가 발생합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: 사용자 지정 문서 속성 만들기 및 수정](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4 이상으로 Office 솔루션 마이그레이션
+description: 프로젝트를 계속 사용할 수 있도록 Office 솔루션을 .NET Framework 4 이상으로 마이그레이션하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86b975b7e84c69ff072df06e0a2c7701ab1909e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584492"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528462"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>.NET Framework 4 이상으로 Office 솔루션 마이그레이션
   Office 프로젝트의 대상 프레임 워크가 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이전 버전의 .NET Framework에서 이상으로 변경 된 경우 개발 및 최종 사용자 컴퓨터에서 솔루션을 계속 실행 하려면 몇 가지 추가 단계가 필요할 수 있습니다. 자세한 내용은 [.NET Framework 4로 마이그레이션하는 Office 프로젝트를 실행 하는 데 필요한 변경 사항 또는 4.5 .NET Framework](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)를 참조 하세요.
@@ -39,6 +41,6 @@ ms.locfileid: "91584492"
 
 ## <a name="see-also"></a>참고 항목
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
-- [방법: 특정 버전의 .NET Framework 대상](../ide/visual-studio-multi-targeting-overview.md)
+- [방법: .NET Framework 버전 대상 지정](../ide/visual-studio-multi-targeting-overview.md)
 - [Office 솔루션의 오류 문제 해결](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Office 솔루션의 오류에 대 한 추가 지원](../vsto/additional-support-for-errors-in-office-solutions.md)

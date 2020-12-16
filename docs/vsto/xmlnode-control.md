@@ -1,5 +1,7 @@
 ---
 title: XMLNode 컨트롤
+description: XMLNode 컨트롤이 이벤트를 노출 하 고 데이터에 바인딩될 수 있는 매핑된 XML 노드 개체 임을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f9c5db883f55c00236bc202797dcf2ec3003f6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62975729"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528334"
 ---
 # <a name="xmlnode-control"></a>XMLNode 컨트롤
   **중요** Microsoft word와 관련 하 여이 항목에서 설명 하는 정보는 microsoft word에서 사용자 지정 XML과 관련 된 특정 기능의 구현을 제거 했을 때 미국 및 해당 지역 외부에 있거나 microsoft에서 실행 되는 프로그램 (1 월 2010 이전에 Microsoft에서 사용이 허가 된 Microsoft Word 제품)의 혜택 및 사용을 위해서만 제공 됩니다. Microsoft Word에 대 한이 정보는 microsoft word 제품이 2010 년 1 월 10 일 이후 Microsoft에서 사용이 허가 된 Microsoft Word 제품,에서 실행 되는 프로그램을 개발 하거나 사용 하는 미국 또는 지역에 있는 개인 또는 조직에서 읽거나 사용할 수 없습니다. 이러한 제품은 해당 날짜 이전에 사용이 허가 된 제품과 동일 하 게 작동 하지 않습니다.
@@ -77,7 +79,7 @@ ms.locfileid: "62975729"
 
  이벤트와 이벤트 간에는 동일한 차이점이 있습니다 <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [XMLNodes 컨트롤](../vsto/xmlnodes-control.md)

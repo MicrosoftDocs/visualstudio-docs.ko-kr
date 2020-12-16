@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 통합 문서 보호'
+description: 사용자가 워크시트를 추가 하거나 삭제할 수 없으며 프로그래밍 방식으로 통합 문서의 보호를 해제할 수 있도록 Microsoft Excel 통합 문서를 보호 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537633"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528285"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 보호
   사용자가 워크시트를 추가 하거나 삭제할 수 없으며 프로그래밍 방식으로 통합 문서의 보호를 해제할 수 있도록 Microsoft Office Excel 통합 문서를 보호할 수 있습니다. 선택적으로 암호를 지정 하 고, 구조를 보호할 지 여부를 표시 하 고 (사용자가 시트를 이동할 수 없도록) 통합 문서의 창을 보호할 지 여부를 지정할 수 있습니다.
@@ -65,7 +67,7 @@ ms.locfileid: "85537633"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [방법: 프로그래밍 방식으로 워크시트 보호](../vsto/how-to-programmatically-protect-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)

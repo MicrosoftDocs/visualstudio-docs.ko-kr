@@ -1,5 +1,7 @@
 ---
 title: 주 interop 어셈블리를 통해 Office 앱을 대상으로 합니다.
+description: Visual Studio를 사용 하 여 주 interop 어셈블리를 통해 프로그래밍 방식으로 Microsoft Office 응용 프로그램을 대상으로 지정할 수 있는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545771"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528107"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상
   새 Office 프로젝트를 만들 때 Visual Studio는 프로젝트를 빌드하는 데 필요한 Microsoft Office PIA(주 interop 어셈블리)에 대한 참조를 자동으로 추가합니다. 다음과 같은 시나리오에서는 다른 PIA에 대한 참조를 추가해야 합니다.
@@ -36,9 +38,9 @@ ms.locfileid: "85545771"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>주 interop 어셈블리에 대한 참조를 추가하려면
 
-1. Office 프로젝트를 열고 **솔루션 탐색기**에서 프로젝트 이름을 선택 합니다.
+1. Office 프로젝트를 열고 **솔루션 탐색기** 에서 프로젝트 이름을 선택 합니다.
 
-2. **프로젝트** 메뉴에서 **참조 추가**를 클릭합니다.
+2. **프로젝트** 메뉴에서 **참조 추가** 를 클릭합니다.
 
 3. **프레임 워크** 탭의 **구성 요소 이름** 목록에서 원하는 PIA를 선택 합니다. 사용 가능한 Microsoft Office 주 interop 어셈블리에 대 한 자세한 내용은 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)를 참조 하세요.
 
@@ -47,11 +49,11 @@ ms.locfileid: "85545771"
     > [!NOTE]
     > Office 프로젝트에서 **COM** 탭 대신 **참조 추가** 대화 상자의 **.net** 탭을 사용 하 여 항상 office pia에 대 한 참조를 추가 합니다. 자세한 내용은 [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)를 참조 하세요.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
-     어셈블리 이름은 **솔루션 탐색기**의 **참조** 폴더에 표시 됩니다.
+     어셈블리 이름은 **솔루션 탐색기** 의 **참조** 폴더에 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)

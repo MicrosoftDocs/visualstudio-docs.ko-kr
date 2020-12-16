@@ -1,5 +1,7 @@
 ---
 title: CheckBox 컨트롤을 사용 하 여 문서 서식 변경
+description: Microsoft Word 용 문서 수준 사용자 지정에서 Windows Forms 컨트롤을 사용 하 여 텍스트 서식을 변경 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328720"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527249"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경
   이 연습에서는 Microsoft Office Word에 대 한 문서 수준 사용자 지정에서 Windows Forms 컨트롤을 사용 하 여 텍스트 서식을 변경 하는 방법을 보여 줍니다.
@@ -45,16 +47,16 @@ ms.locfileid: "67328720"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 또는 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
  첫 번째 단계에서는 Word 문서 프로젝트를 만듭니다.
 
 ### <a name="create-a-new-project"></a>새 프로젝트 만들기
 
-1. Word **서식**이라는 이름의 word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기**를 선택 합니다.
+1. Word **서식** 이라는 이름의 word 문서 프로젝트를 만듭니다. 마법사에서 **새 문서 만들기** 를 선택 합니다.
 
      자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     Visual Studio가 디자이너에서 새 Word 문서를 열고 **내 Word 서식 지정** 프로젝트를 **솔루션 탐색기**에 추가 합니다.
+     Visual Studio가 디자이너에서 새 Word 문서를 열고 **내 Word 서식 지정** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
 ## <a name="add-text-and-controls-to-the-word-document"></a>Word 문서에 텍스트 및 컨트롤 추가
  이 연습에서는 컨트롤의 세 가지 확인란 및 일부 텍스트를 <xref:Microsoft.Office.Tools.Word.Bookmark> Word 문서에 추가 합니다. 확인란은 텍스트의 서식을 지정 하는 옵션을 사용자에 게 제공 합니다.
@@ -63,7 +65,7 @@ ms.locfileid: "67328720"
 
 1. Visual Studio 디자이너에서 문서가 열려 있는지 확인합니다.
 
-2. **도구 상자**의 **공용 컨트롤** 탭에서 첫 번째 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> .
+2. **도구 상자** 의 **공용 컨트롤** 탭에서 첫 번째 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> .
 
 3. **속성** 창에서 다음 속성을 변경합니다.
 
@@ -88,7 +90,7 @@ ms.locfileid: "67328720"
     |속성|값|
     |--------------|-----------|
     |**이름**|**applyUnderlineFont**|
-    |**Text**|**바뀝니다**|
+    |**Text**|**밑줄**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>텍스트 및 책갈피 컨트롤 추가
 
@@ -96,11 +98,11 @@ ms.locfileid: "67328720"
 
     **이 텍스트의 서식을 변경 하려면 확인란을 클릭 합니다.**
 
-2. **도구 상자**의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
+2. **도구 상자** 의 **Word 컨트롤** 탭에서 컨트롤을 문서로 끌어 옵니다 <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
     **책갈피 컨트롤 추가** 대화 상자가 나타납니다.
 
-3. 문서에 추가한 텍스트를 선택 하 고 **확인**을 클릭 합니다.
+3. 문서에 추가한 텍스트를 선택 하 고 **확인** 을 클릭 합니다.
 
     <xref:Microsoft.Office.Tools.Word.Bookmark> **않고 책갈피 2** 라는 컨트롤이 문서의 선택한 텍스트에 추가 됩니다.
 
@@ -113,7 +115,7 @@ ms.locfileid: "67328720"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>확인란이 선택 된 경우 서식 변경
 
-1. 솔루션 탐색기를 마우스 오른쪽 단추로 클릭 한 `ThisDocument` 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다. **Solution Explorer**
+1. 솔루션 탐색기를 마우스 오른쪽 단추로 클릭 한 `ThisDocument` 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다. 
 
 2. C #의 경우 **ThisDocument** 클래스에 다음 상수를 추가 합니다.
 
@@ -156,7 +158,7 @@ ms.locfileid: "67328720"
 
 - 라디오 단추를 사용하여 차트 스타일 선택. 자세한 내용은 [연습: 문서에서 라디오 단추를 사용 하 여 차트 업데이트](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

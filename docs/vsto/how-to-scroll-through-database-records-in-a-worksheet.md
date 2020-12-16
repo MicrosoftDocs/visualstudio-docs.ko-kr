@@ -1,5 +1,7 @@
 ---
 title: '방법: 워크시트에서 데이터베이스 레코드 스크롤'
+description: 디자이너를 사용 하 여 Microsoft Excel 워크시트에서 데이터베이스 테이블의 단일 필드를 표시 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545797"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528166"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>방법: 워크시트에서 데이터베이스 레코드 스크롤
   다음 절차에서는 디자이너를 사용 하 여 Microsoft Office Excel 워크시트에 데이터베이스 테이블의 단일 필드를 표시 하 고 최종 사용자가 모든 레코드를 스크롤할 수 있는 컨트롤을 표시 하는 방법을 보여 줍니다.
@@ -37,11 +39,11 @@ ms.locfileid: "85545797"
 
 3. 표시 하려는 데이터가 포함 된 테이블을 확장 하 고 특정 열을 선택 합니다.
 
-4. 컨트롤 목록을 열고 **NamedRange**를 선택 합니다.
+4. 컨트롤 목록을 열고 **NamedRange** 를 선택 합니다.
 
 5. 데이터를 표시할 셀에 컨트롤을 끌어 놓습니다 <xref:Microsoft.Office.Tools.Excel.NamedRange> .
 
-6. **도구 상자**의 **Windows Forms** 탭에서 <xref:System.Windows.Forms.BindingNavigator> 워크시트에 컨트롤을 추가 하 고 사용 하려는 컨트롤을 설정 합니다. 자세한 내용은 [BindingNavigator 컨트롤 개요 &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)를 참조 하세요.
+6. **도구 상자** 의 **Windows Forms** 탭에서 <xref:System.Windows.Forms.BindingNavigator> 워크시트에 컨트롤을 추가 하 고 사용 하려는 컨트롤을 설정 합니다. 자세한 내용은 [BindingNavigator 컨트롤 개요 &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택'
+description: Range 개체를 사용 하 여 Microsoft Word 문서에서 프로그래밍 방식으로 범위를 정의 하 고 선택 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545953"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528329"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택
   <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하여 Microsoft Office Word 문서의 범위를 정의할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 개체의 메서드를 사용 <xref:Microsoft.Office.Interop.Word.Range> 하거나 <xref:Microsoft.Office.Tools.Word.Document> 클래스 (문서 수준 사용자 지정) 또는 <xref:Microsoft.Office.Interop.Word.Document> 클래스 (VSTO 추가 기능)의 Content 속성을 사용 하 여 여러 가지 방법으로 전체 문서를 선택할 수 있습니다.
@@ -125,7 +127,7 @@ ms.locfileid: "85545953"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 확장](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

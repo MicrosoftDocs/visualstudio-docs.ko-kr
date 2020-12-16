@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: 문제 보고
       href: report-a-problem.md
+    - name: '문제 해결: 어떻게 기존 확장의 새 버전을 릴리스하나요?'
+      href: migrate-extensions.md
     - name: '문제 해결: Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?'
       href: tf-version-control.md
     - name: '문제 해결: 왜 모든 템플릿을 볼 수 없나요?'

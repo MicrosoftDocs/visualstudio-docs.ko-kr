@@ -1,5 +1,7 @@
 ---
 title: 메일 항목 작업
+description: MailItem 클래스에는 전자 메일 메시지를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815435"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526884"
 ---
 # <a name="work-with-mail-items"></a>메일 항목 작업
   클래스에는 <xref:Microsoft.Office.Interop.Outlook.MailItem> 메일 메시지를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성이 포함 되어 있습니다.
 
-|Task|프로시저|
+|작업|프로시저|
 |----------|---------------|
 |전자 메일 메시지를 만듭니다.|[방법: 프로그래밍 방식으로 전자 메일 항목 만들기](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
 |전자 메일 메시지를 보냅니다.|[방법: 프로그래밍 방식으로 전자 메일 보내기](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
@@ -36,7 +38,7 @@ ms.locfileid: "62815435"
 
  Outlook 작업 및 Outlook 개체 모델에 대 한 자세한 내용은 [outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연락처 항목 작업](../vsto/working-with-contact-items.md)
 - [폴더 작업](../vsto/working-with-folders.md)
 - [일정 항목 작업](../vsto/working-with-calendar-items.md)

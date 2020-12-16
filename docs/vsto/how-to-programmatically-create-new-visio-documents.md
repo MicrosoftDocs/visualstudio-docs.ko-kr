@@ -1,5 +1,7 @@
 ---
 title: '방법: 프로그래밍 방식으로 새 Visio 문서 만들기'
+description: 프로그래밍 방식으로 새 Microsoft Visio 드로잉 문서를 만들어 열려 있는 Visio 문서의 Documents 컬렉션에 추가 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541533"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526845"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>방법: 프로그래밍 방식으로 새 Visio 문서 만들기
   새 Microsoft Office Visio 드로잉 문서를 만들려면 열려 있는 Visio 문서의 `Microsoft.Office.Interop.Visio.Documents` 컬렉션에 추가합니다. 결과적으로 `Microsoft.Office.Interop.Visio.Documents.Add` 메서드는 새 Visio 드로잉 문서를 만듭니다. 자세한 내용은 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 메서드를 참조하세요.
@@ -71,7 +73,7 @@ ms.locfileid: "85541533"
 
 - 이라는 Visio 문서는 `myTemplate.vst` `Test` *내 문서* 폴더 (windows XP 및 이전 버전의 경우) 또는 *Documents* 폴더 (windows Vista의 경우)에서 이름이 지정 된 디렉터리에 있어야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 Visio 문서 열기](../vsto/how-to-programmatically-open-visio-documents.md)

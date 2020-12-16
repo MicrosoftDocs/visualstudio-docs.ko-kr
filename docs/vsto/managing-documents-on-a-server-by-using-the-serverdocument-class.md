@@ -1,5 +1,7 @@
 ---
 title: ServerDocument 클래스를 사용 하 여 서버에서 문서 관리
+description: Visual Studio Tools for Office 런타임에 ServerDocument 클래스를 사용 하 여 문서 수준 사용자 지정의 여러 측면을 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e91653734b804693584808478e44443563cdb823
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298278"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528492"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument 클래스를 사용 하 여 서버에서 문서 관리
   `ServerDocument` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word와 Microsoft Office Excel이 설치 되어 있지 않은 Microsoft Office 경우에도의 클래스를 사용 하 여 문서 수준 사용자 지정의 여러 측면을 관리할 수 있습니다. 다음 작업을 수행할 수 있습니다.
@@ -46,7 +48,7 @@ ms.locfileid: "92298278"
 
  다음 표에서는 캐시 된 데이터로 작업 하는 데 사용할 수 있는 멤버를 나열 합니다.
 
-|Task|사용할 멤버|
+|작업|사용할 멤버|
 |----------|-------------------|
 |문서에 데이터 캐시가 있는지 여부를 확인 합니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 메서드|
 |문서의 캐시 된 데이터에 액세스 하려면입니다.<br /><br /> 자세한 내용은 [서버에 있는 문서의 데이터 액세스](../vsto/accessing-data-in-documents-on-the-server.md)를 참조 하세요.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 속성|
@@ -56,14 +58,14 @@ ms.locfileid: "92298278"
 
  다음 표에서는 사용자 지정 어셈블리를 관리 하는 데 사용할 수 있는 멤버를 나열 합니다.
 
-|Task|사용할 멤버|
+|작업|사용할 멤버|
 |----------|-------------------|
 |문서가 문서 수준 사용자 지정의 일부 인지 여부를 확인 합니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 메서드|
 |런타임에 프로그래밍 방식으로 문서에 사용자 지정을 연결 하려면입니다.<br /><br /> 자세한 내용은 [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md) 을 참조 하세요.|메서드 중 하나 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 입니다.|
 |런타임에 프로그래밍 방식으로 문서에서 사용자 지정을 제거 하려면입니다.<br /><br /> 자세한 내용은 [방법: 문서에서 관리 코드 확장 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)를 참조 하세요.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 메서드|
 |-문서와 연결 된 배포 매니페스트의 URL을 가져옵니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 속성|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
 - [방법: 문서에서 관리 코드 확장명 제거](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Visual Studio Tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)
