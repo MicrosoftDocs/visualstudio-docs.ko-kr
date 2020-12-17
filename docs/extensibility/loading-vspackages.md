@@ -1,5 +1,7 @@
 ---
 title: Vspackage 로드 중 | Microsoft Docs
+description: 성능을 향상 시킬 수 있는 경우에 사용 되는 지연 된 로드를 포함 하 여 Visual Studio에서 Vspackage를 로드 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702961"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616106"
 ---
 # <a name="load-vspackages"></a>Load Vspackage
 Vspackage는 해당 기능이 필요한 경우에만 Visual Studio에 로드 됩니다. 예를 들어 Visual Studio가 프로젝트 팩터리 또는 VSPackage가 구현 하는 서비스를 사용 하는 경우 VSPackage이 로드 됩니다. 이 기능을 사용 하면 성능이 향상 될 때마다 사용 되는 지연 된 로드 라고 합니다.
@@ -35,7 +37,7 @@ Vspackage는 해당 기능이 필요한 경우에만 Visual Studio에 로드 됩
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 
@@ -71,5 +73,5 @@ Vspackage는 해당 기능이 필요한 경우에만 Visual Studio에 로드 됩
 
      VSPackage 통신에는 강제 로드를 사용 하면 안 됩니다. 대신 [사용 및 서비스 제공을](../extensibility/using-and-providing-services.md) 사용 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../extensibility/internals/vspackages.md)

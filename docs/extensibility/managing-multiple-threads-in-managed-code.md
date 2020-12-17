@@ -1,5 +1,7 @@
 ---
 title: '방법: 관리 코드에서 여러 스레드 관리 | Microsoft Docs'
+description: 관리 되는 VSPackage 확장에서 비동기 메서드를 호출 하거나 Visual Studio UI 스레드에서 작업을 수행 하는 경우 코드에서 여러 스레드를 관리 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe5cef9f7aebcbfc93ffd057a109647e45b5967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 480b42c13d13cdbdb299b629fd777e3346fcd67c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387072"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616333"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>방법: 관리 코드에서 여러 스레드 관리
 비동기 메서드를 호출 하거나 Visual Studio UI 스레드가 아닌 스레드에서 실행 되는 작업을 포함 하는 관리 되는 VSPackage 확장이 있는 경우 아래 제공 된 지침을 따라야 합니다. 다른 스레드의 작업이 완료 될 때까지 기다릴 필요가 없기 때문에 UI 스레드 응답성을 유지할 수 있습니다. 스택 공간을 차지 하는 추가 스레드가 없으므로 코드를 보다 효율적으로 만들 수 있으며, 교착 상태와 응답 하지 않는 코드를 방지 하기 때문에 더 안정적이 고 쉽게 디버깅할 수 있습니다.

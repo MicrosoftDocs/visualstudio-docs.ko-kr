@@ -1,5 +1,7 @@
 ---
 title: 솔루션에서 프로젝트 로드 관리 | Microsoft Docs
+description: 개발자가 솔루션 로드 시간을 줄이고 솔루션 부하 관리자를 만들어 프로젝트 로드 동작을 관리할 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21cd5e7e557e795db49aea7a14e8e4cc7caa0422
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702727"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616359"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>솔루션에서 프로젝트 로드 관리
 Visual Studio 솔루션에는 여러 개의 프로젝트가 포함 될 수 있습니다. 기본 Visual Studio 동작은 솔루션이 열릴 때 솔루션의 모든 프로젝트를 로드 하 고, 모든 프로젝트가 로드를 완료할 때까지 사용자가 프로젝트에 액세스할 수 없도록 하는 것입니다. 프로젝트 로드 프로세스가 2 분 이상 지속 되 면 로드 된 프로젝트 수와 총 프로젝트 수를 보여 주는 진행률 표시줄이 표시 됩니다. 사용자는 여러 프로젝트를 사용 하는 솔루션에서 작업 하는 동안 프로젝트를 언로드할 수 있지만이 절차에는 몇 가지 단점이 있습니다. 언로드된 프로젝트는 솔루션 다시 빌드 명령의 일부로 빌드되지 않으며 닫힌 프로젝트의 형식 및 멤버에 대 한 IntelliSense 설명이 표시 되지 않습니다.
@@ -65,7 +67,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>:이 이벤트는 솔루션 로드 관리자가 있는지 여부에 관계 없이 처음에 솔루션을 완전히 로드 한 후에 발생 합니다. 솔루션이 완전히 로드 될 때마다 백그라운드 로드 나 수요 로드 후에도 발생 합니다. 동시에 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> 가 다시 활성화 됩니다.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>:이 이벤트는 프로젝트 또는 프로젝트를 로드 하기 전에 발생 합니다. 프로젝트를 로드 하기 전에 다른 백그라운드 프로세스가 완료 되도록 하려면를 `pfShouldDelayLoadToNextIdle` **true**로 설정 합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>:이 이벤트는 프로젝트 또는 프로젝트를 로드 하기 전에 발생 합니다. 프로젝트를 로드 하기 전에 다른 백그라운드 프로세스가 완료 되도록 하려면를 `pfShouldDelayLoadToNextIdle` **true** 로 설정 합니다.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>:이 이벤트는 프로젝트 일괄 처리가 로드 될 때 발생 합니다. `fIsBackgroundIdleBatch`이 true 이면 프로젝트가 백그라운드에서 로드 되 고, `fIsBackgroundIdleBatch` 이 false 이면 사용자 요청 결과로 프로젝트가 동기적으로 로드 됩니다. 예를 들어 사용자가 솔루션 탐색기에서 보류 중인 프로젝트를 확장 합니다. 이 이벤트를 처리 하 여에서 수행 해야 하는 비용이 많이 드는 작업을 수행할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> .
 

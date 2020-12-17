@@ -1,5 +1,7 @@
 ---
 title: 언어 서버 프로토콜 개요 | Microsoft Docs
+description: 언어 서버 프로토콜에서 다양 한 도구에 언어 기능을 제공 하는 데 유용한 프레임 워크를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703109"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616132"
 ---
 # <a name="language-server-protocol"></a>언어 서버 프로토콜
 
@@ -53,7 +55,7 @@ VS Code 팀은 파일에 대 한 요청에 응답 하 고 검색 된 경고 및 
 
 * **사용자가 편집 합니다**.이 도구는 서버에 문서 변경 내용 (' TextDocument/didChange ')을 알리고 언어 서버에서 프로그램의 의미 체계 정보를 업데이트 합니다. 이 경우 언어 서버에서이 정보를 분석 하 고 검색 된 오류 및 경고 (' textDocument/서버 진단 ')를 사용 하 여 도구에 알립니다.
 
-* **사용자가 편집기에서 기호에 대 한 "정의로 이동"을 실행**합니다 .이 도구는 두 개의 매개 변수 (1)와 문서 URI, (2)로 이동 요청이 서버에 시작 된 텍스트 위치의 ' textDocument/Definition ' 요청을 보냅니다. 서버는 문서 URI와 문서 내의 기호 정의 위치를 사용 하 여 응답 합니다.
+* **사용자가 편집기에서 기호에 대 한 "정의로 이동"을 실행** 합니다 .이 도구는 두 개의 매개 변수 (1)와 문서 URI, (2)로 이동 요청이 서버에 시작 된 텍스트 위치의 ' textDocument/Definition ' 요청을 보냅니다. 서버는 문서 URI와 문서 내의 기호 정의 위치를 사용 하 여 응답 합니다.
 
 * **사용자가 문서 (파일)를 닫습니다**. 도구에서 ' TextDocument/didClose ' 알림이 전송 됩니다 .이 알림은 언어 서버에 문서가 더 이상 메모리가 없고 현재 콘텐츠가 파일 시스템에서 최신 상태 라고 알립니다.
 

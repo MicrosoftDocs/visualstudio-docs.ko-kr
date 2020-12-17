@@ -1,5 +1,7 @@
 ---
 title: 편집기에서 Managed Extensibility Framework | Microsoft Docs
+description: 사용자 고유의 구성 요소를 빌드하여 Visual Studio SDK의 편집기를 확장 하는 데 사용할 수 있는 Managed Extensibility Framework에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702871"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615592"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기에서 Managed Extensibility Framework
 편집기는 MEF (Managed Extensibility Framework) 구성 요소를 사용 하 여 빌드됩니다. 사용자 고유의 MEF 구성 요소를 빌드하여 편집기를 확장할 수 있으며 코드에서 편집기 구성 요소도 사용할 수 있습니다.
@@ -82,7 +84,7 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF 구성 요소 파트에서 편집기 기능을 사용 하려면
 
-1. GAC (전역 어셈블리 캐시)에 있는 *System.Composition.ComponentModel.dll*에 대 한 참조와 편집기 어셈블리에 대 한 참조를 추가 합니다.
+1. GAC (전역 어셈블리 캐시)에 있는 *System.Composition.ComponentModel.dll* 에 대 한 참조와 편집기 어셈블리에 대 한 참조를 추가 합니다.
 
 2. 관련 using 지시문을 추가 합니다.
 
@@ -102,5 +104,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 5. 어셈블리를 컴파일한 경우 * .에 배치 합니다. \* Visual Studio 설치의 \Common7\IDE\Components 폴더입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

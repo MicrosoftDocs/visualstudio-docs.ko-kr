@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398418"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615527"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>자사 .NET 분석기 사용 또는 설치
 
@@ -31,9 +31,9 @@ ms.locfileid: "97398418"
 - **Nuget 패키지로 설치**: .net 5 + SDK로 이동 하지 않으려는 경우 또는 nuget 패키지 기반 모델을 선호 하는 경우 `Microsoft.CodeAnalysis.NetAnalyzers` Visual Studio 2019의 [nuget 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) 에서도 분석기를 사용할 수 있습니다.  주문형 버전 업데이트에 대 한 패키지 기반 모델을 사용 하는 것이 좋습니다. Visual Studio 2017를 사용할 경우 최신 `2.9.x` 버전의 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) 를 대신 설치 합니다.
 
 > [!NOTE]
-> `Microsoft.CodeAnalysis.NetAnalyzers`가능 하면 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)를 설치 하는 대신 .net SDK에서 분석기를 사용 하도록 설정 하는 것이 좋습니다. .NET SDK에서 분석기를 사용 하도록 설정 하면 SDK를 업데이트 하는 즉시 분석기 버그 수정과 새 분석기가 자동으로 다운로드 됩니다.
+> `Microsoft.CodeAnalysis.NetAnalyzers`가능 하면 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)를 설치 하는 대신 .net SDK에서 분석기를 사용 하도록 설정 하는 것이 좋습니다. .NET SDK에서 분석기를 사용 하도록 설정 하면 SDK를 업데이트 하는 즉시 분석기 버그 수정과 새 분석기가 자동으로 다운로드 됩니다. NuGet 모델에서 최신 버그를 수정할 때마다 NuGet 패키지를 업데이트 해야 합니다. NuGet 패키지는 더 자주 업데이트 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](roslyn-analyzers-overview.md)
 - [Visual Studio에서 코드 분석기 사용](use-roslyn-analyzers.md)

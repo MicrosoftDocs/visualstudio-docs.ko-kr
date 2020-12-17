@@ -1,5 +1,7 @@
 ---
 title: VSIX 패키지 지역화 | Microsoft Docs
+description: 각 대상 언어에 대 한 확장명 vsixlangpack 파일을 만든 다음 올바른 폴더에 배치 하 여 VSIX 패키지를 지역화 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702893"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615540"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX 패키지 지역화
 
@@ -41,23 +43,23 @@ VSIX 패키지에 메뉴 명령이 나 기타 UI를 추가 하는 VSPackage 포�
 ```
 
 > [!NOTE]
-> 에서 VSIX 지원 프로젝트 템플릿은 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] vsix 매니페스트를 생성 하 고 이름을 *source.extension.vsixmanifest*로 만듭니다. Visual Studio는 프로젝트를 빌드할 때 VSIX 패키지의 Source.extension.vsixmanifest에 해당 파일의 콘텐츠를 복사 합니다.
+> 에서 VSIX 지원 프로젝트 템플릿은 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] vsix 매니페스트를 생성 하 고 이름을 *source.extension.vsixmanifest* 로 만듭니다. Visual Studio는 프로젝트를 빌드할 때 VSIX 패키지의 Source.extension.vsixmanifest에 해당 파일의 콘텐츠를 복사 합니다.
 
 ## <a name="the-extensionvsixlangpack-file"></a>확장명 vsixlangpack 파일
 
-*확장명 vsixlangpack* 파일은 [VSIX 언어 팩 스키마 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)을 따릅니다. 이 스키마에는 `PackageLanguagePackManifest` 바로 다음에 자식 요소가 있는가 있습니다 `Metadata` . Metadata 요소는 자식 요소,,,,, 및를 최대 6 개까지 포함할 수 있습니다 `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` . 이러한 자식 요소는 `DisplayName` source.extension.vsixmanifest 파일에 있는 요소의,, `Description` ,, `MoreInfo` `License` `ReleaseNotes` 및 자식 요소에 해당 `Icon` `Metadata` 합니다 *Extension.vsixmanifest* .
+*확장명 vsixlangpack* 파일은 [VSIX 언어 팩 스키마 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)을 따릅니다. 이 스키마에는 `PackageLanguagePackManifest` 바로 다음에 자식 요소가 있는가 있습니다 `Metadata` . Metadata 요소는 자식 요소,,,,, 및를 최대 6 개까지 포함할 수 있습니다 `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` . 이러한 자식 요소는 `DisplayName` source.extension.vsixmanifest 파일에 있는 요소의,, `Description` ,, `MoreInfo` `License` `ReleaseNotes` 및 자식 요소에 해당 `Icon` `Metadata` 합니다  .
 
 Vsixlangpack 파일을 만들 때 속성을로 설정 해야 합니다 `Include in Vsix` `true` . 그렇지 않으면 지역화 된 설치 텍스트가 무시 됩니다.
 
 ### <a name="to-set-the-include-in-vsix-property"></a>Vsix에 포함 속성을 설정 하려면
 
-1. **솔루션 탐색기**에서 확장명 vsixlangpack 파일을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
+1. **솔루션 탐색기** 에서 확장명 vsixlangpack 파일을 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
-2. **속성 표에서** **Vsix에 포함**을 클릭 하 고 해당 값을로 설정 `true` 합니다.
+2. **속성 표에서** **Vsix에 포함** 을 클릭 하 고 해당 값을로 설정 `true` 합니다.
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 예제에서는 *source.extension.vsixmanifest* 파일의 관련 부분을 보여 줍니다. 이 파일에는 스페인어 용 *vsixlangpack* 파일도 포함 되어 있습니다. 대상 컴퓨터의 Visual Studio 로캘이 스페인어로 설정 된 경우 언어 팩의 값이 매니페스트에서 값을 대체 합니다.
 
@@ -101,7 +103,7 @@ Vsixlangpack 파일을 만들 때 속성을로 설정 해야 합니다 `Include 
 
 ## <a name="see-also"></a>참조
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[VSIX 언어 팩 스키마 2.0 참조](vsix-language-pack-schema-2-0-reference.md)|VSIX 언어 팩은 .vsix 배포 파일의 지역화 정보에 대해 설명 합니다.|
 |[VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)|Vsix 패키지의 구조 및 내용에 대해 설명 합니다.|

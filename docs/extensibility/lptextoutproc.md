@@ -1,5 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
+description: LPTEXTOUTPROC 함수 포인터에 대해 알아봅니다. Visual Studio IDE는 오류 및 상태를 표시 하는 함수를 구현 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702798"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615729"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +51,7 @@ mesg_type
 
 메시지의 형식입니다. 다음 표에서는이 매개 변수에 대해 지원 되는 값을 보여 줍니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|메시지는 정보, 경고 또는 오류로 간주 됩니다.|
 |`SCC_MSG_STATUS`|이 메시지는 상태를 표시 하 고 상태 표시줄에 표시할 수 있습니다.|
@@ -63,12 +65,12 @@ mesg_type
 
 ## <a name="return-value"></a>반환 값
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|문자열이 표시 되었거나 작업이 성공적으로 완료 되었습니다.|
 |SCC_MSG_RTN_CANCEL|사용자가 작업을 취소 하려고 합니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  IDE에서 파일 이름이 20 인 [Sccget](../extensibility/sccget-function.md) 을 호출 한다고 가정 합니다. 소스 제어 플러그 인에서 파일의 중간에 있는 작업 취소를 방지 하려고 합니다. 각 파일을 가져온 후에는를 호출 하 `lpTextOutProc` 여 각 파일에 상태 정보를 전달 하 고 `SCC_MSG_DOCANCEL` 보고할 상태가 없으면 메시지를 보냅니다. 플러그 인이 IDE에서 반환 값을 받을 때 언제 든 지 `SCC_MSG_RTN_CANCEL` 가져오기 작업을 취소 하 여 더 이상 파일이 검색 되지 않도록 합니다.
 
 ## <a name="structures"></a>구조체
@@ -140,6 +142,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDE에서 구현 하는 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

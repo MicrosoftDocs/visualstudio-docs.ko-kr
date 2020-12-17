@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 찾기 | Microsoft Docs
+description: 동일한 버전의 Visual Studio 인스턴스를 여러 개 설치할 수 있습니다. COM 쿼리 API를 사용 하 여 원하는 인스턴스를 찾는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012479"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616290"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio 찾기
 
@@ -25,7 +27,7 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 | 코드 | 패키지 |
 | ---- | --- |
 | 네이티브 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| 관리 대상 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| 관리 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 경로 또는 현재 프로세스가 지정 된 단일 인스턴스를 찾거나 모든 인스턴스를 열거할 수 있습니다. Visual Studio를 찾는 방법의 전체 예제는 [샘플](https://github.com/Microsoft/vs-setup-samples) 을 참조 하세요.
 

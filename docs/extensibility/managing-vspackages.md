@@ -1,5 +1,7 @@
 ---
 title: Vspackage 관리 | Microsoft Docs
+description: Visual Studio에서 제공 하는 기본 VSPackage 관리를 사용 하 고 사용자 지정 하는 방법 및 시기를 알 수 있도록 Vspackage 관리에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702647"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615742"
 ---
 # <a name="manage-vspackages"></a>VSPackage 관리
 대부분의 경우 프로젝트 및 항목 템플릿이 자동으로 패키지를 등록 하 고 로드 하므로 Vspackage 관리에 대해 걱정할 필요가 없습니다. 그러나 일부 경우에는 패키지를 관리 하기 위해 약간 더 배워야 할 수도 있습니다.
@@ -44,5 +46,5 @@ ms.locfileid: "80702647"
 ## <a name="troubleshoot-vspackages"></a>Vspackage 문제 해결
  로드 되지 않거나 오류가 발생 하는 Vspackage 문제를 해결 하는 방법에 대 한 자세한 정보: [문제 해결 vspackage](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../extensibility/internals/vspackages.md)

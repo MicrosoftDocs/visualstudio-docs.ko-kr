@@ -1,5 +1,7 @@
 ---
 title: Side-by-side 파일 연결 관리 | Microsoft Docs
+description: VSPackage에서 파일 연결을 제공 하는 경우 특정 버전의 Visual Studio에서 파일을 여는 side-by-side 설치를 처리 하는 방법을 결정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702755"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616346"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side 파일 연결 관리
 
@@ -23,7 +25,7 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
 사용자는 새 버전의 제품이 이전 버전과 호환 될 것으로 간주 하므로 데이터가 손실 되지 않고 새 버전으로 기존 파일을 로드할 수 있습니다. 이상적으로 VSPackage는 이전 버전의 파일 형식을 로드 하 고 저장할 수 있습니다. 그렇지 않은 경우을 (를) 제공 하 여 파일 형식을 VSPackage의 새 버전으로 업그레이드 해야 합니다. 이 방법의 단점은 업그레이드 된 파일을 이전 버전에서 열 수 없다는 것입니다.
 
-이 문제를 방지 하기 위해 파일 형식이 호환 되지 않을 때 확장을 변경할 수 있습니다. 예를 들어 VSPackage의 버전 1은 *mypkg10*확장을 사용할 수 있으며, 버전 2는 *mypkg20*확장명을 사용할 수 있습니다. 이 차이는 특정 파일을 여는 VSPackage을 식별 합니다. 이전 확장과 연결 된 프로그램 목록에 최신 Vspackage를 추가 하는 경우 사용자가 파일을 마우스 오른쪽 단추로 클릭 하 고 최신 VSPackage에서 열도록 선택할 수 있습니다. 이 시점에서 VSPackage은 파일을 새 형식으로 업그레이드 하거나 파일을 열고 이전 버전의 VSPackage와의 호환성을 유지 하도록 제공할 수 있습니다.
+이 문제를 방지 하기 위해 파일 형식이 호환 되지 않을 때 확장을 변경할 수 있습니다. 예를 들어 VSPackage의 버전 1은 *mypkg10* 확장을 사용할 수 있으며, 버전 2는 *mypkg20* 확장명을 사용할 수 있습니다. 이 차이는 특정 파일을 여는 VSPackage을 식별 합니다. 이전 확장과 연결 된 프로그램 목록에 최신 Vspackage를 추가 하는 경우 사용자가 파일을 마우스 오른쪽 단추로 클릭 하 고 최신 VSPackage에서 열도록 선택할 수 있습니다. 이 시점에서 VSPackage은 파일을 새 형식으로 업그레이드 하거나 파일을 열고 이전 버전의 VSPackage와의 호환성을 유지 하도록 제공할 수 있습니다.
 
 > [!NOTE]
 > 이러한 방법을 결합할 수 있습니다. 예를 들어 이전 파일을 로드 하 여 이전 버전과의 호환성을 제공 하 고, 사용자가 파일을 저장할 때 파일 형식을 업그레이드 하도록 제공할 수 있습니다.
@@ -59,13 +61,13 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
   **최신 버전의 Visual Studio를 결정 하는 InstallExecuteSequence 테이블 행**
 
-  |작업|조건|순서|
+  |작업|조건|시퀀스|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 (DEVENV_EXE_2003 또는 DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Windows Installer 패키지의 레지스트리 테이블에서 DEVENV_EXE_LATEST 속성을 사용 하 여 **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** 키의 기본값, [DEVENV_EXE_LATEST] "%1"을 (를) 쓸 수 있습니다.
+   Windows Installer 패키지의 레지스트리 테이블에서 DEVENV_EXE_LATEST 속성을 사용 하 여 **HKEY_CLASSES_ROOT *ProgId* ShellOpenCommand** 키의 기본값, [DEVENV_EXE_LATEST] "%1"을 (를) 쓸 수 있습니다.
 
 - 사용 가능한 VSPackage 버전에서 가장 적합 한 옵션을 선택할 수 있는 공유 시작 관리자 프로그램을 실행 합니다.
 
@@ -85,7 +87,7 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
 - 사용자가 파일 연결을 선택 하 고 손실 된 연결을 회수할 수 있는 구성 옵션 페이지 또는 대화 상자를 제공 합니다. 제거 후 사용자에 게 실행 하도록 지시 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Side-by-side 배포에 대 한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [파일 이름 확장명에 대 한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)

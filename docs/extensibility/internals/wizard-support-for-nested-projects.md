@@ -1,5 +1,7 @@
 ---
 title: 중첩 프로젝트에 대 한 마법사 지원 | Microsoft Docs
+description: 부모 프로젝트가 Visual Studio SDK에서 VSPackage의 중첩 된 프로젝트에 대해 구현할 수 있는 두 가지 마법사에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703200"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615618"
 ---
 # <a name="wizard-support-for-nested-projects"></a>중첩된 프로젝트에 대한 마법사 지원
 IDE는 중첩 된 프로젝트용 부모 프로젝트에서 구현할 수 있는 두 가지 마법사 인 **새 프로젝트** 마법사와 **항목 추가** 마법사를 실행 합니다.
@@ -28,6 +30,6 @@ IDE는 중첩 된 프로젝트용 부모 프로젝트에서 구현할 수 있는
 
  마법사에 대 한 자세한 내용은 [마법사 (를 참조 하세요. .Vsz 파일](../../extensibility/internals/wizard-dot-vsz-file.md), [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md) 및 [프로젝트 템플릿과 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [프로젝트 중첩](../../extensibility/internals/nesting-projects.md)

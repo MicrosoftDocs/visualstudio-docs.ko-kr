@@ -1,5 +1,7 @@
 ---
 title: DTE를 사용하여 Visual Studio 시작
+description: DTE를 사용 하 여 Visual Studio를 시작 하 여 주요 릴리스의 side-by-side 설치를 지 원하는 방법에 대해 알아봅니다. 이 문서에는 코드 예제가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703037"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615879"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE를 사용하여 Visual Studio 시작
 

@@ -1,5 +1,7 @@
 ---
 title: KeyBindings 요소 | Microsoft Docs
+description: KeyBindings 요소는 KeyBinding 요소 및 기타 키 바인딩 그룹을 그룹화 합니다. 이 문서에는 예제가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703133"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616093"
 ---
 # <a name="keybindings-element"></a>KeyBindings 요소
 KeyBindings 요소는 KeyBinding 요소 및 기타 키 바인딩 그룹을 그룹화 합니다.
@@ -37,20 +39,20 @@ KeyBindings 요소는 KeyBinding 요소 및 기타 키 바인딩 그룹을 그�
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[KeyBinding 요소](../extensibility/keybinding-element.md)|명령에 대 한 바로 가기 키를 지정 합니다.|
 |[KeyBindings](../extensibility/keybindings-element.md)|KeyBinding 요소 및 기타 키 바인딩 그룹을 그룹화 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|
 

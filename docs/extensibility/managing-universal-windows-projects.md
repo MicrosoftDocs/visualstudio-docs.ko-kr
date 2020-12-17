@@ -1,5 +1,7 @@
 ---
 title: 유니버설 Windows 프로젝트 관리 | Microsoft Docs
+description: 유니버설 Windows 앱을 지원 하기 위해 프로젝트를 관리 하는 Visual Studio 확장은 유니버설 Windows 앱 프로젝트 구조를 인식 해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012310"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615566"
 ---
 # <a name="manage-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 
@@ -25,7 +27,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ### <a name="navigate-the-shared-project"></a>공유 프로젝트 탐색
 
-1. **TestUniversalProject**라는 c # VSIX 프로젝트를 만듭니다. (**파일**  >  **새**  >  **프로젝트** 및 **c #**  >  **확장성**  >  **Visual Studio 패키지**)를 차례로 클릭 합니다. **사용자 지정 명령** 프로젝트 항목 템플릿을 추가 합니다 ( **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목**추가를 선택한 다음, **확장성**으로 이동). 파일 이름을 **TestUniversalProject**로 합니다.
+1. **TestUniversalProject** 라는 c # VSIX 프로젝트를 만듭니다. (**파일**  >  **새**  >  **프로젝트** 및 **c #**  >  **확장성**  >  **Visual Studio 패키지**)를 차례로 클릭 합니다. **사용자 지정 명령** 프로젝트 항목 템플릿을 추가 합니다 ( **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택한 다음, **확장성** 으로 이동). 파일 이름을 **TestUniversalProject** 로 합니다.
 
 2. *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 에 대 한 참조를 추가 하 고 **확장** 섹션에서 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* 합니다.
 
@@ -126,7 +128,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     }
     ```
 
-9. `ShowMessageBox`메서드에서 공유 프로젝트의 캡션 ( **솔루션 탐색기**에 표시 되는 프로젝트 이름)을 출력 합니다.
+9. `ShowMessageBox`메서드에서 공유 프로젝트의 캡션 ( **솔루션 탐색기** 에 표시 되는 프로젝트 이름)을 출력 합니다.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -291,7 +293,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. 이제 사용해 보세요. F5 키를 눌러 실험적 인스턴스를 시작 합니다. **새 프로젝트** 대화 상자의 **Visual c #**  >  **windows**  >  **8**  >  **유니버설**  >  **허브 앱**에서 실험적 인스턴스에 c # 유니버설 허브 앱 프로젝트를 만듭니다. 솔루션이 로드 되 면 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출**을 클릭 한 다음 **출력** 창에서 텍스트를 확인 합니다. 다음과 유사한 출력이 표시됩니다.
+16. 이제 사용해 보세요. F5 키를 눌러 실험적 인스턴스를 시작 합니다. **새 프로젝트** 대화 상자의 **Visual c #**  >  **windows**  >  **8**  >  **유니버설**  >  **허브 앱** 에서 실험적 인스턴스에 c # 유니버설 허브 앱 프로젝트를 만듭니다. 솔루션이 로드 되 면 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출** 을 클릭 한 다음 **출력** 창에서 텍스트를 확인 합니다. 다음과 유사한 출력이 표시됩니다.
 
     ```
     Found shared project: HubApp.Shared
@@ -304,7 +306,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>플랫폼 프로젝트에서 공유 항목 관리
 
-1. 플랫폼 프로젝트에서 공유 항목을 찾습니다. 공유 프로젝트의 항목은 플랫폼 프로젝트에 공유 항목으로 표시 됩니다. **솔루션 탐색기**에서 볼 수 없지만 프로젝트 계층 구조를 탐색 하 여 찾을 수 있습니다. 다음 메서드는 계층을 탐색 하 고 모든 공유 항목을 수집 합니다. 필요에 따라 각 항목의 캡션을 출력 합니다. 공유 항목은 새 속성으로 식별 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
+1. 플랫폼 프로젝트에서 공유 항목을 찾습니다. 공유 프로젝트의 항목은 플랫폼 프로젝트에 공유 항목으로 표시 됩니다. **솔루션 탐색기** 에서 볼 수 없지만 프로젝트 계층 구조를 탐색 하 여 찾을 수 있습니다. 다음 메서드는 계층을 탐색 하 고 모든 공유 항목을 수집 합니다. 필요에 따라 각 항목의 캡션을 출력 합니다. 공유 항목은 새 속성으로 식별 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -353,7 +355,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. 이제 사용해 보세요. **F5** 키를 눌러 실험적 인스턴스를 시작 합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱 프로젝트 만들기 ( **새 프로젝트** 대화 상자에서 **Visual c #**  >  **windows**  >  **8**  >  **유니버설**  >  **허브 앱**) **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출**을 클릭 한 다음 **출력** 창에서 텍스트를 확인 합니다. 다음과 유사한 출력이 표시됩니다.
+4. 이제 사용해 보세요. **F5** 키를 눌러 실험적 인스턴스를 시작 합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱 프로젝트 만들기 ( **새 프로젝트** 대화 상자에서 **Visual c #**  >  **windows**  >  **8**  >  **유니버설**  >  **허브 앱**) **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출** 을 클릭 한 다음 **출력** 창에서 텍스트를 확인 합니다. 다음과 유사한 출력이 표시됩니다.
 
     ```
     Found shared project: HubApp.Shared
@@ -417,13 +419,13 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
    2. 파일의 새 이름을 포함 하도록 프로젝트 파일이 업데이트 됩니다.
 
-      계층 이벤트 (예: <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> )는 일반적으로 **솔루션 탐색기**같이 UI에 표시 된 변경 내용을 추적 합니다. 계층 이벤트는 파일 이름 바꾸기 작업을 파일 삭제와 파일 추가로 구성 하는 것으로 간주 합니다. 그러나 보이지 않는 항목이 변경 되 면 계층 이벤트 시스템은 이벤트를 발생 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 하지만 이벤트는 발생 하지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> . 따라서 플랫폼 프로젝트에서 파일의 이름을 바꾸면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 및가 모두 제공 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 되지만 공유 프로젝트에서 파일의 이름을 바꾸는 경우에만 표시 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 됩니다.
+      계층 이벤트 (예: <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> )는 일반적으로 **솔루션 탐색기** 같이 UI에 표시 된 변경 내용을 추적 합니다. 계층 이벤트는 파일 이름 바꾸기 작업을 파일 삭제와 파일 추가로 구성 하는 것으로 간주 합니다. 그러나 보이지 않는 항목이 변경 되 면 계층 이벤트 시스템은 이벤트를 발생 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 하지만 이벤트는 발생 하지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> . 따라서 플랫폼 프로젝트에서 파일의 이름을 바꾸면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 및가 모두 제공 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 되지만 공유 프로젝트에서 파일의 이름을 바꾸는 경우에만 표시 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 됩니다.
 
       프로젝트 항목의 변경 내용을 추적 하기 위해 DTE 프로젝트 항목 이벤트 (에 있음)를 처리할 수 있습니다 <xref:EnvDTE.ProjectItemsEventsClass> . 그러나 많은 수의 이벤트를 처리 하는 경우에서 이벤트를 처리 하는 더 나은 성능을 얻을 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> . 이 연습에서는 계층 이벤트 및 DTE 이벤트만 표시 합니다. 이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트에 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에서 한 파일의 이름을 바꾸고 플랫폼 프로젝트에서 다른 파일의 이름을 바꾸면 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 확인할 수 있습니다.
 
       이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트에 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에서 한 파일의 이름을 바꾸고 플랫폼 프로젝트에서 다른 파일의 이름을 바꾸면 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 확인할 수 있습니다.
 
-2. 이벤트 수신기를 추가 합니다. 프로젝트에 새 클래스 파일을 추가 하 고 *HierarchyEventListener.cs*를 호출 합니다.
+2. 이벤트 수신기를 추가 합니다. 프로젝트에 새 클래스 파일을 추가 하 고 *HierarchyEventListener.cs* 를 호출 합니다.
 
 3. *HierarchyEventListener.cs* 파일을 열고 다음 using 지시문을 추가 합니다.
 
@@ -549,7 +551,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱을 만들고 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출**을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 공유 프로젝트의 첫 번째 항목 이름 ( *app.xaml* 파일이 될 것으로 간주 됨)은 변경 해야 하며 이벤트가 발생 한 것을 확인 해야 합니다 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . 이 경우 *.xaml* 의 이름을 바꾸면 *App.xaml.cs* 의 이름도 변경 되기 때문에 4 개의 이벤트 (각 플랫폼 프로젝트에 대해 2 개)가 표시 되어야 합니다. DTE 이벤트는 공유 프로젝트의 항목을 추적 하지 않습니다. 두 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 (플랫폼 프로젝트 마다 하나씩)가 표시 되지만 이벤트는 표시 되지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> .
+11. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱을 만들고 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출** 을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 공유 프로젝트의 첫 번째 항목 이름 ( *app.xaml* 파일이 될 것으로 간주 됨)은 변경 해야 하며 이벤트가 발생 한 것을 확인 해야 합니다 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . 이 경우 *.xaml* 의 이름을 바꾸면 *App.xaml.cs* 의 이름도 변경 되기 때문에 4 개의 이벤트 (각 플랫폼 프로젝트에 대해 2 개)가 표시 되어야 합니다. DTE 이벤트는 공유 프로젝트의 항목을 추적 하지 않습니다. 두 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 (플랫폼 프로젝트 마다 하나씩)가 표시 되지만 이벤트는 표시 되지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> .
 
 12. 이제 플랫폼 프로젝트에서 파일 이름을 바꾸고, 발생 하는 이벤트의 차이를 확인할 수 있습니다. 를 호출한 후에 다음 코드를 추가 `ShowMessageBox` `ModifyFileName` 합니다.
 
@@ -566,4 +568,4 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 프로젝트를 만들고 **도구** 메뉴로 이동한 다음 **TestUniversalProject 호출**을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 플랫폼 프로젝트의 파일 이름이 변경 되 면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 이벤트와 이벤트가 모두 표시 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> . 파일을 변경 해도 다른 파일은 변경 되지 않으며 플랫폼 프로젝트의 항목에 대 한 변경 내용이 어디에서 나 전파 되지 않기 때문에 각 이벤트는 하나만 있습니다.
+13. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 프로젝트를 만들고 **도구** 메뉴로 이동한 다음 **TestUniversalProject 호출** 을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 플랫폼 프로젝트의 파일 이름이 변경 되 면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 이벤트와 이벤트가 모두 표시 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> . 파일을 변경 해도 다른 파일은 변경 되지 않으며 플랫폼 프로젝트의 항목에 대 한 변경 내용이 어디에서 나 전파 되지 않기 때문에 각 이벤트는 하나만 있습니다.
