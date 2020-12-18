@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508180"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527927"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -46,16 +46,16 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
 1. Visual Studio 2017을 엽니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다.
-   (또는 **Ctrl**+**Shift**+**N**을 누릅니다).
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다.
+   (또는 **Ctrl**+**Shift**+**N** 을 누릅니다).
 
-3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **C#** 을 확장한 다음, **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음, 파일 이름을 ***Calculator***로 지정합니다.
+3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **C#** 을 확장한 다음, **.NET Core** 를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음, 파일 이름을 *_Calculator_* 로 지정합니다.
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 콘솔 앱(.NET Core) 프로젝트 템플릿](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>(선택 사항) 워크로드 추가
 
-**콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우, **.NET Core 플랫폼 간 개발** 워크로드를 추가하여 얻을 수 있습니다. 방법은 다음과 같습니다.
+콘솔 앱(.NET Core) 프로젝트 템플릿이 표시되지 않는 경우, **.NET Core 플랫폼 간 개발** 워크로드를 추가하여 얻을 수 있습니다. 방법은 다음과 같습니다.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>옵션 1: 새 프로젝트 대화 상자 사용
 
@@ -63,15 +63,15 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
    ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 선택](./media/csharp-open-visual-studio-installer-generic-dark.png)
 
-1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
    ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](./media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>옵션 2: 도구 메뉴 모음 사용
 
-1. **새 프로젝트** 대화 상자를 취소하고 상단 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택합니다.
+1. **새 프로젝트** 대화 상자를 취소하고 상단 메뉴 모음에서 **도구** > **도구 및 기능 가져오기** 를 선택합니다.
 
-1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
 ::: moniker-end
 
@@ -79,13 +79,13 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
 1. Visual Studio 2019를 엽니다.
 
-1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
    !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔*을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows**를 선택합니다. 
+1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음**을 선택합니다.
+   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
 
    ![콘솔 앱(.NET Framework)에 대한 C# 템플릿을 선택합니다.](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
@@ -98,9 +98,9 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
    >
    > ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
+   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *계산기*를 입력합니다. 그런 다음, **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *계산기* 를 입력합니다. 그런 다음, **만들기** 를 선택합니다.
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 '계산기'로 지정합니다.](./media/vs-2019/csharp-name-your-calculator-project.png)
 
@@ -139,11 +139,11 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
     ![Visual Studio IDE에서 IntelliSense 자동 완성 기능을 보여주는 정수 수식 코드의 애니메이션](./media/integer-math-intellisense.gif)
 
-1. **계산기** 옆의 녹색 **시작** 단추를 선택하여 프로그램을 빌드하고 실행하거나 **F5**를 누릅니다.
+1. **계산기** 옆의 녹색 **시작** 단추를 선택하여 프로그램을 빌드하고 실행하거나 **F5** 를 누릅니다.
 
    ![계산기 단추를 선택하여 도구 모음에서 앱을 실행합니다.](./media/csharp-console-calculator-button.png)
 
-   **161**인 42 + 119의 합계를 표시하는 콘솔 창이 열립니다.
+   **161** 인 42 + 119의 합계를 표시하는 콘솔 창이 열립니다.
 
     ![정수 수식의 결과를 보여주는 콘솔 창](./media/csharp-console-integer-math.png)
 
@@ -215,7 +215,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
     }
     ```
 
-1. 프로그램을 실행할 **계산기**를 선택하거나 **F5** 키를 누릅니다.
+1. 프로그램을 실행할 **계산기** 를 선택하거나 **F5** 키를 누릅니다.
 
    ![계산기 단추를 선택하여 도구 모음에서 앱을 실행합니다.](./media/csharp-console-calculator-button.png)
 
@@ -241,7 +241,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 10진수를 처리하도록 코드를 수정해 보겠습니다.
 
-1. **Ctrl** + **H**를 눌러 **찾기 및 바꾸기** 컨트롤을 엽니다.
+1. **Ctrl** + **H** 를 눌러 **찾기 및 바꾸기** 컨트롤을 엽니다.
 
 1. `int` 변수의 각 인스턴스를 `float`로 변경합니다.
 
@@ -249,7 +249,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
     ![int 변수를 float로 변경하는 방법을 보여 주는 찾기 및 바꾸기 컨트롤의 애니메이션](./media/find-replace-control-animation.gif)
 
-1. 계산기 앱을 다시 실행하고 숫자 **42**를 숫자 **119**로 나눕니다.
+1. 계산기 앱을 다시 실행하고 숫자 **42** 를 숫자 **119** 로 나눕니다.
 
    이제 앱이 0 대신 10진수 숫자를 반환합니다.
 
@@ -259,7 +259,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 1. **찾기 및 바꾸기** 컨트롤(**Ctrl** + **H**)을 사용하여 `float` 변수의 각 인스턴스를 `double`로 변경하고 `Convert.ToInt32` 메서드의 각 인스턴스를 `Convert.ToDouble`로 변경합니다.
 
-1. 계산기 앱을 실행하고 숫자 **42.5**를 숫자 **119.75**로 나눕니다.
+1. 계산기 앱을 실행하고 숫자 **42.5** 를 숫자 **119.75** 로 나눕니다.
 
    이제 앱이 10진수 값을 허용하고 해당 결과로 더 긴 10진수 숫자를 반환합니다.
 
@@ -311,7 +311,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 이제 숫자를 0으로 나누면 앱은 다른 숫자를 요구할 것입니다. 더 나은 기능: 0이 아닌 숫자를 입력할 때까지 요청이 중지되지 않습니다.
 
-   ![Visual Studio 코드 편집기에서 0으로 나누기 오류가 표시됩니다.](./media/csharp-console-calculator-dividebyzero.png)
+   ![0으로 나누기 오류를 수정](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>"format" 오류 해결
 
@@ -456,9 +456,9 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
     }
     ```
 
-1. 프로그램을 실행할 **계산기**를 선택하거나 **F5** 키를 누릅니다.
+1. 프로그램을 실행할 **계산기** 를 선택하거나 **F5** 키를 누릅니다.
 
-1. 프롬프트에 따라 숫자 **42**를 숫자 **119**로 나눕니다. 앱이 다음 스크린샷과 유사하게 표시될 것입니다.
+1. 프롬프트에 따라 숫자 **42** 를 숫자 **119** 로 나눕니다. 앱이 다음 스크린샷과 유사하게 표시될 것입니다.
 
     ![잘못된 입력에 대해 수행할 작업과 오류 처리에 대한 프롬프트를 포함하는 리팩터링된 계산기 앱을 보여주는 콘솔 창](./media/csharp-console-calculator-refactored.png)
 
@@ -472,7 +472,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
    ![Visual Studio에서 출력 창 닫기](./media/csharp-calculator-close-output-pane.png)
 
-1. Visual Studio에서 **Ctrl**+**S**를 눌러 앱을 저장합니다.
+1. Visual Studio에서 **Ctrl**+**S** 를 눌러 앱을 저장합니다.
 
 1. Visual Studio를 닫습니다.
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>다음 단계
 
+:::moniker range="vs-2017"
+
+추가 자습서를 계속 진행합니다.
+
+> [!div class="nextstepaction"]
+> [C# 자습서](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Visual Studio IDE 둘러보기](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 이 자습서의 두 번째 부분을 진행합니다.
 
 > [!div class="nextstepaction"]
 > [2부로 계속](tutorial-console-part-2.md)
+:::moniker-end
 
 ## <a name="see-also"></a>참조
 
