@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 게시 도구를 사용하여 앱 게시 옵션 자세히 알아보기
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434495"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683925"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>폴더, IIS, Azure 또는 다른 대상에 앱 배포
 
@@ -221,7 +221,7 @@ IIS의 ASP.NET Core 문제 해결에 관한 도움말은 [Azure App Service 및 
 
 ## <a name="import-profile"></a>프로필 가져오기
 
-IIS 또는 Azure App Service에 게시할 때 프로필을 가져올 수 있습니다. 게시 설정 파일( *\*.publishsettings* )을 사용하여 배포를 구성할 수 있습니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
+IIS 또는 Azure App Service에 게시할 때 프로필을 가져올 수 있습니다. 게시 설정 파일( *\*.publishsettings*)을 사용하여 배포를 구성할 수 있습니다. 게시 설정 파일은 IIS 또는 Azure App Service에서 만들어지거나 수동으로 만들어질 수 있습니다. 그런 다음, Visual Studio로 가져올 수 있습니다.
 
 게시 설정 파일 사용 시, 각 배포 프로필을 수동으로 구성하는 것에 비해 배포 구성이 간소화되며 팀 환경에서의 효율성이 증가합니다.
 
