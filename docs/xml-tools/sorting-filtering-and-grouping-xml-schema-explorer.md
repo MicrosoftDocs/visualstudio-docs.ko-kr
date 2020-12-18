@@ -1,5 +1,5 @@
 ---
-title: XML 스키마 탐색기에서 정렬, 필터링 및 그룹화
+title: 정렬, 필터링 및 그룹화
 description: XML 스키마 탐색기 도구 모음의 정렬, 필터링 및 그룹화 옵션 메뉴에서 사용할 수 있는 옵션에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 41f0aff39350b0307db6b02a148fb70022fb51ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351494"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996255"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>정렬, 필터링 및 그룹화(XML 스키마 탐색기)
 

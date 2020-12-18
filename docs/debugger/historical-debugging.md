@@ -1,5 +1,7 @@
 ---
 title: 기록 디버깅 | Microsoft Docs
+description: 실행을 앞뒤로 이동하면서 앱의 상태를 검사하여 앱 문제를 해결합니다. Intellitrace는 이 기능을 위해 정보를 수집합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38166f777153206ad4b862ac473226aecdff4147
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895171"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398547"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>기록 디버깅(C#, Visual Basic, C++)
 

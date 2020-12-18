@@ -1,5 +1,7 @@
 ---
 title: '연습: 그래픽 정보 캡처 | Microsoft Docs'
+description: Visual Studio 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 수동으로 캡처하는 방법을 보여 줍니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3acd9df9dbb5a430171ae7a283bbf4292e07e26a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734735"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994981"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>연습: 그래픽 정보 캡처
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 Direct3D 앱에서 그래픽 정보를 수동으로 캡처하는 방법을 보여 줍니다.
@@ -31,15 +33,15 @@ ms.locfileid: "72734735"
 
 1. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 그래픽 정보를 캡처하려는 앱용 프로젝트 또는 솔루션 파일을 로드합니다.
 
-2. 그래픽 진단 도구 모음에서 **진단 시작**을 선택합니다.
+2. 그래픽 진단 도구 모음에서 **진단 시작** 을 선택합니다.
 
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>프로젝트 또는 솔루션을 로드하지 않고 그래픽 정보 캡처를 사용하도록 설정하려면
 
-1. 메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션**을 선택합니다. **프로젝트 열기** 대화 상자가 나타납니다.
+1. 메뉴 모음에서 **파일**, **열기**, **프로젝트/솔루션** 을 선택합니다. **프로젝트 열기** 대화 상자가 나타납니다.
 
-2. 프로젝트 또는 솔루션 파일 대신, 그래픽 정보를 캡처할 앱용 실행 파일을 지정한 후 **열기**를 선택합니다.
+2. 프로젝트 또는 솔루션 파일 대신, 그래픽 정보를 캡처할 앱용 실행 파일을 지정한 후 **열기** 를 선택합니다.
 
-3. 메뉴 모음에서 **디버그**, **그래픽**, **진단 시작**을 선택합니다.
+3. 메뉴 모음에서 **디버그**, **그래픽**, **진단 시작** 을 선택합니다.
 
    응용 프로그램을 시작하고 프레임을 렌더링한 후 그래픽 정보를 캡처할 수 있습니다.
 
@@ -49,7 +51,7 @@ ms.locfileid: "72734735"
 
    또는
 
-   앱에 포커스가 있는 상태에서 **Print Screen**을 누릅니다.
+   앱에 포커스가 있는 상태에서 **Print Screen** 을 누릅니다.
 
   프레임에 대한 정보를 캡처할 때마다 그래픽 진단 기능은 Direct3D 이벤트와 연결된 상태를 기록하고 그래픽 로그에 해당 데이터를 추가합니다. 각 그래픽 진단 세션에 대해 새 그래픽 로그가 생성됩니다. 그래픽 로그에 관한 자세한 내용은 [개요](overview-of-visual-studio-graphics-diagnostics.md)를 참조하세요.
 

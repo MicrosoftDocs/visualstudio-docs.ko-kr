@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098529"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -186,7 +186,7 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|소유자 범주는 단위 테스트 프레임워크에 의해 정의되며, 소유자의 문자열 값을 제공해야 합니다.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|우선순위 범주는 단위 테스트 프레임워크에 의해 정의되며, 우선순위의 정수 값을 제공해야 합니다.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 특성을 사용하면 값이 없는 범주를 제공할 수 있습니다.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 특성을 사용하면 단위 테스트의 범주를 지정할 수 있습니다.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 특성을 사용하여 특성(trait) 범주/값 쌍을 정의할 수 있습니다.|
 
 
@@ -234,7 +234,16 @@ Visual Studio 2019 버전 16.7부터 도구 모음에서 **편집** 단추를 �
 
 ![재생 목록 xml 파일](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-특성의 재생 목록을 만들려면 아래 형식을 사용하세요. `TestCategory` 이름과 `[Value]` 사이에 공백이 있어야 합니다.
+특성의 재생 목록을 만들려면 MSTest에 다음 형식을 사용합니다.
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+xUnit에는 다음 형식을 사용합니다. `TestCategory` 이름과 `[Value]` 사이에 공백이 있어야 합니다.
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">

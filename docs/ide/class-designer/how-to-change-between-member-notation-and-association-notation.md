@@ -1,6 +1,6 @@
 ---
-title: 멤버 및 연결 표시 간 변경(클래스 디자이너)
-description: 클래스 다이어그램이 두 형식 간 연결 관계를 나타내는 방법을 멤버 표기법에서 연결 표기법으로, 또는 그 반대로 변경하는 방법을 알아봅니다.
+title: 멤버 및 연결 표시 간 변경
+description: 클래스 디자이너에서 클래스 다이어그램이 두 형식 사이의 연결 관계를 나타내는 방법을 멤버 표기법에서 연결 표기법으로, 또는 그 반대로 변경하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901663"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933572"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>방법: 클래스 디자이너에서 멤버 표시와 연결 표시 간 변경
 

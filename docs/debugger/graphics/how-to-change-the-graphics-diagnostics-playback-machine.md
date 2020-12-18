@@ -1,5 +1,6 @@
 ---
 title: 그래픽 진단 재생 머신 변경
+description: 로컬 컴퓨터를 사용하거나 문제를 더 잘 재현하는 원격 컴퓨터 또는 디바이스를 사용하여 그래픽 로그에서 그래픽 정보를 재생합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810694"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995072"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>방법: 그래픽 진단 재생 머신 변경
 로컬 머신을 사용하거나 원격 머신 또는 디바이스를 사용하여 그래픽 정보를 재생할 수 있습니다.
@@ -28,7 +29,7 @@ ms.locfileid: "90810694"
 
 2. **수동 구성** 아래 **주소** 속성에 `localhost`을 입력합니다.
 
-3. **인증 모드** 속성을 **없음**으로 설정합니다.
+3. **인증 모드** 속성을 **없음** 으로 설정합니다.
 
 4. **선택** 단추를 선택합니다.
 
@@ -40,9 +41,9 @@ ms.locfileid: "90810694"
 
 3. 재생 머신 연결을 보호하는 데 사용하려는 권한 부여 종류를 지정합니다.
 
-    - Windows 인증의 경우 **인증 모드** 속성을 **Windows**로 설정합니다.
+    - Windows 인증의 경우 **인증 모드** 속성을 **Windows** 로 설정합니다.
 
-    - 인증이 없는 경우 **인증 모드** 속성을 **없음**으로 설정합니다.
+    - 인증이 없는 경우 **인증 모드** 속성을 **없음** 으로 설정합니다.
 
 4. **선택** 단추를 선택합니다.
 

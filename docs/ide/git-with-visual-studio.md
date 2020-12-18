@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524085"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
@@ -187,9 +187,9 @@ Visual Studio의 병합 편집기는 들어오는 변경 내용, 현재 변경 �
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE에서 개인 설정 및 사용자 지정 설정을 선택할 수 있는 옵션 대화 상자 ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Visual Studio에서 레거시 팀 탐색기 환경을 사용하는 방법
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Visual Studio에서 전체 팀 탐색기 환경을 사용하는 방법
 
-새 Git 환경은 [버전 16.8](/visualstudio/releases/2019/release-notes/)부터 Visual Studio 2019의 기본 버전 제어 시스템입니다. 그러나 이 기능을 해제하려는 경우 해제할 수 있습니다. **도구** > **옵션** > **환경** > **미리 보기 기능** 으로 이동한 다음, **새 Git 사용자 환경** 확인란을 토글합니다. 그러면 레거시 팀 탐색기 환경으로 다시 전환됩니다.
+새 Git 환경은 [버전 16.8](/visualstudio/releases/2019/release-notes/)부터 Visual Studio 2019의 기본 버전 제어 시스템입니다. 그러나 이 기능을 해제하려는 경우 해제할 수 있습니다. **도구** > **옵션** > **환경** > **미리 보기 기능** 으로 이동한 다음, **새 Git 사용자 환경** 확인란을 토글합니다. 그러면 Git용 팀 탐색기 환경으로 다시 전환됩니다.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 옵션 대화 상자의 미리 보기 기능 섹션 ":::
 

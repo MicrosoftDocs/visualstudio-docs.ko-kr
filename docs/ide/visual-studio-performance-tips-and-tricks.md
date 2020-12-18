@@ -2,19 +2,19 @@
 title: 성능을 향상시키기 위한 팁
 description: 성능 향상을 위해 사용하지 않을 수 있는 특정 Visual Studio 기능을 최적화하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479617"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488182"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -71,7 +71,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
     CPU 프로파일링은 사용 후 해제하는 것이 좋습니다. 이 기능은 많은 리소스를 소비할 수 있습니다. CPU 프로파일링을 한 번 사용하면 이후 디버그 세션에서도 계속 사용되므로 작업을 마쳤으면 명시적으로 해제하는 것이 좋습니다. 진단 도구가 제공하는 기능이 필요하지 않은 경우 디버깅 중에 진단 도구를 해제하여 일부 리소스를 절약할 수 있습니다.
 
-    **진단 도구** 를 해제하려면 디버그 세션을 시작하고 **도구** > **옵션** > **진단 도구 사용** 을 선택한 후 옵션을 선택 취소합니다.
+    **진단 도구** 를 사용하지 않도록 설정하려면 디버깅 세션을 시작하고 **도구** > **옵션** > **디버깅** > **일반** 을 선택한 다음 **디버그하는 동안 진단 도구 사용** 옵션을 선택 취소합니다.
 
     자세한 내용은 [프로파일링 도구](../profiling/profiling-feature-tour.md)를 참조하세요.
 

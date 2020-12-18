@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878298"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362394"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -136,9 +136,9 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 ### <a name="git-productivity"></a>Git 생산성
 
-**16.8의 새로운 기능** Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. 지난 두 릴리스 기간 중 피드백에 따라 기능 집합을 구축하고 반복했습니다. 이제 새 환경은 모든 사용자에 대해 기본적으로 설정되어 있습니다. 새 Git 메뉴에서 리포지토리를 복제, 생성 또는 열 수 있습니다. 통합된 Git 도구 창을 사용하여 코드에 변경 내용을 커밋하고 푸시하며, 분기를 관리하고, 원격 리포지토리를 최신 상태로 유지하고, 병합 충돌을 해결합니다.
+**16.8의 새로운 기능**: Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. 지난 두 릴리스 기간 중 피드백에 따라 기능 집합을 구축하고 반복했습니다. 이제 새 환경은 모든 사용자에 대해 기본적으로 설정되어 있습니다. 새 Git 메뉴에서 리포지토리를 복제, 생성 또는 열 수 있습니다. 통합된 Git 도구 창을 사용하여 코드에 변경 내용을 커밋하고 푸시하며, 분기를 관리하고, 원격 리포지토리를 최신 상태로 유지하고, 병합 충돌을 해결합니다.
 
-자세한 내용은 [Visual Studio의 Git 생산성](git-with-visual-studio.md) 페이지를 참조하세요.
+자세한 내용은 [Visual Studio의 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 
    이제 새 Git 버전 제어 환경은 Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes/)에서 기본적으로 설정되어 있지만 최신 미리 보기 릴리스에서 환경을 개선하기 위해 기능을 계속 추가하고 있습니다.
 
-   자세한 내용은 [Visual Studio의 Git 생산성](git-with-visual-studio.md) 페이지를 참조하세요.
+   자세한 내용은 [Visual Studio의 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
 
 미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://aka.ms/vspreview/)** 페이지를 참조하세요.
 
@@ -240,6 +240,7 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 
 ## <a name="see-also"></a>참조
 
+* [Visual Studio 문서의 새로운 기능](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 릴리스 정보](/visualstudio/releases/2019/release-notes/)
 * [Mac용 Visual Studio 2019 릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)

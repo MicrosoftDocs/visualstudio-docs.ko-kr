@@ -1,5 +1,7 @@
 ---
 title: ActiveX 컨트롤 디버그 | Microsoft Docs
+Description: ActiveX 컨트롤을 디버그하는 방법을 알아봅니다. 프로젝트 속성 페이지에서 또는 디버깅을 시작할 때 수행할 수 있는 포함 실행 파일을 지정해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc15d42aa2984a7257687eeb051ce754bace9e81
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852167"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398677"
 ---
 # <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 
@@ -42,9 +44,9 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 
 1. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
-2. **보기** 메뉴에서 **속성 페이지**를 선택합니다.
+2. **보기** 메뉴에서 **속성 페이지** 를 선택합니다.
 
-3. **프로젝트 속성 페이지** 대화 상자에서 **구성 속성** 폴더를 열고 **디버깅**을 선택합니다.
+3. **프로젝트 속성 페이지** 대화 상자에서 **구성 속성** 폴더를 열고 **디버깅** 을 선택합니다.
 
 4. **디버깅** 범주에서 **명령** 속성을 찾습니다.
 
@@ -52,7 +54,7 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 
 6. Internet Explorer를 컨테이너로 지정하고 Active Desktop을 사용하는 경우에는 **명령 인수** 상자에 `/new`를 입력합니다.
 
-7. **확인**을 클릭합니다.
+7. **확인** 을 클릭합니다.
 
      **프로젝트 속성 페이지** 대화 상자에서 컨테이너를 지정하지 않은 경우에는 디버깅을 시작할 때 컨테이너를 지정할 수 있습니다. 디버깅을 시작하는 실행 명령을 선택하면 [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)가 나타납니다. 대화 상자에서 컨테이너의 경로 이름을 지정합니다.
 

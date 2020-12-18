@@ -1,5 +1,7 @@
 ---
 title: Init | Microsoft Docs
+description: VsgDbg의 Init() 메서드를 사용하여 그래픽 정보를 기록하는 그래픽 진단의 앱 내 구성 요소를 준비합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 094f4f3c64570a0af5396e903541c70a919cc0d3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735000"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996190"
 ---
 # <a name="init"></a>Init
 그래픽 정보를 그래픽 로그 파일에 캡처하고 기록하도록 그래픽 진단의 사용자 앱 구성 요소를 준비합니다.

@@ -1,5 +1,7 @@
 ---
 title: 절반/분기 텍스처 크기 변형 | Microsoft Docs
+description: 작은 텍스처가 성능을 크게 개선하면 GPU 텍스처 캐시의 메모리 대역폭이 부족하거나 비효율적으로 사용되는 있음을 나타냅니다. 텍스처 크기를 줄이는 것이 좋습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735388"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995150"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>절반/분기 텍스처 크기 변형
 렌더링 대상이 아닌 질감의 질감 크기를 줄입니다.

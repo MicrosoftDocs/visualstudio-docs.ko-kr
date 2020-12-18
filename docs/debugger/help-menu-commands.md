@@ -1,5 +1,7 @@
 ---
 title: 도움말 메뉴 명령 | Microsoft Docs
+description: Spy++ 도움말 메뉴에서 사용할 수 있는 명령을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 492062a5ba53eb277263e4284b74710786e13993
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895106"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398612"
 ---
 # <a name="help-menu-commands"></a>도움말 메뉴 명령
 **도움말** 메뉴는 도움말 파일을 여는 명령을 제공합니다.

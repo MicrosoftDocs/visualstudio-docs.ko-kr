@@ -11,12 +11,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 01fee6752bbbc5512e78f3daa313846300a77ca9
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
+  ms.openlocfilehash: d6683909bae824e10d37ab029a0a2d4110488ae8
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567135"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668627"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -205,4 +205,4 @@ additionalContent:
     - title: Docker 컨테이너를 사용하여 개발
       summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
-  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [문제 보고](../ide/feedback-options.md) - [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) - [문제 해결](/troubleshoot/visualstudio/welcome-visual-studio)'
+  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [문제 보고](../ide/feedback-options.md) - [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8) - [문제 해결](/troubleshoot/visualstudio/welcome-visual-studio)'

@@ -1,7 +1,7 @@
 ---
 title: 그래픽 진단 개요 | Microsoft Docs
-description: Visual Studio 그래픽 진단 개요
-ms.custom: seodec18
+description: Visual Studio 그래픽 진단은 Direct3D 작업을 기록하고 로그를 분석하여 렌더링 및 성능 문제를 해결하는 도구 집합입니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671408"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996138"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 개요
-Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중인 앱 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
+Visual Studio *그래픽 진단* 은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중인 앱 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>그래픽 진단을 사용하여 렌더링 문제 디버깅
- 그래픽이 많은 응용 프로그램에서 렌더링 문제를 디버깅하는 것은 디버거를 시작하고 몇몇 코드를 단계적으로 실행하는 것처럼 간단하지가 않습니다. 각 프레임에는 수십만 개의 고유한 픽셀이 생성되어 있고 상태, 데이터, 매개 변수 및 코드의 복잡한 집합에 따라 이러한 픽셀들 중 아마도 수 픽셀에만 진단하려는 문제가 발생할 것입니다. 각 픽셀을 생성하는 코드는 수백 개의 픽셀을 병렬로 처리하는 특수한 하드웨어에서 실행되므로 문제는 더욱 복잡해질 수 있습니다. 가벼운 스레드 코드에서조차 활용하기 어려운 일반적인 디버깅 도구와 기술은 많은 양의 데이터를 처리하는 경우에는 비효율적입니다.
+ 그래픽이 많은 애플리케이션에서 렌더링 문제를 디버깅하는 것은 디버거를 시작하고 몇몇 코드를 단계적으로 실행하는 것처럼 간단하지가 않습니다. 각 프레임에는 수십만 개의 고유한 픽셀이 생성되어 있고 상태, 데이터, 매개 변수 및 코드의 복잡한 집합에 따라 이러한 픽셀들 중 아마도 수 픽셀에만 진단하려는 문제가 발생할 것입니다. 각 픽셀을 생성하는 코드는 수백 개의 픽셀을 병렬로 처리하는 특수한 하드웨어에서 실행되므로 문제는 더욱 복잡해질 수 있습니다. 가벼운 스레드 코드에서조차 활용하기 어려운 일반적인 디버깅 도구와 기술은 많은 양의 데이터를 처리하는 경우에는 비효율적입니다.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 그래픽 진단 도구는 문제를 표시하는 시각적 아티팩트로 시작하여 애플리케이션 자체의 소스 코드에서 관련 셰이더 코드, 파이프라인 단계, 그리기 호출, 리소스 및 디바이스 상태에만 중점을 두고 문제의 원인을 추적함으로써 렌더링 문제를 찾도록 설계되었습니다.
 
@@ -32,7 +32,7 @@ Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제�
 > Visual Studio는 DirectX 12 게임용으로 Windows의 PIX를 권장합니다. [Windows의 PIX](https://aka.ms/PIXonWindows)는 DirectX 12를 완전히 지원하는 성능 조정 및 디버깅 도구입니다. [자세한 정보를 확인](visual-studio-graphics-diagnostics-directx-12.md)하거나 [여기서 다운로드](https://aka.ms/downloadPIX)하세요.
 
 
- Windows 10에서는 Direct3D 10 및 Direct3D 11과 상당히 다른 *Direct3D 12*가 도입되었습니다. 이러한 차이는 DirectX를 최신 그래픽 하드웨어에 맞게 다시 조정하고 모든 잠재력을 발휘할 수 있게 하지만 대규모 API 변경으로 인해 리소스 수명 및 경합을 관리하는 프로그래머의 책임도 커졌습니다. 차이는 있지만 Direct3D 12를 사용한 그래픽 진단은 Direct3D 11.2를 사용한 그래픽 진단과 기능 패리티를 유지합니다.
+ Windows 10에서는 Direct3D 10 및 Direct3D 11과 상당히 다른 *Direct3D 12* 가 도입되었습니다. 이러한 차이는 DirectX를 최신 그래픽 하드웨어에 맞게 다시 조정하고 모든 잠재력을 발휘할 수 있게 하지만 대규모 API 변경으로 인해 리소스 수명 및 경합을 관리하는 프로그래머의 책임도 커졌습니다. 차이는 있지만 Direct3D 12를 사용한 그래픽 진단은 Direct3D 11.2를 사용한 그래픽 진단과 기능 패리티를 유지합니다.
 
  Windows 10에서는 이전 버전의 Direct3D와 이러한 버전을 사용하는 게임 및 애플리케이션에 대한 지원도 유지됩니다. Visual Studio의 그래픽 진단은 Windows 10에서 Direct3D 10과 Direct3D 11을 계속 지원합니다.
 
@@ -64,7 +64,7 @@ Visual Studio *그래픽 진단*은 Direct3D 앱의 렌더링 및 성능 문제�
 
 #### <a name="to-open-the-directx-control-panel"></a>DirectX 제어판을 열려면
 
-- 메뉴 모음에서 **디버그**, **그래픽**, **DirectX 제어판**을 선택합니다.
+- 메뉴 모음에서 **디버그**, **그래픽**, **DirectX 제어판** 을 선택합니다.
 
 ## <a name="graphics-analyzer"></a>그래픽 분석기
  Visual Studio 그래픽 분석기는 이미 캡처한 프레임의 렌더링 및 성능 문제를 검사하기 위한 전용 인터페이스입니다. 그래픽 분석기 내에서 앱의 렌더링 동작을 탐색 및 이해하는 데 도움이 되는 여러 도구를 찾을 수 있습니다. 각 도구는 검사 중인 프레임에 대한 다른 종류의 정보를 노출하며, 도구를 함께 사용하여 프레임 버퍼의 해당 모양부터 렌더링 문제의 소스에 직관적으로 접근할 수 있습니다.

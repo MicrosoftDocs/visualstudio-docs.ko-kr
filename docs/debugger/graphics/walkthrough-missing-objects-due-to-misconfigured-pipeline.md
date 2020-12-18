@@ -1,5 +1,6 @@
 ---
 title: 잘못 구성된 파이프라인으로 인해 누락된 개체
+description: 잘못 구성된 파이프라인을 찾는 조사를 수행합니다. 그래픽 이벤트 목록, 그래픽 파이프라인 단계 및 그래픽 이벤트 호출 스택을 사용하는 방법을 보여 줍니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189851"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995018"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>연습: 잘못 구성된 파이프라인으로 인해 누락된 개체
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 도구를 사용하여 설정되지 않은 픽셀 셰이더로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.

@@ -1,5 +1,7 @@
 ---
 title: 참조(프로그래밍 방식 캡처) | Microsoft Docs
+description: 프로그래밍 방식 캡처 API를 사용하여 그래픽 진단의 캡처 기능을 프로그래밍 방식으로 제어합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30cf44d6d16da46e9d6f08ffae4971d35136db58
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895523"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996112"
 ---
 # <a name="reference-programmatic-capture"></a>참조(프로그램 방식 캡처)
 그래픽 진단에서는 프로그래밍 방식 캡처 API를 통해 해당 캡처 기능을 프로그래밍 방식으로 제어할 수 있습니다. 이 API를 사용하면 메시지를 전환하여 그래픽 진단 HUD(헤드업 디스플레이)에 추가하고, 그래픽 로그 파일을 초기화하고 만들며, 그래픽 정보를 캡처할 수 있습니다.

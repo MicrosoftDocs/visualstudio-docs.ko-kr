@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211177"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050831"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -24,10 +24,10 @@ ms.locfileid: "91211177"
 Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있습니다. 기본 제공되는 피드백 도구를 사용하면 Visual Studio 팀이 문제를 진단하고 해결하는 데 도움이 되는 진단 정보를 쉽게 추가할 수 있습니다. 문제를 보고하는 단계는 다음과 같습니다.
 
 1. **Visual Studio에서** 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다. 또한 **도움말** > **피드백 보내기** > **문제 보고** 메뉴에서 피드백 도구에 액세스할 수 있습니다.
-![Visual Studio 개발자 커뮤니티의 문제 보고 팝업](media/feedback-button.png) 또는 Visual Studio를 설치할 수 없거나 Visual Studio 내의 피드백 도구에 액세스할 수 없는 경우 **Visual Studio 설치 관리자**에서 문제를 보고합니다.  설치 관리자에서 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다.
+![Visual Studio 개발자 커뮤니티의 문제 보고 팝업](media/feedback-button.png) 또는 Visual Studio를 설치할 수 없거나 Visual Studio 내의 피드백 도구에 액세스할 수 없는 경우 **Visual Studio 설치 관리자** 에서 문제를 보고합니다.  설치 관리자에서 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다.
 ![Visual Studio 개발자 커뮤니티의 문제 보고 팝업](media/installer.png)
 
-1. **문제 신고**를 클릭하면 기본 브라우저가 열리고 Visual Studio에 로그인하는 데 사용하는 것과 동일한 계정으로 로그인됩니다.
+1. **문제 신고** 를 클릭하면 기본 브라우저가 열리고 Visual Studio에 로그인하는 데 사용하는 것과 동일한 계정으로 로그인됩니다.
 
    ![로그인하여 문제 보고](../ide/media/feedback-browser-top.png)
 
@@ -65,7 +65,7 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
 이슈에 중요한 정보가 누락된 경우 ‘추가 정보 필요’ 상태가 할당됩니다. Microsoft는 필요한 특정 정보를 포함하여 이슈에 댓글을 추가하며 사용자는 전자 메일 알림을 받게 됩니다. 사용자가 7일 이내에 정보를 제공하지 않으면 미리 알림이 전송됩니다. 그 후에는 14일 동안 활동이 없을 경우 티켓을 닫습니다.
 
-1. 전자 메일에 있는 문제 신고 링크를 따르거나 내 피드백으로 이동하여 **추가 정보 필요** 상태의 모든 신고를 확인합니다.
+1. 전자 메일에 있는 문제 신고 링크를 따르거나 홈페이지로 이동하여 **추가 정보 필요** 상태의 모든 보고를 확인합니다.
 
     ![내 피드백](../ide/media/feedback-my-feedback.png)
 
@@ -77,7 +77,7 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
 1. 요청한 Microsoft 엔지니어는 제공된 추가 정보에 대한 알림을 받습니다. 조사하는 데 충분한 정보가 있으면 문제 상태를 변경합니다. 그렇지 않으면 엔지니어도 추가 정보를 요청합니다.
 
-해당 요청은 **내 피드백** 화면에서 다른 모든 **문제** 및 **제안**에서 볼 수 있습니다.
+해당 요청은 **내 피드백** 화면에서 다른 모든 **문제** 및 **제안** 에서 볼 수 있습니다.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>솔루션 검색 또는 피드백 제공
 

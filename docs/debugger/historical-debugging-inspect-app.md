@@ -1,5 +1,7 @@
 ---
 title: 기록 디버깅을 사용하여 앱 검사 | Microsoft Docs
+description: IntelliTrace 기록 디버깅을 사용하여 C# 콘솔 애플리케이션에서 버그를 추적하는 조사를 수행합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350448"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398703"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Visual Studio에서 IntelliTrace 기록 디버깅을 사용하여 앱 검사(C#, Visual Basic, C++)
 
@@ -53,7 +55,7 @@ private static int AddInt(int add)
 
 `AddAll()`을 호출한 후 `resultInt`의 예상 값을 20으로 가정하겠습니다(`testInt`를 20배 증분한 결과). (또한 `AddInt()`에서 버그를 볼 수 없다고 가정하겠습니다.) 그러나 결과는 실제로 44입니다. `AddAll()`을 단계적으로 10회 실행하지 않고도 버그를 찾으려면 어떻게 할까요? 기록 디버깅을 사용하여 더 빠르고 쉽게 버그를 찾을 수 있습니다. 방법은 다음과 같습니다.
 
-1. **도구 > 옵션 > IntelliTrace > 일반**에서 IntelliTrace가 사용하도록 설정되어 있는지 확인하고 **IntelliTrace 이벤트 및 호출 정보**를 선택합니다. 이 옵션을 선택하지 않으면 탐색 여백(아래 설명)을 볼 수 없습니다.
+1. **도구 > 옵션 > IntelliTrace > 일반** 에서 IntelliTrace가 사용하도록 설정되어 있는지 확인하고 **IntelliTrace 이벤트 및 호출 정보** 를 선택합니다. 이 옵션을 선택하지 않으면 탐색 여백(아래 설명)을 볼 수 없습니다.
 
 2. `Console.WriteLine(resultInt);` 줄에 중단점을 설정합니다.
 

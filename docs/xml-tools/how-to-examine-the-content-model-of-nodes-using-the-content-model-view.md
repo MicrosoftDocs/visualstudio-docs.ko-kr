@@ -1,5 +1,5 @@
 ---
-title: XML 스키마 디자이너에서 콘텐츠 모델 뷰를 사용하여 노드 검사
+title: 노드의 콘텐츠 모델 검사
 description: XML 스키마 디자이너의 콘텐츠 모델 뷰를 사용하여 XML 스키마의 노드에 대한 콘텐츠 모델을 검사하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399511"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995280"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>방법: 콘텐츠 모델 뷰를 사용하여 노드의 콘텐츠 모델 검사
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>방법: 콘텐츠 모델 뷰를 사용하여 노드의 콘텐츠 모델 검사
 
-이 항목에서는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)를 사용하여 노드를 탐색하는 방법에 대해 설명합니다.
+이 항목에서는 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md)를 사용하여 노드를 탐색하는 방법을 설명합니다.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>콘텐츠 모델 뷰에서 새 XSD 파일을 만들고 루트 요소를 표시하려면
 

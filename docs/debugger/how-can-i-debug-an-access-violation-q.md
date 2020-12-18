@@ -1,6 +1,7 @@
 ---
 title: C++ 액세스 위반 디버그 | Microsoft Docs
-ms.custom: seodec18
+description: 둘 이상의 포인터가 후보일 경우 액세스 위반 문제 해결에 대한 팁을 알아봅니다. 최신 버전의 Visual Studio는 잘못된 포인터를 지명합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350422"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398573"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>C++ 액세스 위반을 디버그하려면 어떻게 해야 하나요?
 

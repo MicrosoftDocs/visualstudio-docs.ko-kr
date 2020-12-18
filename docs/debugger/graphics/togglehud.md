@@ -1,5 +1,7 @@
 ---
 title: ToggleHUD | Microsoft Docs
+description: VsgDbg의 ToggleHUD() 메서드를 사용하여 앱이 실행될 때 그래픽 진단 HUD(헤드업 디스플레이)를 표시할지 여부를 선택합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb05bb6a424b5639e0ee98e96c80315c51081ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 60bee5a89be0fc1503595a36cfc48a692711d40a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996073"
 ---
 # <a name="togglehud"></a>ToggleHUD
 그래픽 진단 *HUD*(Head-Up Display) 오버레이를 설정하거나 해제합니다.

@@ -1,6 +1,6 @@
 ---
-title: 'XML 스키마 디자이너: 그래프 뷰를 사용하여 스키마 집합 개요 가져오기'
-description: XML 스키마 탐색기에서 그래프 뷰를 사용하여 스키마 집합의 노드 및 이러한 노드 간 관계를 간략하게 보여 주는 방법을 알아봅니다.
+title: 스키마 집합의 개요 가져오기
+description: 'XML 스키마 디자이너: XML 스키마 탐색기에서 그래프 뷰를 사용하여 스키마 집합의 노드 및 이러한 노드 간 관계를 간략하게 보여 주는 방법을 알아봅니다.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398490"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995293"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>방법: 그래프 뷰를 사용하여 스키마 집합의 개요 가져오기
+# <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>방법: 그래프 뷰를 사용하여 스키마 집합 개요 가져오기
 
 이 항목에서는 [그래프 뷰](../xml-tools/graph-view.md)를 사용하여 스키마 집합의 노드 및 이러한 노드 간 관계를 간략하게 설명합니다.
 

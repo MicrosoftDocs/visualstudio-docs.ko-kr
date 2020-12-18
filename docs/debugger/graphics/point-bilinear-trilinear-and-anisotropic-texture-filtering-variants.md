@@ -1,5 +1,7 @@
 ---
 title: 점, 쌍선형, 3중 선형 및 이방성 질감 필터 변형
+description: 점, 쌍선형, 3중 선형 또는 이방성 텍스처 필터링 변형의 성능 비용이 중요한 경우 해당 필터링 사용이 비용 대비 가치가 있는지 고려할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407564"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996086"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Point, Bilinear, Trilinear 및 Anisotropic 텍스처 필터링 변형
 적절한 질감 샘플러에 대한 필터링 모드를 재정의합니다.

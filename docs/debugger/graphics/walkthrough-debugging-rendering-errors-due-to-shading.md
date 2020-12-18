@@ -1,5 +1,7 @@
 ---
 title: '연습: 음영으로 인한 렌더링 오류 디버그 | Microsoft Docs'
+description: 셰이더 버그를 찾는 조사를 수행합니다. 그래픽 픽셀 기록 및 HLSL 디버거를 비롯한 Visual Studio 그래픽 진단을 사용하는 방법을 보여 줍니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849377"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995085"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버그
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 셰이더 버그 때문에 색이 잘못 지정된 개체를 조사하는 방법을 보여 줍니다.
@@ -38,9 +40,9 @@ ms.locfileid: "62849377"
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>그래픽 로그에서 프레임을 검사하려면
 
-1. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 누락된 모델을 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. 새 그래픽 로그 문서 창이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에 나타납니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록**이 있습니다.
+1. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 누락된 모델을 보여 주는 프레임이 포함된 그래픽 로그를 로드합니다. 새 그래픽 로그 문서 창이 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에 나타납니다. 이 창의 맨 윗 부분에 선택한 프레임의 렌더링 대상 출력이 있습니다. 아래쪽에는 캡처된 각 프레임을 미리 보기 이미지로 표시하는 **프레임 목록** 이 있습니다.
 
-2. **프레임 목록**에서 개체의 모양이 올바르지 않은 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 문서 창은 다음 이미지와 같습니다.
+2. **프레임 목록** 에서 개체의 모양이 올바르지 않은 프레임을 선택합니다. 선택한 프레임을 반영하도록 렌더링 대상이 업데이트됩니다. 이 시나리오에서 그래픽 로그 문서 창은 다음 이미지와 같습니다.
 
     ![Visual Studio의 그래픽 로그 문서입니다.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
@@ -48,7 +50,7 @@ ms.locfileid: "62849377"
 
 #### <a name="to-examine-a-pixel"></a>픽셀을 검사하려면
 
-1. **그래픽 픽셀 기록** 창을 엽니다. **그래픽 진단** 도구 모음에서 **픽셀 기록**을 선택합니다.
+1. **그래픽 픽셀 기록** 창을 엽니다. **그래픽 진단** 도구 모음에서 **픽셀 기록** 을 선택합니다.
 
 2. 픽셀을 선택하여 검사합니다. 그래픽 로그 문서 창에서 색이 잘못 지정된 개체의 픽셀 중 하나를 선택합니다.
 
@@ -58,13 +60,13 @@ ms.locfileid: "62849377"
 
     ![픽셀 기록은 DrawIndexed 이벤트 하나를 표시합니다.](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
 
-    픽셀 셰이더의 결과는 완전히 불투명한 검은색(0, 0, 0, 1)입니다. **출력 병합기**가 이 픽셀 셰이더를 픽셀의 **이전** 색상과 결합하므로 **결과**가 완전히 불투명한 검은색이 되는 것입니다.
+    픽셀 셰이더의 결과는 완전히 불투명한 검은색(0, 0, 0, 1)입니다. **출력 병합기** 가 이 픽셀 셰이더를 픽셀의 **이전** 색상과 결합하므로 **결과** 가 완전히 불투명한 검은색이 되는 것입니다.
 
    색상이 잘못 지정된 픽셀을 검사하고 픽셀 셰이더 출력이 예상된 색이 아닌지 검색한 후에는 HLSL 디버거를 사용하여 픽셀 셰이더를 검사하고 개체 색상에 나타난 결과를 확인할 수 있습니다. 실행하는 동안 HLSL 디버거를 사용하여 HLSL 변수의 상태를 검사하고, HLSL 코드를 단계별로 진행하고, 문제 진단을 위한 중단점을 설정할 수 있습니다.
 
 #### <a name="to-examine-the-pixel-shader"></a>픽셀 셰이더를 검사하려면
 
-1. 픽셀 셰이더 디버깅을 시작합니다. **그래픽 픽셀 기록** 창의 개체 기본 형식에서 **픽셀 셰이더**옆에 있는 **디버깅 시작** 단추를 선택합니다.
+1. 픽셀 셰이더 디버깅을 시작합니다. **그래픽 픽셀 기록** 창의 개체 기본 형식에서 **픽셀 셰이더** 옆에 있는 **디버깅 시작** 단추를 선택합니다.
 
 2. 이 시나리오에서는 꼭지점 셰이더에서 들어온 색상만 픽셀 셰이더를 통과하므로 픽셀 셰이더가 문제의 원인이 아님을 쉽게 알 수 있습니다.
 
@@ -78,7 +80,7 @@ ms.locfileid: "62849377"
 
 #### <a name="to-examine-the-vertex-shader"></a>꼭지점 셰이더를 검사하려면
 
-1. 꼭지점 셰이더 디버깅을 시작합니다. **그래픽 픽셀 기록** 창의 개체 기본 형식에서 **꼭지점 셰이더**옆에 있는 **디버깅 시작** 단추를 선택합니다.
+1. 꼭지점 셰이더 디버깅을 시작합니다. **그래픽 픽셀 기록** 창의 개체 기본 형식에서 **꼭지점 셰이더** 옆에 있는 **디버깅 시작** 단추를 선택합니다.
 
 2. 꼭지점 셰이더의 출력 구조를 찾습니다. 이것이 픽셀 셰이더의 입력에 해당합니다. 이 시나리오에서 이 구조의 이름은 `output`입니다. 꼭짓점 셰이더 코드를 검사하고 사용자의 디버깅 활동으로 인해 `color` 구조의 `output` 멤버가 완전히 불투명한 검정색으로 명시적으로 설정되어 있는지 확인합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: Mip 맵 생성 변형 | Microsoft Docs
+description: Mip 맵 생성이 성능을 상당히 개선하면 Mip 맵을 활성화하지 않고 텍스처를 사용 중이고 텍스처 캐시를 최대한 활용하지 않고 있음을 나타냅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734897"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994969"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.

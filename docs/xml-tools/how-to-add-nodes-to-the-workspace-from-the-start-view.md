@@ -1,5 +1,5 @@
 ---
-title: XML 스키마 디자이너의 시작 뷰에서 작업 영역에 노드 추가
+title: 시작 뷰에서 작업 영역에 노드 추가
 description: 시작 뷰의 명령을 사용하여 XML 스키마 디자이너 작업 영역에 노드를 추가하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c456220ecf8fbe17ce65372c4f7904f54181fe2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b2a30297cd2ede7293929604046550f78427b2a0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049268"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995319"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>방법: 시작 뷰에서 작업 영역에 노드 추가
 
@@ -29,7 +29,7 @@ ms.locfileid: "93049268"
 
      시작 뷰가 나타납니다.
 
-     **스키마 집합 정보** 섹션에 두 개( **2** )의 **전역 복합 형식** 이 있는 것을 볼 수 있습니다.
+     **스키마 집합 정보** 섹션에 두 개(**2**)의 **전역 복합 형식** 이 있는 것을 볼 수 있습니다.
 
 3. **전역 복합 형식** 제목 오른쪽에 있는 **추가** 링크를 클릭합니다.
 

@@ -1,6 +1,7 @@
 ---
 title: 앱에서 단계별로 실행하는 경우 포커스 유지 | Microsoft Docs
-ms.custom: seodec18
+Description: 창 활성화 문제를 디버그할 때 프로그램에서 포커스가 손실되지 않도록 하려면 원격 디버깅을 사용합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350383"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398326"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>앱에서 단계별로 실행하는 경우 어떻게 포커스를 유지할 수 있습니까?
 ## <a name="description"></a>설명

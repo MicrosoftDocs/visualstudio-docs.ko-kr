@@ -9,12 +9,12 @@ metadata:
   ms.author: dominicn
   ms.date: 09/18/2019
   ms.topic: hub-page
-  ms.openlocfilehash: 3e04aa6b83fed4ae331ff101011dd88646d6a40d
-  ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
+  ms.openlocfilehash: cfd6fff8d0d1b8346494ad54cf9e767b802a84f4
+  ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "94567161"
+  ms.lasthandoff: 12/18/2020
+  ms.locfileid: "97668510"
 highlightedContent:
   items:
   - title: Mac용 Visual Studio 설치
@@ -158,4 +158,4 @@ additionalContent:
     - title: 버전 제어
       summary: Git 및 Subversion 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
       url: ~/version-control.md
-  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [문제 보고](~/report-a-problem.md) - [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/problem/post.html?space=41)'
+  footer: '[블로그](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/visualstudiomac) - [문제 보고](~/report-a-problem.md) - [개발자 커뮤니티](https://aka.ms/feedback/vsm-home)'

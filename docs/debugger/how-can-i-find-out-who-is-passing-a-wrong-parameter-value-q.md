@@ -1,6 +1,7 @@
 ---
 title: 무엇이 잘못된 매개 변수 값을 전달하는지 알아보기 | Microsoft Docs
-ms.custom: seodec18
+Description: 함수를 호출하고 잘못된 매개 변수 값을 전달하는 코드를 확인할 수 있습니다. 조건부 중단점을 사용하여 이 작업을 수행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd6aaa912a384acbb41c42bfa4785eda52ae78a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599875"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398313"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
@@ -39,7 +40,7 @@ ms.locfileid: "89599875"
 
 1. 함수 시작 부분에 위치 중단점을 설정합니다.
 
-2. 마우스 오른쪽 단추로 중단점을 클릭하고 **조건**을 선택합니다.
+2. 마우스 오른쪽 단추로 중단점을 클릭하고 **조건** 을 선택합니다.
 
 3. **중단점 조건** 대화 상자에서 **조건** 확인란을 클릭합니다. [고급 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)을 참조하세요.
 

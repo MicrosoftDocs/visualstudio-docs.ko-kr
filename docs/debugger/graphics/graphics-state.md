@@ -1,5 +1,7 @@
 ---
 title: 그래픽 상태 | Microsoft Docs
+description: 각 그리기 호출의 그래픽 상태를 확인하여 렌더링 문제를 해결합니다. 이전 호출에서 변경된 상태 부분이 강조 표시됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823767"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994016"
 ---
 # <a name="graphics-state"></a>그래픽 상태
 Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현재 이벤트 시간에 활성화된 그래픽 상태를 이해하는 데 도움이 됩니다.
@@ -43,12 +45,12 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
   - **고정된 상태 보기 표시**
 
 > [!IMPORTANT]
-> **고정된 상태 보기 표시**에 상태를 표시하려면 **API 입력 상태 표시** 또는 **논리 상태 표시** 보기에서 상태를 고정해야 합니다.
+> **고정된 상태 보기 표시** 에 상태를 표시하려면 **API 입력 상태 표시** 또는 **논리 상태 표시** 보기에서 상태를 고정해야 합니다.
 
 ### <a name="state-table-format"></a>상태 테이블 형식
  상태 창에는 여러 정보 열이 표시됩니다.
 
-|Column|설명|
+|Column|Description|
 |------------|-----------------|
 |이름|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> **API 입력 상태 보기** 및 **논리 상태 보기** 상태에서는 상태 간의 계층 관계를 표시하기 위해 이름이 들여쓰기됩니다.<br /><br /> **고정된 상태 보기** 상태에서는 정규화된 이름이 플랫 목록에 표시됩니다.|
 |값|상태 항목의 값입니다.|

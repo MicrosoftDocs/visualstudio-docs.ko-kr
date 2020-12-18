@@ -1,6 +1,7 @@
 ---
 title: 포인터가 메모리 주소를 손상하는지 알아보기 | Microsoft Docs
-ms.custom: seodec18
+Description: 포인터가 메모리를 손상시키는지 여부를 판단하기 위해 힙 손상을 검색할 수 있으며 데이터 중단점을 설정하여 값이 수정되는 방법을 확인할 수 있습니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075569815d55ea30f688c5ce86c56990fca03cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350357"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398366"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>포인터가 메모리 주소를 손상시키는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
