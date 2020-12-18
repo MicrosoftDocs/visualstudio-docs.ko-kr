@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: 솔루션 및 프로젝트
       items:
-        - name: 솔루션 및 프로젝트 작업
+        - name: 솔루션 및 프로젝트에 대한 자세한 정보
           href: ide/solutions-and-projects-in-visual-studio.md
         - name: 새 프로젝트 만들기
           href: ide/create-new-project.md
-        - name: 솔루션 및 프로젝트 만들기
+        - name: 솔루션 및 프로젝트 작업
           href: ide/creating-solutions-and-projects.md
         - name: 리포지토리에서 프로젝트 열기
           href: get-started/tutorial-open-project-from-repo.md
@@ -978,7 +978,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참고
+- name: 참조
   items:
     - name: 바로 가기 키
       items:
