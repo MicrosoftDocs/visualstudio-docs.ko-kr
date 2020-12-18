@@ -1,5 +1,6 @@
 ---
 title: '새 프로젝트 생성: 내부에서 2 부 | Microsoft Docs'
+description: 사용자 고유의 프로젝트 형식을 만들 때 Visual Studio IDE (통합 개발 환경)에서 발생 하는 상황에 대해 자세히 살펴보겠습니다 (2/2 부).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707016"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668848"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부 살펴보기, 2부
 
-[새 프로젝트 생성 시:](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) **새 프로젝트** 대화 상자를 채우는 방법에 대해 설명 합니다. **Visual c # Windows 응용 프로그램**을 선택 하 고 **이름** 및 **위치** 텍스트 상자를 채운 다음 확인을 클릭 했다고 가정해 보겠습니다.
+[새 프로젝트 생성 시:](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) **새 프로젝트** 대화 상자를 채우는 방법에 대해 설명 합니다. **Visual c # Windows 응용 프로그램** 을 선택 하 고 **이름** 및 **위치** 텍스트 상자를 채운 다음 확인을 클릭 했다고 가정해 보겠습니다.
 
 ## <a name="generating-the-solution-files"></a>솔루션 파일 생성
  응용 프로그램 템플릿을 선택 하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 해당 .vstemplate 파일의 압축을 풀고 해당 .vstemplate 파일을 열고이 파일의 XML 명령을 해석 하는 템플릿을 시작 합니다. 이러한 명령은 새 솔루션이 나 기존 솔루션에서 프로젝트 및 프로젝트 항목을 만듭니다.
@@ -62,13 +63,13 @@ namespace Simple
 }
 ```
 
- 템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../../ide/template-parameters.md)를 참조하세요.
+ 템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../../ide/template-parameters.md)를 참조 하세요.
 
 ## <a name="a-look-inside-a-vstemplate-file"></a>내에서 찾습니다. .Vstemplate 파일
  기본 .vstemplate 파일의 형식은 다음과 같습니다.
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  결과 Windows 응용 프로그램 폴더 구조는 다음과 같습니다.
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Visual Studio 솔루션 탐색기에서 ' Simple ' 솔루션에 대 한 Windows 응용 프로그램 폴더 구조의 스크린샷](../../extensibility/internals/media/simplesolution.png)
 
  템플릿의 첫 번째 및 유일한 \<Project> 태그는 다음과 같습니다.
 
@@ -154,7 +155,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [새 프로젝트 생성: 내부 살펴보기, 1부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

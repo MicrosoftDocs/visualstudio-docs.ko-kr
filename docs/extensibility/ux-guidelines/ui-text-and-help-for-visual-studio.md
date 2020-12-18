@@ -1,5 +1,6 @@
 ---
 title: Visual Studio에 대 한 UI 텍스트 및 도움말 | Microsoft Docs
+description: Visual Studio의 도움말 정보에 사용 되는 UI 텍스트 및 용어에 대해 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698292"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668601"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio의 UI 텍스트 및 도움말
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어
@@ -60,11 +61,11 @@ ms.locfileid: "80698292"
 #### <a name="supplemental-instructions"></a>추가 지침
  추가 지침은 사용자가 컨트롤 또는 컨트롤 그룹화를 이해 하는 데 도움이 되는 추가 정보를 제공 합니다. 여기에는 입력 컨트롤의 예상 형식을 이해 하는 데 필요한 힌트 텍스트가 포함 될 수도 있습니다. 추가 지침을 사용 하는 경우에만 사용 합니다. 사용자가 선택한 항목의 결과를 완전히 이해 하지 못할 가능성이 있는 경우에 대비 합니다.
 
- ![Visual Studio의 추가 텍스트](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![옵션 설정 변경의 영향을 설명 하는 아래 추가 텍스트가 포함 된 Internet Explorer 옵션 단추를 보여 주는 스크린샷](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Visual Studio의 추가 텍스트**
 
- ![Visual Studio의 추가 텍스트](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![각 소스 제어 시스템 옵션을 설명 하는 추가 텍스트를 보여 주는 Visual Studio의 소스 제어 선택 대화 상자 스크린샷](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Visual Studio의 추가 텍스트**
 
@@ -123,7 +124,7 @@ ms.locfileid: "80698292"
 
 - "여기" 라는 단어만 링크 하지 마십시오. 이는 하이퍼링크 된 단어만 음성으로 연결 되는 일부 화면 판독기의 경우 문제가 됩니다.
 
-     잘못 됨: " **여기**에서 Windows Azure Mobile Services 정보 찾기"
+     잘못 됨: " **여기** 에서 Windows Azure Mobile Services 정보 찾기"
 
      해결 방법: "Windows Azure Mobile Services에서 사용할 수 있는 가격 옵션은 무엇 인가요?"
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698292"
 
 - 컨트롤 레이블 대신:
 
-     ![Visual Studio의 힌트 텍스트](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     !["검색 솔루션 탐색기 (Ctrl +;)"를 읽는 컨트롤 레이블 대신 힌트 텍스트가 있는 드롭다운 컨트롤의 스크린샷](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - 동사를 사용 하 여 명령을 제공 합니다.
 
-     ![Visual Studio의 힌트 텍스트](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     !["사용자 이름 입력"을 읽는 컨트롤의 힌트 텍스트가 있는 텍스트 상자의 스크린샷](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - 필요한 항목을 나타내는 텍스트 포함:
 
-     ![Visual Studio의 힌트 텍스트](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![" \< Required"를 읽는 컨트롤의 힌트 텍스트가 있는 텍스트 상자의 스크린샷 \>](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>워터 마크 텍스트
  빈 디자인 화면에서 텍스트는 수행할 작업을 나타내고, 해당 하는 경우 다른 관련 창에 대 한 링크를 제공 해야 합니다.
@@ -155,12 +156,12 @@ ms.locfileid: "80698292"
 
 ### <a name="common-terminology"></a>일반적인 용어
 
-|용어|설명|의견|
+|용어|설명|설명|
 |----------|-----------------|-------------|
 |로그인/로그 아웃|웹 속성에 대 한 인증을 나타내기 위해 웹에서 동의어 처럼 자주 사용 하는 동사입니다. 클라이언트 내에서이를 한 번 사용 하 여 다른 모든 연결에서 사용할 수 없는 로밍 및 라이선스와 같은 더 높은 수준의 기능을 제공 하는 최상위 id를 제공 하는 IDE 사용자 연결의 로그인 및 로그 아웃에 대 한 최상위 개념으로 사용 합니다.|IDE 사용자는 최상위 IDE 사용자를 나타내므로 로그인/로그 아웃 동사를 나타내야 하는 유일한 기능입니다.|
 |연결/연결 끊기|기능이 온라인 서비스에 대 한 단일 연결을 유지 하는 위치에서 사용 합니다.|한 번에 하나의 활성 Azure 연결만 가질 수 있는 서버 탐색기 연결/연결 끊기의 예입니다.|
 |추가/제거|비 소거식. 목록에서 항목을 추가 하거나 제거 하는 경우에 사용 합니다.|TFS 연결 관리자 서버 목록 대화 상자는 추가/제거의 예입니다.|
-|삭제|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
+|DELETE|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
 
 ## <a name="error-messages"></a>오류 메시지
 
@@ -217,7 +218,7 @@ ms.locfileid: "80698292"
 ### <a name="components-of-a-well-written-error-message"></a>잘 작성 된 오류 메시지의 구성 요소
 
 #### <a name="use-the-shell-dialog-service-for-error-messages"></a>오류 메시지에는 shell 대화 상자 서비스를 사용 합니다.
- 셸 대화 상자 서비스를 사용 하면 개별 요소를 크게 변경 하지 않고 메시지의 모양, 특히 글꼴을 제어할 수 있습니다. **IErrorInfo** 메커니즘을 사용 하 고 **IVsUIShell:: Seterrorinfo/ReportErrorInfo**를 사용 하 여 보고 합니다.
+ 셸 대화 상자 서비스를 사용 하면 개별 요소를 크게 변경 하지 않고 메시지의 모양, 특히 글꼴을 제어할 수 있습니다. **IErrorInfo** 메커니즘을 사용 하 고 **IVsUIShell:: Seterrorinfo/ReportErrorInfo** 를 사용 하 여 보고 합니다.
 
 #### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>효과적이 고 적절 한 알림 프레젠테이션을 선택 합니다.
  데이터의 손실을 방지 하기 위해 즉각적인 조치가 필요한 경우에는 중요 한 경고가 있는 모달 대화 상자를 사용 합니다 (동기 알림). 중요 아이콘은 메시지를 읽지 않고 닫으면 부정적인 결과가 발생할 수 있는 상황에 대해 예약 됩니다. 데이터 손실은 경보 수준 응답이 필요한 중요 한 상황입니다. 중요 아이콘의 과도 한 desensitizes 사용자에 게 중요도를 부여 합니다. 오류 메시지의 정보를 제공 하는 경우 모달 대화 상자의 대안 (비동기 알림)을 고려 하십시오.
@@ -247,7 +248,7 @@ ms.locfileid: "80698292"
 
 - **Courteous.** 사용자를 원인 하거나 바보로 설정 하지 마세요. 악의적인 또는 비속어 (kill, execute, terminate, 치명적, 잘못 된 언어)를 사용 하지 마세요. 대문자 텍스트를 사용 하지 않습니다 .이 텍스트는 shouting으로 표시 되 고 읽을 수는 없습니다. 유머를 사용 하지 마세요.
 
-- **맞는.** 올바른 철자와 문법을 사용 합니다 (alphas 에서도). 오타가 전문적 및 당혹입니다.
+- **맞습니다.** 올바른 철자와 문법을 사용 합니다 (alphas 에서도). 오타가 전문적 및 당혹입니다.
 
 - **컨텍스트 적절 합니다.** 적절 한 단추 텍스트를 사용 합니다. "확인" 단추를 사용 하지 않고 대신 "Continue" 또는 "Yes/No"를 사용 합니다.
 
@@ -300,11 +301,11 @@ ms.locfileid: "80698292"
 ##### <a name="dialogs-created-through-the-environment"></a>환경을 통해 만든 대화 상자
  대부분의 셸 대화 상자는 **Vbdialogboxparam** 함수를 통해 생성 됩니다. 이 공유 함수는 대화 상자에서 **도움말** 단추를로 **이동 하는** 데 도움이 되도록 업데이트 되었습니다. 단추를 클릭 합니다.
 
- 구체적으로, **Vbdialogboxparam** 함수는 ID가 **idhelp** (9) 또는 label이 **도움말** 또는 **&도움말**인 단추의 대화 상자 템플릿을 찾습니다. 도움말 단추가 **있으면 해당 단추가** 숨겨지고 **WS_EX_CONTEXTHELP** 스타일이 대화 상자에 추가 됩니다. 단추를 클릭 합니다.
+ 구체적으로, **Vbdialogboxparam** 함수는 ID가 **idhelp** (9) 또는 label이 **도움말** 또는 **&도움말** 인 단추의 대화 상자 템플릿을 찾습니다. 도움말 단추가 **있으면 해당 단추가** 숨겨지고 **WS_EX_CONTEXTHELP** 스타일이 대화 상자에 추가 됩니다. 단추를 클릭 합니다.
 
- 대화 상자를 만들 때 대화 상자 프로시저를 스택으로 푸시하고 **DialogPreProc**이라는 전처리 대화 상자를 사용 하 여 대화 상자를 호출 합니다. **?** 단추를 클릭 하면 대화 상자에 **SC_CONTEXTHELP** **WM_SYSCOMMAND** 전송 됩니다. **DialogPreProc** 는이 명령을 캡처하여 원래 대화 상자 프로시저에 전달 되는 **WM_HELP** 메시지로 변경 합니다.
+ 대화 상자를 만들 때 대화 상자 프로시저를 스택으로 푸시하고 **DialogPreProc** 이라는 전처리 대화 상자를 사용 하 여 대화 상자를 호출 합니다. **?** 단추를 클릭 하면 대화 상자에 **SC_CONTEXTHELP** **WM_SYSCOMMAND** 전송 됩니다. **DialogPreProc** 는이 명령을 캡처하여 원래 대화 상자 프로시저에 전달 되는 **WM_HELP** 메시지로 변경 합니다.
 
- 대부분의 환경에서 만든 대화 상자에는 대화 상자에 대 한 도움말 단추가 있습니다. 대화 상자가 표시 되 면 도움말 단추가 자동으로 숨겨지고 **?** 단추가 작동 합니다. 그렇다면 **?** Windows에서 단추가 제거 되거나 변경 된 경우이 솔루션을 사용 하면 원래 도움말 단추로 빠르게 다시 이동할 수 있습니다.
+ 대부분의 환경에서 만든 대화 상자에는 대화 상자에 대 한 도움말 단추가 있습니다. 대화 상자가 표시 되 면 도움말 단추가 자동으로 숨겨지고 **?** 단추가 작동 합니다. 그렇다면  Windows에서 단추가 제거 되거나 변경 된 경우이 솔루션을 사용 하면 원래 도움말 단추로 빠르게 다시 이동할 수 있습니다.
 
  이 솔루션은 버그를 일으킬 수 있는 네 가지 가정을 만듭니다.
 
@@ -316,7 +317,7 @@ ms.locfileid: "80698292"
 
 - 대화 상자가 다른 대화 상자 내에 포함 되지 않습니다.
 
-  대화 상자가 msenv 내에 있고 **Vbdialogboxparam**을 사용 하지 않는 경우 고유한 처리기를 구현 하기 전에 **vbdialogboxparam** 활용을 조사 합니다.
+  대화 상자가 msenv 내에 있고 **Vbdialogboxparam** 을 사용 하지 않는 경우 고유한 처리기를 구현 하기 전에 **vbdialogboxparam** 활용을 조사 합니다.
 
 ##### <a name="dialogs-created-through-other-packages"></a>다른 패키지를 통해 만든 대화 상자
  Msenv 외부에 있는 대화에 대해 사용자 고유의 솔루션을 구현할 수 있습니다. VSPackage의 공유 대화 상자 클래스의 경우 단추를 제목 표시줄로 이동 하거나 각 대화 상자에 대 한 처리기를 구현 하는 것이 좋습니다. 다음 코드는 시작 하는 데 도움이 되는 구현의 기본 구조입니다.

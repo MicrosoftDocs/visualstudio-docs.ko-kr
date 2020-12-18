@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d4bc0417d30d64a05cc7f283784d3b23d9adee
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134029"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668874"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio에서 XAML 핫 다시 로드를 사용하여 XAML 코드 작성 및 실행 중인 XAML 코드 디버그
 
@@ -41,13 +41,13 @@ XAML 핫 다시 로드는 다음과 같은 시나리오에서 특히 유용 합�
 ![XAML 핫 다시 로드](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> Visual Studio XAML 핫 다시 로드는 현재 Visual Studio에서 응용 프로그램을 실행 하거나 디버거가 연결 된 Blend for Visual Studio ( **F5** 또는 **디버깅 시작** ) 하는 경우에만 지원 됩니다. [환경 변수를 수동으로 설정](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)하지 않는 한 [연결 프로그램 처리를](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) 사용 하 여이 환경을 사용 하도록 설정할 수 없습니다.
+> Visual Studio XAML 핫 다시 로드는 현재 Visual Studio에서 응용 프로그램을 실행 하거나 디버거가 연결 된 Blend for Visual Studio (**F5** 또는 **디버깅 시작**) 하는 경우에만 지원 됩니다. [환경 변수를 수동으로 설정](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)하지 않는 한 [연결 프로그램 처리를](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) 사용 하 여이 환경을 사용 하도록 설정할 수 없습니다.
 
 ## <a name="known-limitations"></a>알려진 제한 사항
 
 다음은 XAML 핫 다시 로드의 알려진 제한 사항입니다. 실행 되는 제한 사항을 해결 하려면 디버거를 중지 한 후 작업을 완료 합니다.
 
-|제한 사항|WPF|UWP|참고|
+|제한 사항|WPF|UWP|메모|
 |-|-|-|-|
 |앱이 실행 되는 동안 컨트롤에 이벤트 연결|지원되지 않음|지원 안 함|오류: *이벤트 실패 확인* 을 참조 하세요. WPF에서는 기존 이벤트 처리기를 참조할 수 있습니다. UWP 앱에서 기존 이벤트 처리기를 참조 하는 것은 지원 되지 않습니다.|
 |리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원됨|예제:를 `SolidColorBrush` 으로 사용할 리소스 사전에 추가 `StaticResource` 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 속성을 변경 `Source` 합니다.|
@@ -61,12 +61,12 @@ XAML 핫 다시 로드는 다음과 같은 시나리오에서 특히 유용 합�
 
 XAML 핫 다시 로드를 사용 하는 동안 다음 오류가 발생할 수 있습니다.
 
-|오류 메시지|설명|
+|오류 메시지|Description|
 |-|-|
 |이벤트 실패 확인|오류는 응용 프로그램이 실행 되는 동안 지원 되지 않는 컨트롤 중 하나에 이벤트를 연결 하려고 시도 하 고 있음을 나타냅니다.|
-|이 변경은 XAML 핫 다시 로드에서 지원 되지 않으며 디버깅 세션 중에는 적용 되지 않습니다.|오류는 XAML 핫 다시 로드에서 시도 중인 변경을 지원 하지 않음을 나타냅니다. 디버깅 세션을 중지 하 고, 변경 하 고 나 서, 디버깅 세션을 다시 시작 합니다. 지원 되지 않는 시나리오를 발견 한 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)에서 새로운 "기능 제안" 옵션을 사용 하세요. |
+|이 변경은 XAML 핫 다시 로드에서 지원 되지 않으며 디버깅 세션 중에는 적용 되지 않습니다.|오류는 XAML 핫 다시 로드에서 시도 중인 변경을 지원 하지 않음을 나타냅니다. 디버깅 세션을 중지 하 고, 변경 하 고 나 서, 디버깅 세션을 다시 시작 합니다. 지원 되지 않는 시나리오를 발견 한 경우 [Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에서 새로운 "기능 제안" 옵션을 사용 하세요. |
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [XAML 핫 다시 로드 문제 해결](xaml-hot-reload-troubleshooting.md)
 * [Xamarin.Forms용 XAML 핫 다시 로드](/xamarin/xamarin-forms/xaml/hot-reload)

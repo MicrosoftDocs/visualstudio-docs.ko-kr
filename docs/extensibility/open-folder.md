@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905968"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668640"
 ---
 # <a name="open-folder-extensibility"></a>폴더 열기 확장성
 
@@ -51,7 +51,7 @@ ms.locfileid: "85905968"
 
 ## <a name="feedback-comments-issues"></a>피드백, 의견, 문제
 
-폴더 열기와 `Microsoft.VisualStudio.Workspace.*` API는 현재 개발 중입니다. 예기치 않은 동작을 보게 되는 경우 해당 릴리스에 대한 알려진 문제를 확인하세요. [Developer Community](https://developercommunity.visualstudio.com)는 투표와 문제 제기에 있어 권장되는 장소입니다. 모든 피드백에 관해서는 구체적으로 문제를 설명하는 것이 좋습니다. 개발 대상인 Visual Studio 버전, 사용 중인 API(구현한 API 및 상호 작용하는 API), 예상 결과 및 실제 결과를 포함합니다. 가급적 devenv.exe 프로세스의 덤프를 포함합니다. 이 문서 및 관련 문서에 대한 피드백 제공은 GitHub의 문제 추적을 사용하세요.
+폴더 열기와 `Microsoft.VisualStudio.Workspace.*` API는 현재 개발 중입니다. 예기치 않은 동작을 보게 되는 경우 해당 릴리스에 대한 알려진 문제를 확인하세요. [Developer Community](https://aka.ms/feedback/suggest?space=8)는 투표와 문제 제기에 있어 권장되는 장소입니다. 모든 피드백에 관해서는 구체적으로 문제를 설명하는 것이 좋습니다. 개발 대상인 Visual Studio 버전, 사용 중인 API(구현한 API 및 상호 작용하는 API), 예상 결과 및 실제 결과를 포함합니다. 가급적 devenv.exe 프로세스의 덤프를 포함합니다. 이 문서 및 관련 문서에 대한 피드백 제공은 GitHub의 문제 추적을 사용하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

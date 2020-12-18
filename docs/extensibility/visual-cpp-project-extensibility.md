@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862464"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668705"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장성 및 도구 집합 통합
 
@@ -72,7 +72,7 @@ Visual C++ 프로젝트 시스템은 .vcxproj 파일에 사용 됩니다. 이 �
 
 ### <a name="add-a-new-platform-toolset"></a>새 플랫폼 도구 집합 추가
 
-기존 Win32 플랫폼에 대 한 새 도구 집합 (예: "mytoolset 집합")을 추가 하려면 *MyToolset* `$(VCTargetsPath)` * \\ 플랫폼 \\ Win32 \\ platformtoolsets 집합 \\ *아래에 mytoolset 집합 폴더를 만들고 여기에 *도구 집합* 및 *도구 집합* 파일을 만듭니다.
+기존 Win32 플랫폼에 대 한 새 도구 집합 (예: "mytoolset 집합")을 추가 하려면  `$(VCTargetsPath)` *\\ 플랫폼 \\ Win32 \\ platformtoolsets 집합 \\* 아래에 mytoolset 집합 폴더를 만들고 여기에 *도구 집합* 및 *도구 집합* 파일을 만듭니다.
 
 *Platformtoolsets 집합* 의 각 폴더 이름은 다음과 같이 **프로젝트 속성** 대화 상자에 지정 된 플랫폼에 대 한 사용 가능한 **플랫폼 도구 집합** 으로 나타납니다.
 
@@ -82,7 +82,7 @@ Visual C++ 프로젝트 시스템은 .vcxproj 파일에 사용 됩니다. 이 �
 
 ### <a name="add-a-new-platform"></a>새 플랫폼 추가
 
-새 플랫폼 (예: "myplatform")을 추가 *MyPlatform* 하려면 플랫폼 `$(VCTargetsPath)` * \\ \\ *아래에 myplatform 폴더를 만들고 해당 폴더에 *platform.string*, platform.string 및 *platform.string* 파일 *을*만듭니다. 또한 `$(VCTargetsPath)` * \\ 플랫폼 \\ *<strong><em>myplatform</em></strong>* \\ \\ platformtoolsets 집합* 폴더를 만들고 하나 이상의 도구 집합을 만듭니다.
+새 플랫폼 (예: "myplatform")을 추가  하려면 플랫폼 `$(VCTargetsPath)` *\\ \\* 아래에 myplatform 폴더를 만들고 해당 폴더에 *platform.string*, platform.string 및 *platform.string* 파일 *을* 만듭니다. 또한 `$(VCTargetsPath)` *\\ 플랫폼 \\*<strong><em>myplatform</em></strong>*\\ \\ platformtoolsets 집합* 폴더를 만들고 하나 이상의 도구 집합을 만듭니다.
 
 각에 대 한 Platform *폴더 아래의 모든 폴더 이름이* `$(ApplicationType)` `$(ApplicationTypeRevision)` IDE에서 프로젝트에 대해 사용 가능한 **플랫폼** 선택 항목으로 나타납니다.
 
@@ -90,7 +90,7 @@ Visual C++ 프로젝트 시스템은 .vcxproj 파일에 사용 됩니다. 이 �
 
 ### <a name="add-a-new-application-type"></a>새 응용 프로그램 유형 추가
 
-새 응용 프로그램 종류를 추가 하려면 *MyApplicationType* 응용 프로그램 종류 `$(VCTargetsPath)` * \\ \\ * 아래에서 myapplicationtype 폴더를 만들고 여기에 *기본값.* s t a t e r 파일을 만듭니다. 응용 프로그램 형식에는 하나 이상의 수정이 필요 하므로 `$(VCTargetsPath)` * \\ 응용 프로그램 유형 \\ myapplicationtype \\ 1.0* 폴더를 만들고 여기에 *기본값.* s t a t e r 파일을 만듭니다. 또한 `$(VCTargetsPath)` * \\ applicationtype \\ myapplicationtype \\ 1.0 \\ * platform 폴더를 만들고 하나 이상의 플랫폼을 만들어야 합니다.
+새 응용 프로그램 종류를 추가 하려면  응용 프로그램 종류 `$(VCTargetsPath)` *\\ \\* 아래에서 myapplicationtype 폴더를 만들고 여기에 *기본값.* s t a t e r 파일을 만듭니다. 응용 프로그램 형식에는 하나 이상의 수정이 필요 하므로 `$(VCTargetsPath)` *\\ 응용 프로그램 유형 \\ myapplicationtype \\ 1.0* 폴더를 만들고 여기에 *기본값.* s t a t e r 파일을 만듭니다. 또한 `$(VCTargetsPath)` *\\ applicationtype \\ myapplicationtype \\ 1.0 \\* platform 폴더를 만들고 하나 이상의 플랫폼을 만들어야 합니다.
 
 `$(ApplicationType)` 및 `$(ApplicationTypeRevision)` 속성은 사용자 인터페이스에 표시 되지 않습니다. 이러한 파일은 프로젝트 템플릿에 정의 되며 프로젝트를 만든 후에는 변경할 수 없습니다.
 
@@ -103,7 +103,7 @@ Microsoft c + + props 및 targets 파일에 대 한 가져오기의 단순화 �
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *기본값* \\ \* . *props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*응용 프로그램 유형* \\ `$(ApplicationType)` \\ *기본값. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*응용 프로그램* \\ `$(ApplicationType)` \\ 유형 `$(ApplicationTypeRevision)` \\ *기본값. props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*응용 프로그램* \\ `$(ApplicationType)` \\ 유형 `$(ApplicationTypeRevision)` \\ *Platforms* \\ `$(Platform)` 플랫폼 \\ *Platform.object. 기본값. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*응용 프로그램* \\ `$(ApplicationType)` \\ 유형 `$(ApplicationTypeRevision)` \\  \\ `$(Platform)` 플랫폼 \\ *Platform.object. 기본값. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *기본값* \\ \* . *props*
 
 Windows 데스크톱 프로젝트 `$(ApplicationType)` 는을 정의 하지 않으므로 가져오기만
@@ -111,7 +111,7 @@ Windows 데스크톱 프로젝트 `$(ApplicationType)` 는을 정의 하지 않�
 > `$(VCTargetsPath)`\\*Microsoft .Cpp. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *기본값* \\ \* . *props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms* \\ `$(Platform)` 플랫폼 \\ *Platform.object. 기본값. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\ \\ `$(Platform)` 플랫폼 \\ *Platform.object. 기본값. props* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *기본값* \\ \* . *props*
 
 속성을 사용 `$(_PlatformFolder)` 하 여 `$(Platform)` 플랫폼 폴더 위치를 저장 합니다. 이 속성은
@@ -171,7 +171,7 @@ Windows 데스크톱 앱의 경우
 
 ### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>도구 집합 관련 대상을 기본 c + + 빌드 프로세스에 통합
 
-기본 c + + 빌드 프로세스는 *CppCommon*에 정의 되어 있습니다. 특정 빌드 도구를 호출 하지 않는 대상입니다. 주 빌드 단계, 해당 순서 및 종속성을 지정 합니다.
+기본 c + + 빌드 프로세스는 *CppCommon* 에 정의 되어 있습니다. 특정 빌드 도구를 호출 하지 않는 대상입니다. 주 빌드 단계, 해당 순서 및 종속성을 지정 합니다.
 
 C + + 빌드에는 다음 대상으로 표시 되는 세 가지 주요 단계가 있습니다.
 
@@ -227,13 +227,13 @@ C + + 빌드에는 다음 대상으로 표시 되는 세 가지 주요 단계가
 </Target>
 ```
 
-`ClCompile` 및 기타 빌드 도구 관련 대상은 *CppBuild*에서 빈 대상으로 정의 됩니다.
+`ClCompile` 및 기타 빌드 도구 관련 대상은 *CppBuild* 에서 빈 대상으로 정의 됩니다.
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-`ClCompile`대상은 비어 있으므로 도구 집합에 의해 재정의 되지 않으면 실제 빌드 작업이 수행 되지 않습니다. 도구 집합 대상은 대상을 재정의할 수 있습니다. 즉 `ClCompile` , CppBuild를 가져온 후 다른 정의를 포함할 수 있습니다 `ClCompile` . *Microsoft.CppBuild.targets*
+`ClCompile`대상은 비어 있으므로 도구 집합에 의해 재정의 되지 않으면 실제 빌드 작업이 수행 되지 않습니다. 도구 집합 대상은 대상을 재정의할 수 있습니다. 즉 `ClCompile` , CppBuild를 가져온 후 다른 정의를 포함할 수 있습니다 `ClCompile` . 
 
 ```xml
 <Target Name="ClCompile"
@@ -285,13 +285,13 @@ Microsoft.Cpp.Common.Tasks.dll는 다음과 같은 작업을 구현 합니다.
 
    - Xaml 작업 (사용자 지정 빌드 규칙)
 
-     Xaml 작업 선언의 한 예를 보려면 `$(VCTargetsPath)` \\ *buildcustomizations 지정* \\ *masm.xml*를 참조 하 고 해당 사용법에 대해 `$(VCTargetsPath)` \\ *buildcustomizations 지정* \\ *masm. 대상*을 참조 하세요.
+     Xaml 작업 선언의 한 예를 보려면 `$(VCTargetsPath)` \\ *buildcustomizations 지정* \\ *masm.xml* 를 참조 하 고 해당 사용법에 대해 `$(VCTargetsPath)` \\ *buildcustomizations 지정* \\ *masm. 대상* 을 참조 하세요.
 
    - [코드 작업](../msbuild/msbuild-inline-tasks.md)
 
 1. 더 나은 작업 성능을 원하는 경우 또는 보다 복잡 한 기능만 필요한 경우 일반 MSBuild [작업 쓰기](../msbuild/task-writing.md) 프로세스를 사용 합니다.
 
-   도구에 있는 모든 입력 및 출력이, 및 사례와 같이 도구 명령줄에 나열 되지 않으며, `CL` `MIDL` `RC` 자동 입력 및 출력 파일 추적과. tlog 파일을 만들려면 클래스에서 작업을 파생 시킵니다 `Microsoft.Build.CPPTasks.TrackedVCToolTask` . 현재 기본 [Tooltask](/dotnet/api/microsoft.build.utilities.tooltask) 클래스에 대 한 설명서가 있지만 클래스의 세부 정보에 대 한 예제 또는 설명서는 없습니다 `TrackedVCToolTask` . 특히 관심이 있는 경우 [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html)의 요청에 음성을 추가 합니다.
+   도구에 있는 모든 입력 및 출력이, 및 사례와 같이 도구 명령줄에 나열 되지 않으며, `CL` `MIDL` `RC` 자동 입력 및 출력 파일 추적과. tlog 파일을 만들려면 클래스에서 작업을 파생 시킵니다 `Microsoft.Build.CPPTasks.TrackedVCToolTask` . 현재 기본 [Tooltask](/dotnet/api/microsoft.build.utilities.tooltask) 클래스에 대 한 설명서가 있지만 클래스의 세부 정보에 대 한 예제 또는 설명서는 없습니다 `TrackedVCToolTask` . 특히 관심이 있는 경우 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=62)의 요청에 음성을 추가 합니다.
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>증분 빌드 및 최신 검사
 
@@ -304,11 +304,11 @@ Microsoft.Cpp.Common.Tasks.dll는 다음과 같은 작업을 구현 합니다.
 Microsoft.Build.CPPTasks.Common.dll `TrackedVCToolTask` 공용 추상 기본 클래스를 정의 합니다. 대부분의 네이티브 도구 작업은이 클래스에서 파생 됩니다.
 
 Visual Studio 2017 업데이트 15.8부터 `GetOutOfDateItems` Microsoft.Cpp.Common.Tasks.dll에 구현 된 작업을 사용 하 여 알려진 입력과 출력을 포함 하는 사용자 지정 대상에 대 한 tlog 파일을 생성할 수 있습니다.
-또는 작업을 사용 하 여 만들 수 있습니다 `WriteLinesToFile` . `_WriteMasmTlogs` `$(VCTargetsPath)` \\ 예제로 *buildcustomizations 지정*의 대상 \\ *masm.targets* 을 참조 하세요.
+또는 작업을 사용 하 여 만들 수 있습니다 `WriteLinesToFile` . `_WriteMasmTlogs` `$(VCTargetsPath)` \\ 예제로 *buildcustomizations 지정* 의 대상 \\  을 참조 하세요.
 
 ## <a name="tlog-files"></a>tlog 파일
 
-Tlog 파일에는 *읽기*, *쓰기*및 *명령줄*의 세 가지 유형이 있습니다. 읽기 및 쓰기 tlog 파일은 증분 빌드와 IDE의 최신 검사에 사용 됩니다. 명령줄 tlog 파일은 증분 빌드에서만 사용 됩니다.
+Tlog 파일에는 *읽기*, *쓰기* 및 *명령줄* 의 세 가지 유형이 있습니다. 읽기 및 쓰기 tlog 파일은 증분 빌드와 IDE의 최신 검사에 사용 됩니다. 명령줄 tlog 파일은 증분 빌드에서만 사용 됩니다.
 
 MSBuild는 다음과 같은 도우미 클래스를 제공 하 여 tlog 파일을 읽고 씁니다.
 
@@ -322,13 +322,13 @@ MSBuild는 다음과 같은 도우미 클래스를 제공 하 여 tlog 파일을
 
 ### <a name="read-tlog-format"></a>Tlog 형식 읽기
 
-*Read* Tlog 파일 ( \* . read \* . tlog)에는 원본 파일 및 해당 종속성에 대 한 정보가 포함 되어 있습니다.
+ Tlog 파일 ( \* . read \* . tlog)에는 원본 파일 및 해당 종속성에 대 한 정보가 포함 되어 있습니다.
 
 **^** 줄의 시작 부분에 있는 캐럿 ()은 하나 이상의 소스를 나타냅니다. 동일한 종속성을 공유 하는 원본은 세로 막대 ()로 구분 됩니다 **\|** .
 
 종속성 파일은 각각 별도의 줄에 있는 원본 뒤에 나열 됩니다. 모든 파일 이름은 전체 경로입니다.
 
-예를 들어 프로젝트 소스가 *F: \\ test \\ consoleapplication1.exe \\ consoleapplication1.exe*에 있는 것으로 가정 합니다. 원본 파일인 *Class1 .cpp*에는 다음이 포함 되어 있습니다.
+예를 들어 프로젝트 소스가 *F: \\ test \\ consoleapplication1.exe \\ consoleapplication1.exe* 에 있는 것으로 가정 합니다. 원본 파일인 *Class1 .cpp* 에는 다음이 포함 되어 있습니다.
 
 ```cpp
 #include "stdafx.h" //precompiled header
@@ -347,13 +347,13 @@ F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.H
 
 ### <a name="write-tlog-format"></a>Tlog 형식 작성
 
-*Write* Tlog ( \* . write ... \* tlog) 파일은 원본과 출력을 연결 합니다.
+ Tlog ( \* . write ... \* tlog) 파일은 원본과 출력을 연결 합니다.
 
 **^** 줄의 시작 부분에 있는 캐럿 ()은 하나 이상의 소스를 나타냅니다. 여러 소스는 세로 막대 ()로 구분 됩니다 **\|** .
 
 원본에서 빌드된 출력 파일은 각각 별도의 줄에 있는 소스 뒤에 나열 되어야 합니다. 모든 파일 이름은 전체 경로 여야 합니다.
 
-예를 들어 추가 *원본 파일이 ConsoleApplication 인 간단한*프로젝트의 경우 *에는 파일에* 다음이 포함 될 수 있습니다.
+예를 들어 추가 *원본 파일이 ConsoleApplication 인 간단한* 프로젝트의 경우 *에는 파일에* 다음이 포함 될 수 있습니다.
 
 ```tlog
 ^F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CLASS1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\STDAFX.OBJ
@@ -372,7 +372,7 @@ IDE에서 .vcxproj 프로젝트는 MSBuild 대상 집합을 사용 하 여 프�
 
 ### <a name="design-time-targets-for-intellisense-information"></a>IntelliSense 정보에 대 한 디자인 타임 대상
 
-.Vcxproj 프로젝트에 사용 되는 디자인 타임 대상은 `$(VCTargetsPath)` \\ *Microsoft .cpp designtime. .targets*에 정의 되어 있습니다.
+.Vcxproj 프로젝트에 사용 되는 디자인 타임 대상은 `$(VCTargetsPath)` \\ *Microsoft .cpp designtime. .targets* 에 정의 되어 있습니다.
 
 `GetClCommandLines`대상은 IntelliSense의 컴파일러 옵션을 수집 합니다.
 
@@ -397,25 +397,25 @@ IDE에서 .vcxproj 프로젝트는 MSBuild 대상 집합을 사용 하 여 프�
 msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuration=Debug;Platform=Win32;BuildingInsideVisualStudio=true;DesignTimebuild=true /t:\_PerfIntellisenseInfo /v:d /fl /fileloggerparameters:PerformanceSummary \*.vcxproj
 ```
 
-이 명령은 끝에 대상 및 작업에 대 한 성능 요약이 있는 자세한 빌드 로그 인 *msbuild.exe*를 생성 합니다.
+이 명령은 끝에 대상 및 작업에 대 한 성능 요약이 있는 자세한 빌드 로그 인 *msbuild.exe* 를 생성 합니다.
 
 `Condition ="'$(DesignTimeBuild)' != 'true'"`디자인 타임 빌드가 아닌 일반 빌드에만 적합 한 모든 작업에서를 사용 해야 합니다.
 
 ### <a name="design-time-targets-that-generate-sources"></a>소스를 생성 하는 디자인 타임 대상
 
-*이 기능은 데스크톱 네이티브 프로젝트에 대해 기본적으로 사용 하지 않도록 설정 되며 캐시 된 프로젝트에서는 현재 지원 되지*않습니다.
+*이 기능은 데스크톱 네이티브 프로젝트에 대해 기본적으로 사용 하지 않도록 설정 되며 캐시 된 프로젝트에서는 현재 지원 되지* 않습니다.
 
 `GeneratorTarget`프로젝트 항목에 대해 메타 데이터가 정의 된 경우 프로젝트가 로드 될 때와 소스 파일이 변경 될 때 대상이 자동으로 실행 됩니다.
 
 ::: moniker range="vs-2017"
 
-예를 들어 .xaml 파일에서 .cpp 또는 .h 파일을 자동으로 생성 하려면 `$(VSInstallDir)` \\ *MSBuild* \\ *microsoft* \\ *windowsxaml* \\ *v 15.0* \\ \* \\ *Microsoft.Windows.UI.Xaml.CPP.Targets* 파일에서 다음과 같은 엔터티를 정의 합니다.
+예를 들어 .xaml 파일에서 .cpp 또는 .h 파일을 자동으로 생성 하려면 `$(VSInstallDir)` \\ *MSBuild* \\ *microsoft* \\ *windowsxaml* \\ *v 15.0* \\ \* \\  파일에서 다음과 같은 엔터티를 정의 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-예를 들어 .xaml 파일에서 .cpp 또는 .h 파일을 자동으로 생성 하려면 `$(VSInstallDir)` \\ *MSBuild* \\ *microsoft* \\ *windowsxaml* \\ *v 16.0* \\ \* \\ *Microsoft.Windows.UI.Xaml.CPP.Targets* 파일에서 다음과 같은 엔터티를 정의 합니다.
+예를 들어 .xaml 파일에서 .cpp 또는 .h 파일을 자동으로 생성 하려면 `$(VSInstallDir)` \\ *MSBuild* \\ *microsoft* \\ *windowsxaml* \\ *v 16.0* \\ \* \\  파일에서 다음과 같은 엔터티를 정의 합니다.
 
 ::: moniker-end
 
@@ -493,12 +493,12 @@ CPS는 컨텍스트 형식에 대해 다른 값을 지원 하지만 Visual C++ �
 
 `PageTemplate`특성은 **속성 페이지** 대화 상자에 규칙이 표시 되는 방법을 정의 합니다. 특성에는 다음 값 중 하나를 사용할 수 있습니다.
 
-| attribute | 설명 |
+| 특성 | Description |
 |------------| - |
 | `generic` | 모든 속성은 범주 제목 아래에 있는 한 페이지에 표시 됩니다.<br/>규칙은 및 컨텍스트에 대해서는 볼 수 있지만는 볼 수 `Project` `PropertySheet` 없습니다 `File` .<br/><br/> 예: `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | 범주는 하위 페이지로 표시 됩니다.<br/>규칙은 `Project` , 및의 모든 컨텍스트에서 볼 수 있습니다 `PropertySheet` . `File`<br/>규칙 `ItemType` `Rule.DataSource` 이름이 항목 그룹에 포함 되지 않은 경우 프로젝트에가에 정의 된 항목이 있는 경우에만 프로젝트 속성에 규칙이 표시 됩니다 `ProjectTools` .<br/><br/>예: `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
 | `debugger` | 페이지는 디버깅 페이지의 일부로 표시 됩니다.<br/>범주는 현재 무시 됩니다.<br/>규칙 이름은 디버그 시작 관리자 MEF 개체의 특성과 일치 해야 합니다 `ExportDebugger` .<br/><br/>예: `$(VCTargetsPath)` \\ *1033* \\ *디버거 \_ 로컬 \_windows.xml* |
-| *재구성* | 사용자 지정 템플릿입니다. 템플릿의 이름은 `ExportPropertyPageUIFactoryProvider` MEF 개체의 특성과 일치 해야 합니다 `PropertyPageUIFactoryProvider` . **VisualStudio. IPropertyPageUIFactoryProvider**를 참조 하세요.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033* \\ *userMacros.xml* |
+| *재구성* | 사용자 지정 템플릿입니다. 템플릿의 이름은 `ExportPropertyPageUIFactoryProvider` MEF 개체의 특성과 일치 해야 합니다 `PropertyPageUIFactoryProvider` . **VisualStudio. IPropertyPageUIFactoryProvider** 를 참조 하세요.<br/><br/> 예: `$(VCTargetsPath)` \\ *1033* \\ *userMacros.xml* |
 
 규칙에서 속성 그리드 기반 템플릿 중 하나를 사용 하는 경우 해당 속성에 다음과 같은 확장성을 사용할 수 있습니다.
 
@@ -518,7 +518,7 @@ CPS는 컨텍스트 형식에 대해 다른 값을 지원 하지만 Visual C++ �
 
 *ProjectItemsSchema.xml* 파일은 `ContentType` `ItemType` 프로젝트 항목으로 처리 되는 항목에 대 한 및 값을 정의 하 고, `FileExtension` 새 파일이 추가 되는 항목 그룹을 결정 하는 요소를 정의 합니다.
 
-1033ProjectItemsSchema.xml에서 기본 ProjectItemsSchema 파일을 찾을 수 `$(VCTargetsPath)` \\ *1033* \\ * *있습니다. 이를 확장 하려면 *MyProjectItemsSchema.xml*와 같은 새 이름을 사용 하 여 스키마 파일을 만들어야 합니다.
+1033ProjectItemsSchema.xml에서 기본 ProjectItemsSchema 파일을 찾을 수 `$(VCTargetsPath)` \\  \\ ** 있습니다. 이를 확장 하려면 *MyProjectItemsSchema.xml* 와 같은 새 이름을 사용 하 여 스키마 파일을 만들어야 합니다.
 
 ```xml
 <ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties">
@@ -590,7 +590,7 @@ Visual Studio의 디버그 서비스는 디버그 엔진에 대 한 확장성을
 
    이러한 속성 이름에서는 *\<safe_toolset_name>* 모든 영숫자가 아닌 문자가 밑줄 ()로 바뀐 도구 집합 이름을 나타냅니다 **\_** .
 
-프로젝트를 업그레이드할 수 있는 경우 *솔루션*대상 변경에 참여 합니다. 자세한 내용은 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)를 참조 하세요.
+프로젝트를 업그레이드할 수 있는 경우 *솔루션* 대상 변경에 참여 합니다. 자세한 내용은 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)를 참조 하세요.
 
 프로젝트에서 특정 도구 집합을 사용 하는 경우 **솔루션 탐색기** 에서 프로젝트 이름을 장식할 하려면 속성을 정의 `_PlatformToolsetShortNameFor_<safe_toolset_name>` 합니다.
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio에 대 한 공유 색 | Microsoft Docs
+description: 일반적인 Visual Studio 셸 요소 및 테마를 사용 하 여 Visual Studio 환경과 일치 하는 고유한 사용자 지정 UI를 디자인 하는 방법을 알아봅니다.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699938"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668913"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio에 대 한 공유 색
 일반적인 Visual Studio 셸 요소를 사용 하는 UI를 디자인 하거나 인터페이스 요소를 유사한 기능과 일치 시키는 경우 패키지 정의 파일에서 기존 토큰 이름을 사용 하 여 색을 선택 하 고 할당 합니다. 이렇게 하면 UI가 전체 Visual Studio 환경과 일관성 있게 유지되며 테마를 추가하거나 업데이트할 경우 자동으로 업데이트됩니다.
@@ -1333,7 +1334,7 @@ ms.locfileid: "80699938"
 
  **명령 모음 드롭다운 단추: 가리키기 상태**
 
-![명령 모음 드롭다운 단추 가리키기](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />명령 모음 드롭다운 단추 가리키기
+![명령 모음 콤보 상자 드롭다운 단추 가리키기](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />명령 모음 드롭다운 단추 가리키기
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
@@ -1342,7 +1343,7 @@ ms.locfileid: "80699938"
 
 **명령 모음 드롭다운 목록: 가리키기 상태**
 
- ![명령 모음 드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />명령 모음 드롭다운 목록 가리키기
+ ![명령 모음 콤보 상자 드롭다운 목록 가리키기](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />명령 모음 드롭다운 목록 가리키기
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
@@ -1383,7 +1384,7 @@ ms.locfileid: "80699938"
 
 **명령 모음 드롭다운 단추: 누름 상태**
 
-![누른 명령 모음 드롭다운 단추](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />누른 명령 모음 드롭다운 단추
+![누름 명령 모음 콤보 상자 드롭다운 단추](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />누른 명령 모음 드롭다운 단추
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
@@ -1403,7 +1404,7 @@ ms.locfileid: "80699938"
 
 **명령 모음 드롭다운 단추: 사용 안 함 상태**
 
-![사용할 수 없는 명령 모음 드롭다운 단추](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />사용할 수 없는 명령 모음 드롭다운 단추
+![사용할 수 없는 명령 모음 콤보 상자 드롭다운 단추](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />사용할 수 없는 명령 모음 드롭다운 단추
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
@@ -1867,7 +1868,7 @@ Visual Studio는 사용자가 추적을 위해 검색 가능한 키워드를 선
 | --- | --- |
 | ... 태그 지정을 지 원하는 UI. | ... 다른 형식의 UI 인 경우 |
 
-#### <a name="tags"></a>태그들
+#### <a name="tags"></a>태그
 
 **태그: 기본 상태**
 

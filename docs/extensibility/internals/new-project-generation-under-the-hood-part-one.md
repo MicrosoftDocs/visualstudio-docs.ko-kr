@@ -1,5 +1,6 @@
 ---
 title: '새 프로젝트 생성: 내부에서 1 부 | Microsoft Docs'
+description: 사용자 고유의 프로젝트 형식을 만들 때 Visual Studio IDE (통합 개발 환경)에서 발생 하는 상황에 대해 자세히 살펴보겠습니다 (1/2 부).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707063"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668887"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
 사용자 고유의 프로젝트 형식을 만드는 방법에 대해 생각 하 고 있나요? 새 프로젝트를 만들 때 실제로 발생 하는 일은 궁금 하십니까? 내부적으로 살펴보기를 수행 하 고 정말 진행 되 고 있는 것을 확인해 보겠습니다.
@@ -36,11 +37,11 @@ ms.locfileid: "80707063"
 ## <a name="the-new-project-dialog-box"></a>새 프로젝트 대화 상자
  새 프로젝트에 대 한 프로젝트 형식을 선택 하면 모두 시작 됩니다. **파일** 메뉴에서 **새 프로젝트** 를 클릭 하 여 시작 해 보겠습니다. **새 프로젝트** 대화 상자가 표시 되 고 다음과 같은 내용이 표시 됩니다.
 
- ![새 프로젝트 대화 상자](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![새 프로젝트 대화 상자의 스크린샷.](../../extensibility/internals/media/newproject.gif)
 
- 좀 더 자세히 살펴보겠습니다. **프로젝트 형식** 트리에는 만들 수 있는 다양 한 프로젝트 형식이 나열 되어 있습니다. **Visual c # Windows**와 같은 프로젝트 형식을 선택 하면 시작 하는 데 사용할 수 있는 응용 프로그램 템플릿 목록이 표시 됩니다. **Visual studio에 설치 된 템플릿은** visual studio에 의해 설치 되며 컴퓨터의 모든 사용자가 사용할 수 있습니다. 만들거나 수집 하는 새 템플릿은 **내 템플릿에** 추가할 수 있으며 사용자만 사용할 수 있습니다.
+ 좀 더 자세히 살펴보겠습니다. **프로젝트 형식** 트리에는 만들 수 있는 다양 한 프로젝트 형식이 나열 되어 있습니다. **Visual c # Windows** 와 같은 프로젝트 형식을 선택 하면 시작 하는 데 사용할 수 있는 응용 프로그램 템플릿 목록이 표시 됩니다. **Visual studio에 설치 된 템플릿은** visual studio에 의해 설치 되며 컴퓨터의 모든 사용자가 사용할 수 있습니다. 만들거나 수집 하는 새 템플릿은 **내 템플릿에** 추가할 수 있으며 사용자만 사용할 수 있습니다.
 
- **Windows 응용 프로그램과**같은 템플릿을 선택 하면 해당 응용 프로그램 유형에 대 한 설명이 대화 상자에 표시 됩니다. 이 경우 **Windows 사용자 인터페이스를 사용 하 여 응용 프로그램을 만드는 프로젝트**입니다.
+ **Windows 응용 프로그램과** 같은 템플릿을 선택 하면 해당 응용 프로그램 유형에 대 한 설명이 대화 상자에 표시 됩니다. 이 경우 **Windows 사용자 인터페이스를 사용 하 여 응용 프로그램을 만드는 프로젝트** 입니다.
 
  **새 프로젝트** 대화 상자의 맨 아래에 추가 정보를 수집 하는 여러 컨트롤이 표시 됩니다. 표시 되는 컨트롤은 프로젝트 형식에 따라 달라 지지만 일반적으로 프로젝트 **이름** 텍스트 상자, **위치** 입력란 및 관련 **찾아보기** 단추, **솔루션 이름** 텍스트 상자 및 **솔루션용 디렉터리 만들기** 확인란을 포함 합니다.
 
@@ -60,10 +61,10 @@ devenv /installvstemplates
 ```
 
 ### <a name="project-types"></a>프로젝트 형식
- **프로젝트 형식** 루트 노드 (예: **Visual c #** 및 **기타 언어**)의 위치와 이름은 시스템 레지스트리 항목에 의해 결정 됩니다. **데이터베이스** 및 **스마트 장치와**같은 자식 노드의 구성은 해당 .vstemplate 파일을 포함 하는 폴더의 계층 구조를 미러링합니다. 먼저 루트 노드를 살펴보겠습니다.
+ **프로젝트 형식** 루트 노드 (예: **Visual c #** 및 **기타 언어**)의 위치와 이름은 시스템 레지스트리 항목에 의해 결정 됩니다. **데이터베이스** 및 **스마트 장치와** 같은 자식 노드의 구성은 해당 .vstemplate 파일을 포함 하는 폴더의 계층 구조를 미러링합니다. 먼저 루트 노드를 살펴보겠습니다.
 
 #### <a name="project-type-root-nodes"></a>프로젝트 형식 루트 노드
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 초기화 되 면 \software\microsoft\visualstudio\14.0\newprojecttemplates\templatedirs HKEY_LOCAL_MACHINE 시스템 레지스트리 키의 하위 키를 순회 하 여 **프로젝트 형식** 트리의 루트 노드를 빌드하고 이름을 입력 합니다. 이 정보는 나중에 사용 하기 위해 캐시 됩니다. TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 키를 확인 합니다. 각 항목은 VSPackage GUID입니다. 하위 키의 이름 (/1)은 무시 되지만 해당 상태는 **프로젝트 형식** 루트 노드인지 여부를 나타냅니다. 루트 노드에는 **프로젝트 형식** 트리에서 해당 모양을 제어 하는 여러 하위 키가 있을 수 있습니다. 그 중 일부를 살펴보겠습니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 초기화 되 면 시스템 레지스트리 키 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs의 하위 키를 순회 하 여 **프로젝트 형식** 트리의 루트 노드를 빌드하고 이름을 입력 합니다. 이 정보는 나중에 사용 하기 위해 캐시 됩니다. TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 키를 확인 합니다. 각 항목은 VSPackage GUID입니다. 하위 키의 이름 (/1)은 무시 되지만 해당 상태는 **프로젝트 형식** 루트 노드인지 여부를 나타냅니다. 루트 노드에는 **프로젝트 형식** 트리에서 해당 모양을 제어 하는 여러 하위 키가 있을 수 있습니다. 그 중 일부를 살펴보겠습니다.
 
 ##### <a name="default"></a>(기본값)
  루트 노드의 이름을로 하는 지역화 된 문자열의 리소스 ID입니다. 문자열 리소스는 VSPackage GUID에 의해 선택 된 위성 DLL에 있습니다.
@@ -88,29 +89,29 @@ devenv /installvstemplates
  우선 순위 번호가 낮을수록 트리에서 위치가 높아집니다.
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예를 들면 다음과 같습니다.
+ 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예제:
 
  DeveloperActivity REG_SZ VC #
 
- Visual Studio가 개발용으로 설정 된 경우 Visual c #이 루트 노드가 됨을 나타냅니다 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . 그렇지 않으면 **다른 언어**의 자식 노드가 됩니다.
+ Visual Studio가 개발용으로 설정 된 경우 Visual c #이 루트 노드가 됨을 나타냅니다 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . 그렇지 않으면 **다른 언어** 의 자식 노드가 됩니다.
 
 ##### <a name="folder"></a>폴더
  이 하위 키가 있는 경우 루트 노드는 지정 된 폴더의 자식 노드가 됩니다. 키 아래에 사용할 수 있는 폴더 목록이 표시 됩니다.
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
- 예를 들어 데이터베이스 프로젝트 항목에는 PseudoFolders의 다른 프로젝트 형식 항목과 일치 하는 폴더 키가 있습니다. 따라서 **프로젝트 형식** 트리에서 **데이터베이스 프로젝트** 는 **다른 프로젝트 형식의**자식 노드가 됩니다.
+ 예를 들어 데이터베이스 프로젝트 항목에는 PseudoFolders의 다른 프로젝트 형식 항목과 일치 하는 폴더 키가 있습니다. 따라서 **프로젝트 형식** 트리에서 **데이터베이스 프로젝트** 는 **다른 프로젝트 형식의** 자식 노드가 됩니다.
 
 #### <a name="project-type-child-nodes-and-vstdir-files"></a>프로젝트 형식 자식 노드 및 vstdir 파일
  **프로젝트 형식** 트리에서 자식 노드의 위치는 projecttemplates 폴더에 있는 폴더의 계층 구조를 따릅니다. 컴퓨터 템플릿 (**Visual Studio에 설치 된 템플릿**)의 경우 일반적인 위치는 FileFiles\Microsoft Visual studio 14.0 \ Common7\IDE\ProjectTemplates\이 고 사용자 템플릿 (**내 템플릿**)의 경우 일반적인 위치는 \My documents\visual studio 14.0 \ Templates\ProjectTemplates입니다 \\ . 이러한 두 위치에서 폴더 계층 구조가 병합 되어 **프로젝트 형식** 트리를 만듭니다.
 
  Visual Studio에서 c # 개발자 설정을 사용 하는 경우 **프로젝트 형식** 트리는 다음과 같습니다.
 
- ![프로젝트 형식](../../extensibility/internals/media/projecttypes.png "ProjectTypes"):
+ ![Visual Studio에서 c # 개발자 설정을 사용 하는 프로젝트 형식 폴더 트리의 스크린샷](../../extensibility/internals/media/projecttypes.png)
 
  해당 ProjectTemplates 폴더는 다음과 같습니다.
 
- ![프로젝트 템플릿](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Visual Studio에서 c # 개발자 설정을 사용 하는 프로젝트 템플릿 폴더 트리의 스크린샷](../../extensibility/internals/media/projecttemplates.png)
 
  **새 프로젝트** 대화 상자가 열리면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projecttemplates 폴더를 탐색 하 고 **프로젝트 형식** 트리에서 다음과 같이 변경 하 여 해당 구조를 다시 만듭니다.
 
@@ -208,9 +209,9 @@ devenv /installvstemplates
 
 10. **새 프로젝트** 대화 상자를 열고 **Visual c #** 프로젝트 노드를 확장 합니다.
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![확장 된 Visual c # 프로젝트 노드 아래에 MyProjectNode가 강조 표시 된 새 프로젝트 대화 상자에서 프로젝트 형식 폴더 트리의 스크린샷](../../extensibility/internals/media/myprojectnode.png)
 
     **Myprojectnode** 는 Windows 노드 바로 아래에 Visual c #의 자식 노드로 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [새 프로젝트 생성: 내부 살펴보기, 2부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

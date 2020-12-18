@@ -1,5 +1,6 @@
 ---
 title: Visual Studio의 이미지 및 아이콘 | Microsoft Docs
+description: Visual Studio의 이미지 및 아이콘을 만드는 데 사용되는 디자인 개념에 대해 알아봅니다.
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906121"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668653"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio에서 이미지 사용
@@ -308,7 +309,7 @@ ms.locfileid: "85906121"
 
 |실행|중지|삭제|저장|뒤로 탐색|
 |-|-|-|-|-|
-|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
+|![실행 아이콘](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![중지 아이콘 - 단색 빨간 사각형](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![삭제 아이콘](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![저장 아이콘](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![뒤로 탐색 아이콘](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>코드 계층 구조 색상표
 
@@ -380,4 +381,4 @@ ms.locfileid: "85906121"
 
 |경고|경고|완료|중지|
 |-|-|-|-|
-|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![완료 아이콘](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![중지 아이콘](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
+|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![경고 아이콘](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![완료 아이콘](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![중지 아이콘 - 가운데에 흰색 사각형이 있는 단색 빨간 원](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
