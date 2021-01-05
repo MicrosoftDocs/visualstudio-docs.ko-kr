@@ -1,5 +1,7 @@
 ---
 title: 여러 문서 보기 지원 | Microsoft Docs
+description: Visual Studio SDK에서 사용자 지정 편집기에 대 한 별도의 문서 데이터 및 문서 뷰 개체를 사용 하 여 문서를 두 개 이상 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699546"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716096"
 ---
 # <a name="supporting-multiple-document-views"></a>여러 문서 보기 지원
 편집기에 대 한 별도의 문서 데이터 및 문서 뷰 개체를 만들어 문서에 대 한 뷰를 두 개 이상 제공할 수 있습니다. 추가 문서 보기가 유용한 경우는 다음과 같습니다.

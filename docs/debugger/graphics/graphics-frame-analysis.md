@@ -1,5 +1,7 @@
 ---
 title: 그래픽 프레임 분석 | Microsoft Docs
+description: Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Direct3D 게임 또는 앱의 렌더링 성능을 분석하고 최적화합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911477"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727725"
 ---
 # <a name="graphics-frame-analysis"></a>그래픽 프레임 분석
 Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Direct3D 게임 또는 앱의 렌더링 성능을 분석하고 최적화합니다.
@@ -171,7 +173,7 @@ Visual Studio Graphics Analyzer의 그래픽 프레임 분석을 사용하여 Di
  프레임 분석은 실제 하드웨어에서 렌더링 성능을 프로파일링 및 향상시키는 데 사용됩니다. WARP 디바이스에서 프레임 분석을 실행할 수 없지만 일반적으로 실행하지 않는 것이 좋습니다. 왜냐하면 하이엔드 CPU에서 실행 중인 WARP는 기능이 가장 떨어지는 최신 GPU보다 더 느려질 수 있고 WARP가 실행되는 특정 CPU에 따라 WARP 성능이 크게 달라질 수 있기 때문입니다.
 
 ## <a name="variants"></a><a name="Variants"></a> 변형
- 프레임 분석이 재생 중 프레임이 렌더링되는 방식에 대해 변경한 각 내용을 *변형*이라고 합니다. 프레임 분석에서 검사한 변형은 앱의 렌더링 성능 또는 시각적 품질을 향상시키기 위해 수행한 일반적이고 상대적으로 쉬운 변경에 해당합니다(예: 질감 크기 줄이기, 질감 압축 사용 또는 다른 종류의 앤티앨리어싱 사용). 변형은 앱의 일반적인 렌더링 컨텍스트와 매개 변수를 재정의합니다. 다음은 요약입니다.
+ 프레임 분석이 재생 중 프레임이 렌더링되는 방식에 대해 변경한 각 내용을 *변형* 이라고 합니다. 프레임 분석에서 검사한 변형은 앱의 렌더링 성능 또는 시각적 품질을 향상시키기 위해 수행한 일반적이고 상대적으로 쉬운 변경에 해당합니다(예: 질감 크기 줄이기, 질감 압축 사용 또는 다른 종류의 앤티앨리어싱 사용). 변형은 앱의 일반적인 렌더링 컨텍스트와 매개 변수를 재정의합니다. 다음은 요약입니다.
 
 |변형|설명|
 |-------------|-----------------|

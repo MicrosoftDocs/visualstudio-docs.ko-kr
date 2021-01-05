@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361653"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729394"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 애플리케이션 디버그
 
@@ -62,9 +62,9 @@ ms.locfileid: "97361653"
 ## <a name="navigate-and-examine-code-from-the-map"></a>맵에서 코드 탐색 및 검사
  각 필드에 대 한 코드 정의를 보려면 맵의 필드를 두 번 클릭 하거나 필드를 선택 하 고 **F12** 키를 누릅니다. 녹색 화살표를 누르면 맵의 항목 사이에서 이동합니다. 코드 편집기의 커서를 눌러도 자동으로 이동할 수 있습니다.
 
- ![코드 맵 &#45; 검사 필드 정의](../modeling/media/codemapstoryboardpaint5.png)
+ ![기록 필드가 선택 된 코드 맵 창의 스크린샷 및 모든 기록 인스턴스가 강조 표시 되는 코드 편집기 창입니다.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![코드 맵 &#45; 검사 필드 정의](../modeling/media/codemapstoryboardpaint5a.png)
+ ![PaintObjects 필드가 선택 된 코드 맵 창의 스크린샷에서 모든 paintObjects 인스턴스가 강조 표시 되는 코드 편집기 창입니다.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > 코드 편집기에서 커서를 이동하여 맵의 녹색 화살표를 이동할 수도 있습니다.
@@ -81,24 +81,24 @@ ms.locfileid: "97361653"
 
  레이아웃을 변경하여 관계 흐름을 재정렬하고 맵을 읽기 쉽도록 만듭니다. 또한 항목을 끌어서 항목을 맵 주위로 이동할 수도 있습니다.
 
- ![코드 맵 &#45; 레이아웃 변경](../modeling/media/codemapstoryboardpaint7a.png)
+ ![레이아웃 메뉴가 열리고 왼쪽에서 Rgid 명령이 선택 된 코드 맵 창의 스크린샷](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > **증분 레이아웃** 은 기본적으로 설정 되어 있습니다. 이 설정은 새 항목을 추가할 때 맵을 가능한 적게 다시 정렬합니다. 새 항목을 추가할 때마다 전체 맵을 다시 정렬 하려면 **증분 레이아웃** 을 해제 합니다.
 
- ![코드 맵 &#45; 레이아웃 변경](../modeling/media/codemapstoryboardpaint7.png)
+ ![왼쪽에서 오른쪽으로 가리키는 필드 사이에 relationshiop 화살표가 있는 코드 맵 창의 스크린샷](../modeling/media/codemapstoryboardpaint7.png)
 
  이러한 메서드를 살펴보겠습니다. 맵에서 **맵에서 paintcanvas** 메서드를 두 번 클릭 하거나이 메서드를 선택 하 고 **F12** 키를 누릅니다. 이 메서드가 빈 목록으로 `history` 및 `paintObjects`를 만드는 것을 볼 수 있습니다.
 
- ![코드 맵 &#45; 메서드 정의 검사](../modeling/media/codemapstoryboardpaint8.png)
+ ![맵에서 paintcanvas 메서드가 선택 된 코드 맵 창의 스크린샷 및 강조 표시 된 PainCanvas 메서드 이름을 보여 주는 코드 조각 이미지](../modeling/media/codemapstoryboardpaint8.png)
 
  이제 같은 단계를 반복하여 `clear` 메서드 정의를 검사합니다. `clear`가 `paintObjects` 및 `history`와 함께 몇 가지 작업을 수행하는 것을 볼 수 있습니다. 그런 다음 `Repaint` 메서드를 호출합니다.
 
- ![코드 맵 &#45; 메서드 정의 검사](../modeling/media/codemapstoryboardpaint9.png)
+ ![Clear 메서드를 선택한 코드 맵 창의 스크린샷 및 Clear 메서드에 대 한 코드를 보여 주는 코드 조각 이미지입니다.](../modeling/media/codemapstoryboardpaint9.png)
 
  이제 `addPaintObject` 메서드 정의를 검사합니다. 또한 `history` 및 `paintObjects`도 사용하여 일부 작업을 수행합니다. `Repaint`도 호출합니다.
 
- ![코드 맵 &#45; 메서드 정의 검사](../modeling/media/codemapstoryboardpaint10.png)
+ ![AddPaintObject 메서드를 선택 하 고 addPaintObject 메서드에 대 한 코드를 보여 주는 코드 조각 이미지를 포함 하는 코드 맵 창의 스크린샷](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>맵을 검토하여 문제 찾기
  `history` 및 `paintObjects`를 수정하는 모든 메서드가 `Repaint`를 호출하는 것 같습니다. `undo`가 동일한 필드를 수정함에도 불구하고 `Repaint` 메서드는 아직 `undo`를 호출하지 않습니다. 따라서 `Repaint`에서 `undo`를 호출하여 이 문제를 해결할 수 있다고 생각합니다.
@@ -142,7 +142,7 @@ ms.locfileid: "97361653"
 
  이제 조사를 완료 했습니다. 코드를 매핑하여 문제를 성공적으로 발견하고 해결했습니다. 코드 주위를 탐색하고 배운 내용을 기억하는 데 도움이 되며 문제를 해결하는 단계를 보여 주는 맵도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [디버깅하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 시각화](../modeling/visualize-code.md)

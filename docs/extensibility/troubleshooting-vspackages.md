@@ -1,5 +1,7 @@
 ---
 title: Vspackage 문제 해결 | Microsoft Docs
+description: 문제를 해결 하기 위해 VSPackage 및 문제 해결 팁을 사용 하 여 발생할 수 있는 일반적인 문제에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235032"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716057"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 다음은 문제를 해결 하기 위한 VSPackage 및 팁과 함께 발생할 수 있는 일반적인 문제입니다.
@@ -25,7 +27,7 @@ ms.locfileid: "87235032"
 
 - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]안전 모드에서 시작 합니다.
 
-   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]안전 모드에서 시작 하려면 명령 프롬프트에서 **devenv.exe/안전**모드를 입력 합니다.
+   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]안전 모드에서 시작 하려면 명령 프롬프트에서 **devenv.exe/안전** 모드를 입력 합니다.
 
    이 프로세스 중에에 포함 된 Vspackage를 제외 하 고 Vspackage가 로드 되지 않습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
@@ -37,7 +39,7 @@ ms.locfileid: "87235032"
 
 2. VSPackage이 실험적 레지스트리 루트에서 실행 되도록 지정 된 경우 실험적 버전의를 실행 하 고 있는지 확인 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-    실험적 버전을 실행 하려면 명령 창에서 **devenv/rootsuffix exp**를 입력 합니다.
+    실험적 버전을 실행 하려면 명령 창에서 **devenv/rootsuffix exp** 를 입력 합니다.
 
 3. VSPackage 레지스트리 항목을 확인 합니다.
 
@@ -76,11 +78,11 @@ ms.locfileid: "87235032"
 
      디버깅을 위한 좋은 출발점은 생성자 및 초기화 메서드입니다. 메뉴 명령과 같이 평가할 영역에 중단점을 설정할 수도 있습니다. 중단점을 사용 하도록 설정 하려면 디버거에서를 실행 해야 합니다.
 
-    1. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+    1. **프로젝트** 메뉴에서 **속성** 을 클릭합니다.
 
     2. **속성 페이지** 대화 상자에서 **디버그** 탭을 선택 합니다.
 
-    3. **명령줄 인수** 상자에 VSPackage가 대상으로 하는 개발 환경의 루트 접미사를 입력 합니다. 예를 들어 실험적 빌드를 선택 하려면 **/Rootsuffix Exp**를 입력 합니다.
+    3. **명령줄 인수** 상자에 VSPackage가 대상으로 하는 개발 환경의 루트 접미사를 입력 합니다. 예를 들어 실험적 빌드를 선택 하려면 **/Rootsuffix Exp** 를 입력 합니다.
 
     4. **디버그** 메뉴에서 **디버깅 시작** 을 클릭 하거나 f5 키를 누릅니다.
 
@@ -97,7 +99,7 @@ ms.locfileid: "87235032"
 
     1. **도구/옵션** 메뉴에서 **디버깅/기호** 대화 상자로 이동 합니다.
 
-    2. 이 **기호 파일 (.pdb) 위치**를 추가 합니다.
+    2. 이 **기호 파일 (.pdb) 위치** 를 추가 합니다.
 
          `https://msdl.microsoft.com/download/symbols`
 
@@ -111,7 +113,7 @@ ms.locfileid: "87235032"
 
 1. 관리 코드의 경우 참조 경로가 올바른지 확인 합니다.
 
-   1. **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+   1. **프로젝트** 메뉴에서 **속성** 을 클릭합니다.
 
    2. **속성 페이지** 대화 상자에서 **참조** 탭을 선택 하 고 모든 경로가 올바른지 확인 합니다. 또는 **개체 브라우저** 를 사용 하 여 참조 된 개체를 찾을 수 있습니다.
 

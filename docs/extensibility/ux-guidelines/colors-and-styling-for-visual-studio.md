@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 색 및 스타일 지정 | Microsoft Docs
+description: 미적 이유가 아니라 Visual Studio 사용자 환경에서 통신 도구로 색을 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414271"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715667"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -44,7 +46,7 @@ Visual Studio의 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 �
 
 UI 요소에 가장 적합 한 방법을 선택 합니다.
 
-| UI | 방법 | 무엇인가요? |
+| UI | 메서드 | 무엇인가요? |
 | --- | --- | --- |
 | 포함 되거나 독립 실행형 대화 상자가 있습니다. | **시스템 색** | 운영 체제에서 일반적인 대화 상자 컨트롤과 같은 UI 요소의 색과 모양을 정의할 수 있도록 하는 시스템 이름입니다. |
 | 전반적인 VS 환경과 일치 시키고 공유 토큰의 범주 및 의미 체계와 일치 하는 UI 요소를 포함 하는 사용자 지정 UI가 있습니다. | **공통 공유 색** | 특정 UI 요소에 대해 미리 정의 된 기존 색 토큰 이름 |
@@ -358,7 +360,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 이름 | Type | 데이터 | Description |
+| 이름 | 형식 | 데이터 | Description |
 | --- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -371,7 +373,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 이름 | Type | 데이터 | Description |
+| 이름 | 형식 | 데이터 | Description |
 |--- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -382,7 +384,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 ### <a name="to-implement-ide-support"></a>IDE 지원을 구현 하려면
 
-지정 [GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)된 각 범주 또는 그룹 GUID에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> IDE에 대 한 인터페이스를 반환 하는 GetObject를 구현 합니다.
+지정 [](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)된 각 범주 또는 그룹 GUID에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> IDE에 대 한 인터페이스를 반환 하는 GetObject를 구현 합니다.
 
 VSPackage은 지원 되는 모든 범주에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스의 별도 인스턴스를 구현 합니다.
 

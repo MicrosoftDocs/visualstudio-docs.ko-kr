@@ -1,5 +1,7 @@
 ---
 title: 문자열 길이에 대 한 제한 사항 | Microsoft Docs
+description: 소스 제어 플러그 인 API에 의해 적용 되는 다양 한 함수에 사용 되는 문자열의 길이에 대 한 제한에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df6e068ba612d5e8876e4fa01fbc0751759d5a80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5412e930937d029f803f5c6c2b4ddc9d396d9485
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701483"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715524"
 ---
 # <a name="restrictions-on-string-lengths"></a>문자열 길이에 대 한 제한 사항
 소스 제어 플러그 인 API는 다양 한 함수에 사용 되는 문자열의 길이를 제한 합니다.

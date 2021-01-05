@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에서 템플릿 검색 문제 해결 | Microsoft Docs
+description: 진단 로깅을 사용 하 여 Visual Studio SDK의 사용자 지정 프로젝트 및 템플릿 배포 문제를 해결 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235045"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716048"
 ---
 # <a name="troubleshooting-template-installation"></a>템플릿 설치 문제 해결
 
@@ -57,7 +59,7 @@ ms.locfileid: "87235045"
 
 로그 파일에는 다음 열이 포함 되어 있습니다.
 
-- **FullPathToTemplate**에는 다음 값이 있습니다.
+- **FullPathToTemplate** 에는 다음 값이 있습니다.
 
   - 매니페스트 기반 배포의 경우 1
 

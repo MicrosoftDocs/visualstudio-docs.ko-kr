@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363122"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729342"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
@@ -40,7 +40,7 @@ ms.locfileid: "97363122"
 
 EMD의 책임은 개체 또는 개체 그룹을 모델의 특정 위치에 병합 하는 방법을 결정 하는 것입니다. 특히 병합 된 그룹을 모델에 연결 하기 위해 인스턴스화할 관계를 결정 합니다. 또한 속성을 설정 하 고 추가 개체를 만들기 위해 사용자 지정할 수 있습니다.
 
-![DSL&#45;EMD&#95;병합](../modeling/media/dsl-emd_merge.png)
+![E M D가 새 요소를 추가 하는 방법을 결정 하는 경우에는 요소 트리 및 해당 참조 관계를 보여 주는 다이어그램입니다.](../modeling/media/dsl-emd_merge.png)
 
 EMD는 포함 관계를 정의할 때 자동으로 생성 됩니다. 사용자가 새 자식 인스턴스를 부모에 추가할 때이 기본 EMD는 관계의 인스턴스를 만듭니다. 예를 들어 사용자 지정 코드를 추가 하 여 이러한 기본 EMDs를 수정할 수 있습니다.
 
@@ -50,7 +50,7 @@ DSL 정의에서 사용자 고유의 EMDs를 추가 하 여 사용자가 병합 
 
 도메인 클래스, 도메인 관계, 모양, 연결선 및 다이어그램에 요소 병합 지시문을 추가할 수 있습니다. DSL 탐색기에서 수신 도메인 클래스 아래에 해당 항목을 추가 하거나 찾을 수 있습니다. 수신 클래스는 이미 모델에 있는 요소의 도메인 클래스 이며, 새 요소 또는 복사 된 요소가 병합 됩니다.
 
-![DSL&#45;EMD&#95;세부 정보](../modeling/media/dsl-emd_details.png)
+![인덱싱 클래스로 선택 하 고 하위 클래스에 적용 옵션을 선택 하 여 추가 되는 E M D ExampleElement를 보여 주는 DSL 탐색기의 스크린샷](../modeling/media/dsl-emd_details.png)
 
 **인덱싱 클래스** 는 수신 하는 클래스의 멤버로 병합 될 수 있는 요소의 도메인 클래스입니다. **서브 클래스에 적용** 을 False로 설정 하지 않으면 인덱싱 클래스의 하위 클래스 인스턴스도이 emd에 의해 병합 됩니다.
 
@@ -232,7 +232,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 5. **Dsl\generated Files\DomainClasses.cs** 의 콘텐츠를 검사 합니다. 이라는 메서드를 검색 `MergeRelate` 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
 
-6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예를 들어:
+6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     partial class ExampleModel
@@ -318,7 +318,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
      사용할 수 없는 포인터는 표시 되지 않으며 기존 **입력 포트에 새 입력 포트** 를 삭제할 수 있어야 합니다. 새 **입력 포트** 를 선택 하 고 **구성 요소의** 다른 위치로 끕니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)

@@ -1,5 +1,7 @@
 ---
 title: 파일 이름 확장명에 대 한 파일 처리기 지정 | Microsoft Docs
+description: OpenWithList 및 Openwithlist를 사용 하 여 Visual Studio SDK에서 파일 확장명을 처리 하는 응용 프로그램을 확인 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699748"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715602"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>파일 이름 확장명에 대한 파일 처리기 지정
 특정 파일 확장명이 있는 파일을 처리 하는 응용 프로그램을 확인 하는 방법에는 여러 가지가 있습니다. OpenWithList 및 Openwithlist 동사는 파일 확장명에 대 한 레지스트리 항목에서 파일 처리기를 지정 하는 두 가지 방법입니다.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> 응용 프로그램을 지정 하는 키는 HKEY_CLASSES_ROOT \Applications>의 목록에 있습니다.
+> 응용 프로그램을 지정 하는 키는 HKEY_CLASSES_ROOT\Applications 아래의 목록에 있습니다.
 
  OpenWithList 키를 추가 하 여 다른 응용 프로그램이 확장의 소유권을 갖는 경우에도 응용 프로그램에서 파일 확장명을 지원함을 선언 합니다. 이는 응용 프로그램 또는 다른 응용 프로그램의 이후 버전이 될 수 있습니다.
 
@@ -47,12 +49,12 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |. 확장명|제품. 확장명. versionMajor. Versionmajor|
 
- 버전이 지정 된 Progid를 HKEY_CLASSES_ROOT \\ \Openwithprogids 키에 값으로 추가 하 여 특정 파일 확장명을 열 수 있는 다른 응용 프로그램을 등록할 수 있습니다 *\<extension>* . 이 레지스트리 키에는 파일 확장명과 연결 된 대체 Progid의 목록이 포함 됩니다. 나열 된 Progid와 연결 된 응용 프로그램이_제품 이름_ **으로 열기**하위 메뉴에 표시 됩니다. 동일한 응용 프로그램이 및 키 둘 다에서 지정 된 경우 `OpenWithList` `OpenWithProgids` 운영 체제에서 중복 항목을 병합 합니다.
+ 버전이 지정 된 Progid를 HKEY_CLASSES_ROOT \\ \Openwithprogids 키에 값으로 추가 하 여 특정 파일 확장명을 열 수 있는 다른 응용 프로그램을 등록할 수 있습니다 *\<extension>* . 이 레지스트리 키에는 파일 확장명과 연결 된 대체 Progid의 목록이 포함 됩니다. 나열 된 Progid와 연결 된 응용 프로그램이 _제품 이름_ **으로 열기** 하위 메뉴에 표시 됩니다. 동일한 응용 프로그램이 및 키 둘 다에서 지정 된 경우 `OpenWithList` `OpenWithProgids` 운영 체제에서 중복 항목을 병합 합니다.
 
 > [!NOTE]
 > `OpenWithProgids`키는 WINDOWS XP 에서만 지원 됩니다. 다른 운영 체제에서는이 키를 무시 하므로 파일 처리기의 유일한 등록으로 사용 하지 마십시오. 이 키를 사용 하 여 Windows XP에서 더 나은 사용자 환경을 제공 합니다.
 
- REG_NONE 형식의 값으로 원하는 Progid를 추가 합니다. 다음 코드에서는 파일 확장명에 Progid를 등록 하는 예를 제공 합니다.* ext*).
+ REG_NONE 형식의 값으로 원하는 Progid를 추가 합니다. 다음 코드에서는 파일 확장명에 Progid를 등록 하는 예를 제공 합니다.*ext*).
 
 ```
 HKEY_CLASSES_ROOT\

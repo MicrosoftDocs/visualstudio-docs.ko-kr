@@ -1,5 +1,7 @@
 ---
 title: VSIX 패키지 서명 | Microsoft Docs
+description: 확장 어셈블리에 서명 하는 방법에 대해 알아봅니다. Vsix 설치 관리자가 VSIX에 서명 되었다는 메시지와 서명 자체에 대 한 정보를 표시 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700084"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716083"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
 확장 어셈블리는 Visual Studio에서 실행할 수 있을 때까지 서명할 필요가 없지만 그렇게 하는 것이 좋습니다.
@@ -36,7 +38,7 @@ ms.locfileid: "80700084"
 
 1. VSIX를 프로젝트에 추가 합니다.
 
-2. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가 &#124; NuGet 패키지 관리**를 선택 합니다.  Nuget 및 nuget 패키지를 추가 하는 방법에 대 한 자세한 내용은 [nuget 설명서](/NuGet) 및 [패키지 관리자 UI](/NuGet/Tools/Package-Manager-UI) 항목을 참조 하세요.
+2. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가 &#124; NuGet 패키지 관리** 를 선택 합니다.  Nuget 및 nuget 패키지를 추가 하는 방법에 대 한 자세한 내용은 [nuget 설명서](/NuGet) 및 [패키지 관리자 UI](/NuGet/Tools/Package-Manager-UI) 항목을 참조 하세요.
 
 3. VisualStudioExtensibility에서 VSIXSignTool을 검색 하 고 NuGet 패키지를 설치 합니다.
 

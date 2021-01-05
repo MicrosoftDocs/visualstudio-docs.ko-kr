@@ -1,5 +1,7 @@
 ---
 title: 지원 되는 Roslyn 패키지 버전 매핑
+description: 이 문서에서는 다양 한 버전의 Visual Studio에 대해 지원 되는 .NET 컴파일러 플랫폼 (Roslyn) 패키지 버전을 보여 줍니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701329"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715745"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 컴파일러 플랫폼 패키지 버전 참조
 

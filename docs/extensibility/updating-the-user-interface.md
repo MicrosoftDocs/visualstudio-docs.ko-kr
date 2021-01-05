@@ -1,5 +1,7 @@
 ---
 title: 사용자 인터페이스 업데이트 | Microsoft Docs
+description: VSPackage에서 새 명령을 구현한 후 사용자 인터페이스를 업데이트 하는 코드를 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698883"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716031"
 ---
 # <a name="updating-the-user-interface"></a>사용자 인터페이스 업데이트
 명령을 구현한 후 새 명령의 상태로 사용자 인터페이스를 업데이트 하는 코드를 추가할 수 있습니다.

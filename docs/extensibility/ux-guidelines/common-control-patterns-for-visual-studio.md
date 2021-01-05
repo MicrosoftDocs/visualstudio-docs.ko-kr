@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 공용 컨트롤 패턴 | Microsoft Docs
+description: Visual Studio 공용 컨트롤에서 Windows 데스크톱 상호 작용 지침을 따르고 이러한 지침을 보강 하는 특수 한 상황에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698708"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715888"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 공용 컨트롤
@@ -185,7 +187,7 @@ ms.locfileid: "80698708"
 
 - 콘텐츠가 표시 되지 않는 이유를 설명 하는 빈 도구 창 또는 대화 상자의 워터 마크 텍스트입니다.
 
-- **속성 창**아래와 같은 설명 창
+- **속성 창** 아래와 같은 설명 창
 
 - 빈 편집기의 워터 마크 텍스트를 사용 하 여 시작 하기 위해 수행 해야 하는 작업을 설명 합니다.
 
@@ -243,7 +245,7 @@ ms.locfileid: "80698708"
 
 - 많은 명령이 있는 경우의 보조 명령 강조
 
-#### <a name="examples"></a>예제
+#### <a name="examples"></a>예
 ![상태 메시지 다음의 정보 표시줄에 사용 되는 명령 링크](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />상태 메시지 다음의 정보 표시줄에 사용 되는 명령 링크
 
 ![CodeLens 팝업에 사용된 링크](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />CodeLens 팝업에 사용된 링크
@@ -299,7 +301,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 > [!NOTE]
 > 사용자는 이러한 단추 (선택 키 없음)로 이동 하 여 적절 한 순서로 배치할 수 있습니다. `name`단추의 속성을 화면 판독기가 단추 작업을 올바르게 해석 하기 위해 수행 하는 동작에 매핑합니다.
 
-| 함수 | 단추 |
+| 기능 | 단추 |
 | --- | --- |
 | 추가 | ![그래픽 "추가" 단추](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 제거 | ![그래픽 "제거" 단추](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
@@ -307,7 +309,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 | 모두 제거 | ![그래픽 "모두 제거" 단추](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | 위로 이동 | ![그래픽 "위로 이동" 단추](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | 아래로 이동 | ![그래픽 "아래로 이동" 단추](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| 삭제 | ![그래픽 "삭제" 단추](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| DELETE | ![그래픽 "삭제" 단추](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>크기 조정 및 간격
 그래픽 단추의 크기 조정은 **[찾아보기 ...]** 단추 (26x23 픽셀)의 약식 버전과 동일 합니다.
@@ -363,7 +365,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 
 ![상황에 맞는 메뉴를 생성 하는 항목은 선택 된 항목을 사용자에 게 알리기 위해 포커스를 얻습니다.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />상황에 맞는 메뉴를 생성 하는 항목은 선택 된 항목을 사용자에 게 알리기 위해 포커스를 얻습니다.
 
-#### <a name="keyboard"></a>Keyboard
+#### <a name="keyboard"></a>키보드
 트리 뷰에서는 항목을 선택 하 고 키보드를 사용 하 여 노드를 확장/축소할 수 있는 기능을 제공 해야 합니다. 이렇게 하면 탐색이 접근성 요구 사항을 충족 합니다.
 
 ##### <a name="tree-view-control"></a>트리 뷰 컨트롤

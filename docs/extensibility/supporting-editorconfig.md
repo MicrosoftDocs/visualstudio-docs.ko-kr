@@ -1,5 +1,7 @@
 ---
 title: EditorConfig를 지원 하도록 언어 서비스를 확장 합니다.
+description: EditorConfig 파일을 지원 하도록 언어 서비스를 업데이트 하기 위해 변경 된 사항에 대해 알아봅니다. 전역 언어 관련 옵션을 상황별 옵션으로 바꿉니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfe0e30904d000b4fd70c85371d29a2ee486932
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c635df2301822fc1bb982df44912527d53c9ef6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699578"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716109"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>언어 서비스에 대 한 EditorConfig 지원
 

@@ -1,5 +1,7 @@
 ---
 title: 디자이너에 실행 취소 지원 제공 | Microsoft Docs
+description: 디자이너에서 자동으로 또는 Visual Studio SDK의 기능을 사용 하 여 실행 취소 지원을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699670"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715577"
 ---
 # <a name="supply-undo-support-to-designers"></a>디자이너에 실행 취소 지원 제공
 
@@ -29,7 +31,7 @@ Visual Studio에서 구현 된 대부분의 디자이너에는 환경에서 자�
 
 - 및 클래스를 구현 하 여 지 속성 및 CodeDOM 지원을 제공 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> 합니다.
 
-.NET Framework를 사용 하 여 디자이너를 작성 하는 방법에 대 한 자세한 내용은 [디자인 타임 지원 확장](/previous-versions/37899azc(v=vs.140))을 참조 하세요.
+.NET Framework를 사용 하 여 디자이너를 작성 하는 방법에 대 한 자세한 내용은 [확장 Design-Time 지원](/previous-versions/37899azc(v=vs.140))을 참조 하세요.
 
 는 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 다음을 수행 하 여 기본 실행 취소 인프라를 제공 합니다.
 
@@ -103,4 +105,4 @@ Visual Studio에서 만든 디자이너는 다음과 같은 경우 자동 및 �
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [디자인 타임 지원 확장](/previous-versions/37899azc(v=vs.140))
+- [Design-Time 지원 확장](/previous-versions/37899azc(v=vs.140))

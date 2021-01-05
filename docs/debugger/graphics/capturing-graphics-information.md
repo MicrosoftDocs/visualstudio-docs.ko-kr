@@ -1,5 +1,7 @@
 ---
 title: 그래픽 정보 캡처 | Microsoft Docs
+description: Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문제를 진단할 수 있도록 Direct3D 앱에서 그래픽 정보를 캡처합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736198"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727926"
 ---
 # <a name="capturing-graphics-information"></a>그래픽 정보 캡처
 Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문제를 진단할 수 있도록 Direct3D 앱에서 그래픽 정보를 캡처합니다.
@@ -27,7 +29,7 @@ Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문�
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>그래픽 진단 모드로 응용 프로그램을 실행하려면
 
-- 메뉴 모음에서 **디버그**, **그래픽**, **그래픽 디버깅 시작**을 선택합니다. (키보드: Alt+F5 누름).
+- 메뉴 모음에서 **디버그**, **그래픽**, **그래픽 디버깅 시작** 을 선택합니다. (키보드: Alt+F5 누름).
 
 - **그래픽** 도구 모음에서 **그래픽 디버깅 시작** 단추를 선택합니다.
 
@@ -46,7 +48,7 @@ Visual Studio Graphics Analyzer를 사용하여 렌더링 문제 및 성능 문�
 
    ![GPU 사용 도구를 사용하여 프레임을 캡처합니다.](media/pix_gpu_usage_tool_capture_frame.png)
 
-   캡처한 프레임을 검사할 준비가 되면 축소판 이미지 위에 있는 **프레임...** 링크를 따라 이동하거나 미리 보기 이미지를 두 번 클릭하여 **Visual Studio Graphics Analyzer**를 시작합니다.
+   캡처한 프레임을 검사할 준비가 되면 축소판 이미지 위에 있는 **프레임...** 링크를 따라 이동하거나 미리 보기 이미지를 두 번 클릭하여 **Visual Studio Graphics Analyzer** 를 시작합니다.
 
   전체 프레임만 캡처할 수 있으므로, 캡처를 시작하면 기록된 다음 프레임부터 실제 그래픽 정보입니다. 기록은 캡처를 시작할 때의 프레임이 제시된 직후부터 시작되고 캡처된 프레임이 제시될 때 종료됩니다. 그래픽 진단 모드로 응용 프로그램을 실행하는 동안 원하는 만큼의 프레임을 캡처할 수 있습니다. 아무 프레임도 캡처하지 않으면 그래픽 로그는 삭제됩니다.
 

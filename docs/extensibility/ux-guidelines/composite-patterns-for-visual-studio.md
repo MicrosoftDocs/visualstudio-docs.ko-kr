@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 복합 패턴 | Microsoft Docs
+description: Visual Studio에서 일관성을 유지 하기 위한 중요 한 복합 패턴에 대해 알아봅니다. 복합 패턴은 상호 작용 및 디자인 요소를 결합 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114078"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715823"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio의 복합 패턴
 복합 패턴은 고유 구성에서 상호 작용 및 디자인 요소를 결합 합니다. 일관성과 관련 하 여 Visual Studio에서 가장 중요 한 복합 패턴 중 일부는 다음과 같습니다.
@@ -68,10 +70,10 @@ ms.locfileid: "88114078"
 
 ### <a name="other-charting-considerations"></a>기타 차트 고려 사항
 
-#### <a name="color"></a>색상
+#### <a name="color"></a>Color
  Visual Studio에서 사용 하도록 정의 된 차트 색의 특정 색상표가 있습니다. 색상표는 주요 색의 주요 형식에 액세스할 수 있으며 색의 좁은 조각으로 사용 되는 경우에도 색을 구분할 수 있습니다. 이러한 색은 UI의 모든 종류의 차트 또는 그래프에 대해 조합 하 여 사용할 수 있습니다. 고유한 색이 많이 필요 하지 않은 경우에는 7 가지 색을 모두 사용할 필요가 없습니다. 이러한 색은 모든 전경 요소와 함께 사용 하도록 설계 되지 않았으므로 이러한 색 위에 텍스트나 문자 모양을 두지 않습니다. 이러한 색은 하드 코딩 되 고 **도구 > 옵션** 에서 사용자 지정에 노출 되어야 합니다 ( [최종 사용자를 위한 색 노출](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)참조).
 
-|[|Hex|RGB|
+|견본|Hex|RGB|
 |------------|---------|---------|
 |![견본 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113178, 82|
 |![견본 BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191, 63, 0|
@@ -270,9 +272,9 @@ ms.locfileid: "88114078"
 
 - 따로
 
-- 지역
+- Region
 
-#### <a name="scope"></a>범위
+#### <a name="scope"></a>Scope
  가장 중요 한 선택 구성 요소는 사용자가 작업 중인 창 (활성화)과 포커스가 있는 위치 (선택)를 알고 있는지 확인 하는 것입니다. Visual Studio는 Windows에서 창 관리 기능을 확장 하지만 활성화 체계는 동일 합니다. 창과 상호 작용 하면 창으로 포커스가 이동 합니다. Visual Studio에는 두 가지 활성화 표시기가 있습니다. 하나는 문서 창을 위한 것이 고 다른 하나는 도구 창입니다.
 
  문서 창의 경우 활성 창은 앞으로 오고 배경색을 변경 하는 문서 창 탭으로 표시 됩니다.
@@ -310,7 +312,7 @@ ms.locfileid: "88114078"
  **Visual Studio에서 영역 (box) 선택**
 
 #### <a name="text-selection-appearance"></a>텍스트 선택 모양
- 편집기에서 활성 및 비활성 선택에 사용 되는 색을 사용자 지정할 수 있습니다. 편집기의 시각적 모양을 사용자 지정 하려면 사용자가 **도구 > 옵션**으로 이동한 다음 **환경 > 글꼴 및 색 > 텍스트 편집기**를 살펴보면 됩니다.
+ 편집기에서 활성 및 비활성 선택에 사용 되는 색을 사용자 지정할 수 있습니다. 편집기의 시각적 모양을 사용자 지정 하려면 사용자가 **도구 > 옵션** 으로 이동한 다음 **환경 > 글꼴 및 색 > 텍스트 편집기** 를 살펴보면 됩니다.
 
 ### <a name="graphical-selection"></a>그래픽 선택
 
@@ -393,7 +395,7 @@ ms.locfileid: "88114078"
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> 그래픽 개체 선택 모양
  선택 핸들은 개체의 경계 상자 주위에서 사각형 패턴으로 그린 사각형입니다. 아래 차트에서는 그래픽 개체에 포함 될 수 있는 다양 한 상태의 예를 핸들, 크기 조정 및 내부 편집 모양으로 보여 줍니다. 핸들 크기는 **Getsystemmetrics** API를 사용 하 여 창 테두리 및 가장자리 메트릭에 연결 해야 합니다.
 
-| 시스템 상태 | 모양 | 시각적 정보 |
+| 주 | 모양 | 시각적 정보 |
 |-------------------------|---------------| - |
 | **선택 취소** | 기본값 | ![기본 단추 상태](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **기본 선택** | 점 | ![크기 조정 핸들을 사용한 기본 선택](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -439,7 +441,7 @@ ms.locfileid: "88114078"
 |--------|------------|
 | 목록 | 인접해 |
 | 목록 | 따로 |
-| 목록 | 지역 |
+| 목록 | Region |
 
  목록에서 한 번을 클릭 하면 클릭이 발생 한 행이 선택 됩니다. 사용자가 내부 편집을 지 원하는 목록 셀을 클릭 하는 경우 내부 편집을 위해 셀도 즉시 활성화 됩니다. 그렇지 않으면 전체 행이 즉시 선택 되 고 강조 표시 됩니다.
 
@@ -482,8 +484,8 @@ ms.locfileid: "88114078"
 |대화 상자|이동 된 경우 대화 상자의 위치입니다.<br /><br /> 사용자가 대화 상자에서 마지막으로 사용한 뷰입니다.|대화 상자를 닫을 때<br /><br /> Visual Studio 세션이 종료 되는 경우|메모리<br /><br /> **HKEY_Current_User** 의 레지스트리|
 |시간 범위|창의 크기 및 위치|창이 닫힐 때<br /><br /> Visual Studio 모드가 변경 되는 경우<br /><br /> Visual Studio 세션이 종료 되는 경우|프로젝트에 대 한 **사용자 옵션 (.suo)** 파일<br /><br /> 창 설정에 대 한 사용자 지정 옵션 파일|
 |문서|문서의 현재 선택 영역입니다.<br /><br /> 문서 보기<br /><br /> 사용자가 방문한 마지막 여러 위치|문서를 저장 하는 경우|프로젝트에 대 한 **사용자 옵션 (.suo)** 파일|
-|프로젝트|파일에 대 한 참조<br /><br /> 디스크에 있는 디렉터리에 대 한 참조<br /><br /> 다른 소프트웨어에 대 한 참조<br /><br /> 구성 요소<br /><br /> 프로젝트 자체에 대 한 상태 정보|프로젝트가 저장 되는 경우|프로젝트 파일|
-|해결 방법|프로젝트에 대 한 참조<br /><br /> 파일에 대 한 참조|프로젝트 또는 솔루션을 저장 하는 경우|**솔루션 (.sln)** 파일|
+|Project|파일에 대 한 참조<br /><br /> 디스크에 있는 디렉터리에 대 한 참조<br /><br /> 다른 소프트웨어에 대 한 참조<br /><br /> 구성 요소<br /><br /> 프로젝트 자체에 대 한 상태 정보|프로젝트가 저장 되는 경우|프로젝트 파일|
+|솔루션|프로젝트에 대 한 참조<br /><br /> 파일에 대 한 참조|프로젝트 또는 솔루션을 저장 하는 경우|**솔루션 (.sln)** 파일|
 |**도구 > 옵션** 의 설정|키보드 사용자 지정<br /><br /> 도구 모음 사용자 지정<br /><br /> 색 구성표|**도구 > 옵션** 대화 상자를 닫을 때<br /><br /> Visual Studio 세션이 종료 되는 경우|**HKEY_Current_User** 의 레지스트리|
 
  사용자가 수행 하는 작업 및이 작업을 수행 하는 경우, 설정이 메모리에 저장 되는지 (세션 중), 프로젝트 또는 솔루션 파일의 일부로, **솔루션 옵션 (.suo)** 파일의 일부로, 또는 해당 소프트웨어 구성 요소 에서만 알고 있는 사용자 지정 설정 파일로 저장 되는지 여부를 지정 합니다. 위의 표에서는 설정을 저장할 수 있는 몇 가지 이벤트를 보여 줍니다. 그러나 다음과 같은 경우에는 상태를 저장 하는 것이 좋습니다.
