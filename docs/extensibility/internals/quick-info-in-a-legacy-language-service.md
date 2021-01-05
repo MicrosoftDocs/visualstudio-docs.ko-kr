@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 요약 정보 | Microsoft Docs
+description: 식별자에 대 한 정보를 표시 하기 위한 IntelliSense 요약 정보 작업에 대 한 지원에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705938"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875078"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>레거시 언어 서비스의 빠른 정보
 IntelliSense 빠른 정보는 사용자가 식별자에 캐럿을 배치 하 고 **intellisense** 메뉴에서 **요약 정보** 를 선택 하거나 식별자 위에 마우스 커서를 둘 때 원본에서 식별자에 대 한 정보를 표시 합니다. 이렇게 하면 식별자에 대 한 정보와 함께 도구 설명이 표시 됩니다. 이 정보는 일반적으로 식별자 형식으로 구성 됩니다. 디버그 엔진이 활성화 된 경우이 정보에는 현재 값이 포함 될 수 있습니다. 디버그 엔진은 식 값을 제공 하는 반면 언어 서비스는 식별자만 처리 합니다.

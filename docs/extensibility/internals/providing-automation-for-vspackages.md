@@ -1,5 +1,7 @@
 ---
 title: Vspackage에 대 한 자동화 제공 | Microsoft Docs
+description: VSPackage 관련 개체를 구현 하 고 표준 자동화 개체를 구현 하 여 Vspackage에 대 한 자동화를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705957"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875403"
 ---
 # <a name="providing-automation-for-vspackages"></a>VSPackage에 대한 자동화 제공
 Vspackage에 대 한 자동화를 제공 하는 두 가지 주요 방법은 VSPackage 관련 개체를 구현 하 고 표준 자동화 개체를 구현 하는 것입니다. 일반적으로 환경의 자동화 모델을 확장 하는 데 함께 사용 됩니다.
 
-## <a name="vspackage-specific-objects"></a>VSPackage 개체
+## <a name="vspackage-specific-objects"></a>개체 VSPackage-Specific
  자동화 모델 내의 특정 위치에서는 VSPackage에 고유한 자동화 개체를 제공 해야 합니다. 예를 들어 새 프로젝트에는 VSPackage에서 제공 하는 고유 개체가 필요 합니다. 이러한 개체의 이름은 레지스트리에 입력 되며 environment 개체에 대 한 호출을 통해 가져옵니다 `DTE` .
 
  VSPackage 개체는 자동화 소비자가 표준 개체의 개체 속성을 통해 제공 된 개체를 사용 하는 경우에도 가져올 수 있습니다. 예를 들어 표준 개체에는 `Window` `Object` 일반적으로 속성으로 알려진 속성이 있습니다 `Windows.Object` . 소비자가 VSPackage에서 구현 된 창에서를 호출 하는 경우 `Window.Object` 고유한 디자인의 특정 자동화 개체를 다시 전달 합니다.

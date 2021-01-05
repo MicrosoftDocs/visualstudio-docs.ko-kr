@@ -1,5 +1,7 @@
 ---
 title: VSCT XML 스키마 참조 | Microsoft Docs
+description: VSCT XML 스키마 참조 문서에서는 각에 대해 허용 되는 자식 요소 및 특성을 사용 하 여 명령 테이블 컴파일러 스키마 요소에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697909"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863985"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 스키마 참조
 각에 대해 허용 되는 자식 요소 및 특성을 포함 하는 명령 테이블 컴파일러 스키마 요소 테이블을 제공 합니다.

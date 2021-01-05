@@ -1,5 +1,7 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
+description: 소스 제어에서 찾을 수 있도록 업데이트 디렉터리에 전달 되는 POPDIRLISTFUNC 콜백 함수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702074"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863449"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 이 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 함수에 제공 되는 콜백 함수로, 디렉터리 및 파일 이름 (선택 사항)의 컬렉션을 업데이트 하 여 소스 제어에서 찾을 수 있도록 합니다.

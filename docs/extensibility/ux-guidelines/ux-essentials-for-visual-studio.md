@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 용 UX Essentials | Microsoft Docs
+description: 화면 해상도에 대 한 정보를 비롯 하 여 Visual Studio 용으로 개발 하는 새로운 기능에 대 한 이러한 사용자 환경 모범 사례를 검토 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698338"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864040"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio용 UX Essentials
 
@@ -55,11 +57,11 @@ ms.locfileid: "80698338"
 
 ### <a name="minimum-resolution"></a>최소 해상도
 
-- Visual Studio 2015에 대 한 최소 해상도는 **1280x720**입니다. 즉, 최적의 사용자 환경이 아닐 수 있지만이 해상도에서 Visual *Studio를 사용할 수 있습니다* . 1280x720 보다 낮은 해상도에서 모든 측면을 사용할 수 있는 것은 아닙니다.
+- Visual Studio 2015에 대 한 최소 해상도는 **1280x720** 입니다. 즉, 최적의 사용자 환경이 아닐 수 있지만이 해상도에서 Visual *Studio를 사용할 수 있습니다* . 1280x720 보다 낮은 해상도에서 모든 측면을 사용할 수 있는 것은 아닙니다.
 
-- Visual Studio에 대 한 대상 확인은 **1366x768**입니다. 이것은 *좋은* 사용자 환경을 보장 하는 가장 낮은 해상도입니다.
+- Visual Studio에 대 한 대상 확인은 **1366x768** 입니다. 이것은 *좋은* 사용자 환경을 보장 하는 가장 낮은 해상도입니다.
 
-- 초기 대화 상자 높이는 **700 픽셀 보다 작아야**하므로 96 DPI에서 IDE 프레임의 최소 해상도에 맞게 조정 됩니다.
+- 초기 대화 상자 높이는 **700 픽셀 보다 작아야** 하므로 96 DPI에서 IDE 프레임의 최소 해상도에 맞게 조정 됩니다.
 
 ### <a name="high-density-displays"></a>고밀도 디스플레이
  Visual Studio의 UI는 Windows에서 지원 되는 모든 DPI 배율 요소 (150%, 200% 및 250%)에서 잘 작동 해야 합니다.
@@ -120,11 +122,11 @@ UI를 해제 하기 전에 사용자가 설명 텍스트를 읽을 수 있도록
 
 ![그림 A: 명령 모음 앤티 pattern](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-FigureA")<br />그림 A: 명령 모음 앤티 pattern
 
-**그림 B**에 표시 된 것 처럼 약간 더 나은 방법으로 도구 모음에이 유형의 설정을 저장 하 고 있습니다. 분할 단추는 공간을 절약 하는 반면 드롭다운 보다 향상 된 기능 이므로, 두 디자인 모두 도구 모음을 사용 하 여 실제 명령이 아닌 항목의 수준을 올립니다.
+**그림 B** 에 표시 된 것 처럼 약간 더 나은 방법으로 도구 모음에이 유형의 설정을 저장 하 고 있습니다. 분할 단추는 공간을 절약 하는 반면 드롭다운 보다 향상 된 기능 이므로, 두 디자인 모두 도구 모음을 사용 하 여 실제 명령이 아닌 항목의 수준을 올립니다.
 
 ![그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-FigureB")<br />그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.
 
-**그림 C**에 표시 된 올바른 방법에서이 설정은 일련의 명령에 연결 됩니다. 설정 되는 전역 설정이 없으며 네 개의 명령 간에만 전환 하 고 있습니다. 이 경우 도구 모음에서 명령을 사용할 수 있습니다.
+**그림 C** 에 표시 된 올바른 방법에서이 설정은 일련의 명령에 연결 됩니다. 설정 되는 전역 설정이 없으며 네 개의 명령 간에만 전환 하 고 있습니다. 이 경우 도구 모음에서 명령을 사용할 수 있습니다.
 
 ![그림 C: Visual Studio 명령 모음 패턴의 올바른 사용](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-패턴")<br />그림 C: Visual Studio 명령 모음 패턴의 올바른 사용
 
@@ -154,7 +156,7 @@ UI를 해제 하기 전에 사용자가 설명 텍스트를 읽을 수 있도록
 
    ![색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.
 
-**향상 되는 솔루션:** 사용자가 링크를 클릭 하 여 요청 하는 질문을 합니다. 예:
+**향상 되는 솔루션:** 사용자가 링크를 클릭 하 여 요청 하는 질문을 합니다. 예를 들면 다음과 같습니다.
 
 - Microsoft Azure 서비스는 어떻게 작동 하나요?
 

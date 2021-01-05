@@ -1,5 +1,7 @@
 ---
 title: QUERY[FUNC] | Microsoft Docs
+description: QUERY, FUNC callback 함수는 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 데 사용 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701640"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864018"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 이 함수는 [Sccquerychanges](../extensibility/sccquerychanges-function.md) 작업에서 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 데 사용 하는 콜백 함수입니다.

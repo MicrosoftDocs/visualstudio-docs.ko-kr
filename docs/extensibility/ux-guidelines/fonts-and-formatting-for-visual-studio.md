@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에 대 한 글꼴 및 서식 Microsoft Docs
+description: 환경 글꼴을 사용 하는 방법을 비롯 하 여 Visual Studio에서 디자인 하는 새로운 기능에 대 한 글꼴 및 서식에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536112"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863530"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio의 글꼴 및 서식 지정
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -21,14 +23,14 @@ ms.locfileid: "85536112"
 
 - **환경 글꼴** -대화 상자, 메뉴, 도구 창 및 문서 창을 포함 하 여 모든 인터페이스 요소에 사용 되는 IDE (통합 개발 환경)의 기본 글꼴입니다. 기본적으로 환경 글꼴은 현재 버전의 Windows에서 9 포인트 맑은 고딕로 표시 되는 시스템 글꼴에 연결 됩니다. 모든 인터페이스 요소에 대해 글꼴 하나를 사용 하면 IDE 전체에서 일관 된 글꼴 모양을 유지할 수 있습니다.
 
-- **텍스트 편집기** -코드 및 기타 텍스트 기반 편집기에서 노출 하는 요소는 **도구 > 옵션**의 텍스트 편집기 페이지에서 사용자 지정할 수 있습니다.
+- **텍스트 편집기** -코드 및 기타 텍스트 기반 편집기에서 노출 하는 요소는 **도구 > 옵션** 의 텍스트 편집기 페이지에서 사용자 지정할 수 있습니다.
 
-- **특정 컬렉션** -해당 인터페이스 요소의 사용자 지정을 제공 하는 디자이너 창은 **도구 > 옵션**의 자체 설정 페이지에서 해당 디자인 화면에 특정 한 글꼴을 노출할 수 있습니다.
+- **특정 컬렉션** -해당 인터페이스 요소의 사용자 지정을 제공 하는 디자이너 창은 **도구 > 옵션** 의 자체 설정 페이지에서 해당 디자인 화면에 특정 한 글꼴을 노출할 수 있습니다.
 
 ### <a name="editor-font-customization-and-resizing"></a>편집기 글꼴 사용자 지정 및 크기 조정
  사용자는 일반 사용자 인터페이스에 관계 없이 기본 설정에 따라 편집기에서 텍스트의 크기 및/또는 색을 확대 하거나 축소 하는 경우가 많습니다. 환경 글꼴은 편집기나 편집기/디자이너의 일부로 표시 될 수 있는 요소에 사용 되므로 이러한 글꼴 분류 중 하나가 변경 될 때 예상 되는 동작을 확인 하는 것이 중요 합니다.
 
- 편집기에 표시 되지만 *콘텐츠의*일부가 아닌 UI 요소를 만드는 경우 요소를 예측 가능한 방식으로 크기 조정 하도록 텍스트 글꼴이 아니라 환경 글꼴을 사용 하는 것이 중요 합니다.
+ 편집기에 표시 되지만 *콘텐츠의* 일부가 아닌 UI 요소를 만드는 경우 요소를 예측 가능한 방식으로 크기 조정 하도록 텍스트 글꼴이 아니라 환경 글꼴을 사용 하는 것이 중요 합니다.
 
 1. 편집기의 코드 텍스트에 대해 코드 텍스트 글꼴 설정으로 크기를 조정 하 고 편집기 텍스트의 확대/축소 수준에 응답 합니다.
 
@@ -78,7 +80,7 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal` bool을 반환 하나요? (nullable 부울)를 사용 하 여 `DialogResult` 필요한 경우 사용할 수 있습니다. 대화 상자가 **정상**으로 닫히면 반환 값은 true입니다.
+ `ShowModal` bool을 반환 하나요? (nullable 부울)를 사용 하 여 `DialogResult` 필요한 경우 사용할 수 있습니다. 대화 상자가 **정상** 으로 닫히면 반환 값은 true입니다.
 
  `HwndSource`팝업 창이 나 Win32/WinForms 부모 창의 wpf 자식 창과 같이, 대화 상자가 아닌 다른 WPF UI를 표시 해야 하는 경우에는 `FontFamily` `FontSize` wpf 요소의 루트 요소에서 및를 설정 해야 합니다. (셸은 주 창에서 속성을 설정 하지만 이전에는 상속 되지 않습니다 `HWND` .) Shell은 다음과 같이 속성을 바인딩할 수 있는 리소스를 제공 합니다.
 
@@ -120,16 +122,16 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
 **XAML:** 표시 된 대로 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>
 ```
 
@@ -139,16 +141,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);
 ```
 
  **XAML:** 표시 된 대로 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>
 ```
 
@@ -158,16 +160,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);
 ```
 
  **XAML:** 다음과 같이 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>
 ```
 
@@ -177,16 +179,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);
 ```
 
  **XAML:** 다음과 같이 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>
 ```
 
@@ -196,16 +198,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);
 ```
 
  **XAML:** 다음과 같이 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>
 ```
 
@@ -215,16 +217,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);
 ```
 
  **XAML:** 다음과 같이 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
@@ -234,16 +236,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **절차적 코드:** 여기서 `textBlock` 는 이전에 정의 된 TextBlock 이며 `label` 이전에 정의 된 레이블입니다.
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironmentBoldStyleKey);
 ```
 
  **XAML:** 다음과 같이 TextBlock 또는 Label의 스타일을 설정 합니다.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>
 ```
 
@@ -299,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  이 경우 "사용자 정보" 및 "제품 정보"는 글꼴을 사용할 수 없습니다. 경우에 따라 명시적인 디자인을 선택할 수 있지만 명시적 글꼴이 검토 사양의 일부로 지정 되지 않은 경우에는 버그가 될 수 있습니다.
 
- 글꼴을 다시 설정 하려면 **도구 > 옵션 > 환경 > 글꼴 및 색**에서 "기본값 사용"을 클릭 합니다.
+ 글꼴을 다시 설정 하려면 **도구 > 옵션 > 환경 > 글꼴 및 색** 에서 "기본값 사용"을 클릭 합니다.
 
 ## <a name="text-style"></a><a name="BKMK_TextStyle"></a> 텍스트 스타일
  텍스트 스타일은 글꼴 크기, 무게 및 대/소문자를 나타냅니다. 구현 지침은 [환경 글꼴](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)을 참조 하세요.
@@ -347,9 +349,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |음성 부분에 관계 없이 첫 번째 및 마지막 단어||
 |동사 구의 일부인 전치사|"모든 Windows 종료" 또는 "시스템 종료"|
 |머리글자어의 모든 문자|HTML, XML, URL, IDE, RGB|
-|명사 또는 적절 한 형용사 인 경우 또는 단어의 가중치가 동일한 경우 복합 단어의 두 번째 단어|상호 참조, Microsoft 이전 소프트웨어, 읽기/쓰기 액세스, 런타임|
+|명사 또는 적절 한 형용사 인 경우 또는 단어의 가중치가 동일한 경우 복합 단어의 두 번째 단어|상호 참조, Microsoft 이전 소프트웨어, 읽기/쓰기 액세스, Run-Time|
 
-|소문자|예제|
+|소문자|예|
 |---------------|--------------|
 |첫 번째 단어를 수정 하는 음성 또는 분사의 다른 부분인 복합 단어의 두 번째 단어|방법, 사용 안 함|
 |문서 (제목에서 첫 번째 단어를 제외 하 고)|a, an, the|
@@ -389,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>기울임꼴
  Visual Studio에서는 기울임꼴 또는 굵은 기울임꼴 텍스트를 사용 하지 않습니다.
 
-#### <a name="color"></a>색상
+#### <a name="color"></a>Color
 
 - 파랑은 하이퍼링크 (탐색 및 명령) 용으로 예약 되어 있으며 방향에 사용 하면 안 됩니다.
 

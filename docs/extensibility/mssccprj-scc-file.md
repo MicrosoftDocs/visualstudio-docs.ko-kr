@@ -1,5 +1,7 @@
 ---
 title: MSSCCPRJ.SCC. SCC 파일 | Microsoft Docs
+description: MSSCCPRJ.SCC에 대해 알아봅니다. SCC 파일은 Visual Studio SDK와 함께 작동 하는 소스 제어 플러그 인에서 사용 하는 로컬 클라이언트 쪽 파일입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +13,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702465"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863476"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC. SCC 파일
 IDE를 사용 하 여 소스 제어에서 Visual Studio 솔루션 또는 프로젝트를 배치한 경우 IDE는 두 가지 주요 정보를 받습니다. 이 정보는 소스 제어 플러그 인에서 문자열 형식으로 제공 됩니다. 이러한 문자열인 "지 Xpath" 및 "ProjName"은 IDE에 불투명 하지만 플러그 인에서 버전 제어의 솔루션 또는 프로젝트를 찾는 데 사용 됩니다. 일반적으로 IDE는 먼저 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)를 호출 하 여 이러한 문자열을 가져온 후 솔루션 또는 프로젝트 파일에 저장 [합니다.](../extensibility/sccopenproject-function.md) 솔루션 및 프로젝트 파일에 포함 되는 경우 사용자가 버전 제어에 있는 솔루션 및 프로젝트 파일을 분기, 포크 또는 복사 하는 경우 "포함 Xpath" 및 "ProjName" 문자열이 자동으로 업데이트 되지 않습니다. 솔루션 및 프로젝트 파일이 버전 제어에서 올바른 위치를 가리키는지 확인 하려면 사용자가 문자열을 수동으로 업데이트 해야 합니다. 문자열은 불투명 하므로 항상 업데이트 해야 하는 방법이 명확 하지 않을 수 있습니다.
 
- 소스 제어 플러그 인은 Mssccprj.scc 파일 이라는 특수 파일에 " *MSSCCPRJ.SCC* " 문자열을 저장 하 여이 문제를 방지할 수 있습니다. 플러그 인에서 소유 하 고 유지 관리 하는 로컬 클라이언트 쪽 파일입니다. 이 파일은 소스 제어에 포함 되지 않지만 소스 제어 파일을 포함 하는 모든 디렉터리에 대해 플러그 인에서 생성 됩니다. Visual Studio 솔루션 및 프로젝트 파일을 확인 하기 위해 소스 제어 플러그 인에서 파일 확장명을 표준 또는 사용자가 제공한 목록과 비교할 수 있습니다. IDE에서 플러그 인이 Mssccprj.scc 파일을 지원 한다는 것을 감지 하면 " *MSSCCPRJ.SCC* " 문자열을 솔루션 및 프로젝트 파일에 포함 하는 것을 중지 하 고 대신 *mssccprj.scc* 파일에서 해당 문자열을 읽습니다.
+ 소스 제어 플러그 인은 Mssccprj.scc 파일 이라는 특수 파일에 "  " 문자열을 저장 하 여이 문제를 방지할 수 있습니다. 플러그 인에서 소유 하 고 유지 관리 하는 로컬 클라이언트 쪽 파일입니다. 이 파일은 소스 제어에 포함 되지 않지만 소스 제어 파일을 포함 하는 모든 디렉터리에 대해 플러그 인에서 생성 됩니다. Visual Studio 솔루션 및 프로젝트 파일을 확인 하기 위해 소스 제어 플러그 인에서 파일 확장명을 표준 또는 사용자가 제공한 목록과 비교할 수 있습니다. IDE에서 플러그 인이 Mssccprj.scc 파일을 지원 한다는 것을 감지 하면 "  " 문자열을 솔루션 및 프로젝트 파일에 포함 하는 것을 중지 하 고 대신 *mssccprj.scc* 파일에서 해당 문자열을 읽습니다.
 
  *Mssccprj.scc* 파일을 지 원하는 소스 제어 플러그 인은 다음 지침을 따라야 합니다.
 
 - 디렉터리 마다 하나의 *mssccprj.scc* 파일만 있을 수 있습니다.
 
-- Mssccprj.scc 파일에는 지정 된 디렉터리 내에서 소스 제어에 있는 여러 파일에 대 한 " *MSSCCPRJ.SCC* " 및 "ProjName"이 포함 될 수 있습니다.
+- Mssccprj.scc 파일에는 지정 된 디렉터리 내에서 소스 제어에 있는 여러 파일에 대 한 "  " 및 "ProjName"이 포함 될 수 있습니다.
 
-- "내부 Xpath" 문자열에는 따옴표가 없어야 합니다. 따옴표를 구분 기호로 사용할 수 있습니다. 예를 들어 큰따옴표 쌍을 사용 하 여 빈 문자열을 나타낼 수 있습니다. IDE는 Mssccprj.scc 파일에서 읽을 때 " *MSSCCPRJ.SCC* " 문자열에서 모든 따옴표를 제거 합니다.
+- "내부 Xpath" 문자열에는 따옴표가 없어야 합니다. 따옴표를 구분 기호로 사용할 수 있습니다. 예를 들어 큰따옴표 쌍을 사용 하 여 빈 문자열을 나타낼 수 있습니다. IDE는 Mssccprj.scc 파일에서 읽을 때 "  " 문자열에서 모든 따옴표를 제거 합니다.
 
 - Mssccprj.scc의 "ProjName" 문자열 *입니다. SCC 파일* 은 함수에서 반환 된 문자열과 정확히 일치 해야 합니다 `SccGetProjPath` . 함수에서 반환 된 문자열이 따옴표를 포함 하는 경우 *mssccprj.scc* 파일의 문자열에 따옴표를 포함 해야 하 고 그 반대의 경우도 마찬가지입니다.
 

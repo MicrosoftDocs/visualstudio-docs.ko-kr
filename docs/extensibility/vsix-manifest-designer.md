@@ -1,5 +1,7 @@
 ---
 title: VSIX 매니페스트 디자이너 | Microsoft Docs
+description: VSIX 매니페스트 디자이너에서 VSIX 패키지 매니페스트 파일을 수정 하는 방법에 대해 알아봅니다 .이 파일은 Visual Studio 확장의 설치 동작을 설정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697888"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863963"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 매니페스트 디자이너
 Visual Studio 확장의 설치 동작을 설정 하는 VSIX 패키지 매니페스트 파일을 수정 합니다.
 
  **Vsix 매니페스트 디자이너** 는 기본 vsix 스키마에 매핑됩니다. 디자이너에서 해당 하는 컨트롤을 사용 하 여 스키마의 모든 요소를 설정할 수 있습니다. 스키마에 대 한 자세한 내용은 [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)를 참조 하세요.
 
- **VSIX 매니페스트 디자이너**를 열려면 **솔루션 탐색기**에서 *source.extension.vsixmanifest* 파일을 찾아 파일을 엽니다. 파일에 유효한 XML이 없으면 매니페스트 디자이너가 열리지 않습니다.
+ **VSIX 매니페스트 디자이너** 를 열려면 **솔루션 탐색기** 에서 *source.extension.vsixmanifest* 파일을 찾아 파일을 엽니다. 파일에 유효한 XML이 없으면 매니페스트 디자이너가 열리지 않습니다.
 
 > [!NOTE]
 > *Source.extension.vsixmanifest* 파일은 패키지를 빌드할 때 *source.extension.vsixmanifest* 로 출력 됩니다.
@@ -54,15 +56,15 @@ Visual Studio 확장의 설치 동작을 설정 하는 VSIX 패키지 매니페�
 
   **메타 데이터** 탭에는 다음과 같은 컨트롤이 있습니다.
 
-  **설명** 확장 **관리자**에 표시 되는 확장에 대 한 텍스트 설명을 제공 합니다.
+  **설명** 확장 **관리자** 에 표시 되는 확장에 대 한 텍스트 설명을 제공 합니다.
 
   **언어** 매니페스트의 텍스트 데이터에 해당 하는 패키지의 기본 언어를 지정 합니다. `Language`특성은 리소스 어셈블리에 대 한 CLR (공용 언어 런타임) 로캘 코드 규칙 (예: en-us, en, fr-fr)을 따릅니다. 기본적으로이 값은 중립입니다. 즉, 패키지가 Visual Studio의 모든 언어 버전에서 실행 됩니다.
 
   **라이선스** 사용자 라이선스 (있는 경우)가 포함 된 텍스트 파일을 지정 합니다.
 
-  **아이콘** 아이콘이 있는 경우 **확장 관리자**에 표시 될 아이콘이 포함 된 그래픽 파일 (*.png*, *.bmp*, *.jpeg*, *.ico*)을 지정 합니다. 아이콘 이미지는 32x32 픽셀 이어야 합니다. 그렇지 않으면 해당 크기로 크기가 조정 됩니다. 아이콘을 지정 하지 않으면 **확장 관리자** 가 기본 아이콘을 사용 합니다.
+  **아이콘** 아이콘이 있는 경우 **확장 관리자** 에 표시 될 아이콘이 포함 된 그래픽 파일 (*.png*, *.bmp*, *.jpeg*, *.ico*)을 지정 합니다. 아이콘 이미지는 32x32 픽셀 이어야 합니다. 그렇지 않으면 해당 크기로 크기가 조정 됩니다. 아이콘을 지정 하지 않으면 **확장 관리자** 가 기본 아이콘을 사용 합니다.
 
-  **미리 보기 이미지** 미리 보기 이미지가 있는 경우 **확장 관리자**에 표시 될 미리 보기 이미지를 포함 하는 그래픽 파일 (*.png*, *.bmp*, *.jpeg*, *.ico*)을 지정 합니다. 미리 보기 이미지는 200 x 200 픽셀 이어야 합니다. 미리 보기 이미지를 지정 하지 않으면 **확장 관리자** 가 기본 이미지를 사용 합니다.
+  **미리 보기 이미지** 미리 보기 이미지가 있는 경우 **확장 관리자** 에 표시 될 미리 보기 이미지를 포함 하는 그래픽 파일 (*.png*, *.bmp*, *.jpeg*, *.ico*)을 지정 합니다. 미리 보기 이미지는 200 x 200 픽셀 이어야 합니다. 미리 보기 이미지를 지정 하지 않으면 **확장 관리자** 가 기본 이미지를 사용 합니다.
 
   **태그** 검색 힌트에 사용할 텍스트 태그를 추가 합니다.
 

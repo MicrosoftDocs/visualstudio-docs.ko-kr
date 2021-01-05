@@ -1,5 +1,7 @@
 ---
 title: 속성 페이지 | Microsoft Docs
+description: 사용자가 프로젝트 속성을 보고 변경할 수 있도록 하는 Visual Studio SDK의 새 프로젝트 형식에 대 한 속성 페이지 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706052"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875533"
 ---
 # <a name="property-pages"></a>속성 페이지
 사용자는 속성 페이지를 사용 하 여 프로젝트 구성에 종속 된 속성 및 독립적인 속성을 보고 변경할 수 있습니다. 속성 **페이지** 단추는 선택한 개체의 속성 페이지 뷰를 제공 하는 개체의 **속성** 창이 나 솔루션 탐색기 도구 모음에서 사용할 수 있습니다. 속성 페이지는 환경에서 만들어지며 솔루션 및 프로젝트에 사용할 수 있습니다. 그러나 구성에 종속 된 속성을 사용 하는 프로젝트 항목에도 사용할 수 있습니다. 프로젝트 내의 파일이 적절 하 게 빌드하려면 다른 컴파일러 스위치 설정을 사용 해야 하는 경우이 기능을 사용할 수 있습니다.

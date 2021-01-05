@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 코드 다시 포맷 | Microsoft Docs
+description: Visual Studio 레거시 언어 서비스의 소스 코드 다시 포맷에 대 한 지원을 사용 하도록 설정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705919"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875364"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 서식 다시 지정
 
@@ -37,7 +39,7 @@ ms.locfileid: "80705919"
 
 다시 포맷을 구현 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.Source> 메서드를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> . <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>개체는 형식을 지정 하는 범위를 설명 하 고 <xref:Microsoft.VisualStudio.Package.EditArray> 개체는 범위에 대해 적용 된 편집 내용을 보유 합니다. 이 범위는 전체 문서 일 수 있습니다. 그러나 범위에 대 한 변경 내용이 여러 개 있을 가능성이 있으므로 모든 변경 내용을 단일 작업으로 되돌릴 수 있어야 합니다. 이렇게 하려면 개체의 모든 변경 내용을 래핑합니다 <xref:Microsoft.VisualStudio.Package.CompoundAction> .이 항목의 "CompoundAction 클래스 사용" 섹션을 참조 하십시오.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 다음 예에서는 쉼표 뒤에 탭이 오거나 줄의 끝에 있는 경우를 제외 하 고 선택 영역에 있는 각 쉼표 뒤에 공백이 하나씩 있는지 확인 합니다. 줄에서 마지막 쉼표 뒤의 후행 공백이 삭제 됩니다. 메서드에서이 메서드를 호출 하는 방법에 대 한 자세한 내용은이 항목의 "CompoundAction 클래스 사용" 섹션을 참조 하세요 <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> .
 
@@ -157,7 +159,7 @@ namespace MyLanguagePackage
 
 코드 섹션에서 수행 되는 모든 서식 지정은 단일 작업으로 되돌릴 수 있어야 합니다. 클래스를 사용 하 여이를 수행할 수 있습니다 <xref:Microsoft.VisualStudio.Package.CompoundAction> . 이 클래스는 텍스트 버퍼에 대 한 편집 작업 집합을 단일 편집 작업으로 래핑합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 클래스를 사용 하는 방법에 대 한 예제는 다음과 같습니다 <xref:Microsoft.VisualStudio.Package.CompoundAction> . 메서드의 예제는이 항목의 "서식 지정 지원 구현" 섹션의 예제를 참조 하세요 `DoFormatting` .
 

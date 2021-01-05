@@ -1,5 +1,7 @@
 ---
 title: 도구 창 등록 | Microsoft Docs
+description: ProvideToolWindowAttribute 및 ProvideToolWindowVisibilityAttribute를 사용 하 여 Visual Studio에서 도구 창을 등록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 140375c3c708957343762b72102dcb8920628aba
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414336"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863796"
 ---
 # <a name="register-a-tool-window"></a>도구 창 등록
 및를 사용 하 여 도구 창을 등록할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```csharp
 

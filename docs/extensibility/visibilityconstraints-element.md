@@ -1,5 +1,7 @@
 ---
 title: VisibilityConstraints 요소 | Microsoft Docs
+description: VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698185"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863915"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 요소
 VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다. 표시 유형은 먼저 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하지 않고 IDE (통합 개발 환경)에 의해 제어 됩니다.
@@ -37,7 +39,7 @@ VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
@@ -58,11 +60,11 @@ VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VisibilityItem 요소](../extensibility/visibilityitem-element.md)
 - [Visual Studio 명령 테이블 (. Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

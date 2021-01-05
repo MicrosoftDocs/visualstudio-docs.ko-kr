@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK 용어집 | Microsoft Docs
+description: 이 용어집에서는 Visual Studio SDK 설명서에서 사용 되는 용어에 대 한 정의를 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 332e606e689e9394f2fcdc8cbc902e2d4a6e5ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698164"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863908"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 용어집
 이 용어집에서는 설명서에 사용 되는 용어에 대 한 정의를 제공 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 합니다.
@@ -73,7 +75,7 @@ ms.locfileid: "80698164"
 
   독립 최상위 구성 요소 모덜리스 최상위 창을 사용 하며 독립 실행형 응용 프로그램 창으로 효과적으로 작동할 수 있지만 in-process 개체로 구현 되는 구성 요소입니다. 따라서 독립적인 최상위 구성 요소가 IDE를 사용 하 여 모달 및 메시지 루프 서비스를 조정 해야 합니다. In-process 개체에는 자체 메시지 루프가 없습니다.
 
-  정보 공급자 정보 공급자는 키워드를 조회 하 고 항목의 목록을 개체 형식으로 반환할 수 있는 모듈입니다 `IVsUserContextItem` . 정보 공급자에 대해 **F1** 및 lookup 키워드 항목을 제공 하려면 컴파일된 도움말 파일 ()을 등록*합니다. HxS*)를 사용 합니다. 이러한 파일의 도움말 항목에서는 동적 도움말 창에 표시 되는 항목 목록을 제공 하 고 사용자가 **F1 키**를 누르는 지 여부를 보여 줍니다.
+  정보 공급자 정보 공급자는 키워드를 조회 하 고 항목의 목록을 개체 형식으로 반환할 수 있는 모듈입니다 `IVsUserContextItem` . 정보 공급자에 대해 **F1** 및 lookup 키워드 항목을 제공 하려면 컴파일된 도움말 파일 ()을 등록 *합니다. HxS*)를 사용 합니다. 이러한 파일의 도움말 항목에서는 동적 도움말 창에 표시 되는 항목 목록을 제공 하 고 사용자가 **F1 키** 를 누르는 지 여부를 보여 줍니다.
 
   내부 구성 요소에는 `IOleInPlaceComponent` IDE 소유의 문서 창에 시각적으로 포함 된 창을 관리 하는 인터페이스를 구현 하는 VSPackage 개체가 있습니다. 내부 구성 요소는 표준 OLE 메뉴-병합에 참여 하지 않습니다. 대신 사용자 인터페이스 요소를 IDE에 통합 합니다.
 

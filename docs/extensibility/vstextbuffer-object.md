@@ -1,5 +1,7 @@
 ---
 title: VSTextBuffer 개체 | Microsoft Docs
+description: VSTextBuffer 개체는 일반적으로 파일에 연결 되는 유니코드 텍스트 스트림을 나타냅니다. 이 문서에서는 VSTextBuffer의 인터페이스를 나열 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e5c2afa08e9c480342bff95d417dfb9174250b83
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413917"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863951"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 텍스트 버퍼 개체는 일반적으로 파일에 연결 되는 유니코드 텍스트 스트림을 나타냅니다. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>개체는 마법사와 같이 핵심 편집기의 컨텍스트 외부에서 사용할 수 있습니다.
 
  다음 표에서는의 인터페이스를 보여 줍니다 `VSTextBuffer` .
 
-|방법|Description|
+|메서드|설명|
 |------------|-----------------|
 |[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|표준 OLE 인터페이스입니다. 버퍼의 실행 취소/다시 실행 처리에 사용 됩니다.|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|표준 OLE 인터페이스입니다.|
@@ -43,7 +45,7 @@ ms.locfileid: "93413917"
 ## <a name="remarks"></a>설명
  는 `VSTextBuffer` 일반적으로에 대 한 호출에 의해 검색 됩니다 `QueryInterface` `IVsTextBuffer` . 자세한 내용은 [텍스트 버퍼](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)

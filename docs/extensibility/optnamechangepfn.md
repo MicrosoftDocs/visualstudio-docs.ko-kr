@@ -1,5 +1,7 @@
 ---
 title: OPTNAMECHANGEPFN | Microsoft Docs
+description: 소스 제어 플러그 인에서 Visual Studio IDE로 이름 변경을 전달 하는 OPTNAMECHANGEPFN callback 함수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e18a3e5004a86bb96ad77112f4c81ebca3e59cbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702243"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863429"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 이 함수는 [Sccsetoption](../extensibility/sccsetoption-function.md) (옵션 사용)에 대 한 호출에 지정 된 콜백 함수 `SCC_OPT_NAMECHANGEPFN` 이며, 소스 제어 플러그 인의 이름 변경을 IDE에 다시 전달 하는 데 사용 됩니다.

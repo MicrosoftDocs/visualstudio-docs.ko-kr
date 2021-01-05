@@ -1,5 +1,7 @@
 ---
 title: 부모 요소 | Microsoft Docs
+description: 부모 요소는 요소가 단추, 콤보 상자, 메뉴 또는 그룹의 부모 임을 지정 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702226"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863333"
 ---
 # <a name="parent-element"></a>부모 요소
 단추나 콤보 상자의 부모는 그룹 일 수만 있습니다. 메뉴 또는 그룹의 부모는 다른 메뉴 또는 그룹 일 수 있습니다. [Commandplacement 요소](../extensibility/commandplacement-element.md)에서이 요소는 필수입니다. 다른 모든 경우에는 선택 사항입니다. 이 요소를 생략 하면의 부모가 암시 됩니다 `Group_Undefined:0` .
@@ -32,7 +34,7 @@ ms.locfileid: "80702226"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
 |id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|

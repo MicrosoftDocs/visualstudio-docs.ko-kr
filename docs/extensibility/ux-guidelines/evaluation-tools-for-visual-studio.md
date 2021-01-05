@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 용 Evaluation Tools | Microsoft Docs
+description: 이 검사 목록을 사용 하 여 visual Studio 용으로 설계 된 새 기능에 대 한 시각적 개체와 상호 작용 세부 정보의 사용자 환경 품질을 평가할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698424"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863459"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio의 계산 도구
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 용 Craftsmanship 검사 목록
@@ -39,7 +41,7 @@ ms.locfileid: "80698424"
 
 - 모든 레이블이 문장 또는 제목 대/소문자 인지 확인 하 고 텍스트가 모두 소문자 인지 확인 합니다.
 
-    ||정답입니다.|틀렸습니다.|
+    ||정답입니다.|오답입니다.|
     |-|-------------|---------------|
     |**명령 텍스트 (모두)**|문장 케이스:<br /><br /> **디렉터리 이름:**|디렉터리 이름:|
     |**단추 텍스트 (클라이언트)**|제목 대/소문자:<br /><br /> **[기본값으로 설정]**|기본값으로 설정|
@@ -49,7 +51,7 @@ ms.locfileid: "80698424"
 
 - 줄임표 **[...]** 로 사용자 입력 끝을 캡처하기 위해 UI를 시작 하는 단추, 명령 및 명령 링크를 확인 합니다.
 
-  예:
+  예제:
 
   - 대화 상자의 **[고급 ...]** 단추입니다.
 
@@ -73,7 +75,7 @@ ms.locfileid: "80698424"
 
 - 모든 UI 요소가 환경 글꼴 서비스를 사용 하는지 확인 합니다. ( [Visual Studio에 대 한 글꼴 및 서식](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)참조)
 
-     서비스가 사용 중인지 확인 하려면 **도구 > 옵션 > 글꼴 및 색**으로 이동 합니다. 설정 드롭다운에서 환경 글꼴을 선택 하 고 글꼴을 다른 오용 (예: Harrington 또는 돋움)로 변경 하 고 크기를 12 p 12로 설정 합니다. 그런 후 확인을 클릭합니다. IDE를 다시 시작 해야 할 수 있지만 대부분의 UI는 즉시 변경 됩니다. 다시 시작 해도 글꼴 변경을 선택 하지 않는 영역은 환경 글꼴을 사용 하지 않습니다.
+     서비스가 사용 중인지 확인 하려면 **도구 > 옵션 > 글꼴 및 색** 으로 이동 합니다. 설정 드롭다운에서 환경 글꼴을 선택 하 고 글꼴을 다른 오용 (예: Harrington 또는 돋움)로 변경 하 고 크기를 12 p 12로 설정 합니다. 그런 후 확인을 클릭합니다. IDE를 다시 시작 해야 할 수 있지만 대부분의 UI는 즉시 변경 됩니다. 다시 시작 해도 글꼴 변경을 선택 하지 않는 영역은 환경 글꼴을 사용 하지 않습니다.
 
 - 서비스에서 파생 된 글꼴 (예: 굵게 또는 확대 텍스트)이 환경 글꼴 크기가 변경 될 때 "일반" 텍스트와 관련 하 여 크기와 형식을 유지 하는지 확인 합니다.
 
@@ -99,7 +101,7 @@ ms.locfileid: "80698424"
 
 #### <a name="dialog-operation-buttons-vs-client-only"></a>대화 상자 작업 단추 (VS 클라이언트 전용)
 
-- 작업 단추가 **확인**, **취소**, **적용**순서로 정렬 되어 있는지 확인 합니다.
+- 작업 단추가 **확인**, **취소**, **적용** 순서로 정렬 되어 있는지 확인 합니다.
 
 - **확인** 및 **취소** 단추가 표준 크기 (75x23 픽셀) 인지 확인 합니다.
 

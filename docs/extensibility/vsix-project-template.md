@@ -1,5 +1,7 @@
 ---
 title: VSIX 프로젝트 템플릿 | Microsoft Docs
+description: VSIX 프로젝트 템플릿을 사용 하 여 VSIX 프로젝트에서 Visual Studio 확장을 래핑하고 Visual Studio Marketplace에 패키지를 게시 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697930"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863877"
 ---
 # <a name="vsix-project-template"></a>VSIX 프로젝트 템플릿
 
@@ -52,7 +54,7 @@ VSIX 프로젝트 템플릿에는 두 가지 주요 사용이 있습니다.
 
 2. **Vsix 프로젝트** 템플릿을 사용 하 여 vsix 프로젝트를 만듭니다.
 
-    *Source.extension.vsixmanifest* 이 **매니페스트 디자이너**에서 열립니다.
+    *Source.extension.vsixmanifest* 이 **매니페스트 디자이너** 에서 열립니다.
 
 3. **자산** 탭에서 **새로 만들기** 단추를 선택 합니다.
 
@@ -62,7 +64,7 @@ VSIX 프로젝트 템플릿에는 두 가지 주요 사용이 있습니다.
 
 5. 현재 솔루션에 포함 된 extension 또는 content 요소 (예: 항목 템플릿 또는 컴파일된 어셈블리)를 추가 하려면 다음 단계를 수행 합니다.
 
-   1. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+   1. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
    2. **프로젝트** 목록에서 확장의 이름을 선택 합니다.
 
@@ -70,7 +72,7 @@ VSIX 프로젝트 템플릿에는 두 가지 주요 사용이 있습니다.
 
 6. 현재 솔루션에 포함 되지 않은 확장 또는 콘텐츠 요소를 추가 하려면 다음 단계를 수행 합니다.
 
-   1. **원본** 목록 상자에서 **파일 시스템의 파일**을 선택 합니다.
+   1. **원본** 목록 상자에서 **파일 시스템의 파일** 을 선택 합니다.
 
    2. **경로** 필드에 컴파일된 또는 압축 된 확장 파일의 전체 경로를 입력 하거나 **찾아보기** 단추를 사용 하 여 파일을 찾습니다.
 

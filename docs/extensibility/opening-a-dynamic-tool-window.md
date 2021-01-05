@@ -1,5 +1,7 @@
 ---
 title: 동적 도구 창 열기 | Microsoft Docs
+description: UI 컨텍스트가 더 이상 적용 되지 않을 때 특정 UI 컨텍스트가 적용 되 고 닫힐 때마다 열리는 동적 도구 창에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903709"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863519"
 ---
 # <a name="open-a-dynamic-tool-window"></a>동적 도구 창 열기
-도구 창은 일반적으로 메뉴의 명령 또는 해당 하는 바로 가기 키에서 열립니다. 그러나 때때로 특정 UI 컨텍스트가 적용 될 때마다 열리는 도구 창이 필요할 수 있으며 UI 컨텍스트가 더 이상 적용 되지 않는 경우 닫힙니다. 이러한 유형의 도구 창은 *동적* 또는 *자동 표시*라고 합니다.
+도구 창은 일반적으로 메뉴의 명령 또는 해당 하는 바로 가기 키에서 열립니다. 그러나 때때로 특정 UI 컨텍스트가 적용 될 때마다 열리는 도구 창이 필요할 수 있으며 UI 컨텍스트가 더 이상 적용 되지 않는 경우 닫힙니다. 이러한 유형의 도구 창은 *동적* 또는 *자동 표시* 라고 합니다.
 
 > [!NOTE]
 > 미리 정의 된 UI 컨텍스트 목록은를 참조 하십시오 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> .
@@ -32,7 +34,7 @@ ms.locfileid: "85903709"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>동적 도구 창을 열려면
 
-1. **DynamicToolWindow** 라는 VSIX 프로젝트를 만들고 *DynamicWindowPane.cs*라는 도구 창 항목 템플릿을 추가 합니다. 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
+1. **DynamicToolWindow** 라는 VSIX 프로젝트를 만들고 *DynamicWindowPane.cs* 라는 도구 창 항목 템플릿을 추가 합니다. 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
 2. *DynamicWindowPanePackage.cs* 파일에서 DynamicWindowPanePackage 선언을 찾습니다. <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>및 특성을 추가 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 하 여 도구 창을 등록 합니다.
 

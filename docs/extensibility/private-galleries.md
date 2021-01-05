@@ -1,5 +1,7 @@
 ---
 title: 전용 갤러리 | Microsoft Docs
+description: Visual Studio SDK에서 개발 하는 컨트롤, 템플릿 및 도구를 전용 갤러리에 게시 하 여 공유 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444650"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863494"
 ---
-# <a name="private-galleries"></a>전용 갤러리
+# <a name="private-galleries"></a>프라이빗 갤러리
 다음과 같이 조직의 인트라넷에 있는 *개인 갤러리* 에 게시 하 여 개발 하는 컨트롤, 템플릿 및 도구를 공유할 수 있습니다.
 
 - 인트라넷에서 적절 하 게 구성 된 중앙 위치 (리포지토리)에 Atom (RSS) 피드를 만듭니다. 자세한 내용은 [방법: 전용 갤러리에 대 한 Atom 피드 만들기](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)를 참조 하세요.
@@ -32,9 +34,9 @@ ms.locfileid: "81444650"
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>확장 및 업데이트에 전용 갤러리를 추가 하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
-2. **환경** 노드에서 **확장 및 업데이트**를 선택 합니다.
+2. **환경** 노드에서 **확장 및 업데이트** 를 선택 합니다.
 
 3. **추가** 단추를 선택합니다.
 
@@ -51,7 +53,7 @@ ms.locfileid: "81444650"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -64,15 +66,15 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  자세한 내용은 [방법: 레지스트리 설정을 사용 하 여 전용 갤러리 관리](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)를 참조 하세요.
 
 ## <a name="install-extensions-from-a-private-gallery"></a>전용 갤러리에서 확장 설치
- **확장 및 업데이트**의 전용 갤러리에서 Visual Studio 확장을 검색 하 고 설치할 수 있습니다. 다음 단계에서는 라는 개인 갤러리를 사용 합니다 `My Gallery` .
+ **확장 및 업데이트** 의 전용 갤러리에서 Visual Studio 확장을 검색 하 고 설치할 수 있습니다. 다음 단계에서는 라는 개인 갤러리를 사용 합니다 `My Gallery` .
 
  ![전용 갤러리를 설치하는 확장 관리자](../extensibility/media/em_.png "EM_")
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>전용 갤러리에서 확장을 검색 하 고 설치 하려면
 
-1. 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
-2. 왼쪽 창에서 **온라인 확장**을 선택한 다음 **내 갤러리**를 선택 합니다.
+2. 왼쪽 창에서 **온라인 확장** 을 선택한 다음 **내 갤러리** 를 선택 합니다.
 
 3. 오른쪽 창에서 확장을 선택 하 고 **다운로드** 단추를 선택 합니다.
 
@@ -83,12 +85,12 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>전용 갤러리에서 설치 된 확장을 업데이트 하려면
 
-1. 메뉴 모음에서 **도구**  >  **확장 및 업데이트**를 선택 합니다.
+1. 메뉴 모음에서 **도구**  >  **확장 및 업데이트** 를 선택 합니다.
 
-2. 왼쪽 창에서 **업데이트**를 선택 하 고 **내 리포지토리**를 선택 합니다.
+2. 왼쪽 창에서 **업데이트** 를 선택 하 고 **내 리포지토리** 를 선택 합니다.
 
 3. 오른쪽 창에서 확장을 선택 하 고 **업데이트** 단추를 선택 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)
 - [Visual Studio 확장 제공](../extensibility/shipping-visual-studio-extensions.md)

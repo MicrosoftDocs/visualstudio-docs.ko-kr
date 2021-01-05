@@ -1,5 +1,7 @@
 ---
 title: 런타임에 프로젝트의 하위 형식 확인 | Microsoft Docs
+description: VSPackage에서 지정한 사용자 지정 프로젝트 하위 형식이 있는지 확인 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5d69c54117f6e88ef57fc57f7588b2f9b6c72e3
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698179"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863931"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>런타임에 프로젝트의 하위 형식 확인
 사용자 지정 프로젝트 하위 유형에 따라 달라 지는 VSPackage는 하위 유형이 없는 경우 정상적으로 실패할 수 있도록 해당 하위 유형을 찾는 논리를 포함 해야 합니다. 다음 절차에서는 지정 된 하위 형식이 있는지 확인 하는 방법을 보여 줍니다.

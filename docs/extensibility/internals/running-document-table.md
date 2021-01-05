@@ -1,5 +1,7 @@
 ---
 title: 문서 테이블 실행 | Microsoft Docs
+description: Visual Studio IDE가 메모리에 열려 있는 모든 문서를 포함 하는 실행 중인 문서 테이블을 유지 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705563"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875650"
 ---
 # <a name="running-document-table"></a>문서 테이블 실행
 IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 테이블) 라는 내부 구조에 유지 합니다. 이 목록에는 이러한 문서를 현재 편집 하 고 있는지 여부에 관계 없이 메모리에 열려 있는 모든 문서가 포함 됩니다. 문서는 프로젝트 또는 주 프로젝트 파일 (예: .vcxproj 파일)의 파일을 포함 하 여 유지 되는 모든 항목입니다.

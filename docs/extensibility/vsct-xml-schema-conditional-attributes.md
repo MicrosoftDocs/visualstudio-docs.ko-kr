@@ -1,5 +1,7 @@
 ---
 title: VSCT XML 스키마 조건부 특성 | Microsoft Docs
+description: VSCT XML 스키마 목록 및 항목에 조건부 특성을 적용 하는 방법에 대해 알아봅니다. 특성은 결과 출력을 제어 하는 true 또는 false로 평가 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697942"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863723"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마 조건부 특성
 모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자 및 기호 확장 식은 true 또는 false로 계산 됩니다. True 이면 연결 된 목록 또는 항목이 결과 출력에 포함 됩니다.

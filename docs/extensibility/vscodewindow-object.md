@@ -1,5 +1,7 @@
 ---
 title: VSCodeWindow 개체 | Microsoft Docs
+description: 하나 이상의 텍스트 뷰 (일반적으로 VsTextView 개체)를 포함할 수 있는 특수화 된 문서 창에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d2cdbe12146dd5d3010b9bf8ffcdd130a0ea4bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414362"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864013"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 개체
 코드 창은 하나 이상의 텍스트 뷰 (일반적으로 개체)를 포함할 수 있는 특수 문서 창입니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .
@@ -27,12 +29,12 @@ ms.locfileid: "93414362"
 
  다음 표에서는 개체의 인터페이스를 포함 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> .
 
-|방법|Description|
+|메서드|설명|
 |------------|-----------------|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|GUID (globally unique identifier)가 식별 하는 서비스를 찾기 위한 일반 액세스 메커니즘을 제공 합니다.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|하나 이상의 코드 뷰를 포함 하는 MDI (다중 문서 인터페이스) 자식을 나타냅니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|창 프레임을 채웁니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)

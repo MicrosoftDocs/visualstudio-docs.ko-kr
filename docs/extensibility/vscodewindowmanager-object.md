@@ -1,5 +1,7 @@
 ---
 title: VSCodeWindowManager 개체 | Microsoft Docs
+description: 드롭다운 모음과 같은 장식 관리를 담당 하는 VSCodeWindowManager 개체에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e88885d339e55b7c3df1312b4a72c59d2959bbcc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 7a5c602a1cf46382e5a8b5c688501b2406e4a6d0
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414347"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863999"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 개체
 
@@ -26,6 +28,6 @@ ms.locfileid: "93414347"
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 `VSCodeWindowManager` .
 
-|인터페이스|Description|
+|인터페이스|설명|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|코드 창에서 장식 (예: 드롭다운 모음)을 추가 하거나 제거할 수 있습니다.|

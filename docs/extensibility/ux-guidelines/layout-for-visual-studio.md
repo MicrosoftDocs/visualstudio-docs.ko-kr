@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 레이아웃 | Microsoft Docs
+description: 테마가 적용 된 대화 상자와 테마가 적용 된 새 대화 상자를 포함 한 Visual Studio 대화 상자의 레이아웃에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698398"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863674"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio의 레이아웃
 대부분의 Visual Studio 대화 상자는 표준 [Windows 바탕 화면 대화 상자 레이아웃 원칙](/windows/desktop/uxguide/win-dialog-box)에 따라 테마가 적용 되지 않은 대화 인 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)입니다. Visual Studio가 UI를 새로 고치기 위해 이동 하는 경우 더 두드러진 대화 상자 중 일부에는 제품 정의 환경으로 설정 하는 새로운 디자인이 있습니다. 이러한 [테마 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 에는 테마가 적용 된 모양이 있습니다.
@@ -129,7 +131,7 @@ ms.locfileid: "80698398"
 
 3. 대화 상자 제목은 더 이상 제목 표시줄에 표시 되지 않지만 시각적 효과를 제공 하 고 더 큰 점 크기를 강조 합니다. [텍스트 스타일](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)의 글꼴 크기 섹션을 참조 하십시오.
 
-4. 설명과 같이 추가 텍스트와 결합 된 레이블은 **환경 글꼴 + 굵게 표시**되어야 합니다.
+4. 설명과 같이 추가 텍스트와 결합 된 레이블은 **환경 글꼴 + 굵게 표시** 되어야 합니다.
 
 5. 내부 열은 밝은 회색으로 표시 된 1 픽셀 규칙으로 구분 됩니다.
 

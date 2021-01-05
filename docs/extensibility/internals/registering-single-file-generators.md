@@ -1,5 +1,7 @@
 ---
 title: 단일 파일 생성기 등록 | Microsoft Docs
+description: Visual Studio에서 사용자 지정 도구를 등록 하 여이 도구를 인스턴스화하고 특정 프로젝트 형식에 연결 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012037"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875260"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기 등록
 에서 사용자 지정 도구를 사용할 수 있도록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 등록 해야 합니다. 이렇게 하면 해당 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인스턴스화하고 특정 프로젝트 형식에 연결할 수 있습니다.
@@ -36,7 +38,7 @@ ms.locfileid: "90012037"
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. 원하는 hive에서 생성기 guid 아래에 레지스트리 키를 만듭니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\ *GUID* . 여기서 *guid* 는 특정 언어의 프로젝트 시스템이 나 서비스에서 정의 된 guid입니다. 키 이름은 사용자 지정 도구의 프로그래밍 이름이 됩니다. 사용자 지정 도구 키의 값은 다음과 같습니다.
+2. 원하는 hive에서 생성기 guid 아래에 레지스트리 키를 만듭니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\  . 여기서 *guid* 는 특정 언어의 프로젝트 시스템이 나 서비스에서 정의 된 guid입니다. 키 이름은 사용자 지정 도구의 프로그래밍 이름이 됩니다. 사용자 지정 도구 키의 값은 다음과 같습니다.
 
    - (기본값)
 
@@ -67,7 +69,7 @@ ms.locfileid: "90012037"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [비주얼 디자이너에 형식 노출](../../extensibility/internals/exposing-types-to-visual-designers.md)

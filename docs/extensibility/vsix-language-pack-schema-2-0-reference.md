@@ -1,5 +1,7 @@
 ---
 title: VSIX 언어 팩 스키마 2.0 참조 | Microsoft Docs
+description: VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정보를 제공 합니다. 버전 2.0는 추가 지역화 요소를 지원 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830707"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863828"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 언어 팩 스키마 2.0 참조
 
@@ -30,7 +32,7 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 
 요소 내에 `<PackageLanguagePackManifest>` 다음 요소가 있어야 합니다.
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |`<Metadata>`| 모든 지역화 된 패키지 메타 데이터에 대 한 포함 요소입니다.
 
@@ -38,7 +40,7 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 
 요소 내에 `<Metadata>` 다음 요소를 사용할 수 있습니다.
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |`<DisplayName>`|설치할 확장의 지역화 된 이름입니다.|
 |`<Description>`|설치할 확장에 대 한 지역화 된 설명입니다.|
@@ -65,7 +67,7 @@ VSIX 언어 팩 스키마는 VSIX 패키지에 대 한 지역화 된 설치 정�
 
 ## <a name="see-also"></a>참조
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)|VSIX 패키지에 대해 지역화 된 설치 지원을 제공 하는 방법을 보여 줍니다.|
 |[VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 매니페스트는 *.vsix* 배포 파일의 콘텐츠를 설명 합니다. 배포 파일을 사용 하면 **확장 및 업데이트** 대화 상자를 사용 하 여 Visual Studio 확장을 설치할 수 있습니다.|

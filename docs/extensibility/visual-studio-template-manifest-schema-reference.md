@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 템플릿 매니페스트 스키마 참조 | Microsoft Docs
+description: 이 스키마 참조는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 Visual Studio 템플릿 매니페스트 파일의 형식을 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697982"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863841"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 이 스키마는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 Visual Studio 템플릿 매니페스트 (*vstman*) 파일의 형식을 설명 합니다. 또한이 스키마는 템플릿에 대 한 위치 및 기타 관련 정보를 설명 합니다.
@@ -92,7 +94,7 @@ ms.locfileid: "80697982"
 ### <a name="parent-element"></a>부모 요소
  **프로그램이 localizedname**
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
  다음 코드는 프로젝트 *vstman* 파일의 예입니다.
 
 ```xml

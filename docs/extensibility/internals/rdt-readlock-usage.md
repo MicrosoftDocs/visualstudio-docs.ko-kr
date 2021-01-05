@@ -1,5 +1,7 @@
 ---
 title: RDT_ReadLock 사용 | Microsoft Docs
+description: _VSRDTFLAGS에 대해 알아봅니다. RDT_ReadLock 플래그-실행 중인 문서 테이블의 문서를 잠그기 위한 논리를 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705925"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875390"
 ---
 # <a name="rdt_readlock-usage"></a>RDT_ReadLock 사용법
 
@@ -36,7 +38,7 @@ ms.locfileid: "80705925"
 
 ## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock 및 문서 수정
 
-앞에서 언급 한 플래그는 문서를 `RDT_EditLock` 사용자가 볼 수 있는 문서 **창**으로 열 때 문서를 볼 수 없는 문서를 열 때이를 생성 함을 나타냅니다. 이 경우 표시 되는 **문서 창이** 닫히면 사용자에 게 **저장** 프롬프트가 표시 됩니다. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 서비스를 사용 하는 구현은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> 처음에만 수행 될 때 `RDT_ReadLock` (즉, 문서를 열 때 정보를 구문 분석 하는 것이 보이지 않는 경우)에 작동 합니다. 나중에 문서를 수정 해야 하는 경우 잠금이 weak **RDT_EditLock**로 업그레이드 됩니다. 그러면 사용자가 표시 된 문서 **창**에서 문서를 열면 `CodeModel` weak `RDT_EditLock` 가 해제 됩니다.
+앞에서 언급 한 플래그는 문서를 `RDT_EditLock` 사용자가 볼 수 있는 문서 **창** 으로 열 때 문서를 볼 수 없는 문서를 열 때이를 생성 함을 나타냅니다. 이 경우 표시 되는 **문서 창이** 닫히면 사용자에 게 **저장** 프롬프트가 표시 됩니다. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 서비스를 사용 하는 구현은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> 처음에만 수행 될 때 `RDT_ReadLock` (즉, 문서를 열 때 정보를 구문 분석 하는 것이 보이지 않는 경우)에 작동 합니다. 나중에 문서를 수정 해야 하는 경우 잠금이 weak **RDT_EditLock** 로 업그레이드 됩니다. 그러면 사용자가 표시 된 문서 **창** 에서 문서를 열면 `CodeModel` weak `RDT_EditLock` 가 해제 됩니다.
 
 그런 다음 사용자가 **Documentwindow** 를 닫고 열려 있는 문서를 저장 하 라는 메시지가 표시 되 면 **아니요** 를 선택 하면, 문서에 `CodeModel` 있는 모든 정보를 삭제 하 고 다음에 문서에 대 한 추가 정보가 필요할 때 디스크에서 문서를 다시 엽니다. 이 동작의 미묘한 사용자가 보이지 않는 열려 있는 문서의 **Documentwindow** 를 열고 수정 하 고 닫은 다음 문서를 저장할지 묻는 메시지가 표시 되 면 **아니요** 를 선택 하는 인스턴스입니다. 이 경우 문서에이 있으면 문서를 `RDT_ReadLock` 실제로 닫지 않으며, 사용자가 문서를 저장 하지 않은 경우에도 수정 된 문서는 메모리에 보이지 않는 상태로 유지 됩니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 개체 | Microsoft Docs
+description: 이 단원의 문서에서는 Visual Studio SDK에서 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체에 대 한 참조 정보를 제공 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bff2b16684c41d18f997e6aab7950aa19a7d1db1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702276"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863690"
 ---
 # <a name="objects"></a>개체
 다음 참조 정보에서는 핵심 텍스트 편집기의 인스턴스를 만드는 데 사용 되는 개체에 대해 설명 합니다.

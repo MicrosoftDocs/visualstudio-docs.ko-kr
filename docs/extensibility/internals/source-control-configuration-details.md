@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 구성 세부 정보 | Microsoft Docs
+description: Visual Studio에서 프로젝트 형식에 대 한 소스 제어를 구현 하는 방법에 대해 알아봅니다. 여기에는 프로젝트 시스템 또는 편집기를 사용 하 여 권한을 요청 하도록 구성 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705289"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875507"
 ---
 # <a name="source-control-configuration-details"></a>소스 제어 구성 세부 정보
 소스 제어를 구현 하려면 다음 작업을 수행 하도록 프로젝트 시스템 또는 편집기를 적절히 구성 해야 합니다.

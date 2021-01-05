@@ -1,5 +1,7 @@
 ---
 title: VSIX 확장 스키마 2.0 참조 | Microsoft Docs
+description: Vsix 확장 스키마 2.0은 vsix 패키지의 콘텐츠를 설명 하는 VSIX 배포 매니페스트 파일의 파일 형식을 정의 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697923"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863764"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합니다. 파일 형식은 스키마의 영향을 받습니다. 이 스키마의 버전 2.0에서는 사용자 지정 형식 및 특성을 추가할 수 있습니다.  매니페스트의 스키마를 확장할 수 있습니다. 매니페스트 로더는 인식할 수 없는 XML 요소와 특성을 무시 합니다.
@@ -131,7 +133,7 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 
     Visual Studio 2017 버전 번호는 [Visual studio 빌드 번호 및 릴리스 날짜](../install/visual-studio-build-numbers-and-release-dates.md)에서 찾을 수 있습니다.
 
-    Visual Studio 2017 릴리스에 대 한 버전을 표현 하는 경우 부 버전은 항상 **0**이어야 합니다. 예를 들어 Visual Studio 2017 버전 15.3.26730.0는 [15.0.26730.0, 16.0)로 표현 되어야 합니다. Visual Studio 2017 이상 버전 번호에만 필요 합니다.
+    Visual Studio 2017 릴리스에 대 한 버전을 표현 하는 경우 부 버전은 항상 **0** 이어야 합니다. 예를 들어 Visual Studio 2017 버전 15.3.26730.0는 [15.0.26730.0, 16.0)로 표현 되어야 합니다. Visual Studio 2017 이상 버전 번호에만 필요 합니다.
 
   - `AnyAttribute*` - `<InstallationTarget>` 요소는 런타임에 노출 되는 개방형 특성 집합을 이름-값 쌍 사전으로 허용 합니다.
 

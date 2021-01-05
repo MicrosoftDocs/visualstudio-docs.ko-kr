@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK 참조 | Microsoft Docs
+description: 이러한 문서에는 visual studio SDK를 사용 하는 개발자를 위한 Visual Studio 네임 스페이스, 관련 네임 스페이스 및 기타 관심 영역에 대 한 정보가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c1f6eaa2019e602efc760003c960a9b62f9ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f53d122138845c0b9711a78d2237972512710cb
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698108"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863868"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조
 

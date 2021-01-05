@@ -1,5 +1,7 @@
 ---
 title: VSTextView 개체 | Microsoft Docs
+description: VSTextView 개체는 사용자가 텍스트 버퍼의 유니코드 텍스트를 보고 편집할 수 있도록 하는 창입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a52b1d480aaef11296517f1b9c5bb049f2488a8d
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9d7309e05c3763794deb344a978dd188dbfddd79
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413933"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863806"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 
@@ -26,7 +28,7 @@ ms.locfileid: "93413933"
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .
 
-|인터페이스|Description|
+|인터페이스|설명|
 |---------------|-----------------|
 |[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|표준 OLE 인터페이스입니다.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|표준 OLE 인터페이스입니다.|
@@ -38,7 +40,7 @@ ms.locfileid: "93413933"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|텍스트 레이어와 상호 작용 합니다.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 뷰에서 작업을 수행 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)

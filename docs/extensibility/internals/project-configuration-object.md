@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 구성 개체 | Microsoft Docs
+description: 프로젝트 구성 개체가 UI에 대 한 구성 정보 표시를 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001509b56e3bac6a8fd585eb0efe0bd57018acea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706651"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875494"
 ---
 # <a name="project-configuration-object"></a>프로젝트 구성 개체
 프로젝트 구성 개체는 UI에 대 한 구성 정보 표시를 관리 합니다.

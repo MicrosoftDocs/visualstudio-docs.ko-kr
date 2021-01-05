@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 디자인 결정 Microsoft Docs
+description: 소스 제어를 구현할 때 프로젝트에 대해 고려해 야 할 몇 가지 주요 디자인 결정에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705249"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875520"
 ---
 # <a name="source-control-design-decisions"></a>소스 제어 디자인 결정
 소스 제어를 구현할 때 프로젝트에 대 한 다음 디자인 결정 사항을 고려해 야 합니다.

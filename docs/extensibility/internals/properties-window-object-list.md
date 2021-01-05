@@ -1,5 +1,7 @@
 ---
 title: 속성 창 개체 목록 | Microsoft Docs
+description: Visual Studio IDE의 속성 창 개체 목록과 상호 작용 하는 데 사용 되는 인터페이스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706145"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875429"
 ---
 # <a name="properties-window-object-list"></a>속성 창 개요 목록
 **속성** 창의 개체 목록은 하나 이상의 선택 된 창에서 사용할 수 있는 다른 개체로 선택 항목을 변경할 수 있는 드롭다운 목록입니다. 이 목록에서 다른 개체를 선택 하면에 대 한 호출이 트리거되어 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 새 개체가 선택 되었음을 환경에 알립니다. 그러면 **속성** 창에 표시 되는 정보가 변경 되어 새로 선택한 개체와 연결 된 속성을 표시 합니다.

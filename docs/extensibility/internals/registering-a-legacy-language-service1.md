@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 Service1 등록 | Microsoft Docs
+description: 레지스트리 키와 항목을 추가 하 여 Visual Studio와 VSPackage에서 레거시 언어 서비스를 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238883"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875211"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>레거시 언어 서비스 등록 1
 MPF (관리 되는 패키지 프레임 워크)에서 언어 서비스는 VSPackage ( [vspackage](../../extensibility/internals/vspackages.md)참조)에 의해 제공 되 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 레지스트리 키와 항목을 추가 하 여에 등록 됩니다. 이 등록 프로세스는 부분적으로 설치 하는 동안 및 런타임에 부분적으로 수행 됩니다.
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  이 특성은 **옵션** 대화 상자의 **텍스트 편집기** 범주에 표시 되는 속성 페이지를 등록 합니다. 각 페이지에 대해 이러한 특성 중 하나를 사용 하 여 언어 서비스에 대해 표시 합니다. 트리 구조에서 페이지를 구성 해야 하는 경우 추가 특성을 사용 하 여 트리의 각 노드를 정의 합니다.
 
 ### <a name="example"></a>예제
- 이 예제에서는 두 개의 속성 페이지, **옵션** 및 **들여쓰기**와 두 번째 속성 페이지를 포함 하는 하나의 노드를 보여 줍니다.
+ 이 예제에서는 두 개의 속성 페이지, **옵션** 및 **들여쓰기** 와 두 번째 속성 페이지를 포함 하는 하나의 노드를 보여 줍니다.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

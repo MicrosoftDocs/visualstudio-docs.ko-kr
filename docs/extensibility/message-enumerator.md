@@ -1,5 +1,7 @@
 ---
 title: 메시지 열거자 | Microsoft Docs
+description: 이 열거자의 멤버는 SccOpenProject를 호출할 때 IDE에서 제공 하는 콜백 함수인 TEXTOUTPROC 함수에 사용 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702502"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863733"
 ---
 # <a name="message-enumerator"></a>메시지 열거자
 다음 플래그는 함수에 사용 됩니다 `TEXTOUTPROC` .이 함수는 IDE에서 [Sccopenproject](../extensibility/sccopenproject-function.md) 를 호출할 때 제공 하는 콜백 함수입니다 (콜백 함수에 대 한 자세한 내용은 [lptextoutproc](../extensibility/lptextoutproc.md) 참조).
@@ -26,16 +28,16 @@ ms.locfileid: "80702502"
 ## <a name="syntax"></a>구문
 
 ```
-enum { 
-   SCC_MSG_RTN_CANCEL = -1, 
-   SCC_MSG_RTN_OK = 0, 
-   SCC_MSG_INFO = 1 
-   SCC_MSG_WARNING, 
-   SCC_MSG_ERROR, 
-   SCC_MSG_STATUS, 
-   SCC_MSG_DOCANCEL, 
-   SCC_MSG_STARTCANCEL, 
-   SCC_MSG_STOPCANCEL 
+enum { 
+   SCC_MSG_RTN_CANCEL = -1, 
+   SCC_MSG_RTN_OK = 0, 
+   SCC_MSG_INFO = 1 
+   SCC_MSG_WARNING, 
+   SCC_MSG_ERROR, 
+   SCC_MSG_STATUS, 
+   SCC_MSG_DOCANCEL, 
+   SCC_MSG_STARTCANCEL, 
+   SCC_MSG_STOPCANCEL 
 };
 ```
 

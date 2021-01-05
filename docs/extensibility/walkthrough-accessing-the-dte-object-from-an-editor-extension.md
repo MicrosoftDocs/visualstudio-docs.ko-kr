@@ -1,5 +1,7 @@
 ---
 title: 편집기 확장에서 DTE 개체에 액세스 합니다.
+description: 이 연습의 코드 예제를 사용 하 여 편집기 확장에서 DTE 개체에 액세스 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697653"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863714"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>연습: 편집기 확장에서 DTE 개체에 액세스
 
 Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte 개체의 형식을 사용 하 여 메서드를 호출 하 여 dte 개체를 가져올 수 있습니다. MEF (Managed Extensibility Framework) 확장에서를 가져온 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 다음 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 형식을 사용 하 여 메서드를 호출할 수 있습니다 <xref:EnvDTE.DTE> .
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="get-the-dte-object"></a>DTE 개체 가져오기
 
-1. C # VSIX 프로젝트를 만들고 이름을 **DTETest**로 만듭니다. **편집기 분류자** 항목 템플릿을 추가 하 고 이름을 **DTETest**로 추가 합니다.
+1. C # VSIX 프로젝트를 만들고 이름을 **DTETest** 로 만듭니다. **편집기 분류자** 항목 템플릿을 추가 하 고 이름을 **DTETest** 로 추가 합니다.
 
    자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)를 참조 하세요.
 

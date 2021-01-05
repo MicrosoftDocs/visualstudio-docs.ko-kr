@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK | Microsoft Docs
+description: Visual Studio SDK를 사용 하면 기능을 확장 하거나 Visual Studio에 새 기능을 추가할 수 있습니다. Visual Studio를 확장할 수 있는 몇 가지 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 4be4b07e322b5be148593c70136eb44ec7fcfdf7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414388"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863846"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새 기능을 Visual Studio에 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.
@@ -73,7 +75,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 
 - [Visual Studio 확장](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

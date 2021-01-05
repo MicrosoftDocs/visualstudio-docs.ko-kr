@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 템플릿 및 항목 템플릿 등록 | Microsoft Docs
+description: Visual Studio에서 프로젝트 형식에 대 한 등록 정보를 사용 하 여 새 프로젝트 추가 및 새 항목 추가 대화 상자에 표시할 항목을 결정 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705819"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875273"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 프로젝트 형식은 프로젝트 및 프로젝트 항목 템플릿이 있는 디렉터리를 등록 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식과 연결 된 등록 정보를 사용 하 여 **새 프로젝트 추가** 및 **새 항목 추가** 대화 상자에 표시할 항목을 결정 합니다.
@@ -27,7 +29,7 @@ ms.locfileid: "80705819"
  템플릿에 대 한 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)를 참조 하세요.
 
 ## <a name="registry-entries-for-projects"></a>프로젝트에 대 한 레지스트리 항목
- 다음 예에서는 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*>에 있는 레지스트리 항목을 보여 줍니다. 해당 표에서는 예제에 사용 된 요소에 대해 설명 합니다.
+ 다음 예에서는 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *버전*>에 있는 레지스트리 항목을 보여 줍니다. 해당 표에서는 예제에 사용 된 요소에 대해 설명 합니다.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,7 +39,7 @@ ms.locfileid: "80705819"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|유형|설명|
+|이름|유형|설명|
 |----------|----------|-----------------|
 |@|REG_SZ|이 종류의 프로젝트 기본 이름입니다.|
 |DisplayName|REG_SZ|패키지에 등록 된 위성 DLL에서 검색할 이름의 리소스 ID입니다.|
@@ -55,7 +57,7 @@ ms.locfileid: "80705819"
 "SortPriority"=dword:00000064
 ```
 
-| Name | 유형 | 설명 |
+| 이름 | 유형 | 설명 |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 항목 템플릿 추가의 리소스 ID입니다. |
 | 템플릿 디렉터리 | REG_SZ | **새 항목 추가** 마법사의 대화 상자에 표시 되는 프로젝트 항목의 경로입니다. |
@@ -67,7 +69,7 @@ ms.locfileid: "80705819"
 
  **Visual c # 파일 ( \* .cs, \* .resx, \* settings, \* .xsd, \* .wsdl); \* . cs, \* .resx, \* settings, \* .xsd, \* .wsdl)**
 
- 여러 필터의 등록을 지원 하기 위해 각 필터는 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*> \projects \\ { \<*ProjectGUID*> } \projects \\ < *하위 키*>의 고유한 하위 키에 등록 됩니다. 하위 키 이름은 임의로입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하위 키의 이름을 무시 하 고 해당 값만 사용 합니다.
+ 여러 필터의 등록을 지원 하기 위해 각 필터는 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *버전*> \projects \\ { \<*ProjectGUID*> } \projects \\ < *하위 키*>의 고유한 하위 키에 등록 됩니다. 하위 키 이름은 임의로입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하위 키의 이름을 무시 하 고 해당 값만 사용 합니다.
 
  다음 표와 같이 플래그를 설정 하 여 필터를 사용 하는 컨텍스트를 제어할 수 있습니다. 필터에 설정 된 플래그가 없으면 **기존 항목 추가** 대화 상자 및 **파일 열기** 대화 상자에서 일반 필터 뒤에 나열 되며 파일 **에서 찾기** 대화 상자에서 사용 되지 않습니다.
 
@@ -82,7 +84,7 @@ ms.locfileid: "80705819"
 "SortPriority"=dword:00000064
 ```
 
-|Name|유형|설명|
+|이름|유형|설명|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|**파일에서 찾기** 대화 상자에서 필터를 일반 필터 중 하나로 만듭니다. 공통 필터는 필터 목록에 나열 된 필터 보다 먼저 표시 됩니다.|
 |CommonOpenFilesFilter|REG_DWORD|**파일 열기** 대화 상자에서 필터를 일반 필터 중 하나로 만듭니다. 공통 필터는 필터 목록에 나열 된 필터 보다 먼저 표시 됩니다.|

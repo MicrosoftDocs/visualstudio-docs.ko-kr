@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 상호 작용 패턴 | Microsoft Docs
+description: Visual Studio의 새로운 기능을 빌드할 때 사용할 수 있는 일반적인 상호 작용 패턴의 라이브러리에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 1cd618b66eed900c2436704d40de5325c1205e85
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467650"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863492"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio의 상호 작용 패턴
 ## <a name="overview"></a>개요
@@ -23,7 +25,7 @@ ms.locfileid: "92467650"
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio 클라이언트 패턴 형식
 
-|패턴 유형|Description|예|
+|패턴 유형|설명|예|
 |------------------|-----------------|--------------|
 |**응용 프로그램 수준 패턴**|응용 프로그램에 공통적으로 적용 되는 응용 프로그램 컨텍스트를 결정 또는 표시 하 고 그 안에 복합 및 컨트롤 패턴을 포함 하는 상위 수준 패턴|-도구 창<br />-문서 창|
 |**복합 패턴**|응용 프로그램 패턴 전체에 걸쳐 있을 수 있는 일반적인 패턴 또는 개별 구성의 여러 컨트롤로 구성 된 인식 된 패턴|-전환 보기<br />-목록 작성기<br />-데이터 표시<br />-알림<br />-유효성 검사<br />-선택 모델|

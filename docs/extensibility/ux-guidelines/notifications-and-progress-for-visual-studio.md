@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에 대 한 알림 및 진행률 | Microsoft Docs
+description: 사용자에 게 소프트웨어 개발 작업과 관련 하 여 Visual Studio에서 발생 하는 상황을 알려 주는 여러 가지 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699877"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863784"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio의 알림 및 진행률
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 알림 시스템
@@ -38,7 +40,7 @@ ms.locfileid: "80699877"
 ### <a name="choosing-the-right-method"></a>올바른 방법 선택
  이 표를 사용 하 여 메시지를 사용자에 게 알리는 올바른 방법을 선택 하는 데 도움을 받을 수 있습니다.
 
-|메서드|기능|사용 안 함|
+|메서드|Windows Server Update Services와 함께|사용 안 함|
 |------------|---------|----------------|
 |[모달 오류 메시지 대화 상자](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|계속 하기 전에 사용자 응답이 필요한 경우에 사용 합니다.|사용자를 차단 하 고 흐름을 중단할 필요가 없는 경우에는를 사용 하지 마십시오. 메시지를 방해가 되지 않는 다른 방식으로 표시할 수 있는 경우에는 모달 대화 상자를 사용 하지 마십시오.|
 |[IDE 상태 표시줄](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|프로세스 상태와 관련 된 앰비언트 텍스트 정보가 있는 경우를 사용 합니다.|단독으로 사용 하지 마십시오. 다른 피드백 메커니즘과 함께 사용 하는 것이 가장 좋습니다.|
@@ -149,7 +151,7 @@ ms.locfileid: "80699877"
 
 #### <a name="determinate-progress"></a>활성화 상태의 진행률
 
-|진행률 유형|사용 시기 및 방법|참고|
+|진행률 유형|사용 시기 및 방법|메모|
 |-------------------|-------------------------|-----------|
 |진행률 표시줄 (활성화 상태의)|예상 >5 초입니다.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|애니메이션에 텍스트를 포함 **하지 않습니다** .|
 |정보 표시줄|컨텍스트 UI와 연결 된 메시지입니다. [정보 표시줄](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)를 참조 하세요.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|여러 프로세스를 표시 해야 하는 경우 여러 정보 표시줄를 사용 **하지 마세요** . 누적 진행률 표시줄을 대신 사용 합니다.|
@@ -159,7 +161,7 @@ ms.locfileid: "80699877"
 
 #### <a name="indeterminate-progress"></a>확정 되지 않은 진행률
 
-|진행률 유형|사용 시기 및 방법|참고|
+|진행률 유형|사용 시기 및 방법|메모|
 |-------------------|-------------------------|-----------|
 |진행률 표시줄 (비활성화)|예상 >5 초입니다.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|애니메이션에 텍스트를 포함 **하지 않습니다** .|
 |서 점 (가로 애니메이션 가로 점)|서버로 라운드트립 합니다.<br /><br /> 부모 컨테이너의 위쪽에서 컨텍스트의 근처에 배치 됩니다.|전체 컨테이너에서 부모로 사용 하지 않는 경우를 사용 **하지 마세요** .|
@@ -174,9 +176,9 @@ ms.locfileid: "80699877"
 #### <a name="progress-bars"></a>진행률 표시줄
 
 ##### <a name="indeterminate"></a>않음
- ![비활성화 상태의 진행률 표시줄](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
+ ![확정 되지 않은 진행률 표시줄](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
 
- **비활성화 상태의 진행률 표시줄**
+ **확정 되지 않은 진행률 표시줄**
 
  "비활성화"는 작업 또는 프로세스의 전반적인 진행률을 확인할 수 없음을 의미 합니다. 제한 없는 시간을 필요로 하거나 알 수 없는 개체에 액세스 하는 작업에 대해 불확정 진행률 표시줄을 사용 합니다. 텍스트 설명을 사용 하 여 발생 하는 상황에 대 한 설명을 제공 합니다. 시간 제한을 사용 하 여 시간 기반 작업에 범위를 지정 합니다. 확정 되지 않은 진행률 표시줄 애니메이션을 사용 하 여 진행 상태를 표시 하지만 다른 정보는 제공 하지 않습니다. 정확성만을 기준으로 하 여 결정 되지 않은 진행률 표시줄을 선택 하지 마세요.
 
@@ -286,7 +288,7 @@ ms.locfileid: "80699877"
 ### <a name="overview"></a>개요
  정보 표시줄 사용자에 게 주목 지점에 가까운 표시기를 제공 하 고, 공유 정보 표시줄 컨트롤을 사용 하 여 시각적 모양 및 상호 작용의 일관성을 보장 합니다.
 
- ![정보 표시줄](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![표시줄과](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Visual Studio의 정보 표시줄**
 
