@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
+description: 소스 제어 플러그 인에서 파일 또는 디렉터리 목록을 업데이트 하는 데 사용 하는 POPLISTFUNC callback 함수에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702070"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863163"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 이 콜백은 IDE에 의해 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 제공 되며 소스 제어 플러그 인에서 파일 또는 디렉터리 목록을 업데이트 하는 데 사용 됩니다 (함수에도 제공 됨 `SccPopulateList` ).

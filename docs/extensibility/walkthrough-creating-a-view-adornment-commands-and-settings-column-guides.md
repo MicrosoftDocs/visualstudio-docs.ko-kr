@@ -1,5 +1,7 @@
 ---
 title: 뷰 장식, 명령 및 설정 만들기 | Microsoft Docs
+description: 이 연습을 사용 하 여 열 안내선을 사용 하 여 Visual Studio 코드 편집기를 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905040"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863073"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 뷰 장식, 명령 및 설정 만들기 (열 안내선)
 명령 및 보기 효과를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서에서는 인기 있는 확장 기능인 열 안내선을 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 텍스트 편집기의 뷰에서 코드를 특정 열 너비로 관리 하는 데 도움이 되는 시각적 밝은 선입니다. 특히 서식 지정 된 코드는 문서, 블로그 게시물 또는 버그 보고서에 포함 되는 샘플에 중요할 수 있습니다.
@@ -45,9 +47,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
   **장식 보기**. 솔루션 탐색기의 프로젝트 노드에서 오른쪽 포인터 단추를 누릅니다. 새 **항목 &#124; 추가** ... 명령을 선택 하 여 새 뷰 장식 항목을 추가 합니다. 왼쪽 탐색 창에서 **확장성 &#124; 편집기** 를 선택 하 고 오른쪽 창에서 **편집기 뷰포트 장식** 을 선택 합니다. 이름 **Column 장식** 을 항목 이름으로 입력 하 고 **추가** 를 선택 하 여 추가 합니다.
 
-  이 항목 템플릿에서는 프로젝트에 두 개의 파일 (참조 등)을 추가 하는 것을 볼 수 있습니다. **ColumnGuideAdornment.cs** 및 **ColumnGuideAdornmentTextViewCreationListener.cs**. 이 템플릿은 뷰에 자주색 사각형을 그립니다. 다음 섹션에서는 보기 생성 수신기에서 두 줄을 변경 하 고 **ColumnGuideAdornment.cs**의 내용을 바꿉니다.
+  이 항목 템플릿에서는 프로젝트에 두 개의 파일 (참조 등)을 추가 하는 것을 볼 수 있습니다. **ColumnGuideAdornment.cs** 및 **ColumnGuideAdornmentTextViewCreationListener.cs**. 이 템플릿은 뷰에 자주색 사각형을 그립니다. 다음 섹션에서는 보기 생성 수신기에서 두 줄을 변경 하 고 **ColumnGuideAdornment.cs** 의 내용을 바꿉니다.
 
-  **명령**. **솔루션 탐색기**에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 새 **항목 &#124; 추가** ... 명령을 선택 하 여 새 뷰 장식 항목을 추가 합니다. 왼쪽 탐색 창에서 **확장성 &#124; VSPackage** 를 선택 하 고 오른쪽 창에서 **사용자 지정 명령** 을 선택 합니다. 항목 이름으로 **ColumnGuideCommands** 이름을 입력 하 고 **추가**를 선택 합니다. 여러 참조 외에도 명령과 패키지를 추가 하면 **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**및 **ColumnGuideCommandsPackage**도 추가 됩니다. 다음 섹션에서는 첫 번째 및 마지막 파일의 내용을 대체 하 여 명령을 정의 하 고 구현 합니다.
+  **명령**. **솔루션 탐색기** 에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 새 **항목 &#124; 추가** ... 명령을 선택 하 여 새 뷰 장식 항목을 추가 합니다. 왼쪽 탐색 창에서 **확장성 &#124; VSPackage** 를 선택 하 고 오른쪽 창에서 **사용자 지정 명령** 을 선택 합니다. 항목 이름으로 **ColumnGuideCommands** 이름을 입력 하 고 **추가** 를 선택 합니다. 여러 참조 외에도 명령과 패키지를 추가 하면 **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** 및 **ColumnGuideCommandsPackage** 도 추가 됩니다. 다음 섹션에서는 첫 번째 및 마지막 파일의 내용을 대체 하 여 명령을 정의 하 고 구현 합니다.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>텍스트 뷰 생성 수신기 설정
 편집기에서 *ColumnGuideAdornmentTextViewCreationListener.cs* 를 엽니다. 이 코드는 Visual Studio에서 텍스트 뷰를 만들 때마다에 대 한 처리기를 구현 합니다. 뷰의 특성에 따라 처리기가 호출 되는 시기를 제어 하는 특성이 있습니다.
@@ -505,7 +507,7 @@ namespace ColumnGuides
 패키지 코드에는 Visual Studio에서 확장이 명령을 제공 하 고 명령을 넣을 위치를 찾는 데 필요한 상용구 선언이 포함 되어 있습니다. 패키지는 초기화 될 때 commands 구현 클래스를 인스턴스화합니다. 명령과 관련 된 패키지에 대 한 자세한 내용은 [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)을 참조 하세요.
 
 ### <a name="a-common-commands-pattern"></a>일반 명령 패턴
-열 안내선 확장의 명령은 Visual Studio에서 매우 일반적인 패턴의 예입니다. 그룹에 관련 명령을 입력 하 고,이 그룹을 주 메뉴에 배치 하는 것이 일반적으로 " `<CommandFlag>CommandWellOnly</CommandFlag>` "로 설정 되어 명령을 표시 하지 않도록 설정 합니다.  주 메뉴 (예: **편집**)에 명령을 배치 하면 **도구 옵션**에서 키 바인딩을 다시 할당할 때 명령을 찾는 데 유용한 이름을 사용할 수 있습니다 (예: 편집 **. addcolumnguide**). **명령 창**에서 명령을 호출 하는 경우 완료 하는 데에도 유용 합니다.
+열 안내선 확장의 명령은 Visual Studio에서 매우 일반적인 패턴의 예입니다. 그룹에 관련 명령을 입력 하 고,이 그룹을 주 메뉴에 배치 하는 것이 일반적으로 " `<CommandFlag>CommandWellOnly</CommandFlag>` "로 설정 되어 명령을 표시 하지 않도록 설정 합니다.  주 메뉴 (예: **편집**)에 명령을 배치 하면 **도구 옵션** 에서 키 바인딩을 다시 할당할 때 명령을 찾는 데 유용한 이름을 사용할 수 있습니다 (예: 편집 **. addcolumnguide**). **명령 창** 에서 명령을 호출 하는 경우 완료 하는 데에도 유용 합니다.
 
 그런 다음 사용자가 명령을 사용할 것으로 요구 하는 상황에 맞는 메뉴 또는 하위 메뉴에 명령 그룹을 추가 합니다. Visual Studio는 `CommandWellOnly` 주 메뉴에 대해서만 표시 안 함 플래그로 처리 합니다. 상황에 맞는 메뉴 또는 하위 메뉴에 동일한 그룹의 명령을 두면 명령이 표시 됩니다.
 
@@ -1157,7 +1159,7 @@ namespace ColumnGuides
 
 ```
 
-**참조를 수정**합니다. 이 시점에서 참조가 누락 되었습니다. 솔루션 탐색기의 참조 노드에서 오른쪽 포인터 단추를 누릅니다. **추가 ...** 명령을 선택 합니다. **참조 추가** 대화 상자의 오른쪽 위 모서리에 검색 상자가 있습니다. "편집기" (큰따옴표 제외)를 입력 합니다. 항목을 선택 하는 것이 아니라 항목의 왼쪽에 있는 상자를 선택 해야 합니다. **VisualStudio** 항목을 선택 하 고 **확인** 을 선택 하 여 참조를 추가 합니다.
+**참조를 수정** 합니다. 이 시점에서 참조가 누락 되었습니다. 솔루션 탐색기의 참조 노드에서 오른쪽 포인터 단추를 누릅니다. **추가 ...** 명령을 선택 합니다. **참조 추가** 대화 상자의 오른쪽 위 모서리에 검색 상자가 있습니다. "편집기" (큰따옴표 제외)를 입력 합니다. 항목을 선택 하는 것이 아니라 항목의 왼쪽에 있는 상자를 선택 해야 합니다. **VisualStudio** 항목을 선택 하 고 **확인** 을 선택 하 여 참조를 추가 합니다.
 
 **초기화**.  Package 클래스는를 초기화할 때 `Initialize` commands 구현 클래스에서를 호출 합니다. 초기화는 클래스 `ColumnGuideCommands` 를 인스턴스화하고 클래스 인스턴스 및 패키지 참조를 클래스 멤버에 저장 합니다.
 
@@ -1172,7 +1174,7 @@ _addGuidelineCommand =
 
 ```
 
-을 만듭니다 `OleMenuCommand` . Visual Studio는 Microsoft Office 명령 시스템을 사용 합니다. 을 인스턴스화할 때 키 인수는 `OleMenuCommand` command ()를 구현 하는 함수입니다 `AddColumnGuideExecuted` . Visual Studio에서 명령 ( `AddColumnGuideBeforeQueryStatus` ) 및 명령 ID를 사용 하 여 메뉴를 표시 하는 경우 호출할 함수입니다. Visual studio는 메뉴에 명령을 표시 하기 전에 쿼리 상태 함수를 호출 하 여 메뉴의 특정 표시 (예: 선택 영역이 없는 경우 **복사** 비활성화)에 대해 명령이 표시 되지 않거나 회색으로 표시 되도록 하거나, 아이콘을 변경 하거나, 다른 항목을 제거 하는 등의 작업을 수행 하는 등의 방법으로 해당 이름을 변경 합니다. 명령 ID는 *. vsct* 파일에 선언 된 명령 id와 일치 해야 합니다. 명령 집합 및 열 안내선 추가 명령에 대 한 문자열은 *. vsct* 파일과 *ColumnGuideCommands.cs*사이에 일치 해야 합니다.
+을 만듭니다 `OleMenuCommand` . Visual Studio는 Microsoft Office 명령 시스템을 사용 합니다. 을 인스턴스화할 때 키 인수는 `OleMenuCommand` command ()를 구현 하는 함수입니다 `AddColumnGuideExecuted` . Visual Studio에서 명령 ( `AddColumnGuideBeforeQueryStatus` ) 및 명령 ID를 사용 하 여 메뉴를 표시 하는 경우 호출할 함수입니다. Visual studio는 메뉴에 명령을 표시 하기 전에 쿼리 상태 함수를 호출 하 여 메뉴의 특정 표시 (예: 선택 영역이 없는 경우 **복사** 비활성화)에 대해 명령이 표시 되지 않거나 회색으로 표시 되도록 하거나, 아이콘을 변경 하거나, 다른 항목을 제거 하는 등의 작업을 수행 하는 등의 방법으로 해당 이름을 변경 합니다. 명령 ID는 *. vsct* 파일에 선언 된 명령 id와 일치 해야 합니다. 명령 집합 및 열 안내선 추가 명령에 대 한 문자열은 *. vsct* 파일과 *ColumnGuideCommands.cs* 사이에 일치 해야 합니다.
 
 다음 줄은 명령 창을 통해 사용자가 명령을 호출 하는 경우에 대 한 지원을 제공 합니다 (아래 설명 참조).
 
@@ -1182,7 +1184,7 @@ _addGuidelineCommand.ParametersDescription = "<column>";
 
  **쿼리 상태**. 쿼리 상태 함수는 `AddColumnGuideBeforeQueryStatus` `RemoveColumnGuideBeforeQueryStatus` 일부 설정 (예: 최대 안내선 수 또는 최대 열 수)을 확인 하 고 제거할 열 가이드가 있는 경우이를 확인 합니다. 조건이 올바른 경우 명령을 사용 하도록 설정 합니다.  쿼리 상태 함수는 Visual Studio가 메뉴를 표시 하 고 메뉴의 각 명령에 대해 실행할 때마다 실행 되므로 효율적 이어야 합니다.
 
- **Addcolumn가이드에서 함수를 실행**했습니다. 가이드를 추가 하는 흥미로운 부분은 현재 편집기 보기와 캐럿 위치를 파악 하는 것입니다.  첫째,이 함수는 `GetApplicableColumn` 명령 처리기의 이벤트 인수에 사용자 제공 인수가 있는지 확인 하는를 호출 하 고, 없는 경우 함수는 편집기의 뷰를 확인 합니다.
+ **Addcolumn가이드에서 함수를 실행** 했습니다. 가이드를 추가 하는 흥미로운 부분은 현재 편집기 보기와 캐럿 위치를 파악 하는 것입니다.  첫째,이 함수는 `GetApplicableColumn` 명령 처리기의 이벤트 인수에 사용자 제공 인수가 있는지 확인 하는를 호출 하 고, 없는 경우 함수는 편집기의 뷰를 확인 합니다.
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1284,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 이 동작을 사용 하도록 설정 하는 샘플 부분은 *. vsct* 파일 선언, `ColumnGuideCommands` 명령 처리기를 후크 할 때의 클래스 생성자 및 이벤트 인수를 확인 하는 명령 처리기 구현에 있습니다.
 
-`<CommandFlag>CommandWellOnly</CommandFlag>` **편집** 메뉴 UI에 명령이 표시 되지 않지만 *vsct* 파일에서 ""를 표시 하 고 **편집** 주 메뉴에 배치 하는 것도 가능 합니다. 주 **편집** 메뉴에 있으면 **편집. addcolumnguide**와 같은 이름이 제공 됩니다. 명령 그룹 선언은 그룹을 **편집** 메뉴에 직접 배치 하는 명령 그룹 선언입니다.
+`<CommandFlag>CommandWellOnly</CommandFlag>` **편집** 메뉴 UI에 명령이 표시 되지 않지만 *vsct* 파일에서 ""를 표시 하 고 **편집** 주 메뉴에 배치 하는 것도 가능 합니다. 주 **편집** 메뉴에 있으면 **편집. addcolumnguide** 와 같은 이름이 제공 됩니다. 명령 그룹 선언은 그룹을 **편집** 메뉴에 직접 배치 하는 명령 그룹 선언입니다.
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1332,7 +1334,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="try-your-extension"></a>확장 시도
 이제 **F5** 키를 눌러 열 안내선 확장을 실행할 수 있습니다. 텍스트 파일을 열고 편집기의 상황에 맞는 메뉴를 사용 하 여 안내선을 추가, 제거 및 색을 변경 합니다. 텍스트 (공백 없음)를 클릭 하 여 열 안내선을 추가 하거나 편집기가 해당 줄의 마지막 열에 추가 합니다. 명령 창을 사용 하 고 인수를 사용 하 여 명령을 호출 하는 경우 아무 곳에 나 열 안내선을 추가할 수 있습니다.
 
-다른 명령 배치를 시도 하 고, 이름을 변경 하 고, 아이콘을 변경 하 고, Visual Studio에서 메뉴의 최신 코드를 표시 하는 데 문제가 있는 경우 디버깅 중인 실험적 하이브를 다시 설정할 수 있습니다. **Windows 시작 메뉴** 를 열고 "다시 설정"을 입력 합니다. 명령을 찾아 실행 하 고 **다음 Visual Studio 실험적 인스턴스를 다시 설정**합니다. 이 명령은 모든 확장 구성 요소의 실험적 레지스트리 하이브를 정리 합니다. 구성 요소에서 설정을 정리 하지 않으므로, Visual Studio의 실험적 hive를 종료할 때 있던 모든 가이드는 코드에서 다음 시작 시 설정 저장소를 읽을 때에도 있습니다.
+다른 명령 배치를 시도 하 고, 이름을 변경 하 고, 아이콘을 변경 하 고, Visual Studio에서 메뉴의 최신 코드를 표시 하는 데 문제가 있는 경우 디버깅 중인 실험적 하이브를 다시 설정할 수 있습니다. **Windows 시작 메뉴** 를 열고 "다시 설정"을 입력 합니다. 명령을 찾아 실행 하 고 **다음 Visual Studio 실험적 인스턴스를 다시 설정** 합니다. 이 명령은 모든 확장 구성 요소의 실험적 레지스트리 하이브를 정리 합니다. 구성 요소에서 설정을 정리 하지 않으므로, Visual Studio의 실험적 hive를 종료할 때 있던 모든 가이드는 코드에서 다음 시작 시 설정 저장소를 읽을 때에도 있습니다.
 
 ## <a name="finished-code-project"></a>완성 된 코드 프로젝트
 Visual Studio 확장성 샘플의 GitHub 프로젝트가 곧 표시 되 고 완료 된 프로젝트가 표시 됩니다. 이 문서는 발생 하는 경우를 가리키도록 업데이트 됩니다. 완성 된 샘플 프로젝트는 다른 guid를 포함할 수 있으며 명령 아이콘에 대해 다른 비트맵 스트립을 갖습니다.

@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 항목의 속성 유지 | Microsoft Docs
+description: 프로젝트 파일의 확장 된 프로젝트 형식에 속성을 저장 하 여 프로젝트 항목에 추가 하는 속성을 유지 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906193"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862700"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
 프로젝트 항목에 추가 하는 속성 (예: 소스 파일의 작성자)을 유지 하려고 할 수 있습니다. 프로젝트 파일에 속성을 저장 하 여이 작업을 수행할 수 있습니다.
 
  프로젝트 파일에서 속성을 유지 하는 첫 번째 단계는 프로젝트의 계층 구조를 인터페이스로 가져오는 것입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . 자동화를 사용 하거나를 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . 인터페이스를 가져온 후에는이 인터페이스를 사용 하 여 현재 선택 된 프로젝트 항목을 확인할 수 있습니다. 프로젝트 항목 ID가 있으면를 사용 하 여 속성을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 추가할 수 있습니다.
 
- 다음 절차에서는 *VsPkg.cs* `Author` `Tom` 프로젝트 파일의 값을 사용 하 여 VsPkg.cs 속성을 유지 합니다.
+ 다음 절차에서는  `Author` `Tom` 프로젝트 파일의 값을 사용 하 여 VsPkg.cs 속성을 유지 합니다.
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 계층 구조를 가져오려면
 
@@ -67,7 +69,7 @@ ms.locfileid: "85906193"
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 
@@ -117,7 +119,7 @@ ms.locfileid: "85906193"
 
 1. 를 시작 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하 고 솔루션을 열거나 만듭니다.
 
-2. **솔루션 탐색기**에서 프로젝트 항목 VsPkg.cs를 선택 합니다.
+2. **솔루션 탐색기** 에서 프로젝트 항목 VsPkg.cs를 선택 합니다.
 
 3. 중단점을 사용 하거나, VSPackage가 로드 되 고 SetItemAttribute가 실행 되는지 확인 합니다.
 

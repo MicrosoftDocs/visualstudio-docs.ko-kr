@@ -1,5 +1,7 @@
 ---
 title: 파일 이름 확장명에 대 한 동사를 등록 하는 중 | Microsoft Docs
+description: 셸 키를 사용 하 여 파일 이름 확장명에 대 한 프로그래밍 식별자와 연결 된 동사를 등록 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701529"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863048"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대 한 동사 등록
 일반적으로 응용 프로그램과 파일 이름 확장명을 연결 하는 경우 사용자가 파일을 두 번 클릭할 때 발생 하는 기본 작업이 있습니다. 이 기본 작업은 작업에 해당 하는 열기와 같은 동사에 연결 됩니다.
 
- **HKEY_CLASSES_ROOT \{ progid} \shell**에 있는 셸 키를 사용 하 여 확장 프로그램에 대 한 progid (프로그래밍 식별자)와 연결 된 동사를 등록할 수 있습니다. 자세한 내용은 [파일 형식](/windows/desktop/shell/fa-file-types)을 참조 하세요.
+ **HKEY_CLASSES_ROOT \{ progid} \shell** 에 있는 셸 키를 사용 하 여 확장 프로그램에 대 한 progid (프로그래밍 식별자)와 연결 된 동사를 등록할 수 있습니다. 자세한 내용은 [파일 형식](/windows/desktop/shell/fa-file-types)을 참조 하세요.
 
 ## <a name="register-standard-verbs"></a>표준 동사 등록
  운영 체제는 다음 표준 동사를 인식 합니다.
@@ -71,7 +73,7 @@ ms.locfileid: "80701529"
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- 기존 인스턴스에서 파일을 열려면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DDEEXEC 키를 등록 합니다. 다음 예제에서는 .cs 파일의 표준 동사 등록을 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* .
+ 기존 인스턴스에서 파일을 열려면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] DDEEXEC 키를 등록 합니다. 다음 예제에서는 .cs 파일의 표준 동사 등록을 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]  .
 
 ```
 [HKEY_CLASSES_ROOT\.cs]

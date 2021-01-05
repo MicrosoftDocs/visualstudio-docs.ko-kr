@@ -1,5 +1,7 @@
 ---
 title: Windows Installer 배포용 확장 준비 | Microsoft Docs
+description: 기본 출력이 설치 프로젝트에 포함 될 VSIX 패키지인 프로젝트를 준비 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012219"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862904"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows Installer 배포를 위한 확장 준비
 Windows Installer 패키지 (MSI)를 사용 하 여 VSIX 패키지를 배포할 수 없습니다. 그러나 MSI 배포에 대 한 VSIX 패키지의 내용을 추출할 수 있습니다. 이 문서에서는 기본 출력이 설치 프로젝트에 포함 될 VSIX 패키지인 프로젝트를 준비 하는 방법을 보여 줍니다.
@@ -33,7 +35,7 @@ Windows Installer 패키지 (MSI)를 사용 하 여 VSIX 패키지를 배포할 
 
      그러면 VSIX 설치 관리자가 구성 요소를 설치 하려고 시도 하지 않습니다.
 
-4. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 합니다.
+4. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성** 을 클릭 합니다.
 
 5. **VSIX** 탭을 선택 합니다.
 
@@ -44,7 +46,7 @@ Windows Installer 패키지 (MSI)를 사용 하 여 VSIX 패키지를 배포할 
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>기존 VSIX 패키지에서 파일을 추출 하려면
 
-1. 이름을 바꿉니다 *. * *filename.zip*에 대 한 확장명을 포함 하는 vsix 파일입니다 *.*
+1. 이름을 바꿉니다 *.* *filename.zip* 에 대 한 확장명을 포함 하는 vsix 파일입니다 *.*
 
 2. *.Zip* 파일의 내용을 디렉터리에 복사 합니다.
 
@@ -54,6 +56,6 @@ Windows Installer 패키지 (MSI)를 사용 하 여 VSIX 패키지를 배포할 
 
 5. 나머지 파일을 설치 프로젝트에 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [Visual Studio 설치 관리자 배포](/previous-versions/2kt85ked(v=vs.120))
 - [연습: 사용자 지정 작업 만들기](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

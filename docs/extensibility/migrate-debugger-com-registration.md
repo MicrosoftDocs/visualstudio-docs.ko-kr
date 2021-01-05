@@ -1,5 +1,7 @@
 ---
 title: 64 비트 디버거 COM 클래스 등록 마이그레이션 | Microsoft Docs
+description: HKEY_CLASSES_ROOT에 쓰지 않고 디버거 확장을 위해 msvsmon에 COM 클래스를 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -8,12 +10,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62433697"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862892"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>64 비트 디버거 COM 클래스 등록 마이그레이션
 
@@ -21,7 +23,7 @@ Regasm, regsvr32를 사용 하 여 HKEY_CLASSES_ROOT에 COM 클래스를 등록 
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-이 방법을 사용 하려면 *msvsmon (InstallDir: \Common7\IDE\Remote debugger\x64 or *) 옆에 *있는 파일에.msvsmon-comclass-def.js* * 를 추가 합니다.
+이 방법을 사용 하려면 *msvsmon (InstallDir: \Common7\IDE\Remote debugger\x64 or *) 옆에 *있는 파일에.msvsmon-comclass-def.js** 를 추가 합니다.
 
 다음은 관리 되는 클래스와 네이티브 클래스 하나를 등록 하는 msvsmon-comclass def 파일의 예입니다.
 

@@ -1,5 +1,7 @@
 ---
 title: Vspackage 등록 및 등록 취소 | Microsoft Docs
+description: 사용 하는 특성 및 .pkgdef 파일을 포함 하 여 Vspackage 등록 및 등록 취소에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f345bdbd3cf5858d495937c743b580abf5e3dd50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b60844826387c2807eedcb47fe24c11a58af80f
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701588"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862880"
 ---
 # <a name="register-and-unregister-vspackages"></a>Vspackage 등록 및 등록 취소
 특성을 사용 하 여 VSPackage를 등록 하지만
@@ -29,7 +31,7 @@ ms.locfileid: "80701588"
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]
-public sealed class BasicPackage : Package
+public sealed class BasicPackage : Package
 {
     // ...
 }
@@ -42,7 +44,7 @@ public sealed class BasicPackage : Package
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- Visual Studio의 개발 인스턴스에 설치한 확장을 제거 하려면 **도구**  >  **확장 및 업데이트**로 이동 하 여 확장을 찾은 다음 **제거**를 클릭 합니다.
+ Visual Studio의 개발 인스턴스에 설치한 확장을 제거 하려면 **도구**  >  **확장 및 업데이트** 로 이동 하 여 확장을 찾은 다음 **제거** 를 클릭 합니다.
 
  어떤 이유로 든 확장을 제거 하는 데 이러한 메서드가 모두 성공 하지 못하는 경우 다음과 같이 명령줄에서 VSPackage 어셈블리를 등록 취소할 수 있습니다.
 

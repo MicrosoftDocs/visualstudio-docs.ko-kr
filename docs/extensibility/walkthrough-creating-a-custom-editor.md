@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 편집기 만들기 | Microsoft Docs'
+description: VSPackage 프로젝트 템플릿에서이 연습을 사용 하 여 c + +로 간단한 사용자 지정 편집기를 만들 수 있는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905919"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863130"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
 VSPackage 프로젝트 템플릿은 c + +로 간단한 사용자 지정 편집기를 만들 수 있습니다. VSPackage 프로젝트 템플릿은 c # 또는 Visual Basic 프로젝트를 더 이상 지원 하지 않습니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿
@@ -30,7 +32,7 @@ VSPackage 프로젝트 템플릿은 c + +로 간단한 사용자 지정 편집�
 
 1. Visual Studio 패키지 템플릿을 사용 하 여 프로젝트를 만듭니다.
 
-2. **사용자 지정 편집기** 옵션을 선택 하 고 **다음**을 클릭 합니다. **편집기 옵션** 페이지가 나타납니다.
+2. **사용자 지정 편집기** 옵션을 선택 하 고 **다음** 을 클릭 합니다. **편집기 옵션** 페이지가 나타납니다.
 
 3. 편집기 **이름** 상자에 편집기의 이름을 입력 합니다. **파일 확장명** 상자에서 편집기와 연결 하려는 파일 확장명을 입력 합니다. 이 확장명을 가진 파일에 편집기를 사용할 수 있습니다. 파일 확장명은 Windows가 아닌 Visual Studio에만 등록 됩니다. 편집기를 사용 하 여 만든 새 문서의 기본 파일 이름을 **기본 파일 이름** 상자에 입력 합니다.
 
@@ -38,7 +40,7 @@ VSPackage 프로젝트 템플릿은 c + +로 간단한 사용자 지정 편집�
 
 ### <a name="to-test-your-custom-editor"></a>사용자 지정 편집기를 테스트 하려면
 
-1. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **파일**을 클릭 합니다.
+1. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **파일** 을 클릭 합니다.
 
 2. **새 파일** 대화 상자의 **설치 된 템플릿** 창에서 파일 템플릿을 선택 하 고 등록 한 파일 형식을 선택 합니다.
 

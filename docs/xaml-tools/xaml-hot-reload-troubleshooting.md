@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328472"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833223"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>XAML 핫 다시 로드 문제 해결
 
@@ -34,20 +34,20 @@ WPF 및 UWP 앱에는 XAML 핫 다시 로드가 지원 됩니다. 운영 체제 
 
 ![XAML 핫 다시 로드 사용 가능](../debugger/media/xaml-hot-reload-available.png)
 
-앱 내 도구 모음이 표시 되지 않으면 일반 **디버그**  >  **옵션**을 엽니다  >  **General**. 두 옵션, **xaml 용 UI 디버깅 도구 사용** 및 **Xaml 핫 다시 로드 사용** 이 선택 되어 있는지 확인 합니다.
+앱 내 도구 모음이 표시 되지 않으면 일반 **디버그**  >  **옵션** 을 엽니다  >  . 두 옵션, **xaml 용 UI 디버깅 도구 사용** 및 **Xaml 핫 다시 로드 사용** 이 선택 되어 있는지 확인 합니다.
 
-![XAML 핫 다시 로드 사용](../debugger/media/xaml-hot-reload-enable.png)
+![Visual Studio 디버그 옵션 창의 스크린샷 일반 디버깅 옵션이 선택 되 고 XAML 핫 재 로드 사용 옵션이 선택 되어 있습니다.](../debugger/media/xaml-hot-reload-enable.png)
 
 이러한 옵션을 선택한 경우 라이브 시각적 트리 (**디버그**  >  **Windows**  >  **라이브 시각적 트리**)로 이동 하 고 응용 프로그램 도구 모음 **에 런타임 도구 표시** 단추 (맨 왼쪽)를 선택 해야 합니다.
 
-![XAML 핫 다시 로드 사용](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![' 응용 프로그램에서 런타임 도구 표시 ' 단추가 선택 된 상태로 라이브 시각적 트리 창 위쪽의 도구 모음 스크린샷](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>프로세스에 연결 하는 대신 디버깅 시작을 사용 하는지 확인 합니다.
 
-XAML 핫 다시 로드는 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 응용 프로그램이 시작 될 때 환경 변수를 1로 설정 해야 합니다. Visual Studio는 **디버그**  >  **디버깅 시작** 또는 **F5**명령의 일부로이를 자동으로 설정 합니다. **디버그**프로세스에 연결 명령을 대신 사용 하 여 XAML 핫 다시 로드를 사용 하려면  >  **Attach to Process** 환경 변수를 직접 설정 합니다.
+XAML 핫 다시 로드는 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 응용 프로그램이 시작 될 때 환경 변수를 1로 설정 해야 합니다. Visual Studio는 **디버그**  >  **디버깅 시작** 또는 **F5** 명령의 일부로이를 자동으로 설정 합니다. **디버그** 프로세스에 연결 명령을 대신 사용 하 여 XAML 핫 다시 로드를 사용 하려면  >   환경 변수를 직접 설정 합니다.
 
 > [!NOTE]
-> 환경 변수를 설정 하려면 시작 단추를 사용 하 여 "환경 변수"를 검색 하 고 **시스템 환경 변수 편집**을 선택 합니다. 열리는 대화 상자에서 **환경 변수**를 선택한 다음 사용자 변수로 추가 하 고 값을로 설정 `1` 합니다. 정리 하려면 디버깅을 마친 후 변수를 제거 합니다.
+> 환경 변수를 설정 하려면 시작 단추를 사용 하 여 "환경 변수"를 검색 하 고 **시스템 환경 변수 편집** 을 선택 합니다. 열리는 대화 상자에서 **환경 변수** 를 선택한 다음 사용자 변수로 추가 하 고 값을로 설정 `1` 합니다. 정리 하려면 디버깅을 마친 후 변수를 제거 합니다.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>MSBuild 속성이 올바른지 확인
 
@@ -67,7 +67,7 @@ XAML 핫 다시 로드 (이전 섹션 참조)를 지원 하도록 올바른 MSBu
 
 ## <a name="verify-that-your-xaml-file-has-no-errors"></a>XAML 파일에 오류가 없는지 확인 합니다.
 
-XAML 파일에 **오류 목록**오류가 표시 되 면 Xaml 핫 다시 로드가 작동 하지 않을 수 있습니다.
+XAML 파일에 **오류 목록** 오류가 표시 되 면 Xaml 핫 다시 로드가 작동 하지 않을 수 있습니다.
 
 ## <a name="see-also"></a>추가 정보
 

@@ -1,5 +1,7 @@
 ---
 title: '연습: 사용자 지정 편집기에 기능 추가 | Microsoft Docs'
+description: 이 연습을 사용 하 여 편집기를 만든 후 사용자 지정 편집기에 기능을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414024"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863197"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 사용자 지정 편집기를 만든 후 추가 기능을 추가할 수 있습니다.
@@ -138,7 +140,7 @@ ms.locfileid: "93414024"
   > [!NOTE]
   > `IOleInPlaceComponent`인터페이스는 OLE 2 메뉴 병합을 방지 하는 데 사용 됩니다.
 
-   `IOleCommandTarget`구현에서는 **잘라내기** , **복사** 및 **붙여넣기** 와 같은 명령을 처리 합니다. 을 구현 하는 경우 편집기에서 자체의 `IOleCommandTarget` 명령 메뉴 구조를 정의 하거나에서 정의한 표준 명령을 구현할 수 있는지 여부를 결정 *합니다.* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 일반적으로 편집기는 IDE의 메뉴를 사용 및 확장 하 고 자체 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에 고유한 특정 명령을 정의 해야 하는 경우가 종종 있습니다. 편집기에서 사용 하는 표준 명령을 선언 하 고 *vsct* 파일에 새 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음을 정의 해야 합니다. 내부 활성화 편집기를 만드는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 메뉴 병합을 사용 하는 대신 *vsct* 파일에서 편집기의 메뉴 및 도구 모음을 구현 하 고 정의 합니다.
+   `IOleCommandTarget`구현에서는 **잘라내기**, **복사** 및 **붙여넣기** 와 같은 명령을 처리 합니다. 을 구현 하는 경우 편집기에서 자체의 `IOleCommandTarget` 명령 메뉴 구조를 정의 하거나에서 정의한 표준 명령을 구현할 수 있는지 여부를 결정 *합니다.* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 일반적으로 편집기는 IDE의 메뉴를 사용 및 확장 하 고 자체 도구 모음을 정의 합니다. 그러나 편집기에서 IDE의 표준 명령 집합을 사용 하는 것 외에 고유한 특정 명령을 정의 해야 하는 경우가 종종 있습니다. 편집기에서 사용 하는 표준 명령을 선언 하 고 *vsct* 파일에 새 명령, 상황에 맞는 메뉴, 최상위 메뉴 및 도구 모음을 정의 해야 합니다. 내부 활성화 편집기를 만드는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 메뉴 병합을 사용 하는 대신 *vsct* 파일에서 편집기의 메뉴 및 도구 모음을 구현 하 고 정의 합니다.
 
 - UI에서 메뉴 명령을 crowding 하지 않으려면 새 명령을 고안 전에 IDE에서 기존 명령을 사용 해야 합니다. 공유 명령은 *Sharedcmddef. vsct* 및 *shellcmddef vsct* 에 정의 되어 있습니다. 이러한 파일은 기본적으로 설치의 VisualStudioIntegration\Common\Inc 하위 디렉터리에 설치 됩니다 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
 
@@ -152,6 +154,6 @@ ms.locfileid: "93414024"
 
   - `Window.Object`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [자동화 모델에 기여](../extensibility/internals/contributing-to-the-automation-model.md)
