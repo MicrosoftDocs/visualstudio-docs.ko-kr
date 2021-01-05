@@ -1,5 +1,7 @@
 ---
 title: 동기적으로 자동 로드된 확장
+description: 모든 확장에서 동기적으로 자동 로드 된 패키지를 차단 하는 Visual Studio 2019부터 기본 동작에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699379"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715446"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>동기적으로 자동 로드된 확장
 
@@ -21,7 +23,7 @@ ms.locfileid: "80699379"
 
 ![확장 호환성 경고](media/extension-compatibility-warning-16-1.png.png)
 
-다음과 같습니다.
+다음 작업을 수행할 수 있습니다.
 
 - **동기 Autoload 허용** 을 클릭 하 여 autoload에 대 한 확장을 허용 합니다. Visual Studio 옵션에서이 설정을 변경 하려면 환경을 클릭 한 다음 확장을 클릭 하 고 "동기 autoload 확장 허용" 확인란을 선택 합니다. 
 
@@ -42,7 +44,7 @@ ms.locfileid: "80699379"
 
 관리자는 그룹 정책을 사용 하도록 설정 하 여 동기 autoload을 허용할 수 있습니다. 이렇게 하려면 다음 키에 레지스트리 기반 정책을 설정합니다.
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 항목 = **허용 됨**
 

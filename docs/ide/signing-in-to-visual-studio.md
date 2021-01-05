@@ -2,7 +2,7 @@
 title: Visual Studio에 로그인
 description: Visual Studio에 로그인하는 방법을 알아봅니다.
 titleSuffix: ''
-ms.custom: seodec18, contperfq1
+ms.custom: seodec18, contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672771"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683989"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 

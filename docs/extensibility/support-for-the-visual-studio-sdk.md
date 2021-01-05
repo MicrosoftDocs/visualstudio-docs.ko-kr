@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK에 대 한 지원 | Microsoft Docs
+description: Visual Studio IDE를 확장 하는 방법에 대 한 고객에 게 제공 되는 지원 옵션에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099377"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715290"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 지원
 Visual Studio IDE (통합 개발 환경)를 확장 하는 방법에 대 한 질문이 있는 고객에 게 몇 가지 지원 옵션을 사용할 수 있습니다.

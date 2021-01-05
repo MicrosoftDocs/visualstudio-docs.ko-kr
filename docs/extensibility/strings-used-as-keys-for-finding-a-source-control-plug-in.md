@@ -1,5 +1,6 @@
 ---
 title: 소스 제어 플러그 인을 찾기 위해 키로 사용 되는 문자열
+description: 원본 제어 플러그 인에 대 한 정보를 찾기 위해 레지스트리에 액세스 하기 위한 키인 문자열에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e1a9c73c13632cf766b0536f2b7cfc1b456394
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a99d64873018885c35c066f05e6a3a8919868d72
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037135"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715316"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>소스 제어 플러그 인을 찾기 위한 키로 사용되는 문자열
 다음 문자열은 원본 제어 플러그 인에 대 한 정보를 찾기 위해 레지스트리에 액세스 하는 데 사용할 수 있는 키입니다.

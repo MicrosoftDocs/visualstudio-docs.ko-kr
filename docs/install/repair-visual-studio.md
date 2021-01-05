@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007115"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668536"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio 복구
 
@@ -32,7 +32,7 @@ ms.locfileid: "92007115"
 > 설치 문제가 Windows Installer와 같은 기본 Windows 서비스의 문제로 인해 발생한 경우 복구에서도 동일한 문제가 발생할 수 있습니다. 시스템 문제에는 손상된 Windows Installer 또는 불안정한 인터넷 연결이 포함될 수 있습니다. 시스템 문제를 확인하려면 설치 작업에서 생성된 오류 보고서를 사용합니다.
 
 > [!NOTE] 
-> Visual Studio를 복구하면 사용자 설정이 초기화되고 이미 있던 어셈블리가 다시 설치됩니다. 제품 문제가 발생한 경우 복구를 통해 문제가 해결되지 않을 수 있으므로 [Visual Studio 피드백 티켓](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)을 만듭니다.
+> Visual Studio를 복구하면 사용자 설정이 초기화되고 이미 있던 어셈블리가 다시 설치됩니다. 제품 문제가 발생한 경우 복구를 통해 문제가 해결되지 않을 수 있으므로 [Visual Studio 피드백 티켓](https://aka.ms/feedback/suggest?space=8)을 만듭니다.
 
 ## <a name="how-to-repair"></a>복구 방법
 ::: moniker range="vs-2017"

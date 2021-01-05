@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852259"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668783"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결
 이 페이지에서는 “값이 변경되면 중단”을 사용할 때 표시되는 일반적인 오류를 해결하는 과정을 안내합니다.
@@ -81,7 +81,7 @@ ms.locfileid: "90852259"
 
 ## <a name="provide-feedback"></a>피드백 제공
 
-이 기능에 대한 문제 또는 제안 사항은 IDE 또는 [Developer Community](https://developercommunity.visualstudio.com/)에서 도움말 > 피드백 보내기 > [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 통해 알려주세요.
+이 기능에 대한 문제 또는 제안 사항은 IDE 또는 [Developer Community](https://aka.ms/feedback/suggest?space=8)에서 도움말 > 피드백 보내기 > [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 통해 알려주세요.
 
 ## <a name="see-also"></a>참조
 

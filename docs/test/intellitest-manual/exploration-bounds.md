@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328901"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667925"
 ---
 # <a name="exploration-bounds"></a>탐색 경계
 
@@ -188,4 +188,4 @@ IntelliTest가 내보내야 하는 테스트 형식을 나타냅니다. 가능�
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 
-아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에 게시하세요.

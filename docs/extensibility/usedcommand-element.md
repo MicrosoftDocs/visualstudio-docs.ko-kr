@@ -1,5 +1,7 @@
 ---
 title: UsedCommand 요소 | Microsoft Docs
+description: VSPackage는 UsedCommand 요소를 사용 하 여 다른 vsct 파일에 정의 된 명령에 액세스할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698833"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715966"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
 VSPackage에서 다른. vsct 파일에 정의 된 명령에 액세스할 수 있습니다. 예를 들어 VSPackage에서 셸에서 정의한 표준 **복사** 명령을 사용 하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령을 다시 구현 하지 않고 메뉴 또는 도구 모음에 명령을 추가할 수 있습니다.
@@ -32,7 +34,7 @@ VSPackage에서 다른. vsct 파일에 정의 된 명령에 액세스할 수 있
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |guid|필수 요소. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|
 |id|필수 요소. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|

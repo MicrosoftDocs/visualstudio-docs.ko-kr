@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398997"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668367"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -155,7 +155,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 몇 가지 추가 지원 옵션은 다음과 같습니다.
 
 * Visual Studio 설치 관리자와 Visual Studio IDE에 모두 표시되는 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md) 도구를 통해 Microsoft에 제품 문제를 보고합니다.
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 기능을 제안하고, 제품 문제를 추적하고, 답변을 찾습니다.
+* [Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에서 기능을 제안하고, 제품 문제를 추적하고, 답변을 찾습니다.
 * [GitHub](https://github.com/)을 사용하여 [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)에서 본사 및 다른 Visual Studio 개발자와 소통합니다.
 
 ## <a name="see-also"></a>참조

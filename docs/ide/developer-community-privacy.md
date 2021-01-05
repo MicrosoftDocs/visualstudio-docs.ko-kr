@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005940"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668549"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
-기본적으로 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)의 문제 보고서에 있는 모든 정보(설명 및 응답 포함)는 공개적으로 표시됩니다. 이를 통해 전체 커뮤니티에서 다른 사용자가 발견한 문제점, 솔루션 및 해결 방법을 볼 수 있기 때문에 유용합니다. 그러나 데이터 또는 ID의 개인 정보에 대한 우려가 있는 경우 옵션이 있습니다.
+기본적으로 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)의 문제 보고서에 있는 모든 정보(설명 및 응답 포함)는 공개적으로 표시됩니다. 이를 통해 전체 커뮤니티에서 다른 사용자가 발견한 문제점, 솔루션 및 해결 방법을 볼 수 있기 때문에 유용합니다. 그러나 데이터 또는 ID의 개인 정보에 대한 우려가 있는 경우 옵션이 있습니다.
 
 ## <a name="identity-privacy"></a>ID 개인 정보
 

@@ -3,7 +3,7 @@ title: Visual Studio 설치
 titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
 ms.date: 12/13/2019
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f0d17fcaf856799ded82ebe684d671b358cb8df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee7965d1c98dbdb05f0edc83c6c8799047acde
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114273"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684061"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -110,7 +110,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ::: moniker range="vs-2019"
 
-이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
+이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장** 을 선택한 다음, **폴더 열기** 를 선택합니다.
 
  > [!div class="button"]
  > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -127,9 +127,9 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
    * Visual Studio Professional용 **vs_professional.exe**
    * Visual Studio Enterprise용 **vs_enterprise.exe**
 
-   사용자 계정 컨트롤 알림을 받으면 **예**를 선택합니다.
+   사용자 계정 컨트롤 알림을 받으면 **예** 를 선택합니다.
 
-2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 선택합니다.
+2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속** 을 선택합니다.
 
    ![사용 조건 및 개인정보처리방침](media/privacy-and-license-terms.png "사용 조건 및 개인정보처리방침")
 
@@ -139,13 +139,13 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
  ::: moniker range="vs-2017"
 
-1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
+1. **Visual Studio 설치 관리자** 에서 원하는 워크로드를 찾습니다.
 
    ![Visual Studio 2017: 워크로드 설치](../install/media/vs-installer-installing-workloads.png)
 
      예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
+1. 원하는 작업을 선택한 후 **설치** 를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
@@ -153,20 +153,20 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker range="vs-2019"
 
-1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
+1. **Visual Studio 설치 관리자** 에서 원하는 워크로드를 찾습니다.
 
    ![Visual Studio 2019: 워크로드 설치](../install/media/vs-2019/vs-installer-workloads.png)
 
      예를 들어 "ASP.NET 및 웹 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
+1. 원하는 작업을 선택한 후 **설치** 를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
  ::: moniker-end
 
 > [!TIP]
-> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 워크로드 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
+> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자** 를 엽니다. 여기에서 설치할 워크로드 또는 구성 요소를 선택합니다. 그런 다음, **수정** 을 선택합니다.
 
 ## <a name="step-5---choose-individual-components-optional"></a>5단계 - 개별 구성 요소 선택(선택 사항)
 
@@ -233,13 +233,13 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 1. Visual Studio 설치가 완료되면 **시작** 단추를 선택하여 Visual Studio에서 개발을 시작합니다.
 
-2. **파일**을 선택한 다음, **새 프로젝트**를 선택합니다.
+2. **파일** 을 선택한 다음, **새 프로젝트** 를 선택합니다.
 
 3. 프로젝트 형식을 선택합니다.
 
-   예를 들어 [C++ 앱을 빌드](/cpp/get-started/tutorial-console-cpp)하려면 **설치됨**을 선택하고 **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
+   예를 들어 [C++ 앱을 빌드](/cpp/get-started/tutorial-console-cpp)하려면 **설치됨** 을 선택하고 **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
 
-   [C# 앱을 빌드](../get-started/csharp/tutorial-console.md)하려면 **설치됨**을 선택하고 **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
+   [C# 앱을 빌드](../get-started/csharp/tutorial-console.md)하려면 **설치됨** 을 선택하고 **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
 
 ::: moniker-end
 
@@ -247,7 +247,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 1. Visual Studio 설치가 완료되면 **시작** 단추를 선택하여 Visual Studio에서 개발을 시작합니다.
 
-1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
 1. 검색 상자에 생성할 앱 유형을 입력하여 사용 가능한 템플릿 목록을 확인합니다. 템플릿 목록은 설치 중에 선택한 작업에 따라 달라집니다. 다른 템플릿을 보려면 다른 워크로드를 선택합니다.
 

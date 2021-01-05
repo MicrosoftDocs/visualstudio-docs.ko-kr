@@ -1,5 +1,7 @@
 ---
 title: 실험적 인스턴스 | Microsoft Docs
+description: 디버그 모드에서 Visual Studio SDK가 테스트 되지 않은 응용 프로그램을 실행 하는 데 실험적 공간을 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699034"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715862"
 ---
 # <a name="the-experimental-instance"></a>실험적 인스턴스
 변경 될 수 있는 테스트 되지 않은 응용 프로그램에서 Visual Studio 개발 환경을 보호 하기 위해이를 실험 하는 데 사용할 수 있는 실험적 공간을 제공 합니다. 일반적인 방법으로 Visual Studio를 사용 하 여 새 응용 프로그램을 개발 하지만이 실험적 인스턴스를 사용 하 여 실행할 수 있습니다.

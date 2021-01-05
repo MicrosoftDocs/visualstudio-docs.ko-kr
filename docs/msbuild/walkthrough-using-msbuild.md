@@ -3,7 +3,7 @@ title: MSBuild 사용
 description: 항목, 항목 메타데이터, 속성, 대상 및 작업을 포함하여 MSBuild 프로젝트 파일의 다양한 부분에 대해 알아봅니다.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298534"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684021"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 
@@ -41,7 +41,7 @@ Visual Studio가 있는 경우 이미 MSBuild가 설치되어 있습니다. Visu
 ::: moniker range="vs-2019"
 Visual Studio가 있는 경우 이미 MSBuild가 설치되어 있습니다. Visual Studio 2019에서는 Visual Studio 설치 폴더 아래에 설치됩니다. Windows 10의 일반적인 기본 설치의 경우 MSBuild.exe는 *MSBuild\Current\Bin* 의 설치 폴더 아래에 있습니다.
 
-Visual Studio가 없는 시스템에 MSBuild를 설치하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)로 이동하고 아래로 스크롤하여 **모든 다운로드** 를 찾은 다음 **Visual Studio 2019용 도구** 를 확장합니다. **Visual Studio 2019용 빌드 도구** (MSBuild가 포함됨)를 설치하거나 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)를 설치합니다.
+Visual Studio가 없는 시스템에 MSBuild를 설치하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)로 이동하고 아래로 스크롤하여 **모든 다운로드** 를 찾은 다음 **Visual Studio 2019용 도구** 를 확장합니다. **Visual Studio 2019용 빌드 도구**(MSBuild가 포함됨)를 설치하거나 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)를 설치합니다.
 
 설치 프로그램에서 사용하는 워크로드용 MSBuild 도구가 선택되어 있는지 확인하고 **설치** 를 선택합니다.
 
@@ -60,12 +60,12 @@ Visual Studio가 없는 시스템에 MSBuild를 설치하려면 [Visual Studio �
     ::: moniker range=">=vs-2019"
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q** 를 입력하여 검색 상자를 열고, **winforms** 를 입력한 다음, **새 Windows Forms 앱(.NET Framework) 만들기** 를 선택합니다. 표시되는 대화 상자에서 **만들기** 를 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치** 를 *D:\\* 와 같이 입력합니다. **솔루션** , **솔루션 이름** ( **BuildApp** ) 및 **프레임워크** 의 기본값을 적용합니다.
+    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치** 를 *D:\\* 와 같이 입력합니다. **솔루션**, **솔루션 이름**(**BuildApp**) 및 **프레임워크** 의 기본값을 적용합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#**  > **Windows Desktop** 을 확장한 다음, **Windows Forms 앱(.NET Framework)** 을 선택합니다. 그런 다음, **확인** 을 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치** 를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기** 의 기본값(선택된 상태), **소스 제어에 추가** 의 기본값(선택되지 않은 상태) 및 **솔루션 이름** 의 기본값( **BuildApp** )을 적용합니다.
+    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치** 를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기** 의 기본값(선택된 상태), **소스 제어에 추가** 의 기본값(선택되지 않은 상태) 및 **솔루션 이름** 의 기본값(**BuildApp**)을 적용합니다.
     ::: moniker-end
 
 1. **확인** 또는 **만들기** 를 클릭하여 프로젝트 파일을 만듭니다.
@@ -169,7 +169,7 @@ Visual Studio용 **개발자 명령 프롬프트** 에서 MSBuild를 실행하�
 
    수동으로 찾아야 하는 경우 파일은 *<visualstudio 설치 폴더\>\<version>\Common7\Tools* 폴더의 *LaunchDevCmd.bat* 입니다.
 
-2. 명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp* )로 이동합니다.
+2. 명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 *D:\BuildApp\BuildApp*)로 이동합니다.
 
 3. 명령 스위치 `-t:HelloWorld`를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.
 
@@ -351,7 +351,7 @@ MSBuild 프로젝트 파일에서 특정 문자는 특수한 의미로 사용됩
 </ItemGroup>
 ```
 
-위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. *Program.cs* 및 *Properties\AssemblyInfo.cs* .
+위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. *Program.cs* 및 *Properties\AssemblyInfo.cs*.
 
 다음 코드는 이 두 파일을 모두 세미콜론으로 구분하여 Include 특성 하나에 선언하는 방식으로 같은 항목 종류를 만듭니다.
 

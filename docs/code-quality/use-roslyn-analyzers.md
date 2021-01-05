@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040643"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696631"
 ---
 # <a name="overview"></a>개요
 
@@ -133,7 +133,7 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 
 Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
 
-1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 Ctrl 키를 누릅니다 **Ctrl** + **.** 누릅니다.
+1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 Ctrl 키를 누릅니다  + **.** 누릅니다.
 
 2. 전구 메뉴에서 **문제 구성 또는 표시 안 함** 을 선택 하 여 > **\<rule ID> 심각도를 구성** 합니다.
 
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>솔루션 탐색기에서 규칙 심각도 설정
 
-1. 솔루션 탐색기에서 **참조**  >  **분석기** (또는 **Dependencies**  >  .net Core 프로젝트에 대 한 종속성 **분석기** )를 확장 합니다.
+1. 솔루션 탐색기에서 **참조**  >  **분석기** (또는   >  .net Core 프로젝트에 대 한 종속성 **분석기** )를 확장 합니다.
 
 2. 심각도를 설정 하려는 규칙이 포함 된 어셈블리를 확장 합니다.
 
@@ -333,7 +333,7 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 - **분석** 메뉴에서
 
-  **Analyze**  >  메뉴 모음에서 **빌드 분석 및 활성 문제 표시 안** 함을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
+    >  메뉴 모음에서 **빌드 분석 및 활성 문제 표시 안** 함을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
 
 ::: moniker-end
 
@@ -341,7 +341,7 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 - **분석** 메뉴에서
 
-  **Analyze**  >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
+    >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
 
 ::: moniker-end
 
@@ -355,13 +355,13 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 - **코드 편집기** 에서
 
-  위반 하는 코드 줄에 커서를 놓고 **Ctrl** + **마침표 (.)** 를 눌러 **빠른 작업** 메뉴를 엽니다. 원본/비 표시 제거 파일에서 **caxxxx를 표시 하지 않습니다**  >  **in Source/in Suppression File**.를 선택 합니다.
+  위반 하는 코드 줄에 커서를 놓고 **Ctrl** + **마침표 (.)** 를 눌러 **빠른 작업** 메뉴를 엽니다. 원본/비 표시 제거 파일에서 **caxxxx를 표시 하지 않습니다**  >  .를 선택 합니다.
 
   ![빠른 작업 메뉴에서 진단 표시 안 함](media/suppress-diagnostic-from-editor.png)
 
 - **오류 목록** 에서
 
-  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 하 고 소스/비 **표시 안 함 파일에서 표시 안 함** 을 선택  >  **In Source/In Suppression File** 합니다.
+  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 하 고 소스/비 **표시 안 함 파일에서 표시 안 함** 을 선택  >  합니다.
 
   - **소스에서** 표시 하지 않는 경우 **변경 내용 미리 보기** 대화 상자가 열리고 소스 코드에 추가 된 c # [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 지시문의 미리 보기가 표시 됩니다.
 
@@ -382,7 +382,9 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 명령줄에서 프로젝트를 빌드하는 경우 다음 조건이 충족 되 면 빌드 출력에 규칙 위반이 표시 됩니다.
 
-- 분석기는 VSIX 확장이 아니라 NuGet 패키지로 설치 됩니다.
+- 분석기는 VSIX 확장이 아니라 .NET SDK 또는 NuGet 패키지로 설치 됩니다.
+
+  .NET SDK를 사용 하 여 설치 된 분석기의 경우 [분석기를 사용 하도록 설정](../code-quality/install-net-analyzers.md)해야 할 수 있습니다. 코드 스타일의 경우 MSBuild 속성을 설정 하 여 [빌드에 코드 스타일을 적용할](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) 수도 있습니다.
 
 - 프로젝트 코드에서 하나 이상의 규칙을 위반 했습니다.
 
@@ -411,7 +413,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

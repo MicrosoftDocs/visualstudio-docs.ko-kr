@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 확장 전달 | Microsoft Docs
+description: .Vsix 파일 작업, 게시, 지역화 및 업데이트를 포함 하 여 Visual Studio SDK 확장을 게시 하 고 유지 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700118"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716005"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
 확장 개발을 마친 후에는 다른 컴퓨터에 설치 하거나, 친구 및 동료와 공유 하거나, Visual Studio Marketplace에 게시할 수 있습니다. 이 섹션에서는 확장명을 게시 하 고 유지 관리 하기 위해 수행 해야 하는 모든 작업을 설명 합니다. .vsix 파일 작업, 게시, 지역화, 업데이트 등이 있습니다.
@@ -30,7 +32,7 @@ ms.locfileid: "80700118"
  VSIX 형식은 코드 조각의 설치를 지원 하지 않습니다. 또한 GAC (전역 어셈블리 캐시) 또는 시스템 레지스트리에 쓰는 등의 다른 시나리오는 지원 하지 않습니다. 설치에서 GAC 또는 레지스트리에 써야 하는 경우 Windows Installer를 사용 해야 합니다. 자세한 내용은 [Windows Installer 배포를 위한 확장 준비](../extensibility/preparing-extensions-for-windows-installer-deployment.md)를 참조 하세요.
 
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Visual Studio Marketplace에 확장 게시
- Vsix 파일을 메일로 전송 하거나 서버에 배치 하 여 다른 사람에 게 확장을 배포할 수 있습니다. 그러나 많은 사람들에 게 코드를 제공 하는 가장 좋은 방법은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)에 배치 하는 것입니다. **확장 및 업데이트**를 통해 Visual Studio 사용자가 Visual Studio Marketplace 확장을 사용할 수 있습니다. 자세한 내용은 [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)을 참조 하세요.
+ Vsix 파일을 메일로 전송 하거나 서버에 배치 하 여 다른 사람에 게 확장을 배포할 수 있습니다. 그러나 많은 사람들에 게 코드를 제공 하는 가장 좋은 방법은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)에 배치 하는 것입니다. **확장 및 업데이트** 를 통해 Visual Studio 사용자가 Visual Studio Marketplace 확장을 사용할 수 있습니다. 자세한 내용은 [Visual Studio 확장명 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)을 참조하세요.
 
  Visual Studio Marketplace 확장을 업로드 하는 방법을 보여 주는 전체 예제는 [연습: Visual Studio 확장 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요.
 

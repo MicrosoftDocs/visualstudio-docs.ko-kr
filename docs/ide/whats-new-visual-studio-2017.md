@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 2c2381211c628a9a405706859b3c80bfc50aa692
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab0d5cc497709a690c88b16771f2c12651e5aed0
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400223"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668666"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -66,13 +66,13 @@ Visual Studio를 사용하면 필요할 때 필요한 기능만 쉽고 빠르게
 
 * 작업을 사용하는 대신 사용자 고유의 구성 요소를 선택하고 싶으세요? 설치 관리자에서 **개별 구성 요소** 탭을 선택합니다.
 * 또한 Windows 언어 옵션을 변경하지 않고도 언어 팩을 설치하고 싶으세요? 설치 관리자의 **언어 팩** 탭을 선택합니다.
-* **15.7의 새로운 기능** : Visual Studio를 설치한 위치를 변경하려는 경우 선택 관리자의 **설치 옵션** 탭을 선택합니다.
+* **15.7의 새로운 기능**: Visual Studio를 설치한 위치를 변경하려는 경우 선택 관리자의 **설치 옵션** 탭을 선택합니다.
 
 단계별 지침을 포함하여 새로운 설치 환경에 대한 자세한 내용은 [Visual Studio 설치](../install/install-visual-studio.md) 페이지를 참조하세요.
 
 ### <a name="a-focus-on-accessibility"></a>액세스 가능성에 집중
 
-**15.3의 새로운 기능** : Visual Studio와 고객들이 많이 사용하는 보조 기술 간의 호환성을 개선하기 위해 1,700가지가 넘는 대상 수정 사항을 적용했습니다. 화면 판독기, 고대비 테마 및 기타 보조 기술과 이전보다 더 높은 호환성을 제공하는 수십 가지 시나리오가 있습니다. 디버거, 편집기 및 셸 역시 모두 크게 향상되었습니다.
+**15.3의 새로운 기능**: Visual Studio와 고객들이 많이 사용하는 보조 기술 간의 호환성을 개선하기 위해 1,700가지가 넘는 대상 수정 사항을 적용했습니다. 화면 판독기, 고대비 테마 및 기타 보조 기술과 이전보다 더 높은 호환성을 제공하는 수십 가지 시나리오가 있습니다. 디버거, 편집기 및 셸 역시 모두 크게 향상되었습니다.
 
 자세한 내용은 [Accessibility improvements in Visual Studio 2017 version 15.3(Visual Studio 2017 버전 15.3의 접근성 향상)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) 블로그 게시물을 참조하세요.
 
@@ -108,11 +108,11 @@ Visual Studio의 확장 목록을 보려면 **도구** > **확장 및 업데이�
 
 로밍 중인 확장 관리자를 사용하는 경우 3개의 아이콘 형식이 목록에 표시됩니다.
 
-* ![로밍 아이콘](media/vs2017ide-roamedicon.png) **_로밍_** : 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
+* ![로밍 아이콘](media/vs2017ide-roamedicon.png) **_로밍_**: 이 로밍 목록에 포함되어 있지만, 머신에 설치되지 않은 확장입니다.
   **다운로드** 단추를 사용하여 이러한 확장을 설치할 수 있습니다.
-* ![로밍 및 설치 아이콘](media/vs2017ide-roamedinstalledicon.png) **_로밍 및 설치 아이콘_** : 로밍 목록에 포함되어 있고 개발 환경에 설치된 모든 확장입니다.
+* ![로밍 및 설치 아이콘](media/vs2017ide-roamedinstalledicon.png) **_로밍 및 설치 아이콘_**: 로밍 목록에 포함되어 있고 개발 환경에 설치된 모든 확장입니다.
   로밍하지 않도록 결정하는 경우 **로밍 중지** 단추를 사용하여 이러한 확장을 제거할 수 있습니다.
-* ![설치 아이콘](media/vs2017ide-installedicon.png) **_설치_** : 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
+* ![설치 아이콘](media/vs2017ide-installedicon.png) **_설치_**: 이 환경에 설치되어 있지만 로밍 목록에 포함되지 않은 모든 확장입니다.
   **로밍 시작** 단추를 사용하여 로밍 목록에 확장을 추가할 수 있습니다.
 
 로그인되어 있는 동안 다운로드한 모든 확장은 목록에 **로밍 및 설치** 로 추가됩니다. 그런 다음, 확장이 로밍 목록에 포함되고, 모든 컴퓨터에서 액세스할 수 있습니다.
@@ -139,13 +139,13 @@ Visual Studio Enterprise 2017에서 라이브 유닛 테스트는 코딩하는 �
 
 #### <a name="multi-caret-editing"></a>다중 캐럿 편집
 
-**15.8의 새로운 기능** : 이제 동시에 파일의 여러 위치를 쉽게 편집할 수 있습니다. 파일의 여러 위치에서 삽입 지점 및 선택 영역을 만들어 시작합니다. 그런 다음, 다중 캐럿 편집 기능을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다.
+**15.8의 새로운 기능**: 이제 동시에 파일의 여러 위치를 쉽게 편집할 수 있습니다. 파일의 여러 위치에서 삽입 지점 및 선택 영역을 만들어 시작합니다. 그런 다음, 다중 캐럿 편집 기능을 사용하여 동시에 둘 이상의 위치에서 동일하게 편집합니다.
 
 자세한 내용은 [텍스트 찾기 및 바꾸기](finding-and-replacing-text.md) 페이지의 [다중 캐럿 선택 영역](finding-and-replacing-text.md#multi-caret-selection) 섹션을 참조하세요.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>키 바인딩 프로필을 일관되게 유지
 
-**15.8의 새로운 기능** : 이제 새로운 두 키보드 프로필을 포함한 도구에서 키 바인딩을 일관적으로 유지할 수 있습니다. Visual Studio Code 및 ReSharper(Visual Studio). 이러한 스키마는 **도구** > **옵션** > **일반** > **키보드** 및 위쪽 드롭다운 메뉴에서 찾을 수 있습니다.
+**15.8의 새로운 기능**: 이제 새로운 두 키보드 프로필을 포함한 도구에서 키 바인딩을 일관적으로 유지할 수 있습니다. Visual Studio Code 및 ReSharper(Visual Studio). 이러한 스키마는 **도구** > **옵션** > **일반** > **키보드** 및 위쪽 드롭다운 메뉴에서 찾을 수 있습니다.
 
   ![Visual Studio Code 및 ReSharper에 대한 새 키 바인딩 프로필](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,15 +174,15 @@ Visual Studio에서 프로젝트를 작업할 때 코드를 설정하고 빠르�
 
 A에서 B로 이동하는 데 도움이 되는 탐색 환경을 새로 고쳐 자신감 있게 더욱 집중할 수 있게 했습니다.
 
-* **15.4의 새로운 기능** : **정의로 이동** ( **Ctrl**+**클릭** 또는 **F12** )&ndash; 마우스 사용자는 **Ctrl** 를 누른 다음, 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](go-to-and-peek-definition.md)을 참조하세요.
+* **15.4의 새로운 기능**: **정의로 이동**(**Ctrl**+**클릭** 또는 **F12**)&ndash; 마우스 사용자는 **Ctrl** 를 누른 다음, 해당 멤버를 클릭하여 멤버 정의로 이동할 수 있는 더 쉬운 방법이 있습니다. **Ctrl** 키를 누르고 코드 기호에 마우스를 올려 놓으면 밑줄이 쳐지고 링크로 바뀝니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](go-to-and-peek-definition.md)을 참조하세요.
 
-* **구현으로 이동** ( **Ctrl**+**F12** )&ndash; 모든 베이스 형식 또는 멤버에서 다양한 구현으로 이동합니다.
+* **구현으로 이동** (**Ctrl**+**F12**)&ndash; 모든 베이스 형식 또는 멤버에서 다양한 구현으로 이동합니다.
 
-* **전체로 이동** ( **Ctrl**+**T** 또는 **Ctrl**+ **,** ) &ndash;모든 파일/형식/멤버/기호 선언으로 직접 이동합니다. 결과 목록을 필터링하거나 쿼리 구문을 사용할 수 있습니다(예: 파일의 경우 “f searchTerm”, 형식의 경우 “t searchTerm”).
+* **전체로 이동**(**Ctrl**+**T** 또는 **Ctrl**+ **,** ) &ndash;모든 파일/형식/멤버/기호 선언으로 직접 이동합니다. 결과 목록을 필터링하거나 쿼리 구문을 사용할 수 있습니다(예: 파일의 경우 “f searchTerm”, 형식의 경우 “t searchTerm”).
 
   ![전체로 이동 기능 향상](media/vs2017ide-navigation-go-to.png)
 
-* **모든 참조 찾기(Shift+F12)** ( **Shift**+**F12** ) &ndash; 구문 색 지정을 사용하면 프로젝트, 정의 및 경로의 조합에 따라 [모든 참조 찾기] 결과를 그룹화할 수 있습니다. 또한 결과를 “잠그면” 원래 결과를 잃지 않고 다른 참조를 계속 찾을 수 있습니다.
+* **모든 참조 찾기(Shift+F12)** (**Shift**+**F12**) &ndash; 구문 색 지정을 사용하면 프로젝트, 정의 및 경로의 조합에 따라 [모든 참조 찾기] 결과를 그룹화할 수 있습니다. 또한 결과를 “잠그면” 원래 결과를 잃지 않고 다른 참조를 계속 찾을 수 있습니다.
 
   ![새로운 모든 참조 찾기 도구](media/vs2017ide-find-all-references.png)
 
@@ -196,7 +196,7 @@ A에서 B로 이동하는 데 도움이 되는 탐색 환경을 새로 고쳐 �
 
 Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 대한 향상된 지원을 추가하여 컴파일러를 업데이트하고, C++ 라이브러리에서 기능을 추가 및 업데이트하는 등 Visual Studio에서 향상된 몇 가지 기능을 확인할 수 있습니다. C++ IDE, 설치 작업 등의 성능도 향상되었습니다.
 
-또한 많은 고객이 [C++ 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/62/index.html "C++ 개발자 커뮤니티")를 통해 제출한 컴파일러와 도구에서 발생된 250개 이상의 버그와 보고된 문제를 해결했습니다.
+또한 많은 고객이 [C++ 개발자 커뮤니티](https://aka.ms/feedback/report?space=62 "C++ 개발자 커뮤니티")를 통해 제출한 컴파일러와 도구에서 발생된 250개 이상의 버그와 보고된 문제를 해결했습니다.
 
 자세한 내용은 [Visual 2017의 Visual C++에 대한 새로운 기능](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) 페이지를 참조하세요.
 
@@ -218,7 +218,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>스냅샷 및 IntelliTrace 뒤로 이동
 
-**15.5의 새로운 기능** : IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅샷을 자동으로 생성합니다. 기록된 스냅샷을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+**15.5의 새로운 기능**: IntelliTrace 뒤로 이동은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅샷을 자동으로 생성합니다. 기록된 스냅샷을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
 **디버그** 도구 모음의 **뒤로 가기** 와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 기록 디버깅이 자동으로 활성화됩니다.
 
@@ -232,7 +232,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 #### <a name="docker-container-tooling"></a>Docker 컨테이너 도구
 
-**15.5의 새로운 기능** :
+**15.5의 새로운 기능**:
 
 * Visual Studio에 이제 다단계 Dockerfile을 지원하는 Docker 컨테이너용 도구가 포함되어 최적화된 컨테이너 이미지 만들기가 간소화됩니다.
 * 기본적으로 Visual Studio는 Docker 지원이 포함된 프로젝트를 열 때 백그라운드에서 필요한 컨테이너 이미지를 자동으로 끌어오고, 빌드하고 실행합니다. Visual Studio에서 **백그라운드에서 컨테이너를 자동으로 시작** 설정을 통해 비활성화할 수 있습니다.
@@ -247,7 +247,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>라이브 Azure 애플리케이션에서 snappoint와 logpoint를 사용하여 라이브 ASP.NET 앱 디버그
 
-**15.5의 새로운 기능** : 스냅샷 디버거는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
+**15.5의 새로운 기능**: 스냅샷 디버거는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
 스냅샷 컬렉션은 Azure App Service에서 실행되는 다음 웹앱에서 사용할 수 있습니다.
 
@@ -266,7 +266,7 @@ UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집
 
 &mdash;C#, Visual Basic, C++ 또는 JavaScript&mdash; 중에서 원하는 개발 언어를 선택하여 Windows 10 디바이스용 유니버설 Windows 플랫폼 앱을 만듭니다. Visual Studio 2017은 모든 디바이스에 대해 단일 프로젝트를 만들 수 있도록 각 언어에 UWP 앱 템플릿을 제공합니다. 작업을 마치면 Visual Studio 내에서 앱 패키지를 생성하고 Microsoft Store에 제출하여 Windows 10 디바이스를 사용하는 고객에게 앱을 제공할 수 있습니다.
 
-**15.5의 새로운 기능** : Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
+**15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
 
 * **.NET Standard 2.0에 대한 지원**<br/>간소화된 앱 배포 외에, Windows 10 Fall Creators Update는 .NET Standard 2.0 지원을 제공하는 첫 번째 Windows 10 릴리스입니다. 사실상, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/)는 모든 .NET 플랫폼에서 구현할 수 있는 기본 클래스 라이브러리의 참조 구현입니다. .NET Standard의 목표는 .NET 개발자가 작업하는 모든 .NET 플랫폼 전반에서 코드를 최대한 쉽게 공유할 수 있도록 하는 것입니다.
 * **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 애플리케이션을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 애플리케이션에 Win32 구성 요소를 포함할 수 있습니다.
@@ -283,25 +283,25 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="entitlements-editor"></a>자격 편집기
 
-**15.3의 새로운 기능** : iOS 개발 요구 사항을 해결하기 위해 독립 실행형 자격 편집기를 추가했습니다. 이 편집기에는 쉽게 검색할 수 있는 사용자에게 친숙한 UI가 포함되어 있습니다. 시작하려면 *entitlements.plist* 파일을 두 번 클릭합니다.
+**15.3의 새로운 기능**: iOS 개발 요구 사항을 해결하기 위해 독립 실행형 자격 편집기를 추가했습니다. 이 편집기에는 쉽게 검색할 수 있는 사용자에게 친숙한 UI가 포함되어 있습니다. 시작하려면 *entitlements.plist* 파일을 두 번 클릭합니다.
 
 ![Xamarin에 대한 권한 편집기](media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4의 새로운 기능** : Xamarin Live를 사용하여 개발자는 iOS 및 Android 디바이스에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 디바이스를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용** 으로 이동하여 사용하도록 설정할 수 있습니다.
+**15.4의 새로운 기능**: Xamarin Live를 사용하여 개발자는 iOS 및 Android 디바이스에서 직접 자신의 앱을 계속해서 배포, 테스트 및 디버그할 수 있습니다. &mdash;앱 스토어 또는 Google Play에서 사용할 수 있는&mdash; Xamarin Live Player를 다운로드한 후 디바이스를 Visual Studio와 연결하고 모바일 앱을 빌드하는 방법을 혁신적으로 개선할 수 있습니다. 이 기능은 이제 Visual Studio에 포함되었으며 **도구** > **옵션** > **Xamarin** > **기타** > **Xamarin Live Player 사용** 으로 이동하여 사용하도록 설정할 수 있습니다.
 
 ![Xamarin Live Player 쌍, 배포 및 라이브 편집 모드의 애니메이션](media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Google Android Emulator에 대한 지원
 
-**15.8의 새로운 기능** : Hyper-V를 사용하는 경우 Google의 Android Emulator를 Hyper-V 가상 머신, Docker 도구, HoloLens 에뮬레이터 등 Hyper-V에 기반한 다른 기술과 함께 병렬로 사용할 수 있습니다. (이 기능을 사용하려면 Windows 10 2018년 4월 업데이트 이상이 필요합니다.)
+**15.8의 새로운 기능**: Hyper-V를 사용하는 경우 Google의 Android Emulator를 Hyper-V 가상 머신, Docker 도구, HoloLens 에뮬레이터 등 Hyper-V에 기반한 다른 기술과 함께 병렬로 사용할 수 있습니다. (이 기능을 사용하려면 Windows 10 2018년 4월 업데이트 이상이 필요합니다.)
 
 ![Hyper-V 기술에서 Google Android Emulator](media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer 분할 보기 편집기
 
-또한 **15.8의 새로운 기능** : Xamarin.Android의 디자이너 환경이 대폭 개선되었습니다. 핵심은 동시에 레이아웃을 만들고, 편집하고, 미리 볼 수 있는 분할 보기 편집기입니다.
+또한 **15.8의 새로운 기능**: Xamarin.Android의 디자이너 환경이 대폭 개선되었습니다. 핵심은 동시에 레이아웃을 만들고, 편집하고, 미리 볼 수 있는 분할 보기 편집기입니다.
 
 ![Xamarin.Android Designer 분할 보기 편집기](media/android-designer-split-view.png)
 
@@ -309,7 +309,7 @@ UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 �
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 앱 센터
 
-**15.5의 새로운 기능** : Visual Studio App Center&mdash;이제 Android, iOS, macOS 및 Windows 앱용으로 일반 공급됨&mdash;에는 자동화된 빌드, 클라우드의 실제 디바이스에서 테스트, 베타 테스터 및 앱 스토어 배포, 충돌 및 분석 데이터를 통한 실제 사용 모니터링을 비롯하여 앱의 수명 주기를 관리하는 데 필요한 모든 것이 있습니다. Objective-C, Swift, Java, C#, Xamarin, React Native로 작성된 앱이 모든 기능에서 지원됩니다.
+**15.5의 새로운 기능**: Visual Studio App Center&mdash;이제 Android, iOS, macOS 및 Windows 앱용으로 일반 공급됨&mdash;에는 자동화된 빌드, 클라우드의 실제 디바이스에서 테스트, 베타 테스터 및 앱 스토어 배포, 충돌 및 분석 데이터를 통한 실제 사용 모니터링을 비롯하여 앱의 수명 주기를 관리하는 데 필요한 모든 것이 있습니다. Objective-C, Swift, Java, C#, Xamarin, React Native로 작성된 앱이 모든 기능에서 지원됩니다.
 
   ![Visual Studio App Center 테스트 환경](media/app-center-test-env.png)
 
@@ -340,7 +340,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 그리고 이제 Docker 지원도 포함합니다.
 
-**15.3의 새로운 기능** : Visual Studio 2017 버전 15.3은 .NET Core 2.0 개발을 지원합니다. .NET Core 2.0을 사용하려면 .NET Core 2.0 SDK를 별도로 다운로드하여 설치해야 합니다.
+**15.3의 새로운 기능**: Visual Studio 2017 버전 15.3은 .NET Core 2.0 개발을 지원합니다. .NET Core 2.0을 사용하려면 .NET Core 2.0 SDK를 별도로 다운로드하여 설치해야 합니다.
 
 자세한 내용은 [.NET Core 가이드](/dotnet/core/index) 페이지를 참조하세요.
 
@@ -356,7 +356,7 @@ Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-**15.5의 새로운 기능** : Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 애플리케이션을 대화형으로 테스트할 수 있습니다.
+**15.5의 새로운 기능**: Visual Studio의 생산성 기능을 사용하여 현재의 AI 혁신을 가속화합니다. 구문 강조 표시, IntelliSense 및 텍스트 자동 서식 지정과 같이 기본 제공되는 코드 편집기 기능을 사용하세요. 지역 변수 및 모델에 대한 단계별 디버깅을 사용하여 로컬 환경에서 딥 러닝 애플리케이션을 대화형으로 테스트할 수 있습니다.
 
   ![딥 러닝 IDE](../ai/media/about/ide.png)
 

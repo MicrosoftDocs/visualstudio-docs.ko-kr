@@ -3,19 +3,19 @@ title: 텍스트 편집기에 대한 기본 F1 도움말 페이지
 description: Visual Studio 텍스트 편집기에 대한 F1 도움말 요청의 기본 페이지
 ms.date: 08/20/2020
 ms.topic: troubleshooting
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7a26e102ad71025edf92a499a1439022d9735eab
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1b2c34a2cb93bccd8b9f85d9dcbae9dfb86cae89
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808248"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684071"
 ---
 # <a name="f1-help-for-the-text-editor"></a>텍스트 편집기에 대한 F1 도움말
 
@@ -43,7 +43,7 @@ ms.locfileid: "90808248"
 
 ## <a name="find-the-source-code-for-an-api"></a>API의 소스 코드 찾기
 
-프로젝트에 소스 코드를 사용할 수 있는 경우, 코드 편집기에서 API 내부에 커서를 놓고 마우스 오른쪽 단추를 클릭하여 바로 가기 메뉴를 연 다음 **정의로 이동**을 선택합니다. 자세한 내용은 [형식 및 멤버 정의 보기](../../ide/go-to-and-peek-definition.md)을 참조하세요.
+프로젝트에 소스 코드를 사용할 수 있는 경우, 코드 편집기에서 API 내부에 커서를 놓고 마우스 오른쪽 단추를 클릭하여 바로 가기 메뉴를 연 다음 **정의로 이동** 을 선택합니다. 자세한 내용은 [형식 및 멤버 정의 보기](../../ide/go-to-and-peek-definition.md)을 참조하세요.
 
 ## <a name="re-map-or-disable-the-f1-help-key"></a>F1 도움말 키를 다시 매핑하거나 사용하지 않도록 설정
 

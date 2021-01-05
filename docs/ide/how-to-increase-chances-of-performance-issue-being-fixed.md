@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211190"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668446"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 
@@ -96,7 +96,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 > [!NOTE]
 > 이 메서드에 의해 생성되는 각 덤프 파일의 크기는 최대 4GB입니다. DumpFolder를 드라이브 공간이 충분한 위치로 설정하거나 DumpCount를 적절하게 조정합니다.
 
-Visual Studio에서 크래시가 발생할 때마다 구성된 위치에 덤프 파일 **devenv.exe.[number].dmp**가 만들어집니다.
+Visual Studio에서 크래시가 발생할 때마다 구성된 위치에 덤프 파일 **devenv.exe.[number].dmp** 가 만들어집니다.
 
 그런 다음, Visual Studio의 “문제 보고...” 기능을 사용합니다. 그러면 적절한 덤프를 첨부할 수 있습니다.
 
@@ -187,7 +187,7 @@ Visual Studio와 병렬로 실행되며 기본 Visual Studio 프로세스 외부
 
 1. 직접 재현할 수 있는 문제인 경우 **% temp%/servicehub/logs** 폴더를 삭제하는 것으로 시작합니다. 이 문제를 재현할 수 없는 경우 이 폴더를 그대로 유지하고 다음 글머리 기호는 무시하세요.
 
-    - 전역 환경 변수 **ServiceHubTraceLevel**을 **All**로 설정합니다.
+    - 전역 환경 변수 **ServiceHubTraceLevel** 을 **All** 로 설정합니다.
     - 문제를 재현합니다.
 
 2. [여기](https://www.microsoft.com/download/details.aspx?id=12493)에서 Microsoft Visual Studio 및 .NET Framework 로그 수집 도구를 다운로드하고 실행합니다.
@@ -198,5 +198,5 @@ Visual Studio와 병렬로 실행되며 기본 Visual Studio 프로세스 외부
 * [Visual Studio 피드백 옵션](../ide/feedback-options.md)
 * [Mac용 Visual Studio의 문제 보고](/visualstudio/mac/report-a-problem)
 * [C++를 사용하여 문제 보고](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)
+* [Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)
 * [개발자 커뮤니티 데이터 개인 정보](developer-community-privacy.md)

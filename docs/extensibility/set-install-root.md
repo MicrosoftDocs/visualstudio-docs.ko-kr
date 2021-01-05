@@ -1,5 +1,7 @@
 ---
 title: VSIX v3을 사용 하 여 extensions 폴더 외부에서 설치 | Microsoft Docs
+description: 확장 폴더 외부에 Visual Studio SDK 확장 자산을 설치 하는 방법과 유효한 위치에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bfb963122762c3185a964826a11dca5e771717
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700178"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716018"
 ---
 # <a name="install-outside-the-extensions-folder"></a>확장 폴더 외부에 설치
 

@@ -1,5 +1,7 @@
 ---
 title: 기호 요소 | Microsoft Docs
+description: 기호 요소는 다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 이 문서에는 예제가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699343"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715563"
 ---
 # <a name="symbols-element"></a>Symbols 요소
 다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 비관리 코드의 경우이 정보는 일반적으로 [Extern 요소](../extensibility/extern-element.md)에 지정 된 헤더 파일에서 가져옵니다. 관리 코드는 기호 요소의 자식 요소를 사용 하 여이 정보를 정의 합니다.
@@ -39,7 +41,7 @@ ms.locfileid: "80699343"
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |없음||
 
@@ -69,5 +71,5 @@ ms.locfileid: "80699343"
 </Symbols>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

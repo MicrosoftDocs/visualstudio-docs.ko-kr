@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 플러그 인 | Microsoft Docs
+description: 이 단원의 문서에서는 소스 제어 시스템을 Visual Studio와 통합할 수 있도록 하는 전체 인터페이스 사양에 대해 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699899"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715836"
 ---
 # <a name="source-control-plug-ins"></a>소스 제어 플러그 인
 소스 제어 플러그 인 SDK 참조 섹션에는 소스 제어 시스템을와 통합할 수 있도록 하는 전체 인터페이스 사양이 포함 되어 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 이 클래스는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)와의 상호 작용을 위해 소스 제어 플러그 인에서 구현 해야 하는 다양 한 함수 및 데이터 형식에 대 한 구문 및 의미 체계를 지정 합니다.
@@ -45,7 +47,7 @@ ms.locfileid: "80699899"
 
 - [방법: 소스 제어 플러그 인에 대 한 호환성 경고](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md) 해제 경고를 사용 하지 않도록 설정 하는 방법을 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [소스 제어 플러그 인 샘플](https://www.microsoft.com/download/details.aspx?id=55984) 소스 제어 플러그 인 기능의 샘플을 제공 합니다.
 
 - [소스 제어 플러그 인에 대 한 테스트 가이드](../extensibility/internals/test-guide-for-source-control-plug-ins.md) 소스 제어 플러그 인과 관련 된 테스트 절차에 대해 설명 합니다.

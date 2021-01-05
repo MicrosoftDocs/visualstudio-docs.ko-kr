@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329447"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668081"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -244,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 
-아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에 게시하세요.

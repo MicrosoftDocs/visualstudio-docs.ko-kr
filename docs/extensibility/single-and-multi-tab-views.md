@@ -1,5 +1,7 @@
 ---
 title: 단일 및 다중 탭 보기 | Microsoft Docs
+description: 편집기에서 코드 편집기 창 및 폼 디자이너와 같은 다중 탭 뷰를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699984"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715212"
 ---
 # <a name="single-and-multi-tab-views"></a>단일 및 다중 탭 보기
 편집기에서 다양 한 유형의 뷰를 만들 수 있습니다. 한 가지 예는 코드 편집기 창이 며 다른 하나는 폼 디자이너입니다.
 
- 다중 탭 보기는 여러 탭이 있는 뷰입니다. 예를 들어 HTML 편집기의 맨 아래에는 두 개의 탭이 있습니다. **디자인** 및 **소스**는 각각 논리적 뷰입니다. 디자인 뷰에는 렌더링 된 웹 페이지가 표시 되 고 다른 페이지에는 웹 페이지를 구성 하는 HTML이 표시 됩니다.
+ 다중 탭 보기는 여러 탭이 있는 뷰입니다. 예를 들어 HTML 편집기의 맨 아래에는 두 개의 탭이 있습니다. **디자인** 및 **소스** 는 각각 논리적 뷰입니다. 디자인 뷰에는 렌더링 된 웹 페이지가 표시 되 고 다른 페이지에는 웹 페이지를 구성 하는 HTML이 표시 됩니다.
 
 ## <a name="accessing-physical-views"></a>실제 뷰 액세스
  물리적 보기는 코드 또는 양식과 같은 버퍼의 데이터 뷰를 각각 나타내는 문서 뷰 개체를 호스팅합니다. 따라서 각 문서 보기 개체에는 물리적 뷰 (물리적 뷰 문자열 이라고 함)와 일반적으로 단일 논리적 뷰가 있습니다.
@@ -54,7 +56,7 @@ ms.locfileid: "80699984"
 
  종료 시 Visual Studio는 솔루션을 다시 열 때 문서 창을 다시 여는 데 사용할 수 있도록 편집기 팩터리의 GUID와 문서 창에 연결 된 실제 뷰 문자열을 유지 합니다. 솔루션이 닫힐 때 열려 있는 windows만 솔루션 (.suo) 파일에 저장 됩니다. 이러한 값은 `VSFPROPID_guidEditorType` `VSFPROPID_pszPhysicalView` 메서드의 매개 변수에 전달 된 및 값에 해당 합니다 `propid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 코드 조각은 개체를 <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> 사용 하 여을 구현 하는 뷰에 액세스 하는 방법을 보여 줍니다 `IVsCodeWindow` . 이 경우 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> `LOGVIEWID_TextView` 창 프레임에 대 한 포인터를 가져오는를 호출 하 고를 요청 하는 데 사용 됩니다. 문서 뷰 개체에 대 한 포인터는를 호출 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 고 값을 지정 하 여 가져옵니다 `VSFPROPID_DocView` . 문서 뷰 개체에서 `QueryInterface` 가에 대해 호출 됩니다 `IVsCodeWindow` . 이 경우 텍스트 편집기가 반환 되므로 메서드에서 반환 되는 문서 뷰 개체는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 코드 창이 됩니다.
 
 ```cpp

@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 플러그 인 용어집 | Microsoft Docs
+description: 이 문서에는 소스 제어 플러그 인 SDK 설명서와 관련 된 유용한 용어 및 정의가 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699906"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715407"
 ---
 # <a name="source-control-plug-in-glossary"></a>소스 제어 플러그 인 용어집
 소스 제어 플러그 인 SDK 설명서와 관련 된 유용한 용어 및 정의는 다음과 같습니다.

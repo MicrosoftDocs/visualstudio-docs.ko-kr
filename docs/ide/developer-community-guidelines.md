@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116152"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668562"
 ---
 # <a name="developer-community-guidelines"></a>Developer Community 지침
 
@@ -21,7 +21,7 @@ Developer Community에서는 Visual Studio에 관한 이슈 및 기능 제안을
 
 ## <a name="submitting-problems-and-suggestions"></a>문제 및 제안 제출
 
-[Visual Studio Developer Community](https://developercommunity.visualstudio.com/)에서는 Visual Studio에 관한 이슈 및 기능 제안을 추적합니다.
+[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)에서는 Visual Studio에 관한 이슈 및 기능 제안을 추적합니다.
 
 ### <a name="before-submitting-an-issue"></a>이슈를 제출하기 전에 확인할 사항
 
@@ -117,4 +117,4 @@ Visual Studio Developer Community에서 이슈를 검색하여 이슈가 이미 
 
 ## <a name="next-steps"></a>다음 단계
 
-[Visual Studio Developer Community](https://developercommunity.visualstudio.com/)로 이동하여 문제를 신고하거나, 기능을 제안하거나, 기존 티켓을 찾아봅니다. 즐겨보세요!
+[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)로 이동하여 문제를 신고하거나, 기능을 제안하거나, 기존 티켓을 찾아봅니다. 즐겨보세요!

@@ -1,5 +1,7 @@
 ---
 title: 여러 버전의 Visual Studio 지원 | Microsoft Docs
+description: 여러 버전의 Visual Studio를 지 원하는 방법에 대해 알아봅니다. Vspackage는 다양 한 버전으로 로드할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699484"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715628"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>여러 버전의 Visual Studio 지원
 이러한 용어는 동일한 컴퓨터에 여러 버전의 제품을 설치 하 고 유지 관리할 *수 있음을 의미* 합니다. Vspackage의 경우 사용자가 여러 Visual Studio 버전을 동일한 컴퓨터에 설치할 수 있습니다. 그러나 Vspackage의 side-by-side 버전을 Visual Studio의 단일 버전으로 로드할 수는 없습니다.
@@ -43,5 +45,5 @@ ms.locfileid: "80699484"
 
 - [Side-by-side 배포를 위한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) VSPackage가 병렬 시나리오에서 파일 연결을 등록 하는 방법에 대해 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [Windows Installer를 사용하여 VSPackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)

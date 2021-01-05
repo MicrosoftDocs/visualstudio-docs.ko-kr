@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d72ee803389c692233478d742dadbcf514a3a036
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329434"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668068"
 ---
 # <a name="warnings-and-errors"></a>경고 및 오류
 
@@ -346,4 +346,4 @@ IntelliTest는 단위 테스트가 결정적일 경우에만 [관련 테스트 �
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 
-아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에 게시하세요.

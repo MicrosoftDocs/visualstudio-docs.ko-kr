@@ -3,7 +3,7 @@ title: 접근성 옵션의 테마, 글꼴, 텍스트, 대비 변경
 description: 사용 편의성과 및 접근성 옵션에 맞춰 Visual Studio의 색상 테마, 글꼴 색, 텍스트 크기, 추가 대비 색상을 변경하는 방법을 알아보세요.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801440"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683895"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>방법: Visual Studio에서 글꼴, 색상, 테마 변경
 
@@ -28,9 +28,9 @@ ms.locfileid: "88801440"
 
 Visual Studio에서 IDE 프레임 및 도구 창의 색 테마를 변경하는 방법은 다음과 같습니다.
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
-1. 옵션 목록에서 **환경** > **일반**을 선택합니다.
+1. 옵션 목록에서 **환경** > **일반** 을 선택합니다.
 
 1. **색 테마** 목록에서 기본 **파란색** 테마, **밝게** 테마, **어둡게** 테마 또는 **파란색(고대비)** 테마를 선택합니다.
 
@@ -59,34 +59,34 @@ Visual Studio에서 IDE 프레임 및 도구 창의 색 테마를 변경하는 �
 
 ### <a name="to-change-the-font-and-text-size-in-the-ide"></a>IDE에서 글꼴 및 텍스트 크기를 변경하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
-1. 옵션 목록에서 **환경** > **글꼴 및 색**을 선택합니다.
+1. 옵션 목록에서 **환경** > **글꼴 및 색** 을 선택합니다.
 
-1. **설정 표시** 목록에서 **환경**을 선택합니다.
+1. **설정 표시** 목록에서 **환경** 을 선택합니다.
 
    ![IDE에서 글꼴 및 색을 변경하는 옵션 대화 상자의 스크린샷](media/fonts-colors-environment.png "IDE에서 글꼴 및 색을 변경하는 옵션 대화 상자의 스크린샷")
 
     > [!NOTE]
-    > 도구 창에서만 글꼴을 변경하려면 **설정 표시** 목록에서 **모든 텍스트 도구 창**을 선택합니다.
+    > 도구 창에서만 글꼴을 변경하려면 **설정 표시** 목록에서 **모든 텍스트 도구 창** 을 선택합니다.
 
 1. **글꼴** 및 **크기** 옵션을 수정하여 IDE의 글꼴과 텍스트 크기를 변경합니다.
 
-1. **표시 항목**에서 해당 항목을 선택하고 **항목 전경** 및 **항목 배경** 옵션을 수정합니다.
+1. **표시 항목** 에서 해당 항목을 선택하고 **항목 전경** 및 **항목 배경** 옵션을 수정합니다.
 
 ### <a name="to-change-the-font-and-text-size-in-the-editor"></a>편집기에서 글꼴 및 텍스트 크기를 변경하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
-1. 옵션 목록에서 **환경** > **글꼴 및 색**을 선택합니다.
+1. 옵션 목록에서 **환경** > **글꼴 및 색** 을 선택합니다.
 
-1. **설정 표시** 목록에서 **텍스트 편집기**를 선택합니다.
+1. **설정 표시** 목록에서 **텍스트 편집기** 를 선택합니다.
 
    ![편집기에서 글꼴 및 색을 변경하는 옵션 대화 상자의 스크린샷](media/fonts-colors-text-editor.png "편집기에서 글꼴 및 색을 변경하는 옵션 대화 상자의 스크린샷")
 
 1. **글꼴** 및 **크기** 옵션을 수정하여 편집기의 글꼴과 텍스트 크기를 변경합니다.
 
-1. **표시 항목**에서 해당 항목을 선택하고 **항목 전경** 및 **항목 배경** 옵션을 수정합니다.
+1. **표시 항목** 에서 해당 항목을 선택하고 **항목 전경** 및 **항목 배경** 옵션을 수정합니다.
 
 자세한 내용은 [편집기 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) 페이지를 참조하세요.
 
@@ -100,7 +100,7 @@ Visual Studio에서 IDE 프레임 및 도구 창의 색 테마를 변경하는 �
 
 - Windows 또는 Microsoft 애플리케이션에서 **왼쪽 Alt**+**왼쪽 Shift**+**PrtScn** 키를 누릅니다.
 
-- Windows에서 **시작** > **설정** > **접근성** > **고대비**를 선택합니다.
+- Windows에서 **시작** > **설정** > **접근성** > **고대비** 를 선택합니다.
 
     > [!WARNING]
     > Windows 고대비 설정은 컴퓨터의 모든 애플리케이션 및 UI에 영향을 줍니다.
@@ -109,14 +109,14 @@ Visual Studio에서 IDE 프레임 및 도구 창의 색 테마를 변경하는 �
 
 다음 절차를 사용하여 Visual Studio 고대비 옵션을 설정/해제합니다.
 
-1. Visual Studio의 메뉴 모음에서 **도구** > **옵션**을 선택한 다음 옵션 목록에서 **환경** > **일반**을 선택합니다.
+1. Visual Studio의 메뉴 모음에서 **도구** > **옵션** 을 선택한 다음 옵션 목록에서 **환경** > **일반** 을 선택합니다.
 
-1. **색 테마** 드롭다운 목록에서 **파란색(고대비)** 테마를 선택한 다음 **확인**을 선택합니다.
+1. **색 테마** 드롭다운 목록에서 **파란색(고대비)** 테마를 선택한 다음 **확인** 을 선택합니다.
 
 사용할 수 있는 다른 Visual Studio 접근성 옵션에 대한 자세한 내용은 [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md) 페이지를 참조하세요.
 
 > [!TIP]
-> 현재 Visual Studio에서 사용할 수 없지만 유용하다고 생각되는 색 또는 글꼴에 대한 접근성 옵션이 있는 경우 [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)에서 **기능 제안**을 선택하여 알려주세요. 이 포럼에 대한 자세한 내용은 [기능 제안](../ide/suggest-a-feature.md) 페이지를 참조하세요.
+> 현재 Visual Studio에서 사용할 수 없지만 유용하다고 생각되는 색 또는 글꼴에 대한 접근성 옵션이 있는 경우 [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)에서 **기능 제안** 을 선택하여 알려주세요. 이 포럼에 대한 자세한 내용은 [기능 제안](../ide/suggest-a-feature.md) 페이지를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

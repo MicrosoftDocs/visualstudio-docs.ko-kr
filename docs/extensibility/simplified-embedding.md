@@ -1,5 +1,7 @@
 ---
 title: 단순화 포함 | Microsoft Docs
+description: 문서 뷰 개체가 Visual Studio의 자식일 때 편집기에서 사용 하도록 설정할 수 있는 간소화 된 포함에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700081"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715277"
 ---
 # <a name="simplified-embedding"></a>간단한 포함
 단순화 된 포함은 해당 문서 뷰 개체가 부모 (즉,의 자식) 인 경우 편집기에서 사용 하도록 설정 되며, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스는 해당 창 명령을 처리 하기 위해 구현 됩니다. 단순화 된 포함 편집기는 활성 컨트롤을 호스트할 수 없습니다. 다음 그림에서는 간단한 포함 편집기를 만드는 데 사용 되는 개체를 보여 줍니다.

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414323"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667990"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -32,7 +32,7 @@ ms.locfileid: "93414323"
 
 각 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능에 의존하지 않을 경우 Visual Studio에서는 Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes/)를 참조하세요.
 
-일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio에서 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트할 수 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티 사이트](https://developercommunity.visualstudio.com)를 참조하세요.
+일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio에서 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트할 수 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티 사이트](https://aka.ms/feedback/suggest?space=8)를 참조하세요.
 
 이 현재 문서에서는 Visual Studio 2017에서 마이그레이션할 수 있는 프로젝트 형식에 대해서만 세부 정보를 제공합니다. 이 문서에서는 Visual Studio 2017에서 더 이상 지원되지 않는 프로젝트 유형을 제외하므로 마이크레이션할 수 없습니다. 이 문서에서는 마이그레이션 문제가 없는 지원되는 프로젝트 유형도 제외됩니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](/visualstudio/productinfo/vs2017-compatibility-vs)에서 확인할 수 있습니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "93414323"
 Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려고 노력합니다. 하지만 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다.
 
 > [!NOTE]
-> 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)를 참조하세요. 각 Visual Studio 버전과 관련된 기능에 대한 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
+> 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)를 참조하세요. 각 Visual Studio 버전과 관련된 기능에 대한 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
 
 > [!IMPORTANT]
 > 일부 프로젝트 형식에는 특정 워크로드가 필요합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 [Visual Studio 설치 관리자의 설치 옵션](../install/modify-visual-studio.md)을 확인하고 다시 시도하세요. Visual Studio 2019의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility) 페이지를 참조하세요.
@@ -157,7 +157,7 @@ Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, V
 | SQL - Redgate | Redgate의 SQL 변경 Automation Core(이전에는 ReadyRoll Core라고 함), SQL Prompt Core 및 SQL Search는 Visual Studio 설치 관리자에서 더 이상 제공되지 않습니다.<br/><br/>이러한 기능에 대해서는 Visual Studio 2017을 계속 사용할 수 있습니다. Visual Studio 2019에서 Redgate의 SQL Toolbelt에 사용할 수 있는 유료 SQL Change Automation 및 SQL Prompt 제품으로 업그레이드할 수 있습니다.|
 | SQL Server Reporting Services 및 SQL Server Analysis Services(SSRS, SSDT, SSAS, MSAS) | 이러한 프로젝트 형식에 대한 지원은 Visual Studio 갤러리의 두 가지 확장 기능을 통해 제공됩니다.  [Microsoft Analysis Services 모델링 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 및 [Microsoft Reporting Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT는 Visual Studio 2019에서 데이터 스토리지 및 처리 워크로드를 지원합니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지를 참조하세요. |
 | SSIS(SQL Server Integration Services) | Visual Studio 2019 지원을 사용할 수 있습니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지와 [SSIS(SQL Server Integration Services)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 팀 블로그 및 Marketplace의 [SQL Server Integration Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) 페이지를 참조하세요. |
-| 테스트 창 확장 | Visual Studio 2019에서는 이전에 공용으로 표시되었지만 공식적으로 문서화되지 않은 테스트 창 API의 일부가 제거되었습니다. 확장 유지 관리자에게 조기 경고하기 위해 광범위하게 표시되는 API가 Visual Studio 2017에서 더 이상 사용되지 않는 것으로 표시되었습니다. 아는 바로는, 이러한 API에 대한 종속성을 사용하는 확장은 거의 없습니다. 자세한 정보 및 업데이트는 [사용되지 않는 테스트 관련 API의 전체 목록](https://github.com/Microsoft/vstest/issues/1830)을 보세요. 시나리오에 영향을 주는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com)에 알려주세요. |
+| 테스트 창 확장 | Visual Studio 2019에서는 이전에 공용으로 표시되었지만 공식적으로 문서화되지 않은 테스트 창 API의 일부가 제거되었습니다. 확장 유지 관리자에게 조기 경고하기 위해 광범위하게 표시되는 API가 Visual Studio 2017에서 더 이상 사용되지 않는 것으로 표시되었습니다. 아는 바로는, 이러한 API에 대한 종속성을 사용하는 확장은 거의 없습니다. 자세한 정보 및 업데이트는 [사용되지 않는 테스트 관련 API의 전체 목록](https://github.com/Microsoft/vstest/issues/1830)을 보세요. 시나리오에 영향을 주는 경우 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에 알려주세요. |
 | Visual C++ | Visual Studio 2019를 사용하여 Visual Studio 2010까지 이전 버전의 Visual Studio에서 만든 프로젝트에서 작업할 수 있습니다. 프로젝트를 처음 열면 최신 컴파일러 및 도구 집합으로 업그레이드하거나 원래 항목을 계속 사용하는 옵션이 있습니다. 원래 항목을 계속 사용하도록 선택하면 Visual Studio 2019에서는 프로젝트 파일을 수정하지 않으며 이전 Visual Studio 설치의 도구 집합을 사용하여 프로젝트를 빌드합니다. 원래 옵션을 유지하는 것은 필요한 경우 원래 버전의 Visual Studio에서 프로젝트를 열 수 있음을 의미합니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](/cpp/porting/use-native-multi-targeting)를 참조하세요. |
 | Visual Studio 확장성/VSIX | MinimumVersion 14.0 이하의 프로젝트는 업데이트를 통해 MinimumVersion 15.0으로 선언됩니다. 그러면 이전 버전의 Visual Studio에서 프로젝트를 열 수 없습니다. 이전 버전에서 프로젝트를 열 수 있도록 허용하려면 MinimumVersion을 `$(VisualStudioVersion)`(으)로 설정합니다. 참고 항목 [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Microsoft Test Manager 또는 Visual Studio 2010 SP1 이상을 사용하여 이러한 버전에서 만든 환경을 열 수 있습니다. 그러나 Visual Studio 2010 SP1의 경우 환경을 만들기 전에 Microsoft Test Manager 버전이 Team Foundation Server 버전과 일치해야 합니다. |

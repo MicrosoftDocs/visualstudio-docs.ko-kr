@@ -1,5 +1,7 @@
 ---
 title: 이벤트 구독 | Microsoft Docs
+description: Visual Studio SDK의 실행 중인 문서 테이블에서 이벤트에 응답 하는 도구 창을 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +13,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefe2efce897aefc26f63835844b0cc705fb5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c739dad7be8d2a000662eca478bc117699694c8a
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699690"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715875"
 ---
 # <a name="subscribing-to-an-event"></a>이벤트 구독
 이 연습에서는 RDT (실행 문서 테이블)에서 이벤트에 응답 하는 도구 창을 만드는 방법을 설명 합니다. 도구 창은을 구현 하는 사용자 정의 컨트롤을 호스팅합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>메서드는 인터페이스를 이벤트에 연결 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="subscribing-to-rdt-events"></a>RDT 이벤트 구독
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>도구 창을 사용 하 여 확장을 만들려면
 
-1. VSIX 템플릿을 사용 하 여 **RDTExplorer** 이라는 프로젝트를 만들고 **RDTExplorerWindow**라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
+1. VSIX 템플릿을 사용 하 여 **RDTExplorer** 이라는 프로젝트를 만들고 **RDTExplorerWindow** 라는 사용자 지정 도구 창 항목 템플릿을 추가 합니다.
 
      도구 창을 사용 하 여 확장을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
@@ -62,7 +64,7 @@ ms.locfileid: "80699690"
 
 4. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>를 구현해야 합니다.
 
-    - 인터페이스를 구현 합니다. IVsRunningDocTableEvents 이름에 커서를 놓습니다. 왼쪽 여백에 전구가 표시 되어야 합니다. 전구 오른쪽에 있는 아래쪽 화살표를 클릭 하 고 **인터페이스 구현**을 선택 합니다.
+    - 인터페이스를 구현 합니다. IVsRunningDocTableEvents 이름에 커서를 놓습니다. 왼쪽 여백에 전구가 표시 되어야 합니다. 전구 오른쪽에 있는 아래쪽 화살표를 클릭 하 고 **인터페이스 구현** 을 선택 합니다.
 
 5. 인터페이스의 각 메서드에서 줄을 `throw new NotImplementedException();` 다음으로 바꿉니다.
 

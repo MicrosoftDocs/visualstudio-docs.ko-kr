@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 확장 개발을 시작 하는 중 | Microsoft Docs
+description: 처음으로 Visual Studio 확장을 작성할 때 발생할 수 있는 몇 가지 일반적인 질문에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099390"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715264"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
 
@@ -49,7 +51,7 @@ Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio S
 
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md): Visual Studio 메뉴 및 도구 모음에 고유한 항목을 추가 합니다. 이러한 기능을 사용 하 여 새 Visual Studio 기능 또는 고유한 외부 도우미 응용 프로그램을 시작할 수 있습니다. 메뉴 항목에 대 한 사용자 지정 바로 가기를 제공할 수도 있습니다.
 
-- [도구 창 확장 및 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md): 기존 도구 창을 확장 하거나 사용자 고유의 도구 창을 만듭니다. 예를 들어 **속성**에 새 속성을 추가 하거나 새 도구 창을 만들어 추가 기능을 추가할 수 있습니다.
+- [도구 창 확장 및 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md): 기존 도구 창을 확장 하거나 사용자 고유의 도구 창을 만듭니다. 예를 들어 **속성** 에 새 속성을 추가 하거나 새 도구 창을 만들어 추가 기능을 추가할 수 있습니다.
 
 - [편집기 및 언어 서비스 확장](../extensibility/editor-and-language-service-extensions.md): Visual Studio 언어용으로 제공 된 IntelliSense에 고유한 사용자 지정 항목을 추가 하거나 새 프로그래밍 언어에 대 한 지원을 만들 수 있습니다. 새 문 완성, 제안 및 새 QuickInfo 도구 설명을 만들 수 있습니다. Light 전구를 사용 하면 새 프로그래밍 언어를 지원 하기 위해 리팩터링 제안 사항 및 코드 수정을 추가할 수 있습니다.
 

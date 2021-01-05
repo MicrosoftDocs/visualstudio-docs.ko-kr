@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 348e3997f5136ab343639062f2b1d4dbdda08e78
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136994"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668679"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>방법: 여러 시작 프로젝트 설정
 
@@ -37,5 +37,5 @@ Visual Studio에서는 디버거를 시작할 때 둘 이상의 프로젝트를 
 ## <a name="see-also"></a>참고 항목
 
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
-- [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)
+- [솔루션 및 프로젝트 작업](../ide/creating-solutions-and-projects.md)
 - [프로젝트 및 솔루션 속성 관리](../ide/managing-project-and-solution-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에 대 한 애니메이션 | Microsoft Docs
+description: Visual Studio IDE에서 일관 되 고 사용자에 게 친숙 한 애니메이션 스타일을 유지 하는 데 도움이 되는 규칙에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698611"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715953"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio의 애니메이션
 ## <a name="animation-fundamentals"></a>애니메이션 기본 사항
@@ -43,7 +45,7 @@ Visual Studio IDE에서 일관 되 고 사용자에 게 친숙 한 애니메이�
 
 - **미묘한은 중요 합니다.** 대부분의 경우 애니메이션은 용도에 맞게 사용자 주의가 필요 하지 않습니다. 타이밍, 시퀀싱 및 동작의 미묘한 변화는 인식에 상당한 영향을 줄 수 있으며 효과적이 고 비효율적인 애니메이션의 차이를 내릴 수 있습니다.
 
-- 애니메이션을 사용 하 여 특정 항목에 주목 하는 경우 사용자가 생각 하는 **것을 방해 하는 가치가 있는지 확인**해야 합니다.
+- 애니메이션을 사용 하 여 특정 항목에 주목 하는 경우 사용자가 생각 하는 **것을 방해 하는 가치가 있는지 확인** 해야 합니다.
 
 - 애니메이션 **을 통해 진행률 또는 상태를 표시** 하는 경우:
 
@@ -118,7 +120,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 한 요소가 다른 요소에 테더 링 된
 
-##### <a name="state"></a>시스템 상태
+##### <a name="state"></a>주
 
 - 콘텐츠 업데이트
 
@@ -136,13 +138,13 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 최소화 및 최대화 또는 확장/축소
 
-##### <a name="sequence"></a>순서
+##### <a name="sequence"></a>시퀀스
 
 - 슬라이드 쇼 시퀀스
 
 - 그림에서 대칭 이동
 
-##### <a name="time"></a>시간
+##### <a name="time"></a>Time
 
 - 시간 경과, 시간 경과 및 동영상 가이드 변경 내용 표시
 
@@ -163,7 +165,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 온라인으로 추가 정보 찾기 또는 현재 작업에 대 한 학습 등 작업 중에 사용자에 게 확인
 
-##### <a name="notifications"></a>공지
+##### <a name="notifications"></a>알림
 
 - 오류 조건에 대해 사용자에 게 경고
 
@@ -226,7 +228,7 @@ UI가 갑자기 표시 되는 경우 사용자는 발생 한 상황을 알 수 �
 ##### <a name="animation-properties"></a>애니메이션 속성
 시간 지연은 일반적으로 0 초입니다.
 
-##### <a name="examples"></a>예제
+##### <a name="examples"></a>예
 - 도구 창 자동 숨기기
 
 - IntelliSense 및 매개 변수 도움말과 같은 키보드 활성화 된 편집기 UI
@@ -251,7 +253,7 @@ UI가 갑자기 표시 되는 경우 사용자는 발생 한 상황을 알 수 �
 
 - 감속/가속 스타일: 사인 InOut
 
-##### <a name="examples"></a>예제
+##### <a name="examples"></a>예
 
 - 도구 창 자동 숨기기
 
@@ -277,7 +279,7 @@ UI 요소가 한 컨텍스트 또는 상태에서 다른 컨텍스트로 색을 
 
 - 감속/가속 스타일: 사인 InOut
 
-##### <a name="examples"></a>예제
+##### <a name="examples"></a>예
 
 - 문서 창 상태 전환 (활성, 마지막 활성 및 비활성)
 
@@ -301,7 +303,7 @@ UI 요소의 크기를 한 컨텍스트에서 다른 컨텍스트로 변경할 �
 
 - 기간: 200 밀리초 독립 실행형, 100 밀리초를 조합 애니메이션 시퀀스의 일부로 사용 하는 경우
 
-##### <a name="examples"></a>예제
+##### <a name="examples"></a>예
 
 - 아키텍처 탐색기 패널 확장 및 축소
 
@@ -327,7 +329,7 @@ UI 요소가 한 컨텍스트에서 다른 컨텍스트로의 위치를 변경�
 
 - 감속/가속 스타일: 사인 InOut
 
-##### <a name="example"></a>예
+##### <a name="example"></a>예제
 탭 다시 정렬
 
 #### <a name="rotate"></a>회전
@@ -346,7 +348,7 @@ UI 요소가 한 컨텍스트에서 다른 컨텍스트로의 위치를 변경�
 
 - 기간: 연속
 
-##### <a name="example"></a>예
+##### <a name="example"></a>예제
 확정 되지 않은 진행률 표시기 (회전)
 
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>일반적인 셸 UI 작업 및 권장 되는 애니메이션

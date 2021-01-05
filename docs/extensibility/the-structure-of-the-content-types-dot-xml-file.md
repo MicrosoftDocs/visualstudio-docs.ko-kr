@@ -1,5 +1,7 @@
 ---
 title: '[Content_types] .xml 파일의 구조입니다. Microsoft Docs'
+description: VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 하는 콘텐츠 형식 파일의 구조에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012519"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715225"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
 VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual Studio는 [Content_Types] .xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지는 않습니다.
@@ -31,32 +33,32 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 
 ### <a name="root-element"></a>루트 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |`Types`|VSIX 패키지의 파일 형식을 열거 하는 자식 요소를 포함 합니다.|
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`Xmlns`|필요 합니다. 이 [Content_Types] .xml 파일에 사용 되는 스키마의 위치입니다.|
 
 ### <a name="attribute-name-attribute"></a>{Attribute name} 특성도
 
-| 값 | Description |
+| 값 | 설명 |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | 콘텐츠 형식 스키마의 위치입니다. |
 
 ### <a name="child-elements"></a>자식 요소
  `Types` 요소는 개수에 관계없이 `Default` 요소를 포함할 수 있습니다.
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |`Default`|VSIX 패키지의 콘텐츠 형식을 설명 합니다. 패키지의 모든 파일 형식에는 고유한 요소가 있어야 합니다 `Default` .|
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |`Extension`|VSIX 패키지에 있는 파일의 파일 이름 확장명입니다.|
 |`ContentType`|파일 이름 확장명과 연결 된 콘텐츠의 종류를 설명 합니다.|
@@ -64,7 +66,7 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 ### <a name="attribute-name-attribute"></a>{Attribute name} 특성도
  Visual Studio에서는 연결 된 `ContentType` 형식에 대해 다음 값을 인식 합니다 `Extension` .
 
-|내선 번호|ContentType|
+|확장명|ContentType|
 |---------------|-----------------|
 |txt|텍스트/일반|
 |.pkgdef|텍스트/일반|
@@ -83,7 +85,7 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
  다음 [Content_Types] .xml 파일은 일반적인 VSIX 패키지를 설명 합니다.
 
 ### <a name="code"></a>코드

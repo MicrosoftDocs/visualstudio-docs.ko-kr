@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d4b5ad68186142ae61a266d688a0430b0a623605
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329473"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668731"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 
@@ -174,4 +174,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>피드백이 있나요?
 
-아이디어와 기능 요청을 [개발자 커뮤니티](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)에 게시하세요.
+아이디어와 기능 요청을 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에 게시하세요.
