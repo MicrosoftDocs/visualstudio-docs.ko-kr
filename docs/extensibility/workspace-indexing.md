@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 작업 영역 인덱싱 | Microsoft Docs
+description: 열려 있는 폴더 작업 영역에 대 한 풍부한 IDE 기능을 지 원하는 데이터의 수집 및 영구 저장소 인 작업 영역 인덱싱에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b5c069ce3ae993f2d2371bffae3ac58b286fa70
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952712"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877054"
 ---
 # <a name="workspace-indexing"></a>작업 영역 인덱싱
 

@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 모델 | Microsoft Docs
+description: 사용자 고유의 언어 서비스를 만들기 위한 지침으로 Visual Studio 핵심 편집기에 대 한 최소 언어 서비스의이 모델을 사용 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707043"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876742"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 언어 서비스는 특정 언어의 요소와 기능을 정의 하 고 편집기에 해당 언어에 대 한 정보를 제공 하는 데 사용 됩니다. 예를 들어 편집기는 구문 색 지정을 지원 하기 위해 언어의 요소와 키워드를 알고 있어야 합니다.
@@ -33,13 +35,13 @@ ms.locfileid: "80707043"
 
   ![언어 서비스 모델 그래픽](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") 기본 언어 서비스 모델
 
-  문서 창은 편집기의 *문서 뷰* (이 경우 핵심 편집기)를 호스팅합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 편집기에서 문서 뷰 및 텍스트 버퍼를 소유 합니다. 이러한 개체 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 *코드 창*이라는 특수 문서 창을 통해에서 작동 합니다. 코드 창은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> IDE에서 만들고 제어 하는 개체에 포함 되어 있습니다.
+  문서 창은 편집기의 *문서 뷰* (이 경우 핵심 편집기)를 호스팅합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 편집기에서 문서 뷰 및 텍스트 버퍼를 소유 합니다. 이러한 개체 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 *코드 창* 이라는 특수 문서 창을 통해에서 작동 합니다. 코드 창은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> IDE에서 만들고 제어 하는 개체에 포함 되어 있습니다.
 
-  지정 된 확장명을 가진 파일이 로드 되 면 편집기는 해당 확장과 연결 된 언어 서비스를 찾아 메서드를 호출 하 여 코드 창으로 전달 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> . 언어 서비스는 인터페이스를 구현 하는 *코드 창 관리자*를 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> .
+  지정 된 확장명을 가진 파일이 로드 되 면 편집기는 해당 확장과 연결 된 언어 서비스를 찾아 메서드를 호출 하 여 코드 창으로 전달 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> . 언어 서비스는 인터페이스를 구현 하는 *코드 창 관리자* 를 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> .
 
   다음 표에서는 모델의 개체에 대 한 개요를 제공 합니다.
 
-| 구성 요소 | Object | 함수 |
+| 구성 요소 | Object | 기능 |
 |------------------| - | - |
 | 텍스트 버퍼 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | 유니코드 읽기/쓰기 텍스트 스트림입니다. 텍스트에서 다른 인코딩을 사용할 수 있습니다. |
 | 코드 창 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 하나 이상의 텍스트 뷰를 포함 하는 문서 창입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 mdi (다중 문서 인터페이스) 모드에 있으면 코드 창은 mdi 자식입니다. |

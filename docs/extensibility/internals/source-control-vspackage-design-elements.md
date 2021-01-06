@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 VSPackage 디자인 요소 | Microsoft Docs
+description: 소스 제어 VSPackage에서 구현 해야 하는 구조와 소스 제어 VSPackage 구현할 수 있는 인터페이스 및 서비스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705002"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877652"
 ---
 # <a name="source-control-vspackage-design-elements"></a>소스 제어 VSPackage 디자인 요소
 이 단원의 항목에서는 원본 제어 VSPackage가 심층 통합을 위해 구현 해야 하는 구조를 간략하게 설명 합니다. 또한 소스 제어 VSPackage 구현할 수 있는 인터페이스 및 서비스와 소스 제어 VSPackage가 소스 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 모델 및 기능을 지원 하기 위해 다른 구성 요소에서 사용할 수 있는 인터페이스 및 서비스를 나열 합니다.
@@ -33,7 +35,7 @@ ms.locfileid: "80705002"
 
  소스 제어 VSPackage에서 제공 하는 소스 제어 서비스에 대해 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
  소스 제어 기능을 제공할 뿐만 아니라 소스 제어 UI를 사용자 지정 하는 데 사용할 수 있는 소스 제어 VSPackage를 만드는 방법을 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다.

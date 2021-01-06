@@ -1,5 +1,6 @@
 ---
 title: 편집기 확장에서 바로 가기 키 사용
+description: 바로 가기 키를 사용 하 여 텍스트 뷰에 뷰 장식을 추가 하는 방법에 대해 알아봅니다. 이 연습은 뷰포트 장식 편집기 템플릿을 기반으로 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037460"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875845"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장에서 바로 가기 키 사용
 편집기 확장에서 바로 가기 키에 응답할 수 있습니다. 다음 연습에서는 바로 가기 키를 사용 하 여 텍스트 뷰에 뷰 장식을 추가 하는 방법을 보여 줍니다. 이 연습은 뷰포트 장식 편집기 템플릿을 기반으로 하며 + 문자를 사용 하 여 장식을 추가할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기
 
-1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트**를 차례로 선택 합니다.) 솔루션 이름을로 `KeyBindingTest` 합니다.
+1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트** 를 차례로 선택 합니다.) 솔루션 이름을로 `KeyBindingTest` 합니다.
 
 2. 프로젝트에 편집기 텍스트 장식 항목 템플릿을 추가 하 고 이름을로 다시 추가 `KeyBindingTest` 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)를 참조 하세요.
 
@@ -40,13 +41,13 @@ ms.locfileid: "90037460"
 
     VisualStudio입니다.
 
-   KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox로 변경 합니다. 왼쪽 여백에 표시 되는 전구를 사용 하 여 다른 적절 한 변경을 수행 합니다. 생성자 내에서 장식 계층의 이름을 **Keybindingtest** 에서 **PurpleCornerBox**로 변경 합니다.
+   KeyBindingTest 클래스 파일에서 클래스 이름을 PurpleCornerBox로 변경 합니다. 왼쪽 여백에 표시 되는 전구를 사용 하 여 다른 적절 한 변경을 수행 합니다. 생성자 내에서 장식 계층의 이름을 **Keybindingtest** 에서 **PurpleCornerBox** 로 변경 합니다.
 
 ```csharp
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs 클래스 파일에서 AdornmentLayer의 이름을 **Keybindingtest** 에서 **PurpleCornerBox**로 변경 합니다.
+KeyBindingTestTextViewCreationListener.cs 클래스 파일에서 AdornmentLayer의 이름을 **Keybindingtest** 에서 **PurpleCornerBox** 로 변경 합니다.
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -78,7 +79,7 @@ Visual Studio 2017 이전 버전 15.6 이전에 편집기 확장에서 명령을
 3. KeyBindingCommandFilter 라는 클래스는에서 상속 해야 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. 텍스트 뷰의 전용 필드, 명령 체인의 다음 명령, 명령 필터가 이미 추가 되었는지 여부를 나타내는 플래그를 추가 합니다.
@@ -86,8 +87,8 @@ Visual Studio 2017 이전 버전 15.6 이전에 편집기 확장에서 명령을
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. 텍스트 뷰를 설정 하는 생성자를 추가 합니다.
@@ -196,9 +197,9 @@ Visual Studio 2017 이전 버전 15.6 이전에 편집기 확장에서 명령을
 
 먼저 최신 편집기 API를 참조 하도록 프로젝트의 Nuget 참조를 업데이트 합니다.
 
-1. 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Nuget 패키지 관리**를 선택 합니다.
+1. 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **Nuget 패키지 관리** 를 선택 합니다.
 
-2. **Nuget 패키지 관리자**에서 **업데이트** 탭을 선택 하 고 **모든 패키지 선택** 확인란을 선택한 다음 **업데이트**를 선택 합니다.
+2. **Nuget 패키지 관리자** 에서 **업데이트** 탭을 선택 하 고 **모든 패키지 선택** 확인란을 선택한 다음 **업데이트** 를 선택 합니다.
 
 명령 처리기는 <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> 장식을 인스턴스화하여 명령을 처리 하는의 구현입니다.
 

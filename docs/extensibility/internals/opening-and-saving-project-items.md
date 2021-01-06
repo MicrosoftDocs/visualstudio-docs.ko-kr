@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 항목 열기 및 저장 | Microsoft Docs
+description: Visual Studio IDE에서 새 프로젝트 형식에 대 한 파일을 열고 저장 하는 다양 한 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706962"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877639"
 ---
 # <a name="opening-and-saving-project-items"></a>프로젝트 항목 열기 및 저장
 새 프로젝트 형식을 추가 하는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에서 프로젝트 파일을 열고 저장 하는 과정을 관리 해야 합니다. 다음 항목에서는 파일을 열고 저장 하는 다양 한 방법에 대해 설명 합니다.
@@ -45,7 +47,7 @@ ms.locfileid: "80706962"
 
 - [표준 문서 저장](../../extensibility/internals/saving-a-standard-document.md)
 
- 표준 편집기에서 열린 문서에 대 한 **저장**, 다른 **이름으로**저장, 저장 명령을 **모두** 처리 하는 방법에 대 한 자세한 설명을 제공 합니다.
+ 표준 편집기에서 열린 문서에 대 한 **저장**, 다른 **이름으로** 저장, 저장 명령을 **모두** 처리 하는 방법에 대 한 자세한 설명을 제공 합니다.
 
 - [사용자 지정 문서 저장](../../extensibility/internals/saving-a-custom-document.md)
 
@@ -55,7 +57,7 @@ ms.locfileid: "80706962"
 
  IDE에서 파일에 적합 한 편집기나 디자이너를 선택 하는 데 따르는 프로세스에 대해 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [사용자 지정 편집기 및 디자이너 만들기](../../extensibility/creating-custom-editors-and-designers.md)
 
  IDE에서 호스팅할 수 있는 네 가지 유형의 편집기를 나열 하 고 각 편집기에 대 한 설명을 제공 합니다.

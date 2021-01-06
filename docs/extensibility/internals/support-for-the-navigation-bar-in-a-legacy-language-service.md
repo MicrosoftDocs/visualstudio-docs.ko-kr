@@ -1,5 +1,6 @@
 ---
 title: 레거시 언어 서비스의 탐색 모음 지원
+description: 레거시 언어 서비스에서 탐색 모음을 지 원하는 방법에 대해 알아봅니다. 편집기 보기의 탐색 모음은 파일의 형식 및 멤버를 표시 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036563"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876547"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 편집기 뷰 위쪽의 탐색 모음에는 파일의 형식과 멤버가 표시 됩니다. 왼쪽 드롭다운에서 형식이 표시 되 고 오른쪽 드롭다운에서 멤버가 표시 됩니다. 사용자가 형식을 선택 하면 캐럿이 형식의 첫 번째 줄에 배치 됩니다. 사용자가 멤버를 선택 하면 캐럿이 멤버 정의에 배치 됩니다. 드롭다운 상자는 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.

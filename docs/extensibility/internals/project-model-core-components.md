@@ -1,5 +1,7 @@
 ---
 title: Project Model 핵심 구성 요소 | Microsoft Docs
+description: 이 문서에는 프로젝트 모델 코어에서 식별 된 인터페이스 및 서비스 및 개체와 연결 된 인터페이스 및 서비스에 대 한 설명이 포함 되어 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012414"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876898"
 ---
 # <a name="project-model-core-components"></a>프로젝트 모델 핵심 구성 요소
 다음 표에서는 프로젝트 모델을 확장 합니다. 테이블에는 모델에서 식별 된 인터페이스 및 서비스에 대 한 간략 한 설명과 특정 개체와 관련 된 인터페이스 및 서비스가 있습니다. 또한 표에는 특정 프로젝트 형식에 대 한 요구 사항에 따라 프로젝트 생성 및 유지 관리에서 선택적으로 사용할 수 있는 다른 인터페이스가 자세히 나와 있습니다.
 
- 자세한 내용은 [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)을 참조 하세요.
+ 자세한 내용은 [지원 Symbol-Browsing 도구](../../extensibility/internals/supporting-symbol-browsing-tools.md)를 참조 하세요.
 
 ### <a name="package-object"></a>Package 개체
 
@@ -99,7 +101,7 @@ ms.locfileid: "90012414"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|자동화 모델을 구현 하는 데 사용 됩니다. 프로젝트 모델에서이 개체의 인스턴스를 만들 수 있는 속성 개체를 반환 합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|계층의 프로젝트 개체에 대해 클립보드 이벤트를 구현 하는 데 사용 됩니다. `SVsUIHierWinClipboardHelper` 잘라내기, 복사 및 붙여넣기 작업을 올바르게 처리할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [빌드에 없음: HierUtil7 프로젝트 클래스를 사용 하 여 프로젝트 형식 구현 (c + +)](/previous-versions/bb166212(v=vs.100))

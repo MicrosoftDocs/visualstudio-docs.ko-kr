@@ -1,5 +1,7 @@
 ---
 title: 원본 제어 통합 Essentials | Microsoft Docs
+description: Visual Studio에서 지 원하는 두 가지 유형의 소스 제어 통합에 대해 알아봅니다. 소스 제어 플러그 인과 VSPackage 기반 소스 제어 솔루션입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705242"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876040"
 ---
 # <a name="source-control-integration-essentials"></a>소스 제어 통합 필수 항목
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 기본 기능을 제공 하 고 소스 제어 플러그 인 API (이전에는 MSSCCI API)를 사용 하 여 구축 된 소스 제어 플러그 인과, 보다 강력한 기능을 제공 하는 VSPackage 기반 소스 제어 통합 솔루션을 사용 하 여 두 가지 형식의 원본 제어 통합을 지원 합니다.
@@ -50,7 +52,7 @@ ms.locfileid: "80705242"
 
    자세한 내용은 [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [개요](../../extensibility/internals/source-control-integration-overview.md)
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)

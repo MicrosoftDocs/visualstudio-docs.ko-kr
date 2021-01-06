@@ -1,5 +1,6 @@
 ---
 title: 레거시 언어 서비스에서 자동 창 지원
+description: 디버그 중인 프로그램이 일시 중지 될 때 범위 내에 있는 식을 표시 하는 자동 창에 대 한 지원을 구현 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c97ab4db9b71c91689abe0afb85230e5b0242962
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038298"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876508"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>레거시 언어 서비스의 자동 창 지원
 

@@ -1,5 +1,7 @@
 ---
 title: 속성 창 필드 및 인터페이스 | Microsoft Docs
+description: Visual Studio IDE에 포커스가 있는 창을 기반으로 속성 창에 표시 되는 정보를 결정 하는 선택에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706158"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875767"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 **속성** 창에 표시 되는 정보를 결정 하기 위해 선택할 수 있는 모델은 IDE에 포커스가 있는 창을 기반으로 합니다. 모든 창 및 선택한 창 내의 개체는 선택 컨텍스트 개체를 전역 선택 컨텍스트로 푸시할 수 있습니다. 환경에서는 해당 창에 포커스가 있을 때 창 프레임의 값으로 전역 선택 컨텍스트를 업데이트 합니다. 포커스가 변경 되 면 선택 컨텍스트가 수행 됩니다.
 
 ## <a name="tracking-selection-in-the-ide"></a>IDE에서 선택 추적
- IDE에서 소유 하는 창 프레임이 나 사이트에는 라는 서비스가 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . 다음 단계에서는 사용자가 다른 열린 창으로 포커스를 변경 하거나 **솔루션 탐색기**에서 다른 프로젝트 항목을 선택 하 여 **속성** 창에 표시 되는 내용을 변경 하는 등의 선택 변경 작업을 수행 하는 방법을 보여 줍니다.
+ IDE에서 소유 하는 창 프레임이 나 사이트에는 라는 서비스가 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . 다음 단계에서는 사용자가 다른 열린 창으로 포커스를 변경 하거나 **솔루션 탐색기** 에서 다른 프로젝트 항목을 선택 하 여 **속성** 창에 표시 되는 내용을 변경 하는 등의 선택 변경 작업을 수행 하는 방법을 보여 줍니다.
 
 1. 선택한 창에 배치 되는 VSPackage에서 만든 개체는 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 를 호출 하 여를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 합니다.
 
@@ -35,7 +37,7 @@ ms.locfileid: "80706158"
 
 5. 환경에서는의 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 하 여 `IDispatch` **속성** 창에 채울 인터페이스를 기반으로 개체를 가져옵니다.
 
-   **속성** 창의 값이 변경 되 면 vspackage를 구현 하 여 `IVsTrackSelectionEx::OnElementValueChangeEx` `IVsTrackSelectionEx::OnSelectionChangeEx` 요소 값에 대 한 변경 내용을 보고 합니다. 그러면 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 또는를 호출 하 여 속성 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 창에 표시 **Properties** 되는 정보를 속성 값과 동기화 된 상태로 유지 합니다. 자세한 내용은 [속성 창에서 속성 값 업데이트](#updating-property-values-in-the-properties-window)를 참조 하세요.
+   **속성** 창의 값이 변경 되 면 vspackage를 구현 하 여 `IVsTrackSelectionEx::OnElementValueChangeEx` `IVsTrackSelectionEx::OnSelectionChangeEx` 요소 값에 대 한 변경 내용을 보고 합니다. 그러면 환경에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 또는를 호출 하 여 속성 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 창에 표시  되는 정보를 속성 값과 동기화 된 상태로 유지 합니다. 자세한 내용은 [속성 창에서 속성 값 업데이트](#updating-property-values-in-the-properties-window)를 참조 하세요.
 
    **솔루션 탐색기** 에서 다른 프로젝트 항목을 선택 하 여 해당 항목과 관련 된 속성을 표시 하는 것 외에도 **속성** 창에서 사용할 수 있는 드롭다운 목록을 사용 하 여 양식 또는 문서 창 내에서 다른 개체를 선택할 수 있습니다. 자세한 내용은 [속성 창 개체 목록](../../extensibility/internals/properties-window-object-list.md)을 참조 하세요.
 
@@ -72,7 +74,7 @@ ms.locfileid: "80706158"
 5. 또한 `IConnection`를 호출하여 각 송신 IID에 대한 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 인터페이스를 통해 연결점 하위 개체에 대한 액세스를 얻을 수도 있습니다. 클라이언트는 인터페이스를 통해 연결 가능 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 개체 및 클라이언트의 자체 동기화를 사용 하 여 advise 루프를 시작 하거나 종료 합니다. 클라이언트는 인터페이스를 호출 하 여 인터페이스를 사용 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 열거자 개체를 가져와 해당 개체가 인식 하는 연결을 열거할 수도 있습니다 <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> .
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a><a name="getting-field-descriptions-from-the-properties-window"></a> 속성 창에서 필드 설명 가져오기
-**속성** 창 맨 아래 설명 영역에는 선택한 속성 필드와 관련된 정보가 표시됩니다. 이 기능은 기본적으로 켜져 있습니다. 설명 필드를 숨기려면 **속성** 창을 오른쪽 단추로 클릭하고 **설명**을 클릭합니다. 그러면 메뉴 창에서 **설명** 제목 옆의 확인 표시가 사라집니다. 같은 방법으로 **설명** 을 다시 토글하면 필드가 표시됩니다.
+**속성** 창 맨 아래 설명 영역에는 선택한 속성 필드와 관련된 정보가 표시됩니다. 이 기능은 기본적으로 켜져 있습니다. 설명 필드를 숨기려면 **속성** 창을 오른쪽 단추로 클릭하고 **설명** 을 클릭합니다. 그러면 메뉴 창에서 **설명** 제목 옆의 확인 표시가 사라집니다. 같은 방법으로 **설명** 을 다시 토글하면 필드가 표시됩니다.
 
  설명 필드의 정보는 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>에서 가져옵니다. 각 메서드, 인터페이스, coclass 등은 형식 라이브러리에 지역화되지 않은 `helpstring` 특성을 가질 수 있습니다. **속성** 창은에서 문자열을 검색 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A> .
 

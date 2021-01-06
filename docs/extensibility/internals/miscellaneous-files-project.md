@@ -1,5 +1,7 @@
 ---
 title: 기타 파일 프로젝트 | Microsoft Docs
+description: Visual Studio 프로젝트에서 파일을 여는 데 사용할 수 있는 두 가지 형식의 편집기와 사용할 편집기를 결정 하는 프로젝트의 역할에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707094"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876781"
 ---
 # <a name="miscellaneous-files-project"></a>기타 파일 프로젝트
 사용자가 프로젝트 항목을 열면 IDE는 솔루션에서 프로젝트의 멤버가 아닌 모든 항목을 기타 파일 프로젝트에 할당 합니다.
 
  프로젝트는 사용자가 프로젝트 항목을 열 때 사용 되는 편집기를 결정 하는 데 중요 한 역할을 합니다. 프로젝트 관련 편집기 또는 표준 편집기를 사용 하 여 특정 파일을 열도록 프로젝트를 디자인할 수 있습니다.
 
- 프로젝트별 편집기를 사용 하려면 일반적으로 사용자에 게 특별 한 지식이 있거나 프로젝트의 특수 한 인터페이스를 사용 해야 합니다. 자세한 내용은 [방법: 프로젝트 관련 편집기 열기](../../extensibility/how-to-open-project-specific-editors.md)를 참조 하세요.
+ 프로젝트별 편집기를 사용 하려면 일반적으로 사용자에 게 특별 한 지식이 있거나 프로젝트의 특수 한 인터페이스를 사용 해야 합니다. 자세한 내용은 [방법: 편집기 Project-Specific 열기](../../extensibility/how-to-open-project-specific-editors.md)를 참조 하세요.
 
  표준 편집기는 모든 프로젝트에서 특정 확장명의 모든 파일을 열 수 있습니다. 사용자는 프로젝트에 대해 텍스트 편집기와 같은 일부 표준 편집기를 사용자 지정할 수 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 있지만 해당 공개 문자는 계속 유지 합니다. 표준 편집기는 메서드를 사용 하 여 만듭니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> .
 
@@ -35,7 +37,7 @@ ms.locfileid: "80707094"
 
  기타 파일 프로젝트에서는 사용자가 **새 프로젝트** 대화 상자를 사용 하 여 명시적으로 만들 필요가 없습니다. 또한 기타 파일 프로젝트는 프로젝트 멤버 목록을 영구적으로 관리 하지 않습니다. 선택적 기능을 사용 하 여 각 사용자에 대해 가장 최근에 사용한 파일 목록을 기록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

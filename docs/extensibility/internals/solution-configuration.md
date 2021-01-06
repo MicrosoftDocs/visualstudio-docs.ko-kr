@@ -1,5 +1,7 @@
 ---
 title: 솔루션 구성 | Microsoft Docs
+description: 프로젝트 형식에서 지 원하는 솔루션 구성을 구현 하는 방법에 대해 알아봅니다 .이 구성에서는 시작 (F5) 키와 빌드 명령의 동작을 안내 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705385"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876030"
 ---
 # <a name="solution-configuration"></a>솔루션 구성
 솔루션 구성에서는 솔루션 수준 속성을 저장 합니다. **시작** (F5) 키와 **빌드** 명령의 동작을 지시 합니다. 기본적으로이 명령은 디버그 구성을 빌드하고 시작 합니다. 두 명령은 모두 솔루션 구성의 컨텍스트에서 실행 됩니다. 이는 사용자가 설정으로 구성 된 활성 솔루션을 시작 하 고 빌드할 수 있습니다. 환경은 빌드하고 실행 하는 경우 프로젝트가 아닌 솔루션을 최적화 하도록 설계 되었습니다.
@@ -27,7 +29,7 @@ ms.locfileid: "80705385"
 
  프로젝트 형식에서 지 원하는 솔루션 구성을 구현 하는 방법은 다음과 같습니다.
 
-- 프로젝트
+- Project
 
    현재 솔루션에 있는 프로젝트의 이름을 표시 합니다.
 
@@ -55,7 +57,7 @@ ms.locfileid: "80705385"
 
   새 솔루션 구성이 추가 되 면 사용자는 표준 도구 모음의 솔루션 구성 드롭다운 목록 상자에서 선택 하 여 해당 구성을 빌드 및/또는 시작할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)

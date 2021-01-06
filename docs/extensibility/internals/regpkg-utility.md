@@ -1,5 +1,7 @@
 ---
 title: RegPkg 유틸리티 | Microsoft Docs
+description: RegPkg.exe 유틸리티를 사용 하 여 Visual Studio에서 VSPackage를 등록 하 고 배포를 위해 준비 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cebfd7a9782a2760eb33f7e56bfe16b126fc6251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad66f963250dfc272506096f8932442a35d11dc7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705644"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877328"
 ---
 # <a name="regpkg-utility"></a>RegPkg 유틸리티
 > [!NOTE]

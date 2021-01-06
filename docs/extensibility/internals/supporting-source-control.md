@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 지원 | Microsoft Docs
+description: Visual Studio에서 프로젝트 또는 편집기에 대 한 파일 체크 아웃, 체크 인 및 기타 소스 제어 작업을 지 원하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704724"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876456"
 ---
 # <a name="supporting-source-control"></a>소스 제어 지원
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 프로젝트 또는 편집기에 대 한 파일 체크 아웃, 체크 인 및 기타 소스 제어 작업을 지원 합니다. 원본 제어 클라이언트는 동적으로 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] 정의 된 파일 집합에 대 한 보관, 버전 관리 및 제어 기능을 제공 하는와 같은 소스 제어 패키지와 상호 작용 하도록 설계 되었습니다.
@@ -52,7 +54,7 @@ ms.locfileid: "80704724"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> 프로젝트 파일이 나 디렉터리에 대 한 변경 내용을 클라이언트에 알립니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [프로젝트 형식](../../extensibility/internals/project-types.md):
 
  IDE (통합 개발 환경)의 기본 구성 요소로 프로젝트 개요를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 프로젝트에서 코드 빌드 및 컴파일을 제어 하는 방법을 설명 하는 추가 항목에 대 한 링크가 제공 됩니다.

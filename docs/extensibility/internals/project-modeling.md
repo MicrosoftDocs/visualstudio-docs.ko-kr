@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 모델링 | Microsoft Docs
+description: 새 프로젝트 형식에 대 한 자동화를 만드는 데 필요한 표준 프로젝트 개체와 프로젝트 자동화에서 따르는 경로에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706549"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877418"
 ---
 # <a name="project-modeling"></a>프로젝트 모델링
 프로젝트에 대 한 자동화를 제공 하는 다음 단계는 표준 프로젝트 개체 ( <xref:EnvDTE.Projects> 및 `ProjectItems` 컬렉션, `Project` 및 <xref:EnvDTE.ProjectItem> 개체) 및 구현에 고유한 나머지 개체를 구현 하는 것입니다. 이러한 표준 개체는 Dteinternal .h 파일에 정의 되어 있습니다. 표준 개체의 구현은 BscPrj 샘플에서 제공 됩니다. 이러한 클래스를 모델로 사용 하 여 다른 프로젝트 형식의 project 개체와 나란히 있는 고유한 표준 프로젝트 개체를 만들 수 있습니다.

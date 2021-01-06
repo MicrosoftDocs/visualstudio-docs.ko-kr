@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 | Microsoft Docs
+description: 이러한 문서는 플러그 인 또는 VSPackage을 통해 Visual Studio의 통합 된 기능으로 소스 제어를 구현 하는 옵션을 설명 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704991"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876105"
 ---
 # <a name="source-control"></a>소스 제어
 이 섹션에서는 소스 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 플러그 인 또는 소스 제어 VSPackage를 통해의 통합 기능으로 소스 제어를 구현 하기 위한 옵션에 대해 설명 합니다.
@@ -37,7 +39,7 @@ ms.locfileid: "80704991"
 
  소스 제어 기능을 제공할 뿐만 아니라 소스 제어 UI를 사용자 지정 하는 데 사용할 수 있는 소스 제어 VSPackage를 만드는 방법을 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)
 
  소스 제어 플러그 인 API에 대 한 참조입니다.

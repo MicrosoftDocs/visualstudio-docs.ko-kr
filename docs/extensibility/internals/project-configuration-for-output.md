@@ -1,5 +1,7 @@
 ---
 title: 출력에 대 한 프로젝트 구성 | Microsoft Docs
+description: 모든 구성에서 지원할 수 있는 빌드 프로세스와 출력 항목을 사용 가능 하 게 설정할 수 있는 인터페이스 및 메서드를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706666"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876326"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
 모든 구성은 실행 파일, 리소스 파일 등의 출력 항목을 생성 하는 빌드 프로세스 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자에 게 전용 이며 실행 파일 (.exe, .dll, .lib) 및 소스 파일 (.idl, .h 파일)과 같은 관련 된 출력 형식을 연결 하는 그룹에 배치할 수 있습니다.

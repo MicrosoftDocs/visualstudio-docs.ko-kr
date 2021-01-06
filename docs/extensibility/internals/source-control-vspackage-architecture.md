@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 VSPackage 아키텍처 | Microsoft Docs
+description: 소스 제어 서비스로 Visual Studio에 기능을 제공 하는 VSPackage 소스 제어 패키지의 아키텍처에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e62aa9e2d725e982f0605e2721f0bfeb3cc5ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705079"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877678"
 ---
 # <a name="source-control-vspackage-architecture"></a>소스 제어 VSPackage 아키텍처
 소스 제어 패키지는 IDE에서 제공 하는 서비스를 사용 하는 VSPackage입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 반환 시 소스 제어 패키지는 소스 제어 서비스로 기능을 제공 합니다. 또한 소스 제어 패키지는 소스 제어를에 통합 하기 위한 소스 제어 플러그 인 보다 더 다양 한 방법입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  엄격한 계약이 유럽 연합 원본 제어 플러그 인 API를 구현 하는 소스 제어 플러그 인입니다. 예를 들어 플러그 인은 기본 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI (사용자 인터페이스)를 대체할 수 없습니다. 또한 소스 제어 플러그 인 API를 사용 하면 플러그 인에서 자체 소스 제어 모델을 구현할 수 없습니다. 그러나 소스 제어 패키지는 이러한 제한 사항을 모두 극복 합니다. 소스 제어 패키지는 사용자의 원본 제어 환경을 완벽 하 게 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 또한 소스 제어 패키지는 자체 소스 제어 모델 및 논리를 사용할 수 있으며 모든 소스 제어 관련 사용자 인터페이스를 정의할 수 있습니다.
 
-## <a name="source-control-package-components"></a>소스 제어 패키지 구성 요소
+## <a name="source-control-package-components"></a>Source-Control 패키지 구성 요소
  아키텍처 다이어그램에 표시 된 것 처럼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 스텁 이라는 구성 요소는 소스 제어 패키지를와 통합 하는 VSPackage입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  소스 제어 스텁은 다음 작업을 처리 합니다.
@@ -37,7 +39,7 @@ ms.locfileid: "80705079"
 
   원본 제어 어댑터 패키지는에서 제공 하는 특수 한 소스 제어 패키지입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이 패키지는 원본 제어 플러그 인 API를 기반으로 소스 제어 플러그 인을 지원 하기 위한 중앙 구성 요소입니다. 소스 제어 플러그 인이 활성 플러그 인 이면 소스 제어 스텁이 소스 제어 어댑터 패키지에 해당 이벤트를 보냅니다. 차례로 원본 제어 어댑터 패키지는 소스 제어 플러그 인 API를 사용 하 여 소스 제어 플러그 인과 통신 하 고 모든 원본 제어 플러그 인에 공통 된 기본 UI를 제공 합니다.
 
-  반면 소스 제어 패키지는 활성 패키지인 경우 소스 제어 스텁이 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 소스 제어 패키지 인터페이스를 사용 하 여 패키지와 직접 통신 합니다. 소스 제어 패키지는 자체 소스 제어 UI를 호스팅해야 합니다.
+  반면 원본 제어 패키지가 활성 패키지인 경우 원본 제어 스텁이 Source-Control 패키지 인터페이스를 사용 하 여 패키지와 직접 통신 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . 소스 제어 패키지는 자체 소스 제어 UI를 호스팅해야 합니다.
 
   ![소스 제어 아키텍처 그래픽](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")
 

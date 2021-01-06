@@ -1,5 +1,7 @@
 ---
 title: 메뉴 및 도구 모음 명령 최적화 | Microsoft Docs
+description: Vspackage 및 해당 하는 명령을 추가 하 여 Visual Studio에서 명령 혼동을 최소화 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706914"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877600"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>메뉴 및 도구 모음 명령 최적화
 Vspackage 및 해당 명령이에 추가 되 면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 복잡 한 UI가 발생할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 명령 혼동을 최소화 하는 데 도움이 되는 방법을 제공 합니다.
@@ -33,7 +35,7 @@ Vspackage 및 해당 명령이에 추가 되 면 [!INCLUDE[vsprvs](../../code-qu
 
  명령 집합의 크기에 따라 VSPackage을 구현 하기 위한 구체적인 지침을 제공 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)
 
  메뉴, 도구 모음 및 명령 콤보 상자를 포함하는 UI를 만드는 방법을 설명합니다.

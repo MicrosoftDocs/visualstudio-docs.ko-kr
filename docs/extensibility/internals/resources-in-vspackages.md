@@ -1,5 +1,7 @@
 ---
 title: Vspackage의 리소스 | Microsoft Docs
+description: Vspackage에 포함할 수 있는 지역화 된 리소스의 형식에 대해 알아봅니다. 또한 네이티브 위성 UI Dll 또는 관리 되는 위성 Dll에 리소스를 포함할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705596"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875728"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.
@@ -47,7 +49,7 @@ ms.locfileid: "80705596"
 
   이러한 방식으로를 설정 하면에서를 사용 하는 등의 방법으로 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 리소스를 검색할 때 관리 되지 않는 위성 dll을 무시 해야 함을 나타냅니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . 는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 동일한 리소스 ID를 가진 둘 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제는 도구 창 아이콘의 관리 되는 표현입니다.
 
 ```
@@ -87,4 +89,4 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
 ## <a name="see-also"></a>추가 정보
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
-- [MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [MFC 애플리케이션의 지역화된 리소스: 위성 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

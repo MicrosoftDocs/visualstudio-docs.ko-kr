@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 통합 개요 | Microsoft Docs
+description: 소스 제어를 Visual Studio에 통합 하는 두 가지 방법 (소스 제어 플러그 인과 VSPackage) 간의 차이점에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705119"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876014"
 ---
 # <a name="source-control-integration-overview"></a>소스 제어 통합 개요
 이 섹션에서는 Visual Studio 소스 제어에 통합 하는 두 가지 방법을 비교 합니다. 소스 제어 솔루션을 제공 하 고 새 소스 제어 기능을 강조 표시 하는 소스 제어 플러그 인 및 VSPackage입니다. Visual Studio에서는 소스 제어 Vspackage 및 소스 제어 플러그 인과 자동 솔루션 기반 전환 사이를 수동으로 전환할 수 있습니다.

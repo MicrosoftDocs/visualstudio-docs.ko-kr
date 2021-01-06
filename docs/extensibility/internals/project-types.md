@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식 | Microsoft Docs
+description: 'Visual Studio에는 Visual c # 및 Visual Basic 같은 언어에 대 한 여러 프로젝트 형식이 포함 되어 있습니다. Visual Studio를 사용 하 여 프로젝트 형식을 직접 만들 수도 있습니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706260"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877197"
 ---
 # <a name="project-types"></a>프로젝트 형식
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에는 및과 같은 언어에 대 한 여러 가지 프로젝트 형식이 포함 되어 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 고유의 프로젝트 형식을 만들 수도 있습니다.
@@ -52,7 +54,7 @@ ms.locfileid: "80706260"
 
 - [프로젝트 중첩](../../extensibility/internals/nesting-projects.md)
 
- 프로젝트 형식에서 *중첩*을 지원할 수 있는 방법을 설명 합니다. 그러면 **솔루션 탐색기**에서 프로젝트를 함께 그룹화 할 수 있습니다.
+ 프로젝트 형식에서 *중첩* 을 지원할 수 있는 방법을 설명 합니다. 그러면 **솔루션 탐색기** 에서 프로젝트를 함께 그룹화 할 수 있습니다.
 
 - [프로젝트 업그레이드](../../extensibility/internals/upgrading-projects.md)
 
@@ -62,7 +64,7 @@ ms.locfileid: "80706260"
 
  프로젝트 형식에 대 한 자세한 기술 정보를 제공 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [계층 구조 및 선택](../../extensibility/internals/hierarchies-and-selection.md)
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 프로젝트를 계층 구조로 표시 하는 방법에 대 한 개요를 제공 합니다.

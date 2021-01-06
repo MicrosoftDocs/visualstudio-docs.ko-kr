@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 작업 영역 및 언어 서비스 | Microsoft Docs
+description: 언어 서비스에서 솔루션 및 프로젝트를 사용할 때 사용 되는 것과 동일한 리치 언어 기능을 사용 하 여 열린 폴더 사용자를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 815cfb9e17fed38b519719010acd997f7fdc5242
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952707"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877041"
 ---
 # <a name="workspaces-and-language-services"></a>작업 영역 및 언어 서비스
 

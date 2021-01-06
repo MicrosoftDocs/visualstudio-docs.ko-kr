@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 지 속성 | Microsoft Docs
+description: IPersistFileFormat를 사용 하 여 파일 및 파일 기반이 아닌 프로젝트 개체를 모두 유지 하는 것을 포함 하 여 프로젝트 디자인의 지 속성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706454"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877444"
 ---
 # <a name="project-persistence"></a>프로젝트 지속성
 지 속성은 프로젝트에 중요 한 디자인 고려 사항입니다. 대부분의 프로젝트는 파일을 나타내는 프로젝트 항목을 사용 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 파일 기반이 아닌 데이터가 있는 프로젝트도 지원 합니다. 프로젝트와 프로젝트 파일이 소유한 파일을 모두 유지 해야 합니다. IDE는 프로젝트에 자체 또는 프로젝트 항목을 저장 하도록 지시 합니다.

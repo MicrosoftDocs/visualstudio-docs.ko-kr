@@ -6,7 +6,7 @@ metadata:
   title: Visual Studio 제품군 설명서
   description: Windows 및 Mac용 Visual Studio IDE, Visual Studio Code, Visual Studio App Center, GitHub Codespaces 및 Visual Studio 구독을 비롯한 Visual Studio 제품군의 설명서를 살펴보세요.
   ms.topic: hub-page
-  ms.custom: contperfq1
+  ms.custom: contperf-fy21q1
   ms.date: 10/22/2020
   searchScope: []
   titleSuffix: ''
@@ -15,12 +15,12 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: 2396ca63847bfcd9f6a3fea995abb7a40bcf98b6
-  ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+  ms.openlocfilehash: 1ea8e93b7ab51c996df42c701afcc877f65fb826
+  ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 12/03/2020
-  ms.locfileid: "96560839"
+  ms.lasthandoff: 01/05/2021
+  ms.locfileid: "97877275"
 productDirectory:
   items:
   - title: Visual Studio

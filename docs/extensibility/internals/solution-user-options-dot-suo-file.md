@@ -1,5 +1,7 @@
 ---
 title: 솔루션 사용자 옵션 () .Suo) 파일 | Microsoft Docs
+description: 이진 형식으로 저장 된 구조적 저장소 파일의 사용자별 솔루션 옵션을 포함 하는 솔루션 사용자 옵션 (.suo) 파일에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705312"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876756"
 ---
 # <a name="solution-user-options-suo-file"></a>솔루션 사용자 옵션(.Suo) 파일
 솔루션 사용자 옵션 (.suo) 파일에는 사용자별 솔루션 옵션이 포함 되어 있습니다. 이 파일은 소스 코드 제어에 체크 인 되지 않아야 합니다.

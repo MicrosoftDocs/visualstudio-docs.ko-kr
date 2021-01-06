@@ -1,5 +1,7 @@
 ---
 title: Visual Studio에서 작업 영역 빌드 | Microsoft Docs
+description: 폴더 열기 시나리오를 지원 하기 위해 작업 영역에 대 한 인덱싱된 및 파일 컨텍스트 데이터를 제공 하는 extender에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e44c2398b873bbca95c971ae1b44ac3de831b2ae
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553330"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877106"
 ---
 # <a name="workspace-build"></a>작업 영역 빌드
 

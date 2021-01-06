@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 코드 조각 지원 | Microsoft Docs
+description: 레거시 언어 서비스에서 코드 조각을 지 원하는 방법에 대해 알아봅니다. 코드 조각은 소스 파일에 삽입 되는 코드 조각입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704917"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876612"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 코드 조각은 소스 파일에 삽입 되는 코드 조각입니다. 코드 조각은 필드 집합을 사용 하는 XML 기반 템플릿입니다. 이러한 필드는 코드 조각이 삽입 된 후 강조 표시 되며 조각이 삽입 된 컨텍스트에 따라 다른 값을 가질 수 있습니다. 코드 조각이 삽입 된 직후에 언어 서비스는 코드 조각의 서식을 지정할 수 있습니다.
@@ -342,7 +344,7 @@ namespace TestLanguagePackage
 
  확장 공급자가 확장 함수가 호출 될 때까지 완전히 초기화 되지 않았을 수 있으므로 인수를 사용 하거나 다른 필드에 액세스 해야 하는 확장 함수를 편집 가능한 필드와 연결 해서는 안 됩니다. 따라서 확장 함수는 해당 인수 또는 다른 필드의 값을 가져올 수 없습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음은 라는 간단한 확장 함수를 구현할 수 있는 방법의 예입니다 `GetName` . 이 확장 함수는 확장 함수가 인스턴스화될 때마다 기본 클래스 이름에 숫자를 추가 합니다 .이는 연결 된 코드 조각이 삽입 될 때마다 해당 됩니다.
 
 ```csharp

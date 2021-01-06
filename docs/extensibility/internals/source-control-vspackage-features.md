@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 VSPackage 기능 | Microsoft Docs
+description: 등록/선택 세부 정보, 몇 가지 주요 소스 제어 관련 기능에 대 한 정보를 포함 하 여 소스 제어 VSPackage의 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705012"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876222"
 ---
 # <a name="source-control-vspackage-features"></a>소스 제어 VSPackage 기능
-이 섹션에서는 소스 제어 VSPackage의 다양 한 기능에 대해 설명 합니다. 이러한 VSPackage에 대 한 등록 및 선택 세부 정보에 대해 간략하게 설명 하 고, 소스 제어 함수의 쿼리-편집-저장 (QEQS) 이벤트, 문자 모양 바꾸기 및 사용자 지정 UI (사용자 인터페이스)를 처리 하는 세 가지 주요 소스 제어 관련 기능에 대해 설명 합니다.
+이 섹션에서는 소스 제어 VSPackage의 다양 한 기능에 대해 설명 합니다. 이러한 VSPackage에 대 한 등록 및 선택 세부 정보를 간략하게 설명 하 고, 소스 제어 함수의 QEQS (Query-Edit Query-Save) 이벤트 처리, 문자 모양 바꾸기 및 사용자 지정 UI (사용자 인터페이스)를 처리 하는 세 가지 기본 소스 제어 관련 기능에 대해 설명 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 - [등록 및 선택 영역](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ ms.locfileid: "80705012"
 
 - [쿼리 편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- 쿼리 편집 쿼리-저장 이벤트의 역할 및 소스 제어 VSPackage에서 해당 이벤트를 처리 하는 방법을 설명 합니다.
+ Query-Edit Query-Save 이벤트의 역할 및 소스 제어 VSPackage에서 이벤트를 처리 하는 방법을 설명 합니다.
 
 - [문자 모양 제어](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
@@ -37,7 +39,7 @@ ms.locfileid: "80705012"
 
  소스 제어 VSPackage 지정할 수 있는 UI 요소에 대해 간략하게 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
  소스 제어 기능을 제공할 뿐만 아니라 소스 제어 UI를 사용자 지정 하는 데 사용할 수 있는 소스 제어 VSPackage를 만드는 방법을 설명 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다.

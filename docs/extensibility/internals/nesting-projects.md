@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 중첩 | Microsoft Docs
+description: VSPackage를 사용 하는 응용 프로그램 개발자가 Visual Studio에서 비슷한 형식의 프로젝트를 함께 그룹화 하는 데 사용할 수 있는 프로젝트 중첩에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707025"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876664"
 ---
 # <a name="nesting-projects"></a>프로젝트 중첩
-VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *프로젝트 중첩*을 사용 하 여 비슷한 형식의 프로젝트를에서 편리 하 게 그룹화 할 수 있습니다. 예를 들어 Enterprise Template 프로젝트는 중첩 된 프로젝트를 사용 하 여 프로젝트를 범주로 그룹화 합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트 등은 하나의 범주에 함께 그룹화 됩니다.
+VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *프로젝트 중첩* 을 사용 하 여 비슷한 형식의 프로젝트를에서 편리 하 게 그룹화 할 수 있습니다. 예를 들어 Enterprise Template 프로젝트는 중첩 된 프로젝트를 사용 하 여 프로젝트를 범주로 그룹화 합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트 등은 하나의 범주에 함께 그룹화 됩니다.
 
  개발자가 프로그래밍 방식으로 제한을 제공할 수 있지만이 시나리오에서는 개발자가 각 부모 프로젝트에서 중첩할 수 있는 프로젝트 수에 제한이 없습니다. 이러한 종류의 그룹화도 재귀적으로 만들 수 있습니다 .이 경우 자식 프로젝트와 동일한 형식의 프로젝트가 자식에 중첩 되어 부모의 하위 프로젝트가 될 수 있습니다.
 

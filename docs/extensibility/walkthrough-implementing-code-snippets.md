@@ -1,5 +1,7 @@
 ---
 title: '연습: 코드 조각 구현 | Microsoft Docs'
+description: 코드 조각을 만들고 편집기 확장에 포함할 수 있습니다. 이 연습을 사용 하 여 코드 조각을 만들고 등록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,17 +13,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904707"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877119"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>연습: 코드 조각 구현
 코드 조각을 만들고 편집기 확장에 포함 하 여 확장 사용자가 자신의 코드에 코드 조각을 추가할 수 있습니다.
 
- 코드 조각은 파일에 통합 될 수 있는 코드 조각 또는 기타 텍스트입니다. 특정 프로그래밍 언어에 대해 등록 된 모든 코드 조각을 보려면 **도구** 메뉴에서 **코드 조각 관리자**를 클릭 합니다. 파일에 코드 조각을 삽입 하려면 코드 조각을 배치할 위치를 마우스 오른쪽 단추로 클릭 하 고 코드 조각 삽입 또는 코드 **감싸기**를 클릭 한 다음 원하는 코드 조각을 찾은 다음 두 번 클릭 합니다. **Tab** 또는 **Shift**키를 눌러 + **Tab** 코드 조각의 관련 부분을 수정한 후 **enter** 또는 **Esc** 키를 눌러 수락 합니다. 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조 하세요.
+ 코드 조각은 파일에 통합 될 수 있는 코드 조각 또는 기타 텍스트입니다. 특정 프로그래밍 언어에 대해 등록 된 모든 코드 조각을 보려면 **도구** 메뉴에서 **코드 조각 관리자** 를 클릭 합니다. 파일에 코드 조각을 삽입 하려면 코드 조각을 배치할 위치를 마우스 오른쪽 단추로 클릭 하 고 코드 조각 삽입 또는 코드 **감싸기** 를 클릭 한 다음 원하는 코드 조각을 찾은 다음 두 번 클릭 합니다. **Tab** 또는 **Shift** 키를 눌러 +  코드 조각의 관련 부분을 수정한 후 **enter** 또는 **Esc** 키를 눌러 수락 합니다. 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조 하세요.
 
  코드 조각은 코드 조각 * 파일 이름 확장명을 가진 XML 파일에 포함 되어 있습니다. 코드 조각은 사용자가 찾아서 변경할 수 있도록 코드 조각이 삽입 된 후 강조 표시 되는 필드를 포함할 수 있습니다. 코드 조각 파일은 **코드 조각 관리자** 에 대 한 정보를 제공 하 여 코드 조각 이름이 올바른 범주에 표시 될 수 있도록 합니다. 코드 조각 스키마에 대 한 자세한 내용은 [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)를 참조 하세요.
 
@@ -35,7 +37,7 @@ ms.locfileid: "85904707"
 
    이 연습은 [연습: 표시 문 완성](../extensibility/walkthrough-displaying-statement-completion.md)을 기반으로 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-and-register-code-snippets"></a>코드 조각 만들기 및 등록
@@ -49,7 +51,7 @@ ms.locfileid: "85904707"
 
     여기서 *% InstallDir%* 은 Visual Studio 설치 폴더입니다. 이 경로는 일반적으로 코드 조각을 설치 하는 데 사용 되지만 임의의 경로를 지정할 수 있습니다.
 
-2. \ 1033 \ 폴더에서 *.xml* 파일을 만들고 이름을 **TestSnippets.xml**로 합니다. 이 이름은 일반적으로 조각 인덱스 파일에 사용 되지만 *.xml* 파일 이름 확장명을 사용 하는 경우 임의의 이름을 지정할 수 있습니다. 다음 텍스트를 추가한 다음 자리 표시자 GUID를 삭제 하 고 사용자 고유의 GUID를 추가 합니다.
+2. \ 1033 \ 폴더에서 *.xml* 파일을 만들고 이름을 **TestSnippets.xml** 로 합니다. 이 이름은 일반적으로 조각 인덱스 파일에 사용 되지만 *.xml* 파일 이름 확장명을 사용 하는 경우 임의의 이름을 지정할 수 있습니다. 다음 텍스트를 추가한 다음 자리 표시자 GUID를 삭제 하 고 사용자 고유의 GUID를 추가 합니다.
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -126,7 +128,7 @@ ms.locfileid: "85904707"
 
 4. **자산** 탭에 **VsPackage** 콘텐츠 형식이 포함 되어 **있고 프로젝트가 프로젝트** 이름으로 설정 되어 있는지 확인 합니다.
 
-5. .Pkgdef 테스트 프로젝트를 선택 속성 창 하 고, **파일 생성** 을 **true**로 설정 합니다. 프로젝트를 저장합니다.
+5. .Pkgdef 테스트 프로젝트를 선택 속성 창 하 고, **파일 생성** 을 **true** 로 설정 합니다. 프로젝트를 저장합니다.
 
 6. `SnippetUtilities`프로젝트에 정적 클래스를 추가 합니다.
 
@@ -150,7 +152,7 @@ ms.locfileid: "85904707"
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>바로 가기 메뉴에 조각 삽입 명령을 추가 하려면
 
-1. `TestCompletionCommandHandler`클래스 파일을 엽니다.
+1. `TestCompletionCommandHandler` 클래스 파일을 엽니다.
 
      이 클래스는를 구현 하므로 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 메서드에서 **코드 조각 삽입** 명령을 활성화할 수 있습니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> . 명령을 사용 하기 전에이 메서드가 자동화 함수 내에서 호출 되지 않았는지 확인 합니다. **코드 조각 삽입** 명령이 클릭 되 면 코드 조각 선택 UI (사용자 인터페이스)가 표시 되기 때문입니다.
 
@@ -160,7 +162,7 @@ ms.locfileid: "85904707"
 2. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 *zzz* 파일 이름 확장명을 가진 파일을 열고 아무 곳 이나 마우스 오른쪽 단추로 클릭 합니다. **조각 삽입** 명령이 바로 가기 메뉴에 표시 됩니다.
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>코드 조각 선택 UI에서 코드 조각 확장 구현
- 이 섹션에서는 바로 가기 메뉴에서 코드 조각 **삽입** 을 클릭할 때 코드 조각 선택 UI가 표시 되도록 코드 조각 확장을 구현 하는 방법을 보여 줍니다. 또한 사용자가 코드 조각 바로 가기를 입력 한 다음 **Tab**키를 누르면 코드 조각이 확장 됩니다.
+ 이 섹션에서는 바로 가기 메뉴에서 코드 조각 **삽입** 을 클릭할 때 코드 조각 선택 UI가 표시 되도록 코드 조각 확장을 구현 하는 방법을 보여 줍니다. 또한 사용자가 코드 조각 바로 가기를 입력 한 다음 **Tab** 키를 누르면 코드 조각이 확장 됩니다.
 
  코드 조각 선택 UI를 표시 하 고 탐색 및 삽입 후 조각 허용을 사용 하도록 설정 하려면 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 메서드를 사용 합니다. 삽입 자체는 메서드에 의해 처리 됩니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient.OnItemChosen%2A> .
 
@@ -198,12 +200,12 @@ ms.locfileid: "85904707"
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7. 탐색할 수 있는 필드가 코드 조각에 있으면 확장 세션이 명시적으로 허용 될 때까지 열린 상태로 유지 됩니다. 코드 조각에 필드가 없으면 세션이 닫히고 메서드에서로 반환 됩니다 `null` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> . <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>메서드에서 이전 단계에서 추가한 코드 조각 선택 UI 코드 뒤에 다음 코드를 추가 하 여 코드 조각 삽입 후 사용자가 **tab** 또는 **Shift tab 키**를 누르면 코드 조각 탐색을 처리 + **Tab** 합니다.
+7. 탐색할 수 있는 필드가 코드 조각에 있으면 확장 세션이 명시적으로 허용 될 때까지 열린 상태로 유지 됩니다. 코드 조각에 필드가 없으면 세션이 닫히고 메서드에서로 반환 됩니다 `null` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> . <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>메서드에서 이전 단계에서 추가한 코드 조각 선택 UI 코드 뒤에 다음 코드를 추가 하 여 코드 조각 삽입 후 사용자가 **tab** 또는 **Shift tab 키** 를 누르면 코드 조각 탐색을 처리 +  합니다.
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8. 사용자가 해당 바로 가기를 입력 하 고 **Tab**키를 누를 때 코드 조각을 삽입 하려면 메서드에 코드를 추가 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . 코드 조각을 삽입 하는 private 메서드는 이후 단계에서 표시 됩니다. 이전 단계에서 추가한 탐색 코드 뒤에 다음 코드를 추가 합니다.
+8. 사용자가 해당 바로 가기를 입력 하 고 **Tab** 키를 누를 때 코드 조각을 삽입 하려면 메서드에 코드를 추가 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . 코드 조각을 삽입 하는 private 메서드는 이후 단계에서 표시 됩니다. 이전 단계에서 추가한 탐색 코드 뒤에 다음 코드를 추가 합니다.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -230,9 +232,9 @@ ms.locfileid: "85904707"
 
 2. 텍스트 파일을 열고 텍스트를 입력 합니다.
 
-3. 텍스트의 아무 곳 이나 마우스 오른쪽 단추로 클릭 한 다음 **조각 삽입**을 클릭 합니다.
+3. 텍스트의 아무 곳 이나 마우스 오른쪽 단추로 클릭 한 다음 **조각 삽입** 을 클릭 합니다.
 
-4. 코드 조각 선택 UI에는 **테스트 대체 필드**라는 팝업이 표시 됩니다. 팝업을 두 번 클릭 합니다.
+4. 코드 조각 선택 UI에는 **테스트 대체 필드** 라는 팝업이 표시 됩니다. 팝업을 두 번 클릭 합니다.
 
      다음 코드 조각을 삽입 해야 합니다.
 
@@ -241,12 +243,12 @@ ms.locfileid: "85904707"
     MessageBox.Show("second");
     ```
 
-     **Enter** 또는 **esc**키를 누르지 마세요.
+     **Enter** 또는 **esc** 키를 누르지 마세요.
 
 5. **Tab** 및 **Shift** + **tab** 을 눌러 "first"와 "second" 사이를 전환 합니다.
 
-6. **Enter** 또는 **Esc**키를 눌러 삽입을 허용 합니다.
+6. **Enter** 또는 **Esc** 키를 눌러 삽입을 허용 합니다.
 
-7. 텍스트의 다른 부분에 "test"를 입력 한 다음 **tab**키를 누릅니다. "Test"는 코드 조각 바로 가기입니다. 조각이 다시 삽입 되어야 합니다.
+7. 텍스트의 다른 부분에 "test"를 입력 한 다음 **tab** 키를 누릅니다. "Test"는 코드 조각 바로 가기입니다. 조각이 다시 삽입 되어야 합니다.
 
 ## <a name="next-steps"></a>다음 단계

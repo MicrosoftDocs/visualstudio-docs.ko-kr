@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 Service2의 매개 변수 정보 | Microsoft Docs
+description: 레거시 언어 서비스에서 메서드가 형식화 될 때 메서드 시그니처를 표시 하기 위해 IntelliSense 매개 변수 정보 작업을 지 원하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237960"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875949"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>레거시 언어 서비스의 매개 변수 정보 2
 IntelliSense 매개 변수 정보는 사용자가 메서드 매개 변수 목록에 대 한 매개 변수 목록 시작 문자 (일반적으로 여는 괄호)를 입력 하는 경우 메서드의 시그니처를 표시 하는 도구 설명입니다. 각 매개 변수를 입력 하 고 매개 변수 구분 기호 (일반적으로 쉼표)를 입력 하면 도구 설명이 업데이트 되어 다음 매개 변수가 굵게 표시 됩니다.
@@ -42,7 +44,7 @@ IntelliSense 매개 변수 정보는 사용자가 메서드 매개 변수 목록
 
  또한 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> `true` 매개 변수 정보 도구 설명이 표시 되려면 속성을로 설정 해야 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음은 매개 변수 목록 문자를 검색 하 고 적절 한 트리거를 설정 하는 간단한 예입니다. 이 예는 설명을 위한 목적 으로만 사용 됩니다. 스캐너에는 `GetNextToken` 텍스트 줄에서 토큰을 식별 하 고 반환 하는 메서드가 포함 되어 있다고 가정 합니다. 예제 코드에서는 올바른 종류의 문자가 표시 될 때마다 트리거를 설정 하기만 하면 됩니다.
 
 ```csharp
@@ -100,7 +102,7 @@ namespace TestLanguagePackage
 
   그러면 파서가 개체에서 지정 된 줄을 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseRequest> 하 여 입력 되는 메서드의 이름과 사용자가 매개 변수를 입력 하는 거리를 수집 해야 합니다. 이렇게 하려면 메서드 이름을 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> 개체의 메서드에 전달 하 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 고 매개 변수 목록 시작 문자를 구문 분석할 때 메서드를 호출 하 고, 매개 변수 목록 다음 문자를 구문 분석할 때 메서드를 호출 하 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> 고, <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> 매개 변수 목록 끝 문자를 구문 분석할 때 메서드를 호출 하 여 수행 합니다. 이러한 메서드 호출의 결과는 <xref:Microsoft.VisualStudio.Package.Source> 클래스에서 매개 변수 정보 도구 설명을 적절 하 게 업데이트 하는 데 사용 됩니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  사용자가 입력할 수 있는 텍스트 줄은 다음과 같습니다. 줄 아래의 숫자는 줄의 해당 위치에서 파서가 수행 하는 단계를 표시 합니다. 구문 분석은 왼쪽에서 오른쪽으로 이동 합니다. 여기서는 줄 앞의 모든 항목이 "testfunc" 메서드 시그니처를 포함 하 여 메서드 시그니처에 대해 이미 구문 분석 되었음을 전제로 합니다.
 
 ```

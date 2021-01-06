@@ -1,5 +1,7 @@
 ---
 title: 사용자 설정 저장소에 쓰는 중 | Microsoft Docs
+description: 이 연습을 사용 하 여 사용자 설정 저장소에서 읽고 쓰는 방법으로 Visual Studio에 메모장을 외부 도구로 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec4d9cdda975d0f80e9d8523ec18a19c24c9418a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906205"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876924"
 ---
 # <a name="writing-to-the-user-settings-store"></a>사용자 설정 저장소에 쓰기
 사용자 설정은 **도구/옵션** 대화 상자, 속성 창 및 기타 특정 대화 상자와 같은 쓰기 가능한 설정입니다. Visual Studio 확장에서는이를 사용 하 여 소량의 데이터를 저장할 수 있습니다. 이 연습에서는 사용자 설정 저장소에서 읽고 쓰는 방법으로 Visual Studio에 메모장을 외부 도구로 추가 하는 방법을 보여 줍니다.
@@ -104,6 +106,6 @@ ms.locfileid: "85906205"
 
 7. 코드를 빌드하고 디버깅을 시작 합니다.
 
-8. **도구** 메뉴에서 **UserSettingsStoreCommand 호출**을 클릭 합니다. 그러면 메모장이 **도구** 메뉴에 추가 됩니다.
+8. **도구** 메뉴에서 **UserSettingsStoreCommand 호출** 을 클릭 합니다. 그러면 메모장이 **도구** 메뉴에 추가 됩니다.
 
 9. 이제 도구/옵션 메뉴에 메모장이 표시 되 고 **메모장** 을 클릭 하면 메모장의 인스턴스가 표시 됩니다.

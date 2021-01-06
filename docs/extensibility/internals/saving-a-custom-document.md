@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 문서 저장 | Microsoft Docs
+description: Visual Studio IDE에 추가 하는 프로젝트 형식에 대 한 사용자 지정 문서에 대해 발생 하는 프로세스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705610"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875681"
 ---
 # <a name="saving-a-custom-document"></a>사용자 지정 문서 저장
-환경에서는 **저장**, 다른 **이름으로 저장**및 **모두 저장** 명령을 처리 합니다. 사용자가 **파일** 메뉴에서 **저장**, 다른 **이름으로 저장** **또는 모두 저장** 을 클릭 하거나 솔루션을 닫을 때 모두 저장을 클릭 하면 다음 프로세스가 발생 합니다.
+환경에서는 **저장**, 다른 **이름으로 저장** 및 **모두 저장** 명령을 처리 합니다. 사용자가 **파일** 메뉴에서 **저장**, 다른 **이름으로 저장** **또는 모두 저장** 을 클릭 하거나 솔루션을 닫을 때 모두 저장을 클릭 하면 다음 프로세스가 발생 합니다.
 
  ![고객 편집기 저장](../../extensibility/internals/media/private.gif "프라이빗") 사용자 지정 편집기에 대 한 저장, 다른 이름으로 저장 및 모든 명령 처리 저장
 
@@ -41,6 +43,6 @@ ms.locfileid: "80705610"
     > [!NOTE]
     > 사용자 고유의 지 속성을 구현 하는 경우 메서드를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 시간을 절약 해야 합니다. 이 메서드는 파일을 저장 하는 것이 안전한 지 확인 합니다. 예를 들어 파일이 읽기 전용이 아닙니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)

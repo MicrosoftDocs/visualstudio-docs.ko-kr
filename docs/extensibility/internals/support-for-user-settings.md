@@ -1,5 +1,7 @@
 ---
 title: 사용자 설정 지원 | Microsoft Docs
+description: Visual Studio SDK의 설정 Api를 사용 하 여 설정 범주의 지 속성을 사용 하도록 설정 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704785"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876522"
 ---
 # <a name="support-for-user-settings"></a>사용자 설정 지원
 VSPackage는 사용자가 **도구** 메뉴에서 **가져오기/내보내기 설정** 명령을 선택할 때 유지 되는 상태 변수의 그룹인 하나 이상의 설정 범주를 정의할 수 있습니다. 이 지 속성을 사용 하려면의 설정 Api를 사용 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 합니다.
@@ -34,7 +36,7 @@ VSPackage는 사용자가 **도구** 메뉴에서 **가져오기/내보내기 �
  사용자 지정 설정 지점은 다음 위치의 레지스트리 항목에 생성 됩니다. HKLM\Software\Microsoft\VisualStudio \UserSettings. \\ *\<Version>* \\ `<CSPName>` 여기서 `<CSPName>` 는 VSPackage에서 지 원하는 사용자 지정 설정 지점의 이름이 고 *\<Version>* 버전 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (예: 8.0)입니다.
 
 > [!NOTE]
-> HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio의 루트 경로는 \\ *\<Version>* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)가 초기화 될 때 대체 루트로 재정의할 수 있습니다. 자세한 내용은 [명령줄 스위치](../../extensibility/command-line-switches-visual-studio-sdk.md)를 참조 하세요.
+> \\ *\<Version>* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)가 초기화 될 때 대체 루트를 사용 하 여 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio의 루트 경로를 재정의할 수 있습니다. 자세한 내용은 [명령줄 스위치](../../extensibility/command-line-switches-visual-studio-sdk.md)를 참조 하세요.
 
  레지스트리 항목의 구조는 다음과 같습니다.
 
@@ -50,7 +52,7 @@ VSPackage는 사용자가 **도구** 메뉴에서 **가져오기/내보내기 �
 
  AlternateParent = 범주
 
-| Name | 형식 | 데이터 | Description |
+| 이름 | 형식 | 데이터 | Description |
 |-----------------|--------| - | - |
 | (기본값) | REG_SZ | 사용자 지정 설정 지점의 이름입니다. | 키의 이름인>은 `<CSPName` 사용자 지정 설정 지점의 지역화 되지 않은 이름입니다.<br /><br /> MPF를 기반으로 하는 구현에서는 `categoryName` `objectName` 생성자의 및 인수를로 결합 하 여 키의 이름을 가져옵니다 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `categoryName_objectName` .<br /><br /> 키는 비어 있거나 위성 DLL의 지역화 된 문자열에 대 한 참조 ID를 포함할 수 있습니다. 이 값은 `objectNameResourceID` 생성자에 대 한 인수에서 가져옵니다 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> . |
 | 패키지 | REG_SZ | GUID | 사용자 지정 설정 지점을 구현 하는 VSPackage의 GUID입니다.<br /><br /> 클래스를 사용 하는 MPF를 기반으로 하는 구현 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 에서는 `objectType` VSPackage의 및 리플렉션을 포함 하는 생성자의 인수를 사용 <xref:System.Type> 하 여이 값을 가져옵니다. |

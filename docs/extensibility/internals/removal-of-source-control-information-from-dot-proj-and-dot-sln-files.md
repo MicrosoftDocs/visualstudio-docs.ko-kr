@@ -1,5 +1,6 @@
 ---
 title: Proj 및 .sln 파일에서 소스 제어 정보를 제거 합니다.
+description: 소스 제어 플러그 인 API에서 SCC 정보는 MSSCCPRJ.SCC에 저장 됩니다. 프로젝트 및 솔루션 파일 대신 SCC 파일
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5f9b6ac83df104c381d7100a5e8fda5ac48a61
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 798179a48c24c61fa40c2519624e22a077003b56
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034678"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876963"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Proj 및 .sln 파일에서 소스 제어 정보 제거
 
@@ -28,6 +29,6 @@ ms.locfileid: "90034678"
 
  소스 제어 플러그 인 API 버전 1.1에서 IDE는 SAK 파일을 사용 하 여 플러그 인에서 MSSCCPRJ.SCC을 지원 하는지 여부를 검색 합니다. 소스 제어 정보를 저장 하는 SCC 메서드입니다. 소스 제어 플러그 인 API 버전 1.2에서는 MSSCCPRJ.SCC에 대 한 지원을 검색 하는 새로운 기능을 제공 합니다. ~ SAK 파일을 사용 하지 않는 SCC 파일. 자세한 내용은 [~ SAK Files 제거](../../extensibility/internals/elimination-of-tilde-sak-files.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

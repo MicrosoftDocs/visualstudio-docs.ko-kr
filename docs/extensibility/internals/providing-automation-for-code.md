@@ -1,5 +1,7 @@
 ---
 title: 코드에 대 한 자동화 제공 | Microsoft Docs
+description: 내부 데이터 구조에 따라 결정 되는 인터페이스를 구현 해야 하는 코드 모델을 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705987"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875858"
 ---
 # <a name="providing-automation-for-code"></a>코드에 대한 자동화 제공
 코드에 대 한 자동화 모델을 만들 필요는 없습니다. 환경 SDK는이 작업에 대 한 샘플을 제공 하지 않습니다. 코드 모델에 대 한 자세한 내용은 개체를 참조 하세요 <xref:EnvDTE.CodeModel> .

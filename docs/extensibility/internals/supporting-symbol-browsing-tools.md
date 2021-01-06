@@ -1,5 +1,7 @@
 ---
-title: 기호 검색 도구 지원 | Microsoft Docs
+title: Symbol-Browsing 도구 지원 | Microsoft Docs
+description: Visual Studio는 Visual Studio에서 기호 검색 기능을 제공 합니다. 구성 요소의 기호에 대 한 라이브러리를 사용 하 여 이러한 기능을 확장 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704776"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876443"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>기호 검색 도구 지원
 **기호 결과** 도구 **개체 브라우저**, **클래스 뷰**, **호출 브라우저** 및 찾기 도구 Visual Studio에서 기호 검색 기능을 제공 합니다. 이러한 도구는 기호에 대 한 계층적 트리 뷰를 표시 하 고 트리에서 기호 간의 관계를 표시 합니다. 기호는 다양 한 구성 요소에 포함 된 네임 스페이스, 개체, 클래스, 클래스 멤버 및 기타 언어 요소를 나타낼 수 있습니다. 구성 요소에는 Visual Studio 프로젝트, 외부 .NET Framework 구성 요소 및 형식 (.tlb) 라이브러리가 포함 됩니다. 자세한 내용은 [코드 구조 보기](../../ide/viewing-the-structure-of-code.md)를 참조 하세요.
 
-## <a name="symbol-browsing-libraries"></a>기호 검색 라이브러리
+## <a name="symbol-browsing-libraries"></a>Symbol-Browsing 라이브러리
  언어 구현자는 구성 요소에서 기호를 추적 하는 라이브러리를 만들고 인터페이스 집합을 통해 Visual Studio 개체 관리자에 기호 목록을 제공 하 여 Visual Studio 기호 검색 기능을 확장할 수 있습니다. 라이브러리는 인터페이스를 통해 설명 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> . Visual Studio 개체 관리자는 라이브러리에서 데이터를 가져오고 구성 하 여 기호 검색 도구에서 새 데이터에 대 한 요청에 응답 합니다. 그런 다음 요청 된 데이터로 도구를 채우거 나 업데이트 합니다. Visual Studio 개체 관리자에 대 한 참조를 가져오려면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> 서비스 ID를 `GetService` 메서드에 전달 합니다.
 
  각 라이브러리는 모든 라이브러리에 대 한 정보를 수집 하는 Visual Studio 개체 관리자를 사용 하 여 등록 해야 합니다. 라이브러리를 등록 하려면 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 합니다. Visual Studio 개체 관리자는 요청을 시작 하는 도구에 따라 적절 한 라이브러리를 찾고 데이터를 요청 합니다. 이 데이터는 인터페이스에서 설명 하는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기호 목록에서 라이브러리와 개체 관리자 간에 이동 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> .

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 작업 영역 | Microsoft Docs
+description: Visual Studio에서 작업 영역을 사용 하 여 작업 영역 공급자 및 서비스를 비롯 하 여 열려 있는 폴더에 있는 파일의 컬렉션을 나타내는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952765"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876950"
 ---
 # <a name="workspaces"></a>작업 영역
 
@@ -49,7 +51,7 @@ ms.locfileid: "62952765"
 
 작업 영역에는 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> 간단 하지만 작업 영역을 강력 하 게 제어 하는 서비스가 있습니다. 설정에 대 한 기본 개요는 [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)을 참조 하세요.
 
-대부분의 유형에 대 한 설정은 `SettingsType` _VSWorkspaceSettings.js_ 설정 및 _tasks.vs.js_와 같은 _json_ 파일입니다.
+대부분의 유형에 대 한 설정은 `SettingsType` _VSWorkspaceSettings.js_ 설정 및 _tasks.vs.js_ 와 같은 _json_ 파일입니다.
 
 작업 영역 설정의 기능은 작업 영역 내에서 간단히 경로 인 "범위"를 중심으로 합니다. 소비자가를 호출 하면 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> 요청 된 경로와 설정 형식이 포함 된 모든 범위가 집계 됩니다. 범위 집계 우선 순위는 다음과 같습니다.
 
@@ -76,7 +78,7 @@ ms.locfileid: "62952765"
 }
 ```
 
-이러한 설정이 사용자의 _VSWorkspaceSettings.js_에 있는 경우 다음과 같이 데이터에 액세스할 수 있습니다.
+이러한 설정이 사용자의 _VSWorkspaceSettings.js_ 에 있는 경우 다음과 같이 데이터에 액세스할 수 있습니다.
 
 ```csharp
 using System.Collections.Generic;
@@ -169,7 +171,7 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 로드 된 패키지는 `IVsSolutionEvents7` 을 구현 하 고 호출할 수 있습니다 `IVsSolution.AdviseSolutionEvents` . Visual Studio에서 폴더 열기 및 닫기에 대 한 이벤트를 포함 합니다.
 
-UI 컨텍스트를 사용 하 여 패키지를 자동으로 로드할 수 있습니다. 값이 `4646B819-1AE0-4E79-97F4-8A8176FDD664`입니다.
+UI 컨텍스트를 사용 하 여 패키지를 자동으로 로드할 수 있습니다. 값이 `4646B819-1AE0-4E79-97F4-8A8176FDD664`인 경우
 
 ## <a name="troubleshooting"></a>문제 해결
 
@@ -179,13 +181,13 @@ UI 컨텍스트를 사용 하 여 패키지를 자동으로 로드할 수 있습
 
 ::: moniker range="vs-2017"
 
-오류 세부 정보는 _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.visualstudio.default.err_에서 찾을 수 있습니다. 확장 프로그램에서 구현 하는 형식에 대 한 모든 오류를 해결 합니다.
+오류 세부 정보는 _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ 에서 찾을 수 있습니다. 확장 프로그램에서 구현 하는 형식에 대 한 모든 오류를 해결 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-오류 세부 정보는 _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.visualstudio.default.err_에서 찾을 수 있습니다. 확장 프로그램에서 구현 하는 형식에 대 한 모든 오류를 해결 합니다.
+오류 세부 정보는 _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ 에서 찾을 수 있습니다. 확장 프로그램에서 구현 하는 형식에 대 한 모든 오류를 해결 합니다.
 
 ::: moniker-end
 

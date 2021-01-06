@@ -1,5 +1,7 @@
 ---
 title: 속성 창 개요 | Microsoft Docs
+description: 이 개요에서 Visual Studio IDE의 속성 창와 상호 작용 하는 데 사용 되는 인터페이스에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706025"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875897"
 ---
 # <a name="properties-window-overview"></a>속성 창 개요
 **속성** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에서 사용할 수 있는 두 가지 주요 windows 형식에서 선택한 개체의 속성을 표시 하는 데 사용 됩니다. 이러한 두 가지 유형의 windows는 다음과 같습니다.

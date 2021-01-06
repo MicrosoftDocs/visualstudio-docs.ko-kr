@@ -1,5 +1,7 @@
 ---
 title: '&apos;Visual Studio 2017 SDK의 새로운 기능 | Microsoft Docs'
+description: Visual Studio SDK에는 업데이트 된 VSIX 버전 3 형식을 비롯 하 여 Visual Studio 2017에 대 한 새롭고 업데이트 된 기능이 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb5b81341f8184d713755b3b934fbae4c8031b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e9df9a728ab9892694efa6489a8ea1fd675700
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711601"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877629"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK의 새로운 기능&#39;
 

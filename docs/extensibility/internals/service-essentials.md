@@ -1,5 +1,7 @@
 ---
 title: 서비스 Essentials | Microsoft Docs
+description: 다른 VSPackage에서 사용할 수 있는 인터페이스인 서비스에 대해 알아봅니다. VSPackage의 서비스는 기본 제공 또는 다른 서비스를 재정의할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705494"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875806"
 ---
 # <a name="service-essentials"></a>서비스 필수 항목
 서비스는 두 Vspackage 사이의 계약입니다. 하나의 VSPackage는 다른 VSPackage에서 사용할 특정 인터페이스 집합을 제공 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 자체는 다른 Vspackage에 서비스를 제공 하는 Vspackage의 컬렉션입니다.
@@ -92,7 +94,7 @@ ms.locfileid: "80705494"
 
     이 코드는 SVsActivityLog 서비스를 가져와 활동 로그에 쓰는 데 사용할 수 있는 IVsActivityLog 인터페이스로 캐스팅 합니다. 예제는 [방법: 활동 로그 사용](../../extensibility/how-to-use-the-activity-log.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [사용 가능한 서비스 목록](../../extensibility/internals/list-of-available-services.md)
 - [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)

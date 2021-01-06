@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 개요 | Microsoft Docs
+description: 레거시 언어 서비스에서 숨겨진 영역을 구현 하는 방법에 대 한 개요를 지 원하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706805"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876833"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요 표시
 개요를 사용 하면 복잡 한 프로그램을 개요 또는 개요로 축소할 수 있습니다. 예를 들어 c #에서는 메서드 서명만 표시 하는 모든 메서드를 한 줄로 축소할 수 있습니다. 또한 구조체와 클래스는 구조체 및 클래스의 이름만 표시 하도록 축소할 수 있습니다. 단일 메서드 내에서 복잡 한 논리를 축소 하 여, 및와 같은 문의 첫 번째 줄만 표시 함으로써 전체 흐름을 표시할 수 있습니다 `foreach` `if` `while` .
@@ -43,7 +45,7 @@ ms.locfileid: "80706805"
 
  숨겨진 지역 세션이 제거 된 시기를 확인 해야 하는 경우 숨겨진 지역이 변경 되거나 특정 숨겨진 지역이 표시 되는지 확인 해야 합니다. 클래스에서 클래스를 파생 <xref:Microsoft.VisualStudio.Package.Source> 하 고 각각 적절 한,, 및 메서드를 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> .
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음은 중괄호의 모든 쌍에 대해 숨겨진 영역을 만드는 간단한 예제입니다. 언어가 중괄호 일치를 제공 하 고, 일치 하는 중괄호에 중괄호 ({및})가 하나 이상 포함 되어 있다고 가정 합니다. 이 방법은 설명을 위한 목적 으로만 사용 됩니다. 전체 구현에서는의 사례를 완전히 처리 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 합니다. 또한이 예제에서는 기본 설정을 일시적으로 설정 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> `true` . 다른 방법은 `AutoOutlining` `ProvideLanguageServiceAttribute` 언어 패키지의 특성에 명명 된 매개 변수를 지정 하는 것입니다.
 
  이 예에서는 주석, 문자열 및 리터럴에 대 한 c # 규칙을 가정 합니다.

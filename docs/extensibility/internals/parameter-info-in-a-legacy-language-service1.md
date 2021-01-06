@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 Service1의 매개 변수 정보 | Microsoft Docs
+description: 레거시 언어 서비스에서 사용자에 게 힌트를 제공 하는 IntelliSense 매개 변수 정보 도구 설명을 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8e5664634d189e8463376761d8fb59543740df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd49644e670df42f4630af987a5e9152b4f6c95
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238077"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876807"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>레거시 언어 서비스의 매개 변수 정보 1
 IntelliSense 매개 변수 정보 도구 설명에서는 사용자에 게 언어 구문의 위치에 대 한 힌트를 제공 합니다.

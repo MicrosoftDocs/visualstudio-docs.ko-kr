@@ -1,5 +1,7 @@
 ---
 title: '연습: 시작 페이지에 사용자 설정 저장 | Microsoft Docs'
+description: 이 연습을 사용 하 여 설정을 레지스트리에 저장 하 여 시작 페이지에 대 한 사용자 설정을 유지 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,35 +11,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903171"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876183"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>연습: 시작 페이지에 사용자 설정 저장
 
 시작 페이지에 대 한 사용자 설정을 유지할 수 있습니다. 이 연습을 수행 하면 사용자가 단추를 클릭할 때 레지스트리에 설정을 저장 하는 컨트롤을 만든 다음 시작 페이지가 로드 될 때마다 해당 설정을 검색할 수 있습니다. 시작 페이지 프로젝트 템플릿에는 사용자 지정 가능한 사용자 컨트롤이 포함 되어 있고 기본 시작 페이지 XAML은 해당 컨트롤을 호출 하기 때문에 시작 페이지 자체를 수정할 필요가 없습니다.
 
-이 연습에서 인스턴스화된 설정 저장소는 인터페이스의 인스턴스이고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> , 호출 될 때 다음 레지스트리 위치를 읽고 씁니다. **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+이 연습에서 인스턴스화된 설정 저장소는 인터페이스의 인스턴스이고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> , 호출 될 때 다음 레지스트리 위치를 읽고 씁니다. **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
-Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKCU\Software\Microsoft\VisualStudio\14.0Exp에 대 한 읽기 및 쓰기를 저장 ** \\ \<CollectionName> 합니다.**
+Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKCU\Software\Microsoft\VisualStudio\14.0Exp에 대 한 읽기 및 쓰기를 저장 **\\ \<CollectionName> 합니다.**
 
 설정을 유지 하는 방법에 대 한 자세한 내용은 [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 >
-> **확장 관리자**를 사용 하 여 시작 페이지 프로젝트 템플릿을 다운로드할 수 있습니다.
+> **확장 관리자** 를 사용 하 여 시작 페이지 프로젝트 템플릿을 다운로드할 수 있습니다.
 
 ## <a name="set-up-the-project"></a>프로젝트 설정
 
-1. [사용자 지정 시작 페이지 만들기](creating-a-custom-start-page.md)에서 설명한 대로 시작 페이지 프로젝트를 만듭니다. 프로젝트 이름을 **Savemysettings로 설정**합니다.
+1. [사용자 지정 시작 페이지 만들기](creating-a-custom-start-page.md)에서 설명한 대로 시작 페이지 프로젝트를 만듭니다. 프로젝트 이름을 **Savemysettings로 설정** 합니다.
 
-2. **솔루션 탐색기**에서 StartPageControl 프로젝트에 다음 어셈블리 참조를 추가 합니다.
+2. **솔루션 탐색기** 에서 StartPageControl 프로젝트에 다음 어셈블리 참조를 추가 합니다.
 
     - EnvDTE
 
@@ -47,7 +49,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
     - VisualStudio입니다.
 
-3. *Mycontrol.xaml*를 엽니다.
+3. *Mycontrol.xaml* 를 엽니다.
 
 4. XAML 창의 최상위 <xref:System.Windows.Controls.UserControl> 요소 정의에서 네임 스페이스 선언 뒤에 다음 이벤트 선언을 추가 합니다.
 
@@ -55,11 +57,11 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
     Loaded="OnLoaded"
     ```
 
-5. 디자인 창에서 컨트롤의 기본 영역을 클릭 한 다음 **delete**키를 누릅니다.
+5. 디자인 창에서 컨트롤의 기본 영역을 클릭 한 다음 **delete** 키를 누릅니다.
 
      이 단계에서는 <xref:System.Windows.Controls.Border> 요소와 요소를 모두 제거 하 고 최상위 요소만 남겨 둡니다 <xref:System.Windows.Controls.Grid> .
 
-6. **도구 상자**에서 컨트롤을 표로 끌어 옵니다 <xref:System.Windows.Controls.StackPanel> .
+6. **도구 상자** 에서 컨트롤을 표로 끌어 옵니다 <xref:System.Windows.Controls.StackPanel> .
 
 7. 이제 <xref:System.Windows.Controls.TextBlock> , <xref:System.Windows.Controls.TextBox> 및 단추를로 끌어 옵니다 <xref:System.Windows.Controls.StackPanel> .
 
@@ -75,9 +77,9 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 ## <a name="implement-the-user-control"></a>사용자 정의 컨트롤 구현
 
-1. XAML 창에서 요소의 특성을 마우스 오른쪽 단추로 클릭 한 `Click` <xref:System.Windows.Controls.Button> 다음 **이벤트 처리기로 이동**을 클릭 합니다.
+1. XAML 창에서 요소의 특성을 마우스 오른쪽 단추로 클릭 한 `Click` <xref:System.Windows.Controls.Button> 다음 **이벤트 처리기로 이동** 을 클릭 합니다.
 
-     이 단계에서는 *MyControl.xaml.cs*를 열고 이벤트에 대 한 스텁 처리기를 만듭니다 `Button_Click` .
+     이 단계에서는 *MyControl.xaml.cs* 를 열고 이벤트에 대 한 스텁 처리기를 만듭니다 `Button_Click` .
 
 2. 다음 지시문을 `using` 파일의 맨 위에 추가 합니다.
 
@@ -150,9 +152,9 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 6. 사용자 정의 컨트롤을 빌드합니다.
 
-7. **솔루션 탐색기**에서 *source.extension.vsixmanifest*을 엽니다.
+7. **솔루션 탐색기** 에서 *source.extension.vsixmanifest* 을 엽니다.
 
-8. 매니페스트 편집기에서 **제품 이름** 을 설정 하 여 **설정 시작 페이지를 저장**합니다.
+8. 매니페스트 편집기에서 **제품 이름** 을 설정 하 여 **설정 시작 페이지를 저장** 합니다.
 
      이 기능은 **옵션** 대화 상자의 **시작 페이지 사용자 지정** 목록에 표시 되는 시작 페이지의 이름을 설정 합니다.
 
@@ -160,21 +162,21 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 ## <a name="test-the-control"></a>컨트롤 테스트
 
-1. **F5**키를 누릅니다.
+1. **F5** 키를 누릅니다.
 
      Visual Studio의 실험적 인스턴스가 열립니다.
 
-2. 실험적 인스턴스의 **도구** 메뉴에서 **옵션**을 클릭 합니다.
+2. 실험적 인스턴스의 **도구** 메뉴에서 **옵션** 을 클릭 합니다.
 
-3. **환경** 노드에서 **시작**을 클릭 한 다음 **시작 페이지 사용자 지정** 목록에서 **[설치 된 확장] 내 설정 저장 시작 페이지**를 선택 합니다.
+3. **환경** 노드에서 **시작** 을 클릭 한 다음 **시작 페이지 사용자 지정** 목록에서 **[설치 된 확장] 내 설정 저장 시작 페이지** 를 선택 합니다.
 
-     **확인**을 클릭합니다.
+     **확인** 을 클릭합니다.
 
-4. 시작 페이지가 열려 있으면 닫은 다음 **보기** 메뉴에서 **시작 페이지**를 클릭 합니다.
+4. 시작 페이지가 열려 있으면 닫은 다음 **보기** 메뉴에서 **시작 페이지** 를 클릭 합니다.
 
 5. 시작 페이지에서 **mycontrol.xaml** 탭을 클릭 합니다.
 
-6. 텍스트 상자에 **Cat**을 입력 한 후 **내 설정 저장**을 클릭 합니다.
+6. 텍스트 상자에 **Cat** 을 입력 한 후 **내 설정 저장** 을 클릭 합니다.
 
 7. 시작 페이지를 닫은 다음 다시 엽니다.
 

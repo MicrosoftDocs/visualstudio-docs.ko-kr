@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 폴더를 소스 제어 저장소와 비교 | Microsoft Docs
+description: 소스 제어 플러그 인 API에서 로컬 프로젝트 폴더와 원본 제어 간의 비교는 SccDirQueryInfo 및 Sccdidiff를 사용 하 여 수행 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706860"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877587"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>로컬 프로젝트 폴더와 소스 제어 저장소의 선택적 비교
 소스 제어 플러그 인 API 1.2에서 [Sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) 및 [Scctdiff](../../extensibility/sccdirdiff-function.md)함수를 사용 하 여 로컬 프로젝트 폴더와 소스 제어를 비교할 수 있습니다.
 
- **솔루션 탐색기**내에서 개별 파일 대신 폴더를 선택 하면 **버전 비교** 바로 가기 메뉴에서 소스 제어 플러그 인의 새 [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) 및 [scctdiff](../../extensibility/sccdirdiff-function.md) 를 호출 합니다.
+ **솔루션 탐색기** 내에서 개별 파일 대신 폴더를 선택 하면 **버전 비교** 바로 가기 메뉴에서 소스 제어 플러그 인의 새 [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) 및 [scctdiff](../../extensibility/sccdirdiff-function.md) 를 호출 합니다.
 
 ## <a name="new-capability-flags"></a>새 기능 플래그
  `SCC_CAP_DIRECTORYDIFF`
@@ -38,5 +40,5 @@ ms.locfileid: "80706860"
 > [!NOTE]
 > 이 함수는 [Sccdiff](../../extensibility/sccdiff-function.md)와 동일한 명령 플래그를 사용 합니다. 원본 제어 플러그 인 공급자는 디렉터리에 대 한 "빠른 diff" 작업을 지원 하지 않도록 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

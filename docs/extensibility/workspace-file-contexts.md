@@ -1,5 +1,7 @@
 ---
 title: Visual Studio의 작업 영역 파일 컨텍스트 | Microsoft Docs
+description: Open Folder 작업 영역에 대 한 통찰력을 지원 하기 위해 IFileContextProvider 인터페이스를 구현 하는 파일 컨텍스트 공급자에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 271b05d78123136d47cb618e8ed38cea64b7beac
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952817"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877067"
 ---
 # <a name="workspace-file-contexts"></a>작업 영역 파일 컨텍스트
 

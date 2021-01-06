@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 하위 유형 | Microsoft Docs
+description: 프로젝트 하위 유형을 사용 하 여 Visual Studio 프로젝트 시스템의 동작을 사용자 지정 하는 방법을 알아봅니다. Vspackage COM 집계를 사용 하 여 프로젝트 하위 유형을 구현 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426978"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876301"
 ---
 # <a name="project-subtypes"></a>프로젝트 하위 형식
 프로젝트 하위 유형을 사용 하면의 프로젝트 시스템 동작을 사용자 지정 하거나 버전을 지정할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 지정은 프로젝트 파일에 추가 데이터를 저장 하 고, **새 항목 추가** 대화 상자에서 항목을 추가 또는 필터링 하 고, 어셈블리를 디버그 및 배포 하는 방법을 제어 하 고, 프로젝트 **속성 페이지** 대화 상자를 확장 합니다. Vspackage COM 집계를 사용 하 여 프로젝트 하위 유형을 구현 합니다.
@@ -66,7 +68,7 @@ ms.locfileid: "89426978"
 
   프로젝트 디자이너에서 속성 페이지를 추가 및 제거 하는 방법을 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 
 - [프로젝트 형식](../../extensibility/internals/project-types.md):
 

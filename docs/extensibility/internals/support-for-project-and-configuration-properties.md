@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 및 구성 속성에 대 한 지원 | Microsoft Docs
+description: 프로젝트 및 구성 확장 속성을 표시할 수 있는 Visual Studio IDE에서 고유한 프로젝트 형식에 대 한 속성 페이지를 제공 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012024"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876599"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
-**Properties** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)의 속성 창에는 프로젝트 및 구성 속성이 표시 될 수 있습니다. 사용자가 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)의 속성 창에는 프로젝트 및 구성 속성이 표시 될 수 있습니다. 사용자가 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.
 
  **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음 **프로젝트** 메뉴에서 **속성** 을 클릭 하 여 프로젝트 및 구성 속성이 포함 된 대화 상자를 열 수 있습니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 이러한 언어에서 파생 된 및 및 프로젝트 형식에서이 대화 상자는 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md)에 탭 페이지로 표시 됩니다. 자세한 내용은 [빌드에 없음: 연습: 프로젝트 및 구성 속성 노출 (c #)](/previous-versions/bb166517(v=vs.100))을 참조 하세요.
 
@@ -75,7 +77,7 @@ ms.locfileid: "90012024"
 
  특성이 연결 된 VSPackage는 중요 하지 않습니다. VSPackage가에 등록 되 면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 호출할 수 있도록 만들 수 있는 모든 개체의 CLSID (클래스 id)가 등록 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> .
 
- 만들 수 있는 개체의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> 개체 형식의 guid와 단어, CLSID를 결합 하 여 결정 됩니다. `MyProjectPropertyPage`클래스의 guid가 {3c693da2-5bca-49b3-bd95-ffe0a39dd723}이 고 UserRegistryRoot HKEY_CURRENT_USER가 \software\microsoft\visualstudio\8.0exp 이면 레지스트리 경로는 \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723} HKEY_CURRENT_USER 됩니다.
+ 만들 수 있는 개체의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> 개체 형식의 guid와 단어, CLSID를 결합 하 여 결정 됩니다. `MyProjectPropertyPage`클래스에 guid가 {3c693da2-5bca-49b3-bd95-ffe0a39dd723}이 고 UserRegistryRoot가 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp 경우 레지스트리 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID경로는 \\ {3c693da2-5bca-49b3-bd95-ffe0a39dd723}이 됩니다.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>프로젝트 및 구성 속성 특성 및 레이아웃
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute> 및 특성은 <xref:System.ComponentModel.DescriptionAttribute> 일반 속성 페이지에서 프로젝트 및 구성 속성의 레이아웃, 레이블 지정 및 설명을 결정 합니다. 이러한 특성은 옵션에 대 한 범주, 표시 이름 및 설명을 각각 결정 합니다.
@@ -88,9 +90,9 @@ ms.locfileid: "90012024"
  [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
 
- 구성 `MyConfigProp` 속성은 구성 속성 페이지의 **내 구성** 속성으로 **내 범주**범주에 표시 됩니다. 이 옵션을 선택 하면 설명 패널에 설명, **내 설명이**표시 됩니다.
+ 구성 `MyConfigProp` 속성은 구성 속성 페이지의 **내 구성** 속성으로 **내 범주** 범주에 표시 됩니다. 이 옵션을 선택 하면 설명 패널에 설명, **내 설명이** 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [속성 페이지 추가 및 제거](../../extensibility/adding-and-removing-property-pages.md)
 - [프로젝트](../../extensibility/internals/projects.md)
 - [템플릿 디렉터리 설명(.Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

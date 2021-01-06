@@ -1,5 +1,7 @@
 ---
 title: 등록 및 선택 (소스 제어 VSPackage) | Microsoft Docs
+description: Visual Studio를 사용 하 여 소스 제어 VSPackage를 등록 하는 방법 및 등록 된 여러 소스 제어 패키지에서 로드할 패키지를 선택 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705715"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877366"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 소스 제어 VSPackage를에 노출 하려면 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 둘 이상의 소스 제어 VSPackage가 등록 된 경우 사용자는 적절 한 시간에 로드할 VSPackage를 선택할 수 있습니다. Vspackage에 대 한 자세한 내용 및 등록 방법에 대 한 자세한 내용은 [vspackage](../../extensibility/internals/vspackages.md) 를 참조 하세요.
@@ -24,7 +26,7 @@ ms.locfileid: "80705715"
 ## <a name="registering-a-source-control-package"></a>소스 제어 패키지 등록
  원본 제어 패키지는 환경에서 해당 패키지를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 찾고 지원 되는 기능을 쿼리할 수 있도록 등록 됩니다. 이는 해당 기능 또는 명령이 필요 하거나 명시적으로 요청 된 경우에만 패키지의 인스턴스가 생성 되는 지연 로드 체계에 따라 결정 됩니다.
 
- Vspackage 레지스트리 키 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio x. Y에 정보를 저장 합니다 \\ *.* 여기서 *x* 는 주 버전 번호이 고 *Y* 는 부 버전 번호입니다. 이 연습에서는 여러 버전의를 함께 설치할 수 있는 기능을 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ Vspackage 레지스트리 키 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y* 에 정보를 저장 합니다. 여기서 *x* 는 주 버전 번호이 고 *Y* 는 부 버전 번호입니다. 이 연습에서는 여러 버전의를 함께 설치할 수 있는 기능을 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  UI (사용자 인터페이스)는 소스 제어 Vspackage 뿐만 아니라 원본 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 어댑터 패키지를 통해 설치 된 여러 소스 제어 플러그 인에서의 선택을 지원 합니다. 한 번에 하나의 활성 소스 제어 플러그 인 또는 VSPackage 있을 수 있습니다. 그러나 아래에 설명 된 것 처럼 IDE는 자동 솔루션 기반 패키지 교환 메커니즘을 통해 소스 제어 플러그 인과 Vspackage 간을 전환할 수 있습니다. 이 선택 메커니즘을 사용 하도록 설정 하려면 소스 제어 VSPackage 일부에 몇 가지 요구 사항이 있습니다.
 
@@ -60,7 +62,7 @@ ms.locfileid: "80705715"
   소스 제어 VSPackage은 실제로 사용 될 때만 필요한 구성 요소를 로드 해야 합니다 (지연 된 로드 라고도 함).
 
 ### <a name="automatic-solution-based-vspackage-swapping"></a>자동 솔루션 기반 VSPackage 스와핑
- 원본 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 범주 아래의 **옵션** 대화 상자를 통해 소스 제어 vspackage를 수동으로 **Source Control** 바꿀 수 있습니다. 자동 솔루션 기반 패키지 스와핑은 해당 솔루션이 열릴 때 특정 솔루션에 대해 지정 된 소스 제어 패키지가 자동으로 활성으로 설정 됨을 의미 합니다. 모든 소스 제어 패키지는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> 및를 구현 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 플러그 인 (소스 제어 플러그 인 API 구현) 및 소스 제어 Vspackage 간의 전환을 처리 합니다.
+ 원본 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 범주 아래의 **옵션** 대화 상자를 통해 소스 제어 vspackage를 수동으로  바꿀 수 있습니다. 자동 솔루션 기반 패키지 스와핑은 해당 솔루션이 열릴 때 특정 솔루션에 대해 지정 된 소스 제어 패키지가 자동으로 활성으로 설정 됨을 의미 합니다. 모든 소스 제어 패키지는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> 및를 구현 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 제어 플러그 인 (소스 제어 플러그 인 API 구현) 및 소스 제어 Vspackage 간의 전환을 처리 합니다.
 
  원본 제어 어댑터 패키지는 소스 제어 플러그 인 API 기반 플러그 인으로 전환 하는 데 사용 됩니다. 중간 소스 제어 어댑터 패키지로 전환 하 고 활성 또는 비활성으로 설정 해야 하는 원본 제어 플러그 인을 결정 하는 프로세스는 사용자에 게 투명 합니다. 원본 제어 플러그 인이 활성 상태인 경우 어댑터 패키지는 항상 활성 상태입니다. 두 소스 제어 플러그 인을 전환 하 여 플러그 인 DLL을 로드 하 고 언로드할 수 있습니다. 그러나 소스 제어 VSPackage로 전환 하는 경우에는 IDE와 상호 작용 하 여 적절 한 VSPackage를 로드 해야 합니다.
 
