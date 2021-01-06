@@ -1,5 +1,7 @@
 ---
 title: VS 셸에 VSPackage 파일 위치 지정 | Microsoft Docs
+description: Visual Studio에서 VSPackage를 로드 하기 위해 어셈블리 DLL을 찾을 수 있도록 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f112da4e79bff06d12472f0af7a3fe47b2f25da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e59bea4894d6b0014542ea2a32bf6c73bc8d797c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704971"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877860"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VSPackage 파일 위치를 VS Shell에 지정
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하기 위해 어셈블리 DLL을 찾을 수 있어야 합니다. 다음 표에서 설명 하는 것 처럼 다양 한 방법으로 찾을 수 있습니다.

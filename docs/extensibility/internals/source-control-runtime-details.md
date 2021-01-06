@@ -1,5 +1,7 @@
 ---
 title: 소스 제어 런타임 세부 정보 | Microsoft Docs
+description: 사용자가 소스 제어에서 프로젝트에 파일을 추가 하거나 자동화 컨트롤러를 통해 프로젝트를 소스 제어에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ce5e822ec7360b3b1a4010d250a4349443c142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe1e0e915a28412fcfd411e72b6d622e065b8f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705047"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877977"
 ---
 # <a name="source-control-runtime-details"></a>소스 제어 런타임 세부 정보
 사용자가 프로젝트에서 소스 제어에 파일을 추가 하거나 마법사와 같은 자동화 컨트롤러를 통해 프로젝트를 소스 제어에 추가 합니다. 프로젝트가 소스 제어에서 사용할 수 있도록 지정 되지 않습니다. 원본 제어를 지원 하지만 수동으로 추가 해야 합니다.

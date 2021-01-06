@@ -1,5 +1,6 @@
 ---
 title: 편집기 확장과 함께 셸 명령 사용
+description: 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰에 장식을 추가 하는 방법에 대해 알아봅니다. VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,25 +12,25 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33886b170a8e0138a199f5d7cb51467875c8c3c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037473"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877821"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있습니다. 이 연습에서는 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰에 장식을 추가 하는 방법을 보여 줍니다.
 
  이 연습에서는 MEF (Managed Extensibility Framework) 구성 요소 부분과 함께 VSPackage를 사용 하는 방법을 보여 줍니다. 메뉴 명령을 Visual Studio 셸에 등록 하려면 VSPackage를 사용 해야 합니다. 명령을 사용 하 여 MEF 구성 요소 부분에 액세스할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
  **도구** 메뉴에 **장식 추가** 라는 메뉴 명령을 배치 하는 VSPackage를 만듭니다.
 
-1. 이라는 c # VSIX 프로젝트를 만들고 `MenuCommandTest` 사용자 지정 명령 항목 템플릿 이름 **addadornment**을 추가 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
+1. 이라는 c # VSIX 프로젝트를 만들고 `MenuCommandTest` 사용자 지정 명령 항목 템플릿 이름 **addadornment** 을 추가 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
 2. MenuCommandTest 라는 솔루션이 열립니다. MenuCommandTestPackage 파일은 메뉴 명령을 만들고 **도구** 메뉴에 배치 하는 코드를 포함 합니다. 이 시점에서 명령은 메시지 상자를 표시 하기만 하면 됩니다. 이후 단계에서는이를 변경 하 여 주석 장식을 표시 하는 방법을 보여 줍니다.
 
@@ -39,15 +40,15 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>명령 확장에 MEF 확장 추가
 
-1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 클릭 한 다음 **새 프로젝트**를 클릭 합니다. **새 프로젝트 추가** 대화 상자에서 **Visual c #** 의 **확장성** 을 클릭 한 다음 **VSIX 프로젝트**를 클릭 합니다. 프로젝트 이름을 `CommentAdornmentTest`로 지정합니다.
+1. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 클릭 한 다음 **새 프로젝트** 를 클릭 합니다. **새 프로젝트 추가** 대화 상자에서 **Visual c #** 의 **확장성** 을 클릭 한 다음 **VSIX 프로젝트** 를 클릭 합니다. 프로젝트 이름을 `CommentAdornmentTest`로 지정합니다.
 
 2. 이 프로젝트는 강력한 이름의 VSPackage 어셈블리와 상호 작용 하므로 어셈블리에 서명 해야 합니다. VSPackage 어셈블리에 대해 이미 생성 된 키 파일을 다시 사용할 수 있습니다.
 
     1. 프로젝트 속성을 열고 **서명** 탭을 선택 합니다.
 
-    2. **어셈블리 서명**을 선택 합니다.
+    2. **어셈블리 서명** 을 선택 합니다.
 
-    3. **강력한 이름 키 파일 선택**에서 MenuCommandTest 어셈블리에 대해 생성 된 *key.snk* 파일을 선택 합니다.
+    3. **강력한 이름 키 파일 선택** 에서 MenuCommandTest 어셈블리에 대해 생성 된 *key.snk* 파일을 선택 합니다.
 
 ## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>VSPackage 프로젝트에서 MEF 확장을 참조 하세요.
  VSPackage에 MEF 구성 요소를 추가 하기 때문에 매니페스트에서 두 종류의 자산을 모두 지정 해야 합니다.
@@ -59,19 +60,19 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 
 1. MenuCommandTest 프로젝트의 VSIX 매니페스트 편집기에서 *source.extension.vsixmanifest* 파일을 엽니다.
 
-2. **자산** 탭에서 **새로 만들기**를 클릭 합니다.
+2. **자산** 탭에서 **새로 만들기** 를 클릭 합니다.
 
-3. **유형** 목록에서 **VisualStudio**을 선택 합니다.
+3. **유형** 목록에서 **VisualStudio** 을 선택 합니다.
 
-4. **원본** 목록에서 **현재 솔루션의 프로젝트**를 선택 합니다.
+4. **원본** 목록에서 **현재 솔루션의 프로젝트** 를 선택 합니다.
 
-5. **프로젝트** 목록에서 **CommentAdornmentTest**를 선택 합니다.
+5. **프로젝트** 목록에서 **CommentAdornmentTest** 를 선택 합니다.
 
 6. *Source.extension.vsixmanifest* 파일을 저장 하 고 닫습니다.
 
 7. MenuCommandTest 프로젝트에 CommentAdornmentTest 프로젝트에 대 한 참조가 있는지 확인 합니다.
 
-8. CommentAdornmentTest 프로젝트에서 프로젝트를 설정 하 여 어셈블리를 생성 합니다. **솔루션 탐색기**에서 프로젝트를 선택 하 고 **속성** 창에서 **OutputDirectory로 빌드 출력 복사** 속성을 찾은 다음 **true**로 설정 합니다.
+8. CommentAdornmentTest 프로젝트에서 프로젝트를 설정 하 여 어셈블리를 생성 합니다. **솔루션 탐색기** 에서 프로젝트를 선택 하 고 **속성** 창에서 **OutputDirectory로 빌드 출력 복사** 속성을 찾은 다음 **true** 로 설정 합니다.
 
 ## <a name="define-a-comment-adornment"></a>주석 장식 정의
  주석 장식 자체는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 선택한 텍스트를 추적 하는와 텍스트의 작성자와 설명을 나타내는 일부 문자열로 구성 됩니다.
@@ -109,7 +110,7 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 4. 파일은 라는 클래스를 포함 해야 합니다 `CommentAdornment` .
 
     ```csharp
-    internal class CommentAdornment
+    internal class CommentAdornment
     ```
 
 5. `CommentAdornment`클래스에 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , 작성자 및 설명의 3 개 필드를 추가 합니다.
@@ -162,9 +163,9 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
     ```csharp
     private Geometry textGeometry;
     private Grid commentGrid;
-    private static Brush brush;
-    private static Pen solidPen;
-    private static Pen dashPen;
+    private static Brush brush;
+    private static Pen solidPen;
+    private static Pen dashPen;
     ```
 
 5. 주석 장식을 정의 하는 생성자를 추가 하 고 관련 텍스트를 추가 합니다.
@@ -239,7 +240,7 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 6. 또한 <xref:System.Windows.Controls.Panel.OnRender%2A> 장식을 그리는 이벤트 처리기를 구현 합니다.
 
     ```csharp
-    protected override void OnRender(DrawingContext dc)
+    protected override void OnRender(DrawingContext dc)
     {
         base.OnRender(dc);
         if (this.textGeometry != null)
@@ -276,7 +277,7 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 4. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>의 정적 이벤트를 호출 하도록 메서드를 구현 합니다 `Create()` `CommentAdornmentManager` .
 
     ```csharp
-    public void TextViewCreated(IWpfTextView textView)
+    public void TextViewCreated(IWpfTextView textView)
     {
         CommentAdornmentManager.Create(textView);
     }
@@ -285,16 +286,16 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 5. 명령을 실행 하는 데 사용할 수 있는 메서드를 추가 합니다.
 
     ```csharp
-    static public void Execute(IWpfTextViewHost host)
+    static public void Execute(IWpfTextViewHost host)
     {
         IWpfTextView view = host.TextView;
-        //Add a comment on the selected text. 
+        //Add a comment on the selected text. 
         if (!view.Selection.IsEmpty)
         {
             //Get the provider for the comment adornments in the property bag of the view.
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));
 
-            //Add some arbitrary author and comment text. 
+            //Add some arbitrary author and comment text. 
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string comment = "Four score....";
 
@@ -356,7 +357,7 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
     private CommentAdornmentProvider(ITextBuffer buffer)
     {
         this.buffer = buffer;
-        //listen to the Changed event so we can react to deletions. 
+        //listen to the Changed event so we can react to deletions. 
         this.buffer.Changed += OnBufferChanged;
     }
 
@@ -365,9 +366,9 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 6. `Create()` 메서드를 추가합니다.
 
     ```csharp
-    public static CommentAdornmentProvider Create(IWpfTextView view)
+    public static CommentAdornmentProvider Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
     }
 
     ```
@@ -375,11 +376,11 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 7. `Detach()` 메서드를 추가합니다.
 
     ```csharp
-    public void Detach()
+    public void Detach()
     {
         if (this.buffer != null)
         {
-            //remove the Changed listener 
+            //remove the Changed listener 
             this.buffer.Changed -= OnBufferChanged;
             this.buffer = null;
         }
@@ -394,25 +395,25 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 9. 이벤트에 대 한 선언을 추가 `CommentsChanged` 합니다.
 
     ```csharp
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
     ```
 
 10. 메서드를 만들어 `Add()` 장식을 추가 합니다.
 
     ```csharp
-    public void Add(SnapshotSpan span, string author, string text)
+    public void Add(SnapshotSpan span, string author, string text)
     {
         if (span.Length == 0)
-            throw new ArgumentOutOfRangeException("span");
+            throw new ArgumentOutOfRangeException("span");
         if (author == null)
-            throw new ArgumentNullException("author");
+            throw new ArgumentNullException("author");
         if (text == null)
-            throw new ArgumentNullException("text");
+            throw new ArgumentNullException("text");
 
         //Create a comment adornment given the span, author and text.
         CommentAdornment comment = new CommentAdornment(span, author, text);
 
-        //Add it to the list of comments. 
+        //Add it to the list of comments. 
         this.comments.Add(comment);
 
         //Raise the changed event.
@@ -426,19 +427,19 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 11. 메서드를 추가 `RemoveComments()` 합니다.
 
     ```csharp
-    public void RemoveComments(SnapshotSpan span)
+    public void RemoveComments(SnapshotSpan span)
     {
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;
 
         //Get a list of all the comments that are being kept
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);
 
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
             {
-                //Raise the change event to delete this comment. 
+                //Raise the change event to delete this comment. 
                 if (commentsChanged != null)
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));
             }
@@ -456,24 +457,24 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)
     {
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
                 overlappingComments.Add(comment);
         }
 
-        return new Collection<CommentAdornment>(overlappingComments);
+        return new Collection<CommentAdornment>(overlappingComments);
     }
     ```
 
 13. 다음과 같이 라는 클래스를 추가 `CommentsChangedEventArgs` 합니다.
 
     ```csharp
-    internal class CommentsChangedEventArgs : EventArgs
+    internal class CommentsChangedEventArgs : EventArgs
     {
-        public readonly CommentAdornment CommentAdded;
+        public readonly CommentAdornment CommentAdded;
 
-        public readonly CommentAdornment CommentRemoved;
+        public readonly CommentAdornment CommentRemoved;
 
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)
         {
@@ -510,9 +511,9 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 4. 일부 전용 필드를 추가 합니다.
 
     ```csharp
-    private readonly IWpfTextView view;
-    private readonly IAdornmentLayer layer;
-    private readonly CommentAdornmentProvider provider;
+    private readonly IWpfTextView view;
+    private readonly IAdornmentLayer layer;
+    private readonly CommentAdornmentProvider provider;
     ```
 
 5. 관리자를 구독 하는 생성자를 및 이벤트에 추가 하 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 고 이벤트에도 추가 `CommentsChanged` 합니다. 관리자가 정적 메서드에 의해 인스턴스화되기 때문에 생성자는 private입니다 `Create()` .
@@ -534,22 +535,22 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 6. `Create()`공급자를 가져오는 메서드를 추가 하거나 필요한 경우 하나를 만듭니다.
 
     ```csharp
-    public static CommentAdornmentManager Create(IWpfTextView view)
+    public static CommentAdornmentManager Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
     }
     ```
 
 7. 처리기를 추가 `CommentsChanged` 합니다.
 
     ```csharp
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
     {
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
         if (e.CommentRemoved != null)
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);
 
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
         if (e.CommentAdded != null)
             this.DrawComment(e.CommentAdded);
     }
@@ -558,7 +559,7 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 8. 처리기를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> 합니다.
 
     ```csharp
-    private void OnClosed(object sender, EventArgs e)
+    private void OnClosed(object sender, EventArgs e)
     {
         this.provider.Detach();
         this.view.LayoutChanged -= OnLayoutChanged;
@@ -569,19 +570,19 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 9. 처리기를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 합니다.
 
     ```csharp
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
     {
         //Get all of the comments that intersect any of the new or reformatted lines of text.
         List<CommentAdornment> newComments = new List<CommentAdornment>();
 
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
-        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
+        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
         foreach (Span span in e.NewOrReformattedSpans)
         {
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));
         }
 
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
         //Sort the list and skip duplicates.
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });
 
@@ -686,11 +687,11 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 
 2. 텍스트 파일을 만듭니다. 텍스트를 입력 한 다음 선택 합니다.
 
-3. **도구** 메뉴에서 **장식 추가 호출**을 클릭 합니다. 풍선을 텍스트 창의 오른쪽에 표시 하 고 다음 텍스트와 유사한 텍스트를 포함 해야 합니다.
+3. **도구** 메뉴에서 **장식 추가 호출** 을 클릭 합니다. 풍선을 텍스트 창의 오른쪽에 표시 하 고 다음 텍스트와 유사한 텍스트를 포함 해야 합니다.
 
      YourUserName
 
      Fourscore...
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

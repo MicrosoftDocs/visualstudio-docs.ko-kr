@@ -1,5 +1,7 @@
 ---
 title: 템플릿 디렉터리 설명 (. Vsdir) 파일 | Microsoft Docs
+description: 템플릿 디렉터리 설명 파일을 사용 하 여 Visual Studio IDE에서 프로젝트와 연결 된 폴더, .vsz 파일 및 템플릿을 표시 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704695"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877730"
 ---
 # <a name="template-directory-description-vsdir-files"></a>템플릿 디렉터리 설명(.Vsdir) 파일
 템플릿 디렉터리 설명 파일 (.vsdir)은 IDE (통합 개발 환경)가 대화 상자에서 프로젝트와 연결 된 폴더, 마법사 .vsz 파일 및 템플릿 파일을 표시할 수 있도록 하는 텍스트 파일입니다. 내용에는 파일 또는 폴더 당 하나의 레코드가 포함 됩니다. 여러 폴더, 마법사 또는 템플릿 파일을 설명 하기 위해 일반적으로 하나의 .vsdir 파일만 제공 되지만 참조 된 위치의 모든 .vsdir 파일이 병합 됩니다.

@@ -1,5 +1,7 @@
 ---
 title: '테스트 영역 2: 소스 제어에서 가져오기 | Microsoft Docs'
+description: 이 테스트 영역에서는 Get을 사용 하 여 버전 저장소에서 항목을 검색 하는 테스트 사례를 다룹니다. 이러한 테스트 사례는 로컬 및 웹 프로젝트에 모두 적용할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704596"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877704"
 ---
 # <a name="test-area-2-get-from-source-control"></a>테스트 영역 2: 소스 제어에서 가져오기
 이 테스트 영역은 Get 명령을 통해 버전 저장소에서 항목을 검색 하는 테스트 사례를 다룹니다. 이러한 테스트 사례는 로컬 및 웹 프로젝트에 모두 적용할 수 있습니다.

@@ -1,5 +1,7 @@
 ---
 title: 빌드에 대 한 프로젝트 구성 | Microsoft Docs
+description: 새 프로젝트 형식의 솔루션 구성 대화 상자에서 특정 솔루션에 대 한 솔루션 구성 목록을 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706738"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878003"
 ---
 # <a name="project-configuration-for-building"></a>빌드를 위한 프로젝트 구성
 지정 된 솔루션에 대 한 솔루션 구성 목록은 솔루션 구성 대화 상자에서 관리 합니다.
@@ -55,7 +57,7 @@ ms.locfileid: "80706738"
 
  또한 프로젝트 종속성 창에서 표를 제공할 수 있습니다. 자세한 내용은 [속성 표시 그리드](../../extensibility/internals/properties-display-grid.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)

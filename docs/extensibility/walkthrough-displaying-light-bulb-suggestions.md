@@ -1,5 +1,7 @@
 ---
 title: '연습: 전구 제안 표시 | Microsoft Docs'
+description: 현재 단어에 표시 되 고이 연습을 사용 하 여 두 가지 제안 된 작업을 포함 하는 Visual Studio 편집기에서 전구를 만드는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508953"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877964"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>연습: 전구 제안 표시
 Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 확장 되는 아이콘입니다. 예를 들어 기본 제공 코드 분석기 또는 코드 리팩터링에 의해 식별 되는 문제에 대 한 수정 등이 있습니다.
 
- Visual c # 및 Visual Basic 편집기에서 .NET Compiler Platform ("Roslyn")를 사용 하 여 light 전구을 자동으로 표시 하는 작업으로 사용자 고유의 코드 분석기를 작성 하 고 패키지할 수도 있습니다. 자세한 내용은 다음을 참조하십시오.
+ Visual c # 및 Visual Basic 편집기에서 .NET Compiler Platform ("Roslyn")를 사용 하 여 light 전구을 자동으로 표시 하는 작업으로 사용자 고유의 코드 분석기를 작성 하 고 패키지할 수도 있습니다. 자세한 내용은 다음을 참조하세요.
 
 - [방법: c # 진단 및 코드 수정 작성](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -36,12 +38,12 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 
   Light 전구를 사용 하 여 고유한 제안 조치를 제공할 수 있습니다. 예를 들어 여는 중괄호를 새 줄로 이동 하거나 앞 줄의 끝으로 이동 하는 작업을 제공할 수 있습니다. 다음 연습에서는 현재 단어에 표시 되 고 두 개의 제안 동작 ( **대문자로 변환** 및 소문자로 **변환**)이 있는 전구를 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기
 
-1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트**를 차례로 선택 합니다.) 솔루션 이름을로 `LightBulbTest` 합니다.
+1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트** 를 차례로 선택 합니다.) 솔루션 이름을로 `LightBulbTest` 합니다.
 
 2. **편집기 분류자** 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)를 참조 하세요.
 
@@ -51,7 +53,7 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 
      *Microsoft.VisualStudio.Language.Intellisense*
 
-5. 새 클래스 파일을 추가 하 고 이름을 **LightBulbTest**로 추가 합니다.
+5. 새 클래스 파일을 추가 하 고 이름을 **LightBulbTest** 로 추가 합니다.
 
 6. 다음 using 지시문을 추가합니다.
 
@@ -102,7 +104,7 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
     ```
 
 ## <a name="implement-the-isuggestedactionsource"></a>ISuggestedActionSource 구현
- 제안 된 작업 원본은 제안 된 작업 집합을 수집 하 고 올바른 컨텍스트에 추가 하는 작업을 담당 합니다. 이 경우 컨텍스트는 현재 단어 이며 제안 된 작업은 **UpperCaseSuggestedAction** 및 **LowerCaseSuggestedAction**입니다 .이에 대해서는 다음 섹션에서 설명 합니다.
+ 제안 된 작업 원본은 제안 된 작업 집합을 수집 하 고 올바른 컨텍스트에 추가 하는 작업을 담당 합니다. 이 경우 컨텍스트는 현재 단어 이며 제안 된 작업은 **UpperCaseSuggestedAction** 및 **LowerCaseSuggestedAction** 입니다 .이에 대해서는 다음 섹션에서 설명 합니다.
 
 1. 을 구현 하는 **TestSuggestedActionsSource** 클래스를 추가 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 합니다.
 
@@ -222,8 +224,8 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 2. 두 개의 클래스를 만듭니다. 첫 번째 클래스의 이름은 `UpperCaseSuggestedAction` 이고 두 번째 클래스의 이름은 `LowerCaseSuggestedAction`입니다. 두 클래스 모두 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>를 구현합니다.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      한 클래스는 <xref:System.String.ToUpper%2A>를 호출하고 다른 클래스는 <xref:System.String.ToLower%2A>를 호출한다는 점을 제외하고 두 클래스는 유사합니다. 다음 단계에서는 대문자 동작 클래스만 설명하지만 두 클래스를 모두 구현해야 합니다. 대문자 동작 구현 단계를 소문자 동작 구현 패턴으로 사용합니다.
@@ -243,8 +245,8 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,14 +321,14 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 9. 범위에 있는 텍스트를 해당 대문자로 바꾸어 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 메서드를 구현합니다.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }
     ```
 
     > [!WARNING]
-    > 전구 작업 **호출** 메서드는 UI를 표시 하지 않을 것으로 예상 됩니다. 작업에서 새 UI (예: 미리 보기 또는 선택 대화 상자)를 표시 하는 경우 **invoke** 메서드 내에서 직접 ui를 표시 하지 말고 **호출**에서 반환한 후 ui를 표시 하도록 예약 합니다.
+    > 전구 작업 **호출** 메서드는 UI를 표시 하지 않을 것으로 예상 됩니다. 작업에서 새 UI (예: 미리 보기 또는 선택 대화 상자)를 표시 하는 경우 **invoke** 메서드 내에서 직접 ui를 표시 하지 말고 **호출** 에서 반환한 후 ui를 표시 하도록 예약 합니다.
 
 10. 구현을 완료 하려면 및 메서드를 추가 `Dispose()` 합니다 `TryGetTelemetryId()` .
 

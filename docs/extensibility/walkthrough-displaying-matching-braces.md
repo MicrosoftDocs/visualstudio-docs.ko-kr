@@ -1,5 +1,7 @@
 ---
 title: '연습: 짝이 되는 중괄호 표시 | Microsoft Docs'
+description: 이 연습을 사용 하 여 언어의 컨텍스트에서 중괄호를 정의 하 고 텍스트 콘텐츠 형식에 중괄호 일치 태그를 적용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904839"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877951"
 ---
 # <a name="walkthrough-display-matching-braces"></a>연습: 일치 하는 중괄호 표시
 일치 시키려는 중괄호를 정의 하 고 캐럿이 중괄호 중 하나에 있을 때 일치 하는 중괄호에 텍스트 표식 태그를 추가 하 여 중괄호 일치와 같은 언어 기반 기능을 구현 합니다. 언어의 컨텍스트에서 중괄호를 정의 하 고, 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고, 해당 형식에만 태그를 적용 하 여 기존 콘텐츠 형식 (예: "텍스트")에 태그를 적용할 수 있습니다. 다음 연습에서는 "text" 콘텐츠 형식에 중괄호 일치 태그를 적용 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기

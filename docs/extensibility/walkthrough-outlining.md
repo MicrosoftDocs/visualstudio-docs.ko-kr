@@ -1,5 +1,7 @@
 ---
 title: '연습: 개요 | Microsoft Docs'
+description: 언어 서비스의 컨텍스트나 사용자 고유의 파일 이름 확장명 및 콘텐츠 형식에 대해 개요 영역을 정의 하 고 표시 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,17 +15,17 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508927"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877899"
 ---
 # <a name="walkthrough-outlining"></a>연습: 개요
 확장 하거나 축소할 텍스트 영역의 종류를 정의 하 여 개요와 같은 언어 기반 기능을 설정 합니다. 언어 서비스의 컨텍스트에서 영역을 정의 하거나 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식에만 지역 정의를 적용 하거나 기존 콘텐츠 형식 (예: "텍스트")에 지역 정의를 적용할 수 있습니다. 이 연습에서는 개요 영역을 정의 하 고 표시 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기
@@ -134,5 +136,5 @@ ms.locfileid: "89508927"
 
 4. 두 괄호를 모두 포함 하는 개요 영역이 있어야 합니다. 왼쪽 괄호 왼쪽에 있는 빼기 기호를 클릭 하 여 개요 영역을 축소할 수 있습니다. 영역이 축소 되 면 줄임표 기호 (*...*)가 축소 된 영역의 왼쪽에 표시 되 고 텍스트 **가리키기 텍스트가** 포함 된 팝업은 줄임표 위로 포인터를 이동할 때 표시 되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

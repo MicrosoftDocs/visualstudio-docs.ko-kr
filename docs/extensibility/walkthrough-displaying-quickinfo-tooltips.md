@@ -1,5 +1,7 @@
 ---
 title: '연습: QuickInfo 도구 설명 표시 | Microsoft Docs'
+description: 이 연습을 사용 하 여 텍스트 콘텐츠에 대 한 QuickInfo를 표시 하는 방법을 알아봅니다. QuickInfo 메서드 시그니처와 메서드 이름에 대 한 설명을 표시 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904829"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877938"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>연습: QuickInfo 도구 설명 표시
 QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메서드 시그니처와 설명을 표시 하는 IntelliSense 기능입니다. QuickInfo 설명을 제공 하려는 식별자를 정의 하 고 콘텐츠를 표시할 도구 설명을 만들어 QuickInfo와 같은 언어 기반 기능을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 QuickInfo를 정의 하거나 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식에 대해서만 QuickInfo를 표시 하거나 기존 콘텐츠 형식 (예: "텍스트")에 대 한 QuickInfo를 표시할 수 있습니다. 이 연습에서는 "text" 콘텐츠 형식에 대해 QuickInfo를 표시 하는 방법을 보여 줍니다.
@@ -37,14 +39,14 @@ QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메
 
   이 예제에서는 QuickInfo 소스가 하드 코드 된 메서드 이름 및 설명 목록을 사용 하지만, 전체 구현에서는 언어 서비스 및 언어 설명서에서 해당 콘텐츠를 제공 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치할 필요가 없습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
 
 ### <a name="to-create-a-mef-project"></a>MEF 프로젝트를 만들려면
 
-1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트**를 차례로 선택 합니다.) 솔루션 이름을로 `QuickInfoTest` 합니다.
+1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트** 를 차례로 선택 합니다.) 솔루션 이름을로 `QuickInfoTest` 합니다.
 
 2. 편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)를 참조 하세요.
 
@@ -57,7 +59,7 @@ QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메
 
 1. 클래스 파일을 추가하고 이름을 `TestQuickInfoSource`로 지정합니다.
 
-2. *VisualStudio*에 대 한 참조를 추가 합니다.
+2. *VisualStudio* 에 대 한 참조를 추가 합니다.
 
 3. 다음 가져오기를 추가합니다.
 

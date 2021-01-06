@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식 아키텍처 | Microsoft Docs
+description: 이 문서는 Visual Studio에서 프로젝트 형식의 아키텍처에 대 한 자세한 정보를 포함 하는 문서에 연결 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecde348ce52bdd354df61855d9907acf85900be2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706315"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877782"
 ---
 # <a name="project-types-architecture"></a>프로젝트 형식 아키텍처
 이 섹션에는의 프로젝트 형식 아키텍처에 대 한 자세한 정보가 포함 되어 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -37,7 +39,7 @@ ms.locfileid: "80706315"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 계층 및 선택 컨텍스트를 사용 하 여 일관적이 고 간소화 된 사용자 환경을 제공 하는 방법을 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)
 
  프로젝트 하위 유형을 사용 하 여 및의 프로젝트 시스템 동작을 사용자 지정 하는 방법을 설명 합니다 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] .

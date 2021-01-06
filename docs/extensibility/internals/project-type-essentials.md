@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식 Essentials | Microsoft Docs
+description: 프로젝트 형식을 만들어야 하는 경우와 프로젝트 하위 유형을 사용 하 여 기존 프로젝트 형식을 확장할 수 있는 경우에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012063"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877808"
 ---
 # <a name="project-type-essentials"></a>프로젝트 형식 필수 항목
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에는 또는과 같은 언어에 대 한 여러 가지 프로젝트 형식이 포함 되어 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 고유의 프로젝트 형식을 만들 수도 있습니다.
 
- 사용자 지정 명령, 편집기 또는 도구 창을에 추가 하려는 경우에는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 새 프로젝트 형식을 만들지 않고도이 작업을 수행할 수 있습니다. 자세한 내용은 아래 항목을 참조하세요.
+ 사용자 지정 명령, 편집기 또는 도구 창을에 추가 하려는 경우에는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 새 프로젝트 형식을 만들지 않고도이 작업을 수행할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.
 
 - [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)
 
@@ -58,11 +60,11 @@ ms.locfileid: "90012063"
 
 - 프로젝트 형식에서는 파일을 전혀 사용할 필요가 없습니다. 예를 들어, 프로젝트 형식에서 모든 데이터를 데이터베이스에 저장할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식에서 프로젝트 및 프로젝트 항목의 데이터를 유지 하는 방법을 완벽 하 게 제어할 수 있습니다. 자세한 내용은 [프로젝트 형식 디자인 결정](../../extensibility/internals/project-type-design-decisions.md)을 참조 하세요.
 
-- 프로젝트 형식은 프로젝트 *팩터리*를 제공 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .이 개체는가 해당 프로젝트 형식을 기반으로 하는 프로젝트를 열거나 만들도록 지시 될 때마다 프로젝트 형식의 인스턴스를 만드는 개체입니다. 자세한 내용은 [프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)를 참조 하세요.
+- 프로젝트 형식은 프로젝트 *팩터리* 를 제공 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .이 개체는가 해당 프로젝트 형식을 기반으로 하는 프로젝트를 열거나 만들도록 지시 될 때마다 프로젝트 형식의 인스턴스를 만드는 개체입니다. 자세한 내용은 [프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)를 참조 하세요.
 
 - 프로젝트 형식은 프로젝트 및 프로젝트 항목에 대 한 템플릿을 제공 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자가 새 프로젝트를 만들고 기존 프로젝트에 새 항목을 추가할 때 템플릿을 사용 합니다. 자세한 내용은 [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)를 참조 하세요.
 
 - 프로젝트 형식은 디버그 및 릴리스와 같은 여러 구성을 지원할 수 있습니다. 사용자는 사용자가 제공 하는 속성 페이지를 사용 하 여 프로젝트의 다양 한 구성을 변경할 수 있습니다. 자세한 내용은 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [프로젝트 형식 배포](../../extensibility/internals/deploying-project-types.md)

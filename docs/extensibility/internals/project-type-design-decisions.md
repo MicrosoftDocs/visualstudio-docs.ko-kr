@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 형식 디자인 결정 | Microsoft Docs
+description: 새 프로젝트 형식을 만들어 Visual Studio를 확장 하기 전에 항목, 프로젝트 파일 지 속성 및 약정 정비공 디자인 결정에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706367"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877799"
 ---
 # <a name="project-type-design-decisions"></a>프로젝트 형식 디자인 결정
 새 프로젝트 형식을 만들기 전에 프로젝트 형식에 대 한 몇 가지 디자인 결정을 내려야 합니다. 프로젝트에 포함 되는 항목의 형식, 프로젝트 파일이 유지 되는 방법 및 사용할 약정 모델을 결정 해야 합니다.
@@ -56,7 +58,7 @@ ms.locfileid: "80706367"
 
  트랜잭션 모드를 사용 하 여 데이터 개체를 열면 변경 내용이 메모리의 임시 위치에 저장 되 고 사용자가 수동으로 파일을 저장 하도록 선택할 때까지 커밋되지 않습니다. 이때 모든 변경 내용이 함께 발생 하거나 변경 내용이 적용 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)
 - [프로젝트 지속성](../../extensibility/internals/project-persistence.md)

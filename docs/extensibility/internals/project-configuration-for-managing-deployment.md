@@ -1,5 +1,7 @@
 ---
 title: 배포 관리를 위한 프로젝트 구성 | Microsoft Docs
+description: 디버깅 및 설치를 위해 예상 되는 위치에 배포 하는 방법과 Visual Studio에서 배포를 지 원하는 프로젝트를 지 원하는 두 가지 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62f7bf6535a89e46799ade88fe8976974b3019c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706706"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877990"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포 관리를 위한 프로젝트 구성
 배포는 디버깅 및 설치를 위해 빌드 프로세스에서 예상 위치로 출력 항목을 물리적으로 이동 하는 동작입니다. 예를 들어 웹 응용 프로그램은 로컬 컴퓨터에서 빌드한 다음 서버에 배치할 수 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "80706706"
 
   구성에서는 빌드 또는 배포 작업에 영향을 주는 종속성을 지정할 수 있습니다. 빌드 또는 배포 종속성은 구성 자체가 빌드하거나 배포 되기 전이나 후에 빌드해야 하거나 배포 해야 하는 프로젝트입니다. 프로젝트 간의 빌드 종속성은 인터페이스로 설명 되며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 인터페이스를 사용 하 여 종속성을 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 합니다. 자세한 내용은 [빌드하기 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)

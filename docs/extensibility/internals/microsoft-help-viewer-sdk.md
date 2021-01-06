@@ -1,5 +1,7 @@
 ---
 title: Microsoft 도움말 뷰어 SDK | Microsoft Docs
+description: 문서 만들기, 도움말 뷰어 콘텐츠 브랜딩 패키지 만들기 및 아티클 집합 배포와 같은 Visual Studio 도움말 뷰어 작업에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668861"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877847"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 
@@ -360,7 +362,7 @@ IDE의 도움말 메뉴 항목에서 **디버그 도움말 컨텍스트** 를 �
 
 다음 표에서 대괄호 사이에 표시 되는 모든 문자열은 인식 된 값으로 바꾸어야 하는 자리 표시자입니다. 예를 들어에서 \<meta name="Microsoft.Help.Locale" content="[language code]" /> "[언어 코드]"는 "en-us"와 같은 값으로 바꾸어야 합니다.
 
-| 속성 (HTML 표시) | Description |
+| 속성 (HTML 표시) | 설명 |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 하며 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 이 태그를 사용 하지 않으면 제품 로캘과 연결 된 단어 분리기 (지정 된 경우)를 사용 하 여 항목의 본문 텍스트가 인덱싱됩니다. 그렇지 않으면 en-us 단어 분리기가 사용 됩니다. 이 태그는 ISOC RFC 4646을 준수 합니다. Microsoft 도움말이 제대로 작동 하도록 하려면 일반 언어 특성 대신이 속성을 사용 합니다. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 다른 로캘이 사용 될 때이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 합니다. 카탈로그에 둘 이상의 언어로 된 콘텐츠가 포함 된 경우이 태그를 사용 합니다. 카탈로그의 여러 항목은 동일한 ID를 가질 수 있지만 각 항목은 고유한 TopicLocale를 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목은 목차에 표시 되는 항목입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다. |
@@ -445,7 +447,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 
 **Branding.xml**
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | 기능: | **CollapsibleArea** |
 | 사용: | 축소 콘텐츠 컨트롤 텍스트 확장 |
@@ -459,7 +461,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | ViewColorizedText | 색 보기 |
 | CombinedVBTabDisplayLanguage | Visual Basic (샘플) |
 | VBDeclaration | 선언 |
-| VBUsage | 사용 |
+| VBUsage | 사용량 |
 | 기능: | **사용자 의견, 바닥글 및 로고** |
 | 사용: | 고객이 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 수 있도록 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의. |
 | **요소** | **값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)** |

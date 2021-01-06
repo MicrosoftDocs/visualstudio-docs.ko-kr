@@ -1,5 +1,7 @@
 ---
 title: 속성 창 단추 | Microsoft Docs
+description: 속성 창 도구 모음에서 기본적으로 표시 되는 단추와 단추의 구현에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706167"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878016"
 ---
 # <a name="properties-window-buttons"></a>속성 창 단추
-개발 언어와 제품 유형에 따라 **속성** 창의 도구 모음에는 기본적으로 특정 단추가 표시 됩니다. 모든 경우에는 **항목별**, **사전순**, **속성**및 **속성 페이지** 단추가 표시 됩니다. Visual c # 및 Visual Basic에서는 **이벤트** 단추도 표시 됩니다. 특정 Visual C++ 프로젝트에서는 **vc + + 메시지** 와 **vc 재정의** 단추가 표시 됩니다. 다른 프로젝트 형식에 대 한 추가 단추가 표시 될 수 있습니다. **속성** 창에 있는 단추에 대 한 자세한 내용은 [속성 창](../../ide/reference/properties-window.md)을 참조 하세요.
+개발 언어와 제품 유형에 따라 **속성** 창의 도구 모음에는 기본적으로 특정 단추가 표시 됩니다. 모든 경우에는 **항목별**, **사전순**, **속성** 및 **속성 페이지** 단추가 표시 됩니다. Visual c # 및 Visual Basic에서는 **이벤트** 단추도 표시 됩니다. 특정 Visual C++ 프로젝트에서는 **vc + + 메시지** 와 **vc 재정의** 단추가 표시 됩니다. 다른 프로젝트 형식에 대 한 추가 단추가 표시 될 수 있습니다. **속성** 창에 있는 단추에 대 한 자세한 내용은 [속성 창](../../ide/reference/properties-window.md)을 참조 하세요.
 
 ## <a name="implementation-of-properties-window-buttons"></a>속성 창 단추 구현
  **항목별** 단추를 클릭 하면 Visual Studio에서 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 포커스가 있는 개체의 인터페이스를 호출 하 여 해당 속성을 범주별로 정렬 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 는 `IDispatch` **속성** 창에 표시 되는 개체에서 구현 됩니다.

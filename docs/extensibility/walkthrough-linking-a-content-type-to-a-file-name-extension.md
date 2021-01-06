@@ -1,5 +1,6 @@
 ---
 title: 콘텐츠 형식을 파일 이름 확장명에 연결
+description: 이 연습에서 편집기 Managed Extensibility Framework 확장을 사용 하 여 고유한 콘텐츠 형식을 파일 이름 확장명에 연결 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034665"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877912"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>연습: 파일 이름 확장명에 콘텐츠 형식 연결
 사용자 고유의 콘텐츠 형식을 정의 하 고 MEF (편집기 Managed Extensibility Framework) 확장을 사용 하 여 파일 이름 확장명을 연결할 수 있습니다. 일부 경우에는 파일 이름 확장명이 언어 서비스에 의해 이미 정의 되어 있습니다. 그러나 MEF에서 사용 하려면 콘텐츠 형식에 연결 해야 합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
 
-1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트**를 차례로 선택 합니다.) 솔루션 이름을로 `ContentTypeTest` 합니다.
+1. C # VSIX 프로젝트를 만듭니다. ( **새 프로젝트** 대화 상자에서 **Visual c #/확장성**, **VSIX 프로젝트** 를 차례로 선택 합니다.) 솔루션 이름을로 `ContentTypeTest` 합니다.
 
-2. **Source.extension.vsixmanifest** 파일에서 **자산** 탭으로 이동 하 여 **Type** 필드를 **VisualStudio**로 설정 하 고, **원본** 필드를 **현재 솔루션의 프로젝트로**설정 하 고, **프로젝트** 필드를 프로젝트 이름으로 설정 합니다.
+2. **Source.extension.vsixmanifest** 파일에서 **자산** 탭으로 이동 하 여 **Type** 필드를 **VisualStudio** 로 설정 하 고, **원본** 필드를 **현재 솔루션의 프로젝트로** 설정 하 고, **프로젝트** 필드를 프로젝트 이름으로 설정 합니다.
 
 ## <a name="define-the-content-type"></a>콘텐츠 형식 정의
 
@@ -72,7 +73,7 @@ ms.locfileid: "90034665"
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>파일 이름 확장명을 콘텐츠 형식에 연결 합니다.
 
-- 이 콘텐츠 형식을 파일 이름 확장명에 매핑하려면 확장명이. n a 인을 내보내고 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 콘텐츠 형식이 *.hid* "hid"입니다.
+- 이 콘텐츠 형식을 파일 이름 확장명에 매핑하려면 확장명이. n a 인을 내보내고 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 콘텐츠 형식이  "hid"입니다.
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -102,5 +103,5 @@ ms.locfileid: "90034665"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

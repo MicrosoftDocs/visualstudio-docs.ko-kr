@@ -1,5 +1,7 @@
 ---
 title: 명령줄을 사용 하 여 확장 게시
+description: 명령줄을 사용 하 여 Visual Studio Marketplace에 확장을 게시 하는 방법에 대해 알아봅니다 .이를 통해 개발자는 새 확장 및 업데이트 된 확장을 찾아볼 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904673"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877925"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 게시
 
 이 연습에서는 명령줄을 사용 하 여 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Marketplace에 확장을 추가 하면 개발자가 [**확장 및 업데이트**](../ide/finding-and-using-visual-studio-extensions.md) 대화 상자를 사용 하 여 새 확장과 업데이트 된 확장을 찾을 수 있습니다.
 
-VsixPublisher.exe는 Visual Studio 확장을 Marketplace에 게시 하기 위한 명령줄 도구입니다. $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe에서 액세스할 수 있습니다. 이 도구에서 사용할 수 있는 명령은 **게시**, **createpublisher**, **deletepublisher**, **deletepublisher**, **login**및 **logout**입니다.
+VsixPublisher.exe는 Visual Studio 확장을 Marketplace에 게시 하기 위한 명령줄 도구입니다. $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe에서 액세스할 수 있습니다. 이 도구에서 사용할 수 있는 명령은 **게시**, **createpublisher**, **deletepublisher**, **deletepublisher**, **login** 및 **logout** 입니다.
 
 ## <a name="commands"></a>명령
 
@@ -192,7 +194,7 @@ This is test extension.
 
 ## <a name="publishing-walkthrough"></a>연습 게시
 
-### <a name="prerequisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>필수 조건
 
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -266,7 +268,7 @@ This is test extension.
 
 2. **온라인** 을 클릭 한 다음 testpublish를 검색 합니다.
 
-3. **다운로드**를 클릭합니다. 그러면 확장이 설치 되도록 예약 됩니다.
+3. **다운로드** 를 클릭합니다. 그러면 확장이 설치 되도록 예약 됩니다.
 
 4. 설치를 완료 하려면 Visual Studio의 모든 인스턴스를 닫습니다.
 
@@ -290,8 +292,8 @@ Visual Studio Marketplace 및 컴퓨터에서 확장을 제거할 수 있습니�
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>컴퓨터에서 확장을 제거 하려면
 
-1. Visual Studio의 **도구** 메뉴에서 **확장 및 업데이트**를 클릭 합니다.
+1. Visual Studio의 **도구** 메뉴에서 **확장 및 업데이트** 를 클릭 합니다.
 
-2. "MyVsixExtension"을 선택 하 고 **제거**를 클릭 합니다. 그러면 확장이 제거 되도록 예약 됩니다.
+2. "MyVsixExtension"을 선택 하 고 **제거** 를 클릭 합니다. 그러면 확장이 제거 되도록 예약 됩니다.
 
 3. 제거를 완료 하려면 Visual Studio의 모든 인스턴스를 닫습니다.

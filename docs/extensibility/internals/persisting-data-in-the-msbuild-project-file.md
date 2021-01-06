@@ -1,5 +1,7 @@
 ---
 title: MSBuild 프로젝트 파일에 데이터 유지 | Microsoft Docs
+description: 프로젝트 파일에 데이터를 저장 하 고 IPersistXMLFragment를 사용 하 여 프로젝트 파일의 데이터를 프로젝트 하위 형식 집계 수준에서 유지 관리 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706692"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878081"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 프로젝트 파일의 데이터 유지
 프로젝트 하위 형식에서 나중에 사용 하기 위해 하위 형식 관련 데이터를 프로젝트 파일에 저장 해야 할 수도 있습니다. 프로젝트 하위 유형은 프로젝트 파일 지 속성을 사용 하 여 다음 요구 사항을 충족 합니다.
@@ -24,7 +26,7 @@ ms.locfileid: "80706692"
 
     1. 구성 독립적인 데이터. 즉, 비어 있거나 누락 된 조건이 있는 MSBuild 요소에 저장 된 데이터입니다.
 
-    2. 구성에 종속 된 데이터입니다. 즉, 특정 프로젝트 구성에 대해 조건 화 된 MSBuild 요소에 저장 된 데이터입니다. 예:
+    2. 구성에 종속 된 데이터입니다. 즉, 특정 프로젝트 구성에 대해 조건 화 된 MSBuild 요소에 저장 된 데이터입니다. 예를 들면 다음과 같습니다.
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -36,7 +38,7 @@ ms.locfileid: "80706692"
 
     2. 구성에 종속 된 데이터입니다.
 
-## <a name="persisting-build-related-information"></a>빌드 관련 정보 유지
+## <a name="persisting-build-related-information"></a>Build-Related 정보 유지
  프로젝트를 빌드하는 데 유용한 데이터의 지 속성은 MSBuild를 통해 처리 됩니다. MSBuild 시스템은 빌드 관련 정보의 마스터 테이블을 유지 관리 합니다. 프로젝트 하위 유형은 속성 값을 가져오고 설정 하기 위해이 데이터에 액세스 하는 일을 담당 합니다. 또한 프로젝트 하위 형식은 지속형 속성을 추가 하 고 유지 되지 않도록 속성을 제거 하 여 빌드 관련 데이터 테이블을 확장할 수 있습니다.
 
  MSBuild 데이터를 수정 하기 위해 프로젝트 하위 유형은를 통해 기본 프로젝트 시스템에서 MSBuild 속성 개체를 검색 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 는 핵심 프로젝트 시스템에서 구현 된 인터페이스 이며를 실행 하 여 집계 프로젝트 하위 형식 쿼리를 실행 `QueryInterface` 합니다.

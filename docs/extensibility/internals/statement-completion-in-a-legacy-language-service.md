@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 문 완성 | Microsoft Docs
+description: 문 완성이 작동 하는 방식과 VSPackage의 레거시 언어 서비스에서이를 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704937"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877769"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 명령문 완성
 문 완성은 언어 서비스에서 사용자가 핵심 편집기에서 입력을 시작한 언어 키워드나 요소를 완료 하는 데 도움이 되는 프로세스입니다. 이 항목에서는 문 완성이 작동 하는 방식과 언어 서비스에서이를 구현 하는 방법에 대해 설명 합니다.

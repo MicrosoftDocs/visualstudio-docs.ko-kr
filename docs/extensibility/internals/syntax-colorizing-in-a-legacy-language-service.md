@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 구문 색상화 Microsoft Docs
+description: 어휘 또는 토큰의 형식을 식별할 수 있는 파서 또는 스캐너를 제공 하 여 레거시 언어 서비스에서 구문 색 지정을 지 원하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704701"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877756"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 구문 색 지정은 프로그래밍 언어의 여러 요소가 다른 색 및 스타일의 소스 파일에 표시 되도록 하는 기능입니다. 이 기능을 지원 하려면 파일의 어휘 요소나 토큰 형식을 식별할 수 있는 파서 또는 스캐너를 제공 해야 합니다. 여러 언어에서 키워드, 구분 기호 (예: 괄호 또는 중괄호) 및 주석을 다른 방식으로 색을 구분 하 여 구분 합니다.
@@ -49,7 +51,7 @@ ms.locfileid: "80704701"
 
  해당 언어에 대 한 기본 색을 염두에 두어야 합니다. 사용자는 원하는 대로 색을 변경할 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  이 예제에서는 클래스를 사용 하 여 사용자 지정 색 항목의 배열을 선언 하 고 채우는 한 가지 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Package.ColorableItem> . 이 예제에서는 24 비트 색을 사용 하 여 키워드 및 주석 색을 설정 합니다.
 
 ```csharp
@@ -103,7 +105,7 @@ namespace TestLanguagePackage
 
  구조체에 저장 된 색 인덱스는 <xref:Microsoft.VisualStudio.Package.TokenInfo> 일반적으로 열거형의 값으로 <xref:Microsoft.VisualStudio.Package.TokenColor> , 키워드 및 연산자와 같은 다양 한 언어 요소에 해당 하는 명명 된 많은 인덱스를 제공 합니다. 사용자 지정 색 항목 목록이 열거형에 표시 된 항목과 일치 하는 경우 <xref:Microsoft.VisualStudio.Package.TokenColor> 각 토큰의 색으로 열거를 사용 하면 됩니다. 그러나 추가 색 항목이 있거나 해당 순서로 기존 값을 사용 하지 않으려는 경우 사용자의 요구에 맞게 사용자 지정 색 항목 목록을 정렬 하 고 해당 목록에 적절 한 인덱스를 반환할 수 있습니다. 구조에 인덱스를 저장할 때 인덱스를로 캐스팅 해야 <xref:Microsoft.VisualStudio.Package.TokenColor> 합니다 .는 <xref:Microsoft.VisualStudio.Package.TokenInfo> [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] 인덱스만 볼 수 있습니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
  다음 예제에서는 스캐너가 숫자, 문장 부호 및 식별자 (숫자 또는 문장 부호가 아닌 모든 항목)의 세 가지 토큰 형식을 식별 하는 방법을 보여 줍니다. 이 예제는 설명 목적 으로만 사용 되며 포괄적인 파서 및 스캐너 구현을 나타내지는 않습니다. 이 예제에서는 `Lexer` `GetNextToken()` 문자열을 반환 하는 메서드가 있는 클래스가 있다고 가정 합니다.
 
 ```csharp

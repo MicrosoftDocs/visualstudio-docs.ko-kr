@@ -1,5 +1,7 @@
 ---
 title: 속성 표시 그리드 | Microsoft Docs
+description: 속성 창 표에서 속성 이름 및 속성 값 필드가 있는 위치와 속성 확장에서 그리드를 사용 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706182"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878029"
 ---
 # <a name="properties-display-grid"></a>속성 표시 그리드
 
@@ -29,7 +31,7 @@ ms.locfileid: "80706182"
 
 2. `pfHide`의 매개 변수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> 로 설정 `TRUE` 합니다.
 
-**속성** 창에 정보를 푸시하는 IDE는를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 는 **속성** 창에 표시 되는 관련 속성이 포함 된 선택 가능한 개체를 포함 하는 각 창에 대해 vspackage에 의해 호출 됩니다. **솔루션 탐색기**에서 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` __VSHPROPID를 사용 하 여 호출을 구현 [합니다. ](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) 계층 구조에서 browseable 개체를 얻기 위해 프로젝트 계층 구조에 VSHPROPID_BrowseObject 합니다.
+**속성** 창에 정보를 푸시하는 IDE는를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 는 **속성** 창에 표시 되는 관련 속성이 포함 된 선택 가능한 개체를 포함 하는 각 창에 대해 vspackage에 의해 호출 됩니다. **솔루션 탐색기** 에서 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` __VSHPROPID를 사용 하 여 호출을 구현 [합니다.](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) 계층 구조에서 browseable 개체를 얻기 위해 프로젝트 계층 구조에 VSHPROPID_BrowseObject 합니다.
 
 VSPackage가 __VSHPROPID를 지원 하지 않는 경우 [ VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>)__VSHPROPID의 값을 사용 하 여 IDE를 사용 하려고 시도 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> [합니다. ](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) 계층 항목 또는 항목이 제공 하는 VSHPROPID_SelContainer 합니다.
 

@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341292"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903755"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio 및 Unity 시작
 
@@ -34,8 +34,8 @@ Visual Studio Tools for Unity은 c # 등을 작성 하 고 디버깅 하는 기�
 > [!NOTE]
 > 이 설치 가이드는 Visual Studio 용입니다. Visual Studio Code 사용 하는 경우 [VS Code 설명서를 사용 하 여 Unity 개발](https://code.visualstudio.com/docs/other/unity)을 참조 하세요.
 
-1. [Visual Studio 설치 관리자를 다운로드](/docs/install/install-visual-studio.md)하거나 이미 설치 되어 있는 경우 실행 합니다.
-2. 원하는 Visual Studio 버전에 대해 **수정** (이미 설치된 경우) 또는 **설치** (새 설치의 경우)를 클릭합니다.
+1. [Visual Studio 설치 관리자를 다운로드](/visualstudio/docs/install/install-visual-studio.md)하거나 이미 설치 되어 있는 경우 실행 합니다.
+2. 원하는 Visual Studio 버전에 대해 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
 3. **작업** 탭에서 **게임** 섹션으로 스크롤하고 Unity 워크 로드 **를 사용 하 여 게임 개발** 을 선택 합니다.
 
     ![설치 관리자에서 Unity를 사용한 게임 개발 작업 상자](../media/vs/unity-workload.png)

@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 마이그레이션 | Microsoft Docs
+description: 프로젝트를 업데이트 하 고 source.extension.vsixmanifest 파일을 추가 하 여 언어 서비스를 최신 버전의 Visual Studio로 업데이트 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707103"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877834"
 ---
 # <a name="migrating-a-legacy-language-service"></a>레거시 언어 서비스 마이그레이션
 프로젝트를 업데이트 하 고 프로젝트에 source.extension.vsixmanifest 파일을 추가 하 여 레거시 언어 서비스를 최신 버전의 Visual Studio로 마이그레이션할 수 있습니다. Visual Studio 편집기가이를 조정 하기 때문에 언어 서비스 자체는 이전과 마찬가지로 계속 작동 합니다.
@@ -51,15 +53,15 @@ ms.locfileid: "80707103"
 
 4. RegExLangServ 솔루션을 엽니다.
 
-5. **단방향 업그레이드** 창이 표시 됩니다. **확인**을 클릭합니다.
+5. **단방향 업그레이드** 창이 표시 됩니다. **확인** 을 클릭합니다.
 
-6. 프로젝트 속성을 업데이트 합니다. **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **속성**을 선택 하 여 **프로젝트 속성** 창을 엽니다.
+6. 프로젝트 속성을 업데이트 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **속성** 을 선택 하 여 **프로젝트 속성** 창을 엽니다.
 
-    - **응용 프로그램** 탭에서 **대상 프레임 워크** 를 **4.6.1**로 변경 합니다.
+    - **응용 프로그램** 탭에서 **대상 프레임 워크** 를 **4.6.1** 로 변경 합니다.
 
-    - **디버그** 탭의 **시작 외부 프로그램** 상자에\Common7\IDE\devenv.exe을 입력 ** \<Visual Studio installation path> 합니다**.
+    - **디버그** 탭의 **시작 외부 프로그램** 상자에\Common7\IDE\devenv.exe을 입력 **\<Visual Studio installation path> 합니다**.
 
-         **명령줄 인수** 상자에/**rootsuffix Exp**를 입력 합니다.
+         **명령줄 인수** 상자에/**rootsuffix Exp** 를 입력 합니다.
 
 7. 다음 참조를 업데이트 합니다.
 
@@ -83,13 +85,13 @@ ms.locfileid: "80707103"
 
 10. Source.extension.vsixmanifest 파일을 추가 해야 합니다.
 
-    - 기존 확장에서이 파일을 프로젝트 디렉터리에 복사 합니다. 이 파일을 가져오는 한 가지 방법은 VSIX 프로젝트를 만드는 것입니다. **파일**에서 **새로**만들기를 클릭 한 다음 **프로젝트**를 클릭 합니다. Visual Basic 또는 c #에서 **확장성**을 클릭 한 다음 **VSIX 프로젝트**를 선택 합니다.
+    - 기존 확장에서이 파일을 프로젝트 디렉터리에 복사 합니다. 이 파일을 가져오는 한 가지 방법은 VSIX 프로젝트를 만드는 것입니다. **파일** 에서 **새로** 만들기를 클릭 한 다음 **프로젝트** 를 클릭 합니다. Visual Basic 또는 c #에서 **확장성** 을 클릭 한 다음 **VSIX 프로젝트** 를 선택 합니다.
 
     - 파일을 사용자의 프로젝트에 추가합니다.
 
-    - 파일 **속성**에서 **빌드 작업** 을 **없음**으로 설정 합니다.
+    - 파일 **속성** 에서 **빌드 작업** 을 **없음** 으로 설정 합니다.
 
-    - **VSIX 매니페스트 편집기**를 사용 하 여 파일을 엽니다.
+    - **VSIX 매니페스트 편집기** 를 사용 하 여 파일을 엽니다.
 
     - 다음 필드를 변경 합니다.
 
@@ -99,13 +101,13 @@ ms.locfileid: "80707103"
 
     - **설명**: 정규식 언어 서비스입니다.
 
-    - **자산**에서 **새로 만들기**를 클릭 하 고, **VisualStudio**에 대 한 **유형을** 선택 하 고, **소스** 를 **현재 솔루션의 프로젝트로**설정한 다음, **프로젝트** 를 **RegExLangServ**로 설정 합니다.
+    - **자산** 에서 **새로 만들기** 를 클릭 하 고, **VisualStudio** 에 대 한 **유형을** 선택 하 고, **소스** 를 **현재 솔루션의 프로젝트로** 설정한 다음, **프로젝트** 를 **RegExLangServ** 로 설정 합니다.
 
     - 파일을 저장하고 닫습니다.
 
-11. 솔루션을 빌드합니다. 빌드된 파일은 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **에 배포 됩니다.
+11. 솔루션을 빌드합니다. 빌드된 파일은 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\** 에 배포 됩니다.
 
 12. 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 열렸습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

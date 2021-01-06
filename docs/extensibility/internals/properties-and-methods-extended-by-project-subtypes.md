@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 하위 형식에 의해 확장 된 속성 및 메서드 | Microsoft Docs
+description: 프로젝트 하위 유형을 강화 하거나 수정할 수 있는 기능에 대해 알아봅니다. 그러면 Visual Studio 프로젝트 시스템의 동작을 사용자 지정할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9963f779055fcf1ed0efd8c47abbe1cce35631a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706204"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878042"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>프로젝트 하위 형식에 의해 확장된 속성 및 메서드
 프로젝트 하위 형식에는 기본 프로젝트의 집계로 생성 되기 때문에 프로젝트의 동작에 영향을 줄 수 있는 많은 기능이 있습니다. 이 섹션에서는 프로젝트 하위 형식으로 향상 또는 수정할 수 있는 기능 중 일부를 요약 합니다.

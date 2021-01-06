@@ -1,5 +1,7 @@
 ---
 title: 옵션 및 옵션 페이지 | Microsoft Docs
+description: VSPackage 상태를 결정 하는 옵션의 값을 변경할 수 있는 옵션 페이지에 대 한 지원에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d21bf6d5ab7e23047a02e1188fff9a47d0cbd58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4699063d753539c72c373266b3fce9a0fdf8f00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706835"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877873"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 **도구** 메뉴에서 **옵션** 을 클릭 하 여 **옵션** 대화 상자를 엽니다. 이 대화 상자의 옵션을 옵션 페이지 라고 통칭 합니다. 탐색 창에 있는 트리 컨트롤에는 옵션 범주가 있으며 모든 범주에는 옵션 페이지가 있습니다. 페이지를 선택 하면 오른쪽 창에 해당 옵션이 표시 됩니다. 이러한 페이지를 사용 하 여 VSPackage 상태를 결정 하는 옵션의 값을 변경할 수 있습니다.
@@ -37,9 +39,9 @@ ms.locfileid: "80706835"
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp 경우 속성 이름 및 값 쌍은 HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\dialogpage\company.optionspage.optionspagegeneral.의 하위 키입니다.
+ <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>이 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp 된 경우 속성 이름 및 값 쌍은 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral의 하위 키입니다.
 
- 옵션 페이지 자체의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> 단어, ToolsOptionsPages 및 옵션 페이지 범주와 이름 조합에 따라 결정 됩니다. 예를 들어 사용자 지정 옵션 페이지의 범주, 내 옵션 페이지 및 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> 가 HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp 경우 옵션 페이지에 레지스트리 키 HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0exp\toolsoptionspages\my Option Pages\Custom.가 있습니다.
+ 옵션 페이지 자체의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> 단어, ToolsOptionsPages 및 옵션 페이지 범주와 이름 조합에 따라 결정 됩니다. 예를 들어 사용자 지정 옵션 페이지에 범주, 내 옵션 페이지 및 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> 가 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 되 면 옵션 페이지에 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My Option Pages\Custom 레지스트리 키가 있습니다.
 
 ## <a name="toolsoptions-page-attributes-and-layout"></a>도구/옵션 페이지 특성 및 레이아웃
  <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>특성은 옵션 대화 상자의 탐색 트리에서 사용자 지정 옵션 페이지를 범주로 그룹화 하는 **방법을** 결정 합니다. <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>특성은 옵션 페이지를 인터페이스를 제공 하는 VSPackage와 연결 합니다. 다음과 같은 코드 조각을 생각해 봅시다.
@@ -47,7 +49,7 @@ ms.locfileid: "80706835"
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
 
- 이를 통해 MyPackage는 옵션 Spagegeneral 및 OptionsPageCustom의 두 가지 옵션 페이지를 제공 합니다. **옵션** 대화 상자에서 두 옵션 페이지가 모두 **내 옵션** 페이지 범주에 **일반** 및 **사용자 지정**으로 나타납니다.
+ 이를 통해 MyPackage는 옵션 Spagegeneral 및 OptionsPageCustom의 두 가지 옵션 페이지를 제공 합니다. **옵션** 대화 상자에서 두 옵션 페이지가 모두 **내 옵션** 페이지 범주에 **일반** 및 **사용자 지정** 으로 나타납니다.
 
 ## <a name="option-attributes-and-layout"></a>옵션 특성 및 레이아웃
  페이지에서 제공 하는 UI (사용자 인터페이스)는 사용자 지정 옵션 페이지의 옵션 모양을 결정 합니다. 일반 옵션 페이지의 레이아웃, 레이블 지정 및 옵션에 대 한 설명은 다음 특성에 따라 결정 됩니다.
@@ -66,7 +68,7 @@ ms.locfileid: "80706835"
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
 
-  옵션 페이지의 옵션 페이지에 **는 옵션** **페이지에 표시** 되는 옵션입니다. 이 옵션을 선택 하면 설명 상자에 설명, **내 정수 옵션이**표시 됩니다.
+  옵션 페이지의 옵션 페이지에 **는 옵션** **페이지에 표시** 되는 옵션입니다. 이 옵션을 선택 하면 설명 상자에 설명, **내 정수 옵션이** 표시 됩니다.
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>다른 VSPackage에서 옵션 페이지 액세스
  옵션 페이지를 호스트 하 고 관리 하는 VSPackage는 자동화 모델을 사용 하 여 다른 VSPackage에서 프로그래밍 방식으로 액세스할 수 있습니다. 예를 들어 다음 코드에서 VSPackage는 옵션 페이지를 호스트 하는 것으로 등록 됩니다.
@@ -81,7 +83,7 @@ ms.locfileid: "80706835"
 
  특성에서 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 옵션 페이지를 등록 하면이 페이지는 `SupportsAutomation` 특성의 인수가 인 경우 automationproperties 키 아래에 등록 됩니다 `true` . Automation은이 레지스트리 항목을 검토 하 여 연결 된 VSPackage을 찾은 다음,이 경우에는 호스팅된 옵션 페이지 (이 경우 내 그리드 페이지)를 통해 속성에 액세스 합니다.
 
- Automation 속성의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , word, AutomationProperties 및 options 페이지 범주와 이름 조합에 의해 결정 됩니다. 예를 들어 옵션 페이지의 내 범주 범주, 내 그리드 페이지 이름 HKEY_LOCAL_MACHINE 및 \SOFTWARE\Microsoft\VisualStudio\8.0Exp이 있는 경우 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> automation 속성에는 레지스트리 키 HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio\8.0exp\automationproperties\my Category\My Grid 페이지가 있습니다.
+ Automation 속성의 레지스트리 경로는 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , word, AutomationProperties 및 options 페이지 범주와 이름 조합에 의해 결정 됩니다. 예를 들어 옵션 페이지의 내 범주 범주, 내 그리드 페이지 이름 및가 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 된 경우 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> automation 속성에는 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page 레지스트리 키가 있습니다.
 
 > [!NOTE]
 > 정식 이름인 내 Category.My 그리드 페이지는이 키의 Name 하위 키 값입니다.
