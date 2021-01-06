@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7dee7965d1c98dbdb05f0edc83c6c8799047acde
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 2c3302499ec44d7a97ca66532428e0af117e3a7e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684061"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903781"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -267,3 +267,4 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 * [Visual Studio의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)
 * [Mac용 Visual Studio 설치](/visualstudio/mac/installation)
+ 

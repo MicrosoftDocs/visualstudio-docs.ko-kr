@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Visual Studio Tools for Unity, Mac의 변경 로그를 확인합니다. 버전 1.0.0.0부터 2.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 12/18/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,25 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672849"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917904"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2840"></a>2.8.4.0
+2020 년 12 월 15 일 출시
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 이벤트 생성 마법사를 닫을 때 안정성 문제가 해결 되었습니다.
 
 ## <a name="2830"></a>2.8.3.0
 2020 년 11 월 10 일 릴리스
@@ -391,7 +400,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 9일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
@@ -543,7 +552,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
  
  릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Project Generation:**
 
@@ -618,7 +627,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 11월 13일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **디버거:**
 
