@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830691"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756580"
 landingContent:
 - title: 테스트 도구 정보
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: 테스트 도구 살펴보기
       url: improve-code-quality.md
-    - text: 유닛 테스트 도구 개요
+    - text: 단위 테스트 도구&작업
       url: unit-test-your-code.md
-    - text: Live Unit Testing 개요
+    - text: Live Unit Testing 개요(.NET)
       url: live-unit-testing-intro.md
-- title: 단위 테스트
+- title: 시작하기
   linkLists:
   - linkListType: tutorial
     links:
     - text: 유닛 테스트 시작
       url: getting-started-with-unit-testing.md
-    - text: 관리 코드에 대한 단위 테스트 만들기 및 실행
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: 테스트 탐색기를 사용하여 단위 테스트 실행
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: 단위 테스트 기본 사항
+      url: unit-test-basics.md
+    - text: 코드 검사 - 테스트할 코드 범위 결정
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: .NET 유닛 테스트
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 관리 코드에 대한 단위 테스트 만들기 및 실행
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Live Unit Testing 시작
       url: live-unit-testing-start.md
     - text: 단위 테스트 생성(IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: 추가 테스트 도구
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 코드 검사 - 테스트할 코드 범위 결정
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes - 테스트 중인 코드 격리
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: 코딩된 UI(사용되지 않음)
-      url: use-ui-automation-to-test-your-code.md
-    - text: 부하 테스트(사용되지 않음)
-      url: quickstart-create-a-load-test-project.md
+- title: C++ 유닛 테스트
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C/C++에 대한 단위 테스트 작성
+      url: writing-unit-tests-for-c-cpp.md
 - title: 관련 도구(Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: 지속적인 테스트(Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: 추가 테스트 도구
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 코딩된 UI(사용되지 않음)
+      url: use-ui-automation-to-test-your-code.md
+    - text: 부하 테스트(사용되지 않음)
+      url: quickstart-create-a-load-test-project.md

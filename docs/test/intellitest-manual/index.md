@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329954"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756619"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
 IntelliTest를 사용하면 초기에 버그를 찾을 수 있으므로 테스트 유지 관리 비용이 감소합니다. 자동화 및 투명 테스트 방법을 사용하는 IntelliTest는 .NET 코드에 대한 후보 테스트 도구 모음을 생성할 수 있습니다. 테스트 도구 모음 생성은 지정하는 *정확성 속성* 에 따라 추가로 안내될 수 있습니다. IntelliTest는 테스트 중인 코드가 발전함에 따라 자동으로 테스트 도구 모음을 발전시키기도 합니다.
+
+> [!NOTE]
+> IntelliTest는 Enterprise Edition에서만 사용할 수 있습니다. .NET Framework를 대상으로 하는 C# 코드에 대해 지원됩니다. .NET Core 및 .NET Standard는 현재 지원되지 않습니다.
 
 **특성 테스트** IntelliTest를 사용하여 기존 단위 테스트의 도구 모음을 기준으로 코드 동작을 결정할 수 있습니다.
 이런 테스트 도구 모음은 리팩터링 레거시 또는 익숙하지 않은 코드와 연결된 복잡성을 처리하기 위한 기반을 형성하는 재발 도구 모음으로 사용될 수 있습니다.

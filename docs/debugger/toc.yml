@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: 디버깅 기술 및 도구
       href: write-better-code-with-visual-studio.md
-    - name: 디버깅 작업 찾기
-      href: find-your-debugging-task.md
 - name: 빠른 시작
   items:
     - name: 디버거 소개
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: 리소스
   items:
+    - name: FAQ - 디버깅 기능 찾기
+      href: find-your-debugging-task.md
     - name: Visual Studio 디버거의 새로운 기능
       href: what-s-new-for-the-debugger-in-visual-studio.md

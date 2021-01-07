@@ -4,17 +4,19 @@
   items:
     - name: 테스트 도구 살펴보기
       href: improve-code-quality.md
+    - name: 단위 테스트 도구 및 작업
+      href: unit-test-your-code.md
+- name: 자습서
+  items:
+    - name: 시작하기
+      href: getting-started-with-unit-testing.md
 - name: 단위 테스트
   items:
-    - name: 유닛 테스트 도구 개요
-      href: unit-test-your-code.md
-    - name: 시작
-      href: getting-started-with-unit-testing.md
     - name: 단위 테스트 기본 사항
       href: unit-test-basics.md
     - name: 단위 테스트 프로젝트 만들기
       href: create-a-unit-test-project.md
-    - name: 단위 테스트 만들기 명령
+    - name: 코드에서 단위 테스트 만들기
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
