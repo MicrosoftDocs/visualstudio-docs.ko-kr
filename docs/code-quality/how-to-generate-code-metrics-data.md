@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434794"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069476"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -39,18 +39,13 @@ ms.locfileid: "94434794"
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-이러한 규칙은 기본적으로 사용 하지 않도록 설정 되어 있지만 [**솔루션 탐색기**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 또는 [규칙 집합](using-rule-sets-to-group-code-analysis-rules.md) 파일에서 사용 하도록 설정할 수 있습니다. 예를 들어 규칙 CA1502을 경고로 사용 하도록 설정 하려면. 규칙 집합 파일에 다음 항목이 포함 됩니다.
+이러한 규칙은 기본적으로 사용 하지 않도록 설정 되어 있지만 [**솔루션 탐색기**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 또는 [editorconfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) 파일에서 사용 하도록 설정할 수 있습니다. 예를 들어 CA1502 규칙을 경고로 사용 하도록 설정 하려면 EditorConfig 파일에 다음 항목이 포함 됩니다.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>구성
 
 코드 메트릭 규칙이 발생 하는 임계값을 구성할 수 있습니다.
 
@@ -64,7 +59,7 @@ ms.locfileid: "94434794"
 
    이 예제에서 rule [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
-3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면 다음과 같습니다.
+3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들어:
 
    ```xml
    <ItemGroup>
@@ -80,7 +75,7 @@ ms.locfileid: "94434794"
 
 다음 방법 중 하나를 통해 전체 솔루션에 대 한 코드 메트릭 결과를 생성할 수 있습니다.
 
-- 메뉴 모음에서 **분석** 에서  >  솔루션에 대 한 **코드 메트릭 계산** 을 선택  >  **For Solution** 합니다.
+- 메뉴 모음에서 **분석** 에서  >  솔루션에 대 한 **코드 메트릭 계산** 을 선택  >  합니다.
 
 - **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산** 을 선택 합니다.
 
@@ -92,7 +87,7 @@ ms.locfileid: "94434794"
 
 1. **솔루션 탐색기** 에서 하나 이상의 프로젝트를 선택 합니다.
 
-1. 메뉴 모음에서 **분석**  >  **Calculate Code Metrics**  >  **선택한 프로젝트에 대 한** 코드 메트릭 계산을 선택 합니다.
+1. 메뉴 모음에서 **분석**  >    >  **선택한 프로젝트에 대 한** 코드 메트릭 계산을 선택 합니다.
 
 결과가 생성 되 고 **코드 메트릭 결과** 창이 표시 됩니다. 결과 세부 정보를 보려면 **계층 구조** 에서 트리를 확장 합니다.
 
@@ -113,7 +108,7 @@ C #에 대 한 명령줄에서 코드 메트릭 데이터를 생성 하 고 .NET
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. 메트릭 NuGet 패키지
 
-명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예를 들면 다음과 같습니다.
+명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예를 들어:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -136,7 +131,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예를 들면 다음과 같습니다.
+을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예를 들어:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -295,7 +290,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 사용
 
-*Metrics.exe* 를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면 다음과 같습니다.
+*Metrics.exe* 를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들어:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
