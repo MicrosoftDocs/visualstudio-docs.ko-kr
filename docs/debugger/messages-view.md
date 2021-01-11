@@ -1,5 +1,7 @@
 ---
 title: 메시지 뷰 | Microsoft Docs
+description: 각 창, 스레드, 프로세스에는 메시지 뷰 창에서 볼 수 있는 연결된 메시지 스트림이 있습니다. 메시지 뷰를 열고 제어하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845856"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903405"
 ---
 # <a name="messages-view"></a>메시지 뷰
 각 창에는 연결된 메시지 스트림이 있습니다. 메시지 뷰 창에 이 메시지 스트림이 표시됩니다. 창 핸들, 메시지 코드 및 메시지가 표시됩니다. 스레드 또는 프로세스를 위한 메시지 뷰도 만들 수 있습니다. 이렇게 하면 특정 프로세스나 스레드에서 소유하는 모든 창에 전송된 메시지를 볼 수 있으며, 창 초기화 메시지를 캡처하는 데 특히 유용합니다.
@@ -34,17 +36,17 @@ ms.locfileid: "62845856"
 
 2. 검토할 메시지를 포함하는 항목의 노드를 찾아 선택합니다.
 
-3. **Spy** 메뉴에서 **로그 메시지**를 선택합니다.
+3. **Spy** 메뉴에서 **로그 메시지** 를 선택합니다.
 
      [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md)가 열립니다.
 
 4. 표시할 메시지의 옵션을 선택합니다.
 
-5. **확인**을 눌러 메시지 로깅을 시작합니다.
+5. **확인** 을 눌러 메시지 로깅을 시작합니다.
 
      메시지 뷰 창이 열리고 **메시지** 메뉴가 Spy++ 도구 모음에 추가됩니다. 선택한 옵션에 따라 메시지가 활성 메시지 뷰 창으로 스트리밍을 시작합니다.
 
-6. 메시지가 충분하면 **메시지** 메뉴에서 **로깅 중지**를 선택합니다.
+6. 메시지가 충분하면 **메시지** 메뉴에서 **로깅 중지** 를 선택합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
  [메시지 뷰 제어](../debugger/how-to-control-messages-view.md) 메시지 뷰를 관리하는 방법을 설명합니다.

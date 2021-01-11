@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Enterprise 워크로드 및 구성 요소 ID
 titleSuffix: ''
-description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
+description: Visual Studio Enterprise 워크로드 및 구성 요소 ID를 사용하여 명령줄에서 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성을 지정합니다.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4e8b3c03caa55cd309623d5191925a0d13360999
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: aa5e9ea62d02d900eab91d68e4df008431303007
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437455"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846891"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 구성 요소 디렉터리
 

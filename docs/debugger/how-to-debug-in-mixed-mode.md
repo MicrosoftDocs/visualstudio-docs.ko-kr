@@ -1,5 +1,7 @@
 ---
 title: 혼합 모드에서 디버그 | Microsoft Docs
+description: 호출 앱 프로젝트의 속성 페이지에서 혼합 모드 디버깅(관리 및 네이티브 코드 함께 사용)을 사용하도록 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852115"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903989"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>방법: 혼합 모드에서 디버그(C#, C++, Visual Basic)
 
@@ -37,25 +39,25 @@ ms.locfileid: "90852115"
 호출하는 앱의 프로젝트에 액세스할 수 없는 경우 DLL 프로젝트에서 DLL을 디버그할 수 있습니다. DLL 프로젝트만 디버그하려면 혼합 모드에서 수행하지 않아도 됩니다. 자세한 내용은 [방법: DLL 프로젝트에서 디버그](../debugger/how-to-debug-from-a-dll-project.md)를 참조하세요.
 
 > [!NOTE]
-> 표시되는 대화 상자와 명령은 Visual Studio 설정이나 버전에 따라 이 문서에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** > **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
+> 표시되는 대화 상자와 명령은 Visual Studio 설정이나 버전에 따라 이 문서에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** > **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>네이티브 호출 앱에 혼합 모드 디버깅 사용
 
-1. **솔루션 탐색기**에서 C++ 프로젝트를 선택하고, **속성** 아이콘을 클릭하거나 **Alt**+**Enter**를 누르거나 마우스 오른쪽 단추를 클릭하여 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 C++ 프로젝트를 선택하고, **속성** 아이콘을 클릭하거나 **Alt**+**Enter** 를 누르거나 마우스 오른쪽 단추를 클릭하여 **속성** 을 선택합니다.
 
-1. **\<Project> 속성 페이지** 대화 상자에서 **구성 속성**을 확장하고 **디버깅**을 선택합니다.
+1. **\<Project> 속성 페이지** 대화 상자에서 **구성 속성** 을 확장하고 **디버깅** 을 선택합니다.
 
-1. **디버거 형식**을 **혼합** 또는 **자동**으로 설정합니다.
+1. **디버거 형식** 을 **혼합** 또는 **자동** 으로 설정합니다.
 
-1. **확인**을 선택합니다.
+1. **확인** 을 선택합니다.
 
    ![혼합 모드 디버깅 사용](../debugger/media/dbg-mixed-mode-from-native.png "혼합된 모드 디버깅 사용")
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>관리형 호출 앱에 혼합 모드 디버깅 사용
 
-1. **솔루션 탐색기**에서 C# 또는 Visual Basic 프로젝트를 선택하고, **속성** 아이콘을 선택하거나 **Alt**+**Enter**를 누르거나 마우스 오른쪽 단추를 클릭하여 **속성**을 선택합니다.
+1. **솔루션 탐색기** 에서 C# 또는 Visual Basic 프로젝트를 선택하고, **속성** 아이콘을 선택하거나 **Alt**+**Enter** 를 누르거나 마우스 오른쪽 단추를 클릭하여 **속성** 을 선택합니다.
 
-1. **디버그** 탭을 선택하고 **네이티브 코드 디버깅 사용**을 선택합니다.
+1. **디버그** 탭을 선택하고 **네이티브 코드 디버깅 사용** 을 선택합니다.
 
 1. 속성 페이지를 닫아서 변경 내용을 저장합니다.
 

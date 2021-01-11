@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 폴더 열기 확장성 개요 | Microsoft Docs
+description: 사용자가 프로젝트 또는 솔루션 파일 없이 Visual Studio에서 코드베이스를 열 수 있는 폴더 열기 기능의 확장성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
@@ -8,12 +10,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 81ca62c834e09d542016ffce607abf3c32cf2a61
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668640"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863753"
 ---
 # <a name="open-folder-extensibility"></a>폴더 열기 확장성
 

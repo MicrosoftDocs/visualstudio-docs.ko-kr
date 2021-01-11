@@ -1,6 +1,7 @@
 ---
 title: C++ 프로젝트 디버깅 준비 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio에서 Visual C++ 프로젝트 템플릿으로 만든 기본 프로젝트 형식의 디버그 준비에 대한 정보를 가져옵니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916315"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728306"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비 중: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.
@@ -70,27 +71,27 @@ ms.locfileid: "75916315"
 
 1. Visual Studio에서 프로젝트를 엽니다.
 
-2. **디버그** 메뉴에서 **시작**을 선택합니다.
+2. **디버그** 메뉴에서 **시작** 을 선택합니다.
 
 3. [디버거 소개](../debugger/debugger-feature-tour.md)에 설명된 기술을 사용하여 디버그합니다.
 
 ### <a name="to-manually-set-a-debug-configuration"></a><a name="BKMK_To_manually_set_a_Debug_configuration"></a> 디버그 구성을 직접 설정하려면
 
-1. **보기** 메뉴에서 **속성 페이지**를 클릭합니다.
+1. **보기** 메뉴에서 **속성 페이지** 를 클릭합니다.
 
 2. **구성 속성** 노드가 아직 열려 있지 않으면 이 노드를 클릭하여 엽니다.
 
-3. **일반**을 선택하고, **출력** 행의 값을 **디버그**로 설정합니다.
+3. **일반** 을 선택하고, **출력** 행의 값을 **디버그** 로 설정합니다.
 
-4. **C/C++** 노드를 열고 **일반**을 선택합니다.
+4. **C/C++** 노드를 열고 **일반** 을 선택합니다.
 
     컴파일러에서 생성할 디버깅 정보의 형식을 **디버그** 행에서 지정합니다. 선택한 값에는 **프로그램 데이터베이스(/Zi)** 또는 **편집하며 계속하기를 위한 프로그램 데이터베이스(/ZI)** 가 포함될 수 있습니다.
 
-5. **최적화**를 선택하고, **최적화** 행의 드롭다운 목록에서 **사용 안 함(/0d)** 을 선택합니다.
+5. **최적화** 를 선택하고, **최적화** 행의 드롭다운 목록에서 **사용 안 함(/0d)** 을 선택합니다.
 
     코드를 최적화하면, 생성되는 명령이 소스 코드에 직접 대응되지 않기 때문에 디버깅하기 어렵습니다. 최적화된 코드에만 나타나는 버그가 프로그램에서 발견될 경우에는 이 설정을 선택할 수 있습니다. 그러나 디스어셈블리 창에 표시되는 코드는 소스 창에 표시되는 코드와 일치하지 않는 최적화된 코드에서 생성되므로, 단계별 실행 같은 기능을 수행하면 중단점과 실행 지점이 올바르게 표시되지 않을 수 있습니다.
 
-6. **링커** 노드를 열고 **디버깅**을 선택합니다. 첫 번째 **생성** 행의 드롭다운 목록에서 **예(/DEBUG)** 를 선택합니다. 디버깅하는 경우 항상 이 값으로 설정해야 합니다.
+6. **링커** 노드를 열고 **디버깅** 을 선택합니다. 첫 번째 **생성** 행의 드롭다운 목록에서 **예(/DEBUG)** 를 선택합니다. 디버깅하는 경우 항상 이 값으로 설정해야 합니다.
 
    자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
 

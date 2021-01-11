@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350724"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815635"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용하여 Linux의 App Service에 ASP.NET Core 앱 게시
 
@@ -52,11 +52,11 @@ Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 AS
 
 1. **Azure App Service 만들기(Linux)** 대화 상자에서 **앱 이름**, **리소스 그룹** 및 **App Service 계획** 입력 필드가 채워집니다. 이러한 이름을 유지하거나 변경할 수 있습니다. 준비가 되면 **만들기** 를 선택합니다.
 
-    ![Azure App Service 선택](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![이름, 구독, 리소스 그룹, 호스팅 계획 필드가 채워진 Azure App Service 만들기(Linux) 대화 상자의 스크린샷](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. **게시** 대화 상자에서 새로 만든 인스턴스가 자동으로 선택됩니다. 준비가 되면 **마침** 을 클릭합니다.
 
-    ![Azure App Service 선택](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![새로 만든 MyASpCoreWebAppOnAzure 서비스가 게시를 위한 App Service로 선택된 게시 대화 상자의 스크린샷](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. **게시** 를 선택합니다. Visual Studio는 Azure App Service에 앱을 배포하고, 브라우저에 웹앱이 로드됩니다. 프로젝트 속성 **게시** 창은 사이트 URL 및 기타 세부 정보를 표시합니다.
 

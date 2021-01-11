@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210755"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844740"
 ---
 Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -93,7 +93,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 - [Visual Studio 검색](../../ide/visual-studio-search.md)
 
-   Visual Studio는 메뉴, 옵션 및 속성이 매우 다양하여 때때로 버거울 수도 있습니다. Visual Studio 검색( **Ctrl**+**Q** )은 IDE 기능과 코드를 한곳에서 신속하게 찾을 수 있는 좋은 방법입니다.
+   Visual Studio는 메뉴, 옵션 및 속성이 매우 다양하여 때때로 버거울 수도 있습니다. Visual Studio 검색(**Ctrl**+**Q**)은 IDE 기능과 코드를 한곳에서 신속하게 찾을 수 있는 좋은 방법입니다.
 
    ::: moniker range="vs-2017"
 
@@ -198,7 +198,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    Visual Studio에서 앱을 빌드하며, 콘솔 창이 열리고 **Hello World!** 메시지가 표시됩니다. 이제 실행 중인 앱이 있습니다!
 
-   ![콘솔 창](../media/overview-console-window.png)
+   ![‘Hello Word!’ 출력과 ‘아무 키나 눌러 계속합니다.’가 표시된 cmd.exe 콘솔 창의 스크린샷](../media/overview-console-window.png)
 
 1. 콘솔 창을 닫으려면 키보드에서 아무 키나 누릅니다.
 
@@ -267,7 +267,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
    Visual Studio에서 앱을 빌드하며, 콘솔 창이 열리고 **Hello World!** 메시지가 표시됩니다. 이제 실행 중인 앱이 있습니다!
 
-   ![콘솔 창](../media/vs-2019/overview-console-window.png)
+   ![‘Hello Word!’ 출력과 ‘이 창을 닫으려면 아무 키나 누르세요.’가 표시된 Microsoft Visual Studio 디버그 콘솔 창의 스크린샷](../media/vs-2019/overview-console-window.png)
 
 1. 콘솔 창을 닫으려면 키보드에서 아무 키나 누릅니다.
 
@@ -286,13 +286,13 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **디버그** > **디버깅하지 않고 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
+1. **디버그** > **디버깅 없이 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
 
    Visual Studio에서 앱을 다시 빌드하고, 콘솔 창이 열리며 사용자 이름을 묻는 메시지가 표시됩니다.
 
 1. 콘솔 창에 이름을 입력하고 **Enter** 키를 누릅니다.
 
-   ![콘솔 창](../media/vs-2019/overview-console-input.png)
+   ![이름, 입력, ‘Hello Georgette!’ 출력에 대한 메시지를 표시하는 Microsoft Visual Studio 디버그 콘솔 창의 스크린샷](../media/vs-2019/overview-console-input.png)
 
 1. 아무 키나 눌러 콘솔 창을 닫고 실행 중인 프로그램을 중지합니다.
 
@@ -366,7 +366,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 10. **Ctrl**+**F5** 키를 눌러 프로그램을 다시 실행합니다. 출력은 다음과 같습니다.
 
-    ![프로그램 출력이 표시된 콘솔 창](../media/overview-console-final.png)
+    이름, 입력, ‘Hello Georgette! 연간 일자: 151’ 출력에 대한 메시지를 표시하는 cmd.exe 콘솔 창의 스크린샷](../media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 10. **Ctrl**+**F5** 키를 눌러 프로그램을 다시 실행합니다. 출력은 다음과 같습니다.
 
-    ![프로그램 출력이 표시된 콘솔 창](../media/vs-2019/overview-console-final.png)
+    ![이름, 입력, ‘Hello Georgette! 연간 일자: 43’ 출력에 대한 메시지를 표시하는 Microsoft Visual Studio 디버그 콘솔 창의 스크린샷](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

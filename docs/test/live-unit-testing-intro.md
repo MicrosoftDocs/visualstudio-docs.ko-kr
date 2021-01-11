@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8716e980581ffe1103adddbc3c776def1166ff94
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596842"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756606"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 개요
 
@@ -23,10 +23,10 @@ Live Unit Testing은 사용자가 코드를 변경할 때 실시간으로 단위
 
 Live Unit Testing은 단위 테스트가 코드를 적절하게 처리하고 있는지 여부를 나타냅니다. 또한 그래픽을 통해 실시간으로 코드 검사 상황을 보여 줍니다. 각 코드 줄에 대해 진행되는 테스트의 수와 단위 테스트에 포함되지 않는 줄을 한눈에 확인할 수 있습니다.
 
-하나 이상의 단위 테스트 프로젝트가 포함된 솔루션이 있는 경우 Visual Studio의 최상위 메뉴 모음에서 **테스트** > **Live Unit Testing** > **시작**을 선택하여 Live Unit Testing을 사용하도록 설정할 수 있습니다.
+하나 이상의 단위 테스트 프로젝트가 포함된 솔루션이 있는 경우 Visual Studio의 최상위 메뉴 모음에서 **테스트** > **Live Unit Testing** > **시작** 을 선택하여 Live Unit Testing을 사용하도록 설정할 수 있습니다.
 
 > [!NOTE]
-> Live Unit Testing은 Visual Studio Enterprise 버전에서만 사용 가능합니다.
+> Live Unit Testing은 Visual Studio Enterprise 버전에서만 사용 가능하며 .NET에서만 지원됩니다.
 
 Live Unit Testing에 대해 자세히 알아보려면 다음을 수행합니다.
 

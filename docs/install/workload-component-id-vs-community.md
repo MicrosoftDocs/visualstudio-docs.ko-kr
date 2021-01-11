@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Community 워크로드 및 구성 요소 ID
 titleSuffix: ''
-description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
+description: Visual Studio Community 워크로드 및 구성 요소 ID를 사용하여 명령줄에서 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성을 지정합니다.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 94b1ab6182bff28d41a1da326eb88c99341f2e5a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 744364dd18a784567dad49a960da08dc48de9606
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437390"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847020"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community 구성 요소 디렉터리
 

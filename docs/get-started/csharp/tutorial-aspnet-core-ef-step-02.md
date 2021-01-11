@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780991"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833249"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>2단계: 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -33,7 +33,7 @@ _이 비디오를 보고 따라서 첫 번째 ASP.NET Core 앱을 만듭니다._
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Visual Studio 2019 시작 및 새 프로젝트 만들기
 
-Visual Studio 2019를 시작하고 **새 프로젝트 만들기**를 클릭합니다. **새 ASP.NET Core 웹 애플리케이션**을 선택합니다. **웹 애플리케이션** 템플릿을 선택하고 기본 프로젝트 이름과 위치를 유지합니다. ASP.NET Core 버전을 사용하는 드롭다운에서, **ASP.NET Core 2.1** 또는 **ASP.NET Core 2.2**를 선택합니다. **만들기**를 클릭합니다. 자세한 지침은 [이 자습서 시리즈의 이전 비디오](tutorial-aspnet-core-ef-step-01.md)를 참조하세요.
+Visual Studio 2019를 시작하고 **새 프로젝트 만들기** 를 클릭합니다. **새 ASP.NET Core 웹 애플리케이션** 을 선택합니다. **웹 애플리케이션** 템플릿을 선택하고 기본 프로젝트 이름과 위치를 유지합니다. ASP.NET Core 버전을 사용하는 드롭다운에서, **ASP.NET Core 2.1** 또는 **ASP.NET Core 2.2** 를 선택합니다. **만들기** 를 클릭합니다. 자세한 지침은 [이 자습서 시리즈의 이전 비디오](tutorial-aspnet-core-ef-step-01.md)를 참조하세요.
 
 ![Visual Studio 2019 ASP.NET Core 프로젝트 옵션 선택](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -64,7 +64,7 @@ Visual Studio 2019를 시작하고 **새 프로젝트 만들기**를 클릭합�
 
 ### <a name="startupcs"></a>Startup.cs
 
-*Program.cs*에서 생성된 웹 호스트는 Startup 클래스를 참조하고 애플리케이션을 구성하는 메서드를 호출합니다. ConfigureServices 메서드는 앱에서 사용할 서비스를 설정합니다. `Configure` 메서드는 앱의 HTTP 요청 파이프라인을 설정합니다. 각 요청은 *미들웨어*의 각 부분과의 상호 작용을 통해 파이프라인을 통과합니다.
+*Program.cs* 에서 생성된 웹 호스트는 Startup 클래스를 참조하고 애플리케이션을 구성하는 메서드를 호출합니다. ConfigureServices 메서드는 앱에서 사용할 서비스를 설정합니다. `Configure` 메서드는 앱의 HTTP 요청 파이프라인을 설정합니다. 각 요청은 *미들웨어* 의 각 부분과의 상호 작용을 통해 파이프라인을 통과합니다.
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
@@ -72,7 +72,7 @@ Visual Studio 2019를 시작하고 **새 프로젝트 만들기**를 클릭합�
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
-이제 애플리케이션을 실행하고 브라우저에서 확인합니다. **Ctrl**+**F5**를 사용하거나 Visual Studio의 메뉴에서 **디버그** > **디버깅하지 않고 시작**을 선택하여 애플리케이션을 실행할 수 있습니다.
+이제 애플리케이션을 실행하고 브라우저에서 확인합니다. **Ctrl**+**F5** 를 사용하거나 Visual Studio의 메뉴에서 **디버그** > **디버깅하지 않고 시작** 을 선택하여 애플리케이션을 실행할 수 있습니다.
 
 ## <a name="customize-the-application"></a>애플리케이션 사용자 지정
 
@@ -86,7 +86,7 @@ public void OnGet()
 }
 ```
 
-*Index.cshtml*의 `<div>` 콘텐츠를 다음 태그로 바꿉니다.
+*Index.cshtml* 의 `<div>` 콘텐츠를 다음 태그로 바꿉니다.
 
 ```cshtml
 <h2>It's @Model.Time right now on the server!</h2>
@@ -94,7 +94,7 @@ public void OnGet()
 
 애플리케이션을 다시 실행합니다. 이제 페이지에는 현재 시간이 표시되지만 항상 자정이란 것을 알아야 합니다. 올바르지 않습니다.
 
-![브라우저의 Visual Studio 2019 ASP.NET Core 프로젝트](media/vs-2019/vs2019-app-in-browser.png)
+![브라우저 창에 있는 애플리케이션 홈페이지의 스크린샷 페이지 콘텐츠는 다음과 같이 표시됩니다. “It's 12:00 AM right now on the server!”(서버 현재 시간은 오전 12시입니다.)](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>애플리케이션 디버그
 
@@ -102,7 +102,7 @@ public void OnGet()
 
 실행이 줄에서 중지되고 `DateTime.Today`에 날짜가 포함되지만 시간 데이터가 포함되어 있지 않기 때문에 시간은 항상 자정입니다.
 
-![브라우저의 Visual Studio 2019 ASP.NET Core 프로젝트](media/vs-2019/vs2019-breakpoint.png)
+![Visual Studio의 Index.cshtml.cs 코드를 보여 주는 스크린샷 중단점이 ‘Time = DateTime.Today.ToShortTimeString();’ 줄에 설정되어 있습니다.](media/vs-2019/vs2019-breakpoint.png)
 
 `DateTime.Now`를 사용하도록 변경하고 계속 실행합니다. `OnGet`에 대한 새 코드는 다음과 같아야 합니다.
 
@@ -118,7 +118,7 @@ public void OnGet()
 > [!NOTE]
 > ToShortDateTimeString의 출력 형식은 현재 문화 설정에 따라 다르기 때문에 실제 출력은 이미지와 다를 수 있습니다. <xref:System.DateTime.ToShortTimeString>을 참조하세요.
 
-![브라우저의 Visual Studio 2019 ASP.NET Core 프로젝트](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![브라우저 창에 있는 애플리케이션 홈페이지의 스크린샷 페이지 콘텐츠는 다음과 같이 표시됩니다. “It's 1:46 AM right now on the server!”(서버 현재 시간은 오전 1시 46분입니다.).](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -126,6 +126,6 @@ public void OnGet()
 
 [자습서: ASP.NET Core 앱에서 데이터 작업](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [자습서: ASP.NET Core를 사용하여 Razor Pages 웹앱 만들기](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

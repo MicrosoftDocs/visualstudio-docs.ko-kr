@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441406"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815765"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 
 컨트롤을 보다 쉽게 테스트할 수 있으려면 코딩된 UI 테스트 프레임워크에 대한 지원을 구현합니다. 지원 수준 증가는 점진적으로 추가할 수 있습니다. 기록 및 재생 및 속성 유효성 검사 지원으로 시작합니다. 그런 다음, 그 위에 빌드해 컨트롤의 사용자 지정 속성을 인식하기 위해 코딩된 UI 테스트 빌더를 사용하도록 설정합니다. 생성된 코드에서 이러한 속성에 액세스하려면 사용자 지정 클래스를 제공합니다. 또한 기록 중인 작업의 의도와 가까운 방식으로 코딩된 UI 테스트 빌더가 작업을 캡처하도록 할 수 있습니다.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+ChartControl의 클래스가 CreateAccessabilityInstance 클래스를 통해 ChartControlExtensionPackage의 클래스로 어떻게 확장되는지를 보여 주는 다이어그램](../test/media/cuit_full.png)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원
 
 코딩된 UI 테스트 빌더는 기록 중 발견된 컨트롤에 대한 정보를 캡처하고 해당 세션을 재생하기 위한 코드를 생성합니다. 컨트롤이 액세스 가능성을 지원하지 않을 경우, 코딩된 UI 테스트 빌더는 화면 좌표를 사용하여 작업(예: 마우스 클릭)을 캡처합니다. 테스트를 재생하면 생성된 코드가 동일 화면 좌표에서 동작을 실행합니다. 테스트를 재생할 때 컨트롤이 화면의 다른 위치에 표시되면 생성된 코드가 작업을 수행하는 데 실패합니다. 컨트롤에 대한 액세스 가능성을 구현하지 못하면 테스트가 다른 화면 구성 및 다른 환경에서 재생되는 경우 또는 UI 레이아웃이 변경되는 경우 오류 테스트가 표시될 수 있습니다.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![코딩된 UI 테스트 빌더의 기록 창 스크린샷 일시 중지 단추가 강조 표시되고 ‘ChartControl’ 클라이언트 클릭이 도구 설명에 표시됩니다.](../test/media/cuit_recordnosupport.png)
 
 액세스 가능성을 구현할 경우, 코딩된 UI 테스트 빌더는 테스트를 기록할 때 이를 사용해서 컨트롤에 대한 정보를 캡처합니다. 그런 다음 테스트를 실행하면 컨트롤이 사용자 인터페이스에서 다른 위치에 있더라도 생성된 코드가 컨트롤에 대해 해당 이벤트를 재생합니다. 테스트 작성자는 또한 컨트롤의 기본 속성을 사용해서 어설션을 만들 수 있습니다.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![코딩된 UI 테스트 빌더의 기록 창 스크린샷 일시 중지 단추가 강조 표시되고 ‘A’ 레이블 클릭이 도구 설명에 표시됩니다.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Windows Forms 컨트롤의 기록 및 재생, 속성 유효성 검사 및 탐색을 지원하려면
 다음 절차의 개요 및 <xref:System.Windows.Forms.AccessibleObject>의 자세한 설명에 따라 컨트롤에 대해 액세스 가능성을 구현합니다.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![CreateAccessabilityInstance와 ChartControl.CurveLegend 클래스 간의 관계를 보여 주는 ChartControl의 클래스 다이어그램](../test/media/cuit_accessible.png)
 
 1. <xref:System.Windows.Forms.Control.ControlAccessibleObject>에서 파생되는 클래스를 구현하고 클래스의 개체를 반환하도록 <xref:System.Windows.Forms.Control.AccessibilityObject%2A> 속성을 재정의합니다.
 
@@ -77,11 +77,11 @@ ms.locfileid: "95441406"
 
 기록 및 재생과 속성 유효성 검사를 위한 기본 지원을 구현한 후 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 플러그 인을 구현해서 코딩된 UI 테스트에서 컨트롤의 사용자 지정 속성을 사용할 수 있도록 지정할 수 있습니다. 예를 들어 다음 절차에서는 코딩된 UI 테스트가 차트 컨트롤의 CurveLegend 자식 컨트롤의 State 속성에 액세스할 수 있도록 속성 공급자를 만듭니다.
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Text 컨트롤의 State 속성이 선택된 어설션 추가 창이 부분적으로 표시되어 있는 코딩된 UI 테스트 빌더 주 창의 스크린샷](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>사용자 지정 속성의 유효성 검사를 지원하려면
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![ChartControlExtensionPackage 및 ChartControlIPropertyProvider 클래스가 강조 표시된 ChartControl 및 ChartControlExtension의 클래스 다이어그램](../test/media/cuit_props.png)
 
 1. 설명 문자열에서 다양한 속성 값을 전달하려면 곡선 범례 액세스 가능성 개체의 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 속성을 재정의합니다. 여러 값을 세미콜론(;)으로 구분합니다.
 
@@ -149,7 +149,7 @@ ms.locfileid: "95441406"
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>컨트롤에 액세스하는 특수화 클래스를 추가하려면
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![CurveLegend 클래스가 ChartControlExtensionPackage 아래에 강조 표시된 ChartControl 및 ChartControlExtension의 클래스 다이어그램](../test/media/cuit_codegen.png)
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl>에서 파생된 클래스를 구현하고 생성자의 검색 속성 컬렉션에 이 컨트롤의 형식을 추가합니다.
 
@@ -165,7 +165,7 @@ Visual Studio는 테스트를 기록할 때 각 마우스 및 키보드 이벤�
 
 ### <a name="to-support-intent-aware-actions"></a>의도 인식 작업을 지원하려면
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![ChartControlActionFilter 클래스가 ChartControlExtensionPackage 아래에 강조 표시된 ChartControl 및 ChartControlExtensionPackage 클래스의 다이어그램](../test/media/cuit_actions.png)
 
 1. [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))에서 파생된 작업 필터 클래스를 구현하고 속성 [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) 및 [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110))을 재정의합니다.
 

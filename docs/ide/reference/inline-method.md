@@ -1,5 +1,6 @@
 ---
 title: 인라인 메서드
+description: Visual Studio의 빠른 작업 및 리팩터링 메뉴를 사용하여 인라인 메서드 선언을 리팩터링하고 보다 명확한 구문을 제공하는 방법을 알아봅니다.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403537"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761422"
 ---
 # <a name="inline-method"></a>인라인 메서드
 
@@ -41,11 +42,11 @@ ms.locfileid: "93403537"
     
    인라인 메서드 선언을 제거하려면 **Inline `<QualifiedMethodName>`** (`<QualifiedMethodName>` 인라인)을 선택합니다. 
 
-    ![클래스를 추상으로 설정](media/inline-method-remove-declaration.png)
+    ![‘Inline CreateWidget()' 변환이 선택되고 C# 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/inline-method-remove-declaration.png)
 
    원래 메서드 선언을 유지하려면 **Inline and keep `<QualifiedMethodName>`** (`<QualifiedMethodName>` 인라인 및 유지)을 선택합니다. 
 
-    ![클래스를 추상으로 설정](media/inline-method-preserve-declaration.png)
+    ![‘Inline and keep CreateWidget()' 변환이 선택되고 C# 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/inline-method-preserve-declaration.png)
 
 ## <a name="see-also"></a>참조
 

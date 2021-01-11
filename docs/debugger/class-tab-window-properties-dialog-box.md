@@ -1,5 +1,7 @@
 ---
 title: 창 속성 대화 상자, 클래스 탭 | Microsoft Docs
+description: Visual Studio에서 클래스 탭을 선택하고 포커스를 창 뷰 창으로 이동한 후 창 노드를 선택하고 뷰 > 속성을 선택하여 창 속성 대화 상자를 표시합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565015"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729030"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 클래스 탭
-**클래스** 탭을 사용하면 선택한 창의 클래스에 대한 정보를 표시할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+**클래스** 탭을 사용하면 선택한 창의 클래스에 대한 정보를 표시할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **클래스** 탭에서 다음 설정을 사용할 수 있습니다.
 
@@ -30,7 +32,7 @@ ms.locfileid: "62565015"
 |**클래스 아톰**|**RegisterClass** 호출에서 반환되는 클래스의 아톰입니다.|
 |**인스턴스 핸들**|클래스를 등록한 모듈의 인스턴스 핸들입니다. 인스턴스 핸들은 고유하지 않습니다.|
 |**창 바이트**|이 클래스의 각 창과 연결된 추가 바이트 수입니다. 이러한 바이트의 의미는 애플리케이션에 의해 결정됩니다. DWORD 형식의 바이트 값을 보려면 목록 상자를 확장합니다.|
-|**창 프로시저**|이 클래스의 창을 위한 **WndProc** 함수의 현재 주소입니다. 이 주소는 창이 서브클래싱된 경우 **일반** 탭의 **창 프로시저**와 다릅니다.|
+|**창 프로시저**|이 클래스의 창을 위한 **WndProc** 함수의 현재 주소입니다. 이 주소는 창이 서브클래싱된 경우 **일반** 탭의 **창 프로시저** 와 다릅니다.|
 |**메뉴 이름**|이 클래스의 창과 연결된 주 메뉴의 이름입니다(메뉴가 없는 경우 “none”).|
 |**아이콘 핸들**|이 클래스의 창과 연결된 아이콘의 핸들입니다(아이콘이 없는 경우 “none”).|
 |**커서 핸들**|이 클래스의 창과 연결된 커서의 핸들입니다(커서가 없는 경우 “none”).|

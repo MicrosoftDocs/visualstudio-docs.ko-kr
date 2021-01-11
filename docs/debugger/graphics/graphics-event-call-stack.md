@@ -1,5 +1,7 @@
 ---
 title: 그래픽 이벤트 호출 스택 | Microsoft Docs
+description: 문제가 있는 그래픽 이벤트와 앱의 소스 코드 간 관계를 매핑하는 Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735507"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727752"
 ---
 # <a name="graphics-event-call-stack"></a>그래픽 이벤트 호출 스택
 Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 사용하면 문제가 있는 그래픽 이벤트와 앱의 소스 코드 사이의 관계를 매핑할 수 있습니다.

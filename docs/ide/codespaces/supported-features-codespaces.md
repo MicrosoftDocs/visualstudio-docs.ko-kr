@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928556"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696526"
 ---
 # <a name="supported-visual-studio-features-preview"></a>지원되는 Visual Studio 기능(미리 보기)
 
@@ -27,7 +27,7 @@ Visual Studio는 codespace에 연결할 때 풍부한 개발 환경을 제공합
 이는 **완전한 목록이 아니라** codespace에 연결될 때 Visual Studio의 일반 기능을 설명하는 것입니다.
 
 > [!NOTE]
-> Visual Studio에서 codespace를 사용하는 동안 누락된 기능이 있는 경우 https://developercommunity.visualstudio.com/ 에서 이슈를 열어서 알려 주세요. 이를 통해 Microsoft에서는 가장 필요한 기능의 우선 순위를 지정할 수 있습니다.
+> Visual Studio에서 Codespaces를 사용하는 동안 누락된 기능이 있는 경우 [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)에서 이슈를 열어서 알려 주세요. 이를 통해 Microsoft에서는 가장 필요한 기능의 우선 순위를 지정할 수 있습니다.
 
 > [!NOTE]
 > 아래 설명된 기능은 Visual Studio에 해당하며 다른 두 GitHub Codespaces 클라이언트인 Visual Studio Code 및 브라우저 내 편집기와는 관련이 없습니다.
@@ -108,8 +108,8 @@ IntelliSense, 코드 탐색, 진단 및 제안과 같은 스마트 언어 기능
 
 codespace에 연결된 Visual Studio를 사용하는 경우 로컬로 작업할 때와 동일한 접근성 기능을 사용할 수 있습니다.
 
-* 소스 제어 - 새 [Git 창](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)을 통해 전체 Git을 지원합니다.
-* 접근성 - 디버그된 앱의 appcasting에 액세스할 수 없는 보조 기술의 한 가지 알려진 문제가 있습니다. 해당 제한 사항 외에 로컬 Visual Studio 환경에 아직 존재하지 않는 다른 호환성 문제가 있다고 생각하지 않습니다. 버그를 발견하면 [Developer Community](https://developercommunity.visualstudio.com/)에서 이슈를 제출하여 알려 주세요.
+* 소스 제어 - 새로운 [통합 Git 환경](../git-with-visual-studio.md)을 통해 전체 Git을 지원합니다.
+* 접근성 - 디버그된 앱의 appcasting에 액세스할 수 없는 보조 기술의 한 가지 알려진 문제가 있습니다. 해당 제한 사항 외에 로컬 Visual Studio 환경에 아직 존재하지 않는 다른 호환성 문제가 있다고 생각하지 않습니다. 버그를 발견하면 [Developer Community](https://aka.ms/feedback/report?space=8)에서 이슈를 제출하여 알려 주세요.
 * 게시 - GitHub Actions를 통한 Azure로의 게시는 지원됩니다.
 * 연결된 서비스 - App Insights, KeyVault, Storage, SQL, Redis, Cosmos, openAPI 및 gRPC는 부분적으로 지원됩니다.
 * 테스트 탐색기* - 대부분 지원됩니다.

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Professional 워크로드 및 구성 요소 ID
 titleSuffix: ''
-description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
+description: Visual Studio Professional 워크로드 및 구성 요소 ID를 사용하여 명령줄에서 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성을 지정합니다.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6ac189de45248d277969be3f38e60daba2985ebc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6274396d35756682ad929b051d155897bcafb8e7
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184338"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846997"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Visual Studio Professional 구성 요소 디렉터리
 

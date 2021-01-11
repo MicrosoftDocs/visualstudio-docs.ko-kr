@@ -1,5 +1,7 @@
 ---
 title: 디버깅 오류 및 경고 대화 상자 | Microsoft Docs
+description: Visual Studio에서 애플리케이션을 디버그하는 동안 나타날 수 있는 오류 및 경고 대화 상자 목록을 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599940"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726984"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
 다음은 애플리케이션을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.

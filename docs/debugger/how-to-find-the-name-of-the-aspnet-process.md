@@ -1,5 +1,7 @@
 ---
 title: 실행 중인 ASP.NET 프로세스 찾기 | Microsoft Docs
+description: 실행 중인 ASP.NET 앱을 디버그하는 방법을 알아봅니다. Visual Studio 디버거를 이름으로 ASP.NET 프로세스에 연결합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d692dac1b5770cdee4682af5184649471c2828
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349609"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903443"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>ASP.NET 프로세스의 이름 찾기
 
@@ -29,18 +31,18 @@ ms.locfileid: "85349609"
 
 **ASP.NET 앱을 실행하는 프로세스를 찾으려면:**
 
-1. 앱을 실행하는 동안 Visual Studio에서 **디버그** > **프로세스에 연결**을 선택합니다.
+1. 앱을 실행하는 동안 Visual Studio에서 **디버그** > **프로세스에 연결** 을 선택합니다.
 
 1. **프로세스에 연결** 대화 상자에서 다음 목록에 있는 프로세스 이름의 첫 문자를 입력하거나 검색 상자에 입력합니다. 실행 중인 항목은 ASP.NET 앱을 실행하는 항목입니다. 해당 프로세스에 연결하여 앱을 디버그합니다.
 
-    - *w3wp.exe*는 IIS 6.0 이상입니다.
-    - *aspnet_wp.exe*는 IIS의 이전 버전입니다.
-    - *iisexpress.exe*는 IISExpress입니다.
-    - *dotnet.exe*는 ASP.NET Core입니다.
-    - *inetinfo.exe*는 in-process를 실행하는 이전 ASP 애플리케이션입니다.
+    - *w3wp.exe* 는 IIS 6.0 이상입니다.
+    - *aspnet_wp.exe* 는 IIS의 이전 버전입니다.
+    - *iisexpress.exe* 는 IISExpress입니다.
+    - *dotnet.exe* 는 ASP.NET Core입니다.
+    - *inetinfo.exe* 는 in-process를 실행하는 이전 ASP 애플리케이션입니다.
 
 >[!NOTE]
->Visual Studio 2012 이하 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드는 파일 시스템에 있고 테스트 서버 *WebDev.WebServer.exe* 또는 *WebDev.WebServer40.exe*에서 실행될 수 있습니다. 이 경우 로컬 디버깅을 위해 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스가 아닌 *WebDev.WebServer.exe* 또는 *WebDev.WebServer40.exe*에 연결합니다.
+>Visual Studio 2012 이하 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드는 파일 시스템에 있고 테스트 서버 *WebDev.WebServer.exe* 또는 *WebDev.WebServer40.exe* 에서 실행될 수 있습니다. 이 경우 로컬 디버깅을 위해 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스가 아닌 *WebDev.WebServer.exe* 또는 *WebDev.WebServer40.exe* 에 연결합니다.
 
 **참고 항목:**
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330201"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833314"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -24,17 +24,17 @@ ms.locfileid: "96330201"
 
 유닛 테스트는 소프트웨어 개발 워크플로의 핵심 요소로 사용될 때 코드 품질에 대한 효과가 가장 큽니다. 함수 또는 다른 애플리케이션 코드 블록을 작성하는 즉시 표준, 경계, 잘못된 입력 데이터 사례에 맞게 코드 동작을 확인하고 코드가 가진 모든 명시적 또는 암시적 가정을 확인하는 단위 테스트를 만듭니다. *테스트 기반 개발* 을 사용하여 코드를 작성하기 전에 단위 테스트를 만들고, 이러한 단위 테스트를 기능 사양 및 디자인 설명서로 사용합니다.
 
-코드에서 테스트 프로젝트 및 테스트 메서드를 빠르게 생성하거나, 필요에 따라 테스트를 수동으로 만들 수 있습니다. IntelliTest를 사용하여 .NET 코드를 탐색하는 경우 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. [코드에 대한 단위 테스트를 생성](generate-unit-tests-for-your-code-with-intellitest.md)하는 방법을 알아봅니다.
-
 테스트 탐색기에서는 또한 테스트 탐색기 추가 기능 인터페이스가 구현된 타사 및 오픈 소스 방식의 단위 테스트 프레임워크도 실행할 수 있습니다. 이러한 여러 프레임워크는 Visual Studio 확장 관리자 및 Visual Studio 갤러리를 통해 추가할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
+
+코드에서 테스트 프로젝트 및 테스트 메서드를 빠르게 생성하거나, 필요에 따라 테스트를 수동으로 만들 수 있습니다. IntelliTest를 사용하여 .NET 코드를 탐색하는 경우 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. [.NET 코드에 대한 단위 테스트를 생성](generate-unit-tests-for-your-code-with-intellitest.md)하는 방법을 알아봅니다.
 
 ## <a name="get-started"></a>시작
 
 코딩으로 직접 이동하는 단위 테스트에 대한 설명을 보려면 다음 항목 중 하나를 참조하세요.
 
-- [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [연습: .NET 코드의 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [연습: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Visual Studio에서 C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>단위 테스트 프로젝트 및 테스트 메서드 만들기
 
-코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다. 타사 프레임워크로 단위 테스트를 만들려면 다음 확장 기능 중 하나가 설치되어 있어야 합니다. [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 또는 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+C#의 경우 코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다. 타사 프레임워크로 코드에서 단위 테스트를 만들려면 다음 확장 기능 중 하나가 설치되어 있어야 합니다. [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 또는 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). C#을 사용하지 않는 경우 이 섹션을 건너뛰고 [수동으로 단위 테스트 프로젝트 및 단위 테스트 만들기](#create-the-unit-test-project-and-unit-tests-manually)로 이동합니다.
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>단위 테스트 프로젝트 및 단위 테스트 스텁 생성
 
@@ -101,7 +101,7 @@ public void Withdraw(double amount)
    ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > **단위 테스트 만들기** 메뉴 명령은 관리 코드에만 사용할 수 있습니다.
+   > **단위 테스트 만들기** 메뉴 명령은 C# 코드에만 사용할 수 있습니다.
    ::: moniker-end
 
 2. **확인** 을 클릭하여 단위 테스트를 만드는 기본값을 그대로 사용하거나, 단위 테스트 프로젝트와 단위 테스트를 만들고 이름을 지정하는 데 사용되는 값을 변경합니다. 단위 테스트 메서드에 기본적으로 추가되는 코드를 선택할 수 있습니다.
@@ -264,7 +264,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![Visual Studio 테스트 탐색기 도구 모음에 있는 병렬 테스트 실행 토글 단추의 스크린샷](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
 ::: moniker-end
 

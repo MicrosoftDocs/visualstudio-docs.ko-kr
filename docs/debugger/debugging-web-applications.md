@@ -1,5 +1,7 @@
 ---
 title: 웹 애플리케이션 디버깅 | Microsoft Docs
+description: ASP.NET 앱, JavaScript 앱, TypeScript 앱, AJAX 스크립트 앱 등 다양한 유형의 웹 애플리케이션을 디버그하는 데 도움이 되는 링크를 찾을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600126"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728137"
 ---
 # <a name="debugging-web-applications"></a>웹 애플리케이션 디버깅
 
@@ -38,7 +40,7 @@ ms.locfileid: "89600126"
 
 - 스크립트 문서 보기
 
-  **솔루션 탐색기** 에서 서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수 있습니다. **솔루션 탐색기**에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [방법: 스크립트 문서 보기](../debugger/how-to-view-script-documents.md)를 참조하세요.
+  **솔루션 탐색기** 에서 서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수 있습니다. **솔루션 탐색기** 에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [방법: 스크립트 문서 보기](../debugger/how-to-view-script-documents.md)를 참조하세요.
 
 - AJAX 스크립트 애플리케이션 디버깅
 

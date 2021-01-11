@@ -1,5 +1,7 @@
 ---
 title: 힙 할당 함수의 디버그 버전 | Microsoft Docs
+description: C 런타임 라이브러리에서 힙 할당 함수의 디버그 버전을 사용합니다. 이러한 함수는 _dbg가 추가된 릴리스 버전과 이름이 같습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738368"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727075"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>힙 할당 함수의 디버그 버전
 C 런타임 라이브러리에 힙 할당 함수의 특별한 디버그 버전이 있습니다. 이러한 함수는 _dbg가 추가된 릴리스 버전과 이름이 같습니다. 이 항목에서는 `malloc`과 `_malloc_dbg`를 예로 들어 CRT 함수의 릴리스 버전과 _dbg 버전의 차이를 설명합니다.

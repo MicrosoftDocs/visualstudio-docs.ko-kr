@@ -1,5 +1,7 @@
 ---
 title: 레지스터 그룹 표시 및 숨기기 | Microsoft Docs
+description: 주소 수준 디버깅을 사용하는 경우에 사용할 수 있는 레지스터 창은 레지스터를 그룹으로 구성합니다. 표시되는 그룹을 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a75af7d7ef279fdd3ca82ea9dced941106f0275
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c14d325d417606c6945d51d99461d34ccd9a4bc8
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852363"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903040"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>방법: 레지스터 그룹 표시 및 숨기기(C#, C++, Visual Basic, F#)
 

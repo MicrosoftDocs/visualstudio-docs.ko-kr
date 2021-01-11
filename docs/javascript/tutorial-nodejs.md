@@ -1,6 +1,6 @@
 ---
 title: Node.js 및 Express 앱 만들기
-description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
+description: 이 자습서에서는 Visual Studio에서 Express 웹 애플리케이션 프레임워크를 사용하여 간단한 Node.js 애플리케이션을 만드는 방법을 알아봅니다.
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744894"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846922"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 
@@ -34,7 +34,7 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 
 ::: moniker-end
 
-이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
+이 자습서에서는 다음 작업 방법을 알아봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 일부 코드를 추가합니다.
@@ -63,13 +63,13 @@ Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리�
 * Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
     ::: moniker range=">=vs-2019"
-    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
 
-    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
     ![VS 설치 관리자에서 Node.js 워크로드](../ide/media/quickstart-nodejs-workload.png)
 
@@ -77,13 +77,13 @@ Express는 웹 애플리케이션 프레임워크로, Node.js가 웹 애플리�
 
     아직 설치하지 않은 경우 외부 프레임워크 및 라이브러리와의 호환성을 최대화하기 위해 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치하는 것이 좋습니다. Node.js는 32비트 및 64비트 아키텍처용으로 빌드됩니다. Node.js 워크로드에 포함된 Visual Studio의 Node.js 도구는 두 버전을 모두 지원합니다. 하나만 필요하며 Node.js 설치 관리자는 한 번에 하나의 설치만 지원합니다.
     
-    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성**을 선택하고 **Node.exe 경로**를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
+    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성** 을 선택하고 **Node.exe 경로** 를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
 
     이 자습서는 Node.js 8.10.0를 사용하여 테스트했습니다.
 
 ## <a name="create-a-new-nodejs-project"></a>새 Node.js 프로젝트 만들기
 
-Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
+Visual Studio는 *프로젝트* 에서 단일 애플리케이션에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
 
 이 자습서에서는 Node.js 및 Express 앱에 대한 코드를 포함한 간단한 프로젝트부터 시작합니다.
 
@@ -92,10 +92,10 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 1. 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **새 기본 Azure Node.js Express 4 애플리케이션 만들기**(JavaScript)를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력하여 검색 상자를 열고 **Node.js** 를 입력한 다음, **새 기본 Azure Node.js Express 4 애플리케이션 만들기**(JavaScript)를 선택합니다. 표시되는 대화 상자에서 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 애플리케이션**을 선택한 후 **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript** 를 확장한 다음, **Node.js** 를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 애플리케이션** 을 선택한 후 **확인** 을 선택합니다.
     ::: moniker-end
     **기본 Azure Node.js Express 4 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
@@ -103,25 +103,25 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
     ![프로젝트 구조](../javascript/media/tutorial-project-structure.png)
 
-    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
+    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
 
     (2) 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
+    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json* 에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
-    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
+    (4) *package.json* 은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
 
-    (5) *app.js*와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *app.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
+    (5) *app.js* 와 같은 프로젝트 파일은 프로젝트 노드 아래 표시됩니다. *app.js* 는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정** 을 선택하여 시작 파일을 설정할 수 있습니다.
 
 1. **npm** 노드를 열고 모든 필수 npm 패키지가 존재하는지 확인합니다.
 
-    패키지가 누락된(느낌표 아이콘) 경우는 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 설치**를 선택합니다.
+    패키지가 누락된(느낌표 아이콘) 경우는 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 설치** 를 선택합니다.
 
 ## <a name="add-some-code"></a>일부 코드를 추가합니다.
 
-애플리케이션은 프런트 엔드 JavaScript 프레임워크에 대해 Pug를 사용합니다. Pug은 HTML로 컴파일되는 간단한 표시 코드를 사용합니다. (Pug은 *app.js*에서 뷰 엔진으로 설정됩니다. *app.js*에서 뷰 엔진을 설정하는 코드는 `app.set('view engine', 'pug');`입니다.)
+애플리케이션은 프런트 엔드 JavaScript 프레임워크에 대해 Pug를 사용합니다. Pug은 HTML로 컴파일되는 간단한 표시 코드를 사용합니다. (Pug은 *app.js* 에서 뷰 엔진으로 설정됩니다. *app.js* 에서 뷰 엔진을 설정하는 코드는 `app.set('view engine', 'pug');`입니다.)
 
-1. 솔루션 탐색기(오른쪽 창)에서 Views 폴더를 연 다음, *index.pug*를 엽니다.
+1. 솔루션 탐색기(오른쪽 창)에서 Views 폴더를 연 다음, *index.pug* 를 엽니다.
 
 1. 콘텐츠를 다음 표시로 바꿉니다.
 
@@ -147,7 +147,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
     앞의 코드는 제목 및 환영 메시지가 있는 HTML 페이지를 동적으로 생성하기 위해 사용됩니다. 페이지에는 단추를 누를 때마다 변경되는 이미지를 표시하는 코드도 포함됩니다.
 
-1. Routes 폴더에서 *index.js*를 엽니다.
+1. Routes 폴더에서 *index.js* 를 엽니다.
 
 1. `router.get` 호출 앞에 다음 코드를 추가합니다.
 
@@ -172,7 +172,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
     });
     ```
 
-    앞의 코드는 Express 라우터 개체를 사용하여 현재 페이지를 설정하고 페이지를 렌더링하여 제목 및 데이터 개체를 페이지에 전달합니다. *index.pug* 파일은 *index.js*가 실행될 때 로드될 페이지로 여기에 지정됩니다. *index.js*는 *app.js* 코드에서 기본 경로로 구성됩니다(표시되지 않음).
+    앞의 코드는 Express 라우터 개체를 사용하여 현재 페이지를 설정하고 페이지를 렌더링하여 제목 및 데이터 개체를 페이지에 전달합니다. *index.pug* 파일은 *index.js* 가 실행될 때 로드될 페이지로 여기에 지정됩니다. *index.js* 는 *app.js* 코드에서 기본 경로로 구성됩니다(표시되지 않음).
 
     Visual Studio의 여러 기능을 보여주기 위해 `res.render`가 포함된 코드 줄에 의도적인 오류가 있습니다. 앱을 실행하기 전에 오류를 해결해야 합니다. 다음 섹션에서 설명합니다.
 
@@ -180,7 +180,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
 IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니다.
 
-1. *index.js*에서 `res.render`을 포함한 코드 줄으로 이동합니다.
+1. *index.js* 에서 `res.render`을 포함한 코드 줄으로 이동합니다.
 
 1. `data` 문자열 뒤에 커서를 놓고 `: get`을 입력하면 IntelliSense가 앞서 코드에서 정의된 `getData` 함수를 표시합니다. `getData`를 선택합니다.
 
@@ -194,7 +194,7 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 
     이 메시지의 마지막 줄에 JavaScript 인터프리터가 쉼표(`,`)를 예상했다는 메시지가 나타납니다.
 
-1. 아래쪽 창에서 **오류 목록** 탭을 클릭하고 보고된 문제 유형에 대해 **빌드 + IntelliSense**를 선택합니다.
+1. 아래쪽 창에서 **오류 목록** 탭을 클릭하고 보고된 문제 유형에 대해 **빌드 + IntelliSense** 를 선택합니다.
 
     경고 및 설명이 파일 이름 및 줄 번호와 함께 표시됩니다.
 
@@ -208,7 +208,7 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 
 다음으로 Visual Studio 디버거가 연결된 앱을 실행하려고 합니다. 그렇게 하기 전에 중단점을 설정해야 합니다.
 
-1. *index.js*에서 다음 코드 줄 앞의 왼쪽 여백을 클릭하여 중단점을 설정합니다.
+1. *index.js* 에서 다음 코드 줄 앞의 왼쪽 여백을 클릭하여 중단점을 설정합니다.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -227,7 +227,7 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
     ![디버그 대상 선택](../javascript/media/tutorial-nodejs-deploy-target.png)
     ::: moniker-end
 
-    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택** 을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. **F5**(**디버그** > **디버깅 시작**) 키를 눌러 애플리케이션을 실행합니다.
 
@@ -251,11 +251,11 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 
 ## <a name="optional-publish-to-azure-app-service"></a>(선택 사항) Azure App Service에 게시
 
-1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+1. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
    ![Azure App Service에 게시](../javascript/media/tutorial-nodejs-publish-to-azure.png)
 
-1. **Microsoft Azure App Service**를 선택합니다.
+1. **Microsoft Azure App Service** 를 선택합니다.
 
     **App Service** 대화 상자에서는 Azure 계정에 로그인하여 기존 Azure 구독에 로그인할 수 있습니다.
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441250"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833236"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -62,7 +62,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 4. **대상 프레임워크(모든 구성)** 드롭다운 목록을 사용하여 다음 그림의 설명선 B에 표시된 대로 대상 프레임워크를 **.NET Framework 3.5** 이상으로 변경합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-     ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![고급 컴파일러 설정 대화 상자의 스크린샷 대상 프레임워크 드롭다운 목록이 강조 표시되어 있고 값은 ‘.NET Frameowrk 3.5’로 설정되어 있습니다.](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>C# 단위 테스트 프로젝트의 대상 재지정
 
@@ -74,7 +74,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 3. **애플리케이션** 탭에서 **대상 프레임워크** 를 선택합니다. 드롭다운 목록에서 다음 그림과 같이 **.NET Framework 3.5** 이상 버전을 선택합니다. 클라이언트 버전을 지정하면 안 됩니다.
 
-   ![대상 프레임워크 드롭다운 목록](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![대상 프레임워크 드롭다운 목록의 위치가 강조 표시된 솔루션 탐색기 속성 창의 애플리케이션 탭 그림](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>C++/CLI 단위 테스트 프로젝트의 대상 재지정
 

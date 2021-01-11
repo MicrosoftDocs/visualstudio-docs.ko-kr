@@ -1,6 +1,6 @@
 ---
 title: Node.js 및 React 앱 만들기
-description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
+description: Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만드는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760088"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815778"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -60,13 +60,13 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 * Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
     ::: moniker range=">=vs-2019"
-    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
 
-    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
     ![VS 설치 관리자에서 Node.js 워크로드](../ide/media/quickstart-nodejs-workload.png)
 
@@ -76,7 +76,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     아직 설치하지 않은 경우 외부 프레임워크 및 라이브러리와의 호환성을 최대화하기 위해 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치하는 것이 좋습니다. Node.js는 32비트 및 64비트 아키텍처용으로 빌드됩니다. Node.js 워크로드에 포함된 Visual Studio의 Node.js 도구는 두 버전을 모두 지원합니다. 하나만 필요하며 Node.js 설치 관리자는 한 번에 하나의 설치만 지원합니다.
     
-    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성**을 선택하고 **Node.exe 경로**를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
+    일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하여 **속성** 을 선택하고 **Node.exe 경로** 를 설정합니다). Node.js의 전역 설치를 사용하거나 각 Node.js 프로젝트에서 로컬 인터프리터 경로를 지정할 수 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -87,12 +87,12 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 1. 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **빈 Node.js 웹 애플리케이션 - JavaScript**를 선택합니다. (이 자습서에서는 TypeScript 컴파일러를 사용하지만 단계에서는 **JavaScript** 템플릿으로 시작해야 합니다.)
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 입력하여 검색 상자를 열고 **Node.js** 를 입력한 다음, **빈 Node.js 웹 애플리케이션 - JavaScript** 를 선택합니다. (이 자습서에서는 TypeScript 컴파일러를 사용하지만 단계에서는 **JavaScript** 템플릿으로 시작해야 합니다.)
     
-    표시되는 대화 상자에서 **만들기**를 선택합니다.
+    표시되는 대화 상자에서 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택하고, 이름을 **NodejsWebAppBlank**로 입력하고, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript** 를 확장한 다음, **Node.js** 를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션** 을 선택하고, 이름을 **NodejsWebAppBlank** 로 입력하고, **확인** 을 선택합니다.
     ::: moniker-end
     **빈 Node.js 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
@@ -100,15 +100,15 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ![솔루션 탐색기에서 Node.js 프로젝트](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
+    (1) **bold** 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 파일 시스템에서 이 프로젝트는 프로젝트 폴더의 *.njsproj* 파일로 표시됩니다. 속성을 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택하여 프로젝트와 연결된 환경 변수와 속성을 설정할 수 있습니다. 프로젝트 파일이 Node.js 프로젝트 소스에 사용자 지정 변경을 하지 않으므로 다른 개발 도구와 라운드트립을 수행할 수 있습니다.
 
     (2) 최상위 수준은 기본적으로 프로젝트와 이름이 동일한 솔루션입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다.
 
-    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json*에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
+    (3) npm 노드에는 설치된 모든 npm 패키지가 표시됩니다. 대화 상자를 사용하여 npm 패키지를 검색하고 설치하거나 *package.json* 에서 설정 및 npm 노드에서 마우스 오른쪽 단추로 클릭 옵션을 사용하여 업데이트 패키지를 설치 및 업데이트하려면 Npm 노드를 마우스 오른쪽 단추로 클릭할 수 있습니다.
 
-    (4) *package.json*은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
+    (4) *package.json* 은 로컬로 설치된 패키지에 대한 패키지 버전 및 종속성을 관리하기 위해 npm에서 사용하는 파일입니다. 자세한 내용은 [npm 패키지 관리](../javascript/npm-package-management.md)를 참조하세요.
 
-    (5) *server.js*와 같은 프로젝트 파일은 프로젝트 노드 아래에 표시됩니다. *server.js*는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정**을 선택하여 시작 파일을 설정할 수 있습니다.
+    (5) *server.js* 와 같은 프로젝트 파일은 프로젝트 노드 아래에 표시됩니다. *server.js* 는 프로젝트 시작 파일이므로 **굵게** 표시됩니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **Node.js 시작 파일로 설정** 을 선택하여 시작 파일을 설정할 수 있습니다.
 
 ## <a name="add-npm-packages"></a>NPM 패키지 추가
 
@@ -123,19 +123,19 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 * webpack
 * webpack-cli
 
-1. 솔루션 탐색기(오른쪽 창)의 프로젝트에서 **npm** 노드를 마우스 오른쪽 버튼으로 클릭하고 **새 npm 패키지 설치**를 선택합니다.
+1. 솔루션 탐색기(오른쪽 창)의 프로젝트에서 **npm** 노드를 마우스 오른쪽 버튼으로 클릭하고 **새 npm 패키지 설치** 를 선택합니다.
 
     **새 npm 패키지 설치** 대화 상자에서 최신 패키지 버전 설치 또는 버전 지정을 선택할 수 있습니다. 이러한 패키지의 현재 버전 설치를 선택하고 나중에 예기치 않은 오류가 발생하면 나중에 이러한 단계에서 설명된 정확한 패키지 버전을 설치해야 할 수 있습니다.
 
-1. **새 npm 패키지 설치** 대화 상자에서 React 패키지를 검색하고 **패키지 설치**를 선택하여 설치합니다.
+1. **새 npm 패키지 설치** 대화 상자에서 React 패키지를 검색하고 **패키지 설치** 를 선택하여 설치합니다.
 
     ![npm 패키지 설치](../javascript/media/tutorial-nodejs-react-install-package.png)
 
-    패키지를 설치 진행률을 확인하려면 **출력** 창을 선택합니다(**출력 보기** 필드에서 **Npm**선택). 설치 시 패키지가 **npm** 노드 아래 표시됩니다.
+    패키지를 설치 진행률을 확인하려면 **출력** 창을 선택합니다(**출력 보기** 필드에서 **Npm** 선택). 설치 시 패키지가 **npm** 노드 아래 표시됩니다.
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
-1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
+1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json* 에 다음 코드를 붙여넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
 
     ```json
     "dependencies": {
@@ -154,18 +154,18 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 1. 변경 내용을 저장합니다.
 
-1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 설치**를 선택합니다.
+1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 설치** 를 선택합니다.
 
     이 명령은 npm 설치 명령을 직접 실행합니다.
 
-    아래쪽 창에서 **출력** 창을 선택하여 패키지 설치 진행률을 확인합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다. 출력을 보려면 **출력** 창의 **출력 표시** 필드에서 **Npm**을 선택합니다.
+    아래쪽 창에서 **출력** 창을 선택하여 패키지 설치 진행률을 확인합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다. 출력을 보려면 **출력** 창의 **출력 표시** 필드에서 **Npm** 을 선택합니다.
 
     설치된 후 솔루션 탐색기에 표시된 대로 여기 npm 모듈이 있습니다.
 
     ![NPM 패키지](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
-    > 명령줄을 사용하여 npm 패키지를 설치하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다. 표준 Node.js 명령을 사용하여 패키지를 설치합니다.
+    > 명령줄을 사용하여 npm 패키지를 설치하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기** 를 선택합니다. 표준 Node.js 명령을 사용하여 패키지를 설치합니다.
 
 ## <a name="add-project-files"></a>프로젝트 파일 추가
 
@@ -178,19 +178,19 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 이 간단한 앱에 대해서는 프로젝트 루트에서 새 프로젝트 파일을 추가합니다. (대부분의 앱에서 일반적으로 하위 폴더에 파일을 추가하고 상대 경로 참조를 적절하게 조정합니다.)
 
-1. 솔루션 탐색기에서 **NodejsWebAppBlank** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
+1. 솔루션 탐색기에서 **NodejsWebAppBlank** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** 을 선택합니다.
 
-1. **새 항목 추가** 대화 상자에서 **TypeScript JSX 파일**을 선택하고 *app.tsx* 이름을 입력하고 **추가** 또는 **확인**을 선택합니다.
+1. **새 항목 추가** 대화 상자에서 **TypeScript JSX 파일** 을 선택하고 *app.tsx* 이름을 입력하고 **추가** 또는 **확인** 을 선택합니다.
 
-1. *webpack-config.js*를 추가하려면 이러한 단계를 반복합니다. TypeScript JSX 파일 대신 **JavaScript 파일**을 선택합니다.
+1. *webpack-config.js* 를 추가하려면 이러한 단계를 반복합니다. TypeScript JSX 파일 대신 **JavaScript 파일** 을 선택합니다.
 
-1. *index.html*을 프로젝트에 추가하려면 동일한 단계를 반복합니다. JavaScript 파일 대신 **HTML 파일**을 선택합니다.
+1. *index.html* 을 프로젝트에 추가하려면 동일한 단계를 반복합니다. JavaScript 파일 대신 **HTML 파일** 을 선택합니다.
 
-1. *tsconfig.json*을 프로젝트에 추가하려면 동일한 단계를 반복합니다. JavaScript 파일 대신 **TypeScript JSON 구성 파일**을 선택합니다.
+1. *tsconfig.json* 을 프로젝트에 추가하려면 동일한 단계를 반복합니다. JavaScript 파일 대신 **TypeScript JSON 구성 파일** 을 선택합니다.
 
 ## <a name="add-app-code"></a>앱 코드 추가
 
-1. *server.js*를 열고 기존 코드를 다음 코드로 바꿉니다.
+1. *server.js* 를 열고 기존 코드를 다음 코드로 바꿉니다.
 
     ```javascript
     'use strict';
@@ -210,9 +210,9 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     });
     ```
 
-   이전 코드는 Express를 사용하여 웹 애플리케이션 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+   이전 코드는 Express를 사용하여 웹 애플리케이션 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.
 
-1. *app.tsx*를 열고 다음 코드를 추가합니다.
+1. *app.tsx* 를 열고 다음 코드를 추가합니다.
 
     ```javascript
     declare var require: any
@@ -233,7 +233,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     위의 코드는 JSX 구문과 React를 사용하여 간단한 메시지를 표시합니다.
 
-1. *index.html*을 열고 **body** 섹션을 다음 코드로 바꿉니다.
+1. *index.html* 을 열고 **body** 섹션을 다음 코드로 바꿉니다.
 
     ```html
     <body>
@@ -243,13 +243,13 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     </body>
     ```
 
-    이 HTML 페이지는 일반 JavaScript로 트랜스파일된 JSX 및 React 코드를 포함하는 *app-bundle.js*를 로드합니다. 현재 *app-bundle.js*는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
+    이 HTML 페이지는 일반 JavaScript로 트랜스파일된 JSX 및 React 코드를 포함하는 *app-bundle.js* 를 로드합니다. 현재 *app-bundle.js* 는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
 
 ## <a name="configure-webpack-and-typescript-compiler-options"></a>Webpack 및 TypeScript 컴파일러 옵션 구성
 
-위의 단계에서 *webpack-config.js*를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
+위의 단계에서 *webpack-config.js* 를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
 
-1. 솔루션 탐색기에서 *webpack-config.js*를 열고 다음 코드를 추가합니다.
+1. 솔루션 탐색기에서 *webpack-config.js* 를 열고 다음 코드를 추가합니다.
 
     ```json
     module.exports = {
@@ -278,7 +278,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     webpack 구성 코드는 webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
 
-1. *tsconfig.json*을 열고 다음 코드로 기본 코드를 대체하여 TypeScript 컴파일러 옵션을 지정합니다.
+1. *tsconfig.json* 을 열고 다음 코드로 기본 코드를 대체하여 TypeScript 컴파일러 옵션을 지정합니다.
 
     ```json
     {
@@ -300,11 +300,11 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     }
     ```
 
-    소스 파일로 *app.tsx*를 지정합니다.
+    소스 파일로 *app.tsx* 를 지정합니다.
 
 ## <a name="transpile-the-jsx"></a>JSX 트랜스파일
 
-1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기**를 선택합니다.
+1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **여기서 명령 프롬프트 열기** 를 선택합니다.
 
 1. 명령 프롬프트에 다음 명령을 입력합니다.
 
@@ -314,25 +314,25 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ![webpack 실행](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
-    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이 이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될 수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
+    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이 이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될 수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json* 을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
-1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 폴더**를 선택한 다음, *dist* 폴더를 선택하고 **폴더 선택**을 선택합니다.
+1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 폴더** 를 선택한 다음, *dist* 폴더를 선택하고 **폴더 선택** 을 선택합니다.
 
-    Visual Studio는 *app-bundle.js* 및 *app-bundle.js.map*을 포함하는 프로젝트에 *dist* 폴더를 추가합니다.
+    Visual Studio는 *app-bundle.js* 및 *app-bundle.js.map* 을 포함하는 프로젝트에 *dist* 폴더를 추가합니다.
 
-1. *app-bundle.js*를 열고 트랜스파일된 JavaScript 코드를 봅니다.
+1. *app-bundle.js* 를 열고 트랜스파일된 JavaScript 코드를 봅니다.
 
-1. 외부에서 수정된 파일을 다시 로드하라는 메시지가 나타나면 **모두 예**를 선택합니다.
+1. 외부에서 수정된 파일을 다시 로드하라는 메시지가 나타나면 **모두 예** 를 선택합니다.
 
     ![수정한 파일 로드](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일합니다.
+*app.tsx* 를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일합니다.
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>빌드 스크립트를 추가하여 JSX를 트랜스파일
 
 Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드할 때 JSX를 변환 컴파일할 수 있습니다.
 
-* *package.json*을 열고 `dependencies` 섹션 뒤에 다음 섹션을 추가합니다.
+* *package.json* 을 열고 `dependencies` 섹션 뒤에 다음 섹션을 추가합니다.
 
    ```json
    "scripts": {
@@ -351,7 +351,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택** 을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -367,9 +367,9 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 ## <a name="set-a-breakpoint-and-run-the-app"></a>중단점 설정 및 앱 실행
 
-1. *server.js*에서 `staticPath` 선언 왼쪽의 여백을 클릭해 중단점을 설정합니다.
+1. *server.js* 에서 `staticPath` 선언 왼쪽의 여백을 클릭해 중단점을 설정합니다.
 
-    ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![server.js에 대한 Visual Studio 코드 창의 스크린샷 왼쪽 제본용 여백의 빨간색 점은 중단점이 staticPath 선언에 대해 설정되었음을 나타냅니다.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     중단점은 신뢰할 수 있는 디버깅의 가장 기본적이고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
@@ -379,7 +379,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 1. 앱을 계속하려면 **F5** 키를 누릅니다.
 
-1. Chrome 개발자 도구 또는 Microsoft Edge용 F12 도구를 사용하려는 경우 **F12**를 누릅니다. JavaScript 콘솔을 사용하여 앱과 상호 작용하고 DOM을 검사하려면 이러한 도구를 사용할 수 있습니다.
+1. Chrome 개발자 도구 또는 Microsoft Edge용 F12 도구를 사용하려는 경우 **F12** 를 누릅니다. JavaScript 콘솔을 사용하여 앱과 상호 작용하고 DOM을 검사하려면 이러한 도구를 사용할 수 있습니다.
 
 1. 콘솔 및 웹 브라우저를 닫습니다.
 
@@ -390,7 +390,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 ### <a name="prepare-the-browser-for-debugging"></a>디버그할 브라우저 준비
 
 ::: moniker range=">=vs-2019"
-이 시나리오에서는 현재 IDE에서 **Microsoft Edge 베타**라고 되어 있는 Microsoft Edge(Chromium) 또는 Chrome을 사용합니다.
+이 시나리오에서는 현재 IDE에서 **Microsoft Edge 베타** 라고 되어 있는 Microsoft Edge(Chromium) 또는 Chrome을 사용합니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
 이 시나리오에서는 Chrome을 사용합니다.
@@ -407,7 +407,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 2. 디버깅을 사용하도록 설정된 상태로 브라우저를 시작합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Microsoft Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
+    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가** 를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Microsoft Edge** 또는 **디버깅 포함 Chrome** 과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
 
     ![디버깅 사용 설정 상태로 열도록 브라우저 설정](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -421,7 +421,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     ::: moniker-end
 
     ::: moniker range="vs-2017"
-    Windows **시작** 단추(**실행**을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
+    Windows **시작** 단추(**실행** 을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -432,19 +432,19 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 ### <a name="attach-the-debugger-to-client-side-script"></a>클라이언트 쪽 스크립트에 디버거 연결
 
-1. Visual Studio로 전환한 다음 소스 코드에서 *app-bundle.js* 또는 *app.tsx*로 중단점을 설정합니다.
+1. Visual Studio로 전환한 다음 소스 코드에서 *app-bundle.js* 또는 *app.tsx* 로 중단점을 설정합니다.
 
-    *app-bundle.js*의 경우 다음 그림에 표시된 것처럼 `render()` 함수에서 중단점을 설정합니다.
+    *app-bundle.js* 의 경우 다음 그림에 표시된 것처럼 `render()` 함수에서 중단점을 설정합니다.
 
-    ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![app-bundle.js에 대한 Visual Studio 코드 창의 스크린샷 왼쪽 제본용 여백의 빨간색 점은 중단점이 render 함수에 설정되어 있음을 나타냅니다.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    트랜스파일된 *app-bundle.js* 파일에서 `render()` 함수를 찾으려면 **Ctrl**+**F**를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
+    트랜스파일된 *app-bundle.js* 파일에서 `render()` 함수를 찾으려면 **Ctrl**+**F** 를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
 
-    *app.tsx*의 경우 `return` 문에서 `render()` 함수 내부에 중단점을 설정합니다.
+    *app.tsx* 의 경우 `return` 문에서 `render()` 함수 내부에 중단점을 설정합니다.
 
-    ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![app.tsx에 대한 Visual Studio 코드 창의 스크린샷 왼쪽 제본용 여백의 빨간색 점은 중단점이 render 함수의 return 문에 설정되어 있음을 나타냅니다.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. *.tsx* 파일(*app-bundle.js* 아님)에서 중단점을 설정하는 경우 *webpack-config.js*를 업데이트해야 합니다. 다음 코드를
+2. *.tsx* 파일(*app-bundle.js* 아님)에서 중단점을 설정하는 경우 *webpack-config.js* 를 업데이트해야 합니다. 다음 코드를
 
     ```javascript
     output: {
@@ -452,7 +452,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     },
     ```
 
-    이 코드로 바꿉니다.
+    바꿉니다.
 
     ```javascript
     output: {
@@ -461,7 +461,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     },
     ```
 
-    Visual Studio에서 디버깅을 사용하도록 설정하는 개발 전용 설정입니다. 이 설정을 사용하면 앱을 빌드할 때 소스 맵 파일 *app-bundle.js.map*에서 생성된 참조를 재정의할 수 있습니다. 기본적으로 소스 맵 파일의 webpack 참조에는 Visual Studio에서 소스 파일 *app.tsx*를 찾을 수 없도록 하는 *webpack:///* 접두사가 포함되어 있습니다. 특히 이 변경을 수행하면 소스 파일 *app.tsx*에 대한 참조가 *webpack:///./app.tsx*에서 *./app.tsx*로 변경되어 디버깅을 사용할 수 있습니다.
+    Visual Studio에서 디버깅을 사용하도록 설정하는 개발 전용 설정입니다. 이 설정을 사용하면 앱을 빌드할 때 소스 맵 파일 *app-bundle.js.map* 에서 생성된 참조를 재정의할 수 있습니다. 기본적으로 소스 맵 파일의 webpack 참조에는 Visual Studio에서 소스 파일 *app.tsx* 를 찾을 수 없도록 하는 *webpack:///* 접두사가 포함되어 있습니다. 특히 이 변경을 수행하면 소스 파일 *app.tsx* 에 대한 참조가 *webpack:///./app.tsx* 에서 *./app.tsx* 로 변경되어 디버깅을 사용할 수 있습니다.
 
 3. Visual Studio에서 디버그 대상으로 대상 브라우저를 선택하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
 
@@ -471,21 +471,21 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
     앱이 새 브라우저 탭에서 열립니다.
 
-4. **디버그** > **프로세스에 연결**을 선택합니다.
+4. **디버그** > **프로세스에 연결** 을 선택합니다.
 
     > [!TIP]
-    > Visual Studio 2017부터 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결**을 선택하여 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
+    > Visual Studio 2017부터 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결** 을 선택하여 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
 
 5. **프로세스에 연결** 대화 상자에서 연결할 수 있는 브라우저 인스턴스의 필터링된 목록을 가져옵니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019의 **연결 대상** 필드에서 대상 브라우저에 대해 올바른 디버거 **JavaScript(Chrome)** 또는 **JavaScript(Microsoft Edge - Chromium)** 를 선택하고 필터 상자에 **chrome** 또는 **edge**를 입력하여 검색 결과를 필터링합니다.
+    Visual Studio 2019의 **연결 대상** 필드에서 대상 브라우저에 대해 올바른 디버거 **JavaScript(Chrome)** 또는 **JavaScript(Microsoft Edge - Chromium)** 를 선택하고 필터 상자에 **chrome** 또는 **edge** 를 입력하여 검색 결과를 필터링합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017의 **연결 대상** 필드에서 **WebKit 코드**를 선택하고 필터 상자에 **chrome**을 입력해 검색 결과를 필터링합니다.
+    Visual Studio 2017의 **연결 대상** 필드에서 **WebKit 코드** 를 선택하고 필터 상자에 **chrome** 을 입력해 검색 결과를 필터링합니다.
     ::: moniker-end
 
-6. 올바른 호스트 포트(이 예제에서는 localhost)를 사용하여 브라우저 프로세스를 선택하고 **연결**을 선택합니다.
+6. 올바른 호스트 포트(이 예제에서는 localhost)를 사용하여 브라우저 프로세스를 선택하고 **연결** 을 선택합니다.
 
     올바른 브라우저 인스턴스를 선택하는 데 도움이 되도록 포트(1337)가 **제목** 필드에 나타날 수도 있습니다.
 
@@ -507,16 +507,16 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
     디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다. 기본 디버깅 기능에 대한 자세한 내용은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
-    환경 및 브라우저 상태와 함께 이전에 수행한 단계에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
+    환경 및 브라우저 상태와 함께 이전에 수행한 단계에 따라 *app.tsx* 에서 매핑된 위치 또는 *app-bundle.js* 에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
-   * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
+   * *app.tsx* 에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결** 을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
 
       * 디버그 모드에서 브라우저를 실행할 수 있도록 Chrome 확장 프로그램(작업 관리자 사용)을 비롯한 모든 브라우저 인스턴스를 닫았습니다. 디버그 모드에서 브라우저를 시작해야 합니다.
 
-      * 소스 맵 파일에 Visual Studio 디버거가 *app.tsx*를 찾을 수 없도록 하는 *webpack:///./app.tsx*가 아니라 *./app.tsx*에 대한 참조를 포함하도록 합니다.
-       또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
+      * 소스 맵 파일에 Visual Studio 디버거가 *app.tsx* 를 찾을 수 없도록 하는 *webpack:///./app.tsx* 가 아니라 *./app.tsx* 에 대한 참조를 포함하도록 합니다.
+       또는 *app.tsx* 에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx* 에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
 
-   * *app-bundle.js*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.
+   * *app-bundle.js* 에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

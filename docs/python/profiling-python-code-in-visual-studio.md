@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e6a37301477b43063169143456fc21a3c783968
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973807"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917926"
 ---
 # <a name="profile-python-code"></a>Python 코드 프로파일링
 
@@ -32,7 +32,7 @@ CPython 기반 인터프리터를 사용하는 경우 Python 애플리케이션�
 ![프로파일링 성능 보고서](media/profiling-results.png)
 
 > [!Note]
-> 현재 Visual Studio는 이 수준의 전체 애플리케이션 프로파일링만 지원하지만 향후 기능에 대한 여러분의 피드백을 보내 주시기 바랍니다. 이 페이지 아래쪽에 있는 **제품 피드백** 단추를 사용하세요.
+> Python 애플리케이션을 프로파일링하면 Visual Studio는 프로세스 수명 동안 데이터를 수집합니다. 현재는 프로파일링을 일시 중지할 수 없습니다. 향후 기능에 대한 피드백을 보내주시기 바랍니다. 이 페이지 아래쪽에 있는 **제품 피드백** 단추를 사용하세요.
 
 ## <a name="profiling-for-ironpython"></a>IronPython에 대한 프로파일링
 

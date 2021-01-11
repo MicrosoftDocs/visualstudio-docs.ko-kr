@@ -1,5 +1,7 @@
 ---
 title: 클라이언트 블록 후크 함수 | Microsoft Docs
+description: _CLIENT_BLOCK 블록에 저장된 데이터의 내용을 보고하거나 그 유효성을 검사하는 클라이언트 블록 후크 함수를 작성합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600200"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729017"
 ---
 # <a name="client-block-hook-functions"></a>클라이언트 블록 후크 함수
 적절한 함수를 작성하여 `_CLIENT_BLOCK` 블록에 저장되는 데이터 내용을 보고하거나 그 유효성을 검사할 수 있습니다. CRTDBG.H에 정의된 대로 다음과 같은 프로토타입을 가진 함수를 작성해야 합니다.

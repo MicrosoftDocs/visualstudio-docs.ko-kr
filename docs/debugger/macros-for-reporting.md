@@ -1,5 +1,7 @@
 ---
 title: 보고서 매크로 | Microsoft Docs
+description: CRTDBG.H에 제공된 _RPTn 및 _RPTFn 매크로 디버깅 및 사용자 고유의 디버깅 매크로 만들기에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731382"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903794"
 ---
 # <a name="macros-for-reporting"></a>보고서 매크로
-디버깅을 위해 CRTDBG.H에 정의된 **_RPTn** 및 **_RPTFn** 매크로를 `printf` 문 대신 사용할 수 있습니다. **_DEBUG**가 정의되지 않으면 이 매크로는 자동으로 릴리스 빌드에서 사라지므로 **#ifdef**로 둘러쌀 필요가 없습니다.
+디버깅을 위해 CRTDBG.H에 정의된 **_RPTn** 및 **_RPTFn** 매크로를 `printf` 문 대신 사용할 수 있습니다. **_DEBUG** 가 정의되지 않으면 이 매크로는 자동으로 릴리스 빌드에서 사라지므로 **#ifdef** 로 둘러쌀 필요가 없습니다.
 
 |매크로|설명|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. _RPT1부터 **_RPT4**까지는 메시지 문자열이 인수에 대해 printf 스타일의 서식 문자열로 사용됩니다.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|**_RPTn**과 같지만 이러한 매크로는 해당 매크로가 있는 파일 이름과 줄 번호도 출력합니다.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. **_RPT1** 부터 **_RPT4** 까지는 메시지 문자열이 인수에 대해 printf 스타일의 서식 문자열로 사용됩니다.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|**_RPTn** 과 같지만 이러한 매크로는 해당 매크로가 있는 파일 이름과 줄 번호도 출력합니다.|
 
  다음 예제를 참조하세요.
 
@@ -48,7 +50,7 @@ ms.locfileid: "72731382"
 #endif
 ```
 
- 이 코드는 `someVar`과 `otherVar`의 값을 **stdout**로 출력합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.
+ 이 코드는 `someVar`과 `otherVar`의 값을 **stdout** 로 출력합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.
 
 ```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
@@ -70,7 +72,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif
 ```
 
- **ALERT_IF2**를 한 번 호출하여 **printf** 코드의 모든 함수를 실행할 수 있습니다.
+ **ALERT_IF2** 를 한 번 호출하여 **printf** 코드의 모든 함수를 실행할 수 있습니다.
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),

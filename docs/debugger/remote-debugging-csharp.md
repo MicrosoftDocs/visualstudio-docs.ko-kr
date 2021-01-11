@@ -1,5 +1,6 @@
 ---
 title: 원격 디버그 C# 또는 VB 프로젝트 | Microsoft Docs
+description: 다음 단계별 지침에 따라 원격 컴퓨터에서 Visual Studio C# 또는 Visual Basic 애플리케이션을 디버그하는 방법을 알아봅니다.
 ms.custom:
 - remotedebugging"=
 - seodec18
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76364dd6817774c38daa62463cd5bc635075ba73
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298717"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815700"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Visual Studio에서 C# 또는 Visual Basic 프로젝트 원격 디버깅
 다른 컴퓨터에 배포된 Visual Studio 애플리케이션을 디버그하려면 앱을 배포한 컴퓨터에 원격 도구를 설치 및 실행하고 Visual Studio에서 원격 컴퓨터에 연결하도록 프로젝트를 구성한 후 앱을 실행합니다.
@@ -67,7 +68,7 @@ ms.locfileid: "92298717"
 
 4. **속성** 페이지에서 **디버그** 탭을 선택합니다.
 
-    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
+    ![Visual Studio 솔루션 탐색기 속성의 디버그 탭 스크린샷 원격 머신 사용 속성이 ‘MJO-DL:4022’로 설정되어 있습니다.](../debugger/media/remotedebuggercsharp.png)
 
 5. **작업 디렉터리** 텍스트 상자가 비어 있는지 확인합니다.
 
@@ -85,20 +86,20 @@ ms.locfileid: "92298717"
 
 8. 프로젝트를 빌드합니다.
 
-9. Visual Studio 컴퓨터의 **Debug** 폴더와 동일한 경로인 폴더를 원격 컴퓨터에 만듭니다( **\<source path>\MyWPF\MyWPF\bin\Debug** ).
+9. Visual Studio 컴퓨터의 **Debug** 폴더와 동일한 경로인 폴더를 원격 컴퓨터에 만듭니다( **\<source path>\MyWPF\MyWPF\bin\Debug**).
 
 10. Visual Studio 컴퓨터에서 방금 빌드한 실행 파일을 원격 컴퓨터에서 새로 만든 폴더에 복사합니다.
 
     > [!CAUTION]
     > 코드를 변경하거나 다시 빌드하지 않습니다(그렇지 않으면 이 단계를 반복해야 함). 원격 컴퓨터에 복사한 실행 파일은 로컬 소스 및 기호와 정확히 일치해야 합니다.
 
-    프로젝트를 수동으로 복사하거나 Xcopy, Robocopy, Powershell 또는 기타 옵션을 사용할 수 있습니다.
+    프로젝트를 수동으로 복사하거나 XCopy, Robocopy, Powershell 또는 기타 옵션을 사용할 수 있습니다.
 
 11. 원격 디버거가 대상 컴퓨터에서 실행되고 있는지 확인합니다. 그렇지 않은 경우 **시작** 메뉴에서 **원격 디버거** 를 검색합니다. 원격 디버거 창은 다음과 같이 표시됩니다.
 
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+     ![Visual Studio 2017 원격 디버거 창의 스크린샷 디버거가 대상 머신에서 실행 중임을 나타내는 하나의 작업이 나열되어 있습니다.](../debugger/media/remotedebuggerwindow.png)
 
-12. Visual Studio에서 디버깅을 시작합니다( **디버그 > 디버깅 시작** 또는 **F5** 키).
+12. Visual Studio에서 디버깅을 시작합니다(**디버그 > 디버깅 시작** 또는 **F5** 키).
 
 13. 메시지가 표시되면 네트워크 자격 증명을 입력하여 원격 컴퓨터에 연결합니다.
 
@@ -110,7 +111,7 @@ ms.locfileid: "92298717"
 
 15. Visual Studio 컴퓨터에서 실행이 중단점에서 중지된 것이 표시됩니다.
 
-    애플리케이션에서 사용해야 하는 비코드 파일이 있는 경우 Visual Studio 프로젝트에 모두 포함해야 합니다. 추가 파일을 위한 프로젝트 폴더를 만듭니다( **솔루션 탐색기** 에서 **추가 > 새 폴더** 클릭). 그런 다음, 폴더에 파일을 추가합니다( **솔루션 탐색기** 에서 **추가 / 기존 항목** 을 클릭한 다음, 파일 선택). 각 파일에 대한 **속성** 페이지에서 **출력 디렉터리에 복사** 를 **항상 복사** 로 설정합니다.
+    애플리케이션에서 사용해야 하는 비코드 파일이 있는 경우 Visual Studio 프로젝트에 모두 포함해야 합니다. 추가 파일을 위한 프로젝트 폴더를 만듭니다(**솔루션 탐색기** 에서 **추가 > 새 폴더** 클릭). 그런 다음, 폴더에 파일을 추가합니다(**솔루션 탐색기** 에서 **추가 / 기존 항목** 을 클릭한 다음, 파일 선택). 각 파일에 대한 **속성** 페이지에서 **출력 디렉터리에 복사** 를 **항상 복사** 로 설정합니다.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>원격 기호를 사용한 디버깅 설정
 

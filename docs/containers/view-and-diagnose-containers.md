@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742789"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729225"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio에서 컨테이너와 이미지를 보고 진단하는 방법
 
@@ -25,9 +25,9 @@ ms.locfileid: "89742789"
 
 ## <a name="view-information-about-your-containers"></a>컨테이너에 대한 정보 보기
 
-컨테이너화된 .NET 프로젝트를 시작하면 **컨테이너** 창이 자동으로 열립니다. 언제든지 Visual Studio에서 컨테이너를 보려면 **Ctrl**+**Q**를 사용하여 Visual Studio 검색 상자를 활성화하고 `Containers`를 입력한 다음, 첫 번째 항목을 선택합니다. 주 메뉴에서 **컨테이너** 창을 열 수도 있습니다. **보기** > **다른 창** > **컨테이너** 메뉴 경로를 사용합니다.  
+컨테이너화된 .NET 프로젝트를 시작하면 **컨테이너** 창이 자동으로 열립니다. 언제든지 Visual Studio에서 컨테이너를 보려면 **Ctrl**+**Q** 를 사용하여 Visual Studio 검색 상자를 활성화하고 `Containers`를 입력한 다음, 첫 번째 항목을 선택합니다. 주 메뉴에서 **컨테이너** 창을 열 수도 있습니다. **보기** > **다른 창** > **컨테이너** 메뉴 경로를 사용합니다.  
 
-![컨테이너 창의 환경 탭 스크린샷](media/view-and-diagnose-containers/container-window.png)
+![왼쪽 창에는 컨테이너가 선택되고 있고 오른쪽 창에는 환경 탭이 선택되어 있는 Visual Studio의 컨테이너 창 스크린샷](media/view-and-diagnose-containers/container-window.png)
 
 왼쪽에는 로컬 컴퓨터의 컨테이너 목록이 표시됩니다. 솔루션과 연결된 컨테이너는 **솔루션 컨테이너** 아래에 표시됩니다. 오른쪽에는 **환경**, **포트**, **로그** 및 **파일** 탭이 포함된 창이 표시됩니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "89742789"
 
 **환경** 탭에는 컨테이너의 환경 변수가 표시됩니다. Dockerfile 또는 .env 파일 사용, Docker 명령을 사용하여 컨테이너를 시작할 때 -e 옵션 사용 등의 다양한 방법으로 앱의 컨테이너에 대해 이러한 변수를 설정할 수 있습니다.
 
-![컨테이너 창의 환경 탭 스크린샷](media/view-and-diagnose-containers/containers-environment-vars.png)
+![WebApplication11 컨테이너의 환경 변수를 보여 주는 Visual Studio의 컨테이너 창 스크린샷](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > 환경 변수의 변경 내용은 실시간으로 반영되지 않습니다. 또한 이 탭의 환경 변수는 컨테이너의 시스템 환경 변수이며, 앱의 로컬 사용자 환경 변수는 반영되지 않습니다.
@@ -60,7 +60,7 @@ ms.locfileid: "89742789"
 로그를 지우려면 **로그** 탭의 **지우기** 단추를 사용합니다.  모든 로그를 가져오려면 **새로 고침** 단추를 사용합니다.
 
 > [!NOTE]
-> Visual Studio는 Windows 컨테이너 디버깅 없이 실행하면 자동으로 stdout 및 stderr을 **출력** 창으로 리디렉션하므로 **Ctrl**+**F5**를 사용하여 Visual Studio에서 시작된 Windows 컨테이너는 이 탭에 로그를 표시하지 않습니다. **출력** 창을 대신 사용하세요.
+> Visual Studio는 Windows 컨테이너 디버깅 없이 실행하면 자동으로 stdout 및 stderr을 **출력** 창으로 리디렉션하므로 **Ctrl**+**F5** 를 사용하여 Visual Studio에서 시작된 Windows 컨테이너는 이 탭에 로그를 표시하지 않습니다. **출력** 창을 대신 사용하세요.
 
 ## <a name="view-the-filesystem"></a>파일 시스템 보기
 
@@ -68,7 +68,7 @@ ms.locfileid: "89742789"
 
 ![컨테이너 창의 파일 탭 스크린샷](media/view-and-diagnose-containers/container-filesystem.png)
 
-Visual Studio에서 파일을 열려면 파일을 찾아서 두 번 클릭하거나, 마우스 오른쪽 단추를 클릭하고 **열기**를 선택합니다. Visual Studio는 읽기 전용 모드로 파일을 엽니다.
+Visual Studio에서 파일을 열려면 파일을 찾아서 두 번 클릭하거나, 마우스 오른쪽 단추를 클릭하고 **열기** 를 선택합니다. Visual Studio는 읽기 전용 모드로 파일을 엽니다.
 
 ![Visual Studio에서 보기 위해 열린 파일 스크린샷](media/view-and-diagnose-containers/container-file-open.png)
 
@@ -102,7 +102,7 @@ Windows 컨테이너의 경우 Windows 명령 프롬프트가 열립니다. Linu
 
 **컨테이너** 창의 **이미지** 탭을 사용하여 로컬 컴퓨터에서 이미지를 볼 수도 있습니다. 외부 리포지토리에서 끌어온 이미지는 트리뷰에서 함께 그룹화됩니다. 이미지의 세부 정보를 검사할 이미지를 선택합니다.
 
-이미지를 제거하려면 트리뷰에서 이미지를 마우스 오른쪽 단추로 클릭하고 **제거**를 선택하거나 이미지를 선택한 후 도구 모음에서 **제거** 단추를 사용합니다.
+이미지를 제거하려면 트리뷰에서 이미지를 마우스 오른쪽 단추로 클릭하고 **제거** 를 선택하거나 이미지를 선택한 후 도구 모음에서 **제거** 단추를 사용합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

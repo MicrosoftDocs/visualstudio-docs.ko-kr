@@ -1,5 +1,7 @@
 ---
 title: 삽입한 코드 디버그 | Microsoft Docs
+description: Visual Studio에서 삽입한 코드를 볼 수 있도록 제공하는 두 가지 방법인 1) 디스어셈블리 창 2) 삽입한 코드와 원래 코드가 모두 있는 소스 파일에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2dfcd81def9b3662f410120f370566354726498
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5bce49eebf430ccaca9919c74966fb9efd00b09b
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852102"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903950"
 ---
 # <a name="how-to-debug-injected-code"></a>방법: 삽입한 코드 디버그
 
@@ -46,7 +48,7 @@ ms.locfileid: "90852102"
 
 ## <a name="to-turn-on-source-annotation"></a>소스 주석을 설정하려면
 
-- **디스어셈블리** 창에서 마우스 오른쪽 단추를 클릭하고 바로 가기 메뉴에서 **소스 코드 표시**를 선택합니다.
+- **디스어셈블리** 창에서 마우스 오른쪽 단추를 클릭하고 바로 가기 메뉴에서 **소스 코드 표시** 를 선택합니다.
 
      소스 창에 있는 특성의 위치를 알면 바로 가기 메뉴를 사용하여 **디스어셈블리** 창에서 삽입된 코드를 찾을 수 있습니다.
 
@@ -56,7 +58,7 @@ ms.locfileid: "90852102"
 
 2. 소스 코드 창에서 보려는 삽입된 코드의 특성 앞에 커서를 놓습니다.
 
-3. 마우스 오른쪽 단추를 클릭하여 바로 가기 메뉴에서 **디스어셈블리로 이동**을 선택합니다.
+3. 마우스 오른쪽 단추를 클릭하여 바로 가기 메뉴에서 **디스어셈블리로 이동** 을 선택합니다.
 
      특성이 현재 실행 위치와 가까이 있으면 **디버그** 메뉴에서 **디스어셈블리** 창을 선택할 수 있습니다.
 
@@ -64,7 +66,7 @@ ms.locfileid: "90852102"
 
 1. 디버거는 중단 모드에 있어야 합니다.
 
-2. **디버그** 메뉴에서 **창**을 선택하고 **디스어셈블리**를 클릭합니다.
+2. **디버그** 메뉴에서 **창** 을 선택하고 **디스어셈블리** 를 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

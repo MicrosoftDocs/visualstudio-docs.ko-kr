@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099208"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726568"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>스토리지로 이동하여 데이터 업로드 또는 모델 및 로그 다운로드
 
@@ -27,7 +27,7 @@ ms.locfileid: "92099208"
 2. 원격 머신 또는 Batch AI 컴퓨팅 컨텍스트를 확장합니다.
 3. **스토리지** 를 마우스 오른쪽 단추로 클릭한 다음, **찾아보기** 를 클릭합니다.
 
-    ![storage](media/manage-storage/browse-storage.png)
+    ![원격 머신 폴더가 확장된 서버 탐색기의 스크린샷 폴더 트리에 스토리지가 강조 표시되어 있고 상황에 맞는 메뉴에서 찾아보기가 선택되어 있습니다.](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>원격 머신 또는 파일 공유에서 작업 관련 데이터에 액세스하려면
 
@@ -35,4 +35,4 @@ ms.locfileid: "92099208"
 2. 작업을 선택합니다.
 3. 이러한 중요 로그 파일에 빠르게 액세스하기 위해 **작업 폴더** 를 클릭하거나 **StdOut/Stderr** 을 클릭합니다.
 
-    ![storage](media/manage-storage/job-workingfolder.png)
+    ![서버 탐색기의 작업 브라우저 창 스크린샷 train_mnist 작업이 선택되어 있고 작업 세부 정보 아래에 작업 폴더 링크가 선택되어 있습니다.](media/manage-storage/job-workingfolder.png)

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863038"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761331"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C++용 형식 지정자
 형식 지정자를 사용하여 **조사식**, **자동** 및 **지역** 창에 값이 표시되는 형식을 변경할 수 있습니다.
@@ -54,7 +54,7 @@ int main() {
 
 디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시** 를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값이 정수가 아닌 문자로 표시되도록 하려면 먼저 마우스 오른쪽 단추를 클릭하고 **16진수 표시** 를 선택 취소합니다. 그런 다음, **이름** 열에서 변수 이름 뒤에 문자 형식 지정자 **, c** 를 추가합니다. 이제 **값** 열에 **101 ‘e’** 가 표시됩니다.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![101 ‘e’ 값과 int 형식으로 my_var1.c를 표시하는 한 줄이 선택된 Visual Studio 조사식 창의 스크린샷](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 **조사식** 창에서 값에 쉼표(,)를 추가하여 사용 가능한 형식 지정자 목록을 보고 형식 지정자를 선택할 수 있습니다. 

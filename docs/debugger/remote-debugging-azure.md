@@ -1,5 +1,6 @@
 ---
 title: Azure 및 IIS의 ASP.NET Core 원격 디버그 | Microsoft Docs
+description: Visual Studio ASP.NET Core 앱을 설정 및 구성하고 Azure를 사용하여 IIS에 배포하고 Visual Studio에서 원격 디버거를 연결하는 방법을 알아봅니다.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298744"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815843"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 2017에서 Azure 및 IIS의 ASP.NET Core 원격 디버그
 
@@ -29,13 +30,13 @@ Azure에서 원격으로 디버그하는 권장 방법은 시나리오에 따라
 
     이 시나리오에서는 Visual Studio에서 Azure에 앱을 배포해야 하지만, 다음 그림과 같이 IIS 또는 원격 디버거를 수동으로 설치하거나 구성할 필요가 없습니다(이러한 구성 요소는 점선으로 표시됨).
 
-    ![원격 디버거 구성 요소](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Visual Studio, Azure App Service 및 ASP.NET 앱 간의 관계를 보여 주는 다이어그램 IIS 및 원격 디버거는 점선으로 표시되어 있습니다.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Azure VM에서 IIS를 디버그하려면 이 항목의 단계를 수행합니다([Azure VM 원격 디버그](#remote_debug_azure_vm) 섹션 참조). 이렇게 하면 IIS의 사용자 지정 구성을 사용할 수 있지만 설치 및 배포 단계가 더 복잡해집니다.
 
     Azure VM의 경우 다음 그림과 같이 Visual Studio에서 Azure에 앱을 배포하고 IIS 역할 및 원격 디버거를 수동으로 설치해야 합니다.
 
-    ![원격 디버거 구성 요소](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Visual Studio, Azure VM 및 ASP.NET 앱 간의 관계를 보여 주는 다이어그램 IIS 및 원격 디버거는 실선으로 표시되어 있습니다.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Azure Service Fabric의 ASP.NET Core를 디버그하려면 [원격 Service Fabric 애플리케이션 디버그](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)를 참조하세요.
 
@@ -60,10 +61,10 @@ Azure에서 원격으로 디버그하는 권장 방법은 시나리오에 따라
 1. 새 ASP.NET Core 애플리케이션을 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서 **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp**으로 지정한 다음, **만들기**를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기**를 선택합니다.
+    Visual Studio 2019에서 **Ctrl + Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력하고 **템플릿** 을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기** 를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp** 으로 지정한 다음, **만들기** 를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서 **파일 > 새로 만들기 > 프로젝트**를 선택한 다음, **Visual C# > 웹 > ASP.NET Core 웹 애플리케이션**을 선택합니다. ASP.NET Core 템플릿 섹션에서 **웹 애플리케이션(Model-View-Controller)** 을 선택합니다. ASP.NET Core 2.1이 선택되어 있고, **Docker 지원 사용**이 선택되어 있지 않고, **인증**이 **인증 안 함**으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp**으로 지정합니다.
+    Visual Studio 2017에서 **파일 > 새로 만들기 > 프로젝트** 를 선택한 다음, **Visual C# > 웹 > ASP.NET Core 웹 애플리케이션** 을 선택합니다. ASP.NET Core 템플릿 섹션에서 **웹 애플리케이션(Model-View-Controller)** 을 선택합니다. ASP.NET Core 2.1이 선택되어 있고, **Docker 지원 사용** 이 선택되어 있지 않고, **인증** 이 **인증 안 함** 으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp** 으로 지정합니다.
     ::: moniker-end
 
 1. About.cshtml.cs 파일을 열고 `OnGet` 메서드에 중단점을 설정합니다(이전 템플릿에서는 HomeController.cs를 대신 열고 `About()` 메서드에 중단점을 설정함).
@@ -74,23 +75,23 @@ Visual Studio에서 완전히 프로비전된 IIS 인스턴스에 애플리케�
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-cloud-explorer"></a>클라우드 탐색기를 사용하여 앱을 배포하고 및 원격 디버그하려면
 
-1. Visual Studio에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+1. Visual Studio에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
-    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필**을 클릭합니다.
+    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필** 을 클릭합니다.
 
-1. **게시** 대화 상자에서 **Azure App Service**를 선택하고 **새로 만들기**를 선택한 다음 메시지에 따라 프로필을 만듭니다.
+1. **게시** 대화 상자에서 **Azure App Service** 를 선택하고 **새로 만들기** 를 선택한 다음 메시지에 따라 프로필을 만듭니다.
 
     자세한 지침은 [Visual Studio를 사용하여 Azure에 ASP.NET Core 웹앱 배포](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)를 참조하세요.
 
     ![Azure App Service에 게시](../debugger/media/remotedbg_azure_app_service_profile.png)
 
-1. 게시 창에서 **구성 편집**을 선택하고 디버그 구성으로 전환한 다음 **게시**를 선택합니다.
+1. 게시 창에서 **구성 편집** 을 선택하고 디버그 구성으로 전환한 다음 **게시** 를 선택합니다.
 
    디버그 구성은 앱을 디버그하는 데 필요합니다.
 
-1. **클라우드 탐색기**를 엽니다(**보기** > **클라우드 탐색기**). App Service 인스턴스를 마우스 오른쪽 단추로 클릭하고 **디버거 연결**을 선택합니다.
+1. **클라우드 탐색기** 를 엽니다(**보기** > **클라우드 탐색기**). App Service 인스턴스를 마우스 오른쪽 단추로 클릭하고 **디버거 연결** 을 선택합니다.
 
-   클라우드 탐색기를 사용할 수 없는 경우 대신 서버 탐색기를 엽니다. 그런 다음 서버 탐색기에서 App Service 인스턴스를 마우스 오른쪽 단추로 클릭하고 **디버거 연결**을 선택합니다.
+   클라우드 탐색기를 사용할 수 없는 경우 대신 서버 탐색기를 엽니다. 그런 다음 서버 탐색기에서 App Service 인스턴스를 마우스 오른쪽 단추로 클릭하고 **디버거 연결** 을 선택합니다.
 
 1. 실행 중인 ASP.NET 애플리케이션에서 **정보** 페이지에 대한 링크를 클릭합니다.
 
@@ -121,14 +122,14 @@ Windows Server용 Azure VM을 만든 다음 IIS 및 기타 필수 소프트웨�
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Windows Server에서 브라우저 보안 설정 업데이트
 
-Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트**로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
+Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트** 로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - iis.net
 
-소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가**를 클릭합니다.
+소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가** 를 클릭합니다.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Windows Server에 ASP.NET Core 설치
 
@@ -140,7 +141,7 @@ Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있
     > [!NOTE]
     > 시스템이 인터넷에 연결되지 않은 경우 *[Microsoft Visual C++ 2015 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=53840)* 를 설치한 후에 .NET Core Windows Server 호스팅 번들을 설치합니다.
 
-3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
+3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y** 에 이어 **net start w3svc** 를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
 ## <a name="choose-a-deployment-option"></a>배포 옵션 선택
 
@@ -159,7 +160,7 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 ### <a name="configure-the-aspnet-core-web-site"></a>ASP.NET Core 웹 사이트 구성
 
-1. IIS 관리자의 왼쪽 창에 있는 **연결**에서 **애플리케이션 풀**을 선택합니다. **DefaultAppPool**을 열고 **.NET CLR 버전**을 **관리 코드 없음**으로 설정합니다. 이는 ASP.NET Core에 필요합니다. 기본 웹 사이트는 DefaultAppPool을 사용합니다.
+1. IIS 관리자의 왼쪽 창에 있는 **연결** 에서 **애플리케이션 풀** 을 선택합니다. **DefaultAppPool** 을 열고 **.NET CLR 버전** 을 **관리 코드 없음** 으로 설정합니다. 이는 ASP.NET Core에 필요합니다. 기본 웹 사이트는 DefaultAppPool을 사용합니다.
 
 2. DefaultAppPool을 중지했다가 다시 시작합니다.
 
@@ -178,14 +179,14 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 > [!NOTE]
 > Azure VM을 다시 시작하면 IP 주소가 변경될 수 있습니다.
 
-앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작하여 올바로 실행되는지 확인합니다. ASP.NET Core의 경우 **DefaultAppPool**에 대한 애플리케이션 풀 필드가 **관리 코드 없음**으로 설정되었는지도 확인해야 합니다.
+앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작하여 올바로 실행되는지 확인합니다. ASP.NET Core의 경우 **DefaultAppPool** 에 대한 애플리케이션 풀 필드가 **관리 코드 없음** 으로 설정되었는지도 확인해야 합니다.
 
-1. **설정** 대화 상자에서 **다음**을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거**를 선택합니다.
+1. **설정** 대화 상자에서 **다음** 을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거** 를 선택합니다.
 
     > [!IMPORTANT]
     > 릴리스 구성을 선택하는 경우 게시할 때 *web.config* 파일에서 디버깅을 사용하지 않도록 설정합니다.
 
-1. **저장**을 클릭한 다음, 앱을 다시 게시합니다.
+1. **저장** 을 클릭한 다음, 앱을 다시 게시합니다.
 
 ## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(선택 사항) 로컬 폴더에 게시하여 배포
 
@@ -195,19 +196,19 @@ PowerShell, RoboCopy를 사용하여 앱을 IIS에 복사하거나 수동으로 
 
 게시 설정을 가져오는 경우 이 섹션을 건너뛸 수 있습니다.
 
-1. **IIS(인터넷 정보 서비스) 관리자** 를 열고 **사이트**로 이동합니다.
+1. **IIS(인터넷 정보 서비스) 관리자** 를 열고 **사이트** 로 이동합니다.
 
-2. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가**를 선택합니다.
+2. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가** 를 선택합니다.
 
-3. **별칭** 필드를 **MyASPApp**으로 설정하고 애플리케이션 풀 필드를 **관리 코드 없음**으로 설정합니다. **실제 경로**를 **C:\Publish**로 설정합니다. 나중에 여기로 ASP.NET Core 프로젝트를 배포할 수 있습니다.
+3. **별칭** 필드를 **MyASPApp** 으로 설정하고 애플리케이션 풀 필드를 **관리 코드 없음** 으로 설정합니다. **실제 경로** 를 **C:\Publish** 로 설정합니다. 나중에 여기로 ASP.NET Core 프로젝트를 배포할 수 있습니다.
 
-4. IIS 관리자에서 사이트를 선택하여 **사용 권한 편집**을 선택하고 IUSR, IIS_IUSRS 또는 애플리케이션 풀에 대해 구성된 사용자가 읽기 및 실행 권한을 가진 사용자인지 확인합니다.
+4. IIS 관리자에서 사이트를 선택하여 **사용 권한 편집** 을 선택하고 IUSR, IIS_IUSRS 또는 애플리케이션 풀에 대해 구성된 사용자가 읽기 및 실행 권한을 가진 사용자인지 확인합니다.
 
     액세스 권한이 있는 사용자 중 하나가 표시되지 않으면 읽기 및 실행 권한이 있는 사용자로 IUSR을 추가하는 단계를 진행합니다.
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(선택 사항) Visual Studio에서 로컬 폴더에 게시하여 앱을 게시 및 배포
 
-웹 배포를 사용하지 않는 경우 파일 시스템 또는 기타 도구를 사용하여 앱을 게시하고 배포해야 합니다. 먼저 파일 시스템을 사용하여 패키지를 만든 다음 수동으로 패키지를 배포하거나 PowerShell, RoboCopy 또는 XCopy와 같은 다른 도구를 사용할 수 있습니다. 이 섹션에서는 웹 배포를 사용하지 않는 경우 패키지를 수동으로 복사한다고 가정합니다.
+웹 배포를 사용하지 않는 경우 파일 시스템 또는 기타 도구를 사용하여 앱을 게시하고 배포해야 합니다. 먼저 파일 시스템을 사용하여 패키지를 만든 다음 수동으로 패키지를 배포하거나 PowerShell, Robocopy 또는 XCopy와 같은 다른 도구를 사용할 수 있습니다. 이 섹션에서는 웹 배포를 사용하지 않는 경우 패키지를 수동으로 복사한다고 가정합니다.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
@@ -237,21 +238,21 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     Visual Studio에서 **\<remote computer name>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서는 **\<remote computer name>:4024**가 표시되고,
+    Visual Studio 2019에서는 **\<remote computer name>:4024** 가 표시되고,
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서는 **\<remote computer name>:4022**가 표시됩니다.
+    Visual Studio 2017에서는 **\<remote computer name>:4022** 가 표시됩니다.
     ::: moniker-end
     이 포트는 필수입니다. 포트 번호가 표시되지 않으면 수동으로 추가하세요.
 
-4. **새로 고침**을 클릭합니다.
+4. **새로 고침** 을 클릭합니다.
     일부 프로세스가 **사용 가능한 프로세스** 창에 표시됩니다.
 
     프로세스가 보이지 않으면 원격 컴퓨터 이름 대신 IP 주소를 사용해 보세요(포트가 필요함). 명령줄에서 `ipconfig`를 사용하여 IPv4 주소를 가져올 수 있습니다.
 
     **찾기** 단추를 사용하려면 서버에서 [UDP 포트 3702를 열어야](#bkmk_openports) 합니다.
 
-5. **모든 사용자의 프로세스 표시**를 선택합니다.
+5. **모든 사용자의 프로세스 표시** 를 선택합니다.
 
 6. 앱을 신속하게 찾으려면 프로세스 이름의 첫 글자를 입력합니다.
 
@@ -259,7 +260,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 
     * 그렇지 않으면 **dotnet.exe** 프로세스를 선택합니다. (이것은 Out-of-process 호스팅 모델입니다.)
 
-    *w3wp.exe* 또는 *dotnet.exe*가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool**과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 보이지만 고유하지 않으면, 디버그할 앱 인스턴스에 대해 새로 명명된 앱 풀을 만듭니다. 그러면 **사용자 이름** 열에서 쉽게 찾을 수 있습니다.
+    *w3wp.exe* 또는 *dotnet.exe* 가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool** 과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 보이지만 고유하지 않으면, 디버그할 앱 인스턴스에 대해 새로 명명된 앱 풀을 만듭니다. 그러면 **사용자 이름** 열에서 쉽게 찾을 수 있습니다.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -268,7 +269,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. **연결**을 클릭합니다.
+7. **연결** 을 클릭합니다.
 
 8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<remote computer name>** 으로 이동합니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 네이티브 코드 디버그 FAQ | Microsoft Docs
+description: Visual Studio의 네이티브 코드 디버깅 관련 FAQ(자주 묻는 질문) 및 답변에 대한 링크를 찾을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 43c6bf4e817f78867534abdca69c7e975397d287
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738179"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726971"
 ---
 # <a name="debugging-native-code-faqs"></a>네이티브 코드 디버깅 FAQ
 다음 항목은 자주 문의되는 몇 가지 질문에 대한 답입니다.

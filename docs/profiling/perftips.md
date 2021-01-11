@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Microsoft Docs
+description: Visual Studio 디버거 PerfTips 및 통합 진단 도구를 사용하여 디버그하는 동안 앱 성능을 모니터링하고 분석하는 방법을 알아봅니다.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075472"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815830"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -33,7 +34,7 @@ Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 �
 
 다음 그림에서는 **진단 도구** 창을 보여 줍니다.
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![메모리 및 CPU 사용량에 대한 이벤트 타임라인 및 그래프를 보여 주는 Visual Studio 디버거의 진단 도구 창 스크린샷](../profiling/media/diagnostictools-update1.png)
 
 - **중단 이벤트** 타임라인은 디버깅 세션에서 적중된 중단점을 표시합니다. 이벤트를 클릭하여 **디버거** 세부 정보 목록에서 선택합니다.
 
@@ -47,17 +48,17 @@ Visual Studio 디버거 *PerfTips* 및 디버거 통합 **진단 도구** 는 �
 
 PerfTips를 사용하거나 사용하지 않도록 설정하려면
 
-1. **디버그** 메뉴에서 **옵션**을 선택합니다.
+1. **디버그** 메뉴에서 **옵션** 을 선택합니다.
 
-2. **디버깅 중에 경과한 시간 성능 팁 표시**를 선택하거나 선택 취소합니다.
+2. **디버깅 중에 경과한 시간 성능 팁 표시** 를 선택하거나 선택 취소합니다.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>진단 도구 창 켜기 또는 끄기
 
 진단 도구 창을 사용하거나 사용하지 않도록 설정하려면
 
-1. **디버그** 메뉴에서 **옵션**을 선택합니다.
+1. **디버그** 메뉴에서 **옵션** 을 선택합니다.
 
-2. **디버그하는 동안 진단 도구 사용**을 선택하거나 선택 취소합니다.
+2. **디버그하는 동안 진단 도구 사용** 을 선택하거나 선택 취소합니다.
 
 ## <a name="see-also"></a>참조
 

@@ -1,6 +1,7 @@
 ---
 title: JavaScript 콘솔 명령 | Microsoft Docs
-ms.custom: ''
+description: 명령을 사용하여 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행합니다. 이 문서는 Node.js 앱, UWP 앱, Apache Cordova 앱에 적용됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211276"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903911"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio의 JavaScript 콘솔 명령
 
 명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 창을 사용하는 방법을 보여 주는 예제는 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)를 참조하세요. 이 항목의 정보는 Node.js 앱, UWP 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에 적용됩니다.
 
-JavaScript 콘솔 창이 닫혀 있는 경우 Visual Studio에서 디버그하는 동안 **디버그** > **창** > **JavaScript 콘솔**을 선택하여 콘솔 창을 열 수 있습니다.
+JavaScript 콘솔 창이 닫혀 있는 경우 Visual Studio에서 디버그하는 동안 **디버그** > **창** > **JavaScript 콘솔** 을 선택하여 콘솔 창을 열 수 있습니다.
 
 > [!NOTE]
 > 디버깅 세션 중에 창을 사용할 수 없는 경우 프로젝트의 디버그 속성에서 디버거 형식이 **Script** 로 설정되었는지 확인하세요.
@@ -43,7 +44,7 @@ Microsoft Edge 개발자 도구에서 콘솔을 사용하는 방법에 관한 �
 
 |명령|설명|예제|
 |-------------|-----------------|-------------|
-|`assert(expression, message)`|`expression` 이 **false**가 되면 메시지를 보냅니다.|`console.assert((x == 1), "assert message: x != 1");`|
+|`assert(expression, message)`|`expression` 이 **false** 가 되면 메시지를 보냅니다.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|콘솔 창에서 스크립트 오류 메시지를 비롯한 메시지를 지우고 콘솔 창에 나타나는 스크립트도 지웁니다. 콘솔 입력 프롬프트에 입력한 스크립트는 지우지 않습니다.|`console.clear();`|
 |`count(title)`|count 명령이 콘솔 창에 호출된 횟수를 보냅니다. 계산되는 각 호출은 `title`(선택 사항)으로 고유하게 식별됩니다.<br /><br /> 콘솔 창의 기존 항목은 `title` 매개 변수(있는 경우)로 식별되고 count 명령으로 업데이트됩니다. 새 항목이 만들어지지 않습니다.|`console.count();`<br /><br /> `console.count("inner loop");`|
 |`debug(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 이 명령은 console.log와 동일합니다.<br /><br /> 명령을 사용하여 전달된 개체는 문자열 값으로 전환됩니다.|`console.debug("logging message");`|

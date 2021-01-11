@@ -7,12 +7,12 @@ robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 264184f149dc7ea5b1a2922b48688fcf33904183
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 0bd67e8ef5a96418a8bb2da3796cc8e79f6116b2
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916236"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031066"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio 구독 지원 위젯 콘텐츠 포함 파일
 
@@ -104,6 +104,9 @@ ms.locfileid: "96916236"
 [!INCLUDE [Help me renew via Marketplace](renewing-purchasing-or-canceling/help-renewing/includes/help-me-renew-marketplace.md)]
 
 [!INCLUDE [Help me renew via Microsoft Store](renewing-purchasing-or-canceling/help-renewing/includes/help-me-renew-microsoft-store.md)]
+
+### <a name="help-with-canceling"></a>취소 관련 도움받기
+[!INCLUDE [Help me cancel monthly or annual subscriptions](renewing-purchasing-or-canceling/help-canceling/includes/help-me-cancel-monthly-annual.md)]
 
 ### <a name="order-or-purchase-status"></a>주문 또는 구매 상태
 [!INCLUDE [Find the status of my renewal or purchase](renewing-purchasing-or-canceling/order-or-purchase-status/includes/find-the-status-of-renewal-or-purchase.md)]

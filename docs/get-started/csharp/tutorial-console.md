@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527927"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833340"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -282,7 +282,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 숫자를 0으로 나누려고 하면 콘솔 앱이 중지되고 코드 편집기에 잘못된 내용이 표시될 수 있습니다.
 
-   ![Visual Studio 코드 편집기에서 0으로 나누기 오류가 표시됩니다.](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![노란색으로 강조 표시된 줄과 ‘0으로 나누려고 했습니다.’에 대한 처리되지 않은 예외 오류가 표시된 Visual Studio 코드 편집기의 스크린샷](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > 앱이 중지되지 않고 디버거가 0으로 나누기 오류를 표시하지 않는 경우도 있습니다. 대신, 앱이 무한대 기호와 같이 숫자가 아닌 결과를 예기치 않게 반환할 수 있습니다. 다음 코드 수정은 여전히 적용됩니다.
@@ -311,7 +311,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
 이제 숫자를 0으로 나누면 앱은 다른 숫자를 요구할 것입니다. 더 나은 기능: 0이 아닌 숫자를 입력할 때까지 요청이 중지되지 않습니다.
 
-   ![0으로 나누기 오류를 수정](./media/csharp-console-calculator-dividebyzero.png)
+   ![0이 아닌 제수 항목에 대한 확인이 추가된 switch 문의 코드를 보여 주는 Visual Studio 코드 편집기의 스크린샷](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>"format" 오류 해결
 

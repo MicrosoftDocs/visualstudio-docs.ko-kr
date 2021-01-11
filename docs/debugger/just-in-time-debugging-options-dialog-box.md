@@ -1,5 +1,7 @@
 ---
 title: 옵션 대화 상자, 디버깅, Just-In-Time | Microsoft Docs
+description: Just-In-Time 디버깅을 사용하면 Visual Studio 외부에서 시작되는 프로그램을 디버그할 수 있습니다. 다양한 프로그램 유형에 대해 Just-In-Time 디버깅을 사용하도록 설정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b346cfdae8671f8f647d41065d5793184fefd3fb
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731604"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903872"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, Just-In-Time
-**Just-In-Time** 페이지에 액세스하려면 **도구** 메뉴로 이동하여 **옵션**을 클릭합니다. **옵션** 대화 상자에서 **디버깅** 노드를 확장하고 **Just-In-Time**을 선택합니다. 이 페이지에서는 관리 코드, 네이티브 코드 및 스크립트에 대해 Just-In-Time 디버깅을 사용하도록 설정할 수 있습니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 참조하세요.
+**Just-In-Time** 페이지에 액세스하려면 **도구** 메뉴로 이동하여 **옵션** 을 클릭합니다. **옵션** 대화 상자에서 **디버깅** 노드를 확장하고 **Just-In-Time** 을 선택합니다. 이 페이지에서는 관리 코드, 네이티브 코드 및 스크립트에 대해 Just-In-Time 디버깅을 사용하도록 설정할 수 있습니다. 자세한 내용은 [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 참조하세요.
 
  다음과 같은 프로그램 유형에 대해 Just-In-Time 디버깅을 사용하도록 설정할 수 있습니다.
 

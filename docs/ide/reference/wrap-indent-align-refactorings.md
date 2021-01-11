@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093881"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761227"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>래핑, 들여쓰기 및 리팩터링 정렬
 
@@ -38,9 +38,9 @@ ms.locfileid: "79093881"
 
 1. 호출 체인에 커서를 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. 리팩터링을 수락하려면 **호출 체인 래핑** 또는 **호출 체인 래핑 및 맞춤**을 선택합니다.
+3. 리팩터링을 수락하려면 **호출 체인 래핑** 또는 **호출 체인 래핑 및 맞춤** 을 선택합니다.
 
-   ![호출 체인 래핑 및 맞춤](media/wrap-call-chain.png)
+   ![호출 체인 래핑이 선택되고 C# 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>매개 변수 또는 인수 래핑, 들여쓰기 및 정렬
 
@@ -63,7 +63,7 @@ ms.locfileid: "79093881"
 
    ![래핑, 들여쓰기 및 매개 변수 정렬](media/wrap-parameters.png)
 
-3. 리팩터링을 수락하려면 **모든 매개 변수 래핑**을 선택합니다.
+3. 리팩터링을 수락하려면 **모든 매개 변수 래핑** 을 선택합니다.
 
 ## <a name="wrap-binary-expressions"></a>이진 식 래핑
 
@@ -83,9 +83,9 @@ ms.locfileid: "79093881"
 
 1. 이진 식에 커서를 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. 리팩터링을 수락하려면 **식 래핑**을 선택합니다.
+3. 리팩터링을 수락하려면 **식 래핑** 을 선택합니다.
 
-   ![호출 체인 래핑 및 맞춤](media/wrap-binary-expression.png)
+   ![식 래핑이 선택되고 C# 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>참조
 

@@ -1,5 +1,7 @@
 ---
 title: COM 및 ActiveX 디버깅 | Microsoft Docs
+description: Visual Studio에서 COM 애플리케이션 및 ActiveX 컨트롤 디버깅에 대한 팁을 알아봅니다. COM 서버 및 컨테이너 디버깅에 대해 알아봅니다. COM 디버깅 도구를 찾습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188687"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729004"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 이 단원에서는 COM 애플리케이션과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.

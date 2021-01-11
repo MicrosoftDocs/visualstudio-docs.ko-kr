@@ -1,8 +1,8 @@
 ---
-title: 솔루션 및 프로젝트
+title: 솔루션 및 프로젝트에 대한 자세한 정보
 description: Visual Studio 프로젝트 및 솔루션, 템플릿에서 새 프로젝트를 만드는 방법, 솔루션 탐색기에서 프로젝트를 보고 관리하는 방법에 대해 알아봅니다.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578255"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847031"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -49,9 +49,17 @@ Visual Studio는 [MSBuild](../msbuild/msbuild.md)를 사용하여 솔루션의 �
 > [!NOTE]
 > Visual Studio에서 코드를 편집, 빌드, 디버그하기 위해 솔루션이나 프로젝트를 사용할 필요는 없습니다. Visual Studio에서 소스 파일이 들어 있는 폴더를 열고 편집을 시작하면 됩니다. 자세한 내용은 [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)을 참조하세요.
 
+### <a name="create-new-projects"></a>새 프로젝트 만들기
+
+새 프로젝트를 만드는 가장 쉬운 방법은 원하는 프로젝트 형식에 맞는 프로젝트 템플릿을 사용하는 것입니다. 프로젝트 템플릿에는 미리 생성된 코드 파일, 구성 파일, 자산, 설정의 기본 세트가 포함됩니다. **파일** > **새로 만들기** > **프로젝트** 를 사용하여 프로젝트 템플릿을 선택합니다. 자세한 내용은 [새 프로젝트 만들기](create-new-project.md)를 참조하세요.
+
+새 프로젝트를 만드는 데 사용할 수 있는 사용자 지정 프로젝트 템플릿을 만들 수도 있습니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)를 참조하세요.
+
+새 프로젝트를 만들면 Visual Studio에서 기본 위치인 *%USERPROFILE%\source\repos* 에 저장합니다. 이 위치를 변경하려면 **도구** > **옵션** > **프로젝트 및 솔루션** > **위치** 로 이동합니다. 자세한 내용은 [옵션 대화 상자: 프로젝트 및 솔루션 > 위치](./reference/projects-solutions-locations-options.md)를 참조하세요.
+
 ## <a name="solutions"></a>솔루션
 
-프로젝트는 *솔루션* 에 포함되어 있습니다. 이름과 달리 솔루션은 "정답"이 아닙니다. 이는 간단히 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트를 위한 컨테이너입니다. 솔루션은 고유한 형식을 가진 텍스트 파일( *.sln* 확장명)로 설명되고 직접 편집할 수 없습니다.
+프로젝트는 *솔루션* 에 포함되어 있습니다. 이름과 달리 솔루션은 "정답"이 아닙니다. 이는 간단히 빌드 정보, Visual Studio 창 설정 및 특정 프로젝트와 관련이 없는 기타 파일과 함께 하나 이상의 관련된 프로젝트를 위한 컨테이너입니다.
 
 ### <a name="solution-file"></a>솔루션 파일
 
@@ -62,36 +70,48 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 |.sln|Visual Studio 솔루션|솔루션에서 프로젝트, 프로젝트 항목 및 솔루션 항목을 구성합니다.|
 |.suo|솔루션 사용자 옵션|중단점과 같은 사용자 수준 설정 및 사용자 지정을 저장합니다.|
 
+> [!IMPORTANT]
+> 솔루션은 고유한 형식을 가진 텍스트 파일( *.sln* 확장명)로 설명되고 직접 편집할 수 없습니다. 반대로 *.suo* 파일은 파일 탐색기의 기본 설정으로는 표시되지 않는 숨겨진 파일입니다. 숨겨진 파일을 표시하려면 파일 탐색기의 **보기** 메뉴에서는 **숨겨진 항목** 확인란을 선택합니다.
+
 ### <a name="solution-folder"></a>솔루션 폴더
 
 "솔루션 폴더"는 **솔루션 탐색기** 에만 있는 가상 폴더이며 솔루션에서 프로젝트를 그룹화하는 데 사용할 수 있습니다. 컴퓨터에서 솔루션 파일을 찾으려면 **도구** > **옵션** > **프로젝트 및 솔루션** > **위치** 로 이동합니다. 자세한 내용은 [옵션 대화 상자: 프로젝트 및 솔루션 > 위치](./reference/projects-solutions-locations-options.md)를 참조하세요.
 
-## <a name="create-new-projects"></a>새 프로젝트 만들기
-
-새 프로젝트를 만드는 가장 쉬운 방법은 특정 유형의 애플리케이션이나 웹 사이트에 대한 프로젝트 템플릿에서 시작하는 것입니다. 프로젝트 템플릿은 미리 생성된 코드 파일, 구성 파일, 자산 및 설정의 기본 집합으로 구성됩니다. 이러한 템플릿은 새 프로젝트(**파일** > **새로 만들기** > **프로젝트**)를 만드는 대화 상자에서 사용할 수 있습니다. 자세한 내용은 [Visual Studio에서 새 프로젝트 만들기](create-new-project.md) 및 [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)를 참조하세요.
-
-대체로 프로젝트를 특정 방식으로 사용자 지정하는 경우에는 사용자 지정 프로젝트 템플릿을 만들어 새 프로젝트를 만드는 데 사용할 수 있습니다. 자세한 내용은 [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)를 참조하세요.
-
-새 프로젝트를 만들 때 기본적으로 *%USERPROFILE%\source\repos* 에 저장됩니다. **도구** > **옵션** > **프로젝트 및 솔루션** > **위치** 아래의 **프로젝트 위치** 설정에서 이 위치를 변경할 수 있습니다. 자세한 내용은 [프로젝트 및 솔루션 페이지, 옵션 대화 상자](./reference/projects-and-solutions-options-dialog-box.md)를 참조하세요.
+> [!TIP]
+> 처음부터 프로젝트 및 솔루션을 만들고 단계별 지침 및 샘플 코드를 사용하여 완료하는 예제는 [프로젝트 및 솔루션 소개](../get-started/tutorial-projects-solutions.md)를 참조하세요.
 
 ## <a name="solution-explorer"></a>솔루션 탐색기
 
 새 프로젝트를 만든 후에 **솔루션 탐색기** 를 사용하여 프로젝트와 솔루션 및 연결된 항목을 보고 관리할 수 있습니다. 다음 그림은 두 프로젝트가 포함되어 있으며, C# 솔루션을 사용하는 **솔루션 탐색기** 를 보여 줍니다.
 
-![솔루션 탐색기](../ide/media/vs2015_solution_explorer.png)
+::: moniker range="vs-2017"
 
-대부분의 메뉴 명령은 **솔루션 탐색기** 에 있는 다양한 항목의 오른쪽 클릭 메뉴에서 사용할 수 있습니다. 이러한 명령에는 프로젝트 빌드, NuGet 패키지 관리, 참조 추가, 파일 이름 바꾸기, 테스트 실행 등이 포함됩니다. **솔루션 탐색기** 의 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 숨겨진 파일을 표시하고 모든 노드를 축소하는 등의 작업을 위한 단추가 있습니다.
+![두 프로젝트가 있는 솔루션 탐색기의 스크린샷](../ide/media/vs2015_solution_explorer.png)
+
+**솔루션 탐색기** 의 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 숨겨진 파일을 표시하고 모든 노드를 축소하는 등의 작업을 위한 단추가 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+![Visual Studio 2019의 프로젝트 두 개가 있는 솔루션 탐색기의 스크린샷](../ide/media/solution-explorer.png)
+
+**솔루션 탐색기** 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 보류 중인 변경 내용을 필터링하고 모든 파일을 표시하고 모든 노드를 축소하고 [속성](managing-project-and-solution-properties.md) 페이지를 표시하고 [코드 편집기](writing-code-in-the-code-and-text-editor.md)에서 코드를 미리 보는 등의 작업을 위한 단추가 있습니다.
+
+::: moniker-end
+
+대부분의 메뉴 명령은 **솔루션 탐색기** 에 있는 다양한 항목의 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴에서 사용할 수 있습니다. 이러한 명령에는 프로젝트 빌드, NuGet 패키지 관리, 참조 추가, 파일 이름 바꾸기, 테스트 실행 등이 포함됩니다.
 
 > [!TIP]
 > 솔루션 탐색기를 닫은 후 다시 열려면 메뉴 모음에서 **창** > **창 레이아웃 다시 설정** 을 선택합니다.
 
 ASP.NET Core 프로젝트의 경우에는 파일이 **솔루션 탐색기** 에 중첩되는 방식을 사용자 지정할 수 있습니다. 자세한 내용은 [솔루션 탐색기에서 파일 중첩 사용자 지정](file-nesting-solution-explorer.md)을 참조하세요.
 
-솔루션 탐색기에 표시되는 일부 아이콘 목록을 보려면 [클래스 뷰 및 개체 브라우저 아이콘](class-view-and-object-browser-icons.md)을 참조하세요.
+## <a name="see-also"></a>추가 정보
 
-## <a name="see-also"></a>참조
-
-- [Visual Studio IDE](../get-started/visual-studio-ide.md)
+- [프로젝트 및 솔루션 소개](../get-started/tutorial-projects-solutions.md)
+- [프로젝트 및 솔루션 속성 관리](managing-project-and-solution-properties.md)
+- [Visual Studio의 필터링된 솔루션](filtered-solutions.md)
 - [프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Visual Studio IDE 오류 문제 해결을 위한 리소스](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [프로젝트 및 솔루션(Mac용 Visual Studio)](/visualstudio/mac/projects-and-solutions)
-- [프로젝트 항목 추가 및 제거(Mac 용 Visual Studio)](/visualstudio/mac/add-and-remove-project-items)

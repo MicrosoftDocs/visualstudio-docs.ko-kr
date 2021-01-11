@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328693"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756645"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -51,11 +51,17 @@ Visual Studio는 확장 가능하고 이제 NUnit 및 xUnit.net과 같은 타사
 
 [Live Unit Testing](../test/live-unit-testing.md)은 자동으로 백그라운드에서 단위 테스트를 실행하고 Visual Studio 코드 편집기의 코드 검사 및 테스트 결과를 그래픽으로 표시합니다.
 
+> [!NOTE]
+> Live Unit Testing은 Enterprise 버전에서만 사용 가능하며 .NET 코드에 대해서만 지원됩니다.
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터를 자동으로 생성합니다. IntelliTest는 적용 범위를 개선하고 새 코드나 기존 코드에 대한 단위 테스트를 만들고 유지하기 위한 노력을 대폭 줄여 줍니다.
 
 ![작동 중인 IntelliTest](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest는 Enterprise 버전에서만 사용 가능합니다. .NET Framework를 대상으로 하는 C# 코드에 대해 지원됩니다. .NET Core 및 .NET Standard는 현재 지원되지 않습니다.
 
 * [IntelliTest를 사용하여 코드에 대한 단위 테스트 생성](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest - 한 번 테스트로 모두 제어](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 ## <a name="code-coverage"></a>코드 검사
 
 [코드 검사](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)는 프로젝트의 코드 중 유닛 테스트와 같은 코딩된 테스트를 사용하여 실제로 테스트할 부분을 결정합니다. 버그로부터 효과적으로 보호하려면 코드의 상당한 부분을 실행 또는 "검사"해야 합니다.
+
+> [!NOTE]
+> 코드 검사는 Enterprise 버전에서만 사용 가능합니다.
 
 코드 검사 분석은 관리되는 코드와 관리되지 않은(네이티브) 코드에 적용할 수 있습니다.
 
@@ -77,9 +86,15 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)는 스텁 또는 shim을 사용하는 애플리케이션의 다른 부분을 교체함으로써 사용자가 테스트 중인 코드를 격리시켜 줍니다.
 
+> [!NOTE]
+> Microsoft Fakes는 Enterprise 버전에서만 사용 가능하며 .NET 코드에 대해서만 지원됩니다.
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>코딩된 UI 및 Selenium을 사용하여 사용자 인터페이스 테스트
 
 코딩된 UI 테스트를 통해 완전 자동화된 테스트를 만들어 애플리케이션 사용자 인터페이스 기능과 동작의 유효성을 검사할 수 있습니다. 코딩된 UI 테스트는 XAML 기반 UWP 앱, 브라우저 앱, SharePoint 앱을 포함한 다양한 기술에서 UI 테스트를 자동화할 수 있습니다.
+
+> [!NOTE]
+> 코딩된 UI는 사용되지 않는 기능입니다.
 
 최고 수준의 코딩된 UI 테스트 또는 Selenium을 사용한 제네릭 브라우저 기반 UI 테스트를 선택할지 여부와 관계없이 Visual Studio는 필요한 모든 도구를 제공합니다.
 
@@ -89,10 +104,6 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 * [코딩된 UI 테스트 만들기, 편집 및 유지 관리 시작](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](test-uwp-app-with-coded-ui-test.md)
 * [Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>부하 테스트
-
-[부하 테스트](../test/quickstart-create-a-load-test-project.md)는 단위 테스트 및 웹 성능 테스트를 실행하여 서버 애플리케이션에서 부하를 시뮬레이트합니다.
 
 ## <a name="related-scenarios"></a>관련 시나리오
 

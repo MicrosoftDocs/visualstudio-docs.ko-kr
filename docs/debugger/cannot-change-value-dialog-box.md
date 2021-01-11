@@ -1,5 +1,7 @@
 ---
 title: 값을 변경할 수 없음 대화 상자 | Microsoft Docs
+description: 디버거 창이나 간략한 조사식에서 변수를 잘못된 값으로 변경하려고 하면 Visual Studio에 표시되는 값을 변경할 수 없음 대화 상자를 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745736"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729056"
 ---
 # <a name="cannot-change-value-dialog-box"></a>값을 변경할 수 없음 대화 상자
 ## <a name="error"></a>Error

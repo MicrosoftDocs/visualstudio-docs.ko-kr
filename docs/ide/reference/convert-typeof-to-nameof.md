@@ -1,5 +1,6 @@
 ---
 title: typeof를 nameof로 변환
+description: Visual Studio의 빠른 작업 및 리팩터링 메뉴를 사용하여 typeof를 C#의 nameof로 변환하고 GetType을 Visual Basic의 NameOf로 변환하는 방법을 알아봅니다.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400326"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761201"
 ---
 # <a name="convert-typeof-to-nameof"></a>`typeof`를 `nameof`로 변환
 
@@ -39,11 +40,11 @@ ms.locfileid: "93400326"
 3. 다음 옵션 중 하나를 선택합니다.
 
     - C#
-      <br>**‘typeof’를 ‘nameof’로 변환** 을 선택합니다. ![typeof를 nameof로 변환](media/convert-type-of.PNG)
+      <br>**‘typeof’를 ‘nameof’로 변환** 을 선택합니다. ![‘typeof’를 ‘nameof’로 변환이 선택되고 C# 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/convert-type-of.PNG)
 
     - Visual Basic
-      <br>**‘GetType’을 ‘NameOf’로 변환** 을 선택합니다. ![typeof를 nameof로 변환](media/convert-get-type.PNG)
+      <br>**‘GetType’을 ‘NameOf’로 변환** 을 선택합니다. ![‘GetType’을 ‘NameOf’로 변환이 선택되고 Visual Basic 코드 변경 내용이 표시된 Visual Studio의 빠른 작업 및 리팩터링 메뉴 스크린샷](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

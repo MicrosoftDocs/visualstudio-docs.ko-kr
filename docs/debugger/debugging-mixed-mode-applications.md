@@ -1,5 +1,7 @@
 ---
 title: 혼합 모드 애플리케이션 디버깅 | Microsoft Docs
+description: 공용 언어 런타임에서 실행되는 관리 코드와 네이티브 코드를 결합하는 앱인 혼합 모드 애플리케이션을 Visual Studio에서 디버그합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 4137e7a73032a34276416b9640dd608b96b660a4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916287"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728332"
 ---
 # <a name="debugging-mixed-mode-applications"></a>혼합 모드 애플리케이션 디버깅
 혼합 모드 애플리케이션은 네이티브 코드(C++)와 관리 코드(Visual Basic, Visual C# 또는 C++처럼 공용 언어 런타임에서 실행되는 코드)가 결합된 애플리케이션입니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 혼합 모드 애플리케이션의 디버깅이 대부분 투명하게 이루어지며 단일 모드 애플리케이션을 디버깅할 때와 크게 다르지 않습니다. 그러나 특별히 몇 가지 사항을 고려해야 합니다.
@@ -46,7 +48,7 @@ C++에 대해 편집하며 계속하기를 사용하려면 [편집하며 계속�
 
 ### <a name="to-turn-off-property-evaluation"></a>속성 확인을 해제하려면
 
-1. **도구** 메뉴에서 **옵션**을 선택합니다.
+1. **도구** 메뉴에서 **옵션** 을 선택합니다.
 
 2. **옵션** 대화 상자에서 **디버깅** 폴더를 열고 **일반** 범주를 선택합니다.
 

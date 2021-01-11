@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf8473a8de1c9afa5ed73ce9dcb6b9b8462e6548
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77611135"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668402"
 ---
 # <a name="known-issues-for-containers"></a>컨테이너에 대한 알려진 문제
 
@@ -50,7 +50,7 @@ Visual Studio를 Docker 컨테이너에 설치하는 데 몇 가지 문제가 �
 
 ## <a name="build-tools-container"></a>빌드 도구 컨테이너
 
-빌드 도구 컨테이너를 사용하는 경우 다음과 같은 알려진 문제가 발생할 수 있습니다. 문제가 해결되었는지 또는 다른 알려진 문제가 있는지 확인하려면 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com )에 방문하세요.
+빌드 도구 컨테이너를 사용하는 경우 다음과 같은 알려진 문제가 발생할 수 있습니다. 문제가 해결되었는지 또는 다른 알려진 문제가 있는지 확인하려면 [Developer Community](https://aka.ms/feedback/suggest?space=8)를 방문하세요.
 
 * IntelliTrace는 컨테이너 내의 [일부 시나리오](https://github.com/Microsoft/vstest/issues/940)에서 작동하지 않을 수 있습니다.
 * 이전 버전의 Windows용 Docker에서는 기본 컨테이너 이미지가 20GB 뿐이므로 빌드 도구에 맞지 않습니다. [이미지 크기 변경 지침](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)에 따라 127GB 이상으로 확장하세요.

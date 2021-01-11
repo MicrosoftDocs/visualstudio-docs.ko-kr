@@ -1,6 +1,7 @@
 ---
 title: UWP 앱 디버그 | Microsoft Docs
-ms.custom: ''
+description: Visual Studio 디버거에서 UWP(유니버설 Windows 플랫폼) 앱의 디버깅 작업에 대한 문서를 찾을 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188273"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726711"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Visual Studio에서 유니버설 Windows 앱(UWP) 디버그
 

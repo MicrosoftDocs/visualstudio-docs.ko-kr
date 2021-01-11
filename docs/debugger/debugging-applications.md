@@ -1,5 +1,7 @@
 ---
 title: 애플리케이션 디버깅 | Microsoft Docs
+description: UWP 앱, 관리 코드, 네이티브 코드, GPU 코드, 웹앱 등 다양한 유형의 애플리케이션에 Visual Studio의 디버깅을 사용하는 방법을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535163"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727010"
 ---
 # <a name="debugging-applications"></a>애플리케이션 디버깅
 다음 섹션에서는 특정 유형의 애플리케이션에 대한 디버그를 설명합니다. 다른 애플리케이션 종류와 다른 언어는 다른 설정과 기술을 필요로 하며, 디버그해야 하는 다양한 문제를 발생시킵니다.

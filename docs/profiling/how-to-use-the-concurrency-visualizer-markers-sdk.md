@@ -1,5 +1,6 @@
 ---
 title: 동시성 시각화 도우미 표식 SDK 사용 | Microsoft Docs
+description: Visual Studio에서 동시성 시각화 도우미 표식 SDK를 사용하여 범위를 만들고 플래그, 메시지 및 경고를 쓰는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851582"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815609"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>방법: 동시성 시각화 도우미 표식 SDK 사용
 이 항목에서는 동시성 시각화 SDK를 사용하여 범위를 만들고 플래그, 메시지 및 경고를 쓰는 방법을 보여 줍니다.
@@ -46,7 +47,7 @@ ms.locfileid: "90851582"
     delete alertSpan;
     ```
 
-4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화에 있는 범위 3개 및 표식 3개를 보여 줍니다.
+4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작** 을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
      ![3가지 마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
@@ -70,7 +71,7 @@ ms.locfileid: "90851582"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 두 개의 표식 시리즈가 나타납니다. 다음 그림은 두 개의 새 범위를 보여 줍니다.
 
-     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![플래그 범위 및 메시지 범위와 함께 표식, 플래그, 메시지 시리즈를 보여 주는 동시성 시각화 도우미의 스레드 뷰 스크린샷](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic 또는 C\#을 사용하려면
 
@@ -124,7 +125,7 @@ ms.locfileid: "90851582"
     alertSpan.Leave();
     ```
 
-4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작**을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화의 스레드 뷰에 있는 범위 3개 및 표식 3개를 보여 줍니다.
+4. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **현재 프로젝트에서 시작** 을 선택하여 앱을 실행하고 동시성 시각화를 표시합니다. 다음 그림은 동시성 시각화의 스레드 뷰에 있는 범위 3개 및 표식 3개를 보여 줍니다.
 
      ![마커 및 경고가 있는 동시성 시각화 도우미](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
@@ -164,7 +165,7 @@ ms.locfileid: "90851582"
 
 6. 현재 프로젝트를 시작하여 동시성 시각화를 표시합니다. 스레드 뷰의 자체 레인에 세 개의 표식 시리즈가 나타납니다. 다음 그림은 세 개의 새 범위를 보여 줍니다.
 
-     ![3가지 사용자 지정 마커 계열이 있는 동시성 시각화 도우미](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![메시지, 경고, 플래그 범위와 함께 표식, 플래그, 메시지 시리즈를 보여 주는 동시성 시각화 도우미의 스레드 뷰 스크린샷](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>참조
 - [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)

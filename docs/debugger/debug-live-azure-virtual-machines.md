@@ -1,6 +1,6 @@
 ---
 title: 라이브 ASP.NET Azure VM 및 확장 집합 디버그
-description: 스냅샷 디버거로 snappoint를 설정하고 스냅샷을 보는 방법을 알아봅니다.
+description: Visual Studio에서 스냅샷 디버거를 사용하여 Azure VM 및 확장 집합에서 라이브 ASP.NET 앱을 디버그하는 동안 snappoint를 설정하고 스냅샷을 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809559"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846963"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 Azure Virtual Machines 및 Azure Virtual Machine Scale Sets의 라이브 ASP.NET 앱 디버그
 
@@ -35,7 +35,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-* Azure VM(Virtual Machines) 및 Azure Virtual Machine Scale Sets용 스냅샷 디버거는 **Azure 개발 워크로드**가 포함된 Visual Studio 2019 Enterprise 이상에서만 사용할 수 있습니다. (**개별 구성 요소** 탭의 **디버깅 및 테스트** > **스냅샷 디버거**에서 찾을 수 있습니다.)
+* Azure VM(Virtual Machines) 및 Azure Virtual Machine Scale Sets용 스냅샷 디버거는 **Azure 개발 워크로드** 가 포함된 Visual Studio 2019 Enterprise 이상에서만 사용할 수 있습니다. (**개별 구성 요소** 탭의 **디버깅 및 테스트** > **스냅샷 디버거** 에서 찾을 수 있습니다.)
 
     아직 설치되지 않은 경우 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)를 설치하세요.
 
@@ -53,20 +53,20 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
     > [!IMPORTANT]
     > 스냅샷 디버그하려면 Azure Virtual Machine\Virtual Machine Scale Set 서비스에 게시된 것과 ‘동일한 버전의 소스 코드’를 열어야 합니다.
 
-1. **디버그 &gt; 스냅샷 디버거 연결...** 을 선택합니다. 웹앱이 배포된 Azure Virtual Machine\Virtual Machine Scale Set와 Azure 스토리지 계정을 선택하고 **연결**을 클릭합니다. 스냅샷 디버거는 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [Azure App Service](debug-live-azure-applications.md)도 지원합니다.
+1. **디버그 &gt; 스냅샷 디버거 연결...** 을 선택합니다. 웹앱이 배포된 Azure Virtual Machine\Virtual Machine Scale Set와 Azure 스토리지 계정을 선택하고 **연결** 을 클릭합니다. 스냅샷 디버거는 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [Azure App Service](debug-live-azure-applications.md)도 지원합니다.
 
     ![디버그 메뉴에서 스냅샷 디버거 시작](../debugger/media/snapshot-debug-menu-attach.png)
 
     ![Azure 리소스 선택](../debugger/media/snapshot-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
-    > 처음 VM의 **스냅샷 디버거 연결**을 선택하면 IIS가 자동으로 다시 시작됩니다.
-    > 처음 Virtual Machine Scale Sets의 **스냅샷 디버거 연결**을 선택하면 Virtual Machine Scale Sets의 각 인스턴스를 수동으로 업그레이드해야 합니다.
+    > 처음 VM의 **스냅샷 디버거 연결** 을 선택하면 IIS가 자동으로 다시 시작됩니다.
+    > 처음 Virtual Machine Scale Sets의 **스냅샷 디버거 연결** 을 선택하면 Virtual Machine Scale Sets의 각 인스턴스를 수동으로 업그레이드해야 합니다.
 
     > [!NOTE]
     > (Visual Studio 2019 버전 16.2 이상) 스냅샷 디버거에서 Azure 클라우드 지원을 사용하도록 설정했습니다. 선택한 Azure 리소스와 Azure Storage 계정이 모두 동일한 클라우드에서 지원되는지 확인하세요. 기업의 [Azure 규정 준수](https://azure.microsoft.com/overview/trusted-cloud/) 구성에 대한 질문이 있는 경우 Azure 관리자에게 문의하세요.
 
-    **모듈**에 대한 메타데이터는 초기에 활성화되지 않습니다. 웹앱으로 이동하면 **컬렉션 시작** 단추가 활성 상태가 됩니다. Visual Studio가 이제 스냅샷 디버깅 모드입니다.
+    **모듈** 에 대한 메타데이터는 초기에 활성화되지 않습니다. 웹앱으로 이동하면 **컬렉션 시작** 단추가 활성 상태가 됩니다. Visual Studio가 이제 스냅샷 디버깅 모드입니다.
 
     ![스냅샷 디버깅 모드](../debugger/media/snapshot-message.png)
 
@@ -83,7 +83,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 
     ![snappoint 설정](../debugger/media/snapshot-set-snappoint.png)
 
-1. **컬렉션 시작**을 클릭하여 snappoint를 켭니다.
+1. **컬렉션 시작** 을 클릭하여 snappoint를 켭니다.
 
     ![snappoint 켜기](../debugger/media/snapshot-start-collection.png)
 
@@ -96,7 +96,7 @@ snappoint가 설정되면 웹 사이트의 브라우저 뷰로 이동하여 표�
 
 ## <a name="inspect-snapshot-data"></a>스냅샷 데이터 검사
 
-1. snappoint가 적중되면 진단 도구 창에 스냅샷이 표시됩니다. 이 창을 열려면 **디버그 > Windows > 진단 도구 표시**를 선택합니다.
+1. snappoint가 적중되면 진단 도구 창에 스냅샷이 표시됩니다. 이 창을 열려면 **디버그 > Windows > 진단 도구 표시** 를 선택합니다.
 
     ![snappoint 열기](../debugger/media/snapshot-diagsession-window.png)
 
@@ -106,7 +106,7 @@ snappoint가 설정되면 웹 사이트의 브라우저 뷰로 이동하여 표�
 
     이 보기에서 변수를 가리켜 DataTips를 보고, **로컬**, **조사식** 및 **호출 스택** 창을 사용하고, 식을 평가할 수도 있습니다.
 
-    웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
+    웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트** 를 클릭하여 snappoint를 다시 켤 수 있습니다.
 
 앱에 snappoint를 더 추가하고 **컬렉션 업데이트** 단추로 켤 수도 있습니다.
 
@@ -118,7 +118,7 @@ snappoint가 설정되면 웹 사이트의 브라우저 뷰로 이동하여 표�
 
 #### <a name="to-create-a-conditional-snappoint"></a>조건부 snappoint를 만들려면
 
-1. snappoint 아이콘(속이 빈 공)을 마우스 오른쪽 단추로 클릭하고 **설정**을 선택합니다.
+1. snappoint 아이콘(속이 빈 공)을 마우스 오른쪽 단추로 클릭하고 **설정** 을 선택합니다.
 
    ![설정 선택](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -134,19 +134,19 @@ snappoint가 적중될 때 스냅샷을 생성하는 것 외에 메시지를 로
 
 #### <a name="to-create-a-logpoint"></a>logpoint를 만들려면
 
-1. snappoint 아이콘(파란색 육각형)을 마우스 오른쪽 단추로 클릭하고 **설정**을 선택합니다.
+1. snappoint 아이콘(파란색 육각형)을 마우스 오른쪽 단추로 클릭하고 **설정** 을 선택합니다.
 
-1. snappoint 설정 창에서 **작업**을 선택합니다.
+1. snappoint 설정 창에서 **작업** 을 선택합니다.
 
     ![logpoint 만들기](../debugger/media/snapshot-logpoint.png)
 
 1. **메시지** 필드에 로그할 새 로그 메시지를 입력할 수 있습니다. 로그 메시지에서 변수를 중괄호 안에 배치하여 변수를 평가할 수도 있습니다.
 
-    **출력 창으로 보내기**를 선택하는 경우 logpoint가 적중되면 진단 도구 창에 메시지가 표시됩니다.
+    **출력 창으로 보내기** 를 선택하는 경우 logpoint가 적중되면 진단 도구 창에 메시지가 표시됩니다.
 
     ![진단 도구 창의 logpoint 데이터](../debugger/media/snapshot-logpoint-output.png)
 
-    **애플리케이션 로그로 보내기**를 선택하는 경우 logpoint가 적중되면 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)와 같이 `System.Diagnostics.Trace`(또는 .NET Core에서는 `ILogger`)의 메시지를 볼 수 있는 모든 위치에 메시지가 표시됩니다.
+    **애플리케이션 로그로 보내기** 를 선택하는 경우 logpoint가 적중되면 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)와 같이 `System.Diagnostics.Trace`(또는 .NET Core에서는 `ILogger`)의 메시지를 볼 수 있는 모든 위치에 메시지가 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -1,5 +1,7 @@
 ---
 title: 최적화된 코드 디버그 | Microsoft Docs
+description: 최적화로 인해 디버깅이 복잡해질 수 있으므로 가능하면 프로그램이 디버그될 때까지 Win32 릴리스 대상을 빌드하지 마세요. 이 문서에서 세부 정보를 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852389"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903183"
 ---
 # <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버그
 
@@ -58,11 +60,11 @@ ms.locfileid: "90852389"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>디버그 빌드 구성에서 최적화를 설정하려면
 
-1. 새 프로젝트를 만들 때는 `Win32 Debug` 대상을 선택합니다. 프로그램이 완전히 디버그되고 `Win32``Debug` 대상을 빌드할 준비가 될 때까지는 `Win32 Release` 대상을 사용합니다. 컴파일러는 `Win32 Debug` 대상을 최적화하지 않습니다.
+1. 새 프로젝트를 만들 때는 `Win32 Debug` 대상을 선택합니다. 프로그램이 완전히 디버그되고 `Win32 Debug` 대상을 빌드할 준비가 될 때까지는 `Win32 Release` 대상을 사용합니다. 컴파일러는 `Win32 Debug` 대상을 최적화하지 않습니다.
 
 2. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
-3. **보기** 메뉴에서 **속성 페이지**를 클릭합니다.
+3. **보기** 메뉴에서 **속성 페이지** 를 클릭합니다.
 
 4. **속성 페이지** 대화 상자의 **구성** 드롭다운 목록에서 `Debug`가 선택되어 있는지 확인합니다.
 

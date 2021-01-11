@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862791"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761214"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C# 형식 지정자
 형식 지정자를 사용하여 **조사식** 창에 값이 표시되는 형식을 변경할 수 있습니다. 또한 **직접 실행** 창, **명령** 창, [추적점](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) 및 소스 창에서도 형식 지정자를 사용할 수 있습니다. 이러한 창에서 식을 일시 중지하면 결과가 [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)에 지정된 형식 표시로 나타납니다.
@@ -52,7 +52,7 @@ ms.locfileid: "96862791"
 
 디버그 중에 `my_var1` 변수를 **조사식** 창에 추가합니다(**디버그** > **창** > **조사식** > **조사식 1**). 그런 다음, 변수를 마우스 오른쪽 단추로 클릭하고 **16진수 표시** 를 선택합니다. 이제 **조사식** 창에 0x0065 값이 표시됩니다. 이 값을 16진수 정수 대신 10진수 정수로 표시하려면 **이름** 열에서 변수 이름 뒤에 10진수 형식 지정자 **, d** 를 추가합니다. 이제 **값** 열에 **101** 이 표시됩니다.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![101 값과 int 형식으로 my_var1, d를 표시하는 한 줄이 있는 Visual Studio 조사식 창의 스크린샷](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

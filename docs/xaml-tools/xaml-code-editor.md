@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329182"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833301"
 ---
 # <a name="xaml-code-editor"></a>XAML 코드 편집기
 
@@ -64,7 +64,7 @@ XAML 앱에 대한 코드 편집기 창은 표준 IDE에도 표시되는 UI(사�
 
 - **세로 분할** 단추는 IDE에서 XAML 디자이너와 XAML 코드 편집기의 위치를 가로 맞춤에서 세로 맞춤으로 변경합니다.
 - **가로 분할** 단추는 IDE에서 XAML 디자이너와 XAML 코드 편집기의 위치를 세로 맞춤에서 가로 맞춤으로 변경합니다.
-- **창 축소** 단추를 사용하면 코드 편집기나 디자이너인지에 관계없이 하단 창에 있는 항목을 축소할 수 있습니다. (하단 창을 복원하려면 동일한 단추를 다시 선택합니다. 이제 이 단추의 이름은 **창 확장**으로 지정됩니다.)
+- **창 축소** 단추를 사용하면 코드 편집기나 디자이너인지에 관계없이 하단 창에 있는 항목을 축소할 수 있습니다. (하단 창을 복원하려면 동일한 단추를 다시 선택합니다. 이제 이 단추의 이름은 **창 확장** 으로 지정됩니다.)
 
 <!-- [!TIP]
 > You can run two parallel instances of the XAML code editor concurrently by using both the **Pop Out XAML** button and the **Expand Pane** button.
@@ -79,13 +79,13 @@ XAML 코드 창의 상단 두 번째 행에는 두 개의 창 드롭다운 목�
 
 창 드롭다운 목록은 다음과 같은 다양한 기능을 포함합니다.
 
-- **요소: 창**은 왼쪽에 위치하며, 형제 또는 부모 요소를 보고 탐색할 수 있습니다.
+- **요소: 창** 은 왼쪽에 위치하며, 형제 또는 부모 요소를 보고 탐색할 수 있습니다.
 
   특히 코드의 태그 구조를 표시하는 개요와 유사한 뷰를 표시합니다. 목록에서 선택하면 코드 편집기의 포커스가 선택한 요소를 포함하는 코드 줄에 맞춰집니다.
 
     ![Visual Studio의 요소: 창 드롭다운 목록](media/xaml-element-window-dropdown.png "Visual Studio 2019의 요소: 창 드롭다운 목록 스크린샷")
 
-- **멤버: 창**은 오른쪽에 위치하며, 특성 또는 자식 요소를 보고 탐색할 수 있습니다.
+- **멤버: 창** 은 오른쪽에 위치하며, 특성 또는 자식 요소를 보고 탐색할 수 있습니다.
 
     특히 코드의 속성 목록이 표시됩니다. 목록에서를 선택하면 코드 편집기의 포커스가 선택한 속성을 포함하는 코드 줄에 맞춰집니다.
 
@@ -101,18 +101,18 @@ XAML 코드 창의 상단 두 번째 행에는 두 개의 창 드롭다운 목�
 
 [빠른 작업](../ide/quick-actions.md)을 사용하면 단일 작업으로 쉽게 코드를 리팩터링하거나, 생성하거나, 수정할 수 있습니다.
 
-예를 들어 빠른 작업을 사용하여 수행할 수 있는 유용한 작업 중 하나는 **MainWindow.xaml.cs** 탭의 C# 코드에서 **불필요한 Using을 제거**하는 것입니다.
+예를 들어 빠른 작업을 사용하여 수행할 수 있는 유용한 작업 중 하나는 **MainWindow.xaml.cs** 탭의 C# 코드에서 **불필요한 Using을 제거** 하는 것입니다.
 
 방법은 다음과 같습니다.
 
-1. Using 문을 마우스로 가리키고 전구 아이콘을 선택한 다음 드롭다운 목록에서 **불필요한 Using 제거**를 선택합니다.
+1. Using 문을 마우스로 가리키고 전구 아이콘을 선택한 다음 드롭다운 목록에서 **불필요한 Using 제거** 를 선택합니다.
 
     ![IDE 편집기의 빠른 작업 메뉴에 있는 “불필요한 Using 제거” 옵션](media/xaml-code-editor-remove-usings.png "IDE 편집기의 빠른 작업 메뉴에 있는 “불필요한 Using 제거” 옵션 스크린샷")
 
-1. **문서**, **프로젝트** 또는 **솔루션**에서 모든 발생을 수정할지 여부를 선택합니다.
-1. **미리 보기** 대화 상자를 보고 **적용**을 선택합니다.
+1. **문서**, **프로젝트** 또는 **솔루션** 에서 모든 발생을 수정할지 여부를 선택합니다.
+1. **미리 보기** 대화 상자를 보고 **적용** 을 선택합니다.
 
-메뉴 모음에서 이 기능에 액세스할 수도 있습니다. 이렇게 하려면 **편집** > **IntelliSense** > **Using 제거 및 정렬**을 선택합니다.
+메뉴 모음에서 이 기능에 액세스할 수도 있습니다. 이렇게 하려면 **편집** > **IntelliSense** > **Using 제거 및 정렬** 을 선택합니다.
 
 Using 설정에 대한 자세한 내용은 [Using 정렬](../ide/reference/sort-usings.md) 페이지를 참조하세요. IntelliSense에 대한 자세한 내용은 [Visual Studio의 IntelliSense](../ide/using-intellisense.md) 페이지를 참조하세요. 개발자가 빠른 작업을 사용하는 일반적인 방법 중 일부에 대한 자세한 내용은 [일반적인 빠른 작업](../ide/common-quick-actions.md) 페이지를 참조하세요.
 
@@ -124,7 +124,7 @@ Using 설정에 대한 자세한 내용은 [Using 정렬](../ide/reference/sort-
 
     ![노란색 막대가 있는 코드 편집기 편집](media/code-editor-edit-yellow.png "선택 영역 여백에서 변경 사항이 노란색 막대로 표시된 코드 편집기의 스크린샷.")
 
-- 변경 내용을 저장하면(파일을 닫기 전) 막대가 **녹색**으로 바뀝니다.
+- 변경 내용을 저장하면(파일을 닫기 전) 막대가 **녹색** 으로 바뀝니다.
 
     ![녹색 막대가 있는 코드 편집기 편집](media/code-editor-edit-green.png "선택 영역 여백에서 변경 사항이 녹색 막대로 표시된 코드 편집기의 스크린샷.")
 
@@ -136,7 +136,7 @@ Using 설정에 대한 자세한 내용은 [Using 정렬](../ide/reference/sort-
 
 XAML 코드 편집기에서 코드를 편집하는 경우 오른쪽 클릭 바로 가기 메뉴를 사용하여 액세스할 수 있는 여러 기능이 있습니다. 대부분의 해당 기능은 Visual Studio IDE에서 전체적으로 사용할 수 있지만 일부 기능은 디자인 창과 함께 코드 편집기를 사용하는 경우에만 적용됩니다.
 
-![Visual Studio의 XAML 코드 편집기에 있는 오른쪽 클릭 바로 가기 메뉴](media/xaml-code-editor-right-click-menu.png "Visual Studio 2019의 XAML 코드 편집기에 있는 오른쪽 클릭 바로 가기 메뉴 스크린샷")
+![Visual Studio 2019의 XAML 코드 편집기 마우스 오른쪽 클릭 상황에 맞는 메뉴 스크린샷](media/xaml-code-editor-right-click-menu.png)
 
 각 기능에서 수행하는 작업과 유용한 방법은 다음과 같습니다.
 
@@ -163,7 +163,7 @@ XAML 코드 편집기에서 코드를 편집하는 경우 오른쪽 클릭 바�
 
 코드 편집기의 스크롤 막대 오른쪽 상단에 **분할** 단추가 있습니다. 이를 선택하면 다른 코드 편집기 창을 열 수 있습니다. 이는 서로 독립적으로 작동하므로 다른 위치의 코드를 작업하는 데 사용할 수 있으므로 유용합니다.
 
-![Visual Studio의 XAML 코드 편집기, 중간 창만](media/code-editor-split-window-button.png "Visual Studio 2019의 XAML 코드 편집기의 스크린샷, 중간 창만")
+![창 오른쪽 위에 분할 단추가 강조 표시된 Visual Studio 2019의 XAML 코드 편집기 가운데 창을 보여 주는 스크린샷](media/code-editor-split-window-button.png)
 
 편집기 창을 분할하는 방법에 대한 자세한 내용은 [편집기 창 관리](../ide/how-to-manage-editor-windows.md) 페이지를 참조하세요.
 
@@ -216,7 +216,7 @@ Visual Studio 2015부터 #region 지원을 WPF 및 UWP XAML 개발자가 사용�
 
   ![IDE 도구 모음의 주석 단추 및 주석 처리 제거 단추](media/comment-undo-comment-buttons.png "IDE 도구 모음의 주석 단추 및 주석 처리 제거 단추 스크린샷")
 
-- 주석으로 묶을 코드를 선택하고 **Ctrl**+**K**, **Ctrl**+**C**를 누릅니다. 선택한 코드의 주석 처리를 제거하려면 **Ctrl**+**K**, **Ctrl**+**U**를 누릅니다.
+- 주석으로 묶을 코드를 선택하고 **Ctrl**+**K**, **Ctrl**+**C** 를 누릅니다. 선택한 코드의 주석 처리를 제거하려면 **Ctrl**+**K**, **Ctrl**+**U** 를 누릅니다.
 
 **MainWindow.xaml.cs** 탭에 있는 C# 코드에서 주석을 사용하는 방법에 대한 자세한 내용은 [설명서 주석](/dotnet/csharp/language-reference/language-specification/documentation-comments/) 페이지를 참조하세요.
 
@@ -230,7 +230,7 @@ XAML 코드에 표시되는 전구 아이콘은 리팩터링, 생성 또는 코�
 
   ![XAML 코드 편집기의 빠른 작업 전구에 있는 불필요한 네임스페이스 제거 옵션](media/xaml-code-editor-dimmed-namespaces-preview.png "빠른 작업 전구를 사용하면 표시되는 XAML 코드 편집기의 불필요한 네임스페이스 제거 옵션 스크린샷")
 
-- **네임스페이스 이름 바꾸기**. 네임스페이스를 강조 표시한 후 오른쪽 클릭 바로 가기 메뉴에서 사용할 수 있는 이 기능을 통해 한 번에 여러 설정 인스턴스를 쉽게 변경할 수 있습니다. 메뉴 모음에서 **편집** > **리팩터링** > **이름 바꾸기**를 사용하거나 **Ctrl**+**R**을 누른 다음 **Ctrl**+**R**을 다시 눌러 이 기능을 이용할 수도 있습니다.
+- **네임스페이스 이름 바꾸기**. 네임스페이스를 강조 표시한 후 오른쪽 클릭 바로 가기 메뉴에서 사용할 수 있는 이 기능을 통해 한 번에 여러 설정 인스턴스를 쉽게 변경할 수 있습니다. 메뉴 모음에서 **편집** > **리팩터링** > **이름 바꾸기** 를 사용하거나 **Ctrl**+**R** 을 누른 다음 **Ctrl**+**R** 을 다시 눌러 이 기능을 이용할 수도 있습니다.
 
   ![XAML 코드 편집기의 오른쪽 클릭 바로 가기 메뉴에 있는 네임스페이스 이름 바꾸기 옵션](media/code-editor-rename-namespace.png "오른쪽 클릭 바로 가기 메뉴를 사용하면 표시되는 XAML 코드 편집기의 네임스페이스 이름 바꾸기 옵션 스크린샷")
 
@@ -264,12 +264,12 @@ Visual Studio IDE의 ‘모든’ 설정에 대한 자세한 내용은 [코드 �
 
 ## <a name="xaml-optional-settings"></a>XAML 선택적 설정
 
-[옵션](../ide/reference/options-dialog-box-visual-studio.md) 대화 상자를 사용하여 XAML 코드 편집기에 대한 기본 설정을 변경할 수 있습니다. 설정을 보려면 **도구** > **옵션** > **텍스트 편집기** > **XAML**을 선택합니다.
+[옵션](../ide/reference/options-dialog-box-visual-studio.md) 대화 상자를 사용하여 XAML 코드 편집기에 대한 기본 설정을 변경할 수 있습니다. 설정을 보려면 **도구** > **옵션** > **텍스트 편집기** > **XAML** 을 선택합니다.
 
 ![XAML 텍스트 편집기용 옵션 목록](media/xaml-tools-options.png "XAML 텍스트 편집기용 옵션 목록 스크린샷")
 
 > [!NOTE]
-> 바로 가기 키를 사용하여 옵션 대화 상자에 액세스할 수도 있습니다. 방법은 다음과 같습니다. **Ctrl**+**Q**를 눌러 IDE를 검색하고 **옵션**을 입력한 다음 **Enter**를 누릅니다. 다음으로 **Ctrl**+**E**를 눌러 옵션 대화 상자를 검색하고 **텍스트 편집기**를 입력하고, **Enter**를 누르고 **XAML**을 입력한 다음 **Enter**를 누릅니다.
+> 바로 가기 키를 사용하여 옵션 대화 상자에 액세스할 수도 있습니다. 방법은 다음과 같습니다. **Ctrl**+**Q** 를 눌러 IDE를 검색하고 **옵션** 을 입력한 다음 **Enter** 를 누릅니다. 다음으로 **Ctrl**+**E** 를 눌러 옵션 대화 상자를 검색하고 **텍스트 편집기** 를 입력하고, **Enter** 를 누르고 **XAML** 을 입력한 다음 **Enter** 를 누릅니다.
 >  
 > 바로 가기 키에 대한 자세한 내용은 [Visual Studio 바로 가기 팁](../ide/productivity-shortcuts.md#code-editor) 페이지를 참조하세요.
 

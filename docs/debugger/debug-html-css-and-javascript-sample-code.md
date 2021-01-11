@@ -1,5 +1,7 @@
 ---
 title: HTML 및 CSS 샘플 코드 디버그 | Microsoft Docs
+description: 빠른 시작 디버깅 문서에서 사용되는 HTML 및 CSS 샘플 코드를 찾을 수 있습니다. 빠른 시작에서 의도적으로 제공된 오류는 이 문서에서 수정됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745540"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728913"
 ---
 # <a name="debug-html-and-css-sample-code"></a>HTML 및 CSS 샘플 코드 디버그
 

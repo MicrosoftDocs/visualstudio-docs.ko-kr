@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467546"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696616"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -35,7 +35,7 @@ ms.locfileid: "92467546"
    > [!NOTE]
    > 항상 이 템플릿의 최신 버전을 다운로드합니다. 이전 버전을 사용하는 경우 대량 업로드가 실패할 수 있습니다.
 
-1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. ( *참조* 는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
+1. Excel 스프레드시트에서 구독을 할당하려는 개인에 대한 정보로 필드를 채웁니다. (*참조* 는 선택적 필드입니다.) 작업을 마친 후에 파일을 로컬로 저장합니다.
 
     > [!NOTE]
     > 관리자는 템플릿의 필드 중 하나를 사용하여 구독자의 소프트웨어 다운로드 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다.  다운로드를 사용하지 않도록 설정하면 제품 키에 대한 액세스도 사용하지 않도록 설정됩니다.
@@ -86,7 +86,7 @@ ms.locfileid: "92467546"
 > - 그룹에는 적어도 한 명의 멤버가 포함되어야 합니다.  빈 그룹은 지원되지 않습니다.
 > - 그룹의 사용자 수는 1,000명 미만이어야 합니다. 
 > - 모든 사용자는 그룹의 최상위 수준에 있어야 합니다.  중첩된 그룹은 지원되지 않습니다.
-> - 신뢰할 수 있는 계약만 지원됩니다.
+> - 신뢰할 수 있는 계약만 지원됩니다. 구독을 ‘초과 할당’할 수 있는 계약만 신뢰할 수 있습니다.
 > - 그룹의 모든 멤버에게는 Azure AD 계정에 연결된 전자 메일 주소가 있어야 합니다.
 > - Azure AD 그룹을 사용하여 추가한 구독에서는 알림에 별도의 전자 메일 주소를 사용할 수 없습니다.  
 
@@ -130,10 +130,16 @@ A: 아니요. 그룹의 모든 사용자는 동일한 구독을 받습니다.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q: Azure AD 그룹에 추가된 개별 구독자의 구독자 세부 정보를 편집할 수 있나요?  
 A: 아니요. 개별 구독자의 정보를 수정하려면 Azure AD 보안 그룹에서 해당 구독자를 제거한 다음 개별적으로 구독에 할당해야 합니다.  
 
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>Q: Azure Active Directory 그룹을 사용하여 구독자를 추가하는 옵션이 표시되지 않는 이유는 무엇인가요?
+A: 이 기능은 현재 신뢰할 수 있는 계약이 있는 조직에서만 사용할 수 있습니다.  **세부 정보** 단추를 선택하여 계약 정보를 표시하세요.
+
+   > [!div class="mx-imgBorder"]
+   > ![세부 정보 단추 클릭](_img/assign-license-bulk/bulk-add-agreement.png "세부 정보 단추를 클릭하여 보유하고 있는 계약의 종류 확인")
+
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q: Azure AD 보안 그룹에 구독자를 추가했지만 구독 관리 포털에는 추가되었다고 표시되지 않고 구독도 없습니다. 이유는 무엇입니까?  
 A: 조직이 Azure AD를 구성한 방식에 따라 사용자가 추가되기까지 최대 24시간 지연될 수 있습니다. 24시간 넘게 지연되면 [고객 지원팀에 문의](https://visualstudio.microsoft.com/support/support-overview-vs)하세요.  
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

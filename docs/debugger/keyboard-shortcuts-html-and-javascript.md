@@ -1,5 +1,7 @@
 ---
 title: 바로 가기 키(HTML 및 JavaScript) | Microsoft Docs
+description: HTML 및 JavaScript를 사용하는 UWP 앱 디버깅에 대한 바로 가기 키를 알아봅니다. JavaScript 콘솔 창 및 DOM 탐색기에 대한 바로 가기가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211341"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903820"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
 
@@ -52,9 +54,9 @@ HTML 및 JavaScript를 사용하는 UWP 앱을 디버그하기 위한 Visual Stu
 |작업|바로 가기|
 |------------|--------------|
 |요소 선택|Ctrl+B|
-|**요소 선택**을 사용할 때 웹 페이지 강조 표시 상자의 표시/숨기기 기능 전환|Ctrl+Shift+I|
-|**HTML로 편집**을 사용하여 변경 내용 커밋|Ctrl+Enter|
-|**HTML로 편집**을 사용하여 변경 내용 삭제|Esc|
+|**요소 선택** 을 사용할 때 웹 페이지 강조 표시 상자의 표시/숨기기 기능 전환|Ctrl+Shift+I|
+|**HTML로 편집** 을 사용하여 변경 내용 커밋|Ctrl+Enter|
+|**HTML로 편집** 을 사용하여 변경 내용 삭제|Esc|
 |선택한 CSS 값 1씩 증가|위쪽 화살표|
 |선택한 CSS 값 1씩 감소|아래쪽 화살표|
 

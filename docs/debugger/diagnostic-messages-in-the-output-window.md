@@ -1,5 +1,7 @@
 ---
 title: 출력 창으로 메시지 보내기 | Microsoft Docs
+description: System.Diagnostics 클래스 라이브러리의 일부인 Debug 클래스나 Trace 클래스를 사용하여 Visual Studio의 출력 창에 런타임 메시지를 씁니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350474"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728085"
 ---
 # <a name="send-messages-to-the-output-window"></a>출력 창으로 메시지 보내기
 

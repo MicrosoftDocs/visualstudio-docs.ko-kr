@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878919"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729212"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.
@@ -70,7 +70,7 @@ ms.locfileid: "91878919"
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> 에뮬레이터 설치 실패
  Hyper-V를 설치하지 않은 경우 에뮬레이터를 설치하려고 할 때 다음과 같은 메시지가 나타납니다. HyperV를 지원하는 컴퓨터가 있어야 하고 HyperV를 사용하도록 설정해야 합니다.
 
- ![Android_Emu_Install_Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![컴퓨터에서 Hyper-V를 지원하지 않기 때문에 Microsoft Visual Studio Emulator for Android에 대해 설치가 차단되었다는 Visual Studio 메시지 스크린샷](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > 이 메시지는 Android용 Visual Studio 에뮬레이터 및 Windows Phone 에뮬레이터 모두에 적용됩니다. Windows 8.1 및 Windows 10에서 에뮬레이터를 지원합니다.
@@ -135,7 +135,7 @@ ms.locfileid: "91878919"
 
 - Hyper-V 관리자에 가상 스위치 관리자를 열고 네트워크 스위치가 2개 있고, 첫 번째는 내부 스위치, 두 번째는 외부 스위치인지 확인합니다.
 
-     ![Android_Emu_V_Switch_Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Hyper-v 관리자의 가상 스위치 관리자 스크린샷 새 가상 스위치가 강조 표시되고 해당 속성에는 외부 네트워크 스위치로 표시됨](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues)할 수 있습니다(섹션 6).
 
@@ -182,7 +182,7 @@ ms.locfileid: "91878919"
 
   6. Windows 8 Professional 이상을 실행하고 있는지 확인합니다(Windows Server 2008은 지원되지 않음). Windows Server 2012는 지원되지만 데스크톱 경험 기능을 사용하도록 설정해야 합니다.
 
-     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고( **시작 키+R**+**R** 을 입력한 다음, `eventvwr` 입력) **Windows 로그** , **시스템** 을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor** 로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.
+     이벤트 뷰어를 검사하여 하이퍼바이저 오류가 있는지 확인할 수 있습니다. 이 작업을 수행하려면 이벤트 뷰어를 열고(**시작 키+R**+**R** 을 입력한 다음, `eventvwr` 입력) **Windows 로그**, **시스템** 을 선택합니다. 그런 후 소스를 **Hyper-V-Hypervisor** 로 설정하고 이벤트 소스별로 로그를 필터링합니다. 근본 원인을 파악하는 데 도움이 되도록 오류를 확인하세요.
 
      프로세서가 최소 요구 사항을 충족하지만 하이퍼바이저에 계속 오류가 발생하는 경우 컴퓨터에 사용할 수 있는 BIOS 업그레이드가 있는지 확인하세요. 업그레이드가 있고 적용하기로 선택한 경우 BIOS를 업그레이드할 때 제조업체에서 제공한 모든 사전 예방 조치를 준수합니다(예를 들어 전력 손실로 인해 BIOS 펌웨어 업그레이드가 중단될 경우 BIOS가 영구히 손상될 수 있으므로 주의할 것).
 

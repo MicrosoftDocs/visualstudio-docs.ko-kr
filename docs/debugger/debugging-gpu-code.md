@@ -1,5 +1,7 @@
 ---
 title: GPU 코드 디버깅 | Microsoft Docs
+description: Visual Studio의 GPU(그래픽 처리 장치)에서 실행되는 C++ 코드 디버깅에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599949"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727036"
 ---
 # <a name="debugging-gpu-code"></a>GPU 코드 디버깅
 GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 있습니다. Visual Studio의 GPU 디버깅 지원에는 경합 상태 감지, 프로세스 시작, 프로세스에 연결 및 디버깅 창에 대한 통합이 포함됩니다.
@@ -32,9 +34,9 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 ## <a name="configuring-gpu-debugging"></a>GPU 디버깅 구성
  디버거는 동일한 응용 프로그램 실행에 포함된 CPU 코드와 GPU 코드 둘 다에서 중단될 수 없습니다. 기본적으로 디버거는 CPU 코드에서 중단됩니다. GPU 코드를 디버깅하려면 다음 두 단계 중 하나를 사용합니다.
 
-- **표준** 도구 모음의 **디버그 형식** 목록에서 **GPU 전용**을 선택합니다.
+- **표준** 도구 모음의 **디버그 형식** 목록에서 **GPU 전용** 을 선택합니다.
 
-- **솔루션 탐색기**의 프로젝트에 대한 바로 가기 메뉴에서 **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **디버깅**을 선택한 다음, **디버그 형식** 목록에서 **GPU 전용**을 선택합니다.
+- **솔루션 탐색기** 의 프로젝트에 대한 바로 가기 메뉴에서 **속성** 을 선택합니다. **속성 페이지** 대화 상자에서 **디버깅** 을 선택한 다음, **디버그 형식** 목록에서 **GPU 전용** 을 선택합니다.
 
 ## <a name="launching-and-attaching-to-applications"></a>애플리케이션 시작 및 애플리케이션에 연결
  Visual Studio 디버깅 명령을 사용하여 GPU 디버깅을 시작하고 중지할 수 있습니다. 자세한 내용은 [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)을 참조하세요. 또한 실행 중인 프로세스에 GPU 디버거를 연결할 수 있지만, 이는 해당 프로세스가 GPU 코드를 실행하는 경우에만 가능합니다. 자세한 내용은 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.
@@ -60,12 +62,12 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 - [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)
 
 ## <a name="data-synchronization-exceptions"></a>데이터 동기화 예외
- 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. **중단** 또는 **계속**이라는 두 가지 옵션이 있습니다. **예외** 대화 상자를 사용하여 디버거가 이러한 조건을 감지하는지 여부와 디버거가 중단되는 조건을 구성할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요. 또한 **옵션** 대화 상자를 사용하여 기록되는 데이터가 데이터의 값을 변경하지 않는 경우 디버거가 예외를 무시하도록 지정할 수도 있습니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.
+ 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. **중단** 또는 **계속** 이라는 두 가지 옵션이 있습니다. **예외** 대화 상자를 사용하여 디버거가 이러한 조건을 감지하는지 여부와 디버거가 중단되는 조건을 구성할 수 있습니다. 자세한 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요. 또한 **옵션** 대화 상자를 사용하여 기록되는 데이터가 데이터의 값을 변경하지 않는 경우 디버거가 예외를 무시하도록 지정할 수도 있습니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.
 
 ## <a name="troubleshooting"></a>문제 해결
 
 ### <a name="specifying-an-accelerator"></a>가속기 지정
- GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식**으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 [accelerator 및 accelerator_view 개체 사용](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
+ GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식** 으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 [accelerator 및 accelerator_view 개체 사용](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
 
 ### <a name="conditional-breakpoints"></a>조건부 중단점
  GPU 코드에서 조건부 중단점이 지원되지만 디바이스에서 일부 식은 계산될 수 없습니다. 식이 디바이스에서 계산될 수 없는 경우 디버거에서 계산됩니다. 디버거는 대개 디바이스보다 느리게 실행됩니다.

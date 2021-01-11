@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190237"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815726"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 
@@ -190,13 +190,13 @@ ms.locfileid: "96190237"
 
 3. 웹 성능 테스트 결과 뷰어로 돌아가서 실패한 *JScriptQuery.aspx* 페이지를 선택합니다. 요청 탭을 누르고, 원시 데이터 표시 확인란의 선택이 취소되었는지 확인하고, 아래로 스크롤하여 CustomQueryString에서 빠른 찾기를 선택합니다.
 
-     ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![웹 성능 텍스트 결과 뷰어의 요청 탭 스크린샷 QueryString 매개 변수가 선택되고 상황에 맞는 메뉴에서 QuickFind가 강조 표시되어 있습니다.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. 테스트 편집기를 보면 *JScriptQuery.aspx* 요청의 CustomQueryString에 `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`의 값이 할당되었고 의심되는 동적 부분은 “1v0yhyiyr0raa2w4j4pwf5zl”이라는 것을 알 수 있습니다. 찾을 내용 드롭다운 목록에서 검색 문자열의 의심 가는 부분을 제거합니다. 그러면 검색 문자열은 "CustomQueryString=jScriptQueryString___"이 됩니다.
 
      동적 매개 변수는 오류가 있는 요청보다 먼저 발생한 요청 중 하나에서 값을 할당 받았습니다. 따라서 [위로 검색] 확인란을 선택하고 *Querystring.aspx* 에 대한 이전 요청이 요청 패널에 강조 표시될 때까지 다음 찾기를 계속 선택합니다. 다음 찾기를 세 번 선택한 다음에 발생합니다.
 
-     ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![웹 성능 텍스트 결과 뷰어의 스크린샷 쿼리 문자열이 선택되고 위로 검색 및 다음 찾기가 선택된 찾기 대화 상자가 표시되어 있습니다.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      응답 탭 및 앞에서 구현한 JavaScript(아래에 표시됨)에서 볼 수 있듯이 쿼리 문자열 매개 변수 CustomQueryString에는 "jScriptQueryString___" 값이 할당되어 있으며, 또한 이 매개 변수는 var sessionId에서 반환된 값과 연결되어 있습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 내 코드만을 사용하여 사용자 코드 디버그 | Microsoft Docs
+description: 내 코드만은 사용자 코드가 아닌 코드 호출을 자동으로 건너뛰는 디버깅 기능입니다. 이 기능을 사용하거나 사용하지 않도록 설정하는 방법 및 사용하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536567"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903885"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>내 코드만을 사용하여 사용자 코드만 디버그
 
-*내 코드만*은 시스템, 프레임워크 및 기타 사용자 코드가 아닌 코드에 대한 호출을 자동으로 프로시저 단위로 실행하는 Visual Studio 디버깅 기능입니다. **호출 스택** 창에서 내 코드만은 이러한 호출을 **[외부 코드]** 프레임으로 축소합니다.
+*내 코드만* 은 시스템, 프레임워크 및 기타 사용자 코드가 아닌 코드에 대한 호출을 자동으로 프로시저 단위로 실행하는 Visual Studio 디버깅 기능입니다. **호출 스택** 창에서 내 코드만은 이러한 호출을 **[외부 코드]** 프레임으로 축소합니다.
 
 내 코드만은 .NET, C++ 및 JavaScript 프로젝트에서 다르게 작동합니다.
 
@@ -25,12 +27,12 @@ ms.locfileid: "85536567"
 
 대부분의 프로그래밍 언어에서 내 코드만은 기본적으로 사용하도록 설정되어 있습니다.
 
-- Visual Studio에서 내 코드만을 사용하거나 사용하지 않도록 설정하려면 **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반**에서 **내 코드만 사용**을 선택하거나 선택 취소합니다.
+- Visual Studio에서 내 코드만을 사용하거나 사용하지 않도록 설정하려면 **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반** 에서 **내 코드만 사용** 을 선택하거나 선택 취소합니다.
 
 ![옵션 대화 상자의 내 코드만 사용](../debugger/media/dbg_justmycode_options.png "내 코드만 사용")
 
 > [!NOTE]
-> **내 코드만 사용**은 모든 언어의 모든 Visual Studio 프로젝트에 적용되는 전역 설정입니다.
+> **내 코드만 사용** 은 모든 언어의 모든 Visual Studio 프로젝트에 적용되는 전역 설정입니다.
 
 ## <a name="just-my-code-debugging"></a>내 코드만 디버깅
 
@@ -43,14 +45,14 @@ ms.locfileid: "85536567"
 ![호출 스택 창의 외부 코드 프레임](../debugger/media/dbg_justmycode_externalcode.png "외부 코드 프레임")
 
 >[!TIP]
->**모듈**, **호출 스택**, **작업** 또는 대부분의 다른 디버깅 창을 열려면 디버깅 세션에 있어야 합니다. 디버깅하는 동안 **디버그** > **창**에서 열려는 창을 선택합니다.
+>**모듈**, **호출 스택**, **작업** 또는 대부분의 다른 디버깅 창을 열려면 디버깅 세션에 있어야 합니다. 디버깅하는 동안 **디버그** > **창** 에서 열려는 창을 선택합니다.
 
-<a name="BKMK_Override_call_stack_filtering"></a> 축소된 **[외부 코드]** 프레임의 코드를 보려면 **호출 스택** 또는 **작업** 창을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **외부 코드 표시**를 선택합니다. 펼쳐진 외부 코드 줄이 **[외부 코드**] 프레임을 대체합니다.
+<a name="BKMK_Override_call_stack_filtering"></a> 축소된 **[외부 코드]** 프레임의 코드를 보려면 **호출 스택** 또는 **작업** 창을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **외부 코드 표시** 를 선택합니다. 펼쳐진 외부 코드 줄이 **[외부 코드**] 프레임을 대체합니다.
 
 ![호출 스택 창에 외부 코드 표시](../debugger/media/dbg_justmycode_showexternalcode.png "외부 코드 표시")
 
 > [!NOTE]
-> **외부 코드 표시**는 사용자가 연 모든 언어의 모든 프로젝트에 적용되는 현재 사용자 프로파일러 설정입니다.
+> **외부 코드 표시** 는 사용자가 연 모든 언어의 모든 프로젝트에 적용되는 현재 사용자 프로파일러 설정입니다.
 
 **호출 스택** 창에서 펼쳐진 외부 코드 줄을 두 번 클릭하면 호출하는 코드 줄이 소스 코드에서 녹색으로 강조 표시됩니다. DLL 또는 찾을 수 없거나 로드되지 않는 다른 모듈의 경우, 기호 또는 소스를 찾을 수 없음 페이지가 열릴 수 있습니다.
 
@@ -73,7 +75,7 @@ ms.locfileid: "85536567"
 
 사용자 코드가 더 이상 없으면 끝날 때까지 디버깅이 계속되거나, 다른 중단점에 적중하거나, 오류가 발생합니다.
 
-<a name="BKMK_NET_Breakpoint_behavior"></a> 사용자 코드가 아닌 코드에서 디버거를 중단하면(예: **디버그** > **모두 중단**을 사용하고 사용자 코드가 아닌 코드에서 일시 중지하는 경우) **소스 없음** 창이 나타납니다. 그러면 **디버그** > **단계** 명령을 사용하여 사용자 코드의 다음 줄로 이동할 수 있습니다.
+<a name="BKMK_NET_Breakpoint_behavior"></a> 사용자 코드가 아닌 코드에서 디버거를 중단하면(예: **디버그** > **모두 중단** 을 사용하고 사용자 코드가 아닌 코드에서 일시 중지하는 경우) **소스 없음** 창이 나타납니다. 그러면 **디버그** > **단계** 명령을 사용하여 사용자 코드의 다음 줄로 이동할 수 있습니다.
 
 사용자 코드가 아닌 코드에서 처리되지 않은 예외가 발생하면 디버거는 예외가 생성된 사용자 코드의 줄에서 중단됩니다.
 
@@ -106,7 +108,7 @@ Visual Studio 2017 버전 15.8부터는 코드 스태핑을 위한 내 코드만
 
 사용자 코드가 더 이상 없으면 끝날 때까지 디버깅이 계속되거나, 다른 중단점에 적중하거나, 오류가 발생합니다.
 
-사용자 코드가 아닌 코드에서 디버거를 중단하면(예: **디버그** > **모두 중단**을 사용하고 사용자 코드가 아닌 코드에서 일시 중지하는 경우), 사용자 코드가 아닌 코드에서 스태핑이 계속됩니다.
+사용자 코드가 아닌 코드에서 디버거를 중단하면(예: **디버그** > **모두 중단** 을 사용하고 사용자 코드가 아닌 코드에서 일시 중지하는 경우), 사용자 코드가 아닌 코드에서 스태핑이 계속됩니다.
 
 디버거에서 예외가 발생하면 사용자 코드인지 아닌지에 관계없이 예외에서 중지됩니다. **예외 설정** 대화 상자의 **사용자가 처리하지 않음** 옵션은 무시됩니다.
 
@@ -143,7 +145,7 @@ C++ 프로젝트의 경우 **호출 스택** 창에서 사용자 코드가 아�
 
 |특성|설명|
 |---------------|-----------------|
-|`Name`|필수 요소. 모듈의 전체 경로입니다. Windows 와일드 카드 문자 `?`(0개 또는 1개의 문자) 및 `*`(0개 이상의 문자)를 사용할 수 있습니다. 예를 들면 다음과 같습니다.<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 드라이브의 *\3rdParty\UtilLibs*에 있는 모든 모듈을 외부 코드로 간주하도록 디버거에 알려줍니다.|
+|`Name`|필수 요소. 모듈의 전체 경로입니다. Windows 와일드 카드 문자 `?`(0개 또는 1개의 문자) 및 `*`(0개 이상의 문자)를 사용할 수 있습니다. 예를 들면 다음과 같습니다.<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 드라이브의 *\3rdParty\UtilLibs* 에 있는 모든 모듈을 외부 코드로 간주하도록 디버거에 알려줍니다.|
 |`Company`|선택 사항입니다. 실행 파일에 포함된 모듈을 게시하는 회사의 이름입니다. 이 특성을 사용하여 모듈을 구분할 수 있습니다.|
 
  **파일 요소 특성**
@@ -205,10 +207,10 @@ C++ 프로젝트에서는 프로시저 단위로 실행할 함수를 *\*.natstep
 JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로 분류하는 순서는 다음과 같습니다.
 
 1. 기본 분류
-   - 호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트는 **MyCode**입니다.
-   - `Function` 생성자에 문자열을 전달하여 실행되는 스크립트는 **LibraryCode**입니다.
-   - WinJS 또는 Azure SDK와 같은 프레임워크 참조에 포함된 스크립트는 **LibraryCode**입니다.
-   - `setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트는 **UnrelatedCode**입니다.
+   - 호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트는 **MyCode** 입니다.
+   - `Function` 생성자에 문자열을 전달하여 실행되는 스크립트는 **LibraryCode** 입니다.
+   - WinJS 또는 Azure SDK와 같은 프레임워크 참조에 포함된 스크립트는 **LibraryCode** 입니다.
+   - `setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트는 **UnrelatedCode** 입니다.
 
 2. *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* 파일의 모든 Visual Studio JavaScript 프로젝트에 지정된 분류
 
@@ -216,9 +218,9 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 각 분류 단계는 이전 단계를 재정의합니다.
 
-기타 모든 코드는 **MyCode**로 분류됩니다.
+기타 모든 코드는 **MyCode** 로 분류됩니다.
 
-*mycode.json*이라는 *.json* 파일을 JavaScript 프로젝트의 루트 폴더에 추가하여 기본 분류를 수정하고 특정 파일과 URL을 사용자 코드 또는 사용자 코드가 아닌 코드로 분류할 수 있습니다. [JavaScript 내 코드만 사용자 지정](#BKMK_JS_Customize_Just_My_Code)을 참조하세요.
+*mycode.json* 이라는 *.json* 파일을 JavaScript 프로젝트의 루트 폴더에 추가하여 기본 분류를 수정하고 특정 파일과 URL을 사용자 코드 또는 사용자 코드가 아닌 코드로 분류할 수 있습니다. [JavaScript 내 코드만 사용자 지정](#BKMK_JS_Customize_Just_My_Code)을 참조하세요.
 
 <a name="BKMK_JS_Stepping_behavior"></a> JavaScript 디버깅 중에:
 
@@ -231,21 +233,21 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 코드에 설정된 중단점은 항상 적중되지만 코드는 분류됩니다.
 
-- `debugger` 키워드가 **LibraryCode**에서 발생하면 디버거가 항상 중단됩니다.
-- `debugger` 키워드가 **UnrelatedCode**에서 발생하면 디버거가 중단되지 않습니다.
+- `debugger` 키워드가 **LibraryCode** 에서 발생하면 디버거가 항상 중단됩니다.
+- `debugger` 키워드가 **UnrelatedCode** 에서 발생하면 디버거가 중단되지 않습니다.
 
 <a name="BKMK_JS_Exception_behavior"></a> **MyCode** 또는 **LibraryCode** 코드에서 처리되지 않은 예외가 발생하면 디버거가 항상 중단됩니다.
 
-**UnrelatedCode**에서 처리되지 않은 예외가 발생하고 **MyCode** 또는 **LibraryCode**가 호출 스택에 있으면 디버거가 중단됩니다.
+**UnrelatedCode** 에서 처리되지 않은 예외가 발생하고 **MyCode** 또는 **LibraryCode** 가 호출 스택에 있으면 디버거가 중단됩니다.
 
-예외에 대해 첫째 예외가 활성화되어 있고 **LibraryCode** 또는 **UnrelatedCode**에서 예외가 발생하는 경우:
+예외에 대해 첫째 예외가 활성화되어 있고 **LibraryCode** 또는 **UnrelatedCode** 에서 예외가 발생하는 경우:
 
 - 예외가 처리되었으면 디버거가 중단되지 않습니다.
 - 예외가 처리되지 않았으면 디버거가 중단됩니다.
 
 ### <a name="customize-javascript-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> JavaScript 내 코드만 사용자 지정
 
-단일 JavaScript 프로젝트에 대해 사용자 코드 및 사용자가 작성하지 않은 코드를 분류하려면 프로젝트의 루트 폴더에 *mycode.json*이라는 *.json* 파일을 추가하면 됩니다.
+단일 JavaScript 프로젝트에 대해 사용자 코드 및 사용자가 작성하지 않은 코드를 분류하려면 프로젝트의 루트 폴더에 *mycode.json* 이라는 *.json* 파일을 추가하면 됩니다.
 
 이 파일의 사양은 기본 분류와 *mycode.default.wwa.json* 파일을 재정의합니다. *mycode.json* 파일에 모든 키 값 쌍을 나열할 필요가 없습니다. **MyCode**, **Libraries**, **Unrelated** 값은 빈 배열일 수 있습니다.
 
@@ -281,15 +283,15 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 |이름|설명|
 |-|-|
-|**Eval**|호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Eval 스크립트는 **MyCode**로 분류됩니다.|
-|**Function**|`Function` 생성자에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Function 스크립트는 **LibraryCode**로 분류됩니다.|
-|**ScriptBlock**|`setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 ScriptBlock 스크립트는 **UnrelatedCode**로 분류됩니다.|
+|**Eval**|호스트에서 제공하는 `eval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Eval 스크립트는 **MyCode** 로 분류됩니다.|
+|**Function**|`Function` 생성자에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 Function 스크립트는 **LibraryCode** 로 분류됩니다.|
+|**ScriptBlock**|`setTimeout`, `setImmediate` 또는 `setInterval` 함수에 문자열을 전달하여 실행되는 스크립트입니다. 기본적으로 ScriptBlock 스크립트는 **UnrelatedCode** 로 분류됩니다.|
 
 다음 키워드 중 하나로 값을 변경할 수 있습니다.
 
-- `MyCode`는 스크립트를 **MyCode**로 분류합니다.
-- `Library`는 스크립트를 **LibraryCode**로 분류합니다.
-- `Unrelated`는 스크립트를 **UnrelatedCode**로 분류합니다.
+- `MyCode`는 스크립트를 **MyCode** 로 분류합니다.
+- `Library`는 스크립트를 **LibraryCode** 로 분류합니다.
+- `Unrelated`는 스크립트를 **UnrelatedCode** 로 분류합니다.
 
 **MyCode, Libraries 및 Unrelated**
 
@@ -297,8 +299,8 @@ JavaScript 디버거가 코드를 사용자 코드와 그렇지 않은 코드로
 
 |이름|설명|
 |-|-|
-|**MyCode**|**MyCode**로 분류된 URL 또는 파일의 배열입니다.|
-|**라이브러리**|**LibraryCode**로 분류된 URL 또는 파일의 배열입니다.|
-|**Unrelated**|**UnrelatedCode**로 분류된 URL 또는 파일의 배열입니다.|
+|**MyCode**|**MyCode** 로 분류된 URL 또는 파일의 배열입니다.|
+|**라이브러리**|**LibraryCode** 로 분류된 URL 또는 파일의 배열입니다.|
+|**Unrelated**|**UnrelatedCode** 로 분류된 URL 또는 파일의 배열입니다.|
 
 URL 또는 파일 문자열에는 0개 이상의 문자와 일치하는 `*` 문자가 하나 이상 포함될 수 있습니다. `*`는 정규식 `.*`와 동일합니다.

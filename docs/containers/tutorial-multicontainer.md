@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037213"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729290"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -34,11 +34,11 @@ ms.locfileid: "90037213"
 
 ## <a name="create-a-web-application-project"></a>웹 애플리케이션 프로젝트 만들기
 
-Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 프로젝트를 만듭니다. **웹 애플리케이션**을 선택하여 Razor Pages로 웹 애플리케이션을 만듭니다. 
+Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 프로젝트를 만듭니다. **웹 애플리케이션** 을 선택하여 Razor Pages로 웹 애플리케이션을 만듭니다. 
   
 ::: moniker range="vs-2017"
 
-**Docker 지원 사용**을 선택하지 않습니다. Docker 지원은 나중에 추가하겠습니다.
+**Docker 지원 사용** 을 선택하지 않습니다. Docker 지원은 나중에 추가하겠습니다.
 
 ![웹 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
 
@@ -46,17 +46,17 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
 ::: moniker range="vs-2019"
 
-![웹 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![프로젝트 이름 및 솔루션 이름 필드가 “WebFrontEnd”로 설정되어 있는 ASP.NET Core 웹 애플리케이션의 새 프로젝트 구성 화면 스크린샷](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
-**Docker 지원 사용**을 선택하지 않습니다. Docker 지원은 나중에 추가하겠습니다.
+**Docker 지원 사용** 을 선택하지 않습니다. Docker 지원은 나중에 추가하겠습니다.
 
-![웹 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![웹 애플리케이션이 선택되어 있는 새 ASP.NET Core 웹 애플리케이션 만들기 화면의 스크린샷 Docker 지원 사용 옵션은 선택되어 있지 않습니다.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
 ## <a name="create-a-web-api-project"></a>Web API 프로젝트 만들기
 
-동일한 솔루션에 프로젝트를 추가하고 이름을 *MyWebAPI*로 지정합니다. 프로젝트 형식으로 **API**를 선택하고 **HTTPS에 대한 구성** 확인란의 선택을 취소합니다. 이 설계에서는 클라이언트와의 통신에만 SSL을 사용하고, 동일한 웹 애플리케이션의 컨테이너 간 통신에는 사용하지 않습니다. `WebFrontEnd`는 HTTPS만 필요하며 이 예제의 코드에서는 해당 확인란의 선택을 취소했다고 가정합니다. 일반적으로 Visual Studio에서 사용하는 .NET 개발자 인증서는 컨테이너-컨테이너 요청이 아닌 외부-컨테이너 요청에 대해서만 지원됩니다.
+동일한 솔루션에 프로젝트를 추가하고 이름을 *MyWebAPI* 로 지정합니다. 프로젝트 형식으로 **API** 를 선택하고 **HTTPS에 대한 구성** 확인란의 선택을 취소합니다. 이 설계에서는 클라이언트와의 통신에만 SSL을 사용하고, 동일한 웹 애플리케이션의 컨테이너 간 통신에는 사용하지 않습니다. `WebFrontEnd`는 HTTPS만 필요하며 이 예제의 코드에서는 해당 확인란의 선택을 취소했다고 가정합니다. 일반적으로 Visual Studio에서 사용하는 .NET 개발자 인증서는 컨테이너-컨테이너 요청이 아닌 외부-컨테이너 요청에 대해서만 지원됩니다.
 
 ::: moniker range="vs-2017"
    ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -107,7 +107,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
       </div>
       ```
 
-1. (ASP.NET 2.x만 해당) 이제 Web API 프로젝트의 값 컨트롤러에 코드를 추가하여 *webfrontend*에서 추가한 호출에 대해 API에서 반환되는 메시지를 사용자 지정합니다.
+1. (ASP.NET 2.x만 해당) 이제 Web API 프로젝트의 값 컨트롤러에 코드를 추가하여 *webfrontend* 에서 추가한 호출에 대해 API에서 반환되는 메시지를 사용자 지정합니다.
     
       ```csharp
         // GET api/values/5
@@ -118,15 +118,15 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
         }
       ```
 
-    .NET Core 3.1에서는 이미 있는 WeatherForecast API를 사용할 수 있기 때문에 필요하지 않습니다. 그러나 이 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하기 때문에 *Startup.cs*의 `Configure` 메서드에서 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>에 대한 호출을 주석 처리해야 합니다.
+    .NET Core 3.1에서는 이미 있는 WeatherForecast API를 사용할 수 있기 때문에 필요하지 않습니다. 그러나 이 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하기 때문에 *Startup.cs* 의 `Configure` 메서드에서 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>에 대한 호출을 주석 처리해야 합니다.
 
     ```csharp
                 //app.UseHttpsRedirection();
     ```
 
-1. `WebFrontEnd` 프로젝트에서 **추가 > 컨테이너 오케스트레이터 지원**을 선택합니다. **Docker 지원 옵션** 대화 상자가 나타납니다.
+1. `WebFrontEnd` 프로젝트에서 **추가 > 컨테이너 오케스트레이터 지원** 을 선택합니다. **Docker 지원 옵션** 대화 상자가 나타납니다.
 
-1. **Docker Compose**를 선택합니다.
+1. **Docker Compose** 를 선택합니다.
 
 1. 대상 OS(예: Linux)를 선택합니다.
 
@@ -136,7 +136,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
    ![docker-compose 프로젝트가 추가된 솔루션 탐색기 스크린샷](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
-   *docker-compose.yml*은 다음과 같이 표시됩니다.
+   *docker-compose.yml* 은 다음과 같이 표시됩니다.
 
    ```yaml
    version: '3.4'
@@ -153,7 +153,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
    실행 중인 명령에 대한 자세한 내용은 출력 창의 **컨테이너 도구** 섹션을 참조하세요.  명령줄 도구 docker-compose가 런타임 컨테이너를 구성하고 만드는 데 사용되는 것을 확인할 수 있습니다.
 
-1. Web API 프로젝트에서 다시 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **컨테이너 오케스트레이터 지원**을 선택합니다. **Docker Compose**를 선택하고 동일한 대상 OS를 선택합니다.  
+1. Web API 프로젝트에서 다시 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **컨테이너 오케스트레이터 지원** 을 선택합니다. **Docker Compose** 를 선택하고 동일한 대상 OS를 선택합니다.  
 
     > [!NOTE]
     > 이 단계에서 Visual Studio는 Dockerfile을 만들도록 제안합니다. Docker 지원이 이미 포함된 프로젝트에서 이 작업을 수행하면, 기존 Dockerfile을 덮어쓸지 여부를 묻는 메시지가 표시됩니다. Dockerfile의 변경 내용을 유지하려면 아니요를 선택합니다.
@@ -179,7 +179,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
 1. 지금 로컬에서 사이트를 실행(F5 또는 Ctrl+F5)하여 예상대로 작동하는지 확인합니다. .NET Core 2.x 버전에서 모두 제대로 구성되었으면 "Hello from webfrontend and webapi (with value 1)" 메시지가 표시됩니다.  .NET Core 3을 사용하여 날씨 예측 데이터를 볼 수 있습니다.
 
-   컨테이너 오케스트레이션을 추가할 때 사용하는 첫 번째 프로젝트는 실행하거나 디버그할 때 시작되도록 설정되었습니다. **프로젝트 속성**에서 docker-compose 프로젝트의 시작 작업을 구성할 수 있습니다.  docker-compose 프로젝트 노드에서 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 열고 **속성**을 선택하거나, Alt+Enter를 사용합니다.  다음 스크린샷은 여기서 사용된 솔루션에 대해 지정하려는 속성을 보여 줍니다.  예를 들어 **서비스 URL** 속성을 사용자 지정하여 로드되는 페이지를 변경할 수 있습니다.
+   컨테이너 오케스트레이션을 추가할 때 사용하는 첫 번째 프로젝트는 실행하거나 디버그할 때 시작되도록 설정되었습니다. **프로젝트 속성** 에서 docker-compose 프로젝트의 시작 작업을 구성할 수 있습니다.  docker-compose 프로젝트 노드에서 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 열고 **속성** 을 선택하거나, Alt+Enter를 사용합니다.  다음 스크린샷은 여기서 사용된 솔루션에 대해 지정하려는 속성을 보여 줍니다.  예를 들어 **서비스 URL** 속성을 사용자 지정하여 로드되는 페이지를 변경할 수 있습니다.
 
    ![docker-compose 프로젝트 속성 스크린샷](media/tutorial-multicontainer/launch-action.png)
 

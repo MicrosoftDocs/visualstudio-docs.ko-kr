@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674793"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761266"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Docker 컨테이너에서 실행되는 프로세스에 연결 
 
@@ -34,7 +34,7 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
 
 1. Visual Studio에서 **디버그 > 프로세스에 연결(CTRL+ALT+P)** 을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
 
-![프로세스에 연결 메뉴](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Docker(Linux 컨테이너)의 연결 형식이 표시된 Visual Studio의 프로세스에 연결 대화 상자 스크린샷](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. **연결 형식** 을 **Docker(Linux 컨테이너)** 로 설정합니다.
 3. **찾기...** 를 선택하여 **Docker 컨테이너 선택** 대화 상자를 통해 **연결 대상** 을 설정합니다.
@@ -63,7 +63,7 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결** 을 선택하여 Visual Studio에서 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")
+    ![Visual Studio의 프로세스에 연결 대화 상자 스크린샷 연결 형식은 Docker(Linux 컨테이너)로 설정되고 dotnet 프로세스가 선택되어 있음](../debugger/media/docker-attach-complete.png "완료된 Linux Docker 연결 메뉴")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a> Windows Docker 컨테이너에서 실행되는 프로세스에 연결
 
@@ -76,7 +76,7 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
 
 1. Visual Studio에서 **디버그 > 프로세스에 연결**(또는 **CTRL+ALT+P**)을 선택하여 **프로세스에 연결** 대화 상자를 엽니다.
 
-   ![프로세스에 연결 메뉴](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Docker(Windows 컨테이너)의 연결 형식이 표시된 Visual Studio의 프로세스에 연결 대화 상자 스크린샷](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. **연결 형식** 을 **Docker(Windows 컨테이너)** 로 설정합니다.
 3. **찾기...** 를 선택하여 **Docker 컨테이너 선택** 대화 상자를 통해 **연결 대상** 을 설정합니다.
@@ -93,6 +93,6 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결** 을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
 
-    ![완료된 Docker 연결 메뉴](../debugger/media/docker-attach-complete-windows.png "완료된 Windows Docker 연결 메뉴")
+    ![Visual Studio의 프로세스에 연결 대화 상자 스크린샷 연결 형식은 Docker(Windows 컨테이너)로 설정되고 dotnet.exe 프로세스가 선택되어 있음](../debugger/media/docker-attach-complete-windows.png "완료된 Windows Docker 연결 메뉴")
 
-5.  사용 가능한 프로세스 목록에서 해당 컨테이너 프로세스를 선택하고 **연결** 을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.
+5. 사용 가능한 프로세스 목록에서 해당 컨테이너 프로세스를 선택하고 **연결** 을 선택하여 C# 컨테이너 프로세스 디버깅을 시작합니다.

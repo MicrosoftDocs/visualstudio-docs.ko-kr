@@ -1,5 +1,7 @@
 ---
 title: 스냅샷 디버깅 FAQ | Microsoft Docs
+description: Visual Studio에서 스냅샷 디버거를 사용하여 라이브 Azure 애플리케이션을 디버그할 때 나올 수 있는 FAQ(자주 묻는 질문) 목록을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5276127f0d6755b9fdabdfa965b5c1b8c4d94823
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851101"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727205"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대해 자주 묻는 질문
 
@@ -50,7 +52,7 @@ ms.locfileid: "90851101"
 다음 단계를 사용하여 App Service에서 스냅샷 디버거 사이트 확장을 제거할 수 있습니다.
 
 1. Visual Studio 또는 Azure Portal에서 클라우드 탐색기를 통해 App Service를 끕니다.
-1. App Service의 Kudu 사이트(즉, yourappservice.**scm**.azurewebsites.net)로 이동한 후 **사이트 확장**으로 이동합니다.
+1. App Service의 Kudu 사이트(즉, yourappservice.**scm**.azurewebsites.net)로 이동한 후 **사이트 확장** 으로 이동합니다.
 1. 스냅샷 디버거 사이트 확장에서 X를 클릭하여 제거합니다.
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>스냅샷 디버거 세션 중에 포트가 열려 있는 이유는 무엇인가요?

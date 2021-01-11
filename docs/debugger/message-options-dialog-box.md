@@ -1,5 +1,6 @@
 ---
 title: 메시지 옵션 대화 상자 | Microsoft Docs
+description: 메시지 옵션에서 메시지 뷰에 나열되는 메시지 및 표시할 메시지 데이터를 지정합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931319"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903586"
 ---
 # <a name="message-options-dialog-box"></a>메시지 옵션 대화 상자
-이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에 나열되는 메시지를 선택할 수 있습니다. 이 대화 상자를 표시하려면 **Spy** 메뉴에서 **로그 메시지**를 선택합니다.
+이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에 나열되는 메시지를 선택할 수 있습니다. 이 대화 상자를 표시하려면 **Spy** 메뉴에서 **로그 메시지** 를 선택합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
  [메시지 옵션 대화 상자, 창 탭](../debugger/windows-tab-message-options-dialog-box.md) 나열할 메시지의 유형을 선택하는 데 사용합니다. 찾기 도구가 포함되어 있습니다.
@@ -43,4 +44,4 @@ ms.locfileid: "62931319"
 
  [Spy++ 뷰](../debugger/spy-increment-views.md) 창, 메시지, 프로세스 및 스레드의 Spy++ 트리 뷰에 대해 설명합니다.
 
- [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법을 설명합니다.
+ [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법에 대해 설명합니다.

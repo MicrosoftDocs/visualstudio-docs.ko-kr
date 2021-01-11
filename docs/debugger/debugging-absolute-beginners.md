@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416398"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761253"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
 틀림없이, 소프트웨어 개발자로서 작성하는 코드는 항상 예상한 대로 작업을 수행하지는 않습니다. 경우에 따라 완전히 다르게 작업을 수행할 때도 있습니다. 이 경우 다음 작업은 그 이유를 파악하는 것이며 몇 시간 동안 코드를 계속 살펴보고 싶더라도 디버깅 도구 또는 디버거를 사용하는 것이 훨씬 더 쉽고 효율적입니다.
 
-아쉽게도 디버거는 마술처럼 코드의 모든 문제 또는 "버그"를 표시할 수 있는 것이 아닙니다. *디버깅*은 Visual Studio와 같은 디버깅 도구에서 단계별로 코드를 실행하여 프로그래밍 실수를 만든 정확한 지점을 찾는 것을 의미합니다. 그런 다음, 코드에서 변경해야 하는 수정 사항을 이해하고, 프로그램 실행을 계속할 수 있도록 디버깅 도구를 통해 종종 임시적인 변경 사항을 만들 수 있습니다.
+아쉽게도 디버거는 마술처럼 코드의 모든 문제 또는 "버그"를 표시할 수 있는 것이 아닙니다. *디버깅* 은 Visual Studio와 같은 디버깅 도구에서 단계별로 코드를 실행하여 프로그래밍 실수를 만든 정확한 지점을 찾는 것을 의미합니다. 그런 다음, 코드에서 변경해야 하는 수정 사항을 이해하고, 프로그램 실행을 계속할 수 있도록 디버깅 도구를 통해 종종 임시적인 변경 사항을 만들 수 있습니다.
 
 디버거를 효과적으로 사용하는 것은 학습하는 데 시간 및 연습이 필요한 기술이지만 궁극적으로 모든 소프트웨어 개발자를 위한 기본 작업입니다. 이 문서에서는 디버깅의 핵심 원리를 소개하고 시작하기 위한 팁을 제공합니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "77416398"
 
 일반적으로 앱을 실행하면 코드가 실행된 후에 오류 및 잘못된 결과가 표시됩니다. 프로그램 또한 원인을 표시하지 않고 예기치 않게 종료될 수 있습니다.
 
-*디버깅 모드*라고도 하는 디버거 내의 앱 실행은 디버거가 프로그램이 실행될 때 발생하는 모든 것을 적극적으로 모니터링하는 것을 의미합니다. 또한 해당 상태를 검사하기 위해 언제든지 앱을 일시 중지한 다음, 코드를 줄 단위로 단계별로 실행하여 발생하는 모든 세부 사항을 살펴볼 수 있습니다.
+*디버깅 모드* 라고도 하는 디버거 내의 앱 실행은 디버거가 프로그램이 실행될 때 발생하는 모든 것을 적극적으로 모니터링하는 것을 의미합니다. 또한 해당 상태를 검사하기 위해 언제든지 앱을 일시 중지한 다음, 코드를 줄 단위로 단계별로 실행하여 발생하는 모든 세부 사항을 살펴볼 수 있습니다.
 
 Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **디버깅 시작** 메뉴 명령 또는 **디버깅 시작**  단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작"))를 사용하여 디버깅 모드로 전환합니다. 예외가 발생하는 경우 Visual Studio의 예외 도우미는 예외가 발생한 정확한 지점으로 안내하고 기타 유용한 정보를 제공합니다. 코드의 예외를 처리하는 방법에 대한 자세한 내용은 [디버깅 기법 및 도구](../debugger/write-better-code-with-visual-studio.md)를 참조하세요.
 
@@ -78,24 +78,24 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 **.NET 데스크톱 개발** 워크로드 또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정**을 선택합니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기** 를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창에서 **새 프로젝트 만들기**를 선택합니다. 검색 창에 **콘솔**을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음**을 선택합니다. **ConsoleApp-FirstApp**과 같은 프로젝트 이름을 입력하고 **만들기**를 클릭합니다.
+    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 창에 **콘솔** 을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 프로젝트 이름을 입력하고 **만들기** 를 클릭합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
     ::: moniker-end
 
-    **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기**로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
     Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
 
-1. *Program.cs*에서 모든 기본 코드를 다음 코드로 바꿉니다.
+1. *Program.cs* 에서 모든 기본 코드를 다음 코드로 바꿉니다.
 
     ```csharp
     using System;
@@ -229,17 +229,17 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 1. 오른쪽의 `GalaxyType` 변수를 마우스로 가리킨 다음, 렌치 아이콘의 왼쪽으로 `theGalaxy.GalaxyType`을 확장합니다. `GalaxyType`에 속성 `MyGType`이 포함되고 속성 값이 `Spiral`로 설정된 것을 확인할 수 있습니다.
 
-    ![변수 검사](../debugger/media/beginners-inspect-variable.png)
+    ![노란색 코드 줄이 있고 줄 끝의 theGalaxy.GalaxyType 속성 아래에 확장된 메뉴가 있는 Visual Studio 디버거의 스크린샷](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral"은 실제로 콘솔에 인쇄되도록 예상한 올바른 값입니다. 따라서 앱을 실행하는 동안 이 코드의 이 값에 액세스할 수 있는 것이 좋습니다. 이 시나리오에서는 잘못된 API를 사용합니다. 디버거에서 코드를 실행하는 동안 이를 수정할 수 있는지 살펴보겠습니다.
 
 1. 동일한 코드에서 여전히 디버깅하는 동안 커서를 `theGalaxy.GalaxyType`의 끝에 놓고 `theGalaxy.GalaxyType.MyGType`으로 변경합니다. 이를 변경할 수 있지만 코드 편집기는 이 코드를 컴파일할 수 없음을 나타내는 오류를 보여줍니다.
 
-    ![구문 오류](../debugger/media/beginners-edit.png)
+    ![코드 줄이 빨간색으로 강조 표시되고 편집 단추가 선택된 편집하며 계속하기 메시지 상자가 있는 Visual Studio 디버거의 스크린샷](../debugger/media/beginners-edit.png)
 
-1. **편집하며 계속하기** 메시지 상자에서 **편집**을 클릭합니다. 이제 **오류 목록** 창에서 오류 메시지가 표시됩니다. 오류는 `'object'`에 `MyGType`에 대한 정의가 포함되지 않음을 나타냅니다.
+1. **편집하며 계속하기** 메시지 상자에서 **편집** 을 클릭합니다. 이제 **오류 목록** 창에서 오류 메시지가 표시됩니다. 오류는 `'object'`에 `MyGType`에 대한 정의가 포함되지 않음을 나타냅니다.
 
-    ![구문 오류](../debugger/media/beginners-no-definition.png)
+    ![코드 줄이 빨간색으로 강조 표시되고 두 개의 오류가 나열된 오류 목록 창이 있는 Visual Studio 디버거의 스크린샷](../debugger/media/beginners-no-definition.png)
 
     `GType` 유형의 개체로 각 은하계를 설정하더라도(`MyGType` 속성이 있음) 디버거는 `theGalaxy` 개체를 `GType` 유형의 개체로 인식하지 않습니다. 왜 그럴까요? 은하계 유형을 설정하는 코드를 확인해야 합니다. 이렇게 하면 `GType` 클래스에 `MyGType`의 속성이 분명히 있지만 잘못된 항목이 있습니다. `object`에 대한 오류 메시지는 언어 인터프리터에 대한 단서로 확인되었습니다. 유형은 `GType` 유형의 개체 대신 `object` 유형의 개체로 보입니다.
 
@@ -288,7 +288,7 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 1. **F5** 키를 누르고 마우스로 `type` 변수를 다시 가리킵니다. `type` 변수에 `I`의 값이 표시될 때까지 이 단계를 반복합니다.
 
-    ![변수 검사](../debugger/media/beginners-inspecting-data.png)
+    ![노란색 코드 줄이 있고 형식 변수의 값이 73 ‘I’로 표시된 작은 창이 있는 Visual Studio 디버거의 스크린샷](../debugger/media/beginners-inspecting-data.png)
 
 1. 이제 **F11** 키(디버그 도구 모음의 **디버그** > **한 단계씩 코드 실행** 또는 **한 단계씩 코드 실행** 단추)를 누릅니다.
 
@@ -310,7 +310,7 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 ## <a name="summary"></a>요약
 
-문제가 표시되는 경우 디버거 및 **F10** 및 **F11**과 같은 [단계 명령](../debugger/navigating-through-code-with-the-debugger.md)을 사용하여 문제가 있는 코드 영역을 찾습니다.
+문제가 표시되는 경우 디버거 및 **F10** 및 **F11** 과 같은 [단계 명령](../debugger/navigating-through-code-with-the-debugger.md)을 사용하여 문제가 있는 코드 영역을 찾습니다.
 
 > [!NOTE]
 > 문제가 발생하는 코드의 영역을 식별하기 어려운 경우 문제가 발생하기 전에 실행되는 코드에서 중단점을 설정한 다음, 문제 매니페스트가 표시될 때까지 단계 명령을 사용합니다. [추적점](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)을 사용하여 **출력** 창에 메시지를 기록할 수도 있습니다. 기록된 메시지를 확인하여(또한 아직 기록되지 않은 메시지를 확인하여) 종종 문제가 있는 코드 영역을 격리할 수 있습니다. 범위를 좁히기 위해 이 프로세스를 여러 번 반복해야 할 수 있습니다.

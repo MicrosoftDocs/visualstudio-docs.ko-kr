@@ -1,5 +1,7 @@
 ---
 title: Just-In-Time 디버거를 사용하지 않도록 설정 | Microsoft Docs
+description: 앱에서 오류가 발생하면 Just-In-Time 디버거 대화 상자가 열릴 수 있습니다. 이런 경우 수행할 수 있는 작업 및 이를 방지하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386123"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903898"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time 디버거를 사용하지 않도록 설정
 
@@ -32,14 +34,14 @@ Visual Studio가 설치되어 있지 않으면 스크립트 디버깅 또는 서
 
 - 웹앱을 실행하려면 스크립트 디버깅을 사용하지 않도록 설정합니다.
 
-  Windows **제어판** > **네트워크 및 인터넷** > **인터넷 옵션**에서 **스크립트 디버깅 사용 안 함(Internet Explorer)** 및 **스크립트 디버깅 사용 안 함(기타)** 을 선택합니다. 정확한 단계와 설정은 Windows 버전 및 브라우저에 따라 달라집니다.
+  Windows **제어판** > **네트워크 및 인터넷** > **인터넷 옵션** 에서 **스크립트 디버깅 사용 안 함(Internet Explorer)** 및 **스크립트 디버깅 사용 안 함(기타)** 을 선택합니다. 정확한 단계와 설정은 Windows 버전 및 브라우저에 따라 달라집니다.
 
   ![JIT 인터넷 옵션](../debugger/media/jitinternetoptions.png "JIT 인터넷 옵션")
 
 - IIS에서 ASP.NET 웹앱을 호스트하는 경우 서버 쪽 디버깅을 사용하지 않도록 설정합니다.
 
-  1. IIS 관리자 **기능 보기**의 **ASP.NET** 섹션에서 **.NET 컴파일**을 두 번 클릭하거나 선택한 다음, **작업** 창에서 **기능 열기**를 선택합니다.
-  1. **동작** > **디버그**에서 **False**를 선택합니다. 이전 버전의 IIS에서는 단계가 다릅니다.
+  1. IIS 관리자 **기능 보기** 의 **ASP.NET** 섹션에서 **.NET 컴파일** 을 두 번 클릭하거나 선택한 다음, **작업** 창에서 **기능 열기** 를 선택합니다.
+  1. **동작** > **디버그** 에서 **False** 를 선택합니다. 이전 버전의 IIS에서는 단계가 다릅니다.
 
 Just-In-Time 디버깅을 사용하지 않도록 설정한 이후에 앱에서 오류를 처리하고 정상적으로 실행할 수 있습니다.
 

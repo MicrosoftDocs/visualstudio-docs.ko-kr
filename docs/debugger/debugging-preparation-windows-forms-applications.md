@@ -1,6 +1,7 @@
 ---
 title: Windows Forms 앱 디버깅 준비 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio에서 Windows Forms 프로젝트 템플릿으로 만든 Windows Forms 애플리케이션을 디버그하기 위한 준비 단계를 수행합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ccb195d6c4a35e4ca3b89c5505ab14c45a5d555
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916390"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726815"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비 중: Windows Forms 응용 프로그램
 Windows Forms 프로젝트 템플릿은 Windows Forms 애플리케이션을 만듭니다. 이러한 형식의 애플리케이션은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 애플리케이션 프로젝트 만들기](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))를 참조하세요.
@@ -40,7 +41,7 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 애플리케이션을 만�
 
 |**속성 이름**|**설정**|
 |-----------------------|-----------------|
-|**시작 작업**|-   대부분의 경우 **시작 프로젝트**로 설정합니다. 디버깅(일반적으로 DLL 디버깅)을 시작할 때 다른 실행 파일을 시작하려면 **시작 외부 프로그램**으로 설정합니다.|
+|**시작 작업**|-   대부분의 경우 **시작 프로젝트** 로 설정합니다. 디버깅(일반적으로 DLL 디버깅)을 시작할 때 다른 실행 파일을 시작하려면 **시작 외부 프로그램** 으로 설정합니다.|
 
  Windows Forms 애플리케이션을 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 내에서 디버깅하거나 이미 실행 중인 애플리케이션에 연결하여 디버깅할 수 있습니다. 연결에 대한 자세한 내용은 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.
 
@@ -60,7 +61,7 @@ Windows Forms 프로젝트 템플릿은 Windows Forms 애플리케이션을 만�
 
       자세한 내용은 [Windows Forms에서 이벤트 처리기 만들기](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)를 참조하세요.
 
-3. **디버그** 메뉴에서 **시작**을 클릭합니다.
+3. **디버그** 메뉴에서 **시작** 을 클릭합니다.
 
 4. [디버거 소개](../debugger/debugger-feature-tour.md)에 설명된 기술을 사용하여 디버그합니다.
 

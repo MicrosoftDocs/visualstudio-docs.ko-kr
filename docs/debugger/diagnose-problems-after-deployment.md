@@ -1,5 +1,7 @@
 ---
 title: 배포 후 문제 진단 | Microsoft Docs
+description: Visual Studio에서 IntelliTrace를 사용하여 배포한 후의 문제를 진단합니다. 빌드 정보를 릴리스에 포함합니다. 앱을 릴리스하고 모니터링하여 문제를 찾습니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928058"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726828"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace(C#, Visual Basic)를 사용하여 배포 후의 문제 진단
 
@@ -44,7 +46,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
 * Azure에 배포하려면 [Application Insights](/azure/application-insights/)를 사용합니다.
 
-* IntelliTrace를 사용해야 하는 경우 Visual Studio에서 프로젝트를 열고 일치하는 빌드의 기호 파일을 로드합니다. **모듈** 창에서 또는 **도구** > **옵션** > **디버깅** > **기호**에서 기호를 구성하여 기호 파일을 로드할 수 있습니다.
+* IntelliTrace를 사용해야 하는 경우 Visual Studio에서 프로젝트를 열고 일치하는 빌드의 기호 파일을 로드합니다. **모듈** 창에서 또는 **도구** > **옵션** > **디버깅** > **기호** 에서 기호를 구성하여 기호 파일을 로드할 수 있습니다.
 
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  빌드 파이프라인을 설정하여 소스, 빌드 및 기호의 위치를 빌드 매니페스트(BuildInfo.config 파일)에 추가합니다. Team Foundation Build가 이 파일을 자동으로 만들어 프로젝트의 출력 폴더에 저장합니다.
@@ -119,7 +121,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 ### <a name="create-the-build-manifest-for-a-manual-build-using-visual-studio"></a><a name="ManualBuild"></a> Visual Studio를 사용하여 수동 빌드용 빌드 매니페스트 만들기
  다음 단계에 따라 프로젝트에 대한 빌드 매니페스트(BuildInfo.config 파일)를 자동으로 만들고 프로젝트의 출력 폴더에 파일을 저장합니다. 이 파일은 출력 폴더에 "*ProjectName*.BuildInfo.config"로 표시되지만 앱 게시 후 배포 폴더에는 "BuildInfo.config"라는 이름으로 바뀝니다.
 
-1. **솔루션 탐색기**에서 웹 프로젝트를 언로드합니다.
+1. **솔루션 탐색기** 에서 웹 프로젝트를 언로드합니다.
 
 2. 프로젝트 파일(.csproj, .vbproj)을 엽니다. 다음 줄을 추가합니다.
 
@@ -169,7 +171,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
 2. 프로젝트가 솔루션에 포함되어 빌드되지 않은 경우 Visual Studio가 일치하는 솔루션이나 프로젝트를 자동으로 열도록 하려면 **솔루션 열기** 를 선택합니다. [Q: IntelliTrace 로그에 배포된 애플리케이션에 대한 정보가 누락됐습니다. 그 이유는 무엇입니까? 어떻게 해야 하나요?](#InvalidConfigFile)
 
-     Visual Studio는 일치하는 솔루션 또는 프로젝트를 열 때 보류 중인 변경 내용을 자동으로 보류하지 않습니다. 이 보류 집합에 대해 자세한 정보를 가져오려면 **출력** 창 또는 **팀 탐색기**를 확인합니다.
+     Visual Studio는 일치하는 솔루션 또는 프로젝트를 열 때 보류 중인 변경 내용을 자동으로 보류하지 않습니다. 이 보류 집합에 대해 자세한 정보를 가져오려면 **출력** 창 또는 **팀 탐색기** 를 확인합니다.
 
      변경하기 전에 올바른 소스가 있는지 확인하세요. 분기를 사용하는 경우 Visual Studio가 일치하는 소스를 찾는 위치와 다른 분기에서 작업하는 중일 수 있습니다(예: 릴리스 분기).
 
@@ -183,7 +185,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
      ![소스 제어에서 열기 &#45; 새 작업 영역 만들기](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
-     사용자의 컴퓨터 이름이 아닌 다른 이름 또는 특정 매핑으로 작업 영역을 만들려면 **관리**를 선택합니다.
+     사용자의 컴퓨터 이름이 아닌 다른 이름 또는 특정 매핑으로 작업 영역을 만들려면 **관리** 를 선택합니다.
 
      [Q: Visual Studio에 내가 선택한 작업 영역이 적합하지 않다고 표시되는 이유는 무엇인가요?](#IneligibleWorkspace)
 
@@ -191,7 +193,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
 ### <a name="diagnose-a-performance-problem"></a>성능 문제 진단
 
-1. **성능 위반**에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.
+1. **성능 위반** 에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.
 
      ![성능 이벤트 정보 보기](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -219,7 +221,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
 
 ### <a name="diagnose-an-exception"></a>예외 진단
 
-1. **예외 데이터**에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.
+1. **예외 데이터** 에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.
 
      ![예외 이벤트에서 디버깅 시작](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -357,7 +359,7 @@ Visual Studio 2017 이상 버전에는 *BuildInfo.config* 파일이 포함되어
     ```
 
 #### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> Q: Visual Studio에 내가 선택한 작업 영역이 적합하지 않다고 표시되는 이유는 무엇인가요?
- **A:** 선택된 작업 영역에는 소스 제어 폴더와 로컬 폴더 간의 매핑이 없습니다. 이 작업 영역에 대한 매핑을 만들려면 **관리**를 선택합니다. 그렇지 않으면, 이미 매핑된 작업 영역을 선택하거나 새 작업 영역 만듭니다.
+ **A:** 선택된 작업 영역에는 소스 제어 폴더와 로컬 폴더 간의 매핑이 없습니다. 이 작업 영역에 대한 매핑을 만들려면 **관리** 를 선택합니다. 그렇지 않으면, 이미 매핑된 작업 영역을 선택하거나 새 작업 영역 만듭니다.
 
  ![매핑된 작업 영역 없이 소스 제어에서 열기](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 

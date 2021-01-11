@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330110"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833275"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>코딩된 UI 테스트를 사용하여 코드 테스트
 
@@ -217,7 +217,7 @@ UI 컨트롤을 위한 어설션을 생성하려면 **코딩된 UI 테스트 빌
 
 경우에 따라 컨트롤을 추가하고 해당 컨트롤의 속성을 확인할 때 키보드를 사용해야 할 수 있습니다. 예를 들어 오른쪽 버튼 클릭 메뉴 컨트롤을 사용하는 코딩된 UI 테스트를 기록하려는 경우 **코딩된 UI 테스트 빌더** 에서 **어설션 추가** 도구를 선택하려고 하면 컨트롤의 메뉴 항목 목록이 포커스를 잃고 사라질 수 있습니다. 이러한 현상은 아래 그림에서도 확인할 수 있습니다. 여기서 **어설션 추가** 도구로 Internet Explorer의 오른쪽 버튼 클릭 메뉴를 선택하려고 하면 이 메뉴가 포커스를 잃고 사라집니다.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Internet Explorer의 오른쪽 마우스 클릭 메뉴와 겹치는 코딩된 UI 테스트 빌더의 어설션 추가 도구를 보여 주는 스크린샷](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 키보드를 사용하여 UI 컨트롤을 선택하려면 해당 컨트롤 위에 마우스를 올려 둡니다. 그런 다음 **Ctrl** 키와 **I** 키를 동시에 누르고 있습니다. 키를 놓습니다. **코딩된 UI 테스트 빌더** 가 컨트롤을 기록합니다.
 
@@ -229,7 +229,7 @@ UI 컨트롤을 위한 어설션을 생성하려면 **코딩된 UI 테스트 빌
 
 코딩된 UI 테스트를 수행하는 경우 컨트롤을 마우스로 가리킵니다. 그런 다음, 키보드에서 **Shift** 및 **R** 을 누른 채 **Ctrl** 키를 누르고 있습니다. 키를 놓습니다. **코딩된 UI 테스트 빌더** 가 마우스로 가리키기 이벤트를 기록합니다.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![일시 중지 아이콘이 선택된 코딩된 UI 테스트 빌더 명령 모음의 스크린샷 도구 설명 창에 마우스로 가리키기 이벤트의 위치가 표시됩니다.](../test/media/codedui_hover.png)
 
 테스트 메서드를 생성한 후 다음 예제와 유사한 코드가 *UIMap.Designer.cs* 파일에 추가됩니다.
 

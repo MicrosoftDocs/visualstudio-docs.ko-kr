@@ -1,5 +1,7 @@
 ---
 title: 레지스터 창 정보 | Microsoft Docs
+description: 옵션 대화 상자, 디버깅 노드에서 주소 수준 디버깅을 사용하도록 설정한 경우에만 사용할 수 있는 Visual Studio의 레지스터 창에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f62425913e65207953554a35054399fb8a6d2af4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600321"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728475"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio의 레지스터 창 정보(C#, C++, Visual Basic, F#)
 

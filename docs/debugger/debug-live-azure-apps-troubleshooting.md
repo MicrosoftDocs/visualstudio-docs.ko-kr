@@ -1,6 +1,7 @@
 ---
 title: 스냅샷 디버깅 문제 해결 | Microsoft Docs
-ms.custom: ''
+description: Visual Studio의 스냅샷 디버깅에 대한 알려진 문제 및 문제 해결을 파악합니다. 프로덕션 사이트에서 가동 중지 시간을 발생시키지 않고 ICorProfiler를 로드합니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182874"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728646"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대한 문제 해결 및 알려진 문제
 
-이 문서에 설명된 단계를 수행해도 문제가 해결되지 않으면 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)에서 문제를 검색하거나 Visual Studio에서 **도움말** > **의견 보내기** > **문제 보고**를 선택하여 새 문제를 보고합니다.
+이 문서에 설명된 단계를 수행해도 문제가 해결되지 않으면 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)에서 문제를 검색하거나 Visual Studio에서 **도움말** > **의견 보내기** > **문제 보고** 를 선택하여 새 문제를 보고합니다.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>문제: "스냅샷 디버거 연결"에서 HTTP 상태 코드 오류 발생
 
@@ -34,10 +35,10 @@ ms.locfileid: "84182874"
 
 다음 단계를 수행하세요.
 
-* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대한 권한이 있는지 확인합니다. 이를 확인하는 빠른 방법은 **디버그** > **스냅샷 디버거 연결...**  > **Azure 리소스** > **기존 선택**의 대화 상자 또는 클라우드 탐색기에서 리소스를 사용할 수 있는지 확인하는 것입니다.
+* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대한 권한이 있는지 확인합니다. 이를 확인하는 빠른 방법은 **디버그** > **스냅샷 디버거 연결...**  > **Azure 리소스** > **기존 선택** 의 대화 상자 또는 클라우드 탐색기에서 리소스를 사용할 수 있는지 확인하는 것입니다.
 * 이 오류가 계속 지속되면 이 문서의 시작 부분에 설명된 피드백 채널 중 하나를 사용합니다.
 
-App Service에서 인증/권한 부여(EasyAuth)를 사용하도록 설정한 경우 호출 스택 오류 메시지에서 LaunchAgentAsync와 함께 401 오류가 발생할 수 있습니다. Azure Portal에서 **요청이 인증되지 않은 경우 수행할 작업**이 **익명 요청 허용(작업 없음)** 으로 설정되어 있는지 확인하고 D:\Home\sites\wwwroot의 authorization.json에 대신 다음 내용을 입력하세요. 
+App Service에서 인증/권한 부여(EasyAuth)를 사용하도록 설정한 경우 호출 스택 오류 메시지에서 LaunchAgentAsync와 함께 401 오류가 발생할 수 있습니다. Azure Portal에서 **요청이 인증되지 않은 경우 수행할 작업** 이 **익명 요청 허용(작업 없음)** 으로 설정되어 있는지 확인하고 D:\Home\sites\wwwroot의 authorization.json에 대신 다음 내용을 입력하세요. 
 
 ```
 {
@@ -227,7 +228,7 @@ Visual Studio 2019를 사용하려면 Azure App Service에 최신 버전의 스�
 
 - 동일한 App Service에 대해 여러 Visual Studio 클라이언트를 사용하는 스냅샷 디버깅은 현재 지원되지 않습니다.
 - ASP.NET Core 프로젝트에서는 Roslyn IL 최적화가 일부만 지원됩니다. 일부 ASP.NET Core 프로젝트의 경우 일부 변수를 볼 수 없거나 조건문에 사용할 수 없습니다.
-- *$FUNCTION* 또는 *$CALLER*와 같은 특수 변수는 ASP.NET Core 프로젝트의 조건문이나 logpoint에서 평가할 수 없습니다.
+- *$FUNCTION* 또는 *$CALLER* 와 같은 특수 변수는 ASP.NET Core 프로젝트의 조건문이나 logpoint에서 평가할 수 없습니다.
 - 스냅샷 디버깅은 [로컬 캐싱](/azure/app-service/app-service-local-cache)이 켜져 있는 App Services에서 작동하지 않습니다.
 - 스냅샷 디버깅 API Apps는 현재 지원되지 않습니다.
 

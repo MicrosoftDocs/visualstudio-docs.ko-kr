@@ -1,6 +1,7 @@
 ---
 title: 콘솔 프로젝트 디버깅 준비 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio의 콘솔 프로젝트(C#, C++, Visual Basic, F#) 디버그 준비에 대한 정보를 가져옵니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916281"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728267"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비 중: 콘솔 프로젝트(C#, C++, Visual Basic, F#)
 
@@ -49,9 +50,9 @@ ms.locfileid: "75916281"
 
 - 코드에 중단점을 설정하고 애플리케이션을 시작합니다.
 
-- **F10**(**디버그** > **프로시저 단위 실행**) 또는 **F11**(**디버그** > **한 단계씩 코드 실행**) 키를 사용하여 애플리케이션을 시작하고 **실행하려면 클릭**과 같은 다른 옵션을 사용하여 코드를 탐색합니다.
+- **F10**(**디버그** > **프로시저 단위 실행**) 또는 **F11**(**디버그** > **한 단계씩 코드 실행**) 키를 사용하여 애플리케이션을 시작하고 **실행하려면 클릭** 과 같은 다른 옵션을 사용하여 코드를 탐색합니다.
 
-- 코드 편집기에서 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행**을 선택합니다.
+- 코드 편집기에서 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행** 을 선택합니다.
 
   콘솔 애플리케이션을 디버깅할 때는 Visual Studio 대신 명령 프롬프트에서 애플리케이션을 시작하는 경우가 있을 수 있습니다. 이 경우에는 명령 프롬프트에서 애플리케이션을 시작하고 Visual Studio 디버거를 애플리케이션에 연결할 수 있습니다. 자세한 내용은 [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.
 

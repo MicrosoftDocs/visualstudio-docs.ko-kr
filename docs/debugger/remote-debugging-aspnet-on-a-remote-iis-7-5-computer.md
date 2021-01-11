@@ -1,5 +1,6 @@
 ---
 title: IIS 컴퓨터의 원격 디버그 ASP.NET
+description: Visual Studio ASP.NET MVC 4.5.2 애플리케이션을 설정 및 구성하고 IIS에 배포하고 Visual Studio에서 원격 디버거를 연결하는 방법을 알아봅니다.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173917"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815713"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 ASP.NET 원격 디버그
 IIS에 배포된 ASP.NET 애플리케이션을 디버그하려면 앱을 배포한 컴퓨터에 원격 도구를 설치하고 실행한 다음, Visual Studio에서 실행 중인 앱에 연결합니다.
@@ -60,10 +61,10 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하려면 앱을 배포�
 1. 새 MVC ASP.NET 애플리케이션을 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서 **Ctrl+Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET 웹 애플리케이션 만들기(.NET Framework)** 를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp**으로 지정한 다음, **만들기**를 선택합니다. **MVC**를 선택한 후 **만들기**를 선택합니다.
+    Visual Studio 2019에서 **Ctrl+Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력하고 **템플릿** 을 선택한 다음, **새 ASP.NET 웹 애플리케이션 만들기(.NET Framework)** 를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp** 으로 지정한 다음, **만들기** 를 선택합니다. **MVC** 를 선택한 후 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서 이렇게 하려면 **파일 > 새로 만들기 > 프로젝트**를 선택한 다음, **Visual C# > 웹 > ASP.NET 웹 애플리케이션**을 선택합니다. **ASP.NET 4.5.2** 템플릿 섹션에서 **MVC**를 선택합니다. **Docker 지원 사용**이 선택되어 있고 **인증**이 **인증 없음**으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp**으로 지정합니다.
+    Visual Studio 2017에서 이렇게 하려면 **파일 > 새로 만들기 > 프로젝트** 를 선택한 다음, **Visual C# > 웹 > ASP.NET 웹 애플리케이션** 을 선택합니다. **ASP.NET 4.5.2** 템플릿 섹션에서 **MVC** 를 선택합니다. **Docker 지원 사용** 이 선택되어 있고 **인증** 이 **인증 없음** 으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp** 으로 지정합니다.
     ::: moniker-end
 
 2. *HomeController.cs* 파일을 열고 `About()` 메서드에 중단점을 설정합니다.
@@ -74,31 +75,31 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하려면 앱을 배포�
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Windows Server에서 브라우저 보안 설정 업데이트
 
-Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트**로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
+Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트** 로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - iis.net
 
-소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가**를 클릭합니다.
+소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가** 를 클릭합니다.
 
 ## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a> Windows Server에 ASP.NET 4.5 설치
 
 IIS에 ASP.NET을 설치하는 방법에 대한 자세한 내용은 [ASP.NET 3.5 및 ASP.NET 4.5를 사용하는 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)을 참조하세요.
 
-1. 서버 관리자의 왼쪽 창에서 **IIS**를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자**를 선택합니다.
+1. 서버 관리자의 왼쪽 창에서 **IIS** 를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자** 를 선택합니다.
 
-1. WebPI(웹 플랫폼 설치 관리자)를 사용하여 ASP.NET 4.5를 설치합니다(Windows Server 2012 R2의 서버 노드**Get New Web Platform Components**(새 웹 플랫폼 구성 요소 가져오기)를 선택한 후 ASP.NET 검색).
+1. WebPI(웹 플랫폼 설치 관리자)를 사용하여 ASP.NET 4.5를 설치합니다(Windows Server 2012 R2의 서버 노드 **Get New Web Platform Components**(새 웹 플랫폼 구성 요소 가져오기)를 선택한 후 ASP.NET 검색).
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![웹 플랫폼 구성 요소 IIS: ASP.NET 4.5가 빨간색 원으로 표시되어 있는 ASP.NET에 대한 검색 결과를 보여 주는 웹 플랫폼 설치 관리자 5.0의 스크린샷](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Windows Server 2008 R2를 사용 중인 경우 다음 명령을 사용하여 ASP.NET 4를 대신 설치하세요.
 
      **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
-2. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
+2. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y** 에 이어 **net start w3svc** 를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
 ## <a name="choose-a-deployment-option"></a>배포 옵션 선택
 
@@ -129,12 +130,12 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작합니다.
 
-1. **설정** 대화 상자에서 **다음**을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거**를 선택합니다.
+1. **설정** 대화 상자에서 **다음** 을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거** 를 선택합니다.
 
     > [!IMPORTANT]
     > 릴리스 구성을 선택하는 경우 게시할 때 *web.config* 파일에서 디버깅을 사용하지 않도록 설정합니다.
 
-1. **저장**을 클릭한 다음, 앱을 다시 게시합니다.
+1. **저장** 을 클릭한 다음, 앱을 다시 게시합니다.
 
 ## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(선택 사항) 로컬 폴더에 게시하여 배포
 
@@ -142,21 +143,21 @@ PowerShell, RoboCopy를 사용하여 앱을 IIS에 복사하거나 수동으로 
 
 ### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Windows Server 컴퓨터에서 ASP.NET 웹 사이트 구성
 
-1. Windows 탐색기를 열고 **C:\Publish**라는 새 폴더를 만듭니다. 여기에서 나중에 ASP.NET 프로젝트를 배포합니다.
+1. Windows 탐색기를 열고 **C:\Publish** 라는 새 폴더를 만듭니다. 여기에서 나중에 ASP.NET 프로젝트를 배포합니다.
 
-2. **IIS(인터넷 정보 서비스) 관리자**가 아직 열려있지 않으면 엽니다. (서버 관리자의 왼쪽 창에서 **IIS**를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자**를 선택합니다.)
+2. **IIS(인터넷 정보 서비스) 관리자** 가 아직 열려있지 않으면 엽니다. (서버 관리자의 왼쪽 창에서 **IIS** 를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자** 를 선택합니다.)
 
-3. 왼쪽 창의 **연결** 아래 **사이트**로 이동합니다.
+3. 왼쪽 창의 **연결** 아래 **사이트** 로 이동합니다.
 
-4. **기본 웹 사이트**를 선택하고 **기본 설정**을 선택한 다음, **실제 경로**를 **C:\Publish**로 설정합니다.
+4. **기본 웹 사이트** 를 선택하고 **기본 설정** 을 선택한 다음, **실제 경로** 를 **C:\Publish** 로 설정합니다.
 
-5. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가**를 선택합니다.
+5. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가** 를 선택합니다.
 
-6. **별칭** 필드를 **MyASPApp**으로 설정하고 기본 애플리케이션 풀(**DefaultAppPool**)을 적용한 후 **실제 경로**를 **C:\Publish**로 설정합니다.
+6. **별칭** 필드를 **MyASPApp** 으로 설정하고 기본 애플리케이션 풀(**DefaultAppPool**)을 적용한 후 **실제 경로** 를 **C:\Publish** 로 설정합니다.
 
-7. **연결**에서 **애플리케이션 풀**을 선택합니다. **DefaultAppPool**을 열고 애플리케이션 풀 필드를 **ASP.NET v4.0**으로 설정합니다(ASP.NET 4.5는 애플리케이션 풀의 옵션이 아님).
+7. **연결** 에서 **애플리케이션 풀** 을 선택합니다. **DefaultAppPool** 을 열고 애플리케이션 풀 필드를 **ASP.NET v4.0** 으로 설정합니다(ASP.NET 4.5는 애플리케이션 풀의 옵션이 아님).
 
-8. IIS 관리자에서 사이트를 선택하여 **사용 권한 편집**을 선택하고 IUSR, IIS_IUSRS 또는 애플리케이션 풀에 구성된 사용자가 읽기 및 실행 권한이 있는 사용자인지 확인합니다. 이러한 사용자가 없는 경우에는 읽기 및 실행 권한이 있는 사용자로 IUSR을 추가합니다.
+8. IIS 관리자에서 사이트를 선택하여 **사용 권한 편집** 을 선택하고 IUSR, IIS_IUSRS 또는 애플리케이션 풀에 구성된 사용자가 읽기 및 실행 권한이 있는 사용자인지 확인합니다. 이러한 사용자가 없는 경우에는 읽기 및 실행 권한이 있는 사용자로 IUSR을 추가합니다.
 
 ### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Visual Studio에서 로컬 폴더에 게시하여 앱을 게시 및 배포
 
@@ -207,23 +208,23 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     Visual Studio에서 **\<remote computer name>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서는 **\<remote computer name>:4024**가 표시되고,
+    Visual Studio 2019에서는 **\<remote computer name>:4024** 가 표시되고,
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서는 **\<remote computer name>:4022**가 표시됩니다.
+    Visual Studio 2017에서는 **\<remote computer name>:4022** 가 표시됩니다.
     ::: moniker-end
     이 포트는 필수입니다. 포트 번호가 표시되지 않으면 수동으로 추가하세요.
 
-4. **새로 고침**을 클릭합니다.
+4. **새로 고침** 을 클릭합니다.
     일부 프로세스가 **사용 가능한 프로세스** 창에 표시됩니다.
 
     프로세스가 보이지 않으면 원격 컴퓨터 이름 대신 IP 주소를 사용해 보세요(포트가 필요함). 명령줄에서 `ipconfig`를 사용하여 IPv4 주소를 가져올 수 있습니다.
 
-5. **모든 사용자의 프로세스 표시**를 선택합니다.
+5. **모든 사용자의 프로세스 표시** 를 선택합니다.
 
-6. 프로세스 이름의 첫 글자를 입력하면 ASP.NET 4.5의 **w3wp.exe**를 신속하게 찾을 수 있습니다.
+6. 프로세스 이름의 첫 글자를 입력하면 ASP.NET 4.5의 **w3wp.exe** 를 신속하게 찾을 수 있습니다.
 
-    **w3wp.exe**가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool**과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 표시되는 경우 올바른 프로세스를 식별하는 간편한 방법은 디버그할 앱 인스턴스에 대한 새 명명된 앱 풀을 만든 다음, **사용자 이름** 열에서 손쉽게 찾는 것입니다.
+    **w3wp.exe** 가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool** 과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 표시되는 경우 올바른 프로세스를 식별하는 간편한 방법은 디버그할 앱 인스턴스에 대한 새 명명된 앱 풀을 만든 다음, **사용자 이름** 열에서 손쉽게 찾는 것입니다.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
@@ -232,7 +233,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. **연결**을 클릭합니다.
+7. **연결** 을 클릭합니다.
 
 8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<remote computer name>** 으로 이동합니다.
 
@@ -259,9 +260,9 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 ::: moniker-end
 * UDP 3702 - (선택 사항) 검색 포트를 사용하면 Visual Studio에서 원격 디버거에 연결할 때 **찾기** 단추를 사용할 수 있습니다.
 
-1. Windows Server에서 포트를 열려면 **시작** 메뉴를 열고 **고급 보안이 포함된 Windows 방화벽**을 검색합니다.
+1. Windows Server에서 포트를 열려면 **시작** 메뉴를 열고 **고급 보안이 포함된 Windows 방화벽** 을 검색합니다.
 
-2. 그런 다음, **인바운드 규칙 > 새 규칙 > 포트**를 선택합니다. **다음**을 선택하고 **특정 로컬 포트**에서 포트 번호를 입력하고 **다음**을 클릭한 다음, **연결 허용**과 다음을 클릭하고 인바운드 규칙의 이름(**IIS**, **웹 배포** 또는 **msvsmon**)을 추가합니다.
+2. 그런 다음, **인바운드 규칙 > 새 규칙 > 포트** 를 선택합니다. **다음** 을 선택하고 **특정 로컬 포트** 에서 포트 번호를 입력하고 **다음** 을 클릭한 다음, **연결 허용** 과 다음을 클릭하고 인바운드 규칙의 이름(**IIS**, **웹 배포** 또는 **msvsmon**)을 추가합니다.
 
     Windows 방화벽을 구성에 대한 자세한 내용은 [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)을 참조하세요.
 

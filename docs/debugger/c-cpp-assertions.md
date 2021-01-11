@@ -1,5 +1,7 @@
 ---
 title: C/C++ 어설션 | Microsoft Docs
+description: Visual Studio 디버깅에서 C/C++ 어설션이 작동하는 방법에 대해 알아봅니다. 어설션은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600219"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729069"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
 어설션 문은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다. 지정한 조건이 true가 아니면 어설션이 실패하고 프로그램 실행이 중단되며 [ 어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.
@@ -124,7 +126,7 @@ CRTDBG.H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _ASSERTE 매�
     } while (0)
 ```
 
-어설션된 식이 FALSE로 평가되면 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)가 호출되어 어설션 실패를 보고합니다(기본적으로 메시지 대화 상자를 사용). 메시지 대화 상자에서 **다시 시도**를 선택하면 `_CrtDbgReport`는 1을 반환하고 `_CrtDbgBreak`는 `DebugBreak`를 통해 디버거를 호출합니다.
+어설션된 식이 FALSE로 평가되면 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)가 호출되어 어설션 실패를 보고합니다(기본적으로 메시지 대화 상자를 사용). 메시지 대화 상자에서 **다시 시도** 를 선택하면 `_CrtDbgReport`는 1을 반환하고 `_CrtDbgBreak`는 `DebugBreak`를 통해 디버거를 호출합니다.
 
 ### <a name="checking-for-heap-corruption"></a>힙 손상 여부 확인
 다음 예제는 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)를 사용하여 힙 손상 여부를 검사합니다.

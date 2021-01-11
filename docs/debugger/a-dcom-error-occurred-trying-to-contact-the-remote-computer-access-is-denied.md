@@ -1,6 +1,8 @@
 ---
 title: 원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.
 titleSuffix: ''
+description: ‘원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.’ Visual Studio 원격 디버깅 오류 참조에 대한 정보를 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 093f2e46178d8734e7499c9f7a340396bbbdc9ed
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c430462a224cb4604c09984a5397e540ce752b8a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851634"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729199"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>원격 컴퓨터에 접속하려고 시도하는 동안 DCOM 오류가 발생했습니다. 액세스가 거부되었습니다.
 원격 디버깅은 다음과 같은 상황에서 원격 컴퓨터와 로컬 컴퓨터 간의 통신에 DCOM을 사용합니다.
 
-- 디버거가 **기본 호환성 모드**로 설정되거나 **도구 > 옵션 > 디버깅** 페이지에서 **관리되는 호환성 모드**가 선택된 경우
+- 디버거가 **기본 호환성 모드** 로 설정되거나 **도구 > 옵션 > 디버깅** 페이지에서 **관리되는 호환성 모드** 가 선택된 경우
 
 - 관리되는 C++(C++/CLI) 코드를 디버깅하는 경우
 
@@ -41,9 +43,9 @@ ms.locfileid: "90851634"
 
   이 오류는 Visual Studio 프로세스가 DCOM을 통해 원격 디버거 프로세스에 자신을 인증할 수 없는 경우(또는 제공된 자격 증명이 불충분한 것으로 간주되는 경우) 발생합니다. 다음 해결 방법 중 하나 이상으로 문제를 해결할 수 있습니다.
 
-- **기본 호환성 모드** 및 **관리되는 호환성 모드**를 해제합니다.
+- **기본 호환성 모드** 및 **관리되는 호환성 모드** 를 해제합니다.
 
-- Visual Studio 2013에서 **네이티브 편집하며 계속하기 사용**을 해제합니다.
+- Visual Studio 2013에서 **네이티브 편집하며 계속하기 사용** 을 해제합니다.
 
 - 두 컴퓨터를 다시 부팅합니다.
 

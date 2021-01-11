@@ -1,5 +1,7 @@
 ---
 title: BeginCapture | Microsoft Docs
+description: VsgDbg 클래스의 BeginCapture 메서드를 사용하여 EndCapture로 종료되는 캡처 간격을 시작합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9521288b27b1f9b11a2fdb8cbbd613f1a77f857d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 931e7ab05442a429c0b9e6468d42aadca942c1ee
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736151"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727967"
 ---
 # <a name="begincapture"></a>BeginCapture
 `EndCapture`로 종료되는 캡처 간격을 시작합니다.

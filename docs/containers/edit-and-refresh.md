@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298215"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729303"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 
@@ -130,7 +130,7 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 4. 디버깅을 시작하고 중단점에 적중하려면 F5 키를 누릅니다.
 5. Visual Studio로 전환하여 중단점을 살펴봅니다. 값을 검사합니다.
 
-   ![중단점](media/edit-and-refresh/breakpoint.png)
+   ![노란색으로 강조 표시된 코드 줄 왼쪽으로 중단점이 설정된 Visual Studio의 Index.cshtml.cs 코드 일부를 보여 주는 스크린샷](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>.NET Framework 콘솔 앱 만들기
 
@@ -152,7 +152,7 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 4. F5 키를 눌러 디버깅을 시작하고 중단점에 적중합니다.
 5. Visual Studio로 전환하여 중단점을 살펴보고 값을 검사합니다.
 
-   ![중단점](media/edit-and-refresh/breakpoint-console.png)
+   ![노란색으로 강조 표시된 코드 줄 왼쪽으로 중단점이 설정된 Visual Studio의 Program.cs 코드 창 스크린샷](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>컨테이너 재사용
 

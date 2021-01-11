@@ -1,5 +1,7 @@
 ---
 title: 디버깅 중에 .NET 코드 디컴파일 | Microsoft Docs
+description: Visual Studio에서 디버그하는 동안 .NET 어셈블리에서 소스 코드를 생성하고 포함합니다. 포함된 소스 코드를 추출하고 봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600105"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726737"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>디버깅 중에 .NET 어셈블리에서 소스 코드 생성
 
@@ -61,7 +63,7 @@ ms.locfileid: "89600105"
 
 ![기타 파일 옵션이 활성화된 도구 옵션 페이지의 스크린샷.](media/decompilation-tools-options-misc-files.png)
 
-추출된 소스 파일은 **솔루션 탐색기**의 기타 파일에 표시됩니다.
+추출된 소스 파일은 **솔루션 탐색기** 의 기타 파일에 표시됩니다.
 
 ![기타 파일이 있는 솔루션 탐색기의 스크린샷.](media/decompilation-solution-explorer.png)
 
@@ -101,7 +103,7 @@ ms.locfileid: "89600105"
 
 [JMC(내 코드만)](./just-my-code.md) 설정을 통해 Visual Studio에서 시스템, 프레임워크, 라이브러리 및 기타 비사용자 호출을 한 단계씩 실행할 수 있습니다. 디버깅 세션 중에 **모듈** 창에는 디버거가 내 코드(사용자 코드)로 취급하는 코드 모듈이 표시됩니다.
 
-최적화된 모듈 또는 릴리스 모듈을 디컴파일하면 비사용자 코드가 생성됩니다. 예를 들어 디버거가 디컴파일된 비사용자 코드에서 중단되면 **소스 없음** 창이 나타납니다. 내 코드만을 사용하지 않도록 설정하려면 **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반**으로 이동한 다음, **내 코드만 사용**을 선택 취소합니다.
+최적화된 모듈 또는 릴리스 모듈을 디컴파일하면 비사용자 코드가 생성됩니다. 예를 들어 디버거가 디컴파일된 비사용자 코드에서 중단되면 **소스 없음** 창이 나타납니다. 내 코드만을 사용하지 않도록 설정하려면 **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반** 으로 이동한 다음, **내 코드만 사용** 을 선택 취소합니다.
 
 ### <a name="extracted-sources"></a>추출된 소스
 

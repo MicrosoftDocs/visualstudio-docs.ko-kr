@@ -1,5 +1,7 @@
 ---
 title: WCF 디버깅의 제한 사항 | Microsoft Docs
+description: WCF 서비스 디버깅을 시작하는 방법, 필요한 조건, 디버깅 제한 사항에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407746"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903859"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "94407746"
 
 - **프로세스에 연결** 을 사용하여 현재 실행 중인 서비스에 연결합니다. 디버깅이 서비스 내에서 시작됩니다.
 
-  이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.
+이 항목에서는 이러한 시나리오에 적용되는 제한 사항에 대해 설명합니다.
 
 ## <a name="limitations-on-stepping-into-a-service"></a>서비스를 한 단계씩 실행하는 경우의 제한 사항
  디버깅할 클라이언트 애플리케이션에서 서비스를 한 단계씩 실행하려면 다음 조건이 충족되어야 합니다.

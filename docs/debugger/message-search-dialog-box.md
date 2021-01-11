@@ -1,5 +1,7 @@
 ---
 title: 메시지 검색 대화 상자 | Microsoft Docs
+description: 메시지 검색을 사용하여 메시지 뷰의 특정 메시지에 대한 노드를 찾아 선택합니다. 핸들, 메시지 유형, 메시지 ID로 검색할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931292"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903053"
 ---
 # <a name="message-search-dialog-box"></a>메시지 검색 대화 상자
-이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에서 특정 메시지에 대한 노드를 찾아 선택할 수 있습니다. 이 대화 상자를 표시하려면 포커스를 메시지 뷰 창으로 이동합니다. 그런 다음, **검색** 메뉴에서 **메시지 찾기**를 선택합니다.
+이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에서 특정 메시지에 대한 노드를 찾아 선택할 수 있습니다. 이 대화 상자를 표시하려면 포커스를 메시지 뷰 창으로 이동합니다. 그런 다음, **검색** 메뉴에서 **메시지 찾기** 를 선택합니다.
 
  다음 설정을 사용할 수 있습니다.
 

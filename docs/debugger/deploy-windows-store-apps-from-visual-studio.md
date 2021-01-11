@@ -1,6 +1,7 @@
 ---
 title: UWP 앱 배포 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio에서 UWP(유니버설 Windows 플랫폼) 앱을 배포합니다. 배포를 위한 로컬 또는 원격 대상 디바이스를 지정합니다. 배포 옵션을 이해합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188285"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728202"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio에서 UWP 앱 배포
 
@@ -45,7 +46,7 @@ Visual Studio 배포 기능은 대상 디바이스에서 Visual Studio로 만든
 
      ![로컬 머신에서 실행](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3. **빌드** 메뉴에서 **배포**를 선택합니다.
+3. **빌드** 메뉴에서 **배포** 를 선택합니다.
 
 ## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> 원격 디바이스 지정 방법
 
@@ -66,9 +67,9 @@ Windows 10 원격 디바이스에서 [개발자 모드](/windows/uwp/get-started
 
 3. 그런 다음 속성 페이지 창에서 **디버그** 노드를 선택합니다.
 
-4. **대상 디바이스**에서 **원격 머신**을 선택합니다.
+4. **대상 디바이스** 에서 **원격 머신** 을 선택합니다.
 
-5. **원격 머신**에서 **찾기**를 클릭합니다.
+5. **원격 머신** 에서 **찾기** 를 클릭합니다.
 
 6. 원격 디바이스의 이름 또는 IP 주소를 입력하거나 **원격 연결** 대화 상자에서 디바이스를 선택할 수 있습니다.
 
@@ -104,7 +105,7 @@ Windows 10 원격 디바이스에서 [개발자 모드](/windows/uwp/get-started
 
 - C# 및 Visual Basic 디버그 속성 페이지에서 **네트워크 루프백 허용** 확인란을 선택 취소합니다.
 
-- C++ 디버그 속성 페이지에서 **네트워크 루프백 허용** 값을 **아니요**로 설정합니다.
+- C++ 디버그 속성 페이지에서 **네트워크 루프백 허용** 값을 **아니요** 로 설정합니다.
 
 **시작하지 않음(시작 시 코드 디버그)(C# 및 Visual Basic)/애플리케이션 시작(C++)**
 
@@ -112,7 +113,7 @@ Windows 10 원격 디바이스에서 [개발자 모드](/windows/uwp/get-started
 
 - C# 및 Visual Basic 디버그 속성 페이지에서 **시작하지 않음(시작 시 코드 디버그)** 확인란을 선택합니다.
 
-- C++ 디버그 속성 페이지에서 **애플리케이션 시작** 값을 **예**로 설정합니다.
+- C++ 디버그 속성 페이지에서 **애플리케이션 시작** 값을 **예** 로 설정합니다.
 
 ## <a name="see-also"></a>참조
 

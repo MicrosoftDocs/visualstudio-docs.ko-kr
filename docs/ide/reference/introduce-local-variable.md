@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568817"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833262"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio에서 지역 변수 소개
 
@@ -47,7 +47,7 @@ ms.locfileid: "75568817"
       - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![스크루드라이버](media/screwdriver.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![빠른 작업 및 리팩터링 메뉴의 왼쪽 여백에 표시되는 스크루드라이버 아이콘의 스크린샷](media/screwdriver.png) 아이콘을 클릭합니다.
 
    ![로컬 미리 보기 소개](media/local-preview-cs.png)
 

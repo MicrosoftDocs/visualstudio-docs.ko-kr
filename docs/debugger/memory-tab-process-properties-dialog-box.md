@@ -1,5 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자, 메모리 탭 | Microsoft Docs
+description: 프로세스 속성의 메모리 탭을 사용하여 프로세스에서 메모리를 사용하는 방법을 확인합니다. 사용된 공간, 공유된 공간 및 사용된 가상 공간에 대한 정보가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931287"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903729"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 메모리 탭
-**메모리** 탭을 사용하여 프로세스에서 메모리를 사용하는 방법을 표시할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성**을 선택합니다.
+**메모리** 탭을 사용하여 프로세스에서 메모리를 사용하는 방법을 표시할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.
 
  **메모리** 탭에서 다음 설정을 사용할 수 있습니다.
 

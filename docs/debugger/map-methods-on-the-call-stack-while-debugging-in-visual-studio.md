@@ -1,5 +1,7 @@
 ---
 title: 호출 스택의 시각적 맵 만들기 | Microsoft Docs
+description: 디버그할 때 호출 스택을 시각적으로 추적하는 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348537"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903833"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>디버그하는 동안 호출 스택의 시각적 맵 만들기(C#, Visual Basic, C++, JavaScript)
 
@@ -53,9 +55,9 @@ ms.locfileid: "85348537"
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a> 호출 스택 매핑
 
-1. Visual Studio Enterprise C#, Visual Basic, C++ 또는 JavaScript 프로젝트에서 **디버그** > **디버깅 시작**을 선택하거나 **F5** 키를 눌러 디버깅을 시작합니다.
+1. Visual Studio Enterprise C#, Visual Basic, C++ 또는 JavaScript 프로젝트에서 **디버그** > **디버깅 시작** 을 선택하거나 **F5** 키를 눌러 디버깅을 시작합니다.
 
-1. 앱이 중단 모드로 전환되거나 한 단계씩 함수를 실행한 후 **디버그** > **코드 맵**을 선택하거나 **Ctrl**+**Shift**+ **`** 를 누릅니다.
+1. 앱이 중단 모드로 전환되거나 한 단계씩 함수를 실행한 후 **디버그** > **코드 맵** 을 선택하거나 **Ctrl**+**Shift**+ **`** 를 누릅니다.
 
    현재 호출 스택은 새 코드 맵에 주황색으로 표시됩니다.
 
@@ -63,7 +65,7 @@ ms.locfileid: "85348537"
 
 디버깅을 계속할 때 코드 맵이 자동으로 업데이트됩니다. 맵 항목 또는 레이아웃을 변경해도 코드에는 영향을 주지 않습니다. 맵에서 이름 바꾸기, 이동 또는 제거 기능을 자유롭게 사용할 수 있습니다.
 
-항목에 관한 자세한 정보를 보려면 해당 항목을 가리키고 항목의 도구 설명을 확인합니다. 도구 모음에서 **범례**를 선택하여 각 아이콘의 의미를 알아볼 수도 있습니다.
+항목에 관한 자세한 정보를 보려면 해당 항목을 가리키고 항목의 도구 설명을 확인합니다. 도구 모음에서 **범례** 를 선택하여 각 아이콘의 의미를 알아볼 수도 있습니다.
 
 ![코드 맵 범례](../debugger/media/debuggermap_showlegend.png "코드 맵 범례")
 
@@ -74,10 +76,10 @@ ms.locfileid: "85348537"
 
 기본적으로 맵에는 고유한 코드만 나타납니다. 맵에서 외부 코드를 보려면:
 
-- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **외부 코드 표시**를 선택합니다.
+- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **외부 코드 표시** 를 선택합니다.
 
   ![호출 스택 창을 사용하여 외부 코드 표시](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- 또는 Visual Studio **Tools**의 **내 코드만 사용**(또는 **디버그**) > **옵션** > **디버깅**의 선택을 취소합니다.
+- 또는 Visual Studio **Tools** 의 **내 코드만 사용**(또는 **디버그**) > **옵션** > **디버깅** 의 선택을 취소합니다.
 
   ![옵션 대화 상자를 사용하여 외부 코드 표시](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -90,16 +92,16 @@ ms.locfileid: "85348537"
 **레이아웃** 메뉴에서 다음을 수행할 수 있습니다.
 
 - 기본 레이아웃을 변경합니다.
-- **디버깅 시 자동으로 레이아웃 지정**의 선택을 취소하여 맵을 자동으로 다시 정렬하는 기능을 중지합니다.
-- **증분 레이아웃**의 선택을 취소하여 항목을 추가할 때 최소한으로 맵을 다시 정렬합니다.
+- **디버깅 시 자동으로 레이아웃 지정** 의 선택을 취소하여 맵을 자동으로 다시 정렬하는 기능을 중지합니다.
+- **증분 레이아웃** 의 선택을 취소하여 항목을 추가할 때 최소한으로 맵을 다시 정렬합니다.
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a> 코드에 대해 메모하기
 
 주석을 추가하여 코드에서 수행되는 작업을 추적할 수 있습니다.
 
-주석을 추가하려면 코드 맵을 마우스 오른쪽 단추로 클릭하고 **편집** > **새 주석**을 선택한 다음, 주석을 입력합니다.
+주석을 추가하려면 코드 맵을 마우스 오른쪽 단추로 클릭하고 **편집** > **새 주석** 을 선택한 다음, 주석을 입력합니다.
 
-주석에 새 줄을 추가하려면 **Shift**+**Enter**를 누릅니다.
+주석에 새 줄을 추가하려면 **Shift**+**Enter** 를 누릅니다.
 
  ![코드 맵의 호출 스택에 주석 추가](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
@@ -115,7 +117,7 @@ ms.locfileid: "85348537"
 
 이제 C# 또는 Visual Basic에서 맵을 가져왔으므로 필드, 속성 및 기타 메서드 같은 항목을 추가하여 코드에서 수행되는 작업을 추적할 수 있습니다.
 
-코드에서 메서드 정의로 이동하려면 맵에서 메서드를 두 번 클릭하거나, 해당 메서드를 선택하고 **F12** 키를 누르거나, 메서드를 마우스 오른쪽 단추로 클릭하고 **정의로 이동**을 선택합니다.
+코드에서 메서드 정의로 이동하려면 맵에서 메서드를 두 번 클릭하거나, 해당 메서드를 선택하고 **F12** 키를 누르거나, 메서드를 마우스 오른쪽 단추로 클릭하고 **정의로 이동** 을 선택합니다.
 
 ![코드 맵의 메서드에 대한 코드 정의로 이동](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
@@ -151,7 +153,7 @@ ms.locfileid: "85348537"
 
 맵을 내보내고, Microsoft Outlook을 사용하여 다른 사용자에게 보내고, 솔루션에 저장하고, 버전 제어에 체크 인할 수 있습니다.
 
-맵을 공유하거나 저장하려면 코드 맵 도구 모음에서 **공유**를 사용합니다.
+맵을 공유하거나 저장하려면 코드 맵 도구 모음에서 **공유** 를 사용합니다.
 
 ![다른 사용자와 호출 스택 코드 맵 공유](../debugger/media/debuggermap_sharewithothers.png "다른 사용자와 호출 스택 코드 맵 공유")
 

@@ -8,35 +8,35 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325827"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762616"
 ---
-1. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시**(Web Forms의 경우 **웹앱 게시**)를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시**(Web Forms의 경우 **웹앱 게시**)를 선택합니다.
 
-    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필**을 클릭합니다.
+    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필** 을 클릭합니다.
 
-1. **게시** 대화 상자에서 **폴더**를 선택하고 **찾아보기**를 클릭하여 새 폴더 **C:\Publish**를 만듭니다.
+1. **게시** 대화 상자에서 **폴더** 를 선택하고 **찾아보기** 를 클릭하여 새 폴더 **C:\Publish** 를 만듭니다.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![‘bin\Release\Publish’ 폴더가 게시 대상으로 선택된 Visual Studio의 게시 대상 선택 대화 상자 스크린샷](../media/remotedbg_publish_local.png)
 
-    Web Forms 앱의 경우 게시 대화 상자에서 **사용자 지정**을 선택하고 프로필 이름을 입력한 다음, **확인**을 선택합니다.
+    Web Forms 앱의 경우 게시 대화 상자에서 **사용자 지정** 을 선택하고 프로필 이름을 입력한 다음, **확인** 을 선택합니다.
 
-1. 드롭다운 목록에서 **프로필 만들기**를 클릭합니다(**게시**가 기본값).
+1. 드롭다운 목록에서 **프로필 만들기** 를 클릭합니다(**게시** 가 기본값).
 
 1. **게시** 대화 상자에서 **설정** 링크를 클릭한 다음, **설정** 탭을 선택합니다.
 
-1. 구성을 **디버그**로 설정하고 **게시 전에 모든 기존 파일 삭제**를 선택한 후 **저장**을 클릭합니다.
+1. 구성을 **디버그** 로 설정하고 **게시 전에 모든 기존 파일 삭제** 를 선택한 후 **저장** 을 클릭합니다.
 
     > [!NOTE]
     > 릴리스 빌드를 사용하는 경우 게시할 때 web.config 파일에서 디버깅을 사용하지 않도록 설정합니다.
 
-1. **게시**를 클릭합니다.
+1. **게시** 를 클릭합니다.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![게시 대화 상자의 설정 탭 스크린샷 구성은 디버그로 설정되고 게시 단추가 선택되어 있습니다.](../media/remotedbg_publish_debug_config.png)
 
     애플리케이션은 프로젝트의 **디버그** 구성을 로컬 폴더에 게시합니다. 진행률이 출력 창에 표시됩니다.
 

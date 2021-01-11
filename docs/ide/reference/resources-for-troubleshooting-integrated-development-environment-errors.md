@@ -1,8 +1,8 @@
 ---
-title: 오류 문제 해결을 위한 리소스
+title: IDE 오류 문제 해결을 위한 리소스
 description: 기술 자료 문서, 포럼 또는 제품 지원을 사용하여 문제를 해결하기 위한 정보가 충분하지 않은 IDE 오류를 해결하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616591"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696551"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
+# <a name="resources-for-troubleshooting-ide-errors"></a>IDE 오류 문제 해결을 위한 리소스
 
-일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 포럼 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
+일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 포럼, 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 문제 해결](/visualstudio/mac/troubleshooting)을 참조하세요.
@@ -115,9 +115,14 @@ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색
 
 ## <a name="developer-forums"></a>개발자 포럼
 
-포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 뉴스 그룹을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다.
+포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 포럼을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다.
 
-[Microsoft 기술 커뮤니티](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) 웹 사이트에서 포럼, 블로그, 채팅 및 기타 리소스에 액세스할 수 있습니다.
+다음은 포럼 리소스 목록입니다.
+
+- [Visual Studio on Q&A](/answers/products/vs/)(Q&A의 Visual Studio)
+- [Visual Studio MSDN 포럼](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>기술 지원
 

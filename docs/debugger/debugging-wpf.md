@@ -1,5 +1,7 @@
 ---
 title: WPF 디버그 | Microsoft Docs
+description: WPF(Windows Presentation Foundation) 애플리케이션을 더욱 쉽게 디버그할 수 있도록 하는 Visual Studio의 추가 기능에 대해 설명하는 문서 목록을 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: bb68f1a89f09c2229a190098ebf47343d9784b72
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888444"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726724"
 ---
 # <a name="debugging-wpf"></a>WPF 디버깅
 

@@ -1,5 +1,7 @@
 ---
 title: 그래픽 API 및 메모리 통계 | Microsoft Docs
+description: 다양한 리소스의 GPU 메모리 사용량 및 Direct3D API 사용에 대한 정보를 보여 주는 그래픽 API 통계 및 메모리 통계 도구를 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735570"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727892"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>그래픽 API 및 메모리 통계
 <!-- VERSIONLESS -->

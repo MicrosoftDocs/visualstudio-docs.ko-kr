@@ -1,5 +1,7 @@
 ---
 title: 메시지 속성 대화 상자 | Microsoft Docs
+description: 메시지 뷰에 표시된 내용보다 자세히 메시지에 대해 알아보려면 메시지 속성을 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846117"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903066"
 ---
 # <a name="message-properties-dialog-box"></a>메시지 속성 대화 상자
-이 대화 상자는 특정 메시지에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 [메시지 뷰](../debugger/messages-view.md) 창으로 이동합니다. 트리에서 메시지 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+이 대화 상자는 특정 메시지에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 [메시지 뷰](../debugger/messages-view.md) 창으로 이동합니다. 트리에서 메시지 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **일반** 탭만 표시됩니다. 다음 설정을 사용할 수 있습니다.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098529"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833366"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -70,7 +70,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 - 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 오른쪽 클릭 메뉴를 연 후 **선택한 테스트 실행** 을 선택합니다.
 
-- 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+- 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![Visual Studio 테스트 탐색기 도구 모음에 있는 병렬 테스트 실행 토글 단추의 스크린샷 이 단추를 선택하면 테스트가 병렬로 실행됩니다.](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
 테스트가 실행되면 **테스트 탐색기** 창 위쪽의 **통과/실패 표시줄** 에 애니메이션 효과가 적용됩니다. 테스트 실행이 끝날 때 **통과/실패 표시줄** 은 모든 테스트가 통과했으면 녹색이 되고 실패한 테스트가 있으면 빨간색이 됩니다.
 ::: moniker-end
@@ -150,7 +150,7 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 
 계층 구조의 고유한 수준을 정의하고 그룹화 기준 옵션을 원하는 순으로 선택하여 **상태** 및 **클래스** 등을 기준으로 그룹화할 수 있습니다.
 
-![상태 및 클래스의 순으로 그룹화](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![한 창에는 테스트 계층 구조가 표시되고 다른 창에는 클래스 및 상태 옵션이 선택된 그룹화 기준 메뉴가 표시된 Visual Studio 테스트 탐색기의 스크린샷](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>테스트 탐색기 그룹
@@ -207,7 +207,7 @@ Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하�
 
 **재생 목록을 열려면** Visual Studio 메뉴에서 **테스트** > **재생 목록** 을 선택한 다음 최근에 사용한 재생 목록 중에서 선택하거나 **재생 목록 열기** 를 선택하여 재생 목록의 이름과 위치를 지정합니다.
 
-개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![Visual Studio 테스트 탐색기 도구 모음에 있는 병렬 테스트 실행 토글 단추의 스크린샷](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 실행하거나 그룹으로 보려는 테스트 목록을 만들어 저장할 수 있습니다. 재생 목록을 선택하면 목록의 테스트가 새 테스트 탐색기 탭에 표시됩니다. 두 개 이상의 재생 목록에 테스트를 추가할 수 있습니다.
@@ -264,7 +264,7 @@ xUnit에는 다음 형식을 사용합니다. `TestCategory` 이름과 `[Value]`
 
 [그룹](#test-explorer-groups)은 특성, 스택 추적, 오류 메시지 및 정규화된 이름과 함께 테스트 탐색기에서 열로도 사용될 수 있습니다. 대부분의 열은 기본적으로 표시되지 않으며 표시되는 열과 표시되는 순서를 사용자 지정할 수 있습니다.
 
-![상태 및 클래스의 순으로 그룹화](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![열이 선택된 메뉴와 기간, 특성, 오류 메시지가 선택된 하위 메뉴를 보여 주는 Visual Studio 테스트 탐색기의 스크린샷](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>테스트 열 필터링, 정렬, 다시 정렬
 

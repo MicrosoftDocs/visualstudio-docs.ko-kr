@@ -1,5 +1,7 @@
 ---
 title: COM 디버깅 도구 | Microsoft Docs
+description: OLE/COM 개체 뷰어와 같은 COM 프로그램을 테스트하고 검사하는 데 사용할 수 있는 디버깅 도구에 대한 설명을 가져옵니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3c0961d541aaac1f2fd81fee7a0a8e06583dd
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 216d820e455ad9902f19fe3c48caa927b21a2f0f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600170"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728991"
 ---
 # <a name="com-debugging-tools"></a>COM 디버깅 도구
 

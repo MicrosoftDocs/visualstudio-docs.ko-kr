@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099247"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726620"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio에서 Python 코드의 리포지토리 복제
 
@@ -40,7 +40,7 @@ ms.locfileid: "92099247"
 
     ![팀 탐색기 창, 복제에서 새 프로젝트 만들기](media/create-project-repo/team-explorer-new-project.png)
 
-6. 나타나는 **새 프로젝트** 대화 상자에서 " **기존 Python 코드에서** "를 선택하고, 프로젝트에 대한 이름을 지정하고, **위치** 를 리포지토리와 같은 폴더로 설정하고, **확인** 을 선택합니다. 표시되는 마법사에서 **마침** 을 선택합니다.
+6. 나타나는 **새 프로젝트** 대화 상자에서 "**기존 Python 코드에서**"를 선택하고, 프로젝트에 대한 이름을 지정하고, **위치** 를 리포지토리와 같은 폴더로 설정하고, **확인** 을 선택합니다. 표시되는 마법사에서 **마침** 을 선택합니다.
 
 7. 메뉴에서 **보기 > 솔루션 탐색기** 를 선택합니다.
 
@@ -57,8 +57,8 @@ ms.locfileid: "92099247"
 
 11. TensorBoard를 사용하여 진행률을 시각화할 수 있습니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **TensorBoard 실행** 을 클릭한 다음 출력 TensorBoard 로그의 디렉터리를 선택합니다.
 
-   ![run tensorboard](media/create-project-repo/run-tensorboard.png)
+   ![MNIST 프로젝트가 선택되고 상황에 맞는 메뉴에서 TensorBoard 실행 옵션이 선택된 Visual Studio 솔루션 탐색기의 스크린샷](media/create-project-repo/run-tensorboard.png)
 
 12. 시간이 지나면 오류가 감소합니다. 즉, 성능이 개선됩니다.
 
-   ![run tensorboard](media/create-project-repo/tensorboard.png)
+   ![TensorBoard 로그의 데이터를 시각화하는 그래프 네 개가 표시된 주 TensorBoard 창의 스크린샷](media/create-project-repo/tensorboard.png)

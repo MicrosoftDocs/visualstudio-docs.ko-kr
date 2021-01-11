@@ -1,5 +1,7 @@
 ---
 title: 네이티브 코드 디버깅 | Microsoft Docs
+description: Visual Studio 네이티브 애플리케이션의 일반적인 디버깅 문제와 높은 수준의 기술에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738163"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728319"
 ---
 # <a name="debugging-native-code"></a>네이티브 코드 디버깅
 이 단원에서는 네이티브 애플리케이션의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용하는 방법은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.

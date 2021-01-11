@@ -1,5 +1,6 @@
 ---
 title: 잘못 동작하는 다중 스레드 앱의 일반 패턴
+description: Visual Studio 동시성 시각화 도우미 도구에 포함된 잘못 동작하는 다중 스레드 애플리케이션의 일반적인 패턴에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808944"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815791"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
 
@@ -37,17 +38,17 @@ ms.locfileid: "90808944"
 
 ## <a name="uneven-workload-distribution"></a>균등하지 않은 작업 부하 분산
 
-![균등하지 않은 작업](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![동시성 시각화 도우미의 병렬 스레드에 대한 워크로드 그래프의 스크린샷 스레드는 서로 다른 시간에 종료되어 계단 단계 패턴을 보여 줍니다.](../profiling/media/unevenworkload_1.png)
 
 위의 그림처럼 애플리케이션에서 여러 병렬 스레드 간에 균등하지 않은 작업 분산이 발생하면 각 스레드가 작업을 완료할 때 일반적인 계단 단계 패턴이 나타납니다. 동시성 시각화 도우미는 대개 각 동시 스레드에 대해 근접한 시작 시간을 보여줍니다. 그러나 이러한 스레드는 동시에 종료하는 대신 일반적으로 불균등하게 종료됩니다. 이 패턴은 병렬 스레드의 그룹 간에 불균등한 작업 분산을 나타내며, 이로 인해 성능이 저하될 수 있습니다. 이러한 문제를 해결하기 위해서는 병렬 스레드 간에 작업을 나누는 알고리즘을 다시 평가하는 것이 좋습니다.
 
 다음 그림과 같이 동시성 시각화 도우미는 CPU 사용률 뷰에 이 증상을 CPU 사용률의 점진적인 단계별 감소로 표시할 수 있습니다.
 
-![균등하지 않은 작업](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![CPU 사용률 그래프 끝에 계단 단계 패턴이 표시된 동시성 시각화 도우미의 CPU 사용률 뷰 스크린샷](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>초과 구독
 
-![초과 구독](../profiling/media/oversubscription.png "초과 구독")
+![동시성 시각화 도우미의 모든 활성 스레드에 대한 워크로드 그래프의 스크린샷 범례에는 실행 및 선점에 소요된 시간이 표시됩니다.](../profiling/media/oversubscription.png)
 
 초과 구독이 발생하는 경우 프로세스의 활성 스레드 수가 시스템에서 사용 가능한 논리 코어의 수보다 큽니다. 위의 그림에서는 모든 활성 스레드의 상당한 선점 밴드와 함께 초과 구독의 결과를 보여 줍니다. 또한 범례를 보면 상당한 시간이 선점에 소요된 것(이 예제의 84%)을 알 수 있습니다. 이는 프로세스에서 논리 코어 수보다 더 많은 동시 스레드를 실행하도록 시스템에 요청하는 것을 나타냅니다. 그러나 시스템의 다른 프로세스가 이 프로세스에 사용 가능한 것으로 간주된 리소스를 사용하는 것을 나타낼 수도 있습니다.
 

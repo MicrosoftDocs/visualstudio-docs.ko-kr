@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050831"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761357"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio 또는 Visual Studio 설치 관리자로 문제를 보고하는 방법
 
@@ -24,8 +24,9 @@ ms.locfileid: "97050831"
 Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있습니다. 기본 제공되는 피드백 도구를 사용하면 Visual Studio 팀이 문제를 진단하고 해결하는 데 도움이 되는 진단 정보를 쉽게 추가할 수 있습니다. 문제를 보고하는 단계는 다음과 같습니다.
 
 1. **Visual Studio에서** 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다. 또한 **도움말** > **피드백 보내기** > **문제 보고** 메뉴에서 피드백 도구에 액세스할 수 있습니다.
-![Visual Studio 개발자 커뮤니티의 문제 보고 팝업](media/feedback-button.png) 또는 Visual Studio를 설치할 수 없거나 Visual Studio 내의 피드백 도구에 액세스할 수 없는 경우 **Visual Studio 설치 관리자** 에서 문제를 보고합니다.  설치 관리자에서 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다.
-![Visual Studio 개발자 커뮤니티의 문제 보고 팝업](media/installer.png)
+![Visual Studio 창의 오른쪽 위에 선택된 피드백 아이콘과 상황에 맞는 메뉴에서 선택된 문제 보고를 보여 주는 스크린샷](media/feedback-button.png)
+또는 Visual Studio를 설치할 수 없거나 Visual Studio 내의 피드백 도구에 액세스할 수 없는 경우 **Visual Studio 설치 관리자** 에서 문제를 신고합니다.  설치 관리자에서 오른쪽 위에 있는 피드백 아이콘을 선택하고 [문제 보고]를 선택합니다.
+![Visual Studio 설치 관리자의 오른쪽 위에 선택된 피드백 아이콘과 상황에 맞는 메뉴에서 선택된 문제 보고를 보여 주는 스크린샷](media/installer.png)
 
 1. **문제 신고** 를 클릭하면 기본 브라우저가 열리고 Visual Studio에 로그인하는 데 사용하는 것과 동일한 계정으로 로그인됩니다.
 
@@ -67,11 +68,11 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
 1. 전자 메일에 있는 문제 신고 링크를 따르거나 홈페이지로 이동하여 **추가 정보 필요** 상태의 모든 보고를 확인합니다.
 
-    ![내 피드백](../ide/media/feedback-my-feedback.png)
+    ![Visual Studio 피드백 창의 홈페이지 스크린샷 하나의 피드백 항목이 나열되고 “추가 정보 필요” 레이블이 빨간색으로 표시되어 있습니다.](../ide/media/feedback-my-feedback.png)
 
 1. 문제 신고에서 추가 정보 제공 링크를 선택하면 새 화면으로 이동합니다. 여기에서 요청된 정보를 확인할 수 있습니다.
 
-   ![내 피드백](../ide/media/feedback-need-more-info.png)
+   ![문제 해결을 위해 Microsoft에서 요청하는 정보가 표시된 Visual Studio 피드백 창의 스크린샷](../ide/media/feedback-need-more-info.png)
 
 1. 주석, 첨부 파일 또는 기록 단계를 추가하여 자세한 정보를 제공할 수 있습니다. 이 환경은 문제에 투표하는 경우 새 문제 보고하거나 추가 정보를 제공하는 작업과 비슷합니다.
 
@@ -81,9 +82,9 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>솔루션 검색 또는 피드백 제공
 
-문제를 보고하는 데 Visual Studio를 사용하지 않으려고 하거나 사용할 수 없는 경우에는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/) 페이지에 이미 문제가 보고되고 솔루션이 게시되었을 수 있습니다.
+문제를 보고하는 데 Visual Studio를 사용하지 않으려고 하거나 사용할 수 없는 경우에는 [Visual Studio 개발자 커뮤니티](https://developercommunity2.visualstudio.com/search?space=8) 페이지에 이미 문제가 보고되고 솔루션이 게시되었을 수 있습니다.
 
-신고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) 페이지를 참조하세요.
+신고할 문제가 없지만 기능을 제안하려는 경우 따로 위치가 정해져 있습니다. 자세한 내용은 [기능 제안](https://aka.ms/feedback/suggest?space=8) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참조
 
@@ -91,5 +92,5 @@ Visual Studio 또는 해당 설치 관리자에서 문제를 신고할 수 있�
 * [Visual Studio 피드백 옵션](../ide/feedback-options.md)
 * [Mac용 Visual Studio의 문제 보고](/visualstudio/mac/report-a-problem)
 * [C++를 사용하여 문제 보고](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)
+* [Visual Studio 개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8)
 * [개발자 커뮤니티 데이터 개인 정보](developer-community-privacy.md)

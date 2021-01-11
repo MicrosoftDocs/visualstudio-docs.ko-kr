@@ -1,23 +1,23 @@
 ---
 title: Visual Studio Container Tools 빌드 속성
 author: ghogen
-description: 컨테이너 도구 빌드 프로세스 개요
+description: 컨테이너 도구 빌드 속성을 편집하여 Visual Studio에서 컨테이너 프로젝트를 빌드하고 실행하는 방법을 사용자 지정하는 방법을 알아봅니다.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283205"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846742"
 ---
 # <a name="container-tools-build-properties"></a>컨테이너 도구 빌드 속성
 
 MSBuild에서 프로젝트를 빌드하는 데 사용하는 속성을 설정하여 Visual Studio에서 컨테이너 프로젝트를 빌드하는 방식을 사용자 지정할 수 있습니다. 예를 들어 Dockerfile의 이름을 변경하고, 이미지의 태그 및 레이블을 지정하고, Docker 명령에 전달되는 추가 인수를 제공하고, Visual Studio에서 컨테이너 환경 외부 빌드와 같은 특정 성능 최적화를 수행할지 여부를 제어할 수 있습니다. 시작할 실행 파일의 이름, 제공할 명령줄 인수와 같은 디버깅 속성을 설정할 수도 있습니다.
 
-속성의 값을 설정하려면 프로젝트 파일을 편집합니다. 예를 들어 Dockerfile의 이름이 *MyDockerfile*이라고 가정해 봅시다. 프로젝트 파일에서 `DockerfileFile` 속성을 다음과 같이 설정할 수 있습니다.
+속성의 값을 설정하려면 프로젝트 파일을 편집합니다. 예를 들어 Dockerfile의 이름이 *MyDockerfile* 이라고 가정해 봅시다. 프로젝트 파일에서 `DockerfileFile` 속성을 다음과 같이 설정할 수 있습니다.
 
 ```xml
 <PropertyGroup>
@@ -31,7 +31,7 @@ MSBuild에서 프로젝트를 빌드하는 데 사용하는 속성을 설정하�
 
 | 속성 이름 | 설명 | 기본값  | NuGet 패키지 버전|
 |---------------|-------------|----------------|----------------------|
-| ContainerDevelopmentMode | “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast**와 **Regular**입니다. | Fast |1.0.1872750 이상|
+| ContainerDevelopmentMode | “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast** 와 **Regular** 입니다. | Fast |1.0.1872750 이상|
 | ContainerVsDbgPath | VSDBG 디버거의 경로입니다. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 이상|
 | DockerDebuggeeArguments | 디버그 시, 이 인수를 시작된 실행 파일에 전달하도록 디버거에 지시합니다. | ASP.NET .NET Framework 프로젝트에는 사용할 수 없습니다. |1.7.8 이상|
 | DockerDebuggeeProgram | 디버그 시, 실행 파일을 시작하도록 디버거에 지시합니다. | .NET Core 프로젝트의 경우: dotnet, ASP.NET .NET Framework 프로젝트의 경우: 사용할 수 없습니다(IIS는 항상 사용됨). |1.7.8 이상|
@@ -39,7 +39,7 @@ MSBuild에서 프로젝트를 빌드하는 데 사용하는 속성을 설정하�
 | DockerDebuggeeWorkingDirectory | 디버그 시, 이 경로를 작업 디렉터리로 사용하도록 디버거에 지시합니다. | C:\app(Windows) 또는 /app(Linux) |1.7.8 이상|
 | DockerDefaultTargetOS | Docker 이미지를 빌드할 때 사용되는 기본 대상 운영 체제입니다. | Visual Studio에서 설정됩니다. |1.0.1985401 이상|
 | DockerImageLabels | Docker 이미지에 적용되는 기본 레이블 집합입니다. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 이상|
-| DockerFastModeProjectMountDirectory|**고속 모드**에서 이 속성은 프로젝트 출력 디렉터리가 실행 중인 컨테이너에 대량 탑재되는 위치를 제어합니다.|C:\app(Windows) 또는 /app(Linux)|1.9.2 이상|
+| DockerFastModeProjectMountDirectory|**고속 모드** 에서 이 속성은 프로젝트 출력 디렉터리가 실행 중인 컨테이너에 대량 탑재되는 위치를 제어합니다.|C:\app(Windows) 또는 /app(Linux)|1.9.2 이상|
 | DockerfileBuildArguments | [Docker build](https://docs.docker.com/engine/reference/commandline/build/) 명령에 전달되는 추가 인수입니다. | 해당 사항 없음. |1.0.1872750 이상|
 | DockerfileContext | Docker 이미지를 빌드할 때 사용되는 기본 컨텍스트로, Dockerfile에 대한 상대적인 경로입니다. | Visual Studio에서 설정됩니다. |1.0.1872750 이상|
 | DockerfileFastModeStage | 디버그 모드로 이미지를 빌드할 때 사용되는 Dockerfile 스테이지(즉, 대상)입니다. | Dockerfile에 있는 첫 번째 스테이지(base) |

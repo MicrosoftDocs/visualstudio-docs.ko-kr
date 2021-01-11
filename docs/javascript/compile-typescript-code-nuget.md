@@ -1,6 +1,6 @@
 ---
 title: NuGet을 사용하여 TypeScript 코드 컴파일 및 빌드
-description: Visual Studio에서 TypeScript를 컴파일하고 빌드하는 방법을 알아봅니다.
+description: NuGet 패키지를 사용하여 Visual Studio 프로젝트에 Typescript 지원을 추가하는 방법을 알아봅니다.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927928"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846831"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>TypeScript 코드 컴파일(ASP.NET Core)
 
@@ -77,7 +77,7 @@ Visual Studio가 설치된 경우 Visual Studio에서 번들로 포함된 node.e
 
 ### <a name="build-the-application"></a>애플리케이션 빌드
 
-1. TypeScript( *.ts* ) 또는 TypeScript JSX( *.tsx* ) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
+1. TypeScript( *.ts*) 또는 TypeScript JSX( *.tsx*) 파일을 프로젝트에 추가한 다음 TypeScript 코드를 추가합니다. 간단한 TypeScript 예제를 보려면 다음을 사용합니다.
 
    ```typescript
    let message: string = 'Hello World';

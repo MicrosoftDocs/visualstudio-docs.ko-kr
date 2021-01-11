@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801674"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761279"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>빠른 시작: 폴더에서 Python 코드 열기 및 실행
 
@@ -27,15 +27,15 @@ ms.locfileid: "88801674"
 
 1. 이 연습에서는 원하는 Python 코드가 있는 폴더를 사용할 수 있습니다. 여기에 나와 있는 예제를 계속 진행하려면 적합한 폴더에서 `git clone https://github.com/gregmalcolm/python_koans` 명령을 사용하여 gregmalcolm/python_koans GitHub 리포지토리를 컴퓨터에 복제하세요.
 
-1. Visual Studio 2019를 시작하고 시작 창에서 **시작** 열 아래에 있는 **열기**를 선택합니다. 또는 이미 Visual Studio를 실행하고 있는 경우 **파일** > **열기** > **폴더** 명령을 선택합니다.
+1. Visual Studio 2019를 시작하고 시작 창에서 **시작** 열 아래에 있는 **열기** 를 선택합니다. 또는 이미 Visual Studio를 실행하고 있는 경우 **파일** > **열기** > **폴더** 명령을 선택합니다.
 
     ![Visual Studio 시작 화면](media/quickstart-open-folder/01-open-local-folder.png)
 
-1. Python 코드가 있는 폴더로 이동하여 **폴더 선택**을 선택합니다. python_koans 코드를 사용하고 있는 경우 클론 폴더 내에서 `python3` 폴더를 선택해야 합니다.
+1. Python 코드가 있는 폴더로 이동하여 **폴더 선택** 을 선택합니다. python_koans 코드를 사용하고 있는 경우 클론 폴더 내에서 `python3` 폴더를 선택해야 합니다.
 
     ![폴더 열기 명령의 폴더 선택 대화 상자](media/quickstart-open-folder/02-select-folder.png)
 
-1. Visual Studio는 **폴더 뷰**라는 **솔루션 탐색기**에 폴더를 표시합니다. 폴더 이름 왼쪽 가장자리에 있는 화살표를 사용하여 폴더를 확장 및 축소할 수 있습니다.
+1. Visual Studio는 **폴더 뷰** 라는 **솔루션 탐색기** 에 폴더를 표시합니다. 폴더 이름 왼쪽 가장자리에 있는 화살표를 사용하여 폴더를 확장 및 축소할 수 있습니다.
 
     ![솔루션 탐색기에서 폴더를 확장 및 축소하는 컨트롤](media/quickstart-open-folder/03-expand-collapse-folders.png)
 
@@ -43,14 +43,14 @@ ms.locfileid: "88801674"
 
     ![솔루션 탐색기의 숨겨진 폴더 뷰](media/quickstart-open-folder/05-view-hidden-folders.png)
 
-1. 코드를 실행하려면 먼저 시작 또는 기본 프로그램 파일을 파악해야 합니다. 여기에 표시된 예제에서는 시작 파일 *contemplate-koans.py*입니다. 해당 파일을 마우스 오른쪽 단추로 클릭하고 **시작 항목으로 설정**을 선택합니다.
+1. 코드를 실행하려면 먼저 시작 또는 기본 프로그램 파일을 파악해야 합니다. 여기에 표시된 예제에서는 시작 파일 *contemplate-koans.py* 입니다. 해당 파일을 마우스 오른쪽 단추로 클릭하고 **시작 항목으로 설정** 을 선택합니다.
 
     ![솔루션 탐색기에서 시작 항목 설정](media/quickstart-open-folder/06-set-as-startup-item-command.png)
 
     > [!Important]
     > 열린 폴더의 루트에 시작 항목이 없는 경우에도 [작업 디렉터리 설정](#set-a-working-directory) 섹션에 설명된 대로 실행 구성 JSON 파일에 줄을 추가해야 합니다.
 
-1. **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅 없이 시작**을 선택하여 코드를 실행합니다. Visual Studio 디버거에서 코드를 실행하는 시작 항목을 재생 단추와 함께 표시하는 도구 모음 단추를 선택할 수도 있습니다. 모든 경우에서 Visual Studio가 시작 항목이 Python 파일임을 감지하므로 자동으로 기본 Python 환경에서 코드를 실행합니다. (해당 환경은 도구 모음의 시작 항목 오른쪽에 표시됩니다.)
+1. **Ctrl**+**F5** 를 누르거나 **디버그** > **디버깅 없이 시작** 을 선택하여 코드를 실행합니다. Visual Studio 디버거에서 코드를 실행하는 시작 항목을 재생 단추와 함께 표시하는 도구 모음 단추를 선택할 수도 있습니다. 모든 경우에서 Visual Studio가 시작 항목이 Python 파일임을 감지하므로 자동으로 기본 Python 환경에서 코드를 실행합니다. (해당 환경은 도구 모음의 시작 항목 오른쪽에 표시됩니다.)
 
     ![디버거 시작 도구 모음 단추](media/quickstart-open-folder/07-start-debug-toolbar.png)
 
@@ -64,20 +64,20 @@ ms.locfileid: "88801674"
 
 ## <a name="set-a-working-directory"></a>작업 디렉터리 설정
 
-기본적으로 Visual Studio는 해당 폴더의 루트에 폴더로 열린 Python 프로젝트를 실행합니다. 하지만 프로젝트의 코드는 Python이 하위 폴더에서 실행되고 있다고 가정할 수 있습니다. 예를 들어 python_koans 리포지토리의 루트 폴더를 열고 *python3/contemplate-koans.py* 파일을 시작 항목으로 설정한다고 가정해보겠습니다. 그런 다음, 코드를 실행하면 *koans.txt* 파일을 찾을 수 없다는 오류가 표시됩니다. 이 오류는 *contemplate-koans.py*에서 Python이 리포지토리 루트가 아닌 *python3* 폴더에서 실행되고 있다고 가정하기 때문에 발생합니다.
+기본적으로 Visual Studio는 해당 폴더의 루트에 폴더로 열린 Python 프로젝트를 실행합니다. 하지만 프로젝트의 코드는 Python이 하위 폴더에서 실행되고 있다고 가정할 수 있습니다. 예를 들어 python_koans 리포지토리의 루트 폴더를 열고 *python3/contemplate-koans.py* 파일을 시작 항목으로 설정한다고 가정해보겠습니다. 그런 다음, 코드를 실행하면 *koans.txt* 파일을 찾을 수 없다는 오류가 표시됩니다. 이 오류는 *contemplate-koans.py* 에서 Python이 리포지토리 루트가 아닌 *python3* 폴더에서 실행되고 있다고 가정하기 때문에 발생합니다.
 
 이런 경우도 시작 구성 JSON 파일에 줄을 추가하여 작업 디렉터리를 지정해야 합니다.
 
-1. **솔루션 탐색기**에서 Python( *.py*) 시작 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다.
+1. **솔루션 탐색기** 에서 Python( *.py*) 시작 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정** 을 선택합니다.
 
-    ![Python 파일의 디버그 및 시작 설정 명령](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![contemplate-koans.py 파일이 선택되고 상황에 맞는 메뉴에서 디버그 및 시작 설정이 선택된 솔루션 탐색기 폴더 뷰의 스크린샷](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
-1. 표시되는 **디버거 선택** 대화 상자에서 **기본값**, **선택**을 차례로 누릅니다.
+1. 표시되는 **디버거 선택** 대화 상자에서 **기본값**, **선택** 을 차례로 누릅니다.
 
-    ![Python 파일의 디버그 및 시작 설정 명령](media/quickstart-open-folder/10-select-debugger.png)
+    ![기본 디버거가 선택되고 선택 단추가 선택된 디버거 선택 대화 상자의 스크린샷](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > 선택 항목으로 **기본값**이 표시되지 않는 경우 **디버그 및 시작 설정** 명령을 선택할 때 Python *.py* 파일을 선택했는지 확인하세요. Visual Studio는 파일 형식을 사용하여 표시할 디버거 옵션을 결정합니다.
+    > 선택 항목으로 **기본값** 이 표시되지 않는 경우 **디버그 및 시작 설정** 명령을 선택할 때 Python *.py* 파일을 선택했는지 확인하세요. Visual Studio는 파일 형식을 사용하여 표시할 디버거 옵션을 결정합니다.
 
 1. Visual Studio는 숨겨진 *.vs* 폴더에 있는 *launch.vs.json* 파일을 엽니다. 이 파일은 프로젝트의 디버깅 컨텍스트를 설명합니다. 작업 디렉터리를 지정하려면 python-koans 예제의 `"workingDirectory": "python3"`와 같이 `"workingDirectory"`에 대한 값을 추가하세요.
 

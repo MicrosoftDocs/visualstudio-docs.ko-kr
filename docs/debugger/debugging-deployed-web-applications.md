@@ -1,5 +1,7 @@
 ---
 title: 배포된 ASP.NET 애플리케이션 디버그 | Microsoft Docs
+description: Visual Studio를 통해 작업자 프로세스에 연결하고 디버거에서 애플리케이션에 대한 기호에 액세스할 수 있는지 확인하여 배포된 ASP.NET 애플리케이션을 디버그합니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2018
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8c99f1988ef1aa2e14c7b0a4d6ed46e10f6f1e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350552"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727049"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>배포된 ASP.NET 애플리케이션 디버그
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 사용하여 배포된 애플리케이션을 디버깅하려면 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스에 연결하고 디버거에서 해당 애플리케이션에 대한 기호에 액세스할 수 있는지 확인해야 합니다. 또한 해당 애플리케이션의 소스 파일도 찾아서 열어야 합니다. 자세한 내용은 [기호 파일(.pdb) 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [방법: ASP.NET 프로세스의 이름 찾기](../debugger/how-to-find-the-name-of-the-aspnet-process.md) 및 [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)을 참조하세요.

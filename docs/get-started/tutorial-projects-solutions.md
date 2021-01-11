@@ -12,14 +12,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903938"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727517"
 ---
-# <a name="learn-about-projects-and-solutions"></a>프로젝트 및 솔루션에 대한 자세한 정보
+# <a name="introduction-to-projects-and-solutions"></a>프로젝트 및 솔루션 소개
 
 이 소개 아티클에서는 Visual Studio에서 *솔루션* 및 *프로젝트* 만들기를 살펴봅니다. 솔루션은 하나 이상의 관련된 코드 프로젝트를 구성하는 데 사용되는 컨테이너입니다(예: 클래스 라이브러리 프로젝트 및 해당 테스트 프로젝트). 프로젝트의 속성 및 포함될 수 있는 일부 파일을 살펴봅니다. 또한 하나의 프로젝트에서 다른 프로젝트에 대한 참조를 만듭니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "94903938"
 
 ::: moniker range="vs-2017"
 
-1. **솔루션 탐색기** 의 **솔루션 'QuickSolution'** 을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
+1. **솔루션 탐색기** 에서 **‘QuickSolution’ 솔루션** 의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **새 프로젝트** 를 선택합니다.
 
    **새 프로젝트 추가** 대화 상자가 열립니다.
 
@@ -106,13 +106,13 @@ ms.locfileid: "94903938"
 
 ::: moniker range=">=vs-2019"
 
-1. **솔루션 탐색기** 의 **솔루션 'QuickSolution'** 을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
+1. **솔루션 탐색기** 에서 **‘QuickSolution’ 솔루션** 의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **새 프로젝트** 를 선택합니다.
 
    **새 프로젝트 추가** 라고 표시된 대화 상자가 열립니다.
 
 1. 상단의 검색 상자에 **empty** 라는 텍스트를 입력한 다음 **언어** 아래에서 **C#** 을 선택합니다.
 
-1. **빈 프로젝트(.NET Framework)** 템플릿을 선택한 후에 **다음** 을 선택합니다.
+1. **빈 프로젝트(.NET Framework)** 템플릿을 선택하고 **다음** 을 선택합니다.
 
 1. 프로젝트 이름을 **QuickDate** 로 지정한 다음, **만들기** 를 선택합니다.
 
@@ -131,7 +131,7 @@ ms.locfileid: "94903938"
 
 빈 프로젝트가 있습니다. 코드 파일을 추가하겠습니다.
 
-1. **솔루션 탐색기** 의 **QuickDate** 프로젝트를 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **추가** > **새 항목** 을 선택합니다.
+1. **솔루션 탐색기** 에서 **QuickDate** 프로젝트의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **새 항목** 을 선택합니다.
 
    **새 항목 추가** 대화 상자가 열립니다.
 
@@ -171,7 +171,7 @@ ms.locfileid: "94903938"
 
 솔루션에 단위 테스트 프로젝트를 추가해 보겠습니다. 이번에는 프로젝트에 추가 코드 파일을 추가하지 않아도 되도록 프로젝트 템플릿으로 시작하겠습니다.
 
-1. **솔루션 탐색기** 의 **솔루션 'QuickSolution'** 을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
+1. **솔루션 탐색기** 에서 **‘QuickSolution’ 솔루션** 의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가**  >  **새 프로젝트** 를 선택합니다.
 
 ::: moniker range="vs-2017"
 
@@ -187,7 +187,7 @@ ms.locfileid: "94903938"
 
 2. **새 프로젝트 추가** 대화 상자에서 **단위 테스트** 라는 텍스트를 상단의 검색 상자에 입력한 다음 **언어** 아래의 **C#** 을 선택합니다.
 
-3. **MSTest 테스트 프로젝트(.NET Core)** 프로젝트 템플릿을 선택한 다음 **다음** 을 선택합니다.
+3. **MSTest 테스트 프로젝트(.NET Core)** 프로젝트 템플릿을 선택하고 **다음** 을 선택합니다.
 
 4. 프로젝트 이름을 **QuickTest** 로 지정한 다음, **만들기** 를 선택합니다.
 
@@ -201,15 +201,33 @@ ms.locfileid: "94903938"
 
 해당 프로젝트에 대한 참조를 추가하기 위해 새 단위 테스트 프로젝트를 사용하여 **QuickDate** 프로젝트에서 이 메서드를 테스트하려고 합니다. 그러면 두 개의 프로젝트 간에 *빌드 종속성* 을 만듭니다. 즉, 솔루션을 빌드할 때 **QuickTest** 전에 **QuickDate** 가 빌드됩니다.
 
-1. **QuickTest** 프로젝트에서 **종속성** 노드를 선택하고 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **참조 추가** 를 선택합니다.
+::: moniker range="vs-2017"
+
+1. **QuickTest** 프로젝트에서 **종속성** 노드를 선택하고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **참조 추가** 를 선택합니다.
 
    **참조 관리자** 대화 상자가 열립니다.
 
-1. 왼쪽 창에서 **프로젝트** 를 확장하고 **솔루션** 을 선택합니다. 가운데 창에서 **QuickDate** 옆에 있는 확인란을 선택한 후 **확인** 을 선택합니다.
+1. 왼쪽 창에서 **프로젝트** 를 확장하고 **솔루션** 을 선택합니다. 가운데 창에서 **QuickDate** 옆에 있는 확인란을 선택하고 **확인** 을 선택합니다.
 
    **QuickDate** 프로젝트에 대한 참조가 추가됩니다.
 
-   ![프로젝트 참조를 보여주는 Visual Studio 2019 솔루션 탐색기](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Visual Studio에서 프로젝트 참조를 보여 주는 솔루션 탐색기.")
+   ![Visual Studio에서 프로젝트 참조를 보여 주는 솔루션 탐색기의 스크린샷](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Visual Studio에서 프로젝트 참조를 보여 주는 솔루션 탐색기의 스크린샷")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. **QuickTest** 프로젝트에서 **종속성** 노드를 선택하고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **프로젝트 참조 추가...** 를 선택합니다.
+
+   **참조 관리자** 대화 상자가 열립니다.
+
+1. 왼쪽 창에서 **프로젝트** 를 확장하고 **솔루션** 을 선택합니다. 가운데 창에서 **QuickDate** 옆에 있는 확인란을 선택하고 **확인** 을 선택합니다.
+
+   **QuickDate** 프로젝트에 대한 참조가 추가됩니다.
+
+   ![Visual Studio 2019에서 프로젝트 참조를 보여 주는 솔루션 탐색기의 스크린샷](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+
+::: moniker-end
 
 ## <a name="add-test-code"></a>테스트 코드 추가
 
@@ -261,7 +279,17 @@ ms.locfileid: "94903938"
 
 ## <a name="next-steps"></a>다음 단계
 
+::: moniker range="vs-2017"
+
 단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **실행** > **모든 테스트** 를 선택합니다. **테스트 탐색기** 라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **모든 테스트 실행** 을 선택합니다. **테스트 탐색기** 라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
+
+::: moniker-end
 
 ![통과한 테스트를 보여주는 Visual Studio의 텍스트 탐색기](media/tutorial-projects-test-explorer.png "통과한 테스트를 보여 주는 Visual Studio의 테스트 탐색기.")
 
@@ -281,7 +309,7 @@ ms.locfileid: "94903938"
 
 ## <a name="see-also"></a>추가 정보
 
-- [프로젝트 및 솔루션 만들기](../ide/creating-solutions-and-projects.md)
+- [프로젝트 및 솔루션 작업](../ide/creating-solutions-and-projects.md)
 - [프로젝트 및 솔루션 속성 관리](../ide/managing-project-and-solution-properties.md)
 - [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)
 - [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

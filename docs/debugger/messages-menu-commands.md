@@ -1,5 +1,7 @@
 ---
 title: 메시지 메뉴 명령 | Microsoft Docs
+description: 메시지 메뉴에서 사용할 수 있는 명령 목록과 각 명령에 대한 간략한 설명을 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13afea6033138fcca2542821893bce5a06826b53
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845892"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903209"
 ---
 # <a name="messages-menu-commands"></a>메시지 메뉴 명령
 **메시지** 메뉴에는 메시지 뷰를 제어하는 명령이 있습니다.

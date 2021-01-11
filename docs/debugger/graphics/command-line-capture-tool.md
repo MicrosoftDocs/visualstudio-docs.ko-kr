@@ -1,5 +1,7 @@
 ---
 title: 명령줄 캡처 도구 | Microsoft Docs
+description: 모든 기능 수준에서 Direct3D 10 - Direct3D 12를 지원하는 그래픽 진단 캡처 및 재생을 위한 명령줄 도구인 DXCap.exe에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64808463"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727879"
 ---
 # <a name="command-line-capture-tool"></a>명령줄 캡처 도구
 DXCap.exe는 그래픽 진단 캡처 및 재생을 위한 명령줄 도구로, 모든 기능 수준에서 Direct3D 10 - Direct3D 12를 지원합니다.
@@ -225,7 +227,7 @@ DXCap.exe -p BasicHLSL11.vsglog -screenshot -frame 5, 7-9
 DXCap.exe -p regression_test_12.vsglog -toXML
 ```
 
- 기본적으로 XML 출력은 그래픽 로그와 이름이 같은 파일에 기록되지만 확장명이 .xml로 지정됩니다. 위 예제에서 XML 파일의 이름은 **regression_test_12.xml**입니다. XML 파일에 다른 이름을 지정하려면 `-toXML` 뒤에 원하는 이름을 지정합니다.
+ 기본적으로 XML 출력은 그래픽 로그와 이름이 같은 파일에 기록되지만 확장명이 .xml로 지정됩니다. 위 예제에서 XML 파일의 이름은 **regression_test_12.xml** 입니다. XML 파일에 다른 이름을 지정하려면 `-toXML` 뒤에 원하는 이름을 지정합니다.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -toXML temp.xml

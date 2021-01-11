@@ -1,5 +1,7 @@
 ---
 title: LINQ 디버그 | Microsoft Docs
+description: Visual Studio에서 LINQ(언어 통합 쿼리)를 디버그합니다. LINQ 결과를 봅니다. LINQ 코드를 한 단계씩 실행할 때 동작 차이점을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509772"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728371"
 ---
 # <a name="debugging-linq"></a>LINQ 디버깅
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]는 몇 가지 제한 사항이 있긴 하지만 LINQ(Language-Integrated Query) 코드의 디버깅을 지원합니다. 단계별 실행, 중단점 설정 및 디버거 창에서 결과 보기와 같은 대부분의 디버깅 기능이 LINQ 문에서 작동합니다. 이 항목에서는 LINQ 디버깅의 주요 제한 사항에 대해 설명합니다.

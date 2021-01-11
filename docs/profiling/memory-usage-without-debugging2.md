@@ -1,5 +1,6 @@
 ---
 title: 성능 프로파일러의 메모리 사용량 분석
+description: Visual Studio 성능 프로파일러에서 디버거 없이 메모리 사용량 도구를 사용하여 앱의 메모리 사용을 모니터링하는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918229"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815817"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 메모리 사용량 분석
 
@@ -34,7 +35,7 @@ ms.locfileid: "92918229"
 
    메모리 사용량 도구는 .NET, ASP.NET, C++ 또는 혼합 모드(.NET 및 네이티브) 앱을 지원합니다.
 
-1. 디버그 메뉴에서 솔루션 구성을 **릴리스** 로 설정하고 **로컬 Windows 디버거** (또는 **로컬 머신** )를 배포 대상으로 선택합니다.
+1. 디버그 메뉴에서 솔루션 구성을 **릴리스** 로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
 1. 메뉴 모음에서 **디버그** > **성능 프로파일러** 를 선택합니다.
 
@@ -46,7 +47,7 @@ ms.locfileid: "92918229"
 
 진단 세션을 시작하면 앱이 시작되고 **진단 도구** 창에 앱의 메모리 사용에 대한 타임라인 그래프가 표시됩니다.
 
-![메모리 사용량 개요 페이지](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![앱의 메모리 사용을 타임라인 그래프로 보여 주는 Visual Studio 성능 프로파일러의 진단 도구 창 스크린샷](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 타임라인 그래프는 앱 실행 시 메모리 변동을 보여줍니다. 그래프에 스파이크는 일반적으로 일부 코드에서 데이터를 수집하거나 생성한 다음, 처리가 완료되면 삭제함을 나타냅니다. 큰 스파이크는 최적화할 수 있는 영역을 나타냅니다. 비효율적인 메모리 사용량 또는 메모리 누수를 나타낼 수 있기 때문에 더욱 걱정스러운 점은 되돌릴 수 없는 메모리 사용량이 증가하는 문제입니다.
 
@@ -66,7 +67,7 @@ ms.locfileid: "92918229"
 
 데이터 수집을 중지하면 **메모리 사용량** 도구가 앱을 중지하고 **메모리 사용량** 개요 보고서를 표시합니다.
 
-![메모리 사용량 개요 페이지](../profiling/media/memuse__reportoverview1.png "메모리 사용량 개요 페이지")
+![메모리 사용량 그래프와 두 개의 스냅샷 창을 보여 주는 Visual Studio 성능 프로파일러의 메모리 사용량 도구에 있는 개요 페이지의 스크린샷](../profiling/media/memuse__reportoverview1.png "메모리 사용량 개요 페이지")
 
 ### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅샷
 
@@ -133,7 +134,7 @@ ms.locfileid: "92918229"
 |이름|설명|
 |-|-|
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|
-|**Count**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 **개수** 는 항상 1입니다.|
+|**개수**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 **개수** 는 항상 1입니다.|
 |**크기(바이트)**|유형의 경우 스냅샷에 있는 모든 유형 인스턴스의 크기가 인스턴스의 포함된 개체 크기보다 작습니다.<br /><br /> 인스턴스의 경우 개체의 크기가 인스턴스에 포함된 개체의 크기보다 작습니다. |
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
@@ -201,7 +202,7 @@ ms.locfileid: "92918229"
 
 ![차이 보고서에서 참조 형식](../profiling/media/memuse_snapshotdiff_referencedtypes.png "차이 보고서에서 참조 형식")
 
-스냅샷 차이 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **인스턴스** , **크기(바이트)** , **포함 크기(바이트)** 및 **모듈** 열이 있습니다.
+스냅샷 차이 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **인스턴스**, **크기(바이트)** , **포함 크기(바이트)** 및 **모듈** 열이 있습니다.
 
 |이름|설명|
 |-|-|
@@ -214,7 +215,7 @@ ms.locfileid: "92918229"
 |**포함 크기 차이(바이트)**|유형의 경우 개체의 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 모든 인스턴스 유형의 크기 차이입니다.|
 |**모듈**|개체를 포함하는 모듈입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [JavaScript 메모리](../profiling/javascript-memory.md)
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

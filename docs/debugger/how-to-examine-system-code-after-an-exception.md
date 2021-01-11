@@ -1,6 +1,7 @@
 ---
 title: 예외 발생 후 시스템 코드 검사 | Microsoft Docs
-ms.custom: seodec18
+description: 시스템 호출에서 코드를 검사하여 예외의 원인을 확인하는 방법을 알아봅니다. 이 프로시저는 시스템 코드에 대한 기호가 로드되지 않은 경우에도 적용됩니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349655"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903457"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>방법: 예외 발생 후 시스템 코드 검사
 예외가 발생하면 예외의 원인을 확인하기 위해 시스템 호출 내부 코드를 검사할 수 있습니다. 다음 절차에서는 시스템 코드에 대해 로드된 기호가 없거나 내 코드만을 사용하는 경우 이러한 작업을 수행하는 방법에 대해 설명합니다.
 
 ### <a name="to-examine-system-code-following-an-exception"></a>예외 발생 후 시스템 코드를 검사하려면
 
-1. **호출 스택** 창에서 마우스 오른쪽 단추를 클릭한 다음, **외부 코드 표시**를 클릭합니다.
+1. **호출 스택** 창에서 마우스 오른쪽 단추를 클릭한 다음, **외부 코드 표시** 를 클릭합니다.
 
      내 코드만을 사용하지 않는 경우에는 바로 가기 메뉴에서 이 옵션을 사용할 수 없으며 기본적으로 시스템 코드가 표시됩니다.
 
 2. **호출 스택** 창에 표시되는 외부 코드 프레임을 마우스 오른쪽 단추로 클릭합니다.
 
-3. **다음에서 기호 로드**를 가리킨 다음, **Microsoft 기호 서버**를 클릭합니다.
+3. **다음에서 기호 로드** 를 가리킨 다음, **Microsoft 기호 서버** 를 클릭합니다.
 
     1. 내 코드만을 사용하는 경우 내 코드만을 이제 사용하지 않는다는 대화 상자가 표시되는데 이는 시스템 호출을 한 단계씩 실행하는 데 필요한 조치입니다.
 

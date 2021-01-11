@@ -1,5 +1,7 @@
 ---
 title: 메뉴 명령 | Microsoft Docs
+description: Spy++ 메뉴 목록과 각 메뉴에 대한 추가 정보 링크를 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db2c4ebe4a6aa24e0df8f66442f6128ecee8d491
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931303"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97902975"
 ---
 # <a name="menu-commands"></a>메뉴 명령
 이 섹션의 도움말 항목에는 Spy++ 메뉴에서 사용할 수 있는 명령이 나와 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "62931303"
  [도움말 메뉴 명령](../debugger/help-menu-commands.md) **도움말** 메뉴에서 사용할 수 있는 각 명령을 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
- [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법을 설명합니다.
+ [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법에 대해 설명합니다.
 
  [Spy++ 뷰](../debugger/spy-increment-views.md) 창, 메시지, 프로세스 및 스레드의 Spy++ 트리 뷰에 대해 설명합니다.
 

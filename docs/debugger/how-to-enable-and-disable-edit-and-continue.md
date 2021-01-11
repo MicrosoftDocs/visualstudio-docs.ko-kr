@@ -1,6 +1,7 @@
 ---
 title: 편집하며 계속하기 설정/해제 | Microsoft Docs
-ms.custom: seodec18
+description: 디자인 타임에 Visual Studio 옵션에서 편집하며 계속하기를 사용하거나 사용하지 않도록 설정하는 방법을 알아봅니다. 편집하며 계속하기는 디버그 빌드에서만 작동합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,35 +27,35 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: ce531a0f7f9d6e26db38b5cf041f06d42209261a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851400"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903534"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>방법: 편집하며 계속하기 설정/해제(C#, VB, C++)
 
-**편집하며 계속하기**는 디자인 타임에 Visual Studio **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **편집하며 계속하기**는 디버그 빌드에서만 작동합니다. 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
+**편집하며 계속하기** 는 디자인 타임에 Visual Studio **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **편집하며 계속하기** 는 디버그 빌드에서만 작동합니다. 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
 
-네이티브 C++의 경우 **편집하며 계속하기**를 실행하려면 `/INCREMENTAL` 옵션을 사용해야 합니다. C++의 기능 요구 사항에 대한 자세한 내용은 이 [블로그 게시물](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) 및 [편집하며 계속하기(C++)](../debugger/edit-and-continue-visual-cpp.md)를 참조하세요.
+네이티브 C++의 경우 **편집하며 계속하기** 를 실행하려면 `/INCREMENTAL` 옵션을 사용해야 합니다. C++의 기능 요구 사항에 대한 자세한 내용은 이 [블로그 게시물](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/) 및 [편집하며 계속하기(C++)](../debugger/edit-and-continue-visual-cpp.md)를 참조하세요.
 
 **편집하며 계속하기를 사용하거나 사용하지 않도록 설정하려면:**
 
 1. 디버그 세션을 진행 중인 경우 디버깅을 중지합니다(**디버그** > **디버깅 중지** 또는 **Shift**+**F5**).
 
-1. **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반**에서 오른쪽 창의 **편집하며 계속하기**를 선택합니다.
+1. **도구** > **옵션**(또는 **디버그** > **옵션**) > **디버깅** > **일반** 에서 오른쪽 창의 **편집하며 계속하기** 를 선택합니다.
 
     > [!NOTE]
     > IntelliTrace를 사용하도록 설정되어 있고 IntelliTrace 이벤트 및 호출 정보를 모두 수집하는 경우 편집하며 계속하기를 사용하지 않도록 설정됩니다. 자세한 내용은 [IntelliTrace](../debugger/intellitrace.md)를 참조하세요.
 
-1. C++ 코드의 경우 **네이티브 편집하며 계속하기 사용**이 선택되었는지 확인하고 다음과 같은 추가 옵션을 설정합니다.
+1. C++ 코드의 경우 **네이티브 편집하며 계속하기 사용** 이 선택되었는지 확인하고 다음과 같은 추가 옵션을 설정합니다.
     - **계속할 때 변경 내용 적용(네이티브 전용)**
 
-      이 옵션을 선택하면 중단 상태에서 계속해서 디버그하면 Visual Studio에서는 코드 변경 내용을 자동으로 컴파일하고 적용합니다. 이 옵션을 선택하지 않으면 **디버그** > **코드 변경 내용 적용**을 사용하여 변경 내용을 적용할 수 있습니다.
+      이 옵션을 선택하면 중단 상태에서 계속해서 디버그하면 Visual Studio에서는 코드 변경 내용을 자동으로 컴파일하고 적용합니다. 이 옵션을 선택하지 않으면 **디버그** > **코드 변경 내용 적용** 을 사용하여 변경 내용을 적용할 수 있습니다.
 
     - **부실 코드 경고(네이티브 전용)**
 
       이 옵션을 선택하면 부실 코드에 대한 경고가 표시됩니다.
 
-1. **확인**을 클릭합니다.
+1. **확인** 을 클릭합니다.

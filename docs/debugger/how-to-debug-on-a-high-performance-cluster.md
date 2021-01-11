@@ -1,5 +1,7 @@
 ---
 title: 고성능 클러스터에서 디버그 | Microsoft Docs
+description: 고성능 클러스터에서 다중 처리 프로그램의 디버깅과 관련된 특이 사항을 알아봅니다. 두 개의 창이 특히 유용하며 특별한 기술이 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852454"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903113"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>방법: 고성능 클러스터에서 디버그(C#, Visual Basic, C++)
 
@@ -39,7 +41,7 @@ ms.locfileid: "90852454"
 
 1. 소스 창, **디스어셈블리** 창, **호출 스택** 창 또는 **중단점** 창에서 중단점 문자 모양을 마우스 오른쪽 단추로 클릭합니다.
 
-2. 바로 가기 메뉴에서 **필터**를 클릭합니다. 이 옵션은 맨 위 또는 **중단점** 아래의 하위 메뉴에 표시됩니다.
+2. 바로 가기 메뉴에서 **필터** 를 클릭합니다. 이 옵션은 맨 위 또는 **중단점** 아래의 하위 메뉴에 표시됩니다.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>특정 프로세스에 중단점을 설정하려면
 
@@ -53,7 +55,7 @@ ms.locfileid: "90852454"
 
      좀 더 복잡한 필터를 만들려면 `&`(AND 연산자), `||`(OR 연산자), `!`(NOT 연산자) 및 괄호를 사용하여 절을 조합합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>특정 프로세스에 중단점을 설정하려면
 
@@ -71,7 +73,7 @@ ms.locfileid: "90852454"
 
      좀 더 복잡한 필터를 만들려면 `&`(AND 연산자), `||`(OR 연산자), `!`(NOT 연산자) 및 괄호를 사용하여 절을 조합합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>특정 스레드에 중단점을 설정하려면
 
@@ -89,7 +91,7 @@ ms.locfileid: "90852454"
 
      좀 더 복잡한 필터를 만들려면 `&`(AND 연산자), `||`(OR 연산자), `!`(NOT 연산자) 및 괄호를 사용하여 절을 조합합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 `marvin`이라는 컴퓨터와 `fourier1`이라는 스레드에 중단점 필터를 만드는 방법을 보여 줍니다.

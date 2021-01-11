@@ -1,5 +1,6 @@
 ---
 title: C++ 프로젝트 원격 디버깅 | Microsoft Docs
+description: 다음 단계별 지침에 따라 원격 컴퓨터에서 Visual Studio C++ 애플리케이션을 디버그하는 방법을 알아봅니다.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298730"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815804"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio에서 C++ 프로젝트 원격 디버깅
 다른 컴퓨터에서 Visual Studio 애플리케이션을 디버그하려면 앱을 배포할 컴퓨터에 원격 도구를 설치 및 실행하고 Visual Studio에서 원격 컴퓨터에 연결하도록 프로젝트를 구성한 후 앱을 배포하고 실행합니다.
@@ -53,17 +54,17 @@ ms.locfileid: "92298730"
 > 추가 사용자를 위해 사용 권한을 추가하거나 원격 디버거의 인증 모드 또는 포트 번호를 변경해야 하는 경우 [원격 디버거 구성](../debugger/remote-debugging.md#configure_msvsmon)을 참조하세요.
 
 ## <a name="remote-debug-a-c-project"></a><a name="remote_cplusplus"></a> C++ 프로젝트 원격 디버그
- 다음 절차에서 프로젝트의 이름 및 경로는 C:\remotetemp\MyMfc이고 원격 컴퓨터의 이름은 **MJO-DL**입니다.
+ 다음 절차에서 프로젝트의 이름 및 경로는 C:\remotetemp\MyMfc이고 원격 컴퓨터의 이름은 **MJO-DL** 입니다.
 
-1. **mymfc**라는 MFC 애플리케이션을 만듭니다.
+1. **mymfc** 라는 MFC 애플리케이션을 만듭니다.
 
 2. `CMainFrame::OnCreate`의 시작 부분에서 쉽게 도달할 수 있는 애플리케이션의 임의 위치(예: **MainFrm.cpp**)에 중단점을 설정합니다.
 
-3. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **디버깅** 탭을 엽니다.
+3. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. **디버깅** 탭을 엽니다.
 
-4. **실행할 디버거**를 **원격 Windows 디버거**로 설정합니다.
+4. **실행할 디버거** 를 **원격 Windows 디버거** 로 설정합니다.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Visual Studio 솔루션 탐색기 속성의 디버깅 탭 스크린샷 실행할 디버거 속성이 원격 Windows 디버거로 설정되어 있습니다.](../debugger/media/remotedebuggingcplus.png)
 
 5. 다음과 같이 속성을 변경합니다.
 
@@ -79,11 +80,11 @@ ms.locfileid: "92298730"
 
     추가 파일을 배포하는 경우(선택 사항) 두 컴퓨터 모두에 폴더가 있어야 합니다.
 
-6. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **Configuration Manager**를 선택합니다.
+6. 솔루션 탐색기에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **Configuration Manager** 를 선택합니다.
 
 7. **디버그** 구성의 경우 **배포** 확인란을 선택합니다.
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Visual Studio 솔루션 탐색기의 Configuration Manager 스크린샷 디버그 구성이 선택되어 있고 배포가 선택되어 있습니다.](../debugger/media/remotedebugcplusdeploy.png)
 
 8. 디버깅을 시작합니다(**디버그 / 디버깅 시작** 또는 **F5**).
 
@@ -96,11 +97,11 @@ ms.locfileid: "92298730"
 11. Visual Studio 컴퓨터에서 실행이 중단점에서 중지된 것이 표시됩니다.
 
     > [!TIP]
-    > 또는 별도의 단계로 파일을 배포할 수 있습니다. **솔루션 탐색기**에서 **mymfc** 노드를 마우스 오른쪽 단추로 클릭하고 **배포**를 선택합니다.
+    > 또는 별도의 단계로 파일을 배포할 수 있습니다. **솔루션 탐색기** 에서 **mymfc** 노드를 마우스 오른쪽 단추로 클릭하고 **배포** 를 선택합니다.
 
-    애플리케이션에 필요한 비코드 파일이 있는 경우 **원격 Windows 디버거** 페이지의 **배포할 추가 파일**에서 해당 파일을 지정할 수 있습니다.
+    애플리케이션에 필요한 비코드 파일이 있는 경우 **원격 Windows 디버거** 페이지의 **배포할 추가 파일** 에서 해당 파일을 지정할 수 있습니다.
 
-    또는 프로젝트에 파일을 포함하고 각 파일에 대한 **속성** 페이지에서 **콘텐츠** 속성을 **예**로 설정할 수 있습니다. 이러한 파일은 **원격 Windows 디버거** 페이지에 지정된 **배포 디렉터리**에 복사됩니다. 또한 **배포 디렉터리**의 하위 폴더에 파일을 복사해야 하는 경우 **항목 종류**를 **파일 복사**로 변경하고 여기에서 추가 속성을 지정할 수 있습니다.
+    또는 프로젝트에 파일을 포함하고 각 파일에 대한 **속성** 페이지에서 **콘텐츠** 속성을 **예** 로 설정할 수 있습니다. 이러한 파일은 **원격 Windows 디버거** 페이지에 지정된 **배포 디렉터리** 에 복사됩니다. 또한 **배포 디렉터리** 의 하위 폴더에 파일을 복사해야 하는 경우 **항목 종류** 를 **파일 복사** 로 변경하고 여기에서 추가 속성을 지정할 수 있습니다.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>원격 기호를 사용한 디버깅 설정
 

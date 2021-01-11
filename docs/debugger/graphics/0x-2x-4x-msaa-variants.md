@@ -1,5 +1,7 @@
 ---
 title: 0x-2x-4x MSAA 변형 | Microsoft Docs
+description: 0x, 2x 또는 4x MSAA 변형을 사용하여 모든 렌더링 대상 및 스왑 체인에서 MSAA(Multi-Sample Anti-Aliasing) 설정을 재정의하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 1d4de52fb135e465e7adc938bb29c571bfcc1973
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407551"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726555"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 변형
 모든 렌더링 대상 및 스왑 체인에서 MSAA(MultiSample Anti-Aliasing) 설정을 재정의합니다.
@@ -54,7 +56,7 @@ ms.locfileid: "94407551"
 
  재생 시 이러한 종류의 충돌이 감지되면 의도된 동작을 복제하려고 최대한 시도하지만 결과가 정확하게 일치하지 않을 수도 있습니다. 이러한 변형의 영향을 잘못 표현하는 방식으로 이 문제가 해당 변형의 성능에 영향을 미치는 것이 일반적이지 않긴 하지만 복제된 질감의 콘텐츠가 동일하지 않을 수 있으므로 가능합니다. 예를 들어 픽셀 셰이더의 흐름 제어가 질감의 정확한 콘텐츠로 결정되는 경우가 여기에 해당됩니다.
 
-## <a name="example-1"></a>예 1
+## <a name="example-1"></a>예제 1
  `ID3D11Device::CreateTexture2D`를 사용하여 만든 렌더링 대상에 대해 다음과 같은 코드를 사용하여 이러한 변형을 재현할 수 있습니다.
 
 ```cpp

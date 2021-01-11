@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349583"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815596"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 
@@ -53,11 +53,11 @@ ASP.NET, ASP.NET Core, Node.js 및 .NET Core 앱의 경우, 다음 방법 중 �
 
 1. **Azure App Service 만들기(Windows)** 대화 상자에서 **앱 이름**, **리소스 그룹** 및 **App Service 계획** 입력 필드가 채워집니다. 이러한 이름을 유지하거나 변경할 수 있습니다. 준비가 되면 **만들기** 를 선택합니다.
 
-    ![Azure App Service 선택](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![이름, 구독, 리소스 그룹, 호스팅 계획 필드가 채워진 Azure App Service 만들기(Windows) 대화 상자의 스크린샷](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. **게시** 대화 상자에서 새로 만든 인스턴스가 자동으로 선택됩니다. 준비가 되면 **완료** 를 선택합니다.
 
-    ![Azure App Service 선택](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Visual Studio 솔루션 탐색기에서 액세스한 게시 창의 스크린샷 Azure가 게시 대상으로 선택되어 있습니다.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. **게시** 를 선택합니다. Visual Studio는 Azure App Service에 앱을 배포하고, 브라우저에 웹앱이 로드됩니다. 프로젝트 속성 **게시** 창은 사이트 URL 및 기타 세부 정보를 표시합니다.
 

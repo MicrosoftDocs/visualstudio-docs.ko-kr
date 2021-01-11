@@ -1,5 +1,5 @@
 ---
-title: 단위 테스트
+title: 단위 테스트 도구 및 작업
 description: 개발자와 테스터에게 코드에서 논리 오류를 빠르게 찾는 방법을 제공하기 위해 사용할 수 있는 단위 테스트 도구에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330136"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756593"
 ---
-# <a name="unit-test-your-code"></a>코드 단위 테스트
+# <a name="unit-test-tools-and-tasks"></a>단위 테스트 도구 및 작업
 
 개발자와 테스터는 단위 테스트를 통해 C#, Visual Basic 및 C++ 프로젝트에서 클래스의 메서드에 있는 논리 오류를 빠르게 찾을 수 있습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "96330136"
 
 * **코드 검사 도구**&mdash;단위 테스트가 테스트 탐색기의 명령 하나에서 실행하는 제품 코드의 양을 결정할 수 있습니다.
 
-* **Microsoft Fakes 격리 프레임워크**&mdash;Microsoft Fakes 격리 프레임워크는 테스트 중인 코드에서 종속성을 만드는 프로덕션 및 시스템 코드에 대한 대체 클래스 및 메서드를 만들 수 있습니다. 함수에 대한 모조 위임을 구현하여 종속성 개체의 동작과 출력을 제어할 수 있습니다.
+* **Microsoft Fakes 격리 프레임워크**&mdash;Microsoft Fakes 격리 프레임워크는 테스트 중인 코드에서 종속성을 만드는 프로덕션 및 시스템 .NET 코드에 대한 대체 클래스 및 메서드를 만들 수 있습니다. 함수에 대한 모조 위임을 구현하여 종속성 개체의 동작과 출력을 제어할 수 있습니다.
 
 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)를 사용하면 .NET 코드를 탐색하여 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수도 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. 코드의 모든 조건부 분기에 대해 사례 분석이 수행됩니다.
 
@@ -44,12 +44,12 @@ ms.locfileid: "96330136"
 
 |작업|관련 항목|
 |-|-----------------------|
-|**빠른 시작 및 연습:** 코드 예제에서 Visual Studio의 단위 테스트에 대해 알아봅니다.|- [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [방법: C++ 앱에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**빠른 시작 및 연습:** 코드 예제에서 Visual Studio의 단위 테스트에 대해 알아봅니다.|- [연습: .NET 코드의 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [연습: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [방법: C++ 앱에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**테스트 탐색기를 사용한 단위 테스트:** 테스트 탐색기를 통해 보다 다 생산적이고 효율적인 단위 테스트를 만드는 방법에 대해 알아봅니다.|- [유닛 테스트 기본 사항](../test/unit-test-basics.md)<br />- [단위 테스트 프로젝트 만들기](../test/create-a-unit-test-project.md)<br />- [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)<br />- [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)|
 |**단위 테스트 C++**|- [C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)|
-|**단위 테스트 격리**|- [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**코드 검사를 사용하여 프로젝트의 코드 중 테스트되는 부분 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아보세요.|- [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다.|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**단위 테스트 격리**|- [Microsoft Fakes를 사용하여 테스트 중인 .NET 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다(사용되지 않음).|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**품질 게이트 설정:** 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 하는 품질 게이트를 만드는 방법에 대해 알아봅니다.|- [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**테스트 옵션 설정:** 테스트 결과가 저장되는 위치와 같이 테스트 옵션을 구성하는 방법에 대해 알아봅니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

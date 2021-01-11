@@ -1,5 +1,7 @@
 ---
 title: JIT 최적화 및 디버깅 | Microsoft Docs
+description: 최적화된 코드는 최적화되지 않은 코드보다 디버그하기가 더 어렵습니다. JIT 최적화와 이 최적화를 중지하는 시기 및 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916209"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903924"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 코드를 디버그하려는 경우 코드가 최적화되지 **않은** 상태에서 더 쉽습니다. 코드가 최적화되면 컴파일러 및 런타임이 생성된 CPU 코드를 변경하여 더 빠르게 실행되지만 원래 소스 코드에 대하여 덜 직접적으로 매핑합니다. 매핑이 덜 직접적인 경우 디버거는 지역 변수의 값을 알 수 없는 경우가 많으며 단계별 코드 실행 및 중단점이 정상적으로 작동하지 않을 수 있습니다.
@@ -37,7 +39,7 @@ ms.locfileid: "75916209"
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>'모듈을 로드할 때 JIT 최적화 기능 사용 안 함(관리 전용)' 옵션
 디버거는 최적화를 사용하여 컴파일된 DLL이 대상 프로세스 내에서 로드될 때 발생하는 작업을 제어하는 옵션을 제공합니다. 이 옵션을 선택하지 않으면(기본 상태) .NET 런타임이 MSIL 코드를 CPU 코드로 컴파일할 때 최적화를 사용합니다. 이 옵션을 선택하면 디버거가 최적화를 사용하지 않도록 요청합니다.
 
-**모듈을 로드할 때 JIT 최적화 기능 사용 안 함(관리 전용)** 옵션을 찾으려면 **도구** > **옵션**을 선택한 다음 **디버깅** 노드 아래에서 **일반** 페이지를 선택합니다.
+**모듈을 로드할 때 JIT 최적화 기능 사용 안 함(관리 전용)** 옵션을 찾으려면 **도구** > **옵션** 을 선택한 다음 **디버깅** 노드 아래에서 **일반** 페이지를 선택합니다.
 
 ![JIT 최적화 기능 사용 안 함](../debugger/media/suppress-jit-tool-options.png "JIT 최적화 기능 사용 안 함")
 
@@ -59,9 +61,9 @@ NuGet 패키지와 같은 다른 소스에서 DLL을 다운로드하고 이 DLL�
     > .NET Framework 또는 이전 버전의 .NET Core(2.x 이하)를 대상으로 하는 경우 환경 변수 'COMPlus_ZapDisable'도 추가하고 '1'로 설정합니다.
 
     **Visual Studio에서 .NET Core 프로젝트에 대한 환경 변수를 설정하려면**
-    1. **솔루션 탐색기**에서 프로젝트 파일을 **마우스 오른쪽 단추로 클릭**하고 **속성**을 선택합니다.
-    2. **디버그** 탭으로 이동하고 **환경 변수**에서 **추가** 단추를 클릭합니다.
-    3. 이름(키)을 **COMPlus_ReadyToRun**으로 설정하고 값을 **0**으로 설정합니다.
+    1. **솔루션 탐색기** 에서 프로젝트 파일을 **마우스 오른쪽 단추로 클릭** 하고 **속성** 을 선택합니다.
+    2. **디버그** 탭으로 이동하고 **환경 변수** 에서 **추가** 단추를 클릭합니다.
+    3. 이름(키)을 **COMPlus_ReadyToRun** 으로 설정하고 값을 **0** 으로 설정합니다.
 
     ![COMPlus_ReadyToRun 환경 변수 설정](../debugger/media/environment-variables-debug-menu.png "COMPlus_ReadyToRun 환경 변수 설정")
 

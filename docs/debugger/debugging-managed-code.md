@@ -1,5 +1,7 @@
 ---
 title: 관리 코드 디버깅 | Microsoft Docs
+description: Visual Studio에서 공용 언어 런타임을 대상으로 하는 언어로 작성된 앱 또는 관리되는 애플리케이션의 일반적인 디버깅 문제 및 기술을 확인할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188409"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727023"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>관리 코드 디버그(C#, Visual Basic, F#, C++/CLI)
 

@@ -1,5 +1,7 @@
 ---
 title: 메시지 속성 표시 | Microsoft Docs
+description: 메시지 뷰에는 창, 프로세스 또는 스레드의 메시지 스트림이 표시됩니다. 메시지 뷰에 표시되는 메시지의 속성을 표시하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ca92905a100de09753b72aa8e913343c0729bf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 009bada1354739c25aceab4cd19de77e255e9ad0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852350"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903326"
 ---
 # <a name="how-to-display-message-properties"></a>방법: 메시지 속성 표시
 [Messages View](../debugger/messages-view.md)(메시지 뷰)에 나열된 메시지에 대해 자세히 알아보려면 [Message Properties Dialog Box](../debugger/message-properties-dialog-box.md)(메시지 속성 대화 상자)를 사용합니다.
@@ -24,6 +26,6 @@ ms.locfileid: "90852350"
 
 1. 메시지 뷰에 표시된 트리에서 메시지를 선택합니다.
 
-2. **보기** 메뉴에서 **속성**을 선택합니다.
+2. **보기** 메뉴에서 **속성** 을 선택합니다.
 
    속성 대화 상자는 모달 방식이 아니므로 뷰 창에서 다른 항목을 클릭하면 선택한 항목에 대한 정보가 대화 상자에 표시됩니다.
