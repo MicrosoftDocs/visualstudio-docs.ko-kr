@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: 코드 메트릭 데이터 작업
           href: working-with-code-metrics-data.md
+        - name: 리소스
+          items:
+            - name: 유지 관리 인덱스 범위 및 의미
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: 클래스 결합
+              href: code-metrics-class-coupling.md
 - name: C++ 코드 분석
   items:
     - name: C 및 C++ 코드 분석
