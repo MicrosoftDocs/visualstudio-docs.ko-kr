@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781051"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129486"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기
 
@@ -47,17 +47,17 @@ Visual Studio 개발 ASP.NET Core 및 TypeScript에 대한 이 자습서에서�
 * Visual Studio가 설치되고 ASP.NET 웹 개발 워크로드가 있어야 합니다.
 
     ::: moniker range=">=vs-2019"
-    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
 
-    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정** 을 선택합니다.
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>새 ASP.NET Core MVC 프로젝트 만들기
 
-Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
+Visual Studio는 *프로젝트* 에서 단일 애플리케이션에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
 
 >[!NOTE]
 > 빈 ASP.NET Core 프로젝트로 시작하여 TypeScript 프런트 엔드를 추가하려면 이 문서 대신 [ASP.NET Core with TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)(TypeScript를 사용한 ASP.NET Core)를 참조하세요.
@@ -69,12 +69,12 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 1. 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창이 열려 있지 않으면 **파일** > **시작 창**을 선택합니다. 시작 창에서 **새 프로젝트 만들기**를 선택합니다. 언어 드롭다운 목록에서 **C#** 을 선택합니다. 검색 상자에 **ASP.NET**을 입력하고 **ASP.NET Core 웹 애플리케이션**을 선택합니다. **다음**을 선택합니다.
+    시작 창이 열려 있지 않으면 **파일** > **시작 창** 을 선택합니다. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 언어 드롭다운 목록에서 **C#** 을 선택합니다. 검색 상자에 **ASP.NET** 을 입력하고 **ASP.NET Core 웹 애플리케이션** 을 선택합니다. **다음** 을 선택합니다.
 
-    프로젝트의 이름을 입력하고 **만들기**를 선택합니다.
+    프로젝트의 이름을 입력하고 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고, **.NET Core**를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션 - C#** 을 선택한 후 **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고, **.NET Core** 를 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션 - C#** 을 선택한 후 **확인** 을 선택합니다.
     ::: moniker-end
     **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우, **ASP.NET 및 웹 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
@@ -86,20 +86,21 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
 ## <a name="add-some-code"></a>일부 코드를 추가합니다.
 
-1. 솔루션 탐색기(오른쪽 창)에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. **찾아보기** 탭에서 **Microsoft.TypeScript.MSBuild**를 검색한 다음 오른쪽에 있는 **설치**를 클릭하여 패키지를 설치합니다.
+1. 솔루션 탐색기(오른쪽 창)에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다. **찾아보기** 탭에서 **Microsoft.TypeScript.MSBuild** 를 검색한 다음 오른쪽에 있는 **설치** 를 클릭하여 패키지를 설치합니다.
 
    ![NuGet 패키지 추가](../javascript/media/aspnet-core-ts-nuget.png)
 
    Visual Studio가 솔루션 탐색기의 **종속성** 노드에 NuGet 패키지를 추가합니다.
 
-1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 선택합니다. **TypeScript JSON 구성 파일**을 선택하고 **추가**를 클릭합니다.
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목** 을 선택합니다. **TypeScript JSON 구성 파일** 을 선택하고 **추가** 를 클릭합니다.
 
    Visual Studio가 프로젝트 루트에 *tsconfig.json* 파일을 추가합니다. 이 파일을 사용하여 TypeScript 컴파일러에 대한 [옵션을 구성](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)할 수 있습니다.
 
-1. *tsconfig.json*을 열고 기본 코드를 다음 코드로 바꿉니다.
+1. *tsconfig.json* 을 열고 기본 코드를 다음 코드로 바꿉니다.
 
    ```json
    {
+     "compileOnSave": true,
      "compilerOptions": {
        "noImplicitAny": false,
        "noEmitOnError": true,
@@ -118,13 +119,13 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
    이 구성은 TypeScript 사용에 대한 기본적인 소개를 제공합니다. 예를 들어 [gulp 또는 webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)을 사용하는 경우 등의 다른 시나리오에서는 */wwwroot/js* 대신 도구 및 구성 기본 설정에 따라 변환 컴파일된 JavaScript 파일에 다른 중간 위치를 사용하는 것이 좋습니다.
 
-1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **새 폴더 > 추가**를 선택합니다. 새 폴더의 이름으로 *scripts*를 사용합니다.
+1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **새 폴더 > 추가** 를 선택합니다. 새 폴더의 이름으로 *scripts* 를 사용합니다.
 
-1. *scripts* 폴더를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 선택합니다. **TypeScript 파일**을 선택하고, 파일 이름에 *app.ts*를 입력한 다음 **추가**를 클릭합니다.
+1. *scripts* 폴더를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목** 을 선택합니다. **TypeScript 파일** 을 선택하고, 파일 이름에 *app.ts* 를 입력한 다음 **추가** 를 클릭합니다.
 
-   Visual Studio가 *scripts* 폴더에 *app.ts*를 추가합니다.
+   Visual Studio가 *scripts* 폴더에 *app.ts* 를 추가합니다.
 
-1. *app.ts*를 열고 다음 TypeScript 코드를 추가합니다.
+1. *app.ts* 를 열고 다음 TypeScript 코드를 추가합니다.
 
     ```ts
     function TSButton() {
@@ -159,7 +160,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
     `lastName`을 선택하여 마지막 이름을 코드에 다시 추가합니다.
 
-1. *Views/Home* 폴더를 연 다음, *Index.cshtml*을 엽니다.
+1. *Views/Home* 폴더를 연 다음, *Index.cshtml* 을 엽니다.
 
 1. 파일 끝에 다음 HTML 코드를 추가합니다.
 
@@ -172,7 +173,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
     </div>
     ```
 
-1. *Views/Shared* 폴더를 연 다음, *_Layout.cshtml*을 엽니다.
+1. *Views/Shared* 폴더를 연 다음, *_Layout.cshtml* 을 엽니다.
 
 1. `@RenderSection("Scripts", required: false)`를 호출하기 전에 다음 스크립트 참조를 추가합니다.
 
@@ -182,11 +183,11 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
 ## <a name="build-the-application"></a>애플리케이션 빌드
 
-1. **빌드 > 솔루션 빌드**를 선택합니다.
+1. **빌드 > 솔루션 빌드** 를 선택합니다.
 
    앱은 실행할 때 자동으로 빌드되지만 빌드 프로세스 도중 발생하는 작업을 살펴보겠습니다.
 
-1. *wwwroot/js* 폴더를 엽니다. 여기에 두 개의 새 파일 *app.js* 및 소스 맵 파일 *app.js.map*이 있습니다. 이러한 파일은 TypeScript 컴파일러에 의해 생성됩니다.
+1. *wwwroot/js* 폴더를 엽니다. 여기에 두 개의 새 파일 *app.js* 및 소스 맵 파일 *app.js.map* 이 있습니다. 이러한 파일은 TypeScript 컴파일러에 의해 생성됩니다.
 
    소스 맵 파일은 디버깅에 필요합니다.
 
@@ -231,16 +232,16 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
    이렇게 하면 jQuery에 대한 TypeScript 지원이 추가됩니다. jQuery 라이브러리는 그 자체가 이미 MVC 프로젝트 템플릿에 포함되어 있습니다(솔루션 탐색기에서 wwwroot/lib 확인). 다른 템플릿을 사용하는 경우에는 jquery npm 패키지도 포함해야 할 수 있습니다.
 
-1. 솔루션 탐색기의 패키지가 설치되지 않았다면 npm 코드를 마우스 오른쪽 단추로 클릭하고 **패키지 복원**을 선택합니다.
+1. 솔루션 탐색기의 패키지가 설치되지 않았다면 npm 코드를 마우스 오른쪽 단추로 클릭하고 **패키지 복원** 을 선택합니다.
 
    >[!NOTE]
-   > 솔루션 탐색기에서 경우에 따라 [여기](https://github.com/aspnet/Tooling/issues/479)에서 설명하는 알려진 문제로 인해 npm 패키지가 *package.json*과 동기화되지 않았음을 안내하는 메시지를 표시할 수 있습니다. 예를 들어 패키지가 설치되었지만 설치되지 않은 것으로 보일 수 있습니다. 대부분의 경우에는 *package.json*을 삭제하고 Visual Studio를 다시 시작한 다음 이 문서의 앞부분에서 설명한 것처럼 *package.json* 파일을 다시 추가하여 솔루션 탐색기를 업데이트할 수 있습니다.
+   > 솔루션 탐색기에서 경우에 따라 [여기](https://github.com/aspnet/Tooling/issues/479)에서 설명하는 알려진 문제로 인해 npm 패키지가 *package.json* 과 동기화되지 않았음을 안내하는 메시지를 표시할 수 있습니다. 예를 들어 패키지가 설치되었지만 설치되지 않은 것으로 보일 수 있습니다. 대부분의 경우에는 *package.json* 을 삭제하고 Visual Studio를 다시 시작한 다음 이 문서의 앞부분에서 설명한 것처럼 *package.json* 파일을 다시 추가하여 솔루션 탐색기를 업데이트할 수 있습니다.
 
-1. 솔루션 탐색기에서 scripts 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
+1. 솔루션 탐색기에서 scripts 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** 을 선택합니다.
 
-1. **TypeScript 파일**을 선택하고 *library.ts*를 입력한 후 **추가**를 선택합니다.
+1. **TypeScript 파일** 을 선택하고 *library.ts* 를 입력한 후 **추가** 를 선택합니다.
 
-1. *library.ts*에 다음 코드를 추가합니다.
+1. *library.ts* 에 다음 코드를 추가합니다.
 
    ```ts
    var jqtest = {
@@ -280,7 +281,7 @@ Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일
 
     앱이 브라우저에서 열립니다.
 
-    경고에서 **확인**을 클릭하면 페이지가 **jQuery version is: 3.3.1!!** 로 업데이트된 것을 확인할 수 있습니다.
+    경고에서 **확인** 을 클릭하면 페이지가 **jQuery version is: 3.3.1!!** 로 업데이트된 것을 확인할 수 있습니다.
 
     ![jquery 예제](../javascript/media/aspnet-core-ts-jquery-example.png)
 

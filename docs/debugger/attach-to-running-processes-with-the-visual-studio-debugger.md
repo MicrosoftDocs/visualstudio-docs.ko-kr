@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760928"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031044"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
@@ -199,7 +199,7 @@ UWP(유니버설 Windows 플랫폼) 앱과 같은 일부 앱 유형에서는 프
 |로컬 컴퓨터에서 C#, Visual Basic 또는 C++ 앱을 디버그|표준 디버깅(**F5**) 또는 **프로세스에 연결** 을 사용|*\<appname>.exe*|대부분의 시나리오에서는 **프로세스에 연결** 이 아니라 표준 디버깅을 사용합니다.|
 |Windows 데스크톱 앱 원격 디버그|원격 도구|N/A| [C# 또는 Visual Basic 앱 원격 디버그](../debugger/remote-debugging-csharp.md) 또는 [C++ 앱 원격 디버그](../debugger/remote-debugging-cpp.md)을 참조하세요.|
 |Linux에서 .NET Core 원격 디버그|**프로세스에 연결** 사용|*dotnet.exe* 또는 고유한 프로세스 이름|SSH를 사용하려면 [SSH를 사용하여 Linux에서 실행되는 .NET Core 원격 디버그](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)를 참조하세요. 컨테이너화된 앱의 경우에는 [Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)을 참조하세요.|
-|컨테이너화된 앱 디버그|*dotnet.exe* 또는 고유한 프로세스 이름|[Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md)을 참조하세요.|
+|컨테이너화된 앱 디버그|**프로세스에 연결** 사용|*dotnet.exe* 또는 고유한 프로세스 이름|[Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md)을 참조하세요.|
 |Linux에서 Python 원격 디버그|**프로세스에 연결** 사용|*debugpy*|[Python 도구에서 원격으로 연결](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)을 참조하세요.|
 |디버거를 사용하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET 앱 디버깅|**프로세스에 연결** 사용|*iiexpress.exe*|이렇게 하면 프로파일링과 같은 경우에 앱을 더 빠르게 로드하는 데 도움이 될 수 있습니다. |
 |서버 프로세스에서 다른 지원되는 다른 앱 유형 디버깅|서버가 원격인 경우 원격 도구 및 **프로세스에 연결** 사용|*chrome.exe*, *iexplore.exe* 또는 기타 프로세스|필요한 경우 리소스 모니터를 사용하여 프로세스를 식별합니다. [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.|
