@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 하위 형식의 초기화 순서 | Microsoft Docs
+description: 여러 프로젝트 하위 형식으로 집계 된 프로젝트 시스템에 대 한 Visual Studio 환경의 초기화 순서에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707626"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204711"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>프로젝트 하위 형식의 초기화 시퀀스
 환경에서는의 기본 프로젝트 팩터리 구현을 호출 하 여 프로젝트를 생성 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . 프로젝트 하위 형식 생성은 환경에서 프로젝트 파일 확장명에 대 한 프로젝트 형식 GUID 목록이 비어 있지 않은 것으로 확인 될 때 시작 됩니다. 프로젝트 파일 확장명 및 프로젝트 GUID는 프로젝트가 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 또는 프로젝트 형식 인지 여부를 지정 합니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . 예를 들어 .vbproj 확장명 및 {F184B08F-C81C-45F6-A57F-5ABD9991F28F}는 프로젝트를 식별 합니다. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]
@@ -43,7 +45,7 @@ ms.locfileid: "80707626"
 
     5. `HrCreateInnerProj` 는 목록의 마지막 GUID (기본 프로젝트)에 도달할 때까지 재귀적으로 호출 됩니다. 이러한 각 호출에 대해 c ~ d 단계를 반복 합니다. `pOuter` 각 집계 수준에 대해 가장 바깥쪽 프로젝트 하위 유형을 가리킵니다 `IUnknown` .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> 환경에 의해 구현 되는 메서드를 대략적으로 표현 하는 프로그래밍 프로세스를 자세히 설명 합니다. 코드는 단지 예입니다. 이는 컴파일되지 않으며 모든 오류 검사가 명확 하 게 제거 되었습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 디버깅을 위한 언어 서비스 지원 | Microsoft Docs
+description: Visual Studio에서 디버깅에 대 한 지원을 제공 하는 IVsLanguageDebugInfo 인터페이스의 언어 서비스 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c80e8e1f584b1728f342cb596b689f6a22c9297
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17b11ce3639664a8097abeaa2a2de9a6faaadc7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707432"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205166"
 ---
 # <a name="language-service-support-for-debugging"></a>디버깅에 대한 언어 서비스 지원
 언어 서비스는 인터페이스를 통해 디버거를 지 원하는 기능을 제공할 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> . 이러한 기능에는 중단점 유효성 검사 및 **자동** 창에 식 목록 제공이 포함 됩니다.

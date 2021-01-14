@@ -1,5 +1,7 @@
 ---
 title: 언어 서비스 필터에 대 한 중요 한 명령 | Microsoft Docs
+description: Visual Studio에서 완전 한 기능을 갖춘 언어 서비스 필터를 만들 때 지원 해야 하는 중요 한 명령에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29ee5b5a5359d6cfe34911656dfe9be015262e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707619"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204620"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대한 중요 명령
 완전 한 기능을 갖춘 언어 서비스 필터를 만들려는 경우 다음 명령을 처리 하는 것이 좋습니다. 명령 식별자의 전체 목록은 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 코드에 대 한 열거와 비관리 코드에 대 한 Stdidcmd 헤더 파일에 정의 되어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 있습니다. Stdidcmd 파일은 *Visual STUDIO SDK 설치 경로*\VisualStudioIntegration\Common\Inc.에서 찾을 수 있습니다.

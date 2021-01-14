@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 파서 및 스캐너 | Microsoft Docs
+description: 표시 되는 코드에 대 한 정보를 선택 하는 레거시 언어 서비스 파서 및 스캐너에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707323"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204607"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 파서는 언어 서비스의 핵심입니다. MPF (관리 되는 패키지 프레임 워크) 언어 클래스에는 표시 되는 코드에 대 한 정보를 선택 하기 위한 언어 파서가 필요 합니다. 파서는 텍스트를 어휘 토큰으로 구분 하 고 형식 및 기능으로 이러한 토큰을 식별 합니다.
@@ -42,13 +44,13 @@ namespace MyNamespace
 |토큰 이름|토큰 형식|
 |----------------|----------------|
 |네임 스페이스, 클래스, public, void, int|키워드(keyword)|
-|=|operator|
+|=|연산자|
 |{ } ( ) ;|구분 기호|
 |MyNamespace, MyClass, MyFunction, arg1, var1|identifier|
-|MyNamespace|namespace|
+|MyNamespace|네임스페이스|
 |MyClass|class|
-|MyFunction|메서드|
-|arg1|매개 변수(parameter)|
+|MyFunction|method|
+|arg1|매개 변수|
 |var1|지역 변수(local variable)|
 
  파서의 역할은 토큰을 식별 하는 것입니다. 일부 토큰에는 두 개 이상의 형식이 있을 수 있습니다. 파서가 토큰을 식별 한 후 언어 서비스는이 정보를 사용 하 여 구문 강조 표시, 중괄호 일치 및 IntelliSense 작업과 같은 유용한 기능을 제공할 수 있습니다.
@@ -68,7 +70,7 @@ namespace MyNamespace
 > [!CAUTION]
 > 구조체에는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 개체에 대 한 참조가 포함 되어 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> . 이 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 개체는 백그라운드 스레드에서 사용할 수 없습니다. 실제로 대부분의 기본 MPF 클래스는 백그라운드 스레드에서 사용할 수 없습니다. 여기에는 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.ViewFilter> 뷰를 <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 사용 하 여 직접 또는 간접적으로 통신 하는,, 클래스 및 기타 클래스가 포함 됩니다.
 
- 이 파서는 일반적으로 처음 호출 될 때 또는 구문 분석 이유 값이 지정 된 경우 전체 소스 파일을 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason> 합니다. 이 메서드에 대 한 후속 호출은 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 구문 분석 된 코드의 작은 부분을 처리 하 고 이전 전체 구문 분석 작업의 결과를 사용 하 여 훨씬 더 빠르게 실행할 수 있습니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>메서드는 및 개체를 통해 구문 분석 작업의 결과를 전달 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> . <xref:Microsoft.VisualStudio.Package.AuthoringSink>개체는 특정 구문 분석 이유에 대 한 정보 (예: 매개 변수 목록을 포함 하는 일치 하는 중괄호 또는 메서드 시그니처의 범위 정보)를 수집 하는 데 사용 됩니다. 에서는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 선언 및 메서드 시그니처의 컬렉션과 고급 편집으로 이동 옵션 (**정의**로 이동, **선언으로**이동, **참조로**이동)도 지원 합니다.
+ 이 파서는 일반적으로 처음 호출 될 때 또는 구문 분석 이유 값이 지정 된 경우 전체 소스 파일을 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason> 합니다. 이 메서드에 대 한 후속 호출은 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 구문 분석 된 코드의 작은 부분을 처리 하 고 이전 전체 구문 분석 작업의 결과를 사용 하 여 훨씬 더 빠르게 실행할 수 있습니다. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>메서드는 및 개체를 통해 구문 분석 작업의 결과를 전달 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> . <xref:Microsoft.VisualStudio.Package.AuthoringSink>개체는 특정 구문 분석 이유에 대 한 정보 (예: 매개 변수 목록을 포함 하는 일치 하는 중괄호 또는 메서드 시그니처의 범위 정보)를 수집 하는 데 사용 됩니다. 에서는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 선언 및 메서드 시그니처의 컬렉션과 고급 편집으로 이동 옵션 (**정의** 로 이동, **선언으로** 이동, **참조로** 이동)도 지원 합니다.
 
 ### <a name="the-iscanner-scanner"></a>IScanner 스캐너
  또한을 구현 하는 스캐너를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> . 그러나이 스캐너는 클래스를 통해 줄 단위로 작동 하므로 <xref:Microsoft.VisualStudio.Package.Colorizer> 일반적으로 구현 하기가 더 쉽습니다. MPF는 각 줄의 시작 부분에서 <xref:Microsoft.VisualStudio.Package.Colorizer> 스캐너에 전달 되는 상태 변수로 사용할 값을 클래스에 제공 합니다. 각 줄의 끝에서 스캐너는 업데이트 된 상태 변수를 반환 합니다. MPF는 각 줄에 대해이 상태 정보를 캐시 하므로 스캐너가 소스 파일의 시작 부분에서 시작 하지 않고도 줄에서 구문 분석을 시작할 수 있습니다. 이렇게 빠른 단일 줄을 검색 하면 편집기에서 사용자에 게 빠른 피드백을 제공할 수 있습니다.
@@ -131,7 +133,7 @@ namespace MyNamespace
 
  개체는 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체의 일부로 파서에 전달 되 고 새 개체가 <xref:Microsoft.VisualStudio.Package.ParseRequest> 만들어질 때마다 새 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체가 만들어집니다 <xref:Microsoft.VisualStudio.Package.ParseRequest> . 또한 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 다양 한 IntelliSense 작업을 처리 하는 데 사용 되는 개체를 반환 해야 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>개체는 구문 분석의 이유에 따라 선언 목록 및 메서드에 대 한 목록을 유지 관리 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>클래스를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

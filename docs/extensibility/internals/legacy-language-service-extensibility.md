@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 확장성 | Microsoft Docs
+description: Visual Studio에서 레거시 언어 서비스의 구조, 구현 및 확장성에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 313d1d7bb74ccb456173474f7f0e3140814755bd
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707402"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205075"
 ---
 # <a name="legacy-language-service-extensibility"></a>레거시 언어 서비스 확장성
 언어 서비스는 IDE에서 소스 코드를 편집 하는 언어 관련 지원을 제공 합니다.
@@ -50,7 +52,7 @@ ms.locfileid: "80707402"
 
  IDE에서 기호 트리 뷰를 찾아볼 수 있는 라이브러리 및 도구에 대해 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)
 
  Visual Studio 편집기에 대 한 개요를 제공 합니다.

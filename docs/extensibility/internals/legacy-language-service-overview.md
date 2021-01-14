@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 개요 | Microsoft Docs
+description: Visual Studio의 레거시 언어 서비스 및 MPF (Managed Package Framework) 언어 서비스 클래스에서 지 원하는 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707350"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204945"
 ---
 # <a name="legacy-language-service-overview"></a>레거시 언어 서비스 개요
 언어 서비스는 특정 기능을 구현 하는 데 사용할 수 있는 편집기를 지원 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . MPF (관리 패키지 프레임 워크) 언어 서비스 클래스는 자주 사용 되는 기능 및 기타 기능에 대 한 부분 지원을 완벽 하 게 지원 합니다.
@@ -89,6 +91,6 @@ ms.locfileid: "80707350"
 
 - [레거시 언어 서비스의 중단점 유효성 검사](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

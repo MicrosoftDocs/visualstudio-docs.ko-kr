@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources | Microsoft Docs
+description: Manifest from Resources 도구를 사용 하 여 Visual Studio 이미지 서비스에서 사용할 .png 또는 .xaml 파일을 imagemanifest 파일에 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536230"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204503"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일) 목록을 사용 하 고 Visual Studio 이미지 서비스에서 해당 이미지를 사용할 수 있도록 하는 imagemanifest 파일을 생성 하는 콘솔 응용 프로그램입니다. 또한이 도구를 사용 하 여 기존. imagemanifest에 이미지를 추가할 수 있습니다. 이 도구는 이미지에 대 한 높은 DPI 및 테마 지원 기능을 Visual Studio 확장에 추가 하는 데 유용 합니다. Imagemanifest 파일은 Visual Studio 확장 (.vsix)의 일부로 포함 되 고 배포 되어야 합니다.

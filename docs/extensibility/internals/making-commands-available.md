@@ -1,5 +1,7 @@
 ---
 title: 명령을 사용할 수 있도록 설정 | Microsoft Docs
+description: 지연 된 로드, 컨텍스트 및 표시 유형을 사용 하 여 Vspackage의 Visual Studio IDE에 추가 되는 명령의 가용성을 제어 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707329"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204542"
 ---
 # <a name="making-commands-available"></a>명령을 사용할 수 있도록 설정
 
@@ -51,7 +53,7 @@ ms.locfileid: "80707329"
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>현재 컨텍스트 및 명령의 표시 유형
 
-VSPackage 데이터의 현재 상태 또는 현재 관련 된 작업에 따라 표시 하거나 숨길 VSPackage 명령을 프로그래밍할 수 있습니다. 일반적으로 인터페이스에서 메서드의 구현을 사용 하 여 VSPackage가 명령의 상태를 설정 하도록 설정할 수 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 있지만이를 위해서는 코드를 실행 하기 전에 VSPackage를 로드 해야 합니다. 대신 IDE에서 패키지를 로드 하지 않고 명령의 표시 여부를 관리 하도록 설정 하는 것이 좋습니다. 이렇게 하려면. vsct 파일에서 하나 이상의 특수 한 UI 컨텍스트와 명령을 연결 합니다. 이러한 UI 컨텍스트는 *명령 컨텍스트 guid*로 알려진 guid로 식별 됩니다.
+VSPackage 데이터의 현재 상태 또는 현재 관련 된 작업에 따라 표시 하거나 숨길 VSPackage 명령을 프로그래밍할 수 있습니다. 일반적으로 인터페이스에서 메서드의 구현을 사용 하 여 VSPackage가 명령의 상태를 설정 하도록 설정할 수 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 있지만이를 위해서는 코드를 실행 하기 전에 VSPackage를 로드 해야 합니다. 대신 IDE에서 패키지를 로드 하지 않고 명령의 표시 여부를 관리 하도록 설정 하는 것이 좋습니다. 이렇게 하려면. vsct 파일에서 하나 이상의 특수 한 UI 컨텍스트와 명령을 연결 합니다. 이러한 UI 컨텍스트는 *명령 컨텍스트 guid* 로 알려진 guid로 식별 됩니다.
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트를 로드 하거나 편집에서 빌드하기로 이동 하는 등의 사용자 작업으로 인해 발생 하는 변경 내용을 모니터링 합니다. 변경이 발생 하면 IDE의 모양이 자동으로 수정 됩니다. 다음 표에서는을 모니터링 하는 IDE 변경의 네 가지 주요 컨텍스트를 보여 줍니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
@@ -105,7 +107,7 @@ VSPackage 데이터의 현재 상태 또는 현재 관련 된 작업에 따라 �
     > [!CAUTION]
     > 다른 Vspackage가이에 종속 될 수 있으므로 VSPackage가 기존 컨텍스트 GUID의 상태에 영향을 주지 않는지 확인 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 VSPackage 명령 예에서는 VSPackage를 로드 하지 않고 명령 컨텍스트에서 관리 하는 명령의 동적 표시 유형을 보여 줍니다.
 

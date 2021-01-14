@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 Features1 | Microsoft Docs
+description: MPF (관리 되는 패키지 프레임 워크) 언어 서비스에서 지원 되는 Visual Studio 기능에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238493"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205062"
 ---
 # <a name="legacy-language-service-features-1"></a>레거시 언어 서비스 기능 1
 MPF (관리 되는 패키지 프레임 워크) 언어 서비스는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 구문 강조 표시, IntelliSense 및 중단점 유효성 검사와 같은 하나 이상의 기능을 지원할 수 있습니다. 각 기능은 다른 항목에 독립적으로 구현 될 수 있지만, 스캐너만 필요한 구문 강조를 제외 하 고는 파서 및 스캐너가 필요 합니다.
@@ -77,7 +79,7 @@ MPF (관리 되는 패키지 프레임 워크) 언어 서비스는 [!INCLUDE[vsp
 
  디버거 외부에서 중단점 유효성 검사를 지원 하기 위해 언어 서비스에서 수행할 수 있는 작업을 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
  관리 되는 패키지 프레임 워크를 사용 하는 언어 서비스의 모든 기능을 구현 하는 데 필요한 파서와 스캐너에 대해 설명 합니다.

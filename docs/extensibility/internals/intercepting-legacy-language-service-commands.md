@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스 명령 가로채기 | Microsoft Docs
+description: Visual Studio에서 명령 필터를 사용 하 여 레거시 언어 서비스 명령을 가로채서 언어별 동작을 추가 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707446"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205192"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>레거시 언어 서비스 명령 가로채기
 를 사용 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스에서 텍스트 뷰가 처리 하는 명령을 가로챌 수 있습니다. 이는 텍스트 뷰에서 관리 하지 않는 언어 관련 동작에 유용 합니다. 언어 서비스의 텍스트 뷰에 하나 이상의 명령 필터를 추가 하 여 이러한 명령을 가로챌 수 있습니다.

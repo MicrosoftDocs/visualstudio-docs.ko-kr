@@ -1,5 +1,7 @@
 ---
 title: 레거시 언어 서비스의 멤버 완료 | Microsoft Docs
+description: IntelliSense 멤버 완성 도구 설명이 레거시 언어 서비스에서 작동 하는 방식과 MPF (관리 패키지 프레임 워크)에서 지원 되는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707188"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205803"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 
@@ -44,7 +46,7 @@ MPF (관리 되는 패키지 프레임 워크)는 도구 설명에 대 한 지�
 
 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>명령은 클래스의 메서드에 대 한 호출을 시작 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> <xref:Microsoft.VisualStudio.Package.Source> 하 고 메서드는 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> [ParseReason](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>)의 구문 분석 이유를 사용 하 여 메서드 파서를 호출 합니다.
 
-파서는 현재 위치의 컨텍스트 및 현재 위치 바로 앞에 있는 토큰을 확인 합니다. 이 토큰을 기반으로 선언 목록이 표시 됩니다. 예를 들어 c #에서 캐럿을 클래스 멤버에 배치 하 고 **멤버 목록**을 선택 하는 경우 클래스의 모든 멤버 목록을 가져옵니다. 개체 변수 다음에 오는 마침표 뒤에 캐럿을 배치 하면 개체가 나타내는 클래스의 모든 멤버 목록이 표시 됩니다. 멤버 목록이 표시 될 때 캐럿이 멤버에 배치 되는 경우 목록에서 멤버를 선택 하면 캐럿이 있는 멤버가 목록에 있는 멤버로 바뀝니다.
+파서는 현재 위치의 컨텍스트 및 현재 위치 바로 앞에 있는 토큰을 확인 합니다. 이 토큰을 기반으로 선언 목록이 표시 됩니다. 예를 들어 c #에서 캐럿을 클래스 멤버에 배치 하 고 **멤버 목록** 을 선택 하는 경우 클래스의 모든 멤버 목록을 가져옵니다. 개체 변수 다음에 오는 마침표 뒤에 캐럿을 배치 하면 개체가 나타내는 클래스의 모든 멤버 목록이 표시 됩니다. 멤버 목록이 표시 될 때 캐럿이 멤버에 배치 되는 경우 목록에서 멤버를 선택 하면 캐럿이 있는 멤버가 목록에 있는 멤버로 바뀝니다.
 
 ### <a name="the-token-trigger"></a>토큰 트리거
 

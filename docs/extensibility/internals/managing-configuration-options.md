@@ -1,5 +1,7 @@
 ---
 title: 구성 옵션 관리 | Microsoft Docs
+description: Visual Studio에서 프로젝트 및 솔루션 구성 설정을 관리 하 여 프로젝트를 빌드하고 패키지 하 고 배포 하 고 실행 하는 방법을 제어 하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707304"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204532"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션 관리
 새 프로젝트 형식을 만들 때 프로젝트를 빌드하고, 패키지 하 고, 배포 하 고, 실행 하는 방법을 결정 하는 프로젝트 및 솔루션 구성 설정을 관리 해야 합니다. 다음 항목에서는 프로젝트 및 솔루션 구성에 대해 설명 합니다.
@@ -49,7 +51,7 @@ ms.locfileid: "80707304"
 
  모든 구성에서 지원할 수 있는 빌드 프로세스와 출력 항목을 사용 가능 하 게 설정할 수 있는 인터페이스 및 메서드를 설명 합니다.
 
-## <a name="related-sections"></a>관련 섹션
+## <a name="related-sections"></a>관련 단원
 - [프로젝트 형식](../../extensibility/internals/project-types.md):
 
  IDE (통합 개발 환경)의 기본 구성 요소로 프로젝트 개요를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 프로젝트에서 코드 빌드 및 컴파일을 제어 하는 방법을 설명 하는 추가 항목에 대 한 링크가 제공 됩니다.

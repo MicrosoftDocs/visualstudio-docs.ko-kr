@@ -1,5 +1,7 @@
 ---
 title: 구문 색 지정 구현 | Microsoft Docs
+description: MPF (관리 되는 패키지 프레임 워크)의 언어 서비스 기능을 사용 하 여 Visual Studio에서 구문 색 지정을 구현 하는 방법에 대해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905210"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204672"
 ---
 # <a name="implementing-syntax-coloring"></a>구문 색 지정 구현
 언어 서비스에서 구문 색 지정을 제공 하는 경우 파서는 텍스트 줄을 색 항목 배열로 변환 하 고 이러한 색 항목에 해당 하는 토큰 형식을 반환 합니다. 파서는 색 항목 목록에 속하는 토큰 형식을 반환 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] svc 개체에 의해 적절 한 토큰 형식에 할당 된 특성에 따라 코드 창의 각 색 항목을 표시 합니다.
