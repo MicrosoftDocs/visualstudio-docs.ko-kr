@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916181"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147396"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Microsoft Store를 통해 구독 구매 
 
@@ -37,7 +37,7 @@ Microsoft Store를 통해 제공되는 소매용 Visual Studio 구독은 다음�
 1. “다운로드 – 새로 만들기”를 클릭하고 카트에 추가합니다. 참고: 스토어에서 기본적으로 갱신 가격을 표시하는 경우가 있습니다. 새 구독을 구매하고 있는지 확인하세요. 스토어에서는 갱신 가격으로 구매하는 동안 현재 구독을 보유하고 있는지 확인하지 않습니다. 현재 일치하는 구독이 없으면 갱신을 활성화할 수 없습니다.
 1. 체크 아웃. 확인 페이지에 구독을 활성화하는 데 사용해야 하는 제품 키가 제공됩니다. 아래 지침을 참조하세요. 
 
-## <a name="how-to-activate"></a>활성화하는 방법  
+## <a name="how-to-activate-your-subscription"></a>구독 활성화 방법 
 
 Microsoft Store를 통해 Visual Studio 구독을 구매한 다음에 구매 후 받은 결제 확인 페이지 또는 확인 전자 메일에서 활성화 프로세스를 시작할 수 있습니다. 
 
@@ -47,7 +47,7 @@ Microsoft Store를 통해 Visual Studio 구독을 구매한 다음에 구매 후
 
 이제  [구독 페이지](https://my.visualstudio.com/subscriptions)에 구독이 표시되고 모든 구독 혜택에 액세스할 수 있습니다. 
 
-## <a name="more-information"></a>추가 정보 
+## <a name="compare-subscription-benefits"></a>구독 혜택 비교
 
 [구독 혜택 및 가격을 비교](https://visualstudio.microsoft.com/vs/pricing/) 하여 각 Visual Studio 구독의 혜택을 알아보세요. 
 

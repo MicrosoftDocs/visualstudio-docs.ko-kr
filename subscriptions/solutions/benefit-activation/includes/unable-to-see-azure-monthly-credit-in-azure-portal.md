@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916109"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147555"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Azure Portal에서 Azure 월간 크레딧을 볼 수 없습니다.
 
@@ -29,10 +29,12 @@ Azure 월간 크레딧을 볼 수 없는 여러 가지 이유가 있습니다. �
 
 계정을 설정한 전자 메일로 [Azure Portal](https://portal.azure.com/)에 로그인해야 합니다. 예를 들어 대체 계정으로 월간 크레딧을 활성화한 경우 항상 해당 전자 메일로 Azure 구독에 로그인해야 합니다. 
 
-## <a name="azure-directories"></a>Azure 디렉터리 
+## <a name="azure-directories"></a>Azure 디렉터리
+ 
 Azure 구독의 일부로 여러 디렉터리가 있을 수 있습니다. Azure 구독을 설정하는 디렉터리를 사용하고 있는지 확인합니다. Azure Portal의 오른쪽 위 모서리에 있는 계정 아이콘을 클릭하여 디렉터리를 확인하고 전환할 수 있습니다. 
 
-## <a name="how-to-activate"></a>활성화하는 방법
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Azure 월간 크레딧 활성화 방법
+
 1. [구독 포털](https://my.visualstudio.com/benefits)에 로그인합니다.  
 1. 혜택 페이지의 도구 섹션에서 Azure 개발/테스트 개별 크레딧 타일을 찾고 혜택 타일 아래쪽에 있는 활성화 링크를 클릭합니다. Azure 월간 크레딧 타일을 찾을 수 없는 경우 [혜택 비교 페이지](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)를 사용하여 구독에 월간 크레딧이 포함되어 있는지 확인하세요. 
 1. 기존 Azure 구독이 없는 경우 구독을 만드는 데 필요한 개인 정보를 입력하라는 메시지가 표시됩니다.  
@@ -42,7 +44,7 @@ Azure 구독의 일부로 여러 디렉터리가 있을 수 있습니다. Azure 
 
 Visual Studio 구독 혜택을 통해 생성된 Azure 구독은 유료 구독에는 적용되지 않는 제한 사항의 영향을 받을 수 있습니다. VM 및 Azure 서비스를 만드는 데 특정 지역을 사용하지 못할 수도 있고, 특정 서비스 유형을 사용하지 못할 수도 있습니다. 유료 구독보다 기본 할당량이 적을 수도 있습니다. 
 
-## <a name="more-information"></a>추가 정보 
+## <a name="more-information-about-azure-monthly-credits"></a>Azure 월간 크레딧에 대한 자세한 정보
 
 활성화, 자격 및 기타 지원 리소스에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 

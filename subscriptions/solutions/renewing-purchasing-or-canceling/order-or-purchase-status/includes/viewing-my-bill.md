@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916141"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147419"
 ---
 ## <a name="how-do-i-view-my-bill"></a>내 청구서를 보려면 어떻게 하나요?
 
@@ -34,5 +34,5 @@ Azure의 지출 한도 기능을 사용하여 서비스가 꺼지는 지출 한�
 
 종량제로 변환된 Azure 구독에서 지출 한도를 제거했거나, Visual Studio 구독자에게만 제공되는 엔터프라이즈 개발/테스트 가격을 사용 중이거나, 월간 크레딧이 적용되는 개발 및 테스트에 사용되는 서비스 외의 서비스를 이용하려는 경우 서비스에 대한 월간 요금이 청구됩니다.  
 
-## <a name="more-information"></a>추가 정보 
+## <a name="more-information-about-billing"></a>청구에 대한 자세한 정보
 사용량 및 요금에 관한 일반적인 질문에 대한 답변을 얻을 수 있습니다. [청구 FAQ](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started)를 참조하세요. 

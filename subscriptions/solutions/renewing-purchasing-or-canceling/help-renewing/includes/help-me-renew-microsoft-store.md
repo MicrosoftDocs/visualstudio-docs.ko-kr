@@ -10,12 +10,12 @@ user.type: subscriber
 tags: renewing
 subscription.type: retail
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: c888f89c7fa6a02a18539493e2fda5afc5298712
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: f518f4458181d39a140ee5652b08ea861f2130ee
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916173"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147576"
 ---
 ## <a name="renewing-subscriptions-through-microsoft-store"></a>Microsoft Store를 통해 구독 갱신 
 
@@ -23,7 +23,7 @@ ms.locfileid: "96916173"
 
 구독이 만료되지 않은 경우 [구독 포털](https://my.visualstudio.com/subscriptions)에서 구독을 확인하여 만료 날짜를 찾을 수 있습니다. 
 
-## <a name="subscriptions-available"></a>사용 가능한 구독 
+## <a name="subscriptions-available-for-renewal"></a>갱신 가능한 구독
 
 Microsoft Store를 통해 갱신할 수 있는 정품 Visual Studio 구독은 다음과 같습니다. 
 

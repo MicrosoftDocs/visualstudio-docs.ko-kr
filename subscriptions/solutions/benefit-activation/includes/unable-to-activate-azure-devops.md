@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 3980e21fd1ac1f96015725c80bb4b5994e30e529
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916122"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147685"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Azure DevOps 혜택을 활성화할 수 없습니다.
 
@@ -26,5 +26,5 @@ Visual Studio 구독자는 Azure DevOps에서 다양한 기능을 사용할 수 
 1. 서비스 약관에 동의해야 하는 경우 Azure DevOps로 이동됩니다. 
 1. Visual Studio 구독에 로그인하는 데 사용하는 전자 메일을 사용하여 Azure DevOps에 로그인합니다. 로그인하는 데 다른 전자 메일을 사용하려는 경우 [대체 계정을 만들어](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity) 구독을 연결함으로써 두 전자 메일로 모두 Azure DevOps에 액세스할 수 있습니다. 
 
-## <a name="more-information"></a>추가 정보 
+## <a name="more-information-about-subscription-eligibility"></a>구독 자격에 대한 자세한 정보 
 구독 수준별 자격에 관한 [자세한 내용을 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops).

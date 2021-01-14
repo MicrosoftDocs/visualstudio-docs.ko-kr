@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916114"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147339"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>내 EMS(Enterprise Mobility + Security) 혜택을 활성화할 수 없습니다.
 
@@ -40,6 +40,6 @@ ms.locfileid: "96916114"
 
 Office 365 E3 구독을 삭제하고 대체 Microsoft 365 E5 구독을 만든 후에는 데이터를 마이그레이션할 수 있도록 60일 동안 Office 365 E3 테넌트를 사용할 수 있습니다. 
 
-## <a name="more-information"></a>추가 정보 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Office 365 E3 구독에 대한 자세한 정보
 
 자격, Office 365 E3에서 Microsoft 365로 마이그레이션하는 방법 및 FAQ에 관한 [자세한 내용을 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365).  
