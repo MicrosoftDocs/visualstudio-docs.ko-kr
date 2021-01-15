@@ -1,5 +1,7 @@
 ---
 title: 시각화 도우미 테스트 및 디버그 | Microsoft Docs
+description: 테스트 드라이버(시각화 도우미 개발 호스트)에서 시각화 도우미를 실행하거나, Visual Studio에 설치하고 디버거 창에서 시각화 도우미를 호출하여 시각화 도우미를 테스트하고 디버그합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df45b1f81430e733d6116768bf7c8823911ead59
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851868"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150667"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>방법: 시각화 도우미 테스트 및 디버그
 시각화 도우미를 작성한 후에는 이를 디버깅하고 테스트해야 합니다.
 
 시각화 도우미를 테스트하는 한 가지 방법으로 이를 Visual Studio에 설치하고 디버거 창에서 호출할 수 있습니다. ([방법: 시각화 도우미 설치](../debugger/how-to-install-a-visualizer.md)를 참조하세요.) 이 경우 디버거의 첫 번째 인스턴스에서 실행되는 시각화 도우미에 연결하고 디버그하기 위해 Visual Studio의 두 번째 인스턴스를 사용해야 합니다.
 
-시각화 도우미를 디버깅하기 위한 더 쉬운 방법으로는 테스트 드라이버에서 시각화 도우미를 실행하는 방법이 있습니다. 시각화 도우미 API를 사용하면 그와 같은 드라이버를 쉽게 만들 수 있습니다. 이 드라이버를 *시각화 도우미 개발 호스트*라고 합니다.
+시각화 도우미를 디버깅하기 위한 더 쉬운 방법으로는 테스트 드라이버에서 시각화 도우미를 실행하는 방법이 있습니다. 시각화 도우미 API를 사용하면 그와 같은 드라이버를 쉽게 만들 수 있습니다. 이 드라이버를 *시각화 도우미 개발 호스트* 라고 합니다.
 
 ### <a name="to-create-a-visualizer-development-host"></a>시각화 도우미 개발 호스트를 만들려면
 

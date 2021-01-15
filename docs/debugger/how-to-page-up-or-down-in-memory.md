@@ -1,5 +1,7 @@
 ---
 title: 메모리에서 페이지 위 또는 아래로 이동 | Microsoft Docs
+description: Visual Studio에서 디버그할 때 메모리에서 페이지를 위아래로 이동하여 메모리 창 또는 디스어셈블리 창에서 메모리 콘텐츠를 보는 방법을 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852050"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148886"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>방법: 메모리에서 페이지 위 또는 아래로 이동
 

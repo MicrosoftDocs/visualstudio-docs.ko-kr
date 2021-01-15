@@ -1,5 +1,7 @@
 ---
 title: DebuggerDisplay를 사용하여 사용자 지정 정보 표시 | Microsoft Docs
+description: DebuggerDisplayAttribute의 인스턴스를 사용하여 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418784"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150758"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용하여 디버거에 표시할 내용 지시(C#, Visual Basic, F#, C++/CLI)
 

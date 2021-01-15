@@ -1,5 +1,7 @@
 ---
 title: 프로세스 탭, 창 속성 대화 상자 | Microsoft Docs
+description: 창 속성의 프로세스 탭을 사용하여 선택한 창을 만든 스레드의 ID와 스레드를 소유한 프로세스의 ID를 표시합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903745"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975071"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 프로세스 탭
-**프로세스** 탭을 사용하여 선택한 창의 프로세스를 식별할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성**을 선택합니다.
+**프로세스** 탭을 사용하여 선택한 창의 프로세스를 식별할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.
 
  **프로세스** 탭에서 다음 설정을 사용할 수 있습니다.
 

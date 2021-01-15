@@ -1,5 +1,7 @@
 ---
 title: 소스 서버 보안 경고 | Microsoft Docs
+description: Visual Studio 디버거의 소스 서버 보안 경고 알림에 관해 알아봅니다. 원본 서버를 사용하는 경우 잠재적인 보안 위협을 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729568"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149120"
 ---
 # <a name="source-server-security-alert"></a>소스 서버 보안 경고
 소스 서버를 사용할 경우 알 수 있고 신뢰할 수 있는 위치의 기호 파일만 사용합니다.

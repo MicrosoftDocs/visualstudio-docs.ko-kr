@@ -1,5 +1,7 @@
 ---
 title: WPF 트리 시각화 도우미 사용 | Microsoft Docs
+description: WPF(Windows Presentation Foundation) 시각화 도우미를 사용하여 WPF 개체의 시각적 트리를 탐색하고 Visual Studio에서 WPF 종속성 속성을 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ebe49365d5854a363b49ba0bde6431ae2121ebd
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 83b11ec1c091d2a63ed89cd3089bc3b507b0db8f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851062"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149029"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>방법: WPF 트리 시각화 도우미 사용
 WPF 트리 시각화 도우미를 사용하여 WPF 개체의 표시 트리를 탐색하고 트리에 포함된 개체의 WPF 종속성 속성을 볼 수 있습니다. 시각적 트리에 관한 자세한 내용은 [WPF의 트리](/dotnet/framework/wpf/advanced/trees-in-wpf)를 참조하세요. 종속성 속성에 관한 자세한 내용은 [종속성 속성 개요](/dotnet/framework/wpf/advanced/dependency-properties-overview)를 참조하세요.
@@ -37,7 +39,7 @@ WPF 트리 시각화 도우미를 사용하여 WPF 개체의 표시 트리를 �
 
      시각화 도우미의 목록이 나타납니다.
 
-2. **WPF 트리 시각화 도우미**를 클릭합니다.
+2. **WPF 트리 시각화 도우미** 를 클릭합니다.
 
 ### <a name="to-search-the-visual-tree"></a>표시 트리를 검색하려면
 
@@ -45,11 +47,11 @@ WPF 트리 시각화 도우미를 사용하여 WPF 개체의 표시 트리를 �
 
   WPF 트리 시각화 도우미가 입력한 문자열과 일치하는 표시 트리의 첫 번째 개체를 즉시 찾습니다. 문자를 추가로 입력하여 좀 더 정확하게 일치하는 항목을 찾을 수 있습니다.
 
-  - 표시 트리 내에서 다음 일치 항목으로 이동하려면 **다음**을 클릭합니다.
+  - 표시 트리 내에서 다음 일치 항목으로 이동하려면 **다음** 을 클릭합니다.
 
-  - 이전 일치 항목으로 이동하려면 **이전**을 클릭합니다.
+  - 이전 일치 항목으로 이동하려면 **이전** 을 클릭합니다.
 
-  - 검색 조건을 지우려면 **지우기**를 클릭합니다.
+  - 검색 조건을 지우려면 **지우기** 를 클릭합니다.
 
 ### <a name="to-search-the-properties-list"></a>속성 목록을 검색하려면
 
@@ -57,7 +59,7 @@ WPF 트리 시각화 도우미를 사용하여 WPF 개체의 표시 트리를 �
 
   WPF 트리 시각화 도우미가 입력한 문자열과 일치하는 속성을 즉시 찾습니다. 이제 목록에는 입력한 문자열과 일치하는 속성만 표시됩니다. 문자를 추가로 입력하여 좀 더 정확하게 일치하는 항목을 찾을 수 있습니다.
 
-  - 검색 조건을 지우려면 **지우기**를 클릭합니다.
+  - 검색 조건을 지우려면 **지우기** 를 클릭합니다.
 
 ### <a name="to-close-the-visualizer"></a>시각화 도우미를 닫으려면
 

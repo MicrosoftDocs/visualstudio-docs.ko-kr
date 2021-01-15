@@ -1,5 +1,7 @@
 ---
 title: 시각화 도우미 아키텍처 | Microsoft Docs
+description: 시각화 도우미는 특정 형식의 데이터 요소를 표시하며 편집도 허용할 수 있습니다. 시각화 도우미의 아키텍처에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187163"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149757"
 ---
 # <a name="visualizer-architecture"></a>시각화 도우미 아키텍처
 디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.

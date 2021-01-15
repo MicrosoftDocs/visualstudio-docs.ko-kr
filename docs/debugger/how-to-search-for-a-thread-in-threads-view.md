@@ -1,5 +1,7 @@
 ---
 title: 스레드 뷰에서 스레드 검색 | Microsoft Docs
+description: Visual Studio에서 디버그할 때 스레드 ID 또는 모듈 문자열을 검색 조건으로 사용하여 Spy++ 도구의 스레드 뷰에서 특정 스레드를 검색합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851985"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148535"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>방법: 스레드 뷰에서 스레드 검색
 스레드 뷰에서 스레드 ID 또는 모듈 문자열을 검색 조건으로 사용하여 특정 스레드를 검색할 수 있습니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에는 스레드 트리에서 선택한 스레드의 특성이 표시됩니다.
@@ -24,7 +26,7 @@ ms.locfileid: "90851985"
 
 1. Spy++와 활성 [스레드 뷰](../debugger/threads-view.md) 창이 보이도록 창을 정렬합니다.
 
-2. **검색** 메뉴에서 **스레드 찾기**를 선택합니다.
+2. **검색** 메뉴에서 **스레드 찾기** 를 선택합니다.
 
     [스레드 검색 대화 상자](../debugger/thread-search-dialog-box.md)가 열립니다.
 
@@ -33,10 +35,10 @@ ms.locfileid: "90851985"
 4. 값을 지정하지 않을 필드의 선택을 취소합니다.
 
    > [!TIP]
-   > 모듈이 소유한 모든 스레드를 찾으려면 **스레드** 텍스트 상자의 선택을 취소하고 **모듈** 상자에 모듈 이름을 입력합니다. 그리고 **다음 찾기**를 사용하여 계속해서 스레드를 검색합니다.
+   > 모듈이 소유한 모든 스레드를 찾으려면 **스레드** 텍스트 상자의 선택을 취소하고 **모듈** 상자에 모듈 이름을 입력합니다. 그리고 **다음 찾기** 를 사용하여 계속해서 스레드를 검색합니다.
 
-5. 검색의 초기 방향으로 **위로** 또는 **아래로**를 선택합니다.
+5. 검색의 초기 방향으로 **위로** 또는 **아래로** 를 선택합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
    일치하는 스레드가 검색되면 스레드 뷰 창에 강조 표시됩니다.

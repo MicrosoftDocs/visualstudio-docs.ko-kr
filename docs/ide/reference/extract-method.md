@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569701"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129473"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 
@@ -40,21 +40,21 @@ ms.locfileid: "75569701"
 
    - C#:
 
-       ![강조 표시된 코드 - C#](media/extractmethod-highlight-cs.png)
+       !Program 클래스의 C# 코드를 보여 주는 스크린샷 해당 클래스의 Main 함수에서 코드 줄이 강조 표시됩니다.](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![강조 표시된 코드 - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Main Sub의 Visual Basic 코드를 보여 주는 스크린샷 해당 Sub에서 코드 줄이 강조 표시됩니다.](media/extractmethod-highlight-vb.png)
 
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - **Ctrl+R**을 누른 다음 **Ctrl+M**을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
-      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **메서드 추출**을 선택합니다.
+      - **Ctrl+R** 을 누른 다음 **Ctrl+M** 을 누릅니다. 바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **메서드 추출** 을 선택합니다.
    - **마우스**
-      - **편집 > 리팩터링 > 메서드 추출**을 선택합니다.
-      - 코드를 마우스 오른쪽 단추로 클릭하고 **리팩터링 > 추출 > 메서드 추출**을 선택합니다.
-      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **메서드 추출**을 선택합니다.
+      - **편집 > 리팩터링 > 메서드 추출** 을 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고 **리팩터링 > 추출 > 메서드 추출** 을 선택합니다.
+      - 코드를 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **메서드 추출** 을 선택합니다.
 
    메서드가 즉시 만들어집니다. 이제 여기에서 새 이름을 입력하여 간단히 메서드 이름을 바꿀 수 있습니다.
 
@@ -63,11 +63,11 @@ ms.locfileid: "75569701"
 
    - C#:
 
-      ![메서드 이름 바꾸기 - C#](media/extractmethod-rename-cs.png)
+      ![Program 클래스의 C# 코드를 보여 주는 스크린샷 메서드 이름이 강조 표시되고 이름 바꾸기 팝업 창이 열립니다.](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![메서드 이름 바꾸기 - Visual Basic](media/extractmethod-rename-vb.png)
+      ![Main Sub의 Visual Basic 코드를 보여 주는 스크린샷 메서드 이름이 강조 표시되고 이름 바꾸기 팝업 창이 열립니다.](media/extractmethod-rename-vb.png)
 
 3. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 

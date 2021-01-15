@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: IntelliTrace를 사용하여 Visual Studio에서 코드 실행 기록을 기록하고 추적합니다. 특정 이벤트를 기록하고 관련 코드를 검사하고 오류를 디버그합니다.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600252"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149003"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise의 IntelliTrace(C#, Visual Basic, C++)
 
@@ -165,7 +167,7 @@ IntelliTrace가 호출 정보를 어느 정도 수집할지 제어하려면 관�
 
 기본적으로 IntelliTrace에서는 선택한 IntelliTrace 이벤트에 대해서만 데이터를 수집합니다. 코드의 구조와 구성에 따라 애플리케이션이 느려지거나 느려지지 않을 수 있습니다. 예를 들어 IntelliTrace가 자주 이벤트를 기록한다면 이로 인해 애플리케이션 속도가 느려질 수 있습니다. 또한 이에 따라 애플리케이션 리팩터링을 고려해 볼 수도 있습니다.
 
-호출 정보를 수집하면 애플리케이션 성능이 크게 느려질 수 있습니다. 또한 IntelliTrace 로그 파일(.iTrace 파일)을 디스크에 저장하는 경우 로그 파일의 크기도 커질 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .iTrace 파일의 최대 크기를 변경하려면 **도구**, **옵션**, **IntelliTrace**, **고급**으로 이동합니다.
+호출 정보를 수집하면 애플리케이션 성능이 크게 느려질 수 있습니다. 또한 IntelliTrace 로그 파일(.iTrace 파일)을 디스크에 저장하는 경우 로그 파일의 크기도 커질 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .iTrace 파일의 최대 크기를 변경하려면 **도구**, **옵션**, **IntelliTrace**, **고급** 으로 이동합니다.
 
 ### <a name="blogs"></a>블로그
 

@@ -1,5 +1,7 @@
 ---
 title: Spy++ 참조 | Microsoft Docs
+description: Spy++ 디버깅 도구에서 각 메뉴 명령과 대화 상자를 설명하는 문서의 참조 링크 목록을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902558"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147976"
 ---
 # <a name="spy-reference"></a>Spy++ 참조
 각 Spy++ 메뉴 및 대화 상자에 대한 설명은 아래에 나열된 섹션을 참조하세요.
@@ -30,9 +32,9 @@ ms.locfileid: "62902558"
 
  [창 속성 대화 상자](../debugger/window-properties-dialog-box.md) 창 뷰에서 선택된 창의 속성을 표시하는 데 사용됩니다.
 
- [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md)는 메시지 뷰에 나열되는 메시지를 선택하는 데 사용됩니다.
+ [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 메시지 뷰에 나열되는 메시지를 선택하는 데 사용됩니다.
 
- [메시지 속성 대화 상자](../debugger/message-properties-dialog-box.md)는 메시지 뷰에서 선택한 메시지의 속성을 표시하는 데 사용됩니다.
+ [메시지 속성 대화 상자](../debugger/message-properties-dialog-box.md) 메시지 뷰에서 선택한 메시지의 속성을 표시하는 데 사용됩니다.
 
  [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)는 프로세스 뷰에서 선택한 프로세스의 속성을 표시하는 데 사용됩니다.
 

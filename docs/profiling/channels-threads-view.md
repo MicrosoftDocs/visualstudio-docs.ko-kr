@@ -1,5 +1,7 @@
 ---
 title: 채널(스레드 뷰) | Microsoft 문서
+description: Visual Studio 동시성 시각화 도우미에서 채널을 사용하는 경우 스레드 뷰에 관해 알아봅니다. 스레드 채널, 디스크 채널, 마커 채널, GPU 채널을 표시합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18a636d83210b2329d103b1babdf47e697fd5c7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537087"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148613"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 동시성 시각화 도우미는 스레드 채널, 디스크 채널, 표식 채널 및 GPU 채널의 4가지 채널을 보여줍니다.

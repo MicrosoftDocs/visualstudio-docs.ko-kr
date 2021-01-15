@@ -1,5 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자, 페이지 파일 탭 | Microsoft Docs
+description: 프로세스 속성의 페이지 파일 탭을 사용하여 프로세스의 페이징 파일을 검토합니다. 이 문서에서는 사용 가능한 설정을 설명합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904109"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975058"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 페이지 파일 탭
-**페이지 파일** 탭을 사용하여 프로세스의 페이징 파일을 검사할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성**을 선택합니다.
+**페이지 파일** 탭을 사용하여 프로세스의 페이징 파일을 검사할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.
 
  **페이지 파일** 탭에서 다음 설정을 사용할 수 있습니다.
 

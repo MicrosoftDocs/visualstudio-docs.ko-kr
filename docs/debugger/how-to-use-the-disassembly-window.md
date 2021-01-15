@@ -1,6 +1,7 @@
 ---
 title: 디버거에서 디스어셈블리 코드 보기 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio에서 디스어셈블리 창을 사용하여 컴파일러에서 만든 명령에 따라 어셈블리 코드를 표시합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808170"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150615"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 디스어셈블리 코드 보기(C#, C++, Visual Basic, F#)
 
@@ -54,13 +55,13 @@ ms.locfileid: "90808170"
 
 어셈블리 코드는 프로세서 레지스터 또는 공용 언어 런타임 레지스터(관리 코드의 경우)에 크게 의존합니다. **디스어셈블리** 창과 **레지스터** 창을 함께 사용하면 레지스터 콘텐츠를 검사할 수 있습니다.
 
-어셈블리 언어가 아닌 원시 숫자 형식으로 컴퓨터 코드 명령을 보려면 **메모리** 창을 사용하거나 **디스어셈블리** 창의 바로 가기 메뉴에서 **코드 바이트**를 선택합니다.
+어셈블리 언어가 아닌 원시 숫자 형식으로 컴퓨터 코드 명령을 보려면 **메모리** 창을 사용하거나 **디스어셈블리** 창의 바로 가기 메뉴에서 **코드 바이트** 를 선택합니다.
 
 ## <a name="use-the-disassembly-window"></a>디스어셈블리 창 사용
 
-**디스어셈블리** 창을 사용하려면 **도구** > **옵션** > **디버깅**에서 **주소 수준 디버깅 사용**을 선택합니다.
+**디스어셈블리** 창을 사용하려면 **도구** > **옵션** > **디버깅** 에서 **주소 수준 디버깅 사용** 을 선택합니다.
 
-디버그하는 동안 **디스어셈블리** 창을 열려면 **창** > **디스어셈블리**를 선택하거나 **Alt**+**8**을 누릅니다.
+디버그하는 동안 **디스어셈블리** 창을 열려면 **창** > **디스어셈블리** 를 선택하거나 **Alt**+**8** 을 누릅니다.
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.

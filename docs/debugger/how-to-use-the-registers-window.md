@@ -1,6 +1,7 @@
 ---
 title: 디버거에서 레지스터 값 보기 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio의 레지스터 창에서 레지스터 값을 표시합니다. 디버깅 중에는 앱에서 코드가 실행될 때 레지스터 값이 변경됩니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348576"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148041"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>레지스터 창에서 레지스터 값 보기(C#, C++, Visual Basic, F#)
 
@@ -48,12 +49,12 @@ ms.locfileid: "85348576"
 
 **레지스터 창을 열려면**
 
-1. **도구**(또는 **디버그**) > **옵션** > **디버깅**에서 **주소 수준 디버깅 사용**을 선택하여 주소 수준 디버깅을 사용하도록 설정합니다.
+1. **도구**(또는 **디버그**) > **옵션** > **디버깅** 에서 **주소 수준 디버깅 사용** 을 선택하여 주소 수준 디버깅을 사용하도록 설정합니다.
 
-1. 디버깅이 실행되는 동안 또는 중단점에서 **디버그** > **Windows** > **레지스터**를 선택하거나 **Alt**+**5**를 누릅니다.
+1. 디버깅이 실행되는 동안 또는 중단점에서 **디버그** > **Windows** > **레지스터** 를 선택하거나 **Alt**+**5** 를 누릅니다.
 
 >[!NOTE]
->대화 상자와 메뉴 명령은 Visual Studio 버전 또는 설정에 따라 다를 수도 있습니다. 설정을 변경하려면 Visual Studio **도구** 메뉴에서 **가져오기 및 내보내기 설정**을 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
+>대화 상자와 메뉴 명령은 Visual Studio 버전 또는 설정에 따라 다를 수도 있습니다. 설정을 변경하려면 Visual Studio **도구** 메뉴에서 **가져오기 및 내보내기 설정** 을 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
 
 ### <a name="see-also"></a>참조
 

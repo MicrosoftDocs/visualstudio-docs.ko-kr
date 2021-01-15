@@ -1,5 +1,7 @@
 ---
 title: Spy 메뉴 명령 | Microsoft Docs
+description: Spy++ 창 및 뷰에서 작업하기 위한 명령을 제공하는 Spy 메뉴를 살펴봅니다. 사용할 수 있는 명령에는 창, 프로세스, 스레드, 로그 메시지, 창 찾기가 포함됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929751"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148132"
 ---
 # <a name="spy-menu-commands"></a>Spy 메뉴 명령
 **Spy** 메뉴는 Spy++ 창과 뷰에서 사용할 명령을 제공합니다.

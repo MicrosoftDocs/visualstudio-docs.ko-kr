@@ -1,5 +1,7 @@
 ---
 title: Spy++ 사용 | Microsoft Docs
+description: Spy++(SPYXX.EXE)는 시스템의 프로세스, 스레드, 창, 창 메시지에 관한 그래픽 뷰를 제공합니다. 여기에서 관련 문서의 링크를 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929905"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150927"
 ---
 # <a name="using-spy"></a>Spy++ 사용
 Spy++ (SPYXX.EXE)는 시스템의 프로세스, 스레드, 창 및 창 메시지를 그래픽으로 표시하는 Win32 기반 유틸리티입니다. Spy++ 도움말의 이 섹션에는 다음과 같은 도움말 항목이 있습니다.

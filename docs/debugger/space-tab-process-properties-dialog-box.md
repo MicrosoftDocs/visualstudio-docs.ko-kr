@@ -1,5 +1,7 @@
 ---
 title: 프로세스 속성 대화 상자, 공간 탭 | Microsoft Docs
+description: 디버그할 때 Spy++에서 프로세스 속성 대화 상자를 표시하는 방법을 알아봅니다. 공간 탭에서 사용할 수 있는 설정을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929816"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149081"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 공간 탭
-**공간** 탭을 사용하여 프로세스의 주소 공간을 검사할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성**을 선택합니다.
+**공간** 탭을 사용하여 프로세스의 주소 공간을 검사할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.
 
  **공간** 탭에서 다음 설정을 사용할 수 있습니다.
 

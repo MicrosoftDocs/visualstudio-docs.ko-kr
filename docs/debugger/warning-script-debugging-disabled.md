@@ -1,5 +1,7 @@
 ---
 title: '경고: 스크립트 디버깅 사용 안 함 | Microsoft Docs'
+description: “스크립트 디버깅 사용 안 함” 경고는 Internet Explorer에서 스크립트 디버깅을 사용할 수 없는 상태에서 스크립트를 디버그할 때 발생합니다. 해당 기능을 사용하도록 설정하는 단계를 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648499"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149562"
 ---
 # <a name="warning-script-debugging-disabled"></a>경고: 스크립트 디버깅 사용 안 함
 Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습니다.
@@ -29,7 +31,7 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer에서 스크립트 디버깅을 사용하려면
 
-1. Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션**을 선택합니다.
+1. Internet Explorer의 **도구** 메뉴에서 **인터넷 옵션** 을 선택합니다.
 
 2. **인터넷 옵션** 대화 상자에서 **고급** 탭을 클릭합니다.
 
@@ -37,7 +39,7 @@ Internet Explorer에서는 현재 스크립트 디버깅을 사용하지 않습�
 
 4. **스크립트 디버깅 사용 안 함(Internet Explorer)** 의 선택을 취소합니다.
 
-5. **확인**을 클릭합니다.
+5. **확인** 을 클릭합니다.
 
 6. Internet Explorer를 종료하고 다시 시작합니다.
 

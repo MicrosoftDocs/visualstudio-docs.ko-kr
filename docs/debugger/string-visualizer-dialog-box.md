@@ -1,7 +1,8 @@
 ---
 title: 문자열 시각화 도우미 대화 상자 | Microsoft Docs
+description: Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도우미 대화 상자를 사용하여 문자열을 표시합니다.
 ms.date: 10/10/2018
-ms.custom: seoapril2019
+ms.custom: seoapril2019, SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c33459312cb0c5c4dd4be3bc043956ccb33a6e1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430826"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150277"
 ---
 # <a name="string-visualizer-dialog-box"></a>문자열 시각화 도우미 대화 상자
 
@@ -42,7 +43,7 @@ Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도
 
 **식** 필드는 마우스로 가리키는 변수나 식을 표시합니다.
 
-**값** 필드는 문자열 값을 표시합니다. 빈 **값**은 선택한 시각화 도우미가 문자열을 인식할 수 없음을 의미합니다. 예를 들어 **XML 시각화 도우미**는 XML 태그나 JSON 문자열이 없는 텍스트 문자열에 대해 빈 **값**을 표시합니다. 선택한 시각화 도우미가 인식할 수 없는 문자열을 보려면 대신 **텍스트 시각화 도우미**를 선택하세요. **텍스트 시각화 도우미**는 일반 텍스트를 표시합니다.
+**값** 필드는 문자열 값을 표시합니다. 빈 **값** 은 선택한 시각화 도우미가 문자열을 인식할 수 없음을 의미합니다. 예를 들어 **XML 시각화 도우미** 는 XML 태그나 JSON 문자열이 없는 텍스트 문자열에 대해 빈 **값** 을 표시합니다. 선택한 시각화 도우미가 인식할 수 없는 문자열을 보려면 대신 **텍스트 시각화 도우미** 를 선택하세요. **텍스트 시각화 도우미** 는 일반 텍스트를 표시합니다.
 
 ### <a name="json-string-data"></a>JSON 문자열 데이터
 

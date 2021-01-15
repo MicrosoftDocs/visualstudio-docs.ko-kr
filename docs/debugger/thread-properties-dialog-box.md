@@ -1,5 +1,7 @@
 ---
 title: 스레드 속성 대화 상자 | Microsoft Docs
+description: Spy++ 디버깅 도구의 스레드 속성 대화 상자에 관해 알아봅니다. 이 대화 상자는 특정 스레드에 대해 자세히 알아보는 데 사용됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929709"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149133"
 ---
 # <a name="thread-properties-dialog-box"></a>스레드 속성 대화 상자
-이 대화 상자는 특정 스레드에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 [스레드 뷰](../debugger/threads-view.md) 창으로 이동하거나 [메시지 뷰](../debugger/messages-view.md)를 열고 메시지를 확장합니다. 트리에서 스레드 노드를 선택하고 **보기** 메뉴에서 **속성**을 선택합니다.
+이 대화 상자는 특정 스레드에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 [스레드 뷰](../debugger/threads-view.md) 창으로 이동하거나 [메시지 뷰](../debugger/messages-view.md)를 열고 메시지를 확장합니다. 트리에서 스레드 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.
 
  **일반** 탭만 표시됩니다. Windows 98 및 Windows 95 운영 체제에서는 이 탭의 수정된 버전이 표시됩니다.
 
@@ -37,4 +39,4 @@ ms.locfileid: "62929709"
 
  [Spy++ 뷰](../debugger/spy-increment-views.md) 창, 메시지, 프로세스 및 스레드의 Spy++ 트리 뷰에 대해 설명합니다.
 
- [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법을 설명합니다.
+ [Spy++ 사용](../debugger/using-spy-increment.md) Spy++ 도구를 소개하고 해당 도구를 사용할 수 있는 방법에 대해 설명합니다.

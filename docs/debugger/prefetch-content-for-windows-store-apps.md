@@ -1,5 +1,7 @@
 ---
 title: UWP 앱에서 프리페치된 콘텐츠를 사용하여 디버그 | Microsoft Docs
+description: UWP 앱의 응답성을 개선하려면 ContentPrefetcher를 사용하여 Windows에서 웹 콘텐츠를 프리페치하도록 요청합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348069"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975032"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Visual Studio에서 프리페치된 콘텐츠를 사용하여 UWP 앱 디버그
 
@@ -30,9 +32,9 @@ ms.locfileid: "85348069"
 
 1. 응용 프로그램을 시작하여 프리페치 콘텐츠 URI를 앱과 함께 등록합니다. **디버그** 메뉴에서 **디버깅 시작**(키보드 바로 가기: F5)을 선택합니다.
 
-2. **디버그** 메뉴에서 **디버깅 중지**를 선택합니다(바로 가기 키: Shift+F5).
+2. **디버그** 메뉴에서 **디버깅 중지** 를 선택합니다(바로 가기 키: Shift+F5).
 
-3. **디버그** 메뉴에서 **기타 디버그 대상**을 선택한 다음, **Windows 스토어 앱 프리페치 트리거**를 선택합니다.
+3. **디버그** 메뉴에서 **기타 디버그 대상** 을 선택한 다음, **Windows 스토어 앱 프리페치 트리거** 를 선택합니다.
 
    이제 프리페치된 웹 리소스로 응용 프로그램을 디버그, 테스트 또는 분석할 수 있습니다.
 

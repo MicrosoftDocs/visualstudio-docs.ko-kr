@@ -1,6 +1,7 @@
 ---
 title: 디버그 중 다른 스레드로 전환
-ms.custom: seodec18
+description: Visual Studio에서 다중 스레드 애플리케이션을 디버그하는 동안 다른 스레드로 전환하는 여러 가지 방법을 검토합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9306e68c7d8906c6956eb5e3810327898bc56567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df37beafe7a6c8f88631568ea9eb36394c105a5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348914"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150719"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>방법: Visual Studio에서 디버그 중 다른 스레드로 전환(C#, Visual Basic, C++)
 다중 스레드 애플리케이션을 디버그하는 경우 작업 중인 스레드에서 다른 스레드로 전환하는 여러 가지 방법 중 하나를 사용할 수 있습니다.
@@ -37,9 +38,9 @@ ms.locfileid: "85348914"
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>소스 창에서 스레드를 전환하려면
 
-- 왼쪽 여백에서 스레드 마커 아이콘 ![스레드 마커](../debugger/media/dbg-thread-marker.png "ThreadMarker")를 마우스 단추로 클릭하고, **전환**을 가리킨 다음, 전환할 스레드의 이름을 클릭합니다. 특정 위치의 스레드만 바로 가기 메뉴에 표시됩니다.
+- 왼쪽 여백에서 스레드 마커 아이콘 ![스레드 마커](../debugger/media/dbg-thread-marker.png "ThreadMarker")를 마우스 단추로 클릭하고, **전환** 을 가리킨 다음, 전환할 스레드의 이름을 클릭합니다. 특정 위치의 스레드만 바로 가기 메뉴에 표시됩니다.
 
-     스레드 마커가 나타나지 않으면 **스레드** 창을 마우스 오른쪽 단추로 클릭하고 **소스의 스레드 표시**가 선택되어 있는지 확인합니다.
+     스레드 마커가 나타나지 않으면 **스레드** 창을 마우스 오른쪽 단추로 클릭하고 **소스의 스레드 표시** 가 선택되어 있는지 확인합니다.
 
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>디버그 위치 도구 모음에서 스레드로 전환하려면
 

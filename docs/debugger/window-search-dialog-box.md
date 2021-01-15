@@ -1,5 +1,7 @@
 ---
 title: 창 검색 대화 상자 | Microsoft Docs
+description: 창 검색을 사용하여 창 뷰에 나열된 특정 창의 노드를 찾고 선택합니다. 설정에 관한 설명은 이 문서를 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900925"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148990"
 ---
 # <a name="window-search-dialog-box"></a>창 경로 대화 상자
-이 대화 상자는 [창 뷰](../debugger/windows-view.md)에서 특정 창의 노드를 찾아 선택하는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 창 뷰 창으로 이동합니다. 그런 다음, **검색** 메뉴에서 **창 찾기**를 선택합니다.
+이 대화 상자는 [창 뷰](../debugger/windows-view.md)에서 특정 창의 노드를 찾아 선택하는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 창 뷰 창으로 이동합니다. 그런 다음, **검색** 메뉴에서 **창 찾기** 를 선택합니다.
 
- **찾기 도구**를 사용하여 창을 선택하거나, 창 핸들을 입력하거나, 캡션 및 클래스에 따라 창을 식별할 수 있습니다.
+ **찾기 도구** 를 사용하여 창을 선택하거나, 창 핸들을 입력하거나, 캡션 및 클래스에 따라 창을 식별할 수 있습니다.
 
  다음 설정을 사용할 수 있습니다.
 

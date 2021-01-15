@@ -1,5 +1,7 @@
 ---
 title: 코드 변경 중지 | Microsoft Docs
+description: Visual Studio 디버깅 세션 중에 편집하며 계속하기 기능을 사용하는 동안 코드 변경 적용을 중지하는 방법을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a775944563d63834abf5e32b1f9d4c2453444c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851881"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150706"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "90851881"
 
 ### <a name="to-stop-applying-code-changes"></a>코드 변경 내용의 적용을 중지하려면
 
-- **디버그** 메뉴에서 **코드 변경 내용 적용 중지**를 선택합니다.
+- **디버그** 메뉴에서 **코드 변경 내용 적용 중지** 를 선택합니다.
 
   이 메뉴 항목은 코드 변경 내용을 적용하는 동안에만 표시됩니다.
 

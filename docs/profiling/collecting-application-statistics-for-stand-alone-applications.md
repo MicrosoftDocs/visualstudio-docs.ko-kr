@@ -1,5 +1,6 @@
 ---
 title: '프로파일러 명령줄: 독립 실행형 앱 통계 수집'
+description: Visual Studio에서 프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션의 애플리케이션 통계를 수집합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 150a1a010a33a3b4fcfe0954ec70db2ff4de7816
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6567b0116227bf259eb3591bc6880a6841252869
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808918"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148303"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 애플리케이션 통계 수집
 이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 클라이언트(독립 실행형) 애플리케이션에 대한 성능 통계를 수집하기 위한 절차 및 옵션을 설명합니다.
@@ -28,7 +29,7 @@ ms.locfileid: "90808918"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|Task|관련 콘텐츠|
+|작업|관련 콘텐츠|
 |----------|---------------------|
 |**프로파일링을 사용하여 애플리케이션 시작**|-   [방법: 독립 실행형 애플리케이션을 시작하여 애플리케이션 통계 수집](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**실행 중인 .NET Framework 애플리케이션에 프로파일러 연결**|-   [방법: .NET Framework 애플리케이션에 프로파일러 연결 및 애플리케이션 통계 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
@@ -39,7 +40,7 @@ ms.locfileid: "90808918"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|Task|관련 콘텐츠|
+|작업|관련 콘텐츠|
 |----------|---------------------|
 |**애플리케이션 계측**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**.NET 메모리 할당 및 가비지 수집 데이터**|-   [.NET Framework 메모리 데이터 수집](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|

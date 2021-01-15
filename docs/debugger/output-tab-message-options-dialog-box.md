@@ -1,5 +1,7 @@
 ---
 title: 메시지 옵션 대화 상자, 출력 탭 | Microsoft Docs
+description: 메시지 옵션의 출력 탭을 사용하여 메시지 뷰에 표시되는 메시지 데이터를 지정합니다. 이 문서에서는 사용 가능한 설정을 설명합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905077"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975084"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 출력 탭
-**출력** 탭을 사용하여 각 메시지의 어떤 데이터를 [메시지 뷰](../debugger/messages-view.md)에 나열할지 지정할 수 있습니다. [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md)를 표시하려면 **Spy** 메뉴에서 **로그 메시지**를 선택합니다.
+**출력** 탭을 사용하여 각 메시지의 어떤 데이터를 [메시지 뷰](../debugger/messages-view.md)에 나열할지 지정할 수 있습니다. [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md)를 표시하려면 **Spy** 메뉴에서 **로그 메시지** 를 선택합니다.
 
  **출력** 탭에서 다음 설정을 사용할 수 있습니다.
 

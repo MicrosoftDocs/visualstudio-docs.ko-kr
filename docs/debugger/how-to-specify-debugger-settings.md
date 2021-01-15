@@ -1,5 +1,7 @@
 ---
 title: 디버거 설정 지정 | Microsoft Docs
+description: 'Visual Studio에서 디버거 동작의 다양한 설정(예: 변수 표시 방법, 표시되는 경고 및 중단점 설정 방법)을 지정합니다.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851946"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150771"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정은 **옵션** 대화 상자에서 지정합니다.
 
 ### <a name="to-set-debugger-options"></a>디버거 옵션을 설정하려면
 
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+1. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
 2. **옵션** 대화 상자에서 **디버깅** 폴더를 엽니다.
 

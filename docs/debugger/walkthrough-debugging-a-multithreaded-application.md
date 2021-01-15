@@ -1,5 +1,7 @@
 ---
 title: 디버거에서 스레드 보기 | Microsoft Docs
+description: 스레드를 사용하여 스레드를 검토하고 제어합니다. 스레드를 그룹화, 정렬, 플래그 지정, 동결, 재개, 검색하고 열을 선택하고 호출 스택을 표시할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821585"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149705"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visual Studio 디버거에서 스레드 창을 사용하여 스레드 보기(C#, Visual Basic, C++)
 디버그 중인 애플리케이션의 스레드를 **스레드** 창에서 검사하고 작업할 수 있습니다. **스레드** 창을 사용하는 방법에 대한 단계별 지침은 [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md)를 참조하세요.
@@ -64,23 +66,23 @@ ms.locfileid: "67821585"
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>중단 모드나 실행 모드에서 스레드 창을 표시하려면
 
-- Visual Studio가 디버그 모드에 있는 동안 **디버그** 메뉴를 선택하고 **창**을 가리킨 다음, **스레드**를 선택합니다.
+- Visual Studio가 디버그 모드에 있는 동안 **디버그** 메뉴를 선택하고 **창** 을 가리킨 다음, **스레드** 를 선택합니다.
 
 ### <a name="to-display-or-hide-a-column"></a>열을 표시하거나 숨기려면
 
-- **스레드** 창의 맨 위에 있는 도구 모음에서 **열**을 선택합니다. 그런 다음, 표시하거나 숨기려는 열의 이름을 선택하거나 선택 취소합니다.
+- **스레드** 창의 맨 위에 있는 도구 모음에서 **열** 을 선택합니다. 그런 다음, 표시하거나 숨기려는 열의 이름을 선택하거나 선택 취소합니다.
 
 ## <a name="display-flagged-threads"></a>플래그가 지정된 스레드 표시
  **스레드** 창에서 아이콘으로 스레드를 표시하여 특별한 주의가 필요한 스레드에 플래그를 설정할 수 있습니다. 자세한 내용은 [방법: 스레드에 플래그 지정 및 스레드의 플래그 해제](../debugger/how-to-flag-and-unflag-threads.md)를 참조하세요. **스레드** 창에서 모든 스레드를 표시하거나 플래그가 지정된 스레드만 표시하도록 선택할 수 있습니다.
 
 ### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면
 
-- **스레드** 창의 맨 위에 있는 도구 모음에서 **플래그가 지정된 스레드만 표시**를 선택합니다. 이 옵션이 흐리게 표시되는 경우 일부 스레드에 먼저 플래그를 지정해야 합니다.
+- **스레드** 창의 맨 위에 있는 도구 모음에서 **플래그가 지정된 스레드만 표시** 를 선택합니다. 이 옵션이 흐리게 표시되는 경우 일부 스레드에 먼저 플래그를 지정해야 합니다.
 
 ## <a name="freeze-and-thaw-threads"></a>스레드 동결 및 재개
  스레드를 동결하면 리소스를 사용할 수 있어도 스레드 실행이 시작되지 않습니다.
 
- 네이티브 코드에서는 Windows 함수 `SuspendThread`나 `ResumeThread`를 호출하여 스레드를 일시 중단하거나 다시 시작할 수 있습니다. 또는 MFC 함수 [CWinThread::SuspendThread](/cpp/mfc/reference/CWinThread-class#suspendthread) 및 [CWinThread::ResumeThread](/cpp/mfc/reference/CWinThread-class#resumethread)를 호출할 수도 있습니다. `SuspendThread`나 `ResumeThread`를 호출하면 **스레드** 창에 표시되는 *일시 중단 횟수*가 변경됩니다. 네이티브 스레드를 동결하거나 재개하는 경우에는 일시 중단 횟수가 변경되지 않습니다. 스레드가 재개되고 일시 중단 횟수가 0인 경우가 아니라면 네이티브 코드에서 스레드를 실행할 수 없습니다.
+ 네이티브 코드에서는 Windows 함수 `SuspendThread`나 `ResumeThread`를 호출하여 스레드를 일시 중단하거나 다시 시작할 수 있습니다. 또는 MFC 함수 [CWinThread::SuspendThread](/cpp/mfc/reference/CWinThread-class#suspendthread) 및 [CWinThread::ResumeThread](/cpp/mfc/reference/CWinThread-class#resumethread)를 호출할 수도 있습니다. `SuspendThread`나 `ResumeThread`를 호출하면 **스레드** 창에 표시되는 *일시 중단 횟수* 가 변경됩니다. 네이티브 스레드를 동결하거나 재개하는 경우에는 일시 중단 횟수가 변경되지 않습니다. 스레드가 재개되고 일시 중단 횟수가 0인 경우가 아니라면 네이티브 코드에서 스레드를 실행할 수 없습니다.
 
  관리 코드에서 일시 중단 횟수는 스레드를 동결하거나 재개하면 변경됩니다. 관리 코드에서 스레드를 동결하면 일시 중단 횟수가 1입니다. 네이티브 코드에서 스레드를 동결하면 `SuspendThread` 호출을 사용하지 않는 한 일시 중단 횟수가 0입니다.
 
@@ -89,7 +91,7 @@ ms.locfileid: "67821585"
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>스레드 실행을 중지하거나 재개하려면
 
-- **스레드** 창의 맨 위에 있는 도구 모음에서 **스레드 동결** 또는 **스레드 재개**를 선택합니다.
+- **스레드** 창의 맨 위에 있는 도구 모음에서 **스레드 동결** 또는 **스레드 재개** 를 선택합니다.
 
      이 동작은 **스레드** 창에서 선택되는 스레드에만 적용됩니다.
 
@@ -103,7 +105,7 @@ ms.locfileid: "67821585"
 
   - 스레드를 두 번 클릭합니다.
 
-  - 스레드를 마우스 오른쪽 단추로 클릭하고 **스레드로 전환**을 선택합니다.
+  - 스레드를 마우스 오른쪽 단추로 클릭하고 **스레드로 전환** 을 선택합니다.
 
 ## <a name="group-and-sort-threads"></a>스레드 그룹화 및 정렬
  스레드를 그룹화하면 테이블에 각 그룹의 제목이 나타납니다. 제목에는 **작업자 스레드** 또는 **플래그가 해제된 스레드** 등의 그룹 설명과 트리 컨트롤이 포함됩니다. 각 그룹의 멤버 스레드가 그룹 제목 아래에 나타납니다. 그룹에 대한 멤버 스레드를 숨기려면 트리 컨트롤을 사용하여 그룹을 축소합니다.
@@ -134,7 +136,7 @@ ms.locfileid: "67821585"
 
 ### <a name="to-expand-or-collapse-all-groups"></a>모든 그룹을 확장하거나 축소하려면
 
-- **스레드** 창의 맨 위에 있는 도구 모음에서 **그룹 확장** 또는 **그룹 축소**를 선택합니다.
+- **스레드** 창의 맨 위에 있는 도구 모음에서 **그룹 확장** 또는 **그룹 축소** 를 선택합니다.
 
 ## <a name="search-for-specific-threads"></a>특정 스레드 검색
  **스레드** 창에서 지정된 문자열과 일치하는 스레드를 검색할 수 있습니다. 스레드를 검색하면 창의 열에 검색 문자열과 일치하는 모든 스레드가 표시됩니다. 이 정보에는 **위치** 열의 호출 스택 맨 위에 나타나는 스레드 위치가 포함됩니다. 기본적으로 전체 호출 스택은 검색되지 않습니다.
@@ -149,7 +151,7 @@ ms.locfileid: "67821585"
 
      - **검색** 상자 옆의 드롭다운 목록을 선택하고 이전 검색에서 검색 문자열을 선택합니다.
 
-2. (선택 사항) 검색에 전체 호출 스택을 포함하려면 **호출 스택 검색**을 선택합니다.
+2. (선택 사항) 검색에 전체 호출 스택을 포함하려면 **호출 스택 검색** 을 선택합니다.
 
 ## <a name="display-thread-call-stacks-and-switch-between-frames"></a>스레드 호출 스택 표시 및 프레임 간 전환
 다중 스레드 프로그램에서 각 스레드에는 자신의 고유한 호출 스택이 있습니다. **스레드** 창을 사용하여 편리하게 이러한 스택을 볼 수 있습니다.

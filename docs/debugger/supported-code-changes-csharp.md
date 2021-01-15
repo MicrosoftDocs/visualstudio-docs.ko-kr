@@ -1,5 +1,7 @@
 ---
 title: 지원되는 코드 변경(C# 및 Visual Basic) | Microsoft Docs
+description: Visual Studio에서 C# 또는 Visual Basic 프로젝트를 디버그하는 동안 편집하며 계속하기 기능을 사용하는 경우 지원되는 코드 변경 내용을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509421"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149211"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>지원되는 코드 변경(C# 및 Visual Basic)
 편집하며 계속하기에서는 메서드 본문 내의 코드 변경 유형을 대부분 처리합니다. 그러나 메서드 본문 외부의 변경 내용 대부분과 메서드 본문 내의 몇 가지 변경 내용은 디버깅 중에 적용할 수 없습니다. 이러한 지원되지 않는 변경 내용을 적용하려면 디버깅을 중지하고 새로운 버전의 코드로 다시 시작해야 합니다.
@@ -99,7 +101,7 @@ ms.locfileid: "89509421"
 
 - 포함된 런타임 애플리케이션 디버깅
 
-- **디버그** 메뉴에서 **시작**을 선택하여 애플리케이션을 실행하는 대신 프로세스에 연결을 사용하여 애플리케이션 디버그(**디버그 > 프로세스에 연결**)
+- **디버그** 메뉴에서 **시작** 을 선택하여 애플리케이션을 실행하는 대신 프로세스에 연결을 사용하여 애플리케이션 디버그(**디버그 > 프로세스에 연결**)
 
 - 최적화된 코드 디버깅
 

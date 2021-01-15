@@ -1,5 +1,7 @@
 ---
 title: 네이티브 런타임 검사 사용자 지정 | Microsoft Docs
+description: 메시지 대상 지정, 오류 보고 함수 작성, 오류 정보 쿼리를 포함하여 런타임 검사를 사용자 지정하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730899"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975201"
 ---
 # <a name="native-run-time-checks-customization"></a>네이티브 런타임 검사 사용자 지정
 **/RTC**(런타임 검사 기능)를 사용하여 컴파일하거나 `runtime_checks` pragma를 사용할 때 C 런타임 라이브러리는 네이티브 런타임 검사 기능을 제공합니다. 다음과 같은 경우에는 CRT 런타임 검사를 사용자 지정할 수도 있습니다.

@@ -1,6 +1,8 @@
 ---
 title: Visual Studio 2017 디버거의 새로운 기능 | Microsoft Docs
 titleSuffix: ''
+description: 디버거 버전 15.5의 새로운 기능을 확인합니다. 선택한 프로덕션 내 앱 코드의 스냅샷 및 IntelliTrace 뒤로 이동이 포함됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944222"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149406"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 디버거의 새로운 기능
 
 디버거에는 다음과 같은 새로운 기능이 포함되어 있습니다.
 
-- 15.5 버전의 새로운 기능: **스냅샷 디버거**는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
+- 15.5 버전의 새로운 기능: **스냅샷 디버거** 는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
     스냅샷 컬렉션은 Azure App Service에서 실행되는 다음 웹앱에서 사용할 수 있습니다.
 
@@ -40,17 +42,17 @@ ms.locfileid: "75944222"
 
     자세한 내용은 [스냅샷 디버거를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조하세요.
 
-- Visual Studio Enterprise 버전 15.5의 새로운 기능: **IntelliTrace 뒤로 이동**은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅샷을 자동으로 생성합니다. 기록된 스냅샷을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+- Visual Studio Enterprise 버전 15.5의 새로운 기능: **IntelliTrace 뒤로 이동** 은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅샷을 자동으로 생성합니다. 기록된 스냅샷을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
-    디버그 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다.
+    디버그 도구 모음의 **뒤로 가기** 와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다.
 
     ![뒤로 이동 및 앞으로 이동 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 이동 및 앞으로 이동 단추")
 
     자세한 내용은 [IntelliTrace를 사용하여 이전 앱 상태 검사](view-historical-application-state.md) 페이지를 참조하세요.
 
-- **예외 도우미**는 이전 예외 도우미를 대체하며 오류가 발생한 비모달 대화 상자에 표시됩니다. **예외 도우미**는 모든 내부 예외에 대한 더 빠른 액세스, 디버거의 추가 분석(사용 가능한 경우) 및 예외의 **예외 설정**에 대한 즉각적인 액세스를 제공합니다. 예외 도우미는 표시해야 하는 항목을 차단하는 경우 부동 뷰로 끌 수도 있습니다.
+- **예외 도우미** 는 이전 예외 도우미를 대체하며 오류가 발생한 비모달 대화 상자에 표시됩니다. **예외 도우미** 는 모든 내부 예외에 대한 더 빠른 액세스, 디버거의 추가 분석(사용 가능한 경우) 및 예외의 **예외 설정** 에 대한 즉각적인 액세스를 제공합니다. 예외 도우미는 표시해야 하는 항목을 차단하는 경우 부동 뷰로 끌 수도 있습니다.
 
-    예를 들어 **NullReferenceException**은 이제 null 참조(추가 정보)가 있는 변수를 표시합니다.
+    예를 들어 **NullReferenceException** 은 이제 null 참조(추가 정보)가 있는 변수를 표시합니다.
 
     ![디버거의 예외 도우미](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 

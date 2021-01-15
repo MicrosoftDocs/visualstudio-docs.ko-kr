@@ -1,5 +1,7 @@
 ---
 title: 시각화 도우미 보안 고려 사항 | Microsoft Docs
+description: Visual Studio 디버거의 시각화 도우미는 완전 신뢰로 실행해야 합니다. 고유한 항목을 작성할 때 가능한 보안 위협을 파악하고 적절한 예방 조치를 취합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187153"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149744"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.

@@ -1,6 +1,7 @@
 ---
 title: 디버거를 사용하여 코드 탐색 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio 디버거를 사용하여 코드 문제를 해결하는 방법을 알아봅니다. 항목에는 중단 모드로 전환, 단계별 코드 실행, 대상까지 실행이 포함됩니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729355"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975214"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용하여 코드 탐색
 

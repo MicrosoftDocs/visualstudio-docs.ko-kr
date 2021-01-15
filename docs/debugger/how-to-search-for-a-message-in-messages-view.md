@@ -1,5 +1,7 @@
 ---
 title: 메시지 뷰에서 메시지 검색 | Microsoft Docs
+description: Visual Studio에서 디버그할 때 핸들, 형식 또는 메시지 ID를 검색 조건으로 사용하여 Spy++ 도구의 메시지 뷰에서 특정 메시지를 검색합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852011"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148587"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>방법: 메시지 뷰에서 메시지 검색
 메시지 뷰에서 핸들, 유형 또는 메시지 ID를 검색 조건으로 사용하여 특정 메시지를 검색할 수 있습니다. 이러한 항목 중 하나(또는 조합)는 유효한 검색 조건입니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에 현재 선택한 메시지의 특성이 미리 로드됩니다.
@@ -26,11 +28,11 @@ ms.locfileid: "90852011"
 
 1. Spy++와 활성 [메시지 뷰](../debugger/messages-view.md) 창이 보이도록 창을 정렬합니다.
 
-2. **검색** 메뉴에서 **메시지 찾기**를 선택합니다.
+2. **검색** 메뉴에서 **메시지 찾기** 를 선택합니다.
 
     [메시지 검색 대화 상자](../debugger/message-search-dialog-box.md)가 열립니다.
 
-3. **찾기 도구**를 원하는 창 위로 끕니다. 도구를 끌면 **메시지 검색** 대화 상자가 선택한 창의 세부 정보에 표시됩니다.
+3. **찾기 도구** 를 원하는 창 위로 끕니다. 도구를 끌면 **메시지 검색** 대화 상자가 선택한 창의 세부 정보에 표시됩니다.
 
    - 또는
 
@@ -43,10 +45,10 @@ ms.locfileid: "90852011"
 4. 값을 지정하지 않을 필드의 선택을 취소합니다.
 
    > [!TIP]
-   > 화면을 깔끔하게 유지하려면 **Spy 숨기기** 옵션을 선택합니다. 이 옵션을 사용하면 기본 Spy++ 창이 숨겨지고 다른 애플리케이션 상단에 **창 찾기** 대화 상자만 표시되도록 유지됩니다. Spy++ 주 창은 **확인** 또는 **취소**를 클릭하거나 **Spy++ 숨기기** 옵션을 클릭하면 복원됩니다.
+   > 화면을 깔끔하게 유지하려면 **Spy 숨기기** 옵션을 선택합니다. 이 옵션을 사용하면 기본 Spy++ 창이 숨겨지고 다른 애플리케이션 상단에 **창 찾기** 대화 상자만 표시되도록 유지됩니다. Spy++ 주 창은 **확인** 또는 **취소** 를 클릭하거나 **Spy++ 숨기기** 옵션을 클릭하면 복원됩니다.
 
-5. 검색의 초기 방향으로 **위로** 또는 **아래로**를 선택합니다.
+5. 검색의 초기 방향으로 **위로** 또는 **아래로** 를 선택합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
    일치하는 메시지가 검색되면 메시지 뷰 창에 강조 표시됩니다. [메시지 뷰](../debugger/messages-view.md)를 참조하세요.

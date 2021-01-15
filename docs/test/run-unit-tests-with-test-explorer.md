@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833366"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150511"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -377,6 +377,16 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
 > [!NOTE]
 > 테스트는 추상 클래스에서 인스턴트화되지 않고 정의되기 때문에 추상 클래스에서 테스트를 실행할 수 없습니다. 추상 클래스에서 테스트를 실행하려면 추상 클래스에서 파생되는 클래스를 만듭니다.
 
+::: moniker range=">=vs-2019"
+## <a name="test-audio-cue"></a>테스트 오디오 큐
+테스트 탐색기는 테스트 실행이 완료될 때 소리를 재생할 수 있습니다. 두 가지 소리가 있습니다. 하나는 테스트 실행이 모든 테스트를 통과하여 성공했음을 나타내며 다른 하나는 테스트 실행이 하나 이상의 테스트에 실패하고 완료되었음을 나타냅니다. 기본 Windows 10 소리 대화 상자에서 관련 소리를 설정할 수 있습니다. 해당 기능은 Visual Studio 2019 업데이트 16.9 미리 보기 3부터 사용할 수 있습니다.
+
+1. 기본 Windows 10 소리 대화 상자를 엽니다.
+2. **소리** 탭으로 이동합니다.
+3. **Microsoft Visual Studio** 범주를 찾습니다. **테스트 실행 성공** 또는 **테스트 실행 실패** 를 선택하여 미리 설정된 소리를 선택하거나 고유한 오디오 파일로 이동합니다.  
+![Windows 10 소리 대화 상자](../test/media/default-windows-10-sound-dialog.png)
+
+::: moniker-end
 ## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)

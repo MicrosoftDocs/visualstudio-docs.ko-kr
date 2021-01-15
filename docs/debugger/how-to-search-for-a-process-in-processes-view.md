@@ -1,5 +1,7 @@
 ---
 title: 프로세스 뷰에서 프로세스 검색 | Microsoft Docs
+description: Visual Studio에서 디버그할 때 프로세스 ID 또는 모듈 문자열을 검색 조건으로 사용하여 Spy++ 도구의 프로세스 뷰에서 특정 프로세스를 검색합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851998"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148561"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>방법: 프로세스 뷰에서 프로세스 검색
 프로세스 뷰에서 프로세스 ID 또는 모듈 문자열을 검색 조건으로 사용하여 특정 프로세스를 검색할 수 있습니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에는 프로세스 트리에서 선택한 프로세스의 특성이 표시됩니다.
@@ -25,7 +27,7 @@ ms.locfileid: "90851998"
 
 1. Spy++와 활성 [프로세스 뷰](../debugger/processes-view.md) 창이 보이도록 창을 정렬합니다.
 
-2. **검색** 메뉴에서 **프로세스 찾기**를 선택합니다.
+2. **검색** 메뉴에서 **프로세스 찾기** 를 선택합니다.
 
     [프로세스 검색 대화 상자](../debugger/process-search-dialog-box.md)가 열립니다.
 
@@ -34,10 +36,10 @@ ms.locfileid: "90851998"
 4. 값을 지정하지 않을 필드의 선택을 취소합니다.
 
    > [!TIP]
-   > 모듈이 소유한 모든 프로세스를 찾으려면 **프로세스** 상자의 선택을 취소하고 **모듈** 상자에 모듈 이름을 입력합니다. 그리고 **다음 찾기**를 사용하여 계속해서 프로세스를 검색합니다.
+   > 모듈이 소유한 모든 프로세스를 찾으려면 **프로세스** 상자의 선택을 취소하고 **모듈** 상자에 모듈 이름을 입력합니다. 그리고 **다음 찾기** 를 사용하여 계속해서 프로세스를 검색합니다.
 
-5. 검색의 초기 방향으로 **위로** 또는 **아래로**를 선택합니다.
+5. 검색의 초기 방향으로 **위로** 또는 **아래로** 를 선택합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
    일치하는 프로세스가 검색되면 **프로세스 뷰** 창에 강조 표시됩니다.

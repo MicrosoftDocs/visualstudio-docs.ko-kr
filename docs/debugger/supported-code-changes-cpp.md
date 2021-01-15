@@ -1,5 +1,7 @@
 ---
 title: 지원되는 코드 변경(C++) | Microsoft Docs
+description: Visual Studio에서 C++ 프로젝트를 디버그하는 동안 편집하며 계속하기 기능을 사용하는 경우 지원되는 코드 변경 내용을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629588"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150498"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
 C++ 프로젝트의 편집하며 계속하기에서는 대부분의 코드 변경 유형을 처리합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.
@@ -38,7 +40,7 @@ C++ 프로젝트의 편집하며 계속하기에서는 대부분의 코드 변�
   2. **C/C++ > 코드 생성 > 최소 다시 빌드 사용**: 예(`/Gm`)
   3. **링커 > 일반 > 증분 링크 사용**: 예(`/INCREMENTAL`)
 
-     모든 호환되지 않는 링커 설정(예: `/SAFESEH` 또는 `/OPT:`...)은 빌드 중에 경고 _LNK4075_가 발생해야 합니다.  
+     모든 호환되지 않는 링커 설정(예: `/SAFESEH` 또는 `/OPT:`...)은 빌드 중에 경고 _LNK4075_ 가 발생해야 합니다.  
      예: `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
 
 ### <a name="debugger-settings-debug--options--general"></a>디버거 설정(디버그 > 옵션 > 일반):
@@ -116,10 +118,10 @@ C++ 프로젝트의 편집하며 계속하기에서는 대부분의 코드 변�
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 편집하며 계속하기를 사용하지 않도록 설정하는 링커 옵션
  다음 링커 옵션을 사용하면 편집하며 계속하기가 비활성화됩니다.
 
-- **/OPT:REF**, **/OPT:ICF**또는 **/INCREMENTAL:NO** 를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
+- **/OPT:REF**, **/OPT:ICF** 또는 **/INCREMENTAL:NO** 를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- **/ORDER**, **/RELEASE** 또는 **/FORCE**를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
+- **/ORDER**, **/RELEASE** 또는 **/FORCE** 를 설정하면 다음 경고가 나타나고 편집하며 계속하기가 비활성화됩니다.  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - 프로그램 데이터베이스 파일(.pdb)을 작성하지 않는 옵션을 설정하면 특별한 경고 없이 편집하며 계속하기가 비활성화됩니다.
@@ -135,7 +137,7 @@ C++ 프로젝트의 편집하며 계속하기에서는 대부분의 코드 변�
 
  **편집하며 계속하기를 실행한 후 다시 링크하지 않으려면**
 
-1. **디버그** 메뉴에서 **옵션 및 설정**을 선택합니다.
+1. **디버그** 메뉴에서 **옵션 및 설정** 을 선택합니다.
 
 2. **옵션** 대화 상자의 **디버깅** 노드에서 **편집하며 계속하기** 노드를 선택합니다.
 
@@ -146,7 +148,7 @@ C++ 프로젝트의 편집하며 계속하기에서는 대부분의 코드 변�
 
  **편집하며 계속하기가 사용하는 미리 컴파일된 헤더를 백그라운드에 로드하지 않으려면**
 
-1. **디버그** 메뉴에서 **옵션 및 설정**을 선택합니다.
+1. **디버그** 메뉴에서 **옵션 및 설정** 을 선택합니다.
 
 2. **옵션** 대화 상자의 **디버깅** 노드에서 **편집하며 계속하기** 노드를 선택합니다.
 

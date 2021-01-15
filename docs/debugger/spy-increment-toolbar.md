@@ -1,5 +1,7 @@
 ---
 title: Spy++ 도구 모음 | Microsoft Docs
+description: Spy++ 도구 모음에서 메뉴 모음 아래에 표시되는 사용자 인터페이스 요소를 이해합니다. 도구 모음을 표시하거나 숨기려면 보기 메뉴에서 도구 모음을 클릭합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729731"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148197"
 ---
 # <a name="spy-toolbar"></a>Spy++ 도구 모음
-도구 모음은 Spy++의 메뉴 모음 아래에 나타납니다. 도구 모음을 표시하거나 숨기려면 **보기** 메뉴에서 **도구 모음**을 클릭합니다.
+도구 모음은 Spy++의 메뉴 모음 아래에 나타납니다. 도구 모음을 표시하거나 숨기려면 **보기** 메뉴에서 **도구 모음** 을 클릭합니다.
 
  도구 모음에서 사용할 수 있는 컨트롤은 다음과 같습니다.
 
@@ -36,8 +38,8 @@ ms.locfileid: "72729731"
 |![Spy&#43;&#43; 로그 지우기 단추](../debugger/media/spy--_clearlog.gif "Spy++_ClearLog")|활성 **메시지** 창의 콘텐츠를 지웁니다. 이 컨트롤은 **메시지** 창이 활성 창인 경우에만 사용할 수 있습니다.|
 |![Spy&#43;&#43; 창 찾기 단추](../debugger/media/icon_spy--_findwindow.gif "Icon_Spy++_FindWindow")|창 검색 조건을 설정하고 속성 또는 메시지를 표시할 수 있는 [창 찾기](../debugger/find-window-dialog-box.md) 대화 상자를 엽니다. 자세한 내용은 [방법: 찾기 도구 사용](../debugger/how-to-use-the-finder-tool.md)을 참조하세요.|
 |![Spy&#43;&#43; 첫 번째 창 찾기 단추](../debugger/media/icon_spy--_window.gif "Icon_Spy++_Window")|현재 뷰에서 일치하는 창, 프로세스, 스레드 또는 메시지를 검색합니다.|
-|![Spy&#43;&#43; 다음 창 찾기 단추](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy++_NextWindow")|현재 뷰에서 일치하는 다음 창, 프로세스, 스레드 또는 메시지를 검색합니다. 이 컨트롤(및 관련 메뉴 명령)은 고유하지 않은 유효한 검색 결과가 있는 경우에만 사용할 수 있습니다. 예를 들어 창 트리에서 창 핸들을 검색 조건으로 사용하는 경우 해당 핸들이 포함된 창 트리의 창은 하나만 있으므로 고유한 결과를 생성합니다. 이 인스턴스에서 **다음 찾기**를 사용할 수 없습니다.|
-|![Spy&#43;&#43; 이전 창 찾기 단추](../debugger/media/icon_spy--_prevwindow.gif "Icon_Spy++_PrevWindow")|현재 뷰에서 일치하는 이전 창, 프로세스, 스레드 또는 메시지를 검색합니다. 이 컨트롤(및 관련 메뉴 명령)은 고유하지 않은 유효한 검색 결과가 있는 경우에만 사용할 수 있습니다. 예를 들어 창 트리에서 창 핸들을 검색 조건으로 사용하는 경우 해당 핸들이 포함된 창 트리의 창은 하나만 있으므로 고유한 결과를 생성합니다. 이 인스턴스에서 **이전 찾기**를 사용할 수 없습니다.|
+|![Spy&#43;&#43; 다음 창 찾기 단추](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy++_NextWindow")|현재 뷰에서 일치하는 다음 창, 프로세스, 스레드 또는 메시지를 검색합니다. 이 컨트롤(및 관련 메뉴 명령)은 고유하지 않은 유효한 검색 결과가 있는 경우에만 사용할 수 있습니다. 예를 들어 창 트리에서 창 핸들을 검색 조건으로 사용하는 경우 해당 핸들이 포함된 창 트리의 창은 하나만 있으므로 고유한 결과를 생성합니다. 이 인스턴스에서 **다음 찾기** 를 사용할 수 없습니다.|
+|![Spy&#43;&#43; 이전 창 찾기 단추](../debugger/media/icon_spy--_prevwindow.gif "Icon_Spy++_PrevWindow")|현재 뷰에서 일치하는 이전 창, 프로세스, 스레드 또는 메시지를 검색합니다. 이 컨트롤(및 관련 메뉴 명령)은 고유하지 않은 유효한 검색 결과가 있는 경우에만 사용할 수 있습니다. 예를 들어 창 트리에서 창 핸들을 검색 조건으로 사용하는 경우 해당 핸들이 포함된 창 트리의 창은 하나만 있으므로 고유한 결과를 생성합니다. 이 인스턴스에서 **이전 찾기** 를 사용할 수 없습니다.|
 |![Spy&#43;&#43; 속성 탐색기 단추](../debugger/media/icon_spy--_propexp.gif "Icon_Spy++_PropExp")|창 뷰에서 선택된 창의 속성을 표시합니다.|
 |![Spy&#43;&#43; 새로 고침 단추](../debugger/media/icon_spy--_refresh.gif "Icon_Spy++_Refresh")|시스템 뷰를 새로 고칩니다.|
 

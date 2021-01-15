@@ -1,6 +1,7 @@
 ---
 title: DataTips에서 변수 값 보기 | Microsoft Docs
-ms.custom: seodec18
+description: DataTips를 사용하여 디버그하는 동안 배열 및 구조체를 비롯한 변수에 관한 정보를 편리하게 표시합니다. 값을 수정할 수도 있습니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404274"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149965"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>코드 편집기에서 DataTips의 데이터 값 보기
 
@@ -35,13 +36,13 @@ DataTips는 중단 모드 및 현재 실행 범위에 있는 변수에만 표시
 
 ### <a name="display-a-datatip"></a>DataTip 표시
 
-1. 코드에 중단점을 설정하고 **F5**를 눌러 디버깅을 시작하거나 **디버그** > **디버깅 시작**을 선택합니다.
+1. 코드에 중단점을 설정하고 **F5** 를 눌러 디버깅을 시작하거나 **디버그** > **디버깅 시작** 을 선택합니다.
 
 1. 중단점에서 일시 중지된 경우 현재 범위에 있는 임의의 변수를 마우스로 가르킵니다. 변수의 이름 및 현재 값을 보여주는 DataTip이 나타납니다.
 
 ### <a name="make-a-datatip-transparent"></a>DataTip을 투명하게 만들기
 
-DataTip에서 그 아래에 있는 코드를 볼 수 있도록 DataTip을 투명하게 만들려면 **Ctrl**을 누릅니다. **Ctrl** 키를 누르고 있는 동안에는 DataTip이 투명한 상태로 유지됩니다. 이는 고정 또는 부동 DataTips에는 적용되지 않습니다.
+DataTip에서 그 아래에 있는 코드를 볼 수 있도록 DataTip을 투명하게 만들려면 **Ctrl** 을 누릅니다. **Ctrl** 키를 누르고 있는 동안에는 DataTip이 투명한 상태로 유지됩니다. 이는 고정 또는 부동 DataTips에는 적용되지 않습니다.
 ### <a name="pin-a-datatip"></a>DataTip 고정
 
 열려 있는 상태로 유지되도록 DataTip을 고정하려면 **소스에 고정** 압정 아이콘을 선택합니다.
@@ -71,11 +72,11 @@ DataTip을 닫으려면 DataTip 위에 마우스를 놓고 바로 가기 메뉴�
 
 ### <a name="close-all-datatips"></a>모든 DataTips 닫기
 
-모든 DataTips를 닫으려면 **디버그** 메뉴에서 **모든 DataTips 지우기**를 선택합니다.
+모든 DataTips를 닫으려면 **디버그** 메뉴에서 **모든 DataTips 지우기** 를 선택합니다.
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>특정 파일에 대한 모든 DataTips 닫기
 
-특정 파일에 대한 모든 DataTips를 닫으려면 **디버그** 메뉴에서 **\<Filename>에 고정된 모든 DataTips 지우기**를 선택합니다.
+특정 파일에 대한 모든 DataTips를 닫으려면 **디버그** 메뉴에서 **\<Filename>에 고정된 모든 DataTips 지우기** 를 선택합니다.
 
 ## <a name="expand-and-edit-information"></a>정보 확장 및 편집
 DataTips를 사용하면 배열, 구조체 또는 개체를 확장하여 해당 멤버를 볼 수 있습니다. DataTips에서 변수 값을 편집할 수도 있습니다.
@@ -92,7 +93,7 @@ DataTip에서 개체를 확장하여 해당 요소를 보려면 항목 이름 �
 
 ### <a name="edit-the-value-of-a-variable"></a>변수 값 편집
 
-DataTip에서 변수 또는 요소 값을 편집하려면 값을 선택하고 새 값을 입력한 다음, **Enter**를 누릅니다. 읽기 전용 값에는 선택 영역이 비활성화되어 있습니다.
+DataTip에서 변수 또는 요소 값을 편집하려면 값을 선택하고 새 값을 입력한 다음, **Enter** 를 누릅니다. 읽기 전용 값에는 선택 영역이 비활성화되어 있습니다.
 
 ::: moniker range=">= vs-2019"
 
@@ -117,9 +118,9 @@ DataTip의 변수 또는 요소 옆에 있는 돋보기 아이콘은 [텍스트 
 
 ## <a name="add-a-variable-to-a-watch-window"></a>조사식 창에 변수 추가
 
-변수를 계속 조사하려면 DataTip에서 **조사식** 창에 변수를 추가하면 됩니다. DataTip에서 변수를 마우스 오른쪽 단추로 클릭하고 **조사식 추가**를 선택합니다.
+변수를 계속 조사하려면 DataTip에서 **조사식** 창에 변수를 추가하면 됩니다. DataTip에서 변수를 마우스 오른쪽 단추로 클릭하고 **조사식 추가** 를 선택합니다.
 
-변수가 **조사식** 창에 표시됩니다. Visual Studio 버전에서 두 개 이상의 **조사식** 창을 지원하는 경우 변수가 **조사식 1**에 표시됩니다.
+변수가 **조사식** 창에 표시됩니다. Visual Studio 버전에서 두 개 이상의 **조사식** 창을 지원하는 경우 변수가 **조사식 1** 에 표시됩니다.
 
 ## <a name="import-and-export-datatips"></a>DataTips 가져오기 및 내보내기
 
@@ -127,15 +128,15 @@ DataTips를 XML 파일로 내보내서 텍스트 편집기를 사용하여 공�
 
 **DataTips를 내보내려면:**
 
-1. **디버그** > **DataTips 내보내기**를 선택합니다.
+1. **디버그** > **DataTips 내보내기** 를 선택합니다.
 
-1. **DataTips 내보내기** 대화 상자에서 XML 파일을 저장할 위치로 이동하고 파일 이름을 입력한 다음, **저장**을 선택합니다.
+1. **DataTips 내보내기** 대화 상자에서 XML 파일을 저장할 위치로 이동하고 파일 이름을 입력한 다음, **저장** 을 선택합니다.
 
 **DataTips를 가져오려면:**
 
-1. **디버그** > **DataTips 가져오기**를 선택합니다.
+1. **디버그** > **DataTips 가져오기** 를 선택합니다.
 
-1. **DataTips 가져오기** 대화 상자에서 열려는 DataTips XML 파일을 선택한 다음, **열기**를 선택합니다.
+1. **DataTips 가져오기** 대화 상자에서 열려는 DataTips XML 파일을 선택한 다음, **열기** 를 선택합니다.
 
 ## <a name="see-also"></a>참조
 - [디버깅이란?](../debugger/what-is-debugging.md)

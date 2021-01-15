@@ -1,6 +1,7 @@
 ---
 title: 디버거에서 덤프 파일 사용 | Microsoft Docs
-ms.custom: seodec18
+description: 덤프 파일은 실행 중인 앱과 로드된 모듈의 스냅샷입니다. 앱에 대한 디버그 액세스 권한이 없는 상황을 위한 덤프 파일을 만드는 것이 좋습니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970623"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150875"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 덤프 파일
 

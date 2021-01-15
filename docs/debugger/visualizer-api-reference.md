@@ -1,5 +1,7 @@
 ---
 title: 시각화 도우미 API 참조 | Microsoft Docs
+description: 시각화 도우미는 특정 형식의 데이터 요소를 표시하며 편집도 허용할 수 있습니다. 만들려면 이 섹션에 설명된 시각화 도우미 API를 사용합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 37346c77b1488bb89ac071a0290f7b5219731591
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187216"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149770"
 ---
 # <a name="visualizer-api-reference"></a>시각화 도우미 API 참조
 

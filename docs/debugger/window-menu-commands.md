@@ -1,5 +1,7 @@
 ---
 title: 창 메뉴 명령 | Microsoft Docs
+description: 창 메뉴는 Spy++ 창을 관리하는 명령을 제공합니다. 명령 목록과 각 명령의 간략한 설명을 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0347ba8ffe0d5e479dc31f5d19a4f21c9a51df5c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900969"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149263"
 ---
 # <a name="window-menu-commands"></a>창 메뉴 명령
 **창** 메뉴는 Spy++ 창을 관리하는 명령을 제공합니다.

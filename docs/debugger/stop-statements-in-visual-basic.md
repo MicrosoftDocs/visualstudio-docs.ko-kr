@@ -1,5 +1,7 @@
 ---
 title: Visual Basic의 Stop 문 | Microsoft Docs
+description: Visual Studio에서 중단점을 설정하는 대신 프로그래밍 방법을 제공하는 Visual Basic Stop 문을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: b36f00f628d9551d8e45075d790d8e5d2de294dc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322529"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149432"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic의 Stop 문
 

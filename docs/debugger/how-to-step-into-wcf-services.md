@@ -1,5 +1,7 @@
 ---
 title: WCF 서비스를 한 단계씩 코드 실행 | Microsoft Docs
+description: WCF(Windows Communication Foundation) 서비스를 한 단계씩 코드 실행합니다. 클라이언트와 동일한 Visual Studio 솔루션에 있는 경우 WCF 서비스 내의 중단점을 적중합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ca1e4d2b7e0349ea5a41c6fc66726226ecab4f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 428f5576b595797605abff2ebc5f4669e2927389
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851894"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150732"
 ---
 # <a name="how-to-step-into-wcf-services"></a>방법: WCF 서비스 한 단계씩 코드 실행
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]에서는 WCF 서비스를 한 단계씩 실행할 수 있습니다. WCF 서비스가 클라이언트와 같은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션인 경우에는 WCF 서비스 내의 중단점을 적중할 수 있습니다.
@@ -32,7 +34,7 @@ ms.locfileid: "90851894"
 
 1. WCF 클라이언트와 WCF 서비스 프로젝트가 모두 포함된 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 솔루션을 만듭니다.
 
-2. 솔루션 탐색기에서 WCF 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **시작 프로젝트로 설정**을 클릭합니다.
+2. 솔루션 탐색기에서 WCF 클라이언트 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **시작 프로젝트로 설정** 을 클릭합니다.
 
 3. app.config 또는 web.config 파일에서 디버깅을 사용하도록 설정합니다. 자세한 내용은 [WCF 디버깅에 대한 제한 사항](../debugger/limitations-on-wcf-debugging.md)을 참조하세요.
 

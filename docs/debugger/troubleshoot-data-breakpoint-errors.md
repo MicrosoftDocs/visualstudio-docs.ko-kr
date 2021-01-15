@@ -1,5 +1,7 @@
 ---
 title: 데이터 중단점을 설정할 수 없습니다 | Microsoft Docs
+description: “값이 변경되면 중단”을 사용할 때 발생하는 “데이터 중단점을 설정할 수 없습니다.”의 설명, 해결 방법을 찾아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668783"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150459"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결
 이 페이지에서는 “값이 변경되면 중단”을 사용할 때 표시되는 일반적인 오류를 해결하는 과정을 안내합니다.

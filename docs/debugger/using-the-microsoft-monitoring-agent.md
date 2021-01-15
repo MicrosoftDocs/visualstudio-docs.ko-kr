@@ -1,5 +1,7 @@
 ---
 title: Microsoft Monitoring Agent 사용 | Microsoft Docs
+description: Microsoft Monitoring Agent를 사용하여 ASP.NET 웹앱과 SharePoint 2010 및 2013 애플리케이션의 오류, 성능 문제, 기타 문제를 모니터링합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
@@ -8,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 16c0655cdd55a1825f0a872ef013392bc9e5db79
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600007"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150108"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent 사용(C#, Visual Basic)
 
-**Microsoft Monitoring Agent**를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 애플리케이션의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. 그런 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)에서 로그를 열고 모든 Visual Studio 진단 도구를 사용하여 문제를 디버그할 수 있습니다. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/application-insights/) 및 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.
+**Microsoft Monitoring Agent** 를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 애플리케이션의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. 그런 다음 Visual Studio Enterprise(Professional 또는 Community Edition 아님)에서 로그를 열고 모든 Visual Studio 진단 도구를 사용하여 문제를 디버그할 수 있습니다. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/application-insights/) 및 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.
 
 > [!NOTE]
-> **IntelliTrace 독립 실행형 수집기**를 사용하면 대상 환경을 변경하지 않고 원격 컴퓨터의 웹, SharePoint, WPF 및 Windows Forms 앱에 대해 IntelliTrace 진단 및 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 **Monitor** 모드로 실행하는 경우에 비해 독립 실행형 수집기가 성능에 더 큰 영향을 줍니다. [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)을 참조하세요.
+> **IntelliTrace 독립 실행형 수집기** 를 사용하면 대상 환경을 변경하지 않고 원격 컴퓨터의 웹, SharePoint, WPF 및 Windows Forms 앱에 대해 IntelliTrace 진단 및 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 **Monitor** 모드로 실행하는 경우에 비해 독립 실행형 수집기가 성능에 더 큰 영향을 줍니다. [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)을 참조하세요.
 
  System Center 2012를 사용하는 경우 Microsoft Monitoring Agent와 Operations Manager를 함께 사용하면 문제에 대한 경고를 받고 저장된 IntelliTrace 로그의 링크를 사용하여 Team Foundation Server 작업 항목을 만들 수 있습니다. 그런 다음 추가 디버깅을 위해 이러한 작업 항목을 다른 사용자에게 할당할 수 있습니다. [개발 프로세스와 Operations Manager 통합](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 및 [Microsoft Monitoring Agent를 사용하여 모니터링](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))을 참조하세요.
 
@@ -54,7 +56,7 @@ ms.locfileid: "89600007"
 
 3. 다운로드한 실행 파일을 실행하여 설치 마법사를 시작합니다.
 
-4. **C:\IntelliTraceLogs**와 같이 IntelliTrace 로그를 저장할 안전한 디렉터리를 웹 서버에 만듭니다.
+4. **C:\IntelliTraceLogs** 와 같이 IntelliTrace 로그를 저장할 안전한 디렉터리를 웹 서버에 만듭니다.
 
      모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다. 앱 속도 저하를 방지하려면 사용량이 많지 않은 로컬 고속 디스크의 위치를 선택합니다.
 
@@ -95,7 +97,7 @@ ms.locfileid: "89600007"
 
   1. IntelliTrace 로그 디렉터리의 **속성** 을 엽니다.
 
-  2. **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.
+  2. **보안** 탭에서 **편집**, **추가** 를 차례로 선택합니다.
 
   3. **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 표시되지 않으면 **개체 형식** 을 선택하여 추가합니다.
 
@@ -103,7 +105,7 @@ ms.locfileid: "89600007"
 
   5. **선택할 개체 이름을 입력하세요.** 상자에 웹 앱 또는 SharePoint 애플리케이션의 애플리케이션 풀을 추가합니다.
 
-  6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.
+  6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인** 을 선택합니다.
 
   7. 애플리케이션 풀에 **읽기 및 실행** 권한이 있는지 확인합니다.
 

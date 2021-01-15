@@ -1,5 +1,7 @@
 ---
 title: 스레드 플래그 지정 및 플래그 해제 | Microsoft Docs
+description: Visual Studio에서 스레드의 플래그를 지정하거나 해제하는 방법을 알아봅니다. 스레드, 여러 스레드 또는 모든 스레드의 플래그를 지정하거나 해제합니다. 코드 또는 모듈과 연결된 코드의 플래그를 지정합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852063"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149497"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>방법: 스레드 플래그 지정 및 플래그 해제(C#, Visual Basic, C++)
 
@@ -35,8 +37,8 @@ ms.locfileid: "90852063"
 
 ### <a name="to-unflag-all-threads"></a>모든 스레드의 플래그를 해제하려면
 
-- **스레드** 창에서 스레드를 마우스 오른쪽 단추로 클릭하고 **모든 스레드 플래그 해제**를 클릭합니다.
-- **병렬 조사식** 창에서 플래그가 지정된 모든 스레드를 선택하고, 마우스 오른쪽 단추를 클릭한 다음, **플래그 해제**를 선택합니다.
+- **스레드** 창에서 스레드를 마우스 오른쪽 단추로 클릭하고 **모든 스레드 플래그 해제** 를 클릭합니다.
+- **병렬 조사식** 창에서 플래그가 지정된 모든 스레드를 선택하고, 마우스 오른쪽 단추를 클릭한 다음, **플래그 해제** 를 선택합니다.
 
 ### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면
 
@@ -46,19 +48,19 @@ ms.locfileid: "90852063"
 
 1. **스레드** 창의 맨 위에 있는 도구 모음에서 플래그 아이콘을 클릭합니다.
 
-2. 드롭다운 목록에서 **내 코드만 플래그 지정**을 클릭합니다.
+2. 드롭다운 목록에서 **내 코드만 플래그 지정** 을 클릭합니다.
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>선택한 모듈과 연결된 스레드에 플래그를 설정하려면
 
 1. **스레드** 창의 도구 모음에서 플래그 아이콘을 클릭합니다.
 
-2. 드롭다운 목록에서 **사용자 지정 모듈 선택 영역 플래그 지정**을 클릭합니다.
+2. 드롭다운 목록에서 **사용자 지정 모듈 선택 영역 플래그 지정** 을 클릭합니다.
 
 3. **모듈 선택** 대화 상자에서 원하는 모듈을 선택합니다.
 
 4. (선택 사항) **검색** 상자에서 특정 모듈을 검색할 문자열을 입력합니다.
 
-5. **확인**을 클릭합니다.
+5. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 - [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: C 런타임 라이브러리 없이 런타임 검사 사용 | Microsoft Docs
+description: /NODEFAULTLIB를 사용하여 C 런타임 라이브러리 없이 프로그램을 연결할 수 있습니다. 연결한 후 런타임 검사를 사용하려면 RunTmChk.lib와 연결해야 합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa83533b1ae929bf443dd6c3eb7f7dc3e7db165
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728659"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150862"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C 런타임 라이브러리 없이 런타임 검사 사용
 C 런타임 라이브러리( **/NODEFAULTLIB** 사용)를 사용하지 않고 프로그램을 연결한 경우 런타임 검사 기능을 사용하려면 RunTmChk.lib에 연결해야 합니다.

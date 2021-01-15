@@ -1,5 +1,7 @@
 ---
 title: 프로세스 검색 대화 상자 | Microsoft Docs
+description: 프로세스 검색을 사용하여 프로세스 뷰에서 특정 프로세스의 노드를 찾고 선택합니다. 프로세스 ID, 모듈 문자열, 검색 방향을 지정할 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903771"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975097"
 ---
 # <a name="process-search-dialog-box"></a>프로세스 검색 대화 상자
 이 대화 상자를 사용하여 [프로세스 뷰](../debugger/processes-view.md)에서 특정 프로세스에 대한 노드를 찾아 선택할 수 있습니다. 이 대화 상자를 표시하려면 포커스를 **프로세스** 뷰 창으로 이동합니다. 그런 다음 **검색** 메뉴에서 **프로세스** 찾기를 선택합니다.

@@ -1,5 +1,7 @@
 ---
 title: 관리 코드에 스레드 이름 설정 | Microsoft Docs
+description: Visual Studio에서 다중 스레드 앱 디버깅 중에 관리 코드에서 스레드 이름을 설정합니다. 스레드 이름 지정은 스레드 창에서 스레드를 추적하는 데 사용됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd8662bb437ef25627fb8e8bd2a33ff132e42d7b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c52d2ae3407833594049459a489641135bba172c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851959"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148444"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>방법: 관리 코드에 스레드 이름 설정
 스레드 명명 기능은 Visual Studio의 모든 버전에서 사용할 수 있습니다. 이 기능은 **스레드** 창에서 스레드를 추적할 때 유용합니다.

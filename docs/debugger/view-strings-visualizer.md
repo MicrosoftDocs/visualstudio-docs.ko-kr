@@ -1,5 +1,7 @@
 ---
 title: 문자열 시각화 도우미에서 문자열 보기 | Microsoft Docs
+description: Visual Studio 디버거에서 문자열 시각화 도우미를 사용하여 텍스트 문자열, XML, HTML, JSON을 표시합니다. DataSet 및 DataTable을 비롯한 다른 개체 형식을 볼 수 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450391"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149939"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio의 문자열 시각화 도우미에서 문자열 보기
 
@@ -42,9 +44,9 @@ Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도
 
 문자열 시각화 도우미 창의 **식** 필드에는 마우스로 가리킨 변수나 식이 표시되고 **값** 필드에는 문자열 값이 표시됩니다.
 
-빈 **값**은 선택한 시각화 도우미가 문자열을 인식할 수 없음을 의미합니다. 예를 들어 **XML 시각화 도우미**는 XML 태그나 JSON 문자열이 없는 텍스트 문자열에 대해 빈 **값**을 표시합니다.
+빈 **값** 은 선택한 시각화 도우미가 문자열을 인식할 수 없음을 의미합니다. 예를 들어 **XML 시각화 도우미** 는 XML 태그나 JSON 문자열이 없는 텍스트 문자열에 대해 빈 **값** 을 표시합니다.
 
-선택한 시각화 도우미가 인식할 수 없는 문자열을 보려면 **텍스트 시각화 도우미**를 선택합니다. **텍스트 시각화 도우미**는 일반 텍스트를 표시합니다.
+선택한 시각화 도우미가 인식할 수 없는 문자열을 보려면 **텍스트 시각화 도우미** 를 선택합니다. **텍스트 시각화 도우미** 는 일반 텍스트를 표시합니다.
 
 ### <a name="view-json-string-data"></a>JSON 문자열 데이터 보기
 

@@ -1,5 +1,7 @@
 ---
 title: 저장된 IntelliTrace 데이터 사용 | Microsoft Docs
+description: IntelliTrace 파일(.iTrace)을 사용하여 특정 실행 지점에서 디버깅을 시작합니다. 해당 파일에는 IntelliTrace가 앱 실행에서 기록한 정보가 포함됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911318"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150940"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>저장된 IntelliTrace 데이터 사용(C#, Visual Basic, C++)
 
@@ -56,14 +58,14 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 - .iTrace 파일이 Team Foundation Server 작업 항목에 연결되어 있는 경우 작업 항목에서 다음 단계를 수행하세요.
 
-  - **모든 링크**에서 .iTrace 파일을 찾습니다. 파일을 엽니다.
+  - **모든 링크** 에서 .iTrace 파일을 찾습니다. 파일을 엽니다.
 
     \- 또는 -
 
-  - **재현 단계**에서 **IntelliTrace** 링크를 선택합니다.
+  - **재현 단계** 에서 **IntelliTrace** 링크를 선택합니다.
 
 > [!TIP]
-> 디버깅하는 동안 IntelliTrace 파일을 닫은 경우 쉽게 다시 열 수 있습니다. **디버그** 메뉴로 가서 **IntelliTrace**와 **로그 요약 표시**를 차례로 선택합니다. **IntelliTrace** 창에서 **로그 요약 표시** 를 선택할 수도 있습니다. 이 명령은 IntelliTrace를 사용하여 디버깅할 때만 사용할 수 있습니다.
+> 디버깅하는 동안 IntelliTrace 파일을 닫은 경우 쉽게 다시 열 수 있습니다. **디버그** 메뉴로 가서 **IntelliTrace** 와 **로그 요약 표시** 를 차례로 선택합니다. **IntelliTrace** 창에서 **로그 요약 표시** 를 선택할 수도 있습니다. 이 명령은 IntelliTrace를 사용하여 디버깅할 때만 사용할 수 있습니다.
 
 ## <a name="understand-the-intellitrace-log"></a><a name="Understand"></a> IntelliTrace 로그 이해
  .iTrace 파일에 있는 다음 섹션 중 일부는 SharePoint 애플리케이션 등의 특정 소스에서 데이터를 수집한 경우에만 나타납니다.
@@ -95,7 +97,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>성능 이벤트에서 디버깅을 시작하려면
 
-1. **성능 위반**에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.
+1. **성능 위반** 에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.
 
      ![성능 이벤트 정보 보기](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -126,11 +128,11 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 ##### <a name="to-start-debugging-from-an-exception"></a>예외에서 디버깅을 시작하려면
 
-1. **예외 데이터**에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.
+1. **예외 데이터** 에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.
 
      ![예외 이벤트에서 디버깅 시작](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
-     이벤트를 두 번 클릭할 수도 있습니다. 이벤트가 그룹화되지 않으면 **이 이벤트 디버그**를 선택합니다.
+     이벤트를 두 번 클릭할 수도 있습니다. 이벤트가 그룹화되지 않으면 **이 이벤트 디버그** 를 선택합니다.
 
      애플리케이션 코드에서 예외가 발생하는 경우 Visual Studio가 예외가 발생한 위치로 이동합니다.
 
@@ -141,9 +143,9 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
     |**열**|**표시**|
     |----------------|-------------------|
     |**형식**|예외의 .NET 형식|
-    |그룹화된 예외에 대한**최신 메시지** 또는 그룹화되지 않은 예외에 대한 **메시지**|예외에서 제공된 메시지|
-    |그룹화된 예외에 대한**개수**|예외가 throw된 횟수|
-    |그룹화되지 않은 예외에 대한**스레드 ID**|예외를 throw한 스레드의 ID|
+    |그룹화된 예외에 대한 **최신 메시지** 또는 그룹화되지 않은 예외에 대한 **메시지**|예외에서 제공된 메시지|
+    |그룹화된 예외에 대한 **개수**|예외가 throw된 횟수|
+    |그룹화되지 않은 예외에 대한 **스레드 ID**|예외를 throw한 스레드의 ID|
     |**최신 이벤트 시간** 또는 **이벤트 시간**|예외가 throw되었을 때 기록된 타임스탬프|
     |**호출 스택**|예외에 대한 호출 스택<br /><br /> 호출 스택을 보려면 목록에서 예외를 선택합니다. 호출 스택은 예외 목록 아래에 나타납니다.|
 
@@ -166,7 +168,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
     ![IntelliTrace 로그 &#45; SharePoint 상관 관계 ID 입력](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. **이벤트 요청**에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.
+3. **이벤트 요청** 에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.
 
    1. 이벤트를 선택하여 세부 정보를 확인합니다.
 
@@ -211,11 +213,11 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>특정 스레드에서 디버깅을 시작하려면
 
-1. **스레드 목록**에서 스레드를 선택합니다.
+1. **스레드 목록** 에서 스레드를 선택합니다.
 
-2. **스레드 목록**아래쪽에서 **디버깅 시작**을 선택합니다. 스레드를 두 번 클릭할 수도 있습니다.
+2. **스레드 목록** 아래쪽에서 **디버깅 시작** 을 선택합니다. 스레드를 두 번 클릭할 수도 있습니다.
 
-    응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드**를 두 번 클릭합니다. [IntelliTrace 기능](../debugger/intellitrace-features.md)을 참조하세요.
+    응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드** 를 두 번 클릭합니다. [IntelliTrace 기능](../debugger/intellitrace-features.md)을 참조하세요.
 
    사용자가 만드는 스레드 데이터는 서버가 만들고 IIS를 호스트하는 웹 응용 프로그램을 관리하는 스레드보다 더 유용할 수 있습니다.
 
@@ -228,9 +230,9 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>특정 테스트 단계에서 디버깅을 시작하려면
 
-1. **테스트 단계 표**를 확장합니다. 테스트 단계를 선택합니다.
+1. **테스트 단계 표** 를 확장합니다. 테스트 단계를 선택합니다.
 
-2. **테스트 단계 표**아래쪽에서 **디버깅 시작**을 선택합니다. 테스트 단계를 두 번 클릭할 수도 있습니다.
+2. **테스트 단계 표** 아래쪽에서 **디버깅 시작** 을 선택합니다. 테스트 단계를 두 번 클릭할 수도 있습니다.
 
      그러면 선택한 테스트 단계 이후 첫 번째로 유효한 IntelliTrace 이벤트부터 IntelliTrace 디버깅이 시작됩니다.
 

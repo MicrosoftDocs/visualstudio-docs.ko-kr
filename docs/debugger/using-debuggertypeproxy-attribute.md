@@ -1,5 +1,7 @@
 ---
 title: DebuggerTypeProxy를 사용하여 사용자 지정 형식 표시 | Microsoft Docs
+description: DebuggerTypeProxyAttribute의 인스턴스를 사용하여 형식의 프록시(대체 항목)를 지정하고 디버거 창에 형식이 표시되는 방식을 변경합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347965"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150381"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 특성을 사용하여 디버거에 표시할 내용 지시(C#, Visual Basic, C++/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 프라이빗 멤버는 표시되지 않습니다.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute>는 형식에 대한 프록시 또는 대리 항목을 지정하고 형식이 디버거 창에 표시되는 방식을 변경합니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시** 에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 프라이빗 멤버는 표시되지 않습니다.
 
 이 특성은 다음 항목에 적용될 수 있습니다.
 

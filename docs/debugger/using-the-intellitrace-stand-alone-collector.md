@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace 독립 실행형 수집기 사용 | Microsoft Docs
+description: IntelliTrace 독립 실행형 수집기를 사용하여 Visual Studio를 설치하지 않고 대상 시스템 환경을 변경하지 않고도 데이터를 수집합니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536495"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150082"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace 독립 실행형 수집기 사용(C#, Visual Basic)
 
@@ -28,7 +30,7 @@ ms.locfileid: "85536495"
 > [!NOTE]
 > **추적** 모드에서 **Microsoft Monitoring Agent** 를 사용하면 원격 컴퓨터에서 실행되는 SharePoint 앱 및 웹에 대해 같은 IntelliTrace 데이터를 수집할 수도 있습니다.
 >
-> **모니터** 모드에서 에이전트를 실행하면 IntelliTrace 데이터에서 성능 관련 이벤트를 수집할 수 있습니다. **모니터** 모드는 **추적** 모드 또는 **IntelliTrace 독립 실행형 수집기**에 비해 성능에 주는 영향이 적습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다. [Microsoft Monitoring Agent 사용](../debugger/using-the-microsoft-monitoring-agent.md)을 참조하세요.
+> **모니터** 모드에서 에이전트를 실행하면 IntelliTrace 데이터에서 성능 관련 이벤트를 수집할 수 있습니다. **모니터** 모드는 **추적** 모드 또는 **IntelliTrace 독립 실행형 수집기** 에 비해 성능에 주는 영향이 적습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다. [Microsoft Monitoring Agent 사용](../debugger/using-the-microsoft-monitoring-agent.md)을 참조하세요.
 > IntelliTrace 독립 실행형 수집기는 프로세스 스냅샷을 지원하지 않습니다.
 
  **요구 사항**
@@ -84,7 +86,7 @@ ms.locfileid: "85536495"
 
    - **Microsoft 다운로드 센터** 또는 **my.visualstudio.com**:
 
-     1. **IntelliTraceCollector.exe**옆의 **다운로드**를 선택합니다.
+     1. **IntelliTraceCollector.exe** 옆의 **다운로드** 를 선택합니다.
 
      2. IntelliTraceCollector.exe를 수집기 디렉터리에 저장합니다(예: **C:\IntelliTraceCollector**).
 
@@ -110,7 +112,7 @@ ms.locfileid: "85536495"
 
    2. 수집기 디렉터리로 이동합니다(예: **C:\IntelliTraceCollector**).
 
-   3. 끝의 마침표( **.** )를 포함한 다음**expand**명령을 사용하여 IntelliTraceCollection.cab를 확장합니다.
+   3. 끝의 마침표( **.** )를 포함한 다음 **expand** 명령을 사용하여 IntelliTraceCollection.cab를 확장합니다.
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
@@ -155,15 +157,15 @@ ms.locfileid: "85536495"
 
     1. 관리자 권한으로 PowerShell 명령 창을 엽니다.
 
-        1. **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell**을 차례로 선택합니다.
+        1. **시작**, **모든 프로그램**, **보조프로그램**, **Windows PowerShell** 을 차례로 선택합니다.
 
         2. 다음 단계 중 하나를 선택합니다.
 
-            - 64비트 운영 체제에서는 **Windows PowerShell**의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행**을 선택합니다.
+            - 64비트 운영 체제에서는 **Windows PowerShell** 의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행** 을 선택합니다.
 
-            - 32비트 운영 체제에서는 **Windows PowerShell(x86)** 의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행**을 선택합니다.
+            - 32비트 운영 체제에서는 **Windows PowerShell(x86)** 의 바로 가기 메뉴를 엽니다. **관리자 권한으로 실행** 을 선택합니다.
 
-    2. PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**을 가져옵니다.
+    2. PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll** 을 가져옵니다.
 
          예를 들어:
 
@@ -201,7 +203,7 @@ ms.locfileid: "85536495"
 
      1. .iTrace 파일 디렉터리의 **속성** 을 엽니다.
 
-     2. **보안** 탭에서 **편집**, **추가**를 차례로 선택합니다.
+     2. **보안** 탭에서 **편집**, **추가** 를 차례로 선택합니다.
 
      3. **개체 유형을 선택하세요.** 상자에 **기본 제공 보안 계정** 이 표시되는지 확인하고 표시되지 않으면 **개체 형식** 을 선택하여 추가합니다.
 
@@ -209,9 +211,9 @@ ms.locfileid: "85536495"
 
      5. **선택할 개체 이름을 입력하세요.** 상자에 웹앱 또는 SharePoint 애플리케이션의 애플리케이션 풀을 추가합니다.
 
-     6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.
+     6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인** 을 선택합니다.
 
-     7. 애플리케이션 풀에 **모든 권한**이 있는지 확인합니다.
+     7. 애플리케이션 풀에 **모든 권한** 이 있는지 확인합니다.
 
 ## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 웹 애플리케이션 또는 SharePoint 애플리케이션에서 데이터 수집
 
@@ -261,7 +263,7 @@ ms.locfileid: "85536495"
 
      *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
-     예를 들어 **MyApp**앱에서 데이터를 수집하려면 다음 명령을 실행합니다.
+     예를 들어 **MyApp** 앱에서 데이터를 수집하려면 다음 명령을 실행합니다.
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 

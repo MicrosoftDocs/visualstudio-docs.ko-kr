@@ -1,5 +1,7 @@
 ---
 title: UWP를 디버그할 때 일시 중단/다시 시작/백그라운드 이벤트 트리거
+description: Visual Studio에서 UWP(유니버설 Windows 플랫폼) 앱을 디버그하는 동안 일시 중단, 계속하기, 백그라운드 이벤트를 트리거하는 방법을 검토합니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808196"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150680"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 
 디버깅하고 있지 않을 때는 Windows PLM( **프로세스 수명 관리** )에서 응용 프로그램의 실행 상태(디바이스 상태 및 사용자 작업에 응답하여 응용 프로그램 시작, 일시 중단, 다시 시작 및 종료)를 제어합니다. 디버깅하는 중에는 Windows가 이러한 활성화 이벤트를 사용하지 않도록 설정합니다. 이 항목에서는 디버거에서 이러한 이벤트를 발생시키는 방법에 대해 설명합니다.
 
-이 항목에서는 **백그라운드 작업**을 디버깅하는 방법에 대해서도 설명합니다. 백그라운드 작업을 사용하면 앱을 실행하고 있지 않은 경우에도 백그라운드 프로세스에서 특정 작업을 수행할 수 있습니다. 디버거를 사용하여 응용 프로그램을 디버그 모드에 둔 다음 UI를 시작하지 않고 백그라운드 작업을 시작하고 디버깅할 수 있습니다.
+이 항목에서는 **백그라운드 작업** 을 디버깅하는 방법에 대해서도 설명합니다. 백그라운드 작업을 사용하면 앱을 실행하고 있지 않은 경우에도 백그라운드 프로세스에서 특정 작업을 수행할 수 있습니다. 디버거를 사용하여 응용 프로그램을 디버그 모드에 둔 다음 UI를 시작하지 않고 백그라운드 작업을 시작하고 디버깅할 수 있습니다.
 
 프로세스 수명 관리 및 백그라운드 작업에 관한 자세한 내용은 [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)(시작, 다시 시작 및 멀티태스킹)을 참조하세요.
 
@@ -44,7 +46,7 @@ ms.locfileid: "90808196"
 
      ![일시 중단, 다시 시작, 종료 및 백그라운드 작업](../debugger/media/dbg_suspendresumebackground.png)
 
-     **일시 중단 후 종료**를 사용하면 앱이 닫히고 디버그 세션이 끝납니다.
+     **일시 중단 후 종료** 를 사용하면 앱이 닫히고 디버그 세션이 끝납니다.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> 백그라운드 작업 트리거
  모든 응용 프로그램은 응용 프로그램이 실행되고 있지 않은 경우에도 특정 시스템 이벤트에 응답하도록 백그라운드 작업을 등록할 수 있습니다. 백그라운드 작업은 UI를 직접 업데이트하는 코드는 실행할 수 없습니다. 대신 타일 업데이트, 배지 업데이트 및 알림을 통해 사용자에게 정보를 보여 줍니다. 자세한 내용은 [백그라운드 작업이 있는 앱 지원](/previous-versions/windows/apps/hh977046(v=win.10))을 참조하세요.
@@ -70,9 +72,9 @@ ms.locfileid: "90808196"
 
 1. 디버깅할 백그라운드 작업 코드에 중단점을 설정합니다.
 
-2. 시작 프로젝트에 대한 디버그 속성 페이지를 엽니다. 솔루션 탐색기에서 프로젝트를 선택합니다. **디버그** 메뉴에서 **속성**을 선택합니다.
+2. 시작 프로젝트에 대한 디버그 속성 페이지를 엽니다. 솔루션 탐색기에서 프로젝트를 선택합니다. **디버그** 메뉴에서 **속성** 을 선택합니다.
 
-     C++ 프로젝트의 경우 **구성 속성**을 확장한 다음, **디버깅**을 선택합니다.
+     C++ 프로젝트의 경우 **구성 속성** 을 확장한 다음, **디버깅** 을 선택합니다.
 
 3. 다음 작업 중 하나를 수행합니다.
 
@@ -80,7 +82,7 @@ ms.locfileid: "90808196"
 
          ![C&#35;&#47;VB 디버그 시작 애플리케이션 속성](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - C++ 프로젝트의 경우 **애플리케이션 시작** 목록에서 **아니요**를 선택합니다.
+    - C++ 프로젝트의 경우 **애플리케이션 시작** 목록에서 **아니요** 를 선택합니다.
 
          ![C&#43;&#43;&#47;VB 애플리케이션 시작 디버그 속성](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

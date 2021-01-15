@@ -1,5 +1,7 @@
 ---
 title: 추적점을 사용하여 정보 기록 | Microsoft Docs
+description: 코드를 수정하거나 중지하지 않고 출력에 정보를 로그하는 추적점을 설정합니다. 중단점 설정의 작업 확인란 아래에 출력 문자열을 지정하면 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561340"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150095"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio에서 추적점을 사용하여 출력 창에 정보 기록
 
@@ -53,7 +55,7 @@ ms.locfileid: "89561340"
 
    ![선택된 조건 상자](../debugger/media/checkedconditionsbox.png "선택된 조건 상자")
 
-   조건에 대한 세 가지 선택 사항이 있습니다. **조건 식** , **필터** 및 **적중 횟수** 입니다.
+   조건에 대한 세 가지 선택 사항이 있습니다. **조건 식**, **필터** 및 **적중 횟수** 입니다.
 
 ## <a name="actions-menu"></a>작업 메뉴
 
@@ -63,7 +65,7 @@ ms.locfileid: "89561340"
 
 ![카운터 출력 메시지](../debugger/media/counteroutputmessage.png "카운터 출력 메시지")
 
-**닫기** 를 클릭한 다음 프로그램을 디버그하면( **F5** ), 출력 창에 다음 출력이 표시됩니다.
+**닫기** 를 클릭한 다음 프로그램을 디버그하면(**F5**), 출력 창에 다음 출력이 표시됩니다.
 
 ![출력 창의 작업 메시지](../debugger/media/actionsmessageinoutputwindow.png "출력 창의 작업 메시지")
 

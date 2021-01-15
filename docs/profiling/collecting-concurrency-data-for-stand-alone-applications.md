@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 명령줄 - 독립 실행형 앱 동시성 데이터 가져오기
+description: Visual Studio에서 프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션의 동시성 데이터를 수집합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d49ffdca054034e1ec08105d2041794714bcdee
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6a04740bdfd54a23ac1ac4e23e2007e0062ddcd3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811125"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148288"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 동시성 데이터 수집
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 동시성 방법을 사용하면 CPU 사용률, 스레드 경합, 스레드 마이그레이션, 동기화 지연, 겹친 IO 영역 및 기타 시스템 이벤트를 보여 주는 리소스 경합 데이터 및 스레드 작업 데이터를 수집할 수 있습니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|Task|관련 콘텐츠|
+|작업|관련 콘텐츠|
 |----------|---------------------|
 |**.NET Framework 애플리케이션 시작 및 동시성 데이터 프로파일링**|-   [방법: .NET Framework 애플리케이션을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
 |**C/C++ 애플리케이션 시작 및 동시성 데이터 프로파일링**|-   [방법: 네이티브 애플리케이션을 시작하여 동시성 데이터 수집](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
@@ -36,7 +37,7 @@ ms.locfileid: "90811125"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|Task|관련 콘텐츠|
+|작업|관련 콘텐츠|
 |----------|---------------------|
 |**샘플링 방법을 사용하여 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**계측 방법을 사용하여 프로파일링**|-   [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|

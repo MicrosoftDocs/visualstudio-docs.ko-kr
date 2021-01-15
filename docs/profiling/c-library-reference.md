@@ -1,5 +1,7 @@
 ---
 title: C 라이브러리 참조 | Microsoft 문서
+description: Visual Studio에서 동시성 시각화 도우미 SDK의 C 라이브러리 참조 정보 입문 내용을 살펴봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9271cce475959e79004fba384d72228f569ad2c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc1af4ff62fb9c0b8054898bf724616bbf2921
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331975"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150433"
 ---
 # <a name="c-library-reference"></a>C 라이브러리 참조
 이 섹션에는 동시성 시각화 도우미 SDK에 대한 참조 정보가 포함되어 있습니다.

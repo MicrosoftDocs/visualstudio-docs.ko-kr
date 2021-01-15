@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 명령줄 - ASP.NET 동시성 데이터 가져오기
+description: 리소스 경합 데이터를 수집할 수 있는 Visual Studio 프로파일링 도구의 동시성 방법에 관한 참조 정보를 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407707"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148327"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 ASP.NET 웹 애플리케이션에 대한 동시성 데이터 수집
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 동시성 방법을 사용하면 리소스 경합 데이터를 수집할 수 있습니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|Task|관련 내용|
+|작업|관련 내용|
 |----------|---------------------|
 |실행 중인 ASP.NET 애플리케이션에 프로파일러 연결|-   [방법: ASP.NET 애플리케이션에 프로파일러 연결 및 동시성 데이터 수집](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
@@ -54,5 +55,5 @@ ms.locfileid: "94407707"
 
 - [Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)

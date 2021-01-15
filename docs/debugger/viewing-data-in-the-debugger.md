@@ -1,5 +1,7 @@
 ---
 title: 디버거에서 데이터의 사용자 지정 뷰 만들기 | Microsoft Docs
+description: Visual Studio 디버거에서 프로그램 상태를 검사하고 수정하는 다양한 방법을 알아봅니다. 여기에는 자동 및 조사식 창, DataTips, 시각화 도우미가 포함됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 5acac83a6d461f6b7301ff2bfe89d92dc78d00ee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568996"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149913"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Visual Studio 디버거에서 데이터의 사용자 지정 뷰 만들기(C#, Visual Basic, C++)
 

@@ -1,5 +1,7 @@
 ---
 title: Spy++ 뷰 | Microsoft Docs
+description: Spy++ 디버깅 도구의 뷰에 관해 알아봅니다. Spy++는 컴퓨터에서 사용할 수 있는 창, 메시지, 프로세스, 스레드의 트리 뷰를 표시합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d60f497db60e08094eb881f6766f95279b85456
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caf275443f01ade5914b85dee8ef7105b3f6c9ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902571"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148067"
 ---
 # <a name="spy-views"></a>Spy++ 뷰
 Spy++는 컴퓨터에서 사용할 수 있는 창, 메시지, 프로세스 및 스레드의 트리 뷰를 표시합니다.

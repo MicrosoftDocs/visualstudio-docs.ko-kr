@@ -1,5 +1,7 @@
 ---
 title: 스레드 뷰 | Microsoft Docs
+description: Spy++ 디버깅 도구의 스레드 뷰를 이해합니다. 스레드 뷰는 시스템의 창과 연결된 모든 스레드를 보여 주는 단순 목록입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929958"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150212"
 ---
 # <a name="threads-view"></a>스레드 뷰
 스레드 뷰는 시스템의 창과 연결된 모든 스레드를 보여 주는 단순 목록입니다. 각 스레드의 스레드 ID 및 모듈 이름을 보여 줍니다. 프로세스는 포함되지 않지만, 선택한 스레드를 소유하는 프로세스를 쉽게 찾을 수 있습니다.
@@ -26,7 +28,7 @@ ms.locfileid: "62929958"
 
 #### <a name="to-open-the-threads-view"></a>스레드 뷰를 열려면
 
-1. **Spy** 메뉴에서 **스레드**를 선택합니다.
+1. **Spy** 메뉴에서 **스레드** 를 선택합니다.
 
    ![Spy&#43;&#43; 스레드 뷰](../debugger/media/spy--_threads.png "Spy++_Threads") Spy++ 스레드 뷰
 

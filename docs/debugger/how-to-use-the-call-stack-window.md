@@ -1,6 +1,7 @@
 ---
 title: 디버거에서 호출 스택 보기 | Microsoft Docs
-ms.custom: seodec18
+description: 호출 스택 창을 사용하여 Visual Studio에서 현재 스택에 있는 함수 또는 프로시저 호출을 표시합니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348745"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150628"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>디버거에서 호출 스택 보기 및 호출 스택 창 사용
 
@@ -48,11 +49,11 @@ ms.locfileid: "85348745"
 > **호출 스택** 창은 Eclipse와 같은 일부 IDE의 디버그 관점과 비슷합니다.
 
 > [!NOTE]
-> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다.  [설정 다시 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다.  [설정 다시 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>디버거에서 호출 스택 보기
 
-- 디버그하는 동안 **디버그** 메뉴에서 **창 > 호출 스택**을 선택합니다.
+- 디버그하는 동안 **디버그** 메뉴에서 **창 > 호출 스택** 을 선택합니다.
 
   ![호출 스택 창](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
@@ -60,7 +61,7 @@ ms.locfileid: "85348745"
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>사용자 코드가 아닌 코드를 호출 스택 창에 표시
 
-- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **외부 코드 표시**를 선택합니다.
+- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **외부 코드 표시** 를 선택합니다.
 
 사용자 코드가 아닌 코드는 [내 코드만](../debugger/just-my-code.md)을 사용하도록 설정했을 때 표시되지 않는 모든 코드입니다. 사용자 코드가 아닌 코드 프레임은 관리 코드에서 기본적으로 숨겨집니다. 사용자 코드가 아닌 코드 프레임 대신 다음과 같은 표기법이 표시됩니다.
 
@@ -72,17 +73,17 @@ ms.locfileid: "85348745"
 
     또는 **호출 스택** 창에서 프레임을 두 번 클릭하여 해당 프레임으로 전환할 수 있습니다.
 
-2. **프레임으로 전환**을 선택합니다.
+2. **프레임으로 전환** 을 선택합니다.
 
-     선택한 스택 프레임 옆에 끝이 굽은 녹색 화살표가 나타납니다. 실행 포인터는 여전히 노란색 화살표로 표시되어 있는 원래 프레임에 그대로 있습니다. **디버그** 메뉴에서 **한 단계 실행** 또는 **계속**을 선택하면 선택한 프레임이 아닌 원래 프레임에서 실행이 계속됩니다.
+     선택한 스택 프레임 옆에 끝이 굽은 녹색 화살표가 나타납니다. 실행 포인터는 여전히 노란색 화살표로 표시되어 있는 원래 프레임에 그대로 있습니다. **디버그** 메뉴에서 **한 단계 실행** 또는 **계속** 을 선택하면 선택한 프레임이 아닌 원래 프레임에서 실행이 계속됩니다.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>호출 스택에 있는 함수의 소스 코드 보기
 
-- **호출 스택** 창에서 소스 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **소스 코드로 이동**을 선택합니다.
+- **호출 스택** 창에서 소스 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **소스 코드로 이동** 을 선택합니다.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>호출 스택 창에서 특정 함수까지 실행
 
-- **호출 스택** 창에서 함수를 선택하고 마우스 오른쪽 단추를 클릭한 다음, **커서까지 실행**을 선택합니다.
+- **호출 스택** 창에서 함수를 선택하고 마우스 오른쪽 단추를 클릭한 다음, **커서까지 실행** 을 선택합니다.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>함수 호출의 종료 지점에 중단점 설정
 
@@ -90,7 +91,7 @@ ms.locfileid: "85348745"
 
 ## <a name="display-calls-to-or-from-another-thread"></a>다른 스레드에서의 호출 또는 다른 스레드로의 호출 표시
 
-- **호출 스택** 창을 마우스 오른쪽 단추로 클릭하고 **다른 스레드로 호출/다른 스레드에서 호출 포함**을 선택합니다.
+- **호출 스택** 창을 마우스 오른쪽 단추로 클릭하고 **다른 스레드로 호출/다른 스레드에서 호출 포함** 을 선택합니다.
 
 ## <a name="visually-trace-the-call-stack"></a>시각적으로 호출 스택 추적
 
@@ -104,11 +105,11 @@ ms.locfileid: "85348745"
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>호출 스택에 있는 함수의 디스어셈블리 코드 보기(C#, C++, Visual Basic, F#)
 
-- **호출 스택** 창에서 디스어셈블리 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **디스어셈블리로 이동**을 선택합니다.
+- **호출 스택** 창에서 디스어셈블리 코드를 보려는 함수를 마우스 오른쪽 단추로 클릭하고 **디스어셈블리로 이동** 을 선택합니다.
 
 ## <a name="change-the-optional-information-displayed"></a>표시되는 선택적 정보 변경
 
-- **호출 스택** 창을 마우스 오른쪽 단추로 클릭하고 **\<**_the information that you want_**> 표시**를 설정하거나 해제합니다.
+- **호출 스택** 창을 마우스 오른쪽 단추로 클릭하고 **\<**_the information that you want_**> 표시** 를 설정하거나 해제합니다.
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> 모듈의 기호 로드(C#, C++, Visual Basic, F#)
 
@@ -120,15 +121,15 @@ ms.locfileid: "85348745"
 
 1. **호출 스택** 창에서 기호가 로드되지 않은 스택 프레임을 마우스 오른쪽 단추로 클릭합니다. 프레임이 흐리게 표시됩니다.
 
-2. **기호 로드**를 가리킨 다음, **Microsoft 기호 서버**(사용 가능한 경우)를 선택하거나 기호 경로로 이동합니다.
+2. **기호 로드** 를 가리킨 다음, **Microsoft 기호 서버**(사용 가능한 경우)를 선택하거나 기호 경로로 이동합니다.
 
 ### <a name="to-set-the-symbol-path"></a>기호 경로를 설정하려면
 
-1. **호출 스택** 창의 바로 가기 메뉴에서 **기호 설정**을 선택합니다.
+1. **호출 스택** 창의 바로 가기 메뉴에서 **기호 설정** 을 선택합니다.
 
      **옵션** 대화 상자가 열리고 **기호** 페이지가 표시됩니다.
 
-2. **기호 설정**을 선택합니다.
+2. **기호 설정** 을 선택합니다.
 
 3. **옵션** 대화 상자에서 폴더 아이콘을 클릭합니다.
 
@@ -136,7 +137,7 @@ ms.locfileid: "85348745"
 
 4. 디버그 중인 컴퓨터의 기호 위치에 대한 디렉터리 경로 이름을 입력합니다. 로컬 및 원격 디버깅의 경우 이 경로는 로컬 컴퓨터의 경로입니다.
 
-5. **확인**을 선택하여 **옵션** 대화 상자를 닫습니다.
+5. **확인** 을 선택하여 **옵션** 대화 상자를 닫습니다.
 
 ## <a name="see-also"></a>참조
 
