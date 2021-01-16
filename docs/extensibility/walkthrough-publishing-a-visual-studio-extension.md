@@ -1,8 +1,8 @@
 ---
 title: '연습: Visual Studio 확장 게시 | Microsoft Docs'
-description: 개발자가 새로운 확장 및 업데이트 된 확장을 찾아볼 수 있도록 Visual Studio 확장을 Visual Studio Marketplace에 게시 하는 방법에 대해 알아봅니다.
+description: 개발자가 새로운 확장 및 업데이트 된 확장을 검색할 수 있도록 하는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 01/15/2021
 ms.topic: how-to
 helpviewer_keywords:
 - publishing web controls
@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877886"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533917"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
-이 연습에서는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Marketplace에 확장을 추가 하면 개발자가 **확장 및 업데이트** 를 사용 하 여 새 확장과 업데이트 된 확장을 찾아볼 수 있습니다.
+이 연습에서는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Visual Studio Marketplace에 확장을 추가 하면 개발자가 **확장 및 업데이트** 를 사용 하 여 새 확장과 업데이트 된 확장을 찾아볼 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "97877886"
 
 이 문서에서는 기본 VSPackage 확장을 사용 하지만 단계는 모든 종류의 확장에 대해 유효 합니다.
 
-1. 이라는 c #에서 `TestPublish` 메뉴 명령을 포함 하는 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)를 참조 하세요.
+- 이라는 c #에서 `TestPublish` 메뉴 명령을 포함 하는 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)를 참조 하세요.
 
 ## <a name="package-your-extension"></a>확장 패키지
 
@@ -54,17 +54,17 @@ ms.locfileid: "97877886"
 
 3. **도구** 메뉴에서 테스트 명령이 표시 되는지 확인 합니다.
 
-## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>Visual Studio Marketplace 확장을 게시 합니다.
+## <a name="publish-the-extension-to-visual-studio-marketplace"></a>Visual Studio Marketplace에 확장을 게시 합니다.
 
-1. 확장의 릴리스 버전을 빌드하고 최신 버전 인지 확인 해야 합니다.
+1. 확장의 릴리스 버전을 빌드하고 최신 버전 인지 확인 합니다.
 
-2. 웹 브라우저에서 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 웹 사이트를 엽니다.
+2. 웹 브라우저에서 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)로 이동 합니다.
 
 3. 오른쪽 위 모서리에서 **로그인** 을 클릭 합니다.
 
 4. Microsoft 계정을 사용하여 로그인합니다. Microsoft 계정 없는 경우이 시점에서 새로 만들 수 있습니다.
 
-5. **확장 게시** 를 클릭 합니다.  이 옵션은 모든 확장에 대 한 관리 페이지로 이동 합니다. 게시자 계정이 없는 경우 지금 만들 수 있는 메시지가 표시 됩니다.
+5. **확장 게시** 를 클릭 합니다. 이 옵션은 모든 확장에 대 한 관리 페이지로 이동 합니다. 게시자 계정이 없는 경우 지금 만들 수 있는 메시지가 표시 됩니다.
 
    ![Marketplace에 업로드](media/upload-to-marketplace.png)
 
@@ -90,13 +90,13 @@ ms.locfileid: "97877886"
 
     * **지원 되는 Visual studio 버전** 에서는 확장이 작동 하는 visual studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
 
-    * * * 지원 되는 Visual Studio 버전에서는 확장이 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
+    * **지원 되는 Visual studio 버전** 에서는 확장이 작동 하는 visual studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
 
     * **Type**. 가장 일반적인 확장 유형은 **도구** 입니다.
 
     * **범주**. 확장에 가장 적합 한 최대 3 개까지 선택 합니다.
 
-    * **태그** 는 사용자가 확장을 찾는 데 도움이 되는 키워드입니다. 태그를 통해 Marketplace에서 확장의 검색 관련성을 높일 수 있습니다.
+    * **태그** 는 사용자가 확장을 찾는 데 도움이 되는 키워드입니다. 태그를 통해 Visual Studio Marketplace 확장의 검색 관련성을 높일 수 있습니다.
 
     * **가격 책정 범주** 는 확장의 비용입니다.
 
@@ -104,15 +104,83 @@ ms.locfileid: "97877886"
 
     * 사용자 **확장에 대 한 질문&을 허용** 하면 확장 입력 페이지에서 질문을 남길 수 있습니다.
 
-9. **저장 & 업로드** 를 클릭 합니다. 이 옵션은 게시자 관리 페이지로 돌아갑니다. 확장이 아직 게시 되지 않았습니다. 확장을 게시 하려면 확장을 마우스 오른쪽 단추로 클릭 하 고 **공개로 설정** 을 선택 합니다. **확장 보기** 를 선택 하 여 Marketplace에서 확장이 어떻게 표시 되는지 볼 수 있습니다. 취득 번호의 경우 **보고서** 를 클릭 합니다. 확장을 변경 하려면 **편집** 을 클릭 합니다.
+9. **저장 & 업로드** 를 클릭 합니다. 이 옵션은 게시자 관리 페이지로 돌아갑니다. 확장이 아직 게시 되지 않았습니다.
 
-   ![확장 항목 메뉴](media/extension-entry-menu.png)
+10. 확장을 게시 하려면 확장을 마우스 오른쪽 단추로 클릭 하 고 **공개로 설정** 을 선택 합니다. Visual Studio Marketplace 확장을 확인 하려면 **확장 보기** 를 선택 합니다. 취득 번호의 경우 **보고서** 를 클릭 합니다. 확장을 변경 하려면 **편집** 을 클릭 합니다.
 
-10. 공용으로 **설정** 을 클릭 하면 확장이 이제 공개입니다. 확장 프로그램에 대 한 Visual Studio Marketplace를 검색 합니다.
+    ![확장 항목 메뉴](media/extension-entry-menu.png)
+
+11. **공개로 설정** 을 클릭 하면 확장이 이제 공개로 설정 됩니다. 확장에 대 한 Visual Studio Marketplace를 검색 합니다.
+
+## <a name="update-a-published-extension-in-visual-studio-marketplace"></a>Visual Studio Marketplace에서 게시 된 확장 업데이트
+
+시작 하기 전에 확장의 새 릴리스 버전을 빌드하고 최신 버전 인지 확인 합니다.
+
+1.  웹 브라우저에서 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)로 이동 합니다.
+
+1.  오른쪽 위 모서리에서 **로그인** 을 클릭 한 다음 Microsoft 계정를 사용 하 여 로그인 합니다.
+
+    :::image type="content" source="media/marketplace-upload-extension.png" alt-text="파일 탐색기에서 업로드 된 확장 파일을 선택 하는 것을 보여 주는 스크린샷":::
+
+1.  **확장 게시** 를 클릭 한 다음 업데이트 된 확장을 업로드 하는 데 사용 하려는 게시자를 선택 합니다.
+
+    :::image type="content" source="media/marketplace-select-extension-version.png" alt-text="확장 게시 링크가 강조 표시 된 Visual Studio Marketplace의 스크린샷":::
+
+1.  업데이트 하려는 확장 옆의 세 가지 가로 점으로 마우스를 이동한 다음 **편집** 을 선택 합니다.
+
+    :::image type="content" source="media/marketplace-select-extension.png" alt-text="편집할 확장을 선택 하는 것을 보여 주는 스크린샷":::
+
+1.  **1: 업로드 확장** 에서 VSIX 파일 이름 뒤에 있는 연필 아이콘을 클릭 하 여 게시 된 확장을 편집 합니다.
+
+     :::image type="content" source="media/marketplace-edit-extension-details.png" alt-text="확장을 편집 하기 위해 연필 아이콘을 클릭 하는 것을 보여 주는 스크린샷":::
+
+1.  업데이트 된 확장 VSIX 파일을 찾습니다. 파일을 클릭 한 다음 **열기** 를 클릭 합니다.
+
+    업데이트 된 확장 업로드가 있습니다.
+
+    :::image type="content" source="media/marketplace-upload-extension-notification.png" alt-text="편집 된 확장을 업로드 한 후 업로드 파일 알림의 스크린샷":::
+
+1. **2: 확장 세부 정보 제공** 에서 일부 세부 정보는 확장 업데이트에 대 한 읽기 전용 이거나 확장의 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다. 확장 정보에 대 한 자세한 내용은 다음과 같습니다.
+
+    - **내부 이름** \* 는 확장 세부 정보 페이지의 URL에 사용 됩니다. 예를 들어 게시자 이름 "myname" 아래에 확장을 게시 하 고 내부 이름을 "my extension"으로 지정 하면 확장 세부 정보 페이지에 대 한 "marketplace.visualstudio.com/items?itemName=myname.myextension" 라는 URL이 생성 됩니다.
+
+    - **표시 이름** \* 확장의입니다. 이 이름은 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다.
+
+    - **버전** \* 업로드할 확장의 번호입니다. 이 버전은 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다.
+
+    - **VSIX ID** \* 는 Visual Studio에서 확장에 사용 하는 고유 식별자입니다. 이 식별자는 확장을 자동으로 업데이트 하려는 경우에 필요 합니다. 이 식별자는 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다.
+
+    - **로고** \* 확장에 사용 됩니다. 이 로고는 제공 된 경우 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다.
+
+    - **간단한 설명** \* 확장의 용도 이 설명은 *source.extension.vsixmanifest* 파일에서 자동으로 채워집니다.
+
+    - **개요** 는 스크린샷 및 확장의 용도에 대 한 자세한 정보를 포함 하는 좋은 장소입니다.
+
+    - **지원 되는 Visual Studio 버전** \* 확장이 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
+
+    - **지원 되는 Visual Studio 버전** \* 확장이 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
+
+    - **Type**. 가장 일반적인 확장 유형은 **도구** 입니다.
+
+    - **범주**. 확장에 가장 적합 한 최대 3 개까지 선택 합니다.
+
+    - **태그** 는 사용자가 확장을 찾는 데 도움이 되는 키워드입니다. 태그를 통해 Visual Studio Marketplace 확장의 검색 관련성을 높일 수 있습니다.
+
+    - **가격 책정 범주** 는 확장의 비용입니다.
+
+    - **소스 코드 리포지토리** 를 사용 하 여 소스 코드에 대 한 링크를 커뮤니티와 공유할 수 있습니다.
+
+    - 사용자 **확장에 대 한 질문&을 허용** 하면 확장 입력 페이지에서 질문을 남길 수 있습니다.
+
+       \* 이 세부 정보는 확장 업데이트에 대해 변경할 수 없습니다.
+
+1. **저장 & 업로드** 를 클릭 합니다. 이 옵션은 게시자 관리 페이지로 돌아갑니다. 확장이 아직 게시 되지 않았습니다.
+
+1. 확장을 게시 하려면 확장을 마우스 오른쪽 단추로 클릭 하 고 **공개로 설정** 을 선택 합니다. Visual Studio Marketplace 확장을 확인 하려면 **확장 보기** 를 선택 합니다. 취득 번호의 경우 **보고서** 를 클릭 합니다. 확장을 변경 하려면 **편집** 을 클릭 합니다.
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>사용자를 추가 하 여 게시자 계정 관리
 
-Marketplace에서는 게시자 계정에 액세스 하 고 관리할 수 있는 추가 사용자 권한을 부여 하는 것을 지원 합니다.
+Visual Studio Marketplace은 게시자 계정에 액세스 하 고 관리할 수 있는 추가 사용자 권한을 부여 하는 것을 지원 합니다.
 
 1. 사용자를 추가 하려는 게시자 계정으로 이동 합니다.
 
@@ -130,7 +198,7 @@ Marketplace에서는 게시자 계정에 액세스 하 고 관리할 수 있는 
 
    * **소유자**: 사용자는 확장을 게시 및 관리 하 고, 게시자 설정을 편집 하 고, 액세스를 관리할 수 있습니다.
 
-## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 설치 합니다.
+## <a name="install-the-extension-from-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 설치 합니다.
 
 이제 확장이 게시 되었으므로 Visual Studio에 설치 하 고 테스트 합니다.
 
@@ -146,9 +214,9 @@ Marketplace에서는 게시자 계정에 액세스 하 고 관리할 수 있는 
 
 Visual Studio Marketplace 및 컴퓨터에서 확장을 제거할 수 있습니다.
 
-### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 제거 하려면
+### <a name="to-remove-the-extension-from-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 제거 하려면
 
-1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 웹 사이트를 엽니다.
+1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)로 이동 합니다.
 
 2. 오른쪽 위 모서리에서 확장 **게시** 를 클릭 합니다. **Testpublish** 를 게시 하는 데 사용한 게시자를 선택 합니다. **Testpublish** 에 대 한 목록이 표시 됩니다.
 
