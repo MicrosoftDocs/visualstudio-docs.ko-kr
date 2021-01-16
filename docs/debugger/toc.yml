@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: 런타임 오류 보고 함수 작성
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: C 런타임 라이브러리 없이 런타임 검사 사용
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: 사용자 코드 디버그
