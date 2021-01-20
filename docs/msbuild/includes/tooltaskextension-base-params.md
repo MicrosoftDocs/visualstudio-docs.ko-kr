@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042866"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535307"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension 매개 변수
 
@@ -18,10 +18,9 @@ ms.locfileid: "89042866"
 
 | 매개 변수 | 설명 |
 | - | - |
-| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 이 작업은 명령줄이 stdout으로 복사되지 않도록 **/Q**를 *cmd.exe* 명령줄로 전달합니다. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`로 설정된 경우 이 작업은 명령줄이 stdout으로 복사되지 않도록 **/Q** 를 *cmd.exe* 명령줄로 전달합니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 선택적 `String` 배열 매개 변수입니다.<br /><br /> 세미콜론으로 구분된 환경 변수 정의의 배열입니다. 각 정의는 환경 변수 이름 및 값을 등호로 구분하여 지정해야 합니다. 이 변수는 생성된 실행 파일에 전달되면서 일반 환경 블록에 추가되거나 일부 일반 환경 블록을 재정의합니다. 예들 들어 `Variable1=Value1;Variable2=Value2`입니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | 선택적 `Int32` 읽기 전용 출력 매개 변수입니다.<br /><br /> 실행한 명령에서 제공하는 종료 코드를 지정합니다. 작업에서 오류를 기록했지만 프로세스가 종료 코드 0(성공)을 반환한 경우 이는 -1로 설정됩니다. |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`인 경우 표준 오류 스트림에서 받은 모든 메시지가 오류로 기록됩니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 선택적 `bool` 매개 변수입니다.<br /><br /> `true`인 경우 표준 오류 스트림에서 받은 모든 메시지가 오류로 기록됩니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | 선택적 `String` 매개 변수입니다.<br /><br /> 표준 출력 스트림의 텍스트를 기록할 때 적용할 중요도입니다. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 선택적 `String` 매개 변수입니다.<br /><br /> 표준 출력 스트림의 텍스트를 기록할 때 적용할 중요도입니다. |

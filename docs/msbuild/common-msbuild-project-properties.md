@@ -20,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 208bb463b99fd8835329e86a88d20aabb94a544d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 548116fc3c9b360a866f14e32074111dfdc872d9
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796812"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533877"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
 
- Visual Studio의 프로젝트 파일( *.csproj* , *.vbproj* , *.vcxproj* 등)은 IDE를 사용하여 프로젝트를 빌드할 때 실행하는 MSBuild XML 코드를 포함합니다. 일반적으로 프로젝트에서는 하나 이상의 *.targets* 파일을 가져와서 빌드 프로세스를 정의합니다. 자세한 내용은 [MSBuild .targets 파일](../msbuild/msbuild-dot-targets-files.md)을 참조하세요.
+ Visual Studio의 프로젝트 파일( *.csproj*, *.vbproj*, *.vcxproj* 등)은 IDE를 사용하여 프로젝트를 빌드할 때 실행하는 MSBuild XML 코드를 포함합니다. 일반적으로 프로젝트에서는 하나 이상의 *.targets* 파일을 가져와서 빌드 프로세스를 정의합니다. 자세한 내용은 [MSBuild .targets 파일](../msbuild/msbuild-dot-targets-files.md)을 참조하세요.
 
 ## <a name="list-of-common-properties-and-parameters"></a>공용 속성 및 매개 변수 목록
 
@@ -42,7 +42,7 @@ ms.locfileid: "92796812"
 | ALToolPath | .NET | *AL.exe* 를 찾을 수 있는 경로입니다. 이 속성은 다른 버전의 *AL.exe* 를 사용으로 설정하기 위해 현재 버전을 재정의합니다. |
 | ApplicationIcon | .NET | Win32 아이콘으로 포함하기 위해 컴파일러에 전달할 *.ico* 아이콘 파일입니다. 이 속성은 `/win32icon` 컴파일러 스위치와 동일합니다. |
 | ApplicationManifest | 모두 | 외부 UAC(사용자 계정 컨트롤) 매니페스트 정보를 생성하는 데 사용되는 파일의 경로를 지정합니다. Windows Vista를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다.<br /><br /> 대부분의 경우 매니페스트는 포함되어 있지만 등록이 필요 없는 COM 또는 ClickOnce 배포를 사용할 경우 매니페스트가 애플리케이션 어셈블리와 함께 설치되는 외부 파일일 수 있습니다. 자세한 내용은 이 항목에서 NoWin32Manifest 속성을 참조하십시오. |
-| AssemblyOriginatorKeyFile | .NET | 어셈블리를 서명하는 데 사용되는 파일( *.snk* 또는 *.pfx* ) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다. |
+| AssemblyOriginatorKeyFile | .NET | 어셈블리를 서명하는 데 사용되는 파일( *.snk* 또는 *.pfx*) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다. |
 | AssemblySearchPaths | .NET | 빌드 시간 참조 어셈블리 확인 동안 검색할 위치의 목록입니다. 앞에 있는 경로가 뒤에 있는 항목보다 우선하므로 이 목록에 경로가 표시되는 순서는 중요합니다. |
 | AssemblyName | .NET | 프로젝트가 빌드된 후의 마지막 출력 어셈블리 이름입니다. |
 | BaseAddress | .NET | 주 출력 어셈블리의 기준 주소를 지정합니다. 이 속성은 `/baseaddress` 컴파일러 스위치와 동일합니다. |
@@ -56,7 +56,7 @@ ms.locfileid: "92796812"
 | Configuration | 모두 | 빌드 중인 구성은 일반적으로 `Debug` 또는 `Release`하지만 솔루션 및 프로젝트 수준에서 구성할 수 있습니다. |
 | CscToolPath | C# | C# 컴파일러인 *csc.exe* 의 경로입니다. |
 | CustomBeforeMicrosoftCommonTargets | 모두 | 공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다. |
-| DebugSymbols | 모두 | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false** 를 설정하면 프로그램 데이터베이스( *.pdb* ) 기호 파일이 생성되지 않습니다. |
+| DebugSymbols | 모두 | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false** 를 설정하면 프로그램 데이터베이스( *.pdb*) 기호 파일이 생성되지 않습니다. |
 | DebugType | 모두 | 생성할 디버그 정보의 수준을 정의합니다. 유효한 값은 “full”, “pdbonly”, “portable”, “embedded” 및 “none”입니다. |
 | DefineConstants | .NET | 조건부 컴파일러 상수를 정의합니다. 기호/값 쌍은 세미콜론으로 구분되고 다음 구문을 사용하여 지정됩니다.<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> 이 속성은 `/define` 컴파일러 스위치와 동일합니다. |
 | DefineDebug | 모두 |  DEBUG 상수를 정의할지 여부를 나타내는 부울 값입니다. |
@@ -78,8 +78,8 @@ ms.locfileid: "92796812"
 | ModuleAssemblyName | .NET | 컴파일된 모듈이 통합되어야 하는 어셈블리의 이름입니다. 이 속성은 `/moduleassemblyname` 컴파일러 스위치와 동일합니다. |
 | MSBuildProjectExtensionsPath | 모두 | 프로젝트 확장명이 있는 경로를 지정합니다. 기본적으로 `BaseIntermediateOutputPath`와 동일한 값을 사용합니다. |
 | NoLogo | 모두 | 컴파일러 로고를 해제할지 여부를 나타내는 부울 값입니다. 이 속성은 `/nologo` 컴파일러 스위치와 동일합니다. |
-| NoStdLib | .NET | 표준 라이브러리( *mscorlib.dll* )를 참조하지 않을지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. |
-| NoVBRuntimeReference | Visual Basic | Visual Basic 런타임( *Microsoft.VisualBasic.dll* )이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다. |
+| NoStdLib | .NET | 표준 라이브러리(*mscorlib.dll*)를 참조하지 않을지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. |
+| NoVBRuntimeReference | Visual Basic | Visual Basic 런타임(*Microsoft.VisualBasic.dll*)이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다. |
 | NoWarn | .NET | 지정한 경고를 표시하지 않습니다. 경고 식별자의 숫자 부분만 지정해야 합니다. 경고가 여러 개인 경우 세미콜론으로 구분할 수 있습니다. 이 매개 변수는 컴파일러의 `/nowarn` 스위치에 해당합니다. |
 | NoWin32Manifest | .NET | 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. Windows Vista를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. ClickOnce 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 Windows Vista를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. ClickOnce 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> Visual Studio에서 애플리케이션의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화* 라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> - Visual Basic 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. (Visual Basic 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.)<br />- C# 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. (C# 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.)<br /> 이 속성은 *vbc.exe* 의 `/nowin32manifest` 컴파일러 스위치와 동일합니다. |
 | Optimize | .NET | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
@@ -88,7 +88,7 @@ ms.locfileid: "92796812"
 | OptionInfer | Visual Basic | `true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다. |
 | OptionStrict | Visual Basic | `true`로 설정하면 빌드 작업에서 엄격한 형식 의미를 적용하여 암시적 형식 변환을 제한하게 하는 부울 값입니다. 이 속성은 *vbc.exe* 컴파일러의 `/optionstrict` 스위치와 동일합니다. |
 | OutDir | 모두 | 프로젝트 또는 솔루션의 최종 출력 위치를 나타냅니다. 솔루션을 빌드하는 경우 OutDir를 사용하여 한 위치에서 여러 프로젝트 출력을 수집할 수 있습니다. 또한 OutDir는 참조를 확인하는 데 사용되는 AssemblySearchPaths에 포함됩니다. 예를 들어 *bin\Debug* 입니다. |
-| OutputPath | 모두 | 프로젝트 디렉터리에 상대적인 출력 디렉터리 경로(예: *bin\Debug* )를 지정합니다. |
+| OutputPath | 모두 | 프로젝트 디렉터리에 상대적인 출력 디렉터리 경로(예: *bin\Debug*)를 지정합니다. |
 | OutputType | 모두 |  출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   Library. 코드 라이브러리를 만듭니다. 기본값입니다.<br />-   Exe. 콘솔 애플리케이션을 만듭니다.<br />-   Module. 모듈을 만듭니다.<br />-   Winexe. Windows 기반 프로그램을 만듭니다.<br /><br /> C# 및 Visual Basic의 경우 이 속성은 `/target` 스위치와 동일합니다. |
 | OverwriteReadOnlyFiles | 모두 | 빌드에서 읽기 전용 파일을 덮어쓸지 아니면 오류를 트리거할지 여부를 나타내는 부울 값입니다. |
 | PathMap | .NET | 실제 경로를 컴파일러에서 출력되는 소스 경로 이름에 매핑하는 방법을 지정합니다. 이 속성은 컴파일러의 `/pathmap` 스위치와 동일합니다. |
@@ -141,3 +141,4 @@ ms.locfileid: "92796812"
 - [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)
 - [공통 MSBuild 항목 메타데이터](common-msbuild-item-metadata.md)
 - [MSBuild의 예약된 속성 및 잘 알려진 속성](msbuild-reserved-and-well-known-properties.md)
+- [.NET SDK 프로젝트용 MSBuild 참조](/dotnet/core/project-sdk/msbuild-props)
