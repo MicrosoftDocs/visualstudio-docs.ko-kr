@@ -1,5 +1,6 @@
 ---
 title: 샘플링을 사용하여 성능 통계 수집
+description: 프로파일링 도구 샘플링 방법을 사용하여 프로세서 사용률 문제를 찾습니다. 해당 방법은 대부분의 성능 조사를 시작하기 위한 권장 방법입니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9729bf46b58a9591df7b6470acde0c54ef23f531
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e5a58ec02fa6bff0dd06ce08b933a381bca37a80
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810733"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533734"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 
@@ -29,14 +30,14 @@ ms.locfileid: "90810733"
 다음 절차 중 하나를 사용하여 샘플링 방법을 지정할 수 있습니다.
 
 - 프로파일링 마법사의 첫 번째 페이지에서 **CPU 샘플링(권장)** 을 클릭합니다.
-- **성능 탐색기** 도구 모음의 **메서드** 목록에서 **샘플링**을 클릭합니다.
-- 성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **샘플링**을 클릭합니다.
+- **성능 탐색기** 도구 모음의 **메서드** 목록에서 **샘플링** 을 클릭합니다.
+- 성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **샘플링** 을 클릭합니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
 성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면
 
-- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+- **성능 탐색기** 에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
   다음 표의 작업에서는 샘플링 방법을 사용하여 프로파일링할 때 _성능 세션_**속성 페이지** 대화 상자에서 지정할 수 있는 옵션을 설명합니다.
 

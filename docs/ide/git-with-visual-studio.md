@@ -2,18 +2,18 @@
 title: Visual Studio의 Git 환경
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경을 활용하여 생산성을 높일 수 있는 방법을 알아봅니다.
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524085"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597410"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
@@ -92,7 +92,7 @@ Git은 작업할 때 리포지토리에서 파일 변경 내용을 추적하고 
 
 변경 내용을 스테이징할 준비가 되면 스테이징할 각 파일의 **+** (더하기) 단추를 클릭하거나, 파일을 마우스 오른쪽 단추로 클릭한 후 **스테이지** 를 선택합니다. **변경 내용** 섹션 위쪽에서 모두 스테이징 **+** (더하기) 단추를 사용하여 한 번 클릭으로 모든 수정된 파일을 스테이징할 수도 있습니다.
 
-변경을 스테이징하는 경우 Visual Studio는 **스테이징된 변경 사항** 섹션을 만듭니다. **스테이징된 변경 사항** 섹션의 변경 내용만 다음 커밋에 추가됩니다. 이 작업을 수행하려면 **스테이징된 항목 커밋** 을 선택합니다. **–** (빼기) 단추를 클릭하여 변경 내용을 스테이징 취소할 수도 있습니다. 이 동작에 해당하는 명령은 `git commit -m "Your commit message"`입니다.
+변경을 스테이징하는 경우 Visual Studio는 **스테이징된 변경 사항** 섹션을 만듭니다. **스테이징된 변경 사항** 섹션의 변경 내용만 다음 커밋에 추가됩니다. 이 작업을 수행하려면 **스테이징된 항목 커밋** 을 선택합니다. 이 동작에 해당하는 명령은 `git commit -m "Your commit message"`입니다. **–** (빼기) 단추를 클릭하여 변경 내용을 스테이징 취소할 수도 있습니다. 이 동작에 해당하는 명령은 단일 파일을 스테이징 취소하는 `git reset <directory_path>` 또는 디렉터리에 있는 모든 파일을 스테이징 취소하는 `git reset <file_path>`입니다.
 
 또한 스테이징 영역을 건너뛰어 수정된 파일을 스테이징하지 않도록 선택할 수 있습니다. 이 경우 Visual Studio를 사용하여 변경 내용을 스테이징하지 않고도 직접 커밋할 수 있습니다. 커밋 메시지를 입력한 다음, **모두 커밋** 을 선택합니다. 이 동작에 해당하는 명령은 `git commit -a`입니다.
 

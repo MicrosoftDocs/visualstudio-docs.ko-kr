@@ -1,5 +1,7 @@
 ---
 title: 공통 데이터 뷰 | Microsoft 문서
+description: 모든 프로파일링 방법에 공통적인 프로파일러 데이터 파일의 뷰와 보고서에 관한 참조 정보는 이 섹션을 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777831"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533539"
 ---
 # <a name="common-data-views"></a>공통 데이터 뷰
 이 섹션에는 모든 프로파일링 방법에 공통적인 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 포함되어 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [요약 뷰](../profiling/summary-view.md)
 
  요약 뷰 및 보고서를 설명합니다. 데이터 열은 프로파일링 방법에 따라 달라집니다.

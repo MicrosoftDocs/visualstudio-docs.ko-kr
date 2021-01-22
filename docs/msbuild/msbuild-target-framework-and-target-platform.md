@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049105"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533864"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 
@@ -78,7 +78,7 @@ ms.locfileid: "93049105"
 
 - `x86`은 Intel 80x86 프로세서 또는 이와 동등한 프로세서에서 실행되는 32비트 Windows 운영 체제를 지정합니다.
 
-- `x64`은 Intel x64 프로세서 또는 이와 동등한 프로세서에서 실행되는 64비트 Windows 운영 체제를 지정합니다.
+- `x64`는 Intel x64 프로세서 또는 이와 동등한 프로세서에서 실행되는 64비트 Windows 운영 체제를 지정합니다.
 
 - `Xbox`는 Microsoft Xbox 360 플랫폼을 지정합니다.
 

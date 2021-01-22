@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329980"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240311"
 ---
 # <a name="install-unit-test-frameworks"></a>단위 테스트 프레임워크 설치
 
@@ -23,7 +23,7 @@ Visual Studio 테스트 탐색기는 어댑터 인터페이스를 개발한 단�
 Visual Studio 솔루션에는 다양한 프레임워크를 사용하고 다양한 언어로 대상이 지정되는 단위 테스트 프로젝트가 포함될 수 있습니다.
 
 ::: moniker range=">=vs-2019"
-.NET의 경우 [MSTest, NUnit 및 xUnit](getting-started-with-unit-testing.md)은 Visual Studio에서 제공되며 기본적으로 설치되는 테스트 프레임워크입니다.
+.NET의 경우 [MSTest, NUnit 및 xUnit](getting-started-with-unit-testing.md)은 Visual Studio에서 제공되며 기본적으로 설치되는 테스트 프레임워크입니다. C++의 경우 CTest와 같은 다른 테스트 프레임워크 세트가 제공됩니다.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md)는 Visual Studio에서 제공하는 테스트 프레임워크이며 기본적으로 설치됩니다.

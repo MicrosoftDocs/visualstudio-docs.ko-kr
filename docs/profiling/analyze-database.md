@@ -1,5 +1,7 @@
 ---
 title: .NET Core 프로젝트의 데이터베이스 사용량 분석 | Microsoft Docs
+description: 데이터베이스 도구를 사용하여 앱의 데이터베이스 쿼리를 기록한 다음, 분석하여 성능을 개선하는 방법을 찾습니다.
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352318"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205465"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>데이터베이스 도구를 사용하여 데이터베이스 성능 분석
 
@@ -38,7 +40,7 @@ ms.locfileid: "91352318"
 
 1. **시작** 단추를 선택하여 도구를 실행합니다.
 
-1. 도구가 시작되면 앱에서 프로파일링하려는 시나리오를 진행합니다. 그런 다음 **수집 중지**를 선택하거나 앱을 닫아 데이터를 확인합니다.
+1. 도구가 시작되면 앱에서 프로파일링하려는 시나리오를 진행합니다. 그런 다음 **수집 중지** 를 선택하거나 앱을 닫아 데이터를 확인합니다.
 
 1. 수집이 중지된 후에는 프로파일링 세션 중에 실행된 쿼리의 테이블이 표시됩니다.
 
@@ -46,7 +48,7 @@ ms.locfileid: "91352318"
 
 쿼리는 시간순으로 구성되지만 임의의 열을 기준으로 정렬할 수 있습니다. 열 제목을 마우스 오른쪽 단추로 클릭하여 더 많은 열을 표시할 수 있습니다. **기간** 열을 선택하면 가장 긴 시간에서 가장 짧은 시간까지 쿼리가 정렬됩니다.
 
-조사할 쿼리를 찾았으면 쿼리를 마우스 오른쪽 단추로 클릭합니다. 그런 다음 **소스 파일로 이동**을 선택하여 해당 쿼리를 실행한 코드를 확인합니다.
+조사할 쿼리를 찾았으면 쿼리를 마우스 오른쪽 단추로 클릭합니다. 그런 다음 **소스 파일로 이동** 을 선택하여 해당 쿼리를 실행한 코드를 확인합니다.
 
 ![소스 파일로 이동 선택됨](./media/db-gotosource.png "소스 파일로 이동 선택됨")
 

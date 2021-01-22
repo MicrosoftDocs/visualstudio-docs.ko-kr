@@ -1,5 +1,7 @@
 ---
 title: 명령줄에서 계층 상호 작용 데이터 추가 | Microsoft 문서
+description: 하나 이상의 데이터베이스와 통신하는 다중 계층 애플리케이션의 경우에는 비동기 호출의 실행 시간 정보에 계층 상호 작용 프로파일링을 사용합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779872"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205543"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>명령줄에서 계층 상호 작용 데이터 추가
 
@@ -50,7 +52,7 @@ SQLServer 데이터베이스에 대해 동기 [!INCLUDE[vstecado](../data-tools/
 
 ### <a name="profile-a-windows-desktop-application-example"></a>Windows 데스크톱 애플리케이션 프로파일링 예제
 
-1. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
+1. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작** 을 클릭하고 **모든 프로그램**, **보조 프로그램** 을 차례로 가리킵니다. **명령 프롬프트** 를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 클릭합니다.
 
 2. .NET 프로파일링 및 TIP 환경 변수를 초기화합니다. 다음 명령을 입력합니다.
 
@@ -93,7 +95,7 @@ SQLServer 데이터베이스에 대해 동기 [!INCLUDE[vstecado](../data-tools/
 
 1. 필요한 경우 서비스를 설치합니다.
 
-2. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작**을 클릭하고 **모든 프로그램**, **보조 프로그램**을 차례로 가리킵니다. **명령 프롬프트**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 클릭합니다.
+2. 관리자 권한으로 명령 프롬프트 창을 엽니다. **시작** 을 클릭하고 **모든 프로그램**, **보조 프로그램** 을 차례로 가리킵니다. **명령 프롬프트** 를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 클릭합니다.
 
 3. .NET 프로파일링 환경 변수를 초기화합니다. 다음 명령을 입력합니다.
 

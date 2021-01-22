@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 명령줄 - .NET 서비스 메모리 데이터 가져오기
+description: 명령줄에서 샘플링 방법을 사용하여 .NET Framework 서비스의 메모리 할당 및 개체 수명 데이터를 수집하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,19 +11,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f07cb03979baf62d436b4bdb319620364a88ddad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef6ec36dc9c0fb0e6431dcb92ee292050c5d25f3
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809403"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533760"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 서비스에서 메모리 데이터 수집
 이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 .NET Framework 서비스에 대한 메모리 할당 및 개체 수명 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**.NET 서비스에 프로파일러 연결**|-   [방법: .NET 서비스에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
 |**.NET 서비스 계측 및 .NET 메모리 데이터 수집**|-   [방법: .NET Framework 서비스 계측 및 메모리 데이터 수집](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|
@@ -40,7 +41,7 @@ ms.locfileid: "90809403"
 
 ### <a name="profile-net-framework-memory-data"></a>.NET Framework 메모리 데이터 프로파일링
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**독립 실행형(클라이언트) 애플리케이션 프로파일링**|-   [.NET Framework 메모리 데이터 수집](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
 |**ASP.NET 웹 애플리케이션 프로파일링**|-   [메모리 데이터 수집](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -48,5 +49,5 @@ ms.locfileid: "90809403"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>.NET 메모리 데이터 뷰 및 보고서 분석
 - [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 - [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)

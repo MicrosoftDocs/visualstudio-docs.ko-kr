@@ -1,5 +1,7 @@
 ---
 title: CommentMarkProfile | Microsoft Docs
+description: CommentMarkProfile 함수를 사용하여 숫자 마커 및 텍스트 문자열을 *.vsp* 파일에 삽입합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2972f9d470bebe3a65b7d525aa2b358d68ad5f1c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546590"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533591"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` 함수는 .*vsp* 파일에서 숫자 표식 및 텍스트 문자열을 삽입합니다. 삽입될 표시 및 주석의 경우 `CommentMarkProfile` 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
+`CommentMarkProfile` 함수는 숫자 마커 및 텍스트 문자열을 *.vsp* 파일에 삽입합니다. 삽입될 표시 및 주석의 경우 `CommentMarkProfile` 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -55,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>설명
  표시 및 주석을 VSInstr Mark 명령 또는 함수(CommentMarkAtProfile, CommentMarkProfile 또는 MarkProfile)를 사용하여 삽입한 경우 표시 프로필 함수를 포함하는 스레드의 프로파일링 상태는 ON입니다.
 
- 프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .*vsp* 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.
+ 프로필 표시는 범위 내에서 전역입니다. 예를 들어, 한 스레드에 삽입된 프로필 표시를 사용하여 *.vsp* 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.
 
 > [!IMPORTANT]
 > CommentMarkProfile 메서드는 계측에서만 사용할 수 있습니다.

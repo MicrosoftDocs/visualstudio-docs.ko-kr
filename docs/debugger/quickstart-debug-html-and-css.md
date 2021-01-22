@@ -1,5 +1,7 @@
 ---
 title: UWP 앱에서 HTML 및 CSS 디버그 | Microsoft Docs
+description: Visual Studio에서 UWP(유니버설 Windows 플랫폼) 앱의 HTML 및 CSS를 디버그하는 방법을 알아봅니다. JavaScript 디버깅 기능은 UWP 앱에서 지원됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211091"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205478"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio의 UWP 앱에서 HTML 및 CSS 디버그
 
@@ -58,9 +60,9 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>라이브 DOM을 검사하여 디버그하려면
 
-1. **파일** > **새 프로젝트**를 선택하여 Visual Studio에 새 솔루션을 만듭니다.
+1. **파일** > **새 프로젝트** 를 선택하여 Visual Studio에 새 솔루션을 만듭니다.
 
-2. **JavaScript** > **Windows 유니버설**을 선택한 다음, **WinJS 앱**을 선택합니다.
+2. **JavaScript** > **Windows 유니버설** 을 선택한 다음, **WinJS 앱** 을 선택합니다.
 
 3. 프로젝트의 이름(예: `FlipViewApp`)을 입력하고 **확인** 을 클릭하여 앱을 만듭니다.
 
@@ -145,11 +147,11 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 
     ![예상 결과를 표시하는 FlipView 앱](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. **디버그** 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신**을 선택합니다.
+7. **디버그** 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신** 을 선택합니다.
 
     ![디버그 대상 목록 선택](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. **디버그** > **Start 디버그ging**을 선택하거나 F5 키를 눌러 디버그 모드에서 앱을 실행합니다.
+8. **디버그** > **Start 디버그ging** 을 선택하거나 F5 키를 눌러 디버그 모드에서 앱을 실행합니다.
 
     그러면 앱이 실행되지만 스타일 지정에 몇 가지 버그가 있으므로 대부분 빈 화면이 표시됩니다. 첫 번째 `FlipView` 이미지가 화면 가운데에 작은 사각형 안에 나타납니다.
 
@@ -182,7 +184,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 14. 주 창에서 `width: 100px;height: 100px;`을 두 번 클릭하고 **Delete** 키를 누른 다음, **Enter** 키를 누릅니다. Enter 키를 누르면 디버깅 세션을 중지하지 않았더라도 새 값이 앱에 바로 반영됩니다.
 
     > [!IMPORTANT]
-    > DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨**및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다.
+    > DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨** 및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다.
 
 15. 앱을 선택하거나 Alt+Tab을 사용하여 앱을 전환합니다.
 
@@ -243,9 +245,9 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 
   ![DOM 탐색기의 요소 선택 단추](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
-  **요소 선택** 을 클릭하거나 Ctrl+B를 누르면 실행 중인 응용 프로그램에서 항목을 클릭하여 DOM 탐색기에서 항목을 선택할 수 있도록 선택 모드가 변경됩니다. 이 모드는 한 번 클릭 후에 다시 일반 선택 모드로 변경됩니다. **요소 선택**을 클릭하면 응용 프로그램은 전경으로 돌아가고 커서는 새 선택 모드를 반영하도록 변경됩니다. 윤곽선이 그려진 요소를 클릭하면 지정된 요소가 선택된 상태로 DOM 탐색기가 전경으로 돌아갑니다.
+  **요소 선택** 을 클릭하거나 Ctrl+B를 누르면 실행 중인 응용 프로그램에서 항목을 클릭하여 DOM 탐색기에서 항목을 선택할 수 있도록 선택 모드가 변경됩니다. 이 모드는 한 번 클릭 후에 다시 일반 선택 모드로 변경됩니다. **요소 선택** 을 클릭하면 응용 프로그램은 전경으로 돌아가고 커서는 새 선택 모드를 반영하도록 변경됩니다. 윤곽선이 그려진 요소를 클릭하면 지정된 요소가 선택된 상태로 DOM 탐색기가 전경으로 돌아갑니다.
 
-  **요소 선택**을 선택하기 전에 **웹 페이지 하이라이트 표시** 단추를 설정/해제하여 실행 중인 앱의 요소를 강조 표시할 것인지 지정할 수 있습니다. 다음 일러스트레이션에서는 이 단추를 보여 줍니다. 강조 표시는 기본적으로 표시됩니다.
+  **요소 선택** 을 선택하기 전에 **웹 페이지 하이라이트 표시** 단추를 설정/해제하여 실행 중인 앱의 요소를 강조 표시할 것인지 지정할 수 있습니다. 다음 일러스트레이션에서는 이 단추를 보여 줍니다. 강조 표시는 기본적으로 표시됩니다.
 
   ![웹 페이지 하이라이트 표시 단추](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 

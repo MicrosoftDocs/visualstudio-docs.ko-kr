@@ -1,6 +1,7 @@
 ---
 title: 웹 프로젝트의 속성 설정 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio의 속성 페이지 대화 상자에서 웹 사이트 디버그 구성의 속성 설정을 변경하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 86f15a6fa622bf7938740111705a295e09f3e443
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730590"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205556"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>웹 프로젝트에 대한 속성 페이지 설정
 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)에서 설명한 것처럼 **속성 페이지** 대화 상자를 사용하여 웹 사이트 디버그 구성에 대한 속성 설정을 변경할 수 있습니다. 다음 표에서는 **속성 페이지** 대화 상자에서 디버거 관련 설정을 확인할 수 있는 위치에 대해 설명합니다.
@@ -47,7 +48,7 @@ ms.locfileid: "72730590"
 | **기본 웹 서버 사용** | 기본 웹 서버를 사용하도록 지정합니다. |
 | **사용자 지정 서버 사용** | 서버로 사용할 기본 URL을 입력할 수 있습니다. |
 | **디버거** | 수행할 디버깅의 형식에 관련된 옵션을 그룹화하는 제목입니다. |
-| **ASP.NET 디버깅** | [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 개발 플랫폼용으로 작성된 서버 페이지를 디버깅할 수 있습니다. **시작 URL**에서 URL을 지정해야 합니다. |
+| **ASP.NET 디버깅** | [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 개발 플랫폼용으로 작성된 서버 페이지를 디버깅할 수 있습니다. **시작 URL** 에서 URL을 지정해야 합니다. |
 | **네이티브 코드 디버깅** | 관리되는 애플리케이션에서의 비관리 네이티브 Win32 코드에 대한 호출을 디버깅할 수 있습니다. |
 | **SQL Server 디버깅** | SQL Server 데이터베이스 개체를 디버깅할 수 있습니다. |
 | **Silverlight 디버깅** | Silverlight 구성 요소를 디버깅할 수 있습니다. |

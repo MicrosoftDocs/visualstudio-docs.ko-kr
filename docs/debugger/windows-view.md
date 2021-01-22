@@ -1,5 +1,7 @@
 ---
 title: 창 뷰 | Microsoft Docs
+description: 창 뷰는 모든 창 및 컨트롤의 트리를 표시합니다. 창 뷰를 시작점으로 사용하여 관심 있는 창에 관한 정보를 얻습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900863"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205374"
 ---
 # <a name="windows-view"></a>창 뷰
 Spy++를 처음 열면 시스템에 있는 모든 창 및 컨트롤의 트리가 창 뷰에 표시됩니다. 창 핸들 및 클래스 이름을 보여 줍니다. 현재 데스크톱 창은 트리의 맨 위에 있습니다. 다른 모든 창은 데스크톱의 자식 창이며 표준 창 계층 구조에 따라 나열됩니다. 형제 창은 해당 부모 아래에 들여쓴 확장 가능한 목록에 표시됩니다.

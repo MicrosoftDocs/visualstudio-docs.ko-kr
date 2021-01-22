@@ -2,17 +2,17 @@
 title: Visual Studio 구독의 CODE Magazine 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 12/02/2020
+ms.date: 01/19/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538113"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597399"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -49,15 +49,16 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 ## <a name="eligibility"></a>자격
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  아니요          |
+| Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품| 사용 가능       |  아니요          |
 | GitHub Enterprise가 포함된 Visual Studio Enterprise 구독   | VL| 사용 가능       |  아니요          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  아니요          |
 | GitHub Enterprise가 포함된 Visual Studio Professional 구독 | VL                                      | 사용 가능                                                            |  아니요          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능                                             |  아니요          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  아니요          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
+| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 사용할 수 없음 | N/A |
 
-<sup>1</sup>  포함:  ‘NFR(전매 금지), VSIP(Visual Studio 업계 파트너), FTE, BizSpark, Imagine Premium  제외: MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services, Imagine’
+<sup>1</sup>  포함:  *NFR(전매 금지), VSIP(Visual Studio Industry Partner), FTE, BizSpark, Imagine, Imagine Premium, MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -76,7 +77,7 @@ A:  CODE Magazine은 이행, 제품 선택, 디지털 액세스 프로세스를 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

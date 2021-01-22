@@ -1,6 +1,7 @@
 ---
 title: XAML 앱의 리소스 사용 분석
-ms.custom: seodec18
+description: 애플리케이션 타임라인 프로파일러를 사용하여 XAML 애플리케이션에서 성능 문제를 찾습니다. 다양한 시나리오에서 다양한 작업에 소요된 시간을 분석할 수 있습니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038350"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205738"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>리소스 소비량 및 UI 스레드 활동 분석(XAML)
 
 **애플리케이션 타임라인** 프로파일러를 사용하여 XAML 애플리케이션에서 애플리케이션 상호 작용 관련 성능 문제를 찾으세요. 이 도구를 사용하면 애플리케이션의 리소스 소비에 대한 자세한 보기를 표시하여 XAML 애플리케이션 성능을 개선할 수 있습니다. 애플리케이션 UI 프레임(레이아웃 및 렌더링)을 준비하고, 네트워크 및 디스크 요청을 처리하여, 애플리케이션 시작, 페이지 로드 및 창 크기 조정과 같은 시나리오에서 애플리케이션이 보낸 시간을 분석할 수 있습니다.
 
-**애플리케이션 타임라인**은 **디버그** > **성능 프로파일러** 명령으로 시작할 수 있는 도구 중 하나입니다.
+**애플리케이션 타임라인** 은 **디버그** > **성능 프로파일러** 명령으로 시작할 수 있는 도구 중 하나입니다.
 
 이 도구는 Visual Studio 2013용 진단 도구 집합에 속하는 **XAML UI 응답성** 도구를 대체합니다.
 
@@ -45,14 +46,14 @@ ms.locfileid: "90038350"
 
 1. XAML 앱을 엽니다.
 
-2. **디버그/성능 프로파일러**를 클릭합니다. diagsession 창에 프로파일링 도구 목록이 표시되어야 합니다.
+2. **디버그/성능 프로파일러** 를 클릭합니다. diagsession 창에 프로파일링 도구 목록이 표시되어야 합니다.
 
 3. **애플리케이션 타임라인** 을 선택한 다음 창 하단의 **시작** 을 클릭합니다.
 
    ![애플리케이션 타임라인 도구 선택됨](../profiling/media/apptimelineselect.png "애플리케이션 타임라인 도구")
 
    > [!NOTE]
-   > *VsEtwCollector.exe* 실행 권한을 요청하는 사용자 계정 컨트롤 창이 나타날 수 있습니다. **예**를 클릭합니다.
+   > *VsEtwCollector.exe* 실행 권한을 요청하는 사용자 계정 컨트롤 창이 나타날 수 있습니다. **예** 를 클릭합니다.
 
 4. 성능 데이터를 수집하는 앱에서 프로파일링에 관심 있는 시나리오를 실행합니다.
 
@@ -102,7 +103,7 @@ ms.locfileid: "90038350"
 
 |Name|Description|
 |-|-|
-|**구문 분석**|XAML 파일을 구문 분석하고 개체를 만드는 데 걸린 시간입니다.<br /><br /> **타임라인 세부 정보**에서 **구문 분석** 노드를 확장하면 루트 이벤트 때문에 구문 분석된 모든 XAML 파일의 종속성 체인을 표시합니다. 이러한 팁을 통해 성능이 중요한 시나리오에서 불필요한 파일 구문 분석 및 개체 생성을 식별하고, 최적화할 수 있습니다.|
+|**구문 분석**|XAML 파일을 구문 분석하고 개체를 만드는 데 걸린 시간입니다.<br /><br /> **타임라인 세부 정보** 에서 **구문 분석** 노드를 확장하면 루트 이벤트 때문에 구문 분석된 모든 XAML 파일의 종속성 체인을 표시합니다. 이러한 팁을 통해 성능이 중요한 시나리오에서 불필요한 파일 구문 분석 및 개체 생성을 식별하고, 최적화할 수 있습니다.|
 |**레이아웃**|큰 애플리케이션에서는 수천 개의 요소가 동시에 화면에 표시될 수 있습니다. 이 디스플레이로 인해 UI 프레임 속도가 느려지고 애플리케이션의 응답성이 나빠질 수 있습니다. 레이아웃 이벤트는 각 요소의 레이아웃을 지정하는 비용(즉, Arrange, Measure, ApplyTemplate, ArrangeOverride 및 MeasureOverride에 소요되는 시간)을 정확하게 결정합니다. 또한 레이아웃 단계에 참여하는 시각적 트리를 빌드합니다. 이 시각화를 사용하여 정리할 논리 트리를 결정하거나 다른 지연 메커니즘을 평가하여 레이아웃 단계를 최적화할 수 있습니다.|
 |**렌더링**|화면에 XAML 요소를 그리는 데 소요된 시간입니다.|
 |**I/0**|로컬 디스크 또는 [Microsoft Windows 인터넷(WinINet) API](/windows/desktop/WinInet/portal)를 통해 액세스된 네트워크 리소스에서 데이터를 검색하는 데 소요된 시간입니다.|

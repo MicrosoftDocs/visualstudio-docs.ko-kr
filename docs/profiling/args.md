@@ -1,5 +1,7 @@
 ---
 title: Args | Microsoft 문서
+description: VSPerfCmd.exe의 ARGS 옵션을 사용하여 시작 하위 명령의 대상 애플리케이션에 인수 목록을 전달합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff16d67d0c7168524ff145183f49a662e1f660f0
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779820"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205712"
 ---
 # <a name="args"></a>Args
 VSPerfCmd.exe **Args** 옵션은 **Launch** 하위 명령의 대상 애플리케이션에 전달되는 인수 목록을 지정합니다.
 
- 명령줄에서 **Launch**도 지정한 경우에만 **Args**를 사용할 수 있습니다. **Launch**가 지정된 경우 **Args**는 선택 사항입니다.
+ 명령줄에서 **Launch** 도 지정한 경우에만 **Args** 를 사용할 수 있습니다. **Launch** 가 지정된 경우 **Args** 는 선택 사항입니다.
 
 ## <a name="syntax"></a>구문
 

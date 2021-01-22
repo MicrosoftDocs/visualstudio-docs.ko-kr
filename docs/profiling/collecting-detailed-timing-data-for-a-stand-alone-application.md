@@ -1,5 +1,7 @@
 ---
 title: 프로파일러 명령줄 - 독립 실행형 앱에 대한 타이밍 데이터 세부 정보
+description: 명령줄에서 계측 방법을 사용하여 독립 실행형 구성 요소의 자세한 성능 데이터를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331830"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533838"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 클라이언트(독립 실행형) 구성 요소에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 콘텐츠|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**계측을 사용하여.NET Framework 애플리케이션 프로파일링**|-   [방법: .NET 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
 |**계측을 사용하여 C/C++ 애플리케이션 프로파일링**|-   [방법: 네이티브 구성 요소 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
@@ -34,7 +36,7 @@ ms.locfileid: "85331830"
 
 ### <a name="profile-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**샘플링을 사용하여 애플리케이션 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**.NET 메모리 할당 및 가비지 수집 프로파일링**|-   [.NET Framework 메모리 데이터 수집](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|

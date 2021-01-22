@@ -1,5 +1,7 @@
 ---
 title: 성능 데이터 파일 비교 | Microsoft 문서
+description: 프로파일링 도구를 사용하여 두 개의 보고서 파일(.vsp 또는 .vsps)을 비교합니다. 비교는 차이, 성능 저하, 개선 사항을 보여 줍니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777858"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533500"
 ---
 # <a name="compare-performance-data-files"></a>성능 데이터 파일 비교
 
-프로파일링 도구 데이터 파일 비교 기능을 통해 두 개의 보고서 파일(.*vsp* 또는 .*vsps*)을 선택하고 프로파일링 세션 간에 발생하는 차이, 성능 저하 및 향상된 기능을 보여 주는 보고서를 생성할 수 있습니다.
+프로파일링 도구 데이터 파일 비교 기능을 통해 두 개의 보고서 파일(.*vsp* 또는 .*vsps*)을 선택하고 프로파일링 세션 간에 발생하는 차이, 성능 저하, 개선 사항을 보여 주는 보고서를 생성할 수 있습니다.
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 데이터 파일 비교 보고서는 한 프로파일링 데이터 파일의 분석 결과와 다른 데이터 파일의 기본 분석 결과를 비교합니다. 두 데이터 파일은 모두 동일한 프로파일링 방법을 사용하여 생성된 것이어야 합니다. 분석된 비교 보고서는 *.vsps* 파일로 저장됩니다.
 
@@ -33,6 +35,6 @@ ms.locfileid: "74777858"
 
 노이즈를 줄이고, 지정된 크기만큼 변경되지 않은 행의 비교 테이블 뷰에서 임의의 데이터를 필터링하도록 임계값을 설정할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [방법: 성능 데이터 파일 비교](../profiling/how-to-compare-performance-data-files.md)

@@ -1,5 +1,7 @@
 ---
 title: 코드 형식 선택 대화 상자 | Microsoft Docs
+description: Visual Studio의 코드 형식 선택 대화 상자에 관해 알아봅니다. 이 대화 상자를 열려면 프로세스에 연결 대화 상자를 열고 선택 단추를 클릭합니다.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: reference
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248772"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205517"
 ---
 # <a name="select-code-type-dialog-box"></a>코드 형식 선택 대화 상자
 
@@ -54,7 +56,7 @@ ms.locfileid: "88248772"
 - 스크립트 - JavaScript에 대한 일반 스크립트 디버거를 지정합니다. JavaScript(Chrome)와 같은 시나리오에 적용되는 경우 더 제한적인 옵션을 사용합니다.
 - T-SQL - Transact-SQL
 - Unity - Unity
-- 관리되는 호환성 모드 - 일반적으로 C++/CLR 코드를 사용하는 혼합 모드 디버깅에서 사용하기 위해(혼합 모드에서 편집하며 계속하기를 사용) 또는 레거시 디버거를 대상으로 하는 확장을 지원하기 위해 관리 코드에 대한 레거시 디버거를 지정합니다. 대부분의 혼합 모드 디버깅 시나리오에서는 관리되는 호환성 모드 대신 **네이티브**와 적절한 **관리** 코드 형식을 선택합니다.
+- 관리되는 호환성 모드 - 일반적으로 C++/CLR 코드를 사용하는 혼합 모드 디버깅에서 사용하기 위해(혼합 모드에서 편집하며 계속하기를 사용) 또는 레거시 디버거를 대상으로 하는 확장을 지원하기 위해 관리 코드에 대한 레거시 디버거를 지정합니다. 대부분의 혼합 모드 디버깅 시나리오에서는 관리되는 호환성 모드 대신 **네이티브** 와 적절한 **관리** 코드 형식을 선택합니다.
 ::: moniker-end
 
 대부분의 시나리오에서는 동일한 디버깅 세션에서 여러 디버거를 연결하는 것은 지원되지 않습니다. Visual Studio의 두 번째 인스턴스를 사용하여 이 작업을 수행할 수 있습니다.

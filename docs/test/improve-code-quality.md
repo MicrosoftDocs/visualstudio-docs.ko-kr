@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756645"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240324"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
 Visual Studio 테스트 도구를 사용하면 사용자와 팀이 수준 높은 코드를 개발하고 유지할 수 있습니다.
 
 > [!NOTE]
-> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. Live Unit Testing, IntelliTest 및 Coded UI 테스트와 같은 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
+> 단위 테스트는 Visual Studio의 모든 버전에서 사용할 수 있습니다. Live Unit Testing 및 IntelliTest와 같은 다른 테스트 도구는 Visual Studio Enterprise 버전에서만 사용할 수 있습니다. 버전에 대한 자세한 내용은 [Visual Studio IDE 비교](https://visualstudio.microsoft.com/vs/compare/)를 참조하세요.
 
 ## <a name="test-explorer"></a>테스트 탐색기
 

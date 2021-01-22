@@ -1,6 +1,7 @@
 ---
 title: 원격 IIS 컴퓨터에서 ASP.NET Core 원격 디버그 | Microsoft Docs
-ms.custom: remotedebugging
+description: Visual Studio 원격 디버거를 사용하여 원격 IIS(인터넷 정보 서비스) 컴퓨터에 배포된 ASP.NET Core 애플리케이션을 디버그합니다.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298765"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205816"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Visual Studio의 원격 IIS 컴퓨터에서 ASP.NET Core를 원격으로 디버그
 
@@ -56,10 +57,10 @@ IIS에 배포된 ASP.NET Core 애플리케이션을 디버그하려면 앱을 �
 1. 새 ASP.NET Core 웹 애플리케이션을 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서 **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp**으로 지정한 다음, **만들기**를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기**를 선택합니다.
+    Visual Studio 2019에서 **Ctrl + Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력하고 **템플릿** 을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기** 를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp** 으로 지정한 다음, **만들기** 를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서 **파일 > 새로 만들기 > 프로젝트**를 선택한 다음, **Visual C# > 웹 > ASP.NET Core 웹 애플리케이션**을 선택합니다. ASP.NET Core 템플릿 섹션에서 **웹 애플리케이션(Model-View-Controller)** 을 선택합니다. ASP.NET Core 2.1이 선택되어 있고, **Docker 지원 사용**이 선택되어 있지 않고, **인증**이 **인증 안 함**으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp**으로 지정합니다.
+    Visual Studio 2017에서 **파일 > 새로 만들기 > 프로젝트** 를 선택한 다음, **Visual C# > 웹 > ASP.NET Core 웹 애플리케이션** 을 선택합니다. ASP.NET Core 템플릿 섹션에서 **웹 애플리케이션(Model-View-Controller)** 을 선택합니다. ASP.NET Core 2.1이 선택되어 있고, **Docker 지원 사용** 이 선택되어 있지 않고, **인증** 이 **인증 안 함** 으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp** 으로 지정합니다.
     ::: moniker-end
 
 4. About.cshtml.cs 파일을 열고 `OnGet` 메서드에 중단점을 설정합니다(이전 템플릿에서는 HomeController.cs를 대신 열고 `About()` 메서드에 중단점을 설정합니다).
@@ -70,14 +71,14 @@ IIS에 배포된 ASP.NET Core 애플리케이션을 디버그하려면 앱을 �
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Windows Server에서 브라우저 보안 설정 업데이트
 
-Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트**로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
+Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있으면(기본적으로 사용하도록 설정되어 있음) 일부 웹 서버 구성 요소를 다운로드할 수 있도록 일부 도메인을 신뢰할 수 있는 사이트로 추가해야 할 수 있습니다. **인터넷 옵션 > 보안 > 신뢰할 수 있는 사이트 > 사이트** 로 이동하여 신뢰할 수 있는 사이트를 추가합니다. 다음 도메인을 추가합니다.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - iis.net
 
-소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가**를 클릭합니다.
+소프트웨어를 다운로드하는 경우 다양한 웹 사이트 스크립트 및 리소스를 로드하는 권한을 부여하라는 요청을 받게 됩니다. 이러한 리소스 중 일부는 필요하지 않지만 프로세스를 간소화하기 위해 메시지가 표시되면 **추가** 를 클릭합니다.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Windows Server에 ASP.NET Core 설치
 
@@ -89,7 +90,7 @@ Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있
     > [!NOTE]
     > 시스템이 인터넷에 연결되지 않은 경우 *[Microsoft Visual C++ 2015 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=53840)* 를 설치한 후에 .NET Core Windows Server 호스팅 번들을 설치합니다.
 
-3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
+3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y** 에 이어 **net start w3svc** 를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
 ## <a name="choose-a-deployment-option"></a>배포 옵션 선택
 
@@ -108,7 +109,7 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 ### <a name="configure-the-aspnet-core-web-site"></a>ASP.NET Core 웹 사이트 구성
 
-1. IIS 관리자의 왼쪽 창에 있는 **연결**에서 **애플리케이션 풀**을 선택합니다. **DefaultAppPool**을 열고 **.NET CLR 버전**을 **관리 코드 없음**으로 설정합니다. 이는 ASP.NET Core에 필요합니다. 기본 웹 사이트는 DefaultAppPool을 사용합니다.
+1. IIS 관리자의 왼쪽 창에 있는 **연결** 에서 **애플리케이션 풀** 을 선택합니다. **DefaultAppPool** 을 열고 **.NET CLR 버전** 을 **관리 코드 없음** 으로 설정합니다. 이는 ASP.NET Core에 필요합니다. 기본 웹 사이트는 DefaultAppPool을 사용합니다.
 
 2. DefaultAppPool을 중지했다가 다시 시작합니다.
 
@@ -124,14 +125,14 @@ IIS에 앱을 배포하는 데 도움이 필요한 경우 다음 옵션을 고�
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작하여 올바로 실행되는지 확인합니다. ASP.NET Core의 경우 **DefaultAppPool**에 대한 애플리케이션 풀 필드가 **관리 코드 없음**으로 설정되었는지도 확인해야 합니다.
+앱을 성공적으로 배포한 후 자동으로 시작해야 합니다. 앱이 Visual Studio에서 시작되지 않는 경우 IIS에서 앱을 시작하여 올바로 실행되는지 확인합니다. ASP.NET Core의 경우 **DefaultAppPool** 에 대한 애플리케이션 풀 필드가 **관리 코드 없음** 으로 설정되었는지도 확인해야 합니다.
 
-1. **설정** 대화 상자에서 **다음**을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거**를 선택합니다.
+1. **설정** 대화 상자에서 **다음** 을 클릭하여 디버깅을 사용하도록 설정하고 **디버그** 구성을 선택한 다음, **파일 게시** 옵션 아래에서 **대상에서 추가 파일 제거** 를 선택합니다.
 
     > [!IMPORTANT]
     > 릴리스 구성을 선택하는 경우 게시할 때 *web.config* 파일에서 디버깅을 사용하지 않도록 설정합니다.
 
-1. **저장**을 클릭한 다음, 앱을 다시 게시합니다.
+1. **저장** 을 클릭한 다음, 앱을 다시 게시합니다.
 
 ## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(선택 사항) 로컬 폴더에 게시하여 배포
 
@@ -139,21 +140,21 @@ PowerShell, RoboCopy를 사용하여 앱을 IIS에 복사하거나 수동으로 
 
 ### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Windows Server 컴퓨터에서 ASP.NET Core 웹 사이트 구성
 
-1. Windows 탐색기를 열고 **C:\Publish**라는 새 폴더를 만듭니다. 여기에서 나중에 ASP.NET Core 프로젝트를 배포합니다.
+1. Windows 탐색기를 열고 **C:\Publish** 라는 새 폴더를 만듭니다. 여기에서 나중에 ASP.NET Core 프로젝트를 배포합니다.
 
-2. **IIS(인터넷 정보 서비스) 관리자**가 아직 열려있지 않으면 엽니다. (서버 관리자의 왼쪽 창에서 **IIS**를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자**를 선택합니다.)
+2. **IIS(인터넷 정보 서비스) 관리자** 가 아직 열려있지 않으면 엽니다. (서버 관리자의 왼쪽 창에서 **IIS** 를 선택합니다. 서버를 마우스 오른쪽 단추로 클릭하고 **IIS(인터넷 정보 서비스) 관리자** 를 선택합니다.)
 
-3. 왼쪽 창의 **연결** 아래 **사이트**로 이동합니다.
+3. 왼쪽 창의 **연결** 아래 **사이트** 로 이동합니다.
 
-4. **기본 웹 사이트**를 선택하고 **기본 설정**을 선택한 다음, **실제 경로**를 **C:\Publish**로 설정합니다.
+4. **기본 웹 사이트** 를 선택하고 **기본 설정** 을 선택한 다음, **실제 경로** 를 **C:\Publish** 로 설정합니다.
 
-4. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가**를 선택합니다.
+4. **기본 웹 사이트** 노드를 마우스 오른쪽 단추로 클릭하고 **애플리케이션 추가** 를 선택합니다.
 
-5. **별칭** 필드를 **MyASPApp**으로 설정하고 기본 애플리케이션 풀(**DefaultAppPool**)을 적용한 후 **실제 경로**를 **C:\Publish**로 설정합니다.
+5. **별칭** 필드를 **MyASPApp** 으로 설정하고 기본 애플리케이션 풀(**DefaultAppPool**)을 적용한 후 **실제 경로** 를 **C:\Publish** 로 설정합니다.
 
-6. **연결**에서 **애플리케이션 풀**을 선택합니다. **DefaultAppPool**을 열고 애플리케이션 풀 필드를 **관리 코드 없음**으로 설정합니다.
+6. **연결** 에서 **애플리케이션 풀** 을 선택합니다. **DefaultAppPool** 을 열고 애플리케이션 풀 필드를 **관리 코드 없음** 으로 설정합니다.
 
-7. IIS 관리자에서 새 사이트를 마우스 오른쪽 단추로 클릭하고 **사용 권한 편집**을 선택하고 IUSR, IIS_IUSRS 또는 웹앱에 액세스하도록 구성된 사용자가 읽기 및 실행 권한이 있는 사용자인지 확인합니다.
+7. IIS 관리자에서 새 사이트를 마우스 오른쪽 단추로 클릭하고 **사용 권한 편집** 을 선택하고 IUSR, IIS_IUSRS 또는 웹앱에 액세스하도록 구성된 사용자가 읽기 및 실행 권한이 있는 사용자인지 확인합니다.
 
     액세스 권한이 있는 사용자 중 한 명이 보이지 않으면 단계를 진행하여 IUSR을 읽기 및 실행 권한이 있는 사용자로 추가합니다.
 
@@ -191,21 +192,21 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     Visual Studio에서 **\<remote computer name>:포트** 형식으로 표시되는 컴퓨터 이름에 필요한 포트를 추가하는지 확인합니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서는 **\<remote computer name>:4024**가 표시되고,
+    Visual Studio 2019에서는 **\<remote computer name>:4024** 가 표시되고,
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017에서는 **\<remote computer name>:4022**가 표시됩니다.
+    Visual Studio 2017에서는 **\<remote computer name>:4022** 가 표시됩니다.
     ::: moniker-end
     이 포트는 필수입니다. 포트 번호가 표시되지 않으면 수동으로 추가하세요.
 
-4. **새로 고침**을 클릭합니다.
+4. **새로 고침** 을 클릭합니다.
     일부 프로세스가 **사용 가능한 프로세스** 창에 표시됩니다.
 
     프로세스가 보이지 않으면 원격 컴퓨터 이름 대신 IP 주소를 사용해 보세요(포트가 필요함). 명령줄에서 `ipconfig`를 사용하여 IPv4 주소를 가져올 수 있습니다.
 
     **찾기** 단추를 사용하려면 서버에서 [UDP 포트 3702를 열어야](#bkmk_openports) 합니다.
 
-5. **모든 사용자의 프로세스 표시**를 선택합니다.
+5. **모든 사용자의 프로세스 표시** 를 선택합니다.
 
 6. 앱을 신속하게 찾으려면 프로세스 이름의 첫 글자를 입력합니다.
 
@@ -213,7 +214,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 
     * 그렇지 않으면 **dotnet.exe** 프로세스를 선택합니다. (이것은 Out-of-process 호스팅 모델입니다.)
 
-    *w3wp.exe* 또는 *dotnet.exe*가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool**과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 보이지만 고유하지 않으면, 디버그할 앱 인스턴스에 대해 새로 명명된 앱 풀을 만듭니다. 그러면 **사용자 이름** 열에서 쉽게 찾을 수 있습니다.
+    *w3wp.exe* 또는 *dotnet.exe* 가 표시되는 프로세스가 여러 개인 경우 **사용자 이름** 열을 확인합니다. 일부 시나리오에서는 **사용자 이름** 열에 **IIS APPPOOL\DefaultAppPool** 과 같은 앱 풀 이름이 표시됩니다. 앱 풀이 보이지만 고유하지 않으면, 디버그할 앱 인스턴스에 대해 새로 명명된 앱 풀을 만듭니다. 그러면 **사용자 이름** 열에서 쉽게 찾을 수 있습니다.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -222,7 +223,7 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. **연결**을 클릭합니다.
+7. **연결** 을 클릭합니다.
 
 8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<remote computer name>** 으로 이동합니다.
 
@@ -250,18 +251,18 @@ Visual Studio 버전과 일치하는 원격 도구 버전을 다운로드합니�
 ::: moniker-end
 * UDP 3702 - (선택 사항) 검색 포트를 사용하면 Visual Studio에서 원격 디버거에 연결할 때 **찾기** 단추를 사용할 수 있습니다.
 
-1. Windows Server에서 포트를 열려면 **시작** 메뉴를 열고 **고급 보안이 포함된 Windows 방화벽**을 검색합니다.
+1. Windows Server에서 포트를 열려면 **시작** 메뉴를 열고 **고급 보안이 포함된 Windows 방화벽** 을 검색합니다.
 
-2. 그런 다음, **인바운드 규칙 > 새 규칙 > 포트**를 선택하고 **다음**을 클릭합니다. (UDP 3702의 경우 **아웃바운드 규칙**을 대신 선택합니다.)
+2. 그런 다음, **인바운드 규칙 > 새 규칙 > 포트** 를 선택하고 **다음** 을 클릭합니다. (UDP 3702의 경우 **아웃바운드 규칙** 을 대신 선택합니다.)
 
-3. **특정 로컬 포트**에 포트 번호를 입력하고 **다음**을 클릭합니다.
+3. **특정 로컬 포트** 에 포트 번호를 입력하고 **다음** 을 클릭합니다.
 
-4. **연결 허용**을 클릭하고 **다음**을 클릭합니다.
+4. **연결 허용** 을 클릭하고 **다음** 을 클릭합니다.
 
-5. 포트에 사용할 네트워크 유형을 하나 이상 선택하고 **다음**을 클릭합니다.
+5. 포트에 사용할 네트워크 유형을 하나 이상 선택하고 **다음** 을 클릭합니다.
 
     선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다.
-6. 인바운드 규칙의 이름(예: **IIS**, **Web Deploy**, **msvsmon**)을 추가하고 **마침**을 클릭합니다.
+6. 인바운드 규칙의 이름(예: **IIS**, **Web Deploy**, **msvsmon**)을 추가하고 **마침** 을 클릭합니다.
 
     인바운드 규칙 또는 아웃바운드 규칙 목록에 새 규칙이 표시되어야 합니다.
 

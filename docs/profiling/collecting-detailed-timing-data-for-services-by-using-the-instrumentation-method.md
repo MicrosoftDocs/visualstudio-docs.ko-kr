@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 명령줄 - 서비스의 타이밍 데이터 가져오기
+description: 명령줄에서 계측 방법을 사용하여 Windows 서비스의 자세한 성능 데이터를 수집하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,19 +11,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f4560b21213e3f50061e1f9424d634aeb7b52c2
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810759"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533825"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>프로파일러 명령줄에서 계측 방법을 사용하여 서비스에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 Windows 서비스에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**.NET 서비스 프로파일링**|-   [방법: .NET 서비스 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
 |**계층 상호 작용 데이터 추가**|-   [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
@@ -32,7 +33,7 @@ ms.locfileid: "90810759"
 
 ### <a name="profile-windows-services"></a>Windows 서비스 프로파일링
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**샘플링 방법을 사용하여 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**Profile.NET 메모리 할당 및 가비지 수집**|-   [.NET 메모리 데이터 수집](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|

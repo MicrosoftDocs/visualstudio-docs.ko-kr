@@ -1,5 +1,7 @@
 ---
 title: 독립 실행형 애플리케이션의 명령줄 프로파일링 | Microsoft 문서
+description: 명령줄에서 프로파일링 도구를 사용하여 클라이언트(독립 실행형) 애플리케이션의 성능 데이터를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557859"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533643"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>독립 실행형 애플리케이션의 명령줄 프로파일링
 이 섹션에서는 명령줄에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 독립 실행형(클라이언트) 애플리케이션의 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.

@@ -1,5 +1,7 @@
 ---
 title: 원격 디버깅 오류 및 문제 해결 | Microsoft Docs
+description: Visual Studio에서 일반적인 원격 디버깅 오류의 링크를 확인합니다. 관리자 권한으로 원격 디버거를 실행하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316139"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205660"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>원격 디버깅 오류 및 문제 해결
 

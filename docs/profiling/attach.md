@@ -1,5 +1,7 @@
 ---
 title: 연결 | Microsoft Docs
+description: VSPerfCmd.exe의 Attach 옵션을 사용하여 PID(프로세스 ID)로 지정된 실행 중인 프로세스의 프로파일링을 시작합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c97dee50d58b49092d9b23a497192b29746e0c22
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329867"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205699"
 ---
 # <a name="attach"></a>연결
 *VSPerfCmd.exe* **Attach** 옵션은 PID(프로세스 ID)로 지정된 실행 중인 프로세스의 샘플 프로파일링을 시작합니다.
@@ -22,7 +24,7 @@ ms.locfileid: "85329867"
  **Attach** 옵션을 사용하려면 Start 옵션에서 **Sample** 메서드를 지정해야 합니다.
 
 > [!NOTE]
-> **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 **VSPerfCmd/Attach** 또는 **VSPerfCmd/Detach**에 대한 모든 호출은 **Crosssession**을 지정해야 합니다.
+> **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 **VSPerfCmd/Attach** 또는 **VSPerfCmd/Detach** 에 대한 모든 호출은 **Crosssession** 을 지정해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,7 +51,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>간격 옵션
  다음 샘플링 간격 옵션 중 하나를 Attach 명령줄에 지정할 수 있습니다. 기본 샘플링 간격은 10,000,000 프로세서 클록 주기입니다.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] 샘플링 간격의 종류와 수를 지정합니다.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] 샘플링 간격의 종류와 수를 지정합니다.
 
 - **Timer** - 모든 `Cycles` 프로세서 클록 주기를 샘플링합니다. `Cycles`를 지정하지 않은 경우 10,000,000 주기가 사용됩니다.
 

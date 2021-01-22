@@ -1,5 +1,7 @@
 ---
 title: 계층 상호 작용 데이터 수집 | Microsoft 문서
+description: ADO.NET 서비스를 통해 데이터베이스와 통신하는 다중 계층 애플리케이션의 계층 프로파일링 정보를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331592"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533682"
 ---
 # <a name="collect-tier-interaction-data"></a>계층 상호 작용 데이터 수집
 
@@ -40,7 +42,7 @@ Windows 8 데스크톱 앱 및 Windows Server 2012 앱에서 계층 상호 작�
 
 ## <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>성능 세션 속성 페이지를 사용하여 프로파일링 실행에 계층 상호 작용 데이터를 추가하려면
 
-1. 성능 탐색기에서, 상황에 맞는 메뉴에서 **속성**을 선택합니다.
+1. 성능 탐색기에서, 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
 2. **계층 상호 작용** 페이지를 선택한 다음 **계층 상호 작용 프로파일링 사용** 확인란을 선택합니다.
 

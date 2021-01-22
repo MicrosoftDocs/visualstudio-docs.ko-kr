@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 명령줄 - .NET 메모리 데이터 가져오기
+description: 명령줄에서 샘플링 방법을 사용하여 독립 실행형 .NET 클라이언트의 메모리 할당 및 개체 수명 데이터를 수집하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f21974ad59951290123a3a89f68b6f326a6e2057
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810746"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533812"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 .NET Framework 메모리 데이터 수집
 

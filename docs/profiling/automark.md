@@ -1,5 +1,7 @@
 ---
 title: AutoMark | Microsoft Docs
+description: AutoMark 옵션을 사용하여 Windows 성능 카운터 데이터 수집 이벤트 간 시간 간격을 지정합니다. WinCounter 옵션과 함께 사용합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa1e7f39a9dcaedec51eb6a40ed3a2d06bcfb0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94578571a9cfe6a170fd94019615eeec3071356a
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330614"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205764"
 ---
 # <a name="automark"></a>AutoMark
 **AutoMark** 옵션은 Windows 소프트웨어 성능 카운터 이벤트의 컬렉션 간 밀리초의 수를 지정합니다. Windows 성능 카운터는 **WinCounter** 옵션에서 지정됩니다.
 
- 하나의 **AutoMark** 옵션만 명령줄에서 지정할 수 있습니다. **AutoMark**에서 지정한 **WinCounter** 샘플링 간격은 주 샘플링 간격과 무관합니다.
+ 하나의 **AutoMark** 옵션만 명령줄에서 지정할 수 있습니다. **AutoMark** 에서 지정한 **WinCounter** 샘플링 간격은 주 샘플링 간격과 무관합니다.
 
 ## <a name="syntax"></a>구문
 

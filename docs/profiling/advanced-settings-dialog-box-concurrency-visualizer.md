@@ -1,5 +1,7 @@
 ---
 title: 고급 설정 대화 상자(동시성 시각화 도우미) | Microsoft Docs
+description: 동시성 시각화 도우미의 고급 설정을 사용하여 추적 콘텐츠를 제어합니다. 기호, 내 코드만, 버퍼링 등의 탭이 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72911215"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205504"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 동시성 시각화 도우미의 **고급 설정** 대화 상자에서는 추적 수집 방법을 제어할 수 있습니다.  이 대화 상자에는 기호, 내 코드만, 버퍼링, 필터링, CLR 이벤트, 표식, 공급자 및 파일에 대한 탭이 포함됩니다.
 
-## <a name="symbols"></a>Symbols
+## <a name="symbols"></a>기호
  동시성 시각화 도우미에는 Visual Studio 디버거와 동일한 기호 설정이 사용됩니다. 동시성 시각화 도우미는 이 설정을 사용해서 성능 데이터와 연관된 호출 스택을 분석합니다.  추적을 처리할 때 동시성 시각화 도우미는 설정 페이지에 지정된 기호 서버에 액세스합니다.  네트워크를 통해 이 데이터에 액세스할 경우에는 추적 처리 속도가 느려집니다.  기호를 분석하는 데 필요한 시간을 줄이기 위해서는 기호를 로컬로 캐시할 수 있습니다. 기호가 다운로드되었으면 Visual Studio가 로컬 캐시에서 기호를 로드합니다.
 
 ## <a name="just-my-code"></a>내 코드만

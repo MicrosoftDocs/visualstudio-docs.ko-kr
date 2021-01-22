@@ -1,6 +1,6 @@
 ---
 title: 잘못 동작하는 다중 스레드 앱의 일반 패턴
-description: Visual Studio 동시성 시각화 도우미 도구에 포함된 잘못 동작하는 다중 스레드 애플리케이션의 일반적인 패턴에 대해 알아봅니다.
+description: 동시성 시각화 도우미는 다중 스레드 애플리케이션에 관한 그래프와 제대로 동작하지 않는 애플리케이션의 일반적인 패턴 갤러리를 제공합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815791"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533552"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
 

@@ -1,5 +1,6 @@
 ---
 title: 계측을 사용하여 ASP.NET에 대한 타이밍 데이터 수집
+description: VSPerfCmd를 사용하여 ASP.NET 웹 애플리케이션의 자세한 성능 데이터를 수집하는 방법을 알아봅니다. 프로파일링 도구 기능에 대한 완전한 액세스를 제공합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: a73d81eaaef45a9ae97e733a8ae94805106a9ef8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1001e10d80b39df5072a6524f445c97418aa603b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809637"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205751"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>명령줄에서 프로파일러 계측 방법을 사용하여 ASP.NET 웹 애플리케이션에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 **VSPerfCmd** 명령줄 도구 및 계측 방법을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.
@@ -28,7 +29,7 @@ ms.locfileid: "90809637"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**정적으로 컴파일된 이진 파일 프로파일링**|-   [방법: 정적으로 컴파일된 ASP.NET 애플리케이션 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
 |**동적으로 컴파일된 이진 파일 프로파일링**|-   [방법: 동적으로 컴파일된 ASP.NET 애플리케이션 계측 및 자세한 타이밍 데이터 수집](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
@@ -37,7 +38,7 @@ ms.locfileid: "90809637"
 
 ### <a name="profile-aspnet-web-applications"></a>ASP.NET 웹 애플리케이션 프로파일링
 
-|작업|관련 내용|
+|Task|관련 내용|
 |----------|---------------------|
 |**샘플링 방법을 사용하여 프로파일링**|-   [샘플링을 사용하여 애플리케이션 통계 수집](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**메모리 할당 및 가비지 수집 프로파일링**|-   [메모리 데이터 수집](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|

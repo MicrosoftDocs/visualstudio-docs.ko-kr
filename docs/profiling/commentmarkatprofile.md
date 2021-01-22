@@ -1,5 +1,7 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
+description: CommentMarkAtProfile 메서드를 사용하여 타임스탬프 값, 숫자 기호 및 주석 문자열을 .vsp 파일에 삽입합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545615"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533526"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-`CommentMarkAtProfile` 메서드는 .*vsp* 파일에 타임스탬프 값, 숫자 기호 및 설명 문자열을 삽입합니다. 외부 이벤트를 동기화하는 데 타임스탬프 값을 사용할 수 있습니다. 삽입될 표시 및 주석의 경우 CommentMarkAtProfile 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
+`CommentMarkAtProfile` 메서드는 타임스탬프 값, 숫자 기호, 주석 문자열을 *.vsp* 파일에 삽입합니다. 외부 이벤트를 동기화하는 데 타임스탬프 값을 사용할 수 있습니다. 삽입될 표시 및 주석의 경우 CommentMarkAtProfile 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    __int64 dnTimestamp,
                                    long lMarker,
                                    LPCTSTR szComment);

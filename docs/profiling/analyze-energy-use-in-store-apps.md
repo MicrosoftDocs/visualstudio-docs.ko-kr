@@ -1,5 +1,7 @@
 ---
 title: UWP 앱의 에너지 사용 분석 | Microsoft Docs
+description: Visual Studio 에너지 소비 프로파일러를 사용하여 배터리 기반 디바이스에서 실행되는 UWP 앱의 에너지 및 전력 수요를 분석합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075459"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205790"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 
@@ -34,13 +36,13 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
 >
 > 이 모델은 다양한 저전력 디바이스에 대해 상당히 정확한 추정치를 제공하지만 프로파일링하는 디바이스의 실제 값은 달라질 가능성이 높습니다. 이러한 값을 사용하여 다른 리소스 사용에 비해 많은 에너지를 사용하고 있어서 최적화해야 할 디스플레이, CPU, 네트워크 활동을 찾습니다.
 
-에너지 소비 프로파일러는 이러한 *전원* 및 *에너지*에 대한 정의를 사용합니다.
+에너지 소비 프로파일러는 이러한 *전원* 및 *에너지* 에 대한 정의를 사용합니다.
 
-- *전원* 은 일정 시간 동안 일을 수행하는 데 사용된 힘의 효율을 측정합니다. 전기 과학에서 전력의 표준 단위는 *와트*입니다. 와트는 1암페어의 전류가 1볼트의 전위 차이를 통해 흐를 때 작업이 수행되는 속도로 정의됩니다. **전원 사용** 그래프에서 단위가 **mW** (밀리와트)로 표시되고 1mW는 1W의 1/1000에 해당합니다.
+- *전원* 은 일정 시간 동안 일을 수행하는 데 사용된 힘의 효율을 측정합니다. 전기 과학에서 전력의 표준 단위는 *와트* 입니다. 와트는 1암페어의 전류가 1볼트의 전위 차이를 통해 흐를 때 작업이 수행되는 속도로 정의됩니다. **전원 사용** 그래프에서 단위가 **mW** (밀리와트)로 표시되고 1mW는 1W의 1/1000에 해당합니다.
 
    전력은 속도이므로 방향(일정 시간 동안 작업이 증가하거나 감소할 수 있음)과 속도(작업이 증가하거나 감소하는 양)가 있습니다.
 
-- *에너지* 는 배터리의 전력 용량과 같이 총 전력량을 용량 또는 전위로 측정하거나 일정 기간 동안 사용된 총 전력량으로 측정합니다. 에너지 단위는 1시간 동안 1와트가 일정하게 적용된 전력량인 와트-시간입니다. **에너지 요약**에서 단위가 **mW-h**(밀리와트시)로 표시됩니다.
+- *에너지* 는 배터리의 전력 용량과 같이 총 전력량을 용량 또는 전위로 측정하거나 일정 기간 동안 사용된 총 전력량으로 측정합니다. 에너지 단위는 1시간 동안 1와트가 일정하게 적용된 전력량인 와트-시간입니다. **에너지 요약** 에서 단위가 **mW-h**(밀리와트시)로 표시됩니다.
 
 ![에너지 양, 사용한 전원, 사용한 전체 에너지](../profiling/media/energyprof_capcitypowerused.png)
 
@@ -89,14 +91,14 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>앱의 에너지 프로파일 데이터 수집
 
-1. **디버그** 메뉴에서 **디버그하지 않고 진단 시작**을 선택합니다.
+1. **디버그** 메뉴에서 **디버그하지 않고 진단 시작** 을 선택합니다.
 
      ![성능 프로파일러에서 에너지 소비 선택](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2. **에너지 소비** 를 선택한 다음 **시작**을 선택합니다.
+2. **에너지 소비** 를 선택한 다음 **시작** 을 선택합니다.
 
     > [!NOTE]
-    > **에너지 소비** 프로파일러를 시작하면 *VsEtwCollector.exe* 실행 권한을 요청하는 **사용자 계정 제어** 창이 나타날 수 있습니다. **예**를 선택합니다.
+    > **에너지 소비** 프로파일러를 시작하면 *VsEtwCollector.exe* 실행 권한을 요청하는 **사용자 계정 제어** 창이 나타날 수 있습니다. **예** 를 선택합니다.
 
 3. 데이터를 수집하려면 앱을 실행합니다.
 
@@ -107,13 +109,13 @@ if (performance && performance.mark) {
      Visual Studio에서 수집된 데이터를 분석하고 결과를 표시합니다.
 
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>설치된 에너지 프로파일 데이터 수집
- 에너지 소비 도구는 Visual Studio 솔루션에서 시작하거나 Microsoft Store에서 설치하는 UWP 앱에서만 실행할 수 있습니다. 솔루션을 Visual Studio에서 열 경우 기본 대상은 **시작 프로젝트**입니다. 설치된 앱을 대상으로 하려면
+ 에너지 소비 도구는 Visual Studio 솔루션에서 시작하거나 Microsoft Store에서 설치하는 UWP 앱에서만 실행할 수 있습니다. 솔루션을 Visual Studio에서 열 경우 기본 대상은 **시작 프로젝트** 입니다. 설치된 앱을 대상으로 하려면
 
-1. **대상 변경** 을 선택한 다음 **설치된 응용 프로그램**을 선택합니다.
+1. **대상 변경** 을 선택한 다음 **설치된 응용 프로그램** 을 선택합니다.
 
 2. **설치된 응용 프로그램 패키지 선택** 목록에서 대상을 선택합니다.
 
-3. 성능 프로파일러 페이지에서 **에너지 소비**를 선택합니다.
+3. 성능 프로파일러 페이지에서 **에너지 소비** 를 선택합니다.
 
 4. 프로파일링을 시작하려면 **시작** 을 선택합니다.
 
@@ -126,7 +128,7 @@ if (performance && performance.mark) {
 
 |이미지|설명|
 |-|-|
-|![1단계](../profiling/media/procguid_1.png "ProcGuid_1")|보고서 파일의 이름은 Report*YYYYMMDD-HHMM*.diagsession입니다. 보고서를 저장할 경우 이름을 변경할 수 있습니다.|
+|![1단계](../profiling/media/procguid_1.png "ProcGuid_1")|보고서 파일의 이름은 Report *YYYYMMDD-HHMM*.diagsession입니다. 보고서를 저장할 경우 이름을 변경할 수 있습니다.|
 |![2단계](../profiling/media/procguid_2.png "ProcGuid_2")|타임라인에는 프로파일링 세션 길이, 응용 프로그램 수명 주기 시작 이벤트 및 사용자 표시가 표시됩니다.|
 |![3단계](../profiling/media/procguid_3.png "ProcGuid_3")|파란색 막대를 끌어 타임라인의 부분의 선택하여 보고서를 타임라인의 일부분으로 제한할 수 있습니다.|
 |![4단계](../profiling/media/procguid_4.png "ProcGuid_4")|**전원 사용** 그래프는 프로파일링 세션 동안 디바이스 리소스로 발생하는 전원 출력의 변화를 나타내는 다중선형 차트입니다. 에너지 소비 프로파일러는 CPU, 네트워크 작업 및 화면 디스플레이에서 사용하는 전력을 추적합니다.|

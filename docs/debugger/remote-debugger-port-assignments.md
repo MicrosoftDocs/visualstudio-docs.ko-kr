@@ -1,6 +1,7 @@
 ---
 title: 원격 디버거 포트 할당 | Microsoft Docs
-ms.custom: ''
+description: 32비트 운영 체제, 64비트 운영 체제, Azure의 Visual Studio 원격 디버거 포트 할당을 이해합니다. 검색 포트에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713505"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204828"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
 Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서비스로 실행할 수 있습니다. 애플리케이션으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.
@@ -40,7 +41,7 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
  TCP 4022(Visual Studio 2017)는 기본 포트이며 모든 시나리오에 필요합니다. 명령줄 또는 원격 디버거 창에서 구성할 수 있습니다.
 ::: moniker-end
 
- 원격 디버거 창에서 **도구 > 옵션**을 클릭하고 TCP/IP 포트 번호를 설정합니다.
+ 원격 디버거 창에서 **도구 > 옵션** 을 클릭하고 TCP/IP 포트 번호를 설정합니다.
 
  명령줄에서 **/port** 스위치를 사용하여 원격 디버거를 시작합니다(**msvsmon /port \<port number>** ).
 
@@ -59,7 +60,7 @@ Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서�
 ## <a name="the-discovery-port"></a>검색 포트
  UDP 3702는 네트워크에서 실행 중인 원격 디버거 인스턴스를 찾는 데 사용됩니다(예: **프로세스에 연결** 대화 상자의 **찾기** 대화 상자). 원격 디버거를 실행하는 컴퓨터를 검색하는 용도로만 사용되므로 대상 컴퓨터의 컴퓨터 이름 또는 IP 주소를 확인하는 다른 방법이 있을 경우 선택 사항입니다. 이는 검색에 사용되는 표준 포트이므로 포트 번호를 구성할 수 없습니다.
 
- 검색을 사용하지 않으려는 경우 검색을 사용하지 않도록 설정하여 명령줄  **Msvsmon /nodiscovery**에서 msvsmon을 시작할 수 있습니다.
+ 검색을 사용하지 않으려는 경우 검색을 사용하지 않도록 설정하여 명령줄  **Msvsmon /nodiscovery** 에서 msvsmon을 시작할 수 있습니다.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Azure의 원격 디버거 포트
  Azure의 원격 디버거에서 사용되는 포트는 다음과 같습니다. 클라우드 서비스의 포트는 개별 VM의 포트에 매핑됩니다. 모든 포트는 TCP입니다.

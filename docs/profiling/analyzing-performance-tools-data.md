@@ -1,5 +1,7 @@
 ---
 title: 성능 도구 데이터 분석 | Microsoft 문서
+description: 성능 문제를 분석하기 위해 Visual Studio 프로파일링 도구가 제공하는 성능 보고서 및 뷰에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779833"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205348"
 ---
 # <a name="analyze-performance-tools-data"></a>성능 도구 데이터 분석
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 보고서를 사용하면 애플리케이션 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.

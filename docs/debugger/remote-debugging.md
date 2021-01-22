@@ -1,8 +1,10 @@
 ---
 title: 원격 디버깅 | Microsoft Docs
+description: Visual Studio 원격 디버거를 사용하여 다른 컴퓨터에 배포된 Visual Studio 애플리케이션을 디버그합니다.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298697"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205673"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 다른 컴퓨터에 배포된 Visual Studio 애플리케이션을 디버그할 수 있습니다. 이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.
@@ -55,7 +57,7 @@ ms.locfileid: "92298697"
 
 ## <a name="optional-to-run-the-remote-debugger-from-a-file-share"></a><a name="fileshare_msvsmon"></a> (선택 사항) 파일 공유에서 원격 디버거를 실행하려면
 
-Visual Studio Community, Professional 또는 Enterprise가 이미 설치되어 있는 컴퓨터에서는 원격 디버거( *msvsmon.exe* )가 있습니다. 일부 시나리오의 경우 원격 디버깅을 설정하는 가장 쉬운 방법은 파일 공유에서 원격 디버거(msvsmon.exe)를 실행하는 것입니다. 사용 제한 사항에 대한 자세한 내용은 원격 디버거의 도움말 페이지(원격 디버거의 **도움말 > 사용법** )를 참조하세요.
+Visual Studio Community, Professional 또는 Enterprise가 이미 설치되어 있는 컴퓨터에서는 원격 디버거(*msvsmon.exe*)가 있습니다. 일부 시나리오의 경우 원격 디버깅을 설정하는 가장 쉬운 방법은 파일 공유에서 원격 디버거(msvsmon.exe)를 실행하는 것입니다. 사용 제한 사항에 대한 자세한 내용은 원격 디버거의 도움말 페이지(원격 디버거의 **도움말 > 사용법**)를 참조하세요.
 
 1. Visual Studio 버전과 일치하는 디렉터리에서 *msvsmon.exe* 를 찾습니다.
 
@@ -93,7 +95,7 @@ Visual Studio Community, Professional 또는 Enterprise가 이미 설치되어 �
      > [!IMPORTANT]
      > Visual Studio 컴퓨터에서 사용하는 사용자 계정과 다른 사용자 계정으로 원격 디버거를 실행할 수 있지만 원격 디버거의 사용 권한에 다른 사용자 계정을 추가해야 합니다.
 
-     또는 **/allow \<username>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다( **msvsmon /allow \<username@computer>** ).
+     또는 **/allow \<username>** 매개 변수를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다(**msvsmon /allow \<username@computer>** ).
 
 - 인증 모드 또는 포트 번호를 변경하거나 원격 도구의 시간 제한 값을 지정하려면 **도구 > 옵션** 을 선택합니다.
 
@@ -115,7 +117,7 @@ ASP.NET 및 기타 서버 환경에서 디버그하는 경우 원격 디버거�
 
 4. 사용자 계정 및 암호의 이름을 추가합니다.
 
-    이 계정에 **서비스로 로그온** 사용자 권한을 추가해야 할 수 있습니다( **시작** 페이지 또는 창에서 **로컬 보안 정책** (secpol.msc)을 찾거나 명령 프롬프트에서 **secpol** 을 입력함). 창이 나타나면 **사용자 권한 할당** 을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온** 을 찾습니다. 폴더를 두 번 클릭합니다. **속성** 창에 사용자 계정을 추가하고 **확인** 을 클릭합니다. **다음** 을 클릭합니다.
+    이 계정에 **서비스로 로그온** 사용자 권한을 추가해야 할 수 있습니다(**시작** 페이지 또는 창에서 **로컬 보안 정책**(secpol.msc)을 찾거나 명령 프롬프트에서 **secpol** 을 입력함). 창이 나타나면 **사용자 권한 할당** 을 두 번 클릭한 다음 오른쪽 창에서 **서비스로 로그온** 을 찾습니다. 폴더를 두 번 클릭합니다. **속성** 창에 사용자 계정을 추가하고 **확인** 을 클릭합니다. **다음** 을 클릭합니다.
 
 5. 원격 도구가 통신하는 데 사용할 네트워크 유형을 선택합니다. 하나 이상의 네트워크 형식을 선택해야 합니다. 컴퓨터가 도메인을 통해 연결된 경우 첫 번째 항목을 선택해야 합니다. 컴퓨터가 작업 그룹 또는 홈 그룹을 통해 연결된 경우 두 번째 또는 세 번째 항목을 선택해야 합니다. **다음** 을 클릭합니다.
 

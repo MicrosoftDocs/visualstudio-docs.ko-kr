@@ -1,6 +1,7 @@
 ---
 title: 메모리 사용량 분석
-ms.custom: seodec18
+description: 메모리 누수 및 비효율적인 메모리 사용, 메모리 사용량 도구 및 .NET 개체 할당 도구와 같은 도구를 찾는 데 사용할 수 있는 도구에 관해 알아봅니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918099"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205725"
 ---
 # <a name="analyze-memory-usage"></a>메모리 사용량 분석
 
@@ -31,7 +32,7 @@ C++ 개발자는 디버거 통합형 또는 디버거가 없는 메모리 사용
 - [디버거를 사용하여 메모리 사용량 분석](../profiling/memory-usage.md)
 - [디버거 없이 메모리 사용량 분석](../profiling/memory-usage-without-debugging2.md)
 
-Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거( **진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
+Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 있습니다. Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다.
 
 ## <a name="blogs-and-videos"></a>블로그 및 동영상
 

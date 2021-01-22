@@ -1,5 +1,7 @@
 ---
 title: 프로젝트 디자이너, 디버그 페이지
+description: 프로젝트 디자이너의 디버그 페이지를 사용하여 Visual Basic 또는 C# 프로젝트에서 디버깅 속성을 설정합니다. 설정에 관한 설명은 이 문서를 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418745"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205777"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 
-**프로젝트 디자이너**의 **디버그** 페이지를 사용하여 Visual Basic 또는 C# 프로젝트에서 디버깅 동작의 속성을 설정합니다.
+**프로젝트 디자이너** 의 **디버그** 페이지를 사용하여 Visual Basic 또는 C# 프로젝트에서 디버깅 동작의 속성을 설정합니다.
 
-**디버그** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택합니다. **프로젝트** 메뉴에서 **\<ProjectName>속성**을 선택합니다. **프로젝트 디자이너**가 나타나면 **디버그** 탭을 클릭합니다.
+**디버그** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다. **프로젝트** 메뉴에서 **\<ProjectName>속성** 을 선택합니다. **프로젝트 디자이너** 가 나타나면 **디버그** 탭을 클릭합니다.
 
 > [!NOTE]
 > 이 항목은 UWP 앱에 적용되지 않습니다. UWP 앱의 경우 [디버그 세션 시작(VB, C#, C++ 및 XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)을 참조하세요.
@@ -36,15 +38,15 @@ ms.locfileid: "85418745"
 
 **구성**
 
-표시하거나 수정할 구성 설정을 지정합니다. 설정에는 **디버그**(기본값), **릴리스** 또는 **모든 구성**이 포함됩니다.
+표시하거나 수정할 구성 설정을 지정합니다. 설정에는 **디버그**(기본값), **릴리스** 또는 **모든 구성** 이 포함됩니다.
 
 **플랫폼**
 
-표시하거나 수정할 플랫폼 설정을 지정합니다. 선택 항목에는 **CPU**(기본값), **x64** 및 **x86**이 포함됩니다.
+표시하거나 수정할 플랫폼 설정을 지정합니다. 선택 항목에는 **CPU**(기본값), **x64** 및 **x86** 이 포함됩니다.
 
 ## <a name="start-action"></a>시작 작업
 
-**시작 작업**은 프로젝트, 사용자 지정 프로그램, URL 등 애플리케이션을 디버깅할 때 시작할 항목을 나타냅니다. 기본적으로 이 옵션은 **프로젝트 시작**으로 설정되어 있습니다. **디버그** 페이지의 **시작 작업** 설정은 `StartAction` 속성의 값을 결정합니다.
+**시작 작업** 은 프로젝트, 사용자 지정 프로그램, URL 등 애플리케이션을 디버깅할 때 시작할 항목을 나타냅니다. 기본적으로 이 옵션은 **프로젝트 시작** 으로 설정되어 있습니다. **디버그** 페이지의 **시작 작업** 설정은 `StartAction` 속성의 값을 결정합니다.
 
 **시작 프로젝트**
 

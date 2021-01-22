@@ -1,5 +1,6 @@
 ---
 title: .NET 메모리 할당 및 수명 데이터 수집
+description: .NET 애플리케이션에서 메모리 관련 성능 문제를 검색하려면 프로파일링 도구를 사용하여 메모리 할당 및 개체 수명 데이터를 수집합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809429"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533799"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>.NET Framework 메모리 할당 및 수명 데이터 수집
 
@@ -45,7 +46,7 @@ Visual Studio 프로파일링 도구는 .NET Framework 메모리 할당 및 개�
 
 ## <a name="to-collect-net-memory-data"></a>.NET 메모리 데이터를 수집하려면
 
-1. **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+1. **성능 탐색기** 에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
 2. ‘성능 세션’ **속성 페이지** 대화 상자에서 **일반** 탭을 클릭하고 **.NET 개체 할당 정보 수집** 확인란을 선택합니다. 
 
@@ -55,7 +56,7 @@ Visual Studio 프로파일링 도구는 .NET Framework 메모리 할당 및 개�
 
 성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면
 
-- **성능 탐색기**에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+- **성능 탐색기** 에서 성능 세션 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
 다음 표의 작업에서는 .NET 메모리 데이터를 수집할 때 _성능 세션_**속성 페이지** 대화 상자에 지정할 수 있는 옵션을 설명합니다.
 

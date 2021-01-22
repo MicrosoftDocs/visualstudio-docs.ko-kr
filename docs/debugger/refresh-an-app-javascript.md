@@ -1,5 +1,7 @@
 ---
 title: UWP 앱 새로 고침 | Microsoft Docs
+description: 디버그하는 동안 코드를 변경한 다음, Visual Studio에서 JavaScript를 사용하여 UWP(유니버설 Windows 플랫폼) 앱을 새로 고칩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bce07008d285c6446d3fa8c79ce45c222c34bae
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348160"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204906"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio에서 UWP 앱 새로 고침
 
@@ -47,7 +49,7 @@ ms.locfileid: "85348160"
 
 ### <a name="to-refresh-an-app"></a>응용 프로그램을 새로 고치려면
 
-1. Visual Studio에서 UWP 프로젝트를 열고 디버그 대상으로 **로컬 머신**을 선택합니다.
+1. Visual Studio에서 UWP 프로젝트를 열고 디버그 대상으로 **로컬 머신** 을 선택합니다.
 
      ![디버그 대상 목록 선택](../debugger/media/js_select_target.png "JS_Select_Target")
 

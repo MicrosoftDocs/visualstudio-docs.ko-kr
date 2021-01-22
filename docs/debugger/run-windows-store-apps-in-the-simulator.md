@@ -1,5 +1,7 @@
 ---
 title: 시뮬레이터에서 UWP 앱 실행 | Microsoft Docs
+description: UWP(유니버설 Windows 플랫폼) 앱을 시뮬레이션하는 데스크톱 애플리케이션에 해당하는 Visual Studio 시뮬레이터에서 UWP 앱을 실행하는 방법을 이해합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599519"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205634"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱 실행
 
@@ -33,7 +35,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 ## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> 시뮬레이터를 대상으로 설정
 
-시뮬레이터에서 UWP 앱을 실행하려면 디버거 **표준** 도구 모음의 **디버깅 시작** 단추 옆의 드롭다운 목록에서 **시뮬레이터** 를 선택합니다. 이 옵션은 앱의 **대상 플랫폼 최소 버전**이 개발 머신의 운영 체제보다 작거나 같은 경우에만 사용할 수 있습니다.
+시뮬레이터에서 UWP 앱을 실행하려면 디버거 **표준** 도구 모음의 **디버깅 시작** 단추 옆의 드롭다운 목록에서 **시뮬레이터** 를 선택합니다. 이 옵션은 앱의 **대상 플랫폼 최소 버전** 이 개발 머신의 운영 체제보다 작거나 같은 경우에만 사용할 수 있습니다.
 
 ![시뮬레이터에서 실행 중](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
@@ -96,7 +98,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 ## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 시뮬레이션된 화면 크기 및 해상도 변경
  시뮬레이트된 화면 크기 및 해상도를 변경하려면 색상표에서 **해상도 변경** 단추를 선택하고 목록에서 새 크기와 해상도를 선택합니다.
 
- 화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height*로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서 위치 좌표는 선택한 디바이스 크기 및 해상도로 변환됩니다.
+ 화면 크기 및 해상도는 *Screen width inches, pixel width X pixel height* 로 나열됩니다. 화면 크기와 해상도 모두 시뮬레이션됩니다. 시뮬레이터에서 위치 좌표는 선택한 디바이스 크기 및 해상도로 변환됩니다.
 
 > [!NOTE]
 > 비트맵 이미지의 배율이 조정된 버전을 응용 프로그램에 저장할 수 있으며 그러면 Windows에서 현재 배율에 맞는 올바른 이미지가 로드됩니다. 자세한 내용은 [디자인 및 UI 소개](/windows/uwp/layout/design-and-ui-intro)를 참조하세요. 그러나 Windows에서 해상도에 맞는 다른 이미지를 선택하도록 시뮬레이터 해상도를 변경하면 디버그 세션을 중지한 후 다시 시작해야만 새 이미지를 볼 수 있습니다.
@@ -123,7 +125,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 1. 시뮬레이터 도구 모음에서 **네트워크 속성 변경** 단추를 선택합니다.
 
-2. **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용**을 선택합니다.
+2. **네트워크 속성 설정** 대화 상자에서 **시뮬레이션된 네트워크 속성 사용** 을 선택합니다.
 
     확인란을 선택 취소하여 시뮬레이션을 제거하고 현재 연결된 인터페이스의 네트워크 속성으로 돌아갑니다.
 
@@ -135,7 +137,7 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 6. **로밍 상태** 목록에서 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) 속성을 설정합니다.
 
-7. **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 백그라운드 **SystemTrigger**를 트리거하여 네트워크 속성을 시뮬레이트합니다.
+7. **속성 설정** 을 선택하고 포그라운드 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 이벤트 및 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 형식의 백그라운드 **SystemTrigger** 를 트리거하여 네트워크 속성을 시뮬레이트합니다.
 
 네트워크 연결 관리에 대한 자세한 내용은 다음을 참조하세요.
 
@@ -155,9 +157,9 @@ UWP 앱에 대한 Visual Studio 시뮬레이터는 로컬 머신의 격리된 �
 
 ## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 키보드로 시뮬레이터 탐색
 
-**Ctrl+Alt+위쪽 화살표**를 눌러 시뮬레이터 창에서 시뮬레이터 도구 모음으로 포커스를 전환하는 방식으로 시뮬레이터 도구 모음을 탐색할 수 있습니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.
+**Ctrl+Alt+위쪽 화살표** 를 눌러 시뮬레이터 창에서 시뮬레이터 도구 모음으로 포커스를 전환하는 방식으로 시뮬레이터 도구 모음을 탐색할 수 있습니다. **위쪽 화살표** 및 **아래쪽 화살표** 를 사용하여 도구 모음 단추 간에 이동합니다.
 
-**Ctrl+Alt+F4**를 눌러 시뮬레이터를 종료할 수 있습니다.
+**Ctrl+Alt+F4** 를 눌러 시뮬레이터를 종료할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

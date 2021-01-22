@@ -1,5 +1,7 @@
 ---
 title: 콘솔을 사용하여 JavaScript 디버그 | Microsoft Docs
+description: Visual Studio의 JavaScript 콘솔 창을 사용하여 JavaScript로 빌드된 UWP(유니버설 Windows 플랫폼) 앱과 상호 작용하고 해당 앱을 디버그합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211078"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205010"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용하여 JavaScript 디버그
 
@@ -54,9 +56,9 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>FlipView 앱에서 JavaScript 코드를 디버그하려면
 
-1. **파일** > **새 프로젝트**를 선택하여 Visual Studio에 새 솔루션을 만듭니다.
+1. **파일** > **새 프로젝트** 를 선택하여 Visual Studio에 새 솔루션을 만듭니다.
 
-2. **JavaScript** > **Windows 유니버설**을 선택한 다음, **WinJS 앱**을 선택합니다.
+2. **JavaScript** > **Windows 유니버설** 을 선택한 다음, **WinJS 앱** 을 선택합니다.
 
 3. 프로젝트의 이름(예: `FlipViewApp`)을 입력하고 **확인** 을 클릭하여 앱을 만듭니다.
 
@@ -136,7 +138,7 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
     })();
     ```
 
-7. 디버깅 대상이 아직 선택되지 않은 경우 **디버그** 도구 모음의 **디바이스** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신**을 선택합니다.
+7. 디버깅 대상이 아직 선택되지 않은 경우 **디버그** 도구 모음의 **디바이스** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신** 을 선택합니다.
 
     ![디버그 대상 목록 선택](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -199,11 +201,11 @@ JavaScript 콘솔 창과 같은 JavaScript 디버깅 도구를 사용하는 동�
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>중단점 설정 및 앱 디버깅
 
-1. 이전에 만든 `FlipView` 앱의 default.html 파일에서, `updateImages()` 함수의 바로 가기 메뉴를 열고 **중단점** > **중단점 삽입**을 참조하세요.
+1. 이전에 만든 `FlipView` 앱의 default.html 파일에서, `updateImages()` 함수의 바로 가기 메뉴를 열고 **중단점** > **중단점 삽입** 을 참조하세요.
 
-2. **디버그** 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신**을 선택합니다.
+2. **디버그** 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 **로컬 머신** 을 선택합니다.
 
-3. **디버그** > **Start 디버그ging**을 선택하거나 F5를 선택합니다.
+3. **디버그** > **Start 디버그ging** 을 선택하거나 F5를 선택합니다.
 
     실행이 `updateImages()` 함수에 도달하면 응용 프로그램이 중단 모드로 들어가며, 현재 프로그램 실행 줄은 노란색으로 강조 표시됩니다.
 
