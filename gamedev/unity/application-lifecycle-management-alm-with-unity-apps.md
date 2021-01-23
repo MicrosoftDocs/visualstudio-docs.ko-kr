@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341240"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722986"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -61,8 +61,8 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts) 또는 Azure Repos 사용|예|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
-|[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|예|표 뒤에 나오는 설명을 참조하세요.|
+|[TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 또는 Azure Repos 사용|예|Unity 프로젝트는 단순히 다른 프로젝트와 마찬가지로 버전 제어 시스템에 배치할 수 있는 파일 모음이지만, 특별히 고려해야 하는 몇 가지 사항을 뒤에서 설명합니다.|
+|[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|예|표 뒤에 나오는 설명을 참조하세요.|
 |[코드 품질 향상](/test/improve-code-quality.md)|yes||
 |[코드 변경 내용 및 기타 기록 찾기](/ide/find-code-changes-and-other-history-with-codelens.md)|yes||
 |[코드 맵을 사용하여 애플리케이션 디버그](/modeling/use-code-maps-to-debug-your-applications.md)|예||
