@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329538"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719658"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -255,11 +255,11 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ## <a name="using-microsoft-fakes-in-the-ci"></a>CI에서 Microsoft Fakes 사용
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Microsoft Fakes 어셈블리 생성
-Microsoft Fakes에는 Visual Studio Enterprise가 필요하므로, Fakes 어셈블리를 생성하려면 [Visual Studio Build 작업](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)을 사용하여 프로젝트를 빌드해야 합니다.
+Microsoft Fakes에는 Visual Studio Enterprise가 필요하므로, Fakes 어셈블리를 생성하려면 [Visual Studio Build 작업](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true)을 사용하여 프로젝트를 빌드해야 합니다.
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> 이에 대한 대안은 Fakes 어셈블리를 CI에 체크 인하고 [MSBuild 작업](../msbuild/msbuild-task.md?view=vs-2019)을 사용하는 것입니다. 이 작업을 수행하는 경우 다음 코드 조각과 같이 테스트 프로젝트에 생성된 Fakes 어셈블리에 대한 어셈블리 참조가 있는지 확인해야 합니다.
+> 이에 대한 대안은 Fakes 어셈블리를 CI에 체크 인하고 [MSBuild 작업](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true)을 사용하는 것입니다. 이 작업을 수행하는 경우 다음 코드 조각과 같이 테스트 프로젝트에 생성된 Fakes 어셈블리에 대한 어셈블리 참조가 있는지 확인해야 합니다.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ Microsoft Fakes에는 Visual Studio Enterprise가 필요하므로, Fakes 어셈�
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Microsoft Fakes 테스트 실행
-Microsoft Fakes 어셈블리가 구성된 `FakesAssemblies` 디렉터리(기본값 `$(ProjectDir)FakesAssemblies`)에 있는 한, [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)을 사용하여 테스트를 실행할 수 있습니다.
+Microsoft Fakes 어셈블리가 구성된 `FakesAssemblies` 디렉터리(기본값 `$(ProjectDir)FakesAssemblies`)에 있는 한, [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)을 사용하여 테스트를 실행할 수 있습니다.
 
 ::: moniker range=">=vs-2019"
-Microsoft Fakes를 사용하는 .NET Core 프로젝트에서 [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)으로 분산 테스트를 실행하려면 Visual Studio 2019 업데이트 9 미리 보기 `20201020-06` 이상이 필요합니다.
+Microsoft Fakes를 사용하는 .NET Core 프로젝트에서 [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)으로 분산 테스트를 실행하려면 Visual Studio 2019 업데이트 9 미리 보기 `20201020-06` 이상이 필요합니다.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
