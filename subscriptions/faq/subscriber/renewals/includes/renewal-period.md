@@ -7,13 +7,13 @@ ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
-ms.faqid: q4_1
-ms.openlocfilehash: e007564d73da469d5a65de6cc42dffcaae4cf052
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.faqid: q4_3
+ms.openlocfilehash: d990d7ebea643b2a00ba0c930fd27f9fa9426510
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385922"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104524"
 ---
 ## <a name="how-do-i-renew-my-retail-subscription-what-is-the-renewal-time-period"></a>내 정품 구독을 갱신하려면 어떻게 해야 하나요? 갱신 기간은 언제인가요?
 

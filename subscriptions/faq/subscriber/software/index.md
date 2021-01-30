@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: Section2
-ms.openlocfilehash: c443939f511462006cac84db9b2f5c64e55577e9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 5d5d6c94c03f6ee2146548f43252bf2485cbbf92
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "81385882"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99105354"
 ---
 # <a name="downloading-and-activating-software"></a>소프트웨어 다운로드 및 활성화
 
@@ -21,3 +21,9 @@ ms.locfileid: "81385882"
 [!INCLUDE [How do I activate the software I just downloaded using product keys?](includes/key-activation.md)]
 
 [!INCLUDE [How do I access my product keys when my subscription expires?](includes/access-keys.md)]
+
+[!INCLUDE [Where can I find older versions of Visual Studio?](includes/find-older-versions.md)]
+
+[!INCLUDE [Where are my product keys?](includes/where-are-product-keys.md)]
+
+[!INCLUDE [How do I troubleshoot in Visual Studio?](includes/troubleshoot-visual-studio.md)]
