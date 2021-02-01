@@ -1,5 +1,6 @@
 ---
 title: 줄 뷰 - 경합 데이터 | Microsoft 문서
+description: 경합 데이터의 줄 뷰에 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문의 성능 데이터를 나열하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778598"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721348"
 ---
 # <a name="lines-view---contention-data"></a>줄 뷰 - 경합 데이터
 경합 데이터의 줄 뷰에는 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문에 대한 성능 데이터가 나열됩니다. 소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다.
@@ -39,7 +40,7 @@ ms.locfileid: "74778598"
 
   다음 표에서는 줄 뷰 보고서의 열에 대해 설명합니다.
 
-|Column|설명|
+|열|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|경합 이벤트로 인해 문의 코드를 실행할 수 없도록 이 문이 차단된 시간입니다. 문이 호출한 함수의 차단된 시간은 포함되지 않습니다.|
 |**차단된 전용 시간 비율(%)**|프로세스에서 문의 차단된 전용 시간이었던 모든 차단된 시간의 백분율입니다.|
@@ -59,11 +60,11 @@ ms.locfileid: "74778598"
 |**프로세스 이름**|프로세스의 이름입니다.|
 |**소스 문자 시작**|이 문이 시작되는 소스 파일 줄에서 시작 문자의 오프셋입니다.|
 |**소스 문자 끝**|이 문이 끝나는 소스 파일 줄에서 시작 문자의 오프셋입니다.|
-|**소스 파일**|함수 문이 포함된 소스 파일의 이름입니다.|
+|**원본 파일**|함수 문이 포함된 소스 파일의 이름입니다.|
 |**소스 줄 시작**|문이 시작되는 소스 파일의 줄 번호입니다.|
 |**소스 줄 끝**|문이 끝나는 소스 파일의 줄 번호입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [줄 뷰](../profiling/lines-view.md)
 - [줄 뷰 - 샘플링](../profiling/lines-view-dotnet-memory-sampling-data.md)

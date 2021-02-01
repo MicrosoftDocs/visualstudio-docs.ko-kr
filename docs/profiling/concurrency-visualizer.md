@@ -1,5 +1,7 @@
 ---
 title: 동시성 시각화 도우미 | Microsoft 문서
+description: 동시성 시각화 도우미를 사용하여 다중 스레드 앱에서 스레드 타이밍을 보여 주는 그래프를 확인하면 성능 문제 해결에 도움이 됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037343"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720958"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 
@@ -43,7 +45,7 @@ ms.locfileid: "90037343"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[사용률 뷰](../profiling/utilization-view.md)|모든 프로세서의 시스템 작업을 보고 분석하는 방법에 대해 설명합니다.|
 |[스레드 뷰](../profiling/threads-view-parallel-performance.md)|프로그램의 스레드 간 상호 작용을 분석하는 방법에 대해 설명합니다.|
@@ -54,7 +56,7 @@ ms.locfileid: "90037343"
 |[동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|
 |[동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하여 Visual Studio가 설치되지 않은 컴퓨터에서 추적 정보를 수집 및 처리하는 방법을 설명합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

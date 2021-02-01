@@ -1,5 +1,6 @@
 ---
 title: 프로파일링 명령줄 - 보고서 만들기
+description: VSPerfReport 명령줄 도구를 사용하여 프로파일링 데이터 파일에서 .xml 또는 .csv(쉼표로 구분된 값) 보고서를 만드는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808827"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686255"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>명령줄에서 프로파일러 보고서 만들기
 **VSPerfReport** 명령줄 도구를 통해 프로파일링 데이터(.*vsp*) 파일에서 .*xml* 또는 쉼표로 구분된 값(.*csv*) 보고서를 만들 수 있습니다. VSPerfReport 보고서 유형은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 대한 인터페이스의 테이블 기반 뷰와 일치합니다. 코드만 표시하고 프로파일링 데이터 파일의 세그먼트만 표시하도록 보고서를 필터링할 수 있습니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.
@@ -24,7 +25,7 @@ ms.locfileid: "90808827"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|Task|관련 내용|
+|작업|관련 내용|
 |----------|---------------------|
 |**기본 보고서를 만듭니다.** VSPerfReport 보고서 유형의 전체 또는 하위 집합을 만듭니다.|-   [기본 보고서 만들기](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|
 |**두 가지 프로파일링 데이터 파일을 비교합니다.** 두 가지 프로파일링 데이터 파일에서 성능 데이터를 비교하는 "diff" 보고서를 만듭니다.|-   [방법: 명령 프롬프트에서 프로파일러 비교 보고서 만들기](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|

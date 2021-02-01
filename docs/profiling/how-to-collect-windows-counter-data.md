@@ -1,5 +1,7 @@
 ---
 title: Windows 카운터 데이터 수집 | Microsoft Docs
+description: Windows 카운터는 계측 프로파일링에서 사용됩니다. Windows 카운터 데이터를 수집하는 방법 및 단일 수집 간격으로 분석을 제한하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,25 +17,25 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab9869f71fa8630b070c03d21ea4f9a6113622
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ccbdf9afb843c8bdac2d904dc22375a4a69e733a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852643"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801035"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>방법: Windows 카운터 데이터 수집
 
-Windows 카운터는 프로파일링 중에 설정된 간격으로 수집할 수 있는 시스템 성능 카운터입니다. 프로파일링 도구 보고서의 표시 뷰에서 각 수집 간격에 대한 행에는 **AutoMark** 레이블이 지정됩니다. 행에는 해당 간격으로 성능 카운터 값을 설명하는 열이 포함됩니다. 두 개의 특정 표시 간에 경과한 기간으로 분석을 제한하려면 표시를 선택하고, 마우스 오른쪽 단추를 클릭하고 나서, 바로 가기 메뉴에서 **필터링 기준** > **표시**를 선택합니다.
+Windows 카운터는 프로파일링 중에 설정된 간격으로 수집할 수 있는 시스템 성능 카운터입니다. 프로파일링 도구 보고서의 표시 뷰에서 각 수집 간격에 대한 행에는 **AutoMark** 레이블이 지정됩니다. 행에는 해당 간격으로 성능 카운터 값을 설명하는 열이 포함됩니다. 두 개의 특정 표시 간에 경과한 기간으로 분석을 제한하려면 표시를 선택하고, 마우스 오른쪽 단추를 클릭하고 나서, 바로 가기 메뉴에서 **필터링 기준** > **표시** 를 선택합니다.
 
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
 ## <a name="to-collect-windows-counter-data"></a>Windows 카운터 데이터를 수집하려면
 
-1. [성능 탐색기]에서 Windows 카운터를 구성할 세션을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+1. [성능 탐색기]에서 Windows 카운터를 구성할 세션을 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.
 
-2. **속성 페이지**에서 **Windows 카운터**를 클릭합니다.
+2. **속성 페이지** 에서 **Windows 카운터** 를 클릭합니다.
 
 3. **Windows 카운터 수집** 확인란을 선택합니다.
 
@@ -45,7 +47,7 @@ Windows 카운터는 프로파일링 중에 설정된 간격으로 수집할 수
 
 7. 애플리케이션을 프로파일링할 때 사용할 카운터를 선택합니다.
 
-8. **적용**을 클릭합니다.
+8. **적용** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

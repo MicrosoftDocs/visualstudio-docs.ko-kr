@@ -1,5 +1,7 @@
 ---
 title: .NET 개체에 대한 메모리 사용량 분석 | Microsoft Docs
+description: .NET 개체 할당 도구를 사용하여 앱에서 사용하는 메모리의 양과 가장 많은 메모리를 할당하는 코드 경로를 확인합니다.
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970230"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801502"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>.NET 개체 할당 도구를 사용하여 메모리 사용량 분석
 

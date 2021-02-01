@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017에서 프로파일링의 새로운 기능 | Microsoft Docs
+description: 수정해야 하는 앱의 문제를 식별하는 데 사용할 수 있는 새로운 시각화가 포함되어 있는 진단 도구에 관해 알아봅니다.
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128333"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723103"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에 포함된 프로파일링 도구의 새로운 기능
 
@@ -34,7 +35,7 @@ CPU 사용량 도구에는 성능 문제를 발생시킬 가능성이 가장 높
 
 ![진단 도구 호출자/호출 수신자 뷰](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 프로필](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

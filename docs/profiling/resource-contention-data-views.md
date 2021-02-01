@@ -1,5 +1,6 @@
 ---
 title: 리소스 경합 데이터 뷰 | Microsoft Docs
+description: 스레드 경합 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 관한 참조 정보를 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771532"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720334"
 ---
 # <a name="resource-contention-data-views"></a>리소스 경합 데이터 뷰
 이 섹션에는 스레드 경함 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 있습니다.
@@ -68,6 +69,6 @@ ms.locfileid: "74771532"
  프로세스 및 스레드별 리소스 경합을 나열합니다.
 
 ## <a name="reference"></a>참조
-- [함수 세부 정보 뷰](../profiling/function-details-view.md)
+- [함수 정보 뷰](../profiling/function-details-view.md)
 
  선택한 함수와 해당 함수를 호출한 함수 및 해당 함수가 호출한 함수의 관계에 대한 그래픽 차트를 표시합니다.

@@ -1,5 +1,6 @@
 ---
 title: StartProfile | Microsoft Docs
+description: StartProfile 함수에 관해 알아보고 지정된 프로파일링 수준의 카운터를 1(켜기)로 설정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778260"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719840"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 1(on)로 설정합니다.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 
  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 열거자는 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|전역 수준 설정은 프로파일링 실행의 모든 프로세스와 스레드에 영향을 줍니다.|
 |PROFILE_PROCESSLEVEL|프로세스 수준 설정은 지정된 프로세스의 일부인 모든 스레드에 영향을 줍니다.|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|프로파일링 요소 ID가 없습니다.|
 |PROFILE_ERROR_LEVEL_NOEXIST|지정된 프로파일링 수준이 없습니다.|
@@ -66,11 +67,11 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>함수 정보
- 헤더: *VSPerf.h*에서 선언됨
+ 헤더: *VSPerf.h* 에서 선언됨
 
  가져오기 라이브러리: *VSPerf.lib*
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 StartProfile 함수 호출을 보여 줍니다.
 
 ```cpp
@@ -107,5 +108,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

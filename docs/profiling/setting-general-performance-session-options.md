@@ -1,5 +1,6 @@
 ---
 title: 일반 성능 세션 옵션 설정 | Microsoft Docs
+description: 프로파일링 도구 성능 세션의 수집 방법 및 프로파일링 데이터 명명 규칙을 설정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +11,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 698905f5e924bd8ddd424207a508ceaa4562ec57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544471"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720191"
 ---
 # <a name="set-general-performance-session-options"></a>일반 성능 세션 옵션 설정
 
-성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 Visual Studio 프로파일링 도구 성능 세션에 대한 수집 방법 및 프로파일링 데이터 명명 규칙을 설정할 수 있습니다. **성능 탐색기**에서 이 대화 상자를 열려면 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 Visual Studio 프로파일링 도구 성능 세션에 대한 수집 방법 및 프로파일링 데이터 명명 규칙을 설정할 수 있습니다. **성능 탐색기** 에서 이 대화 상자를 열려면 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
 ## <a name="choosing-data-collection-methods"></a>데이터 수집 방법 선택
 

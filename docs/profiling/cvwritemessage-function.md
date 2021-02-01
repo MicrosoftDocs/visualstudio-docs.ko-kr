@@ -1,5 +1,7 @@
 ---
 title: CvWriteMessage 함수 | Microsoft 문서
+description: 동시성 시각화 도우미 SDK 함수인 CvWriteMessage(C 라이브러리)의 참조 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92d6b3bb37937e010bc10a685f958063e7cc3358
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332133"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686430"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 함수
 동시성 시각화 도우미 추적 파일에 메시지를 씁니다.
@@ -99,9 +101,9 @@ HRESULT CvWriteMessageExVA(
 
  `level` 범위의 중요도 수준.
 
- `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL일 수 없습니다.
+ `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL이 될 수 없습니다.
 
- `pMessage` 메시지 형식 문자열입니다. NULL일 수 없습니다.
+ `pMessage` 메시지 형식 문자열입니다. NULL이 될 수 없습니다.
 
 ## <a name="return-value"></a>반환 값
  메시지가 성공적으로 작성되는 경우 S_OK입니다. 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.
@@ -113,5 +115,5 @@ HRESULT CvWriteMessageExVA(
 
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

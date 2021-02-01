@@ -1,5 +1,7 @@
 ---
 title: Detach | Microsoft Docs
+description: VSPerfCmd.exe의 Detach 옵션을 사용하여 지정된 프로세스 또는 지정되지 않은 경우 모든 프로세서에서 프로파일러의 연결을 끊습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
@@ -9,22 +11,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251836959f41a4349851716f58f917943f10b09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330246"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686599"
 ---
 # <a name="detach"></a>Detach
 VSPerfCmd.exe **Detach** 옵션은 지정된 프로세스 또는 지정되지 않은 경우 모든 프로세서에서 프로파일러의 연결을 끊습니다. 프로파일링은 샘플링 방법을 사용하여 초기화되어야 합니다.
 
- **Launch** 또는 **Attach** 옵션으로 시작된 프로파일링은 **Detach**로 분리될 수 있습니다. 프로파일러는 후속 **Attach** 명령을 사용하여 다시 연결될 수 있습니다.
+ **Launch** 또는 **Attach** 옵션으로 시작된 프로파일링은 **Detach** 로 분리될 수 있습니다. 프로파일러는 후속 **Attach** 명령을 사용하여 다시 연결될 수 있습니다.
 
- **Detach**는 프로파일링 데이터 파일을 닫지 않습니다. **Shutdown** 옵션을 사용하여 프로파일링을 종료하고 데이터 파일을 닫습니다.
+ **Detach** 는 프로파일링 데이터 파일을 닫지 않습니다. **Shutdown** 옵션을 사용하여 프로파일링을 종료하고 데이터 파일을 닫습니다.
 
 > [!NOTE]
-> **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 **VSPerfCmd/Attach** 또는 **VSPerfCmd/Detach**에 대한 모든 호출은 **Crosssession**을 지정해야 합니다.
+> **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 **VSPerfCmd/Attach** 또는 **VSPerfCmd/Detach** 에 대한 모든 호출은 **Crosssession** 을 지정해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,7 +48,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 
  **Crosssession** 로그온 세션 이외의 세션에서 프로파일링 애플리케이션을 활성화합니다. **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 필요합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서 **Detach** 명령은 프로파일링을 일시 중단하고 **Shutdown** 명령은 프로파일러 데이터 파일을 닫습니다.
 
 ```cmd

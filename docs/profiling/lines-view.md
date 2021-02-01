@@ -1,5 +1,6 @@
 ---
 title: 줄 뷰 | Microsoft 문서
+description: 샘플링 방법을 사용하여 수집한 프로파일러 데이터에만 줄 뷰를 사용하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773983"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721296"
 ---
 # <a name="lines-view"></a>줄 뷰
 줄 뷰는 샘플링 방법을 사용하여 수집한 프로파일러 데이터에만 사용할 수 있습니다. 이 뷰는 계측을 사용하여 수집한 데이터에 사용할 수 없습니다.
@@ -43,7 +44,7 @@ ms.locfileid: "74773983"
 
 - 문이 끝나는 소스 줄의 문자.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [줄 뷰](../profiling/lines-view-sampling-data.md)
 - [줄 뷰 - 샘플링](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [줄 뷰](../profiling/lines-view-contention-data.md)

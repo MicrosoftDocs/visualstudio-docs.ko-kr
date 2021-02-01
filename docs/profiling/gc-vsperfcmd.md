@@ -1,5 +1,7 @@
 ---
 title: GC(VSPerfCmd) | Microsoft Docs
+description: VSPerfCmd.exe 도구에서 GC 옵션을 검토합니다. GC 옵션은 .NET Framework 메모리 할당 및 개체 수명 데이터의 수집을 활성화합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7245e75ac38d650bb40f9c21dc0a0ab642e0c721
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776981"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801347"
 ---
 # <a name="gc-vsperfcmd"></a>GC(VSPerfCmd)
 **GC** 옵션은 .NET Framework 메모리 할당 및 개체 수명 데이터의 수집을 활성화합니다. **GC** 옵션은 샘플링 프로파일링 방법 및 **Launch** 옵션과만 사용할 수 있습니다.

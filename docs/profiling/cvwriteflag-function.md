@@ -1,5 +1,7 @@
 ---
 title: CvWriteFlag 함수 | Microsoft 문서
+description: 동시성 시각화 도우미 SDK 함수인 CvWriteFlag(C 라이브러리)의 참조 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332158"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686469"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 함수
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.
@@ -69,9 +71,9 @@ HRESULT CvWriteFlagExVA(
 
  `level` 중요도 수준.
 
- `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL일 수 없습니다.
+ `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL이 될 수 없습니다.
 
- `pMessage` 메시지 형식 문자열입니다. NULL일 수 없습니다.
+ `pMessage` 메시지 형식 문자열입니다. NULL이 될 수 없습니다.
 
 ## <a name="return-value"></a>반환 값
  메시지가 성공적으로 작성되는 경우 S_OK입니다. 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.
@@ -83,5 +85,5 @@ HRESULT CvWriteFlagExVA(
 
  <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

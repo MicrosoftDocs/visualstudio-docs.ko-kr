@@ -1,5 +1,6 @@
 ---
 title: IP(명령 포인터) 뷰 - 샘플링 데이터 | Microsoft 문서
+description: 샘플링 데이터의 IP 뷰에 샘플이 수집될 때 직접 실행되고 있던 어셈블리 명령의 성능 데이터를 나열하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774258"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721556"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>IP(명령 포인터) 뷰 - 샘플링 데이터
 샘플링 데이터의 IP 뷰에는 프로파일링 실행 시 샘플이 수집될 때 직접 실행되고 있던 어셈블리 명령에 대한 성능 데이터가 나열됩니다.
@@ -24,7 +25,7 @@ ms.locfileid: "74774258"
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
-|열|Description|
+|열|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
@@ -42,5 +43,5 @@ ms.locfileid: "74774258"
 |**전용 샘플**|명령이 실행될 때 수집된 샘플의 총 수입니다.|
 |**전용 샘플 비율(%)**|프로파일링 실행 시 명령이 실행될 때 수집된 모든 샘플의 백분율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [IP(명령 포인터) 뷰 - 샘플링](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

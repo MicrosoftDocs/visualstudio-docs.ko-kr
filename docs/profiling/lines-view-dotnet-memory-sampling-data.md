@@ -1,5 +1,6 @@
 ---
 title: 줄 뷰 - .NET 메모리 샘플링 데이터 | Microsoft 문서
+description: .NET 메모리 할당 프로파일링 데이터의 줄 뷰에 프로파일링 실행 중 메모리를 할당한 문을 나열하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774082"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721335"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>줄 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하는 .NET 메모리 할당 프로파일링 데이터에 대한 줄 뷰에는 프로파일링 실행 중 메모리를 할당한 문이 나열됩니다. 열에는 할당의 크기와 할당 수도 포함됩니다.
@@ -41,7 +42,7 @@ ms.locfileid: "74774082"
 
   정의에 따라 문은 다른 함수를 호출하지 않습니다. 따라서 전용 값만 나열됩니다.
 
-|열|Description|
+|열|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
@@ -61,5 +62,5 @@ ms.locfileid: "74774082"
 |**제외 바이트**|이 줄에서 할당되고 프로파일링 실행 시에 할당된 모든 메모리 바이트의 백분율입니다.|
 |**제외 바이트(%)**|이 줄에서 할당되고 프로파일링 실행 시에 할당된 모든 메모리 바이트의 백분율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [줄 뷰](../profiling/lines-view-sampling-data.md)

@@ -1,6 +1,7 @@
 ---
 title: 실행 중인 프로세스에 성능 도구 연결
-ms.custom: seodec18
+description: Visual Studio 프로파일러를 사용하여 실행 중인 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331141"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801164"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>방법: 실행 중인 프로세스에 성능 도구 연결 및 분리
 프로파일러를 사용하여 실행 프로세스에 연결하거나 실행 프로세스에서 분리하여 더 쉽게 성능 데이터를 샘플링하고 수집할 수 있습니다. 이 방법을 사용하면 애플리케이션 로드 시간에 대한 데이터를 수집하지 않거나 특정 상태에 도달한 후 프로세스의 성능을 모니터링하려고 할 때 프로세스를 프로파일링할 수 있습니다.
@@ -43,25 +44,25 @@ ms.locfileid: "85331141"
 
 ### <a name="to-attach-to-a-running-process"></a>실행 중인 프로세스에 연결하려면
 
-1. **디버그** 메뉴에서 **프로파일러**, **성능 탐색기**를 차례로 가리킨 다음 **첨부**를 클릭합니다.
+1. **디버그** 메뉴에서 **프로파일러**, **성능 탐색기** 를 차례로 가리킨 다음 **첨부** 를 클릭합니다.
 
      **프로세스에 프로파일러 연결** 대화 상자가 나타납니다.
 
 2. 연결할 프로세스의 이름을 클릭합니다.
 
-3. **연결**을 클릭합니다.
+3. **연결** 을 클릭합니다.
 
 ### <a name="to-detach-from-a-running-process"></a>실행 중인 프로세스에서 분리하려면
 
-1. **디버그** 메뉴에서 **프로파일러**, **성능 탐색기**를 차례로 가리킨 다음 **분리**를 클릭합니다.
+1. **디버그** 메뉴에서 **프로파일러**, **성능 탐색기** 를 차례로 가리킨 다음 **분리** 를 클릭합니다.
 
      **프로세스에 프로파일러 연결** 대화 상자가 나타납니다.
 
 2. 분리할 이미지의 이름을 클릭합니다.
 
-3. **분리**를 클릭합니다.
+3. **분리** 를 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 수집 제어](../profiling/controlling-data-collection.md)
 - [성능 세션 개요](../profiling/performance-session-overview.md)
 - [방법: 성능 데이터 수집 시작 및 종료](../profiling/how-to-start-and-end-performance-data-collection.md)

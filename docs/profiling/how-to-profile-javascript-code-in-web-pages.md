@@ -1,5 +1,6 @@
 ---
 title: 웹 페이지에서 JavaScript 코드 프로파일링 | Microsoft Docs
+description: Visual Studio 프로파일링 도구를 통해 계측 프로파일링 방법을 사용하여 JavaScript 코드의 성능 데이터를 수집하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42355316c33ab9970b07001323502d9337558edc
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 64f0f61cc6afbce2542ac0b3e251764646ab1d97
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851374"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723337"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지에서 JavaScript 코드 프로파일링
 
@@ -38,15 +39,15 @@ JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaS
 
 1. Visual Studio에서 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 프로젝트를 엽니다.
 
-2. **분석** 메뉴에서 **성능 마법사 시작**을 클릭합니다.
+2. **분석** 메뉴에서 **성능 마법사 시작** 을 클릭합니다.
 
-3. 성능 마법사의 첫 페이지에서 **계측** 프로 파일링 방법을 지정하고 **다음**을 클릭합니다.
+3. 성능 마법사의 첫 페이지에서 **계측** 프로 파일링 방법을 지정하고 **다음** 을 클릭합니다.
 
-4. 마법사의 두 번째 페이지에서 현재 프로젝트가 대상 목록에서 선택되었는지 확인하고 **다음**을 클릭합니다.
+4. 마법사의 두 번째 페이지에서 현재 프로젝트가 대상 목록에서 선택되었는지 확인하고 **다음** 을 클릭합니다.
 
-5. 마법사의 세 번째 페이지에서 **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.
+5. 마법사의 세 번째 페이지에서 **JavaScript 프로파일링** 확인란을 선택하고 **다음** 을 클릭합니다.
 
-6. 마법사의 네 번째 페이지에서 **마침**을 클릭하여 브라우저에서 웹 애플리케이션을 시작합니다.
+6. 마법사의 네 번째 페이지에서 **마침** 을 클릭하여 브라우저에서 웹 애플리케이션을 시작합니다.
 
 7. 프로파일링하려는 기능을 실행합니다.
 
@@ -56,17 +57,17 @@ JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaS
 
 1. Visual Studio를 엽니다.
 
-2. **분석** 메뉴에서 **성능 마법사 시작**을 클릭합니다.
+2. **분석** 메뉴에서 **성능 마법사 시작** 을 클릭합니다.
 
-3. 성능 마법사의 첫 페이지에서 **계측** 프로 파일링 방법을 지정하고 **다음**을 클릭합니다.
+3. 성능 마법사의 첫 페이지에서 **계측** 프로 파일링 방법을 지정하고 **다음** 을 클릭합니다.
 
-4. 마법사의 두 번째 페이지에서 ASP.NET 또는 JavaScript 애플리케이션을 클릭한 후 **다음**을 클릭합니다.
+4. 마법사의 두 번째 페이지에서 ASP.NET 또는 JavaScript 애플리케이션을 클릭한 후 **다음** 을 클릭합니다.
 
 5. 마법사의 세 번째 페이지에서 다음을 수행합니다.
 
     1. **애플리케이션을 실행할 URL 또는 경로** 상자에 페이지의 URL을 입력합니다.
 
-    2. **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.
+    2. **JavaScript 프로파일링** 확인란을 선택하고 **다음** 을 클릭합니다.
 
 6. 마법사의 네 번째 페이지에서 **마침** 을 클릭하여 브라우저에서 웹 페이지를 시작합니다.
 

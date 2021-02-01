@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
+description: SuspendProfile 메서드를 사용하여 지정된 프로파일링 수준의 Suspend/Resume 카운터를 증분시키는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778195"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719268"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 증가시킵니다.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 열거자는 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|전역 수준 설정은 프로파일링 실행의 모든 프로세스와 스레드에 영향을 줍니다.|
 |PROFILE_PROCESSLEVEL|프로세스 수준 설정은 지정된 프로세스의 일부인 모든 스레드에 영향을 줍니다.|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|프로파일링 요소 ID가 없습니다.|
 |PROFILE_ERROR_LEVEL_NOEXIST|지정된 프로파일링 수준이 없습니다.|
@@ -66,11 +67,11 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>함수 정보
- 헤더: *VSPerf.h*에서 선언됨
+ 헤더: *VSPerf.h* 에서 선언됨
 
  가져오기 라이브러리: *VSPerf.lib*
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 SuspendProfile 메서드를 보여 줍니다. 이 예에서는 StartProfile에 대한 이전 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에 의해 식별된 프로세스 또는 스레드에 대해 만들어졌다고 가정합니다.
 
 ```cpp
@@ -105,5 +106,5 @@ void ExerciseSuspendProfile()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,7 @@
 ---
 title: 이벤트 뷰어 | Microsoft Docs
+description: Visual Studio 프로파일러 내에서 앱의 작동 방식을 더 잘 진단하는 데 도움이 되는 일반 이벤트 뷰어에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 4/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 6aef8e72f416923aa647a8b3a412ee701ece18dd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075067"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801401"
 ---
 # <a name="events-viewer"></a>이벤트 뷰어
 
@@ -30,7 +32,7 @@ ms.locfileid: "90075067"
 
 1. **시작** 단추를 선택하여 도구를 실행합니다.
 
-1. 도구가 시작되면 앱에서 프로파일링할 시나리오를 진행합니다. 그런 다음 **수집 중지**를 선택하거나 앱을 닫아 데이터를 확인합니다.
+1. 도구가 시작되면 앱에서 프로파일링할 시나리오를 진행합니다. 그런 다음 **수집 중지** 를 선택하거나 앱을 닫아 데이터를 확인합니다.
 
    ![수집 중지를 표시하는 창](../profiling/media/stopcollectioneventsviewer.png "수집 중지를 표시하는 창")
 
@@ -56,7 +58,7 @@ ms.locfileid: "90075067"
 
 ![이벤트 뷰어에 열 추가](../profiling/media/eventvieweraddcolumns.png "이벤트 뷰어에 열 추가")
 
-이벤트를 선택하면 **추가 속성** 창이 표시됩니다. **공용 속성**은 이벤트에 대해 표시되는 속성 목록을 표시합니다. **페이로드 속성**은 이벤트와 관련된 속성을 표시합니다. 일부 이벤트의 경우 **스택**을 볼 수도 있습니다.
+이벤트를 선택하면 **추가 속성** 창이 표시됩니다. **공용 속성** 은 이벤트에 대해 표시되는 속성 목록을 표시합니다. **페이로드 속성** 은 이벤트와 관련된 속성을 표시합니다. 일부 이벤트의 경우 **스택** 을 볼 수도 있습니다.
 
 ![스택을 보여 주는 이벤트 뷰어](../profiling/media/eventviewerstacks.png "스택을 보여 주는 이벤트 뷰어")
 

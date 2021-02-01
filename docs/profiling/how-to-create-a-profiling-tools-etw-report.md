@@ -1,5 +1,7 @@
 ---
 title: 프로파일링 도구 ETW 보고서 만들기 | Microsoft Docs
+description: ETW(Windows용 이벤트 추적) 보고서를 만드는 방법을 알아봅니다. 해당 보고서에는 Visual Studio 프로파일링 도구 성능 세션에서 기록된 ETW 이벤트가 나열됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13de203a6a9082b33f5d68f8b4e2fbdc6f0e14b3
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c35a3e2d7da9472167c2ac20400fe3b3992b4883
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851192"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800483"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>방법: 프로파일링 도구 ETW 보고서 만들기
 ETW(Windows용 이벤트 추적) 보고서에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 세션에서 기록된 ETW 이벤트가 나열됩니다. ETW 데이터는 이진(.*etl*) 파일에 수집됩니다. 이 보고서에 대한 자세한 내용은 [ETW(Windows용 이벤트 추적) 보고서](../profiling/event-tracing-for-windows-etw-report.md)를 참조하세요.
@@ -26,7 +28,7 @@ ETW(Windows용 이벤트 추적) 보고서에는 [!INCLUDE[vsprvs](../code-quali
 
 - 명령 프롬프트에서 ETW 데이터를 수집하는 방법에 대한 자세한 내용은 [VSPerfCmd](../profiling/vsperfcmd.md) 및 [이벤트](../profiling/events-vsperfcmd.md)를 참조하세요.
 
-  **VSReport/summary:etw** 명령을 사용하여 ETW 보고서를 생성합니다. ETW 데이터를 포함하는 .*etl*은 프로파일링 데이터(.*vsp* 또는 .*vsps*) 파일과 동일한 디렉터리에 있어야 합니다. 기본적으로 이 보고서는 쉼표로 구분된 값(.*csv*) 파일로 생성됩니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.
+  **VSReport/summary:etw** 명령을 사용하여 ETW 보고서를 생성합니다. ETW 데이터를 포함하는 .*etl* 은 프로파일링 데이터(.*vsp* 또는 .*vsps*) 파일과 동일한 디렉터리에 있어야 합니다. 기본적으로 이 보고서는 쉼표로 구분된 값(.*csv*) 파일로 생성됩니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.
 
 ### <a name="to-generate-an-etw-report"></a>ETW 보고서를 생성하려면
 

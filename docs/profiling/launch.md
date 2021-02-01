@@ -1,5 +1,6 @@
 ---
 title: Launch | Microsoft Docs
+description: Launch 옵션을 통해 샘플링 방법을 사용하여 프로파일러를 시작하고 지정된 애플리케이션도 시작하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bec7ebd26cc0522852276627d2c59161b51c809b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778611"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721426"
 ---
 # <a name="launch"></a>Launch
 **Launch** 옵션은 샘플링 방법을 사용하여 프로파일러를 시작하고 지정된 애플리케이션도 시작합니다.
@@ -65,8 +66,8 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
 - **GC** - .NET 메모리 데이터를 수집합니다. 기본적으로(**allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.
 
-## <a name="example"></a>예제
- 이 예제에서는 애플리케이션을 시작하는 **Launch**의 사용을 보여 줍니다.
+## <a name="example"></a>예
+ 이 예제에서는 애플리케이션을 시작하는 **Launch** 의 사용을 보여 줍니다.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

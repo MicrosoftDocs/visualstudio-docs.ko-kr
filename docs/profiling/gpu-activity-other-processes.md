@@ -1,5 +1,7 @@
 ---
 title: GPU 작업(다른 프로세스) | Microsoft 문서
+description: 동시성 시각화 도우미의 스레드 뷰에 있는 GPU 작업(다른 프로세스) 세그먼트에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a502590c20fce1455d9259ae681178d9cd48e33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 71ecb1587545120aef8e18ce847d5e957f3e3cdd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969504"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801309"
 ---
 # <a name="gpu-activity-other-processes"></a>GPU 작업(다른 프로세스)
 동시성 시각화 도우미의 스레드 뷰에 있는 **GPU 작업(다른 프로세스)** 세그먼트는 시스템의 다른 프로세스를 대신해서 GPU가 요청을 처리 중인 시간을 나타냅니다. 이러한 요청은 DMA(직접 메모리 액세스) 패킷으로 GPU에 전송됩니다.  세그먼트 길이는 GPU에서 패킷이 처리된 시간을 나타냅니다.

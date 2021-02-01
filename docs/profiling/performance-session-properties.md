@@ -1,5 +1,6 @@
 ---
 title: 성능 세션 속성 | Microsoft Docs
+description: 성능 세션을 사용하여 애플리케이션을 프로파일링하는 방식을 결정하는 설정을 구성하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772204"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721231"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 
-**성능 세션**에서는 애플리케이션을 프로파일링하는 방식을 결정하는 설정을 구성할 수 있습니다. 또한 프로파일링 세션에 대해 생성되는 보고서도 저장됩니다.
+**성능 세션** 에서는 애플리케이션을 프로파일링하는 방식을 결정하는 설정을 구성할 수 있습니다. 또한 프로파일링 세션에 대해 생성되는 보고서도 저장됩니다.
 
-**성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.
+**성능 마법사** 를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션** 을 만듭니다. **성능 세션** 을 만들고 나면 **성능 탐색기** 에 **성능 세션** 이 표시됩니다.
 
-**성능 세션** 속성을 확인하려면 **성능 탐색기**에서 세션 이름을 선택하고 마우스 오른쪽 단추로 클릭한 다음 **속성**을 선택합니다.
+**성능 세션** 속성을 확인하려면 **성능 탐색기** 에서 세션 이름을 선택하고 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 선택합니다.
 
 성능 세션에는 다음 속성 페이지가 있습니다.
 
@@ -57,10 +58,10 @@ ms.locfileid: "74772204"
 - 성능 카운터 - 낮은 수준의 성능 문제
 - 사용 가능한 성능 카운터에 따라 추가 샘플 이벤트를 지정할 수 있습니다.
 
-자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.
+자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>이진
-이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 *My.DLL*을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 *My.Orig.DLL*이라는 *My.DLL*의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 *My.DLL*이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
+이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 *My.DLL* 을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 *My.Orig.DLL* 이라는 *My.DLL* 의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 *My.DLL* 이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
 
 자세한 내용은 [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)을 참조하세요.
 
@@ -96,7 +97,7 @@ ms.locfileid: "74772204"
 
 ## <a name="windows-counters"></a>Windows 카운터
 
-이 옵션을 사용하면 Windows 성능 모니터 카운터에서 데이터를 수집할 수 있습니다. 이 데이터를 수집하려면 레이블이 **Windows 성능 카운터 수집**인 확인란을 선택합니다. **수집 간격** 상자에서 수집 간격을 설정할 수 있습니다. **카운터 범주** 및 **인스턴스**도 사용할 수 있습니다. 일부 기본 Windows 성능 모니터 카운터를 사용할 수 있습니다.
+이 옵션을 사용하면 Windows 성능 모니터 카운터에서 데이터를 수집할 수 있습니다. 이 데이터를 수집하려면 레이블이 **Windows 성능 카운터 수집** 인 확인란을 선택합니다. **수집 간격** 상자에서 수집 간격을 설정할 수 있습니다. **카운터 범주** 및 **인스턴스** 도 사용할 수 있습니다. 일부 기본 Windows 성능 모니터 카운터를 사용할 수 있습니다.
 
  자세한 내용은 [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)을 참조하세요.
 
@@ -110,7 +111,7 @@ ms.locfileid: "74772204"
 
 [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [개요](../profiling/overviews-performance-tools.md)
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)

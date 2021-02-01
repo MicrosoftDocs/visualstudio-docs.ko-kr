@@ -1,5 +1,6 @@
 ---
 title: 성능 도구 문제 해결 | Microsoft Docs
+description: 프로파일링 도구에서 데이터를 수집하지 않는 경우와 같이 성능 도구 문제를 해결할 때 경험할 수 있는 다양한 상황에 관해 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778104"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722414"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>성능 도구 문제 해결
 프로파일링 도구를 사용할 때는 다음 문제 중 하나가 발생할 수 있습니다.

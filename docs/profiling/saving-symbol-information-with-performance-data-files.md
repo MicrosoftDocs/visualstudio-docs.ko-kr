@@ -1,5 +1,6 @@
 ---
 title: 성능 데이터 파일을 사용하여 기호 정보 저장 | Microsoft Docs
+description: 보고서 파일에서 기호를 저장하거나 직렬화하도록 성능 프로젝트 설정을 지정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778299"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720217"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 
-Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 ‘직렬화’하기 위한 성능 프로젝트 설정을 지정해야 합니다.  이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.
+Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 ‘직렬화’하기 위한 성능 프로젝트 설정을 지정해야 합니다. 이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.
 
 - 대상 어셈블리가 임시 스토리지의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함합니다.
 
@@ -28,9 +29,9 @@ Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 �
 
 Visual Studio IDE 또는 명령줄에서 기호를 직렬화할 수 있습니다.
 
-- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에서 기호를 serialize하려면 메뉴 모음에서 **도구**를 가리키고 **옵션**을 클릭합니다. **옵션** 창에서 **성능 도구**를 선택한 다음 **자동으로 기호 정보 serialize** 확인란을 선택합니다.
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에서 기호를 serialize하려면 메뉴 모음에서 **도구** 를 가리키고 **옵션** 을 클릭합니다. **옵션** 창에서 **성능 도구** 를 선택한 다음 **자동으로 기호 정보 serialize** 확인란을 선택합니다.
 
-- PACKSYMBOLS는 보고서 파일을 저장할 때 사용할 수 있는 동일한 명령줄 옵션입니다. 기호를 serialize하려면 **vsperfreport /summary:all /packsymbols filename.vsp**를 입력합니다.
+- PACKSYMBOLS는 보고서 파일을 저장할 때 사용할 수 있는 동일한 명령줄 옵션입니다. 기호를 serialize하려면 **vsperfreport /summary:all /packsymbols filename.vsp** 를 입력합니다.
 
 ## <a name="troubleshooting-symbol-problems"></a>기호 문제 해결
 
@@ -60,7 +61,7 @@ VsPerfReport -clearpackedsymbols filename.vsp
 
 VsPerfReport -packsymbols -summary:all filename.vsp
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)
 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)

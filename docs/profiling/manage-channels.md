@@ -1,5 +1,6 @@
 ---
 title: 채널 관리 | Microsoft 문서
+description: 동시성 시각화 도우미의 스레드 뷰에서 특정 패턴을 검사할 수 있도록 프로세스의 채널을 구성하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64779247"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721270"
 ---
 # <a name="manage-channels"></a>채널 관리
-동시성 시각화 도우미의 **스레드 뷰**에서는 특정 패턴을 검사할 수 있도록 프로세스에 대한 채널을 구성할 수 있습니다. 채널을 정렬하고, 이를 위 또는 아래로 이동하고, 표시하거나 숨길 수 있습니다.
+동시성 시각화 도우미의 **스레드 뷰** 에서는 특정 패턴을 검사할 수 있도록 프로세스에 대한 채널을 구성할 수 있습니다. 채널을 정렬하고, 이를 위 또는 아래로 이동하고, 표시하거나 숨길 수 있습니다.
 
 ## <a name="sort-by"></a>정렬 기준
  정렬 기준 컨트롤을 사용하면 현재 확대/축소 수준에 따라 서로 다른 기준으로 스레드를 정렬할 수 있습니다. 이 기능은 특히 특정 패턴을 찾고 있는 경우에 유용합니다. 다음과 같은 기준에 따라 정렬할 수 있습니다.
 
 |조건|정의|
 |--------------|----------------|
-|Start Time|시작 시간으로 스레드를 정렬합니다. 기본 정렬 순서입니다.|
+|시작 시간|시작 시간으로 스레드를 정렬합니다. 기본 정렬 순서입니다.|
 |종료 시간|종료 시간을 기준으로 스레드를 정렬합니다.|
 |실행|실행에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 |동기화|동기화에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 |I/O|I/O(데이터 읽기 및 쓰기)에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 |절전|중지에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
-|Paging|페이징에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
+|페이징|페이징에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 |선점|선점에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 |UI 처리|사용자 인터페이스 처리에 소요된 시간의 백분율을 기준으로 스레드를 정렬합니다.|
 
@@ -58,7 +59,7 @@ ms.locfileid: "64779247"
 ## <a name="group-markers-by-thread"></a>스레드로 표식 그룹화
  추적에 표식 이벤트가 포함된 경우 이 명령을 사용해서 표식 이벤트를 생성한 스레드에 따라 표식 채널을 그룹화할 수 있습니다.  디스크 채널은 채널 목록의 맨 위로 이동되고, GPU 채널은 맨 아래로 이동됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [확대/축소 컨트롤(스레드 뷰)](../profiling/zoom-control-threads-view.md)
 - [측정 모드 켜기/끄기](../profiling/measure-mode-on-off.md)
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

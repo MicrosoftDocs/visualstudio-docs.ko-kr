@@ -1,5 +1,6 @@
 ---
 title: 메모리 할당 및 개체 수명 데이터 값
+description: .NET 메모리 할당 프로파일링 방법으로 할당에 생성된 개체의 크기 및 수에 관한 정보를 수집하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3f7f6785b1a1693e0b041e64a0d507281926d3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 8a811206db28ab6ba2193e57cd2e53f94c91971c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189821"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722323"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>메모리 할당 및 개체 수명 데이터 값 이해
 

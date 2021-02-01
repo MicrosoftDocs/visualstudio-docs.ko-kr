@@ -1,5 +1,6 @@
 ---
 title: 성능 세션 개요 | Microsoft Docs
+description: 성능 도구를 사용하여 빠르게 생산성을 높이고 코드 성능을 향상하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778468"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723272"
 ---
 # <a name="performance-session-overview"></a>성능 세션 개요
 이 개요에서는 프로파일링의 기본 사항에 대해 설명합니다. 성능 작업을 처음 수행하는 개발자는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 통해 빠르게 생산성을 높이고 코드 성능을 개선하는 방법을 파악할 수 있습니다. 그리고 프로파일링에 대해 잘 알고 있는 개발자는 특정 프로파일링 도구의 기능과 프로세스에 대해 대략적으로 확인할 수 있습니다.
@@ -41,7 +42,7 @@ ms.locfileid: "74778468"
    프로파일링을 통해 제공되는 정보를 사용하려면 프로파일링할 이진 파일 및 Windows 운영 체제의 이진 파일에 대해 기호 정보를 사용할 수 있어야 합니다.
 
 ## <a name="configure-the-performance-session"></a>성능 세션 구성
- 프로파일링 세션을 구성하려면 사용할 프로파일링 방법과 수집할 데이터를 선택합니다. 프로파일링 도구 **성능 마법사**는 기본 구성을 안내할 수 있으며, 성능 세션 속성 페이지를 사용하여 옵션을 더 추가할 수 있습니다.
+ 프로파일링 세션을 구성하려면 사용할 프로파일링 방법과 수집할 데이터를 선택합니다. 프로파일링 도구 **성능 마법사** 는 기본 구성을 안내할 수 있으며, 성능 세션 속성 페이지를 사용하여 옵션을 더 추가할 수 있습니다.
 
 - 프로파일링 방법에는 샘플링, 추적 및 메모리 할당이 포함됩니다.
 
@@ -50,7 +51,7 @@ ms.locfileid: "74778468"
   프로젝트 솔루션의 일부분으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트에서 성능 세션을 구성하거나, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 통해 임의의 이진 파일을 프로파일링할 수 있습니다. 성능 세션 속성 페이지에서 세션 속성을 지정할 수도 있고 프로파일링 마법사를 사용할 수도 있습니다.
 
 ## <a name="collect-profiling-data"></a>프로파일링 데이터 수집
- **성능 탐색기**에서 프로파일링 데이터 수집을 시작합니다. 프로파일링을 일시 중지하고 다시 시작하여 수집하는 데이터의 양을 제한할 수 있습니다. 이미 실행 중인 프로세스에 연결할 수도 있습니다.
+ **성능 탐색기** 에서 프로파일링 데이터 수집을 시작합니다. 프로파일링을 일시 중지하고 다시 시작하여 수집하는 데이터의 양을 제한할 수 있습니다. 이미 실행 중인 프로세스에 연결할 수도 있습니다.
 
  애플리케이션이 시작되는 즉시 **데이터 수집 제어** 창이 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 표시됩니다. **데이터 수집 제어** 창에서 수집 프로세스를 일시 중지하고 다시 시작하여 특정 애플리케이션 부분을 프로파일링할 수 있습니다. **데이터 수집 제어** 창을 사용하여 수집되는 데이터에 표시를 삽입할 수도 있습니다. 표시는 프로파일링 뷰에 표시되며 프로파일링 데이터를 필터링하는 데 사용할 수 있는 사용자 정의 데이터 요소입니다.
 
@@ -74,6 +75,6 @@ ms.locfileid: "74778468"
 ## <a name="generate-a-report-of-the-results"></a>결과 보고서 생성
  성능 보고서 뷰의 행을 전자 메일과 스프레드시트에 붙여 넣을 수 있으며, 뷰 하나 이상의 데이터가 포함된 보고서를 생성할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [개요](../profiling/overviews-performance-tools.md)
 - [연습: 성능 문제 확인](beginners-guide-to-cpu-sampling.md)

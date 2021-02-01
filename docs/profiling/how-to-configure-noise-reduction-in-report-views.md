@@ -1,5 +1,7 @@
 ---
 title: 보고서 보기에서 노이즈 감소 구성 | Microsoft Docs
+description: 기본적으로 사용 가능한 잘라내기 및 접기를 사용하여 노이즈를 줄이고 보고서에서 성능 문제를 더 강조합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851231"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800430"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>방법: 보고서 보기에서 노이즈 감소 구성
 호출 트리 뷰 및 할당 뷰에 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 성능 보고서를 구성할 수 있습니다. 노이즈 감소를 사용하면 성능 문제가 더 두드러집니다. 성능 보고서를 분석할 경우 이 방법이 유용합니다.
@@ -33,13 +35,13 @@ ms.locfileid: "90851231"
 
 ### <a name="to-configure-trimming-for-a-performance-report"></a>성능 보고서에 대한 잘라내기를 구성하려면
 
-1. 생성된 보고서에서 호출 트리 뷰 또는 할당 뷰가 표시되면 **개발자** 메뉴에서 **프로파일러**, **노이즈 감소 옵션**을 차례로 클릭합니다.
+1. 생성된 보고서에서 호출 트리 뷰 또는 할당 뷰가 표시되면 **개발자** 메뉴에서 **프로파일러**, **노이즈 감소 옵션** 을 차례로 클릭합니다.
 
      **노이즈 감소** 대화 상자가 나타납니다.
 
 2. 잘라내기를 사용하도록 설정하려면 다음 단계를 수행합니다.
 
-    1. **잘라내기 사용**을 선택합니다. 이것이 기본 설정입니다.
+    1. **잘라내기 사용** 을 선택합니다. 이것이 기본 설정입니다.
 
         > [!NOTE]
         > 노이즈 감소가 사용되면 알림 표시줄이 보고서에 표시됩니다. 자세한 내용은 [호출 트리 뷰](../profiling/call-tree-view.md) 및 [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 참조하세요.
@@ -50,19 +52,19 @@ ms.locfileid: "90851231"
 
     4. 생성된 보고서에서 노이즈 감소 경고를 사용하도록 설정하려면 **노이즈 감소를 사용하도록 설정한 경우 경고를 표시합니다.** 를 선택합니다. 이것이 기본 설정입니다.
 
-3. 잘라내기를 사용하지 않도록 설정하려면 **잘라내기 사용**을 선택 취소합니다.
+3. 잘라내기를 사용하지 않도록 설정하려면 **잘라내기 사용** 을 선택 취소합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ### <a name="to-configure-folding-for-a-performance-report"></a>성능 보고서에 대한 접기를 구성하려면
 
-1. **개발자** 메뉴에서 **프로파일러**, **노이즈 감소 옵션**을 차례로 클릭합니다.
+1. **개발자** 메뉴에서 **프로파일러**, **노이즈 감소 옵션** 을 차례로 클릭합니다.
 
      **노이즈 감소** 대화 상자가 나타납니다.
 
 2. 접기를 사용하도록 설정하려면 다음 단계를 수행합니다.
 
-    1. **접기 사용**을 선택합니다. 이것이 기본 설정입니다.
+    1. **접기 사용** 을 선택합니다. 이것이 기본 설정입니다.
 
         > [!NOTE]
         > 노이즈 감소가 사용되면 알림 표시줄이 보고서에 표시됩니다. 자세한 내용은 [호출 트리 뷰](../profiling/call-tree-view.md) 및 [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 참조하세요.
@@ -73,9 +75,9 @@ ms.locfileid: "90851231"
 
     4. 생성된 보고서에서 노이즈 감소 경고를 사용하도록 설정하려면 **노이즈 감소를 사용하도록 설정한 경우 경고를 표시합니다.** 를 선택합니다. 이것이 기본 설정입니다.
 
-3. 접기를 사용하지 않도록 설정하려면 **접기 사용**을 선택 취소합니다.
+3. 접기를 사용하지 않도록 설정하려면 **접기 사용** 을 선택 취소합니다.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 - [성능 도구 보고서 뷰 사용자 지정](../profiling/customizing-performance-tools-report-views.md)

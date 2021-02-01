@@ -1,5 +1,6 @@
 ---
 title: 프로파일링 도구 사용 규칙 | Microsoft Docs
+description: 프로파일링 도구 사용 범주의 성능 규칙에서 프로파일러를 사용하여 데이터를 가장 효율적으로 수집하기 위한 지침을 제공하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144677"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720477"
 ---
 # <a name="profiling-tools-usage-rules"></a>프로파일링 도구 사용 규칙
 프로파일링 도구 사용 범주의 성능 규칙은 프로파일러를 사용하여 데이터를 가장 효율적으로 수집하기 위한 지침을 제공합니다.

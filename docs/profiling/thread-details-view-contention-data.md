@@ -1,5 +1,6 @@
 ---
 title: 스레드 정보 뷰 - 경합 데이터 | Microsoft Docs
+description: 스레드 정보 뷰에서 프로파일링 실행의 선택한 스레드에서 차단 이벤트의 타임라인 그래프를 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778169"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718800"
 ---
 # <a name="thread-details-view---contention-data"></a>스레드 정보 뷰 - 경합 데이터
 스레드 정보 뷰에는 리소스 간의 경합으로 인해 프로파일링 실행의 선택한 스레드에서 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.
@@ -35,9 +36,9 @@ ms.locfileid: "74778169"
 
 #### <a name="to-zoom-out-on-a-timeline"></a>시간 표시 막대를 축소하려면
 
-- **축소**를 클릭하여 이전 확대/축소 수준으로 돌아갑니다.
+- **축소** 를 클릭하여 이전 확대/축소 수준으로 돌아갑니다.
 
-- **확대/축소 다시 설정**을 클릭하여 뷰의 전체 시간 표시 막대를 표시합니다.
+- **확대/축소 다시 설정** 을 클릭하여 뷰의 전체 시간 표시 막대를 표시합니다.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>이벤트의 호출 스택을 보려면
 
@@ -57,6 +58,6 @@ ms.locfileid: "74778169"
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>프로세스 창에서 스레드 경합 데이터를 보려면
 
-- 시간 표시 막대 그래프에서 **전체**를 클릭합니다.
+- 시간 표시 막대 그래프에서 **전체** 를 클릭합니다.
 
      [프로세스 뷰](../profiling/process-view-contention-data.md)가 선택한 스레드와 함께 나타납니다.

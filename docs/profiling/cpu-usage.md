@@ -1,5 +1,7 @@
 ---
 title: 성능 프로파일러의 CPU 사용량 분석
+description: C++, C#, Visual Basic, JavaScript 앱에서 코드 실행에 소요된 CPU 시간 및 백분율을 표시하는 CPU 사용량 성능 도구에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007101"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719359"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 CPU 사용량 분석
 
@@ -30,7 +32,7 @@ CPU 사용량 도구는 열려 있는 Visual Studio 프로젝트, 설치된 Micr
 
 ## <a name="collect-cpu-usage-data"></a>CPU 사용량 데이터 수집
 
-1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스** 로 설정하고 **로컬 Windows 디버거** (또는 **로컬 머신** )를 배포 대상으로 선택합니다.
+1. Visual Studio 프로젝트에서 솔루션 구성을 **릴리스** 로 설정하고 **로컬 Windows 디버거**(또는 **로컬 머신**)를 배포 대상으로 선택합니다.
 
     ![릴리스 및 로컬 컴퓨터 선택](../profiling/media/cpuuse_selectreleaselocalmachine.png "릴리스 및 로컬 컴퓨터 선택")
 
@@ -88,7 +90,7 @@ Visual Studio 2019부터 **실행 부하 과다 경로 확장** 및 **실행 부
 
 코드로 실행되는 시스템과 프레임워크 함수를 *외부 코드* 라고 합니다. 외부 코드 함수는 앱 시작 및 중지, UI 그리기, 스레딩 제어, 기타 낮은 수준 서비스를 앱에 제공합니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.
 
-외부 코드의 호출 경로를 보려면 기본 진단 보고서 페이지(오른쪽 창)의 **필터** 드롭다운에서 **외부 코드 표시** 를 선택한 다음, **적용** 을 선택합니다. **CPU 사용량** 페이지의 **호출 트리** 보기와 외부 코드 호출을 확장합니다. ( **필터** 드롭다운은 자세한 보기가 아닌 기본 진단 페이지에서 사용할 수 있습니다.)
+외부 코드의 호출 경로를 보려면 기본 진단 보고서 페이지(오른쪽 창)의 **필터** 드롭다운에서 **외부 코드 표시** 를 선택한 다음, **적용** 을 선택합니다. **CPU 사용량** 페이지의 **호출 트리** 보기와 외부 코드 호출을 확장합니다. (**필터** 드롭다운은 자세한 보기가 아닌 기본 진단 페이지에서 사용할 수 있습니다.)
 
 ![외부 코드 표시](../profiling/media/cpu_use_wt_filterview.png "외부 코드 표시")
 

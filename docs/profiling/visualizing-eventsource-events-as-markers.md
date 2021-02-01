@@ -1,5 +1,6 @@
 ---
 title: EventSource 이벤트를 표식으로 시각화 | Microsoft Docs
+description: 동시성 시각화 도우미가 EventSource 이벤트를 표식으로 표시할 수 있으며 표식 표시 방법을 제어할 수 있다는 것을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64811539"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723142"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
 Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있으며, 표식이 표시되는 방식을 제어할 수 있습니다. EventSource 표식을 보려면 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 사용하여 ETW 공급자 GUID를 등록합니다. Concurrency 시각화에는 EventSource 이벤트를 [플래그 표식](../profiling/flag-markers.md), [범위 표식](../profiling/span-markers.md) 및 [메시지 표식](../profiling/message-markers.md)으로 나타내기 위한 기본 규칙이 있습니다. 이벤트에 사용자 지정 필드를 추가하여 EventSource 이벤트가 표시되는 방식을 사용자 지정할 수 있습니다. 표식에 대한 자세한 내용은 [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)을 참조하세요. EventSource 이벤트에 대한 자세한 내용은 <xref:System.Diagnostics.Tracing>를 참조하세요.
@@ -34,18 +35,18 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 
 |ETW 수준|Concurrency 시각화의 중요도|
 |---------------|---------------------------------------|
-|win:LogAlways|정상|
+|win:LogAlways|보통|
 |win:Critical|위험|
 |win:Error|위험|
 |win:Warning|높음|
-|win:Informational|정상|
+|win:Informational|보통|
 |win:Verbose|낮음|
 |win:verbose보다 높은 수준|낮음|
 
 ### <a name="series-name"></a>계열 이름
  이벤트의 작업 이름이 계열 이름에 사용됩니다. 이벤트에 대해 작업이 정의되지 않은 경우 계열 이름은 비어 있습니다.
 
-### <a name="category"></a>Category
+### <a name="category"></a>범주
  Level이 win:Critical 또는 win:Error이면 범주는 Alert(-1)입니다. 그렇지 않으면 범주는 기본값(0)입니다.
 
 ### <a name="text"></a>텍스트
@@ -70,18 +71,18 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 
 |cvImportance 값|Concurrency 시각화의 중요도|
 |------------------------|---------------------------------------|
-|0|정상|
+|0|보통|
 |1|위험|
 |2|높음|
 |3|높음|
-|4|정상|
+|4|보통|
 |5|낮음|
 |기타 모든 값|낮음|
 
 ### <a name="series-name"></a>계열 이름
  `cvSeries` 이벤트 필드(문자열)를 사용하여 Concurrency 시각화가 EventSource 이벤트에 제공하는 계열 이름을 제어합니다.
 
-### <a name="category"></a>Category
+### <a name="category"></a>범주
  `cvCategory` 필드(바이트)를 사용하여 Concurrency 시각화가 EventSource 이벤트에 제공하는 범주를 제어합니다.
 
 ### <a name="text"></a>텍스트
@@ -93,5 +94,5 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 > [!NOTE]
 > SpanID를 사용하여 범위를 중첩하거나, 같은 스레드에서 해당 범위를 일부분 겹치거나, 시작되는 스레드와 끝나는 스레드를 서로 다르게 지정할 수는 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)

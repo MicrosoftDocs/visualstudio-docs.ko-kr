@@ -1,5 +1,6 @@
 ---
 title: 메모리 및 페이징 성능 규칙 | Microsoft Docs
+description: 메모리 및 페이징 범주의 성능 규칙을 사용하여 애플리케이션 성능과 응답성에 영향을 줄 수 있는 프로파일링 실행의 페이징 작업을 식별하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 716bc771310b73c8a0b11a97080184d9868fe91b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e1cddda12fbb67f9b604186e754146558cdd62ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535137"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720607"
 ---
 # <a name="memory-and-paging-performance-rules"></a>메모리 및 페이징 성능 규칙
 메모리의 성능 규칙 및 페이징 범주는 애플리케이션 성능과 응답성에 영향을 줄 수 있는 프로파일링 실행의 페이징 작업을 식별합니다.

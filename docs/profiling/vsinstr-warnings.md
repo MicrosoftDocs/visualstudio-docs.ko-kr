@@ -1,6 +1,7 @@
 ---
 title: VSInstr 경고 | Microsoft Docs
 ms.date: 11/04/2016
+description: VSInstr.exe 도구에서 발생하는 경고에 관해 알아보고 해당 경고 번호와 NOWARN 옵션을 사용하여 경고가 표시되지 않도록 하는 방법을 알아봅니다.
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330545"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723129"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
 다음 표에는 *VSInstr.exe* 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.

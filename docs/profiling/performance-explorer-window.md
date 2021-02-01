@@ -1,5 +1,6 @@
 ---
 title: 성능 탐색기 창 | Microsoft Docs
+description: Visual Studio IDE의 성능 탐색기 창에서 Visual Studio 프로파일링 도구를 사용하여 성능 세션을 구성하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772441"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722817"
 ---
 # <a name="performance-explorer-window"></a>성능 탐색기 창
 
@@ -46,11 +47,11 @@ Visual Studio IDE의 **성능 탐색기** 창에서는 Visual Studio 프로파�
 
 - **세션 이름** - 트리 컨트롤의 루트에는 세션의 이름이 포함되어 있습니다. 세션 이름을 마우스 오른쪽 단추로 클릭하여 세션 속성을 설정하거나 대상 애플리케이션 및 프로파일러를 시작합니다.
 
-- **대상** - 세션에서 프로파일링할 이진 파일의 이름이 표시됩니다. **대상**을 마우스 오른쪽 단추로 클릭하여 이진 파일, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 또는 웹 사이트를 추가하거나 제거합니다. 대상 이름을 마우스 오른쪽 단추로 클릭하면 개별 이진 파일에 대한 속성을 설정할 수 있습니다.
+- **대상** - 세션에서 프로파일링할 이진 파일의 이름이 표시됩니다. **대상** 을 마우스 오른쪽 단추로 클릭하여 이진 파일, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 또는 웹 사이트를 추가하거나 제거합니다. 대상 이름을 마우스 오른쪽 단추로 클릭하면 개별 이진 파일에 대한 속성을 설정할 수 있습니다.
 
-- **보고서** - 세션에 대해 생성되는 프로파일러 데이터 파일의 이름이 표시됩니다. **보고서**를 마우스 오른쪽 단추로 클릭하여 기존 보고서를 추가하거나 두 프로파일러 데이터 파일을 비교합니다. 보고서 이름을 마우스 오른쪽 단추로 클릭하여 프로파일러 데이터 파일을 열거나 제거하거나 내보냅니다.
+- **보고서** - 세션에 대해 생성되는 프로파일러 데이터 파일의 이름이 표시됩니다. **보고서** 를 마우스 오른쪽 단추로 클릭하여 기존 보고서를 추가하거나 두 프로파일러 데이터 파일을 비교합니다. 보고서 이름을 마우스 오른쪽 단추로 클릭하여 프로파일러 데이터 파일을 열거나 제거하거나 내보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [개요](../profiling/overviews-performance-tools.md)
 [성능 세션 구성](../profiling/configuring-performance-sessions.md)

@@ -1,5 +1,6 @@
 ---
 title: 상태 | Microsoft Docs
+description: VSPerfCmd.exe Status 옵션을 사용하여 프로파일러의 상태 정보 및 현재 프로파일링되는 모든 프로세스를 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778247"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722713"
 ---
 # <a name="status"></a>상태
 *VSPerfCmd.exe* **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.
@@ -53,7 +54,7 @@ VSPerfCmd.exe /Status
 
  **스레드 수** 현재 실행 중인 스레드 수입니다.
 
- **Start/Stop Count** 이 프로세스에 대한 데이터 수집을 제어하는 기본 내부 프로파일러 카운트입니다. 카운트는 데이터를 수집하기 위해 1과 같아야 합니다. 프로파일러 API 및 VSPerfCmd 옵션 **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn** 및 **ThreadOff**에서 Start/Stop 카운트를 조작할 수 있습니다.
+ **Start/Stop Count** 이 프로세스에 대한 데이터 수집을 제어하는 기본 내부 프로파일러 카운트입니다. 카운트는 데이터를 수집하기 위해 1과 같아야 합니다. 프로파일러 API 및 VSPerfCmd 옵션 **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn** 및 **ThreadOff** 에서 Start/Stop 카운트를 조작할 수 있습니다.
 
  **Suspend/Resume Count** 이 프로세스에 대한 데이터 수집을 제어하는 보조 내부 프로파일러 카운트입니다. 카운트는 데이터를 수집하기 위해 0보다 작거나 같아야 합니다. **Suspend/Resume** 카운트는 프로파일러 API에 의해서만 조작할 수 있습니다.
 

@@ -1,5 +1,7 @@
 ---
 title: 사용자 지정 네이티브 ETW 힙 이벤트 | Microsoft 문서
+description: 사용자 지정 힙을 사용하여 할당 오버헤드를 줄이지만 할당 분석을 위해 메모리 프로파일러에 할당 정보를 계속 제공하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552965"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686326"
 ---
 # <a name="custom-native-etw-heap-events"></a>사용자 지정 네이티브 ETW 힙 이벤트
 
@@ -61,7 +63,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 포인터를 새로 할당된 힙 메모리로 반환하는 `__declspec(allocator)` 데코레이터를 사용자 지정 힙 관리자의 함수에 추가합니다.  이 데코레이터를 통해 도구에서 반환 중인 메모리의 형식을 올바르게 식별할 수 있습니다.  다음은 그 예입니다.
+1. 포인터를 새로 할당된 힙 메모리로 반환하는 `__declspec(allocator)` 데코레이터를 사용자 지정 힙 관리자의 함수에 추가합니다.  이 데코레이터를 통해 도구에서 반환 중인 메모리의 형식을 올바르게 식별할 수 있습니다.  예를 들면 다음과 같습니다.
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -105,7 +107,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   또는:
+   또는
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
@@ -117,7 +119,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   또는:
+   또는
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
@@ -129,7 +131,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    delete pHeapTracker;
    ```
 
-   또는:
+   또는
 
    ```C
    CloseHeapTracker(hHeapTracker);
@@ -140,7 +142,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 ![힙 프로파일링 사용](media/heap-enable-heap.png)
 
-사용자 지정 힙 추적을 보려면 **스냅샷** 창의 오른쪽 위에 있는 **힙** 드롭다운을 사용하여 뷰를 *NT 힙*에서 앞에서 이름을 지정한 사용자 힙으로 변경합니다.
+사용자 지정 힙 추적을 보려면 **스냅샷** 창의 오른쪽 위에 있는 **힙** 드롭다운을 사용하여 뷰를 *NT 힙* 에서 앞에서 이름을 지정한 사용자 힙으로 변경합니다.
 
 ![힙 선택](media/heap-example-custom-heap.png)
 
@@ -155,6 +157,6 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > [!TIP]
 > Visual Studio의 **성능 프로파일링** 도구 집합에도 **메모리 사용량** 도구가 포함되어 있습니다. 이 도구 집합은 **디버그** > **성능 프로파일러** 메뉴 옵션 또는 **Alt**+**F2** 키보드 조합을 통해 활성화됩니다.  이 기능은 힙 추적을 포함하지 않으므로 여기서 설명하는 사용자 지정 힙을 표시하지 않습니다.  **진단 도구** 창(**디버그** > **Windows** > **진단 도구 표시** 메뉴 또는 **Ctrl**+**Alt**+**F2** 키보드 조합을 사용하여 설정 가능)에만 이 기능이 포함되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
 [메모리 사용량](../profiling/memory-usage.md)

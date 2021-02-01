@@ -1,5 +1,6 @@
 ---
 title: 프로파일링 명령줄 - 이식 가능한 데이터 파일 만들기
+description: 프로파일링 데이터를 더 쉽게 공유하려면 VSPerfReport.exe 명령줄 도구를 사용하여 프로파일링 실행을 위한 기호를 .vsp 파일로 포함합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808840"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718969"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>명령줄에서 이식 가능한 프로파일링 데이터 파일 만들기
 프로파일링 데이터를 더 쉽게 공유하기 위해 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 사용하여 프로파일링 실행에 대한 기호를 .*vsp* 파일로 포함할 수 있습니다.
@@ -23,7 +24,7 @@ ms.locfileid: "90808840"
  또한 더 작고 IDE에서 로드하는 데 더 빠른 미리 분석된 프로파일링 데이터(.*vsps*) 파일을 만들 수도 있습니다.
 
 > [!NOTE]
-> 기호(.*pdb*) 파일을 **VSPerfReport**에 사용할 수 있는지 확인합니다. 자세한 내용은 [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)을 참조하세요.
+> 기호(.*pdb*) 파일을 **VSPerfReport** 에 사용할 수 있는지 확인합니다. 자세한 내용은 [방법: 명령줄에서 기호 파일 위치 지정](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)을 참조하세요.
 >
 > **VSReport** 경로에 대한 자세한 내용은 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 >

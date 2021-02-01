@@ -1,5 +1,7 @@
 ---
 title: 수집 방법 선택 | Microsoft Docs
+description: Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가지 방법을 지원합니다. 애플리케이션에 필요한 항목을 선택하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851309"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801587"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 
@@ -50,13 +52,13 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 ### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>성능 세션 속성을 사용하여 샘플링 또는 계측 방법을 선택하려면
 
-1. **성능 탐색기**에서 성능 세션을 선택합니다.
+1. **성능 탐색기** 에서 성능 세션을 선택합니다.
 
-     성능 세션 파일 이름의 확장명은 .*psess*입니다.
+     성능 세션 파일 이름의 확장명은 .*psess* 입니다.
 
-2. 성능 세션을 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
+2. 성능 세션을 마우스 오른쪽 단추로 클릭하고 **속성** 을 클릭합니다.
 
-3. **속성 페이지**에서 **일반**을 클릭합니다.
+3. **속성 페이지** 에서 **일반** 을 클릭합니다.
 
 4. 원하는 수집 방법을 클릭합니다.
 
@@ -66,29 +68,29 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 ### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>성능 세션 속성을 사용하여 .NET 메모리 데이터 수집을 선택하려면
 
-1. **성능 탐색기**에서 성능 세션을 선택합니다.
+1. **성능 탐색기** 에서 성능 세션을 선택합니다.
 
      성능 세션 파일 이름의 확장명은 .psess입니다.
 
-2. 성능 세션을 마우스 오른쪽 단추로 클릭하고 **속성**을 클릭합니다.
+2. 성능 세션을 마우스 오른쪽 단추로 클릭하고 **속성** 을 클릭합니다.
 
-3. **속성 페이지**에서 **일반**을 클릭합니다.
+3. **속성 페이지** 에서 **일반** 을 클릭합니다.
 
-4. **샘플링** 또는 **계측**을 클릭합니다.
+4. **샘플링** 또는 **계측** 을 클릭합니다.
 
-5. **.NET 개체 할당 정보 수집**을 클릭하여 .NET Framework 개체 할당의 크기와 개수를 수집합니다.
+5. **.NET 개체 할당 정보 수집** 을 클릭하여 .NET Framework 개체 할당의 크기와 개수를 수집합니다.
 
-6. (선택 사항) **추가적으로 .NET 개체 수명 정보 수집**을 클릭하여 개체 메모리가 회수된 가비지 수집 생성에 대한 데이터를 수집합니다.
+6. (선택 사항) **추가적으로 .NET 개체 수명 정보 수집** 을 클릭하여 개체 메모리가 회수된 가비지 수집 생성에 대한 데이터를 수집합니다.
 
      .NET 메모리 데이터를 수집할 때 사용할 수 있는 다른 옵션에 대한 자세한 내용은 [.NET 메모리 할당 및 수명 데이터 수집](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)을 참조하세요.
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>성능 세션 속성을 사용하여 동시성 데이터 수집을 선택하려면
 
-1. **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+1. **성능 탐색기** 에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
-2. **속성 페이지**에서 **일반**을 클릭합니다.
+2. **속성 페이지** 에서 **일반** 을 클릭합니다.
 
-3. **동시성**을 클릭합니다.
+3. **동시성** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

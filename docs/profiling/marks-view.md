@@ -1,5 +1,6 @@
 ---
 title: 표시 뷰 | Microsoft Docs
+description: 애플리케이션에 삽입된 샘플링 및 ETW 이벤트를 표시 뷰에 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037519"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718982"
 ---
 # <a name="marks-view"></a>표시 뷰
 표시 뷰에는 애플리케이션에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.
@@ -28,7 +29,7 @@ ms.locfileid: "90037519"
 
  자동으로 생성되는 표시의 Windows 카운터 데이터는 이 뷰에도 표시됩니다. 자세한 내용은 [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)을 참조하세요.
 
- 두 표시 사이에 필터를 만들려면 표시를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **표시에 대한 필터 추가** 또는 **타임스탬프에 대한 필터 추가**를 클릭합니다.
+ 두 표시 사이에 필터를 만들려면 표시를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **표시에 대한 필터 추가** 또는 **타임스탬프에 대한 필터 추가** 를 클릭합니다.
 
  다음 표에는 표시 뷰에서 사용할 수 있는 열에 대한 정의가 나와 있습니다.
 
@@ -40,7 +41,7 @@ ms.locfileid: "90037519"
 
  Windows 성능 카운터 데이터 - Windows 성능 카운터 데이터가 수집되면 카운터 이름이 있는 열에 값이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [성능 보고서 개요](../profiling/performance-report-overview.md)
 - [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;NIB&#93; 데이터 수집 제어 창](/previous-versions/bb385767(v=vs.110))

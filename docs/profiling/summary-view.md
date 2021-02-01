@@ -1,5 +1,6 @@
 ---
 title: 요약 뷰 | Microsoft Docs
+description: 요약 뷰에 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수 또는 개체에 관한 정보를 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546889"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719281"
 ---
 # <a name="summary-view"></a>요약 뷰
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수 또는 개체에 대한 정보가 표시됩니다. 이 뷰는 타임라인 그래프 및 프로파일링 방법의 성능 메트릭을 기반으로 가장 많은 비용이 소요된 함수 또는 개체의 두 개 이상의 목록을 제공합니다. 이 뷰의 데이터는 사용된 프로파일링 방법(샘플링, 계측 또는 동시성) 및 .NET 메모리 할당이 수집되었는지 여부에 따라 달라집니다.
@@ -32,7 +33,7 @@ ms.locfileid: "85546889"
 
 - 요약 뷰 목록에서 함수를 클릭하여 함수에 대한 함수 정보 뷰를 열 수 있습니다. 또한 다른 뷰 옵션에 대한 함수를 마우스 오른쪽 단추로 클릭할 수도 있습니다.
 
-- 요약 뷰 목록에 표시되는 항목의 수를 수정하려면 **도구** 메뉴를 열고, **옵션**을 가리킨 다음 **성능 도구**를 클릭합니다. **일반 설정** 아래에서 **요약 뷰의 함수 개수** 설정을 수정합니다.
+- 요약 뷰 목록에 표시되는 항목의 수를 수정하려면 **도구** 메뉴를 열고, **옵션** 을 가리킨 다음 **성능 도구** 를 클릭합니다. **일반 설정** 아래에서 **요약 뷰의 함수 개수** 설정을 수정합니다.
 
 ## <a name="notifications-links"></a>알림 링크
  알림 목록에서 링크를 클릭하여 보고서에 대한 표시 옵션을 설정할 수 있습니다. 목록은 타임라인 그래프의 오른쪽에 있습니다.

@@ -1,5 +1,6 @@
 ---
 title: UWP 앱에서 네트워크 사용 분석
+description: Visual Studio 네트워크 진단 도구를 통해 Windows.Web.Http API를 사용하여 수행된 네트워크 작업에 관한 데이터를 수집하는 방법을 알아봅니다.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541715"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722908"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.
@@ -30,7 +31,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 
 1. Visual Studio에서 프로젝트를 엽니다.
 
-2. 메뉴에서 **디버그/성능 프로파일러**를 클릭합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다.
+2. 메뉴에서 **디버그/성능 프로파일러** 를 클릭합니다. **네트워크** 를 선택한 다음 **시작** 을 선택합니다.
 
 3. 네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.
 
@@ -47,7 +48,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 
  **네트워크** 요약 보기에는 앱을 실행하는 동안의 각 네트워크 작업에 대한 데이터가 표시됩니다. 열 머리글을 선택하여 목록을 정렬하거나, **콘텐츠 형식** 필터 보기에 표시할 콘텐츠 형식을 선택합니다.
 
- **HAR로 저장**을 선택하여 Fiddler와 같은 타사 도구에서 사용할 수 있는 JSON 파일을 만듭니다.
+ **HAR로 저장** 을 선택하여 Fiddler와 같은 타사 도구에서 사용할 수 있는 JSON 파일을 만듭니다.
 
  **네트워크** 세부 정보 보기에는 요약 보기에 있는 네트워크 작업에 대한 자세한 정보가 표시됩니다.
 

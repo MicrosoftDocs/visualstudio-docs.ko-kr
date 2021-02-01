@@ -1,5 +1,6 @@
 ---
 title: WaitStart | Microsoft Docs
+description: VSPerfCmd.exe Start 하위 명령이 프로파일러가 초기화되었거나 지정된 시간(초)이 경과되었을 때만 결과를 반환하도록 하는 WaitStart 옵션에 관해 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8218b04b0c67f2b3b2ebf7ae2fe1209d76461aa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329891"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718761"
 ---
 # <a name="waitstart"></a>WaitStart
 WaitStart 옵션을 사용하면 *VSPerfCmd.exe* Start 하위 명령이 프로파일러가 초기화되었거나 지정된 시간(초)이 경과되었을 때만 결과를 반환합니다. 기본적으로 Start 명령은 즉시 결과를 반환합니다. 프로파일러를 초기화하지 않고 Start 하위 명령이 반환되면 오류가 반환됩니다. 시간(초)을 지정하지 않으면 Start 명령은 무기한 대기합니다.

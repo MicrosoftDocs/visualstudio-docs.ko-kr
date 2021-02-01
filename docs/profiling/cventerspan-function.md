@@ -1,5 +1,7 @@
 ---
 title: CvEnterSpan 함수 | Microsoft 문서
+description: 동시성 시각화 도우미 SDK 함수인 CvEnterSpan(C 라이브러리)의 참조 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328976"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686521"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 함수
 새 범위의 시작을 표시합니다.
@@ -108,9 +110,9 @@ HRESULT CvEnterSpanExVA(
 
  `level` 범위의 중요도 수준.
 
- `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL일 수 없습니다.
+ `pMarkerSeries` 유효한 표식 계열 컨텍스트입니다. NULL이 될 수 없습니다.
 
- `pMessage` 메시지 서식 문자열입니다. NULL일 수 없습니다.
+ `pMessage` 메시지 서식 문자열입니다. NULL이 될 수 없습니다.
 
  `ppSpan` 결과 범위 개체를 저장할 변수의 주소입니다. 주소는 NULL일 수 없으며, 변수는 임의의 값을 포함할 수 있습니다.
 
@@ -124,5 +126,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Counter | Microsoft Docs
+description: VSPerfCmd.exe의 Counter 옵션에 관해 알아봅니다. 해당 옵션은 샘플링 간격을 지정하거나 계측 프로파일링에서 이벤트 간격의 측정값입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c882514d6bcf27de36a6ca4420fbaf671c72f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ed799cac54d630dfff1b285d3f2257e5eb99b5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331192"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720698"
 ---
 # <a name="counter"></a>카운터
 **Counter** 옵션은 프로세서(하드웨어) 성능 카운터에서 데이터를 수집합니다.
 
-- 샘플링 프로파일링 방법을 사용하는 경우 **Counter**는 온칩 성능 카운터와 샘플링 간격으로 사용할 카운터 이벤트의 수를 지정합니다. 샘플링을 사용하는 경우 카운터를 하나만 지정할 수 있습니다.
+- 샘플링 프로파일링 방법을 사용하는 경우 **Counter** 는 온칩 성능 카운터와 샘플링 간격으로 사용할 카운터 이벤트의 수를 지정합니다. 샘플링을 사용하는 경우 카운터를 하나만 지정할 수 있습니다.
 
 - 계측 프로파일링 방법을 사용하는 경우 이전 및 현재 컬렉션 이벤트 중간에 발생한 카운터 이벤트의 수가 프로파일러 보고서에 별도의 필드로 나열됩니다. 계측을 사용하는 경우 여러 **Counter** 옵션을 지정할 수 있습니다.
 
@@ -51,7 +53,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 
  **연결:** `PID` 프로파일러를 시작하고 프로세스 ID로 지정한 프로세스에 연결합니다. 샘플링 방법을 사용하려면 프로파일러를 초기화해야 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  샘플링 방법 예제는 일반 프로파일러 카운터 NonHaltedCycles가 1000번 발생할 때마다 애플리케이션을 샘플링하는 방법을 보여 줍니다.
 
  계측 방법 예제는 프로파일러를 초기화하여 L2InstructionFetches 카운터 이벤트를 수집하는 방법을 보여 줍니다. L2InstructionFetches 카운터 이름은 프로세서마다 고유합니다.

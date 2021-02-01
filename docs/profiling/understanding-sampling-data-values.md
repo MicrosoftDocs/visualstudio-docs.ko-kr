@@ -1,5 +1,6 @@
 ---
 title: 샘플링 데이터 값 이해 | Microsoft Docs
+description: Visual Studio 프로파일링 도구의 샘플링 프로파일링 방법을 통해 설정된 간격으로 컴퓨터 프로세서를 중단하여 함수 호출 스택을 수집하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778052"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722167"
 ---
 # <a name="understand-sampling-data-values"></a>샘플링 데이터 값 이해
 
-Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법은 설정된 간격으로 컴퓨터 프로세서를 중단하여 함수 호출 스택을 수집합니다.  *호출 스택*은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
+Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법은 설정된 간격으로 컴퓨터 프로세서를 중단하여 함수 호출 스택을 수집합니다. *호출 스택* 은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
 
 프로파일러 분석에서는 프로세서가 대상 프로세스에서 코드를 실행하고 있는지 확인합니다. 프로세서가 대상 프로세스에서 코드를 실행하고 있지 않으면 샘플은 삭제됩니다.
 
@@ -50,7 +51,7 @@ Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법�
 
 프로파일링 실행 내 전용 샘플 중 함수 또는 데이터 범위의 전용 샘플 총 수의 백분율입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)
 [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)

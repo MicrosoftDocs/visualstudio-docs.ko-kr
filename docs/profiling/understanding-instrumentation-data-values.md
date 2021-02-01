@@ -1,5 +1,6 @@
 ---
 title: 계측 데이터 값 이해 | Microsoft Docs
+description: 계측 프로파일링 방법을 사용하여 함수 호출, 줄, 프로파일링된 애플리케이션의 명령에 관해 자세한 타이밍 정보를 기록하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778078"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722349"
 ---
 # <a name="understand-instrumentation-data-values"></a>계측 데이터 값 이해
 
-Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 프로파일링된 애플리케이션의 명령에 대해 자세한 타이밍 정보를 기록합니다. 
+Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 프로파일링된 애플리케이션의 명령에 대해 자세한 타이밍 정보를 기록합니다.
 
 계측 메서드는 프로파일링된 바이너리에서 대상 함수의 시작 및 끝 부분에 코드를 삽입하고 다른 함수들에 대한 이러한 함수의 각 호출 이전 및 다음 위치에 코드를 삽입합니다. 주입되는 코드는 다음 정보를 기록합니다.
 
@@ -36,7 +37,7 @@ Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 �
 
 - 간격에서 운영 체제 이벤트가 발생했는지 여부
 
-함수 또는 데이터 범위의 간격에 대한 데이터 값의 이름은 *경과된 포괄 시간*, *경과된 전용 시간*, *애플리케이션 포괄 시간* 및 *애플리케이션 전용 시간*입니다.
+함수 또는 데이터 범위의 간격에 대한 데이터 값의 이름은 *경과된 포괄 시간*, *경과된 전용 시간*, *애플리케이션 포괄 시간* 및 *애플리케이션 전용 시간* 입니다.
 
 - 함수의 모든 간격은 경과된 포괄 시간 데이터 값에 추가됩니다.
 
@@ -96,7 +97,7 @@ Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 �
 
 100 * 함수 애플리케이션 전용 시간/세션 애플리케이션 포괄 시간
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 [성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)
 [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)

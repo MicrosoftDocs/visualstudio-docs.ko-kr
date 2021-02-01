@@ -1,5 +1,7 @@
 ---
 title: 함수 뷰 - .NET 메모리 샘플링 데이터 | Microsoft Docs
+description: 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터의 함수 뷰에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780041"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801520"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>함수 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터의 함수 뷰는 프로파일링 실행 중 메모리를 할당한 함수를 나열하고 할당의 크기와 수를 보고합니다.
 
-|열|Description|
+|열|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
@@ -40,7 +42,7 @@ ms.locfileid: "74780041"
 |**제외 바이트**|해당 자식 함수가 아닌 이 함수에 의해 할당된 메모리의 바이트 수입니다.|
 |**제외 바이트(%)**|이 함수의 전용 바이트로, 프로파일링 실행 시 할당된 모든 메모리 바이트의 비율입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [함수 뷰 - 계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [함수 뷰](../profiling/functions-view-sampling-data.md)
 - [함수 뷰](../profiling/functions-view-instrumentation-data.md)

@@ -1,5 +1,7 @@
 ---
 title: 디스크 작업 보고서(스레드 뷰) | Microsoft 문서
+description: 디스크 작업 보고서에는 디스크 채널의 디스크 I/O 작업이 표시됩니다. 각 디스크 액세스에 대해 보고되는 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970072"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686534"
 ---
 # <a name="disk-operations-report-threads-view"></a>디스크 작업 보고서(스레드 뷰)
 디스크 작업 보고서에는 디스크 채널의 디스크 I/O 작업이 표시됩니다.
@@ -42,5 +44,5 @@ ms.locfileid: "62970072"
 
 - 쓰기 대기 시간(밀리초)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,7 @@
 ---
 title: CPU 및 Windows 카운터 | Microsoft 문서
+description: CPU(하드웨어) 및 Windows(소프트웨어) 카운터는 성능 데이터를 제공합니다. 카운터를 표시하는 방법과 카운터에서 데이터를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779552"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719164"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 
@@ -88,31 +90,31 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 모든 CPU 카운터의 목록을 보려면
 
-1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.
+1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성** 을 클릭합니다.
 
 2. 다음 작업 중 하나를 수행합니다.
 
-   - **샘플링**을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터**를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터**에 나열됩니다.
+   - **샘플링** 을 클릭한 후 **샘플** 이벤트 목록에서 **성능 카운터** 를 선택합니다. CPU 카운터가 **사용 가능한 성능 카운터** 에 나열됩니다.
 
-      **참고** 이전 샘플링 구성으로 돌아가려면 **취소**를 클릭합니다.
+      **참고** 이전 샘플링 구성으로 돌아가려면 **취소** 를 클릭합니다.
 
      또는
 
-   - **CPU 카운터**를 선택한 후 **CPU 카운터 수집**을 선택합니다. CPU 카운터가 **사용 가능한 카운터**에 나열됩니다.
+   - **CPU 카운터** 를 선택한 후 **CPU 카운터 수집** 을 선택합니다. CPU 카운터가 **사용 가능한 카운터** 에 나열됩니다.
 
-      **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.
+      **참고** 이전 카운터 수집 구성으로 돌아가려면 **취소** 를 클릭합니다.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 Windows 카운터의 목록을 보려면
 
-1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.
+1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성** 을 클릭합니다.
 
-2. **Windows 카운터**를 클릭합니다.
+2. **Windows 카운터** 를 클릭합니다.
 
-3. **Windows 카운터 수집**을 선택합니다.
+3. **Windows 카운터 수집** 을 선택합니다.
 
 4. **카운터 범주** 목록에서 카운터 그룹을 선택합니다. 그룹의 Windows 카운터가 목록 상자에 표시됩니다.
 
-     **참고:** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.
+     **참고:** 이전 카운터 수집 구성으로 돌아가려면 **취소** 를 클릭합니다.
 
 ### <a name="command-line"></a>명령줄
 
@@ -130,7 +132,7 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
 ## <a name="see-also"></a>참조
 
-[개요](../profiling/overviews-performance-tools.md)
-[방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
-[방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)
-[방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)
+- [개요](../profiling/overviews-performance-tools.md)
+- [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
+- [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)
+- [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)

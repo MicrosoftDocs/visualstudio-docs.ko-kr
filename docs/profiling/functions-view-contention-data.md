@@ -1,5 +1,7 @@
 ---
 title: 함수 뷰 - 경합 데이터 | Microsoft Docs
+description: 프로파일링 실행 중에 실행에서 차단된 프로파일링 실행의 함수를 나열하는 경합 데이터의 함수 보고서 뷰에 관해 자세히 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780054"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801661"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
 경함 데이터의 함수 보고서 뷰는 프로파일링 실행 중에 실행에서 차단된 프로파일링 실행 시 함수를 나열합니다.
 
  다음 표에서는 동시성 방법을 사용하여 수집된 프로파일링 데이터 파일의 함수 뷰에 표시된 값을 설명합니다.
 
-|Column|설명|
+|열|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|이 함수가 함수 본문에서 코드를 실행할 수 없도록 차단된 시간의 양입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|
 |**차단된 전용 시간 비율(%)**|프로파일링 실행의 모든 차단된 시간 중 이 함수의 차단된 전용 시간의 백분율입니다.|
@@ -40,9 +42,9 @@ ms.locfileid: "74780054"
 |**모듈 경로**|함수가 포함된 모듈의 경로입니다.|
 |**프로세스 ID**|함수가 실행된 프로세스의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
-|**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
+|**원본 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [함수 뷰](../profiling/functions-view.md)
 - [함수 뷰 - 계측](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

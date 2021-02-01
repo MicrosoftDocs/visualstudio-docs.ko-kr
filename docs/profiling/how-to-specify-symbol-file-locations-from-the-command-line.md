@@ -1,5 +1,6 @@
 ---
 title: 명령줄에서 기호 파일 위치 지정
+description: 함수 이름, 줄 번호 등의 기호 정보를 표시하기 위해 VSPerfReport 명령줄 도구가 기호 파일(.pdb)에 액세스하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f06bf9482bf719eb2025a8ee6c496b6b679046
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809585"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721920"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
 함수 이름, 줄 번호 등의 기호 정보를 표시하려면 VSPerfReport 명령줄 도구가 프로파일링된 구성 요소 및 Windows 시스템 파일의 기호 파일(.*pdb*)에 액세스할 수 있어야 합니다. 기호 파일은 구성 요소가 컴파일될 때 만들어집니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요. VSPerfReport는 다음 위치에서 기호 파일을 자동으로 검색합니다.
@@ -55,7 +56,7 @@ ms.locfileid: "90809585"
  프로파일링 도구는 프로파일링 데이터 파일이 포함된 폴더 또는 구성 요소에 저장된 원래 위치에서 프로파일링하려는 구성 요소의 .*pdb* 파일을 검색합니다. **_NT_SYMBOL_PATH** 또는 **/SymbolPath** 옵션에 하나 이상의 경로를 추가하여 검색할 다른 위치를 지정할 수 있습니다. 경로를 세미콜론으로 구분합니다.
 
 ## <a name="example"></a>예제
- 다음 명령줄은 **_NT_SYMBOL_PATH** 환경 변수를 Windows 기호 서버로 설정하고 로컬 디렉터리를 **C:\Symbols**로 설정합니다.
+ 다음 명령줄은 **_NT_SYMBOL_PATH** 환경 변수를 Windows 기호 서버로 설정하고 로컬 디렉터리를 **C:\Symbols** 로 설정합니다.
 
  ```cmd
   set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols

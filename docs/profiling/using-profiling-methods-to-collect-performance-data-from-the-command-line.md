@@ -1,5 +1,6 @@
 ---
 title: 명령줄 프로파일링 방법을 사용하여 성능 데이터 가져오기
+description: 프로파일링하는 애플리케이션 유형 같이 요소에 따라 Visual Studio 프로파일링 도구 명령줄 도구 및 옵션을 선택하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779976"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723246"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>명령줄에서 프로파일링 방법을 사용하여 성능 데이터 수집
 프로파일링하는 애플리케이션의 유형, 사용하려는 프로파일링 방법, 그리고 대상 애플리케이션이 네이티브 코드로 작성되었는지 아니면 .NET Framework 코드로 작성되었는지에 따라 선택하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구 및 옵션이 달라집니다.
@@ -26,7 +27,7 @@ ms.locfileid: "74779976"
 
  프로파일러와 애플리케이션은 동시에 시작할 수도 있고 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수도 있습니다.
 
-|Task|대상 애플리케이션 유형|
+|작업|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형 애플리케이션](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [기본 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [기본 서비스](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
@@ -55,7 +56,7 @@ ms.locfileid: "74779976"
 
  프로파일러를 사용하여 대상 애플리케이션을 시작할 수 있고, 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수 있으며, 애플리케이션의 계측된 버전을 만들어 .NET Framework 메모리 데이터와 함께 상세한 타이밍 정보를 수집할 수 있습니다.
 
-|Task|대상 애플리케이션 유형|
+|작업|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형.NET Framework 애플리케이션](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
@@ -66,7 +67,7 @@ ms.locfileid: "74779976"
 
  프로파일러를 사용하여 애플리케이션을 시작할 수도 있고 애플리케이션의 실행 중인 인스턴스에 프로파일러를 연결할 수도 있습니다.
 
-|Task|대상 애플리케이션 유형|
+|작업|대상 애플리케이션 유형|
 |----------|-----------------------------|
 |**애플리케이션 시작**|-   [독립 실행형.NET Framework 애플리케이션](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [독립 실행형 기본 애플리케이션](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [기본 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [기본 서비스](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|
@@ -74,7 +75,7 @@ ms.locfileid: "74779976"
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>프로파일링 실행에 계층 상호 작용 데이터 추가
  프로파일링 실행에 계층 상호 작용 데이터를 추가하려면 명령줄 프로파일링 도구를 사용해서 특정 절차를 수행해야 합니다. [계층 상호 작용 데이터 수집](../profiling/adding-tier-interaction-data-from-the-command-line.md) 참조
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)

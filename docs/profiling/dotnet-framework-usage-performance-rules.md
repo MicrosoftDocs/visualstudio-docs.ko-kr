@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 사용 성능 규칙 | Microsoft 문서
+description: .NET Framework 사용 범주의 성능 규칙을 이해합니다. 최적화할 수 있는 특정 메서드를 식별하고 보다 일반적인 사용 패턴을 식별합니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532004"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801306"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 사용 성능 규칙
 .NET Framework 사용 범주의 성능 규칙은 최적화할 수 있는 특정 방법을 확인하고 성능 문제가 있는지 조사할 수 있는 가비지 수집 및 잠금 경합과 같은 더 일반적인 사용 패턴도 확인합니다.

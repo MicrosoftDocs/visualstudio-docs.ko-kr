@@ -1,5 +1,6 @@
 ---
 title: 출력 | Microsoft Docs
+description: Output 옵션을 사용하여 성능 세션에 대한 프로파일링 데이터 파일의 이름을 지정하는 방법을 알아봅니다. Output은 Start 옵션과 함께 사용되어야 합니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6067e13e33875be778ff59739f5511c4116937ed
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778507"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722804"
 ---
 # <a name="output"></a>출력
-**Output** 옵션은 성능 세션에 대한 프로파일링 데이터 파일의 이름을 지정합니다. **Output**은 **Start** 옵션과 함께 사용되어야 합니다.
+**Output** 옵션은 성능 세션에 대한 프로파일링 데이터 파일의 이름을 지정합니다. **Output** 은 **Start** 옵션과 함께 사용되어야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **시작:** `Method` 출력 파일 이름을 지정합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서 프로파일링 데이터 파일은 현재 디렉터리에 만들어집니다.
 
 ```cmd

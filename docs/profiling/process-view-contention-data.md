@@ -1,5 +1,6 @@
 ---
 title: 프로세스 뷰 - 경합 데이터 | Microsoft Docs
+description: 프로세스 뷰에 프로파일링 실행 중에 실행된 프로세스와 스레드에 관한 경합 데이터를 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778403"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719475"
 ---
 # <a name="process-view---contention-data"></a>프로세스 뷰 - 경합 데이터
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 경합 데이터가 표시됩니다.
@@ -25,7 +26,7 @@ ms.locfileid: "74778403"
 
  다음 표에서는 프로세스 뷰 테이블에 있는 열의 값에 대해 설명합니다.
 
-|Column|설명|
+|열|설명|
 |------------|-----------------|
 |**시작 시간**|프로파일링 시작에서 프로세스 또는 스레드 시작까지의 시간(밀리초) 또는 프로세서 주기 수입니다.|
 |**차단된 시간**|프로세스 또는 스레드의 함수 실행이 차단된 총 시간입니다.|
@@ -39,6 +40,6 @@ ms.locfileid: "74778403"
 |**이름**|프로세스 또는 스레드의 이름입니다.|
 |**고유 ID**|프로파일러에서 생성한 프로세스 또는 스레드의 고유한 식별자입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [프로세스 뷰](../profiling/process-view.md)

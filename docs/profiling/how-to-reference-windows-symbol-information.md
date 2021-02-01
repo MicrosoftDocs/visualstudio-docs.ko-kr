@@ -1,5 +1,6 @@
 ---
 title: Windows 기호 정보 참조 | Microsoft Docs
+description: Visual Studio 프로파일링 도구에서 기호 파일(.pdb)을 사용하여 프로그램 이진 파일의 함수 이름과 같은 기호 이름을 확인하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1527a9fde739ed72af5861a4863dce8e39cbaf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: af194a324840bc3e8b8e67199c7e213d7dca96c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851361"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720685"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>방법: Windows 기호 정보 참조
 Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 프로그램 바이너리의 함수 이름과 같은 기호 이름을 확인합니다. 로컬 컴퓨터에 설치된 Windows 버전에 대한 올바른 .*pdb* 파일을 자동으로 다운로드하고 업데이트하려면 다음 단계를 수행합니다.
@@ -33,15 +34,15 @@ Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 �
 
 1. 기호 파일 정보가 포함된 폴더를 만듭니다(예: C:\SymbolCache).
 
-2. **도구** 메뉴에서 **옵션**을 클릭합니다.
+2. **도구** 메뉴에서 **옵션** 을 클릭합니다.
 
      **옵션** 대화 상자가 표시됩니다.
 
-3. **디버깅** 트리를 확장하고 **기호**를 클릭합니다.
+3. **디버깅** 트리를 확장하고 **기호** 를 클릭합니다.
 
-4. **기호 파일(.pdb) 위치**에서 **Microsoft 기호 서버**를 선택합니다.
+4. **기호 파일(.pdb) 위치** 에서 **Microsoft 기호 서버** 를 선택합니다.
 
-5. **기호 서버에서 이 디렉터리로 기호 캐시**에서 다음과 같이 1단계에서 만든 폴더의 경로를 입력합니다.
+5. **기호 서버에서 이 디렉터리로 기호 캐시** 에서 다음과 같이 1단계에서 만든 폴더의 경로를 입력합니다.
 
      **C:\SymbolCache**
 

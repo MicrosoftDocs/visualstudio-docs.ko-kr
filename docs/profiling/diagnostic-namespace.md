@@ -1,5 +1,7 @@
 ---
 title: 진단 네임스페이스 | Microsoft 문서
+description: 진단 네임스페이스를 사용하여 동시성 시각화 도우미 표식을 내보냅니다. 진단 네임스페이스는 동시성 네임스페이스의 멤버입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330252"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686547"
 ---
 # <a name="diagnostic-namespace"></a>진단 네임스페이스
 `diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.
@@ -39,7 +41,7 @@ namespace diagnostic;
 
 ### <a name="enumerations"></a>열거형
 
-|이름|설명|
+|Name|설명|
 |----------|-----------------|
 |[marker_importance 열거형](../profiling/marker-importance-enumeration.md)|동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.|
 
@@ -48,5 +50,5 @@ namespace diagnostic;
 
  **네임스페이스:** 동시성
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [동시성 네임스페이스(동시성 시각화 도우미)](../profiling/concurrency-namespace-concurrency-visualizer.md)

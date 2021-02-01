@@ -1,5 +1,7 @@
 ---
 title: CPU 카운터 데이터 수집 | Microsoft Docs
+description: CPU(하드웨어) 이벤트 카운터를 사용하여 하드웨어 관련 성능 데이터를 수집하는 방법을 알아봅니다. 이 문서에는 다양한 유형의 이벤트가 나와 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851283"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801557"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 
@@ -30,9 +32,9 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 - Platform events - 특정 CPU에 연결된 CPU 이벤트입니다.
 
-  Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.
+Portable events에는 Instructions Retired 및 Non Halted Cycles 등의 일반적인 이벤트, CPU 버퍼 이벤트, 분기 이벤트, L2 캐시 이벤트가 포함됩니다. 사용 가능한 플랫폼 이벤트 카운터는 프로세서 제조업체에서 결정합니다.
 
-  이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.
+이식 가능한 카운터와 플랫폼 카운터 간에 이벤트 범주를 공유할 수 있습니다. 예를 들어 다음 데이터 범주는 두 형식에 공통적인 경우가 많습니다.
 
 - 메모리 이벤트.
 
@@ -40,7 +42,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 - 분기 이벤트.
 
-  프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.
+프로파일러에서 두 가지 방법으로 성능 카운터 데이터를 수집할 수 있습니다.
 
 - 계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.
 
@@ -48,7 +50,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>계측을 통해 프로파일링할 경우 CPU 성능 카운터 데이터를 수집하려면
 
-1. 성능 세션 **속성 페이지**에서 **CPU 카운터**를 클릭합니다.
+1. 성능 세션 **속성 페이지** 에서 **CPU 카운터** 를 클릭합니다.
 
 2. **CPU 카운터 수집** 확인란을 선택합니다.
 
@@ -57,7 +59,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 4. 수집할 각 이벤트에 대해 이벤트를 선택하고 오른쪽 화살표를 클릭하여 **선택한 카운터** 목록에 이벤트를 추가합니다.
 
     > [!NOTE]
-    > **사용 가능한 성능 카운터**는 **CPU 카운터 수집** 확인란을 선택한 경우에만 사용하도록 설정됩니다.
+    > **사용 가능한 성능 카운터** 는 **CPU 카운터 수집** 확인란을 선택한 경우에만 사용하도록 설정됩니다.
 
 ## <a name="see-also"></a>참조
 

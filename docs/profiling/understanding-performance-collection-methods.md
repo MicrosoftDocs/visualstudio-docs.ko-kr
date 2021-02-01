@@ -1,5 +1,6 @@
 ---
 title: 성능 데이터 수집 방법 이해 | Microsoft Docs
+description: 특정 방법으로 데이터를 수집하는 것이 적절한 다양한 시나리오에 관해 알아봅니다.
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3bbbef2c6f7bb2ab02731bfbac0dc60d75a3437
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250775"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722336"
 ---
 # <a name="understand-performance-collection-methods"></a>성능 데이터 수집 방법 이해
 

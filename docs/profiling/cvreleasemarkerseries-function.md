@@ -1,5 +1,7 @@
 ---
 title: CvReleaseMarkerSeries 함수 | Microsoft 문서
+description: 동시성 시각화 도우미 SDK 함수인 CvReleaseMarkerSeries(C 라이브러리)의 참조 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332194"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686456"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 함수
 표식 계열을 해제합니다. 해제한 후에 표식 계열 개체를 사용하지 마세요. 해당 개체를 사용하는 경우 애플리케이션 작동이 중단될 수 있습니다. 표식 계열을 해제하지 못하면 메모리 누수가 발생합니다.
@@ -39,5 +41,5 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="requirements"></a>요구 사항
  **헤더:** *cvmarkers.h*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

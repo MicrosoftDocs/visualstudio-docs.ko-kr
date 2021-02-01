@@ -1,5 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
+description: VSInstr 도구를 사용하여 이진 파일을 계측하는 방법과 다른 다양한 VSInstr 도구 옵션에 관해 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330500"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723116"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 도구는 이진 파일을 계측하는 데 사용됩니다. 다음 구문을 사용하여 이 도구를 호출합니다.
@@ -40,8 +41,8 @@ VSInstr [/U] filename [/options]
 |**U**|리디렉션된 콘솔 출력을 유니코드로 기록합니다. 첫 번째 옵션으로 지정해야 합니다.|
 |`@filename`|명령 옵션이 한 줄에 하나씩 포함된 지시 파일의 이름을 지정합니다.  따옴표는 사용하지 마세요.|
 |**OutputPath** `:path`|계측된 이미지의 대상 디렉터리를 지정합니다. 출력 경로를 지정하지 않으면 같은 디렉터리에서 파일 이름에 "Orig "가 추가되어 원래 이진 파일 이름이 바뀌며 이진 파일의 복사본이 계측됩니다.|
-|**Exclude:** `funcspec`|프로브를 통한 계측에서 제외할 함수 사양을 지정합니다. 함수에 프로파일링 프로브를 삽입할 때 예기치 않은 결과 또는 원치 않는 결과가 발생하는 경우 유용합니다.<br /><br /> 같은 이진 파일의 함수를 참조하는 **Exclude** 및 **Include** 옵션은 사용하지 마세요.<br /><br /> 개별 **Exclude** 옵션을 여러 개 포함하여 여러 함수 사양을 지정할 수 있습니다.<br /><br /> `funcspec`은 다음과 같이 정의됩니다.<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1>은 네이티브 코드의 경우 `::`이고 관리 코드의 경우 `.`입니다.<br /><br /> \<separator2>는 항상 `::`입니다.<br /><br /> **Exclude**는 코드 검사에서 지원됩니다.<br /><br /> 와일드 카드 문자 \*가 지원됩니다. 예를 들어 네임스페이스에서 모든 함수를 제외하려면 다음 구문을 사용합니다.<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs**를 사용하면 지정한 이진 파일의 전체 함수 이름 목록을 확인할 수 있습니다.|
-|**Include:** `funcspec`|프로브를 사용하여 계측할 이진 파일의 함수 사양을 지정합니다. 이진 파일의 기타 모든 함수는 계측되지 않습니다.<br /><br /> 개별 **Include** 옵션을 여러 개 포함하여 여러 함수 사양을 지정할 수 있습니다.<br /><br /> 같은 이진 파일의 함수를 참조하는 **Include** 및 **Exclude** 옵션은 사용하지 마세요.<br /><br /> **Include**는 코드 검사에서 지원되지 않습니다.<br /><br /> `funcspec`은 다음과 같이 정의됩니다.<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1>은 네이티브 코드의 경우 `::`이고 관리 코드의 경우 `.`입니다.<br /><br /> \<separator2>는 항상 `::`입니다.<br /><br /> 와일드 카드 문자 \*가 지원됩니다. 예를 들어 네임스페이스의 모든 함수를 포함하려면 다음 구문을 사용합니다.<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs**를 사용하면 지정한 이진 파일의 전체 함수 이름 목록을 확인할 수 있습니다.|
+|**Exclude:** `funcspec`|프로브를 통한 계측에서 제외할 함수 사양을 지정합니다. 함수에 프로파일링 프로브를 삽입할 때 예기치 않은 결과 또는 원치 않는 결과가 발생하는 경우 유용합니다.<br /><br /> 같은 이진 파일의 함수를 참조하는 **Exclude** 및 **Include** 옵션은 사용하지 마세요.<br /><br /> 개별 **Exclude** 옵션을 여러 개 포함하여 여러 함수 사양을 지정할 수 있습니다.<br /><br /> `funcspec`은 다음과 같이 정의됩니다.<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1>은 네이티브 코드의 경우 `::`이고 관리 코드의 경우 `.`입니다.<br /><br /> \<separator2>는 항상 `::`입니다.<br /><br /> **Exclude** 는 코드 검사에서 지원됩니다.<br /><br /> 와일드 카드 문자 \*가 지원됩니다. 예를 들어 네임스페이스에서 모든 함수를 제외하려면 다음 구문을 사용합니다.<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** 를 사용하면 지정한 이진 파일의 전체 함수 이름 목록을 확인할 수 있습니다.|
+|**Include:** `funcspec`|프로브를 사용하여 계측할 이진 파일의 함수 사양을 지정합니다. 이진 파일의 기타 모든 함수는 계측되지 않습니다.<br /><br /> 개별 **Include** 옵션을 여러 개 포함하여 여러 함수 사양을 지정할 수 있습니다.<br /><br /> 같은 이진 파일의 함수를 참조하는 **Include** 및 **Exclude** 옵션은 사용하지 마세요.<br /><br /> **Include** 는 코드 검사에서 지원되지 않습니다.<br /><br /> `funcspec`은 다음과 같이 정의됩니다.<br /><br /> [namespace\<separator1>] [class\<separator2>]function<br /><br /> \<separator1>은 네이티브 코드의 경우 `::`이고 관리 코드의 경우 `.`입니다.<br /><br /> \<separator2>는 항상 `::`입니다.<br /><br /> 와일드 카드 문자 \*가 지원됩니다. 예를 들어 네임스페이스의 모든 함수를 포함하려면 다음 구문을 사용합니다.<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** 를 사용하면 지정한 이진 파일의 전체 함수 이름 목록을 확인할 수 있습니다.|
 |**DumpFuncs**|지정된 이미지 내의 함수 목록을 표시합니다. 계측은 수행되지 않습니다.|
 |**ExcludeSmallFuncs**|함수를 호출하지 않는 짧은 함수인 작은 함수를 계측에서 제외합니다. **ExcludeSmallFuncs** 옵션을 사용하는 경우 계측 오버헤드가 감소하므로 계측 속도를 높일 수 있습니다.<br /><br /> 또한 작은 함수를 제외하면 .*vsp* 파일의 크기와 분석에 필요한 시간도 감소합니다.|
 |**Mark:** {**Before**\|**After**\|**Top**\|**Bottom**}`,funcname,markid`|.vsp 보고서 파일에서 데이터 범위의 시작이나 끝을 식별하는 데 사용할 수 있는 프로필 표시(보고서의 데이터를 구분하는 데 사용되는 식별자)를 삽입합니다.<br /><br /> **Before** - 대상 함수 진입 위치 바로 앞에 삽입합니다.<br /><br /> **After** - 대상 함수 종료 위치 바로 뒤에 삽입합니다.<br /><br /> **Top** - 대상 함수의 진입 위치 바로 뒤에 삽입합니다.<br /><br /> **Bottom** - 대상 함수의 각 반환 바로 앞에 삽입합니다.<br /><br /> `funcname` - 대상 함수의 이름입니다.<br /><br /> `Markid` - 프로필 표시의 식별자로 사용할 양의 정수(long)입니다.|

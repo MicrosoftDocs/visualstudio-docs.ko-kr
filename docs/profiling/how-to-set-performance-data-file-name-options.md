@@ -1,5 +1,6 @@
 ---
 title: 성능 데이터 파일 이름 옵션 설정 | Microsoft Docs
+description: 성능 세션에 대한 속성 대화 상자의 일반 페이지에서 명명 매개 변수를 변경하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851569"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722050"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 
@@ -33,11 +34,11 @@ ms.locfileid: "90851569"
 
 ## <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>성능 세션에 대한 프로파일링 데이터 파일의 명명 구문을 변경하려면
 
-1. **성능 탐색기**에서 성능 세션의 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+1. **성능 탐색기** 에서 성능 세션의 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
-2. **일반**을 클릭합니다.
+2. **일반** 을 클릭합니다.
 
-3. **보고서**에서 다음 설정을 변경합니다.
+3. **보고서** 에서 다음 설정을 변경합니다.
 
     |이름|설명|
     |-|-|

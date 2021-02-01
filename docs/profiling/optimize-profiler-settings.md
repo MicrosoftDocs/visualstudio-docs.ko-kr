@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 설정 최적화 | Microsoft Docs
+description: Visual Studio의 성능 프로파일러 및 진단 도구 창에 도구의 전반적인 성능에 영향을 주는 다양한 설정을 포함하는 방법을 알아봅니다.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400313"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722843"
 ---
 # <a name="optimizing-profiler-settings"></a>프로파일러 설정 최적화
 

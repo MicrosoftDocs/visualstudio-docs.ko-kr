@@ -1,5 +1,6 @@
 ---
 title: 동시에 여러 프로파일러 도구 사용 | Microsoft Docs
+description: 동일한 세션에서 여러 도구를 사용하여 성능 문제를 이해하는 데 도움을 주도록 설계된 성능 프로파일러를 사용하는 방법을 알아봅니다.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332038"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721179"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>동시에 여러 프로파일러 도구 사용
 

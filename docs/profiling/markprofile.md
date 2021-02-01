@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: MarkProfile 메서드는 .vsp 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 MarkProfile 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778572"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718865"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 메서드는 .*vsp* 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 `MarkProfile` 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.
@@ -35,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|매개 변수가 0보다 작거나 같습니다. 이러한 값은 예약되어 있습니다. 표시와 주석이 기록되지 않습니다.|
 |MARK_ERROR_MODE_NEVER|이 함수가 호출될 때 프로파일링 모드가 NEVER로 설정되었습니다. 표시와 주석이 기록되지 않습니다.|
@@ -59,11 +60,11 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>함수 정보
- 헤더: *VSPerf.h*에서 선언됨
+ 헤더: *VSPerf.h* 에서 선언됨
 
  가져오기 라이브러리: *VSPerf.lib*
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드에서는 MarkProfile 함수를 보여 줍니다.
 
 ```cpp
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

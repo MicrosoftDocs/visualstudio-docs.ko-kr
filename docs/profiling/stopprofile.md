@@ -1,5 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
+description: StopProfile 함수와 지정된 프로파일링 수준의 카운터를 0(끄기)으로 설정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778234"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722687"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 함수는 지정된 프로파일링 수준에 대한 카운터를 0(off)으로 설정합니다.
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  성능 데이터 수집을 적용할 수 있는 프로필 수준을 나타냅니다. 다음 **PROFILE_CONTROL_LEVEL** 열거자는 성능 데이터 수집을 적용할 수 있는 세 가지 수준 중 하나를 나타내는 데 사용될 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|전역 수준 설정은 프로파일링 실행의 모든 프로세스와 스레드에 영향을 줍니다.|
 |PROFILE_PROCESSLEVEL|프로세스 수준 설정은 지정된 프로세스의 일부인 모든 스레드에 영향을 줍니다.|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
  이 함수는 **PROFILE_COMMAND_STATUS** 열거형을 사용하여 성공 또는 실패를 나타냅니다. 반환 값은 다음 중 하나일 수 있습니다.
 
-|Enumerator|Description|
+|열거자|설명|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|프로파일링 요소 ID가 없습니다.|
 |PROFILE_ERROR_LEVEL_NOEXIST|지정된 프로파일링 수준이 없습니다.|
@@ -70,7 +71,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  가져오기 라이브러리: VSPerf.lib
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 StopProfile 메서드를 보여 줍니다. 예제에서는 StartProfile 메서드에 대한 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에서 식별된 동일한 스레드 또는 프로세스에 대해 만들어졌다고 가정합니다.
 
 ```cpp
@@ -107,5 +108,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)

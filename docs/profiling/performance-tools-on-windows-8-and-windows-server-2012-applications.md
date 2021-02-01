@@ -1,5 +1,6 @@
 ---
 title: Windows 8 및 WS 2012 앱의 성능 도구
+description: Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 성능 도구가 데이터를 수집하는 방법을 어떻게 크게 변경했는지 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807835"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719593"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구
 

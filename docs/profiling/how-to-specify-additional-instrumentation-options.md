@@ -1,5 +1,6 @@
 ---
 title: 추가 계측 옵션 지정 | Microsoft Docs
+description: Visual Studio IDE를 사용하거나 명령줄 도구를 사용하여 이진 파일을 계측하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851816"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721855"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>방법: 추가 계측 옵션 지정
 
@@ -30,15 +31,15 @@ Visual Studio IDE를 사용하거나 명령줄 도구를 사용하여 이진 파
 
 ## <a name="to-specify-additional-instrumentation-option"></a>추가적인 계측 옵션을 지정하려면
 
-1. **성능 탐색기**에서 **성능 세션**을 선택한 다음 마우스 오른쪽 단추를 클릭하고 **속성**을 클릭합니다.
+1. **성능 탐색기** 에서 **성능 세션** 을 선택한 다음 마우스 오른쪽 단추를 클릭하고 **속성** 을 클릭합니다.
 
-2. **속성 페이지**에서 **고급** 속성을 클릭합니다.
+2. **속성 페이지** 에서 **고급** 속성을 클릭합니다.
 
 3. **추가 계측 옵션** 상자에 옵션을 입력합니다.
 
      예를 들어 /CONTROL:THREAD를 사용하여 프로파일링 수준을 지정합니다. 전체 옵션 목록을 보려면 [VSInstr](../profiling/vsinstr.md)를 참조하세요.
 
-4. **확인**을 클릭합니다.
+4. **확인** 을 클릭합니다.
 
 ## <a name="see-also"></a>참조
 

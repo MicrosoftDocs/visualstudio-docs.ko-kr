@@ -1,5 +1,7 @@
 ---
 title: 코어 뷰 범례 | Microsoft 문서
+description: 테이블 형식 컨텍스트 전환 데이터 및 스레드 선택 항목을 제공하는 코어 뷰 범례에 관해 알아봅니다. 또한 컨텍스트 전환 및 성능에 관해 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553165"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720828"
 ---
 # <a name="cores-view-legend"></a>코어 뷰 범례
 코어 뷰 범례는 색 및 이름으로 각 스레드를 식별합니다. 여기에는 코어 간 컨텍스트 전환 횟수, 총 컨텍스트 전환 및 코어 간 컨텍스트 전환 비율을 보여주는 열이 포함되어 있습니다. 범례의 행은 코어 간 컨텍스트 전환 횟수를 기준으로 내림차순으로 정렬됩니다.

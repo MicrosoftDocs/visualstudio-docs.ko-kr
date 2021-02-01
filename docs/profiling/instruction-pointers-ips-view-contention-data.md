@@ -1,5 +1,6 @@
 ---
 title: IP(명령 포인터) 뷰 - 경합 데이터 | Microsoft 문서
+description: 경합 데이터의 IP 뷰를 사용하여 프로파일링 실행 시 실행되지 않도록 차단된 어셈블리 명령의 데이터를 나열하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774314"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721595"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>IP(명령 포인터) 뷰 - 경합 데이터
 경합 데이터의 IP 뷰는 프로파일링 실행 시 실행되지 않도록 차단된 어셈블리 명령에 대한 데이터를 나열합니다.
 
  다음 표에서는 명령 포인터 뷰에 있는 열의 값에 대해 설명합니다.
 
-|Column|설명|
+|열|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|이 함수에서 차단된 시간입니다.|
 |**차단된 전용 시간 비율(%)**|명령이 실행되는 동안 차단된 시간의 백분율입니다.|
@@ -39,11 +40,11 @@ ms.locfileid: "74774314"
 |**프로세스 이름**|프로세스의 이름입니다.|
 |**소스 문자 시작**|이 명령이 시작되는 소스 파일 줄에 있는 문자의 오프셋입니다.|
 |**소스 문자 끝**|이 명령이 끝나는 소스 파일 줄에 있는 문자의 오프셋입니다.|
-|**소스 파일**|명령이 포함된 소스 파일입니다.|
+|**원본 파일**|명령이 포함된 소스 파일입니다.|
 |**소스 줄 시작**|이 명령이 시작되는 소스 파일의 줄 번호입니다.|
 |**소스 줄 끝**|이 명령이 끝나는 소스 파일의 줄 번호입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)
 - [IP(명령 포인터) 뷰](../profiling/instruction-pointers-ips-view.md)
 - [IP(명령 포인터) 뷰 - 샘플링](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

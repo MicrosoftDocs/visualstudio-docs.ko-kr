@@ -1,5 +1,6 @@
 ---
 title: 네이티브 서비스에 프로파일러를 연결하여 동시성 데이터 가져오기
+description: 명령줄에서 Visual Studio 프로파일링 도구를 사용하여 네이티브(C/C++) 서비스에서 프로세스 및 스레드 동시성 데이터를 수집합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808004"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801077"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>방법: 명령줄(VSPerfCmd)을 통해 네이티브 서비스에 프로파일러를 연결하여 동시성 데이터 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 네이티브 (C/C++) 서비스에 연결하고 샘플링 방법으로 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.
@@ -29,7 +30,7 @@ ms.locfileid: "90808004"
  프로파일러가 서비스에 연결되면 데이터 수집을 일시 중지하고 다시 시작할 수 있습니다. 프로파일링 세션을 종료하려면 프로파일러가 서비스에 연결되어 있으면 안 되고 Profiler가 명시적으로 종료되어야 합니다.
 
 ## <a name="attach-the-profiler"></a>프로파일러 연결
- 프로파일러를 네이티브 서비스에 연결하려면 **VSPerfCmd/start** 및 **/attach** 옵션을 사용하여 프로파일러를 초기화하고 대상 애플리케이션에 연결합니다. **/start** 및 **/attach**와 해당 개별 옵션을 단일 명령줄에서 지정할 수 있습니다. **/globaloff** 옵션을 추가하여 대상 애플리케이션 시작 시 데이터 수집을 일시 중지할 수도 있습니다. 그런 다음 **/globalon**을 사용하여 데이터 수집을 시작합니다.
+ 프로파일러를 네이티브 서비스에 연결하려면 **VSPerfCmd/start** 및 **/attach** 옵션을 사용하여 프로파일러를 초기화하고 대상 애플리케이션에 연결합니다. **/start** 및 **/attach** 와 해당 개별 옵션을 단일 명령줄에서 지정할 수 있습니다. **/globaloff** 옵션을 추가하여 대상 애플리케이션 시작 시 데이터 수집을 일시 중지할 수도 있습니다. 그런 다음 **/globalon** 을 사용하여 데이터 수집을 시작합니다.
 
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>네이티브 서비스에 프로파일러를 연결하려면
 
@@ -39,7 +40,7 @@ ms.locfileid: "90808004"
 
     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency   /output:** `OutputFile` [`Options`]
 
-   - **/start**에는 [/output](../profiling/output.md) **:** `OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
+   - **/start** 에는 [/output](../profiling/output.md) **:** `OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
 
      **/start** 옵션과 다음 표의 모든 옵션을 함께 사용할 수 있습니다.
 
@@ -51,7 +52,7 @@ ms.locfileid: "90808004"
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | 프로파일러에 대한 액세스 권한을 부여할 계정의 선택적 도메인 및 사용자 이름을 지정합니다. |
    | [/crosssession](../profiling/crosssession.md) | 프로세스 프로파일링 기능을 다른 로그온 세션에서 사용하도록 설정합니다. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500입니다. |
+   | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** 와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500입니다. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.etl)로 수집됩니다. |
 
 3. 명령 프롬프트에서 다음 명령을 입력하여 프로파일러를 서비스에 연결합니다.
@@ -71,7 +72,7 @@ ms.locfileid: "90808004"
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|모든 프로세스에 대한 데이터 수집을 시작( **/globalon**) 또는 중지( **/globaloff**)합니다.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|프로세스 ID(`PID`)로 지정된 프로세스에 대한 데이터 수집을 시작( **/processon**) 또는 중지( **/processoff**)합니다.|
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detch](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach**는 프로세스 ID(`PID`) 또는 프로세스 이름(*ProcName*)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detch](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** 는 프로세스 ID(`PID`) 또는 프로세스 이름(*ProcName*)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach** 는 지정된 프로세스 또는 모든 프로세스(프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
 
 ## <a name="end-the-profiling-session"></a>프로파일링 세션 종료
  프로파일링 세션을 종료하려면 프로파일러가 데이터를 수집하고 있지 않아야 합니다. 서비스를 중지하거나 **VSPerfCmd /detach** 옵션을 호출하여 동시성 방법으로 프로파일링되고 있는 네이티브 서비스에서 데이터를 수집하는 작업을 중지할 수 있습니다. 그러고 나서 **VSPerfCmd /shutdown** 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다.

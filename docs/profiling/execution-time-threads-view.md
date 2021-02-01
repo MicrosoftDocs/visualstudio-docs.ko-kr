@@ -1,5 +1,7 @@
 ---
 title: 실행 시간(스레드 뷰) | Microsoft 문서
+description: 동시성 시각화 도우미의 스레드 뷰에서 실행 시간을 검토합니다. 실행 시간은 스레드가 논리 코어에서 활발히 작동하는 경우를 표시하는 세그먼트로 표현됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969916"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801480"
 ---
 # <a name="execution-time-threads-view"></a>실행 시간(스레드 뷰)
 스레드가 시스템의 논리 코어에서 활발히 작업을 수행할 경우 스레드 뷰 타임라인의 이러한 세그먼트는 실행 시간을 나타냅니다.
@@ -26,8 +28,8 @@ ms.locfileid: "62969916"
 
  실행 세그먼트를 클릭하면 동시성 시각화 도우미가 클릭 위치에 가장 가까운 샘플 스택을 표시합니다. 해당 샘플 스택의 위치는 검은색 화살표 또는 캐럿으로 표시되고 샘플 스택이 **현재** 탭에 나타납니다.
 
- 현재 뷰에서 모든 실행 세그먼트에 대한 기존 방식의 샘플링 프로필을 보려면 표시되는 시간 표시 막대 프로필에서 **실행**을 클릭합니다.
+ 현재 뷰에서 모든 실행 세그먼트에 대한 기존 방식의 샘플링 프로필을 보려면 표시되는 시간 표시 막대 프로필에서 **실행** 을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [실행 프로필 보고서](../profiling/execution-profile-report.md)
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

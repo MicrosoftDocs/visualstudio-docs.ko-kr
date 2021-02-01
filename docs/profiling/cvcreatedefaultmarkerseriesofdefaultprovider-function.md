@@ -1,5 +1,7 @@
 ---
 title: CvCreateDefaultMarkerSeriesOfDefaultProvider 함수 | Microsoft 문서
+description: 동시성 시각화 도우미 SDK 함수인 CvCreateDefaultMarkerSeriesOfDefaultProvider(C 라이브러리)의 참조 정보를 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 560ecc3d66dc2bc84d2ef301654b392aee6a42b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0802b91bb9cbbbe31cb156104bb7b5df3fda1282
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332222"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686183"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider 함수
 기본 공급자의 기본 표식 계열을 만듭니다.
@@ -42,5 +44,5 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ## <a name="requirements"></a>요구 사항
  **헤더:** *cvmarkers.h*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)

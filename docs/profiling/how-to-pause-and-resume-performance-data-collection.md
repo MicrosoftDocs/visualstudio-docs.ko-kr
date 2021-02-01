@@ -1,5 +1,6 @@
 ---
 title: 성능 데이터 수집 일시 중지 및 다시 시작 | Microsoft Docs
+description: 프로파일링 세션 페이지 창에서 프로파일링 데이터의 수집을 대화형으로 제어하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3e9cd58eb6563298a0ee38fbad0cbae5d85e57e9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851387"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723350"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>방법: 성능 데이터 수집 일시 중지 및 다시 시작
 프로파일링 세션 페이지 창에서 프로파일링 데이터의 컬렉션을 대화형으로 제어할 수 있습니다.
@@ -36,7 +37,7 @@ ms.locfileid: "90851387"
 
   - **수집을 다시 시작합니다.** 를 선택해서 일시 중지된 후 데이터 수집을 다시 시작합니다.
 
-  - **프로파일링 중지**를 선택해서 프로파일링 세션을 종료하고 보고서를 생성합니다.
+  - **프로파일링 중지** 를 선택해서 프로파일링 세션을 종료하고 보고서를 생성합니다.
 
 ## <a name="see-also"></a>참조
 - [데이터 수집 제어](../profiling/controlling-data-collection.md)

@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 성능 수집 방법 이해
+description: Visual Studio 성능 프로파일러 내의 도구에서 사용하는 데이터 수집 방법에 관해 알아봅니다.
 ms.date: 4/30/2020
 ms.topic: conceptual
 f1_keywords: ''
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
-ms.openlocfilehash: f0e24f3fc33ea456ad02bf9797b934a1a56d4492
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: e34fd78d7ff44aeffc4ca4d61c84a0a9af6747a5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238584"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722271"
 ---
 # <a name="understand-profiler-performance-collection-methods"></a>프로파일러 성능 수집 방법 이해
 

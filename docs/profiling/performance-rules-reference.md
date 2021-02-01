@@ -1,5 +1,6 @@
 ---
 title: 성능 규칙 참조 | Microsoft Docs
+description: 프로파일링 도구의 성능 규칙을 사용하여 애플리케이션 성능에 관한 추가 경고와 정보를 제공하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280226aaba40de42052d72e58928a53af53f631
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ca20a6a1ad687fde432d0b748aa8b87c823a1da2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543639"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723285"
 ---
 # <a name="performance-rules-reference"></a>성능 규칙 참조
 프로파일링 도구의 성능 규칙은 애플리케이션 성능에 대한 추가 경고 및 정보를 제공합니다. 성능 규칙은 Windows 및 프로세서 성능 카운터와 같은 출처에서 수집한 프로파일링 실행의 데이터를 분석합니다. [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 통합 개발 환경의 오류 출력 창에 규칙 메시지가 표시됩니다. 메시지는 다음 규칙 수준 중 하나로 나열됩니다.

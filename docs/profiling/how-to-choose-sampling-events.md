@@ -1,5 +1,7 @@
 ---
 title: 샘플링 이벤트 선택 | Microsoft Docs
+description: 요구 사항에 맞게 샘플 이벤트를 설정하고 샘플 간 주기 수를 설정하는 방법을 알아봅니다. 사용 가능한 이벤트에는 클록 주기 및 페이지 폴트가 포함됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851296"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801580"
 ---
 # <a name="how-to-choose-sampling-events"></a>방법: 샘플링 이벤트 선택
 기본적으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구는 프로파일링된 프로세스에 사용되는 프로세서 주기 수로 지정된 간격으로 성능 데이터를 수집합니다. 간격의 기본 주기 수는 10,000,000이며, 1GH 컴퓨터에서 약 0.01초가 걸립니다. 간격의 주기 수를 변경하고 샘플 이벤트를 변경할 수 있습니다. 다음 샘플 이벤트를 사용할 수 있습니다.
@@ -42,16 +44,16 @@ ms.locfileid: "90851296"
 
 ### <a name="to-select-a-sample-event"></a>샘플 이벤트를 선택하려면
 
-1. **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
+1. **성능 탐색기** 에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성** 을 클릭합니다.
 
-2. **속성 페이지**에서 **샘플링** 속성을 클릭합니다.
+2. **속성 페이지** 에서 **샘플링** 속성을 클릭합니다.
 
 3. **샘플 이벤트** 드롭다운 목록에서 애플리케이션 프로파일링에 사용할 샘플 이벤트를 선택합니다.
 
     > [!NOTE]
-    > **사용 가능한 성능 카운터**는 **샘플 이벤트** 드롭다운 목록에서 **성능 카운터**를 선택한 경우에만 사용하도록 설정됩니다.
+    > **사용 가능한 성능 카운터** 는 **샘플 이벤트** 드롭다운 목록에서 **성능 카운터** 를 선택한 경우에만 사용하도록 설정됩니다.
 
-4. **성능 카운터**를 선택하면 **사용 가능한 성능 카운터** 트리 뷰 컨트롤에서 특정 CPU 카운터를 선택합니다.
+4. **성능 카운터** 를 선택하면 **사용 가능한 성능 카운터** 트리 뷰 컨트롤에서 특정 CPU 카운터를 선택합니다.
 
     - **Portable Events** 노드의 카운터는 모든 형식의 프로세스에서 사용할 수 있습니다.
 

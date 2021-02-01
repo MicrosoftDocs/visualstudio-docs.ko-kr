@@ -1,5 +1,6 @@
 ---
 title: 계층 상호 작용 뷰 | Microsoft Docs
+description: 계층 상호 작용 프로파일링을 사용하여 데이터베이스와 통신하는 다중 계층 애플리케이션의 함수 실행 시간에 관한 추가 정보를 제공하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778130"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722544"
 ---
 # <a name="tier-interaction-views"></a>계층 상호 작용 뷰
 
@@ -23,6 +24,6 @@ ms.locfileid: "74778130"
 
 계층 상호 작용 뷰는 Visual Studio Enterprise에서만 사용할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [계층 상호 작용 뷰](../profiling/tier-interactions-view.md)

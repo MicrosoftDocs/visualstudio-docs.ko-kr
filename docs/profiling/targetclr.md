@@ -1,5 +1,6 @@
 ---
 title: TargetCLR | Microsoft Docs
+description: TargetCLR 옵션을 사용하여 한 애플리케이션에 두 개 이상의 CLR 버전이 로드된 경우 프로파일링할 공용 언어 런타임 버전을 지정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771608"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719814"
 ---
 # <a name="targetclr"></a>TargetCLR
 **TargetCLR** 옵션은 한 애플리케이션에 두 개 이상의 CLR 버전이 로드된 경우 프로파일링할 CLR(공용 언어 런타임) 버전을 지정합니다.
@@ -28,7 +29,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ```
 
 #### <a name="parameters"></a>매개 변수
- `ClrVersion` CLR의 버전 번호입니다. 버전 형식 **vN.N.NNNNN**을 사용합니다.
+ `ClrVersion` CLR의 버전 번호입니다. 버전 형식 **vN.N.NNNNN** 을 사용합니다.
 
 ## <a name="required-options"></a>필수 옵션
  **TargetCLR** 옵션은 **Launch** 또는 **Attach** 옵션에만 사용할 수 있습니다.
@@ -37,7 +38,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 
  **연결:** `PID` 지정된 프로세스 프로파일링을 시작합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서 TargetCLR 옵션은 CLR 버전 4.0.11003이 프로파일링되고 있는지 확인하는 데 사용됩니다.
 
 ```cmd

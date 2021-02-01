@@ -1,5 +1,6 @@
 ---
 title: VSPerf | Microsoft Docs
+description: 디바이스에 Visual Studio가 설치되어 있지 않을 때 VsPerf 명령줄 도구를 사용하여 명령줄에서 UWP 앱을 프로파일링하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c58033e89742650dc097a7469cbf62d7b6168509
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4b3d95422d3b4232d7a628f2054c7db2aa94dd6b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520369"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723077"
 ---
 # <a name="vsperf"></a>VSPerf
 **VsPerf** 명령줄 도구를 사용하면 다음을 수행할 수 있습니다.

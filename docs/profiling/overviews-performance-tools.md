@@ -1,5 +1,6 @@
 ---
 title: 개요(성능 도구) | Microsoft Docs
+description: Visual Studio 프로파일링 도구의 개념과 용어를 알아봅니다. 해당 정보를 사용하여 개발 중인 애플리케이션의 성능 특성을 측정합니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772686"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722830"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
 이 섹션에서는 개발 중인 애플리케이션의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [성능 세션 개요](../profiling/performance-session-overview.md)
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용한 성능 프로파일링의 기본 사항에 대해 알아봅니다.
@@ -56,7 +57,7 @@ ms.locfileid: "74772686"
 
  [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]에서 샘플링 데이터를 수집하고 상호 세션 애플리케이션을 프로파일링하기 위해 수행해야 하는 단계와 관련 문제에 대해 알아봅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [시작](../profiling/getting-started-with-performance-tools.md)
 - [성능 탐색기](../profiling/performance-explorer.md)

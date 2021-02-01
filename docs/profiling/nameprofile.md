@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
+description: NameProfile 함수를 사용하여 지정된 프로세스 또는 스레드에 문자열을 할당하는 방법을 알아봅니다. 또한 NameProfile API는 계측 프로파일링에만 사용할 수 있습니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541702"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722921"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 함수는 지정된 프로세스 또는 스레드에 문자열을 할당합니다.

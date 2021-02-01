@@ -1,5 +1,7 @@
 ---
 title: 성능 데이터 파일 비교 | Microsoft Docs
+description: 서로 다른 두 프로파일러 데이터 파일(.vsp 또는 .vsps)의 결과를 비교하여 차이점, 성능 저하, 성능 향상을 찾는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851244"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800462"
 ---
 # <a name="how-to-compare-performance-data-files"></a>방법: 성능 데이터 파일 비교
 비교(“Diff”) 보고서 또는 뷰를 만들어 두 가지 프로파일러 데이터 파일(.*vsp* 또는 .*vsps*)의 결과를 비교할 수 있습니다. 이 비교는 프로파일링 세션 사이에 발생한 차이점, 성능 회귀 및 향상된 기능을 보여 줍니다.
@@ -32,11 +34,11 @@ ms.locfileid: "90851244"
 
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>[성능 탐색기]에서 프로젝트에 대한 비교 파일 뷰를 만들려면
 
-1. **성능 탐색기**의 **보고서** 아래에서 비교를 위한 기준선 값으로 사용할 .*vsp* 또는 .*vsps* 보고서 파일을 선택합니다.
+1. **성능 탐색기** 의 **보고서** 아래에서 비교를 위한 기준선 값으로 사용할 .*vsp* 또는 .*vsps* 보고서 파일을 선택합니다.
 
 2. 비교할 .*vsp* 또는 .*vsps* 보고서 파일을 선택합니다.
 
-3. 선택한 파일을 마우스 오른쪽 단추로 클릭하고 **보고서 비교**를 클릭합니다.
+3. 선택한 파일을 마우스 오른쪽 단추로 클릭하고 **보고서 비교** 를 클릭합니다.
 
 ### <a name="to-compare-values"></a>값을 비교하려면
 
@@ -46,14 +48,14 @@ ms.locfileid: "90851244"
 
 3. **열** 드롭다운 목록에서 비교할 값을 선택합니다.
 
-4. (선택 사항) **Threshold**에 대한 값을 입력합니다.
+4. (선택 사항) **Threshold** 에 대한 값을 입력합니다.
 
-5. **적용**을 클릭합니다.
+5. **적용** 을 클릭합니다.
 
 ### <a name="to-compare-report-files"></a>보고서 파일을 비교하려면
 
-1. **분석** 메뉴에서 **성능 보고서 비교**를 선택합니다.
+1. **분석** 메뉴에서 **성능 보고서 비교** 를 선택합니다.
 
 2. **비교할 분석 파일을 선택합니다.** 창에서 **기본 파일** 분석 파일(.*vsp* 또는 .*vsps*) 및 **비교 파일**(.*vsp* 또는 .*vsps*)을 선택합니다.
 
-3. **확인**을 클릭합니다.
+3. **확인** 을 클릭합니다.

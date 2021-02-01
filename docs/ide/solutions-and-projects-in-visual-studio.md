@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847031"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773338"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -102,10 +102,13 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 
 대부분의 메뉴 명령은 **솔루션 탐색기** 에 있는 다양한 항목의 마우스 오른쪽 단추 클릭 상황에 맞는 메뉴에서 사용할 수 있습니다. 이러한 명령에는 프로젝트 빌드, NuGet 패키지 관리, 참조 추가, 파일 이름 바꾸기, 테스트 실행 등이 포함됩니다.
 
-> [!TIP]
-> 솔루션 탐색기를 닫은 후 다시 열려면 메뉴 모음에서 **창** > **창 레이아웃 다시 설정** 을 선택합니다.
-
 ASP.NET Core 프로젝트의 경우에는 파일이 **솔루션 탐색기** 에 중첩되는 방식을 사용자 지정할 수 있습니다. 자세한 내용은 [솔루션 탐색기에서 파일 중첩 사용자 지정](file-nesting-solution-explorer.md)을 참조하세요.
+
+> [!TIP]
+> 솔루션 탐색기를 닫은 후 다시 열려면 메뉴 모음에서 **보기** > **솔루션 탐색기** 를 선택하거나 **Ctrl**+**Alt**+**L** 을 누릅니다. 그리고, 사이드 탭을 닫은 후 해당 탭을 기본 위치로 복원하려면 메뉴 모음에서 **창** > **창 레이아웃 다시 설정** 을 선택합니다.
+
+> [!NOTE]
+> Visual Studio에 표시되는 애플리케이션 이미지와 아이콘을 보려면 [**Visual Studio 이미지 라이브러리**](https://www.microsoft.com/download/details.aspx?id=35825)를 다운로드합니다.
 
 ## <a name="see-also"></a>추가 정보
 

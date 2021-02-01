@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904003"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773349"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 
@@ -65,6 +65,9 @@ ms.locfileid: "94904003"
 
 > [!NOTE]
 > 프로젝트가 소스 제어 데이터베이스에 포함되어 있는 경우, 추가 신호 아이콘이 표시되어 체크 인 또는 체크 아웃과 같은 소스 제어 상태를 나타낼 수 있습니다.
+
+> [!TIP]
+> Visual Studio에 표시되는 더 많은 애플리케이션 이미지와 아이콘을 보려면 [**Visual Studio 이미지 라이브러리**](https://www.microsoft.com/download/details.aspx?id=35825)를 다운로드합니다.
 
 ## <a name="see-also"></a>참조
 

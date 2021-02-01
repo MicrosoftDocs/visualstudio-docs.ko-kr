@@ -1,5 +1,7 @@
 ---
 title: 동시성 시각화 도우미 SDK | Microsoft 문서
+description: 동시성 시각화 도우미 SDK를 사용하여 표식을 표시하는 코드를 계측하는 방법을 알아봅니다. 표식은 이벤트를 표시하기 위해 동시성 시각화 도우미에 표시되는 아이콘입니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037356"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720984"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
-동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
+동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식* 이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
 
 ## <a name="properties"></a>속성
  각 플래그, 범위 및 메시지에는 두 개의 속성인 범주와 중요도가 있습니다. [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자에서, 이러한 속성을 사용하여 표시되는 표식의 집합을 필터링할 수 있습니다. 또한 이러한 속성은 표식의 시각적 표시에 영향을 줍니다. 예를 들어 플래그의 크기는 중요도를 나타내는 데 사용됩니다. 또한 색은 범주를 나타내는 데 사용됩니다.
@@ -31,7 +33,7 @@ ms.locfileid: "90037356"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>C# 또는 Visual Basic 프로젝트에 SDK 지원을 추가하려면
 
-1. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **프로젝트에 SDK 추가**를 선택합니다.
+1. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **프로젝트에 SDK 추가** 를 선택합니다.
 
 2. SDK에 액세스하려는 프로젝트를 선택한 다음 **선택한 프로젝트에 SDK 추가** 단추를 선택합니다.
 
@@ -50,7 +52,7 @@ ms.locfileid: "90037356"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>C++ 또는 C 프로젝트에 SDK 지원을 추가하려면
 
-1. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **프로젝트에 SDK 추가**를 선택합니다.
+1. 메뉴 모음에서 **분석**, **동시성 시각화 도우미**, **프로젝트에 SDK 추가** 를 선택합니다.
 
 2. SDK에 액세스하려는 프로젝트를 선택한 다음 **선택한 프로젝트에 SDK 추가** 단추를 선택합니다.
 
@@ -126,4 +128,4 @@ ms.locfileid: "90037356"
 |[C++ 라이브러리 참조](../profiling/cpp-library-reference.md)|C++용 동시성 시각화 도우미 API를 설명합니다.|
 |[C 라이브러리 참조](../profiling/c-library-reference.md)|C용 동시성 시각화 도우미 API를 설명합니다.|
 |[계측](/previous-versions/hh694104(v=vs.140))|관리 코드용 동시성 시각화 도우미 API를 설명합니다.|
-|[동시성 시각화 도우미](../profiling/concurrency-visualizer.md)|동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 정보를 참조합니다.|
+|[Concurrency 시각화 도우미](../profiling/concurrency-visualizer.md)|동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 참조 정보를 제공합니다.|

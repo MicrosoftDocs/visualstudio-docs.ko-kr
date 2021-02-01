@@ -1,5 +1,6 @@
 ---
 title: 권한 설정 | Microsoft Docs
+description: 컴퓨터 관리자가 관리자 권한이 없는 사용자 또는 그룹에게 프로파일링에 필요한 보안 권한을 부여하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851829"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721998"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 
@@ -36,19 +37,19 @@ ms.locfileid: "90851829"
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>사용자 권한을 가진 사용자 계정을 만들려면
 
-1. **내 컴퓨터**를 마우스 오른쪽 단추로 클릭하고 **관리**를 클릭합니다.
+1. **내 컴퓨터** 를 마우스 오른쪽 단추로 클릭하고 **관리** 를 클릭합니다.
 
      **컴퓨터 관리** 창이 열립니다.
 
-2. **로컬 사용자 및 그룹**을 확장합니다.
+2. **로컬 사용자 및 그룹** 을 확장합니다.
 
-3. **사용자** 폴더를 마우스 오른쪽 단추로 클릭하고 **새 사용자**를 클릭합니다.
+3. **사용자** 폴더를 마우스 오른쪽 단추로 클릭하고 **새 사용자** 를 클릭합니다.
 
      **새 사용자** 대화 상자가 나타납니다.
 
 4. 만들고 있는 사용자 계정의 정보를 사용하여 이 대화 상자의 필드를 입력합니다. 암호를 지정합니다. 선택적으로 사용자에게 다음 로그온 시 암호를 변경하도록 요구하는 확인란을 선택합니다.
 
-5. **만들기**, **닫기**를 차례로 클릭합니다.
+5. **만들기**, **닫기** 를 차례로 클릭합니다.
 
      새 사용자가 관리자 권한이 없는 사용자의 그룹인 사용자 그룹에 나타납니다.
 
@@ -62,7 +63,7 @@ ms.locfileid: "90851829"
     D:\ourProject
     ```
 
-2. 폴더를 마우스 오른쪽 단추로 클릭하고**속성**을 클릭합니다.
+2. 폴더를 마우스 오른쪽 단추로 클릭하고 **속성** 을 클릭합니다.
 
      **\<folder name> 속성** 대화 상자가 나타납니다.
 
@@ -72,7 +73,7 @@ ms.locfileid: "90851829"
 
 5. **\<user name>에 대한 권한** 상자에서 **모든 권한** 확인란을 선택합니다.
 
-6. **확인**을 클릭합니다.
+6. **확인** 을 클릭합니다.
 
      그러면 5단계에서 선택한 폴더로 시작하는 공유된 폴더 트리에 대한 권한이 사용자에게 부여됩니다.
 

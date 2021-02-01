@@ -1,5 +1,6 @@
 ---
 title: 프로파일러 샘플링 방법 데이터 뷰 | Microsoft Docs
+description: 샘플링 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 관해 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772164"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719437"
 ---
 # <a name="profiler-sampling-method-data-views"></a>프로파일러 샘플링 방법 데이터 뷰
 이 섹션에서는 샘플링 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보를 제공합니다.
@@ -25,7 +26,7 @@ ms.locfileid: "74772164"
 > [!NOTE]
 > Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [요약 뷰](../profiling/summary-view-sampling-data.md)
 
  샘플 수집 시 가장 자주 실행하는 함수와 가장 많은 개별 작업을 수행하는 함수를 나열합니다.
@@ -76,5 +77,5 @@ ms.locfileid: "74772164"
 
  .NET 메모리 데이터를 포함하는 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)

@@ -1,5 +1,7 @@
 ---
 title: CPU 사용률 그래프 | Microsoft 문서
+description: 시간 경과에 따른 앱의 사용률 수준을 보여 주는 CPU 사용률 그래프에 관해 알아봅니다. 사용률은 사용 중인 논리 코어의 수로 표시됩니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b310510a87e450c0d6b83a457cd117267ce0c9b8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552878"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719021"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 사용률 그래프
 CPU 사용률 그래프에서는 시간 경과에 따른 응용 프로그램의 사용률 수준을 보여줍니다. x축은 추적의 기간을 나타내고 y축은 시스템의 논리 코어 수를 나타냅니다. 이 그래프에서는 특정 시간에 활성 상태인 코어를 구체적으로 보여주지는 않습니다. 예를 들어 특정 시간 동안 두 개의 코어가 각각 50% 용량으로 실행되는 경우 이 뷰에서는 하나의 논리 코어가 사용되고 있는 것으로 표시됩니다.
@@ -32,6 +34,6 @@ CPU 사용률 그래프에서는 시간 경과에 따른 응용 프로그램의 
 
 - 흰색은 시스템에서 사용되지 않는 논리 코어의 가용성을 나타냅니다. 병렬 처리의 기회가 더 많이 있는 경우 해당 코어를 프로세스에 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [사용률 뷰](../profiling/utilization-view.md)
 - [평균 CPU 사용률](../profiling/average-cpu-utilization.md)

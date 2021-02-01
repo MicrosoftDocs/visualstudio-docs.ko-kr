@@ -1,5 +1,6 @@
 ---
 title: 성능 탐색기 | Microsoft Docs
+description: Visual Studio 프로파일링 도구를 사용하여 개발자가 코드의 성능 관련 문제를 측정, 평가, 조정하는 방법을 알아봅니다.
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778481"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722778"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
 
@@ -32,7 +33,7 @@ ms.locfileid: "74778481"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|Task|관련 내용|
+|작업|관련 내용|
 |----------|---------------------|
 |**Windows 8 이상에 대한 기술**|[Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**프로파일링 개념 이해:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석하는 데 사용하는 개념 및 용어에 대해 알아봅니다.|[개요](../profiling/overviews-performance-tools.md)|
@@ -46,6 +47,6 @@ ms.locfileid: "74778481"
 |**프로그래밍 방식으로 프로파일링 제어:** 관리 및 네이티브 프로파일링 도구 API를 사용하여 소스 코드에서 직접 데이터 컬렉션을 제어하는 방법을 알아봅니다.|[프로파일링 도구 API](../profiling/profiling-tools-apis.md)|
 |**프로파일링 문제 해결**|[성능 도구 문제 해결](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

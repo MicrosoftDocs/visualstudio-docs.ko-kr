@@ -1,5 +1,6 @@
 ---
 title: 리소스 정보 뷰 - 경합 데이터 | Microsoft Docs
+description: 리소스 정보 뷰에 선택한 리소스에 대한 경합으로 인해 발생한 차단 이벤트의 타임라인 그래프를 표시하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 45babe50e794e0831fd0e93048b32feaf18be87a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771605"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720360"
 ---
 # <a name="resource-details-view---contention-data"></a>리소스 정보 뷰 - 경합 데이터
 리소스 정보 뷰에는 선택한 리소스에 대한 경합으로 인해 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.
@@ -37,9 +38,9 @@ ms.locfileid: "74771605"
 
 - 다음 단계 중 하나를 수행합니다.
 
-  - **축소**를 클릭하여 이전 확대/축소 수준으로 돌아갑니다.
+  - **축소** 를 클릭하여 이전 확대/축소 수준으로 돌아갑니다.
 
-  - **확대/축소 다시 설정**을 클릭하여 뷰의 전체 시간 표시 막대를 표시합니다.
+  - **확대/축소 다시 설정** 을 클릭하여 뷰의 전체 시간 표시 막대를 표시합니다.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>이벤트의 호출 스택을 보려면
 
@@ -53,7 +54,7 @@ ms.locfileid: "74771605"
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>리소스에 대한 경합 이벤트 호출 트리를 보려면
 
-- 시간 표시 막대 그래프에서 **전체**를 클릭합니다.
+- 시간 표시 막대 그래프에서 **전체** 를 클릭합니다.
 
      리소스에 대한 리소스 경합 뷰가 표시됩니다. 자세한 내용은 [리소스 경합 뷰](../profiling/resource-contentions-view-contention-data.md)를 참조하세요.
 

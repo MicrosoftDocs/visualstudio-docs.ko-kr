@@ -1,5 +1,6 @@
 ---
 title: 표식 보고서 | Microsoft 문서
+description: 표식 보고서에서 표시된 시간 프레임의 표식을 나열하는 방법과 이동 또는 확대/축소로 인해 표식이 어떻게 나타나거나 사라지는지 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64808256"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722115"
 ---
 # <a name="markers-report"></a>표식 보고서
 표식 보고서에는 표시된 기간 중의 표식이 나열됩니다.  이동이나 확대/축소 또는 레인 숨기기에 따라 표식이 나타나거나 사라질 수 있습니다. 보고서에는 각 표식에 대해 다음 정보가 포함됩니다.

@@ -1,5 +1,6 @@
 ---
 title: 동기화 시간 | Microsoft Docs
+description: 타임라인의 세그먼트를 동기화로 분류되는 차단 시간과 연결하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62965312"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719827"
 ---
 # <a name="synchronization-time"></a>동기화 시간
 타임라인의 이러한 세그먼트는 동기화로 분류되는 차단 시간과 관련이 있습니다. 스레드가 동기화에서 차단된 것으로 표시되면 이러한 것들 중 하나가 포함됩니다.
@@ -28,5 +29,5 @@ ms.locfileid: "62965312"
 
   스레드 차단 이벤트에 대한 근본적인 원인을 이해하려면 차단 호출 스택 및 프로필 보고서를 신중하게 검사합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

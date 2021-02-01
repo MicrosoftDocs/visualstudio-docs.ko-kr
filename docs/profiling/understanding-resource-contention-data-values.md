@@ -1,5 +1,6 @@
 ---
 title: 리소스 경합 데이터 값 이해 | Microsoft Docs
+description: 애플리케이션의 경쟁 스레드가 공유 리소스에 액세스하기 위해 대기해야 할 때 리소스 경합 프로파일링을 사용하여 자세한 정보를 수집하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a724c360641926bcb64552f6f26e92d3c524011
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779989"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722206"
 ---
 # <a name="understand-resource-contention-data-values"></a>리소스 경합 데이터 값 이해
 

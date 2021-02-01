@@ -1,5 +1,6 @@
 ---
 title: 선점 시간 | Microsoft Docs
+description: 선점 시간에 관해 알아보고 타임라인의 해당 세그먼트가 선점으로 분류되는 차단 시간과 연결되어 있다는 것을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935895"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719515"
 ---
 # <a name="preemption-time"></a>선점 시간
 타임라인의 이러한 세그먼트는 선점 시간으로 분류되는 차단 시간과 관련이 있습니다. 이 범주는 다음과 같은 이유 중 하나로 스레드가 해제됨을 의미합니다.
@@ -30,5 +31,5 @@ ms.locfileid: "62935895"
 
   선점된 세그먼트에 대한 도구 설명에는 선점 시간을 야기한 프로세스 또는 스레드의 이름이 표시됩니다. 그러나 인계를 받은 프로세스 또는 스레드가 선점된 기간 동안 실제로 실행되었다는 의미는 아닙니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스레드 뷰](../profiling/threads-view-parallel-performance.md)

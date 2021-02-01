@@ -1,5 +1,6 @@
 ---
 title: '연습: 프로파일러 API 사용 | Microsoft Docs'
+description: 프로파일러 API를 사용하여 계측 프로파일링 중에 수집되는 데이터 양을 제한하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779885"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723090"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 
@@ -32,10 +33,10 @@ ms.locfileid: "74779885"
  Visual Studio 프로파일러를 사용하면 데이터의 수집을 제한할 수 있습니다. 이 연습에서는 프로파일러 API를 사용하여 데이터의 수집을 제한하는 방법의 예를 제공합니다. Visual Studio 프로파일러는 애플리케이션 내에서 데이터 수집 제어에 대한 API를 제공합니다.
 
  ::: moniker range="vs-2017"
- 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.  64비트 앱의 경우 폴더는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*입니다.
+ 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll* 에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib* 는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.  64비트 앱의 경우 폴더는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* 입니다.
  ::: moniker-end
 
- 관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있습니다. 64비트 앱의 경우 폴더는 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*입니다. 자세한 내용은 [Profiler](/previous-versions/ms242704(v=vs.140))를 참조하세요.
+ 관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll* 에 있습니다. 이 DLL은 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있습니다. 64비트 앱의 경우 폴더는 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* 입니다. 자세한 내용은 [Profiler](/previous-versions/ms242704(v=vs.140))를 참조하세요.
 
 ## <a name="prerequisites"></a>사전 요구 사항
  이 연습에서는 사용자가 선택한 개발 환경이 디버깅 및 샘플링을 지원하도록 구성되었다고 가정합니다. 다음 항목에서는 이러한 필수 구성 요소의 개요를 제공합니다.
@@ -124,15 +125,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Visual Studio IDE에서 데이터를 수집하고 보려면
 
-1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러**를 가리킨 다음, **새 성능 세션**을 선택합니다.
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 엽니다. **분석** 메뉴에서 **프로파일러** 를 가리킨 다음, **새 성능 세션** 을 선택합니다.
 
-2. **성능 탐색기** 창의 **대상** 목록에 컴파일된 이진 파일을 추가합니다. **대상**을 마우스 오른쪽 단추로 클릭한 다음 **대상 이진 파일 추가**를 선택합니다. **대상 이진 파일 추가** 대화 상자에서 이진 파일을 찾은 다음 **열기**를 클릭합니다.
+2. **성능 탐색기** 창의 **대상** 목록에 컴파일된 이진 파일을 추가합니다. **대상** 을 마우스 오른쪽 단추로 클릭한 다음 **대상 이진 파일 추가** 를 선택합니다. **대상 이진 파일 추가** 대화 상자에서 이진 파일을 찾은 다음 **열기** 를 클릭합니다.
 
-3. **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측**을 선택합니다.
+3. **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측** 을 선택합니다.
 
-4. **프로파일링 시작**을 클릭합니다.
+4. **프로파일링 시작** 을 클릭합니다.
 
-    프로파일러는 이진 파일을 계측 및 실행하고 성능 보고서 파일을 만듭니다. 성능 보고서 파일은 **성능 탐색기**의 **보고서** 노드에 표시됩니다.
+    프로파일러는 이진 파일을 계측 및 실행하고 성능 보고서 파일을 만듭니다. 성능 보고서 파일은 **성능 탐색기** 의 **보고서** 노드에 표시됩니다.
 
 5. 결과 성능 보고서 파일을 엽니다.
 

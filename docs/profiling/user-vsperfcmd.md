@@ -1,5 +1,6 @@
 ---
 title: 사용자(VSPerfCmd) | Microsoft Docs
+description: User 옵션을 사용하여 프로파일링된 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정하는 방법을 알아봅니다.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbb5490ff9281a7379d74209da15a3a39595bc09
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779963"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721166"
 ---
 # <a name="user-vsperfcmd"></a>사용자(VSPerfCmd)
 **User** 옵션은 프로파일링된 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우에만 필요합니다. Windows 작업 관리자의 **프로세스** 탭에 있는 사용자 이름 열에 프로세스 소유자가 나열됩니다.
@@ -37,7 +38,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 
  **시작:** `Method` 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 **User** 옵션을 사용하는 방법을 보여 줍니다.
 
 ```cmd

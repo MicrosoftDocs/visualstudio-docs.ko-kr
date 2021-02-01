@@ -1,5 +1,7 @@
 ---
 title: .NET 메모리 데이터 뷰 | Microsoft 문서
+description: .NET 메모리 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 관한 참조 정보의 링크를 참조하세요.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779274"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801273"
 ---
 # <a name="net-memory-data-views"></a>.NET 메모리 데이터 뷰
 이 섹션에는 .NET 메모리 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [요약 뷰](../profiling/summary-view-dotnet-memory-data.md)
 
  가장 많은 메모리를 할당한 함수 및 형식을 나열합니다.
@@ -76,7 +78,7 @@ ms.locfileid: "74779274"
  프로파일링 실행에서 계측된 함수에 대한 메모리 할당 데이터를 나열합니다.
 
 ## <a name="reference"></a>참조
-- [함수 세부 정보 뷰](../profiling/function-details-view.md)
+- [함수 정보 뷰](../profiling/function-details-view.md)
 
  선택한 함수와 해당 함수를 호출한 함수 및 해당 함수가 호출한 함수의 관계에 대한 그래픽 차트를 표시합니다.
 
