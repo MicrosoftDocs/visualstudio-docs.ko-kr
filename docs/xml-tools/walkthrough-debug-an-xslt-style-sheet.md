@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351338"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925886"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>연습: XSLT 스타일시트 디버그
 
@@ -24,7 +24,7 @@ ms.locfileid: "94351338"
 이 연습을 준비하려면 먼저 두 개의 [샘플 파일](#sample-files)을 로컬 컴퓨터에 복사합니다. 하나는 스타일시트이고 하나는 스타일시트에 대한 입력으로 사용할 XML 파일입니다. 이 연습에서는 사용하는 스타일시트가 비용이 평균 book 가격 미만인 모든 book을 찾습니다.
 
 > [!NOTE]
-> XSLT 디버거는 Visual Studio의 Enterprise Edition에서만 사용할 수 있습니다.
+> XSLT 디버거는 Visual Studio의 Professional 및 Enterprise Edition에서만 사용할 수 있습니다.
 
 ## <a name="start-debugging"></a>디버깅 시작
 
