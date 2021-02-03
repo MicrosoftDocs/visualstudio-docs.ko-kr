@@ -338,8 +338,6 @@
       items:
         - name: 디버거에서 실행 중인 프로세스에 연결
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Linux에서 .NET Core 원격 디버그
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Docker 컨테이너에서 실행되는 프로세스에 연결
           href: attach-to-process-running-in-docker-container.md
     - name: 다중 스레드 앱 디버깅
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: 시간 이동 디버깅 라이브 Azure 가상 머신 앱
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Linux 디버깅
+      items:
+        - name: WSL 2에서 .NET Core 앱 디버그
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: SSH를 사용하여 Linux의 .NET Core 디버그
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: 컨테이너 도구를 사용하여 디버그 >>
+          href: ../containers/edit-and-refresh.md
     - name: 애플리케이션 종류
       items:
         - name: 특정 애플리케이션 형식 디버그
