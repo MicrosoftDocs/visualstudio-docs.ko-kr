@@ -1,5 +1,7 @@
 ---
 title: 프로파일러 명령줄 - 독립 실행형 앱 시작, 앱 통계 가져오기
+description: Visual Studio 프로파일링 도구 명령줄 도구를 사용하여 독립 실행형 앱을 시작하고 샘플링 방법을 사용하여 성능 데이터를 수집하는 방법을 알아봅니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96838b622171aa3e313dd8c241a5e316f72ff7b2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 575601f2676a8081422b029d0d7da94b6a4836ca
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327756"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883525"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 애플리케이션을 시작하여 애플리케이션 통계 수집
 이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 독립 실행형 애플리케이션을 시작하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.
@@ -26,15 +28,15 @@ ms.locfileid: "85327756"
 
  프로파일러 명령줄 도구를 사용하려면 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다. Visual Studio 명령 창을 통해 Visual Studio가 설치된 컴퓨터에서 프로파일링 도구를 실행할 수 있습니다.
 
-1. Visual Studio가 설치된 컴퓨터에서 프로파일링 도구를 실행하고 있으면 Visual Studio 명령 창에서 올바른 경로를 설정합니다. **도구** 메뉴에서 **VS 명령 프롬프트**를 선택합니다.
+1. Visual Studio가 설치된 컴퓨터에서 프로파일링 도구를 실행하고 있으면 Visual Studio 명령 창에서 올바른 경로를 설정합니다. **도구** 메뉴에서 **VS 명령 프롬프트** 를 선택합니다.
 
 > [!NOTE]
 > 프로파일링 도구에 대한 경로를 가져오려면 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다.
 
 ## <a name="start-the-application-with-the-profiler"></a>프로파일러를 사용하여 애플리케이션 시작
- 프로파일러를 사용하여 대상 애플리케이션을 시작하려면 VSPerfCmd **/start** 및 **/launch** 옵션을 사용하여 프로파일러를 초기화하고 애플리케이션을 시작합니다. **/start** 및 **/launch**와 해당 개별 옵션을 단일 명령줄에서 지정할 수 있습니다.
+ 프로파일러를 사용하여 대상 애플리케이션을 시작하려면 VSPerfCmd **/start** 및 **/launch** 옵션을 사용하여 프로파일러를 초기화하고 애플리케이션을 시작합니다. **/start** 및 **/launch** 와 해당 개별 옵션을 단일 명령줄에서 지정할 수 있습니다.
 
- **/globaloff** 옵션을 추가하여 대상 애플리케이션 시작 시 데이터 수집을 일시 중지할 수도 있습니다. 그런 다음 **/globalon**을 사용하여 데이터 수집을 시작합니다.
+ **/globaloff** 옵션을 추가하여 대상 애플리케이션 시작 시 데이터 수집을 일시 중지할 수도 있습니다. 그런 다음 **/globalon** 을 사용하여 데이터 수집을 시작합니다.
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>프로파일러를 사용하여 애플리케이션을 시작하려면
 
@@ -46,14 +48,14 @@ ms.locfileid: "85327756"
 
    - [/start](../profiling/start.md) **:sample** 옵션은 프로파일러를 초기화합니다.
 
-   - **/start**에는 [/output](../profiling/output.md) **:** `OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
+   - **/start** 에는 [/output](../profiling/output.md) **:** `OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
 
      **/start:sample** 옵션과 다음 옵션을 함께 사용할 수 있습니다.
 
    | 옵션 | 설명 |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다. |
+   | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** 와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 프로파일링 중에 수집할 ETW(Windows용 이벤트 추적) 이벤트를 지정합니다. ETW 이벤트는 별도의 파일(.*etl*)로 수집됩니다. |
 
 3. 대상 애플리케이션을 시작합니다. 입력: **VSPerfCmd /launch:** `appName` [`Options`] [`Sample Event`]
@@ -85,7 +87,7 @@ ms.locfileid: "85327756"
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|모든 프로세스에 대한 데이터 수집을 시작( **/globalon**) 또는 중지( **/globaloff**)합니다.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|프로세스 ID(`PID`)로 지정된 프로세스에 대한 데이터 수집을 시작( **/processon**) 또는 중지( **/processoff**)합니다.|
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detch](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach**는 `PID` 또는 프로세스 이름(ProcName)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 지정된 프로세스 또는 모든 프로세스(특정 프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detch](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** 는 `PID` 또는 프로세스 이름(ProcName)으로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach** 는 지정된 프로세스 또는 모든 프로세스(특정 프로세스가 지정되지 않은 경우)에 대한 데이터 수집을 중지합니다.|
 
 ## <a name="end-the-profiling-session"></a>프로파일링 세션 종료
  프로파일링 세션을 종료하려면 프로파일러가 프로파일링된 프로세스에 연결되어 있으면 안 되고 프로파일러가 명시적으로 종료되어야 합니다. 애플리케이션을 닫거나 **VSPerfCmd /detach** 옵션을 호출하여 샘플링 방법으로 프로파일링된 애플리케이션에서 프로파일러를 분리할 수 있습니다. 그러고 나서 **VSPerfCmd /shutdown** 옵션을 호출하여 프로파일러를 끄고 프로파일링 데이터 파일을 닫습니다. **VSPerfClrEnv /off** 명령은 프로파일링 환경 변수를 지웁니다.

@@ -10,12 +10,12 @@ user.type: subscriber
 tags: sign-in
 subscription.type: cloud,
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: e3f76bcfe227ecb4093650c99d179a05b1581a03
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: acd8d4c766dab444f316a534056d89cc37419651
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916138"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541199"
 ---
 ## <a name="how-can-i-change-the-sign-in-address-on-my-visual-studio-cloud-subscription"></a>내 Visual Studio 클라우드 구독에서 로그인 주소를 어떻게 변경할 수 있나요?
 
@@ -27,5 +27,4 @@ ms.locfileid: "96916138"
 0. 원하는 대로 전자 메일 주소를 변경합니다.
 0. **저장** 을 클릭합니다.
 
-> [!NOTE]
-> 이렇게 해도 관리 포털에 로그인하는 데 사용하는 전자 메일 주소는 변경되지 않습니다.
+참고: 이렇게 해도 관리 포털에 로그인하는 데 사용하는 전자 메일 주소는 변경되지 않습니다.

@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204893"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224355"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>프로세스에 연결하여 SSH를 이용해 Linux에서 .NET Core 디버그
 
-Visual Studio 2017부터 SSH를 통해 로컬 또는 원격 Linux 배포에서 실행되는 .NET Core 프로세스에 연결할 수 있습니다. 이 문서에서는 디버깅을 설정하는 방법과 디버그하는 방법을 설명합니다. Docker 컨테이너를 사용하는 디버깅 시나리오의 경우에는 [Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md)을 참조하세요.
+Visual Studio 2017부터 SSH를 통해 로컬 또는 원격 Linux 배포에서 실행되는 .NET Core 프로세스에 연결할 수 있습니다. 이 문서에서는 디버깅을 설정하는 방법과 디버그하는 방법을 설명합니다. Docker 컨테이너를 사용하는 디버깅 시나리오는 [Docker 컨테이너에서 실행되는 프로세스에 연결](../debugger/attach-to-process-running-in-docker-container.md) 및 [컨테이너 도구](../containers/edit-and-refresh.md) 문서를 참조하세요. 프로세스에 연결하지 않고 Visual Studio의 WSL 2에서 Linux를 디버그하려면 [Visual Studio를 사용하여 WSL 2에서 .NET Core 앱 디버그](../debugger/debug-dotnet-core-in-wsl-2.md)를 참조하세요.
 
 ## <a name="prerequisites"></a>사전 요구 사항
 

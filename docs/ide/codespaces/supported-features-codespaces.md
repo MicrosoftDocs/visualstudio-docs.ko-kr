@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696526"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251442"
 ---
 # <a name="supported-visual-studio-features-preview"></a>지원되는 Visual Studio 기능(미리 보기)
 
@@ -73,6 +73,7 @@ IntelliSense, 코드 탐색, 진단 및 제안과 같은 스마트 언어 기능
 아직 사용할 수 없음:
 
 * UI 디자이너 - WinForms, WPF 및 리소스 디자이너
+* WinForms 및 WPF 프로젝트 앱 캐스팅은 기능 플래그에서만 사용할 수 있음
 * Visual Basic 및 F# 프로젝트
 * .NET Framework 대상 프로젝트
 * Docker Compose 프로젝트
@@ -108,7 +109,7 @@ IntelliSense, 코드 탐색, 진단 및 제안과 같은 스마트 언어 기능
 
 codespace에 연결된 Visual Studio를 사용하는 경우 로컬로 작업할 때와 동일한 접근성 기능을 사용할 수 있습니다.
 
-* 소스 제어 - 새로운 [통합 Git 환경](../git-with-visual-studio.md)을 통해 전체 Git을 지원합니다.
+* 소스 제어 - 새로운 [통합 Git 환경](../git-with-visual-studio.md)을 통해 전체 Git을 지원합니다. codespace에서 Git 하위 모듈을 복제하려면 터미널에서 `git submodule update`를 실행해야 할 수 있습니다.
 * 접근성 - 디버그된 앱의 appcasting에 액세스할 수 없는 보조 기술의 한 가지 알려진 문제가 있습니다. 해당 제한 사항 외에 로컬 Visual Studio 환경에 아직 존재하지 않는 다른 호환성 문제가 있다고 생각하지 않습니다. 버그를 발견하면 [Developer Community](https://aka.ms/feedback/report?space=8)에서 이슈를 제출하여 알려 주세요.
 * 게시 - GitHub Actions를 통한 Azure로의 게시는 지원됩니다.
 * 연결된 서비스 - App Insights, KeyVault, Storage, SQL, Redis, Cosmos, openAPI 및 gRPC는 부분적으로 지원됩니다.

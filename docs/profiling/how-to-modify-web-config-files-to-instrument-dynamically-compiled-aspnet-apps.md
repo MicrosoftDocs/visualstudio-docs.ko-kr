@@ -1,5 +1,6 @@
 ---
 title: Web.Config 파일 - 동적 ASP.NET 앱 계측 및 프로파일링
+description: Visual Studio 프로파일링 도구를 사용하여 동적으로 컴파일된 ASP.NET 웹 애플리케이션에 대한 타이밍 및 메모리 작업 데이터를 수집하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809598"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883482"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 web.config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 애플리케이션 프로파일링
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.
@@ -27,7 +28,7 @@ ms.locfileid: "90809598"
 
  *web.config* 파일의 루트는 **configuration** 요소입니다. 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션을 계측 및 프로파일링하려면 다음 요소를 추가하거나 수정해야 합니다.
 
-- **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase**가 포함됩니다.
+- **configuration/runtime/assemblyBinding/dependentAssembly** 요소 - 프로파일링을 제어하는 Microsoft.VisualStudio.Enterprise.ASPNetHelper 어셈블리를 식별합니다. **dependentAssembly** 요소에는 두 개의 자식 요소인 **assemblyIdentity** 및 **codeBase** 가 포함됩니다.
 
 - **configuration/system.web/compilation** 요소 - 대상 어셈블리에 대한 프로파일러 사후 처리 컴파일 단계를 식별합니다.
 

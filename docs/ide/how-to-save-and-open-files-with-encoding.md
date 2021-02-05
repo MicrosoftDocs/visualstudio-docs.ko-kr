@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597095"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104281"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>방법: 인코딩을 사용하여 파일 저장 및 열기
 
@@ -39,6 +39,9 @@ ms.locfileid: "95597095"
      파일을 다른 운영 체제의 사용자와 교환하려는 경우 이 옵션이 유용합니다.
 
      알고 있는 특정 방법으로 인코딩된 파일을 사용하려면 파일을 열 때 해당 인코딩을 사용하도록 Visual Studio에 알릴 수 있습니다. 사용할 방법은 파일이 프로젝트에 포함되는지에 따라 달라집니다.
+
+> [!NOTE]
+> 인코딩을 사용하여 프로젝트 파일을 저장하려는 경우 프로젝트를 언로드한 다음에야 **다른 이름으로 파일 저장** 옵션을 사용할 수 있습니다.
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>프로젝트에 포함된 인코딩된 파일을 열려면
 

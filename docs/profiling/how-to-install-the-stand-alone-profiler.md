@@ -1,5 +1,7 @@
 ---
 title: 독립 실행형 프로파일러 설치 | Microsoft Docs
+description: Visual Studio를 설치하지 않고 실행할 수 있는 독립 실행형 프로파일러를 설치하는 방법을 알아봅니다. Visual Studio를 설치하지 않아야 하는 경우가 있습니다.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8f13edc60a2c05d50e2118e24344bf9d475e3f5f
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851153"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883620"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>방법: 독립 실행형 프로파일러 설치
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]은(는) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 설치하지 않고 실행할 수 있는 명령줄 기반 독립 실행형 프로파일러를 제공합니다. 이 경우는 컴퓨터에 설치된 개발 환경이 없거나 설치할 수 없는 경우에 발생합니다. 예를 들어 프로덕션 웹 서버에 개발 환경을 설치하면 안 됩니다.
@@ -31,12 +33,12 @@ ms.locfileid: "90851153"
 
 1. 성능 도구를 다운로드하고 실행한 독립 실행형 프로필 설치 관리자(*vs_standaloneprofiler.exe*)를 찾습니다.
 
-2. *vsinstr.exe*의 경로를 시스템 경로에 추가합니다.
+2. *vsinstr.exe* 의 경로를 시스템 경로에 추가합니다.
 
    > [!NOTE]
    > 프로파일링 도구에 대한 경로를 가져오려면 [명령줄 도구의 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요. 64비트 컴퓨터에서는 도구의 64비트 및 32비트 버전을 둘 다 사용할 수 있습니다. 프로파일러 명령줄 도구를 사용하려면 도구 경로를 명령 프롬프트 창의 PATH 환경 변수에 추가하거나 명령 자체에 추가해야 합니다.
 
-3. 명령 프롬프트에서 **VSInstr**을 입력합니다.
+3. 명령 프롬프트에서 **VSInstr** 을 입력합니다.
 
    > [!NOTE]
    > vsinstr.exe에 대한 사용 정보가 표시되면 모든 것이 올바르게 설정된 것입니다. vsinstr.exe를 나타내는 오류가 표시되거나 해당 종속성 중 하나가 없는 경우 2단계에 설명된 대로 경로를 정확하게 설정했는지 확인합니다.
