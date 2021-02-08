@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837712"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 로컬 변수와 같은 스택 프레임과 연결 된 속성에 대 한 열거자를 만듭니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80719904"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumProperties ( 
+HRESULT EnumProperties ( 
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,
    UINT                      nRadix,
    REFIID                    refiid,
@@ -39,7 +39,7 @@ HRESULT EnumProperties ( 
 ```
 
 ```csharp
-int EnumProperties ( 
+int EnumProperties ( 
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,
    uint                        nRadix,
    ref Guid                    refiid,
@@ -68,13 +68,13 @@ int EnumProperties ( 
 `ppEnum`\
 제한이 원하는 속성의 목록을 포함 하는 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 단일 호출로 선택한 모든 속성을 검색할 수 있도록 허용 하므로 [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 및 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 순차적으로 호출 하는 것 보다 빠릅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839125"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부
   사용자 고유의 프로젝트 항목 형식을 만들어 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 sharepoint 사이트에 대 한 사용자 지정 작업을 만들기 위해 SharePoint 프로젝트에 추가할 수 있는 프로젝트 항목을 만듭니다. 사용자 지정 작업은 SharePoint 사이트의 **사이트 작업** 메뉴에 메뉴 항목을 추가 합니다.
@@ -49,7 +49,7 @@ ms.locfileid: "96915273"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -334,7 +334,7 @@ ms.locfileid: "96915273"
 
 13. **확인** 단추를 선택합니다.
 
-14. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
+14. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
 
 15. CustomActionProjectItem 프로젝트에 대 한 빌드 출력 폴더에 CustomActionProjectItem 파일이 포함 되어 있는지 확인 합니다.
 
@@ -385,7 +385,7 @@ ms.locfileid: "96915273"
 
      이 바로 가기 메뉴를 사용 하 여 개발자에 게 사용자 지정 작업을 위한 디자이너 표시와 같은 추가 옵션이 나 명령을 제공할 수 있습니다.
 
-13. 메뉴 모음에서 출력 **보기** 를 선택  >  **Output** 합니다.
+13. 메뉴 모음에서 출력 **보기** 를 선택  >  합니다.
 
      **출력** 창이 열립니다.
 

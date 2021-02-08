@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c368ab-640d-4b5b-9f74-810dc9364d8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24eac6d1dee8e76caf70fed9071bd1ae7412fdc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181197e99e33be7ac07514ad1a67dac72335a374
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840381"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 포트 공급자 이름을 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80724584"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetPortSupplierName( 
+HRESULT GetPortSupplierName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetPortSupplierName( 
+int GetPortSupplierName( 
    out string pbstrName
 );
 ```
@@ -43,8 +43,8 @@ int GetPortSupplierName( 
 `pbstrName`\
 제한이 포트 공급자의 이름을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

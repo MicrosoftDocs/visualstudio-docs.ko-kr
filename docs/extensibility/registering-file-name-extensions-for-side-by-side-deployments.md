@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c66413890f0aaa08e09a291f5bf31a44e7c24706
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: a457a3848917eff3d3722a8e72f0b0b720c0b43b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837001"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Side-by-side 배포에 대 한 파일 이름 확장명 등록
 Side-by-side 환경에 배포 된 Vspackage의 경우 파일 이름 확장명을 등록 하 여 올바른 버전의에 파일을 연결 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 버전별 파일 이름 확장명을 사용 하지 않는 한 등록을 통해 사용자는 적절 한 버전의에서 프로젝트 및 프로젝트 항목 파일을 열 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [파일 이름 확장명 정보](../extensibility/about-file-name-extensions.md) 파일 이름 확장명을 등록 하는 방법에 대해 설명 합니다.
 
 - [파일 이름 확장명에 대 한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md) 특정 파일 이름 확장명을 열고 편집할 수 있는 응용 프로그램을 등록 하는 방법에 대 한 정보를 제공 합니다.

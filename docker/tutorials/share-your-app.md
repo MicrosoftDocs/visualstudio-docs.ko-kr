@@ -4,17 +4,17 @@ description: Docker Hub 레지스트리를 사용하여 Docker 이미지를 공�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841707"
 ---
 # <a name="share-your-app"></a>앱 공유
 
@@ -64,7 +64,7 @@ ms.locfileid: "89485537"
     docker push <username>/getting-started
     ```
 
-    명령줄 대신 Docker 뷰의 **이미지** 섹션에서 이미지 태그를 마우스 오른쪽 단추로 클릭하고 **푸시...** 를 선택한 다음 **레지스트리 연결...** 을 선택하여 **Docker Hub**를 수행할 수도 있습니다.
+    명령줄 대신 Docker 뷰의 **이미지** 섹션에서 이미지 태그를 마우스 오른쪽 단추로 클릭하고 **푸시...** 를 선택한 다음 **레지스트리 연결...** 을 선택하여 **Docker Hub** 를 수행할 수도 있습니다.
 
 ## <a name="run-the-image-on-a-new-instance"></a>새 인스턴스에서 이미지 실행
 

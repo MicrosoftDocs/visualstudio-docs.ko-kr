@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a6f9658608006c792f8cc295a9a8d2acc96a5c4
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: afba05f2dd51dbdcdfcbc155077cb28259888738
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839640"
 ---
 # <a name="legacy-language-service-features-2"></a>레거시 언어 서비스 기능 2
 다음 항목에서는 사용자가 제공할 수 있는 레거시 언어 서비스 기능 중 일부를 나열 합니다.

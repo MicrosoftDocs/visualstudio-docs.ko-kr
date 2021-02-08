@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840368"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 이 인터페이스는 SDM (세션 디버그 관리자)에 대 한 포트를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -32,7 +32,7 @@ IDebugPortSupplier2 : IUnknown
 사용자 지정 포트 공급자는이 인터페이스를 구현 하 여 포트 공급자를 나타냅니다.
 
 ## <a name="notes-for-callers"></a>호출자 참고 사항
-포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들면 다음과 같습니다.
+포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들어:
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -60,7 +60,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugPortSupplier2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|포트 공급자 이름을 가져옵니다.|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|포트 공급자 식별자를 가져옵니다.|
@@ -80,7 +80,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

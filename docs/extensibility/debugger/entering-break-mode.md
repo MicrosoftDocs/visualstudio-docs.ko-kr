@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840654"
 ---
 # <a name="enter-break-mode"></a>중단 모드로 전환
 다음 정보는 함수를 한 단계씩 실행 한 후 중단점에 커서를 포함 하는 소스 코드 줄을 실행 하거나 중단점까지 실행 한 후에 발생 하는 프로세스에 대해 설명 합니다.

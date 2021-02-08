@@ -4,17 +4,17 @@ description: Docker 이미지의 이미지 계층을 검사하고 관리하는 �
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: eae21a729f30a0c77fa52e5774a2f5157286dab1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837959"
 ---
 # <a name="image-layering"></a>이미지 계층화
 

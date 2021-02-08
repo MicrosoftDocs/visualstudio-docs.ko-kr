@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836919"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 함수
 이 함수는 검사할 디렉터리 목록이 지정 된 경우 소스 제어에 저장 되는 디렉터리 및 파일 (옵션)을 결정 합니다.
@@ -25,7 +25,7 @@ ms.locfileid: "80700561"
 ## <a name="syntax"></a>구문
 
 ```cpp
-SCCRTN SccPopulateDirList(
+SCCRTN SccPopulateDirList(
    LPVOID        pContext,
    LONG          nDirs,
    LPCSTR*       lpDirPaths,
@@ -60,10 +60,10 @@ SCCRTN SccPopulateDirList(
 
 진행 디렉터리 처리 방법을 제어 하는 값의 조합입니다. 가능한 값에 대 한 [특정 명령에서 사용 하는 bitflags](../extensibility/bitflags-used-by-specific-commands.md) 의 "PopulateDirList flags" 섹션을 참조 하세요.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|작업을 완료 했습니다.|
 |SCC_E_UNKNOWNERROR|오류가 발생했습니다.|
@@ -71,7 +71,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>설명
  소스 제어 리포지토리에 실제로 있는 디렉터리 및 파일 이름 (선택 사항)만 콜백 함수에 전달 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [특정 명령에 사용되는 Bitflag](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)

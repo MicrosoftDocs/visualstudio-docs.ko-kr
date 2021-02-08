@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837296"
 ---
 # <a name="properties-window-overview"></a>속성 창 개요
 **속성** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에서 사용할 수 있는 두 가지 주요 windows 형식에서 선택한 개체의 속성을 표시 하는 데 사용 됩니다. 이러한 두 가지 유형의 windows는 다음과 같습니다.
@@ -50,6 +50,6 @@ ms.locfileid: "97875897"
 
  에 대 한 자세한 내용은 `IDispatch` MSDN library를 참조 하십시오.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [속성 확장](../../extensibility/internals/extending-properties.md)
 - [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)

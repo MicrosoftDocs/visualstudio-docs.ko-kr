@@ -4,17 +4,17 @@ description: Cloud Native Computing Foundation 프로젝트를 사용하여 오�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f93185641a0814797b66eae90714e04cac83f7e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841655"
 ---
 # <a name="whats-next"></a>새로운 기능
 
@@ -25,7 +25,7 @@ ms.locfileid: "89176791"
 
 프로덕션 환경에서 컨테이너를 실행하는 것은 매우 어렵습니다. 머신에 로그인하지 않고 `docker run` 또는 `docker-compose up`만 실행하고 싶을 수도 있습니다. 이유는 무엇입니까? 컨테이너 작동이 중단되면 어떻게 될까요? 여러 머신에 걸쳐 스케일링하는 방법은 무엇일까요? 컨테이너 오케스트레이션을 통해 이 문제를 해결할 수 있습니다. Kubernetes, Swarm, Nomad, AKS와 같은 도구는 모두 조금씩 다른 방식으로 이 문제의 해결을 지원합니다.
 
-일반적으로 **예상 상태**를 받는 “관리자”가 있다고 가정합니다. 이 상태는 “웹앱 인스턴스 2개를 실행하고 포트 80을 노출하려고 합니다.”일 수 있습니다. 관리자는 클러스터의 모든 머신을 확인하고 “작업자” 노드에 작업을 위임합니다. 관리자는 컨테이너 종료 등의 변경 내용을 감시하고 **실제 상태**가 예상 상태를 반영하게 합니다.
+일반적으로 **예상 상태** 를 받는 “관리자”가 있다고 가정합니다. 이 상태는 “웹앱 인스턴스 2개를 실행하고 포트 80을 노출하려고 합니다.”일 수 있습니다. 관리자는 클러스터의 모든 머신을 확인하고 “작업자” 노드에 작업을 위임합니다. 관리자는 컨테이너 종료 등의 변경 내용을 감시하고 **실제 상태** 가 예상 상태를 반영하게 합니다.
 
 ## <a name="cloud-native-computing-foundation-projects"></a>Cloud Native Computing Foundation 프로젝트
 

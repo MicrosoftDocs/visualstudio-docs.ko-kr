@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27b9963db54d939b3d509da451478c20dbe0e7d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837465"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
 태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.
@@ -35,5 +35,5 @@ ms.locfileid: "80712579"
 ## <a name="remarks"></a>설명
  [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에이 값이 포함 되어 있으면 <xref:System.Threading.Tasks.Task.Status%2A> 속성은을 반환 합니다 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

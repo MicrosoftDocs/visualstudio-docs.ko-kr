@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10528e57137f8605e7f140d4ab8d4a3399029a5f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: d0ed72efb383e216d5998c2231a472b8d29f9ec4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837452"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 클래스-내부 멤버
 이 문서에서는 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 내부 멤버에 대해 설명 합니다. 이 클래스에 대 한 일반 정보는 <xref:System.Threading.Tasks.TaskScheduler> 참조 문서를 참조 하세요.
@@ -36,11 +36,11 @@ ms.locfileid: "96996008"
        extends System.Object
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 ### <a name="methods"></a>메서드
 
-|속성|설명|
+|속성|Description|
 |----------|-----------------|
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|모든 예약 된 작업의 배열을 검색 합니다.|
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|현재 활성 상태인 모든 개체의 배열을 검색 <xref:System.Threading.Tasks.TaskScheduler> 합니다.|

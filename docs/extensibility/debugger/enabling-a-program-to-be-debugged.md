@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9dd31a9ff81493d0a315efc0ce0b607af0c6e422
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840667"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>디버깅할 프로그램 사용
 디버그 엔진 (DE)이 프로그램을 디버깅 하려면 먼저 DE를 시작 하거나 기존 프로그램에 연결 해야 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [포트 가져오기](../../extensibility/debugger/getting-a-port.md) 프로그램을 디버그할 수 있도록 첫 번째 단계로 포트를 가져오는 방법에 대해 설명 합니다.
 
  [프로그램 등록](../../extensibility/debugger/registering-the-program.md) 프로그램을 디버그할 수 있도록 하는 다음 단계에 대해 설명 합니다. 포트를 사용 하 여 등록 합니다. 등록 한 후에는 연결 또는 JIT (just-in-time) 디버깅 프로세스를 통해 프로그램을 디버그할 수 있습니다.

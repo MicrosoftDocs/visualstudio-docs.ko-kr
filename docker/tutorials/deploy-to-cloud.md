@@ -4,17 +4,17 @@ description: 호스팅을 위해 클라우드 서비스에 Docker 앱을 배포�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 661f9f6833b5ac5d42aacde7f228b042bef00bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3167dd58a593a426644c3658fbd660f517e10b39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837985"
 ---
 # <a name="deploy-to-the-cloud"></a>클라우드에 배포
 
@@ -59,7 +59,7 @@ ms.locfileid: "89176859"
 
    ![해당 ACI 컨텍스트에서 실행되는 컨테이너](media/contextcontainer.png)
 
-1. 모두 제대로 작동하는지 확인하려면 실행 중인 컨테이너를 마우스 오른쪽 단추로 클릭하고 **브라우저에서 보기**를 선택할 수 있습니다.
+1. 모두 제대로 작동하는지 확인하려면 실행 중인 컨테이너를 마우스 오른쪽 단추로 클릭하고 **브라우저에서 보기** 를 선택할 수 있습니다.
 
    ![공용 IP를 사용하는 ACI의 컨테이너](media/containerinaci.png)
 
@@ -77,7 +77,7 @@ ms.locfileid: "89176859"
    docker exec -it distracted-jackson sh
    ```
 
-1. 마지막으로, 작업 공간을 정리하고 테스트 컨테이너가 계속 실행되어 요금이 부과되는 경우를 방지하려면 실행 중인 컨테이너를 마우스 오른쪽 단추로 클릭하고 **제거**를 선택합니다.
+1. 마지막으로, 작업 공간을 정리하고 테스트 컨테이너가 계속 실행되어 요금이 부과되는 경우를 방지하려면 실행 중인 컨테이너를 마우스 오른쪽 단추로 클릭하고 **제거** 를 선택합니다.
 
 ## <a name="recap"></a>요약
 

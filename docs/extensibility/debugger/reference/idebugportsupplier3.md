@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840238"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 호출자는이 인터페이스를 사용 하 여 디버거 호출 사이에서 포트 공급자가 포트를 디스크에 기록 하 여 유지할 수 있는지 여부를 확인 한 다음 해당 유지 포트의 목록을 가져올 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortSupplier3 : IDebugPortSupplier2
@@ -37,7 +37,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스에서 상속 된 메서드 외에도이 인터페이스는 다음을 지원 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|포트 공급자가 디버거 호출 사이에 포트를 디스크에 기록 하 여 유지할 수 있는지 여부를 반환 합니다.|
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|이 포트 공급자가 디스크에 쓴 모든 포트를 열거 하는 데 사용할 수 있는 개체를 반환 합니다.|
@@ -54,6 +54,6 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

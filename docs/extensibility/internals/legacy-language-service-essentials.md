@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a96b17fbb4caca92124732593da8982f07349155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839692"
 ---
 # <a name="legacy-language-service-essentials"></a>레거시 언어 서비스 필수 항목
 프로그래밍 언어를 Visual Studio에 통합 하려면 언어 서비스를 제공 해야 합니다. 이 항목에서는 레거시 언어 서비스에서 사용할 수 있는 기능에 대해 설명 합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "98205153"
 
  레거시 언어 서비스는 다음과 같은 기능을 제공 합니다.
 
-|기능|설명|
+|기능|Description|
 |-------------|-----------------|
 |구문 색 지정|편집기 보기에서 언어의 여러 요소에 대해 서로 다른 색과 글꼴 스타일을 표시 하도록 합니다. 이러한 구분을 통해 파일을 보다 쉽게 읽고 편집할 수 있습니다.<br /><br /> 일반 정보 [는 레거시 언어 서비스의 구문 색](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)지정을 참조 하세요.<br /><br /> MPF (managed package framework)의이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 구문 색 색상화](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)를 참조 하세요.|
 |문 완성|사용자가 입력을 시작한 문이나 키워드를 완료 합니다. 문 완성 기능을 사용 하면 입력이 줄어들고 오류가 발생할 가능성이 더 적기 때문에 어려운 문을 더 쉽게 입력할 수 있습니다.<br /><br /> 일반 정보는 [레거시 언어 서비스의 문 완성](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)을 참조 하세요.<br /><br /> MPF에서이 기능에 대 한 자세한 내용은 [레거시 언어 서비스의 단어 완성](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)을 참조 하세요.|
@@ -44,7 +44,7 @@ ms.locfileid: "98205153"
 
  다음 기능은 프로그래밍 언어에 대 한 지원과 관련이 있지만 언어 서비스의 일부가 아닙니다.
 
-| 기능 | 설명 |
+| 기능 | Description |
 |-----------------------| - |
 | 식 계산기 | 는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 중단점의 유효성을 검사 하 고 **자동** 디버그 창에 표시할 식의 목록을 제공 하 여 디버거를 지원 합니다.<br /><br /> 자세한 내용은 [디버깅을 위한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)을 참조 하세요. |
 | 기호 검색 도구 | **개체 브라우저**, **클래스 뷰**, **호출 브라우저** 를 지원 하 고 **기호 결과를 찾습니다**. |

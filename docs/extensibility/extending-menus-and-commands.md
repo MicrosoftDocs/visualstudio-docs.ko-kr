@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4466a180923c85461ede59102b346caf70fd064b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842198"
 ---
 # <a name="extend-menus-and-commands"></a>메뉴 및 명령 확장
 명령은 Visual Studio에 작업 및 프로세스를 추가 하는 방법입니다. 대부분의 경우 명령이 메뉴 또는 도구 모음에 표시 됩니다. VSPackage 프로젝트 템플릿은 매우 기본적인 명령을 구현 하는 방법을 보여 줍니다. 약간 더 길고 기본 구현에 대해서는 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
@@ -30,7 +30,7 @@ ms.locfileid: "96994604"
 
  다음 항목에서는 다양 한 종류의 명령, 메뉴 및 도구 모음을 추가 하는 방법에 대해 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 최상위 Visual Studio 메뉴 모음에 메뉴를 추가 하는 방법을 설명 합니다.
 
 - [메뉴 항목에 바로 가기 키 바인딩](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) 메뉴 항목에 바로 가기 키 (예: CTRL + 3)를 추가 하는 방법을 설명 합니다.

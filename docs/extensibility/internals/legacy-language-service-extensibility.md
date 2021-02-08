@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 313d1d7bb74ccb456173474f7f0e3140814755bd
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a6a886cce4140ed31fa7d472de7e78a42d810d49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839653"
 ---
 # <a name="legacy-language-service-extensibility"></a>레거시 언어 서비스 확장성
 언어 서비스는 IDE에서 소스 코드를 편집 하는 언어 관련 지원을 제공 합니다.

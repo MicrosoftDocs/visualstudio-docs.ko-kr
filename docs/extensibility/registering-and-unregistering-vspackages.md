@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b60844826387c2807eedcb47fe24c11a58af80f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: b130c9ceff03fe99151965d5166b056884401855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836971"
 ---
 # <a name="register-and-unregister-vspackages"></a>Vspackage 등록 및 등록 취소
 특성을 사용 하 여 VSPackage를 등록 하지만
@@ -123,5 +123,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../extensibility/internals/vspackages.md)

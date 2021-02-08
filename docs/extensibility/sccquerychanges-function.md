@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836724"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 함수
 이 함수는 지정 된 파일 목록을 열거 하 고 콜백 함수를 통해 각 파일의 이름 변경에 대 한 정보를 제공 합니다.
@@ -25,7 +25,7 @@ ms.locfileid: "80700491"
 ## <a name="syntax"></a>구문
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -55,10 +55,10 @@ SCCRTN SccQueryChanges(
 
 진행 변경 되지 않은 상태로 콜백 함수로 전달 되는 값입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|쿼리 프로세스가 완료 되었습니다.|
 |SCC_E_PROJNOTOPEN|프로젝트가 소스 제어에서 열려 있지 않습니다.|
@@ -68,7 +68,7 @@ SCCRTN SccQueryChanges(
 ## <a name="remarks"></a>설명
  에 대해 쿼리 하는 변경 내용은 네임 스페이스에 있습니다. 특히 파일 이름 바꾸기, 추가 및 제거를 수행 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [오류 코드](../extensibility/error-codes.md)

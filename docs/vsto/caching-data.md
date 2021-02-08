@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f31556e64ee93a73fb09c27edd095bcd2653dfdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836165"
 ---
 # <a name="cache-data"></a>데이터 캐시
   문서 수준 사용자 지정에서 데이터 개체를 캐시 하 여 데이터를 오프 라인으로 액세스 하거나 Word Microsoft Office 또는 Microsoft Office Excel을 열지 않고도 데이터에 액세스할 수 있습니다. 개체를 캐시 하려면 개체에 특정 요구 사항을 충족 하는 데이터 형식이 있어야 합니다. .NET Framework의 많은 일반적인 데이터 형식은, 및를 포함 하 여 이러한 요구 사항을 충족 <xref:System.String> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 합니다.

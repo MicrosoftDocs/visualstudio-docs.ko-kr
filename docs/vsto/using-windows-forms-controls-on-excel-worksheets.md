@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Window Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f8c79e487e116741c393cef5a6f65b30cc4a8cfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838219"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Excel 워크시트에서 Windows Forms 컨트롤 사용
   Windows Forms에 컨트롤을 추가 하는 것과 같은 방식으로 Microsoft Office Excel 통합 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 문서에서 컨트롤을 사용 하는 방법에 대 한 일반적인 내용은 [Office 문서의 컨트롤 Windows Forms 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)를 참조 하세요.

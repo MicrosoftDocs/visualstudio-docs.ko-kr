@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 31e0ebeb4155fef551f98a81f93e02ecdf2ecb9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840771"
 ---
 # <a name="display-locals"></a>표시 지역
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ ms.locfileid: "96915546"
 > [!NOTE]
 > **간략** 한 조사식 창과 **조사식** 창에는 이름, 값 및 형식 같은 형식의 변수도 표시 됩니다. 그러나 이러한 값은 대신 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 를 호출 하 여 가져옵니다 `IDebugProperty2::EnumChildren` .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md) 예제를 사용 하 여 지역 구현 과정을 단계별로 실행 합니다.
 
 ## <a name="related-sections"></a>관련 단원

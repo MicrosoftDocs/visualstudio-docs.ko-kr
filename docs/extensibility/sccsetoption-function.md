@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836698"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 함수
 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.
@@ -45,21 +45,21 @@ SCCRTN SccSetOption(
 
 진행 옵션에 대 한 설정입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|옵션을 설정 했습니다.|
 |SCC_I_SHARESUBPROJOK|`nOption`가이 `SCC_OPT_SHARESUBPROJ` 고 소스 제어 플러그 인이 IDE에서 대상 폴더를 설정할 수 있는 경우 반환 됩니다.|
 |SCC_E_OPNOTSUPPORTED|옵션이 설정 되지 않아에 의존해 서는 안 됩니다.|
 
 ## <a name="remarks"></a>설명
- IDE는이 함수를 호출 하 여 소스 제어 플러그 인의 동작을 제어 합니다. 첫 번째 매개 변수인는 설정 되는 `nOption` 값을 나타내고, 두 번째 매개 변수는 `dwVal` 해당 값으로 수행할 작업을 나타냅니다. 플러그 인은와 연결 된이 정보를 저장 `pvContext``,` 하므로 [Sccinitialize](../extensibility/sccinitialize-function.md) 를 호출한 후 IDE에서이 함수를 호출 해야 합니다. [SccOpenProject](../extensibility/sccopenproject-function.md)
+ IDE는이 함수를 호출 하 여 소스 제어 플러그 인의 동작을 제어 합니다. 첫 번째 매개 변수인는 설정 되는 `nOption` 값을 나타내고, 두 번째 매개 변수는 `dwVal` 해당 값으로 수행할 작업을 나타냅니다. 플러그 인은와 연결 된이 정보를 저장 `pvContext``,` 하므로 [Sccinitialize](../extensibility/sccinitialize-function.md) 를 호출한 후 IDE에서이 함수를 호출 해야 합니다. [](../extensibility/sccopenproject-function.md)
 
  옵션 및 해당 값 요약:
 
-|`nOption`|`dwValue`|설명|
+|`nOption`|`dwValue`|Description|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|백그라운드 이벤트 큐를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |`SCC_OPT_USERDATA`|임의 값|[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 콜백 함수에 전달할 사용자 값을 지정 합니다.|
@@ -83,7 +83,7 @@ SCCRTN SccSetOption(
 ## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ
  가로 설정 된 경우 IDE는 소스 제어 플러그 인에서 소스 `nOption` `SCC_OPT_SHARESUBPROJ` 제어의 파일을 추가할 때 지정 된 로컬 폴더를 사용할 수 있는지 여부를 테스트 합니다. `dwVal`이 경우 매개 변수 값은 중요 하지 않습니다. 플러그 인을 사용 하는 경우 [SccAddFromScc](../extensibility/sccaddfromscc-function.md) 가 호출 될 때 IDE가 소스 제어에서 파일을 추가할 로컬 대상 폴더를 지정할 수 있으면 `SCC_I_SHARESUBPROJOK` 함수가 호출 될 때 플러그 인이 반환 되어야 합니다 `SccSetOption` . 그런 다음 IDE는 함수의 매개 변수를 사용 하 여 `lplpFileNames` `SccAddFromScc` 대상 폴더를 전달 합니다. 플러그 인은 대상 폴더를 사용 하 여 소스 제어에서 추가 된 파일을 저장 합니다. 옵션이 설정 된 경우 플러그 인이 반환 되지 않으면 `SCC_I_SHARESUBPROJOK` `SCC_OPT_SHARESUBPROJ` IDE는 플러그 인이 현재 로컬 폴더에만 파일을 추가할 수 있다고 가정 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

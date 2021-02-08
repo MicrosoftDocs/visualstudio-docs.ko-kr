@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b7838e0a212bbc1e743783255106bb44561fbe62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837764"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; 요소 (ClickOnce 배포)
 배포 매니페스트에 대 한 최상위 수준 요소입니다.
@@ -42,11 +42,11 @@ ms.locfileid: "94383237"
 
  `assembly` 요소에는 다음 특성이 있습니다.
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |`manifestVersion`|필수 사항입니다. 이 특성은로 설정 해야 합니다 `1.0` .|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는를 `assembly` 사용 하 여 배포 된 응용 프로그램에 대 한 배포 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 코드 예제는 [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md) 항목에 대해 제공 되는 더 큰 예제의 일부입니다.
 
 ```xml
@@ -64,6 +64,6 @@ ms.locfileid: "94383237"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
-- [\<assembly> 요소인](../deployment/assembly-element-clickonce-application.md)
+- [\<assembly> 요소](../deployment/assembly-element-clickonce-application.md)

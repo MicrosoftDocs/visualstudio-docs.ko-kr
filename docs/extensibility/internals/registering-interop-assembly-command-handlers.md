@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 67c01aa9ecb3661235670866d92b29d7d8eef543
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837283"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Interop 어셈블리 명령 처리기를 등록
 VSPackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)가 해당 명령을 제대로 라우팅하도록에 등록 해야 합니다.
@@ -52,7 +52,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  다음 표에서는의 필드에 대해 설명 합니다 \<*Resource Information*> .
 
-| 요소 | 설명 |
+| 요소 | Description |
 |---------------------------| - |
 | \<*Path to Resource DLL*> | 이는 메뉴 리소스를 포함 하는 리소스 DLL의 전체 경로 이거나 비어 있습니다 .이 경로는 VSPackage의 리소스 DLL이 사용 됨을 나타냅니다 (VSPackage 자체가 등록 된 패키지 하위 키에 지정 된 대로).<br /><br /> 이 필드는 비워 둘 수 있습니다. |
 | \<*Menu Resource ID*> | `CTMENU`VSPackage에 대 한 모든 UI 요소를 포함 하는 리소스의 리소스 ID입니다 [.](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) |
@@ -68,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Interop 어셈블리를 사용하는 명령 및 메뉴](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

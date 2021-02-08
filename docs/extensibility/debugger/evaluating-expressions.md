@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840602"
 ---
 # <a name="evaluate-expressions"></a>식 계산
 식은 **자동**, **조사식**, **간략 한 조사식** 또는 **직접 실행** 창에서 전달 된 문자열에서 생성 됩니다. 식이 계산 될 때 변수 또는 인수의 이름 및 형식과 해당 값이 포함 된 인쇄 가능한 문자열을 생성 합니다. 이 문자열은 해당 IDE 창에 표시 됩니다.

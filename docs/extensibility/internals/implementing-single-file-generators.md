@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839952"
 ---
 # <a name="implementing-single-file-generators"></a>단일 파일 생성기 구현
 사용자 지정 도구 (단일 파일 생성기 라고도 함)는 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 에서 및 프로젝트 시스템을 확장 하는 데 사용할 수 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 지정 도구는 인터페이스를 구현 하는 COM 구성 요소입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> . 사용자 지정 도구는이 인터페이스를 사용 하 여 단일 입력 파일을 단일 출력 파일로 변환 합니다. 변환 결과는 소스 코드 또는 유용한 기타 출력 일 수 있습니다. 사용자 지정 도구에서 생성 된 코드 파일의 두 가지 예는 비주얼 디자이너의 변경 내용에 대 한 응답으로 생성 된 코드와 WSDL (웹 서비스 기술 언어)을 사용 하 여 생성 된 파일입니다.

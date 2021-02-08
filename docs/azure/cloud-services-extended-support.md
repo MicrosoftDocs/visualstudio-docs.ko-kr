@@ -1,20 +1,20 @@
 ---
-title: Cloud Services 사용 (확장 지원) (미리 보기)
+title: Cloud Services 사용(추가 지원)(미리 보기)
 description: 이제 Visual Studio에서 Azure Resource Manager를 사용 하 여 Cloud Services (확장 지원)를 만들고 배포 하는 방법을 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841135"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Visual Studio에서 Cloud Services (확장 지원) 만들기 및 배포 (미리 보기)
 

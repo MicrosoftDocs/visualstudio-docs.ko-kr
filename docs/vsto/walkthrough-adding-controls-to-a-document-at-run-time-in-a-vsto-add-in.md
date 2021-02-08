@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838089"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>연습: 런타임에 VSTO 추가 기능의 문서에 컨트롤 추가
   VSTO 추가 기능을 사용 하 여 열려 있는 Microsoft Office Word 문서에 컨트롤을 추가할 수 있습니다. 이 연습에서는 리본을 사용 하 여 사용자가 또는을 문서에 추가할 수 있도록 하는 방법을 보여 줍니다 <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .

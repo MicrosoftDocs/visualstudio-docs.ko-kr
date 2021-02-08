@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4706ddf28949af4fe1bba01c32b2c64c9156d51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836685"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 함수
 이 함수는 소스 제어 플러그 인을 종료 하기 위해 [Sccinitialize](../extensibility/sccinitialize-function.md) 에 대 한 이전 호출로 생성 된 모든 할당 또는 열린 연결을 정리 합니다.
@@ -35,16 +35,16 @@ SCCRTN SccUninitialize (
 
 진행 [Sccinitialize](../extensibility/sccinitialize-function.md)에서 만든 소스 제어 플러그 인 컨텍스트 구조에 대 한 포인터입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|정리를 완료 했습니다.|
 
 ## <a name="remarks"></a>설명
  원본 제어 플러그 인은 종료 하 고 플러그 인이 컨텍스트 구조에 할당 한 메모리를 확보 하기 위한 준비를 담당 합니다. 함수는 플러그 인의 지정 된 각 인스턴스에 대해 한 번씩 호출 됩니다. [Sccinitialize](../extensibility/sccinitialize-function.md) 에 대 한 호출은이 호출 앞에 나옵니다. 를 호출할 때 여전히 열려 있는 프로젝트가 없습니다 `SccUninitialize` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

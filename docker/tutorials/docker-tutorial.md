@@ -4,18 +4,18 @@ description: Visual Studio Code에서 Docker를 사용하는 방법의 기본 �
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 9961810ad408a384db46439235b0b7acab325062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837972"
 ---
 # <a name="tutorial-get-started-with-docker"></a>자습서: Docker 시작
 
@@ -62,7 +62,7 @@ docker run -d -p 80:80 docker/getting-started
 
 ## <a name="what-is-a-container-image"></a>컨테이너 이미지란?
 
-컨테이너를 실행하는 경우 컨테이너는 격리된 파일시스템을 사용합니다. 이 사용자 지정 파일시스템은 **컨테이너 이미지**에서 제공됩니다. 이미지에는 컨테이너 파일 시스템이 포함되어 있으므로 애플리케이션을 실행하는 데 필요한 모든 것(모든 종속성, 구성, 스크립트, 이진 파일 등)이 있어야 합니다. 또한 이미지에는 환경 변수, 실행할 기본 명령, 기타 메타데이터와 같은 컨테이너의 다른 구성도 포함되어 있습니다.
+컨테이너를 실행하는 경우 컨테이너는 격리된 파일시스템을 사용합니다. 이 사용자 지정 파일시스템은 **컨테이너 이미지** 에서 제공됩니다. 이미지에는 컨테이너 파일 시스템이 포함되어 있으므로 애플리케이션을 실행하는 데 필요한 모든 것(모든 종속성, 구성, 스크립트, 이진 파일 등)이 있어야 합니다. 또한 이미지에는 환경 변수, 실행할 기본 명령, 기타 메타데이터와 같은 컨테이너의 다른 구성도 포함되어 있습니다.
 
 나중에 이미지를 자세히 살펴보면서 계층화, 모범 사례 등의 주제를 설명하겠습니다.
 

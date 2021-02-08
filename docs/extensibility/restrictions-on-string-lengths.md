@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5412e930937d029f803f5c6c2b4ddc9d396d9485
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bd1720553592b0cfbac8be412002ef1b39bfd5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836958"
 ---
 # <a name="restrictions-on-string-lengths"></a>문자열 길이에 대 한 제한 사항
 소스 제어 플러그 인 API는 다양 한 함수에 사용 되는 문자열의 길이를 제한 합니다.
@@ -41,5 +41,5 @@ ms.locfileid: "97715524"
 |SCC_USER_SIZE|32|
 |SCC_PRJPATH_SIZE|301|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

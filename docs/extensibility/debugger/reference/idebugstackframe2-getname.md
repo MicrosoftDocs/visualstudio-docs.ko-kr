@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9432e1fc7bd592b38afe3ba62b4f57063d7f2807
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05b226afa482e195600ac073b1f77e49790ec9cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837491"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 스택 프레임의 이름을 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80719683"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetName ( 
+HRESULT GetName ( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName ( 
+int GetName ( 
    out string pbstrName
 );
 ```
@@ -43,11 +43,11 @@ int GetName ( 
 `pbstrName`\
 제한이 스택 프레임의 이름을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  스택 프레임의 이름은 일반적으로 실행 되는 메서드의 이름입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

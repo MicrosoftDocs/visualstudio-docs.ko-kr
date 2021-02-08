@@ -2,18 +2,18 @@
 title: 연결된 서비스를 사용 하 여 Azure CosmosDB 추가 | Microsoft Docs
 description: Visual Studio를 사용 하 여 연결 된 서비스를 추가 하 여 앱에 Azure CosmosDB 지원 추가
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4a2789246a75fe7d2331156eecb106f31f21cbf5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 070c1e77559e33ac398730b1bafc5a4a86825cda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841186"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Visual Studio를 사용 하 여 앱에 Azure Cosmos DB 추가 연결된 서비스
 
@@ -33,7 +33,7 @@ Visual Studio를 사용 하 여 다음 중 하나를 **연결된 서비스** 기
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트

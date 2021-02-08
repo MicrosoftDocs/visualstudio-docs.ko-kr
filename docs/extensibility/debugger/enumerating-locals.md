@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 27a42c5c2ce14002802c095363644fa7340e02dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840628"
 ---
 # <a name="enumerate-locals"></a>지역 열거
 > [!IMPORTANT]

@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2e99b55b89ef921c42fab582f65788923aa15c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bbf1f154f23b7cb97f685b4e367199b73547546
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840225"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 포트 공급자에 대 한 설명 및 설명 메타 데이터를 검색 합니다.
@@ -46,8 +46,8 @@ public int GetDescription(
 `pbstrText`\
 제한이 포트 공급자에 대 한 설명입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 34367b836e766754ce5e274698eb4f5a5d407760
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840615"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>조사식 창 식 계산
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ ms.locfileid: "96915650"
 > [!NOTE]
 > Visual Studio에서 가정 하는 경우에도 EE에서이 2 단계 프로세스를 따를 필요는 없습니다. [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 가 호출 될 때 EE는 동일한 단계에서 구문을 분석 하 고 평가할 수 있습니다. 예를 들어 MyCEE 샘플이 작동 합니다. 언어가 복잡 한 식을 구성할 수 있는 경우 평가 단계에서 구문 분석 단계를 분리 하는 것이 좋습니다. 이렇게 하면 많은 조사식 식이 표시 되는 경우 Visual Studio 디버거의 성능을 향상 시킬 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [식 계산의 샘플 구현](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) MyCEE 샘플을 사용 하 여 식 계산 과정을 단계별로 실행 합니다.
 
  [조사식 식 계산](../../extensibility/debugger/evaluating-a-watch-expression.md) 식 구문 분석이 완료 된 후 발생 하는 상황을 설명 합니다.

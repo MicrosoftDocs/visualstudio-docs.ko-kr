@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: fe8312a4dcaa2efb0b783e89540e5ff9f71f15e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837803"
 ---
 # <a name="application-deployment-prerequisites"></a>애플리케이션 배포 필수 구성 요소
 
@@ -84,6 +84,6 @@ ms.locfileid: "94383250"
 ## <a name="operating-system-support"></a>운영 체제 지원
  Visual Studio 부트스트래퍼는 기능이 제한 된 낮은 유지 관리 서버 환경을 제공 하므로 Windows Server 2008 Server Core 또는 Windows Server 2008 R2 Server Core에서 지원 되지 않습니다. 예를 들어 Server Core 설치 옵션은 전체 .NET Framework에 종속 된 Visual Studio 기능을 실행할 수 없는 .NET Framework 3.5 Server Core 프로필만 지원 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)

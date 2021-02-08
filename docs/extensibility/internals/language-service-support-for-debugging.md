@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c17b11ce3639664a8097abeaa2a2de9a6faaadc7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b53eb738b695726cf86859ce83a8ee93440564a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839705"
 ---
 # <a name="language-service-support-for-debugging"></a>디버깅에 대한 언어 서비스 지원
 언어 서비스는 인터페이스를 통해 디버거를 지 원하는 기능을 제공할 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> . 이러한 기능에는 중단점 유효성 검사 및 **자동** 창에 식 목록 제공이 포함 됩니다.

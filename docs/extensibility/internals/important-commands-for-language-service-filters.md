@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839835"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대한 중요 명령
 완전 한 기능을 갖춘 언어 서비스 필터를 만들려는 경우 다음 명령을 처리 하는 것이 좋습니다. 명령 식별자의 전체 목록은 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 코드에 대 한 열거와 비관리 코드에 대 한 Stdidcmd 헤더 파일에 정의 되어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 있습니다. Stdidcmd 파일은 *Visual STUDIO SDK 설치 경로*\VisualStudioIntegration\Common\Inc.에서 찾을 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "98204620"
 > [!NOTE]
 > 다음 표의 모든 명령을 필터링 하는 것은 필수가 아닙니다.
 
-|명령|설명|
+|명령|Description|
 |-------------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 마우스 오른쪽 단추를 클릭할 때 보냅니다. 이 명령은 바로 가기 메뉴를 제공할 시간 임을 나타냅니다. 이 명령을 처리 하지 않으면 텍스트 편집기는 언어별 명령이 없는 기본 바로 가기 메뉴를 제공 합니다. 이 메뉴에 사용자 고유의 명령을 포함 하려면 명령을 처리 하 고 바로 가기 메뉴를 직접 표시 합니다.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 CTRL + J를 입력 하면 전송 됩니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>에서 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 여 문 완성 상자를 표시 합니다.|
@@ -40,5 +40,5 @@ ms.locfileid: "98204620"
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 CTRL + 스페이스바를 입력 하면 전송 됩니다. 이 명령은에서 메서드를 호출 하도록 언어 서비스에 지시 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|메뉴에서 전송 됩니다. 일반적으로 **편집** **메뉴에서** 선택 영역을 **주석** 으로 처리 하거나 주석 **처리를 제거** 합니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 사용자가 선택한 텍스트를 주석 처리 하려고 함을 나타냅니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 사용자가 선택한 텍스트의 주석 처리를 제거 하려고 함을 나타냅니다. 이러한 명령은 언어 서비스에 의해서만 구현 될 수 있습니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)

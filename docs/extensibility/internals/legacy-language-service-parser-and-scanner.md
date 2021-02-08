@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839562"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 파서는 언어 서비스의 핵심입니다. MPF (관리 되는 패키지 프레임 워크) 언어 클래스에는 표시 되는 코드에 대 한 정보를 선택 하기 위한 언어 파서가 필요 합니다. 파서는 텍스트를 어휘 토큰으로 구분 하 고 형식 및 기능으로 이러한 토큰을 식별 합니다.
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  개체는 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체의 일부로 파서에 전달 되 고 새 개체가 <xref:Microsoft.VisualStudio.Package.ParseRequest> 만들어질 때마다 새 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체가 만들어집니다 <xref:Microsoft.VisualStudio.Package.ParseRequest> . 또한 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 다양 한 IntelliSense 작업을 처리 하는 데 사용 되는 개체를 반환 해야 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>개체는 구문 분석의 이유에 따라 선언 목록 및 메서드에 대 한 목록을 유지 관리 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>클래스를 구현 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

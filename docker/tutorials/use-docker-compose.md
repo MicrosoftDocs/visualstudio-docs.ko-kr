@@ -4,17 +4,17 @@ description: Docker Compose를 설치하고 사용하는 방법을 설명합니�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 81f70612b05920ea58c752a878831f1d6de34098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841720"
 ---
 # <a name="use-docker-compose"></a>Docker Compose 사용
 
@@ -290,7 +290,7 @@ Docker 확장을 살펴보는 경우 ‘톱니바퀴’ 및 ‘그룹화 방법�
 
 ## <a name="tear-it-all-down"></a>모두 종료
 
-모두 종료할 준비가 되었으면 `docker-compose down`을 실행하거나 VS Code Docker 확장의 컨테이너 목록에서 애플리케이션을 마우스 오른쪽 단추로 클릭하고 **Compose 종료**를 선택합니다. 컨테이너가 중지되고 네트워크가 제거됩니다.
+모두 종료할 준비가 되었으면 `docker-compose down`을 실행하거나 VS Code Docker 확장의 컨테이너 목록에서 애플리케이션을 마우스 오른쪽 단추로 클릭하고 **Compose 종료** 를 선택합니다. 컨테이너가 중지되고 네트워크가 제거됩니다.
 
 > [!WARNING]
 > **볼륨 제거** 기본적으로 Compose 파일에서 명명된 볼륨은 `docker-compose down`을 실행해도 제거되지 않습니다. 볼륨을 제거하려면 `--volumes` 플래그를 추가해야 합니다.

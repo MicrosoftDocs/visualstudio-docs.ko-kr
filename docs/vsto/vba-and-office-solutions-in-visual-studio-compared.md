@@ -12,15 +12,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], VBA compared to
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d07975061a7b2f5f655bf7f4339671f28fe14c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a07711fd854bd0dc035cab776f713701d5d85200
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838115"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio의 VBA 및 Office 솔루션 비교
   Microsoft VBA(Visual Basic for Applications)는 Office 애플리케이션과 긴밀하게 통합되는 비관리 코드를 사용합니다. Visual Studio를 사용하여 만든 Microsoft Office 프로젝트를 사용하면 .NET Framework 및 Visual Studio 디자인 도구를 활용할 수 있습니다.

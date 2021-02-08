@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 258ea4529a558c91eb115b82b35def4ca4ab6561
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838245"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio 내에서 Office 기능 사용
   문서 수준 프로젝트를 만들 때 문서와 연결 된 응용 프로그램은 Visual Studio 내에서 호스팅되므로 문서를 직접 디자인 하 고 작업할 수 있습니다. Microsoft Office 응용 프로그램이 Visual Studio에서 열려 있는 경우 일반적으로 정상적으로 작동 합니다. 그러나 응용 프로그램의 기능 중 일부는 다르거나 액세스할 수 없습니다.

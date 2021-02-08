@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836763"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 함수
 이 함수는 소스 제어 관리 도구를 호출 합니다.
@@ -50,10 +50,10 @@ SCCRTN SccRunScc(
 
 진행 선택한 파일 이름의 배열입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|소스 제어 관리 도구를 성공적으로 호출 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 취소 되었습니다.|
@@ -68,9 +68,9 @@ SCCRTN SccRunScc(
 
  이 함수는 현재 선택 된 파일에 대 한 개수 및 파일 이름 배열을 사용 하 여 호출 됩니다. 관리 도구에서 지 원하는 경우 파일 목록을 사용 하 여 관리 인터페이스의 파일을 미리 선택할 수 있습니다. 그렇지 않으면 목록을 무시할 수 있습니다.
 
- 이 함수는 일반적으로 사용자가 **파일** ** \<Source Control Server> **  ->  **소스 컨트롤** 메뉴에서 시작을 선택 하면 호출 됩니다. 레지스트리 항목을 설정 하 여이 **시작** 메뉴 옵션을 항상 사용 하지 않도록 설정 하거나 숨길 수 있습니다. 자세한 내용은 [방법: 소스 제어 플러그 인 설치](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 를 참조 하세요. 이 함수는 [Sccinitialize](../extensibility/sccinitialize-function.md) 가 기능 비트를 반환 하는 경우에만 호출 됩니다 `SCC_CAP_RUNSCC` (이 기능 및 기타 기능 비트에 대 한 자세한 내용은 [기능 플래그](../extensibility/capability-flags.md) 참조).
+ 이 함수는 일반적으로 사용자가 **파일** **\<Source Control Server>**  ->  **소스 컨트롤** 메뉴에서 시작을 선택 하면 호출 됩니다. 레지스트리 항목을 설정 하 여이 **시작** 메뉴 옵션을 항상 사용 하지 않도록 설정 하거나 숨길 수 있습니다. 자세한 내용은 [방법: 소스 제어 플러그 인 설치](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 를 참조 하세요. 이 함수는 [Sccinitialize](../extensibility/sccinitialize-function.md) 가 기능 비트를 반환 하는 경우에만 호출 됩니다 `SCC_CAP_RUNSCC` (이 기능 및 기타 기능 비트에 대 한 자세한 내용은 [기능 플래그](../extensibility/capability-flags.md) 참조).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [방법: 소스 제어 플러그 인 설치](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [기능 플래그](../extensibility/capability-flags.md)

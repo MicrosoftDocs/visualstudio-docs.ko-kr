@@ -4,17 +4,17 @@ description: 볼륨을 탑재하여 데이터베이스 및 공유 디렉터리�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841772"
 ---
 # <a name="persist-your-data"></a> 데이터 유지
 
@@ -70,7 +70,7 @@ ms.locfileid: "89485588"
 
 [볼륨](https://docs.docker.com/storage/volumes/)은 컨테이너의 특정 파일 시스템 경로를 호스트 머신에 다시 연결하는 기능을 제공합니다. 컨테이너의 디렉터리를 탑재하면 해당 디렉터리의 변경 내용이 호스트 머신에도 표시됩니다. 컨테이너를 다시 시작한 후에도 동일한 디렉터리를 탑재하면 같은 파일이 표시됩니다.
 
-볼륨에는 두 가지 기본 유형이 있습니다. 궁극적으로 둘 다 사용하지만, 시작은 **명명된 볼륨**으로 합니다.
+볼륨에는 두 가지 기본 유형이 있습니다. 궁극적으로 둘 다 사용하지만, 시작은 **명명된 볼륨** 으로 합니다.
 
 ## <a name="persist-your-todo-data"></a>todo 데이터 유지
 
@@ -78,7 +78,7 @@ ms.locfileid: "89485588"
 
 데이터베이스가 단일 파일이므로 해당 파일을 호스트에 보관하고 다음 컨테이너에서 사용할 수 있게 하면, 컨테이너가 마지막으로 중단된 위치부터 다시 이어서 시작할 수 있어야 합니다. 볼륨을 만들어 데이터가 저장된 디렉터리에 연결(“탑재”라고도 함)하면 데이터를 유지할 수 있습니다. 컨테이너가 `todo.db` 파일에 쓰면 볼륨의 호스트에 보관됩니다.
 
-앞서 설명한 것처럼 **명명된 볼륨**을 사용하겠습니다. 명명된 볼륨은 단순히 데이터 버킷으로 생각하면 됩니다. Docker에서 디스크 상의 실제 위치를 유지 관리하므로 볼륨 이름만 기억하면 됩니다. 볼륨을 사용할 때마다 Docker에서 올바른 데이터가 제공되는지 확인합니다.
+앞서 설명한 것처럼 **명명된 볼륨** 을 사용하겠습니다. 명명된 볼륨은 단순히 데이터 버킷으로 생각하면 됩니다. Docker에서 디스크 상의 실제 위치를 유지 관리하므로 볼륨 이름만 기억하면 됩니다. 볼륨을 사용할 때마다 Docker에서 올바른 데이터가 제공되는지 확인합니다.
 
 1. `docker volume create` 명령을 사용하여 볼륨을 만듭니다.
 
@@ -133,7 +133,7 @@ docker volume inspect todo-db
 `Mountpoint`가 디스크에서 데이터가 저장되는 실제 위치입니다. 대부분의 머신에서는 호스트에서 이 디렉터리에 액세스하기 위해 루트 액세스 권한이 있어야 합니다. 하지만 여기가 맞습니다.
 
 > [!NOTE]
-> Docker Desktop에서 실행되는 동안 **Docker Desktop의 볼륨 데이터에 직접 액세스**하는 Docker 명령은 실제로 머신의 작은 VM 내에서 실행됩니다. *Mountpoint* 디렉터리의 실제 내용을 확인하려면 먼저 VM 내부에 액세스해야 합니다. WSL 2에서는 WSL 2 배포판 내에 있으며, 파일 탐색기를 통해 액세스할 수 있습니다.
+> Docker Desktop에서 실행되는 동안 **Docker Desktop의 볼륨 데이터에 직접 액세스** 하는 Docker 명령은 실제로 머신의 작은 VM 내에서 실행됩니다. *Mountpoint* 디렉터리의 실제 내용을 확인하려면 먼저 VM 내부에 액세스해야 합니다. WSL 2에서는 WSL 2 배포판 내에 있으며, 파일 탐색기를 통해 액세스할 수 있습니다.
 
 ## <a name="recap"></a>요약
 
