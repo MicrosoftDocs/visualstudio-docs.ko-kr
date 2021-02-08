@@ -1,5 +1,5 @@
 ---
-title: 내 Azure 월간 크레딧 활성화하려는 동안 오류가 발생합니다.
+title: 내 Azure 월간 크레딧을 활성화하는 동안 오류가 발생함
 description: 내 Visual Studio 구독에 포함된 Azure 월간 크레딧을 활성화하려는 동안 오류가 발생합니다.
 ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 5670ff0fd3ac14a2b7b26f3098c9ed1060a4efac
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916125"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541004"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>내 Azure 월간 크레딧 활성화하려는 동안 오류가 발생합니다.
 

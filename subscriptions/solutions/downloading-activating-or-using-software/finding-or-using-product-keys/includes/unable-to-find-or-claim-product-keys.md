@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate, product-key
 subscription.type: vl, cloud, retail, partner
 sap.id: 631f9455-a027-34d0-12c8-c2b37d2c42cb
-ms.openlocfilehash: 88ecaf869f7cd593876dacaa21926913e192dc14
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 8e8747f2b7f46778cc5e4a1069941ff264781f66
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147617"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541232"
 ---
 ## <a name="im-unable-to-find-or-claim-a-product-key"></a>제품 키를 찾거나 요청할 수 없습니다.
 
@@ -29,4 +29,4 @@ ms.locfileid: "98147617"
 
 ## <a name="more-information-on-product-key-types"></a>제품 키 유형에 대한 자세한 정보
 
-제품 키 유형 및 제품 키 요청에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  
+[제품 키 유형 및 제품 키 요청](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)에 대해 자세히 알아봅니다.  

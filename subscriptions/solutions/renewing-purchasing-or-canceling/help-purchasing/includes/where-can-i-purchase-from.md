@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916178"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541023"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>구독 구매 위치 
 
@@ -42,8 +42,8 @@ Microsoft Store를 통해 제공되는 소매용 Visual Studio 구독은 다음�
 * [Visual Studio Professional - 월간 구독](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise - 월간 구독](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-월간 Visual Studio 구독 청구에 대해 [자세히 알아보세요](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
+[월간 Visual Studio 구독 청구](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)에 대해 자세히 알아봅니다. 
 
 ## <a name="volume-licensing"></a>볼륨 라이선스 
 
-조직에서 많은 수의 구독을 구매해야 하는 경우 볼륨 라이선싱 구독을 사용할 수 있습니다. 볼륨 라이선싱을 통한 구매에 관해 [자세히 알아봅니다](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).
+조직에서 많은 수의 구독을 구매해야 하는 경우 볼륨 라이선싱 구독을 사용할 수 있습니다. [볼륨 라이선싱을 통한 구매](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)에 대해 자세히 알아봅니다.

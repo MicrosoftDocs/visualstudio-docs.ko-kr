@@ -1,5 +1,5 @@
 ---
-title: Azure 개발/테스트 종량제 구독을 활성화할 수 없습니다.
+title: Azure 개발/테스트 종량제 구독을 활성화할 수 없음
 description: 내 Visual Studio 구독에 포함된 Azure 개발/테스트 종량제 구독을 활성화할 수 없습니다.
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 83907b80a67193230a31d9bad155ce72bd02a373
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147502"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541271"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Azure 개발/테스트 종량제 구독을 활성화할 수 없습니다.
 
@@ -29,4 +29,4 @@ Visual Studio 구독자는 Azure에서 구독 소프트웨어의 개발/테스�
 
 ## <a name="more-information-about-subscriptions"></a>구독에 대한 자세한 정보
  
-[Azure 개발/테스트 종량제 구독에 관한 자세한 내용을 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg).
+[Azure 개발/테스트 종량제 구독](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg)에 대해 자세히 알아봅니다.

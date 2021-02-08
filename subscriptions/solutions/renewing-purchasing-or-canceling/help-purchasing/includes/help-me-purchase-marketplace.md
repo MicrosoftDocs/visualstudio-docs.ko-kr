@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 6a4758508c478612b75f51acef6136fde0fab9d3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147403"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541073"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>Visual Studio Marketplace를 통해 월간 구독 구매 
 
@@ -28,7 +28,7 @@ ms.locfileid: "98147403"
 * [Visual Studio Professional - 월간 구독](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise - 월간 구독](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-월간 Visual Studio 구독 Azure 청구에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
+[월간 Visual Studio 구독 Azure 청구](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)에 대해 자세히 알아봅니다. 
 
 ## <a name="more-information-about-subscription-benefits"></a>구독 혜택에 대한 자세한 정보
 

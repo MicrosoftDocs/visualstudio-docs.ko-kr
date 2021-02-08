@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 03ffd1e9a80b69652040653d2cacfdfd2ebb4e2d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147594"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541021"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>다운로드해야 하는 제품을 찾을 수 없습니다.
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147594"
 전체적으로 모든 키를 사용할 수 있는 [제품 키](https://my.visualstudio.com/productkeys) 페이지를 방문할 수도 있습니다. 키를 요청한 시기 및 이유를 파악하도록 참고 사항 열을 편집할 수 있습니다. 
 
 ## <a name="more-information-about-product-keys"></a>제품 키에 대한 자세한 정보
-제품 키 및 다운로드를 찾고 요청하는 방법에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  
+[제품 키 및 다운로드를 찾고 요청하는 방법](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)에 대해 자세히 알아봅니다.  

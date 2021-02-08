@@ -1,5 +1,5 @@
 ---
-title: 소프트웨어(Visual Studio 제품군 제외)를 다운로드하거나 활성화할 수 없습니다.
+title: 소프트웨어(Visual Studio 제품군 제외)를 다운로드하거나 활성화할 수 없음
 description: 내 Visual Studio 구독에 포함된 소프트웨어(Visual Studio 제품군 제외)를 다운로드하거나 활성화할 수 없습니다.
 ms.topic: include
 ms.assetid: 4e67a935-40f9-4c26-b836-e06aa8582bad
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147331"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99540991"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>소프트웨어(Visual Studio 제품군 제외)를 다운로드하거나 활성화할 수 없습니다.
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147331"
 전체적으로 모든 키를 사용할 수 있는 [제품 키](https://my.visualstudio.com/productkeys) 페이지를 방문할 수도 있습니다. 키를 요청한 시기 및 이유를 파악하도록 참고 사항 열을 편집할 수 있습니다. 
 
 ## <a name="more-information-about-downloads"></a>다운로드에 대한 자세한 정보 
-제품 키 및 다운로드를 찾고 요청하는 방법에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  
+[제품 키 및 다운로드를 찾고 요청하는 방법](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)에 대해 자세히 알아봅니다.  

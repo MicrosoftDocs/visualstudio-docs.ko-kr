@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147527"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541038"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>월간 Azure 개발/테스트 개별 크레딧을 활성화하려면 어떻게 하나요? 
 
@@ -33,6 +33,6 @@ Azure 개발/테스트 개별 크레딧은 무료로 사용할 수 있으며 신
 Visual Studio 구독 혜택을 통해 생성된 Azure 구독은 유료 구독에는 적용되지 않는 제한 사항의 영향을 받을 수 있습니다. VM 및 Azure 서비스를 만드는 데 특정 지역을 사용하지 못할 수도 있고, 특정 서비스 유형을 사용하지 못할 수도 있습니다. 유료 구독보다 기본 할당량이 적을 수도 있습니다.  
 
 ## <a name="more-information-about-azure-credits"></a>Azure 크레딧에 대한 자세한 정보
-활성화, 자격 및 기타 지원 리소스에 관해 [자세히 알아봅니다](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
+[활성화, 자격 및 기타 지원 리소스](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)에 대해 자세히 알아봅니다.  
 
-Visual Studio 구독에 포함된 Azure 크레딧을 사용하는 [방법을 알아봅니다](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits).  
+Visual Studio 구독에 포함된 [Azure 크레딧을 사용하는 방법](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)을 알아봅니다.  
