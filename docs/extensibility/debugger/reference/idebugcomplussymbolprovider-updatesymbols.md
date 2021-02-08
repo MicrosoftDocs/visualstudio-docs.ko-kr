@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2421ff73ed94b275288d9a1aed6ff4a382f45048
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842500"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 지정 된 데이터 스트림의 디버그 기호를 사용 하 여 메모리의 디버그 기호를 업데이트 합니다.
@@ -52,7 +52,7 @@ int UpdateSymbols (
 `pUpdateStream`\
 진행 업데이트 된 디버그 기호를 포함 하는 데이터 스트림입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -91,8 +91,8 @@ Error:
 }
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

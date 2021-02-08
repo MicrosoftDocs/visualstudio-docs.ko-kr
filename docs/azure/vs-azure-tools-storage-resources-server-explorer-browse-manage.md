@@ -3,17 +3,17 @@ title: 저장소 리소스 찾아보기 및 관리
 description: 서버 탐색기로 스토리지 리소스 찾아보기 및 관리
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843854"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 

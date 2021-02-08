@@ -2,17 +2,17 @@
 title: Azure 코드 최적화
 description: Visual Studio에서 Azure 코드 최적화 도구를 사용하여 더욱 강력하고 성능이 뛰어난 코드를 만드는 방법에 대해 알아보세요.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b7a20b4ae57ee5cf1127441bc43dea021c170188
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844036"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure 코드 최적화
 Microsoft Azure를 사용하는 앱을 프로그래밍할 경우 클라우드 환경에서 앱 안정성, 동작 및 성능 문제를 방지하기 위해 몇 가지 코딩 방법을 따라야 합니다. Microsoft는 이와 같이 자주 발생하는 문제를 인식 및 식별하고 해결해 주는 Azure 코드 분석 도구를 제공합니다. 이 도구는 Visual Studio에서 NuGet을 통해 다운로드할 수 있습니다.
@@ -24,7 +24,7 @@ Azure 코드 분석 도구는 성능에 영향을 미치는 알려진 문제를 
 ### <a name="id"></a>ID
 AP0000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 클라우드 애플리케이션에 대해 기본(In-Process) 세션 상태 모드를 사용할 경우 세션 상태가 끊어질 수 있습니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -41,7 +41,7 @@ ASP.NET 세션 상태는 세션 상태 데이터에 대해 다양한 스토리�
 ### <a name="id"></a>ID
 AP1000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 메서드 밖에 비동기 메서드(예: [await](/dotnet/csharp/language-reference/operators/await))를 만든 다음 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100))에서 비동기 메서드를 호출합니다. [[Run()](/previous-versions/azure/reference/ee772746(v=azure.100))](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) 메서드를 비동기로 선언하면 작업자 역할이 재시작 루트로 전환됩니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -86,7 +86,7 @@ public async Task RunAsync()
 ### <a name="id"></a>ID
 AP2000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 인증에 SAS(공유 액세스 서명)를 사용합니다. 서비스 버스 인증에 ACS(Access Control Service)를 사용 중입니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -112,7 +112,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 ### <a name="id"></a>ID
 AP2002
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 "수신 루프"로 전환되지 않기 위해서는 **Receive** 메서드를 호출하는 것보다 **OnMessage** 메서드를 호출하는 것이 메시지 수신에 더 효과적인 해결 방법입니다. 하지만 반드시 **Receive** 메서드를 사용하고 기본값 이외의 서버 대기 시간을 지정해야 할 경우 서버 대기 시간을 1분을 초과하도록 설정합니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -216,7 +216,7 @@ while (true)
 ### <a name="id"></a>ID
 AP2003
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 조정된 메시지의 성능을 개선하려면 비동기 Service Bus 메서드를 사용합니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -233,7 +233,7 @@ Azure 메시징 인프라의 성능을 개선하려면 [Asynchronous Messaging P
 ### <a name="id"></a>ID
 AP2004
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 Service Bus 메시징에서 성능을 향상하려면 Service Bus 큐와 토픽을 분할합니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -258,7 +258,7 @@ ns.CreateTopic(td);
 ### <a name="id"></a>ID
 AP3001
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 공유 액세스 정책을 즉시 시작하기 위해 SharedAccessStartTimeset을 현재 시간으로 설정하지 마십시오. 이 속성은 나중에 공유 액세스 정책을 시작하려는 경우에만 설정해야 합니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -290,7 +290,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>ID
 AP3002
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 "클록 스큐"라고 하는 상태로 인해 다른 위치에 있는 데이터 센터 사이에 최대 5분의 클록 차이가 발생할 수 있습니다. SAS 정책 토큰이 계획보다 빨리 만료되지 않도록 하려면 만료 시간을 5분을 초과하여 설정합니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -340,7 +340,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>ID
 AP4000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 Azure 웹 사이트, Azure 모바일 서비스 등의 프로젝트에 [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx)클래스를 사용하면 런타임 문제가 발생하지 않습니다. 하지만 모든 Azure 클라우드 애플리케이션에서 단일화된 구성 관리 방법으로 Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx)를 사용하는 것이 좋습니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -377,7 +377,7 @@ CloudConfigurationManager는 애플리케이션 환경에 적합한 구성 파�
 ### <a name="id"></a>ID
 AP4001
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 하드 코드 연결 문자열을 사용하면서 나중에 업데이트가 필요할 경우 소스 코드를 변경하고 애플리케이션을 다시 컴파일해야 합니다. 하지만 연결 문자열을 구성 파일에 저장하면 구성 파일만 업데이트하여 변경할 수 있습니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -398,7 +398,7 @@ web.config 또는 app.config와 같은 구성 파일을 사용하는 방법은 [
 ### <a name="id"></a>ID
 AP5000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 Microsoft.WindowsAzure.Diagnostics 프로그래밍 API를 사용하는 등의 방법으로 코드에 진단 설정을 구성하는 대신 diagnostics.wadcfg 파일에 진단 설정을 구성해야 합니다. Azure SDK 2.5를 사용하는 경우에는 diagnostics.wadcfgx를 사용합니다. 그러면 코드를 다시 컴파일하지 않고도 진단 설정을 변경할 수 있습니다.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.
@@ -423,7 +423,7 @@ WAD 1.3(Azure SDK 2.5에 기본 제공)부터 코드를 사용하여 진단을 �
 ### <a name="id"></a>ID
 AP6000
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 메모리를 절약하기 위해 DbContext 개체를 정적으로 선언하지 마십시오.
 
 [Azure 코드 분석 의견](https://social.msdn.microsoft.com/Forums/en-US/home)에서 아이디어와 의견을 공유해 주세요.

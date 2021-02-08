@@ -2,17 +2,17 @@
 title: 프로젝트를 Azure 도구의 현재 버전으로 업그레이드
 description: Azure 프로젝트를 Visual Studio에서 현재 버전의 Azure 도구로 업그레이드하는 방법을 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: fce77f6417a14c204df883efd2f64655fa79b432
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f9f806ad2d5e9d72d9459ba48c0d7c9525acb30e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843776"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>프로젝트를 현재 버전의 Visual Studio 용 Azure 도구로 업그레이드하는 방법
 ## <a name="overview"></a>개요

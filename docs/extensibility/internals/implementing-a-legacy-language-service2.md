@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839965"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>레거시 언어 서비스 구현 2
 MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 언어 서비스를 구현 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.LanguageService> 다음 추상 메서드 및 속성을 구현 해야 합니다.
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>LanguageService 클래스
 
-|방법|반환 된 클래스|설명|
+|메서드|반환 된 클래스|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|텍스트 보기에 대 한 사용자 지정 추가를 지원 하려면입니다.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|사용자 지정 문서 속성을 지원 하려면입니다.|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>원본 클래스
 
-|방법|반환 된 클래스|설명|
+|메서드|반환 된 클래스|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|IntelliSense 완성 목록의 표시를 사용자 지정 하는 경우 (일반적으로이 메서드는 재정의 되지 않음)|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|오류 목록 작업 목록에 있는 지원 표식 특히 파일 열기 이상의 기능을 지원 하 고 오류를 일으킨 줄로 이동 합니다.|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>의 기관 클래스
 
-|방법|반환 된 클래스|설명|
+|메서드|반환 된 클래스|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|멤버 또는 형식과 같은 선언 목록을 제공 합니다. 이 메서드는 구현 되어야 하지만 null 값을 반환할 수 있습니다. 이 메서드가 유효한 개체를 반환 하는 경우 개체는 해당 버전의 클래스 인스턴스여야 합니다 <xref:Microsoft.VisualStudio.Package.Declarations> .|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|지정 된 컨텍스트에 대 한 메서드 시그니처의 목록을 제공 합니다. 이 메서드는 구현 되어야 하지만 null 값을 반환할 수 있습니다. 이 메서드가 유효한 개체를 반환 하는 경우 개체는 해당 버전의 클래스 인스턴스여야 합니다 <xref:Microsoft.VisualStudio.Package.Methods> .|

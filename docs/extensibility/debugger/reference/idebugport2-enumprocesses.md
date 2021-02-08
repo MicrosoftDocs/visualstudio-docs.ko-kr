@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e303787a21996ba4a743e854d6ba1263438259b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844829"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 포트에서 실행 중인 모든 프로세스의 목록을 반환 합니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80725455"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumProcesses( 
+HRESULT EnumProcesses( 
    IEnumDebugProcesses2** ppEnum
 );
 ```
 
 ```csharp
-int EnumProcesses( 
+int EnumProcesses( 
    out IEnumDebugProcesses2 ppEnum
 );
 ```
@@ -43,9 +43,9 @@ int EnumProcesses( 
 `ppEnum`\
 제한이 포트에서 실행 중인 모든 프로세스 목록을 포함 하는 [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

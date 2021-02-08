@@ -2,17 +2,17 @@
 title: Azure에 대한 명령줄 빌드 | Microsoft Docs
 description: Azure에 대한 명령줄 빌드
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b60e076c50c9465f54c3c05dda0318f56fa5e9ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844270"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>명령줄에서 Azure 프로젝트 빌드
 Microsoft Build Engine(MSBuild)을 사용하여 Visual Studio가 설치되지 않은 빌드 랩 환경에 제품을 빌드할 수 있습니다. MSBuild는 Microsoft에서 확장 가능하고 완전히 지원되는 프로젝트 파일에 대한 XML 형식을 사용합니다. MSBuild 파일 형식으로 하나 이상의 플랫폼 및 구성에 대해 어떤 항목을 빌드해야 하는지 설명할 수 있습니다

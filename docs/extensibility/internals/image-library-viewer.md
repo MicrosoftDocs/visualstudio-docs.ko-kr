@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840121"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스트를 로드 하 고 검색 하 여 사용자가 Visual Studio와 동일한 방식으로 조작할 수 있도록 합니다. 사용자는 배경, 크기, DPI, 고대비 및 기타 설정을 변경할 수 있습니다. 또한이 도구는 각 이미지 매니페스트에 대 한 로딩 정보를 표시 하 고 이미지 매니페스트의 각 이미지에 대 한 소스 정보를 표시 합니다. 이 도구는 다음과 같은 경우에 유용 합니다.
@@ -73,7 +73,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -112,7 +112,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
 |**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -148,7 +148,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
 |**Attribute**|**정의**|
 |-|-|
-|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -164,7 +164,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구는 이미지 매니페스�
 
 |**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 

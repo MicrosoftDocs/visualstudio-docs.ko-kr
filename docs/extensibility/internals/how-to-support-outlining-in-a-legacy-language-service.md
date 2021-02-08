@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844595"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 개요 지원
 개요는 텍스트의 여러 영역을 확장 하거나 축소 하는 데 사용 됩니다. 개요를 사용 하는 방법은 언어 마다 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.

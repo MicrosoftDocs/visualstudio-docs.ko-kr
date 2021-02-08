@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 460227b1eb5a1e12ca698f649700586b53bc7254
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839337"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>동기적으로 자동 로드된 확장
 
@@ -23,7 +23,7 @@ ms.locfileid: "97715446"
 
 ![확장 호환성 경고](media/extension-compatibility-warning-16-1.png.png)
 
-다음 작업을 수행할 수 있습니다.
+다음을 할 수 있습니다.
 
 - **동기 Autoload 허용** 을 클릭 하 여 autoload에 대 한 확장을 허용 합니다. Visual Studio 옵션에서이 설정을 변경 하려면 환경을 클릭 한 다음 확장을 클릭 하 고 "동기 autoload 확장 허용" 확인란을 선택 합니다. 
 
@@ -55,5 +55,5 @@ ms.locfileid: "97715446"
 ## <a name="extension-authors"></a>확장 작성자
 확장 작성자는 [AsyncPackage로 마이그레이션](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)에서 패키지를 비동기 autoload로 마이그레이션하기 위한 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 Visual Studio 2019의 동기 autoload 설정에 대 한 자세한 내용은 [동기 Autoload 동작](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) 페이지를 참조 하세요.

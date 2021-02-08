@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844738"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 중지 된 상태에서이 프로그램을 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 지워지고 프로그램의 실행이 다시 시작 됩니다.
@@ -49,7 +49,7 @@ int Execute();
 > [!WARNING]
 > 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [재개](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)

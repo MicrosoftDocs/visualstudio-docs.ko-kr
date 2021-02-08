@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9988b32d693fe9d65d70543a0f3d1da9a69959db
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f303fc14b8f463af5d5b5fa2f867ea412e68edae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840069"
 ---
 # <a name="image-service-tools"></a>이미지 서비스 도구
 VS SDK에는 확장 빌더에서 Visual Studio 이미지 서비스를 사용 하는 데 도움이 되는 여러 도구가 포함 되어 있습니다.

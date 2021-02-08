@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844569"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 이 함수는 소스 제어 플러그 인에만 의미가 있는 문자열인 프로젝트 경로를 사용자에 게 묻는 메시지를 표시 합니다. 사용자가 다음과 같은 경우 호출 됩니다.
@@ -89,7 +89,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|프로젝트를 만들거나 검색 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 취소되었습니다.|
@@ -111,8 +111,8 @@ SCCRTN SccGetProjPath (
 
  사용자가 소스 제어에서 새 프로젝트를 만드는 경우 소스 제어 플러그 인이 호출 될 때 소스 제어 시스템에서 실제로이를 만들지 않을 수 있습니다 `SccGetProjPath` . 대신,에 대 한 0이 아닌 값과 함께 문자열을 다시 전달 `pbNew` 합니다 .이 경우에는 프로젝트가 소스 제어 시스템에 생성 됩니다.
 
- 예를 들어 Visual Studio의 **새 프로젝트** 마법사에서 사용자가 프로젝트를 소스 제어에 추가 하는 경우 visual studio는이 함수를 호출 하 고 플러그 인은 소스 제어 시스템에서 visual studio 프로젝트를 포함 하는 새 프로젝트를 만들 수 있는지 여부를 확인 합니다. 마법사를 완료 하기 전에 사용자가 **취소** 를 클릭 하면 프로젝트가 생성 되지 않습니다. 사용자가 **확인**을 클릭 하면 Visual Studio가를 호출 하 `SccOpenProject` 고를 전달 `SCC_OPT_CREATEIFNEW` 하며 소스 제어 프로젝트가 생성 됩니다.
+ 예를 들어 Visual Studio의 **새 프로젝트** 마법사에서 사용자가 프로젝트를 소스 제어에 추가 하는 경우 visual studio는이 함수를 호출 하 고 플러그 인은 소스 제어 시스템에서 visual studio 프로젝트를 포함 하는 새 프로젝트를 만들 수 있는지 여부를 확인 합니다. 마법사를 완료 하기 전에 사용자가 **취소** 를 클릭 하면 프로젝트가 생성 되지 않습니다. 사용자가 **확인** 을 클릭 하면 Visual Studio가를 호출 하 `SccOpenProject` 고를 전달 `SCC_OPT_CREATEIFNEW` 하며 소스 제어 프로젝트가 생성 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

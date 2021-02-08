@@ -2,17 +2,17 @@
 title: Azure 클라우드 서비스 프로젝트 만들기
 description: Visual Studio에서 Azure 클라우드 서비스 프로젝트를 만드는 방법을 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844504"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트 만들기
 

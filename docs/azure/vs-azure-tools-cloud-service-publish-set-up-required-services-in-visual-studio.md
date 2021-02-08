@@ -2,17 +2,17 @@
 title: 클라우드 서비스 게시 또는 배포 준비
 description: 클라우드 및 스토리지 계정 서비스를 설정하고 Azure 애플리케이션을 구성하는 절차에 대해 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 06157f1476762af5bfe24ce950e29e80ac60e6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844426"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio에서 클라우드 서비스 게시 또는 배포 준비
 

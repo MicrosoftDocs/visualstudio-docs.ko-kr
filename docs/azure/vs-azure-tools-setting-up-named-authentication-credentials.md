@@ -2,17 +2,17 @@
 title: 명명된 인증 자격 증명 설정 | Microsoft Docs
 description: 애플리케이션을 Visual Studio에서 Azure로 게시하거나 기존 클라우드 서비스를 모니터링할 수 있도록 Visual Studio가 Azure에 대한 요청을 인증하는 데 사용할 수 있는 자격 증명을 제공하는 방법에 대해 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843802"
 ---
 # <a name="set-up-named-authentication-credentials"></a>명명된 인증 자격 증명 설정
 

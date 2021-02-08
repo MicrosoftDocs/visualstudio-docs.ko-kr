@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14b5bdc8a8be5734da765f0396fb96830042969f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842227"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 이 인터페이스는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugReferenceInfo2 : IUnknown
@@ -37,12 +37,12 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugReferenceInfo2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|열거형 시퀀스에서 지정 된 수의 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|열거형 시퀀스에서 지정 된 수의 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|열거형 시퀀스에서 지정 된 수의 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|열거자의 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -55,7 +55,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

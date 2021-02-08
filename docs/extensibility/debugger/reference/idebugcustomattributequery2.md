@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842409"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 이 필드에 대 한 사용자 지정 특성이 있는지 여부를 확인 하 고, 있는 경우 특성 정보를 반환 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -38,14 +38,14 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는 **Idebugcustomattributequery** 인터페이스의 메서드를 보여 줍니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|사용자 지정 특성이 이름으로 존재 하는지 여부를 확인 합니다.|
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|지정 된 사용자 지정 특성에 대 한 특성 정보를 가져옵니다.|
 
  **Idebugcustomattributequery** 메서드 외에도 `IDebugCustomAttributeQuery2` 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|이 필드에 연결 된 모든 사용자 지정 특성에 대 한 열거자를 가져옵니다.|
 
@@ -59,7 +59,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

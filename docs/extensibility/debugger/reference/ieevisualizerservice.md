@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b10a09aeab6012981fd464694c641aaf6bba4951
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842240"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80717935"
 
  이 인터페이스는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 및 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 인터페이스에 기능을 제공 하는 키 메서드를 구현 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEEVisualizerService : IUnknown
@@ -39,7 +39,7 @@ IEEVisualizerService : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|이 서비스에서 알고 있는 사용자 지정 뷰어 수를 검색 합니다.|
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|사용자 지정 뷰어 목록을 검색 합니다.|
@@ -60,7 +60,7 @@ IEEVisualizerService : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

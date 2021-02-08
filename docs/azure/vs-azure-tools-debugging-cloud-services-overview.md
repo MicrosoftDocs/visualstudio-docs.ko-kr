@@ -2,18 +2,18 @@
 title: Azure Cloud Services 디버깅 옵션 | Microsoft Docs
 description: Azure Cloud Services 디버깅
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c32ab209f612c9e818f5e4ef1ab85a341e2027eb
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2471b79c7401d63b9655586fc4745d3977d37275
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844231"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Azure 클라우드 서비스를 디버그하는 다양한 방법 알아보기
 이 문서에서는 Azure 클라우드 서비스를 디버그하는 다양한 방법에 대한 링크를 제공합니다.

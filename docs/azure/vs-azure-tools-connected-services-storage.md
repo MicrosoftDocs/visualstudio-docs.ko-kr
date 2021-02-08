@@ -2,18 +2,18 @@
 title: 연결된 서비스를 사용하여 Azure Storage 추가 | Microsoft Docs
 description: Visual Studio를 사용 하 여 Azure Storage 서비스 종속성을 앱에 추가 연결된 서비스
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844348"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 
@@ -33,7 +33,7 @@ Visual Studio를 사용 하 여 다음 중 하나를 **연결된 서비스** 기
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트

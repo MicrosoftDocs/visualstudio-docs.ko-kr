@@ -2,17 +2,17 @@
 title: Azure 클라우드 서비스 게시
 description: Visual Studio Azure 애플리케이션 게시 마법사에서 다양한 설정을 구성하는 방법에 대해 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844062"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure 애플리케이션 게시 마법사 사용
 

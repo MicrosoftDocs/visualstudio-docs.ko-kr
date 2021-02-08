@@ -2,17 +2,17 @@
 title: 프라이빗 Azure 클라우드에 액세스
 description: Visual Studio를 사용하여 프라이빗 클라우드 리소스에 액세스하는 방법에 대해 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 92ab5ae3dc6fa5fd807203a1adf2353a20bfb666
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5c54cf131dc85420377cda222ff6f4400dbbc04b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844517"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Visual Studio로 프라이빗 Azure 클라우드에 액세스
 

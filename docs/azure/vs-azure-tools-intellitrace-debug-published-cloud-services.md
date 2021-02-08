@@ -3,17 +3,17 @@ title: IntelliTrace를 사용 하 여 게시 된 Azure 클라우드 서비스 �
 ms.custom: SEO-VS-2020
 description: Visual Studio 및 IntelliTrace를 사용하여 클라우드 서비스를 디버그하는 방법을 알아봅니다.
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d419f80dc0319fbcebe053cd063cf668fc278a38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844205"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio 및 IntelliTrace를 사용하여 게시된 Azure 클라우드 서비스 디버깅
 IntelliTrace를 사용하여 Azure에서 실행할 때 역할 인스턴스에 대한 광범위한 정보를 기록할 수 있습니다. 문제의 원인을 찾아야 하는 경우 Azure에서 실행 중인 것처럼 Visual Studio에서 코드를 단계별로 실행하는 데 IntelliTrace 로그를 사용할 수 있습니다. 실제로 Azure에서 Azure 애플리케이션을 클라우드 서비스로 실행 중일 때 IntelliTrace는 키 코드 실행 및 환경 데이터를 기록하여 Visual Studio에서 기록된 데이터를 재생할 수 있습니다.

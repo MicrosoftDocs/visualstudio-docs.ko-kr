@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842195"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 이 메서드는 시각화 도우미 서비스를 만듭니다.
@@ -28,22 +28,22 @@ ms.locfileid: "80717912"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateVisualizerService(
-   IDebugBinder*              binder,
-   IDebugSymbolProvider*      pSymProv,
-   IDebugAddress*             pAddress,
-   IEEVisualizerDataProvider* dataProvider,
-   IEEVisualizerService**     ppService
+HRESULT CreateVisualizerService(
+   IDebugBinder*              binder,
+   IDebugSymbolProvider*      pSymProv,
+   IDebugAddress*             pAddress,
+   IEEVisualizerDataProvider* dataProvider,
+   IEEVisualizerService**     ppService
 );
 ```
 
 ```csharp
-int CreateVisualizerService(
-   IDebugBinder binder,
-   IDebugSymbolProvider      pSymProv,
-   IDebugAddress             pAddress,
-   IEEVisualizerDataProvider dataProvider,
-   out IEEVisualizerService  ppService
+int CreateVisualizerService(
+   IDebugBinder binder,
+   IDebugSymbolProvider      pSymProv,
+   IDebugAddress             pAddress,
+   IEEVisualizerDataProvider dataProvider,
+   out IEEVisualizerService  ppService
 );
 ```
 
@@ -63,13 +63,13 @@ int CreateVisualizerService(
 `ppService`\
 제한이 만든 서비스입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  `binder`, `pSymProv` 및 `pAddress` 매개 변수가 모두 메서드에 전달 되었습니다 `IDebugParsedExpression::EvaluateSync` . `CreateVisualizerService` 는 `IDebugParsedExpression::EvaluateSync` 형식 시각화 도우미에 대 한 식 계산기의 지원의 일부로 서만 호출 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

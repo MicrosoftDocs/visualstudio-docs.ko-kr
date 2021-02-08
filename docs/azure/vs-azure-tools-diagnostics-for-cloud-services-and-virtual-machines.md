@@ -3,17 +3,17 @@ title: 진단-Azure Cloud Services & Vm
 ms.custom: SEO-VS-2020
 description: Visual Studio에서 Azure Cloud Services 및 VM(가상 머신) 디버깅을 위해 진단을 설정하는 방법을 설명합니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e98d335d53edb7e8771db3314944a11c534d046b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844309"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -216,7 +216,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics)
     클라우드 탐색기 또는 서버 탐색기에서 배포와 관련된 스토리지 계정을 엽니다.
 3. 테이블 뷰어에서 진단 테이블을 열고 수집한 데이터 검토 합니다. IIS 로그 및 사용자 지정 로그인 경우 BLOB 컨테이너를 열 수 있습니다. 다음 표에는 다른 로그 파일에 대한 데이터를 포함하는 테이블 또는 Blob 컨테이너가 나와 있습니다. 해당 로그 파일에 대한 데이터 외에도 테이블 항목에는 **EventTickCount**, **DeploymentId**, **Role** 및 **RoleInstance** 가 포함되어 데이터가 생성된 가상 머신 및 역할과 데이터가 생성된 시기를 파악할 수 있습니다.
 
-   | 진단 데이터 | 설명 | 위치 |
+   | 진단 데이터 | Description | 위치 |
    | --- | --- | --- |
    | 애플리케이션 로그 전송 사용 |코드에서 **Diagnostics. Trace** 클래스의 메서드를 호출 하 여 생성 하는 로그입니다. |WADLogsTable |
    | 이벤트 로그 |가상 머신에서 Windows 이벤트 로그에서 가져온 데이터입니다. Windows에서는 이러한 로그에 정보를 저장하지만 애플리케이션 및 서비스에서는 로그를 사용하여 오류 또는 로그 정보를 보고합니다. |WADWindowsEventLogsTable |
@@ -258,7 +258,7 @@ ETW 프레임워크는 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics)
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure 클라우드 서비스 문제 해결
 "사용 중" 상태에 고착된 역할, 반복적인 재활용 또는 내부 서버 오류 throw와 같은 클라우드 서비스 프로젝트에서 문제가 발생하는 경우 이러한 문제를 진단하고 해결하는 데 사용할 수 있는 도구와 기술이 있습니다. 일반적인 문제 및 해결 방법에 대한 구체적인 예제와 이러한 오류를 진단 및 해결하는 데 사용되는 개념 및 도구에 대한 개요는 [Azure PaaS Compute 진단 데이터](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data)를 참조하세요.
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Q&A
 **버퍼 크기란 무엇이고 얼마나 클 수 있습니까?**
 
 각 가상 머신 인스턴스에서 로컬 파일 시스템에 저장할 수 있는 진단 데이터의 양에 대한 할당량 제한입니다. 또한 사용할 수 있는 진단 데이터의 각 형식에 대해 버퍼 크기를 지정합니다. 이 버퍼 크기는 해당 형식의 데이터에 대해 개별 할당량과 같은 역할을 합니다. 전체 할당량과 남은 메모리의 양을 확인하려면 진단 데이터 형식에 대한 대화 상자의 아래쪽을 확인하세요. 버퍼 크기를 크게 지정하거나 더 많은 데이터 형식을 지정할 경우 전체 할당량에 근접하게 됩니다. diagnostics.wadcfg 또는 .wadcfgx 구성 파일을 수정하여 전체 할당량을 변경할 수 있습니다. 진단 데이터는 애플리케이션 데이터와 같은 파일 시스템에 저장됩니다. 애플리케이션이 많은 양의 디스크 공간을 사용하는 경우 전체 진단 할당량을 늘리지 말아야 합니다.

@@ -2,17 +2,17 @@
 title: Azure Tools를 사용하여 클라우드 서비스 게시 | Microsoft Docs
 description: Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트를 게시하는 방법에 대해 알아보세요.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3a6bc08d3c293f67e10d79996968eeb483203095
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843984"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio를 사용하여 클라우드 서비스 게시
 
@@ -43,7 +43,7 @@ Azure 애플리케이션을 게시하면 다음 작업 중 하나를 수행할 �
 
    b. **Azure 응용 프로그램 패키지** 대화 상자에서 패키지를 만들려는 서비스 구성을 선택하고 빌드 구성을 선택합니다.
 
-   c. (옵션 사항) 클라우드 서비스를 게시한 다음 원격 데스크톱을 사용하도록 설정하려면 **모든 역할에 대해 원격 데스크톱 사용** 을 선택한 다음 **설정** 을 선택하여 원격 데스크톱 자격 증명을 구성합니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services에서 역할에 대한 원격 데스크톱 연결 사용](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)을 참조하세요.
+   다. (옵션 사항) 클라우드 서비스를 게시한 다음 원격 데스크톱을 사용하도록 설정하려면 **모든 역할에 대해 원격 데스크톱 사용** 을 선택한 다음 **설정** 을 선택하여 원격 데스크톱 자격 증명을 구성합니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services에서 역할에 대한 원격 데스크톱 연결 사용](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)을 참조하세요.
 
       게시 후 클라우드 서비스를 디버깅하려면 **모든 역할에 대해 원격 디버거 사용** 을 선택하여 원격 디버깅을 설정합니다.
 
@@ -102,7 +102,7 @@ Azure 애플리케이션을 게시하면 다음 작업 중 하나를 수행할 �
 
    b. **암호** 에 암호를 입력합니다.
 
-   c. (선택 사항) 이 프로필에 이 암호를 저장하려면 **암호 저장** 을 선택합니다.
+   다. (선택 사항) 이 프로필에 이 암호를 저장하려면 **암호 저장** 을 선택합니다.
 
 1. 변경 내용을 웹 역할에 게시하려면 **게시** 를 선택합니다.
 
@@ -131,7 +131,7 @@ Azure 애플리케이션을 게시하면 다음 작업 중 하나를 수행할 �
 
    a. **솔루션 탐색기** 에서 참조 된 어셈블리가 없는 프로젝트의 프로젝트 노드를 엽니다.
    b. 프로젝트에 어셈블리를 추가하려면 **참조** 폴더의 바로 가기 메뉴를 연 다음 **참조 추가** 를 선택합니다. 참조 추가 대화 상자가 나타납니다.
-   c. 추가하려는 참조를 선택한 다음 **확인** 을 선택합니다. 해당 참조가 **참조** 폴더의 목록에 추가됩니다.
+   다. 추가하려는 참조를 선택한 다음 **확인** 을 선택합니다. 해당 참조가 **참조** 폴더의 목록에 추가됩니다.
    d. 추가한 어셈블리의 바로 가기 메뉴를 열고 **속성** 을 선택합니다. **속성** 창이 나타납니다.
 
       이 어셈블리를 서비스 패키지에 포함 하려면 **로컬 복사 목록** 에서 **True** 를 선택 합니다.

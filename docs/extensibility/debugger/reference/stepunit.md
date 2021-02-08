@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a87c86647407d90c9f4292b1307fd5623e85d13b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42c6af308770132343e18b95a9f839717f6d401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840095"
 ---
 # <a name="stepunit"></a>STEPUNIT
 단계별 실행 단위를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_STEPUNIT { 
+enum enum_STEPUNIT { 
    STEP_STATEMENT   = 0,
    STEP_LINE        = 1,
    STEP_INSTRUCTION = 2
@@ -37,7 +37,7 @@ typedef DWORD STEPUNIT;
 ```
 
 ```csharp
-enum enum_STEPUNIT { 
+enum enum_STEPUNIT { 
    STEP_STATEMENT   = 0,
    STEP_LINE        = 1,
    STEP_INSTRUCTION = 2
