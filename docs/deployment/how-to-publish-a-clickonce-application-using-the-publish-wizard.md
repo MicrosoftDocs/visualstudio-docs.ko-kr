@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 252d029e7e2e5b9b5dfe27b2fb1cd72e1c09b473
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7591513bc52807b87e9df2f0fb65364d5aff2db8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900541"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시
 ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나 경로, FTP 서버 또는 이동식 미디어에 해당 애플리케이션을 게시해야 합니다. 게시 마법사를 사용하여 애플리케이션을 게시할 수 있습니다. 게시와 관련된 추가 속성은 **프로젝트 디자이너** 의 **게시** 페이지에서 사용 가능합니다. 자세한 내용은 [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)를 참조하세요.
@@ -32,7 +32,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 게시 마법사를 실행하기 전에 게시 속성을 적절하게 설정해야 합니다. 예를 들어 ClickOnce 애플리케이션에 서명을 하기 위한 키는 **프로젝트 디자이너** 의 **서명** 페이지에서 지정할 수 있습니다. 자세한 내용은 [ClickOnce 응용 프로그램 보안](../deployment/securing-clickonce-applications.md)을 참조 하세요.
 
 > [!NOTE]
-> ClickOnce를 사용하여 애플리케이션 버전을 둘 이상 설치하면 이전 애플리케이션 버전이 지정한 게시 위치의 *Archive* 폴더로 이동합니다. 이러한 방식으로 이전 버전이 보관되므로 설치 디렉터리에 이전 버전의 폴더가 남지 않습니다.
+> ClickOnce를 사용 하 여 응용 프로그램 버전을 두 개 이상 설치 하면 이전 버전의 응용 프로그램이 지정한 게시 위치의 *archive* 폴더로 이동 합니다. 이러한 방식으로 이전 버전이 보관되므로 설치 디렉터리에 이전 버전의 폴더가 남지 않습니다.
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
@@ -71,7 +71,7 @@ ClickOnce 애플리케이션을 사용자에게 제공하려면 파일 공유나
 
 1. **솔루션 탐색기** 에서 애플리케이션 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 클릭합니다.
 
-    **프로젝트 디자이너가** 나타납니다.
+    **프로젝트 디자이너** 가 표시됩니다.
 
 2. **게시** 탭을 클릭하여 **프로젝트 디자이너** 에서 **게시** 페이지를 열고 **게시 마법사** 단추를 클릭합니다.
 

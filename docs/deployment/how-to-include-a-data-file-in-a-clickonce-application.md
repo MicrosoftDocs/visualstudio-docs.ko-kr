@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900608"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 데이터 파일 포함
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]설치 하는 각 응용 프로그램에는 응용 프로그램이 자체 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 데이터 디렉터리가 할당 됩니다. 데이터 파일에는 텍스트 파일, XML 파일 또는 Microsoft Access 데이터베이스 ( *.mdb* ) 파일 등 모든 형식의 파일이 포함 될 수 있습니다. 다음 절차에서는 모든 형식의 데이터 파일을 응용 프로그램에 추가 하는 방법을 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]설치 하는 각 응용 프로그램에는 응용 프로그램이 자체 데이터를 관리할 수 있는 대상 컴퓨터의 로컬 디스크에 데이터 디렉터리가 할당 됩니다. 데이터 파일에는 텍스트 파일, XML 파일 또는 Microsoft Access 데이터베이스 (*.mdb*) 파일 등 모든 형식의 파일이 포함 될 수 있습니다. 다음 절차에서는 모든 형식의 데이터 파일을 응용 프로그램에 추가 하는 방법을 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe를 사용 하 여 데이터 파일을 포함 하려면
 

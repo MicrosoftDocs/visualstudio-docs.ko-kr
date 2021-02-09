@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899038"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.
@@ -43,12 +43,12 @@ int EnumBreakpoints(
 `ppEnum`\
 제한이 현재 코드 위치와 연결 된 모든 중단점을 열거 하는 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  특정 위치의 모든 중단점이 특정 시간에 발생 하는 것은 아닙니다. 예를 들어 조건이 있는 중단점은 조건이 충족 될 때까지 발생 하지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

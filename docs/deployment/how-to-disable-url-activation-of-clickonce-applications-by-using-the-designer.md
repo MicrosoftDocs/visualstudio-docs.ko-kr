@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 520f9aea1dbd3d3f742293a95b4dd7bdbac62a3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900754"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>방법: 디자이너를 사용하여 ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
 일반적으로 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 웹 서버에서 설치 된 직후 자동으로 시작 됩니다. 보안상의 이유로이 동작을 사용 하지 않도록 설정 하 고, 대신 **시작** 메뉴에서 응용 프로그램을 시작 하도록 사용자에 게 지시할 수 있습니다. 다음 절차에서는 URL 활성화를 사용하지 않도록 설정하는 방법에 대해 설명합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "94350012"
 
  이 절차에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 사용 합니다. 을 사용 하 여이 작업을 수행할 수도 있습니다 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . 자세한 내용은 [방법: ClickOnce 응용 프로그램의 URL 활성화 사용 안 함](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)을 참조 하세요.
 
-## <a name="procedure"></a>절차
+## <a name="procedure"></a>프로시저
 
 #### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899437"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>연습: Word 용 첫 VSTO 추가 기능 만들기
   이 소개용 연습에서는 Microsoft Office Word용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 문서에 관계없이 애플리케이션 자체에서 사용할 수 있습니다.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899958"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 구조(소스 제어 VSPackage)
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 61c81ab15a3f4f6ec89d1b37a2c96d963bbdf67b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900410"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>방법: 최종 사용자가 설치하는 원본 위치 지정
 
@@ -46,6 +46,6 @@ ms.locfileid: "94349622"
 3. 설치 URL 필드에 형식을 사용 하 여 정규화 된 URL을 사용 하거나 형식을 사용 하 여 UNC 경로를 사용 하 여 설치 위치를 입력 합니다 `https://www.contoso.com/ApplicationName` `\Server\ApplicationName` .
 
 ## <a name="see-also"></a>참고 항목
-- [방법: Visual Studio의 파일 복사 위치 지정](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [방법: Visual Studio에서 파일을 복사 하는 위치 지정](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
 - [방법: 게시 마법사를 사용 하 여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

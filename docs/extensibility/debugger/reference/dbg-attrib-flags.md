@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899158"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 또는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 인터페이스에 대 한 다양 한 특성을 설명 합니다. [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체의 멤버입니다.
@@ -165,7 +165,7 @@ public const int DBG_ATTRIB_CHILD_ALL            = 0x0000ff0000000000,
 public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `DBG_ATTRIB_NONE`\
  특성이 없음을 나타냅니다.
 
@@ -290,7 +290,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  이 개체가 내부 클래스 임을 나타냅니다.
 
  `DBG_ATTRIB_MOSTDERIVED`\
- 이 개체가 '*가장 많이 파생*됨 ' 임을 나타냅니다. "가장 많이*파생*된" 용어는 해당 참조의 형식이 아니라 개체의 실제 형식을 의미 합니다.
+ 이 개체가 '*가장 많이 파생* 됨 ' 임을 나타냅니다. "가장 많이 *파생* 된" 용어는 해당 참조의 형식이 아니라 개체의 실제 형식을 의미 합니다.
 
  `DBG_ATTRIB_CHILD_ALL`\
  에서의 마스크를 `DBG_ATTRIB_DATA` 나타냅니다 `DBG_ATTRIB_MOSTDERIVED` .

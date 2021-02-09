@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899132"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 여러 종류의 주소를 설명 합니다.
@@ -52,7 +52,7 @@ public struct DEBUG_ADDRESS_UNION {
 }
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwKind`\
 합집합을 해석 하는 방법을 지정 하는 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형의 값입니다.
 
@@ -141,8 +141,8 @@ namespace MyPackage
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)

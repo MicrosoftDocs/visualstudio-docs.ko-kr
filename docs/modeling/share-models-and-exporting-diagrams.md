@@ -9,15 +9,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e12dcd1fcb9119aa65811fc149d86150a8b084e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899778"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.
@@ -45,7 +45,7 @@ Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-|-|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 공유합니다.|
 |[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 애플리케이션으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|

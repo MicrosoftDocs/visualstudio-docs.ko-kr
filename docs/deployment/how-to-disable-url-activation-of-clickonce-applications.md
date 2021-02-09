@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e721199716abc47e89dc9fd2c7c510926853439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900693"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 URL 활성화를 사용하지 않도록 설정
 
@@ -33,7 +33,7 @@ ms.locfileid: "94351234"
 
 이 절차에서는 MageUI.exe Windows SDK (소프트웨어 개발 키트) 도구를 사용 합니다. 이 도구에 대 한 자세한 내용은 참조 하세요. [MageUI.exe (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)합니다. Visual Studio를 사용 하 여이 절차를 수행할 수도 있습니다.
 
-## <a name="procedure"></a>절차
+## <a name="procedure"></a>프로시저
 
 ### <a name="to-disable-url-activation-for-your-application"></a>애플리케이션의 URL 활성화를 사용하지 않도록 설정하려면
 

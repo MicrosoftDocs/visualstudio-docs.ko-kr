@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900469"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
 
@@ -51,7 +51,7 @@ ms.locfileid: "94349856"
 
     **Visual Basic 프로젝트에서 매니페스트 파일을 열려면**
 
-    1. 메뉴 모음에서 **프로젝트** , *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
+    1. 메뉴 모음에서 **프로젝트**, *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
 
          WPF 프로젝트에 대 한 속성 페이지가 나타납니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "94349856"
 
     **C # 프로젝트에서 매니페스트 파일을 열려면**
 
-    1. 메뉴 모음에서 **프로젝트** , *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
+    1. 메뉴 모음에서 **프로젝트**, *projectname* **속성** 을 선택 합니다. 여기서 *ProjectName* 는 WPF 프로젝트의 이름입니다.
 
          WPF 프로젝트에 대 한 속성 페이지가 나타납니다.
 

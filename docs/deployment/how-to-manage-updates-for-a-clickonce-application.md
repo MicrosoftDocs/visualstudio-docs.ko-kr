@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 03b8b3899a90588ca747ca93c0ff6bd7279e1bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900547"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 업데이트 관리
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 자동으로 또는 프로그래밍 방식으로 업데이트를 확인할 수 있습니다. 개발자는 업데이트 확인을 수행 하는 시기와 방법, 업데이트가 필수 인지 여부 및 응용 프로그램이 업데이트를 확인 해야 하는 위치를 지정 하는 데 많은 유연성을 발휘할 수 있습니다.

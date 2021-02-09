@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900165"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 이 메서드는 디버깅 프로세스의 지정 된 속성 값을 쿼리 합니다.
@@ -55,11 +55,11 @@ int QueryProperties(
 `pvarPropValue`\
 제한이 속성 값을 포함 하는 배열입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 거의 사용 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

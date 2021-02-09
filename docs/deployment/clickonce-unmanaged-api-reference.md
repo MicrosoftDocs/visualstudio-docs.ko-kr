@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 88d8147dded05c6bec54682e76c6a8c1826b43e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900805"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 관리되지 않는 API 참조
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll에서 관리 되지 않는 공용 Api.
@@ -54,7 +54,7 @@ ms.locfileid: "94382613"
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|형식|
+|매개 변수|Description|Type|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL`에 대한 포인터입니다.|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest`에 대한 포인터입니다.|LPCWSTR|
@@ -82,14 +82,14 @@ ms.locfileid: "94382613"
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|형식|
+|매개 변수|Description|Type|
 |---------------|-----------------|----------|
 |`deploymentUrl`|배포 매니페스트의 URL을 포함 하는 NULL로 끝나는 문자열에 대 한 포인터입니다.|LPCWSTR|
-|`data`|나중에 사용하기 위해 예약되어 있습니다. Null이어야 합니다.|LPVOID|
-|`flags`|나중에 사용하기 위해 예약되어 있습니다. 0이어야 합니다.|DWORD|
+|`data`|다음에 사용하도록 예약됩니다. Null이어야 합니다.|LPVOID|
+|`flags`|다음에 사용하도록 예약됩니다. 0이어야 합니다.|DWORD|
 
 ### <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류를 나타내는 HRESULT를 반환 합니다. 관리 되는 예외가 발생 하면는 0x80020009 (DISP_E_EXCEPTION)를 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

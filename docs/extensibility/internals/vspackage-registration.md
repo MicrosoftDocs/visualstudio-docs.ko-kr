@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900043"
 ---
 # <a name="vspackage-registration"></a>VSPackage 등록
 Vspackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치 되어 있고 로드 되어야 한다는 것을 알려 주어 야 합니다. 이 프로세스는 레지스트리에서 정보를 작성 하 여 수행 됩니다. 이는 설치 관리자의 일반적인 작업입니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899096"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 디버그 속성에 대 한 정보를 포함 합니다.
@@ -51,7 +51,7 @@ public struct DEBUG_PROPERTY_INFO {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwValidFields`\
 채울 필드를 지정 하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 플래그 조합입니다.
 
@@ -85,8 +85,8 @@ public struct DEBUG_PROPERTY_INFO {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

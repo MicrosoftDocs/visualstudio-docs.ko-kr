@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900299"
 ---
 # <a name="code_path"></a>CODE_PATH
 메서드 또는 함수 호출을 설명 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80737672"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagCODE_PATH { 
+typedef struct tagCODE_PATH { 
     BSTR                bstrName;
     IDebugCodeContext2* pCode;
 } CODE_PATH;
@@ -41,7 +41,7 @@ public struct CODE_PATH {
 }
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `bstrName`\
 코드 경로의 이름입니다.
 
@@ -58,7 +58,7 @@ public struct CODE_PATH {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

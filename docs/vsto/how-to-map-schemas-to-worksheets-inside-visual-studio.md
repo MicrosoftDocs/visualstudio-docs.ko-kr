@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900854"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>방법: Visual Studio 내에서 워크시트에 스키마 매핑
   워크시트가 Visual Studio에서 열려 있는 동안에는 XML 스키마를 워크시트에 매핑할 수 있습니다. Visual Studio 외부에서 통합 문서를 열 때 사용 하는 것과 동일한 Microsoft Office Excel 도구를 사용 합니다. Excel 솔루션을 만들기 전이나 후에 워크시트에 스키마를 매핑 하는지 여부에 관계 없이 Office 프로젝트는 동일한 개체를 만듭니다.

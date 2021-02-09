@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+manager: jmartens
+ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900834"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
@@ -31,7 +31,7 @@ ms.locfileid: "96995527"
 
 다음은 가장 많이 사용되는 레이아웃 패널이며, 다른 레이아웃 패널도 있습니다. 이 모든 항목은 Visual Studio의 **도구 상자** 또는 Blend for Visual Studio의 **자산** 패널에서 확인할 수 있습니다.
 
-### <a name="grid"></a>표
+### <a name="grid"></a>그리드
 
 개체를 행 및 열로 정렬합니다.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900914"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; 요소 (Visual Studio에서 Office 개발)
   `application` 네임스페이스의 `vstav3` 요소는 Office 솔루션에 대한 설명을 래핑합니다. 문서 수준 사용자 지정 및 VSTO 추가 기능에 대한 자식 요소가 서로 다릅니다.
@@ -67,7 +67,7 @@ ms.locfileid: "96847041"
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `application` 을 사용하여 배포된 문서 수준 Office 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)에서 제공하는 보다 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
@@ -86,7 +86,7 @@ ms.locfileid: "96847041"
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `application` 을 사용하여 배포된 애플리케이션 수준 Office 솔루션의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)에서 제공하는 보다 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

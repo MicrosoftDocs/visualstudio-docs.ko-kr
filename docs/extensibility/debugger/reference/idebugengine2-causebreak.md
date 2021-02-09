@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40fd243fa8f3f67786b862c3e0cdbfd81373a53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899022"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 다음에 스레드 중 하나가 실행을 시도할 때이 디버그 엔진 (DE)에서 디버그 하는 모든 프로그램의 실행을 중지 하도록 요청 합니다.
@@ -28,8 +28,8 @@ ms.locfileid: "80731160"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CauseBreak( 
-   void 
+HRESULT CauseBreak( 
+   void 
 );
 ```
 
@@ -43,6 +43,6 @@ int CauseBreak();
 ## <a name="remarks"></a>설명
  이 메서드는 비동기입니다. [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 이벤트는 다음에이 메서드를 호출한 후 프로그램이 실행을 시도할 때 전송 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

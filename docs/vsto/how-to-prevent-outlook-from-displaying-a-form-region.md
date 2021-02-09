@@ -12,15 +12,15 @@ helpviewer_keywords:
 - canceling form region display
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f247bf82d51fda6d321b45c16f91b857300cc1e4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f6e6b00e8e26d261aac18dd48af1d912bd6ffad1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899545"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>방법: Outlook에서 양식 영역 표시 하지 않기
   Outlook Microsoft Office 특정 항목에 대 한 양식 영역을 표시 하지 않으려는 경우가 있을 수 있습니다. 예를 들어 연락처 항목에 비즈니스 주소가 포함 되어 있지 않은 경우 지도에서 비즈니스의 위치를 표시 하는 양식 영역을 표시 하지 않을 수 있습니다.

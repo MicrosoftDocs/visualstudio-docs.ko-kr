@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899171"
 ---
 # <a name="core-interfaces"></a>Core 인터페이스
 다음 인터페이스는를 사용 하 여 디버거를 확장 하는 핵심 인터페이스 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 입니다.
@@ -68,7 +68,7 @@ ms.locfileid: "80737583"
 ## <a name="breakpoints"></a><a name="Breakpoints"></a> 줄바꿈
  이러한 인터페이스는 중단점의 구현 및 추적과 관련 되어 있습니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|메모리 위치에 바인딩된 중단점을 나타냅니다.|
 |[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|중단점이 메모리 위치에 바인딩될 때 DE에서 보냅니다.|
@@ -89,7 +89,7 @@ ms.locfileid: "80737583"
 ## <a name="contexts"></a><a name="Contexts"></a> 문맥
  이러한 인터페이스는 디버그 중인 프로그램 내에서 다양 한 종류의 컨텍스트를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|코드 명령의 시작 위치를 나타냅니다.|
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 인터페이스를 확장 하 여 모듈 및 프로세스 인터페이스를 검색할 수 있도록 합니다.|
@@ -103,7 +103,7 @@ ms.locfileid: "80737583"
 ## <a name="core-server"></a><a name="CoreServer"></a> 핵심 서버
  이러한 인터페이스는 프로그램이 디버깅 되는 컴퓨터를 나타냅니다. 이는에서 구현 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 되지만 디버그 엔진에서로 호출 될 수 있습니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|컴퓨터에 대 한 정보 뿐만 아니라 포트 및 포트 공급자에 대 한 액세스를 제공 합니다.|
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|원격 디버깅을 지 원하는 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 을 나타냅니다.|
@@ -111,7 +111,7 @@ ms.locfileid: "80737583"
 ## <a name="debug-engines"></a><a name="DebugEngines"></a> 디버그 엔진
  이러한 인터페이스는 디버그 엔진과 관련 이벤트를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|사용자 지정 디버그 엔진을 나타냅니다.|
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|기호, JustMyCode 및 예외의 로드를 지 원하는 사용자 지정 디버그 엔진을 나타냅니다.|
@@ -123,7 +123,7 @@ ms.locfileid: "80737583"
 ## <a name="documents"></a><a name="Documents"></a> 문서
  이러한 인터페이스는 문서 (소스 파일) 및 관련 된 요소를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|열려는 문서를 요청 하기 위해 DE에서 보냅니다.|
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|문서에서 디스어셈블 된 명령의 스트림을 나타냅니다.|
@@ -138,7 +138,7 @@ ms.locfileid: "80737583"
 ## <a name="events"></a><a name="Events"></a> 이벤트
  이러한 인터페이스는 DE와 세션 디버그 관리자 (SDM) 사이에서 전송 되는 모든 이벤트를 나타냅니다.
 
-| 인터페이스 | 구현 방법 | 설명 |
+| 인터페이스 | 구현 방법 | Description |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | 열려는 문서를 요청 하기 위해 DE에서 보냅니다. |
 | [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) | DE | 디버그 엔진 (DE)은 기호를 로드 하는 동안 상태 표시줄 메시지를 설정 하기 위해이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다. |
@@ -183,7 +183,7 @@ ms.locfileid: "80737583"
 ## <a name="expressions"></a><a name="Expressions"></a> 식
  이러한 인터페이스는 특정 컨텍스트에서 평가할 식을 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|계산할 식을 나타냅니다. [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스에서 가져옵니다.|
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|식이 계산 되는 컨텍스트를 나타냅니다. [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 인터페이스에서 가져옵니다.|
@@ -192,7 +192,7 @@ ms.locfileid: "80737583"
 ## <a name="memory"></a><a name="Memory"></a> Ram
  이러한 인터페이스는 메모리의 바이트 시퀀스를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|읽거나 쓸 수 있는 메모리의 바이트 시퀀스를 나타냅니다.|
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|바이트 시퀀스의 메모리 내 위치를 나타냅니다.|
@@ -200,7 +200,7 @@ ms.locfileid: "80737583"
 ## <a name="modules"></a><a name="Modules"></a> 모듈
  이러한 인터페이스는 실행 파일 또는에 해당 하는 모듈을 나타냅니다. DLL 파일입니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|단일 실행 파일 또는 DLL을 나타냅니다.|
 |[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|기호를 지 원하는 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 나타냅니다.|
@@ -211,7 +211,7 @@ ms.locfileid: "80737583"
 ## <a name="ports"></a><a name="Ports"></a> 포트
  이러한 인터페이스는 포트 및 포트 공급자를 나타냅니다.
 
-| 인터페이스 | 구현 방법 | 설명 |
+| 인터페이스 | 구현 방법 | Description |
 | - |----------------| - |
 | [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS, PS | 로컬 컴퓨터의 기본 포트를 나타냅니다. |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | DCOM을 사용 하 여 방화벽이 원격 디버깅을 차단 하지 않도록 UI에 요청 하는 디버그 엔진을 사용 하도록 설정 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 합니다. |
@@ -231,7 +231,7 @@ ms.locfileid: "80737583"
 ## <a name="processes"></a><a name="Processes"></a> 프로세스만
  이러한 인터페이스는 하나 이상의 프로그램을 포함 하는 단일 실행 파일인 프로세스를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|컴퓨터에서 실행 중인 프로세스를 나타냅니다.|
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|디버깅을 적극적으로 지 원하는 프로세스를 나타냅니다. [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스에서 Step, Continue 및 Execute 메서드를 대체 하는 데 사용 됩니다.|
@@ -243,7 +243,7 @@ ms.locfileid: "80737583"
 ## <a name="programs"></a><a name="Programs"></a> 프로그램인
  이러한 인터페이스는 물리적 실행 파일이 나 모듈에 해당 하지 않아도 되는 프로그램 (논리 실행 단위)을 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|동시에 디버깅 중인 다른 프로그램과 함께 작동 해야 하는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 을 나타냅니다.|
 |[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|논리적 실행 단위를 나타냅니다.|
@@ -262,7 +262,7 @@ ms.locfileid: "80737583"
 ## <a name="properties"></a><a name="Properties"></a> 속성
  이러한 인터페이스는 특정 컨텍스트 (일반적으로 식 계산의 결과)와 연결 된 값인 속성을 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|사용자 지정 방식으로 값을 표시할 수 있는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 을 나타냅니다.|
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|스택 프레임, 문서 또는 식 계산 결과의 값을 나타냅니다.|
@@ -276,7 +276,7 @@ ms.locfileid: "80737583"
 ## <a name="stack-frames"></a><a name="StackFrames"></a> 스택 프레임
  이러한 인터페이스는 중단점 또는 예외가 발생 한 컨텍스트인 스택 프레임을 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|중단점 또는 예외가 발생 한 컨텍스트를 나타냅니다.|
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|가로채기 예외를 처리할 수 있는 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 을 나타냅니다.|
@@ -286,7 +286,7 @@ ms.locfileid: "80737583"
 ## <a name="threads"></a><a name="Threads"></a> 스레드
  이러한 인터페이스는 스레드와 연결 된 이벤트를 나타냅니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|실행 스레드를 나타냅니다.|
 |[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|스레드를 만들 때 DE에서 보냅니다.|
@@ -297,7 +297,7 @@ ms.locfileid: "80737583"
 ## <a name="type-visualizers"></a><a name="TypeVisualizers"></a> 형식 시각화 도우미
  이러한 인터페이스는 형식 시각화 도우미에 대 한 지원을 제공 합니다. 이러한 인터페이스는 일반적으로 식 계산기에 의해 구현 됩니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|형식 시각화 도우미에 제공할 바이트 배열을 나타냅니다.|
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|형식 시각화 도우미에 전달 될 데이터에 대 한 액세스 권한을 얻기 위한 메서드를 제공 합니다.|

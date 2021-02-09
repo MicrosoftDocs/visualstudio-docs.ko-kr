@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901028"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>연습: 프로젝트 작업 목록 정의 배포
 
@@ -27,7 +27,7 @@ ms.locfileid: "95970425"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
@@ -45,7 +45,7 @@ SharePoint 목록 프로젝트를 만들고 목록 정의를 작업과 연결합
 
 3. 디버깅에 사용할 로컬 SharePoint 사이트를 지정 하 고 **팜 솔루션으로 배포** 옵션 단추를 선택한 다음 **마침** 단추를 선택 합니다.
 
-4. 프로젝트에 대 한 바로 가기 메뉴를 열고 **Add**  >  **새 항목** 추가를 선택 합니다.
+4. 프로젝트에 대 한 바로 가기 메뉴를 열고   >  **새 항목** 추가를 선택 합니다.
 
 5. **템플릿** 창에서 **목록** 템플릿을 선택한 다음 **추가** 단추를 선택 합니다.
 
@@ -158,11 +158,11 @@ Visual Studio는 IIS 응용 프로그램 풀을 재활용 하 고, 기존 버전
 
 5. PowerShell 명령을 사용 `Add-SPUserSolution` 하 여 원격 SharePoint 설치에 패키지를 설치 합니다. (팜 솔루션의 경우 명령을 사용 `Add-SPSolution` 합니다.)
 
-     예: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     예들 들어 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`입니다.
 
 6. PowerShell 명령을 사용 `Install-SPUserSolution` 하 여 솔루션을 배포 합니다. (팜 솔루션의 경우 명령을 사용 `Install-SPSolution` 합니다.)
 
-     예: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     예들 들어 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`입니다.
 
      원격 배포에 대 한 자세한 내용은 [솔루션 사용](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) 및 [SharePoint 2010의 PowerShell을 사용 하 여 솔루션 추가 및 배포](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)를 참조 하세요.
 
@@ -176,5 +176,5 @@ Visual Studio는 IIS 응용 프로그램 풀을 재활용 하 고, 기존 버전
 
 - [SharePoint Server 2010 용 Windows PowerShell](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

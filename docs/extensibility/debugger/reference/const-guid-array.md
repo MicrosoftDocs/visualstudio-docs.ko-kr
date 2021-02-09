@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900297"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 의 목록을 보유 하는 구조체입니다 `GUID` .
@@ -28,20 +28,20 @@ ms.locfileid: "80737628"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagCONST_GUID_ARRAY {
-    DWORD       dwCount;
-    CONST GUID* Members;
-} CONST_GUID_ARRAY;
+typedef struct tagCONST_GUID_ARRAY {
+    DWORD       dwCount;
+    CONST GUID* Members;
+} CONST_GUID_ARRAY;
 ```
 
 ```csharp
-public struct CONST_GUID_ARRAY {
-    public uint   dwCount;
-    public Guid[] Members;
+public struct CONST_GUID_ARRAY {
+    public uint   dwCount;
+    public Guid[] Members;
 }
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwCount`\
 `GUID`배열에 있는의 수 `Members` 입니다.
 
@@ -49,7 +49,7 @@ public struct CONST_GUID_ARRAY {
 S의 배열 `GUID` 입니다.
 
 ## <a name="remarks"></a>설명
-이 구조체는 WatchForProviderEvents [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 전달 되며 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드에서 반환 됩니다.
+이 구조체는 WatchForProviderEvents [program](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 메서드에 전달 되며 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 및 [](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 메서드에서 반환 됩니다.
 
 이 구조체 인스턴스의 소유자는 할당 된 모든 메모리를 해제 해야 합니다.
 
@@ -60,8 +60,8 @@ S의 배열 `GUID` 입니다.
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

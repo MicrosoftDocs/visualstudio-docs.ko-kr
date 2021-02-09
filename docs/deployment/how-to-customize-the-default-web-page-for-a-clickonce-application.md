@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0377bdc5fa38c814bb5cd6ff02d12dcec117266d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900782"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 기본 웹 페이지 사용자 지정
 ClickOnce 응용 프로그램을 웹에 게시 하면 웹 페이지가 자동으로 생성 되어 응용 프로그램과 함께 게시 됩니다. 기본 페이지에는 응용 프로그램의 이름 및 응용 프로그램을 설치 하 고, 필수 구성 요소를 설치 하거나, MSDN에서 도움말에 액세스 하는 링크가 포함 되어 있습니다.
@@ -52,5 +52,5 @@ ClickOnce 응용 프로그램을 웹에 게시 하면 웹 페이지가 자동으
 ## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)
-- [방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [방법: ClickOnce 애플리케이션의 게시 페이지 지정](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [방법: ClickOnce 응용 프로그램의 게시 페이지 지정](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

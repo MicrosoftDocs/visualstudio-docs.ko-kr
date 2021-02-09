@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899681"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
 

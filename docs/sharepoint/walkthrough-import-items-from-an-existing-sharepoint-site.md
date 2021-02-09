@@ -13,15 +13,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 861b6ff20f9ceb73c279e54fa89ee513389b6b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900953"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>연습: 기존 SharePoint 사이트에서 항목 가져오기
   이 연습에서는 기존 SharePoint 사이트에서 sharepoint 프로젝트로 항목을 가져오는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -143,7 +143,7 @@ ms.locfileid: "95970133"
 
      첫 번째 SharePoint 사이트에서 가져온 사용자 지정 사이트 열이 목록에 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
