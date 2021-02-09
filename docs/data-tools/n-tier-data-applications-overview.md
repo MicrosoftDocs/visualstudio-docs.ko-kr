@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c4a25cc340216e3410e0ca4b6cfabec77a73662e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866686"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
 ‘N 계층’ 데이터 애플리케이션은 여러 ‘계층’으로 분리된 데이터 애플리케이션입니다.  “분산 앱”과 “다중 계층 애플리케이션”이라고도 하는 N 계층 애플리케이션은 클라이언트 및 서버 간에 분산되는 별개의 계층으로 처리를 분산합니다. 데이터에 액세스하는 애플리케이션을 개발할 때 애플리케이션을 구성하는 여러 계층을 명확하게 구분해야 합니다.

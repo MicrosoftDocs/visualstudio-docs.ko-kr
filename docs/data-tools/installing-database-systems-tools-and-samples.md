@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 41cf31c6cae310eb151969df0776788d6ea5b1e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866699"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio용 호환 데이터베이스 시스템
 
@@ -41,15 +41,15 @@ Oracle [기술 네트워크](https://www.oracle.com/database/technologies/oracle
 
 ## <a name="mysql"></a>MySQL
 
-MySQL은 기업 및 websites에서 널리 사용 되는 인기 있는 오픈 소스 데이터베이스 시스템입니다. Mysql, Visual Studio 용 MySQL 및 관련 제품에 대 한 다운로드는 [Windows의 mysql](https://www.mysql.com/why-mysql/windows/)에 있습니다. 타사는 다양 한 Visual Studio 확장 및 MySQL 용 독립 실행형 관리 응용 프로그램을 제공 합니다. Nuget 패키지 관리자 ( **도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리** )에서 제공 하는 기능을 찾아볼 수 있습니다.
+MySQL은 기업 및 websites에서 널리 사용 되는 인기 있는 오픈 소스 데이터베이스 시스템입니다. Mysql, Visual Studio 용 MySQL 및 관련 제품에 대 한 다운로드는 [Windows의 mysql](https://www.mysql.com/why-mysql/windows/)에 있습니다. 타사는 다양 한 Visual Studio 확장 및 MySQL 용 독립 실행형 관리 응용 프로그램을 제공 합니다. Nuget 패키지 관리자 (**도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL는 무료 오픈 소스 개체 관계형 데이터베이스 시스템입니다. Windows에 설치 하려면 [PostgreSQL 다운로드 페이지](https://www.postgresql.org/download/windows/)에서 다운로드할 수 있습니다. 소스 코드에서 PostgreSQL를 빌드할 수도 있습니다. PostgreSQL core 시스템은 C 언어 인터페이스를 포함 합니다. 많은 제 3 자가 .NET 응용 프로그램에서 PostgreSQL를 사용 하기 위한 NuGet 패키지를 제공 합니다. Nuget 패키지 관리자 ( **도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리** )에서 제공 하는 기능을 찾아볼 수 있습니다. 아마도 [npgsql.org](http://www.npgsql.org)에서 가장 인기 있는 패키지를 제공 합니다.
+PostgreSQL는 무료 오픈 소스 개체 관계형 데이터베이스 시스템입니다. Windows에 설치 하려면 [PostgreSQL 다운로드 페이지](https://www.postgresql.org/download/windows/)에서 다운로드할 수 있습니다. 소스 코드에서 PostgreSQL를 빌드할 수도 있습니다. PostgreSQL core 시스템은 C 언어 인터페이스를 포함 합니다. 많은 제 3 자가 .NET 응용 프로그램에서 PostgreSQL를 사용 하기 위한 NuGet 패키지를 제공 합니다. Nuget 패키지 관리자 (**도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다. 아마도 [npgsql.org](http://www.npgsql.org)에서 가장 인기 있는 패키지를 제공 합니다.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite는 응용 프로그램 자체 프로세스에서 실행 되는 임베디드 SQL database 엔진입니다. [SQLite 다운로드 페이지](https://www.sqlite.org/download.html)에서 다운로드할 수 있습니다. SQLite 용 타사 NuGet 패키지도 사용할 수 있습니다. Nuget 패키지 관리자 ( **도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리** )에서 제공 하는 기능을 찾아볼 수 있습니다.
+SQLite는 응용 프로그램 자체 프로세스에서 실행 되는 임베디드 SQL database 엔진입니다. [SQLite 다운로드 페이지](https://www.sqlite.org/download.html)에서 다운로드할 수 있습니다. SQLite 용 타사 NuGet 패키지도 사용할 수 있습니다. Nuget 패키지 관리자 (**도구**  >  **nuget 패키지 관리자**  >  **솔루션의 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
 
 ## <a name="firebird"></a>Firebird
 

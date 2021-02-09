@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f83462328897a8a02b068507d0fa6903bad49367
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 244fbcc21c062c50b2f61940a1b43cf17c22761f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866439"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>디버깅하는 동안에는 디자이너를 수정할 수 없습니다.
 
@@ -23,6 +23,6 @@ ms.locfileid: "94434833"
 
 이 오류를 해결 하려면 **디버그** 메뉴에서 **디버깅 중지** 를 선택 합니다. 응용 프로그램에서 디버깅을 중지 하 고 **O/R 디자이너** 에서 항목을 수정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

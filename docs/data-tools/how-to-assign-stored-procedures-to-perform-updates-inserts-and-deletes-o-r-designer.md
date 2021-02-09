@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866855"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)
 
@@ -35,7 +35,7 @@ ms.locfileid: "94436415"
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>저장 프로시저를 지정하여 엔터티 클래스의 기본 동작을 재정의하려면
 
-1. 디자이너에서 **LINQ to SQL** 파일을 엽니다. ( **솔루션 탐색기** 에서 **.dbml** 파일을 두 번 클릭합니다.)
+1. 디자이너에서 **LINQ to SQL** 파일을 엽니다. (**솔루션 탐색기** 에서 **.dbml** 파일을 두 번 클릭합니다.)
 
 2. **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **저장 프로시저** 를 확장하여 엔터티 클래스의 삽입, 업데이트 및/또는 삭제 명령에 사용할 저장 프로시저를 찾습니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "94436415"
 
 4. 업데이트 수행을 위해 저장 프로시저를 사용하려는 엔터티 클래스를 선택합니다.
 
-5. **속성** 창에서 재정의할 **삽입** , **업데이트** 또는 **삭제** 명령을 선택합니다.
+5. **속성** 창에서 재정의할 **삽입**, **업데이트** 또는 **삭제** 명령을 선택합니다.
 
 6. **런타임 사용** 옆의 줄임표(...)를 클릭하여 **동작 구성** 대화 상자를 엽니다.
 
@@ -63,9 +63,9 @@ ms.locfileid: "94436415"
     > [!NOTE]
     > 각 변경을 수행한 후에 **적용** 을 클릭 하면 각 클래스 및 동작 조합의 동작을 계속 구성할 수 있습니다. **적용** 을 클릭 하기 전에 클래스 또는 동작을 변경 하면 경고 대화 상자가 표시 되 고 변경 내용을 적용할 수 있는 기회가 제공 됩니다.
 
-업데이트의 기본 런타임 논리 사용으로 되돌아가려면 **속성** 창에서 **삽입** , **업데이트** 또는 **삭제** 명령 옆의 줄임표를 클릭한 다음, **동작 구성** 대화 상자에서 **런타임 사용** 을 선택합니다.
+업데이트의 기본 런타임 논리 사용으로 되돌아가려면 **속성** 창에서 **삽입**, **업데이트** 또는 **삭제** 명령 옆의 줄임표를 클릭한 다음, **동작 구성** 대화 상자에서 **런타임 사용** 을 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 메서드](../data-tools/datacontext-methods-o-r-designer.md)

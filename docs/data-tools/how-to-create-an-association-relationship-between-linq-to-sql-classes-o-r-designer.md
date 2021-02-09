@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96932dca3d7f8799c316e05dc36c3f38a0e8110f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a4a13de7c6d9f9627332852be26356f26109c92d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866842"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>방법: LINQ to SQL 클래스 간의 연결 만들기 (O/R 디자이너)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]에서 엔터티 클래스 간의 연결은 데이터베이스 테이블 간의 관계와 비슷합니다. **연결 편집기** 대화 상자를 사용하여 엔터티 클래스 간의 연결을 만들 수 있습니다.
@@ -23,7 +23,7 @@ ms.locfileid: "94436322"
 **연결 편집기** 대화 상자에서 연결을 만들 때 부모 클래스와 자식 클래스를 선택해야 합니다. 부모 클래스는 기본 키가 있는 엔터티 클래스이고, 자식 클래스는 외래 키가 있는 엔터티 클래스입니다. 예를 들어, 및 테이블에 매핑되는 엔터티 클래스를 만든 경우 `Northwind Customers` `Orders` 클래스는 `Customer` 부모 클래스가 되 고 `Order` 클래스는 자식 클래스가 됩니다.
 
 > [!NOTE]
-> **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **개체 관계형 디자이너** ( **O/R 디자이너** )로 테이블을 끌어 오면 데이터베이스의 기존 외래 키 관계를 기반으로 연결이 자동으로 만들어집니다.
+> **서버 탐색기** 또는 **데이터베이스 탐색기** 에서 **개체 관계형 디자이너** (**O/R 디자이너**)로 테이블을 끌어 오면 데이터베이스의 기존 외래 키 관계를 기반으로 연결이 자동으로 만들어집니다.
 
 ## <a name="association-properties"></a>연결 속성
 연결을 만든 후 **O/R 디자이너** 에서 연결을 선택하면 **속성** 창에 몇 개의 구성 가능한 속성이 나타납니다. 연결은 관련 클래스 간의 선입니다. 다음 표에서는 연결의 속성에 대 한 설명을 제공 합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "94436322"
 
 5. **확인** 을 클릭하여 연결을 만듭니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

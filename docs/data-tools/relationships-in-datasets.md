@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866608"
 ---
 # <a name="create-relationships-between-datasets"></a>데이터 세트 간 관계 만들기
 관련 데이터 테이블이 포함 된 데이터 집합 <xref:System.Data.DataRelation> 은 개체를 사용 하 여 테이블 간의 부모/자식 관계를 나타내고 서로 관련 된 레코드를 반환 합니다. **데이터 소스 구성 마법사** 를 사용 하 여 데이터 집합에 관련 테이블을 추가 하거나 **데이터 세트 디자이너** 를 사용 하 여 개체를 만들고 구성 <xref:System.Data.DataRelation> 합니다.
@@ -106,6 +106,6 @@ Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테�
 
 2. **데이터** 메뉴에서 **관계 레이블 표시** 명령을 선택 하 여 관계 이름을 표시 합니다. 이 명령을 지워 관계 이름을 숨깁니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)

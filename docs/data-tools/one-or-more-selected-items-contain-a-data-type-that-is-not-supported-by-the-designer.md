@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c50d47363217a87147275a406d5370cc8736c10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866647"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
 
@@ -27,6 +27,6 @@ O/ **r** 디자이너에서 **서버 탐색기** 또는 **데이터베이스 탐
 
 2. **서버 탐색기** 또는 **데이터베이스 탐색기** 디자이너에서 뷰를 끌어 놓습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

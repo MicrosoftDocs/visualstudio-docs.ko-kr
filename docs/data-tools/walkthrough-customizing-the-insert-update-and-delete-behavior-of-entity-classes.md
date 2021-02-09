@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866140"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작 사용자 지정
 
@@ -47,7 +47,7 @@ ms.locfileid: "94997929"
 
 - `Customer`저장 프로시저를 사용 하 여 삽입, 업데이트 및 삭제를 수행 하도록 클래스를 구성 합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -271,7 +271,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 
 - LINQ 쿼리를 추가하여 데이터를 필터링합니다. 자세한 내용은 [LINQ 쿼리 소개 (c #)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 메서드](../data-tools/datacontext-methods-o-r-designer.md)

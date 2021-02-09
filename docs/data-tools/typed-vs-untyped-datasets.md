@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866335"
 ---
 # <a name="typed-vs-untyped-datasets"></a>형식화된 데이터 세트 및 형식화되지 않은 데이터 세트
 형식화 된 데이터 집합은 기본 클래스에서 처음 파생 된 데이터 집합이 며 <xref:System.Data.DataSet> .xsd 파일에 저장 된 **데이터 세트 디자이너** 의 정보를 사용 하 여 강력한 형식의 새 데이터 집합 클래스를 생성 합니다. 스키마의 정보 (테이블, 열 등)가 생성 되 고 새 데이터 집합 클래스에 일련의 첫 번째 클래스 개체 및 속성으로 컴파일됩니다. 형식화 된 데이터 집합은 기본 클래스에서 상속 되므로 <xref:System.Data.DataSet> 형식화 된 클래스는 클래스의 모든 기능을 가정 <xref:System.Data.DataSet> 하 고 클래스의 인스턴스를 매개 변수로 사용 하는 메서드와 함께 사용할 수 있습니다 <xref:System.Data.DataSet> .
@@ -42,6 +42,6 @@ ms.locfileid: "94998059"
 
 더 일반적으로 스키마를 사용할 수 없는 상태에서 데이터 집합을 동적으로 만들 수 있는 경우가 많습니다. 이 경우 데이터를 관계형 방식으로 표현할 수 있는 경우 데이터 집합은 정보를 유지할 수 있는 편리한 구조입니다. 동시에 다른 프로세스에 전달할 정보를 직렬화 하거나 XML 파일을 작성 하는 기능과 같은 데이터 집합의 기능을 활용할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)

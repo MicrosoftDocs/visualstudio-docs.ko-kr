@@ -13,15 +13,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: cbea7761ed5f36265464f2afe9a64550ddc5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866309"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
 

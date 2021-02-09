@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866907"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
 
@@ -54,7 +54,7 @@ Tableadapter는 데이터베이스에 연결 하 고, 쿼리 또는 저장 프�
 
 ![클라이언트 애플리케이션의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들면 다음과 같습니다.
+Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들어:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -112,7 +112,7 @@ TableAdapter를 사용 하는 경우 일반적으로 수행 하는 명령을 사
 
 , 및 외에도 `InsertCommand` `UpdateCommand` `DeleteCommand` tableadapter는 데이터베이스에 대해 직접 실행할 수 있는 메서드를 사용 하 여 생성 됩니다. 이러한 메서드 ( `TableAdapter.Insert` , `TableAdapter.Update` 및 `TableAdapter.Delete` )를 직접 호출 하 여 데이터베이스의 데이터를 조작할 수 있습니다. 즉 `TableAdapter.Update` , 연결 된 데이터 테이블에 대해 보류 중인 삽입, 업데이트 및 삭제를 처리 하기 위해를 호출 하는 대신 코드에서 이러한 개별 메서드를 호출할 수 있습니다.
 
-이러한 직접 메서드를 만들지 않으려면 속성 창에서 TableAdapter의 **Generatedbdirectmethods** 속성을로 설정 `false` 합니다. **Properties** TableAdapter에 추가 되는 추가 쿼리는 독립 실행형 쿼리 이므로 이러한 메서드를 생성 하지 않습니다.
+이러한 직접 메서드를 만들지 않으려면 속성 창에서 TableAdapter의 **Generatedbdirectmethods** 속성을로 설정 `false` 합니다.  TableAdapter에 추가 되는 추가 쿼리는 독립 실행형 쿼리 이므로 이러한 메서드를 생성 하지 않습니다.
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Nullable 형식에 대 한 TableAdapter 지원
 
@@ -139,6 +139,6 @@ TableAdapterManager 클래스는 .NET 형식이 아닙니다. 따라서 설명�
 
 CommandType 속성이로 설정 된 데이터 명령을 사용 하는 경우 <xref:System.Data.CommandType.Text> 클라이언트에서 전송 된 정보를 데이터베이스에 전달 하기 전에 신중 하 게 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 사용자 입력을 데이터베이스로 전송 하기 전에 항상 정보가 유효한 지 확인 하십시오. 가능 하면 매개 변수가 있는 쿼리나 저장 프로시저를 항상 사용 하는 것이 가장 좋습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)

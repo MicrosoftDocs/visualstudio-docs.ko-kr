@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867150"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>복합 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
 
@@ -53,7 +53,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 - 새 컨트롤을 **데이터 원본** 창에서 **Form1** 으로 끌어 추가합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -93,7 +93,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 데이터 바인딩을 지원하는 복합 컨트롤에 대해 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>를 구현할 수 있습니다.
 
-1. **ComplexDataGridView** 컨트롤을 코드 보기로 전환합니다. ( **보기** 메뉴에서 **코드** 를 선택합니다.)
+1. **ComplexDataGridView** 컨트롤을 코드 보기로 전환합니다. (**보기** 메뉴에서 **코드** 를 선택합니다.)
 
 1. `ComplexDataGridView`의 코드를 다음 코드로 바꿉니다.
 
@@ -142,7 +142,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 1. `Customers` 테이블에서 드롭다운 화살표를 클릭하고 컨트롤 목록에서 **ComplexDataGridView** 를 선택합니다.
 
-## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
+## <a name="add-controls-to-the-form"></a>양식에 컨트롤 추가
 
 **데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다. 주 **Customers** 노드를 **데이터 원본** 창에서 폼으로 끌어서 놓습니다. **Complexdatagridview** 컨트롤이 테이블의 데이터를 표시 하는 데 사용 되는지 확인 합니다.
 
@@ -158,7 +158,7 @@ Windows 응용 프로그램의 폼에 데이터를 표시할 때는 **도구 상
 
 - 조회 시나리오를 지원하는 컨트롤을 만듭니다. 자세한 내용은 [조회 데이터 바인딩을 지 원하는 사용자 정의 컨트롤 Windows Forms 만들기](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

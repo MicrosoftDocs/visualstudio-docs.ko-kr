@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866114"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>개념적 모델 작업 (WCF Data Services)
 
@@ -47,7 +47,7 @@ WCF Data Services 애플리케이션과 함께 개념적 모델을 사용할 수
 |[방법: 엔터티 추가, 수정 및 삭제](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|데이터 서비스에서 엔터티 데이터를 만들고, 업데이트 하 고, 삭제 하는 방법을 보여 줍니다.|
 |[방법: 엔터티 관계 정의](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|데이터 서비스에서 관계를 만들거나 변경 하는 방법을 보여 줍니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [데이터 서비스 쿼리](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

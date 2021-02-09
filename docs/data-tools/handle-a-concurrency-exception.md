@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866881"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -47,7 +47,7 @@ ms.locfileid: "94436448"
 
 7. 오류를 파악 한 다음 레코드의 다른 버전을 표시 하 여 사용자가 계속 해 서 데이터베이스를 업데이트 하거나 업데이트를 취소할지 여부를 결정할 수 있도록 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -199,14 +199,14 @@ ms.locfileid: "94436448"
 
 5. **Customers** 테이블을 마우스 오른쪽 단추로 클릭 한 다음 **테이블 데이터 표시** 를 선택 합니다.
 
-6. 첫 번째 레코드 ( **ALFKI** )에서 **ContactName** 를 **민 Anders2** 로 변경 합니다.
+6. 첫 번째 레코드 (**ALFKI**)에서 **ContactName** 를 **민 Anders2** 로 변경 합니다.
 
     > [!NOTE]
     > 다른 행으로 이동 하 여 변경 내용을 커밋합니다.
 
 7. ConcurrencyWalkthrough의 실행 중인 폼으로 전환 합니다.
 
-8. 폼의 첫 번째 레코드 ( **ALFKI** )에서 **ContactName** 를 **민 Anders1** 로 변경 합니다.
+8. 폼의 첫 번째 레코드 (**ALFKI**)에서 **ContactName** 를 **민 Anders1** 로 변경 합니다.
 
 9. **저장** 단추를 선택합니다.
 
@@ -214,6 +214,6 @@ ms.locfileid: "94436448"
 
    **아니요** 를 선택 하면 업데이트를 취소 하 고 현재 데이터베이스에 있는 값으로 데이터 집합을 업데이트 합니다. **예** 를 선택 하면 데이터베이스에 제안 된 값이 기록 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

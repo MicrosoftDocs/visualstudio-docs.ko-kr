@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866829"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>방법: O/R 디자이너를 사용하여 상속 구성
-**개체 관계형 디자이너** ( **O/R 디자이너** )는 관계형 시스템에서 주로 구현 되는 단일 테이블 상속 개념을 지원 합니다. 단일 테이블 상속에서는 부모 정보와 자식 정보에 대한 필드를 모두 포함하는 데이터베이스 테이블이 하나 있습니다. 관계형 데이터의 경우 판별자 열에는 해당 레코드가 어느 클래스에 속해 있는지를 판별하는 값이 포함됩니다.
+**개체 관계형 디자이너** (**O/R 디자이너**)는 관계형 시스템에서 주로 구현 되는 단일 테이블 상속 개념을 지원 합니다. 단일 테이블 상속에서는 부모 정보와 자식 정보에 대한 필드를 모두 포함하는 데이터베이스 테이블이 하나 있습니다. 관계형 데이터의 경우 판별자 열에는 해당 레코드가 어느 클래스에 속해 있는지를 판별하는 값이 포함됩니다.
 
 예를 `Persons` 들어 회사에서 사용 하는 모든 사용자를 포함 하는 테이블이 있다고 가정 합니다. 어떤 사람들은 사원이고 어떤 사람들은 관리자입니다. 테이블에는 `Persons` `EmployeeType` 관리자의 경우 값이 1이 고 직원의 경우 값이 2 인 이라는 열이 포함 되어 있습니다 .이 열은 판별자 열입니다. 이 시나리오에서는 직원 서브클래스를 만든 후 `EmployeeType` 값이 2인 레코드로만 클래스를 채울 수 있습니다. 각 클래스에서 적용되지 않는 열은 제거할 수도 있습니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "94436335"
 
 10. 선택적으로 **Inheritance Default** 속성을 사용하여 정의된 상속 코드와 일치하지 않는 행을 로드할 때 사용되는 상속 계층 구조에서 형식을 지정할 수 있습니다. 즉, 레코드의 판별자 열에 **파생 클래스 판별자 값** 또는 **기본 클래스 판별자 값** 속성의 값과 일치 하지 않는 값이 있으면 레코드가 **상속 기본값으로** 지정 된 형식으로 로드 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
