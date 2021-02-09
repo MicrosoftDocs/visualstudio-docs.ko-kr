@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909420"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 메타 데이터 및 핵심 기호 인터페이스에 직접 액세스할 수 있는 기호 공급자를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugSymbolProviderDirect: IUnknown
@@ -29,7 +29,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|디버그 주소가 지정 된 경우 응용 프로그램 도메인 식별자를 검색 합니다.|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|기호 그룹의 모듈에 대 한 정보를 검색 합니다.|

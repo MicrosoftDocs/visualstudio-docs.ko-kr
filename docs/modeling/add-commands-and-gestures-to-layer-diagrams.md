@@ -9,15 +9,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom gestures
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9da8272f115efe4c6708bcc4d5cd0203697bfdd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908892"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>종속성 다이어그램에 명령 및 제스처 추가
 

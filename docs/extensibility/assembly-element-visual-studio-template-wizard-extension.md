@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ffc20d0156aeb04131e19c25fef8ab4455b7ab0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908143"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소 (Visual Studio 템플릿 마법사 확장)
 인터페이스를 구현 하는 어셈블리의 이름 또는 강력한 이름을 지정 합니다 `IWizard` .
@@ -48,7 +48,7 @@ ms.locfileid: "94671723"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정 하기 위한 등록 요소를 포함 합니다.|
 

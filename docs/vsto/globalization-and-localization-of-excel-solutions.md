@@ -11,15 +11,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910302"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 세계화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반 정보는 [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)를 참조 하세요.
@@ -79,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.
 
- 예:
+ 예를 들어:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

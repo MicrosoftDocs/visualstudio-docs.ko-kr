@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f98f3154a0708ce7a01603968f0f5774dd86f40e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910225"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office 솔루션에 신뢰 부여
   Office 솔루션에 신뢰 부여는 솔루션 어셈블리, 응용 프로그램 매니페스트, 배포 매니페스트 및 문서를 신뢰 하도록 각 대상 컴퓨터의 보안 정책을 수정 하는 것을 의미 합니다. 사용자 또는 최종 사용자가 Office 솔루션에 신뢰를 부여할 수 있습니다.

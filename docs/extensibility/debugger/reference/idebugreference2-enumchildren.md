@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d142f6c3715e2c3888c7ce60f349c50e84f7f16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909700"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-참조의 선택 된 자식 목록을 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
+참조의 선택 된 자식 목록을 가져옵니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumChildren ( 
+HRESULT EnumChildren ( 
    DEBUGREF_INFO_FLAGS        dwFields,
    DWORD                      dwRadix,
    DBG_ATTRIB_FLAGS           dwAttribFilter,
@@ -39,7 +39,7 @@ HRESULT EnumChildren ( 
 ```
 
 ```csharp
-int EnumChildren ( 
+int EnumChildren ( 
    enum_DEBUGREF_INFO_FLAGS     dwFields,
    uint                         dwRadix,
    enum_DBG_ATTRIB_FLAGS        dwAttribFilter,
@@ -57,7 +57,7 @@ int EnumChildren ( 
 진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.
 
 `dwAttribFilter`\
-진행 열거 되는 구조를 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) `pszNameFilter` 선택 하기 위해 매개 변수와 함께 필터로 사용 되는 DBG_ATTRIB_FLAGS 열거형의 플래그 조합입니다.
+진행 열거 되는 구조를 [](../../../extensibility/debugger/reference/dbg-attrib-flags.md) `pszNameFilter` 선택 하기 위해 매개 변수와 함께 필터로 사용 되는 DBG_ATTRIB_FLAGS 열거형의 플래그 조합입니다.
 
 `pszNameFilter`\
 진행 `dwAttribFilter` 열거할 구조를 선택 하기 위해 매개 변수와 함께 사용 되는 필터 (예: "MyX")를 지정 하는 문자열입니다.
@@ -68,10 +68,10 @@ int EnumChildren ( 
 `ppEnum`\
 제한이 요청 된 자식 속성의 목록을 포함 하는 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a3f3c2dca16cd2c28c9d1727e4ac145c91c482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909856"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 이 인터페이스는 속성을 가져오고 설정할 수 있는 함수를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugPropertyField : IDebugContainerField
+IDebugPropertyField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -37,7 +37,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|속성을 가져오는 메서드를 가져옵니다.|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|속성을 설정 하는 메서드를 가져옵니다.|
@@ -52,6 +52,6 @@ IDebugPropertyField : IDebugContainerField
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

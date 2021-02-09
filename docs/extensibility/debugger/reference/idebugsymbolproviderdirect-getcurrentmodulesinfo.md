@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dabc19c8d748b869621ae05d53cdf5c551a6a74c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909523"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 기호 그룹의 모듈에 대 한 정보를 검색 합니다.
@@ -62,8 +62,8 @@ int GetCurrentModulesInfo(
 `ppCDModItfs`\
 제한이 기호 그룹의 모듈을 포함 하는 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

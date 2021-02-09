@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db92e63ecf6f9fe929fe7a2a398d5e99613f84d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909413"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 비관리 코드에 대 한 기호 판독기를 검색 합니다.
@@ -52,8 +52,8 @@ int GetSymUnmanagedReader (
 `ppSymUnmanagedReader`\
 제한이 비관리 코드에 대 한 기호 판독기를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

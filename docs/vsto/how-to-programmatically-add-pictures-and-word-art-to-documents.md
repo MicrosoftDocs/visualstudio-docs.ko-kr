@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910188"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>방법: 프로그래밍 방식으로 문서에 그림 및 Word 아트 추가
   디자인 타임 또는 런타임에 그림 및 그리기 개체를 문서에 추가할 수 있습니다. WordArt를 사용하면 Microsoft Office Word 문서에 장식 텍스트를 추가할 수 있습니다. 이러한 특수 텍스트 효과는 사용자 지정하고 문서에 삽입할 수 있는 그리기 개체입니다.

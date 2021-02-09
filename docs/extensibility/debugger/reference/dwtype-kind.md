@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908100"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체의 형식을 해석 하는 방법을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_dwTYPE_KIND {

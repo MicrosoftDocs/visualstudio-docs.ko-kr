@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 475ffab931445718d27ae6e1fe1242f6a5a76512
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7028d6e958de0d1c15d0e0c7c40a78e29a815736
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909475"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 메타 데이터 가져오기 정보를 검색 합니다.
@@ -52,8 +52,8 @@ int GetMetaDataImport (
 `ppImport`\
 제한이 메타 데이터 가져오기 정보를 포함 하는 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets, hiding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5763e040e0206272b6b50b039f1260bcbc99db49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908589"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 숨기기
   통합 문서의 모든 워크시트를 표시하거나 숨길 수 있습니다. 워크시트를 숨기려면 워크시트 호스트 항목을 사용하거나 통합 문서의 시트 컬렉션을 통해 워크시트에 액세스합니다.

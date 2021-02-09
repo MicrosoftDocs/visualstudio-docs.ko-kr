@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac9113424c6cd5cce230774a6e5335ffa4d4ba77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff77985bca8772d92c3b90e7a727c0077137e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909908"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 지정 된 주소에서 시작 하 여 지정 된 바이트 수의 메모리를 씁니다.
@@ -29,7 +29,7 @@ ms.locfileid: "80727524"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT WriteAt( 
+HRESULT WriteAt( 
    IDebugMemoryContext2* pStartContext,
    DWORD                 dwCount,
    BYTE*                 rgbMemory
@@ -54,12 +54,12 @@ int WriteAt(
 `rgbMemory`\
 진행 쓸 바이트입니다. 이 배열의 크기는 최소한 바이트 이상으로 가정 `dwCount` 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면를 반환 하 고, 그렇지 않으면를 반환 `S_FALSE` `E_FAIL` 합니다.
 
 ## <a name="remarks"></a>설명
  시작 주소가이 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 개체로 표시 되는 메모리 창 내에 없는 경우 쓰기가 발생 하지 않으며의 오류 코드가 `E_FAIL` 반환 됩니다 .이 값이 메모리 공간에 겹칠 경우에도 마찬가지입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

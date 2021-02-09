@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909436"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 지정 된 디버그 주소에서 메서드에 대 한 정보를 검색 합니다.
@@ -72,8 +72,8 @@ int GetMethodFromAddress(
 `pdwVersion`\
 제한이 메서드의 버전 번호입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], adding Visio shapes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 819560d584f267bfa54ae2bcfc61a162f45e0383
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e4c60360afb3fa30b29e556dd5a18829970f2707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910135"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>방법: 프로그래밍 방식으로 Visio 문서에 셰이프 추가
   스텐실에서 마스터를 검색하고 활성 페이지로 셰이프를 끌어 놓아 Microsoft Office Visio 문서에 셰이프를 추가할 수 있습니다.

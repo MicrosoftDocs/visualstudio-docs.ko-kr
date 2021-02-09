@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b1784055c54c9243237c81edb708e13de9bc5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909780"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 이 인터페이스를 통해 세션 디버그 관리자 (SDM)는 디버그 엔진 (DE)을 나타내는 인터페이스를 검색할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugQueryEngine2 : IUnknown
@@ -37,7 +37,7 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugQueryEngine2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|사용자 지정 디버그 엔진 (DE) 인터페이스를 가져옵니다.|
 
@@ -51,7 +51,7 @@ IDebugQueryEngine2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910300"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.
@@ -116,7 +116,7 @@ ms.locfileid: "96847691"
 
 ### <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[Excel 솔루션](../vsto/excel-solutions.md)|Microsoft Office Excel용 문서 수준 사용자 지정 및 VSTO 추가 기능을 만드는 방법에 대해 설명합니다.|
 |[범위 작업](../vsto/working-with-ranges.md)|범위와 관련된 일반적인 작업을 수행하는 방법을 보여 주는 예제를 제공합니다.|

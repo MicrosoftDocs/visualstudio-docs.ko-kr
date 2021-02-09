@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, applying color
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7ab1681cf402fc45b81b49b77a84973be83729c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910106"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>방법: 프로그래밍 방식으로 Excel 범위에 색 적용
   셀 범위 내의 텍스트에 색을 적용 하려면 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 나 네이티브 Excel 범위 개체를 사용 합니다.

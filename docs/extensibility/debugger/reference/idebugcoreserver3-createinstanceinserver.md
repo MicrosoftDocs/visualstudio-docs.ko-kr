@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909955"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 서버에 디버그 엔진의 인스턴스를 만듭니다.
@@ -28,12 +28,12 @@ ms.locfileid: "80733024"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateInstanceInServer(
-   LPCWSTR  szDll,
-   WORD     wLangId,
-   REFCLSID clsidObject,
-   REFIID   riid,
-   void**   ppvObject
+HRESULT CreateInstanceInServer(
+   LPCWSTR  szDll,
+   WORD     wLangId,
+   REFCLSID clsidObject,
+   REFIID   riid,
+   void**   ppvObject
 );
 ```
 
@@ -63,9 +63,9 @@ int CreateInstanceInServer(
 `ppvObject`\
 [out] `IUnknown` 인스턴스화된 개체의 인터페이스입니다. 이 개체를 원하는 인터페이스로 캐스팅 하거나 마샬링합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

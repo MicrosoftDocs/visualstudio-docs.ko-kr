@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01b7ee4b0220fcd83573d29954c03d738ed53051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909378"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 기호 로드 프로세스에 대 한 결과를 검색 하기 위해 이벤트 처리기에 의해 호출 됩니다.
@@ -56,13 +56,13 @@ int GetSymbolSearchInfo(
 `pdwModuleInfoFlags`\
 제한이 기호가 로드 되었는지 여부를 나타내는 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) 열거형의 플래그 조합입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  모듈에 대 한 디버깅 기호를 로드 하려고 시도한 후 처리기가 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) 이벤트를 수신 하면 처리기는 thismethod를 호출 하 여 해당 load의 결과를 확인할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

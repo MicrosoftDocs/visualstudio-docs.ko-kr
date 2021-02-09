@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909571"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 이 인터페이스는 기호 및 형식을 제공 하 여 필드로 반환 하는 기호 공급자를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugSymbolProvider : IUnknown
@@ -37,7 +37,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugSymbolProvider` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |`Initialize`|더 이상 사용되지 않습니다. 사용하지 마십시오.|
 |`Uninitialize`|더 이상 사용되지 않습니다. 사용하지 마십시오.|
@@ -64,7 +64,7 @@ IDebugSymbolProvider : IUnknown
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 GUID가 지정 된 경우 기호 공급자를 인스턴스화하는 방법을 보여 줍니다 (디버그 엔진은이 값을 알고 있어야 함).
 
 ```cpp
@@ -103,5 +103,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - footers, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1abf9c0726a6b4afd1764aec095f129a4fcaf510
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 63b50e020efa549993e36dbd5b43504467e554a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908609"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>방법: 프로그래밍 방식으로 문서에 머리글 및 바닥글 추가
   <xref:Microsoft.Office.Interop.Word.Section>의 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 속성 및 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 속성을 사용하여 문서의 머리글 및 바닥글에 텍스트를 추가할 수 있습니다. 문서의 각 섹션에는 다음 세 개의 머리글과 바닥글이 포함됩니다.

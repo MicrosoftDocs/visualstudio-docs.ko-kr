@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908059"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 자동 연결이 실패 한 이유를 확인 하려고 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80732957"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT DiagnoseWebDebuggingError(
-   LPCWSTR pszUrl
+HRESULT DiagnoseWebDebuggingError(
+   LPCWSTR pszUrl
 );
 ```
 
 ```csharp
-int DiagnoseWebDebuggingError(
-   string pszUrl
+int DiagnoseWebDebuggingError(
+   string pszUrl
 );
 ```
 
@@ -43,7 +43,7 @@ int DiagnoseWebDebuggingError(
 `pszUrl`\
 진행 현재 사용 되지 않습니다. 항상 null 값으로 설정 해야 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음은 일반적인 반환 코드입니다.
 
 |코드|Description|
@@ -52,5 +52,5 @@ int DiagnoseWebDebuggingError(
 |`S_WEBDBG_DEBUG_VERB_BLOCKED`|사용 권한이 부족 하거나 디버그 동사를 사용할 수 없기 때문일 수 있습니다. 원격 서버에서 디버그할 수 없습니다.|
 |`E_WEBDBG_DEBUG_VERB_BLOCKED`|웹 서버가 잠겨 있어 디버깅을 사용 하도록 설정 하는 데 필요한 디버그 동사를 차단 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

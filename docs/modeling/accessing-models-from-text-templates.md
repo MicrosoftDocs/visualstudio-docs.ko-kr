@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, accessing models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 13cae79908e3a760c37ac590ca61f43001d384d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908930"
 ---
 # <a name="access-models-from-text-templates"></a>텍스트 템플릿에서 모델에 액세스
 
