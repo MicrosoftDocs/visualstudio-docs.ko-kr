@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892322"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 개발 연습
   다음 연습에서는을 사용 하 여 SharePoint 솔루션을 개발 하 고 배포 하는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -95,5 +95,5 @@ ms.locfileid: "95970322"
 |[연습: 서버 탐색기 확장 하 여 웹 파트 표시](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|서버 탐색기에 표시 되는 SharePoint 사이트에 웹 파트 표시 하기 위해 새 노드를 추가 하는 방법을 보여 줍니다. 또한이 연습에서는 sharepoint 서버 개체 모델을 호출 하는 SharePoint 명령을 만드는 방법을 보여 줍니다.|
 |[연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|서버 탐색기에 표시 되는 SharePoint 사이트에 웹 파트 표시 하기 위해 새 노드를 추가 하는 방법을 보여 줍니다. 이 연습에서는 SharePoint 클라이언트 개체 모델을 사용 하는 방법도 보여 줍니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 개발 샘플 및 연습](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

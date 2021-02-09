@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892309"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 패키징 및 배포 문제 해결
   이 항목에서는 SharePoint 솔루션을 패키지하고 배포할 때 발생할 수 있는 다양한 문제에 대해 설명합니다.
@@ -52,8 +52,8 @@ ms.locfileid: "95969946"
 |값|Description|
 |-----------|-----------------|
 |자동|충돌을 검색하고 자동으로 해결합니다.|
-|prompt|충돌을 검색하고 충돌을 해결하기 전에 개발자에게 보고합니다.|
-|없음|충돌을 검색하지 않습니다.|
+|프롬프트|충돌을 검색하고 충돌을 해결하기 전에 개발자에게 보고합니다.|
+|None|충돌을 검색하지 않습니다.|
 
 ## <a name="differences-between-f5-deployment"></a>F5 배포의 차이점
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]를 사용하여 테스트 및 디버깅을 위해 SharePoint 프로젝트를 로컬 SharePoint 서버에 배포하는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 몇 가지 추가 단계가 수행됩니다.
@@ -112,6 +112,6 @@ ms.locfileid: "95969946"
 
  이 경고를 제거하려면 프로젝트를 빌드한 다음 디자이너를 닫았다가 다시 열거나 프로젝트에 대해 자동 취소 옵션을 사용하지 않도록 설정합니다. 이렇게 하려면 프로젝트 속성 대화 상자의 **SharePoint** 탭에서 **디버깅 후 자동 취소** 확인란의 선택을 취소 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 솔루션 패키지 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

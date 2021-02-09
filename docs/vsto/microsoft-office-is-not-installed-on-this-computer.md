@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc04cf3d6217792b105da7df3215d65116fd47f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892049"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office이 컴퓨터에 설치 되어 있지 않습니다.
   Visual Studio에서는 프로젝트 형식에 해당하는 Microsoft Office 애플리케이션을 찾을 수 없습니다. VSTO 추가 기능 프로젝트를 개발 하는 경우 프로젝트를 디버그 하거나 실행할 수 없다는 의미입니다. 문서 수준 프로젝트를 만들려고 하는 경우 프로젝트를 만들 수 없다는 의미입니다.

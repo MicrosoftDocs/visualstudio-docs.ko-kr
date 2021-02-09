@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892608"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 이 인터페이스는 다중 스레드 디버깅을 지원 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugEngineProgram2 : IUnknown
@@ -37,7 +37,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngineProgram2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[중지](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.|
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.|
@@ -53,5 +53,5 @@ IDebugEngineProgram2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

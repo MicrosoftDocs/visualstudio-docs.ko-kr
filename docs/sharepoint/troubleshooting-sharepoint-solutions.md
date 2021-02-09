@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892296"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 다음과 같은 문제나 경고가 발생할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버그](/previous-versions/bb386166(v=vs.100))를 참조 하세요.
@@ -60,7 +60,7 @@ ms.locfileid: "95970281"
 
 - 쉼표(,)
 
-- 밑줄 (_)
+- 밑줄(_)
 
 - 대시 (-)
 
@@ -259,7 +259,7 @@ ms.locfileid: "95970281"
 ### <a name="resolution"></a>해결 방법
  이는 SharePoint 솔루션의 디버그 세션을 닫은 후 자동 취소 기능이 솔루션을 취소 하기 때문에 발생 합니다. 취소는 SharePoint에서 목록 정의를 삭제 하지만 목록의 인스턴스를 삭제 하지는 않습니다. 기본 목록 정의는 목록 인스턴스에 필요 합니다.
 
- 이 문제를 해결 하려면 메뉴 모음에서 **빌드** 배포를 선택 하 여 솔루션을 배포  >  **Deploy** 합니다. **F5** 키를 선택 하 여 솔루션을 디버깅 하지 마십시오. 그런 다음 SharePoint에서 목록 인스턴스를 삭제 합니다.
+ 이 문제를 해결 하려면 메뉴 모음에서 **빌드** 배포를 선택 하 여 솔루션을 배포  >  합니다. **F5** 키를 선택 하 여 솔루션을 디버깅 하지 마십시오. 그런 다음 SharePoint에서 목록 인스턴스를 삭제 합니다.
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>원래 SharePoint 솔루션은 내보낸 버전으로 대체 됩니다.
  SharePoint 솔루션을 내보내는 경우 솔루션을로 가져온 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 후 솔루션을 내보낸 사이트와 동일한 사이트에 다시 배포 하면 원래 SharePoint 솔루션이 대체 됩니다. 원본 솔루션이 활성화 되지 않은 서버에 솔루션을 배포 하는 경우에는이 문제가 발생 하지 않습니다.
@@ -279,7 +279,7 @@ ms.locfileid: "95970281"
 ### <a name="resolution"></a>해결 방법
  이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 애플리케이션의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열고 **응용 프로그램 관리** 링크를 선택한 다음 **웹 응용 프로그램** 에서 **대체 액세스 매핑 구성** 링크를 선택 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역 만들기](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

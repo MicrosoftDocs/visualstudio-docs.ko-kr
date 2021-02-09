@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892075"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>방법: 프로그래밍 방식으로 증분 변경 데이터로 범위 채우기
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>개체의 메서드를 <xref:Microsoft.Office.Interop.Excel.Range> 사용 하면 값을 사용 하 여 워크시트의 범위를 자동으로 채울 수 있습니다. 가장 자주 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 사용 되는 메서드는 증분 방식으로 증가 하거나 감소 하는 범위에 값을 저장 하는 데 사용 됩니다. 열거형에서 선택적 상수를 제공 하 여 동작을 지정할 수 있습니다 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> .

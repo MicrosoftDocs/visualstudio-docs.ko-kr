@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892335"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 프로젝트 및 프로젝트 항목 템플릿
   다음 섹션에서는 사용 가능한 SharePoint 프로젝트 및 프로젝트 항목 템플릿과 이러한 템플릿 사용 방법에 대해 설명 합니다.
@@ -49,9 +49,9 @@ ms.locfileid: "95970372"
 
 - 프로젝트의 모든 어셈블리 참조가 나열 된 **참조** 폴더입니다.
 
-- 기능을 SharePoint 서버에 배포 *.feature* 하는 데 사용 되는 기능 구성 파일을 포함 하 **는 폴더입니다** .
+- 기능을 SharePoint 서버에 배포  하는 데 사용 되는 기능 구성 파일을 포함 하 **는 폴더입니다** .
 
-- SharePoint에 솔루션을 배포 하 *Package.package* 는 데 사용 되는 패키지 파일을 포함 하는 **패키지 폴더입니다** .
+- SharePoint에 솔루션을 배포 하  는 데 사용 되는 패키지 파일을 포함 하는 **패키지 폴더입니다** .
 
 - 보안 강화를 위해 강력한 이름으로 어셈블리에 서명 하는 데 사용 되는 키 .snk (강력한 이름 키) 파일입니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "95970372"
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>비즈니스 데이터 연결 모델 (팜 솔루션에만 해당)
  **비즈니스 데이터 연결 모델 (팜 솔루션에만 해당)** 항목을 사용 하면 비즈니스 데이터를 SharePoint에 통합할 수 있습니다. 비즈니스 데이터는 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] Siebel 및 SAP (서비스 광고 프로토콜)와 같은 백 엔드 서버 응용 프로그램에서 가져올 수 있습니다. 비즈니스 데이터 연결 모델은 팜 솔루션 에서만 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md), [방법: 리소스 파일을 사용 하 여 지역화 된 이름, 속성 및 사용 권한 지정](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)및 [새로운 기능: 비즈니스 연결 서비스](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14))를 참조 하세요.
 
-### <a name="content-type"></a>콘텐츠 유형
+### <a name="content-type"></a>내용 유형
  *콘텐츠 형식* 항목을 사용 하 여 문서, 알림 또는 작업과 같은 기존 (기본) 콘텐츠 형식을 기반으로 사용자 지정 콘텐츠 형식을 만들 수 있습니다. 사용자 지정 콘텐츠 형식은 사용자가 정의 하는 모든 사이트 열 (필드)과 함께 기본 콘텐츠 형식과 동일한 특성 및 필드를 제공 합니다. 예를 들어, SharePoint에 제공 되는 기본 연락처 콘텐츠 형식을 기반으로 하는 사용자 지정 연락처 콘텐츠 형식을 만들 수 있습니다. 기존 사이트 열을 변경 하거나 기본 콘텐츠 형식에 이미 포함 된 열에 더 많은 사이트 열을 추가 하 여 콘텐츠 형식을 사용자 지정할 수 있습니다.
 
 > [!NOTE]
@@ -108,7 +108,7 @@ ms.locfileid: "95970372"
  목록은 일정 또는 작업 목록과 같은 재사용 가능한 기본 SharePoint 목록 정의의 인스턴스입니다. 솔루션에 목록을 추가한 후 목록 디자이너를 사용 하 여 목록에 사이트 열을 추가 하 고 사용자 지정 목록 열을 만들 수 있습니다. 여기에는 콘텐츠 형식의 사이트 열이 포함 됩니다. 목록에 표시 되는 열을 결정 하는 목록에 대 한 *보기* 를 지정할 수 있습니다. 자세한 내용은 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 및 [문서 블록: 목록 및 문서 라이브러리](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14))를 참조 하세요.
 
 ### <a name="module"></a>모듈
- *모듈 (* 모듈과 혼동 하지 않음)에는 [!include[vbprvb](../sharepoint/includes/vbprvb-md.md)] 이미지 또는 메모와 같이 SharePoint 서버에 배포할 파일이 포함 되어 있습니다. 모듈 프로젝트 항목에 **모듈** 노드가 포함 되어 있습니다. 모듈 노드에는 두 개의 프로젝트 항목 템플릿이 포함 되어 있습니다. XML 정의 파일은 모듈의 매니페스트 역할을 하 고, *sample.txt* 파일은 자리 표시자 파일입니다. 자세한 내용은 [모듈을 사용 하 여 솔루션 및 모듈에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md) 을 [Modules](/previous-versions/office/developer/sharepoint-2010/ms453137(v=office.14))참조 하세요.
+ *모듈 (* 모듈과 혼동 하지 않음)에는 [!include[vbprvb](../sharepoint/includes/vbprvb-md.md)] 이미지 또는 메모와 같이 SharePoint 서버에 배포할 파일이 포함 되어 있습니다. 모듈 프로젝트 항목에 **모듈** 노드가 포함 되어 있습니다. 모듈 노드에는 두 개의 프로젝트 항목 템플릿이 포함 되어 있습니다. XML 정의 파일은 모듈의 매니페스트 역할을 하 고, *sample.txt* 파일은 자리 표시자 파일입니다. 자세한 내용은 [모듈을 사용 하 여 솔루션 및 모듈에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md) 을 [](/previous-versions/office/developer/sharepoint-2010/ms453137(v=office.14))참조 하세요.
 
 ### <a name="sequential-workflow-farm-solution-only"></a>순차 워크플로 (팜 솔루션에만 해당)
  *순차 워크플로* 는 마지막 단계가 완료 될 때까지 순서 대로 수행 되는 일련의 비즈니스 논리 단계입니다. 순차 워크플로는 목록과 문서와 같은 SharePoint 항목을 포함 하는 프로세스를 관리 하는 데 사용 됩니다. 사이트 수준 (전역) 워크플로 또는 목록 수준 (로컬) 워크플로 중 하나를 만들 수 있으며, 워크플로를 자동으로 시작할지 수동으로 시작할지를 선택할 수 있습니다. 이 프로젝트 항목은 팜 솔루션 에서만 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [sharepoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md), [sharepoint Server 2010의 워크플로](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))및 [새로운 기능: 워크플로 향상](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))을 참조 하세요.
@@ -117,7 +117,7 @@ ms.locfileid: "95970372"
  *Silverlight 웹 파트* 프로젝트 항목을 사용 하면 silverlight 응용 프로그램을 표시 하는 SharePoint 용 웹 파트를 만들 수 있습니다. 솔루션에이 프로젝트 항목을 추가 하는 경우 새 Silverlight 응용 프로그램을 추가할지 아니면 나중에 기존 응용 프로그램을 참조할 것인지를 선택할 수 있습니다. 자세한 내용은 [sharepoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md) 및 [연습: sharepoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)를 참조 하세요.
 
 ### <a name="site-column"></a>사이트 열
- *필드* 라고도 하는 *사이트 열* 은 SharePoint 프로젝트에 추가할 수 있는 가장 기본적인 요소 중 하나입니다. 사이트 열은 연락처 목록에 있는 연락처의 전화 번호, 텍스트 주석 또는 도시 이름과 같은 데이터 유형을 나타냅니다. 자세한 내용은 SharePoint 및 열 [에 대 한 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md) 를 [Columns](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))참조 하세요.
+ *필드* 라고도 하는 *사이트 열* 은 SharePoint 프로젝트에 추가할 수 있는 가장 기본적인 요소 중 하나입니다. 사이트 열은 연락처 목록에 있는 연락처의 전화 번호, 텍스트 주석 또는 도시 이름과 같은 데이터 유형을 나타냅니다. 자세한 내용은 SharePoint 및 열 [에 대 한 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md) 를 [](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))참조 하세요.
 
 ### <a name="site-definition-farm-solution-only"></a>사이트 정의 (팜 솔루션에만 해당)
  *사이트 정의* 프로젝트 항목은 다음 파일을 포함 하는 사이트 정의 폴더를 포함 합니다.
@@ -142,6 +142,6 @@ ms.locfileid: "95970372"
 ### <a name="web-part"></a>웹 파트
  *웹 파트* 는 웹 파트 페이지 라는 특수 한 형식의 페이지 내에서 실행 되는 서버측 컨트롤입니다. SharePoint 사이트에 표시 되는 페이지의 구성 요소입니다. 웹 파트 항목은 SharePoint 사이트의 웹 파트를 디자인 하는 데 사용할 수 있는 파일을 제공 합니다. 자세한 내용은 [방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md) 및 [구성 블록: 웹 파트](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint 제품 및 기술](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))

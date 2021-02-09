@@ -15,15 +15,15 @@ helpviewer_keywords:
 - attachments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 972203b5306d3fa7c94461b235c204051871c33c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892088"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목에 파일 첨부
   이 예제에서는 새 메일 항목에 파일을 첨부 하 고 Armando에 전달 합니다. 이 예제에서는 Ar마나트 이라는 사용자가 받는 사람으로 존재 한다고 가정 합니다.

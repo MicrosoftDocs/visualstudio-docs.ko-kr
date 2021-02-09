@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892452"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 뷰 장식, 명령 및 설정 만들기 (열 안내선)
 명령 및 보기 효과를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서에서는 인기 있는 확장 기능인 열 안내선을 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 텍스트 편집기의 뷰에서 코드를 특정 열 너비로 관리 하는 데 도움이 되는 시각적 밝은 선입니다. 특히 서식 지정 된 코드는 문서, 블로그 게시물 또는 버그 보고서에 포함 되는 샘플에 중요할 수 있습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "97863073"
   > [!NOTE]
   > 이 연습에서는 Visual Studio 확장 템플릿에서 생성 된 몇 개의 파일에 많은 양의 코드를 붙여넣습니다. 그러나이 연습에서는 다른 확장 예제를 사용 하 여 GitHub에서 완료 된 솔루션을 참조 하 게 될 예정입니다. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘이 있다는 차이가 있습니다.
 
-## <a name="get-started"></a>시작하기
+## <a name="get-started"></a>시작
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="set-up-the-solution"></a>솔루션 설정
@@ -1341,7 +1341,7 @@ Visual Studio 확장성 샘플의 GitHub 프로젝트가 곧 표시 되 고 완�
 
 이 Visual Studio 갤러리[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)을 사용 하 여 열 안내선 기능 버전을 사용해 볼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [편집기 내부](../extensibility/inside-the-editor.md)
 - [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

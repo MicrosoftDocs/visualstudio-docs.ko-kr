@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 635e4123d302cf5c3173ee298f0239f5fa1c95f3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 5366be3ed60da9225eaf10b19f58ccd77bffbb90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892192"
 ---
 # <a name="use-the-sharepoint-project-service"></a>SharePoint 프로젝트 서비스 사용
   SharePoint 프로젝트 시스템에는 프로젝트 시스템과 관련된 작업을 수행하는 데 사용할 수 있는 프로젝트 서비스가 포함되어 있습니다. 프로젝트 서비스는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체입니다.
@@ -30,7 +30,7 @@ ms.locfileid: "96914545"
 ## <a name="project-service-features"></a>프로젝트 서비스 기능
  다음 표에는 SharePoint 프로젝트 서비스를 사용하여 수행할 수 있는 작업과 각 작업을 수행하는 데 사용할 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 메서드 또는 속성이 정리되어 있습니다.
 
-|작업|사용할 멤버|
+|Task|사용할 멤버|
 |----------|-------------------|
 |Visual Studio에서 열려 있는 SharePoint 프로젝트에 액세스합니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> 속성|
 |사용 가능한 모든 SharePoint 프로젝트 항목 형식(기본 제공 및 사용자 지정 프로젝트 항목 형식 포함)에 액세스합니다.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> 속성|
