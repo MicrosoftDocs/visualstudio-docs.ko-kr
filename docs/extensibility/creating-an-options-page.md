@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877488"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "94973717"
 
  MPF는 도구 옵션 페이지, 클래스 및 클래스를 만드는 데 도움이 되는 두 가지 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.DialogPage> . 클래스를 서브클래싱 하 여 이러한 페이지에 대 한 컨테이너를 제공 하는 VSPackage를 만듭니다 `Package` . 클래스에서 파생 하 여 각 도구 옵션 페이지를 만듭니다 `DialogPage` .
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -39,7 +39,7 @@ ms.locfileid: "94973717"
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `MyToolsOptionsExtension` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이라는 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가 `MyToolsOptionsPackage` 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가 대화 상자** 에서 **visual c # 항목**  >  **확장성** 으로 이동 하 고 **visual Studio 패키지** 를 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을으로 변경 합니다 `MyToolsOptionsPackage.cs` . VSPackage를 만드는 방법에 대 한 자세한 내용은 VSPackage를 [사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)를 참조 하세요.
+2. 이라는 Visual Studio 패키지 항목 템플릿을 추가 하 여 VSPackage를 추가 `MyToolsOptionsPackage` 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **새 항목 추가 대화 상자** 에서 **visual c # 항목**  >  **확장성** 으로 이동 하 고 **visual Studio 패키지** 를 선택 합니다. 대화 상자의 맨 아래에 있는 **이름** 필드에서 파일 이름을으로 변경 합니다 `MyToolsOptionsPackage.cs` . VSPackage를 만드는 방법에 대 한 자세한 내용은 VSPackage를 [사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)를 참조 하세요.
 
 ### <a name="to-create-the-tools-options-property-grid"></a>도구 옵션 속성 표를 만들려면
 
@@ -192,7 +192,7 @@ ms.locfileid: "94973717"
     }
     ```
 
-     필드에는 `optionsPage` 부모 인스턴스에 대 한 참조가 포함 `OptionPageCustom` 됩니다. `Initialize`메서드는 `OptionString` **텍스트 상자** 에를 표시 합니다. 이벤트 처리기는 **TextBox** `OptionString` 포커스가 **Textbox** 를 벗어날 때 텍스트 상자의 현재 값을에 씁니다.
+     필드에는 `optionsPage` 부모 인스턴스에 대 한 참조가 포함 `OptionPageCustom` 됩니다. `Initialize`메서드는 `OptionString` **텍스트 상자** 에를 표시 합니다. 이벤트 처리기는  `OptionString` 포커스가 **Textbox** 를 벗어날 때 텍스트 상자의 현재 값을에 씁니다.
 
 9. 패키지 코드 파일에서 속성에 대 한 재정의를 클래스에 추가 하 여 `OptionPageCustom.Window` `OptionPageCustom` 의 인스턴스를 만들고 초기화 하 고 반환 `MyUserControl` 합니다. 이제 클래스는 다음과 같습니다.
 

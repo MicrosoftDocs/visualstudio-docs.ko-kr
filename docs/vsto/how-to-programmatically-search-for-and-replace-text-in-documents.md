@@ -15,15 +15,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f3ef1a32d145169db815915ee93d03893943e71f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877904"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>방법: 프로그래밍 방식으로 문서에서 텍스트 검색 및 바꾸기
   <xref:Microsoft.Office.Interop.Word.Find> 개체는 <xref:Microsoft.Office.Interop.Word.Selection> 및 <xref:Microsoft.Office.Interop.Word.Range> 개체 둘 다의 멤버이며, 둘 중 하나를 사용하여 Microsoft Office Word 문서에서 텍스트를 검색할 수 있습니다. 바꾸기 명령은 찾기 명령의 확장입니다.

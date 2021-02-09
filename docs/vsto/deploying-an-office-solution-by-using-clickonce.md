@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877936"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce를 사용 하 여 Office 솔루션 배포
   ClickOnce를 사용하면 Office 솔루션을 더 적은 단계로 배포할 수 있습니다. 업데이트를 게시하는 경우 솔루션에서 자동으로 이를 감지하여 설치합니다. 그러나 ClickOnce에서는 컴퓨터의 각 사용자에 대해 별도로 솔루션을 설치하도록 합니다. 따라서 둘 이상의 사용자가 동일한 컴퓨터에서 솔루션을 실행 하는 경우 Windows Installer (*.msi*)를 사용 하는 것이 좋습니다.
@@ -91,7 +91,7 @@ ms.locfileid: "96845650"
 
      다음 표는 각 옵션에 대해 설명합니다.
 
-    |옵션|설명|
+    |옵션|Description|
     |------------|-----------------|
     |**구성 요소 공급업체의 웹 사이트에서 필수 구성 요소 다운로드**|사용자에게 공급업체로부터 이러한 필수 구성 요소를 다운로드하여 설치하라는 메시지가 나타납니다.|
     |**내 애플리케이션과 동일한 위치에서 필수 구성 요소 다운로드**|필수 구성 요소 소프트웨어가 솔루션과 함께 설치되어 있습니다. 이 옵션을 선택하면 자동으로 모든 필수 구성 요소 패키지가 게시 위치에 복사됩니다. 이 옵션이 작동하려면 필수 구성 요소 패키지가 개발 컴퓨터에 있어야 합니다.|
@@ -196,7 +196,7 @@ ms.locfileid: "96845650"
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>배포 후 작업을 정의하는 클래스를 만듭니다.
 
-1. 메뉴 모음에서 **파일**  >  **Add**  >  **새 프로젝트** 추가를 선택 합니다.
+1. 메뉴 모음에서 **파일**  >    >  **새 프로젝트** 추가를 선택 합니다.
 
 2. **새 프로젝트 추가** 대화 상자의 **설치 된 템플릿** 창에서 **Windows** 폴더를 선택 합니다.
 
@@ -306,7 +306,7 @@ ms.locfileid: "96845650"
 
      "ExcelWorkbook.vsto에 서명했습니다."라는 메시지가 나타납니다.
 
-5. **C:\publish\Application Files\ExcelWorkbook** MostRecentVersionNumber 디렉터리에 *파일을 복사 합니다* \_ _MostRecentVersionNumber_ .
+5. **C:\publish\Application Files\ExcelWorkbook** MostRecentVersionNumber 디렉터리에 *파일을 복사 합니다* \_  .
 
 ## <a name="put-the-document-of-a-solution-onto-a-server-thats-running-sharepoint-document-level-customizations-only"></a><a name="SharePoint"></a> SharePoint를 실행 하는 서버에 솔루션 문서 저장 (문서 수준 사용자 지정에만 해당)
  SharePoint를 사용하여 최종 사용자에게 문서 수준 사용자 지정을 게시할 수 있습니다. 사용자가 SharePoint 사이트에서 문서를 열면 런타임에 자동으로 공유 네트워크 폴더의 솔루션을 사용자의 로컬 컴퓨터에 설치합니다. 솔루션이 로컬로 설치된 후, 문서가 바탕 화면과 같은 다른 위치에 복사되는 경우에도 사용자 지정은 계속 작동합니다.
@@ -426,7 +426,7 @@ ms.locfileid: "96845650"
 
      **값** 상자에는 배포 매니페스트 식별자가 포함 됩니다.
 
-4. 식별자 앞에 문서에 대 한 정규화 *된 경로를* 입력 합니다 | *Identifier* (예: *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*).
+4. 식별자 앞에 문서에 대 한 정규화 *된 경로를* 입력 합니다 |  (예: *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*).
 
      이 식별자의 형식을 지정 하는 방법에 대 한 자세한 내용은 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)를 참조 하세요.
 

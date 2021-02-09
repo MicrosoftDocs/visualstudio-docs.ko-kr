@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5d95398285d9106719f3c2444d54202b81cfee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877501"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature &gt; 요소 (ClickOnce 배포)
 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다.

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877618"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Windows에서 인식할 수 없는 파일 형식 (예: Microsoft Word 파일)이 배포에 포함 되어 있으면 IIS에서 해당 파일을 전송 하는 것을 거부 하 고 배포가 실패 합니다.
@@ -33,7 +33,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
  이러한 제한으로 인해 매니페스트 및 어셈블리와 같은 핵심 파일을 다운로드 하는 데 문제가 발생 하지는 않지만 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램의 일부로 포함 된 데이터 파일을 다운로드 하지 못할 수도 있습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 에서 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IIS 구성 관리자에서 이러한 파일의 다운로드를 금지 하는 처리기를 제거 하 여이 오류를 해결할 수 있습니다. 자세한 내용은 IIS 서버 설명서를 참조 하십시오.
 
- 일부 웹 서버는 *.dll* , *.config* 및 *.mdf* 와 같은 확장명을 가진 파일을 차단할 수 있습니다. Windows 기반 응용 프로그램에는 일반적으로 이러한 확장 중 일부를 포함 하는 파일이 포함 됩니다. 사용자가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 웹 서버에서 차단 된 파일에 액세스 하는 응용 프로그램을 실행 하려고 하면 오류가 발생 합니다. 모든 파일 확장명을 차단 해제 하는 대신 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 은 기본적으로 *.deploy* 파일 확장명을 사용 하 여 모든 응용 프로그램 파일을 게시 합니다. 따라서 관리자는 다음 세 가지 파일 확장명을 차단 해제 하도록 웹 서버를 구성 하기만 하면 됩니다.
+ 일부 웹 서버는 *.dll*, *.config* 및 *.mdf* 와 같은 확장명을 가진 파일을 차단할 수 있습니다. Windows 기반 응용 프로그램에는 일반적으로 이러한 확장 중 일부를 포함 하는 파일이 포함 됩니다. 사용자가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 웹 서버에서 차단 된 파일에 액세스 하는 응용 프로그램을 실행 하려고 하면 오류가 발생 합니다. 모든 파일 확장명을 차단 해제 하는 대신 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 은 기본적으로 *.deploy* 파일 확장명을 사용 하 여 모든 응용 프로그램 파일을 게시 합니다. 따라서 관리자는 다음 세 가지 파일 확장명을 차단 해제 하도록 웹 서버를 구성 하기만 하면 됩니다.
 
 - *. 응용 프로그램*
 
@@ -43,7 +43,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 
   그러나 [게시 옵션 대화 상자](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))에서 **".deploy" 파일 확장명 사용** 옵션을 선택 취소 하 여이 옵션을 사용 하지 않도록 설정할 수 있습니다 .이 경우 응용 프로그램에 사용 되는 모든 파일 확장명을 차단 해제 하도록 웹 서버를 구성 해야 합니다.
 
-  예를 들어 .NET Framework를 설치 하지 않은 IIS를 사용 하는 경우 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우 *.manifest* , *응용 프로그램* 및 *.deploy* 를 구성 해야 합니다.
+  예를 들어 .NET Framework를 설치 하지 않은 IIS를 사용 하는 경우 또는 다른 웹 서버 (예: Apache)를 사용 하는 경우 *.manifest*, *응용 프로그램* 및 *.deploy* 를 구성 해야 합니다.
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 및 SSL(Secure Sockets Layer) (SSL)
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Internet Explorer에서 ssl 인증서에 대 한 메시지가 표시 되는 경우를 제외 하 고 응용 프로그램은 ssl을 통해 정상적으로 작동 합니다. 사이트 이름이 일치 하지 않거나 인증서가 만료 된 경우와 같이 인증서에 문제가 있는 경우 메시지가 표시 될 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]SSL 연결을 사용 하려면 인증서가 최신 상태이 고 인증서 데이터가 사이트 데이터와 일치 하는지 확인 합니다.
@@ -96,7 +96,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>응용 프로그램 설치에 지원 되지 않는 FTP 프로토콜
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 모든 HTTP 1.1 웹 서버 또는 파일 서버에서 응용 프로그램을 설치할 수 있습니다. 파일 전송 프로토콜 FTP는 응용 프로그램을 설치 하는 데 지원 되지 않습니다. FTP를 사용 하 여 응용 프로그램을 게시할 수 있습니다. 다음 표에는 이러한 차이점이 요약 되어 있습니다.
 
-| URL 형식 | 설명 |
+| URL 형식 | Description |
 |----------| - |
 | ftp:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 프로토콜을 사용 하 여 응용 프로그램을 게시할 수 있습니다. |
 | http:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 프로토콜을 사용 하 여 응용 프로그램을 설치할 수 있습니다. |
@@ -112,7 +112,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
  기본적으로 Windows Server에는 FrontPage Server Extensions 설치 되어 있지 않습니다. 를 사용 하 여 FrontPage Server Extensions HTTP를 사용 하 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 는 Windows Server 웹 서버에 게시 하려면 먼저 FrontPage Server Extensions를 설치 해야 합니다. Windows Server에서 서버 관리 관리 도구를 사용 하 여 설치를 수행할 수 있습니다.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: 잠긴 콘텐츠 형식
- 에서 IIS는 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 알려진 특정 콘텐츠 형식 (예: *.htm* , *.html* , *.txt* 등)을 제외 하 고 모든 파일 형식을 잠급니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 서버를 사용 하 여 응용 프로그램을 배포할 수 있도록 설정 하려면 응용 프로그램, *.manifest* 및 응용 프로그램에서 사용 하는 다른 모든 사용자 지정 파일 형식의 파일을 다운로드할 수 있도록 IIS 설정을 변경 해야 *합니다.*
+ 에서 IIS는 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 알려진 특정 콘텐츠 형식 (예: *.htm*, *.html*, *.txt* 등)을 제외 하 고 모든 파일 형식을 잠급니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]이 서버를 사용 하 여 응용 프로그램을 배포할 수 있도록 설정 하려면 응용 프로그램, *.manifest* 및 응용 프로그램에서 사용 하는 다른 모든 사용자 지정 파일 형식의 파일을 다운로드할 수 있도록 IIS 설정을 변경 해야 *합니다.*
 
  IIS 서버를 사용 하 여 배포 하는 경우 *inetmgr.exe* 를 실행 하 고 기본 웹 페이지에 대 한 새 파일 형식을 추가 합니다.
 
@@ -130,7 +130,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="http-compression-issues"></a>HTTP 압축 문제
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]에서는 클라이언트에 스트림을 보내기 전에 GZIP 알고리즘을 사용 하 여 데이터 스트림을 압축 하는 웹 서버 기술인 HTTP 압축을 사용 하는 다운로드를 수행할 수 있습니다. 클라이언트 (이 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] )는 파일을 읽기 전에 스트림 압축을 풉니다.
 
- IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 ( *.dll* ), xml ( *.xml* ), 배포 매니페스트 ( *응용 프로그램* ) 및 응용 프로그램 매니페스트 ( *.manifest* )에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.
+ IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 (*.dll*), xml (*.xml*), 배포 매니페스트 (*응용 프로그램*) 및 응용 프로그램 매니페스트 (*.manifest*)에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.
 
  IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/help/234497)을 참조 하세요.
 

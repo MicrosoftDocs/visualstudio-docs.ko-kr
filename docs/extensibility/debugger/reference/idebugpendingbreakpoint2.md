@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877410"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 이 인터페이스는 코드 위치에 바인딩할 준비가 된 중단점을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPendingBreakpoint2 : IUnknown
@@ -37,7 +37,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPendingBreakpoint2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|보류 중인이 중단점을 코드 위치에 바인딩할 수 있는지 여부를 확인 합니다.|
 |[바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|이 보류 중인 중단점을 하나 이상의 코드 위치에 바인딩합니다.|
@@ -63,7 +63,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)

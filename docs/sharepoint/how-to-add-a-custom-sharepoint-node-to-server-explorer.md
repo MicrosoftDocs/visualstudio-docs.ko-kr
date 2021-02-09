@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878125"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>방법: 서버 탐색기에 사용자 지정 SharePoint 노드 추가
   **서버 탐색기** 의 **SharePoint 연결** 노드 아래에서 사용자 지정 노드를 추가할 수 있습니다. 이는 기본적으로 **서버 탐색기** 에 표시 되지 않는 추가 SharePoint 구성 요소를 표시 하려는 경우에 유용 합니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.

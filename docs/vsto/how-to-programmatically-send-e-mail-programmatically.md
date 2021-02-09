@@ -14,15 +14,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], sending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f31fdb92a5acff16b1d6e8001ea88931a9a22ab
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877865"
 ---
 # <a name="how-to-programmatically-send-email"></a>방법: 프로그래밍 방식으로 전자 메일 보내기
   이 예에서는 전자 메일 주소에서 도메인 이름이 **example.com** 인 연락처에 전자 메일 메시지를 보냅니다.
