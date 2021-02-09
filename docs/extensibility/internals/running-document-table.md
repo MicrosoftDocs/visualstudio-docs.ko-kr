@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902893"
 ---
 # <a name="running-document-table"></a>문서 테이블 실행
 IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 테이블) 라는 내부 구조에 유지 합니다. 이 목록에는 이러한 문서를 현재 편집 하 고 있는지 여부에 관계 없이 메모리에 열려 있는 모든 문서가 포함 됩니다. 문서는 프로젝트 또는 주 프로젝트 파일 (예: .vcxproj 파일)의 파일을 포함 하 여 유지 되는 모든 항목입니다.
@@ -29,7 +29,7 @@ IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 �
 ## <a name="elements-of-the-running-document-table"></a>실행 중인 문서 테이블의 요소
  실행 중인 문서 테이블에는 다음 항목이 포함 되어 있습니다.
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |문서 모니커|문서 데이터 개체를 고유 하 게 식별 하는 문자열입니다. 이는 파일을 관리 하는 프로젝트 시스템의 절대 파일 경로입니다 (예: C:\MyProject\MyFile). 이 문자열은 데이터베이스의 저장 프로시저와 같이 파일 시스템 이외의 저장소에 저장 된 프로젝트에도 사용 됩니다. 이 경우 프로젝트 시스템은 문서를 저장 하는 방법을 결정 하기 위해 인식 하 고 구문 분석할 수 있는 고유한 문자열을 만들 수 있습니다.|
 |계층 소유자|인터페이스로 표시 되는 문서를 소유 하는 hierarchy 개체입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> .|
@@ -58,6 +58,6 @@ IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 �
 
 - 계층 또는 항목 ID를 사용 하 여 프로젝트 시스템에 전체 문서 경로를 요청한 다음 RDT에서 항목을 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [RDT_ReadLock 사용법](../../extensibility/internals/rdt-readlock-usage.md)
 - [지속성 및 실행 중인 문서 테이블](../../extensibility/internals/persistence-and-the-running-document-table.md)

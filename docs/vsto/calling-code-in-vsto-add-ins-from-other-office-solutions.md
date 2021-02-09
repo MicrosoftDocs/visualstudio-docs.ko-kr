@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903806"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
   VSTO 추가 기능의 개체를 다른 Microsoft Office 솔루션을 비롯한 다른 솔루션에 노출할 수 있습니다. 이는 해당 VSTO 추가 기능이 다른 솔루션에서 사용하도록 하려는 서비스를 제공하는 경우에 유용합니다. 예를 들어 웹 서비스의 재무 데이터에 대해 계산을 수행 하는 Microsoft Office Excel 용 VSTO 추가 기능이 있는 경우 다른 솔루션은 런타임에 Excel VSTO 추가 기능을 호출 하 여 이러한 계산을 수행할 수 있습니다.
@@ -84,7 +84,7 @@ ms.locfileid: "96847847"
 ### <a name="expose-classes-to-vba"></a>VBA에 클래스 노출
  위에 나와 있는 단계를 수행하는 경우 VBA 코드는 인터페이스에서 선언하는 메서드만 호출할 수 있습니다. VBA 코드는 클래스가 <xref:System.Object>같은 기본 클래스에서 가져오는 메서드를 비롯해 클래스의 다른 모든 메서드를 호출할 수 없습니다.
 
- 또는 특성을 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 열거형의 Autodispatch 또는 autodispatch 값으로 설정 하 여 IDispatch 인터페이스를 노출할 수도 있습니다 <xref:System.Runtime.InteropServices.ClassInterfaceType> . 인터페이스를 노출 하는 경우 별도의 인터페이스에서 메서드를 선언할 필요가 없습니다. 하지만 VBA 코드는 <xref:System.Object>같은 기본 클래스에서 가져오는 메서드를 포함하여 클래스의 모든 public 및 비정적 메서드를 호출할 수 있습니다. 하지만 초기 바인딩을 사용하는 OOP(Out-of-Process) 클라이언트는 클래스를 호출할 수 없습니다.
+ 또는 특성을 [](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 열거형의 Autodispatch 또는 autodispatch 값으로 설정 하 여 IDispatch 인터페이스를 노출할 수도 있습니다 <xref:System.Runtime.InteropServices.ClassInterfaceType> . 인터페이스를 노출 하는 경우 별도의 인터페이스에서 메서드를 선언할 필요가 없습니다. 하지만 VBA 코드는 <xref:System.Object>같은 기본 클래스에서 가져오는 메서드를 포함하여 클래스의 모든 public 및 비정적 메서드를 호출할 수 있습니다. 하지만 초기 바인딩을 사용하는 OOP(Out-of-Process) 클라이언트는 클래스를 호출할 수 없습니다.
 
 ### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> Out-of-process 클라이언트에 클래스 노출
  OOP(Out-of-Process) 클라이언트에 VSTO 추가 기능의 클래스를 노출하려면 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 에서 클래스를 파생시켜 OOP 클라이언트가 노출된 VSTO 추가 기능 개체를 호출할 수 있도록 해야 합니다. 그렇지 않은 상태에서 OOP(Out-of-Process) 클라이언트에서 노출된 개체 인스턴스를 가져오려고 하면 예기치 않게 실패할 수 있습니다.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7b82595aa3a09076b91211ba4ab45145b02ebcd9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903739"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처 액세스
   이 예에서는 마지막 이름에 지정 된 검색 문자열이 포함 된 모든 연락처를 찾습니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c98fde516a3e836302cd7eb2c73abd730d5cc8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902126"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 중단점의 위치를 설명 하는 데 사용 되는 구조체의 형식을 지정 합니다.
@@ -53,7 +53,7 @@ public struct BP_LOCATION {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `bpLocationType`\
 Union 또는 멤버를 해석 하는 데 사용 되는 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 열거형의 값 `bpLocation` `unionmemberX` 입니다.
 
@@ -105,7 +105,7 @@ Union 또는 멤버를 해석 하는 데 사용 되는 [BP_LOCATION_TYPE](../../
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (컨텍스트)|`string` (데이터 식)|`uint` (요소 수)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 `BP_LOCATION` 형식에 대 한 c #의 구조를 해석 하는 방법을 보여 줍니다 `BPLT_DATA_STRING` . 이 특정 형식은 `unionmemberX` 가능한 모든 형식 (개체, 문자열 및 숫자)에서 네 개의 멤버를 모두 해석 하는 방법을 보여 줍니다.
 
 ```csharp
@@ -138,8 +138,8 @@ namespace MyPackage
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)

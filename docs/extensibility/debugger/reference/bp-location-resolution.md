@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8b6e022d14f663be24c92a7a8cce9a06959747b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902151"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 특정 위치에 있는 중단점의 해상도를 설명 합니다.
@@ -32,7 +32,7 @@ typedef struct _BP_LOCATION_RESOLUTION {
 } BP_LOCATION_RESOLUTION;
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `pResolution`\
 중단점 형식과 해당 해결 정보를 결정 하는 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 개체입니다.
 
@@ -46,7 +46,7 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

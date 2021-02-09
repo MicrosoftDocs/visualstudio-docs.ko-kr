@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901896"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80735676"
 
  이 인터페이스는 형식, 별칭 및 사용자 지정 시각화 도우미 서비스에 대 한 액세스를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBinder3 : IDebugBinder
@@ -40,7 +40,7 @@ IDebugBinder3 : IDebugBinder
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) 인터페이스에서 제공 하는 메서드 외에도이 인터페이스는 다음을 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|이 개체가 바인딩되는 메모리를 나타내는 메모리 개체를 검색 합니다.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|이 개체와 연결 된 예외를 검색 합니다 (있는 경우).|
@@ -58,6 +58,6 @@ IDebugBinder3 : IDebugBinder
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903158"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>솔루션용 부모 컨테이너 폴더 만들기
 소스 제어 플러그 인 API 버전 1.2에서 사용자는 솔루션 내의 모든 웹 프로젝트에 대 한 단일 루트 소스 제어 대상을 지정할 수 있습니다. 이 단일 루트를 성 (Super 단일화 Root) 라고 합니다.
@@ -66,5 +66,5 @@ ms.locfileid: "96329941"
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *dword: 00000001*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

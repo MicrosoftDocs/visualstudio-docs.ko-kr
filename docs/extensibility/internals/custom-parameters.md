@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902976"
 ---
 # <a name="custom-parameters"></a>사용자 지정 매개 변수
 사용자 지정 매개 변수는 마법사가 시작 된 후의 마법사 작업을 제어 합니다. 관련 *.vsz* 파일은 IDE (통합 개발 환경)에서 패키지 되 고 마법사가 시작 될 때 마법사에 문자열 배열로 전달 되는 사용자 정의 매개 변수 배열을 제공 합니다. 그러면 마법사에서 문자열의 배열을 구문 분석 하 고 정보를 사용 하 여 마법사의 실제 작업을 제어 합니다. 이러한 방식으로 마법사는 *.vsz* 파일의 내용에 따라 기능을 사용자 지정할 수 있습니다.
@@ -43,7 +43,7 @@ Param="PROJECT_TYPE = CSPROJ"
 
  자세한 내용은 [마법사 (.vsz) 파일](../../extensibility/internals/wizard-dot-vsz-file.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md)
 - [마법사로](../../extensibility/internals/wizards.md)

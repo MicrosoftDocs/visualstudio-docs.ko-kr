@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903143"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기
 의 프로젝트 형식은 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *팩터리* 를 사용 하 여 project 개체의 인스턴스를 만듭니다. 프로젝트 팩터리는 공동 생성 가능한 COM 개체에 대 한 표준 클래스 팩터리와 비슷합니다. 그러나 프로젝트 개체는 공동 생성할 수 없습니다. 프로젝트 팩터리를 사용 해야만 만들 수 있습니다.
@@ -46,7 +46,7 @@ ms.locfileid: "96328602"
 
    프로젝트에서 파일을 사용 하지 않고 데이터베이스 또는 웹 서버와 같은 파일 시스템 이외의 저장소 메커니즘에 해당 프로젝트 상태를 저장할 수도 있습니다. 이 경우 메서드에 전달 되는 파일 이름 매개 변수는 `CreateProject` 실제로는 파일 시스템 경로가 아니라 고유한 문자열 (URL) 이므로 프로젝트 데이터를 식별 합니다. 에 전달 되는 템플릿 파일을 복사 하 여 `CreateProject` 실행할 적절 한 생성 시퀀스를 트리거할 필요가 없습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

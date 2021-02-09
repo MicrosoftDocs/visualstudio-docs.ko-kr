@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], closing workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13b487054e4e8a12c2479ddfc167ca0b8e90285a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4bec2cbbe0cb2a57ec2373bd220abc49dabc5bfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903667"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 닫기
   활성 통합 문서를 닫거나 닫을 통합 문서를 지정할 수 있습니다.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 05f3662f1bc6379fa3401e98473971bcefc36ddd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2bb8f6064bd2c2df55c7d0cf8fea1e25c513da0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903791"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 Office 프로젝트의 디자인 변경
   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]부터 Visual Studio에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 대상으로 하는 Office 프로젝트의 디자인에 몇 가지 변경 사항이 도입되었습니다. 이전 버전의 Visual Studio에서 Office 프로젝트를 사용하는 데 익숙한 경우 .NET Framework 4.0 이상의 버전을 대상으로 하는 Office 프로젝트를 개발하기 전에 이러한 변경 사항을 알고 있어야 합니다. 기본적으로 Visual Studio 2013 이상을 사용하여 만드는 모든 프로젝트는 .NET Framework 4.0 이상을 대상으로 합니다.
@@ -57,7 +57,7 @@ ms.locfileid: "96847860"
 |`GetVstoObject` 및 `HasVstoObject` 메서드의 구문이 변경되었습니다.|PIA(주 Interop 어셈블리)로부터 네이티브 개체에서 이러한 메서드에 액세스할 때 `Globals.Factory` 개체를 이러한 메서드에 전달해야 합니다. 또는 프로젝트에서 `Globals.Factory` 속성에 의해 반환되는 개체에서 이러한 메서드에 액세스할 수 있습니다. 자세한 내용은 [.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트 업데이트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)를 참조 하세요.|
 |Word 콘텐츠 컨트롤의 이벤트가 새 대리자와 연결됩니다.|Word 콘텐츠 컨트롤의 이벤트를 처리하는 모든 코드를 수정하여 새 대리자를 지정해야 합니다. 자세한 내용은 [.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트 업데이트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)를 참조 하세요.|
 |`OLEObject` 및 `OLEControl` 클래스의 이름이 변경되었습니다.|이러한 클래스의 인스턴스를 사용하는 모든 코드를 수정하여 <xref:Microsoft.Office.Tools.Excel.ControlSite> 또는 <xref:Microsoft.Office.Tools.Word.ControlSite> 개체를 대신 사용해야 합니다. 자세한 내용은 [.NET Framework 4 또는 .NET Framework 4.5으로 마이그레이션하는 Excel 및 Word 프로젝트 업데이트](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)를 참조 하세요.|
-|, N, 및과 같은 호스트 항목 클래스는 `ThisWorkbook` `Sheet` *n* `ThisDocument` `ThisAddIn` `Dispose` 재정의할 수 있는 메서드를 더 이상 제공 하지 않습니다.|`Dispose` 메서드 재정의의 모든 코드를 `ThisAddIn_Shutdown`과 같은 호스트 항목 클래스의 `Shutdown` 이벤트 처리기로 이동하고 호스트 항목 클래스에서 `Dispose` 메서드 재정의를 제거해야 합니다.|
+|, N, 및과 같은 호스트 항목 클래스는 `ThisWorkbook` `Sheet`  `ThisDocument` `ThisAddIn` `Dispose` 재정의할 수 있는 메서드를 더 이상 제공 하지 않습니다.|`Dispose` 메서드 재정의의 모든 코드를 `ThisAddIn_Shutdown`과 같은 호스트 항목 클래스의 `Shutdown` 이벤트 처리기로 이동하고 호스트 항목 클래스에서 `Dispose` 메서드 재정의를 제거해야 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

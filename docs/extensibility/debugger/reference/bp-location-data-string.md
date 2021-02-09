@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 75f881feaaa2068abd98d771a63024f20435d98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce47dc9a3fac9ee56b801e4d2681668f4467f532
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902162"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 사용자가 IDE (통합 개발 환경)에서 입력할 수 있는 문자열을 기반으로 하는 데이터 중단점을 설정 하는 데 사용 됩니다.
@@ -35,7 +35,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 } BP_LOCATION_DATA_STRING;
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `pThread`\
 중단점이 발생 한 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
@@ -58,7 +58,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

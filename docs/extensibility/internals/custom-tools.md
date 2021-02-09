@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7fdadad602a256b4740b4c4204704ca73864d612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903025"
 ---
 # <a name="custom-tools"></a>사용자 지정 도구
 *사용자 지정 도구* 를 사용 하면 프로젝트의 항목과 도구를 연결 하 고 파일이 저장 될 때마다 해당 도구를 실행할 수 있습니다. *단일 파일 생성기* 라고도 하는 특정 사용자 지정 도구는 데이터에서 코드를 생성 하는 번역기를 구현 하는 데 자주 사용 되며 그 반대의 경우도 마찬가지입니다. 예를 들어 단일 파일 생성기는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *설정* 및 *.resx* 파일에서 코드를 만들고 소스 코드를 만듭니다. 생성 된 소스 코드는 *. settings* 및 *.resx* 파일의 데이터에 대해 강력한 형식의 액세스를 제공 합니다. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]및 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 프로젝트 형식은 사용자 지정 도구를 지원 합니다. 프로젝트 형식은 사용자 지정 도구를 지원 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 하지 않습니다. 사용자 고유의 프로젝트 형식이 사용자 지정 도구를 지원할 수도 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "96329967"
 
  사용자 지정 도구는 인터페이스 개체와 연결 되며 `ProjectItem` 디자이너 및 편집기와 비슷합니다. 사용자 지정 도구는로 표시 되는 파일을 `ProjectItem` 입력으로 사용 하 고 해당 파일 이름이 메서드에서 제공 하는 새 파일을 씁니다 `DefaultExtension` .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 
  인터페이스를 사용 하 여 사용자 지정 도구를 구현 하는 방법을 설명 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .

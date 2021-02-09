@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c87fd105d2dbdc18bd4689c4680f2825c9e3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9717c16ba40cfb0b0d637f86da134a3864e2d05e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903250"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 해당 이름이 지정 된 사용자 지정 특성을 검색 합니다.
@@ -52,10 +52,10 @@ int GetCustomAttributeByName(
 `pdwLen`\
 제한이 매개 변수의 길이 (바이트) `ppBlob` 입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공하면 `S_OK`를 반환합니다. 사용자 지정 특성이 없으면을 반환 `S_FALSE` 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [Idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스를 제공 하는 **Cdebugclassfieldsymbol** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

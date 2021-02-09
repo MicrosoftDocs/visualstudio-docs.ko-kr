@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901659"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 이 인터페이스는 식 계산에 대 한 컨텍스트를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExpressionContext2 : IUnknown
@@ -37,7 +37,7 @@ IDebugExpressionContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugExpressionContext2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|평가 컨텍스트의 이름을 검색 합니다.|
 |[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|계산을 위해 텍스트 기반 식을 구문 분석 합니다.|
@@ -54,7 +54,7 @@ IDebugExpressionContext2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

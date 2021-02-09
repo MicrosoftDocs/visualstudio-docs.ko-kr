@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901617"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 이 인터페이스는 프로그램에서 실행 중인 스레드를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugThread2 : IUnknown
@@ -41,7 +41,7 @@ IDebugThread2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugThread2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|이 스레드에 대 한 스택 프레임 목록을 검색 합니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|스레드의 이름을 가져옵니다.|
@@ -51,7 +51,7 @@ IDebugThread2 : IUnknown
 |[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|다음 문을 지정 된 스택 프레임 및 코드 컨텍스트로 설정 합니다.|
 |[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|시스템 스레드 식별자를 가져옵니다.|
 |[일시 중지됨](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|스레드를 일시 중단 합니다.|
-|[재개](../../../extensibility/debugger/reference/idebugthread2-resume.md)|스레드를 다시 시작 합니다.|
+|[다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)|스레드를 다시 시작 합니다.|
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|스레드를 설명 하는 속성을 가져옵니다.|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|이 물리적 스레드와 연결 된 논리 스레드를 가져옵니다.|
 
@@ -67,7 +67,7 @@ IDebugThread2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)

@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903000"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>레거시 언어 서비스의 사용자 지정 문서 속성
-문서 속성은 속성 창에 표시 될 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Properties** . 프로그래밍 언어에는 일반적으로 개별 소스 파일과 연결 된 속성이 없습니다. 그러나 XML은 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.
+문서 속성은 속성 창에 표시 될 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  . 프로그래밍 언어에는 일반적으로 개별 소스 파일과 연결 된 속성이 없습니다. 그러나 XML은 인코딩, 스키마 및 스타일 시트에 영향을 주는 문서 속성을 지원 합니다.
 
 ## <a name="discussion"></a>토론(Discussion)
  사용자 지정 문서 속성을 필요로 하는 언어의 경우 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 파생 클래스에서 필요한 속성을 구현 해야 합니다.
@@ -30,7 +30,7 @@ ms.locfileid: "96329902"
  또한 문서 속성은 일반적으로 소스 파일 자체에 저장 됩니다. 이렇게 하려면 언어 서비스가 **속성 창에** 표시할 소스 파일의 속성 정보를 구문 분석 하 고 **속성** 창에서 문서 속성이 변경 되 면 소스 파일을 업데이트 해야 합니다.
 
 ## <a name="customize-the-documentproperties-class"></a>DocumentProperties 클래스 사용자 지정
- 사용자 지정 문서 속성을 지원 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 필요한 만큼 속성을 추가 해야 합니다. 또한 **속성** 창 화면에서 구성 하려면 사용자 특성도 제공 해야 합니다. 속성에 접근자만 있으면 `get` **속성** 창에 읽기 전용으로 표시 됩니다. 속성에 및 접근자가 모두 있으면 속성 `get` `set` 창에서 속성을 업데이트할 수도 있습니다. **Properties**
+ 사용자 지정 문서 속성을 지원 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 필요한 만큼 속성을 추가 해야 합니다. 또한 **속성** 창 화면에서 구성 하려면 사용자 특성도 제공 해야 합니다. 속성에 접근자만 있으면 `get` **속성** 창에 읽기 전용으로 표시 됩니다. 속성에 및 접근자가 모두 있으면 속성 `get` `set` 창에서 속성을 업데이트할 수도 있습니다. 
 
 ### <a name="example"></a>예제
  다음은 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 두 개의 속성 및를 표시 하는에서 파생 된 클래스입니다 `Filename` `Description` . 속성이 업데이트 되 면 클래스의 사용자 지정 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 호출 하 여 소스 파일에 속성을 씁니다.
@@ -399,5 +399,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)

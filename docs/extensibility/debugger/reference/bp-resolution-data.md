@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25756c00ba493dba866ab70693e69971333ae9ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901934"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 데이터 중단점을 바인딩한 결과를 설명 합니다.
@@ -45,7 +45,7 @@ public struct BP_RESOLUTION_DATA {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `bstrDataExpr`\
 바인딩된 데이터 식입니다.
 
@@ -68,8 +68,8 @@ public struct BP_RESOLUTION_DATA {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

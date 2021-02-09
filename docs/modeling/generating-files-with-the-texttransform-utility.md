@@ -9,15 +9,15 @@ helpviewer_keywords:
 - TextTransform.exe
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 741e7625d301e250daa28a93f18a82193675e068
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902693"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform 유틸리티를 사용 하 여 파일 생성
 
@@ -72,10 +72,10 @@ TextTransform [<options>] <templateName>
 
 |**옵션**|**설명**|
 |-|-|
-|**-out**\<filename>|변환의 출력을 쓸 파일입니다.|
+|**-out** \<filename>|변환의 출력을 쓸 파일입니다.|
 |**-r**\<assembly>|텍스트 템플릿을 컴파일하고 실행 하는 데 사용 되는 어셈블리입니다.|
 |**-u**\<namespace>|템플릿을 컴파일하는 데 사용 되는 네임 스페이스입니다.|
-|**-I**\<includedirectory>|지정 된 텍스트 템플릿에 포함 된 텍스트 템플릿을 포함 하는 디렉터리입니다.|
+|**-I** \<includedirectory>|지정 된 텍스트 템플릿에 포함 된 텍스트 템플릿을 포함 하는 디렉터리입니다.|
 |**-P**\<referencepath>|텍스트 템플릿 내에 지정 된 어셈블리를 검색 하거나 **-r** 옵션을 사용 하는 디렉터리입니다.<br /><br /> 예를 들어 Visual Studio API에 사용 되는 어셈블리를 포함 하려면 다음을 사용 합니다.<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName> ! \<className>\<assemblyName&#124;codeBase>|텍스트 템플릿 내에서 사용자 지정 지시문을 처리 하는 데 사용할 수 있는 지시문 프로세서의 이름, 전체 형식 이름 및 어셈블리입니다.|
 |**-a** [processorName]! [directiveName \<parameterName> ]!!\<parameterValue>|지시문 프로세서에 대 한 매개 변수 값을 지정 합니다. 매개 변수 이름과 값만 지정 하면 모든 지시문 프로세서에서 매개 변수를 사용할 수 있습니다. 지시문 프로세서를 지정 하는 경우 지정 된 프로세서에만 매개 변수를 사용할 수 있습니다. 지시문 이름을 지정 하는 경우 매개 변수는 지정 된 지시문이 처리 되는 경우에만 사용할 수 있습니다.<br /><br /> 지시문 프로세서 또는 텍스트 템플릿에서 매개 변수 값에 액세스 하려면 [ITextTemplatingEngineHost 값](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))을 사용 합니다. 텍스트 템플릿에서 `hostspecific` 템플릿 지시문에를 포함 하 고에서 메시지를 호출 `this.Host` 합니다. 예를 들면 다음과 같습니다.<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 선택적 프로세서 및 지시문 이름을 생략 하는 경우에도 항상 '! ' 표시를 입력 합니다. 예를 들어:<br /><br /> `-a !!param!value`|

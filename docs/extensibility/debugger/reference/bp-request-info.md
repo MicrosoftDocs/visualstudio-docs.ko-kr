@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35a1202f4990f4f6370ad031c896ba85ebb6d816
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c806687b9948be693ca25868aaf7211d9ccf6b97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902017"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 중단점을 구현 하는 데 필요한 정보를 포함 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80737888"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct _BP_REQUEST_INFO {
+typedef struct _BP_REQUEST_INFO {
     BPREQI_FIELDS   dwFields;
     GUID            guidLanguage;
     BP_LOCATION     bpLocation;
@@ -39,11 +39,11 @@ typedef struct _BP_REQUEST_INFO {
     BP_CONDITION    bpCondition;
     BP_PASSCOUNT    bpPassCount;
     BP_FLAGS        dwFlags;
-} BP_REQUEST_INFO;
+} BP_REQUEST_INFO;
 ```
 
 ```csharp
-public struct BP_REQUEST_INFO {
+public struct BP_REQUEST_INFO {
     public uint           dwFields;
     public Guid           guidLanguage;
     public BP_LOCATION    bpLocation;
@@ -57,7 +57,7 @@ public struct BP_REQUEST_INFO {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwFields`\
 입력 하는 필드를 지정 하는 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 열거형의 플래그 조합입니다.
 
@@ -100,8 +100,8 @@ public struct BP_REQUEST_INFO {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

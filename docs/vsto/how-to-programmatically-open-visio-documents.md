@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903662"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 열기
   기존 Microsoft Office Visio 문서를 여는 방법에는 Open 및 Microsoft.office.interop.visio.documents.openex와 같은 두 가지 방법이 있습니다. Microsoft.office.interop.visio.documents.openex 메서드는 호출자가 문서를 여는 방법을 지정할 수 있는 인수를 제공 한다는 점을 제외 하 고는 Open 메서드와 동일 합니다.

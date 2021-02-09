@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902956"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>기본 명령, 그룹 및 도구 모음 배치
 제품 균일성 및 안정성을 위해 UI는 기본적으로 특정 명령 그룹을 표시 하 고 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령 및 명령 그룹에 대 한 정의를 제공 합니다. Vspackage는 표준 명령과 명령 그룹을 사용할 수도 있습니다.
@@ -42,6 +42,6 @@ ms.locfileid: "96329889"
 
  편집기 도구 모음은 IDE 및 제품 도구 모음 아래에 배치 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

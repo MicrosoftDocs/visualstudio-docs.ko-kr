@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903005"
 ---
 # <a name="custom-colorable-items"></a>사용자 지정 색 항목
 언어 서비스의 일부로 사용자 지정 색 항목을 구현 하 여 키워드 및 주석과 같은 색 지정을 위한 형식 목록을 재정의할 수 있습니다.
@@ -66,7 +66,7 @@ ms.locfileid: "96328537"
 
     및 인터페이스를 구현 하는 방법에 대 한 예제는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 를 참조 하십시오 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스의 모델](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [사용자 지정 편집기의 구문 색 지정](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7e943da6745832cbe59cfe94013650a503265636
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903292"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>자습서 - 첫 번째 확장 만들기: Hello World
 

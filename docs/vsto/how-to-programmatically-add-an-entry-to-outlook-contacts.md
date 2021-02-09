@@ -12,15 +12,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 981fcbbb6398a6b21cebf598c46cf7a738d2020e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 58f7981cddaec747382097222be378d3197023b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903760"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처에 항목 추가
   이 예에서는 새 연락처를 만들고 새 연락처에 데이터를 입력 합니다.

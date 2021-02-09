@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b01133e1f7daada2d9e2778c3966ccd66a81fd94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903170"
 ---
 # <a name="create-options-pages"></a>옵션 페이지 만들기
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]관리 되는 패키지 프레임 워크에서에서 파생 된 클래스는 <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **도구** 메뉴의 **옵션** 페이지를 추가 하 여 IDE를 확장 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "96328641"
 
  <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> <xref:Microsoft.VisualStudio.Shell.DialogPage> **도구 옵션** 페이지를 구현 하는 모든 파생 형식에 대해 인스턴스가 하나 있어야 합니다.
 
- 의 각 인스턴스는 도구 옵션 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 페이지를 구현 **Tools Options** 하는 형식, **도구 옵션** 페이지를 식별 하는 데 사용 되는 범주 및 하위 범주를 포함 하는 문자열, **도구 옵션** 페이지를 제공 하는 형식으로 등록 하기 위한 리소스 정보를 사용 합니다.
+ 의 각 인스턴스는 도구 옵션 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 페이지를 구현  하는 형식, **도구 옵션** 페이지를 식별 하는 데 사용 되는 범주 및 하위 범주를 포함 하는 문자열, **도구 옵션** 페이지를 제공 하는 형식으로 등록 하기 위한 리소스 정보를 사용 합니다.
 
 ## <a name="persist-tools-options-page-state"></a>도구 유지 옵션 페이지 상태
  자동화 지원을 사용 하도록 설정 하 여 **도구 옵션** 페이지 구현을 등록 하면 IDE는 다른 모든 **도구 옵션** 페이지와 함께 페이지의 상태를 유지 합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "96328641"
 ## <a name="example"></a>예제
  다음은 옵션 페이지의 간단한 "Hello 세계" 구현입니다. **메뉴 명령** 옵션을 선택 하 여 Visual Studio 패키지 템플릿에서 만든 기본 프로젝트에 다음 코드를 추가 하면 옵션 페이지 기능을 적절 하 게 보여 줍니다.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 클래스는 최소 "Hello 세계" 옵션 페이지를 정의 합니다. 사용자가 열면 속성 표에서 public 속성을 설정할 수 있습니다 `HelloWorld` .
 
 ### <a name="code"></a>코드

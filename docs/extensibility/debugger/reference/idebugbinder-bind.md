@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ee9f303223da15bc75adbf31d533848fb017bb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901906"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 이 메서드는 기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80736024"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Bind( 
+HRESULT Bind( 
    IDebugObject*  pContainer,
    IDebugField*   pField,
    IDebugObject** ppObject
@@ -53,10 +53,10 @@ int Bind(
 `ppObject`\
 제한이 `IDebugObject` 기호의 인스턴스를 나타내는을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
