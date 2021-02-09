@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 06cd22ec933e72344ab743372fe30c1a3ddf5fbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901596"
 ---
 # <a name="support-for-user-settings"></a>사용자 설정 지원
 VSPackage는 사용자가 **도구** 메뉴에서 **가져오기/내보내기 설정** 명령을 선택할 때 유지 되는 상태 변수의 그룹인 하나 이상의 설정 범주를 정의할 수 있습니다. 이 지 속성을 사용 하려면의 설정 Api를 사용 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 합니다.
@@ -52,7 +52,7 @@ VSPackage는 사용자가 **도구** 메뉴에서 **가져오기/내보내기 �
 
  AlternateParent = 범주
 
-| 이름 | 형식 | 데이터 | Description |
+| 이름 | Type | 데이터 | Description |
 |-----------------|--------| - | - |
 | (기본값) | REG_SZ | 사용자 지정 설정 지점의 이름입니다. | 키의 이름인>은 `<CSPName` 사용자 지정 설정 지점의 지역화 되지 않은 이름입니다.<br /><br /> MPF를 기반으로 하는 구현에서는 `categoryName` `objectName` 생성자의 및 인수를로 결합 하 여 키의 이름을 가져옵니다 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `categoryName_objectName` .<br /><br /> 키는 비어 있거나 위성 DLL의 지역화 된 문자열에 대 한 참조 ID를 포함할 수 있습니다. 이 값은 `objectNameResourceID` 생성자에 대 한 인수에서 가져옵니다 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> . |
 | 패키지 | REG_SZ | GUID | 사용자 지정 설정 지점을 구현 하는 VSPackage의 GUID입니다.<br /><br /> 클래스를 사용 하는 MPF를 기반으로 하는 구현 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 에서는 `objectType` VSPackage의 및 리플렉션을 포함 하는 생성자의 인수를 사용 <xref:System.Type> 하 여이 값을 가져옵니다. |
