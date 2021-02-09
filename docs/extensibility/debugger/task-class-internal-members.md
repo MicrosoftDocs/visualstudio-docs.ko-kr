@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883625"
 ---
 # <a name="task-class---internal-members"></a>작업 클래스-내부 멤버
 이 문서에서는 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 내부 멤버에 대해 설명 합니다. 이 클래스에 대 한 일반 정보는 <xref:System.Threading.Tasks.Task> 참조 문서를 참조 하세요.
@@ -40,18 +40,18 @@ ms.locfileid: "96996021"
                   System.Threading.ICancelableOperation
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 ### <a name="methods"></a>메서드
 
-|속성|설명|
+|속성|Description|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion 메서드](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|TASK_STATE_WAIT_COMPLETION_NOTIFICATION 상태 비트를 설정 하거나 해제 합니다.|
 |[NotifyDebuggerOfWaitCompletion 메서드](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|디버거에서 중단점 대상으로 사용 되는 자리 표시자 메서드입니다.|
 
 ### <a name="fields"></a>필드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|개체에서 실행할 코드를 나타내는 대리자입니다 <xref:System.Threading.Tasks.Task> .|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|개체의 추가 속성을 저장 <xref:System.Threading.Tasks.Task> 합니다.|
