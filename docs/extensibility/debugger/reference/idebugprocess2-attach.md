@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874180"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 프로세스에 SDM (세션 디버그 관리자)을 연결 합니다.
@@ -28,20 +28,20 @@ ms.locfileid: "80724187"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
@@ -50,7 +50,7 @@ int Attach( 
 진행 디버그 이벤트 알림에 사용 되는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
 `rgguidSpecificEngines`\
-진행 프로세스에서 실행 되는 프로그램을 디버깅 하는 데 사용 되는 디버그 엔진의 Guid 배열입니다. 이 매개 변수는 null 값일 수 있습니다. 자세한 내용은 설명 부분을 참조 하십시오.
+진행 프로세스에서 실행 되는 프로그램을 디버깅 하는 데 사용 되는 디버그 엔진의 Guid 배열입니다. 이 매개 변수는 null 값일 수 있습니다. 자세한 내용은 설명을 참조하세요.
 
 `celtSpecificEngines`\
 진행 배열의 디버그 엔진 수 `rgguidSpecificEngines` 와 배열의 크기입니다 `rghrEngineAttach` .
@@ -58,10 +58,10 @@ int Attach( 
 `rghrEngineAttach`\
 [in, out] 디버그 엔진에서 반환 하는 HRESULT 코드의 배열입니다. 이 배열의 크기는 `celtSpecificEngines` 매개 변수에 지정 됩니다. 각 코드는 일반적으로 `S_OK` 또는 `S_ATTACH_DEFERRED` 입니다. 후자는 현재 DE-DE가 프로그램에 연결 되어 있지 않음을 나타냅니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|지정 된 프로세스가 이미 디버거에 연결 되어 있습니다.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|연결 절차를 수행 하는 동안 보안 위반이 발생 했습니다.|
@@ -72,6 +72,6 @@ int Attach( 
 
  프로세스에서 발생 하는 모든 디버그 이벤트는 지정 된 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체에 전송 됩니다. 이 `IDebugEventCallback2` 개체는 SDM에서이 메서드를 호출할 때 제공 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874089"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 프로세스의 모든 프로그램을 분리 하 여이 프로세스에서 디버거를 분리 합니다.
@@ -28,8 +28,8 @@ ms.locfileid: "80724131"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Detach( 
-   void 
+HRESULT Detach( 
+   void 
 );
 ```
 
@@ -43,5 +43,5 @@ int Detach();
 ## <a name="remarks"></a>설명
  모든 프로그램 및 프로세스는 계속 실행 되지만 더 이상 디버그 세션의 일부가 아닙니다. 분리 작업이 완료 된 후에는이 프로세스 및 해당 프로그램에 대 한 더 이상 디버그 이벤트가 전송 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

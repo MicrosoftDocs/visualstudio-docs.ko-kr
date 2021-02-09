@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c3f938eb31c06e1e88af21b058b4475bc192d49c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874411"
 ---
 # <a name="about-file-name-extensions"></a>파일 이름 확장명 정보
 VSPackage의 파일 확장명을 등록 하는 경우이 파일을의 버전과 연결 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다. 이는 컴퓨터에 둘 이상의 버전이 설치 된 경우에 중요 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 합니다.
@@ -37,6 +37,6 @@ HKEY_CLASSES_ROOT\
 
  경우에 따라 파일 확장명에 연결 된 ProgID는 변경 하면 안 됩니다. 예를 들어 *.htm* 파일 확장명 (progid = htmlfile)에 대 한 ProgID는 운영 체제의 여러 위치에서 하드 코딩 되며 *.htm* 및 *.html* 파일과의 연결에서 널리 사용 되 고 사용 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Side-by-side 배포에 대 한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [파일 이름 확장명에 대 한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874371"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 된 필드의 종류를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_FIELD_KIND {
+enum enum_FIELD_KIND {
     FIELD_KIND_NONE       = 0x00000000,
 
     // Type of field
@@ -58,7 +58,7 @@ enum enum_FIELD_KIND {
     FIELD_TYPE_EXTENDED   = 0x00800000,
 
     // Specific information about symbols
-    FIELD_SYM_MEMBER      = 0x01000000,
+    FIELD_SYM_MEMBER      = 0x01000000,
     FIELD_SYM_LOCAL       = 0x02000000,
     FIELD_SYM_PARAM       = 0x04000000,
     FIELD_SYM_THIS        = 0x08000000,
@@ -107,7 +107,7 @@ public enum enum_FIELD_KIND {
     FIELD_TYPE_EXTENDED   = 0x00800000,
 
     // Specific information about symbols
-    FIELD_SYM_MEMBER      = 0x01000000,
+    FIELD_SYM_MEMBER      = 0x01000000,
     FIELD_SYM_LOCAL       = 0x02000000,
     FIELD_SYM_PARAM       = 0x04000000,
     FIELD_SYM_THIS        = 0x08000000,
@@ -189,7 +189,7 @@ public enum enum_FIELD_KIND {
 필드가 참조 임을 나타냅니다.
 
 `FIELD_TYPE_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_SYM_MEMBER`\
 필드가 멤버 임을 나타냅니다.
@@ -213,7 +213,7 @@ public enum enum_FIELD_KIND {
 필드에서 속성을 설정 함을 나타냅니다.
 
 `FIELD_SYM_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_KIND_MASK`\
 필드 종류에 대 한 마스크를 나타냅니다.

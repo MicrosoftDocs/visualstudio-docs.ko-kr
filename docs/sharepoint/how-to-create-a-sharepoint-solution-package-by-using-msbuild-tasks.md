@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f4c1d2e986b6a810cc568efd9577be87a38fdefb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873543"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>방법: MSBuild 작업을 사용 하 여 SharePoint 솔루션 패키지 만들기
   개발 컴퓨터에서 명령줄 MSBuild 작업을 사용 하 여 SharePoint 패키지 (*.wsp*)를 빌드, 정리 및 유효성 검사할 수 있습니다. 이러한 명령을 사용 하 여 빌드 컴퓨터에서 Team Foundation Server를 사용 하 여 빌드 프로세스를 자동화할 수도 있습니다.

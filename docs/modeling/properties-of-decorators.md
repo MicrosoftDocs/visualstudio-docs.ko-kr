@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873790"
 ---
 # <a name="properties-of-decorators"></a>데코레이터의 속성
 데코레이터는 다이어그램의 모양 또는 연결선에 나타날 수 있는 아이콘, 텍스트 또는 확장/축소 갈매기형 수장입니다. 다음 표에서는 세 가지 데코레이터 종류에 대 한 속성을 보여 줍니다. 일부 속성은 shape 데코레이터 또는 connector 데코레이터에만 표시 됩니다.
@@ -25,10 +25,10 @@ ms.locfileid: "97360835"
 
 ## <a name="expandcollapse-decorator"></a>데코레이터 확장/축소
 
-|속성|설명|기본값|
+|속성|Description|기본값|
 |-|-|-|
 |DisplayName|생성 된 디자이너에 표시 될 데코레이터의 이름입니다.|확장 축소 데코레이터|
-|Name|데코레이터의 이름입니다.|ExpandCollapseDecorator|
+|이름|데코레이터의 이름입니다.|ExpandCollapseDecorator|
 |참고|이 데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|
@@ -38,11 +38,11 @@ ms.locfileid: "97360835"
 
 ## <a name="icon-decorator"></a>아이콘 데코레이터
 
-|속성|설명|기본값|
+|속성|Description|기본값|
 |-|-|-|
 |DefaultIcon|표시할 아이콘 또는 이미지 파일의 경로입니다.|\<none>|
 |DisplayName|생성 된 디자이너에 표시할 데코레이터의 이름입니다.|아이콘 데코레이터|
-|Name|데코레이터의 이름입니다.|{0} 도형의 icondecorator|
+|이름|데코레이터의 이름입니다.|{0} 도형의 icondecorator|
 |참고|데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|
@@ -52,13 +52,13 @@ ms.locfileid: "97360835"
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|속성|설명|기본값|
+|속성|Description|기본값|
 |-|-|-|
 |DefaultText|표시할 기본 텍스트입니다.|레이블|
 |DisplayName|생성 된 디자이너에 표시할 데코레이터의 이름입니다.|레이블|
 |FontSize|데코레이터에 표시 되는 텍스트의 글꼴 크기입니다.|8|
 |FontStyle|데코레이터에 표시 되는 텍스트의 글꼴 스타일입니다.|Regular|
-|Name|데코레이터의 이름입니다.|레이블|
+|이름|데코레이터의 이름입니다.|레이블|
 |참고|데코레이터와 연결 된 비공식 메모입니다.|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|데코레이터의 기본 위치를 기준으로 하는 가로 오프셋 (인치)입니다. (도형만 해당)|0|
 |VerticalOffset|데코레이터의 기본 위치를 기준으로 하는 세로 오프셋 (인치)입니다. (도형만 해당)|0|

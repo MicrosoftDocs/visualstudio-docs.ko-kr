@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874050"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 열거자에는 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값이 포함 되어 있습니다. 이 열거형은 [Sccqueryinfo](../extensibility/sccqueryinfo-function.md) 및 콜백 함수에서 사용 됩니다 `POPLISTFUNC` (자세한 내용은 [POPLISTFUNC](../extensibility/poplistfunc.md) 참조).
@@ -50,7 +50,7 @@ enum SccStatus {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  SCC_STATUS_INVALID 상태를 가져올 수 없습니다. 사용 하지 마십시오.
 
  SCC_STATUS_NOTCONTROLLED 파일이 소스 제어에 있지 않습니다.
