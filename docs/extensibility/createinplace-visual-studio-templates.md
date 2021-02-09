@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870339"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 요소 (Visual Studio 템플릿)
 프로젝트를 만들고 지정 된 위치에서 매개 변수 대체를 수행 하거나 임시 위치에서 매개 변수 대체를 수행 하 고 지정 된 위치에 프로젝트를 저장할 것인지 여부를 지정 합니다.
