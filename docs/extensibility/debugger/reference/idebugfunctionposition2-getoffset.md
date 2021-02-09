@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaa5c13822322084c68aaf0453cb2707f79ddc05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f883af8f048a38320a49493257354ad3b60188
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929838"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 소스 문서에서 함수 위치를 검색 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728367"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetOffset( 
+HRESULT GetOffset( 
    TEXT_POSITION* pPosition
 );
 ```
@@ -43,9 +43,9 @@ int GetOffset(
 `pPosition`\
 [in, out] 문서에서 함수 위치로 채워지는 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

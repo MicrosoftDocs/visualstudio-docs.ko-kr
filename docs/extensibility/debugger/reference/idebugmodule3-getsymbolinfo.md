@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929786"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 각 경로를 검색 한 결과 뿐만 아니라 기호를 검색 하는 경로 목록을 검색 합니다.
@@ -49,7 +49,7 @@ int GetSymbolInfo(
 `pInfo`\
 제한이 지정 된 정보를 사용 하 여 해당 멤버를 채울 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 구조체입니다. 이 값이 null 이면이 메서드는를 반환 `E_INVALIDARG` 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 메서드가 성공 하면가 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]
@@ -62,7 +62,7 @@ int GetSymbolInfo(
 
 마지막 항목에는 \r\n 시퀀스가 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서이 메서드는 세 개의 다른 검색 결과가 포함 된 세 개의 경로를 반환 합니다. 각 줄은 캐리지 리턴/줄 바꿈 쌍으로 종료 됩니다. 예제 출력에서는 검색 결과를 단일 문자열로 인쇄 하기만 합니다.
 
 > [!NOTE]
@@ -86,9 +86,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 
 **c:\symbols\user32.pdb... 파일을 찾을 수 없습니다.** 
  **c:\winnt\symbols\user32.pdb... 버전이 일치 하지 않습니다.** 
- ** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... 기호가 로드 되었습니다.**
+ **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... 기호가 로드 되었습니다.**
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

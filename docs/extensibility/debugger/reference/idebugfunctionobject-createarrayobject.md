@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930005"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 배열 개체를 만듭니다. 이 배열에는 기본 또는 개체 인스턴스 값이 포함 될 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728610"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateArrayObject( 
+HRESULT CreateArrayObject( 
    OBJECT_TYPE    ot,
    IDebugField*   pClassField,
    DWORD          dwRank,
@@ -68,11 +68,11 @@ int CreateArrayObject(
 `ppObject`\
 제한이 새로 만든 배열을 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 반환 합니다. 실제로 [Idebugarrayobject](../../../extensibility/debugger/reference/idebugarrayobject.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스로 표현 되는 함수에 대 한 배열 매개 변수를 나타내는 개체를 만들려면이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929751"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 이 인터페이스는 모듈 즉, DLL과 같은 프로그램의 실행 가능한 단위를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugModule2 : IUnknown
@@ -41,7 +41,7 @@ IDebugModule2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugModule2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|이 모듈을 설명 하는 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 을 가져옵니다.|
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|사용되지 않습니다. 사용 하지 마십시오. 이 모듈에 대 한 기호를 다시 로드 합니다.|
@@ -56,7 +56,7 @@ IDebugModule2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)

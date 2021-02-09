@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06bb96d8a02ccc9299d43f28b4fbfa3fdb39acdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929643"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 이 인터페이스는 모듈이 로드 되거나 언로드될 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugModuleLoadEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugModuleLoadEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|로드 되거나 언로드될 모듈을 가져옵니다.|
 
@@ -51,7 +51,7 @@ IDebugModuleLoadEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

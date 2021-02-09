@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9f842db6b322ffb9bdc76ebd2a954d849e5d65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929825"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 이 제네릭 매개 변수에 대 한 플래그를 검색 합니다.
@@ -42,13 +42,13 @@ int GetFlags(
 `pdwFlags`\
 제한이 이 제네릭 매개 변수에 대 한 플래그를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 이러한 플래그는 다양 한 특수 제약 조건에 대 한 정보를 포함 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -69,5 +69,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

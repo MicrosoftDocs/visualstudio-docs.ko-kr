@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad4328d2ae94a23ebaa9fb4fd0aa0d2cff7c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929988"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 단순 정수와 같은 기본 데이터 개체를 만듭니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728538"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreatePrimitiveObject( 
+HRESULT CreatePrimitiveObject( 
    OBJECT_TYPE    ot,
    IDebugObject** ppObject
 );
@@ -48,11 +48,11 @@ int CreatePrimitiveObject(
 `ppObject`\
 제한이 새로 만든 개체를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스로 표현 되는 함수에 대 한 매개 변수인 기본 개체를 나타내는 개체를 만들려면이 메서드를 호출 합니다. 예를 들어 식 문자열이 "myString (5)" 인 경우이 메서드는 정수 5를 나타내는 개체를 만드는 데 사용 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

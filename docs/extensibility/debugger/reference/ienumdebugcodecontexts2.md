@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929396"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 이 인터페이스는 디버그 세션과 관련 된 코드 컨텍스트 또는 특정 프로그램 또는 문서를 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugCodeContexts2 : IUnknown
@@ -39,12 +39,12 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugCodeContexts2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|열거형 시퀀스에서 지정 된 수의 코드 컨텍스트를 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|열거형 시퀀스에서 지정 된 수의 코드 컨텍스트를 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|열거형 시퀀스에서 지정 된 수의 코드 컨텍스트를 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|열거자의 코드 컨텍스트 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -57,7 +57,7 @@ IEnumDebugCodeContexts2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 731b13b823fd1ad1666d3578c7f0475c2e00b789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929734"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 현재 모듈에 대 한 기호를 로드 합니다.
@@ -45,6 +45,6 @@ int LoadSymbols();
 
  이 메서드는 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) 방법 보다 선호 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

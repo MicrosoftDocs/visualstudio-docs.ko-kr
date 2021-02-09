@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d4e484a1557ea99138f31fdc6f9103e6708b803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929758"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 사용되지 않습니다. 사용 하지 마십시오. 이 모듈에 대 한 기호를 다시 로드 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80726924"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT ReloadSymbols( 
+HRESULT ReloadSymbols( 
    LPCOLESTR pszUrlToSymbols,
    BSTR*     pbstrDebugMessage
 );
 ```
 
 ```csharp
-int ReloadSymbols( 
+int ReloadSymbols( 
    string     pszUrlToSymbols,
    out string pbstrDebugMessage
 );
@@ -48,12 +48,12 @@ int ReloadSymbols( 
 `pbstrDebugMessage`\
 제한이 모듈 창에서 모듈 이름 오른쪽에 표시 되는 상태 메시지 (예: 상태 또는 오류 메시지)를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 디버그 엔진은 항상를 반환 해야 합니다 `E_FAIL` .
 
 ## <a name="remarks"></a>설명
  이 메서드는 더 이상 지원 되지 않습니다. 대신 [loadsymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) 메서드를 구현 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

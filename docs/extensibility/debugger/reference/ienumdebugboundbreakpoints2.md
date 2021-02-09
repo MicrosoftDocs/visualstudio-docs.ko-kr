@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929526"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 이 인터페이스는 보류 중인 중단점 또는 중단점 바인딩 이벤트와 연결 된 바인딩된 중단점을 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugBoundBreakpoints2 : IUnknown
@@ -43,12 +43,12 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugBoundBreakpoints2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|열거형 시퀀스에서 지정 된 수의 바인딩된 중단점을 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|열거형 시퀀스에서 지정 된 수의 바인딩된 중단점을 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|열거형 시퀀스에서 지정 된 수의 바인딩된 중단점을 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|열거자의 바인딩된 중단점 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -61,7 +61,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)
 - [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)

@@ -6,13 +6,13 @@ ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
-manager: jillfra
-ms.openlocfilehash: 18a9a5309cd174c2c2aa648ad37259a052496704
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+manager: jmartens
+ms.openlocfilehash: b6bae4d0dbece80cff10b15e84e57dfaa9d1db9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930046"
 ---
 # <a name="visual-language-dictionary"></a>비주얼 언어 사전
 
@@ -39,7 +39,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="a"></a><a name="BKMK_VLDConceptsA"></a> 은
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | - | - | - | - |
 | **접근성** | ![접근성 아이콘](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility") | | |
 | **작업** | ![작업 아이콘](../../extensibility/ux-guidelines/media/vld_c_action.png "VLD_C_Action") | ![로깅 작업을 나타내는 작업 아이콘 및 로그 아이콘](../../extensibility/ux-guidelines/media/vld_c_action_actionlog.png "VLD_C_Action_ActionLog")<br />작업 로그 | **작업** 아이콘을 주석으로 사용 하 여 기본 작업이 자동 설정을 사용 하 여 수행 됨을 나타낼 수도 있습니다. |
@@ -50,7 +50,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **경고** | ![경고 아이콘 (경보 벨) 경고를 표시 합니다.](../../extensibility/ux-guidelines/media/vld_c_alert.png "VLD_C_Alert") | | |
 | **알파 채널** | ![알파 채널 아이콘](../../extensibility/ux-guidelines/media/vld_c_alphachannel.png "VLD_C_AlphaChannel") | | |
 | **애니메이션** | ![애니메이션 아이콘](../../extensibility/ux-guidelines/media/vld_c_animation.png "VLD_C_Animation") | ![애니메이션 오류 아이콘](../../extensibility/ux-guidelines/media/vld_c_animation_animationerror.png "VLD_C_Animation_AnimationError")<br />애니메이션 오류<br />![다음 애니메이션 아이콘](../../extensibility/ux-guidelines/media/vld_c_animation_nextanimation.png "VLD_C_Animation_NextAnimation")<br />다음 애니메이션 | |
-| **애플리케이션**<br />프로젝트 | ![응용 프로그램 아이콘](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![응용 프로그램 역할 오류 아이콘](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />응용 프로그램 역할 오류<br />![C&#43;&#43; MFC 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />C + + MFC 프로젝트 | |
+| **응용 프로그램**<br />Project | ![응용 프로그램 아이콘](../../extensibility/ux-guidelines/media/vld_c_application.png "VLD_C_Application") | ![응용 프로그램 역할 오류 아이콘](../../extensibility/ux-guidelines/media/vld_c_application_applicationroleerror.png "VLD_C_Application_ApplicationRoleError")<br />응용 프로그램 역할 오류<br />![C&#43;&#43; MFC 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_application_cppmfcproject.png "VLD_C_Application_CPPMFCProject")<br />C + + MFC 프로젝트 | |
 | **영역** | ![영역 아이콘](../../extensibility/ux-guidelines/media/vld_c_area.png "VLD_C_Area") | ![스플라인 영역 차트 아이콘](../../extensibility/ux-guidelines/media/vld_c_area_splineareachart.png "VLD_C_Area_SplineAreaChart")<br />스플라인 영역 차트<br />![누적 영역형 계열 아이콘](../../extensibility/ux-guidelines/media/vld_c_area_stackedareaseries.png "VLD_C_Area_StackedAreaSeries")<br />누적 영역형 계열 | |
 | **정렬** | ![정렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_arrange.png "VLD_C_Arrange") | ![셰이프 정렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_arrange_arrangeshapes.png "VLD_C_Arrange_ArrangeShapes")<br />셰이프 정렬<br />![셰이프 자동&#45;정렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_arrange_autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes")<br />셰이프 자동 정렬 | |
 | **Assign** | ![할당 아이콘](../../extensibility/ux-guidelines/media/vld_c_assign.png "VLD_C_Assign") | | |
@@ -64,7 +64,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="b"></a><a name="BKMK_VLDConceptsB"></a> B
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **양방향** | ![양방향 아이콘](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||
 | **이진** | ![이진 아이콘](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![계측 대상 이진 파일 시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />계측 대상 이진 파일 시작 ||
@@ -72,7 +72,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **분기** | ![분기 아이콘](../../extensibility/ux-guidelines/media/vld_c_branch.png "VLD_C_Branch") | ![업로드된 분기 아이콘](../../extensibility/ux-guidelines/media/vld_c_branch_branchuploaded.png "VLD_C_Branch_BranchUploaded") <br />분기 업로드 됨<br />![원격 분기를 나타내는 분기 아이콘 및 원격 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_branch_remotebranch.png "VLD_C_Branch_RemoteBranch")<br />원격 분기 ||
 | **밝기** | ![밝기 아이콘](../../extensibility/ux-guidelines/media/vld_c_brightness.png "VLD_C_Brightness") | ![밝기 낮추기 아이콘](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessdown.png "VLD_C_Brightness_BrightnessDown")<br />밝기 축소<br />![밝기 높이기 아이콘](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessup.png "VLD_C_Brightness_BrightnessUp")<br />밝기 강화 ||
 | **찾아보기** | ![찾아보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![다음 찾아보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />다음 찾아보기<br />![이전 찾아보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />이전 찾아보기 ||
-| **버그** | ![버그 아이콘](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![새 버그 만들기를 나타내는 아이콘 및 버그 아이콘을 만듭니다.](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />새 버그 만들기 ||
+| **아님** | ![버그 아이콘](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![새 버그 만들기를 나타내는 아이콘 및 버그 아이콘을 만듭니다.](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />새 버그 만들기 ||
 | **빌드** | ![빌드 아이콘](../../extensibility/ux-guidelines/media/vld_c_build.png "VLD_C_Build") | ![선택 영역 빌드 아이콘](../../extensibility/ux-guidelines/media/vld_c_build_buildselection.png "VLD_C_Build_BuildSelection")<br />선택 영역 빌드<br />![개인 빌드 인스턴스 아이콘](../../extensibility/ux-guidelines/media/vld_c_build_privatebuildinstance.png "VLD_C_Build_PrivateBuildInstance")<br />개인 빌드 인스턴스<br />![사용자&#45;만든 빌드 아이콘](../../extensibility/ux-guidelines/media/vld_c_build_usercreatedbuild.png "VLD_C_Build_UserCreatedBuild")<br />사용자가 만든 빌드 ||
 | **빌더가** | ![작성기 아이콘](../../extensibility/ux-guidelines/media/vld_c_builder.png "VLD_C_Builder") | ![큐브 작성기 아이콘](../../extensibility/ux-guidelines/media/vld_c_builder_cubebuilder.png "VLD_C_Builder_CubeBuilder") <br />큐브 작성기<br />![차원 작성기 아이콘](../../extensibility/ux-guidelines/media/vld_c_builder_dimensionbuilder.png "VLD_C_Builder_DimensionBuilder")<br />차원 작성기 ||
 | **비즈니스** | ![비즈니스 아이콘](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![비즈니스 모델 템플릿 아이콘](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />비즈니스 모델 템플릿<br />![비즈니스 개체 데이터 원본 아이콘](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />비즈니스 개체 데이터 원본<br />![온라인 비즈니스 아이콘](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />온라인 비즈니스 ||
@@ -80,7 +80,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="c"></a><a name="BKMK_VLDConceptsC"></a> C
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **Cache** | ![캐시 아이콘](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![캐시 확인 아이콘](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />캐시 정상<br />![캐시 새로 고침 아이콘](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />캐시 새로 고침 ||
 | **캘린더** | ![달력 아이콘](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | ![날짜&#47;시간 축 아이콘](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />날짜/시간 축<br />![전역 달력 아이콘](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />전역 달력 ||
@@ -119,18 +119,18 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="d"></a><a name="BKMK_VLDConceptsD"></a> 2
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **어두운 테마** | ![어두운 테마 아이콘](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![어두운 테마 켜기 아이콘](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />어두운 테마 ||
 | **데이터** | ![데이터 아이콘](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![두 데이터베이스 모두 비교 아이콘](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />두 데이터베이스 비교<br />![데이터베이스 감사 사양 아이콘](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />데이터베이스 감사 사양<br />![데이터베이스 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />데이터베이스 프로젝트 ||
 | **데이터 마이닝** | ![데이터 마이닝 아이콘](../../extensibility/ux-guidelines/media/vld_c_datamining.png "VLD_C_DataMining") | ![데이터 마이닝 열 아이콘](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingcolumn.png "VLD_C_DataMining_DataMiningColumn")<br />데이터 마이닝 열<br />![데이터 마이닝 예측 아이콘](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingprediction.png "VLD_C_DataMining_DataMiningPrediction")<br />데이터 마이닝 예측<br />![데이터 마이닝 구조 아이콘](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingstructure.png "VLD_C_DataMining_DataMiningStructure")<br />데이터 마이닝 구조 ||
 | **대리자** | ![대리자 아이콘](../../extensibility/ux-guidelines/media/vld_c_delegate.png "VLD_C_Delegate") | ![대리자 호출 아이콘](../../extensibility/ux-guidelines/media/vld_c_delegate_invokedelegate.png "VLD_C_Delegate_InvokeDelegate")<br />대리자 호출 ||
-| **삭제**<br />*"취소" 및 "Clear"와 동일 합니다.* | ![삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete.png "VLD_C_Delete") | ![삭제 아이콘의 예로 빌드 취소를 나타내는 취소 아이콘 및 빌드 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_cancelbuild.png "VLD_C_Delete_CancelBuild")<br />빌드 취소<br />![열 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletecolumn.png "VLD_C_Delete_DeleteColumn")<br />열 삭제<br />![데이터 집합 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletedataset.png "VLD_C_Delete_DeleteDataset")<br />데이터 세트 삭제<br />![폴더 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletefolder.png "VLD_C_Delete_DeleteFolder")<br />폴더 삭제 ||
+| **Delete**<br />*"취소" 및 "Clear"와 동일 합니다.* | ![삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete.png "VLD_C_Delete") | ![삭제 아이콘의 예로 빌드 취소를 나타내는 취소 아이콘 및 빌드 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_cancelbuild.png "VLD_C_Delete_CancelBuild")<br />빌드 취소<br />![열 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletecolumn.png "VLD_C_Delete_DeleteColumn")<br />열 삭제<br />![데이터 집합 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletedataset.png "VLD_C_Delete_DeleteDataset")<br />데이터 세트 삭제<br />![폴더 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_delete_deletefolder.png "VLD_C_Delete_DeleteFolder")<br />폴더 삭제 ||
 | **종속성** | ![종속성 아이콘, 점선 끝이 오른쪽에 있는 화살표입니다.](../../extensibility/ux-guidelines/media/vld_c_dependency.png "VLD_C_Dependency") |||
 | **배포** | ![배포 아이콘](../../extensibility/ux-guidelines/media/vld_c_deploy.png "VLD_C_Deploy") | ![배포 구성 확장명 아이콘](../../extensibility/ux-guidelines/media/vld_c_deploy_deploymentconfigurationextensions.png "VLD_C_Deploy_DeploymentConfigurationExtensions")<br />배포 구성 확장<br />![배포 구성 아이콘](../../extensibility/ux-guidelines/media/vld_c_deploy_deploymentconfigurations.png "VLD_C_Deploy_DeploymentConfigurations")<br />배포 구성 ||
 | **다이어그램**<br />워크플로 | ![다이어그램 아이콘](../../extensibility/ux-guidelines/media/vld_c_diagram.png "VLD_C_Diagram") | ![새 다이어그램 아이콘](../../extensibility/ux-guidelines/media/vld_c_diagram_newdiagram.png "VLD_C_Diagram_NewDiagram")<br />새 다이어그램<br />![다이어그램 창 표시 아이콘](../../extensibility/ux-guidelines/media/vld_c_diagram_showdiagrampane.png "VLD_C_Diagram_ShowDiagramPane")<br />다이어그램 창 표시 ||
 | **대화 상자** | ![대화 상자 아이콘](../../extensibility/ux-guidelines/media/vld_c_dialog.png "VLD_C_Dialog") | ![대화 상자 테스트 그룹 아이콘](../../extensibility/ux-guidelines/media/vld_c_dialog_dialogtestgroup.png "VLD_C_Dialog_DialogTestGroup")<br />대화 상자 테스트 그룹<br />![테스트 대화 상자 아이콘](../../extensibility/ux-guidelines/media/vld_c_dialog_testdialog.png "VLD_C_Dialog_TestDialog")<br />테스트 대화 상자 ||
-| **사전** | ![사전 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary.png "VLD_C_Dictionary") | ![새 사전 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_addnewdictionary.png "VLD_C_Dictionary_AddNewDictionary")<br />새 사전 추가<br />![사전에 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_addtodictionary.png "VLD_C_Dictionary_AddToDictionary")<br />사전에 추가<br />![사전 지우기 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_cleardictionary.png "VLD_C_Dictionary_ClearDictionary")<br />사전 지우기 ||
+| **사전순** | ![사전 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary.png "VLD_C_Dictionary") | ![새 사전 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_addnewdictionary.png "VLD_C_Dictionary_AddNewDictionary")<br />새 사전 추가<br />![사전에 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_addtodictionary.png "VLD_C_Dictionary_AddToDictionary")<br />사전에 추가<br />![사전 지우기 아이콘](../../extensibility/ux-guidelines/media/vld_c_dictionary_cleardictionary.png "VLD_C_Dictionary_ClearDictionary")<br />사전 지우기 ||
 | **크기**<br />계획 | ![차원 아이콘](../../extensibility/ux-guidelines/media/vld_c_dimension.png "VLD_C_Dimension") | ![차원 브라우저 보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbrowserview.png "VLD_C_Dimension_DimensionBrowserView")<br />차원 브라우저 보기<br />![차원 작성기 보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensionbuilderview.png "VLD_C_Dimension_DimensionBuilderView")<br />차원 작성기 보기<br />![차원 번역 보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_dimension_dimensiontranslationview.png "VLD_C_Dimension_DimensionTranslationView")<br />차원 번역 보기 ||
 | **표시**<br />모니터 | ![디스플레이 아이콘](../../extensibility/ux-guidelines/media/vld_c_display.png "VLD_C_Display") | ![디스플레이 구성 아이콘](../../extensibility/ux-guidelines/media/vld_c_display_displayconfiguration.png "VLD_C_Display_DisplayConfiguration")<br />디스플레이 구성<br />![표시 (또는 모니터) 아이콘과 전체 스크린샷을 나타내는 캡처 아이콘이 표시 됩니다.](../../extensibility/ux-guidelines/media/vld_c_display_fullscreenshot.png "VLD_C_Display_FullScreenshot")<br />전체 스크린샷 ||
 | **Document**<br />파일 | ![문서 아이콘](../../extensibility/ux-guidelines/media/vld_c_document.png "VLD_C_Document") | ![문서 라이브러리를 나타내는 문서 아이콘 및 폴더 아이콘](../../extensibility/ux-guidelines/media/vld_c_document_documentslibrary.png "VLD_C_Document_DocumentsLibrary")<br />문서 라이브러리<br />![파일 다운로드 아이콘](../../extensibility/ux-guidelines/media/vld_c_document_filedownload.png "VLD_C_Document_FileDownload")<br />파일 다운로드<br />![문서 서식 아이콘](../../extensibility/ux-guidelines/media/vld_c_document_formatdocument.png "VLD_C_Document_FormatDocument") <br />문서 서식 ||
@@ -141,7 +141,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="e"></a><a name="BKMK_VLDConceptsE"></a> 우표
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **편집** | ![편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![주소 편집기 아이콘](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />주소 편집기<br />![편집 쿼리를 나타내는 작은 편집 아이콘 및 쿼리 아이콘](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />쿼리 편집<br />![관계 편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />관계 편집 | **편집** 주석은 기본 아이콘 모양의 왼쪽 또는 오른쪽에 표시 됩니다. 전반적인 아이콘 디자인에서 가장 잘 보이는 방향을 선택 합니다. |
 | **효과**<br />*"함수", "변수 (전역)"와 동일 합니다.* | ![효과 아이콘](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
@@ -155,7 +155,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="f"></a><a name="BKMK_VLDConceptsF"></a> 350
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **즐겨찾기**<br />보호 됨, 등급 | ![즐겨찾기 아이콘으로 바뀝니다](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![즐겨찾기에 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />즐겨찾기에 추가<br />![등급 아이콘](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />등급 ||
 | **필드** | ![필드 아이콘](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![필드 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />필드 추가<br />![필드 편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />필드 편집 ||
@@ -172,7 +172,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="g"></a><a name="BKMK_VLDConceptsG"></a> Express-g
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **가져오기**<br />다운로드 | ![가져오기 아이콘](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![다운로드 한 폴더를 나타내는 아이콘 및 폴더 아이콘을 가져옵니다.](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />다운로드 폴더 가져오기<br />![사전 값 가져오기 아이콘](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />사전 값 가져오기<br />![컬렉션에서 항목 가져오기 아이콘](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />컬렉션에서 항목 가져오기 ||
 | **그래프**<br />가로 막대형 차트 | ![그래프 아이콘](../../extensibility/ux-guidelines/media/vld_c_graph.png "VLD_C_Graph") | ![HPC 성능 세션 아이콘](../../extensibility/ux-guidelines/media/vld_c_graph_hpcperformancesessionwizard.png "VLD_C_Graph_HPCPerformanceSessionWizard")<br />HPC 성능 세션 ||
@@ -183,7 +183,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="h"></a><a name="BKMK_VLDConceptsH"></a> 넣기
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **계층** | ![계층 구조 아이콘](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![계층 구조 변수 아이콘](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />계층 변수<br />![호출 계층 구조 아이콘](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />호출 계층 구조 ||
 | **History** | ![기록 아이콘](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
@@ -191,7 +191,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="i"></a><a name="BKMK_VLDConceptsI"></a> 보이지
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **전혀** | ![아이디어 아이콘](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
 | **이미지**<br />자산, 리소스 | ![이미지 아이콘](../../extensibility/ux-guidelines/media/vld_c_image.png "VLD_C_Image") | ![이미지 로더 아이콘](../../extensibility/ux-guidelines/media/vld_c_image_imageloader.png "VLD_C_Image_ImageLoader")<br />이미지 로더<br />![이미지 아이콘의 예로 이미지 단추 아이콘을 클릭 합니다.](../../extensibility/ux-guidelines/media/vld_c_image_imagebutton.png "VLD_C_Image_ImageButton")<br />이미지 단추<br />![이미지 목록 컨트롤 아이콘](../../extensibility/ux-guidelines/media/vld_c_image_imagelistcontrol.png "VLD_C_Image_ImageListControl") <br />이미지 목록 컨트롤 ||
@@ -204,14 +204,14 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="k"></a><a name="BKMK_VLDConceptsK"></a> 시계의
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **키**<br />권한, ID | ![열쇠 모양 아이콘](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![새 키 아이콘](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />새 키<br />![사용 권한 아이콘](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />사용 권한<br />![현재 항목 ID 가져오기 아이콘](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />현재 항목 ID 가져오기 ||
 | **KPI(핵심 성과 지표)** | ![KPI 아이콘](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![KPI 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />KPI 삭제<br />![KPI 브라우저 보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />KPI 브라우저 보기<br />![오류가 있는 KPI 아이콘](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />오류가 있는 KPI ||
 
 ### <a name="l"></a><a name="BKMK_VLDConceptsL"></a> L-value
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **라이브러리** | ![라이브러리 아이콘](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C&#43;&#43; 클래스 라이브러리 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />C + + 클래스 라이브러리 프로젝트<br />![라이브러리 내보내기 아이콘](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />라이브러리 내보내기<br />![F&#35; Windows Forms 컨트롤 라이브러리 아이콘](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />F # Windows Forms 컨트롤 라이브러리 ||
 | **링크** | ![링크 아이콘](../../extensibility/ux-guidelines/media/vld_c_link.png "VLD_C_Link") | ![하이퍼링크로 변환 아이콘](../../extensibility/ux-guidelines/media/vld_c_link_converttohyperlink.png "VLD_C_Link_ConvertToHyperlink")<br />하이퍼링크로 변환<br />![연결된 테이블 만들기 아이콘](../../extensibility/ux-guidelines/media/vld_c_link_createlinkedtable.png "VLD_C_Link_CreateLinkedTable")<br />연결 된 테이블 만들기<br />![링크 편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_link_editlink.png "VLD_C_Link_EditLink")<br />링크 편집 ||
@@ -221,7 +221,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="m"></a><a name="BKMK_VLDConceptsM"></a> 매
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **편집**<br />메시지 | ![메일 아이콘](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![메시지 큐 아이콘](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />메시지 큐<br />![받은 메시지 추적 아이콘](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />수신된 메시지 추적<br />![메일 주소 뷰어 아이콘](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />전자 메일 주소 뷰어 ||
 | **file:///** | ![매니페스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_manifest.png "VLD_C_Manifest") | ![매니페스트 편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_manifest_editmanifest.png "VLD_C_Manifest_EditManifest")<br />매니페스트 편집<br />![확장 관리자 매니페스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_manifest_extensionmanagermanifest.png "VLD_C_Manifest_ExtensionManagerManifest")<br />확장 관리자 매니페스트<br />![새 응용 프로그램 매니페스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_manifest_newapplicationmanifest.png "VLD_C_Manifest_NewApplicationManifest")<br />새 응용 프로그램 매니페스트 ||
@@ -236,7 +236,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **메모리 (칩)** | ![메모리 &#40;칩&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_memory_chip.png "VLD_C_Memory_chip") | ![메모리 구성 아이콘](../../extensibility/ux-guidelines/media/vld_c_memory_chip_memoryconfiguration.png "VLD_C_Memory_chip_MemoryConfiguration")<br />메모리 구성<br />![메모리 배열 칩](../../extensibility/ux-guidelines/media/vld_c_memory_chip_memoryarray.png "VLD_C_Memory_chip_MemoryArray")<br />메모리 배열<br />![페이지 파일 아이콘](../../extensibility/ux-guidelines/media/vld_c_memory_chip_pagefile.png "VLD_C_Memory_chip_PageFile")<br />페이지 파일 ||
 | **메모리**<br />메모리 도구 창 | ![메모리 &#40;메모리 도구 창&#47;진단&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_memory_diagnostics.png "VLD_C_Memory_diagnostics") |||
 | **병합** | ![병합 아이콘](../../extensibility/ux-guidelines/media/vld_c_merge.png "VLD_C_Merge") | ![병합 아이콘 및 자동 아이콘, 각각 자동 병합을 나타내는 두 개의 세로선을 포함 하는 시작 아이콘.](../../extensibility/ux-guidelines/media/vld_c_merge_automergeall.png "VLD_C_Merge_AutomergeAll")<br />모두 자동 병합<br />![도구를 사용 하 여 변경 내용을 병합 하는 것을 나타내는 병합 아이콘 및 도구 아이콘](../../extensibility/ux-guidelines/media/vld_c_merge_mergechangeswithtool.png "VLD_C_Merge_MergeChangesWithTool")<br />도구를 사용 하 여 변경 내용 병합<br />![병합 아이콘 및 병합 모듈 참조를 나타내는 참조 아이콘](../../extensibility/ux-guidelines/media/vld_c_merge_mergemodulereference.png "VLD_C_Merge_MergeModuleReference")<br />병합 모듈 참조 |
-| **Message**<br />채팅 | ![메시지 아이콘](../../extensibility/ux-guidelines/media/vld_c_message.png "VLD_C_Message") |||
+| **메시지**<br />채팅 | ![메시지 아이콘](../../extensibility/ux-guidelines/media/vld_c_message.png "VLD_C_Message") |||
 | **방법** | ![메서드 아이콘](../../extensibility/ux-guidelines/media/vld_c_method.png "VLD_C_Method") | ![메서드 추출 아이콘](../../extensibility/ux-guidelines/media/vld_c_method_extractmethod.png "VLD_C_Method_ExtractMethod")<br />메서드 추출<br />![메서드 호출 아이콘](../../extensibility/ux-guidelines/media/vld_c_method_invokemethod.png "VLD_C_Method_InvokeMethod")<br />Invoke 메서드<br />![큐브 작성기 보기 아이콘](../../extensibility/ux-guidelines/media/vld_c_method_cubebuilderview.png "VLD_C_Method_CubeBuilderView")<br />큐브 작성기 보기 ||
 | **휴대폰** | ![휴대폰 아이콘](../../extensibility/ux-guidelines/media/vld_c_mobilephone.png "VLD_C_MobilePhone") | ![모바일 서비스 아이콘](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobileservices.png "VLD_C_MobilePhone_MobileServices")<br />모바일 서비스<br />![모바일 게임 구성 요소 아이콘](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobilegamecomponents.png "VLD_C_MobilePhone_MobileGameComponents")<br />모바일 게임 구성 요소<br />![VB 모바일 웹 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_mobilephone_vbmobilewebproject.png "VLD_C_MobilePhone_VBMobileWebProject")<br />VB 모바일 웹 프로젝트 ||
 | **모듈** | ![모듈 아이콘](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![병합 모듈 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />병합 모듈 프로젝트<br />![모듈 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />모듈 추가<br />![병합 모듈 제외 아이콘](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />병합 모듈 제외 ||
@@ -244,9 +244,9 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="n"></a><a name="BKMK_VLDConceptsN"></a> KN
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
-| **Namespace** | ![네임 스페이스 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![using 네임스페이스 제거 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />네임 스페이스를 사용 하 여 제거<br />![using 네임스페이스 정렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />네임 스페이스를 사용 하 여 정렬<br />![using 네임스페이스 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />Using 네임 스페이스 추가 ||
+| **네임스페이스** | ![네임 스페이스 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![using 네임스페이스 제거 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />네임 스페이스를 사용 하 여 제거<br />![using 네임스페이스 정렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />네임 스페이스를 사용 하 여 정렬<br />![using 네임스페이스 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />Using 네임 스페이스 추가 ||
 | **Network**<br />연결 | ![네트워크 아이콘](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![네트워크 드라이버 패키지 템플릿 아이콘](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />네트워크 드라이버 패키지 템플릿<br />![연결 아이콘 및 연결 오프 라인을 나타내는 제거 (오프 라인 또는 위험) 상태 표시기 아이콘](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />오프 라인 연결<br />![알 수 없는 연결 상태 아이콘](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />연결 알 수 없음 ||
 | **Node**<br />초점 | ![노드 아이콘](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (숨김 또는 템플릿)**<br />*"Virtual"와 동일* | ![실제가 아님 아이콘](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![숨겨진 필드 아이콘](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />숨겨진 필드<br />![숨겨진 폴더 아이콘](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />숨겨진 폴더<br />![동적 템플릿 아이콘](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />동적 템플릿 | 개체의 점선 윤곽선은 해당 개체가 **숨겨지거나 템플릿이** 아님을 나타냅니다. |
@@ -254,14 +254,14 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="o"></a><a name="BKMK_VLDConceptsO"></a> I/o
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **열기**<br />*"내보내기"와 동일* | ![열기 아이콘](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![열린 첨부 파일을 나타내는 아이콘 및 연결 아이콘을 엽니다.](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />첨부 파일 열기<br />![Open comparison result를 나타내는 아이콘 및 이미지 아이콘을 엽니다.](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />비교 결과 열기<br />![파일 열기 대화 상자를 나타내는 아이콘 및 응용 프로그램 아이콘을 엽니다.](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />파일 열기 대화 상자 ||
 | **출력** | ![출력 아이콘](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
 
 ### <a name="p"></a><a name="BKMK_VLDConceptsP"></a> ®
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **패키지** | ![패키지 아이콘](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![클라우드 패키지를 나타내는 패키지 아이콘 및 클라우드 아이콘.](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />클라우드 패키지<br />![패키지 만들기 아이콘](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />패키지 만들기<br />![드라이버 패키지 템플릿을 나타내는 패키지 아이콘 및 드라이버 아이콘](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />드라이버 패키지 템플릿 ||
 | **Parallel** | ![병렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_parallel.png "VLD_C_Parallel") | ![각각에 대해 병렬 아이콘](../../extensibility/ux-guidelines/media/vld_c_parallel_parallelforeach.png "VLD_C_Parallel_ParallelForEach")<br />각각에 대해 Parallel ||
@@ -280,13 +280,13 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="q"></a><a name="BKMK_VLDConceptsQ"></a> 대답
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **쿼리** | ![쿼리 아이콘](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![쿼리 아이콘 및 편집 쿼리를 나타내는 작은 파란색 편집 아이콘](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />쿼리 편집<br />![쿼리 extender 아이콘](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />쿼리 extender<br />![빠른 쿼리 아이콘](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />빠른 쿼리 ||
 
 ### <a name="r"></a><a name="BKMK_VLDConceptsR"></a> &
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **레코드** | ![기록 아이콘](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![기록 화면 아이콘](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />녹화 화면<br />![기록된 테스트 세션으로 이동 아이콘](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />기록 된 테스트 세션으로 이동 ||
 | **다시 실행** | ![다시 실행 아이콘](../../extensibility/ux-guidelines/media/vld_c_redo.png "VLD_C_Redo") |||
@@ -297,14 +297,14 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **제거** | ![제거 아이콘](../../extensibility/ux-guidelines/media/vld_c_remove.png "VLD_C_Remove") |||
 | **이름 바꾸기** | ![이름 바꾸기 아이콘](../../extensibility/ux-guidelines/media/vld_c_rename.png "VLD_C_Rename") |||
 | **재시도** | ![순서 다시 매기기 아이콘](../../extensibility/ux-guidelines/media/vld_c_reorder.png "VLD_C_Reorder") | ![매개 변수 다시 정렬 아이콘 및 특성 또는 매개 변수 아이콘을 다시 정렬 합니다.](../../extensibility/ux-guidelines/media/vld_c_reorder_reorderparameters.png "VLD_C_Reorder_ReorderParameters")<br />매개 변수 다시 정렬 ||
-| **복구** | ![복구 아이콘](../../extensibility/ux-guidelines/media/vld_c_repair.png "VLD_C_Repair") |||
+| **복구한** | ![복구 아이콘](../../extensibility/ux-guidelines/media/vld_c_repair.png "VLD_C_Repair") |||
 | **Report** | ![Report icon](../../extensibility/ux-guidelines/media/vld_c_report.png "VLD_C_Report") | ![파일 대화 상자 보고서 아이콘](../../extensibility/ux-guidelines/media/vld_c_report_filedialogreport.png "VLD_C_Report_FileDialogReport")<br />파일 대화 상자 보고서<br />![계측 성능 보고서 아이콘](../../extensibility/ux-guidelines/media/vld_c_report_instrumentationperformancereport.png "VLD_C_Report_InstrumentationPerformanceReport")<br />계측 성능 보고서<br />![보고서 프로젝트 마법사 아이콘](../../extensibility/ux-guidelines/media/vld_c_report_reportprojectwizard.png "VLD_C_Report_ReportProjectWizard")<br />보고서 프로젝트 마법사 ||
 | **규칙** | ![규칙 아이콘](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![새 추출 규칙 아이콘](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />새 추출 규칙<br />![새 임계값 규칙 아이콘](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />새 임계값 규칙<br />![새 유효성 검사 규칙 아이콘](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />새 유효성 검사 규칙 ||
 | **Ruler**<br />측정, 가이드 | ![눈금자 아이콘](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![측정 모드 켜기 아이콘](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />측정 모드 켜기<br />![측정 단위 아이콘](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />측정 단위 ||
 
 ### <a name="s"></a><a name="BKMK_VLDConceptsS"></a> 삭제
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **저장** | ![저장 아이콘](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![모두 저장 아이콘](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />모두 저장<br />![저장 후 닫기 아이콘](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />저장 후 닫기<br />![파일 저장 대화 상자 컨트롤 아이콘](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />파일 저장 대화 상자 컨트롤 ||
 | **스키마** | ![스키마 아이콘](../../extensibility/ux-guidelines/media/vld_c_schema.png "VLD_C_Schema") | ![스키마 만들기 아이콘](../../extensibility/ux-guidelines/media/vld_c_schema_createschema.png "VLD_C_Schema_CreateSchema")<br />스키마 만들기<br />![데이터베이스 스키마 아이콘](../../extensibility/ux-guidelines/media/vld_c_schema_databaseschema.png "VLD_C_Schema_DatabaseSchema")<br />데이터베이스 스키마<br />![XML 스키마 아이콘](../../extensibility/ux-guidelines/media/vld_c_schema_xmlschema.png "VLD_C_Schema_XMLSchema")<br />XML 스키마 ||
@@ -317,7 +317,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **바로 가기** | ![바로 가기 아이콘](../../extensibility/ux-guidelines/media/vld_c_shortcut.png "VLD_C_Shortcut") |||
 | **코드 조각** | ![코드 조각 아이콘](../../extensibility/ux-guidelines/media/vld_c_snippet.png "VLD_C_Snippet") | ![선택된 코드 조각 아이콘](../../extensibility/ux-guidelines/media/vld_c_snippet_snippetchecked.png "VLD_C_Snippet_SnippetChecked")<br />코드 조각 선택<br />![태그 또는 이벤트 조각을 나타내는 조각 아이콘 및 태그 태그 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_snippet_tagoreventsnippet.png "VLD_C_Snippet_TagOrEventSnippet")<br />태그 또는 이벤트 코드 조각 ||
 | **원본 제어** | ![소스 제어 아이콘](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol.png "VLD_C_SourceControl") | ![소스 제어 변경 아이콘](../../extensibility/ux-guidelines/media/vld_c_sourcecontrol_changesourcecontrol.png "VLD_C_SourceControl_ChangeSourceControl")<br />소스 제어 변경 ||
-| **Start**<br />실행 | ![시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_start.png "VLD_C_Start") | ![동시성 프로파일링 실행 아이콘](../../extensibility/ux-guidelines/media/vld_c_start_runconcurrencyprofiling.png "VLD_C_Start_RunConcurrencyProfiling")<br />동시성 프로 파일링 실행<br />![작업 상태: 시작 아이콘의 예로 서버를 시작 했음을 나타내는 재생, 아이콘 실행 아이콘 및 데이터 아이콘.](../../extensibility/ux-guidelines/media/vld_c_start_serverstarted.png "VLD_C_Start_ServerStarted")<br />서버 시작<br />![그래픽 진단 시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_start_startgraphicdiagnostics.png "VLD_C_Start_StartGraphicDiagnostics")<br />그래픽 진단 시작 ||
+| **시작**<br />실행 | ![시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_start.png "VLD_C_Start") | ![동시성 프로파일링 실행 아이콘](../../extensibility/ux-guidelines/media/vld_c_start_runconcurrencyprofiling.png "VLD_C_Start_RunConcurrencyProfiling")<br />동시성 프로 파일링 실행<br />![작업 상태: 시작 아이콘의 예로 서버를 시작 했음을 나타내는 재생, 아이콘 실행 아이콘 및 데이터 아이콘.](../../extensibility/ux-guidelines/media/vld_c_start_serverstarted.png "VLD_C_Start_ServerStarted")<br />서버 시작<br />![그래픽 진단 시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_start_startgraphicdiagnostics.png "VLD_C_Start_StartGraphicDiagnostics")<br />그래픽 진단 시작 ||
 | **단계**<br />단계, 단계 | ![단계 아이콘](../../extensibility/ux-guidelines/media/vld_c_steps.png "VLD_C_Steps") | ![공유 단계 만들기 아이콘](../../extensibility/ux-guidelines/media/vld_c_steps_createsharedsteps.png "VLD_C_Steps_CreateSharedSteps")<br />공유 단계 만들기<br />![공유 단계 삽입 아이콘](../../extensibility/ux-guidelines/media/vld_c_steps_insertsharedsteps.png "VLD_C_Steps_InsertSharedSteps")<br />공유 단계 삽입<br />![모든 단계 재생 아이콘](../../extensibility/ux-guidelines/media/vld_c_steps_playallsteps.png "VLD_C_Steps_PlayAllSteps")<br />모든 단계 재생 ||
 | **구조체**<br />구조체 | ![구조체 &#40;구조체&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_structure.png "VLD_C_Structure") |||
 | **스타일 시트** | ![스타일시트 아이콘](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![새 스타일시트 아이콘](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />새 스타일 시트<br />![스타일시트 첨부 아이콘](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />스타일 시트 첨부 ||
@@ -325,14 +325,14 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="t"></a><a name="BKMK_VLDConceptsT"></a> 트
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **테이블** | ![테이블 아이콘](../../extensibility/ux-guidelines/media/vld_c_table.png "VLD_C_Table") | ![테이블 경고 아이콘](../../extensibility/ux-guidelines/media/vld_c_table_tablewarning.png "VLD_C_Table_TableWarning")<br />테이블 경고<br />![클라우드 저장소 테이블 컬렉션 아이콘](../../extensibility/ux-guidelines/media/vld_c_table_cloudstoragetablecollection.png "VLD_C_Table_CloudStorageTableCollection")<br />클라우드 저장소 테이블 컬렉션 ||
 | **태블릿** | ![태블릿 아이콘](../../extensibility/ux-guidelines/media/vld_c_tablet.png "VLD_C_Tablet") | ![태블릿 설정 아이콘](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletsettings.png "VLD_C_Tablet_TabletSettings")<br />태블릿 설정<br />![태블릿 경고 아이콘](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletwarning.png "VLD_C_Tablet_TabletWarning")<br />태블릿 경고 ||
 | **Tag**<br />시스템 태그 지정 | ![태그 &#40;태그 지정 시스템&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_tag_tagging_system.png "VLD_C_Tag_tagging_system") |||
 | **Task** | ![작업 아이콘](../../extensibility/ux-guidelines/media/vld_c_task.png "VLD_C_Task") | ![연결된 작업 아이콘](../../extensibility/ux-guidelines/media/vld_c_task_linkedtask.png "VLD_C_Task_LinkedTask")<br />연결 된 작업<br />![작업 목록 아이콘](../../extensibility/ux-guidelines/media/vld_c_task_tasklist.png "VLD_C_Task_TaskList")<br />작업 목록 ||
 | **팀** | ![두 개의 사용자 아이콘으로 구성 된 팀 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_team.png "VLD_C_Team") | ![새 프로젝트 아이콘](../../extensibility/ux-guidelines/media/vld_c_team_newteamproject.png "VLD_C_Team_NewTeamProject")<br />새 프로젝트<br />![프로젝트 추가 아이콘](../../extensibility/ux-guidelines/media/vld_c_team_addteamproject.png "VLD_C_Team_AddTeamProject")<br />프로젝트 추가<br />![Team Foundation Server 아이콘](../../extensibility/ux-guidelines/media/vld_c_team_teamfoundationserver.png "VLD_C_Team_TeamFoundationServer")<br />Team Foundation Server ||
-| **텍스트** | ![텍스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_text.png "VLD_C_Text") | ![그림 및 텍스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_pictureandtext.png "VLD_C_Text_PictureAndText")<br />그림 및 텍스트<br />![서식 있는 텍스트 상자 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_richtextbox.png "VLD_C_Text_RichTextBox")<br />서식 있는 텍스트 상자<br />![텍스트 &#45; 첫 줄 들여쓰기 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_textfirstindenton.png "VLD_C_Text_TextFirstIndentOn")<br />텍스트 &mdash; 의 첫 줄 들여쓰기 ||
+| **Text** | ![텍스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_text.png "VLD_C_Text") | ![그림 및 텍스트 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_pictureandtext.png "VLD_C_Text_PictureAndText")<br />그림 및 텍스트<br />![서식 있는 텍스트 상자 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_richtextbox.png "VLD_C_Text_RichTextBox")<br />서식 있는 텍스트 상자<br />![텍스트 &#45; 첫 줄 들여쓰기 아이콘](../../extensibility/ux-guidelines/media/vld_c_text_textfirstindenton.png "VLD_C_Text_TextFirstIndentOn")<br />텍스트 &mdash; 의 첫 줄 들여쓰기 ||
 | **스레드** | ![스레드 아이콘](../../extensibility/ux-guidelines/media/vld_c_thread.png "VLD_C_Thread") | ![여러 스레드 중지됨 아이콘](../../extensibility/ux-guidelines/media/vld_c_thread_manythreadsstopped.png "VLD_C_Thread_ManyThreadsStopped")<br />많은 스레드 중지 됨<br />![선택한 스레드를 제외한 모든 항목 숨기기 아이콘](../../extensibility/ux-guidelines/media/vld_c_thread_hideallexceptselectedthreads.png "VLD_C_Thread_HideAllExceptSelectedThreads")<br />선택한 스레드를 제외한 모든 스레드 숨기기<br />![선택한 스레드 숨기기 아이콘](../../extensibility/ux-guidelines/media/vld_c_thread_hideselectedthreads.png "VLD_C_Thread_HideSelectedThreads")<br />선택한 스레드 숨기기 |
 | **Time**<br />Pending | ![시간 아이콘](../../extensibility/ux-guidelines/media/vld_c_time.png "VLD_C_Time") | ![시간 위로 또는 아래로 아이콘](../../extensibility/ux-guidelines/media/vld_c_time_timeupordown.png "VLD_C_Time_TimeUpOrDown")<br />시간 위나 아래로<br />![시간 선택 켜기 아이콘](../../extensibility/ux-guidelines/media/vld_c_time_timepickeron.png "VLD_C_Time_TimePickerOn")<br />시간 선택 ||
 | **타이머** | ![타이머 아이콘](../../extensibility/ux-guidelines/media/vld_c_timer.png "VLD_C_Timer") | ![시간 마침 아이콘](../../extensibility/ux-guidelines/media/vld_c_timer_timefinish.png "VLD_C_Timer_TimeFinish")<br />완료 시간<br />![시간 시작 아이콘](../../extensibility/ux-guidelines/media/vld_c_timer_timestart.png "VLD_C_Timer_TimeStart")<br />시작 시간 ||
@@ -341,7 +341,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="u"></a><a name="BKMK_VLDConceptsU"></a> 나무
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **실행 취소**<br />되돌리기, 복원 | ![실행 취소 아이콘](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![이미지 복원을 나타내는 실행 취소 아이콘 및 이미지 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />이미지 복원<br />![항목 체크아웃 실행 취소 아이콘](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />체크 아웃 항목 실행 취소 ||
 | **위로**<br />업로드 | ![위로 아이콘](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![파일 업로드 매개 변수를 나타내는 아이콘 및 특성 또는 매개 변수 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />파일 업로드 매개 변수<br />![한 수준 위로 표시 되는 아이콘 및 폴더 아이콘](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />한 수준 위로 ||
@@ -350,7 +350,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="v"></a><a name="BKMK_VLDConceptsV"></a> Hyper-v
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **변수 (로컬)** | ![변수 &#40;로컬&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![새 변수 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />새 변수<br />![변수 &#40;로컬 변수를 나타내는 두 대괄호 안의 로컬&#41; 아이콘입니다.](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />지역 변수<br />![SQL 변수 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />SQL 변수 ||
 | **변수 (전역)**<br />*"효과" 및 "함수"와 동일* | ![변수 &#40;전역&#41; 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_fx.png "VLD_C_Variable_fx") | ![변수 속성 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_fx_variableproperties.png "VLD_C_Variable_fx_VariableProperties")<br />변수 속성<br />![전역 변수 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_fx_globalvariable.png "VLD_C_Variable_fx_GlobalVariable")<br />전역 변수<br />![변수 삭제 아이콘](../../extensibility/ux-guidelines/media/vld_c_variable_fx_deletevariable.png "VLD_C_Variable_fx_DeleteVariable")<br />변수 삭제 ||
@@ -361,7 +361,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="w"></a><a name="BKMK_VLDConceptsW"></a> W
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **보기** | ![조사식 아이콘](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![파일 시스템 관찰자 아이콘](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />파일 시스템 감시자 ||
 | **Web** | ![웹 아이콘](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![웹에 게시 아이콘](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />웹에 게시<br />![설정 아이콘 및 다운로드 웹 설정을 나타내는 다운로드 아이콘이 있는 웹 아이콘](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />웹 설정 다운로드<br />![새 웹 사이트 아이콘](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />새 웹 사이트 ||
@@ -370,13 +370,13 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 
 ### <a name="y"></a><a name="BKMK_VLDConceptsY"></a> X.y
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **Yield** | ![Yield 아이콘](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
 
 ### <a name="z"></a><a name="BKMK_VLDConceptsZ"></a> -
 
-| 개념 | 주 아이콘 | 다른 예제 | 메모 |
+| 개념 | 주 아이콘 | 다른 예제 | 참고 |
 | --- | --- | --- | --- |
 | **확대/축소** | ![확대/축소 아이콘](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![확대 아이콘](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />확대<br />![축소 아이콘](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />축소 ||
 
@@ -459,7 +459,7 @@ Visual Studio는 일반적인 시각적 언어를 사용 하 여 iconography 및
 | **정보** | ![정보 아이콘](../../extensibility/ux-guidelines/media/vld_s_information.png "VLD_S_Information") | ![고정 정보 관계 아이콘](../../extensibility/ux-guidelines/media/vld_s_information_rigidinforelationship.png "VLD_S_Information_RigidInfoRelationship")<br />고정 정보 관계<br />![시스템 정보 아이콘](../../extensibility/ux-guidelines/media/vld_s_information_systeminfo.png "VLD_S_Information_SystemInfo")<br />시스템 정보 |
 | **정보 도구 설명** | ![정보 도구 설명 아이콘](../../extensibility/ux-guidelines/media/vld_s_informationtooltip.png "VLD_S_InformationTooltip") ||
 | **올바르지 않음** | ![잘못 된 아이콘](../../extensibility/ux-guidelines/media/vld_s_invalid.png "VLD_S_Invalid") ||
-| **No**<br />음소거, 해당 없음 | ![아이콘 없음](../../extensibility/ux-guidelines/media/vld_s_no.png "VLD_S_No") | ![마이크 음소거 아이콘](../../extensibility/ux-guidelines/media/vld_s_no_microphonemute.png "VLD_S_No_MicrophoneMute")<br />마이크 음소거<br />![오디오 음소거 아이콘 및 오디오 음소거를 나타내는 상태 표시기 아이콘 없음](../../extensibility/ux-guidelines/media/vld_s_no_audiomute.png "VLD_S_No_AudioMute")<br />오디오 음소거 |
+| **아니요**<br />음소거, 해당 없음 | ![아이콘 없음](../../extensibility/ux-guidelines/media/vld_s_no.png "VLD_S_No") | ![마이크 음소거 아이콘](../../extensibility/ux-guidelines/media/vld_s_no_microphonemute.png "VLD_S_No_MicrophoneMute")<br />마이크 음소거<br />![오디오 음소거 아이콘 및 오디오 음소거를 나타내는 상태 표시기 아이콘 없음](../../extensibility/ux-guidelines/media/vld_s_no_audiomute.png "VLD_S_No_AudioMute")<br />오디오 음소거 |
 | **제거**<br />오프 라인, 위험 | ![제거 (오프 라인 또는 위험) 상태 표시기 아이콘](../../extensibility/ux-guidelines/media/vld_s_remove.png "VLD_S_Remove") | ![연결 오프 라인을 나타내는 상태 표시기 아이콘 및 연결 아이콘을 제거 합니다.](../../extensibility/ux-guidelines/media/vld_s_remove_connectionoffline.png "VLD_S_Remove_ConnectionOffline")<br />오프 라인 연결<br />![폴더 오프라인 아이콘](../../extensibility/ux-guidelines/media/vld_s_remove_folderoffline.png "VLD_S_Remove_FolderOffline")<br />오프 라인 폴더<br />![쿼리 중지 아이콘](../../extensibility/ux-guidelines/media/vld_s_remove_stopquery.png "VLD_S_Remove_StopQuery")<br />쿼리 중지 |
 | **필수** | ![필수 아이콘](../../extensibility/ux-guidelines/media/vld_s_required.png "VLD_S_Required") | ![테스트 도구 모음 요구 사항 아이콘](../../extensibility/ux-guidelines/media/vld_s_required_testsuiterequirement.png "VLD_S_Required_TestSuiteRequirement")<br />테스트 도구 모음 요구 사항 |
 | **보안 방패 경고** | ![보안 방패 경고 아이콘](../../extensibility/ux-guidelines/media/vld_s_securityshieldalert.png "VLD_S_SecurityShieldAlert") ||

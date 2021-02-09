@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929812"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80727682"
 
  이 인터페이스를 사용 하면 식 계산기 (EE)에서 값 클래스 인스턴스 (예:)에 대 한 속성 또는 메서드를 호출 하 `System.Decimal` 고 디버깅 중인 프로그램에서 [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 를 호출 하지 않고 해당 값을 설정할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugManagedObject : IDebugObject
+IDebugManagedObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -40,7 +40,7 @@ IDebugManagedObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugManagedObject` 다음 메서드를 노출 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|관리 코드 개체를 나타내고 적절 한 관리 코드 인터페이스를 가져올 수 있는 인터페이스를 반환 합니다.|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|이 개체의 값을 지정 된 관리 되는 코드 개체의 값으로 설정 합니다.|
@@ -55,6 +55,6 @@ IDebugManagedObject : IDebugObject
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [평가](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930475"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 바인딩된 중단점의 적중 횟수를 설정 합니다.
@@ -29,13 +29,13 @@ ms.locfileid: "80735407"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT SetHitCount( 
+HRESULT SetHitCount( 
    DWORD dwHitCount
 );
 ```
 
 ```csharp
-int SetHitCount( 
+int SetHitCount( 
    uint dwHitCount
 );
 ```
@@ -44,7 +44,7 @@ int SetHitCount( 
 `dwHitCount`\
 진행 설정할 적중 횟수입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명
@@ -52,6 +52,6 @@ int SetHitCount( 
 
  이 메서드는 일반적으로이 중단점에 대 한 현재 적중 횟수를 업데이트 하기 위해 디버그 엔진에 의해 호출 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

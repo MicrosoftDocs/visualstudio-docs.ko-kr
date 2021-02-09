@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930293"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 이 메서드는 식 문자열을 구문 분석 된 식으로 변환 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80729498"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Parse( 
+HRESULT Parse( 
    LPCOLESTR                upstrExpression,
    PARSEFLAGS               dwFlags,
    UINT                     nRadix,
@@ -68,13 +68,13 @@ int Parse(
 `ppParsedExpression`\
 제한이 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 개체의 구문 분석 된 식을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 실제 값이 아니라 구문 분석 된 식을 생성 합니다. 구문 분석 된 식이 계산 될 준비가 되었습니다. 즉, 값으로 변환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

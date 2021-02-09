@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930423"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 이 메서드는 메서드 위치와 오프셋을 메모리 주소로 변환 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80729525"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetMethodLocationProperty( 
+HRESULT GetMethodLocationProperty( 
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
@@ -63,7 +63,7 @@ int GetMethodLocationProperty(
 `ppProperty`\
 제한이 메모리 주소를 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -71,7 +71,7 @@ int GetMethodLocationProperty(
 
  이름에도 불구 `upstrFullyQualifiedMethodPlusOffset` 하 고이 매개 변수는 부분적으로 정규화 된 메서드 이름으로 전달 될 수 있습니다. 이 경우 선택한 메서드가를 포함 하는 메서드입니다 `pAddress` . 이 매개 변수를 해석 하는 방법은 식 계산기 및 지원 되는 언어의 구현에 따라 결정 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
