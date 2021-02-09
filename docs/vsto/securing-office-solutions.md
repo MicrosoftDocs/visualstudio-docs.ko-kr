@@ -13,15 +13,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3576bdc41f25b95b68230e09e07b1a5ed97016c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906656"
 ---
 # <a name="secure-office-solutions"></a>Office 솔루션 보안
   Office 솔루션의 보안 모델에는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ,, [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Microsoft Office의 보안 센터 및 Internet Explorer 제한 된 사이트 영역의 여러 기술이 포함 됩니다. 다음 섹션에서는 다양한 보안 기능의 작동 방식을 설명합니다.

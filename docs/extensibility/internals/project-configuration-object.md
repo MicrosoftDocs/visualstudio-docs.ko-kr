@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 49014608907445eb768fd5f0ebe5850e625eefdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907714"
 ---
 # <a name="project-configuration-object"></a>프로젝트 구성 개체
 프로젝트 구성 개체는 UI에 대 한 구성 정보 표시를 관리 합니다.
@@ -49,7 +49,7 @@ ms.locfileid: "97875494"
 
  `ISpecifyPropertyPages` 및 `IDispatch` 는 속성 페이지와 함께 사용 되어 구성에 종속 된 정보를 검색 하 고 사용자에 게 표시 합니다. 자세한 내용은 [속성 페이지](../../extensibility/internals/property-pages.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906554"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>연습: Visual Basic 프로젝트에서 VBA의 코드 호출
   이 연습에서는 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Word에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `ThisDocument` 호스트 항목 클래스에 메서드 추가, VBA 코드에 메서드 노출, 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.

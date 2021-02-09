@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907801"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80717891"
 
  이 인터페이스는 IDE의 형식 시각화 도우미 작업을 처리 하는 데 사용 되는 시각화 도우미 서비스를 만들 수 있는 메서드에 대 한 액세스를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEEVisualizerServiceProvider : IUnknown
@@ -39,7 +39,7 @@ IEEVisualizerServiceProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|시각화 도우미 서비스를 만듭니다.|
 
@@ -55,7 +55,7 @@ IEEVisualizerServiceProvider : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

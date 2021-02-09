@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906485"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>연습: Visual c # 프로젝트에서 VBA의 코드 호출
   이 연습에서는 통합 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `Sheet1` 호스트 항목 클래스에 메서드 추가, 통합 문서의 VBA 코드에 메서드 노출, 통합 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.

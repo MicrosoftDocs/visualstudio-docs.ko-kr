@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907807"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 이 메서드는이 서비스에서 인식 하는 형식 시각화 도우미의 목록을 반환 합니다.
@@ -28,20 +28,20 @@ ms.locfileid: "80718021"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetCustomViewerList(
-   ULONG                celtSkip,
-   ULONG                celtRequested,
-   DEBUG_CUSTOM_VIEWER* rgViewers,
-   ULONG*               pceltFetched
+HRESULT GetCustomViewerList(
+   ULONG                celtSkip,
+   ULONG                celtRequested,
+   DEBUG_CUSTOM_VIEWER* rgViewers,
+   ULONG*               pceltFetched
 );
 ```
 
 ```csharp
-int GetCustomViewerList(
-   uint                  celtSkip,
-   uint                  celtRequested,
-   DEBUG_CUSTOM_VIEWER[] rgViewers,
-   out uint              pceltFetched
+int GetCustomViewerList(
+   uint                  celtSkip,
+   uint                  celtRequested,
+   DEBUG_CUSTOM_VIEWER[] rgViewers,
+   out uint              pceltFetched
 );
 ```
 
@@ -58,7 +58,7 @@ int GetCustomViewerList(
 `pceltFetched`\
 제한이 실제로 검색 된 시각화 도우미 수입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -66,7 +66,7 @@ int GetCustomViewerList(
 
  시각화 도우미와 뷰어 간의 차이점에 대 한 자세한 내용은 [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

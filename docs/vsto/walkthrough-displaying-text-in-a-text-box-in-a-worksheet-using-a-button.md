@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906466"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>연습: 워크시트에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시
   이 연습에서는 Microsoft Office Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 방법 및 Visual Studio에서 Office 개발 도구를 사용 하 여 Excel 프로젝트를 만드는 방법에 대 한 기본 사항을 보여 줍니다. 결과를 완료 된 샘플로 보려면 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Excel 컨트롤 샘플을 참조 하세요.
@@ -79,7 +79,7 @@ ms.locfileid: "97522642"
    이제 단추를 클릭할 때 실행할 코드를 작성 합니다.
 
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자 채우기
- 사용자가 단추를 클릭할 때마다 **Hello World!** 가 텍스트 상자에 추가 됩니다.
+ 사용자가 단추를 클릭할 때마다 **헬로 월드!** 가 텍스트 상자에 추가 됩니다.
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자에 쓰려면
 
@@ -95,7 +95,7 @@ ms.locfileid: "97522642"
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
- 이제 통합 문서를 테스트 하 여 메시지 Hello World 수 있는지 확인할 수 있습니다 **.** 단추를 클릭 하면 텍스트 상자에 나타납니다.
+ 이제 통합 문서를 테스트 하 여 메시지 헬로 월드 수 있는지 확인할 수 있습니다 **.** 단추를 클릭 하면 텍스트 상자에 나타납니다.
 
 ### <a name="to-test-your-workbook"></a>통합 문서를 테스트하려면
 
@@ -103,7 +103,7 @@ ms.locfileid: "97522642"
 
 2. 이 단추를 클릭합니다.
 
-3. Hello World 되었는지 확인 **하세요.** 텍스트 상자에 나타납니다.
+3. 헬로 월드 되었는지 확인 **하세요.** 텍스트 상자에 나타납니다.
 
 ## <a name="next-steps"></a>다음 단계
  이 연습에서는 Excel 워크시트에서 단추 및 텍스트 상자를 사용 하는 기본 사항을 보여 줍니다. 다음으로 수행할 수 있는 몇 가지 작업은 다음과 같습니다.

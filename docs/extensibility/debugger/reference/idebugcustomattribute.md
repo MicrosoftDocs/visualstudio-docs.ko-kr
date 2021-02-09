@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907948"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 이 인터페이스는 사용자 지정 특성을 나타내며 특성의 이름, 부모 및 클래스 형식을 제공할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugCustomAttribute : IUnknown
+IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -37,7 +37,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCustomAttribute` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|현재 특성이 연결 된 필드를 가져옵니다.|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|사용자 지정 특성 클래스 형식을 가져옵니다.|
@@ -54,7 +54,7 @@ IDebugCustomAttribute : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

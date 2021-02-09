@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906590"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>연습: Word 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Word의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.

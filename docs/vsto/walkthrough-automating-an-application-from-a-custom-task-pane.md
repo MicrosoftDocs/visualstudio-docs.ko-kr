@@ -17,15 +17,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], automating applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed0d2ae6bf66e8f7375bde72aaec085463b9ca18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906608"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>연습: 사용자 지정 작업창에서 응용 프로그램 자동화
   이 연습에서는 PowerPoint를 자동화하는 사용자 지정 작업창을 만드는 방법을 보여 줍니다. 사용자 지정 작업창은 사용자가 사용자 지정 작업창에 있는 <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 클릭할 때 날짜를 슬라이드에 삽입합니다.

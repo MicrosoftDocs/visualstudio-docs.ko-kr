@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906628"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩
   이 연습에서는 문서에 저장된 XML 데이터에 Word에 대한 문서 수준 사용자 지정의 콘텐츠 컨트롤을 바인딩하는 방법을 보여 줍니다.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906747"
 ---
 # <a name="secure-deployment"></a>안전한 배포
   Office 솔루션을 만들 때 개발 컴퓨터는 프로젝트의 코드를 실행할 수 있도록 자동으로 업데이트 됩니다. 그러나 솔루션을 배포할 때는 인증서를 사용 하 여 솔루션에 서명 하거나 신뢰 프롬프트 키를 사용 하 여 신뢰 결정의 기반이 되는 증명 정보를 제공 해야 합니다 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . 자세한 내용은 [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)를 참조 하세요.
