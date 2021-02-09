@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5965ca211710b0710626118f016b2cb3fec116b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915143"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기에서 Managed Extensibility Framework
 편집기는 MEF (Managed Extensibility Framework) 구성 요소를 사용 하 여 빌드됩니다. 사용자 고유의 MEF 구성 요소를 빌드하여 편집기를 확장할 수 있으며 코드에서 편집기 구성 요소도 사용할 수 있습니다.

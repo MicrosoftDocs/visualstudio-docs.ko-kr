@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913694"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>방법: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드
   로컬 시스템에 SharePoint 솔루션을 배포 하는 것 외에도 샌드박스가 적용 된 SharePoint 솔루션을 원격 사이트 또는 로컬 SharePoint 사이트에 게시할 수 있습니다. 원격 게시 프로세스는 .wsp 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 솔루션을 활성화할 수 있도록 합니다 *.* 변경한 후 원격 SharePoint 솔루션 설치를 업그레이드할 수도 있습니다.

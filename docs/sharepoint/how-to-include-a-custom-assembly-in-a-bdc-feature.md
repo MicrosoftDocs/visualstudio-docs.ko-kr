@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913606"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>방법: BDC 기능에 사용자 지정 어셈블리 포함
   프로젝트는 같은 솔루션에 있는 다른 프로젝트의 어셈블리를 참조할 수 있습니다. 그러나 **lobsystem에 참조 된 어셈블리 할당** 대화 상자를 사용 하 여 프로젝트의 기능 파일에 이러한 어셈블리를 추가 해야 합니다.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913677"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>방법: 마스터 페이지 또는 테마 가져오기
   마스터 페이지와 테마를 만들고 사용 하 여 SharePoint 사이트의 페이지를 일관 된 모양으로 지정할 수 있습니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 는 이러한 요소에 대 한 템플릿을 제공 하지 않지만 SharePoint 디자이너에서 만든 다음로 가져올 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 자세한 내용은 Microsoft 웹 사이트의 [구성 요소: 페이지 및 사용자 인터페이스](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 를 참조 하세요.
@@ -31,7 +31,7 @@ ms.locfileid: "94903496"
 
      SharePoint 프로젝트를 만드는 방법에 대 한 자세한 내용은 [sharepoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)을 참조 하세요.
 
-2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 3. **새 항목 추가** 대화 상자에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e6897eb86f531ca86d0e935836683b8a0b244645
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c95f643c11919d19f3cb4fd827bca98a4f7b50b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915127"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 요소 (Visual Studio 템플릿)
 
@@ -65,7 +65,7 @@ ms.locfileid: "94903795"
 
  임시 프로젝트는 해당 프로젝트의 내용을 디스크에 저장 하지 않고 만들고 수정할 수 있는 프로젝트입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `PromptForSaveOnCreation` `false` 프로젝트를 임시 프로젝트로 만들 수 있도록를 지정 하는 값을로 설정 합니다.
 
 ```xml

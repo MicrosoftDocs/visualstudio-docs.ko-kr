@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 22fe46e2876b14551637dd97712e1728816b020e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913705"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>방법: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
   개발 컴퓨터의 로컬 SharePoint 서버에 SharePoint 솔루션을 배포 하거나 게시할 수 있습니다. 배포 프로세스는 *.wsp* 파일을 SharePoint 서버에 복사 하 고, 솔루션을 설치한 후 기능을 활성화 합니다. 게시 프로세스는 *.wsp* 파일만 SharePoint 서버에 복사 하 고 설치 합니다. SharePoint에서 사용 하도록 설정 하려면 수동으로 활성화 해야 합니다.

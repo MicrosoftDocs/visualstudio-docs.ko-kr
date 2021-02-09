@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f163f2733f237b30b668c2c46473e152718dd6fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b7c7ba36ac6d54c10d38b17154d77be88247fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912699"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 이 메서드는 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -49,5 +49,5 @@ int Clone(
 ## <a name="remarks"></a>설명
  열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

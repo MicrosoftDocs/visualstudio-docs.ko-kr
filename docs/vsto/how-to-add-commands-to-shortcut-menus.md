@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, context menus
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2f5c244d78ab5a6b5d98550b11c280159f285db7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913460"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>방법: 바로 가기 메뉴에 명령 추가
   이 항목에서는 VSTO 추가 기능을 사용 하 여 Office 응용 프로그램의 바로 가기 메뉴에 명령을 추가 하는 방법을 보여 줍니다.

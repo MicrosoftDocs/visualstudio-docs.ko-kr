@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e126fc916360d0cc992da5f17edecda7cb2ef41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f082a1318132623e1aaab738d99e700d30c913c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912888"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,9 +53,9 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)

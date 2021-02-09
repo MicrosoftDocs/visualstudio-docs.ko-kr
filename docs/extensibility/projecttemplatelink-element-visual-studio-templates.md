@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dba5063080fb45c366e7a1b76461b0a0d8978f7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915158"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 요소(Visual Studio 템플릿)
 다중 프로젝트 템플릿에서 한 프로젝트의 *.vstemplate* 파일에 대 한 경로를 지정 합니다.
@@ -58,7 +58,7 @@ ms.locfileid: "94903847"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|다중 프로젝트 템플릿의 구성과 내용을 지정합니다.|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.|
@@ -71,7 +71,7 @@ ms.locfileid: "94903847"
 ## <a name="remarks"></a>설명
  다중 프로젝트 템플릿은 두 개 이상의 프로젝트에 대한 컨테이너로 사용됩니다. `ProjectTemplateLink`요소는 템플릿의 프로젝트 중 하나에 대 한 *.vstemplate* 파일의 위치를 지정 하는 데 사용 됩니다. 다중 프로젝트 템플릿의 *.vstemplate* 파일은 `ProjectTemplateLink` 템플릿의 각 프로젝트에 대해 하나의 요소를 포함 합니다. 다중 프로젝트 템플릿에 대 한 자세한 내용은 [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)를 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 간단한 다중 프로젝트 루트 *.vstemplate* 파일을 보여 줍니다. 이 예제에서 템플릿에는 `My Windows Application` 프로젝트와 `My Class Library` 프로젝트가 들어 있습니다. `ProjectName` 요소의 `ProjectTemplateLink` 특성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 이 프로젝트에 할당할 이름을 설정합니다. 특성이 없으면 `ProjectName` *.vstemplate* 파일의 이름이 프로젝트 이름으로 사용 됩니다.
 
 ```

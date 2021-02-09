@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912753"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
 소스 제어 플러그 인을 만들려면 다음 세 단계를 수행 해야 합니다.
@@ -37,7 +37,7 @@ ms.locfileid: "96761233"
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>소스 제어 플러그 인 DLL을 등록 하려면
 
-1. 회사 이름 하위 키를 지정 하 고 product name 하위 키를 지정 하는 **소프트웨어** 하위 키의 **HKEY_LOCAL_MACHINE** 키 아래에 두 항목을 추가 합니다. 패턴은 **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ 값 \<entry>** 입니다  =  *value*. 두 항목은 항상 **Sccservername** 및 **Sccserverpath** 라고 합니다. 각은 일반 문자열입니다.
+1. 회사 이름 하위 키를 지정 하 고 product name 하위 키를 지정 하는 **소프트웨어** 하위 키의 **HKEY_LOCAL_MACHINE** 키 아래에 두 항목을 추가 합니다. 패턴은 **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ 값 \<entry>** 입니다  =  . 두 항목은 항상 **Sccservername** 및 **Sccserverpath** 라고 합니다. 각은 일반 문자열입니다.
 
     예를 들어 회사 이름이 Microsoft이 고 원본 제어 제품 이름이 SourceSafe 인 경우이 레지스트리 경로는 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe** 됩니다. 이 하위 키에서 첫 번째 항목인 **Sccservername** 은 제품 이름을 지정 하는 사용자가 읽을 수 있는 문자열입니다. 두 번째 항목인 **Sccserverpath** 는 IDE를 연결 해야 하는 소스 제어 플러그 인 DLL의 전체 경로입니다. 다음은 샘플 레지스트리 항목을 제공 합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "96761233"
 
     이 항목의 이름은 사용자가 읽을 수 있는 공급자 이름 (SCCServerName 항목에 대해 지정 된 값과 동일)이 고 값은 1 단계에서 만든 하위 키입니다. 패턴은 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<표시 이름 \>**  =  *소프트웨어 \\<회사 이름 \> \\<제품 이름 \>* 입니다.
 
-    예:
+    예를 들어:
 
    |샘플 레지스트리 항목|샘플 값|
    |---------------------------|------------------|

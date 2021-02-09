@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912733"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook에는 visual studio 2015에 도입 된 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "96993538"
 
   ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이미지 서비스 이전 및 이후")
 
-## <a name="how-it-works"></a>작동 방식
+## <a name="how-it-works"></a>작동 방법
  이미지 서비스는 지원 되는 모든 UI 프레임 워크에 적합 한 비트맵 이미지를 제공할 수 있습니다.
 
 - WPF: BitmapSource
@@ -106,7 +106,7 @@ ms.locfileid: "96993538"
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -145,7 +145,7 @@ ms.locfileid: "96993538"
 
 |**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -181,7 +181,7 @@ ms.locfileid: "96993538"
 
 |**Attribute**|**정의**|
 |-|-|
-|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -197,7 +197,7 @@ ms.locfileid: "96993538"
 
 |**Attribute**|**정의**|
 |-|-|
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 
@@ -716,7 +716,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="testing-your-images"></a>이미지 테스트
  이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](./internals/vssdk-utilities.md?view=vs-2015&preserve-view=true)에서 찾을 수 있습니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 ### <a name="samples"></a>샘플
  다양 한 Visual Studio 확장 지점의 일부로 이미지 서비스를 사용 하는 방법을 보여 주기 위해 GitHub의 몇 가지 Visual Studio 샘플이 업데이트 되었습니다.
