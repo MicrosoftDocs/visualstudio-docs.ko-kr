@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f94a93e8797922ef7629853e8261383984bb3ef9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885627"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>방법: SharePoint 프로젝트 항목 형식 정의
   사용자 지정 SharePoint 프로젝트 항목을 만들려는 경우 프로젝트 항목 형식을 정의 합니다. 자세한 내용은 [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)를 참조 하세요.
@@ -48,7 +48,7 @@ ms.locfileid: "94903613"
 
 5. 메서드 구현에서 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> *projectItemTypeDefinition* 매개 변수의 멤버를 사용 하 여 프로젝트 항목 형식의 동작을 정의 합니다. 이 매개 변수는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> 및 인터페이스에 정의 된 이벤트에 대 한 액세스를 제공 하는 개체입니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> . 프로젝트 항목 형식의 특정 인스턴스에 액세스 하려면 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 및와 같은 이벤트를 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 간단한 프로젝트 항목 형식을 정의 하는 방법을 보여 줍니다. 이 프로젝트 항목 형식은 사용자가이 형식의 프로젝트 항목을 프로젝트에 추가할 때 **출력** 창과 **오류 목록** 창에 메시지를 기록 합니다.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb#2)]

@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9c8ce481ab9ca99b7d456f53418641654369ad
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e527e1aec630faadec6e594f944a6715028c6d82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885055"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>방법: ClickOnce 배포 오류에 대한 사용자 지정 로그 파일 위치 설정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 모든 배포에 대 한 활성화 로그 파일을 유지 관리 합니다. 이러한 로그는 배포 설치 및 초기화와 관련 된 모든 오류를 문서화 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다. 기본적으로는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 각 배포 활성화에 대해 하나의 로그 파일을 만듭니다. 이러한 로그 파일은 임시 인터넷 파일 폴더에 저장 됩니다. 활성화 오류가 발생 하 고 사용자가 결과 오류 대화 상자에서 **세부 정보** 를 클릭 하면 배포에 대 한 로그 파일이 사용자에 게 표시 됩니다.
 
- 레지스트리 편집기 ( **regedit.exe** )를 사용 하 여 사용자 지정 로그 파일 경로를 설정 하 여 특정 클라이언트에 대해이 동작을 변경할 수 있습니다. 이 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 단일 파일에 모든 배포에 대 한 활성화 성공 및 실패를 기록 합니다.
+ 레지스트리 편집기 (**regedit.exe**)를 사용 하 여 사용자 지정 로그 파일 경로를 설정 하 여 특정 클라이언트에 대해이 동작을 변경할 수 있습니다. 이 경우는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 단일 파일에 모든 배포에 대 한 활성화 성공 및 실패를 기록 합니다.
 
 > [!CAUTION]
 > 레지스트리 편집기를 잘못 사용하면 심각한 문제가 발생하여 운영 체제를 다시 설치해야 할 수도 있습니다. 레지스트리 편집기를 사용할 때는 특별히 주의해야 합니다.

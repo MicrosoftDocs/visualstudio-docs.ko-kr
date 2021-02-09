@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 71d74d8b16e058b150187a231a1f3a7323c0c612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885029"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 설정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` 속성은 게시 중인 응용 프로그램을 업데이트로 처리할지 여부를 결정 합니다. 각 시간 버전이 증가 하면 응용 프로그램이 업데이트로 게시 됩니다.

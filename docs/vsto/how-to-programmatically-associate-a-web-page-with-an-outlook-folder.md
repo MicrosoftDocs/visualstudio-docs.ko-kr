@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4c2ee5e6494023ee3d5bca97f96ad3c8fe35517
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 35fad43f78d654cfaf9e06c1f432c620da830dd4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885575"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>Outlook 폴더에 웹 페이지 연결
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884587"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 **Createexpinstance** 유틸리티를 사용 하 여 Visual Studio의 실험적 인스턴스를 만들거나, 다시 설정 하거나, 삭제할 수 있습니다. 실험적 인스턴스를 사용 하 여 기본 제품을 변경 하지 않고 Visual Studio 확장을 디버그 하 고 테스트할 수 있습니다.

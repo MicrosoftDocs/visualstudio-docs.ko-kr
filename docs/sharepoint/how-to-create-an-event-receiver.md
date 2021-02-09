@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885705"
 ---
 # <a name="how-to-create-an-event-receiver"></a>방법: 이벤트 수신기 만들기
   *이벤트 수신기* 를 만들면 사용자가 목록 또는 목록 항목과 같은 SharePoint 항목을 조작할 때 응답할 수 있습니다. 예를 들어 사용자가 일정을 변경 하거나 연락처 목록에서 이름을 삭제할 때 이벤트 수신기의 코드를 트리거할 수 있습니다. 이 항목을 따라 목록 인스턴스에 이벤트 수신기를 추가 하는 방법을 배울 수 있습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94849885"
 
 2. **솔루션 탐색기** 에서 **클리닉** 이라는 SharePoint 프로젝트 노드를 선택 합니다.
 
-3. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+3. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 4. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 항목을 선택 합니다.
 

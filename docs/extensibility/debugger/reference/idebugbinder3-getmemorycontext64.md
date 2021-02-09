@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01d3112ad928ee2d7853e8e0fb003c577a23f4c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883820"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 개체 위치 또는 64 비트 메모리 주소를 메모리 컨텍스트로 변환 합니다.
@@ -52,10 +52,10 @@ int GetMemoryContext64 (
 `ppMemCxt`\
 제한이 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) 인터페이스를 구현 하 고이 메서드를 사용 하 여 메모리 컨텍스트를 검색 하는 개체를 만듭니다.
 
 ```cpp
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

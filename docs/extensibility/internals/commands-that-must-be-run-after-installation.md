@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884730"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>설치 후 실행 해야 하는 명령
 *.Msi* 파일을 통해 확장을 배포 하는 경우 Visual Studio에서 확장을 검색 하기 위해 설치의 일부로 **devenv/설치 프로그램** 을 실행 해야 합니다.
@@ -26,11 +26,11 @@ ms.locfileid: "96305039"
 > 이 항목의 정보는 Visual Studio 2008 및 이전 버전과의 *devenv.exe* 찾기에 적용 됩니다. 이후 버전의 Visual Studio에서 *devenv.exe* 을 검색 하는 방법에 대 한 자세한 내용은 [시스템 요구 사항 검색](../../extensibility/internals/detecting-system-requirements.md)을 참조 하세요.
 
 ## <a name="find-devenvexe"></a>devenv.exe 찾기
- *devenv.exe* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Reglocator 테이블 및 appsearch 테이블을 사용 하 여 레지스트리 값을 속성으로 저장 하는 레지스트리 값에서 각 버전의devenv.exe를 찾을 수 있습니다. 자세한 내용은 [시스템 요구 사항 검색](../../extensibility/internals/detecting-system-requirements.md)을 참조 하세요.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Reglocator 테이블 및 appsearch 테이블을 사용 하 여 레지스트리 값을 속성으로 저장 하는 레지스트리 값에서 각 버전의devenv.exe를 찾을 수 있습니다. 자세한 내용은 [시스템 요구 사항 검색](../../extensibility/internals/detecting-system-requirements.md)을 참조 하세요.
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>여러 버전의 Visual Studio에서 devenv.exe를 찾는 RegLocator 테이블 행
 
-|서명|Root|키|이름|유형|
+|서명|Root|키|이름|Type|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|환경 경로|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|환경 경로|2|
@@ -60,7 +60,7 @@ ms.locfileid: "96305039"
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>devenv.exe 실행할 테이블 행 CustomAction
 
-|작업|유형|원본|대상|
+|작업|Type|원본|대상|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|

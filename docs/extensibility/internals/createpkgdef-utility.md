@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884535"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 유틸리티
 Visual Studio 확장에 대 한 .dll 파일을 매개 변수로 사용 하 고 *.dll* 파일과 함께 사용 되는 *.pkgdef* 파일을 만듭니다. *.Pkgdef* 파일은 확장이 설치 될 때 시스템 레지스트리에 기록 될 모든 정보를 포함 합니다.
@@ -36,7 +36,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 ## <a name="arguments"></a>인수
 **/out = &lt; FileName&gt;**\
-필수 요소. *.Pkgdef* 출력 파일의 이름을 FileName으로 설정 합니다. &lt; &gt;
+필수 사항입니다. *.Pkgdef* 출력 파일의 이름을 FileName으로 설정 합니다. &lt; &gt;
 
 **/codebase**\
 선택 사항입니다. **코드 베이스** 유틸리티를 사용 하 여 등록을 강제 합니다.

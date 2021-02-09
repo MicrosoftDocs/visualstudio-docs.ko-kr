@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d53117456318039837a371f68745b4688cbbd087
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884704"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 주석 코드
 프로그래밍 언어는 일반적으로 코드에 주석을 달고 주석을 추가할 수 있는 수단을 제공 합니다. 주석은 코드에 대 한 추가 정보를 제공 하는 텍스트 섹션 이지만 컴파일 또는 해석 중에는 무시 됩니다.
@@ -34,7 +34,7 @@ ms.locfileid: "96304996"
 
 일반적으로 줄 주석에는 시작 문자 (또는 문자)가 있으며, 블록 주석에는 시작과 끝 문자가 모두 있습니다. 예를 들어 c #에서 줄 주석은로 시작 하 `//` 고, 블록 주석은로 시작 `/*` 하 고로 끝납니다 `*/` .
 
-사용자가 고급 **편집** 메뉴에서 명령 **주석 선택 항목** 을 선택 하면  >  **Advanced** 명령은 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 클래스의 메서드로 라우팅됩니다 <xref:Microsoft.VisualStudio.Package.Source> . 사용자가 명령 **주석 제거** 를 선택 하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
+사용자가 고급 **편집** 메뉴에서 명령 **주석 선택 항목** 을 선택 하면  >   명령은 <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> 클래스의 메서드로 라우팅됩니다 <xref:Microsoft.VisualStudio.Package.Source> . 사용자가 명령 **주석 제거** 를 선택 하면 명령이 <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> 메서드로 라우팅됩니다.
 
 ## <a name="support-code-comments"></a>지원 코드 주석
  의 명명 된 매개 변수를 통해 언어 서비스에서 코드 주석을 지원할 수 있습니다 `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . 이 속성은 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 클래스의 속성을 설정 합니다 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . 언어 서비스 기능을 설정 하는 방법에 대 한 자세한 내용은 [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)을 참조 하세요.

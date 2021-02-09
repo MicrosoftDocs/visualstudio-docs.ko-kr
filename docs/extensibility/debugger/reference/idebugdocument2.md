@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884873"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 이 인터페이스는 소스 문서를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDocument2 : IUnknown
@@ -37,7 +37,7 @@ IDebugDocument2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocument2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|여러 형식 중 하나로 문서 이름을 가져옵니다.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|문서의 클래스 식별자를 가져옵니다.|
@@ -52,7 +52,7 @@ IDebugDocument2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)
 - [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)

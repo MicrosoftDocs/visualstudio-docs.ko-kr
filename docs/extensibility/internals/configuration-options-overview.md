@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884691"
 ---
 # <a name="configuration-options-overview"></a>구성 옵션 개요
 의 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 빌드, 디버깅, 실행 및/또는 배포할 수 있는 여러 구성을 지원할 수 있습니다. 구성은 명명 된 속성 집합 (일반적으로 컴파일러 스위치 및 파일 위치)으로 설명 되는 빌드 형식입니다. 기본적으로 새 솔루션에는 *디버그* 및 *릴리스* 의 두 가지 구성이 포함 됩니다. 이러한 구성은 기본 설정을 사용 하 여 적용 하거나 특정 솔루션 및/또는 프로젝트 요구 사항에 맞게 수정할 수 있습니다. 일부 패키지는 ActiveX 편집기 또는 내부 구성 요소와 같은 두 가지 방법으로 빌드할 수 있습니다. 그러나 프로젝트는 여러 구성을 지원할 필요가 없습니다. 하나의 구성만 사용할 수 있는 경우 해당 구성은 모든 솔루션 구성에 매핑됩니다.

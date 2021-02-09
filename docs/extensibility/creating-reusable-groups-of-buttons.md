@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884931"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>다시 사용할 수 있는 단추 그룹 만들기
 명령 그룹은 메뉴 또는 도구 모음에서 항상 함께 표시 되는 명령 모음입니다. 모든 명령 그룹은 *vsct* 파일의 commandplacements 섹션에서 다른 부모 메뉴에 할당 하 여 다시 사용할 수 있습니다.
@@ -30,7 +30,7 @@ ms.locfileid: "96915585"
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `ReusableButtons` . 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
-2. 프로젝트가 열리면 **ReusableCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *ReusableCommand.cs* 로 변경 합니다.
+2. 프로젝트가 열리면 **ReusableCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *ReusableCommand.cs* 로 변경 합니다.
 
 3. *. Vsct* 파일에서 기호 섹션으로 이동 하 고 프로젝트에 대 한 그룹 및 명령을 포함 하는 GuidSymbol 요소를 찾습니다. 이름을 guidReusableCommandPackageCmdSet로 지정 해야 합니다.
 

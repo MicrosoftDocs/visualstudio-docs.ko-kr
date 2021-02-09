@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 316ead76be1f84fccc6f675b204587008e8a194a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885302"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 개체 모델 개요
   Microsoft Office Outlook용 VSTO 추가 기능을 개발하기 위해 Outlook 개체 모델에서 제공하는 개체를 조작할 수 있습니다. Outlook 개체 모델은 사용자 인터페이스의 항목을 나타내는 클래스 및 인터페이스를 제공합니다. 예를 들어 <xref:Microsoft.Office.Interop.Outlook.Application> 개체는 전체 애플리케이션을 나타내고, <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 메일 메시지 또는 기타 항목이 포함된 폴더를 나타내고, <xref:Microsoft.Office.Interop.Outlook.MailItem> 개체는 메일 메시지를 나타냅니다.
@@ -92,7 +92,7 @@ ms.locfileid: "97528052"
 ### <a name="folder-object"></a>Folder 개체
  <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 메일 메시지, 연락처, 작업 및 기타 항목을 포함하는 폴더를 나타냅니다. Outlook에서는 16개의 기본 제공 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체를 제공합니다.
 
- 기본 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 열거형 값으로 정의됩니다. 예제:
+ 기본 <xref:Microsoft.Office.Interop.Outlook.Folder> 개체는 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 열거형 값으로 정의됩니다. 예를 들면 다음과 같습니다.
 
  Outlook의 **수신함** 폴더에 해당 하는 oldefaultfolders. Oldefaultfolders.
 

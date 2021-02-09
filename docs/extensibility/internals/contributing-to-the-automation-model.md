@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884613"
 ---
 # <a name="contribute-to-the-automation-model"></a>자동화 모델에 기여
 Visual Studio는 환경을 사용자 지정 하기 위한 자동화 인터페이스 집합을 제공 합니다. 자동화 모델은 최종 사용자가 Visual Studio 추가 기능 및 확장을 만들 수 있도록 하는 개체 모델입니다.
@@ -26,7 +26,7 @@ Visual Studio는 환경을 사용자 지정 하기 위한 자동화 인터페이
 
  최종 사용자에 게 일관 된 환경을 제공 하기 위해 VSPackage을 디자인할 때 지침 집합을 따라 VSPackage에 대 한 자동화 모델이의 아이디어를 따를 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [자동화 모델 개요](../../extensibility/internals/automation-model-overview.md)
 
  자동화 모델을 공통 환경의 주요 패싯을 제어 하는 개체의 관련 그룹으로 정의 합니다. 이 개체 집합은 자동화 모델의 다이어그램에 나와 있습니다.

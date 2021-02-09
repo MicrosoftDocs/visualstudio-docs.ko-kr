@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0bfc5b387df9b347e4a58d97601a5e1e70f1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883742"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 이 인터페이스는 포트 공급자를 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugPortSuppliers2 : IUnknown
@@ -37,12 +37,12 @@ IEnumDebugPortSuppliers2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugPortSuppliers2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|열거 시퀀스에서 지정 된 수의 포트 공급자를 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|열거 시퀀스에서 지정 된 수의 포트 공급자를 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|열거 시퀀스에서 지정 된 수의 포트 공급자를 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|열거자의 포트 공급자 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -55,6 +55,6 @@ IEnumDebugPortSuppliers2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)
