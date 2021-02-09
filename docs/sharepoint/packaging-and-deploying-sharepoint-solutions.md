@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ae74aa3cf759ba006acd36c168eecceac4b2ee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916551"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>SharePoint 솔루션 패키지 및 배포
   일반적으로 SharePoint 솔루션은 솔루션 패키지(.wsp) 파일을 사용하여 SharePoint Server에 배포됩니다. Visual Studio를 사용하여 SharePoint 프로젝트 항목을 기능으로 구성하고 패키지를 만들어 SharePoint 기능을 배포할 수 있습니다.

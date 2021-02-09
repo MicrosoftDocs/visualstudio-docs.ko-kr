@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915749"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>연습: 개인정보처리방침 프롬프트가 포함된 사용자 지정 부트스트래퍼 만들기
 최신 파일 버전 및 어셈블리 버전이 있는 어셈블리를 사용할 수 있게 되 면 ClickOnce 응용 프로그램이 자동으로 업데이트 되도록 구성할 수 있습니다. 고객이이 동작에 동의 하는지 확인 하기 위해 개인 정보 프롬프트를 표시할 수 있습니다. 그런 다음 응용 프로그램에 자동으로 업데이트할 수 있는 권한을 부여할지 여부를 선택할 수 있습니다. 응용 프로그램을 자동으로 업데이트할 수 없는 경우에는 설치 되지 않습니다.

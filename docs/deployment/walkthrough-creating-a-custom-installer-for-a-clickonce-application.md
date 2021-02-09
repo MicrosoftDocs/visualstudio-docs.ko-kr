@@ -17,20 +17,20 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917290"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기
 *.Exe* 파일을 기반으로 하는 모든 ClickOnce 응용 프로그램은 사용자 지정 설치 관리자에서 자동으로 설치 및 업데이트할 수 있습니다. 사용자 지정 설치 관리자는 보안 및 유지 관리 작업을 위한 사용자 지정 대화 상자를 포함 하 여 설치 중에 사용자 지정 사용자 환경을 구현할 수 있습니다. 설치 작업을 수행 하기 위해 사용자 지정 설치 관리자는 클래스를 사용 합니다 <xref:System.Deployment.Application.InPlaceHostingManager> . 이 연습에서는 ClickOnce 응용 프로그램을 자동으로 설치 하는 사용자 지정 설치 관리자를 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>사용자 지정 ClickOnce 응용 프로그램 설치 관리자를 만들려면
 
@@ -79,4 +79,4 @@ ms.locfileid: "94349206"
 
 ## <a name="see-also"></a>참고 항목
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint> 요소인](../deployment/entrypoint-element-clickonce-application.md)
+- [\<entryPoint> 요소](../deployment/entrypoint-element-clickonce-application.md)

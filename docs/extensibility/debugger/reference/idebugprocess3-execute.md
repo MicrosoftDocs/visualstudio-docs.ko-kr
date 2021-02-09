@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915420"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 중지 된 상태에서이 프로세스를 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 지워지고 프로세스가 다시 실행 되기 시작 합니다.
@@ -31,14 +31,14 @@ ms.locfileid: "86386513"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Execute(
-   IDebugThread2* pThread
+HRESULT Execute(
+   IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Execute(
-   IDebugThread2 pThread
+int Execute(
+   IDebugThread2 pThread
 );
 ```
 
@@ -46,7 +46,7 @@ int Execute(
 `pThread`\
 진행 실행할 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -55,8 +55,8 @@ int Execute(
 > [!WARNING]
 > 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [재개](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

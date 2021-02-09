@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916951"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
 시각화 및 모델링 SDK (VMSDK)에서 한 요소에서 다른 요소로 변경 내용을 전파 하는 저장소 규칙을 만들 수 있습니다. 저장소의 요소가 변경 되 면 일반적으로 가장 바깥쪽 트랜잭션이 커밋될 때 규칙이 실행 되도록 예약 됩니다. 요소를 추가 하거나 삭제 하는 등의 다양 한 종류의 이벤트에 대해 다양 한 유형의 규칙이 있습니다. 특정 형식의 요소, 모양 또는 다이어그램에 규칙을 추가할 수 있습니다. 규칙으로 정의 된 많은 기본 제공 기능입니다. 예를 들어 규칙은 모델이 변경 될 때 다이어그램이 업데이트 되도록 합니다. 사용자 고유의 규칙을 추가 하 여 도메인별 언어를 사용자 지정할 수 있습니다.

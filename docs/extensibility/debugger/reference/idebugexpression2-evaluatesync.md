@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5adb5d6fc38a06054d6273f5b0493bae5bed77df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916216"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 이 메서드는 식을 동기적으로 계산 합니다.
@@ -58,10 +58,10 @@ int EvaluateSync(
 `ppResult`\
 제한이 식 계산 결과를 포함 하는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 몇 가지 일반적인 오류 코드는 다음과 같습니다.
 
-|오류|설명|
+|오류|Description|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|현재 다른 식이 계산 중 이며 동시 식 계산이 지원 되지 않습니다.|
 |E_EVALUATE_TIMEOUT|평가 시간이 초과 되었습니다.|
@@ -69,8 +69,8 @@ int EvaluateSync(
 ## <a name="remarks"></a>설명
 동기 평가의 경우 계산이 완료 되 면 이벤트를 다시 Visual Studio로 보낼 필요가 없습니다.
 
-## <a name="example"></a>예
-다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+## <a name="example"></a>예제
+다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,
@@ -117,7 +117,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cd1eba56f8e3c5a1a779acc3330790e9ba2bc96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916266"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 이 메서드는 식을 비동기식으로 계산 합니다.
@@ -48,18 +48,18 @@ int EvaluateAsync(
 `pExprCallback`\
 진행 이 매개 변수는 항상 null 값입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 일반적인 오류 코드는 다음과 같습니다.
 
-|오류|설명|
+|오류|Description|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|현재 다른 식이 계산 중 이며 동시 식 계산이 지원 되지 않습니다.|
 
 ## <a name="remarks"></a>설명
 이 메서드는 식 계산을 시작한 직후에 반환 해야 합니다. 식이 성공적으로 계산 되 면 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 는 [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) 또는 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)를 통해 제공 된 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 이벤트 콜백으로 전송 되어야 합니다.
 
-## <a name="example"></a>예
-다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+## <a name="example"></a>예제
+다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
@@ -75,7 +75,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)

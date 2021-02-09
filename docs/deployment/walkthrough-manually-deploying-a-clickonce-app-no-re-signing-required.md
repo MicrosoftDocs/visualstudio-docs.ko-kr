@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917267"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 ClickOnce 응용 프로그램을 수동으로 배포
 응용 프로그램을 만든 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 다음 게시 하 고 배포할 수 있도록 고객에 게 제공 하려면 일반적으로 배포 매니페스트를 업데이트 하 고 다시 서명 해야 했습니다. 대부분의 경우에는 여전히 선호 되는 방법 이지만 .NET Framework 3.5를 사용 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 새 배포 매니페스트를 다시 생성 하지 않고도 고객이 배포할 수 있는 배포를 만들 수 있습니다. 자세한 내용은 다시 서명를 사용 [하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)를 참조 하세요.
@@ -39,7 +39,7 @@ ms.locfileid: "94350311"
 > [!NOTE]
 > 이 연습에서는 명령줄 도구 *Mage.exe* 또는 그래픽 도구 *MageUI.exe* 를 사용 하 여 배포를 수동으로 만듭니다. 수동 배포에 대 한 자세한 내용은 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습의 단계를 수행 하려면 다음이 필요 합니다.
 
 - 배포할 준비가 된 Windows Forms 응용 프로그램입니다. 이 응용 프로그램은 *WindowsFormsApp1* 라고 합니다.
@@ -113,7 +113,7 @@ ms.locfileid: "94350311"
    MageUI.exe
    ```
 
-6. 메뉴에서 **파일** , **새로 만들기** , **응용 프로그램 매니페스트** 를 선택 하 여 새 응용 프로그램 매니페스트를 만듭니다.
+6. 메뉴에서 **파일**, **새로 만들기**, **응용 프로그램 매니페스트** 를 선택 하 여 새 응용 프로그램 매니페스트를 만듭니다.
 
 7. 기본 **이름** 탭에서이 배포의 이름 및 버전 번호를 입력 합니다. 또한 **게시자** 에 대 한 값을 제공 합니다 .이 값은 응용 프로그램을 배포할 때 시작 메뉴에서 응용 프로그램 바로 가기 링크의 폴더 이름으로 사용 됩니다.
 
@@ -127,15 +127,15 @@ ms.locfileid: "94350311"
 
 12. **필요한 사용 권한** 탭을 선택 하 고 응용 프로그램에서 어설션하는 데 필요한 신뢰 수준을 선택 합니다. 기본값은 **완전 신뢰** 이며 대부분의 응용 프로그램에 적합 합니다.
 
-13. 메뉴에서 **파일** , **저장** 을 선택 하 고 응용 프로그램 매니페스트를 저장 합니다. 응용 프로그램 매니페스트를 저장할 때 서명 하 라는 메시지가 표시 됩니다.
+13. 메뉴에서 **파일**, **저장** 을 선택 하 고 응용 프로그램 매니페스트를 저장 합니다. 응용 프로그램 매니페스트를 저장할 때 서명 하 라는 메시지가 표시 됩니다.
 
-14. 파일 시스템에 파일로 저장 된 인증서가 있는 경우 **인증서 파일에 서명** 옵션을 사용 하 고 줄임표 ( **...** ) 단추를 사용 하 여 파일 시스템에서 인증서를 선택 합니다.
+14. 파일 시스템에 파일로 저장 된 인증서가 있는 경우 **인증서 파일에 서명** 옵션을 사용 하 고 줄임표 (**...**) 단추를 사용 하 여 파일 시스템에서 인증서를 선택 합니다.
 
      또는
 
      인증서가 컴퓨터에서 액세스할 수 있는 인증서 저장소에 보관 되어 있는 경우에는 **저장 된 인증서로 서명 옵션** 을 선택 하 고 제공 된 목록에서 인증서를 선택 합니다.
 
-15. 메뉴에서 **파일** , **새로 만들기** , **배포 매니페스트** 를 선택 하 여 배포 매니페스트를 만든 다음 **이름** 탭에서 이름 및 버전 번호 (이 예제의 경우 **1.0.0.0** )를 제공 합니다.
+15. 메뉴에서 **파일**, **새로 만들기**, **배포 매니페스트** 를 선택 하 여 배포 매니페스트를 만든 다음 **이름** 탭에서 이름 및 버전 번호 (이 예제의 경우 **1.0.0.0** )를 제공 합니다.
 
 16. **업데이트** 탭으로 전환 하 고이 응용 프로그램을 업데이트 하는 빈도를 지정 합니다. 응용 프로그램에서 배포 API를 사용 하 여 업데이트 자체를 확인 하는 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **이 응용 프로그램에서 업데이트를 확인 해야 함** 확인란의 선택을 취소 합니다.
 

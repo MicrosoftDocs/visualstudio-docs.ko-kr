@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1be3d839cabe3fce07cdd42720306bdac47282f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5939f0ffd3a975c5fd3286045573fbf0da8006e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915429"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 이 메서드는 필드의 디버그 주소를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728996"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetAddress( 
+HRESULT GetAddress( 
    IDebugAddress** ppAddress
 );
 ```
@@ -43,9 +43,9 @@ int GetAddress(
 `ppAddress`\
 제한이 주소를 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체로 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

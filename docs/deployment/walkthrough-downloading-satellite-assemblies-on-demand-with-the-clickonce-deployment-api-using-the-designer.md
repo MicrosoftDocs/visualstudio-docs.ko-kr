@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917307"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>연습: 디자이너를 사용 하 여 ClickOnce 배포 API에서 요청 시 위성 어셈블리 다운로드
 위성 어셈블리를 사용하면 Windows Forms 애플리케이션을 여러 문화권에 맞게 구성할 수 있습니다. *위성 어셈블리* 는 애플리케이션의 기본 문화권 이외의 문화권을 위한 애플리케이션 리소스가 포함된 어셈블리입니다.

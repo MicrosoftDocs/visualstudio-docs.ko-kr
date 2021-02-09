@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916197"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 이 인터페이스는 디버그 엔진 (DE) 또는 사용자 지정 포트 공급자가 디버깅을 위해 프로그램을 등록할 수 있도록 합니다.
@@ -55,7 +55,7 @@ Visual Studio는이 인터페이스를 구현 하 여 여러 프로세스에서 
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 프로그램 게시자를 인스턴스화하고 프로그램 노드를 등록 하는 방법을 보여 줍니다. 이는 자습서의 [프로그램 노드 게시](/previous-versions/bb161795(v=vs.90))에서 가져옵니다.
 
 ```cpp
@@ -90,5 +90,5 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ```
 
 ## <a name="see-also"></a>참고 항목
-- [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
+- [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

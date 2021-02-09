@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917317"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API를 사용 하 여 요청 시 위성 어셈블리 다운로드
 위성 어셈블리를 사용하면 Windows Forms 애플리케이션을 여러 문화권에 맞게 구성할 수 있습니다. *위성 어셈블리* 는 애플리케이션의 기본 문화권 이외의 문화권을 위한 애플리케이션 리소스가 포함된 어셈블리입니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94349297"
 > [!NOTE]
 > 테스트를 위해 다음 코드 예제에서는 프로그래밍 방식으로 문화권을 `ja-JP`로 설정합니다. 이 코드를 프로덕션 환경에 맞게 조정하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 나오는 "다음 단계" 섹션을 참조하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  이 항목에서는 사용자가 Visual Studio를 사용하여 애플리케이션에 지역화된 리소스를 추가하는 방법을 알고 있다고 가정합니다. 자세한 내용은 [연습: Windows Forms 지역화](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))를 참조 하세요.
 
 ### <a name="to-download-satellite-assemblies-on-demand"></a>요청 시 위성 어셈블리를 다운로드하려면
@@ -56,7 +56,7 @@ ms.locfileid: "94349297"
 
 4. **파일** 탭을 클릭합니다.
 
-5. **줄임표** 단추( **...** )를 클릭하고 *Resgen.exe* 를 사용하여 생성한 위성 어셈블리를 비롯한 애플리케이션의 모든 어셈블리와 파일이 포함된 디렉터리를 선택합니다. 위성 어셈블리의 이름은 *\<isoCode>\ApplicationName.resources.dll* 형식으로 \<isoCode> 지정 됩니다. 여기서은 RFC 1766 형식의 언어 식별자입니다.
+5. **줄임표** 단추(**...**)를 클릭하고 *Resgen.exe* 를 사용하여 생성한 위성 어셈블리를 비롯한 애플리케이션의 모든 어셈블리와 파일이 포함된 디렉터리를 선택합니다. 위성 어셈블리의 이름은 *\<isoCode>\ApplicationName.resources.dll* 형식으로 \<isoCode> 지정 됩니다. 여기서은 RFC 1766 형식의 언어 식별자입니다.
 
 6. **채우기** 를 클릭하여 배포에 파일을 추가합니다.
 

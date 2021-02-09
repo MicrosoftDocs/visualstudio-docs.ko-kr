@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917336"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API를 사용 하 여 요청 시 어셈블리 다운로드
 기본적으로 응용 프로그램에 포함 된 모든 어셈블리는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음 실행할 때 다운로드 됩니다. 그러나 소수의 사용자가 사용 하는 응용 프로그램의 일부가 있을 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에서는 애플리케이션의 특정 어셈블리를 "선택 사항"으로 표시하는 방법 및 CLR(공용 언어 런타임)에서 요청할 때 <xref:System.Deployment.Application> 네임스페이스에 있는 클래스를 사용하여 이를 다운로드하는 방법을 설명합니다.
@@ -31,7 +31,7 @@ ms.locfileid: "94349265"
 > [!NOTE]
 > 이 절차를 사용하려면 완전 신뢰 상태에서 애플리케이션을 실행해야 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 다음 구성 요소 중 하나가 필요 합니다.
 
 - Windows SDK입니다. Windows SDK는 Microsoft 다운로드 센터에서 다운로드할 수 있습니다.
@@ -108,7 +108,7 @@ ms.locfileid: "94349265"
 
     - **파일** 페이지의 *ClickOnceLibrary.dll* 행에서 **파일 형식** 열을 **없음** 으로 설정 합니다.
 
-    - **파일** 페이지의 *ClickOnceLibrary.dll* 행에 있는 그룹 열에을 입력 `ClickOnceLibrary.dll` 합니다 **Group** .
+    - **파일** 페이지의 *ClickOnceLibrary.dll* 행에 있는 그룹 열에을 입력 `ClickOnceLibrary.dll` 합니다  .
 
 2. *MageUI.exe* 를 사용 하 여 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)에 설명 된 대로 배포 매니페스트를 만듭니다. 배포 매니페스트에 대해 다음 설정을 사용 합니다.
 
