@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: de9bc6e4b742326e979c2701bb5792127539274a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895468"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요 표시 및 숨겨진 텍스트
 개요를 사용 하면 텍스트 줄의 시퀀스를 한 줄로 축소할 수 있습니다. 예를 들어 c + +에서는 메서드 서명만 표시 하는 모든 메서드를 한 줄로 축소할 수 있습니다. 숨겨진 텍스트는 표시 하거나 숨길 수 있는 텍스트 줄의 시퀀스입니다.

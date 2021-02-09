@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82cda44c50319ef76efbc8fa3ae2712c3a4ae8f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f663f6dc2de0a0c471587ecb19bfb3fade31e943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896190"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 문서에서 텍스트 특성이 업데이트 되었음을 디버그 패키지에 알립니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80731384"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT onUpdateTextAttributes( 
+HRESULT onUpdateTextAttributes( 
    TEXT_POSITION pos,
    DWORD         dwNumToUpdate
 );
 ```
 
 ```csharp
-int onUpdateTextAttributes( 
+int onUpdateTextAttributes( 
    enum_TEXT_POSITION pos,
    uint               dwNumToUpdate
 );
@@ -48,9 +48,9 @@ int onUpdateTextAttributes( 
 `dwNumToUpdate`\
 진행 업데이트 된 텍스트의 문자 수를 지정 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 61a23eb1fcb3cbae9e478f35b3ac1fdb6abaf407
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895481"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>로컬 프로젝트 폴더와 소스 제어 저장소의 선택적 비교
 소스 제어 플러그 인 API 1.2에서 [Sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) 및 [Scctdiff](../../extensibility/sccdirdiff-function.md)함수를 사용 하 여 로컬 프로젝트 폴더와 소스 제어를 비교할 수 있습니다.
@@ -40,5 +40,5 @@ ms.locfileid: "97877587"
 > [!NOTE]
 > 이 함수는 [Sccdiff](../../extensibility/sccdiff-function.md)와 동일한 명령 플래그를 사용 합니다. 원본 제어 플러그 인 공급자는 디렉터리에 대 한 "빠른 diff" 작업을 지원 하지 않도록 선택할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca23c5acd5f32d79cb76f2059b6a39066197150f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896040"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
+참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetReferenceInfo ( 
+HRESULT GetReferenceInfo ( 
    DEBUGREF_INFO_FLAGS   dwFields,
    DWORD                 nRadix,
    DWORD                 dwTimeout,
@@ -39,7 +39,7 @@ HRESULT GetReferenceInfo ( 
 ```
 
 ```csharp
-int GetReferenceInfo ( 
+int GetReferenceInfo ( 
    enum_DEBUGREF_INFO_FLAGS  dwFields,
    uint                      nRadix,
    uint                      dwTimeout,
@@ -68,10 +68,10 @@ int GetReferenceInfo ( 
 `pReferenceInfo`\
 제한이 속성에 대 한 설명과 함께 채워지는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

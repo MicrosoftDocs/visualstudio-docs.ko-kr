@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896125"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 는이 속성에 대 한 고유 ID를 만들어 다른 모든 속성에서 고유한 지 확인 합니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80721183"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateObjectID(
+HRESULT CreateObjectID(
    void
 );
 ```
 
 ```csharp
-int CreateObjectID();
+int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>Return Value
@@ -48,6 +48,6 @@ int CreateObjectID();
 > [!NOTE]
 > 이 고유 ID를 검색할 수 있는 방법이 없으므로 DE는 메서드가 호출 될 때 고유한 Id에 대해 원하는 모든 작업을 수행할 수 있습니다 `CreateObjectID` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

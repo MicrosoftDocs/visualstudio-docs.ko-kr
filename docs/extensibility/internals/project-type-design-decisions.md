@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896751"
 ---
 # <a name="project-type-design-decisions"></a>프로젝트 형식 디자인 결정
 새 프로젝트 형식을 만들기 전에 프로젝트 형식에 대 한 몇 가지 디자인 결정을 내려야 합니다. 프로젝트에 포함 되는 항목의 형식, 프로젝트 파일이 유지 되는 방법 및 사용할 약정 모델을 결정 해야 합니다.
@@ -58,7 +58,7 @@ ms.locfileid: "97877799"
 
  트랜잭션 모드를 사용 하 여 데이터 개체를 열면 변경 내용이 메모리의 임시 위치에 저장 되 고 사용자가 수동으로 파일을 저장 하도록 선택할 때까지 커밋되지 않습니다. 이때 모든 변경 내용이 함께 발생 하거나 변경 내용이 적용 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)
 - [프로젝트 지속성](../../extensibility/internals/project-persistence.md)

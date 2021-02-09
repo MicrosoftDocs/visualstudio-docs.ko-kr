@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: df851f304cd6c62e1447f791a23618a6de5cb0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895598"
 ---
 # <a name="opening-and-saving-project-items"></a>프로젝트 항목 열기 및 저장
 새 프로젝트 형식을 추가 하는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에서 프로젝트 파일을 열고 저장 하는 과정을 관리 해야 합니다. 다음 항목에서는 파일을 열고 저장 하는 다양 한 방법에 대해 설명 합니다.

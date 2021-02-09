@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dcd81b79fa43d86036a7fd1ac0ad813e6e2ebb78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894974"
 ---
 # <a name="create-a-breakpoint"></a>중단점 만들기
 다음에서는 중단점을 만드는 프로세스에 대해 설명 합니다.

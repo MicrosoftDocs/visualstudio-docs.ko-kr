@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a29b1b3af1e92ee6f247ba07e3b4e468401415e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895429"
 ---
 # <a name="source-control-vspackage-features"></a>소스 제어 VSPackage 기능
 이 섹션에서는 소스 제어 VSPackage의 다양 한 기능에 대해 설명 합니다. 이러한 VSPackage에 대 한 등록 및 선택 세부 정보를 간략하게 설명 하 고, 소스 제어 함수의 QEQS (Query-Edit Query-Save) 이벤트 처리, 문자 모양 바꾸기 및 사용자 지정 UI (사용자 인터페이스)를 처리 하는 세 가지 기본 소스 제어 관련 기능에 대해 설명 합니다.

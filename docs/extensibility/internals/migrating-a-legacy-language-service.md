@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895689"
 ---
 # <a name="migrating-a-legacy-language-service"></a>레거시 언어 서비스 마이그레이션
 프로젝트를 업데이트 하 고 프로젝트에 source.extension.vsixmanifest 파일을 추가 하 여 레거시 언어 서비스를 최신 버전의 Visual Studio로 마이그레이션할 수 있습니다. Visual Studio 편집기가이를 조정 하기 때문에 언어 서비스 자체는 이전과 마찬가지로 계속 작동 합니다.
@@ -109,5 +109,5 @@ ms.locfileid: "97877834"
 
 12. 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 열렸습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

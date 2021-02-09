@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895273"
 ---
 # <a name="the-experimental-instance"></a>실험적 인스턴스
 변경 될 수 있는 테스트 되지 않은 응용 프로그램에서 Visual Studio 개발 환경을 보호 하기 위해이를 실험 하는 데 사용할 수 있는 실험적 공간을 제공 합니다. 일반적인 방법으로 Visual Studio를 사용 하 여 새 응용 프로그램을 개발 하지만이 실험적 인스턴스를 사용 하 여 실행할 수 있습니다.

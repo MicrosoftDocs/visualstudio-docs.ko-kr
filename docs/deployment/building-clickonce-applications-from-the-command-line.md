@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895156"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 애플리케이션 빌드
 
@@ -75,7 +75,7 @@ ms.locfileid: "94437725"
 
     이 단계는 선택 사항 이지만, 명령줄 빌드에서 새 파일이 모두 생성 되었는지 확인 합니다.
 
-5. `msbuild /target:publish`을 입력합니다.
+5. `msbuild /target:publish`.
 
    위의 단계를 수행 하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publish** 라는 프로젝트의 하위 폴더에 전체 응용 프로그램 배포가 생성 됩니다. *Cmdlinedemo. 응용 프로그램* 은 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 매니페스트입니다. *0.0.0 CmdLineDemo_1* 폴더에는 응용 프로그램 매니페스트 *CmdLineDemo.exe* 및 *CmdLineDemo.exe* 파일이 포함 되어 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Setup.exe* 은 부트스트래퍼로, 기본적으로 .NET Framework를 설치 하도록 구성 되어 있습니다. Dotnetfx.exe 폴더는 .NET Framework에 대 한 재배포 가능 패키지를 포함 합니다. 웹을 통해 또는 UNC 또는 CD/DVD를 통해 응용 프로그램을 배포 하는 데 필요한 전체 파일 집합입니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "94437725"
 
 명령줄에서 .NET ClickOnce 응용 프로그램을 빌드하는 것은 유사한 환경입니다. 단, MSBuild 명령줄에서 게시 프로필에 대 한 추가 속성을 제공 해야 합니다. 게시 프로필을 만드는 가장 쉬운 방법은 Visual Studio를 사용 하는 것입니다.  자세한 내용은 [ClickOnce를 사용 하 여 .Net Windows 응용 프로그램 배포를](quickstart-deploy-using-clickonce-folder.md) 참조 하세요.
 
-게시 프로필을 만든 후에는 msbuild 명령줄에서 pubxml 파일을 속성으로 제공할 수 있습니다. 예를 들면 다음과 같습니다.
+게시 프로필을 만든 후에는 msbuild 명령줄에서 pubxml 파일을 속성으로 제공할 수 있습니다. 예를 들어:
 
 ```cmd
     msbuild /t:publish /p:PublishProfile=<pubxml file> /p:PublishDir="<specific location>"
@@ -99,7 +99,7 @@ ms.locfileid: "94437725"
 
  위의 절차에서 응용 프로그램을 게시할 때 게시 마법사 또는 .NET Core 3.1 용 게시 프로필 파일 또는 이후 프로젝트에서 다음 속성이 프로젝트 파일에 삽입 됩니다. 이러한 속성은 응용 프로그램을 생성 하는 방법에 직접적인 영향을 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
- *Cmdlinedemo. .vbproj*  /  *cmdlinedemo* :
+ *Cmdlinedemo. .vbproj*  /  *cmdlinedemo*:
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,7 +130,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 .NET Core 3.1 이상에서는 이러한 설정이 pubxml 파일에 제공 됩니다.
 
- 게시 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **프로젝트 디자이너** 의 **게시** , **보안** 및 **서명** 속성 페이지에서에 제어 됩니다. 다음은 응용 프로그램 디자이너의 다양 한 속성 페이지에서 각을 설정 하는 방법에 대 한 설명과 함께 게시 속성에 대 한 설명입니다.
+ 게시 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **프로젝트 디자이너** 의 **게시**, **보안** 및 **서명** 속성 페이지에서에 제어 됩니다. 다음은 응용 프로그램 디자이너의 다양 한 속성 페이지에서 각을 설정 하는 방법에 대 한 설명과 함께 게시 속성에 대 한 설명입니다.
 
 > [!NOTE]
 > .NET Windows 데스크톱 프로젝트의 경우 이제 이러한 설정이 게시 마법사에 있습니다.
@@ -205,11 +205,11 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |URL 옵션|Description|
 |----------------|-----------------|
 |`PublishURL`|ClickOnce 응용 프로그램을 웹 사이트에 게시 하는 경우에 필요 합니다.|
-|`InstallURL`|(선택 사항) 설치 사이트가와 다른 경우이 URL 옵션을 설정 `PublishURL` 합니다. 예를 들어를 `PublishURL` FTP 경로로 설정 하 고을 `InstallURL` 웹 URL로 설정할 수 있습니다.|
-|`SupportURL`|(선택 사항) 지원 사이트가와 다른 경우이 URL 옵션을 설정 `PublishURL` 합니다. 예를 들어를 `SupportURL` 회사의 고객 지원 웹 사이트로 설정할 수 있습니다.|
-|`UpdateURL`|(선택 사항) 업데이트 위치가와 다른 경우이 URL 옵션을 설정 합니다 `InstallURL` . 예를 들어를 `PublishURL` FTP 경로로 설정 하 고을 `UpdateURL` 웹 URL로 설정할 수 있습니다.|
+|`InstallURL`|선택 사항입니다. 설치 사이트가와 다른 경우이 URL 옵션을 설정 `PublishURL` 합니다. 예를 들어를 `PublishURL` FTP 경로로 설정 하 고을 `InstallURL` 웹 URL로 설정할 수 있습니다.|
+|`SupportURL`|선택 사항입니다. 지원 사이트가와 다른 경우이 URL 옵션을 설정 `PublishURL` 합니다. 예를 들어를 `SupportURL` 회사의 고객 지원 웹 사이트로 설정할 수 있습니다.|
+|`UpdateURL`|선택 사항입니다. 업데이트 위치가와 다른 경우이 URL 옵션을 설정 합니다 `InstallURL` . 예를 들어를 `PublishURL` FTP 경로로 설정 하 고을 `UpdateURL` 웹 URL로 설정할 수 있습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>

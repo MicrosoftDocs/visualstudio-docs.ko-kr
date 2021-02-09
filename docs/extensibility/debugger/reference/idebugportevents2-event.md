@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896177"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 이 메서드는 포트에서 프로세스 및 프로그램을 만들고 소멸 시키는 이벤트를 전송 합니다.
@@ -76,10 +76,10 @@ int Event(
 `riidEvent`\
 진행 이벤트의 GUID입니다. 이 메서드를 호출 하기 전에 이벤트를 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 로 캐스팅 하기 때문에이 식별자를 사용 하면 전송 되는 이벤트를 보다 쉽게 확인할 수 있습니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895013"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
 사용자가 **F9** 키를 눌러 중단점을 설정 하는 경우 IDE에서 요청을 공식화 하 고 디버그 세션에 메시지를 표시 하 여 중단점을 만듭니다.
@@ -47,9 +47,9 @@ ms.locfileid: "96914714"
 
  그런 다음 디버그 패키지는 DE에서 구현 하는 [bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)를 호출 하 여 보류 중인 중단점을 코드 또는 데이터에 바인딩하려 려 합니다.
 
- 중단점이 바인딩되면 DE는 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 이벤트 인터페이스를 디버그 패키지로 보냅니다. 디버그 패키지는이 인터페이스를 사용 하 여 하나 이상의 [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 반환 하는 [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)를 호출 하 여 중단점에 바인딩된 모든 코드 컨텍스트 (또는 단일 데이터 컨텍스트)를 열거 합니다. [GetIDebugBreakpointResolution2 Pointresolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) 인터페이스는 [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 반환 하 고 [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 는 코드 또는 데이터 컨텍스트를 포함 하는 [BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) 공용 구조체를 반환 합니다.
+ 중단점이 바인딩되면 DE는 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) 이벤트 인터페이스를 디버그 패키지로 보냅니다. 디버그 패키지는이 인터페이스를 사용 하 여 하나 이상의 [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 반환 하는 [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)를 호출 하 여 중단점에 바인딩된 모든 코드 컨텍스트 (또는 단일 데이터 컨텍스트)를 열거 합니다. [GetIDebugBreakpointResolution2 Pointresolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) 인터페이스는 [](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 반환 하 고 [GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) 는 코드 또는 데이터 컨텍스트를 포함 하는 [BP_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-resolution-info.md) 공용 구조체를 반환 합니다.
 
- DE가 중단점에 바인딩할 수 없는 경우 단일 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 이벤트 인터페이스를 디버그 패키지로 보냅니다. 디버그 패키지는 [Geterrorbreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)을 호출 하 고 그 다음에 [GetGetResolutionInfo Pointresolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 및 [GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)를 호출 하 여 오류 유형 (오류 또는 경고) 및 정보 메시지를 검색 합니다. 그러면 오류 유형 및 메시지를 포함 하는 [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조가 반환 됩니다.
+ DE가 중단점에 바인딩할 수 없는 경우 단일 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 이벤트 인터페이스를 디버그 패키지로 보냅니다. 디버그 패키지는 [Geterrorbreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)을 호출 하 고 그 다음에 [GetGetResolutionInfo Pointresolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 및 [](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)를 호출 하 여 오류 유형 (오류 또는 경고) 및 정보 메시지를 검색 합니다. 그러면 오류 유형 및 메시지를 포함 하는 [BP_ERROR_RESOLUTION_INFO](../../extensibility/debugger/reference/bp-error-resolution-info.md) 구조가 반환 됩니다.
 
  DE가 중단점을 처리 하지만 바인딩할 수 없는 경우 형식의 오류를 반환 `BPET_TYPE_ERROR` 합니다. 디버그 패키지는 오류 대화 상자를 표시 하 여 응답 하 고, IDE는 소스 코드 줄의 왼쪽에 있는 중단점 문자 모양 안에 느낌표를 놓습니다.
 

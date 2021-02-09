@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895663"
 ---
 # <a name="model-for-source-control-packages"></a>소스 제어 패키지 모델
 다음 모델은 소스 제어 구현의 예를 나타냅니다. 모델에는 구현 해야 하는 인터페이스와 사용자가 호출 해야 하는 환경 서비스가 표시 됩니다. 모든 서비스와 마찬가지로 실제로 서비스를 통해 가져오는 특정 인터페이스의 메서드를 호출 합니다. 클래스의 이름은 소스 제어의 수행 방법을 더 쉽게 확인할 수 있도록 식별 됩니다.
@@ -35,7 +35,7 @@ ms.locfileid: "97876691"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|소스 제어 패키지에 등록 하 고 소스 제어 상태에 대 한 정보를 얻기 위해 프로젝트에서 호출 됩니다. 이 인터페이스는 서비스를 사용 하 여 액세스 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> .|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|파일에 대 한 정보에 대 한 소스 제어 요청에 응답 하 고 프로젝트 파일에 필요한 소스 제어 설정을 가져오는 프로젝트에 의해 구현 됩니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

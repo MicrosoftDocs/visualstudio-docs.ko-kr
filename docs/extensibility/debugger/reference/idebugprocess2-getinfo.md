@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf4b8d933729c95eaffa3a0caa44961bb5c87baa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894922"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 프로세스에 대 한 설명을 가져옵니다.
@@ -28,16 +28,16 @@ ms.locfileid: "80724018"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetInfo(
-   PROCESS_INFO_FIELDS  Fields,
-   PROCESS_INFO*        pProcessInfo
+HRESULT GetInfo(
+   PROCESS_INFO_FIELDS  Fields,
+   PROCESS_INFO*        pProcessInfo
 );
 ```
 
 ```csharp
-int GetInfo(
-   enum_PROCESS_INFO_FIELDS  Fields,
-   PROCESS_INFO[]            pProcessInfo
+int GetInfo(
+   enum_PROCESS_INFO_FIELDS  Fields,
+   PROCESS_INFO[]            pProcessInfo
 );
 ```
 
@@ -48,10 +48,10 @@ int GetInfo(
 `pProcessInfo`\
 제한이 프로세스에 대 한 설명으로 채워진 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895832"
 ---
 # <a name="extend-projects"></a>프로젝트 확장
 프로젝트 및 솔루션은 Visual Studio에서 코드 및 리소스 파일을 컴파일 및 배포 단위로 구성 하는 방법입니다. 프로젝트에서 프로젝트에 대 한 자세한 정보 [(Visual STUDIO SDK)](../extensibility/extending-projects.md)를 찾을 수 있습니다.
@@ -27,7 +27,7 @@ ms.locfileid: "96994617"
 
  이 단원의 항목에서는 사용자 지정 프로젝트를 만드는 방법 및 다양 한 형식의 Visual Studio 솔루션을 관리 하는 방법을 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [기본 프로젝트 시스템 만들기, 1 부](../extensibility/creating-a-basic-project-system-part-1.md) 사용자 지정 프로젝트 시스템을 만드는 방법을 설명 합니다.
 
 - [기본 프로젝트 시스템 만들기, 2 부](../extensibility/creating-a-basic-project-system-part-2.md) 사용자 지정 프로젝트 시스템을 만드는 방법을 설명 합니다.

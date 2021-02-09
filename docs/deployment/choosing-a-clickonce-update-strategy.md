@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895078"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce 업데이트 전략 선택
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]는 애플리케이션 자동 업데이트를 제공할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션은 배포 매니페스트 파일을 주기적으로 읽어서 애플리케이션의 업데이트가 사용 가능한지 확인합니다. 사용 가능한 경우 새 버전의 애플리케이션을 다운로드하여 실행합니다. 효율성을 위해 변경된 파일만 다운로드합니다.
@@ -82,7 +82,7 @@ ms.locfileid: "94437606"
 > [!NOTE]
 > 다른 업데이트 전략을 사용하여 업데이트를 요구할 수도 있지만 이전 버전을 실행할 수 없게 하려면 **애플리케이션 시작 전** 을 선택해야 합니다. 시작 시 필수 업데이트가 발견되면 사용자는 업데이트를 적용하거나 애플리케이션을 닫아야 합니다.
 
- 업데이트를 필수로 표시하려면 **애플리케이션 업데이트** 대화 상자에서 **이 애플리케이션에 필요한 최소 버전 지정** 을 클릭하고 **주 버전** , **부 버전** , **빌드 버전** 및 **수정 버전** 으로 구성된 게시 버전을 지정합니다. 이렇게 하면 설치할 수 있는 최하위 버전의 애플리케이션이 지정됩니다.
+ 업데이트를 필수로 표시하려면 **애플리케이션 업데이트** 대화 상자에서 **이 애플리케이션에 필요한 최소 버전 지정** 을 클릭하고 **주 버전**, **부 버전**, **빌드 버전** 및 **수정 버전** 으로 구성된 게시 버전을 지정합니다. 이렇게 하면 설치할 수 있는 최하위 버전의 애플리케이션이 지정됩니다.
 
  이 전략은 배포 매니페스트에서 **배포** 요소의 **minimumRequiredVersion** 특성을 다음과 같이 설정하는 것과 같습니다.
 
@@ -120,7 +120,7 @@ ms.locfileid: "94437606"
 
  신뢰할 수 있는 애플리케이션 배포를 사용할 경우 신뢰 수준에 대한 메시지가 표시되지 않습니다. 자세한 내용은 [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application>
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)

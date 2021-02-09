@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895728"
 ---
 # <a name="extend-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 언어 서비스 기능 (예: IntelliSense)을 사용자의 편집기에 추가 하 고 Visual Studio 코드 편집기의 기능을 대부분 확장할 수 있습니다.  확장할 수 있는 항목의 전체 목록은 [언어 서비스 및 편집기 확장 요소](../extensibility/language-service-and-editor-extension-points.md)를 참조 하세요.
@@ -30,7 +30,7 @@ ms.locfileid: "96995748"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[언어 서비스 및 편집기 확장 시작](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|편집기에 확장을 만드는 방법에 대해 설명 합니다.|
 |[편집기 내부](../extensibility/inside-the-editor.md)|편집기의 일반 구조를 설명 하 고 해당 기능 중 일부를 나열 합니다.|

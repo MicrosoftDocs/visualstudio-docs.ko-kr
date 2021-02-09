@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895780"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
 사용자 고유의 프로젝트 형식을 만드는 방법에 대해 생각 하 고 있나요? 새 프로젝트를 만들 때 실제로 발생 하는 일은 궁금 하십니까? 내부적으로 살펴보기를 수행 하 고 정말 진행 되 고 있는 것을 확인해 보겠습니다.
@@ -89,7 +89,7 @@ devenv /installvstemplates
  우선 순위 번호가 낮을수록 트리에서 위치가 높아집니다.
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예제:
+ 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예를 들면 다음과 같습니다.
 
  DeveloperActivity REG_SZ VC #
 
