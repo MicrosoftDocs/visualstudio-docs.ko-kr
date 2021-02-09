@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923213"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 사용자가 IDE (통합 개발 환경)에서 입력할 수 있는 문자열을 기준으로 코드 중단점을 설정 하는 데 사용 됩니다.
@@ -33,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
 } BP_LOCATION_CODE_STRING;
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `bstrContext`\
 코드 내의 중단점 컨텍스트 (일반적으로 호출 스택에 표시 되는 메서드 또는 함수 이름)입니다.
 
@@ -50,6 +50,6 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

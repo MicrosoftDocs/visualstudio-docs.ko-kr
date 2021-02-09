@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8e566eafce9b5763830c00659a860e6329671bcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922654"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>방법: 요소에 CLR 특성 설정
 사용자 지정 특성은 도메인 요소, 도형, 연결선 및 다이어그램에 추가할 수 있는 특수 한 특성입니다. 클래스에서 상속 되는 특성을 추가할 수 있습니다 `System.Attribute` .

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 88d2a7b411097bdf2a90ec04456bfc4419e31c30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923331"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>방법: SharePoint 프로젝트 확장 만들기
   Visual Studio에 열려 있는 모든 SharePoint 프로젝트에 기능을 추가 하려는 경우 프로젝트 확장을 만듭니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)을 참조하세요.

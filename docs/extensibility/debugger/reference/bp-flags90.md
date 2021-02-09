@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923232"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 선택적 플래그의 유효한 값을 열거 합니다. 선택적 플래그는 중단점을 설정할 때 추가 정보를 지정 하는 데 사용할 수 있습니다. 이 열거형은 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형을 확장 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_BP_FLAGS90

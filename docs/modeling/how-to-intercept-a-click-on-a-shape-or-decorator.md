@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 2697e3d17e289297bcad57155c1c9ea6f1880acc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922707"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 다음 절차에서는 셰이프 또는 아이콘 데코레이터의 클릭을 가로채는 방법을 보여 줍니다. 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로채 고 요소가 응답 하도록 만들 수 있습니다.
@@ -229,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {

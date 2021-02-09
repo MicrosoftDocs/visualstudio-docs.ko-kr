@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a50ebdc7fff425224a454a491f05846105159d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fe892269d0e02d1f8e0aca2e943993ebb03cea41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922577"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 트랜잭션은 저장소에 대 한 변경 내용이 하나의 그룹으로 처리 되는지 확인 합니다. 그룹화 된 변경 내용은 단일 단위로 커밋되거나 롤백될 수 있습니다.

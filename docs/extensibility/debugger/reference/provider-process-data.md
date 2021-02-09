@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922968"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 이 구조는 컴퓨터에서 실행 되는 프로세스에 대 한 정보를 제공 합니다.
@@ -28,22 +28,22 @@ ms.locfileid: "80713773"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagPROVIDER_PROCESS_DATA {
-   PROVIDER_FIELDS    Fields;
-   PROGRAM_NODE_ARRAY ProgramNodes;
-   BOOL               fIsDebuggerPresent;
-} PROVIDER_PROCESS_DATA;
+typedef struct tagPROVIDER_PROCESS_DATA {
+   PROVIDER_FIELDS    Fields;
+   PROGRAM_NODE_ARRAY ProgramNodes;
+   BOOL               fIsDebuggerPresent;
+} PROVIDER_PROCESS_DATA;
 ```
 
 ```csharp
-public struct PROVIDER_PROCESS_DATA {
-   public uint               Fields;
-   public PROGRAM_NODE_ARRAY ProgramNodes;
-   public int                fIsDebuggerPresent;
+public struct PROVIDER_PROCESS_DATA {
+   public uint               Fields;
+   public PROGRAM_NODE_ARRAY ProgramNodes;
+   public int                fIsDebuggerPresent;
 }
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `Fields`\
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 열거형의 플래그 조합으로, 입력 된 필드를 나타냅니다.
 
@@ -63,8 +63,8 @@ public struct PROVIDER_PROCESS_DATA {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)
 - [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

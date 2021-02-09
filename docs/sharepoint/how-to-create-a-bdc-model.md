@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923360"
 ---
 # <a name="how-to-create-a-bdc-model"></a>방법: BDC 모델 만들기
   해당 종류의 항목에 대 한 템플릿을 사용 하 고 SharePoint 프로젝트에 모델을 추가 하 여 BDC (비즈니스 데이터 연결) 모델을 만들 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)를 참조하세요. 모델을 디자인 하는 방법에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -49,7 +49,7 @@ ms.locfileid: "94850678"
 
      빈 SharePoint 프로젝트가 생성 됩니다.
 
-5. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+5. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 6. **새 항목 추가** 대화 상자에서 **Office/SharePoint** 노드를 선택 합니다.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923348"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>방법: SharePoint 명령 만들기
   SharePoint 도구 확장에서 서버 개체 모델을 사용 하려면 API를 호출 하는 사용자 지정 *SharePoint 명령을* 만들어야 합니다. 서버 개체 모델을 직접 호출할 수 있는 어셈블리에서 SharePoint 명령을 정의 합니다.

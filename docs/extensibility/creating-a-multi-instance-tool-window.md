@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923266"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>다중 인스턴스 도구 창 만들기
 여러 인스턴스를 동시에 열 수 있도록 도구 창을 프로그래밍할 수 있습니다. 기본적으로 도구 창에는 인스턴스가 하나만 열려 있을 수 있습니다.

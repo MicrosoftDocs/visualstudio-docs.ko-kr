@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923099"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 이 인터페이스는 텍스트 문서를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugDocumentText2 : IDebugDocument2
+IDebugDocumentText2 : IDebugDocument2
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -37,7 +37,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  인터페이스의 메서드 외에도 `IDebugDocument2` 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|문서의이 위치에 있는 텍스트의 크기를 검색 합니다.|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|문서의 지정 된 위치에서 텍스트를 검색 합니다.|
@@ -52,6 +52,6 @@ IDebugDocumentText2 : IDebugDocument2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

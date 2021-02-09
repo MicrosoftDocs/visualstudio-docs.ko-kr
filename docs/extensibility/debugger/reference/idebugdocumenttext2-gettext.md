@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fb2281c9086baee87df6ac7e214b2911e2fc354
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923161"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 문서의 지정 된 위치에서 텍스트를 검색 합니다.
@@ -58,10 +58,10 @@ int GetText(
 `pcNumChars`\
 제한이 실제로 검색 된 문자 수를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 c #에서이 메서드를 호출 하는 방법을 보여 줍니다.
 
 ```csharp
@@ -100,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

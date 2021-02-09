@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06956af7120b81d93a32c11066744c11ad12f30b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923209"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 서버에 대 한 친숙 한 이름을 검색 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80732888"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetServerFriendlyName(
-   BSTR* pbstrName
+HRESULT GetServerFriendlyName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetServerFriendlyName(
-   out string pbstrName
+int GetServerFriendlyName(
+   out string pbstrName
 );
 ```
 
@@ -46,7 +46,7 @@ int GetServerFriendlyName(
 > [!NOTE]
 > 호출자는 문자열을 해제 해야 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -54,6 +54,6 @@ int GetServerFriendlyName(
 
  컴퓨터 지향 이름의 경우 [Getservername](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
