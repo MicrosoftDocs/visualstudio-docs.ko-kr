@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 489aea2ba5b12dafa161ce70a49f81f60b38ba5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878762"
 ---
 # <a name="create-a-source-control-plug-in"></a>소스 제어 플러그 인 만들기
 Visual Studio SDK는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)에 소스 제어 기능을 추가할 수 있는 리소스를 제공 합니다. 이 설명서에 설명 된 소스 제어 플러그 인 API를 준수 하는 모든 플러그 인 DLL을 사용할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
  소스 제어 플러그 인을 설치 하 고 현재 사용할 수 있는 소스 제어 플러그 인 API 버전을 강조 표시 하는 방법을 설명 합니다.

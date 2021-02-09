@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878970"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 디버그 엔진 (DE)의 GUID를 가져옵니다.
@@ -43,14 +43,14 @@ int GetEngineID(
 `pguidEngine`\
 제한이 DE의 GUID를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 일반적인 Guid의 몇 가지 예는 `guidScriptEng` , `guidNativeEng` 또는 `guidSQLEng` 입니다. 새 디버그 엔진은 식별을 위해 고유한 GUID를 만듭니다.
 
-## <a name="example"></a>예
-다음 예제에서는 IDebugEngine2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CEngine` . [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+## <a name="example"></a>예제
+다음 예제에서는 IDebugEngine2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CEngine` . [](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
@@ -66,5 +66,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

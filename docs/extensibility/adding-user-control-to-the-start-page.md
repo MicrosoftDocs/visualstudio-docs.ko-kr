@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879178"
 ---
 # <a name="add-user-control-to-the-start-page"></a>시작 페이지에 사용자 정의 컨트롤 추가
 
@@ -191,7 +191,7 @@ WPF 사용자 정의 컨트롤을 구현 하려면 XAML에서 UI (사용자 인�
 
     사용자 지정 시작 페이지가 표시 됩니다. 모든 파일을 변경 하려면 실험적 인스턴스를 닫고 변경 내용을 적용 하 고 변경 된 파일을 복사 하 여 붙여넣은 다음 실험적 인스턴스를 다시 열어 변경 내용을 확인 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [WPF 컨테이너 컨트롤](/previous-versions/bb675291(v=vs.110))
 - [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

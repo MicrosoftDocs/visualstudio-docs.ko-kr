@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879022"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 디버그 엔진 (DE)에서 보류 중인 중단점을 만듭니다.
@@ -48,7 +48,7 @@ int CreatePendingBreakpoint(
 `ppPendingBP`\
 제한이 보류 중인 중단점을 나타내는 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 매개 변수가 `E_FAIL` `pBPRequest` 잘못 되었거나 불완전 한 경우는 일반적으로 매개 변수가 de-de에서 지 원하는 언어와 일치 하지 않는 경우를 반환 합니다 `pBPRequest` .
 
 ## <a name="remarks"></a>설명
@@ -58,7 +58,7 @@ int CreatePendingBreakpoint(
 
 사용자가 코드 줄에 중단점을 설정 하면 DE를 사용 하 여이 코드에 해당 하는 문서의 가장 가까운 줄에 중단점을 바인딩할 수 있습니다. 이렇게 하면 사용자가 여러 줄 문의 첫 번째 줄에 중단점을 설정 하 고 마지막 줄에 바인딩할 수 있습니다 (모든 코드가 디버그 정보에서 특성을 사용 하는 경우).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . 그러면의 DE 구현이 `IDebugEngine2::CreatePendingBreakpoint` 각 프로그램에서이 메서드 구현에 대 한 모든 호출을 전달할 수 있습니다.
 
 ```
@@ -72,7 +72,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
