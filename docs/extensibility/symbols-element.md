@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839324"
 ---
 # <a name="symbols-element"></a>Symbols 요소
 다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 비관리 코드의 경우이 정보는 일반적으로 [Extern 요소](../extensibility/extern-element.md)에 지정 된 헤더 파일에서 가져옵니다. 관리 코드는 기호 요소의 자식 요소를 사용 하 여이 정보를 정의 합니다.
@@ -41,20 +41,20 @@ ms.locfileid: "97715563"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|없음||
+|None||
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |GuidSymbol|GUID 기호를 정의 합니다. GuidSymbol에는 이름 및 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이 고, 값은 GUID의 값입니다.<br /><br /> 예를 들면 다음과 같습니다.\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
 |IDSymbol|기호를 정의 합니다. IDSymbol에는 이름 및 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이 고, 값은 기호 값을 나타내는 문자열입니다.<br /><br /> 예를 들면 다음과 같습니다.\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|Vsct 파일의 루트 요소입니다.|
 
@@ -71,5 +71,5 @@ ms.locfileid: "97715563"
 </Symbols>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

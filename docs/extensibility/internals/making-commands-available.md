@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839547"
 ---
 # <a name="making-commands-available"></a>명령을 사용할 수 있도록 설정
 
@@ -57,7 +57,7 @@ VSPackage 데이터의 현재 상태 또는 현재 관련 된 작업에 따라 �
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트를 로드 하거나 편집에서 빌드하기로 이동 하는 등의 사용자 작업으로 인해 발생 하는 변경 내용을 모니터링 합니다. 변경이 발생 하면 IDE의 모양이 자동으로 수정 됩니다. 다음 표에서는을 모니터링 하는 IDE 변경의 네 가지 주요 컨텍스트를 보여 줍니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-| 컨텍스트 형식 | 설명 |
+| 컨텍스트 형식 | Description |
 |-------------------------| - |
 | 활성 프로젝트 형식 | 대부분의 프로젝트 형식에서이 `GUID` 값은 프로젝트를 구현 하는 VSPackage의 GUID와 동일 합니다. 그러나 프로젝트에서 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 프로젝트 형식을 `GUID` 값으로 사용 합니다. |
 | 활성 창 | 일반적으로 키 바인딩에 대 한 현재 UI 컨텍스트를 설정 하는 마지막 활성 문서 창입니다. 그러나 내부 웹 브라우저와 유사한 키 바인딩 테이블이 있는 도구 창이 될 수도 있습니다. HTML 편집기와 같은 다중 탭 문서 창의 경우 모든 탭에 다른 명령 컨텍스트가 `GUID` 있습니다. |
@@ -149,7 +149,7 @@ VSPackage 데이터의 현재 상태 또는 현재 관련 된 작업에 따라 �
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [솔루션 탐색기 도구 모음에 명령 추가](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

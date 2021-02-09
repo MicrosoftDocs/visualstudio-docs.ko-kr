@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839575"
 ---
 # <a name="list-of-available-services"></a>사용 가능한 서비스 목록
 
@@ -160,6 +160,6 @@ ms.locfileid: "98204646"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 예 | 예 | VSPackage이 패키지 또는 패키지 일부가 있을 수 있는 창 프레임을 가져올 수 있도록 합니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 예 | 예 | 특정 메타 데이터 파일과 연결 된 XML 형식의 문서 파일에 액세스할 수 있도록 합니다. |
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839378"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 요소(Visual Studio 템플릿)
 **새 항목 추가** 대화 상자에서 **마스터 페이지 선택** 확인란을 사용할지 여부를 지정 합니다.
@@ -60,7 +60,7 @@ ms.locfileid: "94903834"
 
  `SupportsMasterPage`요소는 웹 항목 템플릿에만 사용할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 마스터 페이지에 대 한 지원을 포함 하는 웹 프로젝트에 대 한 메타 데이터를 보여 줍니다.
 
 ```

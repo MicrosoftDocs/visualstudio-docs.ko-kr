@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839417"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code 도구는 Visual Studio 이미지 서비스에 대해 imagemanifest 파일을 사용 하 고 c + +, c #, VB 또는 Visual Studio 확장용 vsct 파일에서 이미지 매니페스트의 값을 참조 하기 위한 래퍼 파일을 생성 하는 콘솔 응용 프로그램입니다. 이 도구는 Visual Studio 이미지 서비스에서 직접 이미지를 요청 하는 데 사용할 수 있는 래퍼 파일을 생성 하거나 코드가 자체 UI 및 렌더링을 처리 하지 않는 경우 Api를 통해 매니페스트 값을 전달 하는 데 사용할 수 있습니다.
@@ -31,12 +31,12 @@ Manifest to Code 도구는 Visual Studio 이미지 서비스에 대해 imagemani
 |-|-|-|
 |/manifest|코드 래퍼를 만들거나 업데이트 하는 데 사용할 이미지 매니페스트의 경로입니다.|필수|
 |/language|코드 래퍼를 생성할 언어입니다.<br /><br /> 유효한 값: CPP, c + +, CS, CSharp, c #, VB 또는 VSCT 값은 대/소문자를 구분 하지 않습니다.<br /><br /> VSCT 언어 옵션의 경우/monikerClass,/classAccess 및/namespace 옵션이 무시 됩니다.|필수|
-|/imageIdClass|도구에서 만든 imageIdClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyImageIds.\<Lang Ext>|선택 사항|
-|/monikerClass|도구에서 만든 monikerClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다. VSCT 언어에 대해서는 무시 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyMonikers.\<Lang Ext>|선택 사항|
-|/classAccess|ImageIdClass 및 monikerClass에 대 한 액세스 한정자입니다. 액세스 한정자가 지정 된 언어에 대해 유효한 지 확인 합니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다.<br /><br /> 기본값: 공용|선택 사항|
-|/namespace|코드 래퍼에 정의 된 네임 스페이스입니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다. '. ' 또는 ':: '는 선택한 언어 옵션에 관계 없이 올바른 네임 스페이스 구분 기호입니다.<br /><br /> 기본값: MyImages|선택 사항|
-|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|선택 사항|
-|/?|도움말 정보를 인쇄 합니다.|선택 사항|
+|/imageIdClass|도구에서 만든 imageIdClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyImageIds.\<Lang Ext>|Optional|
+|/monikerClass|도구에서 만든 monikerClass 및 연결 된 파일의 이름입니다. C + + 언어 옵션의 경우 .h 파일만 생성 됩니다. VSCT 언어에 대해서는 무시 됩니다.<br /><br /> 기본값: \<Manifest Path> \MyMonikers.\<Lang Ext>|Optional|
+|/classAccess|ImageIdClass 및 monikerClass에 대 한 액세스 한정자입니다. 액세스 한정자가 지정 된 언어에 대해 유효한 지 확인 합니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다.<br /><br /> 기본값: 공용|Optional|
+|/namespace|코드 래퍼에 정의 된 네임 스페이스입니다. VSCT 언어 옵션에 대해서는이 옵션이 무시 됩니다. '. ' 또는 ':: '는 선택한 언어 옵션에 관계 없이 올바른 네임 스페이스 구분 기호입니다.<br /><br /> 기본값: MyImages|Optional|
+|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|Optional|
+|/?|도움말 정보를 인쇄 합니다.|Optional|
 |/help|도움말 정보를 인쇄 합니다.|선택|
 
  **예제**

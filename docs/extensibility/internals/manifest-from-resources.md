@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839430"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일) 목록을 사용 하 고 Visual Studio 이미지 서비스에서 해당 이미지를 사용할 수 있도록 하는 imagemanifest 파일을 생성 하는 콘솔 응용 프로그램입니다. 또한이 도구를 사용 하 여 기존. imagemanifest에 이미지를 추가할 수 있습니다. 이 도구는 이미지에 대 한 높은 DPI 및 테마 지원 기능을 Visual Studio 확장에 추가 하는 데 유용 합니다. Imagemanifest 파일은 Visual Studio 확장 (.vsix)의 일부로 포함 되 고 배포 되어야 합니다.
@@ -31,15 +31,15 @@ Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일)
 |-|-|-|
 |/리소스|세미콜론으로 구분 된 이미지 또는 디렉터리 목록입니다. 이 목록에는 매니페스트에 포함 될 이미지의 전체 목록이 항상 포함 되어야 합니다. 일부 목록만 지정 된 경우에는 포함 되지 않은 항목이 손실 됩니다.<br /><br /> 지정 된 리소스 파일이 이미지 스트립 인 경우 각 하위 이미지를 매니페스트에 추가 하기 전에 도구에서 개별 이미지로 분할 합니다.<br /><br /> 이미지가 .png 파일인 경우 도구에서 이미지에 대 한 올바른 특성을 채울 수 있도록 다음과 같이 이름을 지정 하는 것이 \<Name> 좋습니다.. \<Width> \<Height> n.|필수|
 |/assembly|관리 되는 어셈블리의 이름 (확장명 포함 안 함) 또는 리소스를 호스팅하는 네이티브 어셈블리의 런타임 경로 (매니페스트의 런타임 위치에 상대적)입니다.|필수|
-|/manifest|Imagemanifest 파일에 지정할 이름입니다. 다른 위치에 파일을 만들기 위한 절대 경로 또는 상대 경로를 포함할 수도 있습니다. 기본 이름은 어셈블리 이름과 일치 합니다.<br /><br /> 기본값: \<Current Directory> \\<\> imagemanifest|선택 사항|
-|/guidName|생성 된 매니페스트의 모든 이미지에 대 한 GUID 기호에 지정할 이름입니다.<br /><br /> 기본값: AssetsGuid|선택 사항|
-|/rootPath|관리 되는 리소스 Uri를 만들기 전에 제거 해야 하는 루트 경로입니다. (이 플래그는 도구가 상대 URI 경로를 잘못 가져와 리소스를 로드 하지 못하는 경우에 도움을 주는 것입니다.)<br /><br /> 기본값: \<Current Directory>|선택 사항|
-|/recursive|이 플래그를 설정 하면/cvvval 인수에서 디렉터리를 재귀적으로 검색 하도록 도구에 지시 합니다. 이 플래그를 생략 하면 디렉터리에 대 한 최상위 수준 전용 검색이 발생 합니다.|선택 사항|
-|/isNative|어셈블리 인수가 네이티브 어셈블리의 경로인 경우이 플래그를 설정 합니다. 어셈블리 인수가 관리 되는 어셈블리의 이름인 경우이 플래그를 생략 합니다. 이 플래그에 대 한 자세한 내용은 참고 섹션을 참조 하세요.|선택 사항|
-|/newGuids|이 플래그를 설정 하면 기존 매니페스트에서 항목을 병합 하지 않고 이미지의 GUID 기호에 대 한 새 값을 만들도록 도구에 지시 합니다.|선택 사항|
-|/newIds|이 플래그를 설정 하면 기존 매니페스트의 값을 병합 하는 대신 모든 이미지에 대 한 새 ID 기호 값을 만들도록 도구에 지시 합니다.|선택 사항|
-|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|선택 사항|
-|/?|도움말 정보를 인쇄 합니다.|선택 사항|
+|/manifest|Imagemanifest 파일에 지정할 이름입니다. 다른 위치에 파일을 만들기 위한 절대 경로 또는 상대 경로를 포함할 수도 있습니다. 기본 이름은 어셈블리 이름과 일치 합니다.<br /><br /> 기본값: \<Current Directory> \\<\> imagemanifest|Optional|
+|/guidName|생성 된 매니페스트의 모든 이미지에 대 한 GUID 기호에 지정할 이름입니다.<br /><br /> 기본값: AssetsGuid|Optional|
+|/rootPath|관리 되는 리소스 Uri를 만들기 전에 제거 해야 하는 루트 경로입니다. (이 플래그는 도구가 상대 URI 경로를 잘못 가져와 리소스를 로드 하지 못하는 경우에 도움을 주는 것입니다.)<br /><br /> 기본값: \<Current Directory>|Optional|
+|/recursive|이 플래그를 설정 하면/cvvval 인수에서 디렉터리를 재귀적으로 검색 하도록 도구에 지시 합니다. 이 플래그를 생략 하면 디렉터리에 대 한 최상위 수준 전용 검색이 발생 합니다.|Optional|
+|/isNative|어셈블리 인수가 네이티브 어셈블리의 경로인 경우이 플래그를 설정 합니다. 어셈블리 인수가 관리 되는 어셈블리의 이름인 경우이 플래그를 생략 합니다. 이 플래그에 대 한 자세한 내용은 참고 섹션을 참조 하세요.|Optional|
+|/newGuids|이 플래그를 설정 하면 기존 매니페스트에서 항목을 병합 하지 않고 이미지의 GUID 기호에 대 한 새 값을 만들도록 도구에 지시 합니다.|Optional|
+|/newIds|이 플래그를 설정 하면 기존 매니페스트의 값을 병합 하는 대신 모든 이미지에 대 한 새 ID 기호 값을 만들도록 도구에 지시 합니다.|Optional|
+|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|Optional|
+|/?|도움말 정보를 인쇄 합니다.|Optional|
 |/help|도움말 정보를 인쇄 합니다.|선택|
 
  **예제**
