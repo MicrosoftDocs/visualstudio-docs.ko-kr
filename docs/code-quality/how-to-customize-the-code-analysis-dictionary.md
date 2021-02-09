@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860102"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 
 코드 분석에서는 기본 제공 사전을 사용 하 여 코드에서 코드의 식별자를 검사 하 여 철자, 문법적 사례 및 .NET 디자인 지침의 다른 명명 규칙에서 오류를 확인 합니다. 사용자 지정 사전 Xml 파일을 만들어 용어, 약어 및 머리글자어를 기본 제공 사전에 추가, 제거 또는 수정할 수 있습니다.
 
-예를 들어 코드에 **DoorKnokker** 이라는 클래스가 포함 되어 있다고 가정 합니다. 코드 분석에서는 두 단어 ( **문** 및 **knokker** )의 복합형로 이름을 식별 합니다. 그러면 **knokker** 의 철자가 잘못 되었다는 경고가 발생 합니다. 코드 분석에서 철자를 인식할 수 있도록 하려면 **knokker** 이라는 용어를 사용자 지정 사전에 추가 합니다.
+예를 들어 코드에 **DoorKnokker** 이라는 클래스가 포함 되어 있다고 가정 합니다. 코드 분석에서는 두 단어 ( **문** 및 **knokker**)의 복합형로 이름을 식별 합니다. 그러면 **knokker** 의 철자가 잘못 되었다는 경고가 발생 합니다. 코드 분석에서 철자를 인식할 수 있도록 하려면 **knokker** 이라는 용어를 사용자 지정 사전에 추가 합니다.
 
 ## <a name="to-create-a-custom-dictionary"></a>사용자 지정 사전을 만들려면
 

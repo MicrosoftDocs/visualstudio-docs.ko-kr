@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efeabd85bbf2753dd3f5e37a43e0918b7f95d7fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860219"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 도구 오류
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859075"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
 
@@ -56,7 +56,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자** 에서 기존 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -106,7 +106,7 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox> 
 
 데이터 바인딩을 지원하는 조회 컨트롤에 대해 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>를 구현할 수 있습니다.
 
-1. **LookupBox** 컨트롤을 코드 보기로 전환합니다. ( **보기** 메뉴에서 **코드** 를 선택합니다.)
+1. **LookupBox** 컨트롤을 코드 보기로 전환합니다. (**보기** 메뉴에서 **코드** 를 선택합니다.)
 
 2. `LookupBox`의 코드를 다음 코드로 바꿉니다.
 
@@ -149,7 +149,7 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox> 
 
 2. **데이터 원본** 창에서 **Customers** 노드를 확장합니다.
 
-3. **Orders** 노드( **Customers** 노드에서 **Fax** 열 아래의 노드)를 확장합니다.
+3. **Orders** 노드(**Customers** 노드에서 **Fax** 열 아래의 노드)를 확장합니다.
 
 4. **Orders** 노드에서 드롭다운 화살표를 클릭하고 컨트롤 목록에서 **Details** 를 선택합니다.
 
@@ -161,7 +161,7 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox> 
 
 8. **CustomerID** 열에서 드롭다운 화살표를 클릭하고 **LookupBox** 를 선택합니다.
 
-## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
+## <a name="add-controls-to-the-form"></a>양식에 컨트롤 추가
 
 **데이터 원본** 창에서 **Form1** 로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
@@ -179,6 +179,6 @@ Windows Form에서 데이터 바인딩된 컨트롤을 만들려면 **Orders** �
 
 - 일부 레코드를 탐색해 보고 `CompanyName`이 `LookupBox` 컨트롤에 표시되는지 확인합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

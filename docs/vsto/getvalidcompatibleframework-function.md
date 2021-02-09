@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96f536b3ab8e28b87a59a637fcf6dbaadeb21bf7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b089f954c59219461c8e267ee6e88e47015fc794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860622"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 함수
   이 API는 Office 인프라를 지원 하며 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.
@@ -33,7 +33,7 @@ HRESULT WINAPI GetValidCompatibleFramework(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*lpwszCompatibleFrameworksXML*|사용 하지 마세요.|
 |*pbstrValidFrameworkTag*|사용 하지 마세요.|

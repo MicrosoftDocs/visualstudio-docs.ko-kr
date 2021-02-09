@@ -9,15 +9,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: de23f3529cfcd321b0a7c3f9844ac69d96fed9c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860323"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -29,7 +29,7 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 
 이 페이지의 날짜를 기준으로 [.net 분석기](install-net-analyzers.md) 로 이식 된 FxCop 규칙의 목록에는 다음이 포함 됩니다.
 
-규칙 ID | 제목
+규칙 ID | Title
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | 정적 멤버를 제네릭 형식으로 선언하지 마세요.
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.

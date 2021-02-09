@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839099"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿과 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목의 새 인스턴스를 프로젝트에 추가 하는 경우 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "96915212"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 수행 하려면 먼저 [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)완료 하 여 CustomActionProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -257,7 +257,7 @@ ms.locfileid: "96915212"
 
 5. **프로젝트** 목록에서 **item템플릿 마법사** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-6. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
+6. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
 
 ## <a name="test-the-wizard"></a>마법사 테스트
  이제 마법사를 테스트할 준비가 되었습니다. 먼저 Visual Studio의 실험적 인스턴스에서 CustomActionProjectItem 솔루션의 디버깅을 시작 합니다. 그런 다음 Visual Studio의 실험적 인스턴스에서 SharePoint 프로젝트의 사용자 지정 작업 프로젝트 항목에 대해 마법사를 테스트 합니다. 마지막으로 SharePoint 프로젝트를 빌드하고 실행 하 여 사용자 지정 작업이 예상 대로 작동 하는지 확인 합니다.
@@ -294,7 +294,7 @@ ms.locfileid: "96915212"
 
 8. 메서드의 이전에 설정한 중단점에서 Visual Studio의 다른 인스턴스의 코드가 중지 되는지 확인 `RunStarted` 합니다.
 
-9. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그** 계속을 선택 하 여 프로젝트를 계속 디버깅  >  **Continue** 합니다.
+9. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그** 계속을 선택 하 여 프로젝트를 계속 디버깅  >  합니다.
 
      SharePoint 사용자 지정 마법사가 나타납니다.
 

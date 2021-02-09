@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860583"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 
@@ -41,11 +41,11 @@ ms.locfileid: "94348504"
 |[CA0058](ca0058.md)|참조 된 어셈블리를 로드할 수 없습니다.|
 |[CA0059](ca0059.md)|명령줄 전환 오류입니다.|
 |[CA0060](ca0060.md)|간접적으로 참조 되는 어셈블리를 로드할 수 없습니다.|
-|[CA0061](ca0061.md)|' *RuleId* ' 규칙을 찾을 수 없습니다.|
-|[CA0062](ca0062.md)|' *RuleSetName* ' 규칙 집합에서 참조 되는 ' *RuleId* ' 규칙을 찾을 수 없습니다.|
+|[CA0061](ca0061.md)|'*RuleId*' 규칙을 찾을 수 없습니다.|
+|[CA0062](ca0062.md)|'*RuleSetName*' 규칙 집합에서 참조 되는 '*RuleId*' 규칙을 찾을 수 없습니다.|
 |[CA0063](ca0063.md)|규칙 집합 파일 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다.|
 |[CA0064](ca0064.md)|지정 된 규칙 집합에 FxCop 규칙이 포함 되어 있지 않으므로 분석이 수행 되지 않았습니다.|
-|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: ' *TypeName* ' 형식에 이름이 ' *propertyfieldname* ' 인 속성과 필드가 모두 있습니다.|
+|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: '*TypeName*' 형식에 이름이 '*propertyfieldname*' 인 속성과 필드가 모두 있습니다.|
 |[CA0066](ca0066.md)|**/Targetframeworkversion** 에 제공 *된 ' n a s* e ' 값이 인식할 수 있는 버전이 아닙니다.|
 |[CA0067](ca0067.md)|디렉터리를 찾을 수 없습니다.|
 |[CA0068](ca0068.md)|*' AssemblyName '* 대상 어셈블리에 대 한 디버그 정보를 찾을 수 없습니다.|

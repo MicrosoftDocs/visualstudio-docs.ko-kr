@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859010"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 
@@ -96,10 +96,10 @@ TableAdapter에 대 한 쿼리 인 경우 다음 코드와 함께 제공 되지 
 
 1. **데이터 세트 디자이너** 에서 null 매개 변수 값을 허용 해야 하는 TableAdapter 쿼리를 선택 합니다.
 
-2. **속성** 창에서 **매개 변수** 를 선택 하 고 줄임표 ( **...** ) 단추를 클릭 하 여 **매개 변수 컬렉션 편집기** 를 엽니다.
+2. **속성** 창에서 **매개 변수** 를 선택 하 고 줄임표 (**...**) 단추를 클릭 하 여 **매개 변수 컬렉션 편집기** 를 엽니다.
 
 3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을로 설정 `true` 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

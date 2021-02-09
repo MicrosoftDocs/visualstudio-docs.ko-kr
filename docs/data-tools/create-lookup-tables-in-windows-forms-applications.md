@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 57190afba118468b4533ef1ecd30957eb25b08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859050"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 애플리케이션에서 조회 테이블 만들기
 
@@ -30,7 +30,7 @@ ms.locfileid: "94435197"
 
 ## <a name="to-databind-a-lookup-control"></a>조회 컨트롤을 바인딩하려면
 
-1. 프로젝트를 연 상태에서 **View** 다른 Windows **Data Sources**  >  **Other Windows**  >  **데이터 원본** 보기를 선택 하 여 데이터 소스 창을 엽니다.
+1. 프로젝트를 연 상태에서 다른 Windows   >    >  **데이터 원본** 보기를 선택 하 여 데이터 소스 창을 엽니다.
 
     > [!NOTE]
     > 조회 테이블을 사용 하려면 **데이터 소스** 창에서 두 개의 관련 테이블이 나 개체를 사용할 수 있어야 합니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
@@ -59,6 +59,6 @@ ms.locfileid: "94435197"
     |**ValueMember**|Visual Studio는 이 속성을 기본 키에 포함되는 첫 번째 열로 설정하거나 키가 정의되어 있지 않으면 테이블의 첫 번째 열로 설정합니다.<br /><br /> 조정 해야 하는 경우 표시 하려는 열이 포함 된 테이블의 기본 키로 설정 합니다.|
     |**SelectedValue**|Visual Studio는이 속성을 **데이터 소스** 창에서 삭제 된 원래 열로 설정 합니다.<br /><br /> 조정 해야 하는 경우 관련 테이블의 외래 키 열로 설정 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

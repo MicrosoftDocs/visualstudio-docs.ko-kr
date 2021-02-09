@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860557"
 ---
 # <a name="code-analysis-policy-errors"></a>코드 분석 정책 오류
 
@@ -31,7 +31,7 @@ ms.locfileid: "94349102"
 
 - 솔루션에 있는 모든 프로젝트에 대해 코드 분석이 빌드 시에 설정되지 않았습니다.
 
-- Visual studio에서 프로젝트에 대 한 로컬 규칙 집합은 프로젝트 규칙 집합 보다 **덜 제한적입니다** . 예를 들어 서버에서 **동작** 오류로 설정 된 규칙은 = **Error** **작업** 을 **경고** 로 설정 하거나 Visual studio에서 실행 중인 규칙 집합에서 **None** 으로 설정 합니다.
+- Visual studio에서 프로젝트에 대 한 로컬 규칙 집합은 프로젝트 규칙 집합 보다 **덜 제한적입니다** . 예를 들어 서버에서 **동작** 오류로 설정 된 규칙은 =  **작업** 을 **경고** 로 설정 하거나 Visual studio에서 실행 중인 규칙 집합에서 **None** 으로 설정 합니다.
 
 - Visual Studio에 지정 된 규칙 집합에 프로젝트의 코드 분석 체크 인 정책에 지정 된 규칙 집합에 지정 된 규칙이 모두 포함 되어 있지 않습니다.
 

@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860388"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>.NET에 대 한 소스 코드 분석 사용 안 함
 
@@ -49,7 +49,7 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 분석기에 대 한 소스 코드 분석을 해제 하려면 다음 MSBuild 속성 중 하나 이상을 [프로젝트 파일](../ide/solutions-and-projects-in-visual-studio.md#project-file)에 추가 합니다.
 
-| MSBuild 속성 | 설명 | 기본값 |
+| MSBuild 속성 | Description | 기본값 |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | 빌드 시 분석기가 실행 되는지 여부를 제어 합니다. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | 분석기가 디자인 타임에 코드를 실시간으로 분석할 지 여부를 제어 합니다. | `true` |
@@ -69,7 +69,7 @@ Visual Studio 2019 버전 16.3부터 코드 분석 속성 페이지에서 사용
 
 ## <a name="source-analysis"></a>소스 분석
 
-Visual Studio 2017에서 [소스 분석](roslyn-analyzers-overview.md) 을 해제할 수 없습니다. **오류 목록** 에서 분석기 오류를 지우려면 **Analyze**  >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않을 수 있습니다. 자세한 내용은 [위반 표시 안 함](use-roslyn-analyzers.md#suppress-violations)을 참조 하세요.
+Visual Studio 2017에서 [소스 분석](roslyn-analyzers-overview.md) 을 해제할 수 없습니다. **오류 목록** 에서 분석기 오류를 지우려면   >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않을 수 있습니다. 자세한 내용은 [위반 표시 안 함](use-roslyn-analyzers.md#suppress-violations)을 참조 하세요.
 
 Visual Studio 2019 버전 16.3부터 소스 코드 분석을 해제 하거나 요청 시 실행할 수 있습니다. Visual Studio 2019로 업그레이드 하는 것이 좋습니다.
 

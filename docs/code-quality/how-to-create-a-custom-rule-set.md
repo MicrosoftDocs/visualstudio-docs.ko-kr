@@ -10,15 +10,15 @@ helpviewer_keywords:
 - rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860154"
 ---
 # <a name="customize-a-rule-set"></a>규칙 집합 사용자 지정
 
@@ -100,7 +100,7 @@ ms.locfileid: "97667886"
 
 ## <a name="rule-precedence"></a>규칙 우선 순위
 
-- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들면 다음과 같습니다.
+- 심각도가 다른 규칙 집합에서 같은 규칙이 두 번 이상 나열 되는 경우 컴파일러에서 오류를 생성 합니다. 예를 들어:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -115,7 +115,7 @@ ms.locfileid: "97667886"
 
    **CA0063: 규칙 집합 파일 ' your \[ ]. 규칙 집합 또는 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다. 파일이 규칙 집합 스키마를 따르지 않습니다.**
 
-- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들면 다음과 같습니다.
+- 규칙 집합에 **include** 태그를 사용 하 여 자식 규칙 집합이 포함 되어 있고 자식 및 부모 규칙에서 둘 다 동일한 규칙을 나열 하지만 심각도가 다른 경우 부모 규칙 집합의 심각도가 우선적으로 적용 됩니다. 예를 들어:
 
    ```xml
    <!-- Parent rule set -->
