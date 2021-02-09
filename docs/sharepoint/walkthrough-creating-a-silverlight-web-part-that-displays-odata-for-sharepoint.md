@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847832"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
   SharePoint 2010는 OData를 통해 목록 데이터를 노출 합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData .svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스팅하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램은 ListData .svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint FOUNDATION REST 인터페이스](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 및 [Open Data Protocol](https://www.odata.org/)을 참조 하세요.
@@ -86,7 +86,7 @@ ms.locfileid: "96914792"
 
 5. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
-6. SharePoint 서비스를 기반으로 프로젝트에 새 데이터 원본을 추가 합니다. 이렇게 하려면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다.
+6. SharePoint 서비스를 기반으로 프로젝트에 새 데이터 원본을 추가 합니다. 이렇게 하려면 메뉴 모음에서   >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다.
 
      **데이터 소스** 창에는 사용 가능한 모든 SharePoint 목록 데이터 (예: 작업, 알림 및 일정)가 표시 됩니다.
 
@@ -96,7 +96,7 @@ ms.locfileid: "96914792"
 
 8. Silverlight 페이지에 맞게 표 형태 컨트롤의 크기를 조정 합니다.
 
-9. Mainpage 코드 파일 (Visual c #의 경우 또는 Visual Basic *mainpage* )에서 다음 네임 스페이스 참조를 추가 합니다. *MainPage.xaml.vb*
+9. Mainpage 코드 파일 (Visual c #의 경우 또는 Visual Basic *mainpage* )에서 다음 네임 스페이스 참조를 추가 합니다. 
 
     ```vb
     ' Add the following three Imports statements.

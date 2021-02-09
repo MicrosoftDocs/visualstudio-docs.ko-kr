@@ -12,15 +12,15 @@ helpviewer_keywords:
 - postActionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 505b55b7513446a158adac66e7e0e38f401f0808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847689"
 ---
 # <a name="ltpostactiondatagt-element-office-development"></a>&lt;postActionData &gt; 요소 (Office 개발)
   `postActionData` 네임스페이스의 `vstav3` 요소는 Office 솔루션이 설치된 후 실행되는 배포 후 작업과 관련된 데이터를 지정합니다.

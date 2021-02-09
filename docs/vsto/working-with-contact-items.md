@@ -14,20 +14,20 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b336d00e2cd3a9d9eb6484564c3b3bd0a9b011dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847572"
 ---
 # <a name="work-with-contact-items"></a>연락처 항목 작업
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> 클래스에는 연락처가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |지정한 문자열을 포함하는 성을 가진 모든 연락처를 검색합니다.|[방법: 프로그래밍 방식으로 Outlook 연락처 액세스](../vsto/how-to-programmatically-access-outlook-contacts.md)|
 |이름과 성으로 연락처를 검색합니다.|[방법: 프로그래밍 방식으로 특정 연락처 검색](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|

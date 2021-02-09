@@ -25,15 +25,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 91f262fb88d95be586869b22559e171f4a01ed16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847637"
 ---
 # <a name="word-solutions"></a>Word 솔루션
   Visual Studio에서는 Microsoft Office Word용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Word를 자동화하고, Word 기능을 확장한 다음 Word UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 개요 &#40;vsto&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.

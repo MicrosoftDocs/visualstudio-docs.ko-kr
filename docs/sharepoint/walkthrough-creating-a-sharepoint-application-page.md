@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def9407d309e5f673d0a7a2cdc3710fae557be50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847845"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>연습: SharePoint 애플리케이션 페이지 만들기
 
@@ -39,7 +39,7 @@ ms.locfileid: "96914883"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
 
 - 지원 되는 버전의 Windows 및 SharePoint
 
@@ -75,7 +75,7 @@ ms.locfileid: "96914883"
 
 응용 프로그램 페이지 항목을 사용 하면 디자이너를 사용 하 여 응용 프로그램 페이지에 ASP.NET 컨트롤을 추가할 수 있습니다. 이 디자이너는 Visual Web Developer에서 사용 되는 것과 같은 디자이너입니다. 디자이너의 **소스** 뷰에 레이블, 라디오 단추 목록 및 테이블을 추가한 다음 표준 ASP.NET 페이지를 디자인할 때와 동일한 방법으로 속성을 설정 합니다.
 
-1. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
+1. 메뉴 모음에서   >  **도구 상자** 보기를 선택 합니다.
 
 2. **도구 상자** 의 표준 노드에서 다음 단계 중 하나를 수행 합니다.
 

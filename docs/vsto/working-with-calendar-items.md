@@ -17,20 +17,20 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], calendars
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847585"
 ---
 # <a name="work-with-calendar-items"></a>일정 항목 작업
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 클래스에는 달력 항목이 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |약속을 만들고 받는 사람을 추가합니다.|[방법: 프로그래밍 방식으로 약속 만들기](../vsto/how-to-programmatically-create-appointments.md)|
 |되풀이하는 약속의 인스턴스를 삭제합니다.|[방법: 프로그래밍 방식으로 약속 삭제](../vsto/how-to-programmatically-delete-appointments.md)|

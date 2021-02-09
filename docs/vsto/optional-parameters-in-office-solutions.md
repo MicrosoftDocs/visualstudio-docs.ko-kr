@@ -17,15 +17,15 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847702"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 솔루션의 선택적 매개 변수
   Microsoft Office 애플리케이션의 개체 모델에 있는 메서드 중 상당수가 선택적 매개 변수를 허용합니다. Visual Studio에서 Visual Basic을 사용하여 Office 솔루션을 개발하는 경우 없는 매개 변수마다 기본값이 자동으로 사용되기 때문에 선택적 매개 변수의 값을 전달할 필요가 없습니다. 대부분의 경우 Visual C# 프로젝트에서도 선택적 매개 변수를 생략할 수 있습니다. 그러나  `ThisDocument` 문서 수준 Word 프로젝트에서는 클래스의 선택적 ref 매개 변수를 생략할 수 없습니다.
