@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53cd7d4b5302652fc371f27b76d7e789a6942640
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8a19ec1d5c615e31e62961707ad8f76f1386eb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880660"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 요소(Visual Studio 템플릿)
 
@@ -46,13 +46,13 @@ ms.locfileid: "94903951"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|템플릿에서 프로젝트를 만들 때 솔루션을 빌드 할지 여부를 지정 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 다중 프로젝트 템플릿의 구성과 내용을 지정합니다.|
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 프로젝트에 추가할 파일 또는 디렉터리를 지정 합니다.|
@@ -62,14 +62,14 @@ ms.locfileid: "94903951"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함 합니다.|
 
 ## <a name="remarks"></a>설명
  `TemplateContent` 는 필수 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```xml

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882442"
 ---
 # <a name="outlook-solutions"></a>Outlook 솔루션
   Visual Studio에서는 Microsoft Office Outlook용 VSTO 추가 기능을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. VSTO 추가 기능을 사용하여 Outlook을 자동화하거나, Outlook 기능을 확장하거나, Outlook UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. VSTO 추가 기능에 대한 자세한 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.

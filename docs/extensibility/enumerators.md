@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 28de569ea19feff0a81a81d072575dfb89610e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880751"
 ---
 # <a name="enumerators"></a>Enumerators
 이 섹션에는 소스 제어 플러그 인에서 알고 있어야 하는 소스 제어 플러그 인 API의 열거자 데이터 형식이 나열 되어 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [명령 코드](../extensibility/command-code-enumerator.md) [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 및 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 함수에 대 한 옵션을 열거 합니다.
 
 - [메시지](../extensibility/message-enumerator.md) 인쇄 콜백과 [Lptextoutproc](../extensibility/lptextoutproc.md)에 사용 되는 플래그를 열거 합니다.

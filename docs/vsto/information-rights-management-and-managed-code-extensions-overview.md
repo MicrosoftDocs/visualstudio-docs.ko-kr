@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8fc6a37a327c26ec46777575c3976c227e2d1de9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881492"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>정보 권한 관리 및 관리 코드 확장 개요
   Word 및 Microsoft Office Excel Microsoft Office는 권한이 없는 사용자가 중요 한 정보를 보거나 변경할 수 없도록 하는 기능인 IRM (정보 Rights Management)을 제공 합니다. 정보 Rights Management 작동 방법에 대 한 자세한 내용은 특정 Office 응용 프로그램의 도움말을 참조 하세요.

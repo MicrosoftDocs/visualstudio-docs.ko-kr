@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4244fb83d4792786baeb99693dc0fee04624d37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882728"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>방법: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가
   모든 SharePoint 프로젝트에 바로 가기 메뉴 항목을 추가할 수 있습니다. 메뉴 항목은 사용자가 **솔루션 탐색기** 의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하면 나타납니다.

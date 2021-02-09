@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880777"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 디버그 문서에 대 한 체크섬을 나타내며 구성 요소 사이에 체크섬을 전달할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDocumentChecksum2 : IUnknown
@@ -32,7 +32,7 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentChecksum2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|사용할 최대 바이트 수를 지정 하 여 문서 체크섬 및 알고리즘 식별자를 검색 합니다.|
 

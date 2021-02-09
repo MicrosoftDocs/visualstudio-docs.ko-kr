@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 959d909d0c777110905aff3b11c8c29d27d628dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880764"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 이 문서 컨텍스트를 지정 된 문서 컨텍스트의 배열과 비교 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80731886"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    DOCCONTEXT_COMPARE       compare,
    IDebugDocumentContext2** rgpDocContextSet,
    DWORD                    dwDocContextSetLen,
@@ -37,7 +37,7 @@ HRESULT Compare( 
 ```
 
 ```csharp
-int Compare( 
+int Compare( 
    enum_ DOCCONTEXT_COMPARE compare,
    IDebugDocumentContext2[] rgpDocContextSet,
    uint                     dwDocContextSetLen,
@@ -58,12 +58,12 @@ int Compare( 
 `pdwDocContext`\
 제한이 `rgpDocContextSet` 비교를 만족 하는 첫 번째 문서 컨텍스트의 배열로 인덱스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  `S_OK`일치 하는 항목이 있으면를 반환 합니다. 일치 하는 `S_FALSE` 항목이 없으면를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
  배열에 전달 된 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 개체는에서 호출 되는 개체를 구현 하는 동일한 디버그 엔진에 의해 구현 되어야 합니다. `IDebugDocumentContext2` 그렇지 않으면 비교가 유효 하지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)

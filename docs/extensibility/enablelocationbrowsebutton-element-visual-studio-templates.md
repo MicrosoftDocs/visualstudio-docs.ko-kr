@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d909e70f38800bdbeb873ad3fd9bff1d55132825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883430"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 요소 (Visual Studio 템플릿)
 사용자가 새 프로젝트가 저장 되는 기본 디렉터리를 쉽게 수정할 수 있도록 **새 프로젝트** 대화 상자에서 **찾아보기** 단추를 사용할 수 있는지 여부를 지정 합니다.

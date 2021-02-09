@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881037"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 이 인터페이스는 바인딩된 중단점을 설명 하는 정보를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBreakpointResolution2 : IUnknown
@@ -37,7 +37,7 @@ IDebugBreakpointResolution2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointResolution2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|이 해상도로 표시 되는 중단점의 형식을 가져옵니다.|
 |[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|이 중단점을 설명 하는 중단점 확인 정보를 가져옵니다.|
@@ -49,5 +49,5 @@ IDebugBreakpointResolution2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

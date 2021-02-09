@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fced03b190ab46885c5d786b8374a05c3bd043b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883300"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 요소 (Visual Studio 템플릿)
 템플릿에 대 한 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 아이콘 역할을 하는 이미지 파일의 경로와 파일 이름을 지정 합니다.
@@ -45,7 +45,7 @@ ms.locfileid: "94672694"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 ID를 지정하는 GUID입니다.|
 |`ID`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 리소스 ID를 지정합니다.|

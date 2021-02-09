@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883274"
 ---
 # <a name="icon-element"></a>Icon 요소
 Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성은 비트맵 스트립에서 슬롯을 선택 합니다. 이 요소는 선택적입니다. 이 요소에 포함 되지 않은 경우 GuidOfficeIcon의 값 **: msotcidNoIcon** 이 포함 됩니다.
@@ -34,20 +34,20 @@ Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성�
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소. 정의 된 비트맵의 guid입니다.|
-|id|필수 요소. 비트맵 스트립에서 슬롯을 선택 합니다.|
+|guid|필수 사항입니다. 정의 된 비트맵의 guid입니다.|
+|id|필수 사항입니다. 비트맵 스트립에서 슬롯을 선택 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Buttons 요소](../extensibility/buttons-element.md)||
 

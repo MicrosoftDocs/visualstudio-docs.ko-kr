@@ -17,15 +17,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882390"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>연습: VBA에서 VSTO 추가 기능의 코드 호출
   이 연습에서는 VSTO 추가 기능의 개체를 VBA(Visual Basic for Applications) 및 COM VSTO 추가 기능을 비롯한 다른 Microsoft Office 솔루션에 노출하는 방법을 보여 줍니다.

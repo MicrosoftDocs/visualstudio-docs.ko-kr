@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880322"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio에서 XAML 핫 다시 로드를 사용하여 XAML 코드 작성 및 실행 중인 XAML 코드 디버그
 
@@ -47,15 +47,15 @@ XAML 핫 다시 로드는 다음과 같은 시나리오에서 특히 유용 합�
 
 다음은 XAML 핫 다시 로드의 알려진 제한 사항입니다. 실행 되는 제한 사항을 해결 하려면 디버거를 중지 한 후 작업을 완료 합니다.
 
-|제한 사항|WPF|UWP|메모|
+|제한 사항|WPF|UWP|참고|
 |-|-|-|-|
-|앱이 실행 되는 동안 컨트롤에 이벤트 연결|지원되지 않음|지원 안 함|오류: *이벤트 실패 확인* 을 참조 하세요. WPF에서는 기존 이벤트 처리기를 참조할 수 있습니다. UWP 앱에서 기존 이벤트 처리기를 참조 하는 것은 지원 되지 않습니다.|
-|리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원됨|예제:를 `SolidColorBrush` 으로 사용할 리소스 사전에 추가 `StaticResource` 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 속성을 변경 `Source` 합니다.|
-|앱이 실행 되는 동안 프로젝트에 새 컨트롤, 클래스, 창 또는 기타 파일 추가|지원되지 않음|지원되지 않음|없음|
-|NuGet 패키지 관리 (패키지 추가/제거/업데이트)|지원되지 않음|지원되지 않음|없음|
+|앱이 실행 되는 동안 컨트롤에 이벤트 연결|지원되지 않음|지원되지 않음|오류: *이벤트 실패 확인* 을 참조 하세요. WPF에서는 기존 이벤트 처리기를 참조할 수 있습니다. UWP 앱에서 기존 이벤트 처리기를 참조 하는 것은 지원 되지 않습니다.|
+|리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원 여부|예제:를 `SolidColorBrush` 으로 사용할 리소스 사전에 추가 `StaticResource` 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 속성을 변경 `Source` 합니다.|
+|앱이 실행 되는 동안 프로젝트에 새 컨트롤, 클래스, 창 또는 기타 파일 추가|지원되지 않음|지원되지 않음|None|
+|NuGet 패키지 관리 (패키지 추가/제거/업데이트)|지원되지 않음|지원되지 않음|None|
 |{X:Bind} 태그 확장을 사용 하는 데이터 바인딩 변경|해당 없음|Visual Studio 2019부터 지원 됨|이 경우 Windows 10 버전 1809 (build 10.0.17763)이 필요 합니다. Visual Studio 2017 또는 이전 버전에서는 지원 되지 않습니다.|
-|X:Uid 지시문 변경은 지원 되지 않습니다.|해당 없음|지원되지 않음|없음|
-|다중 프로세스 | 지원됨 | 지원됨 | Visual Studio 2019 [버전 16.6](/visualstudio/releases/2019/release-notes-v16.6) 이상에서 지원 됨 |
+|X:Uid 지시문 변경은 지원 되지 않습니다.|해당 없음|지원되지 않음|None|
+|다중 프로세스 | 지원 여부 | 지원 여부 | Visual Studio 2019 [버전 16.6](/visualstudio/releases/2019/release-notes-v16.6) 이상에서 지원 됨 |
 
 ## <a name="error-messages"></a>오류 메시지
 

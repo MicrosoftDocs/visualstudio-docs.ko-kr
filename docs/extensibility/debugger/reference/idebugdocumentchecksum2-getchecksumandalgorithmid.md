@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d74257e9f45e54e17d824ce32c353d1f57132462
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880816"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 사용할 최대 바이트 수를 지정 하 여 문서 체크섬 및 알고리즘 식별자를 검색 합니다.
@@ -57,10 +57,10 @@ public int GetChecksumAndAlgorithmId(
 `pcNumBytes`\
 제한이 체크섬에 사용 되는 실제 바이트 수입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는이 메서드를 사용 하 여 문서에 대 한 체크섬 및 알고리즘을 가져옵니다.
 
 ```cpp
@@ -126,5 +126,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

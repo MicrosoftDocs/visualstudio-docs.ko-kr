@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882286"
 ---
 # <a name="capability-flags"></a>기능 플래그
 SCC_CAP_ *xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는 데 사용 되는 비트 플래그입니다. SCC_EXCAP_ *xxx* 플래그는 확장 기능을 나타내고 정수 값을 확인 하는 증분 플래그입니다.

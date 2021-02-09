@@ -19,15 +19,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 912385950721de1d1e0b98c1b6582552210aa04a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e20251d695f36940fec3831d3fa78fd995a058e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882494"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>확장 된 개체를 사용 하 여 Excel 자동화
   Visual Studio에서 Excel 솔루션을 개발하는 경우 솔루션에서 *호스트 항목* 및 *호스트 컨트롤* 을 사용할 수 있습니다. Excel 개체 모델, 즉 Excel용 주 interop 어셈블리가 노출하는 개체 모델에서 일반적으로 사용되는 특정 개체(예: <xref:Microsoft.Office.Interop.Excel.Worksheet> 및 <xref:Microsoft.Office.Interop.Excel.Range> )를 확장하는 개체입니다. 확장된 개체는 기반이 되는 Excel 개체처럼 동작하지만 개체에 새 이벤트 및 데이터 바인딩 기능 등을 더 추가합니다.

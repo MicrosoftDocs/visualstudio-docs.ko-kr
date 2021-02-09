@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 588b2af3672851bf7f452287d8383aa2d319347d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881583"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션에 대 한 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에는 SharePoint 응용 프로그램의 보안을 강화 하는 데 도움이 되는 다음 기능이 포함 되어 있습니다.
@@ -85,6 +85,6 @@ ms.locfileid: "95970450"
 
 - [보안된 ASP.NET 응용 프로그램 빌드: 인증, 권한 부여 및 보안 통신](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882689"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>방법: 특정 Finder 메서드 추가
   *특정 Finder* 메서드를 만들어 단일 엔터티 인스턴스를 반환할 수 있습니다. 사용자가 비즈니스 데이터 웹 파트 또는 외부 목록에서 엔터티를 선택 하면 BDC (비즈니스 데이터 연결) 서비스가 특정 Finder 메서드를 실행 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.

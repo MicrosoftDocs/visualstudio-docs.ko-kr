@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 98f3dcfa73387f2b90ed829df198d3e9f0ccb2ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880057"
 ---
 # <a name="hierarchies-and-selection"></a>계층 및 선택
 를 사용자 지정할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 가 프로젝트와 같은 계층 구조 및 선택 컨텍스트를 사용 하 여 사용자에 게 표시 되는 항목을 결정 하는 방법을 이해 해야 합니다. 이 섹션에서는 계층 및 선택의 개념에 대해 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
  프로젝트 계층 구조와 계층의 일반적인 개념을 설명 합니다.

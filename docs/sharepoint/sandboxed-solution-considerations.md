@@ -17,15 +17,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23424c1681a9967d9d50df47f9e67ec895a308a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881609"
 ---
 # <a name="sandboxed-solution-considerations"></a>샌드박스 솔루션 고려 사항
   *샌드박스 솔루션* 은 Microsoft SharePoint 2010의 기능으로, 사이트 모음 사용자가 고유한 사용자 지정 코드 솔루션을 업로드할 수 있습니다. 일반적인 샌드박스가 적용 된 솔루션은 사용자가 자신의 웹 파트을 업로드 하는 것입니다.
@@ -139,6 +139,6 @@ ms.locfileid: "95970462"
 
 - 코드를 사용 하는 워크플로
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [샌드박스가 적용 된 솔루션과 팜 솔루션의 차이점](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

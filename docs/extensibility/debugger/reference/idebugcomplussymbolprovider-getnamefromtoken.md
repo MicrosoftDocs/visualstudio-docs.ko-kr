@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4e3a99e35bd16f9986d1c4e9c59578a39cda1f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880855"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 지정 된 토큰에 연결 된 메타 데이터 개체의 이름을 반환 합니다.
@@ -52,10 +52,10 @@ int GetNameFromToken (
 `pbstrName`\
 제한이 토큰에 해당 하는 이름입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -122,5 +122,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

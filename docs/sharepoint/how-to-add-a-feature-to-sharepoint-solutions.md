@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b31c650beff880340090b7548a18962fa276e36
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b8418b63b2397da109a11f287bd21321fd2468ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879711"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>방법: SharePoint 솔루션에 기능 추가
   SharePoint 솔루션을 만들 때 하나의 기능과 하나의 패키지가 솔루션에 추가 됩니다. 기능 항목을 더 추가 하 여 다양 한 유형의 SharePoint 파일을 구성할 수 있습니다.

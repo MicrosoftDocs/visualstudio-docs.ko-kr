@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 39ac9d50d0f75f595568c66b02bda1c5ed46a3d6
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 42784e27c26d729a87d5363ca41b6d2c70a364d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882507"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>확장 된 개체를 사용 하 여 Word 자동화
   Visual Studio에서 Word 솔루션을 개발하는 경우 솔루션에서 *호스트 항목* 및 *호스트 컨트롤* 을 사용할 수 있습니다. Word 개체 모델, 즉 Word용 주 interop 어셈블리가 노출하는 개체 모델에서 일반적으로 사용되는 특정 개체(예: <xref:Microsoft.Office.Interop.Word.Document> 및 <xref:Microsoft.Office.Interop.Word.ContentControl> )를 확장하는 개체입니다. 확장된 개체는 기반이 되는 Word 개체처럼 동작하지만 개체에 이벤트 및 데이터 바인딩 기능을 더 추가합니다.

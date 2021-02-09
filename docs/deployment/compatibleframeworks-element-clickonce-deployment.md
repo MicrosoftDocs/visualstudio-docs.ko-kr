@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881180"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks &gt; 요소 (ClickOnce 배포)
 이 애플리케이션이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다.
 
 > [!NOTE]
-> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)를 사용 하는 인증서로 이미 서명 된 응용 프로그램 매니페스트를 저장 하는 경우MageUI.exe는 요소를 지원 하지 않습니다. 대신 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 사용 해야 합니다.
+> [](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)를 사용 하는 인증서로 이미 서명 된 응용 프로그램 매니페스트를 저장 하는 경우MageUI.exe는 요소를 지원 하지 않습니다. 대신 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 사용 해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,14 +47,14 @@ ms.locfileid: "94383068"
 
  다음 표에서는 요소가 지 원하는 특성을 보여 줍니다 `compatibleFrameworks` .
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
-|`S` `upportUrl`|(선택 사항) 기본 호환 .NET Framework 버전을 다운로드할 수 있는 URL을 지정 합니다.|
+|`S` `upportUrl`|선택 사항입니다. 기본 호환 .NET Framework 버전을 다운로드할 수 있는 URL을 지정 합니다.|
 
 ## <a name="framework"></a>프레임워크
  필수 사항입니다. 다음 표에서는 요소가 지 원하는 특성을 보여 줍니다 `framework` .
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |`targetVersion`|필수 사항입니다. 대상 .NET Framework의 버전 번호를 지정 합니다.|
 |`profile`|필수 사항입니다. 대상 .NET Framework의 프로필을 지정 합니다.|
@@ -74,5 +74,5 @@ ms.locfileid: "94383068"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

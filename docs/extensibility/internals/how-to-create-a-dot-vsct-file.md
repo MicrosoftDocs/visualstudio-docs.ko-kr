@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480371"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879984"
 ---
 # <a name="how-to-create-a-vsct-file"></a>방법: vsct 파일 만들기
 
@@ -71,7 +71,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
 5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]명령 프롬프트 창에서 디렉터리로 이동 합니다.
 
-6. 형식
+6. Type
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -98,7 +98,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
 3. Visual Studio 명령 프롬프트에서 *. cto* 및 *. .ctsym* 파일이 포함 된 디렉터리로 이동 합니다.
 
-4. 형식
+4. Type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym

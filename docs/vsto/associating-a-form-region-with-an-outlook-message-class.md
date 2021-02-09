@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882546"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 메시지 클래스에 양식 영역 연결
   양식 영역을 각 항목의 메시지 클래스와 연결 하 여 양식 영역을 표시 하는 Microsoft Office Outlook 항목을 지정할 수 있습니다. 예를 들어 메일 항목의 아래쪽에 양식 영역을 추가 하려는 경우 양식 영역을 메시지 클래스와 연결할 수 있습니다 `IPM.Note` .

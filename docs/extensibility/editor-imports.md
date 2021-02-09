@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883482"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 확장을 제공 하는 많은 편집기 서비스, 팩터리 및 broker를 핵심 편집기에 대 한 다양 한 종류의 액세스로 가져올 수 있습니다. 예를 들어를 가져와서 지정 된 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 콘텐츠 형식에 대해를 제공할 수 있습니다. 이 탐색기를 사용 하면 텍스트 버퍼에서 다양 한 검색을 수행할 수 있습니다.

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 33ca8abf7a35bafd04c38fbb4a681245f2701f8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879724"
 ---
 # <a name="how-to-add-a-deleter-method"></a>방법: Deleter 메서드 추가
   모델에 Deleter 메서드를 추가 하 여 최종 사용자가 SharePoint 사이트의 외부 목록에서 데이터 레코드를 삭제할 수 있도록 설정할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
@@ -35,7 +35,7 @@ ms.locfileid: "96915442"
 
 1. **BDC 디자이너** 에서 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. 이 창에 대 한 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 

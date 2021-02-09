@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881076"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 중단점 확인 위치의 구조를 지정 합니다.
@@ -48,7 +48,7 @@ public struct BP_RESOLUTION_LOCATION {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `bpType`\
 공용 구조체 또는 멤버를 해석 하는 방법을 지정 하는 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형의 값입니다 `bpResLocation` `unionmemberX` .
 
@@ -83,7 +83,7 @@ public struct BP_RESOLUTION_LOCATION {
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
 |`BPT_DATA`|`string` (데이터 식)|`string` (함수 이름)|`string` (이미지 이름)|`enum_BP_RES_DATA_FLAGS`|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 `BP_RESOLUTION_LOCATION` c #의 구조를 해석 하는 방법을 보여 줍니다.
 
 ```csharp
@@ -120,8 +120,8 @@ namespace MyPackage
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

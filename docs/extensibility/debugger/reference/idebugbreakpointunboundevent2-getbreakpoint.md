@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6db69becfb16ebabbab782485e170bc761fd4577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfc913ed80244c0f6cb323dc37a5b0faa8716b1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881024"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 바인딩 해제 된 중단점을 가져옵니다.
@@ -43,10 +43,10 @@ int GetBreakpoint(
 `ppBP`\
 제한이 바인딩 해제 된 중단점을 나타내는 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) 인터페이스를 노출 하는 **CBreakpointUnboundDebugEventBase** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -76,6 +76,6 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

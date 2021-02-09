@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882663"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>연습: 워크플로에 애플리케이션 페이지 추가
   이 연습에서는 워크플로에서 파생 된 데이터를 표시 하는 응용 프로그램 페이지를 워크플로 프로젝트에 추가 하는 방법을 보여 줍니다. [연습: 연결 및 초기화 양식으로 워크플로 만들기](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)항목에 설명 된 프로젝트를 기반으로 합니다.
@@ -103,7 +103,7 @@ ms.locfileid: "96915663"
 
 #### <a name="to-code-the-application-page"></a>응용 프로그램 페이지를 코딩 하려면
 
-1. **ApplicationPage1** 노드를 선택 하 고 메뉴 모음에서 코드 **보기** 를 선택  >  **Code** 하 여 응용 프로그램 페이지 뒤에 코드를 표시 합니다.
+1. **ApplicationPage1** 노드를 선택 하 고 메뉴 모음에서 코드 **보기** 를 선택  >   하 여 응용 프로그램 페이지 뒤에 코드를 표시 합니다.
 
 2. 클래스의 맨 위에 있는 **using** 또는 **Import** 문 (프로그래밍 언어에 따라 다름)을 다음과 같이 바꿉니다.
 

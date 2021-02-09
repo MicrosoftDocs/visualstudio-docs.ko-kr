@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882949"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변환 프로세스
 텍스트 템플릿 변환 프로세스는 텍스트 템플릿 파일을 입력으로 사용 하 고 새 텍스트 파일을 출력으로 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 c # 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.
@@ -27,7 +27,7 @@ ms.locfileid: "97362654"
 
 ## <a name="components"></a>구성 요소
 
-|구성 요소|설명|사용자 지정 가능 (예/아니요)|
+|구성 요소|Description|사용자 지정 가능 (예/아니요)|
 |-|-|-|
 |엔진|엔진 구성 요소가 텍스트 템플릿 변환 프로세스를 제어 합니다.|아니요.|
 |호스트|호스트는 엔진과 사용자 환경 간의 인터페이스입니다. Visual Studio는 텍스트 변환 프로세스의 호스트입니다.|예. 사용자 지정 호스트를 작성할 수 있습니다.|

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879685"
 ---
 # <a name="how-to-add-a-finder-method"></a>방법: Finder 메서드 추가
   BDC (비즈니스 데이터 연결) 서비스를 사용 하 여 웹 파트 또는 목록의 엔터티 목록을 표시 하려면 *Finder* 메서드를 만들어야 합니다. Finder 메서드는 엔터티 인스턴스의 컬렉션을 반환 하는 특수 메서드입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -35,7 +35,7 @@ ms.locfileid: "96915091"
 
     자세한 내용은 [방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)를 참조 하세요.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. **Bdc 메서드 세부** 정보 창에 대 한 자세한 내용은 [bdc 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 

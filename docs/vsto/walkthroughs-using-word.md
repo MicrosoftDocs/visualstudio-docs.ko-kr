@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 35d101a1d8db82e366ec706b3d10fdcac0cdcbaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881414"
 ---
 # <a name="walkthroughs-using-word"></a>Word를 사용한 연습
   다음 연습에서는 문서 수준 사용자 지정 및 VSTO 추가 기능을 사용하여 Microsoft Office Word를 자동화하고 UI(사용자 인터페이스)를 사용자 지정할 수 있는 방법을 보여 줍니다.

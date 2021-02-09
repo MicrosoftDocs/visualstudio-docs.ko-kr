@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881336"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
 
@@ -49,6 +49,6 @@ XAML 디자이너의 바로 가기 키를 사용하면 마우스 단추를 여�
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금|**Ctrl** + **L**|
 |포커스가 문서 개요 창에 있을 때 아트보드 개체 잠금 해제|**Shift** + **Ctrl** + **L**|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

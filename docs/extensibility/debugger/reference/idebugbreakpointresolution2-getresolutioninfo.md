@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881050"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 이 중단점을 설명 하는 중단점 확인 정보를 가져옵니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80734774"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
    BPRESI_FIELDS       dwFields,
    BP_RESOLUTION_INFO* pBPResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
    enum BPRESI_FIELDS   dwFields,
    BP_RESOLUTION_INFO[] pBPResolutionInfo
 );
@@ -48,10 +48,10 @@ int GetResolutionInfo( 
 `pBPResolutionInfo`\
 제한이 이 중단점에 대 한 정보로 채울 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 구조체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `CDebugBreakpointResolution` [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 합니다.
 
 ```
@@ -141,7 +141,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

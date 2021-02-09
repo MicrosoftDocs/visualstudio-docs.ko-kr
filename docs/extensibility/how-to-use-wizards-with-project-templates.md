@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883313"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>방법: 프로젝트 템플릿에 마법사 사용
 

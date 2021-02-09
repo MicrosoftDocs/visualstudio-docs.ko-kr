@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c3a6e3c7460beb95ad410cead8bd644c37489e16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883235"
 ---
 # <a name="ide-constants"></a>IDE 상수
 
@@ -31,7 +31,7 @@ ms.locfileid: "96995566"
 
 ## <a name="logical-and-physical-views"></a>논리적 및 물리적 뷰
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 메서드에 전달 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 하 여 **연결 프로그램** 대화 상자를 가져와야 합니다 .이 경우에는 가능한 코드 뷰를 사용 해야 합니다.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`처리기는이 값을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드에 전달 하 여 **연결 프로그램** 대화 상자를 가져옵니다 .이 경우는 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 와 동일한 뷰로 매핑되는 가능한 디버깅 뷰로 채워집니다 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
@@ -42,7 +42,7 @@ ms.locfileid: "96995566"
 
 ## <a name="editor-factory-flags"></a>편집기 팩터리 플래그
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|메서드의 첫 번째 매개 변수로 비트를 결합 한 사용 되지 않는 플래그 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 입니다.|
 |[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|비트를, 메서드의 첫 번째 매개 변수로 결합 하면 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 편집기 팩터리가 필요한 수정을 수행 해야 함을 나타냅니다.|
@@ -51,7 +51,7 @@ ms.locfileid: "96995566"
 
 ## <a name="visual-studio-errors"></a>Visual Studio 오류
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|해당 개체가 이미 사용 중인 경우의 비동기 동작에 대 한 인터페이스에서 반환 되는 상수입니다.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"호환 되지 않는 문서 데이터"에 대 한 Visual Studio와 관련 된 오류 HRESULT입니다.|
@@ -67,7 +67,7 @@ ms.locfileid: "96995566"
 
 ## <a name="visual-studio-constants"></a>Visual Studio 상수
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio와 관련 된 오류 HRESULT 이며 "프로젝트 전달 됨"을 나타냅니다.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Visual Studio와 관련 된 "도구 상자 마커"에 해당 하는 상수입니다.|

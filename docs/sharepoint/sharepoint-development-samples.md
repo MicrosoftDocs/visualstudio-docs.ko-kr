@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1bb4a374194c2d8ea94d24923675ec3f5b3d2601
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d9625e845f73496946b463d2dc3f1a13c47f94c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881518"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 개발 샘플
   Visual Studio를 사용 하 여 [MSDN 코드 갤러리](https://code.msdn.microsoft.com/)에서 SharePoint 응용 프로그램의 샘플을 다운로드 하 고 설치할 수 있습니다.

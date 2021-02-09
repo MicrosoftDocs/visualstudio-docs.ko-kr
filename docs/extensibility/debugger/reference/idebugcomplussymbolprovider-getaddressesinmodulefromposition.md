@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63ae51defe1ed93c889b9ad401e013b9110d9fc7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1b75476188f07fc605246b88a67c0a957692e3c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880972"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 지정 된 모듈의 문서 위치를 디버그 주소 배열에 매핑합니다.
@@ -69,7 +69,7 @@ int GetAddressesInModuleFromPosition(
 `ppEnumEndAddresses`\
 제한이 이 문이나 줄과 연결 된 끝 디버깅 주소에 대 한 열거자를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="example"></a>예제

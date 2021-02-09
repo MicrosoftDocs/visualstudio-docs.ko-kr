@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a420f89fda4afd710f652223a9be594caba32f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882416"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Word 문서에 컨트롤을 추가하고, MSDN 콘텐츠 서비스에서 검색된 데이터에 컨트롤을 바인딩하고, 런타임에 이벤트에 응답하는 방법을 보여 줍니다.

@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9c3d745f14185d46dce08d46b8c56391b108627d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882410"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 메서드
   WEF (웹 확장 프레임 워크) 콘텐츠를 실행 하는 프로세스 식별자를 제공 합니다.

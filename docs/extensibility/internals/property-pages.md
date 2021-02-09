@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883170"
 ---
 # <a name="property-pages"></a>속성 페이지
 사용자는 속성 페이지를 사용 하 여 프로젝트 구성에 종속 된 속성 및 독립적인 속성을 보고 변경할 수 있습니다. 속성 **페이지** 단추는 선택한 개체의 속성 페이지 뷰를 제공 하는 개체의 **속성** 창이 나 솔루션 탐색기 도구 모음에서 사용할 수 있습니다. 속성 페이지는 환경에서 만들어지며 솔루션 및 프로젝트에 사용할 수 있습니다. 그러나 구성에 종속 된 속성을 사용 하는 프로젝트 항목에도 사용할 수 있습니다. 프로젝트 내의 파일이 적절 하 게 빌드하려면 다른 컴파일러 스위치 설정을 사용 해야 하는 경우이 기능을 사용할 수 있습니다.
@@ -79,7 +79,7 @@ ms.locfileid: "97875533"
 
    메서드를 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> 하 여 프로젝트 계층 구조와 프로젝트 항목을 검색 합니다. DTE에서 `SelectedItems.SelectedItem.Project` 및 메서드를 사용 `SelectedItems.SelectedItem.ProjectItem` 합니다. 핵심 문서의 해당 제목 아래에는 샘플 코드가 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)
