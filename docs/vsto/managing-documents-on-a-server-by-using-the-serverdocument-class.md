@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879477"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument 클래스를 사용 하 여 서버에서 문서 관리
   `ServerDocument` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word와 Microsoft Office Excel이 설치 되어 있지 않은 Microsoft Office 경우에도의 클래스를 사용 하 여 문서 수준 사용자 지정의 여러 측면을 관리할 수 있습니다. 다음 작업을 수행할 수 있습니다.
@@ -48,7 +48,7 @@ ms.locfileid: "97528492"
 
  다음 표에서는 캐시 된 데이터로 작업 하는 데 사용할 수 있는 멤버를 나열 합니다.
 
-|작업|사용할 멤버|
+|Task|사용할 멤버|
 |----------|-------------------|
 |문서에 데이터 캐시가 있는지 여부를 확인 합니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 메서드|
 |문서의 캐시 된 데이터에 액세스 하려면입니다.<br /><br /> 자세한 내용은 [서버에 있는 문서의 데이터 액세스](../vsto/accessing-data-in-documents-on-the-server.md)를 참조 하세요.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 속성|
@@ -58,7 +58,7 @@ ms.locfileid: "97528492"
 
  다음 표에서는 사용자 지정 어셈블리를 관리 하는 데 사용할 수 있는 멤버를 나열 합니다.
 
-|작업|사용할 멤버|
+|Task|사용할 멤버|
 |----------|-------------------|
 |문서가 문서 수준 사용자 지정의 일부 인지 여부를 확인 합니다.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 메서드|
 |런타임에 프로그래밍 방식으로 문서에 사용자 지정을 연결 하려면입니다.<br /><br /> 자세한 내용은 [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md) 을 참조 하세요.|메서드 중 하나 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 입니다.|
