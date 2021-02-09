@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929201"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
 Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 대 한 색을 나타내는 .xml 파일을 사용 하 여 Visual Studio에서 해당 색을 사용할 수 있도록 .pkgdef 파일로 변환 하는 콘솔 응용 프로그램입니다. .Xml 파일 간의 차이점을 쉽게 비교할 수 있기 때문에이 도구는 소스 제어에서 사용자 지정 색을 관리 하는 데 유용 합니다. 빌드 출력이 .pkgdef 파일이 되도록 빌드 환경에 후크 될 수도 있습니다.
@@ -54,7 +54,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 
 |**Attribute**|**정의**|
 |-|-|
-|Name|하다 테마의 이름입니다.|
+|이름|하다 테마의 이름입니다.|
 |GUID|하다 테마의 GUID (GUID 형식과 일치 해야 함)|
 
  Visual Studio에 대 한 사용자 지정 색을 만들 때 다음 테마에 대해 해당 색을 정의 해야 합니다. 특정 테마에 대 한 색이 없는 경우 Visual Studio는 밝은 테마에서 누락 된 색을 로드 하려고 시도 합니다.
@@ -78,7 +78,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 
 |**Attribute**|**정의**|
 |-|-|
-|Name|하다 범주의 이름입니다.|
+|이름|하다 범주의 이름입니다.|
 |GUID|하다 범주의 GUID (GUID 형식과 일치 해야 함)|
 
  **색상**
@@ -94,7 +94,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 
 |**Attribute**|**정의**|
 |-|-|
-|Name|하다 색의 이름입니다.|
+|이름|하다 색의 이름입니다.|
 
  **배경 및/또는 전경**
 
@@ -107,7 +107,7 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 
 |**Attribute**|**정의**|
 |-|-|
-|형식|하다 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor의 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX의 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|
+|Type|하다 색의 형식입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마십시오.<br /><br /> *CT_SYSCOLOR:* SysColor의 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX의 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마십시오.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마십시오.|
 |원본|하다 16 진수로 표현 된 색의 값입니다.|
 
  __VSCOLORTYPE 열거형에서 지원 되는 모든 값은 Type 특성의 스키마에서 지원 됩니다. 그러나 CT_RAW와 CT_SYSCOLOR만 사용 하는 것이 좋습니다.
@@ -138,9 +138,9 @@ Visual Studio 확장 색 컴파일러 도구는 기존 Visual Studio 테마에 �
 |**스위치 이름**|**참고**|**필수 또는 선택**|
 |-|-|-|
 |명명 되지 않은 (.xml 파일)|이 매개 변수는 첫 번째 명명 되지 않은 매개 변수 이며 변환할 XML 파일의 경로입니다.|필수|
-|명명 되지 않은 (.pkgdef 파일)|이는 두 번째 명명 되지 않은 매개 변수 이며 생성 된 .pkgdef 파일의 출력 경로입니다.<br /><br /> 기본값: \<XML Filename> . .pkgdef|선택 사항|
-|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|선택 사항|
-|/?|도움말 정보를 인쇄 합니다.|선택 사항|
+|명명 되지 않은 (.pkgdef 파일)|이는 두 번째 명명 되지 않은 매개 변수 이며 생성 된 .pkgdef 파일의 출력 경로입니다.<br /><br /> 기본값: \<XML Filename> . .pkgdef|Optional|
+|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|Optional|
+|/?|도움말 정보를 인쇄 합니다.|Optional|
 |/help|도움말 정보를 인쇄 합니다.|선택|
 
  **예제**

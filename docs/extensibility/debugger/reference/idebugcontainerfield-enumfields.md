@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4121ecf719ba8422f1ac8d4544a57e81aaf2efde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928512"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 컨테이너의 필드에 대 한 열거자를 만듭니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80733229"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumFields( 
+HRESULT EnumFields( 
    FIELD_KIND         dwKindFilter,
    FIELD_MODIFIERS    dwModifiersFilter,
    LPCOLESTR          pszNameFilter,
@@ -63,13 +63,13 @@ int EnumFields(
 `ppEnum`\
 제한이 필드 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 필드가 없으면 null 값을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK 또는 S_FALSE (필드가 없는 경우)를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
  예를 들어 `dwKindFilter` ,, `dwModifiersFilter` 및 `pszNameFilter` 매개 변수를 결합 하 여 "MyMethod" 라는 모든 공용 가상 메서드를 선택할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

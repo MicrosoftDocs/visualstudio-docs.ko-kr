@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927823"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>방법: 워크시트 셀에서 컨트롤 크기 조정
   워크시트의 열 이나 행의 크기를 조정 하면 셀의 모든 호스트 컨트롤 크기가 자동으로 조정 되는 셀의 높이나 너비에 맞게 자동으로 조정 됩니다. Windows Forms 컨트롤은 기본적으로 자동으로 크기가 조정 되지 않습니다.

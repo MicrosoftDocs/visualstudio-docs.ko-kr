@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929214"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 함수
 이 함수는 클라이언트 디스크의 현재 로컬 디렉터리와 소스 제어에서 해당 하는 프로젝트 간의 차이를 표시 합니다.
@@ -58,7 +58,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|디스크의 디렉터리는 소스 코드 제어의 프로젝트와 동일 합니다.|
 |SCC_I_FILESDIFFER|디스크의 디렉터리는 소스 코드 제어의 프로젝트와 다릅니다.|
@@ -85,5 +85,5 @@ SCCRTN SccDirDiff(
 > [!NOTE]
 > 이 함수는 [Sccdiff](../extensibility/sccdiff-function.md)와 동일한 명령 플래그를 사용 합니다. 그러나 소스 제어 플러그 인은 디렉터리에 대해 "빠른 diff" 작업을 지원 하지 않도록 선택할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

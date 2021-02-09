@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928162"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 컴파일러에서 내부적으로 생성 된 변수를 포함 하 여 메서드의 모든 지역 변수에 대 한 열거자를 만듭니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80727337"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumAllLocals( 
+HRESULT EnumAllLocals( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppLocals
 );
@@ -48,7 +48,7 @@ int EnumAllLocals(
 `ppLocals`\
 제한이 지정 된 범위에 있는 모든 지역 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 그렇지 않으면 로컬이 없음을 나타내는 null 값을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK 반환 하거나 로컬이 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
@@ -56,7 +56,7 @@ int EnumAllLocals(
 
  메서드에는 여러 범위 지정 컨텍스트 또는 블록이 포함 될 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

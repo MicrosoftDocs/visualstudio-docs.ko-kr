@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5cacf6f6774ad1c0f29ff81407848b23cb3b170d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928122"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소 (Visual Studio 템플릿)
 인 경우 `false` 템플릿이 지정 된 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)에만 표시 되도록 지정 합니다.
@@ -58,7 +58,7 @@ ms.locfileid: "94903977"
 ## <a name="remarks"></a>설명
  `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
 
 ```xml

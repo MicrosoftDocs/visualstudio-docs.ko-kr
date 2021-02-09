@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4bf3c1843db67fdadcf0fe177aa17e0f17a627e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6ea48c77212927c14b4ad49c91ce2f4d988e36f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928226"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Interop 어셈블리를 사용 하는 명령 및 메뉴
 Interop 어셈블리를 사용 하 여 메뉴 및 도구 모음 명령을 구현 하는 VSPackage는 다음을 수행 해야 합니다.
@@ -33,7 +33,7 @@ Interop 어셈블리를 사용 하 여 메뉴 및 도구 모음 명령을 구현
 
   다음 섹션에서는 이러한 작업을 수행 하는 방법을 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Interop 어셈블리를 사용 하 여 명령 상태 결정](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
  VSPackage가 지 원하는 명령 및 현재 활성화 되어 있는지 여부를 IDE에 알리는 방법을 설명 합니다.

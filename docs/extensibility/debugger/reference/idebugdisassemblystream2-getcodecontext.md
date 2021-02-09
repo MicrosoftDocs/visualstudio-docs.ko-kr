@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6b3864528ee90c22a1e7122eeaf1969f613cc8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bd0c78853a41c7efa7907fd1004277862721dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928421"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 지정 된 코드 위치 식별자에 해당 하는 코드 컨텍스트 개체를 반환 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80732291"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetCodeContext( 
+HRESULT GetCodeContext( 
    UINT64               uCodeLocationId,
    IDebugCodeContext2** ppCodeContext
 );
 ```
 
 ```csharp
-int GetCodeContext( 
+int GetCodeContext( 
    ulong                  uCodeLocationId,
    out IDebugCodeContext2 ppCodeContext
 );
@@ -48,7 +48,7 @@ int GetCodeContext( 
 `ppCodeContext`\
 제한이 연결 된 코드 컨텍스트를 나타내는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -56,7 +56,7 @@ int GetCodeContext( 
 
  코드 컨텍스트를 코드 위치 식별자로 변환 하려면 [Getcodelocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)

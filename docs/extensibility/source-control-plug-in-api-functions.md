@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927940"
 ---
 # <a name="source-control-plug-in-api-functions"></a>소스 제어 플러그 인 API 함수
 소스 제어 플러그 인 API는이 API에 따라 소스 제어 플러그 인에서 구현 해야 하는 다음 함수를 제공 합니다. 각 함수의 시그니처와 비트 플래그 및 기타 매개 변수와 연관 된 의미 체계는이 참조에 자세히 설명 되어 있습니다.
 
 ## <a name="initialization-and-housekeeping-functions"></a>초기화 및 정리 함수
 
-|기능|설명|
+|함수|Description|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|프로젝트를 닫습니다.|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.|
@@ -36,7 +36,7 @@ ms.locfileid: "97715992"
 
 ## <a name="core-source-control-functions"></a>핵심 소스 제어 함수
 
-|기능|설명|
+|함수|Description|
 |--------------|-----------------|
 |[SccAdd](../extensibility/sccadd-function.md)|정규화 된 경로 이름으로 지정 된 파일 배열을 소스 제어 시스템에 추가 합니다.|
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|사용자가 이미 소스 제어 시스템에 있는 파일을 검색 한 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다.|
@@ -58,7 +58,7 @@ ms.locfileid: "97715992"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>추가 기능을 지 원하는 함수 (소스 제어 플러그 인 API 버전 1.2)
  이 함수 그룹은 소스 제어 플러그 인 API 버전 1.2에 포함 된 추가 기능을 정의 합니다. 이러한 기능을 통해 고급 소스 제어 기능 및 기능에 액세스할 수 있습니다.
 
-|기능|설명|
+|함수|Description|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|일괄 처리 작업을 시작 합니다.|
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|기존 부모 프로젝트에서 지정 된 이름의 하위 프로젝트를 만듭니다.|
@@ -72,7 +72,7 @@ ms.locfileid: "97715992"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>고급 기능을 지 원하는 함수 (소스 제어 플러그 인 API 버전 1.3)
  이 함수 그룹은 소스 제어 플러그 인 API 버전 1.3에 포함 된 추가 기능을 정의 합니다. 이러한 기능을 통해 고급 소스 제어 기능 및 기능에 액세스할 수 있습니다.
 
-|기능|설명|
+|함수|Description|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|원본 제어의 파일 목록을 현재 프로젝트에 추가 합니다.|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|사용자 인터페이스 없이 소스 제어에서 파일 목록을 검색 합니다.|

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08228fe4a630eac37c38f4eb247dc91678d8e2e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2eefa444d1832e4f66aac161636177994bd4a51f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929264"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 검색 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80717240"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG      celt,
    CODE_PATH* rgelt,
    ULONG*     pceltFetched
@@ -53,9 +53,9 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

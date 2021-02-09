@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e044ecbf2309d4d858c16afbdddc130b4661005
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97926070bd06e4e8a99a4d6b2fe59e4ea57233ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929227"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>방법: 문서 데이터에 보기 연결
 새 문서 보기가 있는 경우 기존 문서 데이터 개체에 연결할 수 있습니다.
