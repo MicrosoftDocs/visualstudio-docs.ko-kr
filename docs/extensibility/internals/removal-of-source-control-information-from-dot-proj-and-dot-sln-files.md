@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 798179a48c24c61fa40c2519624e22a077003b56
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 03b1c3f6e2c1cc6852ea443788bb336a03c3330f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905812"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Proj 및 .sln 파일에서 소스 제어 정보 제거
 
@@ -29,6 +29,6 @@ ms.locfileid: "97876963"
 
  소스 제어 플러그 인 API 버전 1.1에서 IDE는 SAK 파일을 사용 하 여 플러그 인에서 MSSCCPRJ.SCC을 지원 하는지 여부를 검색 합니다. 소스 제어 정보를 저장 하는 SCC 메서드입니다. 소스 제어 플러그 인 API 버전 1.2에서는 MSSCCPRJ.SCC에 대 한 지원을 검색 하는 새로운 기능을 제공 합니다. ~ SAK 파일을 사용 하지 않는 SCC 파일. 자세한 내용은 [~ SAK Files 제거](../../extensibility/internals/elimination-of-tilde-sak-files.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

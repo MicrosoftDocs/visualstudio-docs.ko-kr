@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebd90baebc859f340bfb06df3fdbdc6012588183
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904570"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 포트 공급자가 새 포트를 추가할 수 있는지 확인 합니다.
@@ -28,8 +28,8 @@ ms.locfileid: "80724753"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CanAddPort( 
-   void 
+HRESULT CanAddPort( 
+   void 
 );
 ```
 
@@ -43,6 +43,6 @@ int CanAddPort();
 ## <a name="remarks"></a>설명
  Addport 메서드를 호출 하기 전에이 메서드를 호출 합니다 .이 메서드는 포트를 추가 하 고 추가 하는 데 시간이 오래 걸릴 수 있으므로 [Addport](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905171"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 활동 디자이너
 
@@ -41,13 +41,13 @@ ms.locfileid: "94435601"
 
 다음 표에서는 가장 유용한 Parallel 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **Parallel** 입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|참|실행할 자식 활동의 컬렉션을 포함합니다.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|거짓|분기가 완료된 후 확인됩니다. **True** 로 평가 되 면 예약 된 보류 중인 분기가 취소 됩니다. 이 속성이 설정 되지 않거나 **False** 로 평가 되는 경우 모든 자식 활동이 완료 되 면 활동이 완료 됩니다. 기본값은 **null** 입니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **Parallel** 입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|실행할 자식 활동의 컬렉션을 포함합니다.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|분기가 완료된 후 확인됩니다. **True** 로 평가 되 면 예약 된 보류 중인 분기가 취소 됩니다. 이 속성이 설정 되지 않거나 **False** 로 평가 되는 경우 모든 자식 활동이 완료 되 면 활동이 완료 됩니다. 기본값은 **null** 입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [시퀀스](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

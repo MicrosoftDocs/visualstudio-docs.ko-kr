@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 823d46453ac6ad4a1a5a42c1f7d18a079b39d12d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905854"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>검사 목록: 레거시 언어 서비스 만들기
 다음 검사 목록에서는 핵심 편집기에 대 한 언어 서비스를 만들기 위해 수행 해야 하는 기본 단계를 요약 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 언어 서비스를에 통합 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버그 식 계산기를 만들어야 합니다. 자세한 내용은 [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)에서 [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) 을 참조 하세요.
@@ -125,6 +125,6 @@ ms.locfileid: "96189994"
 
   - 인터페이스를 구현 하 여 모든 사용자 컨텍스트를 제공 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

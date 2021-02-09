@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7309e05c3763794deb344a978dd188dbfddd79
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 8c80f224170d085347ff962bc88301aa0ab3c9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905631"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 
@@ -28,7 +28,7 @@ ms.locfileid: "97863806"
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .
 
-|인터페이스|설명|
+|인터페이스|Description|
 |---------------|-----------------|
 |[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|표준 OLE 인터페이스입니다.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|표준 OLE 인터페이스입니다.|
@@ -40,7 +40,7 @@ ms.locfileid: "97863806"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|텍스트 레이어와 상호 작용 합니다.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 뷰에서 작업을 수행 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)

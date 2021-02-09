@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: b3c32f1b-f3de-409d-920d-ba7b3fa84fcd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8cf829b99b9013d2b1ead1da636feaeffd820909
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7242bf5f85a401531b9f5de419c23c201e8051ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904705"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 활성화할 문서를 가져옵니다.
@@ -29,13 +29,13 @@ ms.locfileid: "80736655"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetDocument ( 
+HRESULT GetDocument ( 
    IDebugDocument2** ppDoc
 );
 ```
 
 ```csharp
-int GetDocument ( 
+int GetDocument ( 
    out IDebugDocument2 ppDoc
 );
 ```
@@ -44,9 +44,9 @@ int GetDocument ( 
 `ppDoc`\
 제한이 활성화할 문서를 나타내는 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

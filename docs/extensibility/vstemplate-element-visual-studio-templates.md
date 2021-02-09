@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5f15b21ccb52cf7aa7c857c0b6b523c02fd65461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905725"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>.Vstemplate 요소 (Visual Studio 템플릿)
 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함 합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94903483"
 
 ### <a name="attributes"></a>특성
 
-| attribute | 설명 |
+| attribute | Description |
 |-----------| - |
 | `Type` | 템플릿을 프로젝트 템플릿 또는 항목 템플릿으로 식별 합니다. 이 특성의 값은 또는가 될 수 있습니다 `Project` `Item` . |
 | `Version` | 템플릿에 대 한 버전 번호를 지정 합니다. 및의 템플릿에는 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] `Version` 특성 값이 `3.0.0` 있습니다. |
@@ -60,7 +60,7 @@ ms.locfileid: "94903483"
 ## <a name="remarks"></a>설명
  `VSTemplate`요소는 *.vstemplate* 파일의 루트 요소입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```xml

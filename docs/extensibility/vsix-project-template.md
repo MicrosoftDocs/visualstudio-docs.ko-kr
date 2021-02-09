@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d346826c97bfa0ed885579d4816c452dbed9a2d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905716"
 ---
 # <a name="vsix-project-template"></a>VSIX 프로젝트 템플릿
 
@@ -84,7 +84,7 @@ VSIX 프로젝트 템플릿에는 두 가지 주요 사용이 있습니다.
 
     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 매니페스트 파일, [Content_Types]*.xml* 파일 및 프로젝트에 추가한 모든 확장 자산을 포함 하는 *.vsix* 파일을 빌드합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)

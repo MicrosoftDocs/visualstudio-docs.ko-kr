@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1da30943eff228aad3c5413c5d8faea337634e9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905256"
 ---
 # <a name="bookmark-control"></a>Bookmark 컨트롤
   <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 고유한 이름이 있고 이벤트를 노출하며 데이터에 바인딩될 수 있는 책갈피입니다. 책갈피는 Microsoft Office Word 문서에서 항목 또는 위치를 표시하는 자리 표시자로 사용할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 <xref:Microsoft.Office.Interop.Word.Bookmark> 개체 및 <xref:Microsoft.Office.Interop.Word.Range> 개체의 조합입니다.
@@ -48,7 +48,7 @@ ms.locfileid: "96848367"
 
  <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤에는 또한 <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> 속성도 있습니다. 이 속성은 <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> 컨트롤의 속성 <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 또는 <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> 개체의 속성에서 사용할 수 있는 속성과 다릅니다 <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> .
 
-|Text 속성|설명|
+|Text 속성|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|이 속성을 사용하여 텍스트를 책갈피 안에 표시하고 문서에 책갈피를 남겨 둡니다. 텍스트를 책갈피에 할당하면 책갈피 범위를 확장하고 책갈피를 삭제하지 않습니다.<br /><br /> 예를 들어 `Bookmark1.Text = "Hello world"` 는 텍스트를 책갈피에 삽입하고 책갈피를 그대로 둡니다.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|이 속성을 사용하여 책갈피 위치에 텍스트를 표시하고 책갈피를 자동으로 삭제합니다. 예를 들어 `Bookmark1.Range.Text = "Hello world"` 는 책갈피에 텍스트를 삽입하고 책갈피를 삭제합니다.|

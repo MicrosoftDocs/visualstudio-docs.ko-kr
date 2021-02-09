@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f88d064c551ccffe1c59e68c8472b519a58db436
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 26184263d5f269ebf6922c5dd85a37e93356e935
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906011"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 자동화 모델은 Visual Studio 추가 기능 또는 확장을 작성할 수 있는 개체 집합으로 구성 됩니다. 추가 기능은 Visual Studio 환경을 조작 하 고 일반적인 작업을 자동화할 수 있는 응용 프로그램입니다. Visual Studio 확장은 사용자 지정 Visual Studio 구성 요소를 만들거나 텍스트 편집기와 같은 표준 구성 요소의 기능에 추가할 수 있습니다.
@@ -44,5 +44,5 @@ ms.locfileid: "96190098"
 
 자동화에 대 한 자세한 내용은 [Visual Studio의 자동화 및 확장성](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015)을 참조 하세요. 이 문서와이 문서에 링크를 제공 하는 문서는 VSPackage에 대 한 자동화를 제공 하는 방법에 대 한 의사 결정을 내리는 데 도움이 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: 추가 기능 만들기](/previous-versions/80493a3w(v=vs.140))

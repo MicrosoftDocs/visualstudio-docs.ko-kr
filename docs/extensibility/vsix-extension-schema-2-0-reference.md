@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904547"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합니다. 파일 형식은 스키마의 영향을 받습니다. 이 스키마의 버전 2.0에서는 사용자 지정 형식 및 특성을 추가할 수 있습니다.  매니페스트의 스키마를 확장할 수 있습니다. 매니페스트 로더는 인식할 수 없는 XML 요소와 특성을 무시 합니다.
@@ -84,7 +84,7 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 
   - "Global"은 설치가 특정 SKU로 한정 되지 않도록 지정 합니다. 예를 들어 확장 SDK를 설치할 때이 값이 사용 됩니다.
 
-  - "제품 확장"은 개별 Visual Studio Sku로 범위가 지정 된 기존 VSIX 확장 (버전 1.0)을 설치 하도록 지정 합니다. 이것은 기본값입니다.
+  - "제품 확장"은 개별 Visual Studio Sku로 범위가 지정 된 기존 VSIX 확장 (버전 1.0)을 설치 하도록 지정 합니다. 기본값입니다.
 
 - `AllUsers` -이 선택적 특성은 모든 사용자에 대해이 패키지를 설치할지 여부를 지정 합니다. 기본적으로이 특성은 패키지를 사용자 단위로 지정 하는 false입니다. 이 값을 true로 설정 하면 설치 사용자가 관리 권한 수준으로 승격 하 여 결과 VSIX를 설치 해야 합니다.
 
@@ -221,6 +221,6 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 확장 제공](../extensibility/shipping-visual-studio-extensions.md)

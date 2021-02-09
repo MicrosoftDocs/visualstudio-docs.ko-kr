@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 445b302c66739c8a35f180686011f3b498f87ada
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906135"
 ---
 # <a name="author-a-windows-installer-package"></a>Windows Installer 패키지 작성
 데이터는 Windows Installer 모델을 구동 합니다. 예를 들어 파일을 복사 하 고 레지스트리 항목을 작성 하는 프로시저 스크립트를 작성 하는 대신 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블에서 행과 열을 작성 합니다.
@@ -51,5 +51,5 @@ VSPackage를 설치 하려면 Windows Installer 패키지에 다음 태스크를
 
    을 사용 하 여에 통합 되는 상업용 제품의 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

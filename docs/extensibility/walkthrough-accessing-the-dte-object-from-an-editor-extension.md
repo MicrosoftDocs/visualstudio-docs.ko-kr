@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 7228165d49c7f11c15d12086933c473699ef6bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905589"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>연습: 편집기 확장에서 DTE 개체에 액세스
 
 Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte 개체의 형식을 사용 하 여 메서드를 호출 하 여 dte 개체를 가져올 수 있습니다. MEF (Managed Extensibility Framework) 확장에서를 가져온 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 다음 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 형식을 사용 하 여 메서드를 호출할 수 있습니다 <xref:EnvDTE.DTE> .
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
@@ -92,7 +92,7 @@ Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte �
 
 ::: moniker-end
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)
 - [DTE를 사용하여 Visual Studio 시작](launch-visual-studio-dte.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 48f88f48f62818882dd15889cdfa1bd2a48d9808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905826"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.
@@ -87,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 설치 후 VSPackage의 리소스를 요청 하면 해당 패키지가 이미 로드 되 고 초기화 될 수 있으므로 성능 손실은 최소화 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
-- [MFC 애플리케이션의 지역화된 리소스: 위성 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

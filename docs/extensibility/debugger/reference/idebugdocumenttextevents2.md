@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a1736890ac78e7aaf20b4a639b1794fc63b5ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904013"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 이 인터페이스는 디버그 엔진에서 제공 하는 소스 문서에 대 한 변경 내용을 Visual Studio에 알리는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDocumentTextEvents2 : IUnknown
@@ -37,7 +37,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentTextEvents2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|전체 문서가 소멸 되었음을 나타냅니다.|
 |[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|텍스트를 문서에 삽입 했음을 디버그 패키지에 알립니다.|
@@ -56,6 +56,6 @@ IDebugDocumentTextEvents2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
