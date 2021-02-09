@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890632"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE의 선택 및 통화
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 선택 *컨텍스트* 를 사용 하 여 사용자의 현재 선택 된 개체에 대 한 정보를 유지 관리 합니다. 선택 컨텍스트를 사용 하 여 Vspackage는 다음과 같은 두 가지 방법으로 통화 추적에 참여 합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "97875598"
 ## <a name="selection-context"></a>선택 컨텍스트
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ide는 전역 선택 컨텍스트 개체에서 ide 통화를 전역적으로 추적 합니다. 다음 표에서는 선택 컨텍스트를 구성 하는 요소를 보여 줍니다.
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |현재 계층 구조|일반적으로 현재 프로젝트입니다. NULL 현재 계층은 전체 솔루션이 최신 상태임을 나타냅니다.|
 |현재 ItemID|현재 계층 구조 내에서 선택한 항목입니다. 프로젝트 창에서 여러 항목을 선택 하는 경우 여러 개의 현재 항목이 있을 수 있습니다.|
@@ -64,6 +64,6 @@ ms.locfileid: "97875598"
 
 - 창 프레임 선택 컨텍스트 내에서 추적 되는 요소를 변경 하는 이벤트입니다. 예를 들어 DocObject 내에서 선택 내용을 변경 하거나 프로젝트 형식 창에서 선택을 변경 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [사용자에 대한 피드백](../../extensibility/internals/feedback-to-the-user.md)

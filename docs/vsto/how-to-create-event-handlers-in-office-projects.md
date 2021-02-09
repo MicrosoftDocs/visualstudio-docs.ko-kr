@@ -14,15 +14,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b2aed6102b6aed5938ecfab826363e62dcfac48a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889423"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>방법: Office 프로젝트에서 이벤트 처리기 만들기
   Visual Basic 및 c #에서 이벤트 처리기를 만드는 방법에는 여러 가지가 있습니다. 디자인 뷰에서 컨트롤을 두 번 클릭 하 여 컨트롤에 대 한 기본 이벤트 처리기를 만들거나 **속성** 창의 이벤트 창을 사용 하 여 컨트롤의 모든 이벤트에 대 한 처리기를 만들 수 있습니다. 그러나 코드 보기에 있는 경우 디자인 뷰로 전환 하 여 이벤트 처리기를 만들 수 없습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "96846703"
 
 ### <a name="to-create-an-event-handler-in-c"></a>C에서 이벤트 처리기를 만들려면\#
 
-1. 정규화 된 이벤트 이름 뒤에 공백을 입력 한 다음 나중에 공백을 사용 하 여를 입력 하 여 클래스의 **시작** 이벤트에서 이벤트 대리자를 만듭니다 **+=** . 예:
+1. 정규화 된 이벤트 이름 뒤에 공백을 입력 한 다음 나중에 공백을 사용 하 여를 입력 하 여 클래스의 **시작** 이벤트에서 이벤트 대리자를 만듭니다 **+=** . 예를 들어:
 
      `this.<object name>.<event name> +=`
 

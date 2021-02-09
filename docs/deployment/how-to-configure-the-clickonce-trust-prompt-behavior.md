@@ -17,22 +17,22 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890307"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>방법: ClickOnce 신뢰 프롬프트 동작 구성
 Clickonce 신뢰 프롬프트를 구성 하 여 최종 사용자에 게 Windows Forms 응용 프로그램, Windows Presentation Foundation 응용 프로그램, 콘솔 응용 프로그램, WPF 브라우저 응용 프로그램, Office 솔루션 등의 ClickOnce 응용 프로그램 설치 옵션을 제공할지 여부를 제어할 수 있습니다. 각 최종 사용자의 컴퓨터에서 레지스트리 키를 설정 하 여 신뢰 프롬프트를 구성 합니다.
 
  다음 표에서는 각각의 5 개 영역 (Internet, UnMyComputer Sites,, LocalIntranet 및 사이트)에 적용할 수 있는 구성 옵션을 보여 줍니다.
 
-|옵션|레지스트리 설정 값|설명|
+|옵션|레지스트리 설정 값|Description|
 |------------|----------------------------|-----------------|
 |신뢰 프롬프트를 사용 하도록 설정 합니다.|`Enabled`|최종 사용자가 ClickOnce 응용 프로그램에 신뢰를 부여할 수 있도록 ClickOnce 신뢰 프롬프트가 표시 됩니다.|
 |신뢰 프롬프트를 제한 합니다.|`AuthenticodeRequired`|Clickonce 신뢰 프롬프트는 ClickOnce 응용 프로그램이 게시자를 식별 하는 인증서로 서명 된 경우에만 표시 됩니다.|
@@ -228,7 +228,7 @@ Clickonce 신뢰 프롬프트를 구성 하 여 최종 사용자에 게 Windows 
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
+- [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

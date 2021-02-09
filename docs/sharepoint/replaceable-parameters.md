@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889501"
 ---
 # <a name="replaceable-parameters"></a>대체 가능 매개 변수
   대체 가능 매개 변수 또는 *토큰* 은 프로젝트 파일 내에서 실제 값이 디자인 타임에 알려지지 않은 SharePoint 솔루션 항목에 대 한 값을 제공 하기 위해 프로젝트 파일 내에서 사용할 수 있습니다. 함수는 표준 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 템플릿 토큰과 유사 합니다. 자세한 내용은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
@@ -50,7 +50,7 @@ ms.locfileid: "95970257"
 ## <a name="tokens-list"></a>토큰 목록
  다음 표에서는 사용 가능한 토큰을 보여 줍니다.
 
-|Name|Description|
+|이름|Description|
 |----------|-----------------|
 |$SharePoint. FileName $|포함 하는 프로젝트 파일의 이름입니다 (예: *Newproj .csproj*).|
 |$SharePoint FileNameWithoutExtension $|파일 이름 확장명이 없는 포함 하는 프로젝트 파일의 이름입니다. 예를 들면 "NewProj"입니다.|
@@ -107,5 +107,5 @@ ms.locfileid: "95970257"
 
  대상 (*.targets*) 파일에 확장을 직접 추가할 수 있습니다. 그러나 확장을 추가 하면 자체 뿐 아니라 로컬 시스템에 패키지 된 모든 SharePoint 프로젝트에 대 한 확장 목록이 변경 됩니다. 이 확장은 시스템의 유일한 개발자 이거나 대부분의 프로젝트에 필요한 경우에 편리할 수 있습니다. 그러나 시스템에 특정 하므로이 방법을 이식할 수 없으므로 프로젝트 파일에 확장을 추가 하는 것이 좋습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참조
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

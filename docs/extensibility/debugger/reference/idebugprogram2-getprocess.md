@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aca1842e92e7e1c164a6468e6c1e94a352ef67c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cd3b6e76a7e675a2228217d9a72c1d004de919c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891009"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 이 프로그램이 실행 되는 프로세스를 가져옵니다.
@@ -43,7 +43,7 @@ int GetProcess(
 `ppProcess`\
 제한이 프로세스를 나타내는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ int GetProcess(
 
  인터페이스를 구현 하는 것은 `IDebugEngineLaunch2` de가 프로세스를 만드는 방법을 알고 있어야 한다는 것을 의미 합니다. 따라서 de의 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스 구현은에서 실행 중인 프로세스를 알 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

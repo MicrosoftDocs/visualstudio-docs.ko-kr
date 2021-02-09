@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891061"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 중지 된 상태에서이 프로세스를 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 유지 되며 프로세스가 다시 실행 되기 시작 합니다.
@@ -46,7 +46,7 @@ int Continue(
 `pThread`\
 진행 계속할 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -54,7 +54,7 @@ int Continue(
 
  **경고** 이 호출을 처리 하는 동안 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 에 중지 이벤트 또는 즉각적인 (동기) 이벤트를 보내지 않습니다. 그렇지 않으면 디버거가 응답 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

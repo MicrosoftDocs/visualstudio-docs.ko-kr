@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 3d721c8d4f381e99a814852839de0e808d326b3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889644"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장에 속성 추가
   프로젝트 항목 확장을 사용 하 여 Visual Studio에 이미 설치 되어 있는 모든 SharePoint 프로젝트 항목에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다.
@@ -49,7 +49,7 @@ ms.locfileid: "94850171"
  속성 값에 대 한 변경 내용을 유지 하기 위해의 **set** 접근자는 `ExampleProperty` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 속성이 연결 된 개체의 속성에 새 값을 저장 합니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> . 속성을 사용 하 여 프로젝트 항목의 데이터를 유지 하는 방법에 대 한 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> [SharePoint 프로젝트 시스템의 확장에 데이터 저장](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)을 참조 하세요.
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>사용자 지정 속성의 동작 지정
- 네임 스페이스의 특성 **Properties** <xref:System.ComponentModel> 을 속성 정의에 적용 하 여 사용자 지정 속성이 표시 되 고 속성 창에서 동작 하는 방식을 정의할 수 있습니다. 다음 특성은 많은 시나리오에서 유용 합니다.
+ 네임 스페이스의 특성  <xref:System.ComponentModel> 을 속성 정의에 적용 하 여 사용자 지정 속성이 표시 되 고 속성 창에서 동작 하는 방식을 정의할 수 있습니다. 다음 특성은 많은 시나리오에서 유용 합니다.
 
 - <xref:System.ComponentModel.DisplayNameAttribute>: **속성** 창에 표시 되는 속성의 이름을 지정 합니다.
 

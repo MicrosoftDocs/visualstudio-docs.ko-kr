@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891191"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 이 인터페이스는 특정 포트에서 프로세스 및 프로그램 생성 및 소멸에 대 한 수신기 (일반적으로 세션 디버그 관리자 [SDM] 또는 디버그 엔진)에 게 알립니다. 이 정보를 사용 하 여 포트에서 실행 중인 프로세스 및 프로그램의 실시간 보기를 표시할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortEvents2 : IUnknown
@@ -37,7 +37,7 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPortEvents2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md)|포트에서 프로세스 및 프로그램의 생성 및 소멸을 설명 하는 이벤트를 보냅니다.|
 
@@ -53,6 +53,6 @@ IDebugPortEvents2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

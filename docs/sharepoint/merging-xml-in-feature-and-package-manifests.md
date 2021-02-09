@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889566"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>기능 및 패키지 매니페스트에서 XML 병합
   기능 및 패키지는 매니페스트 파일에 의해 정의 됩니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . 이러한 패키지 된 매니페스트는 디자이너에서 생성 된 데이터와 사용자가 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 템플릿에 입력 한 사용자 지정의 조합입니다. 패키징 시는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 패키지 된 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 매니페스트 파일을 구성 하기 위해 제공 된 디자이너와 사용자 지정 문을 병합 합니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . 병합 예외에서 나중에 설명 된 예외를 포함 하는 비슷한 요소는 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] SharePoint에 파일을 배포한 후에 유효성 검사 오류를 방지 하 고 매니페스트 파일을 더 작고 효율적으로 만드는 데 병합 됩니다.
@@ -37,7 +37,7 @@ ms.locfileid: "96304237"
 
  다음은 기능 및 패키지 매니페스트 파일에 대 한 병합 예외 목록입니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] .
 
-|디자이너|XML 요소|
+|Designer|XML 요소|
 |--------------|-----------------|
 |기능 디자이너|ActivationDependency|
 |기능 디자이너|UpgradeAction|
@@ -52,9 +52,9 @@ ms.locfileid: "96304237"
 |기능 (모든 특성)|*특성 이름* (기능 요소의 각 특성 이름이 고유 키입니다.)|
 |ElementFile|위치|
 |ElementManifests/Elementmanifests|위치|
-|속성/속성|키|
-|CustomUpgradeAction|Name|
-|CustomUpgradeActionParameter|Name|
+|속성/속성|Key|
+|CustomUpgradeAction|이름|
+|CustomUpgradeActionParameter|이름|
 
 > [!NOTE]
 > CustomUpgradeAction 요소를 수정 하는 유일한 방법은 사용자 지정 편집기에 있기 때문입니다 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . 병합 하지 않는 효과는 낮습니다.

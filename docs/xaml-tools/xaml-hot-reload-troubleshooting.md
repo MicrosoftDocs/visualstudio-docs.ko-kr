@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 4e13fd71c9d53ef49d7f7372986bfabc29c62747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890450"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>XAML 핫 다시 로드 문제 해결
 
@@ -51,7 +51,7 @@ XAML 핫 다시 로드는 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 응용 프로그
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>MSBuild 속성이 올바른지 확인
 
-기본적으로 소스 정보는 디버그 구성에 포함 됩니다. 프로젝트 파일 (예: * .csproj)의 MSBuild 속성에 의해 제어 됩니다. WPF의 경우 속성은 이며 `XamlDebuggingInformation` 로 설정 되어야 합니다 `True` . UWP의 경우 속성은 이며 `DisableXbfLineInfo` 로 설정 되어야 합니다 `False` . 예를 들면 다음과 같습니다.
+기본적으로 소스 정보는 디버그 구성에 포함 됩니다. 프로젝트 파일 (예: * .csproj)의 MSBuild 속성에 의해 제어 됩니다. WPF의 경우 속성은 이며 `XamlDebuggingInformation` 로 설정 되어야 합니다 `True` . UWP의 경우 속성은 이며 `DisableXbfLineInfo` 로 설정 되어야 합니다 `False` . 예를 들어:
 
 WPF:
 
@@ -69,6 +69,6 @@ XAML 핫 다시 로드 (이전 섹션 참조)를 지원 하도록 올바른 MSBu
 
 XAML 파일에 **오류 목록** 오류가 표시 되 면 Xaml 핫 다시 로드가 작동 하지 않을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그](xaml-hot-reload.md)

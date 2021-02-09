@@ -14,15 +14,15 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1df1eed4edec3efdbf93f4effc352b3d02656d04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889410"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>방법: Visual c # 프로젝트에서 VBA로 코드 노출
   두 가지 코드 형식이 서로 상호 작용 하도록 하려면 Visual c # 프로젝트의 코드를 VBA (Visual Basic for Applications) 코드에 노출할 수 있습니다.

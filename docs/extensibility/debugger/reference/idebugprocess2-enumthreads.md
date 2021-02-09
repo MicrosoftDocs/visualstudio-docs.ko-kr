@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c766ab8f12d9cda4348b9916d41b6182ccf67e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890190"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 프로세스에서 실행 되는 모든 스레드 목록을 검색 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80724063"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumThreads(
-   IEnumDebugThreads2** ppEnum
+HRESULT EnumThreads(
+   IEnumDebugThreads2** ppEnum
 );
 ```
 
 ```csharp
-int EnumThreads(
-   out IEnumDebugThreads2 ppEnum
+int EnumThreads(
+   out IEnumDebugThreads2 ppEnum
 );
 ```
 
@@ -43,7 +43,7 @@ int EnumThreads(
 `ppEnum`\
 제한이 프로세스에 있는 모든 프로그램의 모든 스레드 목록을 포함 하는 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ int EnumThreads(
 
  이 메서드는 중복 없이 프로세스의 스레드 목록을 표시 합니다. 그렇지 않고 특정 프로그램에서 실행 중인 스레드를 열거 하려면 [enumthreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드를 사용 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

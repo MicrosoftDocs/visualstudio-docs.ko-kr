@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890502"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인별 언어의 네임 스페이스 변경
 
@@ -25,13 +25,13 @@ ms.locfileid: "90809442"
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>도메인별 언어의 네임 스페이스를 변경 하려면
 
-1. **Dsl 탐색기**에서 **dsl** 노드를 선택 합니다.
+1. **Dsl 탐색기** 에서 **dsl** 노드를 선택 합니다.
 
 2. **속성** 창에서 **Namespace** 속성을 변경 합니다.
 
 3. 솔루션을 저장 하 고 템플릿을 변환 합니다.
 
-4. **프로젝트** 메뉴에서 **Dsl 속성**을 선택 합니다.
+4. **프로젝트** 메뉴에서 **Dsl 속성** 을 선택 합니다.
 
    프로젝트의 속성이 표시 됩니다.
 
@@ -49,12 +49,12 @@ ms.locfileid: "90809442"
 
 10. Visual Studio 실험적 인스턴스를 다시 설정 합니다.
 
-    1. ** \\ \Users**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**를 삭제 합니다.
+    1. **\\ \Users**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp** 를 삭제 합니다.
 
-    2. Windows **시작** 메뉴에서 **모든 프로그램**  >  **Microsoft Visual Studio 2010 SDK**Tools를 선택 하  >  **Tools**  >  **여 실험적 인스턴스를 다시 설정**합니다.
+    2. Windows **시작** 메뉴에서 **모든 프로그램**  >  **Microsoft Visual Studio 2010 SDK** Tools를 선택 하  >    >  **여 실험적 인스턴스를 다시 설정** 합니다.
 
-11. **빌드** 메뉴에서 **솔루션 다시 빌드**를 선택 합니다.
+11. **빌드** 메뉴에서 **솔루션 다시 빌드** 를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

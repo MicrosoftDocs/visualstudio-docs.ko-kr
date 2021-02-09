@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890762"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>속성 창에 속성 노출
 
 이 연습에서는 개체의 공용 속성을 **속성** 창에 노출 합니다. 이러한 속성에 대 한 변경 내용은 **속성** 창에 반영 됩니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

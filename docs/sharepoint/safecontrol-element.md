@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889475"
 ---
 # <a name="safecontrol-element"></a>SafeControl 요소
   모든 사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤이 나 웹 파트를 나타냅니다.
@@ -40,13 +40,13 @@ ms.locfileid: "95440625"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |**어셈블리**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤이 나 웹 파트가 정의 된 어셈블리의 이름입니다. 기본적으로이 특성은 어셈블리 이름에 대해 **$SharePoint. AssemblyFullName $** 대체 (fullname) 매개 변수를 사용 합니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.|
 |**IsSafe**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 액세스할 수 있도록 ASPX 컨트롤이 나 웹 파트를 안전 하 게 보호 하는지 여부를 지정 합니다.|
 |**Issafeagas 스크립트**|선택적 **xs: boolean** 특성입니다.<br /><br /> 신뢰할 수 없는 사용자가 ASPX 컨트롤이 나 웹 파트의 속성을 보거나 편집할 수 있는지 여부를 지정 합니다.|
 |**이름**|선택적 **xs: string** 특성입니다.<br /><br /> 컬렉션에 있는이 안전 컨트롤 항목의 이름입니다.|
-|**Namespace**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤 또는 웹 파트의 네임 스페이스입니다.|
+|**네임스페이스**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤 또는 웹 파트의 네임 스페이스입니다.|
 |**T**|선택적 **xs: string** 특성입니다.<br /><br /> ASPX 컨트롤 또는 웹 파트의 형식 이름입니다.|
 
 ### <a name="child-elements"></a>자식 요소
@@ -54,7 +54,7 @@ ms.locfileid: "95440625"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|사용자가 SharePoint 사이트의 ASPX 페이지에서 액세스할 수 있도록 보안으로 지정 된 ASPX 컨트롤 및 웹 파트의 컬렉션을 나타냅니다.|
 

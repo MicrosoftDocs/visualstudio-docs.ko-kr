@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 3db7c4f886a071b4b759072a1b141690f4e4b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890723"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 확장 된 개요 지원 제공
 **정의로 축소** 명령을 지 원하는 것 이상으로 언어에 대 한 개요 지원을 확장 하는 두 가지 옵션이 있습니다. 편집기에서 제어 하는 개요 영역을 추가 하 고 클라이언트 제어 개요 영역을 추가할 수 있습니다.

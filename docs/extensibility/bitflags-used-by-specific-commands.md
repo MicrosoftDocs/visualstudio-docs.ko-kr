@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890333"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>특정 명령에 사용 되는 bitflags
 하나 이상의 비트를 단일 값으로 설정 하 여 소스 제어 플러그 인 API에서 여러 함수의 동작을 수정할 수 있습니다. 이러한 값을 bitflags 라고 합니다. 소스 제어 플러그 인 API에서 사용 하는 다양 한 bitflag는 여기에서 자세히 설명 하며이를 사용 하는 함수 별로 그룹화 되어 있습니다.

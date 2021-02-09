@@ -1,6 +1,6 @@
 ---
 title: SharePoint 프로젝트 시스템 확장 | Microsoft Docs
-description: SharePoint 프로젝트 시스템을 확장 합니다. SharePoint 프로젝트 시스템을 확장 하는 방법을 알아봅니다. 일반적인 개발 작업을 이해 합니다.
+description: SharePoint 프로젝트 시스템을 확장합니다. SharePoint 프로젝트 시스템을 확장 하는 방법을 알아봅니다. 일반적인 개발 작업을 이해 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889683"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>SharePoint 프로젝트 시스템 확장
   Visual Studio에서 프로젝트 템플릿 및 항목 템플릿 집합을 사용 하 여 SharePoint 솔루션을 만들 수 있습니다. 이러한 템플릿은 다양 한 개발 시나리오의 요구 사항을 충족 하지만 필요한 기능을 제공 하지 않는 경우를 발견할 수 있습니다. 이러한 경우 SharePoint 프로젝트 시스템을 확장할 수 있습니다.
@@ -50,7 +50,7 @@ ms.locfileid: "94672550"
 
 - SharePoint 프로젝트 시스템의 개체를 Visual Studio 자동화 개체 모델 또는 통합 개체 모델의 해당 개체로 변환 하거나 그 반대로 변환 합니다. 자세한 내용은 [SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 관계](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목 확장](../sharepoint/extending-sharepoint-project-items.md)
 - [SharePoint 프로젝트 확장](../sharepoint/extending-sharepoint-projects.md)

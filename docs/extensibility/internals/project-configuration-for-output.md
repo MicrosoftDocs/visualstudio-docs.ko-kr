@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6817dbd534d272924e5020b1c4c48753dcd70a54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890671"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
 모든 구성은 실행 파일, 리소스 파일 등의 출력 항목을 생성 하는 빌드 프로세스 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자에 게 전용 이며 실행 파일 (.exe, .dll, .lib) 및 소스 파일 (.idl, .h 파일)과 같은 관련 된 출력 형식을 연결 하는 그룹에 배치할 수 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "97876326"
 
  자세한 내용은 `IVsOutputGroup` [프로젝트에 대 한 MPF](https://github.com/tunnelvisionlabs/MPFProj10)의 사용자 지정 프로젝트 샘플에서 구현을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)

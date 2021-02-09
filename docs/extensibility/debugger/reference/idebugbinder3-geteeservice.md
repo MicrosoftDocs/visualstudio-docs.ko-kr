@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891256"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 이 메서드는 요청 된 서비스를 반환 합니다.
@@ -28,20 +28,20 @@ ms.locfileid: "80735832"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetEEService(
-   [in] GUID        vendor,
-   [in] GUID        language,
-   [in] GUID        iid,
-   [out] IUnknown** ppService
+HRESULT GetEEService(
+   [in] GUID        vendor,
+   [in] GUID        language,
+   [in] GUID        iid,
+   [out] IUnknown** ppService
 );
 ```
 
 ```csharp
-Int GetEEService(
-   Guid       vendor,
-   Guid       language,
-   Guid       iid,
-   out object ppService
+Int GetEEService(
+   Guid       vendor,
+   Guid       language,
+   Guid       iid,
+   out object ppService
 );
 ```
 
@@ -58,13 +58,13 @@ Int GetEEService(
 `ppService`\
 제한이 요청 된 서비스에 대 한 인터페이스입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  `IID` [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 인터페이스 ()에 대 한를 전달 `IID_IEEVisualizerServiceProvider` 하 여 형식 시각화 도우미 서비스를 사용할 수 있는지 확인 합니다. 그렇다면 식 계산기는 형식 시각화 도우미를 지원 하기 위해 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 인터페이스를 가져올 수 있습니다. 자세한 내용은 [데이터 시각화 및 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) 를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
