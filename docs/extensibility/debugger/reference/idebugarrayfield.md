@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870261"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 이 인터페이스는 배열 기호 또는 형식을 설명 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugArrayField : IDebugContainerField
+IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -37,7 +37,7 @@ IDebugArrayField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음을 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetNumberOfElements](../../../extensibility/debugger/reference/idebugarrayfield-getnumberofelements.md)|배열의 요소 수를 가져옵니다.|
 |[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|배열에 있는 요소의 형식을 가져옵니다.|
@@ -50,7 +50,7 @@ IDebugArrayField : IDebugContainerField
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

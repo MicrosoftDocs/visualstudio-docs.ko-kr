@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5f9794c825012d682ca40dfdc5ebbfa03f0614ee
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+manager: jmartens
+ms.openlocfilehash: e435502587e65bd694567f4100516a91fa97cc0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867869"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>FxCop 분석기에서 .NET 분석기로 마이그레이션
 
@@ -47,7 +47,7 @@ Visual Studio 2019 16.8 및 .NET 5.0부터 이러한 분석기는 [.NET SDK에 �
    </PropertyGroup>
    ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [소스 코드 분석 대 레거시 분석](net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
 - [레거시 분석에서 .NET 분석기로 마이그레이션](migrate-from-legacy-analysis-to-net-analyzers.md)

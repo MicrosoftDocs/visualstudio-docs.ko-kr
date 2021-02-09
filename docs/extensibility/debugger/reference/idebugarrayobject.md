@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709273b89d89759163acb725220d1092d33ad72f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d6a37a5b83cd71123521db70920fd3d454e059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870066"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -25,10 +25,10 @@ ms.locfileid: "80736220"
 
  이 인터페이스는 배열 개체를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugArrayObject : IDebugObject
+IDebugArrayObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -40,7 +40,7 @@ IDebugArrayObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  인터페이스의 메서드 외에도 `IDebugObject` 다음 메서드가 인터페이스에서 구현 됩니다 `IDebugArrayObject` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|배열의 요소 수를 가져옵니다.|
 |[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|배열의 요소를 가져옵니다.|
@@ -58,5 +58,5 @@ IDebugArrayObject : IDebugObject
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

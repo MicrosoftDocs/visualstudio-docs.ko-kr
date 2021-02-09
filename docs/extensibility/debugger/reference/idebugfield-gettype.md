@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e052155524c962894af021bf5afdec50d182d68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfb21abc8feaa95a8842707a56add513eaa6875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869806"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 이 메서드는 필드의 형식을 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728796"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetType( 
+HRESULT GetType( 
    IDebugField** ppType
 );
 ```
@@ -43,8 +43,8 @@ int GetType(
 `ppType`\
 제한이 필드 형식을 다른 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체로 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

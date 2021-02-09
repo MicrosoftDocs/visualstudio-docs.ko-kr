@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c645683cf1f842afdecba3c3dee8942a3fd6971a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe662f6e6ed2db50fb905ad8918a7b7216853f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870105"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 배열의 차수 (차원 수)를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80736196"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetRank( 
+HRESULT GetRank( 
    DWORD* pdwRank
 );
 ```
@@ -43,11 +43,11 @@ int GetRank(
 `pdwRank`\
 제한이 순위를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  [Getdimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) 메서드를 사용 하 여 배열 개체의 각 차원 크기를 검색 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

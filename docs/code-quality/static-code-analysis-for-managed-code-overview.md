@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e8d9ddf88086772e0cd21bde856184954bc7143b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867687"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio에서 관리 코드에 대 한 레거시 분석 개요
 

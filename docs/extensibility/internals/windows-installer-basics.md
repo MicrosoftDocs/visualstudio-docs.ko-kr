@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869494"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 기본 사항
 Windows Installer은 사용자 컴퓨터에 응용 프로그램 또는 소프트웨어 제품을 설치 및 제거 하 고, 이러한 작업을 Windows Installer 구성 요소 (예를 들어 WICs 또는 구성 요소 라고도 함) 라는 단위로 수행 합니다. GUID는 설치의 기본 단위인 각 WIC를 식별 하 고 Windows Installer를 사용 하는 설치에 대 한 참조 수를 계산 합니다.

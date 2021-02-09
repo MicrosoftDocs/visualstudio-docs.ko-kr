@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869520"
 ---
 # <a name="when-to-create-project-types"></a>프로젝트 형식을 만들어야 하는 경우
 새 프로젝트 형식을 만들면 사용자를 사용자 지정 하기 위한 기초를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 그러나 모든 사용자 지정에는 새 프로젝트 형식을 만들 필요가 없습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 다음 지침은 시나리오에 새 프로젝트 형식이 필요한 지 여부를 확인 하는 데 도움이 됩니다.
@@ -49,7 +49,7 @@ ms.locfileid: "97487831"
 ## <a name="use-an-existing-project-type"></a>기존 프로젝트 형식 사용
  경우에 따라 새 프로젝트를 만들 필요가 없습니다. 다음 표에서는에 대 한 프로젝트 형식을 만들 필요가 없는 태스크를 보여 줍니다.
 
-|작업|Description|
+|Task|Description|
 |----------|-----------------|
 |명령 처리|모든 VSPackage은 명령을 처리할 수 있습니다.|
 |편집기 빌드|사용자 지정 편집기를 등록할 수 있습니다. 자세한 내용은 [Windows 및 편집기 문서](/previous-versions/bb165691(v=vs.100))를 참조 하세요.|

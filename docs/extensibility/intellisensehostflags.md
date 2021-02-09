@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: af4683dede8a57b2d42acdf357808b465efb1e8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869507"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 IntelliSense 호스트 플래그를 지정 합니다.
@@ -40,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>매개 변수
 
-|멤버|Description|
+|구성원|Description|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|
 |`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에 IntelliSense 대상 (함축)이 포함 되어 있습니다 `!IHF_READONLYCONTEXT` .|

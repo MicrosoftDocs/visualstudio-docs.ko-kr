@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 074bc97bab80e09d6b720d23e9d617cdfcdc6350
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870053"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 배열의 차원 수가 지정 된 경우 각 인덱스의 기본 인덱스 (하한값)를 검색 합니다.
@@ -47,7 +47,7 @@ int GetBaseIndices (
 `dwIndices`\
 제한이 배열의 기본 인덱스 (하한값)입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -59,5 +59,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

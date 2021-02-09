@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be06acbef93d8858557fea5bd7563168be2d28aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a93e75be0e3a7b3c86e75b29a13b2cabe5a4573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870170"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 배열의 모든 요소에 대 한 열거자를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80736244"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetElements( 
+HRESULT GetElements( 
    IEnumDebugObjects** ppEnum
 );
 ```
@@ -43,11 +43,11 @@ int GetElements(
 `ppEnum`\
 제한이 모든 요소에 대해 열거를 허용 하는 [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  대신 [Getcount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 및 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) 메서드를 사용 하 여 요소를 반복 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
