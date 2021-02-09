@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b04b0805aec5ecee818fa42e1d76a76cce12b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838645"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 관리 코드 제네릭 형식에 대 한 매개 변수를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugGenericParamField : IDebugField
@@ -32,7 +32,7 @@ IDebugGenericParamField : IDebugField
 ## <a name="methods"></a>메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|이 제네릭 매개 변수와 연결 된 제약 조건 수를 반환 합니다.|
 |[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|이 제네릭 매개 변수와 연결 된 제약 조건을 검색 합니다.|
