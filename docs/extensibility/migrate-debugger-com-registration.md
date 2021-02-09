@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: jillfra
+manager: jmartens
 ms.workload:
 - greggm
-ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: adc1db57de2167ff3caa0e87e1075c8ff5b462e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886719"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>64 비트 디버거 COM 클래스 등록 마이그레이션
 

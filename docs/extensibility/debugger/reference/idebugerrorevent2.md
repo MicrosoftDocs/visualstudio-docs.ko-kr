@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00fd8b4b42f11d18958f8a969bc4ccd58754ab93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888344"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 이 인터페이스는 사용자에 게 보고할 오류 메시지를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugErrorEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |`GetErrorMessage`|오류를 사람이 인식할 수 있는 문자열로 반환 합니다.|
 
@@ -51,6 +51,6 @@ IDebugErrorEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

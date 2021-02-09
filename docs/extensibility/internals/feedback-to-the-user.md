@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886992"
 ---
 # <a name="feedback-to-the-user"></a>사용자 의견
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 사용 가능한 기능에 대 한 시각적 피드백은 사용자의 현재 선택 영역 및 전역 선택 컨텍스트를 기반으로 합니다. 다음 표에서는 다양 한 선택 컨텍스트에서 사용할 수 있는 기능을 보여 줍니다.

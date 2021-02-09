@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 537793165f3a3b46d7f00c19dd2f093f0442326d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886928"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치된 코드 조각 목록 가져오기(레거시 구현)
 코드 조각은 메뉴 명령 (설치 된 코드 조각 목록 중에서 선택할 수 있음)을 사용 하거나 IntelliSense 완성 목록에서 코드 조각 바로 가기를 선택 하 여 소스 버퍼에 삽입할 수 있는 코드 조각입니다.

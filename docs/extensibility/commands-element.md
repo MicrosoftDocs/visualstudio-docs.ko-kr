@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887434"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션에는 메뉴, 그룹, 단추, combos 및 비트맵과 같이 최대 5 개의 하위 섹션이 포함 될 수 있습니다.
@@ -44,7 +44,7 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |패키지|명령을 제공 하는 VSPackage을 식별 하는 GUID입니다.<br /><br /> 예를 들면 package = "guidVsPackage1Pkg"입니다.|
 
@@ -64,7 +64,7 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [Commands 요소](../extensibility/commands-element.md)를 사용 하는 방법을 보여 줍니다.
 
 ```

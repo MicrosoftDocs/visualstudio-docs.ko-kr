@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79ee4c717774ef61fc0aa07fe7ecf2c5c216c04
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888435"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 구조-내부 멤버
 이 항목에서는 클래스의 내부 멤버에 대해 설명 합니다 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> . 이 클래스에 대 한 일반 정보는 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 참조 항목을 참조 하세요.
@@ -39,7 +39,7 @@ ms.locfileid: "90036888"
 
 ## <a name="internal-members"></a>내부 멤버
 
-|Name|Description|
+|이름|Description|
 |----------|-----------------|
 |[ObjectIdForDebugger 속성](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|디버거에 대해이 작성기를 고유 하 게 식별 하는 데 사용할 수 있는 개체를 가져옵니다.|
 |[m_builder 필드](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|이 제네릭이 아닌 인스턴스가 위임 하는 제네릭 작성기 개체를 나타냅니다.|

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17b20d0f3545b0f7266ad6d0c6423d581233dd3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 798dcf0beecd3b1a8cf786b93e581ac6aa780210
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888396"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 이 인터페이스는 잘못 된 위치, 잘못 된 식 등의 오류 또는 경고 중단점 또는 보류 중인 중단점이 바인딩되지 않은 이유 (코드는 아직 로드 되지 않은 경우)를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugErrorBreakpoint2 : IUnknown
@@ -37,7 +37,7 @@ IDebugErrorBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugErrorBreakpoint2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|오류를 발생 시킨 보류 중인 중단점을 가져옵니다.|
 |[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|오류를 설명 하는 중단점 오류 확인을 가져옵니다.|
@@ -49,7 +49,7 @@ IDebugErrorBreakpoint2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
 - [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

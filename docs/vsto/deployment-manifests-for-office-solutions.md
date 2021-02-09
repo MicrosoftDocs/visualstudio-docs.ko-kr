@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887603"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 솔루션에 대 한 배포 매니페스트
   배포 매니페스트는 Office 솔루션의 배포 설정을 설명 하 고 현재 응용 프로그램 버전을 식별 하는 XML 파일입니다.

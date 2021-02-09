@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d093438dc30bee08abbc45c6cf3c2555fbe208c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887486"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>방법: ClickOnce를 통해 게시할 파일 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 프로젝트의 코드 이외의 모든 파일이 응용 프로그램과 함께 배포 됩니다. 일부 경우에는 특정 파일을 게시 하지 않으려는 경우 또는 조건에 따라 특정 파일을 설치 해야 할 수 있습니다. Visual Studio는 파일을 제외 하 고, 파일을 데이터 파일 또는 필수 구성 요소로 표시 하 고, 조건부 설치용 파일 그룹을 만드는 기능을 제공 합니다.
@@ -37,9 +37,9 @@ ms.locfileid: "94350896"
 
  **빌드 작업** 속성이 **콘텐츠로** 설정 된 파일은 응용 프로그램 파일로 지정 되며 기본적으로 포함 된 것으로 표시 됩니다. 포함 하거나, 제외 하거나, 데이터 파일로 표시할 수 있습니다. 이에 대한 예외는 다음과 같습니다.
 
-- SQL Database ( *.mdf* 및 *.mdb* ) 파일 및 XML 파일과 같은 데이터 파일은 기본적으로 데이터 파일로 표시 됩니다.
+- SQL Database (*.mdf* 및 *.mdb*) 파일 및 XML 파일과 같은 데이터 파일은 기본적으로 데이터 파일로 표시 됩니다.
 
-- 참조를 추가할 때 어셈블리 ( *.dll* 파일)에 대 한 참조는 다음과 같이 지정 됩니다. **Copy Local** 이 **False** 인 경우 응용 프로그램이 설치 되기 전에 GAC에 표시 되어야 하는 필수 구성 요소 어셈블리 ( **필수 구성 요소 (자동)** )로 기본적으로 표시 됩니다. **로컬 복사** 가 **True** 인 경우 어셈블리는 기본적으로 응용 프로그램 어셈블리 ( **포함 (자동)** )로 표시 되 고 설치 시 응용 프로그램 폴더로 복사 됩니다. COM 참조는 **격리** 된 속성이 **True** 로 설정 된 경우에만 **응용 프로그램 파일** 대화 상자 ( *.ocx* 파일)에 표시 됩니다. 기본적으로 포함 됩니다.
+- 참조를 추가할 때 어셈블리 (*.dll* 파일)에 대 한 참조는 다음과 같이 지정 됩니다. **Copy Local** 이 **False** 인 경우 응용 프로그램이 설치 되기 전에 GAC에 표시 되어야 하는 필수 구성 요소 어셈블리 (**필수 구성 요소 (자동)**)로 기본적으로 표시 됩니다. **로컬 복사** 가 **True** 인 경우 어셈블리는 기본적으로 응용 프로그램 어셈블리 (**포함 (자동)**)로 표시 되 고 설치 시 응용 프로그램 폴더로 복사 됩니다. COM 참조는 **격리** 된 속성이 **True** 로 설정 된 경우에만 **응용 프로그램 파일** 대화 상자 ( *.ocx* 파일)에 표시 됩니다. 기본적으로 포함 됩니다.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>응용 프로그램 파일 대화 상자에 파일을 추가 하려면
 
@@ -79,7 +79,7 @@ ms.locfileid: "94350896"
 
 3. 응용 프로그램 **파일** 단추를 클릭 하 여 **응용 프로그램 파일** 대화 상자를 엽니다.
 
-4. **응용 프로그램 파일** 대화 상자에서 필수 구성 요소로 표시 하려는 응용 프로그램 어셈블리 ( *.dll* 파일)를 선택 합니다. 응용 프로그램이 목록에 표시 되려면 응용 프로그램 어셈블리에 대 한 참조가 있어야 합니다.
+4. **응용 프로그램 파일** 대화 상자에서 필수 구성 요소로 표시 하려는 응용 프로그램 어셈블리 (*.dll* 파일)를 선택 합니다. 응용 프로그램이 목록에 표시 되려면 응용 프로그램 어셈블리에 대 한 참조가 있어야 합니다.
 
 5. **게시 상태** 필드의 드롭다운 목록에서 **필수 구성 요소** 를 선택 합니다.
 

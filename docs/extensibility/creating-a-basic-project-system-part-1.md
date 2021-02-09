@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887369"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1 부
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용 하는 컨테이너입니다. 프로젝트는 **솔루션 탐색기** 에서 솔루션의 자식으로 표시 됩니다. 프로젝트를 사용 하 여 소스 코드를 구성, 빌드, 디버그 및 배포 하 고 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.
@@ -57,13 +57,13 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 - 기본 템플릿 매개 변수 대체를 구현 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
  또한 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)의 소스 코드도 다운로드 해야 합니다. 만들려는 솔루션에서 액세스할 수 있는 위치에 파일을 추출 합니다.
 
 ## <a name="create-a-basic-project-type"></a>기본 프로젝트 형식 만들기
- **SimpleProject** 라는 c # VSIX 프로젝트를 만듭니다. (**파일**  >  **새**  >  **프로젝트** 및 **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**). Visual studio 패키지 프로젝트 항목 템플릿을 추가 합니다 ( **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택한 다음 **확장성**  >  **Visual Studio 패키지** 로 이동). 파일 이름을 *SimpleProjectPackage* 로 합니다.
+ **SimpleProject** 라는 c # VSIX 프로젝트를 만듭니다. (**파일**  >  **새**  >  **프로젝트** 및 **Visual c #**  >  **확장성**  >  **VSIX 프로젝트**). Visual studio 패키지 프로젝트 항목 템플릿을 추가 합니다 ( **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택한 다음 **확장성**  >  **Visual Studio 패키지** 로 이동). 파일 이름을 *SimpleProjectPackage* 로 합니다.
 
 ## <a name="creating-a-basic-project-template"></a>기본 프로젝트 템플릿 만들기
  이제이 기본 VSPackage을 수정 하 여 새 *.* n e t 프로젝트 형식을 구현할 수 있습니다. *. Myproj* 프로젝트 형식을 기반으로 하는 프로젝트를 만들려면 Visual Studio에서 새 프로젝트에 추가할 파일, 리소스 및 참조를 알고 있어야 합니다. 이 정보를 제공 하려면 프로젝트 파일 폴더에 프로젝트 파일을 배치 합니다. 사용자가 *. myproj* 프로젝트를 사용 하 여 프로젝트를 만들 때 파일이 새 프로젝트에 복사 됩니다.

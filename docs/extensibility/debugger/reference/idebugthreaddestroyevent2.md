@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc250f485e5507a9b50bc5a8e1c5b4c3bea37ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888188"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 이 인터페이스는 스레드 실행이 완료 될 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 전송 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugThreadDestroyEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugThreadDestroyEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|스레드의 종료 코드를 가져옵니다.|
 
@@ -51,7 +51,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

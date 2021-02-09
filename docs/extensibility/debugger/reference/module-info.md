@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888175"
 ---
 # <a name="module_info"></a>MODULE_INFO
 특정 모듈 (DLL, EXE 또는 어셈블리)을 설명 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80714309"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagMODULE_INFO { 
+typedef struct tagMODULE_INFO { 
    MODULE_INFO_FIELDS dwValidFields;
    BSTR               m_bstrName;
    BSTR               m_bstrUrl;
@@ -45,7 +45,7 @@ typedef struct tagMODULE_INFO { 
 ```
 
 ```csharp
-public struct MODULE_INFO { 
+public struct MODULE_INFO { 
    public uint     dwValidFields;
    public string   m_bstrName;
    public string   m_bstrUrl;
@@ -61,7 +61,7 @@ public struct MODULE_INFO { 
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `dwValidFields`\
  입력 하는 필드를 지정 하는 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 열거형의 플래그 조합입니다.
 
@@ -111,7 +111,7 @@ public struct MODULE_INFO { 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참고 항목
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

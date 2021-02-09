@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886615"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다. 예를 들어이 함수는 파일을 복사 하지 않고 공용 헤더 파일을 현재 프로젝트로 가져올 수 있습니다. 파일의 반환 배열에는 `lplpFileNames` 사용자가 IDE 프로젝트에 추가 하려는 파일 목록이 포함 되어 있습니다.
@@ -50,10 +50,10 @@ SCCRTN SccAddFromScc (
 
 [in, out] 디렉터리 경로 없이 모든 파일 이름에 대 한 포인터의 배열입니다. 소스 제어 플러그 인이이 배열을 할당 하 고 해제 합니다. `lpnFiles`가 1이 고 `lplpFileNames` 가이 아니면 `NULL` 에서 가리키는 배열의 첫 번째 이름에 `lplpFileNames` 대상 폴더가 포함 됩니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|파일이 성공적으로 배치 되어 프로젝트에 추가 되었습니다.|
 |SCC_I_OPERATIONCANCELED|작업을 취소 했지만 아무런 효과가 없습니다.|
@@ -71,6 +71,6 @@ SCCRTN SccAddFromScc (
 > [!NOTE]
 > VSSCI API의 초기 버전에서는 추가 된 파일에 대 한 대상 프로젝트를 지정 하는 방법을 제공 하지 않았습니다. 이를 수용 하기 위해 `lplpFIleNames` 매개 변수의 의미 체계가 출력 매개 변수가 아니라 in/out 매개 변수로 만들기 위해 향상 되었습니다. 단일 파일만 지정 하는 경우, 즉 = 1이 가리키는 값은 `lpnFiles` 의 첫 번째 요소에 `lplpFileNames` 대상 폴더가 포함 됩니다. 이러한 새 의미 체계를 사용 하기 위해 IDE는 `SccSetOption` `nOption` 매개 변수를로 설정 하 여 함수를 호출 합니다 `SCC_OPT_SHARESUBPROJ` . 소스 제어 플러그 인이 의미 체계를 지원 하지 않는 경우를 반환 `SCC_E_OPTNOTSUPPORTED` 합니다. 이렇게 하면 **소스 제어에서 추가** 기능을 사용할 수 없습니다. 플러그 인에서 **원본 제어에서 추가** 기능 ()을 지 원하는 경우에는 `SCC_CAP_ADDFROMSCC` 새 의미 체계를 지원 하 고를 반환 해야 합니다 `SCC_I_SHARESUBPROJOK` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

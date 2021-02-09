@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887096"
 ---
 # <a name="expose-types-to-visual-designers"></a>비주얼 디자이너에 형식 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 비주얼 디자이너를 표시 하기 위해 디자인 타임에 클래스 및 형식 정의에 대 한 액세스 권한이 있어야 합니다. 클래스는 현재 프로젝트의 전체 종속성 집합 (참조 및 해당 종속성)을 포함 하는 미리 정의 된 어셈블리 집합에서 로드 됩니다. 또한 비주얼 디자이너에서 사용자 지정 도구에 의해 생성 된 파일에 정의 된 클래스 및 형식에 액세스 해야 할 수도 있습니다.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887084"
 ---
 # <a name="extend-properties"></a>속성 확장
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **속성** 창은 COM 및 com + 구성 요소에 대 한 유니버설 속성 브라우저 이며 모든 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 제품을 지원 합니다. **속성** 창은 `ITypeInfo` 형식 정보 및 com + 메타 데이터와 함께 작동 하 여 IDE (통합 개발 환경)의 다른 창에서 현재 선택 된 개체에 대 한 디자인 타임 속성을 나열 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "96479538"
 
  이 섹션에서는 **속성** 창의 개별 영역과 관련 된 자세한 정보를 제공 하 고, 창을 채우도록를 호출 하 고 호출 해야 하는 인터페이스를 제공 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [속성 창 개요](../../extensibility/internals/properties-window-overview.md)
 
  도구 창과 문서 창에 상대적인 **속성** 창의 용도에 대해 설명 합니다.

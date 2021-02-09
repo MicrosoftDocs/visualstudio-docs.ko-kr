@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: eefd2b20afe94a19b21f9b8361123c193f3ec59f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886940"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>원본 제어 플러그 인 시작
 소스 제어 플러그 인을 만들려면 소스 제어 플러그 인 API에 정의 된 함수를 구현 하는 DLL을 만든 다음에 DLL을 등록 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 소스 코드 버전 제어에 사용할 수 있도록 해야 합니다.
 
  원본 제어 플러그 인에는 세 가지 버전의 소스 제어 플러그 인 API (버전 1.1, 1.2 및 1.3)를 사용할 수 있습니다. 여기에 설명 된 소스 제어 플러그 인 API는 버전 1.3입니다. 버전 1.1 및 1.2을 지 원하는 소스 제어 플러그 인과 완전히 호환 되도록 설계 되었습니다. [소스 제어 플러그 인 Api 버전 1.3 섹션의 새로운](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) 기능에서 최신 버전의 소스 제어 플러그 인 api에서 지원 되는 새로운 기능에 대해 자세히 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [방법: 소스 제어 플러그 인 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
  소스 제어 DLL에 연결 하는 데 필요한 레지스트리 항목을 만드는 방법을 설명 합니다.

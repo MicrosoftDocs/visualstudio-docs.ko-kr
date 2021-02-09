@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887070"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 디버거 프로그램을 실행 합니다. 스레드는 프로그램을 실행할 때 사용자가 보고 있는 스레드에 디버거 정보를 제공 하기 위해 반환 됩니다.
@@ -40,7 +40,7 @@ int ExecuteOnThread(
 `pThread`\
 진행 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -54,6 +54,6 @@ int ExecuteOnThread(
 
   에 전달 된 스레드는 `ExecuteOnThread` 취소할 단계를 결정할 때 유용 합니다. 스레드를 모르는 경우 실행을 실행 하면 모든 단계가 취소 됩니다. 스레드에 대 한 정보를 사용 하 여 활성 스레드의 단계를 취소 하기만 하면 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [실행](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

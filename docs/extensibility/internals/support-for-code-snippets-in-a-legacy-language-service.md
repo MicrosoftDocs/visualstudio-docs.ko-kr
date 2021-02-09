@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888149"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 코드 조각은 소스 파일에 삽입 되는 코드 조각입니다. 코드 조각은 필드 집합을 사용 하는 XML 기반 템플릿입니다. 이러한 필드는 코드 조각이 삽입 된 후 강조 표시 되며 조각이 삽입 된 컨텍스트에 따라 다른 값을 가질 수 있습니다. 코드 조각이 삽입 된 직후에 언어 서비스는 코드 조각의 서식을 지정할 수 있습니다.
@@ -85,7 +85,7 @@ ms.locfileid: "97876612"
 
  인덱스 파일의 태그에 저장 된 경로에 다음 대체 요소를 배치할 수 있습니다 \<DirPath> .
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |LCID|로캘 ID입니다.|
 |InstallRoot|Visual Studio의 루트 설치 폴더 (예: C:\Program Files\Microsoft Visual Studio 8).|
@@ -390,7 +390,7 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [코드 조각](../../ide/code-snippets.md)

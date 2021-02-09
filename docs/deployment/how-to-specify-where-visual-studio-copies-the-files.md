@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887421"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>방법: Visual Studio의 파일 복사 위치 지정
 ClickOnce를 사용하여 애플리케이션을 게시하는 경우 `Publish Location` 속성에서 애플리케이션 파일 및 매니페스트가 배치되는 위치를 지정합니다. 이 위치는 파일 경로나 FTP 서버에 대한 경로가 될 수 있습니다.
@@ -42,11 +42,11 @@ ClickOnce를 사용하여 애플리케이션을 게시하는 경우 `Publish Loc
 
 3. **게시 위치** 필드에 다음 형식 중 하나를 사용하여 게시 위치를 입력합니다.
 
-   - 파일 공유 또는 디스크 경로에 게시 하려면 UNC 경로 ( *\\ \Server\ApplicationName* ) 또는 파일 경로 ( *c:\deploy\applicationname* )를 사용 하 여 경로를 입력 합니다.
+   - 파일 공유 또는 디스크 경로에 게시 하려면 UNC 경로 (*\\ \Server\ApplicationName*) 또는 파일 경로 (*c:\deploy\applicationname*)를 사용 하 여 경로를 입력 합니다.
 
    - FTP 서버에 게시 하려면 <em>ftp://ftp.microsoft.com/ \<ApplicationName> </em>형식을 사용 하 여 경로를 입력 합니다.
 
-     찾아보기 ( **...** ) 단추가 작동 하려면 **게시 위치** 상자에 텍스트가 있어야 합니다.
+     찾아보기 (**...**) 단추가 작동 하려면 **게시 위치** 상자에 텍스트가 있어야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 - [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)

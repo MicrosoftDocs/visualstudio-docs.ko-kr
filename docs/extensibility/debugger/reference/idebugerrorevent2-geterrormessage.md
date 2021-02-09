@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888357"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 사람이 읽을 수 있는 오류 메시지를 생성할 수 있는 정보를 반환 합니다.
@@ -28,24 +28,24 @@ ms.locfileid: "80730036"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetErrorMessage(
-   MESSAGETYPE* pMessageType,
-   BSTR*        pbstrErrorFormat,
-   HRESULT*     hrErrorReason,
-   DWORD*       pdwType,
-   BSTR*        pbstrHelpFileName,
-   DWORD*       pdwHelpId
+HRESULT GetErrorMessage(
+   MESSAGETYPE* pMessageType,
+   BSTR*        pbstrErrorFormat,
+   HRESULT*     hrErrorReason,
+   DWORD*       pdwType,
+   BSTR*        pbstrHelpFileName,
+   DWORD*       pdwHelpId
 );
 ```
 
 ```csharp
 int GetErrorMessage(
-   out enum_MESSAGETYPE   pMessageType,
-   out string             pbstrErrorFormat,
-   out int                phrErrorReason,
-   out uint               pdwType,
-   out string             pbstrHelpFileName,
-   out uint               pdwHelpId
+   out enum_MESSAGETYPE   pMessageType,
+   out string             pbstrErrorFormat,
+   out int                phrErrorReason,
+   out uint               pdwType,
+   out string             pbstrHelpFileName,
+   out uint               pdwHelpId
 );
 ```
 
@@ -68,12 +68,12 @@ int GetErrorMessage(
 `pdwHelpId`\
 제한이 표시할 도움말 항목의 ID입니다 (도움말 항목이 없으면 0으로 설정 됨).
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  오류 메시지는의 줄을 따라 포맷 해야 합니다 `"What I was doing.  %1"` . `"%1"`그런 다음는 오류 코드 (에서 반환 됨)에서 파생 된 오류 메시지와 함께 호출자에 의해 대체 됩니다 `hrErrorReason` . `pMessageType`매개 변수는 최종 오류 메시지를 표시 하는 방법을 호출자에 게 알립니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
