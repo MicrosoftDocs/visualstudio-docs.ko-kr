@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f16d4bc03d2f2562321caa0e57e61dd0b597cfdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858594"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>선택한 데이터베이스 개체 중 하나 이상이 대상 클래스의 스키마와 일치하지 않는 스키마를 반환합니다.
 
@@ -25,9 +25,9 @@ ms.locfileid: "90034093"
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. **확인**을 클릭하여 대화 상자를 닫습니다.
+1. **확인** 을 클릭하여 대화 상자를 닫습니다.
 
-2. **O/R 디자이너**에서 데이터베이스 개체를 끌어 놓는 대상 클래스의 스키마와 일치하는 데이터를 반환하는 데이터베이스 개체를 선택합니다.
+2. **O/R 디자이너** 에서 데이터베이스 개체를 끌어 놓는 대상 클래스의 스키마와 일치하는 데이터를 반환하는 데이터베이스 개체를 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

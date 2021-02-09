@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858672"
 ---
 # <a name="insert-new-records-into-a-database"></a>데이터베이스에 새 레코드 삽입
 
@@ -36,7 +36,7 @@ ms.locfileid: "94436278"
 
 응용 프로그램에서 개체를 사용 하 여 데이터를 저장 하는 경우 또는 데이터베이스에 새 레코드를 만드는 방법을 보다 세밀 하 게 제어 하려면 메서드를 사용 `TableAdapter.Insert` 합니다.
 
-TableAdapter에 메서드가 없는 경우에는 `Insert` tableadapter가 저장 프로시저를 사용 하도록 구성 되어 있거나 `GenerateDBDirectMethods` 속성이로 설정 되어 있음을 의미 합니다 `false` . `GenerateDBDirectMethods`데이터 세트 디자이너 내에서 TableAdapter의 속성을로 설정 하 `true` 고 데이터 집합을 저장 합니다. **Dataset Designer** 이렇게 하면 TableAdapter가 다시 생성 됩니다. TableAdapter에 아직 메서드가 없는 경우 `Insert` 테이블은 개별 행을 구분 하는 데 충분 한 스키마 정보를 제공 하지 않을 수 있습니다. 예를 들어 테이블에 기본 키 집합이 없을 수 있습니다.
+TableAdapter에 메서드가 없는 경우에는 `Insert` tableadapter가 저장 프로시저를 사용 하도록 구성 되어 있거나 `GenerateDBDirectMethods` 속성이로 설정 되어 있음을 의미 합니다 `false` . `GenerateDBDirectMethods`데이터 세트 디자이너 내에서 TableAdapter의 속성을로 설정 하 `true` 고 데이터 집합을 저장 합니다.  이렇게 하면 TableAdapter가 다시 생성 됩니다. TableAdapter에 아직 메서드가 없는 경우 `Insert` 테이블은 개별 행을 구분 하는 데 충분 한 스키마 정보를 제공 하지 않을 수 있습니다. 예를 들어 테이블에 기본 키 집합이 없을 수 있습니다.
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Tableadapter를 사용 하 여 새 레코드 삽입
 
@@ -86,6 +86,6 @@ Tableadapter는 응용 프로그램의 요구 사항에 따라 데이터베이�
 
 연결 하려는 데이터베이스에 대 한 액세스 권한과 원하는 테이블에 대 한 삽입을 수행할 수 있는 권한이 있어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

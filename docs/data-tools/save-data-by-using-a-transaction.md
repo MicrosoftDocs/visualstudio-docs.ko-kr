@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858490"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용하여 데이터 저장
 
@@ -52,7 +52,7 @@ ms.locfileid: "94434586"
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
 - [연습: 트랜잭션에 데이터 저장](../data-tools/save-data-in-a-transaction.md)

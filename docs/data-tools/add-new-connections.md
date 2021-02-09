@@ -6,25 +6,25 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859387"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 
-데이터베이스 또는 서비스에 대 한 연결을 테스트 하 고 **서버 탐색기** , **클라우드 탐색기** 또는 **SQL Server 개체 탐색기** 를 사용 하 여 데이터베이스 내용과 스키마를 탐색할 수 있습니다. 이러한 창의 기능은 일부 범위에 겹칩니다. 기본 차이점은 다음과 같습니다.
+데이터베이스 또는 서비스에 대 한 연결을 테스트 하 고 **서버 탐색기**, **클라우드 탐색기** 또는 **SQL Server 개체 탐색기** 를 사용 하 여 데이터베이스 내용과 스키마를 탐색할 수 있습니다. 이러한 창의 기능은 일부 범위에 겹칩니다. 기본 차이점은 다음과 같습니다.
 
 - 서버 탐색기
 
    기본적으로 Visual Studio에 설치 됩니다. 를 사용 하 여 연결을 테스트 하 고 SQL Server 데이터베이스, ADO.NET 공급자가 설치 된 다른 데이터베이스 및 일부 Azure 서비스를 볼 수 있습니다. 시스템 성능 카운터, 이벤트 로그 및 메시지 큐와 같은 하위 수준 개체도 보여 줍니다. 데이터 원본에 ADO.NET 공급자가 없으면 여기에 표시 되지 않지만 프로그래밍 방식으로 연결 하 여 Visual Studio에서 사용할 수 있습니다.
 
-- Cloud Explorer
+- 클라우드 탐색기
 
    [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)에서 Visual Studio 확장으로이 창을 수동으로 설치 합니다. 는 Azure 서비스를 탐색 하 고 연결 하기 위한 특수 기능을 제공 합니다.
 

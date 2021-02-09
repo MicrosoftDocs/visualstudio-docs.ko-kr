@@ -9,19 +9,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859907"
 ---
 # <a name="suppress-code-analysis-violations"></a>코드 분석 위반 표시 안 함
 
@@ -100,11 +100,11 @@ Visual Studio에서 경고가 표시 되 `SuppressMessage` [는 경우 전역 �
 
 코드 분석 경고는 특성이 적용 되는 수준에서 표시 되지 않습니다 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> . 예를 들어, 특성을 어셈블리, 모듈, 형식, 멤버 또는 매개 변수 수준에서 적용할 수 있습니다. 이는 위반이 발생 하는 코드에 비 표시 정보를 긴밀 하 게 두는 것입니다.
 
-일반 표시 형식에는 규칙 범주 및 규칙 식별자 (사람이 읽을 수 있는 규칙 이름)가 포함 되어 있습니다. 예를 들면 다음과 같습니다.
+일반 표시 형식에는 규칙 범주 및 규칙 식별자 (사람이 읽을 수 있는 규칙 이름)가 포함 되어 있습니다. 예를 들어:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름을 생략할 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들면 다음과 같습니다.
+원본 비 표시 메타 데이터를 최소화 하는 엄격한 성능상의 이유가 있는 경우 규칙 이름을 생략할 수 있습니다. 규칙 범주와 해당 규칙 ID는 모두 충분히 고유한 규칙 식별자를 구성 합니다. 예를 들어:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

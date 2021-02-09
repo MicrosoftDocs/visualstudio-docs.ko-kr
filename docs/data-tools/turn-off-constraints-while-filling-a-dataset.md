@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a4d1e17d2f6a0159a9c0187d5e1a3d16216d0ba
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 177176250d484787ad90825226a0046fb3e099a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858296"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 
@@ -51,7 +51,7 @@ ms.locfileid: "94998319"
 
 2. **속성** 창에서 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성을 `false`로 설정합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [TableAdapters를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [데이터 세트에서의 관계](../data-tools/relationships-in-datasets.md)

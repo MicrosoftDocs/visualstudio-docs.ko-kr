@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435158"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858841"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 
@@ -65,7 +65,7 @@ ms.locfileid: "94435158"
 > [!NOTE]
 > 업데이트 순서는 모두 포함 된다는 것을 이해 하는 것이 중요 합니다. 즉, 업데이트를 수행 하는 경우 데이터 집합의 모든 테이블에 대 한 삽입 및 삭제 작업이 수행 됩니다.
 
-속성을 설정 하려면 `UpdateOrder` [데이터 소스 창](add-new-data-sources.md#data-sources-window) 에서 폼으로 항목을 끌어 온 후 `TableAdapterManager` 구성 요소 트레이에서를 선택 하 고 속성 `UpdateOrder` 창에서 속성을 설정 합니다. **Properties**
+속성을 설정 하려면 `UpdateOrder` [데이터 소스 창](add-new-data-sources.md#data-sources-window) 에서 폼으로 항목을 끌어 온 후 `TableAdapterManager` 구성 요소 트레이에서를 선택 하 고 속성 `UpdateOrder` 창에서 속성을 설정 합니다. 
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>계층적 업데이트를 수행 하기 전에 데이터 집합의 백업 복사본 만들기
 
@@ -127,6 +127,6 @@ ms.locfileid: "94435158"
 |*tableName* `TableAdapter` 속성|를 나타냅니다 `TableAdapter` . 생성 된에는 `TableAdapterManager` 관리 하는 각 클래스에 대 한 속성이 포함 `TableAdapter` 됩니다. 예를 들어 Customers 및 Orders 테이블이 포함 된 데이터 집합은 `TableAdapterManager` 및 속성이 포함 된를 사용 하 여 생성 됩니다 `CustomersTableAdapter` `OrdersTableAdapter` .|
 |`UpdateOrder` 속성|개별 insert, update 및 delete 명령의 순서를 제어 합니다. 열거형의 값 중 하나로 설정 `TableAdapterManager.UpdateOrderOption` 합니다.<br /><br /> 기본적으로은 `UpdateOrder` **Insertupdatedelete** 로 설정 됩니다. 즉, 데이터 집합의 모든 테이블에 대 한 삽입, 업데이트 및 삭제 작업이 수행 됩니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

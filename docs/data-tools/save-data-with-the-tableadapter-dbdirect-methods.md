@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858451"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 
@@ -41,7 +41,7 @@ ms.locfileid: "94434573"
 
 - 데이터베이스에 직접 액세스 하 고 삽입, 업데이트 및 삭제를 수행 하는 메서드를 추가 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -119,11 +119,11 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 2. 각 단추에 대해 다음 **이름** 및 **텍스트** 속성을 설정합니다.
 
-    |Name|텍스트|
+    |이름|텍스트|
     |----------|----------|
     |`InsertButton`|**삽입**|
-    |`UpdateButton`|**Update**|
-    |`DeleteButton`|**삭제**|
+    |`UpdateButton`|**업데이트**|
+    |`DeleteButton`|**Delete**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>데이터베이스에 새 레코드를 삽입하는 코드를 추가하려면
 
@@ -170,6 +170,6 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 - **데이터 원본** 창에서 **마법사로 데이터 세트 구성** 을 선택하여 추가 테이블을 데이터 세트에 추가합니다. 관련 노드를 폼으로 끌어 관련 데이터를 표시하는 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

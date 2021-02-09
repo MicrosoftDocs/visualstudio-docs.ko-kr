@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858997"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio에서 데이터 바인딩된 컨트롤에 대한 캡션을 만드는 방식 사용자 지정
 
@@ -28,13 +28,13 @@ ms.locfileid: "94436630"
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression** , smartcaptionexpression 및 smartcaptionexpression 값 **SmartCaptionReplacement** 을 설정 하 여 이러한 레이블이 **SmartCaptionSuffix** 생성 되는 방식을 사용자 지정할 수 있습니다.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression**, smartcaptionexpression 및 smartcaptionexpression 값 을 설정 하 여 이러한 레이블이  생성 되는 방식을 사용자 지정할 수 있습니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression** , smartcaptionexpression 및 smartcaptionexpression 값 **SmartCaptionReplacement** 을 설정 하 여 이러한 레이블이 **SmartCaptionSuffix** 생성 되는 방식을 사용자 지정할 수 있습니다.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** 레지스트리 키에서 **Smartcaptionexpression**, smartcaptionexpression 및 smartcaptionexpression 값 을 설정 하 여 이러한 레이블이  생성 되는 방식을 사용자 지정할 수 있습니다.
 
 ::: moniker-end
 
@@ -140,6 +140,6 @@ ms.locfileid: "94436630"
 
     다음 번에 **데이터 소스** 창에서 항목을 끌면 수정 되지 않은 캡션으로 캡션 레이블이 생성 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

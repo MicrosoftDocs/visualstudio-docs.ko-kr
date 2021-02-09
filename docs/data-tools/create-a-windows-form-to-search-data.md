@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859114"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>데이터 검색을 위한 Windows Form 만들기
 
@@ -45,7 +45,7 @@ ms.locfileid: "94435289"
 
 - 매개 변수를 폼에 입력 하 고 매개 변수가 있는 쿼리를 실행 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -147,6 +147,6 @@ C # 또는 Visual Basic에 대 한 새 **Windows Forms 앱** 프로젝트를 만
 
 - 데이터 세트을 편집하여 데이터베이스 개체를 추가하거나 편집합니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

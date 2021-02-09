@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858191"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기
 이 연습에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 호스팅되는 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 만든 다음, Windows Forms 애플리케이션에서 이 서비스에 액세스하는 방법을 보여줍니다.
@@ -42,7 +42,7 @@ ms.locfileid: "94998267"
 
 - 필요한 경우 애플리케이션에 필터링 기능을 추가합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
 1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자** 를 통해 설치 합니다. **Visual Studio 설치 관리자** 에서 **데이터 저장소 및 처리** 워크 로드의 일부로 또는 개별 구성 요소로 SQL Server Express LocalDB를 설치할 수 있습니다.
@@ -80,7 +80,7 @@ ms.locfileid: "94998267"
 
 ### <a name="to-create-the-entity-data-model"></a>엔터티 데이터 모델을 만들려면
 
-1. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 2. **새 항목 추가** 대화 상자에서 **데이터** 노드를 선택한 다음, **ADO.NET 엔터티 데이터 모델** 항목을 선택합니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "94998267"
 
 ### <a name="to-create-the-data-service"></a>데이터 서비스를 만들려면
 
-1. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 2. **새 항목 추가** 대화 상자에서 **웹** 노드를 선택한 다음, **WCF Data Service 5.6** 항목을 선택합니다.
 
@@ -154,7 +154,7 @@ ms.locfileid: "94998267"
 
 ### <a name="to-create-the-client-application"></a>클라이언트 애플리케이션을 만들려면
 
-1. 메뉴 모음에서 파일, **Add**  >  **새 프로젝트** 추가를 선택 합니다.
+1. 메뉴 모음에서 파일,   >  **새 프로젝트** 추가를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **Visual c #** 노드를 확장 하 고 **Windows** 노드를 선택한 다음 **Windows Forms 응용 프로그램** 을 선택 합니다.
 
@@ -180,7 +180,7 @@ ms.locfileid: "94998267"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>서비스에 대한 데이터 바인딩을 사용하려면
 
-1. 메뉴 모음에서 **View**  >  **다른 창**  >  **데이터 원본** 보기를 선택 합니다.
+1. 메뉴 모음에서   >  **다른 창**  >  **데이터 원본** 보기를 선택 합니다.
 
    **데이터 원본** 창이 열립니다.
 
@@ -288,7 +288,7 @@ ms.locfileid: "94998267"
 
 6. 텍스트 상자에 **London** 을 입력한 다음, 단추를 선택합니다. London의 고객만 표시됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
-- [Visual Studio에서 서비스 및 WCF Data Services Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

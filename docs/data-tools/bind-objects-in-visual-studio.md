@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859309"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio에서 개체를 데이터 원본으로 바인딩
 

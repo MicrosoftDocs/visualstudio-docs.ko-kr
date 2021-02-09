@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858568"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
 
@@ -49,7 +49,7 @@ ms.locfileid: "94434677"
 
 - 폼 간에 데이터를 전달합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -200,6 +200,6 @@ Form2에 TableAdapter 쿼리를 추가 하 여 Form1에서 선택한 고객에 �
 
 - 데이터를 데이터베이스로 다시 보내는 기능을 추가합니다. 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

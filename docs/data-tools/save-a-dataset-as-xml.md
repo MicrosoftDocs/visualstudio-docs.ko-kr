@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9030740a25312ea1463b950e34061884e9487ba4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858529"
 ---
 # <a name="save-a-dataset-as-xml"></a>데이터 세트를 XML로 저장
 
@@ -47,6 +47,6 @@ ms.locfileid: "94434625"
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

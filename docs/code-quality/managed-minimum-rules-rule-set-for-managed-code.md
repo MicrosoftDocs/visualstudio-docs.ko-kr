@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a0e5c59621f948cbb7465a6726fa8c3003480d4
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8711fd0a265618a5aaf4f84edcf7dd2b081b16a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859816"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>관리 코드에 대한 관리 최소 규칙 규칙 집합
 

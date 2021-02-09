@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859348"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 컨트롤 바인딩
 
@@ -47,7 +47,7 @@ ms.locfileid: "94518624"
 
 ## <a name="data-sources-window"></a>데이터 소스 창
 
-데이터 원본은 프로젝트에서 **데이터 원본** 창의 항목으로 사용할 수 있습니다. 이 창은 폼 디자인 화면이 프로젝트의 활성 창인 경우에 표시 되며 **View**  >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 프로젝트를 열 때 볼 수도 있습니다. 이 창에서 항목을 끌어 기본 데이터에 바인딩된 컨트롤을 만들 수 있으며, 마우스 오른쪽 단추를 클릭 하 여 데이터 소스를 구성할 수도 있습니다.
+데이터 원본은 프로젝트에서 **데이터 원본** 창의 항목으로 사용할 수 있습니다. 이 창은 폼 디자인 화면이 프로젝트의 활성 창인 경우에 표시 되며   >  **다른 Windows**  >  **데이터 소스** 보기를 선택 하 여 프로젝트를 열 때 볼 수도 있습니다. 이 창에서 항목을 끌어 기본 데이터에 바인딩된 컨트롤을 만들 수 있으며, 마우스 오른쪽 단추를 클릭 하 여 데이터 소스를 구성할 수도 있습니다.
 
 ![데이터 소스 창](../data-tools/media/raddata-data-sources-window.png)
 
@@ -57,9 +57,9 @@ ms.locfileid: "94518624"
 
 다음 표에서는 컨트롤을 데이터에 바인딩하기 위해 수행 하는 가장 일반적인 몇 가지 작업을 보여 줍니다.
 
-|Task|자세한 정보|
+|Task|추가 정보|
 |----------| - |
-|**데이터 원본** 창을 엽니다.|편집기에서 디자인 화면을 열고 **View**  >  **데이터 원본** 보기를 선택 합니다.|
+|**데이터 원본** 창을 엽니다.|편집기에서 디자인 화면을 열고   >  **데이터 원본** 보기를 선택 합니다.|
 |프로젝트에 데이터 원본을 추가합니다.|[새 데이터 원본 추가](../data-tools/add-new-data-sources.md)|
 |**데이터 원본** 창의 항목을 디자이너로 끌 때 만들어지는 컨트롤을 설정합니다.|[데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |**데이터 원본** 창의 항목과 연결되는 컨트롤 목록을 수정합니다.|[데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

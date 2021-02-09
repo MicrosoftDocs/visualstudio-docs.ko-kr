@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859283"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 세트로 WPF 컨트롤 바인딩
 
@@ -50,11 +50,11 @@ ms.locfileid: "94518525"
 
 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 
-- 데이터 세트 및 TableAdapter. 자세한 내용은 [Visual Studio 및 tableadapter의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 를 [TableAdapters](../data-tools/create-and-configure-tableadapters.md)참조 하세요.
+- 데이터 세트 및 TableAdapter. 자세한 내용은 [Visual Studio 및 tableadapter의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md) 를 [](../data-tools/create-and-configure-tableadapters.md)참조 하세요.
 
 - WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)를 참조 하세요.
 
-## <a name="create-the-project"></a>프로젝트를 만듭니다.
+## <a name="create-the-project"></a>프로젝트 만들기
 
 제품 레코드를 표시 하는 새 WPF 프로젝트를 만듭니다.
 
@@ -124,7 +124,7 @@ ms.locfileid: "94518525"
 
      데이터 세트 디자이너가 열립니다.
 
-2. 디자이너에서 **채우기** , **GetData()** 쿼리를 마우스 오른쪽 단추로 클릭하고 **구성** 을 선택합니다.
+2. 디자이너에서 **채우기**, **GetData()** 쿼리를 마우스 오른쪽 단추로 클릭하고 **구성** 을 선택합니다.
 
      **TableAdapter 구성** 마법사가 열립니다.
 

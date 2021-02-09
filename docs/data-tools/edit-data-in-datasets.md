@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858919"
 ---
 # <a name="edit-data-in-datasets"></a>데이터 세트의 데이터 편집
 모든 데이터베이스의 테이블에서 데이터를 편집 하는 것 처럼 데이터 테이블의 데이터를 편집 합니다. 이 프로세스에는 테이블의 레코드 삽입, 업데이트 및 삭제가 포함 될 수 있습니다. 데이터 바인딩된 폼에서 사용자가 편집할 수 있는 필드를 지정할 수 있습니다. 이러한 경우 데이터 바인딩 인프라는 모든 변경 내용 추적을 처리 하 여 나중에 변경 내용을 데이터베이스로 다시 전송할 수 있도록 합니다. 프로그래밍 방식으로 데이터를 편집 하 고 해당 변경 내용을 데이터베이스에 다시 보내려면 변경 내용 추적을 수행 하는 개체 및 메서드를 사용 해야 합니다.
@@ -109,6 +109,6 @@ ms.locfileid: "94435093"
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

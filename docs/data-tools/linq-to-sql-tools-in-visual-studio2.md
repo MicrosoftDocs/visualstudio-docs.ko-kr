@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 20473125814b1ee0569579c7248b7b940cd31500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858646"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio의 LINQ to SQL 도구
 
@@ -23,7 +23,7 @@ LINQ to SQL은 Microsoft에서 릴리스된 최초의 개체 관계형 매핑 �
 
 ## <a name="install-the-linq-to-sql-tools"></a>LINQ to SQL 도구 설치
 
-Visual Studio에서 **개체 관계형 디자이너** ( **O/R 디자이너** )를 사용하여 SQL 테이블을 나타내는 LINQ to SQL 클래스를 만듭니다. O/R 디자이너는 .dbml 파일을 편집하는 UI입니다. 디자이너 화면을 사용하여 .dbml 파일을 편집하려면 Visual Studio 워크로드의 일부로 기본적으로 설치되지 않는 LINQ to SQL 도구가 필요합니다.
+Visual Studio에서 **개체 관계형 디자이너**(**O/R 디자이너**)를 사용하여 SQL 테이블을 나타내는 LINQ to SQL 클래스를 만듭니다. O/R 디자이너는 .dbml 파일을 편집하는 UI입니다. 디자이너 화면을 사용하여 .dbml 파일을 편집하려면 Visual Studio 워크로드의 일부로 기본적으로 설치되지 않는 LINQ to SQL 도구가 필요합니다.
 
 LINQ to SQL 도구를 설치하려면 Visual Studio 설치 프로그램을 시작하고, **수정** 을 선택한 다음 **개별 구성 요소** 탭을 선택하고, **코드 도구** 범주에서 **LINQ to SQL 도구** 를 선택합니다.
 

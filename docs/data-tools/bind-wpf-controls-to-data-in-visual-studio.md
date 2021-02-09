@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 137d8970ebfc70dcf102fa70d7bcf18d81677535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859270"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
@@ -35,7 +35,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 다음 표에서는 **데이터 원본** 창에서 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]로 항목을 끌어서 수행할 수 있는 작업을 보여 줍니다.
 
-|Task|자세한 정보|
+|Task|추가 정보|
 |----------| - |
 |새 데이터 바인딩된 컨트롤을 만듭니다.<br /><br /> 기존 컨트롤을 데이터에 바인딩합니다.|[데이터 세트로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |부모-자식 관계로 관련 데이터를 표시하는 컨트롤을 만듭니다. 그러면 사용자가 어느 한 컨트롤에서 부모 데이터 레코드를 선택하면 선택한 부모 레코드의 관련 자식 데이터가 다른 한 컨트롤에 표시됩니다.|[WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)|

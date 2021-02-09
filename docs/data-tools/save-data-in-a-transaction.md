@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858477"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>연습: 트랜잭션에 데이터 저장
 
 이 연습에서는 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 하는 방법을 보여 줍니다 <xref:System.Transactions> . 이 연습에서는 Windows Forms 응용 프로그램을 만듭니다. 데이터 소스 구성 마법사를 사용 하 여 Northwind 샘플 데이터베이스의 두 테이블에 대 한 데이터 집합을 만듭니다. Windows form에 데이터 바인딩된 컨트롤을 추가 하 고 BindingNavigator의 저장 단추에 대 한 코드를 수정 하 여 TransactionScope 내에서 데이터베이스를 업데이트 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "94434547"
 
      **NorthwindDataSet** 가 프로젝트에 추가 되 고 `Customers` 및 `Orders` 테이블이 **데이터 소스** 창에 표시 됩니다.
 
-## <a name="add-controls-to-the-form"></a>폼에 컨트롤 추가
+## <a name="add-controls-to-the-form"></a>양식에 컨트롤 추가
 
 **데이터 소스** 창에서 폼으로 항목을 끌어 데이터 바인딩된 컨트롤을 만들 수 있습니다.
 
@@ -171,7 +171,7 @@ ms.locfileid: "94434547"
 
 **F5** 키를 눌러 애플리케이션을 실행합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 트랜잭션을 사용하여 데이터 저장](../data-tools/save-data-by-using-a-transaction.md)
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

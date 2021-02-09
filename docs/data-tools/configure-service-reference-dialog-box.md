@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859218"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 

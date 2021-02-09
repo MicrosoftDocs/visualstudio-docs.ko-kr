@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6b4d1782a82a1eb2147d540b1799f5152c4f2308
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858438"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>데이터 소스 창에서 끌어올 때 만들 컨트롤 설정
 
@@ -39,7 +39,7 @@ ms.locfileid: "94434469"
 2. **데이터 소스** 창에서 설정 하려는 데이터 테이블이 나 개체를 나타내는 항목을 선택 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않은 경우 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 열 수 있습니다.
+   > **데이터 소스** 창이 열려 있지 않은 경우   >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 열 수 있습니다.
 
 3. 항목에 대 한 드롭다운 메뉴를 클릭 하 고 메뉴에서 다음 항목 중 하나를 클릭 합니다.
 
@@ -71,6 +71,6 @@ ms.locfileid: "94434469"
 
      열 또는 속성에 대 한 컨트롤을 만들지 않으려면 드롭다운 메뉴에서 **없음** 을 선택 합니다. 이 방법은 부모 테이블이 나 개체를 디자이너에 끌어 놓을 수 있지만 특정 열 또는 속성을 포함 하지 않으려는 경우에 유용 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)

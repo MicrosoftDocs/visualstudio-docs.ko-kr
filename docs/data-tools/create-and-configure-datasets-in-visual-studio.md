@@ -10,15 +10,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f625b17841fe63b0c42dcfb82c2e859d6406e776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859127"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>방법: Visual Studio에서 데이터 집합 만들기 및 구성
 
@@ -86,11 +86,11 @@ ms.locfileid: "94435406"
 
 2. <xref:System.Data.DataTable> **도구 상자** 의 **데이터 집합** 탭에서 **데이터 세트 디자이너** 로 클래스를 끌어 옵니다.
 
-3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 테이블을 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **열** 추가를 선택 합니다. **속성** 창을 사용 하 여 열의 데이터 형식을 설정 하 고 필요한 경우 키를 설정 합니다.
+3. 열을 추가 하 여 데이터 테이블을 정의 합니다. 테이블을 마우스 오른쪽 단추로 클릭 하 고   >  **열** 추가를 선택 합니다. **속성** 창을 사용 하 여 열의 데이터 형식을 설정 하 고 필요한 경우 키를 설정 합니다.
 
 독립 실행형 테이블은 `Fill` 데이터를 채울 수 있도록 독립 실행형 테이블에서 논리를 구현 해야 합니다. 독립 실행형 데이터 테이블을 채우는 방법에 대 한 자세한 내용은 [DataAdapter에서 데이터 집합 채우기](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [데이터 세트에서의 관계](../data-tools/relationships-in-datasets.md)

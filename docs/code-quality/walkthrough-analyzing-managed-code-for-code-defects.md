@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859608"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>연습: 정적 코드 분석을 사용 하 여 코드 오류 찾기
 
@@ -166,7 +166,7 @@ ms.locfileid: "94349024"
 
     1. **오류 목록** 에서 경고를 선택 합니다.
 
-    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 **표시 표시 안 함 파일에서 표시 안 함** 을 선택  >  **In Suppression File** 합니다.
+    1. 오른쪽 클릭 메뉴 (상황에 맞는 메뉴)에서 비 **표시 표시 안 함 파일에서 표시 안 함** 을 선택  >  합니다.
 
 1. 프로젝트를 다시 빌드합니다.
 

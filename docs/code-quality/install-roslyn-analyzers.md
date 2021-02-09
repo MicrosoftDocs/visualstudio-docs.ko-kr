@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3d4833ba922ddde1a1770cfd75cf446f210e2c79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859855"
 ---
 # <a name="install-third-party-analyzers"></a>타사 분석기 설치
 
@@ -35,7 +35,7 @@ Visual Studio에는 핵심 *Roslyn*(.NET Compiler Platform) 분석기가 포함 
    > [!NOTE]
    > 각 분석기 패키지의 www.nuget.org 페이지에는 **패키지 관리자 콘솔** 에 붙여 넣을 수 있는 명령이 표시 됩니다. 텍스트를 클립보드에 복사 하는 편리한 단추도 있습니다.
 
-   분석기 어셈블리는 설치 되 고 **참조** 분석기 아래 **솔루션 탐색기** 에 표시 됩니다  >  **Analyzers**.
+   분석기 어셈블리는 설치 되 고 **참조** 분석기 아래 **솔루션 탐색기** 에 표시 됩니다  >  .
 
 ## <a name="to-install-vsix-analyzers"></a>VSIX 분석기를 설치 하려면
 

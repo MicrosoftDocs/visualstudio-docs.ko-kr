@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: a56a567fc3b75fa64aac6890b953b99304cc1f6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858100"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>경고: 동작 구성 대화 상자에 적용되지 않은 변경이 있음
 
@@ -29,6 +29,6 @@ ms.locfileid: "94998215"
 
 - 이전 변경 내용을 취소 하 고 계속 하려면 **아니요** 를 클릭 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

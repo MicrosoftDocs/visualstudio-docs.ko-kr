@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858763"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>방법: 서비스의 데이터에 연결
 
@@ -59,7 +59,7 @@ ms.locfileid: "94435015"
 
 응용 프로그램에 기능을 추가 하려면 **데이터 소스** 창에서 항목을 선택 하 고 폼으로 끌어서 바인딩된 컨트롤을 만듭니다. 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [WCF 데이터 서비스에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Visual Studio에서 Windows Communication Foundation Services 및 WCF data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

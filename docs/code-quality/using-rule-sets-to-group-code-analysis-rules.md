@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859660"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>규칙 집합을 사용 하 여 코드 분석 규칙 그룹화
 
@@ -60,7 +60,7 @@ Visual Studio에서 코드 분석을 구성 하는 경우 기본 제공 *규칙 
 
 ## <a name="specify-a-rule-set-for-a-project"></a>프로젝트에 대 한 규칙 집합 지정
 
-프로젝트에 대 한 규칙 집합은 Visual Studio 프로젝트 파일의 **CodeAnalysisRuleSet** 속성으로 지정 됩니다. 예를 들면 다음과 같습니다.
+프로젝트에 대 한 규칙 집합은 Visual Studio 프로젝트 파일의 **CodeAnalysisRuleSet** 속성으로 지정 됩니다. 예를 들어:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -69,6 +69,6 @@ Visual Studio에서 코드 분석을 구성 하는 경우 기본 제공 *규칙 
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)
