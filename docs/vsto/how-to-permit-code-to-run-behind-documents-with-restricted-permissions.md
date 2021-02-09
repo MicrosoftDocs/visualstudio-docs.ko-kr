@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1a65e99712658567996598d2190447ff09cf9b05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888890"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>방법: 제한 된 권한으로 문서 뒤에 코드를 실행할 수 있도록 허용
   Microsoft Office의 IRM (정보 Rights Management) 기능을 사용 하 여 문서나 통합 문서에 대 한 사용 권한을 제한할 수 있습니다. 기본적으로 제한 된 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서를 실행 하는 코드는 실행할 수 없습니다. 관리 코드 확장에서 개체 모델에 액세스할 수 있고 솔루션이 작동 하도록 기본값을 변경할 수 있습니다.

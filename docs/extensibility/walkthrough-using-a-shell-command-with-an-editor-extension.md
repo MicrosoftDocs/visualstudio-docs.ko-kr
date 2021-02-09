@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888916"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>연습: 편집기 확장에서 셸 명령 사용
 VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있습니다. 이 연습에서는 메뉴 명령을 호출 하 여 편집기에서 텍스트 뷰에 장식을 추가 하는 방법을 보여 줍니다.
 
  이 연습에서는 MEF (Managed Extensibility Framework) 구성 요소 부분과 함께 VSPackage를 사용 하는 방법을 보여 줍니다. 메뉴 명령을 Visual Studio 셸에 등록 하려면 VSPackage를 사용 해야 합니다. 명령을 사용 하 여 MEF 구성 요소 부분에 액세스할 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
@@ -693,5 +693,5 @@ VSPackage에서 메뉴 명령과 같은 기능을 편집기에 추가할 수 있
 
      Fourscore...
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

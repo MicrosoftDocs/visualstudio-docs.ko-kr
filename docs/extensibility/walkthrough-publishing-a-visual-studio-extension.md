@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889007"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
 이 연습에서는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Visual Studio Marketplace에 확장을 추가 하면 개발자가 **확장 및 업데이트** 를 사용 하 여 새 확장과 업데이트 된 확장을 찾아볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "98533917"
 
 이 문서에서는 기본 VSPackage 확장을 사용 하지만 단계는 모든 종류의 확장에 대해 유효 합니다.
 
-- 이라는 c #에서 `TestPublish` 메뉴 명령을 포함 하는 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)를 참조 하세요.
+- 이라는 c #에서 `TestPublish` 메뉴 명령을 포함 하는 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: 헬로 월드](../extensibility/extensibility-hello-world.md)를 참조 하세요.
 
 ## <a name="package-your-extension"></a>확장 패키지
 
@@ -92,7 +92,7 @@ ms.locfileid: "98533917"
 
     * **지원 되는 Visual studio 버전** 에서는 확장이 작동 하는 visual studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
 
-    * **Type**. 가장 일반적인 확장 유형은 **도구** 입니다.
+    * **형식**. 가장 일반적인 확장 유형은 **도구** 입니다.
 
     * **범주**. 확장에 가장 적합 한 최대 3 개까지 선택 합니다.
 
@@ -160,7 +160,7 @@ ms.locfileid: "98533917"
 
     - **지원 되는 Visual Studio 버전** \* 확장이 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장은 해당 버전에만 설치 됩니다.
 
-    - **Type**. 가장 일반적인 확장 유형은 **도구** 입니다.
+    - **형식**. 가장 일반적인 확장 유형은 **도구** 입니다.
 
     - **범주**. 확장에 가장 적합 한 최대 3 개까지 선택 합니다.
 

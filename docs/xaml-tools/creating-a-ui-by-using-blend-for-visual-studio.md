@@ -9,15 +9,15 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889267"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 개요
 

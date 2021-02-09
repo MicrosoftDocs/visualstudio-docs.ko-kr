@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Toolbox
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cc507d31f791a3f3d7addbcffc0b9b87963d443f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888721"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 문서에서 Windows Forms 컨트롤의 제한 사항
 

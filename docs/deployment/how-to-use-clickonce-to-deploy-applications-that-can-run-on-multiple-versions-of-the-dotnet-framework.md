@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c87ed73d2c3a26ecc4522c6497ac71e33e46a6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889124"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>방법: ClickOnce를 사용하여 여러 버전의 .NET 프레임워크에서 실행할 수 있는 애플리케이션 배포
 ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대상으로 하는 응용 프로그램을 배포할 수 있습니다. 이렇게 하려면 응용 프로그램 및 배포 매니페스트를 생성 하 고 업데이트 해야 합니다.
@@ -106,7 +106,7 @@ ClickOnce 배포 기술을 사용 하 여 여러 버전의 .NET Framework를 대
 
 ## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency> 요소인](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> 요소](../deployment/dependency-element-clickonce-application.md)
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
 - [구성 파일 스키마](/dotnet/framework/configure-apps/file-schema/index)

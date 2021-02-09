@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78f27a3b2b2607f04a61352b543774f8b59e88c
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 89a3ed681f51b392e076cff0fcb06b2f868c0aa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888994"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 제거
 대부분의 경우에는 VSPackage를 설치 하기 위해 수행 하는 작업을 "실행 취소" 하 여 VSPackage를 제거할 수 Windows Installer. [설치 후 실행 해야 하는 명령](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 에서 설명한 사용자 지정 작업은 제거 후에도 실행 해야 합니다. devenv.exe 호출은 설치 및 제거에 대해 모두 InstallFinalize 표준 작업 바로 전에 발생 하므로 CustomAction 및 InstallExecuteSequence 테이블 항목은 두 경우 모두 제공 됩니다.

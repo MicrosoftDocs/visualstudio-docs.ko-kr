@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888734"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 열기
   <xref:Microsoft.Office.Interop.Excel.Workbooks>Microsoft Office Excel의 컬렉션을 사용 하 여 열려 있는 모든 통합 문서를 사용 하 고 통합 문서를 열 수 있습니다.

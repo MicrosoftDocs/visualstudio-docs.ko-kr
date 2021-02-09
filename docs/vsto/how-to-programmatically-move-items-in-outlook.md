@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888864"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>방법: 프로그래밍 방식으로 Outlook에서 항목 이동
   이 예제에서는 **받은 편지함** 의 읽지 않은 전자 메일 메시지를 **Test** 라는 폴더로 이동 합니다. 이 예에서는 필드에 **Test** 라는 단어가 있는 메시지만 이동 합니다 `Subject` .

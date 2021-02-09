@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 655a291cec967663422011ca620a15d7cb080ce2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889228"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend의 아트보드 보조 키
 일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 표에는 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나열되어 있습니다.
@@ -26,8 +26,8 @@ ms.locfileid: "92796282"
 |**선택** 도구를 선택한 상태에서 선택한 개체 조금 이동|화살표 키 누름|
 |아트보드 이동|**스페이스바** 를 누른 채로 아트보드 끌기|
 |아트보드 확대/축소|마우스 휠 돌리기|
-|아트보드 확대|**Ctrl** + 아트 보드에서 아무 곳 이나 클릭 하 여 Ctrl **스페이스바** 를 누르고 있습니다.|
-|아트보드 축소|**Ctrl** + **Alt** + 아트 보드에서 아무 곳 이나 클릭 하는 동안 Ctrl Alt **스페이스바** 를 누르고 있습니다.|
+|아트보드 확대| + 아트 보드에서 아무 곳 이나 클릭 하 여 Ctrl **스페이스바** 를 누르고 있습니다.|
+|아트보드 축소| +  + 아트 보드에서 아무 곳 이나 클릭 하는 동안 Ctrl Alt **스페이스바** 를 누르고 있습니다.|
 |아트보드를 왼쪽 및 오른쪽으로 이동|**Shift** 키를 누른 채로 마우스 휠 돌리기|
 |아트보드를 위/아래로 이동|**Ctrl** 키를 누른 채로 마우스 휠 돌리기|
 |그리거나 변환 중인 개체의 비율 제한|**Shift 키** 를 누른 채|

@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889306"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 활동 디자이너
 
@@ -33,7 +33,7 @@ ms.locfileid: "94433572"
 
 **TryCatch** 활동 디자이너를 **도구 상자** 에서 끌어다가 등 일반적으로 활동을 배치 하는 워크플로 디자이너 화면에 놓을 수 있습니다 <xref:System.Activities.Statements.Sequence> . 이렇게 하면 기본 <xref:System.Activities.Statements.TryCatch>인 TryCatch라는 이름의 <xref:System.Activities.Activity.DisplayName%2A> 활동이 만들어집니다. <xref:System.Activities.Activity.DisplayName%2A> **TryCatch** 활동 디자이너의 머리글 또는 속성 표의 **DisplayName** 상자에서 값을 편집할 수 있습니다. **TryCatch** 활동 디자이너의 화면에서 다른 속성을 편집 해야 합니다.
 
-**TryCatch** 디자이너의 오른쪽 위 모퉁이에 있는 확장 단추를 클릭 하 여 확장 된 보기에 **Try** , **catch** 및 **Finally** 상자를 표시 합니다. Catch를 추가 하려면 **TryCatch** 디자이너의 **새 catch 추가** 단추를 클릭 합니다. 단추가 형식 콤보 상자로 바뀝니다. 예외 형식을 선택하고 &lt;ENTER&gt; 키를 눌러 Catch를 추가합니다. **Catch를** 추가한 후에는 catch 영역이 확장 되 고 catch에 활동을 끌어 catch에 대 한 실행 논리를 정의할 수 있습니다. 확장된 Catch 영역 오른쪽에는 텍스트 상자가 있습니다. 이 텍스트 상자를 사용하여 예외 변수의 이름을 지정할 수 있습니다. 예외 변수는 동일한 **Catch** 내의 활동에만 사용할 수 있습니다.
+**TryCatch** 디자이너의 오른쪽 위 모퉁이에 있는 확장 단추를 클릭 하 여 확장 된 보기에 **Try**, **catch** 및 **Finally** 상자를 표시 합니다. Catch를 추가 하려면 **TryCatch** 디자이너의 **새 catch 추가** 단추를 클릭 합니다. 단추가 형식 콤보 상자로 바뀝니다. 예외 형식을 선택하고 &lt;ENTER&gt; 키를 눌러 Catch를 추가합니다. **Catch를** 추가한 후에는 catch 영역이 확장 되 고 catch에 활동을 끌어 catch에 대 한 실행 논리를 정의할 수 있습니다. 확장된 Catch 영역 오른쪽에는 텍스트 상자가 있습니다. 이 텍스트 상자를 사용하여 예외 변수의 이름을 지정할 수 있습니다. 예외 변수는 동일한 **Catch** 내의 활동에만 사용할 수 있습니다.
 
 **TryCatch** 디자이너는 **Catch** 편집을 지원 하지 않습니다. 예외 유형을 변경 하려면 Catch를 삭제 하 고 새 **Catch** 를 추가 해야 합니다. **Catch** 를 선택 하 고 삭제 하거나 마우스 오른쪽 단추를 클릭 하 여 액세스 하는 상황에 맞는 메뉴에서 **삭제** 를 선택 하 여 삭제할 수 있습니다.
 
@@ -41,14 +41,14 @@ ms.locfileid: "94433572"
 
 다음 표에서는 속성을 보여 주고 <xref:System.Activities.Statements.TryCatch> 디자이너에서 이러한 속성을 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.TryCatch> 활동의 선택적 이름을 지정합니다. 기본 TryCatch입니다.|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|거짓|<xref:System.Activities.Statements.TryCatch>가 실행될 때 처음으로 실행되는 동작입니다.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|거짓|활동에서 예외를 throw 할 때 확인할 **Catch** 요소의 컬렉션입니다 <xref:System.Activities.Statements.TryCatch.Try%2A> .<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A>에 하나 이상의 활동을 추가하거나 <xref:System.Activities.Statements.TryCatch.Finally%2A> 블록에 활동을 추가해야 합니다.|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|거짓|<xref:System.Activities.Statements.TryCatch.Try%2A> 및 <xref:System.Activities.Statements.TryCatch.Catches%2A> 컬렉션의 필요한 모든 활동이 실행 완료될 때 실행할 작업입니다.<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A>에 하나 이상의 활동을 추가하거나 <xref:System.Activities.Statements.TryCatch.Finally%2A> 블록에 활동을 추가해야 합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TryCatch> 활동의 선택적 이름을 지정합니다. 기본 TryCatch입니다.|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|<xref:System.Activities.Statements.TryCatch>가 실행될 때 처음으로 실행되는 동작입니다.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|활동에서 예외를 throw 할 때 확인할 **Catch** 요소의 컬렉션입니다 <xref:System.Activities.Statements.TryCatch.Try%2A> .<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A>에 하나 이상의 활동을 추가하거나 <xref:System.Activities.Statements.TryCatch.Finally%2A> 블록에 활동을 추가해야 합니다.|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|<xref:System.Activities.Statements.TryCatch.Try%2A> 및 <xref:System.Activities.Statements.TryCatch.Catches%2A> 컬렉션의 필요한 모든 활동이 실행 완료될 때 실행할 작업입니다.<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A>에 하나 이상의 활동을 추가하거나 <xref:System.Activities.Statements.TryCatch.Finally%2A> 블록에 활동을 추가해야 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [컬렉션](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)

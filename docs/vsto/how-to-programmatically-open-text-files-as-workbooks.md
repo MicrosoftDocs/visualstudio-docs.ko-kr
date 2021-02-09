@@ -13,15 +13,15 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888747"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>방법: 프로그래밍 방식으로 텍스트 파일을 통합 문서로 열기
   텍스트 파일을 통합 문서로 열 수 있습니다. 열려는 텍스트 파일의 이름을 전달 해야 합니다. 구문 분석을 시작할 행 번호와 파일의 데이터 열 형식 등 여러 가지 선택적 매개 변수를 지정할 수 있습니다.

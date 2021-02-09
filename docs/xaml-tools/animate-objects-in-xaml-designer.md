@@ -8,13 +8,13 @@ ms.topic: how-to
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 2c1c4100921430daa0faa0daba3c3c3f5328fb3d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 162ed3ddb7e8f71a14c9dd8415500cc845316e82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889254"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>XAML 디자이너에서 개체에 애니메이션 효과 주기
 

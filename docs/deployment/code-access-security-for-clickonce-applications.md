@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4bf2977b3b6875a7dc38711b235f5848aa78559e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889163"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 애플리케이션의 코드 액세스 보안
 ClickOnce 애플리케이션은 .NET Framework를 기반으로 하며 코드 액세스 보안 제약 조건의 적용을 받습니다. 따라서 코드 액세스 보안의 의미를 이해하여 ClickOnce 애플리케이션을 적절하게 작성해야 합니다.
@@ -92,11 +92,11 @@ ClickOnce 애플리케이션은 .NET Framework를 기반으로 하며 코드 액
 
   **고급 보안 설정** 대화 상자에서 **선택한 권한 집합으로 이 애플리케이션 디버깅** 확인란이 선택되고 사용할 수 없습니다. 이는 브라우저에서 호스트되는 애플리케이션에 대해 영역에서 디버그를 해제할 수 없기 때문입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [방법: 제한된 권한으로 ClickOnce 애플리케이션 디버그](securing-clickonce-applications.md)
-- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
+- [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [프로젝트 디자이너, 보안 페이지](../ide/reference/security-page-project-designer.md)

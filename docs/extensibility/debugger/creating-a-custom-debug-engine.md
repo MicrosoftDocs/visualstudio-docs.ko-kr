@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888968"
 ---
 # <a name="create-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 만들기
 DE (디버그 엔진)는 특정 런타임 아키텍처의 디버깅을 허용 하는 구성 요소입니다. 일반적으로 런타임 환경 마다 하나의 DE-DE 구현이 있습니다.
@@ -41,7 +41,7 @@ DE (디버그 엔진)는 특정 런타임 아키텍처의 디버깅을 허용 �
 
 5. 종료 및 분리 설정
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [사용자 지정 디버그 엔진 등록](../../extensibility/debugger/registering-a-custom-debug-engine.md) 디버그 엔진을 사용할 수 있도록 Visual Studio에 등록 하는 데 필요한 단계에 대해 설명 합니다.
 
  [디버깅할 프로그램 사용](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) DE가 프로그램을 디버깅 하려면 먼저 DE를 시작 하거나 기존 프로그램에 연결 해야 함을 설명 합니다.

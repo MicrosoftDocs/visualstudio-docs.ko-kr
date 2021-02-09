@@ -15,15 +15,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], custom actions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22dbd3ae72ac8c269de603ce22bbfebef669be08
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d0909b94f00b344383c2b042ec1e143f9294ee8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888708"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>방법: 프로그래밍 방식으로 전자 메일 메시지를 받을 때 작업 수행
   이 예제에서는 사용자가 전자 메일 메시지를 받을 때 사용자 지정 작업을 수행 합니다.
