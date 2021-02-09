@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861916"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio용 모델링 SDK에 대한 API 참조
 
@@ -22,7 +22,7 @@ Visual Studio 시각화 및 모델링 SDK는 DSL (도메인별 언어) 도구를
 
 이 섹션에는 이름이 "VisualStudio"로 시작 하는 네임 스페이스에 대 한 참조 자료가 포함 되어 있습니다.
 
-|네임스페이스|Content|
+|네임스페이스|콘텐츠|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|ModelElement와 같은 클래스-DSL에서 정의 하는 모든 도메인 클래스의 기본 클래스입니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|DSL 정의의 일부를 구성 하는 클래스입니다.|

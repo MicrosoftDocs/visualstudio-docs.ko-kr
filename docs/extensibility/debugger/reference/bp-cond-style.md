@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f98f02e7e756a744d8042a9955802165065d54d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862164"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
 보류 중인 중단점과 바인딩된 중단점의 중단점 조건 스타일을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_BP_COND_STYLE {

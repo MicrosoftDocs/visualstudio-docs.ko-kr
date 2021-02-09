@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a785bf0fc337d1934efe4f47adaac7efe7f1f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861805"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
@@ -285,7 +285,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 이러한 지시문은 MSBuild와 Visual Studio 호스트에서 모두 T4parameterValues의 값을 가져옵니다.
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Q&A
 
 **빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 

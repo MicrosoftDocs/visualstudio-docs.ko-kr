@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859569"
 ---
 # <a name="use-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
 
@@ -92,7 +92,7 @@ ms.locfileid: "94436812"
 
 1. 결과를 마우스 오른쪽 단추로 클릭 합니다.
 
-2. **작업 항목 만들기** 를 가리킨 다음 만들려는 작업 항목의 형식 ( **버그** , **작업** 등)을 클릭 합니다.
+2. **작업 항목 만들기** 를 가리킨 다음 만들려는 작업 항목의 형식 (**버그**, **작업** 등)을 클릭 합니다.
 
 3. 모든 필수 필드를 입력 하 여 작업 항목 폼을 완료 합니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "94436812"
 
 4. **파일** 메뉴에서 **모두 저장** 을 클릭 하 여 작업 항목을 저장 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
 - [방법: 코드 메트릭 데이터 생성](../code-quality/how-to-generate-code-metrics-data.md)

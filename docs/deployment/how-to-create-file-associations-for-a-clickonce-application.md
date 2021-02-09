@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4b74e20d21ad2c67eed36add90051119c7b8b56e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861168"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션에 대한 파일 연결 만들기
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램은 하나 이상의 파일 이름 확장명에 연결 될 수 있으므로 사용자가 이러한 형식의 파일을 열 때 응용 프로그램이 자동으로 시작 됩니다. 응용 프로그램에 파일 이름 확장명 지원을 추가 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 는 것은 간단 합니다.
@@ -56,6 +56,6 @@ ms.locfileid: "94350038"
     자세한 내용은 [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
-- [\<fileAssociation> 요소인](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation> 요소](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 759c7def23cf8ac0df33a75d25eb5bcbcf44b209
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861662"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
 
@@ -23,7 +23,7 @@ Color와 같은 일부 셰이프 속성은 ' 노출 ' 될 수 있습니다. 즉,
 ## <a name="exposing-a-property"></a>속성 노출
  Color와 같은 일부 셰이프 속성은 도메인 속성의 값에 연결할 수 있습니다.
 
- DSL 정의에서 도형, 연결선 또는 다이어그램 클래스를 선택 합니다. 오른쪽 클릭 메뉴에서 **노출 추가**를 선택한 다음 원하는 속성 (예: 채우기 색)을 선택 합니다.
+ DSL 정의에서 도형, 연결선 또는 다이어그램 클래스를 선택 합니다. 오른쪽 클릭 메뉴에서 **노출 추가** 를 선택한 다음 원하는 속성 (예: 채우기 색)을 선택 합니다.
 
  이제 셰이프에는 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다.
 

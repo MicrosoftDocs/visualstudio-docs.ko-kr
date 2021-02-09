@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e2a21002919fcccca40bf481200e368bd16ed5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d822aaaf7b951dfb8b60bb568f8d264e26e9a648
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861883"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 텍스트 템플릿에 대한 API 참조
 

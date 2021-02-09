@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862124"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
 **솔루션 탐색기** 필터 기능을 확장 하 여 다른 파일을 표시 하거나 숨길 수 있습니다. 예를 들어이 연습에서 설명 하는 대로 **솔루션 탐색기** 에서 c # 클래스 팩터리 파일만 표시 하는 필터를 만들 수 있습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ### <a name="create-a-visual-studio-package-project"></a>Visual Studio 패키지 프로젝트 만들기

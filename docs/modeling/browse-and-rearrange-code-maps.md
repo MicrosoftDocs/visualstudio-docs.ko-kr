@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861936"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>코드 맵 찾아보기 및 다시 정렬
 
@@ -37,7 +37,7 @@ ms.locfileid: "97363616"
 
 솔루션의 기본 코드에 영향을 주지 않고 코드 맵을 사용자 지정할 수 있습니다. 이 기능은 주요 코드 요소에 중점을 두거나 코드에 대한 아이디어를 전달하려는 경우에 유용합니다. 예를 들어 관심 있는 영역을 강조 표시하기 위해 맵에서 코드 요소를 선택하고 필터링한 다음 코드 요소와 링크의 스타일을 변경하고 코드 요소를 숨기거나 삭제하고 속성, 범주 또는 그룹을 사용하여 코드 요소를 구성할 수 있습니다.
 
- **요구 사항**
+ **Requirements**
 
 - 코드 맵을 만들려면 Visual Studio Enterprise가 있어야 합니다.
 
@@ -309,8 +309,8 @@ ms.locfileid: "97363616"
 
     |**수행할 작업**|**Choose**|
     |-|-|
-    |코드 요소 비활성화|**사용 안 함**|
-    |코드 요소 삭제|**삭제**|
+    |코드 요소 비활성화|**사용 안함**|
+    |코드 요소 삭제|**Delete**|
     |스타일을 위로 이동|**위로 이동**|
     |코드 요소를 아래로 이동|**아래로 이동**|
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853154"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>기본 프로젝트 시스템 만들기, 2 부
 [기본 프로젝트 시스템을 만드는](../extensibility/creating-a-basic-project-system-part-1.md)이 시리즈의 첫 번째 연습은 기본 프로젝트 시스템을 만드는 방법을 보여 줍니다. 이 연습은 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하 여 기본 프로젝트 시스템을 기반으로 합니다. 이 연습을 시작 하기 전에 첫 번째 연습을 완료 해야 합니다.
@@ -281,7 +281,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 - $safeprojectname $은 **새 프로젝트** 대화 상자에서 사용자가 제공한 이름으로, 안전 하지 않은 문자 및 공백을 모두 제거 하도록 수정 되었습니다.
 
-  템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조 하세요.
+  템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.
 
 ### <a name="to-substitute-project-template-parameters"></a>프로젝트 템플릿 매개 변수를 대체 하려면
 

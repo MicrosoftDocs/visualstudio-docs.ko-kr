@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7c93c1e5811ec3aed5d44f3c306de1c09cced9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c194ef3585a8ba3f0a0ab90e5ea39f4ad3a04622
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861103"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 이 인터페이스는 프로세스가 종료 되거나 atypically를 종료 하거나에서 분리 될 때 전송 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugProcessDestroyEvent2 : IUnknown
+IDebugProcessDestroyEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -41,7 +41,7 @@ IDebugProcessDestroyEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

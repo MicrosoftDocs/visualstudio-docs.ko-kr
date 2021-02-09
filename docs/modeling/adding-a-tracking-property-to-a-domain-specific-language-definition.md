@@ -10,15 +10,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862013"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -44,7 +44,7 @@ ms.locfileid: "97361211"
 
 - **속성** 창에서 추적 속성이 사용자에 의해 업데이트 됨 상태에 있는 경우 해당 값은 굵은 글꼴로 표시 됩니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 연습을 시작 하려면 먼저 다음 구성 요소를 설치 해야 합니다.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08872160860d0d442f9807705dea70190dff9b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98d6d7c4d9f1df0c7c4346792d841de574859619
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861155"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 메서드의 선택 된 지역 변수에 대 한 열거자를 만듭니다.
@@ -48,7 +48,7 @@ int EnumLocals(
 `ppLocals`\
 제한이 지역 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 그렇지 않으면 로컬이 없는 경우 null 값을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면 S_OK 반환 하거나 로컬이 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
@@ -76,7 +76,7 @@ public void func(int index)
 
 [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) 개체는 `func` 메서드 자체를 나타냅니다. `EnumLocals`주소에 설정 된 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 를 사용 하 여 메서드를 호출 하면 `Inner Scope 1` 변수가 포함 된 열거형 `temp1` (예:)이 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

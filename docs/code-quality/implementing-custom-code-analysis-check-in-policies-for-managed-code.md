@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859881"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
 

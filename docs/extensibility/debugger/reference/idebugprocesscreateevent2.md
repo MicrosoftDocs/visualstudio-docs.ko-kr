@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c660439d-8b23-4dbb-923e-ebb5e1d7edf5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc9b0bbdebde01af48ab1436dbfd17ac0c3241b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f41d483d51c96cb7a5273f89f691639fd40dcaea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861129"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 이 인터페이스는 프로세스가 시작 될 때 전송 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
-IDebugProcessCreateEvent2 : IUnknown
+IDebugProcessCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>구현자 참고 사항
@@ -41,7 +41,7 @@ IDebugProcessCreateEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

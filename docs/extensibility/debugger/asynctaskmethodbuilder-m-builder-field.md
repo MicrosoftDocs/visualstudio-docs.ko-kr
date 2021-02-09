@@ -1,5 +1,5 @@
 ---
-title: M_builder AsyncTaskMethodBuilder 필드 | Microsoft Docs
+title: AsyncTaskMethodBuilder.m_builder 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862190"
 ---
-# <a name="asynctaskmethodbuilderm_builder-field"></a>M_builder AsyncTaskMethodBuilder 필드
+# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder 필드
 이 제네릭이 아닌 인스턴스가 위임 하는 제네릭 작성기 개체를 나타냅니다.
 
  **네임스페이스:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
@@ -34,6 +34,6 @@ ms.locfileid: "80739397"
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

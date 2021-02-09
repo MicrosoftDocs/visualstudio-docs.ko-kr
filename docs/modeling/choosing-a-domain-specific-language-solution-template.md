@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e0c96c93e3583a7d2877a5f4f7bd70561b650b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861857"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>도메인별 언어 솔루션 템플릿 선택
 도메인별 언어 솔루션을 만들려면 Domain-Specific 언어 디자이너 마법사에서 사용할 수 있는 솔루션 템플릿 중 하나를 선택 합니다. 만들려는 언어와 가장 비슷한 템플릿을 선택 하면 시작 솔루션에 대 한 수정 사항을 최소화할 수 있습니다.
 
  다음 솔루션 템플릿은 Domain-Specific 언어 디자이너 마법사에서 사용할 수 있습니다.
 
-|템플릿|기능|설명|
+|템플릿|기능|Description|
 |-|-|-|
 |클래스 다이어그램|-구획 도형<br />-클래스 상속<br />-관계 상속<br />-모양 상속<br />-관계 속성|도메인 특정 언어에 속성이 있는 엔터티 및 관계가 포함 된 경우이 솔루션 템플릿을 사용 합니다. 이 템플릿은 UML 클래스 다이어그램과 유사한 도메인별 언어를 만듭니다. 기본 엔터티는 연결, 일반화 및 구현 관계와 함께 클래스 및 인터페이스입니다. 클래스 또는 인터페이스가 특성 목록을 포함 하는 상자로 나타납니다.|
 |구성 요소 다이어그램|-포트|도메인 특정 언어에 구성 요소 (소프트웨어 시스템의 구성 요소)가 포함 된 경우이 솔루션 템플릿을 사용 합니다. 이 템플릿은 UML 구성 요소 다이어그램과 유사한 도메인별 언어를 만듭니다. 주요 엔터티는 구성 요소 외부에 작은 모양으로 표시 되는 구성 요소 및 포트입니다.|

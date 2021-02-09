@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 84acec58ed78884f0b037950fa25ce40f6adcbfc
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859764"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>레거시 분석 (FxCop)에서 원본 분석 (.NET 분석기)으로 마이그레이션
 

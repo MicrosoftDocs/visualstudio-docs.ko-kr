@@ -6,27 +6,27 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861753"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 프로젝트에 대 한 코드 맵
 
-C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다.
+C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인** 을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다.
 
-Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 시간 동안에는 *.h* `#include` IntelliSense 데이터베이스가 업데이트를 완료할 때까지 헤더 파일 (.h 또는)에 대 한 코드 맵을 만들지 못할 수 있습니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다.
+Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 시간 동안에는 `#include` IntelliSense 데이터베이스가 업데이트를 완료할 때까지 헤더 파일 (.h 또는)에 대 한 코드 맵을 만들지 못할 수 있습니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다.
 
-- 솔루션의 모든 소스 파일과 헤더 파일 간의 종속성을 확인 하려면 **아키텍처**에서  >  **포함 파일의 그래프 생성**을 선택 합니다.
+- 솔루션의 모든 소스 파일과 헤더 파일 간의 종속성을 확인 하려면 **아키텍처** 에서  >  **포함 파일의 그래프 생성** 을 선택 합니다.
 
    ![네이티브 코드의 종속성 그래프](../modeling/media/dependencygraphgeneral_nativecode.png)
 
-- 현재 열려 있는 파일과 관련 소스 파일 및 헤더 파일 간의 종속성을 확인하려면 소스 파일이나 헤더 파일을 열고 파일 내 임의의 위치에서 파일 바로 가기 메뉴를 연 다음 **포함 파일의 그래프 생성**을 선택합니다.
+- 현재 열려 있는 파일과 관련 소스 파일 및 헤더 파일 간의 종속성을 확인하려면 소스 파일이나 헤더 파일을 열고 파일 내 임의의 위치에서 파일 바로 가기 메뉴를 연 다음 **포함 파일의 그래프 생성** 을 선택합니다.
 
    ![.h 파일의 첫 번째 수준 종속성 그래프](../modeling/media/dependencygraph_native_firstlevel.png)
 

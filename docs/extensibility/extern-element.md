@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862098"
 ---
 # <a name="extern-element"></a>Extern 요소
 Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 파일 (*.h*)을 참조 합니다. 병합할 파일은 VSCT 컴파일러에 지정 된 포함 경로에 있거나 [include 요소](../extensibility/include-element.md)에서 참조 되어야 합니다. 파일은 다른 *. vsct* 파일 또는 c + + 헤더 파일 일 수 있습니다.
@@ -40,21 +40,21 @@ Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
+|href|필수 사항입니다. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 |language|선택 사항입니다. 명령 테이블의 모든 요소에 대 한 기본 언어 [\<Strings>](../extensibility/strings-element.md) :<br /><br /> language = "en-us"|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage IDE에 제공 하는 명령, 즉 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자를 나타내는 모든 요소를 정의 합니다.|
 

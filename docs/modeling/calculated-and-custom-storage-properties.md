@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861844"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 스토리지 속성 및 사용자 지정 스토리지 속성
 DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언어 탐색기에서 사용자에 게 표시 될 수 있으며 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 값이 저장 되는 방식에 따라 달라 집니다.
@@ -24,7 +24,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 ## <a name="kinds-of-domain-properties"></a>도메인 속성의 종류
  DSL 정의에서 다음 표에 나열 된 것 처럼 도메인 속성의 **종류** 를 설정할 수 있습니다.
 
-|도메인 속성 종류|설명|
+|도메인 속성 종류|Description|
 |-|-|
 |**Standard** (기본값)|*저장소* 에 저장 되 고 파일로 serialize 되는 도메인 속성입니다.|
 |**계산**|저장소에 저장 되지 않지만 다른 값에서 계산 되는 읽기 전용 도메인 속성입니다.<br /><br /> 예를 들어는 `Person.Age` 에서 계산할 수 있습니다 `Person.BirthDate` .<br /><br /> 계산을 수행 하는 코드를 제공 해야 합니다. 일반적으로 다른 도메인 속성의 값을 계산 합니다. 그러나 외부 리소스를 사용할 수도 있습니다.|

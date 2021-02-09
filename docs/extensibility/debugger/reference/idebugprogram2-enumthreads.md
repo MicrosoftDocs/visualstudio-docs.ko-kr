@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f2a8c51-1315-4c96-8aa1-6a937dc2a769
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b93ef5489e57f74c05e5925b4304f1e93e9830
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68e7503a504af6ccb51ff47a66c89e039ae737ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861077"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 프로그램에서 실행 중인 스레드 목록을 검색 합니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80722989"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumThreads( 
+HRESULT EnumThreads( 
    IEnumDebugThreads2** ppEnum
 );
 ```
 
 ```csharp
-int EnumThreads( 
+int EnumThreads( 
    out IEnumDebugThreads2 ppEnum
 );
 ```
@@ -43,10 +43,10 @@ int EnumThreads( 
 `ppEnum`\
 제한이 스레드 목록을 포함 하는 [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

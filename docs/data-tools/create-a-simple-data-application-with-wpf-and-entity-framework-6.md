@@ -8,19 +8,19 @@ dev_langs:
 - CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859192"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용하여 간단한 데이터 애플리케이션 만들기
 
-이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스 Entity Framework 6 (Entity Framework Core 아님)을 사용 하 고 .NET Framework에 대해 Windows Presentation Foundation를 사용 합니다 (.NET Core 아님). 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동** , **이전** 으로 이동, **처음으로** 이동, **끝으로 이동** , **업데이트** 및 **삭제** 단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
+이 연습에서는 Visual Studio에서 기본 "데이터 폼" 응용 프로그램을 만드는 방법을 보여 줍니다. 앱은 SQL Server LocalDB, Northwind 데이터베이스 Entity Framework 6 (Entity Framework Core 아님)을 사용 하 고 .NET Framework에 대해 Windows Presentation Foundation를 사용 합니다 (.NET Core 아님). 마스터-세부 보기를 사용 하 여 기본 데이터 바인딩을 수행 하는 방법을 보여 줍니다. 또한 **다음으로 이동**, **이전** 으로 이동, **처음으로** 이동, **끝으로 이동**, **업데이트** 및 **삭제** 단추가 포함 된 사용자 지정 바인딩 탐색기가 있습니다.
 
 이 문서에서는 Visual Studio에서 데이터 도구를 사용 하는 방법을 집중적으로 설명 하며, 기본 기술에 대해 설명 하지 않습니다. XAML, Entity Framework 및 SQL에 대 한 기본적인 지식이 있다고 가정 합니다. 또한이 예제에서는 WPF 응용 프로그램의 표준인 MVVM (모델-뷰-ViewModel) 아키텍처를 보여 주지 않습니다. 그러나이 코드를 수정 하지 않은 사용자 고유의 MVVM 응용 프로그램으로 복사할 수 있습니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "94435495"
 
 ## <a name="create-the-model"></a>모델 만들기
 
-1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **Add**  >  **새 항목** 추가를 선택 합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델** 를 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델** 를 선택 합니다.
 
    ![Entity Framework 모델 새 항목](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "94435495"
 
 3. 다음 화면에서 LocalDB Northwind 연결 (예: (localdb) \MSSQLLocalDB)을 입력 하거나 선택 하 고 Northwind 데이터베이스를 지정한 후 **다음** 을 클릭 합니다.
 
-4. 마법사의 다음 페이지에서 Entity Framework 모델에 포함할 테이블, 저장 프로시저 및 기타 데이터베이스 개체를 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 **고객** , **주문** 및 **주문 세부 정보** 를 선택 합니다. 기본값을 선택 된 채로 두고 **마침** 을 클릭 합니다.
+4. 마법사의 다음 페이지에서 Entity Framework 모델에 포함할 테이블, 저장 프로시저 및 기타 데이터베이스 개체를 선택 합니다. 트리 뷰에서 dbo 노드를 확장 하 고 **고객**, **주문** 및 **주문 세부 정보** 를 선택 합니다. 기본값을 선택 된 채로 두고 **마침** 을 클릭 합니다.
 
     ![모델에 대 한 데이터베이스 개체 선택](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "94435495"
         </Grid.RowDefinitions>
     ```
 
-5. 이제 디자이너에서 볼 수 있도록 *mainwindow.xaml* 을 엽니다. 이렇게 하면 **데이터 소스** 창이 **도구 상자** 옆의 Visual Studio 창 여백에 옵션으로 표시 됩니다. 탭을 클릭 하 여 창을 열거나 **Shift** + **Alt** + **D** 를 누르거나 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다. Customers 클래스의 각 속성을 자체의 개별 텍스트 상자에 표시할 예정입니다. 먼저 **Customers** 콤보 상자의 화살표를 클릭 하 고 **세부 정보** 를 선택 합니다. 그런 다음 디자이너에서 가운데 행으로 이동할 것임을 알 수 있도록 노드를 디자인 화면의 가운데 부분으로 끕니다. 잃어버리지 경우 나중에 XAML에서 수동으로 행을 지정할 수 있습니다. 기본적으로 컨트롤은 grid 요소에 세로로 배치 되지만이 시점에서 폼에서 원하는 대로 정렬할 수 있습니다. 예를 들어 **이름** 텍스트 상자를 주소 위의 위쪽에 배치 하는 것이 적합할 수 있습니다. 이 문서의 샘플 응용 프로그램은 필드의 순서를 다시 정렬 하 고 두 개의 열로 다시 정렬 합니다.
+5. 이제 디자이너에서 볼 수 있도록 *mainwindow.xaml* 을 엽니다. 이렇게 하면 **데이터 소스** 창이 **도구 상자** 옆의 Visual Studio 창 여백에 옵션으로 표시 됩니다. 탭을 클릭 하 여 창을 열거나 **Shift** + **Alt** + **D** 를 누르거나   >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다. Customers 클래스의 각 속성을 자체의 개별 텍스트 상자에 표시할 예정입니다. 먼저 **Customers** 콤보 상자의 화살표를 클릭 하 고 **세부 정보** 를 선택 합니다. 그런 다음 디자이너에서 가운데 행으로 이동할 것임을 알 수 있도록 노드를 디자인 화면의 가운데 부분으로 끕니다. 잃어버리지 경우 나중에 XAML에서 수동으로 행을 지정할 수 있습니다. 기본적으로 컨트롤은 grid 요소에 세로로 배치 되지만이 시점에서 폼에서 원하는 대로 정렬할 수 있습니다. 예를 들어 **이름** 텍스트 상자를 주소 위의 위쪽에 배치 하는 것이 적합할 수 있습니다. 이 문서의 샘플 응용 프로그램은 필드의 순서를 다시 정렬 하 고 두 개의 열로 다시 정렬 합니다.
 
      ![개별 컨트롤에 대 한 고객 데이터 원본 바인딩](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

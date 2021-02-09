@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861142"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 이 인터페이스는 컴퓨터의 디버그 포트를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPort2 : IUnknown
@@ -39,7 +39,7 @@ IDebugPort2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPort2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|포트 이름을 반환 합니다.|
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|포트 식별자를 반환 합니다.|
@@ -58,7 +58,7 @@ IDebugPort2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

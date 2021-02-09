@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a327207f5fde99aac482cf0b77d29af04b082524
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862144"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80734943"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetRequestInfo( 
+HRESULT GetRequestInfo( 
    BPREQI_FIELDS    dwFields,
    BP_REQUEST_INFO* pBPRequestInfo
 );
 ```
 
 ```csharp
-int GetRequestInfo( 
+int GetRequestInfo( 
    eunm_BPREQI_FIELDS  dwFields,
    BP_REQUEST_INFO[]   pBPRequestInfo
 );
@@ -48,10 +48,10 @@ int GetRequestInfo( 
 `pBPRequestInfo`\
 제한이 중단점 요청에 대 한 설명으로 채울 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조체를 지정 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```
@@ -216,7 +216,7 @@ HRESULT CDebugBreakpointRequest::CopyBP_REQUEST_INFO(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

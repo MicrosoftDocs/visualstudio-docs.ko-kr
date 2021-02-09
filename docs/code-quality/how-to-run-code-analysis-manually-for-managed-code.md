@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 997fc6f6ecb8ffbd8c48e2352dcc9ae2f6092211
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860024"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>.NET에 대해 수동으로 코드 분석 실행
 기본적으로 .NET Compiler Platform ("Roslyn") 분석기는 실시간 분석을 수행 하 고 빌드 중에도 입력할 때 c # 또는 Visual Basic 코드를 분석 합니다. 따라서 일반적으로 코드 분석을 수동으로 트리거할 필요가 없습니다. 그러나 코드 분석을 수동으로 트리거할 수 있는 몇 가지 시나리오가 있습니다.
