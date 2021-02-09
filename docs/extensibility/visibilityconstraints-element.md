@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: bb6047c98031c484f6a0a51ab2a393a2a46bb2a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926094"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 요소
 VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다. 표시 유형은 먼저 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하지 않고 IDE (통합 개발 환경)에 의해 제어 됩니다.
@@ -45,14 +45,14 @@ VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[VisibilityItem 요소](../extensibility/visibilityitem-element.md)|명령 및 도구 모음의 정적 표시 여부를 결정 합니다.|
 |[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공 하는 명령 (예: 메뉴 항목, 메뉴, 도구 모음, 콤보 상자)을 나타내는 요소를 모두 정의 합니다.|
 
@@ -65,6 +65,6 @@ VisibilityConstraints 요소는 명령 및 도구 모음 그룹의 정적 표시
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [VisibilityItem 요소](../extensibility/visibilityitem-element.md)
 - [Visual Studio 명령 테이블 (. Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

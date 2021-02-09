@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 707526daaafdbc7e99c11c5b7fb8edf9fdbccc03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925912"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 용어집
 이 용어집에서는 설명서에 사용 되는 용어에 대 한 정의를 제공 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 합니다.
 
-## <a name="terms"></a>용어
+## <a name="terms"></a>사용 약관
  기본 응용 프로그램에 추가 된 유틸리티 응용 프로그램, 드라이버 또는 기타 소프트웨어를 추가 합니다. Visual Studio IDE (통합 개발 환경)에서 추가 기능은 IDE의 기능을 확장 하는 자동화 기반 응용 프로그램입니다.
 
  자동화 모델 이전 버전의 Visual Studio에서 확장성 모델로 알려진 자동화 모델은 IDE를 구동 하는 기본 루틴에 대 한 액세스를 제공 하는 프로그래밍 인터페이스입니다. 추가 기능, 마법사 및 매크로는 자동화 모델의 개체를 사용 하 여 IDE의 기능을 제어 하거나 확장 합니다.

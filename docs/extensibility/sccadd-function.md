@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926862"
 ---
 # <a name="sccadd-function"></a>SccAdd 함수
 이 함수는 소스 제어 시스템에 새 파일을 추가 합니다.
@@ -68,7 +68,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|추가 작업이 성공 했습니다.|
 |SCC_E_FILEALREADYEXISTS|선택한 파일은 이미 소스 제어에 있습니다.|
@@ -100,5 +100,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|는 파일을 UTF16 작은 Endian 형식의 유니코드 텍스트로 처리 합니다.|
 |SCC_FILETYPE_UTF16BE|0x40|는 파일을 UTF16 Big Endian 형식의 유니코드 텍스트로 처리 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

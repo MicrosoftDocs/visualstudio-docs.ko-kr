@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 9cc50d3914f43be0da2f992f1074dc82cf5178ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925747"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 스키마 참조
 각에 대해 허용 되는 자식 요소 및 특성을 포함 하는 명령 테이블 컴파일러 스키마 요소 테이블을 제공 합니다.
@@ -74,6 +74,6 @@ ms.locfileid: "97863985"
 
 - [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage의 명령 라우팅](../extensibility/internals/command-routing-in-vspackages.md)

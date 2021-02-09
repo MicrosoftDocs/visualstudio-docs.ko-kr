@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: e8c6febd609695be49fe868041faea25af70fed5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973754"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927381"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 확장성의 변경 내용
 
@@ -72,7 +72,7 @@ Visual studio 프로세스 내에서 실행 되는 코드는 Visual Studio 설�
   * GAC의 복사본이 설치 프로그램에서 제거 되었습니다.
   * *.Pkgdef* 파일이 추가 되어 어셈블리에 대 한 코드 베이스 항목을 지정 했습니다.
 
-    예를 들면 다음과 같습니다.
+    예를 들어:
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6e49ad2965ef99d5ceaafc3cb5f4de3589321d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925245"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags 필드
 개체의 현재 상태에 대 한 정보를 저장 <xref:System.Threading.Tasks.Task> 합니다.
@@ -47,5 +47,5 @@ ms.locfileid: "80738383"
 
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

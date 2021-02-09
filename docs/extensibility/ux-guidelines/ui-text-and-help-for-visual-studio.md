@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 0b0da682f8403890e57118384b7d979f8760d62f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926147"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio의 UI 텍스트 및 도움말
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어
@@ -156,7 +156,7 @@ ms.locfileid: "97668601"
 
 ### <a name="common-terminology"></a>일반적인 용어
 
-|용어|설명|설명|
+|용어|설명|의견|
 |----------|-----------------|-------------|
 |로그인/로그 아웃|웹 속성에 대 한 인증을 나타내기 위해 웹에서 동의어 처럼 자주 사용 하는 동사입니다. 클라이언트 내에서이를 한 번 사용 하 여 다른 모든 연결에서 사용할 수 없는 로밍 및 라이선스와 같은 더 높은 수준의 기능을 제공 하는 최상위 id를 제공 하는 IDE 사용자 연결의 로그인 및 로그 아웃에 대 한 최상위 개념으로 사용 합니다.|IDE 사용자는 최상위 IDE 사용자를 나타내므로 로그인/로그 아웃 동사를 나타내야 하는 유일한 기능입니다.|
 |연결/연결 끊기|기능이 온라인 서비스에 대 한 단일 연결을 유지 하는 위치에서 사용 합니다.|한 번에 하나의 활성 Azure 연결만 가질 수 있는 서버 탐색기 연결/연결 끊기의 예입니다.|
@@ -248,7 +248,7 @@ ms.locfileid: "97668601"
 
 - **Courteous.** 사용자를 원인 하거나 바보로 설정 하지 마세요. 악의적인 또는 비속어 (kill, execute, terminate, 치명적, 잘못 된 언어)를 사용 하지 마세요. 대문자 텍스트를 사용 하지 않습니다 .이 텍스트는 shouting으로 표시 되 고 읽을 수는 없습니다. 유머를 사용 하지 마세요.
 
-- **맞습니다.** 올바른 철자와 문법을 사용 합니다 (alphas 에서도). 오타가 전문적 및 당혹입니다.
+- **정답입니다.** 올바른 철자와 문법을 사용 합니다 (alphas 에서도). 오타가 전문적 및 당혹입니다.
 
 - **컨텍스트 적절 합니다.** 적절 한 단추 텍스트를 사용 합니다. "확인" 단추를 사용 하지 않고 대신 "Continue" 또는 "Yes/No"를 사용 합니다.
 

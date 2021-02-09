@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925119"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80735965"
 
  이 인터페이스는 기호 공급자에 의해 일반적으로 반환 되는 기호 필드를 메모리 컨텍스트 또는 기호의 현재 값을 포함 하는 개체에 바인딩합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBinder : IUnknown
@@ -40,7 +40,7 @@ IDebugBinder : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBinder` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[바인딩하며](../../../extensibility/debugger/reference/idebugbinder-bind.md)|기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|개체의 런타임 형식을 결정 합니다.|
@@ -58,7 +58,7 @@ IDebugBinder : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

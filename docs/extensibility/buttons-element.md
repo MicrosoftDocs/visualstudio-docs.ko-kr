@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 64f2a641d081edba3ff7cc230b8a73b9a22c8097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927303"
 ---
 # <a name="buttons-element"></a>Buttons 요소
 개별 명령을 나타내는 [단추](../extensibility/button-element.md) 요소를 그룹화 합니다.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbf16af65ab59147614ce5609de9b56ff833862a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925129"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject 필드
 동작에서 사용할 데이터를 나타내는 개체입니다.
@@ -35,5 +35,5 @@ ms.locfileid: "80738378"
 ## <a name="remarks"></a>설명
  `state`생성자의 매개 변수입니다 <xref:System.Threading.Tasks.Task.%23ctor%2A> . 속성의 지원 필드도 있습니다 <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927667"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 복합 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트에서 복합 데이터 바인딩의 기본 사항을 보여 줍니다. Microsoft Office Excel 워크시트의 여러 셀을 Northwind SQL Server 데이터베이스의 필드에 바인딩할 수 있습니다.
@@ -177,17 +177,17 @@ ms.locfileid: "97527115"
 
 1. 목록 개체 내의 셀을 선택 합니다.
 
-    새 행 *\** 의 첫 번째 셀에 별표 (* _)를 사용 하 여 목록의 맨 아래에 새 행이 나타납니다.
+    새 행 **\*** 의 첫 번째 셀에 별표 ()가 포함 된 새 행이 목록의 맨 아래에 나타납니다.
 
 2. 빈 행에 다음 정보를 추가 합니다.
 
-   |EmployeeID|LastName|FirstName|제목|
+   |EmployeeID|LastName|FirstName|Title|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|판매 관리자|
 
 ### <a name="to-delete-rows"></a>행 삭제
 
-- 워크시트의 맨 왼쪽에 있는 숫자 16 (행 16)을 마우스 오른쪽 단추로 클릭 한 다음 _ * 삭제 * *를 클릭 합니다.
+- 워크시트의 맨 왼쪽에 있는 숫자 16 (행 16)을 마우스 오른쪽 단추로 클릭 한 다음 **삭제** 를 클릭 합니다.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>목록의 행을 정렬 하려면
 

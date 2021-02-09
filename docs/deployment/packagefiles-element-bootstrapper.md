@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925360"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 요소 (부트스트래퍼)
 요소는 요소의 `PackageFiles` `PackageFile` 결과로 실행 되는 설치 패키지를 정의 하는 요소를 포함 합니다 `Command` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <PackageFiles
@@ -46,7 +46,7 @@ ms.locfileid: "94349544"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  `PackageFiles` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`CopyAllPackageFiles`|선택 사항입니다. 로 설정 `false` 된 경우 설치 관리자는 요소에서 참조 되는 파일만 다운로드 합니다 `Command` . 로 설정 되 면 `true` 모든 파일이 다운로드 됩니다.<br /><br /> 로 설정 된 경우, `IfNotHomesite` 설치 관리자는가로 설정 된 경우와 동일 하 게 동작 합니다 `False` `ComponentsLocation` . 그렇지 않으면와 동일 하 `HomeSite` 게 동작 합니다 `True` . 이 설정은 자체가 부트스트래퍼 패키지에서 HomeSite 시나리오에 고유한 동작을 실행 하도록 허용 하는 데 유용할 수 있습니다.<br /><br /> 기본값은 `true`입니다.|
 
@@ -55,7 +55,7 @@ ms.locfileid: "94349544"
 
  `PackageFile` 에는 다음과 같은 특성이 있습니다.
 
-| 특성 | 설명 |
+| attribute | Description |
 |---------------| - |
 | `Name` | 필수 사항입니다. 패키지 파일의 이름입니다. `Command`패키지를 설치 하는 조건을 정의할 때 요소가 참조 하는 이름입니다. 이 값은 `Strings` 와 같은 도구 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 패키지를 설명 하는 데 사용 하는 지역화 된 이름을 검색 하기 위해 테이블의 키로도 사용 됩니다. |
 | `HomeSite` | 선택 사항입니다. 설치 관리자에 포함 되어 있지 않은 경우 원격 서버에 있는 패키지의 위치입니다. |
@@ -76,6 +76,6 @@ ms.locfileid: "94349544"
 ```
 
 ## <a name="see-also"></a>참고 항목
-- [\<Product> 요소인](../deployment/product-element-bootstrapper.md)
-- [\<Package> 요소인](../deployment/package-element-bootstrapper.md)
+- [\<Product> 요소](../deployment/product-element-bootstrapper.md)
+- [\<Package> 요소](../deployment/package-element-bootstrapper.md)
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

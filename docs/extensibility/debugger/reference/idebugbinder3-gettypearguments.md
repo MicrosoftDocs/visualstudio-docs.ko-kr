@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b5c0e89909f06da9d65d15bc6098e636d36a2de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927147"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 이 메서드는이 개체와 연결 된 인수 형식의 목록을 검색 합니다.
@@ -28,20 +28,20 @@ ms.locfileid: "80735696"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetTypeArguments(
-   UINT          skip,
-   UINT          count,
-   IDebugField** ppFields,
-   UINT*         pFetched
+HRESULT GetTypeArguments(
+   UINT          skip,
+   UINT          count,
+   IDebugField** ppFields,
+   UINT*         pFetched
 );
 ```
 
 ```csharp
 int GetTypeArguments(
-   uint          skip,
-   uint          count,
-   IDebugField[] ppFields,
-   out uint      pFetched
+   uint          skip,
+   uint          count,
+   IDebugField[] ppFields,
+   out uint      pFetched
 );
 ```
 
@@ -58,12 +58,12 @@ int GetTypeArguments(
 `pFetched`\
 [out] \( 선택 사항) 실제로 반환 된 인수 형식 필드의 수입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  인수 형식의 수는 [Gettypeargumentcount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)를 사용 하 여 미리 가져올 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

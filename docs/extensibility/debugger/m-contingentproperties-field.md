@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbdd6f69dd9c4c4fb270473065ba836071c85856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925266"
 ---
 # <a name="m_contingentproperties-field"></a>m_contingentProperties 필드
 개체의 추가 속성을 저장 <xref:System.Threading.Tasks.Task> 합니다.
@@ -34,5 +34,5 @@ ms.locfileid: "80738408"
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

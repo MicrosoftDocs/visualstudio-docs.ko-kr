@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925604"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>방법: SharePoint 웹 파트 만들기
   SharePoint 프로젝트에 **웹 파트** 항목을 추가 하 고 웹 파트에 대 한 코드 파일을 편집 하거나 디자이너를 사용 하 여 웹 파트를 만들고 사용자 지정할 수 있습니다. 자세한 내용은 [방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)를 참조 하세요.

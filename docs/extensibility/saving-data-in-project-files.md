@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 0c18923a7866f2bb141371c4c703377e298c1e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926913"
 ---
 # <a name="save-data-in-project-files"></a>프로젝트 파일에 데이터 저장
 프로젝트 하위 형식에서 프로젝트 파일의 하위 형식 관련 데이터를 저장 하 고 검색할 수 있습니다. MPF (관리 되는 패키지 프레임 워크)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.
@@ -210,5 +210,5 @@ ms.locfileid: "97715693"
 > [!NOTE]
 > 이 [항목에서 제공](https://github.com/Microsoft/VSSDK-Extensibility-Samples)하는 모든 코드 예제는 더 큰 예제의 구성 요소입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [MSBuild 프로젝트 파일에 데이터 보관](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

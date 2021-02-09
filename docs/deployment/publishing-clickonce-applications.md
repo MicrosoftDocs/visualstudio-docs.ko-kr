@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa9e94bf124888d05b6393a4821b5db61181871c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927576"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce 애플리케이션 게시
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 처음으로 게시할 때는 게시 마법사를 사용하여 게시 속성을 설정할 수 있습니다. 마법사에서는 일부 속성만 사용 가능하며 기타 모든 설정은 기본값으로 설정됩니다.
@@ -50,11 +50,11 @@ ms.locfileid: "94349492"
 ## <a name="publish-page"></a>게시 페이지
  **프로젝트 디자이너** 의 **게시** 페이지를 통해 ClickOnce 배포를 위한 속성을 구성합니다. 다음 표에 관련 항목이 나와 있습니다.
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
-|[방법: Visual Studio의 파일 복사 위치 지정](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Visual Studio에서 애플리케이션 파일 및 매니페스트를 배치하는 위치를 설정하는 방법을 설명합니다.|
-|[방법: 최종 사용자가 설치하는 원본 위치 지정](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|사용자가 애플리케이션을 다운로드하고 설치할 수 있는 위치를 설정하는 방법을 설명합니다.|
-|[방법: ClickOnce 오프라인 또는 온라인 설치 모드 지정](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|애플리케이션을 오프라인으로 제공할지 아니면 온라인으로 제공할지를 설정하는 방법을 설명합니다.|
+|[방법: Visual Studio에서 파일을 복사 하는 위치 지정](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Visual Studio에서 애플리케이션 파일 및 매니페스트를 배치하는 위치를 설정하는 방법을 설명합니다.|
+|[방법: 최종 사용자를 설치할 위치 지정](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|사용자가 애플리케이션을 다운로드하고 설치할 수 있는 위치를 설정하는 방법을 설명합니다.|
+|[방법: ClickOnce 오프 라인 또는 온라인 설치 모드 지정](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|애플리케이션을 오프라인으로 제공할지 아니면 온라인으로 제공할지를 설정하는 방법을 설명합니다.|
 |[방법: ClickOnce 게시 버전 설정](../deployment/how-to-set-the-clickonce-publish-version.md)|게시하는 애플리케이션을 업데이트로 간주할지 여부를 결정하는 ClickOnce **게시 버전** 속성을 설정하는 방법을 설명합니다.|
 |[방법: ClickOnce 게시 버전 자동 증가](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|애플리케이션을 게시할 때마다 **PublishVersion** 의 수정 번호를 자동으로 증분하는 방법을 설명합니다.|
 
@@ -74,19 +74,19 @@ ms.locfileid: "94349492"
 ### <a name="publish-options-dialog-box"></a>게시 옵션 대화 상자
  게시 옵션 대화 상자에서는 애플리케이션의 배포 옵션을 지정합니다.
 
-|제목|설명|
+|제목|Description|
 |-|-|
-|[방법: ClickOnce 애플리케이션의 게시 언어 변경](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|지역화된 버전과 일치하도록 언어 및 문화권을 지정하는 방법을 설명합니다.|
-|[방법: ClickOnce 애플리케이션의 시작 메뉴 이름 지정](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce 애플리케이션의 표시 이름을 변경하는 방법을 설명합니다.|
+|[방법: ClickOnce 응용 프로그램의 게시 언어 변경](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|지역화된 버전과 일치하도록 언어 및 문화권을 지정하는 방법을 설명합니다.|
+|[방법: ClickOnce 응용 프로그램에 대 한 시작 메뉴 이름 지정](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce 애플리케이션의 표시 이름을 변경하는 방법을 설명합니다.|
 |[방법: 기술 지원을 위한 링크 지정](../deployment/how-to-specify-a-link-for-technical-support.md)|사용자가 애플리케이션에 대한 정보를 얻을 수 있는 웹 페이지나 파일 공유를 식별하는 **지원 URL** 속성을 설정하는 방법을 설명합니다.|
 |[방법: ClickOnce 배포 시 개별 필수 구성 요소에 대한 지원 URL 지정](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|각 필수 구성 요소에 대한 개별 지원 URL을 포함하도록 애플리케이션 매니페스트를 수동으로 변경하는 방법을 설명합니다.|
-|[방법: ClickOnce 애플리케이션의 게시 페이지 지정](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|애플리케이션과 함께 기본 웹 페이지(publish.htm)를 생성 및 게시하는 방법을 설명합니다.|
+|[방법: ClickOnce 응용 프로그램의 게시 페이지 지정](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|애플리케이션과 함께 기본 웹 페이지(publish.htm)를 생성 및 게시하는 방법을 설명합니다.|
 |[방법: ClickOnce 기본 웹 페이지 사용자 지정](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|자동으로 생성되어 애플리케이션과 함께 게시되는 웹 페이지를 사용자 지정하는 방법을 설명합니다.|
 |[방법: CD 설치를 위한 자동 시작 사용](../deployment/how-to-enable-autostart-for-cd-installations.md)|미디어를 삽입할 때 ClickOnce 애플리케이션이 자동으로 시작되도록 자동 시작 기능을 사용하도록 설정하는 방법을 설명합니다.|
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[방법: ClickOnce 애플리케이션에 대한 파일 연결 만들기](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|ClickOnce 애플리케이션에 파일 이름 확장명 지원을 추가하는 방법을 설명합니다.|
 |[방법: 온라인 ClickOnce 애플리케이션에서 쿼리 문자열 정보 검색](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|ClickOnce 애플리케이션을 실행하는 데 사용되는 URL에 전달된 매개 변수를 검색하는 방법을 보여 줍니다.|

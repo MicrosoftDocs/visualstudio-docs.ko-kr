@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927654"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 솔루션의 런타임에 바인딩
   Office 응용 프로그램의 개체 모델에 있는 일부 형식은 런타임에 바인딩 기능을 통해 사용할 수 있는 기능을 제공 합니다. 예를 들어, 일부 메서드 및 속성은 Office 응용 프로그램의 컨텍스트에 따라 다른 형식의 개체를 반환할 수 있으며, 일부 형식은 다른 컨텍스트에서 다른 메서드나 속성을 노출할 수 있습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "97523568"
 
  Visual Basic 변환에 대 한 자세한 내용은 [암시적 변환과 명시적 변환 &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) 및 [CType 함수 &#40;](/dotnet/visual-basic/language-reference/functions/ctype-function)Visual Basic&#41;을 참조 하세요.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
  다음 코드 예제에서는 **Option Strict** 가 on 인 Visual Basic 프로젝트에서 개체를 특정 형식으로 캐스팅 하는 방법을 보여 줍니다. 이 형식의 프로젝트에서는 속성을로 명시적으로 캐스팅 해야 합니다 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> <xref:Microsoft.Office.Interop.Excel.Range> . 이 예제에는 라는 워크시트 클래스가 포함 된 문서 수준 Excel 프로젝트가 필요 `Sheet1` 합니다.
 
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
@@ -53,7 +53,7 @@ ms.locfileid: "97523568"
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>런타임에 바인딩을 통해서만 사용할 수 있는 멤버에 액세스 합니다.
  Office Pia의 일부 속성 및 메서드는 런타임에 바인딩을 통해서만 사용할 수 있습니다. **Option Strict** 가 off 인 경우 또는를 대상으로 하는 Visual c # 프로젝트의 Visual Basic 프로젝트에서는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 이러한 언어의 런타임에 바인딩 기능을 사용 하 여 런타임에 바인딩된 멤버에 액세스할 수 있습니다. **Option Strict** 가 on 인 Visual Basic 프로젝트에서 리플렉션을 사용 하 여 이러한 멤버에 액세스 해야 합니다.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
  다음 코드 예제에서는 **Option Strict** 가 off 인 Visual Basic 프로젝트에서 또는를 대상으로 하는 Visual c # 프로젝트에서 런타임에 바인딩된 멤버에 액세스 하는 방법을 보여 줍니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . 이 예제에서는 Word에서 **파일 열기** 대화 상자의 런타임에 바인딩된 **이름** 속성에 액세스 합니다. 이 예제를 사용 하려면 `ThisDocument` `ThisAddIn` Word 프로젝트의 또는 클래스에서 실행 합니다.
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5c602a1cf46382e5a8b5c688501b2406e4a6d0
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: e353070c780f69ea05c1c67986f7a40f34d0659c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925844"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 개체
 
@@ -28,6 +28,6 @@ ms.locfileid: "97863999"
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 `VSCodeWindowManager` .
 
-|인터페이스|설명|
+|인터페이스|Description|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|코드 창에서 장식 (예: 드롭다운 모음)을 추가 하거나 제거할 수 있습니다.|

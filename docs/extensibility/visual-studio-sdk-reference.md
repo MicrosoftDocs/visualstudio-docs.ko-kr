@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f53d122138845c0b9711a78d2237972512710cb
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 7146abea7ddaba944a913e5f51164c5497c643c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925893"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 참조
 
 이 섹션에는 visual studio SDK를 사용 하는 개발자를 위한 Visual Studio 네임 스페이스, 관련 네임 스페이스 및 기타 관심 영역에 대 한 정보가 포함 되어 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop> 편집기 및 언어 서비스에 사용 되는 레거시 interop 인터페이스입니다.
 

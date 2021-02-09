@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb0f822011a5f54cf97e58f53ec1cf03b5d26a23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926342"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 고유 식별자가 지정 된 서비스 개체를 검색 합니다.
@@ -47,11 +47,11 @@ int GetService (
 `ppService`\
 제한이 서비스를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  타사 식 계산기에서이를 사용 하 여 다른 식 계산기에서 서비스를 가져올 수 있습니다. 예를 들어이 메서드를 사용 하 여 기본 식 계산기에서 시각화 도우미 서비스의 인터페이스를 가져올 수 있습니다. 타사 식 계산기는이 인터페이스를 구현 해야 할 가능성이 거의 없습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

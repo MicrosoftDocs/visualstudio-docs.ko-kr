@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927407"
 ---
 # <a name="trusted-application-deployment-overview"></a>신뢰할 수 있는 애플리케이션 배포 개요
 이 항목에서는 신뢰할 수 있는 애플리케이션 배포 기술을 사용하여, 관리자 권한이 있는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션을 배포하는 방법에 대한 개요를 제공합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "94350493"
 ## <a name="trusted-application-deployment-basics"></a>신뢰할 수 있는 애플리케이션 배포 기본 사항
  다음 표에서는 신뢰할 수 있는 애플리케이션 배포에 포함된 개체 및 역할을 보여 줍니다.
 
-|개체 또는 역할|설명|
+|개체 또는 역할|Description|
 |--------------------|-----------------|
 |관리자 역할|클라이언트 컴퓨터를 업데이트 및 유지 관리하는 조직 엔터티입니다.|
 |신뢰 관리자|클라이언트 애플리케이션 보안을 적용하는 CLR(공용 언어 런타임) 내의 하위 시스템입니다.|

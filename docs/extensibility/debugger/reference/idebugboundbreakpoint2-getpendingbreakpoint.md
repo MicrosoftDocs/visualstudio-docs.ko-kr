@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927160"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 지정 된 바인딩된 중단점이 만들어진 보류 중인 중단점을 가져옵니다.
@@ -29,13 +29,13 @@ ms.locfileid: "80735485"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetPendingBreakpoint( 
+HRESULT GetPendingBreakpoint( 
     IDebugPendingBreakpoint2** ppPendingBreakpoint
 );
 ```
 
 ```csharp
-int GetPendingBreakpoint( 
+int GetPendingBreakpoint( 
     out IDebugPendingBreakpoint2 ppPendingBreakpoint
 );
 ```
@@ -44,13 +44,13 @@ int GetPendingBreakpoint( 
 `ppPendingBreakpoint`\
 제한이 이 바인딩된 중단점을 만드는 데 사용 된 보류 중인 중단점을 나타내는 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 보류 중인 중단점은 하나 또는 여러 프로그램에 적용 될 수 있는 코드에 중단점을 바인딩하는 데 필요한 모든 정보 컬렉션으로 간주할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 `CBoundBreakpoint` [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```
@@ -84,6 +84,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

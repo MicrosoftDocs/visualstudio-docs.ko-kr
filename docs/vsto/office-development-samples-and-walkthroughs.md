@@ -19,15 +19,15 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1762fcd07e42c8af5d51d31e9ab1f455d6f5d6bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926588"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 개발 샘플 및 연습
   이 섹션에는 예제 응용 프로그램, 예제 코드 및 Microsoft Office 솔루션을 빌드하는 데 사용 되는 구문, 구조 및 기술을 보여 주는 단계별 연습이 포함 되어 있습니다.

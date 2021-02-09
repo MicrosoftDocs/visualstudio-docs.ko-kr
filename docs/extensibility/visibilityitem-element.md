@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926014"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem`요소는 명령 및 도구 모음의 정적 표시 여부를 결정 합니다. 모든 항목은 명령 또는 메뉴와 연결 된 명령 UI 컨텍스트를 식별 합니다. Visual Studio에서는 해당 항목을 정의 하는 Vspackage를 로드 하지 않고 명령, 메뉴 및 도구 모음과 표시 유형을 검색 합니다. IDE는 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트가 활성 상태 인지 여부를 확인 합니다.
@@ -43,11 +43,11 @@ ms.locfileid: "97863886"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
-|id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
-|컨텍스트|필수 요소. 명령이 표시 되는 UI 컨텍스트입니다.|
+|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.|
+|id|필수 사항입니다. GUID/ID 명령 식별자의 ID입니다.|
+|컨텍스트|필수 사항입니다. 명령이 표시 되는 UI 컨텍스트입니다.|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
@@ -55,7 +55,7 @@ ms.locfileid: "97863886"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다.|
 
@@ -71,7 +71,7 @@ ms.locfileid: "97863886"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>

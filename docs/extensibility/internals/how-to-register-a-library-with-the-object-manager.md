@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925006"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자를 사용 하 여 라이브러리 등록
 기호-검색 도구 (예: **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과**)를 사용 하 여 프로젝트 또는 외부 구성 요소에서 기호를 볼 수 있습니다. 기호에는 네임 스페이스, 클래스, 인터페이스, 메서드 및 기타 언어 요소가 포함 됩니다. 라이브러리는 이러한 기호를 추적 하 고 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 데이터로 채우는 개체 관리자에 게 노출 합니다.

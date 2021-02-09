@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 925141733356ac7730e2708673ebdad793fd465b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5bd2d826f1612be3bc3747cdaee9818d4ecc870
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925318"
 ---
 # <a name="m_action-field"></a>m_action 필드
 개체에서 실행할 코드를 나타내는 대리자입니다 <xref:System.Threading.Tasks.Task> .
@@ -35,5 +35,5 @@ ms.locfileid: "80738439"
 ## <a name="remarks"></a>설명
  `action`생성자의 매개 변수입니다 <xref:System.Threading.Tasks.Task.%23ctor%2A> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b9f8bc85672fc89205ab25fa9954e1c28e10f859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926394"
 ---
 # <a name="launch-the-debugger"></a>디버거 시작
 디버거를 시작 하려면 적절 한 특성과 함께 올바른 메서드 및 이벤트 시퀀스를 전송 해야 합니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d512fa6eb7529e11c766d7c173b318aa6f8f2f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea8de97a82959b1135866988aeeeb14cf464e8b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925074"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 이 메서드는 프로그램에서 별칭 목록을 검색 합니다.
@@ -29,17 +29,17 @@ ms.locfileid: "80735814"
 
 ```cpp
 HRESULT GetAllAliases(
-   UINT          uRequest,
-   IDebugAlias** ppAliases,
-   UINT*         puFetched
+   UINT          uRequest,
+   IDebugAlias** ppAliases,
+   UINT*         puFetched
 );
 ```
 
 ```csharp
 int GetAllAliases(
-   uint          uRequest,
-   IDebugAlias[] ppAliases,
-   out uint      puFetched
+   uint          uRequest,
+   IDebugAlias[] ppAliases,
+   out uint      puFetched
 );
 ```
 
@@ -53,8 +53,8 @@ int GetAllAliases(
 `puFetched`\
 제한이 가져온 별칭의 수를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
