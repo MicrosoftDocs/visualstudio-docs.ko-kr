@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 192418439bc25e6ac1b969483c0c48a030caa024
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894077"
 ---
 # <a name="how-to-use-the-expression-editor"></a>방법: 식 편집기 사용
 
@@ -55,6 +55,6 @@ ms.locfileid: "94437855"
 
      식을 입력 하거나 편집 하는 다른 방법은 속성 표에서 속성 이름 옆에 있는 줄임표를 클릭 하는 것입니다. 줄임표를 선택 하면 **식 편집기** 가 대화 상자로 열립니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

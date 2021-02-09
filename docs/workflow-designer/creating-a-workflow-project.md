@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cf8c0fe0b716cecee19c00bb0b300d4ffdc99355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894363"
 ---
 # <a name="workflow-project-templates"></a>워크플로 프로젝트 템플릿
 
@@ -45,7 +45,7 @@ Visual Studio는 다음과 같은 네 가지 워크플로 프로젝트 템플릿
 1. 프로젝트 만들기를 계속 진행 합니다.
 
    > [!NOTE]
-   > 기존 솔루션에 새 프로젝트를 추가 하려면 Visual Studio에서 해당 솔루션을 열고 **솔루션 탐색기** 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **Add**  >  **새 프로젝트** 추가를 선택 합니다.
+   > 기존 솔루션에 새 프로젝트를 추가 하려면 Visual Studio에서 해당 솔루션을 열고 **솔루션 탐색기** 솔루션을 마우스 오른쪽 단추로 클릭 한 다음   >  **새 프로젝트** 추가를 선택 합니다.
 
 ## <a name="workflow-console-app"></a>워크플로 콘솔 앱
 
@@ -71,7 +71,7 @@ Visual Studio는 다음과 같은 네 가지 워크플로 프로젝트 템플릿
 > [!NOTE]
 > 사용자 지정 활동 디자이너는 사용자 지정 활동 및 기본 .NET 활동에 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Workflow Designer 사용](developing-applications-with-the-workflow-designer.md)
 - [워크플로 디자인 (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

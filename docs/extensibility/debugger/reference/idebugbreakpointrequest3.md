@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893063"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 이 인터페이스는 모든 중단점 형식을 만들고 바인딩하는 데 필요한 정보를 나타냅니다. [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)의 확장입니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
@@ -37,7 +37,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugBreakpointRequest3` 다음 메서드를 노출 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.|
 
@@ -51,6 +51,6 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

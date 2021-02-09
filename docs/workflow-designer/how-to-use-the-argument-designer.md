@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9b97368a942747046aa7641771f84a9f2ed41e11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894103"
 ---
 # <a name="how-to-use-the-argument-designer"></a>방법: 인수 디자이너 사용
 
@@ -30,12 +30,12 @@ ms.locfileid: "94437868"
 
 2. 디자인 캔버스의 왼쪽 아래 모퉁이에 있는 **인수** 단추를 클릭 하 여 인수 디자이너를 엽니다. 인수 디자이너가 나타납니다.
 
-3. **인수 만들기** 라는 빈 행을 클릭 합니다. 그러면 다음 **기본값을 사용** 하 여 새 인수를 사용 하 여 새 행을 추가 합니다 **. 여기서 x는 초기** 값이 1 인 정수 **입니다. 여기서** x는 고유 인수 이름을 만들기 위해 자동으로 증가 하는 **정수입니다.** **String** **기본값** 에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
+3. **인수 만들기** 라는 빈 행을 클릭 합니다. 그러면 다음 **기본값을 사용** 하 여 새 인수를 사용 하 여 새 행을 추가 합니다 **. 여기서 x는 초기** 값이 1 인 정수 **입니다. 여기서** x는 고유 인수 이름을 만들기 위해 자동으로 증가 하는 **정수입니다.**  **기본값** 에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
 
     > [!NOTE]
     > 인수를 삭제 하려면 인수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [워크플로 디자이너 사용](developing-applications-with-the-workflow-designer.md)
 - [변수 및 인수](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

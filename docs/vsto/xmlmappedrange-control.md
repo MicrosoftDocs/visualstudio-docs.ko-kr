@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894402"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 컨트롤
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>컨트롤은 반복 되지 않는 스키마 요소가 Excel Microsoft Office의 셀에 매핑될 때만 생성 되는 범위입니다. 예를 들어 `maxOccurs` schema 요소의 특성은 1과 같습니다. Visual Studio에서 XML 매핑된 범위를 만든 후에는 Excel 개체 모델을 트래버스 하지 않고 직접 프로그래밍할 수 있습니다. <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>요소 매핑이 제거 될 때에만 Excel 내에서 컨트롤을 삭제할 수 있습니다.

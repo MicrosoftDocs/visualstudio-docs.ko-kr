@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e33ea580f46f09ab3bd4d75ba58a35518c3583c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894142"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>방법: 이동 경로 탐색 사용
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893596"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio 찾기
 
@@ -27,7 +27,7 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 | 코드 | 패키지 |
 | ---- | --- |
 | 네이티브 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| 관리 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| 관리 대상 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 경로 또는 현재 프로세스가 지정 된 단일 인스턴스를 찾거나 모든 인스턴스를 열거할 수 있습니다. Visual Studio를 찾는 방법의 전체 예제는 [샘플](https://github.com/Microsoft/vs-setup-samples) 을 참조 하세요.
 

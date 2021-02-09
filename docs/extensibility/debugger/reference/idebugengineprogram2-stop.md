@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6013770e3a334e7924cafe4563d437d4f7730bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892686"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.
@@ -28,8 +28,8 @@ ms.locfileid: "80730488"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Stop( 
-   void 
+HRESULT Stop( 
+   void 
 );
 ```
 
@@ -45,6 +45,6 @@ int Stop();
 
  프로그램이 중지 되 면 구현자는 [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) 를 전송 해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

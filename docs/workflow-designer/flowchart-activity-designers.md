@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a9aad147f0d8f47a64b6d083cf3e008dec8f6a2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 600b500ae5672dfd5332168ec11f05c7b27b14bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894168"
 ---
 # <a name="flowchart-activity-designers"></a>순서도 활동 디자이너
 
@@ -41,7 +41,7 @@ ms.locfileid: "94435810"
 
  [런타임](../workflow-designer/runtime-activity-designers.md)
 
- [기본 형식](../workflow-designer/primitives-activity-designers.md)
+ [Primitives](../workflow-designer/primitives-activity-designers.md)
 
  [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

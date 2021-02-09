@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893973"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce를 사용하여 COM 구성 요소 배포
 레거시 COM 구성 요소의 배포는 일반적으로 어려운 작업입니다. 구성 요소를 전역적으로 등록 해야 하므로 겹치는 응용 프로그램 간에 바람직하지 않은 부작용이 발생할 수 있습니다. 이러한 상황은 일반적으로 응용 프로그램이 응용 프로그램에 완전히 격리 되거나 side-by-side 호환 되기 때문에 .NET Framework 응용 프로그램에서 문제가 되지 않습니다. Visual Studio를 사용 하면 Windows XP 이상 운영 체제에서 격리 된 COM 구성 요소를 배포할 수 있습니다.
@@ -59,7 +59,7 @@ ms.locfileid: "94382925"
 
 ##### <a name="to-create-a-native-com-component"></a>네이티브 COM 구성 요소를 만들려면
 
-1. Visual Basic 6.0를 사용 하 여 **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 클릭 합니다.
+1. Visual Basic 6.0를 사용 하 여 **파일** 메뉴에서 **새로 만들기**, **프로젝트** 를 차례로 클릭 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual Basic** 노드를 선택 하 고 **ActiveX DLL** 프로젝트를 선택 합니다. **이름** 상자에 `VB6Hello`을 입력합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "94382925"
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>COM 구성 요소를 사용 하 여 Windows 기반 응용 프로그램을 만들려면
 
-1. Visual Basic를 사용 하 여 **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 클릭 합니다.
+1. Visual Basic를 사용 하 여 **파일** 메뉴에서 **새로 만들기**, **프로젝트** 를 차례로 클릭 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual Basic** 노드를 선택 하 고 **Windows 응용 프로그램** 을 선택 합니다. **이름** 상자에 `RegFreeComDemo`을 입력합니다.
 
@@ -173,5 +173,5 @@ ms.locfileid: "94382925"
 
   응용 프로그램의 배포에 등록이 필요 하지 않더라도 개발자 컴퓨터에 COM 등록이 필요한 몇 가지 시나리오가 있습니다. `Isolated`속성을 사용 하려면 빌드 중에 매니페스트를 자동으로 생성 하기 위해 COM 구성 요소를 개발자 컴퓨터에 등록 해야 합니다. 빌드 중에 자체 등록을 호출 하는 등록 캡처 기능은 없습니다. 또한 형식 라이브러리에 명시적으로 정의 되지 않은 모든 클래스는 매니페스트에 반영 되지 않습니다. 네이티브 참조와 같이 기존 매니페스트가 포함 된 COM 구성 요소를 사용 하는 경우 개발 시 구성 요소를 등록 하지 않아도 됩니다. 그러나 구성 요소가 ActiveX 컨트롤이 고 **도구 상자** 및 Windows Forms 디자이너에 포함 하려는 경우에는 등록이 필요 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)

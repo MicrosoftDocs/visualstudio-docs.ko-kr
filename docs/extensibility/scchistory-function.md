@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893570"
 ---
 # <a name="scchistory-function"></a>SccHistory 함수
 이 함수는 지정 된 파일의 기록을 표시 합니다.
@@ -60,10 +60,10 @@ SCCRTN SccHistory(
 
 진행 원본 제어 플러그 인 관련 옵션입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|버전 기록을 가져왔습니다.|
 |SCC_I_RELOADFILE|소스 제어 시스템은 기록을 가져오는 동안 디스크에서 파일을 수정 했습니다. 예를 들어 이전 버전의 파일을 가져오면 IDE에서이 파일을 다시 로드 해야 합니다.|
@@ -82,6 +82,6 @@ SCCRTN SccHistory(
 > [!NOTE]
 > 소스 제어 플러그 인이 파일 배열에 대해이 함수를 지원 하지 않으면 첫 번째 파일의 파일 기록만 표시할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

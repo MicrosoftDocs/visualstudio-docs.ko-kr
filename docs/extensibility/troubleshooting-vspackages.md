@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 957488adb36c54355b4fe47577a7cd5b2407864f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893518"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결
 다음은 문제를 해결 하기 위한 VSPackage 및 팁과 함께 발생할 수 있는 일반적인 문제입니다.
@@ -125,6 +125,6 @@ ms.locfileid: "97716057"
 
    InprocServer32 항목에 VSPackage dll의 올바른 경로가 있는지 확인 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

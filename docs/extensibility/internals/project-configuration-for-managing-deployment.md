@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893648"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포 관리를 위한 프로젝트 구성
 배포는 디버깅 및 설치를 위해 빌드 프로세스에서 예상 위치로 출력 항목을 물리적으로 이동 하는 동작입니다. 예를 들어 웹 응용 프로그램은 로컬 컴퓨터에서 빌드한 다음 서버에 배치할 수 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "97877990"
 
   구성에서는 빌드 또는 배포 작업에 영향을 주는 종속성을 지정할 수 있습니다. 빌드 또는 배포 종속성은 구성 자체가 빌드하거나 배포 되기 전이나 후에 빌드해야 하거나 배포 해야 하는 프로젝트입니다. 프로젝트 간의 빌드 종속성은 인터페이스로 설명 되며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 인터페이스를 사용 하 여 종속성을 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 합니다. 자세한 내용은 [빌드하기 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892829"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 이 메서드는 디버그 엔진 (DE)을 통해 프로세스를 시작 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80730549"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT LaunchSuspended ( 
+HRESULT LaunchSuspended ( 
    LPCOLESTR             pszMachine,
    IDebugPort2*          pPort,
    LPCOLESTR             pszExe,
@@ -103,7 +103,7 @@ int LaunchSuspended(
 `ppDebugProcess`\
 제한이 시작 된 프로세스를 나타내는 결과 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -111,7 +111,7 @@ int LaunchSuspended(
 
  프로세스가 일시 중단 된 상태에서 성공적으로 시작 된 후 프로세스를 시작 하기 위해 [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) 메서드가 호출 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)

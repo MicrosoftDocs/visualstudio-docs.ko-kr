@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893453"
 ---
 # <a name="updating-the-user-interface"></a>사용자 인터페이스 업데이트
 명령을 구현한 후 새 명령의 상태로 사용자 인터페이스를 업데이트 하는 코드를 추가할 수 있습니다.
@@ -52,6 +52,6 @@ ms.locfileid: "97716031"
 
          <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> `QueryInterface` 개체에 대해 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 하거나 서비스에서 인터페이스를 가져와서 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [구현](../extensibility/internals/command-implementation.md)

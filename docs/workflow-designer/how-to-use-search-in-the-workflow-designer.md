@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fb30d4846c24638f87989d2a7a716df06b0523b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894116"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>방법: Workflow Designer에서 검색 사용
 
@@ -27,11 +27,11 @@ ms.locfileid: "94437907"
 
 - <xref:System.Activities.Activity> 개체, <xref:System.Activities.Statements.FlowNode> 개체, <xref:System.Activities.Statements.State> 개체, 전환 및 기타 사용자 지정 흐름 제어 항목의 속성
 
-- 변수
+- variables
 
 - 인수
 
-- 표현식
+- 식
 
 ### <a name="use-quick-find"></a>빠른 찾기 사용
 

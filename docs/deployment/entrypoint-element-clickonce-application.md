@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d5c35d94001ae1e883e2bd76650f248d7e0364d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893895"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint &gt; 요소 (ClickOnce 응용 프로그램)
 이 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램이 클라이언트 컴퓨터에서 실행 될 때 실행 되어야 하는 어셈블리를 식별 합니다.
@@ -56,9 +56,9 @@ ms.locfileid: "94382809"
 
  `entryPoint` 요소에는 다음 특성이 있습니다.
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
-|`name`|(선택 사항) 이 값은 .NET Framework에서 사용 되지 않습니다.|
+|`name`|선택 사항입니다. 이 값은 .NET Framework에서 사용 되지 않습니다.|
 
  `entryPoint` 에는 다음 요소가 있습니다.
 
@@ -70,20 +70,20 @@ ms.locfileid: "94382809"
 ## <a name="commandline"></a>commandLine
  필수 사항입니다. 는 요소의 자식 이어야 합니다 `entryPoint` . 자식 요소가 없으며 다음과 같은 특성이 있습니다.
 
-| 특성 | Description |
+| attribute | Description |
 |--------------| - |
 | `file` | 필수 사항입니다. 응용 프로그램의 시작 어셈블리에 대 한 로컬 참조 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 입니다. 이 값에는 슬래시 (/) 또는 백슬래시 ( \\ ) 경로 구분 기호를 사용할 수 없습니다. |
 | `parameters` | 필수 사항입니다. 진입점을 사용 하 여 수행할 작업을 설명 합니다. 유일 하 게 유효한 값은입니다 `run` . 빈 문자열을 제공 하면 `run` 가 가정 됩니다. |
 
 ## <a name="customhostrequired"></a>customHostRequired
- (선택 사항) 포함 하는 경우,이 배포에 사용자 지정 호스트 내에 배포 되는 구성 요소가 포함 되어 있고 독립 실행형 응용 프로그램이 아닌 경우에 지정 합니다.
+ 선택 사항입니다. 포함 하는 경우,이 배포에 사용자 지정 호스트 내에 배포 되는 구성 요소가 포함 되어 있고 독립 실행형 응용 프로그램이 아닌 경우에 지정 합니다.
 
  이 요소가 있으면 및 요소도 없어야 합니다 `assemblyIdentity` `commandLine` . 인 경우에는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 설치 중에 유효성 검사 오류가 발생 합니다.
 
  이 요소에는 특성이 없고 자식이 없습니다.
 
 ## <a name="customux"></a>customUX
- (선택 사항) 사용자 지정 설치 관리자가 응용 프로그램을 설치 및 유지 관리 하 고 시작 메뉴 항목, 바로 가기 또는 프로그램 추가/제거 항목을 만들지 않도록 지정 합니다.
+ 선택 사항입니다. 사용자 지정 설치 관리자가 응용 프로그램을 설치 및 유지 관리 하 고 시작 메뉴 항목, 바로 가기 또는 프로그램 추가/제거 항목을 만들지 않도록 지정 합니다.
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
@@ -96,7 +96,7 @@ ms.locfileid: "94382809"
 
  `commandLine`런타임에 응용 프로그램에 매개 변수를 전달 하는 데를 사용할 수 없습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램의에서 배포에 대 한 쿼리 문자열 매개 변수에 액세스할 수 있습니다 <xref:System.AppDomain> . 자세한 내용은 [방법: 온라인 ClickOnce 응용 프로그램에서 쿼리 문자열 정보 검색](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)을 참조 하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 응용 프로그램 `entryPoint` 에 대 한 응용 프로그램 매니페스트의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 이 코드 예제는 [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md) 항목에 대해 제공 되는 더 큰 예제의 일부입니다.
 
 ```xml
@@ -112,5 +112,5 @@ ms.locfileid: "94382809"
   </entryPoint>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
