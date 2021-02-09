@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847715"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -96,7 +96,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
      .dbml 파일이 프로젝트에 추가되고 O/R 디자이너(개체 관계형 디자이너)가 열립니다.
 
-8. 메뉴 모음에서 서버 탐색기 **보기** 를 선택  >  **Server Explorer** 합니다.
+8. 메뉴 모음에서 서버 탐색기 **보기** 를 선택  >  합니다.
 
 9. **서버 탐색기** 에서 AdventureWorks 예제 데이터베이스를 나타내는 노드를 확장 한 다음 **테이블** 노드를 확장 합니다.
 
@@ -122,7 +122,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 모델에 엔터티를 추가 합니다. Visual Studio **도구 상자** 의 엔터티를 BDC 디자이너에 추가할 수 있습니다.
 
-1. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
+1. 메뉴 모음에서   >  **도구 상자** 보기를 선택 합니다.
 
 2. **도구 상자** 의 **BusinessDataConnectivity** 탭에서 **엔터티** 를 BDC 디자이너에 추가 합니다.
 
@@ -148,7 +148,7 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 1. BDC 디자이너에서 **Contact** 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
      BDC 메서드 세부 정보 창이 열립니다.
 
@@ -184,7 +184,7 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
 
 10. 6 단계를 반복 하 여 다음 각 필드에 대 한 형식 설명자를 만듭니다.
 
-    |Name|유형 이름|
+    |이름|유형 이름|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
