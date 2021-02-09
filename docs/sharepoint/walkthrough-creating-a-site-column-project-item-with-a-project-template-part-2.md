@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918721"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿에 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 새 프로젝트를 만들 때이 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -43,7 +43,7 @@ ms.locfileid: "96915143"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 수행 하려면 먼저 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)완료 하 여 SiteColumnProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -464,7 +464,7 @@ ms.locfileid: "96915143"
 
 9. **프로젝트** 목록에서 **SharePointCommands** 프로젝트를 선택한 다음 **확인** 단추를 선택 합니다.
 
-10. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 빌드되는지 확인 합니다.
+10. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 빌드되는지 확인 합니다.
 
 ## <a name="test-the-wizard"></a>마법사 테스트
  이제 마법사를 테스트할 준비가 되었습니다. 먼저 Visual Studio의 실험적 인스턴스에서 SiteColumnProjectItem 솔루션의 디버깅을 시작 합니다. 그런 다음 Visual Studio의 실험적 인스턴스에서 사이트 열 프로젝트에 대 한 마법사를 테스트 합니다. 마지막으로 프로젝트를 빌드하고 실행 하 여 사이트 열이 예상 대로 작동 하는지 확인 합니다.
@@ -493,7 +493,7 @@ ms.locfileid: "96915143"
 
 4. 메서드의 이전에 설정한 중단점에서 Visual Studio의 다른 인스턴스의 코드가 중지 되는지 확인 `RunStarted` 합니다.
 
-5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그** 계속을 선택 하 여 프로젝트를 계속 디버깅  >  **Continue** 합니다.
+5. **F5** 키를 선택 하거나 메뉴 모음에서 **디버그** 계속을 선택 하 여 프로젝트를 계속 디버깅  >  합니다.
 
 6. **SharePoint 사용자 지정 마법사** 에서 디버깅에 사용할 사이트의 URL을 입력 하 고 **다음** 단추를 선택 합니다.
 

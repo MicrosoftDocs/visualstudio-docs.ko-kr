@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918761"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장 만들기
   이 연습에서는 SharePoint 프로젝트용 확장을 만드는 방법을 보여 줍니다. 프로젝트 확장을 사용 하 여 프로젝트를 추가, 삭제 또는 이름을 바꿀 때와 같은 프로젝트 수준 이벤트에 응답할 수 있습니다. 또한 속성 값이 변경 될 때 사용자 지정 속성을 추가 하거나 응답할 수 있습니다. 프로젝트 항목 확장과 달리 프로젝트 확장은 특정 SharePoint 프로젝트 형식에 연결할 수 없습니다. 프로젝트 확장을 만들 때에서 모든 종류의 SharePoint 프로젝트를 열 때 확장이 로드 됩니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -42,7 +42,7 @@ ms.locfileid: "96914870"
 
 - 프로젝트 속성 디버깅 및 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및의 지원 되는 버전 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]
@@ -157,7 +157,7 @@ ms.locfileid: "96914870"
 
 10. 메뉴 모음에서 파일을 마치면 **파일**  >  **모두 저장** 을 선택한 다음 매니페스트 디자이너를 닫습니다.
 
-11. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
+11. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
 
 12. **솔루션 탐색기** 에서 **projectextensionpackage** 프로젝트에 대 한 바로 가기 메뉴를 열고 **파일 탐색기에서 폴더 열기** 단추를 선택 합니다.
 

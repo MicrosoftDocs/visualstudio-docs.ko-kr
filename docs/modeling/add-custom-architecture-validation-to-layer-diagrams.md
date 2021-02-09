@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919322"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 
@@ -80,13 +80,13 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
 1. 새 **클래스 라이브러리** 프로젝트를 만듭니다. 이 프로젝트에는 레이어 유효성 검사 클래스가 포함됩니다.
 
-2. 솔루션에서 **VSIX 프로젝트** 를 찾거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다.
+2. 솔루션에서 **VSIX 프로젝트** 를 찾거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest** 인 파일이 포함됩니다.
 
-3. **솔루션 탐색기**의 VSIX 프로젝트 오른쪽 클릭 메뉴에서 **시작 프로젝트로 설정**을 선택 합니다.
+3. **솔루션 탐색기** 의 VSIX 프로젝트 오른쪽 클릭 메뉴에서 **시작 프로젝트로 설정** 을 선택 합니다.
 
-4. **source.extension.vsixmanifest**의 **자산**에서 레이어 유효성 검사 프로젝트를 MEF 구성 요소로 추가합니다.
+4. **source.extension.vsixmanifest** 의 **자산** 에서 레이어 유효성 검사 프로젝트를 MEF 구성 요소로 추가합니다.
 
-    1. **새로 만들기**를 선택합니다.
+    1. **새로 만들기** 를 선택합니다.
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
@@ -98,7 +98,7 @@ Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 �
 
 5. 또한 레이어 유효성 검사로 추가해야 합니다.
 
-    1. **새로 만들기**를 선택합니다.
+    1. **새로 만들기** 를 선택합니다.
 
     2. **새 자산 추가** 대화 상자에서 다음을 설정합니다.
 
@@ -221,7 +221,7 @@ Visual Studio의 실험적 인스턴스를 처음으로 시작 하 여 유효성
 
 유효성 검사 프로세스에 디버거를 연결하려면 유효성 검사 메서드의 시작 부분에 `System.Diagnostics.Debugger.Launch()` 에 대한 호출을 삽입합니다. 디버깅 대화 상자가 나타나면 Visual Studio의 기본 인스턴스를 선택 합니다.
 
-또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 메시지 상자가 나타나면 Visual Studio의 주 인스턴스로 이동 하 고 **디버그** 메뉴에서 **프로세스에 연결을**클릭 합니다. 이름이 **Graphcmd.exe**인 프로세스를 선택합니다.
+또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 메시지 상자가 나타나면 Visual Studio의 주 인스턴스로 이동 하 고 **디버그** 메뉴에서 **프로세스에 연결을** 클릭 합니다. 이름이 **Graphcmd.exe** 인 프로세스를 선택합니다.
 
 항상 Crtl+F5(**디버깅하지 않고 시작**)를 눌러서 실험적 인스턴스를 시작합니다.
 

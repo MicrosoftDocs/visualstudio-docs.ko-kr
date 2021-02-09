@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccac1cd234a0f83810ff2596e1763209d95a8325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918448"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista의 ClickOnce 배포
 
@@ -52,7 +52,7 @@ Visual Studio에서는 매니페스트 생성에 대해 다음과 같은 옵션�
 
   * 매니페스트 생성에 대 한 Visual Basic 프로젝트를 구성 하는 방법에 대 한 자세한 내용은 [응용 프로그램 페이지, 프로젝트 디자이너 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [사용자 권한 및 Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [프로젝트 디자이너, 애플리케이션 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)

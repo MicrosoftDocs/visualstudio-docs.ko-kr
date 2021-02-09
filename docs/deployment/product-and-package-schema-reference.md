@@ -24,30 +24,30 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918375"
 ---
 # <a name="product-and-package-schema-reference"></a>제품 및 패키지 스키마 참조
 *제품 파일* 은 응용 프로그램에 필요한 모든 외부 종속성을 설명 하는 XML 매니페스트입니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 외부 종속성의 예로는 .NET Framework 및 MDAC (Microsoft Data Access Components)가 있습니다. 패키지 파일은 제품 파일과 유사 하지만, 지역화 된 어셈블리, 사용권 계약 및 설명서와 같이 종속성의 문화권 종속 구성 요소를 설치 하는 데 사용 됩니다.
 
  제품 및 패키지 파일은 최상위 `Product` 또는 요소로 구성 되며 `Package` , 각 요소에는 다음 요소가 포함 되어 있습니다.
 
-|요소|설명|특성|
+|요소|Description|특성|
 |-------------|-----------------|----------------|
-|[\<Product> 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 수준 요소입니다.|없음|
+|[\<Product> 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 수준 요소입니다.|None|
 |[\<Package> 요소](../deployment/package-element-bootstrapper.md)|패키지 파일에 대 한 최상위 수준 요소입니다.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts> 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일의 선택적 요소입니다. 이 제품이 설치 되거나 종속 되는 다른 제품은 다음과 동일 합니다.|없음|
-|[\<InstallChecks> 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 설치 하는 동안 로컬 컴퓨터에서 수행 하는 종속성 검사를 나열 합니다.|없음|
-|[\<Commands> 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사 `InstallChecks` 를 실행 하 고, 검사에 실패할 경우 설치할 패키지를 나타냅니다.|없음|
-|[\<PackageFiles> 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|없음|
-|[\<Strings> 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 제품 이름 및 오류 문자열의 지역화 된 버전을 저장 합니다.|없음|
+|[\<RelatedProducts> 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일의 선택적 요소입니다. 이 제품이 설치 되거나 종속 되는 다른 제품은 다음과 동일 합니다.|None|
+|[\<InstallChecks> 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 설치 하는 동안 로컬 컴퓨터에서 수행 하는 종속성 검사를 나열 합니다.|None|
+|[\<Commands> 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사 `InstallChecks` 를 실행 하 고, 검사에 실패할 경우 설치할 패키지를 나타냅니다.|None|
+|[\<PackageFiles> 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|None|
+|[\<Strings> 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 제품 이름 및 오류 문자열의 지역화 된 버전을 저장 합니다.|None|
 
 ## <a name="remarks"></a>설명
  패키지 스키마는 자체 하드 코딩 된 논리를 포함 하는 MS Build 부트스트래핑 작업에 의해 생성 된 스텁 프로그램인 *Setup.exe* 에서 사용 됩니다. 스키마는 설치 프로세스의 모든 측면을 구동 합니다.

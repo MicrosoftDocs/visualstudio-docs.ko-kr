@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918731"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부
   SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목에 대 한 컨테이너입니다. 사용자 고유의 SharePoint 프로젝트 항목 형식을 만든 다음 프로젝트 템플릿에 연결 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 사이트 열을 만들기 위한 프로젝트 항목 형식을 정의 하 고, 사이트 열 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 데 사용할 수 있는 프로젝트 템플릿을 만듭니다.
@@ -43,7 +43,7 @@ ms.locfileid: "96915221"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 및
@@ -676,7 +676,7 @@ ms.locfileid: "96915221"
 
 12. **프로젝트** 목록에서 **ProjectItemTypeDefinition** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-13. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
+13. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 후 프로젝트가 오류 없이 컴파일되는지 확인 합니다.
 
 ## <a name="test-the-project-template"></a>프로젝트 템플릿 테스트
  이제 프로젝트 템플릿을 테스트할 준비가 되었습니다. 먼저 Visual Studio의 실험적 인스턴스에서 SiteColumnProjectItem 솔루션의 디버깅을 시작 합니다. 그런 다음 Visual Studio의 실험적 인스턴스에서 **사이트 열** 프로젝트를 테스트 합니다. 마지막으로 SharePoint 프로젝트를 빌드하고 실행 하 여 사이트 열이 예상 대로 작동 하는지 확인 합니다.

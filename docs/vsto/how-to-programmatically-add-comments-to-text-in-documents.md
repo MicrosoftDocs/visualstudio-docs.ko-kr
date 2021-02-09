@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding comments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5f0fba5169be71718993fbc271faf64fdac9fb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918488"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>방법: 프로그래밍 방식으로 문서의 텍스트에 메모 추가
   문서 클래스의 Comments 속성은 Microsoft Office Word 문서에서 텍스트 범위에 주석을 추가 합니다.

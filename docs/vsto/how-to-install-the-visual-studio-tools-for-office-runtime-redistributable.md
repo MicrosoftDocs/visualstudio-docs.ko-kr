@@ -13,15 +13,15 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d8fce7cc0fdbba49e0e247a6a65336105e149b6d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75dc5b2f3f207603320a773ebd71f5d6d3f81b8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918614"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치
   에서 Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하는 각 컴퓨터에 Visual Studio 2010 Tools for Office runtime을 설치 해야 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 런타임은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 Microsoft Office를 설치할 때 자동으로 설치됩니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)를 참조 하세요.

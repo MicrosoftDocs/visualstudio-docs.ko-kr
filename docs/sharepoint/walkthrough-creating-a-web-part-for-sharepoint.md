@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918624"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint용 웹 파트 만들기
 
@@ -44,7 +44,7 @@ ms.locfileid: "96914662"
     > [!NOTE]
     > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
