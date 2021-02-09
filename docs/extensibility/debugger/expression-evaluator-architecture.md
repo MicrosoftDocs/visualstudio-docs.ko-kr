@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921417"
 ---
 # <a name="expression-evaluator-architecture"></a>식 계산기 아키텍처
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ ms.locfileid: "96560163"
 
  변수의 값을 표시 하는이 프로세스에 대 한 자세한 내용은 [지역 표시](../../extensibility/debugger/displaying-locals.md) 를 참조 하세요. 변수의 값을 변경 하는 방법에 대 한 자세한 내용은 [로컬 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md) 을 참조 하세요.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md) DE가 EE를 호출할 때 전달 되는 인수를 제공 합니다.
 
  [키 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md) 실행 컨텍스트와 함께 EE를 작성할 때 필요한 중요 한 인터페이스에 대해 설명 합니다.

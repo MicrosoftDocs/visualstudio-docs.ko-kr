@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021fab07cfaf1ec17821a8ef9a33a03f2d6ec714
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 187663390c1d3625e74db6cf397a304f5d699189
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921528"
 ---
 # <a name="execution-control-and-state-evaluation"></a>실행 제어 및 상태 평가
 응용 프로그램을 디버깅 하려면 함수를 한 단계씩 실행 하 고 중단점에서 중지 하 고 실행을 계속 하는 등의 실행 제어 기능을 구현 해야 합니다. Visual Studio 디버깅은 디버거 구성 요소 간에 전송 된 이벤트에 대 한 실행 제어를 기반으로 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [프로그램 제어](../../extensibility/debugger/program-control.md) 프로그램 수준에서 발생 하는 다음 루틴을 나열 합니다. 다음 문 설정, 실행, 단계별 실행, 계속, 일시 중단 및 다시 시작
 
  [중단점 관련 메서드](../../extensibility/debugger/breakpoint-related-methods.md) Visual Studio에서 지 원하는 바인딩 및 보류 중인 중단점 형식을 정의 합니다.

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920904"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 이 인터페이스는 소스 문서에 있는 함수의 추상 위치를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugFunctionPosition2 : IUnknown
@@ -37,7 +37,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugFunctionPosition2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|이 위치가 상대적인 함수의 이름을 가져옵니다.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|함수의 시작 부분에서 오프셋을 가져옵니다.|
@@ -52,7 +52,7 @@ IDebugFunctionPosition2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

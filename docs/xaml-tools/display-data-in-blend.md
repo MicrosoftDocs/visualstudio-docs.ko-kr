@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 927779e6d58de9eeaacd43b6b03f837dbc3281e2
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 7b8025f7212d28d2cfce482f67ef672a472993bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920112"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 데이터 표시
 

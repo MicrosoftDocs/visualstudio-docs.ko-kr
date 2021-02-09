@@ -14,22 +14,22 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523382"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920224"
 ---
 # <a name="work-with-text-in-documents"></a>문서에서 텍스트 작업
   이 섹션의 항목에서는 Microsoft Office Word의 개체 모델을 사용하여 Office 프로젝트에서 텍스트 작업을 수행하는 단계별 절차 및 코드 예제를 제공합니다.
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |다양한 조건에 따라 범위를 정의하고 선택합니다.|[방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
 |범위를 시작하고 끝내는 문자를 가져옵니다.|[방법: 프로그래밍 방식으로 범위의 시작 및 끝 문자 검색](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|

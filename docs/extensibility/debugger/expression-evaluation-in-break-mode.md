@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921506"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>중단 모드에서 식 계산
 다음 섹션에서는 디버거가 중단 모드에 있을 때 발생 하는 프로세스를 설명 하 고 식 계산을 수행 해야 합니다.

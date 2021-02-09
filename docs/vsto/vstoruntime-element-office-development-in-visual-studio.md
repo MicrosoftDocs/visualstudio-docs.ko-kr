@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921752"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;M e &gt; 요소 (Visual Studio에서 Office 개발)
   `vstoRuntime` 네임스페이스의 `vstav3` 요소에는 특정 Office 솔루션에 대해 지원되는 Visual Studio Tools for Office Runtime 버전이 포함됩니다.

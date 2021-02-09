@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visio object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8d7a83b5a900defb63ceffe4f63d57e2b200c47b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921776"
 ---
 # <a name="visio-object-model-overview"></a>Visio 개체 모델 개요
   Microsoft Office Visio용 Office 솔루션을 개발하기 위해 Visio 개체 모델을 조작할 수 있습니다. 이 개체 모델은 Visio용 주 interop 어셈블리에 제공되고 `Microsoft.Office.Interop.Visio` 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.

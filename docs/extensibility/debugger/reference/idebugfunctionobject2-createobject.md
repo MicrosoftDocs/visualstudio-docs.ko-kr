@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920990"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 지정 된 계산 플래그 설정 및 시간 제한 값을 사용 하는 개체를 만듭니다.
@@ -67,11 +67,11 @@ int CreateObject (
 `ppObject`\
 제한이 새로 만든 개체를 나타내는 **Idebugobject** 를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드를 호출 하 여 클래스의 인스턴스 또는 생성자를 필요로 하는 기타 복합 형식 (매개 변수)을 나타내는 개체를 만듭니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

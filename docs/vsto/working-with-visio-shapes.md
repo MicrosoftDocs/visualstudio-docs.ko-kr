@@ -12,20 +12,20 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], common tasks with Visio shapes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 928e4888c52e5b75a721bb7a1837d8db1ce267ea
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3e4ffa7cebc337127bf6c1c79be21b376d87568c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920208"
 ---
 # <a name="work-with-visio-shapes"></a>Visio 셰이프 작업
   이 단원의 항목에서는 Visio Microsoft Office의 개체 모델을 사용 하 여 Office 프로젝트에서 셰이프 작업을 수행 하는 단계별 절차 및 코드 예제를 제공 합니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |스텐실의 셰이프를 Visio 문서에 추가 합니다.|[방법: 프로그래밍 방식으로 Visio 문서에 셰이프 추가](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|
 |한 Visio 페이지에서 셰이프를 복사 하 여 다른 페이지에 붙여 넣습니다.|[방법: 프로그래밍 방식으로 Visio 문서에서 셰이프 복사 및 붙여넣기](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|

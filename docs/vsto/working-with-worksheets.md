@@ -12,20 +12,20 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 294ff749f338df12cc2ca9edeab28d07786c7018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920176"
 ---
 # <a name="work-with-worksheets"></a>워크시트 작업
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 및 <xref:Microsoft.Office.Interop.Excel.Worksheet> 클래스에는 워크시트가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |통합 문서에 새 워크시트를 추가합니다.|[방법: 프로그래밍 방식으로 통합 문서에 새 워크시트 추가](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|
 |통합 문서의 지정된 위치에 워크시트의 복사본을 만듭니다.|[방법: 프로그래밍 방식으로 워크시트 복사](../vsto/how-to-programmatically-copy-worksheets.md)|

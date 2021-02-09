@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921248"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>디버거 확장성 시작
 는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 환경 내에서 프로그램을 디버깅 하는 데 사용 되는 디버거 구성 요소를 만들고 사용자 지정 하는 데 필요한 정보를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -36,7 +36,7 @@ ms.locfileid: "96560037"
 
 - ATL COM
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [디버거 확장 로드맵](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) 컴파일러 및 해당 출력에 따라 제품에서 디버깅을 구현 하는 프로세스를 간략하게 설명 합니다.
 
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 디버그 엔진 (DE), 식 계산기 (EE) 및 기호 처리기 (SH)를 포함 하는 디버깅 구성 요소에 대 한 개요를 제공 합니다.

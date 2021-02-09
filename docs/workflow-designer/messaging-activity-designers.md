@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e6f7eea7563d74c3bce1b1d4951fe86585b79747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920169"
 ---
 # <a name="messaging-activity-designers"></a>메시징 활동 디자이너
 
@@ -49,7 +49,7 @@ ms.locfileid: "94435653"
 
 - [런타임](../workflow-designer/runtime-activity-designers.md)
 
-- [기본 형식](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 

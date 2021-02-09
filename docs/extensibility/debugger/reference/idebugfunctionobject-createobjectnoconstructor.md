@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921089"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 생성자 없이 개체를 만듭니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728567"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateObjectNoConstructor( 
+HRESULT CreateObjectNoConstructor( 
    IDebugField*   pClassObject,
    IDebugObject** ppObject
 );
@@ -48,7 +48,7 @@ int CreateObjectNoConstructor(
 `ppObject`\
 제한이 새로 만든 개체를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
@@ -56,7 +56,7 @@ int CreateObjectNoConstructor(
 
  개체 매개 변수에 생성자가 필요한 경우 [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e00751db052adeefee828829ec89309a3adba4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919930"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 이 인터페이스는 디버그 엔진 (DE)을 나타냅니다. 이 클래스는 중단점을 만들어 예외를 설정 및 해제 하는 방법에서 디버깅 세션의 다양 한 측면을 관리 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugEngine2 : IUnknown
@@ -37,7 +37,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngine2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|DE에 의해 디버깅 되는 모든 프로그램에 대 한 열거자를 만듭니다.|
 |[연결](../../../extensibility/debugger/reference/idebugengine2-attach.md)|프로그램에 DE를 연결 합니다.|
@@ -60,6 +60,6 @@ IDebugEngine2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

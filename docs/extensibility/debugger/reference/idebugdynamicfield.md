@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cd81f393b81adb37059106e2d56fd4a3bf2c461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921166"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 이 인터페이스는 변수의 형식을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDynamicField : IDebugField
@@ -44,6 +44,6 @@ IDebugDynamicField : IDebugField
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

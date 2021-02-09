@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920436"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 인터페이스
   IManagedAddin 인터페이스를 구현 하 여 관리 되는 VSTO 추가 기능을 로드 하는 구성 요소를 만듭니다. 이 인터페이스는 2007 Microsoft Office 시스템에서 추가 되었습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```csharp
 [
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는 IManagedAddin 인터페이스에 의해 정의 되는 메서드를 보여 줍니다.
 
-|Name|설명|
+|이름|Description|
 |----------|-----------------|
 |[IManagedAddIn::Load](../vsto/imanagedaddin-load.md)|Microsoft Office 애플리케이션에서 관리되는 VSTO 추가 기능을 로드할 때 호출됩니다.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Microsoft Office 애플리케이션에서 관리되는 VSTO 추가 기능을 언로드하기 직전에 호출됩니다.|
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. 애플리케이션에서는 다음 레지스트리 키에서 항목을 검색하여 VSTO 추가 기능을 찾습니다.
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \addins\\**
 
     이 레지스트리 키의 각 항목은 VSTO 추가 기능의 고유 ID입니다. 일반적으로 VSTO 추가 기능 어셈블리의 이름입니다.
 
 2. 애플리케이션은 각 VSTO 추가 기능에 대한 항목에서 `Manifest` 항목을 찾습니다.
 
-    관리 되는 VSTO 추가 기능은 `Manifest` **HKEY_CURRENT_USER \Software\microsoft\office \\ _\<application name>_ \addins \\ _\<add-in ID>_ **의 항목에 매니페스트의 전체 경로를 저장할 수 있습니다. 매니페스트는 VSTO 추가 기능을 로드하는 데 사용되는 정보를 제공하는 파일(일반적으로 XML 파일)입니다.
+    관리 되는 VSTO 추가 기능은 `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \\ _\<add-in ID>_ \addins** 의 항목에 매니페스트의 전체 경로를 저장할 수 있습니다. 매니페스트는 VSTO 추가 기능을 로드하는 데 사용되는 정보를 제공하는 파일(일반적으로 XML 파일)입니다.
 
 3. 애플리케이션에서 `Manifest` 항목을 찾으면 관리되는 VSTO 추가 기능 로더 구성 요소를 로드하려고 합니다. 응용 프로그램은 IManagedAddin 인터페이스를 구현 하는 COM 개체를 만들어이를 수행 합니다.
 
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > 이 CLSID는의 *VSTOLoader.dll* 에서도 사용 됩니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . 따라서 IManagedAddin를 사용 하 여 사용자 고유의 VSTO 추가 기능 로더 및 런타임 구성 요소를 만드는 경우를 사용 하는 VSTO 추가 기능을 실행 하는 컴퓨터에 구성 요소를 배포할 수 없습니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio에서 Office 개발을 &#40;관리 되지 않는 API 참조&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

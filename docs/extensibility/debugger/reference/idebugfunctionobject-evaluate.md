@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920984"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 함수를 호출 하 고 결과 값을 개체로 반환 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80728501"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Evaluate( 
+HRESULT Evaluate( 
    IDebugObject** ppParams,
    DWORD          dwParams,
    DWORD          dwTimeout,
@@ -58,11 +58,11 @@ int Evaluate(
 `ppResult`\
 제한이 함수 값을 개체로 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체로 표시 되는 함수에 대 한 호출을 설정 하 고 실행 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

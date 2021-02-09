@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1592eab528f2312a9ad90dec02354814d6a81c3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 18811199cce88c5d57332ced99763b4f6233da8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920192"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T> 활동 디자이너
 
@@ -39,10 +39,10 @@ ms.locfileid: "96993252"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.AddToCollection%601> 활동의 이름입니다. 기본값은<(기본값) 컬렉션 (Int32)입니다 \> . <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|참|컬렉션에 추가할 항목 \<T> 입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|참|항목이 추가될 컬렉션입니다. 이 컬렉션은 **ICollection<TypeArgument \>** 유형입니다. 컬렉션을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|*TypeArgument*|참|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.AddToCollection%601> 활동의 이름입니다. 기본값은<(기본값) 컬렉션 (Int32)입니다 \> . <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|컬렉션에 추가할 항목 \<T> 입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|항목이 추가될 컬렉션입니다. 이 컬렉션은 **ICollection<TypeArgument \>** 유형입니다. 컬렉션을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

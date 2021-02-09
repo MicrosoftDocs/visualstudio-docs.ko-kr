@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920212"
 ---
 # <a name="work-with-documents"></a>문서 작업
   이 섹션의 항목에서는 Microsoft Office Word의 개체 모델을 사용하여 Office 프로젝트에서 문서 작업을 수행하는 단계별 절차 및 코드 예제를 제공합니다.
 
  VSTO 추가 기능에서 이러한 작업을 수행하는 방법과 문서 수준 사용자 지정에서 수행하는 방법 간에 차이가 있는 경우가 있습니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |기본 서식 파일 또는 다른 서식 파일을 기반으로 하여 문서를 만듭니다.|[방법: 프로그래밍 방식으로 새 문서 만들기](../vsto/how-to-programmatically-create-new-documents.md)|
 |지정된 문서를 읽기/쓰기 또는 읽기 전용으로 엽니다.|[방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)|
