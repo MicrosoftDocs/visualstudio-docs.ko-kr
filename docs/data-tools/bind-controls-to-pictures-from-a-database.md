@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 10ea349186aa46bfb58f4b9ceeaab2c8ac3edd81
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ce969ddab5e48ac495754369e980747332f9b0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867375"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>데이터베이스의 그림에 컨트롤 바인딩
 
@@ -41,7 +41,7 @@ ms.locfileid: "94518572"
 2. **데이터 원본** 창에서 원하는 테이블 또는 개체를 확장 하 여 해당 열 또는 속성을 표시 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않으면 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 엽니다.
+   > **데이터 소스** 창이 열려 있지 않으면   >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하 여 엽니다.
 
 3. 이미지 데이터를 포함 하는 열 또는 속성을 선택 하 고 드롭다운 컨트롤 목록에서 다음 컨트롤 중 하나를 선택 합니다.
 

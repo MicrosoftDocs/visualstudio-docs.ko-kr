@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867414"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩
 
@@ -33,7 +33,7 @@ ms.locfileid: "94518650"
 ![데이터 원본 끌기 작업](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> **데이터 소스** 창이 표시 되지 않는 경우 **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하거나 **Shift** + **Alt** + **D** 를 눌러 열 수 있습니다. **데이터 소스** 창을 보려면 Visual Studio에서 프로젝트를 열어야 합니다.
+> **데이터 소스** 창이 표시 되지 않는 경우   >  **다른 Windows**  >  **데이터 원본** 보기를 선택 하거나 **Shift** + **Alt** + **D** 를 눌러 열 수 있습니다. **데이터 소스** 창을 보려면 Visual Studio에서 프로젝트를 열어야 합니다.
 
 항목을 끌기 전에 바인딩하려는 컨트롤의 형식을 설정할 수 있습니다. 테이블 자체를 선택 하는지 아니면 개별 열을 선택 하는지에 따라 다른 값이 표시 됩니다.  사용자 지정 값을 설정할 수도 있습니다. 테이블의 경우 **세부 정보** 는 각 열이 별도의 컨트롤에 바인딩되어 있음을 의미 합니다.
 

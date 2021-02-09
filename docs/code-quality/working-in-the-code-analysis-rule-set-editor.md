@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867609"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "94436825"
 
 |작업 (심각도)|Description|
 |-|-|
-|경고|**오류 목록** 및 빌드 시에 경고를 생성 합니다.|
+|Warning|**오류 목록** 및 빌드 시에 경고를 생성 합니다.|
 |오류|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
 |정보|**오류 목록** 에서 메시지를 생성 합니다.|
 |숨김|위반은 사용자에 게 표시 되지 않습니다. 그러나 IDE에 위반에 대 한 알림이 표시 됩니다.|
@@ -74,7 +74,7 @@ ms.locfileid: "94436825"
 |**ID**|규칙의 식별자입니다.|
 |**범주**|규칙 집합의 멤버 자격 외에도 코드 분석 규칙은 범주별로 그룹화 됩니다. 자세한 내용은 [코드 분석 경고](/dotnet/fundamentals/code-analysis/quality-rules/index)를 참조 하세요.|
 |**이름**|규칙의 제목입니다.|
-|**Namespace**|규칙의 네임 스페이스입니다.|
+|**네임스페이스**|규칙의 네임 스페이스입니다.|
 |**대상 유형**|기본, 관리 또는 데이터베이스 코드에 대 한 규칙 인지 여부를 나타냅니다.|
 |**작업**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
 |**원본 규칙 집합**|규칙을 포함 하는 규칙 집합입니다.|
@@ -87,6 +87,6 @@ ms.locfileid: "94436825"
 
 - 필드 값을 기준으로 규칙 집합을 필터링 하려면 필터링 할 필드의 열 머리글에서 필터 단추를 선택 합니다. 표시 하려는 값의 확인란을 선택 하 고 숨기려는 값의 확인란을 선택 취소 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 규칙 집합 만들기](../code-quality/how-to-create-a-custom-rule-set.md)

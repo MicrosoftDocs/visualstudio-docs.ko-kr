@@ -8,15 +8,15 @@ ms.technology: vs-data-tools
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4466515f390db2ac3c03d302fd6ffb8da3a6176f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867349"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성이 두 번 나열된 경우
 

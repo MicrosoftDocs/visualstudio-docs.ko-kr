@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867362"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -113,7 +113,7 @@ WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 �
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
 
-     이 코드는 **AdventureWorksService** <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 엔터티 데이터 모델의 개체 컨텍스트 클래스에서 작동 하는에서 파생 되도록 AdventureWorksService 클래스를 업데이트 합니다. 또한 서비스의 클라이언트에 `InitializeService` 엔터티에 대한 모든 읽기/쓰기 권한을 허용하도록 `SalesOrderHeader` 메서드를 업데이트합니다.
+     이 코드는  <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 엔터티 데이터 모델의 개체 컨텍스트 클래스에서 작동 하는에서 파생 되도록 AdventureWorksService 클래스를 업데이트 합니다. 또한 서비스의 클라이언트에 `InitializeService` 엔터티에 대한 모든 읽기/쓰기 권한을 허용하도록 `SalesOrderHeader` 메서드를 업데이트합니다.
 
 2. 프로젝트를 빌드하고 오류가 없이 빌드되는지 확인합니다.
 

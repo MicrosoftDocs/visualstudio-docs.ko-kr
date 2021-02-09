@@ -11,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eeaafdca1a3a4d6fb73ca275c4fc97ce67094d8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867271"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access 데이터베이스의 데이터에 연결
 
 Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는 *.accdb* 파일)에 연결할 수 있습니다. 연결을 정의한 후 **데이터 원본** 창에 데이터가 나타납니다. 여기에서 테이블 또는 뷰를 디자인 화면으로 끌 수 있습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
-이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 ( *.accdb* 파일) 또는 access 2000-2003 데이터베이스 ( *.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
+이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 (*.accdb* 파일) 또는 access 2000-2003 데이터베이스 (*.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>.Accdb 파일에 대 한 데이터 집합 만들기
 
@@ -117,7 +117,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 - 데이터 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 집합에 있는 데이터 테이블의 또는 이벤트에 유효성 검사 논리를 추가 합니다 (데이터 [집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)참조).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [연결 추가](../data-tools/add-new-connections.md)
 - [WPF 데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867531"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트에 코드 추가
 
@@ -28,7 +28,7 @@ ms.locfileid: "94518689"
 
 데이터 집합을 정의 하는 코드는 형식화 된 데이터 집합에서 데이터 집합 정의가 변경 될 때마다 생성 됩니다. 이 코드는 데이터 집합의 구성을 수정 하는 마법사를 실행 하는 동안 변경 작업을 수행할 때도 생성 됩니다. 데이터 집합을 다시 생성 하는 동안 코드가 삭제 되지 않도록 하려면 데이터 집합의 partial 클래스 파일에 코드를 추가 합니다.
 
-데이터 집합 및 TableAdapter 코드를 분리 한 후에는 기본적으로 각 프로젝트의 불연속 클래스 파일이 생성 됩니다. 원본 프로젝트에는 TableAdapter 코드를 포함 하는 *DatasetName* (또는 *DatasetName.Designer.cs* ) 라는 파일이 있습니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 이름이 *DatasetName* (또는 *DatasetName.DataSet.Designer.cs* ) 인 파일이 있습니다. 이 파일에는 데이터 집합 코드가 포함 됩니다.
+데이터 집합 및 TableAdapter 코드를 분리 한 후에는 기본적으로 각 프로젝트의 불연속 클래스 파일이 생성 됩니다. 원본 프로젝트에는 TableAdapter 코드를 포함 하는 *DatasetName* (또는 *DatasetName.Designer.cs*) 라는 파일이 있습니다. **데이터 집합 프로젝트** 속성에 지정 된 프로젝트에는 이름이 *DatasetName* (또는 *DatasetName.DataSet.Designer.cs*) 인 파일이 있습니다. 이 파일에는 데이터 집합 코드가 포함 됩니다.
 
 > [!NOTE]
 > **데이터 집합 프로젝트** 속성을 설정 하 여 데이터 집합 및 tableadapter를 분리 하는 경우 프로젝트의 기존 부분 데이터 집합 클래스는 자동으로 이동 되지 않습니다. 기존 데이터 집합 partial 클래스는 데이터 집합 프로젝트로 수동으로 이동 해야 합니다.

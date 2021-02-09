@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867440"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 원본 추가
 
@@ -53,7 +53,7 @@ Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 *
 데이터 원본을 만든 후에는 **데이터** 원본 도구 창에 표시 됩니다.
 
 > [!TIP]
-> **데이터 소스** 창을 열려면 프로젝트가 열려 있는지 확인 하 고 **Shift** 키를 누르거나 + **Alt** + **D** **View**  >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다.
+> **데이터 소스** 창을 열려면 프로젝트가 열려 있는지 확인 하 고 **Shift** 키를 누르거나 +  +    >  **다른 Windows**  >  **데이터 원본** 보기를 선택 합니다.
 
 **데이터 소스 창에서** 폼 디자인 화면 또는 컨트롤로 데이터 소스를 끌어올 수 있습니다. 이렇게 하면 데이터 저장소의 데이터를 표시 하는 상용구 코드가 생성 됩니다.
 
@@ -67,7 +67,7 @@ Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 *
 
 ### <a name="dataset"></a>데이터 세트
 
-데이터 집합을 데이터 원본으로 만들려면 **프로젝트** 새 데이터 소스 추가를 선택 하 여 **데이터 소스 구성 마법사** 를 실행 합니다  >  **Add New Data Source**. **데이터베이스** 데이터 원본 유형을 선택 하 고 메시지의 지시에 따라 새 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.
+데이터 집합을 데이터 원본으로 만들려면 **프로젝트** 새 데이터 소스 추가를 선택 하 여 **데이터 소스 구성 마법사** 를 실행 합니다  >  . **데이터베이스** 데이터 원본 유형을 선택 하 고 메시지의 지시에 따라 새 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.
 
 ### <a name="entity-classes"></a>엔터티 클래스
 
