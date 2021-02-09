@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923582"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>방법: 기능 종속성 추가 및 제거
   SharePoint 기능은 기능이 나 데이터의 다른 기능에 따라 달라질 수 있습니다. 이러한 경우에는 기능에 대 한 종속성으로 이러한 다른 기능을 표시할 수 있습니다. 이러한 방식으로 SharePoint 서버는 기능이 활성화 되기 전에 종속 기능이 활성화 되도록 합니다.

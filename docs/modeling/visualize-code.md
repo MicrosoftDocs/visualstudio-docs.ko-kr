@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code, exploring
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a261589af027c76708a70631426d8033eb2ada63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924233"
 ---
 # <a name="visualize-code"></a>코드 시각화
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924253"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절한지를 확인하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 DSL에서 여러 세대를 포함하는 가족 구성도 그리기를 허용하는 경우 자녀의 생년월일을 부모의 생년월일 이후로 지정하도록 하는 제약 조건을 작성할 수 있습니다.
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  도메인 관계 역할의 복합성을 1..* 또는 1..1로 설정했는데 사용자가 이 관계의 링크를 만들지 않으면 유효성 검사 오류 메시지가 표시됩니다.
 
- 예를 들어 DSL에 Person과 타운 클래스가 있고 relationship PersonLivesInTown relationship **1.. \\** _ 님, 마을 역할에서 타운이 없는 각 사용자에 대해 오류 메시지가 표시 됩니다.
+ 예를 들어 DSL에 Person과 타운 클래스가 있고 relationship PersonLivesInTown relationship **1.. \\** * 마을 역할에서 타운이 없는 각 사용자에 대해 오류 메시지가 표시 됩니다.
 
 ## <a name="running-validation-from-program-code"></a>프로그램 코드에서 유효성 검사 실행
  ValidationController를 만들거나 액세스하여 유효성 검사를 실행할 수 있습니다. 오류 창에서 사용자에 게 오류를 표시 하려면 다이어그램의 DocData에 연결 된 ValidationController를 사용 합니다. 예를 들어 메뉴 명령을 작성하는 경우에는 명령 집합 클래스에서 `CurrentDocData.ValidationController`를 사용할 수 있습니다.
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>변경 수행 시 유효성 검사 실행
  모델이 올바르지 않은 상태가 되는 즉시 사용자에게 경고를 표시하려는 경우 유효성 검사를 실행하는 저장소 이벤트를 정의할 수 있습니다. 저장소 이벤트에 대 한 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
 
- 유효성 검사 코드 외에도 다음 예제와 비슷한 내용이 포함 된 사용자 지정 코드 파일을 _ *Dslpackage** 프로젝트에 추가 합니다. 이 코드는 문서에 연결된 `ValidationController`를 사용합니다. 이 컨트롤러는 Visual Studio 오류 목록에 유효성 검사 오류를 표시 합니다.
+ 유효성 검사 코드 외에도 다음 예제와 유사한 콘텐츠를 사용 하 여 사용자 지정 코드 파일을 **Dslpackage** 프로젝트에 추가 합니다. 이 코드는 문서에 연결된 `ValidationController`를 사용합니다. 이 컨트롤러는 Visual Studio 오류 목록에 유효성 검사 오류를 표시 합니다.
 
 ```csharp
 using System;

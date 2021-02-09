@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924482"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 480b42c13d13cdbdb299b629fd777e3346fcd67c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5486d5faa4f994883d2a32d152ceec59c65629ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924957"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>방법: 관리 코드에서 여러 스레드 관리
 비동기 메서드를 호출 하거나 Visual Studio UI 스레드가 아닌 스레드에서 실행 되는 작업을 포함 하는 관리 되는 VSPackage 확장이 있는 경우 아래 제공 된 지침을 따라야 합니다. 다른 스레드의 작업이 완료 될 때까지 기다릴 필요가 없기 때문에 UI 스레드 응답성을 유지할 수 있습니다. 스택 공간을 차지 하는 추가 스레드가 없으므로 코드를 보다 효율적으로 만들 수 있으며, 교착 상태와 응답 하지 않는 코드를 방지 하기 때문에 더 안정적이 고 쉽게 디버깅할 수 있습니다.

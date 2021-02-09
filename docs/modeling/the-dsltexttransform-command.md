@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, commands
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f87f735f5ad6864082046327bc852d5d43fdb6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f51d1a5cbefc3c2cf60559075a9c9a299664ed07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924505"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 명령
 DslTextTransform은 TextTransform.exe를 호출 하 고 공통 옵션을 사용 하 여 실행 하는 스크립트입니다. 프로젝트의 야간 빌드를 자동화 하는 데에는 DslTextTransformation 함께를 사용할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 자세한 내용은 [TextTransform 유틸리티를 사용 하 여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)을 참조 하세요.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fa3fd0fd16f33342e362432e0193a92e0e981b04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924000"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>도메인별 언어 탐색기 작업
 **DSL 탐색기** 는 여러 종류의 정보를 트리 뷰에 표시 합니다. DSL 탐색기의 항목에 대 한 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.

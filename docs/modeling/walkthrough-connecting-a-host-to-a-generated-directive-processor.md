@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924122"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -39,7 +39,7 @@ ms.locfileid: "97362498"
 
 - 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 

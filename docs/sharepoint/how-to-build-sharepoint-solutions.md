@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, building
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 3be11b730f3cc809a6d1a8ead6724a69be5f136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923429"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>방법: SharePoint 솔루션 빌드
 

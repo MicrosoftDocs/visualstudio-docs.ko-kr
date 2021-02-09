@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 45c8da30a059599a291b18155dc48c4521d6d875
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 92503d8e29bac4f44df5376f3cecb24247b585d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923591"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>방법: 패키지 디자이너를 사용 하 여 패키지에 기능과 항목 추가 및 제거
   SharePoint 솔루션을 만들 때 Visual Studio는 솔루션의 패키지에 기본 SharePoint 기능을 추가 합니다. 최종 배포 전에 sharepoint 프로젝트 항목 및 기능을 추가 및 제거 하 여 SharePoint 패키지를 수정할 수 있습니다.

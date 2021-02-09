@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924521"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 프로그램 코드와 함께 DSL 정의 파일에 의해 정의 됩니다. DSL 솔루션의 프로그램 코드 대부분은이 파일에서 생성 됩니다.
@@ -134,7 +134,7 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
 
  다이어그램에를 입력 하거나 `Multiplicity` **속성** 창에서 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
 
-|복합성 형식|설명|
+|복합성 형식|Description|
 |-|-|
 |0.. * (0 ~ many)|도메인 클래스의 각 인스턴스에는 관계의 인스턴스를 여러 개 포함 하거나 관계 인스턴스를 사용할 수 없습니다.|
 |0 ..1 (0-1)|도메인 클래스의 각 인스턴스에는 관계의 인스턴스를 둘 이상 포함 하거나 관계 인스턴스를 사용할 수 없습니다.|

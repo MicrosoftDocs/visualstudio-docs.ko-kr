@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924497"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 파일
 
@@ -40,11 +40,11 @@ Root 요소의 자식 요소는 \<Dsl> 다음과 같습니다.
 
 이 섹션은 모델의 각 관계를 정의합니다. 소스와 대상이 관계의 양쪽을 나타냅니다.
 
-### <a name="types"></a>유형
+### <a name="types"></a>형식
 
 이 섹션은 각 형식과 해당 네임스페이스를 정의합니다. 도메인 속성에는 두 가지 형식이 있습니다. `DomainEnumerations` 는 모델에 정의 되 고 DomainModel.cs에 형식을 생성 합니다. `ExternalTypes` 다른 곳에서 정의 된 형식 (예: `String` 또는)을 참조 `Int32` 하 고 아무 것도 생성 하지 않습니다.
 
-### <a name="shapes"></a>도형
+### <a name="shapes"></a>셰이프
 
 이 섹션은 디자이너에서 모델이 표시되는 방식을 설명하는 모양을 정의합니다. 이러한 기하학적 모양은 다이어그램 섹션에서 모델의 클래스에 매핑됩니다.
 
@@ -99,7 +99,7 @@ DslDefinition.dsl 파일 전체에서 모니커를 사용하여 특정 항목에
 
 각 형식에는 자체 모니커 형식인 DomainClassMoniker, DomainRelationshipMoniker 등이 있습니다.
 
-## <a name="types"></a>유형
+## <a name="types"></a>형식
 
 Types 섹션은 DslDefinition.dsl 파일이 속성 형식으로 포함하는 모든 형식을 지정합니다. 이러한 형식에는 System.String과 같은 외부 형식과 열거 형식의 두 가지 종류가 있습니다.
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923963"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>도메인 특정 언어를 사용자 지정하는 코드 작성
 

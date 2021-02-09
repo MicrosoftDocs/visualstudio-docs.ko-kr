@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924860"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side 파일 연결 관리
 
@@ -53,7 +53,7 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
   **최신 버전의 Visual Studio를 결정 하는 테이블 행 CustomAction**
 
-  |작업|형식|원본|대상|
+  |작업|Type|원본|대상|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|

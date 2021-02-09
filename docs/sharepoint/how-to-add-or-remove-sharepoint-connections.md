@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 57ff132274ba7f720a845078b0424fe235d9c31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923448"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>방법: SharePoint 연결 추가 또는 제거
   서버 탐색기를 사용 하면 데이터 연결 뿐만 아니라 SharePoint 사이트를 탐색할 수 있습니다. 그러나 SharePoint 사이트의 콘텐츠를 찾아보려면 먼저 **Sharepoint 연결** 노드에 추가 해야 합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94850717"
 
 2. **Sharepoint 연결** 노드를 확장 하 여 **서버 탐색기** 에서 삭제 하려는 sharepoint 사이트를 표시 합니다.
 
-3. 사이트를 선택한 다음 메뉴 모음에서 삭제 **편집** 을 선택  >  **Delete** 합니다.
+3. 사이트를 선택한 다음 메뉴 모음에서 삭제 **편집** 을 선택  >  합니다.
 
     > [!NOTE]
     > 이 단계는 기본 사이트를 삭제 하지 않습니다. **서버 탐색기** 에서 연결만 삭제 합니다.

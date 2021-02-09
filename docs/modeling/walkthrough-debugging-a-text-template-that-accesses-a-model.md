@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924119"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스하는 텍스트 템플릿 디버깅
 도메인별 언어 솔루션에서 텍스트 템플릿을 수정 하거나 추가 하는 경우 엔진이 템플릿을 소스 코드로 변환 하거나 생성 된 코드를 컴파일할 때 오류가 발생할 수 있습니다. 다음 연습에서는 텍스트 템플릿을 디버깅 하기 위해 수행할 수 있는 몇 가지 작업을 보여 줍니다.
@@ -22,7 +22,7 @@ ms.locfileid: "90100789"
 > [!NOTE]
 > 일반적인 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요. 텍스트 템플릿을 디버그 하는 방법에 대 한 자세한 내용은 [연습: 텍스트 템플릿 디버깅](debugging-a-t4-text-template.md)을 참조 하세요.
 
-## <a name="creating-a-domain-specific-language-solution"></a>도메인별 언어 솔루션 만들기
+## <a name="creating-a-domain-specific-language-solution"></a>Domain-Specific 언어 솔루션 만들기
  이 절차에서는 다음과 같은 특징을 가진 도메인별 언어 솔루션을 만듭니다.
 
 - 이름: DebuggingTestLanguage
@@ -33,14 +33,14 @@ ms.locfileid: "90100789"
 
 - 회사 이름: Fabrikam
 
-  도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: 도메인별 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
+  도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: Domain-Specific 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
 
 ## <a name="creating-a-text-template"></a>텍스트 템플릿 만들기
  솔루션에 텍스트 템플릿을 추가 합니다.
 
 #### <a name="to-create-a-text-template"></a>텍스트 템플릿을 만들려면
 
-1. 솔루션을 빌드하고 디버거에서 실행을 시작 합니다. **빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 한 다음 **디버그** 메뉴에서 **디버깅 시작**을 클릭 합니다. Visual Studio의 새 인스턴스는 디버깅 프로젝트를 엽니다.
+1. 솔루션을 빌드하고 디버거에서 실행을 시작 합니다. **빌드** 메뉴에서 **솔루션 다시 빌드** 를 클릭 한 다음 **디버그** 메뉴에서 **디버깅 시작** 을 클릭 합니다. Visual Studio의 새 인스턴스는 디버깅 프로젝트를 엽니다.
 
 2. 이라는 텍스트 파일을 `DebugTest.tt` 디버깅 프로젝트에 추가 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "90100789"
     #>
     ```
 
-2. **솔루션 탐색기**에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
+2. **솔루션 탐색기** 에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
      **오류 목록** 창에 다음 오류가 표시 됩니다.
 
@@ -111,7 +111,7 @@ ms.locfileid: "90100789"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. **솔루션 탐색기**에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
+5. **솔루션 탐색기** 에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
      이제 시스템에서 텍스트 템플릿을 변환 하 고 해당 출력 파일을 생성 합니다. **오류 목록** 창에 오류가 표시 되지 않습니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "90100789"
     #>
     ```
 
-2. **솔루션 탐색기**에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
+2. **솔루션 탐색기** 에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
      **오류 목록** 창이 나타나고 다음 오류 중 하나가 표시 됩니다.
 
@@ -208,6 +208,6 @@ ms.locfileid: "90100789"
     #>
     ```
 
-5. **솔루션 탐색기**에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행**을 클릭 합니다.
+5. **솔루션 탐색기** 에서 DebugTest.tt을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
      이제 시스템에서 텍스트 템플릿을 변환 하 고 해당 출력 파일을 생성 합니다. **오류 목록** 창에 오류가 표시 되지 않습니다.

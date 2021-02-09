@@ -11,16 +11,16 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: bf622d9762e86bcb75a08c60085a15abb6fdca91
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 00a72f52b67e1e55bcc0699a3daf7da4dcfbc57d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924014"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Visual Studio 2017의 디자인에 대한 새로운 기능
 

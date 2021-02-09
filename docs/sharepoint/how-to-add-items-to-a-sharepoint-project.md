@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4a32d38b20b93cf215cb53c2c2d2b8767418de24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923490"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>방법: SharePoint 프로젝트에 항목 추가
   SharePoint 솔루션에는 하나 이상의 프로젝트가 포함 되며 각 프로젝트에는 여러 SharePoint 프로젝트 항목이 포함 되어 있습니다. SharePoint 솔루션을 열거나 만든 후 이러한 프로젝트에 새 항목 또는 기존 항목을 추가할 수 있습니다. 예를 들어 새 워크플로 프로젝트는 default.aspx 라는 기본 폼과 함께 제공 되지만 해당 폼을 새로운 형식 또는 다른 형식으로 바꾸거나 다른 ASPX 폼을 추가할 수 있습니다.

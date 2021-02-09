@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923474"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>방법: 매핑된 폴더 추가 및 제거
   SharePoint에서 이미지 및 레이아웃과 같은 일반적으로 사용 되는 일부 폴더는 파일 계층 구조에 포함 됩니다. 이러한 폴더를 SharePoint 프로젝트에 매핑하여 더 쉽게 액세스할 수 있습니다. 매핑된 폴더는 sharepoint Server 설치 시 파일의 물리적 위치에 해당 하는 SharePoint 프로젝트의 폴더입니다.

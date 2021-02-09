@@ -9,18 +9,18 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 718ca7b5abf2a7730470475caf2cdf5c200b23b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924105"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
@@ -656,18 +656,18 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      레지스트리 키의 값은 다음과 같습니다.
 
-   | Name | 형식 | 데이터 |
+   | 이름 | Type | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
-   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | 인스턴스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-   | Name | 형식 | 데이터 |
+   | 이름 | Type | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
-   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | 인스턴스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | 어셈블리 | REG_SZ | CustomDP.dll |
 
 6. Visual Studio를 다시 시작합니다.
