@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910512"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>VBA에 대 한 액세스를 사용 하 여 Microsoft Office 시스템 프로젝트에 대 한 Visual Studio Tools 만들기 또는 열기
 

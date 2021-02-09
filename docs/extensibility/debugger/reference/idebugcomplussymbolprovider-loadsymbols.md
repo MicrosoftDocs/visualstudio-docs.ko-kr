@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 805db1f0b0722b75e7a047d8509ed9e63e4565c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d74480e68dda5f9cd4316b4eb6de2e140542071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911997"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 지정 된 디버그 기호를 메모리에 로드 합니다.
@@ -67,10 +67,10 @@ int LoadSymbols(
 `bstrSymSearchPath`\
 진행 기호 파일을 검색할 경로입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -86,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a90c8de2fca62ef303ce8055993d8e2f6d230493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910893"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자의 지정 된 그룹 아래에 나타나도록 프로젝트 템플릿을 분류 합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "94903821"
 
  템플릿 하위 유형은 [Projectsubtype 형식](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소를 사용 하 여 지정할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 응용 프로그램에 대 한 프로젝트 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
 ```

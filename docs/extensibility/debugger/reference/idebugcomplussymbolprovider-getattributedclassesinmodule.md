@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 266974cf4f92b2356c7ddc603715388ce119256d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62f9d7a9b9482190700680825865465cdfe341b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911983"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 지정 된 모듈에서 지정 된 특성을 사용 하 여 클래스를 검색 합니다.
@@ -59,7 +59,7 @@ int GetAttributedClassesinModule (
 `ppEnum`\
 제한이 특성 사용 클래스의 열거형을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="example"></a>예제

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 67b09d3881dcde1d404b7ff0c1096ced1ecb50ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910609"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 프로그래밍의 일반적인 작업
   이 항목은 Visual Studio를 사용하여 Office 솔루션을 프로그래밍하는 방법에 대한 다음 범주의 일반적인 질문에 대해 답변을 찾을 수 있도록 설계되었습니다.

@@ -11,20 +11,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910467"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;진입점 &gt; 요소 (Visual Studio에서 Office 개발)
   `entryPoints` 네임스페이스의 `vstav3` 요소에는 Office 솔루션과 관련된 모든 `entryPoint` 요소가 포함됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <entryPoints>
@@ -42,18 +42,18 @@ ms.locfileid: "85543574"
 
  `entryPoints` 요소에는 다음 특성이 있습니다.
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |id|다중 프로젝트 배포의 경우 필수 요소입니다. Office 솔루션의 이름입니다. Id는 등호(=) 기호를 포함할 수 없습니다.|
 
  `entryPoints` 에는 다음 요소가 있습니다.
 
 ### <a name="entrypoint"></a>entryPoint
- 필수 요소. `entryPoint`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;entryPoint&#62; 요소 ](../vsto/entrypoint-element-office-development-in-visual-studio.md)에 정의 되어 있습니다.
+ 필수 사항입니다. `entryPoint`네임 스페이스에 있는 요소의 역할은 `vstav3` [Visual Studio&#41;에서 Office 개발 &#40;&#60;entryPoint&#62; 요소 ](../vsto/entrypoint-element-office-development-in-visual-studio.md)에 정의 되어 있습니다.
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 문서 수준 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
@@ -97,7 +97,7 @@ ms.locfileid: "85543574"
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `entryPoints` 을 사용하여 배포된 애플리케이션 수준 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
@@ -117,7 +117,7 @@ ms.locfileid: "85543574"
 
 ## <a name="multi-project-deployment-example"></a>다중 프로젝트 배포 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 다중 프로젝트 배포에 대한 애플리케이션 매니페스트의 `entryPoints` 요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

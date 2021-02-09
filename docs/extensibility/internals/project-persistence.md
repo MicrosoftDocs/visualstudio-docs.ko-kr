@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911783"
 ---
 # <a name="project-persistence"></a>프로젝트 지속성
 지 속성은 프로젝트에 중요 한 디자인 고려 사항입니다. 대부분의 프로젝트는 파일을 나타내는 프로젝트 항목을 사용 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 파일 기반이 아닌 데이터가 있는 프로젝트도 지원 합니다. 프로젝트와 프로젝트 파일이 소유한 파일을 모두 유지 해야 합니다. IDE는 프로젝트에 자체 또는 프로젝트 항목을 저장 하도록 지시 합니다.
@@ -44,6 +44,6 @@ ms.locfileid: "97877444"
 
  인터페이스의 메서드는 `IVsPersistHierarchyItem2` 항목을 다시 로드할 수 있는지 여부를 확인 하는 데 사용 되 고, 항목을 다시 로드 하려면 항목을 다시 로드 하는 데 사용 됩니다. 또한 메서드를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> 구현 하 여 변경 된 항목을 저장 하지 않고 삭제 하도록 할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

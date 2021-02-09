@@ -13,20 +13,20 @@ helpviewer_keywords:
 - entryPoint element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910470"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; 요소 (Visual Studio에서 Office 개발)
   `entryPoint` 네임스페이스의 각 `vstav3` 요소는 이 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 애플리케이션이 설치될 때 실행되어야 하는 사용자 지정 어셈블리를 식별합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <entryPoint class>
@@ -41,20 +41,20 @@ ms.locfileid: "85543600"
 
  `entryPoint` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
-|`class`|필수 요소. 실행할 사용자 지정 어셈블리를 식별합니다. 이 특성의 구문은 *NamespaceName.ClassName*입니다.|
+|`class`|필수 사항입니다. 실행할 사용자 지정 어셈블리를 식별합니다. 이 특성의 구문은 *NamespaceName.ClassName* 입니다.|
 
  `entryPoint` 에는 다음 요소가 있습니다.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- 필수 요소. `assemblyIdentity` 네임스페이스의 `vstav3` 요소는 `assemblyIdentity` 애플리케이션 매니페스트의 기존 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 요소를 참조합니다.
+ 필수 사항입니다. `assemblyIdentity` 네임스페이스의 `vstav3` 요소는 `assemblyIdentity` 애플리케이션 매니페스트의 기존 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 요소를 참조합니다.
 
  `assemblyIdentity`및 해당 특성의 역할은 [ClickOnce 응용 프로그램&#41;&#40;&#60;assemblyIdentity&#62; 요소 ](../deployment/assemblyidentity-element-clickonce-application.md)에 정의 됩니다.
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `entryPoint` 을 사용하여 배포된 문서 수준의 Office 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
@@ -96,7 +96,7 @@ ms.locfileid: "85543600"
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 `entryPoint` 을 사용하여 배포된 애플리케이션 수준의 Office 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

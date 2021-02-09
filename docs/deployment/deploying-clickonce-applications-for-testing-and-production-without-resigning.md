@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4d5d7244f70852dee29813834fc427c888df9c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912154"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>다시 서명 하지 않고 테스트 및 프로덕션 서버용 ClickOnce 응용 프로그램 배포
 이 문서에서는 clickonce 매니페스트를 다시 서명 하거나 변경 하지 않고 여러 네트워크 위치에서 ClickOnce 응용 프로그램을 배포할 수 있도록 하는 .NET Framework 버전 3.5에 도입 된 ClickOnce 기능을 설명 합니다.
@@ -63,6 +63,6 @@ ms.locfileid: "94382938"
 ## <a name="create-a-deployment"></a>배포 만들기
  다른 네트워크 위치에서 배포할 수 있는 배포를 만드는 방법에 대 한 단계별 지침은 [연습: 다시 서명할 필요가 없고 브랜딩 정보를 유지 하는 ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [*Mage.exe* (매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [*MageUI.exe* (매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

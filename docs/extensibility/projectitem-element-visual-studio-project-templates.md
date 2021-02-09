@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910971"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트 템플릿에 포함 되는 파일을 지정 합니다.
@@ -66,7 +66,7 @@ ms.locfileid: "94671326"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|프로젝트에 추가할 파일 또는 디렉터리를 지정 합니다.|
 
@@ -143,4 +143,4 @@ ms.locfileid: "94671326"
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
-- [ProjectItem 요소 (Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [ProjectItem 요소(Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)

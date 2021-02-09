@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911349"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity &gt; 요소 (ClickOnce 배포)
 응용 프로그램의 주 어셈블리를 식별 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다.
@@ -44,7 +44,7 @@ ms.locfileid: "94383186"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  `assemblyIdentity`요소가 필요 합니다. 자식 요소를 포함 하지 않으며 다음과 같은 특성이 있습니다.
 
-|특성|Description|
+|attribute|Description|
 |---------------|-----------------|
 |`name`|필수 사항입니다. 정보를 제공 하기 위해 사용자가 읽을 수 있는 배포 이름을 식별 합니다.<br /><br /> `name`에 작은따옴표 또는 큰따옴표와 같은 특수 문자가 포함 되어 있으면 응용 프로그램을 활성화 하지 못할 수 있습니다.|
 |`version`|필수 사항입니다. 어셈블리의 버전 번호를 다음과 같은 형식으로 지정 `major.minor.build.revision` 합니다.<br /><br /> 응용 프로그램 업데이트를 트리거하기 위해 업데이트 된 매니페스트에서이 값을 증가 시켜야 합니다.|
@@ -68,6 +68,6 @@ ms.locfileid: "94383186"
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity> 요소인](../deployment/assemblyidentity-element-clickonce-application.md)
+- [\<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-application.md)

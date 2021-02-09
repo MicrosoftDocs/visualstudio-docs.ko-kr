@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911711"
 ---
 # <a name="object_type"></a>Object_Type
 식 계산기에서 개체의 형식을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_OBJECT_TYPE { 
+enum enum_OBJECT_TYPE { 
    OBJECT_TYPE_BOOLEAN = 0x0,
    OBJECT_TYPE_CHAR    = 0x1,
    OBJECT_TYPE_I1      = 0x2,
@@ -49,7 +49,7 @@ typedef DWORD OBJECT_TYPE;
 ```
 
 ```csharp
-public enum enum_OBJECT_TYPE { 
+public enum enum_OBJECT_TYPE { 
    OBJECT_TYPE_BOOLEAN = 0x0,
    OBJECT_TYPE_CHAR    = 0x1,
    OBJECT_TYPE_I1      = 0x2,

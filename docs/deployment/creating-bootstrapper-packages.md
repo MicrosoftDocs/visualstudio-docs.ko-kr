@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912214"
 ---
 # <a name="create-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
-설치 프로그램은 일반 설치 관리자로서 Windows Installer( *.msi* ) 파일 및 실행 프로그램과 같은 재배포 가능 구성 요소를 검색 및 설치하도록 구성할 수 있습니다. 설치 관리자를 부트스트래퍼라고도 합니다. 구성 요소 설치를 관리하는 메타데이터를 지정하는 XML 매니페스트 집합을 통해 설치 프로그램을 프로그래밍합니다.  ClickOnce에 대 한 **필수** 구성 요소 대화 상자에 표시 되는 각 재배포 가능 구성 요소 또는 필수 구성 요소는 부트스트래퍼 패키지입니다. 부트스트래퍼 패키지는 필수 구성 요소를 설치해야 하는 방법을 설명하는 매니페스트 파일이 포함된 파일과 디렉터리 그룹입니다.
+설치 프로그램은 일반 설치 관리자로서 Windows Installer(*.msi*) 파일 및 실행 프로그램과 같은 재배포 가능 구성 요소를 검색 및 설치하도록 구성할 수 있습니다. 설치 관리자를 부트스트래퍼라고도 합니다. 구성 요소 설치를 관리하는 메타데이터를 지정하는 XML 매니페스트 집합을 통해 설치 프로그램을 프로그래밍합니다.  ClickOnce에 대 한 **필수** 구성 요소 대화 상자에 표시 되는 각 재배포 가능 구성 요소 또는 필수 구성 요소는 부트스트래퍼 패키지입니다. 부트스트래퍼 패키지는 필수 구성 요소를 설치해야 하는 방법을 설명하는 매니페스트 파일이 포함된 파일과 디렉터리 그룹입니다.
 
 부트스트래퍼는 먼저 필수 구성 요소가 이미 설치되었는지를 검색합니다. 필수 구성 요소가 설치되지 않은 경우 부트스트래퍼는 먼저 사용권 계약을 표시합니다. 그런 다음, 최종 사용자가 사용권 계약에 동의하면 필수 구성 요소 설치가 시작됩니다. 그렇지 않고 모든 필수 구성 요소가 검색되면 부트스트래퍼는 애플리케이션 설치 관리자만 시작합니다.
 
@@ -120,8 +120,8 @@ CustomBootstrapperPackage
 </FileList>
 ```
 
-## <a name="see-also"></a>참조
-- [방법: ClickOnce 애플리케이션을 사용하여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+## <a name="see-also"></a>참고 항목
+- [방법: ClickOnce 응용 프로그램을 사용 하 여 필수 구성 요소 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [필수 구성 요소 대화 상자](../ide/reference/prerequisites-dialog-box.md)
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
 - [Visual Studio 2005 부트스트래퍼를 사용 하 여 설치 시작](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

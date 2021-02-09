@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f805249a3736b1191ae3218f8fcd41ffae2c686a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0671715dd0532e268c6cc59abfafd62ff7686e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911974"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 메서드 집합에 대 한 지역 변수의 레이아웃을 검색 합니다.
@@ -62,10 +62,10 @@ int GetLocalVariablelayout(
 `pStreamLayout`\
 제한이 변수 레이아웃을 포함 하는 텍스트 스트림입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -113,5 +113,5 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

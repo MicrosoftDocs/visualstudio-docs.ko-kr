@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0677b45d3c78f1e652a1185e0e5519bb60bc35ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911201"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 지정 된 디버그 주소의 함수가 삭제 되었는지 확인 합니다.
@@ -41,10 +41,10 @@ int IsFunctionDeleted(
 `pAddress`\
 진행 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스가 나타내는 디버그 주소입니다. 이 주소는 METHOD_ADDRESS 이어야 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 함수를 삭제 하면이 반환 `S_OK` 됩니다. 함수가 있으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -92,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

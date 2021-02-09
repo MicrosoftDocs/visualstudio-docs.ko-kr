@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a04cfc249efa4640df2b2e4b1c5f4b43ed52ace2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 17f52a469d93a843ef776c125e15a37db22277e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910481"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 함수
   이 API는 Office 인프라를 지원 하며 사용자 코드에서 직접 사용 하기 위한 것이 아닙니다.
@@ -32,7 +32,7 @@ HRESULT EnsureVSTOComponent(
 
 #### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*pProject*|사용 하지 마세요.|
 

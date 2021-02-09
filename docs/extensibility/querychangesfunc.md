@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 8abe32abcb79fada541124f50a750fb4c1edde58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910866"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 이 함수는 [Sccquerychanges](../extensibility/sccquerychanges-function.md) 작업에서 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 데 사용 하는 콜백 함수입니다.
@@ -48,7 +48,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>반환 값
  IDE에서 적절 한 오류 코드를 반환 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|처리를 계속합니다.|
 |SCC_I_OPERATIONCANCELED|처리를 중지합니다.|
@@ -98,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName이 항목의 현재 파일 이름입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDE에서 구현 하는 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [오류 코드](../extensibility/error-codes.md)

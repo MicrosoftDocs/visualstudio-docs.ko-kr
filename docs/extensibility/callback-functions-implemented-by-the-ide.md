@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911252"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE에서 구현 하는 콜백 함수
 IDE (통합 개발 환경)와 최대한 원활 하 게 통합 하 고 통합 최종 사용자 환경을 제공 하기 위해 소스 제어 플러그 인은 IDE에서 구현 하는 콜백 함수를 사용할 수 있습니다. 플러그 인은 소스 제어 작업 중에 적절 한 시간에 이러한 함수를 호출 하 여 IDE로 정보를 전달할 수 있습니다. 그러면 IDE는이 정보를 네이티브 UI에 포함 된 요소로 표시할 수 있습니다. 사용자는 플러그 인에서 자체 UI를 사용 하는 경우 보다 조각화 된 환경이이 시나리오에서 더 낮습니다.
 
  필요한 헤더 파일은 *scc. h입니다.* 기본 위치는 c # *Files\VSIP 8.0 \ EnvSDK\common\inc \\* 입니다. 또한 c #에서 소스 제어 플러그 인 샘플이 포함 된 VSIP 폴더 ( *Files\VSIP 8.0 \MSSCCI \\*)에 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [Lptextoutproc](../extensibility/lptextoutproc.md) IDE를 통해 소스 제어 플러그 인의 메시지를 표시 하기 위해 [Sccopenproject](../extensibility/sccopenproject-function.md) 에서 사용 하는 콜백 함수에 대해 설명 합니다.
 
 - [POPLISTFUNC](../extensibility/poplistfunc.md) [SccPopulateList](../extensibility/sccpopulatelist-function.md) 에서 사용 하는 콜백 함수에 대해 설명 합니다 .이는 IDE가 소스 제어 플러그 인 에서만 사용할 수 있는 정보 (예: 버전 제어에서 전체 파일 목록)에 대 한 완전 한 액세스 권한을가지고 있지 않은 경우에 사용 됩니다.

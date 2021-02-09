@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33bc10aadf25eb95414cc5fd334c572b2f270429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb0bb520d3a821d777d5deaeaa200c4b7e526f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911955"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 프로그램의 속성을 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80722886"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetDebugProperty( 
+HRESULT GetDebugProperty( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty( 
+int GetDebugProperty( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -43,7 +43,7 @@ int GetDebugProperty( 
 `ppProperty`\
 제한이 프로그램의 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ int GetDebugProperty( 
 
  프로그램은 인터페이스를 통해 설명할 수 있는 추가 속성의 개수와 형식을 노출할 수 있습니다 `IDebugProperty2` . IDE는 제네릭 속성 브라우저 사용자 인터페이스를 통해 추가 프로그램 속성을 표시할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ab91340c0f9baf9a75e6e283d3c1158bdbea3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911112"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 형식 인수 배열이 지정 된 경우 필드 인스턴스를 생성 합니다.
@@ -52,11 +52,11 @@ int ConstructInstantiation(
 `ppConstructedField`\
 제한이 새 필드를 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  제약 조건은 확인 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

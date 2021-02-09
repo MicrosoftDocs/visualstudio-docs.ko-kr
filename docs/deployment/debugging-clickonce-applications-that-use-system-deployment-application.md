@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d6a014afff6c26b8cfe8f4f7fae508f78ef5905f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912244"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application을 사용하는 ClickOnce 애플리케이션 디버그
 에서 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용 하면 응용 프로그램을 업데이트 하는 방법을 구성할 수 있습니다. 그러나 고급 배포 기능을 사용 하 고 사용자 지정 해야 하는 경우 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서 제공 하는 배포 개체 모델에 액세스 해야 <xref:System.Deployment.Application> 합니다. <xref:System.Deployment.Application>다음과 같은 고급 작업에 api를 사용할 수 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "94382990"
 
 2. 응용 프로그램의 버전 1을 배포 합니다.
 
-3. 비어 있는 새 솔루션을 만듭니다. **파일** 메뉴에서 **새로 만들기** , **프로젝트** 를 차례로 클릭합니다. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 연 다음 **Visual Studio 솔루션** 폴더를 선택 합니다. **템플릿** 창에서 **빈 솔루션** 을 선택 합니다.
+3. 비어 있는 새 솔루션을 만듭니다. **파일** 메뉴에서 **새로 만들기**, **프로젝트** 를 차례로 클릭합니다. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 노드를 연 다음 **Visual Studio 솔루션** 폴더를 선택 합니다. **템플릿** 창에서 **빈 솔루션** 을 선택 합니다.
 
 4. 이 새 솔루션에 대 한 속성에 보관 된 원본 위치를 추가 합니다. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다. **속성 페이지** 대화 상자에서 **디버그 소스 파일** 을 선택 하 고 보관 된 소스 코드의 디렉터리를 추가 합니다. 그렇지 않으면 소스 파일 경로가 .pdb 파일에 기록 되므로 디버거가 오래 된 소스 파일을 찾습니다. 디버거가 오래 된 소스 파일을 사용 하는 경우 소스가 일치 하지 않는다는 메시지가 표시 됩니다.
 
@@ -78,5 +78,5 @@ ms.locfileid: "94382990"
 
    <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A>응용 프로그램이 배포 된 경우에만 api를 호출 하려면 속성을 사용 하 고 <xref:System.Deployment.Application> , 디버깅 중에는 api를 호출 하면 안 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:System.Deployment.Application>
