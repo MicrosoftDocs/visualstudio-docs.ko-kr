@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a549a4f90cca6c17f3ad634551740f91fbe7da6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846415"
 ---
 # <a name="source-control-integration-essentials"></a>소스 제어 통합 필수 항목
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 기본 기능을 제공 하 고 소스 제어 플러그 인 API (이전에는 MSSCCI API)를 사용 하 여 구축 된 소스 제어 플러그 인과, 보다 강력한 기능을 제공 하는 VSPackage 기반 소스 제어 통합 솔루션을 사용 하 여 두 가지 형식의 원본 제어 통합을 지원 합니다.

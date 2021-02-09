@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846363"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 함수
 이 함수는 소스 제어 플러그 인을 초기화 하 고 IDE (통합 개발 환경)에 기능 및 제한을 제공 합니다.
@@ -70,10 +70,10 @@ SCCRTN SccInitialize (
 
 제한이 다른 주석에 허용 되는 최대 길이를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|소스 제어를 초기화 했습니다.|
 |SCC_E_INITIALIZEFAILED|시스템을 초기화할 수 없습니다.|
@@ -91,7 +91,7 @@ SCCRTN SccInitialize (
 
  `lpSccCaps`매개 변수는 플러그 인의 기능을 나타내는 bitflag를 저장할 원본 제어 플러그 인을 제공 합니다. 기능 비트 플래그의 전체 목록은 [기능 플래그](../extensibility/capability-flags.md)를 참조 하세요. 예를 들어 플러그 인에서 호출자가 제공한 콜백 함수에 결과를 쓸 계획인 경우 플러그 인은 기능 비트 SCC_CAP_TEXTOUT 설정 합니다. 그러면 IDE에서 버전 제어 결과에 대 한 창을 만들도록 신호를 보낼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

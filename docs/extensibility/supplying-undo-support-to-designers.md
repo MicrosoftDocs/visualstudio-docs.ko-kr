@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 9e8b7ea0dc29e4f8df9113963a95c363998c758d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850470"
 ---
 # <a name="supply-undo-support-to-designers"></a>디자이너에 실행 취소 지원 제공
 
@@ -101,7 +101,7 @@ Visual Studio에서 만든 디자이너는 다음과 같은 경우 자동 및 �
 
 - 디자이너는 <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> 에서 파생 되 고 <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> 및의 구현을 제공 하는 Visual Studio 별 구현 또는의 구현에서 제공 하는 표준 실행 취소 단위를 사용 하 여 실행 취소 단위를 명시적으로 만들도록 선택 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>

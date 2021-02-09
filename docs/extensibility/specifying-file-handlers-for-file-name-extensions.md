@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848099"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>파일 이름 확장명에 대한 파일 처리기 지정
 특정 파일 확장명이 있는 파일을 처리 하는 응용 프로그램을 확인 하는 방법에는 여러 가지가 있습니다. OpenWithList 및 Openwithlist 동사는 파일 확장명에 대 한 레지스트리 항목에서 파일 처리기를 지정 하는 두 가지 방법입니다.
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- 파일 확장명에 대 한 기본값으로 지정 된 ProgID가 기본 파일 처리기입니다. 이전 버전의와 함께 제공 되는 파일 확장명에 대 한 ProgID를 수정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하거나 다른 응용 프로그램에서 가져올 수 있는 경우 `OpenWithProgids` 파일 확장명에 대 한 키를 등록 하 고 지원 되는 이전 progid와 함께 목록에 새 ProgID를 지정 해야 합니다. 예를 들면 다음과 같습니다.
+ 파일 확장명에 대 한 기본값으로 지정 된 ProgID가 기본 파일 처리기입니다. 이전 버전의와 함께 제공 되는 파일 확장명에 대 한 ProgID를 수정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하거나 다른 응용 프로그램에서 가져올 수 있는 경우 `OpenWithProgids` 파일 확장명에 대 한 키를 등록 하 고 지원 되는 이전 progid와 함께 목록에 새 ProgID를 지정 해야 합니다. 예를 들어:
 
 ```
 HKEY_CLASSES_ROOT\
@@ -79,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  이전 ProgID에 연결 된 동사가 있는 경우 바로 가기 메뉴에서 *제품 이름* **으로 열기** 에도 이러한 동사가 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [파일 확장명 정보](../extensibility/about-file-name-extensions.md)
 - [파일 이름 확장명에 대한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)

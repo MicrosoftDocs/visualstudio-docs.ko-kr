@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850823"
 ---
 # <a name="symbol-provider-interfaces"></a>기호 공급자 인터페이스
 다음은에 대 한 기호 처리 인터페이스 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 입니다.
@@ -27,7 +27,7 @@ ms.locfileid: "96845793"
 ## <a name="discussion"></a>토론(Discussion)
  이러한 인터페이스는 중단 모드에서 호출 스택의 변수를 평가 하는 데 사용 됩니다. 공용 언어 런타임 기호 공급자 (SP)에 대해서만 구현 됩니다.
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|항목의 주소를 나타냅니다.|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|프로세스 ID에 대 한 액세스를 제공 하는 항목의 주소를 나타냅니다.|

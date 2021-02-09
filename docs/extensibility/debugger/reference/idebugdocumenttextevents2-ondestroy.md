@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec3d8ed15786b2a39a04b63cfd09a749097ac661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791ed47d09d44713f4586d79ac2a1655ea0bb94b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848184"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 전체 문서가 소멸 되었음을 나타냅니다.
@@ -28,8 +28,8 @@ ms.locfileid: "80731502"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT onDestroy( 
-   void 
+HRESULT onDestroy( 
+   void 
 );
 ```
 
@@ -40,5 +40,5 @@ int onDestroy();
 ## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

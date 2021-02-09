@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 069640dccf185f2f2c738efdde6a2311352a04b6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9fdaf7172c00d80e5e7615bfcadcc1fb6233c257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847364"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T> 활동 디자이너
 
@@ -38,11 +38,11 @@ ms.locfileid: "96996099"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.RemoveFromCollection%601> 활동의 선택적 이름입니다. 기본값은 RemoveFromCollection<Int32 \> 입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|참|**컬렉션 \<T>** 에서 제거할 항목입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|참|항목을 제거 해야 하는 컬렉션입니다. 이 컬렉션은 **ICollection<TypeArgument 유형입니다 \> .** 컬렉션을 지정 하려면 속성 표에 Visual Basic 식을 입력 합니다.|
-|*TypeArgument*|참|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
-|<xref:System.Activities.Activity%601.Result%2A>|거짓|지정된 항목이 컬렉션에서 제거되었는지 여부를 나타내는 값입니다. 결과에 바인딩할 변수를 지정하려면 속성 표에 변수를 입력합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 활동의 선택적 이름입니다. 기본값은 RemoveFromCollection<Int32 \> 입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|**컬렉션 \<T>** 에서 제거할 항목입니다. 이 항목은 유형 *T* 이며 *typeargument* 유형입니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|항목을 제거 해야 하는 컬렉션입니다. 이 컬렉션은 **ICollection<TypeArgument 유형입니다 \> .** 컬렉션을 지정 하려면 속성 표에 Visual Basic 식을 입력 합니다.|
+|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601>에 포함된 항목의 형식 T입니다. 기본적으로이 형식 *인수* 형식은 **Int32** 로 설정 됩니다. 형식을 변경 하려면 속성 표의 콤보 상자에서 *Typeargument* 의 값을 변경 합니다.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|지정된 항목이 컬렉션에서 제거되었는지 여부를 나타내는 값입니다. 결과에 바인딩할 변수를 지정하려면 속성 표에 변수를 입력합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

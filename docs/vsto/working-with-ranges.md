@@ -14,20 +14,20 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847442"
 ---
 # <a name="work-with-ranges"></a>범위 작업
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 및 <xref:Microsoft.Office.Interop.Excel.Range> 클래스에는 범위가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |범위에 액세스하고 값을 설정합니다.|[방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
 |초기 값을 기반으로 하여 범위를 채웁니다.|[방법: 프로그래밍 방식으로 증분 변경 데이터로 범위 채우기](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|

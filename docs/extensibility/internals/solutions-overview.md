@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 91903954f490e5845e01ddbf4b7aa4767f2ceacc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846545"
 ---
 # <a name="solutions-overview"></a>솔루션 개요
 
@@ -47,7 +47,7 @@ ms.locfileid: "97876729"
 > [!NOTE]
 > 두 프로젝트의 구성으로 구성 된 새 솔루션 구성을 만들고 세 번째를 빌드에서 제외 하려면 속성 페이지 UI 또는 자동화를 사용 해야 합니다. 솔루션 빌드 관리자 구성과 해당 속성을 직접 변경할 수는 없지만 `SolutionBuild` 자동화 모델에서 DTE의 클래스를 사용 하 여 솔루션 빌드 관리자를 조작할 수 있습니다. 솔루션을 구성 하는 방법에 대 한 자세한 내용은 [솔루션 구성](../../extensibility/internals/solution-configuration.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

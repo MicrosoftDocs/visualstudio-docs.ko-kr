@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 27b20a13d96b8fc23fcde2dbb8f14d1f1f27ceea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849933"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;사용자 지정 &gt; 요소 (Visual Studio에서 Office 개발)
   `customizations` 네임스페이스의 `vstov4` 요소에는 각 Office 솔루션 설치 및 로드에 대한 모든 정보가 포함됩니다.
@@ -65,11 +65,11 @@ ms.locfileid: "96844038"
  `customizations` 요소에는 다음 자식 요소가 있습니다.
 
 ### <a name="customization"></a>사용자 지정
- 필수 요소. `customization`네임 스페이스의 요소는 `vstov4` [Visual Studio&#41;에서 Office 개발 &#40;&#60;사용자 지정&#62; 요소 ](../vsto/customization-element-office-development-in-visual-studio.md)에 정의 됩니다.
+ 필수 사항입니다. `customization`네임 스페이스의 요소는 `vstov4` [Visual Studio&#41;에서 Office 개발 &#40;&#60;사용자 지정&#62; 요소 ](../vsto/customization-element-office-development-in-visual-studio.md)에 정의 됩니다.
 
 ## <a name="example-of-a-document-level-customization"></a>문서 수준 사용자 지정 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 문서 수준 사용자 지정의 `customizations` 요소를 보여 줍니다.
 
 > [!NOTE]
@@ -89,7 +89,7 @@ ms.locfileid: "96844038"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO 추가 기능의 예
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는 VSTO 추가 기능의 요소를 보여 줍니다 `customizations` . 양식 영역을 포함하는 Outlook VSTO 추가 기능입니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

@@ -15,20 +15,20 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6e2e3dcb6978225b5af493f3649e4b2fac47f3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847507"
 ---
 # <a name="work-with-folders"></a>폴더 작업
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 클래스에는 폴더를 액세스, 작성 및 사용자 지정할 때 사용하는 메서드 및 속성이 포함되어 있습니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |**받은 편지함** 에서 메시지의 제목 필드 문자열을 검색합니다.|[방법: 프로그래밍 방식으로 특정 폴더 내에서 검색](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
 |폴더에 대한 참조를 가져오고 내용을 표시합니다.|[방법: 프로그래밍 방식으로 이름으로 폴더 검색](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|

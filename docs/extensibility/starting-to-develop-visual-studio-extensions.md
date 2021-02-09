@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8c45ff8b0fd2328a6398f844dc1416decc0ea591
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848086"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
 
@@ -95,7 +95,7 @@ Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio S
 
  또한 Visual Studio Marketplace에 확장을 게시 하면 많은 수의 Visual Studio 고객이 볼 수 있습니다. Marketplace에 대 한 확장을 패키징하는 예제는 [연습: Visual Studio 확장 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요. Marketplace에 게시 하기 위해 수행 해야 하는 작업에 대 한 자세한 내용은 [Visual Studio 용 제품 및 확장](/azure/devops/extend/overview?view=vsts&preserve-view=true)을 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)
 - [Visual Studio Code 확장](https://code.visualstudio.com/api)

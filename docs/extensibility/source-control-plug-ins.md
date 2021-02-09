@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab076cef7aaab96779e303ee7b85c8047eb6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848119"
 ---
 # <a name="source-control-plug-ins"></a>소스 제어 플러그 인
 소스 제어 플러그 인 SDK 참조 섹션에는 소스 제어 시스템을와 통합할 수 있도록 하는 전체 인터페이스 사양이 포함 되어 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 이 클래스는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)와의 상호 작용을 위해 소스 제어 플러그 인에서 구현 해야 하는 다양 한 함수 및 데이터 형식에 대 한 구문 및 의미 체계를 지정 합니다.

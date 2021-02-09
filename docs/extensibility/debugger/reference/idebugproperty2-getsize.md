@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f57a742bae0217493d8869b257e4a17839e4e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af31a88859f2afba735e0696124076eb82068404
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850909"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 속성 값의 크기 (바이트)를 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80721335"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetSize ( 
+HRESULT GetSize ( 
    DWORD* pdwSize
 );
 ```
 
 ```csharp
-int GetSize ( 
+int GetSize ( 
    out uint pdwSize
 );
 ```
@@ -43,8 +43,8 @@ int GetSize ( 
 `pdwSize`\
 제한이 속성 값의 크기 (바이트)를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `S_GETSIZE_NO_SIZE`속성에 크기가 없으면를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

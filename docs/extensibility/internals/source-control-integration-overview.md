@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7f3b0ddf956c3f5c2ec2fe51163b52f2a7a973aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846428"
 ---
 # <a name="source-control-integration-overview"></a>소스 제어 통합 개요
 이 섹션에서는 Visual Studio 소스 제어에 통합 하는 두 가지 방법을 비교 합니다. 소스 제어 솔루션을 제공 하 고 새 소스 제어 기능을 강조 표시 하는 소스 제어 플러그 인 및 VSPackage입니다. Visual Studio에서는 소스 제어 Vspackage 및 소스 제어 플러그 인과 자동 솔루션 기반 전환 사이를 수동으로 전환할 수 있습니다.
@@ -75,7 +75,7 @@ ms.locfileid: "97876014"
 
 - VSPackage은 특정 소스 제어 모델로 한정 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어](../../extensibility/internals/source-control.md)
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)

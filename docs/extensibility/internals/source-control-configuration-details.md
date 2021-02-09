@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846506"
 ---
 # <a name="source-control-configuration-details"></a>소스 제어 구성 세부 정보
 소스 제어를 구현 하려면 다음 작업을 수행 하도록 프로젝트 시스템 또는 편집기를 적절히 구성 해야 합니다.
@@ -52,7 +52,7 @@ ms.locfileid: "97875507"
 
  각 추가, 이름 바꾸기 및 제거 작업에는 `OnQuery*` 메서드와 `OnAfter*` 메서드가 있습니다. 메서드를 호출 `OnQuery*` 하 여 파일이 나 디렉터리를 추가 하거나, 이름을 바꾸거나, 제거할 수 있는 권한을 요청 합니다. `OnAfter*`파일이 나 디렉터리를 추가, 이름 변경 또는 제거 하 고 프로젝트 상태가 새 상태를 반영 하는 경우 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

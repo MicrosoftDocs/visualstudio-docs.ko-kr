@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 02a0eb7c9279aef1fd2821d44a6f3cc4a0008356
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847754"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용하여 SharePoint용 웹 파트 만들기
 
@@ -71,7 +71,7 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자는 브�
 
 1. Visual Web Developer 디자이너에서 **디자인** 탭을 선택 하 여 디자인 뷰로 전환 합니다.
 
-2. 메뉴 모음에서 **View**  >  **도구 상자** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **도구 상자** 보기를 선택 합니다.
 
 3. **도구 상자** 의 **표준** 노드에서 **CheckBoxList** 컨트롤을 선택 하 고 다음 단계 중 하나를 수행 합니다.
 

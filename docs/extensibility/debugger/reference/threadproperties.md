@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850663"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 스레드의 속성을 설명 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80713428"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct _tagTHREADPROPERTIES { 
+typedef struct _tagTHREADPROPERTIES { 
    THREADPROPERTY_FIELDS dwFields;
    DWORD                 dwThreadId;
    DWORD                 dwSuspendCount;
@@ -40,7 +40,7 @@ typedef struct _tagTHREADPROPERTIES { 
 ```
 
 ```csharp
-public struct THREADPROPERTIES { 
+public struct THREADPROPERTIES { 
    public uint   dwFields;
    public uint   dwThreadId;
    public uint   dwSuspendCount;
@@ -51,7 +51,7 @@ public struct THREADPROPERTIES { 
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `dwFields`\
  이 구조체에서 유효한 필드를 설명 하는 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 열거형의 플래그 조합입니다.
 
@@ -83,8 +83,8 @@ public struct THREADPROPERTIES { 
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], InfoPath
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0bc66a9266baf865e2efb87497361bc0c525e55a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849894"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본 사용자 지정
   Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 애플리케이션 창에서 리본을 표시할 수 있습니다.

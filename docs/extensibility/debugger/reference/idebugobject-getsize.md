@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a475b4d6d9b0af8b4c55a3d949fdc4ed172aa337
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846831"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 개체의 크기 (바이트)를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80726576"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    UINT* pnSize
 );
 ```
@@ -43,12 +43,12 @@ int GetSize(
 `pnSize`\
 제한이 크기 (바이트)를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) 메서드를 사용 하 여 값을 바이트 시퀀스로 검색 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

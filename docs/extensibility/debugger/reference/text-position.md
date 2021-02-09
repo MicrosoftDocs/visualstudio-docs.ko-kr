@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850715"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 지정 된 텍스트의 줄 및 열 위치를 설명 합니다.
@@ -28,20 +28,20 @@ ms.locfileid: "80713417"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct _tagTEXT_POSITION { 
+typedef struct _tagTEXT_POSITION { 
    DWORD dwLine;
    DWORD dwColumn;
 } TEXT_POSITION;
 ```
 
 ```csharp
-public struct TEXT_POSITION { 
+public struct TEXT_POSITION { 
    public uint dwLine;
    public uint dwColumn;
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 `dwLine`\
 소스 파일의 줄 인덱스입니다.
@@ -83,9 +83,9 @@ public struct TEXT_POSITION { 
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

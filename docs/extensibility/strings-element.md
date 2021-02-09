@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848014"
 ---
 # <a name="strings-element"></a>Strings 요소
 Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 합니다. 다른 모든 자식 요소는 선택 사항입니다. ' & ' 및 ' < '와 같은 잘못 된 XML 문자는 엔터티 (' &amp; ' 및 ' ' 등)로 코딩 되어야 합니다 &lt; .
@@ -39,13 +39,13 @@ Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 �
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |language|선택 사항입니다. Language = "."|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |ButtonText|이 필드 및 명령 정의에서 5 개의 다음 텍스트 필드를 사용 하 여 다양 한 메뉴에 표시 되는 텍스트를 지정할 수 있습니다. 기본적으로이 `ButtonText` 필드는 메뉴 컨트롤러에 표시 됩니다. `ButtonText`다른 텍스트 필드가 비어 있는 경우에도 필드가 기본값이 됩니다. `ButtonText`다른 텍스트 필드가 지정 된 경우에도 필드를 비워 둘 수 없습니다.|
 |ToolTipText|`ToolTipText`필드는 메뉴 항목에 대 한 도구 설명에 표시 되는 텍스트를 지정 합니다.<br /><br /> `ToolTipText`필드가 비어 있으면 `ButtonText` 필드가 사용 됩니다.|
@@ -56,11 +56,11 @@ Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 �
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Button 요소](../extensibility/button-element.md)|사용자가 조작할 수 있는 요소를 정의 합니다.|
 |[Menu 요소](../extensibility/menu-element.md)|단일 메뉴 항목을 정의 합니다.|
 |[Combo 요소](../extensibility/combo-element.md)|콤보 상자에 표시 되는 명령을 정의 합니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

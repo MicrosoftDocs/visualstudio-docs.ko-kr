@@ -24,15 +24,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850037"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 애플리케이션에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.
@@ -91,7 +91,7 @@ ms.locfileid: "96844182"
  작업창을 만든 후 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체의 속성 및 이벤트를 사용하여 작업창의 사용자 인터페이스를 제어하고 사용자가 작업창을 변경할 때 응답할 수 있습니다.
 
 ### <a name="make-the-custom-task-pane-visible"></a>사용자 지정 작업창 표시
- 기본적으로 작업창은 표시되지 않습니다. 작업 창이 표시 되도록 하려면 속성을 true로 설정 해야 합니다 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> . **true**
+ 기본적으로 작업창은 표시되지 않습니다. 작업 창이 표시 되도록 하려면 속성을 true로 설정 해야 합니다 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> . 
 
  사용자는 작업창의 모퉁이에 있는 **닫기** 단추 (X)를 클릭 하 여 언제 든 지 작업 창을 닫을 수 있습니다. 그러나 사용자가 사용자 지정 작업창을 다시 열 수 있는 기본 방법은 없습니다. 표시할 방법을 제공하지 않는 한 사용자 지정 작업창을 닫은 사용자는 사용자 지정 작업창을 다시 볼 수 없습니다.
 
@@ -104,7 +104,7 @@ ms.locfileid: "96844182"
 
  다음 표에서는 <xref:Microsoft.Office.Tools.CustomTaskPane> 속성을 사용하여 사용자 지정 작업창에 대해 수행할 수 있는 변경 내용을 보여 줍니다.
 
-|작업|속성|
+|Task|속성|
 |----------|--------------|
 |작업창의 크기를 변경하려면|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |작업창의 위치를 변경하려면|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -116,7 +116,7 @@ ms.locfileid: "96844182"
 
  다음 표에서는 사용자 지정 작업창에 대한 사용자 변경 내용에 응답하기 위해 처리할 수 있는 이벤트를 보여 줍니다.
 
-|작업|이벤트|
+|Task|이벤트|
 |----------|-----------|
 |사용자가 작업창의 위치를 변경할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |사용자 작업창을 숨기거나 표시되도록 설정할 때 응답|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|

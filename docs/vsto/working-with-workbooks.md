@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 856f48b4d40dbae13112dc605d0b1f2c9ac4de52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847403"
 ---
 # <a name="work-with-workbooks"></a>통합 문서 작업
   <xref:Microsoft.Office.Tools.Excel.Workbook> 및 <xref:Microsoft.Office.Interop.Excel.Workbooks> 클래스에는 통합 문서가 있는 작업을 수행하는 데 사용하는 메서드 및 속성이 포함됩니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |새 통합 문서를 만듭니다.|[방법: 프로그래밍 방식으로 새 통합 문서 만들기](../vsto/how-to-programmatically-create-new-workbooks.md)|
 |지정된 통합 문서를 엽니다.|[방법: 프로그래밍 방식으로 통합 문서 열기](../vsto/how-to-programmatically-open-workbooks.md)|

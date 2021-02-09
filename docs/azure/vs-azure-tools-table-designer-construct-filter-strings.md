@@ -2,17 +2,17 @@
 title: 테이블 디자이너에 대한 필터 문자열 생성하기 | Microsoft Docs
 description: 테이블 디자이너에 대한 필터 문자열 생성하기
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846207"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>테이블 디자이너에 대한 필터 문자열 생성하기
 ## <a name="overview"></a>개요
@@ -23,7 +23,7 @@ WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) 
 ## <a name="comparison-operators"></a>비교 연산자
 다음의 논리 연산자는 모든 속성 유형에 대해 지원됩니다.
 
-| 논리 연산자 | 설명 | 필터 문자열의 예 |
+| 논리 연산자 | Description | 필터 문자열의 예 |
 | --- | --- | --- |
 | eq |같음 |'Redmond'와 같은 도시 |
 | gt |보다 큼 |20보다 큰 가격 |
@@ -33,7 +33,7 @@ WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) 
 | ne |같지 않음 |'London'과 같지 않은 도시 |
 | 및 |and |200보다 적거나 같은 가격 및 3.5보다 큰 가격 |
 | 또는 |또는 |3.5보다 적거나 같은 가격 또는 200보다 큰 가격 |
-| not |not |not isAvailable |
+| not |Not |not isAvailable |
 
 필터 문자열을 생성할 때 다음의 규칙이 중요합니다.
 

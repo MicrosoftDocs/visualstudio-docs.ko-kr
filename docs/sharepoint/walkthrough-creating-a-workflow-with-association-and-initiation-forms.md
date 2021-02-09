@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847741"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>연습: 연결 및 시작 양식을 사용하여 워크플로 만들기
   이 연습에서는 연결 및 초기화 폼의 사용을 통합 하는 기본적인 순차 워크플로를 만드는 방법을 보여 줍니다. 이러한 매개 변수는 SharePoint 관리자 (연결 양식)에서 처음으로 연결 될 때 및 사용자가 워크플로를 시작할 때 (시작 폼) 매개 변수를 워크플로에 추가할 수 있는 ASPX 폼입니다.
@@ -84,7 +84,7 @@ ms.locfileid: "95970432"
 
 6. **솔루션 탐색기** 에서 프로젝트 노드를 선택합니다.
 
-7. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+7. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 8. **Visual c #** 또는 **Visual Basic** 에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
@@ -267,9 +267,9 @@ ms.locfileid: "95970432"
 
 5. 다음 단계 중 하나를 수행 하 여이 활동을 워크플로에 추가 합니다.
 
-    - **Createtask** 작업에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 workflow designer의 **IfElseActivity1** 내에서 두 개의 **작업 삭제** 영역 중 하나에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
+    - **Createtask** 작업에 대 한 바로 가기 메뉴를 열고 **복사** 를 선택 하 고 workflow designer의  내에서 두 개의 **작업 삭제** 영역 중 하나에 대 한 바로 가기 메뉴를 연 다음 **붙여넣기** 를 선택 합니다.
 
-    - **도구 상자** 의 **createtask** 활동을 두 개의 **Drop 활동에서 다음** 영역으로 끌어 옵니다. **IfElseActivity1**
+    - **도구 상자** 의 **createtask** 활동을 두 개의 **Drop 활동에서 다음** 영역으로 끌어 옵니다. 
 
 6. **속성** 창에서 **CorrelationToken** 속성에 대 한 *tasktoken* 속성 값을 입력 합니다.
 
@@ -447,6 +447,6 @@ ms.locfileid: "95970432"
 
 - SharePoint 워크플로에 대 한 자세한 내용은 [Windows Sharepoint Services의 워크플로](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [연습: 워크플로에 애플리케이션 페이지 추가](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
