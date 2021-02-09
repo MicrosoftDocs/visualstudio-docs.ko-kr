@@ -12,15 +12,15 @@ helpviewer_keywords:
 - searching contacts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6813a137558a245c66d4b24deac07b1a6a77796a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: afe17292db70f2d2fdd16e7c7b388343fbf9db9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841951"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>방법: 프로그래밍 방식으로 특정 연락처 검색
   이 예제에서는 특정 연락처에 대해 성 및 이름으로 Outlook 연락처 폴더를 검색합니다. 이 예제에서는 **John Evans** 라는 이름의 연락처가 연락처 폴더에 있다고 가정합니다.
