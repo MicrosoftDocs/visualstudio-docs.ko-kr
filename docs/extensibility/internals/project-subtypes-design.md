@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9342d8f9f045eec2036c65a3ed2d823dfb4a7e42
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ea4132f098658b3757d999ded537268cd9121e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896847"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 
@@ -94,7 +94,7 @@ ms.locfileid: "97877431"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|프로젝트 하위 형식에서 임의의 XML 구조화 된 데이터를 프로젝트 파일 (.vbproj 또는 .csproj)에 유지할 수 있습니다. MSBuild에는이 데이터가 표시 되지 않습니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|프로젝트 하위 형식에서 다음을 수행할 수 있습니다.<br /><br /> -유지할 새 MSBuild 속성을 추가 합니다.<br />-MSBuild에서 불필요 한 속성을 제거 합니다.<br />-MSBuild 속성의 현재 값을 쿼리 합니다.<br />-MSBuild 속성의 현재 값을 변경 합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

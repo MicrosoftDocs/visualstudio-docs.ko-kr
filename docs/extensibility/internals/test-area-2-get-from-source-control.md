@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898221"
 ---
 # <a name="test-area-2-get-from-source-control"></a>테스트 영역 2: 소스 제어에서 가져오기
 이 테스트 영역은 Get 명령을 통해 버전 저장소에서 항목을 검색 하는 테스트 사례를 다룹니다. 이러한 테스트 사례는 로컬 및 웹 프로젝트에 모두 적용할 수 있습니다.
@@ -55,5 +55,5 @@ ms.locfileid: "97877704"
 |버전 저장소의 최신 버전과 동일 하 게 로컬에 있는 파일 가져오기|1. 새 프로젝트를 만듭니다.<br />2. 프로젝트에 항목을 추가 합니다.<br />3. 프로젝트를 소스 제어에 둡니다.<br />4. 항목 (**파일**, **소스 제어**, **가져오기** )을 가져옵니다. \<item>|로컬 파일이 변경 되지 않았습니다.|
 |하나의 프로젝트를 사용 하 여 솔루션 가져오기|1. 하나의 프로젝트를 사용 하 여 솔루션을 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 모든 프로젝트 파일을 로컬에서 삭제 합니다.<br />4. 솔루션 (**파일**, **소스 제어**, **가져오기**)을 가져옵니다.|삭제 된 모든 파일은 로컬로 복원 됩니다.|
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

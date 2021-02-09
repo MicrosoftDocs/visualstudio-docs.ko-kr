@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898595"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 프로그램을 호스트 하는 프로세스의 시스템 프로세스 식별자를 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80722028"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetHostPid ( 
+HRESULT GetHostPid ( 
    AD_PROCESS_ID * pdwHostPid
 );
 ```
 
 ```csharp
-int GetHostPid ( 
+int GetHostPid ( 
    out AD_PROCESS_ID pdwHostPid
 );
 ```
@@ -43,11 +43,11 @@ int GetHostPid ( 
 `pdwHostPid`\
 제한이 호스팅 프로세스에 대 한 시스템 프로세스 식별자를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
- 다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+## <a name="example"></a>예제
+ 다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
@@ -62,5 +62,5 @@ HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

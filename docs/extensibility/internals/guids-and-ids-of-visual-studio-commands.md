@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898271"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 명령의 Guid 및 Id
 Visual Studio IDE (통합 개발 환경)에 포함 된 명령의 GUID 및 ID 값은 Visual Studio SDK의 일부로 설치 되는 vsct 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -45,7 +45,7 @@ Visual Studio IDE (통합 개발 환경)에 포함 된 명령의 GUID 및 ID 값
 
 5. 열려 있는 **모든 문서가** **찾는 위치** 상자에 표시 되는지 확인 합니다.
 
-6. 단추 요소의 섹션에서 텍스트를 선택할 때까지 **다음 찾기** 단추를 클릭 합니다 `<Strings>` . [Button element](../../extensibility/button-element.md)
+6. 단추 요소의 섹션에서 텍스트를 선택할 때까지 **다음 찾기** 단추를 클릭 합니다 `<Strings>` . [](../../extensibility/button-element.md)
 
     명령이 `<Button>` 표시 되는 요소는 명령 정의입니다.
 
@@ -60,7 +60,7 @@ Visual Studio IDE (통합 개발 환경)에 포함 된 명령의 GUID 및 ID 값
 
 - **저장** \<Current Filename\> 및 동적으로 생성 된 메뉴 항목 (예: **최근 파일** 목록의 항목)을 포함 하는 동적 텍스트를 포함 하는 명령입니다.
 
-     동적 텍스트를 검색 하는 신뢰할 수 있는 방법은 없습니다. 대신 [Visual studio 메뉴의 guid 및 id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 를 확인 하 고 [visual Studio 도구 모음의 guid 및](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id를 조회 하 여 원하는 명령을 호스트 하는 그룹을 찾은 다음 해당 그룹의 id를 검색 합니다. 명령 정의에 해당 그룹이 [부모 요소인](../../extensibility/parent-element.md)경우 명령의 부모를 설정 하는 요소에 대해 *sharedcmdplace. Vsct* 및 *shellcmdplace* 를 검색 합니다. vsct (또는 디버거 명령에 대 한 *vsct* ). `<CommandPlacement>` *Sharedcmdplace. vsct*, *Shellcmdplace* 및 *VsDbgCmdPlace.vsct* 는 *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* 폴더에 있습니다.
+     동적 텍스트를 검색 하는 신뢰할 수 있는 방법은 없습니다. 대신 [Visual studio 메뉴의 guid 및 id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 를 확인 하 고 [visual Studio 도구 모음의 guid 및](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id를 조회 하 여 원하는 명령을 호스트 하는 그룹을 찾은 다음 해당 그룹의 id를 검색 합니다. 명령 정의에 해당 그룹이 [부모 요소인](../../extensibility/parent-element.md)경우 명령의 부모를 설정 하는 요소에 대해 *sharedcmdplace. Vsct* 및 *shellcmdplace* 를 검색 합니다. vsct (또는 디버거 명령에 대 한 *vsct* ). `<CommandPlacement>` *Sharedcmdplace. vsct*, *Shellcmdplace* 및  는 *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* 폴더에 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

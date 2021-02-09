@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898831"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 프로그램에 세션을 연결 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80722383"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Attach( 
+HRESULT Attach( 
    IDebugEventCallback2* pCallback,
    DWORD                 dwReason,
    IDebugSession2*       pSession
@@ -36,7 +36,7 @@ HRESULT Attach( 
 ```
 
 ```csharp
-int Attach( 
+int Attach( 
    IDebugEventCallback2 pCallback,
    uint                 dwReason,
    IDebugSession2       pSession
@@ -53,7 +53,7 @@ int Attach( 
 `pSession`\
 진행 프로그램에 연결 되는 세션을 고유 하 게 식별 하는 값입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 프로그램이 이미 연결 되어 있으면이 메서드는를 반환 해야 합니다 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` .
 
 ## <a name="remarks"></a>설명
@@ -62,5 +62,5 @@ int Attach( 
 > [!NOTE]
 > 전달 된 인터페이스는 `pSession` 이 프로그램에 연결 하는 세션 디버그 관리자를 고유 하 게 식별 하는 값인 쿠키로만 처리 됩니다. 제공 된 인터페이스의 메서드는 모두 작동 하지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

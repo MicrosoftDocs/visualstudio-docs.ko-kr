@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898513"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 프로그램의 이름을 가져옵니다.
@@ -43,14 +43,14 @@ int GetProgramName (
 `pbstrProgramName`\
 제한이 프로그램의 이름을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 프로그램의 이름은 프로그램에 대 한 경로와 동일 하지 않지만 프로그램의 이름은 이러한 경로의 일부일 수 있습니다.
 
-## <a name="example"></a>예
-다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) `MakeBstr`함수는 지정 된 문자열의 복사본을 BSTR로 할당 합니다.
+## <a name="example"></a>예제
+다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugprogramnode2.md) `MakeBstr`함수는 지정 된 문자열의 복사본을 BSTR로 할당 합니다.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
@@ -63,5 +63,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

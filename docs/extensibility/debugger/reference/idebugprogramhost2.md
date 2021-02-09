@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db456e0c438f8665f122c3cd1b079c2ad1cea1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898768"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 이 인터페이스는 프로그램에 대 한 호스트 (프로세스) 정보를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramHost2 : IUnknown
@@ -37,7 +37,7 @@ IDebugProgramHost2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramHost2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|이 프로그램의 호스팅 프로세스에 대 한 제목, 이름 또는 파일 이름을 가져옵니다.|
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|이 프로그램의 호스팅 프로세스에 대 한 프로세스 식별자를 가져옵니다.|
@@ -50,6 +50,6 @@ IDebugProgramHost2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

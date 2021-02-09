@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d281ad2f7df73a42835d0f0670a96af07e036d72
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5043da1d30a9066278455e9c4653f9a636a07926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898305"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>참조(Visual Studio 디버깅 API)
 
@@ -33,7 +33,7 @@ Visual Studio 디버깅 SDK 참조는 디버거의 런타임 아키텍처 및 �
 
 Visual Studio 디버깅 API의 인터페이스, 열거자 및 구조에 대 한 설명서를 포함 합니다.
 
-[용어](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
+[용어 설명](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 
 디버깅 관련 용어와 해당 정의의 목록을 제공 합니다.
 

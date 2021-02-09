@@ -6,21 +6,21 @@ helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bee46a1f097d1bee98354acb792f75ea9431f301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897212"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
 디버그 엔진 (DE)은 프로그램이 중지 될 때이 선택적 이벤트를 세션 디버그 관리자 (SDM)로 보낼 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugStopCompleteEvent2 : IUnknown

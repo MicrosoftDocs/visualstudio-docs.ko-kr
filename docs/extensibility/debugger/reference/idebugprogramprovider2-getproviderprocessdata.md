@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898288"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 지정 된 프로세스에서 실행 중인 프로그램의 목록을 검색 합니다.
@@ -28,22 +28,22 @@ ms.locfileid: "80721834"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetProviderProcessData(
-   PROVIDER_FLAGS         Flags,
-   IDebugDefaultPort2*    pPort,
-   AD_PROCESS_ID          processId,
-   CONST_GUID_ARRAY       EngineFilter,
-   PROVIDER_PROCESS_DATA* pProcess
+HRESULT GetProviderProcessData(
+   PROVIDER_FLAGS         Flags,
+   IDebugDefaultPort2*    pPort,
+   AD_PROCESS_ID          processId,
+   CONST_GUID_ARRAY       EngineFilter,
+   PROVIDER_PROCESS_DATA* pProcess
 );
 ```
 
 ```csharp
-int GetProviderProcessData(
-   enum_PROVIDER_FLAGS     Flags,
-   IDebugDefaultPort2      pPort,
-   AD_PROCESS_ID           ProcessId,
-   CONST_GUID_ARRAY        EngineFilter,
-   PROVIDER_PROCESS_DATA[] pProcess
+int GetProviderProcessData(
+   enum_PROVIDER_FLAGS     Flags,
+   IDebugDefaultPort2      pPort,
+   AD_PROCESS_ID           ProcessId,
+   CONST_GUID_ARRAY        EngineFilter,
+   PROVIDER_PROCESS_DATA[] pProcess
 );
 ```
 
@@ -70,13 +70,13 @@ int GetProviderProcessData(
 `pProcess`\
 제한이 요청 된 정보를 사용 하 여 채워지는 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 일반적으로 해당 프로세스에서 실행 되는 프로그램 목록을 가져오는 프로세스에 의해 호출 됩니다. 반환 된 정보는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체의 목록입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

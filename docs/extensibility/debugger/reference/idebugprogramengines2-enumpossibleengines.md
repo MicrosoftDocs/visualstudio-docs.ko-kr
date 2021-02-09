@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899006"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)의 Guid를 반환 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80722436"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,7 +36,7 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines
@@ -53,11 +53,11 @@ int EnumPossibleEngines( 
 `pceltEngines`\
 제한이 반환 되는 실제 DE Guid 수를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`버퍼가 충분히 크지 않은 경우 [c + +] 또는 [c #] 0x8007007A를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  엔진 수를 확인 하려면 `celtBuffer` 매개 변수를 0으로 설정 하 고 `rgguidEngines` 매개 변수를 null 값으로 설정 하 여이 메서드를 한 번 호출 합니다. 이 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 는 (c #의 경우 0X8007007A)를 반환 하 고 `pceltEngines` 매개 변수는 필요한 버퍼 크기를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

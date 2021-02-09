@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 56854cbd5e81b913971c64540db8d7e732b622bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898342"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>소스 제어 Vspackage 시작
 
 소스 제어 VSPackage는 소스 제어 플러그 인에 대 한 보다 고급 대안입니다. 소스 제어 플러그 인에 대 한 자세한 내용은 [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)를 참조 하세요. 소스 제어 VSPackage를 사용 하면 소스 제어 모델, 기능 및 UI (사용자 인터페이스)에 대 한 완전 한 제어를 제공 하 고 환경에 VSPackage로 통합할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [소스 제어 VSPackage을 구현할지 여부를 결정 합니다.](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 

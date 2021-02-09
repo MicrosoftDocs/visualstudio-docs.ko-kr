@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898856"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 이 인터페이스를 사용 하면 세션 디버그 관리자 (SDM)를 프로그램에 연결 하 고 프로그램에 연결 된 프로그램 노드를 가져올 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramEx2 : IUnknown
@@ -37,7 +37,7 @@ IDebugProgramEx2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramEx2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[연결](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|프로그램을 세션에 연결 합니다.|
 |[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|프로그램과 연결 된 프로그램 노드를 가져옵니다.|
@@ -52,6 +52,6 @@ IDebugProgramEx2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

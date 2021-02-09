@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289609c93cf0e58eb44500bff135282d01212bbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897228"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 이 인터페이스는 디버깅 중인 프로그램에서 한 단계씩 코드 실행, 프로시저 단위 실행 또는 소스 코드 또는 문 또는 명령의 한 단계씩 코드 실행이 완료 되 면 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugStepCompleteEvent2 : IUnknown
@@ -44,7 +44,7 @@ IDebugStepCompleteEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

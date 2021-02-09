@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a7b3f9096bbbef1c4de2161c6bb3b6a4c59e4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897192"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 이 메서드는 문서 컨텍스트를 디버그 주소 배열에 매핑합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80719439"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetAddressesFromContext( 
+HRESULT GetAddressesFromContext( 
    IDebugDocumentContext2* pDocContext,
    BOOL                    fStatmentOnly,
    IEnumDebugAddresses**   ppEnumBegAddresses,
@@ -58,7 +58,7 @@ int GetAddressesFromContext(
 `ppEnumEndAddresses`\
 제한이 이 문이나 줄과 연결 된 끝 디버그 주소에 대 한 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -66,7 +66,7 @@ int GetAddressesFromContext(
 
  템플릿의 경우와 같이 단일 문에 여러 개의 디버그 주소가 있을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
