@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851597"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기
   모든 SharePoint 프로젝트에 **시각적 웹 파트** 항목을 추가 하 여 웹 파트를 만들 수 있습니다. 그러면 웹 파트에 컨트롤과 코드를 추가할 수 있는 visual Studio의 Visual Web Developer designer가 열립니다. 비주얼 웹 파트는 웹 파트와 동일한 방식으로 작동 합니다. 유일한 차이점은 Visual web Developer 디자이너에서 비주얼 웹 파트를 디자인 하는 것입니다.
@@ -45,7 +45,7 @@ ms.locfileid: "94903717"
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>기존 SharePoint 프로젝트에 비주얼 웹 파트를 추가 하려면
 
-1. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 2. **새 항목 추가** 대화 상자에서 **Office/SharePoint** 노드를 선택 합니다.
 

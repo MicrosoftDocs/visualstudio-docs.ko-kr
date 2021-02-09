@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851688"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 모델 디자인 도구 개요
   Bdc 디자이너, **Bdc 메서드 세부 정보** 창 및 **bdc 탐색기** 를 사용 하 여 Bdc (비즈니스 데이터 연결) 모델을 디자인할 수 있습니다.
@@ -53,14 +53,14 @@ ms.locfileid: "94850315"
 
  **BDC 메서드 세부 정보** 창에서 Finder, 특정 Finder, Creator, 업데이트 및 Deleter 메서드를 신속 하 게 생성할 수 있습니다. 이러한 메서드를 생성 하는 경우 Visual Studio는 매개 변수, 인스턴스 및 형식 설명자와 같은 메타 데이터를 메서드에 추가 합니다. 특정 시나리오를 충족 하도록이 메타 데이터를 수정할 수 있습니다.
 
- **BDC 메서드 세부 정보** 창을 열려면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+ **BDC 메서드 세부 정보** 창을 열려면 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
  **Bdc 메서드 세부 정보** 창에서 메서드를 보려면 bdc 디자이너에서 엔터티를 선택 합니다. 선택한 엔터티의 메서드는 **BDC 메서드 세부 정보** 창에 표시 됩니다. BDC 디자이너에서 엔터티를 선택 하지 않으면 **Bdc 메서드 세부 정보** 창에 정보가 표시 되지 않습니다.
 
  **BDC 메서드 세부 정보** 창에서 노드를 확장 하거나 축소 하 여 매개 변수, 인스턴스 및 필터 설명자를 정의 합니다. **BDC 탐색기** 를 사용 하 여 형식 설명자를 정의 합니다.
 
 ## <a name="bdc-explorer"></a>BDC 탐색기
- **BDC 탐색기** 에는 모델을 구성 하는 요소가 표시 됩니다. **Bdc 탐색기** 를 열려면 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 탐색기** 보기를 선택 합니다. 모델을 찾아보려면 **BDC 탐색기** 에서 노드를 확장 합니다. 각 노드는 모델 파일의 XML에 있는 요소를 나타냅니다.
+ **BDC 탐색기** 에는 모델을 구성 하는 요소가 표시 됩니다. **Bdc 탐색기** 를 열려면 메뉴 모음에서   >  **다른 Windows**  >  **BDC 탐색기** 보기를 선택 합니다. 모델을 찾아보려면 **BDC 탐색기** 에서 노드를 확장 합니다. 각 노드는 모델 파일의 XML에 있는 요소를 나타냅니다.
 
  **BDC 탐색기** 에서 노드를 선택 하면 선택한 각 노드의 속성이 **속성** 창에 표시 됩니다. 이러한 속성 중 대부분은 모델 파일의 특성에 해당 합니다. **BDC 탐색기** 맨 위에 있는 검색 상자를 사용 하 여 모델을 검색할 수 있습니다.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852832"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 식 계산기 (EE)와 관련 된 데이터 개체의 복사본을 만듭니다.
@@ -28,16 +28,16 @@ ms.locfileid: "80715044"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateReplacementObject(
-   IEEDataStorage*  dataIn,
-   IEEDataStorage** dataOut
+HRESULT CreateReplacementObject(
+   IEEDataStorage*  dataIn,
+   IEEDataStorage** dataOut
 );
 ```
 
 ```csharp
-int CreateReplacementObject(
-   IEEDataStorage     dataIn,
-   out IEEDataStorage dataOut
+int CreateReplacementObject(
+   IEEDataStorage     dataIn,
+   out IEEDataStorage dataOut
 );
 ```
 
@@ -48,7 +48,7 @@ int CreateReplacementObject(
 `dataOut`\
 제한이 새 개체를 반환 `IEEDataStorage` 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -56,6 +56,6 @@ int CreateReplacementObject(
 
  들어오는 개체가 제공 하는 데이터는 `IEEDataStorage` 나가는 개체의 데이터와 같아야 합니다 `IEEDataStorage` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

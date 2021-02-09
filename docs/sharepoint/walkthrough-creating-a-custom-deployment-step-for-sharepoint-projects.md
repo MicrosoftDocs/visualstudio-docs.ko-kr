@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839138"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>연습: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기
   SharePoint 프로젝트를 배포할 때 Visual Studio는 일련의 배포 단계를 특정 순서로 실행 합니다. Visual Studio에는 다양 한 기본 제공 배포 단계가 포함 되어 있지만 직접 만들 수도 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "96914935"
 
 - 새 배포 단계를 테스트 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -226,7 +226,7 @@ ms.locfileid: "96914935"
 
 12. **프로젝트** 목록에서 **SharePointCommands** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-13. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
+13. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
 
 14. UpgradeDeploymentStep 프로젝트에 대 한 빌드 출력 폴더에 이제 UpgradeDeploymentStep .vsix 파일이 포함 되어 있는지 확인 합니다.
 

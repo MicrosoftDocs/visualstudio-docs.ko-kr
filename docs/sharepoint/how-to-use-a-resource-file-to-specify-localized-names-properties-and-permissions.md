@@ -19,15 +19,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecc2bfab37e534e4edc005273ab5fc826b771228
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49546d11dbf4f19bb2fd826ace2850468f780d13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851558"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>SharePoint 프로젝트에서 리소스 파일을 사용 하는 방법
 
@@ -37,7 +37,7 @@ ms.locfileid: "96304366"
 
 1. **솔루션 탐색기** 에서 SharePoint 프로젝트에 대 한 폴더를 확장 하 고 BDC 모델이 포함 된 폴더를 선택 합니다.
 
-2. 메뉴 모음에서 **프로젝트**  >  **새 항목 추가** 를 선택 합니다.
+2. 메뉴 모음에서 **프로젝트** > **새 항목 추가** 를 선택합니다.
 
 3. **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 

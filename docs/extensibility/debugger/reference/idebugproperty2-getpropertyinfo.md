@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ec1c3e29e0dbb6ca069dec696e6645a159ec7e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcaa016e51b98c165a3c3b0a4872d5def6224819
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850883"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 속성을 설명 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80721372"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetPropertyInfo ( 
+HRESULT GetPropertyInfo ( 
    DEBUGPROP_INFO_FLAGS dwFields,
    DWORD                nRadix,
    DWORD                dwTimeout,
@@ -39,7 +39,7 @@ HRESULT GetPropertyInfo ( 
 ```
 
 ```cpp
-int GetPropertyInfo ( 
+int GetPropertyInfo ( 
    enum_DEBUGPROP_INFO_FLAGS dwFields,
    uint                      nRadix,
    uint                      dwTimeout,
@@ -68,10 +68,10 @@ int GetPropertyInfo ( 
 `pPropertyInfo`\
 제한이 속성에 대 한 설명과 함께 채워지는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

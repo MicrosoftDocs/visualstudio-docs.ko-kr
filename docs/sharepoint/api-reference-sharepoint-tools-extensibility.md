@@ -11,20 +11,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: ec07272ede6c957afb43c29342e8479e67d1dd0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851726"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 참조 (SharePoint 도구 확장성)
   이 섹션에는 Visual Studio에서 SharePoint 도구를 확장 하기 위한 API 참조 설명서가 포함 되어 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  <xref:Microsoft.VisualStudio.SharePoint>
 
  SharePoint 프로젝트 시스템을 확장 하는 데 사용 하는 형식을 포함 합니다. 예를 들어 기본 제공 SharePoint 프로젝트 및 프로젝트 항목을 확장하거나, 고유한 프로젝트 항목을 만들 수 있습니다.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851610"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>서버 탐색기를 사용하여 SharePoint 연결 찾아보기
   이제 **서버 탐색기** 에서 로컬 SharePoint 연결을 찾아볼 수 있습니다. 이 방법을 사용하면 시스템에서 SharePoint 사이트의 구성 요소를 탐색할 수 있습니다. 목록 정의, 콘텐츠 형식 등의 SharePoint 사이트 구성 요소는 **서버 탐색기** 트리 뷰에서 **SharePoint 연결** 노드에 표시됩니다. **서버 탐색기** 를 표시하려면 메뉴 모음에서 **보기** > **서버 탐색기** 를 선택합니다. SharePoint 사이트 구성 요소를 표시하는 것 외에도 바로 가기 메뉴의 명령을 사용하여 항목을 제거하거나, 속성을 보거나, 트리 뷰를 새로 고칠 수 있습니다.
