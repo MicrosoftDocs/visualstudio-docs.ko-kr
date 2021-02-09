@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875525"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn")를 사용 하면 코드 인식 라이브러리를 빌드할 수 있습니다. 코드 인식 라이브러리는 및 도구 (Roslyn 분석기)를 사용 하 여 라이브러리를 가장 적절 한 방법으로 사용 하거나 오류를 방지 하는 데 사용할 수 있는 기능을 제공 합니다. 이 항목에서는 [Roslyn NuGet 패키지](https://www.nuget.org/packages/System.Collections.Immutable) 를 사용 하는 경우 일반적인 오류를 catch 하기 위해 실제 세계 analyzer를 빌드하는 방법을 보여 줍니다. 이 예제에서는 분석기에서 발견 한 코드 문제에 대 한 코드 픽스를 제공 하는 방법도 보여 줍니다. 사용자는 Visual Studio 전구 UI에서 코드 수정 사항을 확인 하 고 코드에 대 한 수정 사항을 자동으로 적용할 수 있습니다.
 
-## <a name="get-started"></a>시작하기
+## <a name="get-started"></a>시작
 
 이 예제를 빌드하려면 다음이 필요 합니다.
 
@@ -309,7 +309,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 [여기](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)에서 완성 된 코드를 모두 볼 수 있습니다. 하위 폴더 *DoNotUseImmutableArrayCollectionInitializer* 및 *DoNotUseImmutableArrayCtor* 에는 각각 문제를 찾기 위한 c # 파일과 Visual Studio 전구 UI에 표시 되는 코드 수정 프로그램을 구현 하는 c # 파일이 있습니다. 완성 된 코드에는 ImmutableArray type 개체를 가져오는 것을 방지 하기 위한 약간의 추상화가 있습니다 \<T> . 등록 된 중첩 된 작업을 사용 하 여 하위 작업 (개체 만들기 및 컬렉션 초기화 분석)이 실행 될 때마다 사용할 수 있는 컨텍스트에 형식 개체를 저장 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 * [\\\Build 2015 통신](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub에서 완성 된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 239a879fbffe67bf54149ba29e98edcd3428410d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 04de797b991b2c660b61ae401fb928561343b812
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875148"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow Designer 셸 기능
 

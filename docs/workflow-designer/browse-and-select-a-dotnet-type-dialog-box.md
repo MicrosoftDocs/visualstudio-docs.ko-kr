@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875304"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 
@@ -41,7 +41,7 @@ ms.locfileid: "96995488"
 
 1. **유형 이름** 상자에 사용 하려는 유형의 이름을 입력 합니다.
 
-2. 다음 작업 중 하나를 수행합니다.
+2. 다음 중 하나를 수행합니다.
 
     - 사용할 형식 이름이 **형식 이름** 상자의 트리에 표시 되 면 형식을 두 번 클릭 하 여 선택 합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "96995488"
 
 일치 항목을 찾기 위해 더 많은 문자를 입력 하면 **유형 이름** 상자의 유형 목록이 더 짧아집니다. Fullyqualified 이름이 입력 한 문자열로 시작 하는 형식 또는 약식 이름이 입력 한 문자열로 시작 하는 형식만 필터링 된 목록에 표시 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들어:
 
 1. 입력 **작업이** 일치 <xref:System.OperationCanceledException> 하지만 일치 하지 않습니다 <xref:System.InvalidOperationException> . <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
 

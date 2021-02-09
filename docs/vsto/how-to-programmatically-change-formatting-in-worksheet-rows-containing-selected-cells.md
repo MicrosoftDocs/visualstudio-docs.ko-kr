@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, changing formatting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 088b24a93cb82cc7807a996c26c9b2bbbabec04e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 62b9f94bfa423b149fef6abb984a03536d0e3d8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875317"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>방법: 프로그래밍 방식으로 선택한 셀이 포함 된 워크시트 행의 서식 변경
   선택한 셀이 포함 된 전체 행의 글꼴을 변경 하 여 텍스트가 굵게 표시 되도록 할 수 있습니다.

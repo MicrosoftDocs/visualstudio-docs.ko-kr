@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0198ef145c3fbf6d0edcc6a95954794597fce0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875590"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 서식 다시 지정
 
@@ -185,6 +185,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [레거시 언어 서비스 기능](legacy-language-service-features1.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875421"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
 
@@ -109,7 +109,7 @@ Visual Studio를 설치한 경우 무료인 ISLE(InstallShield Limited Edition)�
 
    이 항목과 관련된 VSTO 추가 기능 샘플에는 **ExcelAddIn** 이라는 프로젝트가 들어 있습니다. 문서 수준 사용자 지정 샘플에는 **ExcelWorkbook** 이라는 프로젝트가 들어 있습니다. 이 항목에서는 이러한 두 가지 이름 중 하나를 사용하여 해당 솔루션의 Office 프로젝트를 나타냅니다.
 
-2. 메뉴 모음에서 **파일**  >  **Add**  >  **새 프로젝트** 추가를 선택 합니다.
+2. 메뉴 모음에서 **파일**  >    >  **새 프로젝트** 추가를 선택 합니다.
 
    **새 프로젝트 추가** 대화 상자가 열립니다.
 
@@ -386,7 +386,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>문서 속성을 수정하는 프로그램을 만들려면
 
-1. 메뉴 모음에서 **파일**  >  **Add**  >  **새 프로젝트** 추가를 선택 합니다.
+1. 메뉴 모음에서 **파일**  >    >  **새 프로젝트** 추가를 선택 합니다.
 
    **새 프로젝트 추가** 대화 상자가 나타납니다.
 

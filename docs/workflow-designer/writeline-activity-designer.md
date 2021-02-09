@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 7cb4806949b21a6c92548b91623e63306f2a7722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875109"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 활동 디자이너
 
@@ -35,15 +35,15 @@ ms.locfileid: "94433663"
 
 다음 표에서는 <xref:System.Activities.Statements.WriteLine> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.WriteLine> 활동의 이름입니다. 기본값은 WriteLine입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|거짓|쓸 텍스트입니다. 속성을 설정 하려면 **WriteLine** 활동 디자이너의 **텍스트** 상자 또는 속성 표에 Visual Basic 식을 입력 합니다.|
-|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|거짓|<xref:System.IO.TextWriter>이 <xref:System.Activities.Statements.WriteLine>를 쓸 대상 <xref:System.Activities.Statements.WriteLine.Text%2A>입니다. 기본값은 콘솔입니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 활동의 이름입니다. 기본값은 WriteLine입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|쓸 텍스트입니다. 속성을 설정 하려면 **WriteLine** 활동 디자이너의 **텍스트** 상자 또는 속성 표에 Visual Basic 식을 입력 합니다.|
+|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter>이 <xref:System.Activities.Statements.WriteLine>를 쓸 대상 <xref:System.Activities.Statements.WriteLine.Text%2A>입니다. 기본값은 콘솔입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-- [기본 형식](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

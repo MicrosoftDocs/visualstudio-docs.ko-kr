@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b79e1bd49f24044a967bd72a52c91735f468ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356de7a4aebd2cf005c766b46da404184f77a4d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875616"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,9 +53,9 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
