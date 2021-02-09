@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888695"
 ---
 # <a name="ribbon-object-model-overview"></a>리본 개체 모델 개요
   는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 런타임에 리본 컨트롤의 속성을 가져오고 설정 하는 데 사용할 수 있는 강력한 형식의 개체 모델을 노출 합니다. 예를 들어, 메뉴 컨트롤을 동적으로 채우거 나 컨텍스트 컨트롤을 표시 하 고 숨길 수 있습니다. 리본 메뉴에 탭, 그룹 및 컨트롤을 추가할 수도 있습니다. 단, Office 응용 프로그램에서 리본 메뉴를 로드 하기 전에만 가능 합니다. 자세한 내용은 읽기 전용으로 [설정 된 속성 설정](#SettingReadOnlyProperties)을 참조 하세요.
@@ -172,7 +172,7 @@ ms.locfileid: "97527988"
 
 |이벤트|Description|
 |-----------|-----------------|
-|리본 메뉴에서|컨트롤을 클릭 하면 발생 합니다.|
+|클릭 대상|컨트롤을 클릭 하면 발생 합니다.|
 |TextChanged|편집 상자 또는 콤보 상자의 텍스트가 변경 될 때 발생 합니다.|
 |일부를 로드 하는 중|Office에서 컨트롤의 항목 컬렉션을 요청할 때 발생 합니다. Office는 코드에서 컨트롤의 속성을 변경 하거나 메서드를 호출할 때까지 Items 컬렉션을 캐시 합니다 <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> .|
 |System.windows.forms.toolbar.buttonclick>|또는의 단추를 클릭할 때 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 발생 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 합니다.|
