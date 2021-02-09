@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce326c63f97dfafd06e3e2b3e760b1c06e60d442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f7965d07b723735bcbaddade94d50fb78aa2ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875889"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 식 계산기의 지정 된 메트릭에 해당 하는 값을 검색 합니다.
@@ -56,8 +56,8 @@ private int GetEEMetricDword(
 `pdwValue`\
 제한이 메트릭 문자열에 해당 하는 값을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

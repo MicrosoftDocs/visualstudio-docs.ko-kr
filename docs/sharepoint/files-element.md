@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Files element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 653e48a2e9b6a68db94fd66660da85f4dec20927
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876649"
 ---
 # <a name="files-element"></a>Files 요소
   기능 요소 파일 및 종속 비 SharePoint 프로젝트의 출력과 같은 SharePoint 프로젝트 항목을 사용 하 여 배포할 파일을 지정 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "94672810"
 </Files>
 ```
 
-## <a name="type"></a>유형
+## <a name="type"></a>Type
  **FileCollectionType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -44,14 +44,14 @@ ms.locfileid: "94672810"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|선택적 **ProjectItemFileType** 요소입니다.<br /><br /> SharePoint에 배포 될 때 프로젝트 항목에 포함할 기능 요소 파일 등의 SharePoint 파일을 나타냅니다.|
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|선택적 **Projectoutputfiletype** 요소입니다.<br /><br /> SharePoint에 배포 될 때 프로젝트 항목과 함께 포함할 프로젝트의 출력을 나타냅니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 파일의 필수 루트 요소 `.spdata` 입니다.|
 

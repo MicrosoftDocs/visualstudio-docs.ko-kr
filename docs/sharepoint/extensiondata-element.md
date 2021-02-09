@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd82aaec96eff3cf3d20fd9d0607ac5aae6b3472
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876838"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 요소
   SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.
@@ -40,13 +40,13 @@ ms.locfileid: "94672537"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|선택적 요소입니다.<br /><br /> SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목 (키/값 형식)을 나타냅니다. 키와 값은 모두 문자열 이어야 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 파일의 필수 루트 요소 `.spdata` 입니다.|
 

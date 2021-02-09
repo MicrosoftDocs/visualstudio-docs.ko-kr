@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f3886739cbc6deefd13570ae0f49da7e89ad9b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3e9e0cc71018d85d91e88d2969e76b49fcf9066a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876578"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
 

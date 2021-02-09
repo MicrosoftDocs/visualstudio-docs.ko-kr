@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa16c38f7e2bad03578d51da6db829ae708c4e71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876214"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 배포 문제 해결
 이 항목은 배포와 관련 된 가장 일반적인 문제를 진단 하 고 해결 하는 데 도움이 됩니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .

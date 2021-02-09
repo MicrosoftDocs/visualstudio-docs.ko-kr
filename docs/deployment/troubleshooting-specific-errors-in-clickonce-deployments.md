@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876175"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 이 문서에서는 응용 프로그램을 배포할 때 발생할 수 있는 다음과 같은 일반적인 오류를 나열 하 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 고 각 문제를 해결 하는 단계를 제공 합니다.
@@ -124,7 +124,7 @@ ms.locfileid: "94349268"
 ## <a name="additional-errors"></a>추가 오류
  다음 표에서는 사용자가 응용 프로그램을 설치할 때 클라이언트 컴퓨터 사용자가 받을 수 있는 몇 가지 일반적인 오류 메시지를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . 오류의 가장 가능성이 높은 원인에 대 한 설명 옆에 각 오류 메시지가 나열 됩니다.
 
-| 오류 메시지 | 설명 |
+| 오류 메시지 | Description |
 | - | - |
 | 응용 프로그램을 시작할 수 없습니다. 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램을 시작할 수 없습니다. 응용 프로그램 공급 업체에 지원을 문의 하십시오. | 이러한 메시지는 응용 프로그램을 시작할 수 없을 때 발생 하는 일반적인 오류 메시지 이며 다른 특정 이유를 찾을 수 없습니다. 이는 응용 프로그램이 손상 되었거나 저장소가 손상 된 것을 의미 하는 경우가 많습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . |
 | 계속할 수 없습니다. 응용 프로그램의 형식이 잘못 되었습니다. 도움이 필요 하면 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램 유효성 검사에 실패 했습니다. 계속할 수 없습니다.<br /><br /> 응용 프로그램 파일을 검색할 수 없습니다. 배포에서 파일이 손상 되었습니다. | 배포의 매니페스트 파일 중 하나가 구문상 잘못 되었거나 해당 파일을 사용 하 여 조정할 수 없는 해시가 포함 되어 있습니다. 이 오류는 어셈블리 내에 포함 된 매니페스트가 손상 되었음을 나타낼 수도 있습니다. 배포를 다시 만들고 응용 프로그램을 다시 컴파일하거나 매니페스트에서 오류를 수동으로 찾아서 수정 합니다. |

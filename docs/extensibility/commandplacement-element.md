@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876110"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 요소
 CommandPlacement 요소를 사용 하면 단추, 그룹 및 메뉴를 두 개 이상의 그룹이 나 메뉴에 포함할 수 있습니다. CommandPlacement 요소를 사용 하면 사용자 인터페이스의 모양을 수정 하기 위해 이러한 항목을 완전히 다시 정의할 필요가 없습니다.
@@ -40,16 +40,16 @@ CommandPlacement 요소를 사용 하면 단추, 그룹 및 메뉴를 두 개 �
 
 |attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소. [기호 요소](../extensibility/symbols-element.md)에 정의 된 대로 명령 집합의 guid입니다.|
-|id|필수 요소. 에 정의 된 대로 배치할 메뉴, 그룹 또는 명령의 id입니다 `Symbols Element` .|
-|priority|필수 요소. 부모 요소에서 항목의 시각적 위치를 결정 합니다.|
+|guid|필수 사항입니다. [기호 요소](../extensibility/symbols-element.md)에 정의 된 대로 명령 집합의 guid입니다.|
+|id|필수 사항입니다. 에 정의 된 대로 배치할 메뉴, 그룹 또는 명령의 id입니다 `Symbols Element` .|
+|priority|필수 사항입니다. 부모 요소에서 항목의 시각적 위치를 결정 합니다.|
 |조건|선택 사항입니다. [조건부 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)를 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
 |요소|Description|
 |-------------|-----------------|
-|부모|필수 요소. 배치할 항목을 호스팅하는 메뉴 또는 그룹입니다.|
+|Parent|필수 사항입니다. 배치할 항목을 호스팅하는 메뉴 또는 그룹입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 

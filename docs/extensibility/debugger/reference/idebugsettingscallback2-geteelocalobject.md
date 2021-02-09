@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fafd813a569c02af356fee9213ed4c1fdc8751e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875954"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 메트릭 이름이 지정 된 경우 식 계산기 로컬 개체를 검색 합니다.
@@ -56,8 +56,8 @@ private int GetEELocalObject(
 `ppUnk`\
 제한이 식 계산기 로컬 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

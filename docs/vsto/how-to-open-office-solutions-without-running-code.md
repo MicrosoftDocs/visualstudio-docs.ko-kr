@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876591"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>방법: 코드를 실행 하지 않고 Office 솔루션 열기
   관리 코드 확장을 사용 하 여 만든 Microsoft Office 솔루션은 최종 사용자의 Office 응용 프로그램의 보안 설정이 높음으로 설정 된 경우에도 실행 됩니다. .NET 어셈블리 코드 보안은 Microsoft Office가 아닌 Microsoft .NET 프레임 워크에서 관리 하기 때문입니다.

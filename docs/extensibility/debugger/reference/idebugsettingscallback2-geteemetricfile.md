@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aafda1563d2f948ea0871f920faa8bbbef766f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef2242d26aad4bf439a3ea33bb9d35cca1d7f8cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875863"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 이름 또는 메트릭이 지정 된 식 계산기 메트릭 파일을 검색 합니다.
@@ -56,8 +56,8 @@ private int GetEEMetricFile(
 `pbstrValue`\
 제한이 메트릭 파일의 내용을 문자열로 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

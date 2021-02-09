@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fc3e89adbf47bc8a430693694dbc45fe2ff9c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c041a9dca28dfbd0b1138e45809143e87d0809db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876071"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 새 속성을 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80720977"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetDebugProperty ( 
+HRESULT GetDebugProperty ( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty ( 
+int GetDebugProperty ( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -43,9 +43,9 @@ int GetDebugProperty ( 
 `ppProperty`\
 제한이 새 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

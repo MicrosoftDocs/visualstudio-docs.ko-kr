@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876669"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 요소
   SharePoint에 배포 될 때 기능에 포함 되는 사용자 지정 속성을 나타냅니다. 기능이 배포 된 후에는 코드에서 속성에 액세스할 수 있습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "94672758"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |**키**|필수 **xs: string** 특성입니다.<br /><br /> 속성 값을 저장 하 고 검색 하는 데 사용 되는 키입니다. 각 속성에는 기능 내에서 고유한 키가 있어야 합니다.|
 |**값**|필수 **xs: string** 특성입니다.<br /><br /> 속성 값입니다.|
@@ -46,7 +46,7 @@ ms.locfileid: "94672758"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint에 배포 될 때 기능에 포함 된 속성 값의 컬렉션을 나타냅니다.|
 

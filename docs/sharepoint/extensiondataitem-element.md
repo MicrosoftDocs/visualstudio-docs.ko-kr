@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionDataItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: add1a119283635f9cfd9bebddfe18228f1976703
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876825"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 요소
   SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목으로, 키/값 형식으로 되어 있습니다. 키와 값은 모두 문자열 이어야 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "94672615"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |**키**|필수 **xs: string** 특성입니다.<br /><br /> 데이터 항목을 저장 하 고 검색 하는 데 사용 되는 키입니다.|
 |**값**|필수 **xs: string** 특성입니다.<br /><br /> 데이터 항목의 값입니다.|
@@ -46,7 +46,7 @@ ms.locfileid: "94672615"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|SharePoint 프로젝트 항목과 연결 된 사용자 지정 데이터 항목의 컬렉션을 나타냅니다.|
 

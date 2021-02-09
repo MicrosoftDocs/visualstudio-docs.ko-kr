@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876318"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>방법: ClickOnce 배포 시 개별 필수 구성 요소에 대한 지원 URL 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]배포는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 실행 하기 위해 클라이언트 컴퓨터에서 사용할 수 있어야 하는 여러 필수 구성 요소를 테스트할 수 있습니다. 이러한 종속성에는 필요한 최소 버전의 .NET Framework, 운영 체제 버전, GAC (전역 어셈블리 캐시)에 사전 설치 해야 하는 모든 어셈블리가 포함 됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]그러나는 이러한 필수 구성 요소를 설치할 수 없습니다. 필수 구성 요소가 없는 경우 설치를 중단 하 고 설치에 실패 한 이유를 설명 하는 대화 상자를 표시 합니다.
@@ -86,6 +86,6 @@ ms.locfileid: "94350948"
 ## <a name="see-also"></a>참고 항목
 - [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> 요소인](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> 요소](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
 - [애플리케이션 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)

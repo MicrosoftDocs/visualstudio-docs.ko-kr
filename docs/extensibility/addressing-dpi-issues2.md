@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876162"
 ---
 # <a name="address-dpi-issues"></a>주소 DPI 문제
 장치 수가 늘어나고 "고해상도" 화면에 제공 됩니다. 일반적으로 이러한 화면에는 인치당 200 픽셀 (ppi)이 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하려면 장치에 대 한 일반적인 보기 거리에서 콘텐츠를 보는 데 필요한 요구에 맞게 콘텐츠를 확장 해야 합니다. 2014의 경우 고밀도 디스플레이의 기본 대상은 모바일 컴퓨팅 장치 (태블릿, clamshell 랩톱 및 휴대폰)입니다.
@@ -30,13 +30,13 @@ Windows 8.1 이상에는 컴퓨터가 고밀도 및 표준 밀도 디스플레�
 
 - Windows는 280 ppi를 초과 하는 새 장치 (Windows 8.1 S14)에서 최대 250%의 콘텐츠를 자동으로 확장할 수 있습니다.
 
-  Windows에서는 증가 하는 픽셀 수를 활용 하기 위해 UI를 확장 하는 방법을 제공 합니다. 응용 프로그램은 "시스템 DPI 인식" 자체를 선언 하 여이 시스템에 opts 합니다. 이 작업을 수행 하지 않는 응용 프로그램은 시스템에 의해 확장 됩니다. 이로 인해 전체 응용 프로그램이 균일 하 게 픽셀 스트레치 되는 "유사" 사용자 환경을 만들 수 있습니다. 예:
+  Windows에서는 증가 하는 픽셀 수를 활용 하기 위해 UI를 확장 하는 방법을 제공 합니다. 응용 프로그램은 "시스템 DPI 인식" 자체를 선언 하 여이 시스템에 opts 합니다. 이 작업을 수행 하지 않는 응용 프로그램은 시스템에 의해 확장 됩니다. 이로 인해 전체 응용 프로그램이 균일 하 게 픽셀 스트레치 되는 "유사" 사용자 환경을 만들 수 있습니다. 예를 들어:
 
   ![DPI 문제 퍼지](../extensibility/media/dpi-issues-fuzzy.png "DPI 문제 퍼지")
 
   Visual Studio는 DPI 확장을 인식 하기 위해 opts "가상화" 되지 않습니다.
 
-  Windows 및 Visual Studio는 시스템에서 설정 하는 크기 조정 요소를 서로 다른 방식으로 처리 하는 여러 가지 UI 기술을 활용 합니다. 예:
+  Windows 및 Visual Studio는 시스템에서 설정 하는 크기 조정 요소를 서로 다른 방식으로 처리 하는 여러 가지 UI 기술을 활용 합니다. 예를 들어:
 
 - WPF는 장치 독립적 방식 (픽셀이 아닌 단위)으로 컨트롤을 측정 합니다. WPF UI는 현재 DPI에 맞게 자동으로 확장 됩니다.
 
@@ -53,7 +53,7 @@ WPF는 이미 DPI를 인식 하지만 대부분의 Win32/GDI 기반 코드는 �
 이 섹션은 Visual Studio 2013를 확장 하는 개발자를 위한 것입니다. Visual Studio 2015의 경우 Visual Studio에 기본 제공 되는 이미지 서비스를 사용 합니다. 여러 버전의 Visual Studio를 지원 하거나 대상으로 해야 하므로 2015에서 이미지 서비스를 사용 하는 것은 이전 버전에서는 존재 하지 않으므로 옵션이 아닙니다. 이 섹션은 또한 사용자를 위한 것입니다.
 
 ## <a name="scaling-up-images-that-are-too-small"></a>너무 작은 이미지 확장
-몇 가지 일반적인 메서드를 사용 하 여 너무 작은 이미지를 GDI 및 WPF에서 확장 하 고 렌더링할 수 있습니다. 관리 되는 DPI 도우미 클래스는 내부 및 외부 Visual Studio 통합 자가 크기 조정 아이콘, 비트맵, imagestrips 및 imagelists를 처리 하는 데 사용할 수 있습니다. Win32 기반 네이티브 C/C + + 도우미는 HICON, HBITMAP, HICON 및 VsUI:: GdiplusImage의 크기를 조정 하는 데 사용할 수 있습니다. 비트맵을 확장 하려면 일반적으로 도우미 라이브러리에 대 한 참조를 포함 한 후에 한 줄만 변경 하면 됩니다. 예:
+몇 가지 일반적인 메서드를 사용 하 여 너무 작은 이미지를 GDI 및 WPF에서 확장 하 고 렌더링할 수 있습니다. 관리 되는 DPI 도우미 클래스는 내부 및 외부 Visual Studio 통합 자가 크기 조정 아이콘, 비트맵, imagestrips 및 imagelists를 처리 하는 데 사용할 수 있습니다. Win32 기반 네이티브 C/C + + 도우미는 HICON, HBITMAP, HICON 및 VsUI:: GdiplusImage의 크기를 조정 하는 데 사용할 수 있습니다. 비트맵을 확장 하려면 일반적으로 도우미 라이브러리에 대 한 참조를 포함 한 후에 한 줄만 변경 하면 됩니다. 예를 들어:
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -84,7 +84,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ![DPI 문제 배율](../extensibility/media/dpi-issues-scaling.png "DPI 문제 배율")
 
 ## <a name="layout-issues"></a>레이아웃 문제
-일반적으로는 절대 위치 (픽셀 단위)를 사용 하지 않고 UI의 요소를 서로 상대적으로 크기를 조정 하 여 일반적인 레이아웃 문제를 방지할 수 있습니다. 예:
+일반적으로는 절대 위치 (픽셀 단위)를 사용 하지 않고 UI의 요소를 서로 상대적으로 크기를 조정 하 여 일반적인 레이아웃 문제를 방지할 수 있습니다. 예를 들어:
 
 - 확대 이미지를 고려 하 여 레이아웃/텍스트 위치를 조정 해야 합니다.
 
@@ -122,7 +122,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 Visual Studio 환경 내에서 실행 되는 관리 코드에서 DPI 도우미 함수에 액세스 하려면 다음을 수행 합니다.
 
-- 소비 하는 프로젝트는 최신 버전의 Shell MPF를 참조 해야 합니다. 예:
+- 소비 하는 프로젝트는 최신 버전의 Shell MPF를 참조 해야 합니다. 예를 들어:
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
@@ -130,7 +130,7 @@ Visual Studio 환경 내에서 실행 되는 관리 코드에서 DPI 도우미 �
 
 - 프로젝트에 **PresentationCore** 및 **PresentationUI** 에 **대** 한 참조가 있는지 확인 합니다.
 
-- 코드에서 **VisualStudio ui** 네임 스페이스를 사용 하 고, DpiHelper 클래스의 정적 함수를 호출 합니다. 지원 되는 형식 (요소, 크기, 사각형 등)의 경우 확장 된 새 개체를 반환 하는 확장 함수가 제공 됩니다. 예:
+- 코드에서 **VisualStudio ui** 네임 스페이스를 사용 하 고, DpiHelper 클래스의 정적 함수를 호출 합니다. 지원 되는 형식 (요소, 크기, 사각형 등)의 경우 확장 된 새 개체를 반환 하는 확장 함수가 제공 됩니다. 예를 들어:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -177,7 +177,7 @@ UI에서이 이중 크기 조정을 사용 하도록 설정 하려면 각 이미
 
 1 단계: NearestNeighbor을 사용 하 여 이미지를 200%, 300%로 Prescale.
 
-바인딩에 적용 된 변환기나 XAML 태그 확장을 사용 하 여 이미지를 Prescale 합니다. 예:
+바인딩에 적용 된 변환기나 XAML 태그 확장을 사용 하 여 이미지를 Prescale 합니다. 예를 들어:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -215,7 +215,7 @@ WPF는 UIElement에 설정 된 BitmapScalingMode 속성을 사용 하 여 현재
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- 원본 이미지의 크기를 알 수 없는 경우 LayoutTransform을 사용 하 여 최종 이미지 개체를 축소할 수 있습니다. 예:
+- 원본 이미지의 크기를 알 수 없는 경우 LayoutTransform을 사용 하 여 최종 이미지 개체를 축소할 수 있습니다. 예를 들어:
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >

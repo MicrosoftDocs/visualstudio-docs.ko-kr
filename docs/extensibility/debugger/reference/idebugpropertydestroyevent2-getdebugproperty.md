@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f64e057c15f91a38f18d206f4aac4c54e6449064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 292e3cb75731317bce8452f3045a555f9ea24937
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876045"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 제거할 속성을 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80720916"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetDebugProperty ( 
+HRESULT GetDebugProperty ( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty ( 
+int GetDebugProperty ( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -43,9 +43,9 @@ int GetDebugProperty ( 
 `ppProperty`\
 제한이 제거할 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

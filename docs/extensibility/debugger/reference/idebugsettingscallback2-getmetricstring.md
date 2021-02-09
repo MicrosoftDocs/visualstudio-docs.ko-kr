@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 929783f0fa2c82babf9197f9a0a81108143d1f87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875824"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 이름이 지정 된 메트릭의 값 문자열을 검색 합니다.
@@ -57,8 +57,8 @@ private int GetMetricString(
 `pbstrValue`\
 제한이 메트릭의 값 문자열을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
