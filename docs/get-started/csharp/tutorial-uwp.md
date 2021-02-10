@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909261"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -39,9 +39,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 ::: moniker range="vs-2017"
 1. Visual Studio를 엽니다.
 
-1. 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **Windows 유니버설**을 선택합니다. 중간 창에서 **빈 앱(유니버설 Windows)** 을 선택합니다. 프로젝트 이름을 *HelloWorld*로 지정하고 **확인**을 선택합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장하고 **Windows 유니버설** 을 선택합니다. 중간 창에서 **빈 앱(유니버설 Windows)** 을 선택합니다. 프로젝트 이름을 *HelloWorld* 로 지정하고 **확인** 을 선택합니다.
 
    > [!NOTE]
    > 소스 프로젝트가 예를 들어 OS(운영 체제) 드라이브와 같은 **NTFS(New Technology File System)** 포맷 드라이브에 있는지 확인합니다. 이러한 드라이브에 없다면 프로젝트를 빌드하고 실행하는 데 문제가 있을 수 있습니다. 
@@ -49,7 +49,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 Windows 유니버설 프로젝트 템플릿](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > **빈 앱(유니버설 Windows)** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다.<br><br>![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 클릭](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 설치 관리자가 시작됩니다. **유니버설 Windows 플랫폼 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.<br><br>![Visual Studio 설치 관리자에서 유니버설 Windows 플랫폼 개발 워크로드](media/uwp-dev-workload.png)
+   > **빈 앱(유니버설 Windows)** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다.<br><br>![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크 클릭](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 설치 관리자가 시작됩니다. **유니버설 Windows 플랫폼 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.<br><br>![Visual Studio 설치 관리자에서 유니버설 Windows 플랫폼 개발 워크로드](media/uwp-dev-workload.png)
 
 1. **새 유니버설 Windows 플랫폼 프로젝트** 대화 상자에서 기본 **대상 버전** 및 **최소 버전** 설정에 동의합니다.
 
@@ -57,16 +57,16 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-1. Visual Studio를 열고 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+1. Visual Studio를 열고 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
-1. **새 프로젝트 만들기** 화면에서 검색 상자에 ‘유니버설 Windows’를 입력하고, **비어 있는 앱(유니버설 Windows)** 에 사용할 C# 템플릿을 선택하고, **다음**을 선택합니다. 
+1. **새 프로젝트 만들기** 화면에서 검색 상자에 ‘유니버설 Windows’를 입력하고, **비어 있는 앱(유니버설 Windows)** 에 사용할 C# 템플릿을 선택하고, **다음** 을 선택합니다. 
 
    ![새 프로젝트 만들기 화면 스크린샷](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > **비어 있는 앱(유니버설 Windows)** 프로젝트 템플릿이 표시되지 않으면 **추가 도구 및 기능 설치** 링크를 클릭합니다.<br><br>![추가 도구 및 기능 설치 링크 클릭](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 설치 관리자가 시작됩니다. **유니버설 Windows 플랫폼 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.<br><br>![Visual Studio 설치 관리자에서 유니버설 Windows 플랫폼 개발 워크로드](media/uwp-dev-workload.png)
+   > **비어 있는 앱(유니버설 Windows)** 프로젝트 템플릿이 표시되지 않으면 **추가 도구 및 기능 설치** 링크를 클릭합니다.<br><br>![추가 도구 및 기능 설치 링크 클릭](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 설치 관리자가 시작됩니다. **유니버설 Windows 플랫폼 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.<br><br>![Visual Studio 설치 관리자에서 유니버설 Windows 플랫폼 개발 워크로드](media/uwp-dev-workload.png)
 
-1. 프로젝트 이름을 _HelloWorld_로 지정하고 **만들기**를 선택합니다.
+1. 프로젝트 이름을 _HelloWorld_ 로 지정하고 **만들기** 를 선택합니다.
 
    ![프로젝트 구성 화면](media/vs-2019/uwp-configure-your-project.png)
 
@@ -76,7 +76,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 ::: moniker-end
 
    > [!NOTE]
-   > 처음으로 Visual Studio를 사용하여 UWP 앱을 만든 경우 **설정** 대화 상자가 나타날 수 있습니다. **개발자 모드**를 선택한 다음, **예**를 선택합니다.<br><br>
+   > 처음으로 Visual Studio를 사용하여 UWP 앱을 만든 경우 **설정** 대화 상자가 나타날 수 있습니다. **개발자 모드** 를 선택한 다음, **예** 를 선택합니다.<br><br>
    > ![UWP 설정 대화 상자에서 개발자 모드를 사용하도록 설정](media/enable-developer-mode.png)<br><br>Visual Studio는 사용자용 추가 개발자 모드 패키지를 설치합니다. 패키지 설치가 완료되면 **설정** 대화 상자를 닫습니다.
 
 ## <a name="create-the-application"></a>애플리케이션 만들기
@@ -85,7 +85,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ### <a name="add-a-button-to-the-design-canvas"></a>디자인 캔버스에 단추 추가
 
-1. **솔루션 탐색기**에서 *MainPage.xaml*을 두 번 클릭하여 분할 보기를 엽니다.
+1. **솔루션 탐색기** 에서 *MainPage.xaml* 을 두 번 클릭하여 분할 보기를 엽니다.
 
    ::: moniker range="vs-2017"
    ![솔루션 탐색기에서 MainPage.xaml 열기 ](media/uwp-solution-explorer-MainPage-xaml.png)
@@ -94,15 +94,15 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
    ![솔루션 탐색기에서 MainPage.xaml 열기](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   두개의 창이 있습니다. 디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기**가 있습니다.
+   두개의 창이 있습니다. 디자인 캔버스를 포함하는 **XAML 디자이너** 및 코드를 추가하거나 변경할 수 있는 **XAML 편집기** 가 있습니다.
 
    ![XAML 편집기의 XAML 디자이너 창](media/uwp-xaml-editor.png)
 
-1. **도구 상자**를 선택하여 도구 상자 플라이아웃 창을 엽니다.
+1. **도구 상자** 를 선택하여 도구 상자 플라이아웃 창을 엽니다.
 
    ![도구 상자를 클릭하여 도구 상자 플라이아웃 창 열기](media/uwp-toolbox.png)
 
-   (**도구 상자** 옵션이 표시되지 않으면 메뉴 모음에서 열 수 있습니다. 그러려면 **보기** > **도구 모음**을 선택합니다. 또는 **Ctrl**+**Alt**+**X** 키를 누릅니다.)
+   (**도구 상자** 옵션이 표시되지 않으면 메뉴 모음에서 열 수 있습니다. 그러려면 **보기** > **도구 모음** 을 선택합니다. 또는 **Ctrl**+**Alt**+**X** 키를 누릅니다.)
 
 1. **Pin** 아이콘을 클릭하여 도구 상자 창을 고정합니다.
 
@@ -112,17 +112,17 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
    ![단추 컨트롤을 클릭해 디자인 캔버스로 끌어오기](media/uwp-toolbox-add-button-control.png)
 
-   **XAML 편집기**에 코드가 표시되면 단추가 추가된 것도 확인할 수 있습니다.
+   **XAML 편집기** 에 코드가 표시되면 단추가 추가된 것도 확인할 수 있습니다.
 
    ![XAML 편집기에서 단추 표시](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>단추에 레이블 추가
 
-1. **XAML 편집기**에서 단추 콘텐츠 값을 "단추"에서 "Hello World"로 변경합니다!
+1. **XAML 편집기** 에서 단추 콘텐츠 값을 "단추"에서 "Hello World"로 변경합니다!
 
    ![Hello World로 단추 콘텐츠 값 변경](media/uwp-change-button-text-in-xaml-code-window.png)
 
-1. **XAML 디자이너**에서도 단추가 변경되는지 확인합니다.
+1. **XAML 디자이너** 에서도 단추가 변경되는지 확인합니다.
 
    ![단추가 디자인 캔버스에서 Hello World로 변경됨](media/uwp-button-text-change-in-design-canvas.png)
 
@@ -132,7 +132,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 디자인 캔버스에서 단추 컨트롤을 두 번 클릭합니다.
 
-1. 코드 숨김 페이지, *MainPage.xaml.cs*에서 이벤트 처리기 코드를 편집합니다.
+1. 코드 숨김 페이지, *MainPage.xaml.cs* 에서 이벤트 처리기 코드를 편집합니다.
 
    여기부터가 흥미로운 부분입니다. 기본 이벤트 처리기는 다음과 같습니다.
 
@@ -164,11 +164,11 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 ::: moniker range="vs-2017"
 "Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
 
-1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
+1. 재생 단추(**로컬 머신** 텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
    ![로컬 머신을 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
 
-   또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
+   또는 메뉴 모음에서 **디버그** > **디버깅 시작** 을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
 
 1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
 
@@ -178,17 +178,17 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
    Windows 10 디바이스는 말 그대로 "Hello, World!"라고 말합니다.
 
-1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
+1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지** 를 선택하거나 Shift+F5를 누릅니다.)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 "Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
 
-1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
+1. 재생 단추(**로컬 머신** 텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
    ![로컬 머신을 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
 
-   또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
+   또는 메뉴 모음에서 **디버그** > **디버깅 시작** 을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
 
 1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
 
@@ -198,7 +198,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
    Windows 10 디바이스는 말 그대로 "Hello, World!"라고 말합니다.
 
-1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
+1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지** 를 선택하거나 Shift+F5를 누릅니다.)
 
 ::: moniker-end
 

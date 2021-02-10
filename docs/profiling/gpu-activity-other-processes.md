@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 8a68df65-eb63-452f-9285-fb4ffc92f2b2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ecb1587545120aef8e18ce847d5e957f3e3cdd
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e57d40910dfdff9b2eb1d5a9db76bac6ec8657d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907254"
 ---
 # <a name="gpu-activity-other-processes"></a>GPU 작업(다른 프로세스)
 동시성 시각화 도우미의 스레드 뷰에 있는 **GPU 작업(다른 프로세스)** 세그먼트는 시스템의 다른 프로세스를 대신해서 GPU가 요청을 처리 중인 시간을 나타냅니다. 이러한 요청은 DMA(직접 메모리 액세스) 패킷으로 GPU에 전송됩니다.  세그먼트 길이는 GPU에서 패킷이 처리된 시간을 나타냅니다.

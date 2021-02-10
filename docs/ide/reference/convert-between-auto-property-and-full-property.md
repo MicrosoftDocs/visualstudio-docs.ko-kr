@@ -6,17 +6,17 @@ ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b53f337b538ff1c0aef84272eea7d9e032eb2c1d
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3680444c07658da8e77b6058f5a71b9dcf119193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907607"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>Auto 속성과 full 속성 간 변환
 

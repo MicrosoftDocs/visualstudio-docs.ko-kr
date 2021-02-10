@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913949"
 ---
 # <a name="item-element-msbuild"></a>Item 요소(MSBuild)
 
@@ -72,7 +72,7 @@ MSBuild 15.1 이상에서는 현재 특성 목록과 충돌하지 않는 이름�
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Include`|선택적 특성입니다.<br /><br /> 항목 목록에 포함할 파일 또는 와일드카드입니다.|
 |`Exclude`|선택적 특성입니다.<br /><br /> 항목 목록에서 제외할 파일 또는 와일드카드입니다.|

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d7552ab67b70b3af8cfd1603462089e4fe2a209e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908214"
 ---
 # <a name="remote-debugger-port-assignments"></a>원격 디버거 포트 할당
 Visual Studio 원격 디버거는 애플리케이션 또는 백그라운드 서비스로 실행할 수 있습니다. 애플리케이션으로 실행되는 경우 다음과 같이 기본적으로 할당되는 포트를 사용합니다.

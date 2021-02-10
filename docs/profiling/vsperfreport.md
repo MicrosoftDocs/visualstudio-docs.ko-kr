@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911506"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 명령줄 도구는 데이터 파일을 프로파일링하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 보고서를 만드는 데 사용됩니다. 기본 보고서 형식은 .*csv* 파일입니다.

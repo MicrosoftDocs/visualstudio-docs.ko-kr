@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: a30ec1a60b7bc19710e3184c7cd32e252acc9921
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: adceb7e79be32132d65c21d54a41184e1a3ff4ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908705"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
 

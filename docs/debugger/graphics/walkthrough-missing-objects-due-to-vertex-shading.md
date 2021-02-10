@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5d07020e3e5b80325daa254f8d8c612a92b9dfb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908542"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단 도구를 사용하여 꼭짓점 셰이더 단계 동안 발생하는 오류로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.

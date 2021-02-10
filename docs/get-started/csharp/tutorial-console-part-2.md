@@ -9,19 +9,19 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909322"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>자습서: 간단한 C# 콘솔 앱 확장
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913881"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 

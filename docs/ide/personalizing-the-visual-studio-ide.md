@@ -6,15 +6,15 @@ ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909025"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 

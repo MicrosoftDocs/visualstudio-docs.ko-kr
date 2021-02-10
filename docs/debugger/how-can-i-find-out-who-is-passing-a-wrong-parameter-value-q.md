@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: d159198137c70810bc47cc79caf18ac178aeecd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912274"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>무엇이 잘못된 매개 변수 값을 전달하는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명

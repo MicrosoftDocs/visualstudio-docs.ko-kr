@@ -5,29 +5,29 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908786"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 
-Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 테스트한 다음, 앱을 게시하는 데 사용할 수 있는 Python(및 기타 언어)용 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. 대부분의 IDE가 제공하는 표준 편집기 및 디버거 이상의 Visual Studio에는 코드 완성 도구, 대화형 REPL 환경 및 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능이 포함되어 있습니다.
+Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 테스트한 다음, 앱을 게시하는 데 사용할 수 있는 Python(및 기타 언어)용 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. 대부분의 IDE가 제공하는 표준 편집기 및 디버거 이상의 Visual Studio에는 코드 완성 도구, 대화형 REPL 환경 및 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능이 포함되어 있습니다.
 
 [![Python 프로젝트가 포함된 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 이 이미지는 Python 프로젝트와 사용할 만한 몇 가지 주요 도구 창이 열려 있는 Visual Studio를 보여줍니다.
 
-- [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](../get-started/tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
-  - **솔루션 탐색기**와 함께 [**Python 환경**](managing-python-environments-in-visual-studio.md)이며, 여기에서 컴퓨터에 설치된 다양한 Python 인터프리터를 관리합니다.
+- [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기** 에서 파일을 [솔루션 및 프로젝트](../get-started/tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
+  - **솔루션 탐색기** 와 함께 [**Python 환경**](managing-python-environments-in-visual-studio.md)이며, 여기에서 컴퓨터에 설치된 다양한 Python 인터프리터를 관리합니다.
 
   ::: moniker range=">=vs-2019"
   - Visual Studio 프로젝트 및 솔루션 파일을 만들지 않고도 폴더에서 Python 코드를 열고 실행할 수 있습니다. 자세한 내용은 [빠른 시작: 폴더에서 Python 코드 열기 및 실행](quickstart-05-python-visual-studio-open-folder.md)을 참조하세요.
@@ -58,7 +58,7 @@ Windows의 세 가지 Visual Studio 버전은 다음과 같습니다. Community,
 
 - [리팩터링](refactoring-python-code.md)
 
-   Visual Studio는 코드 조각을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링**을 선택하여 변수의 지능형 이름 바꾸기, 새 메서드로 코드 줄을 하나 이상 추출, 메서드 매개 변수의 순서 변경 등과 같은 작업을 제공합니다.
+   Visual Studio는 코드 조각을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 을 선택하여 변수의 지능형 이름 바꾸기, 새 메서드로 코드 줄을 하나 이상 추출, 메서드 매개 변수의 순서 변경 등과 같은 작업을 제공합니다.
 
    ![Visual Studio에서 리팩터링](media/tour-ide-refactor-extract-method.png)
 
@@ -100,7 +100,7 @@ Windows의 세 가지 Visual Studio 버전은 다음과 같습니다. Community,
 
 - [Python 대화형 REPL](python-interactive-repl-in-visual-studio.md)
 
-    Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe*와 관련한 REPL을 개선합니다. **대화형** 창에서 임의의 Python 코드를 입력하고 즉각적인 결과를 볼 수 있습니다.
+    Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe* 와 관련한 REPL을 개선합니다. **대화형** 창에서 임의의 Python 코드를 입력하고 즉각적인 결과를 볼 수 있습니다.
 
     ![Python 대화형 창](media/interactive-window.png)
 

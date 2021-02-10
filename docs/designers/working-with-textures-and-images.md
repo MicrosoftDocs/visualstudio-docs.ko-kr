@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908154"
 ---
 # <a name="work-with-textures-and-images"></a>질감 및 이미지 작업
 

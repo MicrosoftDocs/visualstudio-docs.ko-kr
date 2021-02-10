@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f39f7dfbd463c48675f4b8c98612dfab3f33de3c
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 420a4073e4c00f66775bf55565c2ee8645d90f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911369"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>전경 프로그램을 디버깅하는 동안 디버거 창을 어떻게 사용합니까?
 ## <a name="problem-description"></a>문제 설명

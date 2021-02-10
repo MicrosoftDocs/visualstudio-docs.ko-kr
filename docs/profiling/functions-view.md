@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f85e8ddf17e220ff9235fd3d405a61b2efec16e5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 94bbce64cbcb8a5b6106682b89dd87383f985197
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907378"
 ---
 # <a name="functions-view"></a>함수 뷰
 함수 뷰에는 프로파일링 중에 호출된 함수가 나열됩니다.

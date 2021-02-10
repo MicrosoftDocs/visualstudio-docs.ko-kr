@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bccdc376079c4d9e0efb2a2724831e0fd2d0ae14
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9209fcffed9a15ce51e1aa079bd3efd5ff0bb384
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912651"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 작업
 
@@ -38,7 +38,7 @@ ms.locfileid: "93048656"
 
  다음 표에서는 `ResolveAssemblyReference` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`AllowedAssemblyExtensions`|선택적 `String[]` 매개 변수입니다.<br /><br /> 참조를 확인할 때 사용할 어셈블리 파일 확장명입니다. 기본 파일 이름 확장명은 *.exe* 및 *.dll* 입니다.|
 |`AllowedRelatedFileExtensions`|선택적 `String[]` 매개 변수입니다.<br /><br /> 서로 관련된 파일을 검색하는 데 사용할 파일 확장명입니다. 기본 확장명은 *.pdb* 및 *.xml* 입니다.|
@@ -109,7 +109,7 @@ ms.locfileid: "93048656"
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

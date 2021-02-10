@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 2c0bfd4c3355e6e4371fbec443ee38d7ba6e1da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907333"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>함수 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터의 함수 뷰는 프로파일링 실행 중 메모리를 할당한 함수를 나열하고 할당의 크기와 수를 보고합니다.

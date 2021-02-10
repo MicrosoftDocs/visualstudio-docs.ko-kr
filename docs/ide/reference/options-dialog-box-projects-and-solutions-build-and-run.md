@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910834"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>옵션 대화 상자: 프로젝트 및 솔루션 \> 빌드 및 실행
 

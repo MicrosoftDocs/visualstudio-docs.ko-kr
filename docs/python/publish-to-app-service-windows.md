@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912558"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows의 Azure App Service에 게시
 
@@ -34,11 +34,11 @@ Visual Studio는 Python 웹앱을 Windows의 Azure App Service에 직접 게시�
 
 이 연습에서는 Bottle, Flask 또는 Django 프레임워크를 기반으로 하는 웹앱 프로젝트가 필요합니다. 프로젝트가 아직 없거나 게시 프로세스를 사용해보려는 경우 다음과 같이 간단한 테스트 프로젝트를 만듭니다.
 
-1. Visual Studio에서 **파일 > 새로 만들기 > 프로젝트**를 선택하고, "Bottle"을 검색하여 **Bottle 웹 프로젝트**를 선택한 다음, 프로젝트에 사용할 이름 및 경로를 지정하고 **확인**을 선택합니다. (Bottle 템플릿은 Python 개발 작업에 포함됩니다. [설치](installing-python-support-in-visual-studio.md)를 참조하세요.)
+1. Visual Studio에서 **파일 > 새로 만들기 > 프로젝트** 를 선택하고, "Bottle"을 검색하여 **Bottle 웹 프로젝트** 를 선택한 다음, 프로젝트에 사용할 이름 및 경로를 지정하고 **확인** 을 선택합니다. (Bottle 템플릿은 Python 개발 작업에 포함됩니다. [설치](installing-python-support-in-visual-studio.md)를 참조하세요.)
 
 1. **가상 환경에 설치** 및 가상 환경에 대한 사용자의 기본 설정된 기준 인터프리터를 선택하여 지침에 따라 외부 패키지를 설치합니다. 일반적으로 이 선택은 App Service에 설치된 Python의 버전과 일치합니다.
 
-1. F5 키를 누르거나 **디버그 > 디버깅 시작**을 선택하여 프로젝트를 로컬에서 테스트합니다.
+1. F5 키를 누르거나 **디버그 > 디버깅 시작** 을 선택하여 프로젝트를 로컬에서 테스트합니다.
 
 ## <a name="create-an-azure-app-service"></a>Azure App Service 만들기
 
@@ -54,20 +54,20 @@ Azure에 게시하려면 대상 App Service가 필요합니다. 이 목적의 �
 활성 Azure 구독에서 다음과 같이 빈 웹앱을 사용하는 App Service를 만듭니다.
 
 1. [portal.azure.com](https://portal.azure.com)에 로그인합니다.
-1. **+ 새로 만들기**를 선택한 다음, **웹 + 모바일**, **웹 앱**을 차례로 선택합니다.
-1. 웹앱에 대한 이름을 지정하고, **리소스 그룹**을 “새로 만들기”로 둔 다음, **Windows**를 운영 체제로 선택합니다.
-1. **App Service 계획/위치**를 선택하고, **새로 만들기**를 선택한 다음, 이름 및 위치를 지정합니다. 그런 다음 **가격 책정 계층**을 선택하고, 아래로 스크롤하여 **F1 무료** 계획을 선택하고, **선택**, **확인**, **만들기**를 차례로 선택합니다.
-1. (선택 사항) App Service를 만든 후에 **게시 프로필 가져오기**로 이동하여 선택하고, 파일을 로컬로 저장합니다.
+1. **+ 새로 만들기** 를 선택한 다음, **웹 + 모바일**, **웹 앱** 을 차례로 선택합니다.
+1. 웹앱에 대한 이름을 지정하고, **리소스 그룹** 을 “새로 만들기”로 둔 다음, **Windows** 를 운영 체제로 선택합니다.
+1. **App Service 계획/위치** 를 선택하고, **새로 만들기** 를 선택한 다음, 이름 및 위치를 지정합니다. 그런 다음 **가격 책정 계층** 을 선택하고, 아래로 스크롤하여 **F1 무료** 계획을 선택하고, **선택**, **확인**, **만들기** 를 차례로 선택합니다.
+1. (선택 사항) App Service를 만든 후에 **게시 프로필 가져오기** 로 이동하여 선택하고, 파일을 로컬로 저장합니다.
 
 ### <a name="using-a-temporary-app-service"></a>임시 App Service 사용
 
 다음과 같이 Azure 구독이 필요하지 않는 임시 App Service를 만듭니다.
 
 1. 브라우저에서 [https://azure.microsoft.com/try/app-service/web/](https://azure.microsoft.com/try/app-service/web/)을(를) 엽니다.
-1. 앱 유형에 **Web App**을 선택하고 **다음**을 선택합니다.
-1. **빈 사이트**, **만들기**를 차례로 선택합니다.
+1. 앱 유형에 **Web App** 을 선택하고 **다음** 을 선택합니다.
+1. **빈 사이트**, **만들기** 를 차례로 선택합니다.
 1. 선택한 소셜 로그인을 사용하여 로그인하면 잠시 후에 사이트가 표시된 URL에서 준비됩니다.
-1. **게시 프로필 다운로드**를 선택하고 `.publishsettings` 파일을 저장합니다. 이 파일을 나중에 사용할 수 있습니다.
+1. **게시 프로필 다운로드** 를 선택하고 `.publishsettings` 파일을 저장합니다. 이 파일을 나중에 사용할 수 있습니다.
 
 ## <a name="configure-python-on-azure-app-service"></a>Azure App Service에서 Python 구성
 
@@ -79,7 +79,7 @@ Azure에 게시하려면 대상 App Service가 필요합니다. 이 목적의 �
 
 Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝트의 복사본 파일만 서버에 복사합니다. 따라서 서버 환경을 구성하는 데 필요한 파일을 만들어야 합니다.
 
-1. Visual Studio **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목...** 을 선택합니다. 나타나는 대화 상자에서 “Azure web.config(빠른 CGI)” 템플릿을 선택하고 확인을 선택합니다. 그러면 프로젝트 루트에 `web.config` 파일이 만들어집니다.
+1. Visual Studio **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목...** 을 선택합니다. 나타나는 대화 상자에서 “Azure web.config(빠른 CGI)” 템플릿을 선택하고 확인을 선택합니다. 그러면 프로젝트 루트에 `web.config` 파일이 만들어집니다.
 
 1. 경로가 서버의 Python 설치와 일치하도록 `web.config`에서 `PythonHandler` 항목을 수정합니다. 정확한 정보는 [IIS 구성 참조](https://www.iis.net/configreference)(iis.net)를 참조하세요. 예를 들어 Python 3.6.1 x64의 경우 항목은 다음과 같아야 합니다.
 
@@ -133,19 +133,19 @@ Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝�
 
     배열이 비어 있으면 Django는 ‘localhost’를 자동으로 허용하지만 프로덕션 URL을 추가하면 해당 기능이 제거됩니다. 이러한 이유로 `settings.py`의 개별 개발 및 프로덕션 복사본을 유지 관리하거나, 환경 변수를 사용하여 런타임 값을 제어할 수 있습니다.
 
-1. **솔루션 탐색기**에서 이름이 사용자의 프로젝트와 동일한 폴더를 확장하고, `static` 폴더를 마우스 오른쪽 단추로 클릭하고, **추가 > 새 항목...** 을 선택하고, “Azure 정적 파일 web.config” 템플릿을 선택하고, **확인**을 선택합니다. 그러면 해당 폴더에 대해 Python 프로세스를 비활성화하는 `static` 폴더에 `web.config`가 만들어집니다. 이 구성은 Python 애플리케이션을 사용하지 않고 기본 웹 서버에 정적 파일에 대한 요청을 보냅니다.
+1. **솔루션 탐색기** 에서 이름이 사용자의 프로젝트와 동일한 폴더를 확장하고, `static` 폴더를 마우스 오른쪽 단추로 클릭하고, **추가 > 새 항목...** 을 선택하고, “Azure 정적 파일 web.config” 템플릿을 선택하고, **확인** 을 선택합니다. 그러면 해당 폴더에 대해 Python 프로세스를 비활성화하는 `static` 폴더에 `web.config`가 만들어집니다. 이 구성은 Python 애플리케이션을 사용하지 않고 기본 웹 서버에 정적 파일에 대한 요청을 보냅니다.
 
-1. 프로젝트를 저장한 다음, Visual Studio **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+1. 프로젝트를 저장한 다음, Visual Studio **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
     ![프로젝트의 상황에 맞는 메뉴에서 게시 명령](media/template-web-publish-command.png)
 
 1. 표시되는 **게시** 탭에서 게시 대상을 선택합니다.
 
-    a. 사용자의 Azure 구독: **Microsoft Azure App Service**를 선택한 다음, **기존 선택**에 이어 **게시**를 선택합니다. 적절한 구독 및 App Service를 선택할 수 있는 대화 상자가 나타납니다. App Service가 나타나지 않으면 임시 App Service에 대해 아래 설명된 대로 다운로드한 게시 프로필을 사용합니다.
+    a. 사용자의 Azure 구독: **Microsoft Azure App Service** 를 선택한 다음, **기존 선택** 에 이어 **게시** 를 선택합니다. 적절한 구독 및 App Service를 선택할 수 있는 대화 상자가 나타납니다. App Service가 나타나지 않으면 임시 App Service에 대해 아래 설명된 대로 다운로드한 게시 프로필을 사용합니다.
 
     ![Azure 1단계, Visual Studio 2017 이상, 기존 구독에 게시](media/tutorials-common-publish-1a-2017.png)
 
-    b. try.azurewebsites.net에서 임시 App Service를 사용하거나 게시 프로필을 사용해야 하는 경우 **>** 컨트롤을 선택하여 **프로필 가져오기**를 찾아, 해당 옵션을 선택한 다음, **게시**를 선택합니다. 그러면 이전에 다운로드한 `.publishsettings` 파일의 위치에 대한 메시지가 표시됩니다.
+    b. try.azurewebsites.net에서 임시 App Service를 사용하거나 게시 프로필을 사용해야 하는 경우 **>** 컨트롤을 선택하여 **프로필 가져오기** 를 찾아, 해당 옵션을 선택한 다음, **게시** 를 선택합니다. 그러면 이전에 다운로드한 `.publishsettings` 파일의 위치에 대한 메시지가 표시됩니다.
 
     ![Azure 1단계, Visual Studio 2017 이상, 임시 앱 서비스에 게시](media/tutorials-common-publish-1b-2017.png)
 
@@ -185,16 +185,16 @@ Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝�
 > [!Note]
 > 이 프로세스에 대한 짧은 비디오는 [Visual Studio Python 자습서: 웹 사이트 빌드](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)(youtube.com, 3분 10초)에서 볼 수 있습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시**를 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
-1. **게시** 대화 상자에서 **Microsoft Azure App Service**를 선택합니다.
+1. **게시** 대화 상자에서 **Microsoft Azure App Service** 를 선택합니다.
 
   ![Azure에 게시 1단계](media/tutorials-common-publish-1.png)
 
 1. 대상을 선택합니다.
 
-    - Azure 구독이 있는 경우 **Microsoft Azure App Service**를 게시 대상으로 선택하고 다음 대화 상자에서 기존 App Service를 선택하거나 **새로 만들기**를 선택하여 새 계정을 만듭니다.
-    - try.azurewebsites.net에서 임시 사이트를 사용하는 경우 **가져오기**를 게시 대상으로 선택한 다음 사이트에서 다운로드한 `.publishsettings` 파일을 찾아보고 **확인**을 선택합니다.
+    - Azure 구독이 있는 경우 **Microsoft Azure App Service** 를 게시 대상으로 선택하고 다음 대화 상자에서 기존 App Service를 선택하거나 **새로 만들기** 를 선택하여 새 계정을 만듭니다.
+    - try.azurewebsites.net에서 임시 사이트를 사용하는 경우 **가져오기** 를 게시 대상으로 선택한 다음 사이트에서 다운로드한 `.publishsettings` 파일을 찾아보고 **확인** 을 선택합니다.
 
 1. App Service 세부 정보는 아래에서 **게시** 대화 상자의 **연결** 탭에 표시됩니다.
 
@@ -202,7 +202,7 @@ Visual Studio 2017 이상에서 Azure App Service에 게시하려면 프로젝�
 
 1. 추가 설정을 검토하는 데 필요하면 **다음 >** 을 선택합니다.
 
-1. **게시**를 선택합니다. 애플리케이션을 Azure에 배포하면 해당 사이트에서 기본 브라우저가 열립니다.
+1. **게시** 를 선택합니다. 애플리케이션을 Azure에 배포하면 해당 사이트에서 기본 브라우저가 열립니다.
 
 이 프로세스의 일환으로, Visual Studio는 다음 단계도 수행합니다.
 

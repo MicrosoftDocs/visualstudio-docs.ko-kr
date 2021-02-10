@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913260"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>방법: ASP.NET 예외 디버그
 예외 디버깅은 강력한 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션을 개발하는 데 중요한 요소입니다. 예외를 디버그하는 방법에 관한 일반적인 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요.

@@ -5,16 +5,16 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa5346d65a94646a0fa5e922f3b0055d8cdb6c0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75843732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908663"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio용 R 도구를 설치하는 방법
 
@@ -44,7 +44,7 @@ Visual Studio Test Professional, SQL Server Management Studio 등의 제품에 �
 
     ![VS2017의 데이터 과학 및 분석 애플리케이션 워크로드](media/installation-data-science-workload.png)
 
-1. 동일한 워크로드 이름 아래에서 오른쪽의 추가 옵션을 설정합니다. 기본적으로 이 워크로드에는 F# 및 Python 지원이 포함됩니다. R의 경우 최소 요구 사항은 **R 언어 지원**, **R 개발에 대한 런타임 지원** 및 **Microsoft R Client**입니다.
+1. 동일한 워크로드 이름 아래에서 오른쪽의 추가 옵션을 설정합니다. 기본적으로 이 워크로드에는 F# 및 Python 지원이 포함됩니다. R의 경우 최소 요구 사항은 **R 언어 지원**, **R 개발에 대한 런타임 지원** 및 **Microsoft R Client** 입니다.
 
 RTVS는 다음 위치에 설치됩니다. *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*. 여기서 *\<version>* 은 일반적으로 `2017`이고 *\<edition>* 은 `Community`, `Professional` 또는 `Enterprise`입니다.
 
@@ -77,7 +77,7 @@ Visual Studio 2015용 RTVS는 `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Co
 
 1. [Visual Studio 2017의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md)로 이동합니다.
 
-1. Visual Studio 2015를 사용하는 경우 목차 위의 선택기에서 **2015**를 선택합니다.
+1. Visual Studio 2015를 사용하는 경우 목차 위의 선택기에서 **2015** 를 선택합니다.
 
 1. 웹 페이지에서 오프라인 설치를 만들기 위한 지침을 수행하세요.
 

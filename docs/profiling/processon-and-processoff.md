@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 82a976700137255a5c6adb074058b33b15fb7c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910680"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
 VSPerfCmd.exe **ProcessOff** 및 **ProcessOn** 하위 명령은 명령줄 프로파일링 세션에서 지정된 프로세스에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ProcessOff** 는 프로세스 프로파일링을 중지하고 **ProcessOn** 은 프로세스를 프로파일링을 시작합니다.

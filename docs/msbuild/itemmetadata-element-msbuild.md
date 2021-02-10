@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9f48c57769ff6f969e68a50418b017d9928149fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913821"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 요소(MSBuild)
 
@@ -44,7 +44,7 @@ ms.locfileid: "92903594"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 

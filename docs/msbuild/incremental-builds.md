@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: f1237128852cec39ff49204e1c269f10153b42ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914081"
 ---
 # <a name="incremental-builds"></a>증분 빌드
 

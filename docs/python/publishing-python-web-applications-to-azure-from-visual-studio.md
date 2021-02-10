@@ -5,18 +5,18 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b2848a54ddbce41b538bf58f82db42ede76026d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912420"
 ---
 # <a name="publish-to-azure-app-service"></a>Azure App Service에 게시
 
@@ -29,7 +29,7 @@ ms.locfileid: "62784117"
 
 ## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Git 배포를 사용하여 Linux의 App Service에 게시
 
-Git 배포는 Linux의 App Service를 Git 리포지토리의 특정 분기에 연결합니다. 해당 분기에 코드를 커밋하면 App Service에 자동으로 배포되며, App Service는 *requirements.txt*에 나열된 모든 종속성을 자동으로 설치합니다. 이 경우 Linux의 App Service는 Gunicorn 웹 서버를 사용하는 미리 구성된 컨테이너 이미지에서 사용자 코드를 실행합니다. 현재 이 서비스는 미리 보기로 제공되고 있으며 프로덕션 용도로는 지원되지 않습니다.
+Git 배포는 Linux의 App Service를 Git 리포지토리의 특정 분기에 연결합니다. 해당 분기에 코드를 커밋하면 App Service에 자동으로 배포되며, App Service는 *requirements.txt* 에 나열된 모든 종속성을 자동으로 설치합니다. 이 경우 Linux의 App Service는 Gunicorn 웹 서버를 사용하는 미리 구성된 컨테이너 이미지에서 사용자 코드를 실행합니다. 현재 이 서비스는 미리 보기로 제공되고 있으며 프로덕션 용도로는 지원되지 않습니다.
 
 자세한 내용은 Azure 설명서의 다음 문서를 참조하세요.
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f0f61cc6afbce2542ac0b3e251764646ab1d97
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 288fa04fa44528ad34c68cf3d770bb6d5673b976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907116"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지에서 JavaScript 코드 프로파일링
 

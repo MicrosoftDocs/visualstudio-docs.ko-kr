@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6d00979ff1672376c5d22da5ef55e5ad3bdf344a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909101"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 

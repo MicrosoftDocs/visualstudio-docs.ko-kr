@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f15a6fa622bf7938740111705a295e09f3e443
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 83e90b5843731a274bd5cb0913b5e498ce48b067
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908383"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>웹 프로젝트에 대한 속성 페이지 설정
 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)에서 설명한 것처럼 **속성 페이지** 대화 상자를 사용하여 웹 사이트 디버그 구성에 대한 속성 설정을 변경할 수 있습니다. 다음 표에서는 **속성 페이지** 대화 상자에서 디버거 관련 설정을 확인할 수 있는 위치에 대해 설명합니다.

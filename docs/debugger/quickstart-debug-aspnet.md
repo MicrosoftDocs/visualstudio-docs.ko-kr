@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882a192a96764356e90d78498ef5ed5ccd29ce25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75847881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908351"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET Core 디버그
 
@@ -28,17 +28,17 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력하고 **템플릿** 을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기** 를 선택합니다. 표시되는 대화 상자에서 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **웹** 을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션** 을 선택합니다. **MyDbgApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
 
-    표시되는 대화 상자의 가운데 창에서 **웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
+    표시되는 대화 상자의 가운데 창에서 **웹 애플리케이션** 을 선택한 다음, **확인** 을 클릭합니다.
 
     ![웹 애플리케이션 선택](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
     ::: moniker-end
 
-    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
+    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정** 을 선택합니다.
 
     Visual Studio가 프로젝트를 생성합니다.
 
@@ -76,7 +76,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 ## <a name="set-a-breakpoint"></a>중단점 설정
 
-*중단점*은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타내는 표식입니다. 디버깅의 가장 기본적인 기능입니다.
+*중단점* 은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타내는 표식입니다. 디버깅의 가장 기본적인 기능입니다.
 
 1. 중단점을 설정하려면 `doWork` 함수의 왼쪽 여백을 클릭합니다(또는 코드 줄을 선택하고 **F9** 키를 누릅니다).
 
@@ -105,7 +105,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 앱은 실행을 계속하고, 단추를 클릭한 코드 줄에서 일시 중지합니다.
 
-코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
+코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11** 을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
 
@@ -129,7 +129,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
     ![편집하며 계속하기](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "편집하며 계속하기")
 
-    **F10**은 디버거를 한 번에 하나의 명령문씩 진행하지만 단계별로 실행하는 대신 함수를 실행합니다(건너뛰는 코드가 여전히 실행됨).
+    **F10** 은 디버거를 한 번에 하나의 명령문씩 진행하지만 단계별로 실행하는 대신 함수를 실행합니다(건너뛰는 코드가 여전히 실행됨).
 
 편집하며 계속하기 사용 및 기능 제한에 대한 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
 

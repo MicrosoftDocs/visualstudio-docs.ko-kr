@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3fff9848ac82cd56d1052d135646954527debd5
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 466c753f986eeda233a7ff32bd51fa3e42b3f796
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913902"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 요소(MSBuild)
 
@@ -49,7 +49,7 @@ ms.locfileid: "92903715"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 
@@ -61,7 +61,7 @@ ms.locfileid: "92903715"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 

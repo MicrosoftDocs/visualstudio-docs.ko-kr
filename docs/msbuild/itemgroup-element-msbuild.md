@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913845"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 요소(MSBuild)
 
@@ -50,7 +50,7 @@ ms.locfileid: "92903619"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 |`Label`|선택적 특성입니다. `ItemGroup`를 식별합니다. |
@@ -63,7 +63,7 @@ ms.locfileid: "92903619"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [Target](../msbuild/target-element-msbuild.md) | .NET Framework 3.5부터 `ItemGroup` 요소는 `Target` 요소 내에 표시될 수 있습니다. 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. |

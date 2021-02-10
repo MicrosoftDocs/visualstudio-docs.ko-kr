@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f8a4e39d38f81684b5d090152ec720d45438b3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907463"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>연습: 인라인 작업 만들기
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c3a0d22019a0c7722b135392c53c7f9bfbcaab69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914099"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 
@@ -47,7 +47,7 @@ ms.locfileid: "92903958"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Project`|필수 특성입니다.<br /><br /> 가져올 프로젝트 파일의 경로입니다. 경로에 와일드카드를 포함할 수 있습니다. 일치하는 파일은 정렬된 순서로 가져오게 됩니다. 이 기능을 사용하여, 디렉터리에 코드 파일을 추가함으로써 프로젝트에 코드를 추가할 수 있습니다.|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
@@ -59,7 +59,7 @@ ms.locfileid: "92903958"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 | [ImportGroup](../msbuild/importgroup-element.md) | 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. |

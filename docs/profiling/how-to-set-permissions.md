@@ -11,16 +11,16 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 550c8c3f7a436fa2321d42ced1744650d4de679f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906974"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 

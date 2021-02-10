@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 881eb0cc8a3c872ed7166f8aff30420730f88c0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913753"
 ---
 # <a name="lc-task"></a>LC 작업
 

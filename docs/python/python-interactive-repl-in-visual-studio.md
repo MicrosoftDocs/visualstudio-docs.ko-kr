@@ -5,21 +5,21 @@ ms.date: 02/11/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912282"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 작업
 
-Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe*와 관련한 REPL을 개선합니다. **대화형** 창(**보기** > **다른 창** >  **&lt;환경&gt; 대화형** 창 메뉴 명령으로 열 수 있음)을 사용하면 임의의 Python 코드를 입력하고 즉각적인 결과를 확인할 수 있습니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다.
+Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe* 와 관련한 REPL을 개선합니다. **대화형** 창(**보기** > **다른 창** >  **&lt;환경&gt; 대화형** 창 메뉴 명령으로 열 수 있음)을 사용하면 임의의 Python 코드를 입력하고 즉각적인 결과를 확인할 수 있습니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다.
 
 ![Python 대화형 창](media/interactive-window.png)
 
@@ -56,7 +56,7 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 ## <a name="interactive-window-options"></a>대화형 창 옵션
 
-**도구** > **옵션** > **Python** > **대화형 창**을 통해 **대화형** 창의 다양한 측면을 제어할 수 있습니다([옵션](python-support-options-and-settings-in-visual-studio.md) 참조).
+**도구** > **옵션** > **Python** > **대화형 창** 을 통해 **대화형** 창의 다양한 측면을 제어할 수 있습니다([옵션](python-support-options-and-settings-in-visual-studio.md) 참조).
 
 ![Python 대화형 창 옵션](media/options-interactive-windows.png)
 
@@ -100,11 +100,11 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 ## <a name="send-to-interactive-command"></a>Interactive로 보내기 명령
 
-**대화형** 창에서 직접 작업할 수 있을 뿐만 아니라 편집기에서 코드를 선택하고 마우스 오른쪽 단추를 클릭한 다음, **Interactive로 보내기**를 선택하거나 **Ctrl**+**Enter**를 누를 수 있습니다.
+**대화형** 창에서 직접 작업할 수 있을 뿐만 아니라 편집기에서 코드를 선택하고 마우스 오른쪽 단추를 클릭한 다음, **Interactive로 보내기** 를 선택하거나 **Ctrl**+**Enter** 를 누를 수 있습니다.
 
 ![Interactive로 보내기 메뉴 명령](media/interactive-send-to.png)
 
-이 명령은 코드 개발 중 테스트를 포함하여 반복적이거나 발전적인 코드 개발에 유용합니다. 예를 들어 **대화형** 창에 코드 조각을 보내고 출력을 확인한 후 위쪽 화살표를 눌러 코드를 다시 표시하고 수정한 다음, **Ctrl**+**Enter**를 눌러 빠르게 테스트할 수 있습니다. 입력의 끝에서 **Enter** 키를 누르면 코드가 실행되지만 입력 중에 **Enter** 키를 누르면 줄 바꿈이 삽입됩니다. 원하는 코드를 만들었으면 프로젝트 파일에 다시 쉽게 복사할 수 있습니다.
+이 명령은 코드 개발 중 테스트를 포함하여 반복적이거나 발전적인 코드 개발에 유용합니다. 예를 들어 **대화형** 창에 코드 조각을 보내고 출력을 확인한 후 위쪽 화살표를 눌러 코드를 다시 표시하고 수정한 다음, **Ctrl**+**Enter** 를 눌러 빠르게 테스트할 수 있습니다. 입력의 끝에서 **Enter** 키를 누르면 코드가 실행되지만 입력 중에 **Enter** 키를 누르면 줄 바꿈이 삽입됩니다. 원하는 코드를 만들었으면 프로젝트 파일에 다시 쉽게 복사할 수 있습니다.
 
 > [!Tip]
 > 기본적으로 Visual Studio에서 **>>>** 및 **...** REPL 프롬프트는 **대화형** 창의 코드를 편집기에 붙여넣을 때 제거됩니다. **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급** 탭의 **붙여넣으면 REPL 프롬프트가 제거됨** 옵션을 사용하면 이 동작을 변경할 수 있습니다. [옵션 - 기타 옵션](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)을 참조하세요.
@@ -115,9 +115,9 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 코드 셀은 데이터를 분석하는 데 사용될 수 있으며 다양한 텍스트 편집기에서 지원됩니다.
 
-예를 들어 코드 파일을 잠깐 보관함으로 사용하는 경우 작은 코드 블록을 한 번에 모두 전송하려는 경우가 많습니다. 코드를 그룹화하려면 `#%%`로 시작하는 주석을 셀의 시작 부분에 추가하여 코드를 *코드 셀*로 표시합니다. 주석을 추가하면 이전 코드 셀은 종료됩니다. 코드 셀을 축소 및 확장할 수 있으며, 코드 셀 내부에서 **Ctrl**+**Enter**를 사용하면 전체 셀이 **대화형** 창으로 전송되고 다음 셀로 이동합니다.
+예를 들어 코드 파일을 잠깐 보관함으로 사용하는 경우 작은 코드 블록을 한 번에 모두 전송하려는 경우가 많습니다. 코드를 그룹화하려면 `#%%`로 시작하는 주석을 셀의 시작 부분에 추가하여 코드를 *코드 셀* 로 표시합니다. 주석을 추가하면 이전 코드 셀은 종료됩니다. 코드 셀을 축소 및 확장할 수 있으며, 코드 셀 내부에서 **Ctrl**+**Enter** 를 사용하면 전체 셀이 **대화형** 창으로 전송되고 다음 셀로 이동합니다.
 
-또한 Visual Studio는 `# In[1]:`과 같은 주석으로 시작하는 코드 셀도 검색합니다. 이 형식은 Jupyter Notebook을 Python 파일로 내보낼 때 사용되는 형식입니다. 이 검색을 통해 Python 파일로 다운로드하고 Visual Studio에서 연 다음, **Ctrl**+**Enter**로 각 셀을 실행하면 [Azure Notebook](https://notebooks.azure.com/)에서 노트북을 쉽게 실행할 수 있습니다.
+또한 Visual Studio는 `# In[1]:`과 같은 주석으로 시작하는 코드 셀도 검색합니다. 이 형식은 Jupyter Notebook을 Python 파일로 내보낼 때 사용되는 형식입니다. 이 검색을 통해 Python 파일로 다운로드하고 Visual Studio에서 연 다음, **Ctrl**+**Enter** 로 각 셀을 실행하면 [Azure Notebook](https://notebooks.azure.com/)에서 노트북을 쉽게 실행할 수 있습니다.
 
 ![대화형 코드 셀](media/interactive-code-cells.png)
 

@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: bc1f30fa815030204b5f2d306151fe815ed819f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910696"
 ---
 # <a name="process-view"></a>프로세스 뷰
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 프로파일링 데이터가 표시됩니다.

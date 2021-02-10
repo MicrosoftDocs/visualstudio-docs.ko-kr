@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bce49eebf430ccaca9919c74966fb9efd00b09b
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: c776303d22ad7f0b48a5f7c5361750f70c1ce6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913233"
 ---
 # <a name="how-to-debug-injected-code"></a>방법: 삽입한 코드 디버그
 

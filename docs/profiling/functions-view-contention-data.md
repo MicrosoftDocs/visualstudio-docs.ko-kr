@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 6392263e7e30790ff09340bffebed8f921e24765
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907426"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
 경함 데이터의 함수 보고서 뷰는 프로파일링 실행 중에 실행에서 차단된 프로파일링 실행 시 함수를 나열합니다.

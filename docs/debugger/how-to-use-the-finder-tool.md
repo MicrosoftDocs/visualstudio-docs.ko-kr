@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912238"
 ---
 # <a name="how-to-use-the-finder-tool"></a>방법: 찾기 도구 사용
 **창 찾기** 의 찾기 도구를 사용하여 창 속성 또는 메시지를 표시할 수 있습니다. 또한 찾기 도구는 사용할 수 없는 자식 창을 찾을 수 있으며 사용할 수 없는 자식 창이 겹치는 경우 강조 표시할 창을 파악할 수 있습니다.

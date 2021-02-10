@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e647d467dcbc397fe261c2ea83f6fa9ab1bba7b6
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 38303a091838fae6fdc86ab91eb1ee95dfb429ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911695"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>방법: 명령 프롬프트에서 프로파일러 비교 보고서 만들기
 두 가지 프로파일링 데이터(.*vsp* /또는 .*vsps*) 파일의 성능 데이터를 비교하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 보고서를 생성할 수 있습니다. 보고서는 프로파일링 세션 사이에 발생한 차이점, 성능 회귀 및 향상된 기능을 보여 줍니다. 보고서의 값은 지정하는 첫 번째 파일의 기준에서 델타 또는 변경 내용을 제공합니다. 이 델타는 이전 값, 기준 값, 새 분석의 결과 값 간의 차이를 확인하여 계산됩니다. 프로파일러 데이터의 비교는 코드의 함수, 애플리케이션의 모듈, 줄, IP(명령 포인터) 및 형식에 따라 달라질 수 있습니다.

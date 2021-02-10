@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 731036cb59891f9dd9093431200a1152ed35ff2a
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9beb80eb997a844e7358b13f3fa8911de42af685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913202"
 ---
 # <a name="how-to-display-process-properties"></a>방법: 프로세스 속성 표시
 [프로세스 뷰](../debugger/processes-view.md)에 나열된 프로세스에 대해 자세히 알아보려면 [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 사용합니다.

@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: af194a324840bc3e8b8e67199c7e213d7dca96c9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c788be648b77a36b8da7027c89a7d9cb047b57d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907090"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>방법: Windows 기호 정보 참조
 Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 프로그램 바이너리의 함수 이름과 같은 기호 이름을 확인합니다. 로컬 컴퓨터에 설치된 Windows 버전에 대한 올바른 .*pdb* 파일을 자동으로 다운로드하고 업데이트하려면 다음 단계를 수행합니다.

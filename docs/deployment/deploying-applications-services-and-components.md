@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42b3a66f6bd874568945081972b220e7a7830
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 8933127940cd8155bbf0854fd19c559022bceecb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912167"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 

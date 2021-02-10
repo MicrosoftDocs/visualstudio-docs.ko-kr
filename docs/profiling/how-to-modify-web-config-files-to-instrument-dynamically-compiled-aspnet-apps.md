@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: fc768c4eb3caf03e81d60a9d4340d29d18fabf9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907147"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>방법: 계측할 web.config 파일 수정 및 동적으로 컴파일된 ASP.NET 웹 애플리케이션 프로파일링
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법을 사용하여 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 세부 타이밍 데이터, .NET 메모리 할당 데이터 및 .NET 개체 수명 데이터를 수집할 수 있습니다.

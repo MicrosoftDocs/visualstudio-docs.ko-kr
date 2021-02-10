@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ac30d4a1df36e72b8b12fa9aefb1b36aed6204
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908749"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 개체의 계층 상호 작용 측정값 수집
 
