@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930514"
 ---
 # <a name="control-of-execution"></a>실행 제어
 디버그 엔진 (DE)은 일반적으로 다음 이벤트 중 하나를 마지막 시작 이벤트로 보냅니다.
@@ -59,7 +59,7 @@ ms.locfileid: "96913882"
 
    디버그 패키지에서 특정 중지 이벤트를 무시 하는 경우 디버그 패키지는 [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)를 호출 하는 SDM를 호출 합니다. 프로그램이 중지 조건이 발생 했을 때 함수를 한 단계씩 실행 하거나 함수를 실행 한 후에는 해당 단계를 계속 합니다. 이는 프로그램에서 단계별 상태를 유지 하 여 계속 하는 방법을 알 수 있음을 의미 합니다.
 
-   SDM에서 수행 하 `Step` 고 **실행** 하 고 **계속** 하는 호출은 비동기적입니다. 즉, sdm에서 호출이 빠르게 반환 될 것으로 예상 합니다. DE가 SDM을 이전, 실행 또는 계속 반환 되기 전에 동일한 스레드에서 중지 이벤트를 보내면 `Step` sdm의 응답이 중지 됩니다. **Execute** **Continue**
+   SDM에서 수행 하 `Step` 고 **실행** 하 고 **계속** 하는 호출은 비동기적입니다. 즉, sdm에서 호출이 빠르게 반환 될 것으로 예상 합니다. DE가 SDM을 이전, 실행 또는 계속 반환 되기 전에 동일한 스레드에서 중지 이벤트를 보내면 `Step` sdm의 응답이 중지 됩니다.  
 
 ## <a name="see-also"></a>참고 항목
 - [작업 디버그](../../extensibility/debugger/debugging-tasks.md)

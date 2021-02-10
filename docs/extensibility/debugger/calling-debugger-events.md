@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7ef1aad17caae12b046ac483808f847a6e186792
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930709"
 ---
 # <a name="call-debugger-events"></a>디버거 이벤트 호출
 디버깅 세션의 이벤트는 특정 순서로 발생 합니다.

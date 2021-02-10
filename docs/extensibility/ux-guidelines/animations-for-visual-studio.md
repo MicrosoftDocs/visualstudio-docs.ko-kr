@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934014"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio의 애니메이션
 ## <a name="animation-fundamentals"></a>애니메이션 기본 사항
@@ -120,7 +120,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 한 요소가 다른 요소에 테더 링 된
 
-##### <a name="state"></a>주
+##### <a name="state"></a>시스템 상태
 
 - 콘텐츠 업데이트
 
@@ -144,7 +144,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 그림에서 대칭 이동
 
-##### <a name="time"></a>Time
+##### <a name="time"></a>시간
 
 - 시간 경과, 시간 경과 및 동영상 가이드 변경 내용 표시
 

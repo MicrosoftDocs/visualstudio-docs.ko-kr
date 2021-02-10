@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934127"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 사용자 인터페이스 요소를 추가 하는 방법
 VSPackage 파일을 사용 하 여 메뉴, 도구 모음 및 도구 창과 같은 UI (사용자 인터페이스) 요소를 Visual Studio에 추가할 수 *있습니다.*
@@ -83,7 +83,7 @@ VSPackage 파일을 사용 하 여 메뉴, 도구 모음 및 도구 창과 같�
 
 - `priority`부모 메뉴 또는 그룹에서 UI 요소의 배치를 결정 하는 특성입니다.
 
-- [Parent element](../../extensibility/parent-element.md) `guid` `id` 부모 메뉴 또는 그룹의 서명을 지정 하는 및 특성이 있는 부모 요소입니다.
+- [](../../extensibility/parent-element.md) `guid` `id` 부모 메뉴 또는 그룹의 서명을 지정 하는 및 특성이 있는 부모 요소입니다.
 
 #### <a name="menus"></a>메뉴
 각 메뉴는 섹션에서 [메뉴 요소로](../../extensibility/menu-element.md) 정의 됩니다 `Menus` . 메뉴에는 `guid` , `id` , 및 특성 및 요소가 있어야 하 고, `priority` `Parent` 다음과 같은 추가 특성 및 자식 항목도 필요 합니다.
@@ -189,7 +189,7 @@ Combos는 섹션에 정의 되어 있습니다 `Combos` . 각 `Combo` 요소는 
 |-------------| - | - | - |
 |그룹|[Groups 요소](../../extensibility/groups-element.md), IDE, 기타 vspackage|메뉴, 그룹, 항목 자체|메뉴, 그룹 및 명령|
 |메뉴|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|1 ~ *n* 그룹|0- *n* 그룹|
-|Toolbar|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|항목 자체|0- *n* 그룹|
+|도구 모음|[메뉴 요소](../../extensibility/menus-element.md), IDE, 기타 vspackage|항목 자체|0- *n* 그룹|
 |메뉴 항목|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체|-0 ~ *n* 그룹|
 |단추|[Buttons 요소](../../extensibility/buttons-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체||
 |콤보|[Combos 요소](../../extensibility/combos-element.md), IDE, 기타 vspackage|1 ~ *n* 개의 그룹, 항목 자체||

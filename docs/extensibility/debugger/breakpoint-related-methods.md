@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c20a92e847f120850d7cbd424cc073018903911d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930826"
 ---
 # <a name="breakpoint-related-methods"></a>중단점 관련 메서드
 디버그 엔진 (DE)은 중단점의 설정을 지원 해야 합니다. Visual Studio 디버깅은 다음과 같은 중단점 형식을 지원 합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "96914467"
 |[사용](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|보류 중인 중단점의 활성화 상태를 전환 합니다.|
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|보류 중인 중단점에서 바인딩된 모든 중단점을 열거 합니다.|
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|보류 중인 중단점에서 발생 하는 모든 오류 중단점을 열거 합니다.|
-|[삭제](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|보류 중인 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.|
+|[Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|보류 중인 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.|
 
  바인딩된 중단점과 오류 중단점을 열거 하려면 [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 및 of [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)의 모든 메서드를 구현 해야 합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "96914467"
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|바인딩된 중단점의 상태를 가져옵니다.|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|중단점을 설명 하는 중단점 확인을 가져옵니다.|
 |[사용](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|중단점을 사용 하거나 사용 하지 않도록 설정 합니다.|
-|[삭제](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|바인딩된 중단점을 삭제 합니다.|
+|[Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|바인딩된 중단점을 삭제 합니다.|
 
  해결 및 요청 정보는 다음 [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 메서드를 구현 해야 합니다.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b60c09b21d531326e343dddd2f1cc69cfb0e5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933312"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 디버그 이벤트에 대 한 알림을 보냅니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80729900"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Event( 
+HRESULT Event( 
    IDebugEngine2*  pEngine,
    IDebugProcess2* pProcess,
    IDebugProgram2* pProgram,
@@ -40,7 +40,7 @@ HRESULT Event( 
 ```
 
 ```csharp
-int Event( 
+int Event( 
    IDebugEngine2  pEngine,
    IDebugProcess2 pProcess,
    IDebugProgram2 pProgram,
@@ -73,7 +73,7 @@ int Event( 
 `dwAttrib`\
 진행 [Eventattributes](../../../extensibility/debugger/reference/eventattributes.md) 열거형의 플래그 조합입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -81,7 +81,7 @@ int Event( 
 
  모든 디버그 이벤트는 이벤트 자체가 비동기 인지 여부에 관계 없이 비동기적으로 게시 됩니다. DE가이 메서드를 호출 하는 경우 반환 값은 이벤트가 처리 되었는지 여부는 이벤트를 받았는지 여부를 나타내지 않습니다. 실제로 대부분의 경우이 메서드가 반환 될 때 이벤트가 처리 되지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

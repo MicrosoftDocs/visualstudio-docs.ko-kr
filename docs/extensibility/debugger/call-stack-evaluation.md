@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 223b1fff75c8fefdfed5bce5765d82fc5309738d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930735"
 ---
 # <a name="call-stack-evaluation"></a>호출 스택 평가
 중단 모드에서 호출 스택의 스택 프레임을 보려면 [Enum프레임 정보](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드를 구현 해야 합니다.

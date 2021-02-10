@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931294"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>연습: 전구 제안 표시
 Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 확장 되는 아이콘입니다. 예를 들어 기본 제공 코드 분석기 또는 코드 리팩터링에 의해 식별 되는 문제에 대 한 수정 등이 있습니다.
@@ -38,7 +38,7 @@ Light 전구은 Visual Studio 편집기에서 작업 집합을 표시 하도록 
 
   Light 전구를 사용 하 여 고유한 제안 조치를 제공할 수 있습니다. 예를 들어 여는 중괄호를 새 줄로 이동 하거나 앞 줄의 끝으로 이동 하는 작업을 제공할 수 있습니다. 다음 연습에서는 현재 단어에 표시 되 고 두 개의 제안 동작 ( **대문자로 변환** 및 소문자로 **변환**)이 있는 전구를 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기

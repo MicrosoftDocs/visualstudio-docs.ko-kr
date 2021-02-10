@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932581"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 편집기 뷰 위쪽의 탐색 모음에는 파일의 형식과 멤버가 표시 됩니다. 왼쪽 드롭다운에서 형식이 표시 되 고 오른쪽 드롭다운에서 멤버가 표시 됩니다. 사용자가 형식을 선택 하면 캐럿이 형식의 첫 번째 줄에 배치 됩니다. 사용자가 멤버를 선택 하면 캐럿이 멤버 정의에 배치 됩니다. 드롭다운 상자는 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.

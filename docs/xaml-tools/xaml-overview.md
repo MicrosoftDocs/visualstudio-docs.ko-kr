@@ -6,13 +6,13 @@ ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 997a35414f38af16d028770044c28652e13149be
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6f315573b24989e6ad3a3d451de372430b72f70f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931199"
 ---
 # <a name="overview-of-xaml"></a>XAML 개요
 

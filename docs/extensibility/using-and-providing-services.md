@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: dbf04b5e4b032bc44040cf14f6bf23225696ee61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934126"
 ---
 # <a name="using-and-providing-services"></a>서비스 사용 및 제공
 서비스는 두 Vspackage 사이의 계약입니다. 하나의 VSPackage는 다른 VSPackage에서 사용할 특정 인터페이스 집합을 제공 합니다. 예를 들어는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 로드 되는 모든 VSPackage에 서비스를 제공 합니다. 이 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 활동 로그에 쓰는 데 사용할 수 있는 인터페이스를 제공 합니다. 자세한 내용은 [방법: 활동 로그 사용](../extensibility/how-to-use-the-activity-log.md)을 참조 하세요.
@@ -28,7 +28,7 @@ ms.locfileid: "97715940"
 
  Visual Studio는 다음과 같은 중요 한 서비스를 제공 합니다.
 
-|IDE 서비스|설명|
+|IDE 서비스|Description|
 |-----------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|기본 기능, Vspackage 및 레지스트리를 처리 하는 IDE 서비스에 대 한 액세스를 제공 합니다.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|도구와 문서 창을 만들 수 있는 기능과 같은 IDE에서 기본 창 및 UI 관련 기능을 제공 합니다.|

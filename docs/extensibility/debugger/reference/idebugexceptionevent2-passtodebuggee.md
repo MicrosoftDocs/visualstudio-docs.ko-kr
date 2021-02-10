@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933269"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달할지 여부를 지정 합니다. 그렇지 않으면 예외를 삭제 해야 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80729839"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT PassToDebuggee(
-   BOOL fPass
+HRESULT PassToDebuggee(
+   BOOL fPass
 );
 ```
 
 ```csharp
-int PassToDebuggee(
-   int fPass
+int PassToDebuggee(
+   int fPass
 );
 ```
 
@@ -43,7 +43,7 @@ int PassToDebuggee(
 `fPass`\
 진행 `TRUE`실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달 해야 하는 경우 0이 아닌 값이 반환 되 고, 예외를 삭제 해야 하는 경우에는 0 ( `FALSE` )입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ int PassToDebuggee(
 
  IDE는 [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) 이벤트를 수신 하 고 [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) 메서드를 호출할 수 있습니다. 메서드가 호출 되지 않는 경우 디버그 엔진 (DE)에는 대/소문자를 처리 하는 기본 동작이 있어야 합니다 `PassToDebuggee` .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)
 - [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

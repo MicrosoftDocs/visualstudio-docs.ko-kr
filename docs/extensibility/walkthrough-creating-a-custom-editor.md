@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 0a4ebcf99634012943ed0a7fd1a72b5d4852729e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931385"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>연습: 사용자 지정 편집기 만들기
 VSPackage 프로젝트 템플릿은 c + +로 간단한 사용자 지정 편집기를 만들 수 있습니다. VSPackage 프로젝트 템플릿은 c # 또는 Visual Basic 프로젝트를 더 이상 지원 하지 않습니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿
@@ -48,5 +48,5 @@ VSPackage 프로젝트 템플릿은 c + +로 간단한 사용자 지정 편집�
 
      편집기는 잘라내기 및 붙여넣기, 찾기 및 바꾸기, 열기 및 로드 작업을 지원 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [VSPackages](../extensibility/internals/vspackages.md)

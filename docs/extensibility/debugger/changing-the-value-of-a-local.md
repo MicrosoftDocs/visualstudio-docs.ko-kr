@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930683"
 ---
 # <a name="change-the-value-of-a-local"></a>로컬의 값 변경
 > [!IMPORTANT]
@@ -42,9 +42,9 @@ ms.locfileid: "96914337"
 
 3. Visual Studio는 **지역** 표시를 새로 고칩니다. 자세한 내용은 [지역](../../extensibility/debugger/displaying-locals.md) 표시를 참조 하세요.
 
-   이 프로시저는 **Watch** `IDebugProperty2` `IDebugProperty2` 로컬 자체와 연결 된 개체 대신 사용 되는 로컬의 값과 연결 된 개체를 제외 하 고 조사식 창에서 변수 값을 변경 하는 데도 사용 됩니다.
+   이 프로시저는  `IDebugProperty2` `IDebugProperty2` 로컬 자체와 연결 된 개체 대신 사용 되는 로컬의 값과 연결 된 개체를 제외 하 고 조사식 창에서 변수 값을 변경 하는 데도 사용 됩니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [변경 값의 샘플 구현](../../extensibility/debugger/sample-implementation-of-changing-values.md) MyCEE 샘플을 사용 하 여 값을 변경 하는 과정을 단계별로 실행 합니다.
 
 ## <a name="see-also"></a>참고 항목

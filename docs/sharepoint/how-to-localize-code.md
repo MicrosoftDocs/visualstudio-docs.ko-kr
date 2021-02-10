@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e76b8cfb2e9fcb513905918bd4ae87524078f6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931645"
 ---
 # <a name="how-to-localize-code"></a>방법: 코드 지역화
   지역화 되지 않은 코드는 하드 코드 된 문자열 값을 사용 합니다. 코드 문자열을 지역화 하려면 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> 지역화 된 리소스를 참조 하는 메서드인에 대 한 호출로 대체 합니다.
@@ -29,7 +29,7 @@ ms.locfileid: "96304583"
 
 #### <a name="to-localize-code"></a>코드를 지역화 하려면
 
-1. **솔루션 탐색기** 에서 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 모듈 **추가** 를 선택  >  **Module** 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 항목에 대 한 바로 가기 메뉴를 열고 모듈 **추가** 를 선택  >  합니다.
 
      **리소스 파일** 템플릿을 선택 합니다.
 

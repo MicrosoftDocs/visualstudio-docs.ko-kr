@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 38ad456c6c946964f3038a712274003bae5732fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932738"
 ---
 # <a name="command-availability"></a>명령 가용성
 
@@ -55,7 +55,7 @@ Visual Studio 컨텍스트는 사용할 수 있는 명령을 결정 합니다. �
 > [!CAUTION]
 > 다른 Vspackage가이에 종속 될 수 있으므로 VSPackage가 기존 컨텍스트 Guid에 영향을 주지 않는지 확인 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

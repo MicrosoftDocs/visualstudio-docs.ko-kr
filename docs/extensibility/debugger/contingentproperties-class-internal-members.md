@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930488"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 클래스-내부 멤버
 개체에 대 한 추가 속성을 포함 <xref:System.Threading.Tasks.Task> 합니다.
@@ -34,16 +34,16 @@ ms.locfileid: "80739106"
        extends System.Object
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 
 ### <a name="fields"></a>필드
 
-|Name|설명|
+|이름|Description|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|이 작업에 등록 된 자식 작업의 목록입니다.|
 
 ## <a name="remarks"></a>설명
  .NET Framework은 필요한 경우에만이 클래스의 필드를 초기화 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

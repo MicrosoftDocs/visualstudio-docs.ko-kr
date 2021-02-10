@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931736"
 ---
 # <a name="how-to-localize-aspx-markup"></a>방법: ASPX 태그 지역화
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 페이지는 일반적으로 하드 코드 된 문자열 값을 사용 합니다. 이러한 문자열을 지역화 하려면 지역화 된 리소스를 참조 하는 식으로 대체 합니다.
@@ -33,9 +33,9 @@ ms.locfileid: "96304668"
 
      코드만이 아닌 태그를 지역화 하는 경우에는 전역 리소스 파일 프로젝트 항목을 추가 합니다. 코드와 태그를 지역화 하는 경우 리소스 파일 프로젝트 항목을 추가 합니다.
 
-    1. 전역 리소스 파일을 추가 하려면 **솔루션 탐색기** 에서 SharePoint 프로젝트 항목의 바로 가기 메뉴를 열고 **Add**  >  **새 항목** 추가를 선택 합니다. SharePoint **2010** 노드에서 **전역 리소스 파일** 템플릿을 선택 합니다.
+    1. 전역 리소스 파일을 추가 하려면 **솔루션 탐색기** 에서 SharePoint 프로젝트 항목의 바로 가기 메뉴를 열고   >  **새 항목** 추가를 선택 합니다. SharePoint **2010** 노드에서 **전역 리소스 파일** 템플릿을 선택 합니다.
 
-    2. 리소스 파일을 추가 하려면 **솔루션 탐색기** 에서 SharePoint 프로젝트 항목의 바로 가기 메뉴를 열고 **Add**  >  **새 항목** 추가를 선택 합니다. **Visual Basic** 또는 **Visual c #** 노드 아래에서 **리소스 파일** 템플릿을 선택 합니다.
+    2. 리소스 파일을 추가 하려면 **솔루션 탐색기** 에서 SharePoint 프로젝트 항목의 바로 가기 메뉴를 열고   >  **새 항목** 추가를 선택 합니다. **Visual Basic** 또는 **Visual c #** 노드 아래에서 **리소스 파일** 템플릿을 선택 합니다.
 
     > [!NOTE]
     > 배포 유형 속성을 사용 하도록 설정 하려면 SharePoint 프로젝트 항목에 리소스 파일을 추가 해야 합니다. 이 속성은이 절차의 뒷부분에서 필요 합니다. 솔루션에 SharePoint 프로젝트 항목이 없으면 빈 SharePoint 프로젝트를 추가 하 고 해당 기본 *Elements.xml* 파일을 제거할 수 있습니다.
@@ -62,7 +62,7 @@ ms.locfileid: "96304668"
     </asp:Content>
     ```
 
-     to
+     을
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

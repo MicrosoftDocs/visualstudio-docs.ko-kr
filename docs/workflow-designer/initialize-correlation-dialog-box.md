@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a35911fef39315580f402e174b0f32d443a33cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a41511f9bfb381eeb422cc9cf7ec015d55ceff70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931515"
 ---
 # <a name="initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자
 
@@ -27,13 +27,13 @@ ms.locfileid: "94437803"
 
 |UI 요소|Description|
 |-|-----------------|
-|**상관 관계**|초기화할 상관 관계의 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
+|**Correlation**(상관 관계)|초기화할 상관 관계의 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
 |**초기화 사용**|초기화할 데이터가 포함된 키/값 쌍입니다. 이 값은 속성에 해당 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 합니다. 유효한 키/값 쌍의 예로는 OrderID 라는 변수와 쌍을 이루는 "OrderID" 라는 키가 있습니다.|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>상관 관계 초기화 대화 상자를 시작하려면
 
 **InitializeCorrelation** 활동 디자이너에서 **보기** 를 클릭 하거나 <xref:System.ServiceModel.Activities.InitializeCorrelation> 워크플로 디자이너에서 활동을 선택 합니다. 그런 다음 속성 표에서 속성 옆의 줄임표 단추를 클릭 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

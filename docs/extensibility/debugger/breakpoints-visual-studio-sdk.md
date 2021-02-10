@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d266bb97b6d3086a8f5b74100f5821a5cfca3af
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fa9f244ec60e336e9a7596ff839842211d516b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930813"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>중단점(Visual Studio SDK)
 중단점에는 보류 중, 바인딩 및 오류의 세 가지 유형이 있습니다.
@@ -47,7 +47,7 @@ ms.locfileid: "96914454"
 - 는 [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 인터페이스로 표시 됩니다.
 
 ## <a name="see-also"></a>참고 항목
-- [Programs](../../extensibility/debugger/programs.md)
+- [프로그램](../../extensibility/debugger/programs.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
 - [코드 컨텍스트](../../extensibility/debugger/code-context.md)
 - [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

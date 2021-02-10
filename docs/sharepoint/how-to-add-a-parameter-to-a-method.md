@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d568d5ca2025f1467fa96387493b1e8b4ed1ec6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931697"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>방법: 메서드에 매개 변수 추가
   매개 변수를 사용 하 여 메서드에 정보를 전달 하거나 메서드에서 정보를 반환 합니다. 모든 메서드에는 매개 변수가 하나 이상 있어야 합니다. 만들려는 메서드 유형을 지 원하는 매개 변수를 디자인 하는 방법에 대 한 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -35,7 +35,7 @@ ms.locfileid: "96915403"
 
 1. 엔터티에 메서드를 추가 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
      **BDC 메서드 세부 정보** 창이 열립니다. 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
