@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f6ecbd791297f4c186d22d9ed14c627cf7be43f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941855"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
 디버깅 중인 프로그램에서 throw 되는 예외 또는 런타임 오류에 대해 설명 합니다.
@@ -49,7 +49,7 @@ public struct EXCEPTION_INFO {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `pProgram`\
 예외가 발생 한 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
 
@@ -78,8 +78,8 @@ GUID 언어 식별자 (또는) `guidLang` `guidEng` 입니다.
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참조
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)

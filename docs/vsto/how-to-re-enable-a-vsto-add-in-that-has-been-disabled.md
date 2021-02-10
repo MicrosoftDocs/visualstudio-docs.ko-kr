@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942192"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>방법: 사용 하지 않도록 설정 된 VSTO 추가 기능 다시 활성화
   Microsoft Office 애플리케이션에서는 예기치 않게 동작하는 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 디버그하려고 할 때 애플리케이션이 VSTO 추가 기능을 로드하지 않는 경우 애플리케이션에서 VSTO 추가 기능을 하드 비활성화 또는 소프트 비활성화했을 수 있습니다.

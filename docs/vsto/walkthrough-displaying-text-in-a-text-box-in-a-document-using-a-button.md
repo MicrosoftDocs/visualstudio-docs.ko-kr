@@ -11,15 +11,15 @@ helpviewer_keywords:
 - text boxes, displaying text in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0efea386da2bec0136a8a5399a04b9ce8cabf5c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942102"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>연습: 문서에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시
   이 연습에서는 Microsoft Office Word에 대한 문서 수준 사용자 지정에서 단추 및 텍스트 상자를 사용하는 방법을 보여 줍니다.
@@ -78,7 +78,7 @@ ms.locfileid: "97522751"
    이제 단추를 클릭할 때 실행되는 코드를 작성할 수 있습니다.
 
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자 채우기
- 사용자가 단추를 클릭할 때마다 **Hello World!** 가 텍스트 상자에 추가 됩니다.
+ 사용자가 단추를 클릭할 때마다 **헬로 월드!** 가 텍스트 상자에 추가 됩니다.
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>단추를 클릭할 때 텍스트 상자에 쓰려면
 
@@ -94,7 +94,7 @@ ms.locfileid: "97522751"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
- 이제 문서를 테스트 하 여 메시지 Hello World 수 있는지 확인할 수 있습니다 **.** 단추를 클릭 하면 텍스트 상자에 나타납니다.
+ 이제 문서를 테스트 하 여 메시지 헬로 월드 수 있는지 확인할 수 있습니다 **.** 단추를 클릭 하면 텍스트 상자에 나타납니다.
 
 ### <a name="to-test-your-document"></a>문서를 테스트하려면
 
@@ -102,7 +102,7 @@ ms.locfileid: "97522751"
 
 2. 이 단추를 클릭합니다.
 
-3. Hello World 되었는지 확인 **하세요.** 텍스트 상자에 나타납니다.
+3. 헬로 월드 되었는지 확인 **하세요.** 텍스트 상자에 나타납니다.
 
 ## <a name="next-steps"></a>다음 단계
  이 연습에서는 Word 문서에서 단추 및 텍스트 상자를 사용하는 기본 사항을 보여 줍니다. 다음으로 수행할 수 있는 몇 가지 작업은 다음과 같습니다.

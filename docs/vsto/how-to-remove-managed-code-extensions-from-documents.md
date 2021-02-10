@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942154"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>방법: 문서에서 관리 코드 확장명 제거
   Microsoft Office Word 또는 Microsoft Office Excel에 대 한 문서 수준 사용자 지정의 일부인 문서 또는 통합 문서에서 프로그래밍 방식으로 사용자 지정 어셈블리를 제거할 수 있습니다. 그러면 사용자가 문서를 열고 내용을 볼 수 있지만 문서에 추가 하는 사용자 지정 UI (사용자 인터페이스)는 표시 되지 않으며 코드가 실행 되지 않습니다.

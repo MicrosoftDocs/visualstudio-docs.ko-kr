@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942185"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>방법: 문서 속성에서 읽기 및 문서 속성에 쓰기
   문서와 함께 문서 속성을 저장할 수 있습니다. Office 애플리케이션은 작성자, 제목 및 주제와 같은 다양한 기본 제공 속성을 제공합니다. 이 항목에서는 Microsoft Office Excel 및 Microsoft Office Word에서 문서 속성을 설정하는 방법을 보여 줍니다.

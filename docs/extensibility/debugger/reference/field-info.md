@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941842"
 ---
 # <a name="field_info"></a>FIELD_INFO
 이 구조는 지역 변수, 매개 변수 또는 기타 필드를 설명 합니다.
@@ -47,7 +47,7 @@ public struct FIELD_INFO {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwFields`\
 채워질 멤버를 지정 하는 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 열거형의 플래그 조합입니다.
 
@@ -73,8 +73,8 @@ public struct FIELD_INFO {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

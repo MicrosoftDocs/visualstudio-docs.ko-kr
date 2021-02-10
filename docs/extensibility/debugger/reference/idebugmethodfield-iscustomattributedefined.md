@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63351a106497121c40fa7fb04d95b59494e4575e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941829"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 특정 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80727111"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT IsCustomAttributeDefined( 
+HRESULT IsCustomAttributeDefined( 
    LPCOLESTR pszCustomAttributeName
 );
 ```
@@ -43,8 +43,8 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 진행 찾을 사용자 지정 특성의 이름을 포함 하는 문자열입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  이 메서드에 사용자 지정 특성이 정의 되어 있으면 S_OK을 반환 하 고, 그렇지 않으면 S_FALSE을 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

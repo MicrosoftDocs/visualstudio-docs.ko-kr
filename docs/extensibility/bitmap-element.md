@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd30cb2d09d042e70b5fc142ac220f2356962146
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941868"
 ---
 # <a name="bitmap-element"></a>Bitmap 요소
 비트맵을 정의 합니다. 비트맵은 리소스 또는 파일에서 로드 됩니다.
@@ -36,7 +36,7 @@ ms.locfileid: "94974588"
 
 |attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.<br /><br /> 비트맵에 대 한 guid 특성은 VSPackage 또는 다른 명령 그룹과 연결 되지 않습니다.  비트맵 정의에서 고유 해야 하며 다른 용도로 사용 하면 안 됩니다.|
+|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.<br /><br /> 비트맵에 대 한 guid 특성은 VSPackage 또는 다른 명령 그룹과 연결 되지 않습니다.  비트맵 정의에서 고유 해야 하며 다른 용도로 사용 하면 안 됩니다.|
 |Resid로|GUID/ID 명령 식별자의 ID입니다. Resid로 또는 href 특성이 필요 합니다.<br /><br /> Resid로 특성은 명령 테이블을 병합 하는 동안 로드할 비트맵 스트립을 결정 하는 정수 리소스 ID입니다.  명령 테이블을 로드 하는 경우 리소스 ID로 지정 된 비트맵이 동일한 모듈의 리소스에서 로드 됩니다.|
 |usedList|Resid로 특성이 있는 경우 필수입니다. 비트맵 스트립에서 사용 가능한 이미지를 선택 합니다.|
 |href|비트맵의 경로입니다. Resid로 또는 href 특성이 필요 합니다.<br /><br /> 결과 이진 파일에 포함 된 지정 된 이미지 파일에 대 한 포함 경로를 검색 합니다.  명령 테이블을 병합 하는 동안 이미지가 복사 되 고 추가 리소스 조회 또는 로드가 필요 하지 않습니다.  UsedList 특성이 없으면 스트립의 모든 이미지를 사용할 수 있습니다. **참고:**  이미지는 *.bmp*, *.png* 및 *.gif* 를 포함 하는 여러 형식 중 하나로 제공 될 수 있습니다.  이전 버전의 컴파일러에서는 부분 투명도에 대 한 알파 정보를 포함 하는 32 비트 비트맵 이미지를 지원 하지 않았습니다. 이러한 버전에 대 한 해결 방법은 *.png* 형식을 사용 하는 것입니다.|
