@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963499"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML 명령 테이블 (.vvsct) 파일 디자인
 XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 레이아웃과 모양을 설명 합니다. 명령 항목에는 단추, 콤보 상자, 메뉴, 도구 모음 및 명령 항목 그룹이 있습니다. 이 문서에서는 XML 명령 테이블 파일, 명령 항목 및 메뉴에 영향을 주는 방법 및 해당 파일을 만드는 방법을 설명 합니다.
@@ -91,7 +91,7 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 
 - [VisibilityConstraints 요소](../../extensibility/visibilityconstraints-element.md): 명령이 항상 표시 되는지 아니면 특정 대화 상자 또는 창이 표시 되는 경우와 같은 특정 컨텍스트에서만 표시 되는지를 지정 합니다. 이 요소에 대 한 값이 있는 메뉴와 명령은 지정 된 컨텍스트가 활성 상태인 경우에만 표시 됩니다. 기본 동작은 항상 명령을 표시 하는 것입니다.
 
-- [KeyBindings 요소](../../extensibility/keybindings-element.md): 명령의 키 바인딩을 지정 합니다. 즉, **Ctrl** S와 같이 명령을 실행 하기 위해 눌러야 하는 키 조합이 하나 이상 + **S** 있습니다.
+- [KeyBindings 요소](../../extensibility/keybindings-element.md): 명령의 키 바인딩을 지정 합니다. 즉, **Ctrl** S와 같이 명령을 실행 하기 위해 눌러야 하는 키 조합이 하나 이상 + 있습니다.
 
 - [UsedCommands 요소](../../extensibility/usedcommands-element.md): 지정 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 명령이 다른 코드에 의해 구현 되더라도 현재 VSPackage 활성 상태인 경우 명령 구현을 제공 한다는 것을 환경에 알립니다.
 
@@ -123,5 +123,5 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 
  **Createexpinstance/Reset** 명령을 사용 하 여 도구를 실행 합니다. 이 도구는 일반적으로와 함께 설치 되지 않은 모든 등록 된 Vspackage를 실험적 hive에서 제거 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

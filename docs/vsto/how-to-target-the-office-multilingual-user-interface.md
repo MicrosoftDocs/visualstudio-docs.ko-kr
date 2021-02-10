@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], globalization
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 245b257140cd0b1f54719ec7a132bf2297fc2dd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962342"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>방법: Office 다국어 사용자 인터페이스 대상
   MUI (다국어 사용자 인터페이스)는 최종 사용자에 게 UI (사용자 인터페이스)의 언어를 변경할 수 있는 기능을 제공 하는 Microsoft Office 기능입니다. 예를 들어 영어 UI를 사용 하 여 작업 하는 최종 사용자는 UI의 언어를 스페인어로 변경할 수 있습니다.

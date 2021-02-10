@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961445"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합 관리
 

@@ -6,15 +6,15 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: e0267fb31515d842f7c9b6591d412e454c803bdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962550"
 ---
 # <a name="unit-test-c-code"></a>C# 코드 단위 테스트
 

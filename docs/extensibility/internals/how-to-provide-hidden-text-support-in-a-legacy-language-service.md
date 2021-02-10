@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 0c4951e1f3fbaf63bf0638965a7dee2db7be8830
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965254"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공
 개요 영역 외에도 숨겨진 텍스트 영역을 만들 수 있습니다. 숨겨진 텍스트 영역은 클라이언트 제어 또는 편집기에서 제어 될 수 있으며 텍스트 영역을 완전히 숨기는 데 사용 됩니다. 편집기는 숨겨진 영역을 가로 선으로 표시 합니다. 이에 대 한 예는 HTML 편집기의 **스크립트 전용** 뷰입니다.

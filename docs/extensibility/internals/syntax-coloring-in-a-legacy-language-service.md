@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf063efe30d90c84848222ff931be43834efbad
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c90d64fa3835eb3b0963923ba7b65ad7afb5758a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965241"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 

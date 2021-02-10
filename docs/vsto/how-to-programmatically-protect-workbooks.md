@@ -16,15 +16,15 @@ helpviewer_keywords:
 - workbooks, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963850"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 보호
   사용자가 워크시트를 추가 하거나 삭제할 수 없으며 프로그래밍 방식으로 통합 문서의 보호를 해제할 수 있도록 Microsoft Office Excel 통합 문서를 보호할 수 있습니다. 선택적으로 암호를 지정 하 고, 구조를 보호할 지 여부를 표시 하 고 (사용자가 시트를 이동할 수 없도록) 통합 문서의 창을 보호할 지 여부를 지정할 수 있습니다.

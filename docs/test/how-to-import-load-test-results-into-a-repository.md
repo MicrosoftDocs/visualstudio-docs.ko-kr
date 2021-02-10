@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 2133977de827fe558ee9323280c5f05df683ed59
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: df32fa09b95a9adfbc245ff5c3ec3ab9fbabd1d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961458"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>방법: 리포지토리로 부하 테스트 결과 가져오기
 

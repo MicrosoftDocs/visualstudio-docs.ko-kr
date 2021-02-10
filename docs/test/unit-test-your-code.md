@@ -9,16 +9,16 @@ helpviewer_keywords:
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: 718f5560176f287f237d54a89bd44c831c7f03ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962615"
 ---
 # <a name="unit-test-tools-and-tasks"></a>단위 테스트 도구 및 작업
 

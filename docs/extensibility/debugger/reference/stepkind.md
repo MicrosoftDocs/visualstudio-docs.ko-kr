@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ed2877c880d3cd2674f62b4f900a6e923bb29d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c87a2c221149f8478a083d1efea6e9edfb542d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965475"
 ---
 # <a name="stepkind"></a>STEPKIND
 단계별 실행 단계 종류를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_STEPKIND { 
+enum enum_STEPKIND { 
    STEP_INTO      = 0,
    STEP_OVER      = 1,
    STEP_OUT       = 2,
@@ -38,7 +38,7 @@ typedef DWORD STEPKIND;
 ```
 
 ```csharp
-public enum enum_STEPKIND { 
+public enum enum_STEPKIND { 
    STEP_INTO      = 0,
    STEP_OVER      = 1,
    STEP_OUT       = 2,

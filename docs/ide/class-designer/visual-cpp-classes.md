@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 593ca8ba3edc3c779a0440a35551bf870f20c831
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1a1e075d2ac8d06320c46f8d2bb86992814ae24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963369"
 ---
 # <a name="c-classes-in-class-designer"></a>클래스 디자이너의 C++ 클래스
 

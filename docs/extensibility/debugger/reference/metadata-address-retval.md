@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec357bcc21cb3f7cd8f4f9eaa8318c4b0deb1d42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961900"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 이 구조체는 메서드나 함수의 반환 값을 나타냅니다.
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `tokMethod`\
  이 반환 값이 인 메서드의 ID입니다.
 
@@ -59,7 +59,7 @@ public struct METADATA_ADDRESS_RETVAL {
  반환 값의 시그니처를 형성 하는 바이트 배열입니다.
 
 ## <a name="remarks"></a>설명
- 이 구조체는 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 구조체의 필드가 `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_RETVAL` ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형의 값)로 설정 된 경우 DEBUG_ADDRESS_UNION 구조체의 공용 구조체의 일부입니다.
+ 이 구조체는 [](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 구조체의 필드가 `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_RETVAL` ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 열거형의 값)로 설정 된 경우 DEBUG_ADDRESS_UNION 구조체의 공용 구조체의 일부입니다.
 
 ## <a name="requirements"></a>요구 사항
  헤더: sh
@@ -69,6 +69,6 @@ public struct METADATA_ADDRESS_RETVAL {
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>참고 항목
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

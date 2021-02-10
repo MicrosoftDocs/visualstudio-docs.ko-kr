@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963018"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 프로세스에 대 한 정보를 포함 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80713878"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagPROCESS_INFO { 
+typedef struct tagPROCESS_INFO { 
    PROCESS_INFO_FIELDS Fields;
    BSTR                bstrFileName;
    BSTR                bstrBaseName;
@@ -42,7 +42,7 @@ typedef struct tagPROCESS_INFO { 
 ```
 
 ```csharp
-public struct PROCESS_INFO { 
+public struct PROCESS_INFO { 
    public uint          Fields;
    public string        bstrFileName;
    public string        bstrBaseName;
@@ -55,7 +55,7 @@ public struct PROCESS_INFO { 
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `Fields`\
  입력 하는 필드를 지정 하는 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 열거형의 플래그 조합입니다.
 
@@ -93,8 +93,8 @@ public struct PROCESS_INFO { 
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)

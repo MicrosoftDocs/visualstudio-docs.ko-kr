@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2111f4c3b60bbdc5f8a88b5cc7777fc92af74509
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963629"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-다른 참조에서 참조 값을 설정 합니다. 나중에 사용하기 위해 예약되어 있습니다.
+다른 참조에서 참조 값을 설정 합니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT SetValueAsReference ( 
+HRESULT SetValueAsReference ( 
    IDebugReference2** rgpArgs,
    DWORD              dwArgCount,
    IDebugReference2*  pValue,
@@ -37,7 +37,7 @@ HRESULT SetValueAsReference ( 
 ```
 
 ```cpp
-int SetValueAsReference ( 
+int SetValueAsReference ( 
    IDebugReference2[] rgpArgs,
    uint               dwArgCount,
    IDebugReference2   pValue,
@@ -58,8 +58,8 @@ int SetValueAsReference ( 
 `dwTimeout`\
 진행 이 메서드에서 반환 될 때까지 대기 하는 최대 시간 (밀리초)입니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

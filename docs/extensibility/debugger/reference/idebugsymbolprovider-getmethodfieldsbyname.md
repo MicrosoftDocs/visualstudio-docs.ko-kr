@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf123c1e7e83264a2ae4a8ef8c2b4b3207a62a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6aa9561642b59a4cf605485011ac3b3ac75ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963525"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 이 메서드는 정규화 된 메서드 이름을 나타내는 필드를 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80719226"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetMethodFieldsByName( 
+HRESULT GetMethodFieldsByName( 
    LPCOLESTR          pszFullName,
    NAME_MATCH         nameMatch,
    IEnumDebugFields** ppEnum
@@ -53,12 +53,12 @@ int GetMethodFieldsByName(
 `ppEnum`\
 제한이 이 메서드와 연결 된 필드에 대 한 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  예를 들어 오버 로드 된 경우 여러 필드에 메서드를 연결할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

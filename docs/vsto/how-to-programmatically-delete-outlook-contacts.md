@@ -12,15 +12,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], deleting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1398a631db77704a89a06b5e66ef4cb370280e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963897"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처 삭제
   이 예제에서는 연락처를 삭제합니다. 이 예제에서는 "Armando Pinto"라는 이름의 연락처가 **연락처** 폴더에 있다고 가정합니다.

@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cd01ba1196c75589c0f8844c6bfccab88772ffe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961718"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>연습: 코드 조각 구현
 코드 조각을 만들고 편집기 확장에 포함 하 여 확장 사용자가 자신의 코드에 코드 조각을 추가할 수 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "97877119"
 
    이 연습은 [연습: 표시 문 완성](../extensibility/walkthrough-displaying-statement-completion.md)을 기반으로 합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-and-register-code-snippets"></a>코드 조각 만들기 및 등록

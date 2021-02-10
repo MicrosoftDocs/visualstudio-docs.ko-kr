@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718388"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965696"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 형식을 나타내는 필드를 만드는 기능을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugTypeFieldBuilder : IUnknown
@@ -32,7 +32,7 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|기본 형식을 나타내는 개체를 만듭니다.|
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|지정 된 형식에 대 한 포인터를 만듭니다.|

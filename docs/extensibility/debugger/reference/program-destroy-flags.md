@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7d144658065c32fd15b4b2b21ed0f53fe02a08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962953"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 프로그램 소멸 플래그의 유효한 값을 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_PPROGRAM_DESTROY_FLAGS

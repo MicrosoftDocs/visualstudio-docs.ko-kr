@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c620bc91d034e5021bab1bbc16467336cd0592e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1f7601d2533a52fdee709413a97d203a6556cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965722"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 기본 형식을 나타내는 개체를 만듭니다.
@@ -47,8 +47,8 @@ int CreatePrimitive (
 `pTypeField`\
 제한이 새 형식에 대 한 IDebugField 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

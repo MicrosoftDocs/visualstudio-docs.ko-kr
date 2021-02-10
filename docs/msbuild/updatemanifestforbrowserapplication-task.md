@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e71e11988d4dd853b0f97c745b6d720a45adcdc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961549"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 작업
 

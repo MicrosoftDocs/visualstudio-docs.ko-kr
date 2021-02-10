@@ -4,15 +4,15 @@ description: Visual Studio에서 성능 문제 제출에 대한 추가 정보 �
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: d3db409c67ab961adfceaeb8e3236cd964f95399
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962901"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>성능 문제가 해결될 가능성을 높이는 방법
 

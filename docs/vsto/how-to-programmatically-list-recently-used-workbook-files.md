@@ -15,15 +15,15 @@ helpviewer_keywords:
 - recent file list, Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75405c7a2e02189e205edf6615c5d95a8f1d023c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963148"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>방법: 프로그래밍 방식으로 최근에 사용한 통합 문서 파일 나열
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>속성은 Microsoft Office Excel에서 최근에 사용한 파일 목록에 표시 되는 모든 파일의 이름을 포함 하는 컬렉션을 반환 합니다. 목록의 길이는 사용자가 유지 하도록 선택한 파일 수에 따라 달라 집니다. 범위에 결과를 표시할 수 있습니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20a11488c32b4259105e346e7fa28fd706e48a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4856588a0ca5644317aba6a61d270b390d955b73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961874"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 모듈의 기호 상태를 지정 합니다.

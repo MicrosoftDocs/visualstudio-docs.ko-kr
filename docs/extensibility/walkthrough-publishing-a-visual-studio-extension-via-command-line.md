@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961848"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 게시
 
@@ -32,7 +32,7 @@ VsixPublisher.exe는 Visual Studio 확장을 Marketplace에 게시 하기 위한
 
 Marketplace에 확장을 게시 합니다. 확장은 vsix, exe/msi 파일 또는 링크 일 수 있습니다. 동일한 버전의 확장이 이미 있으면 확장을 덮어씁니다. 확장 프로그램이 아직 없는 경우 새 확장을 만듭니다.
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |페이로드 (필수) | 게시할 페이로드의 경로 이거나 "추가 정보 URL"로 사용할 링크입니다. |
 |항목 매니페스트 (필수) | 사용할 게시 매니페스트 파일의 경로입니다. |
@@ -47,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Marketplace에서 게시자를 만듭니다. 또한 향후 작업을 위해 게시자를 컴퓨터에 기록 합니다 (예: 확장 삭제/게시).
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |displayName (필수) | 게시자의 표시 이름입니다. |
 |가 나 Ername (필수) | 게시자 이름 (예: 식별자)입니다. |
@@ -63,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Marketplace에서 게시자를 삭제 합니다.
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |가 나 Ername (필수) | 게시자 이름 (예: 식별자)입니다. |
 |personalAccessToken (필수) | 게시자를 인증 하는 데 사용 되는 개인 액세스 토큰입니다. |
@@ -76,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Marketplace에서 확장을 삭제 합니다.
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |extensionName (필수) | 삭제할 확장의 이름입니다. |
 |가 나 Ername (필수) | 게시자 이름 (예: 식별자)입니다. |
@@ -90,7 +90,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 컴퓨터에 게시자를 로깅합니다.
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |personalAccessToken (필수) | 게시자를 인증 하는 데 사용 되는 개인 액세스 토큰입니다. |
 |가 나 Ername (필수) | 게시자 이름 (예: 식별자)입니다. |
@@ -104,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 컴퓨터에서 게시자를 로깅합니다.
 
-|명령 옵션 |설명 |
+|명령 옵션 |Description |
 |---------|---------|
 |가 나 Ername (필수) | 게시자 이름 (예: 식별자)입니다. |
 |ignoreMissingPublisher | 지정 된 게시자가 아직 로그인 하지 않은 경우 도구에 오류가 발생 하지 않도록 지정 합니다. |
@@ -194,7 +194,7 @@ This is test extension.
 
 ## <a name="publishing-walkthrough"></a>연습 게시
 
-### <a name="prerequisites"></a>필수 조건
+### <a name="prerequisites"></a>사전 준비 사항
 
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -202,7 +202,7 @@ This is test extension.
 
 이 경우에는 기본 VSPackage 확장을 사용 하지만 동일한 단계는 모든 종류의 확장에 대해 유효 합니다.
 
-1. 메뉴 명령을 포함 하는 "TestPublish" 라는 c #에서 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: Hello World](../extensibility/extensibility-hello-world.md)를 참조 하세요.
+1. 메뉴 명령을 포함 하는 "TestPublish" 라는 c #에서 VSPackage를 만듭니다. 자세한 내용은 [첫 번째 확장 만들기: 헬로 월드](../extensibility/extensibility-hello-world.md)를 참조 하세요.
 
 ### <a name="package-your-extension"></a>확장 패키지
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 43d9e228f83261c4df2d4cacc84bb8629a259aac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965176"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK 지원
 Visual Studio IDE (통합 개발 환경)를 확장 하는 방법에 대 한 질문이 있는 고객에 게 몇 가지 지원 옵션을 사용할 수 있습니다.
@@ -64,6 +64,6 @@ VSIP 프로그램과 함께 프리미어 지원 제품에 대 한 질문은로 �
 
 개별 지원 요청에 대 한 정보는 [개별 지원 요청](https://support.microsoft.com/supportforbusiness/productselection)에서 찾을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [의견 보내기](../ide/feedback-options.md)

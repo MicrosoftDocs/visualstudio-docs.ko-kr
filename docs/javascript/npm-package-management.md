@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962719"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio에서 npm 패키지 관리
 

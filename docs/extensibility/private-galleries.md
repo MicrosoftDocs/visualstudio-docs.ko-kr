@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961861"
 ---
 # <a name="private-galleries"></a>프라이빗 갤러리
 다음과 같이 조직의 인트라넷에 있는 *개인 갤러리* 에 게시 하 여 개발 하는 컨트롤, 템플릿 및 도구를 공유할 수 있습니다.
@@ -91,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. 오른쪽 창에서 확장을 선택 하 고 **업데이트** 단추를 선택 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)
 - [Visual Studio 확장 제공](../extensibility/shipping-visual-studio-extensions.md)

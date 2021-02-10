@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e5822d1dc79835dd6fdcc3a70c3392dbd3d1aab
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ca78cea409f559583507fd4b5b7c9fc43f9a5ffc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963733"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>상관 관계 이니셜라이저 추가 대화 상자
 
@@ -32,7 +32,7 @@ ms.locfileid: "96996359"
 
 다음 표에서는 **상관 관계 이니셜라이저 추가** 대화 상자의 UI (사용자 인터페이스) 요소에 대해 설명 합니다.
 
-|UI 요소|설명|
+|UI 요소|Description|
 |-|-----------------|
 |**이니셜라이저 추가**|**초기화 추가** 상자를 클릭 하 여 컬렉션에 이니셜라이저를 추가 합니다.|
 |**상관 관계 유형**|상관 관계 이니셜라이저의 형식을 지정합니다. 다음 네 가지 형식 중에서 선택할 수 있습니다.<br /><br /> 1 .를 지정 하는 콜백 상관 관계 이니셜라이저 <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> 입니다.<br />2. 컨텍스트 상관 관계 이니셜라이저를 지정 하 여를 지정 <xref:System.ServiceModel.Activities.CorrelationInitializer> 합니다.<br />3. 요청-회신 상관 관계 이니셜라이저를 지정 하 여를 지정 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 합니다.<br />4. 쿼리 상관 관계 이니셜라이저를 지정 하 여를 지정 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 합니다.<br /><br /> **CorrelationType** 를 편집 하려면<br /><br /> 1. **Add 이니셜라이저** DataGrid의 특정 행에 대 한 탭입니다.<br />2. **눌러 correlationtypecombobox** 에 포커스를 설정 하려면 **ctrl** + **tab** 을 누릅니다.<br />3. **콤보 상자** 를 표시 하 고 편집 하려면 Alt + 아래쪽 화살표를 누릅니다.|

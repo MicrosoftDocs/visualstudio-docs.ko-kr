@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook calendars [Office development in Visual Studio], creating appointments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 35d52ffa360d2cf348842319705a237049db4435
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2d9e9ccd2d69c1f0956a3160589ab2204059d83e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964097"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>방법: 프로그래밍 방식으로 약속 만들기
   이 예에서는 약속을 만들고 약속 모임 요청에 받는 사람을 추가 합니다.

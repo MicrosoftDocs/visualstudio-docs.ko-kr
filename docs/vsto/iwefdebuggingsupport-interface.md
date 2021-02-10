@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6a818973bdc2f62194d6ed0026c0798806fe5f2a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9fc319429414c8976d748a30ecdd1e164ce22b63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962264"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport 인터페이스
   Office 용 응용 프로그램의 디버깅을 용이 하 게 하기 위해 Visual Studio와 같은 디버깅 환경에 의해 구현 됩니다. Word 또는 Excel과 같은 Office 응용 프로그램은 Visual Studio에서이 인터페이스를 가져온 다음 디버깅 세션 중 특정 지점에서 인터페이스의 메서드를 호출 합니다.

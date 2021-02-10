@@ -6,29 +6,29 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962693"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Node.js 대화형 창 사용
 
-Visual Studio용 Node.js 도구에는 설치된 Node.js 런타임에 대한 대화형 창이 포함되어 있습니다. 이 창에서 JavaScript 코드를 입력하고 결과를 즉시 확인할 수 있을 뿐만 아니라 npm 명령을 실행하여 현재 프로젝트와 상호 작용할 수 있습니다. 대화형 창은 REPL(**R**ead/**E**valuate/**P**rint **L**oop)로도 알려져 있습니다.
+Visual Studio용 Node.js 도구에는 설치된 Node.js 런타임에 대한 대화형 창이 포함되어 있습니다. 이 창에서 JavaScript 코드를 입력하고 결과를 즉시 확인할 수 있을 뿐만 아니라 npm 명령을 실행하여 현재 프로젝트와 상호 작용할 수 있습니다. 대화형 창은 REPL(**R** ead/**E** valuate/**P** rint **L** oop)로도 알려져 있습니다.
 
 ## <a name="open-the-interactive-window"></a>대화형 창 열기
 
-솔루션 탐색기에서 Node.js 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **Node.js 대화형 창 열기**를 선택하여 대화형 창을 열 수 있습니다.
+솔루션 탐색기에서 Node.js 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **Node.js 대화형 창 열기** 를 선택하여 대화형 창을 열 수 있습니다.
 
 ![프로젝트 컨텍스트 메뉴의 Node.js 대화형 창](../javascript/media/interactivewindow-open-from-project.png)
 
-Node.js 대화형 창을 여는 기본 바로 가기 키는 **[CTRL] + K, N**입니다. 또는 **보기** > **Windows** > **Node.js 대화형 창**을 선택하여 도구 모음에서 창을 열 수 있습니다.
+Node.js 대화형 창을 여는 기본 바로 가기 키는 **[CTRL] + K, N** 입니다. 또는 **보기** > **Windows** > **Node.js 대화형 창** 을 선택하여 도구 모음에서 창을 열 수 있습니다.
 
 ## <a name="use-the-repl"></a>REPL 사용
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962108"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 이 구조는 모듈에 대 한 JustMyCode 정보를 설정 하는 데 사용 됩니다.
@@ -41,7 +41,7 @@ public struct JMC_CODE_SPEC {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `fIsUserCode`\
 모듈이 사용자 코드로 간주 되는 경우 0이 아닌 값 `TRUE` 이 고, 그렇지 않으면 `FALSE` 모듈이 외부 코드로 처리 되 고 디버깅 되지 않는 경우 영 ()입니다.
 
@@ -58,6 +58,6 @@ public struct JMC_CODE_SPEC {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

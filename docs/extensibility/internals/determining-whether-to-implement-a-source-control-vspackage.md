@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963434"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage을 구현할지 여부를 결정 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "96329824"
 
  소스 제어 플러그 인 API를 사용 하 여 적절 하 게 캡처하지 않는 풍부한 소스 제어 모델을 제공 하는 소스 제어 솔루션을 구현 하려면 원본 제어 패키지를 통합 경로로 사용 하는 것이 좋습니다. 이는 소스 제어 이벤트를 사용자 지정 방식으로 처리할 수 있도록 소스 제어 어댑터 패키지를 (소스 제어 플러그 인과 통신 하 고 기본 소스 제어 UI를 제공 하는) 원하는 경우에 특히 적용 됩니다. 적절 한 소스 제어 UI가 이미 있고에서 해당 환경을 유지 하려는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 원본 제어 패키지 옵션을 사용 하면 됩니다. 소스 제어 패키지는 제네릭이 아니고 IDE 에서만 사용 하도록 디자인 되었습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- 소스 제어 논리 및 UI에 대해 유연 하 고 다양 한 제어를 제공 하는 소스 제어 솔루션을 구현 하려면 소스 제어 패키지 통합 경로를 사용 하는 것이 좋습니다. 다음 작업을 수행할 수 있습니다.
+ 소스 제어 논리 및 UI에 대해 유연 하 고 다양 한 제어를 제공 하는 소스 제어 솔루션을 구현 하려면 소스 제어 패키지 통합 경로를 사용 하는 것이 좋습니다. 다음을 할 수 있습니다.
 
 1. 사용자 고유의 소스 제어 VSPackage ( [등록 및 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)참조)를 등록 합니다.
 
@@ -41,6 +41,6 @@ ms.locfileid: "96329824"
 
 4. 쿼리 편집 및 쿼리 저장 이벤트를 처리 합니다 (쿼리 [편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)참조).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962199"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 이 인터페이스는 스택 프레임 속성, 프로그램 문서 속성 또는 일부 다른 속성을 나타냅니다. 속성은 일반적으로 식 계산의 결과입니다.
@@ -25,7 +25,7 @@ ms.locfileid: "80721230"
 > [!NOTE]
 > 이러한 엔터티를 나타낼 수 있지만 "속성"을 사용 하면 클래스의 멤버 변수를 의미 하는 것과 혼동 해서는 안 됩니다 `IDebugProperty2` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProperty2 : IUnknown
@@ -48,7 +48,7 @@ IDebugProperty2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProperty2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|속성을 설명 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 채웁니다.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|문자열에서 속성 값을 설정 합니다.|
@@ -76,7 +76,7 @@ IDebugProperty2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

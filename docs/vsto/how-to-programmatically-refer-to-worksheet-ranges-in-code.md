@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], referring to worksheet ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9756123038de33e8f8e69bd9a824822c26e2dc00
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 89a4b7c594f942405777145f94ed0a3503e9b16f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963759"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조
   유사한 프로세스를 사용 하 여 컨트롤의 내용이 <xref:Microsoft.Office.Tools.Excel.NamedRange> 나 네이티브 Excel 범위 개체를 참조 합니다.

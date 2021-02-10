@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963187"
 ---
 # <a name="tier-interactions-view"></a>계층 상호 작용 뷰
 

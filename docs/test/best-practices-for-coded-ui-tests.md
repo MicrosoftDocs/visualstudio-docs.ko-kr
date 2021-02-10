@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests, best practices
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4a79ca397b46d06e18c62fde2034551ff7afe0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23b959f693e2deb6fd1ee4bdbe2e4158ee6ac13e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964643"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>코딩된 UI 테스트에 대한 모범 사례
 

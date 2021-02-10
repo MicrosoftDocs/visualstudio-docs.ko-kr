@@ -20,15 +20,15 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f84a694c9a18b6ec1c64204c8150ff721633278d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962472"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "96845624"
 ## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>VSTO 추가 기능에서 구현할 수 있는 확장성 인터페이스
  다음 표에는 구현할 수 있는 확장성 인터페이스와 이러한 인터페이스를 지원하는 애플리케이션이 나와 있습니다.
 
-|인터페이스|설명|애플리케이션|
+|인터페이스|Description|애플리케이션|
 |---------------|-----------------|------------------|
 |<xref:Microsoft.Office.Core.IRibbonExtensibility>|리본 UI를 사용자 지정하려면 이 인터페이스를 구현합니다. **참고:**  프로젝트에 **리본 (XML)** 항목을 추가 하 여 <xref:Microsoft.Office.Core.IRibbonExtensibility> VSTO 추가 기능에 기본 구현을 생성할 수 있습니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|사용자 지정 작업창을 만들려면 이 인터페이스를 구현합니다.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

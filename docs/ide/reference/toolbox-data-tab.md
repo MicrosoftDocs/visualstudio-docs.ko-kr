@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964981"
 ---
 # <a name="toolbox-data-tab"></a>도구 상자, 데이터 탭
 
