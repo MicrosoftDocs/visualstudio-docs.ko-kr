@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0dd336701fc25497fdecba8b5b9860a02447558d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970051"
 ---
 # <a name="properties-display-grid"></a>속성 표시 그리드
 
@@ -57,6 +57,6 @@ VSPackage가 __VSHPROPID를 지원 하지 않는 경우 [ VSHPROPID_BrowseObject
 
 - 줄임표 (...) 단추를 클릭 하면 사용자가 선택할 수 있는 속성 값의 목록 (예: 색 선택 또는 글꼴 목록)이 표시 됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> 는 이러한 값을 제공 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [속성 확장](../../extensibility/internals/extending-properties.md)

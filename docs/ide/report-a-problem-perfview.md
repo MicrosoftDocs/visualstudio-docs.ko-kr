@@ -7,7 +7,7 @@ helpviewer_keywords:
 - ETL Trace
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 9ac4d90a0da15fe2415ada02d6e8e1cdbe11af56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f0696a24f04d2cba52994c86a3475f56d3e7947
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970714"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>PerfView를 사용하여 ETL 추적 수집
 
@@ -32,11 +32,11 @@ PerfView는 Visual Studio와 관련된 문제를 해결하는 데 유용한 [Win
 
 ## <a name="run-perfview"></a>PerfView 실행
 
-1. Windows 탐색기에서 **PerfView.exe**를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행**을 관리자로 선택합니다.
-1. 수집 메뉴에서 **수집**을 선택합니다.
-1. **Zip**, **병합** 및 **ThreadTime**을 선택합니다.
-1. **순환 MB**를 1000으로 늘립니다.
-1. 두 번 이상 수집하려는 경우 **현재 디렉터리**를 변경하여 ETL 추적을 지정된 폴더 및 데이터 파일에 저장합니다.
+1. Windows 탐색기에서 **PerfView.exe** 를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 관리자로 선택합니다.
+1. 수집 메뉴에서 **수집** 을 선택합니다.
+1. **Zip**, **병합** 및 **ThreadTime** 을 선택합니다.
+1. **순환 MB** 를 1000으로 늘립니다.
+1. 두 번 이상 수집하려는 경우 **현재 디렉터리** 를 변경하여 ETL 추적을 지정된 폴더 및 데이터 파일에 저장합니다.
 1. 데이터 기록을 시작하려면 **컬렉션 시작** 단추를 선택합니다.
 1. 데이터 기록을 중지하려면 **컬렉션 중지** 단추를 선택합니다. PrefView.etl.zip 파일은 지정된 디렉터리에 저장됩니다.
 

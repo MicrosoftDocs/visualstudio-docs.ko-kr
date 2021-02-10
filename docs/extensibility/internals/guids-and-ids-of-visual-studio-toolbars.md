@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970220"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 도구 모음의 Guid 및 Id
 이 항목에서는 Visual Studio IDE (통합 개발 환경) 및 포함 된 그룹에 포함 된 도구 모음의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -40,7 +40,7 @@ ms.locfileid: "96480384"
 
  그룹만 도구 모음에서 직접 상속 될 수 있습니다. 그룹을 추가 하려면 해당 부모를 도구 모음의 GUID 및 ID로 설정 합니다. 도구 모음에 단추를 추가 하려면 도구 모음에서 해당 부모를 그룹으로 설정 합니다.
 
-|Toolbar|ID|
+|도구 모음|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
 |빌드|IDM_VS_TOOL_BUILD|
@@ -51,7 +51,7 @@ ms.locfileid: "96480384"
 ### <a name="special-toolbars"></a>특수 도구 모음
  이러한 도구 모음은 Visual Studio IDE에서 정의 되지만 특수 함수를 제공 하며 명령 그룹을 호스팅하지 않습니다.
 
-|Toolbar|ID|
+|도구 모음|ID|
 |-------------|--------|
 |Add 명령|IDM_VS_TOOL_ADDCOMMAND|
 |정의되지 않음|IDM_VS_TOOL_UNDEFINED|
@@ -112,7 +112,7 @@ ms.locfileid: "96480384"
 > [!NOTE]
 > 도구 모음 및 그룹은 guid `guidSHLMainMenu` : ID 구문을 사용 하 여 지정 된 경우를 제외 하 고 guid를 사용 합니다. 도구 모음에 GUID가 지정 된 경우 해당 도구 모음에서 상속 된 그룹에도 적용 됩니다.
 
-|도구 창|Toolbar|그룹|
+|도구 창|도구 모음|그룹|
 |-----------------|-------------|------------|
 |솔루션 탐색기|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1. 5|
 |서버 탐색기|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|

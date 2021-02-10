@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: f208dd19674a257381db6feeaf47df5d3951ff9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969297"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 타이밍 정보 스토리지 속성 지정
 

@@ -6,15 +6,15 @@ ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: ef2ddd4011f807099c6bc82447f888b56f151e72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969414"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio에서 메모리 사용량 측정
 

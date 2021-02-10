@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f233eaed4b08e499b3a7543d10caafd36c77a480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969076"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>방법: XML 리터럴과 함께 XML 스키마 디자이너 사용
 

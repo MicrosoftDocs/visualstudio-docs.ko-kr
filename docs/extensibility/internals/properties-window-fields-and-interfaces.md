@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970012"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 **속성** 창에 표시 되는 정보를 결정 하기 위해 선택할 수 있는 모델은 IDE에 포커스가 있는 창을 기반으로 합니다. 모든 창 및 선택한 창 내의 개체는 선택 컨텍스트 개체를 전역 선택 컨텍스트로 푸시할 수 있습니다. 환경에서는 해당 창에 포커스가 있을 때 창 프레임의 값으로 전역 선택 컨텍스트를 업데이트 합니다. 포커스가 변경 되 면 선택 컨텍스트가 수행 됩니다.
@@ -116,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  속성의 지역화된 이름 및 설명을 가져오는 또 하나의 방법은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A> 구현입니다. 이 방법으로 구현하는 자세한 내용은 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)에서 참조하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [속성 확장](../../extensibility/internals/extending-properties.md)

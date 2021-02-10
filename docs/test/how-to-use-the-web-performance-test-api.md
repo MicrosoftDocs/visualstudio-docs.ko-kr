@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: f2afc1ab325fab8da6bdaba5650ae06d9cfcce14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969232"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 

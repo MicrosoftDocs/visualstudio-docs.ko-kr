@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969622"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 
@@ -74,17 +74,17 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
 1. 애플리케이션을 실행하기 전에 다음 스크린샷과 유사하게 **모두 저장** 도구 모음 단추를 선택하여 앱을 저장합니다.
 
      ![모두 저장 도구 모음 단추](../ide/media/express_iconsaveall.png)<br>
-**_모두 저장_* 단추
+***모두 저장** 단추
 
      또는 앱을 저장하려면 메뉴 모음에서 **파일** > **모두 저장** 을 선택하거나 **Ctrl**+**Shift**+**S** 를 누릅니다. 프로그램은 초기에 자주 저장하는 것이 좋습니다.
 
      실행 중인 프로그램은 다음 이미지와 같습니다.
 
-     ![사진 뷰어](../ide/media/express_pictureviewerdonerun.png)<br>*_사진 뷰어_**
+     ![사진 뷰어](../ide/media/express_pictureviewerdonerun.png)<br>***사진 뷰어***
 
 ## <a name="to-test-your-app"></a>앱 테스트
 
-1. *F5** 키를 선택하거나 **디버깅 시작** 도구 모음 단추를 선택합니다.
+1. **F5** 키를 선택하거나 **디버깅 시작** 도구 모음 단추를 선택합니다.
 
 1. **그림 표시** 단추를 선택하여 방금 작성한 코드를 실행합니다. 먼저 앱은 **파일 열기** 대화 상자를 엽니다. 대화 상자의 맨 아래에 있는 **파일 형식** 드롭다운 목록에 사용자의 필터가 있는지 확인합니다. 그런 다음 그림을 찾아서 엽니다. 일반적으로 *내 문서* 폴더의 *My Pictures\Sample Pictures* 폴더에서 Windows 운영 체제와 함께 제공되는 샘플 그림을 찾을 수 있습니다.
 

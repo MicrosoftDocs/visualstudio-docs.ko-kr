@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 5037cf0184608829d5a86d736bead5b61f5172c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969336"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>방법: 보고서 보기에서 노이즈 감소 구성
 호출 트리 뷰 및 할당 뷰에 제공되는 데이터 양을 제한하여 노이즈 감소를 위한 성능 보고서를 구성할 수 있습니다. 노이즈 감소를 사용하면 성능 문제가 더 두드러집니다. 성능 보고서를 분석할 경우 이 방법이 유용합니다.

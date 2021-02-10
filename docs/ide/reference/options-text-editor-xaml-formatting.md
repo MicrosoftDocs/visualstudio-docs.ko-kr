@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: f550499545fda3250f4d2449697513fbc8c09fa2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970792"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1825d526fd9026100abcf68a1381d1be47dd44b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970116"
 ---
 # <a name="project-types"></a>프로젝트 형식
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에는 및과 같은 언어에 대 한 여러 가지 프로젝트 형식이 포함 되어 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 고유의 프로젝트 형식을 만들 수도 있습니다.

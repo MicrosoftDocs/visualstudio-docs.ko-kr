@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59bea4894d6b0014542ea2a32bf6c73bc8d797c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 12034ef884fafda2e3e09722b9bb187ed7a1cbb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969973"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VSPackage 파일 위치를 VS Shell에 지정
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage를 로드 하기 위해 어셈블리 DLL을 찾을 수 있어야 합니다. 다음 표에서 설명 하는 것 처럼 다양 한 방법으로 찾을 수 있습니다.
 
-| 메서드 | 설명 |
+| 메서드 | Description |
 | - | - |
 | CodeBase 레지스트리 키를 사용 합니다. | 코드 베이스 키는 정규화 된 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 파일 경로에서 VSPackage 어셈블리를 로드 하도록 지시 하는 데 사용할 수 있습니다. 키의 값은 DLL의 파일 경로 여야 합니다. 패키지 어셈블리를 로드 하는 것이 가장 좋은 방법입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이 기술을 "코드 베이스/개인 설치 디렉터리 기법"이 라고도 합니다. 등록 하는 동안 코드 베이스의 값은 형식의 인스턴스를 통해 등록 특성 클래스로 전달 됩니다 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> . |
 | **PrivateAssemblies** 디렉터리에 DLL을 추가 합니다. | 어셈블리를 디렉터리의 **PrivateAssemblies** 하위 디렉터리에 저장 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. **PrivateAssemblies** 에 있는 어셈블리는 자동으로 검색 되지만 **참조 추가** 대화 상자에 표시 되지 않습니다. **PrivateAssemblies** 와 **publicassemblies** 간의 차이점은 **Publicassemblies** 의 어셈블리가 **참조 추가** 대화 상자에 열거 된다는 것입니다. "CodeBase/private 설치 디렉터리" 기술을 사용 하지 않도록 선택한 경우 **PrivateAssemblies** 디렉터리에를 설치 해야 합니다. |

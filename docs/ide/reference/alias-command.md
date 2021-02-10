@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 7a20a14cc0f48e86840b770aca934b188bf152dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969791"
 ---
 # <a name="alias-command"></a>별칭 명령
 전체 명령에 대한 새 별칭, 전체 명령 및 인수에 대한 새 별칭, 또 다른 별칭을 만듭니다.

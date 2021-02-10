@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ad28dd6890effbac00282a0e9bc388b4191139
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b705042f7713b2571e391801c4a1d29734a031bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969804"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>서비스의 고급 설정 대화 상자
 클라이언트 애플리케이션 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 애플리케이션에서 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. **프로젝트 디자이너** 에서 **서비스** 페이지를 사용하여 클라이언트 애플리케이션 서비스를 구성할 수 있습니다. **서비스** 페이지에 대한 자세한 내용은 [프로젝트 디자이너, 서비스 페이지](../../ide/reference/services-page-project-designer.md)를 참조하세요.

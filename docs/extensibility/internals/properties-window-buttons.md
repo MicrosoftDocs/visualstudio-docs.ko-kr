@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970025"
 ---
 # <a name="properties-window-buttons"></a>속성 창 단추
 개발 언어와 제품 유형에 따라 **속성** 창의 도구 모음에는 기본적으로 특정 단추가 표시 됩니다. 모든 경우에는 **항목별**, **사전순**, **속성** 및 **속성 페이지** 단추가 표시 됩니다. Visual c # 및 Visual Basic에서는 **이벤트** 단추도 표시 됩니다. 특정 Visual C++ 프로젝트에서는 **vc + + 메시지** 와 **vc 재정의** 단추가 표시 됩니다. 다른 프로젝트 형식에 대 한 추가 단추가 표시 될 수 있습니다. **속성** 창에 있는 단추에 대 한 자세한 내용은 [속성 창](../../ide/reference/properties-window.md)을 참조 하세요.
@@ -38,5 +38,5 @@ ms.locfileid: "97878016"
 > [!NOTE]
 > 비관리 코드를 사용 하 여 **속성** 창에 도구 모음 단추를 추가할 수는 없습니다. 도구 모음 단추를 추가 하려면에서 파생 되는 관리 되는 개체를 만들어야 합니다 <xref:System.Windows.Forms.Design.PropertyTab> .
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [속성 확장](../../extensibility/internals/extending-properties.md)

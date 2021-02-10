@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: da60258f41665bbbb5510eb73b4fbca0a88809ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970181"
 ---
 # <a name="project-property-user-interface"></a>프로젝트 속성 사용자 인터페이스
 
@@ -59,7 +59,7 @@ ms.locfileid: "97877392"
 
 프로젝트 하위 형식에 의해 추가 된 새 속성 페이지는 기본 프로젝트 구현에서 프로젝트 구성 찾아보기 개체로 전달 됩니다. 이 프로젝트 구성 찾아보기 개체는 Automation Extender를 지원 합니다. AutomationExtenders에 대 한 자세한 내용은 [Automation Extender 구현 및 사용](/previous-versions/0y92k2w2(v=vs.140))을 참조 하세요. <xref:EnvDTE.Project.Extender%2A>기본 프로젝트의 구성 찾아보기 개체를 확장 하는 자체 프로젝트 하위 형식 구성 찾아보기 개체를 검색 하기 위해 프로젝트 하위 형식 호출에 의해 구현 되는 속성 페이지입니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - <xref:EnvDTE.IFilterProperties>
 - [속성 페이지 대화 상자](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

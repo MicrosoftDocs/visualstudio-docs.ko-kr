@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970272"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 메뉴의 Guid 및 Id
 이 문서에서는 Visual Studio 메뉴 모음에서 메뉴 및 그룹의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -34,7 +34,7 @@ ms.locfileid: "96480410"
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음의 그룹
  메뉴 모음에 메뉴를 추가 하려면 이러한 그룹 중 하나를 부모로 설정 합니다.
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |파일/편집/보기|IDG_VS_MM_FILEEDITVIEW|
 |리팩터링|IDG_VS_MM_REFACTORING:|
@@ -52,7 +52,7 @@ ms.locfileid: "96480410"
 |----------|--------|
 |파일|IDM_VS_MENU_FILE|
 |편집|IDM_VS_MENU_EDIT|
-|View|IDM_VS_MENU_VIEW|
+|보기|IDM_VS_MENU_VIEW|
 |리팩터링|IDM_VS_MENU_REFACTORING|
 |Project|IDM_VS_MENU_PROJECT|
 |빌드|IDM_VS_MENU_BUILD|
@@ -69,7 +69,7 @@ ms.locfileid: "96480410"
 
 ### <a name="file-menu-groups"></a>파일 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |새로 만들기/열기|IDG_VS_FILE_FILE|
 |추가|IDG_VS_FILE_ADD|
@@ -85,7 +85,7 @@ ms.locfileid: "96480410"
 
 ### <a name="edit-menu-groups"></a>메뉴 그룹 편집
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |실행 취소/다시 실행|IDG_VS_EDIT_UNDOREDO|
 |잘라내기/복사/붙여넣기|IDG_VS_EDIT_CUTCOPY|
@@ -98,14 +98,14 @@ ms.locfileid: "96480410"
 
 ### <a name="refactor-menu-groups"></a>리팩터링 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |일반|IDG_REFACTORING_COMMON|
 |고급|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>메뉴 그룹 보기
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |양식 코드|IDG_VS_VIEW_FORMCODE|
 |브라우저|IDG_VS_VIEW_BROWSER|
@@ -126,7 +126,7 @@ ms.locfileid: "96480410"
 
 ### <a name="project-menu-groups"></a>프로젝트 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |기타 추가|IDG_VS_PROJ_MISCADD|
 |추가|IDG_VS_PROJ_ADD|
@@ -138,7 +138,7 @@ ms.locfileid: "96480410"
 
 ### <a name="build-menu-groups"></a>빌드 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |해결 방법|IDG_VS_BUILD_SOLUTION|
 |선택|IDG_VS_BUILD_SELECTION|
@@ -148,7 +148,7 @@ ms.locfileid: "96480410"
 
 ### <a name="tools-menu-groups"></a>도구 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |명령줄|IDG_VS_TOOLS_CMDLINE|
 |코드 조각|IDG_VS_TOOLS_SNIPPETS|
@@ -160,9 +160,9 @@ ms.locfileid: "96480410"
 
 ### <a name="window-menu-groups"></a>창 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
-|새로 만들기|IDG_VS_WINDOW_NEW|
+|단추를 사용하여 새|IDG_VS_WINDOW_NEW|
 |도킹/닫기|IDG_VS_DOCKCLOSE|
 |도킹/숨기기|IDG_VS_DOCKHIDE|
 |정렬|IDG_VS_WINDOW_ARRANGE|
@@ -171,7 +171,7 @@ ms.locfileid: "96480410"
 
 ### <a name="help-menu-groups"></a>도움말 메뉴 그룹
 
-|그룹화|ID|
+|그룹|ID|
 |-----------|--------|
 |샘플|IDG_VS_HELP_SAMPLES|
 |지원|IDG_VS_HELP_SUPPORT|

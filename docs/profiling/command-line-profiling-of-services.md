@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: dd77161184c5cb8be89ed522bbf06b6d80ca4bee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969505"
 ---
 # <a name="command-line-profiling-of-services"></a>서비스의 명령줄 프로파일링
 이 섹션에서는 명령줄에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 Windows 서비스에 대한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.

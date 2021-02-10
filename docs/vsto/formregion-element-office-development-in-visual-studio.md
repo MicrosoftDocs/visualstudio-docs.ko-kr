@@ -11,20 +11,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e13576ef673728d673d0351cf289a80944584bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 469b041ac879753e5fe4be0f9bd739be1030a942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970392"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;n &gt; 요소 (Visual Studio에서 Office 개발)
   `formRegion`네임 스페이스의 요소는 `vstov4` VSTO 추가 기능에 연결 된 Microsoft Office Outlook 양식 영역을 식별 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <formRegion
@@ -41,9 +41,9 @@ ms.locfileid: "85543534"
 
  `formRegion` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
-|`name`|필수 요소. 양식 영역 이름을 식별합니다.|
+|`name`|필수 사항입니다. 양식 영역 이름을 식별합니다.|
 
  `formRegion` 요소에는 다음 자식 요소가 있습니다.
 
@@ -52,11 +52,11 @@ ms.locfileid: "85543534"
 
  `messageClass` 요소에는 다음 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
-|`name`|필수 요소. 양식 영역과 관련된 양식을 식별합니다.|
+|`name`|필수 사항입니다. 양식 영역과 관련된 양식을 식별합니다.|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 `formRegion` 을 사용하여 배포된 Outlook VSTO 추가 기능에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 양식 영역과 관련된 세 개의 메시지 클래스가 있습니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ```xml
@@ -68,7 +68,7 @@ ms.locfileid: "85543534"
 </vstov4:formRegion>
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)

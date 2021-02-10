@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969271"
 ---
 # <a name="modules-view---contention-data"></a>모듈 뷰 - 경합 데이터
 경합 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 동시성 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 경합 이벤트가 발생한 모듈의 함수는 모듈 노드 아래에 나열됩니다.

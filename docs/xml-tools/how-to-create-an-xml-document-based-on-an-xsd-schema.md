@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdd987a5153a4f421b4bfad83e1ce7979dddb54
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 6bc802d48bc76bc5f0c6a4c272bf994e87bb8443
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970311"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>방법: XSD 스키마를 기반으로 XML 문서 만들기
 

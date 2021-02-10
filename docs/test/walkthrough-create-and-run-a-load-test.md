@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 888bf1f699027ab883a01ba74d8efc5703c91c9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968972"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 

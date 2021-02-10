@@ -19,15 +19,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 05a17b373f409e91f9360cbd3ba92f88bd3f48e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970402"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office 응용 프로그램 및 프로젝트 형식에 따라 사용 가능한 기능
   Visual Studio에는 다음과 같은 형식을 비롯하여 Microsoft Office 애플리케이션에 대한 다양한 비즈니스 시나리오를 지원하는 몇 가지 프로젝트 템플릿 형식이 있습니다.
@@ -52,7 +52,7 @@ ms.locfileid: "96847808"
 ## <a name="features-available-in-different-project-types"></a>다양 한 프로젝트 형식에서 사용할 수 있는 기능
  다음 표에서는 각 기능을 제공하는 프로젝트 형식을 보여 줍니다.
 
-|기능|기능을 제공하는 프로젝트 형식|추가 참고 자료|
+|기능|기능을 제공하는 프로젝트 형식|추가 정보|
 |-------------|--------------------------------------------|---------------------|
 |작업창|문서 수준 프로젝트|[작업 창 개요](../vsto/actions-pane-overview.md)|
 |ClickOnce 배포.|VS 및 문서 수준 프로젝트|[Office 솔루션 배포](../vsto/deploying-an-office-solution.md)|

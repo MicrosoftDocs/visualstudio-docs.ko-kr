@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969011"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 항목 추가
 **새 항목 추가** 대화 상자에 항목을 추가 하는 프로세스는 레지스트리 키로 시작 합니다. 다음 레지스트리 항목에 표시 된 것 처럼 **Additemtemplates** 섹션에는 **새 항목 추가** 대화 상자에서 사용할 수 있는 항목이 배치 된 디렉터리의 경로와 이름이 포함 되어 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "96190163"
 
  **Sortpriority** = dword: 00000064
 
-| 이름 | 유형 | 데이터 ( *.rgs* 파일) | Description |
+| 이름 | Type | 데이터 ( *.rgs* 파일) | Description |
 |------------------|-----------| - | - |
 | @ (기본값) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | **항목 템플릿 추가** 의 리소스 ID입니다. |
 | Val 템플릿 디렉터리 | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **새 항목 추가** 마법사의 대화 상자에 표시 되는 프로젝트 항목의 경로입니다. |
@@ -79,7 +79,7 @@ ms.locfileid: "96190163"
 
   이 필터 기능을 구현 하는 경우 숨겨야 하는 모든 항목의 테이블을 매핑할 필요가 없습니다. 항목을 형식으로 분류 하 고 해당 분류를 *.vsdir* 파일이 나 파일에 배치할 수 있습니다. 그런 다음 인터페이스를 구현 하 여 특정 분류가 포함 된 항목을 숨길 수 있습니다. 이러한 방식으로 프로젝트 내의 상태를 기준으로 **새 항목 추가** 대화 상자에서 항목을 동적으로 만들 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 - [일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

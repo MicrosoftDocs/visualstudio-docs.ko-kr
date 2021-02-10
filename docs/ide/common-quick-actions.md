@@ -5,22 +5,22 @@ ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d24b03bc79c32c32c570d26b7607d1ba36c1c1df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970909"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
-이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 [.NET Compiler Platform 분석기](../code-quality/roslyn-analyzers-overview.md)에 대한 *코드 수정*입니다.
+이 항목의 섹션에는 C# 및 Visual Basic 코드 모두에 적용할 수 있는 일반적인 **빠른 작업** 중 일부가 나와 있습니다. 이러한 작업은 컴파일러 진단 또는 Visual Studio의 기본 제공 [.NET Compiler Platform 분석기](../code-quality/roslyn-analyzers-overview.md)에 대한 *코드 수정* 입니다.
 
 ## <a name="actions-that-fix-errors"></a>오류를 수정하는 작업
 
@@ -449,7 +449,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>보간된 문자열로 변환
 
-[보간된 문자열](/dotnet/csharp/language-reference/keywords/interpolated-strings)은 포함된 변수로 문자열을 표현하는 간단한 방법이며, **[String.Format](/dotnet/api/system.string.format#overloads)** 메서드와 유사합니다.  이 빠른 작업은 문자열이 연결되는 사례를 인식하거나 **String.Format**을 사용하여 사용법을 보간된 문자열로 변경합니다.
+[보간된 문자열](/dotnet/csharp/language-reference/keywords/interpolated-strings)은 포함된 변수로 문자열을 표현하는 간단한 방법이며, **[String.Format](/dotnet/api/system.string.format#overloads)** 메서드와 유사합니다.  이 빠른 작업은 문자열이 연결되는 사례를 인식하거나 **String.Format** 을 사용하여 사용법을 보간된 문자열로 변경합니다.
 
 ```csharp
 // Before

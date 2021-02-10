@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970545"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Visual Studio에서 Python 지원 설치
 
@@ -31,11 +31,11 @@ ms.locfileid: "62431298"
     >[!Tip]
     > 커뮤니티 에디션은 개인 개발자, 교실 학습, 학술 연구 및 오픈 소스 개발용입니다. 다른 용도의 경우 [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 또는 [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)를 설치합니다.
 
-1. 설치 관리자는 특정 개발 영역에 대한 관련 옵션의 그룹인 워크로드 목록을 제공합니다. Python의 경우 **Python 개발** 워크로드를 선택하고 **설치**를 선택합니다.
+1. 설치 관리자는 특정 개발 영역에 대한 관련 옵션의 그룹인 워크로드 목록을 제공합니다. Python의 경우 **Python 개발** 워크로드를 선택하고 **설치** 를 선택합니다.
 
     ![Visual Studio 설치 관리자의 Python 개발 작업](media/installation-python-workload.png)
 
-1. Python 지원을 신속하게 테스트하려면 Visual Studio를 시작하고 **Alt**+**I**를 눌러 **Python 대화형** 창을 연 다음, `2+2`를 입력합니다. **4** 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
+1. Python 지원을 신속하게 테스트하려면 Visual Studio를 시작하고 **Alt**+**I** 를 눌러 **Python 대화형** 창을 연 다음, `2+2`를 입력합니다. **4** 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
 
     ![대화형 창을 통해 Python 테스트](media/installation-interactive-test.png)
 

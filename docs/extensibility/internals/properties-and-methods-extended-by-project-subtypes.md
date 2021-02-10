@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cff332d7b573bb2fdff886b4206ea1267c091c48
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970064"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>프로젝트 하위 형식에 의해 확장된 속성 및 메서드
 프로젝트 하위 형식에는 기본 프로젝트의 집계로 생성 되기 때문에 프로젝트의 동작에 영향을 줄 수 있는 많은 기능이 있습니다. 이 섹션에서는 프로젝트 하위 형식으로 향상 또는 수정할 수 있는 기능 중 일부를 요약 합니다.
@@ -50,5 +50,5 @@ ms.locfileid: "97878042"
 
  기본 프로젝트는 위의 속성에 대 한 기본 구현을 제공 합니다. 기본 프로젝트는 `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 가장 바깥쪽 프로젝트 하위 형식에 대해를 호출 하 여 프로젝트 하위 형식이 속성 구현을 재정의할 수 있도록 하 여 이러한 속성을 가져옵니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 하위 형식 디자인](../../extensibility/internals/project-subtypes-design.md)

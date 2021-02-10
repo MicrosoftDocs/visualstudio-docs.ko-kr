@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecde348ce52bdd354df61855d9907acf85900be2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f6c9463604cda8c26a53cb02802252dfe40d309b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970129"
 ---
 # <a name="project-types-architecture"></a>프로젝트 형식 아키텍처
 이 섹션에는의 프로젝트 형식 아키텍처에 대 한 자세한 정보가 포함 되어 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
