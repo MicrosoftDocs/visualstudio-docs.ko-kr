@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937708"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>연습: 기본 사이트 정의 프로젝트 만들기
   이 연습에서는 일부 컨트롤을 포함 하는 시각적 웹 파트를 포함 하는 기본 사이트 정의를 만드는 방법을 보여 줍니다. 명확 하 게 하기 위해 만드는 시각적 웹 파트에는 몇 개의 컨트롤만 있습니다. 그러나 더 많은 기능을 포함 하는 보다 정교한 SharePoint 사이트 정의를 만들 수 있습니다.

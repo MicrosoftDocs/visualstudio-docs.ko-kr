@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938098"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
 확장 개발을 마친 후에는 다른 컴퓨터에 설치 하거나, 친구 및 동료와 공유 하거나, Visual Studio Marketplace에 게시할 수 있습니다. 이 섹션에서는 확장명을 게시 하 고 유지 관리 하기 위해 수행 해야 하는 모든 작업을 설명 합니다. .vsix 파일 작업, 게시, 지역화, 업데이트 등이 있습니다.
@@ -49,7 +49,7 @@ ms.locfileid: "97716005"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX 프로젝트 템플릿을 사용 하 여 사용자 지정 프로젝트 템플릿을 설치 하는 방법을 설명 합니다.|
 |[VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)|VSIX 패키지의 구성 요소에 대해 설명 합니다.|

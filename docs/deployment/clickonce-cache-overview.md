@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4bc8d045ff21a536016edc0a0ac64d99c63c2f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 12c14850717688b17caed2fbe7feb546e0ebdb6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936173"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 캐시 개요
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]로컬에서 설치 하거나 온라인으로 호스트 하 든 모든 응용 프로그램은 클라이언트 컴퓨터에 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램 *캐시* 에 저장 됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]캐시는 현재 사용자의 Documents And Settings 폴더에 있는 로컬 설정 디렉터리 아래의 숨겨진 디렉터리 패밀리입니다. 이 캐시에는 어셈블리, 구성 파일, 응용 프로그램 및 사용자 설정, 데이터 디렉터리를 비롯 한 모든 응용 프로그램 파일이 저장 됩니다. 캐시는 응용 프로그램의 데이터 디렉터리를 최신 버전으로 마이그레이션하는 역할도 담당 합니다. 데이터 마이그레이션에 대 한 자세한 내용은 [ClickOnce 응용 프로그램의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)를 참조 하세요.
@@ -35,5 +35,5 @@ ms.locfileid: "94383107"
 
  기본적으로 클라이언트 컴퓨터는 온라인 응용 프로그램용 250 MB의 저장소를 포함 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 합니다. 데이터 파일은이 제한에 계산 되지 않습니다. 시스템 관리자는 캐시 크기 (kb)를 표현 하는 DWORD 값인 **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB** 레지스트리 키를 변경 하 여 특정 클라이언트 컴퓨터에서이 할당량을 확대 하거나 축소할 수 있습니다. 예를 들어 캐시 크기를 50 MB로 줄이기 위해이 값을 51200로 변경 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

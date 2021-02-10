@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f804f9a47314bfd239e6904286122776977e92e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936927"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 예외 상태를 지정 합니다.

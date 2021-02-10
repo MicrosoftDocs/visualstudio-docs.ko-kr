@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937077"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 식 계산을 제어 하는 플래그를 지정 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80737113"
 ## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_EVALFLAGS {
+enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,
@@ -41,7 +41,7 @@ typedef DWORD EVALFLAGS;
 ```
 
 ```csharp
-public enum enum_EVALFLAGS {
+public enum enum_EVALFLAGS {
     EVAL_RETURNVALUE = 0x0002,
     EVAL_NOSIDEEFFECTS = 0x0004,
     EVAL_ALLOWBPS = 0x0008,

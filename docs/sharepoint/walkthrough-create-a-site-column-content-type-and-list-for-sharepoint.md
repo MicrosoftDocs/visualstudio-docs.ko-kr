@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937695"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint용 사이트 열, 콘텐츠 형식, 목록 만들기
   다음 절차에서는 사용자 지정 SharePoint 사이트 열 또는 *필드* 를 만드는 방법 및 사이트 열을 사용 하는 내용 유형을 보여 줍니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법도 보여 줍니다.
@@ -64,7 +64,7 @@ ms.locfileid: "96914012"
 
 4. 프로젝트의 이름을 **클리닉** 으로 변경한 다음 **확인** 단추를 선택 합니다.
 
-5. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<` *SystemName* `>/)` .
+5. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<`  `>/)` .
 
 6. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포** 를 사용 합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "96914012"
 
 3. 프로젝트의 이름을 **클리닉** 로 변경한 다음 **만들기** 단추를 선택 합니다.
 
-4. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<` *SystemName* `>/)` .
+4. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (SystemName)를 사용 합니다 `http://<`  `>/)` .
 
 5. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포** 를 사용 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "96914012"
 
 #### <a name="to-add-site-columns"></a>사이트 열을 추가 하려면
 
-1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기** 에서 **클리닉** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **Add**  >  **새 항목** 추가를 선택 합니다.
+1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기** 에서 **클리닉** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음   >  **새 항목** 추가를 선택 합니다.
 
 2. **새 항목 추가** 대화 상자에서 **사이트 열** 을 선택 하 고 이름을 **PatientName** 로 변경한 다음 **추가** 단추를 선택 합니다.
 

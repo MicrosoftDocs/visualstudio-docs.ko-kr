@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ef415763a67232f79b269650abecfe6bcabe6bd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937201"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 활동 디자이너
 
@@ -39,9 +39,9 @@ ms.locfileid: "96993239"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름입니다. 기본값은 CancellationScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|참|취소 논리가 제공되는 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CancellationScope.Body%2A> **도구 상자** 의 활동을 **CancellationScope** 활동 디자이너의 **본문** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|참|취소가 있는 경우 실행 되는 작업을 지정 합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> **도구 상자** 의 활동을 **CancellationScope** 활동 디자이너의 **CancellationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름입니다. 기본값은 CancellationScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|취소 논리가 제공되는 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CancellationScope.Body%2A> **도구 상자** 의 활동을 **CancellationScope** 활동 디자이너의 **본문** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|취소가 있는 경우 실행 되는 작업을 지정 합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> **도구 상자** 의 활동을 **CancellationScope** 활동 디자이너의 **CancellationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

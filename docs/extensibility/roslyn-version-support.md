@@ -8,15 +8,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f76a8dcdbb644fe456c62fca7de6fb7afe96d556
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935896"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 컴파일러 플랫폼 패키지 버전 참조
 
@@ -45,7 +45,7 @@ ms.locfileid: "97715745"
 > [!TIP]
 > 지원 되는 최소 Visual Studio 버전이 Visual Studio 2017 버전인 Roslyn 패키지의 경우 모든 버전의 Visual Studio 2019도 나중에 제공 되므로 지원 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [Roslyn 분석기 시작](getting-started-with-roslyn-analyzers.md)

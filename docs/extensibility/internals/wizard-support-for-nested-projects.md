@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f2cd84379ead1cd45296ae370aab215a37cf4b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935873"
 ---
 # <a name="wizard-support-for-nested-projects"></a>중첩된 프로젝트에 대한 마법사 지원
 IDE는 중첩 된 프로젝트용 부모 프로젝트에서 구현할 수 있는 두 가지 마법사 인 **새 프로젝트** 마법사와 **항목 추가** 마법사를 실행 합니다.

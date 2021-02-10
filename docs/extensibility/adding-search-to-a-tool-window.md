@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937103"
 ---
 # <a name="add-search-to-a-tool-window"></a>도구 창에 검색 추가
 확장에서 도구 창을 만들거나 업데이트 하는 경우 Visual Studio의 다른 위치에 표시 되는 것과 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음과 같은 기능이 포함 됩니다.
@@ -84,7 +84,7 @@ ms.locfileid: "95597641"
 
 5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 나타납니다.
 
-6. 메뉴 모음에서 **View**  >  **다른 창**  >  **testsearch** 보기를 선택 합니다.
+6. 메뉴 모음에서   >  **다른 창**  >  **testsearch** 보기를 선택 합니다.
 
      도구 창이 나타나지만 검색 컨트롤이 아직 표시 되지 않습니다.
 

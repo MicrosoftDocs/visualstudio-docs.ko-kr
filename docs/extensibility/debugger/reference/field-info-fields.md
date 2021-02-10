@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936914"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 대해 검색할 정보를 지정 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80736900"
 ## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_FIELD_INFO_FIELDS { 
+enum enum_FIELD_INFO_FIELDS { 
     FIF_FULLNAME  = 0x0001,
     FIF_NAME      = 0x0002,
     FIF_TYPE      = 0x0004,

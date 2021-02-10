@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3742e60c1bc8a0e490ca83ba14eadc4b879d3e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936901"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 될 수 있는 추가 종류의 필드를 열거 합니다. 이 열거형은 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 열거형을 확장 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_FIELD_KIND_EX

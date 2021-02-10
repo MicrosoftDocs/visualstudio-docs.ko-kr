@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936940"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -34,7 +34,7 @@ ms.locfileid: "80736948"
 
 - Visual Studio (VS)
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|변수의 숫자 별칭을 나타냅니다.|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|변수에 대 한 숫자 별칭을 나타내며 식 계산기 (EE)에서 별칭의 응용 프로그램 도메인을 가져올 수 있도록 합니다.|
@@ -59,7 +59,7 @@ ms.locfileid: "80736948"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 개체를 만들 수 있는 기능을 제공 합니다.|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|[Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체의 컬렉션을 나타냅니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [CLR 식 계산기 작성](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

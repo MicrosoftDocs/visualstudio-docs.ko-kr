@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937383"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업 창에서 문서에 텍스트 삽입
   이 연습에서는 Microsoft Office Word 문서에서 작업 창을 만드는 방법을 보여 줍니다. 작업 창에는 입력을 수집한 다음 텍스트를 문서에 보내는 두 개의 컨트롤이 포함 되어 있습니다.
@@ -115,7 +115,7 @@ ms.locfileid: "97524165"
     |속성|값|
     |--------------|-----------|
     |**이름**|**getName**|
-    |**크기**|**130, 20**|
+    |**Size**|**130, 20**|
 
 5. 작업 창 컨트롤에 두 번째 **Label** 컨트롤을 추가 하 고 **Text** 속성을 **Address** 로 변경 합니다.
 
@@ -126,7 +126,7 @@ ms.locfileid: "97524165"
     |**이름**|**getAddress**|
     |**반환 허용**|**True**|
     |**여러 줄**|**True**|
-    |**크기**|**130, 40**|
+    |**Size**|**130, 40**|
 
 7. 작업 창 컨트롤에 **Button** 컨트롤을 추가 하 고 다음 속성을 변경 합니다.
 

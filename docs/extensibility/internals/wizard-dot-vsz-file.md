@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935861"
 ---
 # <a name="wizard-vsz-file"></a>마법사(.Vsz) 파일
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 다음은 .vsz 파일의 일부입니다.
 
-|파트|Description|
+|부분|Description|
 |----------|-----------------|
 |VSWizard|파일의 첫 번째 매개 변수는 템플릿 파일 형식의 버전 번호입니다. 이 버전 번호는 6.0, 7.0, 7.1 또는 8.0 이어야 합니다. 다른 숫자는 시작할 수 없으며 잘못 된 형식 오류가 발생 합니다.|
 |마법사|이 필드에는 마법사의 OLE ProgID 또는 IDE에서 공동으로 생성 되는 마법사의 CLSID에 대 한 GUID 문자열 표현이 포함 되어 있습니다.|

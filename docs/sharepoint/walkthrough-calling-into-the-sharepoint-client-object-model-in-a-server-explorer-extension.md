@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937682"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출
   이 연습에서는 **서버 탐색기** 의 **sharepoint 연결** 노드에 대 한 확장에서 sharepoint 클라이언트 개체 모델을 호출 하는 방법을 보여 줍니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 [sharepoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.
@@ -41,7 +41,7 @@ ms.locfileid: "96913947"
 > [!NOTE]
 > 이 연습에서 만드는 확장 프로그램은 [연습: 서버 탐색기 확장 하 여 웹 파트를 표시 하](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)는 확장명과 비슷합니다. 이 연습에서는 SharePoint 서버 개체 모델을 사용 하지만이 연습에서는 클라이언트 개체 모델을 사용 하 여 동일한 작업을 수행 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -214,7 +214,7 @@ ms.locfileid: "96913947"
 
 8. **프로젝트** 목록에서 **webpartnodeextension** 을 선택 하 고 **확인** 단추를 선택 합니다.
 
-9. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
+9. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
 
 10. 이제 WebPartNode 프로젝트에 대 한 빌드 출력 폴더에 WebPartNode .vsix 파일이 포함 되어 있는지 확인 합니다.
 
@@ -235,7 +235,7 @@ ms.locfileid: "96913947"
 
 #### <a name="to-test-the-extension"></a>확장을 테스트 하려면
 
-1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 서버 탐색기 **보기** 를 선택  >  **Server Explorer** 합니다.
+1. Visual Studio의 실험적 인스턴스에서 메뉴 모음에서 서버 탐색기 **보기** 를 선택  >  합니다.
 
 2. 테스트에 사용 하려는 SharePoint 사이트가 **서버 탐색기** 의 **sharepoint 연결** 노드 아래에 나타나는지 확인 합니다. 나열 되지 않은 경우 다음 단계를 수행 합니다.
 

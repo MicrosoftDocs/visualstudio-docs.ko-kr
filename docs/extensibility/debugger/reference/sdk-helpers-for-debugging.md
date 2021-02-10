@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936004"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 이러한 함수와 선언에는 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하기 위한 전역 도우미 함수가 있습니다.
@@ -49,7 +49,7 @@ HRESULT GetMetric(
 );
 ```
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |pszMachine|진행 등록을 쓸 수 있는 원격 컴퓨터의 이름 `NULL` 입니다 (로컬 컴퓨터).|
 |pszType|진행 메트릭 유형 중 하나입니다.|
@@ -72,7 +72,7 @@ HRESULT SetMetric(
 );
 ```
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |pszType|진행 메트릭 유형 중 하나입니다.|
 |guidSection|진행 특정 엔진, 평가기, 예외 등의 GUID입니다. 특정 요소에 대 한 메트릭 형식의 하위 섹션을 지정 합니다.|
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
 );
 ```
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |pszType|진행 메트릭 유형 중 하나입니다.|
 |guidSection|진행 특정 엔진, 평가기, 예외 등의 GUID입니다. 특정 요소에 대 한 메트릭 형식의 하위 섹션을 지정 합니다.|
@@ -113,7 +113,7 @@ HRESULT EnumMetricSections(
 );
 ```
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |pszMachine|진행 등록을 쓸 수 있는 원격 컴퓨터의 이름 `NULL` 입니다 (로컬 컴퓨터).|
 |pszType|진행 메트릭 유형 중 하나입니다.|
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>식 계산기 함수
 
-|함수|설명|
+|함수|Description|
 |--------------|-----------------|
 |GetEEMetric|레지스트리에서 메트릭 값을 검색 합니다.|
 |SetEEMetric|레지스트리에서 지정 된 메트릭 값을 설정 합니다.|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>예외 함수
 
-|함수|설명|
+|함수|Description|
 |--------------|-----------------|
 |GetExceptionMetric|레지스트리에서 메트릭 값을 검색 합니다.|
 |SetExceptionMetric|레지스트리에서 지정 된 메트릭 값을 설정 합니다.|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>기호 공급자 함수
 
-|함수|설명|
+|함수|Description|
 |--------------|-----------------|
 |GetSPMetric|레지스트리에서 메트릭 값을 검색 합니다.|
 |SetSPMetric|레지스트리에서 지정 된 메트릭 값을 설정 합니다.|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>열거 함수
 
-|함수|설명|
+|함수|Description|
 |--------------|-----------------|
 |EnumMetricSections|지정 된 메트릭 유형에 대 한 모든 메트릭을 열거 합니다.|
 |EnumDebugEngine|등록 된 디버그 엔진을 열거 합니다.|
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|모든 예외 메트릭입니다.|
 |metricttypeEEExtension|모든 식 계산기 확장입니다.|
 
-|디버그 엔진 속성|설명|
+|디버그 엔진 속성|Description|
 |-----------------------------|-----------------|
 |metricAddressBP|주소 중단점에 대 한 지원을 나타내려면 0이 아닌 값으로 설정 합니다.|
 |metricAlwaysLoadLocal|항상 디버그 엔진을 로컬로 로드 하려면 0이 아닌 값으로 설정 합니다.|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|이 디버그 엔진과 호환 되지 않는 디버그 엔진에 대 한 Guid를 지정 하는 항목을 포함 하는 레지스트리 키입니다.|
 |metricDisableJITOptimization|디버깅 하는 동안 just-in-time 최적화 (관리 코드의 경우)를 사용 하지 않도록 설정 하려면이 값을 0이 아닌 값으로 설정 합니다.|
 
-|식 계산기 속성|설명|
+|식 계산기 속성|Description|
 |-------------------------------------|-----------------|
 |metricEngine|이는 지정 된 식 계산기를 지 원하는 디버그 엔진 수를 포함 합니다.|
 |metricPreloadModules|프로그램에 대해 식 계산기가 시작 될 때 모듈을 미리 로드 해야 함을 나타내려면이 값을 0이 아닌 값으로 설정 합니다.|
 |metricThisObjectName|이를 "this" 개체 이름으로 설정 합니다.|
 
-|식 계산기 확장 속성|설명|
+|식 계산기 확장 속성|Description|
 | - |-----------------|
 |metricExtensionDll|이 확장을 지 원하는 dll의 이름입니다.|
 |metricExtensionRegistersSupported|지원 되는 레지스터 목록입니다.|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |metricExtensionTypesSupported|지원 되는 형식 목록입니다.|
 |metricExtensionTypesEntryPoint|형식에 액세스 하기 위한 진입점입니다.|
 
-|포트 공급자 속성|설명|
+|포트 공급자 속성|Description|
 |------------------------------|-----------------|
 |metricPortPickerCLSID|포트 선택의 CLSID (사용자가 포트를 선택 하 고 디버깅에 사용할 포트를 추가 하는 데 사용할 수 있는 대화 상자)입니다.|
 |metricDisallowUserEnteredPorts|사용자가 입력 한 포트를 포트 공급자에 추가할 수 없는 경우 0이 아닌 포트 선택 대화 상자가 기본적으로 읽기 전용으로 설정 됩니다.|
 |metricPidBase|프로세스 Id를 할당할 때 포트 공급자에서 사용 하는 기본 프로세스 ID입니다.|
 
-|미리 정의 된 SP 저장소 유형|설명|
+|미리 정의 된 SP 저장소 유형|Description|
 |-------------------------------|-----------------|
 |Stor파일 파일|기호는 별도 파일에 저장 됩니다.|
 |storetypeMetadata|기호는 어셈블리에 메타 데이터로 저장 됩니다.|
 
-|기타 속성|설명|
+|기타 속성|Description|
 |------------------------------|-----------------|
 |metricShowNonUserCode|사용자 코드가 아닌 코드를 표시 하려면이 값을 0이 아닌 값으로 설정 합니다.|
 |metricJustMyCodeStepping|이 값을 0이 아닌 값으로 설정 하 여 단계별 실행이 사용자 코드 에서만 발생할 수 있음을 표시 합니다.|

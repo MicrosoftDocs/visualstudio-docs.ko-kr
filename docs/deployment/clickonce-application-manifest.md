@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccd8389859de3ffce7b04e2da648b2ac2e807a79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936186"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce 애플리케이션 매니페스트
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램 매니페스트는를 사용 하 여 배포 되는 응용 프로그램을 설명 하는 XML 파일입니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -36,8 +36,8 @@ ms.locfileid: "94383120"
 | [\<trustInfo> 요소](../deployment/trustinfo-element-clickonce-application.md) | 애플리케이션 보안 요구 사항을 식별합니다. | None |
 | [\<entryPoint> 요소](../deployment/entrypoint-element-clickonce-application.md) | 필수 사항입니다. 응용 프로그램 코드 진입점을 식별 합니다. | `name` |
 | [\<dependency> 요소](../deployment/dependency-element-clickonce-application.md) | 필수 사항입니다. 애플리케이션을 실행하는 데 필요한 각 종속성을 식별합니다. 필요에 따라 사전 설치해야 하는 어셈블리를 식별합니다. | None |
-| [\<file> 요소](../deployment/file-element-clickonce-application.md) | (선택 사항) 응용 프로그램에서 사용 하는 각 nonassembly 파일을 식별 합니다. 파일에 연결된 COM(구성 요소 개체 모델) 격리 데이터를 포함할 수 있습니다. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation> 요소](../deployment/fileassociation-element-clickonce-application.md) | (선택 사항) 응용 프로그램과 연결할 파일 확장명을 식별 합니다. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<file> 요소](../deployment/file-element-clickonce-application.md) | 선택 사항입니다. 응용 프로그램에서 사용 하는 각 nonassembly 파일을 식별 합니다. 파일에 연결된 COM(구성 요소 개체 모델) 격리 데이터를 포함할 수 있습니다. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation> 요소](../deployment/fileassociation-element-clickonce-application.md) | 선택 사항입니다. 응용 프로그램과 연결할 파일 확장명을 식별 합니다. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>설명
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]응용 프로그램 매니페스트 파일은를 사용 하 여 배포 된 응용 프로그램을 식별 합니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)를 참조하세요.
@@ -52,7 +52,7 @@ ms.locfileid: "94383120"
 
  `example.exe.manifest`
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 응용 프로그램에 대 한 응용 프로그램 매니페스트를 보여 줍니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
 ```xml
@@ -116,5 +116,5 @@ ms.locfileid: "94383120"
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)
