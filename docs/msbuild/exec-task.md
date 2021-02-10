@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877163"
 ---
 # <a name="exec-task"></a>Exec 작업
 
@@ -37,7 +37,7 @@ ms.locfileid: "92436739"
 
 |매개 변수|설명|
 |---------------|-----------------|
-|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 *program.exe* , *runprogram.bat* 또는 *setup.msi* 와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|
+|`Command`|필수 `String` 매개 변수입니다.<br /><br /> 실행할 명령입니다. Attrib와 같은 시스템 명령이나 *program.exe*, *runprogram.bat* 또는 *setup.msi* 와 같은 실행 파일일 수 있습니다.<br /><br /> 이 매개 변수는 여러 줄의 명령을 포함할 수 있습니다. 또는 여러 개의 명령을 하나의 배치 파일에 추가하고 이 매개 변수를 사용하여 실행할 수 있습니다.|
 |`ConsoleOutput`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 각 항목 출력은 도구에서 생성하는 표준 출력 또는 표준 오류 스트림의 줄입니다. 이는 `ConsoleToMsBuild`가 `true`로 설정된 경우에만 캡처됩니다.|
 |`ConsoleToMsBuild`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`일 경우 작업이 도구의 표준 오류 및 표준 출력을 캡처하고, `ConsoleOutput` 출력 매개 변수에서 사용할 수 있게 합니다.<br /><br />기본값: `false`.|
 |`CustomErrorRegularExpression`|선택적 `String` 매개 변수입니다.<br /><br /> 도구 출력에서 오류 줄을 찾는 데 사용되는 정규식을 지정합니다. 예외적으로 형식이 지정된 출력을 생성하는 도구에 유용합니다.<br /><br />기본값: `null`(사용자 지정 처리 안 함).|

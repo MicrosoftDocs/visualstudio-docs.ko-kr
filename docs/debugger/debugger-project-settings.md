@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: a3f517e54ba96ecf81b1ac533cf734f2b0a0eb5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873044"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
 일부 프로젝트 설정도 디버깅에 영향을 미칩니다. 즉, 디버거가 검색할 디렉터리, 프로그램 실행에 사용할 명령과 명령 인수, 프로그램에 대해 생성되는 디버그 정보의 형식 등과 같은 사항이 이러한 설정에 따라 결정됩니다. **속성 페이지** 대화 상자에서 이 설정을 변경할 수 있습니다.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876331"
 ---
 # <a name="messages-view"></a>메시지 뷰
 각 창에는 연결된 메시지 스트림이 있습니다. 메시지 뷰 창에 이 메시지 스트림이 표시됩니다. 창 핸들, 메시지 코드 및 메시지가 표시됩니다. 스레드 또는 프로세스를 위한 메시지 뷰도 만들 수 있습니다. 이렇게 하면 특정 프로세스나 스레드에서 소유하는 모든 창에 전송된 메시지를 볼 수 있으며, 창 초기화 메시지를 캡처하는 데 특히 유용합니다.

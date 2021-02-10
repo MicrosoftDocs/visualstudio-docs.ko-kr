@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0c68b468cac63d556e9757210c8ce2933d94cba6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877215"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 작업
 

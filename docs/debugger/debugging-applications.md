@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6833a5f8421670456c427e0bf19625b56467162a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872822"
 ---
 # <a name="debugging-applications"></a>애플리케이션 디버깅
 다음 섹션에서는 특정 유형의 애플리케이션에 대한 디버그를 설명합니다. 다른 애플리케이션 종류와 다른 언어는 다른 설정과 기술을 필요로 하며, 디버그해야 하는 다양한 문제를 발생시킵니다.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2dcacff924386cc279708c34d2232e50aa92c55
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 2d2fed2765d04fa55c790afb7251a24b98a4d74f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872627"
 ---
 # <a name="debugging-f"></a>F\# 디버그
 F# 디버깅은 다음과 같은 몇 가지 예외를 제외하고는 관리되는 언어 디버깅과 비슷합니다.

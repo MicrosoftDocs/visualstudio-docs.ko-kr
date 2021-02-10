@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8cac3e16e06c23d0d51ee4483bcf5fb8abfb05
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c3e376980fb7c1e7f2378f23ae8230e6e45264ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874771"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구 개요
 

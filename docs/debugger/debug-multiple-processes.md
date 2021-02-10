@@ -18,15 +18,15 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: fdb86d0c0140c7d0c30b3a56fbf875215d1e626e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873292"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>여러 프로세스 디버그(C#, Visual Basic, C++)
 

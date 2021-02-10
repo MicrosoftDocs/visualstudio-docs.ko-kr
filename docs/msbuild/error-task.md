@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4e4e1a91bc018bdf77671b13994ce57e4e10e694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877202"
 ---
 # <a name="error-task"></a>Error 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "92436648"
 
 다음 표에서는 `Error` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |---------------| - |
 | `Code` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류와 연결할 오류 코드입니다. |
 | `File` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류가 포함된 파일의 이름입니다. 파일 이름을 제공하지 않으면 오류 작업이 포함된 파일이 사용됩니다. |

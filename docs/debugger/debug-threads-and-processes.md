@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 7d3b2bc8a0a9011c04642070125c247a8dceed66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873186"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Visual Studio의 스레드 및 프로세스 디버그 도구
 *스레드* 및 *프로세스* 는 컴퓨터 분야에서 서로 연관된 개념입니다. 이 둘은 모두 특정 순서로 실행해야 할 명령 시퀀스를 나타냅니다. 그러나 개별 스레드 또는 프로세스의 명령은 함께 실행할 수 있습니다.

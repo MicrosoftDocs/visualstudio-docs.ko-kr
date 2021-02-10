@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 144065c5ee04c75582307440b4cee6242b48bc01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726451"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874615"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
 B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감에 대한 블록 압축을 사용하도록 설정합니다.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fc320034ef5ea86006abf6f19079e8b0a45a82
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9eef76a3757d9a2ff8ece5da5c18968097bd7618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878164"
 ---
 # <a name="signfile-task"></a>SignFile 작업
 

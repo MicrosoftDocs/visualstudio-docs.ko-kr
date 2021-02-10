@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8efdc1a35e6129de7e33d28fa7592ead48e17e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74b4cfebc7a6160577f1e817c9171f2eae69533c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874758"
 ---
 # <a name="xslt-default-templates"></a>XSLT 기본 템플릿
 

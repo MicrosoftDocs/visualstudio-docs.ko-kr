@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a304006a778dc4766e6b4be9ceb133450c0dfb52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876916"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 

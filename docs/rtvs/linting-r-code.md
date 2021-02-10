@@ -7,23 +7,23 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873660"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Visual Studio에서 R 코드 Lint
 
 Linter는 잠재적 오류, 서식 지정 문제 및 기타 코드 노이즈(예: 잘못된 공백)를 표시하기 위해 코드를 분석합니다. 또한 Linter는 식별자의 이름 지정 방법과 같은 특정 코딩 규칙을 권장하는 데에도 도움이 됩니다. 이러한 규칙은 팀 및 기타 공동 작업 상황에서 유용합니다.
 
-RTVS(Visual Studio용 R 도구)는 R에 대해 이 문서에 설명된 다양한 옵션을 통해 동작을 제어하는 기본 제공 Linter를 제공합니다. 이러한 옵션은 **도구** > **옵션** > **텍스트 편집기** > **R** > **Lint**에 있습니다.
+RTVS(Visual Studio용 R 도구)는 R에 대해 이 문서에 설명된 다양한 옵션을 통해 동작을 제어하는 기본 제공 Linter를 제공합니다. 이러한 옵션은 **도구** > **옵션** > **텍스트 편집기** > **R** > **Lint** 에 있습니다.
 
-Lint는 기본적으로 비활성화되어 있습니다. Lint를 사용하도록 설정하려면 **전체** > **Lint 사용** 옵션을 **True**로 설정합니다.
+Lint는 기본적으로 비활성화되어 있습니다. Lint를 사용하도록 설정하려면 **전체** > **Lint 사용** 옵션을 **True** 로 설정합니다.
 
 사용하도록 설정하면 입력 중에 Linter가 편집기에서 실행됩니다. 문제는 녹색 오류 표시선으로 표시됩니다. 예를 들어 다음 그래픽에서 RTVS는 할당에 `<-` 대신 `=` 사용, 함수 인수 앞뒤 공백 문제, 파스칼식 대/소문자 및 대문자 식별자 사용 및 세미콜론 사용을 비롯한 여섯 가지 Lint 문제를 식별합니다. 문제에 커서를 올리면 설명을 표시합니다.
 
@@ -53,7 +53,7 @@ Lint는 기본적으로 비활성화되어 있습니다. Lint를 사용하도록
 
 ## <a name="spacing-group"></a>그룹 간격 지정
 
-기본적으로 모두 **True**로 설정된 이러한 옵션은 Linter에서 공백 문제를 식별하는 위치를 제어합니다(예: 함수 이름 뒤, 콤마 앞뒤, 여는 중괄호 위치와 닫는 중괄호 위치, ( 앞 공백 및 () 내 공백).
+기본적으로 모두 **True** 로 설정된 이러한 옵션은 Linter에서 공백 문제를 식별하는 위치를 제어합니다(예: 함수 이름 뒤, 콤마 앞뒤, 여는 중괄호 위치와 닫는 중괄호 위치, ( 앞 공백 및 () 내 공백).
 
 ## <a name="statements-group"></a>문 그룹
 
@@ -71,4 +71,4 @@ Lint는 기본적으로 비활성화되어 있습니다. Lint를 사용하도록
 
 ## <a name="whitespace-group"></a>공백 그룹
 
-기본적으로 모두 **True**로 설정된 이러한 옵션은 Linter에서 공백 문제를 식별하는 위치를 제어합니다(예: 탭 사용, 큰따옴표 사용, 후행 빈 줄 및 후행 공백).
+기본적으로 모두 **True** 로 설정된 이러한 옵션은 Linter에서 공백 문제를 식별하는 위치를 제어합니다(예: 탭 사용, 큰따옴표 사용, 후행 빈 줄 및 후행 공백).

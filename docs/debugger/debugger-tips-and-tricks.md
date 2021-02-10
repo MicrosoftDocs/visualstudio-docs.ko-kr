@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872991"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio의 디버거 관련 생산성 팁과 요령 배우기
 
@@ -33,7 +33,7 @@ ms.locfileid: "89315059"
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집하며 디버깅 계속하기(C#, VB, C++)
 
-Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
+Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11** 을 눌러 디버깅을 계속합니다.
 
 ![디버깅 편집하며 계속하기](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -49,13 +49,13 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 #### <a name="to-create-a-conditional-breakpoint"></a>조건부 중단점을 만들려면
 
-1. 중단점 아이콘(빨간색 공)을 마우스 오른쪽 단추로 클릭하고 **조건**을 선택합니다.
+1. 중단점 아이콘(빨간색 공)을 마우스 오른쪽 단추로 클릭하고 **조건** 을 선택합니다.
 
 2. **중단점 설정** 창에 식을 입력합니다.
 
     ![조건부 중단점](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. 다른 유형의 조건에 관심이 있는 경우 **중단점 설정** 대화 상자에서 **조건 식** 대신 **필터**를 선택한 다음 필터 팁을 따릅니다.
+3. 다른 유형의 조건에 관심이 있는 경우 **중단점 설정** 대화 상자에서 **조건 식** 대신 **필터** 를 선택한 다음 필터 팁을 따릅니다.
 
 ## <a name="configure-the-data-to-show-in-the-debugger"></a>디버거에 표시할 데이터 구성
 
@@ -82,23 +82,23 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 2. 디버거(**F5**)를 시작하고 중단점에서 중지합니다.
 
-3. **지역** 창에서 변수를 찾아(**디버그 > Windows > 지역**) 변수를 마우스 오른쪽 단추로 클릭하고 **개체 ID**를 선택합니다.
+3. **지역** 창에서 변수를 찾아(**디버그 > Windows > 지역**) 변수를 마우스 오른쪽 단추로 클릭하고 **개체 ID** 를 선택합니다.
 
     ![개체 ID 만들기](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
 4. **$** 창에 **지역** 창을 닫습니다. 이 변수는 개체 ID입니다.
 
-5. 개체 ID 변수를 마우스 오른쪽 단추로 클릭하고 **조사식 추가**를 선택합니다.
+5. 개체 ID 변수를 마우스 오른쪽 단추로 클릭하고 **조사식 추가** 를 선택합니다.
 
 자세한 내용은 [개체 ID 만들기](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)를 참조하세요.
 
 ## <a name="view-return-values-for-functions"></a>함수의 반환 값 보기
 
-함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행되었는지 확인합니다(현재 함수 호출에서 중지된 경우 **F10** 키를 누름). 창이 닫히면 **디버그 > Windows > 자동**을 사용하여 **자동** 창을 엽니다.
+함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행되었는지 확인합니다(현재 함수 호출에서 중지된 경우 **F10** 키를 누름). 창이 닫히면 **디버그 > Windows > 자동** 을 사용하여 **자동** 창을 엽니다.
 
 ![자동 창](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows > 직접 실행**을 사용하여 엽니다.)
+또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows > 직접 실행** 을 사용하여 엽니다.)
 
 ![직접 실행 창](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
@@ -118,7 +118,7 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>처리된 예외에서 코드 중단
 
-디버거는 처리되지 않은 예외에서 코드를 중단합니다. 그러나 처리된 예외(예: `try/catch` 블록 내에서 발생하는 예외)는 버그의 소스가 될 수도 있으므로 발생 시기를 조사해야 할 수 있습니다. **예외 설정** 대화 상자에서 옵션을 구성하여 처리된 예외에서도 코드를 중단하도록 디버거를 구성할 수 있습니다. **디버그 > Windows > 예외 설정**을 선택하여 이 대화 상자를 엽니다.
+디버거는 처리되지 않은 예외에서 코드를 중단합니다. 그러나 처리된 예외(예: `try/catch` 블록 내에서 발생하는 예외)는 버그의 소스가 될 수도 있으므로 발생 시기를 조사해야 할 수 있습니다. **예외 설정** 대화 상자에서 옵션을 구성하여 처리된 예외에서도 코드를 중단하도록 디버거를 구성할 수 있습니다. **디버그 > Windows > 예외 설정** 을 선택하여 이 대화 상자를 엽니다.
 
 **예외 설정** 대화 상자를 사용하면 디버거에 특정 예외에서 코드를 중단하도록 지시할 수 있습니다. 아래 그림에서는 `System.NullReferenceException`이 발생할 때마다 디버거가 코드를 중단합니다. 자세한 내용은 [예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요.
 
@@ -143,7 +143,7 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 ::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>웹 서비스 및 네트워크 리소스 페이로드 검사(UWP)
 
-UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용하면 웹 서비스 및 네트워크 리소스를 쉽게 디버그할 수 있습니다. 이 도구를 사용하려면 **디버그 > 성능 프로파일러**를 선택합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
+UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용하면 웹 서비스 및 네트워크 리소스를 쉽게 디버그할 수 있습니다. 이 도구를 사용하려면 **디버그 > 성능 프로파일러** 를 선택합니다. **네트워크** 를 선택한 다음 **시작** 을 선택합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지** 를 선택하여 보고서를 생성합니다.
 
 ![네트워크 사용량 프로파일링 도구](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -158,11 +158,11 @@ UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 �
 
 실행 중인 앱에 연결하기 위해 디버거는 디버그하려는 애플리케이션의 정확히 동일한 빌드에 대해 생성된 기호(.pdb) 파일을 로드합니다. 일부 시나리오에서는 기호 파일에 대한 약간의 지식이 도움이 될 수 있습니다. **모듈** 창을 사용하여 Visual Studio가 기호 파일을 로드하는 방법을 검토할 수 있습니다.
 
-디버그하는 동안 **디버그 > Windows > 모듈**을 선택하여 **모듈** 창을 엽니다. **모듈** 창에서는 디버거가 사용자 코드로 처리하는 모듈, 즉 [  내 코드](../debugger/just-my-code.md)와 모듈에 대한 기호 로드 상태를 확인할 수 있습니다. 대부분의 시나리오에서 디버거는 사용자 코드에 대한 기호 파일을 자동으로 검색하지만 .NET 코드, 시스템 코드 또는 타사 라이브러리 코드를 단계별로 실행(또는 디버그)하려면 올바른 기호 파일을 가져오기 위해 추가 단계가 필요합니다.
+디버그하는 동안 **디버그 > Windows > 모듈** 을 선택하여 **모듈** 창을 엽니다. **모듈** 창에서는 디버거가 사용자 코드로 처리하는 모듈, 즉 [  내 코드](../debugger/just-my-code.md)와 모듈에 대한 기호 로드 상태를 확인할 수 있습니다. 대부분의 시나리오에서 디버거는 사용자 코드에 대한 기호 파일을 자동으로 검색하지만 .NET 코드, 시스템 코드 또는 타사 라이브러리 코드를 단계별로 실행(또는 디버그)하려면 올바른 기호 파일을 가져오기 위해 추가 단계가 필요합니다.
 
 ![모듈 창에서 기호 정보 보기](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-마우스 오른쪽 단추를 클릭하고 **기호 로드**를 선택하여 **모듈** 창에서 직접 기호 정보를 로드할 수 있습니다.
+마우스 오른쪽 단추를 클릭하고 **기호 로드** 를 선택하여 **모듈** 창에서 직접 기호 정보를 로드할 수 있습니다.
 
 앱 개발자가 일치하는 기호 파일 없이(공간을 줄이기 위해) 앱을 제공하지만 나중에 릴리스 버전을 디버그할 수 있도록 해당 빌드에 대한 일치하는 기호 파일의 복사본을 유지하는 경우가 있습니다.
 

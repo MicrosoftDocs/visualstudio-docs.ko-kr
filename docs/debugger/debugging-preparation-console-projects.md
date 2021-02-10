@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872523"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비 중: 콘솔 프로젝트(C#, C++, Visual Basic, F#)
 

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 39a988ed4742f34fa2a3e6e2680d5eec8ccd2b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879308"
 ---
 # <a name="graph-view"></a>그래프 보기
 

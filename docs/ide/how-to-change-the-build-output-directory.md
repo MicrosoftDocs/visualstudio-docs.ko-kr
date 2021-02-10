@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875538"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>방법: 빌드 출력 디렉터리 변경
 
@@ -34,7 +34,7 @@ ms.locfileid: "92136890"
    - Visual Basic의 경우 **컴파일** 탭을 선택합니다.
    - C++ 또는 JavaScript의 경우 **일반** 탭을 선택합니다.
 
-3. 맨 위의 구성 드롭다운에서 출력 파일 위치를 변경하려는 구성( **디버그** , **릴리스** 또는 **둘 다** )을 선택합니다.
+3. 맨 위의 구성 드롭다운에서 출력 파일 위치를 변경하려는 구성(**디버그**, **릴리스** 또는 **둘 다**)을 선택합니다.
 
 4. 페이지의 출력 경로 항목을 찾습니다. &mdash;프로젝트 유형에 따라 달라집니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "92136890"
    > ```
 
 > [!TIP]
-> 지정한 위치에 출력이 생성되지 않는 경우 Visual Studio의 메뉴 모음에서 선택하여 해당 구성(예를 들어 **디버그** 또는 **릴리스** )을 빌드 중인지 확인합니다.
+> 지정한 위치에 출력이 생성되지 않는 경우 Visual Studio의 메뉴 모음에서 선택하여 해당 구성(예를 들어 **디버그** 또는 **릴리스**)을 빌드 중인지 확인합니다.
 >
 > ![Visual Studio 2019의 빌드 구성 선택기](media/build-configuration-chooser.png)
 

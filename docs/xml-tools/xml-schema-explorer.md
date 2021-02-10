@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c4b16c1baa039a2f1e812d35e7a4994ffc0d5e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874888"
 ---
 # <a name="xml-schema-explorer"></a>XML 스키마 탐색기
 

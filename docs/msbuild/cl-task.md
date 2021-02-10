@@ -20,19 +20,19 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878437"
 ---
 # <a name="cl-task"></a>CL 작업
 
-Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 실행( *.exe* ) 파일, 동적 연결 라이브러리( *.dll* ) 파일 또는 코드 모듈( *.netmodule* ) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
+Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -66,7 +66,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    선택적 문자열 매개 변수입니다.
 
-   명령줄에 항상 내보내지는 문자열입니다. 기본값은 " **/c** "입니다.
+   명령줄에 항상 내보내지는 문자열입니다. 기본값은 " **/c**"입니다.
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
   - **All** -  **/FAcs**
 
-    자세한 내용은 [/FA, /Fa(목록 파일)](/cpp/build/reference/fa-fa-listing-file)의 **/FA** , **/FAc** , **/FAs** 및 **/FAcs** 옵션을 참조하세요.
+    자세한 내용은 [/FA, /Fa(목록 파일)](/cpp/build/reference/fa-fa-listing-file)의 **/FA**, **/FAc**, **/FAs** 및 **/FAcs** 옵션을 참조하세요.
 
 - **BasicRuntimeChecks**
 
@@ -206,7 +206,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    선택적 문자열 매개 변수입니다.
 
-   프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체( *.obj* ) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.
+   프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체( *.obj*) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
@@ -330,7 +330,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    `true`인 경우 안정적인 부동 소수점 예외 모델을 사용할 수 있습니다. 예외가 트리거되는 직후 발생합니다.
 
-   자세한 내용은 [/fp(부동 소수점 동작 지정)](/cpp/build/reference/fp-specify-floating-point-behavior)의 / **fp:except** 옵션을 참조하세요.
+   자세한 내용은 [/fp(부동 소수점 동작 지정)](/cpp/build/reference/fp-specify-floating-point-behavior)의 /**fp:except** 옵션을 참조하세요.
 
 - **FloatingPointModel**
 
@@ -456,7 +456,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    선택적 `Boolean` 매개 변수입니다.
 
-   `true`인 경우 개체( *.obj* ) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 *.obj* 파일에 넣습니다.
+   `true`인 경우 개체( *.obj*) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 *.obj* 파일에 넣습니다.
 
    자세한 내용은 [/Zl(기본 라이브러리 이름 생략)](/cpp/build/reference/zl-omit-default-library-name)를 참조하세요.
 
@@ -498,7 +498,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    선택적 **문자열** 매개 변수입니다.
 
-   빌드 중 미리 컴파일된 헤더( *.pch* ) 파일을 만들거나 사용합니다.
+   빌드 중 미리 컴파일된 헤더( *.pch*) 파일을 만들거나 사용합니다.
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
@@ -786,7 +786,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    *읽기 파일 추적 로그* 를 나타내는 항목의 배열을 지정합니다.
 
-   읽기 파일 추적 로그( *.tlog* )에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
+   읽기 파일 추적 로그( *.tlog*)에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
 
 - **TLogWriteFiles**
 
@@ -794,7 +794,7 @@ Microsoft C++ 컴파일러 도구 *cl.exe* 를 래핑합니다. 컴파일러는 
 
    *쓰기 파일 추적 로그* 를 나타내는 항목의 배열을 지정합니다.
 
-   쓰기 파일 추적 로그( *.tlog* )에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
+   쓰기 파일 추적 로그( *.tlog*)에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
 
 - **TrackFileAccess**
 

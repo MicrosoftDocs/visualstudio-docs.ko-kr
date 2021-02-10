@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873907"
 ---
 # <a name="use-visual-studio-search"></a>Visual Studio 검색 사용
 
@@ -43,28 +43,28 @@ Visual Studio IDE(통합 개발 환경)에는 다양한 메뉴, 옵션, 기능�
 
 Visual Studio 검색 상자를 사용하여 설정 및 옵션과 유사한 구성 항목을 찾을 수 있습니다. 예를 들어 다음 스크린샷에 나온 것처럼 *change theme* 을 검색하여 Visual Studio 색 테마를 변경할 수 있는 대화 상자를 빠르게 찾아 엽니다.
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Visual Studio 검색 상자":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Visual Studio 설정 및 옵션 검색":::
 
 > [!TIP]
 > 대부분의 경우 Visual Studio 검색 결과로 각 항목의 메뉴, 바로 가기 키, 위치가 표시됩니다.
 
 Visual Studio 검색 상자를 사용하여 메뉴 항목 및 명령을 찾을 수 있습니다. 예를 들어 *clean sol* 을 검색하여 솔루션 정리 명령을 빨리 찾아 실행합니다. 또한 검색 결과로 다음 스크린샷에서처럼 메뉴에서 이 명령을 찾을 수 있는 위치가 표시됩니다.
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Visual Studio 검색 상자":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Visual Studio 메뉴 항목 및 명령 검색":::
 
 마지막으로, 실수로 닫았을 수도 있는 창이나 패널을 검색할 수 있습니다. 예를 들어 *test* 를 검색하여 테스트 탐색기 창을 찾아 엽니다.
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Visual Studio 검색 상자":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Visual Studio 창 및 패널 검색":::
 
 ## <a name="search-files-and-code"></a>파일 및 코드 검색
 
 Visual Studio 검색은 솔루션 항목에서 파일 이름, 코드, 메서드 및 기타 일치 항목도 검색합니다. 다음 스크린샷에서는 *markdown* 을 검색하여 솔루션 내에서 MarkdownMetaExtractor.cs 파일, `MarkdownMetaExtractor` 클래스, 메서드 두 개를 찾았습니다.
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Visual Studio 검색 상자":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Visual Studio 검색으로 파일 검색":::
 
 “카멜식 대/소문자” 검색을 수행할 수도 있습니다. 다음 스크린샷에서는 *FSS* 를 검색하여 **F** older **S** ize **S** canner 파일과 클래스 및 메서드를 찾았습니다.
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Visual Studio 검색 상자":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="카멜식 대/소문자 검색으로 Visual Studio 검색":::
 
 ## <a name="see-also"></a>참조
 

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 8cce4bcbf946dad69fc3e11a7b54365fc549c699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872302"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
 웹 애플리케이션을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.

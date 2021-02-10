@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d7046a08ac61ac0c23e98a47fb5eda75e38846c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875005"
 ---
 # <a name="xml-document-validation"></a>XML 문서 유효성 검사
 

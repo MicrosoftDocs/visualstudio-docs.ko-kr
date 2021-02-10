@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
-ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
+ms.openlocfilehash: 7935abf4bee4d7f9532ca1dfae0b7105c42067d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98925886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875161"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>연습: XSLT 스타일시트 디버그
 

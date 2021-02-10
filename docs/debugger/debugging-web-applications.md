@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7dd36846bf1d7ac0c24a73a489ed2c461837ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872276"
 ---
 # <a name="debugging-web-applications"></a>웹 애플리케이션 디버깅
 

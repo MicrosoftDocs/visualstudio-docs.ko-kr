@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 9625ce43d94158732c2d6af738a1f1abc84f666e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878775"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>4단계: ASP.NET Core 앱에서 웹 API 표시
 
@@ -37,7 +37,7 @@ Visual Studio 2019에서 ASP.NET Core 앱을 엽니다. [이 자습서 시리즈
 
 ## <a name="add-an-api-controller"></a>API 컨트롤러 추가
 
-프로젝트를 마우스 오른쪽 단추로 클릭하고 *API*라는 새 폴더를 추가합니다. 그런 다음, 이 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **스캐폴드된 새 항목**을 선택합니다. **Entity Framework를 사용하며 동작이 포함된 API 컨트롤러**를 선택합니다. 이제 기존 모델 클래스를 선택하고 **추가**를 클릭합니다.
+프로젝트를 마우스 오른쪽 단추로 클릭하고 *API* 라는 새 폴더를 추가합니다. 그런 다음, 이 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **스캐폴드된 새 항목** 을 선택합니다. **Entity Framework를 사용하며 동작이 포함된 API 컨트롤러** 를 선택합니다. 이제 기존 모델 클래스를 선택하고 **추가** 를 클릭합니다.
 
 ![Visual Studio 2019 ASP.NET Core 스캐폴드된 API 컨트롤러](media/vs-2019/vs2019-add-scaffold-api.png)
 
@@ -187,7 +187,7 @@ public async Task<IActionResult> DeleteGame([FromRoute] int id)
 
 ## <a name="adding-swagger"></a>Swagger 추가
 
-Swagger는 서비스 및 미들웨어 세트로 ASP.NET Core 앱에 추가할 수 있는 API 문서 및 테스트 도구입니다. Swagger를 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택합니다. 그런 다음, **찾아보기**를 클릭하고 `Swashbuckle.AspNetCore`를 검색하여 4.0.1 버전을 설치합니다.
+Swagger는 서비스 및 미들웨어 세트로 ASP.NET Core 앱에 추가할 수 있는 API 문서 및 테스트 도구입니다. Swagger를 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다. 그런 다음, **찾아보기** 를 클릭하고 `Swashbuckle.AspNetCore`를 검색하여 4.0.1 버전을 설치합니다.
 
 ![Visual Studio 2019 NuGet에서 Swashbuckle 추가](media/vs-2019/vs2019-nuget-swashbuckle.png)
 

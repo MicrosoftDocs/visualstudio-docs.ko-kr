@@ -10,15 +10,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cd4979172f80b44ad5fb5ed335b00737e7579d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 053ae10595b6bac51395b23aaef7394760b71824
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873894"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64비트 지원
 

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6048ff2b86b41a2b825f87d9c9ff9078d414cb7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872510"
 ---
 # <a name="debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅
 **도구** 메뉴의 **옵션** 대화 상자에 있는 **디버깅** 폴더에는 디버거 도구 옵션을 지정할 수 있는 다음과 같은 페이지가 있습니다.

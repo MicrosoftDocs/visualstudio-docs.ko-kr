@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: 다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법을 알아봅니다.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6b85d64d3f84bce34f2a9b30d9caf01127149abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90093352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878489"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법
 
@@ -37,9 +37,9 @@ ms.locfileid: "90093352"
 ### <a name="enabling-system-web-browser"></a>시스템 웹 브라우저 사용
 
 > [!NOTE] 
-> 최상의 환경을 위해 이 워크플로를 진행하기 전에 시스템의 기본 웹 브라우저 데이터를 지우는 것이 좋습니다. 또한 Windows 10 설정의 **회사 또는 학교 액세스**에 회사 또는 학교 계정이 있는 경우 제대로 인증되었는지 확인하세요.
+> 최상의 환경을 위해 이 워크플로를 진행하기 전에 시스템의 기본 웹 브라우저 데이터를 지우는 것이 좋습니다. 또한 Windows 10 설정의 **회사 또는 학교 액세스** 에 회사 또는 학교 계정이 있는 경우 제대로 인증되었는지 확인하세요.
 
-이 워크플로를 사용하도록 설정하려면 Visual Studio의 옵션 대화 상자 **(도구 > 옵션...)** 로 이동한 후 **계정** 탭을 선택하고 **다음을 사용하여 계정 추가 및 다시 인증:** 드롭다운에서 **시스템 웹 브라우저**를 선택합니다. 
+이 워크플로를 사용하도록 설정하려면 Visual Studio의 옵션 대화 상자 **(도구 > 옵션...)** 로 이동한 후 **계정** 탭을 선택하고 **다음을 사용하여 계정 추가 및 다시 인증:** 드롭다운에서 **시스템 웹 브라우저** 를 선택합니다. 
 
 :::image type="content" source="media/select-system-web-browser.png" alt-text="메뉴에서 시스템 웹 브라우저를 선택합니다.":::
 
@@ -50,7 +50,7 @@ ms.locfileid: "90093352"
 
 이 작업을 수행하면 시스템의 기본 웹 브라우저가 열리고, 계정에 로그인하고 필요한 MFA 정책의 유효성을 검사하라는 메시지가 표시됩니다.
 
-로그인 프로세스 중에 로그인 상태를 유지하도록 요청하는 추가 메시지가 표시될 수 있습니다. 이 메시지는 두 번째로 계정을 사용하여 로그인할 때 표시될 수 있습니다. 자격 증명을 다시 입력할 필요를 최소화하려면 **예**를 선택하는 것이 좋습니다. 이렇게 하면 브라우저 세션 간에 자격 증명이 유지됩니다.
+로그인 프로세스 중에 로그인 상태를 유지하도록 요청하는 추가 메시지가 표시될 수 있습니다. 이 메시지는 두 번째로 계정을 사용하여 로그인할 때 표시될 수 있습니다. 자격 증명을 다시 입력할 필요를 최소화하려면 **예** 를 선택하는 것이 좋습니다. 이렇게 하면 브라우저 세션 간에 자격 증명이 유지됩니다.
 
 :::image type="content" source="media/kmsi.png" alt-text="로그인 상태를 유지하시겠습니까?":::
 
@@ -61,7 +61,7 @@ ms.locfileid: "90093352"
 
 :::image type="content" source="media/reauthenticate-account.png" alt-text="Visual Studio 계정을 다시 인증합니다.":::
 
-**자격 증명 다시 입력**을 클릭하면 시스템의 기본 웹 브라우저가 열리고 자격 증명을 자동으로 새로 고치려고 합니다. 실패하면 계정에 로그인하고 필요한 CA/MFA 정책의 유효성을 검사하라는 메시지가 표시됩니다.
+**자격 증명 다시 입력** 을 클릭하면 시스템의 기본 웹 브라우저가 열리고 자격 증명을 자동으로 새로 고치려고 합니다. 실패하면 계정에 로그인하고 필요한 CA/MFA 정책의 유효성을 검사하라는 메시지가 표시됩니다.
 
 > [!NOTE] 
 > 최상의 환경을 위해 리소스에 대해 모든 CA/MFA 정책의 유효성을 검사할 때까지 브라우저를 열어 두세요. 브라우저를 닫으면 이전에 빌드된 MFA 상태가 손실될 수 있으며 추가 권한 부여 프롬프트가 표시될 수 있습니다.
@@ -73,7 +73,7 @@ Visual Studio 2019 버전 16.6에서는 유연하게 특정 테넌트를 필터�
 테넌트가 여럿이지만 특정 하위 집합을 대상으로 지정하여 개발 환경을 최적화하려는 경우 이 기능이 유용합니다. 또한 특정 CA/MFA 정책의 유효성을 검사할 수 없는 경우에도 잘못된 테넌트를 필터링할 수 있으므로 도움이 될 수 있습니다. 
 
 ### <a name="how-to-filter-out-a-tenant"></a>테넌트를 필터링하는 방법
-Visual Studio 계정과 연결된 테넌트를 필터링하려면 계정 설정 대화 상자 **(파일 > 계정 설정...)** 를 열고 **필터 적용**을 클릭합니다. 
+Visual Studio 계정과 연결된 테넌트를 필터링하려면 계정 설정 대화 상자 **(파일 > 계정 설정...)** 를 열고 **필터 적용** 을 클릭합니다. 
 </br>
 </br>
 

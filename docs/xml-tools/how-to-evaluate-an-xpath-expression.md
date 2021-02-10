@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873426"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath 식 계산
 

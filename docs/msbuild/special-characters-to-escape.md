@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5e665c214ea75de67a6c339bb516dfb812936448
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878151"
 ---
 # <a name="special-characters-to-escape"></a>이스케이프할 특수 문자
 

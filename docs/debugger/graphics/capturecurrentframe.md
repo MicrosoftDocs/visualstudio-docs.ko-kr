@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 793d86ac7d23fa209560222415dce50f4e5ac508
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 94c55a34ee71f8002d31613d64ff978f0a546b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874550"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 그래픽 로그 파일에 현재 프레임의 나머지 부분을 캡처합니다.

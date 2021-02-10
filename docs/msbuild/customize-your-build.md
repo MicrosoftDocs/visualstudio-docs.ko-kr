@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 708b6bc57b53ab2c52f9e8fda51db5b5c60225f3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: f2d533e4b7f275a70d20be684fbd781d62a3a109
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877363"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
-표준 빌드 프로세스( *Microsoft.Common.props* 및 *Microsoft.Common.targets* 가져오기)를 사용하는 MSBuild 프로젝트에는 빌드 프로세스를 사용자 지정하는 데 사용할 수 있는 몇 가지 확장성 후크가 있습니다.
+표준 빌드 프로세스(*Microsoft.Common.props* 및 *Microsoft.Common.targets* 가져오기)를 사용하는 MSBuild 프로젝트에는 빌드 프로세스를 사용자 지정하는 데 사용할 수 있는 몇 가지 확장성 후크가 있습니다.
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>프로젝트에 대한 명령줄 MSBuild 호출에 인수 추가
 
@@ -104,7 +104,7 @@ c:\
 
 모든 프로젝트 *(1)* 의 공통 속성, *src* 프로젝트 *(2-src)* 의 공통 속성 및 *test* 프로젝트 *(2-test)* 의 공통 속성이 있는 것이 바람직할 수도 있습니다.
 
-MSBuild에서 “내부” 파일( *2-src* 및 *2-test* )을 “외부” 파일( *1* )과 올바르게 병합하려면 MSBuild가 *Directory.Build.props* 파일을 찾으면 추가 검사를 중지하도록 고려해야 합니다. 계속 검사하고 외부 파일에 병합하려면 이 코드를 모든 내부 파일에 배치합니다.
+MSBuild에서 “내부” 파일(*2-src* 및 *2-test*)을 “외부” 파일(*1*)과 올바르게 병합하려면 MSBuild가 *Directory.Build.props* 파일을 찾으면 추가 검사를 중지하도록 고려해야 합니다. 계속 검사하고 외부 파일에 병합하려면 이 코드를 모든 내부 파일에 배치합니다.
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
@@ -184,7 +184,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 ## <a name="customize-the-solution-build"></a>솔루션 빌드 사용자 지정
 
 > [!IMPORTANT]
-> 이러한 방식의 솔루션 빌드 사용자 지정은 *MSBuild.exe* 를 사용하여 명령줄 빌드에만 적용됩니다. Visual Studio 내의 빌드에 적용되지 **않습니다** . 따라서 솔루션 수준에서 사용자 지정을 추가하지 않는 것이 좋습니다. 솔루션의 모든 프로젝트를 사용자 지정하기 위한 더 나은 대안은 이 문서의 다른 부분에서 설명한 대로 솔루션 폴더에 *Directory.Build.props* 및 *Directory.build.targets* 파일을 사용하는 것이 좋습니다.
+> 이러한 방식의 솔루션 빌드 사용자 지정은 *MSBuild.exe* 를 사용하여 명령줄 빌드에만 적용됩니다. Visual Studio 내의 빌드에 적용되지 **않습니다**. 따라서 솔루션 수준에서 사용자 지정을 추가하지 않는 것이 좋습니다. 솔루션의 모든 프로젝트를 사용자 지정하기 위한 더 나은 대안은 이 문서의 다른 부분에서 설명한 대로 솔루션 폴더에 *Directory.Build.props* 및 *Directory.build.targets* 파일을 사용하는 것이 좋습니다.
 
 MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 내부적으로 변환한 다음, 빌드합니다. 생성된 프로젝트 파일은 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` 및 `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` 디렉터리에 설치된 대상을 포함하여 대상을 정의하기 전에 `before.{solutionname}.sln.targets`를 가져오고 대상을 가져온 후에 `after.{solutionname}.sln.targets`를 가져옵니다.
 
@@ -236,7 +236,7 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 
 ## <a name="customize-c-builds"></a>C++ 빌드 사용자 지정
 
-C++ 프로젝트의 경우 앞에서 설명한 사용자 지정 *.targets* 및 *.props* 파일을 같은 방법으로 사용하여 기본 설정을 재정의할 수 없습니다. *Directory.Build.props* 는 *Microsoft.Common.props* 에서 가져옵니다. 후자 파일은 `Microsoft.Cpp.Default.props`에서 가져오지만 대부분의 기본값은 *Microsoft.Cpp.props* 에서 정의되고, 여러 속성의 경우 속성이 이미 정의되어 있으므로 “아직 정의되지 않은 경우” 조건을 사용할 수 없지만 `PropertyGroup`에 정의된 특정 프로젝트 속성의 기본값은 `Label="Configuration"`과 달라야 합니다( [.vcxproj 및 .props 파일 구조](/cpp/build/reference/vcxproj-file-structure) 참조).
+C++ 프로젝트의 경우 앞에서 설명한 사용자 지정 *.targets* 및 *.props* 파일을 같은 방법으로 사용하여 기본 설정을 재정의할 수 없습니다. *Directory.Build.props* 는 *Microsoft.Common.props* 에서 가져옵니다. 후자 파일은 `Microsoft.Cpp.Default.props`에서 가져오지만 대부분의 기본값은 *Microsoft.Cpp.props* 에서 정의되고, 여러 속성의 경우 속성이 이미 정의되어 있으므로 “아직 정의되지 않은 경우” 조건을 사용할 수 없지만 `PropertyGroup`에 정의된 특정 프로젝트 속성의 기본값은 `Label="Configuration"`과 달라야 합니다([.vcxproj 및 .props 파일 구조](/cpp/build/reference/vcxproj-file-structure) 참조).
 
 그러나 다음 속성을 사용하여 *.props* 파일을 *Microsoft.Cpp.\** 파일 전/후에 자동으로 가져오도록 지정할 수 있습니다.
 
@@ -246,7 +246,7 @@ C++ 프로젝트의 경우 앞에서 설명한 사용자 지정 *.targets* 및 *
 - ForceImportBeforeCppTargets
 - ForceImportAfterCppTargets
 
-모든 C++ 빌드의 속성 기본값을 사용자 지정하려면 다른 *.props* 파일(예: *MyProps.props* )을 만들고 `Directory.Build.props`의 `ForceImportAfterCppProps` 속성이 이 파일을 가리키도록 정의합니다.
+모든 C++ 빌드의 속성 기본값을 사용자 지정하려면 다른 *.props* 파일(예: *MyProps.props*)을 만들고 `Directory.Build.props`의 `ForceImportAfterCppProps` 속성이 이 파일을 가리키도록 정의합니다.
 
 <PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
 </PropertyGroup>

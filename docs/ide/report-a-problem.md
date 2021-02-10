@@ -6,15 +6,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b012f1e5fda4a8855bfc6215cf3d458037bc036
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88584504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878658"
 ---
 # <a name="report-a-problem-states-and-faq"></a>문제 보고: 상태 및 FAQ
 
@@ -28,49 +28,49 @@ ms.locfileid: "88584504"
 
 ![개발자 커뮤니티의 문제 보고에 대한 새로운 상태](../ide/media/ProblemStates/New.jpg)
 
-**새로운 상태**는 버그 또는 문제가 새로 보고되었으며 아직 작업이 수행되지 않았음을 나타냅니다.
+**새로운 상태** 는 버그 또는 문제가 새로 보고되었으며 아직 작업이 수행되지 않았음을 나타냅니다.
 
 - - -
 
 ![개발자 커뮤니티의 문제 보고에 대한 심사 상태](../ide/media/ProblemStates/Triaged.jpg)
 
-**심사**는 조정, 변환 및 중복에 대한 초기 검사와 같은 준비 단계가 완료되었음을 나타냅니다. 티켓은 고려 사항에 해당하는 엔지니어링팀으로 전달되었습니다.
+**심사** 는 조정, 변환 및 중복에 대한 초기 검사와 같은 준비 단계가 완료되었음을 나타냅니다. 티켓은 고려 사항에 해당하는 엔지니어링팀으로 전달되었습니다.
 
 - - -
 
 ![개발자 커뮤니티의 문제 보고에 대해 고려 중인 상태](../ide/media/ProblemStates/UnderConsideration.jpg)
 
-**고려 중**은 Microsoft가 커뮤니티 영향에 대한 사용자의 문제를 검토하고 그에 따라 우선순위를 지정한다는 것을 나타냅니다. 커뮤니티 영향이 아직 명확하지 않거나 중요하지 않은 경우, 이 상태에서 문제를 계속 모니터링할 것입니다.
+**고려 중** 은 Microsoft가 커뮤니티 영향에 대한 사용자의 문제를 검토하고 그에 따라 우선순위를 지정한다는 것을 나타냅니다. 커뮤니티 영향이 아직 명확하지 않거나 중요하지 않은 경우, 이 상태에서 문제를 계속 모니터링할 것입니다.
 
 - - -
 
 ![개발자 커뮤니티의 문제 보고에 대해 조사 중](../ide/media/ProblemStates/UnderInvestigation.jpg)
 
-**조사 중**은 엔지니어가 문제 해결 방법을 찾기 위해 적극적으로 조사하고 있음을 나타냅니다.
+**조사 중** 은 엔지니어가 문제 해결 방법을 찾기 위해 적극적으로 조사하고 있음을 나타냅니다.
 
 - - -
 
 ![개발자 커뮤니티의 문제 보고를 위한 추가 정보 필요 상태](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**추가 정보 필요**는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)
+**추가 정보 필요** 는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)
 
 - - -
 
 ![수정됨 - 개발자 커뮤니티의 문제 보고에 대해 보류 중인 릴리스 상태](../ide/media/ProblemStates/FixedPendingRelease.jpg)
 
-**수정됨 - 보류 중인 릴리스**는 문제에 대해 수정했으며 곧 출시될 미리 보기 또는 릴리스에서 사용할 수 있음을 나타냅니다.  수정 사항을 미리 보기에서 사용할 수 있게 되면 문제는 미리 보기 버전을 지정하는 “수정된 항목” 태그로 태그가 지정됩니다.
+**수정됨 - 보류 중인 릴리스** 는 문제에 대해 수정했으며 곧 출시될 미리 보기 또는 릴리스에서 사용할 수 있음을 나타냅니다.  수정 사항을 미리 보기에서 사용할 수 있게 되면 문제는 미리 보기 버전을 지정하는 “수정된 항목” 태그로 태그가 지정됩니다.
 
 - - -
 
 ![종결 - 개발자 커뮤니티의 문제 보고에 대해 수정된 상태](../ide/media/ProblemStates/ClosedFixed.jpg)
 
-**종결 - 수정됨**은 문제 해결책을 출시했음을 나타냅니다. 이제 문제는 또한 릴리스 버전을 지정하는 "수정 항목:" 태그로 태그가 지정되었습니다.
+**종결 - 수정됨** 은 문제 해결책을 출시했음을 나타냅니다. 이제 문제는 또한 릴리스 버전을 지정하는 "수정 항목:" 태그로 태그가 지정되었습니다.
 
 - - -
 
 ![종결 - 개발자 커뮤니티의 문제 보고에 대한 중복 상태](../ide/media/ProblemStates/ClosedDuplicate.jpg)
 
-**종결 - 중복**은 다른 피드백을 통해 이미 문제가 보고되었음을 나타냅니다. 원래 문제 보고서를 추적할 수 있는 링크로 제공합니다.
+**종결 - 중복** 은 다른 피드백을 통해 이미 문제가 보고되었음을 나타냅니다. 원래 문제 보고서를 추적할 수 있는 링크로 제공합니다.
 
 - - -
 
@@ -82,19 +82,19 @@ ms.locfileid: "88584504"
 
 ![종결 - 개발자 커뮤니티의 문제 보고에 대해 버그 아님 상태](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
-**종결- 버그 아님**은 보고된 기능이 현재 설계에 의한 것이라고 확인했음을 나타냅니다.
+**종결- 버그 아님** 은 보고된 기능이 현재 설계에 의한 것이라고 확인했음을 나타냅니다.
 
 - - -
 
 ![종결 - 개발자 커뮤니티의 문제 보고에 대해 정보 부족 상태](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
 
-**종결 - 정보 부족**은 이 문제를 조사하기에 충분한 정보가 없음을 나타냅니다. 필요한 정보를 얻을 수 있게 되면 기꺼이 피드백을 재고하겠습니다.
+**종결 - 정보 부족** 은 이 문제를 조사하기에 충분한 정보가 없음을 나타냅니다. 필요한 정보를 얻을 수 있게 되면 기꺼이 피드백을 재고하겠습니다.
 
 - - -
 
 ![종결 - 개발자 커뮤니티의 문제 보고에 대한 다른 제품 상태](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
-**종결 - 다른 제품**은 문제가 다른 제품에 적용되는 것으로 확인했음을 나타냅니다. 외부 제품 및 모든 관련 링크에 대한 Microsoft의 주석을 참조하세요.
+**종결 - 다른 제품** 은 문제가 다른 제품에 적용되는 것으로 확인했음을 나타냅니다. 외부 제품 및 모든 관련 링크에 대한 Microsoft의 주석을 참조하세요.
 
 - - -
 

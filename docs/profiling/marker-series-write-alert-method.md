@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e79bab25885c8759ea5726b037771a4943c563
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 786569f52d4d3d2fcaa7dfbc759759080ebf02d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876942"
 ---
 # <a name="marker_serieswrite_alert-method"></a>marker_series::write_alert 메서드
 동시성 시각화 도우미 추적 파일에 경고를 씁니다.

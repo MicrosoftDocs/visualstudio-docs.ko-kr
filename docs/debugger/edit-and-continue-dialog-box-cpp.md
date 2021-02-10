@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc1e7a27624cede9ca20295d3dc890f172e35889
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 99180c941f82a33db0432e12414a061fc29a7f35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872029"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>편집하며 계속하기 대화 상자(C++)
 편집하며 계속하기에서 네이티브 코드에 변경 내용을 적용할 수 없습니다. 일시적인 현상일 수 있습니다. 편집하며 계속하기에서 네이티브 코드 변경 내용을 즉시 적용할 수 없지만 디버깅 세션 중에 이후에 적용할 수 있는 경우가 있습니다(예: 지금 실행되는 프로시저에 대한 현재 호출을 완료한 후). 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.

@@ -13,15 +13,15 @@ dev_langs:
 - jsharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 33aa8787144f185b5bcd2e26df5e7fa90ce3213f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877241"
 ---
 # <a name="diagnosing-task-failures"></a>작업 오류 진단
 
