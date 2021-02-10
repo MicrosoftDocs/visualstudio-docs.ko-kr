@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e28062f54426e2810acf29bdd64955998ea088cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852546"
 ---
 # <a name="find-command"></a>찾기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기** 탭에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다.

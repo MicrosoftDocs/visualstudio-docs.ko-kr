@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbf2bb5a8a73ba577489af825969c3bdc23f15e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3ece930da2bb133a19e443da4d37654367a1c862
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868987"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 

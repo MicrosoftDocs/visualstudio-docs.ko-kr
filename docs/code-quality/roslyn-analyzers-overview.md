@@ -11,15 +11,15 @@ helpviewer_keywords:
 - code analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859803"
 ---
 # <a name="overview-of-source-code-analysis"></a>소스 코드 분석 개요
 

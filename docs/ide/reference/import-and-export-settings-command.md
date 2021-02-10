@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852455"
 ---
 # <a name="import-and-export-settings-command"></a>설정 가져오기 및 내보내기 명령
 

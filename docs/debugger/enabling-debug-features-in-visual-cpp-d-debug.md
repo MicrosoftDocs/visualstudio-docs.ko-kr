@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: c0a8941fbda263ce3a2345a135594d2f9eec87e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871899"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>C++ 프로젝트에서 디버그 기능 사용(/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG** 는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.

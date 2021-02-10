@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872003"
 ---
 # <a name="edit-and-continue-error-message"></a>편집하며 계속하기 오류 메시지
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command-line
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868735"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>지시 파일에서 설정을 정의하는 방법
 

@@ -6,18 +6,18 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ebe062d5dd569ae1d2162ea7334f91d8b82decdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852377"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
 

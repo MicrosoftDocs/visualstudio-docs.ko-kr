@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870846"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>오류: 작업 그룹 원격 로그온 실패
 이 오류의 의미는 다음과 같습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "90851660"
 
 - 원격 컴퓨터에 이름과 암호가 일치하는 계정이 없습니다.
 
-- Visual Studio 컴퓨터와 원격 머신 둘 다 작업 그룹에 있는 경우 이 오류는 원격 머신의 기본 **로컬 보안 정책** 설정으로 인해 발생할 수 있습니다. **로컬 보안 정책**은 **게스트 전용 - 로컬 사용자를 게스트로 인증**으로 기본 설정되어 있습니다. 이 설정에서 디버깅하려면 원격 머신의 설정을 **클래식 - 로컬 사용자를 그대로 인증**으로 변경해야 합니다.
+- Visual Studio 컴퓨터와 원격 머신 둘 다 작업 그룹에 있는 경우 이 오류는 원격 머신의 기본 **로컬 보안 정책** 설정으로 인해 발생할 수 있습니다. **로컬 보안 정책** 은 **게스트 전용 - 로컬 사용자를 게스트로 인증** 으로 기본 설정되어 있습니다. 이 설정에서 디버깅하려면 원격 머신의 설정을 **클래식 - 로컬 사용자를 그대로 인증** 으로 변경해야 합니다.
 
 > [!NOTE]
 > 다음 작업을 수행하려면 관리자 권한이 있어야 합니다.
@@ -51,9 +51,9 @@ ms.locfileid: "90851660"
 
 2. **로컬 정책** 폴더를 확장합니다.
 
-3. **사용자 권한 할당**을 클릭합니다.
+3. **사용자 권한 할당** 을 클릭합니다.
 
-4. **정책** 열에서 **프로그램 디버그**를 두 번 클릭하여 **로컬 보안 설정** 대화 상자에서 현재 로컬 그룹 정책 할당 내용을 확인합니다.
+4. **정책** 열에서 **프로그램 디버그** 를 두 번 클릭하여 **로컬 보안 설정** 대화 상자에서 현재 로컬 그룹 정책 할당 내용을 확인합니다.
 
      ![로컬 보안 정책 사용자 권한](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
@@ -65,11 +65,11 @@ ms.locfileid: "90851660"
 
 2. **로컬 정책** 폴더를 확장합니다.
 
-3. **보안 옵션**을 클릭합니다.
+3. **보안 옵션** 을 클릭합니다.
 
-4. **정책** 열에서 **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델**을 두 번 클릭합니다.
+4. **정책** 열에서 **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델** 을 두 번 클릭합니다.
 
-5. **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델** 대화 상자의 값을 **클래식 - 로컬 사용자를 그대로 인증**으로 변경하고 **적용** 단추를 클릭합니다.
+5. **네트워크 액세스: 로컬 계정에 대한 공유 및 보안 모델** 대화 상자의 값을 **클래식 - 로컬 사용자를 그대로 인증** 으로 변경하고 **적용** 단추를 클릭합니다.
 
      ![로컬 보안 정책 보안 옵션](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 

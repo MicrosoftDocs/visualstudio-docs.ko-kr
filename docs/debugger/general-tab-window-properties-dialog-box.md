@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 1aa19ad99629f5106ee89876f347dfafd7520d26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870508"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 일반 탭
 **일반** 탭을 사용하여 선택한 창에 대한 정보를 표시할 수 있습니다. [창 속성 대화 상자](../debugger/window-properties-dialog-box.md)를 표시하려면 [창 뷰](../debugger/windows-view.md) 창으로 포커스를 이동합니다. 트리에서 창 노드를 선택하고 **뷰** 메뉴에서 **속성** 을 선택합니다.

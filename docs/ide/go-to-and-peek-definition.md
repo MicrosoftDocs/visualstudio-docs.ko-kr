@@ -12,15 +12,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869364"
 ---
 # <a name="view-type-and-member-definitions"></a>형식 및 멤버 정의 보기
 

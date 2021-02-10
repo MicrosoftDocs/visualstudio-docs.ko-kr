@@ -13,15 +13,15 @@ helpviewer_keywords:
 - DCOM, unable to connect error
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ab43773b4aa9d2535eb6ac157ec39333907731
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dcf52a258a46f44afaf6e890531496f57b11fc24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871067"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>오류: 컴퓨터 &lt;이름&gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
 이 오류는 다음과 같은 경우에 발생합니다.

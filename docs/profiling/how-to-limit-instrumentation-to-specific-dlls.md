@@ -8,16 +8,16 @@ helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 170a701e4eb8d42a15a475b1336a0ba33c20b01a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860778"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>방법: 계측을 특정 DLL로 제한
 

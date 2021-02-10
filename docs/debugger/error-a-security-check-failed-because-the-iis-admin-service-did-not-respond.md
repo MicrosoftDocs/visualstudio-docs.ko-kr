@@ -13,22 +13,22 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 015a159f8d4910a2cc9bfbd97a50ebe01253d011
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e64947beb30b5abc4649fc65d8d566a7dedb55a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871834"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>오류: IIS 관리자 서비스에서 응답하지 않아서 보안 검사 실패
-이 오류는 IIS 관리자 서비스에서 응답하지 않을 때 발생합니다. 일반적으로 이는 설치한 IIS에 문제가 있음을 나타냅니다. 먼저 **관리 도구**에서 **서비스** 도구를 사용하여 서비스가 실행 중인지 확인합니다.
+이 오류는 IIS 관리자 서비스에서 응답하지 않을 때 발생합니다. 일반적으로 이는 설치한 IIS에 문제가 있음을 나타냅니다. 먼저 **관리 도구** 에서 **서비스** 도구를 사용하여 서비스가 실행 중인지 확인합니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-- 제어판의 **프로그램 추가 또는 제거**를 사용하여 IIS를 다시 설치합니다.
+- 제어판의 **프로그램 추가 또는 제거** 를 사용하여 IIS를 다시 설치합니다.
 
 - 또는
 

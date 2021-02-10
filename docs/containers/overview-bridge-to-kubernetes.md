@@ -6,15 +6,15 @@ ms.topic: conceptual
 description: Bridge to Kubernetes를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 프로세스에 대해 설명합니다.
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, 컨테이너
 monikerRange: '>=vs-2019'
-manager: jillfra
+manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
-ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
+ms.openlocfilehash: 253b50ff4778458b28375b06b7fb7f24f4d85054
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867570"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 

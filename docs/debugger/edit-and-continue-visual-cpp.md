@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0c4fd6d5214211318e2271418425a117a73eb0ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871886"
 ---
 # <a name="edit-and-continue-c"></a>편집하며 계속하기(C++)
 C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. 편집하며 계속하기의 제한에 관한 자세한 내용은 [지원되는 코드 변경(C++)](../debugger/supported-code-changes-cpp.md)을 참조하세요.

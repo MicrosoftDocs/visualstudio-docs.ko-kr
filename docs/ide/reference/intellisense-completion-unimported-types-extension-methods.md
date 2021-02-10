@@ -6,18 +6,18 @@ ms.date: 07/27/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2b73b4d73c36215b70b7551298492e39b69e179f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94900922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852338"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>가져오지 않은 형식 및 확장 메서드에 대한 IntelliSense 완성
 

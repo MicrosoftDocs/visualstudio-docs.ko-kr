@@ -6,15 +6,15 @@ ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c59ac152be9528ef3e01410f0a3b5f34dd882286
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 740a1b9385c53c87e8d52d2e80729586557f7ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869156"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>방법: 스크롤 막대 사용자 지정
 

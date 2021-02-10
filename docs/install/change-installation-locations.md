@@ -11,17 +11,17 @@ helpviewer_keywords:
 - use the D drive
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868636"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio에서 설치 위치 선택
 
@@ -59,7 +59,7 @@ ms.locfileid: "85419122"
 
      ![설치 위치 탭의 캐시 다운로드 섹션](media/vs-installation-locations-cache.png "설치 후 다운로드 캐시를 유지할지 여부를 선택하고 파일을 저장할 드라이브를 지정합니다.")
 
-    1. **설치 후 다운로드 캐시 유지**를 선택하거나 선택을 취소합니다.
+    1. **설치 후 다운로드 캐시 유지** 를 선택하거나 선택을 취소합니다.
 
        다운로드 캐시를 유지하지 않도록 설정하면 위치를 일시적으로만 사용합니다. 이 작업은 이전 설치에서 파일에 영향을 주지도 파일을 삭제하지도 않습니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "85419122"
 
 1. **다운로드 캐시** 섹션에서 다운로드 캐시를 유지할지 여부를 결정한 다음, 해당 파일을 저장하려는 위치를 결정합니다.
 
-    * **설치 후 다운로드 캐시 유지**를 선택하거나 선택을 취소합니다.
+    * **설치 후 다운로드 캐시 유지** 를 선택하거나 선택을 취소합니다.
 
        다운로드 캐시를 유지하지 않도록 설정하면 위치를 일시적으로만 사용합니다. 이 작업은 이전 설치에서 파일에 영향을 주지도 파일을 삭제하지도 않습니다.
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], find your feature
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a34aa926fca081a498173cd5fcc439a6b3886ba7
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3c215b232c64b97c57285618056ee4675587b48e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870716"
 ---
 # <a name="faq---find-the-debugging-feature-you-need-in-visual-studio"></a>FAQ - Visual Studio에서 필요한 디버깅 기능 찾기
 

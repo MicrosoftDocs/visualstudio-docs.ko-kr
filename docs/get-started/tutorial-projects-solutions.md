@@ -11,15 +11,15 @@ f1_keywords:
 - project.addnewitem
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e27eb0cc102740f7ca344099486b73be41c5412
-ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
+ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838736"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>프로젝트 및 솔루션 소개
 

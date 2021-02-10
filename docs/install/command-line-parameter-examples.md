@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868532"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 설치에 대한 명령줄 매개 변수 예
 
@@ -160,7 +160,7 @@ ms.locfileid: "88114247"
 
 ::: moniker range="vs-2017"
 
-이러한 명령줄 매개 변수는 **15.7의 새로운 기능**입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
+이러한 명령줄 매개 변수는 **15.7의 새로운 기능** 입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
 
 ::: moniker-end
 
@@ -184,7 +184,7 @@ ms.locfileid: "88114247"
 
 ::: moniker range="vs-2017"
 
-이 명령줄 명령은 **15.9의 새 기능**입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
+이 명령줄 명령은 **15.9의 새 기능** 입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ ms.locfileid: "88114247"
 
 ::: moniker range="vs-2017"
 
-이 명령줄 매개 변수는 **15.9의 새 기능**입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
+이 명령줄 매개 변수는 **15.9의 새 기능** 입니다. 이에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요.
 
 ::: moniker-end
 

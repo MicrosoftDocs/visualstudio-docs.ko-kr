@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dc8253896bfdcf818e0848482a6c637350f590f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a5c50822b516b73206791e3d8538bd174cfc8f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871236"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>오류: 웹 서버가 제대로 구성되어 있지 않습니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "90851543"
 
     웹 애플리케이션이 다른 머신에 복사되었거나, 수동으로 이름이 바뀌었거나, 이동된 경우 실제 경로라 올바르지 않을 수 있습니다. IIS를 다시 설정하고 다시 시도합니다.
 
-3. Visual Studio에서 로컬로 디버그하는 경우 속성에서 올바른 서버가 선택되어 있는지 확인합니다. (프로젝트 형식에 따라 **속성 > 웹 > 서버** 또는 **속성 > 디버그**를 엽니다. Web Forms 프로젝트의 경우 **속성 페이지 > 시작 옵션 > 서버**를 엽니다.)
+3. Visual Studio에서 로컬로 디버그하는 경우 속성에서 올바른 서버가 선택되어 있는지 확인합니다. (프로젝트 형식에 따라 **속성 > 웹 > 서버** 또는 **속성 > 디버그** 를 엽니다. Web Forms 프로젝트의 경우 **속성 페이지 > 시작 옵션 > 서버** 를 엽니다.)
 
     IIS와 같은 외부(사용자 지정) 서버를 사용하는 경우 URL이 정확해야 합니다. 정확하지 않으면 IIS Express를 선택하고 다시 시도합니다.
 

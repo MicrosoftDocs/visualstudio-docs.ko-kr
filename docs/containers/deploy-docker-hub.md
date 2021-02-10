@@ -2,19 +2,19 @@
 title: Docker Hub에 ASP.NET Core Docker 컨테이너 배포 | Microsoft Docs
 description: Visual Studio Container Tools를 사용하여 Docker Hub에 ASP.NET Core 웹앱을 배포하는 방법을 알아봅니다.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867661"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 
@@ -32,7 +32,7 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
    ![배포 옵션 스크린샷](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. **Docker 컨테이너 레지스트리**를 선택한 다음 **Docker Hub**를 선택합니다.
+1. **Docker 컨테이너 레지스트리** 를 선택한 다음 **Docker Hub** 를 선택합니다.
 
    ![게시 대화 상자 - Docker Hub 선택 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
@@ -40,7 +40,7 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
    ![Docker Hub 대화 상자 스크린샷](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. 조직에 속하지 않는 사용자 고유의 리포지토리에 연결하는 경우에는 **개인 리포지토리에 게시** 확인란을 선택된 상태로 둡니다. 조직이 리포지토리를 소유하고 있는 경우, 확인란의 선택을 취소하고 조직 이름을 입력합니다. 연결 중인 리포지토리에 대한 액세스 권한이 있는 Docker 계정의 Docker 사용자 이름과 암호를 입력하고 **저장**을 선택합니다.
+1. 조직에 속하지 않는 사용자 고유의 리포지토리에 연결하는 경우에는 **개인 리포지토리에 게시** 확인란을 선택된 상태로 둡니다. 조직이 리포지토리를 소유하고 있는 경우, 확인란의 선택을 취소하고 조직 이름을 입력합니다. 연결 중인 리포지토리에 대한 액세스 권한이 있는 Docker 계정의 Docker 사용자 이름과 암호를 입력하고 **저장** 을 선택합니다.
 
    Visual Studio에서 사용자 이미지를 Docker Hub에 배포하려고 합니다.  작업이 성공하면 리포지토리 이미지의 URL, 이미지 태그, 리포지토리 및 빌드 구성(예: **릴리스**)이 포함된 **게시** 화면이 나타납니다.
 

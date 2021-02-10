@@ -16,15 +16,15 @@ helpviewer_keywords:
 - remote debugging, Windows version error
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7baed5cc2c4c8dbaa01cd3dfadc386b6db1834c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 150d49d25c8c39d927c64a2cd463a068559847b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871340"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>오류: 원격 컴퓨터의 Microsoft Visual Studio 원격 디버깅 모니터가 이 컴퓨터에 연결할 수 있는 권한이 없습니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "90851088"
 
 - 로컬 컴퓨터에 대한 호출 권한이 있는 사용자로 msvsmon을 실행합니다. 즉, 이 사용자는 msvsmon 컴퓨터의 관리자이자 도메인 사용자여야 합니다. msvsmon을 실행하기 위한 사용자 계정은 다음 두 가지 방법 중 하나로 지정할 수 있습니다.
 
-  - msvsmon 아이콘을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **다음 계정으로 실행**을 선택합니다.
+  - msvsmon 아이콘을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **다음 계정으로 실행** 을 선택합니다.
 
     \- 또는 -
 

@@ -7,19 +7,19 @@ ms.technology: vs-ide-compile
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869182"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
-하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반** , **자세히** 또는 **진단** 으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
+하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단** 으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F\#에 대한 특정 경고 표시 안 함
 

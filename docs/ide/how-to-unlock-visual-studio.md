@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869130"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>평가판 버전 확장 또는 라이선스 업데이트
 
@@ -26,7 +26,7 @@ ms.locfileid: "77027574"
 
 ## <a name="use-an-online-subscription"></a>온라인 구독 사용
 
-1. IDE의 오른쪽 위에 있는 **로그인** 단추를 선택하거나 **파일** > **계정 설정**을 선택하여 **계정 설정** 대화 상자를 열고 **로그인** 단추를 선택합니다.
+1. IDE의 오른쪽 위에 있는 **로그인** 단추를 선택하거나 **파일** > **계정 설정** 을 선택하여 **계정 설정** 대화 상자를 열고 **로그인** 단추를 선택합니다.
 
 1. Microsoft 계정이나 회사 또는 학교 계정에 대한 자격 증명을 입력합니다. Visual Studio에서 해당 계정과 연결된 Visual Studio 구독 또는 Azure DevOps 조직을 찾습니다.
 
@@ -37,7 +37,7 @@ Visual Studio 구독 및 사용 방법에 대한 자세한 내용은 [구독 지
 
 ## <a name="enter-a-product-key"></a>제품 키 입력
 
-1. **파일** > **계정 설정**을 선택하여 **계정 설정** 대화 상자를 열고 **제품 키가 있는 라이선스** 링크를 선택합니다.
+1. **파일** > **계정 설정** 을 선택하여 **계정 설정** 대화 상자를 열고 **제품 키가 있는 라이선스** 링크를 선택합니다.
 
 1. 제공된 입력란에 제품 키를 입력합니다.
 
@@ -66,7 +66,7 @@ Visual Studio에 "라이선스가 만료될 예정이므로 업데이트해야 �
 
 ## <a name="update-an-expired-license"></a>만료된 라이선스 업데이트
 
-구독이 만료되어 Visual Studio 액세스 권한이 더 이상 없으면 사용자 구독을 갱신하거나 구독이 있는 다른 계정을 추가해야 합니다. 사용 중인 라이선스에 대한 자세한 정보를 보려면 **파일** > **계정 설정**으로 이동하고 대화 상자의 오른쪽에 있는 라이선스 정보를 살펴봅니다. 다른 계정에 연결된 다른 구독이 있는 경우 **계정 추가** 링크를 선택하여 대화 상자의 왼쪽에 있는 **모든 계정** 목록에 해당 계정을 추가합니다.
+구독이 만료되어 Visual Studio 액세스 권한이 더 이상 없으면 사용자 구독을 갱신하거나 구독이 있는 다른 계정을 추가해야 합니다. 사용 중인 라이선스에 대한 자세한 정보를 보려면 **파일** > **계정 설정** 으로 이동하고 대화 상자의 오른쪽에 있는 라이선스 정보를 살펴봅니다. 다른 계정에 연결된 다른 구독이 있는 경우 **계정 추가** 링크를 선택하여 대화 상자의 왼쪽에 있는 **모든 계정** 목록에 해당 계정을 추가합니다.
 
 ## <a name="get-support"></a>지원 받기
 

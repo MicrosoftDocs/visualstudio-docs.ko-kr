@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 17c569a9f5a50b769af0881d47fe810afe18058e
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: ecdbc5c3b94e83f0b8d38cec161f94a65e64fdf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868308"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>계측을 사용하여 자세한 타이밍 데이터 수집
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 계측 방법은 모듈의 복사본에 프로파일링 코드를 삽입합니다. 코드는 프로파일링 실행 중 모듈의 각 함수 시작, 종료 및 함수 호출을 기록합니다. 계측 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는 데 유용합니다.

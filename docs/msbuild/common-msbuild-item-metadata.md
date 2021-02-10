@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839311"
 ---
 # <a name="common-msbuild-item-metadata"></a>공통 MSBuild 항목 메타데이터
 

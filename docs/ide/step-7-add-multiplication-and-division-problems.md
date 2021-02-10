@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 20d39f6694f0e5a05a220206d8d34ad3bb65946a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868870"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7단계: 곱하기 및 나누기 문제 추가
 

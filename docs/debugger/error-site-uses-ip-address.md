@@ -13,24 +13,24 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: d574a10ba081a30f88583e035a18869e68976d18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871353"
 ---
 # <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소 사용
-이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다. IIS에서 **웹 사이트 확인**을 **특정 IP 주소 사용**으로 변경하는 경우 이 오류가 발생합니다.
+이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다. IIS에서 **웹 사이트 확인** 을 **특정 IP 주소 사용** 으로 변경하는 경우 이 오류가 발생합니다.
 
  자동 연결이 제대로 동작하기 위해서는 컴퓨터 이름뿐 아니라 특정 IP 주소도 함께 사용하여 프로젝트를 만들어야 합니다. 그렇지 않으면 디버거에서 컴퓨터 이름을 localhost로 변경하므로 DEBUG 동사를 IIS로 보낼 수 없게 됩니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 디버그 메뉴에서 **프로세스에 연결**을 선택하여 자동 연결 대신 수동 연결을 사용합니다.
+1. 디버그 메뉴에서 **프로세스에 연결** 을 선택하여 자동 연결 대신 수동 연결을 사용합니다.
 
      또는
 

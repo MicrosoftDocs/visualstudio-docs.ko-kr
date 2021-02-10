@@ -3,7 +3,7 @@ title: Windows에서 Docker 클라이언트 오류 해결 | Microsoft Docs
 description: Visual Studio를 사용하여 웹앱을 만들고 Docker에 배포하는 경우 발생하는 문제를 해결합니다.
 ms.technology: vs-azure
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859530"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker 관련 Visual Studio 개발 문제 해결
 

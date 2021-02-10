@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869429"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 

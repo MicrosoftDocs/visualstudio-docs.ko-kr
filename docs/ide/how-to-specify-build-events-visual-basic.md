@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869260"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>방법: 빌드 이벤트 지정(Visual Basic)
 
@@ -118,7 +118,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
    End Sub
    ```
 
-   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 애플리케이션 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *\<ProjectName>.publish* )입니다. 두 번째 인수는 새 운영 체제 버전입니다.
+   이 명령은 두 개의 인수를 사용합니다. 첫 번째 인수는 애플리케이션 매니페스트의 경로(즉, 빌드 프로세스에서 매니페스트를 만드는 폴더, 일반적으로 *\<ProjectName>.publish*)입니다. 두 번째 인수는 새 운영 체제 버전입니다.
 
 5. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
@@ -137,7 +137,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 5. **지금 게시** 를 클릭하여 프로젝트를 게시합니다.
 
-     매니페스트 파일은 빌드되고 *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* 에 배치됩니다. 매니페스트를 보려면 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램** , **목록에서 프로그램 선택** , **메모장** 을 차례로 클릭합니다.
+     매니페스트 파일은 빌드되고 *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* 에 배치됩니다. 매니페스트를 보려면 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램**, **목록에서 프로그램 선택**, **메모장** 을 차례로 클릭합니다.
 
      파일에서 `<osVersionInfo>` 요소를 검색합니다. 예를 들어 버전은 다음과 같습니다.
 
@@ -157,7 +157,7 @@ Visual Basic의 빌드 이벤트는 스크립트, 매크로 또는 기타 작업
 
 8. 프로젝트를 다시 게시합니다. **게시** 페이지로 이동하고 **지금 게시** 를 클릭합니다.
 
-     매니페스트를 다시 봅니다. 매니페스트를 보려면 게시 디렉터리로 이동하고, 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램** , **목록에서 프로그램 선택** , **메모장** 을 차례로 클릭합니다.
+     매니페스트를 다시 봅니다. 매니페스트를 보려면 게시 디렉터리로 이동하고, 파일을 마우스 오른쪽 단추로 클릭하고, **연결 프로그램**, **목록에서 프로그램 선택**, **메모장** 을 차례로 클릭합니다.
 
      버전은 다음과 같이 표시됩니다.
 

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - debugging, JavaScript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 964151b3e674f493eeeeb564d0a449e093cde11f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840940"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용하여 JavaScript 디버그
 

@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871626"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증 실패
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.
@@ -44,7 +44,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>대상 컴퓨터의 DNS에서 디버거 호스트 컴퓨터 이름을 제대로 확인하고 있는지 검사하려면
 
-1. 대상 컴퓨터에서 **시작** 메뉴를 열고 **보조 프로그램**을 가리킨 다음, **명령 프롬프트**를 클릭합니다.
+1. 대상 컴퓨터에서 **시작** 메뉴를 열고 **보조 프로그램** 을 가리킨 다음, **명령 프롬프트** 를 클릭합니다.
 
 2. **명령 프롬프트** 창에 다음을 입력합니다.
 

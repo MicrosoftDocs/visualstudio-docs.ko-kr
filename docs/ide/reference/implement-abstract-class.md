@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 08e1c0ec2a79e14b1306eaa5330ee3e62dca5a98
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 05527e8ab1414b3f372f6db22c258d51fcd119a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852507"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
 

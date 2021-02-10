@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8cfc3ac5cb606637fe5c2818750168a239a46fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871496"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>오류: x64 프로세스용 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됩니다.
 64비트 프로세스의 혼합 네이티브 및 관리 코드를 디버그하려면 .NET Framework 버전 4가 있어야 합니다. 4 이전 버전의 .NET Framework에서는 64비트 프로세스의 혼합 모드 디버깅이 지원되지 않습니다.

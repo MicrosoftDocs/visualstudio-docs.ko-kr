@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6be94fafb1e41390236977a7a06b59cf7ac71a84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868207"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 증가시킵니다.

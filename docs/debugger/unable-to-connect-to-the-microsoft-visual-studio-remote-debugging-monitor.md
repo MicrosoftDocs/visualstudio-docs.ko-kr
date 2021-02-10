@@ -15,15 +15,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e333bbe4198dfeda9ceb90ed23263ef1b6e06495
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870365"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 이 메시지는 원격 컴퓨터에 원격 디버깅 모니터가 올바르게 설치되지 않았거나, 네트워크 문제 또는 방화벽으로 인해 원격 컴퓨터에 액세스할 수 없는 경우에 나타날 수 있습니다.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 665b1e42a089bc79f878c55b1be4dbf0b551f017
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838585"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>방법: Visual Studio에서 편집기의 글꼴 및 색 변경
 

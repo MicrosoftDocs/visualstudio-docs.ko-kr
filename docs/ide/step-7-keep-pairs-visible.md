@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc61a59d1e04d96fb36e7a7e4cd1304e2057adb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c6a4c2ce57e231cb174bb14a1a15e9089db8e6ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868766"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7단계: 쌍 표시
 플레이어가 서로 일치하지 않는 아이콘 쌍을 선택하는 경우 게임이 제대로 실행됩니다. 그러나 일치하는 쌍을 선택할 경우에는 어떻게 되는지 고려해야 합니다. 타이머를 설정(<xref:System.Windows.Forms.Timer.Start> 메서드 사용)하여 아이콘이 사라지게 하는 대신 `firstClicked` 및 `secondClicked` 참조 변수를 사용하여 선택한 두 레이블의 색을 다시 설정하는 것이 아니라 레이블을 더 이상 추적하지 않도록 게임 자체를 다시 설정해야 합니다.

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49739a0c07426329dc20f7fd459febcc70866ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866062"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>할당 후크 및 C 런타임 메모리 할당
 할당 후크 함수에 대한 매우 중요한 제한 사항은 `_CRT_BLOCK` 블록을 명시적으로 무시해야 한다는 점입니다. 이러한 블록은 할당 후크 함수가 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출하는 경우, C 런타임 라이브러리 함수를 통해 내부적으로 만든 메모리 할당입니다. 할당 후크 함수의 처음 부분에 다음과 같은 코드를 포함하여 `_CRT_BLOCK` 블록을 무시할 수 있습니다.

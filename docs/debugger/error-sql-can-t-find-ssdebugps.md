@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c8b6c2385879e4cf41c8cc2aea57715050b5e2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 67d7602357a39cbdce0c96b494f4c02758533e73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871392"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>오류: SQL에서 SSDEBUGPS를 찾을 수 없음
 
@@ -38,7 +38,7 @@ SQL Server 2005 머신에 SSDEBUGPS.dll을 복사하려면
 
 1. [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] 머신에서 동일한 이름과 경로의 디렉터리에 파일을 복사합니다.
 
-2. **명령 프롬프트**를 열고 다음 명령을 실행하여 파일을 등록합니다.
+2. **명령 프롬프트** 를 열고 다음 명령을 실행하여 파일을 등록합니다.
 
     ```cmd
     regsvr32 ssdebugps.dll

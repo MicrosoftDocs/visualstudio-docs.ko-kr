@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d93dec46c99c5a4385f254b797a522925d4b945f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 9dc99ca9652e0df1027b4aeab3519291c8f12034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870456"
 ---
 # <a name="tree-menu-commands"></a>트리 메뉴 명령
 **트리** 메뉴는 보기를 확장하거나 축소하는 명령을 제공합니다.

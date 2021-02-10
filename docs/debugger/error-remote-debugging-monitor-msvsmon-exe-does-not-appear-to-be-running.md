@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe0fc33c142c1bc70655817f833ae7c80fc628e7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8ecb8a0a3c725403d57769090229f690281026a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871509"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 원격 디버거를 다운로드하고 설정하는 방법에 대한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.
@@ -55,7 +55,7 @@ ms.locfileid: "90852578"
 
 - 원격 디버거의 사용 권한에 사용자를 추가할 수 있습니다(원격 디버거 창, **도구 > 사용 권한**).
 
-- 이전 단계에서 메서드를 사용할 수 없는 경우 모든 사용자가 원격 디버깅을 수행하도록 허용할 수 있습니다. 원격 디버거 창에서 **도구 > 옵션** 대화 상자로 이동합니다. **인증 안 함**을 선택하는 경우 **모든 사용자가 디버깅할 수 있도록 허용**을 선택할 수 있습니다. 그러나 선택 항목이 없거나 개인 네트워크에 있는 경우에만 이 옵션을 사용해야 합니다.
+- 이전 단계에서 메서드를 사용할 수 없는 경우 모든 사용자가 원격 디버깅을 수행하도록 허용할 수 있습니다. 원격 디버거 창에서 **도구 > 옵션** 대화 상자로 이동합니다. **인증 안 함** 을 선택하는 경우 **모든 사용자가 디버깅할 수 있도록 허용** 을 선택할 수 있습니다. 그러나 선택 항목이 없거나 개인 네트워크에 있는 경우에만 이 옵션을 사용해야 합니다.
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>원격 머신의 방화벽이 원격 디버거로 들어오는 연결을 허용하지 않습니다.
  Visual Studio와 원격 디버거 간의 통신을 허용하도록 Visual Studio 컴퓨터의 방화벽 및 원격 컴퓨터의 방화벽을 구성해야 합니다. 원격 디버거에서 사용 중인 포트에 대한 자세한 내용은 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)을 참조하세요. Windows 방화벽을 구성하는 방법에 대한 자세한 내용은 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)을 참조하세요.
@@ -70,7 +70,7 @@ ms.locfileid: "90852578"
  다른 시간에 원격 디버깅을 수행하거나 다른 시간에 네트워크 작업을 다시 예약해야 할 수도 있습니다.
 
 ## <a name="more-help"></a>자세한 도움말
- 명령줄 스위치를 포함하여 더 많은 원격 디버거 도움말을 가져오려면 원격 디버거 창에서 **도움말 > 사용법**을 클릭합니다. 웹 페이지가 열려 있지 않은 경우 **파일 탐색기** 창에 다음 줄을 복사하여 웹 페이지를 볼 수 있습니다. (\<Visual Studio installation directory>를 Visual Studio 설치 위치로 바꿔야 합니다.)
+ 명령줄 스위치를 포함하여 더 많은 원격 디버거 도움말을 가져오려면 원격 디버거 창에서 **도움말 > 사용법** 을 클릭합니다. 웹 페이지가 열려 있지 않은 경우 **파일 탐색기** 창에 다음 줄을 복사하여 웹 페이지를 볼 수 있습니다. (\<Visual Studio installation directory>를 Visual Studio 설치 위치로 바꿔야 합니다.)
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 

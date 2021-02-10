@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2d0ba3abf66aefe56921c51669787186d49f12
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f14143052ed3eb65e74e284e0877d9b32cb17bf7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871093"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>오류: SQL Server 디버깅 인터페이스에 액세스할 수 없음
 이 메시지는 SQL 디버깅이 활성화되어 있지 않은 컴퓨터에서 SQL 디버깅을 시도하는 경우에 발생합니다.

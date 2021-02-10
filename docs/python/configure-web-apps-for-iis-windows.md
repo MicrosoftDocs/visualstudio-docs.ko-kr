@@ -5,18 +5,18 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 40411f47e7deda48b04ac4efb9bb9bc18688989a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839112"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS용 Python 웹앱 구성
 
@@ -37,11 +37,11 @@ Windows 컴퓨터([Azure의 Windows 가상 머신](/azure/architecture/reference
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Python 인터프리터를 가리키도록 web.config 설정
 
-앱의 *web.config* 파일은 Windows에서 실행 중인 IIS(7 이상) 웹 서버에 HttpPlatform(권장) 또는 FastCGI를 통해 Python 요청을 처리하는 방법을 지시합니다. Visual Studio 버전 2015 및 이전 버전에서는 이러한 수정 작업을 자동으로 확인합니다. Visual Studio 2017 이상을 사용하는 경우 *web.config*를 수동으로 수정해야 합니다.
+앱의 *web.config* 파일은 Windows에서 실행 중인 IIS(7 이상) 웹 서버에 HttpPlatform(권장) 또는 FastCGI를 통해 Python 요청을 처리하는 방법을 지시합니다. Visual Studio 버전 2015 및 이전 버전에서는 이러한 수정 작업을 자동으로 확인합니다. Visual Studio 2017 이상을 사용하는 경우 *web.config* 를 수동으로 수정해야 합니다.
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform 처리기 구성
 
-HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. *web.config*의 `<httpPlatform>` 요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
+HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. *web.config* 의 `<httpPlatform>` 요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,9 +72,9 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
 사용하려면 먼저 [pypi.org/project/wfastcgi/](https://pypi.io/project/wfastcgi)에 설명된 대로 wfastcgi 패키지를 설치하고 구성합니다.
 
-그런 다음, 앱의 *web.config* 파일을 수정하여 *python.exe* 및 *wfastcgi.py*의 전체 경로를 `PythonHandler` 키에 포함합니다. 아래 단계에서는 Python이 *c:\python36-32*에 설치되어 있고 앱 코드가 *c:\home\site\wwwroot*에 있다고 가정합니다. 사용자 경로에 맞게 적절하게 조정합니다.
+그런 다음, 앱의 *web.config* 파일을 수정하여 *python.exe* 및 *wfastcgi.py* 의 전체 경로를 `PythonHandler` 키에 포함합니다. 아래 단계에서는 Python이 *c:\python36-32* 에 설치되어 있고 앱 코드가 *c:\home\site\wwwroot* 에 있다고 가정합니다. 사용자 경로에 맞게 적절하게 조정합니다.
 
-1. 경로가 Python 설치 위치와 일치하도록 *web.config*의 `PythonHandler` 항목을 수정합니다. 정확한 정보는 [IIS 구성 참조](https://www.iis.net/configreference)(iis.net)를 참조하세요.
+1. 경로가 Python 설치 위치와 일치하도록 *web.config* 의 `PythonHandler` 항목을 수정합니다. 정확한 정보는 [IIS 구성 참조](https://www.iis.net/configreference)(iis.net)를 참조하세요.
 
     ```xml
     <system.webServer>
@@ -86,7 +86,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
     </system.webServer>
     ```
 
-1. *web.config*의 `<appSettings>` 섹션 내에서 `WSGI_HANDLER`, `WSGI_LOG`(옵션) 및 `PYTHONPATH`에 대한 키를 추가합니다.
+1. *web.config* 의 `<appSettings>` 섹션 내에서 `WSGI_HANDLER`, `WSGI_LOG`(옵션) 및 `PYTHONPATH`에 대한 키를 추가합니다.
 
     ```xml
     <appSettings>
@@ -103,7 +103,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
     - `WSGI_HANDLER`는 해당 앱에서 가져올 수 있는 WSGI 앱을 가리켜야 합니다.
     - `WSGI_LOG`는 선택 사항이지만 앱 디버깅을 위해 권장됩니다.
 
-1. *web.config*의 `WSGI_HANDLER` 항목을 사용 중인 프레임워크에 적합하게 설정합니다.
+1. *web.config* 의 `WSGI_HANDLER` 항목을 사용 중인 프레임워크에 적합하게 설정합니다.
 
     - **Bottle**: 아래 표시된 대로 `app.wsgi_app` 뒤에 괄호가 있는지 확인합니다. 이는 해당 개체가 변수가 아닌 함수이기 때문에 필요합니다(*app.py* 참조).
 
@@ -112,14 +112,14 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: `WSGI_HANDLER` 값을 `<project_name>.app`으로 변경합니다. 여기서 `<project_name>`은 프로젝트 이름과 일치합니다. *runserver.py*의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
+    - **Flask**: `WSGI_HANDLER` 값을 `<project_name>.app`으로 변경합니다. 여기서 `<project_name>`은 프로젝트 이름과 일치합니다. *runserver.py* 의 `from <project_name> import app` 문을 살펴보면 정확한 식별자를 찾을 수 있습니다. 예를 들어 프로젝트 이름이 “FlaskAzurePublishExample”인 경우 항목은 다음과 같이 표시됩니다.
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**: Django 프로젝트에 대한 *web.config*에서 두 가지 사항을 변경해야 합니다. 먼저, `WSGI_HANDLER` 값을 `django.core.wsgi.get_wsgi_application()`으로 변경합니다(개체가 *wsgi.py* 파일에 있음).
+    - **Django**: Django 프로젝트에 대한 *web.config* 에서 두 가지 사항을 변경해야 합니다. 먼저, `WSGI_HANDLER` 값을 `django.core.wsgi.get_wsgi_application()`으로 변경합니다(개체가 *wsgi.py* 파일에 있음).
 
         ```xml
         <!-- Django apps only -->
@@ -141,8 +141,8 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
     배열에 사용자 URL을 추가하지 않으면 다음 오류가 표시됩니다. **DisallowedHost/잘못된 HTTP_HOST 헤더: '\<site URL\>'. '\<site URL\>'를 ALLOWED_HOSTS에 추가해야 할 수도 있습니다.**
 
-    배열이 비어 있으면 Django는 ‘localhost’ 및 ‘127.0.0.1’을 자동으로 허용하지만 프로덕션 URL을 추가하면 해당 기능이 제거됩니다. 이러한 이유로 *settings.py*의 개발 및 프로덕션 복사본을 별도로 유지 관리하거나, 환경 변수를 사용하여 런타임 값을 제어하는 것이 좋습니다.
+    배열이 비어 있으면 Django는 ‘localhost’ 및 ‘127.0.0.1’을 자동으로 허용하지만 프로덕션 URL을 추가하면 해당 기능이 제거됩니다. 이러한 이유로 *settings.py* 의 개발 및 프로덕션 복사본을 별도로 유지 관리하거나, 환경 변수를 사용하여 런타임 값을 제어하는 것이 좋습니다.
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>IIS 또는 Windows VM에 배포
 
-프로젝트에 올바른 *web.config* 파일이 있으면 **솔루션 탐색기**에서 프로젝트 상황에 맞는 메뉴의 **게시** 명령을 사용하고 **IIS, FTP 등** 옵션을 선택하여 IIS를 실행하는 컴퓨터에 게시할 수 있습니다. 이 경우 Visual Studio는 단순히 프로젝트 파일을 서버에 복사하기만 하며, 모든 서버 쪽 구성은 사용자의 책임입니다.
+프로젝트에 올바른 *web.config* 파일이 있으면 **솔루션 탐색기** 에서 프로젝트 상황에 맞는 메뉴의 **게시** 명령을 사용하고 **IIS, FTP 등** 옵션을 선택하여 IIS를 실행하는 컴퓨터에 게시할 수 있습니다. 이 경우 Visual Studio는 단순히 프로젝트 파일을 서버에 복사하기만 하며, 모든 서버 쪽 구성은 사용자의 책임입니다.

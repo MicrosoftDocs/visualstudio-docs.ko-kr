@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 00a8b7c7e92153fcbc323349f30adc458cf973fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839285"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>.NET Framework 메모리 할당 및 수명 데이터 수집
 

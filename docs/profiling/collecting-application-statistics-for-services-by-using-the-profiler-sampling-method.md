@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c686de4128d655b5b8146925529e6a280bb754
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ffbc26cb10d80aedb36d33826f9eab675957c8ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868402"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>프로파일러 샘플링 방법을 사용하여 서비스에 대한 애플리케이션 통계 수집
 이 섹션에서는 명령줄에서 샘플링 방법을 사용하여 Windows 서비스에 대한 성능 통계를 수집하기 위한 절차 및 옵션을 설명합니다.

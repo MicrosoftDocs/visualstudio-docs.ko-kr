@@ -16,15 +16,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], exception helper, Examine an exception
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc57d28510fe2e2cd5dbbb3aeea993813546715
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: e10dc341ce33ba91c05348e9d3fba545437ce497
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870859"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>예외 도우미를 사용하여 예외 검사 
 

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6567b0116227bf259eb3591bc6880a6841252869
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 053f846b15968ad7a5714f99779944bd63a8b6d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868389"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 애플리케이션 통계 수집
 이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 클라이언트(독립 실행형) 애플리케이션에 대한 성능 통계를 수집하기 위한 절차 및 옵션을 설명합니다.

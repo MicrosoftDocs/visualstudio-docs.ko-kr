@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871652"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: &#39;function&#39; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.
 
@@ -44,8 +44,8 @@ ms.locfileid: "90852747"
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>해결 방법 #3: 모든 암시적 확인 사용 안 함
 
-이전 해결 방법으로 문제가 해결되지 않는 경우 **도구** > **옵션**으로 이동하여 **디버깅** > **일반** > **속성 확인 및 기타 암시적 함수 호출 사용** 설정을 선택 취소합니다. 이렇게 하면 대부분의 암시적 함수 확인이 사용하지 않도록 설정되며 문제가 해결됩니다.
+이전 해결 방법으로 문제가 해결되지 않는 경우 **도구** > **옵션** 으로 이동하여 **디버깅** > **일반** > **속성 확인 및 기타 암시적 함수 호출 사용** 설정을 선택 취소합니다. 이렇게 하면 대부분의 암시적 함수 확인이 사용하지 않도록 설정되며 문제가 해결됩니다.
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>해결 방법 #4: 관리형 호환성 모드 사용
 
-레거시 디버깅 엔진으로 전환하는 경우 이러한 오류를 제거할 수 있습니다. **도구** > **옵션**으로 이동하여 **디버깅** > **일반** > **관리형 호환성 모드 사용** 설정을 선택합니다. 자세한 내용은 [General debugging options](../debugger/general-debugging-options-dialog-box.md)(일반 디버깅 옵션)를 참조하세요.
+레거시 디버깅 엔진으로 전환하는 경우 이러한 오류를 제거할 수 있습니다. **도구** > **옵션** 으로 이동하여 **디버깅** > **일반** > **관리형 호환성 모드 사용** 설정을 선택합니다. 자세한 내용은 [General debugging options](../debugger/general-debugging-options-dialog-box.md)(일반 디버깅 옵션)를 참조하세요.

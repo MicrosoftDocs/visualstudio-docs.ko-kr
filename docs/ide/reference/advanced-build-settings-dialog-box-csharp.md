@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869000"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
@@ -48,7 +48,7 @@ ms.locfileid: "92136747"
 
 **내부 컴파일러 오류 보고**
 
-Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt** (기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send** 로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue** 로 설정되면 오류 보고서가 대기합니다. **none** 으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
+Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send** 로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue** 로 설정되면 오류 보고서가 대기합니다. **none** 으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요.
 
 **산술 연산 오버플로/언더플로 확인**
 
@@ -90,7 +90,7 @@ mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페�
 
 **파일 맞춤**
 
-출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512** , **1024** , **2048** , **4096** 및 **8192** 입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
+출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192** 입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요.
 
 **라이브러리 기준 주소**
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869247"
 ---
 # <a name="how-to-specify-build-events-c"></a>방법: 빌드 이벤트 지정(C#)
 
@@ -132,7 +132,7 @@ ms.locfileid: "92136942"
    }
    ```
 
-   이 명령은 두 개의 인수인 애플리케이션 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish* ) 및 새 운영 체제 버전을 사용합니다.
+   이 명령은 두 개의 인수인 애플리케이션 매니페스트의 경로(매니페스트를 만드는 빌드 프로세스의 폴더, 일반적으로 *Projectname.publish*) 및 새 운영 체제 버전을 사용합니다.
 
 4. 프로젝트를 빌드합니다.
 

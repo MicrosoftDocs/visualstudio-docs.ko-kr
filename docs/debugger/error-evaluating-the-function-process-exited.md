@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871639"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>오류: 대상 프로세스가 &#39;function&#39; 함수를 확인하는 중 &#39;code&#39; 코드로 종료되었습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "90852734"
 
 이 문제에 대한 가능한 해결 방법은 다음 2가지가 있습니다.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>해결 방법 #1: 디버거가 getter 속성 또는 ToString 메서드를 호출하지 않도록 방지 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>해결 방법 #1: 디버거가 getter 속성 또는 ToString 메서드를 호출하지 않도록 방지 
 
 오류 메시지는 디버거가 호출하려고 시도한 함수의 이름을 알려줍니다. 함수 이름을 사용하여 **직접 실행** 창에서 해당 함수를 다시 확인하면 확인을 디버그할 수 있습니다. **자동/지역/조사식** 창에서 하는 암시적 확인과 달리, **직접 실행** 창에서 확인하는 경우 처리되지 않은 예외가 발생하면 디버거가 중단되므로 확인을 디버그할 수 있습니다.
 
@@ -44,4 +44,4 @@ ms.locfileid: "90852734"
 
 ### <a name="solution-2-disable-all-implicit-evaluation"></a>해결 방법 #2: 모든 암시적 확인 사용 안 함
 
-이전 해결 방법으로 문제가 해결되지 않는 경우 **도구** > **옵션**으로 이동하여 **디버깅** > **일반** > **속성 확인 및 기타 암시적 함수 호출 사용** 설정을 선택 취소합니다. 이렇게 하면 대부분의 암시적 함수 확인이 사용하지 않도록 설정되며 문제가 해결됩니다.
+이전 해결 방법으로 문제가 해결되지 않는 경우 **도구** > **옵션** 으로 이동하여 **디버깅** > **일반** > **속성 확인 및 기타 암시적 함수 호출 사용** 설정을 선택 취소합니다. 이렇게 하면 대부분의 암시적 함수 확인이 사용하지 않도록 설정되며 문제가 해결됩니다.
