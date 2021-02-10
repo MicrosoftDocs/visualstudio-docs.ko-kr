@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881960"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
 
@@ -355,7 +355,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. *.props* 파일(예: *Partner.AutoImports.props* )을 만들어 프로젝트가 포함된 폴더의 루트에 넣습니다. 이 파일은 다양한 리소스를 찾기 위해 MSBuild에 사용되는 변수를 설정하는 데 사용됩니다. 이 파일로 변수를 설정하지 않으면 레지스트리 값을 사용하는 다른 *.props* 파일 및 *.targets* 파일로 변수가 설정됩니다. 레지스트리 값을 설정하지 않을 것이기 때문에 이러한 변수가 비게 되고 빌드가 실패합니다. 대신 *Partner.AutoImports.props* 에 다음을 추가합니다.
+4. *.props* 파일(예: *Partner.AutoImports.props*)을 만들어 프로젝트가 포함된 폴더의 루트에 넣습니다. 이 파일은 다양한 리소스를 찾기 위해 MSBuild에 사용되는 변수를 설정하는 데 사용됩니다. 이 파일로 변수를 설정하지 않으면 레지스트리 값을 사용하는 다른 *.props* 파일 및 *.targets* 파일로 변수가 설정됩니다. 레지스트리 값을 설정하지 않을 것이기 때문에 이러한 변수가 비게 되고 빌드가 실패합니다. 대신 *Partner.AutoImports.props* 에 다음을 추가합니다.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -388,7 +388,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
 6. 명령줄 환경을 다음과 같이 변경합니다.
 
-    - Depot= *1단계에서 만든 Depot 디렉터리의 위치* 설정
+    - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
 
     - Set path=%path%;’컴퓨터에서 MSBuild의 위치’;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\ 
 
@@ -400,9 +400,9 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
 6. 명령줄 환경을 다음과 같이 변경합니다.
 
-    - Depot= *1단계에서 만든 Depot 디렉터리의 위치* 설정
+    - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
 
-    - Set path=%path%; *컴퓨터에서 MSBuild의 위치* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+    - Set path=%path%;*컴퓨터에서 MSBuild의 위치*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
        네이티브 64비트 빌드의 경우 MSBuild의 64비트 버전을 가리킵니다.
 

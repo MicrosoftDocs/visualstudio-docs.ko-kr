@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880491"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild의 문제 해결 및 로그 만들기
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e4486bc20caf580c9a2c1038002693bd92fe616a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882923"
 ---
 # <a name="cores-view-legend"></a>코어 뷰 범례
 코어 뷰 범례는 색 및 이름으로 각 스레드를 식별합니다. 여기에는 코어 간 컨텍스트 전환 횟수, 총 컨텍스트 전환 및 코어 간 컨텍스트 전환 비율을 보여주는 열이 포함되어 있습니다. 범례의 행은 코어 간 컨텍스트 전환 횟수를 기준으로 내림차순으로 정렬됩니다.

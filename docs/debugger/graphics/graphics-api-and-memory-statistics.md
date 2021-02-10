@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 08c9f518f6d56f2ec211ef494da3890a56bf1369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882299"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>그래픽 API 및 메모리 통계
 <!-- VERSIONLESS -->

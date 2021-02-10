@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39be066e63a04c08eecd92395757d09b88333965
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 2a4df840a2eaa6077589b86b28aab1a7f83c8f55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879802"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>빠른 시작: 기존 코드에서 Python 프로젝트를 만들기
 
@@ -26,7 +26,7 @@ ms.locfileid: "90100750"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-원하는 경우 **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작**을 선택하여 프로그램을 실행합니다.
+원하는 경우 **Ctrl**+**F5** 를 누르거나 **디버그** > **디버깅하지 않고 시작** 을 선택하여 프로그램을 실행합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

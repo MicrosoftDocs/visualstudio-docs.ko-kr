@@ -6,25 +6,25 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882780"
 ---
 # <a name="step-2-write-and-run-code"></a>2단계: 작성 및 코드 실행
 
 **이전 단계: [새 Python 프로젝트 만들기](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-프로젝트 파일은 **솔루션 탐색기**에서 관리하더라도 일반적으로 소스 코드와 같은 파일의 ‘콘텐츠’는 ‘편집기’ 창에서 작업합니다. 편집기는 컨텍스트에 따라 프로그래밍 언어(파일 확장명에 따라)를 포함한 편집 중인 파일의 유형을 파악하고, IntelliSense를 사용한 구문 색 지정 및 자동 완성과 같이 해당 언어에 적절한 기능을 제공합니다.
+프로젝트 파일은 **솔루션 탐색기** 에서 관리하더라도 일반적으로 소스 코드와 같은 파일의 ‘콘텐츠’는 ‘편집기’ 창에서 작업합니다. 편집기는 컨텍스트에 따라 프로그래밍 언어(파일 확장명에 따라)를 포함한 편집 중인 파일의 유형을 파악하고, IntelliSense를 사용한 구문 색 지정 및 자동 완성과 같이 해당 언어에 적절한 기능을 제공합니다.
 
-1. 새로운 “Python 애플리케이션” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py*라는 기본 빈 파일이 열립니다.
+1. 새로운 “Python 애플리케이션” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py* 라는 기본 빈 파일이 열립니다.
 
 1. 편집기에서 `print("Hello, Visual Studio")`를 입력하기 시작하면 Visual Studio IntelliSense가 입력 도중에 자동 완성 옵션을 어떻게 표시하는지 알 수 있습니다. 드롭다운 목록에서 윤곽선이 있는 옵션은 **Tab** 키를 누르면 사용되는 기본 완성입니다. 완성 기능은 더 긴 문이나 식별자가 포함된 경우에 가장 유용합니다.
 
@@ -45,11 +45,11 @@ ms.locfileid: "62430074"
     ![IntelliSense 구문 색 지정 및 오류 강조 표시](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 개발 환경은 매우 개인적인 문제이기 때문에 Visual Studio는 사용자가 Visual Studio의 모양 및 동작을 완벽히 제어할 수 있는 기능을 제공합니다. **도구** > **옵션** 메뉴 명령을 선택하고 **환경** 및 **텍스트 편집기** 탭 아래에 있는 설정을 탐색합니다. 기본적으로 제한된 개수의 옵션만 표시됩니다. 모든 프로그래밍 언어에 대한 옵션을 모두 보려면 대화 상자의 맨 아래에 있는 **모든 설정 표시**를 선택합니다.
+    > 개발 환경은 매우 개인적인 문제이기 때문에 Visual Studio는 사용자가 Visual Studio의 모양 및 동작을 완벽히 제어할 수 있는 기능을 제공합니다. **도구** > **옵션** 메뉴 명령을 선택하고 **환경** 및 **텍스트 편집기** 탭 아래에 있는 설정을 탐색합니다. 기본적으로 제한된 개수의 옵션만 표시됩니다. 모든 프로그래밍 언어에 대한 옵션을 모두 보려면 대화 상자의 맨 아래에 있는 **모든 설정 표시** 를 선택합니다.
 
-1. **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작** 메뉴 항목을 선택하여 이 지점까지 작성한 코드를 실행합니다. 코드에 여전히 오류가 있는 경우 Visual Studio에서 경고 메시지를 표시합니다.
+1. **Ctrl**+**F5** 를 누르거나 **디버그** > **디버깅하지 않고 시작** 메뉴 항목을 선택하여 이 지점까지 작성한 코드를 실행합니다. 코드에 여전히 오류가 있는 경우 Visual Studio에서 경고 메시지를 표시합니다.
 
-1. 프로그램을 실행하면 명령줄에서 *PythonApplication1.py*를 사용하여 Python 인터프리터를 실행했을 때와 마찬가지로 결과가 표시된 콘솔 창이 나타납니다. 아무 키나 눌러서 창을 닫고 Visual Studio 편집기로 돌아갑니다.
+1. 프로그램을 실행하면 명령줄에서 *PythonApplication1.py* 를 사용하여 Python 인터프리터를 실행했을 때와 마찬가지로 결과가 표시된 콘솔 창이 나타납니다. 아무 키나 눌러서 창을 닫고 Visual Studio 편집기로 돌아갑니다.
 
     ![프로그램의 첫 번째 실행에 대한 출력](media/vs-getting-started-python-07-output.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "62430074"
         print(cos(radians(i)))
     ```
 
-1. **Ctrl**+**F5** 또는 **디버그** > **디버깅하지 않고 시작**을 사용하여 프로그램을 다시 실행합니다. 완료되면 출력 창을 닫습니다.
+1. **Ctrl**+**F5** 또는 **디버그** > **디버깅하지 않고 시작** 을 사용하여 프로그램을 다시 실행합니다. 완료되면 출력 창을 닫습니다.
 
 ## <a name="next-step"></a>다음 단계
 

@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 412b40fdb38e4931bcefb05bde8d695955d6c05a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879737"
 ---
 # <a name="modules-view"></a>모듈 뷰
 모듈 뷰는 프로파일링 데이터의 모듈을 나열합니다. 각 모듈은 계층 트리의 루트 노드입니다. 모듈의 프로파일링된 함수는 모듈 노드 아래에 나열됩니다. 프로파일링 데이터가 샘플링 방법을 사용하여 수집된 경우 줄 정보는 함수 노드 아래에 나열되고 명령 포인터 데이터는 줄 노드 아래에 나열됩니다.

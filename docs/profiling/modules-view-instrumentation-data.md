@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879776"
 ---
 # <a name="modules-view---instrumentation-data"></a>모듈 뷰 - 계측 데이터
 모듈 뷰에는 프로파일링 데이터에 포함되었던 모듈별로 그룹화된 성능 데이터가 표시됩니다. 모듈의 함수는 모듈 노드 아래에 나열됩니다.

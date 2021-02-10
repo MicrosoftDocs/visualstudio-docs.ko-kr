@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 519998d23aada86e9142e3097aac1dac06b07b81
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c386027391c02c9645836c98eab37d97a3967066
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880257"
 ---
 # <a name="math-nodes"></a>수학 노드
 

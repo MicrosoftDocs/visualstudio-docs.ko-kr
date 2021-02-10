@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2b498279b085f19cd6ea218b4300301184da8e0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879750"
 ---
 # <a name="modules-view---sampling-data"></a>모듈 뷰 - 샘플링 데이터
 샘플링 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 성능 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 모듈의 샘플링된 함수는 모듈 노드 아래에 나열됩니다.

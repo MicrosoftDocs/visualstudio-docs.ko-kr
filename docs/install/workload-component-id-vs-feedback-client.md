@@ -5,7 +5,7 @@ description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 Azu
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
-ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83b457582124658285e0769d1907a8643d44fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81276307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881765"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client 구성 요소 디렉터리
 

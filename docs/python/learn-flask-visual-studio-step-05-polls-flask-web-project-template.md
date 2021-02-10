@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 611bad608d3619e020994ad7325ad7a678fe1e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882832"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5단계: 설문조사 Flask 웹 프로젝트 템플릿 사용
 
@@ -36,13 +36,13 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 ## <a name="step-5-1-create-the-project"></a>5-1단계: 프로젝트 만들기
 
-1. Visual Studio에서 **솔루션 탐색기**로 이동하여 이 자습서의 앞부분에서 만든 **LearningFlask** 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. 새 솔루션을 사용하려는 경우에는 **파일** > **새로 만들기** > **프로젝트**를 대신 선택합니다.
+1. Visual Studio에서 **솔루션 탐색기** 로 이동하여 이 자습서의 앞부분에서 만든 **LearningFlask** 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다. 새 솔루션을 사용하려는 경우에는 **파일** > **새로 만들기** > **프로젝트** 를 대신 선택합니다.
 
-1. 새 프로젝트 대화 상자에서 **설문 조사 Flask 웹 프로젝트** 템플릿을 검색하여 선택하고 프로젝트의 이름을 "FlaskPolls"로 지정하고 **확인**을 선택합니다.
+1. 새 프로젝트 대화 상자에서 **설문 조사 Flask 웹 프로젝트** 템플릿을 검색하여 선택하고 프로젝트의 이름을 "FlaskPolls"로 지정하고 **확인** 을 선택합니다.
 
-1. Visual Studio의 다른 프로젝트 템플릿과 마찬가지로 "설문 조사 Flask 웹 프로젝트" 템플릿에는 *requirements.txt* 파일이 포함되어 있으므로 Visual Studio에서는 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기**를 선택하여 기본값을 그대로 사용합니다. (이 템플릿은 Flask와 azure-storage 및 pymongo 패키지가 필요하고, "설문 조사 Flask/Jade 웹 프로젝트"도 pyjade가 필요합니다.)
+1. Visual Studio의 다른 프로젝트 템플릿과 마찬가지로 "설문 조사 Flask 웹 프로젝트" 템플릿에는 *requirements.txt* 파일이 포함되어 있으므로 Visual Studio에서는 해당 종속성을 설치할 위치를 묻습니다. **가상 환경에 설치** 옵션을 선택하고 **가상 환경 추가** 대화 상자에서 **만들기** 를 선택하여 기본값을 그대로 사용합니다. (이 템플릿은 Flask와 azure-storage 및 pymongo 패키지가 필요하고, "설문 조사 Flask/Jade 웹 프로젝트"도 pyjade가 필요합니다.)
 
-1. **솔루션 탐색기**에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택하여 **FlaskPolls** 프로젝트가 Visual Studio 솔루션의 기본값이 되도록 설정합니다. 굵게 표시된 시작 프로젝트는 디버거를 시작할 때 실행됩니다.
+1. **솔루션 탐색기** 에서 해당 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정** 을 선택하여 **FlaskPolls** 프로젝트가 Visual Studio 솔루션의 기본값이 되도록 설정합니다. 굵게 표시된 시작 프로젝트는 디버거를 시작할 때 실행됩니다.
 
 1. **디버그** > **디버깅 시작**(**F5**)을 선택하거나 도구 모음의 **웹 서버** 단추를 사용하여 서버를 실행합니다.
 
@@ -68,7 +68,7 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 1. 다음 섹션을 위해 앱이 계속 실행되도록 할 수 있습니다.
 
-    앱을 중지하고 [변경 내용을 소스 제어에 커밋](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)하려면 먼저 **팀 탐색기**에서 **변경 내용** 페이지를 열고, 가상 환경에 대한 폴더(**env**)를 마우스 오른쪽 단추로 클릭하고, **이 로컬 항목 무시**를 선택합니다.
+    앱을 중지하고 [변경 내용을 소스 제어에 커밋](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)하려면 먼저 **팀 탐색기** 에서 **변경 내용** 페이지를 열고, 가상 환경에 대한 폴더(**env**)를 마우스 오른쪽 단추로 클릭하고, **이 로컬 항목 무시** 를 선택합니다.
 
 ### <a name="examine-the-project-contents"></a>프로젝트 콘텐츠 검사
 
@@ -76,7 +76,7 @@ Visual Studio의 “Flask 웹 프로젝트” 템플릿을 이해했으면 이�
 
 ## <a name="step-5-2-understand-the-data-models"></a>5-2단계: 데이터 모델 이해
 
-앱의 데이터 모델은 *models/\_\_init\_\_.py*에 정의된 Poll 및 Choice라는 Python 클래스입니다. Poll은 질문을 나타내며, Choice 인스턴스 컬렉션은 이 질문에 사용 가능한 답변을 나타냅니다. Poll은 모든 선택 사항에 대한 총 투표 수와 보기를 생성하는 데 사용되는 통계를 계산하는 메서드를 유지합니다.
+앱의 데이터 모델은 *models/\_\_init\_\_.py* 에 정의된 Poll 및 Choice라는 Python 클래스입니다. Poll은 질문을 나타내며, Choice 인스턴스 컬렉션은 이 질문에 사용 가능한 답변을 나타냅니다. Poll은 모든 선택 사항에 대한 총 투표 수와 보기를 생성하는 데 사용되는 통계를 계산하는 메서드를 유지합니다.
 
 ```python
 class Poll(object):
@@ -116,7 +116,7 @@ class Choice(object):
 
 데이터 스토리지 메커니즘은 다음과 같이 작동합니다.
 
-1. 리포지토리 형식은 `REPOSITORY_NAME` 환경 변수를 통해 지정됩니다. 이 변수는 "memory", "azuretablestore" 또는 "mongodb"로 설정할 수 있습니다. *settings.py*의 코드 중 일부는 "memory"를 기본값으로 사용하여 이름을 검색합니다. 백업 저장소를 변경하려면 환경 변수를 설정하고 앱을 다시 시작해야 합니다.
+1. 리포지토리 형식은 `REPOSITORY_NAME` 환경 변수를 통해 지정됩니다. 이 변수는 "memory", "azuretablestore" 또는 "mongodb"로 설정할 수 있습니다. *settings.py* 의 코드 중 일부는 "memory"를 기본값으로 사용하여 이름을 검색합니다. 백업 저장소를 변경하려면 환경 변수를 설정하고 앱을 다시 시작해야 합니다.
 
     ```python
     from os import environ
@@ -145,7 +145,7 @@ class Choice(object):
         raise ValueError('Unknown repository.')
     ```
 
-1. *views.py*에서 앱은 데이터 저장소의 이름 및 설정을 사용하여 `Repository` 개체를 초기화하는 팩터리 메서드를 호출합니다.
+1. *views.py* 에서 앱은 데이터 저장소의 이름 및 설정을 사용하여 `Repository` 개체를 초기화하는 팩터리 메서드를 호출합니다.
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ class Choice(object):
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. `factory.create_repository` 메서드는 *models\factory.py*에 있습니다. 이 메서드는 적절한 리포지토리 모듈을 가져온 다음, `Repository` 인스턴스를 만듭니다.
+1. `factory.create_repository` 메서드는 *models\factory.py* 에 있습니다. 이 메서드는 적절한 리포지토리 모듈을 가져온 다음, `Repository` 인스턴스를 만듭니다.
 
     ```python
     def create_repository(name, settings):
@@ -180,14 +180,14 @@ class Choice(object):
 
 다음 단계에서는 필요한 경우 프로젝트 템플릿에서 제공하는 세 가지 데이터 저장소가 아닌 다른 데이터 저장소에 대한 지원을 추가합니다.
 
-1. *memory.py*를 새 파일에 복사하여 `Repository` 클래스의 기본 인터페이스를 사용합니다.
+1. *memory.py* 를 새 파일에 복사하여 `Repository` 클래스의 기본 인터페이스를 사용합니다.
 1. 사용 중인 데이터 저장소에 맞게 클래스의 구현을 수정합니다.
-1. 추가된 데이터 저장소의 이름을 인식하고 적절한 모듈을 가져오는 다른 `elif` 사례를 추가하려면 *factory.py*를 수정합니다.
-1. *settings.py*를 수정하여 `REPOSITORY_NAME` 환경 변수에서 다른 이름을 인식하고 이에 따라 `REPOSITORY_SETTINGS`를 초기화합니다.
+1. 추가된 데이터 저장소의 이름을 인식하고 적절한 모듈을 가져오는 다른 `elif` 사례를 추가하려면 *factory.py* 를 수정합니다.
+1. *settings.py* 를 수정하여 `REPOSITORY_NAME` 환경 변수에서 다른 이름을 인식하고 이에 따라 `REPOSITORY_SETTINGS`를 초기화합니다.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>samples.json에서 데이터 저장소 시드
 
-처음에는 선택한 데이터 저장소에 설문 조사가 없으므로 앱의 홈 페이지에 **샘플 설문 만들기** 단추와 함께 **사용할 수 있는 설문 조사가 없음**이라는 메시지가 표시됩니다. 그러나 단추를 선택하면 사용 가능한 설문 조사가 표시되도록 보기가 변경됩니다. 이러한 전환은 *templates\index.html*의 조건부 태그를 통해 이루어집니다(간결하게 하기 위해 일부 빈 줄 생략).
+처음에는 선택한 데이터 저장소에 설문 조사가 없으므로 앱의 홈 페이지에 **샘플 설문 만들기** 단추와 함께 **사용할 수 있는 설문 조사가 없음** 이라는 메시지가 표시됩니다. 그러나 단추를 선택하면 사용 가능한 설문 조사가 표시되도록 보기가 변경됩니다. 이러한 전환은 *templates\index.html* 의 조건부 태그를 통해 이루어집니다(간결하게 하기 위해 일부 빈 줄 생략).
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ class Choice(object):
 
 템플릿의 `polls` 변수는 `repository.get_polls`에 대한 호출에서 비롯된 것으로, 데이터 저장소가 초기화될 때까지 아무것도 반환하지 않습니다.
 
-**샘플 설문 조사 만들기** 단추를 선택하면 /seed URL로 이동합니다. 해당 경로의 처리기는 *views.py*에 정의되어 있습니다.
+**샘플 설문 조사 만들기** 단추를 선택하면 /seed URL로 이동합니다. 해당 경로의 처리기는 *views.py* 에 정의되어 있습니다.
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 *models\_\_init\_\_.py*에 있는 `_load_samples_json` 메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
+`repository.add_sample_polls()`에 대한 호출은 선택한 데이터 저장소의 특정 `Repository` 구현 중 하나에서 종료됩니다. 각 구현에서는 *models\_\_init\_\_.py* 에 있는 `_load_samples_json` 메서드를 호출하여 *models\samples.json* 파일을 메모리에 로드한 다음, 해당 데이터를 반복하여 데이터 저장소에 필요한 `Poll` 및 `Choice` 개체를 만듭니다.
 
-해당 프로세스가 완료되면 `seed` 메서드의 `redirect('/')` 문이 홈 페이지로 다시 이동합니다. 이제 `repository.get_polls`가 데이터 개체를 반환하므로 *templates\index.html*의 조건부 태그에서 설문 조사가 포함된 테이블을 렌더링합니다.
+해당 프로세스가 완료되면 `seed` 메서드의 `redirect('/')` 문이 홈 페이지로 다시 이동합니다. 이제 `repository.get_polls`가 데이터 개체를 반환하므로 *templates\index.html* 의 조건부 태그에서 설문 조사가 포함된 테이블을 렌더링합니다.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>질문: 새 설문 조사를 앱에 어떻게 추가하나요?
 
-답변: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json*을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Choice` 및 `Poll` 인스턴스를 만드는 메서드로 `Repository` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
+답변: 프로젝트 템플릿을 통해 제공된 앱에는 설문 조사를 추가하거나 편집할 수 있는 기능이 없습니다. *models\samples.json* 을 수정하여 새 초기화 데이터를 만들 수는 있지만 그럴 경우 데이터 저장소를 다시 설정해야 합니다 편집 기능을 구현하려면 필요한 `Choice` 및 `Poll` 인스턴스를 만드는 메서드로 `Repository` 클래스 인터페이스를 확장한 다음, 해당 메서드를 사용하는 추가 페이지에 UI를 구현해야 합니다.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4단계: 설문 조사 세부 정보 및 결과 보기 이해
 
@@ -242,7 +242,7 @@ def seed():
 
 남은 것은 개별 설문 조사의 투표(세부 사항)와 결과 보기를 검토하는 것입니다.
 
-홈페이지에서 설문 조사를 선택하면 앱이 URL /poll/\<key\>로 이동합니다. 여기서 *key*는 설문 조사의 고유한 식별자입니다. *views.py*에서 GET 요청의 해당 URL 라우팅을 처리하기 위해 `details` 함수가 할당되어 있는지 확인할 수 있습니다. 또한 URL 경로에서 `<key>`를 사용하면 해당 양식의 모든 경로를 동일한 함수로 매핑하고, 같은 이름의 함수에 대한 인수를 생성할 수 있습니다.
+홈페이지에서 설문 조사를 선택하면 앱이 URL /poll/\<key\>로 이동합니다. 여기서 *key* 는 설문 조사의 고유한 식별자입니다. *views.py* 에서 GET 요청의 해당 URL 라우팅을 처리하기 위해 `details` 함수가 할당되어 있는지 확인할 수 있습니다. 또한 URL 경로에서 `<key>`를 사용하면 해당 양식의 모든 경로를 동일한 함수로 매핑하고, 같은 이름의 함수에 대한 인수를 생성할 수 있습니다.
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-설문 조사(GET 요청 수)를 표시하기 위해 이 함수는 *templates\details.html*만 호출합니다. 이 함수는 설문 조사의 `choices` 배열을 반복하여 각각에 대한 라디오 단추를 만듭니다.
+설문 조사(GET 요청 수)를 표시하기 위해 이 함수는 *templates\details.html* 만 호출합니다. 이 함수는 설문 조사의 `choices` 배열을 반복하여 각각에 대한 라디오 단추를 만듭니다.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ def details(key):
 
 **투표** 단추에 `type="submit"`이 있으므로, 이를 선택하면 `details` 함수로 한 번 더 라우팅된 동일한 URL에 대한 POST 요청이 생성됩니다. 그러나 이번에는 양식 데이터에서 선택 사항을 추출하고 /results/\<choice\>로 리디렉션합니다.
 
-그리고 /results/\<key\> URL이 *views.py*의 `results` 함수로 라우팅된 다음, 설문 조사의 `calculate_stats` 메서드를 호출하고, 렌더링을 위해 *templates\results.html*을 적용합니다.
+그리고 /results/\<key\> URL이 *views.py* 의 `results` 함수로 라우팅된 다음, 설문 조사의 `calculate_stats` 메서드를 호출하고, 렌더링을 위해 *templates\results.html* 을 적용합니다.
 
 ```python
 @app.route('/results/<key>')

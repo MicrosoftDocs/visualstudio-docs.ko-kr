@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4ffa80d938556c33dc8eafec3068aef257219071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879815"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>모듈 뷰 - .NET 메모리 계측 데이터
 계측 방법을 사용하여 수집되는 .NET 메모리 할당 데이터의 모듈 뷰에서는 프로파일링 실행에서 실행된 모듈을 기준으로 메모리 및 타이밍 데이터를 그룹화합니다. 모듈의 함수에 대한 프로파일링 데이터는 모듈 노드 아래에 나열됩니다.

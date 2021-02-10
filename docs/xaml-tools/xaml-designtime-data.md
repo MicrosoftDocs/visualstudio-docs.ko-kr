@@ -5,14 +5,14 @@ ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880413"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 

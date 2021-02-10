@@ -5,17 +5,17 @@ description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Stu
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eb817e15ebffbe75f9b003abe1fe0560a5236293
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cecadf43e7f54f5ad0954acfc725f5e48a2a69cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881848"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio 핵심 편집기(Visual Studio Enterprise 2019에 포함)
 
@@ -767,7 +767,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 타기팅 팩 | 1
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.8.30509.167 | 옵션
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 옵션
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 옵션
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 런타임(LTS) | 16.8.30703.189 | 옵션
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 런타임(LTS) | 16.8.30703.189 | 선택 사항
 Microsoft.NetCore.Component.Runtime.5.0 | .NET 5.0 런타임 | 16.8.30703.189 | 옵션
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | 옵션
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 작성 도구 | 16.0.28625.61 | 옵션

@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880569"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>클래스 디자이너에서 형식 멤버 만들기 및 구성
 

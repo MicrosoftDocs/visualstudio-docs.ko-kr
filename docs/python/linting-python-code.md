@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d410fd7575b6f71f272f6924d15249f89aa6ebcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97336bf028a02c6c1f90262754dc0c89aa81e1cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882806"
 ---
 # <a name="use-pylint-to-check-python-code"></a>PyLint를 사용하여 Python 코드 검사
 
@@ -23,7 +23,7 @@ Python 코드의 오류를 검사하고 적절한 Python 코딩 패턴을 권장
 
 ## <a name="run-pylint"></a>PyLint 실행
 
-**솔루션 탐색기**에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **PyLint 실행**을 선택합니다.
+**솔루션 탐색기** 에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** > **PyLint 실행** 을 선택합니다.
 
 ![Python 프로젝트의 상황에 맞는 메뉴에 있는 PyLint 명령](media/code-pylint-command.png)
 
@@ -50,7 +50,7 @@ PyLint 설명서의 [명령줄 옵션](https://pylint.readthedocs.io/en/latest/u
    pylint --generate-rcfile > .pylintrc
    ```
 
-1. Visual Studio 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 항목**을 선택한 다음, 새 *.pylintrc* 파일로 이동하여 선택하고 **추가**를 선택합니다.
+1. Visual Studio 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 항목** 을 선택한 다음, 새 *.pylintrc* 파일로 이동하여 선택하고 **추가** 를 선택합니다.
 
 1. 작업할 수 있는 여러 설정이 포함된, 편집할 파일을 엽니다. 경고를 사용하지 않도록 설정하려면 `[MESSAGES CONTROL]` 섹션을 찾은 다음 해당 섹션에서 `disable` 설정을 찾습니다. 특정 메시지의 긴 문자열이 있으며, 원하는 경고를 추가할 수 있습니다. 이 예제에서는 `,missing-docstring`을 추가합니다(쉼표로 구분된 기호 포함).
 

@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882793"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service에서 Python 환경을 설정하는 방법(Windows)
 
@@ -33,7 +33,7 @@ ms.locfileid: "91830682"
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>Azure Portal을 통해 Python 버전 선택
 
 1. Azure Portal에서 웹앱에 대한 App Service를 만듭니다.
-1. App Service의 페이지에서 **개발 도구** 섹션으로 스크롤하고, **확장**을 선택한 다음, **+ 추가**를 선택합니다.
+1. App Service의 페이지에서 **개발 도구** 섹션으로 스크롤하고, **확장** 을 선택한 다음, **+ 추가** 를 선택합니다.
 1. 목록에서 원하는 Python의 버전을 포함하는 확장까지 아래로 스크롤합니다.
 
     ![Python 확장이 표시된 Azure Portal](media/python-on-azure-extensions.png)
@@ -41,7 +41,7 @@ ms.locfileid: "91830682"
     > [!Tip]
     > Python의 이전 버전이 필요한데 사이트 확장에 표시되지 않을 경우, 다음 섹션에 설명된 대로 Azure Resource Manager를 통해 설치할 수 있습니다.
 
-1. 확장을 선택하고, 법률 조항에 동의한 다음, **확인**을 선택합니다.
+1. 확장을 선택하고, 법률 조항에 동의한 다음, **확인** 을 선택합니다.
 1. 설치가 완료되면 포털에서 알림이 나타납니다.
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Azure Resource Manager를 통해 Python 버전 선택
@@ -78,13 +78,13 @@ Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경
 
 포털이나 Azure Resource Manager 템플릿을 통해 사이트 확장을 설치한 후, Python 인터프리터를 가리키도록 앱의 *web.config* 파일을 설정합니다. *web.config* 파일은 App Service에서 실행 중인 IIS(7 이상) 웹 서버에 HttpPlatform(권장) 또는 FastCGI를 통해 Python 요청을 처리해야 하는 방법을 지시합니다.
 
-먼저 사이트 확장의 *python.exe*에 대한 전체 경로를 찾은 다음, 적절한 *web.config* 파일을 만들고 수정합니다.
+먼저 사이트 확장의 *python.exe* 에 대한 전체 경로를 찾은 다음, 적절한 *web.config* 파일을 만들고 수정합니다.
 
 ### <a name="find-the-path-to-pythonexe"></a>python.exe에 대한 경로 찾기
 
-Python 사이트 확장은 서버의 *d:\home* 아래에서 Python 버전 및 아키텍처에 적합한 폴더에 설치됩니다(일부 이전 버전의 경우 제외). 예를 들어 Python 3.6.1 x64는 *d:\home\python361x64*에 설치됩니다. Python 인터프리터의 전체 경로는 *d:\home\python361x64\python.exe*입니다.
+Python 사이트 확장은 서버의 *d:\home* 아래에서 Python 버전 및 아키텍처에 적합한 폴더에 설치됩니다(일부 이전 버전의 경우 제외). 예를 들어 Python 3.6.1 x64는 *d:\home\python361x64* 에 설치됩니다. Python 인터프리터의 전체 경로는 *d:\home\python361x64\python.exe* 입니다.
 
-App Service에서 특정 경로를 보려면 App Service 페이지에서 **확장**을 선택한 다음, 목록에서 확장을 선택합니다.
+App Service에서 특정 경로를 보려면 App Service 페이지에서 **확장** 을 선택한 다음, 목록에서 확장을 선택합니다.
 
 ![Azure App Service의 확장 목록](media/python-on-azure-extension-list.png)
 
@@ -94,13 +94,13 @@ App Service에서 특정 경로를 보려면 App Service 페이지에서 **확�
 
 확장에 대한 경로를 보는 데 문제가 있는 경우 콘솔을 사용하여 수동으로 찾을 수 있습니다.
 
-1. App Service 페이지에서 **개발 도구** > **콘솔**을 선택합니다.
-1. `ls ../home` 또는 `dir ..\home` 명령을 입력하여 *Python361x64*와 같은 최상위 확장 폴더를 확인합니다.
+1. App Service 페이지에서 **개발 도구** > **콘솔** 을 선택합니다.
+1. `ls ../home` 또는 `dir ..\home` 명령을 입력하여 *Python361x64* 와 같은 최상위 확장 폴더를 확인합니다.
 1. `ls ../home/python361x64` 또는 `dir ..\home\python361x64`와 같은 명령을 입력하여 *python.exe* 및 기타 인터프리터 파일이 포함되어 있는지 확인합니다.
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform 처리기 구성
 
-HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. *web.config*의 `<httpPlatform>` 요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
+HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 직접 전달합니다. 이 전달을 통해 원하는 모든 웹 서버를 실행할 수 있지만 로컬 웹 서버를 실행하는 시작 스크립트가 필요합니다. *web.config* 의 `<httpPlatform>` 요소에 스크립트를 지정합니다. 여기서 `processPath` 특성은 사이트 확장의 Python 인터프리터를 가리키고, `arguments` 특성은 스크립트 및 제공하려는 모든 인수를 가리킵니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -127,7 +127,7 @@ HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 
 
 ### <a name="configure-the-fastcgi-handler"></a>FastCGI 처리기 구성
 
-FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들어오는 연결을 받은 다음 하나 이상의 영구적 Python 프로세스에서 실행되는 WSGI 앱에 각 요청을 전달합니다. [wfastcgi 패키지](https://pypi.io/project/wfastcgi)는 사전 설치되고 각 Python 사이트 확장으로 구성되어 있으므로, Bottle 프레임워크를 기반으로 하는 웹앱에 대해 다음과 같은 코드를 *web.config*에 포함하여 쉽게 사용할 수 있습니다. *python.exe* 및 *wfastcgi.py*에 대한 전체 경로는 `PythonHandler` 키에 있습니다.
+FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들어오는 연결을 받은 다음 하나 이상의 영구적 Python 프로세스에서 실행되는 WSGI 앱에 각 요청을 전달합니다. [wfastcgi 패키지](https://pypi.io/project/wfastcgi)는 사전 설치되고 각 Python 사이트 확장으로 구성되어 있으므로, Bottle 프레임워크를 기반으로 하는 웹앱에 대해 다음과 같은 코드를 *web.config* 에 포함하여 쉽게 사용할 수 있습니다. *python.exe* 및 *wfastcgi.py* 에 대한 전체 경로는 `PythonHandler` 키에 있습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -173,11 +173,11 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
 [Kudu 콘솔](https://github.com/projectkudu/kudu/wiki/Kudu-console)은 App Service 서버와 해당 파일 시스템에 대한 직접적인 관리자 권한 명령줄 액세스를 제공합니다. 이는 모두 유용한 디버깅 도구이며 패키지를 설치하는 등의 CLI 작업을 허용합니다.
 
-1. **개발 도구** > **고급 도구**를 선택하고 **이동**을 선택하여 Azure Portal의 App Service 페이지에서 Kudu를 엽니다. 이 작업을 통해 `.scm`이 삽입된 것 외에는 기본 App Service URL과 동일한 URL로 이동합니다. 예를 들어 기본 URL이 `https://vspython-test.azurewebsites.net/`이면 Kudu는 `https://vspython-test.scm.azurewebsites.net/`에 있습니다(책갈피 사용 가능).
+1. **개발 도구** > **고급 도구** 를 선택하고 **이동** 을 선택하여 Azure Portal의 App Service 페이지에서 Kudu를 엽니다. 이 작업을 통해 `.scm`이 삽입된 것 외에는 기본 App Service URL과 동일한 URL로 이동합니다. 예를 들어 기본 URL이 `https://vspython-test.azurewebsites.net/`이면 Kudu는 `https://vspython-test.scm.azurewebsites.net/`에 있습니다(책갈피 사용 가능).
 
     ![Azure App Service용 Kudu 콘솔](media/python-on-azure-console01.png)
 
-1. **디버그 콘솔** > **CMD**를 선택하여 콘솔을 엽니다. 여기서 Python 설치로 이동하여 어떤 라이브러리가 있는지 확인할 수 있습니다.
+1. **디버그 콘솔** > **CMD** 를 선택하여 콘솔을 엽니다. 여기서 Python 설치로 이동하여 어떤 라이브러리가 있는지 확인할 수 있습니다.
 
 1. 단일 패키지를 설치하려면
 
@@ -187,13 +187,13 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
     ![Azure App Service용 Kudu 콘솔을 통한 bottle 설치의 예](media/python-on-azure-console02.png)
 
-1. 앱용 *requirements.txt*를 서버에 이미 배포한 경우 다음과 같이 해당 요구 사항을 모두 설치합니다.
+1. 앱용 *requirements.txt* 를 서버에 이미 배포한 경우 다음과 같이 해당 요구 사항을 모두 설치합니다.
 
     a. 패키지를 설치하려는 Python 설치 폴더(예: *d:\home\python361x64*)로 이동합니다.
 
     b. `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` 명령을 실행합니다.
 
-    로컬 및 서버 모두에서 정확한 패키지 집합을 쉽게 재현할 수 있기 때문에 *requirements.txt*를 사용하는 것이 좋습니다. *requirements.txt*에 대한 변경 내용을 배포한 후 콘솔을 방문하여 명령을 다시 실행해야 합니다.
+    로컬 및 서버 모두에서 정확한 패키지 집합을 쉽게 재현할 수 있기 때문에 *requirements.txt* 를 사용하는 것이 좋습니다. *requirements.txt* 에 대한 변경 내용을 배포한 후 콘솔을 방문하여 명령을 다시 실행해야 합니다.
 
 > [!Note]
 > App Service에는 C 컴파일러가 없으므로 기본 확장 모듈이 있는 모든 패키지에 대해 휠을 설치해야 합니다. 인기 있는 많은 패키지가 자체 휠을 제공합니다. 자체 휠을 제공하지 않는 패키지의 경우 로컬 개발 컴퓨터의 `pip wheel <package_name>`을 사용한 다음 휠을 사이트에 업로드합니다. 예제를 보려면 [requirements.txt를 사용하여 필수 패키지 관리](managing-required-packages-with-requirements-txt.md)를 참조하세요.

@@ -6,7 +6,7 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: dd2c6c1946b900cc422060891537544f318bd994
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882051"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>필드 캡슐화 리팩터링
 

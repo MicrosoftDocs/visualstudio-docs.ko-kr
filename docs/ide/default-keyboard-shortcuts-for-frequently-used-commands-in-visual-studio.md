@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 12dc587e25fef4e8b62d6ede0a13d5eb4aa7e3fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880504"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio에서 자주 사용되는 바로 가기 키
 

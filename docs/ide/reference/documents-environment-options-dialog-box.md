@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed6833bd60854cf2e3bcfbab76d57c7010f7863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882136"
 ---
 # <a name="options-dialog-box-environment--documents"></a>옵션 대화 상자: 환경 \> 문서
 

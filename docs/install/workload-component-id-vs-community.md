@@ -5,7 +5,7 @@ description: Visual Studio Community 워크로드 및 구성 요소 ID를 사용
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 744364dd18a784567dad49a960da08dc48de9606
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: f709e6bb39e96f02e6913721d6171e3fa6cdf224
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881898"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community 구성 요소 디렉터리
 

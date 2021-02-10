@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881648"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -25,7 +25,7 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 및 이전 버전](#visual-studio-2013-and-earlier)
 
-설치 단계를 따른 후 Python 지원을 신속하게 테스트하려면 **Alt**+**I**를 누르고 `2+2`를 입력하여 **Python 대화형** 창을 엽니다. `4`의 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
+설치 단계를 따른 후 Python 지원을 신속하게 테스트하려면 **Alt**+**I** 를 누르고 `2+2`를 입력하여 **Python 대화형** 창을 엽니다. `4`의 출력이 표시되지 않으면 수행한 단계를 다시 확인합니다.
 
 > [!Tip]
 > Python 작업에는 템플릿을 검색하고, 템플릿 옵션을 입력하고, 프로젝트와 파일을 만들 수 있는 그래픽 사용자 인터페이스를 제공하는 유용한 Cookiecutter 확장 프로그램이 포함되어 있습니다. 자세한 내용은 [Cookiecutter 확장 사용](using-python-cookiecutter-templates.md)을 참조하세요.
@@ -91,7 +91,7 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
     | **Azure Cloud Services 핵심 도구** | Python에서 개발자 Azure Cloud Services에 대한 추가 지원을 제공합니다. [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요. |
     ::: moniker-end
 
-1. 설치가 끝나면 설치 관리자는 Visual Studio를 수정, 실행, 복구 또는 제거하는 옵션을 제공합니다. **수정** 단추는 설치된 구성 요소의 Visual Studio에 대한 업데이트를 사용할 수 있으면 **업데이트**로 변경됩니다. (**수정** 옵션은 드롭다운 메뉴에서 사용할 수 있습니다.) "Visual Studio"를 검색하여 Windows **시작** 메뉴에서 Visual Studio 및 설치 관리자를 시작할 수도 있습니다.
+1. 설치가 끝나면 설치 관리자는 Visual Studio를 수정, 실행, 복구 또는 제거하는 옵션을 제공합니다. **수정** 단추는 설치된 구성 요소의 Visual Studio에 대한 업데이트를 사용할 수 있으면 **업데이트** 로 변경됩니다. (**수정** 옵션은 드롭다운 메뉴에서 사용할 수 있습니다.) "Visual Studio"를 검색하여 Windows **시작** 메뉴에서 Visual Studio 및 설치 관리자를 시작할 수도 있습니다.
 
     ![설치 관리자에서 Visual Studio 시작, 수정 또는 제거](media/installation-vs-launch.png)
 
@@ -99,23 +99,23 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
 
 Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 다음을 시도합니다.
 
-- Python CLI를 사용하여 동일한 오류가 발생했는지 확인합니다. 즉, 명령 프롬프트에서 *python.exe*를 실행합니다.
+- Python CLI를 사용하여 동일한 오류가 발생했는지 확인합니다. 즉, 명령 프롬프트에서 *python.exe* 를 실행합니다.
 - Visual Studio 설치 관리자의 [**복구**](../install/repair-visual-studio.md) 옵션을 사용합니다.
-- Windows의 **설정** > **앱 및 기능**을 통해 Python을 복구하거나 다시 설치합니다.
+- Windows의 **설정** > **앱 및 기능** 을 통해 Python을 복구하거나 다시 설치합니다.
 
 **오류 예제**: 대화형 프로세스를 시작하지 못했습니다. System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext()에서 알 수 없는 오류(0xc0000135)입니다.
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
-1. **제어판 > 프로그램 및 기능**에서 **Microsoft Visual Studio 2015**, **변경**을 차례로 선택하여 Visual Studio 설치 관리자를 실행합니다.
+1. **제어판 > 프로그램 및 기능** 에서 **Microsoft Visual Studio 2015**, **변경** 을 차례로 선택하여 Visual Studio 설치 관리자를 실행합니다.
 
-1. 설치 관리자에서 **수정**을 선택합니다.
+1. 설치 관리자에서 **수정** 을 선택합니다.
 
-1. **프로그래밍 언어** > **Visual Studio용 Python 도구**를 선택하고 **다음**을 선택합니다.
+1. **프로그래밍 언어** > **Visual Studio용 Python 도구** 를 선택하고 **다음** 을 선택합니다.
 
     ![Visual Studio 2015 설치 관리자의 PTVS 옵션](media/installation-vs2015.png)
 
-1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. Visual Studio 2015는 Python 3.5 이하만 지원합니다. 이후 버전에서는 **지원되지 않는 Python 버전 3.6**과 같은 메시지를 생성합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
+1. Visual Studio 설치가 완료되면 [원하는 Python 인터프리터를 설치](installing-python-interpreters.md)합니다. Visual Studio 2015는 Python 3.5 이하만 지원합니다. 이후 버전에서는 **지원되지 않는 Python 버전 3.6** 과 같은 메시지를 생성합니다. 이미 인터프리터가 설치되어 있고 Visual Studio에서 이를 자동으로 검색하지 않는 경우 [기존 환경 수동 식별](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)을 참조하세요.
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 및 이전 버전
 
@@ -130,7 +130,7 @@ Visual Studio에서 Python 설치 또는 실행 문제가 발생하는 경우 �
 
 기본적으로 Python 지원은 컴퓨터의 모든 사용자를 위해 설치됩니다.
 
-Visual Studio 2019 및 Visual Studio 2017에서 Python 워크로드는 *%ProgramFiles(x86)%\Microsoft Visual Studio\\<VS_version>\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*에 설치됩니다. 여기서 &lt;VS_version&gt;은 2019 또는 2017이고 &lt;VS_edition&gt;은 Community, Professional 또는 Enterprise입니다.
+Visual Studio 2019 및 Visual Studio 2017에서 Python 워크로드는 *%ProgramFiles(x86)%\Microsoft Visual Studio\\<VS_version>\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python* 에 설치됩니다. 여기서 &lt;VS_version&gt;은 2019 또는 2017이고 &lt;VS_edition&gt;은 Community, Professional 또는 Enterprise입니다.
 
 Visual Studio 2015 및 이전 버전에서 설치 경로는 다음과 같습니다.
 

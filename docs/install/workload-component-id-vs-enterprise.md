@@ -5,7 +5,7 @@ description: Visual Studio Enterprise 워크로드 및 구성 요소 ID를 사�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: aa5e9ea62d02d900eab91d68e4df008431303007
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: be8e00bb815136a22004989a5e070171eb439d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881846"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 구성 요소 디렉터리
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bef72e8889026f8202c7acdf3ea7c6b97c780b75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882175"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
