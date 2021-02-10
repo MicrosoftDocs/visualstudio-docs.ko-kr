@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914737"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 작업
 
@@ -43,7 +43,7 @@ ms.locfileid: "92436755"
 | `IntermediateOutputPath` | 필수 **String** 매개 변수입니다.<br /><br /> 임시 대상 어셈블리가 생성되는 디렉터리를 지정합니다. |
 | `MSBuildBinPath` | 필수 **String** 매개 변수입니다.<br /><br /> 임시 대상 어셈블리를 컴파일하는 데 필요한 *MSBuild.exe* 의 위치를 지정합니다. |
 | `ReferencePath` | 선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 임시 대상 어셈블리로 컴파일되는 형식에 의해 참조되는 어셈블리 목록을 경로 및 파일 이름별로 지정합니다. |
-| `ReferencePathTypeName` | 필수 **String** 매개 변수입니다.<br /><br /> 어셈블리 참조의 목록( **ReferencePath** )을 지정하는 컴파일 대상( **CompileTargetName** ) 매개 변수에 사용되는 매개 변수를 지정합니다. 적절한 값은 **ReferencePath** 입니다. |
+| `ReferencePathTypeName` | 필수 **String** 매개 변수입니다.<br /><br /> 어셈블리 참조의 목록(**ReferencePath**)을 지정하는 컴파일 대상(**CompileTargetName**) 매개 변수에 사용되는 매개 변수를 지정합니다. 적절한 값은 **ReferencePath** 입니다. |
 
 ## <a name="remarks"></a>설명
 

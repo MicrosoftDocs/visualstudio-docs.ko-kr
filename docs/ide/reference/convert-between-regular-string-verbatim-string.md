@@ -6,17 +6,17 @@ ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d50b979902e6eb5a606305b262f5009caef87467
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 1c335c90183e4c5c97b1a2737a2edd8a1b86fb77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918338"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>일반 문자열 리터럴과 축자 문자열 리터럴 간 변환 리팩터링
 

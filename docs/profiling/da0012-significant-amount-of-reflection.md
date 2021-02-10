@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df8b9c80b3d3b12cb556947a7ca77b3141fb853d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d69b0fca82984c4aa2d9fe80f0dc4e66b7ddc2d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916809"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: 리플렉션 양이 많습니다.
 

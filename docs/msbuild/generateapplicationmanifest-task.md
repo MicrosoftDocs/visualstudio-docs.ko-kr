@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914880"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 작업
 
@@ -36,7 +36,7 @@ ClickOnce 애플리케이션 매니페스트 또는 네이티브 매니페스트
 
 다음 표에서는 `GenerateApplicationManifest` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |---------------------------------| - |
 | `AssemblyName` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Name` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 이름은 `EntryPoint` 또는 `InputManifest` 매개 변수에서 유추됩니다. 이름을 만들 수 없으면 작업에서 오류가 throw됩니다. |
 | `AssemblyVersion` | 선택적 `String` 매개 변수입니다.<br /><br /> 생성된 매니페스트에 대한 어셈블리 ID의 `Version` 필드를 지정합니다. 이 매개 변수를 지정하지 않으면 기본값 “1.0.0.0”이 사용됩니다. |

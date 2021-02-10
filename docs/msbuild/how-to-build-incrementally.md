@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: fa0f03869f61ef55e5a2346135c32dc0a5d7bbf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914510"
 ---
 # <a name="how-to-build-incrementally"></a>방법: 증분 빌드
 

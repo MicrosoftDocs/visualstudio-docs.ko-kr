@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dea1b70335f7a1cc98bc1ee111ff58d69023c18a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914662"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 작업
 

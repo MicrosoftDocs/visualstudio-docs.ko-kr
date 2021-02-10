@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915026"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
 
@@ -45,9 +45,9 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 1. Visual Studio 2017을 엽니다.
 
-2. 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+2. 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 프로젝트 이름을 *WhatIsYourName*으로 지정합니다.
+3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 을 확장한 후 **.NET Core** 를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 프로젝트 이름을 *WhatIsYourName* 으로 지정합니다.
 
    ![Visual Studio IDE의 새 프로젝트 대화 상자의 콘솔 앱(.NET Core) 프로젝트 템플릿](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -61,15 +61,15 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![새 프로젝트 대화 상자에서 Visual Studio 설치 관리자 열기 링크를 클릭합니다.](../media/vs-open-visual-studio-installer-generic.png)
 
-1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
    ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](../media/tutorial-aspnet-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>옵션 2: 도구 메뉴 모음 사용
 
-1. **새 프로젝트** 대화 상자를 취소하고 상단 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택합니다.
+1. **새 프로젝트** 대화 상자를 취소하고 상단 메뉴 모음에서 **도구** > **도구 및 기능 가져오기** 를 선택합니다.
 
-1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+1. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
 ::: moniker-end
 
@@ -80,13 +80,13 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 1. Visual Studio 2019를 엽니다.
 
-1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
    !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔*을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic**을 선택한 다음, 플랫폼 목록에서 **Windows**를 선택합니다. 
+1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음**을 선택합니다.
+   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
 
    ![콘솔 앱(.NET Framework)에 대한 Visual Basic 템플릿을 선택합니다.](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
 
@@ -99,9 +99,9 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
    >
    > ![Visual Studio Installer에서 .NET Core 플랫폼 간 개발 워크로드](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속**을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
+   > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName*을 입력합니다. 그런 다음, **만들기**를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.](./media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -132,7 +132,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![What Is Your Name 코드를 표시하는 코드 창](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. 녹색 **시작** 단추를 사용하거나 **F5**를 눌러 첫 번째 앱을 빌드하고 실행합니다.
+1. 녹색 **시작** 단추를 사용하거나 **F5** 를 눌러 첫 번째 앱을 빌드하고 실행합니다.
 
 1. 콘솔 창이 열리면 자신의 이름을 입력합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
@@ -159,7 +159,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![What Is Your Name 코드를 표시하는 코드 창](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
-1. 녹색 **시작** 단추를 사용하거나 **F5**를 눌러 첫 번째 앱을 빌드하고 실행합니다.
+1. 녹색 **시작** 단추를 사용하거나 **F5** 를 눌러 첫 번째 앱을 빌드하고 실행합니다.
 
 1. 콘솔 창이 열리면 자신의 이름을 입력합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
@@ -173,9 +173,9 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio 2017을 열고 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+1. Visual Studio 2017을 열고 상단 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic**을 확장한 후 **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis*로 지정합니다.
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 을 확장한 후 **.NET Core** 를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음 파일 이름을 *CalculateThis* 로 지정합니다.
 
 1. `Module Program` 줄과 `End Module` 줄 사이에 다음 코드를 입력합니다.
 
@@ -198,7 +198,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![CalculateThis 코드를 표시하는 코드 창](media/vb-codewindow-calculate-this.png)
 
-1. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
+1. **CalculateThis** 를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
     ![수행할 작업을 선택하는 프롬프트가 포함된 CalculateThis 앱이 표시된 콘솔 창.](media/vb-console-calculate-this.png)
 
@@ -206,13 +206,13 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker range="vs-2019"
 
-1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다. 
+1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔*을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic**을 선택한 다음, 플랫폼 목록에서 **Windows**를 선택합니다. 
+1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
 
-1. 언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음**을 선택합니다.
+1. 언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
 
-   그런 다음 **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *CalculateThis*를 입력합니다. 다음으로, **만들기**를 선택합니다.
+   그런 다음 **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *CalculateThis* 를 입력합니다. 다음으로, **만들기** 를 선택합니다.
 
 1. `Module Program` 줄과 `End Module` 줄 사이에 다음 코드를 입력합니다.
 
@@ -235,7 +235,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![CalculateThis 코드를 표시하는 코드 창](media/vb-codewindow-calculate-this.png)
 
-1. **CalculateThis**를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
+1. **CalculateThis** 를 클릭하여 프로그램을 실행합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
     ![수행할 작업을 선택하는 프롬프트가 포함된 CalculateThis 앱이 표시된 콘솔 창.](media/vb-console-calculate-this.png)
 

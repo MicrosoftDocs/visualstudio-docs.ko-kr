@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild, GetFileHash task
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 163fbfd9c2bf0ca56b5b9b6bc11dc48420cfc270
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914701"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 작업
 

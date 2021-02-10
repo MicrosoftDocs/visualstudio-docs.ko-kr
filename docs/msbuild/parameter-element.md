@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 728618a6d9ff174d4d4bf7cdc20516433d06036b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918866"
 ---
 # <a name="parameter-element"></a>매개 변수 요소
 
@@ -48,7 +48,7 @@ ms.locfileid: "93048878"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`ParameterType`|선택적 특성입니다.<br /><br /> 매개 변수의 .NET 형식(예: `System.String`)입니다.|
 |`Output`|선택적 부울 특성입니다.<br /><br /> `true`인 경우 매개 변수는 태스크의 출력 매개 변수입니다. 기본적으로 이 값은 `false`입니다.|

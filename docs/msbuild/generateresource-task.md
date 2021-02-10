@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914756"
 ---
 # <a name="generateresource-task"></a>GenerateResource 작업
 
-*.txt* 및 *.resx* (XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 *.resources* 파일 간을 변환합니다. 이 작업은 일반적으로 *.txt* 또는 *.resx* 파일을 *.resources* 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)와 기능적으로 비슷합니다.
+*.txt* 및 *.resx*(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 *.resources* 파일 간을 변환합니다. 이 작업은 일반적으로 *.txt* 또는 *.resx* 파일을 *.resources* 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)와 기능적으로 비슷합니다.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -43,15 +43,15 @@ ms.locfileid: "92436877"
 |`ExecuteAsTool`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 해당 대상 프레임워크 out-of-proc에서 *tlbimp.exe* 및 *aximp.exe* 를 실행하여 필요한 래퍼 어셈블리를 생성합니다. 이 매개 변수는 `ResolveComReferences`의 멀티 타기팅을 허용합니다.|
 |`FilesWritten`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 디스크에 기록된 모든 파일의 이름을 포함합니다. 여기에는 캐시 파일(있는 경우)이 포함됩니다. 이 매개 변수는 Clean 구현에 유용합니다.|
 |`MinimalRebuildFromTracking`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 추적된 증분 빌드가 사용될지 여부를 지정하는 스위치를 가져오거나 설정합니다. `true`이면 증분 빌드가 켜지고 그렇지 않으면 다시 빌드가 강제로 실행됩니다.|
-|`NeverLockTypeAssemblies`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 리소스( *.resx* ) 파일(true)을 평가하는 데 [새 AppDomain](/dotnet/api/system.appdomain)을 만들지 아니면 리소스 파일이 사용자의 어셈블리(false)를 참조할 때만 새 [AppDomain](/dotnet/api/system.appdomain)을 만들지 여부를 지정하는 부울 값을 가져오거나 설정합니다.|
+|`NeverLockTypeAssemblies`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 리소스(*.resx*) 파일(true)을 평가하는 데 [새 AppDomain](/dotnet/api/system.appdomain)을 만들지 아니면 리소스 파일이 사용자의 어셈블리(false)를 참조할 때만 새 [AppDomain](/dotnet/api/system.appdomain)을 만들지 여부를 지정하는 부울 값을 가져오거나 설정합니다.|
 |`OutputResources`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> *.resources* 파일과 같은 생성된 파일의 이름을 지정합니다. 이름을 지정하지 않는 경우 일치하는 입력 파일의 이름이 사용되고, 만들어진 *.resources* 파일이 입력 파일을 포함하는 디렉터리에 배치됩니다.|
 |`PublicClass`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 강력한 형식의 리소스 클래스를 공용 클래스로 만듭니다.|
 |`References`|선택적 `String[]` 매개 변수입니다.<br /><br /> *.resx* 파일에서 형식을 로드할 참조입니다. *.resx* 파일 데이터 요소는 .NET 형식일 수 있습니다. *.resx* 파일이 읽힐 때 이 항목이 확인되어야 합니다. 일반적으로 표준 형식 로드 규칙을 사용하여 확인됩니다. `References`에 어셈블리를 제공하는 경우 우선적으로 적용됩니다.<br /><br /> 강력한 형식의 리소스에는 이 매개 변수가 필요하지 않습니다.|
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> *resgen.exe* 와 같은 SDK 도구에 대한 경로를 지정합니다.|
-|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -    *.txt* : 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-    *.resx* : 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-    *.restext* : *.txt* 와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-    *.resources* : 변환할 리소스 파일의 확장명을 지정합니다.|
+|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -    *.txt*: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-    *.resx*: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-    *.restext*: *.txt* 와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-    *.resources*: 변환할 리소스 파일의 확장명을 지정합니다.|
 |`StateFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> *.resx* 입력 파일의 종속성 검사 속도를 향상시키는 데 사용할 선택적 캐시 파일의 경로를 지정합니다.|
 |`StronglyTypedClassName`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스 클래스에 대한 클래스 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 리소스 파일의 기본 이름이 사용됩니다.|
-|`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: *MyClass.cs* .|
+|`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: *MyClass.cs*.|
 |`StronglyTypedLanguage`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대한 클래스 소스를 생성할 때 사용할 언어를 지정합니다. 이 매개 변수는 CodeDomProvider에서 사용하는 언어 중 하나와 정확히 일치해야 합니다. 예를 들어 `VB` 또는 `C#`입니다.<br /><br /> 이 매개 변수에 값을 전달하여 강력한 형식의 리소스를 생성하도록 작업에 지시할 수 있습니다.|
 |`StronglyTypedManifestPrefix`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대해 생성된 클래스 소스에 사용할 리소스 네임스페이스 또는 매니페스트 접두사를 지정합니다.|
 |`StronglyTypedNamespace`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대해 생성된 클래스 소스에 사용할 네임스페이스를 지정합니다. 이 매개 변수를 지정하지 않으면 모든 강력한 형식의 리소스는 전역 네임스페이스에 있습니다.|

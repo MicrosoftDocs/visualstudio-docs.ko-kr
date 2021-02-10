@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c4aa00df0a1a0b622040a3f808515b9a62fc8f66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918841"
 ---
 # <a name="project-element-msbuild"></a>Project 요소(MSBuild)
 
@@ -58,7 +58,7 @@ MSBuild 프로젝트 파일의 필수 루트 요소입니다.
 
 ### <a name="attributes"></a>특성
 
-| attribute | 설명 |
+| 특성 | 설명 |
 |------------------------| - |
 | `DefaultTargets` | 선택적 특성입니다.<br /><br /> 대상이 지정되지 않은 경우 빌드 진입점으로 사용할 하나 이상의 기본 대상입니다. 대상이 여러 개인 경우 세미콜론(;)으로 구분합니다.<br /><br /> `DefaultTargets` 특성 또는 MSBuild 명령줄에 지정된 기본 대상이 없으면 엔진은 [Import](../msbuild/import-element-msbuild.md) 요소를 평가한 후 프로젝트 파일의 첫 번째 대상을 실행합니다. |
 | `InitialTargets` | 선택적 특성입니다.<br /><br /> `DefaultTargets` 특성 또는 명령줄에 지정된 대상을 실행하기 전에 실행할 하나 이상의 초기 대상입니다. 대상이 여러 개인 경우 세미콜론(`;`)으로 구분합니다. 가져온 여러 파일이 `InitialTargets`를 정의하는 경우 언급된 모든 대상이 가져오기가 발생한 순서대로 실행됩니다. |

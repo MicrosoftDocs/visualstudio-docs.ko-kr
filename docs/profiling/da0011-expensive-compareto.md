@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c94e5a24eab1c638397d7b1391596e503207fa
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: aef8135e48b07946803832266ed9dff9e843d3ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916824"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: CompareTo의 부담이 큽니다.
 

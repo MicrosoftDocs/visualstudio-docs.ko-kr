@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e812f0fdef46d0ac5ef42788c2f854922a7375c
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: c1074c01135677dc0c89408d979e2f2977359c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916559"
 ---
 # <a name="function-details-view"></a>함수 정보 뷰
 **함수 정보 뷰** 창에는 다음과 같은 정보가 표시됩니다.

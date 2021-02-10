@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dd1114f4be0ed943c9a582c04d9917b03ca75c3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 59f04b037cbe5ad1a785e0e39a4b4a968a516ab0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916847"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: 수집되는 샘플 수가 적습니다.
 

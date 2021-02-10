@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918994"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 멀티 타기팅 개요
 
@@ -42,7 +42,7 @@ MSBuild를 사용하면 .NET Framework의 여러 버전 중 하나 및 여러 �
 
 ## <a name="toolset-toolsversion"></a>도구 집합(ToolsVersion)
 
- 도구 집합은 애플리케이션을 만드는 데 사용되는 도구, 작업 및 대상을 함께 수집합니다. 도구 집합에는 *csc.exe* 및 *vbc.exe* 와 같은 컴파일러, 일반 대상 파일( *microsoft.common.targets* ) 및 일반 작업 파일( *microsoft.common.tasks* )이 포함됩니다. 4\.5 도구 집합은 .NET Framework 버전 2.0, 3.0, 3.5, 4, 4.5를 대상으로 지정하는 데 사용될 수 있습니다. 하지만 2.0 도구 집합은 .NET Framework 버전 2.0을 대상으로 지정하는 데만 사용될 수 있습니다. 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.
+ 도구 집합은 애플리케이션을 만드는 데 사용되는 도구, 작업 및 대상을 함께 수집합니다. 도구 집합에는 *csc.exe* 및 *vbc.exe* 와 같은 컴파일러, 일반 대상 파일(*microsoft.common.targets*) 및 일반 작업 파일(*microsoft.common.tasks*)이 포함됩니다. 4\.5 도구 집합은 .NET Framework 버전 2.0, 3.0, 3.5, 4, 4.5를 대상으로 지정하는 데 사용될 수 있습니다. 하지만 2.0 도구 집합은 .NET Framework 버전 2.0을 대상으로 지정하는 데만 사용될 수 있습니다. 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.
 
 ## <a name="reference-assemblies"></a>참조 어셈블리
 

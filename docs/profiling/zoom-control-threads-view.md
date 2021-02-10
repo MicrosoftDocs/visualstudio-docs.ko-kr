@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 69e0fc1d7e6a21483972efac48c273d71ce59091
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915922"
 ---
 # <a name="zoom-control-threads-view"></a>확대/축소 컨트롤(스레드 뷰)
 확대/축소 컨트롤은 특정 관심 영역을 중점적으로 확인하기 위해 시간 표시 막대를 확대/축소하는 데 사용할 수 있는 슬라이더입니다. 이 컨트롤은 시간 표시 막대 뷰의 가운데를 확대하므로, 확대하기 전에 관심 영역을 가운데에 맞춰야 합니다.

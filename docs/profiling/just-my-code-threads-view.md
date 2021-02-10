@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f09b3e0837adf9490e9c10c81f18ff9fc9c5573e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918039"
 ---
 # <a name="just-my-code-threads-view"></a>내 코드만(스레드 뷰)
 이 옵션을 선택하는 경우 호출 스택을 필터링하여 사용자 코드와 호출된 함수의 한 수준만을 표시합니다.

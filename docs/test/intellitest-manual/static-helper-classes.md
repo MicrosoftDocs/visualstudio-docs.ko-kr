@@ -7,16 +7,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d4b5ad68186142ae61a266d688a0430b0a623605
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 41d059d4346cb3a19564c539f6f427961810cd05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916470"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 

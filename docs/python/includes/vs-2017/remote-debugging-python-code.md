@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: a58af8098a49992e81380c6567755c31709d1dc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88246396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916601"
 ---
 Visual Studio는 Windows 컴퓨터에서 Python 애플리케이션을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../../../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [ptvsd 라이브러리](https://pypi.python.org/pypi/ptvsd)를 사용하여 CPython 이외의 다른 운영 체제, 디바이스 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
 
@@ -36,7 +36,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 ## <a name="prepare-the-script-for-debugging"></a>디버그할 스크립트 준비
 
-1. 원격 컴퓨터에서 다음 코드를 사용하여 *guessing-game.py*라는 Python 파일을 만듭니다.
+1. 원격 컴퓨터에서 다음 코드를 사용하여 *guessing-game.py* 라는 Python 파일을 만듭니다.
 
     ```python
     import random
@@ -65,7 +65,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
    >[!NOTE]
    >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
 
-1. *guessing-game.py*에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
+1. *guessing-game.py* 에서 가능한 가장 빠른 지점에 다른 코드보다 먼저 해당 코드를 추가하여 원격 디버깅을 사용하도록 설정합니다. (엄격한 요구 사항은 아니지만, `enable_attach` 함수를 호출하기 전에 생성된 모든 백그라운드 스레드를 디버그할 수는 없습니다.)
 
    ```python
    import ptvsd
@@ -85,9 +85,9 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 1. (선택 사항) 로컬 컴퓨터에서 ptvsd에 IntelliSense를 사용하려면 Python 환경에 ptvsd 패키지를 설치합니다.
 
-1. **디버그** > **프로세스에 연결**을 선택합니다.
+1. **디버그** > **프로세스에 연결** 을 선택합니다.
 
-1. 나타나는 **프로세스에 연결** 대화 상자에서 **연결 형식**을 **Python remote (ptvsd)** (Python 원격(ptvsd))로 설정합니다. (이전 버전의 Visual Studio에서는 명령 이름이 **전송** 및 **Python 원격 디버깅**이었습니다.)
+1. 나타나는 **프로세스에 연결** 대화 상자에서 **연결 형식** 을 **Python remote (ptvsd)** (Python 원격(ptvsd))로 설정합니다. (이전 버전의 Visual Studio에서는 명령 이름이 **전송** 및 **Python 원격 디버깅** 이었습니다.)
 
 1. **연결 대상** 필드(이전 버전의 경우 **한정자**)에 `tcp://<ip_address>:5678`을 입력합니다. 여기서 `<ip_address>`는 원격 컴퓨터의 IP 주소이고(명시적 주소 또는 myvm.cloudapp.net과 같은 이름일 수 있음), `:5678`은 원격 디버깅 포트 번호입니다.
 
@@ -97,7 +97,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
     이 목록을 채운 후 원격 컴퓨터에서 다른 프로그램을 시작하게 되는 경우 **새로 고침** 단추를 선택합니다.
 
-1. 디버그할 프로세스를 선택한 다음 **연결**을 선택하거나 프로세스를 두 번 클릭합니다.
+1. 디버그할 프로세스를 선택한 다음 **연결** 을 선택하거나 프로세스를 두 번 클릭합니다.
 
 1. 그러면 스크립트가 원격 컴퓨터에서 계속 실행되는 동안 Visual Studio에서 디버깅 모드로 전환하여 모든 일반적인 [디버깅](../../debugging-python-in-visual-studio.md) 기능을 제공합니다. 예를 들어 `if guess < number:` 줄에 중단점을 설정한 다음 원격 컴퓨터로 전환하고 다른 guess를 입력합니다. 이렇게 하고 나면 로컬 컴퓨터의 Visual Studio가 해당 중단점에서 중지하고 로컬 변수 등을 보여 줍니다.
 
@@ -107,7 +107,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
 ### <a name="connection-troubleshooting"></a>연결 문제 해결
 
-1. **연결 형식**에 대해 **Python remote (ptvsd)** (Python 원격(ptvsd))를 선택했는지 확인합니다(이전 버전의 경우 **전송**에 대해 **Python 원격 디버깅**).
+1. **연결 형식** 에 대해 **Python remote (ptvsd)** (Python 원격(ptvsd))를 선택했는지 확인합니다(이전 버전의 경우 **전송** 에 대해 **Python 원격 디버깅**).
 1. **연결 대상**(또는 **한정자**)의 암호가 원격 코드의 암호와 정확히 일치하는지 확인합니다.
 1. **연결 대상**(또는 **한정자**)의 IP 주소가 원격 컴퓨터의 IP 주소와 일치하는지 확인합니다.
 1. 원격 컴퓨터에서 원격 디버깅 포트를 열었는지와 연결 대상에 `:5678`과 같은 포트 접미사를 포함했는지 확인합니다.
@@ -142,7 +142,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
-    openssl에서 메시지를 표시하면 **일반 이름**에 대해 호스트 이름 또는 IP 주소(어느 쪽이든 연결에 사용하는 항목)를 사용합니다.
+    openssl에서 메시지를 표시하면 **일반 이름** 에 대해 호스트 이름 또는 IP 주소(어느 쪽이든 연결에 사용하는 항목)를 사용합니다.
 
     (자세한 내용은 Python `ssl` 모듈 문서의 [Self-signed certificates](https://docs.python.org/3/library/ssl.html#self-signed-certificates)(자체 서명된 인증서)를 참조하세요. 해당 문서의 명령은 결합된 단일 파일만 생성합니다.)
 
@@ -159,8 +159,8 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 1. Visual Studio가 설치된 Windows 컴퓨터에서 신뢰할 수 있는 루트 CA에 인증서를 추가하여 채널을 보호합니다.
 
     1. 로원격 컴퓨터의 인증서 파일을 로컬 컴퓨터에 복사합니다.
-    1. **제어판**을 열고 **관리 도구** > **컴퓨터 인증서 관리**로 이동합니다.
-    1. 나타나는 창의 왼쪽에서 **신뢰할 수 있는 루트 인증 기관**을 확장하고, **인증서**를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **가져오기**를 선택합니다.
+    1. **제어판** 을 열고 **관리 도구** > **컴퓨터 인증서 관리** 로 이동합니다.
+    1. 나타나는 창의 왼쪽에서 **신뢰할 수 있는 루트 인증 기관** 을 확장하고, **인증서** 를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **가져오기** 를 선택합니다.
     1. 원격 컴퓨터에서 복사한 *.cer* 파일로 이동하여 이 파일을 선택한 다음, 대화 상자를 클릭하여 가져오기를 완료합니다.
 
 1. 앞에서 설명한 대로 Visual Studio에서 연결 프로세스를 반복하고 이제 **연결 대상**(또는 **한정자**)에 대한 프로토콜로 `tcps://`를 사용합니다.
@@ -173,6 +173,6 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
 
         ![SSL 인증서를 신뢰할 수 있습니다. 경고](../../media/remote-debugging-ssl-warning.png)
 
-    1. 아래의 **원격 인증서 이름이 호스트 이름과 일치하지 않습니다.** 경고가 표시되는 경우 인증서를 만들 때 **일반 이름**으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
+    1. 아래의 **원격 인증서 이름이 호스트 이름과 일치하지 않습니다.** 경고가 표시되는 경우 인증서를 만들 때 **일반 이름** 으로 올바른 호스트 이름 또는 IP 주소를 사용하지 않았음을 의미합니다.
 
         ![SSL 인증서 호스트 이름 경고](../../media/remote-debugging-ssl-warning2.png)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d67a1806034d55147379626b6eb4f868532e4d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1559dc6c5aa24c54465aee6d29f0745be6c897c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917824"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance 열거형
 동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.

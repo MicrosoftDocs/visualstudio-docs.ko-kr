@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 3ac0295b2d6f4300fa29c893d61616977ad44b87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914422"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>방법: 항목 목록을 쉼표로 구분하여 표시
 
@@ -30,7 +30,7 @@ Microsoft Build Engine(MSBuild)에서 항목 목록을 사용할 때 쉽게 읽�
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-`@(TXTFile)` 항목 목록에 *App1.txt* , *App2.txt* 및 *App3.txt* 항목이 포함되는 경우 다음과 같은 메시지가 표시됩니다.
+`@(TXTFile)` 항목 목록에 *App1.txt*, *App2.txt* 및 *App3.txt* 항목이 포함되는 경우 다음과 같은 메시지가 표시됩니다.
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
