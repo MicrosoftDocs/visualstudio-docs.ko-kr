@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952189"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 공용 컨트롤
@@ -301,7 +301,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 > [!NOTE]
 > 사용자는 이러한 단추 (선택 키 없음)로 이동 하 여 적절 한 순서로 배치할 수 있습니다. `name`단추의 속성을 화면 판독기가 단추 작업을 올바르게 해석 하기 위해 수행 하는 동작에 매핑합니다.
 
-| 기능 | 단추 |
+| 함수 | 단추 |
 | --- | --- |
 | 추가 | ![그래픽 "추가" 단추](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 제거 | ![그래픽 "제거" 단추](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |

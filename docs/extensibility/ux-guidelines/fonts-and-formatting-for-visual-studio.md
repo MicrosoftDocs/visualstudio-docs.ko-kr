@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952033"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio의 글꼴 및 서식 지정
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -483,7 +483,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 굵게 표시 되는 환경 글꼴 텍스트는 기본 선 높이 간격과 안쪽 여백을 따라야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [글꼴 (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [사용자 인터페이스 텍스트 (Windows)](/windows/desktop/uxguide/text-ui)

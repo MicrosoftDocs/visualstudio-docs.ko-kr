@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970413"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952683"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   **비즈니스 데이터 연결 모델** 프로젝트 항목을 사용 하 여 SHAREPOINT의 BDC (비즈니스 데이터 연결) 서비스에 대 한 모델을 만들 수 있습니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터는 사용자에 게 표시 되지 않습니다. 또한 사용자가 데이터를 볼 수 있도록 SharePoint에서 외부 목록을 만들어야 합니다.
@@ -38,7 +38,7 @@ ms.locfileid: "95970413"
 
 - 확장 테스트
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -253,7 +253,7 @@ ms.locfileid: "95970413"
 
 20. 빠른 실행 영역의 **목록** 섹션에서 **Entity1DataList** 목록을 선택 합니다.
 
-21. Identifier1 값이 0이 고 메시지 값이 Hello World 인 항목이 하나 뿐 아니라 이름이 Identifier1 및 Message 인 열이 목록에 포함 되어 있는지 확인 합니다.
+21. Identifier1 값이 0이 고 메시지 값이 헬로 월드 인 항목이 하나 뿐 아니라 이름이 Identifier1 및 Message 인 열이 목록에 포함 되어 있는지 확인 합니다.
 
      **비즈니스 데이터 연결 모델** 프로젝트 템플릿은이 모든 데이터를 제공 하는 기본 BDC 모델을 생성 합니다.
 
@@ -294,7 +294,7 @@ ms.locfileid: "95970413"
 
 5. Visual Studio의 두 인스턴스를 모두 닫습니다 (실험적 인스턴스와 GenerateExternalDataLists 솔루션이 열려 있는 인스턴스).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)
 - [비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)

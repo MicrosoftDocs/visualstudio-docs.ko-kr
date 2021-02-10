@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22069b8eedb06d67eafaf7333f379a057c1b6f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 573c1528d37bd41d364430d610a31f4dfe89e4f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953229"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80726002"
 
  이 인터페이스는 평가할 준비가 된 구문 분석 된 식을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugParsedExpression : IUnknown
@@ -40,7 +40,7 @@ IDebugParsedExpression : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugParsedExpression` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|구문 분석 된 식을 계산 합니다.|
 
@@ -54,7 +54,7 @@ IDebugParsedExpression : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

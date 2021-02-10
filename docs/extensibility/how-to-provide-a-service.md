@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952267"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하려면 VSPackage이 서비스를 Visual Studio에 등록 하 고 서비스를 추가 해야 합니다.
@@ -78,7 +78,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
 ### <a name="register-a-service"></a>서비스 등록
 
-1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 다음은 예제입니다.
+1. 서비스를 등록 하려면 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 서비스를 제공 하는 VSPackage에를 추가 합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     [ProvideService(typeof(SMyService))]

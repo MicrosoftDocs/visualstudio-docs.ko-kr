@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dede3ee5291afbfbeab4d6e60dcbd56e205e4526
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1a077923a174ece5323256ad474dda3ec685f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952280"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 연속 된 일련의 바이트에서 가리키는 값을 설정 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80725506"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT SetBytes( 
+HRESULT SetBytes( 
    DWORD  dwStart,
    DWORD  dwCount,
    BYTE*  pBytes,
@@ -58,12 +58,12 @@ int SetBytes(
 `pdwBytes`\
 제한이 실제로 설정 된 바이트 수를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는이 [Idebugpointerobject](../../../extensibility/debugger/reference/idebugpointerobject.md) 가 나타내는 포인터가 기본 형식 또는 기본 형식의 간단한 배열 (즉, 단순 바이트 시퀀스로 표현할 수 있는 배열)을 가리키는 경우에 사용 됩니다. 이 `IDebugPointerObject` 개체는 null 참조일 수 없습니다 (메모리의 주소를 가리켜야 함).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

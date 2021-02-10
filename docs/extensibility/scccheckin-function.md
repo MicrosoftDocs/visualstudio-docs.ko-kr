@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952111"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
 이 함수는 이전에 체크 아웃 한 파일을 소스 제어 시스템으로 체크 인하고 변경 내용을 저장 하 고 새 버전을 만듭니다. 이 함수는 체크 인할 파일의 개수 및 이름 배열을 사용 하 여 호출 됩니다.
@@ -68,7 +68,7 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|파일이 체크 인 되었습니다.|
 |SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|
@@ -88,5 +88,5 @@ SCCRTN SccCheckin (
 
  `fOptions`인수에 플래그 값을 지정 `SCC_KEEP_CHECKEDOUT` 하 여 파일을 확인 하 고 다시 체크 아웃할 사용자의 의도를 나타낼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

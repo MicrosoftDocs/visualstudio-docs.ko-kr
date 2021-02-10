@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951656"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 
@@ -60,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>추가 빌드 작업
 
- Visual Studio에서는 **파일 속성** 창의 **빌드 작업** 속성을 사용하여 프로젝트에 있는 파일의 항목 형식 이름을 변경할 수 있습니다. **Compile** , **EmbeddedResource** , **Content** 및 **None** 항목 형식 이름은 프로젝트에 이미 있는 다른 모든 항목 형식 이름과 함께 항상 이 메뉴에 표시됩니다. 사용자 지정 항목 형식 이름이 항상 이 메뉴에 표시되도록 하려면 `AvailableItemName`이라는 항목 형식에 해당 이름을 추가하면 됩니다. 예를 들어 프로젝트 파일에 다음을 추가하면 해당 파일을 가져오는 모든 프로젝트에 대해 **JScript** 사용자 지정 형식이 이 메뉴에 추가됩니다.
+ Visual Studio에서는 **파일 속성** 창의 **빌드 작업** 속성을 사용하여 프로젝트에 있는 파일의 항목 형식 이름을 변경할 수 있습니다. **Compile**, **EmbeddedResource**, **Content** 및 **None** 항목 형식 이름은 프로젝트에 이미 있는 다른 모든 항목 형식 이름과 함께 항상 이 메뉴에 표시됩니다. 사용자 지정 항목 형식 이름이 항상 이 메뉴에 표시되도록 하려면 `AvailableItemName`이라는 항목 형식에 해당 이름을 추가하면 됩니다. 예를 들어 프로젝트 파일에 다음을 추가하면 해당 파일을 가져오는 모든 프로젝트에 대해 **JScript** 사용자 지정 형식이 이 메뉴에 추가됩니다.
 
 ```xml
 <ItemGroup>
@@ -198,7 +198,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>성능 바로 가기
 
- Visual Studio IDE를 사용하여 디버깅을 시작하거나(F5 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 선택) 프로젝트를 빌드하는 경우(예를 들어 **빌드** > **솔루션 빌드** ) 빌드 프로세스는 성능 향상을 위해 빠른 업데이트 검사를 사용합니다. 사용자 지정된 빌드가 이후에 다시 빌드되는 파일을 생성하는 경우, 빠른 업데이트 검사에서 변경된 파일이 올바르게 식별되지 않습니다. 보다 철저한 업데이트 검사가 필요한 프로젝트에서는 환경 변수 `DISABLEFASTUPTODATECHECK=1`을 설정하여 빠른 검사를 해제할 수 있습니다. 또는 프로젝트에서 이 항목을 프로젝트의 또는 프로젝트가 가져오는 파일의 MSBuild 속성으로 설정할 수 있습니다.
+ Visual Studio IDE를 사용하여 디버깅을 시작하거나(F5 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 선택) 프로젝트를 빌드하는 경우(예를 들어 **빌드** > **솔루션 빌드**) 빌드 프로세스는 성능 향상을 위해 빠른 업데이트 검사를 사용합니다. 사용자 지정된 빌드가 이후에 다시 빌드되는 파일을 생성하는 경우, 빠른 업데이트 검사에서 변경된 파일이 올바르게 식별되지 않습니다. 보다 철저한 업데이트 검사가 필요한 프로젝트에서는 환경 변수 `DISABLEFASTUPTODATECHECK=1`을 설정하여 빠른 검사를 해제할 수 있습니다. 또는 프로젝트에서 이 항목을 프로젝트의 또는 프로젝트가 가져오는 파일의 MSBuild 속성으로 설정할 수 있습니다.
 
  Visual Studio의 일반 빌드에는 빠른 업데이트 검사가 적용되지 않으며, 명령 프롬프트에서 빌드를 호출한 것처럼 프로젝트가 빌드됩니다.
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IntelliTrace
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952657"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -331,7 +331,7 @@ SharePoint를 실행 하는 시스템에 Microsoft Monitoring Agent를 설치 �
 
      이제 코드가 제대로 실행 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [SharePoint 코드 확인 및 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

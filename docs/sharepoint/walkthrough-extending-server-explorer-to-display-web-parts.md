@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952670"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 서버 탐색기 확장 하 여 웹 파트 표시
   Visual Studio에서는 **서버 탐색기** 의 **sharepoint 연결** 노드를 사용 하 여 sharepoint 사이트의 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 는 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 연결 된 각 SharePoint 사이트에 웹 파트 갤러리를 표시 하도록 **서버 탐색기** 를 확장 합니다.
@@ -45,7 +45,7 @@ ms.locfileid: "95970216"
 > [!NOTE]
 > 서버 개체 모델 대신 SharePoint 용 클라이언트 개체 모델을 사용 하는이 연습에 대 한 대체 버전은 [연습: 서버 탐색기 확장에서 sharepoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -312,7 +312,7 @@ ms.locfileid: "95970216"
 
 12. **프로젝트** 목록에서 **webpartcommands** 를 선택한 다음 **확인** 단추를 선택 합니다.
 
-13. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
+13. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택한 다음 솔루션이 오류 없이 컴파일되는지 확인 합니다.
 
 14. 이제 WebPartNode 프로젝트에 대 한 빌드 출력 폴더에 WebPartNode .vsix 파일이 포함 되어 있는지 확인 합니다.
 
@@ -372,7 +372,7 @@ ms.locfileid: "95970216"
 
 4. Visual Studio의 두 인스턴스를 모두 닫습니다 (이 경우에는 WebPartNode 솔루션이 열려 있는 Visual Studio의 인스턴스 및 실험적 인스턴스).
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [아이콘에 대 한 이미지 편집기](/cpp/windows/image-editor-for-icons)

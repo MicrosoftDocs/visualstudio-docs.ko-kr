@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59bdef49f5c7b9c4dc345ba1862f3f08042428e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952306"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 디버그 엔진 (DE)은 프로그램이 중단점에서 중지 될 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBreakpointEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugBreakpointEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.|
 
@@ -48,6 +48,6 @@ IDebugBreakpointEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

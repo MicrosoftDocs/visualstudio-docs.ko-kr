@@ -25,21 +25,21 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952956"
 ---
 # <a name="file-properties-javascript"></a>파일 속성, JavaScript
 
 파일 속성을 사용하여 프로젝트 시스템이 파일에 대해 수행해야 하는 작업을 지정할 수 있습니다. 예를 들어 파일 속성을 설정하여 파일을 패키지에 리소스 파일로 추가해야 하는지 여부를 지정할 수 있습니다.
 
-솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 **출력 디렉터리에 복사** , **패키지 작업** , **파일 이름** , **파일 경로** 의 네 가지 속성이 있습니다.
+솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 **출력 디렉터리에 복사**, **패키지 작업**, **파일 이름**, **파일 경로** 의 네 가지 속성이 있습니다.
 
 ## <a name="file-properties"></a>파일 속성
 이 섹션에서는 JavaScript 파일에 공통적인 속성을 설명합니다.

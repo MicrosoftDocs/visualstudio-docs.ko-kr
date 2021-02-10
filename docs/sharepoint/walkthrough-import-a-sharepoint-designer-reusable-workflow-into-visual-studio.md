@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952592"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>연습: SharePoint Designer의 다시 사용 가능한 워크플로 가져오기
 
@@ -41,7 +41,7 @@ ms.locfileid: "95970193"
 
 - SharePoint Designer의 다시 사용 가능한 워크플로를 *.wsp* 파일 및 sharepoint로 내보내기
 
-- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 .wsp 파일을로 가져오기
+-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 .wsp 파일을로 가져오기
 
 - 코드를 추가 하 여 워크플로 변경
 
@@ -153,7 +153,7 @@ ms.locfileid: "95970193"
 9. **파일 다운로드** 대화 상자에서 **저장** 단추를 선택 하 여 *.wsp* 파일을 로컬 시스템에 저장 합니다.
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>.Wsp 파일을 Visual Studio로 가져오기
- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 .wsp 파일을로 가져옵니다. 이 프로젝트는 다시 사용할 수 있는 선언적 워크플로의 워크플로를 코드 워크플로로 변환 합니다. 워크플로를 변환한 후에는 코드를 사용 하 여 해당 동작을 수정 합니다.
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 재사용 가능한 워크플로 가져오기 프로젝트를 사용 하 여 .wsp 파일을로 가져옵니다. 이 프로젝트는 다시 사용할 수 있는 선언적 워크플로의 워크플로를 코드 워크플로로 변환 합니다. 워크플로를 변환한 후에는 코드를 사용 하 여 해당 동작을 수정 합니다.
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>.Wsp 파일에서 워크플로를 가져오고 수정 하려면
 
@@ -264,7 +264,7 @@ ms.locfileid: "95970193"
 
      워크플로에서는 작업의 **할당 대상** 열에 이름이 표시 되 고 **공지** 목록에 알림이 표시 되는 것을 볼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

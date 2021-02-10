@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: de941be8c5535a2cef5995e3be9954ee32dcdc71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952449"
 ---
 # <a name="debugger-components"></a>디버거 구성 요소
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버거는 VSPackage으로 구현 되 고 전체 디버그 세션을 관리 합니다. 디버그 세션은 다음 요소로 구성 됩니다.
@@ -40,7 +40,7 @@ ms.locfileid: "96914116"
 
   ![디버그 구성 요소 개요](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [패키지 디버그](../../extensibility/debugger/debug-package.md) 셸에서 실행 되 고 모든 UI를 처리 하는 디버그 패키지에 대해 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  [프로세스 디버그 관리자](../../extensibility/debugger/process-debug-manager.md) 디버깅할 수 있는 프로세스의 관리자 인 PDM의 기능에 대 한 개요를 제공 합니다.

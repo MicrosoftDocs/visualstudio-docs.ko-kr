@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 89d2da35fb7ffa81ec9f6a882e6b35d42fc8f00c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952436"
 ---
 # <a name="debugger-contexts"></a>디버거 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 디버그 엔진 (DE)은 다음과 같이 여러 개의 고유 컨텍스트 내에서 동시에 작동 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "96914688"
 
 - 식 계산 컨텍스트는 식 계산을 수행할 컨텍스트를 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [코드 컨텍스트](../../extensibility/debugger/code-context.md) 오늘날의 런타임 아키텍처와 특수 언어에서 프로그램의 명령 스트림의 주소로 코드 컨텍스트를 설명 합니다. 여기서 코드는 명령으로 표시 될 수 없지만 다른 몇 가지 방법이 있습니다.
 
  [문서 위치](../../extensibility/debugger/document-position.md) IDE에 알려진 소스 파일의 위치에 대 한 추상화를 통해 Visual Studio 디버깅의 문서 위치를 정의 합니다.

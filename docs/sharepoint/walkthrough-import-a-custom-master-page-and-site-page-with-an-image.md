@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 503ffc733a408787e7ecf188d893039759819c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952579"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>연습: 이미지를 사용 하 여 사용자 지정 마스터 페이지 및 사이트 페이지 가져오기
   이 연습에서는 SharePoint 사용자 지정 마스터 페이지와 이미지를 포함 하는 사이트 페이지를 sharepoint 프로젝트로 가져오는 방법을 보여 줍니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -31,11 +31,11 @@ ms.locfileid: "95970156"
 
 - 사용자 지정 마스터 페이지, 이미지 및 사이트 페이지를 SharePoint 솔루션 (*.wsp*) 파일로 내보냅니다.
 
-- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sharepoint 솔루션 패키지 가져오기 프로젝트를 사용 하 여 .wsp 파일을 가져와서 sharepoint 프로젝트에 배포 합니다.
+-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sharepoint 솔루션 패키지 가져오기 프로젝트를 사용 하 여 .wsp 파일을 가져와서 sharepoint 프로젝트에 배포 합니다.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
  이 연습을 완료 하려면 다음 구성 요소가 있어야 합니다.
 
 - 및 SharePoint의 지원 되는 버전 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]
@@ -178,7 +178,7 @@ ms.locfileid: "95970156"
 
    파일로 파일을 가져와서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint에 배포 하는 다른 방법은에서 모듈에 파일을 추가 하는 것입니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][방법: 마스터 페이지 또는 테마 가져오기](../sharepoint/how-to-import-a-master-page-or-theme.md) 및 [모듈을 사용 하 여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기존 SharePoint 사이트에서 항목 가져오기](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

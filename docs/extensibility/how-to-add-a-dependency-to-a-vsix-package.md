@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: cb035f9174085667eb229ab5003d8f997eaae84a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953034"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>방법: VSIX 패키지에 종속성 추가
 

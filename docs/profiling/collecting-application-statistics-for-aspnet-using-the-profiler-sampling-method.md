@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: ef1f4ef1c50db1234425ab164f377dab5ff12ea6
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 190e67b3471162f29273d56f3e1cbeee6d09e557
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952826"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET 웹앱에 대한 통계를 수집합니다.
 

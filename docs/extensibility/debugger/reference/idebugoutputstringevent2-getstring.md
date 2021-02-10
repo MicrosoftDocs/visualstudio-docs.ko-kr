@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1022f580a46051ca7dcbf33a4348ab44e6452d38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3b952fcd849132ea39dbeaef47ea32da3994ba3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953320"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 표시할 메시지를 가져옵니다.
@@ -28,13 +28,13 @@ ms.locfileid: "80726041"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetString( 
+HRESULT GetString( 
    BSTR* pbstrString
 );
 ```
 
 ```csharp
-int GetString( 
+int GetString( 
    out string pbstrString
 );
 ```
@@ -43,8 +43,8 @@ int GetString( 
 `pbstrString`\
 제한이 표시할 메시지를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)

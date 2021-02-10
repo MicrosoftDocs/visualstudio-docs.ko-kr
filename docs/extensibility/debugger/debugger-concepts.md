@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 5202ebdb621121e63adbdf5118cb0848689adde6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952410"
 ---
 # <a name="debugger-concepts"></a>디버거 개념
 Visual Studio 디버그 패키지를 빌드하려면 패키지를 디자인 하는 데 사용 되는 아키텍처 개념에 대해 잘 알고 있어야 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [디버그 세션](../../extensibility/debugger/debug-session.md) 디버깅 아키텍처에서 세션의 역할을 설명 합니다.
 
  [서버](../../extensibility/debugger/servers-visual-studio-sdk.md) 디버깅 아키텍처 측면에서 서버를 추상 및 물리적 용어로 정의 합니다.

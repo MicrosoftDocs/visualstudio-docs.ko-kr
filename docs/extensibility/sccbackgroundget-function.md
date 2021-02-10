@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952124"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 함수
 이 함수는 지정 된 각 파일을 사용자 상호 작용 없이 소스 제어에서 검색 합니다.
@@ -61,7 +61,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|작업이 완료되었습니다.|
 |SCC_E_BACKGROUNDGETINPROGRESS|백그라운드 검색이 이미 진행 중입니다. (소스 제어 플러그 인은 동시 일괄 처리 작업을 지원 하지 않는 경우에만이를 반환 해야 합니다.)|
@@ -72,6 +72,6 @@ SCCRTN SccBackgroundGet(
 
  인수를 사용 하는 `dwFlags` 것은 [Sccget](../extensibility/sccget-function.md)과 동일 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

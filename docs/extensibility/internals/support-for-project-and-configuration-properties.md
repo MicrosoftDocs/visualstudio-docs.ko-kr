@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8d7e0065cf66f0d46680ab725537dbe4176928b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953073"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)의 속성 창에는 프로젝트 및 구성 속성이 표시 될 수 있습니다. 사용자가 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.
@@ -92,7 +92,7 @@ ms.locfileid: "97876599"
 
  구성 `MyConfigProp` 속성은 구성 속성 페이지의 **내 구성** 속성으로 **내 범주** 범주에 표시 됩니다. 이 옵션을 선택 하면 설명 패널에 설명, **내 설명이** 표시 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [속성 페이지 추가 및 제거](../../extensibility/adding-and-removing-property-pages.md)
 - [프로젝트](../../extensibility/internals/projects.md)
 - [템플릿 디렉터리 설명(.Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

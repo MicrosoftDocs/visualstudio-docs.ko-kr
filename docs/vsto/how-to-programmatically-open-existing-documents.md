@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], opening documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951682"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>방법: 프로그래밍 방식으로 기존 문서 열기
   메서드는 정규화 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 된 경로와 파일 이름으로 지정 된 기존 Microsoft Office Word 문서를 엽니다. 이 메서드는 <xref:Microsoft.Office.Interop.Word.Document> 열린 문서를 나타내는을 반환 합니다.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951695"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>솔루션 탐색기 도구 모음에 명령 추가
 이 연습에서는 **솔루션 탐색기** 도구 모음에 단추를 추가 하는 방법을 보여 줍니다.
@@ -31,7 +31,7 @@ ms.locfileid: "95597511"
 > [!NOTE]
 > 명령 테이블 구성 (*.ctc*) 파일 대신 XML 명령 테이블 (*.cvsct*) 파일을 사용 하 여 메뉴와 명령이 vspackage에 표시 되는 방식을 정의 합니다. 자세한 내용은 [Visual Studio 명령 테이블 (를 참조 하세요. Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
@@ -82,7 +82,7 @@ ms.locfileid: "95597511"
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>하나 이상의 프로젝트를 열 때 단추를 표시 하려면
 
-1. 명령 설명 `<Buttons>` 섹션에서 *ToolbarButtonPackage.vsct* `<Button>` `<Strings>` 및 태그 사이에 기존 요소에 두 개의 명령 플래그를 추가 합니다. `<Icons>`
+1. 명령 설명 `<Buttons>` 섹션에서  `<Button>` `<Strings>` 및 태그 사이에 기존 요소에 두 개의 명령 플래그를 추가 합니다. `<Icons>`
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -118,5 +118,5 @@ ms.locfileid: "95597511"
 
    단추의 표시 유형은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage이 로드 될 때까지에 의해 제어 됩니다. VSPackage를 로드 한 후에는 VSPackage에서 단추의 표시 유형을 제어 합니다.  자세한 내용은 [Menucommands 및 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

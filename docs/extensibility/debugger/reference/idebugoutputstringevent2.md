@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953307"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 이 인터페이스는 문자열을 출력 하기 위해 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugOutputStringEvent2 : IUnknown
@@ -37,7 +37,7 @@ IDebugOutputStringEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugOutputStringEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|표시할 메시지를 가져옵니다.|
 
@@ -55,7 +55,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

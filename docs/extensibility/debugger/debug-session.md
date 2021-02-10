@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37818f63f3cf0abdf32faf5d69514e73ece5c686
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 69634d322dca0992609d907bf58f1f315479dc04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952514"
 ---
 # <a name="debug-session"></a>디버그 세션
 디버거 아키텍처 측면에서 *세션* 은 다음과 같습니다.

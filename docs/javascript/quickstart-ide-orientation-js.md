@@ -7,15 +7,15 @@ ms.date: 02/05/2019
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952930"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>먼저 Visual Studio IDE 살펴보기
 
@@ -158,7 +158,7 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017의 추가 기능](../ide/advanced-feature-overview.md)
