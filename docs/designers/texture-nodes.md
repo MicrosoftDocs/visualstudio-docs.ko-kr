@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e45789358e49a0b224a6de3ea6e5dfea44bf01
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 0bf9ea986fde744ec384f68338eca0d2239a3e73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902264"
 ---
 # <a name="texture-nodes"></a>질감 노드
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8df37beafe7a6c8f88631568ea9eb36394c105a5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: affc4dec196169580ff23c5faf2f7876a71fbba9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896526"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>방법: Visual Studio에서 디버그 중 다른 스레드로 전환(C#, Visual Basic, C++)
 다중 스레드 애플리케이션을 디버그하는 경우 작업 중인 스레드에서 다른 스레드로 전환하는 여러 가지 방법 중 하나를 사용할 수 있습니다.

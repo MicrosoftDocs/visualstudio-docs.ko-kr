@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 422e3f24b98fd1ddd155e5c3975833b4e4cb248c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: ee23429980accbbedaa2cf14aaf8a673864179a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897790"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>문자열 보간 리팩터링 간소화
 

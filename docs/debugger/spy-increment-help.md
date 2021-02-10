@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b34c661e7a5bd2bd4e2bc24882bf98f00c1e4c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903460"
 ---
 # <a name="spy-help"></a>Spy++ 도움말
 Spy++ 유틸리티에 대한 설명서에는 Spy++ 사용 및 Spy++ 뷰에 대한 일반적인 항목 그룹이 두 가지 포함되어 있습니다. 이러한 항목 그룹은 Spy++ 참조 다음에 나오며 사용 가능한 각 메뉴 명령 및 대화 상자에 대한 자세한 내용을 제공합니다.

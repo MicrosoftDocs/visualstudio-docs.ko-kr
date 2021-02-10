@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 009bada1354739c25aceab4cd19de77e255e9ad0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4100d4c737f22fd91702546040b29363bed68e07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899260"
 ---
 # <a name="how-to-display-message-properties"></a>방법: 메시지 속성 표시
 [Messages View](../debugger/messages-view.md)(메시지 뷰)에 나열된 메시지에 대해 자세히 알아보려면 [Message Properties Dialog Box](../debugger/message-properties-dialog-box.md)(메시지 속성 대화 상자)를 사용합니다.

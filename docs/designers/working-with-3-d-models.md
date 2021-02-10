@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886d6d24293af9f630e70defff0d95ec791f0edf
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 9206fa8ced5ae60e58d353a9adae2234860670c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896301"
 ---
 # <a name="work-with-3d-models"></a>3D 모델 작업
 
@@ -23,7 +23,7 @@ Visual Studio에서 모델 편집기를 사용하여 3D 모델을 만들 수 있
 
 ## <a name="3d-models"></a>3D 모델
 
-3D 모델은 3D 장면에 있는 개체의 모양을 정의합니다. 모델은 기본 독립 개체, 즉 기본 개체의 계층 구조 또는 전체 3D 장면에서 형성된 복합 개체일 수 있습니다. 3D 개체는 3D 공간의 점( *꼭짓점* 이라고 함), 삼각형, 선 또는 이러한 점으로 구성된 다른 기본 형식을 정의하는 인덱스 및 꼭짓점별 또는 기본 형식별 기준으로 적용될 수 있는 속성(예: 표면 법선)으로 구성됩니다. 또한 일부 정보는 개체별 기준으로 적용될 수 있습니다(예: 셰이더와 질감이 개체에 고유한 모양을 제공하는 경우).
+3D 모델은 3D 장면에 있는 개체의 모양을 정의합니다. 모델은 기본 독립 개체, 즉 기본 개체의 계층 구조 또는 전체 3D 장면에서 형성된 복합 개체일 수 있습니다. 3D 개체는 3D 공간의 점(*꼭짓점* 이라고 함), 삼각형, 선 또는 이러한 점으로 구성된 다른 기본 형식을 정의하는 인덱스 및 꼭짓점별 또는 기본 형식별 기준으로 적용될 수 있는 속성(예: 표면 법선)으로 구성됩니다. 또한 일부 정보는 개체별 기준으로 적용될 수 있습니다(예: 셰이더와 질감이 개체에 고유한 모양을 제공하는 경우).
 
 모델 편집기는 게임이나 앱에서 사용할 수 있는 기본 3D 모델(재질 속성, 질감 및 픽셀 셰이더 모두 포함)을 만드는 데 필요한 유일한 도구입니다. 또는 아티스트가 참여하여 모델을 완성하기 전에 프로토타입 및 테스트에 사용할 자리 표시자 모델을 만들 수 있습니다.
 

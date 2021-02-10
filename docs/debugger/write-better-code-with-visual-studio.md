@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904950"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>더 나은 코드를 작성하는 데 도움이 되는 디버깅 기술 및 도구
 
@@ -44,20 +44,20 @@ ms.locfileid: "89311393"
 
 1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 **.NET Core 플랫폼 간 개발** 워크로드 또는 **.NET 데스크톱 개발** 워크로드가 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기**를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발**(또는 **.NET 데스크톱 개발**) 워크로드를 선택한 다음, **수정**을 선택합니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기** 를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발**(또는 **.NET 데스크톱 개발**) 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창에서 **새 프로젝트 만들기**를 선택합니다. 검색 창에 **콘솔**을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음**을 선택합니다. **Console_Parse_JSON**과 같은 프로젝트 이름을 입력하고 **만들기**를 클릭합니다.
+    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 창에 **콘솔** 을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음** 을 선택합니다. **Console_Parse_JSON** 과 같은 프로젝트 이름을 입력하고 **만들기** 를 클릭합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **Console_Parse_JSON**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **Console_Parse_JSON** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
     ::: moniker-end
 
-    **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기**로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
     Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
 
@@ -198,13 +198,13 @@ namespace Console_Parse_JSON
 
 첫 번째 빨간색 오류 표시선은 컴파일 시간 오류를 나타냅니다. 이 오류 표시선을 마우스로 가리키면 ```The name `Encoding` does not exist in the current context``` 메시지가 표시됩니다.
 
-이 오류가 발생하면 왼쪽 아래에 전구 아이콘이 표시됩니다. 전구 아이콘 ![전구 아이콘](../ide/media/light-bulb-icon.png)은 스크루드라이버 아이콘 ![드라이버 아이콘](../ide/media/screwdriver-icon.png)과 함께 인라인으로 코드를 수정 또는 리팩터링하는 데 도움이 되는 빠른 작업을 나타냅니다. 전구는  반드시 수정해야 하는 문제를 나타냅니다. 스크루드라이버는 해결을 선택할 수 있는 문제에 대한 것입니다. 왼쪽에 있는 **using System.Text 사용**을 클릭하여 이 오류를 해결하기 위한 첫 번째 권장 픽스를 사용합니다.
+이 오류가 발생하면 왼쪽 아래에 전구 아이콘이 표시됩니다. 전구 아이콘 ![전구 아이콘](../ide/media/light-bulb-icon.png)은 스크루드라이버 아이콘 ![드라이버 아이콘](../ide/media/screwdriver-icon.png)과 함께 인라인으로 코드를 수정 또는 리팩터링하는 데 도움이 되는 빠른 작업을 나타냅니다. 전구는  반드시 수정해야 하는 문제를 나타냅니다. 스크루드라이버는 해결을 선택할 수 있는 문제에 대한 것입니다. 왼쪽에 있는 **using System.Text 사용** 을 클릭하여 이 오류를 해결하기 위한 첫 번째 권장 픽스를 사용합니다.
 
 ![전구를 사용하여 코드 수정](../debugger/media/write-better-code-missing-include.png)
 
 이 항목을 클릭하면 Visual Studio가 *Program.cs* 파일의 맨 위에 `using System.Text` 문을 추가하고 빨간색 오류 표시선이 사라집니다. (제안된 픽스가 어떤 작업을 수행하는지 잘 모르는 경우 픽스를 적용하기 전에 오른쪽에 있는 **변경 내용 미리 보기** 링크를 선택합니다.)
 
-앞의 오류는 일반적으로 코드에 새 `using` 문을 추가하여 수정하는 일반적인 오류입니다. 이와 비슷한 여러 가지 일반적 오류가 있습니다(예: ```The type or namespace `Name` cannot be found.```). 이러한 종류의 오류는 어셈블리 참조 누락(프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **레퍼런스**를 선택), 철자가 잘못된 이름 또는 추가해야 하는 라이브러리 누락(C# 경우 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리**를 선택)을 나타낼 수 있습니다.
+앞의 오류는 일반적으로 코드에 새 `using` 문을 추가하여 수정하는 일반적인 오류입니다. 이와 비슷한 여러 가지 일반적 오류가 있습니다(예: ```The type or namespace `Name` cannot be found.```). 이러한 종류의 오류는 어셈블리 참조 누락(프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **레퍼런스** 를 선택), 철자가 잘못된 이름 또는 추가해야 하는 라이브러리 누락(C# 경우 프로젝트를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택)을 나타낼 수 있습니다.
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>나머지 오류 및 경고 수정
 
@@ -316,7 +316,7 @@ catch (SerializationException)
 
 ![출력의 Null 값](../debugger/media/write-better-code-using-assert-null-output.png)
 
-이 출력에서 잘못된 항목을 볼 수 있습니다. 세 번째 레코드의 **name** 및 **lastname**이 비어 있습니다.
+이 출력에서 잘못된 항목을 볼 수 있습니다. 세 번째 레코드의 **name** 및 **lastname** 이 비어 있습니다.
 
 이는 함수에서 `assert` 문을 사용하는 데 도움이 되는 유용하지만 종종 잘 사용하지 않는 코딩 습관에 대해 설명하기 좋은 기회입니다. 다음 코드를 추가하여 `firstname` 및 `lastname`이 `null`이 아닌지 확인하는 런타임 검사를 포함합니다. `UpdateRecords` 메서드에서 다음 코드를
 

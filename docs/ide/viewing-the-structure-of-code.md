@@ -24,15 +24,15 @@ helpviewer_keywords:
 - object browser
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e33a060718fc5fd8a3545baaa7e78b6b763ab78d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 63344b28026579e4b3e99b513a99c99d14617a64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902779"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>다양한 도구 창을 사용하여 코드 구조 보기
 

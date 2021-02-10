@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 0ffe175d9ea73640cae1197fe91656d3565525f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901359"
 ---
 # <a name="create-forwarding-loggers"></a>전달 로거 만들기
 

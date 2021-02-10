@@ -21,15 +21,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 213d37108e37b9002b2241e6c0806d6d7db7caf6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902485"
 ---
 # <a name="unzip-task"></a>Unzip 작업
 

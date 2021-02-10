@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c49085a430c7afc002fe4e11dcf1184348efdc
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: c6f4a25e3cda10e74c344cb7eef879b78f60a1de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903904"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio에서 메서드 생성
 

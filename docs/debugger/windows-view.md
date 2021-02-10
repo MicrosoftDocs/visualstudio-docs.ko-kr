@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 34a66e9c2728798330b52f87afe8ecdea8733508
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906323"
 ---
 # <a name="windows-view"></a>창 뷰
 Spy++를 처음 열면 시스템에 있는 모든 창 및 컨트롤의 트리가 창 뷰에 표시됩니다. 창 핸들 및 클래스 이름을 보여 줍니다. 현재 데스크톱 창은 트리의 맨 위에 있습니다. 다른 모든 창은 데스크톱의 자식 창이며 표준 창 계층 구조에 따라 나열됩니다. 형제 창은 해당 부모 아래에 들여쓴 확장 가능한 목록에 표시됩니다.

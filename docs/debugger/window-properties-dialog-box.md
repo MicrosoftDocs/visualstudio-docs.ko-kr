@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 252690a94392fa408066619169e355e7a29454e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906346"
 ---
 # <a name="window-properties-dialog-box"></a>창 속성 대화 상자
 이 대화 상자는 특정 창에 대해 자세히 알아보는 데 사용됩니다. 이 대화 상자를 표시하려면 포커스를 [창 뷰](../debugger/windows-view.md) 창으로 이동합니다. 트리에서 창 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.

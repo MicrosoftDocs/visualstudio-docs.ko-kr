@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d00742b1832aebcfff0e008455da98e744a485f7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: dcacfc121d450da956e45d6ae608dd2a0474183f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906770"
 ---
 # <a name="instruction-pointers-ips-view"></a>IP(명령 포인터) 뷰
 명령 포인터 뷰를 사용하면 샘플링 프로파일링 중 실행되는 특정 명령을 확인할 수 있습니다.

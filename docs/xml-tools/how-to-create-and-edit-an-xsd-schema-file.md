@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c73a04995790c61db683015c059249b9d2ac03bc
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1c82399ae18d1d6f67f0a1ab4b4ec0bc508523e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897484"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>방법: XSD 스키마 파일 만들기 및 편집
 

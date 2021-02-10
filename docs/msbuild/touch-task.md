@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b31beb15ddfd1078d72c247535e2bc835b8c31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902643"
 ---
 # <a name="touch-task"></a>Touch 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "93047008"
 
  다음 표에서는 `Touch` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`AlwaysCreate`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 아직 없는 모든 파일을 만듭니다.|
 |`Files`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 터치할 파일 컬렉션을 지정합니다.|

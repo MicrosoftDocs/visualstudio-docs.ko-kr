@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0480b427b92ca43603deedf84e5fd7cb39e6e065
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897745"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
 
@@ -55,14 +55,14 @@ MSBuild는 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저�
 | `MSBuildNodeCount` | 예약됨 | 작성 시 사용되는 동시 프로세스의 최대 수입니다. 이 값은 명령줄에서 **-maxcpucount** 에 대해 지정한 값입니다. 값을 지정하지 않고 **/maxcpucount** 를 지정한 경우 `MSBuildNodeCount`는 컴퓨터의 프로세서 수를 지정합니다. 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md) 및 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)를 참조하세요. | 1 |
 | `MSBuildProgramFiles32` | 예약됨 | 32비트 프로그램 폴더의 위치(예: *C:\Program Files (x86)* )입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `C:\Program Files (x86)`|
 | `MSBuildProjectDefaultTargets` | 예약됨 | `DefaultTargets` 요소의 `Project` 특성에 지정된 대상의 전체 목록입니다. 예를 들어, 다음 `Project` 요소의 `MSBuildDefaultTargets` 속성 값이 `A;B;C`입니다.<br /><br /> `<Project DefaultTargets="A;B;C" >` | `Build`|
-| `MSBuildProjectDirectory` | 예약됨 | 프로젝트 파일이 있는 디렉터리의 절대 경로(예: *C:\MyCompany\MyProduct* )입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `C:\Source\Repos\ConsoleApp1\ConsoleApp1` |
+| `MSBuildProjectDirectory` | 예약됨 | 프로젝트 파일이 있는 디렉터리의 절대 경로(예: *C:\MyCompany\MyProduct*)입니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `C:\Source\Repos\ConsoleApp1\ConsoleApp1` |
 | `MSBuildProjectDirectoryNoRoot` | 예약됨 | `MSBuildProjectDirectory` 속성 값입니다. 단, 루트 드라이브를 제외합니다.<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `Source\Repos\ConsoleApp1\ConsoleApp1`|
-| `MSBuildProjectExtension` | 예약됨 | 마침표가 포함된 프로젝트 파일의 파일 확장명(예: *.proj* )입니다. | `.csproj`|
-| `MSBuildProjectFile` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 전체 파일 이름(예: *MyApp.proj* )입니다. | `ConsoleApp1.csproj`|
-| `MSBuildProjectFullPath` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 절대 경로와 전체 파일 이름(예: *C:\MyCompany\MyProduct\MyApp.proj* )입니다. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
-| `MSBuildProjectName` | 예약됨 | 파일 확장명이 없는 프로젝트 파일의 파일 이름(예: *MyApp* )입니다. | `ConsoleApp1` |
+| `MSBuildProjectExtension` | 예약됨 | 마침표가 포함된 프로젝트 파일의 파일 확장명(예: *.proj*)입니다. | `.csproj`|
+| `MSBuildProjectFile` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 전체 파일 이름(예: *MyApp.proj*)입니다. | `ConsoleApp1.csproj`|
+| `MSBuildProjectFullPath` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 절대 경로와 전체 파일 이름(예: *C:\MyCompany\MyProduct\MyApp.proj*)입니다. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
+| `MSBuildProjectName` | 예약됨 | 파일 확장명이 없는 프로젝트 파일의 파일 이름(예: *MyApp*)입니다. | `ConsoleApp1` |
 | `MSBuildRuntimeType` | 예약됨 | 현재 실행 중인 런타임의 형식입니다. MSBuild 15에서 도입되었습니다. MSBuild가 데스크톱 .NET Framework에서 실행 중임을 나타내는 `Full`, MSBuild가 .NET Core에서 실행 중임을 나타내는 `Core`(예를 들어 `dotnet build`에서) 또는 MSBuild가 Mono에서 실행 중임을 나타내는 `Mono` 값이 정의되어 있지 않을 수 있습니다(MSBuild 15 이전). | `Full` |
-| `MSBuildStartupDirectory` | 예약됨 | MSBuild가 호출되는 폴더의 절대 경로입니다. 이 속성을 사용하면 모든 디렉터리에서 *\<dirs>.proj* 파일을 만들지 않고 프로젝트 트리에서 특정 지점 아래에 모든 것을 빌드할 수 있습니다. 대신 다음과 같이 프로젝트(예: *c:\traversal.proj* )를 하나만 포함합니다.<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> 임의의 트리 위치에 빌드하려면 다음을 입력합니다.<br /><br /> `msbuild c:\traversal.proj`<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `c:\Source\Repos\ConsoleApp1` |
+| `MSBuildStartupDirectory` | 예약됨 | MSBuild가 호출되는 폴더의 절대 경로입니다. 이 속성을 사용하면 모든 디렉터리에서 *\<dirs>.proj* 파일을 만들지 않고 프로젝트 트리에서 특정 지점 아래에 모든 것을 빌드할 수 있습니다. 대신 다음과 같이 프로젝트(예: *c:\traversal.proj*)를 하나만 포함합니다.<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> 임의의 트리 위치에 빌드하려면 다음을 입력합니다.<br /><br /> `msbuild c:\traversal.proj`<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. | `c:\Source\Repos\ConsoleApp1` |
 | `MSBuildThisFile` | 예약됨 | `MSBuildThisFileFullPath`의 파일 이름 및 파일 확장명 부분입니다. | `ConsoleApp1.csproj` |
 | `MSBuildThisFileDirectory` | 예약됨 | `MSBuildThisFileFullPath`의 디렉터리 부분입니다.<br /><br /> 경로에 마지막 백슬래시를 포함하세요. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\` |
 | `MSBuildThisFileDirectoryNoRoot` | 예약됨 | 루트 드라이브를 제외한 `MSBuildThisFileFullPath`의 디렉터리 부분입니다.<br /><br /> 경로에 마지막 백슬래시를 포함하세요. | `Source\Repos\ConsoleApp1\ConsoleApp1\` |

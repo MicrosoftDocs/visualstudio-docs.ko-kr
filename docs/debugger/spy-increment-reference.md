@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 37692e752e96cb37a712ebcdfa61f5388131991d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98147976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903452"
 ---
 # <a name="spy-reference"></a>Spy++ 참조
 각 Spy++ 메뉴 및 대화 상자에 대한 설명은 아래에 나열된 섹션을 참조하세요.

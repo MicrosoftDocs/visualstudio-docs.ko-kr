@@ -16,15 +16,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4707a3e33279ead458566bc01ed2eed8c67355cf
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b970e9e502542da0452c1ed4f1ebb4585f00559b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903958"
 ---
 # <a name="manage-application-resources-net"></a>애플리케이션 리소스 관리(.NET)
 

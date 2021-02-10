@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 43d24d38fcb9ba07d4cc8c58d7b544256171b049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902371"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio에서 Python 검색 경로를 사용하는 방법
 
@@ -29,7 +29,7 @@ ms.locfileid: "88801167"
 
 따라서 Visual Studio에서는 환경 및 프로젝트 모두에서 검색 경로를 직접 지정하는 방법을 제공합니다. Visual Studio에서 실행하거나 디버그하는 코드는 `PYTHONPATH` 값으로 검색 경로(및 기타 동등한 변수)를 받습니다. Visual Studio는 검색 경로를 추가하여 해당 위치의 라이브러리를 검사하고 필요한 경우(Visual Studio 2017 버전 15.5 및 이전 버전) 라이브러리에 대한 IntelliSense 데이터베이스를 빌드합니다(라이브러리 수에 따라 데이터베이스를 구성하는 데 다소 시간이 걸릴 수 있음).
 
-검색 경로를 추가하려면 **솔루션 탐색기**로 이동하여 프로젝트 노드를 확장하고, **검색 경로**를 마우스 오른쪽 단추로 클릭하여 **검색 경로에 폴더 추가**를 선택합니다.
+검색 경로를 추가하려면 **솔루션 탐색기** 로 이동하여 프로젝트 노드를 확장하고, **검색 경로** 를 마우스 오른쪽 단추로 클릭하여 **검색 경로에 폴더 추가** 를 선택합니다.
 
 ::: moniker range="vs-2017"
 ![솔루션 탐색기의 검색 경로에서 검색 경로 명령에 폴더 추가](media/search-paths-command.png)
@@ -40,7 +40,7 @@ ms.locfileid: "88801167"
 
 이 명령은 포함할 폴더를 선택할 수 있는 브라우저를 표시합니다.
 
-`PYTHONPATH` 환경 변수에 원하는 폴더가 이미 포함되어 있는 경우 **검색 경로에 PYTHONPATH 추가**를 편리한 바로 가기로 사용합니다.
+`PYTHONPATH` 환경 변수에 원하는 폴더가 이미 포함되어 있는 경우 **검색 경로에 PYTHONPATH 추가** 를 편리한 바로 가기로 사용합니다.
 
 검색 경로에 폴더를 추가하면 Visual Studio에서는 프로젝트와 연결된 모든 환경에 대해 해당 경로를 사용합니다. (환경이 Python 3을 기반으로 하고 Python 2.7 모듈에 검색 경로를 추가하려는 경우 오류가 표시될 수 있습니다.)
 

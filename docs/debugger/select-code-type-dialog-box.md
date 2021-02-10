@@ -22,15 +22,15 @@ no-loc:
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7fb7b7625e8e08e291f4f27606d03f9066828e0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903493"
 ---
 # <a name="select-code-type-dialog-box"></a>코드 형식 선택 대화 상자
 

@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 92071a3bdaf32f06a77f8502b251f1f3af019203
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899519"
 ---
 # <a name="test-generation"></a>테스트 생성
 

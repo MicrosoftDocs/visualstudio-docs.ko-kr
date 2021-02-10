@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d1fb2b24488692031c647139aa1f1076f0dd6f
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: dd4709807b176806d8a7ca56de4adda8cdfe13ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904319"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>디버거 외부에서 프로그램을 실행하는 경우 액세스 위반을 어떻게 디버깅할 수 있습니까?
 

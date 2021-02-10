@@ -11,16 +11,16 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 715c92a26ae33a4e909ec737c866be1cdc15251e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 575a55ae654ada9774abed510d66b94e4ce9d271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899542"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>방법: 시작할 이진 파일 지정
 

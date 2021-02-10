@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901351"
 ---
 # <a name="csc-task"></a>Csc 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "92796565"
 
 다음 표에서는 `Csc` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 선택적 `String[]` 매개 변수입니다.<br /><br /> 참조를 검색할 추가 디렉터리를 지정합니다. 자세한 내용은 [-lib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)를 참조하세요. |
 | `AddModules` | 선택적 `String` 매개 변수입니다.<br /><br /> 이 어셈블리의 일부가 될 모듈을 하나 이상 지정합니다. 자세한 내용은 [-addmodule(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)을 참조하세요. |
@@ -82,7 +82,7 @@ ms.locfileid: "92796565"
 | `WarningsNotAsErrors` | 선택적 `String` 매개 변수입니다.<br /><br /> 오류로 처리하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-warnaserror(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)를 참조하세요.<br /><br /> 이 매개 변수는 `TreatWarningsAsErrors` 매개 변수가 `true`로 설정된 경우에만 유용합니다. |
 | `Win32Icon` | 선택적 `String` 매개 변수입니다.<br /><br /> **파일 탐색기** 에서 출력 파일을 원하는 모양으로 표시하는 *.ico* 파일을 어셈블리에 삽입합니다. 자세한 내용은 [-win32icon(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)을 참조하세요. |
 | `Win32Manifest` | 선택적 `String` 매개 변수입니다.<br /><br /> 포함할 Win32 매니페스트를 지정합니다. |
-| `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res* ) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요. |
+| `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res*) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요. |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

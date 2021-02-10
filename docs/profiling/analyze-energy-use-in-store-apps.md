@@ -12,16 +12,16 @@ dev_langs:
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: af27524b9b057e1a7dc852bd10d7acd23cf8bd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901246"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 

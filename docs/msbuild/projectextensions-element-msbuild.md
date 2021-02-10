@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b7b186fa1d7a5ecb8297045d4b0bbb111d136d1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905288"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 요소(MSBuild)
 
@@ -55,7 +55,7 @@ MSBuild 프로젝트 파일이 MSBuild 이외의 정보를 포함하도록 허�
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 896522f6d7f057d359cb5502c42edf34d0a2d823
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897452"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>방법: 그래프 뷰를 사용하여 스키마 집합 개요 가져오기
 

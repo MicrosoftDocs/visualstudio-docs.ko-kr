@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fab3844b21e12edceb83da310e9069199578ef6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b8bb090b66a52e9c2931e8bf4afc878d87a0ae36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902505"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 작업
 

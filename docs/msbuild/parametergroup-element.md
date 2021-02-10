@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 56ff9c63de40f6a352c10f92b937a397c683fc65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905305"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 요소
 

@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8eb46f324359549d7f74e8edd90d3056820e234e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902381"
 ---
 # <a name="refactor-python-code"></a>Python 코드 리팩터링
 
@@ -28,8 +28,8 @@ Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 
 
 ## <a name="rename"></a>이름 바꾸기
 
-1. 이름을 바꿀 식별자를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택하거나, 해당 식별자에 캐럿을 배치하고 **편집** > **리팩터링** > **이름 바꾸기** 메뉴 명령(**F2**)을 선택합니다.
-2. **이름 바꾸기** 대화 상자가 표시되면 식별자의 새 이름을 입력하고 **확인**을 선택합니다.
+1. 이름을 바꿀 식별자를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기** 를 선택하거나, 해당 식별자에 캐럿을 배치하고 **편집** > **리팩터링** > **이름 바꾸기** 메뉴 명령(**F2**)을 선택합니다.
+2. **이름 바꾸기** 대화 상자가 표시되면 식별자의 새 이름을 입력하고 **확인** 을 선택합니다.
 
    ![새 식별자 이름에 대한 프롬프트 이름 바꾸기](media/code-refactor-rename-1.png)
 
@@ -37,17 +37,17 @@ Visual Studio는 Python 소스 코드를 자동으로 변환하고 정리하는 
 
    ![대화 상자의 이름을 변경하여 변경 내용을 적용할 위치 선택](media/code-refactor-rename-2.png)
 
-4. **적용**을 선택하여 원본 코드 파일을 변경합니다. 이 작업은 실행 취소할 수 있습니다.
+4. **적용** 을 선택하여 원본 코드 파일을 변경합니다. 이 작업은 실행 취소할 수 있습니다.
 
 ## <a name="extract-method"></a>메서드 추출
 
 1. 별도의 메서드로 추출할 코드 줄이나 식을 선택합니다.
-2. **편집** > **리팩터링** > **메서드 추출** 메뉴 명령을 선택하거나, **Ctrl**+**R** > **M**을 입력합니다.
+2. **편집** > **리팩터링** > **메서드 추출** 메뉴 명령을 선택하거나, **Ctrl**+**R** > **M** 을 입력합니다.
 3. 표시되는 대화 상자에서 새 메서드 이름을 입력하고 추출할 위치를 지정한 다음 클로저 변수를 선택합니다. 클로저로 선택되지 않은 변수는 메서드 인수로 변환됩니다.
 
    ![메서드 추출 대화 상자](media/code-refactor-extract-method-1.png)
 
-4. **확인**을 선택하고, 이에 따라 코드가 수정됩니다.
+4. **확인** 을 선택하고, 이에 따라 코드가 수정됩니다.
 
    ![메서드 추출 결과](media/code-refactor-extract-method-2.png)
 
@@ -71,7 +71,7 @@ Visual Studio는 모듈에서 실제로 정의되지 않은 멤버(예: 다른 �
 
 코드를 작성할 때 전혀 사용되지 않는 모듈에 대해 `import` 문으로 끝나는 것은 쉽습니다. Visual Studio는 코드를 분석하므로 문이 나타나는 위치 아래의 범위 내에서 가져온 이름을 사용하는지 확인하여 `import` 문이 필요한지를 자동으로 결정할 수 있습니다.
 
-편집기의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **가져오기 제거**를 선택해 **모든 범위** 또는 **현재 범위**를 제거합니다.
+편집기의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **가져오기 제거** 를 선택해 **모든 범위** 또는 **현재 범위** 를 제거합니다.
 
 ![가져오기 제거 메뉴](media/code-refactor-remove-imports-1.png)
 

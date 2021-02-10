@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f59b66ab1fc117a29d7ed8db2d380b4b11b437
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a5b3d48c4556cfd05e5ce3f2b893b3f0e9a07226
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901434"
 ---
 # <a name="cppclean-task"></a>CPPClean 작업
 

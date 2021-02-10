@@ -41,15 +41,15 @@ helpviewer_keywords:
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 682097ca08bd570ac025e7b6a1861e45a8f761e4
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0b507f79aa4afb1bd5d2f56893d2e32aae0db4c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905571"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>옵션 대화 상자: 텍스트 편집기 \> 모든 언어
 

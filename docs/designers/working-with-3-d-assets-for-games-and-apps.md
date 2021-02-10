@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896353"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>게임 및 앱을 위한 3D 자산 작업
 

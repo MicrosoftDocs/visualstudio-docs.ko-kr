@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b83541a98e995a55a38a5d736c97620f15076ead
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901503"
 ---
 # <a name="copy-task"></a>Copy 작업
 
@@ -38,7 +38,7 @@ ms.locfileid: "92796229"
 
 다음 표에서는 `Copy` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`CopiedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 실제로 복사되지 않았지만 이미 최신 상태이고 `SkipUnchangedFiles`가 `true`이기 때문에 건너뛴 항목을 비롯하여 성공적으로 복사된 항목을 포함합니다.|
 |`DestinationFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 소스 파일을 복사할 파일의 목록을 지정합니다. 이 목록은 `SourceFiles` 매개 변수에 지정된 목록이 포함된 일대일 매핑이어야 합니다. 즉, `SourceFiles`에 지정된 첫 번째 파일이 `DestinationFiles` 등에 지정된 첫 번째 위치에 복사됩니다.|

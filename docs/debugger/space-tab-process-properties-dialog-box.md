@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cb1a33b1456e44b745b3b8992c0233634368952b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903510"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>프로세스 속성 대화 상자, 공간 탭
 **공간** 탭을 사용하여 프로세스의 주소 공간을 검사할 수 있습니다. [프로세스 속성 대화 상자](../debugger/process-properties-dialog-box.md)를 표시하려면 포커스를 [프로세스 뷰](../debugger/processes-view.md) 창으로 이동합니다. 트리에서 프로세스 노드를 선택하고 **보기** 메뉴에서 **속성** 을 선택합니다.

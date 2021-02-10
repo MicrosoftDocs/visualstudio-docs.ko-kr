@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4aebf3b4a5a7556b2e2a3f6fdff7554539812d8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896568"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.

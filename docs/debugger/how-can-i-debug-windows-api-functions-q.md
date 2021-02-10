@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: e1bd0a31f99812efefe937ce179b8f23d66c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904297"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 함수를 어떻게 디버깅할 수 있습니까?
 NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을 수행해야 합니다.

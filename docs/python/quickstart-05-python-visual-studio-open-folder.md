@@ -5,18 +5,18 @@ ms.date: 03/12/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: bc47f2a91b0ce42c319651cad22dbe05fe32623f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902410"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>빠른 시작: 폴더에서 Python 코드 열기 및 실행
 

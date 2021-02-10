@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7ecfa11122b76bcfef3473ff5d06083c64157a2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905443"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 
@@ -37,7 +37,7 @@ MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하
 
 - 빌드의 요약
 
-**-verbosity** ( **v** ) 스위치를 사용하면 출력 로그에 표시되는 데이터의 양을 제어할 수 있습니다. 문제 해결에 사용하려는 경우 대부분의 정보를 제공하는 `detailed`(`d`) 또는 `diagnostic`(`diag`)를 세부 정보 표시 수준으로 사용합니다.
+**-verbosity**(**v**) 스위치를 사용하면 출력 로그에 표시되는 데이터의 양을 제어할 수 있습니다. 문제 해결에 사용하려는 경우 대부분의 정보를 제공하는 `detailed`(`d`) 또는 `diagnostic`(`diag`)를 세부 정보 표시 수준으로 사용합니다.
 
 **-verbosity** 를 `detailed`로 설정하면 빌드 프로세스의 속도가 느려질 수 있으며, **-verbosity** 를 `diagnostic`으로 설정하면 속도가 더욱 느려집니다.
 
@@ -60,13 +60,13 @@ msbuild MyProject.proj -t:go -v:diag
 
 ## <a name="save-the-build-log-to-a-file"></a>파일에 빌드 로그 저장
 
-**-fileLogger** ( **fl** ) 스위치를 사용하여 빌드 데이터를 파일에 저장할 수 있습니다. 다음 예제에서는 이름이 *msbuild.log* 인 파일에 빌드 데이터를 저장합니다.
+**-fileLogger**(**fl**) 스위치를 사용하여 빌드 데이터를 파일에 저장할 수 있습니다. 다음 예제에서는 이름이 *msbuild.log* 인 파일에 빌드 데이터를 저장합니다.
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- 다음 예제에서 로그 파일의 이름은 *MyProjectOutput.log* 이고 로그 출력의 자세한 표시 수준은 `diagnostic`으로 설정됩니다. **-fileLoggerParameters** (`flp`) 스위치를 사용하여 이 두 설정을 지정합니다.
+ 다음 예제에서 로그 파일의 이름은 *MyProjectOutput.log* 이고 로그 출력의 자세한 표시 수준은 `diagnostic`으로 설정됩니다. **-fileLoggerParameters**(`flp`) 스위치를 사용하여 이 두 설정을 지정합니다.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -78,7 +78,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
  다음 예제에서는 *msbuild1.log* 에 전체 로그를 저장하고 *JustErrors.log* 에는 오류만, *JustWarnings.log* 에는 경고만 저장합니다. 이 예제에서는 3개 파일에 대해 각각 파일 번호를 사용합니다. 파일 번호는 `-fl1` 및 `-flp1`과 같이 **fl** 및 **-flp** 스위치 바로 뒤에 지정됩니다.
 
- 파일 2 및 3에 대한 **-fileLoggerParameters** (`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 *msbuild1.log* 가 사용됩니다.
+ 파일 2 및 3에 대한 **-fileLoggerParameters**(`flp`) 스위치는 각 파일에 지정할 이름 및 포함할 내용을 지정합니다. 파일 1에는 이름이 지정되지 않았으므로 기본 이름인 *msbuild1.log* 가 사용됩니다.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -88,7 +88,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>이진 로그 저장
 
-**-binaryLogger** ( **bl** ) 스위치를 사용하여 압축된 이진 형식으로 로그를 저장할 수 있습니다. 이 로그는 빌드 프로세스에 대한 자세한 설명을 포함하며, 특정 로그 분석 도구으로 읽을 수 있습니다.
+**-binaryLogger**(**bl**) 스위치를 사용하여 압축된 이진 형식으로 로그를 저장할 수 있습니다. 이 로그는 빌드 프로세스에 대한 자세한 설명을 포함하며, 특정 로그 분석 도구으로 읽을 수 있습니다.
 
 다음 예제에서는 이진 로그 파일이 *binarylogfilename* 이름으로 만들어집니다.
 
