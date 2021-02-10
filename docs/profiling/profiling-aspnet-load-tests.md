@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7ade0fc4b83832145132d925fe43feb6b3b0ef10
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4bb52c2ba89e9f335504b0e67cb140c9c9ef8ea0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936381"
 ---
 # <a name="profile-aspnet-load-tests"></a>ASP.NET 부하 테스트 프로파일링
 ASP.NET 웹 사이트 프로젝트에 대해 실행하는 자동화된 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 웹 테스트에서 프로파일링 데이터를 수집할 수 있습니다. 샘플링 및 계층 상호 작용 데이터를 수집할 수 있습니다. 자세한 내용은 다음 항목을 참조하세요.

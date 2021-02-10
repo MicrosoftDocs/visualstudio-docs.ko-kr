@@ -23,13 +23,13 @@ description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본�
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+manager: jmartens
+ms.openlocfilehash: a0e3ad3e5f6afbd6675f8e65c918b4a5d7c66dd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922783"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community 업그레이드
 
@@ -45,7 +45,7 @@ Dotfuscator Community를 등록하려면 [전체 Dotfuscator Community 사용자
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Dotfuscator Community는 기본 수준의 보호를 제공하지만 ***PreEmptive Protection - Dotfuscator Professional***에는 다음과 같은 향상된 난독 처리 변환 및 보호 기능이 포함됩니다.
+Dotfuscator Community는 기본 수준의 보호를 제공하지만 ***PreEmptive Protection - Dotfuscator Professional*** 에는 다음과 같은 향상된 난독 처리 변환 및 보호 기능이 포함됩니다.
 
 * *지적 재산권 보호*
   * Enhanced Overload Induction™ 및 임의 식별자 선택을 포함한 추가적인 이름 바꾸기 옵션.

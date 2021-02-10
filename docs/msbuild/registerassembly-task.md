@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce332ac17a20b40cdfbeb4effaf6caf060a87307
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 55625cb1611fec8ed0e8925a671e43505b96c2b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931848"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 작업
 

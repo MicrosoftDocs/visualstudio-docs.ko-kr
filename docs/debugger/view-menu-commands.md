@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c28f94520b55ceddc8d77bcb1299c0f6308cdf3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 1435393f5b263ac3b8ecbdad31295d82d8c2d62b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933000"
 ---
 # <a name="view-menu-commands"></a>보기 메뉴 명령
 **보기** 메뉴는 Spy++ 사용자 인터페이스를 제어하기 위한 명령을 제공합니다.

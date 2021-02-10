@@ -5,18 +5,18 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 728b9e176a40d2bfd7ae36a329409cb27f80fc86
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927962"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>형식을 일치하는 파일 리팩터링으로 이동
 
@@ -47,9 +47,9 @@ ms.locfileid: "75585273"
 2. 다음 작업 중 하나를 수행합니다.
 
    - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러
-   - 형식 이름을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링**을 선택합니다.
+   - 형식 이름을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 을 선택합니다.
 
-1. 메뉴에서 **형식을 *TypeName*.cs로 이동**을 선택합니다. 여기서 *TypeName*은 선택한 형식의 이름입니다.
+1. 메뉴에서 **형식을 *TypeName*.cs로 이동** 을 선택합니다. 여기서 *TypeName* 은 선택한 형식의 이름입니다.
 
    형식과 동일한 이름을 가진 프로젝트의 새 파일로 형식이 이동됩니다.
 

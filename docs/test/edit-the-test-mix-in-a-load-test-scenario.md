@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 99cc7f629fe28bb241033113bdecca043d67f032
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926796"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>테스트 조합을 편집하여 부하 테스트 시나리오에 포함할 웹 성능 테스트, 단위 테스트 및 코딩된 UI 테스트 지정
 

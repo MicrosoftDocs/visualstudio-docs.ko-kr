@@ -11,18 +11,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: c6cf4429607f8ceb2a3ed4a5a1cb91274a201698
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922802"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>자습서: Visual Studio 2019와 함께 Entity Framework를 사용하여 첫 번째 ASP.NET Core 앱 만들기
 
@@ -48,7 +48,7 @@ _이 비디오를 보고 따라서 Visual Studio를 설치하고 첫 번째 ASP.
 
 ## <a name="start-the-installer"></a>설치 관리자 시작
 
-다운로드가 완료되면 **실행**을 클릭하여 설치 관리자를 시작합니다.
+다운로드가 완료되면 **실행** 을 클릭하여 설치 관리자를 시작합니다.
 
 ![Visual Studio 2019 설치 관리자](media/vs-2019/vs2019-installer.png)
 
@@ -60,17 +60,17 @@ Visual Studio를 여러 종류의 개발에 사용할 수 있으며, 워크로�
 
 ## <a name="install"></a>설치
 
-**설치**를 클릭하고 설치 관리자가 Visual Studio를 다운로드하여 설치하도록 합니다.
+**설치** 를 클릭하고 설치 관리자가 Visual Studio를 다운로드하여 설치하도록 합니다.
 
 ## <a name="run-visual-studio-for-the-first-time"></a>Visual Studio 첫 번째 실행
 
-설치 관리자가 완료되면 Visual Studio가 자동으로 시작됩니다. 몇 가지 유용한 기능이 연결되어 있어 로그인할지 묻는 메시지가 표시되지만, 지금은 나중에 로그인하도록 선택할 수 있습니다. 다음으로 테마 및 개발 설정을 선택할 수 있습니다. 이 설정을 선택하면 첫 번째 프로젝트를 시작할 준비가 된 것입니다. **새 프로젝트 만들기**를 클릭한 다음, **ASP.NET Core 웹 애플리케이션**을 선택합니다.
+설치 관리자가 완료되면 Visual Studio가 자동으로 시작됩니다. 몇 가지 유용한 기능이 연결되어 있어 로그인할지 묻는 메시지가 표시되지만, 지금은 나중에 로그인하도록 선택할 수 있습니다. 다음으로 테마 및 개발 설정을 선택할 수 있습니다. 이 설정을 선택하면 첫 번째 프로젝트를 시작할 준비가 된 것입니다. **새 프로젝트 만들기** 를 클릭한 다음, **ASP.NET Core 웹 애플리케이션** 을 선택합니다.
 
 ![Visual Studio 2019 새 ASP.NET Core 웹 애플리케이션 프로젝트 만들기](media/vs-2019/vs2019-create-new-project.png)
 
 ## <a name="explore-aspnet-core-project-types"></a>ASP.NET Core 프로젝트 형식 살펴보기
 
-프로젝트 이름 및 위치를 선택한 다음, **만들기**를 선택할 수 있습니다. 이제 ASP.NET Core 애플리케이션에 사용할 템플릿을 선택합니다. 다음 옵션 중에서 선택할 수 있습니다.
+프로젝트 이름 및 위치를 선택한 다음, **만들기** 를 선택할 수 있습니다. 이제 ASP.NET Core 애플리케이션에 사용할 템플릿을 선택합니다. 다음 옵션 중에서 선택할 수 있습니다.
 
 - 비어 있음. 처음부터 시작할 수 있는 빈 프로젝트 템플릿입니다.
 - API. 웹 API에 가장 적합합니다.
@@ -88,7 +88,7 @@ Visual Studio를 여러 종류의 개발에 사용할 수 있으며, 워크로�
 - 회사 또는 학교 계정. 이 옵션은 인증에 Active Directory, Azure AD 또는 Microsoft 365를 사용합니다.
 - Windows 인증. 인트라넷 애플리케이션에 적합합니다.
 
-인증 없음과 함께 표준 웹 애플리케이션 템플릿을 선택하고 **만들기**를 클릭합니다.
+인증 없음과 함께 표준 웹 애플리케이션 템플릿을 선택하고 **만들기** 를 클릭합니다.
 
 ![Visual Studio 2019 ASP.NET Core 프로젝트 옵션 선택](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

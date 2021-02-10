@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5bb2a260f0b9903837b6f1bb8ce8a2e4a2fe691e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931788"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "93048676"
 
  다음 표에서는 `RemoveDuplicates` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`Filtered`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 모든 중복 항목이 제거된 항목 컬렉션을 포함합니다. 입력 항목의 순서는 보존되므로 각 중복 항목의 첫 번째 인스턴스를 유지합니다.|
 |`Inputs`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 중복 항목을 제거할 항목 컬렉션입니다.|
@@ -72,7 +72,7 @@ ms.locfileid: "93048676"
 </Project>
 ```
 
- 다음 예제는 `RemoveDuplicates` 작업에서 입력 순서가 보존됨을 보여줍니다. 작업이 완료되면 `FilteredItems` 항목 컬렉션에 *MyFile2.cs* , *MyFile1.cs* 및 *MyFile3.cs* 항목이 순서대로 포함됩니다.
+ 다음 예제는 `RemoveDuplicates` 작업에서 입력 순서가 보존됨을 보여줍니다. 작업이 완료되면 `FilteredItems` 항목 컬렉션에 *MyFile2.cs*, *MyFile1.cs* 및 *MyFile3.cs* 항목이 순서대로 포함됩니다.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

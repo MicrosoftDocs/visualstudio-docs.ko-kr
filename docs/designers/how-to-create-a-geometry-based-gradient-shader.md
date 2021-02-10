@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d712365cc296c54f0e5d1a58660df1051e2f20
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 4f3814eabb38e205acedd6bd2b00fd98901568c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931034"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>방법: 기하 도형 기반 그라데이션 셰이더 만들기
 
@@ -35,7 +35,7 @@ ms.locfileid: "93134474"
 
 4. **마스크 벡터** 노드를 그래프에 추가합니다. **도구 상자** 의 **유틸리티** 에서 **마스크 벡터** 를 선택하고 디자인 화면으로 이동합니다.
 
-5. **마스크 벡터** 노드에 대한 마스크 값을 지정합니다. **선택** 모드에서 **마스크 벡터** 노드를 선택하고 **속성** 창에서 **녹색 / Y** 속성을 **True** 로 설정하고 **빨간색 / X** , **파란색 / Z** 및 **알파 / W** 속성을 **False** 로 설정합니다. 이 예제에서 **빨간색 / X** , **녹색 / Y** 및 **파란색 / Z** 속성은 **세계 좌표 위치** 노드의 x, y, z 구성 요소에 해당하며 **알파 / W** 는 사용하지 않습니다. **녹색 / Y** 만 **True** 로 설정했기 때문에 마스킹한 후 입력 벡터의 y 구성 요소만 유지됩니다.
+5. **마스크 벡터** 노드에 대한 마스크 값을 지정합니다. **선택** 모드에서 **마스크 벡터** 노드를 선택하고 **속성** 창에서 **녹색 / Y** 속성을 **True** 로 설정하고 **빨간색 / X**, **파란색 / Z** 및 **알파 / W** 속성을 **False** 로 설정합니다. 이 예제에서 **빨간색 / X**, **녹색 / Y** 및 **파란색 / Z** 속성은 **세계 좌표 위치** 노드의 x, y, z 구성 요소에 해당하며 **알파 / W** 는 사용하지 않습니다. **녹색 / Y** 만 **True** 로 설정했기 때문에 마스킹한 후 입력 벡터의 y 구성 요소만 유지됩니다.
 
 6. **세계 좌표 위치** 노드를 그래프에 추가합니다. **도구 상자** 의 **상수** 에서 **세계 좌표 위치** 를 선택하고 디자인 화면으로 이동합니다.
 

@@ -6,16 +6,16 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 24b106442456f8bfbd415c4559cba71e463418d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933793"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 

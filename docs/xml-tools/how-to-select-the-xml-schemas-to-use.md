@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1e0d8bf1bca7917c6692d7c9c2398df47c4145e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926549"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>방법: 사용할 XML 스키마 선택
 

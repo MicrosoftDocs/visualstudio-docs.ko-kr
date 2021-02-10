@@ -8,15 +8,15 @@ helpviewer_keywords:
 - remote debugging, linux
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
-ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
+ms.openlocfilehash: 99bfd1df6d977830e5b8e332efa3d0af653d3aec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99224355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934613"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>프로세스에 연결하여 SSH를 이용해 Linux에서 .NET Core 디버그
 

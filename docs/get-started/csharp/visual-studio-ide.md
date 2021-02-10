@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: eb34f9dbf0c4778431bbf1eed31b20bc3cd4833b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924994"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE 시작 | C\#
 

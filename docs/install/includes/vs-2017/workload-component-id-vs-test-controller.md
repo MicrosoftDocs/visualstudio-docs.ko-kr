@@ -5,17 +5,17 @@ description: Visual Studio 작업 및 구성 요소 ID를 사용하여 자동화
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: fa0b776cd2f99ec2a5b648cdcad16fe046bf570d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a42697ccd673f11144fc2b53d566f6e03014aef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76159410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932090"
 ---
 ## <a name="test-controller"></a>Test Controller
 

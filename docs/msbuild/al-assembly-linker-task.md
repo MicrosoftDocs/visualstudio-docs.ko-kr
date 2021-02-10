@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923863"
 ---
 # <a name="al-assembly-linker-task"></a>AL(어셈블리 링커) 작업
 
@@ -35,7 +35,7 @@ AL 작업은 Windows SDK(소프트웨어 개발 키트)와 함께 배포되는 �
 
  다음 표에서는 `AL` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |---------------------| - |
 | `AlgorithmID` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 매니페스트가 포함된 파일을 제외하고 다중 파일 어셈블리에 있는 모든 파일을 해시하는 알고리즘을 지정합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/algid` 옵션에 대한 설명서를 참조하세요. |
 | `BaseAddress` | 선택적 `String` 매개 변수입니다.<br /><br /> 런타임에 DLL이 사용자의 컴퓨터에 로드되는 주소를 지정합니다. 운영 체제가 프로세스 공간에서 DLL을 재배치하게 하지 않고 DLL의 기본 주소를 직접 지정하면 애플리케이션의 로드 속도가 빨라집니다. 이 매개 변수는 /base[address](/dotnet/framework/tools/al-exe-assembly-linker)에 해당합니다. |
@@ -54,7 +54,7 @@ AL 작업은 Windows SDK(소프트웨어 개발 키트)와 함께 배포되는 �
 | `KeyContainer` | 선택적 `String` 매개 변수입니다.<br /><br /> 키 쌍을 보관하는 컨테이너를 지정합니다. 어셈블리 매니페스트에 공개 키를 삽입하여 어셈블리에 서명(강력한 이름을 부여)합니다. 그런 다음 이 작업은 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/keyn[ame]` 옵션에 대한 설명서를 참조하세요. |
 | `KeyFile` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리에 서명하기 위한 키 쌍 또는 공개 키를 포함하는 파일을 지정합니다. 컴파일러는 퍼블릭 키를 어셈블리 매니페스트에 삽입한 다음 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/keyf[ile]` 옵션에 대한 설명서를 참조하세요. |
 | `LinkResources` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 지정한 리소스 파일을 어셈블리에 연결합니다. 리소스가 어셈블리의 일부가 되지만 파일은 복사되지 않습니다. 이 매개 변수에 전달된 항목에는 `LogicalName`, `Target` 및 `Access`라는 선택적 메타데이터가 연결될 수 있습니다. `LogicalName` 메타데이터는 리소스에 대한 내부 식별자를 지정하는 데 사용됩니다. `Target` 메타데이터는 작업이 파일을 복사하는 경로 및 파일 이름을 지정할 수 있습니다. 그런 후에 이 새 파일을 어셈블리로 컴파일합니다. 해당 리소스가 다른 어셈블리에 표시되지 않게 하려면 `Access` 메타데이터를 `private`로 설정할 수 있습니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/link[resource]` 옵션에 대한 설명서를 참조하세요. |
-| `MainEntryPoint` | 선택적 `String` 매개 변수입니다.<br /><br /> 모듈을 실행 파일로 변환할 때 진입점으로 사용할 메서드의 정규화된 이름( *class.method* )을 지정합니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/main` 옵션에 해당합니다. |
+| `MainEntryPoint` | 선택적 `String` 매개 변수입니다.<br /><br /> 모듈을 실행 파일로 변환할 때 진입점으로 사용할 메서드의 정규화된 이름(*class.method*)을 지정합니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/main` 옵션에 해당합니다. |
 | `OutputAssembly` | 필수 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> 이 작업에서 생성한 파일의 이름을 지정합니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/out` 옵션에 해당합니다. |
 | `Platform` | 선택적 `String` 매개 변수입니다.<br /><br /> 이 코드를 실행할 수 있는 플랫폼을 제한하며, `x86`, `Itanium`, `x64` 또는 `anycpu` 중 하나여야 합니다. 기본값은 `anycpu`입니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/platform` 옵션에 해당합니다. |
 | `ProductName` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리의 `Product` 필드에 대한 문자열을 지정합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/prod[uct]` 옵션에 대한 설명서를 참조하세요. |

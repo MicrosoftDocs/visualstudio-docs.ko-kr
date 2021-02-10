@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d01def43a94e8590d5f776da1231ddf2d40d8d53
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 01058c1ac565d7f54a99329c008b411fac1e69f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933779"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 참조
 

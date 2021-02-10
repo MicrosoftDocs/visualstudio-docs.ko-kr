@@ -11,13 +11,13 @@ helpviewer_keywords:
 - Options dialog box, Windows Forms Designer, Data UI Customization
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 2b43776d2218f6f2a6a120e139dcae9d540f6f10
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 46834dea30f41ebf0eb8629fe4dde0525288e82d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932308"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>옵션 대화 상자: Windows Forms 디자이너 > 데이터 UI 사용자 지정
 

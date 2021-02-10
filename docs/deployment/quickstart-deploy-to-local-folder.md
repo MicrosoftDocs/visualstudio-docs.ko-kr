@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927433"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Visual Studio를 사용하여 앱을 폴더에 배포
 

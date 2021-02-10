@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 36d96eacc0fbc88a3fcf082493e064a77c5c403a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933819"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 
@@ -54,7 +54,7 @@ ms.locfileid: "93046031"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |조건|필수 특성입니다.<br /><br /> 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
 

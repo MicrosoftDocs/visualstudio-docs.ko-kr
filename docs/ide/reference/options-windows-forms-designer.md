@@ -11,13 +11,13 @@ helpviewer_keywords:
 - Options dialog box, Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d7172ca12344ab046c9bf65e7df280a9fa6dd0aa
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: c55d3dae96ff2757c8a9ba1969c378aa2290d716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932256"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>옵션 대화 상자: Windows Forms 디자이너
 

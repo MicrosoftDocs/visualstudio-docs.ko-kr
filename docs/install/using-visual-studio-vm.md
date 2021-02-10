@@ -12,17 +12,17 @@ helpviewer_keywords:
 - visual studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f73a410752d4b3befd00602f84d575a040c457fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7111c53a498fe10710ec2b328600052a7d4de0cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935640"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure의 Visual Studio 이미지
 

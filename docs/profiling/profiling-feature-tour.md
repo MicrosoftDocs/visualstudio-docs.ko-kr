@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929110"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
@@ -47,13 +47,13 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 - [PerfTips](../profiling/perftips.md)
 
 > [!NOTE]
-> Windows 8 이상에서는 디버거( **진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다. Windows 7 이상에서 [사후 분석](#post_mortem) 도구를 사용할 수 있습니다. 
+> Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로파일링 도구를 실행해야 합니다. Windows 7 이상에서 [사후 분석](#post_mortem) 도구를 사용할 수 있습니다. 
 
 ## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> 릴리스 빌드에서 성능 측정
 
 성능 프로파일러의 도구는 **릴리스** 빌드에 대한 분석을 제공하기 위한 것입니다. 성능 프로파일러에서 앱이 실행 중인 동안 진단 정보를 수집한 다음 앱이 중지된 이후에 수집된 정보를 검사할 수 있습니다(사후 분석).
 
-**디버그** > **성능 프로파일러** (또는 **Alt + F2** )를 선택하여 성능 프로파일러를 엽니다.
+**디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
 
 ![성능 프로파일러](../profiling/media/prof-tour-performance-profiler.png "성능 프로파일러")
 
@@ -122,7 +122,7 @@ CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니
 
 ![진단 도구 힙 차이 뷰](../profiling/media/prof-tour-mem-usage-diff-heap.png "진단 도구 힙 차이 뷰")
 
-대신에 **메모리 사용량** 뷰의 왼쪽 링크를 클릭하면 힙 뷰가 개체 수를 기준으로 구성됩니다. 즉, 숫자가 가장 많이 증가한 특정 유형의 개체가 맨 위에 표시됩니다( **개수 차이** 열을 기준으로 정렬됨).
+대신에 **메모리 사용량** 뷰의 왼쪽 링크를 클릭하면 힙 뷰가 개체 수를 기준으로 구성됩니다. 즉, 숫자가 가장 많이 증가한 특정 유형의 개체가 맨 위에 표시됩니다(**개수 차이** 열을 기준으로 정렬됨).
 
 ## <a name="analyze-resource-consumption-xaml"></a>리소스 사용 분석(XAML)
 
@@ -140,7 +140,7 @@ XAML 앱(예: Windows 데스크톱 WPF 앱 및 UWP 앱)에서 애플리케이션
 
 ## <a name="examine-application-events"></a>애플리케이션 이벤트 검사
 
-일반 [이벤트 뷰어](../profiling/events-viewer.md)를 사용하면 모듈 로드, 스레드 시작, 시스템 구성과 같은 이벤트 목록을 통해 애플리케이션의 활동을 확인하여 Visual Studio 프로파일러 내에서 애플리케이션의 성능을 보다 잘 진단할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러** (또는 **Alt + F2** )를 선택하여 성능 프로파일러를 엽니다.
+일반 [이벤트 뷰어](../profiling/events-viewer.md)를 사용하면 모듈 로드, 스레드 시작, 시스템 구성과 같은 이벤트 목록을 통해 애플리케이션의 활동을 확인하여 Visual Studio 프로파일러 내에서 애플리케이션의 성능을 보다 잘 진단할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
 
 이 도구는 각 이벤트를 목록 뷰에 표시합니다. 열은 이벤트 이름, 타임스탬프, 프로세스 ID와 같은 각 이벤트에 대한 정보를 제공합니다.
 
@@ -148,7 +148,7 @@ XAML 앱(예: Windows 데스크톱 WPF 앱 및 UWP 앱)에서 애플리케이션
 
 ## <a name="analyze-asynchronous-code-net"></a>비동기 코드 분석(.NET)
 
-[.NET Async 도구](../profiling/analyze-async.md)를 사용하여 애플리케이션에서 비동기 코드의 성능을 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러** (또는 **Alt + F2** )를 선택하여 성능 프로파일러를 엽니다.
+[.NET Async 도구](../profiling/analyze-async.md)를 사용하여 애플리케이션에서 비동기 코드의 성능을 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
 
 이 도구는 각 비동기 작업을 목록 뷰에 표시합니다. 비동기 작업의 시작 시간, 종료 시간 및 총 시간과 같은 정보를 볼 수 있습니다.
 
@@ -156,7 +156,7 @@ XAML 앱(예: Windows 데스크톱 WPF 앱 및 UWP 앱)에서 애플리케이션
 
 ## <a name="analyze-database-performance-net-core"></a>데이터베이스 성능 분석(.NET Core)
 
-ADO.NET 또는 Entity Framework Core를 사용하는 .NET Core 앱의 경우 [데이터베이스 도구](../profiling/analyze-database.md)를 사용하여 진단 세션 중에 애플리케이션이 수행하는 데이터베이스 쿼리를 기록할 수 있습니다. 그런 다음 애플리케이션 성능을 향상할 수 있는 지점을 찾기 위해 개별 쿼리에 대한 정보를 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러** (또는 **Alt + F2** )를 선택하여 성능 프로파일러를 엽니다.
+ADO.NET 또는 Entity Framework Core를 사용하는 .NET Core 앱의 경우 [데이터베이스 도구](../profiling/analyze-database.md)를 사용하여 진단 세션 중에 애플리케이션이 수행하는 데이터베이스 쿼리를 기록할 수 있습니다. 그런 다음 애플리케이션 성능을 향상할 수 있는 지점을 찾기 위해 개별 쿼리에 대한 정보를 분석할 수 있습니다. 이 도구는 성능 프로파일러에서 사용할 수 있습니다. **디버그** > **성능 프로파일러**(또는 **Alt + F2**)를 선택하여 성능 프로파일러를 엽니다.
 
 이 도구는 각 쿼리를 목록 뷰에 표시합니다. 쿼리 시작 시간 및 기간과 같은 정보를 볼 수 있습니다.
 
@@ -256,5 +256,5 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 ::: moniker-end
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

@@ -15,15 +15,15 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932464"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript \> 서식
 

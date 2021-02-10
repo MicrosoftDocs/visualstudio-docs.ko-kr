@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 43c9e7d5947796bb1598bf9dc02420b31e43d167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933832"
 ---
 # <a name="add-existing-item-command"></a>기존 항목 추가 명령
 현재 솔루션에 기존 파일을 추가하고 엽니다.

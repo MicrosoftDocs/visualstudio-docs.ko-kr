@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CPU Usage, command-line
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936550"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 

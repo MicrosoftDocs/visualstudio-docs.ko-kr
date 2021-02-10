@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932360"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>옵션 대화 상자: 텍스트 편집기 \> JavaScript \> IntelliSense
 
@@ -52,7 +52,7 @@ ms.locfileid: "91947728"
 
 미리 정의된 참조 그룹을 사용하여 다른 JavaScript 프로젝트의 범위에 있는 특정 IntelliSense .js 파일을 지정할 수 있습니다. 다음 네 가지 참조 그룹을 사용할 수 있습니다.
 
-- 암시적(Windows *버전* ), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
+- 암시적(Windows *버전*), JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 이 그룹에 포함된 파일은 JavaScript를 사용하는 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
 
 - 암시적(웹), HTML5 프로젝트용 이 그룹에 포함된 파일은 이러한 프로젝트 형식용 코드 편집기에 열려 있는 각 .js 파일의 범위에 있습니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "91947728"
 
 **포함된 파일**
 
-이 옵션은 언어 서비스 컨텍스트에 로드되는 파일의 순서를 지정합니다. **제거** , **위로 이동** 및 **아래로 이동** 단추를 사용하여 이 순서를 구성할 수 있습니다. IntelliSense가 제대로 작동하려면 다른 파일에 종속된 파일은 다른 파일 뒤에 로드해야 합니다.
+이 옵션은 언어 서비스 컨텍스트에 로드되는 파일의 순서를 지정합니다. **제거**, **위로 이동** 및 **아래로 이동** 단추를 사용하여 이 순서를 구성할 수 있습니다. IntelliSense가 제대로 작동하려면 다른 파일에 종속된 파일은 다른 파일 뒤에 로드해야 합니다.
 
 > [!CAUTION]
 > 하나의 개체가 두 개 이상의 암시적 참조에서 조건 없이 정의된 경우, 이 목록의 마지막 참조가 개체 정의에 사용됩니다.

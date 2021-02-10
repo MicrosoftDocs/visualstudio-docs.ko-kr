@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933676"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
 
@@ -59,7 +59,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 하나 이상의 리소스( *.jpg* , *.ico* , *.bmp* , 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
+ 하나 이상의 리소스( *.jpg*, *.ico*, *.bmp*, 이진 형식의 XAML 및 기타 확장 형식)를 *.resources* 파일에 포함합니다.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,7 +67,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- XAML Browser Application(XBAP) 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname>.exe.manifest* )에 **\<hostInBrowser />** 요소를 추가합니다.
+ XAML Browser Application(XBAP) 프로젝트를 빌드할 때 애플리케이션 매니페스트( *\<projectname>.exe.manifest*)에 **\<hostInBrowser />** 요소를 추가합니다.
 
 ## <a name="see-also"></a>참조
 

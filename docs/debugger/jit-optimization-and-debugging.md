@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931086"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 코드를 디버그하려는 경우 코드가 최적화되지 **않은** 상태에서 더 쉽습니다. 코드가 최적화되면 컴파일러 및 런타임이 생성된 CPU 코드를 변경하여 더 빠르게 실행되지만 원래 소스 코드에 대하여 덜 직접적으로 매핑합니다. 매핑이 덜 직접적인 경우 디버거는 지역 변수의 값을 알 수 없는 경우가 많으며 단계별 코드 실행 및 중단점이 정상적으로 작동하지 않을 수 있습니다.

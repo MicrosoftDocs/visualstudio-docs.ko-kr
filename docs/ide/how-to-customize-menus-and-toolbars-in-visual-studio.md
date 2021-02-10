@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 0741a85be90f35e887a40f6ca1c957af8ef3c611
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930319"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 

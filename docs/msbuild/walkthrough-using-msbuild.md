@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933858"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - visualizers, string
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 287b5e4546d720160c5e73d19cfeaee5bc0c59e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933065"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio의 문자열 시각화 도우미에서 문자열 보기
 

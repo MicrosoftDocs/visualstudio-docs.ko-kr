@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7384bad2096f98a646487d5d97eed3d387c7de1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 78d5f4f00a81fccf573e69797b9d528ee61ffdc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932061"
 ---
 # <a name="prerequisites-dialog-box"></a>필수 조건 대화 상자
 
@@ -33,7 +33,7 @@ ms.locfileid: "94349232"
 
 |요소|설명|
 |-------------|-----------------|
-|**필수 구성 요소를 설치하기 위한 설치 프로그램 만들기**|종속성 순서에 따라 애플리케이션보다 필수 구성 요소가 먼저 설치되도록 애플리케이션의 설치 프로그램( *Setup.exe* )에 필수 구성 요소를 포함합니다. 이 옵션은 기본적으로 선택됩니다. 이 옵션을 선택하지 않으면 *Setup.exe* 가 작성되지 않습니다.|
+|**필수 구성 요소를 설치하기 위한 설치 프로그램 만들기**|종속성 순서에 따라 애플리케이션보다 필수 구성 요소가 먼저 설치되도록 애플리케이션의 설치 프로그램(*Setup.exe*)에 필수 구성 요소를 포함합니다. 이 옵션은 기본적으로 선택됩니다. 이 옵션을 선택하지 않으면 *Setup.exe* 가 작성되지 않습니다.|
 |**설치할 필수 구성 요소 선택**|.NET Framework 및 C++ 런타임 라이브러리와 같은 구성 요소를 설치할지 여부를 지정합니다.<br /><br />예를 들어, **SQL Server 2012 Express** 옆의 확인란을 선택하여 설치 프로그램에서 이 구성 요소가 대상 컴퓨터에 설치되었는지 여부를 확인하고 설치되지 않았으면 설치하도록 지정합니다.<br /><br />각 필수 구성 요소 패키지에 대한 자세한 내용은 [필수 구성 요소 정보](#prerequisites-information)를 참조하세요.|
 |**구성 요소 공급업체의 웹 사이트에서 필수 구성 요소 다운로드**|공급업체의 웹 사이트에서 필수 구성 요소를 설치하도록 지정합니다. 기본 옵션입니다.|
 |**내 애플리케이션과 동일한 위치에서 필수 구성 요소 다운로드**|애플리케이션과 동일한 위치에서 필수 구성 요소가 설치되도록 지정합니다. 이 옵션은 모든 필수 구성 요소 패키지를 게시 위치에 복사합니다. 이 옵션이 작동하려면 필수 구성 요소 패키지가 개발 컴퓨터에 있어야 합니다.|

@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67825521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933104"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio(Visual Studio Enterprise)에서 IntelliTrace 뒤로 이동을 사용하여 이전 앱 상태 검사
 
@@ -34,26 +34,26 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 1. Visual Studio Enterprise에서 프로젝트를 엽니다.
 
-1. **도구** > **옵션** > **IntelliTrace**설정을 열고, 옵션 **IntelliTrace 이벤트 및 스냅샷**을 선택합니다.
+1. **도구** > **옵션** > **IntelliTrace** 설정을 열고, 옵션 **IntelliTrace 이벤트 및 스냅샷** 을 선택합니다.
 
     Visual Studio 2017 Enterprise 버전 15.9 미리 보기 2부터 이 옵션은 **IntelliTrace 스냅샷(관리 및 네이티브)** 입니다.
 
     ![IntelliTrace 이벤트 및 스냅샷 모드를 사용하도록 설정](../debugger/media/intellitrace-enable-snapshots.png "IntelliTrace 이벤트 및 스냅샷 모드를 사용하도록 설정")
 
-1. 예외에서 스냅샷 보기에 대한 옵션을 구성하려는 경우 **옵션** 대화 상자에서 **IntelliTrace** > **고급**을 선택합니다.
+1. 예외에서 스냅샷 보기에 대한 옵션을 구성하려는 경우 **옵션** 대화 상자에서 **IntelliTrace** > **고급** 을 선택합니다.
 
     이러한 옵션은 Visual Studio 2017 Enterprise 버전 15.7부터 사용할 수 있습니다.
 
     ![예외에서 스냅샷에 대한 동작 구성](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
 
-    이벤트 및 스냅샷을 활성화하는 경우 예외에서 스냅샷 만들기 또한 기본적으로 활성화됩니다. **예외 이벤트에 대한 스냅샷 수집**을 선택 해제하여 예외에서 스냅샷을 비활성화할 수 있습니다. 이 기능이 활성화된 경우 처리되지 않은 예외에 대한 스냅샷이 만들어집니다. 처리되는 예외의 경우 예외가 throw되고 이전에 throw된 예외의 다시 throw가 아닌 경우에만 스냅샷이 만들어집니다. 드롭다운 목록에서 값을 선택하여 예외에서 최대 스냅샷 수를 설정할 수 있습니다. 최대는 앱이 중단 모드를 시작할 때마다 적용됩니다(예: 앱이 중단점에 도달하는 경우).
+    이벤트 및 스냅샷을 활성화하는 경우 예외에서 스냅샷 만들기 또한 기본적으로 활성화됩니다. **예외 이벤트에 대한 스냅샷 수집** 을 선택 해제하여 예외에서 스냅샷을 비활성화할 수 있습니다. 이 기능이 활성화된 경우 처리되지 않은 예외에 대한 스냅샷이 만들어집니다. 처리되는 예외의 경우 예외가 throw되고 이전에 throw된 예외의 다시 throw가 아닌 경우에만 스냅샷이 만들어집니다. 드롭다운 목록에서 값을 선택하여 예외에서 최대 스냅샷 수를 설정할 수 있습니다. 최대는 앱이 중단 모드를 시작할 때마다 적용됩니다(예: 앱이 중단점에 도달하는 경우).
 
     > [!NOTE]
-    > 스냅샷은 IntelliTrace가 기록하는 예외 이벤트에 대해서만 만들어집니다. 관리 코드의 경우 **도구** > **옵션** > **IntelliTrace 이벤트**를 선택하여 IntelliTrace가 기록하는 이벤트를 지정할 수 있습니다.
+    > 스냅샷은 IntelliTrace가 기록하는 예외 이벤트에 대해서만 만들어집니다. 관리 코드의 경우 **도구** > **옵션** > **IntelliTrace 이벤트** 를 선택하여 IntelliTrace가 기록하는 이벤트를 지정할 수 있습니다.
 
 1. 프로젝트에서 하나 이상의 중단점을 설정하고 디버깅을 시작하거나(**F5** 키 누름), 코드를 한 단계씩 실행하여 디버깅을 시작합니다(**F10** 또는 **F11**).
 
-    IntelliTrace는 각 디버거 단계, 중단점 이벤트 및 처리되지 않은 예외 이벤트에서 애플리케이션 프로세스의 스냅샷을 만듭니다. 이러한 이벤트는 다른 IntelliTrace 이벤트와 함께 **진단 도구** 창의 **이벤트** 탭에 기록됩니다. 이 창을 열려면 **디버그** > **Windows** > **진단 도구 표시**를 선택합니다.
+    IntelliTrace는 각 디버거 단계, 중단점 이벤트 및 처리되지 않은 예외 이벤트에서 애플리케이션 프로세스의 스냅샷을 만듭니다. 이러한 이벤트는 다른 IntelliTrace 이벤트와 함께 **진단 도구** 창의 **이벤트** 탭에 기록됩니다. 이 창을 열려면 **디버그** > **Windows** > **진단 도구 표시** 를 선택합니다.
 
     카메라 아이콘이 스냅샷을 사용할 수 있는 이벤트 옆에 나타납니다.
 
@@ -65,7 +65,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 1. 디버그 도구 모음의 **뒤로 이동(Alt + [)** 과 **앞으로 이동(Alt + ])** 단추를 사용하여 이벤트 간을 이동합니다.
 
-    이러한 단추는 **진단 도구 창**의 **이벤트** 탭에 나타나는 이벤트를 이동합니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 [기록 디버깅](../debugger/historical-debugging.md)이 자동으로 활성화됩니다.
+    이러한 단추는 **진단 도구 창** 의 **이벤트** 탭에 나타나는 이벤트를 이동합니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 [기록 디버깅](../debugger/historical-debugging.md)이 자동으로 활성화됩니다.
 
     ![뒤로 이동 및 앞으로 이동 단추](../debugger/media/intellitrace-step-back-icons-description.png "뒤로 이동 및 앞으로 이동 단추")
 
@@ -79,7 +79,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 2. 라이브 실행으로 돌아가려면 **계속(F5)** 을 선택하거나 정보 표시줄의 **라이브 디버깅으로 돌아가기** 링크를 클릭합니다.
 
-3. **이벤트** 탭에서 스냅샷을 볼 수도 있습니다. 이렇게 하려면 스냅샷이 있는 이벤트를 선택하고 **기록 디버깅 활성화**를 클릭합니다.
+3. **이벤트** 탭에서 스냅샷을 볼 수도 있습니다. 이렇게 하려면 스냅샷이 있는 이벤트를 선택하고 **기록 디버깅 활성화** 를 클릭합니다.
 
     ![이벤트에 대한 기록 디버깅 활성화](../debugger/media/intellitrace-activate-historical-debugging.png "이벤트에 대한 기록 디버깅 활성화")
 
@@ -95,9 +95,9 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 이벤트 전용 모드의 IntelliTrace를 통해 디버거 단계 및 중단점에서 기록 디버깅을 활성화할 수 있습니다. 그러나 IntelliTrace는 창이 열려 있는 경우 **로컬** 및 **자동** 창에서만 데이터를 캡처하고, 보기에서 확장된 데이터만 캡처합니다. 이벤트 전용 모드에서 종종 변수 및 복잡한 개체의 전체 보기가 없는 경우가 많습니다. 또한 **조사식** 창에서 식 평가 및 데이터 보기는 지원되지 않습니다.
 
-이벤트 및 스냅샷 모드에서 IntelliTrace는 복잡한 개체를 포함하여 애플리케이션 프로세스의 전체 스냅샷을 캡처합니다. 코드 줄에서 중단점에서 중지된 것처럼 동일한 정보를 볼 수 있습니다(또한 이전에 정보를 확장했는지 여부는 중요하지 않음). 스냅샷을 볼 때 식 평가도 지원됩니다.  
+이벤트 및 스냅샷 모드에서 IntelliTrace는 복잡한 개체를 포함하여 애플리케이션 프로세스의 전체 스냅샷을 캡처합니다. 코드 줄에서 중단점에서 중지된 것처럼 동일한 정보를 볼 수 있습니다(또한 이전에 정보를 확장했는지 여부는 중요하지 않음). 스냅샷을 볼 때 식 평가도 지원됩니다.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>이 기능의 성능 영향은 무엇인가요? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>이 기능의 성능 영향은 무엇인가요? 
 
 전체 단계별 실행 성능에 미치는 영향은 애플리케이션에 따라 달라집니다. 스냅샷을 만드는 오버헤드는 약 30ms입니다. 스냅샷이 만들어질 때 앱의 프로세스가 포크되고 포크된 복사본이 일시 중단됩니다. 스냅샷을 볼 때 Visual Studio는 프로세스의 포크된 복사본에 연결됩니다. 각 스냅샷의 경우 Visual Studio는 페이지 테이블만 복사하고 페이지를 쓰기 중 복사로 설정합니다. 힙의 개체가 연결된 스냅샷이 있는 디버거 단계 사이로 변경되는 경우 해당 페이지 테이블이 복사되고 최소 메모리 비용이 듭니다. Visual Studio에서 스냅샷을 만들 충분한 메모리가 없는 것을 감지하면 스냅샷을 만들지 않습니다.
 
@@ -124,7 +124,7 @@ IntelliTrace 뒤로 이동은 Visual Studio Enterprise 2017 버전 15.5 이상�
 
 * 해당 프로세스에 많은 수의 고유 메모리 영역이 있는 애플리케이션을 디버깅할 때(예: 많은 수의 DLL을 로드하는 애플리케이션) 활성화된 스냅샷이 있는 단계별 실행 성능은 영향을 받을 수 있습니다. 이 문제는 Windows의 향후 버전에서 수정될 예정입니다. 이 문제가 발생하는 경우 stepback@microsoft.com으로 문의하세요.
 
-* 이벤트 및 스냅샷 모드에서 **디버그 &gt; IntelliTrace &gt; IntelliTrace 세션 저장**을 사용하여 파일을 저장할 때 스냅샷에서 캡처된 추가 데이터를 .itrace 파일에서 사용할 수 없습니다. 중단점 및 단계 이벤트에서 IntelliTrace 이벤트 전용 모드에서 파일을 저장한 것처럼 동일한 정보가 표시됩니다.
+* 이벤트 및 스냅샷 모드에서 **디버그 &gt; IntelliTrace &gt; IntelliTrace 세션 저장** 을 사용하여 파일을 저장할 때 스냅샷에서 캡처된 추가 데이터를 .itrace 파일에서 사용할 수 없습니다. 중단점 및 단계 이벤트에서 IntelliTrace 이벤트 전용 모드에서 파일을 저장한 것처럼 동일한 정보가 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

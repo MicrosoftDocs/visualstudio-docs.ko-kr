@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b01c97c0ee72a3d29052d98d8a37cdc746c26d27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923285"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>방법: 시각화 도우미 테스트 및 디버그
 시각화 도우미를 작성한 후에는 이를 디버깅하고 테스트해야 합니다.

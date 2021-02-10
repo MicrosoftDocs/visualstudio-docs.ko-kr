@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 879cbe356f9da52ce0679ee63355d54aec0c9d1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931827"
 ---
 # <a name="removedir-task"></a>RemoveDir 작업
 

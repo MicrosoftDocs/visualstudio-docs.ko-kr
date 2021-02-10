@@ -12,15 +12,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932334"
 ---
 # <a name="options-text-editor-javascript-project"></a>옵션, 텍스트 편집기, JavaScript, 프로젝트
 
@@ -56,7 +56,7 @@ ms.locfileid: "91947702"
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>프로젝트에 포함되지 않는 파일에 대한 ECMAScript 버전
 
-이 옵션을 사용하여 프로젝트의 일부가 아닌 파일의 ECMAScript 버전을 선택할 수 있습니다. **ECMAScript 3** , **ECMAScript 5** 또는 **ECMAScript 6** 중에서 선택할 수 있습니다.
+이 옵션을 사용하여 프로젝트의 일부가 아닌 파일의 ECMAScript 버전을 선택할 수 있습니다. **ECMAScript 3**, **ECMAScript 5** 또는 **ECMAScript 6** 중에서 선택할 수 있습니다.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>프로젝트에 포함되지 않는 TSX 파일에 대한 JSX 내보내기
 

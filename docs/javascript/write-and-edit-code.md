@@ -5,17 +5,17 @@ ms.date: 12/13/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935692"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>JavaScript용 코드 편집기를 사용하는 방법 알아보기
 

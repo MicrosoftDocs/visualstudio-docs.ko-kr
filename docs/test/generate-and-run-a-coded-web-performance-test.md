@@ -15,13 +15,13 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 74269872992935568362a061d47f7335dbaedec8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936420"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>코딩된 웹 성능 테스트 생성 및 실행
 

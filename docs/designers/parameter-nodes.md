@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b559ca9022234ca9f29c40f37c04212d0c698a
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 968dea4745f804f99bd38c6e564244987ae9277a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926400"
 ---
 # <a name="parameter-nodes"></a>매개 변수 노드
 

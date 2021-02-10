@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c837046380550f5a0a73aaba888cbf26be0c1586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923840"
 ---
 # <a name="assignculture-task"></a>AssignCulture 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "92353345"
 
 다음 표에서는 `AssignCulture` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`AssignedFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 각 항목에 추가된 `Culture` 메타데이터 항목을 포함하여 `Files` 매개 변수에 수신된 항목 목록이 포함됩니다.<br /><br /> `Files` 매개 변수에서 들어오는 항목에 `Culture` 메타데이터 항목이 포함되는 경우 원래 메타데이터 항목을 사용합니다.<br /><br /> 파일 이름에 유효한 문화권 식별자가 포함되는 경우에만 작업이 `Culture` 메타데이터 항목을 할당합니다. 문화권 식별자는 파일 이름에서 마지막 두 점 사이에 있어야 합니다.|
 |`AssignedFilesWithCulture`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> `Culture` 메타 데이터 항목이 있는 `AssignedFiles` 매개 변수에서 항목의 하위 집합이 포함됩니다.|
@@ -78,10 +78,10 @@ ms.locfileid: "92353345"
 
 |항목 컬렉션입니다.|콘텐츠|
 |---------------------|--------------|
-|`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (추가 메타데이터 없음)|
-|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|
-|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (추가 메타데이터 없음)|
-|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (추가 메타데이터 없음)|
+|`OutAssignedFiles`|*MyResource1.fr.resx*(Culture="fr")<br /><br /> *MyResource2.XX.resx*(추가 메타데이터 없음)|
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx*(Culture="fr")|
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx*(추가 메타데이터 없음)|
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx*(Culture="fr")<br /><br /> *MyResource2.XX.resx*(추가 메타데이터 없음)|
 
 ## <a name="see-also"></a>참고 항목
 

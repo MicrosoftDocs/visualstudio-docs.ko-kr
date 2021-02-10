@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: edd141f6b99dc3836d99ebdbc4aab9af7150e4ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99601d34a3ad996d8e9e7cd4baf02e51423d8b3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923715"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 메서드
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.

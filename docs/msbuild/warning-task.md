@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4f31ad26b6efffa540ecae6a61f0f7ff12115cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933806"
 ---
 # <a name="warning-task"></a>Warning 작업
 
@@ -35,7 +35,7 @@ ms.locfileid: "93047818"
 
  다음 표에서는 `Warning` 작업의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |---------------| - |
 | `Code` | 선택적 `String` 매개 변수입니다.<br /><br /> 경고와 연결할 경고 코드입니다. |
 | `File` | 선택적 `String` 매개 변수입니다.<br /><br /> 있는 경우 관련 파일을 지정합니다. 파일을 제공하지 않으면 경고 작업이 포함된 파일이 사용됩니다. |

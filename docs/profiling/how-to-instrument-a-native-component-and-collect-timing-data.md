@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 7d63ec7bded9cc19e31ee0d6f8ce7346990bf7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929136"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>방법: 명령줄에서 프로파일러를 사용하여 네이티브 독립 실행형 구성 요소 계측 및 타이밍 데이터 수집
 이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 C++ .*exe* 또는 .*dll* 파일과 같은 네이티브 구성 요소를 계측하고 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.

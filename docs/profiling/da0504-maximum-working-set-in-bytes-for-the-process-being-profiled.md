@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5b15b481115a1ba8cab59d7839153bd0a611a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2c218965add570035e9396652cec46279fcebc4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931749"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: 프로파일링되고 있는 프로세스의 최대 작업 세트(바이트)
 
@@ -42,4 +42,4 @@ ms.locfileid: "85532160"
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법
  규칙은 Windows 성능 모니터링 기능에서 이 측정 데이터를 수집하고 참고용으로만 보고합니다. 규칙을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 테스트 시나리오에서 애플리케이션의 성능을 파악합니다.
 
- [오류 목록] 창에서 메시지를 두 번 클릭하여 프로파일링 데이터의 [표시 뷰](../profiling/marks-view.md)로 이동합니다. **Process\Working Set** 및 **Memory\Pages/sec** 카운터 열을 찾습니다. 그런 다음 **Process\Working Set**의 최대값을 찾아 **Memory\Pages/sec** 갑에 비교합니다. 대개 작업 집합 최대값은, 특히 컴퓨터의 메모리가 제한될 경우 감소한 페이징 IO 활동이 있는 간격과 연관됩니다.
+ [오류 목록] 창에서 메시지를 두 번 클릭하여 프로파일링 데이터의 [표시 뷰](../profiling/marks-view.md)로 이동합니다. **Process\Working Set** 및 **Memory\Pages/sec** 카운터 열을 찾습니다. 그런 다음 **Process\Working Set** 의 최대값을 찾아 **Memory\Pages/sec** 갑에 비교합니다. 대개 작업 집합 최대값은, 특히 컴퓨터의 메모리가 제한될 경우 감소한 페이징 IO 활동이 있는 간격과 연관됩니다.

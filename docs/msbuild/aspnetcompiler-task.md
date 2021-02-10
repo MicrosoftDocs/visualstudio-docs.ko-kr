@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: e77316628f2251fd44d27edaec4c91354fd81a4b
-ms.sourcegitcommit: 02445b684e69c1a665a7e06e9b46072d3fcd7ba6
+ms.openlocfilehash: 504ea606994e06847c2e093bc1701b11ad92e278
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96516095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923883"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 

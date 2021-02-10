@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 670809ea2c9ef04107dbec5634f40831b68b94c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931502"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time 디버거를 사용하지 않도록 설정
 

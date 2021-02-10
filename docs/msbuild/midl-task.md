@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932015"
 ---
 # <a name="midl-task"></a>MIDL 작업
 
@@ -205,7 +205,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe* 
 
      선택적 **Boolean** 매개 변수입니다.
 
-     `true`인 경우 형식 라이브러리 파일( *.tlb* )이 생성되지 않습니다.
+     `true`인 경우 형식 라이브러리 파일( *.tlb*)이 생성되지 않습니다.
 
      자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)에서 **/notlb** 옵션을 참조하세요.
 
@@ -261,7 +261,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe* 
 
      선택적 **String[]** 매개 변수입니다.
 
-     하나 이상의 *defines* ;를 지정합니다. 즉, 이름 및 선택적 값이 `#define` 지시문을 사용하는 것처럼 C 전처리기에 전달 되도록 지정합니다. 각 define의 형식은 *name[=value]* 입니다.
+     하나 이상의 *defines*;를 지정합니다. 즉, 이름 및 선택적 값이 `#define` 지시문을 사용하는 것처럼 C 전처리기에 전달 되도록 지정합니다. 각 define의 형식은 *name[=value]* 입니다.
 
      자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)에서 **/D** 옵션을 참조하세요. 이 표의 **UndefinePreprocessorDefinitions** 매개 변수도 참조하세요.
 
@@ -299,7 +299,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe* 
 
      선택적 **String** 매개 변수입니다.
 
-     대상 시스템에 있는 구조체의 맞춤( *압축 수준* )을 지정합니다.
+     대상 시스템에 있는 구조체의 맞춤(*압축 수준*)을 지정합니다.
 
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
@@ -405,7 +405,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe* 
 
      선택적 **문자열** 매개 변수입니다.
 
-     내보낼 경고의 심각도( *경고 수준* )를 지정합니다. 값이 0인 경우 경고를 내보내지 않습니다. 그러지 않고 경고 수준의 숫자가 지정된 값보다 작거나 같은 경우 경고를 내보냅니다.
+     내보낼 경고의 심각도(*경고 수준*)를 지정합니다. 값이 0인 경우 경고를 내보내지 않습니다. 그러지 않고 경고 수준의 숫자가 지정된 값보다 작거나 같은 경우 경고를 내보냅니다.
 
      각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 

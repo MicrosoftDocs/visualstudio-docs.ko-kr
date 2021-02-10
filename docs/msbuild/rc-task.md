@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f00e0b5cd0575613add2698058ba6b1357aec0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931983"
 ---
 # <a name="rc-task"></a>RC 작업
 
-Microsoft Windows 리소스 컴파일러 도구, *rc.exe* 를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스( *.res* ) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](/windows/desktop/menurc/resource-compiler)를 참조하세요.
+Microsoft Windows 리소스 컴파일러 도구, *rc.exe* 를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스( *.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](/windows/desktop/menurc/resource-compiler)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 

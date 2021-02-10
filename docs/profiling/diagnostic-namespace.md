@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 22224e375c1d1f463f1c07d41ca5a03efa5cabdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923741"
 ---
 # <a name="diagnostic-namespace"></a>진단 네임스페이스
 `diagnostics` 네임스페이스는 동시성 시각화 도우미 표식을 내보내는 기능을 제공합니다.
