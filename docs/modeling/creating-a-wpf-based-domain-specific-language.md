@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef1aaf4f26e6459f48345a2f9552ab09a89da9d3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5142189e5502d1be29442359b8705abec2b8ca7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945346"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>WPF 기반 도메인 특정 언어 만들기
 

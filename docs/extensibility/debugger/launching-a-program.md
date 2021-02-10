@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945918"
 ---
 # <a name="launch-a-program"></a>프로그램 시작
 프로그램을 디버깅 하려는 사용자는 **F5** 키를 눌러 IDE에서 디버거를 실행할 수 있습니다. 그러면 다음과 같이 IDE에서 디버그 엔진 (DE)에 연결 하는 일련의 이벤트가 시작 됩니다. 그러면 프로그램에 연결 되거나 연결 됩니다.
@@ -51,7 +51,7 @@ ms.locfileid: "96606699"
 
    `GUID_NULL`이 전달 되 면 포트가 프로그램을 시작 합니다. 프로그램이 실행 되 면 런타임 환경에서 `IDebugProgramNode2` 프로그램을 설명 하는 인터페이스를 만들어에 전달 `IDebugPortNotify2::AddProgramNode` 합니다. 그러면 프로그램이 실행 중임을 포트에 알립니다. 그런 다음 SDM은 디버그 엔진을 실행 중인 프로그램에 연결 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [포트에 알림](../../extensibility/debugger/notifying-the-port.md) 프로그램이 시작 되 고 포트에 알림이 표시 되는 경우 발생 하는 상황을 설명 합니다.
 
  [시작 후 연결](../../extensibility/debugger/attaching-after-a-launch.md) 디버그 세션에서 프로그램에 DE를 연결할 준비가 되었을 때의 문서입니다.

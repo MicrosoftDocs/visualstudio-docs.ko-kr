@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0a5520a8a47b4b356a79832b619395f86e8231d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945788"
 ---
 # <a name="group-element"></a>Group 요소
 VSPackage 명령 그룹을 정의 합니다.
@@ -36,23 +36,23 @@ VSPackage 명령 그룹을 정의 합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
-|id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
+|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.|
+|id|필수 사항입니다. GUID/ID 명령 식별자의 ID입니다.|
 |priority|선택 사항입니다. 우선 순위를 지정 하는 숫자 값입니다.|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
-|부모|선택 사항입니다. 단추의 부모 요소입니다.|
+|Parent|선택 사항입니다. 단추의 부모 요소입니다.|
 |Annotation|선택적 설명입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
 

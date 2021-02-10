@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39c02ece35a36ceb763a2a5b84f8431043a1b50
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f62a6cc4f7b217bbcf8c94b437bcd7ce9d0d1b2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946737"
 ---
 # <a name="document-windows"></a>문서 창
 Visual Studio에서 *문서 창은* MDI (다중 문서 인터페이스) 창과 연결 된 프레임 있는 자식 창입니다. 문서 창은 일반적으로 소스 코드 또는 텍스트를 표시 하 고 수정 하는 데 사용 되지만 다른 기능 형식을 호스팅할 수도 있습니다. 문서 창:

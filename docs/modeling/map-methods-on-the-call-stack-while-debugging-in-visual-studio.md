@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946490"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 
@@ -59,7 +59,7 @@ ms.locfileid: "97362433"
 
 - Visual c #, Visual Basic, c + +, JavaScript 또는 X + +와 같이 디버그할 수 있는 코드
 
-  다음을 참조하세요.
+  참조
 
 - [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -190,7 +190,7 @@ ms.locfileid: "97362433"
 
    ![호출 스택 코드 맵에 있는 아이콘의 의미](../debugger/media/debuggermap_showlegend.png)
 
-  다음을 참조하세요.
+  참조
 
 - [호출 스택 매핑](#MapStack)
 

@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945411"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 Domain-Specific 언어 만들기
 
 DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL (도메인별 언어) 모델의 상태를 표시할 수 있습니다. 이 항목에서는 Visual Studio 시각화 및 모델링 SDK를 사용 하 여 Windows Form을 DSL에 바인딩하는 과정을 안내 합니다.
 
@@ -61,7 +61,7 @@ DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL 
 
   - 이라는 Windows Forms 클래스 `ModelViewControl` 입니다.
 
-  - `DataBinding.cs`의 추가 부분 정의를 포함 하는 라는 파일입니다 `ModelViewControl` . 해당 콘텐츠를 보려면 **솔루션 탐색기**에서 파일의 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+  - `DataBinding.cs`의 추가 부분 정의를 포함 하는 라는 파일입니다 `ModelViewControl` . 해당 콘텐츠를 보려면 **솔루션 탐색기** 에서 파일의 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 ### <a name="about-the-ui-project"></a>UI 프로젝트 정보
 
@@ -79,16 +79,16 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 3. **Examplemodel.store.customer** 도메인 클래스의 이름을로 바꿉니다 `Farm` .
 
-     Int32 형식 이라는 추가 도메인 속성을 지정 `Size` 하 **Int32**고 `IsOrganic` **부울**형식으로 지정 합니다.
+     Int32 형식 이라는 추가 도메인 속성을 지정 `Size` 하 고 `IsOrganic` **부울** 형식으로 지정 합니다.
 
     > [!NOTE]
-    > 루트 도메인 클래스를 삭제 하 고 새 루트를 만든 경우 편집기 루트 클래스 속성을 다시 설정 해야 합니다. **DSL 탐색기**에서 **편집기**를 선택 합니다. 그런 다음 속성 창에서 **루트 클래스** 를로 설정 `Farm` 합니다.
+    > 루트 도메인 클래스를 삭제 하 고 새 루트를 만든 경우 편집기 루트 클래스 속성을 다시 설정 해야 합니다. **DSL 탐색기** 에서 **편집기** 를 선택 합니다. 그런 다음 속성 창에서 **루트 클래스** 를로 설정 `Farm` 합니다.
 
 4. **명명 된 도메인 클래스** 도구를 사용 하 여 다음 도메인 클래스를 만듭니다.
 
     - `Field` -이 추가 도메인 속성을 지정 `Size` 합니다.
 
-    - `Animal` -속성 창에서 **상속 한정자** 를 **Abstract**로 설정 합니다.
+    - `Animal` -속성 창에서 **상속 한정자** 를 **Abstract** 로 설정 합니다.
 
 5. **도메인 클래스** 도구를 사용 하 여 다음 클래스를 만듭니다.
 
@@ -115,15 +115,15 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 ### <a name="define-your-dsl-model-as-a-data-source"></a>DSL 모델을 데이터 원본으로 정의
 
-1. **데이터** 메뉴에서 **데이터 소스 표시**를 선택 합니다.
+1. **데이터** 메뉴에서 **데이터 소스 표시** 를 선택 합니다.
 
      **데이터 원본** 창이 열립니다.
 
-     **새 데이터 원본 추가**를 선택 합니다. **데이터 원본 구성** 마법사가 열립니다.
+     **새 데이터 원본 추가** 를 선택 합니다. **데이터 원본 구성** 마법사가 열립니다.
 
-2. **개체**를 선택 하 고 **다음**을 선택 합니다.
+2. **개체** 를 선택 하 고 **다음** 을 선택 합니다.
 
-     **Dsl**, **FarmApp**을 확장 하 고 모델의 루트 클래스인 **팜**을 선택 합니다. **마침**을 선택합니다.
+     **Dsl**, **FarmApp** 을 확장 하 고 모델의 루트 클래스인 **팜** 을 선택 합니다. **마침** 을 선택합니다.
 
      솔루션 탐색기 **UI** 프로젝트에는 이제 **Properties\DataSources\Farm.datasource** 이 포함 되어 있습니다.
 
@@ -137,7 +137,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 2. 이라는 새 **사용자 정의 컨트롤** 파일을 `FarmControl` **UI** 프로젝트에 추가 합니다.
 
-3. **데이터 소스** 창의 **팜**드롭다운 메뉴에서 **자세히**를 선택 합니다.
+3. **데이터 소스** 창의 **팜** 드롭다운 메뉴에서 **자세히** 를 선택 합니다.
 
     다른 속성에 대 한 기본 설정은 그대로 둡니다.
 
@@ -147,20 +147,20 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
     각 속성에 대해 하나씩, 컨트롤 집합이 표시 됩니다. 관계 속성은 컨트롤을 생성 하지 않습니다.
 
-5. **FarmBindingNavigator**를 삭제 합니다. 이는 디자이너에도 자동으로 생성 `FarmControl` 되지만이 응용 프로그램에는 유용 하지 않습니다.
+5. **FarmBindingNavigator** 를 삭제 합니다. 이는 디자이너에도 자동으로 생성 `FarmControl` 되지만이 응용 프로그램에는 유용 하지 않습니다.
 
-6. 도구 상자를 사용 하 여 **DataGridView**의 두 인스턴스를 만들고 이름을 및로 이름을로 `AnimalGridView` `FieldGridView` 합니다.
+6. 도구 상자를 사용 하 여 **DataGridView** 의 두 인스턴스를 만들고 이름을 및로 이름을로 `AnimalGridView` `FieldGridView` 합니다.
 
    > [!NOTE]
    > 다른 단계는 데이터 소스 창에서 컨트롤로 동물 및 필드 항목을 끌어 놓는 것입니다. 이 작업을 수행 하면 표 뷰와 데이터 원본 간에 데이터 표 및 바인딩이 자동으로 만들어집니다. 그러나이 바인딩은 Dsl에 대해 올바르게 작동 하지 않습니다. 따라서 데이터 표 및 바인딩을 수동으로 만드는 것이 좋습니다.
 
-7. 도구 상자에 **Modelingbindingsource** 도구가 없는 경우 추가 합니다. **데이터** 탭의 바로 가기 메뉴에서 **항목 선택**을 선택 합니다. **도구 상자 항목 선택** 대화 상자의 **.NET Framework** 탭에서 **modelingbindingsource** 를 선택 합니다.
+7. 도구 상자에 **Modelingbindingsource** 도구가 없는 경우 추가 합니다. **데이터** 탭의 바로 가기 메뉴에서 **항목 선택** 을 선택 합니다. **도구 상자 항목 선택** 대화 상자의 **.NET Framework** 탭에서 **modelingbindingsource** 를 선택 합니다.
 
-8. 도구 상자를 사용 하 여 **Modelingbindingsource**의 두 인스턴스를 만들고 이름을 `AnimalBinding` 및로 `FieldBinding` 합니다.
+8. 도구 상자를 사용 하 여 **Modelingbindingsource** 의 두 인스턴스를 만들고 이름을 `AnimalBinding` 및로 `FieldBinding` 합니다.
 
-9. 각 **Modelingbindingsource** 의 **DataSource** 속성을 **farmBindingSource**로 설정 합니다.
+9. 각 **Modelingbindingsource** 의 **DataSource** 속성을 **farmBindingSource** 로 설정 합니다.
 
-     **DataMember** 속성을 **동물** 또는 **필드로**설정 합니다.
+     **DataMember** 속성을 **동물** 또는 **필드로** 설정 합니다.
 
 10. 의 **DataSource** 속성을으로 설정 하 고을로 설정 합니다 `AnimalGridView` `AnimalBinding`  `FieldGridView` `FieldBinding` .
 
@@ -220,7 +220,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 2. Visual Studio의 실험적 인스턴스에서 **샘플** 파일을 엽니다.
 
-3. **FarmApp 탐색기**에서 **팜** 루트 노드의 바로 가기 메뉴를 열고 **추가 새 goat**를 선택 합니다.
+3. **FarmApp 탐색기** 에서 **팜** 루트 노드의 바로 가기 메뉴를 열고 **추가 새 goat** 를 선택 합니다.
 
      `Goat1`**동물** 보기에 표시 됩니다.
 
@@ -241,7 +241,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 2. 속성 창에서 **데이터 바인딩** 을 확장 하 고 **(고급)** 을 엽니다.
 
-     **서식 지정 및 고급 바인딩** 대화 상자의 **데이터 원본 업데이트 모드**에서 **OnPropertyChanged**를 선택 합니다.
+     **서식 지정 및 고급 바인딩** 대화 상자의 **데이터 원본 업데이트 모드** 에서 **OnPropertyChanged** 를 선택 합니다.
 
 3. 솔루션을 빌드하고 실행합니다.
 
@@ -325,6 +325,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>참고 항목
 
-- [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)
-- [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)
+- [Domain-Specific 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Visual Studio용 모델링 SDK - 도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

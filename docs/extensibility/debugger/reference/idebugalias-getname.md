@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8ebb10e5b01d95b6d9437f41b3ccf2b6c8b99d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72e6f71384f6e30850527524077df35d49aab3cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944773"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 이 별칭의 이름을 가져옵니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80736455"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetName(
-   BSTR* pbstrName
+HRESULT GetName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName(
-   out string pbstrName
+int GetName(
+   out string pbstrName
 );
 ```
 
@@ -43,8 +43,8 @@ int GetName(
 `pbstrName`\
 제한이 별칭의 이름입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946685"
 ---
 # <a name="elimination-of-sak-files"></a>~ SAK 파일 제거
 소스 제어 플러그 인 API 1.2에서는 소스 제어 플러그 인에서 *mssccprj.scc* 파일 및 공유 체크 아웃을 지원 하는지 여부를 검색 하는 새 함수 및 기능 플래그로 *~ SAK* 파일이 대체 되었습니다.

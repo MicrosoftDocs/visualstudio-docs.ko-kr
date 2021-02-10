@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8bbdcec09ef004817b05e7992ae72bc856764da9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945853"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
 중단점이 발생 하는 조건을 설명 합니다.
@@ -47,7 +47,7 @@ public struct BP_CONDITION {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `pThread`\
 중단점을 포함 하는 응용 프로그램에 대 한 활성 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
@@ -75,8 +75,8 @@ public struct BP_CONDITION {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
 - [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)

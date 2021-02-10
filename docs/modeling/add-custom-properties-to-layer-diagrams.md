@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946464"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
 

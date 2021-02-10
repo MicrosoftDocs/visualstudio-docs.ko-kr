@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c7e73a7c1ccb5840927f4292fe057cbb6670a89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ff5459903b5259d6005a4ebb01228117c2801db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944786"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 이 별칭에 대 한 개체를 가져옵니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80736441"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetObject(
-   IDebugObject2** ppObject
+HRESULT GetObject(
+   IDebugObject2** ppObject
 );
 ```
 
 ```csharp
-int GetObject(
-   Out IDebugObject2 ppObject
+int GetObject(
+   Out IDebugObject2 ppObject
 )
 ```
 
@@ -43,9 +43,9 @@ int GetObject(
 `ppObject`\
 제한이 이 별칭이 나타내는 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

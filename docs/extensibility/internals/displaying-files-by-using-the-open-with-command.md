@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946724"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>연결 프로그램 명령을 사용 하 여 파일 표시
 프로젝트는 [ **연결 프로그램** ] 대화 상자를 표시 하도록 IDE에 요청할 수 있습니다. 이 요청은 표준 편집기가 선택 된 파일을 열도록 요청 하는 메시지를 표시 합니다. 다음 단계는이 프로세스를 설명 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "96329694"
 
 3. 사용자가 **연결** 프로그램 대화 상자에서 항목을 선택 하는 즉시 IDE에서 메서드를 호출 하 여 문서를 엽니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> . 자세한 내용은 [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)
 - [파일 열기 명령을 사용 하 여 파일을 표시 합니다.](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)

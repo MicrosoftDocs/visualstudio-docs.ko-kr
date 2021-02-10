@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946763"
 ---
 # <a name="elements-of-a-project-model"></a>프로젝트 모델의 요소
 에서 모든 프로젝트의 인터페이스와 구현은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 구조를 공유 합니다. 프로젝트 형식에 대 한 프로젝트 모델입니다. 개발 중인 VSPackage 프로젝트 모델에서 디자인 결정을 따르고 IDE에서 제공 하는 전역 기능과 함께 작동 하는 개체를 만듭니다. 예를 들어 프로젝트 항목이 유지 되는 방식을 제어 하지만 파일을 유지 해야 한다는 알림을 제어 하지 않습니다. 사용자가 열린 프로젝트 항목에 포커스를 두고 메뉴 모음의 **파일** 메뉴에서 **저장** 을 선택 하는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식 코드는 ide에서 명령을 가로채서 파일을 저장 한 다음 파일을 더 이상 변경 하지 않는 것으로 ide에 알림을 다시 전송 해야 합니다.

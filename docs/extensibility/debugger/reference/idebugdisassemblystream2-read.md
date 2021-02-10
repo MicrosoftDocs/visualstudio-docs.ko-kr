@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944669"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80732099"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Read( 
+HRESULT Read( 
    DWORD                     dwInstructions,
    DISASSEMBLY_STREAM_FIELDS dwFields,
    DWORD*                    pdwInstructionsRead,
@@ -37,7 +37,7 @@ HRESULT Read( 
 ```
 
 ```csharp
-int Read( 
+int Read( 
    uint                           dwInstructions,
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,
    out uint                       pdwInstructionsRead,
@@ -58,7 +58,7 @@ int Read( 
 `prgDisassembly`\
 제한이 디스어셈블 코드를 사용 하 여 채워진 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 배열로, 디스어셈블 된 명령 당 하나의 구조입니다. 이 배열의 길이는 매개 변수에 의해 결정 됩니다 `dwInstructions` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -68,7 +68,7 @@ int Read( 
 
  `DSF_OPERANDS_SYMBOLS`매개 변수의 플래그에 플래그를 추가 `DSF_OPERANDS` `dwFields` 하 여 명령을 디스어셈블 할 때 기호 이름을 사용 해야 함을 나타낼 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

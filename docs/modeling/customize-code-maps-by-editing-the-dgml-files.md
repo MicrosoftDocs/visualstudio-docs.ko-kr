@@ -19,15 +19,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945294"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -373,7 +373,7 @@ ms.locfileid: "97363429"
 
  `Coverage` 속성에 따라 코드 요소의 배경색을 설정합니다. 스타일은 `if-else` 문과 마찬가지로 나타나는 순서대로 확인됩니다.
 
- 이 예제에 대한 설명:
+ 이 예제에서는 다음이 적용됩니다.
 
 1. `Coverage`가 > 80 이면 `Background` 속성을 녹색으로 설정 합니다.
 

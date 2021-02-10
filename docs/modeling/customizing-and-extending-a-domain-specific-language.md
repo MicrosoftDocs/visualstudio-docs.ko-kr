@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 912c8fc9b5920411304310c44cdc264968472d4e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9cfa8a3cda3f6bb2f564efe745a11863cf4d0e8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945307"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 

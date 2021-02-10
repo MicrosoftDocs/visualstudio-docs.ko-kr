@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946529"
 ---
 # <a name="map-dependencies-with-code-maps"></a>코드 맵으로 종속성 매핑
 
@@ -191,7 +191,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
     **어셈블리** 인 경우 다음을 선택합니다.
 
-    |옵션|설명|
+    |옵션|Description|
     |-|-|
     |**참조된 어셈블리 표시**|이 어셈블리가 참조하는 어셈블리를 추가합니다. **외부** 그룹에 외부 어셈블리가 나타납니다.|
     |**참조하는 어셈블리 표시**|솔루션에 이 어셈블리를 참조하는 어셈블리를 추가합니다.|
@@ -213,7 +213,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
      **메서드** 인 경우 다음을 선택합니다.
 
-    |옵션|설명|
+    |옵션|Description|
     |-|-|
     |**호출된 메서드 표시**|이 메서드가 호출하는 메서드를 추가합니다.|
     |**참조된 필드 표시**|이 메서드가 참조하는 필드를 추가합니다.|
@@ -223,7 +223,7 @@ Visual Studio에서 코드 맵을 만들려면 먼저 **코드 맵** 및 **라�
 
      **필드** 또는 **속성** 인 경우 다음을 선택합니다.
 
-    |옵션|설명|
+    |옵션|Description|
     |-|-|
     |**포함하는 형식 표시**|부모 형식을 추가합니다.|
     |**포함하는 형식, 네임스페이스 및 어셈블리 표시**|부모 컨테이너 계층 구조를 추가합니다.|

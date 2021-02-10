@@ -21,20 +21,20 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945021"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 요소(ClickOnce 애플리케이션)
 애플리케이션을 클라이언트 컴퓨터에서 실행하는 데 필요한 최소 보안 권한을 설명합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 
@@ -144,7 +144,7 @@ ms.locfileid: "94349219"
 
 - `Level`
 
-   필수 사항입니다. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은 다음과 같습니다.
+   필수 사항입니다. 애플리케이션이 요청하는 보안 수준을 나타냅니다. 가능한 값은
 
    `asInvoker`, 추가 권한을 요청하지 않습니다. 이 수준에서는 추가 신뢰 프롬프트를 요구하지 않습니다.
 
