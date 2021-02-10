@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f37d0f89ad5124956198df1bde94bdb6cf54f64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950681"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4단계: 각 레이블에 클릭 이벤트 처리기 추가
 

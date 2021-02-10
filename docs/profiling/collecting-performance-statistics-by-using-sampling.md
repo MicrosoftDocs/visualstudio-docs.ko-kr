@@ -9,16 +9,16 @@ helpviewer_keywords:
 - sampling profiling method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a58ec02fa6bff0dd06ce08b933a381bca37a80
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: b04d6ab450d933c75190af9baa9ec6f41549bd82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950223"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 

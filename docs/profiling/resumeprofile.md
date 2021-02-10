@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b700359977e13e4664067ef62af4913d41cbabb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5607efbf9e979ff427d772089731af01cdd71867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950158"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 감소시킵니다.

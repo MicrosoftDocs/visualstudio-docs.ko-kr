@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a032e5f6b3f9eda302f65a4d04b196ef55a225f6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 85deb6239360fc1c56ceb1ba4d23be02d6dbfd70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950387"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio용 모델링 SDK - 도메인별 언어
 

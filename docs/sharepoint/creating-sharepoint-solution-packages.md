@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949092"
 ---
 # <a name="create-sharepoint-solution-packages"></a>SharePoint 솔루션 패키지 만들기
   패키지 디자이너를 사용 하 여 배포 패키지를 만들고 사용자 지정할 수 있습니다. 예를 들어 SharePoint 프로젝트 항목 및 기능을 추가 하 고, IIS 서버를 다시 설정 하 고, 기능 활성화 범위를 설정 하 고, 기능 종속성을 식별할 수 있습니다. 또한 디자이너는 각 패키지를 설명 하는 XML 파일인 매니페스트를 생성 합니다.

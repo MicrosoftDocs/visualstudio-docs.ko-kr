@@ -16,15 +16,15 @@ helpviewer_keywords:
 - page layouts[SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 702d2c4d5cafd6f4ff4ef2e4104da9f6cc02c5fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949170"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint용 페이지 만들기
   SharePoint 사이트의 애플리케이션 페이지, 사이트 페이지, 마스터 페이지, 페이지 레이아웃을 만들 수 있습니다.

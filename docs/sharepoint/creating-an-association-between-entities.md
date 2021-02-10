@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7efd3d622e40c21574c0aa9e39263d53979706ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949196"
 ---
 # <a name="create-an-association-between-entities"></a>엔터티 간 연결 만들기
   연결을 만들어 BDC (비즈니스 데이터 연결) 모델의 엔터티 간 관계를 정의할 수 있습니다. Visual Studio는 모델의 소비자에 게 각 연결에 대 한 정보를 제공 하는 메서드를 생성 합니다. 이러한 메서드는 SharePoint 웹 파트, 목록 또는 사용자 지정 애플리케이션에서 사용되어 UI(사용자 인터페이스)에 데이터 관계를 표시할 수 있습니다.

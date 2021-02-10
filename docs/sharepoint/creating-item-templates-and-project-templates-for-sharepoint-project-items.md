@@ -17,15 +17,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 538bc709ed3af1c7b1424b56c1bd843b127c6ab7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949157"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기
 
@@ -40,7 +40,7 @@ ms.locfileid: "94850639"
 
  다음 표에서는 SharePoint 프로젝트 항목의 항목 템플릿을 만드는 데 필요한 파일을 보여 줍니다.
 
-|필수 파일|설명|
+|필수 파일|Description|
 |-------------------|-----------------|
 |*.Spdata* 파일|이 XML 파일은 프로젝트 항목의 내용과 기본 동작을 지정 합니다. 이 파일은 항목 템플릿에 포함 되어야 합니다. *.Spdata* 파일의 내용에 대 한 자세한 내용은 [SharePoint 프로젝트 항목 스키마 참조](../sharepoint/sharepoint-project-item-schema-reference.md)를 참조 하세요.|
 |*.Vstemplate* 파일.|이 파일은 **새 항목 추가** 대화 상자에 템플릿을 표시 하 고 템플릿에서 프로젝트 항목을 만드는 데 필요한 정보를 Visual Studio에 제공 합니다. 이 파일은 항목 템플릿에 포함 되어야 합니다. 자세한 내용은 [Visual Studio 템플릿 메타 데이터 파일](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))을 참조 하세요.|
@@ -64,7 +64,7 @@ ms.locfileid: "94850639"
 
  다음 표에서는 SharePoint 프로젝트 템플릿에 포함 되어야 하는 파일을 나열 합니다.
 
-|필수 파일|설명|
+|필수 파일|Description|
 |-------------------|-----------------|
 |*.Vstemplate* 파일|이 파일은 **새 프로젝트** 대화 상자에 템플릿을 표시 하 고 템플릿에서 프로젝트를 만드는 데 필요한 정보를 Visual Studio에 제공 합니다. 자세한 내용은 [Visual Studio 템플릿 메타 데이터 파일](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))을 참조 하세요.|
 |*.Csproj* 또는 *.vbproj* 파일|이 파일은 프로젝트 파일입니다. 프로젝트의 내용과 구성 설정을 정의 합니다.|
@@ -73,7 +73,7 @@ ms.locfileid: "94850639"
 
  다음 표에는 프로젝트 템플릿에 포함 될 수 있는 선택적 파일이 나열 되어 있습니다.
 
-|선택적 파일|설명|
+|선택적 파일|Description|
 |-------------------|-----------------|
 |SharePoint 프로젝트 항목|SharePoint 프로젝트 항목 형식을 정의 하는 하나 이상의 .spdata 파일을 포함할 수 있습니다. 각 *.spdata* 파일 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 에는 프로젝트 템플릿을 사용 하 여 VSIX 패키지에 포함 된 확장 어셈블리에 일치 하는 구현이 있어야 합니다. 자세한 내용은 [항목 템플릿 만들기](#create-item-templates)를 참조 하세요.<br /><br /> 일반적으로 SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목을 포함 합니다. 그러나 반드시 이렇게 해야 하는 것은 아닙니다.|
 |*\<featureName>. 기능*|이 파일은 배포를 위해 여러 프로젝트 항목을 그룹화 하는 데 사용 되는 SharePoint 기능을 정의 합니다. 기능 디자이너를 사용 하 여 프로젝트의 기능을 사용자 지정 하는 경우 Visual Studio는 해당 기능에 대 한 데이터를이 파일에 저장 합니다. 프로젝트 항목을 다른 기능으로 그룹화 하려는 경우 여러 개의 *기능* 파일을 포함할 수 있습니다.<br /><br /> 사용자 지정 SharePoint 프로젝트 템플릿을 만들 때 각 *. 기능* 파일에 필요한 최소 콘텐츠만 포함 하 고, <xref:Microsoft.VisualStudio.SharePoint.Features> 프로젝트 템플릿과 연결 된 확장에서 네임 스페이스의 api를 사용 하 여 기능을 구성 하는 것이 좋습니다. 이 작업을 수행 하는 경우 프로젝트 템플릿은 나중에 *기능* 파일의 구조를 변경 하지 못하도록 보호 됩니다. 필요한 최소한의 콘텐츠만 포함 하는 *기능* 파일을 만드는 방법을 보여 주는 예제는 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)참조 하세요.<br /><br /> *기능* 파일을 직접 수정 하려면 *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ Xml\Schemas\FeatureModelSchema.xsd* 에서 스키마를 사용 하 여 내용을 확인할 수 있습니다.|

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc7493d20d09ebd606e3a6ec8e5271981fb6f62
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950275"
 ---
 # <a name="call-tree-view---sampling-data"></a>호출 트리 뷰 - 샘플링 데이터
 호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다.

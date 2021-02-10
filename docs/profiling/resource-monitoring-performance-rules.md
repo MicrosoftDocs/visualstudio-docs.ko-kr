@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96cad46cd8a42346ab6199bca664cdc885bfc3cd
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1fc17bd86868a7b3e87c47ec44fd5caabf7a6cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950145"
 ---
 # <a name="resource-monitoring-performance-rules"></a>리소스 모니터링 성능 규칙
 리소스 모니터링 범주의 성능 메시지는 애플리케이션의 성능에 대한 추가 데이터를 제공합니다. 이 데이터를 사용하여 성능 문제를 분석할 수 있습니다. 이러한 규칙은 정보를 제공하며 모든 프로파일링 실행에 대해 보고됩니다.

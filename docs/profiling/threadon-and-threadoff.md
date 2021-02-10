@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 059e7dfc9d7c16be3aa699eea47b1a64882e689e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949313"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
 *VSPerfCmd.exe* **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn** 은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff** 는 스레드 프로파일링을 중지하고 **ThreadOn** 은 스레드 프로파일링을 시작합니다.

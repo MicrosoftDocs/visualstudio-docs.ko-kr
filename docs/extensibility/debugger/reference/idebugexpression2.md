@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e23ad4f673e4e150ea677d993c5b36a4e386c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949586"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 이 인터페이스는 바인딩 및 평가를 위해 준비 된 구문 분석 식을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExpression2 : IUnknown
@@ -37,10 +37,10 @@ IDebugExpression2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugExpression2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|이 식을 비동기식으로 계산 합니다.|
-|[중단이](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료 합니다.|
+|[중단](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료 합니다.|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|이 식을 동기적으로 계산 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -57,6 +57,6 @@ IDebugExpression2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)

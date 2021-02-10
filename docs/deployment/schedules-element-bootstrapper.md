@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0154816985076373c3ced4981aa714971a9ded29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949651"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;일정 &gt; 요소 (부트스트래퍼)
 요소에는 요소로 `Schedules` `Schedule` 정의 된 명령을 실행 해야 하는 특정 시간을 정의 하는 요소가 포함 되어 있습니다 `Command` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <Schedules>
@@ -49,7 +49,7 @@ ms.locfileid: "94349362"
 
  `Schedule` 에는 다음과 같은 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Name`|필수 사항입니다. 일정 항목의 이름입니다. 이는 `ScheduleName` 요소의 속성에 해당 `Command` 합니다. 가 명명 된 일정을 참조 하는 경우 해당 `Command` 요소에 지정 된 시간에만 실행 됩니다 `Schedule` . 일정 `FailIf` `BypassIf` 은 지정 된 일정에 따라 이러한 조건부 테스트가 실행 되도록 제한 하는 및 요소와 연결 될 수도 있습니다. 자세한 내용은 [\<Commands> 요소](../deployment/commands-element-bootstrapper.md)를 참조하세요.|
 
@@ -65,5 +65,5 @@ ms.locfileid: "94349362"
  `AfterPackage`요소는 지정 된 패키지가 설치 된 후 설치 관리자에 게 명령을 실행 하도록 지시 합니다.
 
 ## <a name="see-also"></a>참고 항목
-- [\<Product> 요소인](../deployment/product-element-bootstrapper.md)
+- [\<Product> 요소](../deployment/product-element-bootstrapper.md)
 - [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)

@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6a2996da30c0be8e3dc4d303d0e46e901c8b885d
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8c4a846fe9425af7dc62ef93276c0272f480b7f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949872"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 

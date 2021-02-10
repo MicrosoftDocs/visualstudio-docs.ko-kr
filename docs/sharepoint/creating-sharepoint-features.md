@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949118"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint 기능 만들기
   SharePoint 기능을 사용 하 여 더 쉽게 배포할 수 있도록 관련 SharePoint 프로젝트 항목을 그룹화 할 수 있습니다. SharePoint 기능 디자이너를 사용 하 여 기능을 만들고, 범위를 설정 하 고, 다른 기능을 종속성으로 표시할 수 있습니다. 또한 디자이너는 각 기능을 설명 하는 XML 파일인 매니페스트를 생성 합니다.
@@ -40,11 +40,11 @@ ms.locfileid: "94850587"
 
  다음 표에서는 기능 디자이너에 표시 되는 기능 속성을 설명 합니다.
 
-|속성|설명|
+|속성|Description|
 |--------------|-----------------|
-|제목|선택 사항입니다. 기능의 기본 제목은 *SolutionName* *FeatureName* 로 설정 됩니다.|
-|설명|선택 사항입니다. SharePoint 기능에 대 한 설명입니다.|
-|Scope|필수 요소. **솔루션 탐색기** 를 사용 하 여 기능을 만드는 경우 기본적으로 범위가 웹으로 설정 됩니다.<br /><br /> -팜: 전체 서버 팜에 대해 기능을 활성화 합니다.<br /><br /> -사이트: 사이트 모음에 있는 모든 웹 사이트에 대해 기능을 활성화 합니다.<br /><br /> -웹: 특정 웹 사이트에 대 한 기능을 활성화 합니다.<br /><br /> -WebApplication: 웹 응용 프로그램의 모든 웹 사이트에 대해 기능을 활성화 합니다.|
+|Title|선택 사항입니다. 기능의 기본 제목은 *SolutionName* *FeatureName* 로 설정 됩니다.|
+|Description|선택 사항입니다. SharePoint 기능에 대 한 설명입니다.|
+|범위|필수 사항입니다. **솔루션 탐색기** 를 사용 하 여 기능을 만드는 경우 기본적으로 범위가 웹으로 설정 됩니다.<br /><br /> -팜: 전체 서버 팜에 대해 기능을 활성화 합니다.<br /><br /> -사이트: 사이트 모음에 있는 모든 웹 사이트에 대해 기능을 활성화 합니다.<br /><br /> -웹: 특정 웹 사이트에 대 한 기능을 활성화 합니다.<br /><br /> -WebApplication: 웹 응용 프로그램의 모든 웹 사이트에 대해 기능을 활성화 합니다.|
 |솔루션의 항목|기능에 추가할 수 있는 모든 SharePoint 항목입니다.|
 |기능의 항목|기능에 추가 된 SharePoint 프로젝트 항목입니다.|
 

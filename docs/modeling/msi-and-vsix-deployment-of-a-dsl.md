@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bf6082ec8860f7f50e758eb65a8471ece94103aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950413"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -90,7 +90,7 @@ ms.locfileid: "97363135"
 
    - DSL 탐색기에서 루트 노드를 클릭 하 고 속성 창에서 다음을 검토 합니다.
 
-       - 설명
+       - Description
 
        - 버전
 

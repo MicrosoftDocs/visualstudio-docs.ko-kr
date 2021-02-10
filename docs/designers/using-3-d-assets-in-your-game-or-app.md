@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9dff2cd6b762b2f81581963de6186cdd36e3ab
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 18294a9a6b6a0b967748d6a00817e4194e4cc32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948533"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>방법: 게임 또는 앱에서 3D 자산 사용
 
@@ -32,7 +32,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 ## <a name="configure-your-project"></a>프로젝트 구성
 
-3D 자산을 빌드의 일부로 배포하려면 Visual Studio에서 사용자가 배포하려는 자산의 종류를 알아야 합니다. Visual Studio에서는 이미 여러 일반 파일 형식을 알고 있지만 특정 종류의 앱에서만 3D 자산을 사용하기 때문에 Visual Studio에서는 프로젝트가 이러한 종류의 파일을 빌드할 것이라고 가정하지 않습니다. 각 자산 형식에 대해 제공되는 *빌드 사용자 지정* (Visual Studio에 여러 형식의 파일을 유용한 방식으로 처리하는 방법을 알려주는 파일)을 사용하여 사용자 앱에서 이러한 종류의 자산을 사용한다고 Visual Studio에 알릴 수 있습니다. 이러한 사용자 지정은 프로젝트 단위로 적용되므로 프로젝트에 적절한 사용자 지정을 추가하기만 하면 됩니다.
+3D 자산을 빌드의 일부로 배포하려면 Visual Studio에서 사용자가 배포하려는 자산의 종류를 알아야 합니다. Visual Studio에서는 이미 여러 일반 파일 형식을 알고 있지만 특정 종류의 앱에서만 3D 자산을 사용하기 때문에 Visual Studio에서는 프로젝트가 이러한 종류의 파일을 빌드할 것이라고 가정하지 않습니다. 각 자산 형식에 대해 제공되는 *빌드 사용자 지정*(Visual Studio에 여러 형식의 파일을 유용한 방식으로 처리하는 방법을 알려주는 파일)을 사용하여 사용자 앱에서 이러한 종류의 자산을 사용한다고 Visual Studio에 알릴 수 있습니다. 이러한 사용자 지정은 프로젝트 단위로 적용되므로 프로젝트에 적절한 사용자 지정을 추가하기만 하면 됩니다.
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>프로젝트에 빌드 사용자 지정을 추가하려면
 
@@ -73,9 +73,9 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 |Item Type|원본 파일 형식|출력 파일 형식|
 |---------------| - | - |
-|**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽( *.png* )<br /><br /> JPEG( *.jpg* , *.jpeg* , *.jpe* , *.jfif* )<br /><br /> Direct Draw Surface( *.dds* )<br /><br /> Graphics Interchange Format( *.gif* )<br /><br /> Bitmap( *.bmp* , *.dib* )<br /><br /> Tagged Image File Format( *.tif* , *.tiff* )<br /><br /> Targa( *.tga* )|DirectDraw Surface( *.dds* )|
-|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일( *.fbx* )<br /><br /> Collada DAE 파일( *.dae* )<br /><br /> Wavefront OBJ 파일( *.obj* )|3D 메시 파일( *.cmo* )|
-|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프( *.dgsl* )|컴파일된 셰이더 출력( *.cso* )|
+|**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽( *.png*)<br /><br /> JPEG( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface( *.dds*)<br /><br /> Graphics Interchange Format( *.gif*)<br /><br /> Bitmap( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format( *.tif*, *.tiff*)<br /><br /> Targa( *.tga*)|DirectDraw Surface( *.dds*)|
+|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일( *.fbx*)<br /><br /> Collada DAE 파일(*.dae*)<br /><br /> Wavefront OBJ 파일( *.obj*)|3D 메시 파일( *.cmo*)|
+|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프( *.dgsl*)|컴파일된 셰이더 출력( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>자산 콘텐츠 파이프라인 속성 구성
 
@@ -89,7 +89,7 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 2. **구성** 및 **플랫폼** 속성이 변경 내용을 적용하려는 값으로 설정되어 있는지 확인합니다.
 
-3. **구성 속성** 아래에서 콘텐츠 파이프라인 노드(예: 질감 및 이미지 자산에 대한 **이미지 콘텐츠 파이프라인** )를 선택한 다음, 속성 표에서 속성을 적절한 값으로 설정합니다. 예를 들어 빌드 시간에 질감 자산에 대한 MIP 맵을 생성하려면 **MIP 생성** 속성을 **예** 로 설정합니다.
+3. **구성 속성** 아래에서 콘텐츠 파이프라인 노드(예: 질감 및 이미지 자산에 대한 **이미지 콘텐츠 파이프라인**)를 선택한 다음, 속성 표에서 속성을 적절한 값으로 설정합니다. 예를 들어 빌드 시간에 질감 자산에 대한 MIP 맵을 생성하려면 **MIP 생성** 속성을 **예** 로 설정합니다.
 
 4. **확인** 단추를 선택합니다.
 

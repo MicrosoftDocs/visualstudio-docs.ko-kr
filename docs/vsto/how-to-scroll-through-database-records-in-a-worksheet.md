@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], scrolling records
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 536a3cca0337e8879e64cbc3ffc15b8411c201b6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e6d4decf3d314654c4417f71bd7a2bad358b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949729"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>방법: 워크시트에서 데이터베이스 레코드 스크롤
   다음 절차에서는 디자이너를 사용 하 여 Microsoft Office Excel 워크시트에 데이터베이스 테이블의 단일 필드를 표시 하 고 최종 사용자가 모든 레코드를 스크롤할 수 있는 컨트롤을 표시 하는 방법을 보여 줍니다.

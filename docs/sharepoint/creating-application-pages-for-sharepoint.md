@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949183"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint용 애플리케이션 페이지 만들기
   *응용 프로그램 페이지* 는 SharePoint 웹 사이트에서 사용할 수 있도록 설계 된 ASP.NET 웹 페이지입니다. 응용 프로그램 페이지는 특수 한 유형의 ASP.NET 페이지입니다. 응용 프로그램 페이지와 표준 ASP.NET 페이지의 주요 차이점은 응용 프로그램 페이지에 SharePoint 마스터 페이지와 병합 된 콘텐츠가 포함 된다는 것입니다. 마스터 페이지를 사용 하면 응용 프로그램 페이지에서 사이트의 다른 페이지와 동일한 모양 및 동작을 공유할 수 있습니다.
@@ -50,7 +50,7 @@ ms.locfileid: "94850444"
 
  Visual Studio는 프로젝트에 다음 파일을 추가 합니다.
 
-|파일|설명|
+|파일|Description|
 |----------|-----------------|
 |ASP.NET 페이지 파일 (*.aspx*)|페이지를 정의 하는 XML 태그를 포함 합니다.|
 |응용 프로그램 페이지 코드 파일|응용 프로그램 페이지의 코드를 포함 합니다. 이 파일에 대 한 이벤트를 처리 하는 코드를 추가 합니다.|

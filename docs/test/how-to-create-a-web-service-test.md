@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 2d368ca7cbe64f2c0e8c8dc5e18e5f3c7145274c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949846"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 

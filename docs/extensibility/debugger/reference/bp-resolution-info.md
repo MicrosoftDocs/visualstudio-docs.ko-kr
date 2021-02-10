@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d56acb3efecc794e38430511dfeb2a84cd62de0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949599"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
 코드 중단점 또는 데이터 중단점에 대 한 바인딩된 중단점 정보를 설명 합니다.
@@ -45,7 +45,7 @@ public struct BP_RESOLUTION_INFO {
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwFields`\
 입력 하는 필드를 지정 하는 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 열거형의 플래그 컬렉션입니다.
 
@@ -68,8 +68,8 @@ public struct BP_RESOLUTION_INFO {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)

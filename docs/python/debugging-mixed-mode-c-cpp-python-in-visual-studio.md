@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949326"
 ---
 # <a name="debug-python-and-c-together"></a>Python과 C++ 함께 디버그
 
@@ -41,20 +41,20 @@ Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Python 프로젝트에서 혼합 모드 디버깅 사용
 
-1. **솔루션 탐색기**에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고, **속성**, **디버그** 탭을 차례로 선택한 다음, **네이티브 코드 디버깅 사용**을 선택합니다. 이 옵션을 사용하면 모든 디버깅 세션에서 혼합 모드를 사용할 수 있습니다.
+1. **솔루션 탐색기** 에서 Python 프로젝트를 마우스 오른쪽 단추로 클릭하고, **속성**, **디버그** 탭을 차례로 선택한 다음, **네이티브 코드 디버깅 사용** 을 선택합니다. 이 옵션을 사용하면 모든 디버깅 세션에서 혼합 모드를 사용할 수 있습니다.
 
     ![네이티브 코드 디버깅 사용](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
     > 네이티브 코드 디버깅을 사용하면 프로그램이 완료되었을 때 일반적인 **계속하려면 아무 키나 누르세요.** 일시 중지를 제공하지 않고 Python 출력 창이 바로 사라질 수 있습니다. 강제로 일시 중지하려면 네이티브 코드 디버깅을 사용할 때 **디버그** 탭의 **실행** > **인터프리터 인수** 필드에 `-i` 옵션을 추가합니다. 이 인수는 코드가 마무리된 후에 Python 인터프리터를 대화형 모드로 전환하며, 이때 **Ctrl**+**Z** > **Enter** 키를 눌러 종료할 때까지 대기합니다.
 
-1. 혼합 모드 디버거를 기존 프로세스에 연결하는 경우(**디버그** > **프로세스에 연결**), **선택** 단추를 사용하여 **코드 형식 선택** 대화 상자를 엽니다. 그런 후 **다음 코드 형식 디버깅** 옵션을 설정하고 목록에서 **네이티브** 및 **Python**을 모두 선택합니다.
+1. 혼합 모드 디버거를 기존 프로세스에 연결하는 경우(**디버그** > **프로세스에 연결**), **선택** 단추를 사용하여 **코드 형식 선택** 대화 상자를 엽니다. 그런 후 **다음 코드 형식 디버깅** 옵션을 설정하고 목록에서 **네이티브** 및 **Python** 을 모두 선택합니다.
 
     ![네이티브 및 Python 코드 형식 선택](media/mixed-mode-debugging-code-type.png)
 
     코드 형식 설정은 영구적이므로 나중에 다른 프로세스에 연결할 때 혼합 모드 디버깅을 사용하지 않으려면 **Python** 코드 형식의 선택을 취소합니다.
 
-    **네이티브**에 추가하거나 대신하여 다른 코드 형식을 선택할 수 있습니다. 예를 들어 관리되는 애플리케이션에서 CPython을 호스트하고, 그 결과로 네이티브 확장 모듈을 사용하며, 이 세 가지를 모두 디버그하려는 경우 결합된 호출 스택 및 세 가지 모두의 런타임 간 단계별 실행을 포함한 통합된 디버깅 환경을 위해 **Python**, **네이티브** 및 **관리되는 애플리케이션**을 모두 검사할 수 있습니다.
+    **네이티브** 에 추가하거나 대신하여 다른 코드 형식을 선택할 수 있습니다. 예를 들어 관리되는 애플리케이션에서 CPython을 호스트하고, 그 결과로 네이티브 확장 모듈을 사용하며, 이 세 가지를 모두 디버그하려는 경우 결합된 호출 스택 및 세 가지 모두의 런타임 간 단계별 실행을 포함한 통합된 디버깅 환경을 위해 **Python**, **네이티브** 및 **관리되는 애플리케이션** 을 모두 검사할 수 있습니다.
 
 1. 처음으로 혼합 모드에서 디버깅을 시작하면 **Python 기호 필요** 대화 상자가 표시될 수 있습니다([혼합 모드 디버깅 기호](debugging-symbols-for-mixed-mode-c-cpp-python.md) 참조). 기호는 지정된 Python 환경에 한 번만 설치해야 합니다. Visual Studio 설치 관리자(Visual Studio 2017 이상)를 통해 Python 지원을 설치하면 기호가 자동으로 포함됩니다.
 
@@ -62,28 +62,28 @@ Visual Studio에서는 Python 및 네이티브 C/C++에 대한 통합된 동시 
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>C/C++ 프로젝트에서 혼합 모드 디버깅 사용
 
-Visual Studio(2017 15.5 이상 버전)는 C/C++ 프로젝트에서 혼합 모드 디버깅을 지원합니다(예: [python.org에 설명된 대로 다른 애플리케이션에 Python이 포함](https://docs.python.org/3/extending/embedding.html)되는 경우). 혼합 모드 디버깅을 사용하려면 **Python/네이티브 디버깅**을 실행하도록 C/C++ 프로젝트를 구성합니다.
+Visual Studio(2017 15.5 이상 버전)는 C/C++ 프로젝트에서 혼합 모드 디버깅을 지원합니다(예: [python.org에 설명된 대로 다른 애플리케이션에 Python이 포함](https://docs.python.org/3/extending/embedding.html)되는 경우). 혼합 모드 디버깅을 사용하려면 **Python/네이티브 디버깅** 을 실행하도록 C/C++ 프로젝트를 구성합니다.
 
-1. **솔루션 탐색기**에서 C/C++ 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
-1. **디버깅** 탭을 선택하고, **실행할 디버거**에서 **Python/네이티브 디버깅**을 선택하고, **확인**을 선택합니다.
+1. **솔루션 탐색기** 에서 C/C++ 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.
+1. **디버깅** 탭을 선택하고, **실행할 디버거** 에서 **Python/네이티브 디버깅** 을 선택하고, **확인** 을 선택합니다.
 
     ![C/C++ 프로젝트에서 Python/네이티브 디버거를 선택합니다.](media/mixed-mode-debugging-select-cpp-debugger.png)
 
 > [!Note]
-> **Python/네이티브 디버깅**을 선택할 수 있는 옵션이 없는 경우 먼저 VS 설치 관리자를 사용하여 **Python 네이티브 개발 도구**를 설치해야 합니다. 이 설치 관리자는 Python 개발 워크로드에서 옵션으로 찾을 수 있습니다. 자세한 내용은 [Windows의 Visual Studio에서 Python 지원 설치 방법](installing-python-support-in-visual-studio.md)을 참조하세요.
+> **Python/네이티브 디버깅** 을 선택할 수 있는 옵션이 없는 경우 먼저 VS 설치 관리자를 사용하여 **Python 네이티브 개발 도구** 를 설치해야 합니다. 이 설치 관리자는 Python 개발 워크로드에서 옵션으로 찾을 수 있습니다. 자세한 내용은 [Windows의 Visual Studio에서 Python 지원 설치 방법](installing-python-support-in-visual-studio.md)을 참조하세요.
 
-이 메서드를 사용하면 디버거를 연결할 수 없는 자식 *python.exe* 프로세스를 생성하기 때문에 *py.exe* 시작 관리자 자체를 디버그할 수 없습니다. 인수를 사용하여 *python.exe*를 직접 시작하려면 **Python/네이티브 디버깅** 속성에서 **명령** 옵션을 변경(이전 이미지에 표시)하여 전체 경로를 *python.exe*로 지정한 다음, **명령 인수**에서 인수를 지정합니다.
+이 메서드를 사용하면 디버거를 연결할 수 없는 자식 *python.exe* 프로세스를 생성하기 때문에 *py.exe* 시작 관리자 자체를 디버그할 수 없습니다. 인수를 사용하여 *python.exe* 를 직접 시작하려면 **Python/네이티브 디버깅** 속성에서 **명령** 옵션을 변경(이전 이미지에 표시)하여 전체 경로를 *python.exe* 로 지정한 다음, **명령 인수** 에서 인수를 지정합니다.
 
 ### <a name="attaching-the-mixed-mode-debugger"></a>혼합 모드 디버거 연결
 
 모든 이전 버전의 Visual Studio의 경우 C/C++ 프로젝트가 네이티브 디버거만을 사용하기 때문에 Visual Studio에서 Python 프로젝트를 시작할 때 직접 혼합 모드 디버깅을 사용할 수 있습니다. 그러나 디버거를 별도로 연결할 수 있습니다.
 
 1. 디버그하지 않고 C++ 프로젝트를 시작합니다(**디버그** > **디버깅하지 않고 시작** 또는 **Ctrl**+**F5**).
-1. **디버그** > **프로세스에 연결**을 선택합니다. 대화 상자가 나타나면 해당하는 프로세스를 선택한 다음, **선택** 단추를 사용하여 **코드 형식 선택** 대화 상자를 엽니다. 여기서 **Python**을 선택할 수 있습니다.
+1. **디버그** > **프로세스에 연결** 을 선택합니다. 대화 상자가 나타나면 해당하는 프로세스를 선택한 다음, **선택** 단추를 사용하여 **코드 형식 선택** 대화 상자를 엽니다. 여기서 **Python** 을 선택할 수 있습니다.
 
     ![디버거 연결 시 디버깅 형식으로 Python 선택](media/mixed-mode-debugging-attach-type.png)
 
-1. **확인**을 선택하여 이 대화 상자를 닫고 **연결**을 선택하여 디버거를 시작합니다.
+1. **확인** 을 선택하여 이 대화 상자를 닫고 **연결** 을 선택하여 디버거를 시작합니다.
 1. 디버거를 연결하기 전에 디버그할 Python 코드를 호출하지 않도록 C++ 앱에서 적합한 일시 중지 또는 지연을 도입해야 할 수 있습니다.
 
 ## <a name="mixed-mode-specific-features"></a>혼합 모드의 특정 기능

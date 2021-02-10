@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2f5065c3eafc9fb1cd9e36227a09bbf26ed321c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950210"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>스레드 및 프로세스 동시성 데이터 수집
 

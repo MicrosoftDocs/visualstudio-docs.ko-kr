@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949014"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint용 사이트 정의 만들기
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 SharePoint 사이트 정의 프로젝트를 사용하여 새 SharePoint 사이트의 기반 역할을 하는 ‘사이트 정의’를 만들 수 있습니다. 사이트 정의는 SharePoint 사이트의 모양 및 동작뿐만 아니라 기본 콘텐츠와 기능도 결정합니다. 정의에 미리 구성된 목록, 콘텐츠 형식, 이벤트 수신기, 이미지 및 기타 항목을 포함할 수 있습니다. SharePoint에는 블로그 등의 사이트 정의가 포함되어 있습니다. 블로그 사이트 정의를 기반으로 해서 만든 사이트에는 블로그 사이트에 필요한 목록, 웹 파트, 기타 항목이 포함됩니다.

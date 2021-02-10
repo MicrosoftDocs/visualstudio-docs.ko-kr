@@ -19,15 +19,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 28a5bc44b0f6fa04d32c574e9772369709736ddd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949079"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 

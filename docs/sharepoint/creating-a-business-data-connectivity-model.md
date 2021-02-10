@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, Business Data Connectivity service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8232847ce336ca559134aa1211a70057a1306faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850470"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949261"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 만들기
   Visual Studio를 사용 하 여 BDC (비즈니스 데이터 연결) 모델을 만들거나 기존 BDC 모델을 사용자 지정할 수 있습니다. 각 SharePoint 프로젝트는 하나의 모델만 포함할 수 있습니다. 자세한 내용은 [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)을 참조 하세요.
@@ -37,7 +37,7 @@ ms.locfileid: "94850470"
 
  Visual Studio에서 새 폴더에 다음 파일을 추가 합니다.
 
-|파일|설명|
+|파일|Description|
 |----------|-----------------|
 |모델 정의 파일|모델을 설명 하는 엔터티, 메서드, LOB (기간 업무) 시스템 개체 및 기타 메타 데이터를 정의 하는 XML을 포함 합니다.<br /><br /> BDC 디자이너, **Bdc 탐색기**, **Bdc 메서드 세부 정보** 창 및 **속성** 창을 사용 하 여이 파일의 메타 데이터를 수정 합니다.|
 |엔터티 서비스 코드 파일|기본 엔터티의 인스턴스를 검색, 업데이트 및 삭제 하는 메서드를 포함 합니다.|
@@ -64,7 +64,7 @@ ms.locfileid: "94850470"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md)|새 BDC 모델을 만드는 방법을 보여 줍니다.|
 |[방법: SharePoint 프로젝트에 기존 BDC 모델 파일 추가](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|기존 모델을 SharePoint 프로젝트로 가져오는 방법을 보여 줍니다.|

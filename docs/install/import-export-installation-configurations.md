@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Visual Studio installer
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4dcad21ce0a77e18bed0b077f731a509916e9e63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043622d08b5389db8bf4cce80450f62c070a0ace
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949469"
 ---
 # <a name="import-or-export-installation-configurations"></a>설치 구성 가져오기 또는 내보내기
 
@@ -44,15 +44,15 @@ ms.locfileid: "85418823"
 
 1. Visual Studio 설치 관리자를 엽니다.
 
-1. 제품 카드에서 **기타** 단추를 선택한 후 **구성 내보내기**를 선택합니다.
+1. 제품 카드에서 **기타** 단추를 선택한 후 **구성 내보내기** 를 선택합니다.
 
    ![Visual Studio 설치 관리자의 제품 카드에서 구성 내보내기](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. .vsconfig 파일을 저장할 위치로 이동하거나 위치를 찾아본 다음, **세부 정보 검토**를 선택합니다.
+1. .vsconfig 파일을 저장할 위치로 이동하거나 위치를 찾아본 다음, **세부 정보 검토** 를 선택합니다.
 
    ![Visual Studio 설치 관리자에서 구성 내보내기](../install/media/vs-2019/export-configuration-confirmation.png)
 
-1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **내보내기**를 선택합니다.
+1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **내보내기** 를 선택합니다.
 
 ## <a name="import-a-configuration"></a>구성 가져오기
 
@@ -60,11 +60,11 @@ ms.locfileid: "85418823"
 
 1. Visual Studio 설치 관리자를 엽니다.
 
-1. 제품 카드에서 **기타** 단추를 선택한 후 **구성 가져오기**를 선택합니다.
+1. 제품 카드에서 **기타** 단추를 선택한 후 **구성 가져오기** 를 선택합니다.
 
-1. 가져올 .vsconfig 파일을 찾은 다음, **세부 정보 검토**를 선택합니다.
+1. 가져올 .vsconfig 파일을 찾은 다음, **세부 정보 검토** 를 선택합니다.
 
-1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **닫기**를 선택합니다.
+1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **닫기** 를 선택합니다.
 
 ::: moniker range="vs-2019"
 
@@ -78,11 +78,11 @@ ms.locfileid: "85418823"
 
 1. 솔루션 파일을 마우스 오른쪽 단추로 클릭합니다.
 
-1. **추가** > **설치 구성 파일**을 선택합니다.
+1. **추가** > **설치 구성 파일** 을 선택합니다.
 
-1. .vsconfig 파일을 저장할 위치를 확인한 후 **세부 정보 검토**를 선택합니다.
+1. .vsconfig 파일을 저장할 위치를 확인한 후 **세부 정보 검토** 를 선택합니다.
 
-1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **내보내기**를 선택합니다.
+1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **내보내기** 를 선택합니다.
 
 ::: moniker-end
 

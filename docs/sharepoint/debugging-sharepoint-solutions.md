@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948949"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint 솔루션 디버깅
   디버거를 사용 하 여 SharePoint 솔루션을 디버그할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . 디버깅을 시작 하면에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트 파일을 sharepoint 서버에 배포한 다음 웹 브라우저에서 sharepoint 사이트의 인스턴스를 엽니다. 다음 섹션에서는에서 SharePoint 응용 프로그램을 디버깅 하는 방법을 설명 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -150,5 +150,5 @@ ms.locfileid: "94672862"
 
  다른 SharePoint 레지스트리 키에 대 한 자세한 내용은 [Visual Studio의 sharepoint 도구에 대 한 디버그 확장](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint 솔루션 문제 해결](../sharepoint/troubleshooting-sharepoint-solutions.md)

@@ -6,17 +6,17 @@ ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a7d0f5a683a627999076969dbc9077ba03d65208
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948559"
 ---
 # <a name="debugging-xslt"></a>XSLT 디버깅
 

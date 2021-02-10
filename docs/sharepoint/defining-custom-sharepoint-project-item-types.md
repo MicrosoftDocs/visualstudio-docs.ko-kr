@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 00ee9f41695078d8bea5daacf1c0ccfd392a64cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948871"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>사용자 지정 SharePoint 프로젝트 항목 형식 정의
   새 종류의 SharePoint 프로젝트 항목을 만들려는 경우 새 SharePoint 프로젝트 항목 형식을 정의 합니다. 예를 들어 SharePoint 사이트에 필드 또는 사용자 지정 작업을 추가 하기 위한 SharePoint 프로젝트 항목은 Visual Studio에 포함 되지 않습니다. 필드, 사용자 지정 작업 또는 다른 유형의 SharePoint 구성 요소를 만들기 위해 고유한 유형의 SharePoint 프로젝트 항목을 정의할 수 있습니다.
@@ -31,7 +31,7 @@ ms.locfileid: "94672836"
 
  사용자 지정 프로젝트 항목 형식을 정의 하는 경우 프로젝트 항목에 다음 기능을 추가할 수도 있습니다.
 
-- 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목은 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음 **Shift** F10 키를 선택 하 여 **솔루션 탐색기** 에서 프로젝트 항목의 바로 가기 메뉴를 열 때 나타납니다 + **F10** . 자세한 내용은 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)를 참조 하세요.
+- 프로젝트 항목에 바로 가기 메뉴 항목을 추가 합니다. 메뉴 항목은 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하거나 선택한 다음 **Shift** F10 키를 선택 하 여 **솔루션 탐색기** 에서 프로젝트 항목의 바로 가기 메뉴를 열 때 나타납니다 +  . 자세한 내용은 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)를 참조 하세요.
 
 - 프로젝트 항목에 사용자 지정 속성을 추가 합니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다. 자세한 내용은 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)를 참조 하세요.
 
@@ -42,7 +42,7 @@ ms.locfileid: "94672836"
 
  프로젝트 항목 형식의 특정 인스턴스에 액세스 하려면 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 메서드 구현에서 *projectItemTypeDefinition* 매개 변수의 이벤트 중 하나를 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> 합니다. 예를 들어 사용자 지정 형식의 프로젝트 항목이 프로젝트에 추가 되는 시기를 확인 하기 위해 이벤트를 처리 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> 합니다. 자세한 내용은 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

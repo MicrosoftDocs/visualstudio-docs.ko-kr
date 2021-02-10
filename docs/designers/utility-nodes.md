@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e4fac13be4528424bbb3a87f4c65dc606e2692
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: eceb17bf2e393d8526cff3b366fc2772d79607a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948520"
 ---
 # <a name="utility-nodes"></a>유틸리티 노드
 

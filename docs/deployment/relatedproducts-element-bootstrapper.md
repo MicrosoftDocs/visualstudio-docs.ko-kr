@@ -20,20 +20,20 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949690"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts &gt; 요소 (부트스트래퍼)
 `RelatedProducts`요소는 현재 제품에 종속 되거나 포함 된 다른 제품을 정의 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <RelatedProducts>
@@ -59,7 +59,7 @@ ms.locfileid: "94350571"
 
  `DependsOnProduct` 에는 다음과 같은 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Code`|요소의 특성에 지정 된 대로 포함 된 제품의 코드 이름 `ProductCode` `Product` 입니다. 자세한 내용은 [\<Product> 요소](../deployment/product-element-bootstrapper.md)를 참조하세요.|
 
@@ -71,7 +71,7 @@ ms.locfileid: "94350571"
 
  `IncludesProduct` 에는 다음과 같은 특성이 있습니다.
 
-|특성|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Code`|요소의 특성에 지정 된 대로 포함 된 제품의 코드 이름 `ProductCode` `Product` 입니다. 자세한 내용은 [\<Product> 요소](../deployment/product-element-bootstrapper.md)를 참조하세요.|
 
@@ -85,4 +85,4 @@ ms.locfileid: "94350571"
 ```
 
 ## <a name="see-also"></a>참고 항목
-- [\<Product> 요소인](../deployment/product-element-bootstrapper.md)
+- [\<Product> 요소](../deployment/product-element-bootstrapper.md)

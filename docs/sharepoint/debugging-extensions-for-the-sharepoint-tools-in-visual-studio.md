@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948910"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구 확장 디버그
   Visual Studio의 실험적 인스턴스나 일반 인스턴스에서 SharePoint 도구 확장을 디버그할 수 있습니다. 확장의 동작에 대 한 문제를 해결 해야 하는 경우 추가 오류 정보를 표시 하 고 Visual Studio에서 SharePoint 명령을 실행 하는 방법을 구성 하는 레지스트리 값을 수정할 수도 있습니다.
@@ -116,13 +116,13 @@ ms.locfileid: "94671222"
 
  SharePoint 도구의 확장 문제를 해결 하는 데 도움이 되도록 EnableDiagnostics 값을 만들고 설정할 수 있습니다. 다음 표에서는이 값에 대해 설명 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |EnableDiagnostics|진단 메시지를 **출력** 창에 표시할지 여부를 지정 하는 REG_DWORD입니다.<br /><br /> 진단 메시지를 표시 하려면이 값을 1로 설정 합니다. 메시지 표시를 중지 하려면이 값을 0으로 설정 하거나이 값을 삭제 합니다.<br /><br /> SharePoint 도구 확장에서 **출력** 창에 메시지를 쓰려면 sharepoint 프로젝트 서비스를 사용 합니다. 자세한 내용은 [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)을 참조 하세요.|
 
  확장에 SharePoint 명령이 포함 된 경우 명령 문제를 해결 하는 데 도움이 되도록 추가 값을 만들고 설정할 수 있습니다. 다음 표에서는 이러한 값에 대해 설명합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|디버거를 시작 하는 즉시 *vssphost4.exe* 에 연결할 수 있는 대화 상자를 표시할지 여부를 지정 하는 REG_DWORD입니다. 이 기능은 디버그 하려는 명령이 시작 된 직후에 vssphost.exe에서 실행 되 고 명령이 실행 되기 전에 디버거를 수동으로 연결할 시간이 충분 하지 않은 경우에 유용 합니다. 대화 상자를 표시 하려면 *vssphost4.exe* <xref:System.Diagnostics.Debugger.Break%2A> 시작 될 때 메서드를 호출 합니다.<br /><br /> 이 동작을 사용 하도록 설정 하려면이 값을 1로 설정 합니다. 이 동작을 해제 하려면이 값을 0으로 설정 하거나이 값을 삭제 합니다.<br /><br /> 이 값을 1로 설정 하는 경우 Visual Studio가 성공적으로 시작 되었음을 알리기 위해 *vssphost4.exe* 하기 전에 디버거를 연결할 시간이 충분 하도록 HostProcessStartupTimeout 값을 늘릴 수도 있습니다.|
 |ChannelOperationTimeout|Visual Studio에서 SharePoint 명령이 실행 될 때까지 대기 하는 시간 (초)을 지정 하는 REG_DWORD입니다. 명령이 시간 내에 실행 되지 않으면 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 이 throw 됩니다.<br /><br /> 기본값은 120초입니다.|
@@ -130,7 +130,7 @@ ms.locfileid: "94671222"
 |MaxReceivedMessageSize|Visual Studio와 *vssphost4.exe* 간에 전달 되는 WCF 메시지의 최대 허용 크기 (바이트)를 지정 하는 REG_DWORD입니다.<br /><br /> 기본값은 1048576 바이트 (1mb)입니다.|
 |MaxStringContentLength|Visual Studio와 *vssphost4.exe* 간에 전달 되는 문자열의 최대 허용 크기 (바이트)를 지정 하는 REG_DWORD입니다.<br /><br /> 기본값은 1048576 바이트 (1mb)입니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 SharePoint 도구 확장](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Visual Studio에 SharePoint 도구 확장 배포](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

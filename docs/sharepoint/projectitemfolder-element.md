@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950577"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 요소
   매핑된 폴더를 나타냅니다.
@@ -31,7 +31,7 @@ ms.locfileid: "95440794"
     Type = "Type of deployment for the mapped folder" />
 ```
 
-## <a name="type"></a>유형
+## <a name="type"></a>Type
  **ProjectItemFolderType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -42,14 +42,14 @@ ms.locfileid: "95440794"
 |attribute|Description|
 |---------------|-----------------|
 |**대상**|필수 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더에 상대적인, 매핑된 폴더가 해당 하는 SharePoint 설치의 폴더 경로입니다. 배포 루트 폴더는 **type** 특성으로 지정 된 배포 유형에 따라 결정 됩니다.<br /><br /> 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 경로** 및 **배포 루트** 속성에 대 한 설명을 참조 하세요.|
-|**형식**|필수 **xs: string** 특성입니다.<br /><br /> 매핑된 폴더의 배포 유형입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
+|**유형**|필수 **xs: string** 특성입니다.<br /><br /> 매핑된 폴더의 배포 유형입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint 프로젝트 항목을 나타냅니다. 이 요소는 *.spdata* 파일의 필수 루트 요소입니다.|
 

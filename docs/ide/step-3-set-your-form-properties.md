@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950733"
 ---
 # <a name="step-3-set-your-form-properties"></a>3단계: 양식 속성 설정
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480618"
 1. 폼을 선택한 후 **속성** 창에서 **텍스트** 속성을 찾습니다. 목록을 정렬 방법에 따라 아래로 스크롤해야 할 수도 있습니다. **텍스트** 를 선택하고 **사진 뷰어** 를 입력한 다음, **Enter** 키를 선택합니다.  이제 양식의 제목 표시줄에 **사진 뷰어** 라는 텍스트가 표시되고 **속성** 창이 다음 스크린샷과 같이 표시됩니다.
 
     ![속성 창](../ide/media/express_edittextproperty.png)<br>
-   **_속성_* 창
+   ***속성** 창
 
    > [!NOTE]
    > 속성은 **항목별** 뷰 또는 **사전순** 뷰로 정렬할 수 있는데, **속성** 창에 있는 단추를 사용하면 이러한 두 뷰 간에 전환할 수 있습니다. 이 자습서에서는 **사전순** 뷰에서 속성을 더 쉽게 찾을 수 있습니다.
@@ -58,7 +58,7 @@ ms.locfileid: "96480618"
    - 도구 모음에서 **디버깅 시작** 단추를 선택하면 다음과 같이 표시됩니다.
 
       ![디버깅 도구 모음 시작 단추](../ide/media/express_icondebug.png)<br>
-     **_디버깅 시작_* 도구 모음 단추
+     ***디버깅 시작** 도구 모음 단추
 
      이전과 마찬가지로 IDE에 의해 앱이 빌드되고 실행되며 창이 나타납니다.
 

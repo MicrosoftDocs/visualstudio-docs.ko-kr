@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948845"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>비즈니스 데이터 연결 모델 디자인
   모델 파일에 엔터티 및 메서드를 추가 하 여 BDC (비즈니스 데이터 연결) 서비스용 모델을 개발할 수 있습니다. 엔터티는 데이터 필드의 컬렉션을 설명 합니다. 예를 들어 엔터티는 데이터베이스의 테이블을 나타낼 수 있습니다. 메서드는 엔터티가 나타내는 데이터를 추가, 삭제 또는 업데이트 하는 등의 작업을 수행 합니다. 자세한 내용은 [SharePoint에 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)을 참조 하세요.
@@ -33,7 +33,7 @@ ms.locfileid: "94672654"
 ## <a name="add-methods"></a>메서드 추가
  BDC 서비스는 사용자가 모델을 기반으로 하는 목록 또는 웹 파트에서 정보를 보거나 추가, 업데이트 또는 삭제할 때 모델의 메서드를 호출 합니다. 사용자가 수행할 수 있는 각 작업에 대해 모델에 메서드를 추가 해야 합니다. **BDC 메서드 세부 정보** 창에서 5 가지 기본 메서드 형식 중 하나를 선택 하 여 메서드를 만듭니다. 다음 표에서는 BDC 모델의 5 가지 기본 방법에 대해 설명 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |Finder|엔터티 인스턴스의 컬렉션을 반환 합니다. 사용자가 목록 또는 웹 파트를 열 때 호출 됩니다. 자세한 내용은 [방법: Finder 메서드 추가](../sharepoint/how-to-add-a-finder-method.md)를 참조 하세요.|
 |SpecificFinder|특정 엔터티 인스턴스를 반환 합니다. 사용자가 목록의 특정 항목에 대 한 세부 정보를 볼 때 호출 됩니다. 자세한 내용은 [방법: 특정 Finder 메서드 추가](../sharepoint/how-to-add-a-specific-finder-method.md)를 참조 하세요.|
@@ -73,7 +73,7 @@ ms.locfileid: "94672654"
 ## <a name="validate-the-model"></a>모델의 유효성 검사
  개발 하는 동안 모델의 유효성을 검사할 수 있습니다. Visual Studio는 모델이 예상 대로 동작 하지 않을 수 있는 문제를 식별 합니다. 이러한 문제는 Visual Studio **오류 목록** 에 나타납니다.
 
- BDC 디자이너에 대 한 바로 가기 메뉴를 열고 **유효성 검사** 를 선택 하 여 모델의 유효성을 검사할 수 있습니다. 모델에 오류가 포함 되어 있으면 **오류 목록** 에 표시 됩니다. 목록에서 오류를 두 번 클릭하여 오류가 포함된 코드로 빠르게 커서를 이동할 수 있습니다. 또는 **f8** 키를 **Shift** + **F8** 반복 해 서 선택 하 여 목록에 있는 오류를 앞으로 또는 뒤로 이동할 수 있습니다.
+ BDC 디자이너에 대 한 바로 가기 메뉴를 열고 **유효성 검사** 를 선택 하 여 모델의 유효성을 검사할 수 있습니다. 모델에 오류가 포함 되어 있으면 **오류 목록** 에 표시 됩니다. 목록에서 오류를 두 번 클릭하여 오류가 포함된 코드로 빠르게 커서를 이동할 수 있습니다. 또는 **f8** 키를  +  반복 해 서 선택 하 여 목록에 있는 오류를 앞으로 또는 뒤로 이동할 수 있습니다.
 
  모델 규칙을 위반 하는 경우 유효성 검사 오류가 발생할 수 있습니다. 예를 들어 형식 설명자의 **IsCollection** 속성이 **true** 로 설정 되어 있지만 자식 형식 설명자가 없는 경우 유효성 검사 오류가 표시 됩니다. Visual Studio **오류 목록** 에 표시 되는 일부 오류를 이해 하려면 BDC 모델의 규칙을 참조 해야 할 수 있습니다. BDC 모델의 규칙에 대 한 자세한 내용은 [BDCMetadata 스키마](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))를 참조 하세요.
 
@@ -113,7 +113,7 @@ ms.locfileid: "94672654"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)|BDC를 위한 모델을 시각적으로 디자인 하는 데 사용할 수 있는 도구에 대해 설명 합니다.|
 |[방법: 모델에 엔터티 추가](../sharepoint/how-to-add-an-entity-to-a-model.md)|외부 콘텐츠 형식 또는 엔터티를 모델에 추가 하는 방법을 보여 줍니다.|

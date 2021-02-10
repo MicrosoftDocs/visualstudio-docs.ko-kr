@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 69a7c6a472023dd8bd41b087b3749e5451382a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950308"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 작업
 

@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950512"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 요소 (Visual Studio에서 Office 개발)
   네임 스페이스의 **Appaddin** 요소는 `vstov4` VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <appAddin
@@ -43,11 +43,11 @@ ms.locfileid: "96844753"
 
  **Appaddin** 요소에는 다음과 같은 특성이 있습니다.
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
-|**애플리케이션**|필수 요소. Microsoft Office 애플리케이션을 식별합니다. 값은 Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word 중 하나입니다.|
+|**애플리케이션**|필수 사항입니다. Microsoft Office 애플리케이션을 식별합니다. 값은 Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word 중 하나입니다.|
 |**loadBehavior**|선택 사항입니다. 기본적으로이 값을로 설정 하 여 **loadBehavior** 를 사용 하도록 설정 합니다. 디버깅을 위해서는 이 값을 2로 설정하여 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)의 LoadBehavior Values 이라는 표를 참조 하세요.|
-|**keyName**|필수 요소. 이 값은 애플리케이션에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)을 참조 하세요.|
+|**keyName**|필수 사항입니다. 이 값은 애플리케이션에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)을 참조 하세요.|
 
  **Appaddin** 요소에는 다음과 같은 자식 요소가 있습니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "96844753"
 
 ## <a name="vsto-add-in-example"></a>VSTO 추가 기능 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 코드 예제에서는를 사용 하 여 배포 된 Outlook 솔루션의 **Appaddin** 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
