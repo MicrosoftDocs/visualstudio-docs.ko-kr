@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 840fde5943cb2249bdf73cc92ca15878ae4e3890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943456"
 ---
 # <a name="breakpoint-errors"></a>중단점 오류
 다음은 중단점에서 코드에 바인딩하려고 하지만 실패 하는 경우의 프로세스에 대 한 설명입니다.

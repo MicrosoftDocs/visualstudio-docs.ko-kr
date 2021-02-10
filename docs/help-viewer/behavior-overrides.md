@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: f9c9a950156f29bda68a134af2eb299b3431445f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944292"
 ---
 # <a name="help-content-manager-overrides"></a>도움말 콘텐츠 관리자 재정의
 
@@ -26,7 +26,7 @@ Visual Studio IDE에서 도움말 뷰어와 도움말 관련 기능의 기본 �
 
 2. 별도의 줄에서 아래 표에 설명된 레지스트리 키 값의 일부 또는 전체를 추가합니다(예: `"UseOnlineHelp"=dword:00000001`).
 
-3. 파일을 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition\>\Common7\IDE\CommonExtensions*에 복사합니다.
+3. 파일을 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition\>\Common7\IDE\CommonExtensions* 에 복사합니다.
 
 4. 개발자 명령 프롬프트에서 `devenv /updateconfiguration`를 실행합니다.
 
@@ -62,7 +62,7 @@ Visual Studio IDE에서 도움말 뷰어와 도움말 관련 기능의 기본 �
 |BITS 작업 우선 순위 재정의|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (on a 64-bit machine)\Microsoft\Help\v2.3|BITSPriority|**전경**, **높음**, **보통** 또는 **낮음**|
 |네트워크 공유의 로컬 콘텐츠 저장소 가리키기|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도움말 뷰어 관리자 가이드](../help-viewer/administrator-guide.md)
 - [도움말 콘텐츠 관리자에 대 한 명령줄 인수](../help-viewer/command-line-arguments.md)

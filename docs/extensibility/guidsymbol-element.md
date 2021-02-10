@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943396"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 요소
 `GuidSymbol`요소는 메뉴, 그룹 또는 명령을 나타내는 guid: ID 쌍의 guid를 포함 합니다. 이 ID는 `IDSymbol` 요소의 요소에서 가져옵니다 `GuidSymbol` . 요소에는 `GuidSymbol` `name` 특성에 포함 된 GUID에 대 한 친숙 한 이름을 제공 하는 특성이 있습니다 `value` .
@@ -39,18 +39,18 @@ ms.locfileid: "96994240"
 
 |attribute|Description|
 |---------------|-----------------|
-|name|필수 요소. GUID 기호의 이름입니다.|
-|값|필수 요소. GUID 기호의 GUID입니다.|
+|name|필수 사항입니다. GUID 기호의 이름입니다.|
+|value|필수 사항입니다. GUID 기호의 GUID입니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[IDSymbol 요소](../extensibility/idsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 ID를 포함 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[기호 요소](../extensibility/symbols-element.md)|`GuidSymbol` *Vsct* 파일의 요소를 그룹화 합니다.|
 

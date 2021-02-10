@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942804"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 *데코레이터* 는 DSL (도메인별 언어)의 셰이프에 나타나는 아이콘이 나 텍스트 줄입니다. 모델의 속성 상태에 따라 데코레이터를 표시 하 고 사라지게 할 수 있습니다. 예를 들어 사람을 나타내는 도형에서 사용자의 성별, 자녀 수 등에 따라 다른 아이콘이 표시 될 수 있습니다.

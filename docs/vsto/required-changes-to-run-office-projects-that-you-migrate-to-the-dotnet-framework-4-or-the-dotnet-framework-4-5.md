@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4fbe3c311e734cc076ab898544470c3e27e91795
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943720"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>.NET 4.5로 마이그레이션된 Office 프로젝트에 필요한 변경 내용
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7a6b8bbce5e25bd1de68aa8b8eafd02f741408f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944214"
 ---
 # 방법: 목차에서 항목 찾기
 
@@ -47,11 +47,11 @@ ms.locfileid: "91879010"
 
 1. 항목을 봅니다.
 
-2. 도구 모음에서 **콘텐츠에 항목 표시** 단추를 클릭 하거나 **ctrl** + **S**를 누릅니다.
+2. 도구 모음에서 **콘텐츠에 항목 표시** 단추를 클릭 하거나 **ctrl** + **S** 를 누릅니다.
 
      **콘텐츠** 탭이 열리고 목차에서 항목의 위치가 표시됩니다.
 
-## 참조
+## 참고 항목
 
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944136"
 ---
 # <a name="how-to-search-for-topics"></a>방법: 항목 검색
 
 전체 텍스트 검색 기능을 사용하여 특정 단어를 포함하는 모든 항목을 찾을 수 있습니다. 또한, 와일드카드 식, 논리 연산자 및 고급 검색 연산자를 사용하여 검색을 구체화하고 사용자 지정할 수도 있습니다.
 
-**검색** 탭을 열려면 **도움말 뷰어** 창에서 **검색** 탭을 선택 하거나 키보드 사용자 인 경우 **Ctrl** + **E**를 선택 합니다.
+**검색** 탭을 열려면 **도움말 뷰어** 창에서 **검색** 탭을 선택 하거나 키보드 사용자 인 경우 **Ctrl** + **E** 를 선택 합니다.
 
 ## <a name="to-perform-a-full-text-search"></a>전체 텍스트 검색을 수행하려면
 
@@ -31,7 +31,7 @@ ms.locfileid: "91878997"
     > [!NOTE]
     > **뷰어 옵션** 대화 상자에서 한번에 표시할 최대 검색 결과 수 등의 추가 기본 설정과 기본 로캘이 영어가 아닌 경우 영어 콘텐츠를 포함할지 지정할 수 있습니다.
 
-3. **Enter** 키를 선택 합니다.
+3. **Enter** 키를 선택합니다.
 
      검색은 기본적으로 최대 200개의 결과를 반환하며 검색 결과 영역에 표시합니다. 각 결과에 대한 추가 버전 정보가 콘텐츠에 따라 나타날 수 있습니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "91878997"
 
 자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [논리 및 고급 운영자](../help-viewer/logical-operators-search-expressions.md)
 - [방법: 인덱스에서 항목 찾기](../help-viewer/find-topics-index.md)

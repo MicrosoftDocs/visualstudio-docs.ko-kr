@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944305"
 ---
 # <a name="help-viewer-administrator-guide"></a>도움말 뷰어 관리자 가이드
 
@@ -60,7 +60,7 @@ ms.locfileid: "91878893"
 
 #### <a name="to-install-english-content-from-the-internet"></a>인터넷에서 영어 콘텐츠를 설치하려면
 
-1. **시작**, **실행**을 차례로 선택합니다.
+1. **시작** 을 선택한 다음 **실행** 을 선택 합니다.
 
 2. 다음과 같이 입력합니다.
 
@@ -95,11 +95,11 @@ ms.locfileid: "91878893"
 
 2. Visual Studio 문서 집합으로 이동합니다.
 
-3. 각 하위 항목 옆의 **제거**를 선택합니다.
+3. 각 하위 항목 옆의 **제거** 를 선택합니다.
 
-4. **업데이트**를 선택하여 제거합니다.
+4. **업데이트** 를 선택하여 제거합니다.
 
-5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* 으로 이동 하 여 폴더에 파일 *catalogType.xml*만 포함 되어 있는지 확인 합니다.
+5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* 으로 이동 하 여 폴더에 파일 *catalogType.xml* 만 포함 되어 있는지 확인 합니다.
 
    이전에 설치한 로컬 Visual Studio 도움말 콘텐츠를 모두 제거하면 기본 콘텐츠 집합을 다운로드할 준비가 됩니다.
 
@@ -107,9 +107,9 @@ ms.locfileid: "91878893"
 
 1. 도움말 뷰어에서 **콘텐츠 관리** 탭을 선택합니다.
 
-2. **권장 설명서** 또는 **사용 가능한 설명서** 아래에서 다운로드하려는 설명서 집합으로 이동한 다음 **추가**를 선택합니다.
+2. **권장 설명서** 또는 **사용 가능한 설명서** 아래에서 다운로드하려는 설명서 집합으로 이동한 다음 **추가** 를 선택합니다.
 
-3. **업데이트**를 선택합니다.
+3. **업데이트** 를 선택합니다.
 
 이제 클라이언트 컴퓨터에 배포할 수 있도록 콘텐츠를 패키지해야 합니다.
 
@@ -117,7 +117,7 @@ ms.locfileid: "91878893"
 
 1. 나중에 배포하기 위해 콘텐츠를 복사할 폴더를 만듭니다. 예: *\myserver\vshelp*.
 
-2. 관리자 권한으로 *cmd.exe*를 엽니다.
+2. 관리자 권한으로 *cmd.exe* 를 엽니다.
 
 3. 1단계에서 만든 폴더로 이동합니다.
 
@@ -125,15 +125,15 @@ ms.locfileid: "91878893"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     예: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>콘텐츠 배포
 
 1. 네트워크 공유를 만들고 해당 위치에 도움말 콘텐츠를 복사합니다.
 
-     예를 들어 *\myserver\vshelp* 의 콘텐츠를 * \\ \myserver\VSHelp*로 복사 합니다.
+     예를 들어 *\myserver\vshelp* 의 콘텐츠를 *\\ \myserver\VSHelp* 로 복사 합니다.
 
-2. 도움말 콘텐츠에 대한 배포 스크립트를 포함할 *.bat* 파일을 만듭니다. 클라이언트에서 푸시의 일부로 삭제될 파일에 대한 읽기 잠금이 있을 수 있으므로 업데이트를 푸시하기 전에 클라이언트를 종료해야 합니다. 예를 들면 다음과 같습니다.
+2. 도움말 콘텐츠에 대한 배포 스크립트를 포함할 *.bat* 파일을 만듭니다. 클라이언트에서 푸시의 일부로 삭제될 파일에 대한 읽기 잠금이 있을 수 있으므로 업데이트를 푸시하기 전에 클라이언트를 종료해야 합니다. 예를 들어:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -143,7 +143,7 @@ ms.locfileid: "91878893"
 
 3. 도움말 콘텐츠를 설치 하려는 로컬 컴퓨터에서 *.bat* 파일을 실행 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [도움말 콘텐츠 관리자에 대 한 명령줄 인수](../help-viewer/command-line-arguments.md)
 - [도움말 콘텐츠 관리자 재정의](../help-viewer/behavior-overrides.md)

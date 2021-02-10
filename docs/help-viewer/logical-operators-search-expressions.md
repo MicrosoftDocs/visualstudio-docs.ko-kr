@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944084"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>검색 식의 논리 및 고급 연산자
 
-논리 연산자 및 고급 검색 연산자를 사용 하 여 **도움말 뷰어에서**도움말 콘텐츠의 검색을 구체화할 수 있습니다.
+논리 연산자 및 고급 검색 연산자를 사용 하 여 **도움말 뷰어에서** 도움말 콘텐츠의 검색을 구체화할 수 있습니다.
 
 ## <a name="logical-operators"></a>논리 연산자
 
@@ -68,7 +68,7 @@ ms.locfileid: "91878932"
 > [!NOTE]
 > `code:` 연산자는 일반적으로 코드로 표시되는 콘텐츠와는 반대로, 프로그래밍 언어 레이블로 표시되는 콘텐츠만 찾습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: 항목 검색](../help-viewer/find-topics.md)
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

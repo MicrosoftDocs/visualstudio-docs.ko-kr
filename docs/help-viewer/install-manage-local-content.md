@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 14091ecd5adc76762901c02c582c845aa0dbd513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944123"
 ---
 # <a name="install-and-manage-local-content"></a>로컬 콘텐츠 설치 및 관리
 
@@ -105,7 +105,7 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 설치된 콘텐츠의 업데이트를 사용할 수 있을 때 상태 표시줄에 알림이 표시됩니다.
 
 > [!IMPORTANT]
-> **도움말 뷰어**에서 온라인 업데이트를 자동으로 확인하도록 하려면 **뷰어 옵션** 대화 상자를 연 다음, **온라인으로 콘텐츠 업데이트 확인** 확인란을 선택해야 합니다.
+> **도움말 뷰어** 에서 온라인 업데이트를 자동으로 확인하도록 하려면 **뷰어 옵션** 대화 상자를 연 다음, **온라인으로 콘텐츠 업데이트 확인** 확인란을 선택해야 합니다.
 
 ### <a name="to-update-local-content"></a>로컬 콘텐츠를 업데이트하려면
 
@@ -122,7 +122,7 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 ### <a name="to-move-local-content"></a>로컬 콘텐츠를 이동하려면
 
-1. **콘텐츠 관리** 탭의 **로컬 저장소 경로**에서 **이동** 단추를 선택합니다.
+1. **콘텐츠 관리** 탭의 **로컬 저장소 경로** 에서 **이동** 단추를 선택합니다.
 
      **콘텐츠 이동** 대화 상자가 열립니다.
 
@@ -130,6 +130,6 @@ Microsoft 도움말 뷰어를 사용하여 소프트웨어 개발 요구 사항�
 
 3. 콘텐츠가 이동되면 **닫기** 단추를 선택합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)

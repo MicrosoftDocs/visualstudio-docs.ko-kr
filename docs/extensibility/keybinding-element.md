@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943350"
 ---
 # <a name="keybinding-element"></a>KeyBinding 요소
 KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정 합니다.
@@ -38,10 +38,10 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정 합니다.
 
 |attribute|Description|
 |---------------|-----------------|
-|guid|필수 요소.|
-|id|필수 요소.|
-|편집기|필수 요소. 편집기 GUID는이 바로 가기 키가 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|
-|key1|필수 요소. 유효한 값은 모든 typable 영숫자를 포함 하 고 0x 및 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)앞에 오는 두 자리 16 진수 값을 포함 합니다.|
+|guid|필수 사항입니다.|
+|id|필수 사항입니다.|
+|편집기|필수 사항입니다. 편집기 GUID는이 바로 가기 키가 활성화 될 편집 컨텍스트를 나타냅니다. 전역 바인딩 범위 값은 "guidVSStd97"입니다.|
+|key1|필수 사항입니다. 유효한 값은 모든 typable 영숫자를 포함 하 고 0x 및 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)앞에 오는 두 자리 16 진수 값을 포함 합니다.|
 |mod1|선택 사항입니다. 공백으로 구분 된 **Ctrl**, **Alt** 및 **Shift** 의 조합입니다.|
 |key2|선택 사항입니다. 유효한 값은 모든 typable 영숫자를 포함 하 고 0x 및 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)앞에 오는 두 자리 16 진수 값을 포함 합니다.|
 |mod2|선택 사항입니다. 공백으로 구분 된 **Ctrl**, **Alt** 및 **Shift** 의 조합입니다.|
@@ -52,7 +52,7 @@ KeyBinding 요소는 명령에 대 한 바로 가기 키를 지정 합니다.
 
 |요소|Description|
 |-------------|-----------------|
-|부모||
+|Parent||
 |Annotation||
 
 ### <a name="parent-elements"></a>부모 요소

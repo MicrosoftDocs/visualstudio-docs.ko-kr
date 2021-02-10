@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944357"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>도움말 뷰어의 접근성 기능
 Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 이 항목에는 Microsoft 도움말 뷰어를 다양한 범위의 기능을 가진 사람들이 액세스할 수 있도록 도와주는 기능, 제품 및 서비스에 대한 정보가 포함되어 있습니다.
@@ -34,7 +34,7 @@ Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할
 ## <a name="help-viewer-position"></a>도움말 뷰어 위치
 제목 표시줄을 다른 위치로 끌어서 도움말 뷰어의 위치를 변경할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Microsoft 도움말 뷰어](../help-viewer/overview.md)
 - [바로 가기 키 (도움말 뷰어)](../help-viewer/shortcut-keys.md)

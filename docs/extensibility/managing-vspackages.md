@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2b0e3b95ee3c715eb21028b6c156b7a62ea82d41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943220"
 ---
 # <a name="manage-vspackages"></a>VSPackage 관리
 대부분의 경우 프로젝트 및 항목 템플릿이 자동으로 패키지를 등록 하 고 로드 하므로 Vspackage 관리에 대해 걱정할 필요가 없습니다. 그러나 일부 경우에는 패키지를 관리 하기 위해 약간 더 배워야 할 수도 있습니다.

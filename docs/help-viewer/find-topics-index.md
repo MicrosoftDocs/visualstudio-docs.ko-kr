@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944226"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>도움말 뷰어 인덱스를 사용하여 항목 찾기
 
@@ -36,7 +36,7 @@ ms.locfileid: "91879023"
     탭의 위쪽에서 필터 단추를 선택하면 지정한 텍스트가 포함된 모든 항목을 표시하거나 지정한 텍스트로 시작하는 항목만 표시할 수 있습니다.
 
     > [!NOTE]
-    > 필터 단추가 테두리가 있는 어두운 배경에 표시되는 경우 항목에 지정한 텍스트가 _포함_되어 있어야 합니다. 배경과 테두리가 표시되지 않는 경우 항목이 지정한 텍스트로 _시작_해야 합니다.
+    > 필터 단추가 테두리가 있는 어두운 배경에 표시되는 경우 항목에 지정한 텍스트가 _포함_ 되어 있어야 합니다. 배경과 테두리가 표시되지 않는 경우 항목이 지정한 텍스트로 _시작_ 해야 합니다.
 
 - 색인을 스크롤하고 키워드를 선택합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "91879023"
 
     예를 들어 “빌드”라는 용어를 입력한 경우 대신 “만들기”를 입력해 보세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [방법: TOC에서 항목 찾기](../help-viewer/find-topics-toc.md)
 - [방법: 항목 검색](../help-viewer/find-topics.md)

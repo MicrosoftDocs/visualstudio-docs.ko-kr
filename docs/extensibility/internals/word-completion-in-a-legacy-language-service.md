@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943370"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 단어 완성
 단어 완성은 부분적으로 형식화 된 단어에서 누락 된 문자를 채웁니다. 완료 문자가 하나만 있는 경우 완료 문자를 입력 하면 단어가 완료 됩니다. 부분 단어가 둘 이상의 가능성과 일치 하는 경우 가능한 완성 목록이 표시 됩니다. 완성 문자는 식별자에 사용 되지 않는 모든 문자일 수 있습니다.

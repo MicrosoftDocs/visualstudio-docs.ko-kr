@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944097"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft 도움말 뷰어
 
@@ -41,7 +41,7 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 
 - 항목을 보고 책갈피를 설정하고 인쇄합니다.
 
-도움말 뷰어를 설치하려면 [Microsoft 도움말 뷰어 설치](../help-viewer/installation.md)를 참조하세요. 온라인 대신 도움말 뷰어에서 도움말 항목을 읽기 시작하려면 Visual Studio에서 **도움말** 메뉴로 이동하고 **도움말 기본 설정 지정** > **도움말 뷰어에서 시작**을 차례로 선택합니다.
+도움말 뷰어를 설치하려면 [Microsoft 도움말 뷰어 설치](../help-viewer/installation.md)를 참조하세요. 온라인 대신 도움말 뷰어에서 도움말 항목을 읽기 시작하려면 Visual Studio에서 **도움말** 메뉴로 이동하고 **도움말 기본 설정 지정** > **도움말 뷰어에서 시작** 을 차례로 선택합니다.
 
 > [!TIP]
 > 인터넷에 연결되어 있지 않을 때 볼 수 있도록 로컬로 콘텐츠를 다운로드하는 또 다른 방법은 PDF 버전을 다운로드하는 것입니다. Docs.microsoft.com의 여러 설명서 집합에는 TOC(목차)의 맨 아래에 있는 링크가 포함되어 있어 해당 TOC에 대한 모든 문서를 포함하는 PDF 파일을 다운로드할 수 있습니다.
@@ -54,7 +54,7 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 
 ### <a name="navigation-tabs"></a>탐색 탭
 
-|탭|설명|
+|탭|Description|
 |---|-----------|
 |콘텐츠|설치된 콘텐츠를 계층 구조로 표시(목차) 조건을 지정하여 나타나는 제목을 필터링할 수 있습니다.|
 |인덱스|인덱싱된 용어를 사전순으로 표시합니다. 인덱스를 검색하고 조건을 지정하여 항목을 필터링할 수 있으며 인덱스 항목이 지정한 텍스트를 포함하거나 지정한 텍스트로 시작하게 할 수 있습니다.|
@@ -92,7 +92,7 @@ Microsoft 도움말 뷰어를 사용하여 로컬 컴퓨터에서 다양한 제�
 
 - 오른쪽의 작은 삼각형은 항목 탭 및 **콘텐츠 관리** 탭을 비롯 한 탭의 목록을 엽니다. 탭 이름을 선택 하 여 활성 탭으로 지정할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Microsoft 도움말 뷰어 설치](../help-viewer/installation.md)
 - [도움말 뷰어 관리자 가이드](../help-viewer/administrator-guide.md)
