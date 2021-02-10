@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d371384d70c6a6a7a57620839eca2c41c292d0b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922048"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>성능 도구 문제 해결
 프로파일링 도구를 사용할 때는 다음 문제 중 하나가 발생할 수 있습니다.

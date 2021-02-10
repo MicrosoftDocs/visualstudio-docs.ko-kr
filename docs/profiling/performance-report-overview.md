@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 2e775c91759326407918befba3dd4bb52e19dd0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922266"
 ---
 # <a name="performance-report-overview"></a>성능 보고서 개요
 Visual Studio Team System Development Edition IDE(통합 개발 환경)의 **성능 보고서** 창에서 성능 세션의 프로파일링 데이터를 볼 수 있습니다. 프로파일링 데이터는 .vsps 및 .vsp 파일에 저장됩니다. 보고서 뷰 창에서는 애플리케이션 성능 문제를 확인하고 분석할 수 있습니다.

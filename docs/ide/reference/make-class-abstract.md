@@ -4,18 +4,18 @@ ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8bfcaa7117249ceffbaed706ac420c5250c02089
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7b44c8331c10bc0cf2f87e19094a77c0cbec251a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919420"
 ---
 # <a name="make-class-abstract"></a>클래스를 추상으로 설정
 

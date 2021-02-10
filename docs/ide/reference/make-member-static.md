@@ -6,17 +6,17 @@ ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e663d59f47728bc4a7c84290ee0e89ae453f23ae
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 5478e85d89d4ea44d34e0a5ae9170aaffb3836f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919446"
 ---
 # <a name="make-member-static"></a>멤버를 정적으로 설정
 

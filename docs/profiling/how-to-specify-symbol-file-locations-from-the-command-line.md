@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9a801ccf7493675e49a3cde6ef91675e5f1189
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1ea3eff001c49f4d7546985f1357126dc87717bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920720"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
 함수 이름, 줄 번호 등의 기호 정보를 표시하려면 VSPerfReport 명령줄 도구가 프로파일링된 구성 요소 및 Windows 시스템 파일의 기호 파일(.*pdb*)에 액세스할 수 있어야 합니다. 기호 파일은 구성 요소가 컴파일될 때 만들어집니다. 자세한 내용은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요. VSPerfReport는 다음 위치에서 기호 파일을 자동으로 검색합니다.

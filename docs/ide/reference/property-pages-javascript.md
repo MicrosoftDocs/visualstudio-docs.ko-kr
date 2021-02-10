@@ -16,15 +16,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 30c16e1c76e6f4e12d822f68f2a9530290c15de5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919463"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
 
@@ -42,11 +42,11 @@ ms.locfileid: "91947806"
 
  **Configuration**
 
-표시하거나 수정할 구성 설정을 지정합니다. 설정에는 **디버그** (기본값), **릴리스** , **모든 구성** 또는 사용자 정의 구성이 있습니다. 자세한 내용은 [방법: Visual Studio에서 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+표시하거나 수정할 구성 설정을 지정합니다. 설정에는 **디버그**(기본값), **릴리스**, **모든 구성** 또는 사용자 정의 구성이 있습니다. 자세한 내용은 [방법: Visual Studio에서 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
  **플랫폼**
 
-표시하거나 수정할 플랫폼 설정을 지정합니다. 설정에는 **임의 CPU** ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱의 경우 기본값), **x64** , **ARM** , **x86** 또는 사용자 정의 플랫폼이 포함됩니다. 자세한 내용은 [방법: Visual Studio에서 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+표시하거나 수정할 플랫폼 설정을 지정합니다. 설정에는 **임의 CPU**([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 앱의 경우 기본값), **x64**, **ARM**, **x86** 또는 사용자 정의 플랫폼이 포함됩니다. 자세한 내용은 [방법: Visual Studio에서 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
 ## <a name="general-page"></a>일반 페이지
 
@@ -59,7 +59,7 @@ ms.locfileid: "91947806"
 
 프로젝트 구성에 대한 출력 파일의 위치를 지정합니다. 상대 경로입니다. 절대 경로를 입력하면 프로젝트에 절대 경로가 저장됩니다. 기본 경로는 bin\Debug입니다.
 
-단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. **디버그** ,  > 디버깅 시작 **을 클릭하면** (또는 **F5** 키 누르기) 지정한 **출력 경로** 와 관계없이 빌드가 디버그 위치에 배치됩니다. 그러나 **빌드** 메뉴의 **솔루션 빌드** 명령을 사용하면 지정한 위치에 빌드가 배치됩니다. 고급 빌드 구성을 사용하도록 설정하려면 메뉴 모음에서 **도구** > **옵션** 을 선택합니다. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 을 확장하고 **일반** 을 선택한 다음 **고급 빌드 구성 표시** 확인란의 선택을 취소합니다. 이렇게 하면 모든 구성 값 및 디버그 버전을 빌드하는지 릴리스 버전을 빌드하는지 여부를 수동으로 제어할 수 있게 됩니다.
+단순화된 빌드 구성을 사용하면 프로젝트 시스템에서 디버그 버전을 빌드할지 아니면 릴리스 버전을 빌드할지 결정합니다. **디버그**,  > 디버깅 시작 **을 클릭하면**(또는 **F5** 키 누르기) 지정한 **출력 경로** 와 관계없이 빌드가 디버그 위치에 배치됩니다. 그러나 **빌드** 메뉴의 **솔루션 빌드** 명령을 사용하면 지정한 위치에 빌드가 배치됩니다. 고급 빌드 구성을 사용하도록 설정하려면 메뉴 모음에서 **도구** > **옵션** 을 선택합니다. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 을 확장하고 **일반** 을 선택한 다음 **고급 빌드 구성 표시** 확인란의 선택을 취소합니다. 이렇게 하면 모든 구성 값 및 디버그 버전을 빌드하는지 릴리스 버전을 빌드하는지 여부를 수동으로 제어할 수 있게 됩니다.
 
  **기본 언어**
 

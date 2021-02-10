@@ -5,18 +5,18 @@ ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: f93c5232f852e1390eac9e2ebb57235abc5e1f6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919701"
 ---
 # <a name="convert-typeof-to-nameof"></a>`typeof`를 `nameof`로 변환
 

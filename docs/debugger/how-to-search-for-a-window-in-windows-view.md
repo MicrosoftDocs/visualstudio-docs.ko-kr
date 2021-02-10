@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c0051a17d3a2360776f48cee2bd7f1d2f11a2492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920098"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>방법: 창 뷰에서 창 검색
 창 뷰에서 핸들, 캡션 텍스트, 클래스 또는 캡션 텍스트와 클래스의 조합을 검색 조건으로 사용하여 특정 창을 검색할 수 있습니다. 검색의 초기 방향을 지정할 수도 있습니다. 대화 상자의 필드에는 창 트리에서 선택한 창의 특성이 표시됩니다.

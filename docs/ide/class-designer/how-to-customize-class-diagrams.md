@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 768c61ab525d03a7b9a1a80481b84b492d6bd0c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919643"
 ---
 # <a name="how-to-customize-class-diagrams"></a>방법: 클래스 다이어그램 사용자 지정
 

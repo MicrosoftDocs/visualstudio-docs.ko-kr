@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920621"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 확장 사용
 
@@ -23,7 +23,7 @@ ms.locfileid: "88801583"
 
 Cookiecutter에는 Python 3.3 이상(32비트 또는 64비트) 또는 Anaconda 3 4.2 이상(32비트 또는 64비트)이 필요합니다. 적합한 Python 인터프리터를 사용할 수 없는 경우 Visual Studio에서 경고가 표시됩니다. Visual Studio를 실행하는 중에 Python 인터프리터를 설치하는 경우 Cookiecutter 도구 모음에서 **홈** 단추를 선택하여 새로 설치된 인터프리터를 검색합니다. (일반적으로 환경에 대한 자세한 내용은 [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요.)
 
-설치되면 **보기** > **Cookiecutter 탐색기**를 선택하여 다음 창을 엽니다.
+설치되면 **보기** > **Cookiecutter 탐색기** 를 선택하여 다음 창을 엽니다.
 
 ![Cookiecutter 주 창](media/cookiecutter-overview.png)
 
@@ -37,14 +37,14 @@ Cookiecutter 홈페이지에는 선택하여 다음과 같은 그룹으로 구�
 
 | 그룹 | Description |
 | --- | --- |
-| **설치됨** | 로컬 컴퓨터에 설치된 템플릿입니다. 온라인 템플릿을 사용하면 리포지토리가 *~/.cookiecutters*의 하위 폴더에 자동으로 복제됩니다. **Delete** 키를 눌러 선택한 설치된 템플릿을 삭제할 수 있습니다. |
+| **설치됨** | 로컬 컴퓨터에 설치된 템플릿입니다. 온라인 템플릿을 사용하면 리포지토리가 *~/.cookiecutters* 의 하위 폴더에 자동으로 복제됩니다. **Delete** 키를 눌러 선택한 설치된 템플릿을 삭제할 수 있습니다. |
 | **권장** | 권장 피드에서 로드된 템플릿입니다. 기본 피드는 Microsoft에서 큐레이트합니다. 피드 사용자 지정에 대한 자세한 내용은 [Cookiecutter 옵션](#cookiecutter-options)을 참조하세요. |
-| **GitHub** | cookiecutter 키워드에 대한 GitHub 검색 결과입니다. GitHub의 결과는 페이지가 매겨져 다시 표시됩니다. 더 많은 결과를 사용할 수 있는 경우 목록 끝에 **추가 로드**가 표시되어 있습니다. |
+| **GitHub** | cookiecutter 키워드에 대한 GitHub 검색 결과입니다. GitHub의 결과는 페이지가 매겨져 다시 표시됩니다. 더 많은 결과를 사용할 수 있는 경우 목록 끝에 **추가 로드** 가 표시되어 있습니다. |
 | **Custom** | 검색 창에 사용자 지정 검색 위치를 입력하면 이 그룹에 표시됩니다. GitHub 리포지토리의 전체 경로 또는 로컬 디스크의 폴더에 대한 전체 경로를 입력할 수 있습니다. |
 
 ### <a name="cloning"></a>복제 비교
 
-템플릿을 선택한 후 **다음**을 선택하면 Cookiecutter에서 작업할 로컬 복사본을 만듭니다.
+템플릿을 선택한 후 **다음** 을 선택하면 Cookiecutter에서 작업할 로컬 복사본을 만듭니다.
 
 **권장** 또는 **GitHub** 그룹에서 템플릿을 선택하거나 검색 상자에 사용자 지정 URL을 입력하고 템플릿을 선택하면 해당 템플릿이 복제되어 로컬 컴퓨터에 설치됩니다. 해당 템플릿이 Visual Studio의 이전 세션에 설치되는 경우 이전 버전이 자동으로 삭제되고 최신 버전이 복제됩니다.
 
@@ -67,15 +67,15 @@ Cookiecutter 홈페이지에는 선택하여 다음과 같은 그룹으로 구�
 
 ### <a name="create"></a>생성
 
-옵션을 설정했으면 **만들기**를 선택하여 코드를 생성합니다(출력 폴더가 비어 있지 않은 경우 경고가 표시됨). 템플릿의 출력에 익숙하고 파일 덮어쓰기에 신경 쓰지 않는다면 경고를 해제할 수 있습니다. 그렇지 않으면 **취소**를 선택하고, 빈 출력 폴더를 지정한 다음, 이 출력 폴더에 만든 파일을 수동으로 복사합니다.
+옵션을 설정했으면 **만들기** 를 선택하여 코드를 생성합니다(출력 폴더가 비어 있지 않은 경우 경고가 표시됨). 템플릿의 출력에 익숙하고 파일 덮어쓰기에 신경 쓰지 않는다면 경고를 해제할 수 있습니다. 그렇지 않으면 **취소** 를 선택하고, 빈 출력 폴더를 지정한 다음, 이 출력 폴더에 만든 파일을 수동으로 복사합니다.
 
-파일이 성공적으로 만들어졌으면 Cookiecutter의 **솔루션 탐색기**에서 파일을 여는 옵션을 제공합니다.
+파일이 성공적으로 만들어졌으면 Cookiecutter의 **솔루션 탐색기** 에서 파일을 여는 옵션을 제공합니다.
 
 ![솔루션 탐색기 명령을 보여 주는 Cookiecutter](media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Cookiecutter 옵션
 
-Cookiecutter 옵션은 **도구** > **옵션** > **Cookiecutter**를 통해 사용할 수 있습니다.
+Cookiecutter 옵션은 **도구** > **옵션** > **Cookiecutter** 를 통해 사용할 수 있습니다.
 
 ![Cookiecutter 옵션](media/cookiecutter-tools-options.png)
 
@@ -131,11 +131,11 @@ Visual Studio와 관련된 *cookiecutter.json* 파일에 추가 메타데이터�
 
 ### <a name="run-visual-studio-tasks"></a>Visual Studio 작업 실행
 
-Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 생성한 후에 임의의 Python 코드를 실행할 수 있습니다. 이 기능은 유연하지만 Visual Studio에 쉽게 액세스할 수 없습니다.
+Cookiecutter에는 *생성 후 후크* 라는 기능이 있으므로 파일을 생성한 후에 임의의 Python 코드를 실행할 수 있습니다. 이 기능은 유연하지만 Visual Studio에 쉽게 액세스할 수 없습니다.
 
 예를 들어 Visual Studio 편집기 또는 웹 브라우저에서 파일을 열거나, 가상 환경을 만들고 패키지 요구 사항을 설치하도록 사용자에게 요청하는 Visual Studio UI를 트리거할 수 있습니다.
 
-이러한 시나리오를 허용하기 위해 Visual Studio에서는 사용자가 **솔루션 탐색기**에서 생성된 파일을 열거나 파일이 기존 프로젝트에 추가된 후에 실행할 명령을 설명하는 확장 메타데이터를 *cookiecutter.json*에서 찾습니다. (사용자는 다시 한번 템플릿 옵션에서 **완성 시 추가 작업 실행**을 선택 취소하여 작업 실행을 옵트아웃(opt out)할 수 있습니다.)
+이러한 시나리오를 허용하기 위해 Visual Studio에서는 사용자가 **솔루션 탐색기** 에서 생성된 파일을 열거나 파일이 기존 프로젝트에 추가된 후에 실행할 명령을 설명하는 확장 메타데이터를 *cookiecutter.json* 에서 찾습니다. (사용자는 다시 한번 템플릿 옵션에서 **완성 시 추가 작업 실행** 을 선택 취소하여 작업 실행을 옵트아웃(opt out)할 수 있습니다.)
 
 예제:
 
@@ -187,13 +187,13 @@ Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 �
 
 인수는 다른 Cookiecutter 변수를 참조할 수 있습니다. 위의 예제에서 내부 `_output_folder_path` 변수는 생성된 파일의 절대 경로를 구성하는 데 사용됩니다.
 
-`Python.InstallProjectRequirements` 명령은 기존 프로젝트에 파일을 추가할 때만 작동합니다. 이 제한은 명령이 **솔루션 탐색기**에서 Python 프로젝트로 처리되고, **솔루션 탐색기** - **폴더 보기**에서 메시지를 받을 프로젝트가 없기 때문에 발생합니다. 향후 릴리스에서는 이 제한 사항을 해결하고 전반적으로 더 나은 **폴더 보기**를 지원하겠습니다.
+`Python.InstallProjectRequirements` 명령은 기존 프로젝트에 파일을 추가할 때만 작동합니다. 이 제한은 명령이 **솔루션 탐색기** 에서 Python 프로젝트로 처리되고, **솔루션 탐색기** - **폴더 보기** 에서 메시지를 받을 프로젝트가 없기 때문에 발생합니다. 향후 릴리스에서는 이 제한 사항을 해결하고 전반적으로 더 나은 **폴더 보기** 를 지원하겠습니다.
 
 ## <a name="troubleshooting"></a>문제 해결
 
 ### <a name="error-loading-template"></a>템플릿 로드 중 오류
 
-일부 템플릿이 *cookiecutter.json*에서 부울 등의 잘못된 데이터 형식을 사용 중일 수 있습니다. 템플릿 정보 창에서 **문제** 링크를 선택하여 이러한 인스턴스를 템플릿 작성자에게 보고합니다.
+일부 템플릿이 *cookiecutter.json* 에서 부울 등의 잘못된 데이터 형식을 사용 중일 수 있습니다. 템플릿 정보 창에서 **문제** 링크를 선택하여 이러한 인스턴스를 템플릿 작성자에게 보고합니다.
 
 ### <a name="hook-script-failed"></a>후크 스크립트 실패
 
@@ -201,7 +201,7 @@ Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 �
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows에서 지원하지 않는 후크 스크립트
 
-게시 스크립트가 *.sh*인 경우 Windows 컴퓨터의 애플리케이션과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 애플리케이션을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
+게시 스크립트가 *.sh* 인 경우 Windows 컴퓨터의 애플리케이션과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 애플리케이션을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
 
 ### <a name="templates-with-known-issues"></a>알려진 문제점이 있는 템플릿
 
@@ -212,7 +212,7 @@ Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 �
 
 로드 실패:
 
-- **chrisdev/wagtail-cookiecutter-foundation**(*cookiecutter.json*에서 부울 형식 사용)
+- **chrisdev/wagtail-cookiecutter-foundation**(*cookiecutter.json* 에서 부울 형식 사용)
 - **quintoandar/cookiecutter-android**(템플릿 폴더 없음)
 
 실행 실패:

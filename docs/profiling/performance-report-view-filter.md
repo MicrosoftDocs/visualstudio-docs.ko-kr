@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: da6501602c9ffd12750643e50d230ef15c0f922c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922274"
 ---
 # <a name="performance-report-view-filter"></a>성능 보고서 뷰 필터
 **프로파일러 보고서 뷰 필터** 창은 **성능 보고서** 창 위쪽에 있습니다. 이 창이 표시되지 않으면 **필터 표시** 단추를 클릭합니다.

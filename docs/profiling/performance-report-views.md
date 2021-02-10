@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d40ce1ff5f66b2d04425d116d84dc7aa40571b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922233"
 ---
 # <a name="performance-report-views"></a>성능 보고서 뷰
 이 섹션에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다. 프로파일링 데이터 파일의 뷰는 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE(통합 개발 환경)에 표시됩니다. 보고서는 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 통해 생성됩니다.

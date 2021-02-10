@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: db5a8857a6b6610fdc60b05158379ef69995ddf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72289710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920750"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업
 
@@ -26,7 +26,7 @@ Visual Studio는 GitHub 및 Azure Repos 등의 서비스에서 로컬 Git 리포
 
 이 아티클에서는 기존 프로젝트에서 로컬 Git 리포지터리를 만들고 Visual Studio의 Git 관련 기능 중 일부에 익숙해지기 위한 기본적인 개요를 제공합니다.
 
-1. [이전 단계](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)의 프로젝트와 같은 Visual Studio에서 열린 프로젝트를 사용하여 솔루션을 마우스 오른쪽 단추로 클릭하고 **소스 제어에 솔루션 추가**를 선택합니다. Visual Studio에서는 프로젝트 코드를 포함하는 로컬 Git 리포지토리를 만듭니다.
+1. [이전 단계](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)의 프로젝트와 같은 Visual Studio에서 열린 프로젝트를 사용하여 솔루션을 마우스 오른쪽 단추로 클릭하고 **소스 제어에 솔루션 추가** 를 선택합니다. Visual Studio에서는 프로젝트 코드를 포함하는 로컬 Git 리포지토리를 만듭니다.
 
 1. Visual Studio가 Git 리포지토리에서 프로젝트가 관리되고 있는지 검색하는 경우 Git 관련 컨트롤은 Visual Studio 창의 오른쪽 아래 모서리에 나타납니다. 컨트롤은 보류 중인 커밋, 변경 내용, 리포지토리의 이름 및 분기를 표시합니다. 추가 정보를 보려면 마우스로 컨트롤을 가리킵니다.
 
@@ -48,9 +48,9 @@ Visual Studio는 GitHub 및 Azure Repos 등의 서비스에서 로컬 Git 리포
 
     ![분기를 보여 주는 Visual Studio의 팀 탐색기](media/working-with-git-04.png)
 
-1. 리포지토리 이름(이전 이미지에서 **CosineWave**)을 포함한 Git 컨트롤을 선택하면 **팀 탐색기**는 다른 리포지토리로 신속하고 완전하게 전환할 수 있는 **연결** 인터페이스를 보여 줍니다.
+1. 리포지토리 이름(이전 이미지에서 **CosineWave**)을 포함한 Git 컨트롤을 선택하면 **팀 탐색기** 는 다른 리포지토리로 신속하고 완전하게 전환할 수 있는 **연결** 인터페이스를 보여 줍니다.
 
-1. 로컬 저장소를 사용하는 경우 커밋된 변경 내용은 리포지토리로 직접 이동합니다. 원격 리포지토리에 연결된 경우 **팀 탐색기**에서 드롭다운 헤더를 선택하고 **동기화**를 선택하여 **동기화** 섹션으로 전환한 다음, 표시되는 **풀** 및 **페치** 명령으로 작업합니다.
+1. 로컬 저장소를 사용하는 경우 커밋된 변경 내용은 리포지토리로 직접 이동합니다. 원격 리포지토리에 연결된 경우 **팀 탐색기** 에서 드롭다운 헤더를 선택하고 **동기화** 를 선택하여 **동기화** 섹션으로 전환한 다음, 표시되는 **풀** 및 **페치** 명령으로 작업합니다.
 
 ## <a name="go-deeper"></a>자세히 알아보기
 
