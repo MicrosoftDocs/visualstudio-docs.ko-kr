@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525113"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971832"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 추가 기능 프로그램
   VSTO 추가 기능을 만들어 Microsoft Office 애플리케이션을 확장하는 경우 프로젝트의 `ThisAddIn` 클래스에 대해 직접 코드를 작성합니다. 이 클래스를 사용하여 Microsoft Office 호스트 애플리케이션의 개체 모델 액세스, 애플리케이션의 UI(사용자 인터페이스) 사용자 지정, 다른 Office 솔루션에 VSTO 추가 기능의 개체 표시 등의 작업을 수행할 수 있습니다.
@@ -66,7 +66,7 @@ ms.locfileid: "97525113"
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|[애플리케이션](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
+|Microsoft Office PowerPoint|[응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
 |Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
@@ -118,7 +118,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>다른 작업에 사용할 ThisAddIn 멤버
  다음 표에서는 다른 일반적인 작업에 대해 설명하고 작업을 수행하는 데 사용할 수 있는 `ThisAddIn` 클래스의 멤버를 보여 줍니다.
 
-|작업|사용할 멤버|
+|Task|사용할 멤버|
 |----------|-------------------|
 |VSTO 추가 기능이 로드될 때 코드를 실행하여 VSTO 추가 기능을 초기화합니다.|`ThisAddIn_Startup` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Startup> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.|
 |VSTO 추가 기능이 언로드되기 전에 코드를 실행하여 VSTO 추가 기능에서 사용된 리소스를 정리합니다.|`ThisAddIn_Shutdown` 메서드에 코드를 추가합니다. <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트에 대한 기본 이벤트 처리기입니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요. **참고:**  Outlook에서는 기본적으로 `ThisAddIn_Shutdown` VSTO 추가 기능이 언로드될 때 이벤트 처리기가 항상 호출 되지는 않습니다. 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.|

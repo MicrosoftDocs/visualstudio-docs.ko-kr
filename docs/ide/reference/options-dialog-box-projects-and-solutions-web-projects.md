@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: f2ca34a1576543c360809346a69ffa3208790bb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96044013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971091"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 

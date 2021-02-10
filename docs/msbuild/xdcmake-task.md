@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62d1717acee9b8935f176bc10191f044b28a660d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4a867146d48b5ba6c4bfb2ac33b45c505b6f6c37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971052"
 ---
 # <a name="xdcmake-task"></a>XDCMake 작업
 
-XML 문서 주석( *.xdc* ) 파일을 *.xml* 파일에 병합하는 XML 문서 도구( *xdcmake.exe* )를 래핑합니다.
+XML 문서 주석(*.xdc*) 파일을 *.xml* 파일에 병합하는 XML 문서 도구(*xdcmake.exe*)를 래핑합니다.
 
- C++ 소스 코드에 문서 주석을 제공하고 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 컴파일러 옵션을 사용하여 컴파일할 때 *.xdc* 파일이 생성됩니다. 자세한 내용은 *xdcmake.exe* 에 대한 [XDCMake 참조](/cpp/build/reference/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages) 및 명령줄 도움말 옵션( **/?** )을 참조하세요.
+ C++ 소스 코드에 문서 주석을 제공하고 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 컴파일러 옵션을 사용하여 컴파일할 때 *.xdc* 파일이 생성됩니다. 자세한 내용은 *xdcmake.exe* 에 대한 [XDCMake 참조](/cpp/build/reference/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages) 및 명령줄 도움말 옵션(**/?**)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -45,8 +45,8 @@ XML 문서 주석( *.xdc* ) 파일을 *.xml* 파일에 병합하는 XML 문서 �
 |매개 변수|Description|
 |---------------|-----------------|
 |**AdditionalDocumentFile**|선택적 **String[]** 매개 변수입니다.<br /><br /> 병합할 추가 *.xdc* 파일을 하나 이상 지정합니다.<br /><br /> 자세한 내용은 [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages)의 **추가 문서 파일** 설명을 참조하세요. *xdcmake.exe* 에 대한 **/old** 및 **/Fs** 명령줄 옵션도 참조하세요.|
-|**AdditionalOptions**|선택적 **String** 매개 변수입니다.<br /><br /> 명령줄에 지정된 것처럼 옵션 목록입니다. 예를 들어 /\<option1> /\<option2> /\<option#>을 참조하십시오. 이 매개 변수를 사용하여 다른 **XDCMake** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.<br /><br /> 자세한 내용은 *xdcmake.exe* 에 대한 [XDCMake 참조](/cpp/build/reference/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages) 및 명령줄 도움말( **/?** )을 참조하세요.|
-|**DocumentLibraryDependencies**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true` 및 현재 프로젝트가 솔루션의 정적 라이브러리( *.lib* ) 프로젝트에 대한 종속성을 가진 경우 그 라이브러리 프로젝트의 *.xdc* 파일은 현재 프로젝트의 *.xml* 파일 출력에 포함됩니다.<br /><br /> 자세한 내용은 [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages)의 **문서 라이브러리 종속성** 설명을 참조하세요.|
+|**AdditionalOptions**|선택적 **String** 매개 변수입니다.<br /><br /> 명령줄에 지정된 것처럼 옵션 목록입니다. 예를 들어 /\<option1> /\<option2> /\<option#>을 참조하십시오. 이 매개 변수를 사용하여 다른 **XDCMake** 작업 매개 변수로 표현되지 않는 옵션을 지정합니다.<br /><br /> 자세한 내용은 *xdcmake.exe* 에 대한 [XDCMake 참조](/cpp/build/reference/xdcmake-reference), [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages) 및 명령줄 도움말(**/?**)을 참조하세요.|
+|**DocumentLibraryDependencies**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true` 및 현재 프로젝트가 솔루션의 정적 라이브러리( *.lib*) 프로젝트에 대한 종속성을 가진 경우 그 라이브러리 프로젝트의 *.xdc* 파일은 현재 프로젝트의 *.xml* 파일 출력에 포함됩니다.<br /><br /> 자세한 내용은 [XML 문서 생성기 도구 속성 페이지](/cpp/build/reference/xml-document-generator-tool-property-pages)의 **문서 라이브러리 종속성** 설명을 참조하세요.|
 |**OutputFile**|선택적 **String** 매개 변수입니다.<br /><br /> 기본 출력 파일 이름을 재정의합니다. 기본 이름은 첫 번째로 처리되는 *.xdc* 파일의 이름에서 파생됩니다.<br /><br /> 자세한 내용은 [XDCMake 참조](/cpp/build/reference/xdcmake-reference)의 **/out:\<filename>** 옵션을 참조하세요. *xdcmake.exe* 에 대한 **/old** 및 **/Fo** 명령줄 옵션도 참조하세요.|
 |**ProjectName**|선택적 **String** 매개 변수입니다.<br /><br /> 현재 프로젝트의 이름.|
 |**SlashOld**|선택적 **Boolean** 매개 변수입니다.<br /><br /> `true`이면 추가 *xdcmake.exe* 옵션이 활성화됩니다.<br /><br /> 자세한 내용은 *xdcmake.exe* 에 대한 **/old** 명령줄 옵션을 참조하세요.|
