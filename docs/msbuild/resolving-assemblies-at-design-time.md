@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937929"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
 

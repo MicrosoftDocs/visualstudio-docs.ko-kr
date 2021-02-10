@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941557"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -38,7 +38,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 네트워크 레이아웃을 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 그러면 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 통해 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
-**업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
+**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
+   **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -150,7 +150,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
   * 루트 인증서: **Microsoft Root Certificate Authority**
     * 필수 사항입니다. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
 
-**업데이트** : Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서는 .p12 대신 .cer 파일에 저장됩니다.
+**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서는 .p12 대신 .cer 파일에 저장됩니다.
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치�
     * 이 목록에서 필요한 중간 인증서를 확인합니다.<br/>
 
 2. **파일** 을 클릭한 다음, **스냅인 추가/제거** 를 선택합니다.<br/>
-  a. **인증서** 를 두 번 클릭하고, **내 사용자 계정** 을 선택하고, **마침** , **확인** 을 차례로 클릭합니다.<br/>
+  a. **인증서** 를 두 번 클릭하고, **내 사용자 계정** 을 선택하고, **마침**, **확인** 을 차례로 클릭합니다.<br/>
   b. **인증서 – 현재 사용자** 를 확장합니다.<br/>
   다. **중간 인증 기관** 을 확장하고 **인증서** 를 선택합니다.<br/>
     * 이 목록에서 필요한 중간 인증서를 확인합니다.<br/>

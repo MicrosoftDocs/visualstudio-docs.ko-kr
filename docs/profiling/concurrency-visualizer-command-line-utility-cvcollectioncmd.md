@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 47da8ae405dc24cad5bab4c98384ad5db5a97ef2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941179"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
 동시성 시각화 도우미 명령줄 유틸리티(*CVCollectionCmd.exe*)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.

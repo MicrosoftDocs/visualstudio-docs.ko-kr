@@ -11,15 +11,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4656e0769075be26db5bd06108093a49fb5e2af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941543"
 ---
 # <a name="c-code-snippets"></a>C# 코드 조각
 

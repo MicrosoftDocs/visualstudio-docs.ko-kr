@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 60a216c99e21d76efd4d348fea0d06d4f016db5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948246"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 함수
 표식 계열을 해제합니다. 해제한 후에 표식 계열 개체를 사용하지 마세요. 해당 개체를 사용하는 경우 애플리케이션 작동이 중단될 수 있습니다. 표식 계열을 해제하지 못하면 메모리 누수가 발생합니다.

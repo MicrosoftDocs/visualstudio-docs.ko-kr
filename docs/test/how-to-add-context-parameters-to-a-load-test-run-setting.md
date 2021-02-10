@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 732f8e0cb88443533f74e843dde04ec977f24ebd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942336"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 

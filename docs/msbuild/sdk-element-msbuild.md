@@ -16,15 +16,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937903"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 요소(MSBuild)
 
@@ -45,7 +45,7 @@ MSBuild 프로젝트 SDK를 참조합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 프로젝트 SDK의 이름입니다.|
 |`Version`|선택적 특성입니다.<br /><br /> 프로젝트 SDK의 버전입니다.|
@@ -56,7 +56,7 @@ MSBuild 프로젝트 SDK를 참조합니다.
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 

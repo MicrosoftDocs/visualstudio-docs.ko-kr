@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947851"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>자습서: Windows Forms 디자이너 시작
 
@@ -221,9 +221,9 @@ DemoCalculator 컨트롤에는 여러 Windows Forms 컨트롤이 포함되어 �
 
    - sixButton 컨트롤 텍스트 속성을 **6** 으로 변경
 
-   - multiplicationButton 컨트롤 텍스트 속성을 * *\** _(별표)로 변경
+   - multiplicationButton 컨트롤 텍스트 속성을 **\*** (별표)로 변경
 
-   - oneButton 컨트롤 텍스트 속성을 _ *1**로 변경
+   - oneButton 컨트롤 텍스트 속성을 **1** 로 변경
 
    - twoButton 컨트롤 텍스트 속성을 **2** 로 변경
 

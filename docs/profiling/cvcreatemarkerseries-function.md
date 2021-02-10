@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 8915724c39a656917d6565c60ddc7dfbb0737564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941036"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 함수
 지정된 공급자에 대한 표식 계열을 만듭니다.

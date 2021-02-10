@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, build process overview
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4374e6763933e2da3e6a11c5609b76e3341e1050
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939671"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild가 프로젝트를 빌드하는 방식
 
@@ -40,7 +40,7 @@ MSBuild 인스턴스는 한 프로젝트 또는 솔루션의 일부로서 여러
 
 Visual Studio에서 프로젝트가 빌드되는 경우, MSBuild를 직접 호출하는 경우(MSBuild 실행 파일을 통해) 또는 MSBuild 개체 모델을 사용하여 빌드를 시작하는 경우 사이에는 몇 가지 중요한 차이점이 있습니다. Visual Studio는 Visual Studio 빌드에 대한 프로젝트 빌드 순서를 관리합니다. 개별 프로젝트 수준 에서만 MSBuild를 호출하고, 이 경우 MSBuild의 기능에 큰 영향을 주는 두 가지 부울 속성(`BuildingInsideVisualStudio`, `BuildProjectReferences`)을 설정합니다. 각 프로젝트 내에서 MSBuild를 통해 호출되는 경우와 동일하게 실행이 발생하지만 참조된 프로젝트에서 차이가 발생합니다. MSBuild에서는 참조된 프로젝트가 필요한 경우 빌드가 실제로 발생합니다. 즉, 작업 및 도구를 실행하고 출력을 생성합니다. Visual Studio 빌드가 참조된 프로젝트를 찾으면 MSBuild는 참조된 프로젝트의 예상 출력만 반환합니다. 이를 통해 Visual Studio가 다른 프로젝트의 빌드를 제어할 수 있습니다. Visual Studio는 빌드 순서를 결정하고 필요에 따라 개별적으로 MSBuild를 호출하며, 이 모두를 Visual Studio가 완벽하게 제어합니다.
 
-솔루션 파일을 사용하여 MSBuild를 호출하는 경우 또 다른 차이점이 있습니다. MSBuild가 솔루션 파일을 구문 분석하고, 표준 XML 입력 파일을 만들고, 평가하고, 프로젝트로 실행합니다. 솔루션 빌드는 모든 프로젝트보다 먼저 실행됩니다. Visual Studio에서 빌드할 때는 이러한 상황이 발생하지 않습니다. MSBuild는 솔루션 파일을 인식하지 못합니다. 결과적으로 솔루션 빌드 사용자 지정( *before.SolutionName.sln.targets* 및 *after.SolutionName.sln.targets* 사용)은 Visual Studio 빌드가 아닌 MSbuild.exe 또는 개체 모델 기반에만 적용됩니다.
+솔루션 파일을 사용하여 MSBuild를 호출하는 경우 또 다른 차이점이 있습니다. MSBuild가 솔루션 파일을 구문 분석하고, 표준 XML 입력 파일을 만들고, 평가하고, 프로젝트로 실행합니다. 솔루션 빌드는 모든 프로젝트보다 먼저 실행됩니다. Visual Studio에서 빌드할 때는 이러한 상황이 발생하지 않습니다. MSBuild는 솔루션 파일을 인식하지 못합니다. 결과적으로 솔루션 빌드 사용자 지정(*before.SolutionName.sln.targets* 및 *after.SolutionName.sln.targets* 사용)은 Visual Studio 빌드가 아닌 MSbuild.exe 또는 개체 모델 기반에만 적용됩니다.
 
 ### <a name="project-sdks"></a>프로젝트 SDK
 
@@ -232,7 +232,7 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
 
 ## <a name="customizations-in-a-project-file"></a>프로젝트 파일의 사용자 지정
 
-Visual Studio는 **솔루션 탐색기** , **속성** 창 또는 **프로젝트 속성** 에서 변경하는 경우 프로젝트 파일을 업데이트하지만, 프로젝트 파일을 직접 편집하여 변경할 수도 있습니다.
+Visual Studio는 **솔루션 탐색기**, **속성** 창 또는 **프로젝트 속성** 에서 변경하는 경우 프로젝트 파일을 업데이트하지만, 프로젝트 파일을 직접 편집하여 변경할 수도 있습니다.
 
 많은 빌드 동작은 프로젝트 파일에서 프로젝트에 대한 로컬 설정에 대해 MSBuild 속성을 설정하거나 이전 섹션에서 설명한 대로 *Directory.Build.props* 파일을 만들어 프로젝트 및 솔루션의 전체 폴더에 대해 전역적으로 MSBuild 속성을 설정하여 구성할 수 있습니다. 명령줄 또는 스크립트에 대한 임시 빌드의 경우 명령줄에서 `/p` 옵션을 사용하여 MSBuild의 특정 호출에 대한 속성을 설정할 수도 있습니다. 설정할 수 있는 속성에 대한 자세한 내용은 [일반적인 MSBuild 프로젝트 속성](common-msbuild-project-properties.md)을 참조하세요.
 

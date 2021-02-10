@@ -6,23 +6,23 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942492"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
 
 **이전 단계: [전체 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-인증은 웹앱에 일반적으로 필요하므로 “Django 웹 프로젝트” 템플릿에는 기본 인증 흐름이 포함됩니다. 이 자습서의 6단계에서 설명하는 “설문 조사 Django 웹 프로젝트” 템플릿에도 동일한 흐름이 포함되어 있습니다. Django 프로젝트 템플릿을 사용하는 경우 Visual Studio는 인증에 필요한 모든 모듈을 Django 프로젝트의 *settings.py*에 포함합니다.
+인증은 웹앱에 일반적으로 필요하므로 “Django 웹 프로젝트” 템플릿에는 기본 인증 흐름이 포함됩니다. 이 자습서의 6단계에서 설명하는 “설문 조사 Django 웹 프로젝트” 템플릿에도 동일한 흐름이 포함되어 있습니다. Django 프로젝트 템플릿을 사용하는 경우 Visual Studio는 인증에 필요한 모든 모듈을 Django 프로젝트의 *settings.py* 에 포함합니다.
 
 이 단계에서는 다음 내용을 학습합니다.
 
@@ -35,13 +35,13 @@ ms.locfileid: "62957871"
 
 1. 프로젝트 루트에 있는 *readme.html* 파일의 지침에 따라 슈퍼 사용자(관리자) 계정을 아직 만들지 않은 경우 지금 만듭니다.
 
-1. Visual Studio에서 **디버그** > **디버깅 시작**(**F5**)을 사용하여 앱을 실행합니다. 앱이 브라우저에 나타나면 **로그인**이 탐색 모음 오른쪽 위에 나타나는지 확인합니다.
+1. Visual Studio에서 **디버그** > **디버깅 시작**(**F5**)을 사용하여 앱을 실행합니다. 앱이 브라우저에 나타나면 **로그인** 이 탐색 모음 오른쪽 위에 나타나는지 확인합니다.
 
     ![Django 웹 프로젝트 앱 페이지의 로그인 컨트롤](media/django/step05-login-control.png)
 
-1. *templates/app/layout.html*을 열고 `<div class="navbar ...>` 요소에 `{% include app/loginpartial.html %}` 태그가 포함되어 있는지 확인합니다. `{% include %}` 태그는 포함하는 템플릿의 이 지점에서 포함된 파일의 내용을 풀하도록 Django의 템플릿 시스템에 지시합니다.
+1. *templates/app/layout.html* 을 열고 `<div class="navbar ...>` 요소에 `{% include app/loginpartial.html %}` 태그가 포함되어 있는지 확인합니다. `{% include %}` 태그는 포함하는 템플릿의 이 지점에서 포함된 파일의 내용을 풀하도록 Django의 템플릿 시스템에 지시합니다.
 
-1. *templates/app/loginpartial.html*을 열고 `{% else %}` 태그와 함께 조건부 태그 `{% if user.is_authenticated %}`를 사용하여 사용자가 인증되었는지 여부에 따라 다른 UI 요소를 렌더링하는 방법을 확인합니다.
+1. *templates/app/loginpartial.html* 을 열고 `{% else %}` 태그와 함께 조건부 태그 `{% if user.is_authenticated %}`를 사용하여 사용자가 인증되었는지 여부에 따라 다른 UI 요소를 렌더링하는 방법을 확인합니다.
 
     ```html
     {% if user.is_authenticated %}
@@ -62,7 +62,7 @@ ms.locfileid: "62957871"
     {% endif %}
     ```
 
-1. 처음으로 앱을 시작하면 인증된 사용자가 없기 때문에 이 템플릿 코드는 “로그인” 링크를 상대 경로 “login”으로만 렌더링합니다. 이전 섹션에 표시된 *urls.py*에 지정된 대로 해당 경로는 `django.contrib.auth.views.login` 보기에 매핑됩니다. 해당 보기는 다음 데이터를 수신합니다.
+1. 처음으로 앱을 시작하면 인증된 사용자가 없기 때문에 이 템플릿 코드는 “로그인” 링크를 상대 경로 “login”으로만 렌더링합니다. 이전 섹션에 표시된 *urls.py* 에 지정된 대로 해당 경로는 `django.contrib.auth.views.login` 보기에 매핑됩니다. 해당 보기는 다음 데이터를 수신합니다.
 
     ```python
     {
@@ -146,7 +146,7 @@ ms.locfileid: "62957871"
 
 1. 양식을 제출하면 Django는 사용자 자격 증명(예: 슈퍼 사용자의 자격 증명)을 인증하려고 합니다. 인증에 실패하면 현재 페이지에 유지되지만 `form.errors`는 true로 설정됩니다. 인증에 성공하면 Django는 “next” 필드 `<input type="hidden" name="next" value="/" />`의 상대 URL(이 경우 홈페이지(`/`))로 이동합니다.
 
-1. 이제 홈페이지를 다시 렌더링하면 *loginpartial.html* 템플릿이 렌더링될 때 `user.is_authenticated` 속성은 true입니다. 따라서 **Hello (사용자 이름)** 메시지와 **로그오프**가 표시됩니다. 앱의 다른 부분에서 `user.is_authenticated`를 사용하여 인증을 확인할 수 있습니다.
+1. 이제 홈페이지를 다시 렌더링하면 *loginpartial.html* 템플릿이 렌더링될 때 `user.is_authenticated` 속성은 true입니다. 따라서 **Hello (사용자 이름)** 메시지와 **로그오프** 가 표시됩니다. 앱의 다른 부분에서 `user.is_authenticated`를 사용하여 인증을 확인할 수 있습니다.
 
     ![Django 웹 프로젝트 앱 페이지의 Hello 메시지 및 로그오프 컨트롤](media/django/step05-logoff-control.png)
 
@@ -154,9 +154,9 @@ ms.locfileid: "62957871"
 
 1. 특히 슈퍼 사용자 또는 관리자는 상대 URL “/admin/” 및 “/admin/doc/”를 사용하여 기본 제공 Django 관리자 인터페이스에 액세스할 수 있습니다. 이러한 인터페이스를 사용하도록 설정하려면 다음을 수행합니다.
 
-    1. 사용자 환경에 docutils Python 패키지를 설치합니다. 이 작업을 수행하는 적합한 방법은 "docutils"를 *requirements.txt* 파일에 추가한 다음, **솔루션 탐색기**에서 프로젝트 및 **Python 환경** 노드를 차례로 확장한 다음, 사용하는 환경을 마우스 오른쪽 단추로 클릭하여 **requirements.txt에서 설치**를 선택합니다.
+    1. 사용자 환경에 docutils Python 패키지를 설치합니다. 이 작업을 수행하는 적합한 방법은 "docutils"를 *requirements.txt* 파일에 추가한 다음, **솔루션 탐색기** 에서 프로젝트 및 **Python 환경** 노드를 차례로 확장한 다음, 사용하는 환경을 마우스 오른쪽 단추로 클릭하여 **requirements.txt에서 설치** 를 선택합니다.
 
-    1. Django 프로젝트의 *urls.py*를 열고, 다음 항목에서 기본 주석을 제거합니다.
+    1. Django 프로젝트의 *urls.py* 를 열고, 다음 항목에서 기본 주석을 제거합니다.
 
         ```python
         from django.conf.urls import include
@@ -177,7 +177,7 @@ ms.locfileid: "62957871"
 
         ![Django 관리자 인터페이스](media/django/step05-administrator-interface.png)
 
-1. 인증 흐름의 마지막 부분은 로그오프입니다. *loginpartial.html*에서처럼 **로그오프** 링크는 상대 URL "/login"에 대해 POST를 수행하며, 기본 제공 보기 `django.contrib.auth.views.logout`에 의해 처리됩니다. 이 보기는 UI를 표시하지 않으며 “^logout$” 패턴에 대해 *urls.py*에 표시된 대로 홈페이지로 이동하기만 합니다. 로그오프 페이지를 표시하려면 먼저 URL 패턴을 다음과 같이 변경하여 “template_name” 속성을 추가하고 “next_page” 속성을 제거합니다.
+1. 인증 흐름의 마지막 부분은 로그오프입니다. *loginpartial.html* 에서처럼 **로그오프** 링크는 상대 URL "/login"에 대해 POST를 수행하며, 기본 제공 보기 `django.contrib.auth.views.logout`에 의해 처리됩니다. 이 보기는 UI를 표시하지 않으며 “^logout$” 패턴에 대해 *urls.py* 에 표시된 대로 홈페이지로 이동하기만 합니다. 로그오프 페이지를 표시하려면 먼저 URL 패턴을 다음과 같이 변경하여 “template_name” 속성을 추가하고 “next_page” 속성을 제거합니다.
 
     ```python
     url(r'^logout$',
@@ -189,7 +189,7 @@ ms.locfileid: "62957871"
         name='logout')
     ```
 
-    그런 다음, 다음 최소 내용으로 *templates/app/loggedoff.html*을 만듭니다.
+    그런 다음, 다음 최소 내용으로 *templates/app/loggedoff.html* 을 만듭니다.
 
     ```html
     {% extends "app/layout.html" %}

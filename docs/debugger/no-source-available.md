@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e9993c4482d20393a3ca46d9afcd0a8ec1b13f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942037"
 ---
 # <a name="no-source-available"></a>소스 없음
 프로젝트에 보려고 하는 코드의 소스 코드가 포함되어 있지 않습니다. 일반적인 원인은 **호출 스택 창** 또는 **스레드 창** 에서 소스 코드가 없는 모듈을 두 번 클릭했기 때문입니다. 디버깅을 계속할 수 있지만 소스 창에서 중단점을 설정하고 현재 위치에서 다른 작업을 수행할 수는 없습니다. 중단점을 설정해야 하는 경우에는 **디스어셈블리 창** 을 대신 사용합니다.

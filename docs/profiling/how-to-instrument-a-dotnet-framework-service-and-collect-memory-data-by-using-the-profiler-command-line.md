@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 80ca26f0f68a4c717d94055d0886a8085931c900
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942674"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 .NET Framework 서비스 계측 및 메모리 데이터 수집
 

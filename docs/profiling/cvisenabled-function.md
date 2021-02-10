@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 0be750f62e248b3d9f837c5baa561765e14bfba5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940945"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 함수
 세션에서 지정된 ETW 공급자를 사용하도록 설정했는지 확인합니다.

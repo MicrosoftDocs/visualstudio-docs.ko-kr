@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b82c96c99f3144d12afd887a82bc66dc0499f95
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 87282d23eeb6dcff412792ed2421f077b07f74dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936784"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>방법: 클래스 다이어그램을 이미지로 내보내기
 

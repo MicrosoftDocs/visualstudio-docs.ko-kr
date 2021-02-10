@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 43a2db3f3585dbfa68bf217cc29fb7b73cc35485
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939801"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio의 접근성 기능
 

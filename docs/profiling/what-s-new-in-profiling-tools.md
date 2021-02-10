@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 9619daea30960f72b183447839db89adbaee7eb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938488"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에 포함된 프로파일링 도구의 새로운 기능
 

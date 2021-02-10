@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942583"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>3단계: Django 앱을 사용하여 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -34,13 +34,13 @@ ms.locfileid: "88238532"
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>3-1단계: 항목 템플릿 익히기
 
-Django 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS 및 JavaScript 파일을 추가합니다. 각 파일 형식(배포에 필요할 수 있는 *web.config*와 같은 다른 파일 포함)에 대해 Visual Studio는 시작하는 데 도움이 되는 편리한 [항목 템플릿](python-item-templates.md)을 제공합니다.
+Django 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS 및 JavaScript 파일을 추가합니다. 각 파일 형식(배포에 필요할 수 있는 *web.config* 와 같은 다른 파일 포함)에 대해 Visual Studio는 시작하는 데 도움이 되는 편리한 [항목 템플릿](python-item-templates.md)을 제공합니다.
 
-사용 가능한 템플릿을 보려면 **솔루션 탐색기**로 이동하여 항목을 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
+사용 가능한 템플릿을 보려면 **솔루션 탐색기** 로 이동하여 항목을 만들 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** 을 선택합니다.
 
 ![Visual Studio의 새 항목 추가 대화 상자](media/django/step03-add-new-item-dialog.png)
 
-템플릿을 사용하려면 원하는 템플릿을 선택하고 파일 이름을 지정한 후 **확인**을 선택합니다. 이런 방식으로 항목을 추가하면 파일이 Visual Studio 프로젝트에 자동으로 추가되고 소스 제어에 대한 변경 내용이 표시됩니다.
+템플릿을 사용하려면 원하는 템플릿을 선택하고 파일 이름을 지정한 후 **확인** 을 선택합니다. 이런 방식으로 항목을 추가하면 파일이 Visual Studio 프로젝트에 자동으로 추가되고 소스 제어에 대한 변경 내용이 표시됩니다.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>질문: Visual Studio에서는 제공할 항목 템플릿을 어떻게 알 수 있나요?
 
@@ -50,7 +50,7 @@ Django 앱을 개발하는 경우 일반적으로 더 많은 Python, HTML, CSS �
 
 Python(모든 프레임워크 사용)으로 빌드된 웹앱에서 Python 파일은 항상 웹 호스트의 서버에서 실행되며 사용자의 컴퓨터로 전송되지 않습니다. 그러나 CSS 및 JavaScript와 같은 다른 파일은 브라우저에서만 사용되므로 호스트 서버는 해당 파일이 요청될 때마다 있는 그대로 제공하기만 합니다. 이러한 파일을 “정적” 파일이라고 하며 Django에서는 코드를 작성할 필요 없이 이러한 파일을 자동으로 제공할 수 있습니다.
 
-Django 프로젝트는 Django 프로젝트의 *settings.py*에 있는 다음 줄 덕분에 앱의 *static* 폴더에서 정적 파일을 제공하도록 기본적으로 구성되어 있습니다.
+Django 프로젝트는 Django 프로젝트의 *settings.py* 에 있는 다음 줄 덕분에 앱의 *static* 폴더에서 정적 파일을 제공하도록 기본적으로 구성되어 있습니다.
 
 ```python
 # Static files (CSS, JavaScript, Images)
@@ -63,13 +63,13 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 *static* 내에서 원하는 폴더 구조를 사용하여 파일을 구성한 다음, 해당 폴더 내의 상대 경로를 사용하여 파일을 참조할 수 있습니다. 이 프로세스를 보여주기 위해 다음 단계에서는 앱에 CSS 파일을 추가한 다음, *index.html* 템플릿에서 해당 스타일시트를 사용합니다.
 
-1. **솔루션 탐색기**에서 Visual Studio 프로젝트의 **HelloDjangoApp** 폴더를 마우스 오른쪽 단추로 클릭하고, **추가** > **새 폴더**를 선택하고, 폴더의 이름을 `static`으로 지정합니다.
+1. **솔루션 탐색기** 에서 Visual Studio 프로젝트의 **HelloDjangoApp** 폴더를 마우스 오른쪽 단추로 클릭하고, **추가** > **새 폴더** 를 선택하고, 폴더의 이름을 `static`으로 지정합니다.
 
-1. **static** 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다. 대화 상자가 표시되면 **스타일시트** 템플릿을 선택하고 파일의 이름을 `site.css`로 지정하고 **확인**을 선택합니다. **site.css** 파일이 프로젝트에 표시되고 편집기에서 열립니다. 폴더 구조는 다음 이미지와 유사합니다.
+1. **static** 폴더를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** 을 선택합니다. 대화 상자가 표시되면 **스타일시트** 템플릿을 선택하고 파일의 이름을 `site.css`로 지정하고 **확인** 을 선택합니다. **site.css** 파일이 프로젝트에 표시되고 편집기에서 열립니다. 폴더 구조는 다음 이미지와 유사합니다.
 
     ![솔루션 탐색기에 표시된 정적 파일 구조](media/django/step03-static-file-structure.png)
 
-1. *site.css*의 내용을 다음 코드로 바꾸고 파일을 저장합니다.
+1. *site.css* 의 내용을 다음 코드로 바꾸고 파일을 저장합니다.
 
     ```css
     .message {
@@ -78,7 +78,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. 앱의 *templates/HelloDjangoApp/index.html* 파일 내용을 다음 코드로 바꿉니다. 이 코드는 2단계에서 사용된 `<strong>` 요소를 `message` 스타일 클래스를 참조하는 `<span>`으로 바꿉니다. 이런 식으로 스타일 클래스를 사용하면 훨씬 더 유연하게 요소의 스타일을 지정할 수 있습니다. VS 2017 15.7 이전을 사용할 때 *index.html*을 *templates*의 하위 폴더로 이동하지 않은 경우 2-4단계의 [템플릿 네임스페이스 지정](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)을 참조하세요.
+1. 앱의 *templates/HelloDjangoApp/index.html* 파일 내용을 다음 코드로 바꿉니다. 이 코드는 2단계에서 사용된 `<strong>` 요소를 `message` 스타일 클래스를 참조하는 `<span>`으로 바꿉니다. 이런 식으로 스타일 클래스를 사용하면 훨씬 더 유연하게 요소의 스타일을 지정할 수 있습니다. VS 2017 15.7 이전을 사용할 때 *index.html* 을 *templates* 의 하위 폴더로 이동하지 않은 경우 2-4단계의 [템플릿 네임스페이스 지정](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)을 참조하세요.
 
     ```html
     <html>
@@ -101,7 +101,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>질문: 정적 파일 구성에 대한 규칙이 있나요?
 
-대답: 원하는 방식으로 *static* 폴더에서 다른 CSS, JavaScript 및 HTML 파일을 추가할 수 있습니다. 일반적으로 정적 파일을 구성하려면 스타일시트 및 다른 모든 파일에 대해 *fonts*, *scripts* 및 *content*라는 하위 폴더를 만듭니다. 각각의 경우 `{% static %}` 참조의 파일에 대한 상대 경로에 해당 폴더를 포함해야 합니다.
+대답: 원하는 방식으로 *static* 폴더에서 다른 CSS, JavaScript 및 HTML 파일을 추가할 수 있습니다. 일반적으로 정적 파일을 구성하려면 스타일시트 및 다른 모든 파일에 대해 *fonts*, *scripts* 및 *content* 라는 하위 폴더를 만듭니다. 각각의 경우 `{% static %}` 참조의 파일에 대한 상대 경로에 해당 폴더를 포함해야 합니다.
 
 ### <a name="question-can-i-complete-the-same-task-without-using-the--load-staticfiles--tag"></a>질문: {% load staticfiles %} 태그를 사용하지 않고 동일한 작업을 완료할 수 있나요?
 
@@ -129,12 +129,12 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 다음 단계에서는 “HelloDjangoApp” 프로젝트에 “About” 페이지를 추가하고 홈페이지에서 해당 페이지에 연결합니다.
 
-1. **솔루션 탐색기**에서 **templates/HelloDjangoApp** 폴더를 마우스 오른쪽 단추로 클릭하고, **추가** > **새 항목**을 선택하고, **HTML 페이지** 항목 템플릿을 선택하고, 파일의 이름을 `about.html`로 지정하고, **확인**을 선택합니다.
+1. **솔루션 탐색기** 에서 **templates/HelloDjangoApp** 폴더를 마우스 오른쪽 단추로 클릭하고, **추가** > **새 항목** 을 선택하고, **HTML 페이지** 항목 템플릿을 선택하고, 파일의 이름을 `about.html`로 지정하고, **확인** 을 선택합니다.
 
     > [!Tip]
     > **새 항목** 명령이 **추가** 메뉴에 나타나지 않으면 Visual Studio가 디버깅 모드를 종료하도록 서버를 중지했는지 확인하세요.
 
-1. *about.html*의 내용을 다음 태그로 바꿉니다. 홈페이지에 대한 명시적 링크를 3-4단계의 간단한 탐색 모음으로 바꿉니다.
+1. *about.html* 의 내용을 다음 태그로 바꿉니다. 홈페이지에 대한 명시적 링크를 3-4단계의 간단한 탐색 모음으로 바꿉니다.
 
     ```html
     <html>
@@ -176,15 +176,15 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     <div><a href="about">About</a></div>
     ```
 
-1. **파일** > **모두 저장** 메뉴 명령을 사용하여 모든 파일을 저장하거나, **Ctrl**+**Shift**+**S**를 누르기만 하면 됩니다. Visual Studio에서는 프로젝트를 실행하면 파일이 자동으로 저장되기 때문에 기술적인 측면에서 이 단계는 필요하지 않습니다. 그러나 알고 있으면 도움이 되는 명령입니다.
+1. **파일** > **모두 저장** 메뉴 명령을 사용하여 모든 파일을 저장하거나, **Ctrl**+**Shift**+**S** 를 누르기만 하면 됩니다. Visual Studio에서는 프로젝트를 실행하면 파일이 자동으로 저장되기 때문에 기술적인 측면에서 이 단계는 필요하지 않습니다. 그러나 알고 있으면 도움이 되는 명령입니다.
 
 1. 프로젝트를 실행하여 결과를 확인하고 페이지 간 탐색을 확인합니다. 완료되면 서버를 닫습니다.
 
 ### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>질문: 홈페이지에 대한 링크에 “인덱스”를 사용하려고 했는데 작동하지 않았습니다. 이유
 
-대답: *views.py*의 보기 함수 이름이 `index`인 경우에도 Django 프로젝트의 *urls.py* 파일에 있는 URL 라우팅 패턴에는 문자열 "ndex"와 일치하는 정규식이 포함되지 않습니다. 해당 문자열과 일치하려면 `^index$` 패턴에 대한 다른 항목을 추가해야 합니다.
+대답: *views.py* 의 보기 함수 이름이 `index`인 경우에도 Django 프로젝트의 *urls.py* 파일에 있는 URL 라우팅 패턴에는 문자열 "ndex"와 일치하는 정규식이 포함되지 않습니다. 해당 문자열과 일치하려면 `^index$` 패턴에 대한 다른 항목을 추가해야 합니다.
 
-다음 섹션에 표시된 대로 페이지 템플릿에서 `{% url '<pattern_name>' %}` 태그를 사용하여 패턴의 *name*을 참조하는 것이 훨씬 더 좋습니다. 이런 경우 Django에서 적절한 URL을 만듭니다. 예를 들어 *about.html*의 `<div><a href="home">Home</a></div>`을 `<div><a href="{% url 'index' %}">Home</a></div>`으로 바꿉니다. 여기서는 *urls.py*의 첫 번째 URL 패턴 이름이 실제로 'index'(`name='index'` 인수 사용)이기 때문에 'index'를 사용합니다. 또한 ‘home’을 사용하여 두 번째 패턴을 참조할 수도 있습니다.
+다음 섹션에 표시된 대로 페이지 템플릿에서 `{% url '<pattern_name>' %}` 태그를 사용하여 패턴의 *name* 을 참조하는 것이 훨씬 더 좋습니다. 이런 경우 Django에서 적절한 URL을 만듭니다. 예를 들어 *about.html* 의 `<div><a href="home">Home</a></div>`을 `<div><a href="{% url 'index' %}">Home</a></div>`으로 바꿉니다. 여기서는 *urls.py* 의 첫 번째 URL 패턴 이름이 실제로 'index'(`name='index'` 인수 사용)이기 때문에 'index'를 사용합니다. 또한 ‘home’을 사용하여 두 번째 패턴을 참조할 수도 있습니다.
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>3-4단계: 템플릿 상속을 사용하여 헤더 및 탐색 모음 만들기
 
@@ -202,7 +202,7 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
 
 다음 단계에서는 상속을 보여줍니다.
 
-1. 앱의 *templates/HelloDjangoApp* 폴더에서 *layout.html*이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 바로 가기 메뉴 또는 **추가** > **HTML 페이지** 사용) 콘텐츠를 아래의 태그로 대체합니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
+1. 앱의 *templates/HelloDjangoApp* 폴더에서 *layout.html* 이라는 새 HTML 파일을 만들고(**추가** > **새 항목** 바로 가기 메뉴 또는 **추가** > **HTML 페이지** 사용) 콘텐츠를 아래의 태그로 대체합니다. 참조 페이지에서 바꿔야 하는 “content”라는 블록이 이 템플릿에 포함되어 있음을 알 수 있습니다.
 
     ```html
     <!DOCTYPE html>
@@ -264,7 +264,7 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
     }
     ```
 
-1. 기본 템플릿을 참조하고 콘텐츠 블록을 재정의하도록 *templates/HelloDjangoApp/index.html*을 수정합니다. 상속을 사용하여 이를 확인할 수 있으며 이 템플릿은 간단해집니다.
+1. 기본 템플릿을 참조하고 콘텐츠 블록을 재정의하도록 *templates/HelloDjangoApp/index.html* 을 수정합니다. 상속을 사용하여 이를 확인할 수 있으며 이 템플릿은 간단해집니다.
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -273,7 +273,7 @@ Django의 템플릿 시스템은 여러 템플릿에서 특정 요소를 다시 
     {% endblock %}
     ```
 
-1. 기본 템플릿을 참조하고 콘텐츠 블록을 재정의하도록 *templates/HelloDjangoApp/about.html*도 수정합니다.
+1. 기본 템플릿을 참조하고 콘텐츠 블록을 재정의하도록 *templates/HelloDjangoApp/about.html* 도 수정합니다.
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}

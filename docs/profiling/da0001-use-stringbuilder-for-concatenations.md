@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a645816ed046c2ce253a9f882c1425c48347573
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e94aac22eae270abdffef5c7a866b353bce90fd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938449"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder 사용
 

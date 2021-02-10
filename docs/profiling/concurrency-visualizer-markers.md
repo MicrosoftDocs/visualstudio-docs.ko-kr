@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c3ff013f546393447b8303575489164a3a7be00a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941140"
 ---
 # <a name="concurrency-visualizer-markers"></a>동시성 시각화 도우미 표식
 동시성 시각화 도우미에서 표식은 응용 프로그램의 이벤트를 나타내는 아이콘입니다.  일반적으로 애플리케이션은 애플리케이션에서의 단계 또는 발생 작업을 지정하기 위해 이러한 이벤트를 생성합니다.  이벤트는 응용 프로그램에서 생성되거나 응용 프로그램에서 사용되는 라이브러리 및 런타임에 의해 생성될 수 있습니다.

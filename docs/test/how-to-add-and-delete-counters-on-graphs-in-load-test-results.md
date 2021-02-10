@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 82794efc8d3065c9b428602e50455cccd162bbd4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: bbf233d025d168f3f9d197af5876a0d6e735a9e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942401"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>방법: 부하 테스트 결과의 그래프에서 카운터 추가 및 삭제
 

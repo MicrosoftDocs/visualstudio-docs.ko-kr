@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: bb088954833f42e35de6c8316e5553d0f9e3fc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006538"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945593"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Visual Studio 확장 관리
 

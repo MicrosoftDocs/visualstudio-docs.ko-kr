@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 4f33898aa1c3c08179f1438a7c6e6e11a75587bc
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4151d4c9546795dbd87773315b4b135538ca3bbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948064"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트 결과 분석
 

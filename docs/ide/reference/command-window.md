@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fba1c12743035c397780db64939dec8195a75afd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942856"
 ---
 # <a name="command-window"></a>명령 창
 **명령** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서 직접 명령 또는 별칭을 실행하는 데 사용됩니다. 메뉴 명령 및 메뉴에 나타나지 않는 명령을 둘 다 실행할 수 있습니다. **명령** 창을 표시하려면 **보기** 메뉴에서 **다른 창** 을 선택하고 **명령 창** 을 선택합니다.

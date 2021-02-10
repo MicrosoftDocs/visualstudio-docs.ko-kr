@@ -5,15 +5,15 @@ robots: noindex, nofollow
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941998"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>스냅샷 디버거 시작
 
@@ -33,11 +33,11 @@ ms.locfileid: "62905270"
 
     왼쪽을 클릭하면 자주색 육각형이 표시됩니다.
 
-2. **컬렉션 시작**을 클릭하여 snappoint를 켭니다.
+2. **컬렉션 시작** 을 클릭하여 snappoint를 켭니다.
 
 ### <a name="open-a-snapshot"></a>스냅샷 열기
 
-1. snappoint가 적중되면 오른쪽 진단 도구 창에 스냅샷이 표시됩니다. 창이 열리지 않는 경우 **디버그** > **창** > **진단 도구 표시**를 선택하여 창을 열 수 있습니다.
+1. snappoint가 적중되면 오른쪽 진단 도구 창에 스냅샷이 표시됩니다. 창이 열리지 않는 경우 **디버그** > **창** > **진단 도구 표시** 를 선택하여 창을 열 수 있습니다.
 
     ![진단 도구 창의 스냅샷](../media/snapshot-startpage-diagsession-window.png)
 
@@ -47,21 +47,21 @@ ms.locfileid: "62905270"
 
 이 보기에서 변수를 마우스로 가리켜 DataTips를 보고 로컬, 조사식 및 호출 스택 창을 사용하며 식을 계산할 수도 있습니다.
 
-웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 스냅샷 하나만 캡처됩니다. 즉, 스냅샷을 캡처한 후에는 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
+웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 스냅샷 하나만 캡처됩니다. 즉, 스냅샷을 캡처한 후에는 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트** 를 클릭하여 snappoint를 다시 켤 수 있습니다.
 
 ### <a name="set-a-logpoint"></a>logpoint 설정
 
-1. snappoint 아이콘(자주색 육각형)을 마우스 오른쪽 단추로 클릭하고 **설정**을 선택합니다.
+1. snappoint 아이콘(자주색 육각형)을 마우스 오른쪽 단추로 클릭하고 **설정** 을 선택합니다.
 
-2. **snappoint 설정** 창에서 **작업**을 선택합니다.
+2. **snappoint 설정** 창에서 **작업** 을 선택합니다.
 
     ![snappoint 조건](../media/snapshot-startpage-logpoint.png)
 
 3. **메시지** 필드에 기록할 로그 메시지를 입력합니다. 로그 메시지에서 변수를 중괄호 안에 배치하여 변수를 평가할 수도 있습니다.
 
-    **출력 창으로 보내기**를 선택하는 경우 logpoint가 적중되면 진단 도구 창에 메시지가 표시됩니다.
+    **출력 창으로 보내기** 를 선택하는 경우 logpoint가 적중되면 진단 도구 창에 메시지가 표시됩니다.
 
-    **애플리케이션 로그로 보내기**를 선택하는 경우 logpoint가 적중되면 App Insights와 같이 `System.Diagnostics.Trace`(또는 .NET Core에서는 `ILogger`)의 메시지를 볼 수 있는 모든 위치에 메시지가 표시됩니다.
+    **애플리케이션 로그로 보내기** 를 선택하는 경우 logpoint가 적중되면 App Insights와 같이 `System.Diagnostics.Trace`(또는 .NET Core에서는 `ILogger`)의 메시지를 볼 수 있는 모든 위치에 메시지가 표시됩니다.
 
 ## <a name="learn-more"></a>자세한 내용
 
@@ -69,6 +69,6 @@ ms.locfileid: "62905270"
 
 ## <a name="dont-show-me-this-again"></a>다시 표시 안 함
 
-스냅샷 디버거를 연결할 때 스냅샷 디버거 시작 페이지를 다시 표시하지 않으려면 **도구** > **옵션** > **스냅샷 디버거**에서 **세션을 시작할 때 ‘시작’ 페이지 표시** 옵션을 변경합니다.
+스냅샷 디버거를 연결할 때 스냅샷 디버거 시작 페이지를 다시 표시하지 않으려면 **도구** > **옵션** > **스냅샷 디버거** 에서 **세션을 시작할 때 ‘시작’ 페이지 표시** 옵션을 변경합니다.
 
 ![스냅샷 디버거 도구 옵션 페이지](../media/snapshot-startpage-tools-options.png)

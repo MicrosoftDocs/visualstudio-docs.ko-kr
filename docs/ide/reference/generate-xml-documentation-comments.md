@@ -6,15 +6,15 @@ ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2c203d9a445d9426a8079801a856e20f7be82229
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946568"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
 

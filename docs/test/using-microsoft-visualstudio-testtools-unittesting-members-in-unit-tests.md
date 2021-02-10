@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 4eef06bb48730fba9ba1df145857d41323cbfdd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946321"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>단위 테스트에서 MSTest 프레임워크 사용
 

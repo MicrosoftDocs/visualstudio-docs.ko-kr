@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: e901d2e2286f5c4ac19bc5cdea9606867e23ff06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936771"
 ---
 # <a name="convert-dialog-box"></a>변환 대화 상자
 
 Visual Studio 이전 버전에서 **변환** 대화 상자가 사용되었으며 지금은 더 이상 사용되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

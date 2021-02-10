@@ -9,17 +9,17 @@ ms.custom:
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944526"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic을 사용하여 프로젝트 및 솔루션에 대해 알아보기
 

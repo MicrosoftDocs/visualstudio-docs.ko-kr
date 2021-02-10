@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937630"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 추가 기능 만들기
 

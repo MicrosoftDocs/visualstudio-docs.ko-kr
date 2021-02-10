@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3d96ccf3fc8463908ab5cf27b52e91fb1d05ef
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: b1f3231fce4954d3ace5e04e470cda386a9ceebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936745"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: 커널 CPU 시간 처리 시간이 너무 깁니다.
 

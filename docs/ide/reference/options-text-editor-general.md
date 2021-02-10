@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c76ea1729fa84bee97458f131e18f64281b76567
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943876"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>옵션 대화 상자: 텍스트 편집기 \> 일반
 

@@ -7,17 +7,17 @@ ms.technology: vs-python
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: dc47bdb2913e2d18998663967d4da3c0a7dcdd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939944"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기
 
@@ -42,37 +42,37 @@ Python IDE인 Visual Studio에 대한 5~10분 분량의 소개에서는 Flask �
 ::: moniker range="vs-2017"
 1. Visual Studio 2017을 엽니다.
 
-2. 메뉴 모음에서 **파일 > 새로 만들기 > 프로젝트**를 선택합니다.
+2. 메뉴 모음에서 **파일 > 새로 만들기 > 프로젝트** 를 선택합니다.
 
-3. **새 프로젝트** 대화 상자에서 오른쪽 아래의 검색 필드에 "Python 웹 프로젝트"를 입력한 다음, 중간 목록에서 **웹 프로젝트**를 선택하고, 프로젝트에 "HelloPython"과 같은 이름을 지정한 다음, **확인**을 선택합니다.
+3. **새 프로젝트** 대화 상자에서 오른쪽 아래의 검색 필드에 "Python 웹 프로젝트"를 입력한 다음, 중간 목록에서 **웹 프로젝트** 를 선택하고, 프로젝트에 "HelloPython"과 같은 이름을 지정한 다음, **확인** 을 선택합니다.
 
     ![Python 웹 프로젝트가 선택된 새 프로젝트 대화 상자](media/quickstart-python-00-web-project.png)
 
-    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자** 를 실행하여 **추가** > **수정** 을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
     ![Visual Studio 설치 관리자의 Python 개발 작업](../python/media/installation-python-workload.png)
 
-4. 오른쪽 창의 **솔루션 탐색기**에 새 프로젝트가 열립니다. 프로젝트에 다른 파일이 없기 때문에 이 시점에는 프로젝트가 비어 있습니다.
+4. 오른쪽 창의 **솔루션 탐색기** 에 새 프로젝트가 열립니다. 프로젝트에 다른 파일이 없기 때문에 이 시점에는 프로젝트가 비어 있습니다.
 
     ![새로 만든 빈 프로젝트를 보여주는 솔루션 탐색기](media/quickstart-python-01-empty-project.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 1. Visual Studio 2019를 엽니다.
-2. 시작 화면에서 **새 프로젝트 만들기**를 선택합니다.
-3. **새 프로젝트 만들기** 대화 상자의 맨 위에 있는 검색 필드에 "Python 웹"을 입력하고 가운데 목록에서 **웹 프로젝트**를 선택한 후, **다음**을 선택합니다.
+2. 시작 화면에서 **새 프로젝트 만들기** 를 선택합니다.
+3. **새 프로젝트 만들기** 대화 상자의 맨 위에 있는 검색 필드에 "Python 웹"을 입력하고 가운데 목록에서 **웹 프로젝트** 를 선택한 후, **다음** 을 선택합니다.
 
     ![Python 웹 프로젝트가 선택된 새 프로젝트 화면 만들기](media/quickstart-python-00-web-project-2019a.png)
 
-    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자**를 실행하여 **추가** > **수정**을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+    Python 프로젝트 템플릿이 표시되지 않으면 **Visual Studio 설치 관리자** 를 실행하여 **추가** > **수정** 을 선택하고 **Python 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
     ![Visual Studio 설치 관리자의 Python 개발 작업](../python/media/installation-python-workload.png)
 
-4. 다음의 **새 프로젝트 구성** 대화 상자에서 **프로젝트 이름**에 대해 "HelloPython"을 입력하고, 위치를 지정하고, **만들기**를 선택합니다. (**솔루션 이름**이 **프로젝트 이름**과 일치하도록 자동으로 설정됩니다.)
+4. 다음의 **새 프로젝트 구성** 대화 상자에서 **프로젝트 이름** 에 대해 "HelloPython"을 입력하고, 위치를 지정하고, **만들기** 를 선택합니다. (**솔루션 이름** 이 **프로젝트 이름** 과 일치하도록 자동으로 설정됩니다.)
 
     ![새 프로젝트 구성 대화 상자](media/quickstart-python-00-web-project-2019b.png)
 
-5. 오른쪽 창의 **솔루션 탐색기**에 새 프로젝트가 열립니다. 프로젝트에 다른 파일이 없기 때문에 이 시점에는 프로젝트가 비어 있습니다.
+5. 오른쪽 창의 **솔루션 탐색기** 에 새 프로젝트가 열립니다. 프로젝트에 다른 파일이 없기 때문에 이 시점에는 프로젝트가 비어 있습니다.
 
     ![새로 만든 빈 프로젝트를 보여주는 솔루션 탐색기](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
@@ -96,9 +96,9 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
     ![기본 환경을 보여 주는 솔루션 탐색기](media/quickstart-python-02-default-environment.png)
 
-2. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치**를 선택합니다. 이 명령은 **패키지** 탭에 **Python 환경** 창을 엽니다.
+2. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 설치** 를 선택합니다. 이 명령은 **패키지** 탭에 **Python 환경** 창을 엽니다.
 
-3. 검색 필드에 "flask"를 입력하고 **pip install flask from PyPI**를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files*와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
+3. 검색 필드에 "flask"를 입력하고 **pip install flask from PyPI** 를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files* 와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
 
     ![pip 설치를 통해 Flask 라이브러리 설치](media/quickstart-python-03-install-package.png)
 ::: moniker-end
@@ -109,12 +109,12 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 2. 환경을 마우스 오른쪽 단추로 클릭하고 **Python 패키지 관리...** 를 선택합니다. 이 명령은 **패키지(PyPI)** 탭에 **Python 환경** 창을 엽니다.
 
-3. 검색 필드에 "flask"를 입력합니다. **Flask**가 검색 상자 아래에 나타나면 이 단계를 건너뛸 수 있습니다. 그렇지 않으면 **명령 실행: pip 설치 flask**를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files*와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
+3. 검색 필드에 "flask"를 입력합니다. **Flask** 가 검색 상자 아래에 나타나면 이 단계를 건너뛸 수 있습니다. 그렇지 않으면 **명령 실행: pip 설치 flask** 를 선택합니다. 관리자 권한에 대한 프롬프트가 표시되면 수락하고 Visual Studio의 **출력** 창에서 진행률을 살펴봅니다. 전역 환경에 대한 패키지 폴더가 *C:\Program Files* 와 같이 보호되는 영역 내에 있는 경우 권한 상승에 대한 프롬프트가 발생합니다.
 
     ![pip 설치를 통해 Flask 라이브러리 설치](media/quickstart-python-03-install-package-2019.png)
 ::: moniker-end
 
-4. 설치 후에는 **솔루션 탐색기**의 환경에 라이브러리가 표시되며 Python 코드에서 해당 라이브러리를 사용할 수 있습니다.
+4. 설치 후에는 **솔루션 탐색기** 의 환경에 라이브러리가 표시되며 Python 코드에서 해당 라이브러리를 사용할 수 있습니다.
 
     ::: moniker range="vs-2017"
     ![Flask 라이브러리가 설치되어 솔루션 탐색기에 표시됨](media/quickstart-python-04-package-installed.png)
@@ -134,11 +134,11 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 이제 작은 웹앱을 구현하기 위해 약간의 Python 코드를 추가할 준비가 되었습니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목**을 차례로 선택합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 항목** 을 차례로 선택합니다.
 
-1. 대화 상자가 나타나면 **빈 Python 파일**을 선택하고 파일의 이름을 *app.py*라고 지정하고 **추가**를 선택합니다. Visual Studio의 편집기 창에서 파일이 자동으로 열립니다.
+1. 대화 상자가 나타나면 **빈 Python 파일** 을 선택하고 파일의 이름을 *app.py* 라고 지정하고 **추가** 를 선택합니다. Visual Studio의 편집기 창에서 파일이 자동으로 열립니다.
 
-1. 다음 코드를 복사하여 *app.py*에 붙여넣습니다.
+1. 다음 코드를 복사하여 *app.py* 에 붙여넣습니다.
 
     ```python
     from flask import Flask
@@ -171,7 +171,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
-1. **솔루션 탐색기**에서 *app.py*를 마우스 오른쪽 단추로 클릭하고 **시작 파일로 설정**을 선택합니다. 이 명령은 앱을 실행할 때 Python으로 실행할 코드 파일을 식별합니다.
+1. **솔루션 탐색기** 에서 *app.py* 를 마우스 오른쪽 단추로 클릭하고 **시작 파일로 설정** 을 선택합니다. 이 명령은 앱을 실행할 때 Python으로 실행할 코드 파일을 식별합니다.
 
     ::: moniker range="vs-2017"
     ![솔루션 탐색기에서 프로젝트에 대한 시작 파일 설정](media/quickstart-python-05-set-as-startup-file.png)
@@ -180,7 +180,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
     ![솔루션 탐색기에서 프로젝트에 대한 시작 파일 설정](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
 
-2. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 그런 다음 **디버그** 탭을 선택하고 **포트 번호** 속성을 `4449`으로 설정합니다. 이 단계를 사용하면 Visual Studio가 코드에서 `app.run` 인수와 일치하는 `localhost:4449`으로 브라우저를 시작합니다.
+2. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. 그런 다음 **디버그** 탭을 선택하고 **포트 번호** 속성을 `4449`으로 설정합니다. 이 단계를 사용하면 Visual Studio가 코드에서 `app.run` 인수와 일치하는 `localhost:4449`으로 브라우저를 시작합니다.
 
 3. **디버그 > 디버깅하지 않고 시작**(**Ctrl**+**F5**)을 선택하여 변경 내용을 파일에 저장하고 앱을 실행합니다.
 
@@ -188,7 +188,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
     브라우저가 자동으로 열리지 않으면 원하는 브라우저를 시작하고 `localhost:4449`으로 이동합니다.
 
-    명령 창에 Python 대화형 셸만 보이거나 창이 화면에서 잠시 깜박이면 위의 1단계에서 *app.py*를 시작 파일로 설정했는지 확인합니다.
+    명령 창에 Python 대화형 셸만 보이거나 창이 화면에서 잠시 깜박이면 위의 1단계에서 *app.py* 를 시작 파일로 설정했는지 확인합니다.
 
 5. `localhost:4449/hello`로 이동하여 `/hello` 리소스에 대한 데코레이터도 작동하는지 테스트합니다. 다시 명령 창에 200 상태와 함께 GET 요청이 나타납니다. 다른 URL도 사용하여 명령 창에서 404 상태 코드가 표시되는지 확인합니다.
 
@@ -196,7 +196,7 @@ Python의 웹앱은 다수의 사용 가능한 Python 라이브러리 중 하나
 
 **질문: 디버깅 없이 시작 명령과 디버깅 시작 간의 차이점은 무엇인가요?**
 
-**대답**: **디버깅 시작**을 사용하여 [Visual Studio 디버거](../python/debugging-python-in-visual-studio.md)의 컨텍스트에서 앱을 실행하면 중단점을 설정하고, 변수를 확인하고, 한 줄씩 코드를 실행할 수 있습니다. 앱은 디버깅할 수 있게 하는 다양한 후크 때문에 디버거에서 느리게 실행될 수 있습니다. 반면, **디버깅 없이 시작**은 디버깅 컨텍스트 없이 명령줄에서 실행한 것처럼 앱을 직접 실행하고, 자동으로 브라우저를 시작하고, 프로젝트 속성  **디버그** 탭에 지정된 URL로 이동합니다.
+**대답**: **디버깅 시작** 을 사용하여 [Visual Studio 디버거](../python/debugging-python-in-visual-studio.md)의 컨텍스트에서 앱을 실행하면 중단점을 설정하고, 변수를 확인하고, 한 줄씩 코드를 실행할 수 있습니다. 앱은 디버깅할 수 있게 하는 다양한 후크 때문에 디버거에서 느리게 실행될 수 있습니다. 반면, **디버깅 없이 시작** 은 디버깅 컨텍스트 없이 명령줄에서 실행한 것처럼 앱을 직접 실행하고, 자동으로 브라우저를 시작하고, 프로젝트 속성  **디버그** 탭에 지정된 URL로 이동합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

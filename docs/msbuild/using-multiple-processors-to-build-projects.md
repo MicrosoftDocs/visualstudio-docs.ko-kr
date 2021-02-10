@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946373"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>다중 프로세서를 사용하여 프로젝트 빌드
 
@@ -38,7 +38,7 @@ MSBuild에서는 다중 프로세서 또는 다중 핵심 프로세서가 있는
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++ 프로젝트(.vcxproj) 및 솔루션(.sln) 파일
 
- C++ 프로젝트( *.vcxproj* ) 및 솔루션( *.sln* ) 파일은 둘 다 [MSBuild 작업](../msbuild/msbuild-task.md)에 전달될 수 있습니다. C++ 프로젝트의 경우 VCWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. C++ 솔루션의 경우 SolutionWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. 두 경우 모두 결과 프로젝트는 다른 MSBuild 프로젝트와 동일하게 처리됩니다.
+ C++ 프로젝트( *.vcxproj*) 및 솔루션( *.sln*) 파일은 둘 다 [MSBuild 작업](../msbuild/msbuild-task.md)에 전달될 수 있습니다. C++ 프로젝트의 경우 VCWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. C++ 솔루션의 경우 SolutionWrapperProject가 호출된 다음 내부 MSBuild 프로젝트가 만들어집니다. 두 경우 모두 결과 프로젝트는 다른 MSBuild 프로젝트와 동일하게 처리됩니다.
 
 ## <a name="multi-process-execution"></a>다중 프로세스 실행
 

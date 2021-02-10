@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4560b21213e3f50061e1f9424d634aeb7b52c2
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 5d1ce4a4ef3f64ca5f3c8235d1169eb28aa6a405
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938540"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>프로파일러 명령줄에서 계측 방법을 사용하여 서비스에 대한 자세한 타이밍 데이터 수집
 이 섹션에서는 명령줄 도구에서 계측 방법을 사용하여 Windows 서비스에 대한 자세한 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.

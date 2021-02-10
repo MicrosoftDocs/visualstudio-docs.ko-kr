@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939554"
 ---
 # <a name="calltarget-task"></a>CallTarget 작업
 

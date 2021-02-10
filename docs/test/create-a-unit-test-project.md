@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8ca3cbe82bf4253e660ce69960570e40702c5512
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942362"
 ---
 # <a name="create-a-unit-test-project"></a>단위 테스트 프로젝트 만들기
 

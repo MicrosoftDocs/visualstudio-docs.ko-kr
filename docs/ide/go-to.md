@@ -11,15 +11,15 @@ helpviewer_keywords:
 - go to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 257db632c095027d9fa4be667a30e809ecb2fff4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946620"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 

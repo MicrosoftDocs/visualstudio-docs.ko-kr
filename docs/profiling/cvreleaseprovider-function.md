@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5175f7f649dad3feed9f93a6e34ae5986ecda11b
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: ae363f1909f169d2d5dc4004a79cfe3c2919bdf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948233"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 함수
 표식 공급자를 해제합니다. 표식 공급자 해제가 이 공급자의 이전에 만든 표식 계열에 영향을 주지 않습니다. 표식 계열은 CvReleaseMarkerSeries 호출을 통해 별도로 해제해야 합니다. 공급자를 해제하지 못하면 메모리 누수가 발생합니다.

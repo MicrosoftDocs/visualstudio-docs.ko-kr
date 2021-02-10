@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: de6a8ffbaa0fb10929d013a351ebffa8e3f4b529
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939437"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -31,13 +31,13 @@ IntelliSense는 R 개체 멤버에 대한 제안도 제공합니다.
 
 ![개체 멤버에 대한 IntelliSense 제안](media/intellisense-auto-complete-r-objects.png)
 
-**Esc** 키를 누르면 메뉴가 완전히 닫힙니다. **Ctrl**+**Space**를 사용하여 다시 표시할 수 있습니다.
+**Esc** 키를 누르면 메뉴가 완전히 닫힙니다. **Ctrl**+**Space** 를 사용하여 다시 표시할 수 있습니다.
 
 함수 호출에 대해 여는 괄호(`(`)를 입력하면 닫는 괄호(`)`)가 삽입되고 앞에서 나온 시그니처 도움말이 표시됩니다.
 
 ![함수에 대한 IntelliSense 시그니처 도움말](media/intellisense-function-signature.png)
 
-다시 **Esc** 키를 누르면 팝업이 닫힙니다. 함수 시그니처의 경우 **Ctrl**+**Shift**+**Space**를 사용하여 다시 표시할 수 있습니다.
+다시 **Esc** 키를 누르면 팝업이 닫힙니다. 함수 시그니처의 경우 **Ctrl**+**Shift**+**Space** 를 사용하여 다시 표시할 수 있습니다.
 
 > [!Tip]
 > 매개 변수 도움말 아래 텍스트가 숨겨져 있는 경우 **Ctrl** 키를 누르고 있으면 매개 변수 도움말 텍스트가 반투명하게 표시됩니다.

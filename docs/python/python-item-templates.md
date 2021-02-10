@@ -5,25 +5,25 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945164"
 ---
 # <a name="python-item-templates"></a>Python 항목 템플릿
 
-항목 템플릿은 **프로젝트** > **새 항목 추가** 메뉴 명령 또는 **솔루션 탐색기**의 상황에 맞는 메뉴에서 **추가** > **새 항목** 명령을 통해 Python 프로젝트에서 사용할 수 있습니다.
+항목 템플릿은 **프로젝트** > **새 항목 추가** 메뉴 명령 또는 **솔루션 탐색기** 의 상황에 맞는 메뉴에서 **추가** > **새 항목** 명령을 통해 Python 프로젝트에서 사용할 수 있습니다.
 
 ![새 항목 추가 대화 상자](media/project-item-templates.png)
 
-항목에 대해 제공한 이름을 사용하여 템플릿은 일반적으로 프로젝트에서 현재 선택한 폴더(폴더를 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴를 표시하면 해당 폴더가 자동으로 선택됨) 내에 하나 이상의 파일 및 폴더를 만듭니다. 항목을 추가하면 Visual Studio 프로젝트에 포함되고 **솔루션 탐색기**에 항목이 나타납니다.
+항목에 대해 제공한 이름을 사용하여 템플릿은 일반적으로 프로젝트에서 현재 선택한 폴더(폴더를 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴를 표시하면 해당 폴더가 자동으로 선택됨) 내에 하나 이상의 파일 및 폴더를 만듭니다. 항목을 추가하면 Visual Studio 프로젝트에 포함되고 **솔루션 탐색기** 에 항목이 나타납니다.
 
 다음 표에서는 Python 프로젝트 내에서 각 항목 템플릿의 효과를 간략히 설명합니다.
 

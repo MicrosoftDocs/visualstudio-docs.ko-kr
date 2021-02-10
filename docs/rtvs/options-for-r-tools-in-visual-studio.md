@@ -10,28 +10,28 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2ee29fb7a0a832dd3076cbd47a7f9cd1414d96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315085"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939476"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio용 R 도구 옵션
 
-설정은 **R 도구** > **옵션** 메뉴를 통해 액세스하거나 **도구** > **옵션**을 통해 **R 도구**로 스크롤하여 액세스합니다.
+설정은 **R 도구** > **옵션** 메뉴를 통해 액세스하거나 **도구** > **옵션** 을 통해 **R 도구** 로 스크롤하여 액세스합니다.
 
   ![R 도구의 [옵션] 대화 상자](media/options-dialog.png)
 
 아래 방법을 사용하여 R에 관련된 옵션 및 설정에 액세스합니다. 이러한 섹션을 모두 표시하려면 **옵션** 대화 상자의 맨 아래에 있는 **모든 설정 표시** 상자를 선택해야 합니다.
 
-- 코드 서식 지정 옵션([편집기 옵션](editing-r-code-in-visual-studio.md#editor-options) 참조: **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **서식 지정**을 선택합니다.
-- Linter 옵션([Linting](linting-r-code.md) 참조): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **Lint**를 선택합니다.
-- 고급 편집기 옵션([이 문서에 설명됨](#text-editor--r--advanced-options)): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **고급**을 선택합니다.
-- 동작 옵션([이 문서에 설명됨](#r-tools--advanced-options)): **R 도구** > **옵션** 메뉴 또는 **도구** > **옵션**에서 **R 도구**까지 스크롤합니다.
+- 코드 서식 지정 옵션([편집기 옵션](editing-r-code-in-visual-studio.md#editor-options) 참조: **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **서식 지정** 을 선택합니다.
+- Linter 옵션([Linting](linting-r-code.md) 참조): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **Lint** 를 선택합니다.
+- 고급 편집기 옵션([이 문서에 설명됨](#text-editor--r--advanced-options)): **도구** > **옵션** 메뉴에서 **텍스트 편집기** > **R** > **고급** 을 선택합니다.
+- 동작 옵션([이 문서에 설명됨](#r-tools--advanced-options)): **R 도구** > **옵션** 메뉴 또는 **도구** > **옵션** 에서 **R 도구** 까지 스크롤합니다.
 
 **R 도구** > **데이터 과학 설정** 명령은 전체 Visual Studio에서 다양한 다른 설정에도 영향을 미칩니다. 이 명령에 대해서는 다음 섹션에서 설명합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "89315085"
 
 ![Visual Studio의 데이터 과학자 창 레이아웃](media/installation-data-scientist-layout-result.png)
 
-나중에 다른 Visual Studio 설정으로 되돌리려면 먼저 **도구** > **설정 가져오기 및 내보내기** 명령을 사용하여 **선택한 환경 설정 내보내기**를 선택하고 파일 이름을 지정합니다. 이러한 설정을 복원하려면 동일한 명령을 사용하고 **선택한 환경 설정 가져오기**를 선택합니다. 데이터 과학자 레이아웃을 변경한 후 나중에 다시 해당 레이아웃으로 돌아가려는 경우에도 **데이터 과학 설정** 명령을 직접 사용하는 대신 같은 명령을 사용할 수 있습니다.
+나중에 다른 Visual Studio 설정으로 되돌리려면 먼저 **도구** > **설정 가져오기 및 내보내기** 명령을 사용하여 **선택한 환경 설정 내보내기** 를 선택하고 파일 이름을 지정합니다. 이러한 설정을 복원하려면 동일한 명령을 사용하고 **선택한 환경 설정 가져오기** 를 선택합니다. 데이터 과학자 레이아웃을 변경한 후 나중에 다시 해당 레이아웃으로 돌아가려는 경우에도 **데이터 과학 설정** 명령을 직접 사용하는 대신 같은 명령을 사용할 수 있습니다.
 
 ## <a name="text-editor--r--advanced-options"></a>텍스트 편집기 > R > 고급 옵션
 
@@ -82,8 +82,8 @@ ms.locfileid: "89315085"
 
 | 옵션 | 기본값 | Description |
 | --- | --- | --- |
-| F1 웹 브라우저 | `Internal` | **Ctrl**+**F1**을 사용하여 용어를 검색하는 동안 도움말이 표시되는 방식을 제어합니다. `Internal`로 설정되면 Visual Studio의 도구 창 내에서 도움말이 렌더링됩니다. `External`로 설정되면 기본 웹 브라우저에서 도움말이 나타납니다. |
-| F1 웹 검색 문자열 | `R site:stackoverflow.com` | 편집기의 용어에서 **Ctrl**+**F1**을 누를 때 검색어가 검색 엔진에 전달되는 방식을 제어합니다. 기본적으로 문자열은 `R site:stackoverflow.com`입니다. 이 문자열은 `R`를 검색어에 추가합니다. `site:stackoverflow.com`은 `stackoverflow.com` 도메인 내의 페이지로 검색 범위를 지정하도록 알리는 검색 엔진에 대한 지시문입니다. |
+| F1 웹 브라우저 | `Internal` | **Ctrl**+**F1** 을 사용하여 용어를 검색하는 동안 도움말이 표시되는 방식을 제어합니다. `Internal`로 설정되면 Visual Studio의 도구 창 내에서 도움말이 렌더링됩니다. `External`로 설정되면 기본 웹 브라우저에서 도움말이 나타납니다. |
+| F1 웹 검색 문자열 | `R site:stackoverflow.com` | 편집기의 용어에서 **Ctrl**+**F1** 을 누를 때 검색어가 검색 엔진에 전달되는 방식을 제어합니다. 기본적으로 문자열은 `R site:stackoverflow.com`입니다. 이 문자열은 `R`를 검색어에 추가합니다. `site:stackoverflow.com`은 `stackoverflow.com` 도메인 내의 페이지로 검색 범위를 지정하도록 알리는 검색 엔진에 대한 지시문입니다. |
 | R 도움말 브라우저 | `Automatic` | **F1**, **?** 또는 **??** 를 사용하여 R 문서를 검색하는 동안 도움말이 표시되는 방식을 제어합니다. `Automatic`으로 설정되면 해당하는 창에서 도움말이 렌더링됩니다. 예를 들어 HTML 도움말은 Visual Studio 도구 창 내에 표시되지만 PDF는 기본 PDF 프로그램에 나타납니다. `External`로 설정되면 기본 웹 브라우저에서 도움말이 렌더링됩니다. |
 
 ### <a name="history"></a>기록

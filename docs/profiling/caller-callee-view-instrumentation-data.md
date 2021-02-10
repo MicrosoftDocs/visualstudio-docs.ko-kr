@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd9f65fbce6f0326fab89acfef601652c9bc7b9
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 06de8e10c57bdf6278310467d3cf0505b9c8ce4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939489"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>호출자/호출 수신자 뷰 - 계측 데이터
 호출자/호출 수신자 뷰는 호출 트리에서 선택한 함수와 해당 부모 및 자식 함수에 대한 프로파일링 정보를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fb0a0f4a1610eb23d68b6965e3f45a661ba25366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940594"
 ---
 # <a name="threads-view"></a>스레드 뷰
 스레드 뷰는 시스템의 창과 연결된 모든 스레드를 보여 주는 단순 목록입니다. 각 스레드의 스레드 ID 및 모듈 이름을 보여 줍니다. 프로세스는 포함되지 않지만, 선택한 스레드를 소유하는 프로세스를 쉽게 찾을 수 있습니다.

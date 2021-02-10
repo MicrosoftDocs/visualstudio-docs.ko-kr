@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939541"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -27,7 +27,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ## <a name="use-a-project-template"></a>프로젝트 템플릿 사용
 
-**파일** > **새로 만들기** > **프로젝트**를 사용하여 템플릿에서 프로젝트를 만듭니다. 웹 프로젝트에 대한 템플릿을 보려면 대화 상자의 왼쪽에서 **Python** > **웹**를 선택합니다. 그런 다음, 원하는 템플릿을 선택하여 프로젝트 및 솔루션의 이름을 제공하고 솔루션 디렉터리와 Git 리포지토리에 대한 옵션을 설정한 후 **확인**을 선택합니다.
+**파일** > **새로 만들기** > **프로젝트** 를 사용하여 템플릿에서 프로젝트를 만듭니다. 웹 프로젝트에 대한 템플릿을 보려면 대화 상자의 왼쪽에서 **Python** > **웹** 를 선택합니다. 그런 다음, 원하는 템플릿을 선택하여 프로젝트 및 솔루션의 이름을 제공하고 솔루션 디렉터리와 Git 리포지토리에 대한 옵션을 설정한 후 **확인** 을 선택합니다.
 
 ![웹앱의 새 프로젝트 대화 상자](media/projects-new-project-dialog-web.png)
 
@@ -41,7 +41,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 | 템플릿 | Description |
 | --- | --- |
-| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py*에 최소 앱을 생성합니다. |
+| **빈 Bottle 웹 프로젝트** | 매우 짧은 인라인 페이지 템플릿을 사용하여 `<name>`을 에코하는 `/` 및 `/hello/<name>` 페이지의 홈페이지를 사용하여 *app.py* 에 최소 앱을 생성합니다. |
 | **빈 Django 웹 프로젝트** | 코어 Django 사이트 구조를 사용하지만 Django 앱은 포함되지 않은 Django 프로젝트를 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 1단계](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요. |
 | **빈 Flask 웹 프로젝트** | 최소 앱을 `/`에 대한 단일 “Hello World!” 페이지로 생성합니다. 이 앱은 [빠른 시작: Visual Studio를 사용하여 첫 번째 Python 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)의 자세한 단계를 수행한 결과와 유사합니다. [Flask 알아보기 1단계](learn-flask-visual-studio-step-01-project-solution.md)도 참조하세요.
 
@@ -51,9 +51,9 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 | 템플릿 | Description |
 | --- | --- |
-| **Bottle 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되고 *app.py*의 코드를 통해 처리되는 앱을 생성합니다. 개별 페이지에 대한 라우팅은 *routes.py*에 포함되며, *보기* 폴더에는 페이지 템플릿이 포함되어 있습니다.|
+| **Bottle 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되고 *app.py* 의 코드를 통해 처리되는 앱을 생성합니다. 개별 페이지에 대한 라우팅은 *routes.py* 에 포함되며, *보기* 폴더에는 페이지 템플릿이 포함되어 있습니다.|
 | **Django 웹 프로젝트** | 세 개의 페이지, 인증 지원 및 SQLite 데이터베이스(데이터 모델 없음)를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 4단계](learn-django-in-visual-studio-step-04-full-django-project-template.md)를 참조하세요. |
-| **Flask 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되는 앱을 생성합니다. *views.py*의 코드는 *templates* 폴더에 포함된 Jinja 엔진을 사용하는 페이지 템플릿을 사용하여 라우팅을 처리합니다. *runserver.py*파일은 시작 코드를 제공합니다. [Flask 알아보기 4단계](learn-flask-visual-studio-step-04-full-flask-project-template.md)를 참조하세요. |
+| **Flask 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되는 앱을 생성합니다. *views.py* 의 코드는 *templates* 폴더에 포함된 Jinja 엔진을 사용하는 페이지 템플릿을 사용하여 라우팅을 처리합니다. *runserver.py* 파일은 시작 코드를 제공합니다. [Flask 알아보기 4단계](learn-flask-visual-studio-step-04-full-flask-project-template.md)를 참조하세요. |
 | **Flask/Jade 웹 프로젝트** | **Flask 웹 프로젝트** 템플릿과 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진용 Jade 확장을 사용합니다. |
 
 ### <a name="polls-group"></a>설문 조사 그룹
@@ -73,7 +73,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ![프로젝트 템플릿에 대해 필요한 패키지를 설치하는 대화 상자](media/template-web-requirements-txt-wizard.png)
 
-소스 제어를 사용하는 경우 가상 환경은 *requirements.txt*만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치**를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
+소스 제어를 사용하는 경우 가상 환경은 *requirements.txt* 만 사용하여 다시 만들 수 있기 때문에 일반적으로 가상 환경 폴더를 생략합니다. 폴더를 제외하는 가장 좋은 방법은 먼저 위에 표시된 프롬프트에서 **직접 설치** 를 선택한 다음, 가상 환경을 만들기 전에 자동 커밋을 사용하지 않도록 설정하는 것입니다. 자세한 내용은 [Django 자습서 학습 - 1-2 및 1-3단계](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 및 [Flask 자습서 학습 - 1-2 및 1-3단계](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)를 참조하세요.
 
 Microsoft Azure App Service에 배포할 때는 [사이트 확장](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
@@ -81,7 +81,7 @@ Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*
 
 ## <a name="debugging"></a>디버깅
 
-디버깅을 위해 웹 프로젝트가 시작되면 Visual Studio는 임의 포트에서 로컬 웹 서버를 시작하고 해당 주소 및 포트로 기본 브라우저를 엽니다. 추가 옵션을 지정하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**를 선택하고 **웹 시작 관리자** 탭을 선택합니다.
+디버깅을 위해 웹 프로젝트가 시작되면 Visual Studio는 임의 포트에서 로컬 웹 서버를 시작하고 해당 주소 및 포트로 기본 브라우저를 엽니다. 추가 옵션을 지정하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 를 선택하고 **웹 시작 관리자** 탭을 선택합니다.
 
 ![일반 웹 템플릿에 대한 웹 시작 관리자 속성](media/template-web-launcher-properties.png)
 
@@ -101,7 +101,7 @@ MSBuild 구문으로 모든 프로젝트 속성 또는 환경 변수를 지정�
 `$(StartupFile)`은 시작 파일에 대한 상대 경로이며 `{StartupModule}`은 시작 파일의 가져올 수 있는 이름입니다. `$(SERVER_HOST)` 및 `$(SERVER_PORT)`는 **시작 URL** 및 **포트 번호** 속성으로 자동으로 설정되거나 **환경** 속성으로 설정되는 일반 환경 변수입니다.
 
 > [!Note]
-> **서버 실행 명령**의 값은 **디버그** > **서버 시작** 명령이나 **Ctrl**+**F5**에 사용되며 **서버 디버그 명령** 그룹의 값은 **디버그** > **서버 디버그 시작** 명령이나 **F5**에 사용됩니다.
+> **서버 실행 명령** 의 값은 **디버그** > **서버 시작** 명령이나 **Ctrl**+**F5** 에 사용되며 **서버 디버그 명령** 그룹의 값은 **디버그** > **서버 디버그 시작** 명령이나 **F5** 에 사용됩니다.
 
 ### <a name="sample-bottle-configuration"></a>샘플 Bottle 구성
 

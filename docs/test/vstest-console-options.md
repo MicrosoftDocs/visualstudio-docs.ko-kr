@@ -9,15 +9,15 @@ helpviewer_keywords:
 - command-line tests
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
-ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
+ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946191"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 

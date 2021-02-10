@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e6ad377ddb457018099256cd64b6b8382c69df81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942076"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용하여 코드 탐색
 

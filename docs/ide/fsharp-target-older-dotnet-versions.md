@@ -5,16 +5,16 @@ ms.date: 07/11/2018
 ms.topic: troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 4b5cf62dadc38802e477c7588416b4003304e852
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe9d87a5cdea04251d7ab30b6e9e0fed6b0c4b31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75584584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945528"
 ---
 # <a name="target-older-versions-of-net-f"></a>.NET의 이전 버전 대상 지정(F#)
 
@@ -42,7 +42,7 @@ Visual Studio를 설치할 때 설치된 .NET Framework의 버전을 검색합�
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Windows 8.1에서 .NET Framework 3.5를 사용하도록 설정하려면 다음을 수행합니다.
 
-1. **시작** 화면에서 **제어판**을 입력합니다.
+1. **시작** 화면에서 **제어판** 을 입력합니다.
 
    입력할 때 **제어판** 아이콘이 **앱** 제목 아래에 표시됩니다.
 

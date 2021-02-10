@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 18cf60804e65f2cb67f74c5739a879a633043778
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936615"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: 지원되지 않는 CLR 버전
 

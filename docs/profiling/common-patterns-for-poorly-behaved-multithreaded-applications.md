@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 9fc83fd49184a0bb784b44ec80588571e8d6e560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941322"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴
 

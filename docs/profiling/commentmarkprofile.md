@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e943be08ffd586347ab5de54cb803bcedc8c24d7
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 2518a7dbd97643b1eaa49daa8dd3e6007dcdbb93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941296"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 함수는 숫자 마커 및 텍스트 문자열을 *.vsp* 파일에 삽입합니다. 삽입될 표시 및 주석의 경우 `CommentMarkProfile` 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.

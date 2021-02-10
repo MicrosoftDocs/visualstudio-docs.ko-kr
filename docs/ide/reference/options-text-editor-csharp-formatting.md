@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: eea4f9afd82dd87385e02ba9f149e91f336369a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039773"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944071"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>옵션 대화 상자: 텍스트 편집기 \> C# \> 코드 스타일 \> 서식
 

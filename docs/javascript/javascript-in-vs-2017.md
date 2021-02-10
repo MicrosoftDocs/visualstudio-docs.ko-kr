@@ -13,13 +13,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
-manager: jillfra
-ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+manager: jmartens
+ms.openlocfilehash: b39ee716c5092f41ef3ea8f05c529509ceca3717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936862"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 

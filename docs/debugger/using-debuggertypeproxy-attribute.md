@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2fdd0b67075a66663146d706d8f82e8c5d9f76e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940542"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 특성을 사용하여 디버거에 표시할 내용 지시(C#, Visual Basic, C++/CLI)
 

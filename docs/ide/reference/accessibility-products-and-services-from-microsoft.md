@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c244d905473ccd8dc01867c9802c1094a2b3bdb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72919096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939827"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft의 내게 필요한 옵션 제품 및 서비스
 

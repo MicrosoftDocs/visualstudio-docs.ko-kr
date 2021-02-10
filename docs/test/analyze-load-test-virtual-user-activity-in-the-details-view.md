@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: f7ae7afa183e2f23a46c8aa4c0b175aecdb44bd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948090"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 세부 정보 뷰에서 부하 테스트 가상 사용자 동작 분석
 

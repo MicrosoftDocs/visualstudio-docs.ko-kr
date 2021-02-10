@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 62993611ef7359095512f494767bbd3ea4cce5d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946581"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>클래스 디자이너에서 C++ 코드 사용
 

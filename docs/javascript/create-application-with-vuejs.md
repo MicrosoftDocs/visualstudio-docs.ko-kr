@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e16b09a165421d36c67dad1fc657fd36846cd382
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285168"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942830"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 
@@ -40,16 +40,16 @@ Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 
     필요한 버전이 아직 설치되어 있지 않은 경우 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 설치하세요.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  페이지로 이동하여 체험용으로 설치합니다.
+    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
     ::: moniker-end
 
-    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
 * ASP.NET Core 프로젝트를 만들려면 ASP.NET 및 웹 개발 및 .NET Core 플랫폼 간 개발 워크로드를 설치해야 합니다.
 
 * Node.js 런타임을 설치해야 합니다.
 
-    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임에서 검색되지 않을 경우 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다. (프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.)
+    아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임에서 검색되지 않을 경우 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다. (프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다.)
 
 ## <a name="create-a-vuejs-project-using-nodejs"></a>Node.js를 사용하여 Vue.js 프로젝트 만들기
 
@@ -71,15 +71,15 @@ Vue.js는 빠르게 프로젝트를 스캐폴딩하기 위한 공식 CLI를 제�
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력한 후 **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 표시되는 대화 상자에서 **클라이언트 앱**의 이름을 선택한 다음, **만들기**를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력한 후 **새 ASP.NET Core 웹 애플리케이션 만들기** 를 선택합니다. 표시되는 대화 상자에서 **클라이언트 앱** 의 이름을 선택한 다음, **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장한 후 **웹**을 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택하고 **클라이언트 앱**의 이름을 입력한 다음, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 을 확장한 후 **웹** 을 선택합니다. 가운데 창에서 **ASP.NET Core 웹 애플리케이션** 을 선택하고 **클라이언트 앱** 의 이름을 입력한 다음, **확인** 을 선택합니다.
     ::: moniker-end
 
-    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 먼저 **ASP.NET 및 웹 개발** 워크로드 및 .**NET Core** 개발 워크로드를 설치해야 합니다. 워크로드를 설치하려면 **새 프로젝트**(**파일** > **새로 만들기** > **프로젝트**를 선택) 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 필요한 워크로드를 선택합니다.
+    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 먼저 **ASP.NET 및 웹 개발** 워크로드 및 .**NET Core** 개발 워크로드를 설치해야 합니다. 워크로드를 설치하려면 **새 프로젝트**(**파일** > **새로 만들기** > **프로젝트** 를 선택) 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 필요한 워크로드를 선택합니다.
 
-1. **비어 있음**을 선택한 다음, **확인**을 클릭합니다.
+1. **비어 있음** 을 선택한 다음, **확인** 을 클릭합니다.
 
     Visual Studio에서 프로젝트를 만들고 솔루션 탐색기에서 열립니다(오른쪽 창).
 
@@ -119,9 +119,9 @@ vue cli npm 모듈을 설치하려면 명령 프롬프트를 열고 버전 3.0�
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>빌드가 트리거될 때마다 프로젝트가 클라이언트 앱을 빌드하도록 지시
 
-1. Visual Studio에서 **프로젝트** > **속성** > **이벤트 빌드**로 이동합니다.
+1. Visual Studio에서 **프로젝트** > **속성** > **이벤트 빌드** 로 이동합니다.
 
-1. **빌드 전 이벤트 명령줄**에서 `npm --prefix ./client-app run build`를 입력합니다.
+1. **빌드 전 이벤트 명령줄** 에서 `npm --prefix ./client-app run build`를 입력합니다.
 
 #### <a name="configure-webpacks-output-module-names"></a>webpack의 출력 모듈 이름 구성
 
@@ -138,9 +138,9 @@ vue cli npm 모듈을 설치하려면 명령 프롬프트를 열고 버전 3.0�
 
 1. 명령 프롬프트로 이동한 후 현재 디렉터리를 프로젝트 루트 폴더로 변경합니다.
 
-1. `vue create client-app`을 입력한 다음, **기능을 수동으로 선택**을 선택합니다.
+1. `vue create client-app`을 입력한 다음, **기능을 수동으로 선택** 을 선택합니다.
 
-1. **Typescript**를 선택한 다음, 다른 원하는 옵션을 선택합니다.
+1. **Typescript** 를 선택한 다음, 다른 원하는 옵션을 선택합니다.
 
 1. 나머지 단계를 수행하고 질문에 답합니다.
 
@@ -171,7 +171,7 @@ vue cli npm 모듈을 설치하려면 명령 프롬프트를 열고 버전 3.0�
 
 vue-cli 3.0의 알 수 없는 문제로 인해 빌드 프로세스를 자동화하지 못할 수 있습니다. wwwroot 폴더를 새로 고치려고 할 때마다 클라이언트 앱 폴더에서 `npm run build` 명령을 실행해야 합니다.
 
-또는 ASP.NET 프로젝트 속성을 사용하여 빌드 전 이벤트로 vue-cli 3.0 프로젝트를 빌드할 수 있습니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택한 다음, **빌드** 탭의 **빌드 전 이벤트 명령줄** 텍스트 상자에 다음 명령을 포함합니다.
+또는 ASP.NET 프로젝트 속성을 사용하여 빌드 전 이벤트로 vue-cli 3.0 프로젝트를 빌드할 수 있습니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택한 다음, **빌드** 탭의 **빌드 전 이벤트 명령줄** 텍스트 상자에 다음 명령을 포함합니다.
 
 ``` cmd
 cd ./client-app

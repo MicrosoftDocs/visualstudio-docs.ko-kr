@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0e782b0d141666ca7d1f79464d60afd89ef871
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 0f163f1aca78832f38e73eaaed882ae1ac6cff17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943941"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
 

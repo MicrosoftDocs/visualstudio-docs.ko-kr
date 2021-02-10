@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c8e90a649a11933e4281140299bf9ee1b564a212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939632"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 
@@ -30,7 +30,7 @@ ms.locfileid: "92353241"
 - MSBuild 작업에서 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 작업 매개 변수.
 
 > [!NOTE]
-> 명령줄의 **verbosity** ( **-v** ) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
+> 명령줄의 **verbosity**(**-v**) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount 스위치
 

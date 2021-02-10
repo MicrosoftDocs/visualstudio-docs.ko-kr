@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944539"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>코드 편집기를 사용하여 Visual Basic을 작업하는 방법 알아보기
 
@@ -54,13 +54,13 @@ Visual Studio의 코드 편집기에 대한 이 10분 소개에서 코드를 파
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio를 엽니다. **Esc** 키를 누르거나 시작 창에서 **코드를 사용하지 않고 계속**을 클릭하여 개발 환경을 엽니다.
+1. Visual Studio를 엽니다. **Esc** 키를 누르거나 시작 창에서 **코드를 사용하지 않고 계속** 을 클릭하여 개발 환경을 엽니다.
 
 ::: moniker-end
 
-2. 메뉴 모음의 **파일** 메뉴에서 **새 파일**을 선택합니다.
+2. 메뉴 모음의 **파일** 메뉴에서 **새 파일** 을 선택합니다.
 
-3. **새 파일** 대화 상자의 **일반** 범주 아래에서 **Visual Basic 클래스**를 선택한 다음, **열기**를 선택합니다.
+3. **새 파일** 대화 상자의 **일반** 범주 아래에서 **Visual Basic 클래스** 를 선택한 다음, **열기** 를 선택합니다.
 
    Visual Basic의 구조를 사용하여 편집기에서 새 파일이 열립니다. (구문 강조와 같은 코드 편집기에서 제공하는 일부 혜택을 가져오기 위해 전체 Visual Studio 프로젝트를 만들 필요가 없다는 것을 이미 알 수 있습니다. 코드 파일만 있으면 됩니다.)
 
@@ -68,9 +68,9 @@ Visual Studio의 코드 편집기에 대한 이 10분 소개에서 코드를 파
 
 ## <a name="use-code-snippets"></a>코드 조각 사용
 
-Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각*을 제공합니다. [코드 조각](../../ide/code-snippets.md)은 Visual Basic, C# 및 C++를 비롯한 다양한 프로그래밍 언어에서 사용할 수 있습니다. Visual Basic **Sub** 코드 조각을 파일에 추가해 보겠습니다.
+Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각* 을 제공합니다. [코드 조각](../../ide/code-snippets.md)은 Visual Basic, C# 및 C++를 비롯한 다양한 프로그래밍 언어에서 사용할 수 있습니다. Visual Basic **Sub** 코드 조각을 파일에 추가해 보겠습니다.
 
-1. `End Class`라는 줄 위에 커서를 놓고, **sub**를 입력합니다.
+1. `End Class`라는 줄 위에 커서를 놓고, **sub** 를 입력합니다.
 
    `Sub` 키워드 및 **Sub** 코드 조각을 삽입하는 방법에 대한 정보가 포함된 팝업 대화 상자가 표시됩니다.
 
@@ -80,7 +80,7 @@ Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠�
 
    Sub 프로시저 `MySub()`에 대한 개요가 파일에 추가됩니다.
 
-사용 가능한 코드 조각은 프로그래밍 언어마다 다릅니다. **편집** > **IntelliSense** > **조각 삽입**을 선택하여(또는 **Ctrl**+**K**, **Ctrl**+**X**를 눌러서) Visual Basic에 대해 사용 가능한 코드 조각을 확인할 수 있습니다. Visual Basic의 경우 코드 조각은 다음 범주에 대해 사용할 수 있습니다.
+사용 가능한 코드 조각은 프로그래밍 언어마다 다릅니다. **편집** > **IntelliSense** > **조각 삽입** 을 선택하여(또는 **Ctrl**+**K**, **Ctrl**+**X** 를 눌러서) Visual Basic에 대해 사용 가능한 코드 조각을 확인할 수 있습니다. Visual Basic의 경우 코드 조각은 다음 범주에 대해 사용할 수 있습니다.
 
 ![Visual Basic 코드 조각 목록](media/tutorial-code-snippet-list.png)
 
@@ -124,17 +124,17 @@ Visual Studio의 메뉴 모음에 있는 단추 행인 도구 모음은 코딩�
 
 ## <a name="collapse-code-blocks"></a>코드 블록 축소
 
-코드 섹션을 축소하여 관심 있는 부분에만 집중할 수 있습니다. 연습하려면 `_words` 배열을 하나의 코드 줄로 축소합니다. `Dim _words = New String() {`이라고 표시된 줄 여백에 있는 작은 회색 상자 안에 빼기 기호를 선택합니다. 또는 키보드 사용자인 경우 배열 정의의 아무 곳에나 커서를 두고 **Ctrl**+**M**, **Ctrl**+**M**을 누릅니다.
+코드 섹션을 축소하여 관심 있는 부분에만 집중할 수 있습니다. 연습하려면 `_words` 배열을 하나의 코드 줄로 축소합니다. `Dim _words = New String() {`이라고 표시된 줄 여백에 있는 작은 회색 상자 안에 빼기 기호를 선택합니다. 또는 키보드 사용자인 경우 배열 정의의 아무 곳에나 커서를 두고 **Ctrl**+**M**, **Ctrl**+**M** 을 누릅니다.
 
 ![축소 단추 개요](media/tutorial-collapse.png)
 
-코드 블록은 줄임표(`...`) 뒤에 있는 첫 번째 줄로 축소됩니다. 코드 블록을 다시 확장하려면 더하기 기호가 있는 동일한 회색 상자를 클릭하거나 **Ctrl**+**M**, **Ctrl**+**M**을 다시 누릅니다. 이 기능은 [개요](../../ide/outlining.md)라고 하고 긴 메서드 또는 전체 클래스를 축소하는 경우에 특히 유용합니다.
+코드 블록은 줄임표(`...`) 뒤에 있는 첫 번째 줄로 축소됩니다. 코드 블록을 다시 확장하려면 더하기 기호가 있는 동일한 회색 상자를 클릭하거나 **Ctrl**+**M**, **Ctrl**+**M** 을 다시 누릅니다. 이 기능은 [개요](../../ide/outlining.md)라고 하고 긴 메서드 또는 전체 클래스를 축소하는 경우에 특히 유용합니다.
 
 ## <a name="view-symbol-definitions"></a>기호 정의 보기
 
-Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 검사할 수 있습니다. 예를 들어 기호가 참조되는 **정의로 이동**을 선택하는 것이 정의가 포함되는 파일을 탐색하는 한 가지 방법입니다. [정의 피킹](../../ide/go-to-and-peek-definition.md#peek-definition)을 사용하는 것도 작업 중인 파일에서 포커스를 이동하지 않는 더욱 빠른 방식입니다. `String` 형식의 정의를 피킹하겠습니다.
+Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 검사할 수 있습니다. 예를 들어 기호가 참조되는 **정의로 이동** 을 선택하는 것이 정의가 포함되는 파일을 탐색하는 한 가지 방법입니다. [정의 피킹](../../ide/go-to-and-peek-definition.md#peek-definition)을 사용하는 것도 작업 중인 파일에서 포커스를 이동하지 않는 더욱 빠른 방식입니다. `String` 형식의 정의를 피킹하겠습니다.
 
-1. `String` 단어를 마우스 오른쪽 단추로 클릭하고 콘텐츠 메뉴에서 **정의 피킹**을 선택합니다. 또는 **Alt**+**F12** 키를 누릅니다.
+1. `String` 단어를 마우스 오른쪽 단추로 클릭하고 콘텐츠 메뉴에서 **정의 피킹** 을 선택합니다. 또는 **Alt**+**F12** 키를 누릅니다.
 
    `String` 클래스의 정의를 포함한 팝업 창이 표시됩니다. 팝업 창 내에서 스크롤하거나 피킹된 코드에서 다른 형식의 정의에 피킹할 수도 있습니다.
 
@@ -152,7 +152,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
    For Each str In qu
    ```
 
-   IntelliSense에 `query` 기호에 대한 **요약 정보**가 표시됩니다.
+   IntelliSense에 `query` 기호에 대한 **요약 정보** 가 표시됩니다.
 
    ![Visual Studio에서 IntelliSense 단어 완성](media/tutorial-intellisense-completion-list.png)
 
@@ -170,15 +170,15 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 
 누구도 처음부터 제대로 코딩할 수 없습니다. 변경할 수 있는 작업 중 하나는 변수 또는 메서드의 이름입니다. Visual Studio의 [리팩터링](../../ide/refactoring-in-visual-studio.md) 기능을 사용하여 `_words` 변수 이름을 `words`로 변경해 보겠습니다.
 
-1. `_words` 변수의 정의 위에 커서를 놓고 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **이름 바꾸기**를 선택합니다.
+1. `_words` 변수의 정의 위에 커서를 놓고 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택합니다.
 
    편집기의 오른쪽 위에 팝업 **이름 바꾸기** 대화 상자가 나타납니다.
 
-1. 변수 `_words`를 계속 선택한 상태에서 **단어**의 원하는 이름을 입력합니다. 쿼리에서 `words`에 대한 참조 이름이 자동으로 바뀝니다. **Enter**를 누르거나 **적용**을 클릭하기 전에 **이름 바꾸기** 팝업 상자에서 **주석 포함** 확인란을 선택합니다.
+1. 변수 `_words`를 계속 선택한 상태에서 **단어** 의 원하는 이름을 입력합니다. 쿼리에서 `words`에 대한 참조 이름이 자동으로 바뀝니다. **Enter** 를 누르거나 **적용** 을 클릭하기 전에 **이름 바꾸기** 팝업 상자에서 **주석 포함** 확인란을 선택합니다.
 
    ![이름 바꾸기 대화 상자](media/tutorial-rename.png)
 
-1. **Enter**를 누르거나 **적용**을 클릭합니다.
+1. **Enter** 를 누르거나 **적용** 을 클릭합니다.
 
    코드 주석의 `words`에 대한 참조뿐만 아니라 `words`의 두 항목 이름이 모두 변경됩니다.
 

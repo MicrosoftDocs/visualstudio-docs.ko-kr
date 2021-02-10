@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7b7cf8883e1a0c94756f7dcd9cc3a0a99744c9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941101"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
 동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식* 이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)(동시성 시각화 도우미 SDK 소개)를 참조하세요.

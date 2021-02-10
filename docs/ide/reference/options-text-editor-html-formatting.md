@@ -9,15 +9,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943837"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>옵션, 텍스트 편집기, HTML(Web Forms), 서식 지정
 
