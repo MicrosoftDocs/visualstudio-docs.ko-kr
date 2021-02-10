@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97ac7dc9afbd3b740c95a7e76a30836e938eaeaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968504"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>중단점이 바인딩 또는 바인딩 해제 되는 경우
 [IDebugPendingBreakpoint2:: CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 메서드를 호출 하는 시점에 중단점을 바인딩할 수 없는 경우 중단점의 바인딩 시간과 생성 시간이 다릅니다.

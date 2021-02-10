@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 930166d84e6203b0d1d62ef661e768f0f14e60f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961055"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
 포트 공급자는 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스를 구현 해야 합니다. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)

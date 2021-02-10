@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8326bb2c3938ce76d777c73d0d0f24da145d8ef5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961068"
 ---
 # <a name="register-the-program"></a>프로그램 등록
 디버그 엔진이 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 인터페이스로 표시 되는 포트를 가져온 후 프로그램을 디버그할 수 있도록 하는 다음 단계는 포트에 등록 하는 것입니다. 등록 된 프로그램은 다음 방법 중 하나를 사용 하 여 디버그할 수 있습니다.

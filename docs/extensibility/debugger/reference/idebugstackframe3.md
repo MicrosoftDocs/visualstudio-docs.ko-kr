@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86997d11e124fd5a47981314cf383f5cd8aff7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961185"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 이 인터페이스는 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 를 확장 하 여 차단 되는 예외를 처리 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -37,7 +37,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)에서 상속 된 메서드 외에도 `IDebugStackFrame3` 는 다음 메서드를 노출 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|일반적인 예외 처리 전에 현재 스택 프레임에 대 한 예외를 처리 합니다.|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|스택 해제가 발생 하는 경우 코드 컨텍스트를 반환 합니다.|
@@ -61,7 +61,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

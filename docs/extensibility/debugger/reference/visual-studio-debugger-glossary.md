@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961198"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 디버거 용어집
 다음은 디버깅 SDK에 사용 되는 용어 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 입니다.
 
-## <a name="terms"></a>용어
+## <a name="terms"></a>사용 약관
  바인딩된 중단점 코드에 설정 된 중단점에 대 한 추상화입니다. 바인딩된 중단점과 코드 스트림의 중단점 명령 사이에 일 대 일 관계가 있습니다. 코드가 언로드될 때 바인딩된 중단점의 바인딩을 해제할 수 있습니다.
 
  인과 관계는 여러 물리적 스레드, 프로세스 및 컴퓨터에서 실행의 논리적 스레드를 추적 하 고 해당 스레드의 수명에서 지정 된 지점에 있는 해당 논리 스레드의 호출 스택을 다시 생성할 수 있는 기능을 제공 합니다.

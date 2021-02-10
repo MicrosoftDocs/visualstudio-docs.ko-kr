@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 590705e7fb55315176d5533a9cd009784430ea4d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6aa2daf8e03f61d529f0d07c8f78af49821fa92b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960015"
 ---
 # <a name="summary-view---net-memory-data"></a>요약 뷰 - .NET 메모리 데이터
 요약 뷰에는 .NET 함수 및 메모리를 가장 많이 할당한 형식과 프로파일링 실행에서 가장 여러 번 생성된 형식에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b4c91d47fc1123a6737873fd27b7c95e0a98487
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7ee7c76e02d08f0893fedee2530a74ef235e66a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961029"
 ---
 # <a name="s_taskidcounter-field"></a>s_taskIdCounter 필드
 개체의 다음으로 사용할 수 있는 식별자 <xref:System.Threading.Tasks.Task> 입니다.
@@ -34,5 +34,5 @@ ms.locfileid: "80713127"
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

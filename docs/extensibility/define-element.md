@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968452"
 ---
 # <a name="define-element"></a>Define 요소
 기호 이름 및 값 쌍을 정의 합니다. 이 기호는 조건부 특성으로 평가할 수 있습니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요. 또한 [기호 요소](../extensibility/symbols-element.md)를 참조 하세요.
@@ -36,8 +36,8 @@ ms.locfileid: "96996242"
 
 |attribute|Description|
 |---------------|-----------------|
-|name|필수 요소. 기호의 이름입니다.<br /><br /> name = "모드"|
-|값|필수 요소. 기호의 값입니다.<br /><br /> value = "Standard"|
+|name|필수 사항입니다. 기호의 이름입니다.<br /><br /> name = "모드"|
+|value|필수 사항입니다. 기호의 값입니다.<br /><br /> value = "Standard"|
 |조건|선택 사항입니다. 자세한 내용은 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
@@ -45,7 +45,7 @@ ms.locfileid: "96996242"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE (통합 개발 환경)에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 예를 들어 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자가 있습니다.|
 

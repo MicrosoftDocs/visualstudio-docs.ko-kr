@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b4d181a6310e1ff924f060e906093d3c28d60ede
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959924"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>방법: MSBuild 대상을 사용 하 여 SharePoint 솔루션 패키지 사용자 지정
   명령 프롬프트에서 MSBuild 대상을 사용 하 여 Visual Studio에서 SharePoint 패키지 파일 (*.wsp*)을 만드는 방법을 사용자 지정할 수 있습니다. 예를 들어 MSBuild 속성을 사용자 지정하여 패키징 중간 디렉터리 및 열거되는 파일을 지정하는 MSBuild 항목 그룹을 변경할 수 있습니다.
@@ -62,7 +62,7 @@ ms.locfileid: "94903652"
 
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout 대상을 사용자 지정 하려면
 
-1. 메뉴 모음에서 **파일** 파일 열기를 선택  >  **Open**  >  **File** 합니다.
+1. 메뉴 모음에서 **파일** 파일 열기를 선택  >    >  합니다.
 
 2. **파일 열기** 대화 상자에서 프로젝트 폴더로 이동 하 고 customlayout. 대상 파일을 선택한 다음 **열기** 단추를 선택 합니다.
 

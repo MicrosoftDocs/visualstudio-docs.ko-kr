@@ -11,13 +11,13 @@ dev_langs:
 - VB
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961315"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>연습: XAML 디자이너에서 데이터에 바인딩
 
@@ -31,7 +31,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
 1. **BindingTest** 프로젝트 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
-1. **MainWindow.xaml.cs** (또는 **MainWindow.xaml.vb** ) 파일을 열고 다음 코드를 추가합니다. C#에서는 `BindingTest` 네임스페이스에 코드를 추가합니다(파일의 마지막 닫는 괄호 앞에 추가). Visual Basic에서는 새 클래스를 추가합니다.
+1. **MainWindow.xaml.cs**(또는 **MainWindow.xaml.vb**) 파일을 열고 다음 코드를 추가합니다. C#에서는 `BindingTest` 네임스페이스에 코드를 추가합니다(파일의 마지막 닫는 괄호 앞에 추가). Visual Basic에서는 새 클래스를 추가합니다.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -97,7 +97,7 @@ XAML 디자이너에서 아트보드와 속성 창을 사용하여 데이터 바
 
      `TextBlock` 컨트롤은 0의 기본값을 텍스트로 표시해야 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [값 변환기 추가 대화 상자](/previous-versions/hh965588(v=vs.140))

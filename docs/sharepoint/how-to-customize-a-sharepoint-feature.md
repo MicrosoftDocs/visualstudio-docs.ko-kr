@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959950"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>방법: SharePoint 기능 사용자 지정
   Visual Studio의 기능 디자이너를 사용 하 여 SharePoint 기능을 만들고 사용자 지정할 수 있습니다. 예를 들어 기능 범위를 설정 하 고 다른 기능을 종속성으로 추가할 수 있습니다. 기본적으로 솔루션 탐색기 또는 SharePoint 패키지 탐색기에서 새 기능을 추가 하면 기능 디자이너가 열립니다.

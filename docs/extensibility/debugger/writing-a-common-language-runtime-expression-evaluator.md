@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a7d7e4ab292793da5c4abe04233b027981ba3fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968491"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>공용 언어 런타임 식 계산기 작성
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "96996320"
 
  Visual Studio 디버그 패키지의 일부 측면은 프로그래밍 언어의 컨텍스트에서 코드를 해석 해야 합니다. 예를 들어 실행이 중단점에서 중단 되 면 사용자가 **조사식** 창에 입력 한 모든 식을 평가 하 여 표시 해야 합니다. 사용자는 **조사식** 창 또는 **직접 실행** 창에 식을 입력 하 여 지역 변수 값을 변경할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [공용 언어 런타임 및 식 계산](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) 전용 프로그래밍 언어를 Visual Studio IDE에 통합 하는 경우 소유 언어의 컨텍스트 내에서 식을 평가할 수 있는 EE를 작성 하면 디버그 엔진을 작성 하지 않고도 MSIL (Microsoft 중간 언어)로 컴파일할 수 있음을 설명 합니다.
 
  [식 계산기 아키텍처](../../extensibility/debugger/expression-evaluator-architecture.md) 필요한 EE 인터페이스를 구현 하 고 공용 언어 런타임 기호 공급자 (SP) 및 바인더 인터페이스를 호출 하는 방법을 설명 합니다.

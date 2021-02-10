@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961107"
 ---
 # <a name="register-an-expression-evaluator"></a>식 계산기 등록
 > [!IMPORTANT]
@@ -112,7 +112,7 @@ namespace EEMC
 
 2. 도우미 함수를 호출 `SetEEMetric` 하 여 Visual Studio에 등록 하 고 다음 표에 표시 된 EE 메트릭을 사용 합니다. `SetEEMetric`다음으로 지정 된 함수 및 메트릭은 *dbgmetric* 라이브러리의 일부입니다. 자세한 내용은 [SDK 도우미를](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 참조 하세요.
 
-    |메트릭|설명|
+    |메트릭|Description|
     |------------|-----------------|
     |`metricCLSID`|`CLSID` EE 클래스 팩터리|
     |`metricName`|표시할 문자열의 EE 이름|
@@ -122,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > 는 `metricLanguage``GUID` 이름을 기준으로 언어를 식별 하지만 `guidLang` 언어를 선택 하는에 대 한 인수입니다 `SetEEMetric` . 컴파일러가 디버그 정보 파일을 생성 하는 경우 적절 한를 작성 해야 합니다 .이를 `guidLang` 위해 사용할 EE를 알 수 있습니다. DE는 일반적으로이 언어에 대 한 기호 공급자에 게 `GUID` 디버그 정보 파일에 저장 된 것을 요청 합니다.
 
-3. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX-y에서 키를 만들어 Visual Studio에 등록 \\ *X.Y* 합니다. 여기서 *x. y* 는 등록할 visual studio의 버전입니다.
+3. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX-y에서 키를 만들어 Visual Studio에 등록 \\ 합니다. 여기서 *x. y* 는 등록할 visual studio의 버전입니다.
 
 ### <a name="example"></a>예제
  다음 함수는 비관리 코드 (c + +) EE에서 Visual Studio를 사용 하 여 등록 및 등록 취소 하는 방법을 보여 줍니다.
