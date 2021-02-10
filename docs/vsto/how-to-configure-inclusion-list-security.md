@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954022"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>방법: 포함 목록 보안 구성
   관리자 권한이 있는 경우 신뢰 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 확인을 포함 목록에 저장 하 여 최종 사용자에 게 Office 솔루션을 설치 하는 옵션이 제공 되는지 여부를 제어 하도록 신뢰 프롬프트를 구성할 수 있습니다. 포함 목록에 대 한 자세한 내용은 [포함 목록을 사용 하 여 Office 솔루션 신뢰](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)를 참조 하세요.
@@ -58,9 +58,9 @@ ms.locfileid: "96846729"
     |-------------------------|-----------|
     |**인터넷**|**AuthenticodeRequired**|
     |**없는 사이트**|**사용 안 함**|
-    |**MyComputer**|**사용**|
-    |**LocalIntranet**|**사용**|
-    |**사이트**|**사용**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**사이트**|**Enabled**|
 
      기본적으로 **인터넷** 에는 AuthenticodeRequired 및 **un** **사이트** 의 값이 **사용 안 함으로 설정** 되어 있습니다.
 

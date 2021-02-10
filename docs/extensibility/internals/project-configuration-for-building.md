@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b8891d5e68623312049e60730b0239bf7c06e83c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954477"
 ---
 # <a name="project-configuration-for-building"></a>빌드를 위한 프로젝트 구성
 지정 된 솔루션에 대 한 솔루션 구성 목록은 솔루션 구성 대화 상자에서 관리 합니다.
@@ -57,7 +57,7 @@ ms.locfileid: "97878003"
 
  또한 프로젝트 종속성 창에서 표를 제공할 수 있습니다. 자세한 내용은 [속성 표시 그리드](../../extensibility/internals/properties-display-grid.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954035"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>방법: 암호로 보호 된 문서의 데이터 캐시
   암호로 보호 되는 문서나 통합 문서에서 데이터 캐시에 데이터를 추가 하는 경우 캐시 된 데이터에 대 한 변경 내용은 자동으로 저장 되지 않습니다. 프로젝트에서 두 메서드를 재정의 하 여 캐시 된 데이터에 대 한 변경 내용을 저장할 수 있습니다.
@@ -56,7 +56,7 @@ ms.locfileid: "96846001"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>암호로 보호 되는 Excel 통합 문서에서 데이터를 캐시 하려면
 
-1. `ThisWorkbook`클래스 또는 n 클래스 중 하나에서 `Sheet` *n* public 필드 또는 속성을 캐시 하도록 표시 합니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.
+1. `ThisWorkbook`클래스 또는 n 클래스 중 하나에서 `Sheet`  public 필드 또는 속성을 캐시 하도록 표시 합니다. 자세한 내용은 [데이터 캐시](../vsto/caching-data.md)를 참조 하세요.
 
 2. <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>클래스의 메서드를 재정의 `ThisWorkbook` 하 고 통합 문서에서 보호를 제거 합니다.
 

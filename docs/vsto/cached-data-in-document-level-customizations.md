@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955777"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>문서 수준 사용자 지정의 캐시 된 데이터
   문서 수준 사용자 지정의 기본 목표는 Office 문서의 보기에서 데이터를 분리 하는 것입니다. 데이터는 숫자 및 텍스트를 포함 하 여 문서에 저장 된 정보를 나타냅니다. 보기는 Microsoft Office Word 및 Microsoft Office Excel의 사용자 인터페이스와 개체 모델을 나타냅니다.

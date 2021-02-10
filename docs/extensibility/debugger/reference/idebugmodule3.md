@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955526"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 이 인터페이스는 기호 및 JustMyCode 상태의 대체 위치를 지 원하는 모듈을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugModule3 : IDebugModule2
@@ -37,7 +37,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|기호에 대해 검색 된 경로 목록과 각 경로를 검색 한 결과를 반환 합니다.|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|현재 모듈에 대 한 기호를 로드 하 고 초기화 합니다.|
@@ -54,7 +54,7 @@ IDebugModule3 : IDebugModule2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

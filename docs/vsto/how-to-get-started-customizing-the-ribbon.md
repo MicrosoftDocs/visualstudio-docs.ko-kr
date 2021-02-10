@@ -14,15 +14,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d82d059166b9efbb80ed6ce4cffcbb973235b01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953918"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 메뉴 사용자 지정 시작
   Microsoft Office 응용 프로그램의 리본을 사용자 지정 하려면 Office 프로젝트에 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** 항목을 추가 합니다.

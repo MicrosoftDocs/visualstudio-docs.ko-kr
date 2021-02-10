@@ -12,15 +12,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 94cf4d256cafa03ee4604138f7233ff9fd3cf6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953996"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>방법: 기본 제공 탭 사용자 지정
   기본 제공 탭에 그룹 및 컨트롤을 추가할 수 있습니다. 기본 제공 탭은 Microsoft Office 응용 프로그램의 리본에 이미 있는 탭입니다. 예를 들어 **데이터** 탭은 Excel의 기본 제공 탭입니다. 사용자 지정 그룹을 만드는 경우 탭에서 마지막에 표시되지만 탭의 아무곳으로나 그룹을 이동할 수 있습니다.

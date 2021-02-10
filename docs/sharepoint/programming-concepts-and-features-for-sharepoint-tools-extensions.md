@@ -12,20 +12,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955244"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 도구 확장의 프로그래밍 개념 및 기능
   Visual Studio의 SharePoint 도구와 관련 된 몇 가지 중요 한 프로그래밍 개념 및 기능이 있습니다. 이러한 개념과 기능은 대부분의 SharePoint 도구 확장에서 중요 한 역할을 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)
 
  Sharepoint 도구 확장에서 sharepoint 클라이언트 및 SharePoint 서버 개체 모델을 사용 하는 방법을 비교 하 고 sharepoint 서버 개체 모델을 호출 하는 *sharepoint 명령을* 만드는 방법에 대 한 정보를 제공 합니다.

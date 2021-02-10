@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955166"
 ---
 # <a name="debug-engine"></a>디버그 엔진
 DE (디버그 엔진)는 인터프리터 또는 운영 체제와 함께 작동 하 여 실행 제어, 중단점 및 식 평가와 같은 디버깅 서비스를 제공 합니다. DE는 디버깅 중인 프로그램의 상태를 모니터링 하는 일을 담당 합니다. 이 작업을 수행 하기 위해 DE는 CPU 또는 런타임에서 제공 하는 Api의 지원 되는 런타임에서 사용할 수 있는 모든 메서드를 사용 합니다.

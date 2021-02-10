@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7c790117c907144b9edc141463b8f7751a544a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954243"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>방법: 워크시트에 ListObject 컨트롤 추가
   디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가할 수 있습니다.

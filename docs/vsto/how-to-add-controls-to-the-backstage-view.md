@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954269"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>방법: Backstage 보기에 컨트롤 추가
   리본 디자이너를 사용 하 여 **파일** 탭을 클릭할 때 열리는 메뉴에 컨트롤을 추가할 수 있습니다. 응용 프로그램을 실행 하면 **파일** 탭에 추가 하는 컨트롤이 **추가 기능** 이라는 그룹으로 표시 됩니다.

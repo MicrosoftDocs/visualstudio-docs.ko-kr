@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9612e1b8e808437122df88ad0bbef3a4cce74c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955114"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 활동 디자이너
 
@@ -36,12 +36,12 @@ ms.locfileid: "96996229"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|
-|<xref:System.Activities.Activity%601.Result%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|참|보정, 취소 및 확인 논리를 제공할 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CompensableActivity.Body%2A> **도구 상자** 의 활동을 **CompensableActivity** 활동 디자이너의 **본문** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|거짓|취소가 있을 때 실행 되는 작업을 지정 합니다. 활동을 추가 하려면 **도구 상자** 에서 **CompensableActivity** 활동 디자이너의 **CancellationHandler** 상자에 디자이너를 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 보정할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Compensate> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **CompensationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|거짓|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 확인할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Confirm> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **ConfirmationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|보정, 취소 및 확인 논리를 제공할 활동을 지정합니다. 활동을 추가 하려면 <xref:System.Activities.Statements.CompensableActivity.Body%2A> **도구 상자** 의 활동을 **CompensableActivity** 활동 디자이너의 **본문** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|취소가 있을 때 실행 되는 작업을 지정 합니다. 활동을 추가 하려면 **도구 상자** 에서 **CompensableActivity** 활동 디자이너의 **CancellationHandler** 상자에 디자이너를 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 보정할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Compensate> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **CompensationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> 활동을 확인할 때 실행할 활동을 지정합니다. <xref:System.Activities.Statements.Confirm> 활동을 사용하여 이 처리기를 명시적으로 호출할 수 있습니다.<br /><br /> 활동을 추가 하려면 **도구 상자** 에서 활동 디자이너를 **CompensableActivity** 활동 디자이너의 **ConfirmationHandler** 상자로 끌어 놓습니다. "여기에 작업 놓기" 힌트 텍스트를 추가 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

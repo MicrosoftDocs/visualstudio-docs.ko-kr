@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: e7a61e3a9ba159977d4a835126b2a584be1597c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955257"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
 실행 프로필 보고서는 전통적인 샘플링 프로필입니다. 논리 코어에서 스레드가 실행 중인 기간에 거의 밀리초마다 샘플이 수집되고 동시성 시각화에서는 누적된 샘플 스택 집합의 데이터를 정렬하여 일반적인 호출 트리를 빌드합니다. 현재 시간 범위와 숨겨진 스레드 및 적용될 수 있는 다음과 같은 필터가 이 테이블의 데이터에 영향을 미칠 수 있습니다.

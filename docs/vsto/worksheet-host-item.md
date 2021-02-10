@@ -19,15 +19,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b25b921d29bee832ef37b943fd57edc38b7518db
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 12dc0823f1c7d1eb78867cb3529f955851f45b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955738"
 ---
 # <a name="worksheet-host-item"></a>워크시트 호스트 항목
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목은 Excel용 주 interop 어셈블리의 <xref:Microsoft.Office.Interop.Excel.Worksheet> 형식을 확장한 형식입니다. <xref:Microsoft.Office.Tools.Excel.Worksheet> 호스트 항목은 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체와 동일한 모든 속성, 메서드 및 이벤트를 제공할 뿐 아니라 추가 이벤트를 노출하고 호스트 컨트롤 및 Windows Forms 컨트롤에 대한 컨테이너 역할을 합니다.

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ed33208d58e380b688ce2553b71033de0b7d07d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954295"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>방법: Word 문서에 콘텐츠 컨트롤 추가
   문서 수준 Word 프로젝트에서는 디자인 타임 또는 런타임에 프로젝트의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다. Word VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 콘텐츠 컨트롤을 추가할 수 있습니다.

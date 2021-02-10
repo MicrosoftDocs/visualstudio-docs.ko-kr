@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954152"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>방법: Office 문서에 Windows Forms 컨트롤 추가
   디자인 타임에 문서 수준 프로젝트에서 Microsoft Office Excel 및 Microsoft Office Word 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 런타임에 문서 수준 사용자 지정 및 VSTO 추가 기능에서 컨트롤을 추가할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 사용자가 옵션 목록에서 선택할 수 있도록 워크시트에 컨트롤을 추가할 수 있습니다.
@@ -100,7 +100,7 @@ ms.locfileid: "96846781"
     > Excel에서 컨트롤을 선택하는 경우 **수식 입력줄** 에 **=EMBED("WinForms.Control.Host","")** 가 표시됩니다. 이 텍스트는 필요하며 삭제하면 안 됩니다.
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 런타임에 문서 수준 프로젝트에서 컨트롤 추가
- 프로그래밍 방식으로 런타임에 Windows Forms 컨트롤을 문서에 추가할 수 있습니다. Word에서 `ThisDocument` 클래스의 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 속성 메서드를 사용합니다. Excel에서는 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 클래스의 속성 메서드를 사용 `Sheet` *n* 합니다. 각 메서드에는 다양한 방법으로 컨트롤의 위치를 지정할 수 있는 여러 오버로드가 있습니다.
+ 프로그래밍 방식으로 런타임에 Windows Forms 컨트롤을 문서에 추가할 수 있습니다. Word에서 `ThisDocument` 클래스의 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 속성 메서드를 사용합니다. Excel에서는 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 클래스의 속성 메서드를 사용 `Sheet`  합니다. 각 메서드에는 다양한 방법으로 컨트롤의 위치를 지정할 수 있는 여러 오버로드가 있습니다.
 
  런타임에 Windows Forms 컨트롤을 문서에 추가할 경우 문서를 닫으면 컨트롤이 문서에 유지되지 않습니다. 다음에 문서를 열 때 컨트롤을 다시 만들 수 있습니다. 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
@@ -108,7 +108,7 @@ ms.locfileid: "96846781"
 
 1. 이름 Add가 있는 메서드를 사용 \<*control class*> 합니다. 여기서 *컨트롤 클래스* 는 추가 하려는 Windows Forms 컨트롤의 클래스 이름입니다 (예: <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A> ).
 
-     다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Excel.Controls.Button> **C5** `Sheet1` Excel 용 문서 수준 프로젝트에서의 셀 C5에를 추가 하는 방법을 보여 줍니다.
+     다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Excel.Controls.Button>  `Sheet1` Excel 용 문서 수준 프로젝트에서의 셀 C5에를 추가 하는 방법을 보여 줍니다.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]

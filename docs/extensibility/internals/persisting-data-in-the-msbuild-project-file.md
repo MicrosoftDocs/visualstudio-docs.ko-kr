@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954451"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 프로젝트 파일의 데이터 유지
 프로젝트 하위 형식에서 나중에 사용 하기 위해 하위 형식 관련 데이터를 프로젝트 파일에 저장 해야 할 수도 있습니다. 프로젝트 하위 유형은 프로젝트 파일 지 속성을 사용 하 여 다음 요구 사항을 충족 합니다.
@@ -26,7 +26,7 @@ ms.locfileid: "97878081"
 
     1. 구성 독립적인 데이터. 즉, 비어 있거나 누락 된 조건이 있는 MSBuild 요소에 저장 된 데이터입니다.
 
-    2. 구성에 종속 된 데이터입니다. 즉, 특정 프로젝트 구성에 대해 조건 화 된 MSBuild 요소에 저장 된 데이터입니다. 예를 들면 다음과 같습니다.
+    2. 구성에 종속 된 데이터입니다. 즉, 특정 프로젝트 구성에 대해 조건 화 된 MSBuild 요소에 저장 된 데이터입니다. 예를 들어:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -78,5 +78,5 @@ ms.locfileid: "97878081"
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)

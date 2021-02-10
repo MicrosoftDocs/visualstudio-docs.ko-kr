@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c05f8bc0174807a5336a9d9f79ac3dc81e87476e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953879"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>방법: 프로그래밍 방식으로 이름으로 폴더 검색
   이 예제에서는 명명 된 사용자 지정 폴더에 대 한 참조를 가져온 다음 폴더의 내용을 표시 합니다.

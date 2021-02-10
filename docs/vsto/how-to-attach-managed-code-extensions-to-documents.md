@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954113"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>방법: 문서에 관리 코드 확장명 연결
   기존 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 사용자 지정 어셈블리를 연결할 수 있습니다. 문서 또는 통합 문서는 Visual Studio의 Microsoft Office 프로젝트 및 개발 도구에서 지원 되는 모든 파일 형식일 수 있습니다. 자세한 내용은 [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)를 참조 하세요.

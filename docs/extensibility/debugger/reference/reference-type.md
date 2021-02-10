@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb60c8d09bd40de569ad003277b8f542fe3b7f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954724"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
 참조 형식을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_REFERENCE_TYPE { 
+enum enum_REFERENCE_TYPE { 
    REF_TYPE_WEAK   = 0x0001,
    REF_TYPE_STRONG = 0x0002
 };
@@ -36,7 +36,7 @@ typedef DWORD REFERENCE_TYPE;
 ```
 
 ```csharp
-public enum enum_REFERENCE_TYPE { 
+public enum enum_REFERENCE_TYPE { 
    REF_TYPE_WEAK   = 0x0001,
    REF_TYPE_STRONG = 0x0002
 };

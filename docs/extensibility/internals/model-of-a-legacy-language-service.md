@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954646"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 언어 서비스는 특정 언어의 요소와 기능을 정의 하 고 편집기에 해당 언어에 대 한 정보를 제공 하는 데 사용 됩니다. 예를 들어 편집기는 구문 색 지정을 지원 하기 위해 언어의 요소와 키워드를 알고 있어야 합니다.
@@ -41,7 +41,7 @@ ms.locfileid: "97876742"
 
   다음 표에서는 모델의 개체에 대 한 개요를 제공 합니다.
 
-| 구성 요소 | Object | 기능 |
+| 구성 요소 | Object | 함수 |
 |------------------| - | - |
 | 텍스트 버퍼 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | 유니코드 읽기/쓰기 텍스트 스트림입니다. 텍스트에서 다른 인코딩을 사용할 수 있습니다. |
 | 코드 창 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 하나 이상의 텍스트 뷰를 포함 하는 문서 창입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]가 mdi (다중 문서 인터페이스) 모드에 있으면 코드 창은 mdi 자식입니다. |
@@ -49,5 +49,5 @@ ms.locfileid: "97876742"
 | 텍스트 관리자 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>포인터를 가져오는 서비스에서 관리 됩니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> | 앞에서 설명한 모든 구성 요소에서 공유 하는 공통 정보를 유지 관리 하는 구성 요소입니다. |
 | 언어 서비스 | 구현 종속 구현할 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | 구문 강조 표시, 문 완성 및 중괄호 일치와 같은 언어별 정보를 편집기에 제공 하는 개체입니다. |
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [사용자 지정 편집기의 문서 데이터 및 문서 보기](../../extensibility/document-data-and-document-view-in-custom-editors.md)

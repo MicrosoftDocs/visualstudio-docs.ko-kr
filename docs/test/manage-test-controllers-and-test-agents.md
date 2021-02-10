@@ -6,15 +6,15 @@ ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 88298cf9fecdb6ce3862ee289d63c4f31b748449
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955803"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 관리
 

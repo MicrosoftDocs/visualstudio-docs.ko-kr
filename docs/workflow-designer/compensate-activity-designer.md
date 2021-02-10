@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 36ab20854adb952d098f71904cdd3cb092e27ac9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955686"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 활동 디자이너
 
@@ -39,12 +39,12 @@ ms.locfileid: "94434326"
 
 다음 표에서는 <xref:System.Activities.Statements.CancellationScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 속성은 <xref:System.Activities.Activity.DisplayName%2A> 속성 표 또는 워크플로 디자이너 화면에서 편집할 수 있습니다. 속성 <xref:System.Activities.Statements.Compensate.Target%2A> 표에서 속성을 편집 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.Compensate> 활동의 선택적 이름을 지정합니다. 기본값은 Compensate입니다.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|참|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Compensate>을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Compensate> 활동의 선택적 이름을 지정합니다. 기본값은 Compensate입니다.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|True|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Compensate>을 지정합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

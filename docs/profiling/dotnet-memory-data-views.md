@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1a60b51571d33a619cdc04c534f6b77fafcb584f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955283"
 ---
 # <a name="net-memory-data-views"></a>.NET 메모리 데이터 뷰
 이 섹션에는 .NET 메모리 프로파일링 데이터가 포함된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 있습니다.

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0227a300160434d0052e81d7c1ccd107c5a11a01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955660"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 활동 디자이너
 
@@ -36,12 +36,12 @@ ms.locfileid: "94438154"
 ### <a name="the-confirm-properties"></a>Confirm 속성
  다음 표에서는 <xref:System.Activities.Statements.Confirm> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 속성은 속성 <xref:System.Activities.Activity.DisplayName%2A> 표 또는 워크플로 디자이너 화면에서 편집할 수 있지만 속성은 속성 <xref:System.Activities.Statements.Confirm.Target%2A> 표에서 편집 해야 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름을 지정합니다. 기본값은 Confirm입니다.|
-|<xref:System.Activities.Statements.Confirm.Target%2A>|참|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Confirm>을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름을 지정합니다. 기본값은 Confirm입니다.|
+|<xref:System.Activities.Statements.Confirm.Target%2A>|True|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Confirm>을 지정합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

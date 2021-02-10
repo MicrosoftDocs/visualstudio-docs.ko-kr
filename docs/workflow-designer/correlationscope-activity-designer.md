@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955525"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 활동 디자이너
 
@@ -41,13 +41,13 @@ ms.locfileid: "94438115"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.CorrelationScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 **속성** 창이 나 워크플로 디자이너 화면에서 편집할 수 있으며 둘 다에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 선택적 이름입니다.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|거짓|자식 메시징 활동을 관리하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>을 지정합니다. 이 속성을 설정하지 않으면 <xref:System.ServiceModel.Activities.CorrelationScope>는 자동으로 <xref:System.ServiceModel.Activities.CorrelationHandle>을 만듭니다.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|거짓|상관 관계 범위 내에 활동을 지정합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 선택적 이름입니다.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|자식 메시징 활동을 관리하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>을 지정합니다. 이 속성을 설정하지 않으면 <xref:System.ServiceModel.Activities.CorrelationScope>는 자동으로 <xref:System.ServiceModel.Activities.CorrelationHandle>을 만듭니다.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|상관 관계 범위 내에 활동을 지정합니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [받습니다](../workflow-designer/receive-activity-designer.md)

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955387"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 사용 성능 규칙
 .NET Framework 사용 범주의 성능 규칙은 최적화할 수 있는 특정 방법을 확인하고 성능 문제가 있는지 조사할 수 있는 가비지 수집 및 잠금 경합과 같은 더 일반적인 사용 패턴도 확인합니다.
