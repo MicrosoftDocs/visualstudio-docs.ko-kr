@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939229"
 ---
 # <a name="add-command-line-switches"></a>명령줄 스위치 추가
 *devenv.exe* 실행 될 때 VSPackage에 적용 되는 명령줄 스위치를 추가할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>스위치 이름과 해당 속성을 선언 하는 데 사용 합니다. 이 예제에서는 인수 없이 **Addcommandswitchpackage** 라는 VSPackage 라는 하위 클래스에 대해 MySwitch 스위치를 추가 하 고 VSPackage를 자동으로 로드 합니다.
@@ -31,12 +31,12 @@ ms.locfileid: "95597732"
 
  명명 된 매개 변수는 다음 설명에 나와 있습니다.
 
-|속성|Description|
+|이름|Description|
 |-|-|
 | 인수 | 스위치에 대 한 인수 개수입니다. "*" 또는 인수 목록 일 수 있습니다. |
 | DemandLoad | VSPackage가 1로 설정 되어 있으면 자동으로 로드 하 고 그렇지 않으면 0으로 설정 합니다. |
 | HelpString | **Devenv/?** 를 사용 하 여 표시할 문자열의 도움말 문자열 또는 리소스 ID입니다. |
-| 속성 | 스위치입니다. |
+| 이름 | 스위치입니다. |
 | PackageGuid | 패키지의 GUID입니다. |
 
  인수의 첫 번째 값은 일반적으로 0 또는 1입니다. 특수 값 ' * '를 사용 하 여 명령줄의 전체 나머지가 인수 임을 나타낼 수 있습니다. 이는 사용자가 디버거 명령 문자열을 전달 해야 하는 디버깅 시나리오에 유용할 수 있습니다.
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef 유틸리티](../extensibility/internals/createpkgdef-utility.md)
-- [.Pkgdef 파일](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. .Pkgdef 파일](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

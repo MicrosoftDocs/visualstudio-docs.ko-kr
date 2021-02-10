@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939255"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 참조
 다음 페이지에서는 ClickOnce 응용 프로그램을 나타내는 데 사용 되는 XML 파일의 구조에 대해 설명 합니다.
 
 ## <a name="in-this-section"></a>단원 내용
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
 
  응용 프로그램 매니페스트를 구성 하는 요소와 특성을 나열 하 고 설명 합니다.
 

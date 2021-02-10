@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e808e6f472c48dcd14aac2d81b4cd3f615397f
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 12fd6e336631eeabe1761276442df993d44affe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939216"
 ---
 # <a name="add-commands-to-toolbars"></a>도구 모음에 명령 추가
 도구 모음은 명령에 바인딩된 단추를 포함 하는 가로 또는 세로 줄무늬입니다. Visual Studio의 다양 한 창에서 도구 모음에 고유한 명령을 추가할 수 있습니다. 주 Visual Studio 창, 솔루션 탐색기 및 사용자 지정 도구 창이 있습니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 116eb36cf96284698a6d93730db39bb38d22b93e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938709"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 디버그 모듈 정보에 대 한 플래그를 지정 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80714323"
 ## <a name="syntax"></a>구문
 
 ```cpp
-enum enum_MODULE_INFO_FIELDS { 
+enum enum_MODULE_INFO_FIELDS { 
    MIF_NONE              = 0x0000,
    MIF_NAME              = 0x0001,
    MIF_URL               = 0x0002,
@@ -47,7 +47,7 @@ typedef DWORD MODULE_INFO_FIELDS;
 ```
 
 ```csharp
-public enum enum_MODULE_INFO_FIELDS { 
+public enum enum_MODULE_INFO_FIELDS { 
    MIF_NONE              = 0x0000,
    MIF_NAME              = 0x0001,
    MIF_URL               = 0x0002,

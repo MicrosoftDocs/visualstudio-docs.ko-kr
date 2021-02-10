@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37819234d794226a41625f3c2e9eccd1b69066c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938813"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
 특정 컴퓨터에 대해 설명 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80714539"
 ## <a name="syntax"></a>구문
 
 ```cpp
-typedef struct tagMACHINE_INFO { 
+typedef struct tagMACHINE_INFO { 
    MACHINE_INFO_FIELDS Fields;
    BSTR                bstrName;
    MACHINE_INFO_FLAGS  Flags;
@@ -36,14 +36,14 @@ typedef struct tagMACHINE_INFO { 
 ```
 
 ```csharp
-public struct MACHINE_INFO { 
+public struct MACHINE_INFO { 
    public uint   Fields;
    public string bstrName;
    public uint   Flags;
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
  `Fields`\
  구조체의 필드를 지정 하는 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 열거형의 플래그 조합입니다.
 
@@ -63,7 +63,7 @@ public struct MACHINE_INFO { 
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

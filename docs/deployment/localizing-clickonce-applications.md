@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938501"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce 애플리케이션 지역화
 지역화는 애플리케이션을 특정 문화권에 적합하게 만드는 프로세스입니다. 이 프로세스에서는 UI(사용자 인터페이스) 텍스트를 지역별 언어로 번역하고, 올바른 데이터 및 통화 형식 지정을 사용하고, 양식에서 컨트롤 크기를 조정하고, 필요하면 오른쪽에서 왼쪽으로 컨트롤을 미러링합니다.
@@ -81,6 +81,6 @@ ms.locfileid: "94350831"
 - 애플리케이션에서 <xref:System.Threading.Thread.CurrentUICulture%2A> 속성을 프로그래밍 방식으로 설정할 수 있습니다. <xref:System.Windows.Forms.Application.Run%2A> 메서드를 호출하기 전에 이 속성을 설정해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
-- [\<assemblyIdentity> 요소인](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity> 요소](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
 - [전역화 Windows forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

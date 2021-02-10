@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938527"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA 및 문서 수준 사용자 지정 결합
   Microsoft Office Word 또는 Microsoft Office Excel의 문서 수준 사용자 지정의 일부인 문서에서 VBA(Visual Basic for Applications) 코드를 사용할 수 있습니다. 사용자 지정 어셈블리에서 문서의 VBA 코드를 호출하거나, 문서의 VBA 코드에서 사용자 지정 어셈블리의 코드를 호출할 수 있도록 프로젝트를 구성할 수 있습니다.
@@ -244,7 +244,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshoot"></a>문제 해결
  다음 표에는 몇 가지 일반적인 오류와 해당 오류를 해결하기 위한 제안 사항이 나와 있습니다.
 
-|Error|제안 해결 방법|
+|오류|제안 해결 방법|
 |-----------|----------------|
 |**EnableVbaCallers** 또는 **ReferenceAssemblyFromVbaProject** 속성을 설정한 후 문서에 VBA 프로젝트가 포함되어 있지 않다는 오류 메시지가 표시되거나 문서에서 VBA 프로젝트에 액세스할 수 있는 권한이 없습니다.|프로젝트의 문서에 VBA 매크로가 하나 이상 포함되어 있고, VBA 프로젝트를 실행하는 데 충분한 신뢰가 있으며, VBA 프로젝트가 암호로 보호되지 않는지 확인합니다.|
 |**EnableVbaCallers** 또는 **ReferenceAssemblyFromVbaProject** 속성을 설정 하 고 나면 선언이 없거나 손상 되었다는 오류 메시지가 표시 됩니다 <xref:System.Runtime.InteropServices.GuidAttribute> .|<xref:System.Runtime.InteropServices.GuidAttribute>선언이 프로젝트의 *AssemblyInfo.cs* 또는 *AssemblyInfo* 파일에 있으며이 특성이 유효한 GUID로 설정 되어 있는지 확인 합니다.|

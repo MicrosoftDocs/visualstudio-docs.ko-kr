@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c203e83a595562e604d8c32b09056c8544bfd1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938976"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 이 메서드는 개체 위치 또는 메모리 주소를 메모리 컨텍스트로 변환 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80736000"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetMemoryContext( 
+HRESULT GetMemoryContext( 
    IDebugField*           pField,
    DWORD                  dwConstant,
    IDebugMemoryContext2** ppMemCxt
@@ -53,10 +53,10 @@ int GetMemoryContext(
 `ppMemCxt`\
 제한이 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

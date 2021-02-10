@@ -14,20 +14,20 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], about mail items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 033dece28bad4471560646cdd086b342b3e1357b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939242"
 ---
 # <a name="work-with-mail-items"></a>메일 항목 작업
   클래스에는 <xref:Microsoft.Office.Interop.Outlook.MailItem> 메일 메시지를 사용 하 여 작업을 수행 하는 데 사용 하는 메서드 및 속성이 포함 되어 있습니다.
 
-|작업|프로시저|
+|Task|프로시저|
 |----------|---------------|
 |전자 메일 메시지를 만듭니다.|[방법: 프로그래밍 방식으로 전자 메일 항목 만들기](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
 |전자 메일 메시지를 보냅니다.|[방법: 프로그래밍 방식으로 전자 메일 보내기](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|

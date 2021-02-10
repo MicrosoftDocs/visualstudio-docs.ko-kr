@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fe1515616d6781613961fa11d87005a479c70fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939021"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 디스어셈블리에 대 한 플래그를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_DISASSEMBLY_FLAGS {

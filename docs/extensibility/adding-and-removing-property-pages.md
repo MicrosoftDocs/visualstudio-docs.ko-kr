@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bcd97b39d623a74eeebc26ae9e3c479530a1345
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 61fb504dafb56d60e6f64507ccc1e5d4d83171eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939281"
 ---
 # <a name="add-and-remove-property-pages"></a>속성 페이지 추가 및 제거
 
@@ -208,6 +208,6 @@ ms.locfileid: "95597797"
     }
     ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)
