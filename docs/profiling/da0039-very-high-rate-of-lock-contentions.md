@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc2380402fd4c71756cf0a424853546a8f3e439
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4504a05eb8f3835f65c144c8a073304f2761b237
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886355"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 잠금 경합의 비율이 매우 높습니다.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db2c4ebe4a6aa24e0df8f66442f6128ecee8d491
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 704f3e22701d645fb3b05d5b1b66d216cb462e44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97902975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885146"
 ---
 # <a name="menu-commands"></a>메뉴 명령
 이 섹션의 도움말 항목에는 Spy++ 메뉴에서 사용할 수 있는 명령이 나와 있습니다.

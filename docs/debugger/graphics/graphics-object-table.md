@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 095828e711f860662432edd767b19493b73c56c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887577"
 ---
 # <a name="graphics-object-table"></a>그래픽 개체 테이블
 Visual Studio Graphics Analysis의 그래픽 개체 테이블은 게임이나 앱의 프레임을 지원하는 Direct3D 개체를 이해하는 데 도움이 됩니다.

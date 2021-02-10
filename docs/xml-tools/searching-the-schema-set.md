@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2f924e46fa4d32fbea9071bd8a19268f2ee1652e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891880"
 ---
 # <a name="search-the-schema-set"></a>스키마 집합 검색
 

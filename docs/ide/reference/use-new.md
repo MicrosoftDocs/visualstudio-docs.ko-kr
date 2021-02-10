@@ -4,17 +4,17 @@ ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2091c046efac9f5676e5d2d99ef798283b95f6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a129e94f6009eec51995b6a4e170f0a804e6407f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889813"
 ---
 # <a name="use-new"></a>`new()` 사용
 

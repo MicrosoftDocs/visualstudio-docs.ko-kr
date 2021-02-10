@@ -4,17 +4,17 @@ ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8cafcb7e4e108258ddfb274ba957024b92fadb01
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 89369eeb07594a9dcac3f0687a6b957adaddec09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889800"
 ---
 # <a name="use-pattern-matching"></a>패턴 일치 사용
 

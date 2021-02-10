@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 73d6558264bb51f011d8f04b5a3096e95702c49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892348"
 ---
 # <a name="perftips"></a>PerfTips
 

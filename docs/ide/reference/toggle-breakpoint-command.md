@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b65144271f91d518dd6649fa1e97fc627d1b0009
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d0a02cb0659df431b3e6eca7c9ad1f13f8c3676b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886485"
 ---
 # <a name="toggle-breakpoint-command"></a>중단점 설정/해제 명령
 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다.

@@ -5,26 +5,26 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b03e99a70edd587c9dfe2a43d326a64d14b9193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62957539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887889"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
 
 Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르게 코드 서식을 다시 지정할 수 있습니다.
 
-- 선택 항목의 서식을 지정하려면 **편집** > **고급** > **선택 영역 서식 지정**을 선택하거나 **Ctrl**+**E** > **F**를 누릅니다.
-- 전체 파일의 서식을 지정하려면 **편집** > **고급** > **문서 서식 지정**을 선택하거나 **Ctrl**+**E** > **D**를 누릅니다.
+- 선택 항목의 서식을 지정하려면 **편집** > **고급** > **선택 영역 서식 지정** 을 선택하거나 **Ctrl**+**E** > **F** 를 누릅니다.
+- 전체 파일의 서식을 지정하려면 **편집** > **고급** > **문서 서식 지정** 을 선택하거나 **Ctrl**+**E** > **D** 를 누릅니다.
 
-옵션은 **도구** > **옵션** > **텍스트 편집기** > **Python** > **서식 지정** 및 중첩된 탭을 통해 설정됩니다. 이러한 옵션을 표시하려면 **모든 설정 표시**를 선택해야 합니다.
+옵션은 **도구** > **옵션** > **텍스트 편집기** > **Python** > **서식 지정** 및 중첩된 탭을 통해 설정됩니다. 이러한 옵션을 표시하려면 **모든 설정 표시** 를 선택해야 합니다.
 
 ![Visual Studio의 Python 서식 옵션](media/options-editor-formatting.png)
 
@@ -34,7 +34,7 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 ## <a name="spacing"></a>간격
 
-**간격**은 다양한 언어 구문 주위에 공백이 삽입되거나 제거되는 위치를 제어합니다. 각 옵션에는 다음 세 가지 가능한 값이 있습니다.
+**간격** 은 다양한 언어 구문 주위에 공백이 삽입되거나 제거되는 위치를 제어합니다. 각 옵션에는 다음 세 가지 가능한 값이 있습니다.
 
 - 선택한 상태: 간격을 적용합니다.
 - 선택 취소됨: 모든 간격을 제거합니다.
@@ -94,7 +94,7 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 ## <a name="wrapping"></a>줄 바꿈
 
-**줄 바꿈**을 사용하여 **최대 주석 너비**(기본값: 80)를 설정할 수 있습니다. **너무 넓은 주석 줄 바꿈** 옵션을 설정하는 경우 Visual Studio에서 최대 너비를 초과하지 않도록 주석의 서식을 다시 지정합니다.
+**줄 바꿈** 을 사용하여 **최대 주석 너비**(기본값: 80)를 설정할 수 있습니다. **너무 넓은 주석 줄 바꿈** 옵션을 설정하는 경우 Visual Studio에서 최대 너비를 초과하지 않도록 주석의 서식을 다시 지정합니다.
 
 ```python
 # Wrapped to 40 columns

@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891555"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅, 출력 창
 **출력** 창에 표시되는 디버깅 정보의 형식을 지정할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴를 열고 **옵션** 을 클릭하여 **디버깅** 노드를 확장한 다음, **출력 창** 을 클릭합니다.

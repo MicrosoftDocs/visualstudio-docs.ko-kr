@@ -5,15 +5,15 @@ ms.date: 6/30/2020
 ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 0722716b086877d5522b9ef8fae79976fbdb0805
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894675"
 ---
 # <a name="developer-community-guidelines"></a>Developer Community 지침
 

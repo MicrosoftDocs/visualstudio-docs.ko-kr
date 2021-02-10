@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a724c360641926bcb64552f6f26e92d3c524011
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5e050879fc9a1bd74f95ae5d24a92dc7a59a73c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886069"
 ---
 # <a name="understand-resource-contention-data-values"></a>리소스 경합 데이터 값 이해
 

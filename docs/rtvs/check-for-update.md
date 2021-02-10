@@ -5,19 +5,19 @@ ms.date: 07/23/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c6b351af7426af2b11d23cf3f5f437fa4c228c97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75843745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885874"
 ---
 # <a name="rtvs-current-version"></a>RTVS 최신 버전
 
-Visual Studio에서 **도움말** > **정보**로 이동하고 **Visual Studio용 R 도구** 항목까지 아래로 스크롤하여 버전을 확인할 수 있습니다.
+Visual Studio에서 **도움말** > **정보** 로 이동하고 **Visual Studio용 R 도구** 항목까지 아래로 스크롤하여 버전을 확인할 수 있습니다.
 
 ![Visual Studio(VS2017)에서 RTVS 버전 검사](media/current-version.png)
 

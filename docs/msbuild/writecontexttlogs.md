@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 622cbebdb4073dfd9b4237e9dfbcb8bbf4a506de
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b44777f41c4fac3d36cb79222d48a93c5c1cf0b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888006"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 

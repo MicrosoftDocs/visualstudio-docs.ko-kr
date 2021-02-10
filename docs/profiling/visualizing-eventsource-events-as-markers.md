@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 8c919c72cbf06faccf5bb39b0753533f2b2a441f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890528"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
 Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있으며, 표식이 표시되는 방식을 제어할 수 있습니다. EventSource 표식을 보려면 [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자를 사용하여 ETW 공급자 GUID를 등록합니다. Concurrency 시각화에는 EventSource 이벤트를 [플래그 표식](../profiling/flag-markers.md), [범위 표식](../profiling/span-markers.md) 및 [메시지 표식](../profiling/message-markers.md)으로 나타내기 위한 기본 규칙이 있습니다. 이벤트에 사용자 지정 필드를 추가하여 EventSource 이벤트가 표시되는 방식을 사용자 지정할 수 있습니다. 표식에 대한 자세한 내용은 [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)을 참조하세요. EventSource 이벤트에 대한 자세한 내용은 <xref:System.Diagnostics.Tracing>를 참조하세요.

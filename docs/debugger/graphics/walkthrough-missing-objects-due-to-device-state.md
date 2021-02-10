@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a8eff8a088823bc46363d2e5ea7b40b3e2b8478e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890437"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>연습: 디바이스 상태로 인해 누락된 개체
 이 연습에서는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 그래픽 진단을 사용하여 잘못 구성된 디바이스 상태로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.

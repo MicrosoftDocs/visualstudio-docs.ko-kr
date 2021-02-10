@@ -12,25 +12,25 @@ helpviewer_keywords:
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6a994f5ff564860ac753787eebd293a8e2fa9c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889735"
 ---
 # <a name="callercallee-view"></a>호출자/호출 수신자 뷰
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 프로파일링 정보를 표시합니다. 호출자/호출 수신자 뷰에는 다음과 같은 세 개의 표가 포함되어 있습니다.
 
- **현재 함수**는 가운데 표에 표시되며, 선택한 함수에 대한 프로파일링 정보를 보여 줍니다. 값에는 프로파일링 실행 시 수집된 함수에 대한 모든 호출이 포함되어 있습니다.
+ **현재 함수** 는 가운데 표에 표시되며, 선택한 함수에 대한 프로파일링 정보를 보여 줍니다. 값에는 프로파일링 실행 시 수집된 함수에 대한 모든 호출이 포함되어 있습니다.
 
- **현재 함수를 호출한 함수**는 위쪽 표에 표시되며, 호출자(부모) 함수의 호출에 의해 생성된 선택(현재) 함수 값의 수를 보여 줍니다.
+ **현재 함수를 호출한 함수** 는 위쪽 표에 표시되며, 호출자(부모) 함수의 호출에 의해 생성된 선택(현재) 함수 값의 수를 보여 줍니다.
 
- **현재 함수에서 호출된 함수**는 아래쪽 표에 표시되며, 현재 함수가 자식 함수를 호출한 경우 선택한 함수의 호출 수신자(자식) 함수에 대한 프로파일링 정보를 보여 줍니다.
+ **현재 함수에서 호출된 함수** 는 아래쪽 표에 표시되며, 현재 함수가 자식 함수를 호출한 경우 선택한 함수의 호출 수신자(자식) 함수에 대한 프로파일링 정보를 보여 줍니다.
 
  호출자/호출 수신자 뷰에서 사용할 수 있는 열은 데이터를 수집하는 데 사용된 프로파일링 방법(샘플링 또는 계측) 및 프로파일링 실행 시 .NET 메모리 데이터가 수집되었는지 여부에 따라 달라집니다.
 

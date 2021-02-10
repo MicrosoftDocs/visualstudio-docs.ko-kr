@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 5963bcbfb74c6a7722c02b59459a6334d461b980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891789"
 ---
 # <a name="message-options-dialog-box"></a>메시지 옵션 대화 상자
 이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에 나열되는 메시지를 선택할 수 있습니다. 이 대화 상자를 표시하려면 **Spy** 메뉴에서 **로그 메시지** 를 선택합니다.

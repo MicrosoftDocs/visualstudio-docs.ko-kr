@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 94973f8f791158f408b841442478dcfa6aeeff58
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 7783c8f90f1e289f8e13ed2bd85e8263edec3408
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894558"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 가상 네트워크 형식 지정
 

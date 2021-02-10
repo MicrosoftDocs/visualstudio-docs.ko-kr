@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: ad79be0850191cd2e7ab28aa7a30ff10d867b271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887876"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 

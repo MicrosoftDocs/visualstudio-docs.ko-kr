@@ -5,25 +5,25 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e3696cac00c726cffb76f29a1da2c503a15af2bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73189262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885822"
 ---
 # <a name="debug-r-in-visual-studio"></a>Visual Studio에서 R 디버그
 
 RTVS(Visual Studio용 R 도구)는 Visual Studio의 전체 디버깅 환경과 통합됩니다([Visual Studio의 디버깅](../debugger/debugger-feature-tour.md) 참조). 이러한 지원에는 중단점, 실행 중인 프로세스에 연결, 변수 검사 및 감시, 호출 스택 검사 등이 포함됩니다. 이 문서에서는 R 및 RTVS에 고유한 디버깅 측면을 살펴봅니다.
 
-R 프로젝트에서 시작 R 파일에 대한 디버거를 시작하는 방법은 다른 프로젝트 형식의 경우도 동일합니다. **디버그** > **디버깅 시작**, **F5** 키 또는 디버그 도구 모음의 **소스 시작 파일**을 사용합니다.
+R 프로젝트에서 시작 R 파일에 대한 디버거를 시작하는 방법은 다른 프로젝트 형식의 경우도 동일합니다. **디버그** > **디버깅 시작**, **F5** 키 또는 디버그 도구 모음의 **소스 시작 파일** 을 사용합니다.
 
 ![R에 대한 디버거 시작 단추](media/debugger-start-button.png)
 
-시작 파일을 변경하려면 솔루션 탐색기에서 파일을 마우스 오른쪽 단추로 클릭하고 **시작 R 스크립트로 설정**을 선택합니다.
+시작 파일을 변경하려면 솔루션 탐색기에서 파일을 마우스 오른쪽 단추로 클릭하고 **시작 R 스크립트로 설정** 을 선택합니다.
 
 모든 경우에 디버거를 시작하면 대화형 창에서 파일이 “원본 제공”됩니다. 즉, 파일이 로드되고 대화형 창의 출력과 같이 로드된 위치에서 실행됩니다.
 
@@ -62,6 +62,6 @@ add <- function(x, y) {
 | Q | 끝내기: 디버깅 세션을 종료합니다. |
 | 라는 설치 관리자 실행 파일에 포함됩니다. 여기서 | 스택 표시: 대화형 창에 호출 스택을 표시합니다. |
 | help | 도움말 표시: 대화형 창에 사용 가능한 명령을 표시합니다. |
-| &lt;expr&gt; | *expr*의 식을 계산합니다. |
+| &lt;expr&gt; | *expr* 의 식을 계산합니다. |
 
 ![대화형 창의 환경 브라우저](media/debugger-environment-browser.png)

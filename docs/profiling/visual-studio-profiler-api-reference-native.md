@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46306697fb891dd7604cda193deaec087d164ad7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 9d8fe6f4f1f38277a8cf317fa55fbc883b85394a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890541"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 프로파일러 API 참조(네이티브)
 Visual Studio 프로파일러 API를 사용하여 수집된 데이터의 양을 프로그래밍 방식으로 제어하고 프로파일링하는 동안 타임스탬프 및 프로필 표시를 삽입할 수 있습니다. 네이티브 API를 사용하려면 프로젝트에 *VSPerf.h* 헤더 파일을 포함하고 *VSPerf.lib* 를 추가합니다.

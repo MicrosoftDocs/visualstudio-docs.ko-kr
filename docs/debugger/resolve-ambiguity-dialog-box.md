@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: d9f47455-a116-4c84-8bad-2dfbf4d77f74
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7156a43bc8c5c60415680b4380600e9e695cc
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ee7b83630935b948d29150763e0ad5b9c435175f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891321"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>모호성 해결 대화 상자
 `Resolve Ambiguity` 대화 상자는 디버거에서 표시할 위치를 선택할 수 없을 때 표시됩니다. 예를 들어 C++ 템플릿을 사용하는 경우 단일 함수 템플릿을 사용하여 여러 함수를 만들 수 있습니다. 디버거가 템플릿의 소스 위치에서 중지되고 사용자가 `Go To Disassembly`을 선택하면 디버거에 여러 선택 사항이 주어집니다. 템플릿을 사용하여 만든 각 함수에는 고유한 디스어셈블리 코드가 있으므로 디버거는 사용자가 보려는 코드가 어떤 것인지 모릅니다. `Resolve Ambiguity` 대화 상자를 사용하면 해당하는 모든 위치의 목록에서 원하는 위치를 선택할 수 있습니다.

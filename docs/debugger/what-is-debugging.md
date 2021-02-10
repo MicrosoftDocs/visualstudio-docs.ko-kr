@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3435b7a270d89dc38f5ff10a1350418a24f91c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883937"
 ---
 # <a name="what-is-debugging"></a>디버깅이란 무엇인가요?
 
@@ -30,13 +30,13 @@ Visual Studio 디버거는 강력한 도구입니다. 이 도구를 사용하는
 
 ## <a name="debug-mode-vs-running-your-app"></a>디버그 모드 및 앱 실행 비교
 
-Visual Studio에서 처음 앱을 실행하는 경우 도구 모음에서 녹색 화살표 단추(![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작"))를 누르거나 **F5**를 눌러 시작할 수 있습니다. 기본적으로 **디버그** 값은 왼쪽의 드롭다운에 표시됩니다. Visual Studio를 처음 사용하는 경우라면 이로 인해 앱 디버그와 앱 실행이 서로 관련이 있다는 인상을 받을 수 있습니다. 두 작업이 실제 서로 관련이 있기는 하지만 기본적으로 두 작업은 서로 매우 다른 작업입니다.
+Visual Studio에서 처음 앱을 실행하는 경우 도구 모음에서 녹색 화살표 단추(![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작"))를 누르거나 **F5** 를 눌러 시작할 수 있습니다. 기본적으로 **디버그** 값은 왼쪽의 드롭다운에 표시됩니다. Visual Studio를 처음 사용하는 경우라면 이로 인해 앱 디버그와 앱 실행이 서로 관련이 있다는 인상을 받을 수 있습니다. 두 작업이 실제 서로 관련이 있기는 하지만 기본적으로 두 작업은 서로 매우 다른 작업입니다.
 
 ![디버그 빌드 선택](../debugger/media/what-is-debugging-debug-build.png)
 
 **디버그** 값은 디버그 구성을 나타냅니다. 디버그 구성에서 앱을 시작하면(녹색 화살표 또는 **F5** 키를 누름) ‘디버그 모드’로 앱을 시작합니다. 즉, 디버거가 연결된 앱을 실행하는 것입니다.  이렇게 하면 전체 디버깅 기능을 사용할 수 있으므로 앱에서 버그를 찾는 데 도움이 됩니다.
 
-프로젝트가 열려 있는 경우에는 **디버그**라고 표시된 드롭다운 선택기를 선택하고 그렇지 않은 경우에는 **릴리스**를 선택합니다.
+프로젝트가 열려 있는 경우에는 **디버그** 라고 표시된 드롭다운 선택기를 선택하고 그렇지 않은 경우에는 **릴리스** 를 선택합니다.
 
 ![릴리스 빌드 선택](../debugger/media/what-is-debugging-release-build.png)
 

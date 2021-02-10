@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21bc1af4ff62fb9c0b8054898bf724616bbf2921
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: daee4b0295d42607177031f5ea8a3a512ee9b68e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150433"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892426"
 ---
 # <a name="c-library-reference"></a>C 라이브러리 참조
 이 섹션에는 동시성 시각화 도우미 SDK에 대한 참조 정보가 포함되어 있습니다.

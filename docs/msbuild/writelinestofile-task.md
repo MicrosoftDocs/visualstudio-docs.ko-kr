@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a504f4329c9e7b15eb8fbe1b756d682f0de44907
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1f4e2f98f25c43fbd467218ed8777ad5f4a2ecb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887954"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 작업
 

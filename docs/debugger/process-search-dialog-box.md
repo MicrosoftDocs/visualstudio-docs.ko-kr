@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975097"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891523"
 ---
 # <a name="process-search-dialog-box"></a>프로세스 검색 대화 상자
 이 대화 상자를 사용하여 [프로세스 뷰](../debugger/processes-view.md)에서 특정 프로세스에 대한 노드를 찾아 선택할 수 있습니다. 이 대화 상자를 표시하려면 포커스를 **프로세스** 뷰 창으로 이동합니다. 그런 다음 **검색** 메뉴에서 **프로세스** 찾기를 선택합니다.

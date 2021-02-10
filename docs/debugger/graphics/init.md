@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 094f4f3c64570a0af5396e903541c70a919cc0d3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 17b2490641a85a9a38bdeb2c5cd20038639de6f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891815"
 ---
 # <a name="init"></a>Init
 그래픽 정보를 그래픽 로그 파일에 캡처하고 기록하도록 그래픽 진단의 사용자 앱 구성 요소를 준비합니다.

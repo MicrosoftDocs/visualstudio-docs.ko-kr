@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: a1c0c1ef98a77b83c49ca69fd70e38238ed4ded0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 0c6dc458fed9f03a4b9176817e243dca3a048b4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887850"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>부하 테스트 시나리오에서 인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이트
 

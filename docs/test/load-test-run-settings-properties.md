@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 44cc68a900475c77856053de41ef8b7c5c810d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887681"
 ---
 # <a name="load-test-run-settings-properties"></a>부하 테스트 실행 설정 속성
 

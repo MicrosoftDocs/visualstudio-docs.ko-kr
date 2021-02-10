@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887928"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
@@ -36,21 +36,21 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 > [!Tip]
 > 텍스트 편집기에서 프로젝트 파일을 변경할 때마다 Visual Studio에서 프로젝트를 다시 로드하여 해당 변경 내용을 적용해야 합니다. 예를 들어 프로젝트의 상황에 맞는 메뉴에 표시할 명령에 대해 사용자 지정 명령 정의를 추가한 후 프로젝트를 다시 로드해야 합니다.
 >
-> 아시다시피 Visual Studio는 프로젝트 파일을 직접 편집하는 수단을 제공합니다. 먼저 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택한 다음, 다시 마우스 오른쪽 단추로 클릭하고 **\<project-name> 편집**을 선택하여 Visual Studio 편집기에서 프로젝트를 엽니다. 그런 다음, 편집을 하고 편집 내용을 저장하고 프로젝트를 한 번 더 마우스 오른쪽 단추로 클릭하고 **프로젝트 다시 로드**를 선택하며, 이때 편집기의 프로젝트 파일을 닫았는지 확인하라는 메시지도 나타납니다.
+> 아시다시피 Visual Studio는 프로젝트 파일을 직접 편집하는 수단을 제공합니다. 먼저 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드** 를 선택한 다음, 다시 마우스 오른쪽 단추로 클릭하고 **\<project-name> 편집** 을 선택하여 Visual Studio 편집기에서 프로젝트를 엽니다. 그런 다음, 편집을 하고 편집 내용을 저장하고 프로젝트를 한 번 더 마우스 오른쪽 단추로 클릭하고 **프로젝트 다시 로드** 를 선택하며, 이때 편집기의 프로젝트 파일을 닫았는지 확인하라는 메시지도 나타납니다.
 >
-> 그러나 사용자 지정 명령을 개발할 때 이러한 모든 클릭은 지루할 수 있습니다. 더 효율적인 워크플로를 위해 Visual Studio에서 프로젝트를 로드하고 별도의 편집기에서 *.pyproj* 파일을 함께 엽니다(Visual Studio의 다른 인스턴스, Visual Studio Code, 메모장 등). 편집기에서 변경 내용을 저장하고 Visual Studio로 전환하면 Visual Studio가 변경 내용을 검색하고 프로젝트를 다시 로드할지 묻습니다(**프로젝트 \<name>이 환경 외부에서 수정되었습니다.** ). **다시 로드**를 선택하면 변경 내용이 한 단계 만에 즉시 적용됩니다.
+> 그러나 사용자 지정 명령을 개발할 때 이러한 모든 클릭은 지루할 수 있습니다. 더 효율적인 워크플로를 위해 Visual Studio에서 프로젝트를 로드하고 별도의 편집기에서 *.pyproj* 파일을 함께 엽니다(Visual Studio의 다른 인스턴스, Visual Studio Code, 메모장 등). 편집기에서 변경 내용을 저장하고 Visual Studio로 전환하면 Visual Studio가 변경 내용을 검색하고 프로젝트를 다시 로드할지 묻습니다(**프로젝트 \<name>이 환경 외부에서 수정되었습니다.** ). **다시 로드** 를 선택하면 변경 내용이 한 단계 만에 즉시 적용됩니다.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>연습: 프로젝트 파일에 명령 추가
 
-사용자 지정 명령을 익히기 위해 이 섹션에서는 *python.exe*를 사용하여 프로젝트의 시작 파일을 실행하는 간단한 에제를 연습합니다. (그러한 명령은 **디버그** > **디버깅하지 않고 시작**을 사용하는 것과 같은 효과입니다.)
+사용자 지정 명령을 익히기 위해 이 섹션에서는 *python.exe* 를 사용하여 프로젝트의 시작 파일을 실행하는 간단한 에제를 연습합니다. (그러한 명령은 **디버그** > **디버깅하지 않고 시작** 을 사용하는 것과 같은 효과입니다.)
 
 1. **Python 애플리케이션** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
 
-1. *Python_CustomCommands.py*에서 `print("Hello custom commands")` 코드를 추가합니다.
+1. *Python_CustomCommands.py* 에서 `print("Hello custom commands")` 코드를 추가합니다.
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 **Python**을 선택하고 하위 메뉴에 표시되는 유일한 명령이 **PyLint 실행**인지 확인합니다. 사용자 지정 명령은 이와 같은 하위 메뉴에 표시됩니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 **Python** 을 선택하고 하위 메뉴에 표시되는 유일한 명령이 **PyLint 실행** 인지 확인합니다. 사용자 지정 명령은 이와 같은 하위 메뉴에 표시됩니다.
 
-1. 소개에서 제안한 대로 별도의 텍스트 편집기에서 *Python-CustomCommands.pyproj*를 엽니다. 그런 다음, 닫는 `</Project>`의 바로 안에 있는 파일의 끝에 다음 줄을 추가하고 파일을 저장합니다.
+1. 소개에서 제안한 대로 별도의 텍스트 편집기에서 *Python-CustomCommands.pyproj* 를 엽니다. 그런 다음, 닫는 `</Project>`의 바로 안에 있는 파일의 끝에 다음 줄을 추가하고 파일을 저장합니다.
 
     ```xml
     <PropertyGroup>
@@ -60,9 +60,9 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
     </PropertyGroup>
     ```
 
-1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드**를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 `<PythonCommands>` 속성 그룹을 복제할 뿐이므로 **Python** 메뉴를 다시 확인하여 **PyLint 실행**이 여전히 거기에 표시된 유일한 항목인지 확인합니다.
+1. Visual Studio로 다시 전환하고 파일 변경에 관한 메시지가 표시될 때 **다시 로드** 를 선택합니다. 그런 다음, 앞에서 추가한 줄은 PyLint 명령이 포함된 기본 `<PythonCommands>` 속성 그룹을 복제할 뿐이므로 **Python** 메뉴를 다시 확인하여 **PyLint 실행** 이 여전히 거기에 표시된 유일한 항목인지 확인합니다.
 
-1. 프로젝트 파일을 포함한 편집기로 전환하고 `<PropertyGroup>` 뒤에 다음 `<Target>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe*를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
+1. 프로젝트 파일을 포함한 편집기로 전환하고 `<PropertyGroup>` 뒤에 다음 `<Target>` 정의를 추가합니다. 이 아티클의 뒷부분에서 설명하듯이, 이 `Target` 요소는 콘솔 창에서 *python.exe* 를 사용하여 시작 파일("StartupFile" 속성에 의해 식별됨)을 실행하는 사용자 지정 명령을 정의합니다. 특성 `ExecuteIn="consolepause"`는 닫기 전에 키를 누르기를 기다리는 콘솔을 사용합니다.
 
     ```xml
     <Target Name="Example_RunStartupFile" Label="Run startup file" Returns="@(Commands)">
@@ -88,11 +88,11 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 
     명령이 `$(PythonCommands)`에 정의된 명령보다 앞에 표시되도록 하려면 해당 토큰 앞에 배치합니다.
 
-1. 프로젝트 파일을 저장하고 Visual Studio로 전환하고 메시지가 표시될 때 프로젝트를 다시 로드합니다. 그런 다음, **Python-CustomCommands** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python**을 선택합니다. 메뉴에 **시작 파일 실행** 항목이 표시되어야 합니다. 이 메뉴 항목이 보이지 않으면 `<PythonCommands>` 요소에 해당 항목의 이름을 추가했는지 확인합니다. 또한 이 문서의 뒷부분에 나오는 [문제 해결](#troubleshooting)을 참조하세요.
+1. 프로젝트 파일을 저장하고 Visual Studio로 전환하고 메시지가 표시될 때 프로젝트를 다시 로드합니다. 그런 다음, **Python-CustomCommands** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **Python** 을 선택합니다. 메뉴에 **시작 파일 실행** 항목이 표시되어야 합니다. 이 메뉴 항목이 보이지 않으면 `<PythonCommands>` 요소에 해당 항목의 이름을 추가했는지 확인합니다. 또한 이 문서의 뒷부분에 나오는 [문제 해결](#troubleshooting)을 참조하세요.
 
     ![Python 상황에 맞는 서브 메뉴에 나타나는 사용자 지정 명령](media/custom-commands-walkthrough-menu-item.png)
 
-1. **시작 파일 실행** 명령을 선택하면 **Hello 사용자 지정 명령**에 이어서 **계속하려면 아무 키나 누르세요**라는 텍스트가 포함된 명령 창이 표시됩니다.  아무 키나 눌러 창을 닫습니다.
+1. **시작 파일 실행** 명령을 선택하면 **Hello 사용자 지정 명령** 에 이어서 **계속하려면 아무 키나 누르세요** 라는 텍스트가 포함된 명령 창이 표시됩니다.  아무 키나 눌러 창을 닫습니다.
 
     ![콘솔 창의 사용자 지정 명령 출력](media/custom-commands-walkthrough-console.png)
 
@@ -143,9 +143,9 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 
 | 특성 | 필요한 공간 | 설명 |
 | --- | --- | --- |
-| TargetType | 예 | 포함된 대상 특성 및 해당 특성이 Arguments 특성과 함께 사용되는 방법을 지정합니다.<ul><li>**실행 파일**: 대상에 이름이 지정된 실행 파일을 실행하여 인수의 값을 마치 명령줄에서 직접 입력한 것처럼 추가합니다. 값은 인수 없이 프로그램 이름만 포함해야 합니다.</li><li>**스크립트**: 대상에 파일 이름이 포함된 *python.exe*를 실행하면 인수의 값이 이어집니다.</li><li>**모듈**: `python -m` 뒤에 대상의 모듈 이름 및 그 뒤에 인수의 값을 실행합니다.</li><li>**코드**: 대상에 포함된 인라인 코드를 실행합니다. Arguments 값은 무시됩니다.</li><li>**pip**: 대상의 명령 및 그 뒤에 인수를 사용하여 `pip`를 실행합니다. ExecuteIn은 "output"으로 설정되지만 pip는 `install` 명령을 가정하고 대상을 패키지 이름으로 사용합니다.</li></ul> |
+| TargetType | 예 | 포함된 대상 특성 및 해당 특성이 Arguments 특성과 함께 사용되는 방법을 지정합니다.<ul><li>**실행 파일**: 대상에 이름이 지정된 실행 파일을 실행하여 인수의 값을 마치 명령줄에서 직접 입력한 것처럼 추가합니다. 값은 인수 없이 프로그램 이름만 포함해야 합니다.</li><li>**스크립트**: 대상에 파일 이름이 포함된 *python.exe* 를 실행하면 인수의 값이 이어집니다.</li><li>**모듈**: `python -m` 뒤에 대상의 모듈 이름 및 그 뒤에 인수의 값을 실행합니다.</li><li>**코드**: 대상에 포함된 인라인 코드를 실행합니다. Arguments 값은 무시됩니다.</li><li>**pip**: 대상의 명령 및 그 뒤에 인수를 사용하여 `pip`를 실행합니다. ExecuteIn은 "output"으로 설정되지만 pip는 `install` 명령을 가정하고 대상을 패키지 이름으로 사용합니다.</li></ul> |
 | Target | 예 | TargetType에 따라 사용할 파일 이름, 모듈 이름, 코드 또는 pip 명령입니다. |
-| 인수 | Optional | 대상에 부여할 인수(있는 경우)의 문자열을 지정합니다. TargetType이 `script`이면 *python.exe*가 아닌 Python 프로그램에 인수가 지정됩니다. `code` TargetType에 대해서는 무시됩니다. |
+| 인수 | Optional | 대상에 부여할 인수(있는 경우)의 문자열을 지정합니다. TargetType이 `script`이면 *python.exe* 가 아닌 Python 프로그램에 인수가 지정됩니다. `code` TargetType에 대해서는 무시됩니다. |
 | ExecuteIn | 예 | 명령을 실행할 환경을 지정합니다.<ul><li>**콘솔**: (기본값) 대상 및 인수를 마치 명령줄에서 직접 입력한 것처럼 실행합니다. Target이 실행되는 동안 명령 창이 표시되었다가 자동으로 닫힙니다.</li><li>**consolepause**: 콘솔과 같지만 키 누르기를 기다렸다가 창을 닫습니다.</li><li>**출력**: 대상을 실행하고 그 결과를 Visual Studio의 **출력** 창에 표시합니다. TargetType이 "pip"인 경우 Visual Studio는 Target을 패키지 이름으로 사용하고 Arguments를 추가합니다.</li><li>**repl**: [Python 대화형](python-interactive-repl-in-visual-studio.md) 창에서 대상을 실행합니다. 창의 제목에 선택적 표시 이름이 사용됩니다.</li><li>**none**: console과 같이 동작합니다.</li></ul>|
 | 시작 위치 | Optional | 명령을 실행할 폴더입니다. |
 | ErrorRegex<br>WarningRegEx | Optional | ExecuteIn이 `output`인 경우에만 사용됩니다. 두 값 모두 Visual Studio가 명령 출력을 구문 분석하여 해당 **오류 목록** 창에 오류 및 경고를 표시하는 정규식을 지정합니다. 지정되지 않은 경우 이 명령은 **오류 목록** 창에 영향을 미치지 않습니다. Visual Studio에서 예상되는 내용에 대한 자세한 내용은 [명명된 캡처 그룹](#named-capture-groups-for-regular-expressions)을 참조하세요. |
@@ -200,14 +200,14 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 </Project>
 ```
 
-*.targets* 파일을 프로젝트로 로드하려면 `<Import Project="(path)">` 요소를 `<Project>` 요소 내에 배치합니다. 예를 들어 프로젝트의 *targets* 하위 폴더에 *CustomCommands.targets*라는 파일이 있는 경우 다음 코드를 사용합니다.
+*.targets* 파일을 프로젝트로 로드하려면 `<Import Project="(path)">` 요소를 `<Project>` 요소 내에 배치합니다. 예를 들어 프로젝트의 *targets* 하위 폴더에 *CustomCommands.targets* 라는 파일이 있는 경우 다음 코드를 사용합니다.
 
 ```xml
 <Import Project="targets/CustomCommands.targets"/>
 ```
 
 > [!Note]
-> *.targets* 파일을 변경할 때마다 프로젝트 자체가 아닌 프로젝트를 포함한 *솔루션*을 다시 로드해야 합니다.
+> *.targets* 파일을 변경할 때마다 프로젝트 자체가 아닌 프로젝트를 포함한 *솔루션* 을 다시 로드해야 합니다.
 
 ## <a name="example-commands"></a>명령 예
 
@@ -382,7 +382,7 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 - `ErrorRegex` 또는 `WarningRegex`는 설정 `ExecuteIn="output"` 없이 지정됩니다.
 - 요소에 인식되지 않는 특성이 존재합니다. `Arguments` 대신 `Argumnets`(철자 틀림)를 사용했을 수 있습니다.
 
-정의되지 않은 특성을 참조하면 특성 값이 비어 있을 수 있습니다. 예를 들어 토큰 `$(StartupFile)`을 사용하지만 프로젝트에 시작 파일이 정의되어 있지 않으면 토큰이 빈 문자열로 확인됩니다. 그러한 경우 기본값을 정의하는 것이 좋습니다. 예를 들어 Bottle, Flask 및 Django 프로젝트 템플릿에 정의된 **Run server** 및 **Run debug server** 명령은 프로젝트 속성에 서버 시작 파일을 다른 방법으로 지정하지 않은 한 기본적으로 *manage.py*로 지정됩니다.
+정의되지 않은 특성을 참조하면 특성 값이 비어 있을 수 있습니다. 예를 들어 토큰 `$(StartupFile)`을 사용하지만 프로젝트에 시작 파일이 정의되어 있지 않으면 토큰이 빈 문자열로 확인됩니다. 그러한 경우 기본값을 정의하는 것이 좋습니다. 예를 들어 Bottle, Flask 및 Django 프로젝트 템플릿에 정의된 **Run server** 및 **Run debug server** 명령은 프로젝트 속성에 서버 시작 파일을 다른 방법으로 지정하지 않은 한 기본적으로 *manage.py* 로 지정됩니다.
 
 ### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>명령을 실행할 때 Visual Studio가 응답을 중지하고 크래시가 발생함
 
@@ -390,4 +390,4 @@ Visual Studio가 해당 경고에서 올바른 정보를 추출하고 이를 **�
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>실행 파일이 "내부 또는 외부 명령, 작동 가능 프로그램 또는 일괄 처리 파일으로 인식되지 않습니다."
 
-`TargetType="executable"`을 사용할 때 `Target`의 값이 인수 없이 프로그램 이름*뿐*이어야 합니다(예: *python* 또는 *python.exe*만). 인수를 모두 `Arguments` 특성으로 이동합니다.
+`TargetType="executable"`을 사용할 때 `Target`의 값이 인수 없이 프로그램 이름 *뿐* 이어야 합니다(예: *python* 또는 *python.exe* 만). 인수를 모두 `Arguments` 특성으로 이동합니다.

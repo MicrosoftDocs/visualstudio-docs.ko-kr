@@ -7,16 +7,16 @@ ms.topic: how-to
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a16b8df2539272f96f0211fdf08e32fe4e4eaac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887824"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 

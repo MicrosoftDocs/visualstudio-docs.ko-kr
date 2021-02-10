@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: c81bcb029499b77b2f5b25c598437f1fcbf70854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886161"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 메모리 사용량 분석
 

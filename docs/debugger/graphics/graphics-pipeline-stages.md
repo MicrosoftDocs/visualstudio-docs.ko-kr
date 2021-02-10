@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888656"
 ---
 # <a name="graphics-pipeline-stages"></a>그래픽 파이프라인 단계
 그래픽 파이프라인 단계 창에서는 개별 그리기 호출이 Direct3D 그래픽 파이프라인의 각 단계에서 변환되는 방식을 이해할 수 있습니다.

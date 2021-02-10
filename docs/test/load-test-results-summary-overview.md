@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: ac7fa64b143127d8efe030a94242b237ff9e0d49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887720"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 

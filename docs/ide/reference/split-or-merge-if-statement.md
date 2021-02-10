@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 30ec77382cf404bc74f2ff5fed71cff360b9f28e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893388"
 ---
 # <a name="split-or-merge-if-statements"></a>분할 또는 병합 if 문
 

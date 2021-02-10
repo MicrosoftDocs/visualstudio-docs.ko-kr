@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cd11e722886b77e9faaace768cc30a74c759903f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884210"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visual Studio 디버거에서 스레드 창을 사용하여 스레드 보기(C#, Visual Basic, C++)
 디버그 중인 애플리케이션의 스레드를 **스레드** 창에서 검사하고 작업할 수 있습니다. **스레드** 창을 사용하는 방법에 대한 단계별 지침은 [연습: 스레드 창을 사용하여 디버그](../debugger/how-to-use-the-threads-window.md)를 참조하세요.

@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893167"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
@@ -217,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![예외에 대한 추가 조건](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 각 조건 줄에 대해 모듈의 이름을 입력하고 비교 연산자 목록을 **같음** 또는 **같지 않음** 으로 변경합니다. 이름에 와일드카드(* *\\\** _)를 지정하여 둘 이상의 모듈을 지정할 수 있습니다.
+3. 각 조건 줄에 대해 모듈의 이름을 입력하고 비교 연산자 목록을 **같음** 또는 **같지 않음** 으로 변경합니다. 이름에 와일드카드( **\\\*** )를 지정하여 둘 이상의 모듈을 지정할 수 있습니다.
 
-4. 조건을 삭제해야 하는 경우 조건 줄 끝에 있는 _ *X**를 선택합니다.
+4. 조건을 삭제해야 하는 경우 조건 줄 끝에 있는 **X** 를 선택합니다.
 
 ## <a name="see-also"></a>참조
 

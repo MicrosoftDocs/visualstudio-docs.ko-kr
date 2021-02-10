@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: ea27d94f4fbe4c0ebe81cf0153ce2e98a0789dd6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+manager: jmartens
+ms.openlocfilehash: 5245ccdb9130d3fac9639e7befc63ee2a5ebf70a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887616"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 

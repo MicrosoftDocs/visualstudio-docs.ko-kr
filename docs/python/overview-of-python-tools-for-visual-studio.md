@@ -6,17 +6,17 @@ ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0283cb4332e9137550b74a85c38d7963f3c77a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890476"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -81,7 +81,7 @@ Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬�
 
 ![Visual Studio의 Python 대화형 창](media/interactive-window.png)
 
-또한 Visual Studio는 Python 코드 편집기와 **대화형** 창 간의 긴밀한 통합을 제공합니다. **Ctrl**+**Enter** 바로 가기 키는 간편하게 편집기에서 현재 코드 줄(또는 코드 블록)을 **대화형** 창으로 보낸 후, 다음 줄(또는 블록)로 이동합니다. **Ctrl**+**Enter**를 사용하면 디버거를 실행할 필요 없이 쉽게 한 단계씩 코드를 실행할 수 있습니다. 또한 동일한 키 입력으로 선택한 코드를 **대화형** 창으로 보내고, **대화형** 창에서 편집기에 코드를 쉽게 붙여넣을 수 있습니다. 이러한 기능을 함께 사용하면 **대화형** 창에서 코드의 세그먼트에 대한 세부 정보를 파악하고 편집기에서 결과를 파일에 쉽게 저장할 수 있습니다.
+또한 Visual Studio는 Python 코드 편집기와 **대화형** 창 간의 긴밀한 통합을 제공합니다. **Ctrl**+**Enter** 바로 가기 키는 간편하게 편집기에서 현재 코드 줄(또는 코드 블록)을 **대화형** 창으로 보낸 후, 다음 줄(또는 블록)로 이동합니다. **Ctrl**+**Enter** 를 사용하면 디버거를 실행할 필요 없이 쉽게 한 단계씩 코드를 실행할 수 있습니다. 또한 동일한 키 입력으로 선택한 코드를 **대화형** 창으로 보내고, **대화형** 창에서 편집기에 코드를 쉽게 붙여넣을 수 있습니다. 이러한 기능을 함께 사용하면 **대화형** 창에서 코드의 세그먼트에 대한 세부 정보를 파악하고 편집기에서 결과를 파일에 쉽게 저장할 수 있습니다.
 
 또한 Visual Studio는 인라인 플롯, .NET 및 WPF(Windows Presentation Foundation)를 포함하여 REPL에서 IPython/Jupyter를 지원합니다.
 
@@ -144,7 +144,7 @@ Visual Studio 2019에서 Visual Studio 프로젝트 파일 없이 코드를 실�
 
 ## <a name="unit-testing-tools"></a>위 테스트 도구
 
-Visual Studio **테스트 탐색기**에서 테스트를 검색, 실행 및 관리하고 단위 테스트를 쉽게 디버그합니다.
+Visual Studio **테스트 탐색기** 에서 테스트를 검색, 실행 및 관리하고 단위 테스트를 쉽게 디버그합니다.
 
 ![Visual Studio에서 Python 단위 테스트 디버깅](media/unit-test-debugging.png)
 
@@ -313,9 +313,9 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 1. Visual Studio 2013에서 Django 템플릿 편집기에는 몇 가지 알려진 문제가 있으며 Update 2를 설치하여 해결할 수 있습니다.
 
-1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. Visual Studio 2013 Express for Web에는 **프로세스에 연결** 대화 상자가 없지만, **서버 탐색기** 에서 **디버거 연결(Python)** 명령을 사용하여 Azure 웹 사이트 원격 디버깅을 계속 수행할 수 있습니다. 원격 디버깅을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
 
-1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
+1. Windows 8 이상이 필요합니다. **서버 탐색기** 에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) 이상이 필요합니다.
 
 1. Windows 8 이상이 필요합니다.
 ::: moniker-end

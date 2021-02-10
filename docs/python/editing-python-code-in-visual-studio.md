@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73024730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888058"
 ---
 # <a name="edit-python-code"></a>Python 코드 편집
 
@@ -31,7 +31,7 @@ Visual Studio **개체 브라우저**(**보기** > **다른 창** > **개체 브
 
 IntelliSense는 [완성](#completions), [서명 도움말](#signature-help), [요약 정보](#quick-info) 및 [코드 색 지정](#code-coloring)을 제공합니다. Visual Studio 2017 버전 15.7 이상은 [형식 힌트](#type-hints)도 지원합니다.
 
-성능을 향상시키기 위해 Visual Studio 2017 버전 15.5 이하의 IntelliSense는 프로젝트의 각 Python 환경에 대해 생성된 완성 데이터베이스를 사용합니다. 패키지를 추가, 제거 또는 업데이트할 경우 데이터베이스를 새로 고쳐야 할 수 있습니다. 데이터베이스 상태는 **Python 환경** 창(**솔루션 탐색기**의 형제)의 **IntelliSense** 탭에 표시됩니다([환경 창 참조](python-environments-window-tab-reference.md) 확인).
+성능을 향상시키기 위해 Visual Studio 2017 버전 15.5 이하의 IntelliSense는 프로젝트의 각 Python 환경에 대해 생성된 완성 데이터베이스를 사용합니다. 패키지를 추가, 제거 또는 업데이트할 경우 데이터베이스를 새로 고쳐야 할 수 있습니다. 데이터베이스 상태는 **Python 환경** 창(**솔루션 탐색기** 의 형제)의 **IntelliSense** 탭에 표시됩니다([환경 창 참조](python-environments-window-tab-reference.md) 확인).
 
 Visual Studio 2017 버전 15.6 이상에서는 데이터베이스에 종속되지 않는 IntelliSense 완성을 제공하는 다른 방법을 사용합니다.
 
@@ -72,7 +72,7 @@ Visual Studio 2017 버전 15.6 이상에서는 데이터베이스에 종속되�
 ![Visual Studio 편집기에서 데코레이터 완성](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급**을 통해 완성 동작을 구성할 수 있습니다. 여기서 **검색 문자열 기준 필터 목록**은 입력 시 완성 제안 필터링을 적용하며(기본적으로 선택한 상태), **멤버 완성에서 멤버 교집합 표시**는 가능한 모든 형식에서 지원되는 완성만 표시합니다(기본적으로 선택 취소됨). [옵션 - 완성 결과](python-support-options-and-settings-in-visual-studio.md#completion-results)를 참조하세요.
+> **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급** 을 통해 완성 동작을 구성할 수 있습니다. 여기서 **검색 문자열 기준 필터 목록** 은 입력 시 완성 제안 필터링을 적용하며(기본적으로 선택한 상태), **멤버 완성에서 멤버 교집합 표시** 는 가능한 모든 형식에서 지원되는 완성만 표시합니다(기본적으로 선택 취소됨). [옵션 - 완성 결과](python-support-options-and-settings-in-visual-studio.md#completion-results)를 참조하세요.
 
 ### <a name="type-hints"></a>형식 힌트
 
@@ -88,7 +88,7 @@ Python 3.5+([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org)의
 
 ![형식 힌트를 표시하는 IntelliSense 완료](media/code-editing-type-hints2.png)
 
-오류는 일반적으로 런타임까지는 표시되지 않기 때문에 프로젝트 전체에서 형식 힌트의 유효성을 검사하는 것이 유용합니다. 이를 위해 Visual Studio는 **솔루션 탐색기**의 바로 가기 메뉴 명령 **Python** > **Mypy 실행**을 통해 업계 표준 MyPy 도구를 통합합니다.
+오류는 일반적으로 런타임까지는 표시되지 않기 때문에 프로젝트 전체에서 형식 힌트의 유효성을 검사하는 것이 유용합니다. 이를 위해 Visual Studio는 **솔루션 탐색기** 의 바로 가기 메뉴 명령 **Python** > **Mypy 실행** 을 통해 업계 표준 MyPy 도구를 통합합니다.
 
 ![솔루션 탐색기에서 MyPy 바로 가기 메뉴 실행](media/code-editing-type-hints-run-mypy.png)
 
@@ -131,7 +131,7 @@ commas_to_colons(1)
 ![Visual Studio 편집기의 시그리처 도움말](media/code-editing-signature-help.png)
 
 > [!Tip]
-> 서명 도움말을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **일반**으로 이동하여 **문 완성** > **매개 변수 정보**의 선택을 취소합니다.
+> 서명 도움말을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **일반** 으로 이동하여 **문 완성** > **매개 변수 정보** 의 선택을 취소합니다.
 
 ### <a name="quick-info"></a>요약 정보
 
@@ -145,16 +145,16 @@ commas_to_colons(1)
 
 ![Visual Studio 편집기에서 코드 및 구문 색 지정](media/code-editing-code-coloring.png)
 
-색을 사용자 지정하려면 **도구** > **옵션** > **환경** > **글꼴 및 색**으로 이동하여 **항목 표시** 목록에서 **Python** 항목을 수정합니다.
+색을 사용자 지정하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** 으로 이동하여 **항목 표시** 목록에서 **Python** 항목을 수정합니다.
 
 ![Visual Studio에서 글꼴 및 색 옵션](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> 코드 색 지정을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급**으로 이동하여 **기타 옵션** > **형식별 색 이름**의 선택을 취소합니다. [옵션 - 기타 옵션](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)을 참조하세요.
+> 코드 색 지정을 사용하지 않으려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **고급** 으로 이동하여 **기타 옵션** > **형식별 색 이름** 의 선택을 취소합니다. [옵션 - 기타 옵션](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)을 참조하세요.
 
 ## <a name="code-snippets"></a>코드 조각
 
-코드 조각은 바로 가기를 입력하고 **Tab** 키를 누르거나 **편집** > **IntelliSense** > **코드 조각 삽입** 및 **코드 감싸기** 명령을 사용하고 **Python**을 선택한 다음, 원하는 코드 조각을 선택하여 파일에 삽입할 수 있는 코드의 조각입니다.
+코드 조각은 바로 가기를 입력하고 **Tab** 키를 누르거나 **편집** > **IntelliSense** > **코드 조각 삽입** 및 **코드 감싸기** 명령을 사용하고 **Python** 을 선택한 다음, 원하는 코드 조각을 선택하여 파일에 삽입할 수 있는 코드의 조각입니다.
 
 예를 들어, `class`는 클래스 정의를 삽입하는 코드 조각의 바로 가기입니다. `class`를 입력하면 자동 완성 목록에 코드 조각이 표시됩니다.
 
@@ -166,7 +166,7 @@ commas_to_colons(1)
 
 ### <a name="menu-commands"></a>메뉴 명령
 
-**편집** > **IntelliSense** > **코드 조각 삽입**메뉴 명령을 사용하는 경우 먼저 **Python**을 선택한 다음, 코드 조각을 선택합니다.
+**편집** > **IntelliSense** > **코드 조각 삽입** 메뉴 명령을 사용하는 경우 먼저 **Python** 을 선택한 다음, 코드 조각을 선택합니다.
 
 ![코드 조각 삽입 명령을 통해 코드 조각 선택](media/code-editing-code-snippet-insert.png)
 
@@ -178,13 +178,13 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-이 코드를 선택하고 **코드 감싸기** 명령을 선택하면 사용 가능한 코드 조각 목록이 표시됩니다. 목록에서 **def**를 선택하면 선택한 코드가 함수 정의 내에 배치되며, **Tab** 키를 사용하여 강조 표시된 함수 이름과 인수 간에 탐색할 수 있습니다.
+이 코드를 선택하고 **코드 감싸기** 명령을 선택하면 사용 가능한 코드 조각 목록이 표시됩니다. 목록에서 **def** 를 선택하면 선택한 코드가 함수 정의 내에 배치되며, **Tab** 키를 사용하여 강조 표시된 함수 이름과 인수 간에 탐색할 수 있습니다.
 
 ![코드 조각에 코드 감싸기 명령 사용](media/code-editing-code-snippet-surround-with.png)
 
 ### <a name="examine-available-snippets"></a>사용 가능한 코드 조각 검사
 
-**도구** > **코드 조각 관리자** 메뉴 명령을 사용하고 언어로 **Python**을 선택하여 열린 **코드 조각 관리자**에서 사용 가능한 코드 조각을 확인할 수 있습니다.
+**도구** > **코드 조각 관리자** 메뉴 명령을 사용하고 언어로 **Python** 을 선택하여 열린 **코드 조각 관리자** 에서 사용 가능한 코드 조각을 확인할 수 있습니다.
 
 ![Visual Studio의 코드 조각 관리자](media/code-editing-code-snippets-manager.png)
 
@@ -203,17 +203,17 @@ Visual Studio의 Python 지원에서는 소스 코드를 사용할 수 있는 �
 ![Visual Studio 편집기의 탐색 모음](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> 탐색 모음을 숨기려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **일반**으로 이동하여 **설정** > **탐색 모음**의 선택을 취소합니다.
+> 탐색 모음을 숨기려면 **도구** > **옵션** > **텍스트 편집기** > **Python** > **일반** 으로 이동하여 **설정** > **탐색 모음** 의 선택을 취소합니다.
 
 ### <a name="go-to-definition"></a>정의로 이동
 
-**정의로 이동**은 식별자(예: 함수 이름, 클래스 또는 변수)를 사용하여 정의된 원본 코드로 빠르게 이동합니다. 정의를 호출하려면 식별자를 마우스 오른쪽 단추로 클릭하여 **정의로 이동**을 선택하거나 식별자에 캐럿을 배치하고 **F12** 키를 누릅니다. 원본 코드를 사용할 수 있는 경우 코드 및 외부 라이브러리에서 작동합니다. 라이브러리 소스 코드를 사용할 수 없는 경우 **정의로 이동**은 모듈 참조를 위해 관련 `import` 문으로 건너뛰거나 오류를 표시합니다.
+**정의로 이동** 은 식별자(예: 함수 이름, 클래스 또는 변수)를 사용하여 정의된 원본 코드로 빠르게 이동합니다. 정의를 호출하려면 식별자를 마우스 오른쪽 단추로 클릭하여 **정의로 이동** 을 선택하거나 식별자에 캐럿을 배치하고 **F12** 키를 누릅니다. 원본 코드를 사용할 수 있는 경우 코드 및 외부 라이브러리에서 작동합니다. 라이브러리 소스 코드를 사용할 수 없는 경우 **정의로 이동** 은 모듈 참조를 위해 관련 `import` 문으로 건너뛰거나 오류를 표시합니다.
 
 ![Visual Studio에서 정의로 이동 명령](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>탐색
 
-**편집** > **다음 탐색** 명령(**Ctrl**+ **,** )은 문자열을 입력하고 해당 문자열을 포함하는 함수, 클래스 또는 변수를 정의하는 코드에서 가능한 일치 항목을 볼 수 있는 검색 상자를 편집기에 표시합니다. 이 기능은 **정의로 이동**과 비슷한 기능을 제공하지만 식별자를 사용하여 찾을 필요가 없습니다.
+**편집** > **다음 탐색** 명령(**Ctrl**+ **,** )은 문자열을 입력하고 해당 문자열을 포함하는 함수, 클래스 또는 변수를 정의하는 코드에서 가능한 일치 항목을 볼 수 있는 검색 상자를 편집기에 표시합니다. 이 기능은 **정의로 이동** 과 비슷한 기능을 제공하지만 식별자를 사용하여 찾을 필요가 없습니다.
 
 이름을 두 번 클릭하거나 화살표 키로 선택하고 **Enter** 키를 누르면 해당 식별자의 정의로 이동합니다.
 
@@ -221,7 +221,7 @@ Visual Studio의 Python 지원에서는 소스 코드를 사용할 수 있는 �
 
 ### <a name="find-all-references"></a>모든 참조 찾기
 
-**모든 참조 찾기**는 가져오기 및 할당을 포함하여 지정된 식별자가 정의되고 사용되는 위치를 찾는 유용한 방법입니다. 참조를 호출하려면 식별자를 마우스 오른쪽 단추로 클릭하여 **모든 참조 찾기**을 선택하거나 식별자에 캐럿을 배치하고 **Shift**+**F12**를 누릅니다. 목록에서 항목을 두 번 클릭하면 해당 위치로 이동합니다.
+**모든 참조 찾기** 는 가져오기 및 할당을 포함하여 지정된 식별자가 정의되고 사용되는 위치를 찾는 유용한 방법입니다. 참조를 호출하려면 식별자를 마우스 오른쪽 단추로 클릭하여 **모든 참조 찾기** 을 선택하거나 식별자에 캐럿을 배치하고 **Shift**+**F12** 를 누릅니다. 목록에서 항목을 두 번 클릭하면 해당 위치로 이동합니다.
 
 ![모든 참조 찾기 결과](media/code-editing-find-all-references.png)
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f4fadb932078358b550e1d2c72bea292684a1954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891698"
 ---
 # <a name="message-search-dialog-box"></a>메시지 검색 대화 상자
 이 대화 상자를 사용하여 [메시지 뷰](../debugger/messages-view.md)에서 특정 메시지에 대한 노드를 찾아 선택할 수 있습니다. 이 대화 상자를 표시하려면 포커스를 메시지 뷰 창으로 이동합니다. 그런 다음, **검색** 메뉴에서 **메시지 찾기** 를 선택합니다.

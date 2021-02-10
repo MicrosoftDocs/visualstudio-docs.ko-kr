@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c39024e32c899310b88c1b0583d5b292b063937
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: ddb7a9f22033c24d4e2e925caec73a86f24e4985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885185"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 메모리 창 사용(C#, C++, Visual Basic, F#)
 

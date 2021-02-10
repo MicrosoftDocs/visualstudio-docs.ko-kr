@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81efd0f20ba971555ec8c1333dfc322112f13e17
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 40902746e1dd1a4c68c9e1aa54ed4e72030a8fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886030"
 ---
 # <a name="understand-sampling-data-values"></a>샘플링 데이터 값 이해
 
