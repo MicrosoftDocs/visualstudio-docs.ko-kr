@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58318ebde2446a32cc515d09b7a1d848222b554b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947009"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 이 문서 컨텍스트의 소스 코드 범위를 가져옵니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80731793"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetSourceRange( 
+HRESULT GetSourceRange( 
    TEXT_POSITION* pBegPosition,
    TEXT_POSITION* pEndPosition
 );
 ```
 
 ```csharp
-int GetSourceRange( 
+int GetSourceRange( 
    TEXT_POSITION[] pBegPosition,
    TEXT_POSITION[] pEndPosition
 );
@@ -48,7 +48,7 @@ int GetSourceRange( 
 `pEndPosition`\
 [in, out] 끝 위치로 채워진 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다. 이 정보가 필요 하지 않은 경우이 인수를 null 값으로 설정 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -56,7 +56,7 @@ int GetSourceRange( 
 
  이 문서 컨텍스트 내에 포함 된 코드 문의 범위를 가져오려면 [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

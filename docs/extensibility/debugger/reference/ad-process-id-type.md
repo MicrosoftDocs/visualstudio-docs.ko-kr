@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a88fbe97cede8d343f1a96bc1917a69b8905b02b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72bca5a909b7a001bf12779e54953d403134995b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948415"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조에서 프로세스 ID를 해석 하는 방법을 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_AD_PROCESS_ID {

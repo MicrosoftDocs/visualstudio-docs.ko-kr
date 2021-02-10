@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948454"
 ---
 # <a name="program-control"></a>프로그램 제어
 Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이 프로그램 수준에서 발생 합니다.
@@ -40,7 +40,7 @@ Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이
 ## <a name="methods-of-program-control"></a>Program 컨트롤의 메서드
  다음 표에서는 최소 기능 디버그 엔진 (DE) 및 실행 제어를 위해 구현 해야 하는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 의 메서드를 보여 줍니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|프로그램에 포함 된 모든 스레드를 중지 된 상태로 계속 실행 합니다. 실행 제어에 필요 합니다.|
 |[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|프로그램에 포함 된 모든 스레드를 중지 된 상태로 계속 실행 합니다. 실행 제어에 필요 합니다.|

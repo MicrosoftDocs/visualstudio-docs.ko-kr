@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948428"
 ---
 # <a name="programs"></a>프로그램
 디버거 아키텍처에서 *프로그램* 은 다음을 수행 합니다.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947895"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook 양식 영역 만들기
   양식 영역을 사용하여 Microsoft Office Outlook 양식을 사용자 지정할 수 있습니다. Visual Studio는 양식 영역을 쉽게 디자인, 개발 및 디버그할 수 있도록 하는 고급 도구를 제공합니다.
@@ -71,7 +71,7 @@ ms.locfileid: "96847964"
 
  마법사를 사용하여 만들려는 양식 영역의 형식을 지정합니다. 다음 표에서는 각 양식 영역 형식에 대해 설명합니다.
 
-|영역 형식|설명|
+|영역 형식|Description|
 |-----------------|-----------------|
 |별도|Outlook 양식에 새 페이지로 양식 영역을 추가합니다.|
 |인접|Outlook 양식의 기본 페이지 맨 아래에 양식 영역을 추가합니다.|
@@ -153,7 +153,7 @@ ms.locfileid: "96847964"
 ### <a name="handle-form-region-events"></a><a name="HandlingFormRegionEvents"></a> 양식 영역 이벤트 처리
  **Outlook 양식 영역** 항목은 다음 세 가지 이벤트 처리기를 양식 영역 코드 파일에 자동으로 추가 합니다.
 
-|이벤트|설명|
+|이벤트|Description|
 |-----------|-----------------|
 |FormRegionInitializing|양식 영역을 초기화하기 전에 발생합니다. 이 이벤트 처리기의 조건을 검사하여 Outlook에서 양식 영역을 표시할지 여부를 확인할 수 있습니다. 자세한 내용은 [방법: Outlook에서 양식 영역 표시 안 함](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)을 참조 하세요.|
 |FormRegionShowing|양식 영역의 인스턴스가 만들어진 후 양식 영역이 표시되기 전에 발생합니다.|
@@ -178,7 +178,7 @@ ms.locfileid: "96847964"
 
 ## <a name="related-topics"></a>관련 항목
 
-|제목|설명|
+|제목|Description|
 |-----------|-----------------|
 |[Outlook 양식 영역 만들기에 대 한 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)|양식 영역을 최적화하고 잠재적인 문제를 방지하는 데 도움이 되는 정보를 제공합니다.|
 |[방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|**새 Outlook 양식 영역** 마법사를 사용 하 여 표준 또는 사용자 지정 Microsoft Office outlook 양식을 확장 하는 양식 영역을 만드는 방법을 보여 줍니다.|

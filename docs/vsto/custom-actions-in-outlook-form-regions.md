@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947882"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 양식 영역의 사용자 지정 작업
   작업 사용자가 Microsoft Office Outlook 항목에 응답할 수 있는 단추를 표시 합니다. 예를 들어 메일 항목에 응답 하려면 사용자가 **회신**, **전체 회신** 또는 **전달** 작업 단추를 클릭 합니다. 이러한 각 작업은 새 메일 항목을 만들고 원래 항목의 정보를 사용 하 여 해당 항목의 필드를 채웁니다.
@@ -38,11 +38,11 @@ ms.locfileid: "96848198"
 
  다음 표에서는 **사용자 지정 작업** 대화 상자에서 사용할 수 있는 속성에 대해 설명 합니다.
 
-|속성|설명|
+|속성|Description|
 |--------------|-----------------|
 |**AddressLike**|대상 폼의 주소를 지정 하는 방법을 지정 합니다.|
 |**본문**|원본 항목의 본문이 대상 폼에 추가 되는 방법을 지정 합니다.|
-|**사용**|사용자 지정 동작을 사용할 수 있는지 여부를 나타냅니다. 이 속성이 **false** 로 설정 된 경우 사용자 지정 작업을 사용할 수 없습니다.|
+|**Enabled**|사용자 지정 동작을 사용할 수 있는지 여부를 나타냅니다. 이 속성이 **false** 로 설정 된 경우 사용자 지정 작업을 사용할 수 없습니다.|
 |**방법**|사용자 지정 작업을 실행할 때 사용할 수 있는 응답 유형을 지정 합니다. 사용자 지정 작업은 양식을 보내거나 양식을 열거나 사용자에 게 양식을 보낼지 아니면 사용자에 게 표시할 수 있습니다.|
 |**이름**|코드에서이 사용자 지정 작업을 참조 하는 데 사용할 수 있는 내부 이름을 지정 합니다.|
 |**ShowOnRibbon**|원래 항목의 리본 메뉴에 사용자 지정 작업을 표시할지 여부를 나타냅니다.|

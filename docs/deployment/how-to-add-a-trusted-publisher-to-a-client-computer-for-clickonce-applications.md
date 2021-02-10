@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947816"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 애플리케이션의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 신뢰할 수 있는 애플리케이션 배포를 사용하면 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션이 사용자 프롬프트 없이 더 높은 신뢰 수준으로 실행되도록 클라이언트 컴퓨터를 구성할 수 있습니다. 다음 절차에서는 명령줄 도구 CertMgr.exe를 사용하여, 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 저장소에 게시자의 인증서를 추가하는 방법을 보여 줍니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94382704"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509( *.cer* ) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
+2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조하세요.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "94382704"
 
 1. CA에서 디지털 인증서를 가져옵니다.
 
-2. Base64 X.509( *.cer* ) 형식으로 인증서를 내보냅니다. 인증서 형식에 대 한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조 하세요.
+2. Base64 X.509(*.cer*) 형식으로 인증서를 내보냅니다. 인증서 형식에 대 한 자세한 내용은 [인증서 내보내기](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))를 참조 하세요.
 
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.
 
@@ -58,12 +58,12 @@ ms.locfileid: "94382704"
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 애플리케이션 보안](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 및 Authenticode](../deployment/clickonce-and-authenticode.md)
-- [신뢰할 수 있는 응용 프로그램 배포 개요](../deployment/trusted-application-deployment-overview.md)
+- [신뢰할 수 있는 애플리케이션 배포 개요](../deployment/trusted-application-deployment-overview.md)
 - [방법: ClickOnce 보안 설정 사용](../deployment/how-to-enable-clickonce-security-settings.md)
 - [방법: ClickOnce 응용 프로그램의 보안 영역 설정](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [방법: ClickOnce 응용 프로그램에 대 한 사용자 지정 권한 설정](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

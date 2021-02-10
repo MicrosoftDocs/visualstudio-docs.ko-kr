@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 121bd17e2343cfbba509e85d78ba37b57964f895
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947673"
 ---
 # <a name="implement-an-expression-evaluator"></a>식 계산기 구현
 > [!IMPORTANT]
@@ -60,7 +60,7 @@ ms.locfileid: "96559968"
 
   EE는 이러한 모든 인터페이스를 사용 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  [식 계산기 구현 전략](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) 식 계산기 (EE) 구현 전략에 대 한 3 단계 프로세스를 정의 합니다.
 
 ## <a name="see-also"></a>참고 항목

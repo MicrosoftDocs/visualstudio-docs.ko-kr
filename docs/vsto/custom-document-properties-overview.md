@@ -16,15 +16,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 51039c71c97614cb9e43df263b3d7155c9cb86f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947803"
 ---
 # <a name="custom-document-properties-overview"></a>사용자 지정 문서 속성 개요
 
@@ -32,7 +32,7 @@ ms.locfileid: "96847795"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="_assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_기능의
 
 이 속성은의 Office 솔루션 로더 구성 요소에 있는 인터페이스의 CLSID를 포함 합니다 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . CLSID 값은 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B입니다. 이 값을 변경해 서는 안 됩니다.
 

@@ -55,15 +55,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 37676b419bac620460e6c10e121e002739317315
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948624"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 솔루션의 오류에 대 한 추가 지원
 
@@ -79,7 +79,7 @@ Office 솔루션에서 몇 가지 일반적인 오류에 대 한 도움이 필�
 
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)
 
-## <a name="other-resources"></a>관련 자료
+## <a name="other-resources"></a>기타 리소스
 
 [Visual Studio tools for Office 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 

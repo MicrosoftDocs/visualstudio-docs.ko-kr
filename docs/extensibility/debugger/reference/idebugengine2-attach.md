@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948311"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 프로그램 또는 프로그램에 디버그 엔진 (DE)을 연결 합니다. DE-DE가 in-process로 실행 중인 경우 세션 디버그 관리자 (SDM)에 의해 호출 됩니다.
@@ -28,22 +28,22 @@ ms.locfileid: "80731210"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT Attach( 
-   IDebugProgram2**      pProgram,
-   IDebugProgramNode2**  rgpProgramNodes,
-   DWORD                 celtPrograms,
-   IDebugEventCallback2* pCallback,
-   ATTACH_REASON         dwReason
+HRESULT Attach( 
+   IDebugProgram2**      pProgram,
+   IDebugProgramNode2**  rgpProgramNodes,
+   DWORD                 celtPrograms,
+   IDebugEventCallback2* pCallback,
+   ATTACH_REASON         dwReason
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugProgram2[]     pProgram,
-   IDebugProgramNode2[] rgpProgramNodes,
-   uint                 celtPrograms,
-   IDebugEventCallback2 pCallback,
-   Enum_ATTACH_REASON   dwReason
+int Attach( 
+   IDebugProgram2[]     pProgram,
+   IDebugProgramNode2[] rgpProgramNodes,
+   uint                 celtPrograms,
+   IDebugEventCallback2 pCallback,
+   Enum_ATTACH_REASON   dwReason
 );
 ```
 
@@ -61,9 +61,9 @@ int Attach( 
 진행 SDM에 디버그 이벤트를 보내는 데 사용 되는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
 `dwReason`\
-진행 이러한 프로그램을 연결 하는 이유를 지정 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다. 자세한 내용은 설명 섹션을 참조하세요.
+진행 이러한 프로그램을 연결 하는 이유를 지정 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다. 자세한 내용은 주의 섹션을 참조하세요.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -89,7 +89,7 @@ int Attach( 
 
    또는에 지정 된 배열에서 프로그램 노드의 메서드를 호출 하기 전에 `pProgram` , `rgpProgramNodes` 필요한 경우 가장을 사용 하도록 설정 해야 합니다 `IDebugProgram2` . 그러나 일반적으로이 단계는 필요 하지 않습니다. 자세한 내용은 [보안 문제](../../../extensibility/debugger/security-issues.md)를 참조 하세요.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

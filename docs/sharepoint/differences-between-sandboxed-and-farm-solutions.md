@@ -14,15 +14,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cea66f313a8c6c8ad7fc390a3ca126d92139725c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948780"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>샌드박스가 적용 된 솔루션과 팜 솔루션의 차이점
   SharePoint 솔루션을 컴파일하면 sharepoint 서버에 배포 되 고 디버거가 디버그에 연결 됩니다. 솔루션을 디버깅 하는 데 사용 되는 프로세스는 샌드박스가 적용 된 솔루션 속성: 샌드박스가 적용 된 솔루션 또는 팜 솔루션의 설정에 따라 달라 집니다.
@@ -40,7 +40,7 @@ ms.locfileid: "94672784"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 현재 사이트를 실행 하는 w3wp.exe 또는 Spucworkerprocess.exe 프로세스에만 디버거를 연결 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 관리 되는 COM Plus 및 워크플로 디버깅 엔진을 연결 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [SharePoint 솔루션 디버깅](../sharepoint/debugging-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)

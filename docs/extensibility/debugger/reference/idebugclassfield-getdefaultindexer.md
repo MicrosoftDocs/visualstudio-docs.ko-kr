@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948350"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 기본 인덱서의 이름을 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80734428"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetDefaultIndexer( 
+HRESULT GetDefaultIndexer( 
    BSTR* pbstrIndexer
 );
 ```
@@ -42,7 +42,7 @@ int GetDefaultIndexer(
 ## <a name="parameters"></a>매개 변수
 `pbstrIndexer` 제한이 기본 인덱서의 이름을 포함 하는 문자열을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK 반환 하거나 기본 인덱서가 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명
@@ -78,5 +78,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
