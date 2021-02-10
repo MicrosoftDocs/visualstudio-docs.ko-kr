@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935419"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>잠금 정책을 정의하여 읽기 전용 세그먼트 만들기
 Visual Studio 시각화 및 모델링 SDK의 불변성 API를 사용 하면 프로그램에서 DSL (도메인 특정 언어) 모델의 일부 또는 전부를 잠그고 변경할 수 있습니다. 예를 들어이 읽기 전용 옵션을 사용 하면 사용자가 동료에 게 DSL 모델에 주석을 달고 검토할 수 있지만 원래는 변경 하지 못하게 할 수 있습니다.
@@ -79,11 +79,11 @@ partition.SetLocks(Locks.Delete);
 
 |값|`IsLocked(Value)`이 true 인 경우의 의미|
 |-|-|
-|없음|제한이 없습니다.|
+|None|제한이 없습니다.|
 |속성|요소의 도메인 속성을 변경할 수 없습니다. 관계에서 도메인 클래스의 역할에 의해 생성 된 속성에는 적용 되지 않습니다.|
 |추가|파티션 또는 저장소에 새 요소 및 링크를 만들 수 없습니다.<br /><br /> 에는 적용 되지 않습니다 `ModelElement` .|
 |이동|이 true 인 경우에는 파티션 간에 요소를 이동할 수 없습니다 `element.IsLocked(Move)` `targetPartition.IsLocked(Move)` .|
-|삭제|요소 자체에 대해이 잠금이 설정 된 경우 요소를 삭제할 수 없습니다. 포함 된 요소 및 모양과 같이 삭제가 전파 되는 요소에 대해이 잠금이 설정 된 경우에는 요소를 삭제할 수 없습니다.<br /><br /> 를 사용 `element.CanDelete()` 하 여 요소를 삭제할 수 있는지 여부를 검색할 수 있습니다.|
+|DELETE|요소 자체에 대해이 잠금이 설정 된 경우 요소를 삭제할 수 없습니다. 포함 된 요소 및 모양과 같이 삭제가 전파 되는 요소에 대해이 잠금이 설정 된 경우에는 요소를 삭제할 수 없습니다.<br /><br /> 를 사용 `element.CanDelete()` 하 여 요소를 삭제할 수 있는지 여부를 검색할 수 있습니다.|
 |재시도|Roleplayer에서 링크 순서를 변경할 수 없습니다.|
 |RolePlayer|이 요소에서 소스인 링크 집합은 변경할 수 없습니다. 예를 들어 새 요소는이 요소에 포함 될 수 없습니다. 이 요소가 대상인 링크에는 영향을 주지 않습니다.<br /><br /> 이 요소가 링크 이면 해당 소스와 대상이 영향을 받지 않습니다.|
 |모두|다른 값의 비트 OR입니다.|

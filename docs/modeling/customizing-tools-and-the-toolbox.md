@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 40341a0c74b371c4c84429474e58c7d338bb8059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935432"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
 

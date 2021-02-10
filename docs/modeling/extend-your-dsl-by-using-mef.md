@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935068"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 
@@ -131,7 +131,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - 이 어셈블리의 이름은 일반적으로 ".Dsl.dll"로 끝납니다.
 
-   - DSL 프로젝트에 액세스할 수 있는 경우에는 다음 디렉터리에서 어셈블리 파일을 찾을 수 있습니다.** \\ dsl \\ \* bin* _
+   - DSL 프로젝트에 액세스할 수 있는 경우 디렉터리 **dsl \\ bin \\ \*** 에서 어셈블리 파일을 찾을 수 있습니다.
 
    - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"으로 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일의 압축을 해제 합니다.
 
@@ -147,7 +147,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - System.Windows.Forms.dll
 
-4. 새 _ *VSIX 프로젝트** 프로젝트를 만듭니다.
+4. 새 **VSIX 프로젝트** 프로젝트를 만듭니다.
 
 5. **솔루션 탐색기** 에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정** 을 선택 합니다.
 
@@ -159,11 +159,11 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    1. Source.extension.vsixmanifest에서 **참조 추가** 를 클릭 **합니다.**
 
-   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\ bin \\ \** _에 빌드됩니다.
+   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\ bin \\ \*** 에 빌드됩니다.
 
        이를 통해 사용자는 DSL 및 확장을 동시에 설치할 수 있습니다. 사용자가 이미 DSL을 설치한 경우에는 확장만 설치 됩니다.
 
-9. _ * Source.extension.vsixmanifest * *의 다른 필드를 검토 하 고 업데이트 합니다. **버전 선택** 을 클릭 하 고 올바른 Visual Studio 버전이 설정 되어 있는지 확인 합니다.
+9. **Source.extension.vsixmanifest** 의 다른 필드를 검토 하 고 업데이트 합니다. **버전 선택** 을 클릭 하 고 올바른 Visual Studio 버전이 설정 되어 있는지 확인 합니다.
 
 10. 클래스 라이브러리 프로젝트에 코드를 추가 합니다. 다음 섹션의 예제를 가이드로 사용 합니다.
 

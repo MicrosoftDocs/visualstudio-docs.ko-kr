@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935341"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 
@@ -184,18 +184,18 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
    사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|Name|형식|데이터|
+|이름|Type|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|인스턴스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\ 어셈블리 이름<\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|Name|형식|데이터|
+|이름|Type|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|인스턴스|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |어셈블리|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>참고 항목

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 01867bf4c5d3e9c60ad4a2ba0ed76c45eca055c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935588"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
@@ -232,7 +232,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
 5. **Dsl\generated Files\DomainClasses.cs** 의 콘텐츠를 검사 합니다. 이라는 메서드를 검색 `MergeRelate` 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
 
-6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면 다음과 같습니다.
+6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 메서드를 재정의 `MergeRelate` 합니다. 기본 메서드를 호출 해야 합니다. 예:
 
     ```csharp
     partial class ExampleModel
@@ -318,7 +318,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
      사용할 수 없는 포인터는 표시 되지 않으며 기존 **입력 포트에 새 입력 포트** 를 삭제할 수 있어야 합니다. 새 **입력 포트** 를 선택 하 고 **구성 요소의** 다른 위치로 끕니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934899"
 ---
 # <a name="how-to--with-text-templates"></a>텍스트 템플릿 사용 방법
 Visual Studio의 텍스트 템플릿은 모든 종류의 텍스트를 생성 하는 유용한 방법을 제공 합니다. 텍스트 템플릿을 사용 하 여 런타임에 응용 프로그램의 일부로 텍스트를 생성 하 고 디자인 타임에 프로젝트 코드를 생성할 수 있습니다. 이 항목에서는 가장 자주 묻는 "어떻게 할까요? ...?"를 요약 합니다. 질문.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - layer models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935146"
 ---
 # <a name="extend-dependency-diagrams"></a>종속성 다이어그램 확장
 

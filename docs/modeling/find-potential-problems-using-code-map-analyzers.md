@@ -12,15 +12,15 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f31aeb933150f31f4ef9d6a3fbe695dcb5ef174
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 77e5d8f6241f6f1978f24b9ebb5ad49aa9f24331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934990"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>코드 맵 분석기를 사용하여 잠재적 문제 찾기
 

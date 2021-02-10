@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a5a372d2e558b44753e9d0bc66d7c4c24b825533
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935094"
 ---
 # <a name="domain-property-value-change-handlers"></a>도메인 속성 값 변경 처리기
 
@@ -146,7 +146,7 @@ public partial class MyDomainModel
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
 다음 예에서는 도메인 속성의 속성 처리기를 재정의하고 `ExampleElement` 도메인 클래스의 속성이 변경된 경우 사용자에게 알림을 표시합니다.
 

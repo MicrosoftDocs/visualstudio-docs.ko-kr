@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935328"
 ---
 # <a name="define-shapes-and-connectors"></a>모양 및 연결선 정의
 
@@ -36,7 +36,7 @@ DSL 다이어그램은 선 또는 *커넥터로* interlinked *셰이프* 컬렉�
 
 다음 모양 형식을 사용할 수 있습니다.
 
-|모양 형식|설명|
+|모양 형식|Description|
 |-|-|
 |기하 도형|일반적으로 사용되는 사각형 또는 타원형 모양입니다. 모양 경계를 기준으로 특정 위치에 텍스트 및 아이콘 Decorator를 표시할 수 있습니다. Geometry 셰이프 내에 셰이프를 중첩할 수도 있습니다.|
 |구획 모양|UML 클래스와 같이 헤더 및 구획을 포함하는 사각형입니다. 각 구획은 텍스트 행 목록을 포함할 수 있습니다.<br /><br /> 행은 보통 모양으로 표시되는 요소 아래에 포함된 요소를 나타냅니다. 예를 들어 클래스 다이어그램 솔루션 템플릿에서 DSL을 만들 수 있습니다.|

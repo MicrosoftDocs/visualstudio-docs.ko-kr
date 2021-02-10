@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935537"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
 
@@ -81,7 +81,7 @@ DSL 탐색기의 **Xml Serialization 동작** 에서 설정을 조정 하 여 se
 
 직렬화 된 모델에 대 한 다음 사항에 유의 하세요.
 
-- 각 XML 노드에는 도메인 클래스 이름과 동일한 이름이 있습니다. 단, 첫 문자는 소문자입니다. 예를 들어 `familyTreeModel` 및 `person`를 지정합니다.
+- 각 XML 노드에는 도메인 클래스 이름과 동일한 이름이 있습니다. 단, 첫 문자는 소문자입니다. 예를 들어 `familyTreeModel` 또는 `person`입니다.
 
 - Name 및 BirthYear과 같은 도메인 속성은 XML 노드에 특성으로 직렬화 됩니다. 마찬가지로 속성 이름의 초기 문자는 소문자로 변환 됩니다.
 
@@ -268,14 +268,14 @@ DSL 탐색기에서 Xml Serialization 동작 노드에는 각 도메인 클래�
 
 이러한 요소는 DSL 탐색기의 **Xml Serialization Behavior\Class 데이터** 아래에 있습니다.
 
-|속성|설명|
+|속성|Description|
 |-|-|
 |사용자 지정 요소 스키마 있음|True 이면 도메인 클래스에 사용자 지정 요소 스키마가 있음을 나타냅니다.|
 |사용자 지정|이 도메인 클래스에 대 한 사용자 고유의 serialization 및 deserialization 코드를 작성 하려면이를 **True** 로 설정 합니다.<br /><br /> 솔루션을 빌드하고 오류를 조사 하 여 자세한 지침을 검색 합니다.|
 |도메인 클래스|이 클래스 데이터 노드가 적용 되는 도메인 클래스입니다. 읽기 전용입니다.|
 |요소 이름|이 클래스의 요소에 대 한 Xml 노드 이름입니다. 기본값은 도메인 클래스 이름의 소문자 버전입니다.|
 |모니커 특성 이름|참조를 포함 하기 위해 모니커 요소에 사용 되는 특성의 이름입니다. 비어 있는 경우 키 속성 또는 id의 이름이 사용 됩니다.<br /><br /> 이 예제에서는 "name"입니다.  `<personMoniker name="/Mike Nash"/>`|
-|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예: `personMoniker`.|
+|모니커 요소 이름|이 클래스의 요소를 참조 하는 모니커에 사용 되는 xml 요소의 이름입니다.<br /><br /> 기본값은 소문자 버전의 클래스 이름에 "모니커"가 붙은 소문자 버전입니다. 예들 들어 `personMoniker`입니다.|
 |모니커 유형 이름|이 클래스의 요소에 대 한 모니커에 대해 생성 된 xsd 형식의 이름입니다. XSD는 **Dsl\generated 코드 \\ \* 스키마 .xsd에 있습니다.**|
 |직렬화 Id|True 이면 요소 GUID가 파일에 포함 됩니다. 이는 **모니커 키** 로 표시 된 속성이 없고 DSL이이 클래스에 대 한 참조 관계를 정의 하는 경우에 true 여야 합니다.|
 |유형 이름|지정 된 도메인 클래스에서 xsd에 생성 된 xml 형식의 이름입니다.|
@@ -285,7 +285,7 @@ DSL 탐색기에서 Xml Serialization 동작 노드에는 각 도메인 클래�
 
 Xml 속성 노드는 클래스 노드 아래에 있습니다.
 
-|속성|설명|
+|속성|Description|
 |-|-|
 |도메인 속성|Xml 직렬화 구성 데이터가 적용 되는 속성입니다. 읽기 전용입니다.|
 |모니커 키|True 이면 속성이이 도메인 클래스의 인스턴스를 참조 하는 모니커를 만들기 위한 키로 사용 됩니다.|
@@ -298,7 +298,7 @@ Xml 속성 노드는 클래스 노드 아래에 있습니다.
 
 역할 데이터 노드는 원본 클래스 노드 아래에 있습니다.
 
-|속성|설명|
+|속성|Description|
 |-|-|
 |사용자 지정 모니커 있음|이 관계를 트래버스하는 모니커를 생성 및 확인 하는 사용자 고유의 코드를 제공 하려면이를 true로 설정 합니다.<br /><br /> 자세한 지침을 보려면 솔루션을 빌드한 다음 오류 메시지를 두 번 클릭 합니다.|
 |도메인 관계|이러한 옵션이 적용 되는 관계를 지정 합니다. 읽기 전용입니다.|

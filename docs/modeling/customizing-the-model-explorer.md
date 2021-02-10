@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935380"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
 다음과 같이 도메인별 언어 디자이너에 대 한 탐색기의 모양과 동작을 변경할 수 있습니다.

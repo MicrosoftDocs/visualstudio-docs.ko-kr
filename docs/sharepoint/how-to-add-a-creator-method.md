@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934886"
 ---
 # <a name="how-to-add-a-creator-method"></a>방법: Creator 메서드 추가
   Creator 메서드는 엔터티의 데이터 원본에 새 데이터를 추가 합니다. BDC (비즈니스 데이터 연결) 서비스는 사용자가 모델을 기반으로 하는 목록 **리본** 에서 **새 항목** 단추를 선택할 때이 메서드를 호출 합니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
@@ -33,7 +33,7 @@ ms.locfileid: "96915455"
 
 1. **BDC 디자이너** 에서 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  > **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  > **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
     **BDC 메서드 세부 정보** 창이 열립니다. 해당 창에 대 한 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 
