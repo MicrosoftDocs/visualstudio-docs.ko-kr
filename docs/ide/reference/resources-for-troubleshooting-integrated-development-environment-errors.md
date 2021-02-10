@@ -92,15 +92,15 @@ f1_keywords:
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 3e2b678423cb8e212d435682a6a56947cd3f3276
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957935"
 ---
 # <a name="resources-for-troubleshooting-ide-errors"></a>IDE 오류 문제 해결을 위한 리소스
 

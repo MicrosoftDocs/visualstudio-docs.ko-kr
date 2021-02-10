@@ -5,18 +5,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 25243e5fbdd06a734d17158ba9200f8b56a6b040
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958130"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>IntelliSense를 통한 정규식 완성 메뉴
 

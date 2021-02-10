@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958416"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 함수
 이 함수는 소스 제어 플러그 인에서 지 원하는 추가 기능을 반환 합니다.
@@ -48,7 +48,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|기능 가져오기 작업을 완료 했습니다.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|알 수 없거나 지정 되지 않은 오류가 발생 했습니다.|
@@ -56,7 +56,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="remarks"></a>설명
  이 메서드는 요청 시 호출 됩니다. 즉, 기능을 테스트 해야 하는 경우이 메서드를 호출 하 여 해당 기능이 지원 되는지 확인 합니다. 한 번에 하나의 플래그만 지정 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [오류 코드](../extensibility/error-codes.md)
 - [기능 플래그](../extensibility/capability-flags.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ad907175f0826a5dd040f77c03517e00d4e1391c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959781"
 ---
 # <a name="how-to-create-xml-snippets"></a>방법: XML 조각 만들기
 

@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958754"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>관리 되는 참조 (Visual Studio에서 Office 개발)
   이 섹션에는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](includes/net-v45-md.md)]대상의 Office 프로젝트에서 사용되는 네임스페이스 및 형식에 대한 API 참조 설명서가 포함되어 있습니다. .NET Framework 3.5를 대상으로 하는 Office 프로젝트에서 사용 되는 네임 스페이스 및 형식에 대 한 API 참조 설명서는 Visual Studio 설명서의 [관리 되는 참조 (Visual studio에서 Office 개발)](managed-reference-office-development-in-visual-studio.md)에서 다음 참조 섹션을 참조 하세요.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
  <xref:Microsoft.Office.Tools>
 
  Office 솔루션을 프로그래밍할 때 일반적으로 사용하는 클래스가 포함됩니다. 여기에는 VSTO 추가 기능용 기본 클래스, VSTO 추가 기능에서 사용자 지정 작업창을 만들기 위한 클래스, Excel 및 Word 솔루션에서 스마트 태그를 만들기 위한 클래스, 문서 수준 사용자 지정에서 작업 창을 만들기 위한 클래스가 포함됩니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959651"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 프로세스에 포트 이벤트에 대 한 알림이 표시 되도록 허용 합니다.
@@ -28,24 +28,24 @@ ms.locfileid: "80721755"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT WatchForProviderEvents(
-   PROVIDER_FLAGS       Flags,
-   IDebugDefaultPort2*  pPort,
-   AD_PROCESS_ID        processId,
-   CONST_GUID_ARRAY     EngineFilter,
-   REFGUID              guidLaunchingEngine,
-   IDebugPortNotify2*   pEventCallback
+HRESULT WatchForProviderEvents(
+   PROVIDER_FLAGS       Flags,
+   IDebugDefaultPort2*  pPort,
+   AD_PROCESS_ID        processId,
+   CONST_GUID_ARRAY     EngineFilter,
+   REFGUID              guidLaunchingEngine,
+   IDebugPortNotify2*   pEventCallback
 );
 ```
 
 ```csharp
-int WatchForProviderEvents(
-   enum_PROVIDER_FLAGS   Flags,
-   IDebugDefaultPort2    pPort,
-   AD_PROCESS_ID         ProcessId,
-   CONST_GUID_ARRAY      EngineFilter,
-   ref Guid              guidLaunchingEngine,
-   IDebugPortNotify2     pEventCallback
+int WatchForProviderEvents(
+   enum_PROVIDER_FLAGS   Flags,
+   IDebugDefaultPort2    pPort,
+   AD_PROCESS_ID         ProcessId,
+   CONST_GUID_ARRAY      EngineFilter,
+   ref Guid              guidLaunchingEngine,
+   IDebugPortNotify2     pEventCallback
 );
 ```
 
@@ -75,13 +75,13 @@ int WatchForProviderEvents(
 `pEventCallback`\
 진행 이벤트 알림을 받는 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  호출자가이 메서드에 대 한 이전 호출을 사용 하 여 설정 된 이벤트 처리기를 제거 하려는 경우 호출자는 처음에는 동일한 매개 변수를 전달 하지만 플래그는 그대로 둡니다 `PFLAG_REASON_WATCH` .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 인터페이스를 노출 하는 **cdebugengine** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -210,7 +210,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: a7ce04b38c13b0994d47974488b90114a63495e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958117"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>접근할 수 없는 리팩터링 제거
 

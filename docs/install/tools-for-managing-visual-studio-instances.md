@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959261"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio 인스턴스 검색 및 관리 도구
 
@@ -76,7 +76,7 @@ Visual Studio에서 레지스트리 설정은 전용 위치에 저장되므로 �
 하이브 이름을 입력하라는 메시지가 표시됩니다. 이 이름은 격리된 하이브의 이름이 됩니다. 이 작업을 한 후에는 직접 만든 격리된 하이브에서 레지스트리를 찾을 수 있습니다.
 
 > [!IMPORTANT]
-> Visual Studio를 다시 시작하기 전에 직접 만든 격리된 하이브를 언로드해야 합니다. 이 작업을 수행하려면 Regedit 주 메뉴에서 **파일** > **하이브 언로드**를 선택합니다. 이렇게 하지 않으면 파일이 계속 잠겨 있고 Visual Studio가 시작되지 않습니다.
+> Visual Studio를 다시 시작하기 전에 직접 만든 격리된 하이브를 언로드해야 합니다. 이 작업을 수행하려면 Regedit 주 메뉴에서 **파일** > **하이브 언로드** 를 선택합니다. 이렇게 하지 않으면 파일이 계속 잠겨 있고 Visual Studio가 시작되지 않습니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

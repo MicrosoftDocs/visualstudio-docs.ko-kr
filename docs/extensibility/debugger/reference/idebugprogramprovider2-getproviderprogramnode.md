@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd8ca7d5120ba20695caef2e9021ee25869df72f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d6720626c578ca0ae5e005f8b2f2c8ea0786b6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959677"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 특정 프로그램의 프로그램 노드를 검색 합니다.
@@ -28,24 +28,24 @@ ms.locfileid: "80721799"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetProviderProgramNode(
-   PROVIDER_FLAGS       Flags,
-   IDebugDefaultPort2*  pPort,
-   AD_PROCESS_ID        processId,
-   REFGUID              guidEngine,
-   UINT64               programId,
-   IDebugProgramNode2** ppProgramNode
+HRESULT GetProviderProgramNode(
+   PROVIDER_FLAGS       Flags,
+   IDebugDefaultPort2*  pPort,
+   AD_PROCESS_ID        processId,
+   REFGUID              guidEngine,
+   UINT64               programId,
+   IDebugProgramNode2** ppProgramNode
 );
 ```
 
 ```csharp
-int GetProviderProgramNode(
-   enum_PROVIDER_FLAGS    Flags,
-   IDebugDefaultPort2     pPort,
-   AD_PROCESS_ID          ProcessId,
-   ref Guid               guidEngine,
-   ulong                  programId,
-   out IDebugProgramNode2 ppProgramNode
+int GetProviderProgramNode(
+   enum_PROVIDER_FLAGS    Flags,
+   IDebugDefaultPort2     pPort,
+   AD_PROCESS_ID          ProcessId,
+   ref Guid               guidEngine,
+   ulong                  programId,
+   out IDebugProgramNode2 ppProgramNode
 );
 ```
 
@@ -74,10 +74,10 @@ int GetProviderProgramNode(
 `ppProgramNode`\
 제한이 요청 된 프로그램 노드를 나타내는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

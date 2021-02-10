@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 1e5af6f11a6b5036b50f44abaf50c5adfe18487b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959183"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -56,7 +56,7 @@ ms.locfileid: "91135133"
 
 ::: moniker range="vs-2017"
 
-  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**를 찾습니다.
+  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 를 찾습니다.
 
   2. 구성 파일에서 `<system.net>` 블록을 찾아 다음 코드를 추가합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "91135133"
 
 ::: moniker range="vs-2019"
 
-  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**를 찾습니다.
+  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 를 찾습니다.
 
   2. 구성 파일에서 `<system.net>` 블록을 찾아 다음 코드를 추가합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "91135133"
 
 ### <a name="to-fix-this-proxy-error"></a>이 프록시 오류를 해결하려면
 
-1. **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** 또는 **%ProgramFiles%\Microsoft Visual Studio\Installer**에서 **feedback.exe.config**(feedback.exe 구성 파일)를 찾습니다.
+1. **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** 또는 **%ProgramFiles%\Microsoft Visual Studio\Installer** 에서 **feedback.exe.config**(feedback.exe 구성 파일)를 찾습니다.
 
 2. 구성 파일에서 다음 코드가 있는지 확인합니다. 코드가 없으면 마지막 `</configuration>` 줄 앞에 코드를 추가합니다.
 

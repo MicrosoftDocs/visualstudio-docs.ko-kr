@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958325"
 ---
 # <a name="publish-page-project-designer"></a>프로젝트 디자이너, 게시 페이지
 

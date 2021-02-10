@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959794"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 활동 디자이너
 
@@ -43,9 +43,9 @@ ms.locfileid: "96993200"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 이름입니다. 기본값은 InitializeCorrelation입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 필요한 것은 아니지만 <xref:System.Activities.Activity.DisplayName%2A> 권장 됩니다.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|거짓|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|거짓|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> **상관 관계 초기화** 대화 상자를 사용 하 여를 구성할 수 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 있습니다. 이 대화 상자 사용에 대 한 자세한 내용은 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서를 참조 하세요.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 활동의 이름입니다. 기본값은 InitializeCorrelation입니다.<br /><br /> 친숙 한에 기본값이 아닌 값을 사용 하는 것은 반드시 필요한 것은 아니지만 <xref:System.Activities.Activity.DisplayName%2A> 권장 됩니다.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|상관 관계에서 워크플로 활동을 연결하는 데 사용되는 <xref:System.ServiceModel.Activities.CorrelationHandle>입니다.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|메시지를 워크플로 인스턴스와 연결하는 상관 관계 데이터의 사전입니다.<br /><br /> **상관 관계 초기화** 대화 상자를 사용 하 여를 구성할 수 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 있습니다. 이 대화 상자 사용에 대 한 자세한 내용은 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 문서를 참조 하세요.|
 
 ## <a name="see-also"></a>참고 항목
 

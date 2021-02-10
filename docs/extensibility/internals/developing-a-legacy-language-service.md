@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5f61337b6dbdef158c7fb7ebe42d0af9f79822fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959534"
 ---
 # <a name="develop-a-legacy-language-service"></a>레거시 언어 서비스 개발
 이 섹션에서는 레거시 언어 서비스를 만드는 데 도움이 되는 항목에 대 한 링크를 제공 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "96329746"
 > [!NOTE]
 > 가능한 한 빨리 새 편집기 API를 사용 하는 것이 좋습니다. 이렇게 하면 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [레거시 언어 서비스의 모델](../../extensibility/internals/model-of-a-legacy-language-service.md)
 
  핵심 편집기에 대 한 최소 언어 서비스의 모델을 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 고유의 언어 서비스를 만들기 위한 지침으로이 모델을 사용할 수 있습니다.

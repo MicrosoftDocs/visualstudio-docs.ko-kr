@@ -26,15 +26,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 24a4318400f808c57c041e09877e5aef9a2c3c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958715"
 ---
 # <a name="program-document-level-customizations"></a>문서 수준 사용자 지정 프로그램
   문서 수준 사용자 지정을 사용하여 Microsoft Office Word 또는 Microsoft Office Excel을 확장한 경우 다음 작업을 수행할 수 있습니다.

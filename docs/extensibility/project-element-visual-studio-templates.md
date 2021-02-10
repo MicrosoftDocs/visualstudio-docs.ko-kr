@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959456"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 요소 (Visual Studio 템플릿)
 프로젝트에 추가할 파일 또는 디렉터리를 지정 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "94672387"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`File`|필수 특성입니다.<br /><br /> 템플릿 *.zip* 파일에 있는 프로젝트 파일의 이름을 지정 합니다.|
 |`ReplaceParameters`|선택적 특성입니다.<br /><br /> 프로젝트 파일에 템플릿에서 프로젝트를 만들 때 교체 해야 하는 매개 변수 값이 있는지 여부를 지정 하는 부울 값입니다. 기본값은 `false`여야 합니다.|
@@ -62,7 +62,7 @@ ms.locfileid: "94672387"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|필수적 요소입니다.|
 

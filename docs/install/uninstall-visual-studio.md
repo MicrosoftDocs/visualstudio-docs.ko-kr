@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 7d7c4400d553d8244d3b9239f0b0a984d382c99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959170"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
@@ -61,7 +61,7 @@ ms.locfileid: "92007149"
 컴퓨터에서 Visual Studio 2017과 Visual Studio 설치 관리자의 모든 설치를 완전히 제거하려면 [앱 및 기능]에서 제거합니다.
 
 1. Windows 10의 경우 "여기에 입력하여 검색" 상자에 **앱 및 기능** 을 입력합니다.
-1. **Microsoft Visual Studio 2017** (또는 **Visual Studio 2017** )을 찾습니다.
+1. **Microsoft Visual Studio 2017**(또는 **Visual Studio 2017**)을 찾습니다.
 1. **제거** 를 선택합니다.
 1. 그런 다음, **Microsoft Visual Studio 설치 관리자** 를 찾습니다.
 1. **제거** 를 선택합니다.

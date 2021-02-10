@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: akhera99
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 517745fd302bcc19e46a8a0e7b8e4ed629950062
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959378"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>옵션, 텍스트 편집기, 기본(Visual Basic), 고급
 **옵션**(**도구** 메뉴), **텍스트 편집기** 의 **Basic** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.

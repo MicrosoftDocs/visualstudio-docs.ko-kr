@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958390"
 ---
 # <a name="writing-to-the-user-settings-store"></a>사용자 설정 저장소에 쓰기
 사용자 설정은 **도구/옵션** 대화 상자, 속성 창 및 기타 특정 대화 상자와 같은 쓰기 가능한 설정입니다. Visual Studio 확장에서는이를 사용 하 여 소량의 데이터를 저장할 수 있습니다. 이 연습에서는 사용자 설정 저장소에서 읽고 쓰는 방법으로 Visual Studio에 메모장을 외부 도구로 추가 하는 방법을 보여 줍니다.

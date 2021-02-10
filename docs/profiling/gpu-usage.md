@@ -5,15 +5,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 78f847acaf67a61064e64b765d9c138ec2fe93a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959027"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 

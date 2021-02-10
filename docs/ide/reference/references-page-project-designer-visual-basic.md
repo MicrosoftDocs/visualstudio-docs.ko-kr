@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 30e3847c87559fd7a916af8ad3be48343d649671
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958143"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 

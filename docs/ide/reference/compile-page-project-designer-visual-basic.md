@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958377"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>프로젝트 디자이너, 컴파일 페이지(Visual Basic)
 
 프로젝트 디자이너의 **컴파일** 페이지를 사용하여 컴파일 지침을 지정합니다. 또한 이 페이지에서 고급 컴파일러 옵션 및 빌드 전 또는 빌드 후 이벤트를 지정할 수 있습니다.
 
-**컴파일** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드( **솔루션** 노드 아님)를 선택합니다. 그런 다음 메뉴 모음에서 **프로젝트** , **속성** 을 선택합니다. 프로젝트 디자이너가 나타나면 **컴파일** 탭을 클릭합니다.
+**컴파일** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음 메뉴 모음에서 **프로젝트**, **속성** 을 선택합니다. 프로젝트 디자이너가 나타나면 **컴파일** 탭을 클릭합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -45,11 +45,11 @@ ms.locfileid: "92136630"
 
 **구성**
 
-표시하거나 수정할 구성 설정을 지정합니다. 설정은 **디버그** (기본값), **릴리스** 또는 **모든 구성** 입니다. 자세한 내용은 [빌드 구성 이해](../../ide/understanding-build-configurations.md) 및 [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
+표시하거나 수정할 구성 설정을 지정합니다. 설정은 **디버그**(기본값), **릴리스** 또는 **모든 구성** 입니다. 자세한 내용은 [빌드 구성 이해](../../ide/understanding-build-configurations.md) 및 [방법: 구성 만들기 및 편집](../../ide/how-to-create-and-edit-configurations.md)을 참조하세요.
 
 **플랫폼**
 
-표시하거나 수정할 플랫폼 설정을 지정합니다. **모든 CPU** (기본값), **x64** 또는 **x86** 을 지정할 수 있습니다.
+표시하거나 수정할 플랫폼 설정을 지정합니다. **모든 CPU**(기본값), **x64** 또는 **x86** 을 지정할 수 있습니다.
 
 ## <a name="compiler-configuration-options"></a>컴파일러 구성 옵션
 
@@ -107,7 +107,7 @@ ms.locfileid: "92136630"
 
 **Option Strict** 를 **On** 으로 설정하는 경우 이러한 세 가지 경고 구성 설정은 모두 **Error** 로 설정됩니다. **Option Strict** 를 **Off** 로 설정하는 경우 세 가지 설정은 모두 **None** 으로 설정됩니다.
 
-각 경고 구성 설정은 **None** , **Warning** 또는 **Error** 로 개별적으로 변경할 수 있습니다. 세 가지 경고 구성 설정이 모두 **Error** 로 설정된 경우 `On`이 `Option strict` 상자에 표시됩니다. 세 가지 모두 **None** 으로 설정된 경우 `Off`가 이 상자에 표시됩니다. 이러한 설정의 다른 조합의 경우 **(사용자 지정)** 이 나타납니다.
+각 경고 구성 설정은 **None**, **Warning** 또는 **Error** 로 개별적으로 변경할 수 있습니다. 세 가지 경고 구성 설정이 모두 **Error** 로 설정된 경우 `On`이 `Option strict` 상자에 표시됩니다. 세 가지 모두 **None** 으로 설정된 경우 `Off`가 이 상자에 표시됩니다. 이러한 설정의 다른 조합의 경우 **(사용자 지정)** 이 나타납니다.
 
 **Option Compare**
 
@@ -131,7 +131,7 @@ ms.locfileid: "92136630"
 
 **대상 CPU**
 
-출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86** , 64비트 Intel 호환 프로세서의 경우 **x64** , ARM 프로세서의 경우 **ARM** , 임의 프로세스를 허용하도록 지정하려면 **임의 CPU** 를 선택합니다. **임의 CPU** 는 새 프로젝트의 기본값입니다. 하드웨어 형식 중 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
+출력 파일의 대상으로 프로세서를 지정합니다. 32비트 Intel 호환 프로세서의 경우 **x86**, 64비트 Intel 호환 프로세서의 경우 **x64**, ARM 프로세서의 경우 **ARM**, 임의 프로세스를 허용하도록 지정하려면 **임의 CPU** 를 선택합니다. **임의 CPU** 는 새 프로젝트의 기본값입니다. 하드웨어 형식 중 가장 광범위한 범위에서 애플리케이션을 실행할 수 있기 때문입니다.
 
 자세한 내용은 [/platform(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)을 참조하세요.
 
@@ -151,7 +151,7 @@ ms.locfileid: "92136630"
 
 **경고 구성**
 
-이 표에는 빌드 조건과 각각의 **None** , **Warning** 또는 **Error** 의 해당 알림 수준이 나열되어 있습니다.
+이 표에는 빌드 조건과 각각의 **None**, **Warning** 또는 **Error** 의 해당 알림 수준이 나열되어 있습니다.
 
 기본적으로 모든 컴파일러 경고는 컴파일하는 동안 작업 목록에 추가됩니다. 경고 또는 오류를 발급하지 않도록 컴파일러에 지시하려면 **모든 경고 사용 안 함** 을 선택합니다. 컴파일러가 경고를 수정해야 하는 오류로 처리하도록 하려면 **모든 경고를 오류로 처리** 를 선택합니다.
 

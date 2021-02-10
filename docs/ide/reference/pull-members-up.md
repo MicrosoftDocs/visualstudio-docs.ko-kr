@@ -6,18 +6,18 @@ ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: ee5776e9fc39b77f8059146848d847e0976a5664
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958286"
 ---
 # <a name="pull-members-up"></a>멤버 끌어오기
 

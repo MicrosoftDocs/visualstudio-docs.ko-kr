@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd88eebedc8c6dc5b059cbcd94844ce4191fccc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a298ac5e99176294be8afe9dbba1f00bdea0a82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721768"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959690"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 로캘별 리소스에 사용할 로캘을 설정 합니다.
@@ -28,14 +28,14 @@ ms.locfileid: "80721768"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT SetLocale(
-   WORD wLangID
+HRESULT SetLocale(
+   WORD wLangID
 );
 ```
 
 ```csharp
-int SetLocale(
-   ushort wLangID
+int SetLocale(
+   ushort wLangID
 );
 ```
 
@@ -43,8 +43,8 @@ int SetLocale(
 `wLangID`\
 진행 설정할 언어 ID입니다. 예를 들어 영어의 경우 1033입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

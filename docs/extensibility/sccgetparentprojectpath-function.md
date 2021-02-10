@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958403"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 함수
 이 함수는 지정 된 프로젝트의 부모 프로젝트 경로를 결정 합니다. 이 함수는 사용자가 Visual Studio 프로젝트를 소스 제어에 추가할 때 호출 됩니다.
@@ -63,7 +63,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|부모 프로젝트 경로를 가져왔습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|
@@ -92,13 +92,13 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 및 SccGetParentProjectPath에 대 한 기술 정보
  소스 제어 시스템에서 사용자에 게 위치를 선택 하 라는 메시지가 표시 되는 횟수를 최소화 하기 위해 Visual Studio에서 솔루션 및 프로젝트를 소스 제어에 추가 하는 것이 간소화 되었습니다. 소스 제어 플러그 인에서 새 함수 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 및 함수를 모두 지 원하는 경우 이러한 변경 내용은 Visual Studio에 의해 활성화 됩니다 `SccGetParentProjectPath` . 그러나 다음 레지스트리 항목을 사용 하 여 이러한 변경 내용을 사용 하지 않도록 설정 하 고 이전 Visual Studio (소스 제어 플러그 인 API 버전 1.1) 동작으로 되돌릴 수 있습니다.
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
 
  이 레지스트리 항목이 없거나 dword: 00000000으로 설정 된 경우 Visual Studio는 새 함수인 및를 사용 하려고 시도 `SccCreateSubProject` `SccGetParentProjectPath` 합니다.
 
  레지스트리 항목을 dword: 00000001로 설정 하면 Visual Studio에서는 이러한 새 함수를 사용 하려고 시도 하지 않으며, 소스 제어에 추가 하는 작업은 이전 버전의 Visual Studio와 동일 하 게 작동 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
