@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951006"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>1단계: Windows Forms 앱 프로젝트 만들기
 
@@ -29,7 +29,7 @@ ms.locfileid: "96480397"
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다. 대화 상자가 다음 스크린샷과 유사하게 표시될 것입니다.
 
-     ![새 프로젝트 대화 상자](../ide/media/newprojectdialogcallouts.png)<br/>*_새 프로젝트_* 대화 상자*
+     ![새 프로젝트 대화 상자](../ide/media/newprojectdialogcallouts.png)<br/>**새 프로젝트** 대화 상자*
 
 2. **새 프로젝트** 대화 상자의 왼쪽에서 **Visual C#** 또는 **Visual Basic** 을 선택한 다음 **Windows 데스크톱** 을 선택합니다.
 
@@ -107,7 +107,7 @@ Visual Studio에서 앱의 솔루션이 생성됩니다. 솔루션은 앱에 필
      또는 다음 이미지와 같이 도구 모음에서 **모두 저장** 단추를 선택합니다.
 
      ![모두 저장 도구 모음 단추](../ide/media/express_iconsaveall.png)<br/>
-     *_모두 저장_* 도구 모음 단추*
+     **모두 저장** 도구 모음 단추*
 
      Visual Studio에서 자동으로 폴더 이름과 프로젝트 이름이 채워진 후 프로젝트 폴더에 프로젝트가 저장됩니다.
 

@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1004b8139617e370c6eef1c78f372d1e3a6db611
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951259"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 중단점 요청에 대 한 문서 체크섬을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBreakpointChecksumRequest2 : IUnknown
@@ -32,7 +32,7 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointChecksumRequest2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|사용할 체크섬 알고리즘의 고유 식별자가 지정 된 경우 중단점 요청에 대 한 문서 체크섬을 검색 합니다.|
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|이 문서에 체크섬을 사용할 수 있는지 여부를 확인 합니다.|

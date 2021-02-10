@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950850"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>2단계: 그림 뷰어 앱 실행
 
@@ -34,12 +34,12 @@ Windows Forms 앱 프로젝트를 만들 때 실제로 실행하는 프로그램
     - 도구 모음에서 **디버깅 시작** 단추를 선택하면 다음과 같이 표시됩니다.
 
       ![디버깅 도구 모음 시작 단추](../ide/media/express_icondebug.png)<br>
-      **_디버깅 시작_* 도구 모음 단추
+      ***디버깅 시작** 도구 모음 단추
 
 1. Visual Studio에서 앱이 실행되고 **Form1** 창이 표시됩니다. 다음 스크린샷은 방금 빌드한 앱을 보여 줍니다. 앱이 실행 중이며, 더 많은 기능이 추가될 예정입니다.
 
      ![Windows Forms 앱 실행 중](../ide/media/express_firstrun.png)<br>
-**_Windows Forms 앱_* 실행 중
+***Windows Forms 앱** 실행 중
 
 1. Visual Studio IDE(통합 개발 환경)로 돌아가서 새 도구 모음을 살펴봅니다. 애플리케이션을 실행하면 추가 단추가 도구 모음에 나타납니다. 이러한 단추를 사용하면 앱 중지 및 시작과 같은 작업을 수행할 수 있으며 발생할 수 있는 모든 오류(버그)를 추적할 수 있습니다. 이 예제에서는 앱을 시작하고 중지하는 데에만 이를 사용하도록 합니다.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951539"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창에서 바로 가기 메뉴 추가
 이 연습에서는 도구 창에 바로 가기 메뉴를 배치 합니다. 바로 가기 메뉴는 사용자가 단추, 텍스트 상자 또는 창 배경을 마우스 오른쪽 단추로 클릭할 때 나타나는 메뉴입니다. 바로 가기 메뉴의 명령은 다른 메뉴 또는 도구 모음의 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면 *. vsct* 파일에서 지정 하 고 마우스 오른쪽 단추 클릭에 대 한 응답으로 표시 합니다.
@@ -31,7 +31,7 @@ ms.locfileid: "95597875"
 
 또는 바로 가기 메뉴에서 Visual Studio 기능에 액세스 하지 않는 경우 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 사용자 정의 컨트롤에서 XAML 요소의 속성을 사용할 수 있습니다. 자세한 내용은 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>도구 창 바로 가기 메뉴 패키지 만들기
@@ -278,6 +278,6 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 4. 바로 가기 메뉴에서 색을 클릭 합니다. 도구 창의 배경색을 선택한 색으로 변경 해야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)

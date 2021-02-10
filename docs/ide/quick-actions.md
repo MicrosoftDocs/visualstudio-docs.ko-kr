@@ -6,18 +6,18 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e1d9c257bcf0e2a88a384c22010abb08894483ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951097"
 ---
 # <a name="quick-actions"></a>빠른 작업
 

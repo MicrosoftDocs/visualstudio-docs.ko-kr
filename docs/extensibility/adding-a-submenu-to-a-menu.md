@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951513"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
 이 연습은 **Testmenu** 메뉴에 하위 메뉴를 추가 하는 방법을 보여 주기 [위해 Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 의 데모를 기반으로 합니다.
@@ -29,7 +29,7 @@ ms.locfileid: "95598018"
 
  이 연습에서는 Visual Studio 메뉴 모음의 메뉴에 하위 메뉴를 만들고 하위 메뉴에 새 명령을 삽입 합니다. 또한이 연습에서는 새 명령을 구현 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="add-a-submenu-to-a-menu"></a>메뉴에 하위 메뉴 추가
@@ -155,7 +155,7 @@ ms.locfileid: "95598018"
 
 5. **Testmenu** 메뉴에서 **하위 메뉴** 를 클릭 한 다음 **Test sub Command** 를 클릭 합니다. 메시지 상자가 나타나고 "TestCommand 내에 Test Command. SubItemCallback ()" 라는 텍스트가 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 메뉴 모음에 메뉴 추가](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951526"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>도구 모음에 메뉴 컨트롤러 추가
 이 연습은 도구 [창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md) 연습을 기반으로 하며 도구 창 도구 모음에 메뉴 컨트롤러를 추가 하는 방법을 보여 줍니다. 여기에 표시 된 단계는 [도구 모음 추가](../extensibility/adding-a-toolbar.md) 연습에서 만든 도구 모음에도 적용할 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "95597823"
 
 메뉴 컨트롤러는 메뉴에 표시 될 수 있지만 도구 모음에서 가장 자주 사용 됩니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-menu-controller"></a>메뉴 컨트롤러 만들기
@@ -224,6 +224,6 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
     **사용자가 선택한 메뉴 컨트롤러 항목 3** 에 대화 상자가 나타납니다. 이 메시지는 메뉴 컨트롤러 단추의 텍스트에 해당 합니다. 이제 메뉴 컨트롤러 단추에 **MC 항목 3** 이 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [도구 창에 도구 모음 추가](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [도구 모음 추가](../extensibility/adding-a-toolbar.md)

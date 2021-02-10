@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951201"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 이 인터페이스는 모든 중단점 형식을 만들고 바인딩하는 데 필요한 정보를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBreakpointRequest2 : IUnknown
@@ -37,7 +37,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointRequest2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|이 중단점 요청의 중단점 위치 유형을 가져옵니다.|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.|
@@ -52,7 +52,7 @@ IDebugBreakpointRequest2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

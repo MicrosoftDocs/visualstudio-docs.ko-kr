@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951344"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>도구 창에 도구 모음 추가
 이 연습에서는 도구 창에 도구 모음을 추가 하는 방법을 보여 줍니다.
@@ -29,7 +29,7 @@ ms.locfileid: "95597979"
 
  도구 모음을 추가 하는 방법에 대 한 자세한 내용은 [도구 모음 추가](../extensibility/adding-a-toolbar.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>도구 창에 대 한 도구 모음 만들기
@@ -115,5 +115,5 @@ ms.locfileid: "95597979"
 
 3. 도구 모음에서 아이콘을 클릭 하 여 **TwMenuItemCallback () 내의 Twtestcommandpackage** 메시지를 표시 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [도구 모음 추가](../extensibility/adding-a-toolbar.md)

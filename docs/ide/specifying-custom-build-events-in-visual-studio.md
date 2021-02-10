@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d0728154e21893ac45fc0e17cc3d0407551dbb3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951032"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio에서 사용자 지정 빌드 이벤트 지정
 

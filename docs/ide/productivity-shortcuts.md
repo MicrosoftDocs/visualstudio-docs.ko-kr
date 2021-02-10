@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951110"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio 바로 가기 팁
 

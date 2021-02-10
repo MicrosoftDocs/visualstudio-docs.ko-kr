@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951435"
 ---
 # <a name="add-a-tool-window"></a>도구 창 추가
 
@@ -34,7 +34,7 @@ ms.locfileid: "95597992"
 
 - 도구 창에 대 한 기본 위치를 설정 합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -47,7 +47,7 @@ Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으
 
 ## <a name="add-a-control-to-the-tool-window"></a>도구 창에 컨트롤 추가
 
-1. 기본 컨트롤을 제거 합니다. *Firsttoolwindowcontrol* 을 열고 **Click Me** 를 삭제 합니다. 클릭합니다.
+1. 기본 컨트롤을 제거 합니다. *Firsttoolwindowcontrol* 을 열고 **Click Me** 를 삭제 합니다. 단추를 선택합니다.
 
 2. **도구 상자** 에서 **모든 WPF 컨트롤** 섹션을 확장 하 고 **미디어 요소** 컨트롤을 **firsttoolwindowcontrol** 폼으로 끕니다. 컨트롤을 선택 하 고 **속성** 창에서이 요소 이름을 **mediaElement1** 로 선택 합니다.
 
@@ -282,5 +282,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
     Chime 소리가 들려야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
