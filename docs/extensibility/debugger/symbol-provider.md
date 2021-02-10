@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3ae3cd813b79eca1fe64328e890f4a37cc03b0d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960665"
 ---
 # <a name="symbol-provider"></a>기호 공급자
 식 계산기 구현은 변수와 식을 계산 하기 위해 언어 컴파일러에 의해 생성 된 기호화 된 디버그 정보에 액세스 해야 합니다. 기호 처리기 라고도 하는 SP (기호 공급자)의 인터페이스를 사용 하 여이를 수행 합니다.

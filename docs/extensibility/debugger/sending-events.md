@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eb86be560f45941b1ca5eb04f38087c23c431fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960860"
 ---
 # <a name="send-events"></a>이벤트 보내기
 디버거와 디버그 엔진 (DE) 간의 통신 메커니즘은 DCOM을 기반으로 하는 이벤트 모델입니다. 이벤트는 COM 개체로 전송 되며 각 이벤트에는 다음을 지정 하는 매개 변수가 있습니다.

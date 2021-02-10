@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d23bb194dfadd202cf2899b1834f3b6ceeaa2b3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968205"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 요소 (Visual Studio 템플릿 마법사 확장)
 인터페이스를 구현 하는 클래스의 정규화 된 이름 `IWizard` 입니다.
@@ -45,7 +45,7 @@ ms.locfileid: "94672745"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|템플릿 마법사를 사용자 지정 하기 위한 등록 요소를 포함 합니다.|
 

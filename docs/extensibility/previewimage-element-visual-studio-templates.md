@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967282"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 미리 보기 이미지에 대 한 미리 보기 이미지를 파일 이름으로 지정 합니다.

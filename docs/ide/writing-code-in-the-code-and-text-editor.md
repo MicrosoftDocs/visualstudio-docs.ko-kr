@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code editor [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: ec1b8f9d9ce44b494d1d9ad13e3dd46b88d0def5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960405"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 

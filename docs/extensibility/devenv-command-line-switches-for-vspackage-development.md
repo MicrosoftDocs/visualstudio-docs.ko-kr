@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968309"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 개발을 위한 Devenv 명령줄 스위치
 
@@ -43,7 +43,7 @@ ms.locfileid: "96996151"
 
 Visual Studio 설명서에서는 사용자 수준 명령줄 스위치에 대해 설명 합니다 `devenv` . 자세한 내용은 [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)를 참조 하세요. `devenv`또한이 도구는 VSPackage 개발, 배포 및 디버깅에 유용한 추가 명령줄 스위치를 지원 합니다.
 
-| 명령줄 스위치 | 설명 |
+| 명령줄 스위치 | Description |
 |---------------------| - |
 | `/ResetSkipPkgs` | 문제가 있는 Vspackage 로드를 방지 하려는 사용자가 추가한 모든 건너뛰기 로드 옵션을 지운 다음 Visual Studio를 시작 합니다. SkipLoading 태그가 있으면 VSPackage 로드를 사용할 수 없습니다. 태그를 지우면 VSPackage을 다시 로드할 수 있습니다.<br /><br /> 이 스위치는 인수가 필요 없습니다. |
 | `/RootSuffix` | 대체 위치를 사용 하 여 Visual Studio를 시작 합니다. 다음 명령은 Visual Studio SDK 설치 관리자에서 만든 바로 가기로 실행 됩니다.<br /><br /> `devenv /RootSuffix exp`<br /><br /> 이 경우는 `exp` 특정 접미사를 사용 하는 위치를 식별 합니다 (예: `10.0Exp` 대신 `10.0` ). 실험적 인스턴스를 사용 하면 코드를 작성 하는 데 사용 하 고 있는 Visual Studio의 인스턴스와 별도로 VSPackage을 디버그할 수 있습니다.<br /><br /> 이 스위치는 VSRegEx.exe을 사용 하 여 만든 위치를 식별 하는 모든 문자열을 사용할 수 있습니다. 자세한 내용은 [실험적 인스턴스](../extensibility/the-experimental-instance.md)를 참조 하세요. |

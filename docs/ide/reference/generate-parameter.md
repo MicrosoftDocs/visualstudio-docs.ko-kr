@@ -6,18 +6,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 21e209f5be9072390df58e78db34811f886fa9c5
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 33e2be19e3a5a83d89e722aa0c1a1154c8196939
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968036"
 ---
 # <a name="generate-parameter"></a>매개 변수 생성
 

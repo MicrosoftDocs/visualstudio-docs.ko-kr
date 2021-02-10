@@ -6,16 +6,16 @@ ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio를 사용하는 방법을 알아봅니다.
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 845b663a3a0828806766fa0609e45efafabec50a
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 9da0f2c2df796f50530f19252c7236c2bb606a10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960483"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>Visual Studio에서 GitHub 계정 작업
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4ed0a82ad7ddb67cacde2a09f595d0c9250710
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 135796b09689915d81132abb4f8f36888b64f393
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960289"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 동시성 시각화 도우미는 스레드 채널, 디스크 채널, 표식 채널 및 GPU 채널의 4가지 채널을 보여줍니다.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967425"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
 프로젝트 항목에 추가 하는 속성 (예: 소스 파일의 작성자)을 유지 하려고 할 수 있습니다. 프로젝트 파일에 속성을 저장 하 여이 작업을 수행할 수 있습니다.
@@ -134,6 +134,6 @@ ms.locfileid: "97862700"
    </Compile>
    ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [사용자 지정 도구](../extensibility/internals/custom-tools.md)

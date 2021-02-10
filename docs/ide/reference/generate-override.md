@@ -6,15 +6,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f27adacc39c53bf46b3a2ee09c71ae27b47f928
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 3640fe29a18ba1ec89ab2806810165a0ec509167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968062"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 

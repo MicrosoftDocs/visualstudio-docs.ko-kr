@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968335"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에 표시 되는 템플릿에 대 한 설명을 지정 합니다.
@@ -43,7 +43,7 @@ ms.locfileid: "94671287"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 ID를 지정하는 GUID입니다.|
 |`ID`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 리소스 ID를 지정합니다.|

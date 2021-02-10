@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ddf641cf309eb5b5352904da2ac07b64b0886f97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967360"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 이 콜백은 IDE에 의해 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 제공 되며 소스 제어 플러그 인에서 파일 또는 디렉터리 목록을 업데이트 하는 데 사용 됩니다 (함수에도 제공 됨 `SccPopulateList` ).
@@ -49,7 +49,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>반환 값
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |`TRUE`|플러그 인은이 함수를 계속 호출할 수 있습니다.|
 |`FALSE`|IDE 쪽에 문제가 있습니다 (예: 메모리 부족). 플러그 인에서 작업을 중지 해야 합니다.|
@@ -60,7 +60,7 @@ typedef BOOL (*POPLISTFUNC) (
 > [!NOTE]
 > `SCC_CAP_POPULATELIST`Visual Studio에는 기능 비트가 필요 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDE에서 구현 하는 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

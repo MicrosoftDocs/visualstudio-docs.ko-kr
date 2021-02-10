@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9b655308760d64f97c168e8000972142f159ec3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968231"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 요소 (Visual Studio 프로젝트 템플릿)
 프로젝트에 추가 될 폴더를 지정 합니다.
@@ -43,21 +43,21 @@ ms.locfileid: "94672719"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 프로젝트 폴더의 이름입니다.|
 |`TargetFolderName`|선택적 특성입니다.<br /><br /> 템플릿에서 프로젝트를 만들 때 폴더에 지정할 이름을 지정 합니다. 이 특성은 매개 변수 대체를 사용 하 여 폴더 이름을 만들거나 *.zip* 파일에서 직접 사용할 수 없는 국제 문자열로 폴더 이름을 지정 하는 데 유용 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |`Folder`|프로젝트에 추가할 폴더를 지정 합니다. `Folder` 요소에는 자식 요소가 포함 될 수 있습니다 `Folder` .|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)의 선택적 자식 요소입니다.|
 
@@ -132,4 +132,4 @@ ms.locfileid: "94672719"
 ## <a name="see-also"></a>참조
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [ProjectItem 요소 (Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [ProjectItem 요소(Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)

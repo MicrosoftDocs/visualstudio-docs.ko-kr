@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 58236bbacfaa262c23400506cb32331719000b81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967529"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 .NET 메모리 프로파일링 데이터를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.

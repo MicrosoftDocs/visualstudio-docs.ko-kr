@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960847"
 ---
 # <a name="send-startup-events-after-a-launch"></a>시작 후 시작 이벤트 보내기
 디버그 엔진 (DE)이 프로그램에 연결 되 면 일련의 시작 이벤트를 다시 디버그 세션으로 보냅니다.

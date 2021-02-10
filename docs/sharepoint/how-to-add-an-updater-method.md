@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967503"
 ---
 # <a name="how-to-add-an-updater-method"></a>방법: 업데이트 프로그램 메서드 추가
   사용자가 *업데이트 프로그램 메서드를 만들어* SharePoint 외부 목록의 비즈니스 데이터를 업데이트할 수 있도록 설정할 수 있습니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조하세요.
@@ -33,7 +33,7 @@ ms.locfileid: "96915377"
 
 1. BDC 디자이너에서 엔터티를 선택 합니다.
 
-2. 메뉴 모음에서 **View**  >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
+2. 메뉴 모음에서   >  **다른 Windows**  >  **BDC 메서드 세부 정보** 보기를 선택 합니다.
 
     BDC 메서드 세부 정보 창이 열립니다. 이 창에 대 한 자세한 내용은 [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)를 참조 하세요.
 

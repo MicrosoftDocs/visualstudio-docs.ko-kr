@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960782"
 ---
 # <a name="session-debug-manager"></a>세션 디버그 관리자
 세션 디버그 관리자 (SDM)는 개수에 관계 없이 여러 컴퓨터의 여러 프로세스에서 많은 프로그램을 디버그 하는 디버그 엔진 (DE)을 관리 합니다. SDM은 디버그 엔진 멀티플렉서 뿐만 아니라 IDE에 대 한 디버그 세션의 통합 보기를 제공 합니다.

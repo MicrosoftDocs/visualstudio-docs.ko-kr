@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc5963ed3a16ffba16a52bfcde7425fb1f10cba
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: cabaf226742d867e9d5eccbaf391b723cfbed5d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967672"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>방법: 단일 빌드 요청에서 여러 구성 빌드
 

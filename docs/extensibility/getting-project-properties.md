@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8e23b859577301d28cf23ac59462d08ad9a447
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968192"
 ---
 # <a name="get-project-properties"></a>프로젝트 속성 가져오기
 
 이 연습에서는 도구 창에 프로젝트 속성을 표시 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 준비 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

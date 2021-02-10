@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960340"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 
@@ -51,7 +51,7 @@ ms.locfileid: "93046114"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Architecture`|선택적 특성입니다.<br /><br /> 작업이 지정된 비트 수의 프로세스에서 실행되도록 지정합니다. 현재 프로세스가 요구 사항을 충족하지 않으면 작업이 요구 사항을 충족하는 작업 호스트 프로세스에서 실행됩니다.<br /><br /> 지원되는 값은 `x86`(32비트), `x64`(64비트), `CurrentArchitecture` 및 `*`(모든 아키텍처)입니다.|  
 |`AssemblyName`|`AssemblyName` 특성 또는 `AssemblyFile` 특성이 필요합니다.<br /><br /> 로드할 어셈블리의 이름입니다. `AssemblyName` 특성에서는 강력한 이름의 어셈블리를 허용하지만 필수적 요소는 아닙니다. 이 특성을 사용하면 .NET Framework에서 <xref:System.Reflection.Assembly.Load%2A> 메서드를 사용하여 어셈블리를 로드하는 것과 같은 결과를 얻을 수 있습니다.<br /><br /> `AssemblyFile` 특성을 사용하는 경우에는 이 특성을 사용할 수 없습니다.|
@@ -70,7 +70,7 @@ ms.locfileid: "93046114"
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 
