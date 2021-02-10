@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 2cb58bf8751eb4299ecede18bac83770c3a7df96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957740"
 ---
 # <a name="set-current-thread-command"></a>현재 스레드 설정 명령
 지정한 스레드를 현재 스레드로 설정합니다.

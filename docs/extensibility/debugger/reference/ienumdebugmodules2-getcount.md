@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f4def3d2-7cc9-4cd2-9649-3b7e00a76220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 098414d2a46e727d8e7316108bce28da53a47ffa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3bb9f20e852a634df57957a5b03674ab84f9e1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956293"
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 열거형의 요소 수를 반환 합니다.
@@ -43,11 +43,11 @@ int GetCount(
 `pcelt`\
 제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는 `Next` ,, `Clone` `Skip` 및 `Reset` 메서드만 구현 해야 함을 지정 하는 일반적인 COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

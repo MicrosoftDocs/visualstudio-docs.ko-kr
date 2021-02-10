@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 38e357ca4aa715861839f7f5ca168eafdc66f5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957441"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>코드에서 종속성 다이어그램 만들기
 

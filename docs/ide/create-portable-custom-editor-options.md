@@ -8,13 +8,13 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: 8ab90fda1f14521d59982ef7b5d20998cf61e505
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956843"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 

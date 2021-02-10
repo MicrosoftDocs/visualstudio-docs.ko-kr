@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c57eaa465a29cf505d62c720b1fe7f6aca8bda5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 708d7d85b7159e43305b52819a683b0895ddc295
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956908"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 지정 된 수의 요소를 건너뜁니다.
@@ -43,11 +43,11 @@ int Skip(
 `celt`\
 진행 건너뛸 요소 수입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE` `celt` 가 나머지 요소 수보다 크면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  가 `celt` 나머지 요소 수보다 큰 값을 지정 하는 경우 열거형은 end로 설정 되 고 `S_FALSE` 이 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d577ff2f5848f2cb348bcaccf57875507018634b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956401"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 이 인터페이스는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugFields : IUnknown
@@ -37,12 +37,12 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|열거형에서 다음 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체 집합을 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정 된 수의 항목을 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정 된 수의 항목을 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|열거형을 첫 번째 항목으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|현재 열거형의 복사본을 검색 합니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|현재 열거형의 복사본을 검색 합니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|열거형의 항목 수를 검색 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -54,7 +54,7 @@ IEnumDebugFields : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

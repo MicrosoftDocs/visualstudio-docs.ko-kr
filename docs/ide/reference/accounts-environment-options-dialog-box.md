@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b0c640b670802e3bb69a26d0b49bee6695955170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956778"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>계정, 환경, 옵션 대화 상자
 

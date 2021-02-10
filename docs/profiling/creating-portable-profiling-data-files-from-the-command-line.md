@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 258ed7d22114cba1d934a70c7bbef39364482464
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955946"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>명령줄에서 이식 가능한 프로파일링 데이터 파일 만들기
 프로파일링 데이터를 더 쉽게 공유하기 위해 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구를 사용하여 프로파일링 실행에 대한 기호를 .*vsp* 파일로 포함할 수 있습니다.

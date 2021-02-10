@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956466"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 이 메서드는 문서 위치를 디버그 주소 배열에 매핑합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80719410"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetAddressesFromPosition( 
+HRESULT GetAddressesFromPosition( 
    IDebugDocumentPosition2* pDocPos,
    BOOL                     fStatmentOnly,
    IEnumDebugAddresses**    ppEnumBegAddresses,
@@ -37,7 +37,7 @@ HRESULT GetAddressesFromPosition( 
 ```
 
 ```csharp
-int GetAddressesFromPosition( 
+int GetAddressesFromPosition( 
    IDebugDocumentPosition2  pDocPos,
    bool                     fStatmentOnly,
    out IEnumDebugAddresses  ppEnumBegAddresses,
@@ -58,7 +58,7 @@ int GetAddressesFromPosition( 
 `ppEnumEndAddresses`\
 제한이 이 문이나 줄과 연결 된 끝 디버그 주소에 대 한 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -66,7 +66,7 @@ int GetAddressesFromPosition( 
 
  템플릿의 경우와 같이 단일 문에 여러 개의 디버그 주소가 있을 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

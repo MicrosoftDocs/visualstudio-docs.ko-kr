@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e17976c86a519db3c5edcd60c426b5d20e84b526
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c81e22bbf3af08c150f1e1156ee62f1666f59638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956635"
 ---
 # <a name="how-to-programmatically-print-documents"></a>방법: 프로그래밍 방식으로 문서 인쇄
   전체 Microsoft Office Word 문서 또는 일부 문서를 기본 프린터에 인쇄할 수 있습니다.

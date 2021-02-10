@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b8515043b228deb4fbcbf43c0e75b9826912f059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957324"
 ---
 # <a name="preemption-time"></a>선점 시간
 타임라인의 이러한 세그먼트는 선점 시간으로 분류되는 차단 시간과 관련이 있습니다. 이 범주는 다음과 같은 이유 중 하나로 스레드가 해제됨을 의미합니다.

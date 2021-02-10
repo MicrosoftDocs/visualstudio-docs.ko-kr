@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 50d9e564b6637feb19ef99c3d33c0ea5c1b7b1fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957831"
 ---
 # <a name="services-page-project-designer"></a>프로젝트 디자이너, 서비스 페이지
 

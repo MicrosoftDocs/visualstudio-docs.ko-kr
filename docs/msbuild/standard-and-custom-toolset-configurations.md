@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956102"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
 
@@ -78,7 +78,7 @@ Visual Studio 2017 및 이후 버전에서는 MSBuild에 대한 경로에 레지
 
  표준 도구 집합이 빌드 요구 사항을 충족하지 않는 경우 사용자 지정 도구 집합을 만들 수 있습니다. 예를 들어 C++ 프로젝트 빌드를 위해 별도 시스템이 있어야 하는 빌드 랩 시나리오가 있을 수 있습니다. 사용자 지정 도구 집합을 사용하여 프로젝트를 만들거나 *MSBuild.exe* 를 실행할 때 `ToolsVersion` 특성에 사용자 지정 값을 할당할 수 있습니다. 이 작업을 수행하여 해당 도구 집합을 사용하는 모든 프로젝트에 사용할 수 있는 사용자 고유의 사용자 지정 도구 집합 속성을 정의할 뿐만 아니라 `$(MSBuildToolsPath)` 속성을 사용하여 해당 디렉터리에서 *.targets* 파일을 가져올 수도 있습니다.
 
- *MSBuild.exe* (또는 사용 중인 MSBuild 엔진을 호스트하는 사용자 지정 도구)에 대한 구성 파일에 사용자 지정 도구 집합을 지정합니다. 예를 들어 *MyCustomToolset* 이라는 도구 세트를 정의하려는 경우 *MSBuild.exe* 에 대한 구성 파일은 다음 도구 세트 정의를 포함할 수 있습니다.
+ *MSBuild.exe*(또는 사용 중인 MSBuild 엔진을 호스트하는 사용자 지정 도구)에 대한 구성 파일에 사용자 지정 도구 집합을 지정합니다. 예를 들어 *MyCustomToolset* 이라는 도구 세트를 정의하려는 경우 *MSBuild.exe* 에 대한 구성 파일은 다음 도구 세트 정의를 포함할 수 있습니다.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

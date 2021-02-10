@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956518"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 원본 서버 정보의 배열을 검색 합니다.
@@ -46,10 +46,10 @@ public int GetSourceServerData(
 `ppData`\
 제한이 데이터 배열에 대 한 참조입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) 인터페이스를 노출 하는 **cmodule** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -74,5 +74,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

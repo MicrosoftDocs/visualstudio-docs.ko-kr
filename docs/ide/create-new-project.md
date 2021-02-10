@@ -10,15 +10,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcbf39be441ba8237520fcc56ceec7946d688901
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 97d585f8c484f1ef8b4cbd0514585d6f328af67c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956882"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio에서 새 프로젝트 만들기
 

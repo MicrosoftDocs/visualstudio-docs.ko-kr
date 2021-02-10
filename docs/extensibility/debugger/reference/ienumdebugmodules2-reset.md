@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81fc33620449837f3d2af883f0721d24df92e804
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc98e9ac2d545670fde240cea914be9108b8f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956258"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 열거형을 첫 번째 요소로 다시 설정 합니다.
@@ -43,5 +43,5 @@ int Reset();
 ## <a name="remarks"></a>설명
  이 메서드가 호출 된 후 [다음](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) 메서드에 대 한 다음 호출에서 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

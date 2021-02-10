@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: a52acb80bac511706086c56074eb5bfe450b7674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955907"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** 옵션을 통해 프로파일러는 모든 콘솔 세션에서 데이터를 수집할 수 있습니다. **CrossSession** 옵션은 **Start** 옵션과 함께 사용되어야 합니다.

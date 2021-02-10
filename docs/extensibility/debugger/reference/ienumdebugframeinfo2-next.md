@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5fe15c46066fdbc94b0b7f005ef7a06e1f10cc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cff37c8cf557c3857a5e078d864755cb219c1bc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956323"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,9 +53,9 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

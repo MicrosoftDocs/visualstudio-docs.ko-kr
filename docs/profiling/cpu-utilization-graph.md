@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b310510a87e450c0d6b83a457cd117267ce0c9b8
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5ec57ac6601557bf644c818822fea70a296fd0c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956011"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 사용률 그래프
 CPU 사용률 그래프에서는 시간 경과에 따른 응용 프로그램의 사용률 수준을 보여줍니다. x축은 추적의 기간을 나타내고 y축은 시스템의 논리 코어 수를 나타냅니다. 이 그래프에서는 특정 시간에 활성 상태인 코어를 구체적으로 보여주지는 않습니다. 예를 들어 특정 시간 동안 두 개의 코어가 각각 50% 용량으로 실행되는 경우 이 뷰에서는 하나의 논리 코어가 사용되고 있는 것으로 표시됩니다.

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3f43d18c-6bd1-4ddd-95ef-9550abd2ad09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66cb525157d5902b43a9924291d7c10260b40309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08d48b2c99c30a23d1c534d8c732b5abe18438e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956986"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,9 +53,9 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3ee8f09c502f6125c6ce2e67e504a689c035ffd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957350"
 ---
 # <a name="call-tree-view"></a>호출 트리 뷰
 호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 성능 데이터가 나열됩니다.

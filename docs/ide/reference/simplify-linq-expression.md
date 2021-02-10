@@ -4,17 +4,17 @@ ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 006fc0fe84b11573ece98019a4446d83de52d62c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957558"
 ---
 # <a name="simplify-linq-expression"></a>LINQ 식 간소화
 
@@ -32,7 +32,7 @@ ms.locfileid: "88251349"
 
 1. Visual Studio에서 `SomeEnumerableType.Where(<LambdaExpression>).Single()` 인스턴스 내에 커서를 놓습니다.
 2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
-3. **LINQ 식 간소화**를 선택합니다.
+3. **LINQ 식 간소화** 를 선택합니다.
 
    ![typeof를 nameof로 변환](media/simplify-linq-expression.png)
 

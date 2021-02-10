@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957376"
 ---
 # <a name="dependency-diagrams-guidelines"></a>종속성 다이어그램: 지침
 
@@ -149,7 +149,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 다이어그램을 편집한 경우 언제 든 지 수동으로 또는 빌드할 때마다 자동으로 코드에 대해 유효성을 검사할 수 있습니다.
 
-다음을 참조하세요.
+참조
 
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 

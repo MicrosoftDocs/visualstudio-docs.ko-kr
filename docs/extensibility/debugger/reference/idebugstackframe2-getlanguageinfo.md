@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7e9b08847ea4d0c513ea458bd1ab40211cb9515
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956531"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
@@ -29,14 +29,14 @@ ms.locfileid: "80719708"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetLanguageInfo ( 
+HRESULT GetLanguageInfo ( 
    BSTR* pbstrLanguage,
    GUID* pguidLanguage
 );
 ```
 
 ```csharp
-int GetLanguageInfo ( 
+int GetLanguageInfo ( 
    ref string pbstrLanguage,
    ref Guid   pguidLanguage
 );
@@ -62,10 +62,10 @@ int GetLanguageInfo ( 
 
 - `guidScriptLang`\
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

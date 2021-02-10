@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957363"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 작업
 
@@ -39,7 +39,7 @@ ms.locfileid: "92436899"
 |`CLRSatelliteEmbeddedResource`|사용되지 않습니다.|
 |`Culture`|선택적 **String** 매개 변수입니다.<br /><br /> 빌드에 대한 문화권을 지정합니다. 빌드를 지역화할 수 없는 경우 이 값은 **null** 입니다. **null** 인 경우 기본값은 **CultureInfo.InvariantCulture** 가 반환하는 소문자 값입니다.|
 |`MainEmbeddedFiles`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 주 어셈블리에 포함되는 지역화할 수 없는 리소스를 지정합니다.|
-|`OutputType`|필수 **String** 매개 변수입니다.<br /><br /> 지정된 소스 파일을 포함할 파일의 형식을 지정합니다. 유효한 값은 **exe** , **winexe** 또는 **library** 입니다.|
+|`OutputType`|필수 **String** 매개 변수입니다.<br /><br /> 지정된 소스 파일을 포함할 파일의 형식을 지정합니다. 유효한 값은 **exe**, **winexe** 또는 **library** 입니다.|
 |`SatelliteEmbeddedFiles`|선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> **Culture** 매개 변수로 지정된 문화권에 대한 위성 어셈블리에 포함되는 지역화할 수 있는 파일을 지정합니다.|
 |`SourceFiles`|필수 **ITaskItem[]** 매개 변수입니다.<br /><br /> 분류할 파일의 목록을 지정합니다.|
 

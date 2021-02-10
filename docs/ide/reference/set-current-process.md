@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6a5c2f010b60546fe1ece16f66bf437d2dc633
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: cef9475e9336acd5c10cee604d453706ea7321c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957805"
 ---
 # <a name="set-current-process"></a>현재 프로세스 설정
 디버거에서 지정한 프로세스를 활성 프로세스로 설정합니다.

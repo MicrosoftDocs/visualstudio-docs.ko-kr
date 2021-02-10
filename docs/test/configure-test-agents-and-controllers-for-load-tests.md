@@ -8,13 +8,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e70c1f3783945fbea00816d961f8ae6518ff726b
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 50356044b4463353f99ddf93ac41e08a572f3879
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957246"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 개요
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957857"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 

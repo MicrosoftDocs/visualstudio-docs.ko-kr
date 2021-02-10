@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d8ee71e717d2287b4e6deb32b1b94c142cf7de73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957675"
 ---
 # <a name="settings-page-project-designer"></a>설정 페이지, 프로젝트 디자이너
 

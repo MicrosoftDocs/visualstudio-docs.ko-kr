@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f52d02407316fbc8f9a7b5e3db1c02a3566cda87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957584"
 ---
 # <a name="signing-page-project-designer"></a>프로젝트 디자이너, 서명 페이지
 

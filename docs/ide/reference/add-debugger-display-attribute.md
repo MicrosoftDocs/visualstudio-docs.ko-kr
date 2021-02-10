@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 2166f7876909f62d9d16a2a6d5ec126d4544193e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956726"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 추가
 

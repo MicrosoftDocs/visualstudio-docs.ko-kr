@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04409fb695613fea5d54b285946c04719fbe5b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957077"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -25,7 +25,7 @@ ms.locfileid: "80716259"
 
  이 인터페이스는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugObjects : IUnknown
@@ -40,12 +40,12 @@ IEnumDebugObjects : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|열거형에서 다음 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체 집합을 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|지정 된 수의 항목을 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|지정 된 수의 항목을 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|열거형을 첫 번째 항목으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|현재 열거형의 복사본을 검색 합니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|현재 열거형의 복사본을 검색 합니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|열거형의 항목 수를 검색 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -58,6 +58,6 @@ IEnumDebugObjects : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - editor settings
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 5d83319ed679a08b8c940774b723ce3e919b4b94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957662"
 ---
 # <a name="set-language-specific-editor-options"></a>언어별 편집기 옵션 설정
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1be0aaaf9e960b95deaa7c949993a950647ce89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6843eee8e6de7ec3e8cfd52362ee4463dea7da4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956427"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 이 메서드는 정규화 된 클래스 이름을 나타내는 클래스 필드 형식을 가져옵니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80719419"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetClassTypeByName( 
+HRESULT GetClassTypeByName( 
    LPCOLESTR          pszClassName,
    NAME_MATCH         nameMatch,
    IDebugClassField** ppField
@@ -53,10 +53,10 @@ int GetClassTypeByName(
 `ppField`\
 제한이 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 인터페이스로 표시 되는 클래스 형식을 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

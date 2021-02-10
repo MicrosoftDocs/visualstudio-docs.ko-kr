@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a223a2007d62b84f06191c71523b861f94efe3d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956128"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>성능 프로파일러에서 디버그하지 않고 CPU 사용량 분석
 

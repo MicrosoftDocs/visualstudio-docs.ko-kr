@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4d5e263d68ff2fbfbd963e9e3ee3833bd266aaba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955998"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
 이 문서에서는 .*vsp* 또는 .*vsps* 프로파일링 데이터 파일에서 쉼표로 구분된 값(.*csv*) 보고서를 생성하는 기본 VSPerfReport 명령을 설명합니다. 모든 보고서 옵션에 대한 설명은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.
