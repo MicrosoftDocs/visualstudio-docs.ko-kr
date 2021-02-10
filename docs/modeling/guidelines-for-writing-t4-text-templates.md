@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5418013898f24b15cf51926022d974d23f4a7215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966359"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
 

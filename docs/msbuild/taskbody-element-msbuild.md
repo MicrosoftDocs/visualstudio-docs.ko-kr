@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 29259d71a610a4d83740c139c1309db477288004
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965995"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>UsingTask의 Task 요소(MSBuild)
 
@@ -44,7 +44,7 @@ ms.locfileid: "93047895"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|특성|Description|
 |---------------|-----------------|
 |`Evaluate`|선택적 부울 특성입니다.<br /><br /> `true`인 경우, MSBuild는 내부 요소를 평가하고, 작업을 인스턴스화할 때 정보를 `TaskFactory`에 전달하기 전에 항목 및 속성을 확장합니다.|
 

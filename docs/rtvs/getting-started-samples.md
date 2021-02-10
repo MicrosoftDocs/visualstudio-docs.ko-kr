@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ed322a03d056f72ac2246e96d3aaeefa8f557c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75843815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967022"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio용 R 도구 샘플 프로젝트
 
@@ -22,8 +22,8 @@ ms.locfileid: "75843815"
 1. [샘플 zip 파일](https://github.com/Microsoft/RTVS-docs/archive/master.zip)을 다운로드하고 선택한 폴더로 추출합니다.
 1. `examples/Examples.sln`를 열어 프로젝트의 두 폴더를 표시합니다.
 
-    - *R 개요*에서는 R을 처음 사용하는 사람에게 적당한 소개를 제공합니다.
-    - *MRS 및 Machine Learning*에서는 기계 학습에 R 및 Microsoft Machine Learning Server를 사용하는 방법의 예제를 제공합니다.
+    - *R 개요* 에서는 R을 처음 사용하는 사람에게 적당한 소개를 제공합니다.
+    - *MRS 및 Machine Learning* 에서는 기계 학습에 R 및 Microsoft Machine Learning Server를 사용하는 방법의 예제를 제공합니다.
 
 ## <a name="a-first-look-at-r"></a>R 개요
 
@@ -41,7 +41,7 @@ ms.locfileid: "75843815"
 
 이 예제 컬렉션에서는 R을 사용하여 기계 학습 모델을 만드는 방법과 [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server)를 활용하는 방법을 보여 줍니다.
 
-모든 예제와 마찬가지로 파일을 열고 맨 위에 커서를 놓은 다음, **Ctrl**+**Enter**를 사용하여 한 줄씩 단계별로 코드를 실행합니다. 각 폴더의 markdown 파일에도 추가 정보가 포함되어 있습니다.
+모든 예제와 마찬가지로 파일을 열고 맨 위에 커서를 놓은 다음, **Ctrl**+**Enter** 를 사용하여 한 줄씩 단계별로 코드를 실행합니다. 각 폴더의 markdown 파일에도 추가 정보가 포함되어 있습니다.
 
 - `Benchmarks`는 많은 집약적인 병렬 선형 대수 계산을 실행하여 Microsoft R Open 및 Intel MKL(Math Kernel Library) 사용을 통해 얻을 수 있는 성능 향상을 보여 줍니다. 시뮬레이션 데이터를 사용하여 벤치마크는 특히 한 스레드와 두 스레드의 행렬 계산을 비교합니다.
 
@@ -83,6 +83,6 @@ Microsoft의 R 배포인 [Microsoft R Open](https://mran.revolutionanalytics.com
 
 R과 MRO/MLS의 기술적인 비교를 위해 항목에서 [Lixun Zhang의 자세한 설명](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)을 확인하세요.
 
-다음 그림은 15분 이상의 항공 지연을 예측하는 로지스틱 회귀 모델을 작성하는 데 사용되는 경과된 시간(초)을 비교합니다.  적은 수의 행을 늘릴 때 CRAN R에 사용되는 경과된 시간은 대폭 증가하지만 MLS는 2배 정도씩만 증가합니다. 이 벤치마크에 대한 자세한 내용은 *벤치마크/rxGlm_benchmark.R*을 참조하세요.
+다음 그림은 15분 이상의 항공 지연을 예측하는 로지스틱 회귀 모델을 작성하는 데 사용되는 경과된 시간(초)을 비교합니다.  적은 수의 행을 늘릴 때 CRAN R에 사용되는 경과된 시간은 대폭 증가하지만 MLS는 2배 정도씩만 증가합니다. 이 벤치마크에 대한 자세한 내용은 *벤치마크/rxGlm_benchmark.R* 을 참조하세요.
 
 ![rxGlm 벤치마크](media/samples-rxGLM-benchmark.png)

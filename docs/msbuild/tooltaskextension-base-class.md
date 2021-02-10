@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7a12607a6e4f603c86e7714ff87db085d3bf3b9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965943"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 기본 클래스
 
@@ -30,7 +30,7 @@ ms.locfileid: "93047831"
 
  다음 표에서는 기본 클래스의 매개 변수에 대해 설명합니다.
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 | - | - |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | 선택적 <xref:Microsoft.Build.Framework.IBuildEngine> 매개 변수입니다.<br /><br /> 작업에 사용할 수 있는 빌드 엔진 인터페이스를 지정합니다. 빌드 엔진에서는 작업에서 빌드 엔진으로 다시 호출할 수 있도록 이 매개 변수를 자동으로 설정합니다. |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | 선택적 <xref:Microsoft.Build.Framework.IBuildEngine2> 매개 변수입니다.<br /><br /> 작업에 사용할 수 있는 빌드 엔진 인터페이스를 지정합니다. 빌드 엔진에서는 작업에서 빌드 엔진으로 다시 호출할 수 있도록 이 매개 변수를 자동으로 설정합니다.<br /><br /> 이는 이 클래스에서 상속하는 작업 작성자가 값을 `IBuildEngine`에서 `IBuildEngine2`로 캐스트하지 않아도 되도록 해 주는 편의 속성입니다. |

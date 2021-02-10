@@ -6,19 +6,19 @@ ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.make.local.function.static
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 050ce5e90d9141892ff65602ca560d0add83da5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967191"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>정적 로컬 함수 리팩터링 및 빠른 작업
 

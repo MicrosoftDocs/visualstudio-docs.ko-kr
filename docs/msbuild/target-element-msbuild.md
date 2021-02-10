@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 231ffd185eaf06fb91a709631082c2b68db372ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966125"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
 
@@ -59,7 +59,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|특성|설명|
 |---------------|-----------------|
 |`Name`|필수 특성입니다.<br /><br /> 대상의 이름입니다. 대상 이름은 `$@()%*?.`를 제외한 모든 문자를 포함할 수 있습니다.|
 |`Condition`|선택적 특성입니다.<br /><br /> 평가할 조건입니다. 조건이 `false`로 평가되면 해당 대상 또는 `DependsOnTargets` 특성에 설정되어 있는 대상의 본문이 실행되지 않습니다. 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
@@ -74,7 +74,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="child-elements"></a>자식 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | MSBuild 작업의 인스턴스를 만들고 실행합니다. 대상에는 작업이 없을 수도 있고 하나 이상 있을 수도 있습니다. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 사용자 정의 `Property` 요소 집합을 포함합니다. .NET Framework 3.5부터는 `Target` 요소가 `PropertyGroup` 요소를 포함할 수 있습니다. |
@@ -83,7 +83,7 @@ MSBuild가 순차적으로 실행할 작업 집합을 포함합니다.
 
 ### <a name="parent-elements"></a>부모 요소
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | MSBuild 프로젝트 파일의 필수 루트 요소입니다. |
 

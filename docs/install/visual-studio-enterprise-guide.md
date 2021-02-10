@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967113"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 엔터프라이즈 가이드
 Visual Studio에서 회사를 운영하는 동안 시간을 절약하려면 이 가이드를 참조하세요. 본 엔터프라이즈 가이드는 일반적인 엔터프라이즈 시나리오에서 Visual Studio를 설치 또는 업데이트하고, 문제 발생 시 차단을 해제하고, 추가 도움이 필요한 경우 문제를 보고하는 방법을 알아보는 데 도움이 되는 팁을 제공합니다. 

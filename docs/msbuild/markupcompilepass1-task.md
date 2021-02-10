@@ -16,15 +16,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 775884692963da226947a8fac524a8bd440d6c8d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 89d67c083c9e40710e79568c12684ab54653a5be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966203"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 작업
 
@@ -49,11 +49,11 @@ ms.locfileid: "92904268"
 | `GeneratedLocalizationFiles` | 선택적 **ITaskItem** 출력 매개 변수입니다.<br /><br /> 지역화할 수 있는 각 XAML 파일에 대해 생성된 지역화 파일의 목록을 포함합니다. |
 | `HostInBrowser` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 어셈블리가 XAML Browser Application(XBAP)인지 여부를 지정합니다. 유효한 옵션은 **true** 및 **false** 입니다. **true** 이면 브라우저 호스팅을 지원하기 위한 코드가 생성됩니다. |
 | `KnownReferencePaths` | 선택적 **String[]** 매개 변수입니다.<br /><br /> 빌드 프로세스 중에 변경되지 않는 어셈블리에 대한 참조를 지정합니다. 전역 어셈블리 캐시(GAC), .NET 설치 디렉터리 등에 있는 어셈블리를 포함합니다. |
-| `Language` | 필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#** , **VB** , **JScript** 및 **C++** 입니다. |
+| `Language` | 필수 **String** 매개 변수입니다.<br /><br /> 컴파일러가 지원하는 관리되는 언어를 지정합니다. 유효한 옵션은 **C#**, **VB**, **JScript** 및 **C++** 입니다. |
 | `LanguageSourceExtension` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 생성된 관리되는 코드 파일의 확장에 추가되는 확장명을 지정합니다.<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** 매개 변수가 특정 값으로 설정되지 않으면 언어의 기본 소스 파일 이름 확장명이 사용됩니다. 즉, Visual Basic의 경우 *.vb* 이고, C#의 경우 *.csharp* 입니다. |
-| `LocalizationDirectivesToLocFile` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 각 소스 XAML 파일에 대한 지역화 정보를 생성하는 방법을 지정합니다. 유효한 옵션은 **None** , **CommentsOnly** 및 **All** 입니다. |
+| `LocalizationDirectivesToLocFile` | 선택적 **문자열** 매개 변수입니다.<br /><br /> 각 소스 XAML 파일에 대한 지역화 정보를 생성하는 방법을 지정합니다. 유효한 옵션은 **None**, **CommentsOnly** 및 **All** 입니다. |
 | `OutputPath` | 필수 **String** 매개 변수입니다.<br /><br /> 생성된 관리 코드 파일 및 XAML 이진 형식 파일이 생성되는 디렉터리를 지정합니다. |
-| `OutputType` | 필수 **String** 매개 변수입니다.<br /><br /> 프로젝트에서 생성되는 어셈블리의 형식을 지정합니다. 유효한 옵션은 **winexe** , **exe** , **library** 및 **netmodule** 입니다. |
+| `OutputType` | 필수 **String** 매개 변수입니다.<br /><br /> 프로젝트에서 생성되는 어셈블리의 형식을 지정합니다. 유효한 옵션은 **winexe**, **exe**, **library** 및 **netmodule** 입니다. |
 | `PageMarkup` | 선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 처리할 XAML 파일 목록을 지정합니다. |
 | `References` | 선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> XAML 파일에서 사용되는 형식을 포함하는 어셈블리에 대한 파일의 참조 목록을 지정합니다. |
 | `RequirePass2ForMainAssembly` | 선택적 **Boolean** 출력 매개 변수입니다.<br /><br /> 프로젝트에 주 어셈블리에 포함되는 로컬 형식을 참조하는 지역화할 수 없는 XAML 파일이 포함되는지 여부를 나타냅니다. |
@@ -65,7 +65,7 @@ ms.locfileid: "92904268"
 
 ## <a name="remarks"></a>설명
 
-<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 작업은 일반적으로 XAML을 이진 형식으로 컴파일한 후 코드 파일을 생성합니다. XAML 파일에 같은 프로젝트에 정의된 형식에 대한 참조가 포함되면 이진 형식에 대한 컴파일이 **MarkupCompilePass1** 에 의해 두 번째 태그 컴파일 패스( **MarkupCompilePass2** )로 연기됩니다. 이러한 파일은 참조된 로컬로 정의된 형식이 컴파일될 때까지 기다려야 하므로 컴파일이 연기되어야 합니다. 그러나 XAML 파일에 `x:Class` 특성이 있으면 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>은 언어별 코드 파일을 생성합니다.
+<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 작업은 일반적으로 XAML을 이진 형식으로 컴파일한 후 코드 파일을 생성합니다. XAML 파일에 같은 프로젝트에 정의된 형식에 대한 참조가 포함되면 이진 형식에 대한 컴파일이 **MarkupCompilePass1** 에 의해 두 번째 태그 컴파일 패스(**MarkupCompilePass2**)로 연기됩니다. 이러한 파일은 참조된 로컬로 정의된 형식이 컴파일될 때까지 기다려야 하므로 컴파일이 연기되어야 합니다. 그러나 XAML 파일에 `x:Class` 특성이 있으면 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>은 언어별 코드 파일을 생성합니다.
 
 XAML 파일은 `x:Uid` 특성을 사용하는 요소가 포함된 경우 지역화가 가능합니다.
 

@@ -6,17 +6,17 @@ ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: e4f10f3555f4edcec031cd4c144bf5a28e9c055d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967152"
 ---
 # <a name="sync-namespace-and-folder-name"></a>동기화 네임스페이스 및 폴더 이름
 

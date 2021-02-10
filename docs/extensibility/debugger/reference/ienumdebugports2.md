@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3cc46ef8abb6ef1fbb8f072d97b0fc4a537af1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638b17490ba875f8ecab7bf6dcdff7fef161b66e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967802"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 이 인터페이스는 컴퓨터 또는 포트 공급자의 포트를 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEnumDebugPorts2 : IUnknown
@@ -37,12 +37,12 @@ IEnumDebugPorts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugPorts2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|열거형 시퀀스에서 지정 된 수의 포트를 검색 합니다.|
-|[skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|열거형 시퀀스에서 지정 된 수의 포트를 건너뜁니다.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|열거형 시퀀스에서 지정 된 수의 포트를 건너뜁니다.|
 |[재설정](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
-|[복제](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[원본과](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|열거자의 포트 수를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -57,7 +57,7 @@ IEnumDebugPorts2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 873f669890e84281f73a96fa1739d267c10e83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966138"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 

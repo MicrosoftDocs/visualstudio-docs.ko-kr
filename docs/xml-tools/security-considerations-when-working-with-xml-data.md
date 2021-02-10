@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9e98e18e3e01f53afa6b0a9ea3bdec94f2186f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0bb4a293e4879838d53093b41cacf004b57de7e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968608"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML 데이터 사용 시 보안 고려 사항
 

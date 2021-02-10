@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: d99dcc3a141bc3734c5c356601d0e1e7474f06a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967971"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 

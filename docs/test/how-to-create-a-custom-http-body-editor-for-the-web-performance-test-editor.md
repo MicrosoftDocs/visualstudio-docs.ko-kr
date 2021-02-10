@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: e096333d66fffd233bfb4b9de7f40e18f1277846
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966736"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기
 

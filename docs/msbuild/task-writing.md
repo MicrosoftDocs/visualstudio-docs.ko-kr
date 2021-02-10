@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9f13d561cba0482e15f065e66200b51c8b77ddfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966021"
 ---
 # <a name="task-writing"></a>작업 작성
 

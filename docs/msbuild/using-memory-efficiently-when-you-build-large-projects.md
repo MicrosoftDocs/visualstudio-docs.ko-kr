@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61bfa09bf91b49c163e47bbf71c0d192b6950160
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 99cee9cfbf779bbee97c00fb76f9670e1d609b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965904"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>대규모 프로젝트 빌드 시 메모리의 효율적인 사용
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968946"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시
   `StartCaching`, 또는와 같은 호스트 항목의 메서드를 호출 하 여 문서의 데이터 캐시에 데이터 개체를 프로그래밍 방식으로 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> . 호스트 항목의 메서드를 호출 하 여 데이터 캐시에서 데이터 개체를 제거 `StopCaching` 합니다.

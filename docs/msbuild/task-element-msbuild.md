@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58ac6b02424da40ba1130d8a1b549886c9efd718
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a4b8e3cb3acccc2e7ae4c6c2d93353bec79a3690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966047"
 ---
 # <a name="task-element-of-target-msbuild"></a>Target의 Task 요소(MSBuild)
 
@@ -47,10 +47,10 @@ MSBuild 작업의 인스턴스를 만들고 실행합니다. 생성된 작업 �
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Condition`|선택적 특성입니다. 평가할 조건입니다. 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|
-|`ContinueOnError`|선택적 특성입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false** (기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요.|
+|`ContinueOnError`|선택적 특성입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요.|
 |`Parameter`|작업 클래스에 `[Required]` 특성으로 레이블이 지정된 하나 이상의 속성이 포함된 경우 필수입니다.<br /><br /> 값으로 매개 변수 값을 포함하는 사용자 정의 작업 매개 변수입니다. `Task` 요소에는 여러 매개 변수가 있을 수 있으며 각 특성은 작업 클래스의 .NET 속성에 매핑됩니다.|
 
 ### <a name="child-elements"></a>자식 요소

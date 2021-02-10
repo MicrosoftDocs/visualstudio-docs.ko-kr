@@ -14,13 +14,13 @@ ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966489"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
 
@@ -33,7 +33,7 @@ Visual Studio 및 Blend for Visual Studio의 XAML 디자이너는 WPF 및 UWP와
 
 ## <a name="xaml-designer-workspace"></a>XAML 디자이너 작업 영역
 
-XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 *아트보드* (시각적 디자인 화면), XAML 편집기, 문서 개요 창(Blend for Visual Studio의 개체 및 타임라인 창) 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너** 를 선택합니다.
+XAML 디자이너의 작업 영역은 몇 가지 그래픽 인터페이스 요소로 구성됩니다. 여기에는 *아트보드*(시각적 디자인 화면), XAML 편집기, 문서 개요 창(Blend for Visual Studio의 개체 및 타임라인 창) 및 속성 창이 포함됩니다. XAML 디자이너를 열려면 **솔루션 탐색기** 에서 XAML 파일을 마우스 오른쪽 단추로 클릭하고 **뷰 디자이너** 를 선택합니다.
 
 XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동기화된 디자인 뷰를 제공합니다. Visual Studio 또는 Blend for Visual Studio에서 XAML 파일을 연 상태에서, **디자인** 및 **XAML** 탭을 사용하여 디자인 뷰와 XAML 뷰 사이에서 전환할 수 있습니다. **창 바꾸기** 단추 ![XAML 디자이너의 창 바꾸기 단추](media/swap-panes.PNG)를 사용하여 아트보드 또는 XAML 편집기 중 하나의 맨 위에 나타나는 창을 전환할 수 있습니다.
 
@@ -125,8 +125,8 @@ Visual Studio의 문서 개요 창은 Blend for Visual Studio의 [개체 및 타
 
 - [애니메이션을 만듭니다](animate-objects-in-xaml-designer.md)(Blend for Visual Studio에만 해당).
 
-Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서 **View**  >  **다른 창**  >  **문서 개요** 보기를 선택 합니다.
-Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서 **View**  >  **문서 개요** 보기를 선택 합니다.
+Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서   >  **다른 창**  >  **문서 개요** 보기를 선택 합니다.
+Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서   >  **문서 개요** 보기를 선택 합니다.
 
 ![Visual Studio의 문서 개요 창](media/document-outline-window.png)
 
@@ -134,11 +134,11 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 **표시/숨기기**
 
-아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl** + **h** 를 눌러 요소를 숨기고 **Shift** + **ctrl** + **h** 를 눌러 표시할 수도 있습니다.
+아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl** + **h** 를 눌러 요소를 숨기고  + **ctrl** + **h** 를 눌러 표시할 수도 있습니다.
 
 **잠금/잠금해제**
 
-아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl** + **l** 을 눌러 요소를 잠그고 **Shift** + **ctrl** + **l** 키를 눌러 잠금을 해제할 수도 있습니다.
+아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl** + **l** 을 눌러 요소를 잠그고  + **ctrl** + **l** 키를 눌러 잠금을 해제할 수도 있습니다.
 
 **범위를 pageRoot로 되돌립니다.**
 
@@ -146,7 +146,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 ## <a name="properties-window"></a>속성 창
 
-**속성** 창에서 컨트롤에 대 한 속성 값을 설정할 수 있습니다. 다음과 같습니다.
+**속성** 창에서 컨트롤에 대 한 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.
 
 ![속성 창](media/xaml-designer-properties-window.png)
 
@@ -154,7 +154,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 - **이름** 상자에서 현재 선택된 요소의 이름을 변경합니다.
 - 왼쪽 위 모서리에 현재 선택한 요소를 나타내는 아이콘이 있습니다.
-- 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준** 목록에서 **범주** , **이름** 또는 **소스** 를 클릭합니다.
+- 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준** 목록에서 **범주**, **이름** 또는 **소스** 를 클릭합니다.
 - 컨트롤에 대한 이벤트의 목록을 보려면 번개 기호를 표시하는 **이벤트** 단추를 클릭합니다.
 - 속성을 검색하려면 검색 상자에 속성 이름을 입력하기 시작합니다. 사용자가 입력할 때 검색 조건과 일치 하는 속성이 **속성** 창에 표시 됩니다.
 

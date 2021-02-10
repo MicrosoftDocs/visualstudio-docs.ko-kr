@@ -7,21 +7,21 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2b98f814e1f310c7d7f281457589a1a9f7d21653
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966554"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 개체 스타일 수정
 
 개체를 사용자 지정하는 가장 쉬운 방법은 **속성** 창에서 속성을 설정하는 방법입니다.
 
-설정이나 설정 그룹을 다시 사용하려면 다시 사용할 수 있는 리소스를 만듭니다. 이러한 리소스로는 *스타일* , *템플릿* 또는 사용자 지정 색 등을 들 수 있습니다. 또한 해당 상태에 따라 컨트롤이 다르게 표시되도록 할 수 있습니다. 예를 들어 사용자가 단추를 클릭할 때 단추가 녹색으로 바뀝니다.
+설정이나 설정 그룹을 다시 사용하려면 다시 사용할 수 있는 리소스를 만듭니다. 이러한 리소스로는 *스타일*, *템플릿* 또는 사용자 지정 색 등을 들 수 있습니다. 또한 해당 상태에 따라 컨트롤이 다르게 표시되도록 할 수 있습니다. 예를 들어 사용자가 단추를 클릭할 때 단추가 녹색으로 바뀝니다.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>브러시: 개체의 모양 수정
 
@@ -31,7 +31,7 @@ ms.locfileid: "93046795"
 
 *타일 브러시* 를 사용하여 개체에 반복되는 이미지나 패턴을 그릴 수 있습니다.
 
-타일 브러시를 만들려면 *이미지 브러시* , *드로잉 브러시* 또는 *비주얼 브러시* 리소스를 만들어 시작합니다.
+타일 브러시를 만들려면 *이미지 브러시*, *드로잉 브러시* 또는 *비주얼 브러시* 리소스를 만들어 시작합니다.
 
 이미지를 사용하여 이미지 브러시를 만듭니다. 다음 그림은 이미지 브러시, 바둑판식 이미지 브러시 및 대칭 이동 이미지 브러시를 보여 줍니다.
 
@@ -49,9 +49,9 @@ ms.locfileid: "93046795"
 
 컨트롤의 모양 및 동작을 한 번 디자인하고 해당 디자인을 다른 컨트롤에 적용하여 컨트롤의 모양과 동작을 개별적으로 유지 관리하지 않아도 됩니다.
 
-**스타일을 사용해야 하나요?** : 기본 속성(예: 단추 색)을 설정하려면 *스타일* 을 사용합니다. 스타일을 컨트롤에 적용한 후에도 컨트롤을 수정할 수 있습니다.
+**스타일을 사용해야 하나요?**: 기본 속성(예: 단추 색)을 설정하려면 *스타일* 을 사용합니다. 스타일을 컨트롤에 적용한 후에도 컨트롤을 수정할 수 있습니다.
 
-**템플릿을 사용해야 하나요?** : 컨트롤의 구조를 변경하려는 경우 *템플릿* 을 사용합니다. 그래픽이나 로고를 단추로 변환한다고 가정해 보면 템플릿을 컨트롤에 적용한 후에는 컨트롤을 수정할 수 없습니다.
+**템플릿을 사용해야 하나요?**: 컨트롤의 구조를 변경하려는 경우 *템플릿* 을 사용합니다. 그래픽이나 로고를 단추로 변환한다고 가정해 보면 템플릿을 컨트롤에 적용한 후에는 컨트롤을 수정할 수 없습니다.
 
 ### <a name="create-a-template-or-style"></a>템플릿 또는 스타일 만들기
 
@@ -103,6 +103,6 @@ ms.locfileid: "93046795"
 
 ![색을 리소스로 변환 단추](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![색 리소스 만들기 대화 상자](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [Blend for Visual Studio를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

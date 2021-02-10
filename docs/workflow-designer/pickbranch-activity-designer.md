@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9d3ac314d5f8eb7980bdf5102d871546d3167141
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968673"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 활동 디자이너
 
@@ -54,13 +54,13 @@ ms.locfileid: "94434235"
 
 다음 표에서는 가장 유용한 속성을 보여 주고 <xref:System.Activities.Statements.PickBranch> 워크플로 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|거짓|**PickBranch** 디자이너의 헤더에 표시 되는 이름입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|참|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|거짓|각 <xref:System.Activities.Statements.PickBranch>에는 트리거될 경우 실행되는 <xref:System.Activities.Statements.PickBranch.Action%2A>이 포함되어 있습니다.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|**PickBranch** 디자이너의 헤더에 표시 되는 이름입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|각 <xref:System.Activities.Statements.PickBranch>에는 트리거될 경우 실행되는 <xref:System.Activities.Statements.PickBranch.Action%2A>이 포함되어 있습니다.|
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 - [선택 활동](/dotnet/framework/windows-workflow-foundation/pick-activity)

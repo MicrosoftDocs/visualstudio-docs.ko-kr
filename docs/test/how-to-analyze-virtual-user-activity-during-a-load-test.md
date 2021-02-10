@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 33bb1d3ed7d2deb891556f2091c6c389bc1b03c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966918"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>방법: 가상 사용자 동작 차트를 사용하여 부하 테스트 중에 가상 사용자가 수행하는 작업 분석
 

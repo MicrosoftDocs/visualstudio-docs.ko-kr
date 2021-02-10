@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966437"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 이 인터페이스는 바이트 배열을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IEEDataStorage : IUnknown
@@ -37,7 +37,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  `IEEDataStorage`인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|제공 된 버퍼에 지정 된 수의 데이터 바이트를 검색 합니다.|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|사용 가능한 데이터 바이트 수를 검색 합니다.|
@@ -54,7 +54,7 @@ IEEDataStorage : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

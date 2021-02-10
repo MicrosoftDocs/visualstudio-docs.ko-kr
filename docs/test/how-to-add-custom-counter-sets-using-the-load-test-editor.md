@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c65226a8694cbccf7c5b94f7688d1828a2526cf6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: ce34a4e30c9d612bd37afb61c354b7a4b5df7aed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966931"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 사용자 지정 카운터 집합 추가
 

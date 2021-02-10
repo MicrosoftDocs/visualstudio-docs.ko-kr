@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a3b5a0f6474231fdc8f7617040ec4aa57056d9c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966957"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 요소
   SharePoint에 배포 될 때 프로젝트 항목과 함께 포함할 개별 프로젝트의 출력을 나타냅니다.
@@ -33,7 +33,7 @@ ms.locfileid: "95442030"
     Type = "Type of deployment for the project output" />
 ```
 
-## <a name="type"></a>유형
+## <a name="type"></a>Type
  **ProjectOutputFileType**
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
@@ -41,19 +41,19 @@ ms.locfileid: "95442030"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |**ProjectId**|필수 **xs: string** 특성입니다.<br /><br /> 포함 하려는 출력이 있는 종속 프로젝트의 GUID입니다. 이는 종속 프로젝트 파일의 **Projectguid** 요소에 해당 합니다.|
 |**ProjectPath**|필수 **xs: string** 특성입니다.<br /><br /> 포함 하려는 출력이 있는 종속 프로젝트의 프로젝트 파일 이름을 포함 한 상대 경로입니다. 이 경로는 SharePoint 프로젝트 항목을 포함 하는 SharePoint 프로젝트의 루트 폴더를 기준으로 합니다.|
 |**대상**|선택적 **xs: string** 특성입니다.<br /><br /> 배포 루트 폴더를 기준으로 SharePoint 서버에 종속 프로젝트 출력을 배포할 경로입니다. 배포 루트 폴더는 **type** 특성으로 지정 된 배포 유형에 따라 결정 됩니다.<br /><br /> 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 경로** 및 **배포 루트** 속성에 대 한 설명을 참조 하세요.|
-|**형식**|필수 **xs: string** 특성입니다.<br /><br /> 종속 프로젝트의 출력에 사용할 배포 형식입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
+|**유형**|필수 **xs: string** 특성입니다.<br /><br /> 종속 프로젝트의 출력에 사용할 배포 형식입니다. 가능한 값에 대 한 자세한 내용은 [sharepoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)에서 sharepoint 프로젝트 항목의 **배포 유형** 속성에 대 한 설명을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[파일](../sharepoint/files-element.md)|Sharepoint에 배포 될 때 SharePoint 프로젝트 항목에 포함할 파일을 지정 합니다.|
 

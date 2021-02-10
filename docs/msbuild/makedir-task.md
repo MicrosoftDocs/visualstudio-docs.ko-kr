@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: fa7b853ea6706c4958635c399bbc6134e823223c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966229"
 ---
 # <a name="makedir-task"></a>MakeDir 작업
 

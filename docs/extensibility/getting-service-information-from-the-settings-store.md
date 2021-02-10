@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968127"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
 설정 저장소를 사용 하 여 사용 가능한 모든 서비스를 찾거나 특정 서비스가 설치 되어 있는지 여부를 확인할 수 있습니다. 서비스 클래스의 형식을 알아야 합니다.

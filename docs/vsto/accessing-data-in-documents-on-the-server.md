@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965800"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>서버에 있는 문서의 데이터 액세스
   Microsoft Office Word 또는 Microsoft Office Excel의 개체 모델을 사용 하지 않고도 문서 수준 사용자 지정에서 데이터에 대해 프로그래밍할 수 있습니다. 즉, Word 또는 Excel이 설치 되지 않은 서버에서 문서에 포함 된 데이터에 액세스할 수 있습니다. 예를 들어, 서버 (예: 페이지)의 코드는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 문서의 데이터를 사용자 지정 하 고 사용자 지정 된 문서를 최종 사용자에 게 보낼 수 있습니다. 최종 사용자가 문서를 열면 솔루션 어셈블리의 데이터 바인딩 코드가 사용자 지정 된 데이터를 문서에 바인딩합니다. 이는 문서의 데이터가 사용자 인터페이스에서 분리 되기 때문에 가능 합니다. 자세한 내용은 [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)를 참조 하세요.
@@ -57,9 +57,9 @@ ms.locfileid: "96847626"
 
 3. 다음 옵션 중 하나를 사용 하 여 변경 된 개체를 다시 데이터 캐시로 Serialize 합니다.
 
-    - 변경 내용을 자동으로 직렬화 하려면 메서드를 사용 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 합니다. 이 메서드는 **DiffGram** <xref:System.Data.DataSet> <xref:System.Data.DataTable> 데이터 캐시에서, 및 형식화 된 데이터 집합 개체를 Serialize 하는 데 DiffGram 형식을 사용 합니다. **DiffGram** 형식을 사용 하면 오프 라인 문서의 데이터 캐시에 대 한 변경 내용이 서버에 올바르게 전송 됩니다.
+    - 변경 내용을 자동으로 직렬화 하려면 메서드를 사용 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 합니다. 이 메서드는  <xref:System.Data.DataSet> <xref:System.Data.DataTable> 데이터 캐시에서, 및 형식화 된 데이터 집합 개체를 Serialize 하는 데 DiffGram 형식을 사용 합니다. **DiffGram** 형식을 사용 하면 오프 라인 문서의 데이터 캐시에 대 한 변경 내용이 서버에 올바르게 전송 됩니다.
 
-    - 캐시 된 데이터 변경 내용에 대 한 사용자 고유의 serialization을 수행 하려는 경우 속성에 직접 쓸 수 있습니다 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> . 을 사용 **DiffGram** 하 여 <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> , 또는 형식화 된 데이터 집합의 데이터에 대 한 변경 내용으로 데이터베이스를 업데이트 하는 경우 DiffGram 형식을 지정 합니다 <xref:System.Data.DataTable> . 그렇지 않으면에서 <xref:System.Data.Common.DataAdapter> 기존 행을 수정 하는 대신 새 행을 추가 하 여 데이터베이스를 업데이트 합니다.
+    - 캐시 된 데이터 변경 내용에 대 한 사용자 고유의 serialization을 수행 하려는 경우 속성에 직접 쓸 수 있습니다 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> . 을 사용  하 여 <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> , 또는 형식화 된 데이터 집합의 데이터에 대 한 변경 내용으로 데이터베이스를 업데이트 하는 경우 DiffGram 형식을 지정 합니다 <xref:System.Data.DataTable> . 그렇지 않으면에서 <xref:System.Data.Common.DataAdapter> 기존 행을 수정 하는 대신 새 행을 추가 하 여 데이터베이스를 업데이트 합니다.
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>현재 값을 deserialize 하지 않고 데이터 수정
  일부 경우에는 현재 값을 deserialize 하지 않고 캐시 된 개체의 값을 수정 하는 것이 좋습니다. 예를 들어 문자열 또는 정수와 같이 단순 형식이 포함 된 개체의 값을 변경 하거나 서버의 문서에서 캐시 된를 초기화 하는 경우이 작업을 수행할 수 있습니다 <xref:System.Data.DataSet> . 이러한 경우에는 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 캐시 된 개체의 현재 값을 먼저 deserialize 하지 않고 메서드를 사용할 수 있습니다.

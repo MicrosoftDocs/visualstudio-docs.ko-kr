@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968751"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 활동 디자이너 사용
 
@@ -45,10 +45,10 @@ ms.locfileid: "96996177"
 
 |속성 이름|필수|사용량|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|거짓|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach \<Int32>** 입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|거짓|컬렉션의 각 항목에 대해 실행할 활동입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 **있는 \<T> ParallelForEach** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
-|**TypeArgument**|참|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>제네릭 매개 변수 *T* 로 지정 된 컬렉션에 있는 항목의 형식입니다. 기본적으로 **Typeargument** 는 **Int32** 로 설정 됩니다. **ParallelForEach<t \>** 활동 디자이너에서 형식 T를 변경 하려면 속성 표에서 **typeargument** 콤보 상자의 값을 변경 합니다.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|참|반복할 항목의 컬렉션입니다. 을 설정 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **ForEach<\> T** 활동 디자이너의 **값** 상자에 "VB 식 입력" 또는 **속성** 창의 **값** 상자에 Visual Basic 식을 입력 합니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach \<Int32>** 입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|컬렉션의 각 항목에 대해 실행할 활동입니다. 활동을 추가 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 도구 상자의 활동을 "여기에 작업 놓기" 힌트 텍스트가 **있는 \<T> ParallelForEach** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
+|**TypeArgument**|True|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>제네릭 매개 변수 *T* 로 지정 된 컬렉션에 있는 항목의 형식입니다. 기본적으로 **Typeargument** 는 **Int32** 로 설정 됩니다. **ParallelForEach<t \>** 활동 디자이너에서 형식 T를 변경 하려면 속성 표에서 **typeargument** 콤보 상자의 값을 변경 합니다.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|반복할 항목의 컬렉션입니다. 을 설정 하려면 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **ForEach<\> T** 활동 디자이너의 **값** 상자에 "VB 식 입력" 또는 **속성** 창의 **값** 상자에 Visual Basic 식을 입력 합니다.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||각 반복이 완료된 후 평가됩니다. true이면 예약된 보류 중인 반복이 취소됩니다. 이 속성을 설정 하지 않으면 모든 예약 된 문이 완료 될 때까지 실행 됩니다.|
 
 루프 반복기는 기본적으로 이름이 지정된 항목입니다. **ParallelForEach \<T>** 활동 디자이너의 **ForEach** 상자에서 반복기 변수의 이름을 변경할 수 있습니다. 루프 반복기는 <xref:System.Activities.Statements.ParallelForEach%601> 활동의 자식에 포함된 식에서 사용할 수 있습니다.

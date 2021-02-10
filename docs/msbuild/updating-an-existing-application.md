@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965930"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15에 대한 기존 애플리케이션 업데이트
 
@@ -71,7 +71,7 @@ Microsoft.Build.Locator 패키지를 참조하면 애플리케이션에서 버�
 
 ### <a name="ensure-output-is-clean"></a>출력 정리 확인
 
-*Microsoft.Build.\*.dll* 어셈블리를 포함하지 않는지 확인하도록 프로젝트를 빌드하고 출력 디렉터리를 검사합니다( *Microsoft.Build.Locator.dll* 이외, 다음 단계에서 추가됨).
+*Microsoft.Build.\*.dll* 어셈블리를 포함하지 않는지 확인하도록 프로젝트를 빌드하고 출력 디렉터리를 검사합니다(*Microsoft.Build.Locator.dll* 이외, 다음 단계에서 추가됨).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Microsoft.Build.Locator에 대한 패키지 참조 추가
 

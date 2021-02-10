@@ -29,19 +29,19 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 99e545cc4ae6a037816fd727d63fce16d3626484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966320"
 ---
 # <a name="link-task"></a>링크 작업
 
-Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe* ) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
+Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options), [명령줄에서 MSBuild 사용](/cpp/build/msbuild-visual-cpp) 및 [명령줄에서 Microsoft C++ 도구 집합 사용](/cpp/build/building-on-the-command-line)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -553,7 +553,7 @@ Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COF
 
 - **MinimumRequiredVersion**
 
-  선택적 **문자열** 매개 변수입니다.
+  선택적 **String** 매개 변수입니다.
 
   하위 시스템의 최소 필수 버전을 지정합니다. 인수는 0에서 65535 사이의 10진수입니다.
 
@@ -741,7 +741,7 @@ Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COF
 
 - **SubSystem**
 
-  선택적 **문자열** 매개 변수입니다.
+  선택적 **String** 매개 변수입니다.
 
   실행 환경을 지정합니다.
 
@@ -811,7 +811,7 @@ Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COF
 
 - **TargetMachine**
 
-  선택적 **문자열** 매개 변수입니다.
+  선택적 **String** 매개 변수입니다.
 
   프로그램 또는 DLL에 대한 대상 플랫폼을 지정합니다.
 
@@ -853,7 +853,7 @@ Microsoft C++ 링커 도구 *link.exe* 를 래핑합니다. 링커 도구는 COF
 
 - **TrackerLogDirectory**
 
-  선택적 **문자열** 매개 변수입니다.
+  선택적 **String** 매개 변수입니다.
 
   추적기 로그의 디렉터리를 지정합니다.
 

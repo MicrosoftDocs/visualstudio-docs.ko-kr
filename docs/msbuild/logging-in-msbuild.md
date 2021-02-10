@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: afbb79e2ce8ebdccc68def6ca4c42fde85c11bf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966255"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 로그인
 
