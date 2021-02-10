@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940347"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 요소 (부트스트래퍼)
 `Package`요소는 패키지 파일 내의 최상위 XML 요소입니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```xml
 <Package
@@ -145,11 +145,11 @@ ms.locfileid: "94350740"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  `Package`요소가 필요 합니다. 여기에는 다음과 같은 특성이 있습니다.
 
-| 특성 | 설명 |
+| attribute | Description |
 |--------------------| - |
 | `Culture` | 필수 사항입니다. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 `Strings` 설치 중에 제품 이름 및 오류 메시지에 대 한 문화권별 문자열을 나열 하는 요소에 대 한 키입니다. |
 | `Name` | 필수 사항입니다. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름입니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 이 특성은 요소에 대 한 키로 `Strings` , `String` 및 속성이 `Name` `Culture` `Name` 의 및 속성과 일치 하도록 설정 된 `Culture` 요소를 `Package` 포함 해야 합니다. |
-| `LicenseAgreement` | 선택 사항입니다. EULA (End-User 사용권 계약)를 포함 하는 배포 패키지의 파일 이름을 지정 합니다.  이 파일은 일반 텍스트 ( *.txt* ) 또는 서식 있는 텍스트 형식일 수 있습니다. ( *.rtf* ) |
+| `LicenseAgreement` | 선택 사항입니다. EULA (End-User 사용권 계약)를 포함 하는 배포 패키지의 파일 이름을 지정 합니다.  이 파일은 일반 텍스트 (*.txt*) 또는 서식 있는 텍스트 형식일 수 있습니다. (*.rtf*) |
 
 ## <a name="example"></a>예제
  다음 코드 예제에서는 .NET Framework 2.0를 재배포 하기 위한 전체 패키지 파일을 보여 줍니다.

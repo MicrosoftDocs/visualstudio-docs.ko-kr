@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940529"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>방법: SignTool.exe를 사용하여 설치 파일에 서명(ClickOnce)
-*SignTool.exe* 를 사용하여 설치 프로그램( *setup.exe* )에 서명을 할 수 있습니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
+*SignTool.exe* 를 사용하여 설치 프로그램(*setup.exe*)에 서명을 할 수 있습니다. 이 프로세스를 수행하면 최종 사용자 컴퓨터에 훼손된 파일이 설치되지 않습니다.
 
  ClickOnce는 기본적으로 서명된 매니페스트 및 서명된 설치 프로그램을 포함합니다. 그러나 설치 프로그램의 매개 변수를 나중에 변경하려는 경우 설치 프로그램에 나중에 서명해야 합니다. 설치 프로그램에 서명을 한 후에 매개 변수를 변경하면 서명이 손상됩니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "94350974"
 
 1. 매니페스트에 서명하는 데 사용할 인증서를 개발 컴퓨터에 설치합니다.
 
-2. **솔루션 탐색기** 에서 프로젝트를 선택 합니다.
+2. **솔루션 탐색기** 에서 프로젝트를 선택합니다.
 
 3. **프로젝트** 메뉴에서 *ProjectName* **속성** 을 클릭합니다.
 

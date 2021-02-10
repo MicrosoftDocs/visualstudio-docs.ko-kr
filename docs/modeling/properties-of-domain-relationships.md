@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941335"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
 다음 표의 속성은 도메인 관계와 연결 되어 있습니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
-|속성|설명|기본값|
+|속성|Description|기본값|
 |-|-|-|
 |액세스 한정자|도메인 관계 (또는)에 대 한 액세스 수준입니다 `public` `internal` .|`public`|
 |사용자 지정 특성|도메인 관계에서 생성 되는 소스 코드 클래스에 특성을 추가 하는 데 사용 됩니다.|\<none>|
@@ -31,10 +31,10 @@ ms.locfileid: "97362459"
 |중복 허용|인 경우 `True` 동일한 두 요소 간에 도메인 관계의 중복 링크를 만들 수 있습니다.|`False`|
 |기본 관계|도메인 관계가 파생 된 경우 도메인 관계의 기본 관계입니다.|\<none>|
 |포함|이면 `True` 도메인 관계가 포함 관계입니다. 인 경우 `False` 관계는 참조 관계입니다.|\<both>|
-|Name|도메인 관계의 이름입니다.|현재 이름|
+|이름|도메인 관계의 이름입니다.|현재 이름|
 |네임스페이스|도메인 관계와 관련 된 네임 스페이스입니다.|현재 네임 스페이스|
 |참고|도메인 관계와 관련 된 비공식 메모입니다.|\<none>|
-|설명|코드를 문서화 하는 데 사용 되 고 생성 된 디자이너의 UI에 사용 되는 설명입니다.|\<none>|
+|Description|코드를 문서화 하는 데 사용 되 고 생성 된 디자이너의 UI에 사용 되는 설명입니다.|\<none>|
 |표시 이름|생성 된 디자이너에서 도메인 관계에 대해 표시 되는 이름입니다.|\<none>|
 |Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none>|
 

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee3beb4bd79c438430ddfc2aac0fc0a5894404b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940191"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 지정 된 형식에 대 한 포인터를 만듭니다.
@@ -47,8 +47,8 @@ int CreatePointerToType(
 `pPtrToTypeField`\
 제한이 새 **Idebugfield** 개체가 나타내는 포인터를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

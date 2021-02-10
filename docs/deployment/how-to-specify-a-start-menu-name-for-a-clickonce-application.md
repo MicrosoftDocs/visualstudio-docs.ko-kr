@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a6ebce0ff3bb7c3040765c1a82f876d0055c4d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a9c9dee27ae78375dcb667bba5157ea84c046073
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940438"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 시작 메뉴 이름 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]온라인 및 오프 라인 사용을 위해 응용 프로그램을 설치 하는 경우 **시작** 메뉴와 **프로그램 추가/제거** 목록에 항목이 추가 됩니다. 기본적으로 표시 이름은 응용 프로그램 어셈블리의 이름과 같지만 **게시 옵션** 대화 상자에서 **제품 이름** 을 설정 하 여 표시 이름을 변경할 수 있습니다.

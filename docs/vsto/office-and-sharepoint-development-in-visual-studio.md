@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cebcb16708e42f8102e2dc235b52a81e16c588c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940906"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio에서 Office 및 SharePoint 개발
   사용자가 [Office 스토어](https://store.office.com/) 또는 조직 카탈로그에서 다운로드하는 간단한 앱 또는 추가 기능이나 컴퓨터에 설치하는 .NET Framework 기반 솔루션을 만들어 Microsoft Office 및 SharePoint를 확장할 수 있습니다.
@@ -59,7 +59,7 @@ ms.locfileid: "97525341"
 
  ![Office용 콘텐츠 앱](../vsto/media/appforoffice.png "Office용 콘텐츠 앱")
 
- **자세한 정보**
+ **자세히 알아보기**
 
 |대상|참조 항목|
 |--------|---------|
@@ -75,7 +75,7 @@ ms.locfileid: "97525341"
 
  ![SharePoint용 Business Contact Manager 앱](../vsto/media/appforsharepoint.png "SharePoint용 Business Contact Manager 앱")
 
- **자세한 정보**
+ **자세히 알아보기**
 
 |대상|참조 항목|
 |--------|---------|
@@ -90,7 +90,7 @@ ms.locfileid: "97525341"
 
  ![PowerPoint 추가 기능 솔루션](../vsto/media/powerpointaddin.png "PowerPoint 추가 기능 솔루션")
 
- **자세한 정보**
+ **자세히 알아보기**
 
 |대상|읽기|
 |--------|----------|
@@ -102,7 +102,7 @@ ms.locfileid: "97525341"
 
  SharePoint 솔루션을 사용하려면 온-프레미스 SharePoint 팜 서버가 필요합니다. SharePoint 솔루션은 관리자가 설치해야 합니다. 또한 이러한 솔루션은 SharePoint에서 실행되므로 서버 성능에 영향을 줄 수 있습니다. 그러나 솔루션을 통해 SharePoint 개체에 보다 심층적으로 액세스할 수 있습니다. 또한 SharePoint 솔루션을 빌드할 때는 .NET Framework와 C# 및 Visual Basic을 사용하여 SharePoint 개체와 상호 작용할 수 있습니다.
 
- **자세한 정보**
+ **자세히 알아보기**
 
 |대상|참조 항목|
 |--------|---------|

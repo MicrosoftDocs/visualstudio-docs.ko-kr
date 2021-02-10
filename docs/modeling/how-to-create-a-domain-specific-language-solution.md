@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941413"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용 하 여 만듭니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 이 절차를 시작 하기 전에 다음 구성 요소를 설치 합니다.
 

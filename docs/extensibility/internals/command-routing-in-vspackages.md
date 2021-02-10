@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d05612f9d15c3670411a7901157570fbb3e315a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939996"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage의 명령 라우팅
 명령은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행 되는 컨텍스트를 기반으로에서 라우팅됩니다. 초기 컨텍스트에서 전역 컨텍스트로 외부로 라우팅됩니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 - [명령 라우팅 알고리즘](../../extensibility/internals/command-routing-algorithm.md)
 
  명령 라우팅 확인 순서를 설명 합니다.

@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d3d1161d488ed4a9e12b7af6b70bf336c9f286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74b9e62b2e442bbab01942f155647f16eae29b09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941660"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 이 인터페이스는 실행 중인 포트를 사용 하 여 디버그할 수 있는 프로그램을 등록 하거나 등록 취소 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortNotify2 : IUnknown
@@ -37,7 +37,7 @@ IDebugPortNotify2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPortNotify2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|실행 중인 포트를 사용 하 여 디버그할 수 있는 프로그램을 등록 합니다.|
 |[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|실행 중인 포트에서 디버그할 수 있는 프로그램의 등록을 취소 합니다.|
@@ -52,6 +52,6 @@ IDebugPortNotify2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940282"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 이 스레드에 대 한 스택 프레임 목록을 검색 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80718847"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT EnumFrameInfo ( 
+HRESULT EnumFrameInfo ( 
    FRAMEINFO_FLAGS        dwFieldSpec,
    UINT                   nRadix,
    IEnumDebugFrameInfo2** ppEnum
@@ -36,7 +36,7 @@ HRESULT EnumFrameInfo ( 
 ```
 
 ```csharp
-int EnumFrameInfo ( 
+int EnumFrameInfo ( 
    enum_FRAMEINFO_FLAGS     dwFieldSpec,
    uint                     nRadix,
    out IEnumDebugFrameInfo2 ppEnum
@@ -53,13 +53,13 @@ int EnumFrameInfo ( 
 `ppEnum`\
 제한이 스택 프레임을 설명 하는 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조 목록을 포함 하는 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  스레드의 프레임은 순서 대로 열거 됩니다. 현재 프레임이 먼저 열거 되 고 가장 오래 된 프레임이 마지막으로 열거 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940867"
 ---
 # <a name="ribbon-overview"></a>리본 개요
   리본은 쉽게 찾을 수 있도록 관련 명령을 구성 하는 방법입니다. 명령은 리본 메뉴에 컨트롤로 표시 됩니다. 컨트롤은 응용 프로그램 창의 위쪽 가장자리에 가로 스트립을 따라 *그룹* 으로 구성 됩니다. 관련 그룹은 탭에서 구성됩니다.

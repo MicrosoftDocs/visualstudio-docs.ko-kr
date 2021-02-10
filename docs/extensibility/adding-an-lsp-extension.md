@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939294"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -221,7 +221,7 @@ namespace MockLanguageExtension
 
 [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) [async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true) 는 궁극적으로 호출 된 메서드를 호출 하 여 호출 합니다. 언어 서버를 시작 하 고이에 대 한 연결을 설정 하는 논리를 포함 합니다. 서버에 쓰고 서버에서 읽기 위한 스트림을 포함 하는 연결 개체를 반환 해야 합니다. 여기에서 throw 되는 모든 예외는 Visual Studio의 정보 표시줄 메시지를 통해 사용자에 게 표시 되 고 표시 됩니다.
 
-### <a name="activation"></a>활성화
+### <a name="activation"></a>정품 인증
 
 언어 클라이언트 클래스를 구현한 후에는 Visual Studio로 로드 되 고 활성화 되는 방법을 정의 하는 두 가지 특성을 정의 해야 합니다.
 
@@ -294,7 +294,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
 
 다음 단계를 수행 하 여 설정에 대 한 지원을 LSP 언어 서비스 확장에 추가 합니다.
 
-1. 설정 및 해당 기본값을 포함 하는 JSON 파일을 프로젝트에 추가 합니다 (예: *MockLanguageExtensionSettings.js*). 예:
+1. 설정 및 해당 기본값을 포함 하는 JSON 파일을 프로젝트에 추가 합니다 (예: *MockLanguageExtensionSettings.js*). 예를 들어:
 
     ```json
     {
@@ -344,7 +344,7 @@ LSP 언어 서버에 대 한 지원을 추가 하는 경우 Visual Studio에서 
 
 1. 사용자가 서버가 소유 하는 파일이 포함 된 작업 영역을 엽니다.
 2. 사용자가 *. vs* 폴더에 *VSWorkspaceSettings.js의* 파일을 추가 합니다.
-3. 사용자가 서버에서 제공 하는 설정에 대 한 줄을 파일 *의VSWorkspaceSettings.js* 에 추가 합니다. 예:
+3. 사용자가 서버에서 제공 하는 설정에 대 한 줄을 파일 *의VSWorkspaceSettings.js* 에 추가 합니다. 예를 들어:
 
     ```json
     {
@@ -500,6 +500,6 @@ Visual Studio의 LSP 기반 언어 서버에 대 한 지원은 [폴더 열기 �
 
 Marketplace 지침은 [여기](walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [다른 언어에 대한 Visual Studio 편집기 지원 추가](../ide/adding-visual-studio-editor-support-for-other-languages.md)

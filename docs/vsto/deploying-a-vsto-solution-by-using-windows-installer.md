@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75c2d97e8cd30bb3cf5605d50e65a68513590647
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939372"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Windows Installer를 사용 하 여 VSTO 솔루션 배포
 
@@ -262,17 +262,17 @@ MSI 패키지를 사용 하 여 추가 기능 또는 솔루션을 설치 하는 
 
 6. **속성** 창에서 다음 속성을 설정 합니다.
    1. **(이름)** 의 값을 설정 하 여 **VSTO 2010 런타임을 검색** 합니다.
-   2. **속성** 의 값을 Vstorunvreststststststststststststv **VSTORUNTIMEREDIST**
+   2. **속성** 의 값을 Vstorunvreststststststststststststv 
    3. **RegKey** 의 값을 **SOFTWARE \\ Microsoft \\ VSTO Runtime Setup \\ v4R** 로 설정 합니다.
    4. **Root** 속성을 **Vsdrrhklm** 로 설정 된 상태로 둡니다.
    5. **Value** 속성을 **Version** 로 변경 합니다.
 
-7. **시작 조건 (Condition1 Addinsetup)** 편집기에서 시작 조건을 선택 **Condition1** 하 고 조건을 마우스 오른쪽 단추로 클릭 한 다음 **속성 창** 을 선택 합니다.
+7. **시작 조건 (Condition1 Addinsetup)** 편집기에서 시작 조건을 선택  하 고 조건을 마우스 오른쪽 단추로 클릭 한 다음 **속성 창** 을 선택 합니다.
 8. 속성 창에서 다음 속성을 설정합니다.
    1. **VSTO 2010 런타임 가용성을 확인** 하려면 **(이름)** 을 설정 합니다.
    2. **조건** 값을 **Vstorunvreststststststststststststststststststv \>**
    3. **InstallURL** 속성은 비워 둡니다.
-   4. **Message** **Visual Studio 2010 Tools for Office Runtime이 설치 되어 있지 않은 메시지를 설정 합니다. Setup.exe를 실행 하 여 추가 기능을 설치 하세요**.
+   4.  **Visual Studio 2010 Tools for Office Runtime이 설치 되어 있지 않은 메시지를 설정 합니다. Setup.exe를 실행 하 여 추가 기능을 설치 하세요**.
 
         ![런타임 가용성 확인 시작 조건에 대 한 속성 창의 스크린샷](media/setup-project-figure-8.jpg)
 
@@ -322,14 +322,14 @@ MSI 패키지를 사용 하 여 추가 기능 또는 솔루션을 설치 하는 
     2. 구성 요소의 값을 사용 하는 Office 구성 요소에 대 한 구성 요소 **Id로 변경** 합니다. 아래 표에서 구성 요소 Id 목록을 찾을 수 있습니다 (예: **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**).
     3. **Property** 속성의 값을 **hassharedpia** 로 변경 합니다.
 
-4. **시작 조건 (Condition1 Addinsetup)** 편집기에서 마우스 오른쪽 단추를 클릭 **Condition1** 한 다음 **속성 창** 을 클릭 하 여 시작 조건의 속성을 표시 합니다.
+4. **시작 조건 (Condition1 Addinsetup)** 편집기에서 마우스 오른쪽 단추를 클릭  한 다음 **속성 창** 을 클릭 하 여 시작 조건의 속성을 표시 합니다.
 
 5. **Condition1** 의 다음 속성을 변경 합니다.
 
     1. **(이름)** 을 변경 하 여 **Office 공유 PIA 사용 가능** 여부를 확인 합니다.
     2. **조건을** **hassharedpia** 로 변경 합니다.
     3. **InstallUrl** 을 비워 둡니다.
-    4. **Message** **Excel과의 상호 작용을 위한 필수 구성 요소로 메시지를 변경 하는 것은 불가능 합니다. setup.exe를 실행 하십시오**.
+    4.  **Excel과의 상호 작용을 위한 필수 구성 요소로 메시지를 변경 하는 것은 불가능 합니다. setup.exe를 실행 하십시오**.
 
     ![Office 공유 PIA 시작 조건 확인에 대 한 속성 창의 스크린샷](media/setup-project-figure-10.jpg)
   
@@ -524,7 +524,7 @@ Visual Studio 솔루션에 사용자 지정 작업 프로젝트를 추가 하려
     **그림 13: Excel 문서 솔루션 언로드**
 
 4. **솔루션 탐색기** 에서 마우스 오른쪽 단추를 클릭 **하 고,** 마우스 오른쪽 단추로 클릭 하 여 **편집** **합니다.**
-5. **PropertyGroup** 요소 **ExcelWorkbookProject** 내에서 **솔루션 id** 요소를 찾습니다.
+5. **PropertyGroup** 요소  내에서 **솔루션 id** 요소를 찾습니다.
 6. 이 요소의 GUID 값을 복사 합니다.
 
     ![솔루션 Id 검색](media/setup-project-figure-17.jpg)

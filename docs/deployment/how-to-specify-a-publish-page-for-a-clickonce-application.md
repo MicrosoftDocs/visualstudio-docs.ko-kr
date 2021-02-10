@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf70f5ffdd81688943892c06fdf98aae73d6c57
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f58b7d8d4244f7c429c3866bf76c514bf24164ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940451"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>방법: ClickOnce 애플리케이션의 게시 페이지 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 기본 웹 페이지 (publish.htm)가 생성 되어 응용 프로그램과 함께 게시 됩니다. 이 페이지에는 응용 프로그램의 이름, 응용 프로그램을 설치 하는 링크 및/또는 모든 필수 구성 요소 및 설명 하는 도움말 항목에 대 한 링크가 포함 되어 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 있습니다. 프로젝트의 **게시 페이지** 속성을 사용 하 여 응용 프로그램에 대 한 웹 페이지의 이름을 지정할 수 있습니다 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .

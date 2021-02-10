@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 335f41abf0ca2914ca603f7adbce7dea98eee028
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940490"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>방법: 기술 지원을 위한 링크 지정
 응용 프로그램을 게시할 때 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **지원 URL** 속성은 사용자가 응용 프로그램에 대 한 정보를 얻기 위해 이동할 수 있는 웹 페이지 또는 파일 공유를 식별 합니다. 이 속성은 선택 사항입니다. 제공 된 경우 URL은 응용 프로그램의 항목 **추가/제거** 대화 상자에 표시 됩니다.

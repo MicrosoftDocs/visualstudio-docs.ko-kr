@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ad65ff6fcebb18ac1b8852c08195e9a8b062749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93aae8aea0216adfff533aa9aacd3c5c925e362c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940295"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 보류 중인 중단점의 상태를 가져옵니다.
@@ -29,13 +29,13 @@ ms.locfileid: "80725745"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetState( 
+HRESULT GetState( 
    PENDING_BP_STATE_INFO* pState
 );
 ```
 
 ```csharp
-int GetState( 
+int GetState( 
    PENDING_BP_STATE_INFO[] pState
 );
 ```
@@ -44,9 +44,9 @@ int GetState( 
 `pState`\
 [in, out] 보류 중인이 중단점에 대 한 설명으로 채워진 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 구조체입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

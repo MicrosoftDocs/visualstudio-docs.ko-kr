@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940128"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 어셈블리의 명령 계약
 인터페이스를 통해 명령을 처리 하는 기본 계약은 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 환경에서 메서드를 호출 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 명령이 지원 되는지 여부를 확인 하 고, 지원 되는 경우 상태와 텍스트를 확인 하는 것입니다. 그런 다음 환경에서 메서드를 호출 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 하 여 명령을 실행 합니다.

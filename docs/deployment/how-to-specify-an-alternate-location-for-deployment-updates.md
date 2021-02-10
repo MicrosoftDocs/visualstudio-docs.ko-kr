@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940373"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>방법: 배포 업데이트를 위한 대체 위치 지정
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]처음에 CD 또는 파일 공유에서 응용 프로그램을 설치할 수 있지만 응용 프로그램은 웹에서 정기적으로 업데이트를 확인 해야 합니다. 초기 설치 후 응용 프로그램이 웹에서 자동으로 업데이트 될 수 있도록 배포 매니페스트에서 업데이트에 대 한 대체 위치를 지정할 수 있습니다.

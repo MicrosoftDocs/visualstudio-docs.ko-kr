@@ -14,15 +14,15 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940802"
 ---
 # <a name="threading-support-in-office"></a>Office의 스레딩 지원
   이 문서에서는 Microsoft Office 개체 모델에서 스레딩을 지 원하는 방법에 대 한 정보를 제공 합니다. Office 개체 모델은 스레드로부터 안전 하지 않지만 Office 솔루션에서 여러 스레드로 작업할 수 있습니다. Office 응용 프로그램은 COM (구성 요소 개체 모델) 서버입니다. COM을 사용 하면 클라이언트가 임의의 스레드에서 COM 서버를 호출할 수 있습니다. 스레드로부터 안전 하지 않은 COM 서버의 경우 COM은 동시 호출을 serialize 하는 메커니즘을 제공 하 여 언제 든 지 서버에서 하나의 논리 스레드만 실행 되도록 합니다. 이 메커니즘을 STA (단일 스레드 아파트) 모델 이라고 합니다. 호출은 serialize 되므로 서버가 사용 중이거나 백그라운드 스레드에서 다른 호출을 처리 하는 동안에는 호출자가 차단 될 수 있습니다.

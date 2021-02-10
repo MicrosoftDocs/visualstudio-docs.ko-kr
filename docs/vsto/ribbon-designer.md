@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527995"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940919"
 ---
 # <a name="ribbon-designer"></a>리본 디자이너
   리본 디자이너는 시각적 디자인 캔버스입니다. 리본 디자이너를 사용 하 여 Microsoft Office 응용 프로그램의 리본 메뉴에 사용자 지정 탭, 그룹 및 컨트롤을 추가할 수 있습니다.
@@ -177,14 +177,14 @@ ms.locfileid: "97527995"
 
  모든 컨트롤에 적용 되는 바로 가기 키는 다음 표에 나와 있습니다.
 
-|작업|바로 가기 키|
+|작업|키보드 바로 가기 키|
 |------------|-----------------------|
 |목록의 이전 컨트롤 앞에 컨트롤을 이동 합니다.|**Ctrl** + **Up**<br /><br /> **Ctrl** + **왼쪽**|
 |목록의 다음 컨트롤 뒤에 컨트롤을 이동 합니다.|**Ctrl** + **다운**<br /><br /> **Ctrl** + **오른쪽**|
 |동일한 그룹의 한 컨트롤에서 다른 컨트롤로 선택 영역을 이동 합니다. 드롭다운 패널의 경우 부모 컨트롤과 드롭다운 패널의 컨트롤 사이를 이동 합니다.|**위로**<br /><br /> **아래로**|
 |모든 컨트롤을 앞으로 반복 합니다.|**Tab**|
 |모든 컨트롤을 역순으로 반복 합니다.|**Shift**+**Tab**|
-|선택한 컨트롤 또는 컨트롤 집합을 삭제 합니다.|**삭제**|
+|선택한 컨트롤 또는 컨트롤 집합을 삭제 합니다.|**Delete**|
 |선택한 컨트롤을 복사 합니다.|**Ctrl** + **C**|
 |선택한 컨트롤을 잘라냅니다.|**Ctrl** + **X**|
 |클립보드에서 컨트롤을 붙여넣습니다.|**Ctrl** + **V**|
@@ -193,7 +193,7 @@ ms.locfileid: "97527995"
 
  다음 표에는 Microsoft Office 메뉴, 및에만 적용 되는 바로 가기 키 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> 가 나와 있습니다.
 
-|작업|바로 가기 키|
+|작업|키보드 바로 가기 키|
 |------------|-----------------------|
 |드롭다운 패널이 열려 있고 드롭다운 패널에서 컨트롤이 선택 되어 있는 경우 부모 컨트롤을 선택 합니다.|**왼쪽**|
 |드롭다운 패널이 열려 있고 부모 컨트롤이 선택 되어 있는 경우 드롭다운 패널을 닫습니다.|**왼쪽**|

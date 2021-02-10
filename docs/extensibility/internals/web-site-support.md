@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 141e4acf7db61130de859f38891670e69d3bd640
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940023"
 ---
 # <a name="web-site-support"></a>웹 사이트 지원
 웹 사이트 프로젝트 시스템은 웹 프로젝트를 만드는 프로젝트 시스템입니다. 웹 프로젝트를 사용 하 여 웹 응용 프로그램을 만듭니다. 웹 사이트 프로젝트는 연결 된 코드를 포함 하는 각 웹 페이지에 대해 하나의 실행 파일을 생성 합니다. /App_Code 폴더의 소스 코드 파일에서 추가 실행 파일을 생성 합니다.

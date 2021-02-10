@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2031fd74a10c8725157908eaa906c1963a477526
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940113"
 ---
 # <a name="command-implementation"></a>명령 구현
 VSPackage에서 명령을 구현 하려면 다음 작업을 수행 해야 합니다.

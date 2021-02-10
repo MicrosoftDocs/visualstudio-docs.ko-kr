@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941491"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
@@ -39,7 +39,7 @@ Dsl의 주요 응용 프로그램 중 하나는 프로그램 코드, 구성 파�
 
 이 개요의 나머지 부분에서는 Visual Studio에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>사전 준비 사항
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 

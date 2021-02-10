@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941361"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
 *도메인 속성* 은 값을 보유할 수 있는 모델 요소의 기능입니다. 예를 들어 `Person` 도메인 클래스는 `Name` 및 `BirthDate` 속성을 포함할 수 있습니다. DSL 정의에서 도메인 속성은 다이어그램의 도메인 클래스 상자와 DSL 탐색기의 도메인 클래스 아래에 나열됩니다. 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
@@ -34,7 +34,7 @@ ms.locfileid: "97361523"
 
   다이어그램 또는 DSL 탐색기에서 도메인 속성을 선택하면 속성 창에서 다음 항목을 확인할 수 있습니다. 이러한 항목을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
-|속성|설명|기본값|
+|속성|Description|기본값|
 |-|-|-|
 |**설명**|생성된 디자이너의 UI(사용자 인터페이스)를 문서화하는 데 사용되는 설명입니다.|\<none>|
 |**표시 이름**|이 도메인 속성에 대해 생성된 디자이너에 표시되는 이름입니다. "Song Title"과 같이 공백과 문장 부호를 포함할 수 있습니다.|\<none>|
