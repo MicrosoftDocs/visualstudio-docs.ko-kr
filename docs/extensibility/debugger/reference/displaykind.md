@@ -7,23 +7,23 @@ helpviewer_keywords:
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737257"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953775"
 ---
 # <a name="displaykind"></a>DisplayKind
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에서 가져오고 사용자에 게 표시할 정보의 종류를 나타내는 유효한 값을 열거 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_DisplayKind

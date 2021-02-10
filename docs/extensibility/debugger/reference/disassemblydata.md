@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953840"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 IDE (통합 개발 환경)에서 표시할 하나의 디스어셈블리 명령을 설명 합니다.
@@ -46,7 +46,7 @@ typedef struct tagDisassemblyData {
 ```
 
 ```csharp
-public struct DisassemblyData { 
+public struct DisassemblyData { 
     public uint          dwFields;
     public string        bstrAddress;
     public string        bstrAddressOffset;
@@ -63,7 +63,7 @@ public struct DisassemblyData { 
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="members"></a>구성원
 `dwFields`\
 입력 하는 필드를 지정 하는 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 상수입니다.
 
@@ -96,7 +96,7 @@ public struct DisassemblyData { 
 
 파일 이름으로 표현할 수 없는 텍스트 문서의 경우 `bstrDocumentUrl` 은 문서에 대 한 고유 식별자이 고, 디버그 엔진은 [getdocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) 메서드를 구현 해야 합니다.
 
-이 필드에는 체크섬에 대 한 추가 정보가 포함 될 수도 있습니다. 자세한 내용은 설명 부분을 참조 하십시오.
+이 필드에는 체크섬에 대 한 추가 정보가 포함 될 수도 있습니다. 자세한 내용은 설명을 참조하세요.
 
 `dwByteOffset`\
 명령이 코드 줄의 시작 부분부터의 바이트 수입니다.
@@ -113,7 +113,7 @@ public struct DisassemblyData { 
 
 필드에 `dwFlags` `DF_DOCUMENT_CHECKSUM` 플래그가 설정 되어 있으면 추가 체크섬 정보는 필드가 가리키는 문자열 뒤에 옵니다 `bstrDocumentUrl` . 특히 null 문자열 종결자 뒤에는 체크섬 알고리즘을 식별 하는 GUID와 체크섬의 바이트 수를 나타내는 4 바이트 값이 차례로 오고 그 뒤에 체크섬 바이트가 나옵니다. 에서이 필드를 인코드 및 디코딩하는 방법에 대 한이 항목의 예제를 참조 하세요 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 `bstrDocumentUrl`플래그가 설정 된 경우이 필드에는 문자열이 아닌 추가 정보가 포함 될 수 있습니다 `DF_DOCUMENT_CHECKSUM` . 이 인코딩된 문자열을 만들고 읽는 프로세스는에서 간단 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] 합니다. 그러나에서는 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 다른 문제가 있습니다. 관심이 있는 사용자를 위해 다음 예제에서는에서 인코딩된 문자열을 만드는 한 가지 방법과 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 에서 인코딩된 문자열을 디코딩하는 한 가지 방법을 보여 줍니다 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
 ```csharp
@@ -226,8 +226,8 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>추가 정보
-- [클래스 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
+## <a name="see-also"></a>참고 항목
+- [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

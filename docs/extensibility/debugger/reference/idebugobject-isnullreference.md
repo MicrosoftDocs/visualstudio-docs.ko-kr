@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953710"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 이 개체가 null 참조 인지 여부를 테스트 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "80726521"
 ## <a name="syntax"></a>구문
 
 ```cpp
-HRESULT IsNullReference( 
+HRESULT IsNullReference( 
    BOOL* pfIsNull
 );
 ```
@@ -43,11 +43,11 @@ int IsNullReference(
 `pfIsNull`\
 제한이 `TRUE`이 개체가 null 참조 이면 0이 아닌 값을 반환 하 고 그렇지 않으면 0 ()을 반환 `FALSE` 합니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
  Null 참조는 빈 개체 또는에 할당 되지 않은 개체를 의미 합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
