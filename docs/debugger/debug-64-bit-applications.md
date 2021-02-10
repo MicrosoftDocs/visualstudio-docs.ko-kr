@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 18ea2ade8ed87bfc58280bf5b2dc45c633eb2055
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857599"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.

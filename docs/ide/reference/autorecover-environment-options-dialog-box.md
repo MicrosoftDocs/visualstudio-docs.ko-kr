@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836490"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
 
@@ -38,10 +38,10 @@ ms.locfileid: "95871355"
 
 ::: moniker range="vs-2019"
 
-편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 Visual Studio 2019 버전 16.2 이상에서는 **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname]_* _에 파일 사본이 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 Visual Studio에서는 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
+편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 Visual Studio 2019 버전 16.2 이상에서는 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname]*** 에 파일 사본이 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 Visual Studio에서는 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
 
 > [!NOTE]
-> Visual Studio 2019 버전 16.1 이상을 사용하는 경우 파일 위치는 _%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]*입니다. 자세한 내용은 [Visual Studio 2019 릴리스 정보 기록](/visualstudio/releases/2019/release-notes-history/) 페이지를 참조하세요.
+> Visual Studio 2019 버전 16.1 이상을 사용하는 경우 파일 위치는 *%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]* 입니다. 자세한 내용은 [Visual Studio 2019 릴리스 정보 기록](/visualstudio/releases/2019/release-notes-history/) 페이지를 참조하세요.
 
 ::: moniker-end
 

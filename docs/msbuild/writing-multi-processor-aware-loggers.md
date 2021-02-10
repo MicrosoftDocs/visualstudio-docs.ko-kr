@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847988"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>다중 프로세서 인식 로거 작성
 

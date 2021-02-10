@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 059263f06421fee3c90f2471df4c8b2c7bf8fc86
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f46020dc8423da617deb8f4f70c2a159b4a32014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851545"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 리터럴과 XML 스키마 탐색기와의 통합
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 61378b697b8cf2d50851926bb9f9b64b50878a59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857944"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 

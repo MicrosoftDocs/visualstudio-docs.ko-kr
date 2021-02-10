@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b18ad00c3be8c3684551f28bc170dbd4a8428533
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 17a4e10864776540c176fd6911917071aa42c656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860869"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 지시 파일
 
-지시( *.rsp* ) 파일은 *MSBuild.exe* 명령줄 스위치를 포함하는 텍스트 파일입니다. 각 스위치가 별도 줄에 있거나 모든 스위치가 한 줄에 있을 수 있습니다. 주석 줄의 앞에 **#** 기호가 붙습니다. **@** 스위치는 다른 지시 파일을 *MSBuild.exe* 에 전달하는 데 사용됩니다.
+지시(*.rsp*) 파일은 *MSBuild.exe* 명령줄 스위치를 포함하는 텍스트 파일입니다. 각 스위치가 별도 줄에 있거나 모든 스위치가 한 줄에 있을 수 있습니다. 주석 줄의 앞에 **#** 기호가 붙습니다. **@** 스위치는 다른 지시 파일을 *MSBuild.exe* 에 전달하는 데 사용됩니다.
 
 ## <a name="msbuildrsp"></a>MSBuild.rsp
 

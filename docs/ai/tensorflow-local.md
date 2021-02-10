@@ -4,19 +4,19 @@ description: 'AI Tools for Visual Studio에서 로컬로 tensorflow 모드 실�
 keywords: ai, visual studio, tensorflow, 로컬
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841382"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>로컬로 tensorflow 모델 학습
 
@@ -44,7 +44,7 @@ TensorFlow, CNTK, Theano 등에 대한 심층 학습을 시작하기 위해 이 
 
 ## <a name="open-solution-and-train-model"></a>솔루션을 열고 모델 학습
 
-- Visual Studio를 시작하고 **파일 > 열기 > 프로젝트/솔루션**을 차례로 선택합니다.
+- Visual Studio를 시작하고 **파일 > 열기 > 프로젝트/솔루션** 을 차례로 선택합니다.
 
 - 다운로드한 샘플 리포지토리에서 **Tensorflow Examples** 폴더를 선택하고 **TensorflowExamples.sln** 파일을 엽니다.
 
@@ -52,9 +52,9 @@ TensorFlow, CNTK, Theano 등에 대한 심층 학습을 시작하기 위해 이 
 
    ![솔루션 열기](media/tensorflow-local/open-solution.png)
 
-- **솔루션 탐색기**에서 MNIST 프로젝트를 찾아 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.
+- **솔루션 탐색기** 에서 MNIST 프로젝트를 찾아 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정** 을 선택합니다.
 
-- **시작**을 클릭합니다.
+- **시작** 을 클릭합니다.
 
 - 출력은 콘솔에 인쇄됩니다.
 

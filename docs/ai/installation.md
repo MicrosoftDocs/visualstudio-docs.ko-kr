@@ -4,18 +4,18 @@ description: Visual Studio용 AI 도구를 설치하는 방법을 설명합니�
 keywords: AI, Visual Studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841447"
 ---
 # <a name="installation"></a>설치
 
@@ -27,14 +27,14 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
 
-1. **도구** > **확장 및 업데이트**를 선택합니다.
+1. **도구** > **확장 및 업데이트** 를 선택합니다.
 
    ![Visual Studio의 확장 및 업데이트 메뉴](media/installation/extensions.png)
 
-2. **확장 및 업데이트** 대화 상자의 왼쪽에서 **온라인**을 선택합니다.
+2. **확장 및 업데이트** 대화 상자의 왼쪽에서 **온라인** 을 선택합니다.
 3. 오른쪽 위에 있는 검색 상자에 “AI 도구”를 입력합니다.
-4. 결과에서 **Visual Studio Tools for AI**를 선택합니다.
-5. **다운로드**를 선택합니다.
+4. 결과에서 **Visual Studio Tools for AI** 를 선택합니다.
+5. **다운로드** 를 선택합니다.
 
 ## <a name="prepare-your-local-machine"></a>로컬 머신 준비
 로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 필수 구성 요소가 설치되어 있는지 확인합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 있는지 확인하는 작업도 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch, Chainer 등)를 설치했는지도 확인합니다.
@@ -117,7 +117,7 @@ Python은 확장을 통해 Visual Studio에서 완전히 지원됩니다.
 
 ### <a name="numpy-and-scipy"></a>NumPy 및 SciPy
 
-- **NumPy**는 작은 다차원 배열 처리를 위한 대규모 속도 저하 없이 임의 레코드의 대형 다차원 배열을 효율적으로 조작하도록 설계된 범용 배열 처리 패키지입니다.
+- **NumPy** 는 작은 다차원 배열 처리를 위한 대규모 속도 저하 없이 임의 레코드의 대형 다차원 배열을 효율적으로 조작하도록 설계된 범용 배열 처리 패키지입니다.
 
 - **SciPy("싸이파이"로 읽음)** 는 NumPy 기반의 수학, 과학, 공학용 오픈 소스 소프트웨어입니다. 버전 1.0.0부터 SciPy에는 Windows용으로 미리 작성된 공식 휠 패키지가 있습니다.
 
@@ -156,7 +156,7 @@ CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](/cognitiv
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 [기호 및 명령적 프로그래밍](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)을 **혼합**하여 효율성과 생산성을 극대화할 수 있습니다.
+[Apache MXNet(인큐베이팅)](https://mxnet.incubator.apache.org/)은 효율성과 유연성을 위해 설계된 심층 학습 프레임워크입니다. 이를 통해 [기호 및 명령적 프로그래밍](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)을 **혼합** 하여 효율성과 생산성을 극대화할 수 있습니다.
 
 MXNet을 설치하려면 터미널에서 다음 명령을 실행합니다.
 
@@ -206,7 +206,7 @@ PyTorch를 설치하려면 터미널에서 다음 명령을 실행합니다.
   아직 공식 휠 패키지가 없습니다. [Anaconda](https://anaconda.org/pytorch/repo?type=all) 또는 [캘리포니아 대학교](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)에서 타사 패키지를 다운로드할 수 있습니다.
 
   - 홈 디렉터리(예: *C:\Users\test\pytorch*)에 압축을 풉니다.
-  - *C:\Users\test\pytorch\Lib\site-packages*를 %PYTHONPATH% 환경 변수에 추가합니다.
+  - *C:\Users\test\pytorch\Lib\site-packages* 를 %PYTHONPATH% 환경 변수에 추가합니다.
 
     ```bash
     pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl

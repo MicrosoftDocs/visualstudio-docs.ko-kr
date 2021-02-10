@@ -6,18 +6,18 @@ ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0aafcb1740f0e17234d2e4da38630c1416c44e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841948"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 

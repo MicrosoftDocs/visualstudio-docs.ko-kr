@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be73b8392f6b92bf48bd9150197be9bf8fe380dd
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865828"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 

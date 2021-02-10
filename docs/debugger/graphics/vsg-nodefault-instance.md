@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed60fb5262a6af07966ff974b8535ae299f3fc51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861415"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 프로그래밍 캡처 인터페이스를 제공하는 [VsgDbg Class](vsgdbg-class.md) 클래스의 기본 인스턴스가 제공되는지 여부를 존재별로 정의합니다.

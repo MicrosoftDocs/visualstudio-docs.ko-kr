@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75850060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851844"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -76,13 +76,13 @@ SSL 인증서를 Windows에서 수동으로 설치해야 합니다. 다음 지�
 인증서를 가져온 후 다음 지침에 설명된 대로 `NETWORK SERVICE` 계정에 프라이빗 키를 읽을 수 있는 권한을 부여합니다. `NETWORK_SERVICE`는 서버 컴퓨터에 들어오는 SSL 연결을 종료하는 서비스인 R Services Broker를 실행하는 데 사용되는 계정입니다.
 
 1. 관리자 명령 프롬프트에서 *certlm.msc*(인증서 관리자)를 실행합니다.
-1. **개인** > **인증서**를 확장하고, 인증서를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **프라이빗 키 관리**를 선택합니다.
-1. 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**에서 **프라이빗 키 관리** 명령을 선택합니다.
-1. 대화 상자가 나타나면 **추가**를 선택하고 계정 이름으로 `NETWORK SERVICE`를 입력합니다.
+1. **개인** > **인증서** 를 확장하고, 인증서를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **프라이빗 키 관리** 를 선택합니다.
+1. 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업** 에서 **프라이빗 키 관리** 명령을 선택합니다.
+1. 대화 상자가 나타나면 **추가** 를 선택하고 계정 이름으로 `NETWORK SERVICE`를 입력합니다.
 
     ![프라이빗 키 관리 대화 상자에서 NETWORK_SERVICE 추가](media/workspaces-remote-manage-private-key-dialog.png)
 
-1. **확인**을 두 번 선택하여 대화 상자를 닫고 변경 내용을 커밋합니다.
+1. **확인** 을 두 번 선택하여 대화 상자를 닫고 변경 내용을 커밋합니다.
 
 ## <a name="install-an-ssl-certificate-on-ubuntu"></a>Ubuntu에 SSL 인증 설치
 
@@ -115,7 +115,7 @@ SSL 인증서를 Windows에서 수동으로 설치해야 합니다. 다음 지�
 
 ### <a name="configure-rtvs-daemon"></a>RTVS 디먼 구성
 
-SSL 인증서 파일 경로(PFX 경로)는 */etc/rtvs/rtvsd.config.json*에 설정되어야 합니다. `X509CertificateFile` 및 `X509CertificatePassword`를 각각 파일 경로 및 암호로 업데이트합니다.
+SSL 인증서 파일 경로(PFX 경로)는 */etc/rtvs/rtvsd.config.json* 에 설정되어야 합니다. `X509CertificateFile` 및 `X509CertificatePassword`를 각각 파일 경로 및 암호로 업데이트합니다.
 
 ```json
 {
@@ -148,12 +148,12 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
     - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* 에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
     - `RHostBrokerService` 및 `RUserProfileService`를 설치하고 자동으로 시작되도록 구성합니다.
     - `seclogon` 서비스가 자동으로 시작되도록 구성합니다.
-    - *Microsoft.R.Host.exe* 및 *Microsoft.R.Host.Broker.exe*를 기본 포트 5444의 방화벽 인바운드 규칙에 추가합니다.
+    - *Microsoft.R.Host.exe* 및 *Microsoft.R.Host.Broker.exe* 를 기본 포트 5444의 방화벽 인바운드 규칙에 추가합니다.
 
 컴퓨터가 다시 부팅되면 R Services가 자동으로 시작됩니다.
 
-- **R Host Broker Service**에서는 Visual Studio와 R 코드가 실행되는 컴퓨터의 프로세스 간의 모든 HTTPS 트래픽을 처리합니다.
-- **R 사용자 프로필 서비스**에서는 Windows 사용자 프로필 생성을 처리하는 권한 있는 구성 요소입니다. 새 사용자가 R 서버 컴퓨터에 처음 로그온할 때 서비스가 호출됩니다.
+- **R Host Broker Service** 에서는 Visual Studio와 R 코드가 실행되는 컴퓨터의 프로세스 간의 모든 HTTPS 트래픽을 처리합니다.
+- **R 사용자 프로필 서비스** 에서는 Windows 사용자 프로필 생성을 처리하는 권한 있는 구성 요소입니다. 새 사용자가 R 서버 컴퓨터에 처음 로그온할 때 서비스가 호출됩니다.
 
 이러한 서비스는 서비스 관리 콘솔(*compmgmt.msc*)에서 확인할 수 있습니다.
 
@@ -211,14 +211,14 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 - `Microsoft.R.Host.Broker` 및 `Microsoft.R.Host`에 대한 방화벽 규칙이 포트 5444의 들어오는 연결과 나가는 연결에 둘 다 사용되지 않습니다.
 - `CN=<remote-machine-name>`을 가진 SSL 인증서가 설치되지 않았습니다.
 
-위와 같이 모두 변경한 후 컴퓨터를 다시 시작합니다. 그런 다음, 작업 관리자(서비스 탭) 또는 *services.msc*를 통해 `RHostBrokerService` 및 `RUserProfileService`가 실행 중인지 확인합니다.
+위와 같이 모두 변경한 후 컴퓨터를 다시 시작합니다. 그런 다음, 작업 관리자(서비스 탭) 또는 *services.msc* 를 통해 `RHostBrokerService` 및 `RUserProfileService`가 실행 중인지 확인합니다.
 
 **질문: R 서버에 연결하는 동안 R 대화형 창에 “401 액세스 거부”가 표시되는 이유는 무엇인가요?**
 
 가능한 두 가지 이유는 다음과 같습니다.
 
 - `NETWORK SERVICE` 계정에는 SSL 인증서의 프라이빗 키에 대한 액세스 권한이 없을 수 있습니다. 이전 지침에 따라 `NETWORK SERVICE`에 프라이빗 키에 대한 액세스 권한을 부여합니다.
-- `seclogon` 서비스가 실행 중인지 확인합니다. *services.msc*를 사용하여 `seclogon`이 자동으로 시작되도록 구성합니다.
+- `seclogon` 서비스가 실행 중인지 확인합니다. *services.msc* 를 사용하여 `seclogon`이 자동으로 시작되도록 구성합니다.
 
 **질문: R 서버에 연결하는 동안 R 대화형 창에 “404 찾을 수 없음”이 표시되는 이유는 무엇인가요?**
 
@@ -230,4 +230,4 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 **질문: 이러한 솔루션을 모두 시도했는데 여전히 작동하지 않습니다. 이제 무엇을 해야 할까요?**
 
-*C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*에서 로그 파일을 찾습니다. 이 폴더에는 실행된 R Broker Service의 각 인스턴스에 대한 개별 로그 파일이 들어 있습니다. 서비스를 다시 시작할 때마다 새 로그 파일이 생성됩니다. 가장 최근 로그 파일에서 발생할 수 있는 문제에 대한 단서를 확인합니다.
+*C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp* 에서 로그 파일을 찾습니다. 이 폴더에는 실행된 R Broker Service의 각 인스턴스에 대한 개별 로그 파일이 들어 있습니다. 서비스를 다시 시작할 때마다 새 로그 파일이 생성됩니다. 가장 최근 로그 파일에서 발생할 수 있는 문제에 대한 단서를 확인합니다.

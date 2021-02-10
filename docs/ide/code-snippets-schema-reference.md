@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 22a5d4543548c8ac927487c9f4e2c9d95ea3487e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842149"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -153,7 +153,7 @@ Visual Studio Code 파일에 삽입할 수 있는 여러 IntelliSense 코드 조
 </CodeSnippet>
 ```
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Format`|필수 특성입니다. 코드 조각의 스키마 버전을 지정합니다. Format 특성은 x.x.x 구문의 문자열이어야 합니다. 여기서 각 "x"는 버전 번호의 숫자 값을 나타냅니다. Visual Studio에서는 이해할 수 없는 `Format` 특성을 갖는 코드 조각을 무시합니다.|
 
@@ -405,7 +405,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Literal>
 ```
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 
@@ -450,7 +450,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 </Object>
 ```
 
-|attribute|설명|
+|특성|설명|
 |---------------|-----------------|
 |`Editable`|선택적 `Boolean` 특성입니다. 코드 조각을 삽입한 이후에 리터럴을 편집할 수 있는지 여부를 지정합니다. 이 특성의 기본값은 `true`입니다.|
 

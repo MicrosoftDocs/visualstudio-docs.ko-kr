@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841971"
 ---
 # <a name="code-snippets"></a>코드 조각
 

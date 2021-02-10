@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IntelliSense [C#]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862065"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 

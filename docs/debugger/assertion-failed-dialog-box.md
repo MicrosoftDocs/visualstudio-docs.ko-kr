@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10f26d61eddb0efb47e22722a039f73fec2b404c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857970"
 ---
 # <a name="assertion-failed-dialog-box"></a>어설션 오류 대화 상자
 어설션 문은 프로그램의 특정 지점에서 true를 유지하도록 조건을 지정합니다. 조건이 true를 유지하지 않으면 어설션 오류가 발생하고 프로그램 실행이 중단되며 이 대화 상자가 나타납니다.

@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850176"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
-일반적으로 엔터프라이즈 관리자는 클라이언트 워크스테이션에 배포할 네트워크 설치 지점을 만듭니다. Visual Studio는 초기 설치에 대한 파일과 모든 제품 업데이트를 단일 폴더에 캐시할 수 있도록 설계했습니다. _레이아웃 만들기_라고도 함),
+일반적으로 엔터프라이즈 관리자는 클라이언트 워크스테이션에 배포할 네트워크 설치 지점을 만듭니다. Visual Studio는 초기 설치에 대한 파일과 모든 제품 업데이트를 단일 폴더에 캐시할 수 있도록 설계했습니다. _레이아웃 만들기_ 라고도 함),
 
 클라이언트 워크스테이션에서는 최신 제공 업데이트로 업데이트되지 않은 경우에도 설치를 관리하는 데 같은 네트워크 위치를 사용할 수 있습니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "88992357"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio 부트스트래퍼 다운로드
 
-원하는 Visual Studio 버전에 해당하는 부트스트래퍼 파일을 다운로드합니다. **저장**을 선택한 다음 **폴더 열기**를 선택합니다.
+원하는 Visual Studio 버전에 해당하는 부트스트래퍼 파일을 다운로드합니다. **저장** 을 선택한 다음 **폴더 열기** 를 선택합니다.
 
 ::: moniker range="vs-2017"
 
@@ -47,7 +47,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 |Visual Studio Professional | **vs_professional.exe** |
 |Visual Studio Build Tools   | **vs_buildtools.exe** |
 
-이 밖에 지원되는 부트스트래퍼에는 **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**, **vs_testprofessional.exe**가 있습니다.
+이 밖에 지원되는 부트스트래퍼에는 **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**, **vs_testprofessional.exe** 가 있습니다.
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 ::: moniker-end
 
 >[!TIP]
->이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ## <a name="create-an-offline-installation-folder"></a>오프라인 설치 관리자 폴더 만들기
 
@@ -260,9 +260,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)에서 제공되는 Visual Studio 부트스트래퍼는 실행될 때마다 사용 가능한 최신 Visual Studio 릴리스를 다운로드하여 설치합니다.
 >
-> 따라서 오늘 Visual Studio *부트스트래퍼*를 다운로드하여 지금부터 6개월 동안 실행하면 이 부트스트래퍼를 실행하는 시점의 Visual Studio 릴리스가 설치됩니다.
+> 따라서 오늘 Visual Studio *부트스트래퍼* 를 다운로드하여 지금부터 6개월 동안 실행하면 이 부트스트래퍼를 실행하는 시점의 Visual Studio 릴리스가 설치됩니다.
 >
-> 그러나 *레이아웃*을 만든 다음, 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 레이아웃에 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
+> 그러나 *레이아웃* 을 만든 다음, 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 레이아웃에 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
 
 ::: moniker-end
 
@@ -271,9 +271,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads)에서 제공되는 Visual Studio 부트스트래퍼는 실행될 때마다 사용 가능한 최신 Visual Studio 릴리스를 다운로드하여 설치합니다.
 >
-> 따라서 오늘 Visual Studio *부트스트래퍼*를 다운로드하여 지금부터 6개월 동안 실행하면 이 부트스트래퍼를 실행하는 시점의 Visual Studio 릴리스가 설치됩니다.
+> 따라서 오늘 Visual Studio *부트스트래퍼* 를 다운로드하여 지금부터 6개월 동안 실행하면 이 부트스트래퍼를 실행하는 시점의 Visual Studio 릴리스가 설치됩니다.
 >
-> 그러나 *레이아웃*을 만든 다음, 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 레이아웃에 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
+> 그러나 *레이아웃* 을 만든 다음, 설치하면 레이아웃에 있는 특정 버전의 Visual Studio가 레이아웃에 설치됩니다. 온라인에 더 새로운 버전이 있더라도 레이아웃에 있는 Visual Studio 버전이 설치됩니다.
 
 ::: moniker-end
 

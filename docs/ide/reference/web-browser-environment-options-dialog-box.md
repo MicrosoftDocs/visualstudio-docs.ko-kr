@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2898984896ef96f9e7767e0c56ad58c92be42f54
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: c87077005ae2ebbcc8fba92c9f1dc09f17bb3157
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836217"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>옵션 대화 상자: 환경 \> 웹 브라우저
 

@@ -4,18 +4,18 @@ description: Visual Studio Tools for AI를 사용하여 기존 Python 코드를 
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62b0a5f3fac00aba0648008a47d35e0adc89f4
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7746d8dd39bb4400a7779ad43e489cf6e7475fb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841629"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>기존 코드로 AI 프로젝트를 만듭니다.
 
@@ -26,7 +26,7 @@ ms.locfileid: "92099260"
 
 1. Visual Studio를 시작하고 **[파일] > [새로 만들기] > [프로젝트]** 를 선택합니다.
 
-2. **새 프로젝트** 대화 상자에서 " **AI 도구** "를 검색하고 " **기존 Python 코드에서** " 템플릿을 선택하고 프로젝트의 이름 및 위치를 지정하고 **확인** 을 선택합니다.
+2. **새 프로젝트** 대화 상자에서 "**AI 도구**"를 검색하고 "**기존 Python 코드에서**" 템플릿을 선택하고 프로젝트의 이름 및 위치를 지정하고 **확인** 을 선택합니다.
 
    ![기존 코드의 새 프로젝트, 1단계](media/create-project-existing/new-ai-project.png)
 

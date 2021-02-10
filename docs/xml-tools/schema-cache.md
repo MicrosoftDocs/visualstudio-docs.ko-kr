@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3562b7238f9721c4153af02cce594bfb9e134b0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841893"
 ---
 # <a name="schema-cache"></a>스키마 캐시
 

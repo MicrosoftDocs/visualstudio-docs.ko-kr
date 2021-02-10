@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 674498ff86f3ea3d44d5d9b49ec97789fa5a1205
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837777"
 ---
 # <a name="how-to-control-messages-view"></a>방법: 메시지 뷰 제어
 Spy++를 사용하면 [Messages View](../debugger/messages-view.md)(메시지 뷰) 창의 콘텐츠를 상당 부분 제어할 수 있습니다. 언제든지 메시지 표시를 [시작 및 중지](../debugger/how-to-start-and-stop-the-message-log-display.md)할 수 있고 다음 설정을 지정할 수 있습니다.

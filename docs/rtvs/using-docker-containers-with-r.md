@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01048bc9b21287eb62693096b34a1ea8305e0ee9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62810210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851870"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구와 함께 Docker 컨테이너 사용
 
@@ -26,11 +26,11 @@ RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docke
 
     ![컨테이너 명령을 사용하는 Visual Studio용 R 도구(VS2017)의 작업 영역 창](media/container-workspaces-window.png)
 
-1. **컨테이너** 창에서 **만들기**를 선택합니다.
+1. **컨테이너** 창에서 **만들기** 를 선택합니다.
 
     ![컨테이너 창에서 명령 만들기](media/containers-window-create.png)
 
-1. 대화 상자에서 필수 정보를 채우고 **만들기**를 선택합니다. 입력한 자격 증명은 나중에 로그인할 때 사용할 Linux 계정을 만드는 데 사용됩니다.
+1. 대화 상자에서 필수 정보를 채우고 **만들기** 를 선택합니다. 입력한 자격 증명은 나중에 로그인할 때 사용할 Linux 계정을 만드는 데 사용됩니다.
 
     ![컨테이너를 만들 때 컨테이너 이름 및 자격 증명 입력](media/containers-window-create-fill.png)
 

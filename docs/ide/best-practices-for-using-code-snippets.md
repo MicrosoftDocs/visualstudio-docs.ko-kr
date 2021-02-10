@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code snippets, security
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ad94fb8ea4dffcd0c3c7c10bb06046d5558baa1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836503"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>코드 조각 사용에 대한 모범 사례
 

@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 86df6673608359dcc7158762c3ef9d86c184fff6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850483"
 ---
 # <a name="build-actions"></a>빌드 작업
 

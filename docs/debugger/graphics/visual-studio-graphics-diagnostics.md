@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b5a8eed74c4ce216e35c391833dcae80fc7efa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 679b9464ef10f121bbe38f486291b135872fb36b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861499"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 >[!NOTE]

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8aff9836570b3af882e5863cc85834f5423f890e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861428"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 그래픽 로그 파일의 기본 파일 이름을 정의합니다.

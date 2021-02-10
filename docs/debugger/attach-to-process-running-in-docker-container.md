@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857931"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Docker 컨테이너에서 실행되는 프로세스에 연결 
 
@@ -52,13 +52,13 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
     > [!NOTE]
     > Docker 컨테이너에서 실행 중인 프로세스에 원격으로 연결하는 옵션에는 두 가지가 있습니다. SSH를 사용하는 첫 번째 옵션은 로컬 컴퓨터에 Docker 도구를 설치하지 않은 경우에 적합합니다.  Docker 도구를 로컬로 설치했고 원격 요청을 허용하도록 구성된 Docker 디먼이 있는 경우 Docker 디먼을 사용하는 두 번째 옵션을 이용해 보세요.
 
-    1. *SSH를 통해 원격 컴퓨터에 연결하려면
-        1. 추가...를 선택하여 원격 시스템에 연결합니다.<br/>
+    1. ***SSH를 통해 원격 컴퓨터에 연결하려면***
+        1. **추가...** 를 선택하여 원격 시스템에 연결합니다.<br/>
         ![원격 시스템에 연결](../debugger/media/connect-remote-system.png "원격 시스템에 연결")
         1. SSH 또는 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인** 을 누릅니다.
 
-    1. [Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면*
-        1. Docker 호스트(선택 사항)에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
+    1. ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
+        1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
         1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 **확인** 을 누릅니다.
 
 4. **사용 가능한 프로세스** 목록에서 해당 컨테이너 프로세스를 선택하고 **연결** 을 선택하여 Visual Studio에서 C# 컨테이너 프로세스 디버깅을 시작합니다.
@@ -86,8 +86,8 @@ Windows Docker 컨테이너 또는 Linux .NET Core Docker 컨테이너에서 실
 
    현재는 SSH를 통해 원격 컨테이너를 대상으로 설정할 수 없고 Docker 디먼을 사용해야만 합니다.
 
-    [Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면*
-    1. Docker 호스트(선택 사항)에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
+    ***[Docker 디먼](https://docs.docker.com/engine/reference/commandline/dockerd/)을 통해 프로세스를 실행하는 원격 컨테이너를 대상으로 설정하려면***
+    1. **Docker 호스트(선택 사항)** 에서 디먼 주소(예: TCP, IP 등)를 지정하고 새로 고침 링크를 클릭합니다.
 
     1. 디먼에 성공적으로 연결되면 연결하려는 실행 중 컨테이너를 선택하고 확인을 선택합니다.
 

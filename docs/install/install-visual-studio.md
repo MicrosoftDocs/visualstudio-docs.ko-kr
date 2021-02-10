@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Visual Studio installer
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2c3302499ec44d7a97ca66532428e0af117e3a7e
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 97e354dfb1208ec7306cb797049cd8ca82d0d8db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852125"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 

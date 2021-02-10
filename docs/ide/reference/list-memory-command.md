@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 696cb36f932a1a79388d94d749b4b5d4bff7d0c2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4fb0d62f6f4ade51fe0224917a1e3ec3a199de14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852052"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.

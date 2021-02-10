@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836451"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
 **프로젝트 디자이너** 의 **빌드** 페이지를 사용하여 프로젝트의 빌드 구성 속성을 지정합니다. 이 페이지는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.
 
-**빌드** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드( **솔루션** 노드 아님)를 선택합니다. 그다음에 메뉴에서 **보기** , **속성 페이지** 를 선택합니다. 프로젝트 디자이너가 나타나면 **빌드** 탭을 선택합니다.
+**빌드** 페이지에 액세스하려면 **솔루션 탐색기** 에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그다음에 메뉴에서 **보기**, **속성 페이지** 를 선택합니다. 프로젝트 디자이너가 나타나면 **빌드** 탭을 선택합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "92136877"
 
 **구성**
 
-표시하거나 수정할 구성 설정을 지정합니다. **활성(디버그)** (기본값), **디버그** , **릴리스** 또는 **모든 구성** 중에서 설정을 선택할 수 있습니다.
+표시하거나 수정할 구성 설정을 지정합니다. **활성(디버그)**(기본값), **디버그**, **릴리스** 또는 **모든 구성** 중에서 설정을 선택할 수 있습니다.
 
 **플랫폼**
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35776073679e43be99260108a72a22f33017a682
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: d9be1a6dc591757ec261120df917866d5e207f49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850245"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사
 

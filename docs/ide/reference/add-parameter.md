@@ -6,15 +6,15 @@ ms.date: 09/28/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2582228426afcefdb2587d646a8668f622309c6
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c1e623bea0eab4b45aec3d331864db49a2787f8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846350"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>빠른 작업을 사용하여 메서드에 매개 변수 추가
 

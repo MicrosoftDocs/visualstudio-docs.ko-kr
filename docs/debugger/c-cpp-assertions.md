@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865958"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
 어설션 문은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다. 지정한 조건이 true가 아니면 어설션이 실패하고 프로그램 실행이 중단되며 [ 어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.

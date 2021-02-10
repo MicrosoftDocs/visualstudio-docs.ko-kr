@@ -5,18 +5,18 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 7c218d914bc234533af674fc5d138a1c102d85c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836270"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>래핑, 들여쓰기 및 리팩터링 정렬
 

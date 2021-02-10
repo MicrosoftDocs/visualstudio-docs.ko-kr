@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850388"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트와 솔루션 빌드 및 정리
 
@@ -79,15 +79,15 @@ ms.locfileid: "92136799"
 
      이 확인란을 선택하면 다음 단계 중 하나를 수행할 때 현재 시작 프로젝트와 해당 종속성만 빌드됩니다.
 
-    - 메뉴 모음에서 **디버그** > **시작** ( **F5** )을 선택합니다.
+    - 메뉴 모음에서 **디버그** > **시작**(**F5**)을 선택합니다.
 
-    - 메뉴 모음에서 **빌드** > **솔루션 빌드** ( **Ctrl**+**Shift**+**B** )를 선택합니다.
+    - 메뉴 모음에서 **빌드** > **솔루션 빌드**(**Ctrl**+**Shift**+**B**)를 선택합니다.
 
     이 확인란의 선택을 취소하면 이전 명령 중 하나를 실행할 때 모든 프로젝트, 해당 종속성 및 솔루션 파일이 빌드됩니다. 기본적으로이 확인란의 선택을 취소 합니다.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>선택한 Visual C++ 프로젝트만 빌드하려면
 
-[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 선택한 다음, 메뉴 모음에서 **빌드** > **프로젝트만 해당** , 다음 명령 중 하나를 차례로 선택합니다.
+[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 선택한 다음, 메뉴 모음에서 **빌드** > **프로젝트만 해당**, 다음 명령 중 하나를 차례로 선택합니다.
 
 - *ProjectName* **만 빌드**
 

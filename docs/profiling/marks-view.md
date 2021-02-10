@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b5b7eedaf7aac4a22ca10580395e085243f831ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851974"
 ---
 # <a name="marks-view"></a>표시 뷰
 표시 뷰에는 애플리케이션에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.

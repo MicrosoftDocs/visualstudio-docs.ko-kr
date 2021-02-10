@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3c032ca57e5a046a9f2dd2295226263ffe20f99e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858009"
 ---
 # <a name="allocation-hook-functions"></a>할당 후크 함수
 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)를 사용하여 설치한 할당 후크 함수는 메모리를 할당하거나, 다시 할당하거나, 해제할 때마다 호출됩니다. 이 형식의 후크는 다양한 용도로 사용할 수 있습니다. 예를 들어 애플리케이션에서 할당 패턴을 검사하거나 추후 분석 목적으로 할당 정보를 로그하기 위해 메모리 부족 상황을 어떻게 처리하는지 테스트하는 데 이 후크를 사용합니다.

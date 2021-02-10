@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0fbf6e002254f10ca983cfaff4198008aaa9724a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841109"
 ---
 # <a name="graphics-log-document"></a>그래픽 로그 문서
 그래픽 로그 문서는 그래픽 진단 세션에서 앱을 실행하는 동안 발생한 그래픽 이벤트의 레코드입니다. 기록된 후에는 Visual Studio Graphics Analyzer에서 이 로그를 검토하여 렌더링 및 성능 문제를 진단할 수 있습니다.

@@ -4,18 +4,18 @@ description: 작업을 제출하면 작업 목록을 보고 해당 상태, 기�
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: d67ee5810c1776176e1370839f0f7f43b9d0c55e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 13d78913e0d5d708c5e75a80611ae9cc1c2f7366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841434"
 ---
 # <a name="view-recent-job-performance-and-details"></a>최근 작업 성능 및 세부 정보 보기
 

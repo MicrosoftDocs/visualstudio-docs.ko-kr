@@ -5,18 +5,18 @@ description: Visual Studio용 AI 도구 개요
 keywords: AI, Visual Studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: f696f5c2696ef15c133c9011b4235bf6714742e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f38b73163af6a249ec9b41aac3672a4ebbef0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841642"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

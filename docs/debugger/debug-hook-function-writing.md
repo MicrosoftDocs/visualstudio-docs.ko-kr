@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 76727da1ed057902d8f757594f5ed2e07bcf3cea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857547"
 ---
 # <a name="debug-hook-function-writing"></a>디버그 후크 함수 작성
 이 단원에서는 디버거의 표준 처리 과정에서 미리 정의된 특정 지점에 코드를 삽입하기 위해 작성할 수 있는 여러 가지 사용자 지정 디버그 후크 함수에 대해 설명합니다.

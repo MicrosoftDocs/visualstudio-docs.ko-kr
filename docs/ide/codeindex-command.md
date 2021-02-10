@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841927"
 ---
 # <a name="codeindex-command"></a>CodeIndex 명령
 

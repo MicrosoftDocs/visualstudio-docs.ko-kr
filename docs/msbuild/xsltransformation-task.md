@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f779fc5d222fdd0985adef203f0bb20fc601a429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847949"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
 

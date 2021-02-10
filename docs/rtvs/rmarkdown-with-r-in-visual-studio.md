@@ -5,15 +5,15 @@ ms.date: 11/16/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e74966e71a7d440aed918e8aa609eeb8e68c355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851883"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
 
@@ -34,7 +34,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 
     ```
 
-1. **파일** > **새로 만들기** > **파일** 메뉴 명령을 사용하고 목록에서 **R** > **R Markdown**을 선택하여 새로운 R Markdown 파일을 만듭니다. 프로젝트의 컨텍스트에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고 **R Markdown 추가**를 선택(또는 **추가** > **새 항목**을 선택하고 목록에서 **R Markdown**을 선택)합니다.
+1. **파일** > **새로 만들기** > **파일** 메뉴 명령을 사용하고 목록에서 **R** > **R Markdown** 을 선택하여 새로운 R Markdown 파일을 만듭니다. 프로젝트의 컨텍스트에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고 **R Markdown 추가** 를 선택(또는 **추가** > **새 항목** 을 선택하고 목록에서 **R Markdown** 을 선택)합니다.
 
 1. 새 파일의 기본 콘텐츠는 다음과 같습니다.
 
@@ -66,7 +66,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
 
 ## <a name="previews"></a>미리 보기
 
-Visual Studio 2017 버전 15.5 이상은 R Markdown에 대한 실시간 미리 보기를 자동으로 제공합니다. 편집기와 미리 보기 간에 자동 동기화를 설정하려면 **R 도구** > **Markdown** > **자동 동기화**(**Ctrl**+**Shift**+**Y**)를 선택합니다. 자동 동기화를 사용하지 않는 경우 **R 도구** > **Markdown** > **R Markdown 미리 보기 다시 로드**를 사용하여 미리 보기를 새로 고칠 수 있습니다.
+Visual Studio 2017 버전 15.5 이상은 R Markdown에 대한 실시간 미리 보기를 자동으로 제공합니다. 편집기와 미리 보기 간에 자동 동기화를 설정하려면 **R 도구** > **Markdown** > **자동 동기화**(**Ctrl**+**Shift**+**Y**)를 선택합니다. 자동 동기화를 사용하지 않는 경우 **R 도구** > **Markdown** > **R Markdown 미리 보기 다시 로드** 를 사용하여 미리 보기를 새로 고칠 수 있습니다.
 
 편집기에서 마우스 오른쪽 단추로 클릭하고 **미리 보기** 명령 중 하나를 선택하여 HTML, PDF 및 Microsoft Word 형식의 파일을 미리 볼 수 있습니다. 동일한 명령을 **R 도구** > **Markdown** 메뉴에서 사용할 수 있습니다. (이전 버전의 Visual Studio인 경우 이러한 명령은 **R 도구** > **게시** 메뉴에 있습니다.)
 

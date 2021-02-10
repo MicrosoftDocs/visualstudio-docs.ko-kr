@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7267e90c2fe3e4617fe2bec8bb177baf42ce37b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 76fc0d0dafac542ffde8656c643ec01b7ce23a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861675"
 ---
 # <a name="setenv-task"></a>SetEnv 작업
 
@@ -36,7 +36,7 @@ ms.locfileid: "93048316"
 
  다음 표에서는 **SetEnv** 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |**이름**|필수 **String** 매개 변수입니다.<br /><br /> 환경 변수의 이름입니다.|
 |**OutputEnvironmentVariable**|선택적 **String** 출력 매개 변수입니다.<br /><br /> **이름** 매개 변수에서 지정한 환경 변수에 할당된 값이 포함됩니다.|

@@ -4,19 +4,19 @@ description: Azure 딥 러닝 VM에서 TensorFlow 모델을 실행합니다.
 keywords: AI, Visual Studio, 딥 러닝 가상 머신
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 8f6aef2d0cf8fe727036dda91256ac0330e15d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841317"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 
@@ -30,7 +30,7 @@ MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작�
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Azure 딥 러닝 가상 머신 설치
 
 > [!NOTE]
-> **OS 유형**을 Linux로 설정하세요.
+> **OS 유형** 을 Linux로 설정하세요.
 
 딥 러닝 가상 머신을 설정하기 위한 지침은 [여기](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm)에 있습니다.
 
@@ -46,7 +46,7 @@ TensorFlow, CNTK, Theano 등에서 심층 학습을 시작하는 샘플이 포�
 
 ## <a name="open-project"></a>프로젝트 열기
 
-- Visual Studio를 시작하고 **파일 > 열기 > 프로젝트/솔루션**을 차례로 선택합니다.
+- Visual Studio를 시작하고 **파일 > 열기 > 프로젝트/솔루션** 을 차례로 선택합니다.
 
 - 다운로드한 샘플 리포지토리에서 **Tensorflow Examples** 폴더를 선택하고 **TensorflowExamples.sln** 파일을 엽니다.
 
@@ -61,7 +61,7 @@ TensorFlow, CNTK, Theano 등에서 심층 학습을 시작하는 샘플이 포�
 ![새 원격 컴퓨터 추가](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>Azure VM에 작업 제출
-**솔루션 탐색기**에서 MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출**을 선택합니다.
+**솔루션 탐색기** 에서 MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출** 을 선택합니다.
 
 ![원격 컴퓨터에 작업 제출](media/tensorflow-vm/job-submission.png)
 
@@ -69,12 +69,12 @@ TensorFlow, CNTK, Theano 등에서 심층 학습을 시작하는 샘플이 포�
 
 - **사용할 클러스터** 목록에서 작업을 제출할 원격 컴퓨터("rm:" 접두사 사용)를 선택합니다.
 
-- **작업 이름**을 입력합니다.
+- **작업 이름** 을 입력합니다.
 
-- **제출**을 클릭합니다.
+- **제출** 을 클릭합니다.
 
 ## <a name="check-status-of-job"></a>작업 상태 확인
-작업의 상태 및 세부 정보를 보려면 **서버 탐색기**에서 작업을 제출한 가상 머신을 펼칩니다. **작업**을 두 번 클릭합니다.
+작업의 상태 및 세부 정보를 보려면 **서버 탐색기** 에서 작업을 제출한 가상 머신을 펼칩니다. **작업** 을 두 번 클릭합니다.
 
 ![작업 브라우저](media/tensorflow-vm/job-browser.png)
 

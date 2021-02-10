@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b4e66049ec5547913dad8df7256f2db3d2395fa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851961"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 메서드는 .*vsp* 파일에 프로필 표시를 삽입합니다. 해당 표시를 삽입하려면 `MarkProfile` 함수를 포함하는 스레드에 대한 프로파일링이 ON이어야 합니다.
