@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 21a4b172fe2a29ac098f236cebb33efa43fb11c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964175"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>방법: 프로그래밍 방식으로 사용자 지정 달력 만들기
   이 예에서는 **PersonalCalendar** 이라는 새 일정 폴더를 만든 다음 새 약속 항목을 만들어 Calendar 폴더에 추가 합니다. 그런 다음 코드에서 Calendar 폴더를 표시 합니다.

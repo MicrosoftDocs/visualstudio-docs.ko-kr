@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c43545af9063ad83c61631b59032751fd9526a12
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: fc7367db64f096ce5a90e9b51a8f5df162779f36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971221"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 

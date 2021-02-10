@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965215"
 ---
 # <a name="sccget-function"></a>SccGet 함수
 이 함수는 보기 및 컴파일을 위해 하나 이상의 파일 복사본을 검색 하지만 편집할 수는 없습니다. 대부분의 시스템에서 파일은 읽기 전용으로 태그가 지정 됩니다.
@@ -63,7 +63,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|가져오기 작업의 성공입니다.|
 |SCC_E_FILENOTCONTROLLED|파일이 소스 제어에 있지 않습니다.|
@@ -86,7 +86,7 @@ SCCRTN SccGet(
  마지막으로, 소스 제어 플러그 인 `SCC_CAP_GET_NOUI` 이 초기화 시 플래그를 지정 하 여 Get 명령의 사용자 인터페이스가 없음을 나타내는 경우에도 IDE에서이 함수를 호출 하 여 파일을 검색할 수 있습니다. 플래그는 IDE에 Get 메뉴 항목이 표시 되지 않고 플러그 인에서 UI를 제공할 것으로 예상 되지 않는다는 것을 의미 합니다.
 
 ## <a name="rename-files-and-sccget"></a>파일 이름 바꾸기 및 SccGet
- 상황: 사용자가 파일 (예: *a.txt*)을 체크 아웃 하 고 수정 합니다. *a.txt* 를 체크 인하기 전에 두 번째 사용자가 소스 제어 데이터베이스에서 *b.txt* *a.txt* 의 이름을 바꾸고 *b.txt*를 체크 아웃 한 다음 파일을 수정 하 고에서 파일을 확인 합니다. 첫 번째 사용자는 두 번째 사용자가 변경한 내용을 확인 하 여 첫 번째 사용자가 *a.txt* 파일의 로컬 버전을 *b.txt* 로 바꾸고 파일에 대해 get을 수행 하도록 합니다. 그러나 버전 번호를 추적 하는 로컬 캐시는 *a.txt* 의 첫 번째 버전을 로컬에 저장 하는 것으로 간주 하므로 소스 제어에서 차이점을 해결할 수 없습니다.
+ 상황: 사용자가 파일 (예: *a.txt*)을 체크 아웃 하 고 수정 합니다. *a.txt* 를 체크 인하기 전에 두 번째 사용자가 소스 제어 데이터베이스에서 *b.txt* *a.txt* 의 이름을 바꾸고 *b.txt* 를 체크 아웃 한 다음 파일을 수정 하 고에서 파일을 확인 합니다. 첫 번째 사용자는 두 번째 사용자가 변경한 내용을 확인 하 여 첫 번째 사용자가 *a.txt* 파일의 로컬 버전을 *b.txt* 로 바꾸고 파일에 대해 get을 수행 하도록 합니다. 그러나 버전 번호를 추적 하는 로컬 캐시는 *a.txt* 의 첫 번째 버전을 로컬에 저장 하는 것으로 간주 하므로 소스 제어에서 차이점을 해결할 수 없습니다.
 
  소스 제어 버전의 로컬 캐시가 원본 제어 데이터베이스와 동기화 되지 않는이 상황을 해결 하는 방법에는 두 가지가 있습니다.
 
@@ -96,9 +96,9 @@ SCCRTN SccGet(
 
     1. [Sccquerychanges](../extensibility/sccquerychanges-function.md) 함수를 호출 하 여 원본 제어 데이터베이스에서 *b.txt* *a.txt* 이름 바꾸기에 대해 알아봅니다.
 
-    2. 로컬 *a.txt* 의 이름을 *b.txt*로 바꿉니다.
+    2. 로컬 *a.txt* 의 이름을 *b.txt* 로 바꿉니다.
 
-    3. `SccGet` *a.txt* 와 *b.txt*모두에 대해 함수를 호출 합니다.
+    3. `SccGet` *a.txt* 와 *b.txt* 모두에 대해 함수를 호출 합니다.
 
     4. *a.txt* 원본 제어 데이터베이스에 없으므로 로컬 버전 캐시가 누락 된 *a.txt* 버전 정보를 제거 합니다.
 
@@ -106,6 +106,6 @@ SCCRTN SccGet(
 
     6. 이제 업데이트 된 *b.txt* 파일을 체크 인할 수 있습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [특정 명령에 사용 되는 bitflags](../extensibility/bitflags-used-by-specific-commands.md)

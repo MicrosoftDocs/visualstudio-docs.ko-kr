@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964409"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -120,9 +120,9 @@ ms.locfileid: "95441830"
 
 Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 예는 다음과 같습니다.
 
-- * *.\** 은 모든 문자의 문자열과 일치합니다.
+- **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
 
-- *\\.* 은 점 "."과 일치합니다.
+- **\\.** 점 “.”과 일치합니다.
 
 - **\\(   \\)** 는 괄호 “(  )”와 일치합니다.
 

@@ -8,15 +8,15 @@ ms.topic: tutorial
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cfb5a8af72d7c41cdee913ee94c382c57e8cf5dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971416"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
 

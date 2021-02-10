@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971611"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>방법: 리소스 만들기 및 적용
 
@@ -44,7 +44,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
     - 현재 문서에서만 리소스를 사용할 수 있도록 하려면 **이 문서** 를 선택합니다.
 
-    - 리소스를 만든 요소 또는 그 자식 요소에만 리소스를 사용할 수 있도록 하려면 요소에만 **이 문서** 를 선택하고 드롭다운 목록에서 **요소** : **이름** 을 선택합니다.
+    - 리소스를 만든 요소 또는 그 자식 요소에만 리소스를 사용할 수 있도록 하려면 요소에만 **이 문서** 를 선택하고 드롭다운 목록에서 **요소**: **이름** 을 선택합니다.
 
     - 다른 프로젝트에서 다시 사용할 수 있는 [리소스 사전](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) 파일에서 리소스를 정의하려면 **리소스 사전** 을 클릭합니다. 그런 다음 드롭다운 목록에서 **StandardStyles.xaml** 과 같은 기존 리소스 사전 파일을 선택합니다.
 
@@ -75,6 +75,6 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
 3. 리소스에 대한 옵션을 수정합니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [XAML 디자이너를 사용하여 UI 만들기](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 18dab3d34f4c1c11fa2c212f12ca875cb1b7f3b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964955"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 작업
 
@@ -49,7 +49,7 @@ ms.locfileid: "96189708"
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

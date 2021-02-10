@@ -5,18 +5,18 @@ ms.topic: how-to
 ms.date: 09/21/2020
 author: gregvanl
 ms.author: gregvanl
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
-ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
+ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99251442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971143"
 ---
 # <a name="supported-visual-studio-features-preview"></a>지원되는 Visual Studio 기능(미리 보기)
 

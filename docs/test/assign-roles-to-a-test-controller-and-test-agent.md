@@ -13,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 163cb3d541b054d22dc46df0b8e1e4735ac3fd50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964669"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 

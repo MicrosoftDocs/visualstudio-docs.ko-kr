@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29400e82dcd7b0d5cd9062679610b50bfaab191d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971689"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>게시 마법사 (Visual Studio에서 Office 개발)
   **게시 마법사** 를 사용 하 여 솔루션 파일을 지정 된 위치에 복사 하 고 매니페스트 파일을 만들고 설치 프로그램을 만들 수 있습니다.

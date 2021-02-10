@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965202"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 이 함수는 지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.
@@ -53,7 +53,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|성공했습니다.|
 |SCC_I_ADV_SUPPORT|원본 제어 플러그 인은 명령에 대 한 고급 옵션을 지원 합니다.|
@@ -79,6 +79,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 > 이 명령은 `SCC_COMMAND_OPTIONS` IDE가 통합의 작동 방식을 제어 하는 기본 설정을 지정할 수 있는 **옵션** 대화 상자를 표시할 때 사용 됩니다. 소스 제어 플러그 인에서 자체 기본 설정 대화 상자를 제공 하려는 경우 IDE의 기본 설정 대화 상자에 있는 **고급** 단추에서 해당 대화 상자를 표시할 수 있습니다. 플러그 인은이 정보를 가져오고 유지 하는 일을 담당 합니다. IDE는이를 사용 하거나 수정 하지 않습니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [명령 코드](../extensibility/command-code-enumerator.md)

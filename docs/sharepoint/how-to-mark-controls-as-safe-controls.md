@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964708"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>방법: 컨트롤을 안전 컨트롤로 표시
   보안을 위해 SharePoint는 스크립트 삽입에 대해 보호 되는 웹 컨트롤과 그렇지 않은 웹 컨트롤을 구별 합니다. 신뢰할 수 없는 사용자가 보호 된 컨트롤 또는 *안전 컨트롤* 에 액세스할 수 있습니다. 패키지에 어셈블리를 추가할 때 SharePoint 프로젝트 항목 또는 **패키지 디자이너** 의 안전 컨트롤 항목 속성에서 컨트롤을 안전한 것으로 표시할 수 있습니다. 자세한 내용은 다음을 참조하세요.
@@ -65,7 +65,7 @@ ms.locfileid: "96304504"
 
      컨트롤의 네임 스페이스는 나중에 사용 되기 때문에 기록해 둡니다.
 
-3. 메뉴 모음에서 빌드 **Build**  >  **솔루션** 빌드를 선택 하 여 프로젝트를 빌드합니다.
+3. 메뉴 모음에서 빌드   >  **솔루션** 빌드를 선택 하 여 프로젝트를 빌드합니다.
 
 4. 다른 SharePoint 솔루션을 만듭니다.
 

@@ -14,13 +14,13 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 09038afd3b8f359ed90639d7f35cb92c04241324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964604"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
 

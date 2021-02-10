@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 21dd08f81802661cae9d77ee3449f4e9369ca768
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965085"
 ---
 # <a name="application-property-page-uwp-projects"></a>애플리케이션 속성 페이지(UWP 프로젝트)
 

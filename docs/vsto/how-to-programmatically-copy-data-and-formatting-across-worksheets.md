@@ -15,15 +15,15 @@ helpviewer_keywords:
 - copying data, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d768eb086707af2eeddeb18a77bad1ef1f101839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964240"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 간에 데이터 및 서식 복사
   메서드를 사용 하 여 한 시트의 범위에서 통합 문서의 다른 모든 시트에 데이터를 복사할 수 있습니다 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> . 범위를 지정 하 고 데이터, 형식 또는 둘 다를 복사할지 여부를 지정 합니다.

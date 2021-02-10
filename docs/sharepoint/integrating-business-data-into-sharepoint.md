@@ -18,15 +18,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964682"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint에 비즈니스 데이터 통합
   SharePoint에 비즈니스 데이터를 통합할 수 있습니다. 비즈니스 데이터는 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel, SAP 등의 백 엔드 서버 애플리케이션 또는 웹 서비스에서 가져올 수 있습니다. 사용자는 SharePoint에서 외부 목록 또는 비즈니스 데이터 웹 파트를 사용하여 비즈니스 데이터를 표시, 추가, 업데이트 또는 삭제할 수 있습니다.  사용자는 Microsoft Outlook과 같은 Microsoft Office 애플리케이션에서 오프라인으로 이 데이터에 액세스할 수도 있습니다. 자세한 내용은 [외부 데이터를 표시할 수 있는 위치](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))를 참조하세요.

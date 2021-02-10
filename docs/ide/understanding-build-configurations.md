@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971403"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
@@ -44,7 +44,7 @@ ms.locfileid: "92136682"
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 빌드](/visualstudio/mac/configurations)를 참조하세요.
 
-빌드된 출력 파일이 저장되는 구성 및 플랫폼 컨트롤입니다. 일반적으로 Visual Studio가 프로젝트를 빌드하면 출력 위치는 활성 구성으로 이름이 지정된 프로젝트 하위 폴더지만(예: *bin/Debug/x86* ) 이는 변경할 수 있습니다.
+빌드된 출력 파일이 저장되는 구성 및 플랫폼 컨트롤입니다. 일반적으로 Visual Studio가 프로젝트를 빌드하면 출력 위치는 활성 구성으로 이름이 지정된 프로젝트 하위 폴더지만(예: *bin/Debug/x86*) 이는 변경할 수 있습니다.
 
 솔루션 및 프로젝트 수준에서 고유한 빌드 구성을 만들 수 있습니다. 솔루션 구성은 이 구성이 활성화 상태일 때 빌드에 포함할 프로젝트를 결정합니다. 활성 솔루션 구성에 지정된 프로젝트만 빌드됩니다. 구성 관리자에서 여러 대상 플랫폼을 선택하면 해당 플랫폼에 적용되는 모든 프로젝트가 빌드됩니다. 프로젝트 구성은 프로젝트를 빌드할 때 사용할 빌드 설정과 컴파일러 옵션을 결정합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "92136682"
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio가 솔루션 구성을 할당하는 방법
 
-프로젝트 구성을 만들고( **구성 관리자** 에서 해당 프로젝트의 **구성** 열에 있는 드롭다운 메뉴의 **새로 만들기** 선택) **새 솔루션 구성 만들기** 확인란을 선택하면 Visual Studio가 각 지원 플랫폼에서 프로젝트를 빌드하기 위해 이름이 같은 솔루션 구성을 찾습니다. 경우에 따라 Visual Studio는 기존 솔루션 구성의 이름을 바꾸거나 새 구성을 정의합니다.
+프로젝트 구성을 만들고(**구성 관리자** 에서 해당 프로젝트의 **구성** 열에 있는 드롭다운 메뉴의 **새로 만들기** 선택) **새 솔루션 구성 만들기** 확인란을 선택하면 Visual Studio가 각 지원 플랫폼에서 프로젝트를 빌드하기 위해 이름이 같은 솔루션 구성을 찾습니다. 경우에 따라 Visual Studio는 기존 솔루션 구성의 이름을 바꾸거나 새 구성을 정의합니다.
 
 Visual Studio는 다음 기준을 사용하여 솔루션 구성을 할당합니다.
 

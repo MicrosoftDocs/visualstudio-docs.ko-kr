@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965358"
 ---
 # <a name="visualizing-and-viewing-data"></a>데이터 시각화 및 보기
 시각화 도우미 및 사용자 지정 뷰어는 개발자에 게 신속 하 게 의미 있는 방식으로 데이터를 제공 합니다. 식 계산기 (EE)는 타사 형식 시각화 도우미를 지원할 뿐만 아니라 고유한 사용자 지정 뷰어를 제공할 수 있습니다.

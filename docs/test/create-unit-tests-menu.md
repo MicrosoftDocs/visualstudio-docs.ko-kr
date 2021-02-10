@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit tests
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964422"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>코드에서 단위 테스트 메서드 스텁 만들기
 

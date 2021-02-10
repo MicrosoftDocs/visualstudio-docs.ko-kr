@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9a3c03e1301bddf4cc26c76dac9e0381ec726b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d387d44ba06bb3a5a8ef5e73e2d8900b356996e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964864"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 작업
 
@@ -33,7 +33,7 @@ XML 파일에서 XPath 쿼리에 의해 지정된 대로 값을 반환합니다.
 
  다음 표에서는 `XmlPeek` 작업의 매개 변수에 대해 설명합니다.
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`Namespaces`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리 접두사에 대한 네임스페이스를 지정합니다.|
 |`Query`|선택적 `String` 매개 변수입니다.<br /><br /> XPath 쿼리를 지정합니다.|

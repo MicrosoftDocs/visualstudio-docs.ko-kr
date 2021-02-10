@@ -13,15 +13,15 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], meeting requests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83a8ba1ddabccd307a31ffc3508e3c39fcdffbff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 73f85308a15afd4828bb6143d0e883fefc6708d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964149"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>방법: 프로그래밍 방식으로 모임 요청 만들기
   이 예제에서는 Microsoft Office Outlook에서 모임 요청을 만들고 필요한 참석자에게 요청을 보냅니다.

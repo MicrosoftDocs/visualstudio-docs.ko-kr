@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b8dd95a9fbf4cba0841488132e3c2ab84f4f6385
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 2929f6b9e82a7a156034178f7e7f5f5d678ac842
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971208"
 ---
 # <a name="collect-additional-performance-data"></a>추가 성능 데이터 수집
 

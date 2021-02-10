@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: cdfd4294511752e201c2291a03f89d0bded2506b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971455"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 

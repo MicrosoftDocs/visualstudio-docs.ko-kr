@@ -10,15 +10,15 @@ helpviewer_keywords:
 - permissions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d69d916b8b99d6f5b5b3421ae4aea073e24fa67
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971299"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 

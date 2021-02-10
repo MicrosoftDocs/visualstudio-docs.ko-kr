@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 93d5783620c11d6de80e3ad381c456afd1fcd99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964851"
 ---
 # <a name="custom-native-etw-heap-events"></a>사용자 지정 네이티브 ETW 힙 이벤트
 

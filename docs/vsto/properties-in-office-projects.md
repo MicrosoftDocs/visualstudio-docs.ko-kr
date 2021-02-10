@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Value2 property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f7a2ab04e1926a53c3d3aa05023103206c6aa01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971767"
 ---
 # <a name="properties-in-office-projects"></a>Office 프로젝트의 속성
   Visual Studio에서 Office 프로젝트에 사용할 수 있는 몇 가지 중요한 속성이 있습니다. 이러한 속성은 **속성** 창에서 액세스할 수 있습니다.

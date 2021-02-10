@@ -19,22 +19,22 @@ helpviewer_keywords:
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: ceda15402b3588e407388d71140b73f571c03b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964929"
 ---
 # <a name="bscmake-task"></a>BscMake 작업
 
 > [!IMPORTANT]
 > BscMake는 더 이상 Visual Studio IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 정보는 *Solution* 폴더의 *.sdf* 파일에 자동으로 저장됩니다.
 
- Microsoft Browse Information Maintenance Utility 도구( *bscmake.exe* )를 래핑합니다.  *bscmake.exe* 도구는 컴파일하는 동안 만들어진 소스 브라우저 파일( *.sbr* )에서 찾아보기 정보 파일( *.bsc* )을 빌드합니다. **개체 브라우저** 를 사용하여 *.bsc* 파일을 볼 수 있습니다. 자세한 내용은 [BSCMAKE 참조](/cpp/build/reference/bscmake-reference)를 참조하세요.
+ Microsoft Browse Information Maintenance Utility 도구(*bscmake.exe*)를 래핑합니다.  *bscmake.exe* 도구는 컴파일하는 동안 만들어진 소스 브라우저 파일( *.sbr*)에서 찾아보기 정보 파일( *.bsc*)을 빌드합니다. **개체 브라우저** 를 사용하여 *.bsc* 파일을 볼 수 있습니다. 자세한 내용은 [BSCMAKE 참조](/cpp/build/reference/bscmake-reference)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
 

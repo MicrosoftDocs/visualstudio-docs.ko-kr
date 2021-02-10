@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 9f3a46b16bc689e0753b806c4239544e1ddbd73f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964942"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 작업
 
