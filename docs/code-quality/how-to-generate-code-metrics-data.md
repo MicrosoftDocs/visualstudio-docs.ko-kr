@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860045"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496264"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -59,7 +59,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
    이 예제에서 rule [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
-3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들어:
+3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면 다음과 같습니다.
 
    ```xml
    <ItemGroup>
@@ -108,7 +108,7 @@ C #에 대 한 명령줄에서 코드 메트릭 데이터를 생성 하 고 .NET
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. 메트릭 NuGet 패키지
 
-명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예를 들어:
+명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 `msbuild /t:Metrics` 프로젝트 파일이 포함 된 디렉터리에서를 실행 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -131,7 +131,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예를 들어:
+을 지정 하 여 출력 파일 이름을 재정의할 수 있습니다 `/p:MetricsOutputFile=<filename>` . 을 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다 `/p:LEGACY_CODE_METRICS_MODE=true` . 예를 들면 다음과 같습니다.
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -279,7 +279,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 1. [Dotnet/roslyn](https://github.com/dotnet/roslyn-analyzers) 리포지토리를 복제 합니다.
 2. 관리자 권한으로 Visual Studio에 대 한 개발자 명령 프롬프트를 엽니다.
 3. **Roslyn-분석기** 리포지토리의 루트에서 다음 명령을 실행 합니다.`Restore.cmd`
-4. 디렉터리를 *src\Tools* 로 변경 합니다.
+4. 디렉터리를 Src\oststststststststststnst 
 5. 다음 명령을 실행 하 여 **메트릭의 .csproj** 프로젝트를 빌드합니다.
 
    ```shell
@@ -290,7 +290,7 @@ NuGet 패키지를 설치 하지 않으려면 *Metrics.exe* 실행 파일을 직
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 사용
 
-*Metrics.exe* 를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들어:
+*Metrics.exe* 를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면 다음과 같습니다.
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -333,7 +333,7 @@ Visual Studio 2019 버전 16.4 및 메트릭 (2.9.5)에서 시작 `SourceLines` 
 
 및와 같은 기타 `CyclomaticComplexity` 메트릭은 `MaintainabilityIndex` 이전 버전의 *Metrics.exe* 와 같은 수식을 사용 하지만 새 도구는 `IOperations` IL (중간 언어) 명령 대신 (논리적 원본 명령)의 수를 계산 합니다. Visual Studio IDE와 이전 버전의 *Metrics.exe* 에 의해 생성 되는 숫자는 약간 다릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [코드 메트릭 결과 창 사용](../code-quality/working-with-code-metrics-data.md)
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)
