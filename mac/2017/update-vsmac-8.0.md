@@ -7,12 +7,12 @@ ms.date: 06/20/2018
 ms.technology: vs-ide-install
 ms.assetid: BC836802-CC65-41F7-BAEC-A42AED0371A9
 hide_comments: false
-ms.openlocfilehash: a7f5a3eb25fb4bb1e27ef41f79f325c38e13046d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 09f4af94eb1a12780268ab47f1a06c4710f0382f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860880"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719151"
 ---
 # <a name="update-visual-studio-2017-for-mac-version-7-to-visual-studio-2019-for-mac-version-80"></a>Mac용 Visual Studio 2017(버전 7)을 Mac용 Visual Studio 2019(버전 8.0)로 업데이트
 
@@ -22,9 +22,9 @@ Mac용 Visual Studio 2019에서는 새로운 C# 편집기, 새로운 시작 환�
 - [Mac용 Visual Studio 2019 버전 8.1 사용 가능(8.2 미리 보기)](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-version-8-1-is-now-available-and-a-preview-for-8-2/)
 
 > [!IMPORTANT]
-> Mac용 Visual Studio 2017 **버전 7.7.3**에는 업데이트 프로그램에서 “업데이트 정보를 검색하는 중 오류 발생” 메시지를 계속 표시하는 알려진 문제가 있습니다. 이 경우, [Mac용 Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/mac/)하고 Mac용 Visual Studio 2019 [설치](./installation.md?view=vsmac-2019) 단계를 수행합니다. 그러면 Mac용 Visual Studio 2017의 기존 인스턴스를 덮어쓰게 됩니다.
+> Mac용 Visual Studio 2017 **버전 7.7.3** 에는 업데이트 프로그램에서 “업데이트 정보를 검색하는 중 오류 발생” 메시지를 계속 표시하는 알려진 문제가 있습니다. 이 경우, [Mac용 Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/mac/)하고 Mac용 Visual Studio 2019 [설치](./installation.md?view=vsmac-2019&preserve-view=true) 단계를 수행합니다. 그러면 Mac용 Visual Studio 2017의 기존 인스턴스를 덮어쓰게 됩니다.
 
-최신 버전을 가져오려면 **Visual Studio > 업데이트 확인...** 으로 이동하여 [업데이트 프로그램](./update.md?view=vsmac-2017)을 사용합니다.
+최신 버전을 가져오려면 **Visual Studio > 업데이트 확인...** 으로 이동하여 [업데이트 프로그램](./update.md?view=vsmac-2017&preserve-view=true)을 사용합니다.
 
 ![업데이트 프로그램 대화 상자](media/update-vsmac-updater.png)
 

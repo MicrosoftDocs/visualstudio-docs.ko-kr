@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862432"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719918"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac용 Visual Studio 2017 설치
 
 > [!NOTE]
-> Mac용 Visual Studio 2019는 [현재 사용 가능](installation.md?view=vsmac-2019)합니다. Mac용 Visual Studio의 이전 버전은 Visual Studio [다운로드 페이지](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)를 참조하세요.
+> Mac용 Visual Studio 2019는 [현재 사용 가능](installation.md?view=vsmac-2019&preserve-view=true)합니다. Mac용 Visual Studio의 이전 버전은 Visual Studio [다운로드 페이지](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)를 참조하세요.
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019에서 다운그레이드할까요?
 
@@ -42,7 +42,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
    ![설치 관리자 대화 상자](media/installer-image1.png)
 
-3. 다음 이미지와 비슷한 경고 대화 상자가 표시될 수도 있습니다. 이 경우 **열기**를 클릭합니다.
+3. 다음 이미지와 비슷한 경고 대화 상자가 표시될 수도 있습니다. 이 경우 **열기** 를 클릭합니다.
 
    ![경고 대화 상자](media/installer-image2.png)
 
@@ -88,7 +88,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
    ![사용 권한을 입력하여 설치 관리자 계속 진행](media/installer-image10.png)
 
-10. 설치가 완료되면 **시작**을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
+10. 설치가 완료되면 **시작** 을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
 
     ![Visual Studio를 엽니다.](media/installer-image11.png)
 

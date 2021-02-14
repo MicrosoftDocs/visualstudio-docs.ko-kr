@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584206"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722128"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?
 
@@ -22,7 +22,7 @@ ms.locfileid: "91584206"
 
 ## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 대체 버전 제어 옵션
 
-macOS에 가장 적합한 버전 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 **Git**을 사용하는 것이 좋습니다. 
+macOS에 가장 적합한 버전 제어 환경의 경우 TFVC(Team Foundation 버전 제어) 대신 **Git** 을 사용하는 것이 좋습니다. 
 
 Git은 Mac용 Visual Studio에서 지원되고 TFS(Team Foundation Server)/Azure DevOps에서 호스트되는 리포지토리의 기본 옵션입니다. TFS/Azure DevOps와 함께 Git을 사용하는 방법을 자세히 알아보려면 [Git 리포지토리 설정](./set-up-git-repository.md) 가이드를 참조하세요.
 
@@ -53,13 +53,13 @@ TEE-CLC를 사용하여 설정하는 두 가지 방법이 있습니다.
 * Homebrew를 사용하여 클라이언트 설치 또는
 * 클라이언트를 다운로드하고 수동으로 설치
 
-가장 쉬운 솔루션은 macOS의 패키지 관리자인 **HomeBrew 사용**입니다. 이 방법으로 설치하려면 다음을 수행합니다.
+가장 쉬운 솔루션은 macOS의 패키지 관리자인 **HomeBrew 사용** 입니다. 이 방법으로 설치하려면 다음을 수행합니다.
 
 1. macOS 터미널 애플리케이션을 시작합니다.
 1. 터미널 및 [Homebrew 홈페이지](https://brew.sh/)의 지침을 사용하여 Homebrew를 설치합니다.
 1. Homebrew가 설치되면 터미널에서 다음 명령을 실행합니다.`brew install tee-clc`
 
-**TEE-CLC를 수동으로 설정**하려면 다음을 수행합니다.
+**TEE-CLC를 수동으로 설정** 하려면 다음을 수행합니다.
 
 1. Team Explorer Everywhere GitHub 리포지토리의 릴리스 페이지에서 [최신 버전의 tee-clc를 다운로드](https://github.com/Microsoft/team-explorer-everywhere/releases)합니다(예: 이 문서 작성 시 tee-clc-14.134.0.zip).
 1. .zip의 콘텐츠를 디스크의 폴더로 추출합니다.
@@ -68,7 +68,7 @@ TEE-CLC를 사용하여 설정하는 두 가지 방법이 있습니다.
 
 TEE-CLC가 설치되면 `tf eula` 명령을 실행하여 클라이언트의 라이선스 계약을 보고 동의할 수 있습니다.
 
-마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
+마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>TEE-CLC를 사용하여 리포지토리에 연결
 
