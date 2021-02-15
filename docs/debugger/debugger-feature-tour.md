@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 5bfa190f3bbc2a4f8b34d42d62b0ccc9b293674a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873134"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -93,7 +93,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="run-to-cursor"></a>커서까지 실행
 
-디버거에서 일시 중지되지 않고 코드를 편집하는 경우 앱의 코드 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행** 을 선택합니다. 이 명령은 디버깅을 시작하고 현재의 코드 줄에서 임시 중단점을 설정합니다.
+디버거에서 일시 중지되지 않고 코드를 편집하는 경우 앱의 코드 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행** 을 선택하거나 **Ctrl**+**F10** 을 누릅니다. 이 명령은 디버깅을 시작하고 현재의 코드 줄에서 임시 중단점을 설정합니다.
 
 ![커서까지 실행](../debugger/media/dbg-tour-run-to-cursor.png "커서까지 실행")
 
@@ -108,7 +108,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="restart-your-app-quickly"></a>앱을 빠르게 다시 시작
 
-디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "앱 다시 시작") 단추를 클릭합니다(**Ctrl+Shift+F5**).
+디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "앱 다시 시작") 단추를 클릭하거나 **Ctrl+Shift+F5** 를 누릅니다.
 
 **다시 시작** 을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 

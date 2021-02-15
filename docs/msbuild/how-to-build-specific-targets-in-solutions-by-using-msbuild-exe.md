@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: ede73e06575a91cf9bdf8115942c27b1ce4e2841
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914466"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
 
@@ -43,7 +43,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 사용할 수 있는 옵션을 검사하려는 경우 MSBuild에서 제공하는 디버깅 옵션을 사용할 수 있습니다. `MSBUILDEMITSOLUTION=1` 환경 변수를 설정하고 솔루션을 빌드합니다. 그러면 빌드 시 솔루션의 MSBuild의 내부 보기를 보여주는 *\<SolutionName>.sln.metaproj* 라는 MSBuild 파일을 만듭니다. 이 보기를 검사하여 빌드할 수 있는 대상을 확인할 수 있습니다.
 
-이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다.
+이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다. 대신 [이진 로그](obtaining-build-logs-with-msbuild.md#save-a-binary-log)를 확인합니다.
 
 ## <a name="see-also"></a>참고 항목
 

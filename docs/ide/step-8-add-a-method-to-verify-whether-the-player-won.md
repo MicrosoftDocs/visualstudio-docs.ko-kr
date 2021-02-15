@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868753"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가
 재미있는 게임을 만들었지만 이를 마무리하려면 추가 항목이 필요합니다. 플레이어가 이기면 게임이 끝나야 하므로 `CheckForWinner()` 메서드를 추가하여 플레이어가 이겼는지 여부를 확인해야 합니다.
@@ -44,11 +44,11 @@ ms.locfileid: "96479292"
 
 3. 프로그램을 저장하고 실행합니다. 게임을 진행하고 일치하는 아이콘을 모두 찾습니다. 게임에 이기면 프로그램에서 다음 스크린샷과 같은 축하 **MessageBox** 를 표시한 후 상자를 닫습니다.
 
-     ![MessageBox가 표시된 일치 게임](../ide/media/express_tut4step8.png)<br/>
-* _***MessageBox**_ 가 표시된 *_일치 게임_*
+     ![MessageBox가 표시된 일치 게임](../ide/media/express_tut4step8.png)<br/>‘***MessageBox*** 가 표시된 **일치 게임**’
+*__*
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 _*[9단계: 기타 기능 사용](../ide/step-9-try-other-features.md)**을 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[9단계: 기타 기능 사용](../ide/step-9-try-other-features.md)** 을 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [7단계: 쌍 표시](../ide/step-7-keep-pairs-visible.md)를 참조하세요.

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 구독 관리자의 책임에 대해 알아봅니다.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467468"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511295"
 ---
 # <a name="overview-of-admin-responsibilities"></a>관리자 책임 개요
 관리자는 조직의 구독을 관리할 수 있습니다.  관리자 역할은 사용 조건에 따라 구독이 관리되도록 할 책임도 수행합니다. 이 문서에서는 관리자 역할의 책임, 혜택, 제한 사항에 대해 간략하게 설명합니다.
@@ -41,6 +41,7 @@ Visual Studio 구독을 사용하면 개발자가 다른 소프트웨어를 디�
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)
 - [Microsoft 365 설명서](/microsoft-365/)
+- [Visual Studio 관리 및 구독 지원](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>다음 단계
 관리자의 책임에 대해 자세히 알아봅니다.

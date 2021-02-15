@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 슈퍼 관리자 및 관리자 역할과 관리자를 할당하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467377"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511334"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 정기가입 계약의 슈퍼 관리자 및 관리자
 
@@ -42,13 +42,14 @@ ms.locfileid: "92467377"
 5. **추가** 를 클릭하여 새 관리자를 할당한 후에는 포털에 로그인하도록 초대하는 전자 메일이 수신됩니다.  
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 관리 및 구독 지원](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)
 - [Microsoft 365 설명서](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>다음 단계

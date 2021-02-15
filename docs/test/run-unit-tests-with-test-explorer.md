@@ -7,15 +7,15 @@ f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836334"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -34,7 +34,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 ## <a name="run-tests-in-test-explorer"></a>테스트 탐색기에서 테스트 실행
 
-테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows** 를 선택한 다음 **테스트 탐색기** 를 선택합니다.
+테스트 프로젝트를 빌드하면 테스트가 테스트 탐색기에 나타납니다. 테스트 탐색기가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **창** 을 선택한 다음, **테스트 탐색기** 를 선택하거나 **Ctrl** + **E**, **T** 를 누릅니다.
 
 ::: moniker range="vs-2017"
 ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 ::: moniker range="vs-2017"
 솔루션의 모든 테스트, 그룹의 모든 테스트 또는 선택한 테스트 집합을 실행할 수 있습니다. 다음 작업 중 하나를 수행합니다.
 
-- 솔루션의 모든 테스트를 실행하려면 **모두 실행** 을 선택합니다.
+- 솔루션의 모든 테스트를 실행하려면 **모두 실행** 을 선택하거나 **Ctrl**+**R**, **V** 를 누릅니다.
 
 - 기본 그룹의 모든 테스트를 실행하려면 **실행** 을 선택한 다음, 메뉴에서 그룹을 선택합니다.
 
-- 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 오른쪽 클릭 메뉴를 연 후 **선택한 테스트 실행** 을 선택합니다.
+- 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 오른쪽 클릭 메뉴를 연 후 **선택한 테스트 실행** 을 선택하거나 **Ctrl**+**R**, **T** 를 누릅니다.
 
 - 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![Visual Studio 테스트 탐색기 도구 모음에 있는 병렬 테스트 실행 토글 단추의 스크린샷 이 단추를 선택하면 테스트가 병렬로 실행됩니다.](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
@@ -77,11 +77,11 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 ::: moniker range=">=vs-2019"
 솔루션의 모든 테스트, 그룹의 모든 테스트 또는 선택한 테스트 집합을 실행할 수 있습니다. 다음 작업 중 하나를 수행합니다.
 
-- 솔루션의 모든 테스트를 실행하려면 **모두 실행** 아이콘을 선택합니다.
+- 솔루션의 모든 테스트를 실행하려면 **모두 실행** 아이콘을 선택하거나 **Ctrl**+**R**, **V** 를 누릅니다.
 
 - 기본 그룹의 모든 테스트를 실행하려면 **실행** 아이콘을 선택한 다음, 메뉴에서 그룹을 선택합니다.
 
-- 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 오른쪽 클릭 메뉴를 연 후 **선택한 테스트 실행** 을 선택합니다.
+- 실행할 개별 테스트를 선택하고 선택한 테스트에 대한 오른쪽 클릭 메뉴를 연 후 **선택한 테스트 실행** 을 선택하거나 **Ctrl**+**R**, **T** 를 누릅니다.
 
 - 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 설정 메뉴에서 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 ::: moniker-end
@@ -130,7 +130,7 @@ Visual Studio에는 관리 코드 및 네이티브 코드에 대한 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>테스트 메서드의 소스 코드 보기
 
-Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하려면 테스트를 선택한 다음, 오른쪽 클릭 메뉴에서 **테스트 열기**(키보드: **F12**)를 선택합니다.
+Visual Studio 편집기에서 테스트 메서드의 소스 코드를 표시하려면 테스트를 선택한 다음, 오른쪽 클릭 메뉴에서 **테스트 열기** 를 선택하거나 **F12** 키를 누릅니다.
 
 ## <a name="group-and-filter-the-test-list"></a>테스트 목록 그룹화 및 필터링
 

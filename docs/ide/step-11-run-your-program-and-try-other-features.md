@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950902"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
@@ -25,12 +25,12 @@ ms.locfileid: "90809200"
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>앱을 실행하고 배경색을 설정하는 방법
 
-1. **F5** 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택합니다.
+1. **F5** 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 을 선택합니다.
 
 1. 그림을 열기 전에 **배경색 설정** 단추를 선택합니다. **색** 대화 상자가 열립니다.
 
-     ![색 대화 상자](../ide/media/express_colordialog.png)<br/>
-***색*** *대화 상자*
+     ![색 대화 상자](../ide/media/express_colordialog.png)<br/>‘**색** 대화 상자’
+*__*
 
 1. PictureBox 배경색으로 설정할 색을 선택합니다. `backgroundButton_Click()`(또는 `BackgroundButton_Click()`) 메서드가 어떤 식으로 작동하는지 자세히 살펴봅니다.
 

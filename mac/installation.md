@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583959"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727569"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -34,22 +34,22 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 ## <a name="installation-instructions"></a>설치 지침
 
 1. [Mac용 Visual Studio 다운로드 페이지](https://visualstudio.microsoft.com/vs/mac/)에서 설치 관리자를 다운로드합니다.
-2. 다운로드가 완료되면 **VisualStudioforMacInstaller.dmg**를 클릭하여 설치 관리자를 탑재한 다음, 화살표 로고를 두 번 클릭하여 설치 관리자를 실행합니다.
+2. 다운로드가 완료되면 **VisualStudioforMacInstaller.dmg** 를 클릭하여 설치 관리자를 탑재한 다음, 화살표 로고를 두 번 클릭하여 설치 관리자를 실행합니다.
 
     [![설치를 시작하려면 큰 화살표를 클릭](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. 인터넷에서 애플리케이션이 다운로드된다는 경고가 표시될 수 있습니다. **열기**를 클릭합니다.
+3. 인터넷에서 애플리케이션이 다운로드된다는 경고가 표시될 수 있습니다. **열기** 를 클릭합니다.
 4. 설치 관리자가 시스템을 확인할 때까지 기다립니다.
 
     [![설치 관리자가 구성 요소를 설치할 시스템 확인](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. 개인 정보 및 라이선스 조건에 동의하라는 경고가 나타납니다. 링크가 안내하는 문서를 잘 읽고, 동의하면 **계속**을 누릅니다.
+5. 개인 정보 및 라이선스 조건에 동의하라는 경고가 나타납니다. 링크가 안내하는 문서를 잘 읽고, 동의하면 **계속** 을 누릅니다.
 
     [![개인 정보 및 조건 링크를 클릭한 다음, 동의하면 계속 진행](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. 사용 가능한 워크로드 목록이 표시됩니다. 사용하려는 구성 요소를 선택합니다.
 
-    [![설치할 워크로드 기능 선택](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![설치에 사용할 수 있는 구성 요소 목록을 표시하는 Visual Studio Mac 설치 관리자의 "설치할 항목은 무엇인가요?" 화면 스크린샷.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
 
@@ -67,7 +67,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 7. 원하는 항목을 선택한 후 **설치** 단추를 누릅니다.
 8. 설치 관리자는 Mac용 Visual Studio 및 사용자가 선택한 워크로드를 다운로드하고 설치하는 동안 진행률을 표시합니다. 설치에 필요한 권한을 부여하려면 암호를 입력하라는 메시지가 표시됩니다.
 
-    [![설치할 워크로드 기능 선택](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Mac용 .NET 개발자 도구 키트의 설치 진행률 화면을 보여주는 Visual Studio Mac 설치 관리자의 스크린샷.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. 설치된 후에 Mac용 Visual Studio는 로그인한 다음, 사용하려는 키 바인딩을 선택하여 설치를 개인 설정하라는 메시지를 표시합니다.
 

@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860553"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729381"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation 버전 제어에 연결
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860553"
 >
 > 이전에 Mac용 Visual Studio의 TFVC 확장 미리 보기 릴리스를 사용했다면 Mac용 Visual Studio 2019로 업그레이드할 때는 더 이상 지원되지 않습니다.
 
-Azure Repos에서는 다음과 같은 두 가지 버전 제어 모델을 제공합니다. 분산된 버전 제어 시스템인 [Git](/azure/devops/repos/git/?view=azure-devops) 및 중앙 집중식 제어 시스템인 TFVC([Team Foundation 버전 제어](/azure/devops/repos/tfvc/index?view=azure-devops)).
+Azure Repos에서는 다음과 같은 두 가지 버전 제어 모델을 제공합니다. 분산된 버전 제어 시스템인 [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true) 및 중앙 집중식 제어 시스템인 TFVC([Team Foundation 버전 제어](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true)).
 
 Mac용 Visual Studio에서는 Git 리포지토리에 대한 전체 지원을 제공하지만 TFVC 작업을 위한 일부 해결 방법이 필요합니다. 현재 버전 제어에 TFVC를 사용하고 있는 경우 TFVC에서 호스트되는 소스 코드에 액세스하는 데 사용할 수 있는 몇 가지 솔루션은 다음과 같습니다.
 
@@ -54,13 +54,13 @@ TEE-CLC를 사용하여 설정하는 두 가지 방법이 있습니다.
 * Homebrew를 사용하여 클라이언트 설치 또는
 * 클라이언트를 다운로드하고 수동으로 설치
 
-가장 쉬운 솔루션은 macOS의 패키지 관리자인 **HomeBrew 사용**입니다. 이 방법으로 설치하려면 다음을 수행합니다.
+가장 쉬운 솔루션은 macOS의 패키지 관리자인 **HomeBrew 사용** 입니다. 이 방법으로 설치하려면 다음을 수행합니다.
 
 1. macOS 터미널 애플리케이션을 시작합니다.
 1. 터미널 및 [Homebrew 홈페이지](https://brew.sh/)의 지침을 사용하여 Homebrew를 설치합니다.
 1. Homebrew가 설치되면 터미널에서 다음 명령을 실행합니다.`brew install tee-clc`
 
-**TEE-CLC를 수동으로 설정**하려면 다음을 수행합니다.
+**TEE-CLC를 수동으로 설정** 하려면 다음을 수행합니다.
 
 1. Team Explorer Everywhere GitHub 리포지토리의 릴리스 페이지에서 [최신 버전의 tee-clc를 다운로드](https://github.com/Microsoft/team-explorer-everywhere/releases)합니다(예: 이 문서 작성 시 tee-clc-14.134.0.zip).
 1. .zip의 콘텐츠를 디스크의 폴더로 추출합니다.
@@ -69,7 +69,7 @@ TEE-CLC를 사용하여 설정하는 두 가지 방법이 있습니다.
 
 TEE-CLC가 설치되면 `tf eula` 명령을 실행하여 클라이언트의 라이선스 계약을 보고 동의할 수 있습니다.
 
-마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
+마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>TEE-CLC를 사용하여 리포지토리에 연결
 
@@ -117,7 +117,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 Mac용 Visual Studio 확장 갤러리에는 TFVC 연결에 대한 제한된 지원을 제공하는 Team Foundation 버전 제어 확장이 있습니다. 확장은 지원되지 않으며 여러 가지 알려진 문제가 있으므로 확장을 사용할 때 환경이 달라질 수 있습니다.
 
-확장을 설치하려면 Mac용 Visual Studio를 시작하고 **Visual Studio > 확장** 메뉴를 선택합니다. **갤러리** 탭에서 **버전 제어 > TFS 및 Azure DevOps용 Team Foundation 버전 제어**를 선택하고 **설치...** 를 클릭합니다.
+확장을 설치하려면 Mac용 Visual Studio를 시작하고 **Visual Studio > 확장** 메뉴를 선택합니다. **갤러리** 탭에서 **버전 제어 > TFS 및 Azure DevOps용 Team Foundation 버전 제어** 를 선택하고 **설치...** 를 클릭합니다.
 
 ![확장 관리자](media/tfvc-install.png)
 
@@ -127,7 +127,7 @@ Mac용 Visual Studio 확장 갤러리에는 TFVC 연결에 대한 제한된 지�
 
 TFVC 확장에 대한 업데이트는 정기적으로 이루어집니다. 업데이트에 액세스하려면 메뉴에서 **Visual Studio > 확장...** 을 선택하고 **업데이트** 탭을 선택합니다. 목록에서 확장을 선택하고 **업데이트** 단추를 누릅니다.
 
-다음 대화 상자에서 **설치**를 눌러 이전 패키지를 제거하고 새 패키지를 설치합니다.
+다음 대화 상자에서 **설치** 를 눌러 이전 패키지를 제거하고 새 패키지를 설치합니다.
 
 ### <a name="using-the-extension"></a>확장 사용
 
@@ -135,7 +135,7 @@ TFVC 확장에 대한 업데이트는 정기적으로 이루어집니다. 업데
 
 ![확장을 여는 메뉴 항목](media/tfvc-source-control-explorer-devops.png)
 
-VSTS 또는 Team Foundation Server를 선택하여 시작하고 **계속**을 누릅니다.
+VSTS 또는 Team Foundation Server를 선택하여 시작하고 **계속** 을 누릅니다.
 
 ![서버와 연결](media/tfvc-choose-server-type-devops.png)
 
@@ -147,7 +147,7 @@ Azure Repos에서 호스팅되는 프로젝트를 선택하면 Microsoft 계정 
 
 #### <a name="tfs-authentication"></a>TFS 인증
 
-TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합니다. NTLM 인증을 사용할 도메인을 입력하고 기본 인증을 사용하려면 비워 둡니다. **서버 추가**를 선택합니다.
+TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합니다. NTLM 인증을 사용할 도메인을 입력하고 기본 인증을 사용하려면 비워 둡니다. **서버 추가** 를 선택합니다.
 
 ![TFS 서버에 로그인](media/tfvc-login.png)
 
@@ -176,17 +176,17 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 ### <a name="creating-a-new-workspace"></a>새 작업 영역 만들기
 
-프로젝트를 작업을 시작하려면 _작업 영역_이 있어야 합니다. 작업 영역이 아직 없는 경우 **소스 제어에서 열기** 대화 상자의 **작업 영역** 콤보 상자에서 작업 영역을 만들 수 있습니다.
+프로젝트를 작업을 시작하려면 _작업 영역_ 이 있어야 합니다. 작업 영역이 아직 없는 경우 **소스 제어에서 열기** 대화 상자의 **작업 영역** 콤보 상자에서 작업 영역을 만들 수 있습니다.
 
 ![새 작업 영역 콤보 상자 옵션 만들기](media/tfvc-create-new-workspace.png)
 
-새 작업 영역의 로컬 경로를 설정하고 **작업 영역 만들기**를 선택합니다.
+새 작업 영역의 로컬 경로를 설정하고 **작업 영역 만들기** 를 선택합니다.
 
 ![새 작업 영역의 이름 및 로컬 경로 입력](media/tfvc-local-workspace.png)
 
 ### <a name="using-the-source-code-explorer"></a>소스 코드 탐색기 사용
 
-작업 영역을 만들고 프로젝트를 매핑하면 _소스 코드 탐색기_를 사용하여 작업을 시작할 수 있습니다.
+작업 영역을 만들고 프로젝트를 매핑하면 _소스 코드 탐색기_ 를 사용하여 작업을 시작할 수 있습니다.
 
 소스 코드 탐색기를 열려면 **버전 제어 > TFS/Azure DevOps > 소스 제어 탐색기** 메뉴 항목을 선택합니다.
 
@@ -212,18 +212,18 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 
 로컬 작업 영역으로 원격 프로젝트를 설정하려면 다음 단계를 수행합니다.
 
-1. 콤보 상자에서 **서버**를 선택합니다.
+1. 콤보 상자에서 **서버** 를 선택합니다.
 1. "작업 공간 없음" 및 로컬 경로가 "매핑되지 않음"을 참고합니다. **매핑되지 않음** 링크를 선택하여 **새 작업 영역 만들기** 대화 상자를 표시합니다.
-1. 작업 영역의 이름을 지정한 후 **작업 폴더 추가**를 클릭하여 컴퓨터의 로컬 폴더에 프로젝트를 매핑합니다.
+1. 작업 영역의 이름을 지정한 후 **작업 폴더 추가** 를 클릭하여 컴퓨터의 로컬 폴더에 프로젝트를 매핑합니다.
 
     ![기본 옵션을 표시하는 새 작업 영역 대화 상자 만들기](media/tfvc-workspace1.png)
 
-1. "$" 폴더를 선택하여 서버의 모든 프로젝트를 동일한 작업 영역에 매핑하거나 개별 프로젝트를 선택하고 **확인**을 클릭합니다.
+1. "$" 폴더를 선택하여 서버의 모든 프로젝트를 동일한 작업 영역에 매핑하거나 개별 프로젝트를 선택하고 **확인** 을 클릭합니다.
 
     ![모든 프로젝트를 표시하는 폴더 대화 상자 찾아보기](media/tfvc-workspace2.png)
 
-1. 프로젝트를 매핑하려는 로컬 머신의 위치를 선택하고 **폴더 선택**을 클릭합니다.
-1. **확인**을 눌러 새 작업 영역의 세부 정보 확인
+1. 프로젝트를 매핑하려는 로컬 머신의 위치를 선택하고 **폴더 선택** 을 클릭합니다.
+1. **확인** 을 눌러 새 작업 영역의 세부 정보 확인
 
     ![작업 폴더가 추가된 새 작업 영역 대화 상자 만들기](media/tfvc-workspace3.png)
 
@@ -241,17 +241,17 @@ TFS에 연결하려면 서버 세부 정보와 계정 자격 증명을 입력합
 - Basic
 - Ntlm
 
-기본 인증을 사용하려면 다음 단계에 따라 Azure DevOps Services에서 **대체 인증 자격 증명**을 활성화해야 합니다.
+기본 인증을 사용하려면 다음 단계에 따라 Azure DevOps Services에서 **대체 인증 자격 증명** 을 활성화해야 합니다.
 
 1. Azure DevOps 조직 소유자로 로그인합니다(https:\//dev.azure.com/{organization}/{project}).
 
-2. 조직 도구 모음에서 기어 아이콘을 선택하고 **정책**을 선택합니다.
+2. 조직 도구 모음에서 기어 아이콘을 선택하고 **정책** 을 선택합니다.
 
-    ![선택한 정책 설정 옵션](media/tfvc-auth2.png)
+    ![기어 아이콘이 선택되고 드롭다운 메뉴에서 정책이 선택된 Azure DevOps 조직 도구 모음의 스크린샷.](media/tfvc-auth2.png)
 
 3. 애플리케이션 연결 설정을 검토합니다. 보안 정책에 따라 다음 설정을 변경합니다.
 
-    ![선택한 정책 설정 옵션](media/tfvc-auth.png)
+    ![애플리케이션 연결 정책에 대한 설정을 보여주는 Azure DevOps Services의 정책 화면 스크린샷.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>TFVC에 아무것도 표시되지 않음
 

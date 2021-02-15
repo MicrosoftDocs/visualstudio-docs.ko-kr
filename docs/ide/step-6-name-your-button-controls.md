@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868883"
 ---
 # <a name="step-6-name-your-button-controls"></a>6단계: 단추 컨트롤 이름 지정
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480319"
 
 1. 폼에서 **닫기** 단추를 선택합니다. 단추가 모두 선택되어 있는 경우 **Esc** 키를 눌러 선택을 취소합니다. **(Name)** 속성이 보일 때까지 **속성** 창을 스크롤합니다. 속성이 사전순으로 정렬되어 있는 경우 **(Name)** 속성은 목록의 위쪽에 있습니다. 다음 스크린샷과 같이 이름을 **closeButton** 으로 바꿉니다.
 
-    ![closeButton 이름이 있는 속성 창](../ide/media/express_setnameproperty.png)<br>*_**closeButton**_ 이름이 있는 **_속성_* 창
+    ![closeButton 이름이 있는 속성 창](../ide/media/express_setnameproperty.png)<br>‘**closeButton** 이름이 있는 **속성** 창’ _*_ _**_*
 
     > [!NOTE]
     > 단추 이름을 “close”와 “Button” 사이에 공백이 있는 **close Button** 으로 변경해 봅니다. 이렇게 하면 IDE에서 오류 메시지를 표시합니다. "속성 값이 잘못되었습니다." 공백을 비롯한 일부 문자는 컨트롤 이름에 사용할 수 없습니다.
@@ -48,7 +48,7 @@ ms.locfileid: "96480319"
    이 탭에서는 다음 스크린샷에 표시된 것처럼 양식 이면의 코드 파일을 표시합니다.
 
     ![Visual C&#35; 코드가 사용된 Form1.cs 탭](../ide/media/express_showbuttoncode.png)<br>
-*C# 코드가 사용된 *_Form1.cs_* 탭
+*C# 코드가 사용된 **Form1.cs** 탭
 
     > [!NOTE]
     > Form1.cs 또는 Form1.vb 탭에 **showButton** 이 **ShowButton** 으로 대신 표시될 수 있습니다.

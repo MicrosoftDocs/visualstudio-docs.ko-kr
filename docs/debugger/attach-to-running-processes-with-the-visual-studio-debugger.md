@@ -26,19 +26,19 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866010"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
-로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스가 실행된 후 **디버그** > **프로세스에 연결** 을 선택하거나 Visual Studio에서 **Ctrl**+**Alt**+**P** 를 누르고, **프로세스에 연결** 대화 상자를 사용하여 프로세스에 디버거를 연결합니다.
+로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스가 실행된 후 **디버그** > **프로세스에 연결** 을 선택하거나 Visual Studio에서 **Ctrl**+**Alt**+**p** 를 누르고, **프로세스에 연결** 대화 상자를 사용하여 프로세스에 디버거를 연결합니다.
 
 **프로세스에 연결** 을 사용하여 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버그하거나, 여러 프로세스를 동시에 디버그하거나, Visual Studio에서 생성되지 않은 앱을 디버그하거나, 디버거가 연결된 Visual Studio에서 시작하지 않은 앱을 디버그할 수 있습니다. 예를 들어 디버거를 사용하지 않고 앱을 실행해 예외가 발생하는 경우 앱을 실행하는 프로세스에 디버거를 연결하고 디버깅을 시작할 수 있습니다.
 

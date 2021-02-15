@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719658"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006428"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes를 사용하여 테스트 중인 코드 격리
 
@@ -36,7 +36,7 @@ Fakes는 두 가지 버전이 있습니다.
 - Visual Studio Enterprise
 - .NET Framework 프로젝트
 ::: moniker range=">=vs-2019"
-- Visual Studio 2019 업데이트 6에서 미리 보기로 제공한 .NET Core 및 SDK 스타일 프로젝트 지원은 업데이트 8에서 기본적으로 사용하도록 설정되어 있습니다. 자세한 내용은 [.NET Core 및 SDK 스타일 프로젝트용 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)를 참조하세요.
+- Visual Studio 2019 업데이트 6에서 미리 보기로 제공한 .NET Core, .NET 5.0, SDK 스타일 프로젝트 지원은 업데이트 8에서 기본적으로 사용하도록 설정되어 있습니다. 자세한 내용은 [.NET Core 및 SDK 스타일 프로젝트용 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)를 참조하세요.
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Fakes는 두 가지 버전이 있습니다.
    1. **솔루션 탐색기** 에서 
        - 이전 .NET Framework 프로젝트(비 SDK 스타일)의 경우 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
        ::: moniker range=">=vs-2019"
-       - .NET Framework 또는 .NET Core를 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리**, **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
+       - .NET Framework, .NET Core 또는 .NET 5.0을 대상으로 하는 SDK 스타일 프로젝트의 경우 **종속성** 노드를 확장하여 **어셈블리**, **프로젝트** 또는 **패키지** 에서 모조할 어셈블리를 찾습니다.
        ::: moniker-end
        - Visual Basic에서 작업하는 경우 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시** 를 선택하여 **참조** 노드를 봅니다.
    2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간** 을 shim하려면 **System.dll** 을 선택합니다.
@@ -269,21 +269,21 @@ Microsoft Fakes에는 Visual Studio Enterprise가 필요하므로, Fakes 어셈�
 </Project>
 ```
 
-이 참조는 암시적으로 테스트 프로젝트에 어셈블리 참조를 추가하여 이동한 것이므로 SDK 스타일 프로젝트(.NET Core 및 .NET Framework)에서 수동으로 추가해야 합니다. 이 방법을 따르는 경우 부모 어셈블리가 변경될 때 Fakes 어셈블리가 업데이트되도록 해야 합니다.
+이 참조는 암시적으로 테스트 프로젝트에 어셈블리 참조를 추가하여 이동한 것이므로 SDK 스타일 프로젝트(.NET Core, .NET 5.0, .NET Framework)에서 수동으로 추가해야 합니다. 이 방법을 따르는 경우 부모 어셈블리가 변경될 때 Fakes 어셈블리가 업데이트되도록 해야 합니다.
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Microsoft Fakes 테스트 실행
 Microsoft Fakes 어셈블리가 구성된 `FakesAssemblies` 디렉터리(기본값 `$(ProjectDir)FakesAssemblies`)에 있는 한, [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)을 사용하여 테스트를 실행할 수 있습니다.
 
 ::: moniker range=">=vs-2019"
-Microsoft Fakes를 사용하는 .NET Core 프로젝트에서 [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)으로 분산 테스트를 실행하려면 Visual Studio 2019 업데이트 9 미리 보기 `20201020-06` 이상이 필요합니다.
+Microsoft Fakes를 사용하는 .NET Core 및 .NET 5.0 프로젝트에서 [vstest 작업](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)으로 분산 테스트를 실행하려면 Visual Studio 2019 업데이트 9 미리 보기 `20201020-06` 이상이 필요합니다.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Microsoft Fakes를 사용하는 .NET Framework 테스트 프로젝트를 SDK 스타일 .NET Framework 또는 .NET Core 프로젝트로 전환
-Microsoft Fakes에 대해 설정된 .NET Framework를 .NET Core로 전환하려면 최소한의 변경만 필요합니다. 고려해야 할 사례는 다음과 같습니다.
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Microsoft Fakes를 사용하는 .NET Framework 테스트 프로젝트를 SDK 스타일 .NET Framework, .NET Core 또는 .NET 5.0 프로젝트로 전환
+Microsoft Fakes에 대해 설정된 .NET Framework를 .NET Core 또는 .NET 5.0으로 전환하려면 최소한의 변경만 필요합니다. 고려해야 할 사례는 다음과 같습니다.
 - 사용자 지정 프로젝트 템플릿을 사용하는 경우 해당 템플릿이 SDK 스타일이고 호환되는 대상 프레임워크에 대한 빌드인지 확인해야 합니다.
-- 일부 형식은 .NET Framework 및 .NET Core에서 서로 다른 어셈블리에 있습니다. 예를 들어 `System.DateTime`은 .NET Framework에서는 `System`/`mscorlib`에 있고 .NET Core에서는 `System.Runtime`에 있습니다. 이러한 시나리오에서는 모조되는 어셈블리를 변경해야 합니다.
+- 일부 형식은 .NET Framework 및 .NET Core/.NET 5.0에서 서로 다른 어셈블리에 있습니다. 예를 들어 `System.DateTime`은 .NET Framework에서는 `System`/`mscorlib`에 있고 .NET Core 및 .NET 5.0에서는 `System.Runtime`에 있습니다. 이러한 시나리오에서는 모조되는 어셈블리를 변경해야 합니다.
 - Fakes 어셈블리 및 테스트 프로젝트에 대한 어셈블리 참조가 있는 경우 다음과 같은 누락된 참조에 대한 빌드 경고가 표시될 수 있습니다.
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ Microsoft Fakes에 대해 설정된 .NET Framework를 .NET Core로 전환하려�
 - Microsoft Fakes 테스트는 모든 사용 가능한 Microsoft TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
 - Visual Studio Enterprise 2015 이상에서 Microsoft Fakes를 사용하는 테스트 프로젝트에 대해 코드 검사가 지원됩니다.
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK 스타일 .NET Framework 및 .NET Core 프로젝트의 Microsoft Fakes
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>SDK 스타일 .NET Framework, .NET Core, .NET 5.0 프로젝트의 Microsoft Fakes
 - Microsoft Fakes 어셈블리 생성은 Visual Studio Enterprise 2019 업데이트 6에서는 미리 보기로 지원되고 업데이트 8에서는 기본적으로 사용하도록 설정되어 있습니다.
 - .NET Framework를 대상으로 하는 프로젝트에 대한 Microsoft Fakes 테스트는 사용 가능한 모든 Microsoft TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
-- .NET Core를 대상으로 하는 프로젝트에 대한 Microsoft Fakes 테스트는 버전이 [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 이상인 Microsoft.TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
+- .NET Core 및 .NET 5.0을 대상으로 하는 프로젝트에 대한 Microsoft Fakes 테스트는 버전이 [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) 이상인 Microsoft.TestPlatform NuGet 패키지를 사용하여 실행할 수 있습니다.
 - Visual Studio Enterprise version 2015 이상에서 .NET Framework를 대상으로 Microsoft Fakes를 사용하는 테스트 프로젝트에 대해 코드 검사가 지원됩니다.
-- .NET Core를 대상으로 Microsoft Fakes를 사용하는 테스트 프로젝트에 대한 코드 검사 지원은 개발 중입니다.
+- .NET Core 및 .NET 5.0을 대상으로 Microsoft Fakes를 사용하는 테스트 프로젝트에 대한 코드 검사 지원은 Visual Studio 2019 업데이트 9 이상에서 사용할 수 있습니다.
 
 
 ## <a name="in-this-section"></a>단원 내용

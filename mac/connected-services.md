@@ -1,17 +1,17 @@
 ---
 title: 연결된 서비스
-description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 스토리지, 인증 및 푸시 알림 추가
+description: Mac용 Visual Studio 내에서 플랫폼 간 애플리케이션에 Azure 데이터 스토리지, 인증 및 푸시 알림을 추가하는 방법을 알아봅니다.
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938762"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847083"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
 
@@ -19,7 +19,7 @@ ms.locfileid: "85938762"
 
 이 연습에서는 클라우드 데이터 스토리지, 인증 및 푸시 알림을 플랫폼 간 Xamarin.Forms PCL(이식 가능한 클래스 라이브러리) 애플리케이션으로 가져오는 Azure 백 엔드 서비스를 추가하는 방법을 보여줍니다.
 
-1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
+1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리** 가 표시됩니다.
   애플리케이션 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
 
     [![Mac용 Visual Studio에서 연결된 Services 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 Services 노드")](media/connected-services-image001.png#lightbox)
@@ -34,7 +34,7 @@ ms.locfileid: "85938762"
 
     [![서비스를 참조해야 하는 모든 프로젝트 확인](media/connected-services-image003-sml.png "서비스를 참조해야 하는 모든 프로젝트 확인")](media/connected-services-image003.png#lightbox)
 
-4. NuGet 패키지용 **라이선스 승인** 대화 상자에서 **동의**를 선택합니다.
+4. NuGet 패키지용 **라이선스 승인** 대화 상자에서 **동의** 를 선택합니다.
   MobileClient 및 종속성을 위한 대화 상자 및 오프라인 데이터 동기화에 필요한 SQLiteStore를 위한 대화 상자 등 동의를 위한 대화 상자는 두 개가 있을 수 있습니다.
 
     [![라이선스 계약에 동의](media/connected-services-image004-sml.png "라이선스 계약에 동의")](media/connected-services-image004.png#lightbox)
@@ -55,7 +55,7 @@ ms.locfileid: "85938762"
 
     ![구성 코드를 앱에 복사](media/connected-services-image007.png "구성 코드를 앱에 복사")
 
-8. **다음 단계**의 설명서에 따라 데이터, 오프라인 동기화, 인증 및 푸시 알림을 앱에 추가합니다.
+8. **다음 단계** 의 설명서에 따라 데이터, 오프라인 동기화, 인증 및 푸시 알림을 앱에 추가합니다.
 
     [![다음 단계 지침 검토](media/connected-services-image008-sml.png "다음 단계 지침 검토")](media/connected-services-image008.png#lightbox)
 

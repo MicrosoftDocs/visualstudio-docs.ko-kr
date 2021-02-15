@@ -1,21 +1,21 @@
 ---
 title: Subversion 리포지토리 설정
-description: Mac용 Visual Studio에서 Subversion 사용
+description: Mac용 Visual Studio에서 Subversion을 중앙 집중식 버전 제어 시스템으로 설치하고 설정하는 방법을 알아봅니다.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: 78a5dd2abbef177e2eb949d25d779a46ecc65bda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5230958fa1624acf7609d6cad7d885e43c013d0
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950691"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847080"
 ---
 # <a name="set-up-a-subversion-repository"></a>Subversion 리포지토리 설정
 
-Subversion은 중앙 집중화된 _버전 제어 시스템_이므로, 모든 파일과 수정 버전을 포함하는 단일 서버가 있으며 사용자는 여기에서 임의의 파일 버전을 체크 아웃할 수 있습니다. 원격 Subversion 리포지토리에서 파일을 체크 아웃하면 사용자는 해당 시점을 기준으로 리포지토리의 스냅샷을 가져옵니다.
+Subversion은 중앙 집중화된 _버전 제어 시스템_ 이므로, 모든 파일과 수정 버전을 포함하는 단일 서버가 있으며 사용자는 여기에서 임의의 파일 버전을 체크 아웃할 수 있습니다. 원격 Subversion 리포지토리에서 파일을 체크 아웃하면 사용자는 해당 시점을 기준으로 리포지토리의 스냅샷을 가져옵니다.
 
 버전 제어를 위해 Subversion을 사용하려면 Subversion이 컴퓨터에 설치되어 있어야 합니다. 컴퓨터에 Subversion이 설치되어 있는지 확인하려면 터미널에서 다음 명령을 사용합니다.
 
@@ -25,7 +25,7 @@ svn --version
 
 이 명령은 버전 번호를 반환합니다.
 
-Subversion이 아직 설치되어 있지 않은 경우 Subversion을 받는 가장 쉬운 방법은 _Xcode 명령줄 도구_를 설치하는 것입니다. 아래 명령을 사용하여 Xcode 명령줄 도구 및 Subversion을 설치합니다.
+Subversion이 아직 설치되어 있지 않은 경우 Subversion을 받는 가장 쉬운 방법은 _Xcode 명령줄 도구_ 를 설치하는 것입니다. 아래 명령을 사용하여 Xcode 명령줄 도구 및 Subversion을 설치합니다.
 
 ```bash
 xcode-select --install
@@ -43,13 +43,13 @@ Subversion이 컴퓨터에 설치되면 SVN에서 다음 단계를 사용하여 
 
     ![프로젝트 게시 시작](media/version-control-subversion2.png)
 
-4. **리포지토리에 연결** 탭의 상단 드롭다운에서 **Subversion**을 선택합니다.
+4. **리포지토리에 연결** 탭의 상단 드롭다운에서 **Subversion** 을 선택합니다.
 
 5. 1단계에서 제공된 URL을 입력합니다. URL이 입력되면 다른 필드는 기본적으로 채워집니다.
 
     ![리포지토리 선택 및 세부 정보 입력 대화 상자](media/version-control-subversion3.png)
 
-7. **확인**을 클릭한 다음 **게시**를 눌러 확인합니다.
+7. **확인** 을 클릭한 다음 **게시** 를 눌러 확인합니다.
 
 7. 아래 그림과 같은 메시지가 표시되면 리포지토리를 만든 사이트에 대한 자격 증명을 입력합니다.
 

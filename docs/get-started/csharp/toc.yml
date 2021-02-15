@@ -28,18 +28,6 @@
       href: tutorial-wpf.md
     - name: Windows Forms 앱 만들기
       href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 비디오 자습서 - ASP.NET Core 웹앱 만들기
-      items:
-        - name: 1 - Visual Studio 설치
-          href: tutorial-aspnet-core-ef-step-01.md
-        - name: 2 - 첫 번째 ASP.NET Core 웹앱 만들기
-          href: tutorial-aspnet-core-ef-step-02.md
-        - name: 3 - 데이터 작업
-          href: tutorial-aspnet-core-ef-step-03.md
-        - name: 4 - 웹 API 노출
-          href: tutorial-aspnet-core-ef-step-04.md
-        - name: 5 - Azure에 ASP.NET Core 앱 배포
-          href: tutorial-aspnet-core-ef-step-05.md
 - name: Visual Studio 학습
   expanded: true
   items:

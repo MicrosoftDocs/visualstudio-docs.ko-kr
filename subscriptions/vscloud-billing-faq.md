@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353423"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572878"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -28,6 +28,9 @@ A: 대부분의 Azure 구독을 사용할 수 있습니다. [EA(기업 계약)](
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>Q: 다른 Azure 서비스를 구입해야 하나요?
 A: 전혀 그렇지 않습니다. Azure를 통해 Visual Studio 클라우드 구독을 구입하려는 경우 그렇게 할 수 있습니다.
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>Q: 청구 및 사용량 현황 데이터는 어디에서 볼 수 있나요?
+A:  [청구서 및 사용량 보기](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)에 대한 정보를 확인하세요.
 
 ## <a name="enterprise-agreement-ea-customers"></a>EA(기업계약) 고객
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q: Visual Studio 클라우드 구독을 구입하기 위해 기업 계약을 사용할 수 있나요?

@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962732"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>테스트 탐색기에서 테스트 실행
 
-테스트 프로젝트를 빌드하면 테스트가 **테스트 탐색기** 에 나타납니다. **테스트 탐색기** 가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **Windows** 를 선택한 다음, **테스트 탐색기** 를 선택합니다.
+테스트 프로젝트를 빌드하면 테스트가 **테스트 탐색기** 에 나타납니다. **테스트 탐색기** 가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트** 를 선택하고 **창** 을 선택한 다음, **테스트 탐색기** 를 선택하거나 **Ctrl** + **E**, **T** 를 누릅니다.
 
 ::: moniker range="vs-2017"
 ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ public void My_Test ()
 ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 테스트를 선택하면 테스트 세부 정보 창에 해당 테스트의 세부 정보가 표시됩니다. 오른쪽 클릭 메뉴에서 **테스트 열기** 를(키보드: **F12**) 선택하여 선택한 테스트에 대한 소스 코드를 표시합니다.
+**모두 실행** 을 선택하여 모든 테스트를 실행(**Ctrl** + **R**, **V**)하거나 **실행** 을 선택하여 실행할 테스트의 하위 집합을 선택(**Ctrl** + **R**, **T**)할 수 있습니다. 테스트를 선택하면 테스트 세부 정보 창에 해당 테스트의 세부 정보가 표시됩니다. 오른쪽 클릭 메뉴에서 **테스트 열기** 를(키보드: **F12**) 선택하여 선택한 테스트에 대한 소스 코드를 표시합니다.
 
 ::: moniker range="vs-2017"
 

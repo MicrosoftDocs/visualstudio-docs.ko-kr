@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99182000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951929"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>자습서: Visual Studio 2017의 리포지토리에서 프로젝트 열기
 
@@ -43,7 +43,7 @@ ms.locfileid: "99182000"
 
     ![로컬 Git 리포지토리 섹션에서 복제 선택](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. **‘복제할 Git 리포지토리의 URL 입력’ *_ 상자에서 리포지토리의 URL을 입력하거나 붙여넣고* Enter** 키를 누릅니다. (GitHub에 로그인하라는 메시지가 표시될 수 있습니다. 이 경우 GitHub에 로그인합니다.)
+1. **‘복제할 Git 리포지토리의 URL 입력’** 상자에서 리포지토리의 URL을 입력하거나 붙여넣고 Enter 키를 누릅니다.*__*** (GitHub에 로그인하라는 메시지가 표시될 수 있습니다. 이 경우 GitHub에 로그인합니다.)
 
    Visual Studio가 리포지토리를 복제한 후에는 팀 탐색기가 닫히고 솔루션 탐색기가 열립니다. *Click on Solutions and Folders above to view a list of Solutions*(위에서 솔루션 목록을 표시할 솔루션 및 폴더를 클릭하세요.) 메시지가 표시됩니다. **솔루션 및 폴더** 를 선택합니다.
 

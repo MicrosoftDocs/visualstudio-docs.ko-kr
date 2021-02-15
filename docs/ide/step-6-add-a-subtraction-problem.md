@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 64d28df03c18207a3f0ded58caa48d4b41800824
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868935"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.
@@ -62,12 +62,12 @@ ms.locfileid: "96480670"
      이 자습서의 앞부분에서 “randomizer”로 이름을 지정한 Random 클래스의 `Next()` 메서드를 여러 가지 방법으로 호출할 수 있습니다. 여러 가지 방법으로 호출할 수 있는 메서드를 오버로드된 메서드라고 하며, IntelliSense를 사용하여 이를 탐색해 볼 수 있습니다. `Next()` 메서드에 대한 IntelliSense 창의 도구 설명을 다시 살펴봅니다.
 
      ![IntelliSense 창 도구 설명](../ide/media/express_overloads.png)<br/>
-**_IntelliSense_* _ 창 도구 설명
+***IntelliSense** _ 창 도구 설명
 
      도구 설명에 **(+2개 오버로드)** 가 표시되며, 이는 `Next()` 메서드를 두 가지 다른 방법으로 호출할 수 있음을 나타냅니다. 오버로드에는 저마다 다른 개수와 형식의 인수가 포함되어 있으므로 작동 방식도 서로 조금씩 다릅니다. 예를 들어 메서드는 단일 정수 인수를 사용하고 메서드 오버로드 중 하나는 정수 하나와 문자열 하나를 사용할 수 있습니다. 수행하려는 작업을 기반으로 올바른 오버로드를 선택합니다. `StartTheQuiz()` 메서드에 코드를 추가할 때 `randomizer.Next(`를 입력하는 즉시 IntelliSense 창에 추가 정보가 나타납니다. 오버로드를 순환하려면 다음 그림과 같이 **위쪽 화살표** 키와 **아래쪽 화살표** 키를 선택합니다.
 
      ![IntelliSense의 Next&#40;&#41; 메서드 오버로드](../ide/media/express_nextoverload.png)<br/>
-*_**IntelliSense**_ 의 ***Next()** _ 메서드 오버로드
+‘***IntelliSense*** 의  ***Next()** 메서드 오버로드’__*
 
      이 경우 최소값 및 최대값을 지정할 수 있도록 마지막 오버로드를 선택하는 것이 좋습니다.
 
@@ -87,8 +87,8 @@ ms.locfileid: "96480670"
 
      다음 그림과 같이 프로그램에 빼기 문제가 포함되었습니다.
 
-     ![뺄셈 문제가 있는 수학 퀴즈](../ide/media/express_addsubtract.png)<br/>
-*_뺄셈 문제_* 가 있는 수학 퀴즈
+     ![뺄셈 문제가 있는 수학 퀴즈](../ide/media/express_addsubtract.png)<br/>‘뺄셈 문제가 있는 **수학 퀴즈**’
+*__*
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

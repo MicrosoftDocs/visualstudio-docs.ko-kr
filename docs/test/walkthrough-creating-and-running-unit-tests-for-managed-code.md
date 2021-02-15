@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948012"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -138,7 +138,7 @@ ms.locfileid: "95598551"
 
 6. **솔루션 탐색기** 에서 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기** 를 선택하여 파일의 이름을 *BankAccount.cs* 로 바꿉니다.
 
-7. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
+7. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭하거나 **Ctrl** + **Shift** + **B** 를 누릅니다.
 
 이제 테스트할 수 있는 메서드를 포함한 프로젝트가 준비되었습니다. 이 문서에서는 `Debit` 메서드 테스트에 집중합니다. `Debit` 메서드는 계좌에서 돈을 인출할 때 호출됩니다.
 
@@ -187,7 +187,7 @@ ms.locfileid: "95598551"
 
 ### <a name="rename-a-file-and-class"></a>파일 및 클래스 이름 바꾸기
 
-1. 파일의 이름을 바꾸려면 **솔루션 탐색기** 에서 BankTests 프로젝트의 *UnitTest1.cs* 파일을 선택합니다. 오른쪽 클릭 메뉴에서 **이름 바꾸기** 를 선택한 다음, 파일 이름을 *BankAccountTests.cs* 로 바꿉니다.
+1. 파일의 이름을 바꾸려면 **솔루션 탐색기** 에서 BankTests 프로젝트의 *UnitTest1.cs* 파일을 선택합니다. 오른쪽 클릭 메뉴에서 **이름 바꾸기** 를 선택하거나 **F2** 키를 누른 다음, 파일 이름을 *BankAccountTests.cs* 로 바꿉니다.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ ms.locfileid: "95598551"
 
 ::: moniker range=">=vs-2019"
 
-2. 클래스의 이름을 바꾸려면 코드 편집기에서 커서를 `UnitTest1`에 두고 **이름 바꾸기** 를 선택합니다. **BankAccountTests** 를 입력한 다음, **Enter** 를 누릅니다.
+2. 클래스의 이름을 바꾸려면 코드 편집기에서 커서를 `UnitTest1`에 두고 **이름 바꾸기** 를 선택하거나 **F2** 키를 누릅니다. **BankAccountTests** 를 입력한 다음, **Enter** 를 누릅니다.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="build-and-run-the-test"></a>테스트 빌드 및 실행
 
-1. **빌드** 메뉴에서 **솔루션 빌드** 를 선택합니다.
+1. **빌드** 메뉴에서 **솔루션 빌드** 를 선택하거나 **Ctrl** + **Shift** + **B** 를 누릅니다.
 
-2. **테스트 탐색기** 가 열리지 않은 경우 상단 메뉴 모음에서 **테스트** > **Windows** > **테스트 탐색기** 를 선택하여 엽니다.
+2. **테스트 탐색기** 가 열리지 않은 경우 상단 메뉴 모음에서 **테스트** > **창** > **테스트 탐색기** 를 선택하여 열거나 **Ctrl** + **E**, **T** 를 누릅니다.
 
-3. **모두 실행** 을 선택하여 테스트를 실행합니다.
+3. **모두 실행** 을 선택하여 테스트를 실행하거나 **Ctrl** + **R**, **V** 를 누릅니다.
 
    테스트가 실행되는 동안 **테스트 탐색기** 창 맨 위의 상태 표시줄에 애니메이션이 사용됩니다. 테스트 실행이 끝날 때 테스트 메서드가 통과했으면 녹색이 되고 테스트가 실패하면 빨간색이 됩니다.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>테스트 다시 실행
 
-**테스트 탐색기** 에서 **모두 실행** 을 선택하여 테스트를 다시 실행합니다. 빨강/녹색 막대가 테스트를 통과했음을 나타내는 녹색으로 바뀝니다.
+**테스트 탐색기** 에서 **모두 실행** 을 선택하여 테스트를 다시 실행하거나 **Ctrl** + **R**, **V** 를 누릅니다. 빨강/녹색 막대가 테스트를 통과했음을 나타내는 녹색으로 바뀝니다.
 
 ![통과한 테스트를 보여주는 Visual Studio 2019의 텍스트 탐색기](media/test-explorer-banktests-passed.png)
 

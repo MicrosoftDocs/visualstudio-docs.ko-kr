@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189799"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727465"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
@@ -91,10 +91,10 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
 ## <a name="publish-to-azure"></a>Azure에 게시
 
-1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시** 를 선택합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image5.png)
+1. 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시 > Azure에 게시** 를 선택합니다.  ![선택한 AF-httptrigger 프로젝트와 컨텍스트 메뉴에 강조 표시된 Azure에 게시 명령을 보여주는 Aure Functions의 스크린샷.](media/azure-functions-image5.png)
 2. Azure 계정을 Mac용 Visual  Studio에 이미 연결한 경우 사용 가능한 앱 서비스 목록이 표시됩니다. 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다.
 3. **Azure App Service 게시** 대화 상자에서 기존 앱 서비스를 선택하거나 **새로 만들기** 를 클릭하여 새 앱을 만들 수 있습니다.
-4. **새 App Service 만들기** 대화 상자에서 다음과 같은 설정을 입력합니다.  ![Azure 메뉴 옵션에 게시](media/azure-functions-image7.png)
+4. **새 App Service 만들기** 대화 상자에서 다음과 같은 설정을 입력합니다.  ![Azure에서 새 App Service를 만들기 위한 설정을 보여주는 Azure Functions의 새 App Service 창 스크린샷.](media/azure-functions-image7.png)
 
     |설정  |설명  |
     |---------|---------|
@@ -108,13 +108,13 @@ Mac용 Visual Studio에서 Azure Functions 지원을 통해 로컬 개발 컴퓨
 
 5. **다음** 을 클릭하여 스토리지 계정을 만듭니다. Azure 스토리지 계정은 함수 런타임에서 필요합니다. **사용자 지정** 을 클릭하여 범용 스토리지 계정을 만들거나 기존 스토리지 계정을 사용합니다.
 
-    ![Azure 메뉴 옵션에 게시](media/azure-functions-image8.png)
+    ![Azure Functions에서 스토리지 계정 구성 화면의 스크린샷. 스토리지 계정에 대해 사용자 지정이 선택되고 계정 이름 및 계정 유형이 입력됩니다.](media/azure-functions-image8.png)
 
 6. **만들기** 를 클릭하여 이러한 설정으로 Azure에서 함수 앱 및 관련 리소스를 만들고 함수 프로젝트 코드를 배포합니다.
 
 7. 게시 중에 "Azure에서 함수 버전 업데이트"를 알리는 대화 상자가 표시될 수 있습니다. **예** 를 클릭합니다.
 
-    ![Azure 메뉴 옵션에 게시](media/azure-functions-image12.png)
+    !["로컬 Functions 버전과 일치하도록 Azure 애플리케이션 설정 업데이트"를 요청하는 Azure의 Functions 버전 업데이트 대화상자 프롬프트 스크린샷.](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > `FUNCTIONS_EXTENSION_VERSION`이 "beta"로 올바르게 설정되지 않은 Mac용 Visual Studio 7.6 버전에 버그가 있습니다. 이는 함수가 실행되지 않을 수 있음을 의미합니다. 이 문제를 해결하려면 [함수 앱 설정](#function-app-settings)으로 이동하여 `FUNCTIONS_EXTENSION_VERSION`을 "-1"에서 "beta"로 설정합니다.

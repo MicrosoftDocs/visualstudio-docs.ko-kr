@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950408"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729433"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>프로젝트에 NuGet 패키지 포함
 
@@ -32,7 +32,7 @@ NuGet 패키지 기능을 보여주기 위해 먼저 새로운 애플리케이�
 
 ## <a name="adding-a-package"></a>패키지 추가하기
 
-Mac용 Visual Studio에서 프로젝트를 연 상태로 **Solution Pad**의 **패키지** 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가**를 선택합니다.
+Mac용 Visual Studio에서 프로젝트를 연 상태로 **Solution Pad** 의 **패키지** 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가** 를 선택합니다.
 
 ![새 NuGet 패키지 컨텍스트 작업 추가하기](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -74,9 +74,9 @@ using Newtonsoft.Json;
 
 패키지 업데이트는 **패키지** 노드를 마우스 오른쪽 단추로 클릭하여 한꺼번에 수행하거나, 각 구성 요소마다 마우스 오른쪽 단추로 클릭하여 개별적으로 수행할 수 있습니다.
 
-상황에 맞는 메뉴에 액세스하려면 **패키지**를 마우스 오른쪽 단추로 클릭하세요.
+상황에 맞는 메뉴에 액세스하려면 **패키지** 를 마우스 오른쪽 단추로 클릭하세요.
 
-![패키지 메뉴](media/nuget-walkthrough-PackagesMenu.png)
+![선택한 패키지 노드와 패키지 추가, 업데이트, 복원 및 새로 고침에 대한 명령을 통해 열린 마우스 오른쪽 단추 클릭 컨텍스트 메뉴를 보여주는 스크린샷.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **패키지 추가** - 프로젝트에 패키지를 더 추가하기 위한 창을 엽니다.
 * **업데이트** - 각 패키지에 대해 소스 서버를 확인하고 모든 최신 버전을 다운로드합니다.
@@ -86,7 +86,7 @@ using Newtonsoft.Json;
 
 또한 개별 패키지를 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴에 액세스할 수 있습니다.
 
-![패키지 메뉴](media/nuget-walkthrough-PackageMenu.png)
+![선택한 개별 패키지와 업데이트, 제거 및 새로 고침에 대한 명령을 통해 열린 마우스 오른쪽 단추 클릭 컨텍스트 메뉴를 보여주는 스크린샷.](media/nuget-walkthrough-PackageMenu.png)
 
 * **버전 번호** - 버전 번호는 비활성화된 메뉴 항목이며, 정보 제공 용도로만 표시됩니다.
 * **업데이트** - 소스 서버를 확인하고 새 버전(있는 경우)을 다운로드합니다.
@@ -96,17 +96,17 @@ using Newtonsoft.Json;
 
 설치에 사용할 수 있는 패키지를 처음에는 nuget.org에서 검색합니다. 하지만 Mac용 Visual Studio에 다른 패키지 위치를 추가할 수 있습니다. 이는 개발 중인 자체 NuGet 패키지를 테스트하거나, 회사나 조직 내에서 개인 NuGet 서버를 사용할 때 유용할 수 있습니다.
 
-Mac용 Visual Studio에서 **Visual Studio > 기본 설정 > NuGet > 소스**로 이동하여 패키지 소스의 목록을 보고 편집합니다. 소스는 (URL로 지정된) 원격 서버 또는 로컬 디렉터리일 수 있습니다.
+Mac용 Visual Studio에서 **Visual Studio > 기본 설정 > NuGet > 소스** 로 이동하여 패키지 소스의 목록을 보고 편집합니다. 소스는 (URL로 지정된) 원격 서버 또는 로컬 디렉터리일 수 있습니다.
 
 ![패키지 소스](media/nuget-walkthrough-PackageSource.png)
 
-새로운 소스를 설정하려면 **추가**를 클릭합니다. 패키지 소스에 식별 이름과 URL(또는 파일 경로)을 입력하세요. 소스가 보안 웹 서버인 경우에는 사용자 이름과 암호도 입력하고, 그렇지 않은 경우에는 비워둡니다.
+새로운 소스를 설정하려면 **추가** 를 클릭합니다. 패키지 소스에 식별 이름과 URL(또는 파일 경로)을 입력하세요. 소스가 보안 웹 서버인 경우에는 사용자 이름과 암호도 입력하고, 그렇지 않은 경우에는 비워둡니다.
 
-![패키지 소스 추가](media/nuget-walkthrough-PackageSource2.png)
+![이름, 위치, 사용자 이름 및 암호에 대한 필드를 포함하는 패키지 원본 추가 대화 상자의 스크린샷.](media/nuget-walkthrough-PackageSource2.png)
 
 그런 다음 패키지를 검색할 때 서로 다른 소스를 선택할 수 있습니다.
 
-![패키지 소스 추가](media/nuget-walkthrough-PackageSource3.png)
+![패키지를 검색할 때 선택할 수 있는 원본 드롭다운 목록을 보여주는 패키지 추가 화면의 스크린샷.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>버전 제어
 
