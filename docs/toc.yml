@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: Visual Studio 2017의 리포지토리에서 프로젝트 열기
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Visual Studio의 리포지토리에서 프로젝트 열기
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: Visual Studio 2019의 리포지토리에서 프로젝트 열기
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: '프로젝트 포팅, 마이그레이션 및 업그레이드'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: 프로젝트 및 솔루션 속성 관리
