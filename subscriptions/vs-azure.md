@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/28/2020
+ms.date: 02/10/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538009"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335222"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -76,7 +76,7 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 |              GitHub Enterprise가 포함된 Visual Studio Enterprise 구독               |     150 USD 월간 크레딧     |                             예                             |
 |               Visual Studio Enterprise 월간               |        사용할 수 없음        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD 월간 크레딧      |                             예
-|              GitHub Enterprise가 포함된 Visual Studio Professional 구독              |     150 USD 월간 크레딧     |                             예                             |
+|              GitHub Enterprise가 포함된 Visual Studio Professional 구독              |     50 USD 월간 크레딧     |                             예                             |
 |              Visual Studio Professional 월간              |        사용할 수 없음        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD 월간 크레딧      |                             예                             |
 |                        MSDN 플랫폼                        |     100 USD 월간 크레딧     |                             예                             |
