@@ -1,20 +1,20 @@
 ---
-title: Visual Studio 구독 구매, 갱신, 취소
-description: Visual Studio 구독의 구매, 갱신, 취소에 대한 FAQ 목록
+title: 구매, 갱신, 취소 및 청구
+description: 구매, 갱신, 취소 또는 청구에 대한 FAQ 목록
 ms.faqid: Section4
 ms.topic: conceptual
 ms.assetid: 9d7a7d4c-dce3-4655-983c-a7e4180a5433
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/28/2021
-ms.openlocfilehash: e6a80dd9e451b954ddb31cc53dd1229ae8c1c4db
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 02/15/2021
+ms.openlocfilehash: fcc7894d13b5c1375bd9c211446d8e045c2d45ec
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104454"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100543005"
 ---
-# <a name="purchasing-renewing-and-canceling-visual-studio-subscriptions"></a>Visual Studio 구독 구매, 갱신, 취소
+# <a name="purchasing-renewing-canceling-or-billing-for-visual-studio-subscriptions"></a>Visual Studio 구독 구매, 갱신, 취소 또는 청구
 
 [!INCLUDE [How do I purchase Visual Studio subscriptions?](includes/how-to-purchase.md)] 
 

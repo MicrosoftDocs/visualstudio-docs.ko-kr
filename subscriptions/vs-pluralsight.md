@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537983"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542992"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -96,6 +96,9 @@ Pluralsight 구독이 만료되면 상태가 ‘0일 남음’으로 변경되�
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Q: Visual Studio Enterprise 구독이 있지만 혜택 페이지에 Pluralsight 타일이 표시되지 않습니다. 무엇이 문제인가요?
 A: 일부 Visual Studio Enterprise 구독에는 Pluralsight 혜택이 포함되어 있지 않습니다.  [자격 테이블](#eligibility)을 확인하여 구독이 적합한지 확인하세요.
 
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>Q: Pluralsight 혜택을 두 번 이상 사용할 수 있나요?  
+A:  선택된 Visual Studio 구독의 Pluralsight 혜택은 구독이 갱신되면 갱신됩니다. 예를 들어 매년 갱신되는 연간 구독이 있는 경우 매년 갱신할 때마다 혜택이 제공됩니다. 다년간 구독이 있는 경우 구독 기간 중에 한 번 Pluralsight 혜택이 제공됩니다.  다년간 구독을 갱신하면 갱신 후 혜택이 다시 제공됩니다.  갱신 날짜를 확인하려면 <https://my.visualstudio.com/subscriptions>를 방문하여 *지원 정보* 를 클릭하고 “유효 기간:” 날짜를 찾습니다. 
+
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q: 맞춤화된 학습 재생 목록이나 채널에 액세스할 수 있나요?
 A: 예. Visual Studio 구독자는 Pluralsight 교육 혜택의 일부로 추천 역할, 학습 경로 및 사용자 지정 채널(재생 목록)에 액세스할 수 있습니다. 추천 콘텐츠는 Microsoft와 Pluralsight에서 특별히 준비했으며 관심 있는 주요 영역의 학습에 초점을 둡니다. Pluralsight 홈페이지에서 이 콘텐츠 및 다른 콘텐츠에 액세스하려면 Visual Studio 구독 포털(<https://my.visualstudio.com/benefits>)을 통해 Pluralsight 혜택을 활성화합니다.
 
@@ -110,7 +113,7 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

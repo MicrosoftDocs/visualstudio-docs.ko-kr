@@ -5,17 +5,17 @@ ms.topic: include
 ms.assetid: 7e5d8886-538c-4e29-9c4c-8989cf4e09dd
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 02/15/2021
 user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 1ab283581d029d69b507271863420da71257d967
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 6f47bbe5f01130eeca81dd75e9f9c33af02be006
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541299"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100552418"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>Pluralsight 혜택을 활성화할 수 없습니다.
 
@@ -29,5 +29,6 @@ ms.locfileid: "99541299"
 1. Pluralsight 혜택을 활성화한 후에는 Visual Studio 구독 포털에서 타일의 모양이 변경되어 구독 상태를 추적하는 데 도움이 됩니다. 이를 확인하려면 포털을 새로 고쳐야 할 수 있습니다. 
 
 ## <a name="more-information-about-the-pluralsight-benefit"></a>Pluralsight 혜택에 대한 자세한 정보
+선택된 Visual Studio 구독의 Pluralsight 혜택은 구독이 갱신되면 갱신됩니다. 예를 들어 매년 갱신되는 연간 구독이 있는 경우 매년 갱신할 때마다 혜택이 제공됩니다. 다년간 구독이 있는 경우 구독 기간 중에 한 번 Pluralsight 혜택이 제공됩니다.  다년간 구독을 갱신하면 갱신 후 혜택이 다시 제공됩니다.  갱신 날짜를 확인하려면 <https://my.visualstudio.com/subscriptions>를 방문하여 *지원 정보* 를 클릭하고 “유효 기간:” 날짜를 찾습니다. 
 
 [Pluralsight 혜택의 활성화, 자격 및 FAQ](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight)에 대해 자세히 알아봅니다.  

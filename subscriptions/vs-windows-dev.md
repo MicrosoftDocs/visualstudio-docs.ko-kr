@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537723"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089595"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
 
 ## <a name="activation-steps"></a>활성화 단계
 Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정을 설정하거나 로그인해야 합니다.
+
+> [!IMPORTANT]
+> Windows 개발자 계정을 만들려면 MSA(Microsoft 계정)를 사용해야 합니다.  Azure Active Directory 계정은 사용할 수 없습니다.  
 
 이 프로세스에 대해 “개인” 브라우저 창을 만드는 것이 좋습니다.  예를 들어 Google Chrome에서는 새 “incognito” 창을 만듭니다.  Internet Explorer에서는 새 "InPrivate" 창을 만듭니다.
 
