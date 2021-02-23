@@ -2,7 +2,7 @@
 title: '자습서: Visual Studio 2017의 리포지토리에서 프로젝트 열기'
 description: Visual Studio 2017을 사용하여 Git 또는 Azure DevOps 리포지토리에서 프로젝트를 여는 방법을 알아봅니다.
 ms.custom: get-started
-ms.date: 01/25/2021
+ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01aca95bde7a20f746d4faece4090eac60b3849e
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951929"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542979"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>자습서: Visual Studio 2017의 리포지토리에서 프로젝트 열기
 
@@ -60,6 +60,9 @@ ms.locfileid: "99951929"
 다음 애니메이션을 보고 이전 섹션에서 완료한 작업을 확인합니다.
 
    ![Visual Studio를 사용하여 GitHub 리포지토리에서 프로젝트를 여는 애니메이션](./media/open-project-from-github.gif)
+
+> [!NOTE]
+> Visual Studio 2019와 관련된 정보는 [Visual Studio 2019의 리포지토리에서 프로젝트 열기](tutorial-open-project-from-repo-visual-studio-2019.md) 페이지를 참조하세요.
 
 ## <a name="open-a-project-from-an-azure-devops-repo-by-using-visual-studio-2017"></a>Visual Studio 2017을 사용하여 Azure DevOps 리포지토리에서 프로젝트 열기
 
@@ -108,6 +111,7 @@ Visual Studio 2017로 코딩할 준비가 되면 다음 언어별 자습서를 �
 
 ## <a name="see-also"></a>참조
 
+- [Visual Studio 2019의 리포지토리에서 프로젝트 열기](tutorial-open-project-from-repo-visual-studio-2019.md)
+- [Visual Studio 2019의 새로운 Git 환경](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/)(Azure DevOps Services: Azure Repos 및 Visual Studio 시작하기)
 - [Microsoft Learn: Azure DevOps 시작하기](/learn/modules/get-started-with-devops/)
-- [Visual Studio 2019의 새로운 Git 환경](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)

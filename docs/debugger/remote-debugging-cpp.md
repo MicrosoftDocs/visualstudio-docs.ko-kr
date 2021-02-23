@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934652"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335260"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio에서 C++ 프로젝트 원격 디버깅
 다른 컴퓨터에서 Visual Studio 애플리케이션을 디버그하려면 앱을 배포할 컴퓨터에 원격 도구를 설치 및 실행하고 Visual Studio에서 원격 컴퓨터에 연결하도록 프로젝트를 구성한 후 앱을 배포하고 실행합니다.
@@ -99,7 +99,7 @@ ms.locfileid: "99934652"
     > [!TIP]
     > 또는 별도의 단계로 파일을 배포할 수 있습니다. **솔루션 탐색기** 에서 **mymfc** 노드를 마우스 오른쪽 단추로 클릭하고 **배포** 를 선택합니다.
 
-    애플리케이션에 필요한 비코드 파일이 있는 경우 **원격 Windows 디버거** 페이지의 **배포할 추가 파일** 에서 해당 파일을 지정할 수 있습니다.
+    애플리케이션에 필요한 비코드 파일이 있는 경우 **원격 Windows 디버거** 페이지의 **배포할 추가 파일** 에서 세미콜론으로 구분된 목록으로 해당 파일을 지정할 수 있습니다.
 
     또는 프로젝트에 파일을 포함하고 각 파일에 대한 **속성** 페이지에서 **콘텐츠** 속성을 **예** 로 설정할 수 있습니다. 이러한 파일은 **원격 Windows 디버거** 페이지에 지정된 **배포 디렉터리** 에 복사됩니다. 또한 **배포 디렉터리** 의 하위 폴더에 파일을 복사해야 하는 경우 **항목 종류** 를 **파일 복사** 로 변경하고 여기에서 추가 속성을 지정할 수 있습니다.
 
