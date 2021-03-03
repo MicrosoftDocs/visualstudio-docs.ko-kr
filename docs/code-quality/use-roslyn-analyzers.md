@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867791"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684377"
 ---
 # <a name="overview"></a>개요
 
@@ -419,3 +419,4 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)
 - [규칙 집합 사용](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [코드 분석 경고 표시 안 함](../code-quality/in-source-suppression-overview.md)
+- [코드 분석 (.NET)에 대 한 구성 옵션](/dotnet/fundamentals/code-analysis/configuration-options)

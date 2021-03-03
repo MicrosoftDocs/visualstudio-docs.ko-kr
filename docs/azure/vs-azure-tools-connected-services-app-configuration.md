@@ -9,21 +9,23 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727296"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683282"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Visual Studio를 사용 하 여 Azure 앱 구성 추가 연결된 서비스
 
-이 자습서에서는 ASP.NET Core 또는 모든 형식의 ASP.NET 프로젝트를 사용 하는지에 관계 없이 Visual Studio에서 웹 프로젝트에 대 한 구성 및 기능 플래그를 관리 하기 위해 Azure 앱 구성을 사용 하 여 시작 하는 데 필요한 모든 항목을 쉽게 추가 하는 방법을 알아봅니다. Visual Studio의 연결된 서비스 기능을 사용 하 여 Visual Studio에서 Azure의 앱 구성 리소스에 연결 하는 데 필요한 모든 코드, NuGet 패키지 및 구성 설정을 자동으로 추가 하도록 할 수 있습니다. 이 기능을 사용 하려면 Visual Studio 2019 버전 16.9 이상을 사용 해야 합니다.
+이 자습서에서는 Visual Studio에서 웹 프로젝트에 대 한 구성 및 기능 플래그를 관리 하기 위해 Azure 앱 구성을 사용 하 여 시작 하는 데 필요한 모든 항목을 쉽게 추가 하는 방법에 대해 설명 합니다. Visual Studio의 연결된 서비스 기능을 사용 하 여 Visual Studio에서 Azure의 앱 구성 리소스에 연결 하는 데 필요한 모든 코드, NuGet 패키지 및 구성 설정을 자동으로 추가 하도록 할 수 있습니다. 이 기능을 사용 하려면 Visual Studio 2019 버전 16.9 이상을 사용 해야 합니다.
+
+ASP.NET Core, .NET Core 콘솔 및 .NET Framework 프로젝트에서 앱 구성 연결된 서비스 기능을 사용할 수 있습니다.
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트
@@ -76,7 +78,7 @@ ms.locfileid: "97727296"
 
 [Azure 앱 구성 설명서](/azure/azure-app-configuration/overview)의 Azure 앱 구성에 대해 알아봅니다.
 
-## <a name="see-also"></a>추가 정보
+## <a name="see-also"></a>참고 항목
 
 - [앱 구성에서 동적 구성을 사용 하는 방법에 대 한 자습서 ASP.NET Core 앱 연결](/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core)
 - [연결된 서비스(Mac용 Visual Studio)](/visualstudio/mac/connected-services)

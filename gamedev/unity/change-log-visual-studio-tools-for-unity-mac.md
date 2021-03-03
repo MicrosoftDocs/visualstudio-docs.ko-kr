@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Visual Studio Tools for Unity, Mac의 변경 로그를 확인합니다. 버전 1.0.0.0부터 2.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917904"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683383"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2920"></a>2.9.2.0
+2021 년 3 월 2 일 출시
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 메시지 대화 상자에서 검색 강조 표시를 수정 했습니다.
+
+  - Unity 프로젝트 treeview의 안정성 문제를 수정 했습니다.
+
+- **디버깅:**
+
+  - 조건부 중단점의 처리 문제를 수정 했습니다.
+
+## <a name="2910"></a>2.9.1.0
+2021 년 2 월 9 일 출시
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - IDE에서 Unity 테스트를 실행 하 고 디버깅 하는 데 대 한 지원이 추가 되었습니다.
+
+- **평가:**
+
+  - `Active Scene`루트 게임 개체를 표시 하는 지역에 추가 됩니다.
+
+  - `this.gameObject`Unity 프로젝트에서 널리 사용 되는 경우 지역에 추가 됩니다.
+
+  - 모든 `Children` `Components` `GameObject` 개체 계층 구조를 쉽게 표시할 수 있도록 모든 인스턴스에 및 그룹을 추가 했습니다.
+
+  - `Scene Path` `GameObject` 장면에서 위치를 표시 하기 위해 모든 인스턴스에 추가 됩니다.
+
+  - `JobEntityBatch`소스 생성기에서 엔터티를 사용 하는 경우/람다에 대 한 지원이 추가 되었습니다.
+
+  - 버킷 팅 인덱스를 사용 하 여 긴 배열 표시에 대 한 지원이 향상 되었습니다.
+
+  - 2019.4 API에 대 한 누락 된 Unity 메시지를 추가 했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 메시지 대화 상자의 안정성 문제 해결
+
+  - 한국어 이외의 언어에 대 한 다양 한 UI 문제를 수정 했습니다.
+
+  - 진단의 안정성 문제를 해결 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 했습니다.
+
+- **디버깅:**
+
+  - 메서드를 사용할 때 VM 연결 끊기 문제가 해결 `Trace` 되었습니다.
+
+- **평가:**
+
+  - 예외를 throw 하는 사용 되지 않는 속성의 필터링이 수정 되었습니다.
+
+## <a name="2900"></a>2.9.0.0
+2021 년 1 월 20 일 릴리스
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - `raytrace shaders`, 및 파일에 대 한 지원이 추가 되었습니다 `UXML` `USS` .
+
+  - 코 루틴으로 사용 되는 모든 메서드에 대해 Unity 메시지 API를 업데이트 했습니다.
+
+  - Android SDK 검색을 업데이트 했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)코 루틴 및에 대해 잘못 된 경고를 제공 하는 진단이 수정 되었습니다 `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="2840"></a>2.8.4.0
 2020 년 12 월 15 일 출시
@@ -400,7 +477,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2019년 7월 9일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 
@@ -552,7 +629,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
  
  릴리스 날짜: 2019년 3월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Project Generation:**
 
@@ -627,7 +704,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2018년 11월 13일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **디버거:**
 

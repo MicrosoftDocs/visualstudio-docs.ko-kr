@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844335"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683228"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -21,7 +21,7 @@ Visual Studio는 Azure 클라우드 서비스와 가상 머신 디버깅에 여�
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>로컬 컴퓨터에서 클라우드 서비스 디버그
 
-Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 머신에서 클라우드 서비스 디버그하면 시간과 돈을 절약할 수 있습니다. 배포하기 전에 로컬로 서비스를 디버깅하면, 컴퓨팅 시간이 소요되지 않고 안정성과 성능을 향상할 수 있습니다. 그러나, Azure 자체에서 클라우드 서비스를 실행하는 경우, 일부 오류가 발생할 수 있습니다. 서비스를 게시하거나 역할 인스턴스에 디버거를 연결할 때 원격 디버깅을 사용하면 이 오류들을 디버그할 수 있습니다.
+Azure 계산 에뮬레이터를 사용 하 여 로컬 컴퓨터에서 클라우드 서비스를 디버깅 함으로써 시간과 비용을 절감할 수 있습니다. 배포하기 전에 로컬로 서비스를 디버깅하면, 컴퓨팅 시간이 소요되지 않고 안정성과 성능을 향상할 수 있습니다. 그러나, Azure 자체에서 클라우드 서비스를 실행하는 경우, 일부 오류가 발생할 수 있습니다. 서비스를 게시하거나 역할 인스턴스에 디버거를 연결할 때 원격 디버깅을 사용하면 이 오류들을 디버그할 수 있습니다.
 
 에뮬레이터가 로컬 환경에서 Azure 컴퓨팅 서비스를 시뮬레이트 및 실행하여 클라우드 서비스를 배포하기 전에 테스트 및 디버그할 수 있습니다. 에뮬레이터는 역할 인스턴스의 수명 주기를 처리하고 로컬 스토리지 같은 시뮬레이트된 리소스에 대한 액세스를 제공합니다. Visual Studio에서 서비스를 디버그하거나 실행할 때, 에뮬레이터가 백그라운드 애플리케이션으로 자동으로 시작된 다음, 서비스가 에뮬레이터에 배포됩니다. 로컬 환경에서 서비스가 실행되는 것을 보기 위해 에뮬레이터를 사용할 수 있습니다. 에뮬레이터의 정식 버전 또는 Express 버전을 사용할 수 있습니다. (Azure 2.3부터 에뮬레이터의 express 버전이 기본값입니다.) [Emulator Express를 사용 하 여 로컬에서 클라우드 서비스 실행 및 디버그를](vs-azure-tools-emulator-express-debug-run.md)참조 하세요.
 

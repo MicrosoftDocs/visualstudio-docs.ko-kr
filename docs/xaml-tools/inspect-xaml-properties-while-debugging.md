@@ -2,7 +2,7 @@
 title: 디버깅 하는 동안 XAML 속성 검사 | Microsoft Docs
 description: 디버깅 하는 동안 라이브 시각적 트리 및 라이브 속성 탐색기 도구를 사용 하 여 XAML 속성을 검사 하 고 UI 요소의 트리 뷰를 가져오는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881375"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683459"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>디버그하는 동안 XAML 속성 검사
 
@@ -34,7 +34,17 @@ ms.locfileid: "99881375"
 
 ### <a name="create-the-project"></a>프로젝트 만들기
 
-1. 새 c # wpf 응용 프로그램을 만들고 (**파일**  >  **새로** 만들기)  >  "c # wpf"를 입력 한 다음 **wpf 앱 (.net Core)** 또는 **wpf 앱 (.NET Framework)** 을 선택 합니다. **TestXAML** 로 이름을 지정합니다.
+::: moniker range="vs-2019"
+
+1. 새 c # wpf 응용 프로그램을 **만들고 (** > **새** > **프로젝트** 를 입력 하 고, "c # wpf"를 입력 하 고, **wpf 응용 프로그램** 프로젝트 템플릿을 선택 하 고, 프로젝트 이름을 **testxaml** 로 지정한 후 **.net Core 3.1** 이 **대상 프레임 워크** 드롭다운에서 나타나는지 확인 합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. 새 c # wpf 응용 프로그램 (**파일**  >  **새로** 만들기  >  **프로젝트** 를 만들고 "c # wpf"를 입력 한 다음 **wpf 앱 (.NET Framework)**)을 선택 합니다. **TestXAML** 로 이름을 지정합니다.
+
+::: moniker-end
 
 1. 다음과 같이 MainWindow.xaml을 변경합니다.
 

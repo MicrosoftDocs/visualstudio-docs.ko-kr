@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 description: Visual Studio Tools for Unity, Windows의 변경 로그를 확인합니다. 버전 1.0.0.0부터 4.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671248"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683477"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="4910"></a>4.9.1.0
+2021 년 3 월 2 일 출시
+
+### <a name="new-features"></a>새로운 기능
+
+- **평가:**
+
+  - `Active Scene`루트 게임 개체를 표시 하는 지역에 추가 됩니다.
+
+  - `this.gameObject`Unity 프로젝트에서 널리 사용 되는 경우 지역에 추가 됩니다.
+
+  - 모든 `Children` `Components` `GameObject` 개체 계층 구조를 쉽게 표시할 수 있도록 모든 인스턴스에 및 그룹을 추가 했습니다.
+
+  - `Scene Path` `GameObject` 장면에서 위치를 표시 하기 위해 모든 인스턴스에 추가 됩니다.
+
+  - `JobEntityBatch`소스 생성기에서 엔터티를 사용 하는 경우/람다에 대 한 지원이 추가 되었습니다.
+
+  - 버킷 팅 인덱스를 사용 하 여 긴 배열 표시에 대 한 지원이 향상 되었습니다.
+  
+  - 2019.4 API에 대 한 누락 된 Unity 메시지를 추가 했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 한국어 이외의 언어에 대 한 다양 한 UI 문제를 수정 했습니다.
+
+  - 진단의 안정성 문제를 해결 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 했습니다.
+  
+- **디버깅:**
+
+  - 메서드를 사용할 때 VM 연결 끊기 문제가 해결 `Trace` 되었습니다.
+
+- **평가:**
+
+  - 예외를 throw 하는 사용 되지 않는 속성의 필터링이 수정 되었습니다.
+
+## <a name="4900"></a>4.9.0.0
+2021 년 1 월 20 일 릴리스
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - `raytrace shaders`, 및 파일에 대 한 지원이 추가 되었습니다 `UXML` `USS` .
+
+  - `.vsconfig`생성 지원이 추가 되었습니다. 이제 Visual Studio에서 누락 된 구성 요소를 검색 하 고 Unity 프로젝트를 사용할 때 설치 하 라는 메시지를 표시 합니다.
+
+  - 코 루틴으로 사용 되는 모든 메서드에 대해 Unity 메시지 API를 업데이트 했습니다.
+
+  - Android SDK 검색을 업데이트 했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 인스턴스 선택 대화 상자를 사용할 때 프로세스 새로 고침을 수정 했습니다.
+
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)코 루틴 및에 대해 잘못 된 경고를 제공 하는 진단이 수정 되었습니다 `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="4820"></a>4.8.2.0
 2020 년 11 월 10 일 릴리스
@@ -737,7 +797,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - 실험용 빌드를 사용할 경우 종속성 문제가 해결되었습니다.
 
@@ -1011,7 +1071,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 ### <a name="new-features"></a>새로운 기능
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - MEF 캐시 정리 지원이 추가되었습니다.
 
@@ -1240,7 +1300,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - [Tabs Studio](https://tabsstudio.com/) Visual Studio 확장과의 비호환성 문제가 해결되었습니다.
 
-- **설치 프로그램:**
+- **설치 관리자:**
 
   - HKLM 레지스트리 항목을 만들어 VSTU의 시스템 전체 설치(모든 사용자에 대한 설치)를 지원합니다.
 

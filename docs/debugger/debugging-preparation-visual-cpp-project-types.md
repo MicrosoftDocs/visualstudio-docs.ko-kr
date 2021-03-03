@@ -5,9 +5,6 @@ ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - project templates, debugging
@@ -20,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872429"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683043"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비 중: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.
@@ -40,8 +37,6 @@ ms.locfileid: "99872429"
 - [C 또는 C++ Win32 애플리케이션을 디버그하려면](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [디버그 구성을 직접 설정하려면](#BKMK_To_manually_set_a_Debug_configuration)
-
-  [Windows Forms 애플리케이션(.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> 권장되는 속성 설정
  일부 속성은 모든 관리되지 않는 디버깅 시나리오에서 동일한 방식으로 설정해야 합니다. 다음 표에는 권장 속성 설정이 나와 있습니다. 여기에 나와 있지 않은 설정은 관리되지 않는 프로젝트 형식에 따라 서로 다를 수 있습니다. 자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
@@ -97,22 +92,8 @@ ms.locfileid: "99872429"
 
    [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 애플리케이션(.NET)
- **Windows Forms 애플리케이션(.NET)** 템플릿은 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 애플리케이션을 만드는 데 사용됩니다. 자세한 내용은 [방법: Windows 애플리케이션 프로젝트 만들기](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))를 참조하세요.
-
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 형식의 애플리케이션을 디버깅하는 방법은 관리되는 Windows Forms 애플리케이션의 경우와 비슷합니다.
-
- 프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요한 경우 **\<project name> 속성 페이지** 대화 상자에서 해당 설정을 변경할 수 있습니다. 자세한 내용은 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
-
- 자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.
-
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 외부에서 애플리케이션을 시작한 후에 애플리케이션에 연결하는 방법으로 Windows Forms 애플리케이션을 디버깅할 수도 있습니다. 자세한 내용은 [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)을 참조하세요.
-
- [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
-
 ## <a name="see-also"></a>참조
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)
-- [방법: Windows 애플리케이션 프로젝트 만들기](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
