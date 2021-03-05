@@ -1,4 +1,5 @@
 ---
+description: 정규화 된 파일 이름 목록이 지정 된 경우이 함수는 로컬 드라이브를 검사 합니다.
 title: SccCheckout 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943142"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221629"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
 정규화 된 파일 이름 목록이 지정 된 경우이 함수는 로컬 드라이브를 검사 합니다. 주석은 체크 아웃 중인 모든 파일에 적용 됩니다. 주석 인수는 문자열일 수 있습니다 `null` .
@@ -68,7 +69,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|체크 아웃 했습니다.|
 |SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|

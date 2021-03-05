@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221303"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem`요소는 명령 및 도구 모음의 정적 표시 여부를 결정 합니다. 모든 항목은 명령 또는 메뉴와 연결 된 명령 UI 컨텍스트를 식별 합니다. Visual Studio에서는 해당 항목을 정의 하는 Vspackage를 로드 하지 않고 명령, 메뉴 및 도구 모음과 표시 유형을 검색 합니다. IDE는 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트가 활성 상태 인지 여부를 확인 합니다.
@@ -33,8 +33,8 @@ ms.locfileid: "99926014"
 
 ```xml
 <VisibilityItem
-  guid ="="cmdGuidMyProductCommands"
-  id=="cmdidAddWidget"
+  guid="cmdGuidMyProductCommands"
+  id="cmdidAddWidget"
   context="guidNotViewSourceMode"/>
 ```
 
@@ -43,11 +43,11 @@ ms.locfileid: "99926014"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
-|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.|
-|id|필수 사항입니다. GUID/ID 명령 식별자의 ID입니다.|
-|컨텍스트|필수 사항입니다. 명령이 표시 되는 UI 컨텍스트입니다.|
+|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
+|id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
+|컨텍스트|필수 요소. 명령이 표시 되는 UI 컨텍스트입니다.|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
@@ -55,7 +55,7 @@ ms.locfileid: "99926014"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다.|
 

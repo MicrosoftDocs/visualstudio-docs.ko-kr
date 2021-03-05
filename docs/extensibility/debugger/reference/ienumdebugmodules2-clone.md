@@ -1,4 +1,5 @@
 ---
+description: 현재 모듈 열거형의 복사본을 별도의 개체로 반환 합니다.
 title: 'IEnumDebugModules2:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932830"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224891"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -43,7 +44,7 @@ int Clone(
 `ppEnum`\
 제한이 이 열거형의 복사본을 별도의 개체로 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

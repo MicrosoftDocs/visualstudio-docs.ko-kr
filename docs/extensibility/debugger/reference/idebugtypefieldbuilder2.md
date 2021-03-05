@@ -1,4 +1,5 @@
 ---
+description: 배열 형식을 만들 수 있도록 IDebugTypeFieldBuilder를 확장 합니다.
 title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321004d1d0ef37597d477cff71435091a3123ccf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e73642024cb379e804559ba8dd55eb44722cf580
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965644"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223006"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 배열 형식을 만들 수 있도록 **Idebugtypefieldbuilder** 를 확장 합니다.
@@ -32,7 +33,7 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 ## <a name="methods"></a>메서드
  [Idebugtypefieldbuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|지정 된 형식 및 크기의 배열을 만듭니다.|
 

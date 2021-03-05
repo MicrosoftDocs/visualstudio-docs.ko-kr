@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 시스템에서 현재 파일 (로컬 디스크의)과 마지막으로 체크 인 한 버전 간의 차이점을 표시 하거나 선택적으로 확인 합니다.
 title: SccDiff 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220848"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 이 함수는 소스 제어 시스템에서 현재 파일 (로컬 디스크의)과 마지막으로 체크 인 한 버전 간의 차이점을 표시 하거나 선택적으로 확인 합니다.
@@ -58,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업 복사본과 서버 버전이 동일 합니다.|
 |SCC_I_FILESDIFFERS|작업 복사본이 소스 제어에서 사용 하는 버전과 다릅니다.|

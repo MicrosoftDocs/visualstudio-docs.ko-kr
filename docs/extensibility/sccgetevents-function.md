@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 대기 중인 상태 이벤트를 검색 합니다.
 title: SccGetEvents 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965163"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220796"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 함수
 이 함수는 대기 중인 상태 이벤트를 검색 합니다.
@@ -53,7 +54,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|이벤트 가져오기에 성공 했습니다.|
 |SCC_E_OPNOTSUPPORTED|이 함수는 지원되지 않습니다.|

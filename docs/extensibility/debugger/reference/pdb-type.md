@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 PDB 기호에서 가져온 필드 형식에 대 한 정보를 지정 합니다.
 title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced96c1241c64abc764a052046e5ecab1a986bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222135"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 

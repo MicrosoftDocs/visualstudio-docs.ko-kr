@@ -1,4 +1,5 @@
 ---
+description: 이 개체에 포함 된 바이트 수를 반환 합니다.
 title: 'IEEDataStorage:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a18ae08500bd457f6e9ab316514836a30538a42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46051ae73859213b3206e27fb83d40c0561d0c0b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965514"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222928"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 이 개체에 포함 된 바이트 수를 반환 합니다.
@@ -43,7 +44,7 @@ int GetSize(
 `size`\
 제한이 이 개체에 포함 된 바이트 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

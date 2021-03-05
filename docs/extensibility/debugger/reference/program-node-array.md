@@ -1,4 +1,5 @@
 ---
+description: 관련 프로그램을 설명 하는 개체의 배열을 포함 합니다.
 title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4803698aba910bc910fa36bf5c4f7e23ab82d247
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 282d96a221c0422da14427b71f1727c65b826fd7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912713"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222057"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 관련 프로그램을 설명 하는 개체의 배열을 포함 합니다.

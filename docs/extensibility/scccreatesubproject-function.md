@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 lpParentProjPath 인수로 지정 된 기존 부모 프로젝트 아래에 지정 된 이름을 가진 하위 프로젝트를 만듭니다.
 title: SccCreateSubProject 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943129"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221615"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 함수
 이 함수는 인수로 지정 된 기존 부모 프로젝트 아래에 지정 된 이름을 가진 하위 프로젝트를 만듭니다 `lpParentProjPath` .
@@ -68,7 +69,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|하위 프로젝트를 만들었습니다.|
 |SCC_E_INITIALIZEFAILED|부모 프로젝트를 초기화할 수 없습니다.|

@@ -1,4 +1,5 @@
 ---
+description: 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다.
 title: SccAddFromScc 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886615"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221706"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다. 예를 들어이 함수는 파일을 복사 하지 않고 공용 헤더 파일을 현재 프로젝트로 가져올 수 있습니다. 파일의 반환 배열에는 `lplpFileNames` 사용자가 IDE 프로젝트에 추가 하려는 파일 목록이 포함 되어 있습니다.
@@ -50,10 +51,10 @@ SCCRTN SccAddFromScc (
 
 [in, out] 디렉터리 경로 없이 모든 파일 이름에 대 한 포인터의 배열입니다. 소스 제어 플러그 인이이 배열을 할당 하 고 해제 합니다. `lpnFiles`가 1이 고 `lplpFileNames` 가이 아니면 `NULL` 에서 가리키는 배열의 첫 번째 이름에 `lplpFileNames` 대상 폴더가 포함 됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|파일이 성공적으로 배치 되어 프로젝트에 추가 되었습니다.|
 |SCC_I_OPERATIONCANCELED|작업을 취소 했지만 아무런 효과가 없습니다.|

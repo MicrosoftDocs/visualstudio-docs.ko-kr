@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 지정 된 파일의 기록을 표시 합니다.
 title: SccHistory 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893570"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220575"
 ---
 # <a name="scchistory-function"></a>SccHistory 함수
 이 함수는 지정 된 파일의 기록을 표시 합니다.
@@ -60,10 +61,10 @@ SCCRTN SccHistory(
 
 진행 원본 제어 플러그 인 관련 옵션입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|버전 기록을 가져왔습니다.|
 |SCC_I_RELOADFILE|소스 제어 시스템은 기록을 가져오는 동안 디스크에서 파일을 수정 했습니다. 예를 들어 이전 버전의 파일을 가져오면 IDE에서이 파일을 다시 로드 해야 합니다.|

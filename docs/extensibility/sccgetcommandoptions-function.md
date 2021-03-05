@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.
 title: SccGetCommandOptions 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220809"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 이 함수는 지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.
@@ -53,7 +54,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|성공했습니다.|
 |SCC_I_ADV_SUPPORT|원본 제어 플러그 인은 명령에 대 한 고급 옵션을 지원 합니다.|

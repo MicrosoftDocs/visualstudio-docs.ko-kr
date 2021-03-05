@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 플러그 인을 초기화 하 고 IDE (통합 개발 환경)에 기능 및 제한을 제공 합니다.
 title: SccInitialize 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846363"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220588"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 함수
 이 함수는 소스 제어 플러그 인을 초기화 하 고 IDE (통합 개발 환경)에 기능 및 제한을 제공 합니다.
@@ -70,10 +71,10 @@ SCCRTN SccInitialize (
 
 제한이 다른 주석에 허용 되는 최대 길이를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|소스 제어를 초기화 했습니다.|
 |SCC_E_INITIALIZEFAILED|시스템을 초기화할 수 없습니다.|

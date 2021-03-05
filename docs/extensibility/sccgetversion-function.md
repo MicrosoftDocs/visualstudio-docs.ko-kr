@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 플러그 인에서 지 원하는 소스 제어 플러그 인 API의 버전 번호를 가져옵니다.
 title: SccGetVersion 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daeca1df76f6b624d0eddf9d28222369b2cc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a71d3374ffd65e0e7b9a7b2e654885d84e370a9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844543"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220601"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 함수
 이 함수는 소스 제어 플러그 인에서 지 원하는 소스 제어 플러그 인 API의 버전 번호를 가져옵니다.
@@ -31,10 +32,10 @@ LONG SccGetVersion(void);
 #### <a name="parameters"></a>매개 변수
  없음
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  `LONG`지원 되는 소스 제어 플러그 인 API의 버전 번호를 포함 하는 데이터 형식입니다.
 
-|WORD|Description|
+|WORD|설명|
 |----------|-----------------|
 |WORD|주 버전|
 |LOWORD|부 버전|

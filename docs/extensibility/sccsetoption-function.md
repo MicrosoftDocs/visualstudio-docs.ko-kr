@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.
 title: SccSetOption 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836698"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221381"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 함수
 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.
@@ -45,10 +46,10 @@ SCCRTN SccSetOption(
 
 진행 옵션에 대 한 설정입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|옵션을 설정 했습니다.|
 |SCC_I_SHARESUBPROJOK|`nOption`가이 `SCC_OPT_SHARESUBPROJ` 고 소스 제어 플러그 인이 IDE에서 대상 폴더를 설정할 수 있는 경우 반환 됩니다.|
@@ -59,14 +60,14 @@ SCCRTN SccSetOption(
 
  옵션 및 해당 값 요약:
 
-|`nOption`|`dwValue`|Description|
+|`nOption`|`dwValue`|설명|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|백그라운드 이벤트 큐를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |`SCC_OPT_USERDATA`|임의 값|[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 콜백 함수에 전달할 사용자 값을 지정 합니다.|
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|IDE에서 현재 작업 취소를 지원 하는지 여부를 나타냅니다.|
 |`SCC_OPT_NAMECHANGEPFN`|[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 콜백 함수에 대 한 포인터|이름 변경 콜백 함수에 대 한 포인터를 설정 합니다.|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|IDE에서 소스 제어 사용자 인터페이스를 통해 파일을 수동으로 체크 아웃할 수 있는지 아니면 소스 제어 플러그 인을 통해서만 체크 아웃 해야 하는지 여부를 나타냅니다.|
-|`SCC_OPT_SHARESUBPROJ`|해당 없음|소스 제어 플러그 인에서 IDE가 로컬 프로젝트 폴더를 지정할 수 있도록 허용 하는 경우 플러그 인은을 반환 `SCC_I_SHARESUBPROJOK` 합니다.|
+|`SCC_OPT_SHARESUBPROJ`|N/A|소스 제어 플러그 인에서 IDE가 로컬 프로젝트 폴더를 지정할 수 있도록 허용 하는 경우 플러그 인은을 반환 `SCC_I_SHARESUBPROJOK` 합니다.|
 
 ## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE
  `nOption`가 이면 `SCC_OPT_EVENTQUEUE` IDE에서 백그라운드 처리를 사용 하지 않도록 설정 하거나 다시 사용 하도록 설정 합니다. 예를 들어, 컴파일하는 동안 IDE는 모든 종류의 유휴 상태 처리를 중지 하도록 소스 제어 플러그 인에 지시할 수 있습니다. 컴파일 후에는 백그라운드 처리를 다시 사용 하도록 설정 하 여 플러그 인의 이벤트 큐를 최신 상태로 유지할 수 있습니다. 의 값에 해당 하는 두 가지 값, 즉, 및가 있습니다 `SCC_OPT_EVENTQUEUE` `nOption` `dwVal` `SCC_OPT_EQ_ENABLE` `SCC_OPT_EQ_DISABLE` .

@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어에서 선택한 파일 집합에 대 한 상태 정보를 가져옵니다.
 title: SccQueryInfo 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836737"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221498"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 함수
 이 함수는 소스 제어에서 선택한 파일 집합에 대 한 상태 정보를 가져옵니다.
@@ -50,10 +51,10 @@ SCCRTN SccQueryInfo(
 
 [in, out] 소스 제어 플러그 인에서 각 파일에 대 한 상태 플래그를 반환 하는 배열입니다. 자세한 내용은 [파일 상태 코드](../extensibility/file-status-code-enumerator.md)를 참조 하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|쿼리가 성공 했습니다.|
 |SCC_E_ACCESSFAILURE|원본 제어 시스템에 액세스 하는 데 문제가 발생 했습니다. 네트워크 또는 경합 문제로 인해 발생 했을 수 있습니다. 다시 시도 하는 것이 좋습니다.|

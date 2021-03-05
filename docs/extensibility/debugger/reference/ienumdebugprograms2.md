@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 현재 디버그 세션에서 실행 되는 프로그램을 열거 합니다.
 title: IEnumDebugPrograms2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890749"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224228"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 이 인터페이스는 현재 디버그 세션에서 실행 되는 프로그램을 열거 합니다.
@@ -37,7 +38,7 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugPrograms2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|열거형 시퀀스에서 지정 된 수의 프로그램을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|열거형 시퀀스에서 지정 된 수의 프로그램을 건너뜁니다.|

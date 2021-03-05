@@ -1,4 +1,5 @@
 ---
+description: 프로젝트 템플릿이 제대로 작동 하는 데 필요한 운영 체제의 최소 버전을 지정 합니다.
 title: RequiredPlatformVersion 요소(Visual Studio 템플릿)
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d182d308f852dda05f20f4ea30d3536850e20e90
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f281e51bd07c76d63bc0247d9d7f62fe0390283
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837023"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221784"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 요소 (Visual Studio 템플릿)
 
@@ -48,7 +49,7 @@ ms.locfileid: "99837023"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[템플릿 플랫폼 이름](../extensibility/templatedata-element-visual-studio-templates.md)|프로젝트 템플릿의 대상 플랫폼을 지정합니다.|
 
@@ -60,7 +61,7 @@ ms.locfileid: "99837023"
 
  이 텍스트는 템플릿에 필요한 최소 운영 체제 버전을 지정 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
  이 예제에서는 프로젝트 템플릿이 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 이상을 대상으로 하도록 지정합니다.
 

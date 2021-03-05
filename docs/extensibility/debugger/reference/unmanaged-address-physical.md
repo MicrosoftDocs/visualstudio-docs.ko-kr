@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 실제 주소를 나타냅니다.
 title: UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 736ef56a67247bac53f1f27f84c994a1bf117b9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9da1aadd9767dd8dff17f520212a8e67a012dbd6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223396"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 이 구조는 실제 주소를 나타냅니다.

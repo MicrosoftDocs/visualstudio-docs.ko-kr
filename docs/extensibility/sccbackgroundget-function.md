@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 지정 된 각 파일을 사용자 상호 작용 없이 소스 제어에서 검색 합니다.
 title: SccBackgroundGet 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df0866458f04081c82796767808194b292866a1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952124"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220926"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 함수
 이 함수는 지정 된 각 파일을 사용자 상호 작용 없이 소스 제어에서 검색 합니다.
@@ -61,7 +62,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업이 완료되었습니다.|
 |SCC_E_BACKGROUNDGETINPROGRESS|백그라운드 검색이 이미 진행 중입니다. (소스 제어 플러그 인은 동시 일괄 처리 작업을 지원 하지 않는 경우에만이를 반환 해야 합니다.)|

@@ -1,4 +1,5 @@
 ---
+description: 검색할 스레드에 대 한 정보를 지정 합니다.
 title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3efe97518b0952c1207eac97fe9151f36c686f43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 698c803304cf5efd3375b6d49e4dedbc4622f4c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846558"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221836"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 검색할 스레드에 대 한 정보를 지정 합니다.

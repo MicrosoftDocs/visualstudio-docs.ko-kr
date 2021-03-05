@@ -48,7 +48,7 @@ Visual Studio 구독이 만료되거나 제거되면 월간 Azure 개발/테스�
 > [!IMPORTANT]
 > 현재 Azure 구독이 사용할 수 없게 되거나 데이터에 액세스할 수 없게 되기 전에 리소스를 다른 Azure 구독으로 이전해야 합니다.  
 
-Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하여 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
+Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습니다.  Azure 리소스를 저장하려면 아래에서 선택하는 작업과 관계없이 리소스를 다른 Azure 구독으로 [이전](/azure/azure-resource-manager/management/move-resource-group-and-subscription)해야 합니다. 
 
 - **Visual Studio 구독을 직접 구매하는 경우** Microsoft Store를 통해 새 구독을 구매하거나 구독을 갱신합니다.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
@@ -116,7 +116,7 @@ A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

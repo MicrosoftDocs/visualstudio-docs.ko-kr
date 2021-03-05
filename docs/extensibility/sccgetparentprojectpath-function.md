@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 지정 된 프로젝트의 부모 프로젝트 경로를 결정 합니다.
 title: SccGetParentProjectPath 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958403"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220614"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 함수
 이 함수는 지정 된 프로젝트의 부모 프로젝트 경로를 결정 합니다. 이 함수는 사용자가 Visual Studio 프로젝트를 소스 제어에 추가할 때 호출 됩니다.
@@ -63,7 +64,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|부모 프로젝트 경로를 가져왔습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|

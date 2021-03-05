@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 관리 도구를 호출 합니다.
 title: SccRunScc 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836763"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221368"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 함수
 이 함수는 소스 제어 관리 도구를 호출 합니다.
@@ -50,10 +51,10 @@ SCCRTN SccRunScc(
 
 진행 선택한 파일 이름의 배열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|소스 제어 관리 도구를 성공적으로 호출 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 취소 되었습니다.|

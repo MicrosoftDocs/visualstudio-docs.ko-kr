@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 보류 중인 중단점과 연결 된 오류 중단점을 열거 합니다.
 title: IEnumDebugErrorBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d770f9613dad30d46f1788aeecb67997388eea75
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896974"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224917"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 이 인터페이스는 보류 중인 중단점과 연결 된 오류 중단점을 열거 합니다.
@@ -37,7 +38,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugErrorBreakpoints2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|열거형 시퀀스에서 지정 된 수의 오류 중단점을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|열거형 시퀀스에서 지정 된 수의 오류 중단점을 건너뜁니다.|

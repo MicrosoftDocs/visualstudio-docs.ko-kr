@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 시스템에서 파일의 이름을 바꿉니다.
 title: SccRename 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836750"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221342"
 ---
 # <a name="sccrename-function"></a>SccRename 함수
 이 함수는 소스 제어 시스템에서 파일의 이름을 바꿉니다.
@@ -50,10 +51,10 @@ SCCRTN SccRename(
 
 진행 정규화 된 새 이름입니다. 디렉터리 경로가 다른 경우 파일은 한 하위 디렉터리에서 다른 하위 디렉터리로 이동 되었습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|이름 바꾸기 작업이 성공적으로 완료 되었습니다.|
 |SCC_E_PROJNOTOPEN|프로젝트가 소스 제어에서 열려 있지 않습니다.|
