@@ -1070,6 +1070,8 @@
       items:
         - name: 호출 계층 구조
           href: ide/reference/call-hierarchy.md
+        - name: 개발자 명령 프롬프트 및 Developer PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: 변경 내용 미리 보기
           href: ide/preview-changes.md
         - name: '도구 상자 항목 선택, WPF 구성 요소'
