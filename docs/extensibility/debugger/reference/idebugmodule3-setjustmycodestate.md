@@ -1,4 +1,5 @@
 ---
+description: 모듈을 사용자 코드로 표시 합니다.
 title: 'IDebugModule3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c387f44f6e16717ee01d73d633d0cfa791e1325
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e4d1664c17ad9c822990ea8b3ef8c2bc0c3c664
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929721"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149883"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 모듈을 사용자 코드로 표시 합니다.
@@ -43,7 +44,7 @@ int SetJustMyCodeState(
 `fIsUserCode`\
 진행 `TRUE`모듈을 사용자 코드로 간주 해야 하는 경우 0이 아닌 ()이 고, `FALSE` 그렇지 않으면 0 ()입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

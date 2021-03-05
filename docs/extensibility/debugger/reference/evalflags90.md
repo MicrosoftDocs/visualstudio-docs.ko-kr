@@ -1,4 +1,5 @@
 ---
+description: 식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다.
 title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a67f68f8b2e6cf32e2c34702afaabbe476ff1e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2080eba4b8319045dcd4d3603d1e6441fafed97d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936958"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150928"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 식 계산을 제어 하는 플래그에 대 한 유효한 값을 열거 합니다. 이 열거형은 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 열거형을 확장 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EVALFLAGS90

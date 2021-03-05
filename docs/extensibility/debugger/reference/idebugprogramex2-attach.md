@@ -1,4 +1,5 @@
 ---
+description: 프로그램에 세션을 연결 합니다.
 title: 'IDebugProgramEx2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa9a66bdec3da9b6d18772b4ff2c85a7874bde6c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898831"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150148"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 프로그램에 세션을 연결 합니다.
@@ -53,7 +54,7 @@ int Attach(
 `pSession`\
 진행 프로그램에 연결 되는 세션을 고유 하 게 식별 하는 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 프로그램이 이미 연결 되어 있으면이 메서드는를 반환 해야 합니다 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` .
 
 ## <a name="remarks"></a>설명

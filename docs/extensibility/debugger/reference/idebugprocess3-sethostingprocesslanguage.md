@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 프로세스가 호스팅될 언어를 설정 합니다.
 title: 'IDebugProcess3:: SetHostingProcessLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d2a95a5f8181b7b58198a8a56b7fb0037ef0bc1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926257"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150122"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 이 메서드는 프로세스가 호스팅될 언어를 설정 합니다. 이 언어는 디버그 엔진 (DE)에서 적절 한 식 계산기를 로드 하는 데 사용할 수 있습니다.
@@ -43,7 +44,7 @@ int SetHostingProcessLanguage(
 `guidLang`\
 [in] `GUID` DE가 사용 해야 하는 언어의입니다. `GUID_NULL`(C + +) 또는 `Guid.Empty` (c #)를 지정 하 여 de-de가 기본 언어를 사용 하도록 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 이 문서 컨텍스트와 연결 된 모든 코드 컨텍스트의 목록을 검색 합니다.
 title: 'IDebugDocumentContext2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d361a0cee6a5c54a11e5497366fe1d82bf30af45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933546"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150603"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 이 문서 컨텍스트와 연결 된 모든 코드 컨텍스트의 목록을 검색 합니다.
@@ -42,13 +43,13 @@ int EnumCodeContexts(
 ## <a name="parameters"></a>매개 변수
 `ppEnumCodeCxts`\
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 문서에서 템플릿 또는 포함 파일을 사용 하는 경우 단일 문서 컨텍스트는 여러 코드 컨텍스트를 생성할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CDebugContext` [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

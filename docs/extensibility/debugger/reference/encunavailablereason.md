@@ -1,4 +1,5 @@
 ---
+description: 편집 하며 계속 하기를 사용할 수 없는 이유를 나타냅니다.
 title: EncUnavailableReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 384d71d6f88e8cd792585bb097594fa7b1e38c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1f80dc1454cb1c15feddd099411bcb339dbc58c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953749"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151006"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!`**편집 하며 계속 하기** 를 사용할 수 없는 이유를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum tagEncUnavailableReason {

@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램이 로드 되 고 실행 중인 모듈 목록을 검색 합니다.
 title: 'IDebugProgram2:: EnumModules | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da3f3dcd150d35199458e9952074f76931969175
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26016510856de44c07ca9a123553e82d0d2a79f4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958585"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149628"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 이 프로그램이 로드 되 고 실행 중인 모듈 목록을 검색 합니다.
@@ -43,7 +44,7 @@ int EnumModules(
 `ppEnum`\
 제한이 모듈 목록을 포함 하는 [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

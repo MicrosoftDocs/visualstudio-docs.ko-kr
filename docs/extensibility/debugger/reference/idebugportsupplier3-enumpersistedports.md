@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 지속형 포트 목록을 열거할 수 있도록 하는 개체를 검색 합니다.
 title: 'IDebugPortSupplier3:: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582849f0dd859d5155b4d3ee5653cefff6396780
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840329"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150421"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 이 메서드는 지속형 포트 목록을 열거할 수 있도록 하는 개체를 검색 합니다.
@@ -48,7 +49,7 @@ int EnumPersistedPorts(
 `ppEnum`\
 제한이 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 인터페이스를 구현 하는 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

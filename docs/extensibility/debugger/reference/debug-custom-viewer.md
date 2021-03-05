@@ -1,4 +1,5 @@
 ---
+description: 사용자 지정 뷰어 또는 형식 시각화 도우미를 식별 하는 구조체입니다.
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46133d2b2800977b0819835f578b04569c4f5ce8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151059"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 사용자 지정 뷰어 또는 형식 시각화 도우미를 식별 하는 구조체입니다.
@@ -49,7 +50,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwID`\
 하나에 의해 구현 된 여러 뷰어 또는 시각화 도우미를 구분 하는 ID `GUID` 입니다.
 

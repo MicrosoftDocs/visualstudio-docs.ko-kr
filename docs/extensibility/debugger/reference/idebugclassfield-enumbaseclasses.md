@@ -1,4 +1,5 @@
 ---
+description: 이 클래스의 기본 클래스에 대 한 열거자를 만듭니다.
 title: 'IDebugClassField:: EnumBaseClasses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8648890e030799b985a4e917be8caf85292528a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d5ef86e5f4fea89b376404703000c8bd7e861a0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947101"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150720"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 이 클래스의 기본 클래스에 대 한 열거자를 만듭니다.
@@ -44,7 +45,7 @@ int EnumBaseClasses(
 
 제한이 기본 클래스 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 기본 클래스가 없는 경우 null 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 하 고, 기본 클래스가 없고 매개 변수가 null 값으로 설정 된 경우 S_SH_NO_BASE_CLASSES을 반환 하 고 `ppEnum` , 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

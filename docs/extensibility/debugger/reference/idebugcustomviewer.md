@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스를 사용 하면 식 계산기 (EE)에서 필요한 모든 형식으로 속성 값을 표시할 수 있습니다.
 title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17ca1bb92f5db821b1d581f1a573032fea004fb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d262869d24c50c543159952506a40be753b4be4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934320"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150694"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 이 인터페이스를 사용 하면 식 계산기 (EE)에서 필요한 모든 형식으로 속성 값을 표시할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomViewer : IUknown
@@ -37,7 +38,7 @@ COM의 함수에 대 한 호출은 `CoCreateInstance` 이 인터페이스를 인
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|지정 된 값을 표시 하는 데 필요한 모든 항목을 수행 합니다.|
 
@@ -57,7 +58,7 @@ COM의 함수에 대 한 호출은 `CoCreateInstance` 이 인터페이스를 인
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 이 예제에서는 속성에서 사용자 지정 뷰어를 포함 하는 경우 속성에서 첫 번째 사용자 지정 뷰어를 가져오는 방법을 보여 줍니다.
 
 ```cpp

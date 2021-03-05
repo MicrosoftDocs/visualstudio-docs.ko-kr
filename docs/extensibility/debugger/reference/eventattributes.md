@@ -1,4 +1,5 @@
 ---
+description: 이벤트 특성을 지정 합니다.
 title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f304921f622245787413a05894096470a96eb30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6b56e815d8145e3f870468751a0978475245c86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150889"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 이벤트 특성을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EVENTATTRIBUTES {

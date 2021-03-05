@@ -1,4 +1,5 @@
 ---
+description: IDebugField 개체에 포함 된 필드의 종류를 지정 합니다.
 title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874371"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150863"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 된 필드의 종류를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_KIND {
@@ -189,7 +190,7 @@ public enum enum_FIELD_KIND {
 필드가 참조 임을 나타냅니다.
 
 `FIELD_TYPE_EXTENDED`\
-다음에 사용하도록 예약됩니다.
+나중에 사용하기 위해 예약되어 있습니다.
 
 `FIELD_SYM_MEMBER`\
 필드가 멤버 임을 나타냅니다.
@@ -213,7 +214,7 @@ public enum enum_FIELD_KIND {
 필드에서 속성을 설정 함을 나타냅니다.
 
 `FIELD_SYM_EXTENDED`\
-다음에 사용하도록 예약됩니다.
+나중에 사용하기 위해 예약되어 있습니다.
 
 `FIELD_KIND_MASK`\
 필드 종류에 대 한 마스크를 나타냅니다.

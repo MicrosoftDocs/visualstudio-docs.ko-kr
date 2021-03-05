@@ -1,4 +1,5 @@
 ---
+description: IDebugField 개체에서 가져오고 사용자에 게 표시할 정보의 종류를 나타내는 유효한 값을 열거 합니다.
 title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5632c6844a38f1891070311fe3c7c65a0220def5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953775"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151026"
 ---
 # <a name="displaykind"></a>DisplayKind
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에서 가져오고 사용자에 게 표시할 정보의 종류를 나타내는 유효한 값을 열거 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DisplayKind

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로그램 노드에서이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)을 지정 하는 데 사용 됩니다.
 title: IDebugProgramEngines2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898905"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149589"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 이 인터페이스는 프로그램 노드에서이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)을 지정 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramEngines2 : IUnknown
@@ -37,7 +38,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramEngines2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|이 프로그램을 디버그할 수 있는 모든 가능한 DEs를 나타냅니다.|
 |[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|이 프로그램을 디버깅 하는 데 사용할 DE를 선택 합니다.|

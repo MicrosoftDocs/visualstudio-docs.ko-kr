@@ -1,4 +1,5 @@
 ---
+description: 이 스레드에 대 한 스택 프레임 목록을 검색 합니다.
 title: 'IDebugThread2:: Enum프레임 정보 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9ad740de00338596de622cbce1028768ddda638
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149342"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 이 스레드에 대 한 스택 프레임 목록을 검색 합니다.
@@ -53,7 +54,7 @@ int EnumFrameInfo (
 `ppEnum`\
 제한이 스택 프레임을 설명 하는 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조 목록을 포함 하는 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

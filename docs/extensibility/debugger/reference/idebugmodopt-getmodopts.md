@@ -1,4 +1,5 @@
 ---
+description: 선택적 한정자 목록을 검색 합니다.
 title: 'IDebugModOpt:: GetModOpts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78ddcaa6a062b844c3f60c04f7a08aa673c69f67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 971d04662042afed1afe8e1861d0080b513ca74d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941790"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149940"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 선택적 한정자 목록을 검색 합니다.
@@ -52,7 +53,7 @@ int GetModOpts(
 `pceltFetched`\
 [in, out] 배열에서 반환 된 요소의 수 `rgelt` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

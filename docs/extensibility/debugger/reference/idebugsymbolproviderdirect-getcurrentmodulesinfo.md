@@ -1,4 +1,5 @@
 ---
+description: 기호 그룹의 모듈에 대 한 정보를 검색 합니다.
 title: 'Idebug심볼 Providerdirect:: GetCurrentModulesInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dabc19c8d748b869621ae05d53cdf5c551a6a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e4dca03595f4b52ed5842b4901bdd37e1ce2c37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909523"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149511"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 기호 그룹의 모듈에 대 한 정보를 검색 합니다.
@@ -62,7 +63,7 @@ int GetCurrentModulesInfo(
 `ppCDModItfs`\
 제한이 기호 그룹의 모듈을 포함 하는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

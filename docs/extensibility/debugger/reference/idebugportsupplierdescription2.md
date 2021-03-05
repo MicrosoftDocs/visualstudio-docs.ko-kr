@@ -1,4 +1,5 @@
 ---
+description: 프로세스에 연결 대화 상자의 전송 정보 섹션에 텍스트를 표시 하는 Visual Studio UI를 사용 하도록 설정 합니다.
 title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c3cd8d6fbeaf020ea772c9bd5cae783b6e8d127
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150382"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] **프로세스에 연결** 대화 상자의 **전송 정보** 섹션에 텍스트를 표시 하는 UI를 사용 하도록 설정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierDescription2 : IUnknown

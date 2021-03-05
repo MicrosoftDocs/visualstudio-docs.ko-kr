@@ -1,4 +1,5 @@
 ---
+description: 메타 데이터 가져오기 정보를 검색 합니다.
 title: 'Idebug심볼 Providerdirect:: GetMetaDataImport | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7028d6e958de0d1c15d0e0c7c40a78e29a815736
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bbab6ea486d1de4076424bd70d86b34eac19813
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909475"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149472"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 메타 데이터 가져오기 정보를 검색 합니다.
@@ -52,7 +53,7 @@ int GetMetaDataImport (
 `ppImport`\
 제한이 메타 데이터 가져오기 정보를 포함 하는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

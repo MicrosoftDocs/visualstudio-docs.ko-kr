@@ -1,4 +1,5 @@
 ---
+description: 지정 된 디버그 주소에서 메서드에 대 한 정보를 검색 합니다.
 title: 'Idebug심볼 Providerdirect:: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dea6367280217f42238a56a56a6ce0e0e6f92b47
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909436"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149498"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 지정 된 디버그 주소에서 메서드에 대 한 정보를 검색 합니다.
@@ -72,7 +73,7 @@ int GetMethodFromAddress(
 `pdwVersion`\
 제한이 메서드의 버전 번호입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,4 +1,5 @@
 ---
+description: 지정 된 코드 위치 식별자에 해당 하는 코드 컨텍스트 개체를 반환 합니다.
 title: 'IDebugDisassemblyStream2:: GetCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9bd0c78853a41c7efa7907fd1004277862721dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8662fdadfbd2c41d193ddced158a956cb8c6fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150629"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 지정 된 코드 위치 식별자에 해당 하는 코드 컨텍스트 개체를 반환 합니다.
@@ -48,7 +49,7 @@ int GetCodeContext(
 `ppCodeContext`\
 제한이 연결 된 코드 컨텍스트를 나타내는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

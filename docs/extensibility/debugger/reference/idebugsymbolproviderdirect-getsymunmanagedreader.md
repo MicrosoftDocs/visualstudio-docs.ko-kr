@@ -1,4 +1,5 @@
 ---
+description: 비관리 코드에 대 한 기호 판독기를 검색 합니다.
 title: 'Idebug심볼 Providerdirect:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db92e63ecf6f9fe929fe7a2a398d5e99613f84d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 328cb3b42fbeaaf5df5dd01841d6438d663a0754
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909413"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149459"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 비관리 코드에 대 한 기호 판독기를 검색 합니다.
@@ -52,7 +53,7 @@ int GetSymUnmanagedReader (
 `ppSymUnmanagedReader`\
 제한이 비관리 코드에 대 한 기호 판독기를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

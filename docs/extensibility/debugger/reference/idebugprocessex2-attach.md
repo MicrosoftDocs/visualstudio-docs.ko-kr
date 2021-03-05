@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 세션이 프로세스를 디버깅 하 고 있음을 프로세스에 알립니다.
 title: 'IDebugProcessEx2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9b9e2fa8f636581572b97da58fb9ddefeafd375
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1938ae8299612caabe2fe684b7b5c1af685d4596
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892543"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149745"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 이 메서드는 세션이 프로세스를 디버깅 하 고 있음을 프로세스에 알립니다.
@@ -43,7 +44,7 @@ int Attach(
 `pSession`\
 진행 이 프로세스에 연결 되는 세션을 고유 하 게 식별 하는 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 로드 되거나 언로드될 모듈을 가져옵니다.
 title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0baed5d7c0717f1bb8fd1a999f767d9e59abbae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e44268dcf4ab79e99bd1bdf5a996ae18762e139
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920886"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149836"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 로드 되거나 언로드될 모듈을 가져옵니다.
@@ -53,7 +54,7 @@ int GetModule(
 `pbLoad`\
 [in, out] `TRUE`모듈이 로드 되 고 있는 경우 0이 아닌 ()이 고, `FALSE` 모듈이 언로드되고 있으면 ()입니다. 이 매개 변수가 null 값 이면 상태를 요청 하지 않습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

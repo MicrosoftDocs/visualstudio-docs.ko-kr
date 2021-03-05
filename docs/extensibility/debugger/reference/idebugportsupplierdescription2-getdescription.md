@@ -1,4 +1,5 @@
 ---
+description: 포트 공급자에 대 한 설명 및 설명 메타 데이터를 검색 합니다.
 title: 'IDebugPortSupplierDescription2:: GetDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7bbf1f154f23b7cb97f685b4e367199b73547546
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef6660c0d3521bb9197f626f10142a5f9976475b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840225"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150369"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 포트 공급자에 대 한 설명 및 설명 메타 데이터를 검색 합니다.
@@ -46,7 +47,7 @@ public int GetDescription(
 `pbstrText`\
 제한이 포트 공급자에 대 한 설명입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목
