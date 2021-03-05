@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 바인더에서 기호와 식의 값을 캡슐화 하기 위해 만드는 개체를 나타냅니다.
 title: IDebugObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14c405c9dbe3d1cbfdf61c606b995a686e063661
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953580"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170199"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99953580"
 
  이 인터페이스는 바인더에서 기호와 식의 값을 캡슐화 하기 위해 만드는 개체를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject : IUnknown
@@ -40,7 +41,7 @@ IDebugObject : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugObject` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|개체의 크기를 가져옵니다.|
 |[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|개체의 값을 연속 된 일련의 바이트로 가져옵니다.|

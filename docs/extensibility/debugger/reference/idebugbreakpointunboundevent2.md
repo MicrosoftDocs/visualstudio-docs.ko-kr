@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 런타임에 바인딩된 중단점이 로드 된 프로그램에서 바인딩 해제 되었음을 SDM (세션 디버그 관리자)에 지시 합니다.
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c23c060883ca3d2682659112bdc55de001e80e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170226"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 이 인터페이스는 런타임에 바인딩된 중단점이 로드 된 프로그램에서 바인딩 해제 되었음을 SDM (세션 디버그 관리자)에 지시 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointUnboundEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointUnboundEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|바인딩 해제 된 중단점을 가져옵니다.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|중단점이 바인딩 해제 된 이유를 가져옵니다.|

@@ -1,4 +1,5 @@
 ---
+description: 지정 된 위치에 상대적인 지정 된 수의 명령을 디스어셈블리 스트림에서 읽기 포인터를 이동 합니다.
 title: 'IDebugDisassemblyStream2:: Seek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3223f454fbf775b6aa11512c20fc63f8c224ade7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1799e2fd0fb992a2b60f57e668937a927a14e7bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944630"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170213"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 지정 된 위치에 상대적인 지정 된 수의 명령을 디스어셈블리 스트림에서 읽기 포인터를 이동 합니다.
@@ -58,7 +59,7 @@ int Seek(
 `iInstructions`\
 진행 에 지정 된 위치를 기준으로 이동할 명령의 수입니다 `dwSeekStart` . 뒤로 이동 하는 경우이 값은 음수일 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`검색 위치가 사용 가능한 명령 목록을 벗어난 지점에 있는 경우를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

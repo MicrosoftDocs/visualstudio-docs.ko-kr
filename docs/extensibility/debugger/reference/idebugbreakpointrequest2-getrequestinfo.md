@@ -1,4 +1,5 @@
 ---
+description: 이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
 title: 'IDebugBreakpointRequest2:: GetRequestInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a327207f5fde99aac482cf0b77d29af04b082524
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d0a76db616c99903f2f9c90e42c08acd0b91e4f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862144"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170265"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
@@ -48,10 +49,10 @@ int GetRequestInfo(
 `pBPRequestInfo`\
 제한이 중단점 요청에 대 한 설명으로 채울 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조체를 지정 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```

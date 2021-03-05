@@ -1,4 +1,5 @@
 ---
+description: 중단점이 바인딩 해제 된 이유를 가져옵니다.
 title: 'IDebugBreakpointUnboundEvent2:: GetReason | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d230a9228ff59a90224030f050761a05858c8c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170252"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 중단점이 바인딩 해제 된 이유를 가져옵니다.
@@ -43,13 +44,13 @@ int GetReason(
 `pdwUnboundReason`\
 제한이 중단점이 바인딩 해제 된 이유를 지정 하는 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 편집 하며 계속 하기 작업 후에 다른 위치에 다시 바인딩하는 중단점 또는 오류가 발생 하 여 중단점이 바인딩 되었는지 확인 하는 이유가 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) 인터페이스를 노출 하는 **CBreakpointUnboundDebugEventBase** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
