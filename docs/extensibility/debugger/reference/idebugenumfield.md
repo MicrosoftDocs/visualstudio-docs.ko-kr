@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 열거형 형식을 나타냅니다.
 title: IDebugEnumField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67c660ec8457191e688fdd430c3f7a07b5d75c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f78e8d2560224ad22a58b74823530b6be4b1efb8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933325"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153211"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 이 인터페이스는 열거형 형식을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEnumField : IDebugContainerField
@@ -37,7 +38,7 @@ IDebugEnumField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>VTable 순서의 메서드
  이 인터페이스는 및 인터페이스의 메서드 외에도 `IDebugField` `IDebugContainerField` 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|이 열거형 형식의 이름을 설명 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.|
 |[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|지정 된 값과 연결 된 열거 상수의 이름을 반환 합니다.|

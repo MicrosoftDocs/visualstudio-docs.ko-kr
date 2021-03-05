@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 대/소문자를 구분 하지 않는 검색을 사용 하 여 열거형 상수의 이름과 연결 된 값을 반환 합니다.
 title: 'IDebugEnumField:: GetValueFromStringCaseInsensitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f853598c5d3c9b293c806e1db475c5053a1a208e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933351"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153224"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 이 메서드는 대/소문자를 구분 하지 않는 검색을 사용 하 여 열거형 상수의 이름과 연결 된 값을 반환 합니다.
@@ -48,7 +49,7 @@ int GetValueFromStringCaseInsensitive(
 `pValue`\
 제한이 연결 된 숫자 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 `S_FALSE` 이름이 열거형의 일부가 아니면가 반환 되 고, 그렇지 않으면이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
