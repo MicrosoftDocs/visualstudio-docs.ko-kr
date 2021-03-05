@@ -1,4 +1,5 @@
 ---
+description: 사용할 체크섬 알고리즘의 고유 식별자가 지정 된 경우 중단점 요청에 대 한 문서 체크섬을 검색 합니다.
 title: 'IDebugBreakpointChecksumRequest2:: GetChecksum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b0e737e8ceea5cc9fb6bb07ad56b9937fc97df1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5661a2753e022ae3907092efd7aab9a046107df5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143430"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 사용할 체크섬 알고리즘의 고유 식별자가 지정 된 경우 중단점 요청에 대 한 문서 체크섬을 검색 합니다.
@@ -46,10 +47,10 @@ public int GetChecksum(
 `pChecksumData`\
 제한이 중단점 요청에 대 한 문서 체크섬입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 바인딩되는 문서의 체크섬이 UI의 체크섬과 일치 하는지 여부를 확인 하는 함수를 보여 줍니다.
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: 중단점 요청에 대 한 중단점의 위치 유형을 지정 합니다.
 title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1ccf81393e42cc79b0ef93703b4a2327207baf6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144197"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 중단점 요청에 대 한 중단점의 위치 유형을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_LOCATION_TYPE {

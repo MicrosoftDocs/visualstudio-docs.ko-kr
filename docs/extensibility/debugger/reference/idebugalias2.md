@@ -1,4 +1,5 @@
 ---
+description: 변수에 대 한 숫자 별칭을 나타내며 식 계산기 (EE)에서 별칭의 응용 프로그램 도메인을 가져올 수 있도록 합니다.
 title: IDebugAlias2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 171e9da3b25aa33ad3921f4ec5f841429490be72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f383e31f43e1e6422892547d66af533c2f4ab87f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944617"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143859"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
@@ -23,7 +24,7 @@ ms.locfileid: "99944617"
 
  변수에 대 한 숫자 별칭을 나타내며 식 계산기 (EE)에서 별칭의 응용 프로그램 도메인을 가져올 수 있도록 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias2 : IDebugAlias
@@ -35,7 +36,7 @@ IDebugAlias2 : IDebugAlias
 ## <a name="methods"></a>메서드
  [Idebugalias](../../../extensibility/debugger/reference/idebugalias.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|응용 프로그램 도메인에 대 한 식별자를 검색 합니다.|
 

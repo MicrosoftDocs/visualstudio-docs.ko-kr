@@ -1,4 +1,5 @@
 ---
+description: 사용자가 포트를 선택할 수 있는 지정 된 대화 상자를 표시 합니다.
 title: IDebugPortPicker::D isplayPortPicker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49cc4500e887a3fbfcd8f6da8a62c42c75ef56aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c07e95343521692d41d045a89a4038f5ff64e7b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929539"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142559"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 사용자가 포트를 선택할 수 있는 지정 된 대화 상자를 표시 합니다.
@@ -47,7 +48,7 @@ public int DisplayPortPicker(
 `pbstrPortId`\
 제한이 포트 식별자 문자열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 반환 값 `S_FALSE` (또는가로 설정 된의 반환 값 `S_OK` )은 `BSTR` `NULL` 사용자가 **취소** 를 클릭 했음을 나타냅니다.
 
 ## <a name="see-also"></a>참고 항목

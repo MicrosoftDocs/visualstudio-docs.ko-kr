@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 세션 디버그 관리자 (SDM)에 비동기 중단이 성공적으로 완료 되었음을 알려 줍니다.
 title: IDebugBreakEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dddf2c69cf7ccf221c00e88fc159b762284483ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943436"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143586"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 이 인터페이스는 세션 디버그 관리자 (SDM)에 비동기 중단이 성공적으로 완료 되었음을 알려 줍니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakEvent2 : IUnknown

@@ -1,4 +1,5 @@
 ---
+description: 지정 된 계산 플래그 설정 및 시간 제한 값을 사용 하는 개체를 만듭니다.
 title: 'IDebugFunctionObject2:: CreateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 424599d322c2c8dd4db8ff4e19bab60eceaefc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143144"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 지정 된 계산 플래그 설정 및 시간 제한 값을 사용 하는 개체를 만듭니다.
@@ -67,7 +68,7 @@ int CreateObject (
 `ppObject`\
 제한이 새로 만든 개체를 나타내는 **Idebugobject** 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

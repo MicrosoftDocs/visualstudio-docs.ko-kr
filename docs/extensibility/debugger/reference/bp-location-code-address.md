@@ -1,4 +1,5 @@
 ---
+description: 코드의 주소에서 중단점의 위치를 설명 합니다.
 title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a438e3e30d541b641b0f9ae74160ee4e22b131b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 961a62284b841d56ae73a29df0e83810ff9d7d20
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144444"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 코드의 주소에서 중단점의 위치를 설명 합니다.
@@ -35,7 +36,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 } BP_LOCATION_CODE_ADDRESS;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `bstrContext`\
 중단점의 컨텍스트 (일반적으로 호출 스택에 표시 되는 메서드 또는 함수 이름)입니다.
 

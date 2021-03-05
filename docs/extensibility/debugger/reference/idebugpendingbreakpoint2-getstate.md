@@ -1,4 +1,5 @@
 ---
+description: 보류 중인 중단점의 상태를 가져옵니다.
 title: 'IDebugPendingBreakpoint2:: GetState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93aae8aea0216adfff533aa9aacd3c5c925e362c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94e513828ba726b314a6b748992c42bd95a614c4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143053"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 보류 중인 중단점의 상태를 가져옵니다.
@@ -44,7 +45,7 @@ int GetState(
 `pState`\
 [in, out] 보류 중인이 중단점에 대 한 설명으로 채워진 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

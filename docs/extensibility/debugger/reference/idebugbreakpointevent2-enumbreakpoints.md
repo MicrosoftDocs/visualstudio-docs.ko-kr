@@ -1,4 +1,5 @@
 ---
+description: 현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.
 title: 'IDebugBreakpointEvent2:: EnumBreakpoints or Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899038"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143357"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.
@@ -43,7 +44,7 @@ int EnumBreakpoints(
 `ppEnum`\
 제한이 현재 코드 위치와 연결 된 모든 중단점을 열거 하는 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

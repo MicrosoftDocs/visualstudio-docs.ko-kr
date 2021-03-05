@@ -1,4 +1,5 @@
 ---
+description: 사용자가 IDE (통합 개발 환경)에서 입력할 수 있는 문자열을 기반으로 하는 데이터 중단점을 설정 하는 데 사용 됩니다.
 title: BP_LOCATION_DATA_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: ce47dc9a3fac9ee56b801e4d2681668f4467f532
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e4a250843ebbb6ab7680040e3aa296699e184ee
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902162"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144353"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 사용자가 IDE (통합 개발 환경)에서 입력할 수 있는 문자열을 기반으로 하는 데이터 중단점을 설정 하는 데 사용 됩니다.
@@ -35,7 +36,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 } BP_LOCATION_DATA_STRING;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `pThread`\
 중단점이 발생 한 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 

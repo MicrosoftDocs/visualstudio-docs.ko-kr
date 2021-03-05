@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 보류 중인 중단점이 로드 된 프로그램에 성공적으로 바인딩 되었다는 것을 SDM (세션 디버그 관리자)에 게 알립니다.
 title: IDebugBreakpointBoundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3969010a59e66a8931c7f99d337b6f2ad373ccc4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948337"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143573"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 이 인터페이스는 보류 중인 중단점이 로드 된 프로그램에 성공적으로 바인딩 되었다는 것을 SDM (세션 디버그 관리자)에 게 알립니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointBoundEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointBoundEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|바인딩되는 보류 중인 중단점을 가져옵니다.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|이 이벤트에 바인딩된 중단점의 열거자를 만듭니다.|

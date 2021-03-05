@@ -1,4 +1,5 @@
 ---
+description: 응용 프로그램 도메인에 대 한 식별자를 검색 합니다.
 title: 'IDebugAlias2:: GetAppDomainId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c50473e12399e3977de55e67c7251d5783eecfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f5bd0d6a96ad41409b87433599fe693fc86c1cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947127"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143872"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 응용 프로그램 도메인에 대 한 식별자를 검색 합니다.
@@ -42,7 +43,7 @@ int GetAppDomainId (
 `pappDomainId`\
 제한이 응용 프로그램 도메인 식별자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

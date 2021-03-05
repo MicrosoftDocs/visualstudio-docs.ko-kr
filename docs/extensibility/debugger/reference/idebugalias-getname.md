@@ -1,4 +1,5 @@
 ---
+description: 이 별칭의 이름을 가져옵니다.
 title: 'IDebugAlias:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e6f71384f6e30850527524077df35d49aab3cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86de6cf6a9670170e83fe984807c312902a1050b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944773"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143911"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 이 별칭의 이름을 가져옵니다.
@@ -43,7 +44,7 @@ int GetName(
 `pbstrName`\
 제한이 별칭의 이름입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

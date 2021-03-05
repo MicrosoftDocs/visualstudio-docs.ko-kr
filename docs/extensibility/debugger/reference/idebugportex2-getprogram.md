@@ -1,4 +1,5 @@
 ---
+description: 프로그램 노드에 연결 된 프로그램을 가져옵니다.
 title: 'IDebugPortEx2:: GetProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8ed073d873ecb0d46b85d37c355d6c374a7eabc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bb169ecdbd0dcea188054c96af06da609edf3f7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844790"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142806"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 프로그램 노드에 연결 된 프로그램을 가져옵니다.
@@ -46,7 +47,7 @@ int GetProgram(
 
 `ppProgram` 제한이 프로그램 노드와 연결 된 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

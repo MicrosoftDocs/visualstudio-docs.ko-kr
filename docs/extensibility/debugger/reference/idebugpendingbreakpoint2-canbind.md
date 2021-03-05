@@ -1,4 +1,5 @@
 ---
+description: 보류 중인이 중단점을 코드 위치에 바인딩할 수 있는지 여부를 확인 합니다.
 title: 'IDebugPendingBreakpoint2:: CanBind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89781298dc9134f80f8f57cc0e008068fa47bad3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55b51049929941e868803242af8ef12bca368dd8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143092"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 보류 중인이 중단점을 코드 위치에 바인딩할 수 있는지 여부를 확인 합니다.
@@ -44,13 +45,13 @@ int CanBind (
 `ppErrorEnum`\
 제한이 오류가 있을 수 있는 경우 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 개체의 목록을 포함 하는 [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하는 경우 `S_OK.` `S_FALSE` 중단점에서 바인딩할 수 없는 경우를 반환 합니다 .이 경우 매개 변수에 의해 오류가 반환 됩니다 `ppErrorEnum` . 그러지 않으면 오류 코드가 반환됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.
 
 ## <a name="remarks"></a>설명
  이 메서드는이 보류 중인 중단점이 바인딩된 경우 발생 하는 상황을 확인 하기 위해 호출 됩니다. [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) 메서드를 호출 하 여 보류 중인 중단점을 실제로 바인딩합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

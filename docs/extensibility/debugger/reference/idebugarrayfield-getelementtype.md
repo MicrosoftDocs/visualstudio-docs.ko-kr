@@ -1,4 +1,5 @@
 ---
+description: 배열에 있는 요소의 형식을 가져옵니다.
 title: 'IDebugArrayField:: GetElementType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44b49cbcd52137b31dd456c4cf45bb3fe8ead947
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9624a04ae70c8d29abd9b8af5b597b583efb7834
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944655"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143846"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 배열에 있는 요소의 형식을 가져옵니다.
@@ -43,7 +44,7 @@ int GetElementType(
 `ppType`\
 제한이 요소의 형식을 설명 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 조건부 중단점이 발생 하는 개수와 조건에 대해 설명 합니다.
 title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e250dab652ff0d63033f8b40423e76975eeee5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c1e44ede0f39b3d1b33967311365508da6a701d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144158"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 조건부 중단점이 발생 하는 개수와 조건에 대해 설명 합니다.
@@ -41,7 +42,7 @@ public struct BP_PASSCOUNT {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwPassCount`\
 중단점을 실행 하기 전에이를 전달 하는 횟수입니다.
 

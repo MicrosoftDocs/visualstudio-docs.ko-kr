@@ -1,4 +1,5 @@
 ---
+description: 보류 중인이 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.
 title: IDebugPendingBreakpoint2::D e) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cf3a78a9bde3a909e1c7d0ebfd8d3e5ca0add9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 459e21fa7cc9e43d09d56f4537dd9a3bf2a978b3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143079"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 보류 중인이 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.
@@ -41,7 +42,7 @@ int Delete();
 ## <a name="return-value"></a>Return Value
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 IDebugPendingBreakpoint2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CPendingBreakpoint` . [](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 개체의 런타임 형식을 결정 합니다.
 title: 'IDebugBinder:: ResolveRuntimeType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dad51c2741296f9d666a352a5e5a6aa0a3e9cf61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19e7285dd25009e7fe4aeb92974c70ce4109502c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938228"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143638"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 이 메서드는 개체의 런타임 형식을 결정 합니다.
@@ -48,7 +49,7 @@ int ResolveRuntimeType(
 `ppResolved`\
 제한이 개체의 형식을 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md)로 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

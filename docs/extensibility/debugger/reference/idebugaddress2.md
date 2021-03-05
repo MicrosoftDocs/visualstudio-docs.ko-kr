@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는이 인터페이스로 주소가 표시 되는 개체를 소유 하는 프로세스의 ID에 대 한 액세스를 제공 합니다.
 title: IDebugAddress2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31efd42d4d51384a09d6f0468484561e32f4397
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58a3f01472f60996b7094334de8cb2dbd79acac0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944819"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143963"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 이 인터페이스는이 인터페이스로 주소가 표시 되는 개체를 소유 하는 프로세스의 ID에 대 한 액세스를 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAddress2 : IDebugAddress
@@ -37,7 +38,7 @@ IDebugAddress2 : IDebugAddress
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스에서 상속 된 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|이 인터페이스가 나타내는 개체를 소유 하는 프로세스의 ID를 검색 합니다.|
 

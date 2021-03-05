@@ -1,4 +1,5 @@
 ---
+description: 이 개체와 연결 된 별칭을 가져옵니다 (있는 경우).
 title: 'IDebugObject2:: GetAlias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c2ac683a5fb4d694b7cf3ab84849b9d7c7df7a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143131"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 이 개체와 연결 된 별칭을 가져옵니다 (있는 경우).
@@ -43,7 +44,7 @@ int GetAlias(
 `ppAlias`\
 제한이 이 개체의 별칭을 나타내는 [Idebugalias](../../../extensibility/debugger/reference/idebugalias.md) 개체를 반환 합니다. 그렇지 않으면 null 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

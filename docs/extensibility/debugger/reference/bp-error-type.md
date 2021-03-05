@@ -1,4 +1,5 @@
 ---
+description: 중단점의 오류 유형을 지정 합니다.
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853054"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144431"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 중단점의 오류 유형을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_ERROR_TYPE {

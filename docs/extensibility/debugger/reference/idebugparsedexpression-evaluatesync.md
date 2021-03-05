@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 구문 분석 된 식을 계산 하 고 선택적으로 결과를 다른 데이터 형식으로 캐스팅 합니다.
 title: 'IDebugParsedExpression:: EvaluateSync | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff14c10f5563053ce704982455eee6d9dc81b742
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99760fb35975834186beddf2962ea8402543d088
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143106"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 이 메서드는 구문 분석 된 식을 계산 하 고 선택적으로 결과를 다른 데이터 형식으로 캐스팅 합니다.
@@ -73,7 +74,7 @@ int EvaluateSync(
 `ppResult`\
 제한이 계산 결과를 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

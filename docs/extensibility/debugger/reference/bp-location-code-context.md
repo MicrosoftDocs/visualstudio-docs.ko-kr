@@ -1,4 +1,5 @@
 ---
+description: 디버깅 중인 프로그램의 주소에 직접 바인딩된 중단점의 위치를 설명 합니다.
 title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a51665a22a01c17256c41d45d2970bea0f617140
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b84e71c3102071dcdd0bcb5be9b539144c19047
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948389"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144405"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 디버깅 중인 프로그램의 주소에 직접 바인딩된 중단점의 위치를 설명 합니다.
@@ -32,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 } BP_LOCATION_CODE_CONTEXT;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `pCodeContext`\
 코드에서 중단점의 위치를 식별 하는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체입니다.
 

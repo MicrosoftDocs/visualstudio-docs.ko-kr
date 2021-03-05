@@ -1,4 +1,5 @@
 ---
+description: 스택 프레임을 설명 합니다.
 title: 프레임 정보 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8830e3917198cda10d9e4e0fb8919b1b56e84e9e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904758"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144093"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 스택 프레임을 설명 합니다.
@@ -63,7 +64,7 @@ public struct FRAMEINFO {
 } FRAMEINFO;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `m_dwValidFields`\
 채울 필드를 지정 하는 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 열거형의 플래그 조합입니다.
 

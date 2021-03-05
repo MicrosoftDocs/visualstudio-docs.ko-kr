@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DE)은 프로그램이 중단점에서 중지 될 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 title: IDebugBreakpointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143339"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 디버그 엔진 (DE)은 프로그램이 중단점에서 중지 될 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugBreakpointEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.|
 

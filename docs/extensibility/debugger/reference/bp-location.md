@@ -1,4 +1,5 @@
 ---
+description: 중단점의 위치를 설명 하는 데 사용 되는 구조체의 형식을 지정 합니다.
 title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15f52f9b71bcb18131e03a7d7fbdd9f56ac4fa6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902126"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144184"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 중단점의 위치를 설명 하는 데 사용 되는 구조체의 형식을 지정 합니다.
@@ -53,7 +54,7 @@ public struct BP_LOCATION {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `bpLocationType`\
 Union 또는 멤버를 해석 하는 데 사용 되는 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 열거형의 값 `bpLocation` `unionmemberX` 입니다.
 
@@ -105,7 +106,7 @@ Union 또는 멤버를 해석 하는 데 사용 되는 [BP_LOCATION_TYPE](../../
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (컨텍스트)|`string` (데이터 식)|`uint` (요소 수)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 이 예제에서는 `BP_LOCATION` 형식에 대 한 c #의 구조를 해석 하는 방법을 보여 줍니다 `BPLT_DATA_STRING` . 이 특정 형식은 `unionmemberX` 가능한 모든 형식 (개체, 문자열 및 숫자)에서 네 개의 멤버를 모두 해석 하는 방법을 보여 줍니다.
 
 ```csharp

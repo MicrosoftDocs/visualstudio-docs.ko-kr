@@ -1,4 +1,5 @@
 ---
+description: 이 포트에 대 한 포트 공급자를 가져옵니다.
 title: 'IDebugPort2:: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 86df4fac348dd32b061ca1bfb95a8d2efa66f868
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2bf426b59f835c9b450751bb06b779d657ac807
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957168"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142845"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 이 포트에 대 한 포트 공급자를 가져옵니다.
@@ -43,7 +44,7 @@ int GetPortSupplier(
 `ppSupplier`\
 제한이 포트의 포트 공급자를 나타내는 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

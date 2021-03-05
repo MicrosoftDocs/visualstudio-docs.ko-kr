@@ -1,4 +1,5 @@
 ---
+description: 구문 분석 트리의 포인터를 나타내고 IDebugPointerObject 인터페이스를 확장 합니다.
 title: IDebugPointerObject3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f4a87f9cf0bf64378e6dd5acba504d2da7b5d92
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f40003c04b7b0b4e480aff8057582f998e092079
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844803"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142825"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
@@ -23,7 +24,7 @@ ms.locfileid: "99844803"
 
  구문 분석 트리의 포인터를 나타내고 **Idebugpointerobject** 인터페이스를 확장 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPointerObject3 : IDebugPointerObject
@@ -35,7 +36,7 @@ IDebugPointerObject3 : IDebugPointerObject
 ## <a name="methods"></a>메서드
  [Idebugpointerobject](../../../extensibility/debugger/reference/idebugpointerobject.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|포인터의 주소를 검색 합니다.|
 

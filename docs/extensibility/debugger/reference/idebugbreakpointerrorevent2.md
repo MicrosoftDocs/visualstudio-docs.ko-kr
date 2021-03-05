@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 경고 또는 오류로 인해 보류 중인 중단점을 로드 된 프로그램에 바인딩할 수 없음을 세션 디버그 관리자 (SDM)에 게 알립니다.
 title: IDebugBreakpointErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89342f5d26c5aeec41222bba12a29f534798782b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901868"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143362"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 이 인터페이스는 경고 또는 오류로 인해 보류 중인 중단점을 로드 된 프로그램에 바인딩할 수 없음을 세션 디버그 관리자 (SDM)에 게 알립니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointErrorEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBreakpointErrorEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|경고 또는 오류를 설명 하는 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 인터페이스를 가져옵니다.|
 

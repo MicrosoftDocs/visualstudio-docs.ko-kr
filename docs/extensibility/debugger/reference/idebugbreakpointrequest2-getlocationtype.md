@@ -1,4 +1,5 @@
 ---
+description: 이 중단점 요청의 중단점 위치 유형을 가져옵니다.
 title: 'IDebugBreakpointRequest2:: GetLocationType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 076a5e70f94594f7b526c0893be51eb2cfa08cdf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed19d65fc0c29b8cd97b607a0748c48ad52783b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887317"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143378"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 이 중단점 요청의 중단점 위치 유형을 가져옵니다.
@@ -43,10 +44,10 @@ int GetLocationType(
 `pBPLocationType`\
 제한이 이 중단점 요청의 위치를 설명 하는 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_FAIL` `bpLocation` 연결 된 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 구조의 필드가 유효 하지 않으면를 반환 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```

@@ -1,4 +1,5 @@
 ---
+description: 변수의 숫자 별칭을 나타냅니다.
 title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944721"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143885"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99944721"
 
  변수의 숫자 별칭을 나타냅니다. 별칭은 단순히 변수에 대 한 다른 이름입니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias : IUnknown
@@ -40,7 +41,7 @@ IDebugAlias : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 메서드는 인터페이스에 정의 되어 `IDebugAlias` 있습니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|이 별칭이 참조 하는 개체를 가져옵니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|별칭 이름을 가져옵니다.|

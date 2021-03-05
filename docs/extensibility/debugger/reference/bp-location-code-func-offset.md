@@ -1,4 +1,5 @@
 ---
+description: 코드의 함수에서 중단점의 오프셋 위치에 대해 설명 합니다.
 title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 93296770597e8809c5b739b46d8eaefdc8fe5daf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83a5a27601ab6d7498394d6723b86ad3e66aceb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144366"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 코드의 함수에서 중단점의 오프셋 위치에 대해 설명 합니다.
@@ -33,7 +34,7 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 } BP_LOCATION_CODE_FUNC_OFFSET;
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `bstrContext`\
 중단점의 컨텍스트 (일반적으로 호출 스택에 표시 되는 메서드 또는 함수 이름)입니다.
 

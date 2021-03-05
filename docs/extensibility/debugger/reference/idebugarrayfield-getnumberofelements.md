@@ -1,4 +1,5 @@
 ---
+description: 배열의 요소 수를 가져옵니다.
 title: 'IDebugArrayField:: GetNumberOfElements | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3454624feab268af089a5e82e38c0cce3d23ab03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237cc74b2a34c78104e001bcc5a3b13dd6c7bd43
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143833"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 배열의 요소 수를 가져옵니다.
@@ -43,7 +44,7 @@ int GetNumberOfElements(
 `pdwNumElements`\
 제한이 배열의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

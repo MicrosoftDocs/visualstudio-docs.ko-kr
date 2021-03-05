@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.
 title: 'IDebugBinder:: Bind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ee9f303223da15bc75adbf31d533848fb017bb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c373fbdae030de30544c67c1509eb812b746b7f1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901906"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143661"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 이 메서드는 기호의 현재 값을 포함 하는 메모리 컨텍스트 또는 개체를 가져옵니다.
@@ -53,7 +54,7 @@ int Bind(
 `ppObject`\
 제한이 `IDebugObject` 기호의 인스턴스를 나타내는을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

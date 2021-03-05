@@ -1,4 +1,5 @@
 ---
+description: 다음은 Visual Studio 디버깅 SDK에 대 한 열거형입니다.
 title: 열거형 (Visual Studio 디버깅) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21813818436e62eb7e9fc16a393af69a613d6d58
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937129"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144145"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerations (Visual Studio Debugging)
 다음은 디버깅 SDK에 대 한 열거형 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 입니다.

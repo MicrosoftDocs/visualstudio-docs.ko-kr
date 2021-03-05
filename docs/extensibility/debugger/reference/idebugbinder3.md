@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 형식, 별칭 및 사용자 지정 시각화 도우미 서비스에 대 한 액세스를 제공 합니다.
 title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901896"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143612"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99901896"
 
  이 인터페이스는 형식, 별칭 및 사용자 지정 시각화 도우미 서비스에 대 한 액세스를 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBinder3 : IDebugBinder
@@ -40,7 +41,7 @@ IDebugBinder3 : IDebugBinder
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) 인터페이스에서 제공 하는 메서드 외에도이 인터페이스는 다음을 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|이 개체가 바인딩되는 메모리를 나타내는 메모리 개체를 검색 합니다.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|이 개체와 연결 된 예외를 검색 합니다 (있는 경우).|

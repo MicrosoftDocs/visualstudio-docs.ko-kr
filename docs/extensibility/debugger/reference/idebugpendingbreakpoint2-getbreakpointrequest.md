@@ -1,4 +1,5 @@
 ---
+description: 이 보류 중인 중단점을 만드는 데 사용 된 중단점 요청을 가져옵니다.
 title: 'IDebugPendingBreakpoint2:: Get Pointrequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbe9f8e5e5f4b6d416b3179aadf25e89543cdba3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85395fe88aaf29658695323f437eba08379cfce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934268"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143066"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 이 보류 중인 중단점을 만드는 데 사용 된 중단점 요청을 가져옵니다.
@@ -44,7 +45,7 @@ int GetBreakpointRequest(
 `ppBPRequest`\
 제한이 이 보류 중인 중단점을 만드는 데 사용 된 중단점 요청을 나타내는 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.
 
 ## <a name="see-also"></a>참고 항목
