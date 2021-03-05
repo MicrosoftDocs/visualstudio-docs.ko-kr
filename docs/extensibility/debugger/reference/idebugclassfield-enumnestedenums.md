@@ -1,4 +1,5 @@
 ---
+description: 이 클래스의 중첩 된 열거자에 대 한 열거자를 만듭니다.
 title: 'IDebugClassField:: EnumNestedEnums | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9c283d4b07458368a4ea5f143dc83bf13453302
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9412d487dbb9617bb3bae91bd225473e67e2dfdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164242"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 이 클래스의 중첩 된 열거자에 대 한 열거자를 만듭니다.
@@ -43,7 +44,7 @@ int EnumNestedEnums(
 `ppEnum`\
 제한이 중첩 된 열거 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 중첩 된 열거형이 없으면 null 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면 S_OK을 반환 하거나, 중첩 된 열거자가 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

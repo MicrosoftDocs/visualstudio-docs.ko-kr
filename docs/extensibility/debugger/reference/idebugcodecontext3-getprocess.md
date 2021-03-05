@@ -1,4 +1,5 @@
 ---
+description: 디버그 프로세스의 인터페이스에 대 한 참조를 검색 합니다.
 title: 'IDebugCodeContext3:: GetProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca8fb9bb69e98b907ef48620149a0a3fd16dbe53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d34409ad1d075df5520cf18124e5e3adbf16227
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928707"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164060"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 디버그 프로세스의 인터페이스에 대 한 참조를 검색 합니다.
@@ -41,10 +42,10 @@ public int GetProcess(
 `ppProcess`\
 제한이 디버그 프로세스 인터페이스에 대 한 참조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출 하는 **CDebugCodeContext** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

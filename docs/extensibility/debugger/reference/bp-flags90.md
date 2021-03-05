@@ -1,4 +1,5 @@
 ---
+description: 선택적 플래그의 유효한 값을 열거 합니다.
 title: BP_FLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2203a6fa2a5f84f422eafd28706c54065f752e2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923232"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165620"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 선택적 플래그의 유효한 값을 열거 합니다. 선택적 플래그는 중단점을 설정할 때 추가 정보를 지정 하는 데 사용할 수 있습니다. 이 열거형은 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 열거형을 확장 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_FLAGS90

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로그램에서 실행 중인 스레드를 나타냅니다.
 title: IDebugThread2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8b09aa546e4711b1c11623a3596ba0e385b2a14
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901617"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164424"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 이 인터페이스는 프로그램에서 실행 중인 스레드를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThread2 : IUnknown
@@ -41,7 +42,7 @@ IDebugThread2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugThread2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|이 스레드에 대 한 스택 프레임 목록을 검색 합니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|스레드의 이름을 가져옵니다.|

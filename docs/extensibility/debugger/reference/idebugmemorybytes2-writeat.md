@@ -1,4 +1,5 @@
 ---
+description: 지정 된 주소에서 시작 하 여 지정 된 바이트 수의 메모리를 씁니다.
 title: 'IDebugMemoryBytes2:: WriteAt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff77985bca8772d92c3b90e7a727c0077137e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc1b5547290712f07cd51a935627182ddd12d31c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165152"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 지정 된 주소에서 시작 하 여 지정 된 바이트 수의 메모리를 씁니다.
@@ -54,7 +55,7 @@ int WriteAt(
 `rgbMemory`\
 진행 쓸 바이트입니다. 이 배열의 크기는 최소한 바이트 이상으로 가정 `dwCount` 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면를 반환 하 고, 그렇지 않으면를 반환 `S_FALSE` `E_FAIL` 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 디버그 모듈의 인터페이스에 대 한 참조를 검색 합니다.
 title: 'IDebugCodeContext3:: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df4b3097407f007c6763eb512066e6154436306f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1870b5e4d678ab6718f7c0cc904009dac8977d67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928682"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164073"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 디버그 모듈의 인터페이스에 대 한 참조를 검색 합니다.
@@ -41,10 +42,10 @@ public int GetModule(
 `ppModule`\
 제한이 디버그 모듈 인터페이스에 대 한 참조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) 인터페이스를 노출 하는 **CDebugCodeContext** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

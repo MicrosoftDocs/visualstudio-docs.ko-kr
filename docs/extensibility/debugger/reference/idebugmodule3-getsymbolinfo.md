@@ -1,4 +1,5 @@
 ---
+description: 각 경로를 검색 한 결과 뿐만 아니라 기호를 검색 하는 경로 목록을 검색 합니다.
 title: 'IDebugModule3:: Get기호 정보 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2793c9b6d9d88997ce2e4e84c147f87183555cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929786"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164853"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 각 경로를 검색 한 결과 뿐만 아니라 기호를 검색 하는 경로 목록을 검색 합니다.
@@ -49,7 +50,7 @@ int GetSymbolInfo(
 `pInfo`\
 제한이 지정 된 정보를 사용 하 여 해당 멤버를 채울 [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 구조체입니다. 이 값이 null 이면이 메서드는를 반환 `E_INVALIDARG` 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 메서드가 성공 하면가 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]
@@ -62,7 +63,7 @@ int GetSymbolInfo(
 
 마지막 항목에는 \r\n 시퀀스가 없습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 이 예제에서이 메서드는 세 개의 다른 검색 결과가 포함 된 세 개의 경로를 반환 합니다. 각 줄은 캐리지 리턴/줄 바꿈 쌍으로 종료 됩니다. 예제 출력에서는 검색 결과를 단일 문자열로 인쇄 하기만 합니다.
 
 > [!NOTE]

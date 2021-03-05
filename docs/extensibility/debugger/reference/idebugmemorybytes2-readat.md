@@ -1,4 +1,5 @@
 ---
+description: 지정 된 위치에서 시작 하 여 바이트 시퀀스를 읽습니다.
 title: 'IDebugMemoryBytes2:: ReadAt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81a6ce40457243e5492d5c6a44dd5d9dd590920f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f408e062fad4485fb159225e0639618d303e0806
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909931"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165165"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 지정 된 위치에서 시작 하 여 바이트 시퀀스를 읽습니다.
@@ -64,7 +65,7 @@ int ReadAt(
 `pdwUnreadable`\
 [in, out] 읽을 수 없는 바이트 수를 반환 합니다. 클라이언트가 읽을 수 없는 바이트 수를 uninterested 경우 null 값이 될 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

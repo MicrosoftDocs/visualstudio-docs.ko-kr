@@ -1,4 +1,5 @@
 ---
+description: 이 클래스에서 구현 하는 인터페이스에 대 한 열거자를 만듭니다.
 title: 'IDebugClassField:: EnumInterfacesImplemented | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7283d8a2996d5ab4dfc52cde446170e7632c27c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f90bf6efc3a34e4f6b9f60ef5bdadb0640f495b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876084"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164320"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 이 클래스에서 구현 하는 인터페이스에 대 한 열거자를 만듭니다.
@@ -43,7 +44,7 @@ int EnumInterfacesImplemented(
 `ppEnum`\
 제한이 구현 된 인터페이스 목록을 나타내는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다. 인터페이스가 없으면 null 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 하거나이 클래스에 구현 된 인터페이스가 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

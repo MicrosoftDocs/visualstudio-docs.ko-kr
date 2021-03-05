@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgram2:: Continue는 중지 된 상태에서이 프로그램을 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 유지 되 고 프로그램의 실행이 다시 시작 됩니다.'
 title: 'IDebugProgram2:: Continue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f10d9266e8562d7ba1afed45b4b054f306bfbca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912949"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164723"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 중지 된 상태에서이 프로그램을 계속 실행 합니다. 모든 이전 실행 상태 (예: 단계)는 유지 되 고 프로그램의 실행이 다시 시작 됩니다.
@@ -45,7 +46,7 @@ int Continue(
 ## <a name="parameters"></a>매개 변수
 `pThread` 진행 스레드를 나타내는 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

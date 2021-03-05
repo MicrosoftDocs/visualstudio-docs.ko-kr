@@ -1,4 +1,5 @@
 ---
+description: 이 인스턴스에 대 한 형식 매개 변수 인수를 검색 합니다.
 title: 'IDebugGenericFieldInstance:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2294083a163d331686c485165fd51d92687dbdd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94db729e3628037ed6e85b0cd779e4f8e3ab6055
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928369"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165425"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
 이 인스턴스에 대 한 형식 매개 변수 인수를 검색 합니다.
@@ -52,7 +53,7 @@ int GetTypeArguments(
 `pcArgs`\
 [in, out] 배열에 있는 멤버의 수 `ppArgs` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

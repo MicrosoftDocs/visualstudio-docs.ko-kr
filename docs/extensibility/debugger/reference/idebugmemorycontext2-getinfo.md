@@ -1,4 +1,5 @@
 ---
+description: 컨텍스트를 설명 하는 CONTEXT_INFO 구조체를 검색 합니다.
 title: 'IDebugMemoryContext2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec9531d05c7009bcdd0998cb44146bf3f00c2e18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dfcd6063988f188b307b03febaeca988c8fb025
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851194"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165048"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 컨텍스트를 설명 하는 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 구조체를 검색 합니다.
@@ -49,7 +50,7 @@ int GetInfo(
 `pInfo`\
 [in, out] `CONTEXT_INFO` 채워진 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

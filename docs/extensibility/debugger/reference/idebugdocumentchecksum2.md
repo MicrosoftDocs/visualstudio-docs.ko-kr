@@ -1,4 +1,5 @@
 ---
+description: 디버그 문서에 대 한 체크섬을 나타내며 구성 요소 사이에 체크섬을 전달할 수 있습니다.
 title: IDebugDocumentChecksum2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5b39f381817cd98fd94b1c746cbdccde31e0b1f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880777"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165568"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 디버그 문서에 대 한 체크섬을 나타내며 구성 요소 사이에 체크섬을 전달할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentChecksum2 : IUnknown
@@ -32,7 +33,7 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentChecksum2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|사용할 최대 바이트 수를 지정 하 여 문서 체크섬 및 알고리즘 식별자를 검색 합니다.|
 

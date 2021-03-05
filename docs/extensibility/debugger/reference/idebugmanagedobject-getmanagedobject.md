@@ -1,4 +1,5 @@
 ---
+description: 관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
 title: 'IDebugManagedObject:: GetManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18cb56b083386c3ac8358a101c1d52fb14cb39ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a262759cfcedd5fb0d09bcb995dcbcb7f7ee2a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890242"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165269"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
@@ -43,7 +44,7 @@ int GetManagedObject(
 `ppManagedObject`\
 제한이 관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

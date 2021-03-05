@@ -1,4 +1,5 @@
 ---
+description: 소스 파일에서 지정 된 위치에 대 한 코드 컨텍스트 목록을 검색 합니다.
 title: 'IDebugProgram2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2971eba711682781f509757c3986bb76f2e37703
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd26ee9fe0c6e28695eeca5a77a5b90fbbb25213
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164736"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 소스 파일에서 지정 된 위치에 대 한 코드 컨텍스트 목록을 검색 합니다.
@@ -47,7 +48,7 @@ int EnumCodeContexts(
 
 `ppEnum` 제한이 코드 컨텍스트 목록을 포함 하는 [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

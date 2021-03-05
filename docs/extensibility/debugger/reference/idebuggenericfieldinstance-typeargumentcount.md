@@ -1,4 +1,5 @@
 ---
+description: 이 인스턴스에 대 한 형식 매개 변수 인수의 수를 반환 합니다.
 title: 'IDebugGenericFieldInstance:: TypeArgumentCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b811780bf135a700f0ea451ef148598fe621e4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 034c180e41a2754347dd0eea7a81cb4ae64a0c2a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928356"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165360"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 이 인스턴스에 대 한 형식 매개 변수 인수의 수를 반환 합니다.
@@ -42,7 +43,7 @@ int TypeArgumentCount(
 `pcArgs`\
 [in, out] 이 인스턴스에 대 한 형식 매개 변수 인수의 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

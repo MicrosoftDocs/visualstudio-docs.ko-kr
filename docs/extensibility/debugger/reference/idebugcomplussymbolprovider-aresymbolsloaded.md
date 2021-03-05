@@ -1,4 +1,5 @@
 ---
+description: 응용 프로그램 도메인 식별자가 지정 된 경우 지정 된 모듈에 대해 디버그 기호가 로드 되는지 여부를 결정 합니다.
 title: 'IDebugComPlusSymbolProvider:: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e071f18442f66711b59c1063e7c2770ed772c60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928720"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163982"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 응용 프로그램 도메인 식별자가 지정 된 경우 지정 된 모듈에 대해 디버그 기호가 로드 되는지 여부를 결정 합니다.
@@ -47,10 +48,10 @@ int AreSymbolsLoaded (
 `guidModule`\
 진행 모듈에 대 한 고유 식별자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 디버그 기호가 로드 되 면이 반환 되 `S_OK` 고, 그렇지 않으면이 반환 `S_FALSE` 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

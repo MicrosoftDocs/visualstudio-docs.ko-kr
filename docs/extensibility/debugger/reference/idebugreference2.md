@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 스택 프레임 속성이 나 일부 다른 속성에 대 한 참조를 나타냅니다.
 title: IDebugReference2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883807"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165854"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 이 인터페이스는 스택 프레임 속성이 나 일부 다른 속성에 대 한 참조를 나타냅니다.
@@ -25,7 +26,7 @@ ms.locfileid: "99883807"
 > [!NOTE]
 > `IDebugReference2` 는 나중에 사용 하도록 예약 되어 있으며 모든 메서드는를 반환 해야 `E_NOTIMPL` 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReference2 : IUnknown
@@ -40,7 +41,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugReference2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|이 참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|문자열에서이 참조의 값을 설정 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: 이 컨텍스트에 대 한 사용자가 표시할 때 사용할 이름을 검색 합니다.
 title: 'IDebugMemoryContext2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9076e9a1edbc80a1387e83078b97671c3013fe27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e9e513d94d0aab902d9ec06cdcc17c5afb7496a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851181"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165035"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 이 컨텍스트에 대 한 사용자가 표시할 때 사용할 이름을 검색 합니다.
@@ -44,7 +45,7 @@ int GetName(
 `pbstrName`\
 제한이 메모리 컨텍스트의 이름을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

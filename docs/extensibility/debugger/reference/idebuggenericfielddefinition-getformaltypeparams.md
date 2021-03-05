@@ -1,4 +1,5 @@
 ---
+description: 매개 변수 수를 지정 하 여 형식 매개 변수를 검색 합니다.
 title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa1401181f844be2e1fa3dfd9e45b627e2daae19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 593e54c67e762d5ad1643f0481554fe98b5ba019
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904587"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165477"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 매개 변수 수를 지정 하 여 형식 매개 변수를 검색 합니다.
@@ -52,7 +53,7 @@ int GetFormalTypeParams(
 `pcParams`\
 [in, out] 배열의 매개 변수 수 `ppParams` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

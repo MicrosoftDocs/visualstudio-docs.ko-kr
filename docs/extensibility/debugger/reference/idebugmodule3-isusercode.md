@@ -1,4 +1,5 @@
 ---
+description: 모듈이 사용자 코드를 나타내는지 여부에 대 한 정보를 검색 합니다.
 title: 'IDebugModule3:: IsUserCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8b313ecdbc1168238bad517f34350a420fb30ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a936d4408b2d289477a860ffca3d53ca7b0ad61d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929773"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164840"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 모듈이 사용자 코드를 나타내는지 여부에 대 한 정보를 검색 합니다.
@@ -43,7 +44,7 @@ int IsUserCode(
 `pfUser`\
 제한이 `TRUE`모듈이 사용자 코드를 나타내는 경우 0이 아닌 ()이 고, `FALSE` 그렇지 않으면 0 ()입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

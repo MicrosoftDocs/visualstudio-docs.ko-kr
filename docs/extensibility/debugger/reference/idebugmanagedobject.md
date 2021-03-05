@@ -1,4 +1,5 @@
 ---
+description: '이 인터페이스를 사용 하면 식 계산기 (EE)가 값 클래스 인스턴스 (예: Decimal)에서 속성 또는 메서드를 호출 하 고 디버깅 중인 프로그램에서 Evaluate를 호출 하지 않고 해당 값을 설정할 수 있습니다.'
 title: IDebugManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cb90893ab39a95dd3bd8046d8ba61a32064ccf7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929812"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165226"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99929812"
 
  이 인터페이스를 사용 하면 식 계산기 (EE)에서 값 클래스 인스턴스 (예:)에 대 한 속성 또는 메서드를 호출 하 `System.Decimal` 고 디버깅 중인 프로그램에서 [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 를 호출 하지 않고 해당 값을 설정할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugManagedObject : IDebugObject
@@ -40,7 +41,7 @@ IDebugManagedObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugManagedObject` 다음 메서드를 노출 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|관리 코드 개체를 나타내고 적절 한 관리 코드 인터페이스를 가져올 수 있는 인터페이스를 반환 합니다.|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|이 개체의 값을 지정 된 관리 되는 코드 개체의 값으로 설정 합니다.|

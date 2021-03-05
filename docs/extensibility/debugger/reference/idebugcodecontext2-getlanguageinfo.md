@@ -1,4 +1,5 @@
 ---
+description: 이 코드 컨텍스트의 언어 정보를 가져옵니다.
 title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6719968d2e828340b16f84f3195f722803d8d9d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dccf0c34b6483ad85cc7bfd9cff7078cc20524f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928733"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164125"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 이 코드 컨텍스트의 언어 정보를 가져옵니다.
@@ -48,7 +49,7 @@ int GetLanguageInfo(
 `pguidLanguage`\
 [in, out] 코드 컨텍스트의 언어에 대 한 GUID를 반환 합니다 (예:) `guidCPPLang` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

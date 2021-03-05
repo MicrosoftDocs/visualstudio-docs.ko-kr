@@ -1,4 +1,5 @@
 ---
+description: 시스템 스레드 식별자를 가져옵니다.
 title: 'IDebugThread2:: GetThreadId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e7dfb6714283fa2db1dc2fd8435a91a5c8dc56a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95dd724310b3aae6e2266d9d18a3846bc9efccf7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893817"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164554"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 시스템 스레드 식별자를 가져옵니다.
@@ -43,13 +44,13 @@ int GetThreadId (
 `pdwThreadId`\
 제한이 시스템 스레드 식별자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 스레드 ID는 프로세스의 다른 모든 스레드 간에 스레드를 식별 하는 데 사용 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 IDebugThread2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp

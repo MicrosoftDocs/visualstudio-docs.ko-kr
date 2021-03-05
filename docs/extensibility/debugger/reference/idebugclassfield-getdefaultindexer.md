@@ -1,4 +1,5 @@
 ---
+description: 기본 인덱서의 이름을 가져옵니다.
 title: 'IDebugClassField:: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ebdcab870ba18d38fa6957d37f09abb65db000
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948350"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164216"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 기본 인덱서의 이름을 가져옵니다.
@@ -42,7 +43,7 @@ int GetDefaultIndexer(
 ## <a name="parameters"></a>매개 변수
 `pbstrIndexer` 제한이 기본 인덱서의 이름을 포함 하는 문자열을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK 반환 하거나 기본 인덱서가 없는 경우 S_FALSE을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

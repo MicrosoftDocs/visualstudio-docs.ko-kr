@@ -1,4 +1,5 @@
 ---
+description: 프로그램이 로드 될 때 코드를 실행 하기 전에 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로이 인터페이스를 보냅니다.
 title: IDebugLoadCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c6713dc0e34ae0823cfbfb5db5c539b5073e3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 430b112a0fff4a0bbd009c4e0eba7c055842f823
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165308"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 프로그램이 로드 될 때 코드를 실행 하기 전에 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로이 인터페이스를 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugLoadCompleteEvent2 : IUnknown

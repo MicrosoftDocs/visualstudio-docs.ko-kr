@@ -1,4 +1,5 @@
 ---
+description: 현재 명령 포인터를 지정 된 코드 컨텍스트로 설정 합니다.
 title: 'IDebugThread2:: SetNextStatement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893713"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164476"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 현재 명령 포인터를 지정 된 코드 컨텍스트로 설정 합니다.
@@ -48,10 +49,10 @@ int SetNextStatement (
 `pCodeContext`\
 진행 실행할 코드 위치와 해당 컨텍스트를 설명 하는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|다음 문은 프레임 스택에서 더 깊은 스택 프레임 안에 있을 수 없습니다.|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|다음 문은 스택의 프레임에 연결 되지 않습니다.|

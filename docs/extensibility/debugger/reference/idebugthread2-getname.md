@@ -1,4 +1,5 @@
 ---
+description: 스레드의 이름을 가져옵니다.
 title: 'IDebugThread2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a8a7a4f041e2a38cf1e24e8cf156d3e595010b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d3be2cf827929f41532cf7f1dbf6b709c1850dc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893856"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164606"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 스레드의 이름을 가져옵니다.
@@ -43,7 +44,7 @@ int GetName (
 `pbstrName`\
 제한이 스레드의 이름을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

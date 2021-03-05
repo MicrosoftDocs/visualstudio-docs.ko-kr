@@ -1,4 +1,5 @@
 ---
+description: 메서드를 포함 하는 개체의 this (in Visual Basic) 포인터를 가져옵니다.
 title: 'IDebugMethodField:: GetThis | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3eb303a7e0a4795d3f7ef49f9114cc942bff9b2d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164944"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 `this` `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 메서드를 포함 하는 개체의 (in) 포인터를 가져옵니다.
@@ -43,7 +44,7 @@ int GetThis(
 `ppClass`\
 제한이 "This" 포인터를 나타내는 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

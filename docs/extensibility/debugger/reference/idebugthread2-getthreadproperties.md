@@ -1,4 +1,5 @@
 ---
+description: 이 스레드를 설명 하는 속성을 가져옵니다.
 title: 'IDebugThread2:: GetThreadProperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 293607e30fa8c5d1f4367b23a1f4904f94aa0bed
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164528"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 이 스레드를 설명 하는 속성을 가져옵니다.
@@ -48,13 +49,13 @@ int GetThreadProperties (
 `ptp`\
 [in, out] 스레드의 속성으로 채워진 [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 이 메서드에서 반환 되는 정보는 일반적으로 **스레드** 디버그 창에 표시 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 IDebugThread2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp

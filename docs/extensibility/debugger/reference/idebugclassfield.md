@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 클래스를 형식으로 나타냅니다.
 title: IDebugClassField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c8f566d7decc344dda17700da6712ff78120a1c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928863"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164177"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 이 인터페이스는 클래스를 형식으로 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugClassField : IDebugContainerField
@@ -37,7 +38,7 @@ IDebugClassField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음을 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|이 클래스의 기본 클래스에 대 한 열거자를 만듭니다.|
 |[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|특정 인터페이스가 클래스에 정의 되어 있는지 여부를 확인 합니다.|

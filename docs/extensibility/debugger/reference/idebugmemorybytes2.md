@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 바이트의 메모리를 나타냅니다.
 title: IDebugMemoryBytes2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d4ee145d900a79a48db44f95a125e87bd10f67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1c6f1cf03aa36a4ae6c935d1efc8970ce3ff5f7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851246"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165087"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 이 인터페이스는 바이트의 메모리를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMemoryBytes2 : IUnknown
@@ -37,7 +38,7 @@ IDebugMemoryBytes2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugMemoryBytes2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|지정 된 위치에서 시작 하 여 바이트 시퀀스를 읽습니다.|
 |[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|`dwCount`에서 시작 하 여 바이트를 씁니다 `pStartContext` .|

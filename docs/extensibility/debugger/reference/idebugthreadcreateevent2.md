@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버깅 중인 프로그램에서 스레드를 만들 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 title: IDebugThreadCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6c792c3a3eff151bdbc035c8dbbaf6eaacb7bcf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901604"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164385"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 이 인터페이스는 디버깅 중인 프로그램에서 스레드를 만들 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThreadCreateEvent2 : IUnknown

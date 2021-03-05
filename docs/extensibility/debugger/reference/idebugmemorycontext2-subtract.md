@@ -1,4 +1,5 @@
 ---
+description: 현재 컨텍스트에서 지정 된 값을 빼고 새 컨텍스트를 반환 합니다.
 title: 'IDebugMemoryContext2:: 빼기 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71e3191384a0ee45778cb7ee37b7e55e5f673578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d77a0fcd4d791eefe98ae908bdf86ba49bec519
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851090"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165009"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 현재 컨텍스트에서 지정 된 값을 빼고 새 컨텍스트를 반환 합니다.
@@ -49,7 +50,7 @@ int Subtract(
 `ppMemCxt`\
 제한이 새 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

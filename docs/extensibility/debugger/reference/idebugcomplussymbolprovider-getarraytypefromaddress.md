@@ -1,4 +1,5 @@
 ---
+description: 디버그 주소가 지정 된 경우 지정 된 배열에 대 한 형식 정보를 검색 합니다.
 title: 'IDebugComPlusSymbolProvider:: GetArrayTypeFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d7e8ce5fa6295d3a076cffe21178df0e8c9c63a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d177f49ad5f86e3b64e62dffdc7408c61d2f3d05
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892946"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163943"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 디버그 주소가 지정 된 경우 지정 된 배열에 대 한 형식 정보를 검색 합니다.
@@ -57,10 +58,10 @@ int GetArrayTypeFromAddress(
 `ppField`\
 제한이 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 인터페이스로 표시 되는 배열 형식을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: PDB 파일에 포함 된 소스 서버 정보를 나타냅니다.
 title: IDebugSourceServerModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfc4b3defc0b74c1e22c45670209682692a4807
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74fa5f3aafea5f709777bbead81743c7c5aef358
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837699"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164645"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 PDB 파일에 포함 된 소스 서버 정보를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSourceServerModule : IUnknown
@@ -32,7 +33,7 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugSourceServerModule` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|원본 서버 정보의 배열을 검색 합니다.|
 

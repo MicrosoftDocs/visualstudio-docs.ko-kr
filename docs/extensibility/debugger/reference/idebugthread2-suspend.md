@@ -1,4 +1,5 @@
 ---
+description: 스레드를 일시 중단 합니다.
 title: 'IDebugThread2:: Suspend | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ede08dfd2c5f8ee3a205f744388d9aac3f8f3709
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f80799961ccce4b3492b46801b1917055742666
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164450"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 스레드를 일시 중단 합니다.
@@ -43,7 +44,7 @@ HRESULT Suspend (
 `pdwSuspendCount`\
 제한이 일시 중단 작업 후 일시 중단 횟수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
