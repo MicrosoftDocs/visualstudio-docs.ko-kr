@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 지정 된 각 디버그 엔진 (DE)에 대해 프로그램 노드를 추가 합니다.
 title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ef9379edc9e02e8bed6761abf0aa4a2830fc415
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a4c6446c2106d79dd14fc0378fc848eac3df18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861090"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159993"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 이 메서드는 지정 된 각 디버그 엔진 (DE)에 대해 프로그램 노드를 추가 합니다.
@@ -53,7 +54,7 @@ int AddImplicitProgramNodes(
 `celtSpecificEngines`\
 진행 `GUID`배열에 있는의 수입니다 `rgguidSpecificEngines` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

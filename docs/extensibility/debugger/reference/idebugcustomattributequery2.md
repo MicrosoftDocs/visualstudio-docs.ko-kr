@@ -1,4 +1,5 @@
 ---
+description: 이 필드에 대 한 사용자 지정 특성이 있는지 여부를 확인 하 고, 있는 경우 특성 정보를 반환 합니다.
 title: IDebugCustomAttributeQuery2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +14,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62461cbdbfe373f6c3d45569564e611efdd6f452
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842409"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160227"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 이 필드에 대 한 사용자 지정 특성이 있는지 여부를 확인 하 고, 있는 경우 특성 정보를 반환 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
@@ -38,14 +39,14 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는 **Idebugcustomattributequery** 인터페이스의 메서드를 보여 줍니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|사용자 지정 특성이 이름으로 존재 하는지 여부를 확인 합니다.|
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|지정 된 사용자 지정 특성에 대 한 특성 정보를 가져옵니다.|
 
  **Idebugcustomattributequery** 메서드 외에도 `IDebugCustomAttributeQuery2` 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|이 필드에 연결 된 모든 사용자 지정 특성에 대 한 열거자를 가져옵니다.|
 

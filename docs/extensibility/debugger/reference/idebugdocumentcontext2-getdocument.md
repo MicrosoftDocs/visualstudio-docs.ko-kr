@@ -1,4 +1,5 @@
 ---
+description: 이 문서 컨텍스트를 포함 하는 문서를 가져옵니다.
 title: 'IDebugDocumentContext2:: GetDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7cf55175134a570afbb22791bab51602cd49eba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02921f44d1d9e41affbee4e4e9732117a0470272
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851285"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160188"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 이 문서 컨텍스트를 포함 하는 문서를 가져옵니다.
@@ -43,7 +44,7 @@ int GetDocument(
 `ppDocument`\
 제한이 이 문서 컨텍스트를 포함 하는 문서를 나타내는 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

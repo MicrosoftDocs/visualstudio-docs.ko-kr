@@ -1,4 +1,5 @@
 ---
+description: 디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.
 title: 'IDebugDisassemblyStream2:: Read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 720850096e7099ed95cbc5fa914bebb2bee580ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b963bddc9d1ee04a6955b1110d73934b30196b21
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944669"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160201"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.
@@ -58,7 +59,7 @@ int Read(
 `prgDisassembly`\
 제한이 디스어셈블 코드를 사용 하 여 채워진 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 배열로, 디스어셈블 된 명령 당 하나의 구조입니다. 이 배열의 길이는 매개 변수에 의해 결정 됩니다 `dwInstructions` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

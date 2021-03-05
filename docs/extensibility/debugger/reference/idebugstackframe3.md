@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 IDebugStackFrame2를 확장 하 여 차단 되는 예외를 처리 합니다.
 title: IDebugStackFrame3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961185"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159772"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 이 인터페이스는 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 를 확장 하 여 차단 되는 예외를 처리 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -37,7 +38,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)에서 상속 된 메서드 외에도 `IDebugStackFrame3` 는 다음 메서드를 노출 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|일반적인 예외 처리 전에 현재 스택 프레임에 대 한 예외를 처리 합니다.|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|스택 해제가 발생 하는 경우 코드 컨텍스트를 반환 합니다.|

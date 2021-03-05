@@ -1,4 +1,5 @@
 ---
+description: 이 개체의 참조 값을 설정 합니다.
 title: 'IDebugObject:: SetReferenceValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1df408e11803c7cd3508d1939ca6e12f046153fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb376e4399157f9f9fe393086cca8fcf94c3b9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953606"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161426"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 이 개체의 참조 값을 설정 합니다.
@@ -43,7 +44,7 @@ int SetReferenceValue(
 `pObject`\
 진행 새 참조 값을 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

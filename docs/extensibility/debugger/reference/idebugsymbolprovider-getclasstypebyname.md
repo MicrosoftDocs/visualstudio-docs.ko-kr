@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 정규화 된 클래스 이름을 나타내는 클래스 필드 형식을 가져옵니다.
 title: 'Idebug Provider:: GetClassTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f6843eee8e6de7ec3e8cfd52362ee4463dea7da4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58b7002abf622992dacde4797f41a272177c280e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956427"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159668"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 이 메서드는 정규화 된 클래스 이름을 나타내는 클래스 필드 형식을 가져옵니다.
@@ -53,7 +54,7 @@ int GetClassTypeByName(
 `ppField`\
 제한이 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 인터페이스로 표시 되는 클래스 형식을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

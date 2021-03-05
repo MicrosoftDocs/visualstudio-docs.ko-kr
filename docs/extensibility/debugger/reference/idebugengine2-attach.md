@@ -1,4 +1,5 @@
 ---
+description: 프로그램 또는 프로그램에 디버그 엔진 (DE)을 연결 합니다.
 title: 'IDebugEngine2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160150"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 프로그램 또는 프로그램에 디버그 엔진 (DE)을 연결 합니다. DE-DE가 in-process로 실행 중인 경우 세션 디버그 관리자 (SDM)에 의해 호출 됩니다.
@@ -61,9 +62,9 @@ int Attach(
 진행 SDM에 디버그 이벤트를 보내는 데 사용 되는 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
 `dwReason`\
-진행 이러한 프로그램을 연결 하는 이유를 지정 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다. 자세한 내용은 주의 섹션을 참조하세요.
+진행 이러한 프로그램을 연결 하는 이유를 지정 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다. 자세한 내용은 설명 섹션을 참조하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

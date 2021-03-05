@@ -1,4 +1,5 @@
 ---
+description: 스택 프레임의 속성에 대 한 설명을 가져옵니다.
 title: 'IDebugStackFrame2:: GetDebugProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d1a38b6c6b519b28f6094bced51a84a4b730f9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 658da43471f483e80a1e77bd61f69dbc454a141e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837543"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159889"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 스택 프레임의 속성에 대 한 설명을 가져옵니다.
@@ -43,7 +44,7 @@ int GetDebugProperty (
 `ppDebugProp`\
 제한이 이 스택 프레임의 속성을 설명 하는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

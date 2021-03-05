@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgramNode2:: GetProgramName는 프로그램의 이름을 가져옵니다.'
 title: 'IDebugProgramNode2:: GetProgramName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88a4bc58f5d91cdb52482f4dc862446cfc9e7eb1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161387"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 프로그램의 이름을 가져옵니다.
@@ -43,13 +44,13 @@ int GetProgramName (
 `pbstrProgramName`\
 제한이 프로그램의 이름을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 프로그램의 이름은 프로그램에 대 한 경로와 동일 하지 않지만 프로그램의 이름은 이러한 경로의 일부일 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugprogramnode2.md) `MakeBstr`함수는 지정 된 문자열의 복사본을 BSTR로 할당 합니다.
 
 ```cpp

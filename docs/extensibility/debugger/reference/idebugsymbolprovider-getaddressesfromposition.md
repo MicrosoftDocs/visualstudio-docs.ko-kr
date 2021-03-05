@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 문서 위치를 디버그 주소 배열에 매핑합니다.
 title: 'Idebug Provider:: GetAddressesFromPosition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4437055ccd693b40fe4f1f7d6364d9601c827a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956466"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159681"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 이 메서드는 문서 위치를 디버그 주소 배열에 매핑합니다.
@@ -58,7 +59,7 @@ int GetAddressesFromPosition(
 `ppEnumEndAddresses`\
 제한이 이 문이나 줄과 연결 된 끝 디버그 주소에 대 한 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

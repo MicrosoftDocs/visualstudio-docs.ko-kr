@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DEs) 및 세션 디버그 관리자 (SDM)에서 프로그램 노드를 사용할 수 있도록 합니다.
 title: IDebugProgramPublisher2::P ublishProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56d407e22aabb396b331c14047f5a1753a5adf09
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959547"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161328"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 디버그 엔진 (DEs) 및 세션 디버그 관리자 (SDM)에서 프로그램 노드를 사용할 수 있도록 합니다.
@@ -43,7 +44,7 @@ int PublishProgramNode(
 `pProgramNode`\
 진행 사용할 수 있도록 설정할 프로그램 노드를 나타내는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

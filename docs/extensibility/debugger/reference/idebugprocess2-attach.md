@@ -1,4 +1,5 @@
 ---
+description: 프로세스에 SDM (세션 디버그 관리자)을 연결 합니다.
 title: 'IDebugProcess2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73dbe76a32e67794736fd26595378485879b00b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874180"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161446"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 프로세스에 SDM (세션 디버그 관리자)을 연결 합니다.
@@ -58,10 +59,10 @@ int Attach(
 `rghrEngineAttach`\
 [in, out] 디버그 엔진에서 반환 하는 HRESULT 코드의 배열입니다. 이 배열의 크기는 `celtSpecificEngines` 매개 변수에 지정 됩니다. 각 코드는 일반적으로 `S_OK` 또는 `S_ATTACH_DEFERRED` 입니다. 후자는 현재 DE-DE가 프로그램에 연결 되어 있지 않음을 나타냅니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|지정 된 프로세스가 이미 디버거에 연결 되어 있습니다.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|연결 절차를 수행 하는 동안 보안 위반이 발생 했습니다.|

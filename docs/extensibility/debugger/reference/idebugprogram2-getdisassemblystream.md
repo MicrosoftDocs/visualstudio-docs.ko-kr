@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램 또는이 프로그램의 일부에 대 한 디스어셈블리 스트림을 가져옵니다.
 title: 'IDebugProgram2:: GetDisassemblyStream | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e499d7b655cb79873b1cd3ef2954f054bba84f60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e000ada618c21af865743bfb2bd9fd6b60a80a4b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844699"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159928"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 이 프로그램 또는이 프로그램의 일부에 대 한 디스어셈블리 스트림을 가져옵니다.
@@ -53,7 +54,7 @@ int GetDisassemblyStream(
 `ppDisassemblyStream`\
 제한이 디스어셈블리 스트림을 나타내는 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_DISASM_NOTSUPPORTED`이 특정 아키텍처에 대해 디스어셈블리가 지원 되지 않는 경우를 반환 합니다.
 
 ## <a name="remarks"></a>설명

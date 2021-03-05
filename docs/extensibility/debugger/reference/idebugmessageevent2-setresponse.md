@@ -1,4 +1,5 @@
 ---
+description: 메시지 상자에서 응답을 설정 합니다 (있는 경우).
 title: 'IDebugMessageEvent2:: SetResponse | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6271566ce701e27164026fdce4ef6ea1455693e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77170bb95855d91dcad873a5254c0a0937001032
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851025"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160045"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 메시지 상자에서 응답을 설정 합니다 (있는 경우).
@@ -44,7 +45,7 @@ int SetResponse(
 `dwResponse`\
 진행 Win32 함수의 규칙을 사용 하 여 응답을 지정 합니다 `MessageBox` . 자세한 내용은 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 함수를 참조 하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

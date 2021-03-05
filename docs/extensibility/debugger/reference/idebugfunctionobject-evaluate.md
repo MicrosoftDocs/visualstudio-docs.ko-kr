@@ -1,4 +1,5 @@
 ---
+description: 'IDebugFunctionObject:: Evaluate는 함수를 호출 하 고 결과 값을 개체로 반환 합니다.'
 title: 'IDebugFunctionObject:: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920984"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160110"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 함수를 호출 하 고 결과 값을 개체로 반환 합니다.
@@ -58,7 +59,7 @@ int Evaluate(
 `ppResult`\
 제한이 함수 값을 개체로 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

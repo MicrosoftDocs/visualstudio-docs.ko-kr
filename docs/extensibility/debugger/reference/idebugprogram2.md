@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로세스에서 실행 되는 프로그램을 나타냅니다.
 title: IDebugProgram2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4854150d6581d80804b4c29246bf6db016b5acb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159915"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 이 인터페이스는 프로세스에서 실행 되는 프로그램을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgram2 : IUnknown
@@ -37,7 +38,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgram2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|이 프로그램에서 실행 중인 스레드를 열거 합니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|프로그램의 이름을 가져옵니다.|

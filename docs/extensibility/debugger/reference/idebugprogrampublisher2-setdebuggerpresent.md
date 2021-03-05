@@ -1,4 +1,5 @@
 ---
+description: 프로그램이 있으며 디버거가 실행 되 고 있음을 프로그램 게시자에 게 알립니다.
 title: 'IDebugProgramPublisher2:: SetDebuggerPresent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef671690cdf9f0c6b84d3585aef3b23a6bbd8ba9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3db8703ed05fd4a386b9265998de2f27017d0d76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959508"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161289"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 프로그램이 있으며 디버거가 실행 되 고 있음을 프로그램 게시자에 게 알립니다.
@@ -43,7 +44,7 @@ int SetDebuggerPresent(
 `fDebuggerPresent`\
 진행 디버거가 있는 경우 0이 아닌 ()이 고 `TRUE` , `FALSE` 그렇지 않으면 0입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

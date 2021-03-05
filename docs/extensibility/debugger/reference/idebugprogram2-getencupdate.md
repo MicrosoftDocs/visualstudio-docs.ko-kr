@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 프로그램에 대 한 편집 하며 계속 하기 (ENC) 업데이트를 가져옵니다.
 title: 'IDebugProgram2:: GetENCUpdate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7e3dbb0fdc7ea7ca7560f62bc7da45e57b24383
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02446dba5450b89b769e773563f77cd6d8c1659f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878905"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159902"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 이 메서드는이 프로그램에 대 한 편집 하며 계속 하기 (ENC) 업데이트를 가져옵니다. 사용자 지정 디버그 엔진은 항상를 반환 `E_NOTIMPL` 합니다.
@@ -43,7 +44,7 @@ int GetENCUpdate(
 `ppUpdate`\
 제한이 이 프로그램을 업데이트 하는 데 사용할 수 있는 내부 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]

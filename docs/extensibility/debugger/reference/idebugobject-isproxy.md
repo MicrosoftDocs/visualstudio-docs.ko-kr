@@ -1,4 +1,5 @@
 ---
+description: 개체가 투명 프록시 인지 여부를 확인 합니다.
 title: 'IDebugObject:: IsProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 216d1e0e007376b88b8befd2bf654a65192b13c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9cc2bc45a1e4cfe3e71f07bd2305aa0c7f1fde8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953645"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161493"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 개체가 투명 프록시 인지 여부를 확인 합니다.
@@ -42,7 +43,7 @@ int IsProxy (
 `pfIsProxy`\
 [out] `TRUE` 개체가 투명 프록시 이면이 고, 그렇지 않으면입니다. 그렇지 않으면 `FALSE` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

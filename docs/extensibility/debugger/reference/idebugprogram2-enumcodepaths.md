@@ -1,4 +1,5 @@
 ---
+description: 소스 파일에서 지정 된 위치에 대 한 코드 경로 목록을 검색 합니다.
 title: 'IDebugProgram2:: EnumCodePaths | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c647379d0b72832a4068d720846f8a9331f9b939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844751"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159967"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 소스 파일에서 지정 된 위치에 대 한 코드 경로 목록을 검색 합니다.
@@ -68,7 +69,7 @@ int EnumCodePaths(
 `ppSafety`\
 제한이 선택한 코드 경로를 건너뛰는 경우 중단점으로 설정할 추가 코드 컨텍스트를 나타내는 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 개체를 반환 합니다. 이는 short-circuit 부울 식의 경우에 발생할 수 있습니다 (예:).
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
