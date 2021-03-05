@@ -1,4 +1,5 @@
 ---
+description: 속성을 설정 하는 메서드를 가져옵니다.
 title: 'IDebugPropertyField:: GetPropertySetter | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab2c0b27d8befa13e68e6b28c6aee1f763138cba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd787b88ae0e45de7afe944a79fdd0a788aa1449
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900051"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167934"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 속성을 설정 하는 메서드를 가져옵니다.
@@ -43,7 +44,7 @@ int GetPropertySetter(
 `ppField`\
 제한이 속성을 설정 하는 메서드를 나타내는 [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
