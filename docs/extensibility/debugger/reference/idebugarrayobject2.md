@@ -1,4 +1,5 @@
 ---
+description: 관리 되는 배열 개체를 나타내며, 식 계산기 (EE)에서 배열에 대 한 기본 인덱스 (하한값)를 결정 하도록 허용 합니다.
 title: IDebugArrayObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870027"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174126"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -23,7 +24,7 @@ ms.locfileid: "99870027"
 
  관리 되는 배열 개체를 나타내며, 식 계산기 (EE)에서 배열에 대 한 기본 인덱스 (하한값)를 결정 하도록 허용 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject2 : IDebugArrayObject
@@ -35,7 +36,7 @@ IDebugArrayObject2 : IDebugArrayObject
 ## <a name="methods"></a>메서드
  [Idebugarrayobject](../../../extensibility/debugger/reference/idebugarrayobject.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|배열의 차원 수가 지정 된 경우 각 인덱스의 기본 인덱스 (하한값)를 검색 합니다.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|배열에 기본 인덱스 (더 낮은 범위)가 정의 되어 있는지 여부를 확인 합니다.|
