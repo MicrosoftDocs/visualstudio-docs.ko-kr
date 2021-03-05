@@ -1,4 +1,5 @@
 ---
+description: 시스템 ID 또는 GUID 일 수 있는 프로세스 ID를 지정 합니다.
 title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56bc1941bcff5d70dbcf0cb3a126c1f434d3f24
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952423"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144678"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 시스템 ID 또는 GUID 일 수 있는 프로세스 ID를 지정 합니다.
@@ -47,7 +48,7 @@ public struct AD_PROCESS_ID {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `ProcessIdType`\
 합집합을 해석 하는 방법 (또는 관리 코드의 경우에는 액세스할 구조체의 멤버)을 지정 하는 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) 열거형의 값 `ProcessId` 입니다.
 

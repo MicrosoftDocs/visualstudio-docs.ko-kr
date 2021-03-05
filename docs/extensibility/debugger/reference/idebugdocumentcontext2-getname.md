@@ -1,4 +1,5 @@
 ---
+description: 이 문서 컨텍스트를 포함 하는 문서의 표시할 때 나타나는 이름을 가져옵니다.
 title: 'IDebugDocumentContext2:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e75cd6b963965a245055ff8fa0849e39339af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947049"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146212"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 이 문서 컨텍스트를 포함 하는 문서의 표시할 때 나타나는 이름을 가져옵니다.
@@ -48,13 +49,13 @@ int GetName(
 `pbstrFileName`\
 제한이 파일의 이름을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 문서 컨텍스트를 문서 이름 자체를 저장 하도록 작성 하지 않는 한이 메서드는 일반적으로 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) 메서드에 대 한 호출을 전달 합니다 (예제 표시).
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CDebugContext` [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

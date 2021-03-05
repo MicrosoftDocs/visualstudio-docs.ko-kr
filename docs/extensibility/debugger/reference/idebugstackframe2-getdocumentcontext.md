@@ -1,4 +1,5 @@
 ---
+description: 이 스택 프레임의 문서 컨텍스트를 가져옵니다.
 title: 'IDebugStackFrame2:: GetDocumentContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e1645cb7daebb9dc344085d13a2fecb87fc0106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837512"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145978"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 이 스택 프레임의 문서 컨텍스트를 가져옵니다.
@@ -43,7 +44,7 @@ int GetDocumentContext (
 `ppCxt`\
 제한이 소스 문서에서 현재 위치를 나타내는 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

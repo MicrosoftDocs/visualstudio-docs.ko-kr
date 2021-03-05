@@ -1,4 +1,5 @@
 ---
+description: 프로세스가 실행 되 고 있는 포트를 가져옵니다.
 title: 'IDebugProcess2:: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cfc4c4e0f12400ff0fe07b24acaed0b80039f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 861917efe6ac4eebb67f63390ac2fd2a0c56e55f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907849"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146186"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 프로세스가 실행 되 고 있는 포트를 가져옵니다.
@@ -43,7 +44,7 @@ int GetPort(
 `ppPort`\
 제한이 프로세스가 시작 된 포트를 나타내는 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

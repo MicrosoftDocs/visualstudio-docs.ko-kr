@@ -1,4 +1,5 @@
 ---
+description: 참조 섹션에는 API에 대 한 개념적 개요, 모든 API 요소에 대 한 구문 및 사용법을 보여 주는 가이드, 코드 예제 모음이 포함 되어 있습니다.
 title: API 참조 (Visual Studio 디버깅) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,19 +11,19 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912038"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144639"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 참조(Visual Studio 디버깅)
 참조 섹션에는 API에 대 한 개념적 개요, 모든 API 요소에 대 한 구문 및 사용법을 보여 주는 가이드, 코드 예제 모음이 포함 되어 있습니다. 모든 참조는 범주별로 사전순으로 나열 됩니다.
 
  다음 표에서는 메서드에서 반환 되는 공통 값을 보여 줍니다 `HRESULT` .
 
-|이름|Description|값|
+|Name|설명|값|
 |----------|-----------------|-----------|
 |S_OK|성공했습니다.|0x00000000|
 |E_UNEXPECTED|예기치 않은 오류가 발생했습니다.|0x8000FFFF|

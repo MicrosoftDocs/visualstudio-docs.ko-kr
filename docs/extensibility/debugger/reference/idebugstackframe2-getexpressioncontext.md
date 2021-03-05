@@ -1,4 +1,5 @@
 ---
+description: 스택 프레임 및 스레드의 현재 컨텍스트 내에서 식 계산에 대 한 평가 컨텍스트를 가져옵니다.
 title: 'IDebugStackFrame2:: GetExpressionContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f82d76bb47c22ef77ba14e0a1ad64fa0404a6585
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4780b979102ee2ada499e2cd2e0f8ca728cadd91
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145939"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 스택 프레임 및 스레드의 현재 컨텍스트 내에서 식 계산에 대 한 평가 컨텍스트를 가져옵니다.
@@ -43,7 +44,7 @@ int GetExpressionContext (
 `ppExprCxt`\
 제한이 식 계산에 대 한 컨텍스트를 나타내는 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

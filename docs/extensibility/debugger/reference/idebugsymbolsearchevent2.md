@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버그 엔진 (DE)에서 디버깅 되는 모듈에 대 한 디버깅 기호가 로드 되었음을 나타내기 위해 전송 됩니다.
 title: IDebugSymbolSearchEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5fa763be8929a9122a6fd7517b401f5a874e04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ef2d315568b78e567d682728c4cbc989c5a4ed2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909347"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145744"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 이 인터페이스는 디버그 엔진 (DE)에서 디버깅 되는 모듈에 대 한 디버깅 기호가 로드 되었음을 나타내기 위해 전송 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolSearchEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  `IDebugSymbolSearchEvent2`인터페이스는 다음 메서드를 노출 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|기호 검색 결과에 대 한 정보를 검색 합니다.|
 

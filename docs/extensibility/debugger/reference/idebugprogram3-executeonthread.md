@@ -1,4 +1,5 @@
 ---
+description: 디버거 프로그램을 실행 합니다.
 title: 'IDebugProgram3:: ExecuteOnThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d996fd7b8cda1d5e36322c85d49c9889dd66dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146004"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 디버거 프로그램을 실행 합니다. 스레드는 프로그램을 실행할 때 사용자가 보고 있는 스레드에 디버거 정보를 제공 하기 위해 반환 됩니다.
@@ -40,7 +41,7 @@ int ExecuteOnThread(
 `pThread`\
 진행 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

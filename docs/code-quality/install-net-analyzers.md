@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867895"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144665"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>자사 .NET 분석기 사용 또는 설치
 
@@ -26,7 +26,7 @@ ms.locfileid: "99867895"
 
 다음 방법 중 하나로 자사 .NET 분석기를 사용 하도록 설정 하거나 설치할 수 있습니다.
 
-- **.NET sdk에서 사용**: Visual Studio 2019 16.8 및 .Net 5.0부터 이러한 분석기는 [.net sdk에 포함](/dotnet/fundamentals/code-analysis/overview)되어 있습니다. 분석은 기본적으로 .NET 5.0 이상을 대상으로 하는 프로젝트에 대해 사용 하도록 설정 됩니다. 속성을로 설정 하 여 이전 .NET 버전을 대상으로 하는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 수 있습니다 `EnableNETAnalyzers` `true` . 을로 설정 하 여 프로젝트에 대 한 코드 분석을 사용 하지 않도록 설정할 수도 있습니다 `EnableNETAnalyzers` `false` .
+- **.NET sdk에서 사용**: Visual Studio 2019 16.8 및 .Net 5.0부터 이러한 분석기는 [.net sdk에 포함](/dotnet/fundamentals/code-analysis/overview)되어 있습니다. 분석은 기본적으로 .NET 5.0 이상을 대상으로 하는 프로젝트에 대해 사용 하도록 설정 됩니다. MSBUILD [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 속성을로 설정 하 여 이전 .net 버전을 대상으로 하는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 수 있습니다 `true` . 을로 설정 하 여 프로젝트에 대 한 코드 분석을 사용 하지 않도록 설정할 수도 있습니다 `EnableNETAnalyzers` `false` .
 
 - **Nuget 패키지로 설치**: .net 5 + SDK로 이동 하지 않으려는 경우 또는 nuget 패키지 기반 모델을 선호 하는 경우 `Microsoft.CodeAnalysis.NetAnalyzers` Visual Studio 2019의 [nuget 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) 에서도 분석기를 사용할 수 있습니다.  주문형 버전 업데이트에 대 한 패키지 기반 모델을 사용 하는 것이 좋습니다. Visual Studio 2017를 사용할 경우 최신 `2.9.x` 버전의 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) 를 대신 설치 합니다.
 

@@ -1,4 +1,5 @@
 ---
+description: 프로그램을 호스트 하는 프로세스의 시스템 프로세스 식별자를 가져옵니다.
 title: 'IDebugProgramNode2:: GetHostPid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f826c30e90f95686e375d176ba41b24deab4491c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898595"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145952"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 프로그램을 호스트 하는 프로세스의 시스템 프로세스 식별자를 가져옵니다.
@@ -43,10 +44,10 @@ int GetHostPid (
 `pdwHostPid`\
 제한이 호스팅 프로세스에 대 한 시스템 프로세스 식별자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 IDebugProgramNode2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: 현재 예외를 가로채 려는 경우 현재 스택 프레임에서 디버거에 의해 호출 됩니다.
 title: 'IDebugStackFrame3:: InterceptCurrentException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8e3ef123fb88f1519d398952ed2d27de0fb0b91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93fa7f73b3e13c655716ecbb16ff420605f76c90
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963551"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145783"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 현재 예외를 가로채 려는 경우 현재 스택 프레임에서 디버거에 의해 호출 됩니다.
@@ -48,12 +49,12 @@ int InterceptCurrentException(
 `pqwCookie`\
 제한이 특정 예외를 식별 하는 고유 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
  가장 일반적으로 발생 하는 오류는 다음과 같습니다.
 
-|오류|Description|
+|Error|설명|
 |-----------|-----------------|
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|현재 예외를 가로챌 수 없습니다.|
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|현재 실행 프레임은 처리기에 대해 아직 검색 되지 않았습니다.|

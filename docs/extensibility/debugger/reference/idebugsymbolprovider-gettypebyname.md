@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 기호 이름을 기호 형식에 매핑합니다.
 title: 'Idebug Provider:: GetTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9223639fa82bffa2f55a7692e1ec4a2576e66d45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894870"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145757"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 이 메서드는 기호 이름을 기호 형식에 매핑합니다.
@@ -53,7 +54,7 @@ int GetTypeByName(
 `ppField`\
 제한이 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체로 기호 유형을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

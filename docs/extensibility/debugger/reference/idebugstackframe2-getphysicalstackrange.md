@@ -1,4 +1,5 @@
 ---
+description: 스택 프레임과 연결 된 실제 주소 범위의 컴퓨터 종속 표현을 가져옵니다.
 title: 'IDebugStackFrame2:: Get Stackrange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c4c4bbc468403aaf94aca1b5133a732e0c050b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41664f0e59b0eba6ae8a98599c74bd91fe26cf2a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837478"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145926"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 스택 프레임과 연결 된 실제 주소 범위의 컴퓨터 종속 표현을 가져옵니다.
@@ -48,7 +49,7 @@ int GetPhysicalStackRange (
 `paddrMax`\
 제한이 이 스택 프레임과 연결 된 가장 높은 실제 주소를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
