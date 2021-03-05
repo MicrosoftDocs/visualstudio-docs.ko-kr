@@ -1,4 +1,5 @@
 ---
+description: 이 서버와 연결 된 모든 디버그 엔진에 대해 자동 연결을 사용 하지 않도록 설정 합니다.
 title: IDebugCoreServer3::D isableAutoAttach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2af960c9efdd0732d950f16e7f83dd4d8a54fb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ad02efc68fe0bdd7a64ae0df02fe934a2044abc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908033"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154719"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 이 서버와 연결 된 모든 디버그 엔진에 대해 자동 연결을 사용 하지 않도록 설정 합니다.

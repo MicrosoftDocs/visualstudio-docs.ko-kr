@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 해당 값이 지정 된 열거형 상수의 이름을 가져옵니다.
 title: 'IDebugEnumField:: GetStringFromValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03c2ab7b701163e22a5cc3ff386f447c5199ff15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8601be6a1c87fcad10c6e5260e791fcf2ce42f01
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153341"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 이 메서드는 해당 값이 지정 된 열거형 상수의 이름을 가져옵니다.
@@ -48,7 +49,7 @@ int GetStringFromValue(
 `pbstrValue`\
 제한이 열거 상수의 이름을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 값에 연결 된 이름이 없으면가 반환 되 고, 그렇지 않으면 `S_FALSE` 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

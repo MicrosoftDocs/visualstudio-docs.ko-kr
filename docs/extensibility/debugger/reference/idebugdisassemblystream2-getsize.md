@@ -1,4 +1,5 @@
 ---
+description: 이 디스어셈블리 스트림의 명령에 있는 크기를 가져옵니다.
 title: 'IDebugDisassemblyStream2:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6d97c41023f0bc8ca80c36a5bfaf33735f48d07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94207c8e14306049068e838971aa778290de2ba6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901711"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154368"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 이 디스어셈블리 스트림의 명령에 있는 크기를 가져옵니다.
@@ -43,7 +44,7 @@ int GetSize(
 `pnSize`\
 제한이 는의 지침에 따라 크기를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

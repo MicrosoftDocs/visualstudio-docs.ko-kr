@@ -1,4 +1,5 @@
 ---
+description: 디스어셈블리 스트림의 범위를 가져옵니다.
 title: 'IDebugDisassemblyStream2:: GetScope | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28c0d07dd389814c0aa06792f4509ed9da1b4ef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b112975649ec477a036826e3dc938ba756615c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901683"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154459"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 디스어셈블리 스트림의 범위를 가져옵니다.
@@ -43,7 +44,7 @@ int GetScope(
 `pdwScope`\
 제한이 이 디스어셈블리 스트림의 범위를 설명 하는 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 현재 문서 위치에 대 한 범위를 검색 합니다.
 title: 'IDebugDocumentPositionOffset2:: GetRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ecb1e4aace5fb0c4f8c76b53a597b5b4b62110f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56ac73d85f9cfbfdc17d40da9f0fec415e057d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154238"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 현재 문서 위치에 대 한 범위를 검색 합니다.
@@ -46,7 +47,7 @@ public int GetRange(
 `pdwEndOffset`\
 [in, out] 범위의 끝 위치에 대 한 오프셋입니다. 이 정보가 필요 하지 않은 경우이 매개 변수를 null 값으로 설정 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

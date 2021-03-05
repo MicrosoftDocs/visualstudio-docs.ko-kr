@@ -1,4 +1,5 @@
 ---
+description: 서버와 디버그 패키지 간에 통신 하는 데 사용 되는 프로토콜을 나타내는 값을 반환 합니다.
 title: 'IDebugCoreServer3:: GetConnectionProtocol | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c8f9ad40c4c4ae61ea676755a6fa97849b6bda6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ddea336fb77691459ef3e58a7724d4e242c3be2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907971"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154732"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 서버와 디버그 패키지 간에 통신 하는 데 사용 되는 프로토콜을 나타내는 값을 반환 합니다.
@@ -43,7 +44,7 @@ int GetConnectionProtocol(
 `pProtocol`\
 제한이 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) 열거형의 값 중 하나를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

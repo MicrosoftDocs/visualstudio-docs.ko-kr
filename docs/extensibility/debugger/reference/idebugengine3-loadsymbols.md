@@ -1,4 +1,5 @@
 ---
+description: 이 디버깅 엔진에서 디버그 하는 모든 모듈에 대해 필요한 경우 기호를 로드 합니다.
 title: 'IDebugEngine3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f823f0087ee612a7850e000469271e0c2a778b62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4b4f210ef07ad10b35251582dd8a3c0fe3b0685
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153809"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 이 디버깅 엔진에서 디버그 하는 모든 모듈에 대해 필요한 경우 기호를 로드 합니다.
@@ -38,7 +39,7 @@ int LoadSymbols();
 ## <a name="parameters"></a>매개 변수
  없음
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

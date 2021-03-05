@@ -1,4 +1,5 @@
 ---
+description: 하나 이상의 모듈의 디버깅을 제어 하는 단일 디버그 엔진 (DE)을 나타냅니다.
 title: IDebugEngine3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a985acc5a949ead841239d56c8b067967531fb1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d91098a1f0a7f2df579a347fccb01239fdfeebe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153674"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 하나 이상의 모듈의 디버깅을 제어 하는 단일 디버그 엔진 (DE)을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine3 : IDebugEngine2
@@ -37,7 +38,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugEngine3` 다음 메서드를 노출 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|DE가 디버깅 기호를 검색 하는 데 사용할 경로를 설정 합니다.|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|아직 기호가 로드 되지 않은 모든 모듈에 대 한 기호를 로드 합니다.|

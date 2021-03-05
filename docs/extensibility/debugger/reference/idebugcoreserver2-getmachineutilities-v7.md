@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 서버에 대 한 컴퓨터 유틸리티를 가져옵니다.
 title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3572390f6e047d0e06b645b6a364971fe4557ea8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc58f41d9cca98f6c15c164ed4acb941345627e5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154771"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 이 메서드는 서버에 대 한 컴퓨터 유틸리티를 가져옵니다.
@@ -46,7 +47,7 @@ int GetMachineUtilities_V7(
 `ppUtil`\
 제한이 `IDebugMDMUtil2_V7` 컴퓨터 유틸리티 정보를 나타내는 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  `E_NOTIMPL`메서드가 구현 되지 않음을 나타내는를 항상 반환 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DE)에서 프로그램을 시작 하 고 종료 하는 데 사용 됩니다.
 title: IDebugEngineLaunch2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4485001341399d3830864a30b64fec24a77c5a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f03b4754d1648dc8a184d59e5e8b0f038a000bf2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892725"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153471"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 디버그 엔진 (DE)에서 프로그램을 시작 하 고 종료 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineLaunch2 : IDebugEngine2
@@ -37,7 +38,7 @@ IDebugEngineLaunch2 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngineLaunch2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|DE를 사용 하 여 프로세스를 시작 합니다.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|프로세스 실행을 다시 시작 합니다.|

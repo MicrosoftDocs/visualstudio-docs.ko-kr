@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 다중 스레드 디버깅을 지원 합니다.
 title: IDebugEngineProgram2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892608"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153380"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 이 인터페이스는 다중 스레드 디버깅을 지원 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineProgram2 : IUnknown
@@ -37,7 +38,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngineProgram2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[중지](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|이 프로그램에서 실행 중인 모든 스레드를 중지 합니다.|
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.|

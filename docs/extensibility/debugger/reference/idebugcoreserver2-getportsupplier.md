@@ -1,4 +1,5 @@
 ---
+description: 특정 포트 공급자를 검색 합니다.
 title: 'IDebugCoreServer2:: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 426cb86f14fcce8d41ded575c3cc621ccf38a402
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae0e60f1ff54c257ff3a71f694362152182454bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904037"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154745"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 특정 포트 공급자를 검색 합니다.
@@ -48,7 +49,7 @@ int GetPortSupplier(
 `ppPortSupplier`\
 제한이 원하는 포트 공급자를 나타내는 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

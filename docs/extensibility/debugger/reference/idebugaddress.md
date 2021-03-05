@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 항목의 주소를 나타냅니다.
 title: IDebugAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e069a822cc2394769d256c93a1decf01b451b643
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f49107e4d06fa828d059ebd9916ca254882ff0a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154966"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 이 인터페이스는 항목의 주소를 나타냅니다. 기호 처리기에 의해 반환 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAddress : IUnknown
@@ -37,7 +38,7 @@ IDebugAddress : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|개체와 해당 위치를 설명 하는 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조체를 검색 합니다.|
 

@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 디버그 엔진 (DE)을 통해 프로세스를 시작 합니다.
 title: 'IDebugEngineLaunch2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd8b610f99161a9716b9bffc235196165306711
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153588"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 이 메서드는 디버그 엔진 (DE)을 통해 프로세스를 시작 합니다.
@@ -103,7 +104,7 @@ int LaunchSuspended(
 `ppDebugProcess`\
 제한이 시작 된 프로세스를 나타내는 결과 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

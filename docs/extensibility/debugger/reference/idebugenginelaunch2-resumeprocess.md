@@ -1,4 +1,5 @@
 ---
+description: 프로세스 실행을 다시 시작 합니다.
 title: 'IDebugEngineLaunch2:: ResumeProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cfd5e6c09c86a4c12c9fc8bbc3d0212887af279
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e868d81647e85e90728d0de73143a89fb8e0b0f0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892816"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153575"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 프로세스 실행을 다시 시작 합니다.
@@ -43,7 +44,7 @@ int ResumeProcess (
 `pProcess`\
 진행 다시 시작할 프로세스를 나타내는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

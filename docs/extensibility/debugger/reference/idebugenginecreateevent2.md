@@ -1,4 +1,5 @@
 ---
+description: De (디버그 엔진)는 DE-DE 인스턴스가 만들어질 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 title: IDebugEngineCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a6aebd8a27f4eb9962abbcd593c947c04a17854
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6155324150b963a5fd26ccecc1244e0792f448bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916288"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153653"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 De (디버그 엔진)는 DE-DE 인스턴스가 만들어질 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineCreateEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugEngineCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngineCreateEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|새로 만든 디버그 엔진 (DE)을 나타내는 개체를 검색 합니다.|
 

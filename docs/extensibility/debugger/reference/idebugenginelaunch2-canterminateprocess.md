@@ -1,4 +1,5 @@
 ---
+description: 프로세스를 종료할 수 있는지 여부를 확인 합니다.
 title: 'IDebugEngineLaunch2:: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f6f174685ad544a53548a8818a08165d46679b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687b2816c6fd312efef29daa44e0644fc5c5c8c6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153627"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 프로세스를 종료할 수 있는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ int CanTerminateProcess (
 `pProcess`\
 진행 종료할 프로세스를 나타내는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 예를 들어 `S_FALSE` 액세스가 거부 되었기 때문에 엔진이 프로세스를 종료할 수 없는 경우를 반환 합니다.
 
 ## <a name="remarks"></a>설명

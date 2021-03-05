@@ -1,4 +1,5 @@
 ---
+description: 사용자 지정 특성 클래스 형식을 가져옵니다.
 title: 'IDebugCustomAttribute:: Getattribut 필드 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fa72b6dfc02f29e5efd8d3e04f98f078cba66a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9ea62b012cd58aac44e5a2d37d4dc6e3b35ca92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928447"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154524"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 사용자 지정 특성 클래스 형식을 가져옵니다.
@@ -43,7 +44,7 @@ int GetAttributeTypeField(
 `ppCAType`\
 제한이 사용자 지정 특성이 인스턴스인 클래스를 나타내는 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

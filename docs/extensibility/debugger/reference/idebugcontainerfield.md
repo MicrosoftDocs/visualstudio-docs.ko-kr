@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 다른 기호 또는 형식에 대 한 컨테이너인 기호 또는 형식을 나타냅니다.
 title: IDebugContainerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752eb7d77035a25ad1d0ddc8aec45afe95d898c7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928499"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154784"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 이 인터페이스는 다른 기호 또는 형식에 대 한 컨테이너인 기호 또는 형식을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugContainerField : IDebugField
@@ -37,7 +38,7 @@ IDebugContainerField : IDebugField
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|컨테이너의 필드에 대 한 열거자를 만듭니다.|
 

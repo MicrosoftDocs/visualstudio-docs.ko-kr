@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 디버그 엔진에 JustMyCode 상태 정보를 알려 줍니다.
 title: 'IDebugEngine3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a81fa4bda506cf1be27f658b071910e7c8ccd8a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887187"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153705"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 이 메서드는 디버그 엔진에 JustMyCode 상태 정보를 알려 줍니다.
@@ -53,7 +54,7 @@ int SetJustMyCodeState(
 `rgJMCSpec`\
 진행 사용할 [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) 구조체의 배열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버그 엔진 (DE)을 나타냅니다.
 title: IDebugEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce76ccdc444dafc4b6b8ee6afb3c9ded8adcf3d0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919930"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153835"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 이 인터페이스는 디버그 엔진 (DE)을 나타냅니다. 이 클래스는 중단점을 만들어 예외를 설정 및 해제 하는 방법에서 디버깅 세션의 다양 한 측면을 관리 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine2 : IUnknown
@@ -37,7 +38,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngine2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|DE에 의해 디버깅 되는 모든 프로그램에 대 한 열거자를 만듭니다.|
 |[연결](../../../extensibility/debugger/reference/idebugengine2-attach.md)|프로그램에 DE를 연결 합니다.|

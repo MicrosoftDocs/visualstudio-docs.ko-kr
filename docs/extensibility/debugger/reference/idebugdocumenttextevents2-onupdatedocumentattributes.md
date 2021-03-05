@@ -1,4 +1,5 @@
 ---
+description: 문서 특성이 업데이트 되었음을 이벤트를 수신자에 게 알립니다.
 title: 'IDebugDocumentTextEvents2:: onUpdateDocumentAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e73b4c071f28abf80e9d35da05b0b49c96af265
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa7c6f4ca65043410c8d2f3e6e843b10c149709f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919964"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154147"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 문서 특성이 업데이트 되었음을 이벤트를 수신자에 게 알립니다.
@@ -43,7 +44,7 @@ int onUpdateDocumentAttributes(
 `textdocattr`\
 진행 문서의 업데이트 된 특성을 지정 하는 [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) 열거형의 플래그 조합입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

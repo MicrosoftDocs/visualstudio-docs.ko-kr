@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 사용자 지정 특성을 나타내며 특성의 이름, 부모 및 클래스 형식을 제공할 수 있습니다.
 title: IDebugCustomAttribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724aedb41a11607f89193b51f41e403a6da7dd45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907948"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154498"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 이 인터페이스는 사용자 지정 특성을 나타내며 특성의 이름, 부모 및 클래스 형식을 제공할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCustomAttribute : IUnknown
@@ -37,7 +38,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCustomAttribute` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|현재 특성이 연결 된 필드를 가져옵니다.|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|사용자 지정 특성 클래스 형식을 가져옵니다.|

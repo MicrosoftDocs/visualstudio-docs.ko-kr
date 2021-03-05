@@ -1,4 +1,5 @@
 ---
+description: 프로그램이 중지 된 경우에도 지정 된 스레드에서 식 계산을 수행 하도록 허용 하거나 허용 하지 않습니다.
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -17,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94e049b4595c85e628b69a3613ae88ac27b013c7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892673"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153432"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 프로그램이 중지 된 경우에도 지정 된 스레드에서 식 계산을 수행 하도록 허용 하거나 허용 하지 않습니다.
@@ -65,7 +66,7 @@ int WatchForExpressionEvaluationOnThread(
 `fWatch`\
 진행 0이 아닌 경우 ( `TRUE` )로 식별 되는 스레드에서 식 계산을 허용 하 `dwTid` 고, 그렇지 않으면 0 ( `FALSE` )은 해당 스레드에서 식 계산을 허용 하지 않습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

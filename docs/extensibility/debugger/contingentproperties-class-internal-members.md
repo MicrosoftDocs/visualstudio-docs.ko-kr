@@ -1,4 +1,5 @@
 ---
+description: System.object 개체의 추가 속성을 포함 합니다.
 title: ContingentProperties 클래스-내부 멤버 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f332c715c8a182b30191cd96c8f1d1438cbdefd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2303318c7a5f36027ce7709c5b09b5846fc6fab6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930488"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154979"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 클래스-내부 멤버
 개체에 대 한 추가 속성을 포함 <xref:System.Threading.Tasks.Task> 합니다.
@@ -34,11 +35,11 @@ ms.locfileid: "99930488"
        extends System.Object
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="fields"></a>필드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|이 작업에 등록 된 자식 작업의 목록입니다.|
 

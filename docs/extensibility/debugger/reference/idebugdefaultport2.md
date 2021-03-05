@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 포트의 서버 및 알림 기능에 액세스 하는 여러 가지 방법을 제공 합니다.
 title: IDebugDefaultPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ec637daa197574710978af7cb22195c969f48b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901855"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154420"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 이 인터페이스는 포트의 서버 및 알림 기능에 액세스 하는 여러 가지 방법을 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDefaultPort2 : IDebugPort2
@@ -37,7 +38,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)에 정의 된 메서드 외에도 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|이 포트에서 포트 알림 인터페이스를 가져옵니다.|
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|이 포트를 호스트 하는 서버에 대 한 인터페이스를 가져옵니다.|

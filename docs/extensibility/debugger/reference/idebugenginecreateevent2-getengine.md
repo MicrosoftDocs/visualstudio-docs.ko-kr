@@ -1,4 +1,5 @@
 ---
+description: 새로 만든 디버그 엔진 (DE)을 나타내는 개체를 검색 합니다.
 title: 'IDebugEngineCreateEvent2:: GetEngine | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95e3991b9e6c5d08793780b9bb3b5150e28c5246
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aaabac0b9ee0e6fb2e8982d673e8e55e1cede4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936147"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153675"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 새로 만든 디버그 엔진 (DE)을 나타내는 개체를 검색 합니다.
@@ -43,7 +44,7 @@ int GetEngine(
 `pEngine`\
 제한이 새로 만든 DE를 나타내는 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

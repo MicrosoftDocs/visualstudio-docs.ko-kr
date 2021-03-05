@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 소스 파일의 추상 위치를 나타냅니다.
 title: IDebugDocumentPosition2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc8537fc943e84e37d47dc02cf6264b16dd7fb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ebbe0a1101c146bf5d7e8c5fe7a096777f372c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154251"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 이 인터페이스는 소스 파일의 추상 위치를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentPosition2 : IUnknown
@@ -37,7 +38,7 @@ IDebugDocumentPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentPosition2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|이 문서 위치를 포함 하는 소스 파일의 파일 이름을 가져옵니다.|
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|포함 하는 문서를 가져옵니다.|

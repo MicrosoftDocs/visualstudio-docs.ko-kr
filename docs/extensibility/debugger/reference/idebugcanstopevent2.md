@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 현재 코드 위치에서 중지할지 여부를 세션 디버그 관리자 (SDM)에 게 표시 하는 데 사용 됩니다.
 title: IDebugCanStopEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903238"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154849"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 이 인터페이스는 현재 코드 위치에서 중지할지 여부를 세션 디버그 관리자 (SDM)에 게 표시 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCanStopEvent2 : IUknown
@@ -39,7 +40,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCanStopEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|이 이벤트의 이유를 가져옵니다.|
 |[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|디버그할 프로그램을이 이벤트의 위치에서 중지할지, 아니면 중지 이유를 설명 하는 이벤트를 보낼지, 아니면 계속 실행할지를 지정 합니다.|

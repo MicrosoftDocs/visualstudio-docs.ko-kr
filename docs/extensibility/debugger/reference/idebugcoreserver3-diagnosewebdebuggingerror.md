@@ -1,4 +1,5 @@
 ---
+description: 자동 연결이 실패 한 이유를 확인 하려고 합니다.
 title: IDebugCoreServer3::D iagnoseWebDebuggingError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95e54add3616fa0ec97f4114b4cd628213e752f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908059"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154693"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 자동 연결이 실패 한 이유를 확인 하려고 합니다.
@@ -43,7 +44,7 @@ int DiagnoseWebDebuggingError(
 `pszUrl`\
 진행 현재 사용 되지 않습니다. 항상 null 값으로 설정 해야 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음은 일반적인 반환 코드입니다.
 
 |코드|Description|

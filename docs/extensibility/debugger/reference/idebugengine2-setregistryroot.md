@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DE)의 레지스트리 루트를 설정 합니다.
 title: 'IDebugEngine2:: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75e5b66f19e017becc0ee307179e7e9798d357a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01d43d2891b4ffb6257dfe0a367971022ebb1f99
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933585"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153900"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 디버그 엔진 (DE)의 레지스트리 루트를 설정 합니다.
@@ -43,7 +44,7 @@ int SetRegistryRoot(
 `pszRegistryRoot`\
 진행 사용할 레지스트리 루트입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

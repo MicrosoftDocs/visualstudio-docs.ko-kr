@@ -1,4 +1,5 @@
 ---
+description: 서버의 이름을 검색 합니다.
 title: 'IDebugCoreServer3:: GetServerName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb94f5a60b221728652ba05366777977a064cf6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ee0bc7eeb97df19a06af5b9e02baebc73274be3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880829"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154706"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 서버의 이름을 검색 합니다.
@@ -46,7 +47,7 @@ int GetServerName(
 > [!NOTE]
 > 호출자는 문자열을 해제 해야 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

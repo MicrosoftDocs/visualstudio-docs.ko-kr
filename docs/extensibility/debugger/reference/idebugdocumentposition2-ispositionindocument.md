@@ -1,4 +1,5 @@
 ---
+description: 문서 위치가 지정 된 문서에 포함 되어 있는지 여부를 확인 합니다.
 title: 'IDebugDocumentPosition2:: IsPositionInDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17a3623ab0a674b49d96d6eb77f04ec0de9a2fb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4800f3735e2d015e3638a642e8c0d54829ddd4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842258"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154290"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 문서 위치가 지정 된 문서에 포함 되어 있는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ int IsPositionInDocument(
 `pDoc`\
 진행 포함 하는 문서 후보를 나타내는 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.
 title: 'IDebugEngineProgram2:: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8168b0813eb99f4f70c8a5d8ffbdae4f6fce2094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaf02e07bebbbfd711d99ef7605befbdce1f9376
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892621"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153419"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.
@@ -58,7 +59,7 @@ int WatchForThreadStep(
 `dwFrame`\
 진행 단계 유형을 제어 하는 프레임 인덱스를 지정 합니다. 이 값이 0 이면 단계 형식이 "한 단계씩 코드 실행" 이며로 식별 되는 스레드가 실행 될 때마다 프로그램이 중지 됩니다 `dwTid` . `dwFrame`가 0이 아닌 경우 단계 유형은 "프로시저 단위 실행" 이며,로 식별 된 스레드가 `dwTid` 와 스택에서 같은 인덱스의 프레임에서 실행 중인 경우에만 프로그램을 중지 해야 합니다 `dwFrame` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

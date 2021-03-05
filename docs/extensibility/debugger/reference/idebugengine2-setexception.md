@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DE)에서 지정 된 예외를 처리 하는 방법을 지정 합니다.
 title: 'IDebugEngine2:: SetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 543cccbbefd12accd75213f255f8e3b677cdea38
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878944"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153940"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 디버그 엔진 (DE)에서 지정 된 예외를 처리 하는 방법을 지정 합니다.
@@ -43,7 +44,7 @@ int SetException(
 `pException`\
 진행 예외를 설명 하 고 디버그 하는 방법을 설명 하는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
