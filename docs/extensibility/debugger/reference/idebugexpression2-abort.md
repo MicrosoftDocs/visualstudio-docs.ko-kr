@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 EvaluateAsync) 메서드에 대 한 호출로 시작 되는 비동기 식 계산을 취소 합니다.
 title: 'IDebugExpression2:: Abort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18e0e4b810e76bd5c5de7b0f8d77e7cd72ceb565
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37591b245a4bf47ba956a17e19b7d6c3f1608cae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901691"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152781"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 이 메서드는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드를 호출 하 여 시작 된 비동기 식 계산을 취소 합니다.

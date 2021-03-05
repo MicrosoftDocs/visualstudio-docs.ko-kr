@@ -1,4 +1,5 @@
 ---
+description: 참조 값을 실제로 포함 하는 메모리 바이트를 가져옵니다.
 title: 'IDebugReference2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0088bc80d53b450db2e2c0f73ff9dadd6b8e51e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8d5e12b5c26bb5216fdba173dcc4cbb284f27d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909667"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151365"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-참조 값을 실제로 포함 하는 메모리 바이트를 가져옵니다. 다음에 사용하도록 예약됩니다.
+참조 값을 실제로 포함 하는 메모리 바이트를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,7 +44,7 @@ int GetMemoryBytes (
 `ppMemoryBytes`\
 제한이 참조 값을 포함 하는 메모리를 검색 하는 데 사용할 수 있는 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목

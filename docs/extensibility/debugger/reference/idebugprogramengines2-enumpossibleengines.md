@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)의 Guid를 반환 합니다.
 title: 'IDebugProgramEngines2:: EnumPossibleEngines | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5719728637f26ed61283578565470b39fc60455
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899006"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151586"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)의 Guid를 반환 합니다.
@@ -53,7 +54,7 @@ int EnumPossibleEngines(
 `pceltEngines`\
 제한이 반환 되는 실제 DE Guid 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`버퍼가 충분히 크지 않은 경우 [c + +] 또는 [c #] 0x8007007A를 반환 합니다.
 
 ## <a name="remarks"></a>설명

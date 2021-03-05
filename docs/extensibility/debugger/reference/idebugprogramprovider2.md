@@ -1,4 +1,5 @@
 ---
+description: 이 등록 된 인터페이스를 사용 하면 세션 디버그 관리자 (SDM)가 IDebugProgramPublisher2 인터페이스를 통해 게시 된 프로그램에 대 한 정보를 가져올 수 있습니다.
 title: IDebugProgramProvider2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0102aa650d9739ae862f1357a1560842ae2fa59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959625"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151443"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 이 등록 된 인터페이스를 사용 하면 세션 디버그 관리자 (SDM)가 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 인터페이스를 통해 "게시 된" 프로그램에 대 한 정보를 가져올 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramProvider2 : IUnknown
@@ -36,7 +37,7 @@ IDebugProgramProvider2 : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|여러 가지 방법으로 필터링 된 실행 프로그램에 대 한 정보를 가져옵니다.|
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|특정 프로세스 ID가 지정 된 프로그램 노드를 가져옵니다.|

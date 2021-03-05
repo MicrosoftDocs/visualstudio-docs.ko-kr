@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 필드의 크기 (바이트)를 가져옵니다.
 title: 'IDebugField:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6330179f1bbfffcb1f590dfc09ae0c06385f12e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c588914f93d732dc1b8e6ddc4edc41713e97fd1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151898"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 이 메서드는 필드의 크기 (바이트)를 가져옵니다.
@@ -43,7 +44,7 @@ int GetSize(
 `pdwSize`\
 제한이 크기를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

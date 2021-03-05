@@ -1,4 +1,5 @@
 ---
+description: 이 이벤트를 발생 시킨 예외에 대 한 자세한 설명을 가져옵니다.
 title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d9b9a174843b4c48dccc00370176668c582b53c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6505cd2309323d7fe91f2c807af33555c3575fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152899"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 이 이벤트를 발생 시킨 예외에 대 한 자세한 설명을 가져옵니다.
@@ -43,7 +44,7 @@ int GetException(
 `pExceptionInfo`\
 [in, out] 예외에 대 한 설명과 함께 채워지는 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

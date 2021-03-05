@@ -1,4 +1,5 @@
 ---
+description: 생성자 없이 개체를 만듭니다.
 title: 'IDebugFunctionObject:: CreateObjectNoConstructor | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0f5ddd90f979c3646014bc82aa55402386a5f36
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151833"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 생성자 없이 개체를 만듭니다.
@@ -48,7 +49,7 @@ int CreateObjectNoConstructor(
 `ppObject`\
 제한이 새로 만든 개체를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 디버그 이벤트에 대 한 알림을 보냅니다.
 title: 'IDebugEventCallback2:: Event | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54f53132f0a1f4769386874118d24f7e77a95f71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152925"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 디버그 이벤트에 대 한 알림을 보냅니다.
@@ -73,7 +74,7 @@ int Event(
 `dwAttrib`\
 진행 [Eventattributes](../../../extensibility/debugger/reference/eventattributes.md) 열거형의 플래그 조합입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

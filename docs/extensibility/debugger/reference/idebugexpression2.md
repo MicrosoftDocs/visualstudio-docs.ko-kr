@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 바인딩 및 평가를 위해 준비 된 구문 분석 식을 나타냅니다.
 title: IDebugExpression2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fe6a6955f5d8d4ae42d51e3623b0c4f966dc416
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949586"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152665"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 이 인터페이스는 바인딩 및 평가를 위해 준비 된 구문 분석 식을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpression2 : IUnknown
@@ -37,7 +38,7 @@ IDebugExpression2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugExpression2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|이 식을 비동기식으로 계산 합니다.|
 |[중단](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: 참조의 선택 된 자식 목록을 가져옵니다.
 title: 'IDebugReference2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d142f6c3715e2c3888c7ce60f349c50e84f7f16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1481e58dd36e330bf9c4cff1644629bd93de55ac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909700"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151378"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-참조의 선택 된 자식 목록을 가져옵니다. 다음에 사용하도록 예약됩니다.
+참조의 선택 된 자식 목록을 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,7 +69,7 @@ int EnumChildren (
 `ppEnum`\
 제한이 요청 된 자식 속성의 목록을 포함 하는 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,4 +1,5 @@
 ---
+description: 예외에 대 한 표시할 설명를 가져옵니다.
 title: 'IDebugExceptionEvent2:: GetExceptionDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4454d9c77cad2050c260d0fbd86764b6bf703403
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398b03161a00d14c21367a05607f611d1fc1b9c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933268"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152873"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 예외에 대 한 표시할 설명를 가져옵니다.
@@ -43,7 +44,7 @@ int GetExceptionDescription(
 `pbstrDescription`\
 제한이 예외에 대 한 표시할 설명을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

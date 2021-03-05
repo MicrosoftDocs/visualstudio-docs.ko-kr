@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 필드, 즉 기호 또는 형식에 대 한 설명을 나타냅니다.
 title: IDebugField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869767"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151846"
 ---
 # <a name="idebugfield"></a>IDebugField
 이 인터페이스는 필드, 즉 기호 또는 형식에 대 한 설명을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugField : IUnknown
@@ -37,7 +38,7 @@ IDebugField : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugField` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|기호 또는 형식에 대 한 표시할 정보를 가져옵니다.|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|필드의 종류를 가져옵니다.|

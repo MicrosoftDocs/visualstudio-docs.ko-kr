@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893492"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151326"
 ---
 # <a name="troubleshooting-template-installation"></a>템플릿 설치 문제 해결
 
@@ -39,7 +39,7 @@ ms.locfileid: "99893492"
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. 설치에 대 한 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs) 를 열고를 실행 `devenv /updateConfiguration` 합니다.
+3. 설치에 대 한 [개발자 명령 프롬프트](../ide/reference/command-prompt-powershell.md) 를 열고를 실행 `devenv /updateConfiguration` 합니다.
 
 ::: moniker range="vs-2017"
 

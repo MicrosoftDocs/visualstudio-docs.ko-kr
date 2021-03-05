@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 지역, 인수 및 메서드의 기타 속성을 포함 하는 속성 개체를 가져옵니다.
 title: 'IDebugExpressionEvaluator:: GetMethodProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29a8e22301cbcd074c12d100d13601b57871a91a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d98e661ad3f469c41c120e07e6d54f76b089cb0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930410"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152509"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 이 메서드는 지역, 인수 및 메서드의 기타 속성을 포함 하는 속성 개체를 가져옵니다.
@@ -63,7 +64,7 @@ int GetMethodProperty(
 `ppProperty`\
 제한이 메서드를 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

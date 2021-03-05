@@ -1,4 +1,5 @@
 ---
+description: 기호 공급자와 계산 프레임의 주소가 지정 된 경우 식 문자열을 구문 분석 된 식으로 변환 합니다.
 title: IDebugExpressionEvaluator3::P arse2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39edfbcdec6f634307c61b3db4ac76b238ac3614
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915526"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152210"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 기호 공급자와 계산 프레임의 주소가 지정 된 경우 식 문자열을 구문 분석 된 식으로 변환 합니다.
@@ -76,13 +77,13 @@ HRESULT Parse2 (
 `ppParsedExpression`\
 제한이 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 개체의 구문 분석 된 식을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 이 메서드는 실제 값이 아니라 구문 분석 된 식을 생성 합니다. 구문 분석 된 식이 계산 될 준비가 되었습니다. 즉, 값으로 변환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) 인터페이스를 노출 하는 **CEE** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버그할 수 있는 프로그램을 나타냅니다.
 title: IDebugProgramNode2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d697ce389a7672f4f97efc17547e79173da3e2dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898521"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151573"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 이 인터페이스는 디버그할 수 있는 프로그램을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNode2 : IUnknown
@@ -37,7 +38,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramNode2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|프로그램의 이름을 가져옵니다.|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|프로그램을 호스트 하는 프로세스의 이름을 가져옵니다.|

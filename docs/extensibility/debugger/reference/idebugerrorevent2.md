@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 사용자에 게 보고할 오류 메시지를 지정 합니다.
 title: IDebugErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af67a00b9a692e5156ec7a6a14ef3fadcc3ac32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf249e8568c3ae70bc8d881d72b491cf7fa3576b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888344"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153042"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 이 인터페이스는 사용자에 게 보고할 오류 메시지를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugErrorEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |`GetErrorMessage`|오류를 사람이 인식할 수 있는 문자열로 반환 합니다.|
 

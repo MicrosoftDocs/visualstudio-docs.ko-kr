@@ -1,4 +1,5 @@
 ---
+description: 나중에 계산할 때 텍스트 형식으로 식을 구문 분석 합니다.
 title: IDebugExpressionContext2::P arseText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2095a1d6e035c676ab92722f9ae785e1a42c5b78
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152640"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 나중에 계산할 때 텍스트 형식으로 식을 구문 분석 합니다.
@@ -68,7 +69,7 @@ int ParseText(
 `pichError`\
 제한이 식에 오류가 포함 된 경우에서 오류의 문자 인덱스를 반환 합니다 `pszCode` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -76,7 +77,7 @@ int ParseText(
 
 식은 계산 되지 않고 구문 분석 됩니다. [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 또는 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 메서드를 나중에 호출 하면 구문 분석 된 식이 평가 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CEnvBlock` [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다. 이 예에서는 식이 환경 변수의 이름으로 구문 분석 되 고 해당 변수에서 값을 검색 하는 것으로 간주 합니다.
 
 ```cpp

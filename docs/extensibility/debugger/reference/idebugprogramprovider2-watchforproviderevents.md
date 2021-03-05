@@ -1,4 +1,5 @@
 ---
+description: 프로세스에 포트 이벤트에 대 한 알림이 표시 되도록 허용 합니다.
 title: 'IDebugProgramProvider2:: WatchForProviderEvents | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959651"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151482"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 프로세스에 포트 이벤트에 대 한 알림이 표시 되도록 허용 합니다.
@@ -75,13 +76,13 @@ int WatchForProviderEvents(
 `pEventCallback`\
 진행 이벤트 알림을 받는 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
  호출자가이 메서드에 대 한 이전 호출을 사용 하 여 설정 된 이벤트 처리기를 제거 하려는 경우 호출자는 처음에는 동일한 매개 변수를 전달 하지만 플래그는 그대로 둡니다 `PFLAG_REASON_WATCH` .
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 인터페이스를 노출 하는 **cdebugengine** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

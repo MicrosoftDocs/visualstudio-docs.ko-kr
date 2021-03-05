@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 필드의 컨테이너를 가져옵니다.
 title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39be9de82e6356b16562ca4b45ea67bb40e3764f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152002"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 이 메서드는 필드의 컨테이너를 가져옵니다.
@@ -43,7 +44,7 @@ int GetContainer(
 `ppContainerField`\
 제한이 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스가 나타내는 컨테이너를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

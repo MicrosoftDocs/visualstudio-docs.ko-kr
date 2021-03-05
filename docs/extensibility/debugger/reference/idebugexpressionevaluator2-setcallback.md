@@ -1,4 +1,5 @@
 ---
+description: 식 계산기 (EE)에서 디버거 엔진 (DE)이 메트릭 설정을 읽는 데 사용할 콜백 인터페이스를 지정할 수 있도록 합니다.
 title: 'IDebugExpressionEvaluator2:: SetCallback | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9411bc7c3963636c8ad80e5a2bf94dd49bf3e5b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc858ab5d26ccffe33d26296e033ac577ddba440
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152392"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 식 계산기 (EE)에서 디버거 엔진 (DE)이 메트릭 설정을 읽는 데 사용할 콜백 인터페이스를 지정할 수 있도록 합니다.
@@ -42,13 +43,13 @@ int SetCallback (
 `pCallback`\
 진행 설정 콜백에 사용할 인터페이스입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 이 메서드는 식 계산기가 메트릭 설정을 읽는 데 사용할 수 있는 세션 디버그 관리자에 대 한 인터페이스를 제공 합니다. 원격 디버깅에서 컴퓨터의 메트릭을 읽는 데 유용 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) 인터페이스를 노출 하는 **CEE** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

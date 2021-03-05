@@ -1,4 +1,5 @@
 ---
+description: 지정 된 확장 필드 종류를 검색 합니다.
 title: 'IDebugExtendedField:: GetExtendedKind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f431278997dcc02ecc60cd6bd4e8b9171d88dfb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 334ed7f44c4b4c119a204af17a00b8329410d05e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915551"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152132"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 지정 된 확장 필드 종류를 검색 합니다.
@@ -42,7 +43,7 @@ int GetExtendedKind(
 `pdwKind`\
 [in, out] 필드의 종류를 정의 하는 [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

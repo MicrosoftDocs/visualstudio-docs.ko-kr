@@ -1,4 +1,5 @@
 ---
+description: 고유 식별자가 지정 된 서비스 개체를 검색 합니다.
 title: 'IDebugExpressionEvaluator2:: GetService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb0f822011a5f54cf97e58f53ec1cf03b5d26a23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a522cefec514baf8b7d8219846587f18c37559a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926342"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152366"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 고유 식별자가 지정 된 서비스 개체를 검색 합니다.
@@ -47,7 +48,7 @@ int GetService (
 `ppService`\
 제한이 서비스를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

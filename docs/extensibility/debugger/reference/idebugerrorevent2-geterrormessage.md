@@ -1,4 +1,5 @@
 ---
+description: 사람이 읽을 수 있는 오류 메시지를 생성할 수 있는 정보를 반환 합니다.
 title: 'IDebugErrorEvent2:: GetErrorMessage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f7933441eff3754b90385cfe62dc1314c2d1cb4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888357"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153016"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 사람이 읽을 수 있는 오류 메시지를 생성할 수 있는 정보를 반환 합니다.
@@ -68,7 +69,7 @@ int GetErrorMessage(
 `pdwHelpId`\
 제한이 표시할 도움말 항목의 ID입니다 (도움말 항목이 없으면 0으로 설정 됨).
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

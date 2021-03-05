@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 디버그 이벤트를 보내는 데 사용 됩니다.
 title: IDebugEventCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe81a7d8a07a80f38e771e2cfbac3ec23da54b62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933364"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152912"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 이 인터페이스는 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 디버그 이벤트를 보내는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEventCallback2 : IUnknown
@@ -37,7 +38,7 @@ IDebugEventCallback2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEventCallback2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|디버깅 이벤트에 대 한 알림을 SDM에 보냅니다.|
 

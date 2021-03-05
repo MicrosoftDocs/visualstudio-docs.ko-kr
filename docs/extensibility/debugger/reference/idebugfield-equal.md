@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 필드와 지정 된 필드가 같은지 비교 합니다.
 title: 'IDebugField:: Equal | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c19e8860fb9ed9cbd65efe7fa72fd920a01622ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2bf9b3e4bbb988621e3b65e855b07322fba1795
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915485"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152093"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 이 메서드는이 필드와 지정 된 필드가 같은지 비교 합니다.
@@ -43,7 +44,7 @@ int Equal(
 `pField`\
 진행 이와 비교할 필드입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  필드가 같으면는를 반환 `S_OK` 합니다. 필드가 다르면가 반환 되 고 `S_FALSE.` , 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

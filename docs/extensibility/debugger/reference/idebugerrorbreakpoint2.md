@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 잘못 된 위치, 잘못 된 식 등의 오류 또는 경고 중단점 또는 보류 중인 중단점이 바인딩되지 않은 이유 (코드는 아직 로드 되지 않은 경우)를 나타냅니다.
 title: IDebugErrorBreakpoint2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 798dcf0beecd3b1a8cf786b93e581ac6aa780210
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91697ebad462f3d1e953aa42d74bf5a96757886a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153159"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 이 인터페이스는 잘못 된 위치, 잘못 된 식 등의 오류 또는 경고 중단점 또는 보류 중인 중단점이 바인딩되지 않은 이유 (코드는 아직 로드 되지 않은 경우)를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugErrorBreakpoint2 : IUnknown
@@ -37,7 +38,7 @@ IDebugErrorBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugErrorBreakpoint2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|오류를 발생 시킨 보류 중인 중단점을 가져옵니다.|
 |[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|오류를 설명 하는 중단점 오류 확인을 가져옵니다.|

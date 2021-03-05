@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로그램을에 연결할 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 title: IDebugProgramCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b73deab28f08ed9268033e941b64b753f64adf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 535d54e0c7cdd4b175cd76c9d1fbe9ce240b5ccf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891022"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151625"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 이 인터페이스는 프로그램을에 연결할 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramCreateEvent2 : IUnknown

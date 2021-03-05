@@ -1,4 +1,5 @@
 ---
+description: 이 디버그 이벤트의 특성을 가져옵니다.
 title: 'IDebugEvent2:: GetAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64f4b404938143e5b1531798b1cded7ac6218de6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7402c2b5a367a3a0a681a9a17ef89872a7b3e96
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152977"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 이 디버그 이벤트의 특성을 가져옵니다.
@@ -43,7 +44,7 @@ int GetAttribute(
 `pdwAttrib`\
 제한이 [Eventattributes](../../../extensibility/debugger/reference/eventattributes.md) 열거형의 플래그 조합입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

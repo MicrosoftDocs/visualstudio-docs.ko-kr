@@ -1,4 +1,5 @@
 ---
+description: 소스 문서에서 함수 위치를 검색 합니다.
 title: 'IDebugFunctionPosition2:: GetOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29f883af8f048a38320a49493257354ad3b60188
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a059fdf747e74867ca6ca63dd0c3f63877f7a76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929838"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151742"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 소스 문서에서 함수 위치를 검색 합니다.
@@ -43,7 +44,7 @@ int GetOffset(
 `pPosition`\
 [in, out] 문서에서 함수 위치로 채워지는 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

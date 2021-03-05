@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 필드에 대 한 정보를 표시할 정보를 가져옵니다.
 title: 'IDebugField:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21d80f222bdea8a8e17a9b74eefb7885cab0c289
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c681fef38377f0ce8e74b45dba065b5eae39462c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869910"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151937"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 이 메서드는 필드에 대 한 정보를 표시할 정보를 가져옵니다.
@@ -48,7 +49,7 @@ int GetInfo(
 `pFieldInfo`\
 제한이 제공 된 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 구조의 정보를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

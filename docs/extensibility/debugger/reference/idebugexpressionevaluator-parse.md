@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 식 문자열을 구문 분석 된 식으로 변환 합니다.
 title: IDebugExpressionEvaluator::P arse | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6a586c7e7cac1a4ef034b7941840db59d376180
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930293"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152496"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 이 메서드는 식 문자열을 구문 분석 된 식으로 변환 합니다.
@@ -68,7 +69,7 @@ int Parse(
 `ppParsedExpression`\
 제한이 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 개체의 구문 분석 된 식을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

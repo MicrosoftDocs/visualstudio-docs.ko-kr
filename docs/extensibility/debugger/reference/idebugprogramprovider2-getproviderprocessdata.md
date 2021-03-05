@@ -1,4 +1,5 @@
 ---
+description: 지정 된 프로세스에서 실행 중인 프로그램의 목록을 검색 합니다.
 title: 'IDebugProgramProvider2:: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ce5bee4f2401e3895570f16a6de5567b5979d98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b878a6731a9a7f2bf58bf55530d0b5f83cc978de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898288"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151560"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 지정 된 프로세스에서 실행 중인 프로그램의 목록을 검색 합니다.
@@ -70,7 +71,7 @@ int GetProviderProcessData(
 `pProcess`\
 제한이 요청 된 정보를 사용 하 여 채워지는 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

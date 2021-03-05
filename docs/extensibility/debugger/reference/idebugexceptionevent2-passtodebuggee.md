@@ -1,4 +1,5 @@
 ---
+description: 실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달할지 여부를 지정 합니다. 그렇지 않으면 예외를 삭제 해야 합니다.
 title: IDebugExceptionEvent2::P assToDebuggee | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fca977aba3657592088879cdad884f6e6325ffd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152860"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달할지 여부를 지정 합니다. 그렇지 않으면 예외를 삭제 해야 합니다.
@@ -43,7 +44,7 @@ int PassToDebuggee(
 `fPass`\
 진행 `TRUE`실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달 해야 하는 경우 0이 아닌 값이 반환 되 고, 예외를 삭제 해야 하는 경우에는 0 ( `FALSE` )입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

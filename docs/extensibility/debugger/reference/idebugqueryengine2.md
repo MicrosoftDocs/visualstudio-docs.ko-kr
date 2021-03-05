@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스를 통해 세션 디버그 관리자 (SDM)는 디버그 엔진 (DE)을 나타내는 인터페이스를 검색할 수 있습니다.
 title: IDebugQueryEngine2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151404"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 이 인터페이스를 통해 세션 디버그 관리자 (SDM)는 디버그 엔진 (DE)을 나타내는 인터페이스를 검색할 수 있습니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugQueryEngine2 : IUnknown
@@ -37,7 +38,7 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugQueryEngine2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|사용자 지정 디버그 엔진 (DE) 인터페이스를 가져옵니다.|
 
