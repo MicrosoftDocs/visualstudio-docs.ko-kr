@@ -1,4 +1,5 @@
 ---
+description: 디버그 속성에 대 한 정보를 포함 합니다.
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899096"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170590"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 디버그 속성에 대 한 정보를 포함 합니다.
@@ -51,7 +52,7 @@ public struct DEBUG_PROPERTY_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwValidFields`\
 채울 필드를 지정 하는 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 열거형의 플래그 조합입니다.
 

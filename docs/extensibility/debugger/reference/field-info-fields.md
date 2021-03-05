@@ -1,4 +1,5 @@
 ---
+description: IDebugField 개체에 대해 검색할 정보를 지정 합니다.
 title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 024c12d5112398e055141a8db4995f2801ca5401
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936914"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170291"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 대해 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_INFO_FIELDS { 

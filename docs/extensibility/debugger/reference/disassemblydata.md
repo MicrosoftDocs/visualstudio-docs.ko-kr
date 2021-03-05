@@ -1,4 +1,5 @@
 ---
+description: IDE (통합 개발 환경)에서 표시할 하나의 디스어셈블리 명령을 설명 합니다.
 title: DisassemblyData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6053647d43563e7369793982c72683002ae0df5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953840"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170460"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 IDE (통합 개발 환경)에서 표시할 하나의 디스어셈블리 명령을 설명 합니다.
@@ -63,7 +64,7 @@ public struct DisassemblyData {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwFields`\
 입력 하는 필드를 지정 하는 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 상수입니다.
 
@@ -113,7 +114,7 @@ public struct DisassemblyData {
 
 필드에 `dwFlags` `DF_DOCUMENT_CHECKSUM` 플래그가 설정 되어 있으면 추가 체크섬 정보는 필드가 가리키는 문자열 뒤에 옵니다 `bstrDocumentUrl` . 특히 null 문자열 종결자 뒤에는 체크섬 알고리즘을 식별 하는 GUID와 체크섬의 바이트 수를 나타내는 4 바이트 값이 차례로 오고 그 뒤에 체크섬 바이트가 나옵니다. 에서이 필드를 인코드 및 디코딩하는 방법에 대 한이 항목의 예제를 참조 하세요 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 `bstrDocumentUrl`플래그가 설정 된 경우이 필드에는 문자열이 아닌 추가 정보가 포함 될 수 있습니다 `DF_DOCUMENT_CHECKSUM` . 이 인코딩된 문자열을 만들고 읽는 프로세스는에서 간단 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] 합니다. 그러나에서는 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 다른 문제가 있습니다. 관심이 있는 사용자를 위해 다음 예제에서는에서 인코딩된 문자열을 만드는 한 가지 방법과 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] 에서 인코딩된 문자열을 디코딩하는 한 가지 방법을 보여 줍니다 [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] .
 
 ```csharp

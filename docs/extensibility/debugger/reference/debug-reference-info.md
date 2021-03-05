@@ -1,4 +1,5 @@
 ---
+description: 참조를 설명 합니다.
 title: DEBUG_REFERENCE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e210875f88a7c8246eff3bfcf0721d6866602b7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939177"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170538"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 참조를 설명 합니다.
@@ -51,7 +52,7 @@ public struct DEBUG_REFERENCE_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwFields`\
 입력 하는 필드를 지정 하는 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 열거형의 플래그 조합입니다.
 

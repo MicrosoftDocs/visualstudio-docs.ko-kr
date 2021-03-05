@@ -1,4 +1,5 @@
 ---
+description: 디버그 속성 개체에 대해 검색할 정보를 지정 합니다.
 title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 745ecf4efa661c31e230a25d23cfd66cb5d5bb51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63467e93b80648e6a00728dc66971b7c9b3c9b24
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170525"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 디버그 속성 개체에 대해 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DEBUGPROP_INFO_FLAGS {

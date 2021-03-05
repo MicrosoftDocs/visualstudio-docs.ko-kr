@@ -1,4 +1,5 @@
 ---
+description: 두 문서 컨텍스트를 비교 하는 조건을 지정 합니다.
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db66748a1665d5ab965f20295258efd65ec43d38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64e2e8ec365daa84cbd1d4f7e3e9bdc43391d5e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170434"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 두 문서 컨텍스트를 비교 하는 조건을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DOCCONTEXT_COMPARE {
