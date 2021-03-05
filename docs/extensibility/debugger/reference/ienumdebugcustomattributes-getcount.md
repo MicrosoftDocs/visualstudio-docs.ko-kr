@@ -1,4 +1,5 @@
 ---
+description: 열거자에 있는 사용자 지정 특성의 수를 가져옵니다.
 title: 'IEnumDebugCustomAttributes:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1323af9d9d673e3d452882adff95b74213d7ad57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e89525982cf912238038a3c6bf2616407d7af803
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929278"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226945"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 열거자에 있는 사용자 지정 특성의 수를 가져옵니다.
@@ -43,7 +44,7 @@ int GetCount(
 `pcelt`\
 제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

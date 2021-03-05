@@ -1,4 +1,5 @@
 ---
+description: 지정 된 수의 프레임 정보 요소를 건너뜁니다.
 title: 'IEnumDebugFrameInfo2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1771648cf59cf5ba6e469e152e5558a91da46349
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991169ce1e830dfafca348b3e38737b489a1258c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932817"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226412"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 지정 된 수의 요소를 건너뜁니다.
@@ -43,7 +44,7 @@ int Skip(
 `celt`\
 진행 건너뛸 요소 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE` `celt` 가 나머지 요소 수보다 크면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

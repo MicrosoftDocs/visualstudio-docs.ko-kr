@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 디버그 세션과 관련 된 코드 컨텍스트 또는 특정 프로그램 또는 문서를 열거 합니다.
 title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82e3583333c784fffa55abf2e86f5a7335aeb7c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226932"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 이 인터페이스는 디버그 세션과 관련 된 코드 컨텍스트 또는 특정 프로그램 또는 문서를 열거 합니다.
@@ -39,7 +40,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugCodeContexts2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|열거형 시퀀스에서 지정 된 수의 코드 컨텍스트를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|열거형 시퀀스에서 지정 된 수의 코드 컨텍스트를 건너뜁니다.|

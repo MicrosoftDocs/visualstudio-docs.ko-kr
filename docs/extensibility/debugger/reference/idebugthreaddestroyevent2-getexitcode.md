@@ -1,4 +1,5 @@
 ---
+description: 스레드의 종료 코드를 가져옵니다.
 title: 'IDebugThreadDestroyEvent2:: GetExitCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 567e7fdedbf408ce9cac137f2b240626fd16d10c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 693f44ededcaa081d72ef44d60d31473f0b70e1d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940230"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227374"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 스레드의 종료 코드를 가져옵니다.
@@ -43,7 +44,7 @@ int GetExitCode (
 `pdwExit`\
 제한이 스레드의 종료 코드를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

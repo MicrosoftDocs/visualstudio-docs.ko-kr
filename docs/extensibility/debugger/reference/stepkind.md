@@ -1,4 +1,5 @@
 ---
+description: 단계별 실행 단계 종류를 지정 합니다.
 title: STKIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c87a2c221149f8478a083d1efea6e9edfb542d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9cb230eac9e8851437614a590615ad2402923f6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965475"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225294"
 ---
 # <a name="stepkind"></a>STEPKIND
 단계별 실행 단계 종류를 지정 합니다.

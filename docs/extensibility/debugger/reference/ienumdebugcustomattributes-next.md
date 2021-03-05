@@ -1,4 +1,5 @@
 ---
+description: 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 검색 합니다.
 title: 'IEnumDebugCustomAttributes:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2eefa444d1832e4f66aac161636177994bd4a51f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79c8b6cf86413f1642d22d79e9c072794353499b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929264"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226880"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 검색 합니다.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

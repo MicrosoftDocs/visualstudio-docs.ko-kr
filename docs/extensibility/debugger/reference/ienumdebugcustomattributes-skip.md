@@ -1,4 +1,5 @@
 ---
+description: 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 건너뜁니다.
 title: 'IEnumDebugCustomAttributes:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93b2d9176af4fe3a5a91e76e7f8890b8a4e3d79f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c57ca47b8d5100ff9c9bf7451e07ad0924775475
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226802"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 건너뜁니다.
@@ -43,7 +44,7 @@ int Skip(
 `celt`\
 진행 건너뛸 요소 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE` `celt` 가 나머지 요소 수보다 크면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

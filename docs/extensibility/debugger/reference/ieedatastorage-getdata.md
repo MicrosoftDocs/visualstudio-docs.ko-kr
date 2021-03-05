@@ -1,4 +1,5 @@
 ---
+description: 개체에서 지정 된 바이트 수를 검색 합니다.
 title: 'IEEDataStorage:: GetData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0ff27438ad4a7d0106c1b452f55966dda3f7e07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f28533ad07bc7626f1576ef4422d6d20725b9450
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227309"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 개체에서 지정 된 바이트 수를 검색 합니다.
@@ -53,7 +54,7 @@ int GetData(
 `data`\
 [in, out] 요청한 데이터로 채워질 배열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

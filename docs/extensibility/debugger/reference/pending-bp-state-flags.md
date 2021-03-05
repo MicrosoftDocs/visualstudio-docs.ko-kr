@@ -1,4 +1,5 @@
 ---
+description: 보류 중인 중단점 상태 플래그를 지정 합니다.
 title: PENDING_BP_STATE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f603b7a1660f9913ce10b2ecf07adb53f9279d48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a6da9349a033478ab024d719ef796e7bf71c72a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225463"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 보류 중인 중단점 상태 플래그를 지정 합니다.

@@ -1,4 +1,5 @@
 ---
+description: 기본 형식을 나타내는 개체를 만듭니다.
 title: 'IDebugTypeFieldBuilder:: CreatePrimitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1f7601d2533a52fdee709413a97d203a6556cb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c480b32d56708569d3ac05e309e8bd06e17db4e5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965722"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227361"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 기본 형식을 나타내는 개체를 만듭니다.
@@ -47,7 +48,7 @@ int CreatePrimitive (
 `pTypeField`\
 제한이 새 형식에 대 한 IDebugField 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

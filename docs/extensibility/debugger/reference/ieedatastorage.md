@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 바이트 배열을 나타냅니다.
 title: IEEDataStorage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227335"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 이 인터페이스는 바이트 배열을 나타냅니다.
@@ -37,7 +38,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  `IEEDataStorage`인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|제공 된 버퍼에 지정 된 수의 데이터 바이트를 검색 합니다.|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|사용 가능한 데이터 바이트 수를 검색 합니다.|

@@ -1,4 +1,5 @@
 ---
+description: 모듈 열거에서 다음 요소 집합을 반환 합니다.
 title: 'IEnumDebugModules2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 725095225c8bb04e309b23a44bd6067c4a3ef99d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7c1d627579faea8bb4871feb310db79d6e5eea0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932758"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226399"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목
