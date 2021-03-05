@@ -1,4 +1,5 @@
 ---
+description: 문서에서 텍스트가 대체 되었음을 디버그 패키지에 알립니다.
 title: 'IDebugDocumentTextEvents2:: onReplaceText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 407bdffbe3a9fd60699692e2c2977159a3724bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14b90f0ca28447e9e987767026165b0ff615f88c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919961"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167271"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 문서에서 텍스트가 대체 되었음을 디버그 패키지에 알립니다.
@@ -48,7 +49,7 @@ int onReplaceText(
 `dwNumToReplace`\
 진행 대체 된 텍스트의 문자 수를 지정 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

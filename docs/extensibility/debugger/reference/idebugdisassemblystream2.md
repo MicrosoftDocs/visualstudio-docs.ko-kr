@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 명령 스트림을 나타냅니다.
 title: IDebugDisassemblyStream2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944648"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166569"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 이 인터페이스는 명령 스트림을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDisassemblyStream2 : IUnknown
@@ -37,7 +38,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDisassemblyStream2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.|
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|지정 된 위치에 상대적인 지정 된 수의 명령을 디스어셈블리 스트림에서 읽기 포인터를 이동 합니다.|

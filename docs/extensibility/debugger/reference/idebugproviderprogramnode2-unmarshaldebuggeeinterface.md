@@ -1,4 +1,5 @@
 ---
+description: 프로세스 경계를 넘어 지정 된 인터페이스를 가져옵니다.
 title: 'IDebugProviderProgramNode2:: UnmarshalDebuggeeInterface | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1449141885a51b3557f8c626b309fcc64c7fb268
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f51484ae1e9acbb9b94fe546f8157145673e22f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167869"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 프로세스 경계를 넘어 지정 된 인터페이스를 가져옵니다.
@@ -48,7 +49,7 @@ int UnmarshalDebuggeeInterface(
 `ppvObject`\
 제한이 원하는 인터페이스를 구현 하는 개체를 반환 합니다. [C + +] 원하는 인터페이스 형식으로 직접 캐스팅할 수 있습니다. [C #] 메서드를 사용 <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> 하 여 원하는 인터페이스를 가져옵니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

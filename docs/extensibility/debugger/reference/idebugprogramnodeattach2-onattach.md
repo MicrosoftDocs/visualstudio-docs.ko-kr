@@ -1,4 +1,5 @@
 ---
+description: 연결 된 프로그램에 연결 하거나 연결 방법에 대 한 연결 프로세스를 지연 합니다.
 title: 'IDebugProgramNodeAttach2:: OnAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f61a0629ede07b5b6a4e884157dacaea244c2344
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d1fdb6f0e2fe41555dbbc3b1bcfd16a1a2b4240
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167050"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 연결 된 프로그램에 연결 하거나 [연결 방법에](../../../extensibility/debugger/reference/idebugengine2-attach.md) 대 한 연결 프로세스를 지연 합니다.
@@ -43,7 +44,7 @@ int OnAttach(
 `guidProgramId`\
 [in] `GUID` 연결 된 프로그램에 할당 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE` [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) 메서드를 호출 하지 않아야 하는 경우를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

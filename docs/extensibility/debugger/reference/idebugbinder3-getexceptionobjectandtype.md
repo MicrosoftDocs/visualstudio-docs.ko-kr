@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 개체와 연결 된 예외를 검색 합니다 (있는 경우).
 title: 'IDebugBinder3:: GetExceptionObjectAndType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee86b12b16cc76b8e2c06ede5ec0110322b515ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ec511cc6145c890c4f62a76563c51aa7c667977
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891230"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167635"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 이 메서드는 개체와 연결 된 예외를 검색 합니다 (있는 경우).
@@ -48,7 +49,7 @@ int GetExceptionObjectAndType(
 `ppField`\
 제한이 예외를 발생 시킬 수 있는 특정 필드를 나타내는 개체를 반환 합니다 .이 개체는 null 값일 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]

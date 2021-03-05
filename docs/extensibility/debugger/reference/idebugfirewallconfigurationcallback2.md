@@ -1,4 +1,5 @@
 ---
+description: DCOM을 사용 하 여 방화벽이 원격 디버깅을 차단 하지 않는지 확인 하기 위해 Visual Studio UI에 요청 하는 디버그 엔진을 사용 하도록 설정 합니다.
 title: IDebugFirewallConfigurationCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f91ebbaa08d6e7d3de3b1a0c12ee7a774e0d16c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf8659a1bc4af55a9809a3c85548b971a7193b26
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166530"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
 DCOM을 사용 하 여 방화벽이 원격 디버깅을 차단 하지 않도록 UI에 요청 하는 디버그 엔진을 사용 하도록 설정 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugFirewallConfigurationCallback2 : IUnknown
@@ -32,7 +33,7 @@ IDebugFirewallConfigurationCallback2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugFirewallConfigurationCallback2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|방화벽이 원격 디버깅을 차단 하지 않도록 요청 합니다.|
 

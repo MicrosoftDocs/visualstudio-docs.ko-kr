@@ -1,4 +1,5 @@
 ---
+description: 바인딩된 중단점의 적중 횟수를 설정 합니다.
 title: 'IDebugBoundBreakpoint2:: SetHitCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7dbba43563a87a6c434d24014ce773375cd705c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930475"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167518"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 바인딩된 중단점의 적중 횟수를 설정 합니다.
@@ -44,7 +45,7 @@ int SetHitCount(
 `dwHitCount`\
 진행 설정할 적중 횟수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명

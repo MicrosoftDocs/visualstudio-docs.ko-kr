@@ -1,4 +1,5 @@
 ---
+description: 이 속성의 값을 지정 된 참조의 값으로 설정 합니다.
 title: 'IDebugProperty2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2ed6cbf32d807734714f25453e33fe8bdd7fac0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5b9529a4e4cd56a2b354eaa7f847db4d9d82be1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961796"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166751"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 이 속성의 값을 지정 된 참조의 값으로 설정 합니다.
@@ -58,10 +59,10 @@ int SetValueAsReference(
 `dwTimeout`\
 진행 값을 설정 하는 데 소요 되는 시간 (밀리초)입니다. 일반적인 값은 `INFINITE` 입니다. 이는 가능한 평가에서 수행할 수 있는 시간에 영향을 줍니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 일반적으로 다음 중 하나를 반환 합니다.
 
-|오류|Description|
+|Error|설명|
 |-----------|-----------------|
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|참조에서 값을 설정 하는 것은 지원 되지 않습니다.|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|이 속성은 메서드를 참조 하므로 값을 설정할 수 없습니다.|

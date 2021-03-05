@@ -1,4 +1,5 @@
 ---
+description: 속성 값의 크기 (바이트)를 가져옵니다.
 title: 'IDebugProperty2:: GetSize | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af31a88859f2afba735e0696124076eb82068404
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd6342efd1d9bcb2d2ac063438ee741df3c61325
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850909"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166816"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 속성 값의 크기 (바이트)를 가져옵니다.
@@ -43,7 +44,7 @@ int GetSize (
 `pdwSize`\
 제한이 속성 값의 크기 (바이트)를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `S_GETSIZE_NO_SIZE`속성에 크기가 없으면를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

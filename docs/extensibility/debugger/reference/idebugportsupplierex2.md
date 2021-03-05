@@ -1,4 +1,5 @@
 ---
+description: 는 코어 서버를 선택 하 고 상호 작용 하는 포트 공급자에 대 한 지원을 제공 합니다.
 title: IDebugPortSupplierEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd166280ab75b6cb560d6936342d8c3905b87ade
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167115"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 는 코어 서버를 선택 하 고 상호 작용 하는 포트 공급자에 대 한 지원을 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierEx2 : IUnknown
@@ -32,7 +33,7 @@ IDebugPortSupplierEx2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는 **IDebugPortSupplierEx2** 의 메서드를 보여 줍니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|포트 공급자에 대 한 핵심 서버를 설정 합니다.|
 

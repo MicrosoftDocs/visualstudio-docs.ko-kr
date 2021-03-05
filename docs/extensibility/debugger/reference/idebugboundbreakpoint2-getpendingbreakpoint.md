@@ -1,4 +1,5 @@
 ---
+description: 지정 된 바인딩된 중단점이 만들어진 보류 중인 중단점을 가져옵니다.
 title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18b6ab7f9c520511d2abe57e3864e71bc7534b4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167583"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 지정 된 바인딩된 중단점이 만들어진 보류 중인 중단점을 가져옵니다.
@@ -44,13 +45,13 @@ int GetPendingBreakpoint(
 `ppPendingBreakpoint`\
 제한이 이 바인딩된 중단점을 만드는 데 사용 된 보류 중인 중단점을 나타내는 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 보류 중인 중단점은 하나 또는 여러 프로그램에 적용 될 수 있는 코드에 중단점을 바인딩하는 데 필요한 모든 정보 컬렉션으로 간주할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CBoundBreakpoint` [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```

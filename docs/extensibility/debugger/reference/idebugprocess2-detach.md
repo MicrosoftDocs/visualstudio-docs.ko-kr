@@ -1,4 +1,5 @@
 ---
+description: 프로세스의 모든 프로그램을 분리 하 여이 프로세스에서 디버거를 분리 합니다.
 title: IDebugProcess2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5775ee9ffc3fa3c4151df999b64ba1160da6f7c3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166283"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 프로세스의 모든 프로그램을 분리 하 여이 프로세스에서 디버거를 분리 합니다.

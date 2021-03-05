@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 세션이 더 이상 프로세스를 디버깅 하 고 있지 않음을 프로세스에 알립니다.
 title: IDebugProcessEx2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62ca404442d6bf6080972f03c3e2fd0da2621e20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3140da647b46a1cbc3b60691e820238c2c6c83eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954893"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166257"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 이 메서드는 세션이 더 이상 프로세스를 디버깅 하 고 있지 않음을 프로세스에 알립니다.
@@ -43,7 +44,7 @@ int Detach(
 `pSession`\
 진행 이 프로세스를 분리할 세션을 고유 하 게 식별 하는 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

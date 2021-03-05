@@ -1,4 +1,5 @@
 ---
+description: IDebugProcessSecurity는 프로세스에 연결 하는 것이 안전 하지 않은 사용자에 게 경고 하기 위해 포트 공급자에 의해 구현 됩니다.
 title: IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,17 +11,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c6807ff64d8acf44551fa12fcb79199d3817373
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5e2ca72cc3d9c1d204c6fb1f90ccc9b03060cff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933026"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166101"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` 는 프로세스에 연결 하는 것이 안전 하지 않은 사용자에 게 경고 하기 위해 포트 공급자에 의해 구현 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessSecurity : IUnknown
@@ -29,7 +30,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProcessSecurity` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|포트 공급자에서 사용자 이름을 가져옵니다.|
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|디버깅 프로세스에 연결 하는 것은 안전 하지 않은 사용자에 게 경고 합니다.|

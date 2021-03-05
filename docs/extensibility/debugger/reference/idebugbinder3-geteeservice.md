@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 요청 된 서비스를 반환 합니다.
 title: 'IDebugBinder3:: GetEEService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ecd439ba1af40a54512c3ef15efb4728c8c54a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167674"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 이 메서드는 요청 된 서비스를 반환 합니다.
@@ -58,7 +59,7 @@ Int GetEEService(
 `ppService`\
 제한이 요청 된 서비스에 대 한 인터페이스입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 메서드의 전역 컨테이너를 가져옵니다.
 title: 'IDebugMethodField:: GetGlobalContainer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 197490cde12e0c7dd9cee14d11c3ec2f0b165d86
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb20551d39f3e876a836ac42906ad9c50e3c6419
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936875"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166296"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 메서드의 전역 컨테이너를 가져옵니다.
@@ -43,7 +44,7 @@ int GetGlobalContainer(
 `ppClass`\
 제한이 이 메서드가 정의 된 모듈을 나타내는 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

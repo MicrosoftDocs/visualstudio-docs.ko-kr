@@ -1,4 +1,5 @@
 ---
+description: 사용자 지정 디버그 엔진 (DE) 인터페이스를 가져옵니다.
 title: 'IDebugQueryEngine2:: GetEngineInterface | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbf727de01c8cbf34d645aff4e0a64aeb476ebbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909792"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167843"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 사용자 지정 디버그 엔진 (DE) 인터페이스를 가져옵니다.
@@ -43,7 +44,7 @@ int GetEngineInterface(
 `ppUnk`\
 제한이 De `IUnknown` (디버그 엔진)를 나타내는 개체를 반환 하며, de와 연결 된 다른 유효한 인터페이스 (예: [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 또는 [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))에 대해 쿼리할 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

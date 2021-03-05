@@ -1,4 +1,5 @@
 ---
+description: 이 속성과 연결 된 문자열을 검색 하 여 사용자가 제공 하는 버퍼에 저장 합니다.
 title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8b188b386dea7279530e186073847e26915af63d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3b220fa02809015d1fa699c5e9eb5edac8cf2f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897284"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166686"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 이 속성과 연결 된 문자열을 검색 하 여 사용자가 제공 하는 버퍼에 저장 합니다.
@@ -55,7 +56,7 @@ int GetStringChars(
 `pceltFetched`\
 제한이 실제로 버퍼에 저장 된 문자 수가 반환 됩니다. `NULL`C + +에 있을 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

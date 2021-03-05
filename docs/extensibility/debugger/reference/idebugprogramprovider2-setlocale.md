@@ -1,4 +1,5 @@
 ---
+description: 로캘별 리소스에 사용할 로캘을 설정 합니다.
 title: 'IDebugProgramProvider2:: SetLocale | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a298ac5e99176294be8afe9dbba1f00bdea0a82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f23a6cc5b2724e925efcb9b7f4d6f272fc808121
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167011"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 로캘별 리소스에 사용할 로캘을 설정 합니다.
@@ -43,7 +44,7 @@ int SetLocale(
 `wLangID`\
 진행 설정할 언어 ID입니다. 예를 들어 영어의 경우 1033입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

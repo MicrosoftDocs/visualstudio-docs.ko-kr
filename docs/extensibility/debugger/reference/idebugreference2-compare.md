@@ -1,4 +1,5 @@
 ---
+description: 한 참조를 다른 참조와 비교 합니다.
 title: 'IDebugReference2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cebc34bdd1515ad632a0165fcdc900999b383fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef006cba574e0cc5f51d2ec45eb6187b1076543a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909742"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166009"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
-한 참조를 다른 참조와 비교 합니다. 다음에 사용하도록 예약됩니다.
+한 참조를 다른 참조와 비교 합니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,7 +49,7 @@ int Compare (
 `pReference`\
 진행 비교할 참조를 나타내는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목

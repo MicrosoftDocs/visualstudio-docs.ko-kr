@@ -1,4 +1,5 @@
 ---
+description: 이 바인딩된 중단점과 연결 된 패스 수를 설정 하거나 변경 합니다.
 title: 'IDebugBoundBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f02d74b1c826b9e9ef7fa7406ca9a61d19b7311
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccefd1e3b120ac52801a1163ea8bda814626a0b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951305"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167492"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 이 바인딩된 중단점과 연결 된 패스 수를 설정 하거나 변경 합니다.
@@ -44,7 +45,7 @@ int SetPassCount(
 `bpPassCount`\
 진행 패스 수를 지정 하는 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명

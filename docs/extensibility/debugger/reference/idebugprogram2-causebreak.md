@@ -1,4 +1,5 @@
 ---
+description: 프로그램에서 다음에 스레드 중 하나를 실행 하려고 할 때 프로그램 실행을 중지 하도록 요청 합니다.
 title: 'IDebugProgram2:: CauseBreak | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3593dd8d139bbb23cbb8128378399642bee03fdc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef10a714b6e65b40edb83cb0547ae1a28720d328
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897334"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166036"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 프로그램에서 다음에 스레드 중 하나를 실행 하려고 할 때 프로그램 실행을 중지 하도록 요청 합니다.

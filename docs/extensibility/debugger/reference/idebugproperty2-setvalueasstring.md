@@ -1,4 +1,5 @@
 ---
+description: 지정 된 문자열에서 속성 값을 설정 합니다.
 title: 'IDebugProperty2:: SetValueAsString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 812bb7807a8b739d09cb15c6f03e58732fde20a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b86de71cd6df3e028697518de8c6faccad7e2336
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166725"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 지정 된 문자열에서 속성 값을 설정 합니다.
@@ -53,10 +54,10 @@ int SetValueAsString (
 `dwTimeout`\
 진행 이 메서드에서 반환 될 때까지 대기할 최대 시간 (밀리초)을 지정 합니다. `INFINITE`무기한 대기 하려면를 사용 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|문자열을 속성 값으로 변환할 수 없거나 속성 값을 설정할 수 없는 경우|
 |`E_SETVALUE_VALUE_IS_READONLY`|속성이 읽기 전용입니다.|

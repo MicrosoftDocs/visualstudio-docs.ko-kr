@@ -1,4 +1,5 @@
 ---
+description: 프로그램이 차지 하는 메모리 바이트를 검색 합니다.
 title: 'IDebugProgram2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 279333dc85a225a679efd205805ccee282b11260
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e63d25807e6a434066c7fc3bb860e9657faadf15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906215"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165998"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 프로그램이 차지 하는 메모리 바이트를 검색 합니다.
@@ -43,7 +44,7 @@ int GetMemoryBytes(
 `ppMemoryBytes`\
 제한이 프로그램의 메모리 바이트를 나타내는 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

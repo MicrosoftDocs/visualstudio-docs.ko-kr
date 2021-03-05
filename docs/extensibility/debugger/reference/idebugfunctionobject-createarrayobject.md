@@ -1,4 +1,5 @@
 ---
+description: 배열 개체를 만듭니다.
 title: 'IDebugFunctionObject:: CreateArrayObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aee0617364321e5a18f0ea83ef7f19f1388209df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930005"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166491"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 배열 개체를 만듭니다. 이 배열에는 기본 또는 개체 인스턴스 값이 포함 될 수 있습니다.
@@ -68,7 +69,7 @@ int CreateArrayObject(
 `ppObject`\
 제한이 새로 만든 배열을 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 반환 합니다. 실제로 [Idebugarrayobject](../../../extensibility/debugger/reference/idebugarrayobject.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

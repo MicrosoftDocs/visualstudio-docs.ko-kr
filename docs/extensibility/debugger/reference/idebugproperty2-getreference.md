@@ -1,4 +1,5 @@
 ---
+description: 속성 값에 대 한 참조를 반환 합니다.
 title: 'IDebugProperty2:: GetReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 270a8cc755318578f680e4266ca01e35dee20bb9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c103e8826266ddbaaa5b96f4a9aa32067893e45f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850896"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166789"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 속성 값에 대 한 참조를 반환 합니다.
@@ -43,7 +44,7 @@ int GetReference(
 `ppRererence`\
 제한이 속성 값에 대 한 참조를 나타내는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드 (일반적으로 또는)가 반환 됩니다 `E_NOTIMPL` `E_GETREFERENCE_NO_REFERENCE` .
 
 ## <a name="see-also"></a>참고 항목

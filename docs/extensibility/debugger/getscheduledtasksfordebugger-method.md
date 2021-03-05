@@ -1,4 +1,5 @@
 ---
+description: 모든 예약 된 작업의 배열을 검색 합니다.
 title: GetScheduledTasksForDebugger 메서드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 318e535d86dcd51f9c9bbfcfae8e228c8d7c20b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd70db6f6fd9eb1558a21e50f3d2f63137fe8e1d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921349"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167817"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 메서드
 모든 예약 된 작업의 배열을 검색 합니다.

@@ -1,4 +1,5 @@
 ---
+description: 문서의 클래스 식별자를 가져옵니다.
 title: 'IDebugDocument2:: GetDocumentClassID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c635afa758a4f025305b88f1e11c48737a146a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36a95914f470d0ce095db0c0db8d1397b02be3cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944604"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166556"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 문서의 클래스 식별자를 가져옵니다.
@@ -42,7 +43,7 @@ int GetDocumentClassID(
 ## <a name="parameters"></a>매개 변수
 `pclsid` 제한이 문서의 클래스 ID 인 GUID를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

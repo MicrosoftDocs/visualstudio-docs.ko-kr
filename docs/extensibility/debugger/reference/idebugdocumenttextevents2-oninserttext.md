@@ -1,4 +1,5 @@
 ---
+description: 텍스트를 문서에 삽입 했음을 디버그 패키지에 알립니다.
 title: 'IDebugDocumentTextEvents2:: onInsertText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6028a2859da79812440339adb3efbce6dd710b72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 185320b887cec6f0616e16bea96e5f701b660434
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923068"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167336"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 텍스트를 문서에 삽입 했음을 디버그 패키지에 알립니다.
@@ -48,7 +49,7 @@ int onInsert(
 `dwNumToInsert`\
 진행 삽입 된 텍스트의 문자 수를 지정 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

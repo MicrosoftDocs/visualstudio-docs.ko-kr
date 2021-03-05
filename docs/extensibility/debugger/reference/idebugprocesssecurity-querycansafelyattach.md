@@ -1,4 +1,5 @@
 ---
+description: 이 방법을 사용 하면 사용자가 안전 하지 않은 프로세스에 연결 하기 전에 포트 공급자가 경고를 표시할 수 있습니다.
 title: 'IDebugProcessSecurity:: QueryCanSafelyAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa3f2c02610b5fbe99335ccea6d7c566a0fe58df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6a586983d64e8be27b15a0514234d1a321e943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166166"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 이 방법을 사용 하면 사용자가 안전 하지 않은 프로세스에 연결 하기 전에 포트 공급자가 경고를 표시할 수 있습니다.

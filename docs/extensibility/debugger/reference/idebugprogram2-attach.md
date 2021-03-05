@@ -1,4 +1,5 @@
 ---
+description: 프로그램에 연결 합니다.
 title: 'IDebugProgram2:: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42aa8ff646a62f7314887df4b38c648e2d84b31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9b06d217f5edec0e913a6c07e57f6bee27f30ea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931450"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166062"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 프로그램에 연결 합니다.
@@ -43,10 +44,10 @@ int Attach(
 `pCallback`\
 진행 디버그 이벤트 알림에 사용할 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 가능한 몇 가지 오류 코드를 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|지정 된 프로그램이 디버거에 이미 연결 되어 있습니다.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|연결 절차를 수행 하는 동안 보안 위반이 발생 했습니다.|

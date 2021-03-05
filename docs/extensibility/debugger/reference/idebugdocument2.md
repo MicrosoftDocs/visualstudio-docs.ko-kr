@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 소스 문서를 나타냅니다.
 title: IDebugDocument2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96bf5821cb463b8a99f7376cb99b81ab8cae2206
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884873"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167349"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 이 인터페이스는 소스 문서를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocument2 : IUnknown
@@ -37,7 +38,7 @@ IDebugDocument2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocument2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|여러 형식 중 하나로 문서 이름을 가져옵니다.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|문서의 클래스 식별자를 가져옵니다.|
