@@ -1,4 +1,5 @@
 ---
+description: 이 중단점을 설명 하는 중단점 확인을 가져옵니다.
 title: 'IDebugBoundBreakpoint2:: Get Pointresolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa5f5e9aabbf96bc0dffb13e99b404c906384324
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173727"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 이 중단점을 설명 하는 중단점 확인을 가져옵니다.
@@ -48,13 +49,13 @@ int GetBreakpointResolution(
 
 - 데이터 중단점이 바인딩된 데이터 위치입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_BP_DELETED`바인딩된 중단점 개체의 상태가 `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 열거의 일부)로 설정 되어 있으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 [Get간 Pointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 메서드를 호출 하 여 코드 또는 데이터에 대 한 중단점 확인이 있는지 확인 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CBoundBreakpoint` [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```

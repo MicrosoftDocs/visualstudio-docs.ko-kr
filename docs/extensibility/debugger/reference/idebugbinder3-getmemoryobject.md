@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 개체가 바인딩된 메모리를 나타내는 메모리 개체를 검색 합니다.
 title: 'IDebugBinder3:: GetMemoryObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3408237de91e822e2ea3cbd95fad40c859267c1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ca708c9a6fd80a7a04d8202a73f0bce99102ff1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916311"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173976"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 이 메서드는이 개체가 바인딩된 메모리를 나타내는 메모리 개체를 검색 합니다.
@@ -53,7 +54,7 @@ int GetMemoryObject(
 `ppObject`\
 제한이 이 개체가 바인딩되는 메모리를 나타내는 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

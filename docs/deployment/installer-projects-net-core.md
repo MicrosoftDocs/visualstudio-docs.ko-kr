@@ -1,4 +1,5 @@
 ---
+description: 응용 프로그램을 MSI로 패키징하는 것은 Visual Studio 설치 관리자 프로젝트 확장을 사용 하 여 수행 하는 경우가 많습니다.
 title: Visual Studio 설치 관리자 프로젝트 및 .NET Core 3.1
 titleSuffix: ''
 ms.date: 08/18/2020
@@ -12,12 +13,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 86680a2b961af9182691422e02b42c6529f45639
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5a78c1cf4f7b1562408e0a3fb598075f2c114fc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171242"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 설치 관리자 프로젝트 확장 및 .NET Core 3.1
 
@@ -36,7 +37,7 @@ ms.locfileid: "90852656"
 
 ### <a name="workflow-changes-for-net-core-31"></a>.NET Core 3.1에 대 한 워크플로 변경
 
-1. **기본 출력** 대신 **항목 게시** 를 선택 하 여 .net Core 3.1 프로젝트에 대 한 올바른 출력을 가져옵니다.  이 대화 상자를 표시 하려면 **Add**  >  프로젝트의 상황에 맞는 메뉴에서**프로젝트 출력** 추가 ...를 선택 합니다.
+1. **기본 출력** 대신 **항목 게시** 를 선택 하 여 .net Core 3.1 프로젝트에 대 한 올바른 출력을 가져옵니다.  이 대화 상자를 표시 하려면   >  프로젝트의 상황에 맞는 메뉴에서 **프로젝트 출력** 추가 ...를 선택 합니다.
 
     ![프로젝트 출력 그룹 추가 대화 상자의 게시 항목 출력 그룹](../deployment/media/installer-projects-net-core-publish-items-output.png "게시 항목 선택")
 
@@ -58,4 +59,4 @@ WPF/WinForms 응용 프로그램에 대해 .net **Core runtime** ... 옵션을 �
 ## <a name="see-also"></a>참고 항목
 
 - [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)
-- [응용 프로그램 배포 필수 구성 요소](../deployment/application-deployment-prerequisites.md)
+- [애플리케이션 배포 필수 조건](../deployment/application-deployment-prerequisites.md)

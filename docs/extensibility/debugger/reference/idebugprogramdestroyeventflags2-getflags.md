@@ -1,4 +1,5 @@
 ---
+description: 프로그램 소멸 플래그를 검색 합니다.
 title: 'IDebugProgramDestroyEventFlags2:: GetFlags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9454fbe515bca21b4d9bd0dc05016d69fdc30d28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be871d325cd63e70fb2857ee3f89f2cc854c89fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171843"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 프로그램 소멸 플래그를 검색 합니다.
@@ -42,7 +43,7 @@ public int GetFlags(
 `pdwFlags`\
 제한이 프로그램 소멸 플래그를 나타냅니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

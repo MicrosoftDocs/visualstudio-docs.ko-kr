@@ -1,4 +1,5 @@
 ---
+description: 이 제네릭 매개 변수와 연결 된 제약 조건을 검색 합니다.
 title: 'IDebugGenericParamField:: GetConstraints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b32fcb5beae3ca00324f2b2606b5eebae51af5fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51c3dcbeda334953ef09f8bcfbf1789450201a0c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869741"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172788"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 이 제네릭 매개 변수와 연결 된 제약 조건을 검색 합니다.
@@ -52,10 +53,10 @@ int GetConstraints(
 `pcConstraints`\
 [in, out] 배열의 제약 조건 수 `ppConstraints` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

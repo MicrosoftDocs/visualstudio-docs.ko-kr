@@ -1,4 +1,5 @@
 ---
+description: 이 제네릭 매개 변수의 이름을 검색 합니다.
 title: 'IDebugGenericParamField:: GetNameOfFormalParam | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94976f45ebb8d6d757507c2cf3b02dc909aa2729
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bf8997d8b7e8887f800e61499bd67ab7d18750c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838979"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172612"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 이 제네릭 매개 변수의 이름을 검색 합니다.
@@ -42,10 +43,10 @@ int GetNameOfFormalParam (
 `pbstrName`\
 제한이 이 제네릭 매개 변수의 이름입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

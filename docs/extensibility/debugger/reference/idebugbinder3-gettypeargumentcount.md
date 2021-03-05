@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 개체와 연결 된 인수 형식의 수를 반환 합니다.
 title: 'IDebugBinder3:: GetTypeArgumentCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79f134d48e61aeee536d584dda2b4c0a7254e0a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3118d7e0fc4f493013a9a328cda0682fcc0707aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840498"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174006"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 이 메서드는이 개체와 연결 된 인수 형식의 수를 반환 합니다.
@@ -43,7 +44,7 @@ int GetTypeArgumentCount(
 `uCount`\
 제한이 이 개체와 연결 된 인수 형식의 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

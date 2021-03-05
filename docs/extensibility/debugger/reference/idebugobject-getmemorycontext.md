@@ -1,4 +1,5 @@
 ---
+description: 개체의 값 주소를 나타내는 메모리 컨텍스트를 가져옵니다.
 title: 'IDebugObject:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2c7dbdace7c40ccba25cdce0306e6f0998489f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fabcee7bc0f4501f1440345b648fb93dab84d16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920787"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172114"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 개체의 값 주소를 나타내는 메모리 컨텍스트를 가져옵니다.
@@ -43,7 +44,7 @@ int GetMemoryContext(
 `pContext`\
 제한이 개체의 값 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

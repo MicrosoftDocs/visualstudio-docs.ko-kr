@@ -1,4 +1,5 @@
 ---
+description: 현재 코드 위치에서 중지할지 아니면 실행을 계속할지를 디버그 엔진에 알립니다 (DE).
 title: 'IDebugCanStopEvent2:: CanStop | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d3563fb46b9117ff7f142c5822c708deda34fda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b4d528ae1aa5a89853dc4873a9c07aa051a14c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173638"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 현재 코드 위치에서 중지할지 아니면 실행을 계속할지를 디버그 엔진에 알립니다 (DE).
@@ -43,7 +44,7 @@ int CanStop (
 `fCanStop`\
 진행 `TRUE`현재 코드 위치에서 DE를 중지 해야 하면 0이 아니고, 그렇지 않으면 0 () `FALSE` 입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

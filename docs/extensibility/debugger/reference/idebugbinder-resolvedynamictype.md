@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 정확한 형식의 변수를 반환 합니다.
 title: 'IDebugBinder:: ResolveDynamicType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a18b98b261d21cbf622d736bee3060703191770
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 548ba7ed326de2310cdc6689088f72c7a97ade7d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938979"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174036"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 이 메서드는 정확한 형식의 변수를 반환 합니다.
@@ -48,7 +49,7 @@ int ResolveDynamicType(
 `ppResolved`\
 제한이 변수의 형식에 대 한 특정 정보를 제공 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

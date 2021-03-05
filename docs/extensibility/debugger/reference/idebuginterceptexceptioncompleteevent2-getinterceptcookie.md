@@ -1,4 +1,5 @@
 ---
+description: 가로채기 예외 처리가 완료 되 면 호출 됩니다.
 title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e578c6d6bd197cbb121edf4cce554cedd91d47ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70fb92c20eab3700043a11f8544896bbbce3b7c6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172534"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 가로채기 예외 처리가 완료 되 면 호출 됩니다.
@@ -44,7 +45,7 @@ int GetInterceptCookie(
 `pqwCookie`\
 제한이 가로채는 예외와 연결 된 고유 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

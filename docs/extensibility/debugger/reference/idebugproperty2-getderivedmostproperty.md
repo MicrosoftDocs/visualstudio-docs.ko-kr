@@ -1,4 +1,5 @@
 ---
+description: 속성의 파생 속성 속성을 가져옵니다.
 title: 'IDebugProperty2:: GetDerivedMostProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6069091295371ea017547cdac6540e68ba2885e8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916036"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171531"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 속성의 파생 속성 속성을 가져옵니다.
@@ -43,7 +44,7 @@ int GetDerivedMostProperty (
 `ppDerivedMost`\
 제한이 가장 많이 파생 된 속성을 나타내는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `S_GETDERIVEDMOST_NO_DERIVED_MOST`검색할 파생 된 속성이 없으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 식 계산기 (EE)를 사용 하 여 디버거의 출력 창에 메시지를 표시 합니다.
 title: IDebugIDECallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838658"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172560"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -23,7 +24,7 @@ ms.locfileid: "99838658"
 
  식 계산기 (EE)를 사용 하 여 디버거의 출력 창에 메시지를 표시 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugIDECallback : IUnknown
@@ -38,7 +39,7 @@ IDebugIDECallback : IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|지정 된 메시지 문자열을 디버거의 출력 창에 보냅니다.|
 

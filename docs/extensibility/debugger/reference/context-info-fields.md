@@ -1,4 +1,5 @@
 ---
+description: 메모리 컨텍스트 관련 정보를 검색할 정보를 지정 합니다.
 title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 401195d5b03f87ba1ea5c66811570a720e53bdae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912966"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170772"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 메모리 컨텍스트 관련 정보를 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CONTEXT_INFO_FIELDS {

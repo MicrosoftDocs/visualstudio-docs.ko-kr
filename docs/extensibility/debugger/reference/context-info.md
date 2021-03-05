@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 메모리 컨텍스트 또는 코드 컨텍스트를 설명 합니다.
 title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a95808383d4d75810f17b4da121a11025b6f894
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912981"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170733"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 이 구조는 메모리 컨텍스트 또는 코드 컨텍스트를 설명 합니다.
@@ -51,7 +52,7 @@ public struct CONTEXT_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwFields`\
 채울 필드를 지정 하는 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 열거형의 플래그 조합입니다<strong>.</strong>
 

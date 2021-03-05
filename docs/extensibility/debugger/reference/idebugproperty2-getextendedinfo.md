@@ -1,4 +1,5 @@
 ---
+description: 속성에 대 한 확장 정보를 가져옵니다.
 title: 'IDebugProperty2:: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916059"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171501"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 속성에 대 한 확장 정보를 가져옵니다.
@@ -48,7 +49,7 @@ int GetExtendedInfo (
 `pExtendedInfo`\
 제한이 `VARIANT` 확장 속성 정보를 검색 하는 데 사용할 수 있는 (c + +) 또는 개체 (c #)를 반환 합니다. 예를 들어이 매개 변수는 `IUnknown` [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 인터페이스에 대해 쿼리할 수 있는 인터페이스를 반환할 수 있습니다. 자세한 내용은 설명을 참조하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `S_GETEXTENDEDINFO_NO_EXTENDEDINFO`검색할 확장 정보가 없으면를 반환 합니다.
 
 ## <a name="remarks"></a>설명
@@ -56,7 +57,7 @@ int GetExtendedInfo (
 
  다음 Guid는 일반적으로이 메서드에서 인식 됩니다. GUID 값은 모든 어셈블리에서 사용할 수 없기 때문에 c #에 대해 지정 됩니다. 내부 사용을 위해 Guid를 추가로 만들 수 있습니다.
 
-|이름|GUID|설명|
+|Name|GUID|설명|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|`IUnknown`문서에 대 한 인터페이스를 반환 합니다. 일반적으로이 인터페이스에서 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 인터페이스를 가져올 수 있습니다 `IUnknown` .|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|`IUnknown`문서 컨텍스트에 대 한 인터페이스를 반환 합니다. 일반적으로이 인터페이스에서 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스를 가져올 수 있습니다 `IUnknown` .|

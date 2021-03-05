@@ -1,4 +1,5 @@
 ---
+description: 이 제네릭 매개 변수의 형식 또는 메서드 소유자를 검색 합니다.
 title: 'IDebugGenericParamField:: GetOwner | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4914a61430d5f64b5e7b590749317c2cfe721b96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42198767ec7bb04cef6e65ecd08c9d46c010ffb2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838966"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172599"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 이 제네릭 매개 변수의 형식 또는 메서드 소유자를 검색 합니다.
@@ -41,10 +42,10 @@ int GetOwner(
 `ppOwner`\
 제한이 이 제네릭 매개 변수를 소유 하는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

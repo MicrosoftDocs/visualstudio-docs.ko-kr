@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 SDM (세션 디버그 관리자)에 대 한 포트를 제공 합니다.
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840368"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172041"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 이 인터페이스는 SDM (세션 디버그 관리자)에 대 한 포트를 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -32,7 +33,7 @@ IDebugPortSupplier2 : IUnknown
 사용자 지정 포트 공급자는이 인터페이스를 구현 하 여 포트 공급자를 나타냅니다.
 
 ## <a name="notes-for-callers"></a>호출자 참고 사항
-포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들어:
+포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -60,7 +61,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugPortSupplier2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|포트 공급자 이름을 가져옵니다.|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|포트 공급자 식별자를 가져옵니다.|

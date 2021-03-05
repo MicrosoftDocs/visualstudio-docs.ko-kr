@@ -1,4 +1,5 @@
 ---
+description: 덤프를 파일에 씁니다.
 title: 'IDebugProgram2:: WriteDump | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0e4c90034d19635993196a0cd00ffcb06f26433
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896151"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171929"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 덤프를 파일에 씁니다.
@@ -48,7 +49,7 @@ int WriteDump(
 `pszDumpUrl`\
 진행 덤프를 쓸 URL입니다. 일반적으로이 형식은 형식이 며 `file://c:\path\filename.ext` 유효한 모든 URL 일 수 있습니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

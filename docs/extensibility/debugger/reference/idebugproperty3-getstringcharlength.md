@@ -1,4 +1,5 @@
 ---
+description: 연결 된 속성의 문자열에 있는 문자 수를 반환 합니다.
 title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eaf0792b6e0c2311b7eeb01f12b01a485739c6c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171385"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 연결 된 속성의 문자열에 있는 문자 수를 반환 합니다.
@@ -41,17 +42,17 @@ int GetStringCharLength(
 
 ## <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |`pLen`|제한이 속성의 문자열에 있는 문자 수를 반환 합니다.|
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 일반적으로이 메서드는 [Getstringchars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 메서드에 대 한 호출에 대 한 버퍼를 할당 하는 prelude 사용 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **cproperty** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

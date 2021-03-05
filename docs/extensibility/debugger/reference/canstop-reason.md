@@ -1,4 +1,5 @@
 ---
+description: 실행의 특정 지점에 도달한 후 프로그램이 실행을 중지할 수 있는지 여부를 확인 하는 데 사용 됩니다.
 title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: def5bdbb6433f6a154eb6f84a88fb39004bc41ae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874358"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171000"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 실행의 특정 지점에 도달한 후 프로그램이 실행을 중지할 수 있는지 여부를 확인 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CANSTOP_REASON {

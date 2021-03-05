@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 디버그 엔진 (DEs) 및 세션 디버그 관리자에 사용할 수 있는 프로그램을 만듭니다.
 title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2904376efa1a6798cbba967b93ad1c93d395b919
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959560"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171591"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 이 메서드는 디버그 엔진 (DEs) 및 세션 디버그 관리자에 사용할 수 있는 프로그램을 만듭니다.
@@ -53,7 +54,7 @@ int PublishProgram(
 `pDebuggeeInterface`\
 [in] `IUnknown` 프로그램에 대 한 인터페이스입니다 .이 값은 프로그램을 고유 하 게 식별 하는 쿠키로 사용 됩니다 .이 값은 프로그램을 "게시 취소" 하는 데 사용 됩니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

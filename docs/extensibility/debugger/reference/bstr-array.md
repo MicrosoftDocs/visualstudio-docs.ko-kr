@@ -1,4 +1,5 @@
 ---
+description: 문자열의 배열을 설명 하는 구조체입니다.
 title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882214"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170974"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 문자열의 배열을 설명 하는 구조체입니다.
@@ -41,7 +42,7 @@ struct BSTR_ARRAY {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwCount`\
 배열에 있는 문자열의 수 `Members` 입니다.
 

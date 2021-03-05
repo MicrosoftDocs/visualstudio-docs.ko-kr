@@ -1,4 +1,5 @@
 ---
+description: 이 제네릭 매개 변수에 대 한 플래그를 검색 합니다.
 title: 'IDebugGenericParamField:: GetFlags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be9f842db6b322ffb9bdc76ebd2a954d849e5d65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f54c85e7838370b383d1b3f8df1e044df655407
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172668"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 이 제네릭 매개 변수에 대 한 플래그를 검색 합니다.
@@ -42,13 +43,13 @@ int GetFlags(
 `pdwFlags`\
 제한이 이 제네릭 매개 변수에 대 한 플래그를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 이러한 플래그는 다양 한 특수 제약 조건에 대 한 정보를 포함 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

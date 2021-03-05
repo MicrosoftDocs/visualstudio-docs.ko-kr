@@ -1,4 +1,5 @@
 ---
+description: 이 문서 컨텍스트를 지정 된 문서 컨텍스트의 배열과 비교 합니다.
 title: 'IDebugDocumentContext2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 959d909d0c777110905aff3b11c8c29d27d628dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a18a689a187e802b92485f092b10b7323d0f97c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880764"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173019"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 이 문서 컨텍스트를 지정 된 문서 컨텍스트의 배열과 비교 합니다.
@@ -58,7 +59,7 @@ int Compare(
 `pdwDocContext`\
 제한이 `rgpDocContextSet` 비교를 만족 하는 첫 번째 문서 컨텍스트의 배열로 인덱스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  `S_OK`일치 하는 항목이 있으면를 반환 합니다. 일치 하는 `S_FALSE` 항목이 없으면를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
 ## <a name="remarks"></a>설명

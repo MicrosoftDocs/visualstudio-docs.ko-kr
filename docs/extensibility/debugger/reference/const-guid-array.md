@@ -1,4 +1,5 @@
 ---
+description: GUID의 목록을 포함 하는 구조체입니다.
 title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900297"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170811"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 의 목록을 보유 하는 구조체입니다 `GUID` .
@@ -41,7 +42,7 @@ public struct CONST_GUID_ARRAY {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwCount`\
 `GUID`배열에 있는의 수 `Members` 입니다.
 

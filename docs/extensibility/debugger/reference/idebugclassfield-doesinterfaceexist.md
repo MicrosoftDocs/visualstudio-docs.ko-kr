@@ -1,4 +1,5 @@
 ---
+description: 특정 인터페이스가 클래스에 정의 되어 있는지 여부를 확인 합니다.
 title: IDebugClassField::D Oes인터페이스 존재 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7116b9e675605863805fb413340ea8b45ec608
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4248b653f5eea43a91d0c78a593431d53f5e68b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947114"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173470"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 특정 인터페이스가 클래스에 정의 되어 있는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ int DoesInterfaceExist(
 `pszInterfaceName`\
 진행 찾을 인터페이스 이름을 포함 하는 문자열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 하 고 인터페이스가 없으면 S_FALSE를 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

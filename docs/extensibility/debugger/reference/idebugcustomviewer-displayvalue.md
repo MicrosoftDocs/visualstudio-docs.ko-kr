@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 지정 된 값을 표시 하기 위해 호출 됩니다.
 title: IDebugCustomViewer::D isplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b754d9ebc7d8d8c1d21236faca5c5f331faa8e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 238bb4f9b453513f2fdcccb628eacdfc9ef4ae2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173483"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 이 메서드는 지정 된 값을 표시 하기 위해 호출 됩니다.
@@ -58,7 +59,7 @@ int DisplayValue(
 `pDebugProperty`\
 진행 표시할 값을 검색 하는 데 사용할 수 있는 인터페이스입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

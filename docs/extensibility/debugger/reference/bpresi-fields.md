@@ -1,4 +1,5 @@
 ---
+description: 중단점을 성공적으로 확인 하기 위해 검색할 정보를 지정 합니다.
 title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d82650fabf467d44b1bd5eba01599c5cb5e40bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91fa2a8b973149cb9365d817e14ac877bfc9f617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171033"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 중단점을 성공적으로 확인 하기 위해 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPRESI_FIELDS {

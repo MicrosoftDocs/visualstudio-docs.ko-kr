@@ -1,4 +1,5 @@
 ---
+description: 두 메모리 컨텍스트를 비교 하는 조건을 지정 합니다.
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70f4621eaad5e494684e6c227959e13566a22eba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912971"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170785"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 두 메모리 컨텍스트를 비교 하는 조건을 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CONTEXT_COMPARE {

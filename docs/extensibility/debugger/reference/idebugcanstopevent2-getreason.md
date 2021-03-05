@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진 (DE)을 중지 하려는 이유를 가져옵니다.
 title: 'IDebugCanStopEvent2:: GetReason | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aadf18dbf45f8b10791c69ed4f189c38491636d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66b783044b8342de26aec831d9d41f8bccd7df92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173526"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 디버그 엔진 (DE)을 중지 하려는 이유를 가져옵니다.
@@ -43,7 +44,7 @@ int GetReason(
 `pcr`\
 제한이 이 이벤트의 이유를 설명 하는 [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

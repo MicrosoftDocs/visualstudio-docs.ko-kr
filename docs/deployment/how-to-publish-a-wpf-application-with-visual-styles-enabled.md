@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171281"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시
 
@@ -110,9 +110,9 @@ ms.locfileid: "99900469"
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>게시 된 솔루션의 실행 파일에 매니페스트 파일 포함
 
-1. **Visual Studio 명령 프롬프트** 를 엽니다.
+1. **Visual Studio에 대 한 개발자 명령 프롬프트를** 엽니다.
 
-    **Visual Studio 명령 프롬프트** 를 여는 방법에 대 한 자세한 내용은 [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조 하세요.
+    Visual Studio에 대 한 개발자 명령 프롬프트를 여는 방법에 대 한 자세한 내용은 [개발자 명령 프롬프트 And Developer PowerShell](../ide/reference/command-prompt-powershell.md)을 참조 하세요.
 
    > [!NOTE]
    > 나머지 단계는 솔루션에 대해 다음과 같은 가정을 합니다.
@@ -179,7 +179,7 @@ ms.locfileid: "99900469"
 
 ## <a name="see-also"></a>참고 항목
 
--[ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [ClickOnce 배포 관련 오류 문제 해결](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [비주얼 스타일 개요](/windows/desktop/Controls/visual-styles-overview)
 - [시각적 개체 스타일 사용](/windows/desktop/Controls/cookbook-overview)
-- [명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [개발자 명령 프롬프트 및 개발자 PowerShell](../ide/reference/command-prompt-powershell.md)

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 스택 프레임 속성, 프로그램 문서 속성 또는 일부 다른 속성을 나타냅니다.
 title: IDebugProperty2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171454"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 이 인터페이스는 스택 프레임 속성, 프로그램 문서 속성 또는 일부 다른 속성을 나타냅니다. 속성은 일반적으로 식 계산의 결과입니다.
@@ -25,7 +26,7 @@ ms.locfileid: "99962199"
 > [!NOTE]
 > 이러한 엔터티를 나타낼 수 있지만 "속성"을 사용 하면 클래스의 멤버 변수를 의미 하는 것과 혼동 해서는 안 됩니다 `IDebugProperty2` .
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProperty2 : IUnknown
@@ -48,7 +49,7 @@ IDebugProperty2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProperty2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|속성을 설명 하는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 채웁니다.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|문자열에서 속성 값을 설정 합니다.|

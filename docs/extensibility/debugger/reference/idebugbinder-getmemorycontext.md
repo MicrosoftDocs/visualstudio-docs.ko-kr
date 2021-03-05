@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 개체 위치 또는 메모리 주소를 메모리 컨텍스트로 변환 합니다.
 title: 'IDebugBinder:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c203e83a595562e604d8c32b09056c8544bfd1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e31df905c35fa81e3e56e32ef969f9663054dc5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938976"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174096"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 이 메서드는 개체 위치 또는 메모리 주소를 메모리 컨텍스트로 변환 합니다.
@@ -53,7 +54,7 @@ int GetMemoryContext(
 `ppMemCxt`\
 제한이 개체의 주소 또는 메모리의 주소를 나타내는 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목
