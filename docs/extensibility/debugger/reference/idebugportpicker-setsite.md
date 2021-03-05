@@ -1,4 +1,5 @@
 ---
+description: 서비스 공급자를 설정 합니다.
 title: 'IDebugPortPicker:: SetSite | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c361291532a79e7e4dd466d07359f0fe9faf2be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1c222bd06a974e7f2b1a57096a120399b554b82
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958637"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169277"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 서비스 공급자를 설정 합니다.
@@ -41,7 +42,7 @@ public int SetSite(
 `pSP`\
 진행 서비스 공급자의 인터페이스에 대 한 참조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

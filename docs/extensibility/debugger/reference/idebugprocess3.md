@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 실행 중인 프로세스와 해당 프로그램을 나타냅니다.
 title: IDebugProcess3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926113"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169186"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 이 인터페이스는 실행 중인 프로세스와 해당 프로그램을 나타냅니다. 이 인터페이스는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스의 여러 메서드를 대체 하는 것으로 존재 합니다. 프로세스의 모든 프로그램에 대 한 제어를 제공 합니다.
@@ -25,7 +26,7 @@ ms.locfileid: "99926113"
 > [!NOTE]
 > [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)및 [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) 메서드는 더 이상 사용 되지 않으며 더 이상 사용 되지 않습니다. 대신 인터페이스에 해당 하는 메서드를 사용 `IDebugProcess3` 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess3 : IDebugProcess2

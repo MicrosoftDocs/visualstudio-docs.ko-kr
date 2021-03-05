@@ -1,4 +1,5 @@
 ---
+description: 개체가 사용자 데이터를 나타내는지 여부를 확인 합니다.
 title: 'IDebugObject2:: IsUserData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c53281ee144d3a1fa771fe4e77bba6bb418356e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9264ed546a4f1c9abcf42b1376e0b21b0f27940
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953359"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169991"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 개체가 사용자 데이터를 나타내는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ int IsUserData(
 `pfUser`\
 제한이 `TRUE`는 개체가 사용자 데이터를 나타내는 경우 0이 아닌 값을 반환 하 고 그렇지 않으면 0 ()을 반환 `FALSE` 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

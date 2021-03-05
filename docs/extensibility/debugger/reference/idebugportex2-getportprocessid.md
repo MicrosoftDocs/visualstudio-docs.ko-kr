@@ -1,4 +1,5 @@
 ---
+description: 포트 자체의 프로세스 ID를 가져옵니다.
 title: 'IDebugPortEx2:: GetPortProcessId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a5648fa4b251e96327a35ecf29c2684a312fa99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e10dbc648f8233a826c440c261308c6c3688fa30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169433"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 포트 자체의 프로세스 ID를 가져옵니다.
@@ -43,7 +44,7 @@ int GetPortProcessId (
 `pdwProcessId`\
 제한이 포트 자체의 실제 프로세스 ID를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

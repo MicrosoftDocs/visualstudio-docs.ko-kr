@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램에 대 한 GUID를 가져옵니다.
 title: 'IDebugProgram2:: Get프로그래밍 Id | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7723333547e0aeac7fe7a73c0dc40b36f4b6e071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45721d4214c396f3366bd23c2bc48e74a1427ec8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890034"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168965"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 이 프로그램에 대 한 GUID를 가져옵니다.
@@ -43,7 +44,7 @@ int GetProgramId(
 `pguidProgramId`\
 제한이 `GUID` 이 프로그램에 대 한를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

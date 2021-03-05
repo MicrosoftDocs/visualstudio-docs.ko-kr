@@ -1,4 +1,5 @@
 ---
+description: 디버그 주소가 지정 된 경우 응용 프로그램 도메인 식별자를 검색 합니다.
 title: 'Idebug심볼 Providerdirect:: GetAppIDFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dfdc81b18b68a3dafe239bb2f23f700f9796cf8e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3869bf7f43566fce45b634ce328b79de1e172dad
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909555"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168376"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 디버그 주소가 지정 된 경우 응용 프로그램 도메인 식별자를 검색 합니다.
@@ -47,7 +48,7 @@ int GetAppIDFromAddress(
 `pAppID`\
 제한이 응용 프로그램 도메인의 식별자입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

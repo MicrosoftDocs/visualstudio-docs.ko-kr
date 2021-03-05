@@ -1,4 +1,5 @@
 ---
+description: 참조를 설명 하는 DEBUG_REFERENCE_INFO 구조체를 가져옵니다.
 title: 'IDebugReference2:: GetReferenceInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca23c5acd5f32d79cb76f2059b6a39066197150f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef953ccde844ac7a2fb5289affaf381f56af8719
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896040"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168926"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 다음에 사용하도록 예약됩니다.
+참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,7 +69,7 @@ int GetReferenceInfo (
 `pReferenceInfo`\
 제한이 속성에 대 한 설명과 함께 채워지는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
 ## <a name="see-also"></a>참고 항목

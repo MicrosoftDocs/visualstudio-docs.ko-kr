@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램이 실행 되는 프로세스를 가져옵니다.
 title: 'IDebugProgram2:: GetProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9cd3b6e76a7e675a2228217d9a72c1d004de919c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 233bd9bbb41f64b375e899dba9c0be9a9fba3d97
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891009"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168991"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 이 프로그램이 실행 되는 프로세스를 가져옵니다.
@@ -43,7 +44,7 @@ int GetProcess(
 `ppProcess`\
 제한이 프로세스를 나타내는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 인터페이스를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 프로세스를 종료할 수 있는지 여부를 확인 합니다.
 title: 'IDebugPortEx2:: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a8a58b2fc328f5659736e2ceb399bda62dc90cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11a850f844a77c0e137a7a6603ac14b31e7dc326
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891100"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169459"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 프로세스를 종료할 수 있는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ HRESULT CanTerminateProcess(
 `pPortProcess`\
 진행 종료할 프로세스를 나타내는 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  `S_OK`프로세스를 종료할 수 있으면를 반환 하 고, 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
 ## <a name="see-also"></a>참고 항목

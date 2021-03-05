@@ -1,4 +1,5 @@
 ---
+description: 원본 서버 정보의 배열을 검색 합니다.
 title: 'IDebugSourceServerModule:: GetSourceServerData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2478c28d77f07084813c86cac194a241b26354b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956518"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168636"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 원본 서버 정보의 배열을 검색 합니다.
@@ -46,10 +47,10 @@ public int GetSourceServerData(
 `ppData`\
 제한이 데이터 배열에 대 한 참조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) 인터페이스를 노출 하는 **cmodule** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

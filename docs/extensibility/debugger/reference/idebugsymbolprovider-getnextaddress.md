@@ -1,4 +1,5 @@
 ---
+description: 메서드에서 지정 된 디버그 주소 다음에 오는 디버그 주소를 가져옵니다.
 title: 'Idebug Provider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a370cf4591146a31627b80f6358a3d3f9202e306
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d177d03daef4f8d3344941658b85f71551af126b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888227"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168415"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 메서드에서 지정 된 디버그 주소 다음에 오는 디버그 주소를 가져옵니다.
@@ -53,7 +54,7 @@ int GetNextAddress(
 `ppAddress`\
 제한이 다음 디버그 주소를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  `HRESULT`일반적으로 S_OK 유효한를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

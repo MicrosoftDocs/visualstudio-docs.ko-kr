@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 정규화 된 메서드 이름을 나타내는 필드를 가져옵니다.
 title: 'Idebug Provider:: GetMethodFieldsByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77f6aa9561642b59a4cf605485011ac3b3ac75ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c807717dd9b984fdb2f6ab63c5e9539af4a033b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963525"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168519"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 이 메서드는 정규화 된 메서드 이름을 나타내는 필드를 가져옵니다.
@@ -53,7 +54,7 @@ int GetMethodFieldsByName(
 `ppEnum`\
 제한이 이 메서드와 연결 된 필드에 대 한 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 열거자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

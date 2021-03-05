@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 개체에 대 한 추가 정보를 제공 합니다.
 title: IDebugObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be1ef047e01baaffe66e38503f0f7979fea74829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eaa31be631de64339ece62f392f3d0b795b9d46
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953372"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170005"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99953372"
 
  이 인터페이스는 개체에 대 한 추가 정보를 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject2 : IDebugObject
@@ -40,7 +41,7 @@ IDebugObject2 : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 인터페이스의 메서드 외에도 `IDebugObject2` 인터페이스는 다음을 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|이 개체가 나타내는 속성을 지원 하 고 있을 수 있는 필드 또는 변수 (있는 경우)를 가져옵니다.|
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|이 개체의 값을 나타내는 관리 되는 코드 개체를 가져옵니다.|

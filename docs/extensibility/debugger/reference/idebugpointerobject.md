@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 포인터 개체를 나타냅니다.
 title: IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5275116ae16c03c4784cda7f227c46f57681120
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890203"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169615"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99890203"
 
  이 인터페이스는 포인터 개체를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPointerObject : IDebugObject
@@ -40,7 +41,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugPointerObject` 다음 메서드를 노출 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|인터페이스가 가리키는 개체를 가져옵니다.|
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|인터페이스가 일련의 연속 바이트로 가리키는 값을 가져옵니다.|

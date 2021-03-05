@@ -1,4 +1,5 @@
 ---
+description: 연속 된 일련의 바이트에서 가리키는 값을 설정 합니다.
 title: 'IDebugPointerObject:: SetBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57f1a077923a174ece5323256ad474dda3ec685f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31feb63e4f9d246161ced3483f487b2877ee5e1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169667"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 연속 된 일련의 바이트에서 가리키는 값을 설정 합니다.
@@ -58,7 +59,7 @@ int SetBytes(
 `pdwBytes`\
 제한이 실제로 설정 된 바이트 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

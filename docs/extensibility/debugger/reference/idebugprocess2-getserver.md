@@ -1,4 +1,5 @@
 ---
+description: 이 프로세스가 실행 되 고 있는 서버를 가져옵니다.
 title: 'IDebugProcess2:: GetServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3e8a1553d374f7eaddaace3e3a2ad4a0c882b20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fba7af19093d853d227241187242a24bf9bd8cdb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169199"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 이 프로세스가 실행 되 고 있는 서버를 가져옵니다.
@@ -43,7 +44,7 @@ int GetServer(
 `ppServer`\
 제한이 이 프로세스가 실행 되 고 있는 서버를 나타내는 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

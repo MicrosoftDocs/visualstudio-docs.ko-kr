@@ -1,4 +1,5 @@
 ---
+description: 사용자 지정 특성이 이름으로 존재 하는지 여부를 확인 합니다.
 title: 'IDebugCustomAttributeQuery2:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 808c2f57d0fdf8f5f629b21d3c02507eecd49bd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c25a0357a1b0b8768f02fd7eb903c30943964445
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168298"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 사용자 지정 특성이 이름으로 존재 하는지 여부를 확인 합니다.
@@ -43,7 +44,7 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 진행 찾을 사용자 지정 특성의 이름을 포함 하는 문자열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 필드에 사용자 지정 특성이 정의 되어 있으면 S_OK을 반환 하 고, 그렇지 않으면 S_FALSE을 반환 합니다.
 
 ## <a name="remarks"></a>설명

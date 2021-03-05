@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 평가할 준비가 된 구문 분석 된 식을 나타냅니다.
 title: IDebugParsedExpression | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 573c1528d37bd41d364430d610a31f4dfe89e4f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf978f6d2775c720cfff528ceb8a557fd96ae00a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953229"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169940"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99953229"
 
  이 인터페이스는 평가할 준비가 된 구문 분석 된 식을 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugParsedExpression : IUnknown
@@ -40,7 +41,7 @@ IDebugParsedExpression : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugParsedExpression` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|구문 분석 된 식을 계산 합니다.|
 

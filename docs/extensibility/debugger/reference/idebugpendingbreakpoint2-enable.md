@@ -1,4 +1,5 @@
 ---
+description: 보류 중인 중단점의 활성화 상태를 전환 합니다.
 title: 'IDebugPendingBreakpoint2:: Enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2da595754066adefb397bf90085b7d2e58ab49d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d0e92cf469a48e2ace84861a36cb256835d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953112"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169927"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 보류 중인 중단점의 활성화 상태를 전환 합니다.
@@ -44,7 +45,7 @@ int Enable(
 `fEnable`\
 진행 보류 중인 중단점을 설정 하려면 0이 아닌 값으로 설정 하 `TRUE` 고, `FALSE` 사용 하지 않으려면 0 ()으로 설정 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.
 
 ## <a name="remarks"></a>설명
@@ -52,7 +53,7 @@ int Enable(
 
 이 메서드는 중단점을 이미 사용 하거나 사용 하지 않을 경우에도 필요에 따라 여러 번 호출할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

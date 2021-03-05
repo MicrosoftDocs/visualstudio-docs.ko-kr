@@ -1,4 +1,5 @@
 ---
+description: 프로세스에 대 한 설명을 가져옵니다.
 title: 'IDebugProcess2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf4b8d933729c95eaffa3a0caa44961bb5c87baa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6e6b8e0c14cee960d1991ae4f5a482f66e89465
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894922"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169212"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 프로세스에 대 한 설명을 가져옵니다.
@@ -48,7 +49,7 @@ int GetInfo(
 `pProcessInfo`\
 제한이 프로세스에 대 한 설명으로 채워진 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

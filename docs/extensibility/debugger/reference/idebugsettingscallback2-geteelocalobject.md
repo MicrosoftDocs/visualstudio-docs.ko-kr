@@ -1,4 +1,5 @@
 ---
+description: 메트릭 이름이 지정 된 경우 식 계산기 로컬 개체를 검색 합니다.
 title: 'IDebugSettingsCallback2:: GetEELocalObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fafd813a569c02af356fee9213ed4c1fdc8751e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72ff072cdb6c0431a7b04e644f71186c91763efa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875954"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168766"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 메트릭 이름이 지정 된 경우 식 계산기 로컬 개체를 검색 합니다.
@@ -56,7 +57,7 @@ private int GetEELocalObject(
 `ppUnk`\
 제한이 식 계산기 로컬 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,4 +1,5 @@
 ---
+description: 해당 이름이 지정 된 메트릭의 고유 식별자를 검색 합니다.
 title: 'IDebugSettingsCallback2:: GetMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9c71ed9ee8d8a8be4931b17127fb1c1ade13252
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 504a47de04fde7aa0c630bf17e0a1c4ac24723ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875837"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168675"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 해당 이름이 지정 된 메트릭의 고유 식별자를 검색 합니다.
@@ -56,7 +57,7 @@ private int GetMetricGuid(
 `pguidValue`\
 제한이 메트릭의 고유 식별자를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

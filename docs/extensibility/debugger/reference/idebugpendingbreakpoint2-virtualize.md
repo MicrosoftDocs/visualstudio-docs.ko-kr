@@ -1,4 +1,5 @@
 ---
+description: 이 보류 중인 중단점의 가상화 된 상태를 전환 합니다.
 title: 'IDebugPendingBreakpoint2:: 가상화 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242caf91b8f25f8bea6ff9c17820ed84c5fc98f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ea6d6231a99f730969c44e7ced83cb48d0db4b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169758"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 이 보류 중인 중단점의 가상화 된 상태를 전환 합니다. 보류 중인 중단점을 가상화 할 때 디버그 엔진은 새 코드가 프로그램에 로드 될 때마다 바인딩을 시도 합니다.
@@ -44,13 +45,13 @@ int Virtualize(
 `fVirtualize`\
 진행 보류 중인 중단점을 가상화 하려면 0이 아닌 값 ()으로 설정 하 `TRUE` 고, 가상화를 해제 하려면 0 ()으로 설정 `FALSE` 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 중단점이 삭제 되었으면를 반환 `E_BP_DELETED` 합니다.
 
 ## <a name="remarks"></a>설명
 가상화 된 중단점은 코드가 로드 될 때마다 바인딩됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

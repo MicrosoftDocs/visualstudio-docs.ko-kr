@@ -1,4 +1,5 @@
 ---
+description: 디버그 엔진은이 메서드를 구현 하지 않습니다.
 title: 'IDebugThread2:: GetLogicalThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05d788f63d4807ccfd8e99d36cbf858df2be499f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9193cde20ba1035552451143c676aab291d7c684
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940256"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168350"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 디버그 엔진은이 메서드를 구현 하지 않습니다.
@@ -48,7 +49,7 @@ int GetLogicalThread(
 `ppLogicalThread`\
 제한이 연결 된 `IDebugLogicalThread2` 논리 스레드를 나타내는 인터페이스를 반환 합니다. 디버그 엔진 구현에서는이 값을 null 값으로 설정 해야 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  디버그 엔진 구현은 항상 `E_NOTIMPL` 를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

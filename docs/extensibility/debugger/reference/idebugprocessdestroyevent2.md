@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로세스가 종료 되거나 atypically를 종료 하거나에서 분리 될 때 전송 됩니다.
 title: IDebugProcessDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194ef3585a8ba3f0a0ab90e5ea39f4ad3a04622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91d2e3afc2292f7a180b1dcce0cc015fea640a86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861103"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169160"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 이 인터페이스는 프로세스가 종료 되거나 atypically를 종료 하거나에서 분리 될 때 전송 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessDestroyEvent2 : IUnknown

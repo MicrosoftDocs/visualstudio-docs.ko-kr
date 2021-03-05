@@ -1,4 +1,5 @@
 ---
+description: 필요한 경우이 속성의 값을 설정 하 고 오류 메시지를 반환 합니다.
 title: 'IDebugProperty3:: SetValueAsStringWithError | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd789561a85f23cff2ec794d4877662441f9149e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897296"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168103"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 필요한 경우이 속성의 값을 설정 하 고 오류 메시지를 반환 합니다.
@@ -58,13 +59,13 @@ int SetValueAsStringWithError(
 `errorString`\
 제한이 값을 설정 하는 동안 오류가 발생 한 경우이로 인해 오류의 원인이 발생 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 들어오는 값은 평가할 식일 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 인터페이스를 노출 하는 **cproperty** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

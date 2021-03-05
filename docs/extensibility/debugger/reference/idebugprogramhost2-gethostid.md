@@ -1,4 +1,5 @@
 ---
+description: 이 프로그램을 호스팅하는 프로세스의 프로세스 식별자를 가져옵니다.
 title: 'IDebugProgramHost2:: GetHostId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9fb207539cdc6a12819fad4f87c6da3540f1aba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9784c8e54ee5c75ed33a0aaf513f71dd09f6191
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898849"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168129"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 이 프로그램을 호스팅하는 프로세스의 프로세스 식별자를 가져옵니다.
@@ -43,7 +44,7 @@ int GetHostId(
 `pdwId`\
 [in, out] 프로세스 식별자 정보를 사용 하 여 채워지는 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 컴퓨터의 디버그 포트를 나타냅니다.
 title: IDebugPort2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861142"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169485"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 이 인터페이스는 컴퓨터의 디버그 포트를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPort2 : IUnknown
@@ -39,7 +40,7 @@ IDebugPort2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPort2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|포트 이름을 반환 합니다.|
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|포트 식별자를 반환 합니다.|

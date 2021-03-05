@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 문자열을 출력 하기 위해 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 title: IDebugOutputStringEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 604eace2f5f4be7a35b6f4b736722b435cf06928
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953307"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169953"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 이 인터페이스는 문자열을 출력 하기 위해 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugOutputStringEvent2 : IUnknown
@@ -37,7 +38,7 @@ IDebugOutputStringEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugOutputStringEvent2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|표시할 메시지를 가져옵니다.|
 

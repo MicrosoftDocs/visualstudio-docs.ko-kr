@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 프로그램에 대 한 호스트 (프로세스) 정보를 제공 합니다.
 title: IDebugProgramHost2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 109cca0cc3d12d8bf14da848774042fe346f0f1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898768"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168116"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 이 인터페이스는 프로그램에 대 한 호스트 (프로세스) 정보를 제공 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramHost2 : IUnknown
@@ -37,7 +38,7 @@ IDebugProgramHost2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramHost2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|이 프로그램의 호스팅 프로세스에 대 한 제목, 이름 또는 파일 이름을 가져옵니다.|
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|이 프로그램의 호스팅 프로세스에 대 한 프로세스 식별자를 가져옵니다.|

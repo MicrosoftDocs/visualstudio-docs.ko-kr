@@ -1,4 +1,5 @@
 ---
+description: 이 개체와 연결 된 값을 나타내는 관리 되는 코드 개체를 가져옵니다.
 title: 'IDebugObject2:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 127028e7de34198b2d4cb141e4fc3c73f3a3931b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd37073990a5a91f7eaa04d88e4aa7a73efb74ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953450"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170031"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 이 개체와 연결 된 값을 나타내는 관리 되는 코드 개체를 가져옵니다.
@@ -43,7 +44,7 @@ int GetICorDebugValue(
 `ppUnk`\
 [out] `IUnknown` 이 별칭을 나타내는 인터페이스입니다. 인터페이스에 대해이 인터페이스를 쿼리할 수 있습니다 `ICorDebugValue` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
