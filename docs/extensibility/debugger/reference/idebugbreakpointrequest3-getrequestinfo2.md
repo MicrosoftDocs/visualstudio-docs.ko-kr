@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
 title: 'IDebugBreakpointRequest3:: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0d62b684fd171857870f59b2f3eec2e034cab11
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162331"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 이 메서드는이 중단점 요청을 설명 하는 중단점 요청 정보를 가져옵니다.
@@ -48,7 +49,7 @@ int GetRequestInfo2(
 `bBPRequestInfo`\
 제한이 채워질 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 구조체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

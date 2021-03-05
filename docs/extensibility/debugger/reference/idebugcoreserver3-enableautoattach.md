@@ -1,4 +1,5 @@
 ---
+description: 지정 된 디버그 엔진에 대해 자동 연결을 사용 하도록 설정 합니다.
 title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7873480c979bba4f52203c02864d24aa88cf06cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 644d238db11c117b9068de8f7903361b9712f3aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163150"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 지정 된 디버그 엔진에 대해 자동 연결을 사용 하도록 설정 합니다.
@@ -58,7 +59,7 @@ int EnableAutoAttach(
 `pbstrSessionID`\
 제한이 자동으로 연결 된 세션의 ID입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 한 가지 오류 코드는 `E_AUTO_ATTACH_NOT_REGISTERED` 자동 연결 클래스 팩터리가 등록 되지 않았음을 나타내는입니다.
 
 ## <a name="remarks"></a>설명

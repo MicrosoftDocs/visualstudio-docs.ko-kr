@@ -1,4 +1,5 @@
 ---
+description: 지정 된 모듈의 지정 된 부모 특성을 사용 하 여 디버그 기호를 검색 합니다.
 title: 'IDebugComPlusSymbolProvider:: GetSymAttribute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53d0f3ae185a8f13a76547b5afdad1e3b6558918
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66504d4b98de9f8435e4757a17a1970362e84ab9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892868"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163813"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 지정 된 모듈의 지정 된 부모 특성을 사용 하 여 디버그 기호를 검색 합니다.
@@ -72,10 +73,10 @@ int GetSymAttribute (
 `buffer`\
 제한이 기호를 포함 하는 배열입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 지역 변수, 매개 변수 또는 기타 필드를 설명 합니다.
 title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941842"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162435"
 ---
 # <a name="field_info"></a>FIELD_INFO
 이 구조는 지역 변수, 매개 변수 또는 기타 필드를 설명 합니다.
@@ -47,7 +48,7 @@ public struct FIELD_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `dwFields`\
 채워질 멤버를 지정 하는 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 열거형의 플래그 조합입니다.
 

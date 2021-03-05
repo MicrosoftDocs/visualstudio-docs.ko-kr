@@ -1,4 +1,5 @@
 ---
+description: 문서 컨텍스트를 지정 된 수의 문이나 줄로 이동 합니다.
 title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5be12a180368e668e944e0df822d5be6189f6ae0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a70b8fac8e084a78b1a29ae941f1d03d6552f860
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946984"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162851"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 문서 컨텍스트를 지정 된 수의 문이나 줄로 이동 합니다.
@@ -48,7 +49,7 @@ int Seek(
 `ppDocContext`\
 제한이 새 위치를 사용 하 여 새 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

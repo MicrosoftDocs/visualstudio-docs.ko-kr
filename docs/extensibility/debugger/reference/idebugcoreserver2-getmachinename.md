@@ -1,4 +1,5 @@
 ---
+description: 핵심 서버가 실행 되 고 있는 컴퓨터의 이름을 가져옵니다.
 title: 'IDebugCoreServer2:: GetMachineName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e67d32b2f5e38627d8c28d96d6d86beb8fb415b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fcde7bcc59f38aba5369059e1aeb31a61a0e8cd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904060"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163189"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 핵심 서버가 실행 되 고 있는 컴퓨터의 이름을 가져옵니다.
@@ -43,7 +44,7 @@ int GetName(
 `pbstrName`\
 제한이 컴퓨터의 이름을 포함 하는 문자열을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

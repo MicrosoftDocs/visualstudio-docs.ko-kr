@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 네트워크에 있는 컴퓨터의 서버에서 정보를 표시 하 고 가져오는 데 사용 됩니다.
 title: IDebugCoreServer2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba05cb5a933c5b3caaf080c9098c83451a20e484
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163137"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 이 인터페이스는 네트워크에 있는 컴퓨터의 서버에서 정보를 표시 하 고 가져오는 데 사용 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCoreServer2 : IUknown
@@ -39,7 +40,7 @@ IDebugCoreServer2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCoreServer2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|컴퓨터의 이름과 특성을 가져옵니다.|
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|컴퓨터의 이름을 가져옵니다.|

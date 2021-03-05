@@ -1,4 +1,5 @@
 ---
+description: 특정 코드 컨텍스트의 코드 위치 식별자를 반환 합니다.
 title: 'IDebugDisassemblyStream2:: GetCodeLocationId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8437dd2c98373c770d6f537e0ec9714100e3c4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c1c3a6f7a9f2e2a0617f1322d17073a9dcc7c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901823"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162929"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 특정 코드 컨텍스트의 코드 위치 식별자를 반환 합니다.
@@ -47,7 +48,7 @@ int GetCodeLocationId(
 
 `puCodeLocationId` 제한이 코드 위치 식별자를 반환 합니다. 설명 부분을 참조하세요.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_CODE_CONTEXT_OUT_OF_SCOPE`코드 컨텍스트가 유효 하지만 범위 밖에 있는 경우를 반환 합니다.
 
 ## <a name="remarks"></a>설명

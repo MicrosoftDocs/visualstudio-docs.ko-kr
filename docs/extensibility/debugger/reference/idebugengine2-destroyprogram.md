@@ -1,4 +1,5 @@
 ---
+description: 지정 된 프로그램이 atypically 종료 되었으며 DE가 프로그램에 대 한 모든 참조를 정리 하 고 프로그램 소멸 이벤트를 전송 해야 함을 디버그 엔진 (DE)에 알립니다.
 title: IDebugEngine2::D estroyProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 485875f2ca4cd54c41d959ffaf769368db265243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ee646b48a36a2b2c5d707eab6c5a32145d55439
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879048"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162682"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 지정 된 프로그램이 atypically 종료 되었으며 DE가 프로그램에 대 한 모든 참조를 정리 하 고 프로그램 소멸 이벤트를 전송 해야 함을 디버그 엔진 (DE)에 알립니다.
@@ -43,7 +44,7 @@ int DestroyProgram(
 `pProgram`\
 진행 Atypically 종료 된 프로그램을 나타내는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

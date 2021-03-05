@@ -1,4 +1,5 @@
 ---
+description: 중단점 확인 위치의 구조를 지정 합니다.
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fef44d02911e84952f6eb8ab09dd9a1360dea6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162565"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 중단점 확인 위치의 구조를 지정 합니다.
@@ -48,7 +49,7 @@ public struct BP_RESOLUTION_LOCATION {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `bpType`\
 공용 구조체 또는 멤버를 해석 하는 방법을 지정 하는 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 열거형의 값입니다 `bpResLocation` `unionmemberX` .
 
@@ -83,7 +84,7 @@ public struct BP_RESOLUTION_LOCATION {
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
 |`BPT_DATA`|`string` (데이터 식)|`string` (함수 이름)|`string` (이미지 이름)|`enum_BP_RES_DATA_FLAGS`|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 이 예제에서는 `BP_RESOLUTION_LOCATION` c #의 구조를 해석 하는 방법을 보여 줍니다.
 
 ```csharp

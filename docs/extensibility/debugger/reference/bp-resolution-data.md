@@ -1,4 +1,5 @@
 ---
+description: 데이터 중단점을 바인딩한 결과를 설명 합니다.
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25756c00ba493dba866ab70693e69971333ae9ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d33f05036965e500a007b97e7575a5c0d788158
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901934"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162617"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 데이터 중단점을 바인딩한 결과를 설명 합니다.
@@ -45,7 +46,7 @@ public struct BP_RESOLUTION_DATA {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 `bstrDataExpr`\
 바인딩된 데이터 식입니다.
 

@@ -1,4 +1,5 @@
 ---
+description: 코어 서버가 실행 중인 컴퓨터에 대 한 설명을 검색 합니다.
 title: 'IDebugCoreServer2:: GetMachineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f90e8f97b020f746f6caa4807fe8ed063d613001
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd7f42816ce477af4ae259adca49e8aac20137d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904156"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163215"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 코어 서버가 실행 중인 컴퓨터에 대 한 설명을 검색 합니다.
@@ -49,7 +50,7 @@ int GetMachineInfo(
 
  [in, out] 컴퓨터에 대 한 설명과 함께 채워지는 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 구조입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

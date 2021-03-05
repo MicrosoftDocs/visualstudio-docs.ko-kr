@@ -1,4 +1,5 @@
 ---
+description: 지정 된 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.
 title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9e27c17f4acc27c170d5e1d5ae83e93ffd76e22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4ffd03313896db1a6bf5cb719adf2ecf5858243
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907917"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162968"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 지정 된 사용자 지정 특성이 정의 되어 있는지 여부를 확인 합니다.
@@ -42,10 +43,10 @@ int IsCustomAttributeDefined(
 `pszCustomAttributeName`\
 진행 사용자 지정 특성의 이름입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 사용자 지정 특성이 정의 된 경우는를 반환 하 `S_OK` 고 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [Idebugcustomattributequery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) 인터페이스를 제공 하는 **Cdebugclassfieldsymbol** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

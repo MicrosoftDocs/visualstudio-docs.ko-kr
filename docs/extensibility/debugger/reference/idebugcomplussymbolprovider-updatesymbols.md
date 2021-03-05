@@ -1,4 +1,5 @@
 ---
+description: 지정 된 데이터 스트림의 디버그 기호를 사용 하 여 메모리의 디버그 기호를 업데이트 합니다.
 title: 'IDebugComPlusSymbolProvider:: UpdateSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2421ff73ed94b275288d9a1aed6ff4a382f45048
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d849ec9359055e6ff469ef49a50cf6c724eb4ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842500"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163514"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 지정 된 데이터 스트림의 디버그 기호를 사용 하 여 메모리의 디버그 기호를 업데이트 합니다.
@@ -52,7 +53,7 @@ int UpdateSymbols (
 `pUpdateStream`\
 진행 업데이트 된 디버그 기호를 포함 하는 데이터 스트림입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -91,7 +92,7 @@ Error:
 }
 ```
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

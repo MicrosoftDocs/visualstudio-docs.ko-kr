@@ -1,4 +1,5 @@
 ---
+description: 특정 포트를 검색 합니다.
 title: 'IDebugCoreServer2:: GetPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d8368ccc159fb31941f975c36d165cd943fb113
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481474ac56bdd77d63d6eeb256fac9ab356cc1aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163202"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 특정 포트를 검색 합니다.
@@ -48,7 +49,7 @@ int GetPort(
 `ppPort`\
 제한이 원하는 포트를 나타내는 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. `E_PORTSUPPLIER_NO_PORT`지정 된 식별자의 포트가 없으면를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

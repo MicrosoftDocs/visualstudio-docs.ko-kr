@@ -1,4 +1,5 @@
 ---
+description: 실패 한 중단점 해결에 대 한 정보를 검색할 정보를 지정 합니다.
 title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,17 +16,17 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e26b5a7285c2e5c9135429777b4b58f35252e550
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876097"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162526"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 실패 한 중단점 해결에 대 한 정보를 검색할 정보를 지정 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPERESI_FIELDS {

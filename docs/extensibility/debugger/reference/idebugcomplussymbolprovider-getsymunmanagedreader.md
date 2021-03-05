@@ -1,4 +1,5 @@
 ---
+description: 비관리 코드에서 사용할 기호 판독기를 검색 합니다.
 title: 'IDebugComPlusSymbolProvider:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4463085b021f2de5f9237817b6d8ffade88612a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a650d55b6c3b36a5b3b08138f44618e2c3645627
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163800"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 비관리 코드에서 사용할 기호 판독기를 검색 합니다.
@@ -52,10 +53,10 @@ int GetSymUnmanagedReader(
 `ppSymUnmanagedReader`\
 제한이 기호 판독기를 나타내는 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

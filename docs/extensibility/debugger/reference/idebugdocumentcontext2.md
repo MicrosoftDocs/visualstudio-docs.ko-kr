@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 소스 파일 문서의 위치를 나타냅니다.
 title: IDebugDocumentContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +13,17 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db2446496d2083d34eefc92afabc3ca541442e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa46f2c8becc7359bb08046369c9349861c63314
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946971"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162812"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 이 인터페이스는 소스 파일 문서의 위치를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentContext2 : IUnknown
@@ -37,7 +38,7 @@ IDebugDocumentContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentContext2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|이 문서 컨텍스트를 포함 하는 문서를 가져옵니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|이 문서 컨텍스트를 포함 하는 문서의 표시할 때 나타나는 이름을 가져옵니다.|

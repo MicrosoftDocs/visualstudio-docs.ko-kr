@@ -1,4 +1,5 @@
 ---
+description: ICorDebugModule 개체가 지정 된 경우 데이터 스트림에서 디버그 기호를 로드 합니다.
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af48a3b42bf559595714c9af8116c112579a4012
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ae5004869a6146e3a8bb22f2569d1cc4cd758f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954906"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163358"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 **ICorDebugModule** 개체가 지정 된 경우 데이터 스트림에서 디버그 기호를 로드 합니다.
@@ -69,10 +70,10 @@ int LoadSymbolsFromStreamWithCorModule(
 `pStream`\
 진행 로드할 디버그 기호를 포함 하는 데이터 스트림입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

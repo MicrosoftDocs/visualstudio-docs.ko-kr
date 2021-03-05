@@ -1,4 +1,5 @@
 ---
+description: 지정 된 디버그 주소가 시퀀스 위치 인지 여부를 확인 합니다.
 title: 'IDebugComPlusSymbolProvider2:: IsAddressSequencePoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99d16ebd2802bb31b7568f7f8b862543b4083a67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50e14f7e91457e2a7a0bd4719730e96d4019e82d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954997"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163384"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 지정 된 디버그 주소가 시퀀스 위치 인지 여부를 확인 합니다.
@@ -42,10 +43,10 @@ int IsAddressSequencePoint(
 `pAddress`\
 진행 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스로 표시 되는 디버그 주소입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 디버그 주소가 시퀀스 지점인 경우는를 반환 하 `S_OK` 고 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp

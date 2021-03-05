@@ -1,4 +1,5 @@
 ---
+description: 데이터 스트림이 지정 된 경우 디버그 기호를 로드 합니다.
 title: 'IDebugComPlusSymbolProvider:: Load기호 Sfromstream | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c3c4c5cbaea8328f0240b5bf41fde3ea7042635
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e04c1559bc146028490771622eba42557ef6610
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163605"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 데이터 스트림이 지정 된 경우 디버그 기호를 로드 합니다.
@@ -62,10 +63,10 @@ int LoadSymbolsFromStream(
 `pStream`\
 진행 기호를 포함 하는 데이터 스트림입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다. 메서드는 [Load기호 Sfromstreamwithcormodule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) 메서드를 호출 합니다.
 
 ```cpp
