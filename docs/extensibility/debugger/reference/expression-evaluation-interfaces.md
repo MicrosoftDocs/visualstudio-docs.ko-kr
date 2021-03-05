@@ -1,4 +1,5 @@
 ---
+description: 다음은 Visual Studio 디버깅 SDK의 식 계산 인터페이스입니다.
 title: 식 계산 인터페이스 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936940"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158737"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -34,7 +35,7 @@ ms.locfileid: "99936940"
 
 - Visual Studio (VS)
 
-|인터페이스|구현 방법|Description|
+|인터페이스|구현 방법|설명|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|변수의 숫자 별칭을 나타냅니다.|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|변수에 대 한 숫자 별칭을 나타내며 식 계산기 (EE)에서 별칭의 응용 프로그램 도메인을 가져올 수 있도록 합니다.|

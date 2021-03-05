@@ -1,4 +1,5 @@
 ---
+description: 동작에서 사용할 데이터를 나타내는 개체입니다.
 title: m_stateObject 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf16af65ab59147614ce5609de9b56ff833862a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92fdad68506c62440c7f3e130caee49b4fe780da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925129"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158763"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject 필드
 동작에서 사용할 데이터를 나타내는 개체입니다.

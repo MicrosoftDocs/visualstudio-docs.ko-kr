@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 프로세스 및이 프로세스에 포함 된 모든 프로그램에서 편집 하며 계속 하기를 명시적으로 해제 합니다.
 title: IDebugProcess3::D isableENC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5cfd425e6b992d8d933edd45f27d6fb4c8161a1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffedebd14f720e006c0bec2044afe80901762b52
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891048"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158490"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 이 메서드는이 프로세스 및이 프로세스에 포함 된 모든 프로그램에서 편집 하며 계속 하기를 명시적으로 해제 합니다. 사용자 지정 포트 공급자는 항상를 반환 해야 합니다 `E_NOTIMPL` .
@@ -42,7 +43,7 @@ HRESULT DisableENC(
 `reason`\
 진행 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 > [!NOTE]

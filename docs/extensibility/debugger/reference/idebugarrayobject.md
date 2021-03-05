@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 배열 개체를 나타냅니다.
 title: IDebugArrayObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d6a37a5b83cd71123521db70920fd3d454e059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16162cee8a02bf02b192336425101ec4bb579106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870066"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158529"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -25,7 +26,7 @@ ms.locfileid: "99870066"
 
  이 인터페이스는 배열 개체를 나타냅니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject : IDebugObject
@@ -40,7 +41,7 @@ IDebugArrayObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  인터페이스의 메서드 외에도 `IDebugObject` 다음 메서드가 인터페이스에서 구현 됩니다 `IDebugArrayObject` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|배열의 요소 수를 가져옵니다.|
 |[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|배열의 요소를 가져옵니다.|

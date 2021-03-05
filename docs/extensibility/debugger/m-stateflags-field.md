@@ -1,4 +1,5 @@
 ---
+description: System.object 개체의 현재 상태에 대 한 정보를 저장 합니다.
 title: m_stateFlags 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e49ad2965ef99d5ceaafc3cb5f4de3589321d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 322e739d84f54f1aa3fd215ba902f0b11a060bcd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925245"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158776"
 ---
 # <a name="m_stateflags-field"></a>m_stateFlags 필드
 개체의 현재 상태에 대 한 정보를 저장 <xref:System.Threading.Tasks.Task> 합니다.

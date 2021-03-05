@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 디버깅을 위해 프로세스가 시작 된 이유를 반환 합니다.
 title: 'IDebugProcess3:: GetDebugReason | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45b51d90ec1d1c67ea722d2877e06c2a8d0d2745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ab36134f8085ba13279332e3c1b8dc2fe65c200
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915397"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158477"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 이 메서드는 디버깅을 위해 프로세스가 시작 된 이유를 반환 합니다.
@@ -43,7 +44,7 @@ int GetDebugReason(
 `pReason`\
 제한이 [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

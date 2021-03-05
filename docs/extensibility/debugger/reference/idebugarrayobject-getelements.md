@@ -1,4 +1,5 @@
 ---
+description: 배열의 모든 요소에 대 한 열거자를 가져옵니다.
 title: 'IDebugArrayObject:: GetElements | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a93e75be0e3a7b3c86e75b29a13b2cabe5a4573
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33840f3f5d5a65cf1ed929049f0b85801724a5c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870170"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158555"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 배열의 모든 요소에 대 한 열거자를 가져옵니다.
@@ -43,7 +44,7 @@ int GetElements(
 `ppEnum`\
 제한이 모든 요소에 대해 열거를 허용 하는 [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

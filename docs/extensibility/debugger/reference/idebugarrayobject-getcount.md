@@ -1,4 +1,5 @@
 ---
+description: 배열의 요소 수를 가져옵니다.
 title: 'IDebugArrayObject:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9750b2982ad0b2d70375fe0519a9fd888bcac8a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dafff955eb0801ffe13f76f61d8f7451398e41e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870222"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158698"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 배열의 요소 수를 가져옵니다.
@@ -43,7 +44,7 @@ int GetCount(
 `pdwElements`\
 제한이 개수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면 S_OK을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명
