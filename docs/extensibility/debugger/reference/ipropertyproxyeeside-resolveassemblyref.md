@@ -1,4 +1,5 @@
 ---
+description: 지정 된 관리 되는 어셈블리 참조의 위치를 결정 합니다.
 title: 'IPropertyProxyEESide:: ResolveAssemblyRef | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687ca5922cc59322c37b7b391a9b5f40d52c14ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895962"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225580"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 지정 된 관리 되는 어셈블리 참조의 위치를 결정 합니다.
@@ -63,7 +64,7 @@ int ResolveAssemblyRef(
 `alr`\
 제한이 이 참조의 어셈블리 위치를 나타내는 [Assemblylocresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) 열거형의 값을 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

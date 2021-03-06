@@ -1,4 +1,5 @@
 ---
+description: 지정 된 데이터 개체를 사용 하 여 개체의 데이터를 업데이트 하 고 개체의 새 데이터를 나타내는 새 데이터 개체를 반환 합니다.
 title: 'IPropertyProxyEESide:: InPlaceUpdateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f8185734c8c2ee15728328a510236bbbc50a21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2119db579863bea2ad0b9fa5834996d658308549
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225593"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 지정 된 데이터 개체를 사용 하 여 개체의 데이터를 업데이트 하 고 개체의 새 데이터를 나타내는 새 데이터 개체를 반환 합니다.
@@ -48,7 +49,7 @@ int InPlaceUpdateObject(
 `dataOut`\
 제한이 `IEEDataStorage` 대체 된 데이터를 포함 하는 새 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

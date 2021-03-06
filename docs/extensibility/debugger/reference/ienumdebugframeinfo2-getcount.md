@@ -1,4 +1,5 @@
 ---
+description: 프레임 정보 열거의 요소 수를 반환 합니다.
 title: 'IEnumDebugFrameInfo2:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04f57b59d72f996513a8be54e0f6b249e79a4fb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d6d0e7172f75a822d8a626aaa0445164b73a573
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956388"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226516"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 열거형의 요소 수를 반환 합니다.
@@ -43,7 +44,7 @@ int GetCount(
 `pcelt`\
 제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

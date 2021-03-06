@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 현재 디버그 세션에서 실행 되는 스레드를 열거 합니다.
 title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225736"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 이 인터페이스는 현재 디버그 세션에서 실행 되는 스레드를 열거 합니다.
@@ -37,7 +38,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugThreads2` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|열거형 시퀀스에서 지정 된 수의 스레드를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|열거형 시퀀스에서 지정 된 수의 스레드를 건너뜁니다.|

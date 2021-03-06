@@ -1,4 +1,5 @@
 ---
+description: 열거형의 DEBUG_REFERENCE_INFO 요소 수를 반환 합니다.
 title: 'IEnumDebugReferenceInfo2:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e087992cd5b2d5ac29b4f987d2c29dbf0e9006e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6756426e6ed668860a743c87964014fff3bc7f79
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967724"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225983"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 열거형의 요소 수를 반환 합니다.
@@ -43,7 +44,7 @@ int GetCount(
 `pcelt`\
 제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 시각화 도우미에 대 한 새 개체를 가져옵니다.
 title: 'IEEVisualizerDataProvider:: GetNewObjectForVisualizer 도우미 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98566507b3fdc3f519cc645991807c1d437bbcfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07bc02adc9dc3e6675c7bfbbcafd21a350b3a94f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890970"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227296"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 이 메서드는 시각화 도우미에 대 한 새 개체를 가져옵니다. 이 메서드는 항상 기존 개체에서 새 개체를 만듭니다.
@@ -43,7 +44,7 @@ int GetNewObjectForVisualizer(
 `ppObject`\
 제한이 새 개체입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

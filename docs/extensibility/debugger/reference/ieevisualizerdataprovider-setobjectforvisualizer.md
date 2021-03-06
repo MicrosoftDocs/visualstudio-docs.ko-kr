@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 시각화 도우미가 나타내는 개체를 변경 합니다.
 title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer 도우미 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890840"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227231"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 이 메서드는 시각화 도우미가 나타내는 개체를 변경 합니다.
@@ -53,7 +54,7 @@ int SetObjectForVisualizer(
 `pException`\
 제한이 오류가 발생 한 경우이 개체는 예외 정보를 포함 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

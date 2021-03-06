@@ -1,4 +1,5 @@
 ---
+description: 열거형에서 다음 DEBUG_PROPERTY_INFO 요소 집합을 반환 합니다.
 title: 'IEnumDebugPropertyInfo2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4ce9e9a434ac32d63199ae5af8524c6c9a752b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d14d77ca07a73ee1981609624a7d93465252719d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226009"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.
 title: METADATA_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225489"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 이 구조는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.

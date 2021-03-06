@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 열거형에서 다음 IDebugObject 요소의 집합을 반환 합니다.
 title: 'IEnumDebugObjects:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ef009a4801e40859e2b757465bb15ffac97395a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9dc05932a39d76fcf21290971f12567795a678e9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224670"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 이 메서드는 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

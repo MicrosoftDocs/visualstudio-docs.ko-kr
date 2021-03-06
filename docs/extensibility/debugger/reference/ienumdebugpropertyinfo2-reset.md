@@ -1,4 +1,5 @@
 ---
+description: 열거형을 첫 번째 DEBUG_PROPERTY_INFO 요소로 다시 설정 합니다.
 title: 'IEnumDebugPropertyInfo2:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 560c11308576bd18c0cfd8726a0bbb03005cbfad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 796246852c752b5460c162e4f6d6c0fab13f1e5b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877370"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226022"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 열거형을 첫 번째 요소로 다시 설정 합니다.

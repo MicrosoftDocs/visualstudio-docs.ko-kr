@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 필드 열거에서 다음 요소 집합을 반환 합니다.
 title: 'IEnumDebugFields:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19d996f1a040cd07742f23f467e3f25bee1f04d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb60dcf991c1a3002612b6779ef179c1571f3244
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900033"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226659"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 이 메서드는 열거형에서 다음 요소 집합을 반환 합니다.
@@ -53,7 +54,7 @@ int Next(
 `pceltFetched`\
 제한이 에서 실제로 반환 된 요소의 수를 반환 합니다 `rgelt` .
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="see-also"></a>참고 항목

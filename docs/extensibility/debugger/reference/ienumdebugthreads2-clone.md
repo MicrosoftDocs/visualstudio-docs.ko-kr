@@ -1,4 +1,5 @@
 ---
+description: 현재 스레드 열거형의 복사본을 별도의 개체로 반환 합니다.
 title: 'IEnumDebugThreads2:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f19c95e57ee1ae949573fcd0d4460d8c11ed72bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b934bbf6e358296c433a1a59fe675f376d1491ac
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842175"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225840"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -43,7 +44,7 @@ int Clone(
 `ppEnum`\
 제한이 이 열거형의 복사본을 별도의 개체로 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

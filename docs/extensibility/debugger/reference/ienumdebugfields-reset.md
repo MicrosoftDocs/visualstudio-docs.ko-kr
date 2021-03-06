@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 필드 열거형을 첫 번째 요소로 다시 설정 합니다.
 title: 'IEnumDebugFields:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cbe3ecaf681a0fb88dab46b9c2dac2110b7beb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fedc24c3f51a2a4cbdfae9464f13791f9d8ec1d1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919677"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226607"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 이 메서드는 열거형을 첫 번째 요소로 다시 설정 합니다.
@@ -36,9 +37,9 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>매개 변수
- None
+ 없음
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

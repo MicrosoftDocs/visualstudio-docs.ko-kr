@@ -1,4 +1,5 @@
 ---
+description: 사용자 지정 특성을 열거 합니다.
 title: IEnumDebugCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c3e4cfaf35c1fee655eedc49e8a3212c1355390
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bffa799ba14738daea480a1677f1b1a820e98767
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967477"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226841"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 사용자 지정 특성을 열거 합니다.
@@ -37,7 +38,7 @@ IEnumCustomAttributes : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugCustomAttributes` .
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 건너뜁니다.|

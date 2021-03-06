@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 IDebugField 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
 title: IEnumDebugFields | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956401"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226555"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 이 인터페이스는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
@@ -37,7 +38,7 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|열거형에서 다음 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체 집합을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정 된 수의 항목을 건너뜁니다.|
