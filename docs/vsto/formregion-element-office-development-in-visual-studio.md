@@ -1,4 +1,5 @@
 ---
+description: Vstov4 네임 스페이스의 n 요소는 VSTO 추가 기능에 연결 된 Microsoft Office Outlook 양식 영역을 식별 합니다.
 title: '&lt;n &gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 469b041ac879753e5fe4be0f9bd739be1030a942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0851ba9e117b464d3a2fbb9ad9903af17ceda0c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970392"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221082"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;n &gt; 요소 (Visual Studio에서 Office 개발)
   `formRegion`네임 스페이스의 요소는 `vstov4` VSTO 추가 기능에 연결 된 Microsoft Office Outlook 양식 영역을 식별 합니다.
@@ -41,9 +42,9 @@ ms.locfileid: "99970392"
 
  `formRegion` 요소에는 다음 특성이 있습니다.
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
-|`name`|필수 사항입니다. 양식 영역 이름을 식별합니다.|
+|`name`|필수 요소. 양식 영역 이름을 식별합니다.|
 
  `formRegion` 요소에는 다음 자식 요소가 있습니다.
 
@@ -52,11 +53,11 @@ ms.locfileid: "99970392"
 
  `messageClass` 요소에는 다음 특성이 있습니다.
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
-|`name`|필수 사항입니다. 양식 영역과 관련된 양식을 식별합니다.|
+|`name`|필수 요소. 양식 영역과 관련된 양식을 식별합니다.|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드 예제에서는 `formRegion` 을 사용하여 배포된 Outlook VSTO 추가 기능에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 양식 영역과 관련된 세 개의 메시지 클래스가 있습니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ```xml

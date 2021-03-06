@@ -1,4 +1,5 @@
 ---
+description: 로컬 파일 목록이 지정 된 경우이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 확인 합니다.
 title: SccEnumChangedFiles 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9349172ac60f1e02f82327424cdbc3a3b1d4f865
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942999"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221537"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
 로컬 파일 목록이 지정 된 경우이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 확인 합니다.
@@ -58,7 +59,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업이 완료되었습니다.|
 |SCC_UNSPECIFIEDERROR|일반 오류.|

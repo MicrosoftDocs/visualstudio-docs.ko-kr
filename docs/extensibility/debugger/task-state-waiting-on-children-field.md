@@ -1,4 +1,5 @@
 ---
+description: 태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.
 title: TASK_STATE_WAITING_ON_CHILDREN 필드 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 052b1dd454ca091b0d83becbd02909c7cd92d00e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1533ef28b32450d9b039c27e49ba655dddfd6ebe
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837465"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223208"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
 태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.

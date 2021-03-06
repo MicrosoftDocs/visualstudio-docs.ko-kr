@@ -1,4 +1,5 @@
 ---
+description: 이 구조체는 메서드 또는 함수의 매개 변수를 나타냅니다.
 title: METADATA_ADDRESS_PARAM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938722"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222382"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 이 구조체는 메서드 또는 함수의 매개 변수를 나타냅니다.

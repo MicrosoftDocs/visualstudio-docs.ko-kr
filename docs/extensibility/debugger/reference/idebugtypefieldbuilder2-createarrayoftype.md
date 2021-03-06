@@ -1,4 +1,5 @@
 ---
+description: 지정 된 형식 및 크기의 배열을 만듭니다.
 title: 'IDebugTypeFieldBuilder2:: CreateArrayOfType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4e8bfb77a761622407addbd1708f2302f866a5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41b89a1f11d4594777518f147dd6a00907af20f1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965670"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223072"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 지정 된 형식 및 크기의 배열을 만듭니다.
@@ -52,7 +53,7 @@ int CreateArrayOfType (
 `pArrayOfTypeField`\
 제한이 새 배열을 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

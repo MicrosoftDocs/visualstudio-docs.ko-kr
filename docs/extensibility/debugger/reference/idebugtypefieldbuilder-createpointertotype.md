@@ -1,4 +1,5 @@
 ---
+description: 지정 된 형식에 대 한 포인터를 만듭니다.
 title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee3beb4bd79c438430ddfc2aac0fc0a5894404b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5cc642ae4d9d4030abcf32c1e51360c8cb4a84f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223149"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 지정 된 형식에 대 한 포인터를 만듭니다.
@@ -47,7 +48,7 @@ int CreatePointerToType(
 `pPtrToTypeField`\
 제한이 새 **Idebugfield** 개체가 나타내는 포인터를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

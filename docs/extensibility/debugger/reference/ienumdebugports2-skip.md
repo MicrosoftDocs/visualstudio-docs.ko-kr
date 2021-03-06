@@ -1,4 +1,5 @@
 ---
+description: Ports 열거에서 지정 된 수의 요소를 건너뜁니다.
 title: 'IEnumDebugPorts2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 708d7d85b7159e43305b52819a683b0895ddc295
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ff77835470e4eb495de0af992ec6563cb3fba6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224475"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 지정 된 수의 요소를 건너뜁니다.
@@ -43,7 +44,7 @@ int Skip(
 `celt`\
 진행 건너뛸 요소 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE` `celt` 가 나머지 요소 수보다 크면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="remarks"></a>설명

@@ -1,4 +1,5 @@
 ---
+description: 디스어셈블리 스트림에서 검색을 시작할 위치를 지정 합니다.
 title: SEEK_START | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 833a1e1b18e28070d50882fcfb485d0b6797ad20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bb097c6015b5457a0ad4808674321c410a559d2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965488"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221901"
 ---
 # <a name="seek_start"></a>SEEK_START
 디스어셈블리 스트림에서 검색을 시작할 위치를 지정 합니다.

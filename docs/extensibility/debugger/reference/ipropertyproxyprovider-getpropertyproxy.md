@@ -1,4 +1,5 @@
 ---
+description: 지정 된 프록시 ID에 대 한 속성 프록시 인터페이스를 검색 합니다.
 title: 'IPropertyProxyProvider:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7efff35e46ed0849045cf6c743a5a26c3d86bcd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9212e9c7d0392bf9c4d6229ba76e40ea21f0686
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962147"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222590"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 지정 된 프록시 ID에 대 한 속성 프록시 인터페이스를 검색 합니다.
@@ -48,7 +49,7 @@ int GetPropertyProxy(
 `proxy`\
 제한이 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

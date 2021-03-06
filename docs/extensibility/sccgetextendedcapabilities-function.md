@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 플러그 인에서 지 원하는 추가 기능을 반환 합니다.
 title: SccGetExtendedCapabilities 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958416"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220783"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 함수
 이 함수는 소스 제어 플러그 인에서 지 원하는 추가 기능을 반환 합니다.
@@ -48,7 +49,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|기능 가져오기 작업을 완료 했습니다.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|알 수 없거나 지정 되지 않은 오류가 발생 했습니다.|

@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 속성 개체에 대 한 프록시를 반환 합니다.
 title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ae18e9e04d6de4be3dcaf28a0e8eae6303ae75e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbcaa460546443dcbc714a3fa72a6ebc7479dfc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222863"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 이 메서드는 속성 개체에 대 한 프록시를 반환 합니다.
@@ -48,7 +49,7 @@ int GetPropertyProxy(
 `proxy`\
 제한이 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 인터페이스에 구현 된 원하는 프록시입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

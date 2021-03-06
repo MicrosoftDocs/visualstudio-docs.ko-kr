@@ -1,4 +1,5 @@
 ---
+description: 이 구조는 필드 형식에 대 한 다양 한 종류의 정보를 지정 합니다.
 title: TYPE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880088"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223422"
 ---
 # <a name="type_info"></a>TYPE_INFO
 이 구조는 필드 형식에 대 한 다양 한 종류의 정보를 지정 합니다.
@@ -82,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서는 `unionmember` `TYPE_INFO` c #에서 구조체의 멤버를 해석 하는 방법을 보여 줍니다. 이 예제에서는 하나의 형식 ()만 해석 하지만 다른 형식 ()은 해석 하는 방법을 보여 줍니다 `TYPE_KIND_METADATA` .
 
 ```csharp

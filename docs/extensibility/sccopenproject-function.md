@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 기존 소스 제어 프로젝트를 열거나 새 프로젝트를 만듭니다.
 title: SccOpenProject 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221550"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 함수
 이 함수는 기존 소스 제어 프로젝트를 열거나 새 프로젝트를 만듭니다.
@@ -75,10 +76,10 @@ SCCRTN SccOpenProject (
 
 진행 소스 제어 플러그 인에서 프로젝트를 알 수 없는 경우 새 프로젝트를 만들어야 하는지 여부를 나타냅니다. 값은 및의 조합일 수 있습니다. `SCC_OP_CREATEIFNEW``SCC_OP_SILENTOPEN.`
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|프로젝트를 여는 동안 성공 했습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|

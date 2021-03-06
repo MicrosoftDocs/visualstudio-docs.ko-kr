@@ -1,4 +1,5 @@
 ---
+description: 디버그 모듈 정보에 대 한 플래그를 지정 합니다.
 title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 116eb36cf96284698a6d93730db39bb38d22b93e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc27420fc598d174b8e71c5ed3edd879a4a30d9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938709"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222369"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 디버그 모듈 정보에 대 한 플래그를 지정 합니다.

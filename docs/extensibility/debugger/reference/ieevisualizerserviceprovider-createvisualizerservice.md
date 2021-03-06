@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는 시각화 도우미 서비스를 만듭니다.
 title: 'IEEVisualizerServiceProvider:: CreateVisualizerService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b304dd8fe2845cf6c1201e6e128f8b89ec47b1b6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842195"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222824"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 이 메서드는 시각화 도우미 서비스를 만듭니다.
@@ -63,7 +64,7 @@ int CreateVisualizerService(
 `ppService`\
 제한이 만든 서비스입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

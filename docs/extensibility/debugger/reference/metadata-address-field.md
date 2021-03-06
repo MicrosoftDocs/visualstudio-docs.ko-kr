@@ -1,4 +1,5 @@
 ---
+description: 이 구조체는 클래스 또는 구조체의 필드 주소를 나타냅니다.
 title: METADATA_ADDRESS_FIELD | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 686eeff2012c02442d166966fff32abc0b1cdf32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96171b41f8788da0772ac2657c9a10d84af96b94
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961978"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222421"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 

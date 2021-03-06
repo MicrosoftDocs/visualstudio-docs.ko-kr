@@ -1,4 +1,5 @@
 ---
+description: 지정 된 속성 또는 필드에 대해 표시할 값 문자열의 수를 검색 합니다.
 title: 'IEEVisualizerService:: GetValueDisplayStringCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97b06179027549c0bebe83b2b4866e53c8fd9569
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b77e2537e7581bb15f6458b4515d407fcfa1f827
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222850"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 지정 된 속성 또는 필드에 대해 표시할 값 문자열의 수를 검색 합니다.
@@ -52,7 +53,7 @@ int GetValueDisplayStringCount (
 `pcelt`\
 제한이 표시할 값 문자열의 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="see-also"></a>참고 항목

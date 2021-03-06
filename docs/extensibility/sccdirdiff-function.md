@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 클라이언트 디스크의 현재 로컬 디렉터리와 소스 제어에서 해당 하는 프로젝트 간의 차이를 표시 합니다.
 title: SccDirDiff 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929214"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221602"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 함수
 이 함수는 클라이언트 디스크의 현재 로컬 디렉터리와 소스 제어에서 해당 하는 프로젝트 간의 차이를 표시 합니다.
@@ -58,7 +59,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|디스크의 디렉터리는 소스 코드 제어의 프로젝트와 동일 합니다.|
 |SCC_I_FILESDIFFER|디스크의 디렉터리는 소스 코드 제어의 프로젝트와 다릅니다.|

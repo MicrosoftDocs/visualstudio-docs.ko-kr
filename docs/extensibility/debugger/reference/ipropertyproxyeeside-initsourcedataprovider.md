@@ -1,4 +1,5 @@
 ---
+description: 이 개체의 원본 데이터를 초기화 하 고 초기 데이터를 포함 하는 개체를 반환 합니다.
 title: 'IPropertyProxyEESide:: InitSourceDataProvider | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60de888e3aa3f26bc094440fb07a67e49b62e73b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd1040c6269b9d394e6f0968f595c71cf1576135
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895988"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224124"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 이 개체의 원본 데이터를 초기화 하 고 초기 데이터를 포함 하는 개체를 반환 합니다.
@@ -43,7 +44,7 @@ int InitSourceDataProvider(
 `dataOut`\
 제한이 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) 개체를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

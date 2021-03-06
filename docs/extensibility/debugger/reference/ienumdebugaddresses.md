@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 IDebugAddress 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
 title: IEnumDebugAddresses | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875798"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222642"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 이 인터페이스는 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
@@ -37,7 +38,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|열거형에서 다음 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체 집합을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|지정 된 수의 항목을 건너뜁니다.|

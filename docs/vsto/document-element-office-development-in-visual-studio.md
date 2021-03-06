@@ -1,4 +1,5 @@
 ---
+description: Vstov4 네임 스페이스의 document 요소는 문서 수준 사용자 지정에 대 한 사용자 지정 관련 정보를 저장 합니다.
 title: '&lt;document &gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3563169bd9b567cd974248bf4185cb9bc8a7b022
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949833"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221043"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;document &gt; 요소 (Visual Studio에서 Office 개발)
   `document`네임 스페이스의 요소는 `vstov4` 문서 수준 사용자 지정에 대 한 사용자 지정 관련 정보를 저장 합니다.
@@ -35,15 +36,15 @@ ms.locfileid: "99949833"
 ## <a name="elements-and-attributes"></a>요소 및 특성
  문서 수준 사용자 지정에만 필요 합니다. `document` 요소는 `vstov4` 네임스페이스에 있습니다. `document` 요소에는 다음 특성이 있습니다.
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
-|`solutionId`|필수 사항입니다. Visual Studio Tools for Office 런타임에서 문서 수준 솔루션을 고유 하 게 식별 하는 데 사용 되는 GUID입니다. 이 값은 _AssemblyLocation 사용자 지정 문서 속성으로 저장 됩니다. 자세한 내용은 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)를 참조 하세요.|
+|`solutionId`|필수 요소. Visual Studio Tools for Office 런타임에서 문서 수준 솔루션을 고유 하 게 식별 하는 데 사용 되는 GUID입니다. 이 값은 _AssemblyLocation 사용자 지정 문서 속성으로 저장 됩니다. 자세한 내용은 [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)를 참조 하세요.|
 
  `document` 에는 자식 요소가 없습니다.
 
 ## <a name="document-level-customization-example"></a>문서 수준 사용자 지정 예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
  다음 코드 예제에서는를 `document` 사용 하 여 배포 된 문서 수준 Office 솔루션의 요소를 보여 줍니다 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드

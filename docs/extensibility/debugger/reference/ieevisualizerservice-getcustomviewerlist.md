@@ -1,4 +1,5 @@
 ---
+description: 이 메서드는이 서비스에서 인식 하는 형식 시각화 도우미의 목록을 반환 합니다.
 title: 'IEEVisualizerService:: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd9c633c6b65bbd597619f9fd30487a734d9004
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907807"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222902"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 이 메서드는이 서비스에서 인식 하는 형식 시각화 도우미의 목록을 반환 합니다.
@@ -58,7 +59,7 @@ int GetCustomViewerList(
 `pceltFetched`\
 제한이 실제로 검색 된 시각화 도우미 수입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

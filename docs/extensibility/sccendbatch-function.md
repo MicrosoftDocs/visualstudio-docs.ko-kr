@@ -1,4 +1,5 @@
 ---
+description: 이 함수는 소스 제어 작업의 일괄 처리를 끝냅니다.
 title: SccEndBatch 함수 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d49fcd9920c442aa1736f1fb0f3e46ccd4eba0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943051"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221576"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 함수
 이 함수는 소스 제어 작업의 일괄 처리를 끝냅니다. 이러한 일괄 처리는 중첩 될 수 없습니다.
@@ -34,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업 일괄 처리를 완료 했습니다.|
 |SCC_E_UNKNOWNERROR|일반 오류입니다.|

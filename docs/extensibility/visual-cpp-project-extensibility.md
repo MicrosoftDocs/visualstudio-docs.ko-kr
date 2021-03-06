@@ -1,4 +1,5 @@
 ---
+description: Visual C++ 프로젝트 시스템은 .vcxproj 파일에 사용 됩니다.
 title: Visual C++ 프로젝트 확장성
 ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
@@ -10,12 +11,12 @@ ms.author: corob
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc538402ae39753f14a3bccd8bcd17ddb0081078
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926025"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221238"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 프로젝트 시스템 확장성 및 도구 집합 통합
 
@@ -493,7 +494,7 @@ CPS는 컨텍스트 형식에 대해 다른 값을 지원 하지만 Visual C++ �
 
 `PageTemplate`특성은 **속성 페이지** 대화 상자에 규칙이 표시 되는 방법을 정의 합니다. 특성에는 다음 값 중 하나를 사용할 수 있습니다.
 
-| attribute | Description |
+| attribute | 설명 |
 |------------| - |
 | `generic` | 모든 속성은 범주 제목 아래에 있는 한 페이지에 표시 됩니다.<br/>규칙은 및 컨텍스트에 대해서는 볼 수 있지만는 볼 수 `Project` `PropertySheet` 없습니다 `File` .<br/><br/> 예: `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | 범주는 하위 페이지로 표시 됩니다.<br/>규칙은 `Project` , 및의 모든 컨텍스트에서 볼 수 있습니다 `PropertySheet` . `File`<br/>규칙 `ItemType` `Rule.DataSource` 이름이 항목 그룹에 포함 되지 않은 경우 프로젝트에가에 정의 된 항목이 있는 경우에만 프로젝트 속성에 규칙이 표시 됩니다 `ProjectTools` .<br/><br/>예: `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
@@ -667,7 +668,7 @@ Visual Studio 2017에서 많은 c + + 솔루션으로 작업할 때 성능을 �
 
 VSIX 파일을 만드는 방법에 대 한 자세한 내용은 [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공을 참조 하세요. 에서 파일을 추가 하는 등의 특수 설치 위치에 파일을 추가 하는 방법에 대 한 자세한 내용은 `$(VCTargetsPath)` [extensions 폴더 외부에 설치](../extensibility/set-install-root.md)를 참조 하세요.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 [MSBuild](../msbuild/msbuild.md)(Microsoft Build System)는 프로젝트 파일에 대 한 확장 가능한 XML 기반 형식 및 빌드 엔진을 제공 합니다. 기본 [msbuild 개념](../msbuild/msbuild-concepts.md) 및 Visual C++ 프로젝트 시스템을 확장 하기 위해 [Visual C++의 msbuild](/cpp/build/reference/msbuild-visual-cpp-overview) 작동 방식을 잘 알고 있어야 합니다.
 

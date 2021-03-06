@@ -1,4 +1,5 @@
 ---
+description: 프로그램 열거의 요소 수를 반환 합니다.
 title: 'IEnumDebugPrograms2:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d70e40416c83f6013f7735963f106d0bcb573f42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0d6fb47478a75e9636f7da3f4097c01e7bd378b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224371"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 열거형의 요소 수를 반환 합니다.
@@ -43,7 +44,7 @@ int GetCount(
 `pcelt`\
 제한이 열거형의 요소 수를 반환 합니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
 ## <a name="remarks"></a>설명

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f214ac47ad3d831432b91652c5bbe3249ce5f1c5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223487"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>방법: 관리 코드에 대 한 레거시 코드 분석 수동으로 실행
 
@@ -28,7 +28,7 @@ ms.locfileid: "99859998"
 1. Visual Studio 2019 버전 16.5 이상에서 Visual Studio를 시작 하기 전에 명령 프롬프트에서 다음 명령을 실행 합니다.
 
 ```
-set EnableLegacyCodeAnalysis = true
+setx EnableLegacyCodeAnalysis true
 ```
 
 2. **솔루션 탐색기** 에서 프로젝트를 클릭 합니다.

@@ -1,4 +1,5 @@
 ---
+description: 이 인터페이스는 IDebugObject 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
 title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eece06d64a4eeefefe4e132295f20e40a032434b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957077"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224631"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|열거형에서 다음 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체 집합을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|지정 된 수의 항목을 건너뜁니다.|
