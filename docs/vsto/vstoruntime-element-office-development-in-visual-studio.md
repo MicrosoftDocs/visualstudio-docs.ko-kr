@@ -1,6 +1,7 @@
 ---
 title: '&lt;M e &gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
+description: Vstav3 네임 스페이스의 M e 요소에는 특정 Office 솔루션에 대해 지원 되는 Visual Studio Tools for Office 런타임 버전이 포함 되어 있습니다.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921752"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468574"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;M e &gt; 요소 (Visual Studio에서 Office 개발)
   `vstoRuntime` 네임스페이스의 `vstav3` 요소에는 특정 Office 솔루션에 대해 지원되는 Visual Studio Tools for Office Runtime 버전이 포함됩니다.
@@ -41,8 +42,8 @@ ms.locfileid: "99921752"
 
 |attribute|Description|
 |---------------|-----------------|
-|`release`|필수 사항입니다. Visual Studio Tools for Office Runtime의 릴리스 버전입니다.|
-|`version`|필수 사항입니다. Visual Studio Tools for Office Runtime 버전 번호입니다.|
+|`release`|필수 요소. Visual Studio Tools for Office Runtime의 릴리스 버전입니다.|
+|`version`|필수 요소. Visual Studio Tools for Office Runtime 버전 번호입니다.|
 |`supportUrl`|선택 사항입니다. Visual Studio Tools for Office Runtime의 설치 위치에 연결합니다.|
 
  `vstoRuntime` 에는 요소가 없습니다.

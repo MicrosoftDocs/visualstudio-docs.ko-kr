@@ -1,5 +1,6 @@
 ---
 title: '&lt;update &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Update 요소는 솔루션에서 업데이트를 확인 하는 간격을 지정 합니다.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59e7b21902c486bd78548cd79f2e79a5056042a5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968764"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468509"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 요소 (Visual Studio에서 Office 개발)
   `update`요소는 솔루션에서 업데이트를 확인 하는 간격을 지정 합니다.
@@ -43,7 +44,7 @@ ms.locfileid: "99968764"
 
 |attribute|Description|
 |---------------|-----------------|
-|`enabled`|필수 사항입니다. 사용을 다음 값 중 하나로 설정 합니다.<br /><br /> -   업데이트를 확인 하려면 **true로 설정** 합니다.<br />-   **false로 설정** 하면 업데이트를 확인할 수 없습니다.|
+|`enabled`|필수 요소. 사용을 다음 값 중 하나로 설정 합니다.<br /><br /> -   업데이트를 확인 하려면 **true로 설정** 합니다.<br />-   **false로 설정** 하면 업데이트를 확인할 수 없습니다.|
 
  `update` 요소에는 다음 자식 요소가 있습니다.
 
@@ -54,8 +55,8 @@ ms.locfileid: "99968764"
 
 |attribute|Description|
 |---------------|-----------------|
-|`maximumAge`| 필수 사항입니다. 이 값을 정수로 설정 합니다.|
-|`unit`|필수 사항입니다. `unit`을 다음 값 중 하나로 설정 합니다.<br /><br /> -   **시간의**<br />-   **일별로**<br />-   **걸릴**|
+|`maximumAge`| 필수 요소. 이 값을 정수로 설정 합니다.|
+|`unit`|필수 요소. `unit`을 다음 값 중 하나로 설정 합니다.<br /><br /> -   **시간의**<br />-   **일별로**<br />-   **걸릴**|
 
 ## <a name="example-of-always-checking-for-updates"></a>업데이트를 항상 확인 하는 예
 
