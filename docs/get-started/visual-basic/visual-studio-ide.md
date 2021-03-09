@@ -1,7 +1,7 @@
 ---
 title: Visual Basic 개발자를 위한 개요
 description: Visual Basic 개발자가 Visual Studio를 사용하여 코드를 편집, 디버그, 빌드한 다음 앱을 게시하는 방법을 알아봅니다.
-ms.date: 11/15/2018
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
 - get-started
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944396"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682976"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE 시작 | Visual Basic
 
@@ -200,13 +200,13 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 ::: moniker range="vs-2017"
 
-시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드* 를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
+시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 워크로드를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 *워크로드* 를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
+시작하려면 [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)하여 시스템에 설치합니다. 모듈식 설치 관리자를 사용하면 선호하는 프로그래밍 언어 또는 플랫폼에 필요한 기능 그룹인 워크로드를 선택하여 설치할 수 있습니다. [프로그램 생성](#create-a-program) 단계를 수행하려면 설치 중에 **.NET Core 플랫폼 간 개발** 워크로드를 선택해야 합니다.
 
 ::: moniker-end
 
@@ -232,7 +232,8 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 1. Visual Studio를 엽니다. 시작 창에서 **코드를 사용하지 않고 계속** 을 선택합니다.
 
-   ![Visual Studio 2019의 시작 창](media/vs-2019/continue-without-code.png)
+
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="'코드 없이 계속' 링크가 강조 표시된 Visual Studio 2019 시작 창의 스크린샷입니다.":::
 
    IDE가 열립니다.
 
@@ -240,7 +241,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 2. 메뉴 모음에서 **도구** > **옵션** 을 선택하여 **옵션** 대화 상자를 엽니다.
 
-3. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게** 로 변경하고 **확인** 을 선택합니다.
+3. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게** 로 변경하고 **확인** 을 클릭합니다.
 
    ![Visual Studio에서 색 테마를 어둡게로 변경](media/change-color-theme.png)
 
@@ -264,13 +265,13 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 1. 메뉴 모음에서 **도구** > **설정 가져오기 및 내보내기** 를 선택합니다.
 
-2. **설정 가져오기 및 내보내기 마법사** 의 첫 번째 페이지에서 **모두 다시 설정** 을 선택한 후 **다음** 을 선택합니다.
+2. **설정 가져오기 및 내보내기 마법사** 의 첫 번째 페이지에서 **모두 다시 설정** 을 선택한 후 **다음** 을 클릭합니다.
 
-3. **현재 설정 저장** 페이지에서 현재 설정을 저장하거나 저장하지 않는 옵션을 선택한 후 **다음** 을 선택합니다. 설정을 사용자 지정하지 않은 경우 **아니요, 다시 설정하여 현재 설정을 덮어씁니다.** 를 선택합니다.
+3. **현재 설정 저장** 페이지에서 현재 설정을 저장하거나 저장하지 않는 옵션을 선택한 후 **다음** 을 클릭합니다. 설정을 사용자 지정하지 않은 경우 **아니요, 다시 설정하여 현재 설정을 덮어씁니다.** 를 선택합니다.
 
-4. **기본 설정 컬렉션 선택** 페이지에서 **Visual Basic** 을 선택한 후 **마침** 을 선택합니다.
+4. **기본 설정 컬렉션 선택** 페이지에서 **Visual Basic** 을 선택한 후 **마침** 을 클릭합니다.
 
-5. **다시 설정 완료** 페이지에서 **닫기** 를 선택합니다.
+5. **다시 설정 완료** 페이지에서 **닫기** 를 클릭합니다.
 
 IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
@@ -344,21 +345,25 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio 메뉴 모음에서 **파일** > **새 프로젝트** 를 선택합니다.
+1. Visual Studio 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 선택합니다. (또는 **Ctrl**+**Shift**+**N** 을 누릅니다.)
 
-   ![메뉴 모음의 파일 > 새 프로젝트](media/vs-2019/file-new-project.png)
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="파일의 스크린샷 > 새로 만들기 > Visual Studio 2019 메뉴 모음의 프로젝트 선택을 차례대로 선택합니다.":::
 
    **새 프로젝트 만들기** 창이 열리고 여러 프로젝트 *템플릿* 이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
 
-1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console** 을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. **언어** 드롭다운 목록에서 **Visual Basic** 을 선택하여 추가로 템플릿 결과를 필터링할 수 있습니다.
+1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console** 을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. 모든 **언어** 드롭다운 목록에서 **Visual Basic** 을 선택하고 모든 **플랫폼** 목록에서 **Windows** 를 선택한 후 **모든 프로젝트 형식** 목록에서 **콘솔** 을 선택하면 템플릿 결과를 추가로 필터링할 수 있습니다.
 
-1. **콘솔 앱(.NET Core)** 템플릿을 선택하고 **다음** 을 선택합니다.
+   **콘솔 애플리케이션** 템플릿을 선택한 후 **다음** 을 클릭합니다.
 
-   ![Visual Studio에서 새 프로젝트 만들기](media/vs-2019/create-new-project.png)
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="원하는 템플릿을 선택할 수 있는 Visual Studio 2019의 '새 프로젝트 만들기' 창의 스크린샷입니다.":::
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고, 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경한 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경(기본 로캘은 `C:\Users\<name>\source\repos`)한 후, **다음** 을 선택합니다.
 
-   ![Visual Studio에서 새 프로젝트 구성](media/vs-2019/configure-new-project.png)
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="프로젝트 이름을 입력하는 Visual Studio 2019의 '새 프로젝트 구성' 창 스크린샷입니다.":::
+
+1. **추가 정보** 창의 **대상 프레임워크** 드롭다운 메뉴에 **.NET Core 3.1** 이 표시 되는지 확인한 후 **만들기** 를 클릭합니다.
+
+    :::image type="content" source="media/vs-2019/create-project-additional-info.png" alt-text="원하는 .NET Core 프레임워크 버전을 선택하는 Visual Studio 2019의 '추가 정보' 창 스크린샷입니다.":::
 
    Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 
