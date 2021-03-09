@@ -1,5 +1,6 @@
 ---
 title: '&lt;postActionData &gt; 요소 (Office 개발)'
+description: Vstav3 네임 스페이스의 postActionData 요소는 Office 솔루션이 설치 된 후 실행 되는 배포 후 작업과 관련 된 데이터를 지정 합니다.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 505b55b7513446a158adac66e7e0e38f401f0808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a75f61c6d1f80a127f49d96c4e3f4910c66dd8aa
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847689"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470068"
 ---
 # <a name="ltpostactiondatagt-element-office-development"></a>&lt;postActionData &gt; 요소 (Office 개발)
   `postActionData` 네임스페이스의 `vstav3` 요소는 Office 솔루션이 설치된 후 실행되는 배포 후 작업과 관련된 데이터를 지정합니다.

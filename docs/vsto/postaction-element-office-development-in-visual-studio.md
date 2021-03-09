@@ -1,5 +1,6 @@
 ---
 title: '&lt;postAction &gt; 요소 (Visual Studio에서 Office 개발)'
+description: Vstav3 네임 스페이스의 postAction 요소에는 진입점 요소 및 배포 후 작업과 관련 된 모든 postActionData 요소가 포함 됩니다 .이 요소는 Office 솔루션이 설치 된 후 실행 됩니다.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f8c92c52aeee9f7f1dd5ab67b3dcef3a295474
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955764"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470055"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction &gt; 요소 (Visual Studio에서 Office 개발)
   `postAction` 네임스페이스의 `vstav3` 요소에는 `entrypoint` 요소 및 배포 후 작업과 관련된 모든 `postActionData` 요소가 포함되며 Office 솔루션 설치 후 실행됩니다.

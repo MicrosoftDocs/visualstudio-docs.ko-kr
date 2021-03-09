@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin::Unload
+description: 관리되는 VSTO 추가 기능이 언로드되기 바로 전에 호출됩니다.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a36599259a38d0b9b8eb814a457b3625d593b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e45fd9e6385388b9c6bc32098cf59799618d511b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934600"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469712"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   관리되는 VSTO 추가 기능이 언로드되기 바로 전에 호출됩니다.

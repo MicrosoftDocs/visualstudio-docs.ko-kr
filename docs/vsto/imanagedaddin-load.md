@@ -1,5 +1,6 @@
 ---
 title: IManagedAddIn::Load
+description: 관리되는 VSTO 추가 기능이 로드되면 호출됩니다.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc89ba13e9fc0f62b264cdb926e1a8392c0b41bd
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920334"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469764"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddIn::Load
   관리되는 VSTO 추가 기능이 로드되면 호출됩니다.
@@ -35,7 +36,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |*bstrManifestURL*|VSTO 추가 기능에 대한 매니페스트의 전체 경로입니다.|
 |*pdispApplication*|VSTO 추가 기능을 로드 하는 호스트 응용 프로그램을 나타내는 IDispatch에 대 한 포인터입니다.|
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
  메서드가 성공적으로 완료되었는지 여부를 나타내는 HRESULT 값입니다.
 
 ## <a name="remarks"></a>설명

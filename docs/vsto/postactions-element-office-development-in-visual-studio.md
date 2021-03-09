@@ -1,5 +1,6 @@
 ---
 title: '&lt;postActions &gt; 요소 (Office 개발)'
+description: Vstav3 네임 스페이스의 postActions 요소에는 Office 솔루션이 설치 된 후 실행 되는 배포 후 작업을 설명 하는 Postactions 요소가 모두 포함 되어 있습니다.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5c4a66e270cd446996884262d380df0f7384f54f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879438"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470042"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions &gt; 요소 (Office 개발)
   `postActions` 네임스페이스의 `vstav3` 요소에는 배포 후 작업을 설명하는 모든 `postAction` 요소가 포함되며 Office 솔루션 설치 후 실행됩니다.

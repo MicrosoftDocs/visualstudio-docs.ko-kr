@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin 인터페이스
+description: IManagedAddin 인터페이스를 구현 하 여 관리 되는 VSTO 추가 기능을 로드 하는 구성 요소를 만듭니다.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920436"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469790"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 인터페이스
   IManagedAddin 인터페이스를 구현 하 여 관리 되는 VSTO 추가 기능을 로드 하는 구성 요소를 만듭니다. 이 인터페이스는 2007 Microsoft Office 시스템에서 추가 되었습니다.
