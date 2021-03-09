@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939931"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683856"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>빠른 시작: Visual Studio에서 Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 
@@ -27,13 +27,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ::: moniker range="vs-2017"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 평가판을 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -72,14 +72,14 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
    !['새 프로젝트 만들기' 창 보기](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
+1. **새 프로젝트 만들기** 창의 언어 목록에서 **Visual Basic** 을 선택합니다. 그런 다음, 플랫폼 목록에서 **Windows** 를 선택하고 프로젝트 형식 목록에서 **콘솔** 을 선택합니다.
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
+   언어, 플랫폼 및 프로젝트 형식 필터를 적용한 후 **콘솔 애플리케이션** 템플릿을 선택하고 **다음** 을 선택합니다.
 
-   ![콘솔 앱(.NET Framework)에 대한 Visual Basic 템플릿을 선택합니다.](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="콘솔 애플리케이션에 대한 Visual Basic 템플릿을 선택합니다.":::
 
    > [!NOTE]
-   > **콘솔 앱(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
+   > **콘솔 애플리케이션** 템플릿이 표시되지 않는다면 **새 프로젝트 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
    >
    > !['새 프로젝트 만들기' 창의 '원하는 항목을 찾을 수 없음' 메시지에서 '추가 도구 및 기능 설치' 링크](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -89,9 +89,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName* 을 입력합니다. 그리고 **다음** 을 선택합니다.
 
-   !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png" alt-text="'새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.":::
+
+1. **추가 정보** 창에서 **.NET Core 3.1** 은 대상 프레임워크에 대해 이미 선택되어 있어야 합니다. 그렇지 않으면 **.NET Core 3.1** 을 선택합니다. 그런 다음, **만들기** 를 선택합니다.
+
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-target-framework.png" alt-text="'추가 정보' 창에서 .NET Core 3.1이 선택되어 있는지 확인합니다.":::
 
    Visual Studio에서 새 프로젝트를 엽니다.
 
@@ -132,7 +136,7 @@ IDE에서 **HelloWorld** 단추를 클릭하면 디버그 모드에서 프로그
 
    ![Hello World 단추를 클릭하여 도구 모음에서 프로그램을 실행합니다.](../ide/media/vb-console-hello-world-button.png)
 
-2. 아무 키를 눌러 콘솔 창을 닫습니다.
+2. 콘솔 창을 닫으려면 아무 키나 누릅니다.
 
    ![Hello World 및 계속하려면 아무 키나 누르세요.를 표시하는 콘솔 창](../ide/media/vb-console-hello-world-press-any-key.png)
 
@@ -141,4 +145,4 @@ IDE에서 **HelloWorld** 단추를 클릭하면 디버그 모드에서 프로그
 이 빠른 시작을 완료한 것을 축하 드립니다! Visual Basic 및 Visual Studio IDE를 이해하는 데 도움이 되었기를 바랍니다. 자세히 알아보려면 계속 다음 자습서를 사용하세요.
 
 > [!div class="nextstepaction"]
-> [Visual Studio에서 Visual Basic 시작하기](../get-started/visual-basic/tutorial-console.md)
+> [Visual Studio에서 Visual Basic 시작](../get-started/visual-basic/tutorial-console.md)

@@ -2,7 +2,7 @@
 title: '자습서: Visual Basic 시작'
 description: Visual Studio에서 Visual Basic 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915026"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682654"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
 
@@ -84,14 +84,14 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
+1. **새 프로젝트 만들기** 창의 언어 목록에서 **Visual Basic** 을 선택합니다. 그런 다음, 플랫폼 목록에서 **Windows** 를 선택하고 프로젝트 형식 목록에서 **콘솔** 을 선택합니다.
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
+   언어, 플랫폼 및 프로젝트 형식 필터를 적용한 후 **콘솔 애플리케이션** 템플릿을 선택하고 **다음** 을 선택합니다.
 
-   ![콘솔 앱(.NET Framework)에 대한 Visual Basic 템플릿을 선택합니다.](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="콘솔 애플리케이션에 대한 Visual Basic 템플릿을 선택합니다.":::
 
    > [!NOTE]
-   > **콘솔 앱(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
+   > **콘솔 애플리케이션** 템플릿이 표시되지 않는다면 **새 프로젝트 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
    >
    > !['새 프로젝트 만들기' 창의 '원하는 항목을 찾을 수 없음' 메시지에서 '추가 도구 및 기능 설치' 링크](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *WhatIsYourName* 을 입력합니다. 그리고 **다음** 을 선택합니다.
 
-   !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="'새 프로젝트 구성' 창에서 프로젝트의 이름을 'WhatIsYourName'으로 지정합니다.":::
+
+1. **추가 정보** 창에서 **.NET Core 3.1** 은 대상 프레임워크에 대해 이미 선택되어 있어야 합니다. 그렇지 않으면 **.NET Core 3.1** 을 선택합니다. 그런 다음, **만들기** 를 선택합니다.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="'추가 정보' 창에서 .NET Core 3.1이 선택되어 있는지 확인합니다.":::
 
    Visual Studio에서 새 프로젝트를 엽니다.
 
@@ -208,11 +212,13 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
+1. **새 프로젝트 만들기** 창의 언어 목록에서 **Visual Basic** 을 선택합니다. 그런 다음, 플랫폼 목록에서 **Windows** 를 선택하고 프로젝트 형식 목록에서 **콘솔** 을 선택합니다.
 
-1. 언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
+1. 언어, 플랫폼 및 프로젝트 형식 필터를 적용한 후 **콘솔 애플리케이션** 템플릿을 선택하고 **다음** 을 선택합니다.
 
-   그런 다음 **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *CalculateThis* 를 입력합니다. 다음으로, **만들기** 를 선택합니다.
+   그런 다음 **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *CalculateThis* 를 입력합니다. 그리고 **다음** 을 선택합니다.
+
+1. **추가 정보** 창에서 **.NET Core 3.1** 은 대상 프레임워크에 대해 이미 선택되어 있어야 합니다. 그렇지 않으면 **.NET Core 3.1** 을 선택합니다. 그런 다음, **만들기** 를 선택합니다.
 
 1. `Module Program` 줄과 `End Module` 줄 사이에 다음 코드를 입력합니다.
 
@@ -255,7 +261,7 @@ Visual Studio는 개발자를 위한 통합 개발 생산성 도구입니다. �
 
 ### <a name="what-is-a-console-app"></a>콘솔 앱이란?
 
-콘솔 앱은 입력을 받고 명령줄 창, 즉 콘솔에 출력을 표시합니다.
+콘솔 앱은 입력을 받아 콘솔이라고도 하는 명령줄 창에 출력을 표시합니다.
 
 ### <a name="what-is-net-core"></a>.NET Core란?
 

@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872523"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683033"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비 중: 콘솔 프로젝트(C#, C++, Visual Basic, F#)
 
-콘솔 프로젝트 디버깅을 준비하는 것은 Windows 프로젝트 디버깅을 준비하는 것과 비슷하지만 명령줄 인수 설정, 디버깅을 위해 애플리케이션을 일시 중지하는 방법 등 몇 가지 추가 고려 사항이 있습니다. 자세한 내용은 [Windows Forms 애플리케이션](../debugger/debugging-preparation-windows-forms-applications.md) 및 [디버깅 준비: Windows Forms 애플리케이션(.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))을 참조하세요. 콘솔 애플리케이션은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.
+콘솔 프로젝트 디버깅을 준비하는 것은 Windows 프로젝트 디버깅을 준비하는 것과 비슷하지만 명령줄 인수 설정, 디버깅을 위해 애플리케이션을 일시 중지하는 방법 등 몇 가지 추가 고려 사항이 있습니다. 자세한 내용은 [Windows Form 앱에 대한 디버깅 준비](../debugger/debugging-preparation-windows-forms-applications.md)를 참조하세요. 콘솔 애플리케이션은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.
 
 - C#, Visual Basic 및 F# 콘솔 애플리케이션
 

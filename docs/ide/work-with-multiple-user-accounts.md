@@ -2,19 +2,19 @@
 title: Work with multiple user accounts
 description: 모든 Microsoft 계정을 Visual Studio에 추가하여 별도로 로그인하지 않고도 모든 계정에서 리소스에 액세스할 수 있도록 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960457"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683796"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -65,7 +65,7 @@ AAD(Azure Active Directory)는 ASP.NET MVC 웹앱에서의 최종 사용자 Sing
 
 ::: moniker range=">=vs-2019"
 
-이 작업을 보려면 새 **ASP.NET Core 웹 애플리케이션** 프로젝트를 만듭니다. **새 ASP.NET Core 웹 애플리케이션 만들기** 페이지에서 **웹 애플리케이션** 템플릿을 선택한 다음 **인증** 에서 **변경** 을 선택합니다.
+이 작업을 보려면 새 **ASP.NET Core 웹앱** 프로젝트를 만듭니다. **새 ASP.NET Core 웹 애플리케이션 만들기** 페이지의 드롭다운 메뉴에서 **ASP.NET Core 3.1** 을 선택하고 **웹 애플리케이션** 템플릿을 선택한 다음, **인증** 에서 **변경** 을 선택합니다.
 
 ::: moniker-end
 

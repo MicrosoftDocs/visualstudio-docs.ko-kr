@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840888"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683014"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic으로 디버그
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 C# 또는 Visual Basic 디버그
 
 Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다.
 
@@ -28,13 +28,21 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력하여 검색 상자를 열고 **콘솔** 을 입력하고 **템플릿** 을 선택한 다음, **새 콘솔 앱(.NET Core) 프로젝트 만들기** 를 선택합니다. 표시되는 대화 상자에서 **만들기** 를 선택합니다.
+    시작 창이 열려 있지 않으면 **파일** > **시작 창** 을 선택합니다. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
+
+    **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다.
+
+    언어 및 플랫폼 필터를 적용한 후 .NET Core용 **콘솔 앱** 템플릿을 선택한 후, **다음** 을 선택합니다.
+
+    권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
+
+    .NET Core용 **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **.NET Core** 를 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. **MyDbgApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
-    ::: moniker-end
 
-     **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 및 **.NET Core** 워크로드를 선택한 다음, **수정** 을 선택합니다.
+    **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
+    ::: moniker-end
 
     Visual Studio가 프로젝트를 생성합니다.
 
@@ -56,7 +64,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
     End Module
     ```
 
-    이 코드로 바꿉니다.
+    바꿉니다.
 
     ```csharp
     class Program
@@ -155,17 +163,17 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11** 을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
-## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
+## <a name="inspect-variables-in-a-data-tip"></a>데이터 팁에서 변수 검사
 
-1. 현재 코드 줄에서(노란색 실행 포인터에 의해 표시됨) 마우스로 `c1` 개체를 마우스로 가리켜 datatip을 표시합니다.
+1. 현재 코드 줄에서(노란색 실행 포인터에 의해 표시됨) 마우스로 `c1` 개체를 마우스로 가리켜 데이터 팁을 표시합니다.
 
-    ![datatip 보기](../debugger/media/dbg-qs-data-tip-csharp.png "datatip 보기")
+    ![데이터 팁 보기](../debugger/media/dbg-qs-data-tip-csharp.png "데이터 팁 보기")
 
-    datatip은 `c1` 변수의 현재 값을 보여주고 이를 통해 해당 속성을 검사할 수 있습니다. 디버깅할 때 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드 줄에 버그가 있을 가능성이 큽니다.
+    데이터 팁은 `c1` 변수의 현재 값을 보여주고 이를 통해 해당 속성을 검사할 수 있습니다. 디버깅할 때 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드 줄에 버그가 있을 가능성이 큽니다.
 
-2. datatip을 확장하여 `c1` 개체의 현재 속성 값을 확인합니다.
+2. 데이터 팁을 확장하여 `c1` 개체의 현재 속성 값을 확인합니다.
 
-3. 코드를 실행하는 동안 `c1`의 값을 계속해서 볼 수 있도록 datatip을 고정하려면 작은 고정 아이콘을 클릭합니다. (고정된 datatip을 편리한 위치로 이동할 수 있습니다.)
+3. 코드를 실행하는 동안 `c1`의 값을 계속해서 볼 수 있도록 데이터 팁을 고정하려면 작은 고정 아이콘을 클릭합니다. (고정된 데이터 팁을 편리한 위치로 이동할 수 있습니다.)
 
 ## <a name="edit-code-and-continue-debugging"></a>코드를 편집하며 디버그 계속하기
 

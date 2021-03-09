@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729290"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684279"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -34,7 +34,7 @@ ms.locfileid: "97729290"
 
 ## <a name="create-a-web-application-project"></a>웹 애플리케이션 프로젝트 만들기
 
-Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 프로젝트를 만듭니다. **웹 애플리케이션** 을 선택하여 Razor Pages로 웹 애플리케이션을 만듭니다. 
+Visual Studio에서 `WebFrontEnd`라는 이름의 **ASP.NET Core 웹앱** 프로젝트를 만들어 Razor 페이지를 사용해 애플리케이션을 만듭니다.
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
 
 ::: moniker range="vs-2019"
 
-![프로젝트 이름 및 솔루션 이름 필드가 “WebFrontEnd”로 설정되어 있는 ASP.NET Core 웹 애플리케이션의 새 프로젝트 구성 화면 스크린샷](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![ASP.NET Core 웹앱 프로젝트 만들기](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 **Docker 지원 사용** 을 선택하지 않습니다. Docker 지원은 나중에 추가하겠습니다.
 
-![웹 애플리케이션이 선택되어 있는 새 ASP.NET Core 웹 애플리케이션 만들기 화면의 스크린샷 Docker 지원 사용 옵션은 선택되어 있지 않습니다.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![웹 프로젝트를 만들 때 추가 정보 화면의 스크린샷입니다. Docker 지원 사용 옵션은 선택되어 있지 않습니다.](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
    ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>Web API를 호출하는 코드 추가

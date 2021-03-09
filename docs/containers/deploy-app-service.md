@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 01/27/2020
+ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9a4f26227d2cd3bd065fab88ba294f7341ea4ed
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859647"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684332"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 ASP.NET Core 컨테이너 배포
 
@@ -49,9 +49,9 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. Visual Studio 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
-1. **ASP.NET Core 웹 애플리케이션** 을 선택하고 **다음** 을 선택합니다.
-1. 새 애플리케이션에 이름을 지정(또는 기본값 사용)하고 **만들기** 를 선택합니다.
-1. **웹 애플리케이션** 을 선택합니다.
+1. **ASP.NET Core 웹앱** 을 선택하고 **다음** 을 선택합니다.
+1. 새 애플리케이션에 이름을 지정(또는 기본값 사용)하고 **다음** 을 선택합니다.
+1. 대상으로 지정할 .NET 버전을 선택합니다. 잘 모르겠다면 LTS(장기 지원) 버전을 선택합니다.
 1. **HTTPS에 대한 구성** 확인란을 사용하여 SSL 지원의 사용 여부를 선택합니다.
 1. **Docker 지원 사용** 확인란을 선택합니다.
 1. 컨테이너 형식을 선택하고 **만들기** 를 클릭합니다.
@@ -65,13 +65,13 @@ Azure 구독이 아직 없는 경우 시작하기 전에 [체험 계정](https:/
 1. 게시 대상 대화 상자에서 **App Service Linux** 또는 **App Service** 를 선택합니다. 웹 서버를 호스트하는 운영 체제입니다.
 1. App Service에만 게시하거나, App Service와 ACR(Azure Container Registry)에 모두 게시할 수 있습니다. ACR(Azure Container Registry)에 컨테이너를 게시하려면 **컨테이너에 대한 새 App Service 만들기** 를 선택하고 **게시** 를 클릭합니다.
 
-   ![게시 대화 상자 스크린샷](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![게시 대화 상자 스크린샷](media/deploy-app-service/publish-app-service-linux-1.png)
 
    Azure Container Registry를 사용하지 않고 Azure App Service에만 게시하려면 **새로 만들기** 를 선택하고 **게시** 를 클릭합니다.
 
 1. Azure 구독과 연결된 계정으로 로그인했는지 확인하고 고유 이름, 구독, 리소스 그룹, 호스팅 계획 및 컨테이너 레지스트리(해당하는 경우)를 선택하거나 기본값을 적용합니다.
 
-   ![게시 설정 스크린샷](media/deploy-app-service/publish-app-service-linux2.png)
+   ![게시 설정 스크린샷](media/deploy-app-service/publish-app-service-linux-2.png)
 
 1. **만들기** 를 선택합니다. 컨테이너는 Azure의 선택한 리소스 그룹 및 컨테이너 레지스트리에 배포됩니다. 이 프로세스는 시간이 걸립니다. 작업이 완료되면, **게시** 탭에 사이트 URL을 포함하여 게시된 항목에 대한 정보가 표시됩니다.
 

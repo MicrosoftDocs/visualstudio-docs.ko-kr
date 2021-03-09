@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 11/10/2020
+ms.date: 03/02/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960574"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684021"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.8 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.9 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -245,8 +245,8 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 * [Mac용 Visual Studio 2019 릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK의 새로운 기능](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [C# 8.0의 새로운 기능](/dotnet/csharp/whats-new/csharp-8/)
-* [.NET Core 3.1의 새로운 기능](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [C# 9.0의 새로운 기능](/dotnet/csharp/whats-new/csharp-9)
+* [.NET 5의 새로운 기능](/dotnet/core/dotnet-five)
 * [.NET Framework의 새로운 기능](/dotnet/framework/whats-new/)
 * [Microsoft Build 컨퍼런스](https://www.microsoft.com/build)
 * [Microsoft Ignite 컨퍼런스](https://www.microsoft.com/ignite)

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838736"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682600"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>프로젝트 및 솔루션 소개
 
@@ -189,9 +189,14 @@ ms.locfileid: "99838736"
 
 2. **새 프로젝트 추가** 대화 상자에서 **단위 테스트** 라는 텍스트를 상단의 검색 상자에 입력한 다음 **언어** 아래의 **C#** 을 선택합니다.
 
-3. **MSTest 테스트 프로젝트(.NET Core)** 프로젝트 템플릿을 선택하고 **다음** 을 선택합니다.
+3. .NET Core용 **단위 테스트 프로젝트** 프로젝트 템플릿을 선택한 후 **다음** 을 선택합니다.
 
-4. 프로젝트 이름을 **QuickTest** 로 지정한 다음, **만들기** 를 선택합니다.
+   > [!NOTE]
+   > Visual Studio 2019 버전 16.9부터 MSTest 프로젝트 템플릿 이름이 **MSTest 단위 테스트 프로젝트(.NET Core)** 에서 **단위 테스트 프로젝트** 로 변경되었습니다. 이 업데이트에서 프로젝트 만들기의 여러 단계를 변경했습니다.
+
+4. 프로젝트 이름을 **QuickTest** 로 지정한 다음, **다음** 을 선택합니다.
+
+5. 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    두 번째 프로젝트가 **솔루션 탐색기** 에 추가되고 *UnitTest1.cs* 라는 파일이 편집기에서 열립니다.
 

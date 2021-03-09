@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741c22e8116d47a51a75369b5b114725c1f64bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909264"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682758"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C# 코드를 디버그하는 방법 알아보기
 
@@ -91,17 +91,19 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET Core 플랫폼 간 �
 
 1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
+   언어 및 플랫폼 필터를 적용한 후 .NET Core용 **콘솔 앱** 템플릿을 선택한 후, **다음** 을 선택합니다.
 
-   ![콘솔 앱(.NET Core)에 대한 C# 템플릿을 선택합니다.](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![콘솔 앱에 대한 C# 템플릿을 선택합니다.](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > **콘솔 앱(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **.NET Core 플랫폼 간 개발** 워크로드를 선택합니다.
+   > **콘솔 앱** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **.NET Core 플랫폼 간 개발** 워크로드를 선택합니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *GetStartedDebugging* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *GetStartedDebugging* 을 입력합니다. 그리고 **다음** 을 선택합니다.
+
+1. 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    Visual Studio에서 새 프로젝트를 엽니다.
-   
+
 ::: moniker-end
 
 ## <a name="create-the-application"></a>애플리케이션 만들기

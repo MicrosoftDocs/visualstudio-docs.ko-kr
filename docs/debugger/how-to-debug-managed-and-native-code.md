@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899422"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683323"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>자습서: 동일한 디버깅 세션에서 C# 및 C++ 디버그
 
@@ -126,9 +126,11 @@ Visual Studio를 설치했지만 필요한 워크로드가 없는 경우 Visual 
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력하여 검색 상자를 열고 **콘솔** 을 입력하고 **템플릿** 을 선택한 다음, **콘솔 앱(.NET Core)** 또는 C#용 **콘솔 앱(.NET Framework)** 을 선택합니다. 표시되는 대화 상자에서 **만들기** 를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 를 입력하여 검색 상자를 열고 **console** 을 입력하고 **템플릿** 을 선택한 다음, .NET Core용 **콘솔 앱** 또는 C#용 **콘솔 앱(.NET Framework)** 을 선택합니다. 표시되는 대화 상자에서 **다음** 을 선택합니다.
 
-    그런 다음, **Mixed_Mode_Calling_App** 과 같은 이름을 입력하고 **만들기** 를 클릭합니다.
+    그런 다음 **Mixed_Mode_Calling_App** 과 같은 이름을 입력하고 **다음** 또는 **만들기** 중 사용 가능한 옵션을 클릭합니다.
+
+    .NET Core에서 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **Windows 데스크톱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다.
@@ -136,7 +138,7 @@ Visual Studio를 설치했지만 필요한 워크로드가 없는 경우 Visual 
     그런 다음, **Mixed_Mode_Calling_App** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
     ::: moniker-end
 
-    **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
+    올바른 프로젝트 템플릿이 표시되지 않는다면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. 대상 프레임워크에 따라 **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
     > [!NOTE]
     > 기존 C++ 솔루션에 새 관리형 프로젝트를 추가할 수도 있습니다. 혼합 모드 디버깅 작업을 더 어렵게 만들기 위해 새 솔루션에서 프로젝트를 만듭니다.

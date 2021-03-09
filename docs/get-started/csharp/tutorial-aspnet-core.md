@@ -3,7 +3,7 @@ title: '자습서: C# 및 ASP.NET Core 시작'
 titleSuffix: ''
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956362"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683139"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
@@ -106,16 +106,16 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
-   !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="‘새 프로젝트 만들기’ 창 보기":::
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *ASP.NET* 을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다.
+1. **새 프로젝트 만들기** 창의 언어 목록에서 **C#** 을 선택합니다. 그런 다음, 플랫폼 목록에서 **Windows** 를 선택하고 프로젝트 형식 목록에서 **웹** 을 선택합니다.
 
-   언어 및 플랫폼 필터를 적용한 후 **ASP.NET Core 웹 애플리케이션** 템플릿을 선택한 후, **다음** 을 선택합니다.
+      언어, 플랫폼 및 프로젝트 형식 필터를 적용한 후 **ASP.NET Core 웹앱** 템플릿을 선택하고 **다음** 을 선택합니다.
 
-   ![ASP.NET Core 웹 애플리케이션에 대한 C# 템플릿을 선택합니다.](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="ASP.NET Core 웹앱에 대한 C# 템플릿을 선택합니다.":::
 
    > [!NOTE]
-   > **ASP.NET Core 웹 애플리케이션** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
+   > **ASP.NET Core 웹앱** 템플릿이 표시되지 않으면 **새 프로젝트 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
    >
    > !['새 프로젝트 만들기' 창의 '원하는 항목을 찾을 수 없음' 메시지에서 '추가 도구 및 기능 설치' 링크](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -125,13 +125,19 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업을 저장하라는 메시지가 표시되면 저장합니다. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *MyCoreApp* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *MyCoreApp* 을 입력합니다. 그리고 **다음** 을 선택합니다.
 
-   !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'MyCoreApp'으로 지정합니다.](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="'새 프로젝트 구성' 창에서 프로젝트의 이름을 'MyCoreApp'으로 지정합니다.":::
 
-1. **새 ASP.NET Core 웹 애플리케이션 만들기** 창의 위쪽 드롭다운 메뉴에 **ASP.NET Core 3.0** 이 표시되는지 확인합니다. 그런 다음, 예제 Razor Pages가 포함된 **웹 애플리케이션** 을 선택합니다. 다음으로, **만들기** 를 선택합니다.
+1. **추가 정보** 창의 상단 드롭다운 메뉴에 **.NET Core 3.1** 이 표시되는지 확인합니다. 상자를 선택하여 Docker 지원을 사용하도록 선택할 수 있습니다. [인증 변경] 단추를 클릭하여 인증 지원을 추가할 수도 있습니다. 여기서 다음 옵션을 선택할 수 있습니다.
+    - None: 인증 없음.
+    - 개별 계정: 이 항목은 로컬 또는 Azure 기반 데이터베이스에 저장됩니다.
+    - Microsoft ID 플랫폼: 이 옵션은 Active Directory, Azure AD 또는 Microsoft 365를 인증에 사용합니다.
+    - Windows: 인트라넷 애플리케이션에 적합합니다.
+    
+    **Docker 사용** 확인란을 선택 취소한 상태로 두고 인증 유형에 대해 **없음** 을 선택합니다. 그런 다음 **만들기** 를 선택합니다.
 
-   !['새 ASP.NET Core 웹 애플리케이션 만들기' 창](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="'추가 정보' 창에서 .NET Core 3.1이 선택되어 있는지 확인하고 모든 기본값을 그대로 유지합니다.":::
 
    Visual Studio에서 새 프로젝트를 엽니다.
 

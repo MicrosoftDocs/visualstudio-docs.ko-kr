@@ -2,7 +2,7 @@
 title: C#에서 WPF를 사용하는 Hello World 앱
 description: WPF(Windows Presentation Foundation) UI 프레임워크를 사용하는 C#을 통해 Visual Basic으로 간단한 Windows 데스크톱 .NET 앱을 만듭니다.
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924888"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682875"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>자습서: C\#으로 간단한 애플리케이션 만들기
 
@@ -80,16 +80,17 @@ Visual Studio에서 애플리케이션을 만들 때 먼저 프로젝트와 솔�
 
    ![‘새 프로젝트 만들기’ 창 보기](../../get-started/media/vs-2019/start-window-create-new-project.png "‘새 프로젝트 만들기’ 창의 스크린샷")
 
-1. **새 프로젝트 만들기** 화면에서 “WPF”를 검색하고 **WPF 앱(.NET Core)** , **다음** 을 차례로 선택합니다.
+1. **새 프로젝트 만들기** 화면에서 'WPF'를 검색하고 **WPF 애플리케이션** 을 선택한 후, **다음** 을 선택합니다.
 
-   ![‘새 프로젝트 만들기’ 대화 상자의 WPF 앱 템플릿](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "‘새 프로젝트 만들기’ 대화 상자의 WPF 앱 템플릿 스크린샷")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="'새 프로젝트 만들기' 대화 상자의 WPF 애플리케이션 템플릿":::
 
-   > [!NOTE]
-   > 두 개의 WPF 바탕 화면 템플릿을 찾을 수 있습니다. 하나는 .NET Framework 용이고 다른 하나는 .NET Core 용입니다. .NET Core 템플릿은 Visual Studio 2019 버전 16.3 이상에서 사용할 수 있습니다. 이 자습서에서는 둘 중 하나를 사용할 수 있지만 새로운 개발인 경우에는 .NET Core를 사용하는 것이 좋습니다.
+1. 다음 화면에서 프로젝트의 이름을 **HelloWPFApp** 로 지정하고 **다음** 을 선택합니다.
 
-1. 다음 화면에서 프로젝트의 이름을 **HelloWPFApp** 로 지정하고 **만들기** 를 선택합니다.
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="프로젝트 이름을 ‘HelloWPFApp’로 지정합니다.":::
 
-   ![프로젝트 이름을 ‘HelloWPFApp’로 지정합니다.](./media/vs-2019/exploreide-nameproject.png "프로젝트 이름을 지정하는 창의 스크린샷")
+1. **추가 정보** 창에서 **.NET Core 3.1** 은 대상 프레임워크에 대해 이미 선택되어 있어야 합니다. 그렇지 않으면 **.NET Core 3.1** 을 선택합니다. 그런 다음, **만들기** 를 선택합니다.
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="'추가 정보' 창에서 .NET Core 3.1이 선택되어 있는지 확인합니다.":::
 
 ::: moniker-end
 

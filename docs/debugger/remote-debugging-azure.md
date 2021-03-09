@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947921"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684160"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 2017에서 Azure 및 IIS의 ASP.NET Core 원격 디버그
 
@@ -58,10 +58,12 @@ Azure에서 원격으로 디버그하는 권장 방법은 시나리오에 따라
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Visual Studio 컴퓨터에서 ASP.NET Core 애플리케이션 만들기
 
-1. 새 ASP.NET Core 애플리케이션을 만듭니다.
+1. 새 ASP.NET Core 웹 애플리케이션을 만듭니다.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019에서 **Ctrl + Q** 를 입력하여 검색 상자를 열고 **asp.net** 을 입력하고 **템플릿** 을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기** 를 선택합니다. 대화 상자가 나타나면 프로젝트 이름을 **MyASPApp** 으로 지정한 다음, **만들기** 를 선택합니다. 다음으로 **웹 애플리케이션(Model-View-Controller)** 을 선택하고 **만들기** 를 선택합니다.
+    Visual Studio 2019의 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 시작 창이 열려 있지 않으면 **파일** > **시작 창** 을 선택합니다. **web app** 을 입력하고 **C#** 을 언어로 선택한 다음 **ASP.NET Core 웹 애플리케이션(Model-View-Controller)** 을 선택한 후 **다음** 을 선택합니다. 다음 화면에서 프로젝트 이름을 **MyASPApp** 로 지정한 후 **다음** 을 선택합니다.
+
+    권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Visual Studio 2017에서 **파일 > 새로 만들기 > 프로젝트** 를 선택한 다음, **Visual C# > 웹 > ASP.NET Core 웹 애플리케이션** 을 선택합니다. ASP.NET Core 템플릿 섹션에서 **웹 애플리케이션(Model-View-Controller)** 을 선택합니다. ASP.NET Core 2.1이 선택되어 있고, **Docker 지원 사용** 이 선택되어 있지 않고, **인증** 이 **인증 안 함** 으로 설정되어 있는지 확인합니다. 프로젝트 이름을 **MyASPApp** 으로 지정합니다.

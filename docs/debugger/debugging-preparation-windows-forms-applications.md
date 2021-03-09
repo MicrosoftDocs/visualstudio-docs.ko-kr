@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872406"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684145"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비 중: Windows Forms 응용 프로그램
-Windows Forms 프로젝트 템플릿은 Windows Forms 애플리케이션을 만듭니다. 이러한 형식의 애플리케이션은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 자세한 내용은 [Windows 애플리케이션 프로젝트 만들기](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))를 참조하세요.
+
+Windows Forms 앱 프로젝트 템플릿은 Windows Forms 애플리케이션을 만듭니다. 이러한 형식의 애플리케이션은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 쉽게 디버깅할 수 있습니다. 이 형식의 프로젝트를 만드는 방법에 대한 자세한 내용은 [Windows Form 앱 만들기](../ide/create-csharp-winform-visual-studio.md)를 참조하세요.
 
  프로젝트 템플릿을 사용하여 Windows Forms 프로젝트를 만들면 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 디버그 및 릴리스 구성에 필요한 설정을 자동으로 만듭니다. 필요하면 이 설정을 변경할 수 있습니다. 해당 설정은 **\<project name> 속성 페이지** 대화 상자(Visual Basic의 **내 프로젝트**)에서 변경할 수 있습니다.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887811"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683609"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 시작
 
@@ -113,20 +113,26 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 4. **확인** 을 선택하여 프로젝트를 만듭니다.
 
+   > [!NOTE]
+   > 이 시작 자습서는 MSTest 테스트 프레임워크와 함께 Live Unit Testing을 사용합니다. 또한 xUnit 및 NUnit 테스트 프레임워크도 사용할 수 있습니다.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. **단위 테스트** 를 템플릿 검색 상자에 입력하고 **MSTest 테스트 프로젝트(.NET Core)** 템플릿을 선택합니다. **다음** 을 클릭합니다.
+2. 템플릿 검색 상자에 **unit test** 를 입력하고 **C#** 을 언어로 선택한 다음, .NET Core 템플릿에 대한 **단위 테스트 프로젝트** 를 선택합니다. **다음** 을 클릭합니다.
 
-3. 프로젝트 이름을 **StringLibraryTests** 로 지정합니다.
+   > [!NOTE]
+   > Visual Studio 2019 버전 16.9부터 MSTest 프로젝트 템플릿 이름이 **MSTest 단위 테스트 프로젝트(.NET Core)** 에서 **단위 테스트 프로젝트** 로 변경되었습니다.
 
-4. **만들기** 를 클릭하여 프로젝트를 만듭니다.
+3. 프로젝트 이름을 **StringLibraryTests** 로 지정하고 **다음** 을 클릭합니다.
 
-::: moniker-end
+4. 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    > [!NOTE]
    > 이 시작 자습서는 MSTest 테스트 프레임워크와 함께 Live Unit Testing을 사용합니다. 또한 xUnit 및 NUnit 테스트 프레임워크도 사용할 수 있습니다.
+
+::: moniker-end
 
 5. 단위 테스트 프로젝트는 테스트 중인 클래스 라이브러리에 자동으로 액세스할 수 없습니다. 클래스 라이브러리 프로젝트에 대한 참조를 추가하여 테스트 라이브러리 액세스를 제공합니다. 이렇게 하려면 `StringLibraryTests` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조** 를 선택합니다. **참조 관리자** 대화 상자에서 **솔루션** 탭이 선택되어 있는지 확인하고 다음 그림에 표시된 것처럼 StringLibrary 프로젝트를 선택합니다.
 

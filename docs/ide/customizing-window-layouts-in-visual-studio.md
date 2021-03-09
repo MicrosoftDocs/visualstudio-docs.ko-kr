@@ -2,7 +2,7 @@
 title: 창 레이아웃 사용자 지정
 description: 다양한 개발 워크플로에 가장 적합한 레이아웃을 만들기 위해 Windows에서 사용하는 특성을 사용자 지정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910850"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682590"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 
@@ -163,7 +163,17 @@ Visual Studio에서는 사용자 지정 창 레이아웃을 최대 10개까지 �
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>UI 프로젝트 만들기 및 레이아웃 사용자 지정
 
+::: moniker range="vs-2017"
+
 1. 새 C# **WPF 앱** 프로젝트를 만듭니다. 이 프로젝트에서 사용자 인터페이스를 개발한다고 가정해 봅니다. 디자이너 창의 공간을 최대화하고 방해가 되지 않도록 다른 도구 창을 이동하려고 합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 새 C# **WPF 애플리케이션** 프로젝트를 만듭니다. 이 프로젝트에서 사용자 인터페이스를 개발한다고 가정해 봅니다. 디자이너 창의 공간을 최대화하고 방해가 되지 않도록 다른 도구 창을 이동하려고 합니다.
+
+::: moniker-end
 
 2. 모니터가 여러 개 있는 경우 **솔루션 탐색기** 창 및 **속성** 창을 두 번째 모니터로 가져옵니다. 단일 모니터 시스템의 경우 디자이너를 제외한 모든 창을 닫습니다.
 

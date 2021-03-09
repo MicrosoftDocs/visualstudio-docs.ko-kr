@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884288"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684134"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>연습: Visual Studio에서 병렬 애플리케이션 디버깅(C#, Visual Basic, C++)
 
@@ -70,14 +70,16 @@ ms.locfileid: "99884288"
 
    시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
-   **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 다음으로, 언어 목록에서 **C#** , **C++** 또는 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
+   **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 다음으로, 언어 목록에서 **C#** , **C++** 또는 **Visual Basic** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다.
 
-   언어 및 플랫폼 필터를 적용한 후에는 **콘솔 앱(.NET Core)** 또는 C++인 경우 **콘솔 앱** 템플릿을 선택하고, **다음** 을 선택합니다.
+   언어 및 플랫폼 필터를 적용한 후 .NET Core 또는 C++용 **콘솔 앱** 을 선택한 후, **다음** 을 선택합니다.
 
    > [!NOTE]
-   > 올바른 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
+   > 올바른 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발**(또는 **C#을 사용한 데스크톱 개발**) 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
-   **새 프로젝트 구성** 창에서 이름을 입력하거나 **프로젝트 이름** 상자의 기본 이름을 사용합니다. 그런 다음, **만들기** 를 선택합니다.
+   **새 프로젝트 구성** 창에서 이름을 입력하거나 **프로젝트 이름** 상자의 기본 이름을 사용합니다. 그런 다음, **다음** 또는 **만들기** 중 사용 가능한 옵션 하나를 선택합니다.
+
+   .NET Core에서 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    ::: moniker-end
    ::: moniker range="vs-2017"

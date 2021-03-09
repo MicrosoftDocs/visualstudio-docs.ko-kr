@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626f86c2a1d370a7f31e47f86d8adafc3f905672
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866088"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684237"
 ---
 # <a name="assertions-in-managed-code"></a>관리 코드의 어설션
 어설션 또는 `Assert` 문은 `Assert` 문에 대한 인수로 지정하는 조건을 테스트합니다. 조건이 true로 평가되면 동작이 발생하지 않고, 조건이 false로 평가되면 어설션이 실패합니다. 디버그 빌드로 실행 중인 경우 프로그램 중단 모드가 시작됩니다.
@@ -173,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- 두 번째 및 세 번째 인수는 선택적으로 지정되는 문자열입니다. 인수를 두 개나 세 개 사용하여 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>를 호출하는 경우 첫 번째 인수는 조건입니다. 메서드는 조건을 확인하고 그 결과가 false인 경우 두 번째 문자열과 세 번째 문자열을 출력합니다. 다음 예제에서는 인수 두 개를 사용하는 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 및 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>를 보여 줍니다.
+  두 번째 및 세 번째 인수는 선택적으로 지정되는 문자열입니다. 인수를 두 개나 세 개 사용하여 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>를 호출하는 경우 첫 번째 인수는 조건입니다. 메서드는 조건을 확인하고 그 결과가 false인 경우 두 번째 문자열과 세 번째 문자열을 출력합니다. 다음 예제에서는 인수 두 개를 사용하는 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 및 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>를 보여 줍니다.
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -185,7 +185,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- 다음 예제에서는 <xref:System.Diagnostics.Debug.Assert%2A> 및 <xref:System.Diagnostics.Trace.Assert%2A>를 보여 줍니다.
+  다음 예제에서는 인수 세 개를 사용하는 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> 및 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName>를 보여줍니다.
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))

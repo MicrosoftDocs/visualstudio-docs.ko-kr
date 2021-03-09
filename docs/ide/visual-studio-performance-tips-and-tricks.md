@@ -2,19 +2,19 @@
 title: 성능을 향상시키기 위한 팁
 description: 성능 향상을 위해 사용하지 않을 수 있는 특정 Visual Studio 기능을 최적화하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873868"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683771"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -142,6 +142,10 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 - **워크로드 제거**
 
     Visual Studio 설치 관리자를 사용하여 더 이상 사용되지 않는 워크로드를 제거할 수 있습니다. 이렇게 하면 더 이상 필요하지 않은 패키지 및 어셈블리를 건너뜀으로써 시작 및 런타임 비용을 줄일 수 있습니다.
+
+- **추적되지 않은 파일을 로컬 .gitignore에 추가**
+
+    Visual Studio는 추적되지 않은 파일을 사용하여 Git 명령 `git status`을 실행함으로써 리포지토리에 새 파일을 추가할 때 원활한 환경을 제공합니다. 추적되지 않은 파일이 많은 경우에는 `git status`가 추가 메모리를 사용할 수 있습니다. 이러한 파일을 무시하고 `git status`의 성능을 향상시키기 위해 이러한 파일 또는 폴더를 로컬 .gitignore 파일에 추가할 수 있습니다. 파일에 액세스하려면 **Git** > **설정** > **Git 리포지토리 설정** 으로 이동합니다. 그런 다음 **Git 파일** 섹션에서 **추가** 를 클릭하여 .gitignore 파일을 만들거나 이 파일이 이미 있다면 **편집** 을 클릭합니다.
 
 ## <a name="force-a-garbage-collection"></a>가비지 수집 강제 실행
 

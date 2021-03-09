@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925005"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750640"
 ---
 Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -217,7 +217,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **디버그** > **디버깅하지 않고 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
+1. **디버그** > **디버깅 없이 시작** 을 선택하거나 **Ctrl**+**F5** 를 눌러 앱을 다시 실행합니다.
 
    Visual Studio에서 앱을 다시 빌드하고, 콘솔 창이 열리며 사용자 이름을 묻는 메시지가 표시됩니다.
 
@@ -237,17 +237,23 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 1. **새 프로젝트 만들기** 를 선택합니다.
 
-   ![Visual Studio 시작 창에서 새 프로젝트 만들기](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019에서 '새 프로젝트 만들기' 창의 스크린샷입니다.":::
 
    **새 프로젝트 만들기** 창이 열리고 여러 프로젝트 *템플릿* 이 표시됩니다. 템플릿에는 지정된 프로젝트 형식에 필요한 기본 파일과 설정이 포함되어 있습니다.
 
-1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console** 을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. **언어** 드롭다운 목록에서 **C#** 를 선택하여 추가로 템플릿 결과를 필터링할 수 있습니다. **콘솔 앱(.NET Core)** 템플릿을 선택하고 **다음** 을 선택합니다.
+1. 원하는 템플릿을 찾으려면 검색 상자에 **.net core console** 을 입력합니다. 입력한 키워드에 따라 사용 가능한 템플릿 목록이 자동으로 필터링됩니다. 모든 **언어** 드롭다운 목록에서 **C#** 을 선택하고 모든 **플랫폼** 목록에서 **Windows** 를 선택한 후 **모든 프로젝트 형식** 목록에서 **콘솔** 을 선택하면 템플릿 결과를 추가로 필터링할 수 있습니다.
 
-    ![Visual Studio에서 새 프로젝트 만들기](../media/vs-2019/create-new-project.png)
+    **콘솔 애플리케이션** 템플릿을 선택한 후 **다음** 을 클릭합니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고, 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경한 다음, **만들기** 를 선택합니다.
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="원하는 템플릿을 선택할 수 있는 Visual Studio 2019의 '새 프로젝트 만들기' 창의 스크린샷입니다.":::
 
-   ![Visual Studio에서 새 프로젝트 구성](../media/vs-2019/configure-new-project.png)
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경(기본 로캘은 `C:\Users\<name>\source\repos`)한 후, **다음** 을 선택합니다.
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="프로젝트 이름을 입력하는 Visual Studio 2019의 '새 프로젝트 구성' 창 스크린샷입니다.":::
+
+1. **추가 정보** 창의 **대상 프레임워크** 드롭다운 메뉴에 **.NET Core 3.1** 이 표시 되는지 확인한 후 **만들기** 를 클릭합니다.
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="원하는 .NET Core 프레임워크 버전을 선택하는 Visual Studio 2019의 '추가 정보' 창 스크린샷입니다.":::
 
    Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
 

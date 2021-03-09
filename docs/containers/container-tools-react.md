@@ -5,15 +5,15 @@ ms.custom: SEO-VS-2020
 author: ghogen
 description: Visual Studio 컨테이너 도구 및 Docker를 사용하여 컨테이너화된 React SPA 앱을 만드는 방법을 알아봅니다.
 ms.author: ghogen
-ms.date: 05/14/2020
+ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502190"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684340"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -23,14 +23,14 @@ Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이�
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* **웹 개발** , **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 * [Node.JS](https://nodejs.org/en/download/)
 * Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* **웹 개발** , **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 3.1을 사용하여 개발하기 위한 [.NET Core 3.1 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 * [Node.JS](https://nodejs.org/en/download/)
@@ -55,11 +55,16 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
 1. 컨테이너 형식을 선택하고 **확인** 을 클릭합니다.
 ::: moniker-end
-::: moniker range=">=vs-2019"
-1. **ASP.NET Core 웹 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다.
-1. **React.js** 를 선택하고 **만들기** 를 클릭합니다. **Docker 지원 사용** 을 선택할 수 없지만 나중에 해당 지원을 추가할 수 있으니 걱정하지 마세요.
 
-   ![새 React.js 프로젝트의 스크린샷](media/container-tools-react/vs-2019/new-react-project.png)
+::: moniker range=">=vs-2019"
+
+1. **ASP.NET Core(React.js 사용)** 템플릿을 사용하여 새 프로젝트를 만듭니다.
+
+   ![새 React.js 프로젝트를 만드는 스크린샷](media/container-tools-react/vs-2019/create-reactjs-project.png)
+
+1. **추가 정보** 화면에서는 **Docker 지원 사용** 을 선택할 수 없으며 다만 나중에 해당 지원을 추가할 수 있으니 걱정하지 마세요.
+
+   ![새 React.js 프로젝트 만들기 - 추가 정보 화면의 스크린샷](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가**> **Docker 지원** 을 선택하여 프로젝트에 Dockerfile을 추가합니다.
 
@@ -200,9 +205,9 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 
 *카운터* 페이지로 이동한 후 **증분** 단추를 클릭하여 카운터의 클라이언트 쪽 코드를 테스트합니다.
 
-**도구** > NuGet 패키지 관리자, **패키지 관리자 콘솔** 메뉴에서 **패키지 관리자 콘솔** (PMC)을 엽니다.
+**도구**> NuGet 패키지 관리자, **패키지 관리자 콘솔** 메뉴에서 **패키지 관리자 콘솔**(PMC)을 엽니다.
 
-앱의 최종 Docker 이미지는 *dev* 로 태그가 지정됩니다. 이 이미지는 *dotnet/core/aspnet* 이미지의 *3.1-nanoserver-1903* 태그를 기반으로 합니다. **패키지 관리자 콘솔** (PMC) 창에서 `docker images` 명령을 실행합니다. 컴퓨터의 이미지가 표시됩니다.
+앱의 최종 Docker 이미지는 *dev* 로 태그가 지정됩니다. 이 이미지는 *dotnet/core/aspnet* 이미지의 *3.1-nanoserver-1903* 태그를 기반으로 합니다. **패키지 관리자 콘솔**(PMC) 창에서 `docker images` 명령을 실행합니다. 컴퓨터의 이미지가 표시됩니다.
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
@@ -232,7 +237,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 1. **새 Azure Container Registry 만들기** 를 선택하고 **게시** 를 클릭합니다.
 1. **새 Azure Container Registry 만들기** 에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | 설명                                |
+    | 설정      | 제안 값  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |
@@ -262,7 +267,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 1. **새 Azure Container Registry 만들기** 를 선택합니다.
 1. **새 Azure Container Registry 만들기** 화면에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | 설명                                |
+    | 설정      | 제안 값  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |

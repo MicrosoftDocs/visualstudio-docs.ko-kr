@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbb99d2b41a8a354ec450e99dab13efb6ec60248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872926"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684218"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -76,22 +76,24 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 다음으로 몇 가지 버그가 있는 애플리케이션을 만듭니다.
 
-1. Visual Studio가 설치되어 있어야 하며 만들려는 앱 형식에 따라 **.NET 데스크톱 개발** 워크로드 또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
+1. Visual Studio가 설치되어 있어야 하고 **.NET Core 플랫폼 간 개발** 워크로드가 설치되어 있어야 합니다.
 
     아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기** 를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET 데스크톱 개발**(또는 **.NET Core 플랫폼 간 개발**) 워크로드를 선택한 다음, **수정** 을 선택합니다.
+    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **도구** > **도구 및 기능 가져오기** 를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 창에 **콘솔** 을 입력한 다음, **콘솔 앱(.NET Core)** 또는 **콘솔 앱(.NET Framework)** 을 선택합니다. **다음** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 프로젝트 이름을 입력하고 **만들기** 를 클릭합니다.
+    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 상자에 **console** 을 입력하고 **C#** 을 언어로 선택한 다음 .NET Core용 **콘솔 앱** 을 선택합니다. **다음** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 프로젝트 이름을 입력하고 **다음** 을 클릭합니다.
+
+    권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
     ::: moniker-end
 
-    **콘솔 앱(.NET Framework)** 또는 **콘솔 앱(.NET Core)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 또는 **.NET 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
+    .NET Core용 **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
     Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
 

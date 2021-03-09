@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948012"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683927"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -55,9 +55,14 @@ ms.locfileid: "99948012"
 
 2. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
-3. C# **콘솔 앱(.NET Core)** 프로젝트 템플릿을 검색하여 선택한 후, **다음** 을 클릭합니다.
+3. .NET Core용 C# **콘솔 앱** 프로젝트 템플릿을 검색하여 선택한 후, **다음** 을 클릭합니다.
 
-4. 프로젝트의 이름을 **Bank** 로 지정한 다음, **만들기** 를 클릭합니다.
+   > [!NOTE]
+   > **콘솔 앱** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다. 그런 다음, Visual Studio 설치 관리자에서 **.NET Core 플랫폼 간 개발** 워크로드를 선택합니다.
+
+4. 프로젝트의 이름을 **Bank** 로 지정한 다음, **다음** 을 클릭합니다.
+
+   권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    Bank 프로젝트가 만들어져 **솔루션 탐색기** 에 표시되고 코드 편집기에 *Program.cs* 파일이 열립니다.
 
@@ -163,11 +168,14 @@ ms.locfileid: "99948012"
 
 ::: moniker range=">=vs-2019"
 
-2. C# **MSTest 테스트 프로젝트(.NET Core)** 프로젝트 템플릿을 검색하여 선택한 후, **다음** 을 클릭합니다.
+2. 검색 상자에 **unit test** 를 입력하고 **C#** 을 언어로 선택한 다음, .NET Core 템플릿에 대한 **단위 테스트 프로젝트** 를 선택한 후 **다음** 을 클릭합니다.
 
-3. 프로젝트 이름을 **BankTests** 로 지정합니다.
+   > [!NOTE]
+   > Visual Studio 2019 버전 16.9부터 MSTest 프로젝트 템플릿 이름이 **MSTest 단위 테스트 프로젝트(.NET Core)** 에서 **단위 테스트 프로젝트** 로 변경되었습니다.
 
-4. **만들기** 를 클릭합니다.
+3. 프로젝트 이름을 **BankTests** 로 지정한 후 **다음** 을 클릭합니다.
+
+4. 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    **BankTests** 프로젝트가 **Bank** 솔루션에 추가됩니다.
 

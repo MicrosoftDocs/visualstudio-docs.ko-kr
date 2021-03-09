@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943733"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683951"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>연습: 테스트 탐색기를 사용한 테스트 기반 개발
 
@@ -26,7 +26,11 @@ ms.locfileid: "99943733"
 
 1. C# **클래스 라이브러리(.NET Standard)** 프로젝트를 만듭니다. 이 프로젝트에는 테스트할 코드가 포함됩니다. 프로젝트 이름을 **MyMath** 로 지정합니다.
 
-2. 동일한 솔루션에서 새 **MSTest 테스트 프로젝트(.NET Core)** 프로젝트를 추가합니다. 테스트 프로젝트 이름을 **MathTests** 로 지정합니다.
+2. 동일한 솔루션에서 새 MSTest 테스트 프로젝트를 추가합니다.
+
+   Visual Studio 2019 버전 16.9부터 MSTest 프로젝트 템플릿 이름이 **MSTest 테스트 프로젝트(.NET Core)** 에서 **단위 테스트 프로젝트** 로 변경되었습니다.
+
+   테스트 프로젝트 이름을 **MathTests** 로 지정합니다.
 
    ![새 코드 및 테스트 프로젝트](../test/media/test-driven-development-ide.png)
 

@@ -2,7 +2,7 @@
 title: '자습서: 간단한 C# 콘솔 앱 만들기'
 description: Visual Studio에서 C# 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
 ms.custom: seodec18, get-started
-ms.date: 02/18/2020
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909357"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682803"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -83,14 +83,14 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
    !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 그런 다음, 언어 목록에서 **C#** 을 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
+1. **새 프로젝트 만들기** 창의 언어 목록에서 **C#** 을 선택합니다. 그런 다음, 플랫폼 목록에서 **Windows** 를 선택하고 프로젝트 형식 목록에서 **콘솔** 을 선택합니다. 
 
-   언어 및 플랫폼 필터를 적용한 후 **콘솔 앱(.NET Core)** 템플릿을 선택한 후, **다음** 을 선택합니다.
+   언어, 플랫폼 및 프로젝트 형식 필터를 적용한 후 **콘솔 애플리케이션** 템플릿을 선택하고 **다음** 을 선택합니다.
 
-   ![콘솔 앱(.NET Framework)에 대한 C# 템플릿을 선택합니다.](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="콘솔 앱(.NET Framework)에 대한 C# 템플릿을 선택합니다.":::
 
    > [!NOTE]
-   > **콘솔 앱(.NET Core)** 템플릿이 표시되지 않으면 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
+   > **콘솔 애플리케이션** 템플릿이 표시되지 않는다면 **새 프로젝트 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.
    >
    > !['새 프로젝트 만들기' 창의 '원하는 항목을 찾을 수 없음' 메시지에서 '추가 도구 및 기능 설치' 링크](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,12 +100,16 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
    >
    > 그런 다음, Visual Studio 설치 관리자에서 **수정** 단추를 선택합니다. 작업 내용을 저장하라는 메시지가 나타날 수 있습니다. 그럴 경우 그렇게 하세요. 다음으로, **계속** 을 선택하여 워크로드를 설치합니다. 그런 다음, 이 "[프로젝트 만들기](#create-a-project)" 프로시저의 2단계로 돌아갑니다.
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *계산기* 를 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 *계산기* 를 입력합니다. 그리고 **다음** 을 선택합니다.
 
-   !['새 프로젝트 구성' 창에서 프로젝트의 이름을 '계산기'로 지정합니다.](./media/vs-2019/csharp-name-your-calculator-project.png)
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="'새 프로젝트 구성' 창에서 프로젝트의 이름을 '계산기'로 지정합니다.":::
+   
+1. **추가 정보** 창에서 **.NET Core 3.1** 은 대상 프레임워크에 대해 이미 선택되어 있어야 합니다. 그렇지 않으면 **.NET Core 3.1** 을 선택합니다. 그런 다음, **만들기** 를 선택합니다.
+
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="'추가 정보' 창에서 .NET Core 3.1이 선택되어 있는지 확인합니다.":::
 
    Visual Studio는 기본 "Hello World" 코드를 포함하는 새 프로젝트를 엽니다.
-   
+
 ::: moniker-end
 
 ## <a name="create-the-app"></a>앱 만들기

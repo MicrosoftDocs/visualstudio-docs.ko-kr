@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925396"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683308"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>연습: 스레드 창을 사용하여 다중 스레드 앱 디버그(C#, Visual Basic, C++)
 
@@ -44,12 +44,14 @@ ms.locfileid: "99925396"
 
    **새 프로젝트 만들기** 창에서 검색 상자에 *콘솔* 을 입력합니다. 다음으로, 언어 목록에서 **C#** 또는 **C++** 를 선택한 다음, 플랫폼 목록에서 **Windows** 를 선택합니다. 
 
-   언어 및 플랫폼 필터를 적용한 후에는 **콘솔 앱(.NET Core)** 또는 C++인 경우 **콘솔 앱** 을 선택하고, **다음** 을 선택합니다.
+   언어 및 플랫폼 필터를 적용한 후 .NET Core 또는 C++용 **콘솔 앱** 을 선택한 후, **다음** 을 선택합니다.
 
    > [!NOTE]
-   > 올바른 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
+   > 올바른 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발**(또는 **C#을 사용한 데스크톱 개발**) 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
-   **새 프로젝트 구성** 창의 **프로젝트 이름** 상자에 *MyThreadWalkthroughApp* 을 입력합니다. 그런 다음, **만들기** 를 선택합니다.
+   **새 프로젝트 구성** 창의 **프로젝트 이름** 상자에 *MyThreadWalkthroughApp* 을 입력합니다. 그런 다음, **다음** 또는 **만들기** 중 사용 가능한 옵션 하나를 선택합니다.
+
+   .NET Core에서 권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -58,7 +60,7 @@ ms.locfileid: "99925396"
    - C# 앱인 경우 **Visual C#** 아래에서 **Windows 데스크톱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다.
    - C++ 앱인 경우 **Visual C++** 아래에서 **Windows 데스크톱** 을 선택한 다음, **Windows 콘솔 애플리케이션** 을 선택합니다.
 
-   **콘솔 앱(.NET Core)** 또는 C++인 경우 **콘솔 앱** 프로젝트 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
+   **콘솔 앱(.NET Framework)** 또는 C++인 경우 **콘솔 앱** 프로젝트 템플릿이 표시되지 않으면 **도구** > **도구 및 기능 가져오기...** 로 이동합니다. 그러면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 또는 **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 을 선택합니다.
 
    그런 다음, *MyThreadWalkthroughApp* 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
 
