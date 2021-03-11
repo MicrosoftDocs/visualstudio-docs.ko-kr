@@ -1,5 +1,6 @@
 ---
 title: DA0505 - 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트 | Microsoft Docs
+description: 이 메시지는 프로세스가 현재 할당한 가상 메모리의 평균 크기(바이트)를 보고합니다(전용 바이트).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2ab87ab783ea58ffa060c0c6d29a8ca0dd8468
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f141ce40c22fbd6ee9445dc676b49f0d601f2a74
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918056"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465818"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트
 

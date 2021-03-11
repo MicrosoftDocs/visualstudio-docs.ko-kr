@@ -1,4 +1,5 @@
 ---
+description: 이 메시지는 프로세스가 현재 할당한 가상 메모리의 최대 크기(바이트)를 보고합니다(전용 바이트).
 title: DA0506 - 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48671c7e8552626deed814f06f21be38527545bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a796dd962485e5569ec09b07b881a8bb183b6e9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918066"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223643"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: 프로파일링되고 있는 프로세스에 할당된 최대 전용 바이트
 

@@ -1,5 +1,6 @@
 ---
 title: 작업 그룹 원격 로그온 실패 | Microsoft Docs
+description: 이 오류는 작업 그룹의 컴퓨터에서 디버깅하는 경우 원격 컴퓨터에 연결할 때 발생할 수 있습니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 582b38b7a4115a140f6031b2d4c9227edfd438d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870846"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146238"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>오류: 작업 그룹 원격 로그온 실패
 이 오류의 의미는 다음과 같습니다.

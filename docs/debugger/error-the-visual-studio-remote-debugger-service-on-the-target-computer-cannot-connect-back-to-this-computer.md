@@ -1,4 +1,5 @@
 ---
+description: 이 오류는 디버깅에 사용하려는 컴퓨터에 연결할 때 인증되지 않는 사용자 계정으로 원격 디버거 서비스가 실행되고 있음을 의미합니다.
 title: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a08f1a7638233e2633a34287aad500ee81245be6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871262"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146693"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.
 이 오류는 디버깅에 사용하려는 컴퓨터에 연결할 때 인증되지 않는 사용자 계정으로 원격 디버거 서비스가 실행되고 있음을 의미합니다. 이 오류는 레거시 디버깅 엔진을 사용하여 원격 디버그하고 원격 디버거가 서비스로 실행되고 있는 경우 발생할 수 있습니다.

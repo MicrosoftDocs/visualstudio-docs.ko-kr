@@ -1,4 +1,5 @@
 ---
+description: 동시성 시각화 도우미 추적 파일에 경고를 씁니다.
 title: marker_series::write_alert 메서드 | Microsoft 문서
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 786569f52d4d3d2fcaa7dfbc759759080ebf02d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f86e7b9eafe9b211ff12d8e648cf554041fff195
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876942"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223968"
 ---
 # <a name="marker_serieswrite_alert-method"></a>marker_series::write_alert 메서드
 동시성 시각화 도우미 추적 파일에 경고를 씁니다.
@@ -39,5 +40,5 @@ void write_alert(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [marker_series 클래스](../profiling/marker-series-class.md)

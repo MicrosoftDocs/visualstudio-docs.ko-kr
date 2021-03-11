@@ -1,4 +1,5 @@
 ---
+description: 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 프로파일링 정보를 표시합니다.
 title: 호출자-호출 수신자 뷰 | Microsoft 문서
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a994f5ff564860ac753787eebd293a8e2fa9c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 375c0f366fb32fcbe8187c2c4b5d1d3d632f7260
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889735"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223708"
 ---
 # <a name="callercallee-view"></a>호출자/호출 수신자 뷰
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 프로파일링 정보를 표시합니다. 호출자/호출 수신자 뷰에는 다음과 같은 세 개의 표가 포함되어 있습니다.
@@ -36,9 +37,9 @@ ms.locfileid: "99889735"
 
  뷰의 다른 두 부분에 나열되는 함수 중 하나를 두 번 클릭하여 다른 함수를 선택하면 보고서 뷰의 가운데 부분에 현재 함수가 표시되도록 할 수 있습니다. 보고서 뷰는 자동으로 업데이트되어 변경 내용을 반영합니다.
 
- 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
+ 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 보기 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 - [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)
 - [호출자/호출 수신자 뷰 - 계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)
 - [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

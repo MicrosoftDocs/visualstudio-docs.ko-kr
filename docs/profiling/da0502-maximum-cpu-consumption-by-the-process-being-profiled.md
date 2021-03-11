@@ -1,5 +1,6 @@
 ---
 title: DA0502 - 프로파일링되고 있는 프로세스의 최대 CPU 사용량 | Microsoft Docs
+description: 이 메시지는 애플리케이션에서 명령을 실행할 때 프로세서가 사용 중이었던 시간의 최대 백분율을 보고합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e9576f7c5aacac4bc4335f06b08dd1176f847
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45071fb94b00be721e8c76c69dc5135a59f3a9b1
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918110"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465779"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: 프로파일링되고 있는 프로세스의 최대 CPU 사용량
 

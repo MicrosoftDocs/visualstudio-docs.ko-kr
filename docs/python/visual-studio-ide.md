@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 통합 개발 환경은 코드를 편집, 디버그 및 테스트한 다음, 앱을 게시하는 데 사용할 수 있는 Python(및 기타 언어)용 창의적인 실행 패드입니다.
 title: Python 개발자용 Visual Studio 개요
 titleSuffix: ''
 ms.date: 03/13/2019
@@ -11,12 +12,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e4a0c227f8c833febf20ed4e8dba82b814e3223
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908786"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223786"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 

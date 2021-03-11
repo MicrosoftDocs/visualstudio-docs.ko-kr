@@ -1,6 +1,6 @@
 ---
 title: ASP.NET 예외 디버그 | Microsoft Docs
-Description: ASP.NET 애플리케이션의 처리되지 않은 예외에서 디버거가 중지되도록 구성하는 방법을 알아봅니다. 시스템이 아닌 코드에서 중단이 발생하도록 보장할 수 있습니다.
+description: ASP.NET 애플리케이션의 처리되지 않은 예외에서 디버거가 중지되도록 구성하는 방법을 알아봅니다. 시스템이 아닌 코드에서 중단이 발생하도록 보장할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913260"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160423"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>방법: ASP.NET 예외 디버그
 예외 디버깅은 강력한 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션을 개발하는 데 중요한 요소입니다. 예외를 디버그하는 방법에 관한 일반적인 내용은 [디버거를 사용한 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요.

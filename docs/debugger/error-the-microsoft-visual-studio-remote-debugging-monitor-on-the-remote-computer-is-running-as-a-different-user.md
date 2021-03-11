@@ -1,6 +1,7 @@
 ---
 title: 원격 컴퓨터의 Microsoft Visual Studio 원격 디버깅 모니터가 다른 사용자로 실행 중입니다.
 titleSuffix: ''
+description: 이 메시지는 인증 안 함 모드에서 디버깅할 때 msvsmon을 시작한 사용자와 Visual Studio를 실행하는 사용자가 서로 다른 경우에 나타납니다.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e4ef05c1615e7798cd111f9cc5f95976abeebc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cee8ea9442ab88c280a11a0b73d74cac6888e9f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871327"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146706"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>오류: 원격 컴퓨터의 Microsoft Visual Studio 원격 디버깅 모니터가 다른 사용자로 실행 중입니다.
 원격으로 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.

@@ -1,4 +1,5 @@
 ---
+description: 이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다.
 title: 사이트에서 IP 주소 사용 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d574a10ba081a30f88583e035a18869e68976d18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa18ea975bacbda38a18c27d19d438ab5b4da0b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871353"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146744"
 ---
 # <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소 사용
 이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다. IIS에서 **웹 사이트 확인** 을 **특정 IP 주소 사용** 으로 변경하는 경우 이 오류가 발생합니다.

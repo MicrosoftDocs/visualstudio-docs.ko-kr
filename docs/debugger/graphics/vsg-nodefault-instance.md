@@ -1,4 +1,5 @@
 ---
+description: 프로그래밍 캡처 인터페이스를 제공하는 VsgDbg Class 클래스의 기본 인스턴스가 제공되는지 여부를 존재별로 정의합니다.
 title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60fb5262a6af07966ff974b8535ae299f3fc51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eccdd71c66a9f25e1b0a26f4ea851bcccb738a0b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861415"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155248"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 프로그래밍 캡처 인터페이스를 제공하는 [VsgDbg Class](vsgdbg-class.md) 클래스의 기본 인스턴스가 제공되는지 여부를 존재별로 정의합니다.

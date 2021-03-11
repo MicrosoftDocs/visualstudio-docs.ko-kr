@@ -1,4 +1,5 @@
 ---
+description: 모든 세션에서 공급자를 사용하도록 설정했는지 확인합니다.
 title: marker_series::is_enabled 메서드 | Microsoft 문서
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e68ec76737308d9bc9478f4106420626389f5eeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ce01d71b3fac63062a3f823f1862fd199fa39be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223578"
 ---
 # <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 메서드
 모든 세션에서 공급자를 사용하도록 설정했는지 확인합니다.
@@ -44,5 +45,5 @@ bool is_enabled(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [marker_series 클래스](../profiling/marker-series-class.md)

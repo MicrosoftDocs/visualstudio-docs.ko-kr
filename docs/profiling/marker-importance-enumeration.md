@@ -1,4 +1,5 @@
 ---
+description: 동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.
 title: marker_importance 열거형 | Microsoft 문서
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1559dc6c5aa24c54465aee6d29f0745be6c897c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c2e7560c91882afe1ee2608bb2ae2fc105738dc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223942"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance 열거형
 동시성 시각화 도우미 표식의 중요도 수준을 나타냅니다.
@@ -44,5 +45,5 @@ enum marker_importance;
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [진단 네임스페이스](../profiling/diagnostic-namespace.md)

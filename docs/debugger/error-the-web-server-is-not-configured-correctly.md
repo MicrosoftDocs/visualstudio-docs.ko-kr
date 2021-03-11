@@ -1,4 +1,5 @@
 ---
+description: 여기에 설명된 단계를 수행하여 문제를 해결한 후, 디버깅을 다시 시도하기 전에 IIS를 초기화해야 할 수도 있습니다.
 title: 웹 서버가 제대로 구성되어 있지 않습니다. | Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: error-reference
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a5c50822b516b73206791e3d8538bd174cfc8f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82af476e51e8fe016e5966847c8c6a7b3e45b0ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871236"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146524"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>오류: 웹 서버가 제대로 구성되어 있지 않습니다.
 

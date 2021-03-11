@@ -1,5 +1,6 @@
 ---
 title: DA0024 - 과도한 GC CPU 시간 | Microsoft Docs
+description: 프로파일링 중에 수집된 시스템 성능 데이터가 가비지 수집에 걸린 시간이 총 애플리케이션 처리 시간에 비해 너무 크다는 것을 나타냅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b9f5af736e07d6e61d3c175b13202c54a4d0d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5de3d2e65707e9f6451c60b1a6210cb25c0b6902
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847871"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465974"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: GC CPU 시간이 너무 깁니다.
 

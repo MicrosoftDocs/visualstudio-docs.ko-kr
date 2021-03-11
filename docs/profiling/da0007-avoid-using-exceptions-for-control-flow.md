@@ -1,5 +1,6 @@
 ---
 title: DA0007 - 제어 흐름에 예외 사용 안 함 | Microsoft Docs
+description: 프로파일링 데이터에서 .NET Framework 예외 처리기가 호출되는 비율이 높았습니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4796fa1e998e75fcbbebe21df394ed41fe4807df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2648e287ea37e1ae78b14a65c02521f72a3491d0
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949391"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466130"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: 제어 흐름에 예외 사용 안 함
 

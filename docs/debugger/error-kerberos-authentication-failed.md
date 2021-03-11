@@ -1,5 +1,6 @@
 ---
 title: Kerberos 인증 실패 | Microsoft Docs
+description: 이 오류는 로컬 시스템 또는 네트워크 서비스 계정으로 Visual Studio 원격 디버깅 모니터를 실행할 때 발생합니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871626"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466240"
 ---
 # <a name="error-kerberos-authentication-failed"></a>오류: Kerberos 인증 실패
 원격 디버깅을 시작할 때 다음 오류 메시지가 나타날 수 있습니다.

@@ -1,6 +1,6 @@
 ---
 title: ActiveX 컨트롤 디버그 | Microsoft Docs
-Description: ActiveX 컨트롤을 디버그하는 방법을 알아봅니다. 프로젝트 속성 페이지에서 또는 디버깅을 시작할 때 수행할 수 있는 포함 실행 파일을 지정해야 합니다.
+description: ActiveX 컨트롤을 디버그하는 방법을 알아봅니다. 프로젝트 속성 페이지에서 또는 디버깅을 시작할 때 수행할 수 있는 포함 실행 파일을 지정해야 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83522eb13350d86ef0531d90b3db844ece8f6655
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6728b498da91f540d92182ad60f23e490d614948
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913421"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160397"
 ---
 # <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 

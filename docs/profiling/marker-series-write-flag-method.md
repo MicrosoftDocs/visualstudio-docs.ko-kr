@@ -1,4 +1,5 @@
 ---
+description: 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.
 title: marker_series::write_flag 메서드 | Microsoft 문서
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99601d34a3ad996d8e9e7cd4baf02e51423d8b3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223890"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 메서드
 동시성 시각화 도우미 추적 파일에 플래그를 씁니다.
@@ -59,5 +60,5 @@ void write_flag(
 
  **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 - [marker_series 클래스](../profiling/marker-series-class.md)

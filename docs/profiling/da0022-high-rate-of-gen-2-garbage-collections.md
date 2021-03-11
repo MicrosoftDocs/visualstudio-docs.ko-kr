@@ -1,4 +1,5 @@
 ---
+description: 프로파일링 중에 수집된 시스템 성능 데이터는 0세대 및 1세대 가비지 수집에 비해 .NET Framework 개체용 메모리의 상당한 부분이 가비지 수집의 2세대에서 회수되었음을 나타냅니다.
 title: DA0022 - Gen 2 가비지 수집의 비율이 높습니다. | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0949dcf7bf55d079037ffa9cb160edeb35294d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967009"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223678"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Gen 2 가비지 수집의 비율이 높습니다.
 

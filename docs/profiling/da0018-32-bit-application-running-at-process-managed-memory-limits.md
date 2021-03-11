@@ -1,5 +1,6 @@
 ---
 title: DA0018 - 프로세스 관리되는 메모리 한도로 실행 중인 32비트 애플리케이션 | Microsoft Docs
+description: 프로파일링 실행 동안 수집된 시스템 데이터가 .NET Framework 메모리 힙이 32비트 프로세스에서 관리되는 힙이 도달할 수 있는 최대 크기에 도달했음을 나타냅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5730e96a47e7e931606269341d5f1cca302a0e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48f94f064b983ae671546f543dfbdfa380f35119
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886394"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466104"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션
 

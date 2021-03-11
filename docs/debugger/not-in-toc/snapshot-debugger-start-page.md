@@ -1,4 +1,5 @@
 ---
+description: 이제 Visual Studio 스냅샷 디버거는 서비스에 연결되며 디버깅을 지원하기 위해 스냅샷 수집을 시작할 수 있습니다.
 title: 스냅샷 디버거의 시작 페이지
 ms.date: 07/14/2018
 robots: noindex, nofollow
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e0c6196d99b8a2b7ac9b4187dbd1397111abbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160344"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>스냅샷 디버거 시작
 

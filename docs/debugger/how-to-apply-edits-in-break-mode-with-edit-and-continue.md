@@ -1,6 +1,6 @@
 ---
 title: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용 | Microsoft Docs
-Description: 중단 모드에서 편집하며 계속하기를 사용하여 Visual Basic 코드를 편집하는 방법을 보여 줍니다. 중단 모드를 시작하는 방법은 여러 가지가 있습니다.
+description: 중단 모드에서 편집하며 계속하기를 사용하여 Visual Basic 코드를 편집하는 방법을 보여 줍니다. 중단 모드를 시작하는 방법은 여러 가지가 있습니다.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9074d992c06c1b7d49f59481bee35345c5199f8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155044"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>방법: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용(Visual Basic)
 편집하며 계속하기를 사용하면 실행을 중지한 후에 다시 시작하지 않고도 중단 모드에서 코드를 편집한 다음 계속 진행할 수 있습니다.

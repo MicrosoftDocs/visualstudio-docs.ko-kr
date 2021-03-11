@@ -1,4 +1,5 @@
 ---
+description: 64비트 프로세스의 혼합 네이티브 및 관리 코드를 디버그하려면 .NET Framework 버전 4가 있어야 합니다.
 title: x64 프로세스의 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됨 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31ae6b1c4a80f7d28cdbbdd2c4d944cddf15227d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871496"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146953"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>오류: x64 프로세스용 혼합 모드 디버깅은 Microsoft .NET Framework 4 이상을 사용할 때만 지원됩니다.
 64비트 프로세스의 혼합 네이티브 및 관리 코드를 디버그하려면 .NET Framework 버전 4가 있어야 합니다. 4 이전 버전의 .NET Framework에서는 64비트 프로세스의 혼합 모드 디버깅이 지원되지 않습니다.

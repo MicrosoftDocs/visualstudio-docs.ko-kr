@@ -1,4 +1,5 @@
 ---
+description: 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.
 title: 웹 서버에서 요청한 리소스를 찾을 수 없음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21b1a97f93909a06ea9a542f83d4a4349b6f3a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3509094e25447cedc6e46d7d811d65c39ea83e1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871249"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146615"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 웹 서버에서 요청한 리소스를 찾을 수 없습니다
 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.

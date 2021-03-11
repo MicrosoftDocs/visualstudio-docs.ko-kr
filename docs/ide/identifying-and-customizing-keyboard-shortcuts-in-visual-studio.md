@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 가기 키를 사용자 지정하고, 다른 사용자가 사용하도록 내보낼 수 있습니다.
 title: 바로 가기 키 식별 및 사용자 지정
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d78a86c64cd85ea8738ec9038c5e64642ca950
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221251"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 
@@ -36,14 +37,14 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. [인기 있는 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령의 기본 바로 가기 키를 확인할 수도 있습니다. 모든 기본 바로 가기의 전체 목록(**일반 개발** 설정 기준)은 [모든 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
-바로 가기가 ‘전역’ 컨텍스트의 명령에 할당되었고 다른 컨텍스트가 없는 경우, 바로 가기는 항상 해당 명령을 호출합니다.  하지만 바로 가기가 전역 컨텍스트에서 한 명령에 할당되고 특정 컨텍스트에서는 다른 명령에 할당될 수도 있습니다. 특정 컨텍스트에서 이러한 바로 가기를 사용하는 경우, 바로 가기는 전역 컨텍스트가 아닌 특정 컨텍스트의 명령을 호출합니다.
+바로 가기가 ‘전역’ 컨텍스트의 명령에 할당되었고 다른 컨텍스트가 없는 경우, 바로 가기는 항상 해당 명령을 호출합니다. 하지만 바로 가기가 전역 컨텍스트에서 한 명령에 할당되고 특정 컨텍스트에서는 다른 명령에 할당될 수도 있습니다. 특정 컨텍스트에서 이러한 바로 가기를 사용하는 경우, 바로 가기는 전역 컨텍스트가 아닌 특정 컨텍스트의 명령을 호출합니다.
 
 > [!NOTE]
 > 사용자 설정 및 Visual Studio 버전에 따라 메뉴 명령과 대화 상자에 표시되는 옵션의 이름 및 위치가 변경될 수 있습니다. 이 페이지는 **일반 개발** 설정 프로필을 기반으로 합니다.
 
 ## <a name="identify-a-keyboard-shortcut"></a>바로 가기 키 식별
 
-1. 메뉴 모음에서 **도구** > **옵션** 을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
 2. **환경** 을 확장한 다음 **키보드** 를 선택합니다.
 
@@ -63,7 +64,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 ## <a name="customize-a-keyboard-shortcut"></a>바로 가기 키 사용자 지정
 
-1. 메뉴 모음에서 **도구** > **옵션** 을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션** 을 차례로 선택합니다.
 
 2. **환경** 을 확장한 다음 **키보드** 를 선택합니다.
 
@@ -147,6 +148,6 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
    ![사용자 지정 바로 가기 키만 가져옵니다.](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)

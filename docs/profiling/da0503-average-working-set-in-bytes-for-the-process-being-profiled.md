@@ -1,5 +1,6 @@
 ---
 title: DA0503 - 프로파일링 중인 프로세스에 대한 평균 작업 세트(바이트) | Microsoft Docs
+description: 이 메시지는 프로세스가 현재 사용 중인 실제 메모리의 평균 크기(바이트)를 보고합니다(작업 집합).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a871925d4cde24675bd7d5c7f777b909ea633d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9913d3408a3219c2c07fa096c1f17b3a61afd8c
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918097"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465805"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링되고 있는 프로세스의 평균 작업 세트(바이트)
 

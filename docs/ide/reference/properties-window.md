@@ -1,4 +1,5 @@
 ---
+description: 이 창을 사용하여 편집기 및 디자이너에 있는 디자인 타임 속성 및 선택된 개체의 이벤트를 변경할 수 있습니다.
 title: 속성 창
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff6435aa006de851a14f4f04570d086a86a5999
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967984"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221121"
 ---
 # <a name="properties-window"></a>속성 창
 
@@ -33,7 +34,7 @@ ms.locfileid: "99967984"
 
 **속성** 창에는 특정 속성의 필요 여부에 따라 다른 유형의 편집 필드가 표시됩니다. 이러한 편집 필드에는 편집 상자, 드롭다운 목록 및 사용자 지정 편집기 대화 상자에 대한 링크가 포함됩니다. 회색으로 표시된 속성은 읽기 전용입니다.
 
-## <a name="uielement-list"></a>UIElement 목록
+## <a name="uielement-list"></a>UI 요소 목록
 
 개체 이름\
 현재 선택한 개체가 나열됩니다. 활성 편집기 또는 디자이너의 개체만 표시됩니다. 여러 개체를 선택하면 선택한 모든 개체에 공통 속성만이 표시됩니다.
@@ -83,7 +84,7 @@ ms.locfileid: "99967984"
 검색\
 디자이너에서 XAML 파일을 편집할 때 속성 및 이벤트에 대한 검색 기능을 제공합니다. 검색 상자는 부분 단어 검색에 응답하고 입력한 대로 검색 결과를 업데이트합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)

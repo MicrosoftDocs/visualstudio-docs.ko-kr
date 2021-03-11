@@ -1,6 +1,6 @@
 ---
 title: 셀프 호스티드 WCF 서비스 디버그 | Microsoft Docs
-Description: 자체 호스팅 WCF 서비스를 디버그하는 방법을 알아봅니다. 항상 가능하지는 않지만 가장 쉬운 방법은 클라이언트와 서버를 모두 시작하도록 Visual Studio를 구성합니다.
+description: 자체 호스팅 WCF 서비스를 디버그하는 방법을 알아봅니다. 항상 가능하지는 않지만 가장 쉬운 방법은 클라이언트와 서버를 모두 시작하도록 Visual Studio를 구성합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915807"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155083"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>방법: 자체 호스팅 WCF 서비스 디버그
 *자체 호스팅 서비스* 는 IIS, WCF 서비스 호스트 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server 내에서 실행되지 않는 WCF 서비스입니다. 셀프 호스티드 WCF를 디버그하는 가장 쉬운 방법은 **디버그** 메뉴에서 **디버깅 시작** 을 선택할 때 클라이언트와 서버를 둘 다 시작하도록 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 구성하는 것입니다.

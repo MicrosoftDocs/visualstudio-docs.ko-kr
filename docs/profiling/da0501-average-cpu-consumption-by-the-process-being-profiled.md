@@ -1,5 +1,6 @@
 ---
 title: DA0501 - 프로파일링되고 있는 프로세스의 평균 CPU 사용량 | Microsoft 문서
+description: 이 메시지는 애플리케이션에서 명령을 실행할 때 프로세서가 사용 중이었던 시간의 백분율을 보고합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 65fed5b7afd6c8b1a678a9ef94b8c86e6dc88500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 242a3ff10042a53997b17f662af145440df2e95a
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918082"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465831"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: 프로파일링되고 있는 프로세스의 평균 CPU 사용량입니다.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
-ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
+ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93289979"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250041"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자(“관리자”)가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "93289979"
 > **슈퍼 관리자:**  “내 관리자에게 문의” 요청을 보내는 전자 메일 주소를 설정하려면 [계약 기본 설정](admin-prefs.md#contact-email-address)에서 해당 주소를 지정합니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
+- [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

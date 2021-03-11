@@ -1,5 +1,6 @@
 ---
 title: DA0504 - 프로파일링 중인 프로세스에 대한 최대 작업 세트(바이트) | Microsoft Docs
+description: 이 메시지는 프로세스가 현재 사용 중인 실제 메모리의 최대 크기(바이트)를 보고합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c218965add570035e9396652cec46279fcebc4d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7810646f14c61683fc3fc5e3e70eee33ba01dde1
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931749"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465792"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: 프로파일링되고 있는 프로세스의 최대 작업 세트(바이트)
 

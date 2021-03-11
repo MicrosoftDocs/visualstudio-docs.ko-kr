@@ -1,4 +1,5 @@
 ---
+description: 원격 컴퓨터에 다른 사용자 이름을 사용하여 연결하도록 Windows 파일 공유가 구성되었습니다.
 title: Windows 파일 공유가 구성되었음... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1cc81c8ef39aeeb716a26209a4aded0c69dcf95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc34e269d609837d9080cd1e84787fbabf45ce76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870872"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146251"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>오류: Windows 파일 공유가 구성되었음...
 원격 컴퓨터에 다른 사용자 이름을 사용하여 연결하도록 Windows 파일 공유가 구성되었습니다. 이러한 구성은 원격 디버깅과 호환되지 않습니다.
@@ -36,7 +37,7 @@ ms.locfileid: "99870872"
 
      또는
 
-     을 선택합니다. 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.
+     . 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.
 
     1. **시작** 메뉴에서 **보조 프로그램** 을 가리킨 다음, **명령 프롬프트** 를 클릭합니다.
 

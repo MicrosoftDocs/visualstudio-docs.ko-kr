@@ -1,4 +1,5 @@
 ---
+description: 원격 컴퓨터가 원격 연결 대화 상자에 표시되지 않는 경우 다음과 같은 일반적인 원인을 확인합니다.
 title: 원격 머신은 원격 연결 대화 상자에 표시되지 않음 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be39d733b2e5fe83fa9f7e2241c7de06980bb583
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 407b33fdcc79b5ff51f34670c91bfd52ec522dac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871370"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146771"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>오류: 원격 컴퓨터는 원격 연결 대화 상자에 표시되지 않습니다.
 원격 컴퓨터가 원격 연결 대화 상자에 표시되지 않는 경우 다음과 같은 일반적인 원인을 확인합니다.

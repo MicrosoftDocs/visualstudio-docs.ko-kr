@@ -1,5 +1,6 @@
 ---
 title: DA0017 - 활성 메모리를 디스크에 페이징하는 비율 높음 | Microsoft Docs
+description: 프로파일링 실행에서 수집된 시스템 성능 데이터는 프로파일링 실행 내내 디스크를 대상으로 한 활성 메모리 페이징의 비율이 높다는 것을 나타냅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f66db4c727be1377b41da381b75609af6478c10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc3be6c354e7ac412ffa069caef4ee09396d6cb5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916775"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466091"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: 활성 메모리를 디스크에 페이징하는 비율이 높습니다.
 

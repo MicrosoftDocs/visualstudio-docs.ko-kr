@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 디버거에서 원격 컴퓨터에 연결할 수 없습니다.
 title: RPC에 인증 필요 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09901453fc602deaa509ceb15e4c571764d407a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f22998bc1c71a242b985739b2b92ba9743535d83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871378"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146719"
 ---
 # <a name="error-rpc-requires-authentication"></a>오류: RPC에 인증 필요
 Visual Studio 디버거에서 원격 컴퓨터에 연결할 수 없습니다. 로컬 컴퓨터에서 RPC 정책을 사용하도록 설정되어 있어 원격 디버깅을 수행할 수 없습니다.

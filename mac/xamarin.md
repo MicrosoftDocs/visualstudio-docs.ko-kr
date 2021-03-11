@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
-ms.openlocfilehash: e40d9640ca2e62148e4ad166845d8f59854367ff
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 41b26eb75454299aed86a3cdb3905d6c66efb098
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950660"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473350"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 모바일 앱 개발
 
@@ -21,7 +21,7 @@ ms.locfileid: "85950660"
 
 Mac용 Visual Studio 버전 8.3 이상에서는 Xamarin.Forms용 XAML 핫 다시 로드가 기본 제공됩니다. 이 기능을 사용하도록 설정하면, 파일을 저장할 때마다 실행 중인 앱에 변경 내용이 즉시 반영됩니다.
 
-**Visual Studio > 기본 설정 > 프로젝트 > Xamarin 핫 다시 로드**에서 **Xamarin 핫 다시 로드 사용** 확인란을 선택하면 XAML 핫 다시 로드를 사용하도록 설정할 수 있습니다.
+**Visual Studio > 기본 설정 > 프로젝트 > Xamarin 핫 다시 로드** 에서 **Xamarin 핫 다시 로드 사용** 확인란을 선택하면 XAML 핫 다시 로드를 사용하도록 설정할 수 있습니다.
 
 핫 다시 로드에 대한 자세한 내용은 설명서 내에서 [Xamarin.Forms용 XAML 핫 다시 로드 가이드](/xamarin/xamarin-forms/xaml/hot-reload)를 참조하세요.
 
@@ -66,4 +66,4 @@ Xamarin Inspector는 사용자 도구가 포함된 대화형 C# 콘솔을 제공
 
 Xamarin Inspector는 다양한 프로그래밍 플랫폼(Android, iOS, Mac 및 Windows)을 대상으로 하고 IDE의 디버깅 워크플로에 통합할 수 있는 고급 C# 콘솔을 제공하는 독립 실행형 애플리케이션으로 구성됩니다.
 
-자세한 내용은 [Xamarin Inspector](/xamarin/tools/inspector/) 가이드를 참조하세요.
+자세한 내용은 [Xamarin Inspector](/xamarin/tools/inspector/release-notes/1.5) 가이드를 참조하세요.
