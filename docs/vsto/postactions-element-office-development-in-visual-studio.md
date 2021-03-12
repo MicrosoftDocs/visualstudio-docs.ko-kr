@@ -51,7 +51,7 @@ ms.locfileid: "102470042"
 
 ## <a name="post-deployment-action-example"></a>배포 후 작업 예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
  다음 코드 예제에서는 `postActions` 을 사용하여 배포된 Office 솔루션에 대한 애플리케이션 매니페스트의 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]요소를 보여 줍니다. 이 코드 예제는 [Office 솔루션의 응용 프로그램 매니페스트에](../vsto/application-manifests-for-office-solutions.md)제공 된 더 큰 예제의 일부입니다.
 
 ### <a name="code"></a>코드
