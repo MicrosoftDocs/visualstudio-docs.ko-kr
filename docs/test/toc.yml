@@ -119,6 +119,10 @@
           href: customizing-code-coverage-analysis.md
         - name: 코드 검사 문제 해결
           href: troubleshooting-code-coverage.md
+    - name: 마이그레이션
+      items:
+        - name: MSTestV1에서 MSTestV2로 업그레이드
+          href: mstest-update-to-mstestv2.md
 - name: Live Unit Testing
   items:
     - name: 소개
