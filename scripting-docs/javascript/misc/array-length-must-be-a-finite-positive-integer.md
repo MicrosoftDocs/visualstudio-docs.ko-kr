@@ -1,4 +1,5 @@
 ---
+description: 정수가 아닌 인수를 사용 하 여 배열 생성자를 호출 하 고 있습니다. 정수는 0과 양의 정수 집합으로 구성 됩니다.
 title: 배열 길이는 유한 양의 정수 여야 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d3d2985706ad6cfca9b6ac441baa039ccf04af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862209"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572119"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>배열 길이는 유한 양의 정수여야 합니다.
 정수가 아닌 인수를 사용 하 여 **배열** 생성자를 호출 하 고 있습니다. 정수는 0과 양의 정수 집합으로 구성 됩니다.  
@@ -41,5 +42,5 @@ ms.locfileid: "91862209"
   
      최대 정수 값 (약 40억)이 아닌 배열의 크기에 대 한 상한이 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

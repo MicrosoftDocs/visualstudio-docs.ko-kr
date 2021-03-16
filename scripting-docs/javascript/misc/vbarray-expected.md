@@ -1,4 +1,5 @@
 ---
+description: Visual Basic safeArray가 아닌 개체를 제공 했습니다.
 title: VBArray가 필요 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e344e24b3fbef7b7f119a36513c222e085328072
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862694"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572080"
 ---
 # <a name="vbarray-expected"></a>VBArray가 필요합니다.
 Visual Basic safeArray가 아닌 개체를 제공 했습니다.  
@@ -34,6 +35,6 @@ new VBArray(safeArray);
   
 - **Vbarray 생성자에** **vbarray** 개체만 전달 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [VBArray 개체](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/VBArray)   
  [배열 사용](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

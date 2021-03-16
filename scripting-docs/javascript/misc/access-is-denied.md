@@ -1,4 +1,5 @@
 ---
+description: 스크립트가 현재 페이지의 호스트가 아닌 다른 소스에서 데이터에 액세스하려고 했습니다.
 title: 액세스가 거부 되었습니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -13,12 +14,12 @@ dev_langs:
 ms.assetid: 8a512060-d744-47af-a83e-4ba42ea2c5b2
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 874f7c0e5dcfaf4881c059a77f1c5e930d8c0578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6be3bce0643a5892973235871191766cac140962
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814839"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571937"
 ---
 # <a name="access-is-denied"></a>액세스 거부됨
 스크립트가 현재 페이지의 호스트가 아닌 다른 소스에서 데이터에 액세스하려고 했습니다. Internet Explorer 및 다른 브라우저가 따르는 동일 원본 정책에서는 스크립트가 현재 페이지 URL의 체계, 호스트 및 포트와 동일한 소스의 데이터만 액세스할 수 있습니다.  

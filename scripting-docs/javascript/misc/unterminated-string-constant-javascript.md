@@ -1,4 +1,5 @@
 ---
+description: 닫는 따옴표를 사용 하 여 문자열 상수를 종료 하지 않았습니다.
 title: 종결 되지 않은 문자열 상수 (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 59ce392220b8c3e9fa82384c514e0baf762ee29a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862708"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571157"
 ---
 # <a name="unterminated-string-constant-javascript"></a>종결되지 않은 문자열 상수입니다.(JavaScript)
 닫는 따옴표를 사용 하 여 문자열 상수를 종료 하지 않았습니다. 문자열 상수는 따옴표 쌍 안에 포함 되어야 합니다.  
@@ -31,6 +32,6 @@ ms.locfileid: "91862708"
   
 - 문자열의 끝에 닫는 따옴표를 추가 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [String 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
  [toString 메서드(Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

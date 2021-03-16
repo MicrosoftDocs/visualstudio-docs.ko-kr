@@ -1,4 +1,5 @@
 ---
+description: 다음 표에는 각 범주의 JavaScript 연산자가 나열 되어 있습니다.
 title: 연산자 요약 (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -12,12 +13,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 47f14b0d8ee87877dc8f4305eb19679ea19fb9e3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862089"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571690"
 ---
 # <a name="operator-summary-javascript"></a>연산자 개요(JavaScript)
 다음 표에서는 해당 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 범주의 연산자를 나열 합니다.  
@@ -26,12 +27,12 @@ ms.locfileid: "91862089"
   
 |연산자|기호|  
 |--------------|------------|  
-|[또한](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[더하기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
 |[감소](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
-|[사업부](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
+|[나누기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
 |[ID 증가값](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
 |[나머지](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
-|[*](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[곱하기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
 |[빼기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
 |[단항 부정 연산자](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   

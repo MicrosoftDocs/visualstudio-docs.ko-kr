@@ -1,4 +1,5 @@
 ---
+description: 루프 외부에서 break 키워드를 사용 하려고 했습니다.
 title: 루프 외부에 ' break '를 사용할 수 없습니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d761a1cff89f650e5fc465b6a6aef2713aafb765
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862798"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570650"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>루프 외부에서 'break'를 사용할 수 없습니다.
 루프 외부에서 **break** 키워드를 사용 하려고 했습니다. **Break** 키워드는 루프 또는 문을 종료 하는 데 사용 됩니다 `switch` . 루프 또는 문의 본문에 포함 되어야 합니다 `switch` . 그러나 **레이블은** break 키워드 뒤에 올 수 있습니다.  
@@ -34,7 +35,7 @@ break labelname;
   
 - **Break** 키워드가 바깥쪽 루프 또는 switch 문 내에 표시 되는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [break 문](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
  [프로그램 흐름 제어](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
  [스크립트 문제 해결](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)
