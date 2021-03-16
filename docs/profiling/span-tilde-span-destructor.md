@@ -1,4 +1,5 @@
 ---
+description: span 개체를 제거하고 해당 리소스를 해제합니다.
 title: span::~span 소멸자 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,18 +13,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 260d4210ccb00739b3f1bcdc7d4b6be831cdecb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a0bf8a817a6d14cfa344578448f71e03b141a7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223851"
 ---
 # <a name="spanspan-destructor"></a>span::~span 소멸자
 
 `span` 개체를 제거하고 해당 리소스를 해제합니다.
 
-## <a name="syntax"></a>구문
+## <a name="syntax"></a>Syntax
 
 ```cpp
 ~span();
@@ -35,6 +36,6 @@ ms.locfileid: "99960093"
 
 **네임스페이스:** Concurrency::diagnostic
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>추가 정보
 
 - [span 클래스](../profiling/span-class.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865828"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149329"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 
@@ -49,6 +49,16 @@ Visual Studio와 원격 디버거는 설치나 시작 중 올바른 포트를 �
 1. 규칙의 이름(예: **msvsmon**, **IIS** 또는 **웹 배포**)을 추가하고 **마침** 을 선택합니다.
 
    새 규칙이 **인바운드 규칙** 또는 **아웃바운드 규칙** 목록에서 표시되어 선택되어 있어야 합니다.
+
+**PowerShell을 사용하여 포트 열기:**
+
+Windows 방화벽의 경우 [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps) 등의 PowerShell 명령을 사용할 수 있습니다.
+
+다음 예시에서는 원격 컴퓨터에서 원격 디버거의 포트 4024를 엽니다. 사용해야 하는 경로가 다를 수 있습니다.
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>원격 디버깅을 사용할 수 있도록 하는 원격 컴퓨터의 포트
 

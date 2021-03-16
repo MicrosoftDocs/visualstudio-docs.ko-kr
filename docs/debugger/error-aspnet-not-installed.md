@@ -1,4 +1,5 @@
 ---
+description: 이 오류는 디버깅하려는 컴퓨터에 ASP.NET이 제대로 설치되어 있지 않을 때 발생합니다.
 title: ASP.NET이 설치되어 있지 않습니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2388e59ae760e28c8f778ab8ccb15265414174b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 205f0fb3948414ec87b735af9b1b97917872a950
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871756"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147057"
 ---
 # <a name="error-aspnet-not-installed"></a>오류: ASP.NET이 설치되어 있지 않음
 이 오류는 디버깅하려는 컴퓨터에 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 제대로 설치되어 있지 않을 때 발생합니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 설치되지 않았거나 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]을 먼저 설치하고 나중에 IIS를 설치했을 수 있습니다.

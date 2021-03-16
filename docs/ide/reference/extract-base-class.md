@@ -1,5 +1,6 @@
 ---
 title: 기본 클래스 추출
+description: 이 리팩터링은 선택한 클래스에서 새 기본 클래스로 멤버를 추출합니다.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c389ac6285b3f20dcdf05833f1ff3202d155c4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d7a21bbd3e51ee6a6776ca728a545cbbb731cab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962810"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466279"
 ---
 # <a name="extract-base-class"></a>기본 클래스 추출
 

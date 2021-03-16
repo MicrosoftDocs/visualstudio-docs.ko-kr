@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964565"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221160"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -82,6 +82,9 @@ Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는
 
 #### <a name="autodetect-the-run-settings-file"></a>실행 설정 파일 자동 검색
 
+> [!NOTE]
+> 이는 `.runsettings` 파일에 대해서만 작동합니다.
+
 실행 설정 파일을 자동 검색하려면 솔루션 루트에 저장합니다.
 
 실행 설정 파일의 자동 검색을 사용하도록 설정하면 이 파일의 설정이 모든 테스트 실행에 적용됩니다. 다음 두 가지 방법을 사용하여 runsettings 파일 자동 검색을 켤 수 있습니다.
@@ -135,7 +138,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 
 명령줄에서 테스트를 실행하려면 *vstest.console.exe* 를 사용하고, **/Settings** 매개 변수를 통해 설정 파일을 지정합니다.
 
-1. Visual Studio용 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 엽니다.
+1. [Visual Studio용 개발자 명령 프롬프트](../ide/reference/command-prompt-powershell.md)를 엽니다.
 
 2. 다음과 유사한 명령을 입력합니다.
 

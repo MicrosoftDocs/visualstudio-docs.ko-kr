@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c874a5cd2742f795c6d8b04db88b98b19a556d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882793"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470016"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service에서 Python 환경을 설정하는 방법(Windows)
 
@@ -46,7 +46,7 @@ ms.locfileid: "99882793"
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Azure Resource Manager를 통해 Python 버전 선택
 
-Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경우 사이트 확장을 리소스로 추가합니다. 특히 확장은 `siteextensions` 형식과 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22)의 이름을 사용하여 중첩된 리소스(`resources` 아래의 `resources` 개체)로 표시됩니다.
+Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경우 사이트 확장을 리소스로 추가합니다. 특히 확장은 `siteextensions` 형식의 중첩된 리소스(`resources` 아래의 `resources` 개체)로 표시됩니다.
 
 예를 들어 `python361x64`(Python 3.6.1 x64)에 참조를 추가한 후 템플릿이 다음과 같이 표시될 수 있습니다(일부 속성 생략됨).
 
@@ -162,7 +162,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
 서버 환경에서 직접 패키지를 설치하려면 다음 방법 중 하나를 사용합니다.
 
-| 메서드 | 사용 |
+| 메서드 | 사용량 |
 | --- | --- |
 | [Azure App Service Kudu 콘솔](#azure-app-service-kudu-console) | 대화형으로 패키지를 설치합니다. 패키지는 순수한 Python이거나 휠을 게시해야 합니다. |
 | [Kudu REST API](#kudu-rest-api) | 패키지 설치를 자동화하는 데 사용할 수 있습니다.  패키지는 순수한 Python이거나 휠을 게시해야 합니다. |
@@ -183,7 +183,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
     a. 패키지를 설치하려는 Python 설치 폴더(예: *d:\home\python361x64*)로 이동합니다.
 
-    b. `python.exe -m pip install <package_name>`을 사용하여 패키지를 설치합니다.
+    b. `python.exe -m pip install <package_name>`를 사용하여 패키지를 설치합니다.
 
     ![Azure App Service용 Kudu 콘솔을 통한 bottle 설치의 예](media/python-on-azure-console02.png)
 

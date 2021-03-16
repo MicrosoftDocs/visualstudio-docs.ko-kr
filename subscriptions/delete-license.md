@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 관리자가 Visual Studio 구독 관리 포털에서 구독 할당을 삭제하는 방법 알아보기
-ms.openlocfilehash: 22a1c55bcaef436d1a29eb84b93a57f407114a1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904470"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250022"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 할당 삭제
 회사를 떠나거나, 프로젝트가 완료되거나, 새로운 작업 역할로 전환되는 경우처럼 구독자에게 더 이상 Visual Studio 구독이 필요하지 않은 경우 해당 구독을 제거하고 다른 사람에게 할당할 수 있습니다. 구독을 다시 할당하면 일부 구독자 혜택은 재설정되지 않습니다.  새 사용자는 요청되지 않은 키를 요청하고, 이전에 요청된 키를 볼 수 있지만 클레임 제한은 재설정되지 **않습니다**.  EA(기업 계약)가 있는 조직의 경우 원래 사용자가 사용한 모든 혜택(예: Pluralsight 교육)은 다시 설정됩니다. 
@@ -33,7 +33,10 @@ ms.locfileid: "92904470"
    >
    > Azure Active Directory 보안 그룹을 통해 구독 할당을 추가한 경우 관리 포털에서 삭제가 업데이트되는 데 최대 24시간이 걸릴 수 있습니다.  Azure Active Directory 그룹을 사용하여 구독을 관리하는 방법에 대한 자세한 내용은 [이 문서](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions)를 참조하세요. 
 
-## <a name="see-also"></a>참고 항목
+## <a name="resources"></a>리소스
+- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

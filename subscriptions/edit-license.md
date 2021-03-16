@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 관리자가 구독 할당을 편집하는 방법을 알아봅니다.
-ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433559"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249794"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio 구독 할당 편집
 구독 관리자는 조직 내에서 개인에게 할당된 구독을 변경할 수 있습니다.  이 문서에서는 관리자가 변경할 수 있는 유형에 대해 설명하고 필요한 단계를 제공합니다.
@@ -30,7 +30,6 @@ ms.locfileid: "94433559"
 구독자의 이름, 성, 구독 수준, 이메일 주소, 국가, 언어, 다운로드 및 참조 필드를 업데이트할 수 있습니다. 구독자 정보를 편집하고 **저장** 을 클릭합니다.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>대량 편집을 사용하여 여러 구독자 편집
-
 
 대량 편집 프로세스를 사용하여 여러 구독자를 한 번에 수정할 수 있습니다. 이 기능은 주로 회사 이메일 주소 변경을 수행하는 조직에서 사용되거나 조직에서 다운로드에 대한 액세스를 제한하도록 결정한 경우에 사용됩니다.
 
@@ -55,6 +54,9 @@ ms.locfileid: "94433559"
    > ![라이선스 편집 - 대량 편집 파일 업로드](_img/edit-license/edit-license-bulk-file-upload1.png "완성된 Excel 파일의 위치로 이동하여 파일을 선택한 뒤 확인을 클릭합니다.")
 
 5. 파일이 업로드되면 성공했음을 알려주는 알림이 표시됩니다. 이 시점에서 편집한 내용이 구독자 정보에 반영됩니다.
+
+## <a name="resources"></a>리소스
+- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

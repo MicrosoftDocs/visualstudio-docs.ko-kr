@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684160"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250056"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio 2017에서 Azure 및 IIS의 ASP.NET Core 원격 디버그
 
@@ -79,13 +79,23 @@ Visual Studio에서 완전히 프로비전된 IIS 인스턴스에 애플리케�
 
 1. Visual Studio에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **게시** 를 선택합니다.
 
-    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **새 프로필** 을 클릭합니다.
+    게시 프로필을 이전에 구성한 경우 **게시** 창이 나타납니다. **신규** 또는 **새 프로필** 을 선택합니다.
 
-1. **게시** 대화 상자에서 **Azure App Service** 를 선택하고 **새로 만들기** 를 선택한 다음 메시지에 따라 프로필을 만듭니다.
+1. 새 게시 프로필을 만듭니다.
 
-    자세한 지침은 [Visual Studio를 사용하여 Azure에 ASP.NET Core 웹앱 배포](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)를 참조하세요.
+    ::: moniker range=">=vs-2019"
+    **게시** 대화 상자에서 **Azure** 를 선택하고 **다음** 을 선택합니다. 그런 다음 **Azure App Service (Windows)** 를 선택하고, **다음** 을 선택한 다음 프롬프트에 따라 프로필을 만듭니다.
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="Visual Studio를 사용하여 Azure에 ASP.NET Core 웹앱 배포":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    **게시** 대화 상자에서 **Azure App Service** 를 선택하고 **새로 만들기** 를 선택한 다음 메시지에 따라 프로필을 만듭니다.
 
     ![Azure App Service에 게시](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    자세한 지침은 [Visual Studio를 사용하여 Azure에 ASP.NET Core 웹앱 배포](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)를 참조하세요.
 
 1. 게시 창에서 **구성 편집** 을 선택하고 디버그 구성으로 전환한 다음 **게시** 를 선택합니다.
 
@@ -106,6 +116,7 @@ Visual Studio에서 완전히 프로비전된 IIS 인스턴스에 애플리케�
 Windows Server용 Azure VM을 만든 다음 IIS 및 기타 필수 소프트웨어 구성 요소를 설치하고 구성할 수 있습니다. 이는 Azure App Service에 배포하는 것보다 오래 걸리며 이 자습서의 나머지 단계를 수행할 필요가 있습니다.
 
 이러한 절차는 다음 서버 구성에서 테스트되었습니다.
+
 * Windows Server 2012 R2 및 IIS 8
 * Windows Server 2016 및 IIS 10
 * Windows Server 2019 및 IIS 10
@@ -143,7 +154,7 @@ Internet Explorer에서 보안 강화 구성이 사용하도록 설정되어 있
     > [!NOTE]
     > 시스템이 인터넷에 연결되지 않은 경우 *[Microsoft Visual C++ 2015 재배포 가능 패키지](https://www.microsoft.com/download/details.aspx?id=53840)* 를 설치한 후에 .NET Core Windows Server 호스팅 번들을 설치합니다.
 
-3. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y** 에 이어 **net start w3svc** 를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
+2. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y** 에 이어 **net start w3svc** 를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
 ## <a name="choose-a-deployment-option"></a>배포 옵션 선택
 

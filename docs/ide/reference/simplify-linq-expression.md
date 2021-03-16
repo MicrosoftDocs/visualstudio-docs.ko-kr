@@ -1,5 +1,6 @@
 ---
 title: LINQ 식 간소화
+description: 이 리팩터링은 Where 메서드에 대한 Enumerable 불필요한 호출을 제거하는 데 사용됩니다.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 006fc0fe84b11573ece98019a4446d83de52d62c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20a3524d786b1f03fc3e221d1b257892d9439a0b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957558"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466169"
 ---
 # <a name="simplify-linq-expression"></a>LINQ 식 간소화
 

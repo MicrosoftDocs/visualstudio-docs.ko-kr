@@ -2,7 +2,7 @@
 title: 프로파일링 도구 시작하기
 description: Visual Studio에서 사용할 수 있는 다른 진단 도구에 대해 간략히 살펴봅니다.
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145380"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
@@ -162,6 +162,14 @@ ADO.NET 또는 Entity Framework Core를 사용하는 .NET Core 앱의 경우 [�
 
 ![Allocation](./media/db-gotosource.png "할당")
 
+## <a name="visualize-net-counters-net-core"></a>.NET 카운터 시각화(.NET Core)
+
+Visual Studio 2019 버전 16.7부터 Visual Studio의 [.NET 카운터 도구](../profiling/dotnet-counters-tool.md)를 사용하여 성능 카운터를 시각화할 수 있습니다. [dotnet 카운터](/dotnet/core/diagnostics/dotnet-counters)를 사용하여 카운터를 시각화할 수 있습니다. dotnet 카운터는 CPU 사용량 및 가비지 수집기 힙 크기와 같은 여러 카운터를 지원합니다.
+
+이 도구는 목록 보기의 각 카운터에 대한 활성 값을 표시합니다.
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text="수집 중인 .NET 카운터 도구":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI 성능 및 접근성 이벤트 검사(UWP)
@@ -231,12 +239,13 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
+|[GPU 사용량](./gpu-usage.md)|예|예|no|
 |[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
 |[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
+|[.NET 카운터](../profiling/dotnet-counters-tool.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
 |[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
-|[성능 탐색기](#analyze-performance-legacy-tools)|no|아니요|아니요|
+|[성능 탐색기](#analyze-performance-legacy-tools)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
@@ -245,14 +254,14 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|아니요|
+|[GPU 사용량](./gpu-usage.md)|예|예|no|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
-|[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
+|[성능 탐색기](../profiling/performance-explorer.md)|예|no|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
-|[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
-|[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
+|[네트워크 사용량](../profiling/network-usage.md)|no|예|no|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|HTML은 예, XAML은 no|no|
+|[JavaScript 메모리](../profiling/javascript-memory.md)|no|HTML은 예, XAML은 no|no|
 ::: moniker-end
 
 

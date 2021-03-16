@@ -1,18 +1,18 @@
 ---
-title: 월간 구독에 대한 관리자 설정 | Microsoft Docs
+title: Visual Studio 월간 구독에 대한 관리자 설정 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/03/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 월간 구독에 대한 관리자 설정
-ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904248"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249532"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Visual Studio 월간 구독에 대한 관리자 설정
 
@@ -58,6 +58,10 @@ Visual Studio 월간 구독을 구매하는 경우 구매하는 데 사용된 Az
 > 관리자로 설정하지 않은 월간 구독을 편집할 수 있는 액세스 권한이 있는 사용자가 있으면 해당 사용자는 구독을 관리할 수 있는 기본 Azure 구독의 역할을 가질 수 있습니다. 해당 역할에는 소유자, 기여자, 서비스 관리자 또는 공동 관리자가 포함됩니다. 자세한 내용은 [청구 관리자 추가](/azure/devops/organizations/billing/add-backup-billing-managers)를 참조하세요.
 
 Visual Studio 월간 구독에 대한 자세한 내용은 구독 구입에서 [개요](vscloud-overview.md)를 참조하세요. Visual Studio 월간 구독을 구매하려면 [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)에서 Visual Studio Marketplace를 방문하세요.
+
+## <a name="resources"></a>리소스
+- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
+
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86544ad36874ec2a99fac0f8505b24548e83c7c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946191"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168363"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 명령줄 옵션
 
@@ -28,7 +28,7 @@ ms.locfileid: "99946191"
 >
 > ARM 아키텍처 기반 머신에서 자동화된 테스트를 실행하려면 *VSTest.Console.exe* 를 사용해야 합니다.
 
-[개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 열어 명령줄 도구를 사용하거나 *%Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft>* 에서 도구를 찾을 수 있습니다.
+[개발자 명령 프롬프트](../ide/reference/command-prompt-powershell.md)를 열어 명령줄 도구를 사용하거나 *%Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft>* 에서 도구를 찾을 수 있습니다.
 
 ## <a name="general-command-line-options"></a>일반 명령줄 옵션
 

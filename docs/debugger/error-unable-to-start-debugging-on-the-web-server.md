@@ -1,4 +1,5 @@
 ---
+description: 웹 서버에서 실행 중인 ASP.NET 애플리케이션을 디버깅하려고 하면 ‘웹 서버에서 디버깅을 시작할 수 없습니다.’라는 오류 메시지가 표시될 수 있습니다.
 title: 웹 서버에서 디버깅을 시작할 수 없습니다. | Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: error-reference
@@ -26,12 +27,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91fa3f74c5dd0f5f6a036d5da7a779e68462c426
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870885"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146368"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 

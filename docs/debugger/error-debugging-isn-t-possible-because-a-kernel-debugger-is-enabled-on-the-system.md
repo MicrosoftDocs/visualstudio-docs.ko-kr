@@ -1,5 +1,6 @@
 ---
 title: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버그할 수 없음 | Microsoft Docs
+description: 이 메시지는 디버그 모드로 시작된 Windows 7 또는 Windows Vista 시스템에서 관리형 코드를 디버그하고 애플리케이션에서 CLR 2.0, 3.0 또는 3.5 버전을 사용할 때 발생합니다.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced7fb79a11321678ae2963241807e5ddd4600ab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871769"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466461"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 시스템에서 커널 디버거를 사용하도록 설정했으므로 디버깅할 수 없습니다.
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.

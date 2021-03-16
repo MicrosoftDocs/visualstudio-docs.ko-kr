@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954425"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161302"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
 
@@ -217,7 +217,7 @@ bin:
 
 |매크로|설명|
 |-|-|
-|`${env.<VARIABLE>}`| 개발자 명령 프롬프트에 대해 설정된 환경 변수(예: ${env.PATH}, ${env.COMSPEC} 등)를 지정합니다. 자세한 내용은 [Visual Studio용 개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)를 참조하세요.|
+|`${env.<VARIABLE>}`| 개발자 명령 프롬프트에 대해 설정된 환경 변수(예: ${env.PATH}, ${env.COMSPEC} 등)를 지정합니다. 자세한 내용은 [개발자 명령 프롬프트 및 개발자 PowerShell](../ide/reference/command-prompt-powershell.md)을 참조하세요.|
 |`${workspaceRoot}`| 작업 영역 폴더의 전체 경로(예: *C:\sources\hello*)|
 |`${file}`| 이 작업을 실행하도록 선택된 파일 또는 폴더의 전체 경로(예: *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| 파일 또는 폴더의 상대 경로(예: *src\hello.js*)|

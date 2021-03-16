@@ -1,4 +1,5 @@
 ---
+description: 메시지 탭을 사용하여 메시지 보기에 나열할 메시지 유형을 선택하고 메시지 검색 조건을 지정할 수 있습니다.
 title: 메시지 옵션 대화 상자, 메시지 탭 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66c1abcedbf48e8cd80aeafe0c4a5def1ddbb9eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891607"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160370"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 메시지 탭
 **메시지** 탭을 사용하여 [메시지 뷰](../debugger/messages-view.md)에 나열할 메시지 유형을 선택하고 메시지 검색 조건을 지정할 수 있습니다. [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md)를 표시하려면 **Spy** 메뉴에서 **로그 메시지** 를 선택합니다.

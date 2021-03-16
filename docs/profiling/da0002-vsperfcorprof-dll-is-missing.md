@@ -1,5 +1,6 @@
 ---
 title: DA0002 - VSPerfCorProf.dll 누락 | Microsoft Docs
+description: 이 경고는 필요한 환경 변수를 초기화할 VSPerfCLREnv.cmd 도구를 사용하지 않고 프로파일러 데이터 컬렉션에 대한 명령줄 도구를 사용하는 경우, 또는 프로파일링 도구를 시작할 때 다른 프로파일러가 실행 중인 경우에 발생합니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 763a28dcb2200549b13b3562ffe3ab9fa629cdc5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868305"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466182"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll이 없습니다.
 

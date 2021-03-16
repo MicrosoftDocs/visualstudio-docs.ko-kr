@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 기업계약을 체결한 고객에게 제공되는 Azure DevTest 특가를 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904466"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249474"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 기업계약 DevTest 제안
 
@@ -41,7 +41,10 @@ ms.locfileid: "92904466"
 0. 이 확인란을 클릭하면 구독에 기업계약이 적용된다는 것을 인정하는 것입니다. 
 0. **구매** 를 클릭합니다.  (이 제안을 선택하더라도 실제로는 아무것도 구매하지 않습니다.)
 
-## <a name="see-also"></a>참고 항목
+## <a name="resources"></a>리소스
+- 도움이 필요하신가요?  [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

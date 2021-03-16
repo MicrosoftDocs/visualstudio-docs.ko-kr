@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221186"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -47,11 +47,19 @@ Visual Studio 2019를 사용하면 모든 개발자, 앱 및 플랫폼을 위한
 
 ### <a name="improved-search"></a>향상된 검색
 
-이전에는 빠른 실행이라고 불린 새로운 검색 환경은 더 빠르고 더 효율적입니다. 이제 사용자가 입력할 때 검색 결과가 동적으로 표시됩니다. 그리고 검색 결과에 명령의 바로 가기 키가 포함되는 경우가 많으므로 훨씬 간편하게 기억해 두었다가 나중에 사용할 수 있습니다.
+이전에는 빠른 실행이라고 불린 새로운 검색 환경은 더 빠르고 더 효율적입니다. 이제 사용자가 입력할 때 검색 결과가 동적으로 표시됩니다. 그리고 검색 결과에 명령의 바로 가기 키가 포함되는 경우가 많으므로 기억해 두었다가 나중에 사용할 수 있습니다.
 
    ![Visual Studio 2019의 새로운 검색 환경 애니메이션](media/vs-2019/new-search-feature.gif "Visual Studio 2019의 새로운 검색 환경.")
 
 새 퍼지 검색 논리는 오타와 관계없이 필요한 내용을 찾습니다. 따라서 명령, 설정, 설명서, 기타 유용한 항목을 찾는지와 관계없이 새로운 검색 기능을 사용하면 간편하게 원하는 내용을 찾을 수 있습니다.
+
+자세한 내용은 [Visual Studio 검색 사용](visual-studio-search.md)을 참조하세요.
+
+#### <a name="intelligent-search-service"></a>지능형 검색 서비스
+
+**16.9의 새로운 기능**: 클라우드 지원 기술, 인공 지능 및 기계 학습을 사용하여 검색 결과를 개선했습니다. 이제 Visual Studio에서 더욱 관련성 높은 검색 결과가 표시될 뿐만 아니라 더욱 쉽게 제품 기능을 검색할 수 있습니다.
+
+자세한 내용은 [지능형 Visual Studio 검색 서비스](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/) 블로그 게시물을 참조하세요.
 
 ### <a name="refactorings"></a>리팩터링
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572878"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473415"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -56,7 +56,7 @@ A: 첫 번째 구매에 현재 달의 남은 날짜를 포함하기 위해 비�
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q: **연간** 클라우드 구독 요금은 어떻게 처리되나요?
 A: 각 구매 시 즉시 구매한 전체 수량 요금을 청구합니다. 요금은 일년에 걸쳐 분배하지 않으며 비례 배분은 없습니다. 현재 연도의 다른 시기에 연간 클라우드 구독을 구입하는 경우 다른 달 내에 구독을 갱신하게 됩니다. 일반적으로 Microsoft 볼륨 라이선스 계약 구매에서 그런 것처럼 고객의 연간 클라우드 구독 모두를 동일하게 취급하지 않습니다.
 
-### <a name="q-how-do-cancelations-work"></a>Q: 취소는 어떻게 합니까?
+### <a name="q-how-do-cancellations-work"></a>Q: 취소는 어떻게 합니까?
 A: Visual Studio 클라우드 구독을 취소할 경우 자동 갱신을 취소합니다. 구독은 기본 갱신일까지 단순히 계속되다가 만료됩니다.
 만료 시 Visual Studio 구독자는 Visual Studio나 구독으로 인한 기타 모든 혜택을 더 이상 사용할 수 없습니다.
 
@@ -94,10 +94,13 @@ A:  예. 새 버전이 출시되면 다운로드하고 실행할 수 있습니�
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Q: 소프트웨어 대리점에서 Visual Studio 클라우드 구독을 구입할 수 있나요?
 A:  예, 대리점이 CSP(클라우드 솔루션 공급자) 프로그램에 참여하는 경우 가능합니다. 요청하십시오.
 
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>Q: Azure 청구서에 대한 정보는 어디에서 찾을 수 있습니까?
+A: [Azure 설명서](/azure/)의 [Azure 송장 이해](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) 문서를 확인하세요.
+
 ## <a name="related-resources"></a>관련 참고 자료
 - [Visual Studio 구독 관리 포털](https://manage.visualstudio.com/)
-- [Visual Studio 구독 지원](https://visualstudio.microsoft.com/vs/support/)
 - [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

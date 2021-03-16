@@ -1,5 +1,6 @@
 ---
 title: DA0030 - 데이터베이스 프로젝트의 계층 상호 작용 측정값 수집 | Microsoft Docs
+description: System.Data 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지하고 프로파일링 실행에서 상호 작용 데이터를 수집하지 않았습니다. 다시 프로파일링하고 계층 상호 작용 데이터를 추가해 보세요.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908749"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465883"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: 데이터베이스 개체의 계층 상호 작용 측정값 수집
 

@@ -1,5 +1,6 @@
 ---
 title: 컴퓨터 &lt;이름&gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다. | Microsoft 문서
+description: 이 동작은 다음 조건 중 하나에 해당하는 경우에 발생합니다. (1) 원격 컴퓨터 연결이 끊어진 경우. (2) 원격 컴퓨터의 사용자 계정이 비활성화된 경우. (3) 원격 컴퓨터의 암호가 만료된 경우.
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcf52a258a46f44afaf6e890531496f57b11fc24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e0d83f043e020ad3c65ac0f986ec174fac95585
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871067"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146433"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>오류: 컴퓨터 &lt;이름&gt;에 연결할 수 없습니다. 네트워크에서 컴퓨터를 찾을 수 없습니다.
 이 오류는 다음과 같은 경우에 발생합니다.

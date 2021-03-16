@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 03/02/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 관리자의 사용자 할당 추적 및 주문 처리 책임에 대해 알아봅니다.
-ms.openlocfilehash: 90de1c426a387cb27fe35990394a41d34c1172ce
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467416"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249482"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>사용자 할당 추적 및 주문 처리
 Visual Studio 구독 관리자는 볼륨 라이선싱 계약 또는 Microsoft 제품 및 서비스 계약에 개략적으로 나와 있는 일정에 따라 Visual Studio 사용을 추적하고 사용량 증가에 따른 주문을 처리해야 합니다. 새 Visual Studio 구독 관리 포털에서는 사용 가능한 라이선스 및 사용한 라이선스를 표시하는 유용한 추적기를 통해 이 단계가 간소화되었습니다.
@@ -22,7 +22,7 @@ Visual Studio 구독 관리자는 볼륨 라이선싱 계약 또는 Microsoft �
 - 사용자에게 라이선스가 할당되었습니다. **또는**
 - 사용자가 Visual Studio 소프트웨어와 상호 작용합니다.
 
-전체 구매 의무는 사용자에게 할당하는 최대 구독 수에 따라 결정됩니다. 이 수준의 구독 할당은 Visual Studio 소프트웨어의 일별 사용자 할당 또는 상호 작용 중 더 높은 쪽의 높은 지점입니다.
+전체 구매 의무는 사용자에게 할당하는 최대 구독 수에 따라 결정됩니다. 이 수준의 구독 할당은 일별 사용자 할당 또는 Visual Studio 소프트웨어 사용자 중 더 높은 쪽의 높은 지점입니다.
 
 - 추가 사용자에게 Visual Studio 구독을 할당하면 최대 사용 수준이 올라갑니다.  
 - Visual Studio 구독 관리자는 개인에게 할당된 구독 수준을 변경할 수 있으므로 한 할당에서는 감소하고 다른 할당에서는 증가하게 됩니다. 구독자의 할당된 구독 수준을 낮추는 경우 개인은 즉시 사용을 중지하고 더 높은 수준 구독에 있는 것을 모두 제거해야 합니다. 
@@ -36,6 +36,9 @@ Visual Studio 구독 관리자는 볼륨 라이선싱 계약 또는 Microsoft �
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA 및 Select 계약
 Microsoft EA(기업 계약), MPSA 및 Select Plus 계약은 시간 경과에 따라 Visual Studio 소프트웨어의 사용 및 라이선스를 부여하는 방법에 유연성을 제공합니다. Visual Studio 관리자는 계약 기간 동안 설정된 최대 사용량까지 해당 소프트웨어 라이선스를 적용하도록 연간 트루업 주문을 해야 합니다.
+
+## <a name="resources"></a>리소스
+- 도움이 필요하신가요?  [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

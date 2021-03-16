@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Azure 종량제(Pay-As-You-Go) 계정을 설정하는 방법을 알아봅니다.
-ms.openlocfilehash: cb9d89cc704c8d072e0807189f88ba757d9aad78
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904565"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473272"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest 종량제 구독
 클라우드에서 팀과 공동으로 작업해 보세요.  여러 개발 및 테스트 종량제(PAYG, Pay-As-You-Go) 구독을 만들면 다른 구독자와 협업을 가능하게 하는 한편 팀과 환경 간의 격리를 제공합니다.  Azure에서 구독 소프트웨어의 개발/테스트 및 클라우드 사용권에 대한 시간당 요금이 독점적으로 할인됩니다.
@@ -43,6 +43,9 @@ A: Azure 구독을 변경하려면
 2. 왼쪽 창의 목록에서 **Cost Management + 청구** 를 선택합니다.
 3. **내 구독** 상자에 구독 목록이 표시됩니다. 원하는 구독을 클릭합니다.
 4. 이제 구독을 관리 또는 취소하거나, 이름을 바꾸거나, 디렉터리를 변경하거나, 청구 소유권을 이전할 수 있습니다.
+
+## <a name="resources"></a>리소스
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

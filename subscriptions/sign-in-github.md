@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537996"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249727"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub 계정으로 Visual Studio 구독 로그인 
 
@@ -59,7 +59,7 @@ A: 보안 제한사항 때문에 Microsoft는 사용자가 GitHub에서 2단계 
 A:  계정 별칭(이메일 주소, 전화 번호, Skype 이름)을 사용하여 로그인할 때마다 계정에 대한 모든 로그인 방법이 표시됩니다. GitHub가 보이지 않는다면 GitHub를 아직 설정하지 않은 것입니다.
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>Q:  어떻게 하면 내 Microsoft 계정과 GitHub 계정의 연결을 해제할 수 있나요? 
-A:  account.microsoft.com의 [보안 탭](https://account.microsoft.com/security)으로 이동하고 **추가 보안 옵션** 을 클릭하여 GitHub 계정의 연결을 해제합니다. GitHub 계정의 연결을 해제하면 GitHub로 로그인하는 방법이 제거되며 Visual Studio에서 모든 GitHub 리포지토리에 대한 액세스가 제거됩니다. 다른 Microsoft 제품은 사용자의 GitHub 계정에 대한 액세스를 별도로 요청할 수 있으므로 여기서 액세스를 제거해도 모든 제품에서 액세스가 제거되는 것은 아닙니다. GitHub 프로필의 [애플리케이션 권한](https://github.com/settings/applications) 페이지로 이동하고 해당 페이지에 나열된 앱에서 동의를 취소하세요.
+A:  account.microsoft.com의 [보안 탭](https://account.microsoft.com/security)으로 이동하고 **고급 보안 옵션** 을 클릭하여 GitHub 계정의 연결을 해제합니다. GitHub 계정의 연결을 해제하면 GitHub로 로그인하는 방법이 제거되며 Visual Studio에서 모든 GitHub 리포지토리에 대한 액세스가 제거됩니다. 다른 Microsoft 제품은 사용자의 GitHub 계정에 대한 액세스를 별도로 요청할 수 있으므로 여기서 액세스를 제거해도 모든 제품에서 액세스가 제거되는 것은 아닙니다. GitHub 프로필의 [애플리케이션 권한](https://github.com/settings/applications) 페이지로 이동하고 해당 페이지에 나열된 앱에서 동의를 취소하세요.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:  내 GitHub 계정을 사용하여 로그인을 시도했지만 대신 사용해야 하는 Microsoft ID가 이미 있다는 메시지가 나타납니다.  이유가 무엇입니까?
 A:  GitHub 계정에 Azure Active Directory 이메일 주소가 있다면 Azure에 액세스하고 GitHub 코드를 사용하여 CI 파이프라인을 실행할 수 있는 Microsoft ID가 이미 있는 것입니다. 해당 계정을 사용하면 Azure 리소스 및 빌드 파이프라인이 조직 경계 내에 확실히 유지됩니다. 그러나 개인 작업을 수행하는 경우 GitHub 계정에 개인 이메일 주소를 지정하여 언제나 해당 계정에 액세스할 수 있도록 하는 것이 좋습니다. 이렇게 수행한 후 다시 로그인을 시도하고 회사 또는 학교 게정에 로그인하라는 메시지가 나타날 때 **다른 이메일 주소 사용** 을 선택하세요. 그러면 해당 개인 이메일 주소를 사용하여 새 Microsoft 계정을 만들 수 있습니다.

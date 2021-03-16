@@ -3,15 +3,15 @@ title: Visual Studio 구독자에게 특정 GUID 할당 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 관리자가 구독자에게 특정 구독 GUID를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467481"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249678"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 특정 구독 할당
 
@@ -40,8 +40,8 @@ ms.locfileid: "92467481"
 
 이전에 내보내기 도구를 사용한 적이 있다면 생성된 스프레드시트에 새 필드가 추가된 것이 확인될 것입니다.  이 필드는 각 구독의 상태와 사용자에게 할당할 구독을 결정하는 데 도움이 됩니다.  
 
-- **구독 상태** : 이 필드에는 “할당됨” 또는 “할당되지 않음”이 표시됩니다.  구독 상태가 “할당됨”인 경우에는 이름, 전자 메일과 같은 사용자 정보도 구독에 연결되어 있습니다. 
-- **사용 상태** : 사용 상태는 구독이 사용자에게 할당된 적이 없음을 의미하는 “신규” 또는 특정 시점에 사용자에 할당되었음을 의미하는 “사용됨”입니다.  
+- **구독 상태**: 이 필드에는 “할당됨” 또는 “할당되지 않음”이 표시됩니다.  구독 상태가 “할당됨”인 경우에는 이름, 전자 메일과 같은 사용자 정보도 구독에 연결되어 있습니다. 
+- **사용 상태**: 사용 상태는 구독이 사용자에게 할당된 적이 없음을 의미하는 “신규” 또는 특정 시점에 사용자에 할당되었음을 의미하는 “사용됨”입니다.  
 
 이러한 필드의 값을 스프레드시트의 다른 정보와 함께 사용하여 개별 사용자에게 할당할 구독을 결정할 수 있습니다. Excel에서 필터를 적용하여 상태, 구독 수준, 만료 날짜 등을 기준으로 목록의 범위를 좁힐 수 있습니다. 
 
@@ -61,6 +61,9 @@ ms.locfileid: "92467481"
 ## <a name="frequently-asked-questions"></a>질문과 대답
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q: 개별 사용자에게 현재 할당된 구독을 변경하려면 어떻게 하나요?
 A: 사용자에게 할당된 GUID를 변경하려면 먼저 사용자에 대한 구독을 삭제해야 합니다.  자세한 내용은 [구독 삭제](delete-license.md) 문서를 참조하세요.  사용자에 대한 구독을 삭제한 후에는 위에서 설명하는 프로세스를 사용해 목록을 내보내고 새 구독 정보를 업로드합니다.  
+
+## <a name="resources"></a>리소스
+- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

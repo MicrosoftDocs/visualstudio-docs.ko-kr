@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 07/22/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d644842eb5bdf8673a86ab0fbb5ebc579c1a0af5
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537697"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473285"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
@@ -53,7 +53,7 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 A:  예. Visual Studio Enterprise 구독자는 Team Foundation Server 2017 이상 버전에서 하나의 병렬 작업을, 그리고 자신이 구성원으로 속해 있는 Azure DevOps Services 조직에서 하나의 자체 호스팅 병렬 작업을 가져옵니다.
 
 ## <a name="support-resources"></a>지원 리소스
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 - [Azure DevOps 설명서](/azure/devops/)를 참조하세요.
 

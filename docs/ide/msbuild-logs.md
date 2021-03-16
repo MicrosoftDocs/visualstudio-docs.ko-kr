@@ -2,7 +2,7 @@
 title: MSBuild의 문제 해결 및 로그 만들기
 description: Visual Studio 프로젝트에서 빌드 문제를 진단하고 필요한 경우 조사를 위해 Microsoft로 보낼 로그를 만들 수 있는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880491"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225214"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild의 문제 해결 및 로그 만들기
 
@@ -99,22 +99,41 @@ Visual Studio IDE(출력 창의 자세한 정도가 지정된)에서 빌드하�
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>이진 msbuild 로그 만들기
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>명령 프롬프트에서 이진 MSBuild 로그 만들기
 
 1. Visual Studio 버전에 맞는 개발자 명령 프롬프트 열기
+
 1. 명령 프롬프트에서 다음 명령 중 하나를 실행합니다. (실제 프로젝트 및 구성 값을 사용해야 합니다.)
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    또는
+   또는
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-Msbuild.binlog 파일이 MSBuild를 실행한 디렉터리에 만들어집니다. [Msbuild 구조적 로그 뷰어](http://www.msbuildlog.com/)를 사용하여 보고 검색할 수 있습니다.
+*msbuild.binlog* 파일이 MSBuild를 실행한 디렉터리에서 생성됩니다.
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>프로젝트 시스템 도구 확장을 사용하여 이진 MSBuild 로그 만들기
+
+1. [프로젝트 시스템 도구 확장](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)을 다운로드하고 설치합니다.
+
+1. 확장이 설치되면 일부 새 항목이 **보기** > **다른 창** 메뉴에 표시됩니다.
+
+   ![다른 창 메뉴](../ide/media/view-menu.png)
+
+1. **보기** > **다른 창** > **빌드 로깅** 을 선택하면 Visual Studio에 **빌드 로깅** 이 표시됩니다. 첫 번째 도구 모음 아이콘을 선택하여 프로젝트 시스템에서 일반 및 디자인 타임 빌드를 모두 기록하기 시작합니다.
+
+   ![빌드 로깅 창](../ide/media/build-logging-click-to-record.png)
+
+1. 빌드가 기록되면 빌드 로깅 창에 표시됩니다. 항목을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **로그 저장** 을 선택하여 *.binlog* 파일을 저장합니다.
+
+   ![빌드 로깅 바로 가기 메뉴](../ide/media/build-logging-context-menu.png)
+
+[MSBuild 구조적 로그 뷰어](http://www.msbuildlog.com/)를 사용하여 *.binlog* 파일을 보고 검색할 수 있습니다.
 
 ## <a name="create-a-detailed-log"></a>자세한 로그를 만들기
 

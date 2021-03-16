@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957480"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171320"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 
@@ -97,7 +97,7 @@ TypeScript의 경우 생성된 JavaScript 코드에 대해 단위 테스트를 �
 
 ### <a name="run-tests-from-the-command-line"></a>명령줄에서 테스트 실행
 
-다음 명령을 사용하여 Visual Studio용 [개발자 명령 프롬프트](/dotnet/framework/tools/developer-command-prompt-for-vs)에서 테스트를 실행할 수 있습니다.
+다음 명령을 사용하여 Visual Studio용 [개발자 명령 프롬프트](../ide/reference/command-prompt-powershell.md)에서 테스트를 실행할 수 있습니다.
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
 사용 가능한 테스트 프레임워크의 검색이 Visual Studio 시작 시 발생합니다. Visual Studio가 실행되는 동안 프레임워크가 추가되는 경우 프레임워크를 검색하도록 Visual Studio를 다시 시작합니다. 단, 구현을 변경하는 경우에는 다시 시작할 필요가 없습니다.
 
 ## <a name="unit-tests-in-other-project-types"></a>다른 프로젝트 형식의 단위 테스트
+
 단위 테스트는 Node.js 프로젝트에만 작성하도록 제한되지 않습니다. TestFramework 및 TestRoot 속성을 C# 또는 Visual Basic 프로젝트에 추가하면 해당 테스트가 열거되고 테스트 탐색기 창을 사용하여 실행할 수 있습니다.
 
 이렇게 하려면 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드** 를 선택한 후 **프로젝트 편집** 을 선택합니다. 그런 다음, 프로젝트 파일에서 다음 두 요소를 속성 그룹에 추가합니다.
 
-> [!NOTE]
+> [!IMPORTANT]
 > 요소를 추가하는 속성 그룹에는 조건이 지정되지 않아야 합니다.
 > 조건이 지정되면 예기치 않은 동작이 발생할 수 있습니다.
 
@@ -170,6 +171,7 @@ JavaScript를 사용하여 검색 및 실행 논리를 구현하여 추가 테�
 다음으로, 지정한 테스트 루트 폴더에 테스트를 추가하면 테스트 탐색기 창에서 실행할 수 있습니다. 처음에 표시되지 않는 경우 프로젝트를 다시 빌드해야 할 수 있습니다.
 
 ### <a name="unit-test-net-core-and-net-standard"></a>.NET Core 및 .NET Standard 단위 테스트
+
 위의 속성 외에도 NuGet 패키지 [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/)를 설치하고 속성을 설정해야 합니다.
 
 ```xml

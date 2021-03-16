@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927433"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249499"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Visual Studio를 사용하여 앱을 폴더에 배포
 
@@ -46,25 +46,34 @@ ms.locfileid: "99927433"
 
 1. **게시** 창에서 **폴더** 를 선택합니다.
 
-    ![게시 대상으로 폴더 선택](../deployment/media/quickstart-publish-folder-new.png "폴더 선택")
+   ![게시 대상으로 폴더 선택](../deployment/media/quickstart-publish-folder-new.png "폴더 선택")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. .NET Core 3.1 이상 Windows 애플리케이션을 배포하는 경우 **특정 대상** 창에서 **폴더** 를 선택해야 할 수 있습니다.
+   .NET Core 3.1 이상 Windows 애플리케이션을 배포하는 경우 **특정 대상** 창에서 **폴더** 를 선택해야 할 수 있습니다.
 
-![특정 대상으로 폴더 선택](../deployment/media/quickstart-publish-folder-targets.png "특정 대상 선택")
+   ![특정 대상으로 폴더 선택](../deployment/media/quickstart-publish-folder-targets.png "특정 대상 선택")
 
-5. ClickOnce를 사용하여 .NET Core 3.1 이상 Windows 애플리케이션을 게시하려는 경우 [ClickOnce를 사용하여 .NET Windows 애플리케이션 배포](quickstart-deploy-using-clickonce-folder.md)를 참조하세요.
+   ClickOnce를 사용하여 .NET Core 3.1 이상 Windows 애플리케이션을 게시하려는 경우 [ClickOnce를 사용하여 .NET Windows 애플리케이션 배포](quickstart-deploy-using-clickonce-folder.md)를 참조하세요.
+   ::: moniker-end
 
- ::: moniker-end
+1. 경로를 입력하거나 **찾아보기** 를 선택하여 폴더를 지정합니다.
 
-4. 경로를 입력하거나 **찾아보기** 를 선택하여 폴더를 지정합니다.
+   ![폴더 경로 지정](../deployment/media/quickstart-publish-folder-path.png "폴더 선택")
 
-    ![폴더 경로 지정](../deployment/media/quickstart-publish-folder-path.png "폴더 선택")
+   ::: moniker range=">=vs-2019"
+   **마침** 을 클릭하여 프로필을 저장합니다.
 
-1. **게시** 를 선택합니다. Visual Studio는 프로젝트를 빌드하고 지정된 폴더에 게시합니다. 프로필 요약을 표시하는 프로젝트 속성 **게시** 창이 나타납니다.
+   ![프로필 요약을 표시하는 게시 속성 창](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![프로필 요약을 표시하는 게시 속성 창](../deployment/media/quickstart-publish-folder-summary.png)
+1. **게시** 를 선택합니다. Visual Studio는 프로젝트를 빌드하고 지정된 폴더에 게시합니다.
+
+   ::: moniker range="vs-2017"
+   프로필 요약을 표시하는 프로젝트 속성 **게시** 창이 나타납니다.
+
+   ![프로필 요약을 표시하는 게시 속성 창](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. 배포 설정을 구성하려면 게시 프로필 요약에서 **편집** 을 선택하고 **설정** 탭을 선택합니다.
 
