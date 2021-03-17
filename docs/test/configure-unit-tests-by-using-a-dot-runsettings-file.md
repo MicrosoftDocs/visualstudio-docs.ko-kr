@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ff92d7c53b2b7e5f5c89fbc37226135d5331acbb
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221160"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295774"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -306,7 +306,7 @@ public void HomePageTest()
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
 </MSTest>
 ```
@@ -322,7 +322,7 @@ public void HomePageTest()
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|테스트를 실행한 후 배포 디렉터리를 유지하려면 이 값을 **false** 로 설정합니다.|
 |**MapInconclusiveToFailed**|false|테스트가 불충분한 상태로 완료되는 경우 **테스트 탐색기** 에서 건너뛴 상태로 매핑됩니다. 결과가 불충분한 테스트를 실패로 표시하려는 경우 값을 **true** 로 설정합니다.|
 |**InProcMode**|false|테스트를 MSTest 어댑터와 동일한 프로세스에서 실행하려면 이 값을 **true** 로 설정합니다. 이 설정을 사용하면 성능이 약간 향상됩니다. 하지만 테스트가 종료될 때 예외가 발생하면 다른 테스트를 계속할 수 없습니다.|
-|**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**AssemblyResolution**|false|단위 테스트를 찾아서 실행하는 경우 추가 어셈블리에 대한 경로를 지정할 수 있습니다. 예를 들어 테스트 어셈블리와 동일한 디렉터리에 존재하지 않는 종속성 어셈블리에 대해 이러한 경로를 사용합니다. 경로를 지정하려면 **디렉터리 경로** 요소를 사용합니다. 경로는 환경 변수를 포함할 수 있습니다.<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="example-runsettings-file"></a>예제 *.runsettings* 파일
 

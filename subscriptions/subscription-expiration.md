@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Visual Studio 구독이 만료되면 어떻게 되는지 알아봅니다.
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245016"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607135"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>구독이 만료되면 어떻게 되나요?
 Visual Studio 구독에는 특정 기간이 있으며 갱신되지 않으면 만료됩니다.  구독이 만료되면 구독에서 제공하는 혜택이 다양한 방식으로 영향을 받습니다.  이 문서에서는 만료가 Visual Studio 구독의 다양한 측면에 미치는 영향을 설명합니다. 
@@ -40,7 +40,10 @@ Visual Studio 구독을 통해 획득한 Azure DevOps는 사용할 수 없습니
 ### <a name="other-benefits"></a>기타 장점 
 Visual Studio 구독에 포함된 많은 혜택에는 특정 기간이 있습니다.  Pluralsight, DataCamp, WhiteSource와 같은 Microsoft 파트너에서 제공하는 혜택은 활성화된 후 시간 제한이 있습니다.  이전에 활성화한 혜택은 나머지 기간 동안 계속 사용할 수 있습니다.  예를 들어 6개월 LinkedIn Learning 구독을 활성화하여 Visual Studio 구독이 만료된 후에도 4개월이 남아 있는 경우 4개월 동안 LinkedIn Learning 구독에 계속 액세스할 수 있습니다.  
 
-## <a name="see-also"></a>참고 항목
+## <a name="resources"></a>리소스
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
+
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

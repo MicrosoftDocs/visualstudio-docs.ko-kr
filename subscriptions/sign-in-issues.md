@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 구독에 로그인할 때의 문제 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Visual Studio 구독에 로그인할 때 발생할 수 있는 문제에 대해 알아보기
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903444"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607199"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio 구독에 로그인할 때의 문제
 Visual Studio 구독을 사용하려면 먼저 로그인해야 합니다.  구독에 따라 Microsoft 계정(MSA) 또는 AAD(Azure Active Directory) ID로 설정했을 수 있습니다.  이 문서에서는 구독에 로그인하는 동안 발생할 수 있는 몇 가지 문제에 대해 설명합니다.
@@ -61,9 +61,12 @@ Azure AD에서 이메일 도메인을 구성할 때 직장/학교 이메일 주�
 회사에 디렉터리 로그인용 Microsoft Online Service가 있지만(예: JohnD@contoso.com) 사용자가 별칭 또는 이름(예: John.Doe@contoso.com)을 사용하여 전자 메일 계정에 액세스할 경우 별칭 지정이 수행됩니다. VLSC(볼륨 라이선스 서비스 센터)를 통해 구독을 관리하는 많은 고객의 경우 제공된 전자 메일 주소(John.Doe@contoso.com)가 “회사 또는 학교 계정” 옵션을 통해 인증에 성공하는 데 필요한 디렉터리 주소(JohnD@contoso.com)와 일치하지 않을 때 이 별칭 지정으로 인해 로그인에 실패할 수 있습니다.
 
 ### <a name="what-options-do-i-have"></a>어떤 방법이 있습니까?
-구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 MSA(Microsoft 계정)를 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 작업 수행과 관련된 정책 또는 문제에 관해 관리자와 이야기를 나눕니다. 
+구독자 관점에서 먼저 관리자와 함께 회사의 ID 구성을 이해하는 것이 중요합니다. 필요한 경우 관리자가 관리 포털에서 계정 설정을 업데이트해야 할 수 있습니다. 또는 사용자가 회사 전자 메일 주소를 사용하여 MSA(Microsoft 계정)를 만들어야 할 수 있습니다. MSA를 만드는 단계를 수행하기 전에 작업 수행과 관련된 정책 또는 문제에 관해 관리자와 이야기를 나눕니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="resources"></a>리소스
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요. 
+
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

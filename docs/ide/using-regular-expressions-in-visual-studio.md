@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925770"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295752"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -60,7 +60,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 |[공백 문자](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)를 찾습니다.|\s|`Public\sInterface`는 구 “Public Interface”와 일치합니다.|
 |[10진수 문자](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)를 찾습니다.|\d|`\d`는 “wd40”의 “4” 및 “0”과 일치합니다.|
 
-일부 연산자와 구문을 16진수와 일치하도록 결합하는 정규식 예제는 `\b0[xX]([0-9a-fA-F]+\)\b`입니다. 이 식은 “0xc67f”와 일치하지만 “0xc67g”와는 일치하지 않습니다.
+일부 연산자와 구문을 16진수와 일치하도록 결합하는 정규식 예제는 `\b0[xX]([0-9a-fA-F]+)\b`입니다. 이 식은 “0xc67f”와 일치하지만 “0xc67g”와는 일치하지 않습니다.
 
 > [!TIP]
 > Windows 운영 체제에서 대부분 줄은 “\r\n”(캐리지 리턴 뒤에 줄 바꿈)으로 끝납니다. 이들 문자는 표시되지 않지만 편집기에 있고 .NET 정규식 서비스에 전달됩니다.

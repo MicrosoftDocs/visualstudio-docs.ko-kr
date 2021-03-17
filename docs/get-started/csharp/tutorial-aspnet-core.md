@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683139"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295801"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
@@ -357,7 +357,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 ### <a name="what-is-c"></a>C#이란?
 
-[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework)은 강력하면서도 쉽게 배울 수 있게 설계된 형식이 안전한 개체 지향 프로그래밍 언어입니다.
+[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/)은 강력하면서도 쉽게 배울 수 있게 설계된 형식이 안전한 개체 지향 프로그래밍 언어입니다.
 
 ### <a name="what-is-aspnet-core"></a>ASP.NET Core란?
 

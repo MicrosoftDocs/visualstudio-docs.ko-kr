@@ -12,12 +12,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0c3f40900c30ca3632b3e82c4b197f28f9d108bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969245"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607407"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Visual Studio의 테스트 도구
 
@@ -79,7 +79,7 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 테스트 탐색기를 사용하여 테스트 메서드를 실행하는 경우 코드 검사는 선택 사항입니다. 결과 테이블에는 각 어셈블리, 클래스 및 메서드에서 실행되는 코드의 백분율이 표시됩니다. 또한 소스 편집기에는 테스트된 코드가 표시됩니다.
 
 * [코드 검사를 사용하여 테스트할 코드 범위 결정](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Visual Studio의 유닛 테스트, 코드 검사 및 코드 복제본 분석(랩)](https://azuredevopslabs.com/labs/devopsserver/liveunittesting)
 * [코드 검사 분석 사용자 지정](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -103,7 +103,7 @@ IntelliTest는 단위 테스트와, 관리 코드에 대한 테스트 데이터�
 * [UI 자동화를 사용하여 코드 테스트](use-ui-automation-to-test-your-code.md)
 * [코딩된 UI 테스트 만들기, 편집 및 유지 관리 시작](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [코딩된 UI 테스트를 사용하여 UWP 앱 테스트](test-uwp-app-with-coded-ui-test.md)
-* [Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
+* [Visual Studio Enterprise의 코딩된 UI 테스트 소개(랩)](https://azuredevopslabs.com/labs/tfs/codedui)
 
 ## <a name="related-scenarios"></a>관련 시나리오
 

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223162"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571547"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Bridge to Kubernetes에는 다음과 같은 제한 사항이 있습니다.
 
-* 단일 Pod의 지원을 받는 서비스에만 연결할 수 있습니다. 복제본이 있는 서비스와 같이 여러 개의 Pod가 있는 서비스에는 연결할 수 없습니다.
-* Bridge to Kubernetes가 성공적으로 연결하려면 Pod에 단일 컨테이너만 실행되고 있어야 합니다. Bridge to Kubernetes는 서비스 메시를 통해 삽입된 사이드카 컨테이너와 같은 추가 컨테이너를 포함하는 Pod가 있는 서비스에 연결할 수 없습니다.
+* Bridge to Kubernetes가 성공적으로 연결하려면 Pod에 단일 컨테이너만 실행되고 있어야 합니다.
 * 현재 Bridge to Kubernetes Pod는 Linux 컨테이너여야 합니다. Windows 컨테이너는 지원되지 않습니다.
-* Visual Studio에서 Bridge to Kubernetes를 사용하는 경우 HTTPS에서 격리를 사용할 수 없습니다. HTTPS는 Visual Studio Code를 사용하는 경우에만 격리 모드에서 지원됩니다.
 * 개발 컴퓨터에서 Bridge to Kubernetes를 실행하려면 hosts 파일을 편집하기 위해 관리자 권한이 필요합니다.
 * Bridge to Kubernetes는 Azure Dev Spaces가 사용하도록 설정된 클러스터에서는 사용할 수 없습니다.
 
