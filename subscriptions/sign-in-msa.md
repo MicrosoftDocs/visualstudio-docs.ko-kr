@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
-ms.date: 09/08/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인하는 방법
-ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005939"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607160"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft 계정(MSA)으로 Visual Studio 구독에 로그인
 
@@ -28,7 +28,7 @@ Visual Studio 구독에 로그인하는 단계는 사용 중인 계정의 종류
    > 이 주소는 구독을 구매하거나 Visual Studio Dev Essentials에 가입할 때 받은 구독자 시작 전자 메일에서도 확인됩니다. 시작 전자 메일을 찾는 데 문제가 있는 경우 정크 메일 폴더를 확인하세요.
 
 3. 암호를 입력합니다.
-4. **로그인**을 클릭합니다.
+4. **로그인** 을 클릭합니다.
 5. 그러면 “혜택” 페이지가 표시됩니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
@@ -40,7 +40,8 @@ A:  여러 사용자의 구독이 둘 이상입니다.  [https://my.visualstudio
 - 다른 Microsoft 계정으로 로그인했습니다.  사용자는 Professional이나 Enterprise 구독 등의 다양한 구독과 Visual Studio Dev Essentials 멤버 자격 보유가 가능하며, 이는 다른 이메일 주소와 연결됩니다. 다른 구독을 보려면 로그아웃하고 다른 MSA로 다시 로그인합니다.
 - 동일한 MSA와 연결된 구독이 여러 개 있습니다.  MSA와 연결된 구독을 모두 보려면 https://my.visualstudio.com/subscriptions 에서 사용하려는 구독을 선택합니다. 
 
-여전히 문제가 있을 경우 [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/) 팀에 연락하여 도움을 받으실 수 있습니다.  
+## <a name="resources"></a>리소스 
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

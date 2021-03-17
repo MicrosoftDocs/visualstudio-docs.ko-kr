@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 03/11/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 소프트웨어 다운로드 목록을 찾습니다.
-ms.openlocfilehash: 390f33591afa6dfceebddbbe5f7f08b413be5e77
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903460"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607277"
 ---
 # <a name="what-software-is-available-for-download"></a>어떤 소프트웨어를 다운로드할 수 있나요?
 
@@ -30,7 +30,10 @@ ms.locfileid: "92903460"
 
 또한 각 구독 유형에 대해 [사용 가능한 소프트웨어 타이틀](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)의 광범위한 목록이 들어 있는 Excel 스프레드시트를 다운로드할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="resources"></a>리소스 
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요. 
+
+## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

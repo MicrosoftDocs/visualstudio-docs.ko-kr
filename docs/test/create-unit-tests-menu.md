@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964422"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622636"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>코드에서 단위 테스트 메서드 스텁 만들기
 
@@ -52,7 +52,7 @@ NUnit 또는 xUnit에 대한 테스트 프레임워크 옵션이 표시되지 �
 NUnit 또는 xUnit에 대한 단위 테스트를 자동으로 생성하려면 Visual Studio Marketplace에서 다음 테스트 프레임워크 확장 중 하나를 설치합니다.
 
 * [NUnit extension for test generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)(테스트 생성기의 NUnit 확장)
-* [xUnit.net extension for test generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)(테스트 생성기의 xUnit.net 확장)
+* [xUnit.net extension for test generators](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)(테스트 생성기의 xUnit.net 확장)
 
 ## <a name="when-should-i-use-this-feature"></a>이 기능은 언제 사용해야 하나요?
 
