@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31ed0ccb09074798ddf56f601e9ad26facd505f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c7bc09147c2c9a6cf36a1a967241219df9e9bce
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884163"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio의 이미지 및 아이콘
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio에서 이미지 사용
@@ -336,13 +336,13 @@ ms.locfileid: "99952540"
 
 ##### <a name="examples-of-icons-with-language-modifiers"></a>언어 한정자가 있는 아이콘의 예
 
-|VB|C#|F#|JavaScript|Python|
+|VB|C#|C++|F#|JavaScript|Python|
 |-|-|-|-|-|-|
 |![Visual Basic 아이콘](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")|![C&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")|![C&#43;&#43; 아이콘](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")|![F&#35; 아이콘](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")|![JavaScript 아이콘](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")|![Python 아이콘](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")|
 
 |HTML|WPF|ASP|CSS|TypeScript|
-|-|-|-|-|-|-|
-|![HTML 아이콘](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 아이콘](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 아이콘](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 아이콘](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 아이콘](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
+|-|-|-|-|-|
+|![HTML 아이콘](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![WPF 아이콘](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP 아이콘](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS 아이콘](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript 아이콘](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript|
 
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 아이콘은 전용 색상표를 사용합니다. 해당 색은 사용자가 IntelliSense 팝업 목록의 여러 항목을 신속하게 구분할 수 있도록 돕는 데 사용됩니다.

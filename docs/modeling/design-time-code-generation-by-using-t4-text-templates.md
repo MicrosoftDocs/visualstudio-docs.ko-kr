@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935302"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884150"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 
@@ -125,7 +125,7 @@ ms.locfileid: "99935302"
 
 텍스트 템플릿을 디버그하려면
 
-- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들어:
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -274,7 +274,7 @@ ms.locfileid: "99935302"
 
 ### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
 
-Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 어셈블리를 로드 `EnvDTE` 합니다. 가져오기 `Microsoft.VisualStudio.TextTemplating` - `GetCOMService()` 확장 메서드를 포함 합니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들어:
+Visual Studio에서 제공 하는 서비스를 사용 하려면 특성을 설정 하 `hostSpecific` 고 어셈블리를 로드 `EnvDTE` 합니다. 가져오기 `Microsoft.VisualStudio.TextTemplating` - `GetCOMService()` 확장 메서드를 포함 합니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -352,7 +352,7 @@ Warning("A warning message");
 
 4. **.Tt** 파일의 다음 속성을 확인 합니다.
 
-   | | |
+   |속성 |설정 |
    |-|-|
    | **사용자 지정 도구 =** | **TextTemplatingFileGenerator** |
    | **빌드 작업 =** | **없음** |
@@ -382,7 +382,7 @@ Warning("A warning message");
 
 ## <a name="next-steps"></a>다음 단계
 
-|다음 단계|항목|
+|다음 단계|토픽|
 |-|-|
 |보조 함수, 포함된 파일 및 외부 데이터를 사용하는 코드로 고급 텍스트 템플릿을 작성하고 디버그합니다.|[T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)|
 |런타임에 템플릿에서 문서를 생성합니다.|[T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)|
