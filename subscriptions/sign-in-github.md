@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249727"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607186"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub 계정으로 Visual Studio 구독 로그인 
-
 Visual Studio 구독에 로그인하는 단계는 사용 중인 계정의 종류에 따라 다릅니다. 예를 들어 회사 또는 학교에서 제공한 Microsoft 계정(MSA) 또는 전자 메일 주소를 사용할 수 있습니다. 2019년 1월 현재 GitHub 계정을 사용하여 일부 구독에 로그인할 수도 있습니다. 
 
 이 문서에서는 GitHub 계정으로 로그인하는 단계를 소개합니다.
@@ -26,7 +25,7 @@ GitHub ID 지원을 통해 기존 GitHub 계정을 신규 또는 기존 Microsof
 
 GitHub로 로그인하는 경우 Microsoft는 GitHub 계정과 연결된 이메일 주소가 기존 개인 또는 엔터프라이즈 Microsoft 계정과 일치하는지 확인합니다. 주소가 엔터프라이즈 계정과 일치하면 해당 계정으로 대신 로그인하라는 메시지가 나타납니다. 주소가 개인 계정과 일치하는 경우 GitHub 계정을 해당 개인 계정에 로그인하는 방법으로 추가해 드립니다.
 
-GitHub 및 Microsoft 계정 자격 증명이 연결된 후에는 개인 Microsoft 계정을 사용할 수 있는 모든 경우(예: Azure 사이트, Office 앱 및 Xbox)에 해당 단일 로그인을 사용할 수 있습니다. 또한 이메일 주소가 초대장의 주소와 일치한다고 가정하면 Azure Active Directory 게스트 로그인 시 해당 계정을 Microsoft 계정으로 사용할 수도 있습니다.
+GitHub 및 Microsoft 계정 자격 증명을 연결한 후에는 개인 Microsoft 계정을 사용할 수 있는 모든 곳(예: Azure 사이트, Office 앱, Xbox)에서 해당 단일 로그인을 사용할 수 있습니다. 또한 전자 메일 주소가 초대장의 주소와 일치한다고 가정하면 Azure Active Directory 게스트 로그인 시 해당 계정을 Microsoft 계정으로 사용할 수도 있습니다.
 
 > [!NOTE]
 > GitHub ID를 Microsoft 계정에 연결하더라도 Microsoft에 코드 액세스 권한이 부여되지 않습니다. Azure DevOps 및 Visual Studio와 같은 앱이 코드 리포지토리에 액세스해야 하는 경우 이 액세스에 대해 구체적 동의를 부여해 달라는 메시지가 표시됩니다. 
@@ -38,7 +37,7 @@ GitHub 및 Microsoft 계정 자격 증명이 연결된 후에는 개인 Microsof
 A:  [암호 재설정](https://github.com/password_reset)으로 이동하여 GitHub 계정을 복구할 수 있습니다. 또는 [계정 복구](https://account.live.com/password/reset)에서 GitHub 계정 이메일 주소를 입력하여 GitHub에 연결된 Microsoft 계정을 복구할 수 있습니다.
 
 #### <a name="q-i-deleted-my-github-account--how-can-i-access-my-microsoft-account-msa-now"></a>Q: 내 GitHub 계정을 삭제했습니다.  이제 어떻게 해야 Microsoft 계정(MSA)에 액세스할 수 있나요?
-A: MSA의 다른 자격 증명(암호, Authenticator 앱 또는 보안 키)이 없는 경우 연결된 이메일 주소를 사용하여 Microsoft 계정을 복구할 수 있습니다. 시작하려면 [계정 복구](https://account.live.com/password/reset)로 이동합니다. 나중에 저희가 사용자를 로그인하도록 조치하는 방법을 알 수 있도록 사용자의 계정에 암호를 추가해야 합니다. 
+A: 암호, Authenticator 앱 또는 보안 키 같은 MSA의 다른 자격 증명이 없는 경우 연결된 전자 메일 주소를 사용하여 Microsoft 계정을 복구할 수 있습니다. 시작하려면 [계정 복구](https://account.live.com/password/reset)로 이동합니다. 나중에 저희가 사용자를 로그인하도록 조치하는 방법을 알 수 있도록 사용자의 계정에 암호를 추가해야 합니다. 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>Q: 로그인 페이지에 "GitHub로 로그인" 옵션이 없습니다.  어떻게 하면 내 GitHub 자격 증명을 사용하여 로그인할 수 있나요?
 A:  GitHub에 연결된 Microsoft 계정을 만들 때 선택한 GitHub 계정 이메일 주소를 입력하세요. 그러면 저희가 사용자의 정보를 조회하여 로그인할 GitHub로 안내해 드립니다. 또는 로그인 페이지에 로그인 옵션 링크가 있는 경우 해당 링크를 클릭한 후 표시되는 **GitHub로 로그인** 단추를 사용하세요. 
@@ -62,7 +61,10 @@ A:  계정 별칭(이메일 주소, 전화 번호, Skype 이름)을 사용하여
 A:  account.microsoft.com의 [보안 탭](https://account.microsoft.com/security)으로 이동하고 **고급 보안 옵션** 을 클릭하여 GitHub 계정의 연결을 해제합니다. GitHub 계정의 연결을 해제하면 GitHub로 로그인하는 방법이 제거되며 Visual Studio에서 모든 GitHub 리포지토리에 대한 액세스가 제거됩니다. 다른 Microsoft 제품은 사용자의 GitHub 계정에 대한 액세스를 별도로 요청할 수 있으므로 여기서 액세스를 제거해도 모든 제품에서 액세스가 제거되는 것은 아닙니다. GitHub 프로필의 [애플리케이션 권한](https://github.com/settings/applications) 페이지로 이동하고 해당 페이지에 나열된 앱에서 동의를 취소하세요.
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:  내 GitHub 계정을 사용하여 로그인을 시도했지만 대신 사용해야 하는 Microsoft ID가 이미 있다는 메시지가 나타납니다.  이유가 무엇입니까?
-A:  GitHub 계정에 Azure Active Directory 이메일 주소가 있다면 Azure에 액세스하고 GitHub 코드를 사용하여 CI 파이프라인을 실행할 수 있는 Microsoft ID가 이미 있는 것입니다. 해당 계정을 사용하면 Azure 리소스 및 빌드 파이프라인이 조직 경계 내에 확실히 유지됩니다. 그러나 개인 작업을 수행하는 경우 GitHub 계정에 개인 이메일 주소를 지정하여 언제나 해당 계정에 액세스할 수 있도록 하는 것이 좋습니다. 이렇게 수행한 후 다시 로그인을 시도하고 회사 또는 학교 게정에 로그인하라는 메시지가 나타날 때 **다른 이메일 주소 사용** 을 선택하세요. 그러면 해당 개인 이메일 주소를 사용하여 새 Microsoft 계정을 만들 수 있습니다.
+A: GitHub 계정에 Azure Active Directory 전자 메일 주소가 있다면 Azure에 액세스하고 GitHub 코드를 사용하여 CI 파이프라인을 실행할 수 있는 Microsoft ID가 이미 있는 것입니다. 해당 계정을 사용하면 Azure 리소스 및 빌드 파이프라인이 조직 경계 내에 확실히 유지됩니다. 그러나 개인 작업을 수행하는 경우 GitHub 계정에 개인 이메일 주소를 지정하여 언제나 해당 계정에 액세스할 수 있도록 하는 것이 좋습니다. 이렇게 수행한 후 다시 로그인을 시도하고 회사 또는 학교 게정에 로그인하라는 메시지가 나타날 때 **다른 이메일 주소 사용** 을 선택하세요. 그러면 해당 개인 이메일 주소를 사용하여 새 Microsoft 계정을 만들 수 있습니다.
+
+## <a name="resources"></a>리소스
+- Visual Studio 구독 관련 판매, 구독, 계정 및 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://aka.ms/vssubscriberhelp)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

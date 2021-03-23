@@ -14,12 +14,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1c8c20d350561eec520038dec521ab7bc5f5311
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936550"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570688"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>명령줄에서 애플리케이션 성능 측정
 
@@ -79,7 +79,7 @@ Visual Studio 진단 CLI 도구를 사용하여 프로파일링 도구를 수집
 
 컬렉션 에이전트는 측정하려는 항목에 따라 서로 다른 유형의 데이터를 수집하는 상호 교환이 가능한 구성 요소입니다.
 
-편의를 위해 에이전트 구성 파일에 해당 정보를 저장할 수 있습니다. 구성 파일은 최소한 *.dll* 의 이름과 해당 COM CLSID를 포함하는 *.json* 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
+편의상 에이전트 구성 파일에 해당 정보를 저장하는 것이 좋습니다. 구성 파일은 최소한 *.dll* 의 이름과 해당 COM CLSID를 포함하는 *.json* 파일입니다. 다음 폴더에서 찾을 수 있는 구성 파일의 예제는 다음과 같습니다.
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
@@ -99,11 +99,7 @@ DotNetObjectAlloc 구성(기본/낮음)은 [.NET 개체 할당 도구](../profil
 
 기본/낮음/높음 구성은 샘플링 주기를 참조하세요. 예를 들어 낮음은 100 샘플/초이고 높음은 4000 샘플/초입니다.
 
-컬렉션 에이전트와 함께 작동하는 *VSDiagnostics.exe* 도구의 경우, 해당 에이전트에 DLL 및 COM CLSID가 모두 필요하며 에이전트에도 추가 구성 옵션이 있을 수 있습니다. 구성 파일 없이 에이전트를 사용하는 경우 다음 명령의 형식을 사용합니다.
-
-```cmd
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+*VSDiagnostics.exe* 도구가 수집 에이전트에서 작동하려면 해당 에이전트의 DLL 및 COM CLSID가 둘 다 필요합니다. 에이전트에는 추가 구성 옵션도 있을 수 있습니다. 해당 옵션은 적절하게 이스케이프된 JSON으로 형식이 지정된 구성 파일에 지정되는 옵션입니다.
 
 ## <a name="permissions"></a>사용 권한
 

@@ -10,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 99127416b6a488cd7e795b3c4a1888ff103c8029
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493415"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607394"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 폴더에 게시
 
@@ -59,3 +59,7 @@ Mac용 Visual Studio를 사용하면 게시 도구를 통해 .NET Core 프로젝
 게시 폴더 경로를 변경하려면 게시 프로필을 열고 `publishUrl` 값을 편집합니다.
 
 사용되는 빌드 구성을 변경하려면 게시 프로필의 `LastUsedBuildConfiguration` 속성을 변경합니다.
+
+## <a name="see-also"></a>참조
+ - [dotnet publish](https://docs.microsoft.com/dotnet/core/tools/dotnet-publish)
+ - [Visual Studio를 사용하여 웹 사이트에 웹앱 게시](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)

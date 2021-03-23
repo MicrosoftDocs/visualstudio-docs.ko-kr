@@ -2,18 +2,18 @@
 title: Visual Studio의 Git 환경
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경을 활용하여 생산성을 높일 수 있는 방법을 알아봅니다.
-ms.date: 01/15/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597410"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622649"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
@@ -48,7 +48,7 @@ Visual Studio에서 Git을 사용하여 생산성을 높일 수 있는 세 가�
 > [!TIP]
 > 리포지토리가 퍼블릭 또는 프라이빗인지와 관계없이 팀과 함께 작업하지 않는 경우에도 코드의 원격 백업을 GitHub에 안전하게 저장하는 것이 가장 좋습니다. 이렇게 하면 사용 중인 컴퓨터가 무엇이든 해당 코드를 사용할 수 있습니다.
 
-**로컬 전용** 옵션을 사용하여 로컬 전용 Git 리포지토리를 만들도록 선택할 수 있습니다. 또는 **기존 원격** 옵션을 사용하여 해당 리포지토리를 다른 모든 Git 공급자의 비어 있는 기존 원격 리포지토리와 연결할 수 있습니다.
+**로컬 전용** 옵션을 사용하여 로컬 전용 Git 리포지토리를 만들도록 선택할 수 있습니다. 또는 **기존 원격** 옵션을 사용하여 로컬 프로젝트를 Azure DevOps 또는 다른 모든 Git 공급자의 비어 있는 기존 원격 리포지토리와 연결할 수 있습니다.
 
 ## <a name="clone-an-existing-git-repository"></a>기존 Git 리포지토리 복제
 
@@ -117,7 +117,7 @@ Visual Studio는 **Git 변경 내용** 창 위쪽에 있는 선택기에 현재 
 
 ### <a name="create-a-new-branch"></a>새 분기 만들기
 
-새 분기를 만들 수도 있습니다. 이 동작에 해당하는 명령은 `git checkout <branchname>`입니다.
+새 분기를 만들 수도 있습니다. 이 동작에 해당하는 명령은 `git checkout -b <branchname>`입니다.
 
 새 분기는 간단하게 분기 이름을 입력하고 기존 분기를 기반으로 만들면 됩니다.
 
@@ -202,6 +202,7 @@ Visual Studio의 병합 편집기는 들어오는 변경 내용, 현재 변경 �
 
 ## <a name="see-also"></a>추가 정보
 
+- YouTube의 [Visual Studio에서 Git 시작](https://www.youtube.com/watch?v=GCZ9x3yqkyc) 동영상
 - [Visual Studio의 Git 환경 릴리스 알림](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) 블로그 포스트
 - YouTube의 [새 Git 환경 출시](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio 도구 상자 시리즈에서 제공: Channel 9 및 [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)의 새 Git 환경](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) 비디오

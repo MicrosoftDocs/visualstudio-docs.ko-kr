@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: 볼륨 라이선스 계약의 관리자가 Visual Studio 구독 관리 포털에 액세스하는 방법 알아보기
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904211"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607290"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>볼륨 라이선스 계약의 관리자로 관리 포털에 액세스
 
@@ -23,10 +23,10 @@ ms.locfileid: "92904211"
 
 로그인하면 자동으로 슈퍼 관리자로 설정되며 구독 및 다른 관리자 관리를 시작할 수 있습니다. 슈퍼 관리자와 관리자의 차이점에 대한 정보는 [관리자 역할](admin-roles.md)에 대한 문서를 참조하세요.
 
-이 정보는 다음을 포함하지만 이에 제한되지 않는 모든 볼륨 라이선스 계약 유형에 적용됩니다. 기업계약, 기업 정기가입, Select, Select Plus, Open, Open License, 정부 및 아카데믹 계약. 
+이 정보는 모든 볼륨 라이선싱 계약 유형(예: 기업계약, 기업 정기가입, 셀렉트, 셀렉트 플러스, 오픈, 오픈 라이선스, 정부 및 아카데믹 계약)에 적용됩니다. 
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

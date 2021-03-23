@@ -26,14 +26,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870638"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483195"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C++용 형식 지정자
+
 형식 지정자를 사용하여 **조사식**, **자동** 및 **지역** 창에 값이 표시되는 형식을 변경할 수 있습니다.
 
 또한 **직접 실행** 창, **명령** 창, [추적점](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) 그리고 소스 창에서도 형식 지정자를 사용할 수 있습니다. 이러한 창에서 식을 일시 중지하면 [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)에 결과가 표시됩니다. DataTip 표시는 형식 지정자를 반영합니다.
@@ -42,6 +43,7 @@ ms.locfileid: "99870638"
 > Visual Studio 네이티브 디버거가 새 디버깅 엔진으로 변경될 때 일부 형식 지정자가 새로 추가되었으며 일부 이전 형식 지정자가 제거되었습니다. C++/CLI를 사용하여 interop(혼합 네이티브 및 관리) 디버깅을 수행할 때 이전 디버거가 계속 사용됩니다.
 
 ## <a name="set-format-specifiers"></a>형식 지정자 설정
+
 다음 예제 코드를 사용합니다.
 
 ```C++
@@ -64,6 +66,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 형식 지정자
+
 다음 표에는 Visual Studio에서 사용할 수 있는 형식 지정자가 설명되어 있습니다. 굵게 표시된 지정자는 새 디버거에서만 지원되며 C++/CLI를 사용하는 interop 디버깅에서는 지원되지 않습니다.
 
 ::: moniker range=">= vs-2019" 
@@ -138,6 +141,7 @@ int main() {
 > **hv** 형식 지정자가 있는 경우 디버거는 버퍼의 길이를 확인하여 해당 숫자의 요소를 표시하려고 합니다. 디버거에서 항상 배열의 정확한 버퍼 크기를 찾을 수는 없으므로 가능한 한 크기 지정자 `(pBuffer,[bufferSize])` 를 사용해야 합니다. **hv** 형식 지정자는 버퍼 크기를 즉시 사용할 수 없는 경우에 유용합니다.
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 배열로 사용되는 포인터에 대한 크기 지정자
+
 배열로 표시할 개체에 대한 포인터가 있는 경우 다음과 같이 정수 또는 식을 사용하여 배열 요소의 수를 지정할 수 있습니다.
 
 |지정자|서식|원래 조사식 값|표시되는 값|
@@ -147,7 +151,8 @@ int main() {
 |**expand(n)**|정수로 확인되는 유효한 C++ 식입니다.|pBuffer, expand(2)|`pBuffer`의 세 번째 요소를 표시합니다.|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI를 사용하는 interop 디버깅의 형식 지정자
-**굵게** 표시된 지정자는 네이티브 및 C++/CLI 코드 디버깅에 대해서만 지원됩니다.
+
+**굵게** 표시된 지정자는 네이티브 및 C++/CLI 코드 디버깅에 대해서만 지원됩니다. 여기에는 [관리형 호환성 모드](../debugger/general-debugging-options-dialog-box.md)를 사용하여 지정된 레거시 디버거가 필요합니다.
 
 |지정자|서식|원래 조사식 값|표시되는 값|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ int main() {
 |!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI를 사용하는 interop 디버깅의 메모리 위치 형식 지정자
+
 다음 표에는 메모리 위치에 사용되는 형식 지정 기호가 설명되어 있습니다. 메모리 위치 지정자를 위치로 확인되는 값이나 수식에 사용할 수 있습니다.
+
+**굵게** 표시된 지정자는 네이티브 및 C++/CLI 코드 디버깅에 대해서만 지원됩니다. 여기에는 [관리형 호환성 모드](../debugger/general-debugging-options-dialog-box.md)를 사용하여 지정된 레거시 디버거가 필요합니다.
 
 |Symbol|서식|원래 조사식 값|표시되는 값|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ int main() {
 |**mu**|2바이트 유니코드 문자|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI를 사용하는 interop 디버깅에서 배열로 사용되는 포인터의 크기 지정자
+
 배열로 표시할 개체에 대한 포인터가 있는 경우 다음과 같이 정수를 사용하여 배열 요소의 수를 지정할 수 있습니다.
 
 |지정자|서식|식|표시되는 값|

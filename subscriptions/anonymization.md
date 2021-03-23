@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
-ms.date: 02/20/2020
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: 구독에 대한 액세스 권한이 중단된 경우 구독자 데이터가 익명화되는 방법을 알아봅니다.
-ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467494"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225965"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 구독자 정보의 익명화
 구독 만료 또는 구독자 로그인 계정 삭제와 같은 구독자의 구독 사용을 차단하는 이벤트가 발생하면, 이름 및 로그인 계정과 같은 사용자의 개인 정보는 기본적으로 사용할 수 없도록 하기 위해 암호화됩니다.  이는 구독자의 개인 정보를 보호하기 위해 수행됩니다.
@@ -35,7 +35,9 @@ ms.locfileid: "92467494"
 A:  아니요.  익명화는 구독에 대한 액세스 권한의 손실을 유발하지만 액세스 부족이 발생하지 않는 이벤트에 대한 응답입니다.
 
 ### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q:  조직의 구독 관리자입니다.  구독자의 정보 중 하나가 익명으로 되어 있으면 해당 구독을 다른 사용자에게 다시 할당할 수 있나요?
-A:  예 -- 구독이 만료되지 않는 한 다른 구독자에게 다시 할당할 수 있습니다.
+A:  예.  다음 조건이 충족되는 경우 구독을 다시 할당할 수 있습니다.
+- 구독이 만료되지 않음
+- 구독이 구독자에게 마지막으로 할당된 후 최소 90일이 경과함.  예를 들어 6월 1일에 구독자에게 구독을 할당한 경우 최소 8월 30일까지는 해당 구독을 다시 할당할 수 없습니다.
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q: 로그인 전자 메일 주소를 삭제하여 발생하는 익명화를 방지하려면 어떻게 해야 하나요?
 A:  문제를 방지하는 방법에는 두 가지가 있습니다.

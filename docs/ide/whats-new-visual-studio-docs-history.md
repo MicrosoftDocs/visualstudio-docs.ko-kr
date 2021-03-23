@@ -2,7 +2,7 @@
 title: 'Visual Studio 문서: 새로운 기능 기록 '
 titleSuffix: ''
 description: Visual Studio 문서의 새로운 기능에 관한 기록
-ms.date: 02/01/2021
+ms.date: 03/08/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,98 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960535"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622571"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 문서의 새로운 기능에 관한 기록
 
-Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 문서에는 2020년 7월부터 2021년 1월 이전의 문서 주요 변경 내용이 포함되어 있습니다. 새로운 기능의 최신 내용은 [Visual Studio 문서: 문서에 추가된 새로운 기능](whats-new-visual-studio-docs.md)을 참조하세요.
+Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 문서에는 2020년 7월부터 2021년 2월 이전의 문서 주요 변경 내용이 포함되어 있습니다. 새로운 기능의 최신 내용은 [Visual Studio 문서: 문서에 추가된 새로운 기능](whats-new-visual-studio-docs.md)을 참조하세요.
+
+## <a name="january-2021"></a>2021년 1월
+### <a name="azure"></a>Azure
+
+**새 문서**
+
+- [Visual Studio에서 Cloud Services(확장 지원) 만들기 및 배포(미리 보기)](../azure/cloud-services-extended-support.md) - Cloud Services 확장 지원 - 템플릿 없음
+
+### <a name="code-quality"></a>코드 품질
+
+**새 문서**
+
+- [코드 메트릭 - 클래스 결합](../code-quality/code-metrics-class-coupling.md) - 코드 메트릭 새로 고침
+- [코드 메트릭 - 유지 관리 인덱스 범위 및 의미](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) - 코드 메트릭 새로 고침
+
+### <a name="debugger"></a>디버거
+
+**새 문서**
+
+- [Visual Studio를 사용하여 WSL 2에서 .NET Core 앱 디버그](../debugger/debug-dotnet-core-in-wsl-2.md) - .NET Core WSL2 디버깅
+
+**업데이트된 문서**
+
+- [Natvis 프레임워크를 사용하여 디버거에서 C++ 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-native-objects.md) - NatVis에서 특수 문자의 XML 서식 지정에 대한 명확한 설명
+- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심스럽거나 확실하지 않은 경우 이 프로세스에 연결하지 마세요.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) - 신뢰할 수 없는 프로세스에 연결할 때 표시되는 보안 경고 업데이트
+
+### <a name="deployment"></a>배포
+
+**업데이트된 문서**
+
+- [&lt;InstallChecks&gt; 요소(부트스트래퍼)](../deployment/installchecks-element-bootstrapper.md) - 새 BeforeInstallChecks 요소를 포함하도록 부트스트래퍼 패키시 설명서 업데이트
+
+### <a name="extensibility"></a>확장성
+
+**업데이트된 문서**
+
+- [연습: Visual Studio 확장 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) - 퍼블릭 PR 6214에서 [PUBLIC_MOVE] 커밋
+
+### <a name="get-started"></a>시작
+
+**새 문서**
+
+- [자습서: Visual Studio 2017의 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) - 리포지토리에서 프로젝트 열기 자습서 업데이트
+
+**업데이트된 문서**
+
+- [자습서: 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo.md) - 리포지토리에서 프로젝트 열기 자습서 업데이트
+
+### <a name="ide"></a>IDE
+
+**새 문서**
+
+- [Visual Studio용 JavaScript F1 도움말](./not-in-toc/default-f1-javascript.md) - JS 및 TS 기본 F1 페이지 추가됨
+- [Visual Studio용 TypeScript F1 도움말](./not-in-toc/default-f1-typescript.md) - JS 및 TS 기본 F1 페이지 추가됨
+
+**업데이트된 문서**
+
+- [Visual Studio의 솔루션 및 프로젝트](./solutions-and-projects-in-visual-studio.md) - Visual Studio 이미지 라이브러리에 링크 추가
+
+### <a name="install"></a>설치
+
+**업데이트된 문서**
+
+- [Visual Studio 빌드 번호 및 릴리스 날짜](../install/visual-studio-build-numbers-and-release-dates.md) - 화요일 패치(Patch Tuesday) 업데이트
+
+### <a name="msbuild"></a>MSBuild
+
+**업데이트된 문서**
+
+- [MSBuild 용어집](../msbuild/msbuild-glossary.md) - H2로 용어집 키 승격
+
+### <a name="profiling"></a>프로파일링
+
+**새 문서**
+
+- [Visual Studio 프로파일러에서 dotnet 카운터 시각화](../profiling/dotnet-counters-tool.md) - .NET 카운터 추가 도구 문서 추가 중
+
+### <a name="test"></a>테스트
+
+**업데이트된 문서**
+
+- [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md) - 테스트 오디오 큐 문서 추가
 
 ## <a name="december-2020"></a>2020년 12월
 ### <a name="azure"></a>Azure

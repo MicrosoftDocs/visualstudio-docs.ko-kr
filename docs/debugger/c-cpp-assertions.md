@@ -30,14 +30,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc58d125f82a33f982578f9a186d579d280e89e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e347bd8de6342a79d7523a1085f0e40cad8b0cbf
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865958"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571495"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
+
 어설션 문은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다. 지정한 조건이 true가 아니면 어설션이 실패하고 프로그램 실행이 중단되며 [ 어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.
 
 Visual Studio는 다음 구분을 기반으로 하는 C++ 어설션 문을 지원합니다.
@@ -53,6 +54,7 @@ Visual Studio는 다음 구분을 기반으로 하는 C++ 어설션 문을 지�
   어설션을 사용하여 논리 오류를 포착하고 작업 결과를 확인하며 처리해야 하는 오류 조건을 테스트할 수 있습니다.
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> 항목 내용
+
 [어설션 작동 방식](#BKMK_How_assertions_work)
 
 [디버그 및 릴리스 빌드의 어설션](#BKMK_Assertions_in_Debug_and_Release_builds)
@@ -76,6 +78,7 @@ Visual Studio는 다음 구분을 기반으로 하는 C++ 어설션 문을 지�
 - [처리되지 않은 오류 찾기](#BKMK_Testing_error_conditions_)
 
 ## <a name="how-assertions-work"></a><a name="BKMK_How_assertions_work"></a> 어설션 작동 방식
+
 MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중지된 경우 소스를 사용할 수 있으면 디버거는 소스 파일에서 어설션이 발생한 지점으로 이동합니다. 어설션 메시지는 [출력 창](../ide/reference/output-window.md)과 **어설션 실패** 대화 상자 모두에 나타납니다. 어설션 메시지를 나중에 참조할 수 있도록 저장하려면 **출력** 창에서 텍스트 창으로 복사하면 됩니다. **출력** 창에는 다른 오류 메시지도 포함될 수 있습니다. 이러한 메시지는 어설션 실패의 원인에 대한 단서를 제공하기 때문에 주의 깊게 검토합니다.
 
 어설션을 사용하여 개발 중에 오류를 감지합니다. 대체로, 가정마다 하나의 어설션을 사용합니다. 예를 들어, 인수가 NULL이 아니라고 가정하면 이 가정을 테스트하는 하나의 어설션을 사용합니다.
@@ -83,9 +86,11 @@ MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중�
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="assertions-in-debug-and-release-builds"></a><a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> 디버그 및 릴리스 빌드의 어설션
+
 어설션 문은 `_DEBUG`가 정의된 경우에만 컴파일됩니다. 그렇지 않으면 컴파일러가 어설션을 Null 문으로 간주합니다. 따라서 어설션 문은 최종 릴리스 프로그램에서 오버헤드나 성능 비용을 부과하지 않으며 `#ifdef` 지시문을 사용하지 않아도 됩니다.
 
 ## <a name="side-effects-of-using-assertions"></a><a name="BKMK_Side_effects_of_using_assertions"></a> 어설션 사용의 부작용
+
 코드에 어설션을 추가하는 경우에는 어설션에 부작용이 없는지 확인합니다. 예를 들어, `nM` 값을 수정하는 다음과 같은 어설션이 있습니다.
 
 ```cpp
@@ -106,6 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="crt-assertions"></a><a name="BKMK_CRT_assertions"></a> CRT 어설션
+
 CRTDBG.H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _ASSERTE 매크로](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros)를 정의합니다.
 
 | 매크로 | 결과 |
@@ -128,7 +134,10 @@ CRTDBG.H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _ASSERTE 매�
 
 어설션된 식이 FALSE로 평가되면 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)가 호출되어 어설션 실패를 보고합니다(기본적으로 메시지 대화 상자를 사용). 메시지 대화 상자에서 **다시 시도** 를 선택하면 `_CrtDbgReport`는 1을 반환하고 `_CrtDbgBreak`는 `DebugBreak`를 통해 디버거를 호출합니다.
 
+모든 어설션을 일시적으로 사용하지 않도록 설정해야 하는 경우에는 [_CtrSetReportMode](/cpp/c-runtime-library/reference/crtsetreportmode)를 사용합니다.
+
 ### <a name="checking-for-heap-corruption"></a>힙 손상 여부 확인
+
 다음 예제는 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)를 사용하여 힙 손상 여부를 검사합니다.
 
 ```cpp
@@ -136,6 +145,7 @@ _ASSERTE(_CrtCheckMemory());
 ```
 
 ### <a name="checking-pointer-validity"></a>포인터 유효성 검사
+
 다음 예제는 [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer)를 사용하여 지정된 메모리 범위가 읽기 또는 쓰기에 유효한지 확인합니다.
 
 ```cpp
@@ -149,6 +159,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 ```
 
 ### <a name="checking-a-memory-block"></a>메모리 블록 확인
+
 다음 예제는 [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock)을 사용하여 메모리 블록이 로컬 힙에 있고 유효한 블록 유형을 사용하는지 확인합니다.
 
 ```cpp
@@ -158,6 +169,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> MFC 어설션
+
 MFC는 어설션 검사를 위한 [ASSERT](/previous-versions/ew16s3zc(v=vs.140)) 매크로를 정의합니다. 또한 `CObject` 파생 개체의 내부 상태를 확인하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의합니다.
 
 MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가되면 매크로는 프로그램 실행을 중지하고 사용자에게 경고합니다. 그렇지 않으면 실행이 계속됩니다.
@@ -180,6 +192,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 `ASSERT` 매크로는 릴리스 버전에서 코드를 생성하지 않습니다. 릴리스 버전에서 식을 평가해야 하는 경우 ASSERT 대신 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 매크로를 사용합니다.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID 및 CObject::AssertValid
+
 [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대한 런타임 검사를 제공합니다. `CObject`에서 클래스를 파생시킬 때 `AssertValid`를 재정의할 필요는 없지만 이렇게 하면 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행하여 유효한 값이 포함되어 있는지 확인해야 합니다. 예를 들어, 포인터 멤버 변수가 NULL이 아닌 것을 확인해야 합니다.
 
 다음 예제에서는 `AssertValid` 함수를 선언하는 방법을 보여줍니다.
@@ -268,6 +281,7 @@ void CMyData::AssertValid( ) const
 ## <a name="using-assertions"></a><a name="BKMK_Using_assertions"></a> 어설션 사용
 
 ### <a name="catching-logic-errors"></a><a name="BKMK_Catching_logic_errors"></a> 논리 오류 포착
+
 프로그램의 논리에 따라 true여야 하는 조건에 대한 어설션을 설정할 수 있습니다. 논리 오류가 발생하지 않으면 어설션이 적용되지 않습니다.
 
 예를 들어, 컨테이너에서 가스 분자를 시뮬레이션하고 `numMols` 변수는 총 분자 수를 나타낸다고 가정합니다. 이 숫자는 0보다 작을 수 없으므로 MFC 어설션 문을 다음과 같이 포함할 수 있습니다.
@@ -287,6 +301,7 @@ _ASSERT(numMols >= 0);
 [항목 내용](#BKMK_In_this_topic)
 
 ### <a name="checking-results"></a><a name="BKMK_Checking_results_"></a> 결과 확인
+
 어설션은 빠른 육안 검사로 결과가 명확하지 않은 작업을 테스트하는 데 유용합니다.
 
 예를 들어, 다음 코드는 `mols`가 가리키는 링크된 목록의 콘텐츠를 기반으로 `iMols` 변수를 업데이트합니다.
@@ -310,6 +325,7 @@ _ASSERT(iMols<=numMols); // CRT version
 [항목 내용](#BKMK_In_this_topic)
 
 ### <a name="finding-unhandled-errors"></a><a name="BKMK_Testing_error_conditions_"></a> 처리되지 않은 오류 찾기
+
 어설션을 사용하여 오류를 처리해야 하는 코드의 지점에서 오류 조건을 테스트할 수 있습니다. 다음 예제에서 그래픽 루틴은 오류 코드를 반환하거나 성공에 대해 0을 반환합니다.
 
 ```cpp

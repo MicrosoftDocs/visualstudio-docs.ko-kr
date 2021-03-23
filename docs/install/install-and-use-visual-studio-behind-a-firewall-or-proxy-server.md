@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970661"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295706"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -141,6 +141,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | 디버거 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>SSH를 통해 Unix/macOS에서 .NET Core 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다. <br><br>2. <br>원격 Windows Docker 컨테이너 디버깅을 위한 디버거 비트를 다운로드하는 데 사용됩니다.<br><br> 3. .NET Framework 소스 단계별 실행에 사용됨 <br><br> 4. <br>사용자가 등록하는 경우 NuGet.org 기호 서버에 게시된 기호를 다운로드하는 데 사용됩니다.<br><br> 5. 사용자가 등록하는 경우 MS 기호 및 이진 파일을 다운로드하는 데 사용되며, 덤프에서 관리 코드를 디버깅하는 데 필요할 수도 있습니다. |
 | GitHub Codespaces| \*.online.visualstudio.com | https/443 | GitHub Codespaces API를 호출하는 데 사용됩니다. |
 | Xamarin Android 앱 게시 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Visual Studio에서 직접 Xamarin Android 애플리케이션을 게시/업로드하기 위해 Google Play 스토어 서비스와 상호 작용하는 데 사용됩니다. |
+| Visual Studio Search Service | data-ai.microsoft.com/search | https/443 | `Ctrl+Q` 검색 상자에서 AI 지원 Visual Studio Search Service를 제공하는 데 사용됩니다. |
 | Azure Container Registry | *.azurecr.io | https/443 | CICD 파이프라인 구성을 위해 Azure에서 호스트되는 컨테이너 레지스트리에 액세스 |
 | | | | |
 

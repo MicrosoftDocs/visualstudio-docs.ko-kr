@@ -1,7 +1,7 @@
 ---
 title: 관리자 권한으로 실행
 description: 관리자 권한으로 Visual Studio를 실행하는 방법을 알아봅니다.
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971299"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607251"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 
@@ -72,7 +72,17 @@ ms.locfileid: "99971299"
 
 ::: moniker-end
 
-또한 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행하도록 할 수 있습니다.
+또한 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행할 수 있습니다.
+
+1. **시작** 메뉴를 열고, 사용 중인 Visual Studio 버전으로 스크롤한 다음, **더 보기** > **파일 위치 열기** 를 선택합니다.
+
+1. **파일 탐색기** 에서 사용 중인 버전의 **Visual Studio** 바로 가기를 찾습니다. 그런 다음, 바로 가기를 마우스 오른쪽 단추로 클릭하고 **보내기** > **바탕 화면(바로 가기 만들기)** 을 선택합니다.
+
+1. **Windows** 바탕 화면에서 **Visual Studio** 바로 가기를 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택합니다.
+
+1. **고급** 단추를 선택한 다음, **관리자 권한으로 실행** 확인란을 선택합니다.
+
+1. **확인** 을 선택한 후 **만들기** 를 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 
