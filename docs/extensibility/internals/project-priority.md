@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75ea6485e2ae613ca03fb3900e3e2ba9d415af95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064490"
 ---
 # <a name="project-priority"></a>프로젝트 우선 순위
 프로젝트 항목은 일반적으로 솔루션에 있는 하나의 프로젝트의 멤버입니다. 따라서 IDE는 항목을 여는 데 사용 되는 프로젝트를 쉽게 확인할 수 있습니다. 그러나 항목이 둘 이상의 프로젝트의 멤버인 경우 IDE는 우선 순위 체계를 사용 하 여 항목을 여는 데 가장 적합 한 프로젝트를 결정 합니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99852598"
 
 - 가장 높은 우선 순위를 지정 하는 프로젝트는 문서를 여는 컨텍스트를 제공 합니다. 두 프로젝트가 동일한 우선 순위 값을 반환 하는 경우 활성 프로젝트를 선호 합니다. 솔루션에 문서를 열 수 있는 것으로 응답 하는 프로젝트가 없으면 IDE는 기타 파일 프로젝트에 문서를 넣습니다. 자세한 내용은 [기타 파일 프로젝트](../../extensibility/internals/miscellaneous-files-project.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기타 파일 프로젝트](../../extensibility/internals/miscellaneous-files-project.md)
 - [방법: 열린 문서에 대한 편집기 열기](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)

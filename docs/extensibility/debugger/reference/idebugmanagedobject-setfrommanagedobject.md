@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b4038b4f3560b7cd526261f898c01f384421f42
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8c00e61de35e0cc9c33845236d8103bcd16cebfa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076851"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 매개 변수로 제공 된 값 클래스의 인스턴스에서 값 클래스 개체의 인스턴스 값을 설정 합니다.
@@ -50,5 +50,5 @@ int SetFromManagedObject(
 ## <a name="remarks"></a>설명
  이 메서드는 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 개체가 나타내는 관리 되는 개체를 변경 하는 데 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

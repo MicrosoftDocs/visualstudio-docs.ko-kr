@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3eb303a7e0a4795d3f7ef49f9114cc942bff9b2d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 662555ec4552aa016b40c1e9c8222992e6cdfd66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164944"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076656"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 `this` `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 메서드를 포함 하는 개체의 (in) 포인터를 가져옵니다.
@@ -50,6 +50,6 @@ int GetThis(
 ## <a name="remarks"></a>설명
  개체 지향 언어에서 일반적으로 클래스의 현재 인스턴스화에 대 한 암시적 포인터가 있습니다. 이를 `this` c #/c + + 및에서와 같이 `Me` 이라고 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

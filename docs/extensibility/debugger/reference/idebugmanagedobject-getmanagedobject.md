@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a262759cfcedd5fb0d09bcb995dcbcb7f7ee2a7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1aea4f233160f9bdcc5c18c1dda16b4e3f361540
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165269"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076942"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 관리 되는 개체를 나타내는 인터페이스를 반환 합니다.
@@ -50,5 +50,5 @@ int GetManagedObject(
 ## <a name="remarks"></a>설명
  이 메서드에서 반환 된 인터페이스는 해당 메서드가 호출 될 수 있도록 관리 되는 클래스에서 구현 하는 인터페이스에 대해 쿼리할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

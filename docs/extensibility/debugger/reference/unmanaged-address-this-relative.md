@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc3e72a536af25c3c62d953a0e5cfb75b5200c69
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1fbe63edeed68bc50aae0062f171f66c8a9203ed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223369"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070676"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 이 구조체는 `this` Visual Basic의 포인터를 기준으로 하는 주소를 나타냅니다 `Me` .
@@ -44,7 +44,7 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `dwOffset`\
  기본 위치 로부터의 바이트 오프셋입니다 (예: 클래스 vtable의 시작).
 
@@ -64,6 +64,6 @@ public struct UNMANAGED_THIS_RELATIVE {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

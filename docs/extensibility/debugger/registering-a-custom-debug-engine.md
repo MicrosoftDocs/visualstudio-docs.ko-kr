@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4581411a2601bf598762a7157f9df0e006995230
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04e4e8de875cb66ed285e610950baa1c5bf4ef3f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961120"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070663"
 ---
 # <a name="register-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 등록
 디버그 엔진은 visual Studio 레지스트리 하위 키를 통해 Visual Studio에 등록 하는 것은 물론 COM 규칙에 따라 자신을 클래스 팩터리로 등록 해야 합니다.
@@ -50,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [자습서: ATL COM을 사용 하 여 디버그 엔진 빌드](/previous-versions/bb147024(v=vs.90))

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da1aadd9767dd8dff17f520212a8e67a012dbd6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a9cc73f9bf35692e002034c06b234fd388110fa6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223396"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070702"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 이 구조는 실제 주소를 나타냅니다.
@@ -40,7 +40,7 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `offset`\
  실제 주소 공간에 대 한 64 비트 오프셋입니다.
 
@@ -54,6 +54,6 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

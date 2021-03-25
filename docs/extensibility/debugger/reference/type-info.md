@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b83c4a829a050b9e78b65a9a68be96d2397ea8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223422"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070741"
 ---
 # <a name="type_info"></a>TYPE_INFO
 이 구조는 필드 형식에 대 한 다양 한 종류의 정보를 지정 합니다.
@@ -47,7 +47,7 @@ public struct TYPE_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `dwKind`\
  합집합을 해석 하는 방법을 결정 하는 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 열거형의 값입니다.
 
@@ -83,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  이 예제에서는 `unionmember` `TYPE_INFO` c #에서 구조체의 멤버를 해석 하는 방법을 보여 줍니다. 이 예제에서는 하나의 형식 ()만 해석 하지만 다른 형식 ()은 해석 하는 방법을 보여 줍니다 `TYPE_KIND_METADATA` .
 
 ```csharp
@@ -114,7 +114,7 @@ namespace MyPackage
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

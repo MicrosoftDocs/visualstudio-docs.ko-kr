@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e4de5f46746f79e1c7598e1c2a2a6af6ae1d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e9f19506c58f65f80900c08fe339c7478144546
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912689"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064230"
 ---
 # <a name="source-control-vspackage-architecture"></a>소스 제어 VSPackage 아키텍처
 소스 제어 패키지는 IDE에서 제공 하는 서비스를 사용 하는 VSPackage입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 반환 시 소스 제어 패키지는 소스 제어 서비스로 기능을 제공 합니다. 또한 소스 제어 패키지는 소스 제어를에 통합 하기 위한 소스 제어 플러그 인 보다 더 다양 한 방법입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -49,6 +49,6 @@ ms.locfileid: "99912689"
 
   VSPackage 기반 소스 제어 패키지를 작성 하려면 소스 제어 플러그 인 API 기반 플러그 인을 작성 하는 것 보다 고급 프로그래밍에 대 한 지식이 필요 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - [시작](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

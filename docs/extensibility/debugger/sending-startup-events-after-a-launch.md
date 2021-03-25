@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 227d863df1e3318d2df6be6a24aaf05b5033e92d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960847"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070402"
 ---
 # <a name="send-startup-events-after-a-launch"></a>시작 후 시작 이벤트 보내기
 디버그 엔진 (DE)이 프로그램에 연결 되 면 일련의 시작 이벤트를 다시 디버그 세션으로 보냅니다.
@@ -45,6 +45,6 @@ ms.locfileid: "99960847"
 
   코드를 로드 하 고 실행할 준비가 완료 된 후 코드를 실행 하기 전에 DE는 SDM [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) load complete 이벤트를 보냅니다. 마지막으로 프로그램이 아직 실행 되지 않은 경우 DE는 프로그램의 기본 진입점에 도달 하 고 디버그할 준비가 되었다는 신호를 전달 하는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) entry point 이벤트를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행 제어](../../extensibility/debugger/control-of-execution.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

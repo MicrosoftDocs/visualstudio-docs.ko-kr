@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Compare method
 - Compare method
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f21b22574a780f5e9fcfa045c6786b13d82caa45
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 67acecafd677d5096e1bf975f85e21a5c6cbe133
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165100"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076773"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 비교 플래그에 지정 된 방식으로 지정 된 배열의 각 컨텍스트와 메모리 컨텍스트를 비교 하 여와 일치 하는 첫 번째 컨텍스트의 인덱스를 반환 합니다.
@@ -66,6 +66,6 @@ int Compare(
 ## <a name="remarks"></a>설명
  DE (디버그 엔진)는 모든 형식의 비교를 지원 하지 않아도 되지만 `CONTEXT_EQUAL` ,, 및 이상을 지원 해야 합니다 `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` `CONTEXT_SAME_SCOPE` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

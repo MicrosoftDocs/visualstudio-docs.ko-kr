@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK]
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c13b1bc0c7b3b700d65b67e0aa6b856372dffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99c19fd202cf0e9fe56ba6485aaa1a7005047774
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958468"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064076"
 ---
 # <a name="source-control"></a>소스 제어
 이 섹션에서는 소스 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 플러그 인 또는 소스 제어 VSPackage를 통해의 통합 기능으로 소스 제어를 구현 하기 위한 옵션에 대해 설명 합니다.

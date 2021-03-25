@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cf6998a9dd8bc521d8d5c7b8bd3e598e9a4e3bc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961107"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070650"
 ---
 # <a name="register-an-expression-evaluator"></a>식 계산기 등록
 > [!IMPORTANT]
@@ -112,7 +112,7 @@ namespace EEMC
 
 2. 도우미 함수를 호출 `SetEEMetric` 하 여 Visual Studio에 등록 하 고 다음 표에 표시 된 EE 메트릭을 사용 합니다. `SetEEMetric`다음으로 지정 된 함수 및 메트릭은 *dbgmetric* 라이브러리의 일부입니다. 자세한 내용은 [SDK 도우미를](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 참조 하세요.
 
-    |메트릭|Description|
+    |메트릭|설명|
     |------------|-----------------|
     |`metricCLSID`|`CLSID` EE 클래스 팩터리|
     |`metricName`|표시할 문자열의 EE 이름|
@@ -211,6 +211,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

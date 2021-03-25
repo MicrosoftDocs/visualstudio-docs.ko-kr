@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221355"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090163"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 함수
 이 함수는 이전 체크 아웃 작업을 실행 취소 하 여 체크 아웃 전의 상태로 선택한 파일의 콘텐츠를 복원 합니다. 체크 아웃 후 파일에 대 한 모든 변경 내용이 손실 됩니다.
@@ -64,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|체크 아웃을 취소 했습니다.|
 |SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|
@@ -78,5 +78,5 @@ SCCRTN SccUncheckout (
 ## <a name="remarks"></a>설명
  이 작업을 수행한 후 `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 실행 취소를 체크 아웃 한 파일에 대해 및 플래그를 모두 지웁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

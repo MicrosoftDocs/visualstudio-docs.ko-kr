@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3d09046d70d6bc766d17963ea4cdd6469c0981fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167856"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083676"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 이 인터페이스는 프로세스 경계에서 프로그램 관련 인터페이스를 마샬링합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProviderProgramNode2 : IUnknown
@@ -38,7 +38,7 @@ IDebugProviderProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|프로세스 경계를 넘어 지정 된 인터페이스를 가져옵니다.|
 
@@ -52,6 +52,6 @@ IDebugProviderProgramNode2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

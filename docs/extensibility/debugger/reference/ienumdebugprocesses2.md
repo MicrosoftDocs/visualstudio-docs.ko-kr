@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1272c57b58b4e2656775bf746d470a3514c886ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224384"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064542"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 이 인터페이스는 디버그 포트에서 실행 되는 프로세스를 열거 합니다.
@@ -38,7 +38,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugProcesses2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|열거형 시퀀스에서 지정 된 수의 프로세스를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|열거형 시퀀스에서 지정 된 수의 프로세스를 건너뜁니다.|
@@ -56,6 +56,6 @@ IEnumDebugProcesses : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

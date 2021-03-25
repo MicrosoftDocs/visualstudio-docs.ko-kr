@@ -10,17 +10,17 @@ helpviewer_keywords:
 - commands, handling using interop assemblies
 - command handling with interop assemblies
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea48c77212927c14b4ad49c91ce2f4d988e36f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5a487c2fe6f97e338924a0b8c682f9dd9798571
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928226"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057236"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Interop 어셈블리를 사용 하는 명령 및 메뉴
 Interop 어셈블리를 사용 하 여 메뉴 및 도구 모음 명령을 구현 하는 VSPackage는 다음을 수행 해야 합니다.

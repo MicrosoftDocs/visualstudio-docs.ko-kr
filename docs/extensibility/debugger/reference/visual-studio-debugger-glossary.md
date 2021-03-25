@@ -8,17 +8,17 @@ helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1871a395e87177c89f8af2bfce640a63c2cba324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961198"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070689"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 디버거 용어집
 다음은 디버깅 SDK에 사용 되는 용어 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 입니다.
@@ -68,5 +68,5 @@ ms.locfileid: "99961198"
 
   경고 중단점 보류 중인 중단점에서 경고를 설명 하는 추상화입니다. 경고 중단점은 보류 중인 중단점이 아직 코드 위치에 바인딩되지 않은 이유를 설명 합니다. 이는 보류 중인 중단점에 설명 된 위치에 대해 코드가 아직 로드 되지 않았거나 다른 이유로 인해 발생할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 디버거 확장성](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

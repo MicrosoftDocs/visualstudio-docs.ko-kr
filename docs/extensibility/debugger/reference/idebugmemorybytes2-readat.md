@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f408e062fad4485fb159225e0639618d303e0806
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a1fdcdf46f7f57f3ee6035bf9af8be5a7e99739f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165165"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076825"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 지정 된 위치에서 시작 하 여 바이트 시퀀스를 읽습니다.
@@ -77,6 +77,6 @@ int ReadAt(
 
  이 경우 `*pdwRead + *pdwUnreadable < dwCount` 호출자는 요청 된 원래 100의 남은 30 바이트를 읽도록 추가 호출을 수행 해야 하며 매개 변수에 전달 된 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 개체는 `pStartContext` 70로 고급 이어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

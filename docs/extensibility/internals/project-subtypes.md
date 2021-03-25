@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d44014ced9253328890c34d877beb68120c0c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1695bc79e38c7a9ebbda7736e57116123343f30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896793"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064334"
 ---
 # <a name="project-subtypes"></a>프로젝트 하위 형식
 프로젝트 하위 유형을 사용 하면의 프로젝트 시스템 동작을 사용자 지정 하거나 버전을 지정할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 지정은 프로젝트 파일에 추가 데이터를 저장 하 고, **새 항목 추가** 대화 상자에서 항목을 추가 또는 필터링 하 고, 어셈블리를 디버그 및 배포 하는 방법을 제어 하 고, 프로젝트 **속성 페이지** 대화 상자를 확장 합니다. Vspackage COM 집계를 사용 하 여 프로젝트 하위 유형을 구현 합니다.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbf727de01c8cbf34d645aff4e0a64aeb476ebbd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ca0bb320bfe55879b290093a60c347b3a820e35d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167843"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083663"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 사용자 지정 디버그 엔진 (DE) 인터페이스를 가져옵니다.
@@ -50,7 +50,7 @@ int GetEngineInterface(
 ## <a name="remarks"></a>설명
  이 메서드에서 검색 된 인터페이스를 통해 호출 하 여 세션 디버그 관리자의 처리를 우회 SDM이 잘못 된 상태가 되거나 디버깅 중에 오류가 발생할 수 있으므로 결과 인터페이스를 주의 해 서 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

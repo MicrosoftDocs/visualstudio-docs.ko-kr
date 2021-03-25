@@ -9,17 +9,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c88c80ffbc1e80815b8370a940a75c0eb197ff78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938098"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090137"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 확장 전달
 확장 개발을 마친 후에는 다른 컴퓨터에 설치 하거나, 친구 및 동료와 공유 하거나, Visual Studio Marketplace에 게시할 수 있습니다. 이 섹션에서는 확장명을 게시 하 고 유지 관리 하기 위해 수행 해야 하는 모든 작업을 설명 합니다. .vsix 파일 작업, 게시, 지역화, 업데이트 등이 있습니다.

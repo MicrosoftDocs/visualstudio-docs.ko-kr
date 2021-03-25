@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b93aa34870d05b9a4ec0a9a0aa92f681735dfe3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 66598460a48c960b78cb89315fff6bd7ac9a845e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224462"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064594"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 이 인터페이스는 컴퓨터 또는 포트 공급자의 포트를 열거 합니다.
@@ -38,7 +38,7 @@ IEnumDebugPorts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugPorts2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|열거형 시퀀스에서 지정 된 수의 포트를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|열거형 시퀀스에서 지정 된 수의 포트를 건너뜁니다.|
@@ -58,7 +58,7 @@ IEnumDebugPorts2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)
