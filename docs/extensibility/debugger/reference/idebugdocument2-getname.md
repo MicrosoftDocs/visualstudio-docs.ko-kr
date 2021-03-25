@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b68fb60cb13d88941b21f6625e6cc0e38ceeda4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 49c9a2b4fd95fbb24b28b69003c8e462b09be38b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166543"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066817"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 여러 형식 중 하나로 문서 이름을 가져옵니다.
@@ -55,6 +55,6 @@ int GetName(
 ## <a name="remarks"></a>설명
  예를 들어이 메서드는 문서 이름을 제목으로 반환 하거나 파일 이름 또는 파일 이름의 일부로 반환할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

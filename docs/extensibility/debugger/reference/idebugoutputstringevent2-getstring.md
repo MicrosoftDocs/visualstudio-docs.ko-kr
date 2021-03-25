@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugOutputStringEvent2::GetString
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 958ea04c3366aebf248f50915668709a8438a2dc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d066f2e88d65c6a75e1ccb881b0e3553afc8b7d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169979"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084677"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 표시할 메시지를 가져옵니다.
@@ -47,5 +47,5 @@ int GetString(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)

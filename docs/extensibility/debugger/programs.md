@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5205dba6cddf104d0cb05f01acbc43f6927acaaf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0769d2abc650305095115d1c645e3037096974de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948428"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094616"
 ---
 # <a name="programs"></a>프로그램
 디버거 아키텍처에서 *프로그램* 은 다음을 수행 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "99948428"
 
 - 는 구현에 따라 프로그램이 연결 되기 전에 만들어지거나 연결 프로세스의 일부로 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스로 표시 됩니다. 포트에서 프로세스의 프로그램을 열거 하면 [addprogram 노드에](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)인수로 전달 된 해당 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스에 따라 각 프로그램이 만들어집니다. 디버그 엔진 `IDebugProgram2` 은 프로그램을 나타내는 인터페이스도 생성 하지만 프로그램 노드에 따라 이러한 프로그램이 만들어지지 않습니다. `IDebugProgramNode2`DE에 의해 생성 된 인터페이스는 실제 디버깅에 사용 되 고, 포트에 의해 생성 된 인터페이스는 프로세스에서 실행 중인 프로그램을 검색 하는 데만 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로세스](../../extensibility/debugger/processes.md)
 - [프로그램 노드](../../extensibility/debugger/program-nodes.md)
 - [모듈](../../extensibility/debugger/modules.md)

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b66c40bd7c2cb289c4d17a719260b1098c24133f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 95dcfee364be7d3fae4f9659e98ca456e4345289
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145510"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055351"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder ObjectIdForDebugger 속성
 디버거에 대해이 작성기를 고유 하 게 식별 하는 데 사용할 수 있는 개체를 가져옵니다.
@@ -33,6 +33,6 @@ ms.locfileid: "102145510"
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
 - [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

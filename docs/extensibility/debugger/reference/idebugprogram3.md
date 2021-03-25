@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 339aff9bdd41a27f48ef1a7ef1e01d9529835403
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149602"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084339"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 이 인터페이스는 프로세스에서 실행 중 이며 스레드 정보를 제공 하 여 [실행](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 을 확장 하는 프로그램을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgram3 : IDebugProgram3
@@ -36,7 +36,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgram3` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|프로그램을 실행 합니다. 스레드는 실행 될 때 사용자가 보고 있는 스레드에 디버거 정보를 제공 하기 위해 반환 됩니다.|
 
@@ -50,7 +50,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="remarks"></a>설명
  프로그램은 특정 런타임 아키텍처에서 실행 되는 스레드 컨테이너 이며 프로세스는 하나 이상의 프로그램으로 구성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)

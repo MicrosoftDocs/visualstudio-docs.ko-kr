@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18d94daf830b852d8a3d13cbda7f9eb494889ff3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ec177db735c8562798e7fde19e9da2c8fc670d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163397"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067168"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 해당 이름이 지정 된 형식을 검색 합니다.
@@ -59,7 +59,7 @@ int GetTypesByName(
 ## <a name="remarks"></a>설명
 제네릭 형식의 경우 ' List \<int> ' 또는 ' list '에 대해 조회할 이름은 \<int,int> ' i n g '입니다. 동일한 이름의 형식이 여러 모듈에 표시 되는 경우 `ppEnum` 매개 변수는 모든 복사본을 포함 합니다. [Gettypeinfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 를 사용 하 고 매개 변수를 기반으로 구분 해야 `guidModule` 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -125,5 +125,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

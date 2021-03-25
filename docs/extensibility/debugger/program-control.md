@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948454"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094681"
 ---
 # <a name="program-control"></a>프로그램 제어
 Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이 프로그램 수준에서 발생 합니다.
@@ -48,5 +48,5 @@ Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이
 
  다중 스레드 프로그램의 경우 [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 메서드와 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 인터페이스의 모든 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d2da35fb7ffa81ec9f6a882e6b35d42fc8f00c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 725123ef8dc2aa67742784fb8c2eb35e242487f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952436"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094824"
 ---
 # <a name="debugger-contexts"></a>디버거 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 디버그 엔진 (DE)은 다음과 같이 여러 개의 고유 컨텍스트 내에서 동시에 작동 합니다.

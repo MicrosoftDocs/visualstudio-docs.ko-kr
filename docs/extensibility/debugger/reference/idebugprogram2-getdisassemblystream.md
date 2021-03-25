@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e000ada618c21af865743bfb2bd9fd6b60a80a4b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c7016c003642b9ef2688390de7cdb39be412bded
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159928"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075902"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 이 프로그램 또는이 프로그램의 일부에 대 한 디스어셈블리 스트림을 가져옵니다.
@@ -60,7 +60,7 @@ int GetDisassemblyStream(
 ## <a name="remarks"></a>설명
  `dwScopes`매개 변수에 `DSS_HUGE` [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 열거형 집합의 플래그가 있는 경우 디스어셈블리는 전체 파일 또는 모듈의 경우와 같이 많은 수의 디스어셈블리 명령을 반환 합니다. `DSS_HUGE`플래그가 설정 되지 않은 경우 디스어셈블리는 일반적으로 단일 함수의 작은 영역으로 제한 될 것으로 예상 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

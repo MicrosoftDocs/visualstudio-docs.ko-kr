@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b23cd7c09f3eeac2bfe85de882ff42affaa652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f261d6492943ab0b0da878097685ae2773ddff4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055299"
 ---
 # <a name="attach-directly-to-a-program"></a>프로그램에 직접 연결
 이미 실행 중인 프로세스에서 프로그램을 디버깅 하려는 사용자는 일반적으로 다음 프로세스를 따릅니다.
@@ -42,6 +42,6 @@ ms.locfileid: "99920087"
 
    두 번째 예외는 이미 실행 중인 프로그램에 연결 해제를 통해 전송 되는 시작 이벤트에는 일반적으로 진입점 이벤트가 포함 되지 않기 때문입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [시작 후 시작 이벤트 보내기](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

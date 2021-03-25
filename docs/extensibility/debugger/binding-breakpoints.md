@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622d61c6083288f7293258feb3743ef7cfdd0b8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895013"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055286"
 ---
 # <a name="bind-breakpoints"></a>중단점 바인딩
 사용자가 **F9** 키를 눌러 중단점을 설정 하는 경우 IDE에서 요청을 공식화 하 고 디버그 세션에 메시지를 표시 하 여 중단점을 만듭니다.
@@ -55,5 +55,5 @@ ms.locfileid: "99895013"
 
  DE가 중단점을 처리 하는 경우에는 바인딩할 수 없지만 다른 DE는이를 바인딩할 수 있지만 경고를 반환 합니다. IDE는 소스 코드 줄의 왼쪽에 있는 중단점 문자 모양 안에 물음표 문자 모양을 배치 하 여 응답 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

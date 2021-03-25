@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
 - debugger [Debugging SDK], launching
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f8bc85672fc89205ab25fa9954e1c28e10f859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67764a7f59c1b44e7e8cbc7a81befb120c541461
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926394"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094668"
 ---
 # <a name="launch-the-debugger"></a>디버거 시작
 디버거를 시작 하려면 적절 한 특성과 함께 올바른 메서드 및 이벤트 시퀀스를 전송 해야 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "99926394"
 
      `S_FALSE`가를 반환 하면 디버그 엔진 (DE)이 가상 컴퓨터의 프로세스에 로드 됩니다.
 
-     또는
+     -또는-
 
      가 `S_OK` 를 반환 하는 경우에는 SDM의 in-process에서 DE를 로드 해야 합니다. 그러면 SDM에서 다음 작업을 수행 합니다.
 
@@ -53,6 +53,6 @@ ms.locfileid: "99926394"
 
 8. DE는 특성을 사용 하 여 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 을 SDM으로 보냅니다 `EVENT_SYNC` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)
 - [프로그램 시작](../../extensibility/debugger/launching-a-program.md)

@@ -7,17 +7,17 @@ ms.topic: overview
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69cc1d40b2a0e61c0cf7ad32cb8187d0dad16994
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094772"
 ---
 # <a name="debug-tasks"></a>작업 디버그
 프로그램을 디버그하려면 프로그램을 시작하고 디버그 엔진(DE)을 연결해야 합니다. 그러지 않으면 이전에 실행한 프로그램에 DE를 연결해야 합니다. 연결되면 DE는 특정 시작 이벤트를 생성해야 합니다. 이에 대한 응답으로 디버그 패키지는 IDE에 설정된 중단점을 바인딩하려고 시도합니다. 프로그램이 바인딩된 중단점에 도달하면 중단되어 사용자 입력을 기다립니다.

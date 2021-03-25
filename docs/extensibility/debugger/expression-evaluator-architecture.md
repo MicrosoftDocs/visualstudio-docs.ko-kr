@@ -9,17 +9,17 @@ helpviewer_keywords:
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31b382f4765a115657fb213f39530e88e4008c95
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921417"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094733"
 ---
 # <a name="expression-evaluator-architecture"></a>식 계산기 아키텍처
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.locfileid: "99921417"
 ### <a name="evaluate-the-expression"></a>식 계산
  Visual Studio는 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 또는 [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 를 호출 하 여 구문 분석 된 식을 평가 합니다. 이러한 두 메서드는 모두 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (메서드를 즉시 호출 하 고 `IDebugExpression2::EvaluateSync` ,는 메서드를 즉시 호출 하 여 `IDebugExpression2::EvaluateAsync` )를 호출 하 고 구문 분석 된 식을 평가 하 고 구문 분석 된 식의 값과 형식을 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다. `IDebugParsedExpression::EvaluateSync` 제공 된 SH, address 및 binder를 사용 하 여 구문 분석 된 식을 인터페이스에서 나타내는 실제 값으로 변환 합니다 `IDebugProperty2` .
 
-### <a name="for-example"></a>예를 들면 다음과 같습니다.
+### <a name="for-example"></a>예
  실행 중인 프로그램에서 중단점이 적중 되 면 사용자는 **간략 한 조사식** 대화 상자에서 변수를 보도록 선택 합니다. 이 대화 상자에는 변수의 이름, 값 및 해당 형식이 표시 됩니다. 일반적으로 사용자는 값을 변경할 수 있습니다.
 
  간략 한 **조사식** 대화 상자가 표시 되 면 검사 되는 변수의 이름이 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)에 텍스트로 전송 됩니다. 이렇게 하면 구문 분석 된 식 (이 경우 변수)을 나타내는 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 개체가 반환 됩니다. 그런 다음 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 를 호출 하 여 `IDebugProperty2` 변수의 값과 형식 뿐만 아니라 해당 이름을 나타내는 개체를 생성 합니다. 표시 되는 정보입니다.
@@ -53,7 +53,7 @@ ms.locfileid: "99921417"
 
  [키 식 계산기 인터페이스](../../extensibility/debugger/key-expression-evaluator-interfaces.md) 실행 컨텍스트와 함께 EE를 작성할 때 필요한 중요 한 인터페이스에 대해 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)
 - [로컬의 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)

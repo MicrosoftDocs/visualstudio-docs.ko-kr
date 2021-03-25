@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6b1c30b2da2862e17a1ebf16cc41008341127c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165854"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075759"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 이 인터페이스는 스택 프레임 속성이 나 일부 다른 속성에 대 한 참조를 나타냅니다.
@@ -26,7 +26,7 @@ ms.locfileid: "102165854"
 > [!NOTE]
 > `IDebugReference2` 는 나중에 사용 하도록 예약 되어 있으며 모든 메서드는를 반환 해야 `E_NOTIMPL` 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugReference2 : IUnknown
@@ -41,7 +41,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugReference2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|이 참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|문자열에서이 참조의 값을 설정 합니다.|
@@ -73,7 +73,7 @@ IDebugReference2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress interface
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f49107e4d06fa828d059ebd9916ca254882ff0a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 89e192f61e4cda809e8e6c90106cbe081392a044
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154966"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094421"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 이 인터페이스는 항목의 주소를 나타냅니다. 기호 처리기에 의해 반환 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugAddress : IUnknown
@@ -38,7 +38,7 @@ IDebugAddress : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|개체와 해당 위치를 설명 하는 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 구조체를 검색 합니다.|
 
@@ -52,6 +52,6 @@ IDebugAddress : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

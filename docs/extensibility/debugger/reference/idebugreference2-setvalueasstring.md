@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50ed4a30680b00a950653c10e807b49bf0b12a4d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9eb557adcd9748f559d0d0c27877b84343c8fc98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168952"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075772"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-문자열에서 참조의 값을 설정 합니다. 나중에 사용하기 위해 예약되어 있습니다.
+문자열에서 참조의 값을 설정 합니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,5 +57,5 @@ int SetValueAsString (
 ## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

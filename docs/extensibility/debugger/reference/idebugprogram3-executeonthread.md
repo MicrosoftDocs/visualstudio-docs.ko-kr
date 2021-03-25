@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3d996fd7b8cda1d5e36322c85d49c9889dd66dd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a86bca6aa26a6bb364e9d704e79f57cef8f55395
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146004"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084391"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 디버거 프로그램을 실행 합니다. 스레드는 프로그램을 실행할 때 사용자가 보고 있는 스레드에 디버거 정보를 제공 하기 위해 반환 됩니다.
@@ -55,6 +55,6 @@ int ExecuteOnThread(
 
   에 전달 된 스레드는 `ExecuteOnThread` 취소할 단계를 결정할 때 유용 합니다. 스레드를 모르는 경우 실행을 실행 하면 모든 단계가 취소 됩니다. 스레드에 대 한 정보를 사용 하 여 활성 스레드의 단계를 취소 하기만 하면 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

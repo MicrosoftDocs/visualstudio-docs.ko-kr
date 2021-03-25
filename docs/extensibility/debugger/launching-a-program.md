@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945918"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094720"
 ---
 # <a name="launch-a-program"></a>프로그램 시작
 프로그램을 디버깅 하려는 사용자는 **F5** 키를 눌러 IDE에서 디버거를 실행할 수 있습니다. 그러면 다음과 같이 IDE에서 디버그 엔진 (DE)에 연결 하는 일련의 이벤트가 시작 됩니다. 그러면 프로그램에 연결 되거나 연결 됩니다.
@@ -27,7 +27,7 @@ ms.locfileid: "99945918"
 
 2. DE를 지정 하는 경우 DE는 운영 체제를 호출 하 여 프로그램을 시작 합니다. 프로그램을 시작 하면 프로그램의 런타임 환경이 로드 됩니다. 예를 들어 프로그램을 MSIL로 작성 하는 경우 프로그램을 실행 하기 위해 공용 언어 런타임이 호출 됩니다.
 
-    또는
+    -또는-
 
     DE를 지정 하지 않으면 포트에서 운영 체제를 호출 하 여 프로그램을 시작 합니다. 그러면 프로그램의 런타임 환경이 로드 됩니다.
 

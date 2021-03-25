@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0e4c90034d19635993196a0cd00ffcb06f26433
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8eca50eb6e828841a247ed51d7f73f61cb63e0e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171929"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084430"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 덤프를 파일에 씁니다.
@@ -55,5 +55,5 @@ int WriteDump(
 ## <a name="remarks"></a>설명
  프로그램 덤프에는 일반적으로 현재 스택 프레임, 스택 자체, 프로그램에서 실행 중인 스레드 목록 및 프로그램이 소유 하는 모든 메모리가 포함 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint errors
 - errors [Debugging SDK]
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 840fde5943cb2249bdf73cc92ca15878ae4e3890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12e8efc7fc110f3f5c20c92d97cf3692094ef6aa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943456"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055242"
 ---
 # <a name="breakpoint-errors"></a>중단점 오류
 다음은 중단점에서 코드에 바인딩하려고 하지만 실패 하는 경우의 프로세스에 대 한 설명입니다.
@@ -34,5 +34,5 @@ ms.locfileid: "99943456"
 
 4. SDM은 [IDebugErrorBreakpoint2:: GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 을 호출 하 여 오류 중단점을 바인딩하지 못한 이유를 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1799e2fd0fb992a2b60f57e668937a927a14e7bc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 02277bf84bdc12e904b2651ef5ba9fc2356d9090
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066934"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 지정 된 위치에 상대적인 지정 된 수의 명령을 디스어셈블리 스트림에서 읽기 포인터를 이동 합니다.
@@ -65,7 +65,7 @@ int Seek(
 ## <a name="remarks"></a>설명
  검색이 목록의 시작 부분 앞의 위치에 있는 경우 읽기 위치는 목록의 첫 번째 명령으로 설정 됩니다. 참조를 목록 끝 뒤의 위치로 이동 하면 읽기 위치가 목록의 마지막 명령으로 설정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
