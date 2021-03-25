@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 344ca2e9e9758aaca5a2c1e6784a36467abde73c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 74a320cbe9f2414de754b5844aa645bffb857568
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162708"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093901"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 다음에 스레드 중 하나가 실행을 시도할 때이 디버그 엔진 (DE)에서 디버그 하는 모든 프로그램의 실행을 중지 하도록 요청 합니다.
@@ -44,6 +44,6 @@ int CauseBreak();
 ## <a name="remarks"></a>설명
  이 메서드는 비동기입니다. [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 이벤트는 다음에이 메서드를 호출한 후 프로그램이 실행을 시도할 때 전송 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

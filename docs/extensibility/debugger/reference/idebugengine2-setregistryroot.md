@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetRegistryRoot
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01d43d2891b4ffb6257dfe0a367971022ebb1f99
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f754c12fc19d6ba5ed506ef3b51ee704b4160783
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153900"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084937"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 디버그 엔진 (DE)의 레지스트리 루트를 설정 합니다.
@@ -50,5 +50,5 @@ int SetRegistryRoot(
 ## <a name="remarks"></a>설명
  이 메서드는를 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 사용 하 여 레지스트리 설정을 가져오는 데 사용 하는 대체 레지스트리 루트를 지정할 수 있습니다 (예: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp").
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

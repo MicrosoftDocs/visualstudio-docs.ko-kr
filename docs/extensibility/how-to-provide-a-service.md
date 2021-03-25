@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8391d6d08214f915d136f80130cf9167573c14eb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069896"
 ---
 # <a name="how-to-provide-a-service"></a>방법: 서비스 제공
 VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 수 있습니다. 서비스를 제공 하려면 VSPackage이 서비스를 Visual Studio에 등록 하 고 서비스를 추가 해야 합니다.
@@ -140,7 +140,7 @@ VSPackage는 다른 Vspackage에서 사용할 수 있는 서비스를 제공할 
 
      값은 `helloString` "Hello" 여야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 서비스 가져오기](../extensibility/how-to-get-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

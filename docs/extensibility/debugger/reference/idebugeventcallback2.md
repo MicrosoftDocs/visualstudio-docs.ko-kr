@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d00c970c522adf232f9a18b762c7d6cf3cf3b794
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084898"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 이 인터페이스는 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 디버그 이벤트를 보내는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugEventCallback2 : IUnknown
@@ -38,7 +38,7 @@ IDebugEventCallback2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEventCallback2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|디버깅 이벤트에 대 한 알림을 SDM에 보냅니다.|
 
@@ -54,7 +54,7 @@ IDebugEventCallback2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [연결](../../../extensibility/debugger/reference/idebugprogram2-attach.md)

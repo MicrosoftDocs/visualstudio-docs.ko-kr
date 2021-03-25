@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetServer
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d5bfd242cd3f441bf094f94e41a78e240f1ec46
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e26356b01a04d736f9131c2762c897b6ce258997
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162981"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077462"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 이 메서드는이 포트가 있는 서버에 대 한 인터페이스를 가져옵니다.
@@ -50,6 +50,6 @@ int GetServer(
 ## <a name="remarks"></a>설명
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) 는 Visual Studio에서 구현 되며 포트가 있는 서버를 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

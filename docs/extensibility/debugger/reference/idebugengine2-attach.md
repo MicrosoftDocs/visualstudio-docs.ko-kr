@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38275cc623fcb8b30646c9d84ef194f584369ef2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160150"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093914"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 프로그램 또는 프로그램에 디버그 엔진 (DE)을 연결 합니다. DE-DE가 in-process로 실행 중인 경우 세션 디버그 관리자 (SDM)에 의해 호출 됩니다.
@@ -90,7 +90,7 @@ int Attach(
 
    또는에 지정 된 배열에서 프로그램 노드의 메서드를 호출 하기 전에 `pProgram` , `rgpProgramNodes` 필요한 경우 가장을 사용 하도록 설정 해야 합니다 `IDebugProgram2` . 그러나 일반적으로이 단계는 필요 하지 않습니다. 자세한 내용은 [보안 문제](../../../extensibility/debugger/security-issues.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

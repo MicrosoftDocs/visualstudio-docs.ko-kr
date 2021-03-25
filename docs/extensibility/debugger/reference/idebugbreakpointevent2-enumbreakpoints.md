@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ee18b1e24730b003e9b5cecaa0eac9bbdd87a913
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143357"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054506"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 현재 코드 위치에서 발생 하는 모든 중단점에 대 한 열거자를 만듭니다.
@@ -50,6 +50,6 @@ int EnumBreakpoints(
 ## <a name="remarks"></a>설명
  특정 위치의 모든 중단점이 특정 시간에 발생 하는 것은 아닙니다. 예를 들어 조건이 있는 중단점은 조건이 충족 될 때까지 발생 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

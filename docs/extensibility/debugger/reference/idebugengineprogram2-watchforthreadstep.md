@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eaf02e07bebbbfd711d99ef7605befbdce1f9376
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ddf7de557a5059a83aabdbfad7045e8dacbc71b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153419"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093836"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 지정 된 스레드에서 실행을 감시 하거나 실행에 대 한 감시를 중지 합니다.
@@ -67,6 +67,6 @@ int WatchForThreadStep(
 
  이 메서드는 동일한 스레드 단계별 실행에만 적용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8601be6a1c87fcad10c6e5260e791fcf2ce42f01
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 41d004a9b226646dd1196f1debc244cdf11efe32
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153341"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092581"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 이 메서드는 해당 값이 지정 된 열거형 상수의 이름을 가져옵니다.
@@ -55,5 +55,5 @@ int GetStringFromValue(
 ## <a name="remarks"></a>설명
  동일한 값에 연결 된 이름이 둘 이상 있는 경우 열거형에 정의 된 첫 번째 이름이 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

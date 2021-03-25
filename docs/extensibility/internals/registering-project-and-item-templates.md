@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6f4abe3a8632f4fe9208922aee1ccd92da3dab5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837252"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062696"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 프로젝트 형식은 프로젝트 및 프로젝트 항목 템플릿이 있는 디렉터리를 등록 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 형식과 연결 된 등록 정보를 사용 하 여 **새 프로젝트 추가** 및 **새 항목 추가** 대화 상자에 표시할 항목을 결정 합니다.
@@ -39,7 +39,7 @@ ms.locfileid: "99837252"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|이름|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|이 종류의 프로젝트 기본 이름입니다.|
 |DisplayName|REG_SZ|패키지에 등록 된 위성 DLL에서 검색할 이름의 리소스 ID입니다.|
@@ -57,7 +57,7 @@ ms.locfileid: "99837252"
 "SortPriority"=dword:00000064
 ```
 
-| 이름 | Type | Description |
+| Name | Type | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 항목 템플릿 추가의 리소스 ID입니다. |
 | 템플릿 디렉터리 | REG_SZ | **새 항목 추가** 마법사의 대화 상자에 표시 되는 프로젝트 항목의 경로입니다. |
@@ -84,7 +84,7 @@ ms.locfileid: "99837252"
 "SortPriority"=dword:00000064
 ```
 
-|이름|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|**파일에서 찾기** 대화 상자에서 필터를 일반 필터 중 하나로 만듭니다. 공통 필터는 필터 목록에 나열 된 필터 보다 먼저 표시 됩니다.|
 |CommonOpenFilesFilter|REG_DWORD|**파일 열기** 대화 상자에서 필터를 일반 필터 중 하나로 만듭니다. 공통 필터는 필터 목록에 나열 된 필터 보다 먼저 표시 됩니다.|
@@ -118,9 +118,9 @@ ms.locfileid: "99837252"
 
  \WizardFiles
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)
-- [마법사로](../../extensibility/internals/wizards.md)
+- [마법사](../../extensibility/internals/wizards.md)
 - [응용 프로그램 지역화](../../ide/globalizing-and-localizing-applications.md)
 - [일반적으로 프로젝트를 확장하는 데 사용되는 개체에 대한 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

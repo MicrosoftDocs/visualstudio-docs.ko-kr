@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetPortNotify
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd0d49275188eed1cebb7b1af3ee4dfcbb79cbe4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ed43d96a7035dbd9e75a8e64a23e556997e087c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150655"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077475"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 이 메서드는이 포트에 대 한 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 인터페이스를 가져옵니다.
@@ -50,6 +50,6 @@ int GetPortNotify(
 ## <a name="remarks"></a>설명
  일반적으로 `QueryInterface` [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 인터페이스를 구현 하는 개체에서 메서드를 호출 하 여 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 인터페이스를 가져옵니다. 그러나 원하는 인터페이스가 다른 개체에서 구현 되는 경우도 있습니다. 이 메서드는 이러한 상황을 숨기고 `IDebugPortNotify2` 가장 적절 한 개체에서 인터페이스를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

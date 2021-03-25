@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 39efb082f8a551ea016e856ba45c9dbb4e8eed0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d50624dc4c0d96c20323afb3c7d065121a4baacb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850702"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069974"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션
 
@@ -192,7 +192,7 @@ Excel 시트에는 **구성 요소 이름, 구성 요소** **,** **버전** 및 
 
 모든 참조에 대해 먼저 핵심 편집기 (VisualStudio. CoreEditor) 구성 요소에 있는 항목을 확인 합니다.  최소한 핵심 편집기 구성 요소를 모든 확장의 필수 구성 요소로 지정 해야 합니다. 핵심 편집기에 없는 왼쪽에 있는 참조의 경우 **이진 파일/파일 이름** 섹션에 필터를 추가 하 여 해당 참조의 하위 집합이 있는 구성 요소를 찾습니다.
 
-예:
+예제:
 
 * 디버거 확장이 있고 프로젝트에 *VSDebugEng.dll* 및 *VSDebug.dll* 에 대 한 참조가 있음을 알고 있는 경우 **이진 파일/파일 이름** 헤더에서 필터 단추를 클릭 합니다.  "VSDebugEng.dll"을 검색 하 고 *확인을* 선택 합니다.  그런 다음 **이진 파일/파일 이름** 헤더에서 필터 단추를 다시 클릭 하 고 "VSDebug.dll"를 검색 합니다.  **필터링 할 현재 선택 항목 추가** 확인란을 선택 하 고 **확인** 을 선택 합니다.  이제 **구성 요소 이름을** 살펴보고 확장 형식과 가장 관련이 있는 구성 요소를 찾습니다. 이 예제에서는 Just-in-time 디버거를 선택 하 고 source.extension.vsixmanifest에 추가 합니다.
 * 프로젝트가 디버거 요소를 처리 하는 것을 알고 있는 경우 필터 검색 상자에서 "디버거"를 검색 하 여 해당 이름에 디버거가 포함 된 구성 요소를 확인할 수 있습니다.

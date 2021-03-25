@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2 interface
 ms.assetid: cebe649f-1c77-4d33-854f-30d4f00eceb4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150ede0d3063fa8905b7cdfa5d67da16c0f68eed
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3689f667508f6453f0e4cd4181d14f42ca7b7541
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152236"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077306"
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102152236"
 
  식 계산기 (EE)의 향상 된 버전을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
@@ -36,7 +36,7 @@ IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
 ## <a name="methods"></a>메서드
  [Idebugexpressionevaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|고유 식별자가 지정 된 서비스 개체를 검색 합니다.|
 |[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|지정 된 기호 공급자에 지정 된 모듈을 미리 로드 합니다.|

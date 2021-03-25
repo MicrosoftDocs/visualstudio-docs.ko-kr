@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ee646b48a36a2b2c5d707eab6c5a32145d55439
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c0a58dd5893c3235ded9c7eeb5f5d47e3ddcb380
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093849"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 지정 된 프로그램이 atypically 종료 되었으며 DE가 프로그램에 대 한 모든 참조를 정리 하 고 프로그램 소멸 이벤트를 전송 해야 함을 디버그 엔진 (DE)에 알립니다.
@@ -52,7 +52,7 @@ int DestroyProgram(
 
  `E_NOTIMPL`디버깅이 디버깅 중인 프로그램과 동일한 프로세스에서 실행 되는 경우이 메서드는 구현 되지 않습니다 (반환). 이 메서드는 제거를 SDM과 동일한 프로세스에서 실행 하는 경우에만 구현 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

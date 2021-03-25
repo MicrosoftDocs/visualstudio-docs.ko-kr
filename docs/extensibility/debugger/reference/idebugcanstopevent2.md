@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e73d881b1aef09d13d7b7138348d5198c8322694
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085015"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 이 인터페이스는 현재 코드 위치에서 중지할지 여부를 세션 디버그 관리자 (SDM)에 게 표시 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugCanStopEvent2 : IUknown
@@ -40,7 +40,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCanStopEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|이 이벤트의 이유를 가져옵니다.|
 |[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|디버그할 프로그램을이 이벤트의 위치에서 중지할지, 아니면 중지 이유를 설명 하는 이벤트를 보낼지, 아니면 계속 실행할지를 지정 합니다.|
@@ -57,6 +57,6 @@ IDebugCanStopEvent2 : IUknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

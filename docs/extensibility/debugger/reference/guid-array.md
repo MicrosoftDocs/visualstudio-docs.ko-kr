@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbdc8465bef0795649fef5b169a221a3e7b7178c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 504c917d9fb2b1e2cd15ac8154faf70eaf98beec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162422"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054584"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 사용 가능한 디버그 엔진에 대 한 고유 식별자 배열을 설명 합니다.
@@ -59,6 +59,6 @@ public struct GUID_ARRAY
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

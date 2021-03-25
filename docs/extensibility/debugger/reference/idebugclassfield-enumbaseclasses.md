@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumBaseClasses method
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d5ef86e5f4fea89b376404703000c8bd7e861a0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ba31ead00ad2312b66273a2ddfaeebd252e0981
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150720"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084989"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 이 클래스의 기본 클래스에 대 한 열거자를 만듭니다.
@@ -60,6 +60,6 @@ class MyClass : Level2 { }
 
  열거형은,, 순서로 기본 클래스를 반환 합니다 `Level2` `Level1` `Root` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

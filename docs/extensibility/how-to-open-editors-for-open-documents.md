@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfcd44a03b110ae514c2de36092ee07fd0c35e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850676"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069922"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>방법: 열려 있는 문서에 대 한 편집기 열기
 프로젝트가 문서 창을 열기 전에 먼저 프로젝트에서 다른 편집기의 문서 창에 파일이 이미 열려 있는지 여부를 확인 해야 합니다. 프로젝트 관련 편집기에서 파일을 열거나에 등록 된 표준 편집기 중 하나를 사용할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -54,7 +54,7 @@ ms.locfileid: "99850676"
 
 2. 문서가 열려 있지 않으면 [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)의 단계를 완료 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 항목 열기 및 저장](../extensibility/internals/opening-and-saving-project-items.md)
 - [방법: 프로젝트 관련 편집기 열기](../extensibility/how-to-open-project-specific-editors.md)
 - [방법: 표준 편집기 열기](../extensibility/how-to-open-standard-editors.md)

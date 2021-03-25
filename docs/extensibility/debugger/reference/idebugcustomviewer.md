@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d262869d24c50c543159952506a40be753b4be4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3c44706549d7d638a8fbf3686de57780ffa6bf4e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150694"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077553"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 이 인터페이스를 사용 하면 식 계산기 (EE)에서 필요한 모든 형식으로 속성 값을 표시할 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugCustomViewer : IUknown
@@ -38,7 +38,7 @@ COM의 함수에 대 한 호출은 `CoCreateInstance` 이 인터페이스를 인
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|지정 된 값을 표시 하는 데 필요한 모든 항목을 수행 합니다.|
 
@@ -58,7 +58,7 @@ COM의 함수에 대 한 호출은 `CoCreateInstance` 이 인터페이스를 인
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 속성에서 사용자 지정 뷰어를 포함 하는 경우 속성에서 첫 번째 사용자 지정 뷰어를 가져오는 방법을 보여 줍니다.
 
 ```cpp
@@ -105,7 +105,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

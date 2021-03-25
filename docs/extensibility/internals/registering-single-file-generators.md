@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b2cb27baaca465096a14c836b0dfc7ebc43d42e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee110defb06d308c017230a36cebc2b04b3c63b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837248"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062683"
 ---
 # <a name="registering-single-file-generators"></a>단일 파일 생성기 등록
 에서 사용자 지정 도구를 사용할 수 있도록 하려면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 등록 해야 합니다. 이렇게 하면 해당 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인스턴스화하고 특정 프로젝트 형식에 연결할 수 있습니다.
@@ -46,11 +46,11 @@ ms.locfileid: "99837248"
 
    - CLSID
 
-        필수 사항입니다. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
+        필수 요소. 을 구현 하는 COM 구성 요소의 클래스 라이브러리 식별자를 지정 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .
 
    - GeneratesDesignTimeSource
 
-        필수 사항입니다. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
+        필수 요소. 이 사용자 지정 도구에서 생성 한 파일의 형식을 비주얼 디자이너에서 사용할 수 있는지 여부를 나타냅니다. 비주얼 디자이너에서 사용할 수 없는 형식에 대해이 매개 변수의 값이 0 (0) 이거나 비주얼 디자이너에서 사용할 수 있는 형식에 대해 1 (1) 이어야 합니다.
 
    > [!NOTE]
    > 사용자 지정 도구를 사용할 수 있도록 하려는 각 언어에 대해 사용자 지정 도구를 별도로 등록 해야 합니다.
@@ -69,7 +69,7 @@ ms.locfileid: "99837248"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [비주얼 디자이너에 형식 노출](../../extensibility/internals/exposing-types-to-visual-designers.md)

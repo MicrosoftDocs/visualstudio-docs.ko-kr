@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa06a4c88afecfebbd0b1258d7f1830dfdaad5ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160163"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093875"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 디버그 엔진 (DE)에서 보류 중인 중단점을 만듭니다.
@@ -59,7 +59,7 @@ int CreatePendingBreakpoint(
 
 사용자가 코드 줄에 중단점을 설정 하면 DE를 사용 하 여이 코드에 해당 하는 문서의 가장 가까운 줄에 중단점을 바인딩할 수 있습니다. 이렇게 하면 사용자가 여러 줄 문의 첫 번째 줄에 중단점을 설정 하 고 마지막 줄에 바인딩할 수 있습니다 (모든 코드가 디버그 정보에서 특성을 사용 하는 경우).
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . 그러면의 DE 구현이 `IDebugEngine2::CreatePendingBreakpoint` 각 프로그램에서이 메서드 구현에 대 한 모든 호출을 전달할 수 있습니다.
 
 ```
@@ -73,7 +73,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

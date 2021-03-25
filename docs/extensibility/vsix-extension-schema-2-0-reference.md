@@ -8,17 +8,17 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904547"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062293"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합니다. 파일 형식은 스키마의 영향을 받습니다. 이 스키마의 버전 2.0에서는 사용자 지정 형식 및 특성을 추가할 수 있습니다.  매니페스트의 스키마를 확장할 수 있습니다. 매니페스트 로더는 인식할 수 없는 XML 요소와 특성을 무시 합니다.
@@ -114,7 +114,7 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 
     - VisualStudio
 
-    - 내 셸. 앱
+    - My.Shell.App
 
   - `Version` -이 특성은이 SKU의 최소 및 최대 지원 버전을 포함 하는 버전 범위를 지정 합니다. 패키지에서 지 원하는 Sku 버전을 자세히 확인할 수 있습니다. 버전 범위 표기법은 [10.0-11.0]입니다. 여기서
 
@@ -221,6 +221,6 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 확장 제공](../extensibility/shipping-visual-studio-extensions.md)

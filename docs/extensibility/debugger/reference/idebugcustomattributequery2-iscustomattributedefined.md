@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c25a0357a1b0b8768f02fd7eb903c30943964445
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 646fe46f9d83a320423136b8601ee56b3f4ac583
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168298"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077592"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 사용자 지정 특성이 이름으로 존재 하는지 여부를 확인 합니다.
@@ -50,5 +50,5 @@ int IsCustomAttributeDefined(
 ## <a name="remarks"></a>설명
  사용자 지정 특성과 연결 된 특성 바이트를 가져오려면 [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

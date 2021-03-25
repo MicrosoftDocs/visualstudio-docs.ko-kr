@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6505cd2309323d7fe91f2c807af33555c3575fd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 72457b1b8931d028f555e7f9354f34b133fa79bb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152899"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084781"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 이 이벤트를 발생 시킨 예외에 대 한 자세한 설명을 가져옵니다.
@@ -51,7 +51,7 @@ int GetException(
 
  [C + + 전용] 호출자는 구조체에서 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체를 해제 하는 것 외에도 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 구조에서 문자열을 해제 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

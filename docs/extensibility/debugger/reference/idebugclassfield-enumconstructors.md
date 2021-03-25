@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62b196b2fed8a3919968c72a7785a884196a86da
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8efba9ecb25259b6aa4998a1f22fedf443c1281a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084976"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 이 클래스의 생성자에 대 한 열거자를 만듭니다.
@@ -57,7 +57,7 @@ int EnumConstructors(
 
  일반적으로 생성자 목록에는 컴파일러에서 제공 하는 기본 생성자가 포함 되어 있지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

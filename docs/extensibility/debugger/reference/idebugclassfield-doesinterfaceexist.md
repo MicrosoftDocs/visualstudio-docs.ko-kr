@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4248b653f5eea43a91d0c78a593431d53f5e68b8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60a9a64e408f182476d6f34b19fea45f6fe8ad48
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173470"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085027"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 특정 인터페이스가 클래스에 정의 되어 있는지 여부를 확인 합니다.
@@ -50,5 +50,5 @@ int DoesInterfaceExist(
 ## <a name="remarks"></a>설명
  적용 되는이 메서드는 모든 인터페이스의 열거형을 가져오고 목록에서 일치 하는 인터페이스를 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
