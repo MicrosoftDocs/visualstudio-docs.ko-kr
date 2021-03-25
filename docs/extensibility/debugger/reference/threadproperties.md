@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0707cb5da4c63ffd686f22fa691c103c954478c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225265"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070858"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 스레드의 속성을 설명 합니다.
@@ -52,7 +52,7 @@ public struct THREADPROPERTIES {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `dwFields`\
  이 구조체에서 유효한 필드를 설명 하는 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 열거형의 플래그 조합입니다.
 
@@ -84,7 +84,7 @@ public struct THREADPROPERTIES {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

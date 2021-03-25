@@ -5,23 +5,23 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943246"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090644"
 ---
 # <a name="manage-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 
 유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1를 모두 대상으로 하는 앱으로, 개발자가 두 플랫폼에서 코드와 기타 자산을 사용할 수 있도록 합니다. 공유 코드와 리소스는 공유 프로젝트에 유지 되는 반면 플랫폼별 코드와 리소스는 서로 다른 프로젝트에 유지 되 고, 다른 하나는 Windows 용으로 유지 되 고 다른 하나는 Windows Phone 합니다. 유니버설 Windows 앱에 대 한 자세한 내용은 [유니버설 windows 앱](/windows/uwp/get-started/create-uwp-apps)을 참조 하세요. 프로젝트를 관리 하는 Visual Studio 확장은 유니버설 Windows 앱 프로젝트에 단일 플랫폼 앱과 다른 구조가 있음을 인식 해야 합니다. 이 연습에서는 공유 프로젝트를 탐색 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -31,7 +31,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 2. *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 에 대 한 참조를 추가 하 고 **확장** 섹션에서 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* 합니다.
 
-3. *TestUniversalProject.cs* 를 열고 다음 지시문을 추가 합니다 `using` .
+3. *TestUniversalProject* 를 열고 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
       이 절차에서는 공유 프로젝트 및 플랫폼 프로젝트에 이벤트 수신기를 추가 합니다. 그런 다음 공유 프로젝트에서 한 파일의 이름을 바꾸고 플랫폼 프로젝트에서 다른 파일의 이름을 바꾸면 각 이름 바꾸기 작업에 대해 발생 하는 이벤트를 확인할 수 있습니다.
 
-2. 이벤트 수신기를 추가 합니다. 프로젝트에 새 클래스 파일을 추가 하 고 *HierarchyEventListener.cs* 를 호출 합니다.
+2. 이벤트 수신기를 추가 합니다. 프로젝트에 새 클래스 파일을 추가 하 고이 파일을 *계층* 을 호출 합니다.
 
-3. *HierarchyEventListener.cs* 파일을 열고 다음 using 지시문을 추가 합니다.
+3. *계층 Eventlistener .cs* 파일을 열고 다음 using 지시문을 추가 합니다.
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱을 만들고 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출** 을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 공유 프로젝트의 첫 번째 항목 이름 ( *app.xaml* 파일이 될 것으로 간주 됨)은 변경 해야 하며 이벤트가 발생 한 것을 확인 해야 합니다 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . 이 경우 *.xaml* 의 이름을 바꾸면 *App.xaml.cs* 의 이름도 변경 되기 때문에 4 개의 이벤트 (각 플랫폼 프로젝트에 대해 2 개)가 표시 되어야 합니다. DTE 이벤트는 공유 프로젝트의 항목을 추적 하지 않습니다. 두 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 (플랫폼 프로젝트 마다 하나씩)가 표시 되지만 이벤트는 표시 되지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> .
+11. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 c # 유니버설 허브 앱을 만들고 **도구** 메뉴로 이동 하 여 **TestUniversalProject 호출** 을 클릭 하 고 일반 출력 창에서 텍스트를 선택 합니다. 공유 프로젝트의 첫 번째 항목 이름 ( *app.xaml* 파일이 될 것으로 간주 됨)은 변경 해야 하며 이벤트가 발생 한 것을 확인 해야 합니다 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> . 이 경우에는 *app.xaml* 의 이름을 바꾸면 *응용 프로그램* 의 이름도 변경 되기 때문에 4 개의 이벤트 (각 플랫폼 프로젝트에 대해 2 개)가 표시 되어야 합니다. DTE 이벤트는 공유 프로젝트의 항목을 추적 하지 않습니다. 두 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트 (플랫폼 프로젝트 마다 하나씩)가 표시 되지만 이벤트는 표시 되지 않습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> .
 
 12. 이제 플랫폼 프로젝트에서 파일 이름을 바꾸고, 발생 하는 이벤트의 차이를 확인할 수 있습니다. 를 호출한 후에 다음 코드를 추가 `ShowMessageBox` `ModifyFileName` 합니다.
 

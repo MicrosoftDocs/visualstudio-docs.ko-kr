@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a39987e13ed3af4bc19c3a80baf0049467daf3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057652"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
 설정 저장소를 사용 하 여 사용 가능한 모든 서비스를 찾거나 특정 서비스가 설치 되어 있는지 여부를 확인할 수 있습니다. 서비스 클래스의 형식을 알아야 합니다.
@@ -24,7 +24,7 @@ ms.locfileid: "99968127"
 
 1. 이라는 VSIX 프로젝트를 만든 `FindServicesExtension` 다음 이라는 사용자 지정 명령을 추가 `FindServicesCommand` 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
 
-2. *FindServicesCommand.cs* 에서 다음 using 지시문을 추가 합니다.
+2. *Findservicescommand. cs* 에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Collections.Generic;

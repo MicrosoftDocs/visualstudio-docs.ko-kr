@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 357644f67da9a3bbc468d708cf39e44f737dbf0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946594"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090423"
 ---
 # <a name="open-a-dynamic-tool-window"></a>동적 도구 창 열기
 도구 창은 일반적으로 메뉴의 명령 또는 해당 하는 바로 가기 키에서 열립니다. 그러나 때때로 특정 UI 컨텍스트가 적용 될 때마다 열리는 도구 창이 필요할 수 있으며 UI 컨텍스트가 더 이상 적용 되지 않는 경우 닫힙니다. 이러한 유형의 도구 창은 *동적* 또는 *자동 표시* 라고 합니다.
@@ -34,9 +34,9 @@ ms.locfileid: "99946594"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>동적 도구 창을 열려면
 
-1. **DynamicToolWindow** 라는 VSIX 프로젝트를 만들고 *DynamicWindowPane.cs* 라는 도구 창 항목 템플릿을 추가 합니다. 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
+1. **DynamicToolWindow** 라는 VSIX 프로젝트를 만들고 *DynamicWindowPane* 라는 도구 창 항목 템플릿을 추가 합니다. 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
-2. *DynamicWindowPanePackage.cs* 파일에서 DynamicWindowPanePackage 선언을 찾습니다. <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>및 특성을 추가 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 하 여 도구 창을 등록 합니다.
+2. *DynamicWindowPanePackage* 파일에서 DynamicWindowPanePackage 선언을 찾습니다. <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>및 특성을 추가 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 하 여 도구 창을 등록 합니다.
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]

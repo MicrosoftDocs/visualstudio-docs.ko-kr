@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa3712a12440f5d177f54544110bc8fa5d2e03ac
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 071af90af5fe22d6f6cfa662458be660edc5d39f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064828"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 이 속성에 연결 된 고유 ID를 소멸 시킵니다 .이는 호출자가이 속성을 다른 모든 속성에서 고유 하 게 식별 하는 데 더 이상 관심이 없음을 나타냅니다.
@@ -46,6 +46,6 @@ int DestroyObjectID();
 
  호출자가이 속성이 다른 모든 속성에서 고유 하 게 식별 되는지 확인 하려는 경우 [Createobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) 메서드를 호출 하 여 고유한 id를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

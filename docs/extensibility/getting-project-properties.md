@@ -8,23 +8,23 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968192"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057665"
 ---
 # <a name="get-project-properties"></a>프로젝트 속성 가져오기
 
 이 연습에서는 도구 창에 프로젝트 속성을 표시 하는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -38,7 +38,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>도구 창에 프로젝트 속성을 표시 하려면
 
-1. ProjectPropertiesToolWindowCommand.cs 파일에서 다음 using 지시문을 추가 합니다.
+1. ProjectPropertiesToolWindowCommand 파일에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
     ```
 
-2. *ProjectPropertiesToolWindowControl* 에서 기존 단추를 제거 하 고 도구 상자에서 TreeView를 추가 합니다. *ProjectPropertiesToolWindowControl.xaml.cs* 파일에서 클릭 이벤트 처리기를 제거할 수도 있습니다.
+2. *ProjectPropertiesToolWindowControl* 에서 기존 단추를 제거 하 고 도구 상자에서 TreeView를 추가 합니다. *ProjectPropertiesToolWindowControl* 파일에서 클릭 이벤트 처리기를 제거할 수도 있습니다.
 
-3. *ProjectPropertiesToolWindowCommand.cs* 에서 메서드를 사용 `ShowToolWindow()` 하 여 프로젝트를 열고 해당 속성을 읽은 다음 TreeView에 속성을 추가 합니다. ShowToolWindow에 대 한 코드는 다음과 같습니다.
+3. *ProjectPropertiesToolWindowCommand* 에서 메서드를 사용 하 여 `ShowToolWindow()` 프로젝트를 열고 해당 속성을 읽은 다음 TreeView에 속성을 추가 합니다. ShowToolWindow에 대 한 코드는 다음과 같습니다.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

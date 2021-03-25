@@ -10,17 +10,17 @@ helpviewer_keywords:
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0e3b95ee3c715eb21028b6c156b7a62ea82d41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a62581e036b70a10db533dc46d0787cd558afe29
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943220"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090631"
 ---
 # <a name="manage-vspackages"></a>VSPackage 관리
 대부분의 경우 프로젝트 및 항목 템플릿이 자동으로 패키지를 등록 하 고 로드 하므로 Vspackage 관리에 대해 걱정할 필요가 없습니다. 그러나 일부 경우에는 패키지를 관리 하기 위해 약간 더 배워야 할 수도 있습니다.
@@ -46,5 +46,5 @@ ms.locfileid: "99943220"
 ## <a name="troubleshoot-vspackages"></a>Vspackage 문제 해결
  로드 되지 않거나 오류가 발생 하는 Vspackage 문제를 해결 하는 방법에 대 한 자세한 정보: [문제 해결 vspackage](../extensibility/troubleshooting-vspackages.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackages](../extensibility/internals/vspackages.md)

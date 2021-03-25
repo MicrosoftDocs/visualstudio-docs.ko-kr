@@ -6,16 +6,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0ce09edd20c0c46a6b93ace77808fdfc7d5d1c5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993460"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057366"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 
@@ -132,7 +132,7 @@ Visual Studio에서는 잘 알려진 특정를 활성화할 때 Vspackage를 로
 
 지원 되는 다양 한 유형의 용어는 다음과 같습니다.
 
-|용어|설명|
+|용어|Description|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID는 UI 컨텍스트를 참조 합니다. 용어는 UI 컨텍스트가 활성화 될 때마다 true이 고, 그렇지 않으면 false입니다.|
 |HierSingleSelectionName:\<pattern>|활성 계층의 선택 항목이 단일 항목이 고 선택한 항목의 이름이 "pattern"으로 지정 된 .Net 정규식과 일치 하는 경우에는 용어가 true가 됩니다.|

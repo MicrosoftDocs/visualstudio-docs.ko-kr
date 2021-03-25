@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetReference method
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c103e8826266ddbaaa5b96f4a9aa32067893e45f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cc8a922ad29b7f6b3ecff57ee5df7ad0e7dded1d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166789"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064763"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 속성 값에 대 한 참조를 반환 합니다.
@@ -47,6 +47,6 @@ int GetReference(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드 (일반적으로 또는)가 반환 됩니다 `E_NOTIMPL` `E_GETREFERENCE_NO_REFERENCE` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

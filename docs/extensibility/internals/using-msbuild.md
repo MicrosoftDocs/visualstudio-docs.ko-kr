@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MSBuild, extensibility
 - packages, compiling with MSBuild
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8891d9674a952f0272855c8b9203109ad2e22468
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090696"
 ---
 # <a name="using-msbuild"></a>MSBuild 사용
 MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로젝트 파일을 만들기 위한 잘 정의 된 확장 가능한 XML 형식을 제공 합니다.
@@ -42,7 +42,7 @@ MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로�
 
  프로젝트별 MPF 클래스는 다음과 같습니다.
 
-|인스턴스|구현|
+|클래스|구현|
 |-----------|--------------------|
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|
@@ -55,7 +55,7 @@ MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로�
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>단일 파일 생성기 및 MSBuild 작업
  디자인 타임에만 단일 파일 생성기에 액세스할 수 있지만 디자인 타임 및 빌드 시에는 MSBuild 작업을 사용할 수 있습니다. 따라서 유연성을 최대화 하기 위해 MSBuild 작업을 사용 하 여 코드를 변환 하 고 생성 합니다. 자세한 내용은 [사용자 지정 도구](../../extensibility/internals/custom-tools.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild 참조](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [사용자 지정 도구](../../extensibility/internals/custom-tools.md)

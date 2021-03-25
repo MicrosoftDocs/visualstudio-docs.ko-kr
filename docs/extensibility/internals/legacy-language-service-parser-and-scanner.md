@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839562"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090839"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 파서는 언어 서비스의 핵심입니다. MPF (관리 되는 패키지 프레임 워크) 언어 클래스에는 표시 되는 코드에 대 한 정보를 선택 하기 위한 언어 파서가 필요 합니다. 파서는 텍스트를 어휘 토큰으로 구분 하 고 형식 및 기능으로 이러한 토큰을 식별 합니다.
@@ -47,7 +47,7 @@ namespace MyNamespace
 |=|연산자|
 |{ } ( ) ;|구분 기호|
 |MyNamespace, MyClass, MyFunction, arg1, var1|identifier|
-|MyNamespace|네임스페이스|
+|MyNamespace|namespace|
 |MyClass|class|
 |MyFunction|method|
 |arg1|매개 변수|
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  개체는 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체의 일부로 파서에 전달 되 고 새 개체가 <xref:Microsoft.VisualStudio.Package.ParseRequest> 만들어질 때마다 새 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체가 만들어집니다 <xref:Microsoft.VisualStudio.Package.ParseRequest> . 또한 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 다양 한 IntelliSense 작업을 처리 하는 데 사용 되는 개체를 반환 해야 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>개체는 구문 분석의 이유에 따라 선언 목록 및 메서드에 대 한 목록을 유지 관리 합니다. <xref:Microsoft.VisualStudio.Package.AuthoringScope>클래스를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 945d1a4d1acde0ac3fef9918123f963cf27127f1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886693"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090553"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC. SCC 파일
 IDE를 사용 하 여 소스 제어에서 Visual Studio 솔루션 또는 프로젝트를 배치한 경우 IDE는 두 가지 주요 정보를 받습니다. 이 정보는 소스 제어 플러그 인에서 문자열 형식으로 제공 됩니다. 이러한 문자열인 "지 Xpath" 및 "ProjName"은 IDE에 불투명 하지만 플러그 인에서 버전 제어의 솔루션 또는 프로젝트를 찾는 데 사용 됩니다. 일반적으로 IDE는 먼저 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)를 호출 하 여 이러한 문자열을 가져온 후 솔루션 또는 프로젝트 파일에 저장 [합니다.](../extensibility/sccopenproject-function.md) 솔루션 및 프로젝트 파일에 포함 되는 경우 사용자가 버전 제어에 있는 솔루션 및 프로젝트 파일을 분기, 포크 또는 복사 하는 경우 "포함 Xpath" 및 "ProjName" 문자열이 자동으로 업데이트 되지 않습니다. 솔루션 및 프로젝트 파일이 버전 제어에서 올바른 위치를 가리키는지 확인 하려면 사용자가 문자열을 수동으로 업데이트 해야 합니다. 문자열은 불투명 하므로 항상 업데이트 해야 하는 방법이 명확 하지 않을 수 있습니다.
@@ -74,6 +74,6 @@ IDE를 사용 하 여 소스 제어에서 Visual Studio 솔루션 또는 프로�
 
  이 섹션에 대 한 끝 구분 기호가 없습니다. 파일 이름 및 파일에 표시 되는 모든 리터럴은 scc 헤더 파일에 정의 됩니다. 자세한 내용은 [소스 제어 플러그 인을 찾기 위한 키로 사용 되는 문자열](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [소스 제어 플러그 인을 찾기 위한 키로 사용 되는 문자열](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef6940aef83ad3865385b4e39fd9cfd62b8866d7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963447"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090904"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Interop 어셈블리를 사용 하 여 명령 상태 결정
 VSPackage는 처리할 수 있는 명령의 상태를 추적 해야 합니다. 환경에서는 VSPackage 내에서 처리 된 명령이 활성화 또는 비활성화 상태가 되는 시점을 확인할 수 없습니다. VSPackage는 명령 상태 (예: **잘라내기**, **복사**, **붙여넣기** 등의 일반 명령 상태)를 환경에 알리는 것이 가장 좋습니다.
@@ -35,6 +35,6 @@ VSPackage는 처리할 수 있는 명령의 상태를 추적 해야 합니다. �
 ## <a name="status-notification-failure"></a>상태 알림 오류
  환경에 명령 상태 변경 내용에 대 한 알림을 VSPackage 하는 데 실패 하면 UI가 일관 되지 않은 상태가 될 수 있습니다. 메뉴 또는 상황에 맞는 메뉴 명령은 사용자가 도구 모음에 배치할 수 있습니다. 따라서 메뉴 또는 상황에 맞는 메뉴가 열리면 UI를 업데이트 하는 것 만으로는 충분 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [구현](../../extensibility/internals/command-implementation.md)

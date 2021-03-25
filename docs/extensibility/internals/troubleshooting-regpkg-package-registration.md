@@ -7,17 +7,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b73f968d51cb15cde910a5bcbd7e541007f22fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48e3699b095ed7b9d0e72cf7b09ad02e26ac5a51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090761"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 패키지 등록 문제 해결
 > [!NOTE]
@@ -38,6 +38,6 @@ ms.locfileid: "99959469"
 
    이전 버전의 RegPkg는 Microsoft.VisualStudio.Shell.dll 어셈블리를 사용 하 여 빌드된 패키지를 등록할 수 있습니다. 그러나 해당 어셈블리의 이후 버전을 사용 하 여 작성 된 패키지는 등록할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

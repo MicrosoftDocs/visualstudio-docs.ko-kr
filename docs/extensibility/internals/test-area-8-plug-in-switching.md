@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dbc6b9646bcdec8cbdfae9d262397eb0ff74bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848210"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090774"
 ---
 # <a name="test-area-8-plug-in-switching"></a>테스트 영역 8: 플러그 인 전환
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에는 현재 소스 제어 플러그 인을 변경 하는 UI (사용자 인터페이스)가 있습니다. 이 테스트 영역에서는 솔루션 소스 제어에 사용할 플러그 인을 선택 하는 프로세스에 대 한 테스트 사례를 제공 합니다.
@@ -54,5 +54,5 @@ ms.locfileid: "99848210"
 |----------------------------------| - | - |
 | 솔루션에 대 한 플러그 인 변경 | 1. 현재 상태로 테스트에서 플러그 인을 선택 합니다 (**도구**  ->  **옵션**  ->  **소스 제어**  ->  **플러그 인 선택**).<br />2. 새 프로젝트 및 솔루션을 만듭니다.<br />3. 솔루션을 소스 제어에 추가 합니다.<br />4. 소스 제어 **변경** 대화 상자를 사용 하 여 소스 제어에서 솔루션의 바인딩을 해제 합니다.<br />5. 다른 플러그 인을 선택 합니다 (예: [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ).<br />6. 언로드된 경우 디스크에서 솔루션을 다시 로드 합니다.<br />7. 솔루션을 소스 제어에 추가 합니다.<br />8. 소스 제어에서 솔루션 바인딩 해제 ( **소스 제어 변경** 대화 상자 사용)<br />9. 테스트에서 플러그 인을 다시 선택 합니다.<br />10. 언로드된 경우 디스크에서 솔루션을 다시 로드 합니다.<br />11. **소스 제어 변경** 대화 상자를 사용 하 여 솔루션을 원래 위치에 바인딩합니다. | 선택한 플러그 인을 사용 하 여 솔루션을 소스 제어에 추가 합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

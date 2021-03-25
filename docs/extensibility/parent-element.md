@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34b857d26be49bb98096c6b0ba85ff8049290b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ac914fd3245982af89facb97ff2d528b410da99
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090384"
 ---
 # <a name="parent-element"></a>부모 요소
 단추나 콤보 상자의 부모는 그룹 일 수만 있습니다. 메뉴 또는 그룹의 부모는 다른 메뉴 또는 그룹 일 수 있습니다. [Commandplacement 요소](../extensibility/commandplacement-element.md)에서이 요소는 필수입니다. 다른 모든 경우에는 선택 사항입니다. 이 요소를 생략 하면의 부모가 암시 됩니다 `Group_Undefined:0` .
@@ -36,8 +36,8 @@ ms.locfileid: "99968985"
 
 |attribute|Description|
 |---------------|-----------------|
-|guid|필수 사항입니다. GUID/ID 명령 식별자의 GUID입니다.|
-|id|필수 사항입니다. GUID/ID 명령 식별자의 ID입니다.|
+|guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
+|id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -51,5 +51,5 @@ ms.locfileid: "99968985"
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴를 정의 합니다.|
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

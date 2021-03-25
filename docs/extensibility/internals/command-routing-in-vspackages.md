@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing, Visual Studio SDK
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05612f9d15c3670411a7901157570fbb3e315a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ab5e7989fdeb46592f38cb7e55854885e076d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939996"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057301"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage의 명령 라우팅
 명령은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 실행 되는 컨텍스트를 기반으로에서 라우팅됩니다. 초기 컨텍스트에서 전역 컨텍스트로 외부로 라우팅됩니다.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89a3ed681f51b392e076cff0fcb06b2f868c0aa5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb5d0fe0e4812d66f6981ea58dfb51f19336d98b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888994"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090722"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 제거
 대부분의 경우에는 VSPackage를 설치 하기 위해 수행 하는 작업을 "실행 취소" 하 여 VSPackage를 제거할 수 Windows Installer. [설치 후 실행 해야 하는 명령](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 에서 설명한 사용자 지정 작업은 제거 후에도 실행 해야 합니다. devenv.exe 호출은 설치 및 제거에 대해 모두 InstallFinalize 표준 작업 바로 전에 발생 하므로 CustomAction 및 InstallExecuteSequence 테이블 항목은 두 경우 모두 제공 됩니다.
@@ -40,6 +40,6 @@ ms.locfileid: "99888994"
 > [!NOTE]
 > `Installed` VSPackage가 시스템에 이미 설치 되어 있음을 감지 하면 속성 Windows Installer 설정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Windows Installer](/previous-versions/ee231230(v=vs.100))
 - [시스템 요구 사항 검색](../../extensibility/internals/detecting-system-requirements.md)

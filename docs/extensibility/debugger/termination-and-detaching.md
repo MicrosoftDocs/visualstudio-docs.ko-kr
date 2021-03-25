@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, termination events
 - debug engines, detaching from programs
 ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6ac3e8517ee99dcd52261eb87b6cee3954793d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8662809b50dbfec3046af1d0d6b6fa151c3a33e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895897"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057834"
 ---
 # <a name="termination-and-detaching"></a>종료 및 분리
 다음 섹션에서는 일반적인 종료에 대해 설명 합니다.
@@ -28,5 +28,5 @@ ms.locfileid: "99895897"
 
  정상적인 종료를 구현 하려면 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 을 보내야 합니다. 정상적인 종료를 수행 하려면 [IDebugProgramDestroyEvent2:: GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 메서드를 실행 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

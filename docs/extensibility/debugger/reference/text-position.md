@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7793870c91279b219a450463c921339b76565a62
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1b99b5dcede7f0e40e0ff77d1e3f7f64b5943c18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070897"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 지정 된 텍스트의 줄 및 열 위치를 설명 합니다.
@@ -42,7 +42,7 @@ public struct TEXT_POSITION {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 `dwLine`\
 소스 파일의 줄 인덱스입니다.
@@ -84,7 +84,7 @@ public struct TEXT_POSITION {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

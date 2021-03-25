@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65da477c47e88699cc479f632843f839b3d02f9d
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 933810ac5b1e0ba34edf7cfe8d4303180c862fe2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469777"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083910"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 이 인터페이스는 다음에 대 한 지원을 제공 합니다.
@@ -46,7 +46,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  에서 상속 된 메서드 외에도 `IDebugProperty2` 인터페이스는 `IDebugProperty3` 다음 메서드를 노출 합니다.
 
-|방법|Description|
+|메서드|Description|
 |------------|-----------------|
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|속성과 연결 된 문자열의 길이를 반환 합니다.|
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|사용자가 제공한 버퍼의 문자열을 반환 합니다.|
@@ -66,7 +66,7 @@ IDebugProperty3 : IDebugProperty2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
