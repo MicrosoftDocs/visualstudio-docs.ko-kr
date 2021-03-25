@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939541"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805993"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -56,6 +56,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 | **Flask 웹 프로젝트** | 정적 파일이 *static* 폴더에 포함되는 앱을 생성합니다. *views.py* 의 코드는 *templates* 폴더에 포함된 Jinja 엔진을 사용하는 페이지 템플릿을 사용하여 라우팅을 처리합니다. *runserver.py* 파일은 시작 코드를 제공합니다. [Flask 알아보기 4단계](learn-flask-visual-studio-step-04-full-flask-project-template.md)를 참조하세요. |
 | **Flask/Jade 웹 프로젝트** | **Flask 웹 프로젝트** 템플릿과 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진용 Jade 확장을 사용합니다. |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>설문 조사 그룹
 
 **설문 조사 \<framework> 웹 프로젝트** 템플릿은 사용자가 다양한 설문 조사 질문에 투표할 수 있는 시작 웹앱을 만듭니다. 각 앱은 데이터베이스를 사용하여 설문 조사 및 사용자 응답을 관리하는 **웹** 프로젝트 템플릿의 구조를 기반으로 합니다. 앱에는 *samples.json* 파일에서 설문 조사를 로드하는 적절한 데이터 모델과 특수한 앱 페이지(/seed)가 포함됩니다.
@@ -66,6 +67,7 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 | **설문 조사 Django 웹 프로젝트** | 세 개의 페이지와 SQLite 데이터베이스를 사용하여 Django 프로젝트 및 Django 앱을 생성합니다. 인증된 관리자가 설문 조사를 만들고 관리할 수 있도록 하는 Django 관리 인터페이스에 대한 사용자 지정을 포함합니다. 자세한 내용은 [Django 템플릿](python-django-web-application-project-template.md) 및 [Django 알아보기 6단계](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)를 참조하세요. |
 | **설문 조사 Flask 웹 프로젝트** | 메모리 내 데이터베이스, MongoDB 또는 Azure Table Storage에 대해 실행할 수 있는 앱을 생성하며, `REPOSITORY_NAME` 환경 변수를 사용하여 구성합니다. 데이터 모델 및 데이터 저장소 코드는 *모델* 폴더에 포함되고 *settings.py* 파일에는 사용되는 데이터 저장소를 확인하는 코드가 포함되어 있습니다. 앱은 페이지 템플릿에 Jinja 엔진을 사용합니다. [Flask 알아보기 5단계](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)를 참조하세요. |
 | **설문 조사 Flask/Jade 웹 프로젝트** | **설문 조사 Flask 웹 프로젝트** 템플릿과 동일한 앱을 생성하지만 Jinja 템플레이팅 엔진용 Jade 확장을 사용합니다. |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>프로젝트 요구 사항 설치
 

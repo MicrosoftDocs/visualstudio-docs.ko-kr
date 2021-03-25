@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 관리자가 구독 할당을 편집하는 방법을 알아봅니다.
-ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249794"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776872"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio 구독 할당 편집
 구독 관리자는 조직 내에서 개인에게 할당된 구독을 변경할 수 있습니다.  이 문서에서는 관리자가 변경할 수 있는 유형에 대해 설명하고 필요한 단계를 제공합니다.
@@ -56,7 +56,7 @@ ms.locfileid: "102249794"
 5. 파일이 업로드되면 성공했음을 알려주는 알림이 표시됩니다. 이 시점에서 편집한 내용이 구독자 정보에 반영됩니다.
 
 ## <a name="resources"></a>리소스
-- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
+- [구독 지원](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

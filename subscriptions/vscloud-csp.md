@@ -2,17 +2,17 @@
 title: CSP에 대한 Visual Studio 클라우드 구독 구매
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 고객에 대한 Visual Studio 클라우드 구독 구입 및 관리 방법에 대한 클라우드 솔루션 공급자에 대한 정보입니다.
-ms.openlocfilehash: 78d4f39eef4b3daabc5bcbfbf47e969dd6213d36
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473298"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673023"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>고객에 대한 Visual Studio 클라우드 구독 구입 및 관리
 [CSP(클라우드 솔루션 공급자)](https://partner.microsoft.com/cloud-solution-provider) 프로그램의 파트너는 고객에 대한 Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독을 구매할 수 있습니다.

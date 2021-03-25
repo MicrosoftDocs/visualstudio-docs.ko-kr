@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 12/02/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리자가 초과 할당된 구독을 해결하는 방법을 알아봅니다.
-ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537749"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776560"
 ---
 # <a name="over-allocated-subscriptions"></a>초과 할당된 구독
 구독자가 추가된 후 주문자가 변경되어 결국 회사가 소유하는 라이선스보다 더 많은 구독이 할당되는 경우가 간혹 있습니다. 이를 "초과 할당"이라고 합니다.  
@@ -45,4 +45,4 @@ ms.locfileid: "96537749"
 
 ## <a name="next-steps"></a>다음 단계
 - [GitHub Enterprise가 포함된 Visual Studio 구독](assign-github.md) 관리에 대해 자세히 알아봅니다.
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.

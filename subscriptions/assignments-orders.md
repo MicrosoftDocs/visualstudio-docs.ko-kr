@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리자의 사용자 할당 추적 및 주문 처리 책임에 대해 알아봅니다.
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249482"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776989"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>사용자 할당 추적 및 주문 처리
 Visual Studio 구독 관리자는 볼륨 라이선싱 계약 또는 Microsoft 제품 및 서비스 계약에 개략적으로 나와 있는 일정에 따라 Visual Studio 사용을 추적하고 사용량 증가에 따른 주문을 처리해야 합니다. 새 Visual Studio 구독 관리 포털에서는 사용 가능한 라이선스 및 사용한 라이선스를 표시하는 유용한 추적기를 통해 이 단계가 간소화되었습니다.
@@ -38,7 +38,7 @@ Visual Studio 구독 관리자는 볼륨 라이선싱 계약 또는 Microsoft �
 Microsoft EA(기업 계약), MPSA 및 Select Plus 계약은 시간 경과에 따라 Visual Studio 소프트웨어의 사용 및 라이선스를 부여하는 방법에 유연성을 제공합니다. Visual Studio 관리자는 계약 기간 동안 설정된 최대 사용량까지 해당 소프트웨어 라이선스를 적용하도록 연간 트루업 주문을 해야 합니다.
 
 ## <a name="resources"></a>리소스
-- 도움이 필요하신가요?  [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- 도움이 필요하신가요?  [구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

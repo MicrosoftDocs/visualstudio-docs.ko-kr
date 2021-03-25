@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7926a7983e43545ad47e8bc975f051821c108c18
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882871"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806006"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
 
@@ -229,8 +229,24 @@ Jinja 및 Jade 구문 모두를 원하는 대로 실험해 보고 어떤 것이 
 
 ## <a name="next-steps"></a>다음 단계
 
-> [!div class="nextstepaction"]
-> [설문조사 Flask 웹 프로젝트 템플릿](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker range="vs-2017"
+- [설문조사 Flask 웹 프로젝트 템플릿](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션이 GitHub의 자습서 소스 코드([Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask))와 일치해야 합니다.
+
+이제 Visual Studio에서 “빈 Flask 웹 프로젝트”, “Flask[/Jade] 웹 프로젝트” 및 “설문 조사 Flask[/Jade] 웹 프로젝트” 템플릿 전체를 살펴보았습니다. 보기, 템플릿 및 라우팅 사용과 같은 Flask의 모든 기본 사항을 배웠으며, 백업 데이터 저장소를 사용하는 방법을 알아보았습니다. 이제 필요한 모든 보기 및 모델을 사용하여 웹앱을 직접 시작할 수 있습니다.
+
+개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
+
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+
+- PostgreSQL, MySQL 및 SQL Server와 같은 다른 프로덕션 수준 데이터 저장소(모두 Azure에서 호스팅할 수 있음)를 사용하는 리포지토리 구현을 추가합니다. 또한 [Python용 Azure SDK](/azure/python/)를 사용하여 Cosmos DB뿐만 아니라 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
+
+- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps Projects를 사용하여 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) 및 일반 [Azure DevOps 설명서](/azure/devops/?view=vsts&preserve-view=true)를 참조하세요.
+::: moniker-end
 
 ## <a name="go-deeper"></a>자세히 알아보기
 

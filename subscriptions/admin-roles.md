@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 슈퍼 관리자 및 관리자 역할과 관리자를 할당하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511334"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757596"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 정기가입 계약의 슈퍼 관리자 및 관리자
 
@@ -42,7 +42,7 @@ ms.locfileid: "99511334"
 5. **추가** 를 클릭하여 새 관리자를 할당한 후에는 포털에 로그인하도록 초대하는 전자 메일이 수신됩니다.  
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 관리 및 구독 지원](https://my.visualstudio.com/gethelp)
+- [Visual Studio 관리 및 구독 지원](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)

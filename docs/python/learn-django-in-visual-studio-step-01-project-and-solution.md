@@ -11,26 +11,35 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942662"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806071"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
 [Django](https://www.djangoproject.com/)는 신속하고 안전하며 확장성 있는 웹 개발을 위해 고안된 상위 수준 Python 프레임워크입니다. 이 자습서에서는 Django 기반 웹앱 만들기를 간소화하기 위해 Visual Studio에서 제공하는 프로젝트 템플릿의 컨텍스트에서 Django 프레임워크를 살펴봅니다.
 
-이 자습서에서는 다음 작업 방법을 알아봅니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
-> [!div class="checklist"]
-> - “빈 Django 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Django 프로젝트 만들기(1단계)
-> - 한 페이지의 Django 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
-> - 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
-> - Django 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
-> - 사용자 인증(5단계)
-> - 설문 조사 Django 웹 프로젝트 템플릿을 사용하여 모델, 데이터베이스 마이그레이션 및 관리 인터페이스의 사용자 지정을 사용하는 앱 만들기(6단계)
+::: moniker range="vs-2017"
+- “빈 Django 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Django 프로젝트 만들기(1단계)
+- 한 페이지의 Django 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
+- 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
+- Django 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
+- 사용자 인증(5단계)
+- 설문 조사 Django 웹 프로젝트 템플릿을 사용하여 모델, 데이터베이스 마이그레이션 및 관리 인터페이스의 사용자 지정을 사용하는 앱 만들기(6단계)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- “빈 Django 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Django 프로젝트 만들기(1단계)
+- 한 페이지의 Django 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
+- 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
+- Django 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
+- 사용자 인증(5단계)
+::: moniker-end
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
@@ -166,7 +175,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 2. 프로젝트에 프로젝트와 동일한 이름의 폴더가 있습니다. 여기에는 기본 Django 프로젝트 파일이 포함됩니다.
 
    - *__init.py*: 이 폴더가 Python 패키지임을 Python에 알려주는 빈 파일입니다.
-   - *wsgi.py*: WSGI 호환 웹 서버가 프로젝트를 제공하는 진입점입니다. 일반적으로 이 파일은 프로덕션 웹 서버에 대한 후크를 제공하므로 있는 그대로 유지합니다.
+   - *wsgi.py*: WSGI 호환 웹 서버가 프로젝트를 제공하는 진입점입니다. 일반적으로 이 파일은 프로덕션 웹 서버에 대한 후크를 제공하므로 그대로 둡니다.
    - *settings.py*: Django 프로젝트에 대한 설정을 포함하며, 웹앱 개발 과정에서 수정할 수 있습니다.
    - *urls.py*: Django 프로젝트의 목차를 포함하며, 개발 과정에서 수정할 수도 있습니다.
 
@@ -194,7 +203,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>질문: Django는 웹 서버이면서 프레임워크인가요?
 
-대답: 그렇기도 하고 아니기도 합니다. Django에는 개발용으로 사용되는 기본 제공 웹 서버가 있습니다. 이 웹 서버는 Visual Studio에서 디버그할 때와 같이 로컬에서 웹앱을 실행할 때 사용됩니다. 그러나 웹 호스트에 배포하면 Django는 호스트의 웹 서버를 대신 사용합니다. Django 프로젝트의 *wsgi.py* 모듈은 프로덕션 서버에 연결을 담당합니다.
+대답: 그렇기도 하고 아니기도 합니다. Django에는 개발용으로 사용되는 기본 제공 웹 서버가 있습니다. 이 웹 서버는 Visual Studio에서 디버그할 때와 같이 로컬에서 웹앱을 실행할 때 사용됩니다. 그러나 웹 호스트에 배포하는 경우 Django는 호스트의 웹 서버를 대신 사용합니다. Django 프로젝트의 *wsgi.py* 모듈은 프로덕션 서버에 연결을 담당합니다.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>질문: 프로젝트의 Python 하위 메뉴에서 디버그 메뉴 명령과 서버 명령을 사용하는 것의 차이점은 무엇인가요?
 

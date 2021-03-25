@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b5fd7129cfb21e5b59e8cdf0049b4ee75d59c87
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913949"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672737"
 ---
 # <a name="item-element-msbuild"></a>Item 요소(MSBuild)
 
 사용자 정의 항목 및 해당 메타데이터를 포함합니다. MSBuild 프로젝트에서 사용되는 모든 항목은 `ItemGroup` 요소의 자식으로 지정해야 합니다.
 
-\<Project>
-\<ItemGroup>
-\<Item>
+\<Project>\
+&nbsp;\<ItemGroup>\
+&nbsp;&nbsp;\<Item>
 
 ## <a name="syntax"></a>구문
 
@@ -72,7 +72,7 @@ MSBuild 15.1 이상에서는 현재 특성 목록과 충돌하지 않는 이름�
 
 ### <a name="attributes"></a>특성
 
-|특성|설명|
+|attribute|설명|
 |---------------|-----------------|
 |`Include`|선택적 특성입니다.<br /><br /> 항목 목록에 포함할 파일 또는 와일드카드입니다.|
 |`Exclude`|선택적 특성입니다.<br /><br /> 항목 목록에서 제외할 파일 또는 와일드카드입니다.|

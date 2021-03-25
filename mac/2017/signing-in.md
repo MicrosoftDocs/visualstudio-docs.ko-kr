@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 43032addcfbb54b6a239d465de76f85c241d562e
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950394"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999591"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
 
-Mac용 Visual Studio를 처음 시작하면 Microsoft 계정으로 로그인하라는 메시지가 표시됩니다. 사용하려는 라이선스에 연결된 Microsoft 계정을 사용합니다. Microsoft 계정이 없는 경우 [How do I sign up for an account](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)(계정을 만드는 방법)을 참조하세요.
+Mac용 Visual Studio를 처음 시작하면 Microsoft 계정으로 로그인하라는 메시지가 표시됩니다. 사용하려는 라이선스에 연결된 Microsoft 계정을 사용합니다. Microsoft 계정이 없는 경우 [How do I sign up for an account](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)(계정을 만드는 방법)을 참조하세요.
 
 바로 로그인하지 않으려는 경우 30일 동안 평가판을 사용할 수 있습니다. 30일 후에도 Mac용 Visual Studio를 계속 사용하려면 로그인해야 합니다.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 구독자 목록과 해당 구독 할당의 세부 정보를 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250025"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776820"
 ---
 # <a name="export-subscription-information"></a>구독 정보 내보내기
 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)에서 구독자 목록 및 해당 할당에 대한 세부 정보를 내보낼 수 있습니다. 이 정보에는 해당 이름, 전자 메일 주소, 대체 전자 메일 주소, 구독 수준, 할당된 날짜, 활성화 상태, 만료일, 참조 필드, 다운로드 활성화 여부, 국가, 언어, 구독 상태 및 구독 GUID가 포함됩니다.  이 목록은 Microsoft Excel에서 쉽게 열어 차트, 피벗, 기타 아티팩트를 만들 수 있는 CSV 파일로 내보내집니다.
@@ -33,7 +33,7 @@ Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)에서 구�
 > ![구독자 내보내기](_img/exporting-subscriptions/exporting-subscriptions.png "내보내기를 클릭하여 할당된 구독의 전체 목록을 다운로드합니다.")
 
 ## <a name="resources"></a>리소스
-- [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)
+- [구독 지원](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리 포털에서 할당된 최대 구독 수를 보는 방법 알아보기
-ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 29aaa3d2268d5fc0ae99a1a400238d633e9026a5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904491"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777015"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>최대 사용량 기능을 사용하여 할당된 구독 수 추적
 Visual Studio 구독 관리 포털의 새로운 기능을 사용하면 구매 및 할당된 구독 수를 추적하고, 지난 1년 내 및 규약 기간 동안 할당된 각 수준의 최대 구독 수를 식별할 수 있습니다. 
@@ -45,10 +45,10 @@ A:  개요의 정보는 각 구독 수준에 대한 ‘현재’ 할당 및 사�
 
 ## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 관리 및 구독 지원](https://aka.ms/vsadminhelp)
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

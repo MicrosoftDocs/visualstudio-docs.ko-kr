@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
-ms.openlocfilehash: 89d724a9ddf4c8f3dc7fe941e5e4d999d30da1e8
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: e5d03c27ef1e6fefc2fa29d60727851be0954d8b
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950622"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999604"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 모바일 앱 개발
 
@@ -58,4 +58,4 @@ Xamarin Inspector는 사용자 도구가 포함된 대화형 C# 콘솔을 제공
 
 Xamarin Inspector는 다양한 프로그래밍 플랫폼(Android, iOS, Mac 및 Windows)을 대상으로 하고 IDE의 디버깅 워크플로에 통합할 수 있는 고급 C# 콘솔을 제공하는 독립 실행형 애플리케이션으로 구성됩니다.
 
-자세한 내용은 [Xamarin Inspector](/xamarin/tools/inspector/) 가이드를 참조하세요.
+자세한 내용은 [Xamarin Inspector](/xamarin/tools/inspector/release-notes/1.5) 가이드를 참조하세요.

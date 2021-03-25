@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 58603b72128af1c6dd9caae93f92c435f0851ada
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006317"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672997"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -63,6 +63,7 @@ ms.locfileid: "95006317"
 
 ## <a name="see-also"></a>참조
 
+- [Git와 팀 탐색기 나란히 비교](git-team-explorer-feature-comparison.md)
 - [Visual Studio의 새로운 Git 환경](git-with-visual-studio.md)
 - [자습서: 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo.md)
 - [팀 탐색기 참조](reference/team-explorer-reference.md)

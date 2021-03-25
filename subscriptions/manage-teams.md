@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 구독에서 대규모 팀 및 계약자 관리 | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리자의 대규모 팀 및 외부 계약업체 구독 관리 책임에 대해 알아봅니다.
-ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904670"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776807"
 ---
 # <a name="large-teams-and-external-contractors"></a>대규모 팀 및 외부 계약업체
 Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨어와 상호 작용하는 모든 사용자가 자신 소유의 Visual Studio 구독에 대해 적절하게 사용이 허가되어 있는지 확인해야 하는 책임이 있습니다.
@@ -31,7 +31,7 @@ Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨
 
 ## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 관리 및 구독 지원](https://aka.ms/vsadminhelp)
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>참고 항목

@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab5ddea8ddb3fdd741f4df3b3b53f4239d016049
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928981"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884111"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>방법: 명령줄을 통해 프로파일러와 함께 독립 실행형 .NET Framework 애플리케이션을 시작하여 동시성 데이터 수집
 이 항목은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 .NET Framework 독립 실행형(클라이언트) 애플리케이션을 시작하고 프로세스 및 스레드 동시성 데이터를 수집하는 방법을 설명합니다.
@@ -39,7 +39,7 @@ ms.locfileid: "99928981"
 
    - [/start](../profiling/start.md) 옵션은 프로파일러를 초기화합니다.
 
-     | | |
+     | 명령 | 설명 |
      |-------------------------------------| - |
      | **/start:concurrency** | 리소스 경합 및 스레드 실행 데이터를 모두 수집할 수 있습니다. |
      | **/start:concurrency,resourceonly** | 리소스 경합 데이터만 수집할 수 있습니다. |

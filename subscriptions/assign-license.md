@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리자가 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 3bfa1174a8655de27496c3138e1eab21e32c2f8d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a1b68a45754e0fb466ae12b59d63fa14d50e9a3e
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249553"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776521"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 라이선스 할당
 Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
@@ -68,7 +68,7 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
 
 
 ## <a name="resources"></a>리소스
-- 도움이 필요하신가요?  [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- 도움이 필요하신가요?  [구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

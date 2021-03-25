@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 03/11/2021
 ms.topic: conceptual
 description: 구독에 대한 액세스 권한이 중단된 경우 구독자 데이터가 익명화되는 방법을 알아봅니다.
-ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 2a3d55824db1c90ff0868dda6d398e8c0e9a53d7
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225965"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757609"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 구독자 정보의 익명화
 구독 만료 또는 구독자 로그인 계정 삭제와 같은 구독자의 구독 사용을 차단하는 이벤트가 발생하면, 이름 및 로그인 계정과 같은 사용자의 개인 정보는 기본적으로 사용할 수 없도록 하기 위해 암호화됩니다.  이는 구독자의 개인 정보를 보호하기 위해 수행됩니다.
@@ -43,6 +43,9 @@ A:  예.  다음 조건이 충족되는 경우 구독을 다시 할당할 수 �
 A:  문제를 방지하는 방법에는 두 가지가 있습니다.
 - 단일 ID 관리 시스템인 MSA 또는 AAD 중 하나를 배포하세요(동시 배포는 안됨).  
 - 테넌트를 통해 AAD 및 MSA ID를 연결합니다. 
+
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독 관련 판매, 구독, 계정 및 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://aka.ms/vssubscriberhelp)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

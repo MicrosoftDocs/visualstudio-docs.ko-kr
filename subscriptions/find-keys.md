@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 찾고 요청하며 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249263"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776573"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 찾고 요청하기
 이 문서에서는 https://my.visualstudio.com/productkeys 에서 제품 키를 찾고 요청하며 내보내는 방법을 설명합니다.  일반 정품 및 볼륨 라이선스 버전의 키, 일일 제품 키 요청 제한, 키를 사용한 제품 정품 인증 방법에 대한 자세한 내용은 [제품 키 개요](product-keys.md)를 참조하세요.
@@ -67,7 +67,7 @@ ms.locfileid: "102249263"
 키를 내보내려면 제품 키 페이지의 오른쪽 끝에 있는 **모든 키 내보내기** 링크를 선택하면 됩니다.  KeysExport.xml이라는 제목의 .xml 파일이 생성되며, 파일을 열거나 저장할 수 있습니다.  .xml 파일을 처리할 수 있는 애플리케이션으로 파일을 열어야 합니다.  예를 들어 Excel에서 파일을 읽기 전용 통합 문서로 열 수 있습니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)
+- [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>참조
 - [Visual Studio 설명서](/visualstudio/)

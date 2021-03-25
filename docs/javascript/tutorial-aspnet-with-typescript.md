@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683634"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672841"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기
 
@@ -34,7 +34,7 @@ Visual Studio 개발 ASP.NET Core 및 TypeScript에 대한 이 자습서에서�
 
 ::: moniker-end
 
-이 자습서에서는 다음 작업 방법을 알아봅니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * ASP.NET Core 프로젝트 만들기
 > * TypeScript 지원을 위해 NuGet 패키지 추가
@@ -248,7 +248,7 @@ Visual Studio는 *프로젝트* 에서 단일 애플리케이션에 대한 파�
       showMsg: function (): void {
          let v: any = jQuery.fn.jquery.toString();
          let content: any = $("#ts-example-2")[0].innerHTML;
-         alert(content.toString());
+         alert(content.toString() + " " + v + "!!");
          $("#ts-example-2")[0].innerHTML = content + " " + v + "!!";
       }
    };

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 관리자가 일괄 추가 기능 또는 Microsoft Azure Active Directory 그룹을 사용하여 여러 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 76717090731b2e1fad0758c3c6298ab572bbb4de
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 4744f689e9b03e4a6cf8c804409abddfde16c527
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249570"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776898"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>여러 사용자에게 구독 할당
 구독 관리 포털을 사용하면 한 번에 한 명 또는 여러 그룹에 사용자를 추가할 수 있습니다.  개별 사용자를 추가하려면 [단일 사용자 추가](assign-license.md)를 참조하세요.
@@ -147,4 +147,4 @@ A: 조직이 Azure AD를 구성한 방식에 따라 사용자가 추가되기까
 
 ## <a name="next-steps"></a>다음 단계
 - 구독자를 한두 명 정도만 추가하시겠습니까?  [단일 사용자 추가](assign-license.md) 체크 아웃
-- 도움 필요 시 [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- 도움 필요 시 [구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
