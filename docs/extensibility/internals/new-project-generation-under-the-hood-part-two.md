@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895611"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063086"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>새 프로젝트 생성: 내부 살펴보기, 2부
 
@@ -31,7 +31,7 @@ ms.locfileid: "99895611"
 ### <a name="template-parameter-replacement"></a>템플릿 매개 변수 바꾸기
  템플릿이 새 프로젝트에 항목 템플릿을 복사 하면 템플릿 매개 변수를 문자열로 바꿔서 파일을 사용자 지정 합니다. 템플릿 매개 변수는 $와 같이 달러 $date 기호가 앞에 오고 그 뒤에 오는 특수 토큰입니다.
 
- 일반적인 프로젝트 항목 템플릿을 살펴보겠습니다. Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더에서 Program.cs를 추출 하 고 검사 합니다.
+ 일반적인 프로젝트 항목 템플릿을 살펴보겠습니다. Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 폴더에서 프로그램을 추출 하 고 검사 합니다.
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  이렇게 하면 템플릿 항목 windowsapplication 프로그램 .csproj를 복사 하 고 사용자 지정 하 여 간단한 .csproj 프로젝트 파일을 만들도록 새 프로젝트 템플릿에 지시 합니다.
 
 ### <a name="designers-and-references"></a>디자이너 및 참조
- 솔루션 탐색기에서 속성 폴더가 있고 필요한 파일을 포함 하 고 있음을 볼 수 있습니다. 하지만 프로젝트 참조 및 디자이너 파일 종속성 (예: Resources.Designer.cs에 대 한 Form1.Designer.cs 및 Form1.cs에 대 한)은 무엇 인가요?  이러한 파일은 생성 될 때 간단한 .csproj 파일에 설정 됩니다.
+ 솔루션 탐색기에서 속성 폴더가 있고 필요한 파일을 포함 하 고 있음을 볼 수 있습니다. 하지만 프로젝트 참조 및 디자이너 파일 종속성 (예: Resources. 디자이너에서 .Resources로, 그리고 form1. s s i o s.  이러한 파일은 생성 될 때 간단한 .csproj 파일에 설정 됩니다.
 
  \<ItemGroup>프로젝트 참조를 만드는 간단한 .csproj의는 다음과 같습니다.
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- 이러한 참조가 솔루션 탐색기에 표시 되는 여섯 개의 프로젝트 참조 임을 확인할 수 있습니다. 다른 섹션은 다음과 같습니다 \<ItemGroup> . 명확성을 위해 많은 코드 줄이 삭제 되었습니다. 이 섹션에서는 Settings.Designer.cs를 설정에 따라 결정 합니다. 설정:
+ 이러한 참조가 솔루션 탐색기에 표시 되는 여섯 개의 프로젝트 참조 임을 확인할 수 있습니다. 다른 섹션은 다음과 같습니다 \<ItemGroup> . 명확성을 위해 많은 코드 줄이 삭제 되었습니다. 이 섹션에서는 설정에 따라 디자이너나 .cs를 설정 합니다. 설정:
 
 ```xml
 <ItemGroup>
@@ -155,7 +155,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [새 프로젝트 생성: 내부 살펴보기, 1부](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

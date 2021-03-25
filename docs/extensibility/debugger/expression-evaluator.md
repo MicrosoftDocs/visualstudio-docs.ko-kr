@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055026"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 식 계산기 (EE)는 런타임에 변수와 식을 구문 분석 하 고 평가 하 여 IDE가 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어의 구문을 검사 합니다.
@@ -42,5 +42,5 @@ ms.locfileid: "99921398"
 ## <a name="implementation-notes"></a>구현 참고 사항
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그 엔진은 CLR (공용 언어 런타임) 인터페이스를 사용 하 여 식 계산기와 통신할 것으로 간주 합니다. 따라서 디버그 엔진에서 작동 하는 식 계산기는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] clr을 지원 해야 합니다. 모든 clr 디버깅 인터페이스의 전체 목록은의 일부인 debugref.doc에서 찾을 수 있습니다 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf1d27e876da5fdc0f95ecea0e9ba96c0a687bb1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 293b3635dd1a725f90ce63a0aa2f8568d5b324e3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078177"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 데이터 중단점이 하드웨어에서 에뮬레이션 되는지 또는 구현 되는지 여부를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_BP_RES_DATA_FLAGS {

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685650e0e97c3f9851f051fdaa78f86252597ff8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c668cd1fa80efe24fa596cc4e9f311e2db519246
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930722"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055039"
 ---
 # <a name="code-context"></a>코드 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 **코드 컨텍스트** 는 다음과 같습니다.
@@ -32,6 +32,6 @@ ms.locfileid: "99930722"
 
 - 는 [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) 인터페이스에 의해 구현 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [문서 컨텍스트](../../extensibility/debugger/document-context.md)
 - [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md)

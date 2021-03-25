@@ -10,17 +10,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30b562cac794b7ab960f055fe67a5d0cc4ec871f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895676"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063224"
 ---
 # <a name="nesting-projects"></a>프로젝트 중첩
 VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *프로젝트 중첩* 을 사용 하 여 비슷한 형식의 프로젝트를에서 편리 하 게 그룹화 할 수 있습니다. 예를 들어 Enterprise Template 프로젝트는 중첩 된 프로젝트를 사용 하 여 프로젝트를 범주로 그룹화 합니다. 비즈니스 외관 프로젝트, 웹 UI 프로젝트 등은 하나의 범주에 함께 그룹화 됩니다.
@@ -34,7 +34,7 @@ VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자�
 ## <a name="nested-projects-example"></a>중첩 프로젝트 예제
  ![중첩 프로젝트 솔루션](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") 중첩 프로젝트 예제
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [중첩된 프로젝트 언로드 및 다시 로드에 대한 고려 사항](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [중첩된 프로젝트에 대한 마법사 지원](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8baac2f0e288e9bde1288ed72e43d7f1d150d04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930683"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055078"
 ---
 # <a name="change-the-value-of-a-local"></a>로컬의 값 변경
 > [!IMPORTANT]
@@ -30,7 +30,7 @@ ms.locfileid: "99930683"
 
 1. 사용자가 새 값을 입력 하면 Visual Studio는 로컬에 연결 된 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체에서 [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 을 호출 합니다.
 
-2. `IDebugProperty2::SetValueAsString`은 다음 작업을 수행합니다.
+2. `IDebugProperty2::SetValueAsString`는 다음 작업을 수행합니다.
 
    1. 문자열을 계산 하 여 값을 생성 합니다.
 
@@ -47,6 +47,6 @@ ms.locfileid: "99930683"
 ## <a name="in-this-section"></a>단원 내용
  [변경 값의 샘플 구현](../../extensibility/debugger/sample-implementation-of-changing-values.md) MyCEE 샘플을 사용 하 여 값을 변경 하는 과정을 단계별로 실행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)

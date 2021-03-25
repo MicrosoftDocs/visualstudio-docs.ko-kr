@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
 ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 223b1fff75c8fefdfed5bce5765d82fc5309738d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7e7180301965e43e6757340019c3506fe1a5e1f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930735"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055091"
 ---
 # <a name="call-stack-evaluation"></a>호출 스택 평가
 중단 모드에서 호출 스택의 스택 프레임을 보려면 [Enum프레임 정보](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 메서드를 구현 해야 합니다.
@@ -39,5 +39,5 @@ ms.locfileid: "99930735"
 
  코드 컨텍스트를 열거 하려면 [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)의 모든 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

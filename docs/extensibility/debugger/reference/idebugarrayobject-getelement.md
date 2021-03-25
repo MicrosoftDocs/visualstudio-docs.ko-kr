@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea10afac9f5503288d257833d6dd59f9ba56fc6f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 43659e8dfbd86f800105cbfa35fa3b3a13c099cf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158659"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094382"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 배열의 요소를 가져옵니다.
@@ -55,5 +55,5 @@ int GetElement(
 ## <a name="remarks"></a>설명
  이 메서드는 배열 개체가 다차원 인 경우에도 배열 개체의 모든 요소를 1 차원 배열로 표시 합니다. 예를 들어, 배열 `myarray[3][2][6]` 및 `dwIndex` 매개 변수가 20 인 경우이 메서드는에서 요소를 반환 `myarray[1][1][2]` 하 고 `dwIndex` 21의 매개 변수는에서 요소를 반환 `myarray[1][1][3]` 합니다. [Getcount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) 메서드를 사용 하 여 배열에 있는 요소의 총 수를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

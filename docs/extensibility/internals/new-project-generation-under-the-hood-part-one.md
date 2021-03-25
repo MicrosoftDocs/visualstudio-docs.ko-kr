@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27a7e0f3175388b963e85950ea903843caff3baa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895780"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063151"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>새 프로젝트 생성: 내부 살펴보기, 1부
 사용자 고유의 프로젝트 형식을 만드는 방법에 대해 생각 하 고 있나요? 새 프로젝트를 만들 때 실제로 발생 하는 일은 궁금 하십니까? 내부적으로 살펴보기를 수행 하 고 정말 진행 되 고 있는 것을 확인해 보겠습니다.
@@ -89,7 +89,7 @@ devenv /installvstemplates
  우선 순위 번호가 낮을수록 트리에서 위치가 높아집니다.
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예를 들면 다음과 같습니다.
+ 이 하위 키가 있는 경우 루트 노드의 위치는 개발자 설정 대화 상자에 의해 제어 됩니다. 예제:
 
  DeveloperActivity REG_SZ VC #
 
@@ -213,5 +213,5 @@ devenv /installvstemplates
 
     **Myprojectnode** 는 Windows 노드 바로 아래에 Visual c #의 자식 노드로 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [새 프로젝트 생성: 내부 살펴보기, 2부](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

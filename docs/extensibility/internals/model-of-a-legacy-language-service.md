@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 216bfaf9400847c265820e4bb5967fd3c992caa7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954646"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063225"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 언어 서비스는 특정 언어의 요소와 기능을 정의 하 고 편집기에 해당 언어에 대 한 정보를 제공 하는 데 사용 됩니다. 예를 들어 편집기는 구문 색 지정을 지원 하기 위해 언어의 요소와 키워드를 알고 있어야 합니다.
@@ -49,5 +49,5 @@ ms.locfileid: "99954646"
 | 텍스트 관리자 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>포인터를 가져오는 서비스에서 관리 됩니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> | 앞에서 설명한 모든 구성 요소에서 공유 하는 공통 정보를 유지 관리 하는 구성 요소입니다. |
 | 언어 서비스 | 구현 종속 구현할 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | 구문 강조 표시, 문 완성 및 중괄호 일치와 같은 언어별 정보를 편집기에 제공 하는 개체입니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 편집기의 문서 데이터 및 문서 보기](../../extensibility/document-data-and-document-view-in-custom-editors.md)
