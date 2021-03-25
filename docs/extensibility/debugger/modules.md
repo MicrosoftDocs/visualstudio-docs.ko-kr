@@ -8,17 +8,17 @@ helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aa0aaf7e82287c1dc2e35c524798a3480d2573e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f40cb7d0c65822fcb6ba4d4ca0132147f62d9286
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926324"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054766"
 ---
 # <a name="modules"></a>모듈
 디버거 아키텍처 측면에서 *모듈* 은 다음과 같습니다.
@@ -29,6 +29,6 @@ ms.locfileid: "99926324"
 
 - 는 디버그 엔진에서 모듈을 설명 하기 위해 만든 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) 인터페이스로 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

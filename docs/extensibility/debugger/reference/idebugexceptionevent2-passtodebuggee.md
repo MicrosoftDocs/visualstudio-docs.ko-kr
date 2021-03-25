@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fca977aba3657592088879cdad884f6e6325ffd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f81af5686cfc2b99dc3bf5d95e2ec283933297e2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152860"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084768"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 실행을 다시 시작할 때 디버깅 중인 프로그램에 예외를 전달할지 여부를 지정 합니다. 그렇지 않으면 예외를 삭제 해야 합니다.
@@ -52,7 +52,7 @@ int PassToDebuggee(
 
  IDE는 [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) 이벤트를 수신 하 고 [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) 메서드를 호출할 수 있습니다. 메서드가 호출 되지 않는 경우 디버그 엔진 (DE)에는 대/소문자를 처리 하는 기본 동작이 있어야 합니다 `PassToDebuggee` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)
 - [계속](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

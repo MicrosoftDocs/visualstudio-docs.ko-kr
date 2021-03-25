@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a246cda3f5b9395ae013b4bca9d4d27d6f8a5c1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1440ff2fa82c8296bf54b106b622556a8eebb611
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158542"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094330"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 배열의 차수 (차원 수)를 가져옵니다.
@@ -50,5 +50,5 @@ int GetRank(
 ## <a name="remarks"></a>설명
  [Getdimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) 메서드를 사용 하 여 배열 개체의 각 차원 크기를 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

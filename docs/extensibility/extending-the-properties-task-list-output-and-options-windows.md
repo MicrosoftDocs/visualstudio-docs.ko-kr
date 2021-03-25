@@ -12,22 +12,22 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070143"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>속성, 작업 목록, 출력 및 옵션 창 확장
 Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습에서는 도구 창에 대 한 정보를 새 **옵션** 페이지 및 **속성** 페이지의 새 설정에 통합 하는 방법과 **작업 목록** 및 **출력** 창에 쓰는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-tool-window"></a>도구 창을 사용 하 여 확장 만들기
@@ -63,7 +63,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
 ### <a name="customize-the-constructor"></a>생성자 사용자 지정
 
-1. *TodoWindowControl.xaml.cs* 파일에서 다음 using 지시문을 추가 합니다.
+1. *TodoWindowControl* 파일에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-3. *TodoWindow.cs* 에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 같습니다.
+3. *TodoWindow* 에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 같습니다.
 
     ```csharp
     public TodoWindow() : base(null)
@@ -95,7 +95,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     ```
 
 ## <a name="create-an-options-page"></a>옵션 페이지 만들기
- 사용자가 도구 창에 대 한 설정을 변경할 수 있도록 **옵션** 대화 상자에 페이지를 제공할 수 있습니다. 옵션 페이지를 만들려면 옵션과 *TodoListPackage.cs* 또는 *TodoListPackage* 파일의 항목을 설명 하는 클래스가 모두 필요 합니다.
+ 사용자가 도구 창에 대 한 설정을 변경할 수 있도록 **옵션** 대화 상자에 페이지를 제공할 수 있습니다. 옵션 페이지를 만들려면 옵션과 *TodoListPackage* 또는 *TodoListPackage* 파일의 항목을 설명 하는 클래스가 모두 필요 합니다.
 
 1. `ToolsOptions.cs`(이)라는 클래스를 추가합니다. 클래스를 `ToolsOptions` 에서 상속 하도록 설정 <xref:Microsoft.VisualStudio.Shell.DialogPage> 합니다.
 
@@ -127,7 +127,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
 ### <a name="make-the-options-page-available-to-users"></a>사용자가 옵션 페이지를 사용할 수 있도록 설정
 
-1. *TodoWindowPackage.cs* 에서를 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 클래스에 추가 합니다 `TodoWindowPackage` .
+1. *TodoWindowPackage* 에서를 클래스에 추가 합니다 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> `TodoWindowPackage` .
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -152,7 +152,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
      ![속성 창](../extensibility/media/t5properties.png "T5Properties")
 
-2. *TodoItem.cs* 파일에 다음 using 지시문을 추가 합니다.
+2. *TodoItem* 파일에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.ComponentModel;
@@ -232,7 +232,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-5. 클래스의 인스턴스는 `TodoItem` listbox에 저장 되 고 listbox는 함수를 호출 하므로 함수를 `ToString` 오버 로드 해야 합니다 `ToString` . 생성자 뒤에 클래스의 끝 앞에 *TodoItem.cs* 에 다음 코드를 추가 합니다.
+5. 클래스의 인스턴스는 `TodoItem` listbox에 저장 되 고 listbox는 함수를 호출 하므로 함수를 `ToString` 오버 로드 해야 합니다 `ToString` . 생성자 뒤에 클래스의 끝 앞에 *TodoItem* 에 다음 코드를 추가 합니다.
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-6. *TodoWindowControl.xaml.cs* 에서 `TodoWindowControl` 및 메서드에 대 한 클래스에 스텁 메서드를 `CheckForError` 추가 `UpdateList` 합니다. ProcessDialogChar 뒤와 파일 끝 앞에 배치 합니다.
+6. *TodoWindowControl* 에서 `TodoWindowControl` `CheckForError` 및 메서드에 대 한 클래스에 스텁 메서드를 추가 합니다. `UpdateList` ProcessDialogChar 뒤와 파일 끝 앞에 배치 합니다.
 
     ```csharp
     public void CheckForErrors()
@@ -285,7 +285,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-4. *TodoWindowControl.xaml.cs* 에 다음 using 지시문을 추가 합니다.
+4. *TodoWindowControl* 에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -353,7 +353,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 
      이제 **속성** 창에서 사용할 수 있는 클래스가 있으므로 **속성** 창을 도구 창과 통합할 수 있습니다. 사용자가 도구 창에서 ListBox의 항목을 클릭 하면 **속성** 창이 적절 하 게 업데이트 됩니다. 마찬가지로 사용자가 **속성** 창에서 할 일 항목을 변경 하는 경우 연결 된 항목을 업데이트 해야 합니다.
 
-7. 이제 *TodoWindowControl.xaml.cs* 에 나머지 updatelist 함수 코드를 추가 합니다. ListBox에서 수정 된 TodoItem를 삭제 하 고 다시 추가 해야 합니다.
+7. 이제 *TodoWindowControl* 에 나머지 updatelist 함수 코드를 추가 합니다. ListBox에서 수정 된 TodoItem를 삭제 하 고 다시 추가 해야 합니다.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -378,7 +378,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>출력 창에 텍스트를 추가 하 고 작업 목록에 항목을 추가 합니다.
  **작업 목록** 의 경우 task 형식의 새 개체를 만든 다음 해당 메서드를 호출 하 여 해당 작업 개체를 **작업 목록** 에 추가 합니다 `Add` . **출력** 창에 쓰려면 해당 메서드를 호출 하 여 `GetPane` 창 개체를 가져온 다음 `OutputString` pane 개체의 메서드를 호출 합니다.
 
-1. *TodoWindowControl.xaml.cs* 의 `button1_Click` 메서드에서 코드를 추가 하 여 **출력** 창의 **일반** 창 (기본값)을 가져오고 여기에 씁니다. 메서드는 다음과 같습니다.
+1. *TodoWindowControl* 의 `button1_Click` 메서드에서 코드를 추가 하 여 **출력** 창의 **일반** 창 (기본값)을 가져오고이 창에 씁니다. 메서드는 다음과 같습니다.
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070091"
 ---
 # <a name="how-to-get-a-service"></a>방법: 서비스 가져오기
 
@@ -31,9 +31,9 @@ Visual Studio는를 로드할 때 <xref:Microsoft.VisualStudio.Shell.Package> <x
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `GetServiceExtension` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이제 **GetServiceCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *GetServiceCommand.cs* 로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. 이제 **GetServiceCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *GetServiceCommand* 로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. *GetServiceCommand.cs* 에서 메서드의 본문을 제거 `MenuItemCommand` 하 고 다음 코드를 추가 합니다.
+3. *GetServiceCommand* 에서 메서드의 본문을 제거 `MenuItemCommand` 하 고 다음 코드를 추가 합니다.
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -87,7 +87,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 서비스 제공](../extensibility/how-to-provide-a-service.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

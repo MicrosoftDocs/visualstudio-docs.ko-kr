@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2 interface
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 318644353ff3643e92b2a7186359661b403db486
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077722"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 이 인터페이스는 네트워크에 있는 컴퓨터의 서버에서 정보를 표시 하 고 가져오는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugCoreServer2 : IUknown
@@ -40,7 +40,7 @@ IDebugCoreServer2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugCoreServer2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|컴퓨터의 이름과 특성을 가져옵니다.|
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|컴퓨터의 이름을 가져옵니다.|
@@ -60,7 +60,7 @@ IDebugCoreServer2 : IUknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

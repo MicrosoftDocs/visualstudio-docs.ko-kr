@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfa6e402bfa6b0ef1949a967c37773557b79b0a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062228"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 매니페스트 디자이너
 Visual Studio 확장의 설치 동작을 설정 하는 VSIX 패키지 매니페스트 파일을 수정 합니다.
@@ -130,6 +130,6 @@ Visual Studio 확장의 설치 동작을 설정 하는 VSIX 패키지 매니페�
 
   식별자는 `ID` 종속성 패키지 메타 데이터의 특성과 일치 해야 합니다. 소스는 현재 솔루션의 프로젝트, 현재 설치 된 확장 또는 파일 일 수 있습니다. **종속성을 확인 하는 방법** 설정은 중첩 된 패키지의 상대 경로 또는 종속성에 대 한 다운로드 위치의 URL 일 수 있습니다. 종속성 패키지의 ID, 버전 및 해상도는 `Id` `Version` `Location` 연결 된 요소의, 및 특성에 해당 합니다 `Dependency` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)

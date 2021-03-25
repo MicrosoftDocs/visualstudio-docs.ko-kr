@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 961a62284b841d56ae73a29df0e83810ff9d7d20
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0b181f82c7364797f246730cb6a82075d7040af1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085236"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 코드의 주소에서 중단점의 위치를 설명 합니다.
@@ -59,7 +59,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

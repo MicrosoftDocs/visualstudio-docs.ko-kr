@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62b613950f9fd6c8ce18969c126a6e74a154b58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d58bb7a5e3a3395b534e5679ec303e5d93d5dc85
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851298"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054740"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 메서드
 디버거에서 중단점 대상으로 사용 되는 자리 표시자 메서드입니다. 이 메서드는 인라인 또는 최적화 되지 않아야 합니다.

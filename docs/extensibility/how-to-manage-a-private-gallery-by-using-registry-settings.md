@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09a24198d5b3c001f363f3a9eecf1dcd2760889f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5981dc4399e09df207b154b900fa163895c344c9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850637"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070065"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>방법: 레지스트리 설정을 사용 하 여 전용 갤러리 관리
 격리 된 셸 확장의 관리자 또는 개발자 인 경우 Visual Studio 갤러리, 샘플 갤러리 또는 개인 갤러리의 컨트롤, 템플릿 및 도구에 대 한 액세스를 제어할 수 있습니다. 갤러리를 사용할 수 있거나 사용할 수 없게 하려면 수정 된 레지스트리 키와 해당 값을 설명 하는 *.pkgdef* 파일을 만듭니다.
@@ -69,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프라이빗 갤러리](../extensibility/private-galleries.md)

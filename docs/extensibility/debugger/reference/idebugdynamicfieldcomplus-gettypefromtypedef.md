@@ -1,5 +1,5 @@
 ---
-description: 해당 토큰이 지정 된 형식을 검색 합니다.
+description: 'IDebugDynamicFieldCOMPlus:: GetTypeFromTypeDef는 해당 토큰이 지정 된 형식을 검색 합니다.'
 title: 'IDebugDynamicFieldCOMPlus:: GetTypeFromTypeDef | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetTypeFromTypeDef
 - IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68f0747c61f1e2c19ea1abde309f8fab437ecc84
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4cc8e9167085895ce4f0f10784b07aa418afd3fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154108"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094005"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 해당 토큰이 지정 된 형식을 검색 합니다.
@@ -61,5 +61,5 @@ int GetTypeFromTypeDef(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

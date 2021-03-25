@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 348d5e753702e523f09bef8cbd5f374294c197e4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5bcd11f3058de191a3b0a77f0316afb6140769fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154446"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077644"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 이 필드에 연결 된 모든 사용자 지정 특성에 대 한 열거자를 가져옵니다.
@@ -50,6 +50,6 @@ int EnumCustomAttributes(
 ## <a name="remarks"></a>설명
  필드에는 여러 사용자 지정 특성이 있을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d85b018b4e0ea7d5ed1c91e617afcb2759d49b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895728"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070117"
 ---
 # <a name="extend-the-editor-and-language-services"></a>편집기 및 언어 서비스 확장
 언어 서비스 기능 (예: IntelliSense)을 사용자의 편집기에 추가 하 고 Visual Studio 코드 편집기의 기능을 대부분 확장할 수 있습니다.  확장할 수 있는 항목의 전체 목록은 [언어 서비스 및 편집기 확장 요소](../extensibility/language-service-and-editor-extension-points.md)를 참조 하세요.

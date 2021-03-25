@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services [managed package framework], IntelliSense Parameter Info
 - Parameter Info (IntelliSense), supporting in language services [managed package framework]
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e24162407c4daeb8643bf106c385f76b11c7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0488c9d6570d9ed127c5b021ddfcf7d74f0dd856
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954529"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062930"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>레거시 언어 서비스의 매개 변수 정보 2
 IntelliSense 매개 변수 정보는 사용자가 메서드 매개 변수 목록에 대 한 매개 변수 목록 시작 문자 (일반적으로 여는 괄호)를 입력 하는 경우 메서드의 시그니처를 표시 하는 도구 설명입니다. 각 매개 변수를 입력 하 고 매개 변수 구분 기호 (일반적으로 쉼표)를 입력 하면 도구 설명이 업데이트 되어 다음 매개 변수가 굵게 표시 됩니다.

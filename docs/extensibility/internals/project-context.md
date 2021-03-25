@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc5550cfde44c71b1b663a30cf1824c6edfcf82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38571b51c31b20bd38e50dd32644be4c262e0702
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907681"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062865"
 ---
 # <a name="project-context"></a>프로젝트 컨텍스트
 사용자가 프로젝트 및 프로젝트 항목을 추가 하거나 사용할 때 IDE는 프로젝트 컨텍스트의 개념을 사용 하 여 다양 한 작업을 수행 해야 하는 방법을 결정 합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "99907681"
 
  다른 경우에는 항목의 프로젝트 컨텍스트가 명시적으로 지정 되지 않습니다. 예를 들어 사용자가 **파일 메뉴에서** **기존 파일 열기** 명령을 선택 하 여 파일을 열거나, 디버거가 파일에 대해 작동 하거나, 사용자가 **찾기 및 바꾸기** 대화 상자에서 **파일에서 찾기** 명령을 클릭할 때 항목의 컨텍스트를 사용할 수 없습니다. 이러한 상황을 처리 하기 위해 IDE는를 호출 하 여 문서를 여는 데 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> 가장 적합 한 프로젝트를 찾는 프로세스를 관리 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 우선 순위](../../extensibility/internals/project-priority.md)
 - [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)

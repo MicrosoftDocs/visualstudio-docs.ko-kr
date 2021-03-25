@@ -9,17 +9,17 @@ ms.topic: reference
 helpviewer_keywords:
 - EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59eee84503ed2017c12dfcca3b7acd12c54e59db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3f2ca8799b0816ffe5c33d954d362183f330f25
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883443"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070195"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 요소 (Visual Studio 템플릿)
 사용자가 위치 필드를 편집할 수 있는지 여부를 지정 합니다.

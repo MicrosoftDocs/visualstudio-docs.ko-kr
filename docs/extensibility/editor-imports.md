@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0587ed6487ec3a1bb833a804bb5ffa76cbc101f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070156"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 확장을 제공 하는 많은 편집기 서비스, 팩터리 및 broker를 핵심 편집기에 대 한 다양 한 종류의 액세스로 가져올 수 있습니다. 예를 들어를 가져와서 지정 된 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 콘텐츠 형식에 대해를 제공할 수 있습니다. 이 탐색기를 사용 하면 텍스트 버퍼에서 다양 한 검색을 수행할 수 있습니다.
@@ -122,5 +122,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>입니다.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

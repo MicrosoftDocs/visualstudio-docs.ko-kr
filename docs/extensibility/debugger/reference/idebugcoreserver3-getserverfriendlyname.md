@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1ccb77cca920706dc7622e98dfca62743bf3b65
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 72e281c6e40f8aea558ef600b531e59a3b26a5c3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163111"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094135"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 서버에 대 한 친숙 한 이름을 검색 합니다.
@@ -55,6 +55,6 @@ int GetServerFriendlyName(
 
  컴퓨터 지향 이름의 경우 [Getservername](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

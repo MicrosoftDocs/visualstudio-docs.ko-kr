@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a29fcc5cca12698919f0bc4af02bc3db1fe3fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 975dc6df875866a16fffc5d044ae82c996b84e35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163319"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077969"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 관리 코드와 관련 된 메서드를 사용 하 여 **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)를 확장 하는 com + 기호 공급자를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
@@ -30,7 +30,7 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 ## <a name="methods"></a>메서드
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[FunctionHasLineInfo](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo.md)|지정 된 메서드에 줄 정보가 있는지 여부를 확인 합니다.|
 |[GetTypesByName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-gettypesbyname.md)|해당 이름이 지정 된 형식을 검색 합니다.|

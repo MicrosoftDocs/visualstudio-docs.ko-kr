@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f022023ec03ddb280424f3c47944c91e8fa696de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ff3fa6f061f894abce17d2e6c58bfb791740a90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958390"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061773"
 ---
 # <a name="writing-to-the-user-settings-store"></a>사용자 설정 저장소에 쓰기
 사용자 설정은 **도구/옵션** 대화 상자, 속성 창 및 기타 특정 대화 상자와 같은 쓰기 가능한 설정입니다. Visual Studio 확장에서는이를 사용 하 여 소량의 데이터를 저장할 수 있습니다. 이 연습에서는 사용자 설정 저장소에서 읽고 쓰는 방법으로 Visual Studio에 메모장을 외부 도구로 추가 하는 방법을 보여 줍니다.
@@ -24,7 +24,7 @@ ms.locfileid: "99958390"
 
 1. Usersettings사용자 확장 이라는 VSIX 프로젝트를 만든 다음 UserSettingsStoreCommand 이라는 사용자 지정 명령을 추가 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
 
-2. UserSettingsStoreCommand.cs에서 다음 using 지시문을 추가 합니다.
+2. UserSettingsStoreCommand에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Collections.Generic;

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68ec12cd97318fc41b97c5a7701dff2346524101
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 63ce34fc9eddec84326982cf7d30fda919817040
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143170"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077930"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 컨테이너의 필드에 대 한 열거자를 만듭니다.
@@ -70,7 +70,7 @@ int EnumFields(
 ## <a name="remarks"></a>설명
  예를 들어 `dwKindFilter` ,, `dwModifiersFilter` 및 `pszNameFilter` 매개 변수를 결합 하 여 "MyMethod" 라는 모든 공용 가상 메서드를 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

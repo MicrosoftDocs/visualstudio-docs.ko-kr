@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2476b819d940b5fb6014d00e1bdf920f02a46696
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150863"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085210"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에 포함 된 필드의 종류를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_FIELD_KIND {
@@ -190,7 +190,7 @@ public enum enum_FIELD_KIND {
 필드가 참조 임을 나타냅니다.
 
 `FIELD_TYPE_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_SYM_MEMBER`\
 필드가 멤버 임을 나타냅니다.
@@ -214,7 +214,7 @@ public enum enum_FIELD_KIND {
 필드에서 속성을 설정 함을 나타냅니다.
 
 `FIELD_SYM_EXTENDED`\
-나중에 사용하기 위해 예약되어 있습니다.
+다음에 사용하도록 예약됩니다.
 
 `FIELD_KIND_MASK`\
 필드 종류에 대 한 마스크를 나타냅니다.

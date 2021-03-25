@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2303318c7a5f36027ce7709c5b09b5846fc6fab6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 295b8c3b33059811e665e362c9894103b47c422d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154979"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055000"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 클래스-내부 멤버
 개체에 대 한 추가 속성을 포함 <xref:System.Threading.Tasks.Task> 합니다.
@@ -39,12 +39,12 @@ ms.locfileid: "102154979"
 
 ### <a name="fields"></a>필드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|이 작업에 등록 된 자식 작업의 목록입니다.|
 
 ## <a name="remarks"></a>설명
  .NET Framework은 필요한 경우에만이 클래스의 필드를 초기화 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

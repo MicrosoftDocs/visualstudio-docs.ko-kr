@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20ede060901a9aeec591fb17d1f632cb5d228963
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13541766cdcd6cdd3a0a49673703d6abea82a5c7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163475"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094174"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 관리 코드와 관련 된 메서드를 사용 하 여 COM + 기호 공급자를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugComPlusSymbolProvider : IDebugSymbolProvider
@@ -33,7 +33,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ## <a name="methods"></a>메서드
  [Idebug기호 공급자](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|응용 프로그램 도메인 식별자가 지정 된 경우 지정 된 모듈에 대해 디버그 기호가 로드 되는지 여부를 결정 합니다.|
 |[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|지정 된 기본 형식에서 형식을 만듭니다.|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3ee9c145a4c6275f64d357d87ac1cc284bfac6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b2d9c58f9a2e58e58fce44cb06827e9039e48c9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921300"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054870"
 ---
 # <a name="get-a-port"></a>포트 가져오기
 포트는 프로세스가 실행 중인 컴퓨터에 대 한 연결을 나타냅니다. 이 컴퓨터는 로컬 컴퓨터 또는 원격 컴퓨터 일 수 있습니다. 즉, Windows 기반이 아닌 운영 체제를 실행할 수 있습니다. 자세한 내용은 [포트](../../extensibility/debugger/ports.md) 를 참조 하십시오.
@@ -98,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램 등록](../../extensibility/debugger/registering-the-program.md)
 - [프로그램을 디버그할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [포트 공급자](../../extensibility/debugger/port-suppliers.md)

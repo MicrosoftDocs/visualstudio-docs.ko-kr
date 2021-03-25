@@ -9,17 +9,17 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32557b2a476be9f662decc9992771fe359967a94
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883404"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070169"
 ---
 # <a name="error-codes"></a>오류 코드
 소스 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나 여야 합니다. 모든 오류는 음수, 경고 또는 정보 오류 코드가 긍정적 이며 success는 0입니다.
@@ -81,5 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 
  플러그 인에서 일부 작업 중에 파일을 읽기 전용으로 표시 한 경우에도 소스 제어 플러그 인은 작업 폴더에 있는 파일에 대 한 권한을 가정 하지 않아야 합니다. 작업 폴더의 파일을 이동, 삭제 및 플러그 인 컨트롤 외부에서 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

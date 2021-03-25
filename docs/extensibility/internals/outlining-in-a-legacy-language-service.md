@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a56d755341aa611f0e2762f6bae8940778fe0864
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062956"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>레거시 언어 서비스의 개요 표시
 개요를 사용 하면 복잡 한 프로그램을 개요 또는 개요로 축소할 수 있습니다. 예를 들어 c #에서는 메서드 서명만 표시 하는 모든 메서드를 한 줄로 축소할 수 있습니다. 또한 구조체와 클래스는 구조체 및 클래스의 이름만 표시 하도록 축소할 수 있습니다. 단일 메서드 내에서 복잡 한 논리를 축소 하 여, 및와 같은 문의 첫 번째 줄만 표시 함으로써 전체 흐름을 표시할 수 있습니다 `foreach` `if` `while` .
@@ -119,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

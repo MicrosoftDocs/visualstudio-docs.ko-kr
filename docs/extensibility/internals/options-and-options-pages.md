@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dac6c6898a8a8766d073cb5cd2f3bd330e7e2658
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b6c5810cd95b50a63f32cfaa6123e81e35a4be9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954579"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063034"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 **도구** 메뉴에서 **옵션** 을 클릭 하 여 **옵션** 대화 상자를 엽니다. 이 대화 상자의 옵션을 옵션 페이지 라고 통칭 합니다. 탐색 창에 있는 트리 컨트롤에는 옵션 범주가 있으며 모든 범주에는 옵션 페이지가 있습니다. 페이지를 선택 하면 오른쪽 창에 해당 옵션이 표시 됩니다. 이러한 페이지를 사용 하 여 VSPackage 상태를 결정 하는 옵션의 값을 변경할 수 있습니다.

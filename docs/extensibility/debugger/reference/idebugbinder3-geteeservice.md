@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ecd439ba1af40a54512c3ef15efb4728c8c54a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ccc4d28a06d87d7c17d16470e10f259657083cc9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167674"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094304"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 이 메서드는 요청 된 서비스를 반환 합니다.
@@ -65,7 +65,7 @@ Int GetEEService(
 ## <a name="remarks"></a>설명
  `IID` [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 인터페이스 ()에 대 한를 전달 `IID_IEEVisualizerServiceProvider` 하 여 형식 시각화 도우미 서비스를 사용할 수 있는지 확인 합니다. 그렇다면 식 계산기는 형식 시각화 도우미를 지원 하기 위해 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 인터페이스를 가져올 수 있습니다. 자세한 내용은 [데이터 시각화 및 보기](../../../extensibility/debugger/visualizing-and-viewing-data.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

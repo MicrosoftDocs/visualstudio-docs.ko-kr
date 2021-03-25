@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cddf09eac5f887e0c5615af76e6956b590576786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ddc218d0e9499253269a12687fa89122cfe007
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930670"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055013"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>공용 언어 런타임 및 식 계산
 > [!IMPORTANT]
@@ -37,5 +37,5 @@ ms.locfileid: "99930670"
 
  CLR DE가 독점 EE를 호출 하 여 식을 계산할 때 DE는 EE와 바인더 개체에 대 한 인터페이스를 제공 합니다. 따라서 CLR 기반 디버그 엔진을 작성 하는 것은 적절 한 식 계산기 인터페이스만 구현 해야 한다는 것을 의미 합니다. CLR은 바인딩과 기호 처리를 처리 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

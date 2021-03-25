@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fdf09859c8b943eb71a403f49b29dc8b315503
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7793dddb1a6bdd448b2b5a912f59b625bdca733e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054753"
 ---
 # <a name="notify-the-port"></a>포트에 알림
 프로그램을 시작한 후 다음과 같이 포트에 알림이 표시 되어야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "99884912"
 
  DE의 id를 알고 있으면 SDM에서 프로그램에 연결할 준비가 된 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램 시작](../../extensibility/debugger/launching-a-program.md)
 - [시작 후 연결](../../extensibility/debugger/attaching-after-a-launch.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

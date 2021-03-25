@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c7331745ca734afff26b19075e3427d46ea88bdb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bfa0e9676e408ddc93e42ccb03651598a32f1f7c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167258"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094122"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 문서에서 텍스트 특성이 업데이트 되었음을 디버그 패키지에 알립니다.
@@ -52,6 +52,6 @@ int onUpdateTextAttributes(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

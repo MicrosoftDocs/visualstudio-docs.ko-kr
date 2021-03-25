@@ -8,17 +8,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ab87f9c8b54d9c31466068668eb8dd5a1857a06
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903196"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070104"
 ---
 # <a name="extend-the-status-bar"></a>상태 표시줄 확장
 IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 표시할 수 있습니다.
@@ -36,7 +36,7 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
 1. **TestStatusBarExtension** 라는 VSIX 프로젝트를 만들고 **TestStatusBarCommand** 라는 메뉴 명령을 추가 합니다.
 
-2. *TestStatusBarCommand.cs* 에서 명령 처리기 메서드 코드 ( `MenuItemCallback` )를 다음으로 바꿉니다.
+2. *TestStatusBarCommand* 에서 명령 처리기 메서드 코드 ( `MenuItemCallback` )를 다음으로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -80,7 +80,7 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
 1. 이 절차에서는 진행률 표시줄을 초기화 하 고 업데이트 하는 방법을 보여 줍니다.
 
-2. *TestStatusBarCommand.cs* 파일을 열고 `MenuItemCallback` 메서드를 다음 코드로 바꿉니다.
+2. *TestStatusBarCommand* 파일을 열고 `MenuItemCallback` 메서드를 다음 코드로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -118,7 +118,7 @@ IDE 하단에 있는 Visual Studio 상태 표시줄을 사용 하 여 정보를 
 
      이 절차에서는 프로젝트 또는 솔루션 빌드를 나타내는 표준 Visual Studio 애니메이션을 표시 합니다.
 
-2. *TestStatusBarCommand.cs* 파일을 열고 `MenuItemCallback` 메서드를 다음 코드로 바꿉니다.
+2. *TestStatusBarCommand* 파일을 열고 `MenuItemCallback` 메서드를 다음 코드로 바꿉니다.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7527c361a889d5aa1f19ec7a211f8aeb8dcbd15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d10ce818e9df370b4484a0250525dbe9482b8b2c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921387"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054987"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>식 계산기 구현 전략
 > [!IMPORTANT]
@@ -31,6 +31,6 @@ ms.locfileid: "99921387"
 
  다음에는 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 구현 해야 합니다. DE (디버그 엔진)는이 메서드를 호출 하 여 `IDebugProperty2::EnumChildren` 의 인수를 전달 함으로써 지역 변수 및 인수 목록을 가져옵니다 `guidFilter` `guidFilterLocalsPlusArgs` . `IDebugProperty2::EnumChildren` 는 [Enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) 및 [enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)을 호출 하 여 결과를 단일 열거형으로 결합 합니다. 자세한 내용은 [지역 표시](../../extensibility/debugger/displaying-locals.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [식 계산기 구현](../../extensibility/debugger/implementing-an-expression-evaluator.md)
 - [표시 지역](../../extensibility/debugger/displaying-locals.md)

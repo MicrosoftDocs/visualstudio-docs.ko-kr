@@ -8,17 +8,17 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 506606291996c94ff10514c6c57f83c6e1133862
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896838"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062826"
 ---
 # <a name="project-modeling"></a>프로젝트 모델링
 프로젝트에 대 한 자동화를 제공 하는 다음 단계는 표준 프로젝트 개체 ( <xref:EnvDTE.Projects> 및 `ProjectItems` 컬렉션, `Project` 및 <xref:EnvDTE.ProjectItem> 개체) 및 구현에 고유한 나머지 개체를 구현 하는 것입니다. 이러한 표준 개체는 Dteinternal .h 파일에 정의 되어 있습니다. 표준 개체의 구현은 BscPrj 샘플에서 제공 됩니다. 이러한 클래스를 모델로 사용 하 여 다른 프로젝트 형식의 project 개체와 나란히 있는 고유한 표준 프로젝트 개체를 만들 수 있습니다.
@@ -54,7 +54,7 @@ Projects
 
  개체를 구현 하지 않는 경우 `Project` 환경에서 `Project` 프로젝트 이름만 포함 하는 제네릭 개체를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

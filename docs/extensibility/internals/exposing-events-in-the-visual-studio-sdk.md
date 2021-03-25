@@ -8,17 +8,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946646"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069805"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK에서 이벤트 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 자동화를 사용 하 여 이벤트를 원본으로 지정할 수 있습니다. 프로젝트 및 프로젝트 항목에 대 한 이벤트를 원본으로 하는 것이 좋습니다.
@@ -54,7 +54,7 @@ ms.locfileid: "99946646"
 
  **AutomationProjectItemEvents** = 개체를 반환 `AutomationProjectItemsEvents` 합니다.
 
-|이름|Type|범위|Description|
+|Name|Type|범위|Description|
 |----------|----------|-----------|-----------------|
 |기본값 (@)|REG_SZ|사용 안 함|사용되지 않습니다. 설명서에 대 한 데이터 필드를 사용할 수 있습니다.|
 |*AutomationProjectsEvents*|REG_SZ|이벤트 개체의 이름입니다.|키 이름만 관련 됩니다. 설명서에 대 한 데이터 필드를 사용할 수 있습니다.<br /><br /> 이 예제는 기본 프로젝트 샘플에서 제공 됩니다.|
@@ -70,7 +70,7 @@ ms.locfileid: "99946646"
 
  *Automationevents. h* 및 *automationevents .cpp* 에는 다음 표에 나와 있는 클래스의 선언과 구현이 포함 되어 있습니다.
 
-|인스턴스|Description|
+|클래스|Description|
 |-----------|-----------------|
 |`CAutomationEvents`|개체에서 검색 되는 이벤트 루트 개체를 구현 `DTE.Events` 합니다.|
 |`CProjectsEventsContainer` 및 `CProjectItemsEventsContainer`|해당 이벤트를 발생 시키는 이벤트 소스 개체를 구현 합니다.|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  이벤트 개체는 동일한 중앙 위치인 개체에서 검색 됩니다 `DTE.Events` . 이러한 방식으로 모든 이벤트 개체는 함께 그룹화 되므로 최종 사용자가 전체 개체 모델을 검색 하 여 특정 이벤트를 찾을 필요가 없습니다. 이를 통해 시스템 수준 이벤트에 대 한 사용자 고유의 코드를 구현 하도록 요구 하는 대신 특정 VSPackage 개체를 제공할 수도 있습니다. 그러나 최종 사용자가 인터페이스에 대 한 이벤트를 찾아야 하는 경우 해당 `ProjectItem` 이벤트 개체가 검색 되는 위치에서 즉시 제거 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
