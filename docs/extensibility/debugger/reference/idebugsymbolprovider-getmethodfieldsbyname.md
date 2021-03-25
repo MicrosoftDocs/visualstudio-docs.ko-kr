@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c807717dd9b984fdb2f6ab63c5e9539af4a033b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 54962d87bcb3de471c9799f4c6be9f969b8eed17
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087004"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 이 메서드는 정규화 된 메서드 이름을 나타내는 필드를 가져옵니다.
@@ -60,6 +60,6 @@ int GetMethodFieldsByName(
 ## <a name="remarks"></a>설명
  예를 들어 오버 로드 된 경우 여러 필드에 메서드를 연결할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

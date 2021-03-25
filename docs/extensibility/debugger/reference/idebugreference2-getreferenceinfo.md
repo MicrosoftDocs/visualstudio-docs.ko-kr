@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetReferenceInfo
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef953ccde844ac7a2fb5289affaf381f56af8719
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 01a36cbf7d1ca9ec56d7785c06d16e0071abc177
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168926"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087225"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 나중에 사용하기 위해 예약되어 있습니다.
+참조를 설명 하는 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 구조체를 가져옵니다. 다음에 사용하도록 예약됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,7 +72,7 @@ int GetReferenceInfo (
 ## <a name="return-value"></a>반환 값
  항상 `E_NOTIMPL`를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

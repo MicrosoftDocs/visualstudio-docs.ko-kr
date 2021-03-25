@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetContextFromAddress method
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 698167d64a8a1449f6aced543b42450a0213251b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e8e4f80759986942c7cf23452924fcc5e4fea1b0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168584"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087095"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 이 메서드는 디버그 주소를 문서 컨텍스트에 매핑합니다.
@@ -52,7 +52,7 @@ int GetContextFromAddress(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

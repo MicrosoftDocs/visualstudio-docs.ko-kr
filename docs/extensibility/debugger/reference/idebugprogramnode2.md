@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2 interface
 ms.assetid: 80e511d8-9b40-4a85-aa5d-952fa5ee6ae7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d697ce389a7672f4f97efc17547e79173da3e2dd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 55bd6180c3b7681196e72460c951ffeafe9f2cf7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151573"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087277"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 이 인터페이스는 디버그할 수 있는 프로그램을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramNode2 : IUnknown
@@ -38,7 +38,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramNode2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|프로그램의 이름을 가져옵니다.|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|프로그램을 호스트 하는 프로세스의 이름을 가져옵니다.|
@@ -58,7 +58,7 @@ IDebugProgramNode2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

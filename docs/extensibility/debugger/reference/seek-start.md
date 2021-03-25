@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bb097c6015b5457a0ad4808674321c410a559d2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a15635f2cf56f3be1e9955af4ee79782ed3c85fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221901"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061526"
 ---
 # <a name="seek_start"></a>SEEK_START
 디스어셈블리 스트림에서 검색을 시작할 위치를 지정 합니다.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8870910e01f2afa5bff6eac461d6e80f35e6a7e0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 27608634859ae96a8fb9461076397bb6df53570d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150044"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073562"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 생성자를 사용 하 여 개체를 만듭니다.
@@ -67,6 +67,6 @@ int CreateObject(
 
  개체 매개 변수에 생성자가 필요 하지 않은 경우 [Createobjectnoconstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

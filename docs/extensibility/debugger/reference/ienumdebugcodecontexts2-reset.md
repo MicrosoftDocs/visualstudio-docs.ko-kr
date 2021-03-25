@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Reset
 ms.assetid: df6cf1e3-2ef8-4d38-81a0-8e9adf151884
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48df7ce32f085ea387f6ce49e891a0f0e01eb2cf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 53a0603de4c40439e1ca374585117bbb6d1bb584
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226958"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080140"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
 열거형을 첫 번째 요소로 다시 설정 합니다.
@@ -44,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>설명
  이 메서드가 호출 된 후 [다음](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md) 메서드에 대 한 다음 호출에서 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

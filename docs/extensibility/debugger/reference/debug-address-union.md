@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea2999e85c721ce2582a781b8914241076470710
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 71867a6a2cbaaf87b5b0a66eab5f53826fe47fdf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170707"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096436"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 여러 종류의 주소를 설명 합니다.
@@ -110,7 +110,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_ARRAYELEM`|[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)|
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 `METADATA_ADDRESS_ARRAYELEM` `DEBUG_ADDRESS_UNION` c #에서 구조체의 한 종류의 주소 ()를 해석 하는 방법을 보여 줍니다. 나머지 요소는 정확히 동일한 방법으로 해석할 수 있습니다.
 
 ```csharp
@@ -142,7 +142,7 @@ namespace MyPackage
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

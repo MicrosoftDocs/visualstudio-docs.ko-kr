@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eed6bf305667b98e16f4a112b1196456269e5b3c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c706d8908f1fa8776d1d7304772a0c5eec03bd2d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165543"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073497"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 단순 정수와 같은 기본 데이터 개체를 만듭니다.
@@ -55,5 +55,5 @@ int CreatePrimitiveObject(
 ## <a name="remarks"></a>설명
  [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스로 표현 되는 함수에 대 한 매개 변수인 기본 개체를 나타내는 개체를 만들려면이 메서드를 호출 합니다. 예를 들어 식 문자열이 "myString (5)" 인 경우이 메서드는 정수 5를 나타내는 개체를 만드는 데 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

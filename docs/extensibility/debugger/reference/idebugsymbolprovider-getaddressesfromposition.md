@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4437055ccd693b40fe4f1f7d6364d9601c827a3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4dd3b8fbe65a72ccf937007d19117359859ff29f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159681"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087108"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 이 메서드는 문서 위치를 디버그 주소 배열에 매핑합니다.
@@ -67,7 +67,7 @@ int GetAddressesFromPosition(
 
  템플릿의 경우와 같이 단일 문에 여러 개의 디버그 주소가 있을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

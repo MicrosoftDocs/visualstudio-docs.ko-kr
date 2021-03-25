@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsNullReference method
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 844e6c92385c1aa719d3c9d0ff399db9104dccc0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ba037f995c97a3bfbf059f51bfb4f8777803a172
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161513"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054077"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 이 개체가 null 참조 인지 여부를 테스트 합니다.
@@ -50,5 +50,5 @@ int IsNullReference(
 ## <a name="remarks"></a>설명
  Null 참조는 빈 개체 또는에 할당 되지 않은 개체를 의미 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ports
 - debugging [Debugging SDK], ports
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9629a27931fad9e0a7f753caad1c21893700d42
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927186"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067779"
 ---
 # <a name="ports"></a>포트
 디버거 아키텍처에서 *포트*:
@@ -33,7 +33,7 @@ ms.locfileid: "99927186"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 네이티브 및 관리 되는 모든 Windows 기반 프로세스를 처리 하는 기본 포트를 제공 합니다. Windows 기반이 아닌 외부 장치를 사용 하는 연결에 대해 사용자 지정 포트를 설정 해야 합니다. 이러한 사용자 지정 포트를 제공 하려면 사용자 지정 포트 공급자도 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [서버](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [프로세스](../../extensibility/debugger/processes.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

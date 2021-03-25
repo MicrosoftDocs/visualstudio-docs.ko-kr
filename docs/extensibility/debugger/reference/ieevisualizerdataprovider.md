@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6af1f32a627b713c7907c9de29470f7624fdd7e4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222889"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080296"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ IEEVisualizerDataProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|이 시각화 도우미가 나타내는 개체 (및 그 다음의 값)를 업데이트할 수 있는지 여부를 확인 합니다.|
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|이 시각화 도우미에 대 한 개체의 재평가를 강제로 수행 합니다.|
@@ -60,7 +60,7 @@ IEEVisualizerDataProvider : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

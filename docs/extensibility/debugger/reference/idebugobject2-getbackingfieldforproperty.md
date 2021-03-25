@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6f7a5427193aafe8a4aa35fdf331f62bb08e3fe6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 210381e034ccae8ab9662b77c47970af2affa095
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170174"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053804"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 이 개체가 나타내는 속성을 지원 하 고 있을 수 있는 필드 또는 변수 (있는 경우)를 가져옵니다.
@@ -50,5 +50,5 @@ int GetBackingFieldForProperty(
 ## <a name="remarks"></a>설명
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 개체는 관리 코드 클래스 속성, 즉 get 및/또는 set 접근자가 있는 메서드를 나타냅니다. 이러한 속성에는 일반적으로 속성에 의해 조작 되는 값을 포함 하는 변수가 필요 합니다. 이 변수를 지원 필드 라고 합니다. 개체에 대 한 지원 필드가 없는 경우에는 null 값을 반환 해야 합니다. 일부 호출자는 반환 값에 주의를 기울여야 하지 않을 수 있지만 대신에서 null 값이 반환 되었는지 확인 `ppObject` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

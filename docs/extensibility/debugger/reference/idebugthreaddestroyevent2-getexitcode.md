@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 693f44ededcaa081d72ef44d60d31473f0b70e1d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b569d526ace8b178d3758e62e36895f5ec0262c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227374"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086835"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 스레드의 종료 코드를 가져옵니다.
@@ -47,5 +47,5 @@ int GetExitCode (
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

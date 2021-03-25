@@ -8,17 +8,17 @@ helpviewer_keywords:
 - port suppliers
 - debugging [Debugging SDK], port suppliers
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b543770e5fcc920b05e5d19a15e312174ddad3dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ace9a7072287fa26aee3fa2abd083cc9f7f1314
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934392"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067805"
 ---
 # <a name="port-suppliers"></a>포트 공급자
 디버거 아키텍처에서 *포트 공급자* 는 다음과 같습니다.
@@ -33,7 +33,7 @@ ms.locfileid: "99934392"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 포트 공급자와 기본 포트를 제공 합니다. 사용자 지정 포트를 구현 해야 하는 경우 해당 사용자 지정 포트를 제공 하기 위해 사용자 지정 포트 공급자도 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [서버](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Ports](../../extensibility/debugger/ports.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

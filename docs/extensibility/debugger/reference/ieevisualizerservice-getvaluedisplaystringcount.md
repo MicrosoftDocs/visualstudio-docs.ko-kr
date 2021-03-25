@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b77e2537e7581bb15f6458b4515d407fcfa1f827
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f48ff7d513b211396c0eec28f5670bbe648f01b4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222850"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080244"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 지정 된 속성 또는 필드에 대해 표시할 값 문자열의 수를 검색 합니다.
@@ -56,5 +56,5 @@ int GetValueDisplayStringCount (
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a52856cfa70491b7a7daa9079c111b1430475d22
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169732"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053713"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 이 인터페이스는 코드 위치에 바인딩할 준비가 된 중단점을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPendingBreakpoint2 : IUnknown
@@ -38,7 +38,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPendingBreakpoint2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|보류 중인이 중단점을 코드 위치에 바인딩할 수 있는지 여부를 확인 합니다.|
 |[바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|이 보류 중인 중단점을 하나 이상의 코드 위치에 바인딩합니다.|
@@ -50,7 +50,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|이 보류 중인 중단점과 연결 된 패스 수를 설정 하거나 변경 합니다.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|이 보류 중인 중단점에서 바인딩된 모든 중단점을 열거 합니다.|
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|이 보류 중인 중단점에서 발생 한 모든 오류 중단점을 열거 합니다.|
-|[Delete](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|보류 중인이 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.|
+|[삭제](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|보류 중인이 중단점과이 중단점에서 바인딩된 모든 중단점을 삭제 합니다.|
 
 ## <a name="remarks"></a>설명
  `IDebugPendingBreakpoint2` 는 하나 이상의 프로그램에 적용 될 수 있는 코드에 중단점을 바인딩하는 데 필요한 모든 정보를 제공 하는 것으로 간주할 수 있습니다.
@@ -64,7 +64,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)

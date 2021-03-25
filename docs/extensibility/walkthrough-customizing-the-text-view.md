@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080309"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>연습: 텍스트 뷰 사용자 지정
 편집기 형식 맵에서 다음 속성을 수정 하 여 텍스트 뷰를 사용자 지정할 수 있습니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99916990"
 
 - 표시 공백
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -93,5 +93,5 @@ ms.locfileid: "99916990"
 
 5. 표시 되는 공백을 설정 합니다. **편집** 메뉴에서 **고급** 을 가리킨 다음 **공백 보기** 를 클릭 합니다. 텍스트에 일부 탭을 입력 합니다. 탭을 나타내는 빨간색 화살표가 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

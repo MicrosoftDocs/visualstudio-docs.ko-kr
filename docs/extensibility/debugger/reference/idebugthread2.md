@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2 interface
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8b09aa546e4711b1c11623a3596ba0e385b2a14
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 24a9cef2e62dc2597871f270c9ee48ad58c0a0e1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164424"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086978"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 이 인터페이스는 프로그램에서 실행 중인 스레드를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugThread2 : IUnknown
@@ -42,7 +42,7 @@ IDebugThread2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugThread2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|이 스레드에 대 한 스택 프레임 목록을 검색 합니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|스레드의 이름을 가져옵니다.|
@@ -68,7 +68,7 @@ IDebugThread2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)

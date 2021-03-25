@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsEncOutdated method
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 583b77ed4f3fbfc81bb595ddde025b8c08f169dd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e9b78eb0295d039d4f5d8ca3169cb77d04321aaf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170018"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053739"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 이 메서드는이 개체 또는 부모 컨테이너의 편집 하며 계속 하기 상태가 최신이 아닌 지 여부를 확인 합니다. 사용자 지정 식 계산기는이 메서드를 구현 하지 않으며 항상를 반환 `E_NOTIMPL` 합니다.
@@ -50,5 +50,5 @@ int IsEncOutdated(
 > [!NOTE]
 > 사용자 지정 식 계산기는 항상를 반환 해야 합니다 `E_NOTIMPL` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

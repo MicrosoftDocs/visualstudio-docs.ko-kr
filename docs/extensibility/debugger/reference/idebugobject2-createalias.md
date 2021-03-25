@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2c0059b7b3b12b8e2e59524939c4a47aad97219
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d7265187172d79eb59624edb9c2428b243aae540
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170190"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053856"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 이 개체의 고유 ID 또는 별칭을 만들거나 기존 별칭을 반환 합니다.
@@ -50,6 +50,6 @@ int CreateAlias(
 ## <a name="remarks"></a>설명
  별칭은 개체가 메모리에 있는 동안 특정 개체를 나타내는 레이블입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

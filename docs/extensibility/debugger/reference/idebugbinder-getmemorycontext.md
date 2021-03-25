@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e31df905c35fa81e3e56e32ef969f9663054dc5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a9fe7c0ee2d7902d24df1bdea773b4b2745a96f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067454"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 이 메서드는 개체 위치 또는 메모리 주소를 메모리 컨텍스트로 변환 합니다.
@@ -57,7 +57,7 @@ int GetMemoryContext(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe8d170f6e7b4dcd774773109c4880d4898e0b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46e25ddfbe60e1b9ee456e586c6f424fc489f626
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884834"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067714"
 ---
 # <a name="processes"></a>프로세스
 디버거 아키텍처에서 *프로세스* 는 다음과 같습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "99884834"
 
   디버그 패키지는 [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)를 호출 하 여 디버그 엔진 (de)을 프로세스에 연결할 수 있습니다 .이는 de-de가 처리할 수 있는 프로세스에서 실행 되는 모든 프로그램에 연결 하는 것을 의미 합니다. 예를 들어 공용 언어 런타임 DE가 프로세스에 연결 되 면 관리 코드를 실행 하는 프로그램에만 연결 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램](../../extensibility/debugger/programs.md)
 - [스레드](../../extensibility/debugger/threads.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0187a02dd14966ee9354d8865991531f1d66ae6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 563db644069731c5d74088dadf296933c36b0cc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884899"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067844"
 ---
 # <a name="operational-modes"></a>운영 모드
 다음과 같이 IDE에서 작동할 수 있는 세 가지 모드가 있습니다.
@@ -56,5 +56,5 @@ ms.locfileid: "99884899"
 
  프로그램에서 코드의 다음 줄 또는 함수에 대 한 단계를 성공적으로 실행 하거나 커서 또는 설정 된 중단점까지 실행 하면 DE가 자동으로 중단 모드로 전환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행 제어](../../extensibility/debugger/control-of-execution.md)

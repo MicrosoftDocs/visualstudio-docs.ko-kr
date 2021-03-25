@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd37073990a5a91f7eaa04d88e4aa7a73efb74ff
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b25d5147283ad14b77e216a23a45f69516951908
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170031"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053752"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 이 개체와 연결 된 값을 나타내는 관리 되는 코드 개체를 가져옵니다.
@@ -50,5 +50,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>설명
  `ICorDebugValue`개체는 값을 나타내는 공용 언어 런타임 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

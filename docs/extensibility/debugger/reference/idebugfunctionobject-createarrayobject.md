@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aee0617364321e5a18f0ea83ef7f19f1388209df
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 94216521f0a57a76f83c68f168ed1afcac199a0e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166491"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073549"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 배열 개체를 만듭니다. 이 배열에는 기본 또는 개체 인스턴스 값이 포함 될 수 있습니다.
@@ -75,5 +75,5 @@ int CreateArrayObject(
 ## <a name="remarks"></a>설명
  [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스로 표현 되는 함수에 대 한 배열 매개 변수를 나타내는 개체를 만들려면이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

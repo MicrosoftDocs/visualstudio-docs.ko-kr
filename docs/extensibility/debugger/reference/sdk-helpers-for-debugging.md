@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936004"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061539"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 이러한 함수와 선언에는 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하기 위한 전역 도우미 함수가 있습니다.
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[메트릭 값]*|메트릭에 할당 된 값입니다. 값에 포함 되는 형식 (문자열, 숫자 등)은 메트릭에 따라 달라 집니다.|
 
 > [!NOTE]
-> 모든 Guid는 형식으로 저장 됩니다 `{GUID}` . 예들 들어 `{123D150B-FA18-461C-B218-45B3E4589F9B}`입니다.
+> 모든 Guid는 형식으로 저장 됩니다 `{GUID}` . 예: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
 
 ### <a name="debug-engines"></a>디버그 엔진
  다음은 레지스트리의 디버그 엔진 메트릭에 대 한 구성입니다. `Engine` 는 디버그 엔진의 메트릭 유형 이름이 고 위의 레지스트리 하위 트리의 *[메트릭 유형]* 에 해당 합니다.
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  라이브러리: cdss\ad2defilelib, libs\dbgmetric.lib
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

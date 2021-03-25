@@ -4,17 +4,17 @@ description: 일반적인 Visual Studio 셸 요소 및 테마를 사용 하 여 
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8edd16744a6c094ece00ee5e4b8239f3d4f5a92e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054038"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio에 대 한 공유 색
 일반적인 Visual Studio 셸 요소를 사용 하는 UI를 디자인 하거나 인터페이스 요소를 유사한 기능과 일치 시키는 경우 패키지 정의 파일에서 기존 토큰 이름을 사용 하 여 색을 선택 하 고 할당 합니다. 이렇게 하면 UI가 전체 Visual Studio 환경과 일관성 있게 유지되며 테마를 추가하거나 업데이트할 경우 자동으로 업데이트됩니다.
@@ -300,7 +300,7 @@ ms.locfileid: "99927225"
 | --- | --- |
 | 배경 | 투명 |
 | 전경(텍스트) | `Environment.CommandBarTextActive` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **목록 보기 항목: 활성 상태**
 
@@ -308,7 +308,7 @@ ms.locfileid: "99927225"
 | --- | --- |
 | 배경 | `TreeView.SelectedItemActive` |
 | 전경(텍스트) | `TreeView.SelectedItemActiveText` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **목록 보기 항목: 비활성 상태**
 
@@ -316,7 +316,7 @@ ms.locfileid: "99927225"
 | --- | --- |
 | 배경 | `TreeView.SelectedItemInactive` |
 | 전경(텍스트) | `TreeView.SelectedItemInactiveText` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 ### <a name="ui-text"></a>UI 텍스트
 
@@ -680,7 +680,7 @@ ms.locfileid: "99927225"
 | --- | --- |
 | 배경 | `SearchControl.Selection` |
 | 전경(텍스트) | `SearchControl.FocusedBackground` |
-| 테두리 | None |
+| 테두리 | 없음 |
 | 구분 기호 | `SearchControl.FocusedDropDownSeparator` |
 
 **사용 하지 않도록 설정 된 검색 입력 필드**
@@ -700,7 +700,7 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(검색 문자 모양) | `SearchControl.SearchGlyph` |
 | 전경(중지 문자 모양) | `SearchControl.StopGlyph` |
 | 전경(지우기 문자 모양) | `SearchControl.ClearGlyph` |
@@ -734,9 +734,9 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(문자 모양) | `SearchControl.ActionButtonDisabledGlyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **포커스가 있는 검색 드롭다운 단추**
 
@@ -774,9 +774,9 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(문자 모양) | `SearchControl.DisabledDownButtonGlyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 #### <a name="search-drop-down-lists"></a>검색 드롭다운 목록
 검색 상자 드롭다운 메뉴는 Visual Studio의 다른 드롭다운 메뉴 보다 약간 더 복잡할 수 있습니다. "제안 된 검색" 및 "검색 옵션" 섹션이 메뉴에 단독으로 또는 함께 표시 될 수 있으며 각각은 개별적으로 색이 지정 됩니다. 또한 함께 표시되는 경우 이러한 두 섹션이 줄로 구분되며, 테두리가 전체 드롭다운 메뉴를 둘러쌉니다.
@@ -874,7 +874,7 @@ ms.locfileid: "99927225"
 | 배경 | `TreeView.Background` |
 | 전경(텍스트) | `TreeView.Background` |
 | 전경(문자 모양) | `TreeView.Glyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **트리 뷰 항목: 가리키기 상태**
 
@@ -885,7 +885,7 @@ ms.locfileid: "99927225"
 | 배경 | `TreeView.Background` |
 | 전경(텍스트) | `TreeView.Background` |
 | 전경(문자 모양) | `TreeView.GlyphMouseOver` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **트리 뷰 항목: 위로 상태 끌기**
 
@@ -896,7 +896,7 @@ ms.locfileid: "99927225"
 | 배경 | `TreeView.DragOverItem` |
 | 전경(텍스트) | `TreeView.DragOverItem` |
 | 전경(문자 모양) | `TreeView.DragOverItemGlyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **트리 뷰 항목: 선택 됨, 포커스가 있는 상태**
 
@@ -918,7 +918,7 @@ ms.locfileid: "99927225"
 | 배경 | `TreeView.SelectedItemInactive` |
 | 전경(텍스트) | `TreeView.SelectedItemInactive` |
 | 전경(문자 모양) | `TreeView.SelectedItemInactiveGlyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **트리 뷰 항목: 가리킨 상태, 선택 됨 및 포커스가 있는 상태**
 
@@ -940,7 +940,7 @@ ms.locfileid: "99927225"
 | 배경 | `TreeView.SelectedItemInactive` |
 | 전경(텍스트) | `TreeView.SelectedItemInactive` |
 | 전경(문자 모양) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 ## <a name="shell-appearance"></a>셸 모양
 
@@ -1009,7 +1009,7 @@ ms.locfileid: "99927225"
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
 | 배경 | `ManifestDesigner.TabActive` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **매니페스트 디자이너에서 선택한 설명 창: 기본 상태**
 
@@ -1066,10 +1066,10 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경 (텍스트) | `Environment.CommandBarTextActive` |
 | 전경 (문자 모양) | `Environment.CommandBarMenuGlyph` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 **메뉴 제목: 가리키기 상태**
 
@@ -1103,10 +1103,10 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(텍스트) | `Environment.CommandBarTextInactive` |
 | 전경(문자 모양) | `Environment.CommandBarTextInactive` |
-| 테두리 | None |
+| 테두리 | 없음 |
 
 #### <a name="menu-items"></a>메뉴 항목
 개별 메뉴 항목은 메뉴 텍스트와 선택적 아이콘, 확인란 또는 하위 메뉴 문자 모양으로 구성됩니다. 마우스로 가리키면 해당 배경색과 텍스트 색이 바뀝니다. 이 색 토큰은 배경/전경 쌍입니다.
@@ -1408,7 +1408,7 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(문자 모양) | `Environment.ComboBoxDisabledGlyph` |
 
 #### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> 명령 모음 드롭다운
@@ -1440,7 +1440,7 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(문자 모양) | `Environment.DropDownGlyph` |
 
 **명령 모음 드롭다운 목록: 기본 상태**
@@ -1540,7 +1540,7 @@ ms.locfileid: "99927225"
 
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
-| 배경 | None |
+| 배경 | 없음 |
 | 전경(텍스트) | `Environment.CommandBarTextActive` |
 | 전경(문자 모양) | `Environment.CommandBarSplitButtonGlyph` |
 | 테두리 | 해당 없음 |
@@ -2030,7 +2030,7 @@ Visual Studio의 도구 창은 다양한 작업에 사용되며 여러 상태 �
 | --- | --- |
 | 배경 | `Environment.ToolboxContent`<br />제목의 |
 | 배경 | `Environment.ToolWindowBackground`<br />(개별 항목 또는 사용할 수 있는 컨트롤이 없는 경우 전체 창) |
-| 테두리 | None |
+| 테두리 | 없음 |
 | 전경(문자 모양) | `Environment.ToolboxContent` |
 | 전경(텍스트) | `Environment.ToolboxContent` |
 
@@ -2041,7 +2041,7 @@ Visual Studio의 도구 창은 다양한 작업에 사용되며 여러 상태 �
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
 | 배경 | `Environment.ToolboxContentMouseOver`<br />(개별 항목만) |
-| 테두리 | None |
+| 테두리 | 없음 |
 | 전경(텍스트) | `Environment.ToolboxContentMouseOver`<br />(개별 항목만) |
 
 **선택한 도구 상자 노드: 포커스가 있는 상태**
@@ -2066,7 +2066,7 @@ Visual Studio의 도구 창은 다양한 작업에 사용되며 여러 상태 �
 | 요소 | 토큰 이름: Category.color |
 | --- | --- |
 | 배경 | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 범주 |
-| 테두리 | None |
+| 테두리 | 없음 |
 | 전경(문자 모양) | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 범주 |
 | 전경(텍스트) | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 범주 |
 

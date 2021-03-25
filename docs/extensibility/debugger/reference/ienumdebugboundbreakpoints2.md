@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e861465e2abf18a42af75d420dc58075d19ff253
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d6942bb8388afd596221325f86c3934b684af6f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224995"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080192"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 이 인터페이스는 보류 중인 중단점 또는 중단점 바인딩 이벤트와 연결 된 바인딩된 중단점을 열거 합니다.
@@ -44,7 +44,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugBoundBreakpoints2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|열거형 시퀀스에서 지정 된 수의 바인딩된 중단점을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|열거형 시퀀스에서 지정 된 수의 바인딩된 중단점을 건너뜁니다.|
@@ -62,7 +62,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)
 - [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)

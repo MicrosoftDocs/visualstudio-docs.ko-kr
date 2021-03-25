@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c2ac683a5fb4d694b7cf3ab84849b9d7c7df7a3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c2cbf4a84af4001519617a7e6306c4139e763aea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143131"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053791"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 이 개체와 연결 된 별칭을 가져옵니다 (있는 경우).
@@ -50,6 +50,6 @@ int GetAlias(
 ## <a name="remarks"></a>설명
  [Createalias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) 메서드를 호출 하 여 개체에 대 한 별칭을 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

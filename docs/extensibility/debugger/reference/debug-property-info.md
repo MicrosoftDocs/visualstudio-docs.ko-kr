@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13e780dd5d6825515673547aae8f3dc16edd885c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170590"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096293"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 디버그 속성에 대 한 정보를 포함 합니다.
@@ -86,7 +86,7 @@ public struct DEBUG_PROPERTY_INFO {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

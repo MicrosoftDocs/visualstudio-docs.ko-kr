@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: aba733cd1e8ff05adac0cd538da79e4d437e6f60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170720"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096475"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 또는 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 인터페이스에 대 한 다양 한 특성을 설명 합니다. [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체의 멤버입니다.

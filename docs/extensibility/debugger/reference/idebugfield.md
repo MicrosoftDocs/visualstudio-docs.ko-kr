@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c519ccfe70ba5685dec8230bf3e4fcb0eb768921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151846"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073679"
 ---
 # <a name="idebugfield"></a>IDebugField
 이 인터페이스는 필드, 즉 기호 또는 형식에 대 한 설명을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugField : IUnknown
@@ -38,7 +38,7 @@ IDebugField : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugField` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|기호 또는 형식에 대 한 표시할 정보를 가져옵니다.|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|필드의 종류를 가져옵니다.|
@@ -70,5 +70,5 @@ weather stormy;
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
