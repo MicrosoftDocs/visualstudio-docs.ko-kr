@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject interface
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14c405c9dbe3d1cbfdf61c606b995a686e063661
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 18355c5b21f8df0fde5faa31caf8d64fb8f3f3fe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170199"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054168"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102170199"
 
  이 인터페이스는 바인더에서 기호와 식의 값을 캡슐화 하기 위해 만드는 개체를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugObject : IUnknown
@@ -41,7 +41,7 @@ IDebugObject : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugObject` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|개체의 크기를 가져옵니다.|
 |[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|개체의 값을 연속 된 일련의 바이트로 가져옵니다.|
@@ -64,7 +64,7 @@ IDebugObject : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugbinder-bind.md)

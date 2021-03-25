@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
 ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e04c1559bc146028490771622eba42557ef6610
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: eb4b08cf4e7823f7f8f2cc3a9fb52af300872ed6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163605"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095461"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 데이터 스트림이 지정 된 경우 디버그 기호를 로드 합니다.
@@ -66,7 +66,7 @@ int LoadSymbolsFromStream(
 ## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다. 메서드는 [Load기호 Sfromstreamwithcormodule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) 메서드를 호출 합니다.
 
 ```cpp
@@ -82,5 +82,5 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

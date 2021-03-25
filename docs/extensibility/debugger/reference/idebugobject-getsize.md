@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetSize method
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69d644cb86c0df592218a5f6c90b8c2b62339718
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f37176d039ede66152f1255dc5a2459525bfe4be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159980"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054155"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 개체의 크기 (바이트)를 가져옵니다.
@@ -50,6 +50,6 @@ int GetSize(
 ## <a name="remarks"></a>설명
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) 메서드를 사용 하 여 값을 바이트 시퀀스로 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

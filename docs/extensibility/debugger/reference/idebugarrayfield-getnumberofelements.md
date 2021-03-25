@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 237cc74b2a34c78104e001bcc5a3b13dd6c7bd43
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4b5c3daee373c5803926dc259564dab18dfe5852
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143833"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058952"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 배열의 요소 수를 가져옵니다.
@@ -50,5 +50,5 @@ int GetNumberOfElements(
 ## <a name="remarks"></a>설명
  반환 되는 값은 차원 수에 관계 없이 배열의 총 요소 수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

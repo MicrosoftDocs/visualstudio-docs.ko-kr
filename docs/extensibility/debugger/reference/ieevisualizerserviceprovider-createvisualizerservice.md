@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService method
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b304dd8fe2845cf6c1201e6e128f8b89ec47b1b6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6f8695b578b1a069fd8fe8fa2afdd3a7c21ccd92
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222824"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086757"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 이 메서드는 시각화 도우미 서비스를 만듭니다.
@@ -70,7 +70,7 @@ int CreateVisualizerService(
 ## <a name="remarks"></a>설명
  `binder`, `pSymProv` 및 `pAddress` 매개 변수가 모두 메서드에 전달 되었습니다 `IDebugParsedExpression::EvaluateSync` . `CreateVisualizerService` 는 `IDebugParsedExpression::EvaluateSync` 형식 시각화 도우미에 대 한 식 계산기의 지원의 일부로 서만 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

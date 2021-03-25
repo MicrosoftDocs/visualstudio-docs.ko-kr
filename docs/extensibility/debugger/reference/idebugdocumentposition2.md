@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2 interface
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ebbe0a1101c146bf5d7e8c5fe7a096777f372c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8b7c4c8e469dff76e2af631c4943305b0e3ee8e7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154251"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066401"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 이 인터페이스는 소스 파일의 추상 위치를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDocumentPosition2 : IUnknown
@@ -38,7 +38,7 @@ IDebugDocumentPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentPosition2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|이 문서 위치를 포함 하는 소스 파일의 파일 이름을 가져옵니다.|
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|포함 하는 문서를 가져옵니다.|
@@ -52,7 +52,7 @@ IDebugDocumentPosition2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

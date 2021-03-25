@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9e3d822bac6fa16314f5d2962d69adbf74d0bc3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1ac945e23090b649ffb5ad2f452ec9245aac81ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143716"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058978"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 배열의 차원 수 또는 차수를 가져옵니다.
@@ -50,5 +50,5 @@ int GetRank(
 ## <a name="remarks"></a>설명
  배열의 순위는 차원 수에 해당 합니다. C + + 및 c #에서 다차원 배열은 배열의 배열 이므로 1 차원 배열로만 간주 될 수 있으며 `GetRank` 메서드는 항상 1을 반환 합니다. 반면에서 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 다차원 배열은 다르게 처리 되며 이러한 배열의 순위는 차원의 수를 반영 하 고 `GetRank` 메서드는 항상 차원의 수를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

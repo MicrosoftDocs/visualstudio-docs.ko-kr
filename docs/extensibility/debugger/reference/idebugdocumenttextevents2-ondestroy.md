@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onDestroy
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc3bafa569a95765c5504196da94e0410078b0fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 011be7f08f6af124dd78e082ce5cd0d38afe982b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154199"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066297"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 전체 문서가 소멸 되었음을 나타냅니다.
@@ -41,5 +41,5 @@ int onDestroy();
 ## <a name="return-value"></a>Return Value
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

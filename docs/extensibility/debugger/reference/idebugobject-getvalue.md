@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63e07ccfbcf2117363ed3e2096d5f0bb4bcac806
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d957743a725ad462a9ed95fca6ebdffbecb6de16
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150447"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054129"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 개체의 값을 연속 된 일련의 바이트로 가져옵니다.
@@ -55,5 +55,5 @@ int GetValue(
 ## <a name="remarks"></a>설명
  [Getsize](../../../extensibility/debugger/reference/idebugobject-getsize.md) 메서드를 호출 하 여 페치할 수 있는 총 값 바이트 수를 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c15b7458bfd18314015bbb9228c212a06fcd82f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951942"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072977"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio의 레이아웃
 대부분의 Visual Studio 대화 상자는 표준 [Windows 바탕 화면 대화 상자 레이아웃 원칙](/windows/desktop/uxguide/win-dialog-box)에 따라 테마가 적용 되지 않은 대화 인 [유틸리티 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)입니다. Visual Studio가 UI를 새로 고치기 위해 이동 하는 경우 더 두드러진 대화 상자 중 일부에는 제품 정의 환경으로 설정 하는 새로운 디자인이 있습니다. 이러한 [테마 대화 상자 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 에는 테마가 적용 된 모양이 있습니다.
@@ -156,7 +156,7 @@ ms.locfileid: "99951942"
 
  **그림 08.01-k: 테마가 적용 되는 대화 상자-색**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 애플리케이션 패턴](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [컨트롤 (Windows)](/windows/desktop/uxguide/controls)
 - [대화 상자 (Windows)](/windows/desktop/uxguide/win-dialog-box)

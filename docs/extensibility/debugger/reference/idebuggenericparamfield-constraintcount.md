@@ -7,20 +7,20 @@ helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e77530033e4c8ae11e0eb690a25c7970ea1f458a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58eb671c7019d3de4d206f41759ef3968205a2b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172906"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072717"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 이 제네릭 매개 변수와 연결 된 제약 조건 수를 반환 합니다.
@@ -46,7 +46,7 @@ int ConstraintCount(
 ## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [Idebuggenericparamfield](../../../extensibility/debugger/reference/idebuggenericparamfield.md) 인터페이스를 노출 하는 **CDebugGenericParamFieldType** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -82,5 +82,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

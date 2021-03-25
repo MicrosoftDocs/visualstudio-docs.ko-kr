@@ -4,17 +4,17 @@ description: 진단 로깅을 사용 하 여 Visual Studio SDK의 사용자 지�
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea99c1d74c06ab42ff86f07de4cf5c76e95de43
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 82b7b3f5eced4c8e24830fba34e47d224186949d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151326"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072951"
 ---
 # <a name="troubleshooting-template-installation"></a>템플릿 설치 문제 해결
 
@@ -72,7 +72,7 @@ ms.locfileid: "102151326"
 > [!NOTE]
 > 로깅을 사용 하지 않도록 설정 하려면 .pkgdef 파일을 제거 하거나의 값을 `EnableTemplateDiscoveryLog` 로 변경한 `dword:00000000` 다음를 다시 실행 `devenv /updateConfiguration` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [사용자 지정 프로젝트 및 항목 템플릿 만들기](creating-custom-project-and-item-templates.md)
 - [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/)

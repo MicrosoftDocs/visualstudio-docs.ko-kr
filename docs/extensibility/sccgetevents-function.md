@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetEvents function
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220796"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072990"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 함수
 이 함수는 대기 중인 상태 이벤트를 검색 합니다.
@@ -54,7 +54,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|이벤트 가져오기에 성공 했습니다.|
 |SCC_E_OPNOTSUPPORTED|이 함수는 지원되지 않습니다.|
@@ -65,6 +65,6 @@ SCCRTN SccGetEvents (
 
  보고할 상태 업데이트가 없는 경우 소스 제어 플러그 인은가 가리키는 버퍼에 빈 문자열을 저장 합니다 `lpFileName` . 그렇지 않으면 플러그 인은 상태 정보가 변경 된 파일의 전체 경로 이름을 저장 하 고 적절 한 상태 코드 ( [파일 상태 코드](../extensibility/file-status-code-enumerator.md)에 자세히 설명 되어 있는 값 중 하나)를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [파일 상태 코드](../extensibility/file-status-code-enumerator.md)

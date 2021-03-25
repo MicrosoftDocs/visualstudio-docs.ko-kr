@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce44b9234465af6bf52ce8baa0e60e641e845d3c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052673"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio용 UX Essentials
 
@@ -156,7 +156,7 @@ UI를 해제 하기 전에 사용자가 설명 텍스트를 읽을 수 있도록
 
    ![색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.
 
-**향상 되는 솔루션:** 사용자가 링크를 클릭 하 여 요청 하는 질문을 합니다. 예를 들면 다음과 같습니다.
+**향상 되는 솔루션:** 사용자가 링크를 클릭 하 여 요청 하는 질문을 합니다. 예를 들어:
 
 - Microsoft Azure 서비스는 어떻게 작동 하나요?
 

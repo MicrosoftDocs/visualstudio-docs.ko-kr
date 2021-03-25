@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea2dc5cf958f87463af9dfca9f29bec5d01a82b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 82de88b69a3609db50d601fb4a566c510712afd8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224189"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095253"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 이 인터페이스는 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 열거 합니다.
@@ -38,7 +38,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugPropertyInfo2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|열거형 시퀀스에서 지정 된 수의 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|열거형 시퀀스에서 지정 된 수의 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 구조체를 건너뜁니다.|
@@ -56,7 +56,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

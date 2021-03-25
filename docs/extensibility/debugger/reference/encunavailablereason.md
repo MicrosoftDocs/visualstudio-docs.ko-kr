@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1f80dc1454cb1c15feddd099411bcb339dbc58c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e63ad7994d485bb39f8ec789d8906cd7d5946840
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095991"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!`**편집 하며 계속 하기** 를 사용할 수 없는 이유를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum tagEncUnavailableReason {

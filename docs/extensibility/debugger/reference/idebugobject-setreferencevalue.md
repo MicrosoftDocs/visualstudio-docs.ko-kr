@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb376e4399157f9f9fe393086cca8fcf94c3b9de
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a65c14d4122ac6d877573822b4fa8be1cb6cdd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161426"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054116"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 이 개체의 참조 값을 설정 합니다.
@@ -50,6 +50,6 @@ int SetReferenceValue(
 ## <a name="remarks"></a>설명
  이 메서드는이 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체를 매개 변수에 지정 된 개체 값에 대 한 참조로 만들어 `pObject` 이전 참조를 모두 throw 합니다. 이 개체는 `IDebugObject` 이미 참조 형식 이어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

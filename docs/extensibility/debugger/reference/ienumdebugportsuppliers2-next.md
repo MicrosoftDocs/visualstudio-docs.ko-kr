@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Next
 ms.assetid: e2a2d226-e70b-42c2-bf00-a936517940c8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29badfc9c42875b981f99fbfe215c7a336dc1535
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f60e058c9ccff2a1dc9d6b59714a15a8900c9a33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226256"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095331"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -57,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

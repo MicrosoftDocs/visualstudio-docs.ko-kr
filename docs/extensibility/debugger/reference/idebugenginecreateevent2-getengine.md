@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2::GetEngine
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aaabac0b9ee0e6fb2e8982d673e8e55e1cede4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 66e58c94f21eb29b7cb85066001e5c4472730f76
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153675"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066089"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 새로 만든 디버그 엔진 (DE)을 나타내는 개체를 검색 합니다.
@@ -47,6 +47,6 @@ int GetEngine(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

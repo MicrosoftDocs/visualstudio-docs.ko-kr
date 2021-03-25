@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad896e6613c6e9d39165725e9e18996e0fd06848
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b45c31a8271da7a42ed8b254dd89b732c825f29e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222759"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086705"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>설명
  열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

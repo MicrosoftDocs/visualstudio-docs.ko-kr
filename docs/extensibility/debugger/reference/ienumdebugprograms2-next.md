@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2::Next
 ms.assetid: 9120e263-e97c-4a40-ab2c-e9264ce3d6c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f3c90f01b19b57925e765e35735f41326a52314
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 347b779a4b8fea4737cc17a16f513e70a5661fff
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226074"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080024"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 열거형에서 다음 요소 집합을 반환 합니다.
@@ -57,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

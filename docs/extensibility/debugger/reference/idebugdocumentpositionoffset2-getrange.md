@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c56ac73d85f9cfbfdc17d40da9f0fec415e057d7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 66184ba67dd0623a886ca37e28d311aebc6633bd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066349"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 현재 문서 위치에 대 한 범위를 검색 합니다.
@@ -60,6 +60,6 @@ Line 6: x = 1;
 
  5 번째 줄은 디버그 중인 프로그램에 코드를 적용 하지 않습니다. 줄 5에서 중단점을 설정 하는 디버거가 코드를 적용 하는 첫 번째 줄의 특정 크기를 검색 하도록 하려는 경우 디버거는 중단점을 올바르게 배치할 수 있는 추가 후보 줄을 포함 하는 범위를 지정 합니다. 그러면 DE는 중단점을 수락할 수 있는 줄을 찾을 때까지 해당 줄을 통해 앞으로 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

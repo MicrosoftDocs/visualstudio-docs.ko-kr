@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveSetException
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 588037ef9dcf495f8fbbb210acc3154c31558a32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b763291fccd39d46b32347d89df1a11e1b3d09f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153951"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095409"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 지정 된 예외를 제거 하 여 디버그 엔진에서 더 이상 처리 하지 않도록 합니다.
@@ -52,6 +52,6 @@ int RemoveSetException(
 
  모든 set 예외를 한 번에 제거 하려면 [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

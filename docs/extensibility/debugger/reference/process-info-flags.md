@@ -7,20 +7,20 @@ f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e192a51c2c371754778ecbe697d280d1b254f224
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 66b986fa16f406223c919c6938182b37e1864e98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079672"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 

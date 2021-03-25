@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Skip
 ms.assetid: 68cd3948-022a-41ad-bd9f-9ab776cf6248
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 991169ce1e830dfafca348b3e38737b489a1258c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e4af38b9b2489f093378b5d63552194385fc01e2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226412"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080049"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 지정 된 수의 요소를 건너뜁니다.
@@ -50,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>설명
  가 `celt` 나머지 요소 수보다 큰 값을 지정 하는 경우 열거형은 end로 설정 되 고 `S_FALSE` 이 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

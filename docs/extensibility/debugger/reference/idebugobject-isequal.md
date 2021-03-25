@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0907b72f2a0647fc6ff6181ecdc5c7fd8c2134cb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cff388778ea584f589f92b5dc9dab11c060c953c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151664"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054090"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 개체를이 개체와 비교 합니다.
@@ -55,5 +55,5 @@ int IsEqual(
 ## <a name="remarks"></a>설명
  일반적으로이 메서드는 `pObject` 매개 변수와이 [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체가 나타내는 값의 주소를 비교할 수 있습니다. 주소가 같으면 개체는 같은 것으로 간주할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ceda2742f82cae172c22d12f2753936779171f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 012cd3dd0068fe69aae8898a408435340c6b22ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151820"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072847"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102151820"
 
  함수를 나타내고 [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 인터페이스를 향상 시킵니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugFunctionObject2 : IUnknown
@@ -45,7 +45,7 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|지정 된 계산 플래그 설정 및 시간 제한 값을 사용 하는 개체를 만듭니다.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|지정 된 길이를 가진 문자열 개체를 만듭니다.|

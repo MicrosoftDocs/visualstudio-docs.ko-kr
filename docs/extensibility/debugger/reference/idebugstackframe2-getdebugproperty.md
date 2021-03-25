@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 658da43471f483e80a1e77bd61f69dbc454a141e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5c4017e5a14619c2ab5e3f98de65d7d2295e8586
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159889"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053479"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 스택 프레임의 속성에 대 한 설명을 가져옵니다.
@@ -50,6 +50,6 @@ int GetDebugProperty (
 ## <a name="remarks"></a>설명
  적절 한 필터를 사용 하 여 [Enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 호출 하면 스택 프레임과 연결 된 지역 변수, 메서드 매개 변수, 레지스터 및 "this" 포인터를 검색할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

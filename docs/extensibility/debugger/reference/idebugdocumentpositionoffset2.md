@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dee28d7f19f6398863476afbab8eb9b3cdbbb60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 01815a7dcae5a469db20b9288918b4e2aaf9ffed
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167323"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066323"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 소스 파일에서 문자 오프셋으로 위치를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugDocumentPositionOffset2 : IUnknown
@@ -33,7 +33,7 @@ IDebugDocumentPositionOffset2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugDocumentPositionOffset2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|현재 문서 위치에 대 한 범위를 검색 합니다.|
 
@@ -47,5 +47,5 @@ IDebugDocumentPositionOffset2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

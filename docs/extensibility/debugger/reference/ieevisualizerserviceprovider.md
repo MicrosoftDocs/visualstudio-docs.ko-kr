@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerServiceProvider interface
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4fc53ae13588a0e285e4a62691da4d88a94d5f5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 973135865b0b1c460f4c9000036f2af04a9ae3ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227179"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086692"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IEEVisualizerServiceProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|시각화 도우미 서비스를 만듭니다.|
 
@@ -56,7 +56,7 @@ IEEVisualizerServiceProvider : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Reset
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3393f2b87043345156337976ed12d10928572d2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b48e541f1f75f3ce7f0ef69e1e838cd54ffa19fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226893"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080127"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 열거형 시퀀스를 시작 부분으로 다시 설정합니다.
@@ -42,6 +42,6 @@ int Reset();
 ## <a name="remarks"></a>설명
  이 메서드가 호출 된 후 [다음](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) 메서드에 대 한 다음 호출에서 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [다음](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)

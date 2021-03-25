@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsHiddenCode
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de0343e5af864044a7feaff2b0aa47ee6eef8826
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6b795f25dfc5cdfcbcbb770e3cc1f7a70499ba8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163644"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095487"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 지정 된 디버거 주소에서 코드를 숨길지 여부를 결정 합니다.
@@ -45,7 +45,7 @@ int IsHiddenCode(
 ## <a name="return-value"></a>반환 값
 코드가 숨겨진 경우는를 반환 하 `S_OK` 고 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스를 노출 하는 **Cdebug기호 공급자** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

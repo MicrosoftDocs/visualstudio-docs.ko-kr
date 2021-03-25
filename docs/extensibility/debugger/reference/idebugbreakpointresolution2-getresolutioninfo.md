@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6982053fc7fb723a2c1efe93c27d9ddf7f27a3d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e4e0f042cc619fcd5016cf493f32ba661af4a449
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143404"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095682"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 이 중단점을 설명 하는 중단점 확인 정보를 가져옵니다.
@@ -52,7 +52,7 @@ int GetResolutionInfo(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 `CDebugBreakpointResolution` [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 인터페이스를 노출 하는 간단한 개체에 대해이 메서드를 구현 합니다.
 
 ```
@@ -142,7 +142,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
