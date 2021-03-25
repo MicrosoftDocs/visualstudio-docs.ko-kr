@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a695ae921bb9fb0e6b137e258cd8bd70d278eba7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 7abe750e76fa7cfcbecfd8b82853aeccbe543352
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225320"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079620"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 프로그램 소멸 플래그의 유효한 값을 열거 합니다.

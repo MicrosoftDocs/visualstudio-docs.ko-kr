@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5869ede1e43cc6b47f271691de51b948d72a7849
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d1f779352ce6b1217cd8af1e87988cb165b2dddc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222109"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079633"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 프로세스에 대해 검색할 정보의 종류를 지정 합니다.

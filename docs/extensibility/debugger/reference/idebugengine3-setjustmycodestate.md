@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetJustMyCodeState
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a81fa4bda506cf1be27f658b071910e7c8ccd8a7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6e527dbaeb9c04171bf26ea00e550eac336ac6a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153705"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066125"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 이 메서드는 디버그 엔진에 JustMyCode 상태 정보를 알려 줍니다.
@@ -60,6 +60,6 @@ int SetJustMyCodeState(
 ## <a name="remarks"></a>설명
  JustMyCode는 해당 시스템 코드에 대해 소스 코드를 사용할 수 있는 경우에도 사용자에 게 속하는 코드와 시스템 코드와 같은 모든 중간 코드를 무시 하는 것을 디버깅 하는 개념입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

@@ -9,20 +9,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::GetName method
 - GetName method
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e9e513d94d0aab902d9ec06cdcc17c5afb7496a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 89d5d3cb1d2bed36a9e15f99644a02bdc308e0ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165035"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058614"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 이 컨텍스트에 대 한 사용자가 표시할 때 사용할 이름을 검색 합니다.
@@ -51,5 +51,5 @@ int GetName(
 ## <a name="remarks"></a>설명
  메모리 컨텍스트의 이름은 일반적으로 사용 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

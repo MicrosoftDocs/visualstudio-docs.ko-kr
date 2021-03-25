@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b809e16fefb9306da842f39d93bdb3dd0f7b404f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad6cd04d077245d3e893099aab8820ddc8ccf559
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143937"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095916"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 이 별칭과 연결 된 값을 나타내는 관리 되는 코드 인터페이스를 검색 합니다.
@@ -50,5 +50,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>설명
  이 메서드는 관리 되는 값에만 적용 됩니다 `ICorDebugValue` .는 .NET Framework에서 사용할 수 있는 인터페이스 이며 cordebug .idl 파일의 .NET FRAMEWORK SDK에 정의 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

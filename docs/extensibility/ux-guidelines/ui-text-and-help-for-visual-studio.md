@@ -4,17 +4,17 @@ description: Visual Studio의 도움말 정보에 사용 되는 UI 텍스트 및
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0da682f8403890e57118384b7d979f8760d62f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8635907b5c0190165855378fa692fb9abca4b0ec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926147"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052660"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio의 UI 텍스트 및 도움말
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 텍스트 및 용어
@@ -161,7 +161,7 @@ ms.locfileid: "99926147"
 |로그인/로그 아웃|웹 속성에 대 한 인증을 나타내기 위해 웹에서 동의어 처럼 자주 사용 하는 동사입니다. 클라이언트 내에서이를 한 번 사용 하 여 다른 모든 연결에서 사용할 수 없는 로밍 및 라이선스와 같은 더 높은 수준의 기능을 제공 하는 최상위 id를 제공 하는 IDE 사용자 연결의 로그인 및 로그 아웃에 대 한 최상위 개념으로 사용 합니다.|IDE 사용자는 최상위 IDE 사용자를 나타내므로 로그인/로그 아웃 동사를 나타내야 하는 유일한 기능입니다.|
 |연결/연결 끊기|기능이 온라인 서비스에 대 한 단일 연결을 유지 하는 위치에서 사용 합니다.|한 번에 하나의 활성 Azure 연결만 가질 수 있는 서버 탐색기 연결/연결 끊기의 예입니다.|
 |추가/제거|비 소거식. 목록에서 항목을 추가 하거나 제거 하는 경우에 사용 합니다.|TFS 연결 관리자 서버 목록 대화 상자는 추가/제거의 예입니다.|
-|DELETE|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
+|삭제|파괴적인. 제거 되는 요소가 디스크에서 영구적으로 삭제 되거나 삭제 될 때만를 사용 합니다.|일반적으로 "삭제"는 결과가 디스크에서 파일을 삭제 하는 경우 프롬프트가 필요 합니다.|
 
 ## <a name="error-messages"></a>오류 메시지
 
@@ -421,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 글꼴 및 서식 지정](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Visual Studio의 레이아웃](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Visual Studio의 알림 및 진행률](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

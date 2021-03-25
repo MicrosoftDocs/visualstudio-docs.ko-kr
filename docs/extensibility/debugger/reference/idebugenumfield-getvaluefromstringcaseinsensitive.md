@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromStringCaseInsensitive method
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f853598c5d3c9b293c806e1db475c5053a1a208e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80ded5237cfc0fe1b03ae5175ca0c92a188538ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153224"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065994"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 이 메서드는 대/소문자를 구분 하지 않는 검색을 사용 하 여 열거형 상수의 이름과 연결 된 값을 반환 합니다.
@@ -55,6 +55,6 @@ int GetValueFromStringCaseInsensitive(
 ## <a name="remarks"></a>설명
  이 메서드는 대/소문자를 구분 하지 않습니다. 이름에 대/소문자를 구분 하는 c + +와 같은 언어에서 대/소문자를 구분 하는 검색이 필요한 경우 [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65b38d342dc84e680e202b73976550fcca5809cf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 4a34b7160849852da7f1cbe94dae9dc75dc47501
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221953"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086328"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 참조에 대 한 비교 유형을 지정 합니다.

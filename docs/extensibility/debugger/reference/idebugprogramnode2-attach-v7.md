@@ -1,5 +1,6 @@
 ---
 title: 'IDebugProgramNode2:: Attach_V7 | Microsoft Docs'
+description: 이 인터페이스 메서드는 Visual Studio 2005 이전에 사용 되지 않는 이전 연결 방법입니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b143477dc558b20a302a54d5baecc64d02d33ea3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c949bba45457917e4dd00bdc05bc300f3a38eb7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898641"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053596"
 ---
 # <a name="idebugprogramnode2attach_v7"></a>IDebugProgramNode2::Attach_V7
 
@@ -56,7 +57,7 @@ int Attach_V7 (
 `dwReason`\
 진행 연결 이유를 지정 하는 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 열거형의 값입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 구현은 항상를 반환 해야 `E_NOTIMPL` 합니다.
 
@@ -73,7 +74,7 @@ int Attach_V7 (
 
 DE는 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 이벤트 개체에서 제공 하는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 개체의 [get프로그래밍할 id](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 메서드를 호출 해야 하며, de에서 구현 된 개체의 인스턴스 데이터에 해당 프로그램의 GUID를 저장 해야 합니다 `IDebugProgram2` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
