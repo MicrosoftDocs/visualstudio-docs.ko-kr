@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_contingentProperties field, Task class [.NET Framework debug engines]
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55419d18940f0ce7909382ef0ae3e0a6e88ee425
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9218bbbd10f3bf8a877c38404d17864efed12af6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158809"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059706"
 ---
 # <a name="m_contingentproperties-field"></a>m_contingentProperties 필드
 개체의 추가 속성을 저장 <xref:System.Threading.Tasks.Task> 합니다.
@@ -35,5 +35,5 @@ ms.locfileid: "102158809"
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

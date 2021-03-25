@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: accf054cbf0b58066568124a3f35e064ce3cba78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939294"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094993"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>언어 서버 프로토콜 확장 추가
 
@@ -500,6 +500,6 @@ Visual Studio의 LSP 기반 언어 서버에 대 한 지원은 [폴더 열기 �
 
 Marketplace 지침은 [여기](walkthrough-publishing-a-visual-studio-extension.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [다른 언어에 대한 Visual Studio 편집기 지원 추가](../ide/adding-visual-studio-editor-support-for-other-languages.md)

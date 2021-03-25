@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias interface
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d5eb9f1d4bc493779d9b42a984c8fc1577e2fe66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143885"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059147"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102143885"
 
  변수의 숫자 별칭을 나타냅니다. 별칭은 단순히 변수에 대 한 다른 이름입니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugAlias : IUnknown
@@ -41,7 +41,7 @@ IDebugAlias : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 메서드는 인터페이스에 정의 되어 `IDebugAlias` 있습니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|이 별칭이 참조 하는 개체를 가져옵니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|별칭 이름을 가져옵니다.|
@@ -58,7 +58,7 @@ IDebugAlias : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

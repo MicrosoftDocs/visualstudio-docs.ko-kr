@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2cf082e4ca6a45bf42bd66ce34111d5c056787
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095019"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild 프로젝트 파일의 데이터 유지
 프로젝트 하위 형식에서 나중에 사용 하기 위해 하위 형식 관련 데이터를 프로젝트 파일에 저장 해야 할 수도 있습니다. 프로젝트 하위 유형은 프로젝트 파일 지 속성을 사용 하 여 다음 요구 사항을 충족 합니다.
@@ -78,5 +78,5 @@ ms.locfileid: "99954451"
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)

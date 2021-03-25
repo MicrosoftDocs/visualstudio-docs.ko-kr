@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: efca2b2bedc531fa241d8cfe6cfe8cd3527a7b40
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7428b1a8d0dcb95d14274270542d4bba8c50bde9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059174"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 이 별칭을 제거 하도록 표시 합니다.
@@ -45,5 +45,5 @@ int Dispose();
 ## <a name="remarks"></a>설명
  이 메서드를 호출 하면 별칭을 더 이상 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

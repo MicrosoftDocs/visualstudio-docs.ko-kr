@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3140da647b46a1cbc3b60691e820238c2c6c83eb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5ad25fe6461f1df89ada83623ab4e28194ca207
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166257"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076331"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 이 메서드는 세션이 더 이상 프로세스를 디버깅 하 고 있지 않음을 프로세스에 알립니다.
@@ -50,5 +50,5 @@ int Detach(
 ## <a name="remarks"></a>설명
  전달 된 인터페이스는 `pSession` 원래이 프로세스에 연결 된 세션 디버그 관리자를 고유 하 게 식별 하는 값인 쿠키로만 처리 됩니다. 제공 된 인터페이스의 메서드는 모두 작동 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

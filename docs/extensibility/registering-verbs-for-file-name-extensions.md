@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837008"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068481"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>파일 이름 확장명에 대 한 동사 등록
 일반적으로 응용 프로그램과 파일 이름 확장명을 연결 하는 경우 사용자가 파일을 두 번 클릭할 때 발생 하는 기본 작업이 있습니다. 이 기본 작업은 작업에 해당 하는 열기와 같은 동사에 연결 됩니다.
@@ -113,5 +113,5 @@ ms.locfileid: "99837008"
 > [!NOTE]
 > Side-by-side 배포에서 확장에 대 한 기본 동사를 변경 하려는 경우 설치 및 제거에 대 한 영향을 고려해 야 합니다. 설치 하는 동안 원래 기본값을 덮어씁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Side-by-side 파일 연결 관리](../extensibility/managing-side-by-side-file-associations.md)

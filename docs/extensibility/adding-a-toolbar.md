@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62d32a07ec046bc42d69818346450e5a94a668ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1b478041492bfb857c5497b6df5e2c4af9ad355
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951331"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094941"
 ---
 # <a name="add-a-toolbar"></a>도구 모음 추가
 이 연습에서는 Visual Studio IDE에 도구 모음을 추가 하는 방법을 보여 줍니다.
@@ -29,7 +29,7 @@ ms.locfileid: "99951331"
 
  메뉴에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-toolbar"></a>도구 모음을 사용 하 여 확장 만들기
@@ -91,5 +91,5 @@ ms.locfileid: "99951331"
 
 7. 이제 도구 모음이 파일에서 찾기 아이콘의 오른쪽에 아이콘으로 표시 됩니다. 아이콘을 클릭 하면 ToolbarTestCommandPackage 라는 메시지 상자가 표시 됩니다 **. ToolbarTestCommand. MenuItemCallback () 내부 IDEToolbar**.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

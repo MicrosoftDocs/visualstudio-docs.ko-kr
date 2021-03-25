@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac47ee29029bdcccb5c248bc8e366376b5aed0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6b273c1ee2ee83c713500d972ecab27a67b3145
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931658"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068546"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio의 알림 및 진행률
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 알림 시스템
@@ -151,7 +151,7 @@ ms.locfileid: "99931658"
 
 #### <a name="determinate-progress"></a>활성화 상태의 진행률
 
-|진행률 유형|사용 시기 및 방법|참고|
+|진행률 유형|사용 시기 및 방법|메모|
 |-------------------|-------------------------|-----------|
 |진행률 표시줄 (활성화 상태의)|예상 >5 초입니다.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|애니메이션에 텍스트를 포함 **하지 않습니다** .|
 |정보 표시줄|컨텍스트 UI와 연결 된 메시지입니다. [정보 표시줄](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)를 참조 하세요.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|여러 프로세스를 표시 해야 하는 경우 여러 정보 표시줄를 사용 **하지 마세요** . 누적 진행률 표시줄을 대신 사용 합니다.|
@@ -161,7 +161,7 @@ ms.locfileid: "99931658"
 
 #### <a name="indeterminate-progress"></a>확정 되지 않은 진행률
 
-|진행률 유형|사용 시기 및 방법|참고|
+|진행률 유형|사용 시기 및 방법|메모|
 |-------------------|-------------------------|-----------|
 |진행률 표시줄 (비활성화)|예상 >5 초입니다.<br /><br /> 프로세스 세부 정보에 대 한 텍스트 설명을 포함할 수 있습니다.|애니메이션에 텍스트를 포함 **하지 않습니다** .|
 |서 점 (가로 애니메이션 가로 점)|서버로 라운드트립 합니다.<br /><br /> 부모 컨테이너의 위쪽에서 컨텍스트의 근처에 배치 됩니다.|전체 컨테이너에서 부모로 사용 하지 않는 경우를 사용 **하지 마세요** .|

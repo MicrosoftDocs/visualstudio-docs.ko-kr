@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 563e66f7aa7c2f8cf1e5573487690edc703ae5d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158737"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059459"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -35,7 +35,7 @@ ms.locfileid: "102158737"
 
 - Visual Studio (VS)
 
-|인터페이스|구현 방법|설명|
+|인터페이스|구현 방법|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|변수의 숫자 별칭을 나타냅니다.|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|변수에 대 한 숫자 별칭을 나타내며 식 계산기 (EE)에서 별칭의 응용 프로그램 도메인을 가져올 수 있도록 합니다.|
@@ -60,7 +60,7 @@ ms.locfileid: "102158737"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 개체를 만들 수 있는 기능을 제공 합니다.|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|[Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체의 컬렉션을 나타냅니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [CLR 식 계산기 작성](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

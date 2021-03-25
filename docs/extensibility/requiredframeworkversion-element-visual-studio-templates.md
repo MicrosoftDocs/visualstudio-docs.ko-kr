@@ -10,17 +10,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 661e4067ac0191444be8ec7f1136f805ea8b39b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221798"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068455"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -62,7 +62,7 @@ ms.locfileid: "102221798"
 
 `RequiredFrameworkVersion`는 선택적 요소입니다. 템플릿이 .NET Framework의 특정 최소 버전 (및 이후 버전)을 지 원하는 경우에만이 요소를 사용 합니다. 요소를 지정 하 `RequiredFrameworkVersion` 고 템플릿이 .NET Framework의 특정 최소 버전을 지원 하지 않는 경우 **대상 프레임 워크 버전** 드롭다운에 해당 사항이 없으면이 표시 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 표준 클래스 템플릿에 대 한 메타 데이터를 보여 줍니다 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 

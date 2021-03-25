@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882286"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094928"
 ---
 # <a name="capability-flags"></a>기능 플래그
 SCC_CAP_ *xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내는 데 사용 되는 비트 플래그입니다. SCC_EXCAP_ *xxx* 플래그는 확장 기능을 나타내고 정수 값을 확인 하는 증분 플래그입니다.
@@ -79,5 +79,5 @@ SCC_CAP_ *xxx* 플래그는 소스 제어 플러그 인의 기능을 나타내�
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|체크 아웃 한 파일을 삭제할 수 있습니다.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|체크 아웃 된 파일의 이름을 바꿀 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

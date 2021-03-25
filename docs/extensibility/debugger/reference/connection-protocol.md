@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24ac267552166bea43df77f31cb79d8198fb7514
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d514b9aa0e37e90e99f21b5b4906cff9d32472db
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170863"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059498"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 디버그 서버와 디버그 패키지 (DE) 간에 통신 하는 데 사용 되는 프로토콜을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 typedef enum tagCONNECTION_PROTOCOL {
