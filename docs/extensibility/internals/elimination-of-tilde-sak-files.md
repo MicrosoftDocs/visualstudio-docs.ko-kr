@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf0f8bc567a097d4bb7d400f829489c517e9a68f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946685"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061240"
 ---
 # <a name="elimination-of-sak-files"></a>~ SAK 파일 제거
 소스 제어 플러그 인 API 1.2에서는 소스 제어 플러그 인에서 *mssccprj.scc* 파일 및 공유 체크 아웃을 지원 하는지 여부를 검색 하는 새 함수 및 기능 플래그로 *~ SAK* 파일이 대체 되었습니다.
@@ -52,5 +52,5 @@ Visual Studio .NET 2003에는 *~ SAK* 접두사가 붙은 임시 파일이 생�
 > [!NOTE]
 > 이 레지스트리 키가 *dword: 00000000* 으로 설정 된 경우에는 해당 키가 존재 하지 않는 것과 같으며 Visual Studio에서 임시 파일을 계속 만들려고 시도 합니다. 그러나 레지스트리 키가 *dword: 00000001* 로 설정 된 경우에는 Visual Studio에서 임시 파일을 만들려고 시도 하지 않습니다. 대신, 소스 제어 플러그 인이 *mssccprj.scc* 파일을 지원 하지 않으며 공유 체크 아웃을 지원 하지 않는 것으로 가정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41664f0e59b0eba6ae8a98599c74bd91fe26cf2a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7612267a428986ac67a02934f8cbdec38dcb736a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145926"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053336"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 스택 프레임과 연결 된 실제 주소 범위의 컴퓨터 종속 표현을 가져옵니다.
@@ -57,5 +57,5 @@ int GetPhysicalStackRange (
 
  호출 스택이 증가 하는 것으로 가정 합니다. 즉, 새 스택 프레임은 점점 더 낮은 메모리 주소에 추가 됩니다. 런타임 아키텍처는이 가정에 맞는 물리적 스택 범위를 제공 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

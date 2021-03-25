@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bc1bcb9d80474b467e90de6262e797087589065
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925749"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062358"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마 조건부 특성
 모든 목록 및 항목에 조건부 특성을 적용할 수 있습니다. 논리 연산자 및 기호 확장 식은 true 또는 false로 계산 됩니다. True 이면 연결 된 목록 또는 항목이 결과 출력에 포함 됩니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99925749"
 
 |연산자|정의|
 |--------------|----------------|
-|(,)|그룹화|
+|(,)|Grouping(그룹화)|
 |!|논리 NOT|
 |\<, >, \<=, >=, ==, !=|관계형 및 같음|
 |및|부울|

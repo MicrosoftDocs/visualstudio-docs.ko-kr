@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbcbc197a610f7caf2a1641a291db18fcea9dbda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 174834dde4c049bcb1b3fd8bc2eb8e82166d01d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898328"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078697"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>테스트 영역 1: 소스 제어에 추가/소스 제어에서 열기
 이 소스 제어 플러그 인 테스트 영역에서는 솔루션 또는 프로젝트를 소스 제어에 배치 하 고 소스 제어에서 검색 하는 방법을 설명 합니다.
@@ -85,5 +85,5 @@ ms.locfileid: "99898328"
 |단일 프로젝트를 사용 하 여 솔루션에 추가-단일 프로젝트|1. 단일 프로젝트를 사용 하 여 솔루션을 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 솔루션을 닫습니다.<br />4. 두 번째 빈 솔루션을 만듭니다.<br />5. 소스 제어 (**파일**, **소스 제어**, **소스 제어에서 프로젝트 추가**)에서 이전에 제어 된 솔루션을 추가 합니다.|추가 된 프로젝트가 **솔루션 탐색기** 에 표시 되 고 체크 인 됩니다.|
 |솔루션에 추가-선택 하 여 소스 제어에 추가 된 솔루션|1. 프로젝트를 사용 하 여 솔루션을 만듭니다.<br />2. 소스 제어에 솔루션만 선택으로 추가 합니다. 이 단계가 성공 하면 다음 단계를 계속 합니다.<br />3. 솔루션을 닫습니다.<br />4. 새 솔루션을 만듭니다.<br />5. 소스 제어 (**파일**, **소스 제어**, **소스 제어에서 프로젝트 추가**)에서 이전에 제어 된 솔루션을 추가 합니다.|`Result from Step 2:`<br /><br /> 프로젝트가 소스 제어에 있지 않습니다.<br /><br /> `Result from Step 5:`<br /><br /> 첫 번째 솔루션에 솔루션 항목이 있는 경우 소스 제어에서 추가 될 수 없으므로 표시 되지 않습니다.<br /><br /> 첫 번째 솔루션의 프로젝트를 사용할 수 없는 것으로 나타납니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33ef62a1d2df4b426d76bd294d00a21f1629174b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873920"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078476"
 ---
 # <a name="walkthrough-display-statement-completion"></a>연습: 명령문 완성 표시
 완료를 제공 하 고 완료 세션을 트리거하는 데 사용할 식별자를 정의 하 여 언어 기반 문 완성을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 문 완성을 정의 하 고 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의한 다음 해당 형식에 대 한 완료만 표시할 수 있습니다. 또는 기존 콘텐츠 형식 (예: "일반 텍스트")에 대해 완료를 트리거할 수 있습니다. 이 연습에서는 텍스트 파일의 콘텐츠 형식인 "plaintext" 콘텐츠 형식에 대해 문 완성을 트리거하는 방법을 보여 줍니다. "텍스트" 콘텐츠 형식은 코드 및 XML 파일을 비롯 한 다른 모든 콘텐츠 형식의 상위 항목입니다.
@@ -29,7 +29,7 @@ ms.locfileid: "99873920"
 
  이 연습에서는 하드 코드 된 식별자 집합에 대해 문 완성을 구현 하는 방법을 보여 줍니다. 모든 구현에서 언어 서비스 및 언어 설명서는 해당 콘텐츠를 제공 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -206,5 +206,5 @@ ms.locfileid: "99873920"
 
 4. "A"를 입력 하 고 "d"를 입력 하면 "더하기" 및 "적응"이 포함 된 목록이 표시 됩니다. 추가가 선택 되어 있는지 확인 합니다. 다른 "d"를 입력 하는 경우 목록에는 "더하기"만 포함 해야 합니다 .이는 현재 선택 되어 있습니다. **스페이스바**, **Tab** 또는 **Enter** 키를 눌러 "추가"를 커밋하거나 Esc 키 또는 다른 키를 입력 하 여 목록을 해제할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

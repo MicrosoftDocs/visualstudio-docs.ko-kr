@@ -11,17 +11,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2f25853f8f1ece583b460d39550af680001b3d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898271"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069597"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 명령의 Guid 및 Id
 Visual Studio IDE (통합 개발 환경)에 포함 된 명령의 GUID 및 ID 값은 Visual Studio SDK의 일부로 설치 되는 vsct 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -62,7 +62,7 @@ Visual Studio IDE (통합 개발 환경)에 포함 된 명령의 GUID 및 ID 값
 
      동적 텍스트를 검색 하는 신뢰할 수 있는 방법은 없습니다. 대신 [Visual studio 메뉴의 guid 및 id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 를 확인 하 고 [visual Studio 도구 모음의 guid 및](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id를 조회 하 여 원하는 명령을 호스트 하는 그룹을 찾은 다음 해당 그룹의 id를 검색 합니다. 명령 정의에 해당 그룹이 [부모 요소인](../../extensibility/parent-element.md)경우 명령의 부모를 설정 하는 요소에 대해 *sharedcmdplace. Vsct* 및 *shellcmdplace* 를 검색 합니다. vsct (또는 디버거 명령에 대 한 *vsct* ). `<CommandPlacement>` *Sharedcmdplace. vsct*, *Shellcmdplace* 및  는 *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* 폴더에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93fa7f73b3e13c655716ecbb16ff420605f76c90
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8aa2815eab2e78b373340ca1d4c60b4ae9929548
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145783"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053245"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 현재 예외를 가로채 려는 경우 현재 스택 프레임에서 디버거에 의해 호출 됩니다.
@@ -54,7 +54,7 @@ int InterceptCurrentException(
 
  가장 일반적으로 발생 하는 오류는 다음과 같습니다.
 
-|Error|설명|
+|Error|Description|
 |-----------|-----------------|
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|현재 예외를 가로챌 수 없습니다.|
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|현재 실행 프레임은 처리기에 대해 아직 검색 되지 않았습니다.|
@@ -70,7 +70,7 @@ int InterceptCurrentException(
 
  가로채기가 완료 되 면 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 가 신호를 받을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

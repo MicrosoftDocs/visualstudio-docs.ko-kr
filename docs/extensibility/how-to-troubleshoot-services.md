@@ -7,17 +7,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6e29f2c65ec7503f06baca4af4c6772090d5eb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a105f38166ecea958bb0e5bbfe790170b020e354
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952293"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079217"
 ---
 # <a name="how-to-troubleshoot-services"></a>방법: 서비스 문제 해결
 서비스를 가져오려고 할 때 발생할 수 있는 몇 가지 일반적인 문제는 다음과 같습니다.
@@ -68,7 +68,7 @@ if (log == null) return;
 
     도구 창이 사용자 정의 컨트롤 또는 다른 컨트롤 컨테이너를 호스트 하는 경우 컨테이너는 Windows 구성 요소 모델에 의해 배치 되며 어떤 서비스에도 액세스할 수 없습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>를 호출 하 여 컨트롤 컨테이너 내에서 VSPackage 서비스 공급자를 가져올 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용 가능한 서비스 목록](../extensibility/internals/list-of-available-services.md)
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)
 - [서비스 essentials](../extensibility/internals/service-essentials.md)

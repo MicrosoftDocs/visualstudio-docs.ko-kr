@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62a6cc4f7b217bbcf8c94b437bcd7ce9d0d1b2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79706c98e98be55e69aaeeed7320c8b13bfd2a9c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946737"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061279"
 ---
 # <a name="document-windows"></a>문서 창
 Visual Studio에서 *문서 창은* MDI (다중 문서 인터페이스) 창과 연결 된 프레임 있는 자식 창입니다. 문서 창은 일반적으로 소스 코드 또는 텍스트를 표시 하 고 수정 하는 데 사용 되지만 다른 기능 형식을 호스팅할 수도 있습니다. 문서 창:
@@ -43,5 +43,5 @@ Visual Studio에서 *문서 창은* MDI (다중 문서 인터페이스) 창과 �
 ## <a name="the-running-document-table"></a>실행 중인 문서 테이블
  IDE는 RT (실행 중인 문서 테이블)를 사용 하 여 모든 문서 창의 상태를 추적 합니다. RDT는 솔루션이 닫히거나 파일이 편집 된 경우와 같은 이벤트 알림이 문서 창에 표시 되는 메커니즘입니다. 자세한 내용은 [문서 테이블 실행](../../extensibility/internals/running-document-table.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [지연 된 문서 로드](../../extensibility/internals/delayed-document-loading.md)

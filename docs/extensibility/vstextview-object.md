@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c80f224170d085347ff962bc88301aa0ab3c9f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a7ec65ed2beb866bfbb4e35fd5b290d3457ad3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905631"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062163"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 
@@ -40,7 +40,7 @@ ms.locfileid: "99905631"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|텍스트 레이어와 상호 작용 합니다.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|다른 스레드에서 뷰에서 작업을 수행 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 개체](../extensibility/vstextbuffer-object.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ee94326aca31c72ed6c07342707365d16ea57bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c46cea481eceadef5118388633f84402870a209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839874"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069610"
 ---
 # <a name="implementing-syntax-coloring"></a>구문 색 지정 구현
 언어 서비스에서 구문 색 지정을 제공 하는 경우 파서는 텍스트 줄을 색 항목 배열로 변환 하 고 이러한 색 항목에 해당 하는 토큰 형식을 반환 합니다. 파서는 색 항목 목록에 속하는 토큰 형식을 반환 해야 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] svc 개체에 의해 적절 한 토큰 형식에 할당 된 특성에 따라 코드 창의 각 색 항목을 표시 합니다.
@@ -64,7 +64,7 @@ ms.locfileid: "99839874"
 ## <a name="managed-package-framework-colorizer"></a>관리 되는 패키지 프레임 워크 Svc
  MPF (관리 되는 패키지 프레임 워크)는 svc을 구현 하는 데 필요한 모든 클래스를 제공 합니다. 언어 서비스 클래스는 클래스를 상속 <xref:Microsoft.VisualStudio.Package.LanguageService> 하 고 필요한 메서드를 구현 해야 합니다. 인터페이스를 구현 하 여 스캐너 및 파서를 제공 하 <xref:Microsoft.VisualStudio.Package.IScanner> 고, <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 메서드 (클래스에서 구현 해야 하는 메서드 중 하나)에서 해당 인터페이스의 인스턴스를 반환 해야 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService> . 자세한 내용은 [레거시 언어 서비스의 구문 색 색상화](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 기본 제공 색 항목 사용](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [사용자 지정 색 항목](../../extensibility/internals/custom-colorable-items.md)
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5208de3af52e4dad5fb9bb59b16f7b59efb72340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069675"
 ---
 # <a name="expose-types-to-visual-designers"></a>비주얼 디자이너에 형식 노출
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 비주얼 디자이너를 표시 하기 위해 디자인 타임에 클래스 및 형식 정의에 대 한 액세스 권한이 있어야 합니다. 클래스는 현재 프로젝트의 전체 종속성 집합 (참조 및 해당 종속성)을 포함 하는 미리 정의 된 어셈블리 집합에서 로드 됩니다. 또한 비주얼 디자이너에서 사용자 지정 도구에 의해 생성 된 파일에 정의 된 클래스 및 형식에 액세스 해야 할 수도 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "99887096"
 
      임시 PE가 컴파일되면 컴파일러에 제공 되는 유일한 소스 파일은 사용자 지정 도구 출력입니다. 따라서 임시 PE를 사용 하는 사용자 지정 도구는 프로젝트의 다른 파일과 독립적으로 컴파일할 수 있는 출력 파일을 생성 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [BuildManager 개체 소개](/previous-versions/8f9kffa8(v=vs.140))
 - [단일 파일 생성기 구현](../../extensibility/internals/implementing-single-file-generators.md)
 - [단일 파일 생성기 등록](../../extensibility/internals/registering-single-file-generators.md)

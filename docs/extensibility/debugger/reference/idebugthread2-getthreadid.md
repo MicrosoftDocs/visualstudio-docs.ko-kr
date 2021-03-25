@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95dd724310b3aae6e2266d9d18a3846bc9efccf7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 39702dad7ad154e2922f217f36c13a47588cb06d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164554"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053037"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 시스템 스레드 식별자를 가져옵니다.
@@ -50,7 +50,7 @@ int GetThreadId (
 ## <a name="remarks"></a>설명
 스레드 ID는 프로세스의 다른 모든 스레드 간에 스레드를 식별 하는 데 사용 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 IDebugThread2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CProgram` . [](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
@@ -60,5 +60,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

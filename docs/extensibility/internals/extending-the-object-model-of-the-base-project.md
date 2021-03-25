@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project subtypes, extending automation object model
 - automation object model
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23541124e48df0c3760d38ff8205f086281034fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f220d1e0c97647162c621bc565147bc74f40103
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887044"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069623"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>기본 프로젝트의 개체 모델 확장
 
@@ -33,6 +33,6 @@ ms.locfileid: "99887044"
 
 - 구성 속성:이 컬렉션은 특정 구성에 대 한 프로젝트의 구성 종속 속성 (예: 디버그)을 노출 합니다. 자세한 내용은 <xref:EnvDTE.Configuration>를 참조하세요. 프로젝트 하위 유형은 Automation Extender를 사용 하 여 해당 속성을이 컬렉션에 추가할 수 있습니다. <xref:EnvDTE80.IInternalExtenderProvider>주 프로젝트 하위 형식 집계에 구현 된 인터페이스는 CATID `VSHPROPID_CfgBrowseObjectCATID` ( `itemid` VSITEMID의 값에 해당)에 대 한 개체를 제공 합니다 [. 루트](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>인터페이스를 사용 하 여 하나의 구성 찾아보기 개체를 서로 구별할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

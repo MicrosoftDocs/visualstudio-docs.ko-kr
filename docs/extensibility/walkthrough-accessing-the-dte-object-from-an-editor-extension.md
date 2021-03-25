@@ -7,23 +7,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7228165d49c7f11c15d12086933c473699ef6bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7035842f608428f149dd2c0965b4792afa25db67
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905589"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062072"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>연습: 편집기 확장에서 DTE 개체에 액세스
 
 Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte 개체의 형식을 사용 하 여 메서드를 호출 하 여 dte 개체를 가져올 수 있습니다. MEF (Managed Extensibility Framework) 확장에서를 가져온 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 다음 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 형식을 사용 하 여 메서드를 호출할 수 있습니다 <xref:EnvDTE.DTE> .
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
@@ -40,7 +40,7 @@ Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte �
     - VisualStudio.
     - VisualStudio를 변경할 수 없습니다.
 
-3. *DTETestProvider.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+3. *Dtetestprovider .cs* 파일에서 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using EnvDTE;
@@ -70,7 +70,7 @@ Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte �
    - EnvDTE
    - VisualStudio.
 
-3. *DTETestProvider.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+3. *Dtetestprovider .cs* 파일에서 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using EnvDTE;
@@ -92,7 +92,7 @@ Vspackage에서 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dte �
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)
 - [DTE를 사용하여 Visual Studio 시작](launch-visual-studio-dte.md)

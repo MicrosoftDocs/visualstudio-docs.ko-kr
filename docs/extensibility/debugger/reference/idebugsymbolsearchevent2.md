@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ef2d315568b78e567d682728c4cbc989c5a4ed2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a4ef5008740f563f2f7f986f73c8bbfbb94ef6b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053141"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 이 인터페이스는 디버그 엔진 (DE)에서 디버깅 되는 모듈에 대 한 디버깅 기호가 로드 되었음을 나타내기 위해 전송 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugSymbolSearchEvent2 : IUnknown
@@ -38,7 +38,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  `IDebugSymbolSearchEvent2`인터페이스는 다음 메서드를 노출 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|기호 검색 결과에 대 한 정보를 검색 합니다.|
 
@@ -54,7 +54,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

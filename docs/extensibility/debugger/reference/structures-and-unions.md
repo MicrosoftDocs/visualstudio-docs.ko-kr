@@ -7,17 +7,17 @@ ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b055446e6bdf147c99cf96b48c03bfcfdd2eda2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 055c8972643a94bd8f13aa6e5e6bc5dde600140b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938696"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061474"
 ---
 # <a name="structures-and-unions"></a>구조체 및 공용 구조체
 다음은 Visual Studio 디버깅 SDK의 구조체 및 공용 구조체입니다.
@@ -141,5 +141,5 @@ ms.locfileid: "99938696"
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

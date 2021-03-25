@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f9675627bf3044258a532ca91768619f2c6de3ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053258"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 이 인터페이스는 특정 스레드의 호출 스택에 있는 단일 스택 프레임을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugStackFrame2 : IUnknown
@@ -38,7 +38,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugStackFrame2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|이 스택 프레임에 대 한 코드 컨텍스트를 가져옵니다.|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|이 스택 프레임의 문서 컨텍스트를 가져옵니다.|
@@ -61,5 +61,5 @@ IDebugStackFrame2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, supporting Collapse to Definitions command
 - hidden text, Collapse to Definitions command
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844595"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078687"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 개요 지원
 개요는 텍스트의 여러 영역을 확장 하거나 축소 하는 데 사용 됩니다. 개요를 사용 하는 방법은 언어 마다 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.
@@ -47,6 +47,6 @@ ms.locfileid: "99844595"
 > [!NOTE]
 > 줄 바꿈 문자를 숨길 때는 주의 해야 합니다. 숨겨진 텍스트는 최종 줄 바꿈 문자를 표시 하는 첫 번째 줄의 첫 번째 줄부터 마지막 줄의 마지막 문자로 확장 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 레거시 언어 서비스에서 숨겨진 텍스트 지원 제공](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [방법: 레거시 언어 서비스에서 확장 된 개요 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

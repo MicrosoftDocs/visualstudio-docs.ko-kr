@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58a6b0beab4312b0622501e72a5d2c87ef84ccff
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152769"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087875"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 디버그 엔진 (DE)은 현재 실행 중인 프로그램에서 예외가 throw 될 때이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExceptionEvent2 : IUnknown
@@ -38,7 +38,7 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugExceptionEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|이 이벤트를 발생 시킨 예외에 대 한 자세한 정보를 가져옵니다.|
 |[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|이 이벤트를 발생 시킨 throw 된 예외에 대 한 사람이 읽을 수 있는 설명을 가져옵니다.|
@@ -55,7 +55,7 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="remarks"></a>설명
  이벤트를 보내기 전에 DE는이 예외 이벤트가 [setexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md)에 대 한 이전 호출에 의해 첫 번째 또는 두 번째 예외가 지정 되었는지를 확인 합니다. 첫 번째 예외로 지정 된 경우 `IDebugExceptionEvent2` 이벤트는 SDM으로 전송 됩니다. 그렇지 않은 경우 DE는 응용 프로그램에 예외를 처리할 수 있는 기회를 제공 합니다. 예외 처리기가 제공 되지 않고 예외가 두 번째 예외로 지정 된 경우 `IDebugExceptionEvent2` 이벤트는 SDM으로 전송 됩니다. 그렇지 않은 경우 DE는 프로그램의 실행을 다시 시작 하 고 운영 체제 또는 런타임에서 예외를 처리 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

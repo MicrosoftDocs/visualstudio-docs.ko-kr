@@ -7,22 +7,22 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a1857edb8032d12cd23da5e2686ad90f15b574
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9260b567b65000780ee81226607e0a1c76c5fd46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892465"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062007"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>연습: 여백 문자 모양 만들기
 사용자 지정 편집기 확장을 사용 하 여 편집기 여백의 모양을 사용자 지정할 수 있습니다. 이 연습에서는 코드 주석에 "todo" 라는 단어가 나타날 때마다 표시기 여백에 사용자 지정 문자 모양을 삽입 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기

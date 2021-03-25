@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e405df704dfbba14413bd3787a9fb9f959c62a46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884483"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078593"
 ---
 # <a name="test-area-6-delete"></a>테스트 영역 6: 삭제
 이 소스 제어 플러그 인 테스트 영역에는 삭제 작업이 포함 됩니다.
@@ -54,5 +54,5 @@ ms.locfileid: "99884483"
 |파일 시스템 웹 프로젝트 삭제|1. 파일 시스템 웹 프로젝트를 만듭니다 (찾아보기 단추를 사용 하 여 UNC 경로 지정).<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 솔루션에서 전체 프로젝트를 제거 합니다.<br />4. 로컬 웹 프로젝트에 대해 1 ~ 3 단계를 반복 합니다 (코드를 통해 서로 다른 경로를 연습 하지만 외부 인터페이스 및 동작은 동일).|일반적인 예상 동작입니다.|
 |파일 시스템 웹 프로젝트에서 파일을 삭제 합니다.|1. 파일 시스템 웹 프로젝트를 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 프로젝트에서 파일을 삭제 합니다.<br />4. 로컬 웹 프로젝트에 대해 1 ~ 3 단계를 반복 합니다 (코드를 통해 서로 다른 경로를 연습 하지만 외부 인터페이스 및 동작은 동일).|일반적인 예상 동작입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

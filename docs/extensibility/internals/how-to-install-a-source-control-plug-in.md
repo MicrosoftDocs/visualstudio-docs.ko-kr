@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a0798cb7763ff2766d2de2bb00a80759be8fd3e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912753"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078814"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>방법: 소스 제어 플러그 인 설치
 소스 제어 플러그 인을 만들려면 다음 세 단계를 수행 해야 합니다.
@@ -118,5 +118,5 @@ ms.locfileid: "99912753"
 
  이러한 두 조건이 모두 충족 되 면 버전 1.2 및 1.3에서 지원 되는 새 함수를 호출할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원본 제어 플러그 인 시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

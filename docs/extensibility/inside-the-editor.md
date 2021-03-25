@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd45bb0a47de7283d75c083edc46b6fc38fe7d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869546"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079204"
 ---
 # <a name="inside-the-editor"></a>편집기 내부
 
@@ -320,7 +320,7 @@ IntelliSense는 문 완성, 시그니처 도움말 (매개 변수 정보 라고�
 
 문 완성은 메서드 이름, XML 요소 및 기타 코딩 또는 태그 요소에 대 한 잠재적 완성의 팝업 목록을 제공 합니다. 일반적으로 사용자 제스처는 완료 세션을 호출 합니다. 세션에는 잠재적 완성 목록이 표시 되며 사용자는이를 선택 하 여 목록을 해제할 수 있습니다. 는를 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 만들고 트리거하는 역할을 담당 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . 는 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 세션에 대 한 완료 항목의를 계산 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)
 - [편집기 가져오기](../extensibility/editor-imports.md)

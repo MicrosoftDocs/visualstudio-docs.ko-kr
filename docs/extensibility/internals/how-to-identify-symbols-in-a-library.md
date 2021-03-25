@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e4c551c516b78ababb2400f7cfbd699ab06627
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6c897801b98857f4a310323d4e00583c98245d5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932594"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078879"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>방법: 라이브러리에서 기호 식별
 기호 검색 도구는 기호의 계층 뷰를 표시 합니다. 기호는 네임 스페이스, 개체, 클래스, 클래스 멤버 및 기타 언어 요소를 나타냅니다.
@@ -81,7 +81,7 @@ N1
 
      개체 관리자는이 메서드를 호출 하 여 기호의 프레젠테이션 경로에 포함 된 노드의 목록을 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [방법: 개체 관리자를 사용 하 여 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

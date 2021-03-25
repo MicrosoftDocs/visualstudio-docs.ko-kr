@@ -8,18 +8,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3deac1637bb6b4ed054a8a9afc7ab78bf26d0183
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a356fe3dadaf0eca4f0b4d0f2a7d17f0b475acfb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968413"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061409"
 ---
 # <a name="deploy-custom-start-pages"></a>사용자 지정 시작 페이지 배포
 
@@ -97,7 +97,7 @@ Visual Studio에서 시작 페이지를 인식 하려면 `Content Element` VSIX 
 
 3. **시작 옵션 페이지** 의 **시작 페이지 사용자 지정** 목록에서 새 시작 페이지를 선택 합니다. 자세한 내용은 [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)
 - [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff23784bb833c6a68e368f5db5d3b6f1a7433bb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837205"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069415"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 소스 제어 VSPackage를에 노출 하려면 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 둘 이상의 소스 제어 VSPackage가 등록 된 경우 사용자는 적절 한 시간에 로드할 VSPackage를 선택할 수 있습니다. Vspackage에 대 한 자세한 내용 및 등록 방법에 대 한 자세한 내용은 [vspackage](../../extensibility/internals/vspackages.md) 를 참조 하세요.
@@ -81,7 +81,7 @@ ms.locfileid: "99837205"
 
   이전 버전의와 달리 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 다시 시작은 더 이상 소스 제어 vspackage를 전환 하는 유일한 방법입니다. VSPackage 선택이 자동으로 선택 됩니다. 패키지를 전환 하려면 관리자 또는 고급 사용자가 아닌 Windows 사용자 권한이 필요 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [기능](../../extensibility/internals/source-control-vspackage-features.md)
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)

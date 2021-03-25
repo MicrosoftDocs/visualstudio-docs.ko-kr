@@ -11,17 +11,17 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf1d717f423768f9dc53972c2a482e2eab913d81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0cf4cef21746834a92abfd8b2e1df3f61e08b2dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078892"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출
 기호 검색 도구, **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과** 는 새 데이터에 대 한 요청을 개체 관리자에 게 전달 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 개체 관리자는 적절 한 라이브러리를 찾고 새 기호 목록을 요청 합니다. 라이브러리는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인터페이스를 통해 개체 관리자에 게 요청 된 데이터를 제공 하 여 응답 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]개체 관리자는 인터페이스의 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 하 여 데이터를 가져오고이를 사용 하 여 기호 검색 도구의 뷰를 채우거 나 업데이트 합니다.
@@ -466,7 +466,7 @@ ms.locfileid: "99928213"
 
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [방법: 개체 관리자를 사용 하 여 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [방법: 라이브러리에서 기호 식별](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

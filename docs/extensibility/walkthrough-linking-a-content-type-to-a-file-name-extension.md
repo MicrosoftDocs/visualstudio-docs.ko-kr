@@ -7,22 +7,22 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 990f10fe82b9230c12ba13d736750f2f644c3ee5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078450"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>연습: 파일 이름 확장명에 콘텐츠 형식 연결
 사용자 고유의 콘텐츠 형식을 정의 하 고 MEF (편집기 Managed Extensibility Framework) 확장을 사용 하 여 파일 이름 확장명을 연결할 수 있습니다. 일부 경우에는 파일 이름 확장명이 언어 서비스에 의해 이미 정의 되어 있습니다. 그러나 MEF에서 사용 하려면 콘텐츠 형식에 연결 해야 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -103,5 +103,5 @@ ms.locfileid: "99955504"
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [언어 서비스 및 편집기 확장 위치](../extensibility/language-service-and-editor-extension-points.md)

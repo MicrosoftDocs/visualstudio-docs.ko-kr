@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSTextBuffer object, reference
 - views [Visual Studio SDK], VSTextBuffer object
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9207018ae4f2845e49c541695052ecc30de8914b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a72491b118e0a51454181734a8fe388c2f7e851e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905692"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062189"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 개체
 텍스트 버퍼 개체는 일반적으로 파일에 연결 되는 유니코드 텍스트 스트림을 나타냅니다. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>개체는 마법사와 같이 핵심 편집기의 컨텍스트 외부에서 사용할 수 있습니다.
@@ -45,7 +45,7 @@ ms.locfileid: "99905692"
 ## <a name="remarks"></a>설명
  는 `VSTextBuffer` 일반적으로에 대 한 호출에 의해 검색 됩니다 `QueryInterface` `IVsTextBuffer` . 자세한 내용은 [텍스트 버퍼](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [그림 편집](https://www.microsoft.com/download/details.aspx?id=55984)

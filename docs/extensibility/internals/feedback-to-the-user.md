@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d40ca34ea8d579e85ee56170f621b98a10b89f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886992"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069636"
 ---
 # <a name="feedback-to-the-user"></a>사용자 의견
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 사용 가능한 기능에 대 한 시각적 피드백은 사용자의 현재 선택 영역 및 전역 선택 컨텍스트를 기반으로 합니다. 다음 표에서는 다양 한 선택 컨텍스트에서 사용할 수 있는 기능을 보여 줍니다.
@@ -59,7 +59,7 @@ ms.locfileid: "99886992"
 
 - 현재 컨텍스트를 반영 하 고 상황에 맞는 **프로젝트** 메뉴 명령이 현재 컨텍스트를 반영 하 고 현재 컨텍스트를 반영 하는 활성 웹 응용 프로그램 프로젝트에 적용 되는 활성 계층 구조 창 (일반적으로 **솔루션 탐색기**)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [계층 및 선택](../../extensibility/internals/hierarchies-and-selection.md)

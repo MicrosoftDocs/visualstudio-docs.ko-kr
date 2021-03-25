@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1229c5e63838a8192c7622cdddd9881799a2da11
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221303"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062514"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 `VisibilityItem`요소는 명령 및 도구 모음의 정적 표시 여부를 결정 합니다. 모든 항목은 명령 또는 메뉴와 연결 된 명령 UI 컨텍스트를 식별 합니다. Visual Studio에서는 해당 항목을 정의 하는 Vspackage를 로드 하지 않고 명령, 메뉴 및 도구 모음과 표시 유형을 검색 합니다. IDE는 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 명령 UI 컨텍스트가 활성 상태 인지 여부를 확인 합니다.
@@ -43,7 +43,7 @@ ms.locfileid: "102221303"
 
 ### <a name="attributes"></a>특성
 
-|attribute|설명|
+|attribute|Description|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.|
 |id|필수 요소. GUID/ID 명령 식별자의 ID입니다.|
@@ -55,7 +55,7 @@ ms.locfileid: "102221303"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|설명|
+|요소|Description|
 |-------------|-----------------|
 |[VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`요소는 명령 및 도구 모음 그룹의 정적 표시 여부를 결정 합니다.|
 
@@ -71,7 +71,7 @@ ms.locfileid: "102221303"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>

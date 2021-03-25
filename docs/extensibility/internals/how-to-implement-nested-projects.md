@@ -8,17 +8,17 @@ helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b02fca5d37d7e75cd7c32527bb09358425e626
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 49f2e3b971c16b63f900424aa99649e424490d30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932542"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078866"
 ---
 # <a name="how-to-implement-nested-projects"></a>방법: 중첩 프로젝트 구현
 
@@ -86,7 +86,7 @@ ms.locfileid: "99932542"
 - [중첩 된 프로젝트에 대 한 명령 처리 구현](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [중첩 프로젝트에 대 한 AddItem 대화 상자 필터링](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)

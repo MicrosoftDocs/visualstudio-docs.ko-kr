@@ -9,17 +9,17 @@ helpviewer_keywords:
 - symbol handler, interfaces
 - symbol handler, evaluating variables
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be44c623f93d9ecc4f9f5d4488c462ed8a9969d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850823"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061435"
 ---
 # <a name="symbol-provider-interfaces"></a>기호 공급자 인터페이스
 다음은에 대 한 기호 처리 인터페이스 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 입니다.
@@ -60,5 +60,5 @@ ms.locfileid: "99850823"
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 개체의 컬렉션을 나타냅니다.|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|[Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체의 컬렉션을 나타냅니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

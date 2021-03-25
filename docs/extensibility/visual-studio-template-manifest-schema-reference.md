@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925835"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062501"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 이 스키마는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 Visual Studio 템플릿 매니페스트 (*vstman*) 파일의 형식을 설명 합니다. 또한이 스키마는 템플릿에 대 한 위치 및 기타 관련 정보를 설명 합니다.
@@ -30,7 +30,7 @@ ms.locfileid: "99925835"
 
 ### <a name="attributes"></a>특성
 
-- **Version**: 템플릿 매니페스트의 버전을 나타내는 문자열입니다. 필수 사항입니다.
+- **Version**: 템플릿 매니페스트의 버전을 나타내는 문자열입니다. 필수 요소.
 
 - **Locale**: 템플릿 매니페스트의 로캘 또는 로캘을 나타내는 문자열입니다. 로캘 값은 모든 템플릿에 적용 됩니다. 각 로캘에 대해 별도의 매니페스트를 사용 해야 합니다. 선택 사항입니다.
 

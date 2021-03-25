@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: acda716c72d10f35bf8c89978956f62a6d3754dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935926"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078606"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>연습: QuickInfo 도구 설명 표시
 QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메서드 시그니처와 설명을 표시 하는 IntelliSense 기능입니다. QuickInfo 설명을 제공 하려는 식별자를 정의 하 고 콘텐츠를 표시할 도구 설명을 만들어 QuickInfo와 같은 언어 기반 기능을 구현할 수 있습니다. 언어 서비스의 컨텍스트에서 QuickInfo를 정의 하거나 고유한 파일 이름 확장명 및 콘텐츠 형식을 정의 하 고 해당 형식에 대해서만 QuickInfo를 표시 하거나 기존 콘텐츠 형식 (예: "텍스트")에 대 한 QuickInfo를 표시할 수 있습니다. 이 연습에서는 "text" 콘텐츠 형식에 대해 QuickInfo를 표시 하는 방법을 보여 줍니다.
@@ -39,7 +39,7 @@ QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메
 
   이 예제에서는 QuickInfo 소스가 하드 코드 된 메서드 이름 및 설명 목록을 사용 하지만, 전체 구현에서는 언어 서비스 및 언어 설명서에서 해당 콘텐츠를 제공 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치할 필요가 없습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -179,5 +179,5 @@ QuickInfo는 사용자가 포인터를 메서드 이름 위로 이동할 때 메
 
 4. "추가" 항목 중 하나 위로 포인터를 이동 합니다. 메서드의 시그니처와 설명이 `add` 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

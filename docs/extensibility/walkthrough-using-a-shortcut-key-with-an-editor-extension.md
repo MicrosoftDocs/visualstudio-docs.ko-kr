@@ -7,22 +7,22 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931268"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061955"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장에서 바로 가기 키 사용
 편집기 확장에서 바로 가기 키에 응답할 수 있습니다. 다음 연습에서는 바로 가기 키를 사용 하 여 텍스트 뷰에 뷰 장식을 추가 하는 방법을 보여 줍니다. 이 연습은 뷰포트 장식 편집기 템플릿을 기반으로 하며 + 문자를 사용 하 여 장식을 추가할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) 프로젝트 만들기
@@ -47,7 +47,7 @@ ms.locfileid: "99931268"
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs 클래스 파일에서 AdornmentLayer의 이름을 **Keybindingtest** 에서 **PurpleCornerBox** 로 변경 합니다.
+KeyBindingTestTextViewCreationListener 클래스 파일에서 AdornmentLayer의 이름을 **Keybindingtest** 에서 **PurpleCornerBox** 로 변경 합니다.
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ Visual Studio 2017 이전 버전 15.6 이전에 편집기 확장에서 명령을
    }
    ```
 
-   7. *KeyBindingTestTextViewCreationListener.cs* 파일에서 *KeyBindingCommandHandler.cs* 로 장식 계층 정의를 복사 하 고 *KeyBindingTestTextViewCreationListener.cs* 파일을 삭제 합니다.
+   7. *KeyBindingTestTextViewCreationListener* 파일의 장식 계층 정의를 *Keybindingcommandhandler. cs* 로 복사 하 고 KeyBindingTestTextViewCreationListener 파일을 삭제 *합니다* .
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ Visual Studio 2017 이전 버전 15.6 이전에 편집기 확장에서 명령을
 
 원본 장식이 텍스트 파일의 모든 문자 ' a '에 표시 됩니다. 이제 문자에 대 한 응답으로 장식을 추가 하도록 코드를 변경 했으므로 문자를 입력 하는 **+** 줄에만 장식을 추가 합니다 **+** . 장식 코드를 변경 하 여 모든 ' a '에 더 많이 표시 되도록 할 수 있습니다.
 
-*KeyBindingTest.cs* 파일에서 메서드를 변경 하 여 `CreateVisuals()` 뷰의 모든 줄을 반복 하 여 ' a ' 문자를 장식 합니다.
+*Keybindingtest .cs* 파일에서 `CreateVisuals()` 뷰의 모든 줄을 반복 하 여 ' a ' 문자를 데코레이팅하는 메서드를 변경 합니다.
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

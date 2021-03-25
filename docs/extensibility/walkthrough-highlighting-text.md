@@ -7,22 +7,22 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95bc250219c59d4db21fcb086cdf43e0ba7800e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838632"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078463"
 ---
 # <a name="walkthrough-highlight-text"></a>연습: 텍스트 강조 표시
 MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집기에 다른 시각적 효과를 추가할 수 있습니다. 이 연습에서는 텍스트 파일에서 현재 단어의 모든 항목을 강조 표시 하는 방법을 보여 줍니다. 텍스트 파일에서 단어가 두 번 이상 발생 하는 경우 한 번에 캐럿을 배치 하면 모든 항목이 강조 표시 됩니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -407,5 +407,5 @@ MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집�
 
 4. "Hello"의 발생 중 하나에 커서를 놓습니다. 모든 항목은 파란색으로 강조 표시 되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

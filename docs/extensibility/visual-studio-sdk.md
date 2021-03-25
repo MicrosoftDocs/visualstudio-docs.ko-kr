@@ -11,17 +11,17 @@ helpviewer_keywords:
 - VS SDK (see Visual Studio SDK)
 - Visual Studio, SDK
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 050e873a26996221af2106714106cd37300ba4c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91411ec183e6c51abd825af1080c4330ca46fc90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925882"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062527"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새 기능을 Visual Studio에 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.
@@ -75,7 +75,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 
 - [Visual Studio 확장](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)

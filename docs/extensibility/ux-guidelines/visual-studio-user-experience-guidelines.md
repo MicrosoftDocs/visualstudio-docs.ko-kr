@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a218cc3923f26c048bcf40894d66fccea2526aa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062644"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 사용자 환경 지침
 Visual Studio의 새 기능을 디자인 하는 경우 Visual Studio 사용자 환경 지침을 따릅니다. 이러한 지침에는 일반 사용자 모델 및 상호 작용 패턴에 대 한 정보가 포함 되어 있으므로 새로운 UI (사용자 인터페이스) 디자이너가 개발 환경 내에서 원활 하 고 일관적인 사용자 환경을 만들 수 있습니다.

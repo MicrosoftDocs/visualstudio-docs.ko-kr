@@ -8,18 +8,18 @@ helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 47c83906b84263af966737a309de0b5096031f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 972f8c477a62078b14d16ff61d3f6b8c7978616d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926873"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062033"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>연습: 시작 페이지에 사용자 지정 XAML 추가
 
@@ -89,7 +89,7 @@ ms.locfileid: "99926873"
 
 이제 Visual Studio 시작 페이지에는 웹 브라우저 탭과 MyButton 탭을 표시 하는 탭이 포함 되어 있습니다. [사용자 정의 컨트롤을 시작 페이지에 추가](../extensibility/adding-user-control-to-the-start-page.md)하는 것과 같이 *코드 숨김이* 포함 된 모델을 사용 하 여 사용자 지정 .dll을 추가 하 여 다른 기능이 있는 사용자 지정 시작 페이지를 만들 수 있습니다. 결과 .vsix 파일을 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트 또는 다른 웹 사이트 또는 네트워크 공유에 게시 하 여 사용자 지정 시작 페이지를 다른 사용자와 공유할 수 있습니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)
 - [WPF 컨테이너 컨트롤](/previous-versions/bb675291(v=vs.110))

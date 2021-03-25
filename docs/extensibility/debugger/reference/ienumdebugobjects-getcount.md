@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::GetCount method
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54247fd49792b0a0ce5ed3218429b97b0ccdfcbf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: da5a94c17e3856a831e3d21fd22479b060a58fbd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224683"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052894"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 이 메서드는 열거형의 요소 수를 반환 합니다.
@@ -50,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>설명
  이 메서드는 다음, 복제, 건너뛰기 및 다시 설정을 구현 해야 하도록 지정 하는 일반적인 COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStepCompleteEvent2 interface
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38791456500fc5996345314a0a779f5ccd03d940
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149537"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053193"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 이 인터페이스는 디버깅 중인 프로그램에서 한 단계씩 코드 실행, 프로시저 단위 실행 또는 소스 코드 또는 문 또는 명령의 한 단계씩 코드 실행이 완료 되 면 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugStepCompleteEvent2 : IUnknown
@@ -45,7 +45,7 @@ IDebugStepCompleteEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

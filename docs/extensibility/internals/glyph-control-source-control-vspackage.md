@@ -8,17 +8,17 @@ helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb0175f3e74bf979bcbabaa5785ed9e015c5e7a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954776"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061214"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>문자 모양 컨트롤 (소스 제어 VSPackage)
 소스 제어 Vspackage에서 사용할 수 있는 전체 통합의 일부는 소스 제어에서 항목의 상태를 나타내기 위해 고유한 문자 모양을 표시 하는 기능입니다.
@@ -36,7 +36,7 @@ ms.locfileid: "99954776"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>메서드는에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 다양 한 소스 제어 상태를 표시 하는 이미지 목록을 가져오는 데 사용 됩니다. 소스 제어 VSPackage 사용자 지정 문자 모양에 대 한 이미지 목록에 대 한 핸들을 IDE로 반환 합니다. IDE는이 시점에서 이미지 목록의 복사본을 만들고 나중에이를 사용 하 여 표시할 문자 모양을 선택 합니다. 새 인터페이스가 지원 되지 않거나 `IVsSccGlyphs::GetCustomGlyphList` 메서드가을 반환 하는 경우 `E_NOTIMPL` IDE는에서 제공 하는 기본 문자 모양 목록에서 해당 문자 모양을 가져옵니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

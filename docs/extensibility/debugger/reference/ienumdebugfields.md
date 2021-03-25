@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f7534173fe927f1486e3f3c190ff2e427bb51bec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226555"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052920"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 이 인터페이스는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
@@ -38,7 +38,7 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|열거형에서 다음 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체 집합을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정 된 수의 항목을 건너뜁니다.|
@@ -55,7 +55,7 @@ IEnumDebugFields : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
