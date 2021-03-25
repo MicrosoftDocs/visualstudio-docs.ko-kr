@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03b4754d1648dc8a184d59e5e8b0f038a000bf2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8931590ea20373b5350d880d5fe9495dfe53c4f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153471"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077384"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 디버그 엔진 (DE)에서 프로그램을 시작 하 고 종료 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugEngineLaunch2 : IDebugEngine2
@@ -38,7 +38,7 @@ IDebugEngineLaunch2 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEngineLaunch2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|DE를 사용 하 여 프로세스를 시작 합니다.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|프로세스 실행을 다시 시작 합니다.|
@@ -52,5 +52,5 @@ IDebugEngineLaunch2 : IDebugEngine2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a83d5aa68f6f631243fbbfcad7cf28b25e7bc70
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057379"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: 전용 갤러리에 대 한 Atom 피드 만들기
 확장이 포함 된 인트라넷 위치로 Atom (RSS) 피드를 만들고, 피드를 전용 갤러리로 **확장 및 업데이트** 에 추가할 수 있습니다. 자세한 내용은 [Private galleries](../extensibility/private-galleries.md)(전용 갤러리)를 참조하세요.
@@ -74,5 +74,5 @@ ms.locfileid: "99967451"
 
  두 링크 태그는 생성 된 이미지 폴더의 스크린 샷을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프라이빗 갤러리](../extensibility/private-galleries.md)

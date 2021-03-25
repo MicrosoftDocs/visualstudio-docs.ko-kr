@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f44cb287945576d361d0318eaeafa42de99871d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db67e0a391f40fc17a80e616e10aa46a600337a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895910"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057860"
 ---
 # <a name="terminating-a-program"></a>프로그램 종료
 다음 섹션에서는 하나의 스레드를 사용 하는 단일 프로그램 종료에 대해 설명 합니다.
@@ -31,5 +31,5 @@ ms.locfileid: "99895910"
 
    IDE가 디자인 모드로 전환 됩니다. 디버그 엔진 또는 런타임 환경에서는 [IDebugPortNotify2:: RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 를 호출 하 여 포트에서 프로그램을 제거 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

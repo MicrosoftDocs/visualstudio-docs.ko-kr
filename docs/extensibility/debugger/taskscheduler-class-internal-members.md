@@ -8,17 +8,17 @@ helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0ed72efb383e216d5998c2231a472b8d29f9ec4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45e2aff7d16826a631bb5126447d60b8b2468455
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837452"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057873"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 클래스-내부 멤버
 이 문서에서는 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 사용자 지정 디버거를 구현 하는 데 도움이 되는 클래스의 내부 멤버에 대해 설명 합니다. 이 클래스에 대 한 일반 정보는 <xref:System.Threading.Tasks.TaskScheduler> 참조 문서를 참조 하세요.
@@ -36,7 +36,7 @@ ms.locfileid: "99837452"
        extends System.Object
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 ### <a name="methods"></a>메서드
 
@@ -47,6 +47,6 @@ ms.locfileid: "99837452"
 
 ## <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [.NET Framework에 대 한 병렬 확장 내부](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

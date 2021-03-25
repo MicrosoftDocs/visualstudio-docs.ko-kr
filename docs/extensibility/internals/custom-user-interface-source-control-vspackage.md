@@ -8,17 +8,17 @@ helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1239b11e814ba08e4e481358f5e7fdd0e5dc666b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902978"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091034"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>사용자 지정 사용자 인터페이스 (소스 제어 VSPackage)
 VSPackage는 Visual Studio 명령 테이블 (*vsct*) 파일을 통해 해당 메뉴 항목 및 해당 기본 상태를 선언 합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 VSPackage 로드 될 때까지 메뉴 항목을 기본 상태로 표시 합니다. 그런 다음 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드를 호출 하 여 메뉴 항목을 활성화 하거나 비활성화 합니다.
@@ -57,7 +57,7 @@ VSPackage는 Visual Studio 명령 테이블 (*vsct*) 파일을 통해 해당 메
 | 도구 창 | 소스 제어 VSPackage 비활성화 된 경우 소유 하 고 있는 모든 도구 창을 숨깁니다. |
 | 소스 제어 VSPackage 옵션 페이지 | 레지스트리 키 **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** 를 사용 하면 VSPackage에서 해당 옵션 페이지를 표시 해야 하는 컨텍스트를 설정할 수 있습니다. 이 키의 레지스트리 항목은 원본 제어 서비스의 SID (서비스 ID)를 사용 하 여 만들고 DWORD 값을 1로 할당 해야 합니다. 소스 제어 VSPackage가 등록 된 컨텍스트에서 UI 이벤트가 발생할 때마다 VSPackage가 활성 상태인 경우 호출 됩니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c28c175d53fb37cf890dad4240a84fb132f6af35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927940"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090124"
 ---
 # <a name="source-control-plug-in-api-functions"></a>소스 제어 플러그 인 API 함수
 소스 제어 플러그 인 API는이 API에 따라 소스 제어 플러그 인에서 구현 해야 하는 다음 함수를 제공 합니다. 각 함수의 시그니처와 비트 플래그 및 기타 매개 변수와 연관 된 의미 체계는이 참조에 자세히 설명 되어 있습니다.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Clone
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2189f0b48317ac6dc6459cbd3cde1785e02b25c5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 964aa8d280ec5d3a2803c88ea40284ed6d10110b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226178"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058120"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>설명
  열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

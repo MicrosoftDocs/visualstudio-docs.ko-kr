@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6069091295371ea017547cdac6540e68ba2885e8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6187b71338e6a91a412e704857a6c92888490f52
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171531"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065062"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 속성의 파생 속성 속성을 가져옵니다.
@@ -50,5 +50,5 @@ int GetDerivedMostProperty (
 ## <a name="remarks"></a>설명
  예를 들어이 속성이을 구현 하는 개체를 설명 `ClassRoot` 하지만 실제로에서 파생 되는의 인스턴스화 인 경우 `ClassDerived` `ClassRoot` 이 메서드는 개체를 설명 하는 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 개체를 반환 합니다 `ClassDerived` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

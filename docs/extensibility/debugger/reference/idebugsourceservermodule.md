@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule interface
 ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74fa5f3aafea5f709777bbead81743c7c5aef358
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5b12e93d52fe841b66baae341a6854e0217dcb00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164645"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071170"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 PDB 파일에 포함 된 소스 서버 정보를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugSourceServerModule : IUnknown
@@ -33,7 +33,7 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugSourceServerModule` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|원본 서버 정보의 배열을 검색 합니다.|
 

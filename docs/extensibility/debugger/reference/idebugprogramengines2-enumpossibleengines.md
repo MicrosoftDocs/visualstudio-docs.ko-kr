@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5719728637f26ed61283578565470b39fc60455
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2a49a0590a1ec2f0b0e7d2be59fe2161b438154a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151586"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084209"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)의 Guid를 반환 합니다.
@@ -60,5 +60,5 @@ int EnumPossibleEngines(
 ## <a name="remarks"></a>설명
  엔진 수를 확인 하려면 `celtBuffer` 매개 변수를 0으로 설정 하 고 `rgguidEngines` 매개 변수를 null 값으로 설정 하 여이 메서드를 한 번 호출 합니다. 이 `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 는 (c #의 경우 0X8007007A)를 반환 하 고 `pceltEngines` 매개 변수는 필요한 버퍼 크기를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

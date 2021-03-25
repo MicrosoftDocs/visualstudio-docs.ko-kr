@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa9a66bdec3da9b6d18772b4ff2c85a7874bde6c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f4f7f6a083c37ece73be488ab0c4f6d4c25ce24c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084157"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 프로그램에 세션을 연결 합니다.
@@ -63,5 +63,5 @@ int Attach(
 > [!NOTE]
 > 전달 된 인터페이스는 `pSession` 이 프로그램에 연결 하는 세션 디버그 관리자를 고유 하 게 식별 하는 값인 쿠키로만 처리 됩니다. 제공 된 인터페이스의 메서드는 모두 작동 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

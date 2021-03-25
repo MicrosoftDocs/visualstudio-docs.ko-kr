@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumLocals method
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99b6e4b3cf30cccd4a2785f3712b34d9471bdd8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b7ecaeac949cf139f6b18f30a10a0030002c7f0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076682"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 메서드의 선택 된 지역 변수에 대 한 열거자를 만듭니다.
@@ -77,7 +77,7 @@ public void func(int index)
 
 [Idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) 개체는 `func` 메서드 자체를 나타냅니다. `EnumLocals`주소에 설정 된 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 를 사용 하 여 메서드를 호출 하면 `Inner Scope 1` 변수가 포함 된 열거형 `temp1` (예:)이 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d6409b5e624cd8596e669f191b2644aaf27a88c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963499"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090930"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML 명령 테이블 (.vvsct) 파일 디자인
 XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 레이아웃과 모양을 설명 합니다. 명령 항목에는 단추, 콤보 상자, 메뉴, 도구 모음 및 명령 항목 그룹이 있습니다. 이 문서에서는 XML 명령 테이블 파일, 명령 항목 및 메뉴에 영향을 주는 방법 및 해당 파일을 만드는 방법을 설명 합니다.
@@ -123,5 +123,5 @@ XML 명령 테이블 (*.vvsct*) 파일은 VSPackage에 대 한 명령 항목의 
 
  **Createexpinstance/Reset** 명령을 사용 하 여 도구를 실행 합니다. 이 도구는 일반적으로와 함께 설치 되지 않은 모든 등록 된 Vspackage를 실험적 hive에서 제거 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7053c45ba86f4bea54befc3bde67d831cc9c822e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58e9ddfd3789fcfe7d81348714a8de2add743090
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168662"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071196"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 디버그 엔진에서 메트릭 설정을 원격으로 읽을 수 있도록 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugSettingsCallback2D : IUnknown
@@ -33,7 +33,7 @@ IDebugSettingsCallback2D : IUnknown
 ## <a name="methods"></a>메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugSettingsCallback2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|언어 및 공급 업체 식별자를 제공 하는 사용 가능한 식 계산기를 열거 합니다.|
 |[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|메트릭이 지정 된 식 계산기 로컬 개체를 검색 합니다.|
@@ -52,7 +52,7 @@ IDebugSettingsCallback2D : IUnknown
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 **IDebugSettingsCallback2** 개체를 매개 변수로 사용 하는 함수를 보여 줍니다.
 
 ```cpp

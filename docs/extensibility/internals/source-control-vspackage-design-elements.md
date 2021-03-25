@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a9b8dfa8036603c035a9112eb29688eab7ff25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3e8d70d721e77e0ed7b93dda3be5defdbf7dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852611"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064075"
 ---
 # <a name="source-control-vspackage-design-elements"></a>소스 제어 VSPackage 디자인 요소
 이 단원의 항목에서는 원본 제어 VSPackage가 심층 통합을 위해 구현 해야 하는 구조를 간략하게 설명 합니다. 또한 소스 제어 VSPackage 구현할 수 있는 인터페이스 및 서비스와 소스 제어 VSPackage가 소스 제어 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 모델 및 기능을 지원 하기 위해 다른 구성 요소에서 사용할 수 있는 인터페이스 및 서비스를 나열 합니다.

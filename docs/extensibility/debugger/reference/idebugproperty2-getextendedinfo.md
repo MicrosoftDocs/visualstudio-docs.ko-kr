@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad540166ff769aaa894ad4142843553951217234
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171501"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065036"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 속성에 대 한 확장 정보를 가져옵니다.
@@ -65,7 +65,7 @@ int GetExtendedInfo (
 |guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|이 속성이 관리 코드 로컬 주소를 나타내는 경우 원하는 슬롯 번호를 나타내는 32 비트 숫자를 반환 합니다.|
 |guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Property 개체와 연결 된 변수의 시그니처를 포함 하는 문자열을 반환 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

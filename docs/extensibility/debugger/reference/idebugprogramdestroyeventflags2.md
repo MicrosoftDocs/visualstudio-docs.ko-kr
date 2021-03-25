@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02b2d934c2a556d3556d494368145e52a8c97394
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6cb54b3a88255f9102f617298ff23c3e117d3cdd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168194"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084235"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 디버그 세션을 종료할 때 디버그 엔진이 UI의 기본 동작을 재정의할 수 있도록 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramDestroyEventFlags2 : IUnknown
@@ -33,7 +33,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramDestroyEventFlags2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|프로그램 소멸 플래그를 검색 합니다.|
 

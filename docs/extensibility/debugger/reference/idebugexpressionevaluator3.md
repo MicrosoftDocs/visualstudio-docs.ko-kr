@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3732e1262424fbe54de835848642f7ab1c78d7e9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ab5264b888de6763d54f561bea5c9a7d34002b0a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152158"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077293"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102152158"
 
  향상 된 파서 트리가 포함 된 EE (식 계산기)를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
@@ -36,7 +36,7 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ## <a name="methods"></a>메서드
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|기호 공급자와 계산 프레임의 주소가 지정 된 경우 식 문자열을 구문 분석 된 식으로 변환 합니다.|
 

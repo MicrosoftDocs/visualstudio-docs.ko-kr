@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IsClosedType
 - IDebugExtendedField::IsClosedType
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f13fa0f143ac6adb8fb3493621b7ef638a394ca
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7ba4c55b53ebb1f1e5ad2000f31efc8a37f81eef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152119"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077202"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 필드가 폐쇄형 형식을 나타내는지 여부를 확인 합니다.
@@ -40,5 +40,5 @@ int IsClosedType();
 ## <a name="return-value"></a>Return Value
  필드가 닫힌 형식이 면는를 반환 하 `S_OK` 고, 그렇지 않으면를 반환 `S_FALSE` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

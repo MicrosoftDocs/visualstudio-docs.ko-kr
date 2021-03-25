@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e0202185d760a1e3334996906807e5922fe61e0a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149589"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084222"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 이 인터페이스는 프로그램 노드에서이 프로그램을 디버그할 수 있는 모든 가능한 디버그 엔진 (DE)을 지정 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramEngines2 : IUnknown
@@ -38,7 +38,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgramEngines2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|이 프로그램을 디버그할 수 있는 모든 가능한 DEs를 나타냅니다.|
 |[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|이 프로그램을 디버깅 하는 데 사용할 DE를 선택 합니다.|
@@ -53,7 +53,7 @@ IDebugProgramEngines2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)

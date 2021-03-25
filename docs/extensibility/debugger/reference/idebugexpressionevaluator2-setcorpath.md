@@ -7,20 +7,20 @@ helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afa363b620702c244484612606274dd1cbddb523
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd81d9dd5df086fcab3f401d4b3e14f65e9ce24c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152314"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077345"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 디버거에 로드 된 CLR (공용 언어 런타임)의 경로를 설정 합니다.
@@ -46,7 +46,7 @@ int SetCorPath(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) 인터페이스를 노출 하는 **ExpressionEvaluatorPackage** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -127,5 +127,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

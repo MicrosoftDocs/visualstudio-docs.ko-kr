@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertyGetter method
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b86315d7991e8ca76a4d08ec38292a9157bbdb1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddd7479f907ab305b7c0e0847bb7476b0c2c629c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167986"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058198"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 속성을 가져오는 메서드를 가져옵니다.
@@ -50,7 +50,7 @@ int GetPropertyGetter(
 ## <a name="remarks"></a>설명
  속성을 설정 하는 메서드를 가져오기 위해 [Getpropertysetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) 는 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

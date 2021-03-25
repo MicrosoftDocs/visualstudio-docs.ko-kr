@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be871d325cd63e70fb2857ee3f89f2cc854c89fc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5ef148fbde9bcedb733c5d05eaecc61f794769a0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171843"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084248"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 프로그램 소멸 플래그를 검색 합니다.
@@ -46,6 +46,6 @@ public int GetFlags(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)
 - [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md)

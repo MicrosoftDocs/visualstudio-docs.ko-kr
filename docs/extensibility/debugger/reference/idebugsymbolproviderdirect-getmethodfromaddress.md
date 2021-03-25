@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dea6367280217f42238a56a56a6ce0e0e6f92b47
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 306cb3bbe863ed0d8ca37c50b44158ea087ac015
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149498"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071092"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 지정 된 디버그 주소에서 메서드에 대 한 정보를 검색 합니다.
@@ -76,5 +76,5 @@ int GetMethodFromAddress(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

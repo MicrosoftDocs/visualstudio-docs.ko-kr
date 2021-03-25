@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b07eb23127abedc4e41af2795c3452401c3e670
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25846bf028eb93f83767b2ab964f152feabcaefb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168389"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070988"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 현재 명령 포인터를 지정 된 스택 프레임으로 설정할 수 있는지 여부를 확인 합니다.
@@ -55,7 +55,7 @@ int CanSetNextStatement (
 ## <a name="remarks"></a>설명
  이 메서드가를 반환 하는 경우 `S_OK` [setnextstatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) 메서드를 호출 하 여 실제로 다음 문을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugExtendedField::GetExtendedKind
 - GetExtendedKind
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 334ed7f44c4b4c119a204af17a00b8329410d05e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 91438d87a59c94efd837389229cb107e81573f12
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152132"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077215"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 지정 된 확장 필드 종류를 검색 합니다.
@@ -46,5 +46,5 @@ int GetExtendedKind(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

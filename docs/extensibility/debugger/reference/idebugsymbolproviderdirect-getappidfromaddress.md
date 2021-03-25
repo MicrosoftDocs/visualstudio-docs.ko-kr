@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3869bf7f43566fce45b634ce328b79de1e172dad
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0e93a24eaea8f74ac839b7a240ab7a95aaf3f4ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168376"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071118"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 디버그 주소가 지정 된 경우 응용 프로그램 도메인 식별자를 검색 합니다.
@@ -51,5 +51,5 @@ int GetAppIDFromAddress(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
