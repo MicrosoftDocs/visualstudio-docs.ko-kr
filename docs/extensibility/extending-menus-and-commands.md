@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, menu tasks
 - .vsct files, common menu tasks
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4466a180923c85461ede59102b346caf70fd064b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a96978cdad45c669b607c18e12b2e492dcf95bb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842198"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075213"
 ---
 # <a name="extend-menus-and-commands"></a>메뉴 및 명령 확장
 명령은 Visual Studio에 작업 및 프로세스를 추가 하는 방법입니다. 대부분의 경우 명령이 메뉴 또는 도구 모음에 표시 됩니다. VSPackage 프로젝트 템플릿은 매우 기본적인 명령을 구현 하는 방법을 보여 줍니다. 약간 더 길고 기본 구현에 대해서는 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.

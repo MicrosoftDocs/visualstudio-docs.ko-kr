@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf292a309e514f5b437b129bbfc6ee125df8269
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e3e7c0428a96b8841a598e7b91986aa1555ea5c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167739"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067480"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 디버그 엔진 (DE)은 기호를 로드 하는 동안 상태 표시줄 메시지를 설정 하기 위해이 인터페이스를 세션 디버그 관리자 (SDM)로 보냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBeforeSymbolSearchEvent2 : IUnknown
@@ -36,7 +36,7 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBeforeSymbolSearchEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|현재 디버깅 중인 모듈의 이름을 검색 합니다.|
 

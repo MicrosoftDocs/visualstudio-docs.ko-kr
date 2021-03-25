@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Clone
 ms.assetid: d774322c-e72d-4df3-b317-928da39dadc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b934bbf6e358296c433a1a59fe675f376d1491ac
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 82b0895cfabc63fc61c85fd626f8811796532e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225840"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082727"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>설명
  열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

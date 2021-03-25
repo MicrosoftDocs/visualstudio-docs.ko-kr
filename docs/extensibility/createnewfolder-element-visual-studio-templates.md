@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9169d90eb10c0595b7dc7fe940463f57354dfffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c2d8da615c350fc53b81532972cef65f6cd6ed7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870313"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089474"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 요소 (Visual Studio 템플릿)
 프로젝트를 만들 대상 디렉터리가 없음을 확인할지 여부를 결정합니다. 디렉터리가 있으면 프로젝트에 대해 새 디렉터리를 만들 수 있습니다. 일반적으로는 모든 공통 프로젝트 형식이 새 디렉터리에 새 프로젝트를 만들지 여부를 결정하는 데 사용하는 `NewProjectRequiresNewFolder(VsTemplate)` 레지스트리 플래그(`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`)가 이 설정을 재정의합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "99870313"
 </CreateNewFolder>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>형식
  `Boolean`
 
 ## <a name="attributes-and-elements"></a>특성 및 요소

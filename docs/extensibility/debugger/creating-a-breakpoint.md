@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd81b79fa43d86036a7fd1ac0ad813e6e2ebb78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 719a003e3dd46f46a0bf30642bed4b428d0956f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894974"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068000"
 ---
 # <a name="create-a-breakpoint"></a>중단점 만들기
 다음에서는 중단점을 만드는 프로세스에 대해 설명 합니다.
@@ -39,5 +39,5 @@ ms.locfileid: "99894974"
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

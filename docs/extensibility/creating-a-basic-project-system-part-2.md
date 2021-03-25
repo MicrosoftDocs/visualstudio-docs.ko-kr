@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853154"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089422"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>기본 프로젝트 시스템 만들기, 2 부
 [기본 프로젝트 시스템을 만드는](../extensibility/creating-a-basic-project-system-part-1.md)이 시리즈의 첫 번째 연습은 기본 프로젝트 시스템을 만드는 방법을 보여 줍니다. 이 연습은 Visual Studio 템플릿, 속성 페이지 및 기타 기능을 추가 하 여 기본 프로젝트 시스템을 기반으로 합니다. 이 연습을 시작 하기 전에 첫 번째 연습을 완료 해야 합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "99853154"
 
 1. 에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [기본 프로젝트 시스템 만들기 (1 부)](../extensibility/creating-a-basic-project-system-part-1.md)에 따라 만든 SimpleProject 솔루션을 엽니다.
 
-2. *SimpleProjectPackage.cs* 파일에서 ProvideProjectFactory 특성을 찾습니다. 두 번째 매개 변수 (프로젝트 이름)를 null로 바꾸고 네 번째 매개 변수 (프로젝트 템플릿 폴더의 경로)를 "로 바꿉니다. \\ 다음과 같이 \NullPath "를 수행 합니다.
+2. *SimpleProjectPackage* 파일에서 ProvideProjectFactory 특성을 찾습니다. 두 번째 매개 변수 (프로젝트 이름)를 null로 바꾸고 네 번째 매개 변수 (프로젝트 템플릿 폴더의 경로)를 "로 바꿉니다. \\ 다음과 같이 \NullPath "를 수행 합니다.
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,7 +100,7 @@ ms.locfileid: "99853154"
 - \<ProjectType>요소는 **새 프로젝트** 대화 상자에서 프로젝트 형식의 이름을로 합니다. 이 이름은 ProvideProjectFactory 특성의 프로젝트 이름 매개 변수를 대체 합니다.
 
   > [!NOTE]
-  > \<ProjectType>요소는 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage.cs 파일에 있는 특성의 인수와 일치 해야 합니다.
+  > \<ProjectType>요소는 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage 파일에 있는 특성의 인수와 일치 해야 합니다.
 
   \<TemplateContent>이 섹션에서는 새 프로젝트를 만들 때 생성 되는 다음 파일에 대해 설명 합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "99853154"
 
 - *AssemblyInfo.cs*
 
-  세 파일을 모두 `ReplaceParameters` true로 설정 하면 매개 변수 대체가 가능 합니다. *Program.cs* 파일을 `OpenInEditor` true로 설정 하면 프로젝트가 만들어질 때 코드 편집기에서 파일이 열립니다.
+  세 파일을 모두 `ReplaceParameters` true로 설정 하면 매개 변수 대체가 가능 합니다. *프로그램 .cs* 파일은를 `OpenInEditor` true로 설정 하 여 프로젝트를 만들 때 코드 편집기에서 파일을 엽니다.
 
   Visual Studio 템플릿 스키마의 요소에 대 한 자세한 내용은 [Visual studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조 하세요.
 
@@ -285,7 +285,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 ### <a name="to-substitute-project-template-parameters"></a>프로젝트 템플릿 매개 변수를 대체 하려면
 
-1. *SimpleProjectNode.cs* 파일에서 메서드를 제거 `AddFileFromTemplate` 합니다.
+1. *SimpleProjectNode* 파일에서 메서드를 제거 합니다 `AddFileFromTemplate` .
 
 2. *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 파일에서 속성을 찾아 \<RootNamespace> 값을 $safeprojectname $로 변경 합니다.
 
@@ -319,7 +319,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 5. 새 SimpleProject 콘솔 응용 프로그램을 만듭니다. **프로젝트 형식** 창에서 **SimpleProject** 를 선택 합니다. **Visual Studio에 설치 된 템플릿** 에서 **콘솔 응용 프로그램** 을 선택 합니다.
 
-6. 새로 만든 프로젝트에서 *Program.cs* 를 엽니다. 다음과 유사 하 게 표시 됩니다 (파일의 GUID 값이 서로 다름).
+6. 새로 만든 프로젝트에서 *프로그램 .cs* 를 엽니다. 다음과 유사 하 게 표시 됩니다 (파일의 GUID 값이 서로 다름).
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 - RootNamespace.
 
-1. *SimpleProjectPackage.cs* 파일에서 `ProvideObject` 다음 특성을 클래스에 추가 합니다 `SimpleProjectPackage` .
+1. *SimpleProjectPackage* 파일에서 `ProvideObject` 다음 특성을 클래스에 추가 합니다 `SimpleProjectPackage` .
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
     그러면 속성 페이지 클래스가 `GeneralPropertyPage` COM에 등록 됩니다.
 
-2. *SimpleProjectNode.cs* 파일에서 다음과 같은 두 개의 재정의 된 메서드를 클래스에 추가 합니다 `SimpleProjectNode` .
+2. *SimpleProjectNode* 파일에서 다음과 같은 두 개의 재정의 된 메서드를 클래스에 추가 합니다 `SimpleProjectNode` .
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
     이러한 메서드는 모두 속성 페이지 Guid의 배열을 반환 합니다. GeneralPropertyPage GUID는 배열의 유일한 요소 이므로 **속성 페이지** 대화 상자에는 하나의 페이지만 표시 됩니다.
 
-3. *GeneralPropertyPage.cs* 라는 클래스 파일을 SimpleProject 프로젝트에 추가 합니다.
+3. *GeneralPropertyPage* 라는 클래스 파일을 SimpleProject 프로젝트에 추가 합니다.
 
 4. 다음 코드를 사용 하 여이 파일의 내용을 바꿉니다.
 
@@ -462,7 +462,7 @@ Visual Studio 템플릿에 경로 정보가 없습니다. 따라서 템플릿 *.
 
 6. 실험적 인스턴스에서 새 SimpleProject 응용 프로그램을 만듭니다.
 
-7. Visual Studio는 프로젝트 팩터리를 호출 하 여 Visual Studio 템플릿을 사용 하 여 프로젝트를 만듭니다. 새 *Program.cs* 파일이 코드 편집기에서 열립니다.
+7. Visual Studio는 프로젝트 팩터리를 호출 하 여 Visual Studio 템플릿을 사용 하 여 프로젝트를 만듭니다. 새 *프로그램 .cs* 파일이 코드 편집기에서 열립니다.
 
 8. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다. **속성 페이지** 대화 상자가 표시됩니다.
 

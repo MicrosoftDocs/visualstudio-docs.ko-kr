@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887369"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089435"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1 부
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용 하는 컨테이너입니다. 프로젝트는 **솔루션 탐색기** 에서 솔루션의 자식으로 표시 됩니다. 프로젝트를 사용 하 여 소스 코드를 구성, 빌드, 디버그 및 배포 하 고 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.
@@ -57,7 +57,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 - 기본 템플릿 매개 변수 대체를 구현 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
  또한 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)의 소스 코드도 다운로드 해야 합니다. 만들려는 솔루션에서 액세스할 수 있는 위치에 파일을 추출 합니다.
@@ -80,7 +80,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 4. 아이콘을 저장 하 고 아이콘 편집기를 닫습니다.
 
-5. *Templates\Projects\SimpleProject* 폴더에서 *Program.cs* 라는 **클래스** 항목을 추가 합니다.
+5. *Templates\Projects\SimpleProject* 폴더에 *Program .cs* 라는 **클래스** 항목을 추가 합니다.
 
 6. 기존 코드를 다음 줄로 바꿉니다.
 
@@ -103,11 +103,11 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    ```
 
    > [!IMPORTANT]
-   > 이는 *Program.cs* 코드의 최종 형식이 아닙니다. 대체 매개 변수는 이후 단계에서 처리 됩니다. 컴파일 오류가 표시 될 수 있지만 **파일의 빌드** **내용이 콘텐츠** 이면 평소와 같이 프로젝트를 빌드하고 실행할 수 있어야 합니다.
+   > 이는 *Program .cs* 코드의 최종 형식이 아닙니다. 대체 매개 변수는 이후 단계에서 처리 됩니다. 컴파일 오류가 표시 될 수 있지만 **파일의 빌드** **내용이 콘텐츠** 이면 평소와 같이 프로젝트를 빌드하고 실행할 수 있어야 합니다.
 
 7. 파일을 저장합니다.
 
-8. *Properties* 폴더에서 *AssemblyInfo.cs* 파일을 *Projects\SimpleProject* 폴더로 복사 합니다.
+8. *Properties* 폴더에서 *Projects\SimpleProject* 폴더로 *AssemblyInfo* 파일을 복사 합니다.
 
 9. *Projects\SimpleProject* 폴더에 *SimpleProject* 라는 XML 파일을 추가 합니다.
 
@@ -156,9 +156,9 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 11. 파일을 저장합니다.
 
-12. **속성** 창에서 *AssemblyInfo.cs*, *Program.cs*, *SimpleProject* 및 *SimpleProject* 의 **빌드 작업** 을 **콘텐츠** 로 설정 하 고 **VSIX 속성에 포함** 을 **True** 로 설정 합니다.
+12. **속성** 창에서 *AssemblyInfo*, *Program .cs*, *SimpleProject* 및 *SimpleProject* 의 **빌드 작업** 을 **콘텐츠** 로 설정 하 고 **VSIX 속성에 포함** 을 **True** 로 설정 합니다.
 
-    이 프로젝트 템플릿은 디버그 구성과 릴리스 구성이 모두 포함 된 기본 Visual c # 프로젝트를 설명 합니다. 프로젝트에는 두 개의 소스 파일, *AssemblyInfo.cs* 및 *Program.cs* 와 여러 개의 어셈블리 참조가 포함 됩니다. 템플릿에서 프로젝트를 만들면 ProjectGuid 값이 자동으로 새 GUID로 바뀝니다.
+    이 프로젝트 템플릿은 디버그 구성과 릴리스 구성이 모두 포함 된 기본 Visual c # 프로젝트를 설명 합니다. 프로젝트에는 소스 파일 두 개, *AssemblyInfo* 및 *프로그램* 및 여러 어셈블리 참조가 포함 됩니다. 템플릿에서 프로젝트를 만들면 ProjectGuid 값이 자동으로 새 GUID로 바뀝니다.
 
     **솔루션 탐색기** 확장 된 **템플릿** 폴더는 다음과 같이 표시 됩니다.
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. *SimpleProjectFactory.cs* 라는 top *SimpleProject* 폴더에 클래스를 추가 합니다.
+2. *SimpleProjectFactory* 라는 top *SimpleProject* 폴더에 클래스를 추가 합니다.
 
 3. 다음 using 지시문을 추가합니다.
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>프로젝트 템플릿을 등록 하려면
 
-1. *SimpleProjectPackage.cs* 에서 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 다음과 같이 특성을 클래스에 추가 `SimpleProjectPackage` 합니다.
+1. *SimpleProjectPackage* 에서 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 다음과 같이 특성을 클래스에 추가 합니다 `SimpleProjectPackage` .
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>프로젝트 팩터리를 초기화 하려면
 
-1. *SimpleProjectPackage.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+1. *SimpleProjectPackage* 파일에서 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. *SimpleProjectFactory.cs* 에서 `using` 기존 지시문 뒤에 다음 지시문을 추가 합니다 `using` .
+5. *SimpleProjectFactory* 에서 `using` 기존 지시문 뒤에 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>프로젝트 팩터리 구현을 테스트 하려면
 
-1. *SimpleProjectFactory.cs* 파일에서 생성자의 다음 줄에 중단점을 설정 `SimpleProjectFactory` 합니다.
+1. *SimpleProjectFactory* 파일에서 생성자의 다음 줄에 중단점을 설정 `SimpleProjectFactory` 합니다.
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>프로젝트 팩터리 클래스와 node 클래스를 연결 하려면
 
-1. *SimpleProjectFactory.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+1. *SimpleProjectFactory* 파일에서 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. **속성** 창에서 비트맵의 **빌드 작업** 을 **포함 리소스** 로 변경 합니다.
 
-4. *SimpleProjectNode.cs* 에서 다음 지시문을 추가 합니다 `using` .
+4. SimpleProjectNode에서 다음 지시문을 추가 *합니다* `using` .
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>템플릿 매개 변수를 대체 하려면
 
-1. *SimpleProjectNode.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+1. *SimpleProjectNode* 파일에서 다음 지시문을 추가 합니다 `using` .
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` 에는 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 프로젝트 템플릿 파일의 요소 값이 지정 됩니다. 이 경우 값은 `MyRootNamespace`입니다.
 
-   - `className` 에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo.cs* 입니다. 따라서 className의 값은 `AssemblyInfo` 입니다.
+   - `className` 에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo입니다.* 따라서 className의 값은 `AssemblyInfo` 입니다.
 
 4. 중단점을 제거 하 고 **f5** 키를 눌러 실행을 계속 합니다.
 

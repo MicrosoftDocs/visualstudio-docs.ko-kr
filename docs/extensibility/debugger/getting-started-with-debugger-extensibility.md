@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20591adffbfdfd21d1ff1a77eaade39c165b9c51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921248"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059979"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>디버거 확장성 시작
 는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 환경 내에서 프로그램을 디버깅 하는 데 사용 되는 디버거 구성 요소를 만들고 사용자 지정 하는 데 필요한 정보를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

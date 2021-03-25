@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2d7d4ef3f35cb0ad00f91033213449af8cb7306
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: fc0ab85a3000db2090e9679b0ae065b9280f20cf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224137"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082506"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 해당 뷰어를 인스턴스화하기 위해이 속성 형식의 뷰어에 대 한 정보를 검색 합니다.
@@ -75,7 +75,7 @@ int GetManagedViewerCreationData(
 ## <a name="remarks"></a>설명
  이 메서드는 형식 시각화 도우미에서 관리 되는 뷰어를 인스턴스화하기 위해 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

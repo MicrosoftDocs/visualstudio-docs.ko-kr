@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f76451ca2a650283125cc7659d0053ef984115fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089383"
 ---
 # <a name="creating-a-custom-start-page"></a>사용자 지정 시작 페이지 만들기
 
@@ -87,7 +87,7 @@ Visual studio가 충돌 하지 않는지 확인할 때까지 사용자 지정 �
 
 - 시작 페이지를 테스트 하 여 안정적인 것으로 확인 한 후에는 **옵션** 대화 상자에서 **시작 페이지 사용자 지정** 옵션을 사용 하 여 Visual Studio의 기본 인스턴스에서 시작 페이지로 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [시작 페이지에 사용자 정의 컨트롤 추가](../extensibility/adding-user-control-to-the-start-page.md)

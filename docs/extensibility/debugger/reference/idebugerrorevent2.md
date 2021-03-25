@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf249e8568c3ae70bc8d881d72b491cf7fa3576b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d531180ca2fad9a6605837105c4ec5d626584a19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153042"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054233"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 이 인터페이스는 사용자에 게 보고할 오류 메시지를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugErrorEvent2 : IUnknown
@@ -38,7 +38,7 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |`GetErrorMessage`|오류를 사람이 인식할 수 있는 문자열로 반환 합니다.|
 
@@ -52,6 +52,6 @@ IDebugErrorEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

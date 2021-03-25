@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 121bd17e2343cfbba509e85d78ba37b57964f895
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7caee7b58f77f1b4e3f120f27ae076b438bedc63
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947673"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059875"
 ---
 # <a name="implement-an-expression-evaluator"></a>식 계산기 구현
 > [!IMPORTANT]
@@ -63,5 +63,5 @@ ms.locfileid: "99947673"
 ## <a name="in-this-section"></a>단원 내용
  [식 계산기 구현 전략](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) 식 계산기 (EE) 구현 전략에 대 한 3 단계 프로세스를 정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

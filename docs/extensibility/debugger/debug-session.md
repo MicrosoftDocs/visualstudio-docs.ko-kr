@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69634d322dca0992609d907bf58f1f315479dc04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67501de3de3b88b9548238705ee8e075f31410e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067896"
 ---
 # <a name="debug-session"></a>디버그 세션
 디버거 아키텍처 측면에서 *세션* 은 다음과 같습니다.
@@ -26,6 +26,6 @@ ms.locfileid: "99952514"
 
 - 는 세션 디버그 관리자 (SDM)에 의해 구현 됩니다. 자세한 내용은 [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)

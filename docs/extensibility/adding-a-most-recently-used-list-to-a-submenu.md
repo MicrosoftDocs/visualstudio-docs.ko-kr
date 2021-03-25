@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951552"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060018"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>가장 최근에 사용한 목록을 하위 메뉴에 추가
 이 연습은 [메뉴에 하위 메뉴 추가](../extensibility/adding-a-submenu-to-a-menu.md)의 데모를 기반으로 하 고, 동적 목록을 하위 메뉴에 추가 하는 방법을 보여 줍니다. 동적 목록은 MRU (가장 최근에 사용 됨) 목록을 만들기 위한 기본을 형성 합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "99951552"
 
 메뉴 및 *vsct* 파일에 대 한 자세한 내용은 [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension"></a>확장 만들기
@@ -83,14 +83,14 @@ ms.locfileid: "99951552"
 
 ## <a name="filling-the-mru-list"></a>MRU 목록 채우기
 
-1. *TestCommandPackageGuids.cs* 에서 클래스 정의의 기존 명령 id 뒤에 다음 줄을 추가 합니다 `TestCommandPackageGuids` .
+1. *Testcommandpackageguids* 에서 클래스 정의의 기존 명령 id 뒤에 다음 줄을 추가 합니다. `TestCommandPackageGuids`
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. *TestCommand.cs* 에서 다음 using 문을 추가 합니다.
+2. *Testcommand. cs* 에서 다음 using 문을 추가 합니다.
 
     ```csharp
     using System.Collections;
@@ -201,5 +201,5 @@ ms.locfileid: "99951552"
 
 4. 하위 메뉴를 다시 엽니다. 이제 **항목 3** 이 목록의 맨 위에 있고 다른 항목은 한 위치 아래로 푸시 되었습니다. **항목 3** 을 다시 클릭 합니다. 그러면 메시지 상자에 **선택한 항목 3** 이 표시 됩니다 .이는 텍스트를 명령 레이블과 함께 새 위치로 올바르게 이동 했음을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [동적으로 메뉴 항목 추가](../extensibility/dynamically-adding-menu-items.md)

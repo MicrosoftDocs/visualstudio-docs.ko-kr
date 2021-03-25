@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3d4b962475e2f0705d8a46624a8f47d802ff2f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895832"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075161"
 ---
 # <a name="extend-projects"></a>프로젝트 확장
 프로젝트 및 솔루션은 Visual Studio에서 코드 및 리소스 파일을 컴파일 및 배포 단위로 구성 하는 방법입니다. 프로젝트에서 프로젝트에 대 한 자세한 정보 [(Visual STUDIO SDK)](../extensibility/extending-projects.md)를 찾을 수 있습니다.

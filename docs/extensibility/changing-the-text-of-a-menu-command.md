@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911244"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068065"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>메뉴 명령의 텍스트를 변경 합니다.
 다음 단계에서는 서비스를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법을 보여 줍니다 <xref:System.ComponentModel.Design.IMenuCommandService> .
@@ -41,7 +41,7 @@ ms.locfileid: "99911244"
     </Button>
     ```
 
-3. *ChangeMenuText.cs* 파일에서 메뉴 명령이 표시 되기 전에 호출 되는 이벤트 처리기를 만듭니다.
+3. *ChangeMenuText* 파일에서 메뉴 명령이 표시 되기 전에 호출 되는 이벤트 처리기를 만듭니다.
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

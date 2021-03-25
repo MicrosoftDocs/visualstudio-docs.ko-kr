@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892595"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060239"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio의 애플리케이션 패턴
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> 창 상호 작용
@@ -415,7 +415,7 @@ Visual Studio에서 동일한 작업을 수행 하는 기존 컨트롤 구성과
 #### <a name="access-keys"></a>액세스 키
 **확인**, **취소** 또는 **도움말** 단추에는 액세스 키를 사용 하지 마십시오. 이러한 단추는 기본적으로 바로 가기 키에 매핑됩니다.
 
-| 단추 이름 | 키보드 바로 가기 키 |
+| 단추 이름 | 바로 가기 키 |
 | --- | --- |
 | 정상 | Enter 키 |
 | 취소 | Esc |

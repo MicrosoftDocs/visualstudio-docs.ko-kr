@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField interface
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a90252241dd51e1c567847891cf681c88d8fba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5234f209ecd8866c8fa55735ad21a79cdfd7404d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166309"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054324"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 이 인터페이스는 메서드에 대해 설명 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugMethodField : IDebugContainerField
@@ -38,7 +38,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 및 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)|메서드의 매개 변수에 대 한 열거자를 만듭니다.|
 |[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|메서드를 포함 하는 개체의 "this" 포인터를 가져옵니다.|
@@ -59,7 +59,7 @@ IDebugMethodField : IDebugContainerField
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

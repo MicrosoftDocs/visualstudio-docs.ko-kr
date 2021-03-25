@@ -7,17 +7,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7fad96ddd62767b67b65b83121498079a81b07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 185781d17e1b80aab5267902031bf3d1ede1231c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082610"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>인터페이스(Visual Studio 디버깅)
 메서드는 목차와 인터페이스 페이지의 각 인터페이스에서 사전순으로 나열 됩니다.
@@ -40,5 +40,5 @@ ms.locfileid: "99852845"
 
  디버깅 SDK의 인터페이스, 열거자 및 구조에 대 한 설명서를 포함 합니다 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97cb6f4d0425fb75ebaa9375e53e3ba6d5075e00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225736"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082649"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 이 인터페이스는 현재 디버그 세션에서 실행 되는 스레드를 열거 합니다.
@@ -38,7 +38,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugThreads2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|열거형 시퀀스에서 지정 된 수의 스레드를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|열거형 시퀀스에서 지정 된 수의 스레드를 건너뜁니다.|
@@ -56,7 +56,7 @@ IEnumDebugThreads2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)

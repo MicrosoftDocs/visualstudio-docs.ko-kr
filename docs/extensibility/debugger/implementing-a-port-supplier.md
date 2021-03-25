@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bec31bb49433b7058ca7021091582f89933f0b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98cc83ac9640241f0f97dc6e4adaacf8f90599b7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947686"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059914"
 ---
 # <a name="implement-a-port-supplier"></a>포트 공급자 구현
 포트 공급자는 요청 시 포트를 SDM (세션 디버그 관리자)에 제공 합니다. 비 DCOM 컴퓨터를 디버깅할 때 또는 새 장치에 지원이 필요한 경우 포트 공급자를 구현 해야 합니다. 예를 들어 휴대폰에 대 한 디버깅을 제공 하려면 포트를 제공 하는 포트 공급자를 설정할 수 있습니다 .이 포트는 IR 또는 셀 연결을 통해 휴대폰에 연결 하 고 휴대폰에서 실행 되는 프로세스와 프로그램을 열거 합니다.
@@ -33,5 +33,5 @@ ms.locfileid: "99947686"
 ## <a name="related-sections"></a>관련 단원
  [디버거 개념](../../extensibility/debugger/debugger-concepts.md) 기본 디버깅 아키텍처 개념을 설명합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

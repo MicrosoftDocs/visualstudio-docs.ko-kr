@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debug engines, custom
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef2a477a3a5027d7989c88a71d42b091cc69fbae
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888968"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067959"
 ---
 # <a name="create-a-custom-debug-engine"></a>사용자 지정 디버그 엔진 만들기
 DE (디버그 엔진)는 특정 런타임 아키텍처의 디버깅을 허용 하는 구성 요소입니다. 일반적으로 런타임 환경 마다 하나의 DE-DE 구현이 있습니다.
@@ -56,5 +56,5 @@ DE (디버그 엔진)는 특정 런타임 아키텍처의 디버깅을 허용 �
 
  [방법: 사용자 지정 디버그 엔진 디버깅](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) 사용자 지정 DE를 디버깅 하는 방법을 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

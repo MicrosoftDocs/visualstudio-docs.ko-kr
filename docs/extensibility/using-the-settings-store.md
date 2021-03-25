@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934040"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060187"
 ---
 # <a name="using-the-settings-store"></a>설정 저장소 사용
 설정 저장소에는 다음과 같은 두 가지 종류가 있습니다.
@@ -33,12 +33,12 @@ ms.locfileid: "99934040"
 
 1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트로 시작 합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]이라는 VSIX 프로젝트를 만듭니다 `SettingsStoreExtension` . **새 프로젝트** 대화 상자의 **Visual c #/확장성** 에서 VSIX 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 이제 **SettingsStoreCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #/확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 **SettingsStoreCommand.cs** 로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
+2. 이제 **SettingsStoreCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 합니다. **새 항목 추가** 대화 상자에서 **Visual c #/확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 **SettingsStoreCommand** 로 변경 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
 
 ## <a name="using-the-configuration-settings-store"></a>구성 설정 저장소 사용
  이 섹션에서는 구성 설정을 검색 하 고 표시 하는 방법을 보여 줍니다.
 
-1. SettingsStorageCommand.cs 파일에 다음 using 지시문을 추가 합니다.
+1. SettingsStorageCommand 파일에 다음 using 지시문을 추가 합니다.
 
    ```
    using System.Collections.Generic;

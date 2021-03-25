@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911252"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068104"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE에서 구현 하는 콜백 함수
 IDE (통합 개발 환경)와 최대한 원활 하 게 통합 하 고 통합 최종 사용자 환경을 제공 하기 위해 소스 제어 플러그 인은 IDE에서 구현 하는 콜백 함수를 사용할 수 있습니다. 플러그 인은 소스 제어 작업 중에 적절 한 시간에 이러한 함수를 호출 하 여 IDE로 정보를 전달할 수 있습니다. 그러면 IDE는이 정보를 네이티브 UI에 포함 된 요소로 표시할 수 있습니다. 사용자는 플러그 인에서 자체 UI를 사용 하는 경우 보다 조각화 된 환경이이 시나리오에서 더 낮습니다.

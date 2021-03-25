@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2a1f542e89851cb430f8d80934933351e9349e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9d50d33824be70a7df09cee878d516ddaaf9f8d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882273"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068169"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 요소 (Visual Studio 템플릿)
 는 새 프로젝트를 만들고 솔루션에 추가 하는 경우에만 빌드합니다. 전체 솔루션이 빌드되지 않습니다.
@@ -86,7 +86,7 @@ ms.locfileid: "99882273"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [BuildOnLoad attribute 및 요소](buildonload-visual-studio-templates.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

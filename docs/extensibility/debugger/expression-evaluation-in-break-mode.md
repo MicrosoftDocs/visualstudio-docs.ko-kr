@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, break mode
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 932bebecf4eea73cfae579bbea58e024b4388ffb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921506"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067870"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>중단 모드에서 식 계산
 다음 섹션에서는 디버거가 중단 모드에 있을 때 발생 하는 프로세스를 설명 하 고 식 계산을 수행 해야 합니다.
@@ -41,5 +41,5 @@ ms.locfileid: "99921506"
 
     - 를 사용 하 `IDebugExpression2::EvaluateAsync` 는 경우 지정 된 콜백 인터페이스는 계속 해 서 계산 프로세스를 전달 합니다. 평가가 완료 되 면 EvaluateAsync은 콜백을 통해 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 인터페이스를 보냅니다. 이 이벤트 인터페이스를 사용 하면 최종 값이 [Getresult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)를 사용 하 여 생성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

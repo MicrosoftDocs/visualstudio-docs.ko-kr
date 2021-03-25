@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio, services
 - services
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbf04b5e4b032bc44040cf14f6bf23225696ee61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3f5e99b946514ebd3064441e9d2265be31e968a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060200"
 ---
 # <a name="using-and-providing-services"></a>서비스 사용 및 제공
 서비스는 두 Vspackage 사이의 계약입니다. 하나의 VSPackage는 다른 VSPackage에서 사용할 특정 인터페이스 집합을 제공 합니다. 예를 들어는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 로드 되는 모든 VSPackage에 서비스를 제공 합니다. 이 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 활동 로그에 쓰는 데 사용할 수 있는 인터페이스를 제공 합니다. 자세한 내용은 [방법: 활동 로그 사용](../extensibility/how-to-use-the-activity-log.md)을 참조 하세요.

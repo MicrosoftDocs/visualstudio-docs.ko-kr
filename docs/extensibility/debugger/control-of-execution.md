@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55edea88c5983920b382672d160498b9901ba5ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068026"
 ---
 # <a name="control-of-execution"></a>실행 제어
 디버그 엔진 (DE)은 일반적으로 다음 이벤트 중 하나를 마지막 시작 이벤트로 보냅니다.
@@ -41,11 +41,11 @@ ms.locfileid: "99930514"
 
 5. 사용자가 함수에 대해 한 단계씩 코드 실행, 프로시저 단위 실행 또는 프로시저를 실행 하는 경우, IDE는 프로그램의 메서드를 호출 하는 디버그 세션을 표시 합니다 `Step` . 그런 다음 IDE는 단계 단위 (명령, 문 또는 줄)와 단계 형식 (함수를 한 단계씩 실행 하거나 프로시저를 프로시저 단위로 실행 하거나 프로시저에서 제외)를 전달 합니다. 단계가 완료 되 면 DE는 중지 이벤트 인 디버그 세션에 step complete 이벤트를 보냅니다.
 
-    또는
+    -또는-
 
     사용자가 현재 명령 포인터에서 계속 실행 하는 경우 IDE는 프로그램의 **Execute** 메서드를 호출 하는 디버그 세션을 요청 합니다. 프로그램은 다음 중지 조건이 발생할 때까지 실행을 다시 시작 합니다.
 
-    또는
+    -또는-
 
     디버그 세션에서 특정 중지 이벤트를 무시 하는 경우 디버그 세션은 프로그램의 **Continue** 메서드를 호출 합니다. 프로그램이 중지 조건이 발생 했을 때 함수를 한 단계씩 실행 하거나 함수를 실행 한 후에는 해당 단계를 계속 합니다.
 
@@ -61,5 +61,5 @@ ms.locfileid: "99930514"
 
    SDM에서 수행 하 `Step` 고 **실행** 하 고 **계속** 하는 호출은 비동기적입니다. 즉, sdm에서 호출이 빠르게 반환 될 것으로 예상 합니다. DE가 SDM을 이전, 실행 또는 계속 반환 되기 전에 동일한 스레드에서 중지 이벤트를 보내면 `Step` sdm의 응답이 중지 됩니다.  
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 디버그](../../extensibility/debugger/debugging-tasks.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059927"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>방법: 사용자 지정 디버그 엔진 디버깅
 프로젝트 형식은 메서드에서 디버그 엔진 (DE)을 시작 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> . 이는 프로젝트 형식을 제어 하는 인스턴스의 제어에서 DE가 시작 됨을 의미 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 그러나이 인스턴스는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE를 디버그할 수 없습니다. 사용자 지정 DE를 디버그할 수 있도록 하는 단계는 다음과 같습니다.
@@ -75,5 +75,5 @@ ms.locfileid: "99947699"
 
 9. DE 시작 프로세스를 디버깅 하는 경우 "사용자 지정 디버그 엔진 디버그" 절차의 단계를 수행 하 여 DE-DE를 시작한 후에 연결할 수 있습니다. 이를 통해 세 가지 인스턴스를 실행할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 하나는 프로젝트 형식 소스를 위한 것이 고 다른 하나는 인스턴스화된 프로젝트 형식에 대 한 것이 고, 세 번째 인스턴스는 de-de에 연결 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)

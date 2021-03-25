@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5296a77e835ab291bce7a77e3f0cb09eb6bcf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90c4c82895f7a30d4df9126a280c6c9ffa7ffa76
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840849"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067909"
 ---
 # <a name="debug-package"></a>패키지 디버그
 디버그 패키지는 Visual Studio 셸에서 실행 되며 모든 UI를 처리 합니다. Visual Studio 디버깅 인터페이스를 사용 하 고, SDM (세션 디버그 관리자)과 통신 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "99840849"
 
  디버그 패키지는 *vsdebug.dll* 에 의해 구현 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [세션 디버그 관리자](../../extensibility/debugger/session-debug-manager.md)
 - [스택 프레임](../../extensibility/debugger/stack-frames.md)
 - [스레드](../../extensibility/debugger/threads.md)

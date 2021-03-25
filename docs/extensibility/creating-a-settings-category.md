@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896262"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089344"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "99896262"
 
 이 연습을 시작 하려면 먼저 [옵션 만들기 페이지](../extensibility/creating-an-options-page.md)의 첫 번째 섹션을 완료 해야 합니다. 결과 옵션 속성 표를 사용 하 여 범주의 속성을 검토 하 고 변경할 수 있습니다. 속성 범주를 설정 파일에 저장 한 후 파일을 검사 하 여 속성 값이 저장 되는 방법을 확인 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-settings-category"></a>설정 범주 만들기
@@ -39,7 +39,7 @@ ms.locfileid: "99896262"
 
 2. *VSPackage* 파일을 열고 다음 세 개의 문자열 리소스를 추가 합니다.
 
-    |이름|값|
+    |Name|값|
     |----------|-----------|
     |106|내 범주|
     |107|내 설정|
@@ -50,7 +50,7 @@ ms.locfileid: "99896262"
     > [!NOTE]
     > 이 세 가지 중에서 범주 이름만 **설정 가져오기 및 내보내기** 마법사에 표시 되지 않습니다.
 
-3. *MyToolsOptionsPackage.cs* 에서 `float` `OptionFloat` `OptionPageGrid` 다음 예제와 같이 라는 속성을 클래스에 추가 합니다.
+3. *MyToolsOptionsPackage* 에서 `float` `OptionFloat` `OptionPageGrid` 다음 예제와 같이 라는 속성을 클래스에 추가 합니다.
 
     ```csharp
     public class OptionPageGrid : DialogPage

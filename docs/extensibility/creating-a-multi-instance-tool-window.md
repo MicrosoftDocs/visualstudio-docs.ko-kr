@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923266"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089357"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>다중 인스턴스 도구 창 만들기
 여러 인스턴스를 동시에 열 수 있도록 도구 창을 프로그래밍할 수 있습니다. 기본적으로 도구 창에는 인스턴스가 하나만 열려 있을 수 있습니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99923266"
 
 ## <a name="make-a-tool-window-multi-instance"></a>도구 창 다중 인스턴스 만들기
 
-1. *MIToolWindowPackage.cs* 파일을 열고 특성을 찾습니다 `ProvideToolWindow` . `MultiInstances=true`다음 예제와 같이 매개 변수를 및 매개 변수로 표시 합니다.
+1. *MIToolWindowPackage* 파일을 열고 특성을 찾습니다 `ProvideToolWindow` . `MultiInstances=true`다음 예제와 같이 매개 변수를 및 매개 변수로 표시 합니다.
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ ms.locfileid: "99923266"
     {. . .}
     ```
 
-2. *MIToolWindowCommand.cs* 파일에서 메서드를 찾습니다 `ShowToolWindos()` . 이 메서드에서는 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 하 고, `create` `false` 사용 가능한이 발견 될 때까지 기존 도구 창 인스턴스를 반복 하도록 플래그를로 설정 `id` 합니다.
+2. *MIToolWindowCommand* 파일에서 메서드를 찾습니다 `ShowToolWindos()` . 이 메서드에서는 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 하 고, `create` `false` 사용 가능한이 발견 될 때까지 기존 도구 창 인스턴스를 반복 하도록 플래그를로 설정 `id` 합니다.
 
 3. 도구 창 인스턴스를 만들려면 메서드를 호출 하 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> 고을 `id` 사용 가능한 값으로 설정 하 고 `create` 플래그를로 설정 `true` 합니다.
 

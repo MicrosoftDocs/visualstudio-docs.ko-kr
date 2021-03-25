@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Reset
 ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1521e69b5896422a811714be9e4aefa649824ab4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97bc412d5bd4d92c5a4f7966b0238eba7d9b0bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225788"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082636"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 열거형을 첫 번째 요소로 다시 설정 합니다.
@@ -44,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>설명
  이 메서드가 호출 된 후 [다음](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) 메서드에 대 한 다음 호출에서 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

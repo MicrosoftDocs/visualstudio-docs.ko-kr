@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::GetCount
 ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaa9c670b3f09985edb34f2165f000861c12a31c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1ab4ccc2e03915ea4e79dc8da131daafb6a705e3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225853"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082701"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 열거형의 요소 수를 반환 합니다.
@@ -50,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>설명
  이 메서드는 `Next` ,, `Clone` `Skip` 및 `Reset` 메서드만 구현 해야 함을 지정 하는 일반적인 COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
