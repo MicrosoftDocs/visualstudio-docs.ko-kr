@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6820b9d94e8b4849c646c16075614aed17a4dd3
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933091"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884137"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python 인터프리터에 대한 디버깅 기호 설치
 
@@ -35,7 +35,7 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 
     ![디버그 기호를 포함한 Python 3.x 설치 관리자](media/mixed-mode-debugging-symbols-installer35.png)
 
-    기호 파일( *.pdb*)은 루트 설치 폴더에 있습니다(개별 모듈에 대한 기호 파일도 *DLLs* 폴더에 있음). 따라서 Visual Studio는 자동으로 해당 기호 파일을 찾으므로 추가 단계가 필요하지 않습니다.
+    기호 파일(*.pdb*)은 루트 설치 폴더에 있습니다(개별 모듈에 대한 기호 파일도 *DLLs* 폴더에 있음). 따라서 Visual Studio는 자동으로 해당 기호 파일을 찾으므로 추가 단계가 필요하지 않습니다.
 
 - Python 3.4.x 이전 버전: 기호는 [공식 배포](#official-distributions) 또는 [Enthought Canopy](#enthought-canopy)에서 다운로드 가능한 *.zip* 파일로 제공됩니다. 다운로드한 후에 로컬 폴더(예: Python 폴더 내의 *Symbols* 폴더)에 파일의 압축을 풀어 계속합니다.
 
@@ -75,6 +75,9 @@ Visual Studio는 기호가 필요한 경우(일반적으로 혼합 모드 디버
 | 3.3.2 | [32비트](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32비트](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32비트](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64비트](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.18 | [32비트](https://www.python.org/ftp/python/2.7.18/python-2.7.18-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64-pdb.zip) |
+| 2.7.17 | [32비트](https://www.python.org/ftp/python/2.7.17/python-2.7.17-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64-pdb.zip) |
+| 2.7.16 | [32비트](https://www.python.org/ftp/python/2.7.16/python-2.7.16-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64-pdb.zip) |
 | 2.7.15 | [32비트](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
 | 2.7.14 | [32비트](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
 | 2.7.13 | [32비트](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64비트](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot method
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b900817a5025b0d523f8d3bb3237a1b10cc3a6a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 14ce5d00dcfec9da4c6193398f62edbe4e1988d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152405"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092048"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 이 메서드는 레지스트리 루트를 설정 합니다. 병렬 디버깅에 사용 됩니다.
@@ -50,5 +50,5 @@ int SetRegistryRoot(
 ## <a name="remarks"></a>설명
  지정 된 레지스트리 루트는 일반적으로 식 계산기를 처음 인스턴스화할 때 설정 되 고 특정 버전의 Visual Studio에 대 한 레지스트리 키를 가리킵니다 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *(* 예를 들어, *x* . y는 버전 번호).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

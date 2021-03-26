@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005835"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776755"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -50,7 +50,7 @@ ms.locfileid: "91005835"
 
 역량이 있는 파트너는 Action Pack을 구매할 수 있습니다. 파트너당 하나의 Action Pack만 구매할 수 있습니다.
 
-Action Pack을 통해 파트너는 **3개의 Visual Studio Professional(MPN) 구독**을 획득할 수 있습니다. Visual Studio Professional(MPN)은 시장에 상업적으로 사용가능한 해당 항목이 없는 사용자 지정 제품입니다. 다음은 포함된 항목입니다.
+Action Pack을 통해 파트너는 **3개의 Visual Studio Professional(MPN) 구독** 을 획득할 수 있습니다. Visual Studio Professional(MPN)은 시장에 상업적으로 사용가능한 해당 항목이 없는 사용자 지정 제품입니다. 다음은 포함된 항목입니다.
 
 - Visual Studio Professional -- 최신 버전만 해당
 - Windows Enterprise -- 개발 및 테스트용으로만 사용하려면 최신 버전만 해당
@@ -71,13 +71,12 @@ MPN 규칙은 프로그램 혜택으로 제공된 모든 소프트웨어는 내�
 MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용자는 Visual Studio 구독을 활성화하는 데 사용된 동일한 ID/로그인을 사용하여 Visual Studio에 로그인해야 합니다. 제품의 잠금을 해제하기 위한 제품 키는 제공되지 않습니다. 로그인만이 Visual Studio를 실행하기 위한 유일한 옵션입니다. Visual Studio 구독자는 Visual Studio가 작업을 중지하기 전 최대 30일 동안 오프라인으로 작업할 수 있습니다. 온라인 작업 동안 Visual Studio는 자동으로 사용자의 라이선스 상태를 주기적으로 갱신하여 구독이 계속 유효하도록 보장합니다.
 
 ## <a name="resources"></a>리소스
-
 - [Microsoft 파트너 네트워크 프로그램 가이드](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Visual Studio 구독을 MPN 직원에게 할당](manage-mpn-subscriptions.md)
 - [사용 약관 사용](https://www.microsoft.com/useterms/) - MPN를 통해 제공된 Visual Studio 구독은 (NFR)EULA 재판매용이 아닌 Visual Studio 구독을 조건으로 합니다.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
-
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

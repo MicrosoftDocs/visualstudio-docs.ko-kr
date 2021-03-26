@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio 구독에서 제품 키를 얻고 관리하는 방법을 알아봅니다.
-ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903992"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776768"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 제품 키 사용
 
@@ -63,7 +63,7 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 
 ### <a name="product-key-types"></a>제품 키 유형
 
-|    키 유형           |    Description                                                                                                                                                                                                           |
+|    키 유형           |    설명                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    해당 사항 없음                    |    이 제품을 설치하는 데 필요한 키가 없습니다.                                                       |
 |    일반 정품                     |    일반 정품 키는 복수 정품 인증을 허용하며, 제품의 일반 정품 빌드에 사용됩니다. 대부분의 경우 키당 10회의 정품 인증이 허용되지만, 동일한 컴퓨터에서 더 자주 정품 인증이 허용됩니다.                                                       |
@@ -78,6 +78,9 @@ MPN, BizSpark, MCT 소프트웨어 및 서비스 및 MCT를 통해 제공되는 
 |
 
 제품에 대한 다운로드 페이지에서 키를 요청하거나 [제품 키](https://my.visualstudio.com/productkeys) 페이지에서 필요한 키를 검색할 수 있습니다.
+
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)

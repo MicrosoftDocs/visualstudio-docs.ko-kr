@@ -1,6 +1,6 @@
 ---
 title: 개발자용 명령줄 셸
-description: .NET 및 C++ 도구를 보다 쉽게 사용할 수 있도록 돕는 Visual Studio, 개발자 PowerShell 및 Visual Studio 터미널용 개발자 명령 프롬프트를 찾고 사용하는 방법을 알아봅니다.
+description: .NET 및 C++ 도구를 더 쉽게 사용할 수 있는 Visual Studio 개발자 명령 프롬프트, Visual Studio 개발자 PowerShell, Visual Studio 터미널을 찾아 사용하는 방법을 알아봅니다.
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249742"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672327"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>개발자 명령 프롬프트 및 개발자 PowerShell
 
 Visual Studio 2019에는 두 가지의 개발자용 명령줄 셸이 있습니다.
 
-- **Visual Studio용 개발자 명령 프롬프트** - 명령줄 개발자 도구를 더욱 쉽게 사용할 수 있도록 특정 환경 변수가 설정된 표준 명령 프롬프트입니다.
-- **개발자 PowerShell** - 명령 프롬프트보다 더 강력합니다. 예를 들어 한 명령( *cmdlet* )의 출력을 다른 cmdlet에 전달할 수 있습니다. 이 셸의 환경 변수는 개발자 명령 프롬프트로 설정됩니다.
+- **Visual Studio 개발자 명령 프롬프트** - 명령줄 개발자 도구를 더 쉽게 사용할 수 있도록 특정 환경 변수가 설정된 표준 명령 프롬프트입니다. Visual Studio 2015부터 사용할 수 있습니다.
+- **Visual Studio 개발자 PowerShell** - 명령 프롬프트보다 더 강력합니다. 예를 들어 한 명령( *cmdlet* )의 출력을 다른 cmdlet에 전달할 수 있습니다. 이 셸의 환경 변수는 개발자 명령 프롬프트로 설정됩니다. Visual Studio 2019부터 사용할 수 있습니다.
 
 두 셸 모두 명령줄 개발자 도구를 보다 쉽게 사용할 수 있도록 돕는 특정 환경 변수 집합이 있습니다. 이러한 셸 중 하나를 연 후에는 위치를 알 필요 없이 여러 유틸리티에 대한 명령을 입력할 수 있습니다. 실행할 수 있는 명령:
 
@@ -40,10 +40,6 @@ Visual Studio 2019 버전 16.5부터 Visual Studio에 이러한 셸(개발자 �
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="여러 탭을 보여주는 Visual Studio 터미널":::
 
 별도의 앱으로 또는 터미널 창에서 Visual Studio의 개발자 셸 중 하나를 여는 경우 (솔루션이 로드되어 있다면) 현재 솔루션의 디렉터리로 열립니다. 이 동작을 통해 솔루션 또는 그 프로젝트에 대해 명령을 편리하게 실행할 수 있습니다.
-
-## <a name="prerequisites"></a>사전 요구 사항
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Visual Studio 내부에서 셸 시작
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
-ms.date: 03/05/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Visual Studio 구독 수준을 업그레이드 또는 다운그레이드할 때의 영향에 대해 알아봅니다.
-ms.openlocfilehash: ac4355149ba66cd06ae5c1abaeb57e7065631050
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250144"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672984"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>Visual Studio 구독 수준을 변경하면 어떻게 됩니까?
 Visual Studio 구독에서 사용할 수 있는 소프트웨어, 도구, 서비스 및 기타 혜택은 구독 수준에 따라 다릅니다.  일반적으로 구독 수준이 높을수록 제공되는 혜택이 더욱 많습니다.  
@@ -63,7 +63,7 @@ Visual Studio에 로그인할 때마다 인증된 혜택을 사용하는 경우 
 현재 구독에서 제공되지만 다운그레이드되는 구독에서 제공되지 않는 혜택을 사용하는 경우 이러한 혜택을 이용하지 못할 수 있습니다.  
 
 ## <a name="support-resources"></a>지원 리소스
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참조

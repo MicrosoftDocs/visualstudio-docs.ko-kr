@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672353"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>codespace를 사용자 지정하는 방법(미리 보기)
+
+> [!Important] 
+> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다. 
 
 GitHub Codespaces는 클라우드에서 완전한 개발 환경을 제공합니다. Visual Studio 2019를 사용한 Windows 기반 개발의 경우 GitHub Codespaces 기본 인스턴스로 시작하는 것도 좋지만 특정 프로젝트의 환경을 사용자 지정할 수도 있습니다.
 

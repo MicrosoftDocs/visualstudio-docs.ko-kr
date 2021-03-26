@@ -11,18 +11,24 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942492"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806019"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>5단계: Django에서 사용자 인증
 
 **이전 단계: [전체 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
+::: moniker range="vs-2017"
 인증은 웹앱에 일반적으로 필요하므로 “Django 웹 프로젝트” 템플릿에는 기본 인증 흐름이 포함됩니다. 이 자습서의 6단계에서 설명하는 “설문 조사 Django 웹 프로젝트” 템플릿에도 동일한 흐름이 포함되어 있습니다. Django 프로젝트 템플릿을 사용하는 경우 Visual Studio는 인증에 필요한 모든 모듈을 Django 프로젝트의 *settings.py* 에 포함합니다.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+인증은 웹앱에 일반적으로 필요하므로 “Django 웹 프로젝트” 템플릿에는 기본 인증 흐름이 포함됩니다. Django 프로젝트 템플릿을 사용하는 경우 Visual Studio는 인증에 필요한 모든 모듈을 Django 프로젝트의 *settings.py* 에 포함합니다.
+::: moniker-end
 
 이 단계에서는 다음 내용을 학습합니다.
 
@@ -210,9 +216,28 @@ ms.locfileid: "99942492"
 
 ## <a name="next-steps"></a>다음 단계
 
-> [!div class="nextstepaction"]
-> [설문 조사 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker range="vs-2017"
+- [설문 조사 Django 웹 프로젝트 템플릿 사용](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션이 GitHub의 자습서 소스 코드([Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django))와 일치해야 합니다.
+
+이제 Visual Studio에서 “빈 Django 웹 프로젝트” 및 “Django 웹 프로젝트” 템플릿 전체를 살펴보았습니다. 보기 및 템플릿 사용과 같은 Django의 모든 기본 사항을 학습했으며 라우팅, 인증 및 데이터베이스 모델 사용을 검토했습니다. 이제 필요한 모든 보기 및 모델을 사용하여 웹앱을 직접 작성할 수 있어야 합니다.
+
+개발 컴퓨터에서 웹앱을 실행하는 것은 고객에게 앱을 제공하기 위한 과정의 한 단계일 뿐입니다. 다음 단계에는 다음과 같은 작업이 포함될 수 있습니다.
+
+- Azure App Service와 같은 프로덕션 서버에 웹앱을 배포합니다. [Azure App Service에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하세요.
+
+- *templates/404.html* 이라는 템플릿을 만들어 404페이지를 사용자 지정합니다. 이미 있는 경우 Django는 기본 템플릿 대신 이 템플릿을 사용합니다. 자세한 내용은 Django 설명서의 [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)(오류 보기)를 참조하세요.
+
+- *tests.py* 에 단위 테스트를 작성합니다. Visual Studio 프로젝트 템플릿은 이러한 테스트에 대한 시작점을 제공하며, 자세한 내용은 Django 설명서의 [첫 번째 Django 앱 작성, 5부 - 테스트](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) 및 [Django의 테스트](https://docs.djangoproject.com/en/2.0/topics/testing/)에서 확인할 수 있습니다.
+
+- 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](/azure/python/)를 사용하여 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
+
+- Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts&preserve-view=true)도 참조하세요.
+::: moniker-end
 ## <a name="go-deeper"></a>자세히 알아보기
 
 - [User authentication in Django](https://docs.djangoproject.com/en/2.0/topics/auth/)(Django의 사용자 인증)(docs.djangoproject.com)

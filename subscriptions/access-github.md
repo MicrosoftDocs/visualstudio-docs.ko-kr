@@ -4,23 +4,23 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Visual Studio 구독의 일부로 GitHub Enterprise에 액세스하는 방법 알아보기
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511360"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757713"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 
 
 Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
 
-- 오픈 소스 코드, 커뮤니티 및 모범 사례를 IDE 및 워크플로에 안전하게 도입하여 Visual Studio 및 GitHub를 통해 대규모로 혁신합니다.
-- 가장 포괄적인 리소스 세트를 가진 개발자를 위해 동급 최고의 개발 도구와 서비스를 사용하여 뛰어난 애플리케이션을 생성, 배포 및 관리합니다. 
-- GitHub Enterprise에서 협업, 끌어오기 요청을 관리하고 편집기에서 작성된 소스 코드를 검토합니다. 
+- 오픈 소스 코드, 커뮤니티, 모범 사례를 IDE 및 워크플로에 안전하게 도입하여 Visual Studio 및 GitHub를 통해 대규모로 혁신합니다.
+- 가장 포괄적인 리소스 세트를 가진 개발자를 위해 동급 최고의 개발 도구와 서비스를 사용하여 뛰어난 애플리케이션을 생성, 배포, 관리합니다. 
+- GitHub Enterprise에서 협업하고 “끌어오기 요청”을 관리하며 소스 코드가 작성된 편집기에서 해당 코드를 검토합니다. 
 
 ## <a name="whats-available"></a>사용 가능한 것은 무엇인가요? 
 
@@ -31,7 +31,7 @@ Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독
 
 Visual Studio Enterprise, Visual Studio Professional 및 GitHub Enterprise는 별도로 계속 사용할 수도 있습니다. 
 
-혜택 및 옵션에 대한 자세한 내용은 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> 를 참조하세요. 
+혜택 및 옵션에 대해 자세히 알아보려면 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>를 방문하세요. 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>GitHub Enterprise가 포함된 Visual Studio 구독 설정 프로세스는 어떻게 되나요?
 
@@ -78,14 +78,14 @@ GitHub를 처음 사용하는 경우 도움이 되는 리소스는 다음과 같
 A:  GitHub Enterprise 계정을 설정하는 프로세스는 시간이 걸릴 수 있습니다.  기다려도 아무 소식도 듣지 못했다면 GitHub 관리자에게 연락하는 것이 좋습니다.  관리자가 아직 작업 중이거나 GitHub Enterprise 계정을 만들지 않기로 했을 수 있습니다. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Q: 전체 Visual Studio 구독 혜택을 받게 되나요?
-A:  GitHub Enterprise와 함께, 구독을 별도로 구매한 경우와 동일하게 소프트웨어 다운로드, 클라우드 서비스, 기술 지원 및 파트너 혜택 등 표준 Visual Studio 구독의 모든 혜택을 받을 수 있습니다.
+A: 구독을 별도로 구매한 것처럼 GitHub Enterprise와 함께 소프트웨어 다운로드, 클라우드 서비스, 기술 지원, 파트너 혜택 등 표준 Visual Studio 구독의 모든 혜택을 받을 수 있습니다.
 
 ## <a name="support-resources"></a>지원 리소스
 - [GitHub 문서](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)에서 GitHub 할당에 대해 자세히 알아보기
 - [GitHub 도움말](https://help.github.com)에서 다양한 GitHub 항목에 대한 질문의 답을 찾습니다.
 - 도움이 더 필요하세요?  [GitHub 지원](https://support.github.com/) 문의
 - [GitHub 커뮤니티 포럼](https://github.community/)에서 다른 GitHub 사용자의 도움을 받으세요.
-- Visual Studio 구독의 판매, 구독, 계정, 요금 청구에 대한 지원을 받으려면 [도움말 보기](https://my.visualstudio.com/GetHelp) 페이지를 방문하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [도움말 보기](https://aka.ms/vssubscriberhelp) 페이지를 방문하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 - GitHub Enterprise에 대한 [기술 지원](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)을 받으세요.   
 

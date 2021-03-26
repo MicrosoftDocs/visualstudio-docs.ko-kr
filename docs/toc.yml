@@ -905,6 +905,8 @@
   items:
     - name: Visual Studio의 새로운 Git 환경
       href: ide/git-with-visual-studio.md
+    - name: Visual Studio에서 소스 제어를 용이하게 만드는 방법
+      href: ide/git-visual-studio-source-control.md
     - name: Git와 팀 탐색기 나란히 비교
       href: ide/git-team-explorer-feature-comparison.md
 - name: 테스트 >>
@@ -984,7 +986,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 참고
+- name: 참조
   items:
     - name: 바로 가기 키
       items:

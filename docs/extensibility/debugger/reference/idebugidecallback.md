@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 461003f3bdb83e51e8b5c525895d134b717d8fc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172560"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091905"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102172560"
 
  식 계산기 (EE)를 사용 하 여 디버거의 출력 창에 메시지를 표시 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugIDECallback : IUnknown
@@ -39,7 +39,7 @@ IDebugIDECallback : IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|지정 된 메시지 문자열을 디버거의 출력 창에 보냅니다.|
 

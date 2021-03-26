@@ -15,17 +15,17 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94cca255390d9f5637f0bf4f5b24f2d0fd6b4e83
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968309"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091268"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 개발을 위한 Devenv 명령줄 스위치
 
@@ -51,7 +51,7 @@ Visual Studio 설명서에서는 사용자 수준 명령줄 스위치에 대해 
 | `/Setup` | Visual Studio가 사용 가능한 모든 Vspackage에서 메뉴, 도구 모음 및 명령 그룹을 설명 하는 리소스 메타 데이터를 병합 하도록 합니다. 관리자 권한으로이 명령만 실행할 수 있습니다. <br /><br /> 이 스위치는 인수가 필요 없습니다. `devenv /Setup` 명령은 일반적으로 설치 프로세스의 마지막 단계로 표시됩니다. 스위치를 사용 `/Setup` 하면 IDE가 시작 되지 않습니다.|
 | `/Splash` | 일반적인 방법으로 Visual Studio 시작 화면을 표시 한 다음 주 IDE를 표시 하기 전에 메시지 상자를 표시 합니다. 메시지 상자를 사용 하 여 시작 화면을 학습할 수 있습니다. 예를 들어 VSPackage 제품 아이콘을 확인할 수 있습니다.<br /><br /> 이 스위치는 인수가 필요 없습니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [명령줄 스위치 추가](../extensibility/adding-command-line-switches.md)
 - [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)

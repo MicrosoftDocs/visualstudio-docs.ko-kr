@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 별칭 또는 대화명을 사용하는 경우 로그인에 실패할 수 있습니다.
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467611"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757700"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>별칭을 사용하여 Visual Studio 구독에 로그인하지 못할 수 있음
 로그인에 사용되는 계정 유형에 따라 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)에 로그인할 때 사용 가능한 구독이 제대로 표시되지 않을 수 있습니다. 한 가지 원인은 구독이 할당된 로그인 ID 대신 “별칭” 또는 “이름”을 사용하기 때문일 수 있습니다. 이것을 “별칭 지정”이라고 합니다.
@@ -91,12 +91,14 @@ Visual Studio 플랫폼은 기본 별칭의 우선 순위를 지정하여 구독
 > [!NOTE]
 > 개별 및 일괄 변경 모두 구독자는 로그인 전자 메일 주소가 변경되었으며 업데이트된 전자 메일 주소를 사용하여 로그인해야 한다는 지침이 포함된 전자 메일을 받게 됩니다. 구독자가 이전에 다른 로그인 주소에서 혜택을 활성화한 경우에는 다른 로그인 주소를 계속 사용하여 액세스해야 합니다.  
 
-## <a name="see-also"></a>참조
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독 관리에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
+
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)
 - [Microsoft 365 설명서](/microsoft-365/)
-
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio 구독 관리에 대해 자세히 알아보세요.

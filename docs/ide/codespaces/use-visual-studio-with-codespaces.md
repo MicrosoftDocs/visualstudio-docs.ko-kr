@@ -11,16 +11,19 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 95ed318c327735c85fda854d207b36874eeffca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: add43a5d130d8938193774d50bb643f48ecc3f8c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673049"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>codespace와 함께 Visual Studio를 사용하는 방법(미리 보기)
 
-Visual Studio는 GitHub Codespaces에서 개발하는 작업을 적극적으로 지원합니다. codespace를 만들어 이에 연결하고, 원격 호스팅 환경의 프로젝트에서 Visual Studio의 전체 기능이 작동하도록 할 수 있습니다. 소스 코드 및 도구가 codespace에 있고 컴파일 및 디버깅이 클라우드에서 발생하는 경우에도 로컬에서 작업하는 것처럼 개발 환경을 충돌 없이 신속하게 이용할 수 있습니다. Visual Studio 2019 미리 보기 내에서 codespace를 사용할 수 있습니다([제한된 퍼블릭 베타에 등록](https://github.com/features/codespaces/signup-vs)).
+> [!Important] 
+> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다. 
+
+Visual Studio는 GitHub Codespaces에서 개발하는 작업을 적극적으로 지원합니다. codespace를 만들어 이에 연결하고, 원격 호스팅 환경의 프로젝트에서 Visual Studio의 전체 기능이 작동하도록 할 수 있습니다. 소스 코드 및 도구가 codespace에 있고 컴파일 및 디버깅이 클라우드에서 발생하는 경우에도 로컬에서 작업하는 것처럼 개발 환경을 충돌 없이 신속하게 이용할 수 있습니다.
 
 > [!NOTE]
 > 이 문서에서는 Visual Studio를 사용하여 GitHub Codespaces에 연결하는 방법을 구체적으로 설명합니다. [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) 또는 [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) 설명서에서 다른 클라이언트를 사용하여 codespace에 연결하는 방법을 알아볼 수 있습니다.

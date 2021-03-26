@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 6d12fcf49184d8e8293d4f4e3a3c552e859d3afe
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542992"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671702"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -82,7 +82,7 @@ Pluralsight 구독이 만료되면 상태가 ‘0일 남음’으로 변경되�
 |             Visual Studio Enterprise(NFR<sup>1</sup>)              |      프로그램      | 사용할 수 없음 |       해당 없음       |
 ||
 
-<sup>1</sup>  포함:  NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine
+<sup>1</sup> ‘포함: NFR(전매금지), VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Services, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), FTE, Imagine. 제외: NFR Basic.’
 
 <sup>2</sup>  *선택된 Visual Studio 구독의 Pluralsight 혜택은 구독이 갱신되면 갱신됩니다. 예를 들어 매년 갱신되는 연간 구독이 있는 경우 매년 갱신할 때마다 혜택이 제공됩니다. 다년간 구독이 있는 경우 구독 기간 중에 한 번 Pluralsight 혜택이 제공됩니다.  다년간 구독을 갱신하면 갱신 후 혜택이 다시 제공됩니다.*
 
@@ -110,10 +110,10 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 
 ## <a name="support-resources"></a>지원 리소스
 - [Pluralsight 도움말 센터](https://help.pluralsight.com/help)는 Pluralsight 과정을 진행하거나 Pluralsight 웹 사이트를 사용하여 지원을 제공합니다.
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

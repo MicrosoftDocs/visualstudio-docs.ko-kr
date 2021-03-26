@@ -8,15 +8,16 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom: seodec18
+monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e524232eed7e4044454c57fc4fcaa30c6e2a8a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52cc9615eb4829aede06ae65c152e47b3ff3844
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942479"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806032"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -194,7 +195,7 @@ Django는 지정된 데이터베이스에 적용된 마이그레이션을 추적
 
 대답: 모델이 데이터베이스의 내용과 일치하지 않을 경우 Django가 런타임에 실패하고 관련 예외가 발생합니다. 예를 들어 이전 섹션에 표시된 모델 변경 내용을 마이그레이션하지 않을 경우 **no such column: app_poll.author** 오류가 표시됩니다.
 
-![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png)을 선택합니다.
+![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>질문: Django Make Migrations(Django 마이그레이션 만들기)를 실행한 후 솔루션 탐색기에 새로 생성된 스크립트가 표시되지 않는 이유는 무엇인가요?
 
@@ -362,7 +363,7 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>다음 단계
 
 > [!Note]
-> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션은 GitHub의 자습서 소스 코드와 일치해야 합니다. [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> 이 자습서를 진행하는 동안 Visual Studio 솔루션을 소스 제어에 커밋했으면 다른 커밋을 수행할 수 있습니다. 솔루션이 GitHub의 자습서 소스 코드([Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django))와 일치해야 합니다.
 
 이제 Visual Studio에서 “빈 Django 웹 프로젝트”, “Django 웹 프로젝트” 및 “설문 조사 Django 웹 프로젝트” 템플릿 전체를 살펴보았습니다. 보기 및 템플릿 사용과 같은 Django의 모든 기본 사항을 학습했으며 라우팅, 인증 및 데이터베이스 모델 사용을 검토했습니다. 이제 필요한 모든 보기 및 모델을 사용하여 웹앱을 직접 작성할 수 있어야 합니다.
 

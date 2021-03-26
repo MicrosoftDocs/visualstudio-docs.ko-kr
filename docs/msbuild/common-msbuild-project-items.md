@@ -17,22 +17,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ceb6b01f06964b8c79fa7357da6688e2e0229799
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963200"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672828"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 
 MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. Visual Studio의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 *Microsoft.Build.CommonTypes.xsd* 파일에 정의되어 있습니다.
 
-## <a name="common-items"></a>공통 항목
+이 문서에는 모든 공통 프로젝트 항목이 나와 있습니다.
 
-다음은 모든 공통 프로젝트 항목의 목록입니다.
-
-### <a name="reference"></a>참고
+## <a name="reference"></a>참고
 
 프로젝트의 어셈블리(관리) 참조를 나타냅니다.
 
@@ -45,7 +43,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |별칭|선택적 문자열입니다. 참조에 대한 별칭입니다.|
 |Private|선택적 부울입니다. 참조를 출력 폴더에 복사할지 여부를 지정합니다. 이 특성은 Visual Studio IDE에 있는 참조의 **로컬 복사** 속성과 일치합니다.|
 
-### <a name="comreference"></a>COMReference
+## <a name="comreference"></a>COMReference
 
 프로젝트의 COM(비관리) 구성 요소 참조를 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
 
@@ -59,7 +57,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |WrapperTool|선택적 문자열입니다. 구성 요소에 사용되는 래퍼 도구의 이름(예: "tlbimp")입니다.|
 |Isolated|선택적 부울입니다. 등록이 필요 없는 구성 요소인지 여부를 지정합니다.|
 
-### <a name="comfilereference"></a>COMFileReference
+## <a name="comfilereference"></a>COMFileReference
 
 [ResolveComReference](resolvecomreference-task.md) 대상의 `TypeLibFiles` 매개 변수에 전달되는 형식 라이브러리 목록을 나타냅니다. 이 항목은 .NET 프로젝트에만 적용됩니다.
 
@@ -67,7 +65,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |---------------|-----------------|
 |WrapperTool|선택적 문자열입니다. 구성 요소에 사용되는 래퍼 도구의 이름(예: "tlbimp")입니다.|
 
-### <a name="nativereference"></a>NativeReference
+## <a name="nativereference"></a>NativeReference
 
 네이티브 매니페스트 파일 또는 이러한 파일에 대한 참조를 나타냅니다.
 
@@ -76,7 +74,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |이름|필수 문자열입니다. 매니페스트 파일의 기본 이름입니다.|
 |HintPath|필수 문자열입니다. 매니페스트 파일의 상대 경로입니다.|
 
-### <a name="projectreference"></a>ProjectReference
+## <a name="projectreference"></a>ProjectReference
 
 다른 프로젝트에 대한 참조를 나타냅니다. `ProjectReference` 항목은 `ResolveProjectReferences` 대상에 의해 [참조](#reference) 항목으로 변환되므로 참조의 모든 유효한 메타데이터는 변환 프로세스에서 덮어쓰지 않는 경우 `ProjectReference`에서 유효할 수 있습니다.
 
@@ -93,7 +91,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 |SkipGetTargetFrameworkProperties|선택적 부울입니다. `true`인 경우, 가장 호환성이 높은 `TargetFramework` 값에 대한 협상 없이 참조된 프로젝트를 빌드합니다. 기본값은 `false`입니다.|
 |대상|선택적 `string[]`입니다. 참조된 프로젝트에서 빌드해야 하는 대상의 목록으로, 세미콜론으로 구분됩니다. 기본값은 비어 있음으로 기본 설정되어 기본 대상을 나타내는 `$(ProjectReferenceBuildTargets)` 값입니다.|
 
-### <a name="compile"></a>Compile
+## <a name="compile"></a>Compile
 
 컴파일러에 대한 소스 파일을 나타냅니다.
 
@@ -105,7 +103,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource
+## <a name="embeddedresource"></a>EmbeddedResource
 
 생성된 어셈블리에 포함될 리소스를 나타냅니다.
 
@@ -120,7 +118,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 | LogicalName | 필수 문자열입니다. 포함된 리소스의 논리적 이름입니다. |
 
-### <a name="content"></a>콘텐츠
+## <a name="content"></a>콘텐츠
 
 프로젝트로 컴파일되지 않지만 프로젝트에 포함되거나 함께 게시될 수 있는 파일을 나타냅니다.
 
@@ -136,7 +134,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
-### <a name="none"></a>없음
+## <a name="none"></a>없음
 
 빌드 프로세스에서 역할이 없는 파일을 나타냅니다.
 
@@ -150,7 +148,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 | 표시 | 선택적 부울입니다. Visual Studio의 **솔루션 탐색기** 에 파일을 표시할지 여부를 나타냅니다. |
 | CopyToOutputDirectory | 선택적 문자열입니다. 출력 디렉터리에 파일을 복사할지 여부를 결정합니다. 값:<br /><br /> 1.  Never<br />2.  항상<br />3.  PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+## <a name="assemblymetadata"></a>AssemblyMetadata
 
 `[AssemblyMetadata(key, value)]`로 생성될 어셈블리 특성을 나타냅니다.
 
@@ -162,7 +160,7 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 > [!NOTE]
 > 이 항목은 SDK for .NET 5(및 .NET Core) 이상 버전을 사용하는 프로젝트에 적용됩니다.
 
-### <a name="internalsvisibleto"></a>InternalsVisibleTo
+## <a name="internalsvisibleto"></a>InternalsVisibleTo
 
 `[InternalsVisibleTo(..)]` 어셈블리 특성으로 내보낼 어셈블리를 지정합니다.
 
@@ -174,15 +172,15 @@ MSBuild에서 항목은 하나 이상의 파일에 대한 명명된 참조입니
 > [!NOTE]
 > 이 항목은 SDK for .NET 5(및 .NET Core) 이상 버전을 사용하는 프로젝트에 적용됩니다.
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+## <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
 빌드에 대한 기본 애플리케이션 매니페스트를 나타내며 ClickOnce 배포 보안 정보를 포함합니다.
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport
+## <a name="codeanalysisimport"></a>CodeAnalysisImport
 
 가져올 FxCop 프로젝트를 나타냅니다.
 
-### <a name="import"></a>가져오기
+## <a name="import"></a>가져오기
 
 Visual Basic 컴파일러가 네임스페이스를 가져올 어셈블리를 나타냅니다.
 

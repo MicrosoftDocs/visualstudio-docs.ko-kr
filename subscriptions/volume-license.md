@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/08/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 볼륨 라이선스 계약의 관리자가 Visual Studio 구독 관리 포털에 액세스하는 방법 알아보기
-ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672532"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>볼륨 라이선스 계약의 관리자로 관리 포털에 액세스
 
@@ -26,9 +26,9 @@ ms.locfileid: "102607290"
 이 정보는 모든 볼륨 라이선싱 계약 유형(예: 기업계약, 기업 정기가입, 셀렉트, 셀렉트 플러스, 오픈, 오픈 라이선스, 정부 및 아카데믹 계약)에 적용됩니다. 
 
 ## <a name="resources"></a>리소스
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

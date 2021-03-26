@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87956b3630f9d152ecdda7754623e7257cf0a01a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 56961930e08e7d53dfe387c00642ae7266c230c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081921"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 디버그 엔진의 주소 공간에서 관리 되는 개체의 복사본을 만듭니다.
@@ -50,6 +50,6 @@ int GetManagedDebugObject(
 ## <a name="remarks"></a>설명
  이 [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md) 개체는 인스턴스와 같은 관리 되는 값 클래스 인스턴스를 나타내야 합니다 `System.Decimal` . 로컬 복사본이 있으면 호출 [평가](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 의 오버 헤드가 제거 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

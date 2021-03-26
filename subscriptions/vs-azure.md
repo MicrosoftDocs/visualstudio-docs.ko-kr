@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/10/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335222"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672259"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -80,7 +80,7 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 |              Visual Studio Professional 월간              |        사용할 수 없음        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD 월간 크레딧      |                             예                             |
 |                        MSDN 플랫폼                        |     100 USD 월간 크레딧     |                             예                             |
-|               Visual Studio Enterprise - NFR\*               |     150 USD 월간 크레딧     |                             예                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     150 USD 월간 크레딧     |                             예                             |
 |                Visual Studio Enterprise - FTE                |     150 USD 월간 크레딧     |                             예                             |
 |     Visual Studio Enterprise - Microsoft 파트너 네트워크     |     150 USD 월간 크레딧     |                             예                             |
 |    Visual Studio Professional - Microsoft 파트너 네트워크    |        사용할 수 없음        |                                                             |
@@ -90,7 +90,7 @@ Azure용 월간 크레딧을 계속 사용하는 여러 가지 방법이 있습�
 |      Visual Studio Enterprise - MCT 소프트웨어 및 서비스      |     100 USD 월간 크레딧     |                             예                             |
 | Visual Studio Enterprise - MCT 소프트웨어 및 서비스 개발자 |     150 USD 월간 크레딧     |                             예                             |
 
-*포함: NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner)
+<sup>1</sup> ‘포함: NFR(전매금지), MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner). 제외: NFR Basic’
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -113,7 +113,7 @@ A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 
 - Azure와 관련하여 도움이 필요하세요?  다음 리소스를 확인하세요.
   - 기술 지원: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure 유용한 정보](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 유용한 정보") 
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목

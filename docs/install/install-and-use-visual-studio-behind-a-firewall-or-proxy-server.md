@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: b1452976a2710026b71e89614e776134e8a36ae1
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295706"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884124"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -113,8 +113,8 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | Office 웹 <br>추가 기능(add-in) <br> file:/// <br>확인 <br>서비스 | verificationservice.osi.office.net | https/443 | Office 웹 추가 기능에 대한 매니페스트의 유효성을 검사하는 데 사용됩니다. |
 | SharePoint 및 <br>Office 추가 기능 | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | SharePoint Online 및 Microsoft 365에 대한 SharePoint 및 Office 추가 기능을 게시 및 테스트하는 데 사용됩니다. |
 | 워크플로 관리자 <br>테스트 서비스<br> 호스트 | | http/12292 | 워크플로를 사용하여 SharePoint 추가 기능을 테스트하기 위해 자동으로 생성되는 방화벽 규칙입니다. |
-| 자동으로 수집되는 <br>안정성 통계 <br>및 기타 <br>CEIP(사용자 환경 <br>개선 프로그램)<br> : Azure SDK 및 <br>SQL 도구 <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | 사용자의 안정성 통계(크래시/응답하지 않는 데이터)를 Microsoft로 보내는 데 사용됩니다. Windows 오류 보고가 사용으로 설정된 경우 실제 크래시/응답하지 않는 덤프는 여전히 업로드됩니다. 통계 정보만 표시되지 않습니다. <br>Visual Studio에 대한 Azure Tools SDK 확장의 익명 사용 패턴 및 Visual Studio에 대한 SQL 도구의 사용 패턴을 표시하는 데 사용됩니다. |
-| Visual Studio <br> CEIP(사용자 환경 <br>개선 프로그램) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | 익명 사용 패턴 및 오류 로그를 수집하는 데 사용됩니다. <br><br>UI 고정 문제를 추적하는 데 사용됩니다. |
+| 자동으로 수집되는 <br>안정성 통계 <br>및 기타 <br>CEIP(사용자 환경 <br>개선 프로그램)<br> : Azure SDK 및 <br>SQL 도구 <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | 사용자의 안정성 통계(크래시/응답하지 않는 데이터)를 Microsoft로 보내는 데 사용됩니다. Windows 오류 보고가 사용으로 설정된 경우 실제 크래시/응답하지 않는 덤프는 여전히 업로드됩니다. 통계 정보만 표시되지 않습니다. <br>Visual Studio에 대한 Azure Tools SDK 확장의 사용 패턴 및 Visual Studio에 대한 SQL 도구의 사용 패턴을 표시하는 데 사용됩니다. |
+| Visual Studio <br> CEIP(사용자 환경 <br>개선 프로그램) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | 사용 패턴 및 오류 로그를 수집하는 데 사용됩니다. <br><br>UI 고정 문제를 추적하는 데 사용됩니다. |
 | 만들기 및<br>관리 <br>: Azure 리소스 | management.azure.com <br>management.core.windows.net | https/443 | 웹 애플리케이션, Azure Functions 또는 WebJob의 게시를 지원하기 위해 Azure Websites 또는 기타 리소스를 만드는 데 사용됩니다. |
 | 업데이트된 웹 게시 도구 <br>확인 및 확장 <br>권장 사항 | marketplace.visualstudio.com | https/443 | 업데이트된 게시 도구의 가용성을 확인하는 데 사용됩니다. 사용하지 않도록 설정할 경우 웹 게시에 사용 가능한 권장 확장이 표시되지 않을 수 있습니다. |
 | 업데이트된 Azure 리소스 <br>만들기 엔드포인트 정보 | \*.blob.core.windows.net | https/443 | 특정 Azure 서비스용 Azure 리소스를 만드는 데 사용되는 엔드포인트 업데이트에 사용됩니다. 사용하지 않도록 설정할 경우 마지막으로 다운로드한 엔드포인트 위치 또는 기본 제공 엔드포인트 위치가 대신 사용됩니다. |

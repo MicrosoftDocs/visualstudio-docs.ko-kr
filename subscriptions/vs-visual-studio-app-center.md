@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85d8a8aeda72e9a5c8fc94e98d1cbec22af32221
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537775"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672711"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -50,7 +50,7 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Included                                                            |예 |
 ||
 
-<sup>1</sup>  포함:  NFR(전매금지), FTE, VSIP(Visual Studio Industry Partner), Imagine, MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP(Most Valuable Professional), RD(Regional Director)
+<sup>1</sup> ‘포함: NFR(전매금지), FTE, VSIP(Visual Studio Industry Partner), Imagine, MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP(Most Valuable Professional), RD(Regional Director).  제외: NFR Basic’
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -71,10 +71,10 @@ A:  App Center에는 일부 이전 브라우저에서 제공하지 않을 수 �
 - App Center와 관련하여 도움이 필요하세요?
   - [App Center 도움말 센터](https://intercom.help/appcenter/)에서 App Center 팀의 조언과 답변을 확인하세요.
   - 전체 [App Center 설명서](/appcenter/)를 확인하세요.
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

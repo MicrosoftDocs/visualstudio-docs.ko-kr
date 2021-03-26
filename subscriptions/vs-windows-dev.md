@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 02/09/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 4ea61f0bdb131c20412c0b99bbd09cbc44777fb7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089595"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672763"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
@@ -55,7 +55,7 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
 ||
 
-<sup>1</sup>  포함:  *NFR(전매 금지), FTE, VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MVP(Most Valuable Professional), RD(Regional Director) 제외:  MPN(Microsoft 파트너 네트워크), Imagine, MCT Software & Services*
+<sup>1</sup> ‘포함: NFR(전매 금지), FTE, VSIP(Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MVP(Most Valuable Professional), RD(Regional Director). 제외: MPN(Microsoft 파트너 네트워크), Imagine, MCT Software & Services, NFR Basic.’
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -65,10 +65,10 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 ## <a name="support-resources"></a>지원 리소스
 - Windows 개발자 계정 사용과 관련하여 도움이 필요하세요?  [Windows 개발자 센터](https://developer.microsoft.com/windows)에서 [지원](https://developer.microsoft.com/windows/support) 리소스를 확인하세요.
 - [Windows 개발](/windows/)
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 구독에 포함되는 혜택과 활성화 방법에 대해 알아봅니다.
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750153"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757635"
 ---
 # <a name="about-your-subscription-benefits"></a>구독 혜택에 대한 정보
 Visual Studio 구독자는 구독 수준에 따라 다양한 혜택을 이용할 수 있습니다. 혜택에 대해 알아야 할 몇 가지 중요한 사항이 있습니다.
@@ -42,6 +42,9 @@ Visual Studio 구독자는 구독 수준에 따라 다양한 혜택을 이용할
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>일시적으로 사용할 수 없게 되는 혜택
 드물지만 기술적인 문제로 인해 잠시 혜택을 사용할 수 없는 경우가 있습니다. 이러한 경우에는 [Visual Studio 구독 포털](https://my.visualstudio.com/benefits)에서 혜택 타일을 변경하여 문제가 해결될 때까지 혜택을 '일시적으로 사용할 수 없음'을 표시합니다. 문제가 해결되면 타일이 복원되고 혜택을 다시 사용할 수 있습니다.
+
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)

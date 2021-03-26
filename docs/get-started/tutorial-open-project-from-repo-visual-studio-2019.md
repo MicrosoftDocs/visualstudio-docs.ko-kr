@@ -2,7 +2,7 @@
 title: '자습서: Visual Studio 2019의 리포지토리에서 프로젝트 열기'
 description: Visual Studio 2019를 사용하여 Git 또는 Azure DevOps 리포지토리에서 프로젝트를 여는 방법을 알아봅니다.
 ms.custom: get-started
-ms.date: 02/11/2021
+ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 5a637b2536c05e8f5678989f47dba61cd6ec7381
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335474"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671715"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>자습서: 리포지토리에서 프로젝트 열기
 
@@ -53,6 +53,9 @@ Visual Studio 2019를 사용하여 GitHub 리포지토리에서 프로젝트를 
    ![Visual Studio 2019 버전 16.8 이상에서 계정 정보를 입력하거나 편집하는 Git 사용자 정보 대화 상자 스크린샷](../ide/media/vs-2019/git-user-information-dialog.png)
 
     **저장** 을 선택하여 전역 .gitconfig 파일에 정보를 추가합니다. 또는 **취소** 를 선택하여 나중에 이 작업을 수행하도록 선택할 수 있습니다.
+
+    > [!TIP]
+    > Visual Studio에 로그인하는 방법에 대한 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md) 페이지를 참조하세요. GitHub 계정을 사용하여 로그인하는 방법에 대한 자세한 내용은 [Visual Studio에서 GitHub 계정 작업](../ide/work-with-github-accounts.md) 페이지를 참조하세요.
 
     그런 다음, Visual Studio가 리포지토리에서 솔루션을 자동으로 로드하고 엽니다.
 
@@ -207,5 +210,6 @@ Visual Studio로 코딩할 준비가 되면 다음 언어별 자습서를 자세
 
 - [Visual Studio 2017의 리포지토리에서 프로젝트 열기](tutorial-open-project-from-repo-visual-studio-2017.md)
 - [Visual Studio 2019의 새로운 Git 환경](../ide/git-with-visual-studio.md)
+- [Git와 팀 탐색기 나란히 비교](../ide/git-team-explorer-feature-comparison.md)
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/)(Azure DevOps Services: Azure Repos 및 Visual Studio 시작하기)
 - [Microsoft Learn: Azure DevOps 시작하기](/learn/modules/get-started-with-devops/)

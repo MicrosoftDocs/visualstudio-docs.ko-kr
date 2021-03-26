@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35e77450ca610f94d266617f1a972290d667e3f4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ac7be476f1ec119d43b8794e5d2e1be02d66f521
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227166"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091788"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 열거형을 첫 번째 요소로 다시 설정 합니다.
@@ -44,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>설명
  이 메서드가 호출 된 후 [다음](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) 메서드에 대 한 다음 호출에서 열거형의 첫 번째 요소를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

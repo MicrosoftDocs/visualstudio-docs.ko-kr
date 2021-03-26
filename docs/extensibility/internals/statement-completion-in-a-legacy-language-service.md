@@ -8,17 +8,17 @@ helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63a784c850f4c88ecf17a978a2943577eb988a7b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894831"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080777"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 명령문 완성
 문 완성은 언어 서비스에서 사용자가 핵심 편집기에서 입력을 시작한 언어 키워드나 요소를 완료 하는 데 도움이 되는 프로세스입니다. 이 항목에서는 문 완성이 작동 하는 방식과 언어 서비스에서이를 구현 하는 방법에 대해 설명 합니다.
@@ -38,5 +38,5 @@ ms.locfileid: "99894831"
 
  편집기에서 트리거를 입력 하는 경우 (특히 텍스트 버퍼) 언어 서비스는 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 합니다. 이렇게 하면 사용자가 문 완성 후보에서 선택할 수 있도록 편집기에서 UI를 표시 합니다. 이 메서드를 사용 하려면 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 및 플래그를 <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 매개 변수로 구현 해야 합니다. 완료 항목 목록이 스크롤 목록 상자에 나타납니다. 사용자가 계속 해 서 입력 하면 목록 상자 내에서 선택한 항목이 가장 최근에 입력 한 문자와 가장 일치 하는 항목을 반영 하도록 업데이트 됩니다. 핵심 편집기는 문 완성을 위해 UI를 구현 하지만 언어 서비스는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 문에 대 한 후보 완료 항목 집합을 정의 하기 위해 인터페이스를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

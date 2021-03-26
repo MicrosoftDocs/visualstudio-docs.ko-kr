@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89e2ea0db7f162c70261ab2ba9aab187f9c11bd0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963434"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090891"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage을 구현할지 여부를 결정 합니다.
 
@@ -41,6 +41,6 @@ ms.locfileid: "99963434"
 
 4. 쿼리 편집 및 쿼리 저장 이벤트를 처리 합니다 (쿼리 [편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)참조).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672043"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -58,7 +58,7 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | 사용할 수 없음 | N/A |
 
-<sup>1</sup>  포함:  *NFR(전매 금지), VSIP(Visual Studio Industry Partner), FTE, BizSpark, Imagine, Imagine Premium, MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services.*
+<sup>1</sup> *포함: NFR(전매 금지), VSIP(Visual Studio Industry Partner), FTE, BizSpark, Imagine, Imagine Premium, MPN(Microsoft 파트너 네트워크), MVP(Most Valuable Professional), RD(Regional Director), MCT Software & Services Developer, MCT Software & Services.  
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -74,7 +74,7 @@ A:  CODE Magazine은 이행, 제품 선택, 디지털 액세스 프로세스를 
 
 ## <a name="support-resources"></a>지원 리소스
 - CODE Magazine 구독에 대해 궁금한 점이 있을 경우,  전자 메일이나 전화로 [CODE Magazine](https://www.codemag.com/contact)에 문의하거나, 온라인 지원 요청을 제출하세요.
-- Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97071500b8f3bc6cb4d6c21d264646cac2e7fdb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27364382a7e4318fce822b148e9d3df6747bfd1e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962927"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081999"
 ---
 # <a name="solution-sln-file"></a>솔루션 (.sln) 파일
 
@@ -162,7 +162,7 @@ EndGlobal
 
 .Sln 파일에만 `preSolution` 및 섹션의 항목이 포함 됩니다 `postSolution` . 솔루션이 제대로 로드 하려면이 정보가 필요 하므로 .suo 파일에는 유사한 섹션이 없습니다. .Suo 파일에는 소스 코드 제어에서 공유 하거나 저장 하지 않으려는 전용 메모와 같은 사용자별 옵션이 포함 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [솔루션 사용자 옵션(.Suo) 파일](../../extensibility/internals/solution-user-options-dot-suo-file.md)

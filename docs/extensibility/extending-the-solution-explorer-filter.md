@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862124"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075018"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
 **솔루션 탐색기** 필터 기능을 확장 하 여 다른 파일을 표시 하거나 숨길 수 있습니다. 예를 들어이 연습에서 설명 하는 대로 **솔루션 탐색기** 에서 c # 클래스 팩터리 파일만 표시 하는 필터를 만들 수 있습니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ### <a name="create-a-visual-studio-package-project"></a>Visual Studio 패키지 프로젝트 만들기
@@ -60,14 +60,14 @@ ms.locfileid: "99862124"
 
 ### <a name="add-the-filter-code"></a>필터 코드 추가
 
-1. *FileFilterPackageGuids.cs* 파일에 일부 guid를 추가 합니다.
+1. *Filefilterpackageguids .cs* 파일에 일부 guid를 추가 합니다.
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. *FileNameFilter.cs* 이라는 FileFilter 프로젝트에 클래스 파일을 추가 합니다.
+2. *FileNameFilter* 이라는 FileFilter 프로젝트에 클래스 파일을 추가 합니다.
 
 3. 빈 네임 스페이스와 빈 클래스를 아래 코드로 바꿉니다.
 
@@ -160,7 +160,7 @@ ms.locfileid: "99862124"
 
     ```
 
-4. *FileFilter.cs* 에서 명령 배치를 제거 하 고 FileFilter 생성자에서 코드를 처리 합니다. 결과는 다음과 같습니다.
+4. *Filefilter .cs* 에서 filefilter 생성자에서 명령 배치 및 처리 코드를 제거 합니다. 결과는 다음과 같습니다.
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ ms.locfileid: "99862124"
 
      메서드도 제거 `ShowMessageBox()` 합니다.
 
-5. *FileFilterPackage.cs* 에서 메서드의 코드를 다음 코드로 바꿉니다 `Initialize()` .
+5. *Filefilterpackage .cs* 에서 메서드의 코드를 `Initialize()` 다음으로 바꿉니다.
 
     ```csharp
     protected override void Initialize()

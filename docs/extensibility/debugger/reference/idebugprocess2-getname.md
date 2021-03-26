@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 418da1be71b0299c93f2813397c28144425f81a4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a9817e68cc01c6a867ee2e53a8824ecd759ee014
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164771"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081830"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 프로세스의 제목, 이름 또는 파일 이름을 가져옵니다.
@@ -52,6 +52,6 @@ int GetName(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

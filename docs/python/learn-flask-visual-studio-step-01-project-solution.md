@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942518"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806058"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942518"
 
 Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같은 기능을 직접 제공하지 않기 때문에 "마이크로" 프레임워크라고 합니다. 대신 이러한 기능은 Flask *확장* 이라는 특별한 Python 패키지를 통해 제공됩니다. 확장은 Flask와 원활하게 통합되어 Flask의 일부인 것처럼 보입니다. 예를 들어 Flask 자체는 페이지 템플릿 엔진을 제공하지 않습니다. 템플레이팅은 이 자습서에서 설명한 대로 Jinja 및 Jade와 같은 확장에서 제공됩니다.
 
+::: moniker range="vs-2017"
 이 자습서에서는 다음 작업 방법을 알아봅니다.
-
-> [!div class="checklist"]
-> - “빈 Flask 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Flask 프로젝트 만들기(1단계)
-> - 한 페이지의 Flask 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
-> - 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
-> - Flask 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
-> - 여론 조사 Flask 웹 프로젝트 템플릿을 사용하여 다양한 스토리지 옵션(Azure 스토리지, MongoDB 또는 메모리)을 사용하는 여론 조사 앱을 만들 수 있습니다.
+- “빈 Flask 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Flask 프로젝트 만들기(1단계)
+- 한 페이지의 Flask 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
+- 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
+- Flask 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
+- 여론 조사 Flask 웹 프로젝트 템플릿을 사용하여 다양한 스토리지 옵션(Azure 스토리지, MongoDB 또는 메모리)을 사용하는 여론 조사 앱을 만들 수 있습니다.
 
 이 단계를 진행하는 동안 세 개의 개별 프로젝트가 포함된 단일 Visual Studio 솔루션을 만듭니다. Visual Studio에 포함된 여러 Flask 프로젝트 템플릿을 사용하여 프로젝트를 만듭니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+이 자습서에서는 다음 작업 방법을 알아봅니다.
+- “빈 Flask 웹 프로젝트” 템플릿을 사용하여 Git 리포지토리에 기본 Flask 프로젝트 만들기(1단계)
+- 한 페이지의 Flask 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
+- 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
+- Flask 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
+
+이 단계를 진행하는 동안 두 개의 개별 프로젝트가 포함된 단일 Visual Studio 솔루션을 만듭니다. Visual Studio에 포함된 여러 Flask 프로젝트 템플릿을 사용하여 프로젝트를 만듭니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
+::: moniker-end
 
 > [!Note]
 > 이 자습서는 Flask에 대해 자세히 배우고, 자신의 프로젝트에 보다 광범위한 시작점을 제공하는 여러 Flask 프로젝트 템플릿을 사용하는 방법에 대해 배운다는 점에서 [Flask 빠른 시작](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)과 다릅니다. 예를 들어 프로젝트 템플릿은 빠른 시작에 표시된 대로 수동으로 패키지를 설치하지 않고, 프로젝트를 생성할 때 자동으로 Flask 패키지를 설치합니다.

@@ -11,25 +11,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911730"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672789"
 ---
 # <a name="what-is-github-codespaces-preview"></a>GitHub Codespaces란? (미리 보기)
 
+> [!Important] 
+> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다. 
+
 Codespaces를 소개해 드리겠습니다.
 
-GitHub Codespaces는 장기 프로젝트이든, 단기 작업(예: 끌어오기 요청 검토)이든 관계없이 모든 활동을 지원하는 클라우드 기반 개발 환경입니다. Visual Studio 2019 미리 보기 내에서 codespace를 사용할 수 있습니다([제한된 퍼블릭 베타에 등록](https://github.com/features/codespaces/signup-vs)).
+GitHub Codespaces는 장기 프로젝트이든, 단기 작업(예: 끌어오기 요청 검토)이든 관계없이 모든 활동을 지원하는 클라우드 기반 개발 환경입니다.
 
 또한 GitHub Codespaces는 일반적으로 개발 환경에 대한 반복성 및 안정성(프로덕션 워크로드용으로 예약됨) 같은 DevOps의 많은 이점을 제공합니다. 선호하여 사용 중인 도구, 프로세스, 구성도 함께 사용하도록 GitHub Codespaces를 개인 설정할 수도 있습니다.
 
 이 문서에서는 주요 개념을 설명하고 Codespaces 기능을 소개합니다. 시작하려는 경우 [codespace와 함께 Visual Studio 사용](use-visual-studio-with-codespaces.md)을 참조하세요.
-
-> [!IMPORTANT]
-> GitHub Codespaces를 사용하려면 제한된 [퍼블릭 베타](https://github.com/features/codespaces/signup-vs)에 등록해야 합니다. 베타 기간에 GitHub는 Codespaces의 가용성에 관한 어떠한 보증도 하지 않습니다. 베타에 참가하는 방법에 대한 자세한 내용은 [Codespaces 정보](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta)를 참조하세요.
 
 ## <a name="concepts-and-features"></a>개념 및 기능
 

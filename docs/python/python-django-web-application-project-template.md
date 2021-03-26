@@ -10,17 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912396"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806045"
 ---
 # <a name="django-web-project-template"></a>Django 웹 프로젝트 템플릿
-
+::: moniker range="vs-2017"
 [Django](https://www.djangoproject.com/)는 신속하고 안전하며 확장성 있는 웹 개발을 위해 고안된 상위 수준 Python 프레임워크입니다. Visual Studio의 Python 지원에서는 Django 기반 웹 애플리케이션의 구조를 설정하기 위한 여러 가지 프로젝트 템플릿을 제공합니다. Visual Studio에서 템플릿을 사용하려면 **파일** > **새로 만들기** > **프로젝트** 를 선택하고 “Django”를 검색한 다음, **빈 Django 웹 프로젝트**, **Django 웹 프로젝트** 및 **설문 조사 Django 웹 프로젝트** 템플릿을 선택하세요. 모든 템플릿에 대한 연습은 [Django 알아보기 자습서](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요.
-
+::: moniker-end
+::: moniker range=">=vs-2019"
+[Django](https://www.djangoproject.com/)는 신속하고 안전하며 확장성 있는 웹 개발을 위해 고안된 상위 수준 Python 프레임워크입니다. Visual Studio의 Python 지원에서는 Django 기반 웹 애플리케이션의 구조를 설정하기 위한 여러 가지 프로젝트 템플릿을 제공합니다. Visual Studio에서 템플릿을 사용하려면 **파일** > **새로 만들기** > **프로젝트** 를 선택하고 “Django”를 검색한 다음, **빈 Django 웹 프로젝트** 및 **Django 웹 프로젝트** 템플릿에서 선택하세요. 모든 템플릿에 대한 연습은 [Django 알아보기 자습서](learn-django-in-visual-studio-step-01-project-and-solution.md)를 참조하세요.
+::: moniker-end
 Visual Studio는 Django 프로젝트용 전체 IntelliSense를 제공합니다.
 
 - 템플릿에 전달된 컨텍스트 변수:

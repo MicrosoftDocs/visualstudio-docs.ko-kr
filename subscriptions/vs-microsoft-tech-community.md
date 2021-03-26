@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Microsoft Tech Community 포럼 지원 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 2bdd6b638ba490c2643374b15bc8b9644d519ebd
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: f1078204d69b9249b1691f9c96496ba1975fffd6
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537814"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671952"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Microsoft Tech Community 포럼 지원
 동료 사용자 및 Microsoft 기술 전문가와 연결하여 모범 사례, 설계 아키텍처, 최신 업데이트에 대해 토론하세요.
@@ -51,7 +51,7 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 |                                       MSDN 플랫폼(표준)                                       |    VL, 일반 정품     |   사용 가능    |    예     |
 | Visual Studio Enterprise(월간 클라우드), Visual Studio Professional(월간 클라우드)|        모두        | 사용할 수 없음 |     아니요     |
 
-<sup>1</sup>  포함:  ‘NFR(전매금지), Microsoft FTE, MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT(Microsoft Certified Trainer)’
+<sup>1</sup> ‘포함: NFR(전매금지), Microsoft FTE, MVP(Most Valuable Professional), RD(Regional Director), VSIP(Visual Studio Industry Partner), BizSpark, Imagine, MCT(Microsoft Certified Trainer). 제외: NFR Basic.’
 
 > [!NOTE]
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
@@ -59,7 +59,7 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
 
 ## <a name="support-resources"></a>지원 리소스
-- Visual Studio 구독의 판매, 구독, 계정 및 요금 청구에 대한 지원이 필요하세요?  Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
+- Visual Studio 구독의 판매, 구독, 계정 및 요금 청구에 대한 지원이 필요하세요?  [Visual Studio 구독 지원](https://my.visualstudio.com/gethelp)에 문의하세요.
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목

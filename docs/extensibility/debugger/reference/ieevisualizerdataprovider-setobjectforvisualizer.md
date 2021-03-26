@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 2e0a59c10293d5d8cc13d46b625a7b43136cb71b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227231"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091801"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 이 메서드는 시각화 도우미가 나타내는 개체를 변경 합니다.
@@ -60,6 +60,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>설명
  오류 정보가 반환 되는 방법을 결정 하는 것은 구현자의 결정입니다. 그러나 일부 호출자는 오류를 알 수 있도록 예외 개체가 반환 되었는지만 확인할 수 있으므로 오류가 발생 한 경우이 메서드는 항상 예외 개체를 반환 해야 합니다. 호출자가이를 사용 하려는 경우에도 오류 문자열을 제공 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

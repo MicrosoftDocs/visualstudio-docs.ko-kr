@@ -1,5 +1,6 @@
 ---
 title: IDebugExpressionContext2 | Microsoft Docs
+description: 이 인터페이스는 식 계산에 대 한 컨텍스트를 나타냅니다.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2 interface
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6d8745207f1ab075aedd43815e7a97a4f0721bb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901659"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092295"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 이 인터페이스는 식 계산에 대 한 컨텍스트를 나타냅니다.
@@ -54,7 +55,7 @@ IDebugExpressionContext2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

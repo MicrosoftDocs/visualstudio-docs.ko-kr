@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f109717c030c830f433a02bec52e5931e4b5e467
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5f833311fe9029931c0d56cbe828bd027c45c26a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092061"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 이 메서드는 인쇄 가능한 결과를 만드는 데 사용할 언어를 설정 합니다.
@@ -50,5 +50,5 @@ int SetLocale(
 ## <a name="remarks"></a>설명
  이 메서드는 식 계산기 (EE)가 로드 되는 동안 여러 번 호출 될 수 있으므로 EE에서 언어를 즉시 전환할 수 있어야 합니다. EE는이 로캘을 사용 하 여 오류 메시지 및 문자열을 적절 한 언어로 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

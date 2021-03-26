@@ -1,27 +1,27 @@
 ---
 title: Visual Studio 구독에서 만료된 라이선스 처리 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 2b8a4ad5-e5b3-48a3-bb65-23a5cd3f22e9
-ms.date: 03/03/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 관리자가 만료된 Visual Studio 구독을 처리하는 방법을 알아봅니다.
-ms.openlocfilehash: cea4f33d884b75b885f2d6dd09d779470ab84c5d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a91096e4dd278e0e53fcd31145dc5cca0653ed72
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904015"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776508"
 ---
 # <a name="expired-subscriptions"></a>만료된 구독
-사용자의 구독이 만료된 경우 포털의 구독자 목록에 이름 옆에 빨간색 막대로 표시됩니다. 해당 구독자가 Visual Studio 구독 혜택을 계속 사용하려면 해당 라이선스를 갱신해야 합니다.
+사용자의 구독이 만료된 경우 구독자 목록의 이름 옆에 빨간색 막대가 표시됩니다. 해당 구독자가 Visual Studio 구독 혜택을 계속 사용하려면 해당 라이선스를 갱신해야 합니다.
 
 ## <a name="renew-subscriptions"></a>구독 갱신
 1. 볼륨 라이선스 재판매인 또는 Microsoft 판매자에게 문의하세요.
 2. 계약 번호와 구매 계정 번호를 알려줍니다. 
 
-대리점 또는 Microsoft 판매자가 갱신하거나 추가 구독 프로세스를 구매할 수 있도록 안내해 줄 것입니다. 주문하거나 계약이 갱신되면 새 구독은 사용 가능 상태가 되며 [사용자의 구독자에 할당](assign-license.md)할 수 있습니다.
+대리점 또는 Microsoft 판매자가 구독을 갱신하거나 구독을 더 구매하는 프로세스를 안내합니다. 주문하거나 계약이 갱신되면 새 구독은 사용 가능 상태가 되며 [사용자의 구독자에 할당](assign-license.md)할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
@@ -30,5 +30,5 @@ ms.locfileid: "92904015"
 - [Microsoft 365 설명서](/microsoft-365/)
 
 ## <a name="next-steps"></a>다음 단계
-- 관리 포털 사용에 대한 도움말은 [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)에 문의하세요.
+- 관리 포털 사용에 대한 도움말은 [Visual Studio 관리 및 구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
 - [Microsoft 솔루션 공급자](https://www.microsoft.com/solution-providers/home) 찾기

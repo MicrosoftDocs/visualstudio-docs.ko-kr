@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio 구독 - 구독자의 Hotmail 또는 Gmail 주소가 보이는 이유는 무엇인가요?
-ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189045"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777002"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio 구독 - 구독자의 개인 계정이 보이는 이유는 무엇인가요?
 기업이 VLSC(볼륨 라이선스 서비스 센터)에서 새 Visual Studio [구독 관리 포털](https://manage.visualstudio.com)로 마이그레이션한 후 관리자는 일부 구독자의 “로그인 전자 메일 주소”에 Hotmail 또는 Outlook과 같은 개인 전자 메일 주소가 표시되는 것을 발견했습니다.  
@@ -50,7 +50,10 @@ ms.locfileid: "96189045"
 > [!NOTE]
 > 로그인 전자 메일 주소를 편집하면 구독자가 https://my.visualstudio.com 의 구독에 로그인하는 데 사용하는 전자 메일만 업데이트됩니다. 구독자가 다른 전자 메일 주소를 사용하여 Azure 또는 Pluralsight 같은 혜택을 이미 활성화한 경우 해당 전자 메일 주소를 사용하여 계속 액세스해야 합니다. 사용자가 액세스하는 새로운 혜택에서는 새 전자 메일 주소를 사용해야 합니다. 
 
-## <a name="see-also"></a>참조
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독 관리에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
+
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)

@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971143"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672971"
 ---
 # <a name="supported-visual-studio-features-preview"></a>지원되는 Visual Studio 기능(미리 보기)
+
+> [!Important] 
+> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다. 
+
 
 Visual Studio는 codespace에 연결할 때 풍부한 개발 환경을 제공합니다. 프로젝트 템플릿, 풍부한 코드 탐색 및 IntelliSense와 같은 생산성 기능뿐만 아니라 소스 코드를 편집, 디버그, 테스트 및 버전 관리하기 위해 잘 알고 있는 Visual Studio 내부 루프 도구를 사용할 수 있습니다.
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f841f602064b21035ea409457c708f99ec25bf12
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddc9c17b90be6d65786d58ff2bf585461c4fc69f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152522"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092191"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 이 메서드는 메서드 위치와 오프셋을 메모리 주소로 변환 합니다.
@@ -72,7 +72,7 @@ int GetMethodLocationProperty(
 
  이름에도 불구 `upstrFullyQualifiedMethodPlusOffset` 하 고이 매개 변수는 부분적으로 정규화 된 메서드 이름으로 전달 될 수 있습니다. 이 경우 선택한 메서드가를 포함 하는 메서드입니다 `pAddress` . 이 매개 변수를 해석 하는 방법은 식 계산기 및 지원 되는 언어의 구현에 따라 결정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

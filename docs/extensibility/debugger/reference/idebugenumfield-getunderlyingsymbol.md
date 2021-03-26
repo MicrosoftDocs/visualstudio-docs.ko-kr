@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf657256be2998d1b1fb0c32d12ab9040b14115
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9343c1b0908c6b132ea982a46623b8c1cf20efc9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153289"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092568"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 이 메서드는 열거형의 이름을 나타내는 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 를 반환 합니다.
@@ -50,7 +50,7 @@ int GetUnderlyingSymbol(
 ## <a name="remarks"></a>설명
  열거형의 이름에는 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)를 사용 하 여 메모리 위치에 바인딩된 열거형의 형식도 포함 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugbinder-bind.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 구독 관리 포털에 새로 구매한 월간 Visual Studio 구독을 추가하는 방법을 알아봅니다.
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467598"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757648"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>구독 관리 포털에 새 월간 Visual Studio 구독 추가
 Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경우 사용자에게 구독을 할당하려면 해당 구독을 구독 관리 포털에 추가해야 할 수 있습니다.  
@@ -40,6 +40,9 @@ Azure 구독을 사용하여 새 월간 Visual Studio 구독을 구입하는 경
 ## <a name="things-to-keep-in-mind"></a>주의할 사항
 - 새 월간 구독을 추가하는 옵션은 처음 구입할 때만 사용할 수 있습니다.  월간 구독이 추가된 후에는 사용자가 포털에 로그인할 때마다 시스템이 새 구독을 검색합니다. 
 - 새 구독이 검색될 때 구독자에 이미 할당된 것으로 확인될 수도 있습니다.  이는 Azure 구독에 대한 액세스 권한이 있는 다른 관리자가 새 Visual Studio 구독을 사용자에게 이미 할당했기 때문입니다.  이제 포털에 추가되었으므로 이러한 구독을 관리할 수 있습니다. 
+
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독 관리에 대한 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vsadminhelp)에 문의하세요.
 
 ## <a name="next-steps"></a>다음 단계
 구독을 추가했으므로 사용자에게 할당할 준비가 되었습니다.  이 작업은 여러 방법으로 수행할 수 있습니다.

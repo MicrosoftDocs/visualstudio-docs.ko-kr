@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536866"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884085"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
@@ -92,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>프로젝트 준비
 
-*프로젝트 준비*는 후속 실행의 성능을 향상하기 위해 프로젝트에 대해 Docker 프로필이 선택될 때(즉 프로젝트가 로드되거나 Docker 지원이 추가될 때) 발생하는 일련의 단계를 의미합니다(**F5** 또는 **Ctrl**+**F5**). 이 옵션은 **도구** > **옵션** > **컨테이너 도구**에서 구성할 수 있습니다. 다음은 백그라운드에서 실행되는 작업입니다.
+*프로젝트 준비* 는 후속 실행의 성능을 향상하기 위해 프로젝트에 대해 Docker 프로필이 선택될 때(즉 프로젝트가 로드되거나 Docker 지원이 추가될 때) 발생하는 일련의 단계를 의미합니다(**F5** 또는 **Ctrl**+**F5**). 이 옵션은 **도구** > **옵션** > **컨테이너 도구** 에서 구성할 수 있습니다. 다음은 백그라운드에서 실행되는 작업입니다.
 
 - Docker Desktop이 설치되어 실행 중인지 확인합니다.
 - Docker Desktop이 프로젝트와 동일한 운영 체제로 설정되어 있는지 확인합니다.
@@ -107,7 +107,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 |볼륨|설명|
 |-|-|
-| **원격 디버거** | 프로젝트 형식에 따라 컨테이너에서 디버거를 실행하는 데 필요한 비트를 포함합니다. 이 내용은 |[디버깅](#debugging) 섹션에 자세히 설명되어 있습니다.
+| **원격 디버거** | 프로젝트 형식에 따라 컨테이너에서 디버거를 실행하는 데 필요한 비트를 포함합니다. 자세한 내용은 [디버깅](#debugging) 섹션에서 설명합니다.|
 | **앱 폴더** | Dockerfile이 있는 프로젝트 폴더를 포함합니다.|
 | **소스 폴더** | Docker 명령에 전달되는 빌드 컨텍스트를 포함합니다.|
 | **NuGet 패키지 폴더** | 프로젝트의 *obj\{project}.csproj.nuget.g.props* 파일에서 읽은 NuGet 패키지 및 대체 폴더를 포함합니다. |
@@ -152,7 +152,7 @@ ASP.NET Core는 *Https* 폴더 아래에서 어셈블리 이름과 일치하는 
 
 이 성능 최적화 기능은 **디버그** 구성으로 빌드하는 경우에만 수행됩니다. **릴리스** 구성에서는 Dockerfile에 지정된 대로 컨테이너에서 빌드가 수행됩니다.
 
-성능 최적화 기능을 사용하지 않고 Dockerfile에 지정된 대로 빌드하려면, 프로젝트 파일에서 다음과 같이 **ContainerDevelopmentMode** 속성을 **Regular**로 설정합니다.
+성능 최적화 기능을 사용하지 않고 Dockerfile에 지정된 대로 빌드하려면, 프로젝트 파일에서 다음과 같이 **ContainerDevelopmentMode** 속성을 **Regular** 로 설정합니다.
 
 ```xml
 <PropertyGroup>

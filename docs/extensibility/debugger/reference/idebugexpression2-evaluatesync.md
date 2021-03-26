@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08d430a2c4e803126e99d37fb7ef30336bde503b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 85e0dd1c334ce57b5e466ab66a74db4b29a40adc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152704"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092438"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 이 메서드는 식을 동기적으로 계산 합니다.
@@ -62,7 +62,7 @@ int EvaluateSync(
 ## <a name="return-value"></a>반환 값
 성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 몇 가지 일반적인 오류 코드는 다음과 같습니다.
 
-|Error|설명|
+|Error|Description|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|현재 다른 식이 계산 중 이며 동시 식 계산이 지원 되지 않습니다.|
 |E_EVALUATE_TIMEOUT|평가 시간이 초과 되었습니다.|
@@ -70,7 +70,7 @@ int EvaluateSync(
 ## <a name="remarks"></a>설명
 동기 평가의 경우 계산이 완료 되 면 이벤트를 다시 Visual Studio로 보낼 필요가 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 예제에서는 IDebugExpression2 인터페이스를 구현 하는 간단한 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다 `CExpression` . [](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
@@ -118,7 +118,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

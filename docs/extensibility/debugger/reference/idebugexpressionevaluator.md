@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2e1fb465155bac2aa4be2b0d0a041715bf63bfa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dd14e85d279bd724dcfdf2cd9b71028ac5a4fd87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152353"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092074"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102152353"
 
 이 인터페이스는 식 계산기를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugExpressionEvaluator : IUnknown
@@ -41,7 +41,7 @@ IDebugExpressionEvaluator : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugExpressionEvaluator` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|식 문자열을 구문 분석 된 식으로 변환 합니다.|
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|메서드의 지역 변수, 인수 및 기타 속성을 가져옵니다.|
@@ -61,7 +61,7 @@ EE를 인스턴스화한 후 DE는 [구문](../../../extensibility/debugger/refe
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 기호 공급자와 소스 코드의 주소가 지정 된 경우 식 계산기를 인스턴스화하는 방법을 보여 줍니다. 이 예제에서는 `GetEEMetric` 디버깅 라이브러리 dbgmetric의 [SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 에서 함수를 사용 합니다.
 
 ```cpp
@@ -103,7 +103,7 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)

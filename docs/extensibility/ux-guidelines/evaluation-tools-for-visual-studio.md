@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f20074b3609bce8e661baed5fded1d0d367c53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f23521763e73ef65b9c5a2f17acb54b85b71d63
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952020"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089890"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio의 계산 도구
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio 용 Craftsmanship 검사 목록
@@ -41,7 +41,7 @@ ms.locfileid: "99952020"
 
 - 모든 레이블이 문장 또는 제목 대/소문자 인지 확인 하 고 텍스트가 모두 소문자 인지 확인 합니다.
 
-    ||정답|오답|
+    ||정답입니다.|틀렸습니다.|
     |-|-------------|---------------|
     |**명령 텍스트 (모두)**|문장 케이스:<br /><br /> **디렉터리 이름:**|디렉터리 이름:|
     |**단추 텍스트 (클라이언트)**|제목 대/소문자:<br /><br /> **[기본값으로 설정]**|기본값으로 설정|
@@ -51,7 +51,7 @@ ms.locfileid: "99952020"
 
 - 줄임표 **[...]** 로 사용자 입력 끝을 캡처하기 위해 UI를 시작 하는 단추, 명령 및 명령 링크를 확인 합니다.
 
-  예:
+  예제:
 
   - 대화 상자의 **[고급 ...]** 단추입니다.
 

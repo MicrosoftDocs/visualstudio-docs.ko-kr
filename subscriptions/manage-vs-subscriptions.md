@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904681"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776834"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -113,7 +113,10 @@ A: Microsoft가 고객 데이터를 유지하는 기간은 구매 채널에 따�
 > - Microsoft 계정 또는 Azure AD를 폐쇄하기로 선택하면 개인 데이터는 즉시 익명 처리됩니다.
 > - 활성 구독이 있는 경우 모든 개인 데이터가 완전히 제거되지는 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="support-resources"></a>지원 리소스
+- Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 [Visual Studio 구독 지원](https://aka.ms/vssubscriberhelp)에 문의하세요.
+
+## <a name="see-also"></a>참고 항목
 - [Visual Studio 설명서](/visualstudio/)
 - [Azure DevOps 설명서](/azure/devops/)
 - [Azure 설명서](/azure/)
