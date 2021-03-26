@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2 interface
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4854150d6581d80804b4c29246bf6db016b5acb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2f6effa250749f448ed1a02c4b7a699d50b7388e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159915"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084404"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 이 인터페이스는 프로세스에서 실행 되는 프로그램을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgram2 : IUnknown
@@ -38,7 +38,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProgram2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|이 프로그램에서 실행 중인 스레드를 열거 합니다.|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|프로그램의 이름을 가져옵니다.|
@@ -72,7 +72,7 @@ IDebugProgram2 : IUnknown
 ## <a name="remarks"></a>설명
  프로그램은 특정 런타임 아키텍처에서 실행 되는 스레드 컨테이너 이며 프로세스는 하나 이상의 프로그램으로 구성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [다음](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)

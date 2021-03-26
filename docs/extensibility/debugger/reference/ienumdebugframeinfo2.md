@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c347b7cebd9b1417cd0a8e772cd8a247e975ea97
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6a0351e1eb964506074c13dd68e9eb132ee5b578
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226386"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091671"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 이 인터페이스는 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 열거 합니다.
@@ -38,7 +38,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IEnumDebugFrameInfo2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|열거형 시퀀스에서 지정 된 수의 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|열거형 시퀀스에서 지정 된 수의 [프레임 정보](../../../extensibility/debugger/reference/frameinfo.md) 구조를 건너뜁니다.|
@@ -56,7 +56,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

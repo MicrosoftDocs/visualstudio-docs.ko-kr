@@ -10,17 +10,17 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5658026b60006a58ba168ca713028b9876a3c57d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948441"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094629"
 ---
 # <a name="program-nodes"></a>프로그램 노드
 디버거 아키텍처에서 *프로그램 노드* 는 다음과 같습니다.
@@ -35,7 +35,7 @@ ms.locfileid: "99948441"
 
   프로그램이에 연결 되기 전에는 IDE에 프로그램에 대 한 간단한 설명만 필요 합니다. 이 정보는 프로그램 노드에서 가져올 수 있습니다. 프로그램이에 연결 되 면 IDE는 프로그램에서 실행 중인 모든 스레드의 목록과 같은 보다 자세한 정보를 표시 합니다. 이 정보는 프로그램 자체에서 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램](../../extensibility/debugger/programs.md)
 - [프로세스](../../extensibility/debugger/processes.md)
 - [디버그 엔진](../../extensibility/debugger/debug-engine.md)

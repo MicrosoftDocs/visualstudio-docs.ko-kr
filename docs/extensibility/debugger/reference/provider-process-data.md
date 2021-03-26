@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a6c48c87f92fde487b9a008c5db45f75eb026f83
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221992"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079516"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 이 구조는 컴퓨터에서 실행 되는 프로세스에 대 한 정보를 제공 합니다.
@@ -44,7 +44,7 @@ public struct PROVIDER_PROCESS_DATA {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `Fields`\
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) 열거형의 플래그 조합으로, 입력 된 필드를 나타냅니다.
 
@@ -64,7 +64,7 @@ public struct PROVIDER_PROCESS_DATA {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)
 - [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
 - compatibility warnings, turning off
 ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae293f92d8de3aec2137f26999a3315bb5dc5c08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7bbf2f01b2fb82e3bbb640eba5c44f99f2b7a53
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074901"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>방법: 소스 제어 플러그 인에 대 한 호환성 경고 해제
 
@@ -44,6 +44,6 @@ ms.locfileid: "99880738"
 
      재진입 (기능)을 지 원하는 것이 가장 좋습니다. 이렇게 `SCC_CAP_REENTRANT` 하면이 경고가 제거 됩니다. 그러나이 지원을 사용할 수 없는 경우 이러한 레지스트리 항목을 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [기능 플래그](../extensibility/capability-flags.md)
