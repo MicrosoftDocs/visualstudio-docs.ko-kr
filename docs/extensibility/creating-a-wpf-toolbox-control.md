@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dccdeb09a938b3b0bbbab803faeed538001b825
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851441"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089253"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF 도구 상자 컨트롤 만들기
 
@@ -33,7 +33,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 1. 이라는 VSIX 프로젝트를 만듭니다 `MyToolboxControl` . **새 프로젝트** 대화 상자에서 "vsix"를 검색 하 여 vsix 프로젝트 템플릿을 찾을 수 있습니다.
 
-2. 프로젝트가 열리면 이라는 **WPF 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `MyToolboxControl` . **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **WPF 도구 상자 컨트롤** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolboxControl.cs* 로 변경 합니다.
+2. 프로젝트가 열리면 이라는 **WPF 도구 상자 컨트롤** 항목 템플릿을 추가 합니다 `MyToolboxControl` . **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **WPF 도구 상자 컨트롤** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolboxControl* 로 변경 합니다.
 
     이제 솔루션에는 사용자 정의 컨트롤, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **도구 상자** 에 컨트롤을 추가 하는 VisualStudio 및 배포를 위한 VSIX 매니페스트에 **ToolboxControl** 자산 항목이 포함 되어 있습니다.
 
@@ -57,9 +57,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 ## <a name="renaming-the-control"></a>컨트롤 이름 바꾸기
 
- 기본적으로 컨트롤은 **MyToolboxControl MyToolboxControl** 이라는 그룹의 **MyToolboxControl** 로 **도구 상자** 에 표시 됩니다. 이러한 이름은 *MyToolboxControl.xaml.cs* 파일에서 변경할 수 있습니다.
+ 기본적으로 컨트롤은 **MyToolboxControl MyToolboxControl** 이라는 그룹의 **MyToolboxControl** 로 **도구 상자** 에 표시 됩니다. 이러한 이름은 *MyToolboxControl* 파일에서 변경할 수 있습니다.
 
-1. 코드 보기에서 *MyToolboxControl.xaml.cs* 을 엽니다.
+1. 코드 보기에서 *MyToolboxControl* 을 엽니다.
 
 2. 클래스를 찾아 `MyToolboxControl` TestControl로 이름을 바꿉니다. 이 작업을 수행 하는 가장 빠른 방법은 클래스 이름을 바꾼 다음 상황에 맞는 메뉴에서 **이름 바꾸기** 를 선택 하 고 단계를 완료 하는 것입니다. **이름 바꾸기** 명령에 대 한 자세한 내용은 [이름 바꾸기 리팩터링 (c #)](../ide/reference/rename.md)을 참조 하세요.
 

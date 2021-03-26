@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91e61c2fc125829d3c9dacf942635021b8e3886
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1bd22a779cd0a474b5df03d2315402dbe1a25239
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149719"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081518"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 이 인터페이스를 사용 하면 세션 디버그 관리자 (SDM)가 프로세스에 연결 하거나 프로세스에서 분리 하는 프로세스를 알릴 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProcessEx2 : IUnknown
@@ -45,7 +45,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugProcessEx2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[연결](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|현재 세션에서 프로세스를 디버깅 하 고 있음을 프로세스에 알립니다.|
 |[분리](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|세션에서 프로세스를 더 이상 디버깅 하지 않음을 프로세스에 알립니다.|
@@ -61,6 +61,6 @@ IDebugProcessEx2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

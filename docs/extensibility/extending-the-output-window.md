@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075044"
 ---
 # <a name="extend-the-output-window"></a>출력 창 확장
 **출력** 창은 읽기/쓰기 텍스트 창의 집합입니다. Visual Studio에는 **빌드, 빌드** 에 대 한 메시지를 전달 하는 프로젝트, 및에서  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 대 한 메시지를 전달 하는 일반적인를 비롯 한 기본 제공 창이 있습니다. 프로젝트는 인터페이스 메서드를 통해 **빌드** 창에 대 한 참조를 자동으로 가져오며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> , Visual Studio는 서비스를 통해 **일반** 창에 직접 액세스할 수 있도록 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 합니다. 기본 제공 창 외에도 고유한 사용자 지정 창을 만들고 관리할 수 있습니다.
@@ -35,14 +35,14 @@ ms.locfileid: "99961770"
 
     2. EnvDTE80
 
-3. *TestOutput.cs* 에서 다음 using 문을 추가 합니다.
+3. *Testoutput .cs* 에서 다음 using 문을 추가 합니다.
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. *TestOutput.cs* 에서 메서드를 삭제 `ShowMessageBox` 합니다. 다음 메서드 스텁을 추가 합니다.
+4. *Testoutput .cs* 에서 메서드를 삭제 `ShowMessageBox` 합니다. 다음 메서드 스텁을 추가 합니다.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

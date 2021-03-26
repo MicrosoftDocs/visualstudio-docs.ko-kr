@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68a16d544147ca95512f8b6064d2b9712b26ed64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131c04d1025885c59a884220a61098b2c85dd5a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969024"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079152"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 디렉터리 추가
 다음 코드 예제에서는 **새 항목 추가** 대화 상자에 대 한 새 디렉터리 집합을 등록 하는 방법을 보여 줍니다. **새 항목 추가** 대화 상자의 디렉터리는 각 프로젝트 마다 다릅니다. 따라서 디렉터리는 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects** 에 있는 **Projects** 하위 키 아래에 등록 됩니다.
@@ -56,7 +56,7 @@ NoRemove Projects
 
  프로젝트 하위 형식을 프로그래밍 하 여 기존 프로젝트를 확장할 수도 있습니다. 프로젝트 하위 유형을 사용 하면 새 프로젝트 유형을 작성 하지 않고 프로젝트를 확장할 수 있습니다. 프로젝트 하위 형식에 대 한 자세한 내용은 [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)
 - [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [새 프로젝트 대화 상자에 디렉터리 추가](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

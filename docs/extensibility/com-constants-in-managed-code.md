@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 448c87bfff021db3df8f72f2f5a42c78cd6ef197
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913103"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089734"
 ---
 # <a name="com-constants-in-managed-code"></a>관리 코드의 COM 상수
 MPF (관리 되는 패키지 프레임 워크)는 일부 표준 COM 상수를 관리 코드에서 사용할 수 있도록 합니다. 이러한 상수는 참조에 대해 아래에 나열 되어 있습니다.
@@ -128,5 +128,5 @@ MPF (관리 되는 패키지 프레임 워크)는 일부 표준 COM 상수를 �
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [오류 처리 및 반환 값](../extensibility/error-handling-and-return-values.md)

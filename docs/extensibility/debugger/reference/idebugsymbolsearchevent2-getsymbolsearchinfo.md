@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f03562f3370268f720b2d8053bbd6a2979f6a19
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 18ca042250d532fe886ac969df5a09bd5d1a49f1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081245"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 기호 로드 프로세스에 대 한 결과를 검색 하기 위해 이벤트 처리기에 의해 호출 됩니다.
@@ -63,7 +63,7 @@ int GetSymbolSearchInfo(
 ## <a name="remarks"></a>설명
  모듈에 대 한 디버깅 기호를 로드 하려고 시도한 후 처리기가 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) 이벤트를 수신 하면 처리기는 thismethod를 호출 하 여 해당 load의 결과를 확인할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

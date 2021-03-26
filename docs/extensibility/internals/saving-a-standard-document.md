@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1864ec689c1068b97775ca1a8bddbd390e7b43a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958455"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080894"
 ---
 # <a name="saving-a-standard-document"></a>표준 문서 저장
 환경에서는 저장, 다른 이름으로 저장 및 모두 저장 명령을 처리 합니다. 사용자가 **파일** 메뉴에서 **저장**, 다른 **이름으로 저장** 또는 **모두** 저장을 선택 하거나 솔루션을 닫을 때 **모두 저장** 을 선택 하면 다음 프로세스가 발생 합니다.
@@ -58,6 +58,6 @@ ms.locfileid: "99958455"
 
 2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>( `pszMkDocumentNew` , `punkWindowFrame` ) 메서드를 호출 하 여 문서를 새 계층으로 전송 합니다. 다른 이름으로 저장 명령을 수행 하는 계층은이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)

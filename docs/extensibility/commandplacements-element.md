@@ -10,17 +10,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c43f2063062d96b8ab635e3d9786aead4b4c150
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3547d1c5b94285ce113b3a3c112568aa5a9a5f65
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889046"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089604"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 요소
 Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacements 그룹화를 그룹화 합니다.
@@ -69,6 +69,6 @@ Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacement
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CommandPlacement 요소](../extensibility/commandplacement-element.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

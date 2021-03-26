@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942908"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089916"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -360,7 +360,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 이름 | Type | 데이터 | Description |
+| Name | 형식 | 데이터 | Description |
 | --- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
@@ -373,7 +373,7 @@ VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 �
 
 레지스트리를 다음 두 값으로 채웁니다.
 
-| 이름 | Type | 데이터 | Description |
+| Name | 형식 | 데이터 | Description |
 |--- | --- | --- | --- |
 | 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
 | 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |

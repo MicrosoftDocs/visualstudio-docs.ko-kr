@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint unbound events
 - breakpoint bound events
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97ac7dc9afbd3b740c95a7e76a30836e938eaeaf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6e1a6acdee89be293ab4a6dc72a3d4fd4336d88
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091411"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>중단점이 바인딩 또는 바인딩 해제 되는 경우
 [IDebugPendingBreakpoint2:: CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 메서드를 호출 하는 시점에 중단점을 바인딩할 수 없는 경우 중단점의 바인딩 시간과 생성 시간이 다릅니다.
@@ -36,5 +36,5 @@ ms.locfileid: "99968504"
 
 5. [IDebugBreakpointBoundEvent2:: GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) [IDebugBreakpointBoundEvent2:: EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) 메서드는 바인딩된 중단점을 확인 하 고 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

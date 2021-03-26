@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_EXECUTED field, Task class [.NET Framework debug engines]
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bdc6344c3257611664fc792658dcf6508e91bfd
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f035d0a55c1884deceb1a8312ff74fe0dd615bfb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223292"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079308"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED 필드
 작업이 실행되고 있지만 완료되지 않았습니다.
@@ -36,5 +36,5 @@ ms.locfileid: "102223292"
 ## <a name="remarks"></a>설명
  [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에이 값이 포함 되어 있으면 <xref:System.Threading.Tasks.Task.Status%2A> 속성은을 반환 합니다 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

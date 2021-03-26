@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff54e24408577ba8bfbf553a5c641eab2d15814
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2c10b310569a412025fd114f7818734106bc18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079061"
 ---
 # <a name="add-project-and-project-item-templates"></a>프로젝트 및 프로젝트 항목 템플릿 추가
 사용자 고유의 프로젝트 형식을 만들 때 표준 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경) 대화 상자를 사용 하 여 새 프로젝트 및 프로젝트 항목을 추가할 수 있도록 지원 해야 합니다. 다음 항목에서는 프로젝트 및 프로젝트 항목을 추가 하는 여러 가지 방법에 대해 설명 합니다.

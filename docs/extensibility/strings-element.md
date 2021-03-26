@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0bd9ad9b8059eb7fd566c1e0c26a938af6d18b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848014"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089903"
 ---
 # <a name="strings-element"></a>Strings 요소
 Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 합니다. 다른 모든 자식 요소는 선택 사항입니다. ' & ' 및 ' < '와 같은 잘못 된 XML 문자는 엔터티 (' &amp; ' 및 ' ' 등)로 코딩 되어야 합니다 &lt; .
@@ -41,7 +41,7 @@ Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 �
 
 |attribute|Description|
 |---------------|-----------------|
-|language|선택 사항입니다. Language = "."|
+|언어|선택 사항입니다. Language = "."|
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -62,5 +62,5 @@ Strings 요소는 **Buttontext** 자식 요소를 하나 이상 포함 해야 �
 |[Menu 요소](../extensibility/menu-element.md)|단일 메뉴 항목을 정의 합니다.|
 |[Combo 요소](../extensibility/combo-element.md)|콤보 상자에 표시 되는 명령을 정의 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

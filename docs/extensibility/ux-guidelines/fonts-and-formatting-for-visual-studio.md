@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a55ad867e91a79689a1983837f5ba0030e10a35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952033"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089929"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio의 글꼴 및 서식 지정
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 환경 글꼴
@@ -391,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>기울임꼴
  Visual Studio에서는 기울임꼴 또는 굵은 기울임꼴 텍스트를 사용 하지 않습니다.
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>색
 
 - 파랑은 하이퍼링크 (탐색 및 명령) 용으로 예약 되어 있으며 방향에 사용 하면 안 됩니다.
 
@@ -483,7 +483,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 굵게 표시 되는 환경 글꼴 텍스트는 기본 선 높이 간격과 안쪽 여백을 따라야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [글꼴 (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [사용자 인터페이스 텍스트 (Windows)](/windows/desktop/uxguide/text-ui)

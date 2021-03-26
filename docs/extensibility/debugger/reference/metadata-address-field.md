@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96171b41f8788da0772ac2657c9a10d84af96b94
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 32e5db3a4ad197d66d530487eb50dd1b47ac0199
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222421"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091515"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -41,7 +41,7 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
 
 `tokField`\
 필드 토큰의 ID입니다.
@@ -60,7 +60,7 @@ public struct METADATA_ADDRESS_FIELD {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 688c7de73c1a935ed6f7a30c6d956c7db97bdc6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2509f2f6f9da91c3df60d6b041d5ebb6bdd367b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906115"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079009"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>프로젝트 및 편집기에 대 한 추가 소스 제어 지침
 소스 제어를 지원 하기 위해 프로젝트와 편집기에서 준수 해야 하는 여러 가지 지침이 있습니다.
@@ -25,7 +25,7 @@ ms.locfileid: "99906115"
 ## <a name="guidelines"></a>지침
  프로젝트 또는 편집기에서 소스 제어를 지원 하려면 다음을 수행 해야 합니다.
 
-|영역|Project|편집기|세부 정보|
+|Area|Project|편집기|세부 정보|
 |----------|-------------|------------|-------------|
 |파일의 전용 복사본|X||환경에서는 파일의 전용 복사본을 지원 합니다. 즉, 프로젝트에 참여 하는 각 사용자에 게는 해당 프로젝트의 파일에 대 한 자체 개인 사본이 있습니다.|
 |ANSI/유니코드 지 속성|X|X|지 속성 코드를 작성 하는 경우 대부분의 소스 제어 프로그램에서 현재 유니코드를 지원 하지 않으므로 ANSI 폼에 파일을 저장 합니다.|
@@ -35,5 +35,5 @@ ms.locfileid: "99906115"
 |개체 및 속성을 예측 가능한 순서로 유지|X|X|병합을 용이 하 게 하기 위해 파일을 알파벳 순서와 같은 예측 가능한 순서로 유지 합니다.|
 |다시 로드|X|X|디스크에서 파일을 변경 하면 편집기에서 파일을 다시 로드할 수 있어야 합니다. 소스 제어에 참여 하는 경우 환경에서 구현을 호출 하 여 데이터를 다시 로드 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> . 가장 어려운 다시 로드 사례는 IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 를 호출 하 고 정보를 처리 하는 경우 체크 아웃이 수행 되는 경우입니다. 그러나이 경우에는 다시 로드 코드를 실행할 수 있어야 합니다.<br /><br /> 환경에서 프로젝트 파일을 자동으로 다시 로드 합니다. 그러나 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> 중첩 된 프로젝트 파일 다시 로드를 지원 하기 위해 프로젝트가 중첩 된 계층 구조를 포함 하는 경우에는 프로젝트를 구현 해야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 지원](../../extensibility/internals/supporting-source-control.md)

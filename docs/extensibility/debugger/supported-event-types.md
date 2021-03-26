@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf2e154d5803324161e073edbd74e049c0897ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 883c9fd51cc4dfc4f2cc2f996d24c0722478505f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079412"
 ---
 # <a name="supported-event-types"></a>지원 되는 이벤트 유형
 Visual Studio 디버깅은 현재 다음 이벤트 유형을 지원 합니다.
@@ -57,15 +57,15 @@ Visual Studio 디버깅은 현재 다음 이벤트 유형을 지원 합니다.
 
 |이벤트|IDebugProgram2|IDebugThread2|이벤트 중지|
 |-----------|--------------------|-------------------|---------------------|
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|필수|필수|yes|
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|필수|필수|yes|
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|필수|필수|예|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용되지 않음|허용되지 않음|아니요|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용되지 않음|허용되지 않음|아니요|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용되지 않음|허용되지 않음|No|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용되지 않음|허용되지 않음|No|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|필수|필수|yes|
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|가능 여부|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|필수|필수|yes|
@@ -73,16 +73,16 @@ Visual Studio 디버깅은 현재 다음 이벤트 유형을 지원 합니다.
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|필수|필수|yes|
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|필수|필수|yes|
 |[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|가능 여부|
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|필수|허용 되지만 필요 하지 않음|아니요|
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|필수|허용 되지만 필요 하지 않음|아니요|
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|필수|허용 되지만 필요 하지 않음|아니요|
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|필수|허용 되지만 필요 하지 않음|아니요|
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|필수|허용 되지만 필요 하지 않음|아니요|
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|필수|허용 되지만 필요 하지 않음|No|
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|필수|허용 되지만 필요 하지 않음|No|
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|필수|허용 되지만 필요 하지 않음|No|
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|필수|허용 되지만 필요 하지 않음|No|
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|필수|허용 되지만 필요 하지 않음|No|
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
 |IDebugStopCompleteEvent2|필수|필수|yes|
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|필수|필수|yes|
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|아니요|
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|No|
 |[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|필수|필수|예|
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|필수|필수|예|
 |[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|허용 되지만 필요 하지 않음|허용 되지만 필요 하지 않음|예|

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f80799961ccce4b3492b46801b1917055742666
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 902418aeb18c149b0732e972a34ed89b56bb22ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164450"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081141"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 스레드를 일시 중단 합니다.
@@ -52,6 +52,6 @@ HRESULT Suspend (
 
  이 메서드에 대 한 각 호출에 대해 나중에 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 메서드를 호출 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [다시 시작](../../../extensibility/debugger/reference/idebugthread2-resume.md)

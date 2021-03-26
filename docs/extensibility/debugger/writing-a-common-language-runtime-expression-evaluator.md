@@ -9,17 +9,17 @@ helpviewer_keywords:
 - expression evaluation, samples
 - debugging [Debugging SDK], expression evaluators tutorial
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7d7e4ab292793da5c4abe04233b027981ba3fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 658158785d8f8a9376f5357ae2b869f6ad2e2271
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968491"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091398"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>공용 언어 런타임 식 계산기 작성
 > [!IMPORTANT]
@@ -46,5 +46,5 @@ ms.locfileid: "99968491"
 
  [형식 시각화 도우미 및 사용자 지정 뷰어 구현](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) 형식 시각화 도우미 및 사용자 지정 뷰어를 지 원하는 구성 요소에서 구현 해야 하는 인터페이스에 대해 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

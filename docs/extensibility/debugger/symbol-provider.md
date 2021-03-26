@@ -8,17 +8,17 @@ helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae3cd813b79eca1fe64328e890f4a37cc03b0d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 132e3c15eed86c9008e49b74b6da6e5da5a3ce33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960665"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079386"
 ---
 # <a name="symbol-provider"></a>기호 공급자
 식 계산기 구현은 변수와 식을 계산 하기 위해 언어 컴파일러에 의해 생성 된 기호화 된 디버그 정보에 액세스 해야 합니다. 기호 처리기 라고도 하는 SP (기호 공급자)의 인터페이스를 사용 하 여이를 수행 합니다.
@@ -30,5 +30,5 @@ ms.locfileid: "99960665"
 
  사용자 지정 디버그 엔진을 사용 하 여 SP를 사용 하는 경우 디버그 엔진의 필요에 따라 적합 한 것 처럼 SP를 구현할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)

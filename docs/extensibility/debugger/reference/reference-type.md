@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91a77c73d689322faa22ea9ad81c8aacf0616d07
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e38d23c855af098f2c32e60c1e3fa7d8fece5502
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225281"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079451"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
 참조 형식을 지정 합니다.

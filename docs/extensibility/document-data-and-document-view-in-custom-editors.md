@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391bec513f1f6d32d7ff2f87d70abdbf491ab8be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968296"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091242"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>사용자 지정 편집기의 문서 데이터 및 문서 보기
 사용자 지정 편집기는 문서 데이터 개체와 문서 뷰 개체의 두 부분으로 구성 됩니다. 이름에서 알 수 있듯이 document data 개체는 표시 될 텍스트 데이터를 나타냅니다. 마찬가지로 문서 보기 개체 (또는 "보기")는 문서 데이터 개체를 표시할 하나 이상의 창을 나타냅니다.
@@ -38,7 +38,7 @@ ms.locfileid: "99968296"
 
  사용자 지정 편집기에 대 한 보기를 만드는 두 가지 옵션이 있습니다. 하나는 ActiveX 컨트롤이 나 문서 데이터 개체를 사용 하 여 창에서 뷰를 호스트 하는 내부 활성화 모델입니다. 두 번째는 뷰가에서 호스팅되고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 창 명령을 처리 하도록 구현 되는 단순화 된 포함 모델입니다. 내부 활성화 모델에 대 한 자세한 내용은 [내부 활성화](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)를 참조 하십시오. 단순화 된 포함 모델에 대 한 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [다중 문서 뷰 지원](../extensibility/supporting-multiple-document-views.md)
 - [단순화 포함](../extensibility/simplified-embedding.md)

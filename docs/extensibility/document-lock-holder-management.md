@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c80c2969676de25575ec75c6976224f1cd0160e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88e66ed3b0a5434f4d875bf941e3eeffb8adc092
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968244"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091190"
 ---
 # <a name="document-lock-holder-management"></a>문서 잠금 보유자 관리
 
@@ -45,7 +45,7 @@ RT (실행 중인 문서 테이블)는 열려 있는 문서 및 편집 잠금 �
 
 프로그래밍 방식으로 코드 파일을 수정 하는 UI 디자이너에서 두 개 이상의 파일을 변경 하는 경우가 많습니다. 이러한 경우, <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> 메서드는 **다음 항목에 대 한 변경 내용을 저장 하 시겠습니까?** 대화 상자를 사용 하 여 하나 이상의 문서를 저장 하는 작업을 처리 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [문서 테이블 실행](../extensibility/internals/running-document-table.md)
 - [지 속성 및 실행 중인 문서 테이블](../extensibility/internals/persistence-and-the-running-document-table.md)

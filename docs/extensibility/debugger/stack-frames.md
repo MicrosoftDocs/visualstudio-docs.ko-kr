@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97adb5d453e147c45ae1f268a20a2d3091286508
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0c54292d79b119fc36c9eff3f0f3519c92a4205
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960730"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079397"
 ---
 # <a name="stack-frames"></a>스택 프레임
 디버거 아키텍처에서 *스택 프레임* 은 다음과 같습니다.
@@ -32,7 +32,7 @@ ms.locfileid: "99960730"
 
 - 는 스레드 실행의 결과로 일반적으로 디버그 엔진 (DE) 또는 가상 머신에서 만든 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) 인터페이스로 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md)
 - [디버거 개념](../../extensibility/debugger/debugger-concepts.md)
 - [디버그 엔진](../../extensibility/debugger/debug-engine.md)

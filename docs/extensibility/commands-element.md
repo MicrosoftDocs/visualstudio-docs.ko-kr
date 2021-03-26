@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Commands element (VSCT XML schema)
 - VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 671e855a31af17310fdab58689d8775b490cb93a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887434"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089591"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션에는 메뉴, 그룹, 단추, combos 및 비트맵과 같이 최대 5 개의 하위 섹션이 포함 될 수 있습니다.
@@ -90,6 +90,6 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 <Commands>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

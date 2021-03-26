@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5dd6bd027a9938b7dce855742cc351180498bb8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081167"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 현재 명령 포인터를 지정 된 코드 컨텍스트로 설정 합니다.
@@ -52,7 +52,7 @@ int SetNextStatement (
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 다음 표에서는 다른 가능한 값을 보여 줍니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|다음 문은 프레임 스택에서 더 깊은 스택 프레임 안에 있을 수 없습니다.|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|다음 문은 스택의 프레임에 연결 되지 않습니다.|
@@ -61,7 +61,7 @@ int SetNextStatement (
 ## <a name="remarks"></a>설명
  명령 포인터는 실행할 다음 명령 또는 문을 나타냅니다. 예를 들어이 메서드는 소스 코드 줄을 다시 시도 하거나 다른 함수에서 계속 실행 하도록 강제 하는 데 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
