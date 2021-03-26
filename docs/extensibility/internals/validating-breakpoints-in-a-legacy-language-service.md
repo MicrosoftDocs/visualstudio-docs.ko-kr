@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 593663c4906cc669c52336ffe6689e8de9fcde48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86029300c34e111344157bf39a15dceab8c1b77a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941595"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085795"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>레거시 언어 서비스의 중단점 유효성 검사
 중단점은 프로그램 실행이 디버거에서 실행 되는 동안 특정 지점에서 중지 되어야 함을 나타냅니다. 편집기는 중단점에 대해 유효한 위치를 구성 하는 항목에 대해 알지 못하므로 사용자는 소스 파일의 모든 줄에 중단점을 설정할 수 있습니다. 디버거를 실행 하면 표시 된 모든 중단점 (보류 중인 중단점 이라고 함)이 실행 중인 프로그램의 적절 한 위치에 바인딩됩니다. 중단점의 유효성을 검사 하 여 유효한 코드 위치를 표시 하는지 확인 합니다. 예를 들어 소스 코드의 해당 위치에는 코드가 없기 때문에 주석에서 중단점을 사용할 수 없습니다. 디버거가 잘못 된 중단점을 사용 하지 않도록 설정 합니다.
@@ -100,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221706"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085678"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다. 예를 들어이 함수는 파일을 복사 하지 않고 공용 헤더 파일을 현재 프로젝트로 가져올 수 있습니다. 파일의 반환 배열에는 `lplpFileNames` 사용자가 IDE 프로젝트에 추가 하려는 파일 목록이 포함 되어 있습니다.
@@ -54,7 +54,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|파일이 성공적으로 배치 되어 프로젝트에 추가 되었습니다.|
 |SCC_I_OPERATIONCANCELED|작업을 취소 했지만 아무런 효과가 없습니다.|
@@ -72,6 +72,6 @@ SCCRTN SccAddFromScc (
 > [!NOTE]
 > VSSCI API의 초기 버전에서는 추가 된 파일에 대 한 대상 프로젝트를 지정 하는 방법을 제공 하지 않았습니다. 이를 수용 하기 위해 `lplpFIleNames` 매개 변수의 의미 체계가 출력 매개 변수가 아니라 in/out 매개 변수로 만들기 위해 향상 되었습니다. 단일 파일만 지정 하는 경우, 즉 = 1이 가리키는 값은 `lpnFiles` 의 첫 번째 요소에 `lplpFileNames` 대상 폴더가 포함 됩니다. 이러한 새 의미 체계를 사용 하기 위해 IDE는 `SccSetOption` `nOption` 매개 변수를로 설정 하 여 함수를 호출 합니다 `SCC_OPT_SHARESUBPROJ` . 소스 제어 플러그 인이 의미 체계를 지원 하지 않는 경우를 반환 `SCC_E_OPTNOTSUPPORTED` 합니다. 이렇게 하면 **소스 제어에서 추가** 기능을 사용할 수 없습니다. 플러그 인에서 **원본 제어에서 추가** 기능 ()을 지 원하는 경우에는 `SCC_CAP_ADDFROMSCC` 새 의미 체계를 지원 하 고를 반환 해야 합니다 `SCC_I_SHARESUBPROJOK` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

@@ -1,5 +1,5 @@
 ---
-description: 이 구조는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.
+description: BUILT_TYPE 구조는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 00a031d02bba7ffcc1dca6f2cf73cfceeed04838
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096579"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 이 구조는 메타 데이터에서 가져온 필드 형식에 대 한 정보를 지정 합니다.
@@ -64,7 +64,7 @@ public struct BUILT_TYPE {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5af4c0efe53625063d4bb714f3d323bef28c5954
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170974"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096618"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 문자열의 배열을 설명 하는 구조체입니다.
@@ -61,6 +61,6 @@ struct BSTR_ARRAY {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

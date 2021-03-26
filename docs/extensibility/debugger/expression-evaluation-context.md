@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127746b06ef09496ef8f50aa874ff32e2f983f65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 249510349d831f4f00578e36200f0d236d83ef59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921538"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096839"
 ---
 # <a name="expression-evaluation-context"></a>식 계산 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 **식 계산 컨텍스트** 는 다음과 같습니다.
@@ -30,6 +30,6 @@ ms.locfileid: "99921538"
 
      `BSTR`및 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스가 제공 되는 경우 디버그 엔진 (DE)은 식을 구문 분석 하 여 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스를 만들 수 있습니다. 인터페이스가 지정 된 경우 `IDebugExpression2` DE는 동기 또는 비동기 식 계산을 통해 값을 가져올 수 있습니다. 이 값은 변수 또는 인수의 이름 및 형식과 함께 표시를 위해 IDE에 전송 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [식 계산 인터페이스](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [디버거 컨텍스트](../../extensibility/debugger/debugger-contexts.md)

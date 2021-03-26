@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852624"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057080"
 ---
 # <a name="context-parameters"></a>컨텍스트 매개 변수
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 마법사를 **새 프로젝트**, **새 항목 추가** 또는 **하위 프로젝트 추가** 대화 상자에 추가할 수 있습니다. 추가 된 마법사는 **파일** 메뉴 또는 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 사용할 수 있습니다. IDE는 컨텍스트 매개 변수를 마법사의 구현에 전달 합니다. 컨텍스트 매개 변수는 IDE에서 마법사를 호출할 때 프로젝트의 상태를 정의 합니다.
@@ -60,10 +60,10 @@ ms.locfileid: "99852624"
 | `InstallationDirectory` | 설치의 디렉터리 경로 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 입니다. |
 | `Silent` | **마침** 을 클릭 하면 마법사가 자동으로 실행 되어야 하는지 여부 ()를 나타내는 부울입니다 `TRUE` . |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)
-- [마법사로](../../extensibility/internals/wizards.md)
+- [마법사](../../extensibility/internals/wizards.md)
 - [마법사 (.vsz) 파일](../../extensibility/internals/wizard-dot-vsz-file.md)
 - [마법사 시작에 대 한 컨텍스트 매개 변수](/previous-versions/tz690efs(v=vs.140))

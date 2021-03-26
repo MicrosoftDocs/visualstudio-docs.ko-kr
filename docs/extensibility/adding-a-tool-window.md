@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951435"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085522"
 ---
 # <a name="add-a-tool-window"></a>도구 창 추가
 
@@ -34,7 +34,7 @@ ms.locfileid: "99951435"
 
 - 도구 창에 대 한 기본 위치를 설정 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
 Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -47,7 +47,7 @@ Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으
 
 ## <a name="add-a-control-to-the-tool-window"></a>도구 창에 컨트롤 추가
 
-1. 기본 컨트롤을 제거 합니다. *Firsttoolwindowcontrol* 을 열고 **Click Me** 를 삭제 합니다. 단추를 선택합니다.
+1. 기본 컨트롤을 제거 합니다. *Firsttoolwindowcontrol* 을 열고 **Click Me** 를 삭제 합니다. 클릭합니다.
 
 2. **도구 상자** 에서 **모든 WPF 컨트롤** 섹션을 확장 하 고 **미디어 요소** 컨트롤을 **firsttoolwindowcontrol** 폼으로 끕니다. 컨트롤을 선택 하 고 **속성** 창에서이 요소 이름을 **mediaElement1** 로 선택 합니다.
 
@@ -117,7 +117,7 @@ Visual studio SDK는 Visual Studio 설치 프로그램에서 선택적 기능으
     </Button>
     ```
 
-3. *FirstToolWindowCommand.cs* 를 열고 클래스에서 기존 필드 바로 뒤에 다음 줄을 추가 합니다.
+3. *Firsttoolwindowcommand .cs* 를 열고 클래스에서 기존 필드 바로 뒤에 다음 줄을 추가 합니다.
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>도구 창 및 도구 모음 인스턴스화
 **파일 열기** 대화 상자를 호출 하 고 선택한 미디어 파일을 재생 하는 메뉴 명령과 도구 모음을 추가 합니다.
 
-1. *FirstToolWindow.cs* 를 열고 다음 지시문을 추가 합니다 `using` .
+1. *FirstToolWindow* 를 열고 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,7 +188,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. 메뉴 명령을 도구 모음에 추가 합니다. FirstToolWindowCommand.cs 클래스에서 다음 using 지시문을 추가 합니다.
+6. 메뉴 명령을 도구 모음에 추가 합니다. FirstToolWindowCommand .cs 클래스에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Windows.Forms;
@@ -255,9 +255,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>도구 창에 대 한 기본 위치 설정
 
-그런 다음 도구 창에 대 한 IDE에서 기본 위치를 지정 합니다. 도구 창에 대 한 구성 정보는 *FirstToolWindowPackage.cs* 파일에 있습니다.
+그런 다음 도구 창에 대 한 IDE에서 기본 위치를 지정 합니다. 도구 창에 대 한 구성 정보는 *Firsttoolwindowpackage .cs* 파일에 있습니다.
 
-1. *FirstToolWindowPackage.cs* 에서 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 형식을 생성자에 전달 하는 클래스의 특성을 찾습니다. 기본 위치를 지정 하려면 다음 예제와 같이 생성자에 더 많은 매개 변수를 추가 해야 합니다.
+1. *Firsttoolwindowpackage .cs* 에서 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 형식을 생성자에 전달 하는 클래스에서 특성을 찾습니다. 기본 위치를 지정 하려면 다음 예제와 같이 생성자에 더 많은 매개 변수를 추가 해야 합니다.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -282,5 +282,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
     Chime 소리가 들려야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

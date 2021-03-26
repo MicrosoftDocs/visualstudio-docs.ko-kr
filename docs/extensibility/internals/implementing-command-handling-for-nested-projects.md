@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23271596353ae289e1b7507b90b40095ca82c15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fad154fd3739369b0ccf7e5d896d1b9f1728c68e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839887"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085782"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>중첩된 프로젝트에 대한 명령 처리 구현
 IDE는를 통해 전달 되는 명령 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 중첩 된 프로젝트에 전달 하거나 부모 프로젝트가 명령을 필터링 하거나 재정의할 수 있습니다.
@@ -53,7 +53,7 @@ IDE는를 통해 전달 되는 명령 <xref:Microsoft.VisualStudio.Shell.Interop
 
     부모 프로젝트는 명령을 자식 프로젝트로 라우팅할 필요가 없습니다. IDE에서이 작업을 수행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)
 - [프로젝트 중첩](../../extensibility/internals/nesting-projects.md)

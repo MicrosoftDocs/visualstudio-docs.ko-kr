@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1baef0936cfe37d09fb8c65f2675bb9f4208f45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305bf0e5463fd4e030f2ce3e9f7fa6eca99bfe20
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963408"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085743"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 명령 테이블(.Vsct) 파일
 명령 테이블 구성 파일은 VSPackage에 포함 된 명령 집합을 설명 하는 텍스트 파일입니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]명령 테이블 (vsct) 컴파일러는 XML 기반 구성 파일 (.cvsct 파일)을 이진 명령 테이블 출력 (.cto) 파일로 컴파일합니다. 이러한 파일은 CTO (명령 테이블) 컴파일러를 사용 하 여 생성 하는 것과 동일 합니다. cto 구성 파일을 컴파일합니다. 그러나 xml 기반. vsct 파일에는 XML 편집기 및 XML IntelliSense와 같은 몇 가지 이점이 있습니다.

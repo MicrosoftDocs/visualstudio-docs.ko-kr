@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d08169b196e01b5e2a7effdfe54829d17a970ef3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169186"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076513"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 이 인터페이스는 실행 중인 프로세스와 해당 프로그램을 나타냅니다. 이 인터페이스는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스의 여러 메서드를 대체 하는 것으로 존재 합니다. 프로세스의 모든 프로그램에 대 한 제어를 제공 합니다.
@@ -26,7 +26,7 @@ ms.locfileid: "102169186"
 > [!NOTE]
 > [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)및 [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md) 메서드는 더 이상 사용 되지 않으며 더 이상 사용 되지 않습니다. 대신 인터페이스에 해당 하는 메서드를 사용 `IDebugProcess3` 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProcess3 : IDebugProcess2
@@ -62,7 +62,7 @@ IDebugProcess3 : IDebugProcess2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

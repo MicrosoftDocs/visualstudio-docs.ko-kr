@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fc7f8ba4d3939424e634f37ede78e92496c9eac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aeee5ed91eca7666d08dfd08ec02b850a7739db9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930501"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085535"
 ---
 # <a name="control-events"></a>컨트롤 이벤트
 프로그램의 제어 된 실행 중에 이벤트를 전송 해야 합니다. 모든 이벤트는 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 인터페이스를 사용 하 여 전송 되며 [IDebugEvent2:: getattributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 메서드를 구현 해야 하는 특성이 있습니다.
@@ -39,5 +39,5 @@ ms.locfileid: "99930501"
 
   엔진에서 문자열 스타일의 출력을 쓰려면 [IDebugOutputStringEvent2:: GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

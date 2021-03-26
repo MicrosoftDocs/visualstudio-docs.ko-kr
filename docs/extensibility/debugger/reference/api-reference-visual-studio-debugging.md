@@ -6,24 +6,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144639"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085548"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 참조(Visual Studio 디버깅)
 참조 섹션에는 API에 대 한 개념적 개요, 모든 API 요소에 대 한 구문 및 사용법을 보여 주는 가이드, 코드 예제 모음이 포함 되어 있습니다. 모든 참조는 범주별로 사전순으로 나열 됩니다.
 
  다음 표에서는 메서드에서 반환 되는 공통 값을 보여 줍니다 `HRESULT` .
 
-|Name|설명|값|
+|Name|Description|값|
 |----------|-----------------|-----------|
 |S_OK|성공했습니다.|0x00000000|
 |E_UNEXPECTED|예기치 않은 오류가 발생했습니다.|0x8000FFFF|
@@ -43,7 +43,7 @@ ms.locfileid: "102144639"
 > [!NOTE]
 > 잘못 된 또는 `NULL` [out] 매개 변수가 있으면 IDE의 작동이 중단 될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [인터페이스](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220978"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060473"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 함수
 이 함수는 소스 제어에서 현재 열려 있는 프로젝트에 파일 목록을 추가 합니다.
@@ -79,7 +79,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|프로젝트가 열려 있지 않습니다.|
 |SCC_E_OPNOTPERFORMED|에서 지정한 것과 동일한 프로젝트에 대 한 연결이 아닙니다. `lpAuxProjPath.`|
@@ -87,5 +87,5 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_NONSPECIFICERROR|알 수 없는 오류입니다.|
 |SCC_I_RELOADFILE|파일이 나 프로젝트를 다시 로드 해야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

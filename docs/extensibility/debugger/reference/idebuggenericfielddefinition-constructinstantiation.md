@@ -7,20 +7,20 @@ helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8b43bf1ccc232c0b378a6e3bd3d788519e456da9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4565077357678725a6601ac14c48cfce21ec9101
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165490"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063437"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 형식 인수 배열이 지정 된 경우 필드 인스턴스를 생성 합니다.
@@ -59,5 +59,5 @@ int ConstructInstantiation(
 ## <a name="remarks"></a>설명
  제약 조건은 확인 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

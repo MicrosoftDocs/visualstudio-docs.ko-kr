@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 1e4a250843ebbb6ab7680040e3aa296699e184ee
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 98cfb12649fe85ce9e5f6b6a51a8c61243b5e9da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144353"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096761"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 사용자가 IDE (통합 개발 환경)에서 입력할 수 있는 문자열을 기반으로 하는 데이터 중단점을 설정 하는 데 사용 됩니다.
@@ -59,7 +59,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 593e54c67e762d5ad1643f0481554fe98b5ba019
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3aba284bab3299bf6ef300f9493c20e9c0d230ee
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165477"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063450"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 매개 변수 수를 지정 하 여 형식 매개 변수를 검색 합니다.
@@ -59,5 +59,5 @@ int GetFormalTypeParams(
 ## <a name="remarks"></a>설명
  형식 매개 변수를 왼쪽에서 오른쪽 순서로 반환 합니다. 예를 들어 사전은 \<K,V> IDebugFormalGenericParameters {K, V}를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

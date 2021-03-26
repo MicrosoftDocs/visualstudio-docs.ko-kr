@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6f7933441eff3754b90385cfe62dc1314c2d1cb4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a0ab15c0f232695dbc017d80f666154e5c35a8fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153016"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065777"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 사람이 읽을 수 있는 오류 메시지를 생성할 수 있는 정보를 반환 합니다.
@@ -75,6 +75,6 @@ int GetErrorMessage(
 ## <a name="remarks"></a>설명
  오류 메시지는의 줄을 따라 포맷 해야 합니다 `"What I was doing.  %1"` . `"%1"`그런 다음는 오류 코드 (에서 반환 됨)에서 파생 된 오류 메시지와 함께 호출자에 의해 대체 됩니다 `hrErrorReason` . `pMessageType`매개 변수는 최종 오류 메시지를 표시 하는 방법을 호출자에 게 알립니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

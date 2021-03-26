@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe698d8d1b29f02ae3971fc95a66c4823f7252c7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945944"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059719"
 ---
 # <a name="launch-based-attachment"></a>시작 기반 첨부 파일
 프로그램에 대 한 시작 기반 첨부 파일은 자동입니다. 프로그램을 호스트 하는 프로세스가 SDM에 의해 시작 되 면 시작 기반 첨부 파일은 수동 첨부 파일 방법과 비슷한 경로를 따릅니다. 자세한 내용은 [프로그램에 연결](../../extensibility/debugger/attaching-to-the-program.md)을 참조 하세요.
@@ -34,6 +34,6 @@ ms.locfileid: "99945944"
 
 4. 시작 된 프로세스에 대해 새 스레드를 만들도록 SDM에 알리기 위해 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 이벤트 개체를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [필요한 이벤트 보내기](../../extensibility/debugger/sending-the-required-events.md)
 - [디버깅할 프로그램 사용](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

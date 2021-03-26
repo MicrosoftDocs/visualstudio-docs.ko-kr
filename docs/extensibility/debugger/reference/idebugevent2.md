@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f5406c70703b594236dba47539e5cc76bbe67a73
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152951"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065764"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 이 인터페이스는 중단점에서 중지와 같은 중요 한 디버그 정보와 디버깅 메시지와 같은 중요 하지 않은 정보를 모두 전달 하는 데 사용 됩니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugEvent2 : IUnknown
@@ -38,7 +38,7 @@ IDebugEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugEvent2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|이 디버그 이벤트의 특성을 가져옵니다.|
 
@@ -52,7 +52,7 @@ IDebugEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

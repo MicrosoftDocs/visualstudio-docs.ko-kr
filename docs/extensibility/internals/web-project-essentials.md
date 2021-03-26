@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886875"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085704"
 ---
 # <a name="web-project-essentials"></a>웹 프로젝트 필수 항목
 웹 프로젝트는 웹 응용 프로그램을 만듭니다. 웹 프로젝트를 사용 하 여 스마트 웹 페이지를 포함 하는 웹 응용 프로그램을 만들 수 있습니다. 스마트 웹 페이지에는 요청 시 웹 페이지를 렌더링 하는 서버측 코드가 있습니다.
 
  또는와 같은 기존 프로그래밍 언어를 사용 하 여 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 스마트 웹 페이지를 만들어 사용자 로부터 정보를 수집 및 처리 하 고 데이터베이스에 저장 하는 등의 작업을 수행할 수 있습니다.
 
-- 코드를 사용 하는 모델은 종속 소스 코드 파일을 파일 확장명이 .aspx 또는 .asmx 인 웹 페이지와 연결 합니다. 예를 들어, hello .aspx에는 종속 소스 코드 파일 hello.aspx.cs가 있을 수 있습니다.
+- 코드를 사용 하는 모델은 종속 소스 코드 파일을 파일 확장명이 .aspx 또는 .asmx 인 웹 페이지와 연결 합니다. 예를 들어, hello .aspx에는 종속 소스 코드 파일 hello.exe가 있을 수 있습니다.
 
 - 스마트 웹 페이지와 관련 된 서버 쪽 코드는 웹 사이트 기능 폴더에 있는 실행 파일로 컴파일됩니다.
 
@@ -59,5 +59,5 @@ ms.locfileid: "99886875"
 
   - 오류 표식 (빨강 물결 모양)은 항상 코드 편집기의 기본 버퍼에 만들어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 프로젝트](../../extensibility/internals/web-projects.md)

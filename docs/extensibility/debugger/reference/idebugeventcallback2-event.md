@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0fec6984ffc30c3c368193079fdabc1752f63a65
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152925"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065803"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 디버그 이벤트에 대 한 알림을 보냅니다.
@@ -82,7 +82,7 @@ int Event(
 
  모든 디버그 이벤트는 이벤트 자체가 비동기 인지 여부에 관계 없이 비동기적으로 게시 됩니다. DE가이 메서드를 호출 하는 경우 반환 값은 이벤트가 처리 되었는지 여부는 이벤트를 받았는지 여부를 나타내지 않습니다. 실제로 대부분의 경우이 메서드가 반환 될 때 이벤트가 처리 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

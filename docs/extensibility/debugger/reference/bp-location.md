@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0ee3c9246c25517c2b0bc095c4035400e43d29b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144184"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096722"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 중단점의 위치를 설명 하는 데 사용 되는 구조체의 형식을 지정 합니다.
@@ -106,7 +106,7 @@ Union 또는 멤버를 해석 하는 데 사용 되는 [BP_LOCATION_TYPE](../../
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (컨텍스트)|`string` (데이터 식)|`uint` (요소 수)|
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 `BP_LOCATION` 형식에 대 한 c #의 구조를 해석 하는 방법을 보여 줍니다 `BPLT_DATA_STRING` . 이 특정 형식은 `unionmemberX` 가능한 모든 형식 (개체, 문자열 및 숫자)에서 네 개의 멤버를 모두 해석 하는 방법을 보여 줍니다.
 
 ```csharp
@@ -139,7 +139,7 @@ namespace MyPackage
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
